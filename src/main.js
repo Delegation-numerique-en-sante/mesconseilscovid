@@ -95,7 +95,6 @@ var StockageLocal = function () {
 var stockageLocal = new StockageLocal()
 
 // Carte des départements (vert / rouge)
-// Source : https://www.data.gouv.fr/fr/datasets/indicateurs-dactivite-epidemique-covid-19-par-departement/
 var CarteDepartements = function () {
     this.dateMiseAJour = '2020-05-07'
     this._couleurs = {
