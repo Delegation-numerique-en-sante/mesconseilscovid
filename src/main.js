@@ -582,6 +582,7 @@ function displaySymptomesConseils(data, element) {
 }
 
 function displayDepartementConseils(data, element) {
+    displayElement(element, 'conseils-departement')
     if (data.couleur === 'rouge') {
         displayElement(element, 'conseils-departement-rouge')
     }
@@ -606,6 +607,7 @@ function displayActiviteProConseils(data, element) {
 }
 
 function displayFoyerConseils(data, element) {
+    displayElement(element, 'conseils-foyer')
     if (data.foyer_enfants && data.foyer_fragile) {
         displayElement(element, 'conseils-foyer-enfants-fragile')
         return
