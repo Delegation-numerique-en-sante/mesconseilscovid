@@ -63,16 +63,22 @@ main {
     margin: 1rem 0;
 }
 .block > * {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    max-width: 48rem;
+    margin: auto;
 }
 .block > h2 {
-    background-color: #000091;
-    color: #ffffff;
-    font-size: 1.25rem;
-    margin: 0 0 1.5rem 0;
-    padding: 0.75rem 1.5rem;
-    text-transform: uppercase;
+    color: #000091;
+    font-size: 225%;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.conseils {
+    margin-bottom: 5rem;
+}
+.conseils h3 {
+    color: #000091;
+    font-size: 175%;
 }
 
 fieldset {
