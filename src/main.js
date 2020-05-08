@@ -591,14 +591,17 @@ function displayDepartementConseils(data, element) {
 }
 
 function displayActiviteProConseils(data, element) {
-    if (data.activite_pro) {
-        displayElement(element, 'conseils-activite-pro')
-    }
-    if (data.activite_pro_public) {
-        displayElement(element, 'conseils-activite-pro-public')
-    }
-    if (data.activite_pro_sante) {
-        displayElement(element, 'conseils-activite-pro-sante')
+    if (!data.contact_a_risque) {
+        displayElement(element, 'conseils-activite')
+        if (data.activite_pro) {
+            displayElement(element, 'conseils-activite-pro')
+        }
+        if (data.activite_pro_public) {
+            displayElement(element, 'conseils-activite-pro-public')
+        }
+        if (data.activite_pro_sante) {
+            displayElement(element, 'conseils-activite-pro-sante')
+        }
     }
 }
 
@@ -616,11 +619,32 @@ function displayFoyerConseils(data, element) {
 }
 
 function displayCaracteristiquesAntecedentsConseils(data, element) {
-    if (data.sup65 || data.imc > 30 || data.antecedents) {
-        displayElement(element, 'conseils-caracteristiques-antecedents')
+    if (data.symptomes_passes) {
+        if (data.antecedent_chronique_autre) {
+            displayElement(element, 'conseils-caracteristiques')
+            displayElement(element, 'conseils-antecedents-chroniques-autres')
+        }
+    } else {
+        if (data.contact_a_risque) {
+            displayElement(element, 'conseils-caracteristiques')
+            if (data.antecedent_chronique_autre) {
+                displayElement(element, 'conseils-antecedents-chroniques-autres')
+            }
+        } else {
+            displayElement(element, 'conseils-caracteristiques')
+            if (data.sup65 || data.imc > 30 || data.antecedents) {
+                displayElement(element, 'conseils-caracteristiques-antecedents')
+            }
+            if (data.antecedent_chronique_autre) {
+                displayElement(element, 'conseils-antecedents-chroniques-autres')
+            }
+        }
     }
-    if (data.antecedent_chronique_autre) {
-        displayElement(element, 'conseils-antecedents-chroniques-autres')
+}
+
+function displayGeneralConseils(data, element) {
+    if (!data.contact_a_risque) {
+        displayElement(element, 'conseils-generaux')
     }
 }
 
@@ -634,6 +658,7 @@ function displayConseils(element) {
     displayActiviteProConseils(data, element)
     displayFoyerConseils(data, element)
     displayCaracteristiquesAntecedentsConseils(data, element)
+    displayGeneralConseils(data, element)
 }
 
 var Algorithme = function (questionnaire, carteDepartements) {
