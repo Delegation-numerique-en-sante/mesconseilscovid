@@ -562,6 +562,25 @@ function displayElement(element, id) {
     block.classList.add('visible')
 }
 
+function displaySymptomesConseils(data, element) {
+    if (data.symptomes) {
+        displayElement(element, 'conseils-symptomes')
+    }
+    if (data.symptomes_actuels) {
+        displayElement(element, 'conseils-symptomes-actuels')
+    }
+    if (data.symptomes_passes) {
+        if (data.risques) {
+            displayElement(element, 'conseils-symptomes-passes-avec-risques')
+        } else {
+            displayElement(element, 'conseils-symptomes-passes-sans-risques')
+        }
+    }
+    if (data.contact_a_risque) {
+        displayElement(element, 'conseils-contact-a-risque')
+    }
+}
+
 function displayDepartementConseils(data, element) {
     if (data.couleur === 'rouge') {
         displayElement(element, 'conseils-departement-rouge')
@@ -610,6 +629,7 @@ function displayConseils(element) {
     Array.from(element.querySelectorAll('.visible')).forEach(hideElement)
     var algorithme = new Algorithme(questionnaire, carteDepartements)
     var data = algorithme.getData()
+    displaySymptomesConseils(data, element)
     displayDepartementConseils(data, element)
     displayActiviteProConseils(data, element)
     displayFoyerConseils(data, element)
@@ -623,6 +643,15 @@ var Algorithme = function (questionnaire, carteDepartements) {
     this.computeIMC = function (poids, taille) {
         var taille_en_metres = taille / 100
         return poids / (taille_en_metres * taille_en_metres)
+    }
+
+    this.hasRisques = function (data) {
+        return (
+            this.hasAntecedents(data) ||
+            data.sup65 ||
+            data.imc > 30 ||
+            data.foyer_fragile
+        )
     }
 
     this.hasAntecedents = function (data) {
@@ -639,12 +668,22 @@ var Algorithme = function (questionnaire, carteDepartements) {
         )
     }
 
+    this.hasSymptomes = function (data) {
+        return (
+            data.symptomes_actuels ||
+            data.symptomes_passes ||
+            data.contact_a_risque
+        )
+    }
+
     this.getData = function () {
         var data = questionnaire.getData()
         return Object.assign({}, data, {
             couleur: this.carteDepartements.couleur(data.departement),
             imc: this.computeIMC(data.poids, data.taille),
             antecedents: this.hasAntecedents(data),
+            symptomes: this.hasSymptomes(data),
+            risques: this.hasRisques(data),
         })
     }
 }
