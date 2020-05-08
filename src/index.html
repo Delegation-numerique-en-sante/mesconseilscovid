@@ -252,6 +252,10 @@
                 <input id="sup65" type="checkbox" name="sup65">
                 <label for="sup65">Je suis âgé·e de 65 ans ou plus</label>
             </div>
+            <div>
+                <input id="grossesse_3e_trimestre" type="checkbox" name="grossesse_3e_trimestre">
+                <label for="grossesse_3e_trimestre">Je suis enceinte au 3<sup>e</sup> trimestre de ma grossesse</label>
+            </div>
             <ul>
                 <li class="row">
                     <label for="taille">Ma taille<sup>*</sup> en centimètres :</label>
@@ -276,6 +280,7 @@
             ;(function() {
                 var form = document.getElementById('caracteristiques-form')
                 preloadCheckboxForm(form, 'sup65')
+                preloadCheckboxForm(form, 'grossesse_3e_trimestre')
                 preloadForm(form, 'taille')
                 preloadForm(form, 'poids')
                 form.addEventListener('submit', submitCaracteristiquesForm)
@@ -322,10 +327,6 @@
                 <label for="antecedent_drepano">J’ai une drépanocytose homozygote ou j’ai bénéficié d’une splénectomie à cause de la drépanocytose</label>
             </div>
             <div>
-                <input id="antecedent_grossesse" type="checkbox" name="antecedent_grossesse">
-                <label for="antecedent_grossesse">Je suis enceinte au 3<sup>e</sup> trimestre de ma grossesse</label>
-            </div>
-            <div>
                 <input id="antecedent_chronique_autre" type="checkbox" name="antecedent_chronique_autre">
                 <label for="antecedent_chronique_autre">J’ai une autre maladie chronique ou handicap ou je prends un traitement au long cours</label>
             </div>
@@ -344,7 +345,6 @@
                 preloadCheckboxForm(form, 'antecedent_immunodep')
                 preloadCheckboxForm(form, 'antecedent_cirrhose')
                 preloadCheckboxForm(form, 'antecedent_drepano')
-                preloadCheckboxForm(form, 'antecedent_grossesse')
                 preloadCheckboxForm(form, 'antecedent_chronique_autre')
                 form.addEventListener('submit', submitAntecedentsForm)
             })()

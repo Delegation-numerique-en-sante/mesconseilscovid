@@ -193,6 +193,7 @@ var Questionnaire = function () {
         this._foyer_enfants = false
         this._foyer_fragile = false
         this._sup65 = false
+        this._grossesse_3e_trimestre = false
         this._poids = ''
         this._taille = ''
         this._antecedent_cardio = false
@@ -203,7 +204,6 @@ var Questionnaire = function () {
         this._antecedent_immunodep = false
         this._antecedent_cirrhose = false
         this._antecedent_drepano = false
-        this._antecedent_grossesse = false
         this._antecedent_chronique_autre = false
     }
 
@@ -215,6 +215,7 @@ var Questionnaire = function () {
         this._foyer_enfants = data['foyer_enfants'] || false
         this._foyer_fragile = data['foyer_fragile'] || false
         this._sup65 = data['sup65'] || false
+        this._grossesse_3e_trimestre = data['grossesse_3e_trimestre'] || false
         this._poids = data['poids'] || ''
         this._taille = data['taille'] || ''
         this._antecedent_cardio = data['antecedent_cardio'] || false
@@ -225,7 +226,6 @@ var Questionnaire = function () {
         this._antecedent_immunodep = data['antecedent_immunodep'] || false
         this._antecedent_cirrhose = data['antecedent_cirrhose'] || false
         this._antecedent_drepano = data['antecedent_drepano'] || false
-        this._antecedent_grossesse = data['antecedent_grossesse'] || false
         this._antecedent_chronique_autre = data['antecedent_chronique_autre'] || false
     }
 
@@ -238,6 +238,7 @@ var Questionnaire = function () {
             foyer_enfants: this._foyer_enfants,
             foyer_fragile: this._foyer_fragile,
             sup65: this._sup65,
+            grossesse_3e_trimestre: this._grossesse_3e_trimestre,
             poids: this._poids,
             taille: this._taille,
             antecedent_cardio: this._antecedent_cardio,
@@ -248,7 +249,6 @@ var Questionnaire = function () {
             antecedent_immunodep: this._antecedent_immunodep,
             antecedent_cirrhose: this._antecedent_cirrhose,
             antecedent_drepano: this._antecedent_drepano,
-            antecedent_grossesse: this._antecedent_grossesse,
             antecedent_chronique_autre: this._antecedent_chronique_autre,
         }
     }
@@ -279,6 +279,10 @@ var Questionnaire = function () {
 
     this.setSup65 = function (sup65) {
         this._sup65 = sup65
+    }
+
+    this.setGrossesse3eTrimestre = function (grossesse_3e_trimestre) {
+        this._grossesse_3e_trimestre = grossesse_3e_trimestre
     }
 
     this.setPoidsTaille = function (poids, taille) {
@@ -316,10 +320,6 @@ var Questionnaire = function () {
 
     this.setAntecedentDrepano = function (antecedent_drepano) {
         this._antecedent_drepano = antecedent_drepano
-    }
-
-    this.setAntecedentGrossesse = function (antecedent_grossesse) {
-        this._antecedent_grossesse = antecedent_grossesse
     }
 
     this.setAntecedentChroniqueAutre = function (antecedent_chronique_autre) {
@@ -370,6 +370,9 @@ function submitFoyerForm(event) {
 function submitCaracteristiquesForm(event) {
     event.preventDefault()
     questionnaire.setSup65(event.target.elements['sup65'].checked)
+    questionnaire.setGrossesse3eTrimestre(
+        event.target.elements['grossesse_3e_trimestre'].checked
+    )
     questionnaire.setPoidsTaille(
         event.target.elements['poids'].value,
         event.target.elements['taille'].value
@@ -400,9 +403,6 @@ function submitAntecedentsForm(event) {
     )
     questionnaire.setAntecedentDrepano(
         event.target.elements['antecedent_drepano'].checked
-    )
-    questionnaire.setAntecedentGrossesse(
-        event.target.elements['antecedent_grossesse'].checked
     )
     questionnaire.setAntecedentChroniqueAutre(
         event.target.elements['antecedent_chronique_autre'].checked
@@ -576,7 +576,7 @@ var Algorithme = function (questionnaire, carteDepartements) {
             data.antecedent_immunodep ||
             data.antecedent_cirrhose ||
             data.antecedent_drepano ||
-            data.antecedent_grossesse
+            data.grossesse_3e_trimestre
         )
     }
 
