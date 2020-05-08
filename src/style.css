@@ -1,19 +1,18 @@
-
 @font-face {
-  font-family: 'Marianne';
-  font-style: normal;
-  font-weight: normal;
-  src: url(fonts/marianne-regular-webfont.woff2) format('woff2'),
-       url(fonts/marianne-regular-webfont.woff) format('woff');
-  font-display: swap;
+    font-family: 'Marianne';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/marianne-regular-webfont.woff2) format('woff2'),
+        url(fonts/marianne-regular-webfont.woff) format('woff');
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Marianne';
-  font-style: normal;
-  font-weight: bold;
-  src: url(fonts/marianne-bold-webfont.woff2) format('woff2'),
-       url(fonts/marianne-bold-webfont.woff) format('woff');
-  font-display: swap;
+    font-family: 'Marianne';
+    font-style: normal;
+    font-weight: bold;
+    src: url(fonts/marianne-bold-webfont.woff2) format('woff2'),
+        url(fonts/marianne-bold-webfont.woff) format('woff');
+    font-display: swap;
 }
 
 * {
@@ -21,7 +20,7 @@
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     font-family: 'Marianne', Sans-Serif;
@@ -39,119 +38,119 @@ section {
 header {
     margin: 0 15px;
 }
-    header section {
-        display: flex;
-    }
-    header img {
-        width: 100px;
-        margin-right: 10px;
-    }
-    header h1 {
-        text-align: center;
-        flex-grow: 2;
-        padding-right: 100px; /* To compensate the width of the logo. */
-    }
+header section {
+    display: flex;
+}
+header img {
+    width: 100px;
+    margin-right: 10px;
+}
+header h1 {
+    text-align: center;
+    flex-grow: 2;
+    padding-right: 100px; /* To compensate the width of the logo. */
+}
 
 main {
-    background-color: #F9F8F6;
+    background-color: #f9f8f6;
     padding: 18px 15px 48px 15px;
 }
 
 .block {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     padding-bottom: 2rem;
     margin: 1rem 0;
 }
-    .block > * {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    .block > h2 {
-        background-color: #000091;
-        color: #FFFFFF;
-        font-size: 1.25rem;
-        margin: 0 0 1.5rem 0;
-        padding: 0.75rem 1.5rem;
-        text-transform: uppercase;
-    }
+.block > * {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.block > h2 {
+    background-color: #000091;
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin: 0 0 1.5rem 0;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+}
 
 fieldset {
     margin-bottom: 1rem;
     padding: 1rem;
 }
-    fieldset legend {
-        font-size: 1.2rem;
-    }
-    fieldset div {
-        margin: .5rem 0;
-    }
-    fieldset small {
-        line-height: 1;
-    }
-    fieldset p {
-        color: #484D7A;
-    }
-    fieldset ul {
-        list-style: none;
-        padding: 0;
-    }
-    fieldset .row {
-        display: flex;
-        flex-flow: row wrap;
-        margin-bottom: 1rem;
-    }
-    fieldset .row > * {
-        flex-grow: 1;
-        flex-basis: 50%;
-    }
+fieldset legend {
+    font-size: 1.2rem;
+}
+fieldset div {
+    margin: 0.5rem 0;
+}
+fieldset small {
+    line-height: 1;
+}
+fieldset p {
+    color: #484d7a;
+}
+fieldset ul {
+    list-style: none;
+    padding: 0;
+}
+fieldset .row {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+}
+fieldset .row > * {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
 
 .dpt-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-    .dpt-container select {
-         flex-grow: 1;
-         margin-bottom: 0.5rem;
-    }
-    .dpt-container div {
-         margin-left: 0.5rem;
-    }
-    .dpt-container img {
-         width: 1.75rem;
-    }
+.dpt-container select {
+    flex-grow: 1;
+    margin-bottom: 0.5rem;
+}
+.dpt-container div {
+    margin-left: 0.5rem;
+}
+.dpt-container img {
+    width: 1.75rem;
+}
 
-input[type="text"],
-input[type="submit"],
+input[type='text'],
+input[type='submit'],
 select {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    background-color: #F4FCFF;
-    border: 1px solid #5770BE;
+    background-color: #f4fcff;
+    border: 1px solid #484d7a;
     border-radius: 5px;
-    color: #484D7A;
+    color: #484d7a;
     padding: 8px;
     font-size: 16px;
 }
-    input[type="text"]:focus,
-    input[type="submit"]:focus,
-    select:focus {
-        outline: none;
-        box-shadow: 0 0 5px 0 -webkit-focus-ring-color;
-    }
+input[type='text']:focus,
+input[type='submit']:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px 0 -webkit-focus-ring-color;
+}
 
 /* Nicer select, based on https://github.com/filamentgroup/select-css */
 select {
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
     background-repeat: no-repeat;
-    background-position: right .7em top 50%;
-    background-size: .65em auto;
+    background-position: right 0.7em top 50%;
+    background-size: 0.65em auto;
 }
 
 a.button,
-input[type="submit"] {
+input[type='submit'] {
     display: block;
     text-align: center;
     width: 100%;
@@ -160,32 +159,32 @@ input[type="submit"] {
     padding: 12px 24px;
     text-decoration: none;
     background-color: #000091;
-    color: #FFFFFF;
-    transform: translate(-.1em, -.1em);
+    color: #ffffff;
+    transform: translate(-0.1em, -0.1em);
     transition: all 100ms ease-in;
 }
-    .button:hover {
-        cursor: pointer;
-        transform: translate(0px, 0px);
-    }
+.button:hover {
+    cursor: pointer;
+    transform: translate(0px, 0px);
+}
 
 #delete {
     text-align: center;
 }
 [hidden] {
-  display: none !important;
+    display: none !important;
 }
 .couleur {
     padding: 1rem;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
 }
-    .couleur-rouge {
-        color: #721c24;
-        background-color: #f8d7da;
-        border-color: #f5c6cb;
-    }
-    .couleur-vert {
-        color: #155724;
-        background-color: #d4edda;
-        border-color: #c3e6cb;
-    }
+.couleur-rouge {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.couleur-vert {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
