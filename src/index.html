@@ -258,7 +258,7 @@
                 <input id="grossesse_3e_trimestre" type="checkbox" name="grossesse_3e_trimestre">
                 <label for="grossesse_3e_trimestre">Je suis enceinte au 3<sup>e</sup> trimestre de ma grossesse</label>
             </div>
-            <ul>
+            <ul class="no-list-style">
                 <li class="row">
                     <label for="taille">Ma taille<sup>*</sup> en centimètres :</label>
                     <input id="taille" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="Par ex. 165" required>
@@ -380,9 +380,37 @@
             <div>
                 <input id="contact_a_risque" type="checkbox" name="contact_a_risque">
                 <label for="contact_a_risque">
-                    J’ai eu un contact <strong>à risque</strong>
+                    J’ai eu un <strong>contact à risque</strong><sup>*</sup>
                     avec une personne COVID confirmée
                 </label>
+                <p>
+                    <small>
+                        <sup>*</sup>
+                        Le <strong>contact à risque</strong> est défini pour une personne :
+                    </small>
+                </p>
+                <ul>
+                    <li>
+                        <small>Ayant partagé le même lieu de vie que le cas confirmé ou probable ;</small>
+                    </li>
+                    <li>
+                        <small>Ayant eu un contact direct avec un cas, en face à face, à moins d’1 mètre, quelle que soit la durée (ex. conversation, repas, flirt, accolades, embrassades). En revanche, des personnes croisées dans l’espace public de manière fugace ne sont pas considérées comme des personnes contacts à risque ;</small>
+                    </li>
+                    <li>
+                        <small>Ayant prodigué ou reçu des actes d’hygiène ou de soins ;</small>
+                    </li>
+                    <li>
+                        <small>Ayant partagé un espace confiné (bureau ou salle de réunion, véhicule personnel…) pendant au moins 15 minutes avec un cas, ou étant resté en face à face avec un cas durant plusieurs épisodes de toux ou d’éternuement ;</small>
+                    </li>
+                    <li>
+                        <small>Étant élève ou enseignant de la même classe scolaire (maternelle, primaire, secondaire, groupe de travaux dirigés à l’université).</small>
+                    </li>
+                </ul>
+                <p>
+                    <small>
+                        NB : Ces définitions de personnes contact ne s’appliquent pas à l’évaluation des contacts à risque d’un professionnel de santé hospitalier survenus dans un contexte de soins, pour lequel une évaluation spécifique doit être réalisée par le médecin du travail et l’équipe opérationnelle.
+                    </small>
+                </p>
             </div>
         </fieldset>
         <div>

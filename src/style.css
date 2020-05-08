@@ -94,10 +94,14 @@ fieldset div {
 fieldset small {
     line-height: 1;
 }
-fieldset p {
+fieldset p,
+fieldset li small {
     color: #484d7a;
 }
 fieldset ul {
+    list-style: square;
+}
+fieldset ul.no-list-style {
     list-style: none;
     padding: 0;
 }
