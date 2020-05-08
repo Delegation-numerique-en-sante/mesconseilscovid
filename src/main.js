@@ -1,3 +1,16 @@
+// Rétro-compatibilité de l'élément <template> pour IE.
+(function() {
+    if (!('content' in document.createElement('template'))) {
+        ;[].forEach.call(document.getElementsByTagName('template'), function (template) {
+            var fragment = document.createDocumentFragment()
+            ;[].forEach.call(template.children, function (child) {
+                fragment.appendChild(child)
+            })
+            template.content = fragment
+        })
+    }
+})()
+
 // Données privées, stockées uniquement en local
 var StockageLocal = function () {
     this.db = new PouchDB('local')
