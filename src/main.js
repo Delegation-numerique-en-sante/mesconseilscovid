@@ -227,6 +227,9 @@ var Questionnaire = function () {
         this._antecedent_cirrhose = false
         this._antecedent_drepano = false
         this._antecedent_chronique_autre = false
+        this._symptomes_actuels = false
+        this._symptomes_passes = false
+        this._contact_a_risque = false
     }
 
     this.fillData = function (data) {
@@ -249,6 +252,9 @@ var Questionnaire = function () {
         this._antecedent_cirrhose = data['antecedent_cirrhose'] || false
         this._antecedent_drepano = data['antecedent_drepano'] || false
         this._antecedent_chronique_autre = data['antecedent_chronique_autre'] || false
+        this._symptomes_actuels = data['symptomes_actuels'] || false
+        this._symptomes_passes = data['symptomes_passes'] || false
+        this._contact_a_risque = data['contact_a_risque'] || false
     }
 
     this.getData = function () {
@@ -272,6 +278,9 @@ var Questionnaire = function () {
             antecedent_cirrhose: this._antecedent_cirrhose,
             antecedent_drepano: this._antecedent_drepano,
             antecedent_chronique_autre: this._antecedent_chronique_autre,
+            symptomes_actuels: this._symptomes_actuels,
+            symptomes_passes: this._symptomes_passes,
+            contact_a_risque: this._contact_a_risque,
         }
     }
 
@@ -346,6 +355,18 @@ var Questionnaire = function () {
 
     this.setAntecedentChroniqueAutre = function (antecedent_chronique_autre) {
         this._antecedent_chronique_autre = antecedent_chronique_autre
+    }
+
+    this.setSymptomesActuels = function (symptomes_actuels) {
+        this._symptomes_actuels = symptomes_actuels
+    }
+
+    this.setSymptomesPasses = function (symptomes_passes) {
+        this._symptomes_passes = symptomes_passes
+    }
+
+    this.setContactARisque = function (contact_a_risque) {
+        this._contact_a_risque = contact_a_risque
     }
 }
 var questionnaire = new Questionnaire()
@@ -428,6 +449,20 @@ function submitAntecedentsForm(event) {
     )
     questionnaire.setAntecedentChroniqueAutre(
         event.target.elements['antecedent_chronique_autre'].checked
+    )
+    goToPage('symptomes')
+}
+
+function submitSymptomesForm(event) {
+    event.preventDefault()
+    questionnaire.setSymptomesActuels(
+        event.target.elements['symptomes_actuels'].checked
+    )
+    questionnaire.setSymptomesPasses(
+        event.target.elements['symptomes_passes'].checked
+    )
+    questionnaire.setContactARisque(
+        event.target.elements['contact_a_risque'].checked
     )
     stockageLocal.enregistrer(questionnaire)
     goToPage('conseils')

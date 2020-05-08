@@ -40,7 +40,7 @@
     <form id="domicile-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
-            <legend>1/5 - Mon domicile</legend>
+            <legend>1/6 - Mon domicile</legend>
             <div class="row">
                 <label for="departement">Mon département</label>
                 <div class="dpt-container">
@@ -176,7 +176,7 @@
     <form id="activite-pro-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
-            <legend>2/5 - Mon activité</legend>
+            <legend>2/6 - Mon activité</legend>
             <div>
                 <input id="activite_pro" type="checkbox" name="activite_pro">
                 <label for="activite_pro">J’exerce une activité professionnelle et/ou bénévole</label>
@@ -215,7 +215,7 @@
     <form id="foyer-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
-            <legend>3/5 - Mon foyer</legend>
+            <legend>3/6 - Mon foyer</legend>
             <div>
                 <input id="foyer_enfants" type="checkbox" name="foyer_enfants">
                 <label for="foyer_enfants">Je vis avec un ou des enfants en âge d’aller à la crèche ou à l’école</label>
@@ -249,7 +249,7 @@
     <form id="caracteristiques-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
-            <legend>4/5 - Mes caractéristiques</legend>
+            <legend>4/6 - Mes caractéristiques</legend>
             <div>
                 <input id="sup65" type="checkbox" name="sup65">
                 <label for="sup65">Je suis âgé·e de 65 ans ou plus</label>
@@ -295,7 +295,7 @@
     <form id="antecedents-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
-            <legend>5/5 - Mes antécédents</legend>
+            <legend>5/6 - Mes antécédents</legend>
             <div>
                 <input id="antecedent_cardio" type="checkbox" name="antecedent_cardio">
                 <label for="antecedent_cardio">J’ai des antécédents de maladie cardiovasculaire : hypertension artérielle compliquée (avec complications cardiaques, rénales), accident vasculaire cérébral, maladie coronaire (infarctus), chirurgie cardiaque, insuffisance cardiaque avec essoufflement au moindre effort</label>
@@ -334,7 +334,7 @@
             </div>
         </fieldset>
         <div>
-            <input type="submit" class="button" value="Terminer">
+            <input type="submit" class="button" value="Continuer">
         </div>
         <script type="text/javascript">
             ;(function() {
@@ -349,6 +349,52 @@
                 preloadCheckboxForm(form, 'antecedent_drepano')
                 preloadCheckboxForm(form, 'antecedent_chronique_autre')
                 form.addEventListener('submit', submitAntecedentsForm)
+            })()
+        </script>
+    </form>
+</template>
+
+<template id="symptomes">
+    <form id="symptomes-form" action="" class="block">
+        <h2>Mes informations</h2>
+        <fieldset>
+            <legend>6/6 - Mes symptômes</legend>
+            <div>
+                <input id="symptomes_actuels" type="checkbox" name="symptomes_actuels">
+                <label for="symptomes_actuels">
+                    J’ai un ou des symptômes qui peuvent évoquer
+                    le COVID actuellement
+                </label>
+            </div>
+            <div>
+                <input id="symptomes_passes" type="checkbox" name="symptomes_passes">
+                <label for="symptomes_passes">
+                    J’ai eu des symptômes qui peuvent évoquer le COVID
+                    dans les 14 derniers jours. Signes infectieux (fièvre, frissons),
+                    toux ou gêne respiratoire, fatigue inexpliquée, courbatures,
+                    douleurs dans les mollets, maux de tète,
+                    perte de l’odorat et du gout,
+                    engelures aux mains et/ou au pieds (rougeurs, fissures…)
+                </label>
+            </div>
+            <div>
+                <input id="contact_a_risque" type="checkbox" name="contact_a_risque">
+                <label for="contact_a_risque">
+                    J’ai eu un contact <strong>à risque</strong>
+                    avec une personne COVID confirmée
+                </label>
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" class="button" value="Terminer">
+        </div>
+        <script type="text/javascript">
+            ;(function() {
+                var form = document.getElementById('symptomes-form')
+                preloadCheckboxForm(form, 'symptomes_actuels')
+                preloadCheckboxForm(form, 'symptomes_passes')
+                preloadCheckboxForm(form, 'contact_a_risque')
+                form.addEventListener('submit', submitSymptomesForm)
             })()
         </script>
     </form>
