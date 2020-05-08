@@ -624,6 +624,7 @@ function loadPage(name) {
     var clone = template.content.cloneNode(true)
     page.innerHTML = '' // Flush the current content.
     var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
+    element.scrollIntoView({behavior: 'smooth'})
 }
 
 ;(function () {
