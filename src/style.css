@@ -171,7 +171,8 @@ input[type='submit'] {
 #delete {
     text-align: center;
 }
-[hidden] {
+[hidden],
+template {
     display: none !important;
 }
 .couleur {
