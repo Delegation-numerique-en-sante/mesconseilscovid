@@ -10,19 +10,19 @@ var StockageLocal = function () {
                 that.db = new PouchDB('local')
             })
             .catch(function (error) {
-                console.log(error)
+                console.error(error)
             })
     }
 
     this.charger = function (questionnaire) {
         return this.db.get('mes_infos').then(
             function (data) {
-                console.log('Données locales:')
+                console.debug('Données locales:')
                 console.table(data)
                 questionnaire.fillData(data)
             },
             function (err) {
-                console.log('Pas de données locales pour l’instant')
+                console.debug('Pas de données locales pour l’instant')
             }
         )
     }
@@ -30,14 +30,14 @@ var StockageLocal = function () {
     this.enregistrer = function (questionnaire) {
         return this._upsert('mes_infos', questionnaire.getData())
             .then(function (response) {
-                console.log('Les réponses au questionnaire ont bien été enregistrées')
-                console.log(response)
+                console.debug('Les réponses au questionnaire ont bien été enregistrées')
+                console.debug(response)
             })
             .catch(function (error) {
-                console.log(
+                console.error(
                     'Les réponses au questionnaire n’ont pas pu être enregistrées'
                 )
-                console.log(error)
+                console.error(error)
             })
     }
 
@@ -46,7 +46,7 @@ var StockageLocal = function () {
         return this.db
             .get(_id)
             .then(function (doc) {
-                const record = Object.assign(
+                var record = Object.assign(
                     {
                         _id: _id,
                         _rev: doc._rev,
@@ -57,7 +57,7 @@ var StockageLocal = function () {
             })
             .catch(function (error) {
                 if (error.name === 'not_found') {
-                    const record = Object.assign(
+                    var record = Object.assign(
                         {
                             _id: _id,
                         },
@@ -415,7 +415,7 @@ function resetPrivateData(event) {
     event.preventDefault()
     questionnaire.resetData()
     stockageLocal.supprimer()
-    console.log('Les données personnelles ont été supprimées')
+    console.debug('Les données personnelles ont été supprimées')
     goToPage('introduction')
 }
 
@@ -424,26 +424,27 @@ var Geolocaliseur = function () {
         // Warning, in case of multiple polygons, you can have multiple matches.
         var that = this
         return this.loadMap().then(function (featureCollection) {
-            for (const departement of featureCollection.features) {
-                let polyCoordinates
+            featureCollection.features.forEach(function (departement) {
                 if (departement.geometry.type === 'Polygon') {
-                    polyCoordinates = [departement.geometry.coordinates]
+                    var polyCoordinates = [departement.geometry.coordinates]
                 } else {
-                    polyCoordinates = departement.geometry.coordinates
+                    var polyCoordinates = departement.geometry.coordinates
                 }
-                for (const polyCoordinate of polyCoordinates) {
-                    for (const coord of polyCoordinate) {
+                polyCoordinates.forEach(function (polyCoordinate) {
+                    polyCoordinate.forEach(function (coord) {
                         if (that.booleanPointInPolygon([lon, lat], coord)) {
                             return departement.properties
                         }
-                    }
-                }
-            }
+                    })
+                })
+            })
         })
     }
 
     this.loadMap = function () {
-        return fetch('departements-1000m.geojson').then((response) => response.json())
+        return fetch('departements-1000m.geojson').then(function (response) {
+            return response.json()
+        })
     }
 
     this.booleanPointInPolygon = function (point, vs) {
@@ -481,7 +482,7 @@ function geolocalisation(event) {
                 })
         },
         function (err) {
-            console.warn(`ERREUR (${err.code}): ${err.message}`)
+            console.warn('ERREUR (' + err.code + '): ' + err.message)
         },
         {
             enableHighAccuracy: true,
@@ -595,10 +596,10 @@ function goToPage(name) {
 
 function loadPage(name) {
     var page = document.querySelector('section#page')
-    const template = document.querySelector(`#${name}`)
-    const clone = template.content.cloneNode(true)
+    var template = document.querySelector('#' + name)
+    var clone = template.content.cloneNode(true)
     page.innerHTML = '' // Flush the current content.
-    const element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
+    var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
 }
 
 ;(function () {
