@@ -222,11 +222,28 @@
             </div>
             <div>
                 <input id="foyer_fragile" type="checkbox" name="foyer_fragile">
-                <label for="foyer_fragile">Je vis avec des personnes fragiles<sup>*</sup> et/ou handicapées</label>
+                <label for="foyer_fragile">
+                    Je vis avec une ou des personnes fragiles<sup>*</sup>
+                    et/ou handicapées
+                </label>
                 <p>
                     <small>
                         <sup>*</sup>
-                        Une personne fragile est une personne présentant au moins une des caractéristique suivantes : âge > ou égal à 65 ans, avec une maladie cardiovasculaire, diabète mal équilibré ou avec des complications (yeux, reins), maladie respiratoire chronique (broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d'apnées du sommeil, mucoviscidose), insuffisance rénale chronique avec besoin de faire de la dialyse, cancer sous traitement tel que chimiothérapie, radiothérapie, chirurgie de cancer prévue ou réalisée dans les … années (hors hormonothérapie), immunodépression congénitale ou acquise, une cirrhose, une drépanocytose, une femme enceinte au 3e trimestre de sa grossesse.
+                        Une personne fragile est une personne présentant
+                        au moins une des caractéristique suivantes :
+                        âge > ou égal à 65 ans,
+                        avec une maladie cardiovasculaire,
+                        diabète mal équilibré ou avec des complications (yeux, reins),
+                        maladie respiratoire chronique (broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d'apnées du sommeil, mucoviscidose),
+                        insuffisance rénale chronique avec besoin de faire de la dialyse,
+                        cancer sous traitement tel que chimiothérapie,
+                        radiothérapie,
+                        chirurgie de cancer prévue ou réalisée dans les … années (hors hormonothérapie),
+                        cancer évolutif sous traitement (hors hormonothérapie),
+                        immunodépression congénitale ou acquise,
+                        une cirrhose,
+                        une drépanocytose,
+                        une femme enceinte au 3e trimestre de sa grossesse.
                     </small>
                 </p>
             </div>
@@ -314,7 +331,7 @@
             </div>
             <div>
                 <input id="antecedent_cancer" type="checkbox" name="antecedent_cancer">
-                <label for="antecedent_cancer">J’ai un cancer sous traitement tel que chimiothérapie, radiothérapie, chirurgie de cancer prévue ou réalisée dans les … années (hors hormonothérapie)</label>
+                <label for="antecedent_cancer">J’ai un cancer évolutif sous traitement (hors hormonothérapie)</label>
             </div>
             <div>
                 <input id="antecedent_immunodep" type="checkbox" name="antecedent_immunodep">
@@ -363,7 +380,11 @@
                 <input id="symptomes_actuels" type="checkbox" name="symptomes_actuels">
                 <label for="symptomes_actuels">
                     J’ai un ou des symptômes qui peuvent évoquer
-                    le COVID actuellement
+                    le COVID actuellement. Signes infectieux (fièvre, frissons),
+                    toux ou gêne respiratoire, fatigue inexpliquée, courbatures,
+                    douleurs dans les mollets, maux de tète,
+                    perte de l’odorat et du gout,
+                    engelures aux mains et/ou au pieds (rougeurs, fissures…)
                 </label>
             </div>
             <div>
@@ -436,15 +457,13 @@
             <div id="conseils-symptomes-actuels" hidden>
                 <p>
                     Il vous conseillé de vous maintenir en isolement ainsi
-                    que votre foyer. Il vous est conseillé de tester
+                    que votre foyer le temps d’avoir un avis médical.
+                    Il vous est conseillé de tester
                     vos symptômes avec l’outil suivant
                     <a href="https://www.maladiecoronavirus.fr/">maladiecoronavirus.fr</a>
                     qui vous orientera vers le professionnel de santé adapté.
-                    De façon générale il est conseillé de lever l’isolement
-                    au moins 8 jours après la date de début des symptômes,
-                    (10 jours si vous ou un membre de votre foyer avez un
-                    risque ou une maladie chronique) et après 48 h
-                    sans fièvre ni gène respiratoire.
+                    Pour plus d’informations sur l’isolement :
+                    <a href="https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf">solidarites-sante.gouv.fr</a>.
                 </p>
             </div>
             <div id="conseils-symptomes-passes-sans-risques" hidden>
@@ -463,7 +482,7 @@
             <div id="conseils-symptomes-passes-avec-risques" hidden>
                 <p>
                     Il vous est recommandé de garder votre foyer en isolement,
-                    y compris les enfants en âge d'aller à la crèche ou à l’école.
+                    y compris les enfants en âge d’aller à la crèche ou à l’école.
                     Contactez votre médecin pour avoir des informations
                     personnalisées sur l’isolement et les tests diagnostiques.
                     De façon générale il est conseillé une levée de l’isolement
@@ -567,13 +586,21 @@
                     Nous vous recommandons de prendre connaissances des informations
                     officielles concernant la scolarité des enfants au moment
                     du déconfinement :
-                    <a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">Section « Pour vos enfants et leur scolarité »</a>
+                    <a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement#cinformations">Section « Pour vos enfants et leur scolarité »</a>
                 </p>
                 <p>
                     Si vos enfants sont gardés par leurs grands parents ou par des
                     personnes à risque de forme grave de COVID, nous vous recommandons
                     de mettre en place des mesures de distanciation physique
                     renforcée pendant la garde d’enfants.
+                </p>
+                <p>
+                    Si vous ne pouvez faire garder votre enfant, informez votre employeur
+                    et envisagez avec lui les modalités de télétravail qui pourraient
+                    être mises en place ou d’indémnisation si ce n’est pas possible.
+                    Si vous êtes travailleur indépendant ou exploitant agricole,
+                    renseignez-vous sur le
+                    <a href="https://declare.ameli.fr/">télé-service de l’Assurance Maladie</a>.
                 </p>
             </div>
             <div id="conseils-foyer-fragile" hidden>
@@ -673,6 +700,11 @@
                     Le port du masque s’imposera dans certaines situations,
                     pour plus d’information sur le déconfinement :
                     <a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">gouvernement.fr</a>.
+                </p>
+                <p>
+                    Pour toutes questions sur l’alimentation, les courses et le nettoyage
+                    retrouvez les recommandations de l’Anses :
+                    <a href="https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses">anses.fr</a>.
                 </p>
             </div>
             <div>
