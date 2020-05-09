@@ -40,7 +40,7 @@
     <form id="domicile-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
-            <legend>1/6 - Mon domicile</legend>
+            <legend>1/8 - Mon domicile</legend>
             <div class="row">
                 <label for="departement">Mon département</label>
                 <div class="dpt-container">
@@ -176,7 +176,7 @@
     <form id="activite-pro-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
-            <legend>2/6 - Mon activité</legend>
+            <legend>2/8 - Mon activité</legend>
             <div>
                 <input id="activite_pro" type="checkbox" name="activite_pro">
                 <label for="activite_pro">J’exerce une activité professionnelle et/ou bénévole</label>
@@ -215,7 +215,7 @@
     <form id="foyer-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
-            <legend>3/6 - Mon foyer</legend>
+            <legend>3/8 - Mon foyer</legend>
             <div>
                 <input id="foyer_enfants" type="checkbox" name="foyer_enfants">
                 <label for="foyer_enfants">Je vis avec un ou des enfants en âge d’aller à la crèche ou à l’école</label>
@@ -266,7 +266,7 @@
     <form id="caracteristiques-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
-            <legend>4/6 - Mes caractéristiques</legend>
+            <legend>4/8 - Mes caractéristiques</legend>
             <div>
                 <input id="sup65" type="checkbox" name="sup65">
                 <label for="sup65">Je suis âgé·e de 65 ans ou plus</label>
@@ -312,7 +312,7 @@
     <form id="antecedents-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
-            <legend>5/6 - Mes antécédents</legend>
+            <legend>5/8 - Mes antécédents</legend>
             <div>
                 <input id="antecedent_cardio" type="checkbox" name="antecedent_cardio">
                 <label for="antecedent_cardio">J’ai des antécédents de maladie cardiovasculaire : hypertension artérielle compliquée (avec complications cardiaques, rénales), accident vasculaire cérébral, maladie coronaire (infarctus), chirurgie cardiaque, insuffisance cardiaque avec essoufflement au moindre effort</label>
@@ -371,11 +371,11 @@
     </form>
 </template>
 
-<template id="symptomes">
-    <form id="symptomes-form" action="" class="block">
+<template id="symptomes-actuels">
+    <form id="symptomes-actuels-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
-            <legend>6/6 - Mes symptômes</legend>
+            <legend>6/8 - Mes symptômes actuels</legend>
             <div>
                 <input id="symptomes_actuels" type="checkbox" name="symptomes_actuels">
                 <label for="symptomes_actuels">
@@ -387,6 +387,25 @@
                     engelures aux mains et/ou au pieds (rougeurs, fissures…)
                 </label>
             </div>
+        </fieldset>
+        <div>
+            <input type="submit" class="button" value="Continuer">
+        </div>
+        <script type="text/javascript">
+            ;(function() {
+                var form = document.getElementById('symptomes-actuels-form')
+                preloadCheckboxForm(form, 'symptomes_actuels')
+                form.addEventListener('submit', submitSymptomesActuelsForm)
+            })()
+        </script>
+    </form>
+</template>
+
+<template id="symptomes-passes">
+    <form id="symptomes-passes-form" action="" class="block">
+        <h2>Mes informations</h2>
+        <fieldset>
+            <legend>7/8 - Mes symptômes passés</legend>
             <div>
                 <input id="symptomes_passes" type="checkbox" name="symptomes_passes">
                 <label for="symptomes_passes">
@@ -398,6 +417,25 @@
                     engelures aux mains et/ou au pieds (rougeurs, fissures…)
                 </label>
             </div>
+        </fieldset>
+        <div>
+            <input type="submit" class="button" value="Continuer">
+        </div>
+        <script type="text/javascript">
+            ;(function() {
+                var form = document.getElementById('symptomes-passes-form')
+                preloadCheckboxForm(form, 'symptomes_passes')
+                form.addEventListener('submit', submitSymptomesPassesForm)
+            })()
+        </script>
+    </form>
+</template>
+
+<template id="contact-a-risque">
+    <form id="contact-a-risque-form" action="" class="block">
+        <h2>Mes informations</h2>
+        <fieldset>
+            <legend>8/8 - Mes contacts à risque</legend>
             <div>
                 <input id="contact_a_risque" type="checkbox" name="contact_a_risque">
                 <label for="contact_a_risque">
@@ -439,11 +477,9 @@
         </div>
         <script type="text/javascript">
             ;(function() {
-                var form = document.getElementById('symptomes-form')
-                preloadCheckboxForm(form, 'symptomes_actuels')
-                preloadCheckboxForm(form, 'symptomes_passes')
+                var form = document.getElementById('contact-a-risque-form')
                 preloadCheckboxForm(form, 'contact_a_risque')
-                form.addEventListener('submit', submitSymptomesForm)
+                form.addEventListener('submit', submitContactARisqueForm)
             })()
         </script>
     </form>
@@ -452,60 +488,6 @@
 <template id="conseils">
     <div id="conseils-block" class="block">
         <h2>Vos conseils personnalisés</h2>
-        <div id="conseils-symptomes" class="conseils" hidden>
-            <h3>Vos symptômes</h3>
-            <div id="conseils-symptomes-actuels" hidden>
-                <p>
-                    Il vous conseillé de vous maintenir en isolement ainsi
-                    que votre foyer le temps d’avoir un avis médical.
-                    Il vous est conseillé de tester
-                    vos symptômes avec l’outil suivant
-                    <a href="https://www.maladiecoronavirus.fr/">maladiecoronavirus.fr</a>
-                    qui vous orientera vers le professionnel de santé adapté.
-                    Pour plus d’informations sur l’isolement :
-                    <a href="https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf">solidarites-sante.gouv.fr</a>.
-                </p>
-            </div>
-            <div id="conseils-symptomes-passes-sans-risques" hidden>
-                <p>
-                    Il vous est recommandé de garder votre foyer en isolement,
-                    y compris les enfants en âge d’aller à la crèche ou à l’école.
-                    Contactez votre médecin pour avoir des informations
-                    personnalisées sur l’isolement et les tests diagnostiques.
-                    De façon générale il est conseillé une levée de l’isolement
-                    8 jours après le début des symptômes et après 48 heures
-                    sans fièvre ni gène respiratoire.
-                    Vous trouverez dans ce document les consignes d’isolement
-                    à domicile <a href="https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf">solidarites-sante.gouv.fr</a>.
-                </p>
-            </div>
-            <div id="conseils-symptomes-passes-avec-risques" hidden>
-                <p>
-                    Il vous est recommandé de garder votre foyer en isolement,
-                    y compris les enfants en âge d’aller à la crèche ou à l’école.
-                    Contactez votre médecin pour avoir des informations
-                    personnalisées sur l’isolement et les tests diagnostiques.
-                    De façon générale il est conseillé une levée de l’isolement
-                    10 jours après le début des symptômes (si vous ou un membre
-                    de votre foyer êtes à risque de forme grave) et après 48 heures
-                    sans fièvre ni gène respiratoire.
-                    Vous trouverez dans ce document les consignes d’isolement
-                    à domicile <a href="https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf">solidarites-sante.gouv.fr</a>.
-                </p>
-            </div>
-            <div id="conseils-contact-a-risque" hidden>
-                <p>
-                    Nous vous conseillons de vous signaler auprès de votre
-                    médecin généraliste.
-                    Par la suite, un médecin ou un professionnel va vous
-                    contacter si cela n’est pas déjà fait.
-                    Gardez votre foyer en isolement en attendant plus d’informations
-                    et appliquez les gestes barrieres
-                    <a href="https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/comment-se-proteger-du-coronavirus-covid-19">solidarites-sante.gouv.fr</a>.
-                    Surveillez l’apparition de symptômes et contactez votre médecin si des symptômes apparaîssent.
-                </p>
-            </div>
-        </div>
         <div id="conseils-departement" class="conseils" hidden>
             <h3>Votre localisation</h3>
             <div id="conseils-departement-rouge" hidden>
@@ -741,7 +723,116 @@
                     })
             })()
         </script>
+    </div>
+</template>
 
+<template id="conseils-symptomes-actuels">
+    <div id="conseils-symptomes-actuels-block" class="block">
+        <h2>Vos conseils personnalisés</h2>
+        <div class="conseils">
+            <div>
+                <p>
+                    Il vous conseillé de vous maintenir en isolement ainsi
+                    que votre foyer le temps d’avoir un avis médical.
+                    Il vous est conseillé de tester
+                    vos symptômes avec l’outil suivant
+                    <a href="https://www.maladiecoronavirus.fr/">maladiecoronavirus.fr</a>
+                    qui vous orientera vers le professionnel de santé adapté.
+                    Pour plus d’informations sur l’isolement :
+                    <a href="https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf">solidarites-sante.gouv.fr</a>.
+                </p>
+            </div>
+        </div>
+        <div>
+            <a id="back-button" class="button" href="">Modifier mes informations personnelles</a>
+        </div>
+        <script type="text/javascript">
+            ;(function() {
+                document
+                    .getElementById('back-button')
+                    .addEventListener('click', function () {
+                        goToPage('introduction')
+                    })
+            })()
+        </script>
+    </div>
+</template>
+
+<template id="conseils-symptomes-passes">
+    <div id="conseils-symptomes-passes-block" class="block">
+        <h2>Vos conseils personnalisés</h2>
+        <div id="conseils-symptomes-passes-sans-risques" class="conseils" hidden>
+            <p>
+                Il vous est recommandé de garder votre foyer en isolement,
+                y compris les enfants en âge d’aller à la crèche ou à l’école.
+                Contactez votre médecin pour avoir des informations
+                personnalisées sur l’isolement et les tests diagnostiques.
+                De façon générale il est conseillé une levée de l’isolement
+                8 jours après le début des symptômes et après 48 heures
+                sans fièvre ni gène respiratoire.
+                Vous trouverez dans ce document les consignes d’isolement
+                à domicile <a href="https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf">solidarites-sante.gouv.fr</a>.
+            </p>
+        </div>
+        <div id="conseils-symptomes-passes-avec-risques" class="conseils" hidden>
+            <p>
+                Il vous est recommandé de garder votre foyer en isolement,
+                y compris les enfants en âge d’aller à la crèche ou à l’école.
+                Contactez votre médecin pour avoir des informations
+                personnalisées sur l’isolement et les tests diagnostiques.
+                De façon générale il est conseillé une levée de l’isolement
+                10 jours après le début des symptômes (si vous ou un membre
+                de votre foyer êtes à risque de forme grave) et après 48 heures
+                sans fièvre ni gène respiratoire.
+                Vous trouverez dans ce document les consignes d’isolement
+                à domicile <a href="https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf">solidarites-sante.gouv.fr</a>.
+            </p>
+        </div>
+        <div>
+            <a id="back-button" class="button" href="">Modifier mes informations personnelles</a>
+        </div>
+        <script type="text/javascript">
+            ;(function() {
+                displayConseilsSymptomesPasses(
+                    document.getElementById('conseils-symptomes-passes-block')
+                )
+                document
+                    .getElementById('back-button')
+                    .addEventListener('click', function () {
+                        goToPage('introduction')
+                    })
+            })()
+        </script>
+    </div>
+</template>
+
+<template id="conseils-contact-a-risque">
+    <div id="conseils-contact-a-risque-block" class="block">
+        <h2>Vos conseils personnalisés</h2>
+        <div class="conseils">
+            <p>
+                Nous vous conseillons de vous signaler auprès de votre
+                médecin généraliste.
+                Par la suite, un médecin ou un professionnel va vous
+                contacter si cela n’est pas déjà fait.
+                Gardez votre foyer en isolement en attendant plus d’informations
+                et appliquez les gestes barrières
+                <a href="https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/comment-se-proteger-du-coronavirus-covid-19">solidarites-sante.gouv.fr</a>.
+                Surveillez l’apparition de symptômes et contactez votre médecin si des symptômes apparaîssent.
+            </p>
+        </div>
+        <div>
+            <a id="back-button" class="button" href="">Modifier mes informations personnelles</a>
+        </div>
+        <script type="text/javascript">
+            ;(function() {
+                document
+                    .getElementById('back-button')
+                    .addEventListener('click', function () {
+                        goToPage('introduction')
+                    })
+            })()
+        </script>
     </div>
 </template>
 

@@ -642,18 +642,43 @@ function submitAntecedentsForm(event) {
     questionnaire.setAntecedentChroniqueAutre(
         event.target.elements['antecedent_chronique_autre'].checked
     )
-    goToPage('symptomes')
+    goToPage('symptomes-actuels')
 }
 
-function submitSymptomesForm(event) {
+function submitSymptomesActuelsForm(event) {
     event.preventDefault()
-    questionnaire.setSymptomesActuels(
-        event.target.elements['symptomes_actuels'].checked
-    )
-    questionnaire.setSymptomesPasses(event.target.elements['symptomes_passes'].checked)
-    questionnaire.setContactARisque(event.target.elements['contact_a_risque'].checked)
+    var symptomesActuels = event.target.elements['symptomes_actuels'].checked
+    questionnaire.setSymptomesActuels(symptomesActuels)
+    if (symptomesActuels) {
+        stockageLocal.enregistrer(questionnaire)
+        goToPage('conseils-symptomes-actuels')
+    } else {
+        goToPage('symptomes-passes')
+    }
+}
+
+function submitSymptomesPassesForm(event) {
+    event.preventDefault()
+    var symptomesPasses = event.target.elements['symptomes_passes'].checked
+    questionnaire.setSymptomesPasses(symptomesPasses)
+    if (symptomesPasses) {
+        stockageLocal.enregistrer(questionnaire)
+        goToPage('conseils-symptomes-passes')
+    } else {
+        goToPage('contact-a-risque')
+    }
+}
+
+function submitContactARisqueForm(event) {
+    event.preventDefault()
+    var contactARisque = event.target.elements['contact_a_risque'].checked
+    questionnaire.setContactARisque(contactARisque)
     stockageLocal.enregistrer(questionnaire)
-    goToPage('conseils')
+    if (contactARisque) {
+        goToPage('conseils-contact-a-risque')
+    } else {
+        goToPage('conseils')
+    }
 }
 
 function resetPrivateData(event) {
@@ -750,25 +775,6 @@ function displayElement(element, id) {
     block.classList.add('visible')
 }
 
-function displaySymptomesConseils(data, element) {
-    if (data.symptomes) {
-        displayElement(element, 'conseils-symptomes')
-    }
-    if (data.symptomes_actuels) {
-        displayElement(element, 'conseils-symptomes-actuels')
-    }
-    if (data.symptomes_passes) {
-        if (data.risques) {
-            displayElement(element, 'conseils-symptomes-passes-avec-risques')
-        } else {
-            displayElement(element, 'conseils-symptomes-passes-sans-risques')
-        }
-    }
-    if (data.contact_a_risque) {
-        displayElement(element, 'conseils-contact-a-risque')
-    }
-}
-
 function displayDepartementConseils(data, element) {
     displayElement(element, 'conseils-departement')
     if (data.couleur === 'rouge') {
@@ -845,15 +851,26 @@ function displayGeneralConseils(data, element) {
 
 function displayConseils(element) {
     // Hide all conseils that might have been made visible on previous runs.
-    Array.from(element.querySelectorAll('.visible')).forEach(hideElement)
+    ;[].forEach.call(element.querySelectorAll('.visible'), hideElement)
     var algorithme = new Algorithme(questionnaire, carteDepartements)
     var data = algorithme.getData()
-    displaySymptomesConseils(data, element)
     displayDepartementConseils(data, element)
     displayActiviteProConseils(data, element)
     displayFoyerConseils(data, element)
     displayCaracteristiquesAntecedentsConseils(data, element)
     displayGeneralConseils(data, element)
+}
+
+function displayConseilsSymptomesPasses(element) {
+    // Hide all conseils that might have been made visible on previous runs.
+    ;[].forEach.call(element.querySelectorAll('.visible'), hideElement)
+    var algorithme = new Algorithme(questionnaire, carteDepartements)
+    var data = algorithme.getData()
+    if (data.risques) {
+        displayElement(element, 'conseils-symptomes-passes-avec-risques')
+    } else {
+        displayElement(element, 'conseils-symptomes-passes-sans-risques')
+    }
 }
 
 var Algorithme = function (questionnaire, carteDepartements) {
