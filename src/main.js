@@ -458,12 +458,8 @@ function submitSymptomesForm(event) {
     questionnaire.setSymptomesActuels(
         event.target.elements['symptomes_actuels'].checked
     )
-    questionnaire.setSymptomesPasses(
-        event.target.elements['symptomes_passes'].checked
-    )
-    questionnaire.setContactARisque(
-        event.target.elements['contact_a_risque'].checked
-    )
+    questionnaire.setSymptomesPasses(event.target.elements['symptomes_passes'].checked)
+    questionnaire.setContactARisque(event.target.elements['contact_a_risque'].checked)
     stockageLocal.enregistrer(questionnaire)
     goToPage('conseils')
 }
@@ -696,11 +692,7 @@ var Algorithme = function (questionnaire, carteDepartements) {
     }
 
     this.hasSymptomes = function (data) {
-        return (
-            data.symptomes_actuels ||
-            data.symptomes_passes ||
-            data.contact_a_risque
-        )
+        return data.symptomes_actuels || data.symptomes_passes || data.contact_a_risque
     }
 
     this.getData = function () {
@@ -725,7 +717,7 @@ function loadPage(name) {
     var clone = template.content.cloneNode(true)
     page.innerHTML = '' // Flush the current content.
     var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
-    element.scrollIntoView({behavior: 'smooth'})
+    element.scrollIntoView({ behavior: 'smooth' })
 }
 
 ;(function () {
