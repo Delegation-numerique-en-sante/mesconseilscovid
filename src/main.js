@@ -791,7 +791,7 @@ function displayDepartementConseils(data, element) {
 }
 
 function displayActiviteProConseils(data, element) {
-    if (!data.contact_a_risque) {
+    if (data.activite_pro || data.activite_pro_public || data.activite_pro_sante) {
         displayElement(element, 'conseils-activite')
         if (data.activite_pro) {
             displayElement(element, 'conseils-activite-pro')
@@ -820,33 +820,17 @@ function displayFoyerConseils(data, element) {
 }
 
 function displayCaracteristiquesAntecedentsConseils(data, element) {
-    if (data.symptomes_passes) {
-        if (data.antecedent_chronique_autre) {
-            displayElement(element, 'conseils-caracteristiques')
-            displayElement(element, 'conseils-antecedents-chroniques-autres')
-        }
-    } else {
-        if (data.contact_a_risque) {
-            displayElement(element, 'conseils-caracteristiques')
-            if (data.antecedent_chronique_autre) {
-                displayElement(element, 'conseils-antecedents-chroniques-autres')
-            }
-        } else {
-            displayElement(element, 'conseils-caracteristiques')
-            if (data.sup65 || data.imc > 30 || data.antecedents) {
-                displayElement(element, 'conseils-caracteristiques-antecedents')
-            }
-            if (data.antecedent_chronique_autre) {
-                displayElement(element, 'conseils-antecedents-chroniques-autres')
-            }
-        }
+    displayElement(element, 'conseils-caracteristiques')
+    if (data.sup65 || data.imc > 30 || data.antecedents) {
+        displayElement(element, 'conseils-caracteristiques-antecedents')
+    }
+    if (data.antecedent_chronique_autre) {
+        displayElement(element, 'conseils-antecedents-chroniques-autres')
     }
 }
 
 function displayGeneralConseils(data, element) {
-    if (!data.contact_a_risque) {
-        displayElement(element, 'conseils-generaux')
-    }
+    displayElement(element, 'conseils-generaux')
 }
 
 function displayConseils(element) {
@@ -871,6 +855,15 @@ function displayConseilsSymptomesPasses(element) {
     } else {
         displayElement(element, 'conseils-symptomes-passes-sans-risques')
     }
+    displayDepartementConseils(data, element)
+}
+
+function displayConseilsContactARisque(element) {
+    // Hide all conseils that might have been made visible on previous runs.
+    ;[].forEach.call(element.querySelectorAll('.visible'), hideElement)
+    var algorithme = new Algorithme(questionnaire, carteDepartements)
+    var data = algorithme.getData()
+    displayDepartementConseils(data, element)
 }
 
 var Algorithme = function (questionnaire, carteDepartements) {
