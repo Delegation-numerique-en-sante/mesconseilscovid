@@ -806,26 +806,35 @@ function displayActiviteProConseils(data, element) {
 }
 
 function displayFoyerConseils(data, element) {
-    displayElement(element, 'conseils-foyer')
-    if (data.foyer_enfants && data.foyer_fragile) {
-        displayElement(element, 'conseils-foyer-enfants-fragile')
-        return
-    }
-    if (data.foyer_enfants) {
-        displayElement(element, 'conseils-foyer-enfants')
-    }
-    if (data.foyer_fragile) {
-        displayElement(element, 'conseils-foyer-fragile')
+    if (data.foyer_enfants || data.foyer_fragile) {
+        displayElement(element, 'conseils-foyer')
+        if (data.foyer_enfants && data.foyer_fragile) {
+            displayElement(element, 'conseils-foyer-enfants-fragile')
+            return
+        }
+        if (data.foyer_enfants) {
+            displayElement(element, 'conseils-foyer-enfants')
+        }
+        if (data.foyer_fragile) {
+            displayElement(element, 'conseils-foyer-fragile')
+        }
     }
 }
 
 function displayCaracteristiquesAntecedentsConseils(data, element) {
-    displayElement(element, 'conseils-caracteristiques')
-    if (data.sup65 || data.imc > 30 || data.antecedents) {
-        displayElement(element, 'conseils-caracteristiques-antecedents')
-    }
-    if (data.antecedent_chronique_autre) {
-        displayElement(element, 'conseils-antecedents-chroniques-autres')
+    if (
+        data.sup65 ||
+        data.imc > 30 ||
+        data.antecedents ||
+        data.antecedent_chronique_autre
+    ) {
+        displayElement(element, 'conseils-caracteristiques')
+        if (data.sup65 || data.imc > 30 || data.antecedents) {
+            displayElement(element, 'conseils-caracteristiques-antecedents')
+        }
+        if (data.antecedent_chronique_autre) {
+            displayElement(element, 'conseils-antecedents-chroniques-autres')
+        }
     }
 }
 
