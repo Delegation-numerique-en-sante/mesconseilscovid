@@ -1015,6 +1015,9 @@
     <script src="main.js"></script>
     <script type="text/javascript">
         ;(function() {
+            stockageLocal.charger(questionnaire).finally(function () {
+                navigation.init()
+            })
             document
                 .getElementById('delete-data')
                 .addEventListener('click', resetPrivateData)

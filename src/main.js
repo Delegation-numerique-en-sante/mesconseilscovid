@@ -1020,8 +1020,3 @@ var Navigation = function () {
     }
 }
 navigation = new Navigation()
-;(function () {
-    stockageLocal.charger(questionnaire).finally(function () {
-        navigation.init()
-    })
-})()
