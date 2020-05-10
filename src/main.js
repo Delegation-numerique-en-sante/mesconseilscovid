@@ -400,53 +400,53 @@ var carteDepartements = new CarteDepartements()
 
 var Questionnaire = function () {
     this.resetData = function () {
-        this._departement = ''
-        this._activite_pro = false
-        this._activite_pro_public = false
-        this._activite_pro_sante = false
-        this._foyer_enfants = false
-        this._foyer_fragile = false
-        this._sup65 = false
-        this._grossesse_3e_trimestre = false
-        this._poids = ''
-        this._taille = ''
-        this._antecedent_cardio = false
-        this._antecedent_diabete = false
-        this._antecedent_respi = false
-        this._antecedent_dialyse = false
-        this._antecedent_cancer = false
-        this._antecedent_immunodep = false
-        this._antecedent_cirrhose = false
-        this._antecedent_drepano = false
-        this._antecedent_chronique_autre = false
-        this._symptomes_actuels = false
-        this._symptomes_passes = false
-        this._contact_a_risque = false
+        this._departement = undefined
+        this._activite_pro = undefined
+        this._activite_pro_public = undefined
+        this._activite_pro_sante = undefined
+        this._foyer_enfants = undefined
+        this._foyer_fragile = undefined
+        this._sup65 = undefined
+        this._grossesse_3e_trimestre = undefined
+        this._poids = undefined
+        this._taille = undefined
+        this._antecedent_cardio = undefined
+        this._antecedent_diabete = undefined
+        this._antecedent_respi = undefined
+        this._antecedent_dialyse = undefined
+        this._antecedent_cancer = undefined
+        this._antecedent_immunodep = undefined
+        this._antecedent_cirrhose = undefined
+        this._antecedent_drepano = undefined
+        this._antecedent_chronique_autre = undefined
+        this._symptomes_actuels = undefined
+        this._symptomes_passes = undefined
+        this._contact_a_risque = undefined
     }
 
     this.fillData = function (data) {
-        this._departement = data['departement'] || ''
-        this._activite_pro = data['activite_pro'] || false
-        this._activite_pro_public = data['activite_pro_public'] || false
-        this._activite_pro_sante = data['activite_pro_sante'] || false
-        this._foyer_enfants = data['foyer_enfants'] || false
-        this._foyer_fragile = data['foyer_fragile'] || false
-        this._sup65 = data['sup65'] || false
-        this._grossesse_3e_trimestre = data['grossesse_3e_trimestre'] || false
-        this._poids = data['poids'] || ''
-        this._taille = data['taille'] || ''
-        this._antecedent_cardio = data['antecedent_cardio'] || false
-        this._antecedent_diabete = data['antecedent_diabete'] || false
-        this._antecedent_respi = data['antecedent_respi'] || false
-        this._antecedent_dialyse = data['antecedent_dialyse'] || false
-        this._antecedent_cancer = data['antecedent_cancer'] || false
-        this._antecedent_immunodep = data['antecedent_immunodep'] || false
-        this._antecedent_cirrhose = data['antecedent_cirrhose'] || false
-        this._antecedent_drepano = data['antecedent_drepano'] || false
-        this._antecedent_chronique_autre = data['antecedent_chronique_autre'] || false
-        this._symptomes_actuels = data['symptomes_actuels'] || false
-        this._symptomes_passes = data['symptomes_passes'] || false
-        this._contact_a_risque = data['contact_a_risque'] || false
+        this._departement = data['departement']
+        this._activite_pro = data['activite_pro']
+        this._activite_pro_public = data['activite_pro_public']
+        this._activite_pro_sante = data['activite_pro_sante']
+        this._foyer_enfants = data['foyer_enfants']
+        this._foyer_fragile = data['foyer_fragile']
+        this._sup65 = data['sup65']
+        this._grossesse_3e_trimestre = data['grossesse_3e_trimestre']
+        this._poids = data['poids']
+        this._taille = data['taille']
+        this._antecedent_cardio = data['antecedent_cardio']
+        this._antecedent_diabete = data['antecedent_diabete']
+        this._antecedent_respi = data['antecedent_respi']
+        this._antecedent_dialyse = data['antecedent_dialyse']
+        this._antecedent_cancer = data['antecedent_cancer']
+        this._antecedent_immunodep = data['antecedent_immunodep']
+        this._antecedent_cirrhose = data['antecedent_cirrhose']
+        this._antecedent_drepano = data['antecedent_drepano']
+        this._antecedent_chronique_autre = data['antecedent_chronique_autre']
+        this._symptomes_actuels = data['symptomes_actuels']
+        this._symptomes_passes = data['symptomes_passes']
+        this._contact_a_risque = data['contact_a_risque']
     }
 
     this.getData = function () {
@@ -580,6 +580,7 @@ function preloadCheckboxForm(form, key) {
 function submitDomicileForm(event) {
     event.preventDefault()
     questionnaire.setDomicile(event.target.elements['departement'].value)
+    stockageLocal.enregistrer(questionnaire)
     goToPage('activite-pro')
 }
 
@@ -592,6 +593,7 @@ function submitActiviteProForm(event) {
     questionnaire.setActiviteProSante(
         event.target.elements['activite_pro_sante'].checked
     )
+    stockageLocal.enregistrer(questionnaire)
     goToPage('foyer')
 }
 
@@ -599,6 +601,7 @@ function submitFoyerForm(event) {
     event.preventDefault()
     questionnaire.setFoyerEnfants(event.target.elements['foyer_enfants'].checked)
     questionnaire.setFoyerFragile(event.target.elements['foyer_fragile'].checked)
+    stockageLocal.enregistrer(questionnaire)
     goToPage('caracteristiques')
 }
 
@@ -612,6 +615,7 @@ function submitCaracteristiquesForm(event) {
         event.target.elements['poids'].value,
         event.target.elements['taille'].value
     )
+    stockageLocal.enregistrer(questionnaire)
     goToPage('antecedents')
 }
 
@@ -642,6 +646,7 @@ function submitAntecedentsForm(event) {
     questionnaire.setAntecedentChroniqueAutre(
         event.target.elements['antecedent_chronique_autre'].checked
     )
+    stockageLocal.enregistrer(questionnaire)
     goToPage('symptomes-actuels')
 }
 
@@ -649,8 +654,8 @@ function submitSymptomesActuelsForm(event) {
     event.preventDefault()
     var symptomesActuels = event.target.elements['symptomes_actuels'].checked
     questionnaire.setSymptomesActuels(symptomesActuels)
+    stockageLocal.enregistrer(questionnaire)
     if (symptomesActuels) {
-        stockageLocal.enregistrer(questionnaire)
         goToPage('conseils-symptomes-actuels')
     } else {
         goToPage('symptomes-passes')
@@ -661,8 +666,8 @@ function submitSymptomesPassesForm(event) {
     event.preventDefault()
     var symptomesPasses = event.target.elements['symptomes_passes'].checked
     questionnaire.setSymptomesPasses(symptomesPasses)
+    stockageLocal.enregistrer(questionnaire)
     if (symptomesPasses) {
-        stockageLocal.enregistrer(questionnaire)
         goToPage('conseils-symptomes-passes')
     } else {
         goToPage('contact-a-risque')
