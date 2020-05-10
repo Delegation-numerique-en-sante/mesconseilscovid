@@ -207,3 +207,6 @@ template {
     background-color: #d4edda;
     border-color: #c3e6cb;
 }
+a[href$=".pdf"]::after {
+    content: " (PDF)";
+}
