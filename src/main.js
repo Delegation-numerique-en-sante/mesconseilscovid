@@ -930,14 +930,105 @@ var Algorithme = function (questionnaire, carteDepartements) {
 
 var Navigation = function () {
     this.init = function () {
-        var hash = document.location.hash
-        this.loadPage(hash ? hash.slice(1) : 'introduction')
-
         var that = this
         window.addEventListener('hashchange', function (event) {
             var hash = document.location.hash && document.location.hash.slice(1)
             hash && that.loadPage(hash)
         })
+        this.loadInitialPage()
+    }
+
+    this.loadInitialPage = function () {
+        var hash = document.location.hash
+        var requestedPage = hash ? hash.slice(1) : 'introduction'
+        var redirectedPage = this.redirectIfMissingData(requestedPage)
+        if (redirectedPage) {
+            this.goToPage(redirectedPage)
+        } else {
+            this.loadPage(requestedPage)
+        }
+    }
+
+    this.redirectIfMissingData = function (page) {
+        if (page === 'introduction') return
+
+        // Questions obligatoires
+
+        if (page !== 'domicile' && typeof questionnaire._departement === 'undefined')
+            return 'introduction' // aucune réponse = retour à l’accueil
+
+        if (
+            page !== 'activite-pro' &&
+            typeof questionnaire._activite_pro === 'undefined'
+        )
+            return 'activite-pro'
+
+        if (page !== 'foyer' && typeof questionnaire._foyer_enfants === 'undefined')
+            return 'foyer'
+
+        if (page !== 'caracteristiques' && typeof questionnaire._sup65 === 'undefined')
+            return 'caracteristiques'
+
+        if (
+            page !== 'antecedents' &&
+            typeof questionnaire._antecedent_cardio === 'undefined'
+        )
+            return 'antecedents'
+
+        if (
+            page !== 'symptomes-actuels' &&
+            typeof questionnaire._symptomes_actuels === 'undefined'
+        )
+            return 'symptomes-actuels'
+
+        // Question posée seulement si pas de symptômes actuels
+        if (
+            page !== 'symptomes-passes' &&
+            typeof questionnaire._symptomes_passes === 'undefined' &&
+            questionnaire._symptomes_actuels === false
+        )
+            return 'symptomes-passes'
+
+        // Question posée seulement si pas de symptômes passés
+        if (
+            page !== 'contact-a-risque' &&
+            typeof questionnaire._contact_a_risque === 'undefined' &&
+            questionnaire._symptomes_passes === false
+        )
+            return 'contact-a-risque'
+
+        // Ne pas afficher les mauvais conseils
+        if (page === 'conseils') {
+            if (questionnaire._symptomes_actuels) return 'conseils-symptomes-actuels'
+            else if (questionnaire._symptomes_passes) return 'conseils-symptomes-passes'
+            else if (questionnaire._contact_a_risque) return 'conseils-contact-a-risque'
+            else return
+        }
+        if (
+            page === 'conseils-symptomes-actuels' &&
+            questionnaire._symptomes_actuels === false
+        ) {
+            if (questionnaire._symptomes_passes) return 'conseils-symptomes-passes'
+            else if (questionnaire._contact_a_risque) return 'conseils-contact-a-risque'
+            else return 'conseils'
+        }
+        if (
+            page === 'conseils-symptomes-passes' &&
+            questionnaire._symptomes_passes === false
+        ) {
+            if (questionnaire._symptomes_actuels) return 'conseils-symptomes-actuels'
+            else if (questionnaire._contact_a_risque) return 'conseils-contact-a-risque'
+            else return 'conseils'
+        }
+        if (
+            page === 'conseils-contact-a-risque' &&
+            questionnaire._contact_a_risque === false
+        ) {
+            if (questionnaire._symptomes_actuels) return 'conseils-symptomes-actuels'
+            else if (questionnaire._symptomes_passes) return 'conseils-symptomes-passes'
+            else if (questionnaire._contact_a_risque) return 'conseils-contact-a-risque'
+            else return 'conseils'
+        }
     }
 
     this.goToPage = function (name) {
