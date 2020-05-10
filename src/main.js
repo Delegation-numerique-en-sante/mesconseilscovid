@@ -581,7 +581,7 @@ function submitDomicileForm(event) {
     event.preventDefault()
     questionnaire.setDomicile(event.target.elements['departement'].value)
     stockageLocal.enregistrer(questionnaire)
-    goToPage('activite-pro')
+    navigation.goToPage('activite-pro')
 }
 
 function submitActiviteProForm(event) {
@@ -594,7 +594,7 @@ function submitActiviteProForm(event) {
         event.target.elements['activite_pro_sante'].checked
     )
     stockageLocal.enregistrer(questionnaire)
-    goToPage('foyer')
+    navigation.goToPage('foyer')
 }
 
 function submitFoyerForm(event) {
@@ -602,7 +602,7 @@ function submitFoyerForm(event) {
     questionnaire.setFoyerEnfants(event.target.elements['foyer_enfants'].checked)
     questionnaire.setFoyerFragile(event.target.elements['foyer_fragile'].checked)
     stockageLocal.enregistrer(questionnaire)
-    goToPage('caracteristiques')
+    navigation.goToPage('caracteristiques')
 }
 
 function submitCaracteristiquesForm(event) {
@@ -616,7 +616,7 @@ function submitCaracteristiquesForm(event) {
         event.target.elements['taille'].value
     )
     stockageLocal.enregistrer(questionnaire)
-    goToPage('antecedents')
+    navigation.goToPage('antecedents')
 }
 
 function submitAntecedentsForm(event) {
@@ -647,7 +647,7 @@ function submitAntecedentsForm(event) {
         event.target.elements['antecedent_chronique_autre'].checked
     )
     stockageLocal.enregistrer(questionnaire)
-    goToPage('symptomes-actuels')
+    navigation.goToPage('symptomes-actuels')
 }
 
 function submitSymptomesActuelsForm(event) {
@@ -656,9 +656,9 @@ function submitSymptomesActuelsForm(event) {
     questionnaire.setSymptomesActuels(symptomesActuels)
     stockageLocal.enregistrer(questionnaire)
     if (symptomesActuels) {
-        goToPage('conseils-symptomes-actuels')
+        navigation.goToPage('conseils-symptomes-actuels')
     } else {
-        goToPage('symptomes-passes')
+        navigation.goToPage('symptomes-passes')
     }
 }
 
@@ -668,9 +668,9 @@ function submitSymptomesPassesForm(event) {
     questionnaire.setSymptomesPasses(symptomesPasses)
     stockageLocal.enregistrer(questionnaire)
     if (symptomesPasses) {
-        goToPage('conseils-symptomes-passes')
+        navigation.goToPage('conseils-symptomes-passes')
     } else {
-        goToPage('contact-a-risque')
+        navigation.goToPage('contact-a-risque')
     }
 }
 
@@ -680,9 +680,9 @@ function submitContactARisqueForm(event) {
     questionnaire.setContactARisque(contactARisque)
     stockageLocal.enregistrer(questionnaire)
     if (contactARisque) {
-        goToPage('conseils-contact-a-risque')
+        navigation.goToPage('conseils-contact-a-risque')
     } else {
-        goToPage('conseils')
+        navigation.goToPage('conseils')
     }
 }
 
@@ -691,7 +691,7 @@ function resetPrivateData(event) {
     questionnaire.resetData()
     stockageLocal.supprimer()
     console.debug('Les données personnelles ont été supprimées')
-    goToPage('introduction')
+    navigation.goToPage('introduction')
 }
 
 var Geolocaliseur = function () {
@@ -928,27 +928,34 @@ var Algorithme = function (questionnaire, carteDepartements) {
     }
 }
 
-function goToPage(name) {
-    document.location.hash = name
-}
-
-function loadPage(name) {
-    var page = document.querySelector('section#page')
-    var template = document.querySelector('#' + name)
-    var clone = template.content.cloneNode(true)
-    page.innerHTML = '' // Flush the current content.
-    var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
-    element.scrollIntoView({ behavior: 'smooth' })
-}
-
-;(function () {
-    stockageLocal.charger(questionnaire).finally(function () {
+var Navigation = function () {
+    this.init = function () {
         var hash = document.location.hash
-        loadPage(hash ? hash.slice(1) : 'introduction')
+        this.loadPage(hash ? hash.slice(1) : 'introduction')
 
+        var that = this
         window.addEventListener('hashchange', function (event) {
             var hash = document.location.hash && document.location.hash.slice(1)
-            hash && loadPage(hash)
+            hash && that.loadPage(hash)
         })
+    }
+
+    this.goToPage = function (name) {
+        document.location.hash = name
+    }
+
+    this.loadPage = function (name) {
+        var page = document.querySelector('section#page')
+        var template = document.querySelector('#' + name)
+        var clone = template.content.cloneNode(true)
+        page.innerHTML = '' // Flush the current content.
+        var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
+        element.scrollIntoView({ behavior: 'smooth' })
+    }
+}
+navigation = new Navigation()
+;(function () {
+    stockageLocal.charger(questionnaire).finally(function () {
+        navigation.init()
     })
 })()
