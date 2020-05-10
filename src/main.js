@@ -476,7 +476,7 @@ var Questionnaire = function () {
         }
     }
 
-    this.setDomicile = function (departement) {
+    this.setResidence = function (departement) {
         this._departement = departement
     }
 
@@ -577,9 +577,9 @@ function preloadCheckboxForm(form, key) {
     }
 }
 
-function submitDomicileForm(event) {
+function submitResidenceForm(event) {
     event.preventDefault()
-    questionnaire.setDomicile(event.target.elements['departement'].value)
+    questionnaire.setResidence(event.target.elements['departement'].value)
     stockageLocal.enregistrer(questionnaire)
     navigation.goToPage('activite-pro')
 }
@@ -954,7 +954,7 @@ var Navigation = function () {
 
         // Questions obligatoires
 
-        if (page !== 'domicile' && typeof questionnaire._departement === 'undefined')
+        if (page !== 'residence' && typeof questionnaire._departement === 'undefined')
             return 'introduction' // aucune réponse = retour à l’accueil
 
         if (

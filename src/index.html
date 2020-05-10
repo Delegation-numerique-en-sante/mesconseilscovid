@@ -32,16 +32,16 @@
             🚧  Ce site est encore en construction !  🚧
         </p>
         <div>
-            <a class="button" href="#domicile">Démarrer</a>
+            <a class="button" href="#residence">Démarrer</a>
         </div>
     </div>
 </template>
 
-<template id="domicile">
-    <form id="domicile-form" action="" class="block">
+<template id="residence">
+    <form id="residence-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
-            <legend>1/8 - Mon domicile</legend>
+            <legend>1/8 - Mon lieu de résidence actuel</legend>
             <div class="row">
                 <label for="departement">Mon département</label>
                 <div class="dpt-container">
@@ -162,9 +162,9 @@
         </div>
         <script type="text/javascript">
             ;(function() {
-                var form = document.getElementById('domicile-form')
+                var form = document.getElementById('residence-form')
                 preloadForm(form, 'departement')
-                form.addEventListener('submit', submitDomicileForm)
+                form.addEventListener('submit', submitResidenceForm)
                 document
                     .getElementById('geolocalisation')
                     .addEventListener('click', geolocalisation)
