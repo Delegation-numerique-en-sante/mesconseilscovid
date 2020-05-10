@@ -115,6 +115,14 @@ fieldset .row > * {
     flex-basis: 50%;
 }
 
+fieldset .secondary {
+    margin-left: 2rem;
+}
+fieldset .secondary.disabled,
+fieldset .secondary.disabled small {
+    color: gray;
+}
+
 .dpt-container {
     display: flex;
     justify-content: flex-end;

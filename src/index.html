@@ -181,12 +181,12 @@
                 <input id="activite_pro" type="checkbox" name="activite_pro">
                 <label for="activite_pro">J’exerce une activité professionnelle et/ou bénévole</label>
             </div>
-            <div>
-                <input id="activite_pro_public" type="checkbox" name="activite_pro_public">
+            <div class="secondary disabled">
+                <input id="activite_pro_public" type="checkbox" name="activite_pro_public" disabled>
                 <label for="activite_pro_public">Dans le cadre de cette activité, je suis en contact direct avec du public</label>
             </div>
-            <div>
-                <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante">
+            <div class="secondary disabled">
+                <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
                 <label for="activite_pro_sante">Je travaille dans le domaine de la santé ou du médico-social<sup>*</sup></label>
                 <p>
                     <small>
@@ -200,11 +200,26 @@
             <input type="submit" class="button" value="Continuer">
         </div>
         <script type="text/javascript">
-            ;(function() {
+            ;(function () {
                 var form = document.getElementById('activite-pro-form')
+                var primary = form.elements['activite_pro']
+                function enableOrDisableSecondaryFields() {
+                    var primaryDisabled = !primary.checked
+                    ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
+                        var secondary = elem.querySelector('input')
+                        if (secondary.checked && primaryDisabled) {
+                            secondary.checked = false
+                            secondary.dispatchEvent(new Event('change'))
+                        }
+                        secondary.disabled = primaryDisabled
+                        elem.classList.toggle('disabled', primaryDisabled)
+                    })
+                }
                 preloadCheckboxForm(form, 'activite_pro')
                 preloadCheckboxForm(form, 'activite_pro_public')
                 preloadCheckboxForm(form, 'activite_pro_sante')
+                enableOrDisableSecondaryFields()
+                primary.addEventListener('click', enableOrDisableSecondaryFields)
                 form.addEventListener('submit', submitActiviteProForm)
             })()
         </script>
