@@ -23,72 +23,48 @@
 
 // Données privées, stockées uniquement en local
 var StockageLocal = function () {
-    this.db = new PouchDB('local')
-
     this.supprimer = function () {
-        var that = this
-        this.db
-            .destroy()
-            .then(function (response) {
-                that.db = new PouchDB('local')
+        localforage
+            .dropInstance()
+            .then(function () {
+                console.debug('Les données personnelles ont été supprimées')
             })
             .catch(function (error) {
-                console.error(error)
+                console.error(
+                    'Erreur lors de la suppression des données personnelles ' + error
+                )
             })
     }
 
     this.charger = function (questionnaire) {
-        return this.db.get('mes_infos').then(
+        return localforage.getItem('mes_infos').then(
             function (data) {
-                console.debug('Données locales:')
-                console.table(data)
-                questionnaire.fillData(data)
+                if (data !== null) {
+                    console.debug('Données locales:')
+                    console.table(data)
+                    questionnaire.fillData(data)
+                } else {
+                    console.debug('Pas de données locales pour l’instant')
+                }
             },
-            function (err) {
-                console.debug('Pas de données locales pour l’instant')
+            function (error) {
+                console.error('Erreur de chargement des données locales ' + error)
             }
         )
     }
 
     this.enregistrer = function (questionnaire) {
-        return this._upsert('mes_infos', questionnaire.getData())
-            .then(function (response) {
+        return localforage
+            .setItem('mes_infos', questionnaire.getData())
+            .then(function (data) {
                 console.debug('Les réponses au questionnaire ont bien été enregistrées')
-                console.debug(response)
+                console.debug(data)
             })
             .catch(function (error) {
                 console.error(
                     'Les réponses au questionnaire n’ont pas pu être enregistrées'
                 )
                 console.error(error)
-            })
-    }
-
-    this._upsert = function (_id, data) {
-        var that = this
-        return this.db
-            .get(_id)
-            .then(function (doc) {
-                var record = Object.assign(
-                    {
-                        _id: _id,
-                        _rev: doc._rev,
-                    },
-                    data
-                )
-                return that.db.put(record)
-            })
-            .catch(function (error) {
-                if (error.name === 'not_found') {
-                    var record = Object.assign(
-                        {
-                            _id: _id,
-                        },
-                        data
-                    )
-                    return that.db.put(record)
-                }
-                throw error
             })
     }
 }
@@ -690,7 +666,6 @@ function resetPrivateData(event) {
     event.preventDefault()
     questionnaire.resetData()
     stockageLocal.supprimer()
-    console.debug('Les données personnelles ont été supprimées')
     navigation.goToPage('introduction')
 }
 
