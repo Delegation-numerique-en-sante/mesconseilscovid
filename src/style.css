@@ -82,11 +82,14 @@ main {
 }
 
 fieldset {
-    margin-bottom: 1rem;
-    padding: 1rem;
+    border: none;
+    margin: 0 0 1rem 0;
+    padding: 0;
 }
 fieldset legend {
-    font-size: 1.2rem;
+    color: #000091;
+    font-size: 150%;
+    margin-bottom: 1.75rem;
 }
 fieldset div {
     margin: 0.5rem 0;
@@ -101,6 +104,7 @@ fieldset ul.no-list-style {
 fieldset .row {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
     margin-bottom: 1rem;
 }
 fieldset .row > * {
@@ -137,12 +141,12 @@ fieldset ul.details {
 }
 .dpt-container select {
     flex-grow: 1;
-    margin-bottom: 0.5rem;
 }
 .dpt-container div {
     margin-left: 0.5rem;
 }
 .dpt-container img {
+    display: block;
     width: 1.75rem;
 }
 
