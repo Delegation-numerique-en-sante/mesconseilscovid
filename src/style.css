@@ -198,6 +198,7 @@ input[type='submit'] {
     color: #ffffff;
     transform: translate(-0.1em, -0.1em);
     transition: all 100ms ease-in;
+    white-space: pre-wrap;
 }
 .button:hover {
     cursor: pointer;
