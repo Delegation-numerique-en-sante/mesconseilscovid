@@ -91,13 +91,6 @@ fieldset legend {
 fieldset div {
     margin: 0.5rem 0;
 }
-fieldset small {
-    line-height: 1;
-}
-fieldset p,
-fieldset li small {
-    color: #484d7a;
-}
 fieldset ul {
     list-style: square;
 }
@@ -118,9 +111,23 @@ fieldset .row > * {
 fieldset .secondary {
     margin-left: 2rem;
 }
-fieldset .secondary.disabled,
-fieldset .secondary.disabled small {
-    color: gray;
+fieldset .secondary.disabled {
+    display: none;
+}
+
+fieldset .field {
+    margin-bottom: 1.5rem;
+}
+
+fieldset .details {
+    margin: 0.25rem 0 0 1.25rem;
+    padding-left: 0.5rem;
+    color: #484d7a;
+    font-size: small;
+    line-height: 1.75;
+}
+fieldset ul.details {
+    padding-left: 1rem;
 }
 
 .dpt-container {
@@ -207,6 +214,6 @@ template {
     background-color: #d4edda;
     border-color: #c3e6cb;
 }
-a[href$=".pdf"]::after {
-    content: " (PDF)";
+a[href$='.pdf']::after {
+    content: ' (PDF)';
 }

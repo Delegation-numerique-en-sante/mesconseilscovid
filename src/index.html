@@ -189,12 +189,10 @@
             <div class="secondary disabled">
                 <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
                 <label for="activite_pro_sante">Je travaille dans le domaine de la santé ou du médico-social<sup>*</sup></label>
-                <p>
-                    <small>
-                        <sup>*</sup>
-                        Médecin, infirmier, aide soignant, brancardier, manipulateur radio, kinésithérapeute, psychologue…
-                    </small>
-                </p>
+                <div class="details">
+                    <sup>*</sup>
+                    Médecin, infirmier, aide soignant, brancardier, manipulateur radio, kinésithérapeute, psychologue…
+                </div>
             </div>
         </fieldset>
         <div>
@@ -242,26 +240,24 @@
                     Je vis avec une ou des personnes fragiles<sup>*</sup>
                     et/ou handicapées
                 </label>
-                <p>
-                    <small>
-                        <sup>*</sup>
-                        Une personne fragile est une personne présentant
-                        au moins une des caractéristique suivantes :
-                        âge > ou égal à 65 ans,
-                        avec une maladie cardiovasculaire,
-                        diabète mal équilibré ou avec des complications (yeux, reins),
-                        maladie respiratoire chronique (broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose),
-                        insuffisance rénale chronique avec besoin de faire de la dialyse,
-                        cancer sous traitement tel que chimiothérapie,
-                        radiothérapie,
-                        chirurgie de cancer prévue ou réalisée dans les … années (hors hormonothérapie),
-                        cancer évolutif sous traitement (hors hormonothérapie),
-                        immunodépression congénitale ou acquise (médicamenteuse : chimiothérapie anti cancéreuse, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive ; infection à VIH non contrôlée ou avec des CD4 <200/mm<sup>3</sup> ; consécutive à une greffe d’organe solide ou de cellules souches hématopoïétiques ; liée à une hémopathie maligne en cours de traitement),
-                        une cirrhose,
-                        une drépanocytose,
-                        une femme enceinte au 3e trimestre de sa grossesse.
-                    </small>
-                </p>
+                <div class="details">
+                    <sup>*</sup>
+                    Une personne fragile est une personne présentant
+                    au moins une des caractéristique suivantes :
+                    âge > ou égal à 65 ans,
+                    avec une maladie cardiovasculaire,
+                    diabète mal équilibré ou avec des complications (yeux, reins),
+                    maladie respiratoire chronique (broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose),
+                    insuffisance rénale chronique avec besoin de faire de la dialyse,
+                    cancer sous traitement tel que chimiothérapie,
+                    radiothérapie,
+                    chirurgie de cancer prévue ou réalisée dans les … années (hors hormonothérapie),
+                    cancer évolutif sous traitement (hors hormonothérapie),
+                    immunodépression congénitale ou acquise (médicamenteuse : chimiothérapie anti cancéreuse, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive ; infection à VIH non contrôlée ou avec des CD4 <200/mm<sup>3</sup> ; consécutive à une greffe d’organe solide ou de cellules souches hématopoïétiques ; liée à une hémopathie maligne en cours de traitement),
+                    une cirrhose,
+                    une drépanocytose,
+                    une femme enceinte au 3e trimestre de sa grossesse.
+                </div>
             </div>
         </fieldset>
         <div>
@@ -283,30 +279,28 @@
         <h2>Mes informations</h2>
         <fieldset>
             <legend>4/8 - Mes caractéristiques</legend>
-            <div>
+            <div class="field">
                 <input id="sup65" type="checkbox" name="sup65">
                 <label for="sup65">Je suis âgé·e de 65 ans ou plus</label>
             </div>
-            <div>
+            <div class="field">
                 <input id="grossesse_3e_trimestre" type="checkbox" name="grossesse_3e_trimestre">
                 <label for="grossesse_3e_trimestre">Je suis une femme et je suis enceinte au 3<sup>e</sup> trimestre de ma grossesse</label>
             </div>
-            <ul class="no-list-style">
+            <ul class="no-list-style" style="margin-top: 2rem">
                 <li class="row">
-                    <label for="taille">Ma taille<sup>*</sup> en centimètres :</label>
-                    <input id="taille" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="Par ex. 165" required>
+                    <label for="taille">Ma taille<sup>*</sup> en centimètres (ex. 165) :</label>
+                    <input id="taille" type="text" inputmode="numeric" pattern="[0-9]*" required>
                 </li>
                 <li class="row">
-                    <label for="poids">Mon poids<sup>*</sup> en kilogrammes :</label>
-                    <input id="poids" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="Par ex. 70" required>
+                    <label for="poids">Mon poids<sup>*</sup> en kilogrammes (ex. 70) :</label>
+                    <input id="poids" type="text" inputmode="numeric" pattern="[0-9]*" required>
                 </li>
             </ul>
-            <p>
-                <small>
-                    <sup>*</sup>
-                    Ces données sont utiles pour calculer votre indice de masse corporelle.
-                </small>
-            </p>
+            <div class="details">
+                <sup>*</sup>
+                Ces données sont utiles pour calculer votre indice de masse corporelle.
+            </div>
         </fieldset>
         <div>
             <input type="submit" class="button" value="Continuer">
@@ -329,31 +323,34 @@
         <h2>Mes informations</h2>
         <fieldset>
             <legend>5/8 - Mes antécédents</legend>
-            <div>
+            <div class="field">
                 <input id="antecedent_cardio" type="checkbox" name="antecedent_cardio">
-                <label for="antecedent_cardio">J’ai des antécédents de maladie cardiovasculaire : hypertension artérielle compliquée (avec complications cardiaques, rénales), accident vasculaire cérébral, maladie coronaire (infarctus), chirurgie cardiaque, insuffisance cardiaque avec essoufflement au moindre effort</label>
+                <label for="antecedent_cardio">J’ai des antécédents de <b>maladie cardiovasculaire</b> :
+                <div class="details">hypertension artérielle compliquée (avec complications cardiaques, rénales), accident vasculaire cérébral, maladie coronaire (infarctus), chirurgie cardiaque, insuffisance cardiaque avec essoufflement au moindre effort</div></label>
             </div>
-            <div>
+            <div class="field">
                 <input id="antecedent_diabete" type="checkbox" name="antecedent_diabete">
-                <label for="antecedent_diabete">J’ai un diabète mal équilibré ou avec des complications (yeux, reins)</label>
+                <label for="antecedent_diabete">J’ai un <b>diabète</b> mal équilibré ou avec des complications (yeux, reins)</label>
             </div>
-            <div>
+            <div class="field">
                 <input id="antecedent_respi" type="checkbox" name="antecedent_respi">
-                <label for="antecedent_respi">J’ai une maladie respiratoire chronique (broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose)</label>
+                <label for="antecedent_respi">J’ai une <b>maladie respiratoire</b> chronique :
+                    <div class="details">broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose)</div>
+                </label>
             </div>
-            <div>
+            <div class="field">
                 <input id="antecedent_dialyse" type="checkbox" name="antecedent_dialyse">
-                <label for="antecedent_dialyse">J’ai une insuffisance rénale chronique avec besoin de faire de la dialyse</label>
+                <label for="antecedent_dialyse">J’ai une <b>insuffisance rénale</b> chronique avec besoin de faire de la dialyse</label>
             </div>
-            <div>
+            <div class="field">
                 <input id="antecedent_cancer" type="checkbox" name="antecedent_cancer">
-                <label for="antecedent_cancer">J’ai un cancer évolutif sous traitement (hors hormonothérapie)</label>
+                <label for="antecedent_cancer">J’ai un <b>cancer</b> évolutif sous traitement (hors hormonothérapie)</label>
             </div>
-            <div>
+            <div class="field">
                 <input id="antecedent_immunodep" type="checkbox" name="antecedent_immunodep">
                 <label for="antecedent_immunodep">
-                    J’ai une immunodépression congénitale ou acquise :
-                    <ul>
+                    J’ai une <b>immunodépression</b> congénitale ou acquise :
+                    <ul class="details">
                         <li>médicamenteuse : chimiothérapie anti cancéreuse, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive ;</li>
                         <li>infection à VIH non contrôlée ou avec des CD4 <200/mm<sup>3</sup> ;</li>
                         <li>consécutive à une greffe d’organe solide ou de cellules souches hématopoïétiques ;</li>
@@ -361,21 +358,21 @@
                     </ul>
                 </label>
             </div>
-            <div>
+            <div class="field">
                 <input id="antecedent_cirrhose" type="checkbox" name="antecedent_cirrhose">
-                <label for="antecedent_cirrhose">J’ai une cirrhose</label>
+                <label for="antecedent_cirrhose">J’ai une <b>cirrhose</b></label>
             </div>
-            <div>
+            <div class="field">
                 <input id="antecedent_drepano" type="checkbox" name="antecedent_drepano">
                 <label for="antecedent_drepano">
-                    J’ai une drépanocytose homozygote ou
-                    j’ai bénéficié d’une splénectomie (ablation de la rate)
+                    J’ai une <b>drépanocytose</b> homozygote, ou
+                    j’ai bénéficié d’une <b>splénectomie</b> (ablation de la rate)
                     à cause de la drépanocytose
                 </label>
             </div>
-            <div>
+            <div class="field">
                 <input id="antecedent_chronique_autre" type="checkbox" name="antecedent_chronique_autre">
-                <label for="antecedent_chronique_autre">J’ai une autre maladie chronique ou handicap ou je prends un traitement au long cours</label>
+                <label for="antecedent_chronique_autre">J’ai une autre maladie chronique, ou handicap, ou je prends un traitement au long cours</label>
             </div>
         </fieldset>
         <div>
@@ -407,13 +404,16 @@
             <div>
                 <input id="symptomes_actuels" type="checkbox" name="symptomes_actuels">
                 <label for="symptomes_actuels">
-                    J’ai un ou des symptômes qui peuvent évoquer
-                    le COVID actuellement. Signes infectieux (fièvre, frissons),
+                    J’ai un ou des <b>symptômes</b> qui peuvent évoquer le COVID <u>actuellement</u>.
+                </label>
+                <div class="details">
+                    Signes infectieux (fièvre, frissons),
                     toux ou gêne respiratoire, fatigue inexpliquée, courbatures,
                     douleurs dans les mollets, maux de tète,
                     perte de l’odorat et du gout,
                     engelures aux mains et/ou au pieds (rougeurs, fissures…)
-                </label>
+
+                </div>
             </div>
         </fieldset>
         <div>
@@ -437,13 +437,16 @@
             <div>
                 <input id="symptomes_passes" type="checkbox" name="symptomes_passes">
                 <label for="symptomes_passes">
-                    J’ai eu des symptômes qui peuvent évoquer le COVID
-                    dans les 14 derniers jours. Signes infectieux (fièvre, frissons),
+                    J’ai eu des <b>symptômes</b> qui peuvent évoquer le COVID
+                    <u>dans les 14 derniers jours</u>.
+                </label>
+                <div class="details">
+                    Signes infectieux (fièvre, frissons),
                     toux ou gêne respiratoire, fatigue inexpliquée, courbatures,
                     douleurs dans les mollets, maux de tète,
                     perte de l’odorat et du gout,
                     engelures aux mains et/ou au pieds (rougeurs, fissures…)
-                </label>
+                </div>
             </div>
         </fieldset>
         <div>
@@ -470,34 +473,32 @@
                     J’ai eu un <strong>contact à risque</strong><sup>*</sup>
                     avec une personne COVID confirmée
                 </label>
-                <p>
-                    <small>
+                <div class="details">
+                    <p>
                         <sup>*</sup>
                         Le <strong>contact à risque</strong> est défini pour une personne :
-                    </small>
-                </p>
-                <ul>
-                    <li>
-                        <small>Ayant partagé le même lieu de vie que le cas confirmé ou probable ;</small>
-                    </li>
-                    <li>
-                        <small>Ayant eu un contact direct avec un cas, en face à face, à moins d’1 mètre, quelle que soit la durée (ex. conversation, repas, flirt, accolades, embrassades). En revanche, des personnes croisées dans l’espace public de manière fugace ne sont pas considérées comme des personnes contacts à risque ;</small>
-                    </li>
-                    <li>
-                        <small>Ayant prodigué ou reçu des actes d’hygiène ou de soins ;</small>
-                    </li>
-                    <li>
-                        <small>Ayant partagé un espace confiné (bureau ou salle de réunion, véhicule personnel…) pendant au moins 15 minutes avec un cas, ou étant resté en face à face avec un cas durant plusieurs épisodes de toux ou d’éternuement ;</small>
-                    </li>
-                    <li>
-                        <small>Étant élève ou enseignant de la même classe scolaire (maternelle, primaire, secondaire, groupe de travaux dirigés à l’université).</small>
-                    </li>
-                </ul>
-                <p>
-                    <small>
+                    </p>
+                    <ul>
+                        <li>
+                            Ayant partagé le même lieu de vie que le cas confirmé ou probable ;
+                        </li>
+                        <li>
+                            Ayant eu un contact direct avec un cas, en face à face, à moins d’1 mètre, quelle que soit la durée (ex. conversation, repas, flirt, accolades, embrassades). En revanche, des personnes croisées dans l’espace public de manière fugace ne sont pas considérées comme des personnes contacts à risque ;
+                        </li>
+                        <li>
+                            Ayant prodigué ou reçu des actes d’hygiène ou de soins ;
+                        </li>
+                        <li>
+                            Ayant partagé un espace confiné (bureau ou salle de réunion, véhicule personnel…) pendant au moins 15 minutes avec un cas, ou étant resté en face à face avec un cas durant plusieurs épisodes de toux ou d’éternuement ;
+                        </li>
+                        <li>
+                            Étant élève ou enseignant de la même classe scolaire (maternelle, primaire, secondaire, groupe de travaux dirigés à l’université).
+                        </li>
+                    </ul>
+                    <p>
                         NB : Ces définitions de personnes contact ne s’appliquent pas à l’évaluation des contacts à risque d’un professionnel de santé hospitalier survenus dans un contexte de soins, pour lequel une évaluation spécifique doit être réalisée par le médecin du travail et l’équipe opérationnelle.
-                    </small>
-                </p>
+                    </p>
+                </div>
             </div>
         </fieldset>
         <div>
