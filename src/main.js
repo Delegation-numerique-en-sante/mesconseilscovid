@@ -929,81 +929,78 @@ var Navigation = function () {
 
         // Questions obligatoires
 
-        if (page !== 'residence' && typeof questionnaire._departement === 'undefined')
+        if (typeof questionnaire._departement === 'undefined' && page !== 'residence')
             return 'introduction' // aucune réponse = retour à l’accueil
 
+        if (page === 'residence') return
+
         if (
-            page !== 'activite-pro' &&
-            typeof questionnaire._activite_pro === 'undefined'
+            typeof questionnaire._activite_pro === 'undefined' &&
+            page !== 'activite-pro'
         )
             return 'activite-pro'
 
-        if (page !== 'foyer' && typeof questionnaire._foyer_enfants === 'undefined')
+        if (page === 'activite-pro') return
+
+        if (typeof questionnaire._foyer_enfants === 'undefined' && page !== 'foyer')
             return 'foyer'
 
-        if (page !== 'caracteristiques' && typeof questionnaire._sup65 === 'undefined')
+        if (page === 'foyer') return
+
+        if (typeof questionnaire._sup65 === 'undefined' && page !== 'caracteristiques')
             return 'caracteristiques'
 
+        if (page === 'caracteristiques') return
+
         if (
-            page !== 'antecedents' &&
-            typeof questionnaire._antecedent_cardio === 'undefined'
+            typeof questionnaire._antecedent_cardio === 'undefined' &&
+            page !== 'antecedents'
         )
             return 'antecedents'
 
+        if (page === 'antecedents') return
+
         if (
-            page !== 'symptomes-actuels' &&
-            typeof questionnaire._symptomes_actuels === 'undefined'
+            typeof questionnaire._symptomes_actuels === 'undefined' &&
+            page !== 'symptomes-actuels'
         )
             return 'symptomes-actuels'
 
-        // Question posée seulement si pas de symptômes actuels
+        if (page === 'symptomes-actuels') return
+
+        if (questionnaire._symptomes_actuels === true)
+            return page === 'conseils-symptomes-actuels'
+                ? undefined
+                : 'conseils-symptomes-actuels'
+
         if (
-            page !== 'symptomes-passes' &&
             typeof questionnaire._symptomes_passes === 'undefined' &&
-            questionnaire._symptomes_actuels === false
+            page !== 'symptomes-passes'
         )
             return 'symptomes-passes'
 
-        // Question posée seulement si pas de symptômes passés
+        if (page === 'symptomes-passes') return
+
+        if (questionnaire._symptomes_passes === true)
+            return page === 'conseils-symptomes-passes'
+                ? undefined
+                : 'conseils-symptomes-passes'
+
         if (
-            page !== 'contact-a-risque' &&
             typeof questionnaire._contact_a_risque === 'undefined' &&
-            questionnaire._symptomes_passes === false
+            page !== 'contact-a-risque'
         )
             return 'contact-a-risque'
 
-        // Ne pas afficher les mauvais conseils
-        if (page === 'conseils') {
-            if (questionnaire._symptomes_actuels) return 'conseils-symptomes-actuels'
-            else if (questionnaire._symptomes_passes) return 'conseils-symptomes-passes'
-            else if (questionnaire._contact_a_risque) return 'conseils-contact-a-risque'
-            else return
-        }
-        if (
-            page === 'conseils-symptomes-actuels' &&
-            questionnaire._symptomes_actuels === false
-        ) {
-            if (questionnaire._symptomes_passes) return 'conseils-symptomes-passes'
-            else if (questionnaire._contact_a_risque) return 'conseils-contact-a-risque'
-            else return 'conseils'
-        }
-        if (
-            page === 'conseils-symptomes-passes' &&
-            questionnaire._symptomes_passes === false
-        ) {
-            if (questionnaire._symptomes_actuels) return 'conseils-symptomes-actuels'
-            else if (questionnaire._contact_a_risque) return 'conseils-contact-a-risque'
-            else return 'conseils'
-        }
-        if (
-            page === 'conseils-contact-a-risque' &&
-            questionnaire._contact_a_risque === false
-        ) {
-            if (questionnaire._symptomes_actuels) return 'conseils-symptomes-actuels'
-            else if (questionnaire._symptomes_passes) return 'conseils-symptomes-passes'
-            else if (questionnaire._contact_a_risque) return 'conseils-contact-a-risque'
-            else return 'conseils'
-        }
+        if (page === 'contact-a-risque') return
+
+        if (questionnaire._contact_a_risque === true)
+            return page === 'conseils-contact-a-risque'
+                ? undefined
+                : 'conseils-contact-a-risque'
+
+        if (questionnaire._contact_a_risque === false)
+            return page === 'conseils' ? undefined : 'conseils'
     }
 
     this.goToPage = function (name) {
