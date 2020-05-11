@@ -25,7 +25,7 @@ body {
     padding: 0;
     font-family: 'Marianne', Sans-Serif;
     font-size: 16px;
-    line-height: 1.6rem;
+    line-height: 1.5;
     overflow: inherit;
     min-width: 360px;
 }
@@ -71,6 +71,13 @@ main {
     font-size: 225%;
     padding-top: 3rem;
     margin-bottom: 3rem;
+}
+.block p {
+    margin: 1rem auto;
+}
+
+#introduction-block {
+    text-align: center;
 }
 
 .conseils {
