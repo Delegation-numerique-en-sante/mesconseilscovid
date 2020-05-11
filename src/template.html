@@ -542,30 +542,13 @@
         <div id="conseils-departement" class="conseils" hidden>
             <h3>Votre localisation</h3>
             <div id="conseils-departement-rouge" hidden>
-                <p class="couleur couleur-rouge">
-    Votre département est en niveau <strong>rouge</strong>.
-    Vous devez prendre des mesures particulières.
-</p>
-<p>Vous pouvez consulter à l’adresse suivante les consignes
-à appliquer dans vos activités :
-<a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">Stratégie de Déconfinement</a></p>
-
+                {{ conseils_departement_rouge }}
             </div>
             <div id="conseils-departement-vert" hidden>
-                <p class="couleur couleur-vert">
-    Votre département est en niveau <strong>vert</strong>.
-</p>
-<p>Vous pouvez consulter à l’adresse suivante les consignes
-à appliquer dans vos activités :
-<a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">Stratégie de Déconfinement</a></p>
-
+                {{ conseils_departement_vert }}
             </div>
             <div id="conseils-departement-default">
-                <p>Vous pouvez vérifier en un clin d’œil les règles spécifiques
-de votre département :
-<a href="#conseils-departement" id="lien-prefecture">Site de votre préfecture</a></p>
-<p>Vous pouvez consulter <a href="https://www.gouvernement.fr/sites/default/files/cimages/infographie_deconfinement.jpg">l’infographie du plan de déconfinement</a>.</p>
-
+                {{ conseils_departement_défaut }}
             </div>
         </div>
         <div id="conseils-activite" class="conseils" hidden>
@@ -728,36 +711,13 @@ de votre département :
         <div id="conseils-generaux" class="conseils" hidden>
             <h3>Conseils d’ordre général</h3>
             <div>
-                <p>Les occasions de contact augmentant à nouveau à partir
-du début du déconfinement, le respect des gestes barrières
-et de distanciation physique prendra encore plus d’importance.
-Pour plus d’information sur les gestes barrières :
-<a href="https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/comment-se-proteger-du-coronavirus-covid-19">solidarites-sante.gouv.fr</a>.</p>
-<p>Le port du masque s’imposera dans certaines situations,
-pour plus d’information sur le déconfinement :
-<a href="https://www.gouvernement.fr/info-coronavirus/masques-grand-public">gouvernement.fr</a>.</p>
-<p>Pour plus d’information sur le déconfinement :
-<a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">gouvernement.fr</a>.</p>
-<p>Pour toutes questions sur l’alimentation, les courses et le nettoyage
-retrouvez les recommandations de l’Anses :
-<a href="https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses">anses.fr</a>.</p>
-
+                {{ conseils_généraux }}
             </div>
             <div>
-                <p>Si vous avez des questions par rapport au COVID,
-vous êtes invités à consulter le site :
-<a href="https://www.covid19-faq.fr/">covid19-faq</a>.</p>
-
+                {{ conseils_généraux_faq }}
             </div>
             <div>
-                <p class="couleur couleur-rouge">
-    <strong>IMPORTANT :</strong>
-    Le COVID n’a pas fait disparaitre les autres pathologies.
-    Afin de préserver votre santé, il vous est recommandé de
-    poursuivre ou de reprendre votre suivi médical habituel
-    et de consulter au moindre signe de maladie.
-</p>
-
+                {{ conseils_généraux_autres_pathologies }}
             </div>
         </div>
         <div>
@@ -796,36 +756,13 @@ vous êtes invités à consulter le site :
         <div id="conseils-generaux" class="conseils">
             <h3>Conseils d’ordre général</h3>
             <div>
-                <p>Les occasions de contact augmentant à nouveau à partir
-du début du déconfinement, le respect des gestes barrières
-et de distanciation physique prendra encore plus d’importance.
-Pour plus d’information sur les gestes barrières :
-<a href="https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/comment-se-proteger-du-coronavirus-covid-19">solidarites-sante.gouv.fr</a>.</p>
-<p>Le port du masque s’imposera dans certaines situations,
-pour plus d’information sur le déconfinement :
-<a href="https://www.gouvernement.fr/info-coronavirus/masques-grand-public">gouvernement.fr</a>.</p>
-<p>Pour plus d’information sur le déconfinement :
-<a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">gouvernement.fr</a>.</p>
-<p>Pour toutes questions sur l’alimentation, les courses et le nettoyage
-retrouvez les recommandations de l’Anses :
-<a href="https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses">anses.fr</a>.</p>
-
+                {{ conseils_généraux }}
             </div>
             <div>
-                <p>Si vous avez des questions par rapport au COVID,
-vous êtes invités à consulter le site :
-<a href="https://www.covid19-faq.fr/">covid19-faq</a>.</p>
-
+                {{ conseils_généraux_faq }}
             </div>
             <div>
-                <p class="couleur couleur-rouge">
-    <strong>IMPORTANT :</strong>
-    Le COVID n’a pas fait disparaitre les autres pathologies.
-    Afin de préserver votre santé, il vous est recommandé de
-    poursuivre ou de reprendre votre suivi médical habituel
-    et de consulter au moindre signe de maladie.
-</p>
-
+                {{ conseils_généraux_autres_pathologies }}
             </div>
         </div>
         <div>
@@ -887,30 +824,13 @@ vous êtes invités à consulter le site :
         <div id="conseils-departement" class="conseils" hidden>
             <h3>Votre localisation</h3>
             <div id="conseils-departement-rouge" hidden>
-                <p class="couleur couleur-rouge">
-    Votre département est en niveau <strong>rouge</strong>.
-    Vous devez prendre des mesures particulières.
-</p>
-<p>Vous pouvez consulter à l’adresse suivante les consignes
-à appliquer dans vos activités :
-<a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">Stratégie de Déconfinement</a></p>
-
+                {{ conseils_departement_rouge }}
             </div>
             <div id="conseils-departement-vert" hidden>
-                <p class="couleur couleur-vert">
-    Votre département est en niveau <strong>vert</strong>.
-</p>
-<p>Vous pouvez consulter à l’adresse suivante les consignes
-à appliquer dans vos activités :
-<a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">Stratégie de Déconfinement</a></p>
-
+                {{ conseils_departement_vert }}
             </div>
             <div id="conseils-departement-default">
-                <p>Vous pouvez vérifier en un clin d’œil les règles spécifiques
-de votre département :
-<a href="#conseils-departement" id="lien-prefecture">Site de votre préfecture</a></p>
-<p>Vous pouvez consulter <a href="https://www.gouvernement.fr/sites/default/files/cimages/infographie_deconfinement.jpg">l’infographie du plan de déconfinement</a>.</p>
-
+                {{ conseils_departement_défaut }}
             </div>
         </div>
         <div id="conseils-foyer" class="conseils">
@@ -949,36 +869,13 @@ de votre département :
         <div id="conseils-generaux" class="conseils">
             <h3>Conseils d’ordre général</h3>
             <div>
-                <p>Les occasions de contact augmentant à nouveau à partir
-du début du déconfinement, le respect des gestes barrières
-et de distanciation physique prendra encore plus d’importance.
-Pour plus d’information sur les gestes barrières :
-<a href="https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/comment-se-proteger-du-coronavirus-covid-19">solidarites-sante.gouv.fr</a>.</p>
-<p>Le port du masque s’imposera dans certaines situations,
-pour plus d’information sur le déconfinement :
-<a href="https://www.gouvernement.fr/info-coronavirus/masques-grand-public">gouvernement.fr</a>.</p>
-<p>Pour plus d’information sur le déconfinement :
-<a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">gouvernement.fr</a>.</p>
-<p>Pour toutes questions sur l’alimentation, les courses et le nettoyage
-retrouvez les recommandations de l’Anses :
-<a href="https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses">anses.fr</a>.</p>
-
+                {{ conseils_généraux }}
             </div>
             <div>
-                <p>Si vous avez des questions par rapport au COVID,
-vous êtes invités à consulter le site :
-<a href="https://www.covid19-faq.fr/">covid19-faq</a>.</p>
-
+                {{ conseils_généraux_faq }}
             </div>
             <div>
-                <p class="couleur couleur-rouge">
-    <strong>IMPORTANT :</strong>
-    Le COVID n’a pas fait disparaitre les autres pathologies.
-    Afin de préserver votre santé, il vous est recommandé de
-    poursuivre ou de reprendre votre suivi médical habituel
-    et de consulter au moindre signe de maladie.
-</p>
-
+                {{ conseils_généraux_autres_pathologies }}
             </div>
         </div>
         <div>
@@ -1017,30 +914,13 @@ vous êtes invités à consulter le site :
         <div id="conseils-departement" class="conseils" hidden>
             <h3>Votre localisation</h3>
             <div id="conseils-departement-rouge" hidden>
-                <p class="couleur couleur-rouge">
-    Votre département est en niveau <strong>rouge</strong>.
-    Vous devez prendre des mesures particulières.
-</p>
-<p>Vous pouvez consulter à l’adresse suivante les consignes
-à appliquer dans vos activités :
-<a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">Stratégie de Déconfinement</a></p>
-
+                {{ conseils_departement_rouge }}
             </div>
             <div id="conseils-departement-vert" hidden>
-                <p class="couleur couleur-vert">
-    Votre département est en niveau <strong>vert</strong>.
-</p>
-<p>Vous pouvez consulter à l’adresse suivante les consignes
-à appliquer dans vos activités :
-<a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">Stratégie de Déconfinement</a></p>
-
+                {{ conseils_departement_vert }}
             </div>
             <div id="conseils-departement-default">
-                <p>Vous pouvez vérifier en un clin d’œil les règles spécifiques
-de votre département :
-<a href="#conseils-departement" id="lien-prefecture">Site de votre préfecture</a></p>
-<p>Vous pouvez consulter <a href="https://www.gouvernement.fr/sites/default/files/cimages/infographie_deconfinement.jpg">l’infographie du plan de déconfinement</a>.</p>
-
+                {{ conseils_departement_défaut }}
             </div>
         </div>
         <div id="conseils-foyer" class="conseils">
@@ -1079,36 +959,13 @@ de votre département :
         <div id="conseils-generaux" class="conseils">
             <h3>Conseils d’ordre général</h3>
             <div>
-                <p>Les occasions de contact augmentant à nouveau à partir
-du début du déconfinement, le respect des gestes barrières
-et de distanciation physique prendra encore plus d’importance.
-Pour plus d’information sur les gestes barrières :
-<a href="https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/comment-se-proteger-du-coronavirus-covid-19">solidarites-sante.gouv.fr</a>.</p>
-<p>Le port du masque s’imposera dans certaines situations,
-pour plus d’information sur le déconfinement :
-<a href="https://www.gouvernement.fr/info-coronavirus/masques-grand-public">gouvernement.fr</a>.</p>
-<p>Pour plus d’information sur le déconfinement :
-<a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">gouvernement.fr</a>.</p>
-<p>Pour toutes questions sur l’alimentation, les courses et le nettoyage
-retrouvez les recommandations de l’Anses :
-<a href="https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses">anses.fr</a>.</p>
-
+                {{ conseils_généraux }}
             </div>
             <div>
-                <p>Si vous avez des questions par rapport au COVID,
-vous êtes invités à consulter le site :
-<a href="https://www.covid19-faq.fr/">covid19-faq</a>.</p>
-
+                {{ conseils_généraux_faq }}
             </div>
             <div>
-                <p class="couleur couleur-rouge">
-    <strong>IMPORTANT :</strong>
-    Le COVID n’a pas fait disparaitre les autres pathologies.
-    Afin de préserver votre santé, il vous est recommandé de
-    poursuivre ou de reprendre votre suivi médical habituel
-    et de consulter au moindre signe de maladie.
-</p>
-
+                {{ conseils_généraux_autres_pathologies }}
             </div>
         </div>
         <div>

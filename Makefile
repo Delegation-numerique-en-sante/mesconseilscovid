@@ -4,4 +4,7 @@ key.pem:
 serve: key.pem
 	python3 serve.py
 
+build:
+	python3 build.py index
+
 .PHONY: serve
