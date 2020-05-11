@@ -396,21 +396,6 @@
             ;(function() {
                 var form = document.getElementById('antecedents-form')
                 var button = form.querySelector('input[type=submit]')
-                var initialLabel = button.value
-                function updateSubmitButtonLabel(event) {
-                    var label = initialLabel
-                    ;[].forEach.call(form.querySelectorAll('input[type=checkbox]'), function (elem) {
-                        if (elem.checked)
-                            label = 'Continuer'
-                    })
-                    button.value = label
-                }
-                ;[].forEach.call(
-                    form.querySelectorAll('input[type=checkbox]'),
-                    function (elem) {
-                        elem.addEventListener('change', updateSubmitButtonLabel)
-                    }
-                )
                 preloadCheckboxForm(form, 'antecedent_cardio')
                 preloadCheckboxForm(form, 'antecedent_diabete')
                 preloadCheckboxForm(form, 'antecedent_respi')
@@ -420,7 +405,7 @@
                 preloadCheckboxForm(form, 'antecedent_cirrhose')
                 preloadCheckboxForm(form, 'antecedent_drepano')
                 preloadCheckboxForm(form, 'antecedent_chronique_autre')
-                updateSubmitButtonLabel()
+                toggleFormButtonOnCheck(form, button.value, 'Continuer')
                 form.addEventListener('submit', submitAntecedentsForm)
             })()
         </script>
@@ -454,23 +439,8 @@
             ;(function() {
                 var form = document.getElementById('symptomes-actuels-form')
                 var button = form.querySelector('input[type=submit]')
-                var initialLabel = button.value
-                function updateSubmitButtonLabel(event) {
-                    var label = initialLabel
-                    ;[].forEach.call(form.querySelectorAll('input[type=checkbox]'), function (elem) {
-                        if (elem.checked)
-                            label = 'Terminer'
-                    })
-                    button.value = label
-                }
-                ;[].forEach.call(
-                    form.querySelectorAll('input[type=checkbox]'),
-                    function (elem) {
-                        elem.addEventListener('change', updateSubmitButtonLabel)
-                    }
-                )
-                updateSubmitButtonLabel()
                 preloadCheckboxForm(form, 'symptomes_actuels')
+                toggleFormButtonOnCheck(form, button.value, 'Terminer')
                 form.addEventListener('submit', submitSymptomesActuelsForm)
             })()
         </script>
@@ -504,23 +474,8 @@
             ;(function() {
                 var form = document.getElementById('symptomes-passes-form')
                 var button = form.querySelector('input[type=submit]')
-                var initialLabel = button.value
-                function updateSubmitButtonLabel(event) {
-                    var label = initialLabel
-                    ;[].forEach.call(form.querySelectorAll('input[type=checkbox]'), function (elem) {
-                        if (elem.checked)
-                            label = 'Terminer'
-                    })
-                    button.value = label
-                }
-                ;[].forEach.call(
-                    form.querySelectorAll('input[type=checkbox]'),
-                    function (elem) {
-                        elem.addEventListener('change', updateSubmitButtonLabel)
-                    }
-                )
-                updateSubmitButtonLabel()
                 preloadCheckboxForm(form, 'symptomes_passes')
+                toggleFormButtonOnCheck(form, button.value, 'Terminer')
                 form.addEventListener('submit', submitSymptomesPassesForm)
             })()
         </script>
@@ -573,23 +528,8 @@
             ;(function() {
                 var form = document.getElementById('contact-a-risque-form')
                 var button = form.querySelector('input[type=submit]')
-                var initialLabel = button.value
-                function updateSubmitButtonLabel(event) {
-                    var label = initialLabel
-                    ;[].forEach.call(form.querySelectorAll('input[type=checkbox]'), function (elem) {
-                        if (elem.checked)
-                            label = 'Terminer'
-                    })
-                    button.value = label
-                }
-                ;[].forEach.call(
-                    form.querySelectorAll('input[type=checkbox]'),
-                    function (elem) {
-                        elem.addEventListener('change', updateSubmitButtonLabel)
-                    }
-                )
-                updateSubmitButtonLabel()
                 preloadCheckboxForm(form, 'contact_a_risque')
+                toggleFormButtonOnCheck(form, button.value, 'Terminer')
                 form.addEventListener('submit', submitContactARisqueForm)
             })()
         </script>

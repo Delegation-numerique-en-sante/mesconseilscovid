@@ -553,6 +553,21 @@ function preloadCheckboxForm(form, key) {
     }
 }
 
+function toggleFormButtonOnCheck(form, initialLabel, alternateLabel) {
+    var button = form.querySelector('input[type=submit]')
+    var checkboxes = [].slice.call(form.querySelectorAll('input[type=checkbox]'))
+    function updateSubmitButtonLabel(event) {
+        var hasChecks = checkboxes.some(function (checkbox) {
+            return checkbox.checked
+        })
+        button.value = hasChecks ? alternateLabel : initialLabel
+    }
+    updateSubmitButtonLabel()
+    checkboxes.forEach(function (elem) {
+        elem.addEventListener('change', updateSubmitButtonLabel)
+    })
+}
+
 function submitResidenceForm(event) {
     event.preventDefault()
     questionnaire.setResidence(event.target.elements['departement'].value)
