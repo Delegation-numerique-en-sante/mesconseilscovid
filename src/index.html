@@ -376,11 +376,26 @@
             </div>
         </fieldset>
         <div>
-            <input type="submit" class="button" value="Continuer">
+            <input type="submit" class="button" value="Aucun de ces éléments ne correspond à ma situation">
         </div>
         <script type="text/javascript">
             ;(function() {
                 var form = document.getElementById('antecedents-form')
+                var button = form.querySelector('input[type=submit]')
+                function updateSubmitButtonLabel(event) {
+                    var label = 'Aucun de ces éléments ne correspond à ma situation'
+                    ;[].forEach.call(form.querySelectorAll('input[type=checkbox]'), function (elem) {
+                        if (elem.checked)
+                            label = 'Continuer'
+                    })
+                    button.value = label
+                }
+                ;[].forEach.call(
+                    form.querySelectorAll('input[type=checkbox]'),
+                    function (elem) {
+                        elem.addEventListener('change', updateSubmitButtonLabel)
+                    }
+                )
                 preloadCheckboxForm(form, 'antecedent_cardio')
                 preloadCheckboxForm(form, 'antecedent_diabete')
                 preloadCheckboxForm(form, 'antecedent_respi')
@@ -390,6 +405,7 @@
                 preloadCheckboxForm(form, 'antecedent_cirrhose')
                 preloadCheckboxForm(form, 'antecedent_drepano')
                 preloadCheckboxForm(form, 'antecedent_chronique_autre')
+                updateSubmitButtonLabel()
                 form.addEventListener('submit', submitAntecedentsForm)
             })()
         </script>
