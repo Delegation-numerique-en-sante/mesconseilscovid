@@ -15,7 +15,7 @@ Informations et conseils personnalisés autour du Covid-19 pour se protéger et 
 ### Générer le fichier `index.html`
 
 ```
-$ pip install -r requirements.txt
+$ make install
 $ make build
 ```
 
