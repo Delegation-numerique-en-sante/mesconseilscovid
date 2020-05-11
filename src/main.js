@@ -916,7 +916,7 @@ var Navigation = function () {
     this.loadInitialPage = function () {
         var hash = document.location.hash
         var requestedPage = hash ? hash.slice(1) : 'introduction'
-        var redirectedPage = this.redirectIfMissingData(requestedPage)
+        var redirectedPage = this.redirectIfMissingData(requestedPage, questionnaire)
         if (redirectedPage) {
             this.goToPage(redirectedPage)
         } else {
@@ -924,7 +924,7 @@ var Navigation = function () {
         }
     }
 
-    this.redirectIfMissingData = function (page) {
+    this.redirectIfMissingData = function (page, questionnaire) {
         if (page === 'introduction') return
 
         // Questions obligatoires
