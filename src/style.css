@@ -215,6 +215,7 @@ template {
 .couleur {
     padding: 1rem;
     border-radius: 0.3rem;
+    font-size: 1.25rem;
 }
 .couleur-rouge {
     color: #721c24;
