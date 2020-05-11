@@ -6,11 +6,11 @@ from time import perf_counter
 
 import mistune
 from jinja2 import Environment as Env
-from jinja2 import FileSystemLoader
+from jinja2 import FileSystemLoader, StrictUndefined
 from minicli import cli, run, wrap
 
 HERE = Path(".")
-environment = Env(loader=FileSystemLoader(str(HERE / "src")))
+environment = Env(loader=FileSystemLoader(str(HERE / "src")), undefined=StrictUndefined)
 markdown = mistune.create_markdown(escape=False)
 
 
