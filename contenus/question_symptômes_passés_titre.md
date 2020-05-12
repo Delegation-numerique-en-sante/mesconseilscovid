@@ -1,0 +1,1 @@
+<!---->Mes symptômes passés
