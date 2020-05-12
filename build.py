@@ -24,7 +24,11 @@ def build_responses(source_dir):
     """Extract and convert markdown from a `source_dir` directory into a dict."""
     responses = {}
     for file_path, filename in each_markdown_from(source_dir):
-        responses[filename[: -len(".md")]] = markdown.read(file_path)
+        html_content = markdown.read(file_path)
+        # Remove empty comments set to hack markdown rendering
+        # when we do not want paragraphs.
+        html_content = html_content.replace("<!---->", "")
+        responses[filename[: -len(".md")]] = html_content
 
     return responses
 
