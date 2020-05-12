@@ -9,7 +9,7 @@ serve: key.pem  ## Serve the `src/index.html` file with `https` on `localhost`.
 install:  ## Install Python dependencies contained in `requirements.txt`.
 	python3 -m pip install -r requirements.txt
 
-build:  ## Build the index from `template.html` + réponses markdown files.
+build:  ## Build the index from `template.html` + contenus markdown files.
 	python3 build.py index
 
 .PHONY: serve install build

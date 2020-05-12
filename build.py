@@ -31,9 +31,9 @@ def build_responses(source_dir):
 
 @cli
 def index():
-    """Build the index with réponses from markdown dedicated folder."""
+    """Build the index with contents from markdown dedicated folder."""
     template = environment.get_template("template.html")
-    responses = build_responses(Path("") / "réponses")
+    responses = build_responses(Path("") / "contenus")
     content = template.render(**responses)
     open(HERE / "src" / "index.html", "w").write(content)
 
