@@ -1,4 +1,4 @@
-Il vous conseillé de vous maintenir en isolement ainsi
+Il vous est conseillé de vous maintenir en isolement ainsi
 que votre foyer le temps d’avoir un avis médical.
 Il vous est conseillé de tester
 vos symptômes avec l’outil suivant

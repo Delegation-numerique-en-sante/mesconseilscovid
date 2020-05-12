@@ -6,4 +6,4 @@ Gardez votre foyer en isolement en attendant plus d’informations
 et appliquez les gestes barrières
 [solidarites-sante.gouv.fr](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/comment-se-proteger-du-coronavirus-covid-19).
 
-Surveillez l’apparition de symptômes et contactez votre médecin si des symptômes apparaîssent.
+Surveillez l’apparition de symptômes et contactez votre médecin si des symptômes apparaissent.
