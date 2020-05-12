@@ -1,7 +1,11 @@
 # Contenus
 
-Les fichiers listés ci-dessus correspondent à l’intégralité des contenus du site. Vous pouvez proposer des modifications en éditant directement ces fichiers, elles seront intégrées lors du prochain déploiement.
+Les fichiers listés ci-dessus contiennent l’intégralité des contenus du site. Vous pouvez proposer des modifications en éditant directement ces fichiers, elles seront intégrées lors du prochain déploiement.
 
 ## Conseils personnalisés
 
-Les fichiers comportant le préfixe `conseils_` correspondent aux réponses du questionnaire.
+Les fichiers comportant le préfixe `conseils_` correspondent aux différentes réponses possibles du questionnaire.
+
+## Informations additionnelles
+
+Les fichiers comportant le préfixe `meta_` correspondent aux informations additionnelles comme la page d’introduction ou le pied de page par exemple.

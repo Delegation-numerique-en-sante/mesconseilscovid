@@ -80,6 +80,15 @@ main {
     text-align: center;
 }
 
+main footer {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.larger {
+    font-size: x-large;
+}
+
 .conseils {
     margin-bottom: 5rem;
 }
@@ -205,9 +214,6 @@ input[type='submit'] {
     transform: translate(0px, 0px);
 }
 
-#delete {
-    text-align: center;
-}
 [hidden],
 template {
     display: none !important;
