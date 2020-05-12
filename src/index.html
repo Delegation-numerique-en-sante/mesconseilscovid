@@ -251,24 +251,26 @@ Médecin, infirmier, aide soignant, brancardier, manipulateur radio, kinésithé
             </div>
             <div>
                 <input id="foyer_fragile" type="checkbox" name="foyer_fragile">
-                <label for="foyer_fragile">Je vis avec une ou des <b>personnes fragiles</b><sup>*</sup> et/ou handicapées
+                <label for="foyer_fragile">Je vis avec une ou des personnes considérée comme <b>fragiles</b><sup>*</sup> face au covid-19 et/ou en situation de handicap
 </label>
                 <div class="details"><p><sup>*</sup>
-Une personne fragile est une personne présentant
-au moins une des caractéristique suivantes :
-âge &gt; ou égal à 65 ans,
-avec une maladie cardiovasculaire,
-diabète mal équilibré ou avec des complications (yeux, reins),
-maladie respiratoire chronique (broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose),
-insuffisance rénale chronique avec besoin de faire de la dialyse,
-cancer sous traitement tel que chimiothérapie,
-radiothérapie,
-chirurgie de cancer prévue ou réalisée dans les … années (hors hormonothérapie),
-cancer évolutif sous traitement (hors hormonothérapie),
-immunodépression congénitale ou acquise (médicamenteuse : chimiothérapie anti cancéreuse, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive ; infection à VIH non contrôlée ou avec des CD4 &lt;200/mm<sup>3</sup> ; consécutive à une greffe d’organe solide ou de cellules souches hématopoïétiques ; liée à une hémopathie maligne en cours de traitement),
-une cirrhose,
-une drépanocytose,
-une femme enceinte au 3e trimestre de sa grossesse.</p>
+Une personne considérée comme étant fragile est une personne présentant
+au moins une des caractéristiques suivantes :</p>
+<ul>
+<li>âge &gt; ou égal à 65 ans,</li>
+<li>avec une maladie cardiovasculaire,</li>
+<li>diabète mal équilibré ou avec des complications (yeux, reins),</li>
+<li>maladie respiratoire chronique (broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnée du sommeil, mucoviscidose),</li>
+<li>insuffisance rénale chronique avec besoin de faire de la dialyse,</li>
+<li>cancer sous traitement tel que chimiothérapie,</li>
+<li>radiothérapie,</li>
+<li>chirurgie de cancer prévue ou réalisée dans les … années (hors hormonothérapie),</li>
+<li>cancer évolutif sous traitement (hors hormonothérapie),</li>
+<li>immunodépression congénitale ou acquise (médicamenteuse : chimiothérapie anti cancéreuse, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive ; infection à VIH non contrôlée ou avec des CD4 &lt;200/mm<sup>3</sup> ; consécutive à une greffe d’organe solide ou de cellules souches hématopoïétiques ; liée à une hémopathie maligne en cours de traitement),</li>
+<li>une cirrhose,</li>
+<li>une drépanocytose,</li>
+<li>une femme enceinte au 3e trimestre de sa grossesse.</li>
+</ul>
 </div>
             </div>
         </fieldset>
@@ -299,7 +301,7 @@ une femme enceinte au 3e trimestre de sa grossesse.</p>
             </div>
             <div class="field">
                 <input id="grossesse_3e_trimestre" type="checkbox" name="grossesse_3e_trimestre">
-                <label for="grossesse_3e_trimestre">Je suis une femme et je suis enceinte au 3<sup>e</sup> trimestre de ma grossesse
+                <label for="grossesse_3e_trimestre">Je suis une femme enceinte au 3<sup>e</sup> trimestre de ma grossesse
 </label>
             </div>
             <ul class="no-list-style" style="margin-top: 2rem">
@@ -629,14 +631,19 @@ Si vous êtes travailleur indépendant ou exploitant agricole,
 renseignez-vous sur le 
 <a href="https://declare.ameli.fr/">télé-service de l’Assurance Maladie</a>.</p>
 
+                <p>Les consultations de vos enfants comportant des 
+vaccins obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) 
+doivent être maintenues. Il ne faut pas craindre de déranger 
+les professionnels de santé : ils se sont organisés pour continuer 
+à vous prendre en charge dans des conditions sécurisées.</p>
+
             </div>
             <div id="conseils-foyer-fragile" hidden>
                 <p>Si vous devez accueillir des enfants au sein de votre foyer,
 nous vous recommandons de mettre en place des mesures de
 distanciation physique renforcée pendant la présence des enfants.</p>
 
-                <p>Si vous ou un membre de votre foyer êtes porteur de fragilité
-ou de handicap, il vous est conseillé de poursuivre le suivi
+                <p>Si vous ou un membre de votre foyer êtes considérée comme fragiles face au covid-19 ou porteur de handicap, il vous est conseillé de poursuivre le suivi
 et le renouvellement de vos médicaments auprès de vos médecins
 référents qui vous orienteront vers le meilleur moyen de suivi :
 <a href="https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf">has-sante.fr</a>.</p>
@@ -860,6 +867,10 @@ vous pouvez utiliser le document suivant :
 <p>Ce document pourra aussi aider les professionnels de santé
 si vous souhaitez le partager.</p>
 
+            <p>Si votre médecin vous prescrit un test de dépistage covid-19, 
+le site Santé.fr vous propose la
+<a href="https://sante.fr/cartographie-depistage-covid">carte des lieux de test du coronavirus</a>.</p>
+
         </div>
         <div id="conseils-departement" class="conseils" hidden>
             <h3>Votre localisation</h3>
@@ -893,8 +904,7 @@ de votre département :
         <div id="conseils-foyer" class="conseils">
             <h3>Votre foyer</h3>
             <div id="conseils-foyer-fragile">
-                <p>Si vous ou un membre de votre foyer êtes porteur de fragilité
-ou de handicap, il vous est conseillé de poursuivre le suivi
+                <p>Si vous ou un membre de votre foyer êtes considérée comme fragiles face au covid-19 ou porteur de handicap, il vous est conseillé de poursuivre le suivi
 et le renouvellement de vos médicaments auprès de vos médecins
 référents qui vous orienteront vers le meilleur moyen de suivi :
 <a href="https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf">has-sante.fr</a>.</p>
@@ -984,6 +994,10 @@ et appliquez les gestes barrières
 <a href="https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/comment-se-proteger-du-coronavirus-covid-19">solidarites-sante.gouv.fr</a>.</p>
 <p>Surveillez l’apparition de symptômes et contactez votre médecin si des symptômes apparaissent.</p>
 
+            <p>Si votre médecin vous prescrit un test de dépistage covid-19, 
+le site Santé.fr vous propose la
+<a href="https://sante.fr/cartographie-depistage-covid">carte des lieux de test du coronavirus</a>.</p>
+
         </div>
         <div id="conseils-departement" class="conseils" hidden>
             <h3>Votre localisation</h3>
@@ -1017,8 +1031,7 @@ de votre département :
         <div id="conseils-foyer" class="conseils">
             <h3>Votre foyer</h3>
             <div id="conseils-foyer-fragile">
-                <p>Si vous ou un membre de votre foyer êtes porteur de fragilité
-ou de handicap, il vous est conseillé de poursuivre le suivi
+                <p>Si vous ou un membre de votre foyer êtes considérée comme fragiles face au covid-19 ou porteur de handicap, il vous est conseillé de poursuivre le suivi
 et le renouvellement de vos médicaments auprès de vos médecins
 référents qui vous orienteront vers le meilleur moyen de suivi :
 <a href="https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf">has-sante.fr</a>.</p>
