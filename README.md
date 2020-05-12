@@ -12,6 +12,15 @@ Informations et conseils personnalisés autour du Covid-19 pour se protéger et 
 
 ## Développement
 
+### Générer le fichier `index.html`
+
+```
+$ make install
+$ make build
+```
+
+NB : il est conseillé d’installer les modules Python dans un [environnement virtuel](https://docs.python.org/3/tutorial/venv.html).
+
 ### Lancer un serveur local
 
 Pour lancer un serveur local sur https://localhost:8443/ :
