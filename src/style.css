@@ -146,6 +146,13 @@ fieldset .details {
     font-size: small;
     line-height: 1.75;
 }
+fieldset .details ul {
+    margin-top: 0;
+    padding-left: .5rem;
+}
+fieldset .details p {
+    margin-top: 0;
+}
 fieldset ul.details {
     padding-left: 1rem;
 }

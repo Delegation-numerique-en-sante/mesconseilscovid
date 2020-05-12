@@ -292,57 +292,63 @@
     <form id="antecedents-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
-            <legend>5/8 - Mes antécédents</legend>
+            <legend>5/8 - {{ question_antécédents_titre }}</legend>
             <div class="field">
                 <input id="antecedent_cardio" type="checkbox" name="antecedent_cardio">
-                <label for="antecedent_cardio">J’ai des antécédents de <b>maladie cardiovasculaire</b> :
-                <div class="details">hypertension artérielle compliquée (avec complications cardiaques, rénales), accident vasculaire cérébral, maladie coronaire (infarctus), chirurgie cardiaque, insuffisance cardiaque avec essoufflement au moindre effort</div></label>
+                <label for="antecedent_cardio">
+                    {{ question_antécédents_cardio_libellé }}
+                    <div class="details">{{ question_antécédents_cardio_aide }}</div>
+                </label>
             </div>
             <div class="field">
                 <input id="antecedent_diabete" type="checkbox" name="antecedent_diabete">
-                <label for="antecedent_diabete">J’ai un <b>diabète</b> mal équilibré ou avec des complications (yeux, reins)</label>
+                <label for="antecedent_diabete">
+                    {{ question_antécédents_diabète_libellé }}
+                </label>
             </div>
             <div class="field">
                 <input id="antecedent_respi" type="checkbox" name="antecedent_respi">
-                <label for="antecedent_respi">J’ai une <b>maladie respiratoire</b> chronique :
-                    <div class="details">broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose)</div>
+                <label for="antecedent_respi">
+                    {{ question_antécédents_respi_libellé }}
+                    <div class="details">{{ question_antécédents_respi_aide }}</div>
                 </label>
             </div>
             <div class="field">
                 <input id="antecedent_dialyse" type="checkbox" name="antecedent_dialyse">
-                <label for="antecedent_dialyse">J’ai une <b>insuffisance rénale</b> chronique avec besoin de faire de la dialyse</label>
+                <label for="antecedent_dialyse">
+                    {{ question_antécédents_dialyse_libellé }}
+                </label>
             </div>
             <div class="field">
                 <input id="antecedent_cancer" type="checkbox" name="antecedent_cancer">
-                <label for="antecedent_cancer">J’ai un <b>cancer</b> évolutif sous traitement (hors hormonothérapie)</label>
+                <label for="antecedent_cancer">
+                    {{ question_antécédents_cancer_libellé }}
+                </label>
             </div>
             <div class="field">
                 <input id="antecedent_immunodep" type="checkbox" name="antecedent_immunodep">
                 <label for="antecedent_immunodep">
-                    J’ai une <b>immunodépression</b> congénitale ou acquise :
-                    <ul class="details">
-                        <li>médicamenteuse : chimiothérapie anti cancéreuse, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive ;</li>
-                        <li>infection à VIH non contrôlée ou avec des CD4 <200/mm<sup>3</sup> ;</li>
-                        <li>consécutive à une greffe d’organe solide ou de cellules souches hématopoïétiques ;</li>
-                        <li>liée à une hémopathie maligne en cours de traitement.</li>
-                    </ul>
+                    {{ question_antécédents_immunodépression_libellé }}
+                    <div class="details">{{ question_antécédents_immunodépression_aide }}</div>
                 </label>
             </div>
             <div class="field">
                 <input id="antecedent_cirrhose" type="checkbox" name="antecedent_cirrhose">
-                <label for="antecedent_cirrhose">J’ai une <b>cirrhose</b></label>
+                <label for="antecedent_cirrhose">
+                    {{ question_antécédents_cirrhose_libellé }}
+                </label>
             </div>
             <div class="field">
                 <input id="antecedent_drepano" type="checkbox" name="antecedent_drepano">
                 <label for="antecedent_drepano">
-                    J’ai une <b>drépanocytose</b> homozygote, ou
-                    j’ai bénéficié d’une <b>splénectomie</b> (ablation de la rate)
-                    à cause de la drépanocytose
+                    {{ question_antécédents_drépanocytose_libellé }}
                 </label>
             </div>
             <div class="field">
                 <input id="antecedent_chronique_autre" type="checkbox" name="antecedent_chronique_autre">
-                <label for="antecedent_chronique_autre">J’ai une autre maladie chronique, ou handicap, ou je prends un traitement au long cours</label>
+                <label for="antecedent_chronique_autre">
+                    {{ question_antécédents_chronique_autre_libellé }}
+                </label>
             </div>
         </fieldset>
         <div>
