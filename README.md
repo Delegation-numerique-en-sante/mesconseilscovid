@@ -1,8 +1,8 @@
 # Mes Conseils Covid
 
-Pour que chacun puisse agir contre le virus.
+## Pour que chacun puisse agir contre le virus.
 
-**En construction !**
+**🚧  Ce site est encore en construction !  🚧**
 
 
 ## Données
@@ -25,7 +25,7 @@ Les données saisies restent uniquement dans le navigateur et peuvent être supp
 
 ### Proposer une amélioration du contenu
 
-Aller dans le dossier [`/contenus/`](contenus/) qui contient les fichiers au format [CommonMark](https://commonmark.org/) (aussi appelé Markdown), vous pouvez éditer les fichiers disponibles et proposer une `pull-request` à partir de ces suggestions. Il est conseillé de [lire la documentation](tree/master/contenus#contenus) associée à ces fichiers.
+Aller dans le dossier [`/contenus/`](contenus/) qui contient les fichiers au format [CommonMark](https://commonmark.org/) (aussi appelé Markdown), vous pouvez éditer les fichiers disponibles et proposer une `pull-request` à partir de ces suggestions. Il est conseillé de [lire la documentation](contenus#contenus) associée à ces fichiers.
 
 ### Générer le fichier `index.html`
 
