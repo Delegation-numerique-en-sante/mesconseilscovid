@@ -926,6 +926,7 @@ var Navigation = function () {
             hash && that.loadPage(hash)
         })
         this.loadInitialPage()
+        this.checkForUpdatesEvery(10) // Minutes.
     }
 
     this.loadInitialPage = function () {
@@ -1016,6 +1017,37 @@ var Navigation = function () {
 
         if (questionnaire._contact_a_risque === false)
             return page === 'conseils' ? undefined : 'conseils'
+    }
+
+    this.checkForUpdatesEvery = function (intervalInMinutes) {
+        this.checkForUpdate()
+        setInterval(this.checkForUpdate.bind(this), intervalInMinutes * 60 * 1000)
+    }
+
+    this.checkForUpdate = function () {
+        if (document.location.hash === '#nouvelle-version-disponible') {
+            return
+        }
+        var that = this
+        var xhr = new XMLHttpRequest()
+        xhr.open('HEAD', 'main.js?' + new Date().getTime(), true)
+        xhr.setRequestHeader('Cache-Control', 'no-cache')
+        xhr.onload = function () {
+            that.updateLastModified(xhr)
+        }
+        xhr.send()
+    }
+
+    this.lastModified = null
+
+    this.updateLastModified = function (xhr) {
+        var lastModifiedHeader = xhr.getResponseHeader('Last-Modified')
+        if (this.lastModified === null || this.lastModified === lastModifiedHeader) {
+            this.lastModified = lastModifiedHeader
+            return
+        } else {
+            this.goToPage('nouvelle-version-disponible')
+        }
     }
 
     this.goToPage = function (name) {
