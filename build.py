@@ -20,9 +20,10 @@ def each_markdown_from(source_dir, file_name="*.md"):
         yield os.path.join(source_dir, filename), filename
 
 
-def build_responses(source):
+def build_responses(source_dir):
+    """Extract and convert markdown from a `source_dir` directory into a dict."""
     responses = {}
-    for file_path, filename in each_markdown_from(source):
+    for file_path, filename in each_markdown_from(source_dir):
         responses[filename[: -len(".md")]] = markdown.read(file_path)
 
     return responses
