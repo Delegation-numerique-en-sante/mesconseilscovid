@@ -8,6 +8,10 @@ describe('navigation', function () {
         chai.expect(navigation.redirectIfMissingData('introduction', {})).to.be
             .undefined
     })
+    it('ok d’aller au conditions d’utilisation', function () {
+        chai.expect(navigation.redirectIfMissingData('conditions-utilisation', {})).to.be
+            .undefined
+    })
 
     // Question 1 : mon lieu de résidence
     it('ok d’aller à la question 1', function () {

@@ -946,6 +946,7 @@ var Navigation = function () {
 
     this.redirectIfMissingData = function (page, questionnaire) {
         if (page === 'introduction') return
+        if (page === 'conditions-utilisation') return
 
         // Questions obligatoires
 
