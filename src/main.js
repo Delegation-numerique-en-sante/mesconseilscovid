@@ -1173,7 +1173,12 @@ var PageInits = function () {
                     secondary.dispatchEvent(new Event('change'))
                 }
                 secondary.disabled = primaryDisabled
-                elem.classList.toggle('disabled', primaryDisabled)
+                if (primaryDisabled) {
+                    elem.classList.add('disabled')
+                }
+                else {
+                    elem.classList.remove('disabled')
+                }
             })
         }
         preloadCheckboxForm(form, 'activite_pro')
