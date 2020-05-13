@@ -180,6 +180,25 @@ fieldset ul.details {
     width: 1.75rem;
 }
 
+.form-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.form-controls a.back-button {
+    margin-top: 2rem;
+    padding: .5rem;
+    padding-left: 2rem;
+    margin-right: 2rem;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='arcs'><path d='M19 12H6M12 5l-7 7 7 7'/></svg>");
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.form-controls input[type='submit'] {
+    flex-grow: 1;
+}
+
 input[type='text'],
 input[type='submit'],
 select {
@@ -210,9 +229,7 @@ select {
 
 a.button,
 input[type='submit'] {
-    display: block;
     text-align: center;
-    width: 100%;
     border-radius: 5px;
     margin-top: 2rem;
     padding: 12px 24px;
@@ -222,6 +239,10 @@ input[type='submit'] {
     transform: translate(-0.1em, -0.1em);
     transition: all 100ms ease-in;
     white-space: pre-wrap;
+}
+a.button-full-width {
+    width: 100%;
+    display: block;
 }
 
 input[type='checkbox'] {

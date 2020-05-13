@@ -28,7 +28,7 @@
             <div class="block">
                 {{ meta_nouvelle_version_disponible_bannière }}
                 <div>
-                    <a id="refresh-button-banner" class="button" href="">Mettre à jour</a>
+                    <a id="refresh-button-banner" class="button button-full-width" href="">Mettre à jour</a>
                 </div>
             </div>
         </section>
@@ -44,7 +44,7 @@
     <div id="introduction-block" class="block">
         {{ meta_introduction }}
         <div>
-            <a class="button" href="#residence">Démarrer</a>
+            <a class="button button-full-width" href="#residence">Démarrer</a>
         </div>
     </div>
 </template>
@@ -169,7 +169,8 @@
                 </div>
             </div>
         </fieldset>
-        <div>
+        <div class="form-controls">
+            <a href="#introduction" class="back-button">Retour</a>
             <input type="submit" class="button" value="Continuer">
         </div>
         <script type="text/javascript">
@@ -210,7 +211,8 @@
                 <div class="details">{{ question_activité_pro_santé_aide }}</div>
             </div>
         </fieldset>
-        <div>
+        <div class="form-controls">
+            <a href="#residence" class="back-button">Retour</a>
             <input type="submit" class="button" value="Continuer">
         </div>
         <script type="text/javascript">
@@ -259,7 +261,8 @@
                 <div class="details">{{ question_foyer_fragile_aide }}</div>
             </div>
         </fieldset>
-        <div>
+        <div class="form-controls">
+            <a href="#activite-pro" class="back-button">Retour</a>
             <input type="submit" class="button" value="Continuer">
         </div>
         <script type="text/javascript">
@@ -302,7 +305,8 @@
             </ul>
             <div class="details">{{ question_caractéristiques_taille_poids_aide }}</div>
         </fieldset>
-        <div>
+        <div class="form-controls">
+            <a href="#foyer" class="back-button">Retour</a>
             <input type="submit" class="button" value="Continuer">
         </div>
         <script type="text/javascript">
@@ -399,7 +403,8 @@
                 </label>
             </div>
         </fieldset>
-        <div>
+        <div class="form-controls">
+            <a href="#caracteristiques" class="back-button">Retour</a>
             <input type="submit" class="button" value="Aucun de ces éléments ne correspond à ma situation">
         </div>
         <script type="text/javascript">
@@ -437,7 +442,8 @@
                 <div class="details">{{ question_symptômes_aide }}</div>
             </div>
         </fieldset>
-        <div>
+        <div class="form-controls">
+            <a href="#antecedents" class="back-button">Retour</a>
             <input type="submit" class="button" value="Je n’ai pas de symptômes actuellement">
         </div>
         <script type="text/javascript">
@@ -467,7 +473,8 @@
                 <div class="details">{{ question_symptômes_aide }}</div>
             </div>
         </fieldset>
-        <div>
+        <div class="form-controls">
+            <a href="#symptomes-actuels" class="back-button">Retour</a>
             <input type="submit" class="button" value="Je n’ai pas eu de symptômes dans les 14 derniers jours">
         </div>
         <script type="text/javascript">
@@ -501,7 +508,8 @@
                 </div>
             </div>
         </fieldset>
-        <div>
+        <div class="form-controls">
+            <a href="#symptomes-passes" class="back-button">Retour</a>
             <input type="submit" class="button" value="Je n’ai pas eu de contact à risque">
         </div>
         <script type="text/javascript">
@@ -585,7 +593,7 @@
             </div>
         </div>
         <div>
-            <a id="back-button" class="button" href="">Modifier mes informations personnelles</a>
+            <a id="back-button" class="button button-full-width" href="">Modifier mes informations personnelles</a>
         </div>
         <script type="text/javascript">
             ;(function() {
@@ -620,7 +628,7 @@
             </div>
         </div>
         <div>
-            <a id="back-button" class="button" href="">Modifier mes informations personnelles</a>
+            <a id="back-button" class="button button-full-width" href="">Modifier mes informations personnelles</a>
         </div>
         <script type="text/javascript">
             ;(function() {
@@ -687,7 +695,7 @@
             </div>
         </div>
         <div>
-            <a id="back-button" class="button" href="">Modifier mes informations personnelles</a>
+            <a id="back-button" class="button button-full-width" href="">Modifier mes informations personnelles</a>
         </div>
         <script type="text/javascript">
             ;(function() {
@@ -751,7 +759,7 @@
             </div>
         </div>
         <div>
-            <a id="back-button" class="button" href="">Modifier mes informations personnelles</a>
+            <a id="back-button" class="button button-full-width" href="">Modifier mes informations personnelles</a>
         </div>
         <script type="text/javascript">
             ;(function() {
@@ -772,7 +780,7 @@
     <div id="nouvelle-version-disponible-block" class="block">
         {{ meta_nouvelle_version_disponible }}
         <div>
-            <a id="refresh-button" class="button" href="">Mettre à jour</a>
+            <a id="refresh-button" class="button button-full-width" href="">Mettre à jour</a>
         </div>
     </div>
 </template>
@@ -781,7 +789,7 @@
     <div id="conditions-utilisation-block" class="block">
         {{ meta_conditions_utilisation }}
         <div>
-            <a class="button" href="">Revenir au questionnaire</a>
+            <a class="button button-full-width" href="">Revenir au questionnaire</a>
         </div>
     </div>
 </template>
