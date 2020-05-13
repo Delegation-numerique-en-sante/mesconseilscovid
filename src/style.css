@@ -188,12 +188,18 @@ fieldset ul.details {
 }
 .form-controls a.back-button {
     margin-top: 2rem;
-    padding: .5rem;
-    padding-left: 2rem;
     margin-right: 2rem;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='arcs'><path d='M19 12H6M12 5l-7 7 7 7'/></svg>");
-    background-position: left center;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%23000091' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='arcs'><path d='M19 12H6M12 5l-7 7 7 7'/></svg>");
+    background-position: 10px center;
     background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 10px 24px 9px 40px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid #000091;
+    color: #000091;
+    transform: translate(-0.1em, -0.1em);
+    transition: all 100ms ease-in;
 }
 .form-controls input[type='submit'] {
     flex-grow: 1;
@@ -311,7 +317,8 @@ input[type='checkbox']:disabled + label::before {
 }
 
 
-.button:hover {
+.button:hover,
+.back-button:hover {
     cursor: pointer;
     transform: translate(0px, 0px);
 }
