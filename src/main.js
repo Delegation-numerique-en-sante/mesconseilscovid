@@ -768,6 +768,10 @@ function displayElement(element, id) {
     var block = element.querySelector('#' + id)
     block.removeAttribute('hidden')
     block.classList.add('visible')
+
+    var customDisplayEvent = document.createEvent('CustomEvent')
+    customDisplayEvent.initCustomEvent('elementDisplayed', true, true, block)
+    document.dispatchEvent(customDisplayEvent)
 }
 
 function displayDepartementConseils(data, element) {
@@ -1046,8 +1050,68 @@ var Navigation = function () {
             this.lastModified = lastModifiedHeader
             return
         } else {
-            this.goToPage('nouvelle-version-disponible')
+            var that = this
+            if (this.isFillingQuestionnaire()) {
+                document.addEventListener('elementDisplayed', function (event) {
+                    if (event.detail.id !== 'update-banner') {
+                        return
+                    }
+                    // Even with an event, we need to wait for the next few
+                    // ticks to be able to scroll to the newly visible element.
+                    setTimeout(function () {
+                        event.detail.scrollIntoView({ behavior: 'smooth' })
+                    }, 100)
+                    var refreshButton = event.detail.querySelector(
+                        '#refresh-button-banner'
+                    )
+                    refreshButton.setAttribute('href', window.location.hash)
+                    refreshButton.addEventListener(
+                        'click',
+                        that.forceReloadCurrentPageWithHash
+                    )
+                })
+                displayElement(document, 'update-banner')
+            } else {
+                var previousHash = document.location.hash
+                document.addEventListener('pageChanged', function (event) {
+                    if (event.detail !== 'nouvelle-version-disponible') {
+                        return
+                    }
+                    var refreshButton = document.querySelector(
+                        '#nouvelle-version-disponible-block #refresh-button'
+                    )
+                    refreshButton.setAttribute('href', previousHash)
+                    refreshButton.addEventListener(
+                        'click',
+                        that.forceReloadCurrentPageWithHash
+                    )
+                })
+                this.goToPage('nouvelle-version-disponible')
+            }
         }
+    }
+
+    this.forceReloadCurrentPageWithHash = function (event) {
+        // This one is tricky: we let the browser go to the anchor we just set
+        // (no preventDefault) and just after that (timeout=1) we reload the
+        // page with `true` parameter == reload from server.
+        setTimeout(function () {
+            window.location.reload(true)
+        }, 1)
+    }
+
+    this.isFillingQuestionnaire = function () {
+        var page = document.location.hash.slice(1)
+        return (
+            page === 'residence' ||
+            page === 'activite-pro' ||
+            page === 'foyer' ||
+            page === 'caracteristiques' ||
+            page === 'antecedents' ||
+            page === 'symptomes-actuels' ||
+            page === 'symptomes-passes' ||
+            page === 'contact-a-risque'
+        )
     }
 
     this.goToPage = function (name) {
@@ -1061,6 +1125,10 @@ var Navigation = function () {
         page.innerHTML = '' // Flush the current content.
         var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
         element.scrollIntoView({ behavior: 'smooth' })
+
+        var customPageEvent = document.createEvent('CustomEvent')
+        customPageEvent.initCustomEvent('pageChanged', true, true, name)
+        document.dispatchEvent(customPageEvent)
     }
 }
 navigation = new Navigation()
