@@ -223,6 +223,73 @@ input[type='submit'] {
     transition: all 100ms ease-in;
     white-space: pre-wrap;
 }
+
+input[type='checkbox'] {
+  position: absolute;
+}
+
+input[type='checkbox'] + label {
+  display: block;
+  position: relative;
+  padding: 0 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+}
+
+input[type='checkbox'] + label::before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: -2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: white;
+  border: 2px solid #000091;
+}
+
+input[type='checkbox'] + label span {
+  flex-shrink: 20;
+}
+
+input[type='checkbox']:checked + label::before {
+  background: #000091;
+}
+input[type='checkbox']:checked + label::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: calc(28px - 2rem);
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  height: 6px;
+  width: 13px;
+  transform: rotate(-45deg);
+}
+input[type='checkbox']:focus + label::before {
+  outline: #5d9dd5 solid 1px;
+  box-shadow: 0 0px 8px #5e9ed6;
+}
+
+input[type='checkbox'] {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+input[type='checkbox']:disabled + label {
+  color: #575757;
+}
+
+input[type='checkbox']:disabled + label::before {
+  background: #ddd;
+}
+
+
 .button:hover {
     cursor: pointer;
     transform: translate(0px, 0px);

@@ -192,15 +192,21 @@
             <legend>2/8 - {{ question_activité_pro_titre }}</legend>
             <div>
                 <input id="activite_pro" type="checkbox" name="activite_pro">
-                <label for="activite_pro">{{ question_activité_pro_libellé }}</label>
+                <label for="activite_pro">
+                    <span>{{ question_activité_pro_libellé }}</span>
+                </label>
             </div>
             <div class="secondary disabled">
                 <input id="activite_pro_public" type="checkbox" name="activite_pro_public" disabled>
-                <label for="activite_pro_public">{{ question_activité_pro_public_libellé }}</label>
+                <label for="activite_pro_public">
+                    <span>{{ question_activité_pro_public_libellé }}</span>
+                </label>
             </div>
             <div class="secondary disabled">
                 <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
-                <label for="activite_pro_sante">{{ question_activité_pro_santé_libellé }}</label>
+                <label for="activite_pro_sante">
+                    <span>{{ question_activité_pro_santé_libellé }}</span>
+                </label>
                 <div class="details">{{ question_activité_pro_santé_aide }}</div>
             </div>
         </fieldset>
@@ -241,11 +247,15 @@
             <legend>3/8 - {{ question_foyer_titre }}</legend>
             <div>
                 <input id="foyer_enfants" type="checkbox" name="foyer_enfants">
-                <label for="foyer_enfants">{{ question_foyer_enfants_libellé }}</label>
+                <label for="foyer_enfants">
+                    <span>{{ question_foyer_enfants_libellé }}</span>
+                </label>
             </div>
             <div>
                 <input id="foyer_fragile" type="checkbox" name="foyer_fragile">
-                <label for="foyer_fragile">{{ question_foyer_fragile_libellé }}</label>
+                <label for="foyer_fragile">
+                    <span>{{ question_foyer_fragile_libellé }}</span>
+                </label>
                 <div class="details">{{ question_foyer_fragile_aide }}</div>
             </div>
         </fieldset>
@@ -270,11 +280,15 @@
             <legend>4/8 - {{ question_caractéristiques_titre }}</legend>
             <div class="field">
                 <input id="sup65" type="checkbox" name="sup65">
-                <label for="sup65">{{ question_caractéristiques_âge_libellé }}</label>
+                <label for="sup65">
+                    <span>{{ question_caractéristiques_âge_libellé }}</span>
+                </label>
             </div>
             <div class="field">
                 <input id="grossesse_3e_trimestre" type="checkbox" name="grossesse_3e_trimestre">
-                <label for="grossesse_3e_trimestre">{{ question_caractéristiques_grossesse_libellé }}</label>
+                <label for="grossesse_3e_trimestre">
+                    <span>{{ question_caractéristiques_grossesse_libellé }}</span>
+                </label>
             </div>
             <ul class="no-list-style" style="margin-top: 2rem">
                 <li class="row">
@@ -312,58 +326,76 @@
             <div class="field">
                 <input id="antecedent_cardio" type="checkbox" name="antecedent_cardio">
                 <label for="antecedent_cardio">
-                    {{ question_antécédents_cardio_libellé }}
-                    <div class="details">{{ question_antécédents_cardio_aide }}</div>
+                    <span>
+                        {{ question_antécédents_cardio_libellé }}
+                    </span>
                 </label>
+                <div class="details">{{ question_antécédents_cardio_aide }}</div>
             </div>
             <div class="field">
                 <input id="antecedent_diabete" type="checkbox" name="antecedent_diabete">
                 <label for="antecedent_diabete">
-                    {{ question_antécédents_diabète_libellé }}
+                    <span>
+                        {{ question_antécédents_diabète_libellé }}
+                    </span>
                 </label>
             </div>
             <div class="field">
                 <input id="antecedent_respi" type="checkbox" name="antecedent_respi">
                 <label for="antecedent_respi">
-                    {{ question_antécédents_respi_libellé }}
-                    <div class="details">{{ question_antécédents_respi_aide }}</div>
+                    <span>
+                        {{ question_antécédents_respi_libellé }}
+                    </span>
                 </label>
+                <div class="details">{{ question_antécédents_respi_aide }}</div>
             </div>
             <div class="field">
                 <input id="antecedent_dialyse" type="checkbox" name="antecedent_dialyse">
                 <label for="antecedent_dialyse">
-                    {{ question_antécédents_dialyse_libellé }}
+                    <span>
+                        {{ question_antécédents_dialyse_libellé }}
+                    </span>
                 </label>
             </div>
             <div class="field">
                 <input id="antecedent_cancer" type="checkbox" name="antecedent_cancer">
                 <label for="antecedent_cancer">
-                    {{ question_antécédents_cancer_libellé }}
+                    <span>
+                        {{ question_antécédents_cancer_libellé }}
+                    </span>
                 </label>
             </div>
             <div class="field">
                 <input id="antecedent_immunodep" type="checkbox" name="antecedent_immunodep">
                 <label for="antecedent_immunodep">
-                    {{ question_antécédents_immunodépression_libellé }}
-                    <div class="details">{{ question_antécédents_immunodépression_aide }}</div>
+                    <span>
+                        {{ question_antécédents_immunodépression_libellé }}
+                    </span>
                 </label>
+                <div class="details">{{ question_antécédents_immunodépression_aide }}</div>
             </div>
             <div class="field">
                 <input id="antecedent_cirrhose" type="checkbox" name="antecedent_cirrhose">
                 <label for="antecedent_cirrhose">
-                    {{ question_antécédents_cirrhose_libellé }}
+                    <span>
+                        {{ question_antécédents_cirrhose_libellé }}
+                    </span>
                 </label>
             </div>
             <div class="field">
                 <input id="antecedent_drepano" type="checkbox" name="antecedent_drepano">
                 <label for="antecedent_drepano">
-                    {{ question_antécédents_drépanocytose_libellé }}
+                    <span>
+                        {{ question_antécédents_drépanocytose_libellé }}
+                    </span>
                 </label>
             </div>
             <div class="field">
                 <input id="antecedent_chronique_autre" type="checkbox" name="antecedent_chronique_autre">
                 <label for="antecedent_chronique_autre">
-                    {{ question_antécédents_chronique_autre_libellé }}
+                    <span>
+                        {{ question_antécédents_chronique_autre_libellé }}
+                    </span>
                 </label>
             </div>
         </fieldset>
@@ -398,7 +430,9 @@
             <div>
                 <input id="symptomes_actuels" type="checkbox" name="symptomes_actuels">
                 <label for="symptomes_actuels">
-                    {{ question_symptômes_actuels_libellé }}
+                    <span>
+                        {{ question_symptômes_actuels_libellé }}
+                    </span>
                 </label>
                 <div class="details">{{ question_symptômes_aide }}</div>
             </div>
@@ -426,7 +460,9 @@
             <div>
                 <input id="symptomes_passes" type="checkbox" name="symptomes_passes">
                 <label for="symptomes_passes">
-                    {{ question_symptômes_passés_libellé }}
+                    <span>
+                        {{ question_symptômes_passés_libellé }}
+                    </span>
                 </label>
                 <div class="details">{{ question_symptômes_aide }}</div>
             </div>
@@ -454,10 +490,14 @@
             <div>
                 <input id="contact_a_risque" type="checkbox" name="contact_a_risque">
                 <label for="contact_a_risque">
-                    {{ question_symptômes_contact_à_risque_libellé }}
+                    <span>
+                        {{ question_symptômes_contact_à_risque_libellé }}
+                    </span>
                 </label>
                 <div class="details">
-                    {{ question_symptômes_contact_à_risque_aide }}
+                    <span>
+                        {{ question_symptômes_contact_à_risque_aide }}
+                    </span>
                 </div>
             </div>
         </fieldset>

@@ -209,18 +209,24 @@ Un site qui vous donne des conseils en fonction de <b>votre situation</b> et vou
 </legend>
             <div>
                 <input id="activite_pro" type="checkbox" name="activite_pro">
-                <label for="activite_pro">J’exerce une <b>activité</b> professionnelle et/ou bénévole
-</label>
+                <label for="activite_pro">
+                    <span>J’exerce une <b>activité</b> professionnelle et/ou bénévole
+</span>
+                </label>
             </div>
             <div class="secondary disabled">
                 <input id="activite_pro_public" type="checkbox" name="activite_pro_public" disabled>
-                <label for="activite_pro_public">Dans le cadre de cette activité, je suis en contact direct avec du public
-</label>
+                <label for="activite_pro_public">
+                    <span>Dans le cadre de cette activité, je suis en contact direct avec du public
+</span>
+                </label>
             </div>
             <div class="secondary disabled">
                 <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
-                <label for="activite_pro_sante">Je travaille dans le domaine de la santé ou du médico-social<sup>*</sup>
-</label>
+                <label for="activite_pro_sante">
+                    <span>Je travaille dans le domaine de la santé ou du médico-social<sup>*</sup>
+</span>
+                </label>
                 <div class="details"><p><sup>*</sup>
 Médecin, infirmier, aide soignant, brancardier, manipulateur radio, kinésithérapeute, psychologue…</p>
 </div>
@@ -264,13 +270,17 @@ Médecin, infirmier, aide soignant, brancardier, manipulateur radio, kinésithé
 </legend>
             <div>
                 <input id="foyer_enfants" type="checkbox" name="foyer_enfants">
-                <label for="foyer_enfants">Je vis avec un ou des <b>enfants</b> en âge d’aller à la crèche ou à l’école
-</label>
+                <label for="foyer_enfants">
+                    <span>Je vis avec un ou des <b>enfants</b> en âge d’aller à la crèche ou à l’école
+</span>
+                </label>
             </div>
             <div>
                 <input id="foyer_fragile" type="checkbox" name="foyer_fragile">
-                <label for="foyer_fragile">Je vis avec une ou des personnes considérée comme <b>fragiles</b><sup>*</sup> face au covid-19 et/ou en situation de handicap
-</label>
+                <label for="foyer_fragile">
+                    <span>Je vis avec une ou des personnes considérée comme <b>fragiles</b><sup>*</sup> face au covid-19 et/ou en situation de handicap
+</span>
+                </label>
                 <div class="details"><p><sup>*</sup>
 Une personne considérée comme fragile face au covid-19 est une personne présentant au moins une des caractéristiques suivantes :</p>
 <ul>
@@ -313,13 +323,17 @@ Une personne considérée comme fragile face au covid-19 est une personne prése
 </legend>
             <div class="field">
                 <input id="sup65" type="checkbox" name="sup65">
-                <label for="sup65">Je suis âgé·e de 65 ans ou plus
-</label>
+                <label for="sup65">
+                    <span>Je suis âgé·e de 65 ans ou plus
+</span>
+                </label>
             </div>
             <div class="field">
                 <input id="grossesse_3e_trimestre" type="checkbox" name="grossesse_3e_trimestre">
-                <label for="grossesse_3e_trimestre">Je suis une femme enceinte au 3<sup>e</sup> trimestre de ma grossesse
-</label>
+                <label for="grossesse_3e_trimestre">
+                    <span>Je suis une femme enceinte au 3<sup>e</sup> trimestre de ma grossesse
+</span>
+                </label>
             </div>
             <ul class="no-list-style" style="margin-top: 2rem">
                 <li class="row">
@@ -362,75 +376,93 @@ Ces données sont utiles pour calculer votre indice de masse corporelle.</p>
             <div class="field">
                 <input id="antecedent_cardio" type="checkbox" name="antecedent_cardio">
                 <label for="antecedent_cardio">
-                    J’ai des antécédents de <b>maladie cardiovasculaire</b> :
+                    <span>
+                        J’ai des antécédents de <b>maladie cardiovasculaire</b> :
 
-                    <div class="details"><p>hypertension artérielle compliquée (avec complications cardiaques, rénales), accident vasculaire cérébral, maladie coronaire (infarctus), chirurgie cardiaque, insuffisance cardiaque avec essoufflement au moindre effort</p>
-</div>
+                    </span>
                 </label>
+                <div class="details"><p>hypertension artérielle compliquée (avec complications cardiaques, rénales), accident vasculaire cérébral, maladie coronaire (infarctus), chirurgie cardiaque, insuffisance cardiaque avec essoufflement au moindre effort</p>
+</div>
             </div>
             <div class="field">
                 <input id="antecedent_diabete" type="checkbox" name="antecedent_diabete">
                 <label for="antecedent_diabete">
-                    J’ai un <b>diabète</b> mal équilibré ou avec des complications (yeux, reins)
+                    <span>
+                        J’ai un <b>diabète</b> mal équilibré ou avec des complications (yeux, reins)
 
+                    </span>
                 </label>
             </div>
             <div class="field">
                 <input id="antecedent_respi" type="checkbox" name="antecedent_respi">
                 <label for="antecedent_respi">
-                    J’ai une <b>maladie respiratoire</b> chronique :
+                    <span>
+                        J’ai une <b>maladie respiratoire</b> chronique :
 
-                    <div class="details"><p>broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose)</p>
-</div>
+                    </span>
                 </label>
+                <div class="details"><p>broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose)</p>
+</div>
             </div>
             <div class="field">
                 <input id="antecedent_dialyse" type="checkbox" name="antecedent_dialyse">
                 <label for="antecedent_dialyse">
-                    J’ai une <b>insuffisance rénale</b> chronique avec besoin de faire de la dialyse
+                    <span>
+                        J’ai une <b>insuffisance rénale</b> chronique avec besoin de faire de la dialyse
 
+                    </span>
                 </label>
             </div>
             <div class="field">
                 <input id="antecedent_cancer" type="checkbox" name="antecedent_cancer">
                 <label for="antecedent_cancer">
-                    J’ai un <b>cancer</b> évolutif sous traitement (hors hormonothérapie)
+                    <span>
+                        J’ai un <b>cancer</b> évolutif sous traitement (hors hormonothérapie)
 
+                    </span>
                 </label>
             </div>
             <div class="field">
                 <input id="antecedent_immunodep" type="checkbox" name="antecedent_immunodep">
                 <label for="antecedent_immunodep">
-                    J’ai une <b>immunodépression</b> congénitale ou acquise :
+                    <span>
+                        J’ai une <b>immunodépression</b> congénitale ou acquise :
 
-                    <div class="details"><ul>
+                    </span>
+                </label>
+                <div class="details"><ul>
 <li>médicamenteuse : chimiothérapie anti cancéreuse, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive ;</li>
 <li>infection à VIH non contrôlée ou avec des CD4 &lt;200/mm<sup>3</sup> ;</li>
 <li>consécutive à une greffe d’organe solide ou de cellules souches hématopoïétiques ;</li>
 <li>liée à une hémopathie maligne en cours de traitement.</li>
 </ul>
 </div>
-                </label>
             </div>
             <div class="field">
                 <input id="antecedent_cirrhose" type="checkbox" name="antecedent_cirrhose">
                 <label for="antecedent_cirrhose">
-                    J’ai une <b>cirrhose</b>
+                    <span>
+                        J’ai une <b>cirrhose</b>
 
+                    </span>
                 </label>
             </div>
             <div class="field">
                 <input id="antecedent_drepano" type="checkbox" name="antecedent_drepano">
                 <label for="antecedent_drepano">
-                    J’ai une <b>drépanocytose</b> homozygote, ou j’ai bénéficié d’une <b>splénectomie</b> (ablation de la rate) à cause de la drépanocytose
+                    <span>
+                        J’ai une <b>drépanocytose</b> homozygote, ou j’ai bénéficié d’une <b>splénectomie</b> (ablation de la rate) à cause de la drépanocytose
 
+                    </span>
                 </label>
             </div>
             <div class="field">
                 <input id="antecedent_chronique_autre" type="checkbox" name="antecedent_chronique_autre">
                 <label for="antecedent_chronique_autre">
-                    J’ai une autre maladie chronique, ou handicap, ou je prends un traitement au long cours
+                    <span>
+                        J’ai une autre maladie chronique, ou handicap, ou je prends un traitement au long cours
 
+                    </span>
                 </label>
             </div>
         </fieldset>
@@ -466,8 +498,10 @@ Ces données sont utiles pour calculer votre indice de masse corporelle.</p>
             <div>
                 <input id="symptomes_actuels" type="checkbox" name="symptomes_actuels">
                 <label for="symptomes_actuels">
-                    J’ai un ou des <b>symptômes</b> qui peuvent évoquer le COVID <u>actuellement</u>.
+                    <span>
+                        J’ai un ou des <b>symptômes</b> qui peuvent évoquer le COVID <u>actuellement</u>.
 
+                    </span>
                 </label>
                 <div class="details"><p>Signes infectieux (fièvre, frissons),
 toux ou gêne respiratoire, fatigue inexpliquée, courbatures,
@@ -500,8 +534,10 @@ perte de l’odorat et du gout</p>
             <div>
                 <input id="symptomes_passes" type="checkbox" name="symptomes_passes">
                 <label for="symptomes_passes">
-                    J’ai eu des <b>symptômes</b> qui peuvent évoquer le COVID <u>dans les 14 derniers jours</u>.
+                    <span>
+                        J’ai eu des <b>symptômes</b> qui peuvent évoquer le COVID <u>dans les 14 derniers jours</u>.
 
+                    </span>
                 </label>
                 <div class="details"><p>Signes infectieux (fièvre, frissons),
 toux ou gêne respiratoire, fatigue inexpliquée, courbatures,
@@ -534,11 +570,14 @@ perte de l’odorat et du gout</p>
             <div>
                 <input id="contact_a_risque" type="checkbox" name="contact_a_risque">
                 <label for="contact_a_risque">
-                    J’ai eu un <strong>contact à risque</strong><sup>*</sup> avec une personne COVID confirmée
+                    <span>
+                        J’ai eu un <strong>contact à risque</strong><sup>*</sup> avec une personne COVID confirmée
 
+                    </span>
                 </label>
                 <div class="details">
-                    <p><sup>*</sup>
+                    <span>
+                        <p><sup>*</sup>
 Le <strong>contact à risque</strong> est défini pour une personne :</p>
 <ul>
 <li>Ayant partagé le même lieu de vie que le cas confirmé ou probable ;</li>
@@ -555,6 +594,7 @@ Le <strong>contact à risque</strong> est défini pour une personne :</p>
 </ul>
 <p>NB : Ces définitions de personnes contact ne s’appliquent pas à l’évaluation des contacts à risque d’un professionnel de santé hospitalier survenus dans un contexte de soins, pour lequel une évaluation spécifique doit être réalisée par le médecin du travail et l’équipe opérationnelle.</p>
 
+                    </span>
                 </div>
             </div>
         </fieldset>
