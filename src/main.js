@@ -1,25 +1,35 @@
-// Rétro-compatibilité de l'élément <template> pour IE.
-;(function () {
-    // Voir https://github.com/jeffcarp/template-polyfill (Licence MIT)
-    if ('content' in document.createElement('template')) {
-        return false
-    }
+// Object.assign polyfill for IE 11
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign#Polyfill
+if (typeof Object.assign !== 'function') {
+    // Must be writable: true, enumerable: false, configurable: true
+    Object.defineProperty(Object, 'assign', {
+        value: function assign(target, varArgs) {
+            // .length of function is 2
+            'use strict'
+            if (target === null || target === undefined) {
+                throw new TypeError('Cannot convert undefined or null to object')
+            }
 
-    var templates = document.getElementsByTagName('template')
-    var plateLen = templates.length
+            var to = Object(target)
 
-    for (var x = 0; x < plateLen; ++x) {
-        var template = templates[x]
-        var content = template.childNodes
-        var fragment = document.createDocumentFragment()
+            for (var index = 1; index < arguments.length; index++) {
+                var nextSource = arguments[index]
 
-        while (content[0]) {
-            fragment.appendChild(content[0])
-        }
-
-        template.content = fragment
-    }
-})()
+                if (nextSource !== null && nextSource !== undefined) {
+                    for (var nextKey in nextSource) {
+                        // Avoid bugs when hasOwnProperty is shadowed
+                        if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+                            to[nextKey] = nextSource[nextKey]
+                        }
+                    }
+                }
+            }
+            return to
+        },
+        writable: true,
+        configurable: true,
+    })
+}
 
 // Données privées, stockées uniquement en local
 var StockageLocal = function () {
@@ -41,11 +51,14 @@ var StockageLocal = function () {
             function (data) {
                 if (data !== null) {
                     console.debug('Données locales:')
-                    console.table(data)
+                    console.log(data)
                     questionnaire.fillData(data)
                 } else {
                     console.debug('Pas de données locales pour l’instant')
                 }
+                var customLoadingEvent = document.createEvent('CustomEvent')
+                customLoadingEvent.initCustomEvent('dataLoaded', true, true, data)
+                document.dispatchEvent(customLoadingEvent)
             },
             function (error) {
                 console.error('Erreur de chargement des données locales ' + error)
@@ -572,7 +585,7 @@ function submitResidenceForm(event) {
     event.preventDefault()
     questionnaire.setResidence(event.target.elements['departement'].value)
     stockageLocal.enregistrer(questionnaire)
-    navigation.goToPage('activite-pro')
+    navigation.goToPage('activitepro')
 }
 
 function submitActiviteProForm(event) {
@@ -638,7 +651,7 @@ function submitAntecedentsForm(event) {
         event.target.elements['antecedent_chronique_autre'].checked
     )
     stockageLocal.enregistrer(questionnaire)
-    navigation.goToPage('symptomes-actuels')
+    navigation.goToPage('symptomesactuels')
 }
 
 function submitSymptomesActuelsForm(event) {
@@ -647,9 +660,9 @@ function submitSymptomesActuelsForm(event) {
     questionnaire.setSymptomesActuels(symptomesActuels)
     stockageLocal.enregistrer(questionnaire)
     if (symptomesActuels) {
-        navigation.goToPage('conseils-symptomes-actuels')
+        navigation.goToPage('conseilssymptomesactuels')
     } else {
-        navigation.goToPage('symptomes-passes')
+        navigation.goToPage('symptomespasses')
     }
 }
 
@@ -659,9 +672,9 @@ function submitSymptomesPassesForm(event) {
     questionnaire.setSymptomesPasses(symptomesPasses)
     stockageLocal.enregistrer(questionnaire)
     if (symptomesPasses) {
-        navigation.goToPage('conseils-symptomes-passes')
+        navigation.goToPage('conseilssymptomespasses')
     } else {
-        navigation.goToPage('contact-a-risque')
+        navigation.goToPage('contactarisque')
     }
 }
 
@@ -671,7 +684,7 @@ function submitContactARisqueForm(event) {
     questionnaire.setContactARisque(contactARisque)
     stockageLocal.enregistrer(questionnaire)
     if (contactARisque) {
-        navigation.goToPage('conseils-contact-a-risque')
+        navigation.goToPage('conseilscontactarisque')
     } else {
         navigation.goToPage('conseils')
     }
@@ -946,7 +959,7 @@ var Navigation = function () {
 
     this.redirectIfMissingData = function (page, questionnaire) {
         if (page === 'introduction') return
-        if (page === 'conditions-utilisation') return
+        if (page === 'conditionsutilisation') return
 
         // Questions obligatoires
 
@@ -957,11 +970,11 @@ var Navigation = function () {
 
         if (
             typeof questionnaire._activite_pro === 'undefined' &&
-            page !== 'activite-pro'
+            page !== 'activitepro'
         )
-            return 'activite-pro'
+            return 'activitepro'
 
-        if (page === 'activite-pro') return
+        if (page === 'activitepro') return
 
         if (typeof questionnaire._foyer_enfants === 'undefined' && page !== 'foyer')
             return 'foyer'
@@ -983,42 +996,42 @@ var Navigation = function () {
 
         if (
             typeof questionnaire._symptomes_actuels === 'undefined' &&
-            page !== 'symptomes-actuels'
+            page !== 'symptomesactuels'
         )
-            return 'symptomes-actuels'
+            return 'symptomesactuels'
 
-        if (page === 'symptomes-actuels') return
+        if (page === 'symptomesactuels') return
 
         if (questionnaire._symptomes_actuels === true)
-            return page === 'conseils-symptomes-actuels'
+            return page === 'conseilssymptomesactuels'
                 ? undefined
-                : 'conseils-symptomes-actuels'
+                : 'conseilssymptomesactuels'
 
         if (
             typeof questionnaire._symptomes_passes === 'undefined' &&
-            page !== 'symptomes-passes'
+            page !== 'symptomespasses'
         )
-            return 'symptomes-passes'
+            return 'symptomespasses'
 
-        if (page === 'symptomes-passes') return
+        if (page === 'symptomespasses') return
 
         if (questionnaire._symptomes_passes === true)
-            return page === 'conseils-symptomes-passes'
+            return page === 'conseilssymptomespasses'
                 ? undefined
-                : 'conseils-symptomes-passes'
+                : 'conseilssymptomespasses'
 
         if (
             typeof questionnaire._contact_a_risque === 'undefined' &&
-            page !== 'contact-a-risque'
+            page !== 'contactarisque'
         )
-            return 'contact-a-risque'
+            return 'contactarisque'
 
-        if (page === 'contact-a-risque') return
+        if (page === 'contactarisque') return
 
         if (questionnaire._contact_a_risque === true)
-            return page === 'conseils-contact-a-risque'
+            return page === 'conseilscontactarisque'
                 ? undefined
-                : 'conseils-contact-a-risque'
+                : 'conseilscontactarisque'
 
         if (questionnaire._contact_a_risque === false)
             return page === 'conseils' ? undefined : 'conseils'
@@ -1075,7 +1088,7 @@ var Navigation = function () {
             } else {
                 var previousHash = document.location.hash
                 document.addEventListener('pageChanged', function (event) {
-                    if (event.detail !== 'nouvelle-version-disponible') {
+                    if (event.detail !== 'nouvelleversiondisponible') {
                         return
                     }
                     var refreshButton = document.querySelector(
@@ -1087,7 +1100,7 @@ var Navigation = function () {
                         that.forceReloadCurrentPageWithHash
                     )
                 })
-                this.goToPage('nouvelle-version-disponible')
+                this.goToPage('nouvelleversiondisponible')
             }
         }
     }
@@ -1105,13 +1118,13 @@ var Navigation = function () {
         var page = document.location.hash.slice(1)
         return (
             page === 'residence' ||
-            page === 'activite-pro' ||
+            page === 'activitepro' ||
             page === 'foyer' ||
             page === 'caracteristiques' ||
             page === 'antecedents' ||
-            page === 'symptomes-actuels' ||
-            page === 'symptomes-passes' ||
-            page === 'contact-a-risque'
+            page === 'symptomesactuels' ||
+            page === 'symptomespasses' ||
+            page === 'contactarisque'
         )
     }
 
@@ -1121,11 +1134,13 @@ var Navigation = function () {
 
     this.loadPage = function (name) {
         var page = document.querySelector('section#page')
-        var template = document.querySelector('#' + name)
-        var clone = template.content.cloneNode(true)
+        var section = document.querySelector('#' + name)
+        var clone = section.cloneNode(true)
         page.innerHTML = '' // Flush the current content.
         var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
         element.scrollIntoView({ behavior: 'smooth' })
+
+        pageInits[name]()
 
         var customPageEvent = document.createEvent('CustomEvent')
         customPageEvent.initCustomEvent('pageChanged', true, true, name)
@@ -1133,3 +1148,130 @@ var Navigation = function () {
     }
 }
 navigation = new Navigation()
+
+var PageInits = function () {
+    this.introduction = function () {}
+
+    this.residence = function () {
+        var form = document.getElementById('residence-form')
+        preloadForm(form, 'departement')
+        form.addEventListener('submit', submitResidenceForm)
+        document
+            .getElementById('geolocalisation')
+            .addEventListener('click', geolocalisation)
+    }
+
+    this.activitepro = function () {
+        var form = document.getElementById('activite-pro-form')
+        var primary = form.elements['activite_pro']
+        function enableOrDisableSecondaryFields() {
+            var primaryDisabled = !primary.checked
+            ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
+                var secondary = elem.querySelector('input')
+                if (secondary.checked && primaryDisabled) {
+                    secondary.checked = false
+                    secondary.dispatchEvent(new Event('change'))
+                }
+                secondary.disabled = primaryDisabled
+                elem.classList.toggle('disabled', primaryDisabled)
+            })
+        }
+        preloadCheckboxForm(form, 'activite_pro')
+        preloadCheckboxForm(form, 'activite_pro_public')
+        preloadCheckboxForm(form, 'activite_pro_sante')
+        enableOrDisableSecondaryFields()
+        primary.addEventListener('click', enableOrDisableSecondaryFields)
+        form.addEventListener('submit', submitActiviteProForm)
+    }
+
+    this.foyer = function () {
+        var form = document.getElementById('foyer-form')
+        preloadCheckboxForm(form, 'foyer_enfants')
+        preloadCheckboxForm(form, 'foyer_fragile')
+        form.addEventListener('submit', submitFoyerForm)
+    }
+
+    this.caracteristiques = function () {
+        var form = document.getElementById('caracteristiques-form')
+        preloadCheckboxForm(form, 'sup65')
+        preloadCheckboxForm(form, 'grossesse_3e_trimestre')
+        preloadForm(form, 'taille')
+        preloadForm(form, 'poids')
+        form.addEventListener('submit', submitCaracteristiquesForm)
+    }
+
+    this.antecedents = function () {
+        var form = document.getElementById('antecedents-form')
+        var button = form.querySelector('input[type=submit]')
+        preloadCheckboxForm(form, 'antecedent_cardio')
+        preloadCheckboxForm(form, 'antecedent_diabete')
+        preloadCheckboxForm(form, 'antecedent_respi')
+        preloadCheckboxForm(form, 'antecedent_dialyse')
+        preloadCheckboxForm(form, 'antecedent_cancer')
+        preloadCheckboxForm(form, 'antecedent_immunodep')
+        preloadCheckboxForm(form, 'antecedent_cirrhose')
+        preloadCheckboxForm(form, 'antecedent_drepano')
+        preloadCheckboxForm(form, 'antecedent_chronique_autre')
+        toggleFormButtonOnCheck(form, button.value, 'Continuer')
+        form.addEventListener('submit', submitAntecedentsForm)
+    }
+
+    this.symptomesactuels = function () {
+        var form = document.getElementById('symptomes-actuels-form')
+        var button = form.querySelector('input[type=submit]')
+        preloadCheckboxForm(form, 'symptomes_actuels')
+        toggleFormButtonOnCheck(form, button.value, 'Terminer')
+        form.addEventListener('submit', submitSymptomesActuelsForm)
+    }
+
+    this.symptomespasses = function () {
+        var form = document.getElementById('symptomes-passes-form')
+        var button = form.querySelector('input[type=submit]')
+        preloadCheckboxForm(form, 'symptomes_passes')
+        toggleFormButtonOnCheck(form, button.value, 'Terminer')
+        form.addEventListener('submit', submitSymptomesPassesForm)
+    }
+
+    this.contactarisque = function () {
+        var form = document.getElementById('contact-a-risque-form')
+        var button = form.querySelector('input[type=submit]')
+        preloadCheckboxForm(form, 'contact_a_risque')
+        toggleFormButtonOnCheck(form, button.value, 'Terminer')
+        form.addEventListener('submit', submitContactARisqueForm)
+    }
+
+    this.conseils = function () {
+        displayConseils(document.getElementById('conseils-block'))
+        document.getElementById('back-button').addEventListener('click', function () {
+            navigation.goToPage('residence')
+        })
+    }
+
+    this.conseilssymptomesactuels = function () {
+        document.getElementById('back-button').addEventListener('click', function () {
+            navigation.goToPage('residence')
+        })
+    }
+
+    this.conseilssymptomespasses = function () {
+        displayConseilsSymptomesPasses(
+            document.getElementById('conseils-symptomes-passes-block')
+        )
+        document.getElementById('back-button').addEventListener('click', function () {
+            navigation.goToPage('residence')
+        })
+    }
+
+    this.conseilscontactarisque = function () {
+        displayConseilsContactARisque(
+            document.getElementById('conseils-contact-a-risque-block')
+        )
+        document.getElementById('back-button').addEventListener('click', function () {
+            navigation.goToPage('residence')
+        })
+    }
+
+    this.conditionsutilisation = function () {}
+}
+
+pageInits = new PageInits()

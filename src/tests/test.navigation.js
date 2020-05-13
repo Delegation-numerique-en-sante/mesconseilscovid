@@ -9,7 +9,7 @@ describe('navigation', function () {
             .undefined
     })
     it('ok d’aller au conditions d’utilisation', function () {
-        chai.expect(navigation.redirectIfMissingData('conditions-utilisation', {})).to.be
+        chai.expect(navigation.redirectIfMissingData('conditionsutilisation', {})).to.be
             .undefined
     })
 
@@ -27,18 +27,18 @@ describe('navigation', function () {
 
     // Question 2 : mon activité
     it('redirige vers l’accueil si réponse 1 manquante', function () {
-        chai.expect(navigation.redirectIfMissingData('activite-pro', {})).to.equal(
+        chai.expect(navigation.redirectIfMissingData('activitepro', {})).to.equal(
             'introduction'
         )
     })
     it('ok d’aller à la question 2 si réponse à la 1', function () {
         chai.expect(
-            navigation.redirectIfMissingData('activite-pro', { _departement: '80' })
+            navigation.redirectIfMissingData('activitepro', { _departement: '80' })
         ).to.be.undefined
     })
     it('ok d’aller à la question 2 même si déjà répondu', function () {
         chai.expect(
-            navigation.redirectIfMissingData('activite-pro', {
+            navigation.redirectIfMissingData('activitepro', {
                 _departement: '80',
                 _activite_pro: false,
             })
@@ -49,7 +49,7 @@ describe('navigation', function () {
     it('redirige vers question 2 si réponse manquante', function () {
         chai.expect(
             navigation.redirectIfMissingData('foyer', { _departement: '80' })
-        ).to.equal('activite-pro')
+        ).to.equal('activitepro')
     })
     it('ok d’aller à la question 3 si réponse à la 2', function () {
         chai.expect(
@@ -133,7 +133,7 @@ describe('navigation', function () {
     // Question 6 : mes symptômes actuels
     it('redirige vers question 5 si réponse manquante', function () {
         chai.expect(
-            navigation.redirectIfMissingData('symptomes-actuels', {
+            navigation.redirectIfMissingData('symptomesactuels', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -143,7 +143,7 @@ describe('navigation', function () {
     })
     it('ok d’aller à la question 6 si réponse à la 5', function () {
         chai.expect(
-            navigation.redirectIfMissingData('symptomes-actuels', {
+            navigation.redirectIfMissingData('symptomesactuels', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -154,7 +154,7 @@ describe('navigation', function () {
     })
     it('ok d’aller à la question 6 même si déjà répondu', function () {
         chai.expect(
-            navigation.redirectIfMissingData('symptomes-actuels', {
+            navigation.redirectIfMissingData('symptomesactuels', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -168,18 +168,18 @@ describe('navigation', function () {
     // Question 7 : mes symptômes passés
     it('redirige vers question 6 si réponse manquante', function () {
         chai.expect(
-            navigation.redirectIfMissingData('symptomes-passes', {
+            navigation.redirectIfMissingData('symptomespasses', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
                 _sup65: false,
                 _antecedent_cardio: false,
             })
-        ).to.equal('symptomes-actuels')
+        ).to.equal('symptomesactuels')
     })
     it('ok d’aller à la question 7 si réponse négative à la 6', function () {
         chai.expect(
-            navigation.redirectIfMissingData('symptomes-passes', {
+            navigation.redirectIfMissingData('symptomespasses', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -191,7 +191,7 @@ describe('navigation', function () {
     })
     it('ok d’aller à la question 7 même si déjà répondu', function () {
         chai.expect(
-            navigation.redirectIfMissingData('symptomes-passes', {
+            navigation.redirectIfMissingData('symptomespasses', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -204,7 +204,7 @@ describe('navigation', function () {
     })
     it('redirige vers conseils si réponse positive à la 6', function () {
         chai.expect(
-            navigation.redirectIfMissingData('symptomes-passes', {
+            navigation.redirectIfMissingData('symptomespasses', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -212,13 +212,13 @@ describe('navigation', function () {
                 _antecedent_cardio: false,
                 _symptomes_actuels: true,
             })
-        ).to.equal('conseils-symptomes-actuels')
+        ).to.equal('conseilssymptomesactuels')
     })
 
     // Question 8 : mes contacts à risque
     it('redirige vers question 7 si réponse manquante', function () {
         chai.expect(
-            navigation.redirectIfMissingData('contact-a-risque', {
+            navigation.redirectIfMissingData('contactarisque', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -226,11 +226,11 @@ describe('navigation', function () {
                 _antecedent_cardio: false,
                 _symptomes_actuels: false,
             })
-        ).to.equal('symptomes-passes')
+        ).to.equal('symptomespasses')
     })
     it('ok d’aller à la question 8 si réponse négative aux 6 et 7', function () {
         chai.expect(
-            navigation.redirectIfMissingData('contact-a-risque', {
+            navigation.redirectIfMissingData('contactarisque', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -243,7 +243,7 @@ describe('navigation', function () {
     })
     it('ok d’aller à la question 8 même si déjà répondu', function () {
         chai.expect(
-            navigation.redirectIfMissingData('contact-a-risque', {
+            navigation.redirectIfMissingData('contactarisque', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -257,7 +257,7 @@ describe('navigation', function () {
     })
     it('redirige vers conseils si réponse positive à la 6', function () {
         chai.expect(
-            navigation.redirectIfMissingData('contact-a-risque', {
+            navigation.redirectIfMissingData('contactarisque', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -265,11 +265,11 @@ describe('navigation', function () {
                 _antecedent_cardio: false,
                 _symptomes_actuels: true,
             })
-        ).to.equal('conseils-symptomes-actuels')
+        ).to.equal('conseilssymptomesactuels')
     })
     it('redirige vers conseils si réponse positive à la 7', function () {
         chai.expect(
-            navigation.redirectIfMissingData('contact-a-risque', {
+            navigation.redirectIfMissingData('contactarisque', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -278,13 +278,13 @@ describe('navigation', function () {
                 _symptomes_actuels: false,
                 _symptomes_passes: true,
             })
-        ).to.equal('conseils-symptomes-passes')
+        ).to.equal('conseilssymptomespasses')
     })
 
     // Sortie 1
     it('ok d’aller à sortie 1 si symptômes actuels', function () {
         chai.expect(
-            navigation.redirectIfMissingData('conseils-symptomes-actuels', {
+            navigation.redirectIfMissingData('conseilssymptomesactuels', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -296,7 +296,7 @@ describe('navigation', function () {
     })
     it('redirige sortie 2 -> 1 si symptômes actuels', function () {
         chai.expect(
-            navigation.redirectIfMissingData('conseils-symptomes-passes', {
+            navigation.redirectIfMissingData('conseilssymptomespasses', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -304,11 +304,11 @@ describe('navigation', function () {
                 _antecedent_cardio: false,
                 _symptomes_actuels: true,
             })
-        ).to.equal('conseils-symptomes-actuels')
+        ).to.equal('conseilssymptomesactuels')
     })
     it('redirige sortie 3 -> 1 si symptômes actuels', function () {
         chai.expect(
-            navigation.redirectIfMissingData('conseils-contact-a-risque', {
+            navigation.redirectIfMissingData('conseilscontactarisque', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -316,7 +316,7 @@ describe('navigation', function () {
                 _antecedent_cardio: false,
                 _symptomes_actuels: true,
             })
-        ).to.equal('conseils-symptomes-actuels')
+        ).to.equal('conseilssymptomesactuels')
     })
     it('redirige sortie 4 -> 1 si symptômes actuels', function () {
         chai.expect(
@@ -328,13 +328,13 @@ describe('navigation', function () {
                 _antecedent_cardio: false,
                 _symptomes_actuels: true,
             })
-        ).to.equal('conseils-symptomes-actuels')
+        ).to.equal('conseilssymptomesactuels')
     })
 
     // Sortie 2
     it('ok d’aller à sortie 2 si symptômes passés', function () {
         chai.expect(
-            navigation.redirectIfMissingData('conseils-symptomes-passes', {
+            navigation.redirectIfMissingData('conseilssymptomespasses', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -347,7 +347,7 @@ describe('navigation', function () {
     })
     it('redirige sortie 1 -> 2 si symptômes passés', function () {
         chai.expect(
-            navigation.redirectIfMissingData('conseils-symptomes-actuels', {
+            navigation.redirectIfMissingData('conseilssymptomesactuels', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -356,11 +356,11 @@ describe('navigation', function () {
                 _symptomes_actuels: false,
                 _symptomes_passes: true,
             })
-        ).to.equal('conseils-symptomes-passes')
+        ).to.equal('conseilssymptomespasses')
     })
     it('redirige sortie 3 -> 2 si symptômes passés', function () {
         chai.expect(
-            navigation.redirectIfMissingData('conseils-contact-a-risque', {
+            navigation.redirectIfMissingData('conseilscontactarisque', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -369,7 +369,7 @@ describe('navigation', function () {
                 _symptomes_actuels: false,
                 _symptomes_passes: true,
             })
-        ).to.equal('conseils-symptomes-passes')
+        ).to.equal('conseilssymptomespasses')
     })
     it('redirige sortie 4 -> 2 si symptômes passés', function () {
         chai.expect(
@@ -382,13 +382,13 @@ describe('navigation', function () {
                 _symptomes_actuels: false,
                 _symptomes_passes: true,
             })
-        ).to.equal('conseils-symptomes-passes')
+        ).to.equal('conseilssymptomespasses')
     })
 
     // Sortie 3
     it('ok d’aller à sortie 3 si symptômes passés', function () {
         chai.expect(
-            navigation.redirectIfMissingData('conseils-contact-a-risque', {
+            navigation.redirectIfMissingData('conseilscontactarisque', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -402,7 +402,7 @@ describe('navigation', function () {
     })
     it('redirige sortie 1 -> 3 si contact à risque', function () {
         chai.expect(
-            navigation.redirectIfMissingData('conseils-symptomes-actuels', {
+            navigation.redirectIfMissingData('conseilssymptomesactuels', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -412,11 +412,11 @@ describe('navigation', function () {
                 _symptomes_passes: false,
                 _contact_a_risque: true,
             })
-        ).to.equal('conseils-contact-a-risque')
+        ).to.equal('conseilscontactarisque')
     })
     it('redirige sortie 2 -> 3 si contact à risque', function () {
         chai.expect(
-            navigation.redirectIfMissingData('conseils-symptomes-passes', {
+            navigation.redirectIfMissingData('conseilssymptomespasses', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -426,7 +426,7 @@ describe('navigation', function () {
                 _symptomes_passes: false,
                 _contact_a_risque: true,
             })
-        ).to.equal('conseils-contact-a-risque')
+        ).to.equal('conseilscontactarisque')
     })
     it('redirige sortie 4 -> 3 si contact à risque', function () {
         chai.expect(
@@ -440,7 +440,7 @@ describe('navigation', function () {
                 _symptomes_passes: false,
                 _contact_a_risque: true,
             })
-        ).to.equal('conseils-contact-a-risque')
+        ).to.equal('conseilscontactarisque')
     })
 
     // Sortie 4
@@ -460,7 +460,7 @@ describe('navigation', function () {
     })
     it('redirige sortie 1 -> 4 si ni symptôme ni contact', function () {
         chai.expect(
-            navigation.redirectIfMissingData('conseils-symptomes-actuels', {
+            navigation.redirectIfMissingData('conseilssymptomesactuels', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -474,7 +474,7 @@ describe('navigation', function () {
     })
     it('redirige sortie 2 -> 4 si ni symptôme ni contact', function () {
         chai.expect(
-            navigation.redirectIfMissingData('conseils-symptomes-passes', {
+            navigation.redirectIfMissingData('conseilssymptomespasses', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
@@ -488,7 +488,7 @@ describe('navigation', function () {
     })
     it('redirige sortie 3 -> 4 si ni symptôme ni contact', function () {
         chai.expect(
-            navigation.redirectIfMissingData('conseils-contact-a-risque', {
+            navigation.redirectIfMissingData('conseilscontactarisque', {
                 _departement: '80',
                 _activite_pro: false,
                 _foyer_enfants: false,
