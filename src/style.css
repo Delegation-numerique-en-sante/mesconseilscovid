@@ -48,7 +48,14 @@ header img {
 header h1 {
     text-align: center;
     flex-grow: 2;
-    padding-right: 100px; /* To compensate the width of the logo. */
+    padding-right: 10%; /* To compensate the width of the logo on desktop. */
+}
+header h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+header h1 a:hover {
+    text-decoration: underline;
 }
 
 main {
