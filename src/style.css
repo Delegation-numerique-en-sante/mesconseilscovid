@@ -182,13 +182,12 @@ fieldset ul.details {
 
 .form-controls {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 .form-controls .back-button {
     margin-top: 2rem;
-    margin-right: 2rem;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%23000091' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='arcs'><path d='M19 12H6M12 5l-7 7 7 7'/></svg>");
     background-position: 10px center;
     background-repeat: no-repeat;
@@ -202,7 +201,27 @@ fieldset ul.details {
     transition: all 100ms ease-in;
 }
 .form-controls input[type='submit'] {
-    flex-grow: 1;
+    width: 100%;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 680px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 680px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 680px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 680px),
+only screen and (                min-resolution: 192dpi) and (min-width: 680px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 680px) {
+    .form-controls {
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .form-controls .back-button {
+        margin-right: 2rem;
+    }
+    .form-controls input[type='submit'] {
+        flex-grow: 1;
+        width: inherit;
+    }
 }
 
 input[type='text'],
