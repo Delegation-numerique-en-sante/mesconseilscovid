@@ -7,8 +7,7 @@ d’appliquer les mesures de distanciation physique renforcée :
 * Masque en permanence à l’extérieur de mon foyer
 * Distance de sécurité > 1m soit 4m<sup>2</sup>
 * Réduire les sorties au strict minimum possible
-* Au moindre symptôme, contactez votre médecin généraliste ou le 15
-en cas d’urgence
+* Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d’urgence
 
 Pour plus d’informations officielles, rendez-vous sur :
 [gouvernement.fr](https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement).
