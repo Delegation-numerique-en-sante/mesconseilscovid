@@ -1,1 +1,1 @@
-<!---->Mes symptômes passés
+<!---->Mon état des 14 derniers jours
