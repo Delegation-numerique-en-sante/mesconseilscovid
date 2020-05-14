@@ -342,8 +342,7 @@ input[type='checkbox']:disabled + label::before {
     transform: translate(0px, 0px);
 }
 
-[hidden],
-template {
+[hidden] {
     display: none !important;
 }
 .couleur {

@@ -41,12 +41,12 @@
         <footer>
             <p>Vos informations personnelles sont seulement stockées sur cet appareil, et ne sont pas partagées.<br />
 À tout moment, vous pouvez <a href="" id="delete-data">supprimer l’intégralité de ces données</a>.<br />
-<a href="#conditions-utilisation">Conditions d’utilisation</a> - <a href="mailto:mesconseilscovid@sante.gouv.fr">Contact</a> - <a href="https://github.com/Delegation-numerique-en-sante/mesconseilscovid">Code source</a></p>
+<a href="#conditionsutilisation">Conditions d’utilisation</a> - <a href="mailto:mesconseilscovid@sante.gouv.fr">Contact</a> - <a href="https://github.com/Delegation-numerique-en-sante/mesconseilscovid">Code source</a></p>
 
         </footer>
     </main>
 
-<template id="introduction">
+<section id="introduction" hidden>
     <div id="introduction-block" class="block">
         <h2>Pour que chacun puisse agir contre le virus</h2>
 <p class="larger">
@@ -62,9 +62,9 @@ Un site qui vous donne des conseils en fonction de <b>votre situation</b> et vou
             <a class="button button-full-width" href="#residence">Démarrer</a>
         </div>
     </div>
-</template>
+</section>
 
-<template id="residence">
+<section id="residence" hidden>
     <form id="residence-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
@@ -190,20 +190,10 @@ Un site qui vous donne des conseils en fonction de <b>votre situation</b> et vou
             <a href="#introduction" class="back-button">Retour</a>
             <input type="submit" class="button" value="Continuer">
         </div>
-        <script type="text/javascript">
-            ;(function() {
-                var form = document.getElementById('residence-form')
-                preloadForm(form, 'departement')
-                form.addEventListener('submit', submitResidenceForm)
-                document
-                    .getElementById('geolocalisation')
-                    .addEventListener('click', geolocalisation)
-            })()
-        </script>
     </form>
-</template>
+</section>
 
-<template id="activite-pro">
+<section id="activitepro" hidden>
     <form id="activite-pro-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
@@ -238,34 +228,10 @@ Médecin, infirmier, aide soignant, brancardier, manipulateur radio, kinésithé
             <a href="#residence" class="back-button">Retour</a>
             <input type="submit" class="button" value="Continuer">
         </div>
-        <script type="text/javascript">
-            ;(function () {
-                var form = document.getElementById('activite-pro-form')
-                var primary = form.elements['activite_pro']
-                function enableOrDisableSecondaryFields() {
-                    var primaryDisabled = !primary.checked
-                    ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
-                        var secondary = elem.querySelector('input')
-                        if (secondary.checked && primaryDisabled) {
-                            secondary.checked = false
-                            secondary.dispatchEvent(new Event('change'))
-                        }
-                        secondary.disabled = primaryDisabled
-                        elem.classList.toggle('disabled', primaryDisabled)
-                    })
-                }
-                preloadCheckboxForm(form, 'activite_pro')
-                preloadCheckboxForm(form, 'activite_pro_public')
-                preloadCheckboxForm(form, 'activite_pro_sante')
-                enableOrDisableSecondaryFields()
-                primary.addEventListener('click', enableOrDisableSecondaryFields)
-                form.addEventListener('submit', submitActiviteProForm)
-            })()
-        </script>
     </form>
-</template>
+</section>
 
-<template id="foyer">
+<section id="foyer" hidden>
     <form id="foyer-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
@@ -305,21 +271,13 @@ Une personne considérée comme fragile face au covid-19 est une personne prése
             </div>
         </fieldset>
         <div class="form-controls">
-            <a href="#activite-pro" class="back-button">Retour</a>
+            <a href="#activitepro" class="back-button">Retour</a>
             <input type="submit" class="button" value="Continuer">
         </div>
-        <script type="text/javascript">
-            ;(function() {
-                var form = document.getElementById('foyer-form')
-                preloadCheckboxForm(form, 'foyer_enfants')
-                preloadCheckboxForm(form, 'foyer_fragile')
-                form.addEventListener('submit', submitFoyerForm)
-            })()
-        </script>
     </form>
-</template>
+</section>
 
-<template id="caracteristiques">
+<section id="caracteristiques" hidden>
     <form id="caracteristiques-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
@@ -359,20 +317,10 @@ Ces données sont utiles pour calculer votre indice de masse corporelle.</p>
             <a href="#foyer" class="back-button">Retour</a>
             <input type="submit" class="button" value="Continuer">
         </div>
-        <script type="text/javascript">
-            ;(function() {
-                var form = document.getElementById('caracteristiques-form')
-                preloadCheckboxForm(form, 'sup65')
-                preloadCheckboxForm(form, 'grossesse_3e_trimestre')
-                preloadForm(form, 'taille')
-                preloadForm(form, 'poids')
-                form.addEventListener('submit', submitCaracteristiquesForm)
-            })()
-        </script>
     </form>
-</template>
+</section>
 
-<template id="antecedents">
+<section id="antecedents" hidden>
     <form id="antecedents-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
@@ -475,27 +423,10 @@ Ces données sont utiles pour calculer votre indice de masse corporelle.</p>
             <a href="#caracteristiques" class="back-button">Retour</a>
             <input type="submit" class="button" value="Aucun de ces éléments ne correspond à ma situation">
         </div>
-        <script type="text/javascript">
-            ;(function() {
-                var form = document.getElementById('antecedents-form')
-                var button = form.querySelector('input[type=submit]')
-                preloadCheckboxForm(form, 'antecedent_cardio')
-                preloadCheckboxForm(form, 'antecedent_diabete')
-                preloadCheckboxForm(form, 'antecedent_respi')
-                preloadCheckboxForm(form, 'antecedent_dialyse')
-                preloadCheckboxForm(form, 'antecedent_cancer')
-                preloadCheckboxForm(form, 'antecedent_immunodep')
-                preloadCheckboxForm(form, 'antecedent_cirrhose')
-                preloadCheckboxForm(form, 'antecedent_drepano')
-                preloadCheckboxForm(form, 'antecedent_chronique_autre')
-                toggleFormButtonOnCheck(form, button.value, 'Continuer')
-                form.addEventListener('submit', submitAntecedentsForm)
-            })()
-        </script>
     </form>
-</template>
+</section>
 
-<template id="symptomes-actuels">
+<section id="symptomesactuels" hidden>
     <form id="symptomes-actuels-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
@@ -520,19 +451,10 @@ perte de l’odorat et du gout</p>
             <a href="#antecedents" class="back-button">Retour</a>
             <input type="submit" class="button" value="Je n’ai pas de symptômes actuellement">
         </div>
-        <script type="text/javascript">
-            ;(function() {
-                var form = document.getElementById('symptomes-actuels-form')
-                var button = form.querySelector('input[type=submit]')
-                preloadCheckboxForm(form, 'symptomes_actuels')
-                toggleFormButtonOnCheck(form, button.value, 'Terminer')
-                form.addEventListener('submit', submitSymptomesActuelsForm)
-            })()
-        </script>
     </form>
-</template>
+</section>
 
-<template id="symptomes-passes">
+<section id="symptomespasses" hidden>
     <form id="symptomes-passes-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
@@ -557,19 +479,10 @@ perte de l’odorat et du gout</p>
             <a href="#symptomes-actuels" class="back-button">Retour</a>
             <input type="submit" class="button" value="Je n’ai pas eu de symptômes dans les 14 derniers jours">
         </div>
-        <script type="text/javascript">
-            ;(function() {
-                var form = document.getElementById('symptomes-passes-form')
-                var button = form.querySelector('input[type=submit]')
-                preloadCheckboxForm(form, 'symptomes_passes')
-                toggleFormButtonOnCheck(form, button.value, 'Terminer')
-                form.addEventListener('submit', submitSymptomesPassesForm)
-            })()
-        </script>
     </form>
-</template>
+</section>
 
-<template id="contact-a-risque">
+<section id="contactarisque" hidden>
     <form id="contact-a-risque-form" action="" class="block">
         <h2>Mes informations</h2>
         <fieldset>
@@ -610,19 +523,10 @@ Le <strong>contact à risque</strong> est défini pour une personne :</p>
             <a href="#symptomes-passes" class="back-button">Retour</a>
             <input type="submit" class="button" value="Je n’ai pas eu de contact à risque">
         </div>
-        <script type="text/javascript">
-            ;(function() {
-                var form = document.getElementById('contact-a-risque-form')
-                var button = form.querySelector('input[type=submit]')
-                preloadCheckboxForm(form, 'contact_a_risque')
-                toggleFormButtonOnCheck(form, button.value, 'Terminer')
-                form.addEventListener('submit', submitContactARisqueForm)
-            })()
-        </script>
     </form>
-</template>
+</section>
 
-<template id="conseils">
+<section id="conseils" hidden>
     <div id="conseils-block" class="block">
         <h2>Vos conseils personnalisés</h2>
         <div id="conseils-departement" class="conseils" hidden>
@@ -817,22 +721,12 @@ vous êtes invité à consulter le site :
             </div>
         </div>
         <div>
-            <a id="back-button" class="button button-full-width" href="">Modifier mes informations personnelles</a>
+            <a id="back-button" class="button button-full-width" href="#residence">Modifier mes informations personnelles</a>
         </div>
-        <script type="text/javascript">
-            ;(function() {
-                displayConseils(document.getElementById('conseils-block'))
-                document
-                    .getElementById('back-button')
-                    .addEventListener('click', function () {
-                        navigation.goToPage('residence')
-                    })
-            })()
-        </script>
     </div>
-</template>
+</section>
 
-<template id="conseils-symptomes-actuels">
+<section id="conseilssymptomesactuels" hidden>
     <div id="conseils-symptomes-actuels-block" class="block">
         <h2>Vos conseils personnalisés</h2>
         <div class="conseils">
@@ -884,21 +778,12 @@ vous êtes invité à consulter le site :
             </div>
         </div>
         <div>
-            <a id="back-button" class="button button-full-width" href="">Modifier mes informations personnelles</a>
+            <a id="back-button" class="button button-full-width" href="#residence">Modifier mes informations personnelles</a>
         </div>
-        <script type="text/javascript">
-            ;(function() {
-                document
-                    .getElementById('back-button')
-                    .addEventListener('click', function () {
-                        navigation.goToPage('residence')
-                    })
-            })()
-        </script>
     </div>
-</template>
+</section>
 
-<template id="conseils-symptomes-passes">
+<section id="conseilssymptomespasses" hidden>
     <div id="conseils-symptomes-passes-block" class="block">
         <h2>Vos conseils personnalisés</h2>
         <div id="conseils-symptomes-passes-sans-risques" class="conseils" hidden>
@@ -1028,24 +913,12 @@ vous êtes invité à consulter le site :
             </div>
         </div>
         <div>
-            <a id="back-button" class="button button-full-width" href="">Modifier mes informations personnelles</a>
+            <a id="back-button" class="button button-full-width" href="#residence">Modifier mes informations personnelles</a>
         </div>
-        <script type="text/javascript">
-            ;(function() {
-                displayConseilsSymptomesPasses(
-                    document.getElementById('conseils-symptomes-passes-block')
-                )
-                document
-                    .getElementById('back-button')
-                    .addEventListener('click', function () {
-                        navigation.goToPage('residence')
-                    })
-            })()
-        </script>
     </div>
-</template>
+</section>
 
-<template id="conseils-contact-a-risque">
+<section id="conseilscontactarisque" hidden>
     <div id="conseils-contact-a-risque-block" class="block">
         <h2>Vos conseils personnalisés</h2>
         <div class="conseils">
@@ -1152,24 +1025,12 @@ vous êtes invité à consulter le site :
             </div>
         </div>
         <div>
-            <a id="back-button" class="button button-full-width" href="">Modifier mes informations personnelles</a>
+            <a id="back-button" class="button button-full-width" href="#residence">Modifier mes informations personnelles</a>
         </div>
-        <script type="text/javascript">
-            ;(function() {
-                displayConseilsContactARisque(
-                    document.getElementById('conseils-contact-a-risque-block')
-                )
-                document
-                    .getElementById('back-button')
-                    .addEventListener('click', function () {
-                        navigation.goToPage('residence')
-                    })
-            })()
-        </script>
     </div>
-</template>
+</section>
 
-<template id="nouvelle-version-disponible">
+<section id="nouvelleversiondisponible" hidden>
     <div id="nouvelle-version-disponible-block" class="block">
         <h2>Une nouvelle version du site est disponible</h2>
 <p>Veuillez cliquer sur le bouton ci-dessous pour améliorer les conseils relatifs à votre questionnaire. <u>Vos données ne seront pas perdues</u>.</p>
@@ -1179,9 +1040,9 @@ vous êtes invité à consulter le site :
             <a id="refresh-button" class="button button-full-width" href="">Mettre à jour</a>
         </div>
     </div>
-</template>
+</section>
 
-<template id="conditions-utilisation">
+<section id="conditionsutilisation" hidden>
     <div id="conditions-utilisation-block" class="block">
         <h2>Conditions d’utilisation</h2>
 <h3>À propos</h3>
@@ -1231,15 +1092,16 @@ si vous identifiez une information contraire aux connaissances médicales sur la
             <a class="button button-full-width" href="">Revenir au questionnaire</a>
         </div>
     </div>
-</template>
+</section>
 
     <script src="localforage-1.7.3.min.js"></script>
     <script src="main.js"></script>
     <script type="text/javascript">
         ;(function() {
-            stockageLocal.charger(questionnaire).finally(function () {
+            document.addEventListener('dataLoaded', function (event) {
                 navigation.init()
             })
+            stockageLocal.charger(questionnaire)
             document
                 .getElementById('delete-data')
                 .addEventListener('click', resetPrivateData)
