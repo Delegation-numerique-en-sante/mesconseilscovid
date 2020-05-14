@@ -19,9 +19,13 @@ Les fichiers comportant le préfixe `meta_` correspondent aux informations addit
 
 ### Cas nominal
 
-#### Localisation ([titre](question_résidence_titre.md), [libellé](question_résidence_libellé.md))
+#### Localisation
 
-Si [Symptômes actuels](#symptômes-actuels-titre-libellé-aide), on n’affiche rien.
+Question : [titre](question_résidence_titre.md), [libellé](question_résidence_libellé.md)
+
+Conseils :
+
+Si [Symptômes actuels](#symptômes-actuels), on n’affiche rien.
 
 Si le département est `rouge`, on affiche [conseils_département_rouge.md](conseils_département_rouge.md).
 
@@ -45,9 +49,11 @@ Quelle que soit la couleur, on affiche [conseils_département_défaut.md](consei
 
 ### Cas particuliers
 
-#### Symptômes actuels ([titre](question_symptômes_actuels_titre.md), [libellé](question_symptômes_actuels_libellé.md), [aide](question_symptômes_aide.md))
+#### Symptômes actuels
 
-On affiche :
+Question : [titre](question_symptômes_actuels_titre.md), [libellé](question_symptômes_actuels_libellé.md), [aide](question_symptômes_aide.md)
+
+Conseils :
 
 1. [conseils_symptômes_actuels.md](conseils_symptômes_actuels.md)
 2. [conseils_cartographie_dépistage.md](conseils_cartographie_dépistage.md)
@@ -56,6 +62,55 @@ On affiche :
 
 #### Symptômes passés
 
+Question : [titre](question_symptômes_passés_titre.md), [libellé](question_symptômes_passés_libellé.md), [aide](question_symptômes_aide.md)
+
+Conseils :
+
+1. [conseils_symptômes_passés_sans_risques.md](conseils_symptômes_passés_sans_risques.md) ou [conseils_symptômes_passés_avec_risques.md](conseils_symptômes_passés_avec_risques.md) selon la valeur de [Risque](#risque)
+2. [conseils_symptômes_passés_défaut.md](conseils_symptômes_passés_défaut.md)
+3. [conseils_cartographie_dépistage.md](conseils_cartographie_dépistage.md)
+4. [Localisation](#localisation)
+5. [Foyer](#foyer) (cas particulier à détailler)
+6. [conseils_antécédents_chroniques_autres.md](conseils_antécédents_chroniques_autres.md)
+7. [Conseils d’ordre général](#conseils-dordre-général)
 
 #### Contact à risque
+
+Question : [titre](question_symptômes_contact_à_risque_titre.md), [libellé](question_symptômes_contact_à_risque_libellé.md), [aide](question_symptômes_contact_à_risque_aide.md)
+
+Sous-question (même lieu de vie) : [libellé](question_symptômes_contact_à_risque_même_lieu_de_vie_libellé.md)
+
+Sous-question (contact direct) : [libellé](question_symptômes_contact_à_risque_contact_direct_libellé.md), [aide](question_symptômes_contact_à_risque_contact_direct_aide.md)
+
+Sous-question (actes) : [libellé](question_symptômes_contact_à_risque_actes_libellé.md), [aide](question_symptômes_contact_à_risque_actes_aide.md)
+
+Sous-question (espace confiné) : [libellé](question_symptômes_contact_à_risque_espace_confiné_libellé.md)
+
+Sous-question (même classe) : [libellé](question_symptômes_contact_à_risque_même_classe_libellé.md)
+
+
+### Critères
+
+#### Antécédents
+
+Est définie comme étant une personne à antécédents celle qui vérifie l’une de ces conditions :
+
+* cardio
+* diabète 
+* maladie respiratoire
+* dialyse
+* cancer
+* immuno-dépression
+* cirrhose
+* drépanocytose
+* 3e trimestre grossesse
+
+#### Risque
+
+Est définie comme étant une personne à risque celle qui vérifie l’une de ces conditions :
+
+* a des [Antécédents](#antécédents)
+* a plus de 65 ans
+* a un IMC > 30
+* habite dans un foyer fragile
 
