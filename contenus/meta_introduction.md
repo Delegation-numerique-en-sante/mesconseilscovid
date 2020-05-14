@@ -1,10 +1,8 @@
-## Pour que chacun puisse agir contre le virus
+## Des conseils personnalisés pour agir contre le virus
 
 <p class="larger">
-Un site qui vous donne des conseils en fonction de <b>votre situation</b> et vous permet d’agir.
+Obtenez en 3 minutes des recommandations pour <b>votre santé</b> et celle de vos proches.
 </p>
 
-Ce questionnaire prend environ 3 minutes à remplir.
-
-Vos informations personnelles sont seulement stockées sur cet appareil, et ne sont pas partagées.
+Vos informations personnelles sont seulement stockées sur cet appareil et ne sont pas partagées.
 
