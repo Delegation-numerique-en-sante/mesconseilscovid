@@ -190,7 +190,7 @@ var CarteDepartements = function () {
         '976': 'rouge',
     }
     this.couleur = function (departement) {
-        return this._couleurs[departement]
+        return this._couleurs[departement] || 'inconnue'
     }
     this._liens_prefectures = {
         '01': 'http://www.ain.gouv.fr/strategie-locale-de-deconfinement-a6156.html',
@@ -367,10 +367,6 @@ var CarteDepartements = function () {
             'http://www.val-doise.gouv.fr/Actualites/Strategie-locale-de-deconfinement',
         '971':
             'http://www.guadeloupe.gouv.fr/Politiques-publiques/Risques-naturels-technologiques-et-sanitaires/Securite-sanitaire/Informations-coronavirus/La-strategie-de-deconfinement-en-Guadeloupe',
-        '971':
-            'http://www.saint-barth-saint-martin.gouv.fr/Actualites/LA-UNE/Actualites/Strategie-locale-de-deconfinement',
-        '971':
-            'http://www.saint-barth-saint-martin.gouv.fr/Actualites/LA-UNE/Actualites/Strategie-locale-de-deconfinement',
         '972':
             'http://www.martinique.gouv.fr/Politiques-publiques/Environnement-sante-publique/Sante/Informations-COVID-19/Le-plan-de-deconfinement/Strategie-locale-de-deconfinement',
         '973':
@@ -380,6 +376,10 @@ var CarteDepartements = function () {
             'http://www.saint-pierre-et-miquelon.gouv.fr/Publications/Communiques/Communiques-2020/Deconfinement-individuel-Saint-Pierre-et-Miquelon',
         '976':
             'http://www.mayotte.gouv.fr/Politiques-publiques/Sante/CORONAVIRUS-COVID-19/Strategie-locale-de-deconfinement/Informations-sur-la-strategie-de-fin-de-confinement-a-Mayotte',
+        '977':
+            'http://www.saint-barth-saint-martin.gouv.fr/Actualites/LA-UNE/Actualites/Strategie-locale-de-deconfinement',
+        '978':
+            'http://www.saint-barth-saint-martin.gouv.fr/Actualites/LA-UNE/Actualites/Strategie-locale-de-deconfinement',
     }
     this.lien_prefecture = function (departement) {
         return this._liens_prefectures[departement]
