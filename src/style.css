@@ -117,6 +117,9 @@ fieldset legend {
 fieldset div {
     margin: 0.5rem 0;
 }
+fieldset h3 ~ h3 {
+    margin-top: 3rem;
+}
 fieldset ul {
     list-style: square;
 }
