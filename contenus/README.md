@@ -21,7 +21,7 @@ Les fichiers comportant le préfixe `meta_` correspondent aux informations addit
 
 #### Localisation ([titre](question_résidence_titre.md), [libellé](question_résidence_libellé.md))
 
-Si [Symptômes actuels](#symptomes-actuels), on n’affiche rien.
+Si [Symptômes actuels](#symptômes-actuels-titre-libellé-aide), on n’affiche rien.
 
 Si le département est `rouge`, on affiche [conseils_département_rouge.md](conseils_département_rouge.md).
 
@@ -51,7 +51,7 @@ On affiche :
 
 1. [conseils_symptômes_actuels.md](conseils_symptômes_actuels.md)
 2. [conseils_cartographie_dépistage.md](conseils_cartographie_dépistage.md)
-3. [Conseils d’ordre général](conseils-dordre-general)
+3. [Conseils d’ordre général](#conseils-dordre-général)
 
 
 #### Symptômes passés
