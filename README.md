@@ -36,7 +36,7 @@ $ make install
 $ make build
 ```
 
-### Lancer un serveur local
+### Lancer un serveur local sur https (pour la géolocalisation)
 
 Pour lancer un serveur local sur [https://localhost:8443/](https://localhost:8443/) :
 
@@ -44,6 +44,14 @@ Pour lancer un serveur local sur [https://localhost:8443/](https://localhost:844
 $ make serve
 ```
 
+### Lancer un serveur local qui build automatiquement (si édition de fichiers markdown)
+
+Pour lancer ce serveur local sur [http://127.0.0.1:5500/](http://127.0.0.1:5500/) :
+
+```
+$ make autobuild
+```
+
 ### Lancer les tests
 
-Pour lancer les tests dans le navigateur avec [Mocha](https://mochajs.org/), allez sur [https://localhost:8443/tests/](https://localhost:8443/tests/).
+Pour lancer les tests dans le navigateur avec [Mocha](https://mochajs.org/), allez sur `/tests/` une fois votre serveur lancé.
