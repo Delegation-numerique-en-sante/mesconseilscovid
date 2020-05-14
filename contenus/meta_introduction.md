@@ -8,6 +8,3 @@ Ce questionnaire prend environ 3 minutes à remplir.
 
 Vos informations personnelles sont seulement stockées sur cet appareil, et ne sont pas partagées.
 
-<p class="larger">
-    🚧  Ce site est encore en construction !  🚧
-</p>

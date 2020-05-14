@@ -2,8 +2,7 @@
 
 ## Pour que chacun puisse agir contre le virus.
 
-**🚧  Ce site est encore en construction !  🚧**
-
+https://mesconseilscovid.sante.gouv.fr/
 
 ## Données
 
