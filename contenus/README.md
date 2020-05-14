@@ -21,7 +21,9 @@ Les fichiers comportant le préfixe `meta_` correspondent aux informations addit
 
 #### Localisation
 
-Question : [titre](question_résidence_titre.md), [libellé](question_résidence_libellé.md)
+[Titre](question_résidence_titre.md)
+
+Question : [libellé](question_résidence_libellé.md)
 
 Conseils :
 
@@ -30,15 +32,65 @@ Conseils :
 
 #### Activité
 
-Question : [titre](question_activité_pro_titre.md), [libellé](question_activité_pro_libellé.md)
+[Titre](question_activité_pro_titre.md)
+
+Question : [libellé](question_activité_pro_libellé.md)
 
 Sous-question (contact public) : [libellé](question_activité_pro_public_libellé.md)
 
 Sous-question (domaine santé) : [libellé](question_activité_pro_santé_libellé.md), [aide](question_activité_pro_santé_aide.md)
 
+Conseils :
+
+* [conseils_activité_pro.md](conseils_activité_pro.md) si case cochée
+* [conseils_activité_pro_public.md](conseils_activité_pro_public.md) si case cochée
+* [conseils_activité_pro_santé.md](conseils_activité_pro_santé.md) si case cochée
+
 #### Foyer
 
+[Titre](question_activité_pro_titre.md)
+
+Question (enfants) : [libellé](question_foyer_enfants_libellé.md)
+
+Question (fragile) : [libellé](question_foyer_fragile_libellé.md), [aide](question_foyer_fragile_aide.md)
+
+Conseils :
+
+Si les cases enfants *et* fragile sont cochées :
+
+* [conseils_foyer_enfants_fragile.md](conseils_foyer_enfants_fragile.md)
+* [conseils_foyer_enfants_fragile_suivi.md](conseils_foyer_enfants_fragile_suivi.md)
+* [conseils_prescription_masques.md](conseils_prescription_masques.md)
+
+Si seule la case enfants est cochée :
+
+* [conseils_foyer_enfants.md](conseils_foyer_enfants.md)
+* [conseils_foyer_enfants_vaccins.md](conseils_foyer_enfants_vaccins.md)
+
+Si seule la case fragile est cochée :
+
+* [conseils_accueil_enfants.md](conseils_accueil_enfants.md)
+* [conseils_foyer_fragile_suivi.md](conseils_foyer_fragile_suivi.md)
+* [conseils_prescription_masques.md](conseils_prescription_masques.md)
+* [conseils_foyer_fragile_domicile.md](conseils_foyer_fragile_domicile.md)
+
 #### Caractéristiques et antécédents
+
+[Titre caractéristiques](question_caractéristiques_titre.md), [titre antécédents](question_antécédents_titre.md)
+
+Questions : TODO
+
+Conseils :
+
+Si [Antécédents](#antécédents) (sauf grossesse) :
+
+* [conseils_caractéristiques_antécédents.md](conseils_caractéristiques_antécédents.md)
+* [conseils_prescription_masques.md](conseils_prescription_masques.md)
+* [conseils_accueil_enfants.md](conseils_accueil_enfants.md)
+
+Si case antécédents chroniques autres cochée :
+
+* [conseils_antécédents_chroniques_autres.md](conseils_antécédents_chroniques_autres.md)
 
 #### Conseils d’ordre général
 
@@ -51,7 +103,9 @@ Sous-question (domaine santé) : [libellé](question_activité_pro_santé_libell
 
 #### Symptômes actuels
 
-Question : [titre](question_symptômes_actuels_titre.md), [libellé](question_symptômes_actuels_libellé.md), [aide](question_symptômes_aide.md)
+[Titre](question_symptômes_actuels_titre.md)
+
+Question : [libellé](question_symptômes_actuels_libellé.md), [aide](question_symptômes_aide.md)
 
 Conseils :
 
@@ -62,7 +116,9 @@ Conseils :
 
 #### Symptômes passés
 
-Question : [titre](question_symptômes_passés_titre.md), [libellé](question_symptômes_passés_libellé.md), [aide](question_symptômes_aide.md)
+[Titre](question_symptômes_passés_titre.md)
+
+Question : [libellé](question_symptômes_passés_libellé.md), [aide](question_symptômes_aide.md)
 
 Conseils :
 
@@ -70,13 +126,15 @@ Conseils :
 2. [conseils_symptômes_passés_défaut.md](conseils_symptômes_passés_défaut.md)
 3. [conseils_cartographie_dépistage.md](conseils_cartographie_dépistage.md)
 4. [Localisation](#localisation)
-5. [Foyer](#foyer) (cas particulier à détailler)
+5. [Foyer](#foyer) (TODO: cas particulier à détailler)
 6. [conseils_antécédents_chroniques_autres.md](conseils_antécédents_chroniques_autres.md)
 7. [Conseils d’ordre général](#conseils-dordre-général)
 
 #### Contact à risque
 
-Question : [titre](question_symptômes_contact_à_risque_titre.md), [libellé](question_symptômes_contact_à_risque_libellé.md), [aide](question_symptômes_contact_à_risque_aide.md)
+[Titre](question_symptômes_contact_à_risque_titre.md)
+
+Question : [libellé](question_symptômes_contact_à_risque_libellé.md), [aide](question_symptômes_contact_à_risque_aide.md)
 
 Sous-question (même lieu de vie) : [libellé](question_symptômes_contact_à_risque_même_lieu_de_vie_libellé.md)
 
@@ -88,6 +146,7 @@ Sous-question (espace confiné) : [libellé](question_symptômes_contact_à_risq
 
 Sous-question (même classe) : [libellé](question_symptômes_contact_à_risque_même_classe_libellé.md)
 
+Conseils : TODO
 
 ### Critères
 
