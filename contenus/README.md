@@ -76,9 +76,36 @@ Si seule la case fragile est cochée :
 
 #### Caractéristiques et antécédents
 
-[Titre caractéristiques](question_caractéristiques_titre.md), [titre antécédents](question_antécédents_titre.md)
+[Titre caractéristiques](question_caractéristiques_titre.md) 
 
-Questions : TODO
+Question (âge) : [libellé](question_caractéristiques_âge_libellé.md)
+
+Question (grossesse) : [libellé](question_caractéristiques_grossesse_libellé.md)
+
+Question (taille) : [libellé](question_caractéristiques_taille_libellé.md), [aide](question_caractéristiques_taille_poids_aide.md)
+
+Question (poids) : [libellé](question_caractéristiques_poids_libellé.md), [aide](question_caractéristiques_taille_poids_aide.md)
+
+
+[Titre antécédents](question_antécédents_titre.md)
+
+Question (cardio) : [libellé](question_antécédents_cardio_libellé.md), [aide](question_antécédents_cardio_aide.md)
+
+Question (diabète) : [libellé](question_antécédents_diabète_libellé.md)
+
+Question (respi) : [libellé](question_antécédents_respi_libellé.md), [aide](question_antécédents_respi_aide.md)
+
+Question (dialyse) : [libellé](question_antécédents_dialyse_libellé.md)
+
+Question (cancer) : [libellé](question_antécédents_cancer_libellé.md)
+
+Question (immunodépression) : [libellé](question_antécédents_immunodépression_libellé.md), [aide](question_antécédents_immunodépression_aide.md)
+
+Question (cirrhose) : [libellé](question_antécédents_cirrhose_libellé.md)
+
+Question (drépanocytose) : [libellé](question_antécédents_drépanocytose_libellé.md)
+
+Question (chronique autre) : [libellé](question_antécédents_chronique_autre_libellé.md)
 
 Conseils :
 
@@ -126,9 +153,11 @@ Conseils :
 2. [conseils_symptômes_passés_défaut.md](conseils_symptômes_passés_défaut.md)
 3. [conseils_cartographie_dépistage.md](conseils_cartographie_dépistage.md)
 4. [Localisation](#localisation)
-5. [Foyer](#foyer) (TODO: cas particulier à détailler)
-6. [conseils_antécédents_chroniques_autres.md](conseils_antécédents_chroniques_autres.md)
-7. [Conseils d’ordre général](#conseils-dordre-général)
+6. [conseils_foyer_fragile_suivi.md](conseils_foyer_fragile_suivi.md)
+7. [conseils_foyer_enfants_fragile_suivi.md](conseils_foyer_enfants_fragile_suivi.md)
+8. [conseils_antécédents_chroniques_autres.md](conseils_antécédents_chroniques_autres.md)
+9. [Conseils d’ordre général](#conseils-dordre-général)
+
 
 #### Contact à risque
 
@@ -146,7 +175,16 @@ Sous-question (espace confiné) : [libellé](question_symptômes_contact_à_risq
 
 Sous-question (même classe) : [libellé](question_symptômes_contact_à_risque_même_classe_libellé.md)
 
-Conseils : TODO
+Conseils :
+
+1. [conseils_contact_à_risque.md](conseils_contact_à_risque.md)
+2. [conseils_cartographie_dépistage.md](conseils_cartographie_dépistage.md)
+3. [Localisation](#localisation)
+4. [conseils_foyer_fragile_suivi.md](conseils_foyer_fragile_suivi.md)
+5. [conseils_foyer_enfants_fragile_suivi.md](conseils_foyer_enfants_fragile_suivi.md)
+6. [conseils_antécédents_chroniques_autres.md](conseils_antécédents_chroniques_autres.md)
+7. [Conseils d’ordre général](#conseils-dordre-général)
+
 
 ### Critères
 
