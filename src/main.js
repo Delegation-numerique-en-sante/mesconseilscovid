@@ -880,31 +880,28 @@ var Navigation = function () {
 
         // Questions obligatoires
 
-        if (typeof questionnaire._departement === 'undefined' && page !== 'residence')
+        if (typeof questionnaire.departement === 'undefined' && page !== 'residence')
             return 'introduction' // aucune réponse = retour à l’accueil
 
         if (page === 'residence') return
 
-        if (
-            typeof questionnaire._activite_pro === 'undefined' &&
-            page !== 'activitepro'
-        )
+        if (typeof questionnaire.activite_pro === 'undefined' && page !== 'activitepro')
             return 'activitepro'
 
         if (page === 'activitepro') return
 
-        if (typeof questionnaire._foyer_enfants === 'undefined' && page !== 'foyer')
+        if (typeof questionnaire.foyer_enfants === 'undefined' && page !== 'foyer')
             return 'foyer'
 
         if (page === 'foyer') return
 
-        if (typeof questionnaire._sup65 === 'undefined' && page !== 'caracteristiques')
+        if (typeof questionnaire.sup65 === 'undefined' && page !== 'caracteristiques')
             return 'caracteristiques'
 
         if (page === 'caracteristiques') return
 
         if (
-            typeof questionnaire._antecedent_cardio === 'undefined' &&
+            typeof questionnaire.antecedent_cardio === 'undefined' &&
             page !== 'antecedents'
         )
             return 'antecedents'
@@ -912,45 +909,45 @@ var Navigation = function () {
         if (page === 'antecedents') return
 
         if (
-            typeof questionnaire._symptomes_actuels === 'undefined' &&
+            typeof questionnaire.symptomes_actuels === 'undefined' &&
             page !== 'symptomesactuels'
         )
             return 'symptomesactuels'
 
         if (page === 'symptomesactuels') return
 
-        if (questionnaire._symptomes_actuels === true)
+        if (questionnaire.symptomes_actuels === true)
             return page === 'conseilssymptomesactuels'
                 ? undefined
                 : 'conseilssymptomesactuels'
 
         if (
-            typeof questionnaire._symptomes_passes === 'undefined' &&
+            typeof questionnaire.symptomes_passes === 'undefined' &&
             page !== 'symptomespasses'
         )
             return 'symptomespasses'
 
         if (page === 'symptomespasses') return
 
-        if (questionnaire._symptomes_passes === true)
+        if (questionnaire.symptomes_passes === true)
             return page === 'conseilssymptomespasses'
                 ? undefined
                 : 'conseilssymptomespasses'
 
         if (
-            typeof questionnaire._contact_a_risque === 'undefined' &&
+            typeof questionnaire.contact_a_risque === 'undefined' &&
             page !== 'contactarisque'
         )
             return 'contactarisque'
 
         if (page === 'contactarisque') return
 
-        if (questionnaire._contact_a_risque === true)
+        if (questionnaire.contact_a_risque === true)
             return page === 'conseilscontactarisque'
                 ? undefined
                 : 'conseilscontactarisque'
 
-        if (questionnaire._contact_a_risque === false)
+        if (questionnaire.contact_a_risque === false)
             return page === 'conseils' ? undefined : 'conseils'
     }
 
