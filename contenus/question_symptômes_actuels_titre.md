@@ -1,1 +1,1 @@
-<!---->Mes symptômes actuels
+<!---->Mon état actuel
