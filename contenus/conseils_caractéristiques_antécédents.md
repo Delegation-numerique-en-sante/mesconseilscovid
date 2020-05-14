@@ -1,5 +1,5 @@
 Afin d’éviter une forme grave de COVID19, il vous est recommandé
-d’appliquer les mesures de distanciation physique renforcée :
+d’appliquer les mesures de **distanciation physique renforcée :**
 
 * Privilégier le télétravail
 * Rentrez en contact avec votre employeur pour envisager des solutions individuelles (éventuellement via la Médecine du Travail de l’entreprise)
