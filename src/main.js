@@ -389,165 +389,80 @@ var carteDepartements = new CarteDepartements()
 
 var Questionnaire = function () {
     this.resetData = function () {
-        this._departement = undefined
-        this._activite_pro = undefined
-        this._activite_pro_public = undefined
-        this._activite_pro_sante = undefined
-        this._foyer_enfants = undefined
-        this._foyer_fragile = undefined
-        this._sup65 = undefined
-        this._grossesse_3e_trimestre = undefined
-        this._poids = undefined
-        this._taille = undefined
-        this._antecedent_cardio = undefined
-        this._antecedent_diabete = undefined
-        this._antecedent_respi = undefined
-        this._antecedent_dialyse = undefined
-        this._antecedent_cancer = undefined
-        this._antecedent_immunodep = undefined
-        this._antecedent_cirrhose = undefined
-        this._antecedent_drepano = undefined
-        this._antecedent_chronique_autre = undefined
-        this._symptomes_actuels = undefined
-        this._symptomes_passes = undefined
-        this._contact_a_risque = undefined
+        this.departement = undefined
+        this.activite_pro = undefined
+        this.activite_pro_public = undefined
+        this.activite_pro_sante = undefined
+        this.foyer_enfants = undefined
+        this.foyer_fragile = undefined
+        this.sup65 = undefined
+        this.grossesse_3e_trimestre = undefined
+        this.poids = undefined
+        this.taille = undefined
+        this.antecedent_cardio = undefined
+        this.antecedent_diabete = undefined
+        this.antecedent_respi = undefined
+        this.antecedent_dialyse = undefined
+        this.antecedent_cancer = undefined
+        this.antecedent_immunodep = undefined
+        this.antecedent_cirrhose = undefined
+        this.antecedent_drepano = undefined
+        this.antecedent_chronique_autre = undefined
+        this.symptomes_actuels = undefined
+        this.symptomes_passes = undefined
+        this.contact_a_risque = undefined
     }
 
     this.fillData = function (data) {
-        this._departement = data['departement']
-        this._activite_pro = data['activite_pro']
-        this._activite_pro_public = data['activite_pro_public']
-        this._activite_pro_sante = data['activite_pro_sante']
-        this._foyer_enfants = data['foyer_enfants']
-        this._foyer_fragile = data['foyer_fragile']
-        this._sup65 = data['sup65']
-        this._grossesse_3e_trimestre = data['grossesse_3e_trimestre']
-        this._poids = data['poids']
-        this._taille = data['taille']
-        this._antecedent_cardio = data['antecedent_cardio']
-        this._antecedent_diabete = data['antecedent_diabete']
-        this._antecedent_respi = data['antecedent_respi']
-        this._antecedent_dialyse = data['antecedent_dialyse']
-        this._antecedent_cancer = data['antecedent_cancer']
-        this._antecedent_immunodep = data['antecedent_immunodep']
-        this._antecedent_cirrhose = data['antecedent_cirrhose']
-        this._antecedent_drepano = data['antecedent_drepano']
-        this._antecedent_chronique_autre = data['antecedent_chronique_autre']
-        this._symptomes_actuels = data['symptomes_actuels']
-        this._symptomes_passes = data['symptomes_passes']
-        this._contact_a_risque = data['contact_a_risque']
+        this.departement = data['departement']
+        this.activite_pro = data['activite_pro']
+        this.activite_pro_public = data['activite_pro_public']
+        this.activite_pro_sante = data['activite_pro_sante']
+        this.foyer_enfants = data['foyer_enfants']
+        this.foyer_fragile = data['foyer_fragile']
+        this.sup65 = data['sup65']
+        this.grossesse_3e_trimestre = data['grossesse_3e_trimestre']
+        this.poids = data['poids']
+        this.taille = data['taille']
+        this.antecedent_cardio = data['antecedent_cardio']
+        this.antecedent_diabete = data['antecedent_diabete']
+        this.antecedent_respi = data['antecedent_respi']
+        this.antecedent_dialyse = data['antecedent_dialyse']
+        this.antecedent_cancer = data['antecedent_cancer']
+        this.antecedent_immunodep = data['antecedent_immunodep']
+        this.antecedent_cirrhose = data['antecedent_cirrhose']
+        this.antecedent_drepano = data['antecedent_drepano']
+        this.antecedent_chronique_autre = data['antecedent_chronique_autre']
+        this.symptomes_actuels = data['symptomes_actuels']
+        this.symptomes_passes = data['symptomes_passes']
+        this.contact_a_risque = data['contact_a_risque']
     }
 
     this.getData = function () {
         return {
-            departement: this._departement,
-            activite_pro: this._activite_pro,
-            activite_pro_public: this._activite_pro_public,
-            activite_pro_sante: this._activite_pro_sante,
-            foyer_enfants: this._foyer_enfants,
-            foyer_fragile: this._foyer_fragile,
-            sup65: this._sup65,
-            grossesse_3e_trimestre: this._grossesse_3e_trimestre,
-            poids: this._poids,
-            taille: this._taille,
-            antecedent_cardio: this._antecedent_cardio,
-            antecedent_diabete: this._antecedent_diabete,
-            antecedent_respi: this._antecedent_respi,
-            antecedent_dialyse: this._antecedent_dialyse,
-            antecedent_cancer: this._antecedent_cancer,
-            antecedent_immunodep: this._antecedent_immunodep,
-            antecedent_cirrhose: this._antecedent_cirrhose,
-            antecedent_drepano: this._antecedent_drepano,
-            antecedent_chronique_autre: this._antecedent_chronique_autre,
-            symptomes_actuels: this._symptomes_actuels,
-            symptomes_passes: this._symptomes_passes,
-            contact_a_risque: this._contact_a_risque,
+            departement: this.departement,
+            activite_pro: this.activite_pro,
+            activite_pro_public: this.activite_pro_public,
+            activite_pro_sante: this.activite_pro_sante,
+            foyer_enfants: this.foyer_enfants,
+            foyer_fragile: this.foyer_fragile,
+            sup65: this.sup65,
+            grossesse_3e_trimestre: this.grossesse_3e_trimestre,
+            poids: this.poids,
+            taille: this.taille,
+            antecedent_cardio: this.antecedent_cardio,
+            antecedent_diabete: this.antecedent_diabete,
+            antecedent_respi: this.antecedent_respi,
+            antecedent_dialyse: this.antecedent_dialyse,
+            antecedent_cancer: this.antecedent_cancer,
+            antecedent_immunodep: this.antecedent_immunodep,
+            antecedent_cirrhose: this.antecedent_cirrhose,
+            antecedent_drepano: this.antecedent_drepano,
+            antecedent_chronique_autre: this.antecedent_chronique_autre,
+            symptomes_actuels: this.symptomes_actuels,
+            symptomes_passes: this.symptomes_passes,
+            contact_a_risque: this.contact_a_risque,
         }
-    }
-
-    this.setResidence = function (departement) {
-        this._departement = departement
-    }
-
-    this.setActivitePro = function (activite_pro) {
-        this._activite_pro = activite_pro
-    }
-
-    this.setActiviteProPublic = function (activite_pro_public) {
-        this._activite_pro_public = activite_pro_public
-    }
-
-    this.setActiviteProSante = function (activite_pro_sante) {
-        this._activite_pro_sante = activite_pro_sante
-    }
-
-    this.setFoyerEnfants = function (foyer_enfants) {
-        this._foyer_enfants = foyer_enfants
-    }
-
-    this.setFoyerFragile = function (foyer_fragile) {
-        this._foyer_fragile = foyer_fragile
-    }
-
-    this.setSup65 = function (sup65) {
-        this._sup65 = sup65
-    }
-
-    this.setGrossesse3eTrimestre = function (grossesse_3e_trimestre) {
-        this._grossesse_3e_trimestre = grossesse_3e_trimestre
-    }
-
-    this.setPoidsTaille = function (poids, taille) {
-        this._poids = poids
-        this._taille = taille
-    }
-
-    this.setAntecedentCardio = function (antecedent_cardio) {
-        this._antecedent_cardio = antecedent_cardio
-    }
-
-    this.setAntecedentDiabete = function (antecedent_diabete) {
-        this._antecedent_diabete = antecedent_diabete
-    }
-
-    this.setAntecedentRespi = function (antecedent_respi) {
-        this._antecedent_respi = antecedent_respi
-    }
-
-    this.setAntecedentDialyse = function (antecedent_dialyse) {
-        this._antecedent_dialyse = antecedent_dialyse
-    }
-
-    this.setAntecedentCancer = function (antecedent_cancer) {
-        this._antecedent_cancer = antecedent_cancer
-    }
-
-    this.setAntecedentImmunodep = function (antecedent_immunodep) {
-        this._antecedent_immunodep = antecedent_immunodep
-    }
-
-    this.setAntecedentCirrhose = function (antecedent_cirrhose) {
-        this._antecedent_cirrhose = antecedent_cirrhose
-    }
-
-    this.setAntecedentDrepano = function (antecedent_drepano) {
-        this._antecedent_drepano = antecedent_drepano
-    }
-
-    this.setAntecedentChroniqueAutre = function (antecedent_chronique_autre) {
-        this._antecedent_chronique_autre = antecedent_chronique_autre
-    }
-
-    this.setSymptomesActuels = function (symptomes_actuels) {
-        this._symptomes_actuels = symptomes_actuels
-    }
-
-    this.setSymptomesPasses = function (symptomes_passes) {
-        this._symptomes_passes = symptomes_passes
-    }
-
-    this.setContactARisque = function (contact_a_risque) {
-        this._contact_a_risque = contact_a_risque
     }
 }
 var questionnaire = new Questionnaire()
@@ -583,83 +498,67 @@ function toggleFormButtonOnCheck(form, initialLabel, alternateLabel) {
 
 function submitResidenceForm(event) {
     event.preventDefault()
-    questionnaire.setResidence(event.target.elements['departement'].value)
+    questionnaire.departement = event.target.elements['departement'].value
     stockageLocal.enregistrer(questionnaire)
     navigation.goToPage('activitepro')
 }
 
 function submitActiviteProForm(event) {
     event.preventDefault()
-    questionnaire.setActivitePro(event.target.elements['activite_pro'].checked)
-    questionnaire.setActiviteProPublic(
+    questionnaire.activite_pro = event.target.elements['activite_pro'].checked
+    questionnaire.activite_pro_public =
         event.target.elements['activite_pro_public'].checked
-    )
-    questionnaire.setActiviteProSante(
+    questionnaire.activite_pro_sante =
         event.target.elements['activite_pro_sante'].checked
-    )
     stockageLocal.enregistrer(questionnaire)
     navigation.goToPage('foyer')
 }
 
 function submitFoyerForm(event) {
     event.preventDefault()
-    questionnaire.setFoyerEnfants(event.target.elements['foyer_enfants'].checked)
-    questionnaire.setFoyerFragile(event.target.elements['foyer_fragile'].checked)
+    questionnaire.foyer_enfants = event.target.elements['foyer_enfants'].checked
+    questionnaire.foyer_fragile = event.target.elements['foyer_fragile'].checked
     stockageLocal.enregistrer(questionnaire)
     navigation.goToPage('caracteristiques')
 }
 
 function submitCaracteristiquesForm(event) {
     event.preventDefault()
-    questionnaire.setSup65(event.target.elements['sup65'].checked)
-    questionnaire.setGrossesse3eTrimestre(
+    questionnaire.sup65 = event.target.elements['sup65'].checked
+    questionnaire.grossesse_3e_trimestre =
         event.target.elements['grossesse_3e_trimestre'].checked
-    )
-    questionnaire.setPoidsTaille(
-        event.target.elements['poids'].value,
-        event.target.elements['taille'].value
-    )
+    questionnaire.poids = event.target.elements['poids'].value
+    questionnaire.taille = event.target.elements['taille'].value
     stockageLocal.enregistrer(questionnaire)
     navigation.goToPage('antecedents')
 }
 
 function submitAntecedentsForm(event) {
     event.preventDefault()
-    questionnaire.setAntecedentCardio(
-        event.target.elements['antecedent_cardio'].checked
-    )
-    questionnaire.setAntecedentDiabete(
+    questionnaire.antecedent_cardio = event.target.elements['antecedent_cardio'].checked
+    questionnaire.antecedent_diabete =
         event.target.elements['antecedent_diabete'].checked
-    )
-    questionnaire.setAntecedentRespi(event.target.elements['antecedent_respi'].checked)
-    questionnaire.setAntecedentDialyse(
+    questionnaire.antecedent_respi = event.target.elements['antecedent_respi'].checked
+    questionnaire.antecedent_dialyse =
         event.target.elements['antecedent_dialyse'].checked
-    )
-    questionnaire.setAntecedentCancer(
-        event.target.elements['antecedent_cancer'].checked
-    )
-    questionnaire.setAntecedentImmunodep(
+    questionnaire.antecedent_cancer = event.target.elements['antecedent_cancer'].checked
+    questionnaire.antecedent_immunodep =
         event.target.elements['antecedent_immunodep'].checked
-    )
-    questionnaire.setAntecedentCirrhose(
+    questionnaire.antecedent_cirrhose =
         event.target.elements['antecedent_cirrhose'].checked
-    )
-    questionnaire.setAntecedentDrepano(
+    questionnaire.antecedent_drepano =
         event.target.elements['antecedent_drepano'].checked
-    )
-    questionnaire.setAntecedentChroniqueAutre(
+    questionnaire.antecedent_chronique_autre =
         event.target.elements['antecedent_chronique_autre'].checked
-    )
     stockageLocal.enregistrer(questionnaire)
     navigation.goToPage('symptomesactuels')
 }
 
 function submitSymptomesActuelsForm(event) {
     event.preventDefault()
-    var symptomesActuels = event.target.elements['symptomes_actuels'].checked
-    questionnaire.setSymptomesActuels(symptomesActuels)
+    questionnaire.symptomes_actuels = event.target.elements['symptomes_actuels'].checked
     stockageLocal.enregistrer(questionnaire)
-    if (symptomesActuels) {
+    if (questionnaire.symptomes_actuels) {
         navigation.goToPage('conseilssymptomesactuels')
     } else {
         navigation.goToPage('symptomespasses')
@@ -668,10 +567,9 @@ function submitSymptomesActuelsForm(event) {
 
 function submitSymptomesPassesForm(event) {
     event.preventDefault()
-    var symptomesPasses = event.target.elements['symptomes_passes'].checked
-    questionnaire.setSymptomesPasses(symptomesPasses)
+    questionnaire.symptomes_passes = event.target.elements['symptomes_passes'].checked
     stockageLocal.enregistrer(questionnaire)
-    if (symptomesPasses) {
+    if (questionnaire.symptomes_passes) {
         navigation.goToPage('conseilssymptomespasses')
     } else {
         navigation.goToPage('contactarisque')
@@ -680,10 +578,9 @@ function submitSymptomesPassesForm(event) {
 
 function submitContactARisqueForm(event) {
     event.preventDefault()
-    var contactARisque = event.target.elements['contact_a_risque'].checked
-    questionnaire.setContactARisque(contactARisque)
+    questionnaire.contact_a_risque = event.target.elements['contact_a_risque'].checked
     stockageLocal.enregistrer(questionnaire)
-    if (contactARisque) {
+    if (questionnaire.contact_a_risque) {
         navigation.goToPage('conseilscontactarisque')
     } else {
         navigation.goToPage('conseils')
