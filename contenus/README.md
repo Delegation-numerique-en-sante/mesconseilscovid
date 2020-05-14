@@ -25,20 +25,20 @@ Question : [titre](question_résidence_titre.md), [libellé](question_résidence
 
 Conseils :
 
-Si [Symptômes actuels](#symptômes-actuels), on n’affiche rien.
-
-Si le département est `rouge`, on affiche [conseils_département_rouge.md](conseils_département_rouge.md).
-
-Si le département est `vert`, on affiche [conseils_département_vert.md](conseils_département_vert.md).
-
-Quelle que soit la couleur, on affiche [conseils_département_défaut.md](conseils_département_défaut.md).
+1. [conseils_département_rouge.md](conseils_département_rouge.md) ou [conseils_département_vert.md](conseils_département_vert.md) selon la [Couleur](#couleur) du département
+2. [conseils_département_défaut.md](conseils_département_défaut.md).
 
 #### Activité
+
+Question : [titre](question_activité_pro_titre.md), [libellé](question_activité_pro_libellé.md)
+
+Sous-question (contact public) : [libellé](question_activité_pro_public_libellé.md)
+
+Sous-question (domaine santé) : [libellé](question_activité_pro_santé_libellé.md), [aide](question_activité_pro_santé_aide.md)
 
 #### Foyer
 
 #### Caractéristiques et antécédents
-
 
 #### Conseils d’ordre général
 
@@ -90,6 +90,10 @@ Sous-question (même classe) : [libellé](question_symptômes_contact_à_risque_
 
 
 ### Critères
+
+#### Couleur
+
+La couleur d’un département (`rouge` ou `verte` si on a les données) est déterminée en fonction de l’[Indicateurs d’activité épidémique vert/rouge](https://www.data.gouv.fr/fr/datasets/indicateurs-dactivite-epidemique-covid-19-par-departement/) (fichier `donnees-carte-synthese-tricolore.json`, attention il est cumulatif au fil du temps).
 
 #### Antécédents
 
