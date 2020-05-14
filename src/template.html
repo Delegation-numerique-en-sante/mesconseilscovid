@@ -406,11 +406,43 @@
                         {{ question_symptômes_contact_à_risque_libellé }}
                     </span>
                 </label>
-                <div class="details">
-                    <span>
-                        {{ question_symptômes_contact_à_risque_aide }}
-                    </span>
-                </div>
+            </div>
+            <div class="secondary disabled">
+                <input id="contact_a_risque_meme_lieu_de_vie" type="checkbox" name="contact_a_risque_meme_lieu_de_vie" disabled>
+                <label for="contact_a_risque_meme_lieu_de_vie">
+                    <span>{{ question_symptômes_contact_à_risque_même_lieu_de_vie_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="contact_a_risque_contact_direct" type="checkbox" name="contact_a_risque_contact_direct" disabled>
+                <label for="contact_a_risque_contact_direct">
+                    <span>{{ question_symptômes_contact_à_risque_contact_direct_libellé }}</span>
+                </label>
+                <div class="details">{{ question_symptômes_contact_à_risque_contact_direct_aide }}</div>
+            </div>
+            <div class="secondary disabled">
+                <input id="contact_a_risque_actes" type="checkbox" name="contact_a_risque_actes" disabled>
+                <label for="contact_a_risque_actes">
+                    <span>{{ question_symptômes_contact_à_risque_actes_libellé }}</span>
+                </label>
+                <div class="details">{{ question_symptômes_contact_à_risque_actes_aide }}</div>
+            </div>
+            <div class="secondary disabled">
+                <input id="contact_a_risque_espace_confine" type="checkbox" name="contact_a_risque_espace_confine" disabled>
+                <label for="contact_a_risque_espace_confine">
+                    <span>{{ question_symptômes_contact_à_risque_espace_confiné_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="contact_a_risque_meme_classe" type="checkbox" name="contact_a_risque_meme_classe" disabled>
+                <label for="contact_a_risque_meme_classe">
+                    <span>{{ question_symptômes_contact_à_risque_même_classe_libellé }}</span>
+                </label>
+            </div>
+            <div class="details">
+                <span>
+                    {{ question_symptômes_contact_à_risque_aide }}
+                </span>
             </div>
         </fieldset>
         <div class="form-controls">

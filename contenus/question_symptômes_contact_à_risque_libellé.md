@@ -1,1 +1,1 @@
-<!---->J’ai eu un <strong>contact à risque</strong><sup>*</sup> avec une personne COVID confirmée
+<!---->J’ai passé du temps avec une personne <b>COVID confirmée</b> (sans mesure de protection dédiée<sup>*</sup>)

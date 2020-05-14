@@ -775,6 +775,23 @@ function geolocalisation(event) {
     )
 }
 
+function enableOrDisableSecondaryFields(form, primary) {
+    var primaryDisabled = !primary.checked
+    ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
+        var secondary = elem.querySelector('input')
+        if (secondary.checked && primaryDisabled) {
+            secondary.checked = false
+            secondary.dispatchEvent(new Event('change'))
+        }
+        secondary.disabled = primaryDisabled
+        if (primaryDisabled) {
+            elem.classList.add('disabled')
+        } else {
+            elem.classList.remove('disabled')
+        }
+    })
+}
+
 function hideElement(element) {
     element.setAttribute('hidden', '')
     element.classList.remove('visible')
@@ -1162,28 +1179,14 @@ var PageScripts = function () {
     }
 
     this.activitepro = function (form) {
-        var primary = form.elements['activite_pro']
-        function enableOrDisableSecondaryFields() {
-            var primaryDisabled = !primary.checked
-            ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
-                var secondary = elem.querySelector('input')
-                if (secondary.checked && primaryDisabled) {
-                    secondary.checked = false
-                    secondary.dispatchEvent(new Event('change'))
-                }
-                secondary.disabled = primaryDisabled
-                if (primaryDisabled) {
-                    elem.classList.add('disabled')
-                } else {
-                    elem.classList.remove('disabled')
-                }
-            })
-        }
         preloadCheckboxForm(form, 'activite_pro')
         preloadCheckboxForm(form, 'activite_pro_public')
         preloadCheckboxForm(form, 'activite_pro_sante')
-        enableOrDisableSecondaryFields()
-        primary.addEventListener('click', enableOrDisableSecondaryFields)
+        var primary = form.elements['activite_pro']
+        enableOrDisableSecondaryFields(form, primary)
+        primary.addEventListener('click', function () {
+            enableOrDisableSecondaryFields(form, primary)
+        })
         form.addEventListener('submit', submitActiviteProForm)
     }
 
@@ -1233,6 +1236,11 @@ var PageScripts = function () {
     this.contactarisque = function (form) {
         var button = form.querySelector('input[type=submit]')
         preloadCheckboxForm(form, 'contact_a_risque')
+        var primary = form.elements['contact_a_risque']
+        enableOrDisableSecondaryFields(form, primary)
+        primary.addEventListener('click', function () {
+            enableOrDisableSecondaryFields(form, primary)
+        })
         toggleFormButtonOnCheck(form, button.value, 'Terminer')
         form.addEventListener('submit', submitContactARisqueForm)
     }
