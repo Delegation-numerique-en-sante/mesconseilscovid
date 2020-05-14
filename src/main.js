@@ -1132,15 +1132,15 @@ var Navigation = function () {
         document.location.hash = name
     }
 
-    this.loadPage = function (name) {
+    this.loadPage = function (pageName) {
         var page = document.querySelector('section#page')
-        var section = document.querySelector('#' + name)
+        var section = document.querySelector('#' + pageName)
         var clone = section.cloneNode(true)
         page.innerHTML = '' // Flush the current content.
         var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
         element.scrollIntoView({ behavior: 'smooth' })
 
-        pageInits[name]()
+        pageScripts[pageName] && pageScripts[pageName](element)
 
         var customPageEvent = document.createEvent('CustomEvent')
         customPageEvent.initCustomEvent('pageChanged', true, true, name)
@@ -1149,11 +1149,8 @@ var Navigation = function () {
 }
 navigation = new Navigation()
 
-var PageInits = function () {
-    this.introduction = function () {}
-
-    this.residence = function () {
-        var form = document.getElementById('residence-form')
+var PageScripts = function () {
+    this.residence = function (form) {
         preloadForm(form, 'departement')
         form.addEventListener('submit', submitResidenceForm)
         document
@@ -1161,8 +1158,7 @@ var PageInits = function () {
             .addEventListener('click', geolocalisation)
     }
 
-    this.activitepro = function () {
-        var form = document.getElementById('activite-pro-form')
+    this.activitepro = function (form) {
         var primary = form.elements['activite_pro']
         function enableOrDisableSecondaryFields() {
             var primaryDisabled = !primary.checked
@@ -1175,8 +1171,7 @@ var PageInits = function () {
                 secondary.disabled = primaryDisabled
                 if (primaryDisabled) {
                     elem.classList.add('disabled')
-                }
-                else {
+                } else {
                     elem.classList.remove('disabled')
                 }
             })
@@ -1189,15 +1184,13 @@ var PageInits = function () {
         form.addEventListener('submit', submitActiviteProForm)
     }
 
-    this.foyer = function () {
-        var form = document.getElementById('foyer-form')
+    this.foyer = function (form) {
         preloadCheckboxForm(form, 'foyer_enfants')
         preloadCheckboxForm(form, 'foyer_fragile')
         form.addEventListener('submit', submitFoyerForm)
     }
 
-    this.caracteristiques = function () {
-        var form = document.getElementById('caracteristiques-form')
+    this.caracteristiques = function (form) {
         preloadCheckboxForm(form, 'sup65')
         preloadCheckboxForm(form, 'grossesse_3e_trimestre')
         preloadForm(form, 'taille')
@@ -1205,8 +1198,7 @@ var PageInits = function () {
         form.addEventListener('submit', submitCaracteristiquesForm)
     }
 
-    this.antecedents = function () {
-        var form = document.getElementById('antecedents-form')
+    this.antecedents = function (form) {
         var button = form.querySelector('input[type=submit]')
         preloadCheckboxForm(form, 'antecedent_cardio')
         preloadCheckboxForm(form, 'antecedent_diabete')
@@ -1221,62 +1213,38 @@ var PageInits = function () {
         form.addEventListener('submit', submitAntecedentsForm)
     }
 
-    this.symptomesactuels = function () {
-        var form = document.getElementById('symptomes-actuels-form')
+    this.symptomesactuels = function (form) {
         var button = form.querySelector('input[type=submit]')
         preloadCheckboxForm(form, 'symptomes_actuels')
         toggleFormButtonOnCheck(form, button.value, 'Terminer')
         form.addEventListener('submit', submitSymptomesActuelsForm)
     }
 
-    this.symptomespasses = function () {
-        var form = document.getElementById('symptomes-passes-form')
+    this.symptomespasses = function (form) {
         var button = form.querySelector('input[type=submit]')
         preloadCheckboxForm(form, 'symptomes_passes')
         toggleFormButtonOnCheck(form, button.value, 'Terminer')
         form.addEventListener('submit', submitSymptomesPassesForm)
     }
 
-    this.contactarisque = function () {
-        var form = document.getElementById('contact-a-risque-form')
+    this.contactarisque = function (form) {
         var button = form.querySelector('input[type=submit]')
         preloadCheckboxForm(form, 'contact_a_risque')
         toggleFormButtonOnCheck(form, button.value, 'Terminer')
         form.addEventListener('submit', submitContactARisqueForm)
     }
 
-    this.conseils = function () {
-        displayConseils(document.getElementById('conseils-block'))
-        document.getElementById('back-button').addEventListener('click', function () {
-            navigation.goToPage('residence')
-        })
+    this.conseils = function (element) {
+        displayConseils(element)
     }
 
-    this.conseilssymptomesactuels = function () {
-        document.getElementById('back-button').addEventListener('click', function () {
-            navigation.goToPage('residence')
-        })
+    this.conseilssymptomespasses = function (element) {
+        displayConseilsSymptomesPasses(element)
     }
 
-    this.conseilssymptomespasses = function () {
-        displayConseilsSymptomesPasses(
-            document.getElementById('conseils-symptomes-passes-block')
-        )
-        document.getElementById('back-button').addEventListener('click', function () {
-            navigation.goToPage('residence')
-        })
+    this.conseilscontactarisque = function (element) {
+        displayConseilsContactARisque(element)
     }
-
-    this.conseilscontactarisque = function () {
-        displayConseilsContactARisque(
-            document.getElementById('conseils-contact-a-risque-block')
-        )
-        document.getElementById('back-button').addEventListener('click', function () {
-            navigation.goToPage('residence')
-        })
-    }
-
-    this.conditionsutilisation = function () {}
 }
 
-pageInits = new PageInits()
+pageScripts = new PageScripts()
