@@ -52,7 +52,7 @@ Le service s’appuie sur les données que vous déclarez pour personnaliser les
 
 Ces données sont traitées, le temps de fournir la recommandation appropriée et sur la base de votre consentement.
 
-Ces données à caractère personnel sont stockées sur votre navigateur. Le ministère des solidarités et de la santé n’a pas accès à ces données. Elles sont automatiquement supprimées à la fermeture de votre navigateur internet.
+Ces données à caractère personnel sont stockées sur votre navigateur. Le ministère des solidarités et de la santé n’a pas accès à ces données.
 
 En cours de navigation, vous pouvez supprimer ces données en cliquant sur le bouton prévu à cet effet en bas de chaque écran.
 
