@@ -1,6 +1,6 @@
 # Mes Conseils Covid
 
-## Pour que chacun puisse agir contre le virus.
+## Des conseils personnalisés pour agir contre le virus
 
 https://mesconseilscovid.sante.gouv.fr/
 
