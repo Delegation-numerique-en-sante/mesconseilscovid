@@ -10,7 +10,7 @@ install:  ## Install Python dependencies contained in `requirements.txt`.
 	python3 -m pip install -r requirements.txt
 
 build:  ## Build the index from `template.html` + contenus markdown files.
-	python3 build.py index
+	python3 build.py all
 
 autobuild:  ## Serve the `src` folder _without_ `https` but with build on file change.
 	python3 autobuild.py
