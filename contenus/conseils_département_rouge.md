@@ -1,6 +1,5 @@
 <p class="couleur couleur-rouge">
-    Votre département est en niveau <strong>rouge</strong>.
-    Vous devez prendre des mesures particulières.
+    Votre département est en niveau <strong>rouge</strong>, la circulation épidémique est élevée et des mesures spécifiques sont appliquées.
 </p>
 
 Vous pouvez consulter à l’adresse suivante les **consignes
