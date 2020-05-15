@@ -1,4 +1,4 @@
-describe('Navigation', function () {
+describe('Navigation générale', function () {
     it('page inconnue renvoie au début', function () {
         chai.expect(navigation.redirectIfMissingData('foo', {})).to.equal(
             'introduction'
@@ -12,8 +12,14 @@ describe('Navigation', function () {
         chai.expect(navigation.redirectIfMissingData('conditionsutilisation', {})).to.be
             .undefined
     })
+    it('redirige vers l’accueil si nouvelle version disponible', function () {
+        chai.expect(
+            navigation.redirectIfMissingData('nouvelle-version-disponible', {})
+        ).to.equal('introduction')
+    })
+})
 
-    // Question 1 : mon lieu de résidence
+describe('Navigation lieu de résidence', function () {
     it('ok d’aller à la question 1', function () {
         chai.expect(navigation.redirectIfMissingData('residence', {})).to.be.undefined
     })
@@ -24,8 +30,9 @@ describe('Navigation', function () {
             })
         ).to.be.undefined
     })
+})
 
-    // Question 2 : mon activité
+describe('Navigation mon activité', function () {
     it('redirige vers l’accueil si réponse 1 manquante', function () {
         chai.expect(navigation.redirectIfMissingData('activitepro', {})).to.equal(
             'introduction'
@@ -44,8 +51,9 @@ describe('Navigation', function () {
             })
         ).to.be.undefined
     })
+})
 
-    // Question 3 : mon foyer
+describe('Navigation mon foyer', function () {
     it('redirige vers question 2 si réponse manquante', function () {
         chai.expect(
             navigation.redirectIfMissingData('foyer', { departement: '80' })
@@ -68,8 +76,9 @@ describe('Navigation', function () {
             })
         ).to.be.undefined
     })
+})
 
-    // Question 4 : mes caractéristiques
+describe('Navigation mes caractéristiques', function () {
     it('redirige vers question 3 si réponse manquante', function () {
         chai.expect(
             navigation.redirectIfMissingData('caracteristiques', {
@@ -97,8 +106,9 @@ describe('Navigation', function () {
             })
         ).to.be.undefined
     })
+})
 
-    // Question 5 : mes antécédents
+describe('Navigation mes antécédents', function () {
     it('redirige vers question 4 si réponse manquante', function () {
         chai.expect(
             navigation.redirectIfMissingData('antecedents', {
@@ -129,8 +139,9 @@ describe('Navigation', function () {
             })
         ).to.be.undefined
     })
+})
 
-    // Question 6 : mes symptômes actuels
+describe('Navigation mes symptômes actuels', function () {
     it('redirige vers question 5 si réponse manquante', function () {
         chai.expect(
             navigation.redirectIfMissingData('symptomesactuels', {
@@ -164,8 +175,9 @@ describe('Navigation', function () {
             })
         ).to.be.undefined
     })
+})
 
-    // Question 7 : mes symptômes passés
+describe('Navigation mes symptômes passés', function () {
     it('redirige vers question 6 si réponse manquante', function () {
         chai.expect(
             navigation.redirectIfMissingData('symptomespasses', {
@@ -214,8 +226,9 @@ describe('Navigation', function () {
             })
         ).to.equal('conseilssymptomesactuels')
     })
+})
 
-    // Question 8 : mes contacts à risque
+describe('Navigation mes contacts à risque', function () {
     it('redirige vers question 7 si réponse manquante', function () {
         chai.expect(
             navigation.redirectIfMissingData('contactarisque', {
@@ -280,8 +293,9 @@ describe('Navigation', function () {
             })
         ).to.equal('conseilssymptomespasses')
     })
+})
 
-    // Sortie 1
+describe('Navigation Sortie 1', function () {
     it('ok d’aller à sortie 1 si symptômes actuels', function () {
         chai.expect(
             navigation.redirectIfMissingData('conseilssymptomesactuels', {
@@ -342,8 +356,9 @@ describe('Navigation', function () {
             })
         ).to.equal('conseilssymptomesactuels')
     })
+})
 
-    // Sortie 2
+describe('Navigation Sortie 2', function () {
     it('ok d’aller à sortie 2 si symptômes passés', function () {
         chai.expect(
             navigation.redirectIfMissingData('conseilssymptomespasses', {
@@ -409,8 +424,9 @@ describe('Navigation', function () {
             })
         ).to.equal('conseilssymptomespasses')
     })
+})
 
-    // Sortie 3
+describe('Navigation Sortie 3', function () {
     it('ok d’aller à sortie 3 si symptômes passés', function () {
         chai.expect(
             navigation.redirectIfMissingData('conseilscontactarisque', {
@@ -481,8 +497,9 @@ describe('Navigation', function () {
             })
         ).to.equal('conseilscontactarisque')
     })
+})
 
-    // Sortie 4
+describe('Navigation Sortie 4', function () {
     it('ok d’aller à sortie 4 si ni symptôme ni contact', function () {
         chai.expect(
             navigation.redirectIfMissingData('conseils', {

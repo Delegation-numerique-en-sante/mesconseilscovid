@@ -755,108 +755,6 @@ function geolocalisation(event) {
     )
 }
 
-function displayDepartementConseils(data, element) {
-    utils.displayElement(element, 'conseils-departement')
-    if (data.couleur === 'rouge') {
-        utils.displayElement(element, 'conseils-departement-rouge')
-    }
-    if (data.couleur === 'vert') {
-        utils.displayElement(element, 'conseils-departement-vert')
-    }
-    var nomDepartement = element.querySelector('#nom-departement')
-    nomDepartement.innerText = carteDepartements.nom(data.departement)
-    var lienPrefecture = element.querySelector('#lien-prefecture')
-    lienPrefecture.setAttribute(
-        'href',
-        carteDepartements.lien_prefecture(data.departement)
-    )
-}
-
-function displayActiviteProConseils(data, element) {
-    if (data.activite_pro || data.activite_pro_public || data.activite_pro_sante) {
-        utils.displayElement(element, 'conseils-activite')
-        if (data.activite_pro) {
-            utils.displayElement(element, 'conseils-activite-pro')
-        }
-        if (data.activite_pro_public) {
-            utils.displayElement(element, 'conseils-activite-pro-public')
-        }
-        if (data.activite_pro_sante) {
-            utils.displayElement(element, 'conseils-activite-pro-sante')
-        }
-    }
-}
-
-function displayFoyerConseils(data, element) {
-    if (data.foyer_enfants || data.foyer_fragile) {
-        utils.displayElement(element, 'conseils-foyer')
-        if (data.foyer_enfants && data.foyer_fragile) {
-            utils.displayElement(element, 'conseils-foyer-enfants-fragile')
-            return
-        }
-        if (data.foyer_enfants) {
-            utils.displayElement(element, 'conseils-foyer-enfants')
-        }
-        if (data.foyer_fragile) {
-            utils.displayElement(element, 'conseils-foyer-fragile')
-        }
-    }
-}
-
-function displayCaracteristiquesAntecedentsConseils(data, element) {
-    if (
-        data.sup65 ||
-        data.imc > 30 ||
-        data.antecedents ||
-        data.antecedent_chronique_autre
-    ) {
-        utils.displayElement(element, 'conseils-caracteristiques')
-        if (data.sup65 || data.imc > 30 || data.antecedents) {
-            utils.displayElement(element, 'conseils-caracteristiques-antecedents')
-        }
-        if (data.antecedent_chronique_autre) {
-            utils.displayElement(element, 'conseils-antecedents-chroniques-autres')
-        }
-    }
-}
-
-function displayGeneralConseils(data, element) {
-    utils.displayElement(element, 'conseils-generaux')
-}
-
-function displayConseils(element) {
-    // Hide all conseils that might have been made visible on previous runs.
-    ;[].forEach.call(element.querySelectorAll('.visible'), utils.hideElement)
-    var algorithme = new Algorithme(questionnaire, carteDepartements)
-    var data = algorithme.getData()
-    displayDepartementConseils(data, element)
-    displayActiviteProConseils(data, element)
-    displayFoyerConseils(data, element)
-    displayCaracteristiquesAntecedentsConseils(data, element)
-    displayGeneralConseils(data, element)
-}
-
-function displayConseilsSymptomesPasses(element) {
-    // Hide all conseils that might have been made visible on previous runs.
-    ;[].forEach.call(element.querySelectorAll('.visible'), utils.hideElement)
-    var algorithme = new Algorithme(questionnaire, carteDepartements)
-    var data = algorithme.getData()
-    if (data.risques) {
-        utils.displayElement(element, 'conseils-symptomes-passes-avec-risques')
-    } else {
-        utils.displayElement(element, 'conseils-symptomes-passes-sans-risques')
-    }
-    displayDepartementConseils(data, element)
-}
-
-function displayConseilsContactARisque(element) {
-    // Hide all conseils that might have been made visible on previous runs.
-    ;[].forEach.call(element.querySelectorAll('.visible'), utils.hideElement)
-    var algorithme = new Algorithme(questionnaire, carteDepartements)
-    var data = algorithme.getData()
-    displayDepartementConseils(data, element)
-}
-
 var Algorithme = function (questionnaire, carteDepartements) {
     this.questionnaire = questionnaire
     this.carteDepartements = carteDepartements
@@ -902,6 +800,82 @@ var Algorithme = function (questionnaire, carteDepartements) {
             symptomes: this.hasSymptomes(data),
             risques: this.hasRisques(data),
         })
+    }
+
+    this.departementBlockNamesToDisplay = function (data) {
+        var blockNames = []
+        blockNames.push('conseils-departement')
+        if (data.couleur === 'rouge') {
+            blockNames.push('conseils-departement-rouge')
+        }
+        if (data.couleur === 'vert') {
+            blockNames.push('conseils-departement-vert')
+        }
+        return blockNames
+    }
+
+    this.activiteProBlockNamesToDisplay = function (data) {
+        var blockNames = []
+        if (data.activite_pro || data.activite_pro_public || data.activite_pro_sante) {
+            blockNames.push('conseils-activite')
+            if (data.activite_pro) {
+                blockNames.push('conseils-activite-pro')
+            }
+            if (data.activite_pro_public) {
+                blockNames.push('conseils-activite-pro-public')
+            }
+            if (data.activite_pro_sante) {
+                blockNames.push('conseils-activite-pro-sante')
+            }
+        }
+        return blockNames
+    }
+
+    this.foyerBlockNamesToDisplay = function (data) {
+        var blockNames = []
+        if (data.foyer_enfants || data.foyer_fragile) {
+            blockNames.push('conseils-foyer')
+            if (data.foyer_enfants && data.foyer_fragile) {
+                blockNames.push('conseils-foyer-enfants-fragile')
+                return blockNames
+            }
+            if (data.foyer_enfants) {
+                blockNames.push('conseils-foyer-enfants')
+            }
+            if (data.foyer_fragile) {
+                blockNames.push('conseils-foyer-fragile')
+            }
+        }
+        return blockNames
+    }
+
+    this.caracteristiquesAntecedentsBlockNamesToDisplay = function (data) {
+        var blockNames = []
+        if (
+            data.sup65 ||
+            data.imc > 30 ||
+            data.antecedents ||
+            data.antecedent_chronique_autre
+        ) {
+            blockNames.push('conseils-caracteristiques')
+            if (data.sup65 || data.imc > 30 || data.antecedents) {
+                blockNames.push('conseils-caracteristiques-antecedents')
+            }
+            if (data.antecedent_chronique_autre) {
+                blockNames.push('conseils-antecedents-chroniques-autres')
+            }
+        }
+        return blockNames
+    }
+
+    this.symptomesPassesBlockNamesToDisplay = function (data) {
+        var blockNames = []
+        if (data.risques) {
+            blockNames.push('conseils-symptomes-passes-avec-risques')
+        } else {
+            blockNames.push('conseils-symptomes-passes-sans-risques')
+        }
+        return blockNames
     }
 }
 
@@ -1313,15 +1287,81 @@ var OnPageLoadScripts = function () {
     }
 
     this.conseils = function (element, pageName) {
-        displayConseils(element)
+        // Hide all conseils that might have been made visible on previous runs.
+        ;[].forEach.call(element.querySelectorAll('.visible'), utils.hideElement)
+
+        // Display appropriate conseils.
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        var data = algorithme.getData()
+
+        var blockNames = algorithme.departementBlockNamesToDisplay(data)
+        blockNames = blockNames.concat(algorithme.activiteProBlockNamesToDisplay(data))
+        blockNames = blockNames.concat(algorithme.foyerBlockNamesToDisplay(data))
+        blockNames = blockNames.concat(
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(data)
+        )
+
+        blockNames.forEach(function (block) {
+            utils.displayElement(element, block)
+        })
+
+        // Dynamic data insertions.
+        var nomDepartement = element.querySelector('#nom-departement')
+        nomDepartement.innerText = carteDepartements.nom(data.departement)
+        var lienPrefecture = element.querySelector('#lien-prefecture')
+        lienPrefecture.setAttribute(
+            'href',
+            carteDepartements.lien_prefecture(data.departement)
+        )
     }
 
     this.conseilssymptomespasses = function (element, pageName) {
-        displayConseilsSymptomesPasses(element)
+        // Hide all conseils that might have been made visible on previous runs.
+        ;[].forEach.call(element.querySelectorAll('.visible'), utils.hideElement)
+
+        // Display appropriate conseils.
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        var data = algorithme.getData()
+
+        var blockNames = algorithme.symptomesPassesBlockNamesToDisplay(data)
+        blockNames = blockNames.concat(algorithme.departementBlockNamesToDisplay(data))
+
+        blockNames.forEach(function (block) {
+            utils.displayElement(element, block)
+        })
+
+        // Dynamic data insertions.
+        var nomDepartement = element.querySelector('#nom-departement')
+        nomDepartement.innerText = carteDepartements.nom(data.departement)
+        var lienPrefecture = element.querySelector('#lien-prefecture')
+        lienPrefecture.setAttribute(
+            'href',
+            carteDepartements.lien_prefecture(data.departement)
+        )
     }
 
     this.conseilscontactarisque = function (element, pageName) {
-        displayConseilsContactARisque(element)
+        // Hide all conseils that might have been made visible on previous runs.
+        ;[].forEach.call(element.querySelectorAll('.visible'), utils.hideElement)
+
+        // Display appropriate conseils.
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        var data = algorithme.getData()
+
+        var blockNames = algorithme.departementBlockNamesToDisplay(data)
+
+        blockNames.forEach(function (block) {
+            utils.displayElement(element, block)
+        })
+
+        // Dynamic data insertions.
+        var nomDepartement = element.querySelector('#nom-departement')
+        nomDepartement.innerText = carteDepartements.nom(data.departement)
+        var lienPrefecture = element.querySelector('#lien-prefecture')
+        lienPrefecture.setAttribute(
+            'href',
+            carteDepartements.lien_prefecture(data.departement)
+        )
     }
 }
 

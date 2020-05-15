@@ -1,4 +1,12 @@
 describe('Questionnaire', function () {
+    beforeEach(function () {
+        questionnaire.resetData()
+    })
+
+    afterEach(function () {
+        questionnaire.resetData()
+    })
+
     it('Le questionnaire est vide par défaut', function () {
         chai.expect(questionnaire.getData()).to.deep.equal({
             departement: undefined,
@@ -26,6 +34,7 @@ describe('Questionnaire', function () {
         })
         chai.expect(questionnaire.isComplete()).to.equal(false)
     })
+
     it('Le questionnaire peut être partiellement rempli', function () {
         var data = {
             departement: '01',
@@ -34,6 +43,7 @@ describe('Questionnaire', function () {
         chai.expect(questionnaire.getData()).to.include(data)
         chai.expect(questionnaire.isComplete()).to.equal(false)
     })
+
     it('Le questionnaire peut être partiellement vidé', function () {
         var data = {
             departement: '01',
@@ -44,6 +54,7 @@ describe('Questionnaire', function () {
             departement: undefined,
         })
     })
+
     it('Le questionnaire peut être complètement rempli', function () {
         var data = {
             departement: '34',
@@ -73,6 +84,7 @@ describe('Questionnaire', function () {
         chai.expect(questionnaire.getData()).to.deep.equal(data)
         chai.expect(questionnaire.isComplete()).to.equal(true)
     })
+
     it('Le questionnaire peut être complètement vidé', function () {
         var data = {
             departement: '34',
