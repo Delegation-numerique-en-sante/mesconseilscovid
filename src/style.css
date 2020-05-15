@@ -58,6 +58,11 @@ header h1 a:hover {
     text-decoration: underline;
 }
 
+.beta {
+    color: red;
+    font-size: small;
+}
+
 main {
     background-color: #f9f8f6;
     padding: 18px 15px 48px 15px;
@@ -126,6 +131,7 @@ fieldset ul {
 fieldset ul.no-list-style {
     list-style: none;
     padding: 0;
+    margin-top: 2rem;
 }
 fieldset .row {
     display: flex;
