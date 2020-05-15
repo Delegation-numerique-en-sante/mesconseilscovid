@@ -1,5 +1,5 @@
 <p class="couleur couleur-vert">
-    Votre département est en niveau <strong>vert</strong>.
+    Votre département est en niveau <strong>vert</strong>, cependant le virus circule toujours, maintenez les gestes barrières.
 </p>
 
 Vous pouvez consulter à l’adresse suivante les **consignes
