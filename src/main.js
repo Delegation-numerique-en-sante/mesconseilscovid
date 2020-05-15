@@ -1015,20 +1015,20 @@ var Navigation = function () {
         }
         var that = this
         var xhr = new XMLHttpRequest()
-        xhr.open('HEAD', 'main.js?' + new Date().getTime(), true)
+        xhr.open('GET', 'version.json?' + new Date().getTime(), true)
         xhr.setRequestHeader('Cache-Control', 'no-cache')
         xhr.onload = function () {
-            that.updateLastModified(xhr)
+            var jsonResponse = JSON.parse(xhr.responseText)
+            that.updateVersion(jsonResponse.version)
         }
         xhr.send()
     }
 
-    this.lastModified = null
+    this.currentVersion = null
 
-    this.updateLastModified = function (xhr) {
-        var lastModifiedHeader = xhr.getResponseHeader('Last-Modified')
-        if (this.lastModified === null || this.lastModified === lastModifiedHeader) {
-            this.lastModified = lastModifiedHeader
+    this.updateVersion = function (fetchedVersion) {
+        if (this.currentVersion === null || this.currentVersion === fetchedVersion) {
+            this.currentVersion = fetchedVersion
             return
         } else {
             var that = this
