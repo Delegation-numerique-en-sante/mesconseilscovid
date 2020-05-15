@@ -7,7 +7,7 @@ PORT = 8443
 
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, directory="src", **kwargs)
+        super().__init__(*args, directory="dist", **kwargs)
 
 
 httpd = HTTPServer((ADDRESS, PORT), Handler)

@@ -1,2 +1,4 @@
 key.pem
 cert.pem
+dist/
+.webassets-cache
