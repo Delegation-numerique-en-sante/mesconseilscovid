@@ -24,6 +24,7 @@ describe('Questionnaire', function () {
             symptomes_passes: undefined,
             contact_a_risque: undefined,
         })
+        chai.expect(questionnaire.isComplete()).to.equal(false)
     })
     it('Le questionnaire peut être partiellement rempli', function () {
         var data = {
@@ -31,6 +32,7 @@ describe('Questionnaire', function () {
         }
         questionnaire.fillData(data)
         chai.expect(questionnaire.getData()).to.include(data)
+        chai.expect(questionnaire.isComplete()).to.equal(false)
     })
     it('Le questionnaire peut être partiellement vidé', function () {
         var data = {
@@ -69,6 +71,7 @@ describe('Questionnaire', function () {
         }
         questionnaire.fillData(data)
         chai.expect(questionnaire.getData()).to.deep.equal(data)
+        chai.expect(questionnaire.isComplete()).to.equal(true)
     })
     it('Le questionnaire peut être complètement vidé', function () {
         var data = {
@@ -121,5 +124,6 @@ describe('Questionnaire', function () {
             symptomes_passes: undefined,
             contact_a_risque: undefined,
         })
+        chai.expect(questionnaire.isComplete()).to.equal(false)
     })
 })

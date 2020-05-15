@@ -464,6 +464,33 @@ var Questionnaire = function () {
             contact_a_risque: this.contact_a_risque,
         }
     }
+
+    this.isComplete = function () {
+        return (
+            typeof this.departement !== 'undefined' &&
+            typeof this.activite_pro !== 'undefined' &&
+            typeof this.activite_pro_public !== 'undefined' &&
+            typeof this.activite_pro_sante !== 'undefined' &&
+            typeof this.foyer_enfants !== 'undefined' &&
+            typeof this.foyer_fragile !== 'undefined' &&
+            typeof this.sup65 !== 'undefined' &&
+            typeof this.grossesse_3e_trimestre !== 'undefined' &&
+            typeof this.poids !== 'undefined' &&
+            typeof this.taille !== 'undefined' &&
+            typeof this.antecedent_cardio !== 'undefined' &&
+            typeof this.antecedent_diabete !== 'undefined' &&
+            typeof this.antecedent_respi !== 'undefined' &&
+            typeof this.antecedent_dialyse !== 'undefined' &&
+            typeof this.antecedent_cancer !== 'undefined' &&
+            typeof this.antecedent_immunodep !== 'undefined' &&
+            typeof this.antecedent_cirrhose !== 'undefined' &&
+            typeof this.antecedent_drepano !== 'undefined' &&
+            typeof this.antecedent_chronique_autre !== 'undefined' &&
+            typeof this.symptomes_actuels !== 'undefined' &&
+            typeof this.symptomes_passes !== 'undefined' &&
+            typeof this.contact_a_risque !== 'undefined'
+        )
+    }
 }
 var questionnaire = new Questionnaire()
 
@@ -557,10 +584,14 @@ function submitAntecedentsForm(event) {
 function submitSymptomesActuelsForm(event) {
     event.preventDefault()
     questionnaire.symptomes_actuels = event.target.elements['symptomes_actuels'].checked
-    stockageLocal.enregistrer(questionnaire)
     if (questionnaire.symptomes_actuels) {
+        // On complète manuellement le formulaire pour le rendre complet.
+        questionnaire.symptomes_passes = false
+        questionnaire.contact_a_risque = false
+        stockageLocal.enregistrer(questionnaire)
         navigation.goToPage('conseilssymptomesactuels')
     } else {
+        stockageLocal.enregistrer(questionnaire)
         navigation.goToPage('symptomespasses')
     }
 }
@@ -568,10 +599,13 @@ function submitSymptomesActuelsForm(event) {
 function submitSymptomesPassesForm(event) {
     event.preventDefault()
     questionnaire.symptomes_passes = event.target.elements['symptomes_passes'].checked
-    stockageLocal.enregistrer(questionnaire)
     if (questionnaire.symptomes_passes) {
+        // On complète manuellement le formulaire pour le rendre complet.
+        questionnaire.contact_a_risque = false
+        stockageLocal.enregistrer(questionnaire)
         navigation.goToPage('conseilssymptomespasses')
     } else {
+        stockageLocal.enregistrer(questionnaire)
         navigation.goToPage('contactarisque')
     }
 }
@@ -1064,6 +1098,19 @@ var Navigation = function () {
 navigation = new Navigation()
 
 var PageScripts = function () {
+    this.introduction = function (element) {
+        if (questionnaire.isComplete()) {
+            displayElement(element, 'js-questionnaire-full')
+            hideElement(element.querySelector('#js-questionnaire-empty'))
+            var mesConseilsLink = element.querySelector('#mes-conseils-link')
+            var target = navigation.redirectIfMissingData(
+                'findCorrectExit',
+                questionnaire
+            )
+            mesConseilsLink.setAttribute('href', '#' + target)
+        }
+    }
+
     this.residence = function (form) {
         preloadForm(form, 'departement')
         form.addEventListener('submit', submitResidenceForm)

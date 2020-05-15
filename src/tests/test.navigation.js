@@ -294,6 +294,18 @@ describe('Navigation', function () {
             })
         ).to.be.undefined
     })
+    it('redirige sortie 1 si symptômes actuels et target inconnu', function () {
+        chai.expect(
+            navigation.redirectIfMissingData('inconnu', {
+                departement: '80',
+                activite_pro: false,
+                foyer_enfants: false,
+                sup65: false,
+                antecedent_cardio: false,
+                symptomes_actuels: true,
+            })
+        ).to.equal('conseilssymptomesactuels')
+    })
     it('redirige sortie 2 -> 1 si symptômes actuels', function () {
         chai.expect(
             navigation.redirectIfMissingData('conseilssymptomespasses', {
@@ -344,6 +356,19 @@ describe('Navigation', function () {
                 symptomes_passes: true,
             })
         ).to.be.undefined
+    })
+    it('redirige sortie 2 si symptômes passés et target inconnu', function () {
+        chai.expect(
+            navigation.redirectIfMissingData('inconnu', {
+                departement: '80',
+                activite_pro: false,
+                foyer_enfants: false,
+                sup65: false,
+                antecedent_cardio: false,
+                symptomes_actuels: false,
+                symptomes_passes: true,
+            })
+        ).to.equal('conseilssymptomespasses')
     })
     it('redirige sortie 1 -> 2 si symptômes passés', function () {
         chai.expect(
@@ -399,6 +424,20 @@ describe('Navigation', function () {
                 contact_a_risque: true,
             })
         ).to.be.undefined
+    })
+    it('redirige sortie 3 si symptômes passés et target inconnu', function () {
+        chai.expect(
+            navigation.redirectIfMissingData('inconnu', {
+                departement: '80',
+                activite_pro: false,
+                foyer_enfants: false,
+                sup65: false,
+                antecedent_cardio: false,
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: true,
+            })
+        ).to.equal('conseilscontactarisque')
     })
     it('redirige sortie 1 -> 3 si contact à risque', function () {
         chai.expect(
@@ -457,6 +496,20 @@ describe('Navigation', function () {
                 contact_a_risque: false,
             })
         ).to.be.undefined
+    })
+    it('redirige sortie 4 si ni symptôme ni contact et target inconnu', function () {
+        chai.expect(
+            navigation.redirectIfMissingData('inconnu', {
+                departement: '80',
+                activite_pro: false,
+                foyer_enfants: false,
+                sup65: false,
+                antecedent_cardio: false,
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+            })
+        ).to.equal('conseils')
     })
     it('redirige sortie 1 -> 4 si ni symptôme ni contact', function () {
         chai.expect(

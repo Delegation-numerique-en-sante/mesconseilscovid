@@ -43,7 +43,11 @@
 <section id="introduction" hidden>
     <div id="introduction-block" class="block">
         {{ meta_introduction }}
-        <div>
+        <div id="js-questionnaire-full" class="form-controls" hidden>
+            <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
+            <a class="button button-full-width" href="" id="mes-conseils-link">Voir mes conseils</a>
+        </div>
+        <div id="js-questionnaire-empty">
             <a class="button button-full-width" href="#residence">Démarrer</a>
         </div>
     </div>
@@ -172,7 +176,7 @@
             </div>
         </fieldset>
         <div class="form-controls">
-            <a href="#introduction" class="back-button">Retour</a>
+            <a href="#introduction" class="back-button button-outline">Retour</a>
             <input type="submit" class="button" value="Continuer">
         </div>
     </form>
@@ -203,7 +207,7 @@
             </div>
         </fieldset>
         <div class="form-controls">
-            <a href="#residence" class="back-button">Retour</a>
+            <a href="#residence" class="back-button button-outline">Retour</a>
             <input type="submit" class="button" value="Continuer">
         </div>
     </form>
@@ -228,7 +232,7 @@
             </div>
         </fieldset>
         <div class="form-controls">
-            <a href="#activitepro" class="back-button">Retour</a>
+            <a href="#activitepro" class="back-button button-outline">Retour</a>
             <input type="submit" class="button" value="Continuer">
         </div>
     </form>
@@ -266,7 +270,7 @@
             <div class="details">{{ question_caractéristiques_taille_poids_aide }}</div>
         </fieldset>
         <div class="form-controls">
-            <a href="#foyer" class="back-button">Retour</a>
+            <a href="#foyer" class="back-button button-outline">Retour</a>
             <input type="submit" class="button" value="Continuer">
         </div>
     </form>
@@ -353,7 +357,7 @@
             </div>
         </fieldset>
         <div class="form-controls">
-            <a href="#caracteristiques" class="back-button">Retour</a>
+            <a href="#caracteristiques" class="back-button button-outline">Retour</a>
             <input type="submit" class="button" value="Aucun de ces éléments ne correspond à ma situation">
         </div>
     </form>
@@ -374,7 +378,7 @@
             </div>
         </fieldset>
         <div class="form-controls">
-            <a href="#antecedents" class="back-button">Retour</a>
+            <a href="#antecedents" class="back-button button-outline">Retour</a>
             <input type="submit" class="button" value="Je n’ai pas de symptômes actuellement">
         </div>
     </form>
@@ -395,7 +399,7 @@
             </div>
         </fieldset>
         <div class="form-controls">
-            <a href="#symptomesactuels" class="back-button">Retour</a>
+            <a href="#symptomesactuels" class="back-button button-outline">Retour</a>
             <input type="submit" class="button" value="Je n’ai pas eu de symptômes dans les 14 derniers jours">
         </div>
     </form>
@@ -452,7 +456,7 @@
             </div>
         </fieldset>
         <div class="form-controls">
-            <a href="#symptomespasses" class="back-button">Retour</a>
+            <a href="#symptomespasses" class="back-button button-outline">Retour</a>
             <input type="submit" class="button" value="Je n’ai pas eu de contact à risque">
         </div>
     </form>
@@ -527,7 +531,7 @@
             </div>
         </div>
         <div>
-            <a id="back-button" class="button button-full-width" href="#residence">Modifier mes informations personnelles</a>
+            <a id="back-button button-outline" class="button button-full-width" href="#residence">Modifier mes informations personnelles</a>
         </div>
     </div>
 </section>
@@ -552,7 +556,7 @@
             </div>
         </div>
         <div>
-            <a id="back-button" class="button button-full-width" href="#residence">Modifier mes informations personnelles</a>
+            <a id="back-button button-outline" class="button button-full-width" href="#residence">Modifier mes informations personnelles</a>
         </div>
     </div>
 </section>
@@ -610,7 +614,7 @@
             </div>
         </div>
         <div>
-            <a id="back-button" class="button button-full-width" href="#residence">Modifier mes informations personnelles</a>
+            <a id="back-button button-outline" class="button button-full-width" href="#residence">Modifier mes informations personnelles</a>
         </div>
     </div>
 </section>
@@ -662,7 +666,7 @@
             </div>
         </div>
         <div>
-            <a id="back-button" class="button button-full-width" href="#residence">Modifier mes informations personnelles</a>
+            <a id="back-button button-outline" class="button button-full-width" href="#residence">Modifier mes informations personnelles</a>
         </div>
     </div>
 </section>
