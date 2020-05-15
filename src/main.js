@@ -31,6 +31,73 @@ if (typeof Object.assign !== 'function') {
     })
 }
 
+var Utils = function () {
+    this.hideElement = function (element) {
+        element.setAttribute('hidden', '')
+        element.classList.remove('visible')
+    }
+
+    this.displayElement = function (element, id) {
+        var block = element.querySelector('#' + id)
+        block.removeAttribute('hidden')
+        block.classList.add('visible')
+
+        var customDisplayEvent = document.createEvent('CustomEvent')
+        customDisplayEvent.initCustomEvent('elementDisplayed:' + id, true, true, block)
+        document.dispatchEvent(customDisplayEvent)
+    }
+}
+var utils = new Utils()
+
+var FormUtils = function () {
+    this.preloadForm = function (form, key) {
+        var value = questionnaire.getData()[key]
+        if (typeof value !== 'undefined' && value !== '') {
+            form[key].value = value
+        }
+    }
+
+    this.preloadCheckboxForm = function (form, key) {
+        var value = questionnaire.getData()[key]
+        if (typeof value !== 'undefined' && value) {
+            form[key].checked = true
+        }
+    }
+
+    this.toggleFormButtonOnCheck = function (form, initialLabel, alternateLabel) {
+        var button = form.querySelector('input[type=submit]')
+        var checkboxes = [].slice.call(form.querySelectorAll('input[type=checkbox]'))
+        function updateSubmitButtonLabel(event) {
+            var hasChecks = checkboxes.some(function (checkbox) {
+                return checkbox.checked
+            })
+            button.value = hasChecks ? alternateLabel : initialLabel
+        }
+        updateSubmitButtonLabel()
+        checkboxes.forEach(function (elem) {
+            elem.addEventListener('change', updateSubmitButtonLabel)
+        })
+    }
+
+    this.enableOrDisableSecondaryFields = function (form, primary) {
+        var primaryDisabled = !primary.checked
+        ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
+            var secondary = elem.querySelector('input')
+            if (secondary.checked && primaryDisabled) {
+                secondary.checked = false
+                secondary.dispatchEvent(new Event('change'))
+            }
+            secondary.disabled = primaryDisabled
+            if (primaryDisabled) {
+                elem.classList.add('disabled')
+            } else {
+                elem.classList.remove('disabled')
+            }
+        })
+    }
+}
+var formUtils = new FormUtils()
+
 // Données privées, stockées uniquement en local
 var StockageLocal = function () {
     this.supprimer = function () {
@@ -494,35 +561,6 @@ var Questionnaire = function () {
 }
 var questionnaire = new Questionnaire()
 
-function preloadForm(form, key) {
-    var value = questionnaire.getData()[key]
-    if (typeof value !== 'undefined' && value !== '') {
-        form[key].value = value
-    }
-}
-
-function preloadCheckboxForm(form, key) {
-    var value = questionnaire.getData()[key]
-    if (typeof value !== 'undefined' && value) {
-        form[key].checked = true
-    }
-}
-
-function toggleFormButtonOnCheck(form, initialLabel, alternateLabel) {
-    var button = form.querySelector('input[type=submit]')
-    var checkboxes = [].slice.call(form.querySelectorAll('input[type=checkbox]'))
-    function updateSubmitButtonLabel(event) {
-        var hasChecks = checkboxes.some(function (checkbox) {
-            return checkbox.checked
-        })
-        button.value = hasChecks ? alternateLabel : initialLabel
-    }
-    updateSubmitButtonLabel()
-    checkboxes.forEach(function (elem) {
-        elem.addEventListener('change', updateSubmitButtonLabel)
-    })
-}
-
 function resetPrivateData(event) {
     event.preventDefault()
     questionnaire.resetData()
@@ -608,45 +646,14 @@ function geolocalisation(event) {
     )
 }
 
-function enableOrDisableSecondaryFields(form, primary) {
-    var primaryDisabled = !primary.checked
-    ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
-        var secondary = elem.querySelector('input')
-        if (secondary.checked && primaryDisabled) {
-            secondary.checked = false
-            secondary.dispatchEvent(new Event('change'))
-        }
-        secondary.disabled = primaryDisabled
-        if (primaryDisabled) {
-            elem.classList.add('disabled')
-        } else {
-            elem.classList.remove('disabled')
-        }
-    })
-}
-
-function hideElement(element) {
-    element.setAttribute('hidden', '')
-    element.classList.remove('visible')
-}
-
-function displayElement(element, id) {
-    var block = element.querySelector('#' + id)
-    block.removeAttribute('hidden')
-    block.classList.add('visible')
-
-    var customDisplayEvent = document.createEvent('CustomEvent')
-    customDisplayEvent.initCustomEvent('elementDisplayed:' + id, true, true, block)
-    document.dispatchEvent(customDisplayEvent)
-}
 
 function displayDepartementConseils(data, element) {
-    displayElement(element, 'conseils-departement')
+    utils.displayElement(element, 'conseils-departement')
     if (data.couleur === 'rouge') {
-        displayElement(element, 'conseils-departement-rouge')
+        utils.displayElement(element, 'conseils-departement-rouge')
     }
     if (data.couleur === 'vert') {
-        displayElement(element, 'conseils-departement-vert')
+        utils.displayElement(element, 'conseils-departement-vert')
     }
     var lienPrefecture = element.querySelector('#lien-prefecture')
     lienPrefecture.setAttribute(
@@ -657,31 +664,31 @@ function displayDepartementConseils(data, element) {
 
 function displayActiviteProConseils(data, element) {
     if (data.activite_pro || data.activite_pro_public || data.activite_pro_sante) {
-        displayElement(element, 'conseils-activite')
+        utils.displayElement(element, 'conseils-activite')
         if (data.activite_pro) {
-            displayElement(element, 'conseils-activite-pro')
+            utils.displayElement(element, 'conseils-activite-pro')
         }
         if (data.activite_pro_public) {
-            displayElement(element, 'conseils-activite-pro-public')
+            utils.displayElement(element, 'conseils-activite-pro-public')
         }
         if (data.activite_pro_sante) {
-            displayElement(element, 'conseils-activite-pro-sante')
+            utils.displayElement(element, 'conseils-activite-pro-sante')
         }
     }
 }
 
 function displayFoyerConseils(data, element) {
     if (data.foyer_enfants || data.foyer_fragile) {
-        displayElement(element, 'conseils-foyer')
+        utils.displayElement(element, 'conseils-foyer')
         if (data.foyer_enfants && data.foyer_fragile) {
-            displayElement(element, 'conseils-foyer-enfants-fragile')
+            utils.displayElement(element, 'conseils-foyer-enfants-fragile')
             return
         }
         if (data.foyer_enfants) {
-            displayElement(element, 'conseils-foyer-enfants')
+            utils.displayElement(element, 'conseils-foyer-enfants')
         }
         if (data.foyer_fragile) {
-            displayElement(element, 'conseils-foyer-fragile')
+            utils.displayElement(element, 'conseils-foyer-fragile')
         }
     }
 }
@@ -693,23 +700,23 @@ function displayCaracteristiquesAntecedentsConseils(data, element) {
         data.antecedents ||
         data.antecedent_chronique_autre
     ) {
-        displayElement(element, 'conseils-caracteristiques')
+        utils.displayElement(element, 'conseils-caracteristiques')
         if (data.sup65 || data.imc > 30 || data.antecedents) {
-            displayElement(element, 'conseils-caracteristiques-antecedents')
+            utils.displayElement(element, 'conseils-caracteristiques-antecedents')
         }
         if (data.antecedent_chronique_autre) {
-            displayElement(element, 'conseils-antecedents-chroniques-autres')
+            utils.displayElement(element, 'conseils-antecedents-chroniques-autres')
         }
     }
 }
 
 function displayGeneralConseils(data, element) {
-    displayElement(element, 'conseils-generaux')
+    utils.displayElement(element, 'conseils-generaux')
 }
 
 function displayConseils(element) {
     // Hide all conseils that might have been made visible on previous runs.
-    ;[].forEach.call(element.querySelectorAll('.visible'), hideElement)
+    ;[].forEach.call(element.querySelectorAll('.visible'), utils.hideElement)
     var algorithme = new Algorithme(questionnaire, carteDepartements)
     var data = algorithme.getData()
     displayDepartementConseils(data, element)
@@ -721,20 +728,20 @@ function displayConseils(element) {
 
 function displayConseilsSymptomesPasses(element) {
     // Hide all conseils that might have been made visible on previous runs.
-    ;[].forEach.call(element.querySelectorAll('.visible'), hideElement)
+    ;[].forEach.call(element.querySelectorAll('.visible'), utils.hideElement)
     var algorithme = new Algorithme(questionnaire, carteDepartements)
     var data = algorithme.getData()
     if (data.risques) {
-        displayElement(element, 'conseils-symptomes-passes-avec-risques')
+        utils.displayElement(element, 'conseils-symptomes-passes-avec-risques')
     } else {
-        displayElement(element, 'conseils-symptomes-passes-sans-risques')
+        utils.displayElement(element, 'conseils-symptomes-passes-sans-risques')
     }
     displayDepartementConseils(data, element)
 }
 
 function displayConseilsContactARisque(element) {
     // Hide all conseils that might have been made visible on previous runs.
-    ;[].forEach.call(element.querySelectorAll('.visible'), hideElement)
+    ;[].forEach.call(element.querySelectorAll('.visible'), utils.hideElement)
     var algorithme = new Algorithme(questionnaire, carteDepartements)
     var data = algorithme.getData()
     displayDepartementConseils(data, element)
@@ -931,7 +938,7 @@ var Navigation = function () {
                         that.forceReloadCurrentPageWithHash
                     )
                 })
-                displayElement(document, 'update-banner')
+                utils.displayElement(document, 'update-banner')
             } else {
                 var previousHash = document.location.hash
                 document.addEventListener('pageChanged:nouvelleversiondisponible', function (event) {
@@ -1099,8 +1106,8 @@ var onSubmitFormScripts = new OnSubmitFormScripts()
 var OnPageLoadScripts = function () {
     this.introduction = function (element, pageName) {
         if (questionnaire.isComplete()) {
-            displayElement(element, 'js-questionnaire-full')
-            hideElement(element.querySelector('#js-questionnaire-empty'))
+            utils.displayElement(element, 'js-questionnaire-full')
+            utils.hideElement(element.querySelector('#js-questionnaire-empty'))
             var mesConseilsLink = element.querySelector('#mes-conseils-link')
             var target = navigation.redirectIfMissingData(
                 'findCorrectExit',
@@ -1111,7 +1118,7 @@ var OnPageLoadScripts = function () {
     }
 
     this.residence = function (form, pageName) {
-        preloadForm(form, 'departement')
+        formUtils.preloadForm(form, 'departement')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
         document
             .getElementById('geolocalisation')
@@ -1119,69 +1126,69 @@ var OnPageLoadScripts = function () {
     }
 
     this.activitepro = function (form, pageName) {
-        preloadCheckboxForm(form, 'activite_pro')
-        preloadCheckboxForm(form, 'activite_pro_public')
-        preloadCheckboxForm(form, 'activite_pro_sante')
+        formUtils.preloadCheckboxForm(form, 'activite_pro')
+        formUtils.preloadCheckboxForm(form, 'activite_pro_public')
+        formUtils.preloadCheckboxForm(form, 'activite_pro_sante')
         var primary = form.elements['activite_pro']
-        enableOrDisableSecondaryFields(form, primary)
+        formUtils.enableOrDisableSecondaryFields(form, primary)
         primary.addEventListener('click', function () {
-            enableOrDisableSecondaryFields(form, primary)
+            formUtils.enableOrDisableSecondaryFields(form, primary)
         })
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
     this.foyer = function (form, pageName) {
-        preloadCheckboxForm(form, 'foyer_enfants')
-        preloadCheckboxForm(form, 'foyer_fragile')
+        formUtils.preloadCheckboxForm(form, 'foyer_enfants')
+        formUtils.preloadCheckboxForm(form, 'foyer_fragile')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
     this.caracteristiques = function (form, pageName) {
-        preloadCheckboxForm(form, 'sup65')
-        preloadCheckboxForm(form, 'grossesse_3e_trimestre')
-        preloadForm(form, 'taille')
-        preloadForm(form, 'poids')
+        formUtils.preloadCheckboxForm(form, 'sup65')
+        formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre')
+        formUtils.preloadForm(form, 'taille')
+        formUtils.preloadForm(form, 'poids')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
     this.antecedents = function (form, pageName) {
         var button = form.querySelector('input[type=submit]')
-        preloadCheckboxForm(form, 'antecedent_cardio')
-        preloadCheckboxForm(form, 'antecedent_diabete')
-        preloadCheckboxForm(form, 'antecedent_respi')
-        preloadCheckboxForm(form, 'antecedent_dialyse')
-        preloadCheckboxForm(form, 'antecedent_cancer')
-        preloadCheckboxForm(form, 'antecedent_immunodep')
-        preloadCheckboxForm(form, 'antecedent_cirrhose')
-        preloadCheckboxForm(form, 'antecedent_drepano')
-        preloadCheckboxForm(form, 'antecedent_chronique_autre')
-        toggleFormButtonOnCheck(form, button.value, 'Continuer')
+        formUtils.preloadCheckboxForm(form, 'antecedent_cardio')
+        formUtils.preloadCheckboxForm(form, 'antecedent_diabete')
+        formUtils.preloadCheckboxForm(form, 'antecedent_respi')
+        formUtils.preloadCheckboxForm(form, 'antecedent_dialyse')
+        formUtils.preloadCheckboxForm(form, 'antecedent_cancer')
+        formUtils.preloadCheckboxForm(form, 'antecedent_immunodep')
+        formUtils.preloadCheckboxForm(form, 'antecedent_cirrhose')
+        formUtils.preloadCheckboxForm(form, 'antecedent_drepano')
+        formUtils.preloadCheckboxForm(form, 'antecedent_chronique_autre')
+        formUtils.toggleFormButtonOnCheck(form, button.value, 'Continuer')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
     this.symptomesactuels = function (form, pageName) {
         var button = form.querySelector('input[type=submit]')
-        preloadCheckboxForm(form, 'symptomes_actuels')
-        toggleFormButtonOnCheck(form, button.value, 'Terminer')
+        formUtils.preloadCheckboxForm(form, 'symptomes_actuels')
+        formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
     this.symptomespasses = function (form, pageName) {
         var button = form.querySelector('input[type=submit]')
-        preloadCheckboxForm(form, 'symptomes_passes')
-        toggleFormButtonOnCheck(form, button.value, 'Terminer')
+        formUtils.preloadCheckboxForm(form, 'symptomes_passes')
+        formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
     this.contactarisque = function (form, pageName) {
         var button = form.querySelector('input[type=submit]')
-        preloadCheckboxForm(form, 'contact_a_risque')
+        formUtils.preloadCheckboxForm(form, 'contact_a_risque')
         var primary = form.elements['contact_a_risque']
-        enableOrDisableSecondaryFields(form, primary)
+        formUtils.enableOrDisableSecondaryFields(form, primary)
         primary.addEventListener('click', function () {
-            enableOrDisableSecondaryFields(form, primary)
+            formUtils.enableOrDisableSecondaryFields(form, primary)
         })
-        toggleFormButtonOnCheck(form, button.value, 'Terminer')
+        formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
