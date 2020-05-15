@@ -523,104 +523,6 @@ function toggleFormButtonOnCheck(form, initialLabel, alternateLabel) {
     })
 }
 
-function submitResidenceForm(event) {
-    event.preventDefault()
-    questionnaire.departement = event.target.elements['departement'].value
-    stockageLocal.enregistrer(questionnaire)
-    navigation.goToPage('activitepro')
-}
-
-function submitActiviteProForm(event) {
-    event.preventDefault()
-    questionnaire.activite_pro = event.target.elements['activite_pro'].checked
-    questionnaire.activite_pro_public =
-        event.target.elements['activite_pro_public'].checked
-    questionnaire.activite_pro_sante =
-        event.target.elements['activite_pro_sante'].checked
-    stockageLocal.enregistrer(questionnaire)
-    navigation.goToPage('foyer')
-}
-
-function submitFoyerForm(event) {
-    event.preventDefault()
-    questionnaire.foyer_enfants = event.target.elements['foyer_enfants'].checked
-    questionnaire.foyer_fragile = event.target.elements['foyer_fragile'].checked
-    stockageLocal.enregistrer(questionnaire)
-    navigation.goToPage('caracteristiques')
-}
-
-function submitCaracteristiquesForm(event) {
-    event.preventDefault()
-    questionnaire.sup65 = event.target.elements['sup65'].checked
-    questionnaire.grossesse_3e_trimestre =
-        event.target.elements['grossesse_3e_trimestre'].checked
-    questionnaire.poids = event.target.elements['poids'].value
-    questionnaire.taille = event.target.elements['taille'].value
-    stockageLocal.enregistrer(questionnaire)
-    navigation.goToPage('antecedents')
-}
-
-function submitAntecedentsForm(event) {
-    event.preventDefault()
-    questionnaire.antecedent_cardio = event.target.elements['antecedent_cardio'].checked
-    questionnaire.antecedent_diabete =
-        event.target.elements['antecedent_diabete'].checked
-    questionnaire.antecedent_respi = event.target.elements['antecedent_respi'].checked
-    questionnaire.antecedent_dialyse =
-        event.target.elements['antecedent_dialyse'].checked
-    questionnaire.antecedent_cancer = event.target.elements['antecedent_cancer'].checked
-    questionnaire.antecedent_immunodep =
-        event.target.elements['antecedent_immunodep'].checked
-    questionnaire.antecedent_cirrhose =
-        event.target.elements['antecedent_cirrhose'].checked
-    questionnaire.antecedent_drepano =
-        event.target.elements['antecedent_drepano'].checked
-    questionnaire.antecedent_chronique_autre =
-        event.target.elements['antecedent_chronique_autre'].checked
-    stockageLocal.enregistrer(questionnaire)
-    navigation.goToPage('symptomesactuels')
-}
-
-function submitSymptomesActuelsForm(event) {
-    event.preventDefault()
-    questionnaire.symptomes_actuels = event.target.elements['symptomes_actuels'].checked
-    if (questionnaire.symptomes_actuels) {
-        // On complète manuellement le formulaire pour le rendre complet.
-        questionnaire.symptomes_passes = false
-        questionnaire.contact_a_risque = false
-        stockageLocal.enregistrer(questionnaire)
-        navigation.goToPage('conseilssymptomesactuels')
-    } else {
-        stockageLocal.enregistrer(questionnaire)
-        navigation.goToPage('symptomespasses')
-    }
-}
-
-function submitSymptomesPassesForm(event) {
-    event.preventDefault()
-    questionnaire.symptomes_passes = event.target.elements['symptomes_passes'].checked
-    if (questionnaire.symptomes_passes) {
-        // On complète manuellement le formulaire pour le rendre complet.
-        questionnaire.contact_a_risque = false
-        stockageLocal.enregistrer(questionnaire)
-        navigation.goToPage('conseilssymptomespasses')
-    } else {
-        stockageLocal.enregistrer(questionnaire)
-        navigation.goToPage('contactarisque')
-    }
-}
-
-function submitContactARisqueForm(event) {
-    event.preventDefault()
-    questionnaire.contact_a_risque = event.target.elements['contact_a_risque'].checked
-    stockageLocal.enregistrer(questionnaire)
-    if (questionnaire.contact_a_risque) {
-        navigation.goToPage('conseilscontactarisque')
-    } else {
-        navigation.goToPage('conseils')
-    }
-}
-
 function resetPrivateData(event) {
     event.preventDefault()
     questionnaire.resetData()
@@ -1088,7 +990,7 @@ var Navigation = function () {
         var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
         element.scrollIntoView({ behavior: 'smooth' })
 
-        pageScripts[pageName] && pageScripts[pageName](element)
+        onPageLoadScripts[pageName] && onPageLoadScripts[pageName](element, pageName)
 
         var customPageEvent = document.createEvent('CustomEvent')
         customPageEvent.initCustomEvent('pageChanged', true, true, name)
@@ -1097,8 +999,111 @@ var Navigation = function () {
 }
 navigation = new Navigation()
 
-var PageScripts = function () {
-    this.introduction = function (element) {
+
+var OnSubmitFormScripts = function () {
+    this.residence = function (event) {
+        event.preventDefault()
+        questionnaire.departement = event.target.elements['departement'].value
+        stockageLocal.enregistrer(questionnaire)
+        navigation.goToPage('activitepro')
+    }
+
+    this.activitepro = function (event) {
+        event.preventDefault()
+        questionnaire.activite_pro = event.target.elements['activite_pro'].checked
+        questionnaire.activite_pro_public =
+            event.target.elements['activite_pro_public'].checked
+        questionnaire.activite_pro_sante =
+            event.target.elements['activite_pro_sante'].checked
+        stockageLocal.enregistrer(questionnaire)
+        navigation.goToPage('foyer')
+    }
+
+    this.foyer = function (event) {
+        event.preventDefault()
+        questionnaire.foyer_enfants = event.target.elements['foyer_enfants'].checked
+        questionnaire.foyer_fragile = event.target.elements['foyer_fragile'].checked
+        stockageLocal.enregistrer(questionnaire)
+        navigation.goToPage('caracteristiques')
+    }
+
+    this.caracteristiques = function (event) {
+        event.preventDefault()
+        questionnaire.sup65 = event.target.elements['sup65'].checked
+        questionnaire.grossesse_3e_trimestre =
+            event.target.elements['grossesse_3e_trimestre'].checked
+        questionnaire.poids = event.target.elements['poids'].value
+        questionnaire.taille = event.target.elements['taille'].value
+        stockageLocal.enregistrer(questionnaire)
+        navigation.goToPage('antecedents')
+    }
+
+    this.antecedents = function (event) {
+        event.preventDefault()
+        questionnaire.antecedent_cardio = event.target.elements['antecedent_cardio'].checked
+        questionnaire.antecedent_diabete =
+            event.target.elements['antecedent_diabete'].checked
+        questionnaire.antecedent_respi = event.target.elements['antecedent_respi'].checked
+        questionnaire.antecedent_dialyse =
+            event.target.elements['antecedent_dialyse'].checked
+        questionnaire.antecedent_cancer = event.target.elements['antecedent_cancer'].checked
+        questionnaire.antecedent_immunodep =
+            event.target.elements['antecedent_immunodep'].checked
+        questionnaire.antecedent_cirrhose =
+            event.target.elements['antecedent_cirrhose'].checked
+        questionnaire.antecedent_drepano =
+            event.target.elements['antecedent_drepano'].checked
+        questionnaire.antecedent_chronique_autre =
+            event.target.elements['antecedent_chronique_autre'].checked
+        stockageLocal.enregistrer(questionnaire)
+        navigation.goToPage('symptomesactuels')
+    }
+
+    this.symptomesactuels = function (event) {
+        event.preventDefault()
+        questionnaire.symptomes_actuels = event.target.elements['symptomes_actuels'].checked
+        if (questionnaire.symptomes_actuels) {
+            // On complète manuellement le formulaire pour le rendre complet.
+            questionnaire.symptomes_passes = false
+            questionnaire.contact_a_risque = false
+            stockageLocal.enregistrer(questionnaire)
+            navigation.goToPage('conseilssymptomesactuels')
+        } else {
+            stockageLocal.enregistrer(questionnaire)
+            navigation.goToPage('symptomespasses')
+        }
+    }
+
+    this.symptomespasses = function (event) {
+        event.preventDefault()
+        questionnaire.symptomes_passes = event.target.elements['symptomes_passes'].checked
+        if (questionnaire.symptomes_passes) {
+            // On complète manuellement le formulaire pour le rendre complet.
+            questionnaire.contact_a_risque = false
+            stockageLocal.enregistrer(questionnaire)
+            navigation.goToPage('conseilssymptomespasses')
+        } else {
+            stockageLocal.enregistrer(questionnaire)
+            navigation.goToPage('contactarisque')
+        }
+    }
+
+    this.contactarisque = function (event) {
+        event.preventDefault()
+        questionnaire.contact_a_risque = event.target.elements['contact_a_risque'].checked
+        stockageLocal.enregistrer(questionnaire)
+        if (questionnaire.contact_a_risque) {
+            navigation.goToPage('conseilscontactarisque')
+        } else {
+            navigation.goToPage('conseils')
+        }
+    }
+}
+
+var onSubmitFormScripts = new OnSubmitFormScripts()
+
+var OnPageLoadScripts = function () {
+    this.introduction = function (element, pageName) {
         if (questionnaire.isComplete()) {
             displayElement(element, 'js-questionnaire-full')
             hideElement(element.querySelector('#js-questionnaire-empty'))
@@ -1111,15 +1116,15 @@ var PageScripts = function () {
         }
     }
 
-    this.residence = function (form) {
+    this.residence = function (form, pageName) {
         preloadForm(form, 'departement')
-        form.addEventListener('submit', submitResidenceForm)
+        form.addEventListener('submit', onSubmitFormScripts[pageName])
         document
             .getElementById('geolocalisation')
             .addEventListener('click', geolocalisation)
     }
 
-    this.activitepro = function (form) {
+    this.activitepro = function (form, pageName) {
         preloadCheckboxForm(form, 'activite_pro')
         preloadCheckboxForm(form, 'activite_pro_public')
         preloadCheckboxForm(form, 'activite_pro_sante')
@@ -1128,24 +1133,24 @@ var PageScripts = function () {
         primary.addEventListener('click', function () {
             enableOrDisableSecondaryFields(form, primary)
         })
-        form.addEventListener('submit', submitActiviteProForm)
+        form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
-    this.foyer = function (form) {
+    this.foyer = function (form, pageName) {
         preloadCheckboxForm(form, 'foyer_enfants')
         preloadCheckboxForm(form, 'foyer_fragile')
-        form.addEventListener('submit', submitFoyerForm)
+        form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
-    this.caracteristiques = function (form) {
+    this.caracteristiques = function (form, pageName) {
         preloadCheckboxForm(form, 'sup65')
         preloadCheckboxForm(form, 'grossesse_3e_trimestre')
         preloadForm(form, 'taille')
         preloadForm(form, 'poids')
-        form.addEventListener('submit', submitCaracteristiquesForm)
+        form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
-    this.antecedents = function (form) {
+    this.antecedents = function (form, pageName) {
         var button = form.querySelector('input[type=submit]')
         preloadCheckboxForm(form, 'antecedent_cardio')
         preloadCheckboxForm(form, 'antecedent_diabete')
@@ -1157,24 +1162,24 @@ var PageScripts = function () {
         preloadCheckboxForm(form, 'antecedent_drepano')
         preloadCheckboxForm(form, 'antecedent_chronique_autre')
         toggleFormButtonOnCheck(form, button.value, 'Continuer')
-        form.addEventListener('submit', submitAntecedentsForm)
+        form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
-    this.symptomesactuels = function (form) {
+    this.symptomesactuels = function (form, pageName) {
         var button = form.querySelector('input[type=submit]')
         preloadCheckboxForm(form, 'symptomes_actuels')
         toggleFormButtonOnCheck(form, button.value, 'Terminer')
-        form.addEventListener('submit', submitSymptomesActuelsForm)
+        form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
-    this.symptomespasses = function (form) {
+    this.symptomespasses = function (form, pageName) {
         var button = form.querySelector('input[type=submit]')
         preloadCheckboxForm(form, 'symptomes_passes')
         toggleFormButtonOnCheck(form, button.value, 'Terminer')
-        form.addEventListener('submit', submitSymptomesPassesForm)
+        form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
-    this.contactarisque = function (form) {
+    this.contactarisque = function (form, pageName) {
         var button = form.querySelector('input[type=submit]')
         preloadCheckboxForm(form, 'contact_a_risque')
         var primary = form.elements['contact_a_risque']
@@ -1183,20 +1188,20 @@ var PageScripts = function () {
             enableOrDisableSecondaryFields(form, primary)
         })
         toggleFormButtonOnCheck(form, button.value, 'Terminer')
-        form.addEventListener('submit', submitContactARisqueForm)
+        form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
-    this.conseils = function (element) {
+    this.conseils = function (element, pageName) {
         displayConseils(element)
     }
 
-    this.conseilssymptomespasses = function (element) {
+    this.conseilssymptomespasses = function (element, pageName) {
         displayConseilsSymptomesPasses(element)
     }
 
-    this.conseilscontactarisque = function (element) {
+    this.conseilscontactarisque = function (element, pageName) {
         displayConseilsContactARisque(element)
     }
 }
 
-pageScripts = new PageScripts()
+onPageLoadScripts = new OnPageLoadScripts()
