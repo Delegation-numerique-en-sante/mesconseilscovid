@@ -636,7 +636,7 @@ function displayElement(element, id) {
     block.classList.add('visible')
 
     var customDisplayEvent = document.createEvent('CustomEvent')
-    customDisplayEvent.initCustomEvent('elementDisplayed', true, true, block)
+    customDisplayEvent.initCustomEvent('elementDisplayed:' + id, true, true, block)
     document.dispatchEvent(customDisplayEvent)
 }
 
@@ -916,10 +916,7 @@ var Navigation = function () {
         } else {
             var that = this
             if (this.isFillingQuestionnaire()) {
-                document.addEventListener('elementDisplayed', function (event) {
-                    if (event.detail.id !== 'update-banner') {
-                        return
-                    }
+                document.addEventListener('elementDisplayed:update-banner', function (event) {
                     // Even with an event, we need to wait for the next few
                     // ticks to be able to scroll to the newly visible element.
                     setTimeout(function () {
@@ -937,10 +934,7 @@ var Navigation = function () {
                 displayElement(document, 'update-banner')
             } else {
                 var previousHash = document.location.hash
-                document.addEventListener('pageChanged', function (event) {
-                    if (event.detail !== 'nouvelleversiondisponible') {
-                        return
-                    }
+                document.addEventListener('pageChanged:nouvelleversiondisponible', function (event) {
                     var refreshButton = document.querySelector(
                         '#nouvelle-version-disponible-block #refresh-button'
                     )
@@ -993,7 +987,7 @@ var Navigation = function () {
         onPageLoadScripts[pageName] && onPageLoadScripts[pageName](element, pageName)
 
         var customPageEvent = document.createEvent('CustomEvent')
-        customPageEvent.initCustomEvent('pageChanged', true, true, name)
+        customPageEvent.initCustomEvent('pageChanged:' + pageName, true, true, name)
         document.dispatchEvent(customPageEvent)
     }
 }
