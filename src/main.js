@@ -646,7 +646,6 @@ function geolocalisation(event) {
     )
 }
 
-
 function displayDepartementConseils(data, element) {
     utils.displayElement(element, 'conseils-departement')
     if (data.couleur === 'rouge') {
@@ -923,7 +922,9 @@ var Navigation = function () {
         } else {
             var that = this
             if (this.isFillingQuestionnaire()) {
-                document.addEventListener('elementDisplayed:update-banner', function (event) {
+                document.addEventListener('elementDisplayed:update-banner', function (
+                    event
+                ) {
                     // Even with an event, we need to wait for the next few
                     // ticks to be able to scroll to the newly visible element.
                     setTimeout(function () {
@@ -941,16 +942,19 @@ var Navigation = function () {
                 utils.displayElement(document, 'update-banner')
             } else {
                 var previousHash = document.location.hash
-                document.addEventListener('pageChanged:nouvelleversiondisponible', function (event) {
-                    var refreshButton = document.querySelector(
-                        '#nouvelle-version-disponible-block #refresh-button'
-                    )
-                    refreshButton.setAttribute('href', previousHash)
-                    refreshButton.addEventListener(
-                        'click',
-                        that.forceReloadCurrentPageWithHash
-                    )
-                })
+                document.addEventListener(
+                    'pageChanged:nouvelleversiondisponible',
+                    function (event) {
+                        var refreshButton = document.querySelector(
+                            '#nouvelle-version-disponible-block #refresh-button'
+                        )
+                        refreshButton.setAttribute('href', previousHash)
+                        refreshButton.addEventListener(
+                            'click',
+                            that.forceReloadCurrentPageWithHash
+                        )
+                    }
+                )
                 this.goToPage('nouvelleversiondisponible')
             }
         }
@@ -1000,7 +1004,6 @@ var Navigation = function () {
 }
 navigation = new Navigation()
 
-
 var OnSubmitFormScripts = function () {
     this.residence = function (event) {
         event.preventDefault()
@@ -1041,13 +1044,16 @@ var OnSubmitFormScripts = function () {
 
     this.antecedents = function (event) {
         event.preventDefault()
-        questionnaire.antecedent_cardio = event.target.elements['antecedent_cardio'].checked
+        questionnaire.antecedent_cardio =
+            event.target.elements['antecedent_cardio'].checked
         questionnaire.antecedent_diabete =
             event.target.elements['antecedent_diabete'].checked
-        questionnaire.antecedent_respi = event.target.elements['antecedent_respi'].checked
+        questionnaire.antecedent_respi =
+            event.target.elements['antecedent_respi'].checked
         questionnaire.antecedent_dialyse =
             event.target.elements['antecedent_dialyse'].checked
-        questionnaire.antecedent_cancer = event.target.elements['antecedent_cancer'].checked
+        questionnaire.antecedent_cancer =
+            event.target.elements['antecedent_cancer'].checked
         questionnaire.antecedent_immunodep =
             event.target.elements['antecedent_immunodep'].checked
         questionnaire.antecedent_cirrhose =
@@ -1062,7 +1068,8 @@ var OnSubmitFormScripts = function () {
 
     this.symptomesactuels = function (event) {
         event.preventDefault()
-        questionnaire.symptomes_actuels = event.target.elements['symptomes_actuels'].checked
+        questionnaire.symptomes_actuels =
+            event.target.elements['symptomes_actuels'].checked
         if (questionnaire.symptomes_actuels) {
             // On complète manuellement le formulaire pour le rendre complet.
             questionnaire.symptomes_passes = false
@@ -1077,7 +1084,8 @@ var OnSubmitFormScripts = function () {
 
     this.symptomespasses = function (event) {
         event.preventDefault()
-        questionnaire.symptomes_passes = event.target.elements['symptomes_passes'].checked
+        questionnaire.symptomes_passes =
+            event.target.elements['symptomes_passes'].checked
         if (questionnaire.symptomes_passes) {
             // On complète manuellement le formulaire pour le rendre complet.
             questionnaire.contact_a_risque = false
@@ -1091,7 +1099,8 @@ var OnSubmitFormScripts = function () {
 
     this.contactarisque = function (event) {
         event.preventDefault()
-        questionnaire.contact_a_risque = event.target.elements['contact_a_risque'].checked
+        questionnaire.contact_a_risque =
+            event.target.elements['contact_a_risque'].checked
         stockageLocal.enregistrer(questionnaire)
         if (questionnaire.contact_a_risque) {
             navigation.goToPage('conseilscontactarisque')
