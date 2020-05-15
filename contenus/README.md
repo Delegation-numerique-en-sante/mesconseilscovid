@@ -27,8 +27,9 @@ Question : [libellé](question_résidence_libellé.md)
 
 Conseils :
 
-1. [conseils_département_rouge.md](conseils_département_rouge.md) ou [conseils_département_vert.md](conseils_département_vert.md) selon la [Couleur](#couleur) du département
-2. [conseils_département_défaut.md](conseils_département_défaut.md).
+1. [réponse utilisateur·ice](réponse_département.md)
+2. [conseils rouge](conseils_département_rouge.md) ou [conseils vert](conseils_département_vert.md) selon la [Couleur](#couleur) du département
+3. [conseils par défaut](conseils_département_défaut.md).
 
 #### Activité
 

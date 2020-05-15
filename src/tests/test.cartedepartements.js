@@ -1,4 +1,10 @@
 describe('Carte départements', function () {
+    it('Il y a le bon nombre de noms', function () {
+        chai.expect(Object.keys(carteDepartements._noms).length).to.equal(104)
+    })
+    it('On récupère le nom depuis le département', function () {
+        chai.expect(carteDepartements.nom('01')).to.equal('Ain')
+    })
     it('Il y a (presque) le bon nombre de couleurs', function () {
         // Manque Saint-Pierre-et-Miquelon, Saint-Barthélemy et Saint-Martin.
         chai.expect(Object.keys(carteDepartements._couleurs).length).to.equal(101)
