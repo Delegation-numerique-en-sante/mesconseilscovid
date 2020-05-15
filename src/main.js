@@ -31,10 +31,14 @@ if (typeof Object.assign !== 'function') {
     })
 }
 
-var Utils = function () {
+var Affichage = function () {
     this.hideElement = function (element) {
         element.setAttribute('hidden', '')
         element.classList.remove('visible')
+    }
+
+    this.hideSelector = function (element, selector) {
+        ;[].forEach.call(element.querySelectorAll(selector), this.hideElement)
     }
 
     this.displayElement = function (element, id) {
@@ -46,8 +50,25 @@ var Utils = function () {
         customDisplayEvent.initCustomEvent('elementDisplayed:' + id, true, true, block)
         document.dispatchEvent(customDisplayEvent)
     }
+
+    this.displayBlocks = function (element, blockNames) {
+        var that = this
+        blockNames.forEach(function (block) {
+            that.displayElement(element, block)
+        })
+    }
+
+    this.injectContent = function (element, content, selector) {
+        var childElement = element.querySelector(selector)
+        childElement.innerText = content
+    }
+
+    this.injectAttribute = function (element, attrName, attrValue, selector) {
+        var childElement = element.querySelector(selector)
+        childElement.setAttribute(attrName, attrValue)
+    }
 }
-var utils = new Utils()
+var affichage = new Affichage()
 
 var FormUtils = function () {
     this.preloadForm = function (form, key) {
@@ -1024,7 +1045,7 @@ var Navigation = function () {
                         that.forceReloadCurrentPageWithHash
                     )
                 })
-                utils.displayElement(document, 'update-banner')
+                affichage.displayElement(document, 'update-banner')
             } else {
                 var previousHash = document.location.hash
                 document.addEventListener(
@@ -1200,8 +1221,8 @@ var onSubmitFormScripts = new OnSubmitFormScripts()
 var OnPageLoadScripts = function () {
     this.introduction = function (element, pageName) {
         if (questionnaire.isComplete()) {
-            utils.displayElement(element, 'js-questionnaire-full')
-            utils.hideElement(element.querySelector('#js-questionnaire-empty'))
+            affichage.displayElement(element, 'js-questionnaire-full')
+            affichage.hideElement(element.querySelector('#js-questionnaire-empty'))
             var mesConseilsLink = element.querySelector('#mes-conseils-link')
             var target = navigation.redirectIfMissingData(
                 'findCorrectExit',
@@ -1288,7 +1309,7 @@ var OnPageLoadScripts = function () {
 
     this.conseils = function (element, pageName) {
         // Hide all conseils that might have been made visible on previous runs.
-        ;[].forEach.call(element.querySelectorAll('.visible'), utils.hideElement)
+        affichage.hideSelector(element, '.visible')
 
         // Display appropriate conseils.
         var algorithme = new Algorithme(questionnaire, carteDepartements)
@@ -1301,23 +1322,15 @@ var OnPageLoadScripts = function () {
             algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(data)
         )
 
-        blockNames.forEach(function (block) {
-            utils.displayElement(element, block)
-        })
+        affichage.displayBlocks(element, blockNames)
 
-        // Dynamic data insertions.
-        var nomDepartement = element.querySelector('#nom-departement')
-        nomDepartement.innerText = carteDepartements.nom(data.departement)
-        var lienPrefecture = element.querySelector('#lien-prefecture')
-        lienPrefecture.setAttribute(
-            'href',
-            carteDepartements.lien_prefecture(data.departement)
-        )
+        // Dynamic data injections.
+        injectionScripts.departements(element, data)
     }
 
     this.conseilssymptomespasses = function (element, pageName) {
         // Hide all conseils that might have been made visible on previous runs.
-        ;[].forEach.call(element.querySelectorAll('.visible'), utils.hideElement)
+        affichage.hideSelector(element, '.visible')
 
         // Display appropriate conseils.
         var algorithme = new Algorithme(questionnaire, carteDepartements)
@@ -1326,23 +1339,15 @@ var OnPageLoadScripts = function () {
         var blockNames = algorithme.symptomesPassesBlockNamesToDisplay(data)
         blockNames = blockNames.concat(algorithme.departementBlockNamesToDisplay(data))
 
-        blockNames.forEach(function (block) {
-            utils.displayElement(element, block)
-        })
+        affichage.displayBlocks(element, blockNames)
 
-        // Dynamic data insertions.
-        var nomDepartement = element.querySelector('#nom-departement')
-        nomDepartement.innerText = carteDepartements.nom(data.departement)
-        var lienPrefecture = element.querySelector('#lien-prefecture')
-        lienPrefecture.setAttribute(
-            'href',
-            carteDepartements.lien_prefecture(data.departement)
-        )
+        // Dynamic data injections.
+        injectionScripts.departements(element, data)
     }
 
     this.conseilscontactarisque = function (element, pageName) {
         // Hide all conseils that might have been made visible on previous runs.
-        ;[].forEach.call(element.querySelectorAll('.visible'), utils.hideElement)
+        affichage.hideSelector(element, '.visible')
 
         // Display appropriate conseils.
         var algorithme = new Algorithme(questionnaire, carteDepartements)
@@ -1350,19 +1355,29 @@ var OnPageLoadScripts = function () {
 
         var blockNames = algorithme.departementBlockNamesToDisplay(data)
 
-        blockNames.forEach(function (block) {
-            utils.displayElement(element, block)
-        })
+        affichage.displayBlocks(element, blockNames)
 
-        // Dynamic data insertions.
-        var nomDepartement = element.querySelector('#nom-departement')
-        nomDepartement.innerText = carteDepartements.nom(data.departement)
-        var lienPrefecture = element.querySelector('#lien-prefecture')
-        lienPrefecture.setAttribute(
+        // Dynamic data injections.
+        injectionScripts.departements(element, data)
+    }
+}
+
+var onPageLoadScripts = new OnPageLoadScripts()
+
+var InjectionScrips = function () {
+    this.departements = function (element, data) {
+        affichage.injectContent(
+            element,
+            carteDepartements.nom(data.departement),
+            '#nom-departement'
+        )
+        affichage.injectAttribute(
+            element,
             'href',
-            carteDepartements.lien_prefecture(data.departement)
+            carteDepartements.lien_prefecture(data.departement),
+            '#lien-prefecture'
         )
     }
 }
 
-onPageLoadScripts = new OnPageLoadScripts()
+var injectionScripts = new InjectionScrips()
