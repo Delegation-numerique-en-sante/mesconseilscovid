@@ -20,7 +20,7 @@ describe('Injection', function () {
         var algorithme = new Algorithme(questionnaire, carteDepartements)
         var data = algorithme.getData()
 
-        injectionScripts.departements(element, data)
+        injectionScripts.departement(element, data)
 
         chai.expect(element.innerHTML).to.equal(`
             <strong id="nom-departement">Ain</strong>

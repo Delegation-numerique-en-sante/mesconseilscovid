@@ -1325,7 +1325,7 @@ var OnPageLoadScripts = function () {
         affichage.displayBlocks(element, blockNames)
 
         // Dynamic data injections.
-        injectionScripts.departements(element, data)
+        injectionScripts.departement(element, data)
     }
 
     this.conseilssymptomespasses = function (element, pageName) {
@@ -1342,7 +1342,7 @@ var OnPageLoadScripts = function () {
         affichage.displayBlocks(element, blockNames)
 
         // Dynamic data injections.
-        injectionScripts.departements(element, data)
+        injectionScripts.departement(element, data)
     }
 
     this.conseilscontactarisque = function (element, pageName) {
@@ -1358,14 +1358,14 @@ var OnPageLoadScripts = function () {
         affichage.displayBlocks(element, blockNames)
 
         // Dynamic data injections.
-        injectionScripts.departements(element, data)
+        injectionScripts.departement(element, data)
     }
 }
 
 var onPageLoadScripts = new OnPageLoadScripts()
 
 var InjectionScrips = function () {
-    this.departements = function (element, data) {
+    this.departement = function (element, data) {
         affichage.injectContent(
             element,
             carteDepartements.nom(data.departement),
