@@ -839,6 +839,17 @@ var Algorithme = function (questionnaire, carteDepartements) {
         var blockNames = []
         if (data.activite_pro || data.activite_pro_public || data.activite_pro_sante) {
             blockNames.push('conseils-activite')
+            // Les blocs de réponses sont exclusifs.
+            if (data.activite_pro_public && data.activite_pro_sante) {
+                blockNames.push('reponse-activite-pro-public-sante')
+            } else if (data.activite_pro_public) {
+                blockNames.push('reponse-activite-pro-public')
+            } else if (data.activite_pro_sante) {
+                blockNames.push('reponse-activite-pro-sante')
+            } else {
+                blockNames.push('reponse-activite-pro')
+            }
+            // Les blocs de conseils sont additionnels.
             if (data.activite_pro) {
                 blockNames.push('conseils-activite-pro')
             }
