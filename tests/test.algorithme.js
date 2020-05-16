@@ -65,7 +65,11 @@ describe('Algorithme activité pro', function () {
         var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
             algorithme.activiteProBlockNamesToDisplay(algorithme.getData())
-        ).to.deep.equal(['conseils-activite', 'conseils-activite-pro'])
+        ).to.deep.equal([
+            'conseils-activite',
+            'reponse-activite-pro',
+            'conseils-activite-pro',
+        ])
     })
 
     it('Une activité pro avec public affiche des conseils + pro + public', function () {
@@ -79,6 +83,7 @@ describe('Algorithme activité pro', function () {
             algorithme.activiteProBlockNamesToDisplay(algorithme.getData())
         ).to.deep.equal([
             'conseils-activite',
+            'reponse-activite-pro-public',
             'conseils-activite-pro',
             'conseils-activite-pro-public',
         ])
@@ -95,6 +100,7 @@ describe('Algorithme activité pro', function () {
             algorithme.activiteProBlockNamesToDisplay(algorithme.getData())
         ).to.deep.equal([
             'conseils-activite',
+            'reponse-activite-pro-sante',
             'conseils-activite-pro',
             'conseils-activite-pro-sante',
         ])
@@ -112,6 +118,7 @@ describe('Algorithme activité pro', function () {
             algorithme.activiteProBlockNamesToDisplay(algorithme.getData())
         ).to.deep.equal([
             'conseils-activite',
+            'reponse-activite-pro-public-sante',
             'conseils-activite-pro',
             'conseils-activite-pro-public',
             'conseils-activite-pro-sante',
