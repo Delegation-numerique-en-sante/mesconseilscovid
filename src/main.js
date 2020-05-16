@@ -869,12 +869,9 @@ var Algorithme = function (questionnaire, carteDepartements) {
             blockNames.push('conseils-foyer')
             if (data.foyer_enfants && data.foyer_fragile) {
                 blockNames.push('conseils-foyer-enfants-fragile')
-                return blockNames
-            }
-            if (data.foyer_enfants) {
+            } else if (data.foyer_enfants) {
                 blockNames.push('conseils-foyer-enfants')
-            }
-            if (data.foyer_fragile) {
+            } else /* if (data.foyer_fragile) inutile mais logique */ {
                 blockNames.push('conseils-foyer-fragile')
             }
         }
