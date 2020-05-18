@@ -1,4 +1,4 @@
-Vous pouvez trouver les recommandations adaptées sur le site du ministère des solidarités et de la santé :
+Vous pouvez trouver les recommandations adaptées sur le site du ministère des solidarités et de la santé :
 
 * Pour les [professionnels **de santé**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/article/protection-des-professionnels-de-sante-face-au-covid-19)
 
