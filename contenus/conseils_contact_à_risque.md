@@ -13,7 +13,7 @@ En attendant plus d’informations, il vous est conseillé de :
 </div>
 
 
-<div class="infos">
+<div class="info">
   
 Pour plus d’informations sur :
 

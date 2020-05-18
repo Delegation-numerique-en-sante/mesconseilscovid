@@ -133,6 +133,20 @@ main footer {
     border-color: #00ac8c;
 }
 
+.conseil {
+    background: #d5dbef;
+    padding: .1rem 1rem;
+    border-left: 5px solid #000091;
+}
+.conseil-rouge {
+    background-color: #ffb6a5;
+    border-color: #ff6f4c;
+}
+.conseil-vert {
+    background-color: #7fd5c5;
+    border-color: #00ac8c;
+}
+
 fieldset {
     border: none;
     margin: 0 0 1rem 0;
@@ -385,21 +399,6 @@ input[type='checkbox']:disabled + label::before {
 
 [hidden] {
     display: none !important;
-}
-.couleur {
-    padding: 1rem;
-    border-radius: 0.3rem;
-    font-size: 1.25rem;
-}
-.couleur-rouge {
-    color: #721c24;
-    background-color: #f8d7da;
-    border-color: #f5c6cb;
-}
-.couleur-vert {
-    color: #155724;
-    background-color: #d4edda;
-    border-color: #c3e6cb;
 }
 a[href$='.pdf']::after {
     content: ' (PDF)';

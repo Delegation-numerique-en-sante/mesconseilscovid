@@ -6,7 +6,7 @@ De plus, le respect des **gestes barrières** et de **distanciation physique** r
 
 </div>
 
-<div class="infos">
+<div class="info">
 
 Pour plus d’informations, vous pouvez consulter :
 
