@@ -1,13 +1,17 @@
 <div class="conseil">
-  Il vous est conseillé de :
 
-  * **Vous maintenir en isolement** ainsi que **votre foyer,** y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d'avoir un avis médical.
+Il vous est conseillé de :
 
-  * **Contacter votre médecin** pour avoir des informations personnalisées sur l’isolement et les tests diagnostiques.
+* **Vous maintenir en isolement** ainsi que **votre foyer**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 
-  * Appliquer les **gestes barrières.**
+* **Contacter votre médecin** pour avoir des informations personnalisées sur l’isolement et les tests diagnostiques.
+
+* Appliquer les **gestes barrières**.
+
 </div>
 
 <div class="info">
-  De façon générale il est conseillé une levée de l’isolement 8 jours après le début des symptômes et après 48 heures sans fièvre ni gêne respiratoire.
+
+De façon générale il est conseillé une levée de l’isolement 8 jours après le début des symptômes et après 48 heures sans fièvre ni gêne respiratoire.
+
 </div>
