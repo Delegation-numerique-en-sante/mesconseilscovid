@@ -84,9 +84,11 @@ Conseils :
 
 Si les cases enfants *et* fragile sont cochées :
 
+* [conseils_foyer_fragile.md](conseils_foyer_fragile.md)
+* [conseils_maladie_chronique_info.md](conseils_maladie_chronique_info.md)
 * [conseils_foyer_enfants_fragile.md](conseils_foyer_enfants_fragile.md)
-* [conseils_foyer_enfants_fragile_suivi.md](conseils_foyer_enfants_fragile_suivi.md)
-* [conseils_prescription_masques.md](conseils_prescription_masques.md)
+* [conseils_foyer_enfant_garde.md](conseils_foyer_enfant_garde.md)
+* [conseils_foyer_enfants_vaccins.md](conseils_foyer_enfants_vaccins.md)
 
 Si seule la case enfants est cochée :
 
