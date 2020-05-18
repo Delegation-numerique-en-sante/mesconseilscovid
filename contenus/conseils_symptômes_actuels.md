@@ -1,3 +1,5 @@
+<div class="conseil conseil-rouge">
+
 **Vous êtes peut-être infecté par le COVID19.**
 
 Pour agir, il vous est conseillé :
@@ -7,3 +9,5 @@ Pour agir, il vous est conseillé :
 * **D’évaluer vos symptômes** avec [le service public d’orientation médicale](https://www.gouvernement.fr/info-coronavirus/orientation-medicale), qui vous orientera vers le professionnel de santé adapté.
 
 * D’appliquer les **gestes barrières**.
+
+</div>

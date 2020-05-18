@@ -590,6 +590,7 @@
         <h2>Vos conseils personnalisés</h2>
         <div class="conseils">
             {{ conseils_symptômes_actuels }}
+            {{ conseils_isolement }}
             {{ conseils_cartographie_dépistage }}
         </div>
         <div id="conseils-generaux" class="conseils">
@@ -616,15 +617,18 @@
             {{ statut_risque_élevé_contamination }}
         </div>
         <h2>Vos conseils personnalisés</h2>
-        <div id="conseils-symptomes-passes-sans-risques" class="conseils" hidden>
-            {{ conseils_symptômes_passés_sans_risques }}
-        </div>
-        <div id="conseils-symptomes-passes-avec-risques" class="conseils" hidden>
-            {{ conseils_symptômes_passés_avec_risques }}
-        </div>
-        <div id="conseils-symptomes-passes-default" class="conseils">
-            {{ conseils_symptômes_passés_défaut }}
-            {{ conseils_cartographie_dépistage }}
+        <div class="conseils">
+            <div id="conseils-symptomes-passes-sans-risques" hidden>
+                {{ conseils_symptômes_passés_sans_risques }}
+            </div>
+            <div id="conseils-symptomes-passes-avec-risques" hidden>
+                {{ conseils_symptômes_passés_avec_risques }}
+            </div>
+            <div id="conseils-symptomes-passes-default">
+                {{ conseils_isolement }}
+                {{ conseils_cartographie_dépistage }}
+                {{ conseils_symptômes_passés_défaut }}
+            </div>
         </div>
         <div id="conseils-departement" class="conseils" hidden>
             <h3>Votre localisation</h3>
@@ -682,7 +686,6 @@
         <h2>Vos conseils personnalisés</h2>
         <div class="conseils">
             {{ conseils_contact_à_risque }}
-            {{ conseils_cartographie_dépistage }}
         </div>
         <div id="conseils-departement" class="conseils" hidden>
             <h3>Votre localisation</h3>

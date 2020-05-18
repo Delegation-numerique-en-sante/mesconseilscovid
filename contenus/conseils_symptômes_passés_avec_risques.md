@@ -1,4 +1,4 @@
-<div class="conseil">
+<div class="conseil conseil-rouge">
 
 Il vous est conseillé de :
 

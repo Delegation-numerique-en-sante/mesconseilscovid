@@ -1,4 +1,4 @@
-<div class="conseil">
+<div class="conseil conseil-rouge">
 
 Nous vous conseillons de **contacter votre médecin généraliste**. Par la suite, un médecin ou un professionnel va vous contacter si cela n’est pas déjà fait.
 
