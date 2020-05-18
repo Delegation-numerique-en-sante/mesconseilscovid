@@ -154,8 +154,7 @@ Si case antécédents chroniques autres cochée :
 #### Conseils d’ordre général
 
 1. [conseils_généraux.md](conseils_généraux.md)
-2. [conseils_généraux_faq.md](conseils_généraux_faq.md)
-3. [conseils_généraux_autres_pathologies.md](conseils_généraux_autres_pathologies.md)
+2. [conseils_généraux_info.md](conseils_généraux_info.md)
 
 
 ### Cas particuliers
