@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mes conseils Covid — Des conseils personnalisés pour agir contre le virus</title>
-    <link rel="stylesheet" type="text/css" href="style-185349bf.css">
+    <link rel="stylesheet" type="text/css" href="style-fb8d03b3.css">
     <link rel="prefetch" as="fetch" href="departements-1000m.geojson">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -555,6 +555,18 @@ C’est-à-dire en l’absence de mesures de protection efficaces pendant toute 
 
 <section id="conseils" hidden>
     <div id="conseils-block" class="block">
+        <div id="statut-personne-fragile" class="statut statut-personne-fragile" hidden>
+            <p>Vous êtes considéré·e à risque de forme plus sévère de COVID-19, nous vous invitons à être <strong>particulièrement vigilant·e</strong>.</p>
+
+        </div>
+        <div id="statut-foyer-fragile" class="statut statut-foyer-fragile" hidden>
+            <p>Prenez soin de vos proches à risque face au COVID-19.</p>
+
+        </div>
+        <div id="statut-peu-de-risques" class="statut statut-peu-de-risques" hidden>
+            <p>Vous ne présentez pas de risque particulier face au COVID-19, cependant le virus circule toujours, <strong>les gestes barrières s’imposent</strong>.</p>
+
+        </div>
         <h2>Vos conseils personnalisés</h2>
         <div id="conseils-departement" class="conseils" hidden>
             <h3>Votre localisation</h3>
@@ -782,6 +794,10 @@ vous êtes invité à consulter le site :
 
 <section id="conseilssymptomesactuels" hidden>
     <div id="conseils-symptomes-actuels-block" class="block">
+        <div class="statut statut-risque-eleve">
+            <p>Il vous est conseillé de rester <strong>en isolement</strong>.</p>
+
+        </div>
         <h2>Vos conseils personnalisés</h2>
         <div class="conseils">
             <p><strong>Vous êtes peut-être infecté par le COVID19.</strong></p>
@@ -847,6 +863,10 @@ vous êtes invité à consulter le site :
 
 <section id="conseilssymptomespasses" hidden>
     <div id="conseils-symptomes-passes-block" class="block">
+        <div class="statut statut-risque-eleve">
+            <p>Il vous est conseillé de rester <strong>en isolement</strong>.</p>
+
+        </div>
         <h2>Vos conseils personnalisés</h2>
         <div id="conseils-symptomes-passes-sans-risques" class="conseils" hidden>
             <div class="conseil">
@@ -1000,6 +1020,10 @@ vous êtes invité à consulter le site :
 
 <section id="conseilscontactarisque" hidden>
     <div id="conseils-contact-a-risque-block" class="block">
+        <div class="statut statut-risque-eleve">
+            <p>Il vous est conseillé de rester <strong>en isolement</strong>.</p>
+
+        </div>
         <h2>Vos conseils personnalisés</h2>
         <div class="conseils">
             <div class="conseil">
@@ -1199,7 +1223,7 @@ si vous identifiez une information contraire aux connaissances médicales sur la
 </section>
 
     <script src="localforage-1.7.3.min.js"></script>
-    <script src="main-d7ef8cb0.js"></script>
+    <script src="main-558db2d9.js"></script>
     <script type="text/javascript">
         ;(function() {
             document.addEventListener('dataLoaded', function (event) {

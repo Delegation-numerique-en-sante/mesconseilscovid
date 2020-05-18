@@ -1,3 +1,45 @@
+describe('Algorithme statut', function () {
+    beforeEach(function () {
+        questionnaire.resetData()
+    })
+
+    afterEach(function () {
+        questionnaire.resetData()
+    })
+
+    it('Un profil sans risques affiche le statut par défaut', function () {
+        var data = {}
+        questionnaire.fillData(data)
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        chai.expect(
+            algorithme.statutBlockNamesToDisplay(algorithme.getData())
+        ).to.deep.equal(['statut-peu-de-risques'])
+    })
+
+    it('Un profil avec foyer à risque affiche le statut adéquat', function () {
+        var data = {
+            foyer_fragile: true,
+        }
+        questionnaire.fillData(data)
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        chai.expect(
+            algorithme.statutBlockNamesToDisplay(algorithme.getData())
+        ).to.deep.equal(['statut-foyer-fragile'])
+    })
+
+    it('Un profil avec personne à risque affiche le statut adéquat', function () {
+        var data = {
+            antecedent_cardio: true,
+        }
+        questionnaire.fillData(data)
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        chai.expect(
+            algorithme.statutBlockNamesToDisplay(algorithme.getData())
+        ).to.deep.equal(['statut-personne-fragile'])
+    })
+
+})
+
 describe('Algorithme département', function () {
     beforeEach(function () {
         questionnaire.resetData()
