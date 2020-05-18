@@ -258,6 +258,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
         ).to.deep.equal([
             'conseils-caracteristiques',
             'conseils-caracteristiques-antecedents',
+            'conseils-caracteristiques-antecedents-info',
         ])
     })
 
@@ -275,6 +276,24 @@ describe('Algorithme caractéristiques et antécédents', function () {
         ).to.deep.equal([
             'conseils-caracteristiques',
             'conseils-caracteristiques-antecedents',
+            'conseils-caracteristiques-antecedents-info',
+        ])
+    })
+
+    it('Risque grossesse 3e trimestre', function () {
+        var data = {
+            grossesse_3e_trimestre: true,
+        }
+        questionnaire.fillData(data)
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        chai.expect(
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
+                algorithme.getData()
+            )
+        ).to.deep.equal([
+            'conseils-caracteristiques',
+            'conseils-caracteristiques-antecedents',
+            'conseils-caracteristiques-antecedents-info',
         ])
     })
 
@@ -291,6 +310,25 @@ describe('Algorithme caractéristiques et antécédents', function () {
         ).to.deep.equal([
             'conseils-caracteristiques',
             'conseils-caracteristiques-antecedents',
+            'conseils-caracteristiques-antecedents-info-risque',
+        ])
+    })
+
+    it('Risque + activité pro', function () {
+        var data = {
+            antecedent_cardio: true,
+            activite_pro: true,
+        }
+        questionnaire.fillData(data)
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        chai.expect(
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
+                algorithme.getData()
+            )
+        ).to.deep.equal([
+            'conseils-caracteristiques',
+            'conseils-caracteristiques-antecedents-activite-pro',
+            'conseils-caracteristiques-antecedents-info-risque',
         ])
     })
 
@@ -306,6 +344,8 @@ describe('Algorithme caractéristiques et antécédents', function () {
             )
         ).to.deep.equal([
             'conseils-caracteristiques',
+            'conseils-caracteristiques-antecedents',
+            'conseils-caracteristiques-antecedents-info-risque',
             'conseils-antecedents-chroniques-autres',
         ])
     })

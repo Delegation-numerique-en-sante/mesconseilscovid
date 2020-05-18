@@ -138,15 +138,18 @@ Question (chronique autre) : [libellé](question_antécédents_chronique_autre_l
 
 Conseils :
 
-Si [Antécédents](#antécédents) (sauf grossesse) :
+Si âge > 65 ou grossesse 3e trimestre ou IMC > 30 ou [Antécédents](#antécédents) ou antécédents chroniques autres :
 
-* [conseils_caractéristiques_antécédents.md](conseils_caractéristiques_antécédents.md)
-* [conseils_prescription_masques.md](conseils_prescription_masques.md)
-* [conseils_accueil_enfants.md](conseils_accueil_enfants.md)
+* [conseils_caractéristiques_antécédents.md](conseils_caractéristiques_antécédents.md) si pas d’activité pro
+* [conseils_caractéristiques_antécédents_activité_pro.md](conseils_caractéristiques_antécédents.md) si activité pro
+
+* [conseils_caractéristiques_antécédents_info_risque.md](conseils_caractéristiques_antécédents_info_risque.md) si [Antécédents](#antécédents) ou maladie chronique autre.
+* [conseils_caractéristiques_antécédents_info.md](conseils_caractéristiques_antécédents_info.md) sinon
 
 Si case antécédents chroniques autres cochée :
 
 * [conseils_antécédents_chroniques_autres.md](conseils_antécédents_chroniques_autres.md)
+* [conseils_maladie_chronique_info.md](conseils_maladie_chronique_info.md)
 
 #### Conseils d’ordre général
 
@@ -239,13 +242,15 @@ Est définie comme étant une personne à antécédents celle qui vérifie l’u
 * immuno-dépression
 * cirrhose
 * drépanocytose
-* 3e trimestre grossesse
+
 
 #### Risque
 
 Est définie comme étant une personne à risque celle qui vérifie l’une de ces conditions :
 
-* a des [Antécédents](#antécédents)
 * a plus de 65 ans
+* est au 3e trimestre de sa grossesse
 * a un IMC > 30
+* a des [Antécédents](#antécédents)
+* a des antécédents chroniques autres
 

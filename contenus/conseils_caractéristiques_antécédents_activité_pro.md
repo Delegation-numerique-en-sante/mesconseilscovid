@@ -3,6 +3,8 @@
 Afin d’éviter une forme grave de COVID19, il vous est recommandé
 d’appliquer les mesures de **distanciation physique renforcée :**
 
+* Privilégier le télétravail
+* Rentrez en contact avec votre employeur pour envisager des solutions individuelles (éventuellement via la Médecine du Travail de l’entreprise)
 * Application stricte des gestes barrières
 * Masque en permanence à l’extérieur de mon foyer et à l’intérieur si je reçois des personnes étrangères à mon domicile
 * Distance de sécurité > 1m soit 4m<sup>2</sup>

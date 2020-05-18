@@ -1,36 +1,3 @@
-// Object.assign polyfill for IE 11
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign#Polyfill
-if (typeof Object.assign !== 'function') {
-    // Must be writable: true, enumerable: false, configurable: true
-    Object.defineProperty(Object, 'assign', {
-        value: function assign(target, varArgs) {
-            // .length of function is 2
-            'use strict'
-            if (target === null || target === undefined) {
-                throw new TypeError('Cannot convert undefined or null to object')
-            }
-
-            var to = Object(target)
-
-            for (var index = 1; index < arguments.length; index++) {
-                var nextSource = arguments[index]
-
-                if (nextSource !== null && nextSource !== undefined) {
-                    for (var nextKey in nextSource) {
-                        // Avoid bugs when hasOwnProperty is shadowed
-                        if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
-                            to[nextKey] = nextSource[nextKey]
-                        }
-                    }
-                }
-            }
-            return to
-        },
-        writable: true,
-        configurable: true,
-    })
-}
-
 var Affichage = function () {
     this.hideElement = function (element) {
         element.setAttribute('hidden', '')
@@ -786,7 +753,13 @@ var Algorithme = function (questionnaire, carteDepartements) {
     }
 
     this.hasRisques = function (data) {
-        return this.hasAntecedents(data) || data.sup65 || data.imc > 30
+        return (
+            data.sup65 ||
+            data.grossesse_3e_trimestre ||
+            data.imc > 30 ||
+            this.hasAntecedents(data) ||
+            data.antecedent_chronique_autre
+        )
     }
 
     this.hasAntecedents = function (data) {
@@ -798,8 +771,7 @@ var Algorithme = function (questionnaire, carteDepartements) {
             data.antecedent_cancer ||
             data.antecedent_immunodep ||
             data.antecedent_cirrhose ||
-            data.antecedent_drepano ||
-            data.grossesse_3e_trimestre
+            data.antecedent_drepano
         )
     }
 
@@ -809,13 +781,13 @@ var Algorithme = function (questionnaire, carteDepartements) {
 
     this.getData = function () {
         var data = questionnaire.getData()
-        return Object.assign({}, data, {
-            couleur: this.carteDepartements.couleur(data.departement),
-            imc: this.computeIMC(data.poids, data.taille),
-            antecedents: this.hasAntecedents(data),
-            symptomes: this.hasSymptomes(data),
-            risques: this.hasRisques(data),
-        })
+        // On a besoin de l’IMC avant pour pouvoir calculer les risques.
+        data.imc = this.computeIMC(data.poids, data.taille)
+        data.couleur = this.carteDepartements.couleur(data.departement)
+        data.antecedents = this.hasAntecedents(data)
+        data.symptomes = this.hasSymptomes(data)
+        data.risques = this.hasRisques(data)
+        return data
     }
 
     this.statutBlockNamesToDisplay = function (data) {
@@ -891,15 +863,17 @@ var Algorithme = function (questionnaire, carteDepartements) {
 
     this.caracteristiquesAntecedentsBlockNamesToDisplay = function (data) {
         var blockNames = []
-        if (
-            data.sup65 ||
-            data.imc > 30 ||
-            data.antecedents ||
-            data.antecedent_chronique_autre
-        ) {
+        if (data.risques) {
             blockNames.push('conseils-caracteristiques')
-            if (data.sup65 || data.imc > 30 || data.antecedents) {
+            if (data.activite_pro) {
+                blockNames.push('conseils-caracteristiques-antecedents-activite-pro')
+            } else {
                 blockNames.push('conseils-caracteristiques-antecedents')
+            }
+            if (data.antecedents || data.antecedent_chronique_autre) {
+                blockNames.push('conseils-caracteristiques-antecedents-info-risque')
+            } else {
+                blockNames.push('conseils-caracteristiques-antecedents-info')
             }
             if (data.antecedent_chronique_autre) {
                 blockNames.push('conseils-antecedents-chroniques-autres')
