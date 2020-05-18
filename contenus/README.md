@@ -19,9 +19,8 @@ Les fichiers comportant le préfixe `meta_` correspondent aux informations addit
 
 ### Cas nominal
 
-#### Statut
 
-Statut :
+#### Statut
 
 * [statut_personne_fragile.md](statut_personne_fragile.md) (orange) si la personne présente un [Risque](#risque)
 * [statut_foyer_fragile.md](statut_foyer_fragile.md) (jaune) si la case [Foyer](#foyer) fragile est cochée
@@ -34,11 +33,13 @@ Statut :
 
 Question : [libellé](question_résidence_libellé.md)
 
+Réponse : [réponse_département.md](réponse_département.md)
+
 Conseils :
 
-1. [réponse utilisateur·ice](réponse_département.md)
-2. [conseils rouge](conseils_département_rouge.md) ou [conseils vert](conseils_département_vert.md) selon la [Couleur](#couleur) du département
-3. [conseils par défaut](conseils_département_défaut.md).
+1. [conseils rouge](conseils_département_rouge.md) ou [conseils vert](conseils_département_vert.md) selon la [Couleur](#couleur) du département
+2. [conseils par défaut](conseils_département_défaut.md).
+
 
 #### Activité
 
@@ -50,11 +51,19 @@ Sous-question (contact public) : [libellé](question_activité_pro_public_libell
 
 Sous-question (domaine santé) : [libellé](question_activité_pro_santé_libellé.md), [aide](question_activité_pro_santé_aide.md)
 
+Réponse : 
+
+* [réponse_activité_pro.md](réponse_activité_pro.md) si case cochée
+* [réponse_activité_pro_public.md](réponse_activité_pro_public.md) si case cochée
+* [réponse_activité_pro_santé.md](réponse_activité_pro_santé.md) si case cochée
+* [réponse_activité_pro_public_santé.md](réponse_activité_pro_public_santé.md) si deux cases cochées
+
 Conseils :
 
 * [conseils_activité_pro.md](conseils_activité_pro.md) si case cochée
 * [conseils_activité_pro_public.md](conseils_activité_pro_public.md) si case cochée
 * [conseils_activité_pro_santé.md](conseils_activité_pro_santé.md) si case cochée
+
 
 #### Foyer
 
@@ -63,6 +72,12 @@ Conseils :
 Question (enfants) : [libellé](question_foyer_enfants_libellé.md)
 
 Question (fragile) : [libellé](question_foyer_fragile_libellé.md), [aide](question_foyer_fragile_aide.md)
+
+Réponse : 
+
+* [réponse_foyer_enfants.md](réponse_foyer_enfants.md) si case cochée
+* [réponse_foyer_fragile.md](réponse_foyer_fragile.md) si case cochée
+* [réponse_foyer_enfants_fragile.md](réponse_foyer_enfants_fragile.md) si deux cases cochées
 
 Conseils :
 
@@ -83,6 +98,7 @@ Si seule la case fragile est cochée :
 * [conseils_foyer_fragile_suivi.md](conseils_foyer_fragile_suivi.md)
 * [conseils_prescription_masques.md](conseils_prescription_masques.md)
 * [conseils_foyer_fragile_domicile.md](conseils_foyer_fragile_domicile.md)
+
 
 #### Caractéristiques et antécédents
 
