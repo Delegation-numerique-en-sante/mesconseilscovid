@@ -91,6 +91,7 @@ Si les cases enfants *et* fragile sont cochées :
 Si seule la case enfants est cochée :
 
 * [conseils_foyer_enfants.md](conseils_foyer_enfants.md)
+* [conseils_foyer_enfant_garde.md](conseils_foyer_enfant_garde.md)
 * [conseils_foyer_enfants_vaccins.md](conseils_foyer_enfants_vaccins.md)
 
 Si seule la case fragile est cochée :
