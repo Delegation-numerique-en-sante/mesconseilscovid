@@ -96,10 +96,9 @@ Si seule la case enfants est cochée :
 
 Si seule la case fragile est cochée :
 
-* [conseils_accueil_enfants.md](conseils_accueil_enfants.md)
-* [conseils_foyer_fragile_suivi.md](conseils_foyer_fragile_suivi.md)
-* [conseils_prescription_masques.md](conseils_prescription_masques.md)
-* [conseils_foyer_fragile_domicile.md](conseils_foyer_fragile_domicile.md)
+* [conseils_foyer_fragile.md](conseils_foyer_fragile.md)
+* [conseils_foyer_fragile_accueil_enfant.md](conseils_foyer_fragile_accueil_enfant.md)
+* [conseils_maladie_chronique_info.md](conseils_maladie_chronique_info.md)
 
 
 #### Caractéristiques et antécédents
