@@ -179,7 +179,7 @@ Statut : [statut_risque_élevé_contamination.md](statut_risque_élevé_contami
 
 Conseils :
 
-1. [conseils_symptômes_passés_sans_risques.md](conseils_symptômes_passés_sans_risques.md) ou [conseils_symptômes_passés_avec_risques.md](conseils_symptômes_passés_avec_risques.md) selon la valeur de [Risque](#risque)
+1. [conseils_symptômes_passés_sans_risques.md](conseils_symptômes_passés_sans_risques.md) ou [conseils_symptômes_passés_avec_risques.md](conseils_symptômes_passés_avec_risques.md) selon la valeur de [Risque](#risque) (ou case foyer à risque cochée)
 2. [conseils_symptômes_passés_défaut.md](conseils_symptômes_passés_défaut.md)
 3. [conseils_cartographie_dépistage.md](conseils_cartographie_dépistage.md)
 4. [Localisation](#localisation)
@@ -245,5 +245,4 @@ Est définie comme étant une personne à risque celle qui vérifie l’une de c
 * a des [Antécédents](#antécédents)
 * a plus de 65 ans
 * a un IMC > 30
-* habite dans un foyer fragile
 

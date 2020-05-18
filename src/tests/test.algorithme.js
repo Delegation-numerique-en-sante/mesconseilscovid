@@ -16,7 +16,7 @@ describe('Algorithme statut', function () {
         ).to.deep.equal(['statut-peu-de-risques'])
     })
 
-    it('Un profil avec foyer à risque affiche le statut adéquat', function () {
+    it('Un profil avec foyer à risque', function () {
         var data = {
             foyer_fragile: true,
         }
@@ -27,7 +27,7 @@ describe('Algorithme statut', function () {
         ).to.deep.equal(['statut-foyer-fragile'])
     })
 
-    it('Un profil avec personne à risque affiche le statut adéquat', function () {
+    it('Un profil avec personne à risque', function () {
         var data = {
             antecedent_cardio: true,
         }
@@ -38,6 +38,17 @@ describe('Algorithme statut', function () {
         ).to.deep.equal(['statut-personne-fragile'])
     })
 
+    it('Un profil avec personne à risque + foyer à risque', function () {
+        var data = {
+            antecedent_cardio: true,
+            foyer_fragile: true,
+        }
+        questionnaire.fillData(data)
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        chai.expect(
+            algorithme.statutBlockNamesToDisplay(algorithme.getData())
+        ).to.deep.equal(['statut-personne-fragile'])
+    })
 })
 
 describe('Algorithme département', function () {
@@ -321,9 +332,20 @@ describe('Algorithme symptômes passés', function () {
         ).to.deep.equal(['conseils-symptomes-passes-sans-risques'])
     })
 
-    it('Si risques', function () {
+    it('Si personne à risque', function () {
         var data = {
             sup65: true,
+        }
+        questionnaire.fillData(data)
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        chai.expect(
+            algorithme.symptomesPassesBlockNamesToDisplay(algorithme.getData())
+        ).to.deep.equal(['conseils-symptomes-passes-avec-risques'])
+    })
+
+    it('Si foyer à risque', function () {
+        var data = {
+            foyer_fragile: true,
         }
         questionnaire.fillData(data)
         var algorithme = new Algorithme(questionnaire, carteDepartements)

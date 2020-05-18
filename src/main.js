@@ -786,12 +786,7 @@ var Algorithme = function (questionnaire, carteDepartements) {
     }
 
     this.hasRisques = function (data) {
-        return (
-            this.hasAntecedents(data) ||
-            data.sup65 ||
-            data.imc > 30 ||
-            data.foyer_fragile
-        )
+        return this.hasAntecedents(data) || data.sup65 || data.imc > 30
     }
 
     this.hasAntecedents = function (data) {
@@ -825,11 +820,11 @@ var Algorithme = function (questionnaire, carteDepartements) {
 
     this.statutBlockNamesToDisplay = function (data) {
         var blockNames = []
-        // L’ordre est important car risques inclus foyer_fragile.
-        if (data.foyer_fragile) {
-            blockNames.push('statut-foyer-fragile')
-        } else if (data.risques) {
+        // L’ordre est important car risques > foyer_fragile.
+        if (data.risques) {
             blockNames.push('statut-personne-fragile')
+        } else if (data.foyer_fragile) {
+            blockNames.push('statut-foyer-fragile')
         } else {
             blockNames.push('statut-peu-de-risques')
         }
@@ -884,7 +879,7 @@ var Algorithme = function (questionnaire, carteDepartements) {
                 blockNames.push('conseils-foyer-enfants-fragile')
             } else if (data.foyer_enfants) {
                 blockNames.push('conseils-foyer-enfants')
-            } else /* if (data.foyer_fragile) inutile mais logique */ {
+            } /* if (data.foyer_fragile) inutile mais logique */ else {
                 blockNames.push('conseils-foyer-fragile')
             }
         }
@@ -912,7 +907,7 @@ var Algorithme = function (questionnaire, carteDepartements) {
 
     this.symptomesPassesBlockNamesToDisplay = function (data) {
         var blockNames = []
-        if (data.risques) {
+        if (data.risques || data.foyer_fragile) {
             blockNames.push('conseils-symptomes-passes-avec-risques')
         } else {
             blockNames.push('conseils-symptomes-passes-sans-risques')
