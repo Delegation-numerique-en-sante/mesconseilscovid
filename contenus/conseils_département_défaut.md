@@ -1,5 +1,8 @@
-Vous pouvez vérifier en un clin d’œil les règles spécifiques
-de votre département :
-<a href="#conseils-departement" id="lien-prefecture">Site de votre préfecture</a>
+<div class="info">
 
-Vous pouvez consulter [l’infographie du plan de déconfinement](https://www.gouvernement.fr/sites/default/files/cimages/infographie_deconfinement.jpg).
+  * [l'infographie récapitulative](https://www.gouvernement.fr/sites/default/files/cimages/infographie_deconfinement.jpg) du plan de déconfinement
+
+  * les règles spécifiques de votre département sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture.</a>
+
+  * les consignes à appliquer dans vos activités sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement)
+</div>
