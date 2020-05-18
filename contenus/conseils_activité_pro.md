@@ -1,4 +1,3 @@
-Nous vous recommandons de prendre connaissance des fiches métiers
-correspondant à votre activité, lorsqu’elles existent,
-à l’adresse suivante :
-[travail-emploi.gouv.fr](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/proteger-les-travailleurs/article/fiches-conseils-metiers-et-guides-pour-les-salaries-et-les-employeurs).
+<div class="conseil">
+  Il est recommandé de **télétravailler** si cela vous est possible. Si vous devez vous rendre sur votre lieu de travail, le respect des **gestes barrières** et de la **distanciation physique** permet de limiter les risques de propagation du virus.
+</div>
