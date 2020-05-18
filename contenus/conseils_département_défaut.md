@@ -1,8 +1,9 @@
 <div class="info">
 
-  * [l'infographie récapitulative](https://www.gouvernement.fr/sites/default/files/cimages/infographie_deconfinement.jpg) du plan de déconfinement
+* [l’infographie récapitulative](https://www.gouvernement.fr/sites/default/files/cimages/infographie_deconfinement.jpg) du plan de déconfinement
 
-  * les règles spécifiques de votre département sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture.</a>
+* les règles spécifiques de votre département sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
 
-  * les consignes à appliquer dans vos activités sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement)
+* les consignes à appliquer dans vos activités sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement)
+
 </div>
