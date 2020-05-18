@@ -110,7 +110,7 @@ describe('Algorithme activité pro', function () {
         ).to.deep.equal([])
     })
 
-    it('Une activité pro affiche des conseils + pro', function () {
+    it('Une activité pro affiche des conseils + pro + infos', function () {
         var data = {
             activite_pro: true,
         }
@@ -122,10 +122,11 @@ describe('Algorithme activité pro', function () {
             'conseils-activite',
             'reponse-activite-pro',
             'conseils-activite-pro',
+            'conseils-activite-pro-infos',
         ])
     })
 
-    it('Une activité pro avec public affiche des conseils + pro + public', function () {
+    it('Une activité pro avec public affiche des conseils + public + infos', function () {
         var data = {
             activite_pro: true,
             activite_pro_public: true,
@@ -137,12 +138,12 @@ describe('Algorithme activité pro', function () {
         ).to.deep.equal([
             'conseils-activite',
             'reponse-activite-pro-public',
-            'conseils-activite-pro',
             'conseils-activite-pro-public',
+            'conseils-activite-pro-infos',
         ])
     })
 
-    it('Une activité pro avec sante affiche des conseils + pro + sante', function () {
+    it('Une activité pro avec sante affiche des conseils + sante', function () {
         var data = {
             activite_pro: true,
             activite_pro_sante: true,
@@ -154,12 +155,11 @@ describe('Algorithme activité pro', function () {
         ).to.deep.equal([
             'conseils-activite',
             'reponse-activite-pro-sante',
-            'conseils-activite-pro',
             'conseils-activite-pro-sante',
         ])
     })
 
-    it('Une activité pro avec public et sante affiche des conseils + pro + public + sante', function () {
+    it('Une activité pro avec public et sante affiche des conseils + public + sante', function () {
         var data = {
             activite_pro: true,
             activite_pro_public: true,
@@ -172,7 +172,6 @@ describe('Algorithme activité pro', function () {
         ).to.deep.equal([
             'conseils-activite',
             'reponse-activite-pro-public-sante',
-            'conseils-activite-pro',
             'conseils-activite-pro-public',
             'conseils-activite-pro-sante',
         ])

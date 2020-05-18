@@ -857,15 +857,18 @@ var Algorithme = function (questionnaire, carteDepartements) {
             } else {
                 blockNames.push('reponse-activite-pro')
             }
-            // Les blocs de conseils sont additionnels.
-            if (data.activite_pro) {
-                blockNames.push('conseils-activite-pro')
-            }
-            if (data.activite_pro_public) {
+            // Les blocs de conseils sont quasi-exclusifs aussi.
+            if (data.activite_pro_public && data.activite_pro_sante) {
                 blockNames.push('conseils-activite-pro-public')
-            }
-            if (data.activite_pro_sante) {
                 blockNames.push('conseils-activite-pro-sante')
+            } else if (data.activite_pro_public) {
+                blockNames.push('conseils-activite-pro-public')
+                blockNames.push('conseils-activite-pro-infos')
+            } else if (data.activite_pro_sante) {
+                blockNames.push('conseils-activite-pro-sante')
+            } else {
+                blockNames.push('conseils-activite-pro')
+                blockNames.push('conseils-activite-pro-infos')
             }
         }
         return blockNames

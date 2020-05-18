@@ -63,7 +63,7 @@ Conseils :
 * [conseils_activité_pro.md](conseils_activité_pro.md) si case cochée
 * [conseils_activité_pro_public.md](conseils_activité_pro_public.md) si case cochée
 * [conseils_activité_pro_santé.md](conseils_activité_pro_santé.md) si case cochée
-* [conseils_activité_pro_infos.md](conseils_activité_pro_infos.md) dans tous les cas
+* [conseils_activité_pro_infos.md](conseils_activité_pro_infos.md) si case activité cochée et/ou case public cochée (mais pas la case santé)
 
 
 #### Foyer
