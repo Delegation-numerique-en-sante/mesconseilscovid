@@ -19,6 +19,15 @@ Les fichiers comportant le préfixe `meta_` correspondent aux informations addit
 
 ### Cas nominal
 
+#### Statut
+
+Statut :
+
+* [statut_personne_fragile.md](statut_personne_fragile.md) (orange) si la personne présente un [Risque](#risque)
+* [statut_foyer_fragile.md](statut_foyer_fragile.md) (jaune) si la case [Foyer](#foyer) fragile est cochée
+* [statut_peu_de_risques.md](statut_peu_de_risques.md) (vert) par défaut
+
+
 #### Localisation
 
 [Titre](question_résidence_titre.md)
@@ -135,6 +144,8 @@ Si case antécédents chroniques autres cochée :
 
 Question : [libellé](question_symptômes_actuels_libellé.md), [aide](question_symptômes_aide.md)
 
+Statut : [statut_risque_élevé_contamination.md](statut_risque_élevé_contamination.md) (rouge)
+
 Conseils :
 
 1. [conseils_symptômes_actuels.md](conseils_symptômes_actuels.md)
@@ -147,6 +158,8 @@ Conseils :
 [Titre](question_symptômes_passés_titre.md)
 
 Question : [libellé](question_symptômes_passés_libellé.md), [aide](question_symptômes_aide.md)
+
+Statut : [statut_risque_élevé_contamination.md](statut_risque_élevé_contamination.md) (rouge)
 
 Conseils :
 
@@ -175,6 +188,8 @@ Sous-question (actes) : [libellé](question_symptômes_contact_à_risque_actes_l
 Sous-question (espace confiné) : [libellé](question_symptômes_contact_à_risque_espace_confiné_libellé.md)
 
 Sous-question (même classe) : [libellé](question_symptômes_contact_à_risque_même_classe_libellé.md)
+
+Statut : [statut_risque_élevé_contamination.md](statut_risque_élevé_contamination.md) (rouge)
 
 Conseils :
 

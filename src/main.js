@@ -823,6 +823,19 @@ var Algorithme = function (questionnaire, carteDepartements) {
         })
     }
 
+    this.statutBlockNamesToDisplay = function (data) {
+        var blockNames = []
+        // L’ordre est important car risques inclus foyer_fragile.
+        if (data.foyer_fragile) {
+            blockNames.push('statut-foyer-fragile')
+        } else if (data.risques) {
+            blockNames.push('statut-personne-fragile')
+        } else {
+            blockNames.push('statut-peu-de-risques')
+        }
+        return blockNames
+    }
+
     this.departementBlockNamesToDisplay = function (data) {
         var blockNames = []
         blockNames.push('conseils-departement')
@@ -1323,7 +1336,8 @@ var OnPageLoadScripts = function () {
         var algorithme = new Algorithme(questionnaire, carteDepartements)
         var data = algorithme.getData()
 
-        var blockNames = algorithme.departementBlockNamesToDisplay(data)
+        var blockNames = algorithme.statutBlockNamesToDisplay(data)
+        blockNames = blockNames.concat(algorithme.departementBlockNamesToDisplay(data))
         blockNames = blockNames.concat(algorithme.activiteProBlockNamesToDisplay(data))
         blockNames = blockNames.concat(algorithme.foyerBlockNamesToDisplay(data))
         blockNames = blockNames.concat(

@@ -462,6 +462,15 @@
 
 <section id="conseils" hidden>
     <div id="conseils-block" class="block">
+        <div id="statut-personne-fragile" class="statut statut-personne-fragile" hidden>
+            {{ statut_personne_fragile }}
+        </div>
+        <div id="statut-foyer-fragile" class="statut statut-foyer-fragile" hidden>
+            {{ statut_foyer_fragile }}
+        </div>
+        <div id="statut-peu-de-risques" class="statut statut-peu-de-risques" hidden>
+            {{ statut_peu_de_risques }}
+        </div>
         <h2>Vos conseils personnalisés</h2>
         <div id="conseils-departement" class="conseils" hidden>
             <h3>Votre localisation</h3>
@@ -562,6 +571,9 @@
 
 <section id="conseilssymptomesactuels" hidden>
     <div id="conseils-symptomes-actuels-block" class="block">
+        <div class="statut statut-risque-eleve">
+            {{ statut_risque_élevé_contamination }}
+        </div>
         <h2>Vos conseils personnalisés</h2>
         <div class="conseils">
             {{ conseils_symptômes_actuels }}
@@ -587,6 +599,9 @@
 
 <section id="conseilssymptomespasses" hidden>
     <div id="conseils-symptomes-passes-block" class="block">
+        <div class="statut statut-risque-eleve">
+            {{ statut_risque_élevé_contamination }}
+        </div>
         <h2>Vos conseils personnalisés</h2>
         <div id="conseils-symptomes-passes-sans-risques" class="conseils" hidden>
             {{ conseils_symptômes_passés_sans_risques }}
@@ -648,6 +663,9 @@
 
 <section id="conseilscontactarisque" hidden>
     <div id="conseils-contact-a-risque-block" class="block">
+        <div class="statut statut-risque-eleve">
+            {{ statut_risque_élevé_contamination }}
+        </div>
         <h2>Vos conseils personnalisés</h2>
         <div class="conseils">
             {{ conseils_contact_à_risque }}

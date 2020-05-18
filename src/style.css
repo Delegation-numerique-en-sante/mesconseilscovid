@@ -109,6 +109,30 @@ main footer {
     font-size: 175%;
 }
 
+.statut {
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+    border: 2px solid;
+    text-align: center;
+    margin: 3rem auto 3rem;
+}
+.statut-risque-eleve {
+    background: #ffb6a5;
+    border-color: #ff6f4c;
+}
+.statut-personne-fragile {
+    background: #ffcc9f;
+    border-color: #ff9940;
+}
+.statut-foyer-fragile {
+    background: #fdE7a0;
+    border-color: #fdcf41;
+}
+.statut-peu-de-risques {
+    background: #7fd5c5;
+    border-color: #00ac8c;
+}
+
 fieldset {
     border: none;
     margin: 0 0 1rem 0;
