@@ -1,5 +1,1 @@
-<div class="info">
-
 Pour plus d’informations, vous pouvez consulter les fiches-conseils métier pour aider à la mise en œuvre des mesures de protection sur le site du [Ministère du travail](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/proteger-les-travailleurs/article/fiches-conseils-metiers-et-guides-pour-les-salaries-et-les-employeurs).
-
-</div>

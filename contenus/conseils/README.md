@@ -54,8 +54,6 @@ Vous pouvez trouver les recommandations adaptées sur le site du ministère des 
 
 ## [conseils_symptômes_passés_avec_risques.md](conseils_symptômes_passés_avec_risques.md)
 
-<div class="conseil conseil-rouge">
-
 Il vous est conseillé de :
 
 * **Vous maintenir en isolement** ainsi que **votre foyer**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
@@ -64,25 +62,13 @@ Il vous est conseillé de :
 
 * Appliquer les **gestes barrières**.
 
-</div>
-
-<div class="info">
-
-De façon générale il est conseillé une levée de l’isolement 10 jours après le début des symptômes (si vous ou un membre de votre foyer êtes à risque de forme grave) et après 48 heures sans fièvre ni gêne respiratoire.
-
-</div>
-
 
 ---
 
 
 ## [conseils_département_vert.md](conseils_département_vert.md)
 
-<div class="conseil conseil-vert">
-
 Votre département est en **niveau vert**. Cependant le virus circule toujours, maintenez les gestes barrières.
-
-</div>
 
 
 ---
@@ -98,8 +84,6 @@ Pour plus d’informations, vous pouvez consulter le [site du gouvernement](http
 
 ## [conseils_symptômes_actuels.md](conseils_symptômes_actuels.md)
 
-<div class="conseil conseil-rouge">
-
 **Vous êtes peut-être infecté par le COVID19.**
 
 Pour agir, il vous est conseillé :
@@ -109,8 +93,6 @@ Pour agir, il vous est conseillé :
 * **D’évaluer vos symptômes** avec [le service public d’orientation médicale](https://www.gouvernement.fr/info-coronavirus/orientation-medicale), qui vous orientera vers le professionnel de santé adapté.
 
 * D’appliquer les **gestes barrières**.
-
-</div>
 
 
 ---
@@ -160,11 +142,7 @@ les professionnels de santé : ils se sont organisés pour continuer
 
 ## [conseils_activité_pro_infos.md](conseils_activité_pro_infos.md)
 
-<div class="info">
-
 Pour plus d’informations, vous pouvez consulter les fiches-conseils métier pour aider à la mise en œuvre des mesures de protection sur le site du [Ministère du travail](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/proteger-les-travailleurs/article/fiches-conseils-metiers-et-guides-pour-les-salaries-et-les-employeurs).
-
-</div>
 
 
 ---
@@ -215,8 +193,6 @@ Si vous devez rester à domicile pour vous occuper d’une personne vulnérable 
 
 ## [conseils_contact_à_risque.md](conseils_contact_à_risque.md)
 
-<div class="conseil conseil-rouge">
-
 Nous vous conseillons de **contacter votre médecin généraliste**. Par la suite, un médecin ou un professionnel va vous contacter si cela n’est pas déjà fait.
 
 En attendant plus d’informations, il vous est conseillé de :
@@ -226,19 +202,6 @@ En attendant plus d’informations, il vous est conseillé de :
 * Appliquer **les gestes barrières**.
 
 * Surveiller l’apparition de **symptômes** et contacter votre médecin si des symptômes apparaissent.
-
-</div>
-
-
-<div class="info">
-  
-Pour plus d’informations sur :
-
-* l’isolement : [« Je suis atteint par le coronavirus et je dois rester chez moi jusqu’à ma guérison »](https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf).
-
-* les gestes barrières, vous pouvez consulter la page [« Comment se protéger du coronavirus COVID-19 ? »](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/comment-se-proteger-du-coronavirus-covid-19) du ministère des solidarités et de la santé.
-  
-</div>
 
 
 ---
@@ -257,8 +220,6 @@ vous orienteront vers le meilleur moyen de suivi :
 
 ## [conseils_symptômes_passés_sans_risques.md](conseils_symptômes_passés_sans_risques.md)
 
-<div class="conseil conseil-rouge">
-
 Il vous est conseillé de :
 
 * **Vous maintenir en isolement** ainsi que **votre foyer**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
@@ -267,14 +228,6 @@ Il vous est conseillé de :
 
 * Appliquer les **gestes barrières**.
 
-</div>
-
-<div class="info">
-
-De façon générale il est conseillé une levée de l’isolement 8 jours après le début des symptômes et après 48 heures sans fièvre ni gêne respiratoire.
-
-</div>
-
 
 ---
 
@@ -282,6 +235,14 @@ De façon générale il est conseillé une levée de l’isolement 8 jours aprè
 ## [conseils_activité_pro.md](conseils_activité_pro.md)
 
 Il est recommandé de **télétravailler** si cela vous est possible. Si vous devez vous rendre sur votre lieu de travail, le respect des **gestes barrières** et de la **distanciation physique** permet de limiter les risques de propagation du virus.
+
+
+---
+
+
+## [conseils_symptômes_passés_avec_risques_info.md](conseils_symptômes_passés_avec_risques_info.md)
+
+De façon générale il est conseillé une levée de l’isolement 10 jours après le début des symptômes (si vous ou un membre de votre foyer êtes à risque de forme grave) et après 48 heures sans fièvre ni gêne respiratoire.
 
 
 ---
@@ -303,11 +264,31 @@ Nous vous recommandons de prendre connaissance des **précautions** relatives au
 ---
 
 
+## [conseils_contact_à_risque_info.md](conseils_contact_à_risque_info.md)
+
+Pour plus d’informations sur :
+
+* l’isolement : [« Je suis atteint par le coronavirus et je dois rester chez moi jusqu’à ma guérison »](https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf).
+
+* les gestes barrières, vous pouvez consulter la page [« Comment se protéger du coronavirus COVID-19 ? »](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/comment-se-proteger-du-coronavirus-covid-19) du ministère des solidarités et de la santé.
+
+
+---
+
+
 ## [conseils_généraux.md](conseils_généraux.md)
 
 Le COVID n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de **consulter au moindre signe de maladie**. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.
 
 De plus, le respect des **gestes barrières** et de **distanciation physique** reste indispensable et le **port du masque** s’impose dans certaines situations.
+
+
+---
+
+
+## [conseils_symptômes_passés_sans_risques_info.md](conseils_symptômes_passés_sans_risques_info.md)
+
+De façon générale il est conseillé une levée de l’isolement 8 jours après le début des symptômes et après 48 heures sans fièvre ni gêne respiratoire.
 
 
 ---
@@ -343,11 +324,7 @@ référents qui vous orienteront vers le meilleur moyen de suivi :
 
 ## [conseils_département_rouge.md](conseils_département_rouge.md)
 
-<div class="conseil conseil-rouge">
-
 Votre département est en **niveau rouge**, la circulation épidémique est élevée et les hôpitaux sont saturés. Le déconfinement prendra une forme plus stricte.
-
-</div>
 
 
 ---
@@ -375,11 +352,7 @@ si vous souhaitez le partager.
 
 ## [conseils_maladie_chronique_info.md](conseils_maladie_chronique_info.md)
 
-<div class="infos">
-
 Pour plus d’informations, vous pouvez prendre connaissance du document [« Faire face à une maladie chronique pendant le confinement »](https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf) de la HAS.
-
-</div>
 
 
 ---
@@ -397,8 +370,6 @@ le site Santé.fr vous propose la
 
 ## [conseils_département_défaut.md](conseils_département_défaut.md)
 
-<div class="info">
-
 Pour plus d’informations, vous pouvez consulter :
 
 * [l’infographie récapitulative](https://www.gouvernement.fr/sites/default/files/cimages/infographie_deconfinement.jpg) du plan de déconfinement
@@ -406,8 +377,6 @@ Pour plus d’informations, vous pouvez consulter :
 * les règles spécifiques de votre département sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
 
 * les consignes à appliquer dans vos activités sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement)
-
-</div>
 
 
 ---

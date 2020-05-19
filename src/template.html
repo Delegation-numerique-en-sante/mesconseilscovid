@@ -478,10 +478,14 @@
                 {{ réponse_département }}
             </div>
             <div id="conseils-departement-rouge" hidden>
-                {{ conseils_département_rouge }}
+                <div class="conseil conseil-rouge">
+                    {{ conseils_département_rouge }}
+                </div>
             </div>
             <div id="conseils-departement-vert" hidden>
-                {{ conseils_département_vert }}
+                <div class="conseil conseil-vert">
+                    {{ conseils_département_vert }}
+                </div>
             </div>
             <div id="conseils-departement-default">
                 {{ conseils_département_défaut }}
@@ -606,7 +610,9 @@
         </div>
         <h2>Vos conseils personnalisés</h2>
         <div class="conseils">
-            {{ conseils_symptômes_actuels }}
+            <div class="conseil conseil-rouge">
+                {{ conseils_symptômes_actuels }}
+            </div>
             {{ conseils_isolement }}
             {{ conseils_cartographie_dépistage }}
         </div>
@@ -633,10 +639,16 @@
         <h2>Vos conseils personnalisés</h2>
         <div class="conseils">
             <div id="conseils-symptomes-passes-sans-risques" hidden>
-                {{ conseils_symptômes_passés_sans_risques }}
+                <div class="conseil conseil-rouge">
+                    {{ conseils_symptômes_passés_sans_risques }}
+                </div>
+                {{ conseils_symptômes_passés_sans_risques_info }}
             </div>
             <div id="conseils-symptomes-passes-avec-risques" hidden>
-                {{ conseils_symptômes_passés_avec_risques }}
+                <div class="conseil conseil-rouge">
+                    {{ conseils_symptômes_passés_avec_risques }}
+                </div>
+                {{ conseils_symptômes_passés_avec_risques_info }}
             </div>
             <div id="conseils-symptomes-passes-default">
                 {{ conseils_isolement }}
@@ -650,10 +662,14 @@
                 {{ réponse_département }}
             </div>
             <div id="conseils-departement-rouge" hidden>
-                {{ conseils_département_rouge }}
+                <div class="conseil conseil-rouge">
+                    {{ conseils_département_rouge }}
+                </div>
             </div>
             <div id="conseils-departement-vert" hidden>
-                {{ conseils_département_vert }}
+                <div class="conseil conseil-vert">
+                    {{ conseils_département_vert }}
+                </div>
             </div>
             <div id="conseils-departement-default">
                 {{ conseils_département_défaut }}
@@ -698,7 +714,10 @@
         </div>
         <h2>Vos conseils personnalisés</h2>
         <div class="conseils">
-            {{ conseils_contact_à_risque }}
+            <div class="conseil conseil-rouge">
+                {{ conseils_contact_à_risque }}
+            </div>
+            {{ conseils_contact_à_risque_info }}
         </div>
         <div id="conseils-departement" class="conseils" hidden>
             <h3>Votre localisation</h3>
@@ -706,10 +725,14 @@
                 {{ réponse_département }}
             </div>
             <div id="conseils-departement-rouge" hidden>
-                {{ conseils_département_rouge }}
+                <div class="conseil conseil-rouge">
+                    {{ conseils_département_rouge }}
+                </div>
             </div>
             <div id="conseils-departement-vert" hidden>
-                {{ conseils_département_vert }}
+                <div class="conseil conseil-vert">
+                    {{ conseils_département_vert }}
+                </div>
             </div>
             <div id="conseils-departement-default">
                 {{ conseils_département_défaut }}
