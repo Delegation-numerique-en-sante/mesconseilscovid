@@ -1,5 +1,5 @@
 
-# RéPonses
+# Réponses
 
 *Ce fichier est généré automatiquement pour pouvoir accéder rapidement aux contenus,il ne doit pas être édité !*
 
@@ -31,6 +31,22 @@ Vous vivez avec une ou des personnes considérée(s) comme fragile(s) face au co
 ## [réponse_activité_pro.md](réponse_activité_pro.md)
 
 Vous exercez une activité professionnelle et/ou bénévole (<a href="#activitepro">modifier</a>)
+
+
+---
+
+
+## [réponse_antécédents.md](réponse_antécédents.md)
+
+Vous présentez un ou des antécédents à risque : <b id="antecedents"></b>
+
+
+---
+
+
+## [réponse_caractéristiques.md](réponse_caractéristiques.md)
+
+Vous présentez une ou des caractéristiques à risque : <b id="caracteristiques"></b>
 
 
 ---

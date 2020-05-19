@@ -865,6 +865,14 @@ var Algorithme = function (questionnaire, carteDepartements) {
         var blockNames = []
         if (data.risques) {
             blockNames.push('conseils-caracteristiques')
+            // Réponses
+            if (data.antecedents || data.antecedent_chronique_autre) {
+                blockNames.push('reponse-antecedents')
+            }
+            if (data.sup65 || data.grossesse_3e_trimestre || data.imc > 30) {
+                blockNames.push('reponse-caracteristiques')
+            }
+            // Conseils
             if (data.activite_pro) {
                 blockNames.push('conseils-caracteristiques-antecedents-activite-pro')
             } else {
@@ -1320,6 +1328,8 @@ var OnPageLoadScripts = function () {
 
         // Dynamic data injections.
         injectionScripts.departement(element, data)
+        injectionScripts.caracteristiques(element, data)
+        injectionScripts.antecedents(element, data)
     }
 
     this.conseilssymptomespasses = function (element, pageName) {
@@ -1371,6 +1381,45 @@ var InjectionScrips = function () {
             carteDepartements.lien_prefecture(data.departement),
             '#lien-prefecture'
         )
+    }
+
+    this.caracteristiques = function (element, data) {
+        if (data.sup65 || data.grossesse_3e_trimestre || data.imc > 30) {
+            var content = ''
+            if (data.sup65) {
+                content = 'vous êtes âgé·e de plus de 65 ans'
+            } else if (data.grossesse_3e_trimestre) {
+                content = 'vous êtes au 3e trimestre de votre grossesse'
+            }
+            if (data.imc > 30) {
+                if (content !== '') {
+                    content += ' et '
+                }
+                content +=
+                    'vous avez un IMC supérieur à 30 (' + Math.round(data.imc) + ')'
+            }
+            content += '.'
+            affichage.injectContent(element, content, '#caracteristiques')
+        }
+    }
+
+    this.antecedents = function (element, data) {
+        if (data.antecedents || data.antecedent_chronique_autre) {
+            var content = ''
+            if (data.antecedents) {
+                content = 'vous avez des antécédents à risque'
+            }
+            if (data.antecedent_chronique_autre) {
+                if (content !== '') {
+                    content += ' et '
+                }
+                content +=
+                    'vous avez une maladie chronique, un handicap ' +
+                    'ou vous prenez un traitement au long cours'
+            }
+            content += '.'
+            affichage.injectContent(element, content, '#antecedents')
+        }
     }
 }
 

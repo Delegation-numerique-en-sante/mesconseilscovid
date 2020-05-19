@@ -148,6 +148,11 @@ Question (drépanocytose) : [libellé](questions/question_antécédents_drépano
 
 Question (chronique autre) : [libellé](questions/question_antécédents_chronique_autre_libellé.md)
 
+Réponse : 
+
+* [réponse_antécédents.md](réponses/réponse_antécédents.md) si [Antécédents](#antécédents) ou antécédents chroniques autres
+* [réponse_caractéristiques.md](réponses/réponse_caractéristiques.md) si âge > 65 ou grossesse 3e trimestre ou IMC > 30
+
 Conseils :
 
 Si âge > 65 ou grossesse 3e trimestre ou IMC > 30 ou [Antécédents](#antécédents) ou antécédents chroniques autres :
