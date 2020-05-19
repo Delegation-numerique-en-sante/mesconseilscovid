@@ -6,8 +6,6 @@
 
 ## [conseils_caractéristiques_antécédents_activité_pro.md](conseils_caractéristiques_antécédents_activité_pro.md)
 
-<div class="conseil">
-
 Afin d’éviter une forme grave de COVID19, il vous est recommandé
 d’appliquer les mesures de **distanciation physique renforcée :**
 
@@ -23,15 +21,11 @@ Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d�
 
 Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.
 
-</div>
-
 
 ---
 
 
 ## [conseils_foyer_enfants.md](conseils_foyer_enfants.md)
-
-<div class="conseil">
 
 Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face au COVID, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants :
 
@@ -42,23 +36,17 @@ Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à 
 
 Si vous ne pouvez pas faire garder votre enfant, des solutions existent (voir plus bas).
 
-</div>
-
 
 ---
 
 
 ## [conseils_activité_pro_santé.md](conseils_activité_pro_santé.md)
 
-<div class="conseil">
-
 Vous pouvez trouver les recommandations adaptées sur le site du ministère des solidarités et de la santé :
 
 * Pour les [professionnels **de santé**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/article/protection-des-professionnels-de-sante-face-au-covid-19)
 
 * Pour les [professionnels **du médico-social**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-du-social-et-medico-social/)
-
-</div>
 
 
 ---
@@ -141,8 +129,6 @@ Pour plus d’informations, vous pouvez :
 
 ## [conseils_caractéristiques_antécédents.md](conseils_caractéristiques_antécédents.md)
 
-<div class="conseil">
-
 Afin d’éviter une forme grave de COVID19, il vous est recommandé
 d’appliquer les mesures de **distanciation physique renforcée :**
 
@@ -155,8 +141,6 @@ d’appliquer les mesures de **distanciation physique renforcée :**
 Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d’urgence.
 
 Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.
-
-</div>
 
 
 ---
@@ -188,8 +172,6 @@ Pour plus d’informations, vous pouvez consulter les fiches-conseils métier po
 
 ## [conseils_foyer_enfants_fragile.md](conseils_foyer_enfants_fragile.md)
 
-<div class="conseil">
-
 Si vos enfants sortent à l’extérieur du foyer, il convient de mettre en place des mesures de **distanciation physique renforcée** :
 
 * Application stricte des gestes barrières
@@ -198,8 +180,6 @@ Si vos enfants sortent à l’extérieur du foyer, il convient de mettre en plac
 * En complément des gestes barrières, porter un masque lorsque la distanciation de 1m ne peut pas être respectée.
 
 Si vous ne pouvez pas faire garder votre enfant, des solutions existent (voir plus bas).
-
-</div>
 
 
 ---
@@ -221,8 +201,6 @@ Si vous n’avez pas de solution pour faire garder votre enfant :
 
 ## [conseils_foyer_fragile.md](conseils_foyer_fragile.md)
 
-<div class="conseil">
-
 Il est conseillé à votre proche de :
 
 * Poursuivre ou de reprendre son **suivi médical habituel** et **son traitement** si il ou elle en a un.
@@ -230,8 +208,6 @@ Il est conseillé à votre proche de :
 * Contacter son médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une prescription de masques chirurgicaux.
 
 Si vous devez rester à domicile pour vous occuper d’une personne vulnérable et que le télétravail n’est pas possible, contactez votre médecin pour envisager les mesures possibles.
-
-</div>
 
 
 ---
@@ -305,11 +281,7 @@ De façon générale il est conseillé une levée de l’isolement 8 jours aprè
 
 ## [conseils_activité_pro.md](conseils_activité_pro.md)
 
-<div class="conseil">
-
 Il est recommandé de **télétravailler** si cela vous est possible. Si vous devez vous rendre sur votre lieu de travail, le respect des **gestes barrières** et de la **distanciation physique** permet de limiter les risques de propagation du virus.
-
-</div>
 
 
 ---
@@ -317,11 +289,7 @@ Il est recommandé de **télétravailler** si cela vous est possible. Si vous de
 
 ## [conseils_antécédents_chroniques_autres.md](conseils_antécédents_chroniques_autres.md)
 
-<div class="conseil">
-
 Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habituel** et **votre traitement** si vous en avez un. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.
-
-</div>
 
 
 ---
@@ -329,11 +297,7 @@ Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habi
 
 ## [conseils_activité_pro_public.md](conseils_activité_pro_public.md)
 
-<div class="conseil">
-
 Nous vous recommandons de prendre connaissance des **précautions** relatives aux établissements recevant du **public** sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus#questions__reponses), sections « Pour vos achats et besoins essentiels » et  « Pour votre vie sociale ».
-
-</div>
 
 
 ---
