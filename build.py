@@ -9,7 +9,8 @@ import mistune
 from jinja2 import Environment as JinjaEnv
 from jinja2 import FileSystemLoader, StrictUndefined
 from minicli import cli, run, wrap
-from webassets import Bundle, Environment as AssetsEnv
+from webassets import Bundle
+from webassets import Environment as AssetsEnv
 
 HERE = Path(__file__).parent
 SRC_DIR = HERE / "src"
@@ -52,6 +53,13 @@ def static():
     shutil.copytree(SRC_DIR / "tests", DIST_DIR / "tests")
 
 
+def each_folder_from(source_dir):
+    """Walk across the `source_dir` and return the folder paths."""
+    for direntry in os.scandir(source_dir):
+        if direntry.is_dir():
+            yield direntry
+
+
 def each_markdown_from(source_dir, file_name="*.md"):
     """Walk across the `source_dir` and return the md file paths."""
     for filename in fnmatch.filter(os.listdir(source_dir), file_name):
@@ -61,12 +69,13 @@ def each_markdown_from(source_dir, file_name="*.md"):
 def build_responses(source_dir):
     """Extract and convert markdown from a `source_dir` directory into a dict."""
     responses = {}
-    for file_path, filename in each_markdown_from(source_dir):
-        html_content = markdown.read(file_path)
-        # Remove empty comments set to hack markdown rendering
-        # when we do not want paragraphs.
-        html_content = html_content.replace("<!---->", "")
-        responses[filename[: -len(".md")]] = html_content
+    for folder in each_folder_from(source_dir):
+        for file_path, filename in each_markdown_from(folder):
+            html_content = markdown.read(file_path)
+            # Remove empty comments set to hack markdown rendering
+            # when we do not want paragraphs.
+            html_content = html_content.replace("<!---->", "")
+            responses[filename[: -len(".md")]] = html_content
 
     return responses
 
