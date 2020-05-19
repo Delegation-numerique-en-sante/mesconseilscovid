@@ -182,8 +182,9 @@ Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé
 Conseils :
 
 1. [conseils_symptômes_actuels.md](conseils/conseils_symptômes_actuels.md)
-2. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
-3. [Conseils d’ordre général](#conseils-dordre-général)
+2. [conseils_isolement.md](conseils/conseils_isolement.md)
+3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
+4. [Conseils d’ordre général](#conseils-dordre-général)
 
 
 #### Symptômes passés
@@ -198,8 +199,9 @@ Conseils :
 
 1. [conseils_symptômes_passés_sans_risques.md](conseils/conseils_symptômes_passés_sans_risques.md) + [conseils_symptômes_passés_sans_risques_info.md](conseils/conseils_symptômes_passés_sans_risques_info.md) ou [conseils_symptômes_passés_avec_risques.md](conseils/conseils_symptômes_passés_avec_risques.md) + [conseils_symptômes_passés_avec_risques_info.md](conseils/conseils_symptômes_passés_avec_risques_info.md) selon la valeur de [Risque](#risque) (ou case foyer à risque cochée)
 2. [conseils_symptômes_passés_défaut.md](conseils/conseils_symptômes_passés_défaut.md)
-3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
-4. [Localisation](#localisation)
+3. [conseils_isolement.md](conseils/conseils_isolement.md)
+4. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
+5. [Localisation](#localisation)
 6. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
 7. [conseils_foyer_enfants_fragile_suivi.md](conseils/conseils_foyer_enfants_fragile_suivi.md)
 8. [conseils_antécédents_chroniques_autres.md](conseils/conseils_antécédents_chroniques_autres.md)
