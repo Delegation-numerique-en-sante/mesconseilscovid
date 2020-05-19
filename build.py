@@ -15,6 +15,7 @@ from webassets import Environment as AssetsEnv
 HERE = Path(__file__).parent
 SRC_DIR = HERE / "src"
 DIST_DIR = HERE / "dist"
+CONTENUS_DIR = HERE / "contenus"
 
 jinja_env = JinjaEnv(loader=FileSystemLoader(str(SRC_DIR)), undefined=StrictUndefined)
 
@@ -38,6 +39,7 @@ def all():
     clean()
     static()
     index()
+    readmes()
 
 
 @cli
@@ -83,7 +85,7 @@ def build_responses(source_dir):
 @cli
 def index():
     """Build the index with contents from markdown dedicated folder."""
-    responses = build_responses(Path("") / "contenus")
+    responses = build_responses(CONTENUS_DIR)
     render_template("template.html", DIST_DIR / "index.html", **responses)
     render_template("template_tests.html", DIST_DIR / "tests/index.html")
 
@@ -96,6 +98,32 @@ def render_template(src, output, **context):
         **context,
     )
     output.open("w").write(content)
+
+
+@cli
+def readmes():
+    """Build the readmes with all content from markdown files in it."""
+    for folder in each_folder_from(CONTENUS_DIR):
+        folder_content = f"""
+# {folder.name.title()}
+
+*Ce fichier est généré automatiquement pour pouvoir accéder rapidement aux contenus,\
+il ne doit pas être édité !*
+
+"""
+        for file_path, filename in each_markdown_from(folder):
+            if filename == "README.md":
+                continue
+            file_content = open(file_path).read()
+            folder_content += f"""
+## [{filename}]({filename})
+
+{file_content}
+
+---
+
+"""
+        (Path(folder.path) / "README.md").open("w").write(folder_content)
 
 
 @wrap
