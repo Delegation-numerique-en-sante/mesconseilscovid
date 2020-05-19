@@ -6,7 +6,7 @@
 
 ## [meta_titre.md](meta_titre.md)
 
-# [Mes conseils Covid<sup class="beta"> BETA</sup>]()
+# [Mes conseils Covid]()
 
 
 ---
