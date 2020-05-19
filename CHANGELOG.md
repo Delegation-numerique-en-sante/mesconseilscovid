@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-05-19
+
+* déploiement du changement de la doctrine officielle pour les masques
+
 ## 2020-05-18
 
 * déploiement des statuts en production avec code couleur en fonction de l’incitation au confinement
