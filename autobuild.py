@@ -1,7 +1,9 @@
 from livereload import Server, shell
 
 server = Server()
-server.watch("contenus/*.md", shell("make build"))
+server.watch(
+    "contenus/**/[!README]*.md", shell("make build"),
+)
 server.watch("src/tests/*.js", shell("make build"))
 server.watch("src/*.html", shell("make build"))
 server.watch("src/static/version.json", shell("make build"))
