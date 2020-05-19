@@ -17,7 +17,7 @@ d’appliquer les mesures de **distanciation physique renforcée :**
 * Masque en permanence à l’extérieur de mon foyer et à l’intérieur si je reçois des personnes étrangères à mon domicile
 * Distance de sécurité > 1m soit 4m<sup>2</sup>
 * Réduire les sorties au strict minimum
-* Contacter votre médecin généraliste afin de bénéficier d’une prescription pour la délivrance gratuite de **10 masques par semaine**.
+* Contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une prescription de masques chirurgicaux.
 
 Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d’urgence.
 
@@ -150,7 +150,7 @@ d’appliquer les mesures de **distanciation physique renforcée :**
 * Masque en permanence à l’extérieur de mon foyer et à l’intérieur si je reçois des personnes étrangères à mon domicile
 * Distance de sécurité > 1m soit 4m<sup>2</sup>
 * Réduire les sorties au strict minimum
-* Contacter votre médecin généraliste afin de bénéficier d’une prescription pour la délivrance gratuite de **10 masques par semaine**.
+* Contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une prescription de masques chirurgicaux.
 
 Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d’urgence.
 
@@ -227,7 +227,7 @@ Il est conseillé à votre proche de :
 
 * Poursuivre ou de reprendre son **suivi médical habituel** et **son traitement** si il ou elle en a un.
 
-* Contacter son médecin généraliste afin de bénéficier d’une prescription pour la délivrance gratuite de **10 masques** par semaine.
+* Contacter son médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une prescription de masques chirurgicaux.
 
 Si vous devez rester à domicile pour vous occuper d’une personne vulnérable et que le télétravail n’est pas possible, contactez votre médecin pour envisager les mesures possibles.
 
