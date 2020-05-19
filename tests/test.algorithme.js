@@ -257,6 +257,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
             )
         ).to.deep.equal([
             'conseils-caracteristiques',
+            'reponse-caracteristiques',
             'conseils-caracteristiques-antecedents',
             'conseils-caracteristiques-antecedents-info',
         ])
@@ -275,6 +276,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
             )
         ).to.deep.equal([
             'conseils-caracteristiques',
+            'reponse-caracteristiques',
             'conseils-caracteristiques-antecedents',
             'conseils-caracteristiques-antecedents-info',
         ])
@@ -292,6 +294,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
             )
         ).to.deep.equal([
             'conseils-caracteristiques',
+            'reponse-caracteristiques',
             'conseils-caracteristiques-antecedents',
             'conseils-caracteristiques-antecedents-info',
         ])
@@ -309,6 +312,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
             )
         ).to.deep.equal([
             'conseils-caracteristiques',
+            'reponse-antecedents',
             'conseils-caracteristiques-antecedents',
             'conseils-caracteristiques-antecedents-info-risque',
         ])
@@ -327,6 +331,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
             )
         ).to.deep.equal([
             'conseils-caracteristiques',
+            'reponse-antecedents',
             'conseils-caracteristiques-antecedents-activite-pro',
             'conseils-caracteristiques-antecedents-info-risque',
         ])
@@ -344,6 +349,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
             )
         ).to.deep.equal([
             'conseils-caracteristiques',
+            'reponse-antecedents',
             'conseils-caracteristiques-antecedents',
             'conseils-caracteristiques-antecedents-info-risque',
             'conseils-antecedents-chroniques-autres',
