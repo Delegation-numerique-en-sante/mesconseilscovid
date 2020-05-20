@@ -11,4 +11,4 @@ d’appliquer les mesures de **distanciation physique renforcée :**
 
 Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d’urgence.
 
-Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.
+Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi.
