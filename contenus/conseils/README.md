@@ -25,6 +25,18 @@ Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos méd
 ---
 
 
+## [conseils_symptômes_défaut.md](conseils_symptômes_défaut.md)
+
+Si vous le souhaitez, **vous pouvez limiter la chaîne de transmission** en informant vous-même vos proches et contacts à risque à l’aide de ce document :
+[Mémo-Contacts](memo-contacts.pdf)
+
+Ce document pourra aussi aider les professionnels de santé
+si vous souhaitez le partager.
+
+
+---
+
+
 ## [conseils_foyer_enfants.md](conseils_foyer_enfants.md)
 
 Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face au COVID, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants :
@@ -324,18 +336,6 @@ Votre département est en **niveau rouge**, la circulation épidémique est éle
 ## [conseils_isolement.md](conseils_isolement.md)
 
 Pour plus d’informations sur l’isolement : [« Je suis atteint par le coronavirus et je dois rester chez moi jusqu’à ma guérison »](https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf).
-
-
----
-
-
-## [conseils_symptômes_passés_défaut.md](conseils_symptômes_passés_défaut.md)
-
-Si vous le souhaitez, **vous pouvez limiter la chaîne de transmission** en informant vous-même vos proches et contacts à risque à l’aide de ce document :
-[Mémo-Contacts](memo-contacts.pdf)
-
-Ce document pourra aussi aider les professionnels de santé
-si vous souhaitez le partager.
 
 
 ---
