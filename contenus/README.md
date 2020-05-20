@@ -208,9 +208,7 @@ Conseils :
 4. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
 5. [Localisation](#localisation)
 6. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
-7. [conseils_foyer_enfants_fragile_suivi.md](conseils/conseils_foyer_enfants_fragile_suivi.md)
-8. [conseils_antécédents_chroniques_autres.md](conseils/conseils_antécédents_chroniques_autres.md)
-9. [Conseils d’ordre général](#conseils-dordre-général)
+7. [Conseils d’ordre général](#conseils-dordre-général)
 
 
 #### Contact à risque
@@ -237,9 +235,7 @@ Conseils :
 2. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
 3. [Localisation](#localisation)
 4. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
-5. [conseils_foyer_enfants_fragile_suivi.md](conseils/conseils_foyer_enfants_fragile_suivi.md)
-6. [conseils_antécédents_chroniques_autres.md](conseils/conseils_antécédents_chroniques_autres.md)
-7. [Conseils d’ordre général](#conseils-dordre-général)
+5. [Conseils d’ordre général](#conseils-dordre-général)
 
 
 ### Critères
