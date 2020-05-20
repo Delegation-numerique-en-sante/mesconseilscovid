@@ -95,7 +95,7 @@ C’est-à-dire en l’absence de mesures de protection efficaces pendant toute 
 
 * hygiaphone (vitre de protection) ou autre séparation physique (vitre)
 * sans masque chirurgical ou FFP2 porté par moi ou par la personne COVID confirmée
-* sans masque grand public fabriqué selon la norme AFNOR ou équivalent porté par moi ou par la personne COVID confirmée
+* sans masque grand public fabriqué selon la norme AFNOR ou équivalent porté par moi et par la personne COVID confirmée
 
 NB : Les professionnels de santé hospitalier ne sont pas concernés par cette évaluation des contacts à risque. Dans un contexte de soins, une évaluation spécifique doit être réalisée par le médecin du travail et l’équipe opérationnelle.
 
@@ -146,7 +146,7 @@ Coiffeur, aide à domicile, soins d’esthétique, soins infirmiers…
 
 ## [question_symptômes_contact_à_risque_libellé.md](question_symptômes_contact_à_risque_libellé.md)
 
-<!---->J’ai passé du temps avec une personne <b>COVID confirmée</b> (sans mesure de protection dédiée<sup>*</sup>)
+<!---->J’ai passé du temps avec une personne <b>testée positive au COVID</b> (sans mesure de protection dédiée<sup>*</sup>)
 
 
 ---
@@ -243,7 +243,7 @@ hypertension artérielle compliquée (avec complications cardiaques, rénales), 
 
 ## [question_antécédents_respi_aide.md](question_antécédents_respi_aide.md)
 
-broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose)
+broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose
 
 
 ---
@@ -259,7 +259,7 @@ broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome 
 
 ## [question_antécédents_immunodépression_aide.md](question_antécédents_immunodépression_aide.md)
 
-* médicamenteuse : chimiothérapie anti cancéreuse, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive ;
+* médicamenteuse : chimiothérapie anti cancéreuse, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive depuis plus de 15 jours ;
 * infection à VIH non contrôlée ou avec des CD4 <200/mm<sup>3</sup> ;
 * consécutive à une greffe d’organe solide ou de cellules souches hématopoïétiques ;
 * liée à une hémopathie maligne en cours de traitement.
@@ -282,7 +282,7 @@ perte de l’odorat et du gout
 
 ## [question_antécédents_immunodépression_libellé.md](question_antécédents_immunodépression_libellé.md)
 
-<!---->J’ai une <b>immunodépression</b> congénitale ou acquise :
+<!---->J’ai une <b>immunodépression</b> :
 
 
 ---

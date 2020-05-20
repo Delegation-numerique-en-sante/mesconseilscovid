@@ -19,7 +19,7 @@ d’appliquer les mesures de **distanciation physique renforcée :**
 
 Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d’urgence.
 
-Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.
+Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi.
 
 
 ---
@@ -84,13 +84,15 @@ Pour plus d’informations, vous pouvez consulter le [site du gouvernement](http
 
 ## [conseils_symptômes_actuels.md](conseils_symptômes_actuels.md)
 
-**Vous êtes peut-être infecté par le COVID19.**
+**Vous êtes peut-être porteur·se du COVID19.**
 
 Pour agir, il vous est conseillé :
 
 * De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 
 * **D’évaluer vos symptômes** avec [le service public d’orientation médicale](https://www.gouvernement.fr/info-coronavirus/orientation-medicale), qui vous orientera vers le professionnel de santé adapté.
+
+* De prendre connaissance de l’**infographie** sur le parcours : [j’ai des symptômes du COVID-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
 
 * D’appliquer les **gestes barrières**.
 
@@ -122,7 +124,7 @@ d’appliquer les mesures de **distanciation physique renforcée :**
 
 Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d’urgence.
 
-Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.
+Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi.
 
 
 ---
@@ -132,9 +134,7 @@ Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos méd
 
 Les consultations de vos enfants comportant des 
 **vaccins** obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) 
-doivent être **maintenues.** Il ne faut pas craindre de déranger 
-les professionnels de santé : ils se sont organisés pour continuer 
-à vous prendre en charge dans des conditions sécurisées.
+doivent être **maintenues.** 
 
 
 ---
@@ -193,7 +193,7 @@ Si vous devez rester à domicile pour vous occuper d’une personne vulnérable 
 
 ## [conseils_contact_à_risque.md](conseils_contact_à_risque.md)
 
-Nous vous conseillons de **contacter votre médecin généraliste**. Par la suite, un médecin ou un professionnel va vous contacter si cela n’est pas déjà fait.
+Nous vous conseillons de **contacter votre médecin généraliste**. Par la suite, les services de l’Assurance Maladie  vous contacteront si cela n’est pas déjà fait.
 
 En attendant plus d’informations, il vous est conseillé de :
 
@@ -250,7 +250,7 @@ De façon générale il est conseillé une levée de l’isolement 10 jours apr�
 
 ## [conseils_antécédents_chroniques_autres.md](conseils_antécédents_chroniques_autres.md)
 
-Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habituel** et **votre traitement** si vous en avez un. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.
+Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habituel** et **votre traitement** si vous en avez un. 
 
 
 ---
@@ -266,11 +266,13 @@ Nous vous recommandons de prendre connaissance des **précautions** relatives au
 
 ## [conseils_contact_à_risque_info.md](conseils_contact_à_risque_info.md)
 
-Pour plus d’informations sur :
+Pour plus d’informations :
 
-* l’isolement : [« Je suis atteint par le coronavirus et je dois rester chez moi jusqu’à ma guérison »](https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf).
+* la fiche : [« Quelles conduites adopter et quel sera mon parcours si j’ai été en contact avec un cas COVID-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_personne_contact.pdf) du ministère des solidarités et de la santé. 
 
-* les gestes barrières, vous pouvez consulter la page [« Comment se protéger du coronavirus COVID-19 ? »](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/comment-se-proteger-du-coronavirus-covid-19) du ministère des solidarités et de la santé.
+* l’infographie : [« je suis une personne contact d’un cas COVID-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-personne_contact.pdf). 
+
+* les gestes barrières : [« Comment se protéger du coronavirus COVID-19 ? »](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf) du ministère des solidarités et de la santé.
 
 
 ---
@@ -332,7 +334,7 @@ Votre département est en **niveau rouge**, la circulation épidémique est éle
 
 ## [conseils_isolement.md](conseils_isolement.md)
 
-Pour plus d’informations sur l’isolement : [« Je suis atteint par le coronavirus et je dois rester chez moi jusqu’à ma guérison »](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/comment-se-proteger-du-coronavirus-covid-19).
+Pour plus d’informations sur l’isolement : [« Je suis atteint par le coronavirus et je dois rester chez moi jusqu’à ma guérison »](https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf).
 
 
 ---
@@ -386,11 +388,13 @@ Pour plus d’informations, vous pouvez consulter :
 
 Pour plus d’informations, vous pouvez consulter :
 
-* le site du gouvernement sur [le port d’un masque grand public](https://www.gouvernement.fr/info-coronavirus/masques-grand-public).
+* le site du ministère des solidarités et de la santé sur [le port du masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf).
+
+* la fiche : [« Quelles conduites adopter pour limiter la transmission du virus »](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf). 
 
 * les [recommandations de l’Anses](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses) sur l’alimentation, les courses et le nettoyage.
 
-* la page sur les gestes barrières : [« Comment se protéger du coronavirus COVID-19 ? »](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/comment-se-proteger-du-coronavirus-covid-19) du ministère des solidarités et de la santé.
+* la page sur les gestes barrières : [« Comment se protéger du coronavirus COVID-19 ? »](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf) du ministère des solidarités et de la santé.
 
 * le site [covid19-faq](https://www.covid19-faq.fr/) si vous avez des questions par rapport au COVID.
 
