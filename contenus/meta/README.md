@@ -30,11 +30,11 @@ Vous serez redirigé·e vers le questionnaire si de nouvelles informations sont 
 
 ### À propos
 
-mesconseilscovid.sante.gouv.fr est service de prévention et de conseil personnalisé pour se protéger et protéger les autres face au virus.
+mesconseilscovid.sante.gouv.fr est un service de prévention et de conseil personnalisé pour se protéger et protéger les autres face au virus.
 
 mesconseilscovid.sante.gouv.fr est un service du ministère des solidarités et de la santé. 
 
-Nous sommes une équipe mixte, composée de médecins (infectiologues, anesthésistes, généralistes…), de représentants d’associations de patients et de experts du numérique, en charge de sa conception.
+Nous sommes une équipe mixte, composée de médecins (infectiologues, anesthésistes, généralistes…), de représentants d’associations de patients et d’experts du numérique, en charge de sa conception.
 
 Notre objectif est de fournir à tous une source d’information simple et fiable pour agir dans la lutte contre le virus. 
 
