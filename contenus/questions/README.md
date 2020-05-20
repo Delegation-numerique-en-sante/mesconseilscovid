@@ -146,7 +146,7 @@ Coiffeur, aide à domicile, soins d’esthétique, soins infirmiers…
 
 ## [question_symptômes_contact_à_risque_libellé.md](question_symptômes_contact_à_risque_libellé.md)
 
-<!---->J’ai passé du temps avec une personne <b>testée positive au COVID</b> (sans mesure de protection dédiée<sup>*</sup>)
+<!---->J’ai passé du temps avec une personne <b>testée positive au COVID</b> dans les <b>14 derniers jours</b>, sans mesure de protection dédiée<sup>*</sup>
 
 
 ---
