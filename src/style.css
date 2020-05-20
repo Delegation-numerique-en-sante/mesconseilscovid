@@ -229,7 +229,7 @@ fieldset ul.details {
 }
 .form-controls .back-button {
     margin-top: 2rem;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%23000091' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='arcs'><path d='M19 12H6M12 5l-7 7 7 7'/></svg>");
+    background-image: url("arrow-left.svg");
     background-position: 10px center;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -313,7 +313,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 680px) 
 
 /* Nicer select, based on https://github.com/filamentgroup/select-css */
 select {
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-image: url('select.svg');
     background-repeat: no-repeat;
     background-position: right 0.7em top 50%;
     background-size: 0.65em auto;
@@ -402,7 +402,7 @@ a#geolocalisation {
     display: block;
     width: 2rem;
     height: 2rem;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIxNnB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZWZzLz48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGlkPSJJY29ucyB3aXRoIG51bWJlcnMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIj48ZyBmaWxsPSIjMDAwMDAwIiBpZD0iR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xOTIuMDAwMDAwLCAtMTkyLjAwMDAwMCkiPjxwYXRoIGQ9Ik0yMDEsMjA1LjkxNzA0MiBDMjAzLjUxMjUwMiwyMDUuNDk1NTMgMjA1LjQ5NTUyNywyMDMuNTEyNTA1IDIwNS45MTcwNDIsMjAxIEwyMDMsMjAxIEwyMDMsMTk5IEwyMDUuOTE3MDQyLDE5OSBDMjA1LjQ5NTUyNywxOTYuNDg3NDk1IDIwMy41MTI1MDIsMTk0LjUwNDQ3IDIwMSwxOTQuMDgyOTU4IEwyMDEsMTk3IEwxOTksMTk3IEwxOTksMTk0LjA4Mjk1OCBDMTk2LjQ4NzQ5OCwxOTQuNTA0NDcgMTk0LjUwNDQ3MywxOTYuNDg3NDk1IDE5NC4wODI5NTgsMTk5IEwxOTcsMTk5IEwxOTcsMjAxIEwxOTQuMDgyOTU4LDIwMSBDMTk0LjUwNDQ3MywyMDMuNTEyNTA1IDE5Ni40ODc0OTgsMjA1LjQ5NTUzIDE5OSwyMDUuOTE3MDQyIEwxOTksMjAzIEwyMDEsMjAzIFogTTIwMCwyMDggQzE5NS41ODE3MjIsMjA4IDE5MiwyMDQuNDE4Mjc4IDE5MiwyMDAgQzE5MiwxOTUuNTgxNzIyIDE5NS41ODE3MjIsMTkyIDIwMCwxOTIgQzIwNC40MTgyNzgsMTkyIDIwOCwxOTUuNTgxNzIyIDIwOCwyMDAgQzIwOCwyMDQuNDE4Mjc4IDIwNC40MTgyNzgsMjA4IDIwMCwyMDggWiBNMjAwLDIwOCIgaWQ9Ik92YWwgMTYzIi8+PC9nPjwvZz48L3N2Zz4=);
+    background-image: url("map-marker2.svg");
     background-size: contain;
 }
 
