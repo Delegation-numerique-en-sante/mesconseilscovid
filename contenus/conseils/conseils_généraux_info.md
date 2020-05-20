@@ -1,6 +1,6 @@
 Pour plus d’informations, vous pouvez consulter :
 
-* le site du ministère des solidarité et de la santé sur [le port du masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf).
+* le site du ministère des solidarités et de la santé sur [le port du masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf).
 
 * la fiche : [« Quelles conduites adopter pour limiter la transmission du virus »](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf). 
 
