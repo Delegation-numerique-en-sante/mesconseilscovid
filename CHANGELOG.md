@@ -1,5 +1,15 @@
 # Changelog
 
+## 2020-05-20
+
+* PR#88 : changement du fichier Pense-bête en Mémo-Contacts
+* #74 : les conseils redondants ont été retirés pour les cas de symptômes passés et contact à risque
+* #87 : conseil Mémo Contacts affiché pour symptômes actuels aussi
+* intégration de multiples mise à jour de contenus
+* ajout de liens de modifications depuis les conseils pour les caractéristiques et les antécédents
+* correction d’affichage des icônes sur l’instance de production
+* PR#73 : retrait de la mention BETA 🙂
+
 ## 2020-05-19
 
 * déploiement du changement de la doctrine officielle pour les masques
