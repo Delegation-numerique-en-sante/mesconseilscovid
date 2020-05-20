@@ -1,4 +1,4 @@
-**Vous êtes peut-être infecté par le COVID19.**
+**Vous êtes peut-être porteur·se du COVID19.**
 
 Pour agir, il vous est conseillé :
 
