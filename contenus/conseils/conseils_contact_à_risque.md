@@ -1,4 +1,4 @@
-Nous vous conseillons de **contacter votre médecin généraliste**. Par la suite, un médecin ou un professionnel va vous contacter si cela n’est pas déjà fait.
+Nous vous conseillons de **contacter votre médecin généraliste**. Par la suite, les services de l’Assurance Maladie  vous contacteront si cela n’est pas déjà fait.
 
 En attendant plus d’informations, il vous est conseillé de :
 
