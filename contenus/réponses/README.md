@@ -38,7 +38,8 @@ Vous exercez une activité professionnelle et/ou bénévole (<a href="#activitep
 
 ## [réponse_antécédents.md](réponse_antécédents.md)
 
-Vous présentez un ou des antécédents à risque : <b id="antecedents"></b>
+Vous présentez un ou des antécédents à risque : <b id="nom-antecedents"></b>
+ (<a href="#antecedents">modifier</a>)
 
 
 ---
@@ -46,7 +47,7 @@ Vous présentez un ou des antécédents à risque : <b id="antecedents"></b>
 
 ## [réponse_caractéristiques.md](réponse_caractéristiques.md)
 
-Vous présentez une ou des caractéristiques à risque : <b id="caracteristiques"></b>
+Vous présentez une ou des caractéristiques à risque : <b id="nom-caracteristiques"></b> (<a href="#caracteristiques">modifier</a>)
 
 
 ---

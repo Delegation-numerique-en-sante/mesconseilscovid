@@ -1399,7 +1399,7 @@ var InjectionScrips = function () {
                     'vous avez un IMC supérieur à 30 (' + Math.round(data.imc) + ')'
             }
             content += '.'
-            affichage.injectContent(element, content, '#caracteristiques')
+            affichage.injectContent(element, content, '#nom-caracteristiques')
         }
     }
 
@@ -1418,7 +1418,7 @@ var InjectionScrips = function () {
                     'ou vous prenez un traitement au long cours'
             }
             content += '.'
-            affichage.injectContent(element, content, '#antecedents')
+            affichage.injectContent(element, content, '#nom-antecedents')
         }
     }
 }
