@@ -30,7 +30,7 @@
 
 ## [question_antécédents_dialyse_libellé.md](question_antécédents_dialyse_libellé.md)
 
-<!---->J’ai une <b>insuffisance rénale</b> chronique avec besoin de faire de la dialyse
+<!---->J’ai une <b>insuffisance rénale</b> chronique et je suis sous dialyse
 
 
 ---

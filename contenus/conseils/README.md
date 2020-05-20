@@ -343,7 +343,7 @@ Pour plus d’informations sur l’isolement : [« Je suis atteint par le coro
 ## [conseils_symptômes_passés_défaut.md](conseils_symptômes_passés_défaut.md)
 
 Si vous le souhaitez, **vous pouvez limiter la chaîne de transmission** en informant vous-même vos proches et contacts à risque à l’aide de ce document :
-[pense-bête](pense-bete.pdf)
+[Mémo-Contacts](memo-contacts.pdf)
 
 Ce document pourra aussi aider les professionnels de santé
 si vous souhaitez le partager.
