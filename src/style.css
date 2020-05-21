@@ -29,6 +29,16 @@ body {
     overflow: inherit;
     min-width: 360px;
 }
+a {
+    color: #000091;
+}
+a:visited {
+    color: #484d7a;
+}
+a:hover,
+a:active {
+    text-decoration-style: dashed;
+}
 
 section {
     max-width: 60em;
@@ -52,10 +62,13 @@ header h1 {
 }
 header h1 a {
     text-decoration: none;
-    color: inherit;
+    color: black;
 }
 header h1 a:hover {
     text-decoration: underline;
+}
+header h1 a:visited {
+    color: black;
 }
 main {
     background-color: #f9f8f6;
