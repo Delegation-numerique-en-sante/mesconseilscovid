@@ -439,3 +439,12 @@ a#geolocalisation {
     font-size: .8rem;
     margin-bottom: 1rem;
 }
+
+.message {
+    border: 1px solid;
+    padding: 1rem;
+}
+.message-error {
+    background-color: #ffb6a5;
+    border-color: #ff6f4c;
+}

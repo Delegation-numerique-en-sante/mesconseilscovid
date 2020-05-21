@@ -122,6 +122,27 @@ var FormUtils = function () {
         })
     }
 
+    this.toggleFormButtonOnSelectFieldsRequired = function (
+        form,
+        initialLabel,
+        requiredLabel
+    ) {
+        var button = form.querySelector('input[type=submit]')
+        var selectFields = [].slice.call(form.querySelectorAll('select'))
+
+        function updateSubmitButtonLabelRequired(event) {
+            var allFilled = selectFields.every(function (selectField) {
+                return selectField.value !== selectField.options[0].value
+            })
+            button.disabled = !allFilled
+            button.value = allFilled ? initialLabel : requiredLabel
+        }
+        updateSubmitButtonLabelRequired()
+        selectFields.forEach(function (elem) {
+            elem.addEventListener('change', updateSubmitButtonLabelRequired)
+        })
+    }
+
     this.enableOrDisableSecondaryFields = function (form, primary) {
         var primaryDisabled = !primary.checked
         ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
@@ -740,10 +761,11 @@ function resetPrivateData(event) {
 }
 
 var Geolocaliseur = function () {
-    this.matchDepartement = function (lat, lon, callback) {
+    this.matchDepartement = function (lat, lon, departementFound, departementNotFound) {
         // Warning, in case of multiple polygons, you can have multiple matches.
         var that = this
         this.loadMap(function (featureCollection) {
+            var notFound = true
             featureCollection.features.forEach(function (departement) {
                 if (departement.geometry.type === 'Polygon') {
                     var polyCoordinates = [departement.geometry.coordinates]
@@ -753,11 +775,13 @@ var Geolocaliseur = function () {
                 polyCoordinates.forEach(function (polyCoordinate) {
                     polyCoordinate.forEach(function (coord) {
                         if (that.booleanPointInPolygon([lon, lat], coord)) {
-                            callback(departement.properties)
+                            notFound = false
+                            departementFound(departement.properties)
                         }
                     })
                 })
             })
+            notFound && departementNotFound()
         })
     }
 
@@ -796,18 +820,33 @@ geolocaliseur = new Geolocaliseur()
 
 function geolocalisation(event) {
     event.preventDefault()
+    var form = document.querySelector('form#residence-form')
+    affichage.hideSelector(form, '#error-geolocalisation')
+    var onDepartementFound = function (departement) {
+        var select = form.querySelector('#departement')
+        select.value = departement.code
+        // We manually trigger the change event for the submit button toggle.
+        select.dispatchEvent(new CustomEvent('change'))
+    }
+    var onDepartementNotFound = function () {
+        // L’utilisateur n’est probablement pas sur le territoire français.
+        affichage.displayElement(form, 'error-geolocalisation')
+    }
     navigator.geolocation.getCurrentPosition(
-        function (pos) {
-            var latitude = pos.coords.latitude
-            var longitude = pos.coords.longitude
-            geolocaliseur.matchDepartement(latitude, longitude, function (dpt) {
-                if (typeof dpt !== 'undefined') {
-                    document.getElementById('departement').value = dpt.code
-                }
-            })
+        function (position) {
+            var latitude = position.coords.latitude
+            var longitude = position.coords.longitude
+            geolocaliseur.matchDepartement(
+                latitude,
+                longitude,
+                onDepartementFound,
+                onDepartementNotFound
+            )
         },
-        function (err) {
-            console.warn('ERREUR (' + err.code + '): ' + err.message)
+        function (error) {
+            // L’utilisateur a probablement refusé la géolocalisation.
+            console.warn('ERREUR (' + error.code + '): ' + error.message)
+            onDepartementNotFound()
         },
         {
             enableHighAccuracy: true,
@@ -1340,7 +1379,17 @@ var OnPageLoadScripts = function () {
     }
 
     this.residence = function (form, pageName) {
+        var button = form.querySelector('input[type=submit]')
         formUtils.preloadForm(form, 'departement')
+        formUtils.toggleFormButtonOnSelectFieldsRequired(
+            form,
+            button.value,
+            'Votre département de résidence est requis'
+        )
+        affichage.hideSelector(form, '#error-geolocalisation')
+        form.querySelector('select').addEventListener('change', function () {
+            affichage.hideSelector(form, '#error-geolocalisation')
+        })
         form.addEventListener('submit', onSubmitFormScripts[pageName])
         document
             .getElementById('geolocalisation')
