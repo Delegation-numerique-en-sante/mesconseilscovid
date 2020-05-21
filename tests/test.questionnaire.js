@@ -31,6 +31,11 @@ describe('Questionnaire', function () {
             symptomes_actuels: undefined,
             symptomes_passes: undefined,
             contact_a_risque: undefined,
+            contact_a_risque_meme_lieu_de_vie: undefined,
+            contact_a_risque_contact_direct: undefined,
+            contact_a_risque_actes: undefined,
+            contact_a_risque_espace_confine: undefined,
+            contact_a_risque_meme_classe: undefined,
             contact_a_risque_autre: undefined,
         })
         chai.expect(questionnaire.isComplete()).to.equal(false)
@@ -80,6 +85,11 @@ describe('Questionnaire', function () {
             symptomes_actuels: false,
             symptomes_passes: false,
             contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie: false,
+            contact_a_risque_contact_direct: false,
+            contact_a_risque_actes: false,
+            contact_a_risque_espace_confine: false,
+            contact_a_risque_meme_classe: false,
             contact_a_risque_autre: true,
         }
         questionnaire.fillData(data)
@@ -111,6 +121,11 @@ describe('Questionnaire', function () {
             symptomes_actuels: false,
             symptomes_passes: false,
             contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie: false,
+            contact_a_risque_contact_direct: false,
+            contact_a_risque_actes: false,
+            contact_a_risque_espace_confine: false,
+            contact_a_risque_meme_classe: false,
             contact_a_risque_autre: true,
         }
         questionnaire.fillData(data)
@@ -138,6 +153,11 @@ describe('Questionnaire', function () {
             symptomes_actuels: undefined,
             symptomes_passes: undefined,
             contact_a_risque: undefined,
+            contact_a_risque_meme_lieu_de_vie: undefined,
+            contact_a_risque_contact_direct: undefined,
+            contact_a_risque_actes: undefined,
+            contact_a_risque_espace_confine: undefined,
+            contact_a_risque_meme_classe: undefined,
             contact_a_risque_autre: undefined,
         })
         chai.expect(questionnaire.isComplete()).to.equal(false)
