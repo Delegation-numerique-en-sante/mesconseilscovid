@@ -609,6 +609,11 @@ var Questionnaire = function () {
         this.symptomes_actuels = undefined
         this.symptomes_passes = undefined
         this.contact_a_risque = undefined
+        this.contact_a_risque_meme_lieu_de_vie = undefined
+        this.contact_a_risque_contact_direct = undefined
+        this.contact_a_risque_actes = undefined
+        this.contact_a_risque_espace_confine = undefined
+        this.contact_a_risque_meme_classe = undefined
         this.contact_a_risque_autre = undefined
     }
 
@@ -635,6 +640,12 @@ var Questionnaire = function () {
         this.symptomes_actuels = data['symptomes_actuels']
         this.symptomes_passes = data['symptomes_passes']
         this.contact_a_risque = data['contact_a_risque']
+        this.contact_a_risque_meme_lieu_de_vie =
+            data['contact_a_risque_meme_lieu_de_vie']
+        this.contact_a_risque_contact_direct = data['contact_a_risque_contact_direct']
+        this.contact_a_risque_actes = data['contact_a_risque_actes']
+        this.contact_a_risque_espace_confine = data['contact_a_risque_espace_confine']
+        this.contact_a_risque_meme_classe = data['contact_a_risque_meme_classe']
         this.contact_a_risque_autre = data['contact_a_risque_autre']
     }
 
@@ -662,6 +673,11 @@ var Questionnaire = function () {
             symptomes_actuels: this.symptomes_actuels,
             symptomes_passes: this.symptomes_passes,
             contact_a_risque: this.contact_a_risque,
+            contact_a_risque_meme_lieu_de_vie: this.contact_a_risque_meme_lieu_de_vie,
+            contact_a_risque_contact_direct: this.contact_a_risque_contact_direct,
+            contact_a_risque_actes: this.contact_a_risque_actes,
+            contact_a_risque_espace_confine: this.contact_a_risque_espace_confine,
+            contact_a_risque_meme_classe: this.contact_a_risque_meme_classe,
             contact_a_risque_autre: this.contact_a_risque_autre,
         }
     }
@@ -1226,7 +1242,12 @@ var OnSubmitFormScripts = function () {
             // On complète manuellement le formulaire pour le rendre complet.
             questionnaire.symptomes_passes = false
             questionnaire.contact_a_risque = false
-            questionnaire.contact_a_risque_autre = false
+            questionnaire.contact_a_risque_meme_lieu_de_vie = undefined
+            questionnaire.contact_a_risque_contact_direct = undefined
+            questionnaire.contact_a_risque_actes = undefined
+            questionnaire.contact_a_risque_espace_confine = undefined
+            questionnaire.contact_a_risque_meme_classe = undefined
+            questionnaire.contact_a_risque_autre = undefined
             stockageLocal.enregistrer(questionnaire)
             navigation.goToPage('conseilssymptomesactuels')
         } else {
@@ -1242,7 +1263,12 @@ var OnSubmitFormScripts = function () {
         if (questionnaire.symptomes_passes) {
             // On complète manuellement le formulaire pour le rendre complet.
             questionnaire.contact_a_risque = false
-            questionnaire.contact_a_risque_autre = false
+            questionnaire.contact_a_risque_meme_lieu_de_vie = undefined
+            questionnaire.contact_a_risque_contact_direct = undefined
+            questionnaire.contact_a_risque_actes = undefined
+            questionnaire.contact_a_risque_espace_confine = undefined
+            questionnaire.contact_a_risque_meme_classe = undefined
+            questionnaire.contact_a_risque_autre = undefined
             stockageLocal.enregistrer(questionnaire)
             navigation.goToPage('conseilssymptomespasses')
         } else {
@@ -1255,6 +1281,16 @@ var OnSubmitFormScripts = function () {
         event.preventDefault()
         questionnaire.contact_a_risque =
             event.target.elements['contact_a_risque'].checked
+        questionnaire.contact_a_risque_meme_lieu_de_vie =
+            event.target.elements['contact_a_risque_meme_lieu_de_vie'].checked
+        questionnaire.contact_a_risque_contact_direct =
+            event.target.elements['contact_a_risque_contact_direct'].checked
+        questionnaire.contact_a_risque_actes =
+            event.target.elements['contact_a_risque_actes'].checked
+        questionnaire.contact_a_risque_espace_confine =
+            event.target.elements['contact_a_risque_espace_confine'].checked
+        questionnaire.contact_a_risque_meme_classe =
+            event.target.elements['contact_a_risque_meme_classe'].checked
         questionnaire.contact_a_risque_autre =
             event.target.elements['contact_a_risque_autre'].checked
         stockageLocal.enregistrer(questionnaire)
@@ -1348,6 +1384,11 @@ var OnPageLoadScripts = function () {
     this.contactarisque = function (form, pageName) {
         var button = form.querySelector('input[type=submit]')
         formUtils.preloadCheckboxForm(form, 'contact_a_risque')
+        formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_lieu_de_vie')
+        formUtils.preloadCheckboxForm(form, 'contact_a_risque_contact_direct')
+        formUtils.preloadCheckboxForm(form, 'contact_a_risque_actes')
+        formUtils.preloadCheckboxForm(form, 'contact_a_risque_espace_confine')
+        formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_classe')
         formUtils.preloadCheckboxForm(form, 'contact_a_risque_autre')
         var primary = form.elements['contact_a_risque']
         formUtils.enableOrDisableSecondaryFields(form, primary)
