@@ -119,13 +119,17 @@ Si seule la case fragile est cochée :
 
 [Titre caractéristiques](questions/question_caractéristiques_titre.md) 
 
+Question (âge + grossesse) : [titre](questions/question_caractéristiques_âge_grossesse_titre.md)
+
 Question (âge) : [libellé](questions/question_caractéristiques_âge_libellé.md)
 
 Question (grossesse) : [libellé](questions/question_caractéristiques_grossesse_libellé.md)
 
-Question (taille) : [libellé](questions/question_caractéristiques_taille_libellé.md), [aide](questions/question_caractéristiques_taille_poids_aide.md)
+Question (taille + poids) : [titre](questions/question_caractéristiques_taille_poids_titre.md)
 
-Question (poids) : [libellé](questions/question_caractéristiques_poids_libellé.md), [aide](questions/question_caractéristiques_taille_poids_aide.md)
+Question (taille) : [libellé](questions/question_caractéristiques_taille_libellé.md)
+
+Question (poids) : [libellé](questions/question_caractéristiques_poids_libellé.md)
 
 
 [Titre antécédents](questions/question_antécédents_titre.md)

@@ -80,6 +80,14 @@ Une personne considérée comme fragile face au covid-19 est une personne prése
 ---
 
 
+## [question_caractéristiques_âge_grossesse_titre.md](question_caractéristiques_âge_grossesse_titre.md)
+
+<!---->Mes facteurs de risques
+
+
+---
+
+
 ## [question_antécédents_chronique_autre_libellé.md](question_antécédents_chronique_autre_libellé.md)
 
 <!---->J’ai une autre maladie chronique, ou handicap, ou je prends un traitement au long cours
@@ -106,15 +114,6 @@ NB : Les professionnels de santé hospitaliers ne sont pas concernés par cette
 ## [question_foyer_fragile_libellé.md](question_foyer_fragile_libellé.md)
 
 <!---->Je vis avec une ou des personnes considérée(s) comme <b>fragile(s)</b><sup>*</sup> face au covid-19 et/ou en situation de handicap
-
-
----
-
-
-## [question_caractéristiques_taille_poids_aide.md](question_caractéristiques_taille_poids_aide.md)
-
-<sup>*</sup>
-Indice de Masse Corporelle
 
 
 ---
@@ -335,6 +334,14 @@ Des personnes croisées dans l’espace public de manière fugace ne sont pas co
 ## [question_antécédents_diabète_libellé.md](question_antécédents_diabète_libellé.md)
 
 <!---->J’ai un <b>diabète</b> mal équilibré ou avec des complications (yeux, reins)
+
+
+---
+
+
+## [question_caractéristiques_taille_poids_titre.md](question_caractéristiques_taille_poids_titre.md)
+
+<!---->Calculer mon Indice de Masse Corporelle (IMC)
 
 
 ---

@@ -101,6 +101,27 @@ var FormUtils = function () {
         })
     }
 
+    this.toggleFormButtonOnTextFieldsRequired = function (
+        form,
+        initialLabel,
+        requiredLabel
+    ) {
+        var button = form.querySelector('input[type=submit]')
+        var textFields = [].slice.call(form.querySelectorAll('input[type=text]'))
+
+        function updateSubmitButtonLabelRequired(event) {
+            var allFilled = textFields.every(function (textField) {
+                return textField.value !== ''
+            })
+            button.disabled = !allFilled
+            button.value = allFilled ? initialLabel : requiredLabel
+        }
+        updateSubmitButtonLabelRequired()
+        textFields.forEach(function (elem) {
+            elem.addEventListener('blur', updateSubmitButtonLabelRequired)
+        })
+    }
+
     this.enableOrDisableSecondaryFields = function (form, primary) {
         var primaryDisabled = !primary.checked
         ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
@@ -1345,10 +1366,16 @@ var OnPageLoadScripts = function () {
     }
 
     this.caracteristiques = function (form, pageName) {
+        var button = form.querySelector('input[type=submit]')
         formUtils.preloadCheckboxForm(form, 'sup65')
         formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre')
         formUtils.preloadForm(form, 'taille')
         formUtils.preloadForm(form, 'poids')
+        formUtils.toggleFormButtonOnTextFieldsRequired(
+            form,
+            button.value,
+            'Les informations de poids et de taille sont requises'
+        )
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
