@@ -1475,7 +1475,7 @@ var OnPageLoadScripts = function () {
             form,
             button.value,
             'Terminer',
-            'Vous devez saisir l’un des choix proposés'
+            'Vous devez saisir l’un des sous-choix proposés'
         )
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
