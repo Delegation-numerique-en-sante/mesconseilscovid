@@ -447,6 +447,12 @@
                     <span>{{ question_symptômes_contact_à_risque_même_classe_libellé }}</span>
                 </label>
             </div>
+            <div class="secondary disabled">
+                <input id="contact_a_risque_autre" type="checkbox" name="contact_a_risque_autre" disabled>
+                <label for="contact_a_risque_autre">
+                    <span>{{ question_symptômes_contact_à_risque_autre_libellé }}</span>
+                </label>
+            </div>
             <div class="details">
                 <span>
                     {{ question_symptômes_contact_à_risque_aide }}
@@ -716,6 +722,9 @@
                 {{ conseils_contact_à_risque }}
             </div>
             {{ conseils_contact_à_risque_info }}
+            <div id="conseils-contact-a-risque-autre" hidden>
+                {{ conseils_contact_à_risque_autre }}
+            </div>
         </div>
         <div id="conseils-departement" class="conseils" hidden>
             <h3>Votre localisation</h3>

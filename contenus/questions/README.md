@@ -380,6 +380,14 @@ Des personnes croisées dans l’espace public de manière fugace ne sont pas co
 ---
 
 
+## [question_symptômes_contact_à_risque_autre_libellé.md](question_symptômes_contact_à_risque_autre_libellé.md)
+
+<!---->Je n’étais dans <b>aucune de ces situations</b>
+
+
+---
+
+
 ## [question_symptômes_contact_à_risque_actes_libellé.md](question_symptômes_contact_à_risque_actes_libellé.md)
 
 <!---->J’ai prodigué ou reçu des actes d’hygiène ou de soins

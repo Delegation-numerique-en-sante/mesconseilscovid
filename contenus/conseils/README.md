@@ -142,6 +142,14 @@ Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos méd
 ---
 
 
+## [conseils_contact_à_risque_autre.md](conseils_contact_à_risque_autre.md)
+
+Vous avez passé du temps avec quelqu’un de positif sans prendre de risques. Si dans les jours qui viennent vous ressentez des premiers symptômes, n’hésitez pas à contacter un médecin.
+
+
+---
+
+
 ## [conseils_foyer_enfants_vaccins.md](conseils_foyer_enfants_vaccins.md)
 
 Les consultations de vos enfants comportant des 

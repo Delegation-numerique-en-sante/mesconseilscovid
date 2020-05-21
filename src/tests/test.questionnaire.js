@@ -31,6 +31,7 @@ describe('Questionnaire', function () {
             symptomes_actuels: undefined,
             symptomes_passes: undefined,
             contact_a_risque: undefined,
+            contact_a_risque_autre: undefined,
         })
         chai.expect(questionnaire.isComplete()).to.equal(false)
     })
@@ -79,6 +80,7 @@ describe('Questionnaire', function () {
             symptomes_actuels: false,
             symptomes_passes: false,
             contact_a_risque: true,
+            contact_a_risque_autre: true,
         }
         questionnaire.fillData(data)
         chai.expect(questionnaire.getData()).to.deep.equal(data)
@@ -109,6 +111,7 @@ describe('Questionnaire', function () {
             symptomes_actuels: false,
             symptomes_passes: false,
             contact_a_risque: true,
+            contact_a_risque_autre: true,
         }
         questionnaire.fillData(data)
         questionnaire.resetData()
@@ -135,6 +138,7 @@ describe('Questionnaire', function () {
             symptomes_actuels: undefined,
             symptomes_passes: undefined,
             contact_a_risque: undefined,
+            contact_a_risque_autre: undefined,
         })
         chai.expect(questionnaire.isComplete()).to.equal(false)
     })

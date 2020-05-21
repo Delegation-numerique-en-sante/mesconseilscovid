@@ -228,15 +228,18 @@ Sous-question (espace confiné) : [libellé](questions/question_symptômes_conta
 
 Sous-question (même classe) : [libellé](questions/question_symptômes_contact_à_risque_même_classe_libellé.md)
 
+Sous-question (autre) : [libellé](questions/question_symptômes_contact_à_risque_autre_libellé.md)
+
 Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (rouge)
 
 Conseils :
 
 1. [conseils_contact_à_risque.md](conseils/conseils_contact_à_risque.md) + [conseils_contact_à_risque_info.md](conseils/conseils_contact_à_risque_info.md)
-2. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
-3. [Localisation](#localisation)
-4. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
-5. [Conseils d’ordre général](#conseils-dordre-général)
+2. [conseils_contact_à_risque_autre.md](conseils/conseils_contact_à_risque_autre.md) si la case `aucune de ces situations` est cochée
+3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
+4. [Localisation](#localisation)
+5. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
+6. [Conseils d’ordre général](#conseils-dordre-général)
 
 
 ### Critères

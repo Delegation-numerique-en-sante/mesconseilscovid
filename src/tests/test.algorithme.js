@@ -399,3 +399,35 @@ describe('Algorithme symptômes passés', function () {
         ).to.deep.equal(['conseils-symptomes-passes-avec-risques'])
     })
 })
+
+describe('Algorithme contact à risque', function () {
+    beforeEach(function () {
+        questionnaire.resetData()
+    })
+
+    afterEach(function () {
+        questionnaire.resetData()
+    })
+
+    it('Si contact à risque', function () {
+        var data = {
+            contact_a_risque: true,
+        }
+        questionnaire.fillData(data)
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        chai.expect(
+            algorithme.contactARisqueBlockNamesToDisplay(algorithme.getData())
+        ).to.deep.equal([])
+    })
+
+    it('Si contact à risque autre', function () {
+        var data = {
+            contact_a_risque_autre: true,
+        }
+        questionnaire.fillData(data)
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        chai.expect(
+            algorithme.contactARisqueBlockNamesToDisplay(algorithme.getData())
+        ).to.deep.equal(['conseils-contact-a-risque-autre'])
+    })
+})

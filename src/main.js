@@ -67,6 +67,40 @@ var FormUtils = function () {
         })
     }
 
+    this.toggleFormButtonOnCheckRequired = function (
+        form,
+        initialLabel,
+        alternateLabel,
+        requiredLabel
+    ) {
+        var button = form.querySelector('input[type=submit]')
+        var checkboxes = [].slice.call(form.querySelectorAll('input[type=checkbox]'))
+        var secondaryCheckboxes = [].slice.call(
+            form.querySelectorAll('.secondary input[type=checkbox]')
+        )
+
+        function updateSubmitButtonLabelRequired(event) {
+            var hasChecks = checkboxes.some(function (checkbox) {
+                return checkbox.checked
+            })
+            button.disabled = false
+            button.value = hasChecks ? alternateLabel : initialLabel
+            if (hasChecks) {
+                var hasSecondaryChecks = secondaryCheckboxes.some(function (checkbox) {
+                    return checkbox.checked
+                })
+                if (!hasSecondaryChecks) {
+                    button.disabled = true
+                    button.value = requiredLabel
+                }
+            }
+        }
+        updateSubmitButtonLabelRequired()
+        checkboxes.forEach(function (elem) {
+            elem.addEventListener('change', updateSubmitButtonLabelRequired)
+        })
+    }
+
     this.enableOrDisableSecondaryFields = function (form, primary) {
         var primaryDisabled = !primary.checked
         ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
@@ -575,6 +609,7 @@ var Questionnaire = function () {
         this.symptomes_actuels = undefined
         this.symptomes_passes = undefined
         this.contact_a_risque = undefined
+        this.contact_a_risque_autre = undefined
     }
 
     this.fillData = function (data) {
@@ -600,6 +635,7 @@ var Questionnaire = function () {
         this.symptomes_actuels = data['symptomes_actuels']
         this.symptomes_passes = data['symptomes_passes']
         this.contact_a_risque = data['contact_a_risque']
+        this.contact_a_risque_autre = data['contact_a_risque_autre']
     }
 
     this.getData = function () {
@@ -626,6 +662,7 @@ var Questionnaire = function () {
             symptomes_actuels: this.symptomes_actuels,
             symptomes_passes: this.symptomes_passes,
             contact_a_risque: this.contact_a_risque,
+            contact_a_risque_autre: this.contact_a_risque_autre,
         }
     }
 
@@ -896,6 +933,14 @@ var Algorithme = function (questionnaire, carteDepartements) {
             blockNames.push('conseils-symptomes-passes-avec-risques')
         } else {
             blockNames.push('conseils-symptomes-passes-sans-risques')
+        }
+        return blockNames
+    }
+
+    this.contactARisqueBlockNamesToDisplay = function (data) {
+        var blockNames = []
+        if (data.contact_a_risque_autre) {
+            blockNames.push('conseils-contact-a-risque-autre')
         }
         return blockNames
     }
@@ -1181,6 +1226,7 @@ var OnSubmitFormScripts = function () {
             // On complète manuellement le formulaire pour le rendre complet.
             questionnaire.symptomes_passes = false
             questionnaire.contact_a_risque = false
+            questionnaire.contact_a_risque_autre = false
             stockageLocal.enregistrer(questionnaire)
             navigation.goToPage('conseilssymptomesactuels')
         } else {
@@ -1196,6 +1242,7 @@ var OnSubmitFormScripts = function () {
         if (questionnaire.symptomes_passes) {
             // On complète manuellement le formulaire pour le rendre complet.
             questionnaire.contact_a_risque = false
+            questionnaire.contact_a_risque_autre = false
             stockageLocal.enregistrer(questionnaire)
             navigation.goToPage('conseilssymptomespasses')
         } else {
@@ -1208,6 +1255,8 @@ var OnSubmitFormScripts = function () {
         event.preventDefault()
         questionnaire.contact_a_risque =
             event.target.elements['contact_a_risque'].checked
+        questionnaire.contact_a_risque_autre =
+            event.target.elements['contact_a_risque_autre'].checked
         stockageLocal.enregistrer(questionnaire)
         if (questionnaire.contact_a_risque) {
             navigation.goToPage('conseilscontactarisque')
@@ -1299,12 +1348,18 @@ var OnPageLoadScripts = function () {
     this.contactarisque = function (form, pageName) {
         var button = form.querySelector('input[type=submit]')
         formUtils.preloadCheckboxForm(form, 'contact_a_risque')
+        formUtils.preloadCheckboxForm(form, 'contact_a_risque_autre')
         var primary = form.elements['contact_a_risque']
         formUtils.enableOrDisableSecondaryFields(form, primary)
         primary.addEventListener('click', function () {
             formUtils.enableOrDisableSecondaryFields(form, primary)
         })
-        formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
+        formUtils.toggleFormButtonOnCheckRequired(
+            form,
+            button.value,
+            'Terminer',
+            'Vous devez saisir l’un des choix proposés'
+        )
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
@@ -1357,7 +1412,8 @@ var OnPageLoadScripts = function () {
         var algorithme = new Algorithme(questionnaire, carteDepartements)
         var data = algorithme.getData()
 
-        var blockNames = algorithme.departementBlockNamesToDisplay(data)
+        var blockNames = algorithme.contactARisqueBlockNamesToDisplay(data)
+        blockNames = blockNames.concat(algorithme.departementBlockNamesToDisplay(data))
 
         affichage.displayBlocks(element, blockNames)
 
