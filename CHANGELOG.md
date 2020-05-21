@@ -1,5 +1,13 @@
 # Changelog
 
+## 2020-05-21
+
+* ajout de l’option `Je n'étais dans aucune de ces situations` sur le formulaire relatif aux contacts à risque
+* rend obligatoire la sélection d’un sous-choix sur la page de contact à risque
+* affichage d’un message explicite lors d’échec de la géolocalisation par le navigateur
+* gestion des erreurs lors de la saisie du poids/taille
+* meilleur style des liens et des phrases longues
+
 ## 2020-05-20
 
 * PR#88 : changement du fichier Pense-bête en Mémo-Contacts
