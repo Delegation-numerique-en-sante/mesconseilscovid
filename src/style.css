@@ -385,7 +385,7 @@ input[type='checkbox']:disabled + label::before {
 }
 
 input[type='submit']:disabled {
-  color: #575757;
+  color: black;
   background: #ddd;
   border-color: black;
   cursor: not-allowed;
