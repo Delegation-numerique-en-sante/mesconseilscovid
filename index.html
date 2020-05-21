@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mes conseils Covid — Des conseils personnalisés pour agir contre le virus</title>
-    <link rel="stylesheet" type="text/css" href="style-eeef8156.css">
+    <link rel="stylesheet" type="text/css" href="style-2778e358.css">
     <link rel="prefetch" as="fetch" href="departements-1000m.geojson">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -539,6 +539,13 @@ Baisse de l’état général, chutes à répétition, apparition ou aggravation
                 <input id="contact_a_risque_meme_classe" type="checkbox" name="contact_a_risque_meme_classe" disabled>
                 <label for="contact_a_risque_meme_classe">
                     <span>Je suis élève ou enseignant de la même classe scolaire (maternelle, primaire, secondaire, groupe de travaux dirigés à l’université)
+</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="contact_a_risque_autre" type="checkbox" name="contact_a_risque_autre" disabled>
+                <label for="contact_a_risque_autre">
+                    <span>Je n’étais dans <b>aucune de ces situations</b>
 </span>
                 </label>
             </div>
@@ -1086,6 +1093,10 @@ référents qui vous orienteront vers le meilleur moyen de suivi :
 </li>
 </ul>
 
+            <div id="conseils-contact-a-risque-autre" hidden>
+                <p>Vous avez passé du temps avec quelqu’un de positif sans prendre de risques. Si dans les jours qui viennent vous ressentez des premiers symptômes, n’hésitez pas à contacter un médecin.</p>
+
+            </div>
         </div>
         <div id="conseils-departement" class="conseils" hidden>
             <h3>Votre localisation</h3>
@@ -1223,7 +1234,7 @@ si vous identifiez une information contraire aux connaissances médicales sur la
 </section>
 
     <script src="localforage-1.7.3.min.js"></script>
-    <script src="main-99d68288.js"></script>
+    <script src="main-ae7ea470.js"></script>
     <script type="text/javascript">
         ;(function() {
             document.addEventListener('dataLoaded', function (event) {
