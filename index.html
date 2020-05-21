@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mes conseils Covid — Des conseils personnalisés pour agir contre le virus</title>
-    <link rel="stylesheet" type="text/css" href="style-1448b8a5.css">
+    <link rel="stylesheet" type="text/css" href="style-f5705ff7.css">
     <link rel="prefetch" as="fetch" href="departements-1000m.geojson">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -74,7 +74,7 @@ Obtenez en 3 minutes des recommandations pour <b>votre santé</b> et celle de 
 </label>
                 <div class="dpt-container">
                     <select id="departement" required>
-                        <option selected disabled>Choisir dans la liste...</option>
+                        <option selected disabled>Choisir dans la liste…</option>
                         <option value="01">01 - Ain</option>
                         <option value="02">02 - Aisne</option>
                         <option value="03">03 - Allier</option>
@@ -185,6 +185,10 @@ Obtenez en 3 minutes des recommandations pour <b>votre santé</b> et celle de 
                     </div>
                 </div>
             </div>
+            <p id="error-geolocalisation" class="message message-error" hidden>
+                Nous n’avons pas réussi à déterminer votre position automatiquement,
+                veuillez saisir un département dans la liste déroulante ci-dessus.
+            </p>
         </fieldset>
         <div class="form-controls">
             <a href="#introduction" class="back-button button-outline">Retour</a>
@@ -1232,7 +1236,7 @@ si vous identifiez une information contraire aux connaissances médicales sur la
 </section>
 
     <script src="localforage-1.7.3.min.js"></script>
-    <script src="main-049b383e.js"></script>
+    <script src="main-53269ec4.js"></script>
     <script type="text/javascript">
         ;(function() {
             document.addEventListener('dataLoaded', function (event) {
