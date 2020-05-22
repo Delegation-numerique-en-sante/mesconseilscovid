@@ -787,11 +787,13 @@
 </section>
 
     <script src="localforage-1.7.3.min.js"></script>
+    <script src="navigo-7.1.2.min.js"></script>
     <script src="{{ js_path }}"></script>
     <script type="text/javascript">
         ;(function() {
             document.addEventListener('dataLoaded', function (event) {
-                navigation.init()
+                router.resolve()
+                navigation.checkForUpdatesEvery(10) // Minutes.
             })
             stockageLocal.charger(questionnaire)
             document

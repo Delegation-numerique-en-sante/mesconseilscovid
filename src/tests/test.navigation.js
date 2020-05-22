@@ -12,10 +12,10 @@ describe('Navigation générale', function () {
         chai.expect(navigation.redirectIfMissingData('conditionsutilisation', {})).to.be
             .undefined
     })
-    it('redirige vers l’accueil si nouvelle version disponible', function () {
+    it('ok d’aller à la page nouvelle version disponible', function () {
         chai.expect(
-            navigation.redirectIfMissingData('nouvelle-version-disponible', {})
-        ).to.equal('introduction')
+            navigation.redirectIfMissingData('nouvelleversiondisponible', {})
+        ).to.be.undefined
     })
 })
 
