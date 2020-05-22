@@ -1397,6 +1397,7 @@ var OnPageLoadScripts = function () {
     }
 
     this.activitepro = function (form, pageName) {
+        var button = form.querySelector('input[type=submit]')
         formUtils.preloadCheckboxForm(form, 'activite_pro')
         formUtils.preloadCheckboxForm(form, 'activite_pro_public')
         formUtils.preloadCheckboxForm(form, 'activite_pro_sante')
@@ -1405,6 +1406,7 @@ var OnPageLoadScripts = function () {
         primary.addEventListener('click', function () {
             formUtils.enableOrDisableSecondaryFields(form, primary)
         })
+        formUtils.toggleFormButtonOnCheck(form, button.value, 'Continuer')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     }
 
