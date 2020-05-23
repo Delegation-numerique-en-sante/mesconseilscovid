@@ -118,7 +118,7 @@ var FormUtils = function () {
         }
         updateSubmitButtonLabelRequired()
         textFields.forEach(function (elem) {
-            elem.addEventListener('keyup', updateSubmitButtonLabelRequired)
+            elem.addEventListener('input', updateSubmitButtonLabelRequired)
         })
     }
 
