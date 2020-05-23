@@ -118,7 +118,7 @@ var FormUtils = function () {
         }
         updateSubmitButtonLabelRequired()
         textFields.forEach(function (elem) {
-            elem.addEventListener('blur', updateSubmitButtonLabelRequired)
+            elem.addEventListener('keyup', updateSubmitButtonLabelRequired)
         })
     }
 
