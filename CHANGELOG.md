@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-05-23
+
+* correction du changement de libellé du bouton au cours de la frappe pour les caractéristiques
+* libellé de bouton explicite lorsque pas d’activité professionnelle ou bénévole
+
 ## 2020-05-21
 
 * ajout de l’option `Je n'étais dans aucune de ces situations` sur le formulaire relatif aux contacts à risque
