@@ -17,9 +17,19 @@ SRC_DIR = HERE / "src"
 DIST_DIR = HERE / "dist"
 CONTENUS_DIR = HERE / "contenus"
 
+
+class ImgsWithoutParagraphRenderer(mistune.HTMLRenderer):
+    def paragraph(self, text):
+        # In case of an image, we do not want to put it in a paragraph,
+        # particularly useful to render illustrations.
+        if text.strip().startswith("<img"):
+            return text
+        return f"<p>{text}</p>\n"
+
+
 jinja_env = JinjaEnv(loader=FileSystemLoader(str(SRC_DIR)), undefined=StrictUndefined)
 
-markdown = mistune.create_markdown(escape=False)
+markdown = mistune.create_markdown(renderer=ImgsWithoutParagraphRenderer(escape=False))
 
 assets_env = AssetsEnv(
     directory=str(DIST_DIR),

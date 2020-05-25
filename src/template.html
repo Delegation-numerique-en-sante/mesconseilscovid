@@ -55,6 +55,7 @@
 
 <section id="residence" hidden>
     <form id="residence-form" action="" class="block">
+        {{ illustration_résidence }}
         <fieldset>
             <legend>1/8 - {{ question_résidence_titre }}</legend>
             <div class="row">
@@ -186,6 +187,7 @@
 
 <section id="activitepro" hidden>
     <form id="activite-pro-form" action="" class="block">
+        {{ illustration_activité_pro }}
         <fieldset>
             <legend>2/8 - {{ question_activité_pro_titre }}</legend>
             <div>
@@ -217,6 +219,7 @@
 
 <section id="foyer" hidden>
     <form id="foyer-form" action="" class="block">
+        {{ illustration_foyer }}
         <fieldset>
             <legend>3/8 - {{ question_foyer_titre }}</legend>
             <div>
@@ -242,6 +245,7 @@
 
 <section id="caracteristiques" hidden>
     <form id="caracteristiques-form" action="" class="block">
+        {{ illustration_caractéristiques }}
         <fieldset>
             <legend>4/8 - {{ question_caractéristiques_titre }}</legend>
             <h3>{{ question_caractéristiques_âge_grossesse_titre }}</h3>
@@ -278,6 +282,7 @@
 
 <section id="antecedents" hidden>
     <form id="antecedents-form" action="" class="block">
+        {{ illustration_antécédents }}
         <fieldset>
             <legend>5/8 - {{ question_antécédents_titre }}</legend>
             <div class="field">
@@ -365,6 +370,7 @@
 
 <section id="symptomesactuels" hidden>
     <form id="symptomes-actuels-form" action="" class="block">
+        {{ illustration_symptômes_actuels }}
         <fieldset>
             <legend>6/8 - {{ question_symptômes_actuels_titre }}</legend>
             <div>
@@ -386,6 +392,7 @@
 
 <section id="symptomespasses" hidden>
     <form id="symptomes-passes-form" action="" class="block">
+        {{ illustration_symptômes_passés }}
         <fieldset>
             <legend>7/8 - {{ question_symptômes_passés_titre }}</legend>
             <div>
@@ -407,6 +414,7 @@
 
 <section id="contactarisque" hidden>
     <form id="contact-a-risque-form" action="" class="block">
+        {{ illustration_symptômes_contact_à_risque }}
         <fieldset>
             <legend>8/8 - {{ question_symptômes_contact_à_risque_titre }}</legend>
             <div>
@@ -481,6 +489,7 @@
         </div>
         <h2>Vos conseils personnalisés</h2>
         <div id="conseils-departement" class="conseils" hidden>
+            {{ illustration_résidence }}
             <h3>Votre localisation</h3>
             <div class="reponse">
                 {{ réponse_département }}
@@ -500,6 +509,7 @@
             </div>
         </div>
         <div id="conseils-activite" class="conseils" hidden>
+            {{ illustration_activité_pro }}
             <h3>Votre activité</h3>
             <div class="reponse">
                 <div id="reponse-activite-pro" hidden>
@@ -535,6 +545,7 @@
             </div>
         </div>
         <div id="conseils-foyer" class="conseils" hidden>
+            {{ illustration_foyer }}
             <h3>Votre foyer</h3>
             <div id="conseils-foyer-enfants" hidden>
                 <div class="reponse">
@@ -572,6 +583,7 @@
             </div>
         </div>
         <div id="conseils-caracteristiques" class="conseils" hidden>
+            {{ illustration_antécédents }}
             <h3>Vos caractéristiques et antécédents</h3>
             <div class="reponse">
                 <div id="reponse-caracteristiques" hidden>
@@ -605,6 +617,7 @@
             </div>
         </div>
         <div id="conseils-generaux" class="conseils">
+            {{ illustration_accueil }}
             <h3>Conseils d’ordre général</h3>
             <div class="conseil">
                 {{ conseils_généraux }}
@@ -626,6 +639,7 @@
         </div>
         <h2>Vos conseils personnalisés</h2>
         <div class="conseils">
+            {{ illustration_symptômes_actuels }}
             <div class="conseil conseil-rouge">
                 {{ conseils_symptômes_actuels }}
             </div>
@@ -634,6 +648,7 @@
             {{ conseils_symptômes_défaut }}
         </div>
         <div id="conseils-generaux" class="conseils">
+            {{ illustration_accueil }}
             <h3>Conseils d’ordre général</h3>
             <div class="conseil">
                 {{ conseils_généraux }}
@@ -655,6 +670,7 @@
         </div>
         <h2>Vos conseils personnalisés</h2>
         <div class="conseils">
+            {{ illustration_symptômes_passés }}
             <div id="conseils-symptomes-passes-sans-risques" hidden>
                 <div class="conseil conseil-rouge">
                     {{ conseils_symptômes_passés_sans_risques }}
@@ -674,6 +690,7 @@
             </div>
         </div>
         <div id="conseils-departement" class="conseils" hidden>
+            {{ illustration_résidence }}
             <h3>Votre localisation</h3>
             <div class="reponse">
                 {{ réponse_département }}
@@ -693,12 +710,14 @@
             </div>
         </div>
         <div id="conseils-foyer" class="conseils">
+            {{ illustration_foyer }}
             <h3>Votre foyer</h3>
             <div id="conseils-foyer-fragile">
                 {{ conseils_foyer_fragile_suivi }}
             </div>
         </div>
         <div id="conseils-generaux" class="conseils">
+            {{ illustration_accueil }}
             <h3>Conseils d’ordre général</h3>
             <div class="conseil">
                 {{ conseils_généraux }}
@@ -720,6 +739,7 @@
         </div>
         <h2>Vos conseils personnalisés</h2>
         <div class="conseils">
+            {{ illustration_symptômes_contact_à_risque }}
             <div class="conseil conseil-rouge">
                 {{ conseils_contact_à_risque }}
             </div>
@@ -729,6 +749,7 @@
             </div>
         </div>
         <div id="conseils-departement" class="conseils" hidden>
+            {{ illustration_résidence }}
             <h3>Votre localisation</h3>
             <div class="reponse">
                 {{ réponse_département }}
@@ -748,12 +769,14 @@
             </div>
         </div>
         <div id="conseils-foyer" class="conseils">
+            {{ illustration_foyer }}
             <h3>Votre foyer</h3>
             <div id="conseils-foyer-fragile">
                 {{ conseils_foyer_fragile_suivi }}
             </div>
         </div>
         <div id="conseils-generaux" class="conseils">
+            {{ illustration_accueil }}
             <h3>Conseils d’ordre général</h3>
             <div class="conseil">
                 {{ conseils_généraux }}

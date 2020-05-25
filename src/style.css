@@ -39,6 +39,10 @@ a:hover,
 a:active {
     text-decoration-style: dashed;
 }
+img {
+    width: 50%;
+    max-width: 50%;
+}
 
 section {
     max-width: 60em;
@@ -121,6 +125,24 @@ main footer {
 .conseils h3 {
     color: #000091;
     font-size: 175%;
+}
+.conseils img {
+    margin: 6rem auto 0;
+    max-width: 300px;
+    display: block;
+}
+
+#residence-form img,
+#activite-pro-form img,
+#foyer-form img,
+#caracteristiques-form img,
+#antecedents-form img,
+#symptomes-actuels-form img,
+#symptomes-passes-form img,
+#contact-a-risque-form img {
+    margin: 0 auto;
+    max-width: 300px;
+    display: block;
 }
 
 .statut {
