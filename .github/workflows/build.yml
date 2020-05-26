@@ -26,5 +26,13 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}
+          name: mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}
           path: dist/
+
+      - name: Send event to trigger deployment workflow
+        run: |
+          curl -XPOST https://api.github.com/repos/Delegation-numerique-en-sante/mesconseilscovid-infra/dispatches \
+               -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+               -H "Accept: application/vnd.github.everest-preview+json" \
+               -H "Content-Type: application/json" \
+               --data '{"event_type": "deploy", "client_payload": {"repo": "${{ github.repository }}", "commit": "${{ github.sha }}", "branch": "${{ env.GITHUB_REF_SLUG_URL }}", "artifact": "mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}"}}'
