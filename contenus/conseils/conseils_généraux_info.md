@@ -12,4 +12,4 @@ Pour plus d’informations, vous pouvez consulter :
 
 * la page [« Tests et dépistage »](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage) et l'infographie [« Coronavirus, 2 types de tests »](https://www.gouvernement.fr/sites/default/files/infographie_tests.pdf).
 
-Enfin, il est conseillé d'aérer très régulièrement les pièces dans lesquelles vous vivez ou travaillez en ouvrant les fenêtres (au moins 10 minutes plusieurs fois par jour).
+Enfin, il est conseillé d’aérer très régulièrement les pièces dans lesquelles vous vivez ou travaillez en ouvrant les fenêtres (au moins 10 minutes plusieurs fois par jour).
