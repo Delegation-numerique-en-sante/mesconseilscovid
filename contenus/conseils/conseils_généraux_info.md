@@ -8,4 +8,7 @@ Pour plus d’informations, vous pouvez consulter :
 
 * la page sur les gestes barrières : [« Comment se protéger du coronavirus COVID-19 ? »](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf) du ministère des solidarités et de la santé.
 
-* le site [covid19-faq](https://www.covid19-faq.fr/) si vous avez des questions par rapport au COVID.
+* le site [covid19-faq](https://www.covid19-faq.fr/) ou appeler le 0 800 130 000 si vous avez des questions par rapport au COVID.
+
+* la page [« Tests et dépistage »](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage) et l'infographie [« Coronavirus, 2 types de tests »](https://www.gouvernement.fr/sites/default/files/infographie_tests.pdf).
+
