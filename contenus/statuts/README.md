@@ -4,9 +4,9 @@
 *Ce fichier est généré automatiquement pour pouvoir accéder rapidement aux contenus,il ne doit pas être édité !*
 
 
-## [statut_foyer_fragile.md](statut_foyer_fragile.md)
+## [statut_peu_de_risques.md](statut_peu_de_risques.md)
 
-Prenez soin de vos proches à risque face au COVID-19.
+Vous ne présentez pas de risque particulier face au COVID-19, cependant le virus circule toujours, **les gestes barrières s’imposent**.
 
 
 ---
@@ -20,17 +20,17 @@ Vous êtes considéré·e à risque de forme plus sévère de COVID-19, nous vou
 ---
 
 
-## [statut_risque_élevé_contamination.md](statut_risque_élevé_contamination.md)
+## [statut_foyer_fragile.md](statut_foyer_fragile.md)
 
-Il vous est conseillé de rester **en isolement**.
+Prenez soin de vos proches à risque face au COVID-19.
 
 
 ---
 
 
-## [statut_peu_de_risques.md](statut_peu_de_risques.md)
+## [statut_risque_élevé_contamination.md](statut_risque_élevé_contamination.md)
 
-Vous ne présentez pas de risque particulier face au COVID-19, cependant le virus circule toujours, **les gestes barrières s’imposent**.
+Il vous est conseillé de rester **en isolement**.
 
 
 ---

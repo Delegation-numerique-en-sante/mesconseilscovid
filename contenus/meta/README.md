@@ -4,26 +4,6 @@
 *Ce fichier est généré automatiquement pour pouvoir accéder rapidement aux contenus,il ne doit pas être édité !*
 
 
-## [meta_titre.md](meta_titre.md)
-
-# [Mes conseils Covid]()
-
-
----
-
-
-## [meta_nouvelle_version_disponible.md](meta_nouvelle_version_disponible.md)
-
-## Une nouvelle version du site est disponible
-
-Veuillez cliquer sur le bouton ci-dessous pour améliorer les conseils relatifs à votre questionnaire. <b>Vos données ne seront pas perdues</b>.
-
-Vous serez redirigé·e vers le questionnaire si de nouvelles informations sont nécessaires afin d’affiner la pertinence de vos conseils personnalisés.
-
-
----
-
-
 ## [meta_conditions_utilisation.md](meta_conditions_utilisation.md)
 
 ## Conditions d’utilisation
@@ -132,6 +112,26 @@ Il est recommandé de mettre à jour dès que possible en cliquant sur le bouton
 Vos informations personnelles sont seulement stockées sur cet appareil, et ne sont pas partagées.  
 À tout moment, vous pouvez <a href="" id="delete-data">supprimer l’intégralité de ces données</a>.  
 [Conditions d’utilisation](#conditionsutilisation) - [Contact](mailto:mesconseilscovid@sante.gouv.fr) - [Code source](https://github.com/Delegation-numerique-en-sante/mesconseilscovid)
+
+
+---
+
+
+## [meta_nouvelle_version_disponible.md](meta_nouvelle_version_disponible.md)
+
+## Une nouvelle version du site est disponible
+
+Veuillez cliquer sur le bouton ci-dessous pour améliorer les conseils relatifs à votre questionnaire. <b>Vos données ne seront pas perdues</b>.
+
+Vous serez redirigé·e vers le questionnaire si de nouvelles informations sont nécessaires afin d’affiner la pertinence de vos conseils personnalisés.
+
+
+---
+
+
+## [meta_titre.md](meta_titre.md)
+
+# [Mes conseils Covid]()
 
 
 ---
