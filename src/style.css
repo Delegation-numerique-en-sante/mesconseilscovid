@@ -111,8 +111,101 @@ main footer {
     text-align: center;
 }
 
-.larger {
+#tagline {
     font-size: x-large;
+    padding-bottom: 45%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+#residence-form,
+#activite-pro-form,
+#foyer-form,
+#caracteristiques-form,
+#antecedents-form,
+#symptomes-actuels-form,
+#symptomes-passes-form,
+#contact-a-risque-form {
+    padding-top: 40%;
+    background-position: center 1rem;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+#conseils-departement h3,
+#conseils-activite h3,
+#conseils-foyer h3,
+#conseils-caracteristiques h3,
+#conseils-generaux h3,
+#conseils-symptomes-actuels-block h2,
+#conseils-symptomes-passes-block h2,
+#conseils-contact-a-risque-block h2 {
+    padding-top: 50%;
+    background-position: center 1rem;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+@media only screen and (min-width: 680px) {
+    #residence-form,
+    #activite-pro-form,
+    #foyer-form,
+    #caracteristiques-form,
+    #antecedents-form,
+    #symptomes-actuels-form,
+    #symptomes-passes-form,
+    #contact-a-risque-form {
+        padding-top: 25%;
+        background-size: 30%;
+    }
+
+    #conseils-departement h3,
+    #conseils-activite h3,
+    #conseils-foyer h3,
+    #conseils-caracteristiques h3,
+    #conseils-generaux h3,
+    #conseils-symptomes-actuels-block h2,
+    #conseils-symptomes-passes-block h2,
+    #conseils-contact-a-risque-block h2 {
+        padding-top: 35%;
+        background-size: 40%;
+    }
+}
+
+#residence-form,
+#conseils-departement h3 {
+    background-image: url('illustrations/residence.svg');
+}
+#activite-pro-form,
+#conseils-activite h3 {
+    background-image: url('illustrations/activitepro.svg');
+}
+#foyer-form,
+#conseils-foyer h3 {
+    background-image: url('illustrations/foyer.svg');
+}
+#caracteristiques-form,
+#conseils-caracteristiques h3 {
+    background-image: url('illustrations/caracteristiques.svg');
+}
+#antecedents-form {
+    background-image: url('illustrations/antecedents.svg');
+}
+#tagline,
+#conseils-generaux h3 {
+    background-image: url('illustrations/accueil.svg');
+}
+#conseils-symptomes-actuels-block h2,
+#symptomes-actuels-form {
+    background-image: url('illustrations/symptomesactuels.svg');
+}
+#conseils-symptomes-passes-block h2,
+#symptomes-passes-form {
+    background-image: url('illustrations/symptomespasses.svg');
+}
+#conseils-contact-a-risque-block h2,
+#contact-a-risque-form {
+    background-image: url('illustrations/contactarisque.svg');
 }
 
 .conseils {

@@ -1,6 +1,6 @@
 ## Des conseils personnalisés pour agir contre le virus
 
-<p class="larger">
+<p id="tagline">
 Obtenez en 3 minutes des recommandations pour <b>votre santé</b> et celle de vos proches.
 </p>
 
