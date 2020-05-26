@@ -1,6 +1,6 @@
 Pour plus d’informations, vous pouvez consulter :
 
-* le site du ministère des solidarités et de la santé sur [le port du masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf). Pour bien utiliser le masque et l'entretenir, vous pouvez vous reporter aux vidéos [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw&feature=youtu.be) et [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE&feature=youtu.be)
+* le site du ministère des solidarités et de la santé sur [le port du masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf). Pour bien utiliser le masque et l’entretenir, vous pouvez vous reporter aux vidéos [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw) et [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
 
 * la fiche : [« Quelles conduites adopter pour limiter la transmission du virus »](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf). 
 
