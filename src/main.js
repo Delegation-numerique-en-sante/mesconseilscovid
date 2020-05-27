@@ -1357,6 +1357,11 @@ var root = null
 var useHash = true
 var router = new Navigo(root, useHash)
 
+// Workaround unwanted behaviour in Navigo
+if (router.root.slice(-1) !== '/') {
+    router.root = router.root + '/'
+}
+
 router.hooks({
     before: function (done, params) {
         // Global hook to redirect on the correct page given registered data.
