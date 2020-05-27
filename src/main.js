@@ -1036,95 +1036,7 @@ var Algorithme = function (questionnaire, carteDepartements) {
     }
 }
 
-var Navigation = function () {
-    this.loadInitialPage = function () {
-        var requestedPage = getCurrentPageName() || 'introduction'
-        var redirectedPage = this.redirectIfMissingData(requestedPage, questionnaire)
-        if (redirectedPage) {
-            router.navigate(redirectedPage)
-        } else {
-            router.navigate(requestedPage)
-        }
-    }
-
-    this.redirectIfMissingData = function (page, questionnaire) {
-        if (page === 'introduction') return
-        if (page === 'conditionsutilisation') return
-        if (page === 'nouvelleversiondisponible') return
-
-        // Questions obligatoires
-
-        if (typeof questionnaire.departement === 'undefined' && page !== 'residence')
-            return 'introduction' // aucune réponse = retour à l’accueil
-
-        if (page === 'residence') return
-
-        if (typeof questionnaire.activite_pro === 'undefined' && page !== 'activitepro')
-            return 'activitepro'
-
-        if (page === 'activitepro') return
-
-        if (typeof questionnaire.foyer_enfants === 'undefined' && page !== 'foyer')
-            return 'foyer'
-
-        if (page === 'foyer') return
-
-        if (typeof questionnaire.sup65 === 'undefined' && page !== 'caracteristiques')
-            return 'caracteristiques'
-
-        if (page === 'caracteristiques') return
-
-        if (
-            typeof questionnaire.antecedent_cardio === 'undefined' &&
-            page !== 'antecedents'
-        )
-            return 'antecedents'
-
-        if (page === 'antecedents') return
-
-        if (
-            typeof questionnaire.symptomes_actuels === 'undefined' &&
-            page !== 'symptomesactuels'
-        )
-            return 'symptomesactuels'
-
-        if (page === 'symptomesactuels') return
-
-        if (questionnaire.symptomes_actuels === true)
-            return page === 'conseilssymptomesactuels'
-                ? undefined
-                : 'conseilssymptomesactuels'
-
-        if (
-            typeof questionnaire.symptomes_passes === 'undefined' &&
-            page !== 'symptomespasses'
-        )
-            return 'symptomespasses'
-
-        if (page === 'symptomespasses') return
-
-        if (questionnaire.symptomes_passes === true)
-            return page === 'conseilssymptomespasses'
-                ? undefined
-                : 'conseilssymptomespasses'
-
-        if (
-            typeof questionnaire.contact_a_risque === 'undefined' &&
-            page !== 'contactarisque'
-        )
-            return 'contactarisque'
-
-        if (page === 'contactarisque') return
-
-        if (questionnaire.contact_a_risque === true)
-            return page === 'conseilscontactarisque'
-                ? undefined
-                : 'conseilscontactarisque'
-
-        if (questionnaire.contact_a_risque === false)
-            return page === 'conseils' ? undefined : 'conseils'
-    }
-
+var Updater = function () {
     this.checkForUpdatesEvery = function (intervalInMinutes) {
         this.checkForUpdate()
         setInterval(this.checkForUpdate.bind(this), intervalInMinutes * 60 * 1000)
@@ -1216,7 +1128,7 @@ var Navigation = function () {
         )
     }
 }
-navigation = new Navigation()
+updater = new Updater()
 
 var OnSubmitFormScripts = function () {
     this.residence = function (event) {
@@ -1352,7 +1264,83 @@ var onSubmitFormScripts = new OnSubmitFormScripts()
 
 var getCurrentPageName = function () {
     var hash = document.location.hash
-    return hash ? hash.slice(1) : ""
+    return hash ? hash.slice(1) : ''
+}
+
+var redirectToUnansweredQuestions = function (page, questionnaire) {
+    if (page === 'introduction') return
+    if (page === 'conditionsutilisation') return
+    if (page === 'nouvelleversiondisponible') return
+
+    // Questions obligatoires
+
+    if (typeof questionnaire.departement === 'undefined' && page !== 'residence')
+        return 'introduction' // aucune réponse = retour à l’accueil
+
+    if (page === 'residence') return
+
+    if (typeof questionnaire.activite_pro === 'undefined' && page !== 'activitepro')
+        return 'activitepro'
+
+    if (page === 'activitepro') return
+
+    if (typeof questionnaire.foyer_enfants === 'undefined' && page !== 'foyer')
+        return 'foyer'
+
+    if (page === 'foyer') return
+
+    if (typeof questionnaire.sup65 === 'undefined' && page !== 'caracteristiques')
+        return 'caracteristiques'
+
+    if (page === 'caracteristiques') return
+
+    if (
+        typeof questionnaire.antecedent_cardio === 'undefined' &&
+        page !== 'antecedents'
+    )
+        return 'antecedents'
+
+    if (page === 'antecedents') return
+
+    if (
+        typeof questionnaire.symptomes_actuels === 'undefined' &&
+        page !== 'symptomesactuels'
+    )
+        return 'symptomesactuels'
+
+    if (page === 'symptomesactuels') return
+
+    if (questionnaire.symptomes_actuels === true)
+        return page === 'conseilssymptomesactuels'
+            ? undefined
+            : 'conseilssymptomesactuels'
+
+    if (
+        typeof questionnaire.symptomes_passes === 'undefined' &&
+        page !== 'symptomespasses'
+    )
+        return 'symptomespasses'
+
+    if (page === 'symptomespasses') return
+
+    if (questionnaire.symptomes_passes === true)
+        return page === 'conseilssymptomespasses'
+            ? undefined
+            : 'conseilssymptomespasses'
+
+    if (
+        typeof questionnaire.contact_a_risque === 'undefined' &&
+        page !== 'contactarisque'
+    )
+        return 'contactarisque'
+
+    if (page === 'contactarisque') return
+
+    if (questionnaire.contact_a_risque === true)
+        return page === 'conseilscontactarisque' ? undefined : 'conseilscontactarisque'
+
+    if (questionnaire.contact_a_risque === false)
+        return page === 'conseils' ? undefined : 'conseils'
 }
 
 var loadPage = function (pageName) {
@@ -1372,7 +1360,11 @@ var router = new Navigo(root, useHash)
 router.hooks({
     before: function (done, params) {
         // Global hook to redirect on the correct page given registered data.
-        navigation.loadInitialPage()
+        var requestedPage = getCurrentPageName() || 'introduction'
+        var redirectedPage = redirectToUnansweredQuestions(requestedPage, questionnaire)
+        if (redirectedPage) {
+            router.navigate(redirectedPage)
+        }
         done()
     },
     after: function (params) {
@@ -1583,7 +1575,6 @@ router
     .notFound(function () {
         router.navigate('introduction')
     })
-
 
 var InjectionScripts = function () {
     this.departement = function (element, data) {
