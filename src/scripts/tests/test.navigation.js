@@ -1,3 +1,8 @@
+var chai = require('chai')
+
+var Router = require('../router.js')
+var redirectToUnansweredQuestions = Router.redirectToUnansweredQuestions
+
 describe('Navigation générale', function () {
     it('page inconnue renvoie au début', function () {
         chai.expect(redirectToUnansweredQuestions('foo', {})).to.equal('introduction')

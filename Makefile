@@ -3,14 +3,20 @@
 key.pem:  ## Generate certificates to be able to run `https` on `localhost`.
 	openssl req -nodes -newkey rsa:2048 -x509  -days 365 -keyout key.pem -out cert.pem -subj "/C=FR/CN=localhost"
 
-serve: key.pem  ## Serve the `src/index.html` file with `https` on `localhost`.
+serve: key.pem  ## Serve the `dist/index.html` file with `https` on `localhost`.
 	python3 serve.py
 
-install:  ## Install Python dependencies contained in `requirements.txt`.
+install:  ## Install Python and JS dependencies.
+	python3 -m pip install -U pip
 	python3 -m pip install -r requirements.txt
+	npm install
+
+test:  ## Run JS unit tests.
+	./node_modules/.bin/mocha src/scripts/tests/
 
 build:  ## Build the index from `template.html` + contenus markdown files.
 	python3 build.py all
+	./node_modules/.bin/parcel build --no-minify --no-source-maps src/index.html
 
 autobuild:  ## Serve the `src` folder _without_ `https` but with build on file change.
 	python3 autobuild.py

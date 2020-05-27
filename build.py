@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import fnmatch
 import os
-import shutil
 from pathlib import Path
 from time import perf_counter
 
@@ -9,50 +8,20 @@ import mistune
 from jinja2 import Environment as JinjaEnv
 from jinja2 import FileSystemLoader, StrictUndefined
 from minicli import cli, run, wrap
-from webassets import Bundle
-from webassets import Environment as AssetsEnv
 
 HERE = Path(__file__).parent
 SRC_DIR = HERE / "src"
-DIST_DIR = HERE / "dist"
 CONTENUS_DIR = HERE / "contenus"
 
 jinja_env = JinjaEnv(loader=FileSystemLoader(str(SRC_DIR)), undefined=StrictUndefined)
 
 markdown = mistune.create_markdown(escape=False)
 
-assets_env = AssetsEnv(
-    directory=str(DIST_DIR),
-    load_path=[str(SRC_DIR)],
-    url="./",
-    url_expire=False,
-    debug=False,
-    auto_build=True,
-    versions="hash",
-)
-assets_env.register("js", Bundle("main.js", output="main-%(version)s.js"))
-assets_env.register("css", Bundle("style.css", output="style-%(version)s.css"))
-
 
 @cli
 def all():
-    clean()
-    static()
     index()
     readmes()
-
-
-@cli
-def clean():
-    """Clean output directory"""
-    shutil.rmtree(DIST_DIR, ignore_errors=True)
-
-
-@cli
-def static():
-    """Copy static files"""
-    shutil.copytree(SRC_DIR / "static", DIST_DIR)
-    shutil.copytree(SRC_DIR / "tests", DIST_DIR / "tests")
 
 
 def each_folder_from(source_dir):
@@ -86,17 +55,12 @@ def build_responses(source_dir):
 def index():
     """Build the index with contents from markdown dedicated folder."""
     responses = build_responses(CONTENUS_DIR)
-    render_template("template.html", DIST_DIR / "index.html", **responses)
-    render_template("template_tests.html", DIST_DIR / "tests/index.html")
+    render_template("template.html", SRC_DIR / "index.html", **responses)
 
 
 def render_template(src, output, **context):
     template = jinja_env.get_template(src)
-    content = template.render(
-        js_path=assets_env["js"].urls()[0],
-        css_path=assets_env["css"].urls()[0],
-        **context,
-    )
+    content = template.render(**context,)
     output.open("w").write(content)
 
 

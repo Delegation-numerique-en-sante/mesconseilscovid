@@ -1,6 +1,14 @@
-describe('Affichage', function () {
+var chai = require('chai')
+
+var jsdom = require('jsdom')
+var { JSDOM } = jsdom
+
+var affichage = require('../affichage.js')
+
+describe('affichage', function () {
     it('On peut masquer des éléments visibles', function () {
-        var element = document.createElement('div')
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = '<div class="visible"></div>'
 
         affichage.hideSelector(element, '.visible')
@@ -10,7 +18,8 @@ describe('Affichage', function () {
     })
 
     it('On peut afficher des éléments masqués', function () {
-        var element = document.createElement('div')
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = '<div id="foo" hidden></div>'
 
         affichage.displayBlocks(element, ['foo'])
@@ -20,16 +29,18 @@ describe('Affichage', function () {
     })
 
     it('On peut injecter du contenu', function () {
-        var element = document.createElement('div')
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = '<div id="foo"></div>'
 
         affichage.injectContent(element, 'bar', '#foo')
 
-        chai.expect(element.firstElementChild.innerText).to.equal('bar')
+        chai.expect(element.firstElementChild.textContent).to.equal('bar')
     })
 
     it('On peut injecter des attributs', function () {
-        var element = document.createElement('div')
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = '<a id="foo"></a>'
 
         affichage.injectAttribute(element, 'href', 'http://example.com', '#foo')
