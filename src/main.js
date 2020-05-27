@@ -772,7 +772,7 @@ function resetPrivateData(event) {
     event.preventDefault()
     questionnaire.resetData()
     stockageLocal.supprimer()
-    navigation.goToPage('introduction')
+    router.navigate('introduction')
 }
 
 var Geolocaliseur = function () {
@@ -1037,30 +1037,21 @@ var Algorithme = function (questionnaire, carteDepartements) {
 }
 
 var Navigation = function () {
-    this.init = function () {
-        var that = this
-        window.addEventListener('hashchange', function (event) {
-            var hash = document.location.hash && document.location.hash.slice(1)
-            hash && that.loadPage(hash)
-        })
-        this.loadInitialPage()
-        this.checkForUpdatesEvery(10) // Minutes.
-    }
-
     this.loadInitialPage = function () {
         var hash = document.location.hash
         var requestedPage = hash ? hash.slice(1) : 'introduction'
         var redirectedPage = this.redirectIfMissingData(requestedPage, questionnaire)
         if (redirectedPage) {
-            this.goToPage(redirectedPage)
+            router.navigate(redirectedPage)
         } else {
-            this.loadPage(requestedPage)
+            router.navigate(requestedPage)
         }
     }
 
     this.redirectIfMissingData = function (page, questionnaire) {
         if (page === 'introduction') return
         if (page === 'conditionsutilisation') return
+        if (page === 'nouvelleversiondisponible') return
 
         // Questions obligatoires
 
@@ -1197,7 +1188,7 @@ var Navigation = function () {
                         )
                     }
                 )
-                this.goToPage('nouvelleversiondisponible')
+                router.navigate('nouvelleversiondisponible')
             }
         }
     }
@@ -1224,25 +1215,6 @@ var Navigation = function () {
             page === 'contactarisque'
         )
     }
-
-    this.goToPage = function (name) {
-        document.location.hash = name
-    }
-
-    this.loadPage = function (pageName) {
-        var page = document.querySelector('section#page')
-        var section = document.querySelector('#' + pageName)
-        var clone = section.cloneNode(true)
-        page.innerHTML = '' // Flush the current content.
-        var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
-        element.scrollIntoView({ behavior: 'smooth' })
-
-        onPageLoadScripts[pageName] && onPageLoadScripts[pageName](element, pageName)
-
-        var customPageEvent = document.createEvent('CustomEvent')
-        customPageEvent.initCustomEvent('pageChanged:' + pageName, true, true, name)
-        document.dispatchEvent(customPageEvent)
-    }
 }
 navigation = new Navigation()
 
@@ -1251,7 +1223,7 @@ var OnSubmitFormScripts = function () {
         event.preventDefault()
         questionnaire.departement = event.target.elements['departement'].value
         stockageLocal.enregistrer(questionnaire)
-        navigation.goToPage('activitepro')
+        router.navigate('activitepro')
     }
 
     this.activitepro = function (event) {
@@ -1262,7 +1234,7 @@ var OnSubmitFormScripts = function () {
         questionnaire.activite_pro_sante =
             event.target.elements['activite_pro_sante'].checked
         stockageLocal.enregistrer(questionnaire)
-        navigation.goToPage('foyer')
+        router.navigate('foyer')
     }
 
     this.foyer = function (event) {
@@ -1270,7 +1242,7 @@ var OnSubmitFormScripts = function () {
         questionnaire.foyer_enfants = event.target.elements['foyer_enfants'].checked
         questionnaire.foyer_fragile = event.target.elements['foyer_fragile'].checked
         stockageLocal.enregistrer(questionnaire)
-        navigation.goToPage('caracteristiques')
+        router.navigate('caracteristiques')
     }
 
     this.caracteristiques = function (event) {
@@ -1281,7 +1253,7 @@ var OnSubmitFormScripts = function () {
         questionnaire.poids = event.target.elements['poids'].value
         questionnaire.taille = event.target.elements['taille'].value
         stockageLocal.enregistrer(questionnaire)
-        navigation.goToPage('antecedents')
+        router.navigate('antecedents')
     }
 
     this.antecedents = function (event) {
@@ -1305,7 +1277,7 @@ var OnSubmitFormScripts = function () {
         questionnaire.antecedent_chronique_autre =
             event.target.elements['antecedent_chronique_autre'].checked
         stockageLocal.enregistrer(questionnaire)
-        navigation.goToPage('symptomesactuels')
+        router.navigate('symptomesactuels')
     }
 
     this.symptomesactuels = function (event) {
@@ -1323,10 +1295,10 @@ var OnSubmitFormScripts = function () {
             questionnaire.contact_a_risque_meme_classe = undefined
             questionnaire.contact_a_risque_autre = undefined
             stockageLocal.enregistrer(questionnaire)
-            navigation.goToPage('conseilssymptomesactuels')
+            router.navigate('conseilssymptomesactuels')
         } else {
             stockageLocal.enregistrer(questionnaire)
-            navigation.goToPage('symptomespasses')
+            router.navigate('symptomespasses')
         }
     }
 
@@ -1344,10 +1316,10 @@ var OnSubmitFormScripts = function () {
             questionnaire.contact_a_risque_meme_classe = undefined
             questionnaire.contact_a_risque_autre = undefined
             stockageLocal.enregistrer(questionnaire)
-            navigation.goToPage('conseilssymptomespasses')
+            router.navigate('conseilssymptomespasses')
         } else {
             stockageLocal.enregistrer(questionnaire)
-            navigation.goToPage('contactarisque')
+            router.navigate('contactarisque')
         }
     }
 
@@ -1369,17 +1341,52 @@ var OnSubmitFormScripts = function () {
             event.target.elements['contact_a_risque_autre'].checked
         stockageLocal.enregistrer(questionnaire)
         if (questionnaire.contact_a_risque) {
-            navigation.goToPage('conseilscontactarisque')
+            router.navigate('conseilscontactarisque')
         } else {
-            navigation.goToPage('conseils')
+            router.navigate('conseils')
         }
     }
 }
 
 var onSubmitFormScripts = new OnSubmitFormScripts()
 
-var OnPageLoadScripts = function () {
-    this.introduction = function (element, pageName) {
+var loadPage = function (pageName) {
+    var page = document.querySelector('section#page')
+    var section = document.querySelector('#' + pageName)
+    var clone = section.cloneNode(true)
+    page.innerHTML = '' // Flush the current content.
+    var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
+    element.scrollIntoView({ behavior: 'smooth' })
+    return element
+}
+
+var root = null
+var useHash = true
+var router = new Navigo(root, useHash)
+
+router.hooks({
+    before: function (done, params) {
+        // Global hook to redirect on the correct page given registered data.
+        navigation.loadInitialPage()
+        done()
+    },
+    after: function (params) {
+        // Global hook to send a custom event on each page change.
+        var hash = document.location.hash
+        if (!hash) {
+            return
+        }
+        var pageName = hash.slice(1)
+        var customPageEvent = document.createEvent('CustomEvent')
+        customPageEvent.initCustomEvent('pageChanged:' + pageName, true, true, pageName)
+        document.dispatchEvent(customPageEvent)
+    },
+})
+
+router
+    .on('introduction', function () {
+        var pageName = 'introduction'
+        var element = loadPage(pageName)
         if (questionnaire.isComplete()) {
             affichage.displayElement(element, 'js-questionnaire-full')
             affichage.hideElement(element.querySelector('#js-questionnaire-empty'))
@@ -1390,9 +1397,10 @@ var OnPageLoadScripts = function () {
             )
             mesConseilsLink.setAttribute('href', '#' + target)
         }
-    }
-
-    this.residence = function (form, pageName) {
+    })
+    .on('residence', function () {
+        var pageName = 'residence'
+        var form = loadPage(pageName)
         var button = form.querySelector('input[type=submit]')
         formUtils.preloadForm(form, 'departement')
         formUtils.toggleFormButtonOnSelectFieldsRequired(
@@ -1408,9 +1416,10 @@ var OnPageLoadScripts = function () {
         document
             .getElementById('geolocalisation')
             .addEventListener('click', geolocalisation)
-    }
-
-    this.activitepro = function (form, pageName) {
+    })
+    .on('activitepro', function () {
+        var pageName = 'activitepro'
+        var form = loadPage(pageName)
         var button = form.querySelector('input[type=submit]')
         formUtils.preloadCheckboxForm(form, 'activite_pro')
         formUtils.preloadCheckboxForm(form, 'activite_pro_public')
@@ -1422,15 +1431,17 @@ var OnPageLoadScripts = function () {
         })
         formUtils.toggleFormButtonOnCheck(form, button.value, 'Continuer')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
-    }
-
-    this.foyer = function (form, pageName) {
+    })
+    .on('foyer', function () {
+        var pageName = 'foyer'
+        var form = loadPage(pageName)
         formUtils.preloadCheckboxForm(form, 'foyer_enfants')
         formUtils.preloadCheckboxForm(form, 'foyer_fragile')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
-    }
-
-    this.caracteristiques = function (form, pageName) {
+    })
+    .on('caracteristiques', function () {
+        var pageName = 'caracteristiques'
+        var form = loadPage(pageName)
         var button = form.querySelector('input[type=submit]')
         formUtils.preloadCheckboxForm(form, 'sup65')
         formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre')
@@ -1442,9 +1453,10 @@ var OnPageLoadScripts = function () {
             'Les informations de poids et de taille sont requises'
         )
         form.addEventListener('submit', onSubmitFormScripts[pageName])
-    }
-
-    this.antecedents = function (form, pageName) {
+    })
+    .on('antecedents', function () {
+        var pageName = 'antecedents'
+        var form = loadPage(pageName)
         var button = form.querySelector('input[type=submit]')
         formUtils.preloadCheckboxForm(form, 'antecedent_cardio')
         formUtils.preloadCheckboxForm(form, 'antecedent_diabete')
@@ -1457,23 +1469,26 @@ var OnPageLoadScripts = function () {
         formUtils.preloadCheckboxForm(form, 'antecedent_chronique_autre')
         formUtils.toggleFormButtonOnCheck(form, button.value, 'Continuer')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
-    }
-
-    this.symptomesactuels = function (form, pageName) {
+    })
+    .on('symptomesactuels', function () {
+        var pageName = 'symptomesactuels'
+        var form = loadPage(pageName)
         var button = form.querySelector('input[type=submit]')
         formUtils.preloadCheckboxForm(form, 'symptomes_actuels')
         formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
-    }
-
-    this.symptomespasses = function (form, pageName) {
+    })
+    .on('symptomespasses', function () {
+        var pageName = 'symptomespasses'
+        var form = loadPage(pageName)
         var button = form.querySelector('input[type=submit]')
         formUtils.preloadCheckboxForm(form, 'symptomes_passes')
         formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
-    }
-
-    this.contactarisque = function (form, pageName) {
+    })
+    .on('contactarisque', function () {
+        var pageName = 'contactarisque'
+        var form = loadPage(pageName)
         var button = form.querySelector('input[type=submit]')
         formUtils.preloadCheckboxForm(form, 'contact_a_risque')
         formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_lieu_de_vie')
@@ -1494,9 +1509,10 @@ var OnPageLoadScripts = function () {
             'Vous devez saisir l’un des sous-choix proposés'
         )
         form.addEventListener('submit', onSubmitFormScripts[pageName])
-    }
-
-    this.conseils = function (element, pageName) {
+    })
+    .on('conseils', function () {
+        var pageName = 'conseils'
+        var element = loadPage(pageName)
         // Hide all conseils that might have been made visible on previous runs.
         affichage.hideSelector(element, '.visible')
 
@@ -1518,9 +1534,10 @@ var OnPageLoadScripts = function () {
         injectionScripts.departement(element, data)
         injectionScripts.caracteristiques(element, data)
         injectionScripts.antecedents(element, data)
-    }
-
-    this.conseilssymptomespasses = function (element, pageName) {
+    })
+    .on('conseilssymptomespasses', function () {
+        var pageName = 'conseilssymptomespasses'
+        var element = loadPage(pageName)
         // Hide all conseils that might have been made visible on previous runs.
         affichage.hideSelector(element, '.visible')
 
@@ -1535,9 +1552,14 @@ var OnPageLoadScripts = function () {
 
         // Dynamic data injections.
         injectionScripts.departement(element, data)
-    }
-
-    this.conseilscontactarisque = function (element, pageName) {
+    })
+    .on('conseilssymptomesactuels', function () {
+        var pageName = 'conseilssymptomesactuels'
+        var element = loadPage(pageName)
+    })
+    .on('conseilscontactarisque', function () {
+        var pageName = 'conseilscontactarisque'
+        var element = loadPage(pageName)
         // Hide all conseils that might have been made visible on previous runs.
         affichage.hideSelector(element, '.visible')
 
@@ -1552,12 +1574,17 @@ var OnPageLoadScripts = function () {
 
         // Dynamic data injections.
         injectionScripts.departement(element, data)
-    }
-}
+    })
+    .on('nouvelleversiondisponible', function () {
+        var pageName = 'nouvelleversiondisponible'
+        var element = loadPage(pageName)
+    })
+    .notFound(function () {
+        router.navigate('introduction')
+    })
 
-var onPageLoadScripts = new OnPageLoadScripts()
 
-var InjectionScrips = function () {
+var InjectionScripts = function () {
     this.departement = function (element, data) {
         affichage.injectContent(
             element,
@@ -1612,4 +1639,4 @@ var InjectionScrips = function () {
     }
 }
 
-var injectionScripts = new InjectionScrips()
+var injectionScripts = new InjectionScripts()
