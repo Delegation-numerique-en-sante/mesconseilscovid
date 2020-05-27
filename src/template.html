@@ -788,17 +788,5 @@
 </section>
 
     <script src="scripts/main.js"></script>
-    <script type="text/javascript">
-        ;(function() {
-            document.addEventListener('dataLoaded', function (event) {
-                router.resolve()
-                updater.checkForUpdatesEvery(10) // Minutes.
-            })
-            stockageLocal.charger(questionnaire)
-            document
-                .getElementById('delete-data')
-                .addEventListener('click', resetPrivateData)
-        })()
-    </script>
 </body>
 </html>
