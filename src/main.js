@@ -1570,6 +1570,10 @@ router
         // Dynamic data injections.
         injectionScripts.departement(element, data)
     })
+    .on(new RegExp('^conditionsutilisation$'), function () {
+        var pageName = 'conditionsutilisation'
+        var element = loadPage(pageName)
+    })
     .on(new RegExp('^nouvelleversiondisponible$'), function () {
         var pageName = 'nouvelleversiondisponible'
         var element = loadPage(pageName)
