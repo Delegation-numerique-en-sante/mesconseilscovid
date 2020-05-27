@@ -1,4 +1,4 @@
-var Navigo = require('./navigo')
+var Navigo = require('navigo')
 
 var affichage = require('./affichage.js')
 var algorithme = require('./algorithme.js')
