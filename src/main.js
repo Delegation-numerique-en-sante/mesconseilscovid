@@ -885,8 +885,7 @@ var Algorithme = function (questionnaire, carteDepartements) {
             data.sup65 ||
             data.grossesse_3e_trimestre ||
             data.imc > 30 ||
-            this.hasAntecedents(data) ||
-            data.antecedent_chronique_autre
+            this.hasAntecedents(data)
         )
     }
 
@@ -991,7 +990,7 @@ var Algorithme = function (questionnaire, carteDepartements) {
 
     this.caracteristiquesAntecedentsBlockNamesToDisplay = function (data) {
         var blockNames = []
-        if (data.risques) {
+        if (data.risques || data.antecedent_chronique_autre) {
             blockNames.push('conseils-caracteristiques')
             // Réponses
             if (data.antecedents || data.antecedent_chronique_autre) {

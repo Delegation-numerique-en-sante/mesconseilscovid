@@ -63,7 +63,7 @@ Sous-question (contact public) : [libellé](questions/question_activité_pro_pub
 
 Sous-question (domaine santé) : [libellé](questions/question_activité_pro_santé_libellé.md), [aide](questions/question_activité_pro_santé_aide.md)
 
-Réponse : 
+Réponse :
 
 * [réponse_activité_pro.md](réponses/réponse_activité_pro.md) si case cochée
 * [réponse_activité_pro_public.md](réponses/réponse_activité_pro_public.md) si case cochée
@@ -86,7 +86,7 @@ Question (enfants) : [libellé](questions/question_foyer_enfants_libellé.md)
 
 Question (fragile) : [libellé](questions/question_foyer_fragile_libellé.md), [aide](questions/question_foyer_fragile_aide.md)
 
-Réponse : 
+Réponse :
 
 * [réponse_foyer_enfants.md](réponses/réponse_foyer_enfants.md) si case cochée
 * [réponse_foyer_fragile.md](réponses/réponse_foyer_fragile.md) si case cochée
@@ -117,7 +117,7 @@ Si seule la case fragile est cochée :
 
 #### Caractéristiques et antécédents
 
-[Titre caractéristiques](questions/question_caractéristiques_titre.md) 
+[Titre caractéristiques](questions/question_caractéristiques_titre.md)
 
 Question (âge + grossesse) : [titre](questions/question_caractéristiques_âge_grossesse_titre.md)
 
@@ -152,7 +152,7 @@ Question (drépanocytose) : [libellé](questions/question_antécédents_drépano
 
 Question (chronique autre) : [libellé](questions/question_antécédents_chronique_autre_libellé.md)
 
-Réponse : 
+Réponse :
 
 * [réponse_antécédents.md](réponses/réponse_antécédents.md) si [Antécédents](#antécédents) ou antécédents chroniques autres
 * [réponse_caractéristiques.md](réponses/réponse_caractéristiques.md) si âge > 65 ou grossesse 3e trimestre ou IMC > 30
@@ -257,7 +257,7 @@ La couleur d’un département (`rouge` ou `verte` si on a les données) est dé
 Est définie comme étant une personne à antécédents celle qui vérifie l’une de ces conditions :
 
 * cardio
-* diabète 
+* diabète
 * maladie respiratoire
 * dialyse
 * cancer
@@ -274,5 +274,4 @@ Est définie comme étant une personne à risque celle qui vérifie l’une de c
 * est au 3e trimestre de sa grossesse
 * a un IMC > 30
 * a des [Antécédents](#antécédents)
-* a des antécédents chroniques autres
 
