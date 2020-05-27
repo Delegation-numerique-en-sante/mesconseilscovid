@@ -1,3 +1,20 @@
+var chai = require('chai')
+
+var jsdom = require('jsdom')
+var { JSDOM } = jsdom
+
+var affichage = require('../affichage.js')
+
+var algorithme = require('../algorithme.js')
+
+var carteDepartements = require('../carte.js')
+
+var InjectionScripts = require('../injection.js')
+var injectionScripts = new InjectionScripts()
+
+var Questionnaire = require('../questionnaire.js')
+var questionnaire = new Questionnaire()
+
 describe('Injection', function () {
     beforeEach(function () {
         questionnaire.resetData()
@@ -8,7 +25,8 @@ describe('Injection', function () {
     })
 
     it('Départements', function () {
-        var element = document.createElement('div')
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = `
             <strong id="nom-departement"></strong>
             <a href="#conseils-departement" id="lien-prefecture">Site</a>
@@ -17,8 +35,7 @@ describe('Injection', function () {
             departement: '01',
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
-        var data = algorithme.getData()
+        var data = algorithme.getData(questionnaire)
 
         injectionScripts.departement(element, data)
 
@@ -29,7 +46,8 @@ describe('Injection', function () {
     })
 
     it('Caractéristiques (âge)', function () {
-        var element = document.createElement('div')
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = `
             <strong id="nom-caracteristiques"></strong>
         `
@@ -37,8 +55,7 @@ describe('Injection', function () {
             sup65: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
-        var data = algorithme.getData()
+        var data = algorithme.getData(questionnaire)
 
         injectionScripts.caracteristiques(element, data)
 
@@ -48,7 +65,8 @@ describe('Injection', function () {
     })
 
     it('Caractéristiques (grossesse)', function () {
-        var element = document.createElement('div')
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = `
             <strong id="nom-caracteristiques"></strong>
         `
@@ -56,8 +74,7 @@ describe('Injection', function () {
             grossesse_3e_trimestre: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
-        var data = algorithme.getData()
+        var data = algorithme.getData(questionnaire)
 
         injectionScripts.caracteristiques(element, data)
 
@@ -67,7 +84,8 @@ describe('Injection', function () {
     })
 
     it('Caractéristiques (âge + grossesse = âge)', function () {
-        var element = document.createElement('div')
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = `
             <strong id="nom-caracteristiques"></strong>
         `
@@ -76,8 +94,7 @@ describe('Injection', function () {
             grossesse_3e_trimestre: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
-        var data = algorithme.getData()
+        var data = algorithme.getData(questionnaire)
 
         injectionScripts.caracteristiques(element, data)
 
@@ -87,7 +104,8 @@ describe('Injection', function () {
     })
 
     it('Caractéristiques (IMC)', function () {
-        var element = document.createElement('div')
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = `
             <strong id="nom-caracteristiques"></strong>
         `
@@ -96,8 +114,7 @@ describe('Injection', function () {
             poids: 150,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
-        var data = algorithme.getData()
+        var data = algorithme.getData(questionnaire)
 
         injectionScripts.caracteristiques(element, data)
 
@@ -107,7 +124,8 @@ describe('Injection', function () {
     })
 
     it('Caractéristiques (âge + IMC)', function () {
-        var element = document.createElement('div')
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = `
             <strong id="nom-caracteristiques"></strong>
         `
@@ -117,8 +135,7 @@ describe('Injection', function () {
             poids: 150,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
-        var data = algorithme.getData()
+        var data = algorithme.getData(questionnaire)
 
         injectionScripts.caracteristiques(element, data)
 
@@ -128,7 +145,8 @@ describe('Injection', function () {
     })
 
     it('Caractéristiques (grossesse + IMC)', function () {
-        var element = document.createElement('div')
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = `
             <strong id="nom-caracteristiques"></strong>
         `
@@ -138,8 +156,7 @@ describe('Injection', function () {
             poids: 150,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
-        var data = algorithme.getData()
+        var data = algorithme.getData(questionnaire)
 
         injectionScripts.caracteristiques(element, data)
 
@@ -149,7 +166,8 @@ describe('Injection', function () {
     })
 
     it('Antécédents (cardio)', function () {
-        var element = document.createElement('div')
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = `
             <strong id="nom-antecedents"></strong>
         `
@@ -157,8 +175,7 @@ describe('Injection', function () {
             antecedent_cardio: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
-        var data = algorithme.getData()
+        var data = algorithme.getData(questionnaire)
 
         injectionScripts.antecedents(element, data)
 
@@ -168,7 +185,8 @@ describe('Injection', function () {
     })
 
     it('Antécédents (autres)', function () {
-        var element = document.createElement('div')
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = `
             <strong id="nom-antecedents"></strong>
         `
@@ -176,8 +194,7 @@ describe('Injection', function () {
             antecedent_chronique_autre: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
-        var data = algorithme.getData()
+        var data = algorithme.getData(questionnaire)
 
         injectionScripts.antecedents(element, data)
 
@@ -187,7 +204,8 @@ describe('Injection', function () {
     })
 
     it('Antécédents (cardio + autres)', function () {
-        var element = document.createElement('div')
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = `
             <strong id="nom-antecedents"></strong>
         `
@@ -196,8 +214,7 @@ describe('Injection', function () {
             antecedent_chronique_autre: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
-        var data = algorithme.getData()
+        var data = algorithme.getData(questionnaire)
 
         injectionScripts.antecedents(element, data)
 

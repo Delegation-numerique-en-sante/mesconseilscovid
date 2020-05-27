@@ -53,4 +53,8 @@ $ make autobuild
 
 ### Lancer les tests
 
-Pour lancer les tests dans le navigateur avec [Mocha](https://mochajs.org/), allez sur `/tests/` une fois votre serveur lancé.
+Pour lancer les tests unitaires sous Node avec [Mocha](https://mochajs.org/) :
+
+```
+$ make test
+```

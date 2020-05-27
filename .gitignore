@@ -1,4 +1,6 @@
 key.pem
 cert.pem
 dist/
-.webassets-cache
+node_modules/
+src/index.html
+package-lock.json

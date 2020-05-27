@@ -1,3 +1,8 @@
+var chai = require('chai')
+
+var Questionnaire = require('../questionnaire.js')
+var questionnaire = new Questionnaire()
+
 describe('Questionnaire', function () {
     beforeEach(function () {
         questionnaire.resetData()

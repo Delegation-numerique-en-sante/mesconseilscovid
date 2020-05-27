@@ -1,3 +1,12 @@
+var chai = require('chai')
+
+var algorithme = require('../algorithme.js')
+
+// var carteDepartements = require('../carte.js')
+
+var Questionnaire = require('../questionnaire.js')
+var questionnaire = new Questionnaire()
+
 describe('Algorithme statut', function () {
     beforeEach(function () {
         questionnaire.resetData()
@@ -10,9 +19,8 @@ describe('Algorithme statut', function () {
     it('Un profil sans risques affiche le statut par défaut', function () {
         var data = {}
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.statutBlockNamesToDisplay(algorithme.getData())
+            algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal(['statut-peu-de-risques'])
     })
 
@@ -21,9 +29,8 @@ describe('Algorithme statut', function () {
             foyer_fragile: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.statutBlockNamesToDisplay(algorithme.getData())
+            algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal(['statut-foyer-fragile'])
     })
 
@@ -32,9 +39,8 @@ describe('Algorithme statut', function () {
             antecedent_cardio: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.statutBlockNamesToDisplay(algorithme.getData())
+            algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal(['statut-personne-fragile'])
     })
 
@@ -44,9 +50,8 @@ describe('Algorithme statut', function () {
             foyer_fragile: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.statutBlockNamesToDisplay(algorithme.getData())
+            algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal(['statut-personne-fragile'])
     })
 })
@@ -65,9 +70,8 @@ describe('Algorithme département', function () {
             departement: '01',
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.departementBlockNamesToDisplay(algorithme.getData())
+            algorithme.departementBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal(['conseils-departement', 'conseils-departement-vert'])
     })
 
@@ -76,9 +80,8 @@ describe('Algorithme département', function () {
             departement: '02',
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.departementBlockNamesToDisplay(algorithme.getData())
+            algorithme.departementBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal(['conseils-departement', 'conseils-departement-rouge'])
     })
 
@@ -87,9 +90,8 @@ describe('Algorithme département', function () {
             departement: '977',
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.departementBlockNamesToDisplay(algorithme.getData())
+            algorithme.departementBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal(['conseils-departement'])
     })
 })
@@ -104,9 +106,8 @@ describe('Algorithme activité pro', function () {
     })
 
     it('Aucune activité pro n’affiche rien', function () {
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.activiteProBlockNamesToDisplay(algorithme.getData())
+            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal([])
     })
 
@@ -115,9 +116,8 @@ describe('Algorithme activité pro', function () {
             activite_pro: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.activiteProBlockNamesToDisplay(algorithme.getData())
+            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal([
             'conseils-activite',
             'reponse-activite-pro',
@@ -132,9 +132,8 @@ describe('Algorithme activité pro', function () {
             activite_pro_public: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.activiteProBlockNamesToDisplay(algorithme.getData())
+            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal([
             'conseils-activite',
             'reponse-activite-pro-public',
@@ -149,9 +148,8 @@ describe('Algorithme activité pro', function () {
             activite_pro_sante: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.activiteProBlockNamesToDisplay(algorithme.getData())
+            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal([
             'conseils-activite',
             'reponse-activite-pro-sante',
@@ -166,9 +164,8 @@ describe('Algorithme activité pro', function () {
             activite_pro_sante: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.activiteProBlockNamesToDisplay(algorithme.getData())
+            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal([
             'conseils-activite',
             'reponse-activite-pro-public-sante',
@@ -188,9 +185,8 @@ describe('Algorithme foyer', function () {
     })
 
     it('Aucun risque foyer n’affiche rien', function () {
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.foyerBlockNamesToDisplay(algorithme.getData())
+            algorithme.foyerBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal([])
     })
 
@@ -199,9 +195,8 @@ describe('Algorithme foyer', function () {
             foyer_enfants: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.foyerBlockNamesToDisplay(algorithme.getData())
+            algorithme.foyerBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal(['conseils-foyer', 'conseils-foyer-enfants'])
     })
 
@@ -210,9 +205,8 @@ describe('Algorithme foyer', function () {
             foyer_fragile: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.foyerBlockNamesToDisplay(algorithme.getData())
+            algorithme.foyerBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal(['conseils-foyer', 'conseils-foyer-fragile'])
     })
 
@@ -222,9 +216,8 @@ describe('Algorithme foyer', function () {
             foyer_fragile: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.foyerBlockNamesToDisplay(algorithme.getData())
+            algorithme.foyerBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal(['conseils-foyer', 'conseils-foyer-enfants-fragile'])
     })
 })
@@ -239,9 +232,8 @@ describe('Algorithme caractéristiques et antécédents', function () {
     })
 
     it('Aucun antécédent n’affiche rien', function () {
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.foyerBlockNamesToDisplay(algorithme.getData())
+            algorithme.foyerBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal([])
     })
 
@@ -250,10 +242,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             sup65: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
             algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData()
+                algorithme.getData(questionnaire)
             )
         ).to.deep.equal([
             'conseils-caracteristiques',
@@ -269,10 +260,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             poids: 100,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
             algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData()
+                algorithme.getData(questionnaire)
             )
         ).to.deep.equal([
             'conseils-caracteristiques',
@@ -287,10 +277,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             grossesse_3e_trimestre: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
             algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData()
+                algorithme.getData(questionnaire)
             )
         ).to.deep.equal([
             'conseils-caracteristiques',
@@ -305,10 +294,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             antecedent_cardio: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
             algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData()
+                algorithme.getData(questionnaire)
             )
         ).to.deep.equal([
             'conseils-caracteristiques',
@@ -324,10 +312,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             activite_pro: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
             algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData()
+                algorithme.getData(questionnaire)
             )
         ).to.deep.equal([
             'conseils-caracteristiques',
@@ -342,10 +329,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             antecedent_chronique_autre: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
             algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData()
+                algorithme.getData(questionnaire)
             )
         ).to.deep.equal([
             'conseils-caracteristiques',
@@ -371,9 +357,10 @@ describe('Algorithme symptômes passés', function () {
             sup65: false,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.symptomesPassesBlockNamesToDisplay(algorithme.getData())
+            algorithme.symptomesPassesBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
         ).to.deep.equal(['conseils-symptomes-passes-sans-risques'])
     })
 
@@ -382,9 +369,10 @@ describe('Algorithme symptômes passés', function () {
             sup65: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.symptomesPassesBlockNamesToDisplay(algorithme.getData())
+            algorithme.symptomesPassesBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
         ).to.deep.equal(['conseils-symptomes-passes-avec-risques'])
     })
 
@@ -393,9 +381,10 @@ describe('Algorithme symptômes passés', function () {
             foyer_fragile: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.symptomesPassesBlockNamesToDisplay(algorithme.getData())
+            algorithme.symptomesPassesBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
         ).to.deep.equal(['conseils-symptomes-passes-avec-risques'])
     })
 })
@@ -414,9 +403,10 @@ describe('Algorithme contact à risque', function () {
             contact_a_risque: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.contactARisqueBlockNamesToDisplay(algorithme.getData())
+            algorithme.contactARisqueBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
         ).to.deep.equal([])
     })
 
@@ -425,9 +415,10 @@ describe('Algorithme contact à risque', function () {
             contact_a_risque_autre: true,
         }
         questionnaire.fillData(data)
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
         chai.expect(
-            algorithme.contactARisqueBlockNamesToDisplay(algorithme.getData())
+            algorithme.contactARisqueBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
         ).to.deep.equal(['conseils-contact-a-risque-autre'])
     })
 })

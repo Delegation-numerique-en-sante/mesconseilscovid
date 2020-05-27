@@ -1,3 +1,7 @@
+var chai = require('chai')
+
+var carteDepartements = require('../carte.js')
+
 describe('Carte départements', function () {
     it('Il y a le bon nombre de noms', function () {
         chai.expect(Object.keys(carteDepartements._noms).length).to.equal(104)
