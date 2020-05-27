@@ -324,3 +324,11 @@ window.router = Router.initRouter()
 
 var InjectionScripts = require('./injection.js')
 window.injectionScripts = new InjectionScripts()
+;(function () {
+    document.addEventListener('dataLoaded', function (event) {
+        router.resolve()
+        updater.checkForUpdatesEvery(10) // Minutes.
+    })
+    stockageLocal.charger(questionnaire)
+    document.getElementById('delete-data').addEventListener('click', resetPrivateData)
+})()
