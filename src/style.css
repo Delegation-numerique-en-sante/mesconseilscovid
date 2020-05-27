@@ -518,6 +518,9 @@ input[type='submit']:disabled {
 a[href$='.pdf']::after {
     content: ' (PDF)';
 }
+a[href*='youtube.com']::after {
+    content: ' (vidéo Youtube)';
+}
 
 a#geolocalisation {
     display: block;
