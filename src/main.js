@@ -1038,8 +1038,7 @@ var Algorithme = function (questionnaire, carteDepartements) {
 
 var Navigation = function () {
     this.loadInitialPage = function () {
-        var hash = document.location.hash
-        var requestedPage = hash ? hash.slice(1) : 'introduction'
+        var requestedPage = getCurrentPageName() || 'introduction'
         var redirectedPage = this.redirectIfMissingData(requestedPage, questionnaire)
         if (redirectedPage) {
             router.navigate(redirectedPage)
@@ -1132,7 +1131,8 @@ var Navigation = function () {
     }
 
     this.checkForUpdate = function () {
-        if (document.location.hash === '#nouvelle-version-disponible') {
+        var pageName = getCurrentPageName()
+        if (pageName === 'nouvelleversiondisponible') {
             return
         }
         var that = this
@@ -1154,6 +1154,7 @@ var Navigation = function () {
             return
         } else {
             var that = this
+            var pageName = getCurrentPageName()
             if (this.isFillingQuestionnaire()) {
                 document.addEventListener('elementDisplayed:update-banner', function (
                     event
@@ -1166,7 +1167,7 @@ var Navigation = function () {
                     var refreshButton = event.detail.querySelector(
                         '#refresh-button-banner'
                     )
-                    refreshButton.setAttribute('href', window.location.hash)
+                    refreshButton.setAttribute('href', '#' + pageName)
                     refreshButton.addEventListener(
                         'click',
                         that.forceReloadCurrentPageWithHash
@@ -1174,14 +1175,13 @@ var Navigation = function () {
                 })
                 affichage.displayElement(document, 'update-banner')
             } else {
-                var previousHash = document.location.hash
                 document.addEventListener(
                     'pageChanged:nouvelleversiondisponible',
                     function (event) {
                         var refreshButton = document.querySelector(
                             '#nouvelle-version-disponible-block #refresh-button'
                         )
-                        refreshButton.setAttribute('href', previousHash)
+                        refreshButton.setAttribute('href', '#' + pageName)
                         refreshButton.addEventListener(
                             'click',
                             that.forceReloadCurrentPageWithHash
@@ -1203,16 +1203,16 @@ var Navigation = function () {
     }
 
     this.isFillingQuestionnaire = function () {
-        var page = document.location.hash.slice(1)
+        var pageName = getCurrentPageName()
         return (
-            page === 'residence' ||
-            page === 'activitepro' ||
-            page === 'foyer' ||
-            page === 'caracteristiques' ||
-            page === 'antecedents' ||
-            page === 'symptomesactuels' ||
-            page === 'symptomespasses' ||
-            page === 'contactarisque'
+            pageName === 'residence' ||
+            pageName === 'activitepro' ||
+            pageName === 'foyer' ||
+            pageName === 'caracteristiques' ||
+            pageName === 'antecedents' ||
+            pageName === 'symptomesactuels' ||
+            pageName === 'symptomespasses' ||
+            pageName === 'contactarisque'
         )
     }
 }
@@ -1350,6 +1350,11 @@ var OnSubmitFormScripts = function () {
 
 var onSubmitFormScripts = new OnSubmitFormScripts()
 
+var getCurrentPageName = function () {
+    var hash = document.location.hash
+    return hash ? hash.slice(1) : ""
+}
+
 var loadPage = function (pageName) {
     var page = document.querySelector('section#page')
     var section = document.querySelector('#' + pageName)
@@ -1372,11 +1377,7 @@ router.hooks({
     },
     after: function (params) {
         // Global hook to send a custom event on each page change.
-        var hash = document.location.hash
-        if (!hash) {
-            return
-        }
-        var pageName = hash.slice(1)
+        var pageName = getCurrentPageName()
         var customPageEvent = document.createEvent('CustomEvent')
         customPageEvent.initCustomEvent('pageChanged:' + pageName, true, true, pageName)
         document.dispatchEvent(customPageEvent)
