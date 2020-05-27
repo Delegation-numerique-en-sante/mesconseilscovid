@@ -64,7 +64,7 @@ def each_folder_from(source_dir):
 
 def each_markdown_from(source_dir, file_name="*.md"):
     """Walk across the `source_dir` and return the md file paths."""
-    for filename in fnmatch.filter(os.listdir(source_dir), file_name):
+    for filename in fnmatch.filter(sorted(os.listdir(source_dir)), file_name):
         yield os.path.join(source_dir, filename), filename
 
 
