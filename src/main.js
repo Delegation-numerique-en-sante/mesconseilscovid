@@ -1377,6 +1377,71 @@ router.hooks({
 })
 
 router
+    .on('conseils', function () {
+        var pageName = 'conseils'
+        var element = loadPage(pageName)
+        // Hide all conseils that might have been made visible on previous runs.
+        affichage.hideSelector(element, '.visible')
+
+        // Display appropriate conseils.
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        var data = algorithme.getData()
+
+        var blockNames = algorithme.statutBlockNamesToDisplay(data)
+        blockNames = blockNames.concat(algorithme.departementBlockNamesToDisplay(data))
+        blockNames = blockNames.concat(algorithme.activiteProBlockNamesToDisplay(data))
+        blockNames = blockNames.concat(algorithme.foyerBlockNamesToDisplay(data))
+        blockNames = blockNames.concat(
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(data)
+        )
+
+        affichage.displayBlocks(element, blockNames)
+
+        // Dynamic data injections.
+        injectionScripts.departement(element, data)
+        injectionScripts.caracteristiques(element, data)
+        injectionScripts.antecedents(element, data)
+    })
+    .on('conseilssymptomesactuels', function () {
+        var pageName = 'conseilssymptomesactuels'
+        var element = loadPage(pageName)
+    })
+    .on('conseilssymptomespasses', function () {
+        var pageName = 'conseilssymptomespasses'
+        var element = loadPage(pageName)
+        // Hide all conseils that might have been made visible on previous runs.
+        affichage.hideSelector(element, '.visible')
+
+        // Display appropriate conseils.
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        var data = algorithme.getData()
+
+        var blockNames = algorithme.symptomesPassesBlockNamesToDisplay(data)
+        blockNames = blockNames.concat(algorithme.departementBlockNamesToDisplay(data))
+
+        affichage.displayBlocks(element, blockNames)
+
+        // Dynamic data injections.
+        injectionScripts.departement(element, data)
+    })
+    .on('conseilscontactarisque', function () {
+        var pageName = 'conseilscontactarisque'
+        var element = loadPage(pageName)
+        // Hide all conseils that might have been made visible on previous runs.
+        affichage.hideSelector(element, '.visible')
+
+        // Display appropriate conseils.
+        var algorithme = new Algorithme(questionnaire, carteDepartements)
+        var data = algorithme.getData()
+
+        var blockNames = algorithme.contactARisqueBlockNamesToDisplay(data)
+        blockNames = blockNames.concat(algorithme.departementBlockNamesToDisplay(data))
+
+        affichage.displayBlocks(element, blockNames)
+
+        // Dynamic data injections.
+        injectionScripts.departement(element, data)
+    })
     .on('introduction', function () {
         var pageName = 'introduction'
         var element = loadPage(pageName)
@@ -1384,7 +1449,7 @@ router
             affichage.displayElement(element, 'js-questionnaire-full')
             affichage.hideElement(element.querySelector('#js-questionnaire-empty'))
             var mesConseilsLink = element.querySelector('#mes-conseils-link')
-            var target = navigation.redirectIfMissingData(
+            var target = redirectToUnansweredQuestions(
                 'findCorrectExit',
                 questionnaire
             )
@@ -1502,71 +1567,6 @@ router
             'Vous devez saisir l’un des sous-choix proposés'
         )
         form.addEventListener('submit', onSubmitFormScripts[pageName])
-    })
-    .on('conseils', function () {
-        var pageName = 'conseils'
-        var element = loadPage(pageName)
-        // Hide all conseils that might have been made visible on previous runs.
-        affichage.hideSelector(element, '.visible')
-
-        // Display appropriate conseils.
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
-        var data = algorithme.getData()
-
-        var blockNames = algorithme.statutBlockNamesToDisplay(data)
-        blockNames = blockNames.concat(algorithme.departementBlockNamesToDisplay(data))
-        blockNames = blockNames.concat(algorithme.activiteProBlockNamesToDisplay(data))
-        blockNames = blockNames.concat(algorithme.foyerBlockNamesToDisplay(data))
-        blockNames = blockNames.concat(
-            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(data)
-        )
-
-        affichage.displayBlocks(element, blockNames)
-
-        // Dynamic data injections.
-        injectionScripts.departement(element, data)
-        injectionScripts.caracteristiques(element, data)
-        injectionScripts.antecedents(element, data)
-    })
-    .on('conseilssymptomespasses', function () {
-        var pageName = 'conseilssymptomespasses'
-        var element = loadPage(pageName)
-        // Hide all conseils that might have been made visible on previous runs.
-        affichage.hideSelector(element, '.visible')
-
-        // Display appropriate conseils.
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
-        var data = algorithme.getData()
-
-        var blockNames = algorithme.symptomesPassesBlockNamesToDisplay(data)
-        blockNames = blockNames.concat(algorithme.departementBlockNamesToDisplay(data))
-
-        affichage.displayBlocks(element, blockNames)
-
-        // Dynamic data injections.
-        injectionScripts.departement(element, data)
-    })
-    .on('conseilssymptomesactuels', function () {
-        var pageName = 'conseilssymptomesactuels'
-        var element = loadPage(pageName)
-    })
-    .on('conseilscontactarisque', function () {
-        var pageName = 'conseilscontactarisque'
-        var element = loadPage(pageName)
-        // Hide all conseils that might have been made visible on previous runs.
-        affichage.hideSelector(element, '.visible')
-
-        // Display appropriate conseils.
-        var algorithme = new Algorithme(questionnaire, carteDepartements)
-        var data = algorithme.getData()
-
-        var blockNames = algorithme.contactARisqueBlockNamesToDisplay(data)
-        blockNames = blockNames.concat(algorithme.departementBlockNamesToDisplay(data))
-
-        affichage.displayBlocks(element, blockNames)
-
-        // Dynamic data injections.
-        injectionScripts.departement(element, data)
     })
     .on('nouvelleversiondisponible', function () {
         var pageName = 'nouvelleversiondisponible'
