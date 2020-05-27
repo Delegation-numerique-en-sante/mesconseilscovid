@@ -1,5 +1,12 @@
 # Changelog
 
+## 2020-05-26
+
+* mise à jour des conseils généraux : ajout d’informations sur les tests et le dépistage + N° téléphone officiel informations covid
+* ajout de liens vers des vidéos Youtube sur comment mettre et entretenir son masque, les liens externes sont respectueux de la vie privée et leurs libellés sont explicites
+* ajout d’illustrations
+* #106 : correction de l’algorithme pour les maladies chroniques autres qui ne déclenchent pas de statut particulier
+
 ## 2020-05-23
 
 * correction du changement de libellé du bouton au cours de la frappe pour les caractéristiques
