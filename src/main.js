@@ -1036,103 +1036,15 @@ var Algorithme = function (questionnaire, carteDepartements) {
     }
 }
 
-var Navigation = function () {
-    this.loadInitialPage = function () {
-        var hash = document.location.hash
-        var requestedPage = hash ? hash.slice(1) : 'introduction'
-        var redirectedPage = this.redirectIfMissingData(requestedPage, questionnaire)
-        if (redirectedPage) {
-            router.navigate(redirectedPage)
-        } else {
-            router.navigate(requestedPage)
-        }
-    }
-
-    this.redirectIfMissingData = function (page, questionnaire) {
-        if (page === 'introduction') return
-        if (page === 'conditionsutilisation') return
-        if (page === 'nouvelleversiondisponible') return
-
-        // Questions obligatoires
-
-        if (typeof questionnaire.departement === 'undefined' && page !== 'residence')
-            return 'introduction' // aucune réponse = retour à l’accueil
-
-        if (page === 'residence') return
-
-        if (typeof questionnaire.activite_pro === 'undefined' && page !== 'activitepro')
-            return 'activitepro'
-
-        if (page === 'activitepro') return
-
-        if (typeof questionnaire.foyer_enfants === 'undefined' && page !== 'foyer')
-            return 'foyer'
-
-        if (page === 'foyer') return
-
-        if (typeof questionnaire.sup65 === 'undefined' && page !== 'caracteristiques')
-            return 'caracteristiques'
-
-        if (page === 'caracteristiques') return
-
-        if (
-            typeof questionnaire.antecedent_cardio === 'undefined' &&
-            page !== 'antecedents'
-        )
-            return 'antecedents'
-
-        if (page === 'antecedents') return
-
-        if (
-            typeof questionnaire.symptomes_actuels === 'undefined' &&
-            page !== 'symptomesactuels'
-        )
-            return 'symptomesactuels'
-
-        if (page === 'symptomesactuels') return
-
-        if (questionnaire.symptomes_actuels === true)
-            return page === 'conseilssymptomesactuels'
-                ? undefined
-                : 'conseilssymptomesactuels'
-
-        if (
-            typeof questionnaire.symptomes_passes === 'undefined' &&
-            page !== 'symptomespasses'
-        )
-            return 'symptomespasses'
-
-        if (page === 'symptomespasses') return
-
-        if (questionnaire.symptomes_passes === true)
-            return page === 'conseilssymptomespasses'
-                ? undefined
-                : 'conseilssymptomespasses'
-
-        if (
-            typeof questionnaire.contact_a_risque === 'undefined' &&
-            page !== 'contactarisque'
-        )
-            return 'contactarisque'
-
-        if (page === 'contactarisque') return
-
-        if (questionnaire.contact_a_risque === true)
-            return page === 'conseilscontactarisque'
-                ? undefined
-                : 'conseilscontactarisque'
-
-        if (questionnaire.contact_a_risque === false)
-            return page === 'conseils' ? undefined : 'conseils'
-    }
-
+var Updater = function () {
     this.checkForUpdatesEvery = function (intervalInMinutes) {
         this.checkForUpdate()
         setInterval(this.checkForUpdate.bind(this), intervalInMinutes * 60 * 1000)
     }
 
     this.checkForUpdate = function () {
-        if (document.location.hash === '#nouvelle-version-disponible') {
+        var pageName = getCurrentPageName()
+        if (pageName === 'nouvelleversiondisponible') {
             return
         }
         var that = this
@@ -1154,6 +1066,7 @@ var Navigation = function () {
             return
         } else {
             var that = this
+            var pageName = getCurrentPageName()
             if (this.isFillingQuestionnaire()) {
                 document.addEventListener('elementDisplayed:update-banner', function (
                     event
@@ -1166,7 +1079,7 @@ var Navigation = function () {
                     var refreshButton = event.detail.querySelector(
                         '#refresh-button-banner'
                     )
-                    refreshButton.setAttribute('href', window.location.hash)
+                    refreshButton.setAttribute('href', '#' + pageName)
                     refreshButton.addEventListener(
                         'click',
                         that.forceReloadCurrentPageWithHash
@@ -1174,14 +1087,13 @@ var Navigation = function () {
                 })
                 affichage.displayElement(document, 'update-banner')
             } else {
-                var previousHash = document.location.hash
                 document.addEventListener(
                     'pageChanged:nouvelleversiondisponible',
                     function (event) {
                         var refreshButton = document.querySelector(
                             '#nouvelle-version-disponible-block #refresh-button'
                         )
-                        refreshButton.setAttribute('href', previousHash)
+                        refreshButton.setAttribute('href', '#' + pageName)
                         refreshButton.addEventListener(
                             'click',
                             that.forceReloadCurrentPageWithHash
@@ -1203,20 +1115,20 @@ var Navigation = function () {
     }
 
     this.isFillingQuestionnaire = function () {
-        var page = document.location.hash.slice(1)
+        var pageName = getCurrentPageName()
         return (
-            page === 'residence' ||
-            page === 'activitepro' ||
-            page === 'foyer' ||
-            page === 'caracteristiques' ||
-            page === 'antecedents' ||
-            page === 'symptomesactuels' ||
-            page === 'symptomespasses' ||
-            page === 'contactarisque'
+            pageName === 'residence' ||
+            pageName === 'activitepro' ||
+            pageName === 'foyer' ||
+            pageName === 'caracteristiques' ||
+            pageName === 'antecedents' ||
+            pageName === 'symptomesactuels' ||
+            pageName === 'symptomespasses' ||
+            pageName === 'contactarisque'
         )
     }
 }
-navigation = new Navigation()
+updater = new Updater()
 
 var OnSubmitFormScripts = function () {
     this.residence = function (event) {
@@ -1350,6 +1262,87 @@ var OnSubmitFormScripts = function () {
 
 var onSubmitFormScripts = new OnSubmitFormScripts()
 
+var getCurrentPageName = function () {
+    var hash = document.location.hash
+    return hash ? hash.slice(1) : ''
+}
+
+var redirectToUnansweredQuestions = function (page, questionnaire) {
+    if (page === 'introduction') return
+    if (page === 'conditionsutilisation') return
+    if (page === 'nouvelleversiondisponible') return
+
+    // Questions obligatoires
+
+    if (typeof questionnaire.departement === 'undefined' && page !== 'residence')
+        return 'introduction' // aucune réponse = retour à l’accueil
+
+    if (page === 'residence') return
+
+    if (typeof questionnaire.activite_pro === 'undefined' && page !== 'activitepro')
+        return 'activitepro'
+
+    if (page === 'activitepro') return
+
+    if (typeof questionnaire.foyer_enfants === 'undefined' && page !== 'foyer')
+        return 'foyer'
+
+    if (page === 'foyer') return
+
+    if (typeof questionnaire.sup65 === 'undefined' && page !== 'caracteristiques')
+        return 'caracteristiques'
+
+    if (page === 'caracteristiques') return
+
+    if (
+        typeof questionnaire.antecedent_cardio === 'undefined' &&
+        page !== 'antecedents'
+    )
+        return 'antecedents'
+
+    if (page === 'antecedents') return
+
+    if (
+        typeof questionnaire.symptomes_actuels === 'undefined' &&
+        page !== 'symptomesactuels'
+    )
+        return 'symptomesactuels'
+
+    if (page === 'symptomesactuels') return
+
+    if (questionnaire.symptomes_actuels === true)
+        return page === 'conseilssymptomesactuels'
+            ? undefined
+            : 'conseilssymptomesactuels'
+
+    if (
+        typeof questionnaire.symptomes_passes === 'undefined' &&
+        page !== 'symptomespasses'
+    )
+        return 'symptomespasses'
+
+    if (page === 'symptomespasses') return
+
+    if (questionnaire.symptomes_passes === true)
+        return page === 'conseilssymptomespasses'
+            ? undefined
+            : 'conseilssymptomespasses'
+
+    if (
+        typeof questionnaire.contact_a_risque === 'undefined' &&
+        page !== 'contactarisque'
+    )
+        return 'contactarisque'
+
+    if (page === 'contactarisque') return
+
+    if (questionnaire.contact_a_risque === true)
+        return page === 'conseilscontactarisque' ? undefined : 'conseilscontactarisque'
+
+    if (questionnaire.contact_a_risque === false)
+        return page === 'conseils' ? undefined : 'conseils'
+}
+
 var loadPage = function (pageName) {
     var page = document.querySelector('section#page')
     var section = document.querySelector('#' + pageName)
@@ -1367,16 +1360,16 @@ var router = new Navigo(root, useHash)
 router.hooks({
     before: function (done, params) {
         // Global hook to redirect on the correct page given registered data.
-        navigation.loadInitialPage()
+        var requestedPage = getCurrentPageName() || 'introduction'
+        var redirectedPage = redirectToUnansweredQuestions(requestedPage, questionnaire)
+        if (redirectedPage) {
+            router.navigate(redirectedPage)
+        }
         done()
     },
     after: function (params) {
         // Global hook to send a custom event on each page change.
-        var hash = document.location.hash
-        if (!hash) {
-            return
-        }
-        var pageName = hash.slice(1)
+        var pageName = getCurrentPageName()
         var customPageEvent = document.createEvent('CustomEvent')
         customPageEvent.initCustomEvent('pageChanged:' + pageName, true, true, pageName)
         document.dispatchEvent(customPageEvent)
@@ -1384,21 +1377,18 @@ router.hooks({
 })
 
 router
-    .on('introduction', function () {
+    .on(new RegExp('^introduction$'), function () {
         var pageName = 'introduction'
         var element = loadPage(pageName)
         if (questionnaire.isComplete()) {
             affichage.displayElement(element, 'js-questionnaire-full')
             affichage.hideElement(element.querySelector('#js-questionnaire-empty'))
             var mesConseilsLink = element.querySelector('#mes-conseils-link')
-            var target = navigation.redirectIfMissingData(
-                'findCorrectExit',
-                questionnaire
-            )
+            var target = redirectToUnansweredQuestions('findCorrectExit', questionnaire)
             mesConseilsLink.setAttribute('href', '#' + target)
         }
     })
-    .on('residence', function () {
+    .on(new RegExp('^residence$'), function () {
         var pageName = 'residence'
         var form = loadPage(pageName)
         var button = form.querySelector('input[type=submit]')
@@ -1417,7 +1407,7 @@ router
             .getElementById('geolocalisation')
             .addEventListener('click', geolocalisation)
     })
-    .on('activitepro', function () {
+    .on(new RegExp('^activitepro$'), function () {
         var pageName = 'activitepro'
         var form = loadPage(pageName)
         var button = form.querySelector('input[type=submit]')
@@ -1432,14 +1422,14 @@ router
         formUtils.toggleFormButtonOnCheck(form, button.value, 'Continuer')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     })
-    .on('foyer', function () {
+    .on(new RegExp('^foyer$'), function () {
         var pageName = 'foyer'
         var form = loadPage(pageName)
         formUtils.preloadCheckboxForm(form, 'foyer_enfants')
         formUtils.preloadCheckboxForm(form, 'foyer_fragile')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     })
-    .on('caracteristiques', function () {
+    .on(new RegExp('^caracteristiques$'), function () {
         var pageName = 'caracteristiques'
         var form = loadPage(pageName)
         var button = form.querySelector('input[type=submit]')
@@ -1454,7 +1444,7 @@ router
         )
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     })
-    .on('antecedents', function () {
+    .on(new RegExp('^antecedents$'), function () {
         var pageName = 'antecedents'
         var form = loadPage(pageName)
         var button = form.querySelector('input[type=submit]')
@@ -1470,7 +1460,7 @@ router
         formUtils.toggleFormButtonOnCheck(form, button.value, 'Continuer')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     })
-    .on('symptomesactuels', function () {
+    .on(new RegExp('^symptomesactuels$'), function () {
         var pageName = 'symptomesactuels'
         var form = loadPage(pageName)
         var button = form.querySelector('input[type=submit]')
@@ -1478,7 +1468,7 @@ router
         formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     })
-    .on('symptomespasses', function () {
+    .on(new RegExp('^symptomespasses$'), function () {
         var pageName = 'symptomespasses'
         var form = loadPage(pageName)
         var button = form.querySelector('input[type=submit]')
@@ -1486,7 +1476,7 @@ router
         formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     })
-    .on('contactarisque', function () {
+    .on(new RegExp('^contactarisque$'), function () {
         var pageName = 'contactarisque'
         var form = loadPage(pageName)
         var button = form.querySelector('input[type=submit]')
@@ -1510,7 +1500,7 @@ router
         )
         form.addEventListener('submit', onSubmitFormScripts[pageName])
     })
-    .on('conseils', function () {
+    .on(new RegExp('^conseils$'), function () {
         var pageName = 'conseils'
         var element = loadPage(pageName)
         // Hide all conseils that might have been made visible on previous runs.
@@ -1535,7 +1525,11 @@ router
         injectionScripts.caracteristiques(element, data)
         injectionScripts.antecedents(element, data)
     })
-    .on('conseilssymptomespasses', function () {
+    .on(new RegExp('^conseilssymptomesactuels$'), function () {
+        var pageName = 'conseilssymptomesactuels'
+        var element = loadPage(pageName)
+    })
+    .on(new RegExp('^conseilssymptomespasses$'), function () {
         var pageName = 'conseilssymptomespasses'
         var element = loadPage(pageName)
         // Hide all conseils that might have been made visible on previous runs.
@@ -1553,11 +1547,7 @@ router
         // Dynamic data injections.
         injectionScripts.departement(element, data)
     })
-    .on('conseilssymptomesactuels', function () {
-        var pageName = 'conseilssymptomesactuels'
-        var element = loadPage(pageName)
-    })
-    .on('conseilscontactarisque', function () {
+    .on(new RegExp('^conseilscontactarisque$'), function () {
         var pageName = 'conseilscontactarisque'
         var element = loadPage(pageName)
         // Hide all conseils that might have been made visible on previous runs.
@@ -1575,14 +1565,13 @@ router
         // Dynamic data injections.
         injectionScripts.departement(element, data)
     })
-    .on('nouvelleversiondisponible', function () {
+    .on(new RegExp('^nouvelleversiondisponible$'), function () {
         var pageName = 'nouvelleversiondisponible'
         var element = loadPage(pageName)
     })
     .notFound(function () {
         router.navigate('introduction')
     })
-
 
 var InjectionScripts = function () {
     this.departement = function (element, data) {

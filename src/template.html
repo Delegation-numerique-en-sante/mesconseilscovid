@@ -794,7 +794,7 @@
         ;(function() {
             document.addEventListener('dataLoaded', function (event) {
                 router.resolve()
-                navigation.checkForUpdatesEvery(10) // Minutes.
+                updater.checkForUpdatesEvery(10) // Minutes.
             })
             stockageLocal.charger(questionnaire)
             document
