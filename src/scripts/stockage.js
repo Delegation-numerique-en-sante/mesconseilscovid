@@ -1,6 +1,6 @@
 // Données privées, stockées uniquement en local
 
-var localforage = require('./localforage.js')
+var localforage = require('localforage')
 
 module.exports = function () {
     this.supprimer = function () {
