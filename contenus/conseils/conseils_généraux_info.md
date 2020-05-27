@@ -2,7 +2,7 @@ Enfin, il est conseillé d’aérer très régulièrement les pièces dans lesqu
 
 Pour plus d’informations, vous pouvez consulter :
 
-* sur **le port du masque** :
+* sur **le port du masque** :
   * [l’infographie explicative](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf) du ministère des solidarités et de la santé.
   * La vidéo [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw).
   * La vidéo [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE).
