@@ -16,7 +16,7 @@ test:  ## Run JS unit tests.
 
 build:  ## Build the index from `template.html` + contenus markdown files.
 	python3 build.py all
-	./node_modules/.bin/parcel build --no-minify --no-source-maps src/index.html
+	./node_modules/.bin/parcel build src/index.html
 
 autobuild:  ## Serve the `src` folder _without_ `https` but with build on file change.
 	python3 autobuild.py
