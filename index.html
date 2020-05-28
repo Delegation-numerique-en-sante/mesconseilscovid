@@ -1,259 +1,26 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mes conseils Covid — Des conseils personnalisés pour agir contre le virus</title>
-    <link rel="stylesheet" type="text/css" href="style-772533c9.css">
-    <link rel="prefetch" as="fetch" href="departements-1000m.geojson">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000091">
-    <meta name="msapplication-TileColor" content="#000091">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="referrer" content="none">
-</head>
-<body>
-    <header>
-        <section>
-            <img src="marianne.png"
-                alt="Logo du Ministère des Solidarités et de la Santé"
-                width="100" height="78">
-            <h1><a href="">Mes conseils Covid</a></h1>
-
-        </section>
-    </header>
-    <main>
-        <section id="update-banner" hidden>
-            <div class="block">
-                <div><h2>Une nouvelle version du site est disponible</h2>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Mes conseils Covid — Des conseils personnalisés pour agir contre le virus</title><link rel="stylesheet" type="text/css" href="/style.13abc616.css"><link rel="prefetch" as="fetch" href="/departements-1000m.27eaefd6.geojson"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.f72e9caa.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.9512bd90.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.cf5e819c.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/safari-pinned-tab.3c583ee1.svg" color="#000091"><meta name="msapplication-TileColor" content="#000091"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="none"></head><body> <header> <section> <img src="/marianne.d07864ae.png" alt="Logo du Ministère des Solidarités et de la Santé" width="100" height="78"> <h1><a href="">Mes conseils Covid</a></h1> </section> </header> <main> <section id="update-banner" hidden> <div class="block"> <div><h2>Une nouvelle version du site est disponible</h2>
 <p>Il est recommandé de mettre à jour dès que possible en cliquant sur le bouton ci-dessous (vos données ne seront pas perdues) :</p>
-</div>
-                <div>
-                    <a id="refresh-button-banner" class="button button-full-width" href="">Mettre à jour</a>
-                </div>
-            </div>
-        </section>
-        <section id="page">
-            <noscript>Ce site a besoin de JavaScript pour fonctionner.</noscript>
-        </section>
-        <footer>
-            <p>Vos informations personnelles sont seulement stockées sur cet appareil, et ne sont pas partagées.<br />
-À tout moment, vous pouvez <a href="" id="delete-data">supprimer l’intégralité de ces données</a>.<br />
-<a href="#conditionsutilisation">Conditions d’utilisation</a> - <a href="mailto:mesconseilscovid@sante.gouv.fr">Contact</a> - <a href="https://github.com/Delegation-numerique-en-sante/mesconseilscovid">Code source</a></p>
-
-        </footer>
-    </main>
-
-<section id="introduction" hidden>
-    <div id="introduction-block" class="block">
-        <h2>Des conseils personnalisés pour agir contre le virus</h2>
+</div> <div> <a id="refresh-button-banner" class="button button-full-width" href="">Mettre à jour</a> </div> </div> </section> <section id="page"> <noscript>Ce site a besoin de JavaScript pour fonctionner.</noscript> </section> <footer> <p>Vos informations personnelles sont seulement stockées sur cet appareil, et ne sont pas partagées.<br>
+À tout moment, vous pouvez <a href="" id="delete-data">supprimer l’intégralité de ces données</a>.<br>
+<a href="#conditionsutilisation">Conditions d’utilisation</a> - <a href="mailto:mesconseilscovid@sante.gouv.fr">Contact</a> - <a href="https://github.com/Delegation-numerique-en-sante/mesconseilscovid">Code source</a></p> </footer> </main> <section id="introduction" hidden> <div id="introduction-block" class="block"> <h2>Des conseils personnalisés pour agir contre le virus</h2>
 <p id="tagline">
 Obtenez en 3 minutes des recommandations pour <b>votre santé</b> et celle de vos proches.
 </p>
-<p>Vos informations personnelles sont seulement stockées sur cet appareil et ne sont pas partagées.</p>
-
-        <div id="js-questionnaire-full" class="form-controls" hidden>
-            <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
-            <a class="button button-full-width" href="" id="mes-conseils-link">Voir mes conseils</a>
-        </div>
-        <div id="js-questionnaire-empty">
-            <a class="button button-full-width" href="#residence">Démarrer</a>
-        </div>
-    </div>
-</section>
-
-<section id="residence" hidden>
-    <form id="residence-form" action="" class="block">
-        <fieldset>
-            <legend>1/8 - Mon lieu de résidence
-</legend>
-            <div class="row">
-                <label for="departement">Mon <b>département</b> de résidence actuel :
-</label>
-                <div class="dpt-container">
-                    <select id="departement" required>
-                        <option selected disabled>Choisir dans la liste…</option>
-                        <option value="01">01 - Ain</option>
-                        <option value="02">02 - Aisne</option>
-                        <option value="03">03 - Allier</option>
-                        <option value="05">05 - Hautes-Alpes</option>
-                        <option value="04">04 - Alpes-de-Haute-Provence</option>
-                        <option value="06">06 - Alpes-Maritimes</option>
-                        <option value="07">07 - Ardèche</option>
-                        <option value="08">08 - Ardennes</option>
-                        <option value="09">09 - Ariège</option>
-                        <option value="10">10 - Aube</option>
-                        <option value="11">11 - Aude</option>
-                        <option value="12">12 - Aveyron</option>
-                        <option value="13">13 - Bouches-du-Rhône</option>
-                        <option value="14">14 - Calvados</option>
-                        <option value="15">15 - Cantal</option>
-                        <option value="16">16 - Charente</option>
-                        <option value="17">17 - Charente-Maritime</option>
-                        <option value="18">18 - Cher</option>
-                        <option value="19">19 - Corrèze</option>
-                        <option value="2A">2A - Corse-du-sud</option>
-                        <option value="2B">2B - Haute-corse</option>
-                        <option value="21">21 - Côte-d’or</option>
-                        <option value="22">22 - Côtes-d’armor</option>
-                        <option value="23">23 - Creuse</option>
-                        <option value="24">24 - Dordogne</option>
-                        <option value="25">25 - Doubs</option>
-                        <option value="26">26 - Drôme</option>
-                        <option value="27">27 - Eure</option>
-                        <option value="28">28 - Eure-et-Loir</option>
-                        <option value="29">29 - Finistère</option>
-                        <option value="30">30 - Gard</option>
-                        <option value="31">31 - Haute-Garonne</option>
-                        <option value="32">32 - Gers</option>
-                        <option value="33">33 - Gironde</option>
-                        <option value="34">34 - Hérault</option>
-                        <option value="35">35 - Ile-et-Vilaine</option>
-                        <option value="36">36 - Indre</option>
-                        <option value="37">37 - Indre-et-Loire</option>
-                        <option value="38">38 - Isère</option>
-                        <option value="39">39 - Jura</option>
-                        <option value="40">40 - Landes</option>
-                        <option value="41">41 - Loir-et-Cher</option>
-                        <option value="42">42 - Loire</option>
-                        <option value="43">43 - Haute-Loire</option>
-                        <option value="44">44 - Loire-Atlantique</option>
-                        <option value="45">45 - Loiret</option>
-                        <option value="46">46 - Lot</option>
-                        <option value="47">47 - Lot-et-Garonne</option>
-                        <option value="48">48 - Lozère</option>
-                        <option value="49">49 - Maine-et-Loire</option>
-                        <option value="50">50 - Manche</option>
-                        <option value="51">51 - Marne</option>
-                        <option value="52">52 - Haute-Marne</option>
-                        <option value="53">53 - Mayenne</option>
-                        <option value="54">54 - Meurthe-et-Moselle</option>
-                        <option value="55">55 - Meuse</option>
-                        <option value="56">56 - Morbihan</option>
-                        <option value="57">57 - Moselle</option>
-                        <option value="58">58 - Nièvre</option>
-                        <option value="59">59 - Nord</option>
-                        <option value="60">60 - Oise</option>
-                        <option value="61">61 - Orne</option>
-                        <option value="62">62 - Pas-de-Calais</option>
-                        <option value="63">63 - Puy-de-Dôme</option>
-                        <option value="64">64 - Pyrénées-Atlantiques</option>
-                        <option value="65">65 - Hautes-Pyrénées</option>
-                        <option value="66">66 - Pyrénées-Orientales</option>
-                        <option value="67">67 - Bas-Rhin</option>
-                        <option value="68">68 - Haut-Rhin</option>
-                        <option value="69">69 - Rhône</option>
-                        <option value="70">70 - Haute-Saône</option>
-                        <option value="71">71 - Saône-et-Loire</option>
-                        <option value="72">72 - Sarthe</option>
-                        <option value="73">73 - Savoie</option>
-                        <option value="74">74 - Haute-Savoie</option>
-                        <option value="75">75 - Paris</option>
-                        <option value="76">76 - Seine-Maritime</option>
-                        <option value="77">77 - Seine-et-Marne</option>
-                        <option value="78">78 - Yvelines</option>
-                        <option value="79">79 - Deux-Sèvres</option>
-                        <option value="80">80 - Somme</option>
-                        <option value="81">81 - Tarn</option>
-                        <option value="82">82 - Tarn-et-Garonne</option>
-                        <option value="83">83 - Var</option>
-                        <option value="84">84 - Vaucluse</option>
-                        <option value="85">85 - Vendée</option>
-                        <option value="86">86 - Vienne</option>
-                        <option value="87">87 - Haute-Vienne</option>
-                        <option value="88">88 - Vosges</option>
-                        <option value="89">89 - Yonne</option>
-                        <option value="90">90 - Territoire de Belfort</option>
-                        <option value="91">91 - Essonne</option>
-                        <option value="92">92 - Hauts-de-Seine</option>
-                        <option value="93">93 - Seine-Saint-Denis</option>
-                        <option value="94">94 - Val-de-Marne</option>
-                        <option value="95">95 - Val-d’oise</option>
-                        <option value="971">971 - Guadeloupe</option>
-                        <option value="972">972 - Martinique</option>
-                        <option value="973">973 - Guyane</option>
-                        <option value="974">974 - Réunion</option>
-                        <option value="974">975 - Saint-Pierre-et-Miquelon</option>
-                        <option value="976">976 - Mayotte</option>
-                        <option value="976">977 - Saint-Barthélemy</option>
-                        <option value="976">978 - Saint-Martin</option>
-                    </select>
-                    <div>
-                        <a href="#" id="geolocalisation" title="Géolocalisation"></a>
-                    </div>
-                </div>
-            </div>
-            <p id="error-geolocalisation" class="message message-error" hidden>
-                Nous n’avons pas réussi à déterminer votre position automatiquement,
-                veuillez saisir un département dans la liste déroulante ci-dessus.
-            </p>
-        </fieldset>
-        <div class="form-controls">
-            <a href="#introduction" class="back-button button-outline">Retour</a>
-            <input type="submit" class="button" value="Continuer">
-        </div>
-    </form>
-</section>
-
-<section id="activitepro" hidden>
-    <form id="activite-pro-form" action="" class="block">
-        <fieldset>
-            <legend>2/8 - Mon activité
-</legend>
-            <div>
-                <input id="activite_pro" type="checkbox" name="activite_pro">
-                <label for="activite_pro">
-                    <span>J’exerce une <b>activité</b> professionnelle et/ou bénévole
-</span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="activite_pro_public" type="checkbox" name="activite_pro_public" disabled>
-                <label for="activite_pro_public">
-                    <span>Dans le cadre de cette activité, je suis en contact direct avec du public
-</span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
-                <label for="activite_pro_sante">
-                    <span>Je travaille dans le domaine de la santé ou du médico-social<sup>*</sup>
-</span>
-                </label>
-                <div class="details"><p><sup>*</sup>
+<p>Vos informations personnelles sont seulement stockées sur cet appareil et ne sont pas partagées.</p> <div id="js-questionnaire-full" class="form-controls" hidden> <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a> <a class="button button-full-width" href="" id="mes-conseils-link">Voir mes conseils</a> </div> <div id="js-questionnaire-empty"> <a class="button button-full-width" href="#residence">Démarrer</a> </div> </div>
+</section> <section id="residence" hidden> <form id="residence-form" action="" class="block"> <fieldset> <legend>1/8 - Mon lieu de résidence
+</legend> <div class="row"> <label for="departement">Mon <b>département</b> de résidence actuel :
+</label> <div class="dpt-container"> <select id="departement" required> <option selected disabled>Choisir dans la liste…</option> <option value="01">01 - Ain</option> <option value="02">02 - Aisne</option> <option value="03">03 - Allier</option> <option value="05">05 - Hautes-Alpes</option> <option value="04">04 - Alpes-de-Haute-Provence</option> <option value="06">06 - Alpes-Maritimes</option> <option value="07">07 - Ardèche</option> <option value="08">08 - Ardennes</option> <option value="09">09 - Ariège</option> <option value="10">10 - Aube</option> <option value="11">11 - Aude</option> <option value="12">12 - Aveyron</option> <option value="13">13 - Bouches-du-Rhône</option> <option value="14">14 - Calvados</option> <option value="15">15 - Cantal</option> <option value="16">16 - Charente</option> <option value="17">17 - Charente-Maritime</option> <option value="18">18 - Cher</option> <option value="19">19 - Corrèze</option> <option value="2A">2A - Corse-du-sud</option> <option value="2B">2B - Haute-corse</option> <option value="21">21 - Côte-d’or</option> <option value="22">22 - Côtes-d’armor</option> <option value="23">23 - Creuse</option> <option value="24">24 - Dordogne</option> <option value="25">25 - Doubs</option> <option value="26">26 - Drôme</option> <option value="27">27 - Eure</option> <option value="28">28 - Eure-et-Loir</option> <option value="29">29 - Finistère</option> <option value="30">30 - Gard</option> <option value="31">31 - Haute-Garonne</option> <option value="32">32 - Gers</option> <option value="33">33 - Gironde</option> <option value="34">34 - Hérault</option> <option value="35">35 - Ile-et-Vilaine</option> <option value="36">36 - Indre</option> <option value="37">37 - Indre-et-Loire</option> <option value="38">38 - Isère</option> <option value="39">39 - Jura</option> <option value="40">40 - Landes</option> <option value="41">41 - Loir-et-Cher</option> <option value="42">42 - Loire</option> <option value="43">43 - Haute-Loire</option> <option value="44">44 - Loire-Atlantique</option> <option value="45">45 - Loiret</option> <option value="46">46 - Lot</option> <option value="47">47 - Lot-et-Garonne</option> <option value="48">48 - Lozère</option> <option value="49">49 - Maine-et-Loire</option> <option value="50">50 - Manche</option> <option value="51">51 - Marne</option> <option value="52">52 - Haute-Marne</option> <option value="53">53 - Mayenne</option> <option value="54">54 - Meurthe-et-Moselle</option> <option value="55">55 - Meuse</option> <option value="56">56 - Morbihan</option> <option value="57">57 - Moselle</option> <option value="58">58 - Nièvre</option> <option value="59">59 - Nord</option> <option value="60">60 - Oise</option> <option value="61">61 - Orne</option> <option value="62">62 - Pas-de-Calais</option> <option value="63">63 - Puy-de-Dôme</option> <option value="64">64 - Pyrénées-Atlantiques</option> <option value="65">65 - Hautes-Pyrénées</option> <option value="66">66 - Pyrénées-Orientales</option> <option value="67">67 - Bas-Rhin</option> <option value="68">68 - Haut-Rhin</option> <option value="69">69 - Rhône</option> <option value="70">70 - Haute-Saône</option> <option value="71">71 - Saône-et-Loire</option> <option value="72">72 - Sarthe</option> <option value="73">73 - Savoie</option> <option value="74">74 - Haute-Savoie</option> <option value="75">75 - Paris</option> <option value="76">76 - Seine-Maritime</option> <option value="77">77 - Seine-et-Marne</option> <option value="78">78 - Yvelines</option> <option value="79">79 - Deux-Sèvres</option> <option value="80">80 - Somme</option> <option value="81">81 - Tarn</option> <option value="82">82 - Tarn-et-Garonne</option> <option value="83">83 - Var</option> <option value="84">84 - Vaucluse</option> <option value="85">85 - Vendée</option> <option value="86">86 - Vienne</option> <option value="87">87 - Haute-Vienne</option> <option value="88">88 - Vosges</option> <option value="89">89 - Yonne</option> <option value="90">90 - Territoire de Belfort</option> <option value="91">91 - Essonne</option> <option value="92">92 - Hauts-de-Seine</option> <option value="93">93 - Seine-Saint-Denis</option> <option value="94">94 - Val-de-Marne</option> <option value="95">95 - Val-d’oise</option> <option value="971">971 - Guadeloupe</option> <option value="972">972 - Martinique</option> <option value="973">973 - Guyane</option> <option value="974">974 - Réunion</option> <option value="974">975 - Saint-Pierre-et-Miquelon</option> <option value="976">976 - Mayotte</option> <option value="976">977 - Saint-Barthélemy</option> <option value="976">978 - Saint-Martin</option> </select> <div> <a href="#" id="geolocalisation" title="Géolocalisation"></a> </div> </div> </div> <p id="error-geolocalisation" class="message message-error" hidden> Nous n’avons pas réussi à déterminer votre position automatiquement, veuillez saisir un département dans la liste déroulante ci-dessus. </p> </fieldset> <div class="form-controls"> <a href="#introduction" class="back-button button-outline">Retour</a> <input type="submit" class="button" value="Continuer"> </div> </form>
+</section> <section id="activitepro" hidden> <form id="activite-pro-form" action="" class="block"> <fieldset> <legend>2/8 - Mon activité
+</legend> <div> <input id="activite_pro" type="checkbox" name="activite_pro"> <label for="activite_pro"> <span>J’exerce une <b>activité</b> professionnelle et/ou bénévole
+</span> </label> </div> <div class="secondary disabled"> <input id="activite_pro_public" type="checkbox" name="activite_pro_public" disabled> <label for="activite_pro_public"> <span>Dans le cadre de cette activité, je suis en contact direct avec du public
+</span> </label> </div> <div class="secondary disabled"> <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled> <label for="activite_pro_sante"> <span>Je travaille dans le domaine de la santé ou du médico-social<sup>*</sup>
+</span> </label> <div class="details"><p><sup>*</sup>
 Médecin, infirmier, aide soignant, brancardier, manipulateur radio, kinésithérapeute, psychologue…</p>
-</div>
-            </div>
-        </fieldset>
-        <div class="form-controls">
-            <a href="#residence" class="back-button button-outline">Retour</a>
-            <input type="submit" class="button" value="Je n’ai pas d’activité professionnelle ou bénévole">
-        </div>
-    </form>
-</section>
-
-<section id="foyer" hidden>
-    <form id="foyer-form" action="" class="block">
-        <fieldset>
-            <legend>3/8 - Mon foyer
-</legend>
-            <div>
-                <input id="foyer_enfants" type="checkbox" name="foyer_enfants">
-                <label for="foyer_enfants">
-                    <span>Je vis avec un ou des <b>enfants</b> en âge d’aller à la crèche ou à l’école
-</span>
-                </label>
-            </div>
-            <div>
-                <input id="foyer_fragile" type="checkbox" name="foyer_fragile">
-                <label for="foyer_fragile">
-                    <span>Je vis avec une ou des personnes considérée(s) comme <b>fragile(s)</b><sup>*</sup> face au covid-19 et/ou en situation de handicap
-</span>
-                </label>
-                <div class="details"><p><sup>*</sup>
+</div> </div> </fieldset> <div class="form-controls"> <a href="#residence" class="back-button button-outline">Retour</a> <input type="submit" class="button" value="Je n’ai pas d’activité professionnelle ou bénévole"> </div> </form>
+</section> <section id="foyer" hidden> <form id="foyer-form" action="" class="block"> <fieldset> <legend>3/8 - Mon foyer
+</legend> <div> <input id="foyer_enfants" type="checkbox" name="foyer_enfants"> <label for="foyer_enfants"> <span>Je vis avec un ou des <b>enfants</b> en âge d’aller à la crèche ou à l’école
+</span> </label> </div> <div> <input id="foyer_fragile" type="checkbox" name="foyer_fragile"> <label for="foyer_fragile"> <span>Je vis avec une ou des personnes considérée(s) comme <b>fragile(s)</b><sup>*</sup> face au covid-19 et/ou en situation de handicap
+</span> </label> <div class="details"><p><sup>*</sup>
 Une personne considérée comme fragile face au covid-19 est une personne présentant au moins une des caractéristiques suivantes :</p>
 <ul>
 <li>avoir un âge &gt; ou égal à 65 ans,</li>
@@ -271,344 +38,65 @@ Une personne considérée comme fragile face au covid-19 est une personne prése
 </ul>
 </li>
 </ul>
-</div>
-            </div>
-        </fieldset>
-        <div class="form-controls">
-            <a href="#activitepro" class="back-button button-outline">Retour</a>
-            <input type="submit" class="button" value="Continuer">
-        </div>
-    </form>
-</section>
-
-<section id="caracteristiques" hidden>
-    <form id="caracteristiques-form" action="" class="block">
-        <fieldset>
-            <legend>4/8 - Mes caractéristiques
-</legend>
-            <h3>Mes facteurs de risques
-</h3>
-            <div class="field">
-                <input id="sup65" type="checkbox" name="sup65">
-                <label for="sup65">
-                    <span>Je suis âgé·e de 65 ans ou plus
-</span>
-                </label>
-            </div>
-            <div class="field">
-                <input id="grossesse_3e_trimestre" type="checkbox" name="grossesse_3e_trimestre">
-                <label for="grossesse_3e_trimestre">
-                    <span>Je suis enceinte au 3<sup>e</sup> trimestre de ma grossesse
-</span>
-                </label>
-            </div>
-            <h3>Calculer mon Indice de Masse Corporelle (IMC)
-</h3>
-            <ul class="no-list-style">
-                <li class="row">
-                    <label for="taille">Ma taille en centimètres (ex. 165) :
-</label>
-                    <input id="taille" type="text" inputmode="numeric" pattern="[0-9]*" required>
-                </li>
-                <li class="row">
-                    <label for="poids">Mon poids en kilogrammes (ex. 70) :
-</label>
-                    <input id="poids" type="text" inputmode="numeric" pattern="[0-9]*" required>
-                </li>
-            </ul>
-        </fieldset>
-        <div class="form-controls">
-            <a href="#foyer" class="back-button button-outline">Retour</a>
-            <input type="submit" class="button" value="Continuer">
-        </div>
-    </form>
-</section>
-
-<section id="antecedents" hidden>
-    <form id="antecedents-form" action="" class="block">
-        <fieldset>
-            <legend>5/8 - Ma santé
-</legend>
-            <div class="field">
-                <input id="antecedent_cardio" type="checkbox" name="antecedent_cardio">
-                <label for="antecedent_cardio">
-                    <span>
-                        J’ai des antécédents de <b>maladie cardiovasculaire</b> :
-
-                    </span>
-                </label>
-                <div class="details"><p>hypertension artérielle compliquée (avec complications cardiaques, rénales), accident vasculaire cérébral, maladie coronaire (infarctus), chirurgie cardiaque, insuffisance cardiaque avec essoufflement au moindre effort</p>
-</div>
-            </div>
-            <div class="field">
-                <input id="antecedent_diabete" type="checkbox" name="antecedent_diabete">
-                <label for="antecedent_diabete">
-                    <span>
-                        J’ai un <b>diabète</b> mal équilibré ou avec des complications (yeux, reins)
-
-                    </span>
-                </label>
-            </div>
-            <div class="field">
-                <input id="antecedent_respi" type="checkbox" name="antecedent_respi">
-                <label for="antecedent_respi">
-                    <span>
-                        J’ai une <b>maladie respiratoire</b> chronique :
-
-                    </span>
-                </label>
-                <div class="details"><p>broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose</p>
-</div>
-            </div>
-            <div class="field">
-                <input id="antecedent_dialyse" type="checkbox" name="antecedent_dialyse">
-                <label for="antecedent_dialyse">
-                    <span>
-                        J’ai une <b>insuffisance rénale</b> chronique et je suis sous dialyse
-
-                    </span>
-                </label>
-            </div>
-            <div class="field">
-                <input id="antecedent_cancer" type="checkbox" name="antecedent_cancer">
-                <label for="antecedent_cancer">
-                    <span>
-                        J’ai un <b>cancer</b> évolutif sous traitement (hors hormonothérapie)
-
-                    </span>
-                </label>
-            </div>
-            <div class="field">
-                <input id="antecedent_immunodep" type="checkbox" name="antecedent_immunodep">
-                <label for="antecedent_immunodep">
-                    <span>
-                        J’ai une <b>immunodépression</b> :
-
-                    </span>
-                </label>
-                <div class="details"><ul>
+</div> </div> </fieldset> <div class="form-controls"> <a href="#activitepro" class="back-button button-outline">Retour</a> <input type="submit" class="button" value="Continuer"> </div> </form>
+</section> <section id="caracteristiques" hidden> <form id="caracteristiques-form" action="" class="block"> <fieldset> <legend>4/8 - Mes caractéristiques
+</legend> <h3>Mes facteurs de risques
+</h3> <div class="field"> <input id="sup65" type="checkbox" name="sup65"> <label for="sup65"> <span>Je suis âgé·e de 65 ans ou plus
+</span> </label> </div> <div class="field"> <input id="grossesse_3e_trimestre" type="checkbox" name="grossesse_3e_trimestre"> <label for="grossesse_3e_trimestre"> <span>Je suis enceinte au 3<sup>e</sup> trimestre de ma grossesse
+</span> </label> </div> <h3>Calculer mon Indice de Masse Corporelle (IMC)
+</h3> <ul class="no-list-style"> <li class="row"> <label for="taille">Ma taille en centimètres (ex. 165) :
+</label> <input id="taille" type="text" inputmode="numeric" pattern="[0-9]*" required> </li> <li class="row"> <label for="poids">Mon poids en kilogrammes (ex. 70) :
+</label> <input id="poids" type="text" inputmode="numeric" pattern="[0-9]*" required> </li> </ul> </fieldset> <div class="form-controls"> <a href="#foyer" class="back-button button-outline">Retour</a> <input type="submit" class="button" value="Continuer"> </div> </form>
+</section> <section id="antecedents" hidden> <form id="antecedents-form" action="" class="block"> <fieldset> <legend>5/8 - Ma santé
+</legend> <div class="field"> <input id="antecedent_cardio" type="checkbox" name="antecedent_cardio"> <label for="antecedent_cardio"> <span> J’ai des antécédents de <b>maladie cardiovasculaire</b> : </span> </label> <div class="details"><p>hypertension artérielle compliquée (avec complications cardiaques, rénales), accident vasculaire cérébral, maladie coronaire (infarctus), chirurgie cardiaque, insuffisance cardiaque avec essoufflement au moindre effort</p>
+</div> </div> <div class="field"> <input id="antecedent_diabete" type="checkbox" name="antecedent_diabete"> <label for="antecedent_diabete"> <span> J’ai un <b>diabète</b> mal équilibré ou avec des complications (yeux, reins) </span> </label> </div> <div class="field"> <input id="antecedent_respi" type="checkbox" name="antecedent_respi"> <label for="antecedent_respi"> <span> J’ai une <b>maladie respiratoire</b> chronique : </span> </label> <div class="details"><p>broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose</p>
+</div> </div> <div class="field"> <input id="antecedent_dialyse" type="checkbox" name="antecedent_dialyse"> <label for="antecedent_dialyse"> <span> J’ai une <b>insuffisance rénale</b> chronique et je suis sous dialyse </span> </label> </div> <div class="field"> <input id="antecedent_cancer" type="checkbox" name="antecedent_cancer"> <label for="antecedent_cancer"> <span> J’ai un <b>cancer</b> évolutif sous traitement (hors hormonothérapie) </span> </label> </div> <div class="field"> <input id="antecedent_immunodep" type="checkbox" name="antecedent_immunodep"> <label for="antecedent_immunodep"> <span> J’ai une <b>immunodépression</b> : </span> </label> <div class="details"><ul>
 <li>médicamenteuse : chimiothérapie anti cancéreuse, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive depuis plus de 15 jours ;</li>
 <li>infection à VIH non contrôlée ou avec des CD4 &lt;200/mm<sup>3</sup> ;</li>
 <li>consécutive à une greffe d’organe solide ou de cellules souches hématopoïétiques ;</li>
 <li>liée à une hémopathie maligne en cours de traitement.</li>
 </ul>
-</div>
-            </div>
-            <div class="field">
-                <input id="antecedent_cirrhose" type="checkbox" name="antecedent_cirrhose">
-                <label for="antecedent_cirrhose">
-                    <span>
-                        J’ai une <b>cirrhose</b>
-
-                    </span>
-                </label>
-            </div>
-            <div class="field">
-                <input id="antecedent_drepano" type="checkbox" name="antecedent_drepano">
-                <label for="antecedent_drepano">
-                    <span>
-                        J’ai une <b>drépanocytose</b> homozygote, ou j’ai bénéficié d’une <b>splénectomie</b> (ablation de la rate) à cause de la drépanocytose
-
-                    </span>
-                </label>
-            </div>
-            <div class="field">
-                <input id="antecedent_chronique_autre" type="checkbox" name="antecedent_chronique_autre">
-                <label for="antecedent_chronique_autre">
-                    <span>
-                        J’ai une autre maladie chronique, ou handicap, ou je prends un traitement au long cours
-
-                    </span>
-                </label>
-            </div>
-        </fieldset>
-        <div class="form-controls">
-            <a href="#caracteristiques" class="back-button button-outline">Retour</a>
-            <input type="submit" class="button" value="Aucun de ces éléments ne correspond à ma situation">
-        </div>
-    </form>
-</section>
-
-<section id="symptomesactuels" hidden>
-    <form id="symptomes-actuels-form" action="" class="block">
-        <fieldset>
-            <legend>6/8 - Mon état actuel
-</legend>
-            <div>
-                <input id="symptomes_actuels" type="checkbox" name="symptomes_actuels">
-                <label for="symptomes_actuels">
-                    <span>
-                        J’ai un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>actuellement</b>.
-
-                    </span>
-                </label>
-                <div class="details"><p>C’est-à-dire l’apparition brutale d’un ou plusieurs signes parmi :</p>
+</div> </div> <div class="field"> <input id="antecedent_cirrhose" type="checkbox" name="antecedent_cirrhose"> <label for="antecedent_cirrhose"> <span> J’ai une <b>cirrhose</b> </span> </label> </div> <div class="field"> <input id="antecedent_drepano" type="checkbox" name="antecedent_drepano"> <label for="antecedent_drepano"> <span> J’ai une <b>drépanocytose</b> homozygote, ou j’ai bénéficié d’une <b>splénectomie</b> (ablation de la rate) à cause de la drépanocytose </span> </label> </div> <div class="field"> <input id="antecedent_chronique_autre" type="checkbox" name="antecedent_chronique_autre"> <label for="antecedent_chronique_autre"> <span> J’ai une autre maladie chronique, ou handicap, ou je prends un traitement au long cours </span> </label> </div> </fieldset> <div class="form-controls"> <a href="#caracteristiques" class="back-button button-outline">Retour</a> <input type="submit" class="button" value="Aucun de ces éléments ne correspond à ma situation"> </div> </form>
+</section> <section id="symptomesactuels" hidden> <form id="symptomes-actuels-form" action="" class="block"> <fieldset> <legend>6/8 - Mon état actuel
+</legend> <div> <input id="symptomes_actuels" type="checkbox" name="symptomes_actuels"> <label for="symptomes_actuels"> <span> J’ai un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>actuellement</b>. </span> </label> <div class="details"><p>C’est-à-dire l’apparition brutale d’un ou plusieurs signes parmi :</p>
 <ul>
 <li>signes infectieux (fièvre ou sensation de fièvre, frissons),</li>
 <li>toux ou gêne respiratoire, fatigue inexpliquée, courbatures inexpliquées,</li>
 <li>maux de tête en dehors d’une migraine connue,</li>
 <li>perte ou diminution de l’odorat et du gout.</li>
 </ul>
-<p><em>Chez les personnes de plus de 80 ans, d’autres signes sont évocateurs :<br />
+<p><em>Chez les personnes de plus de 80 ans, d’autres signes sont évocateurs :<br>
 Baisse de l’état général, chutes à répétition, apparition ou aggravation de troubles cognitifs, confusion, diarrhée, aggravation d’une maladie chronique.</em></p>
-</div>
-            </div>
-        </fieldset>
-        <div class="form-controls">
-            <a href="#antecedents" class="back-button button-outline">Retour</a>
-            <input type="submit" class="button" value="Je n’ai pas de symptômes actuellement">
-        </div>
-    </form>
-</section>
-
-<section id="symptomespasses" hidden>
-    <form id="symptomes-passes-form" action="" class="block">
-        <fieldset>
-            <legend>7/8 - Mon état ces 14 derniers jours
-</legend>
-            <div>
-                <input id="symptomes_passes" type="checkbox" name="symptomes_passes">
-                <label for="symptomes_passes">
-                    <span>
-                        J’ai eu des <b>symptômes</b> qui peuvent évoquer le COVID <b>dans les 14 derniers jours</b>.
-
-                    </span>
-                </label>
-                <div class="details"><p>C’est-à-dire l’apparition brutale d’un ou plusieurs signes parmi :</p>
+</div> </div> </fieldset> <div class="form-controls"> <a href="#antecedents" class="back-button button-outline">Retour</a> <input type="submit" class="button" value="Je n’ai pas de symptômes actuellement"> </div> </form>
+</section> <section id="symptomespasses" hidden> <form id="symptomes-passes-form" action="" class="block"> <fieldset> <legend>7/8 - Mon état ces 14 derniers jours
+</legend> <div> <input id="symptomes_passes" type="checkbox" name="symptomes_passes"> <label for="symptomes_passes"> <span> J’ai eu des <b>symptômes</b> qui peuvent évoquer le COVID <b>dans les 14 derniers jours</b>. </span> </label> <div class="details"><p>C’est-à-dire l’apparition brutale d’un ou plusieurs signes parmi :</p>
 <ul>
 <li>signes infectieux (fièvre ou sensation de fièvre, frissons),</li>
 <li>toux ou gêne respiratoire, fatigue inexpliquée, courbatures inexpliquées,</li>
 <li>maux de tête en dehors d’une migraine connue,</li>
 <li>perte ou diminution de l’odorat et du gout.</li>
 </ul>
-<p><em>Chez les personnes de plus de 80 ans, d’autres signes sont évocateurs :<br />
+<p><em>Chez les personnes de plus de 80 ans, d’autres signes sont évocateurs :<br>
 Baisse de l’état général, chutes à répétition, apparition ou aggravation de troubles cognitifs, confusion, diarrhée, aggravation d’une maladie chronique.</em></p>
-</div>
-            </div>
-        </fieldset>
-        <div class="form-controls">
-            <a href="#symptomesactuels" class="back-button button-outline">Retour</a>
-            <input type="submit" class="button" value="Je n’ai pas eu de symptômes dans les 14 derniers jours">
-        </div>
-    </form>
-</section>
-
-<section id="contactarisque" hidden>
-    <form id="contact-a-risque-form" action="" class="block">
-        <fieldset>
-            <legend>8/8 - Mes contacts récents
-</legend>
-            <div>
-                <input id="contact_a_risque" type="checkbox" name="contact_a_risque">
-                <label for="contact_a_risque">
-                    <span>
-                        J’ai passé du temps avec une personne <b>testée positive au COVID</b> dans les <b>14 derniers jours</b>, sans mesure de protection dédiée<sup>*</sup>
-
-                    </span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="contact_a_risque_meme_lieu_de_vie" type="checkbox" name="contact_a_risque_meme_lieu_de_vie" disabled>
-                <label for="contact_a_risque_meme_lieu_de_vie">
-                    <span>J’ai partagé le même lieu de vie que cette personne
-</span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="contact_a_risque_contact_direct" type="checkbox" name="contact_a_risque_contact_direct" disabled>
-                <label for="contact_a_risque_contact_direct">
-                    <span>J’ai eu un contact direct avec cette personne, en face à face, à moins d’1 mètre, quelle que soit la durée (ex. conversation, repas, flirt, accolades, embrassades)
-</span>
-                </label>
-                <div class="details"><p>Des personnes croisées dans l’espace public de manière fugace ne sont pas considérées comme des personnes contacts à risque.</p>
-</div>
-            </div>
-            <div class="secondary disabled">
-                <input id="contact_a_risque_actes" type="checkbox" name="contact_a_risque_actes" disabled>
-                <label for="contact_a_risque_actes">
-                    <span>J’ai prodigué ou reçu des actes d’hygiène ou de soins
-</span>
-                </label>
-                <div class="details"><p>Coiffeur, aide à domicile, soins d’esthétique, soins infirmiers…</p>
-</div>
-            </div>
-            <div class="secondary disabled">
-                <input id="contact_a_risque_espace_confine" type="checkbox" name="contact_a_risque_espace_confine" disabled>
-                <label for="contact_a_risque_espace_confine">
-                    <span>J’ai partagé un espace confiné (bureau ou salle de réunion, véhicule personnel…) pendant au moins 15 minutes avec cette personne, ou je suis resté en face à face avec elle durant plusieurs épisodes de toux ou d’éternuement
-</span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="contact_a_risque_meme_classe" type="checkbox" name="contact_a_risque_meme_classe" disabled>
-                <label for="contact_a_risque_meme_classe">
-                    <span>Je suis élève ou enseignant de la même classe scolaire (maternelle, primaire, secondaire, groupe de travaux dirigés à l’université)
-</span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="contact_a_risque_autre" type="checkbox" name="contact_a_risque_autre" disabled>
-                <label for="contact_a_risque_autre">
-                    <span>Je n’étais dans <b>aucune de ces situations</b>
-</span>
-                </label>
-            </div>
-            <div class="details">
-                <span>
-                    <p><sup>*</sup>
+</div> </div> </fieldset> <div class="form-controls"> <a href="#symptomesactuels" class="back-button button-outline">Retour</a> <input type="submit" class="button" value="Je n’ai pas eu de symptômes dans les 14 derniers jours"> </div> </form>
+</section> <section id="contactarisque" hidden> <form id="contact-a-risque-form" action="" class="block"> <fieldset> <legend>8/8 - Mes contacts récents
+</legend> <div> <input id="contact_a_risque" type="checkbox" name="contact_a_risque"> <label for="contact_a_risque"> <span> J’ai passé du temps avec une personne <b>testée positive au COVID</b> dans les <b>14 derniers jours</b>, sans mesure de protection dédiée<sup>*</sup> </span> </label> </div> <div class="secondary disabled"> <input id="contact_a_risque_meme_lieu_de_vie" type="checkbox" name="contact_a_risque_meme_lieu_de_vie" disabled> <label for="contact_a_risque_meme_lieu_de_vie"> <span>J’ai partagé le même lieu de vie que cette personne
+</span> </label> </div> <div class="secondary disabled"> <input id="contact_a_risque_contact_direct" type="checkbox" name="contact_a_risque_contact_direct" disabled> <label for="contact_a_risque_contact_direct"> <span>J’ai eu un contact direct avec cette personne, en face à face, à moins d’1 mètre, quelle que soit la durée (ex. conversation, repas, flirt, accolades, embrassades)
+</span> </label> <div class="details"><p>Des personnes croisées dans l’espace public de manière fugace ne sont pas considérées comme des personnes contacts à risque.</p>
+</div> </div> <div class="secondary disabled"> <input id="contact_a_risque_actes" type="checkbox" name="contact_a_risque_actes" disabled> <label for="contact_a_risque_actes"> <span>J’ai prodigué ou reçu des actes d’hygiène ou de soins
+</span> </label> <div class="details"><p>Coiffeur, aide à domicile, soins d’esthétique, soins infirmiers…</p>
+</div> </div> <div class="secondary disabled"> <input id="contact_a_risque_espace_confine" type="checkbox" name="contact_a_risque_espace_confine" disabled> <label for="contact_a_risque_espace_confine"> <span>J’ai partagé un espace confiné (bureau ou salle de réunion, véhicule personnel…) pendant au moins 15 minutes avec cette personne, ou je suis resté en face à face avec elle durant plusieurs épisodes de toux ou d’éternuement
+</span> </label> </div> <div class="secondary disabled"> <input id="contact_a_risque_meme_classe" type="checkbox" name="contact_a_risque_meme_classe" disabled> <label for="contact_a_risque_meme_classe"> <span>Je suis élève ou enseignant de la même classe scolaire (maternelle, primaire, secondaire, groupe de travaux dirigés à l’université)
+</span> </label> </div> <div class="secondary disabled"> <input id="contact_a_risque_autre" type="checkbox" name="contact_a_risque_autre" disabled> <label for="contact_a_risque_autre"> <span>Je n’étais dans <b>aucune de ces situations</b>
+</span> </label> </div> <div class="details"> <span> <p><sup>*</sup>
 C’est-à-dire en l’absence de mesures de protection efficaces pendant toute la durée du contact :</p>
 <ul>
 <li>hygiaphone (vitre de protection) ou autre séparation physique (vitre)</li>
 <li>sans masque chirurgical ou FFP2 porté par moi ou par la personne COVID confirmée</li>
 <li>sans masque grand public fabriqué selon la norme AFNOR ou équivalent porté par moi et par la personne COVID confirmée</li>
 </ul>
-<p>NB : Les professionnels de santé hospitaliers ne sont pas concernés par cette évaluation des contacts à risque. Dans un contexte de soins, une évaluation spécifique doit être réalisée par le médecin du travail et l’équipe opérationnelle.</p>
-
-                </span>
-            </div>
-        </fieldset>
-        <div class="form-controls">
-            <a href="#symptomespasses" class="back-button button-outline">Retour</a>
-            <input type="submit" class="button" value="Terminer">
-        </div>
-    </form>
-</section>
-
-<section id="conseils" hidden>
-    <div id="conseils-block" class="block">
-        <div id="statut-personne-fragile" class="statut statut-personne-fragile" hidden>
-            <p>Vous êtes considéré·e à risque de forme plus sévère de COVID-19, nous vous invitons à être <strong>particulièrement vigilant·e</strong>.</p>
-
-        </div>
-        <div id="statut-foyer-fragile" class="statut statut-foyer-fragile" hidden>
-            <p>Prenez soin de vos proches à risque face au COVID-19.</p>
-
-        </div>
-        <div id="statut-peu-de-risques" class="statut statut-peu-de-risques" hidden>
-            <p>Vous ne présentez pas de risque particulier face au COVID-19, cependant le virus circule toujours, <strong>les gestes barrières s’imposent</strong>.</p>
-
-        </div>
-        <h2>Vos conseils personnalisés</h2>
-        <div id="conseils-departement" class="conseils" hidden>
-            <h3>Votre localisation</h3>
-            <div class="reponse">
-                <p>Votre lieu de résidence actuel : <b id="nom-departement"></b> (<a href="#residence">modifier</a>)</p>
-
-            </div>
-            <div id="conseils-departement-rouge" hidden>
-                <div class="conseil conseil-rouge">
-                    <p>Votre département est en <strong>niveau rouge</strong>, la circulation épidémique est élevée. Le déconfinement prendra une forme plus stricte.</p>
-
-                </div>
-            </div>
-            <div id="conseils-departement-vert" hidden>
-                <div class="conseil conseil-vert">
-                    <p>Votre département est en <strong>niveau vert</strong>. Cependant le virus circule toujours, maintenez les gestes barrières.</p>
-
-                </div>
-            </div>
-            <div id="conseils-departement-default">
-                <p>Pour plus d’informations, vous pouvez consulter :</p>
+<p>NB : Les professionnels de santé hospitaliers ne sont pas concernés par cette évaluation des contacts à risque. Dans un contexte de soins, une évaluation spécifique doit être réalisée par le médecin du travail et l’équipe opérationnelle.</p> </span> </div> </fieldset> <div class="form-controls"> <a href="#symptomespasses" class="back-button button-outline">Retour</a> <input type="submit" class="button" value="Terminer"> </div> </form>
+</section> <section id="conseils" hidden> <div id="conseils-block" class="block"> <div id="statut-personne-fragile" class="statut statut-personne-fragile" hidden> <p>Vous êtes considéré·e à risque de forme plus sévère de COVID-19, nous vous invitons à être <strong>particulièrement vigilant·e</strong>.</p> </div> <div id="statut-foyer-fragile" class="statut statut-foyer-fragile" hidden> <p>Prenez soin de vos proches à risque face au COVID-19.</p> </div> <div id="statut-peu-de-risques" class="statut statut-peu-de-risques" hidden> <p>Vous ne présentez pas de risque particulier face au COVID-19, cependant le virus circule toujours, <strong>les gestes barrières s’imposent</strong>.</p> </div> <h2>Vos conseils personnalisés</h2> <div id="conseils-departement" class="conseils" hidden> <h3>Votre localisation</h3> <div class="reponse"> <p>Votre lieu de résidence actuel : <b id="nom-departement"></b> (<a href="#residence">modifier</a>)</p> </div> <div id="conseils-departement-rouge" hidden> <div class="conseil conseil-rouge"> <p>Votre département est en <strong>niveau rouge</strong>, la circulation épidémique est élevée. Le déconfinement prendra une forme plus stricte.</p> </div> </div> <div id="conseils-departement-vert" hidden> <div class="conseil conseil-vert"> <p>Votre département est en <strong>niveau vert</strong>. Cependant le virus circule toujours, maintenez les gestes barrières.</p> </div> </div> <div id="conseils-departement-default"> <p>Pour plus d’informations, vous pouvez consulter :</p>
 <ul>
 <li><p><a href="https://www.gouvernement.fr/sites/default/files/cimages/infographie_deconfinement.jpg">l’infographie récapitulative</a> du plan de déconfinement</p>
 </li>
@@ -616,108 +104,34 @@ C’est-à-dire en l’absence de mesures de protection efficaces pendant toute 
 </li>
 <li><p>les consignes à appliquer dans vos activités sur <a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">le site du gouvernement</a></p>
 </li>
-</ul>
-
-            </div>
-        </div>
-        <div id="conseils-activite" class="conseils" hidden>
-            <h3>Votre activité</h3>
-            <div class="reponse">
-                <div id="reponse-activite-pro" hidden>
-                    <p>Vous exercez une activité professionnelle et/ou bénévole (<a href="#activitepro">modifier</a>)</p>
-
-                </div>
-                <div id="reponse-activite-pro-public" hidden>
-                    <p>Vous exercez une activité professionnelle et/ou bénévole en contact direct avec du public (<a href="#activitepro">modifier</a>)</p>
-
-                </div>
-                <div id="reponse-activite-pro-sante" hidden>
-                    <p>Vous exercez une activité professionnelle et/ou bénévole dans le domaine de la santé ou du médico-social (<a href="#activitepro">modifier</a>)</p>
-
-                </div>
-                <div id="reponse-activite-pro-public-sante" hidden>
-                    <p>Vous exercez une activité professionnelle et/ou bénévole en contact direct avec du public dans le domaine de la santé ou du médico-social (<a href="#activitepro">modifier</a>)</p>
-
-                </div>
-            </div>
-            <div id="conseils-activite-pro" hidden>
-                <div class="conseil">
-                    <p>Il est recommandé de <strong>télétravailler</strong> si cela vous est possible. Si vous devez vous rendre sur votre lieu de travail, le respect des <strong>gestes barrières</strong> et de la <strong>distanciation physique</strong> permet de limiter les risques de propagation du virus.</p>
-
-                </div>
-            </div>
-            <div id="conseils-activite-pro-public" hidden>
-                <div class="conseil">
-                    <p>Nous vous recommandons de prendre connaissance des <strong>précautions</strong> relatives aux établissements recevant du <strong>public</strong> sur <a href="https://www.gouvernement.fr/info-coronavirus#questions__reponses">le site du gouvernement</a>, sections « Pour vos achats et besoins essentiels » et  « Pour votre vie sociale ».</p>
-
-                </div>
-            </div>
-            <div id="conseils-activite-pro-sante" hidden>
-                <div class="conseil">
-                    <p>Vous pouvez trouver les recommandations adaptées sur le site du ministère des solidarités et de la santé :</p>
+</ul> </div> </div> <div id="conseils-activite" class="conseils" hidden> <h3>Votre activité</h3> <div class="reponse"> <div id="reponse-activite-pro" hidden> <p>Vous exercez une activité professionnelle et/ou bénévole (<a href="#activitepro">modifier</a>)</p> </div> <div id="reponse-activite-pro-public" hidden> <p>Vous exercez une activité professionnelle et/ou bénévole en contact direct avec du public (<a href="#activitepro">modifier</a>)</p> </div> <div id="reponse-activite-pro-sante" hidden> <p>Vous exercez une activité professionnelle et/ou bénévole dans le domaine de la santé ou du médico-social (<a href="#activitepro">modifier</a>)</p> </div> <div id="reponse-activite-pro-public-sante" hidden> <p>Vous exercez une activité professionnelle et/ou bénévole en contact direct avec du public dans le domaine de la santé ou du médico-social (<a href="#activitepro">modifier</a>)</p> </div> </div> <div id="conseils-activite-pro" hidden> <div class="conseil"> <p>Il est recommandé de <strong>télétravailler</strong> si cela vous est possible. Si vous devez vous rendre sur votre lieu de travail, le respect des <strong>gestes barrières</strong> et de la <strong>distanciation physique</strong> permet de limiter les risques de propagation du virus.</p> </div> </div> <div id="conseils-activite-pro-public" hidden> <div class="conseil"> <p>Nous vous recommandons de prendre connaissance des <strong>précautions</strong> relatives aux établissements recevant du <strong>public</strong> sur <a href="https://www.gouvernement.fr/info-coronavirus#questions__reponses">le site du gouvernement</a>, sections « Pour vos achats et besoins essentiels » et « Pour votre vie sociale ».</p> </div> </div> <div id="conseils-activite-pro-sante" hidden> <div class="conseil"> <p>Vous pouvez trouver les recommandations adaptées sur le site du ministère des solidarités et de la santé :</p>
 <ul>
 <li><p>Pour les <a href="https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/article/protection-des-professionnels-de-sante-face-au-covid-19">professionnels <strong>de santé</strong></a></p>
 </li>
 <li><p>Pour les <a href="https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-du-social-et-medico-social/">professionnels <strong>du médico-social</strong></a></p>
 </li>
-</ul>
-
-                </div>
-            </div>
-            <div id="conseils-activite-pro-infos" hidden>
-                <p>Pour plus d’informations, vous pouvez consulter les fiches-conseils métier pour aider à la mise en œuvre des mesures de protection sur le site du <a href="https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/proteger-les-travailleurs/article/fiches-conseils-metiers-et-guides-pour-les-salaries-et-les-employeurs">Ministère du travail</a>.</p>
-
-            </div>
-        </div>
-        <div id="conseils-foyer" class="conseils" hidden>
-            <h3>Votre foyer</h3>
-            <div id="conseils-foyer-enfants" hidden>
-                <div class="reponse">
-                    <p>Vous vivez avec un ou des enfants en âge d’aller à la crèche ou à l’école (<a href="#foyer">modifier</a>)</p>
-
-                </div>
-                <div class="conseil">
-                    <p>Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face au COVID, il convient de mettre en place des mesures de <strong>distanciation physique renforcée</strong> pendant la garde d’enfants :</p>
+</ul> </div> </div> <div id="conseils-activite-pro-infos" hidden> <p>Pour plus d’informations, vous pouvez consulter les fiches-conseils métier pour aider à la mise en œuvre des mesures de protection sur le site du <a href="https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/proteger-les-travailleurs/article/fiches-conseils-metiers-et-guides-pour-les-salaries-et-les-employeurs">Ministère du travail</a>.</p> </div> </div> <div id="conseils-foyer" class="conseils" hidden> <h3>Votre foyer</h3> <div id="conseils-foyer-enfants" hidden> <div class="reponse"> <p>Vous vivez avec un ou des enfants en âge d’aller à la crèche ou à l’école (<a href="#foyer">modifier</a>)</p> </div> <div class="conseil"> <p>Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face au COVID, il convient de mettre en place des mesures de <strong>distanciation physique renforcée</strong> pendant la garde d’enfants :</p>
 <ul>
 <li>Application stricte des gestes barrières</li>
 <li>Distance de sécurité &gt; 1m soit 4m<sup>2</sup></li>
 <li>Réduire les sorties au strict minimum possible</li>
 <li>En complément des gestes barrières, porter un masque lorsque la distanciation de 1m ne peut pas être respectée entre l’enfant et les personnes qui le gardent</li>
 </ul>
-<p>Si vous ne pouvez pas faire garder votre enfant, des solutions existent (voir plus bas).</p>
-
-                </div>
-                <p>Nous vous recommandons de prendre contact avec votre mairie pour connaître les modalités de <strong>réouverture des écoles</strong>. Prenez connaissance des informations officielles concernant la scolarité des enfants sur <a href="https://www.gouvernement.fr/info-coronavirus#questions__reponses">le site du gouvernement</a>, section « Pour vos enfants et leur scolarité ».</p>
+<p>Si vous ne pouvez pas faire garder votre enfant, des solutions existent (voir plus bas).</p> </div> <p>Nous vous recommandons de prendre contact avec votre mairie pour connaître les modalités de <strong>réouverture des écoles</strong>. Prenez connaissance des informations officielles concernant la scolarité des enfants sur <a href="https://www.gouvernement.fr/info-coronavirus#questions__reponses">le site du gouvernement</a>, section « Pour vos enfants et leur scolarité ».</p>
 <p>Si vous n’avez pas de solution pour faire garder votre enfant :</p>
 <ul>
 <li><p>Informez votre employeur et envisagez avec lui les modalités de télétravail qui pourraient être mises en place ou d’indemnisation si ce n’est pas possible.</p>
 </li>
 <li><p>Si vous êtes travailleur indépendant ou exploitant agricole, renseignez-vous sur <a href="https://declare.ameli.fr/">le téléservice de l’Assurance Maladie.</a></p>
 </li>
-</ul>
-
-                <p>Les consultations de vos enfants comportant des 
-<strong>vaccins</strong> obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) 
-doivent être <strong>maintenues.</strong></p>
-
-            </div>
-            <div id="conseils-foyer-fragile" hidden>
-                <div class="reponse">
-                    <p>Vous vivez avec une ou des personnes considérée(s) comme fragile(s) face au covid-19 et/ou en situation de handicap (<a href="#foyer">modifier</a>)</p>
-
-                </div>
-                <div class="conseil">
-                    <p>Il est conseillé à votre proche de :</p>
+</ul> <p>Les consultations de vos enfants comportant des <strong>vaccins</strong> obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) doivent être <strong>maintenues.</strong></p> </div> <div id="conseils-foyer-fragile" hidden> <div class="reponse"> <p>Vous vivez avec une ou des personnes considérée(s) comme fragile(s) face au covid-19 et/ou en situation de handicap (<a href="#foyer">modifier</a>)</p> </div> <div class="conseil"> <p>Il est conseillé à votre proche de :</p>
 <ul>
 <li><p>Poursuivre ou de reprendre son <strong>suivi médical habituel</strong> et <strong>son traitement</strong> si il ou elle en a un.</p>
 </li>
 <li><p>Contacter son médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une prescription de masques chirurgicaux.</p>
 </li>
 </ul>
-<p>Si vous devez rester à domicile pour vous occuper d’une personne vulnérable et que le télétravail n’est pas possible, contactez votre médecin pour envisager les mesures possibles.</p>
-
-                </div>
-                <p>Si vous devez accueillir des enfants au sein de votre foyer, nous vous recommandons de mettre en place des mesures de <strong>distanciation physique renforcée</strong> pendant la présence des enfants :</p>
+<p>Si vous devez rester à domicile pour vous occuper d’une personne vulnérable et que le télétravail n’est pas possible, contactez votre médecin pour envisager les mesures possibles.</p> </div> <p>Si vous devez accueillir des enfants au sein de votre foyer, nous vous recommandons de mettre en place des mesures de <strong>distanciation physique renforcée</strong> pendant la présence des enfants :</p>
 <ul>
 <li><p>Application stricte des gestes barrières</p>
 </li>
@@ -727,71 +141,28 @@ doivent être <strong>maintenues.</strong></p>
 </li>
 <li><p>En complément des gestes barrières, porter un masque lorsque la distanciation de 1m ne peut pas être respectée entre l’enfant et les personnes qui le gardent</p>
 </li>
-</ul>
-
-                <p>Pour plus d’informations, vous pouvez prendre connaissance du document <a href="https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf">« Faire face à une maladie chronique pendant le confinement »</a> de la HAS.</p>
-
-            </div>
-            <div id="conseils-foyer-enfants-fragile" hidden>
-                <div class="reponse">
-                    <p>Vous vivez avec un ou des enfants en âge d’aller à la crèche ou à l’école et avec une ou des personnes considérée(s) comme fragile(s) face au covid-19 et/ou en situation de handicap (<a href="#foyer">modifier</a>)</p>
-
-                </div>
-                <div class="conseil">
-                    <p>Il est conseillé à votre proche de :</p>
+</ul> <p>Pour plus d’informations, vous pouvez prendre connaissance du document <a href="https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf">« Faire face à une maladie chronique pendant le confinement »</a> de la HAS.</p> </div> <div id="conseils-foyer-enfants-fragile" hidden> <div class="reponse"> <p>Vous vivez avec un ou des enfants en âge d’aller à la crèche ou à l’école et avec une ou des personnes considérée(s) comme fragile(s) face au covid-19 et/ou en situation de handicap (<a href="#foyer">modifier</a>)</p> </div> <div class="conseil"> <p>Il est conseillé à votre proche de :</p>
 <ul>
 <li><p>Poursuivre ou de reprendre son <strong>suivi médical habituel</strong> et <strong>son traitement</strong> si il ou elle en a un.</p>
 </li>
 <li><p>Contacter son médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une prescription de masques chirurgicaux.</p>
 </li>
 </ul>
-<p>Si vous devez rester à domicile pour vous occuper d’une personne vulnérable et que le télétravail n’est pas possible, contactez votre médecin pour envisager les mesures possibles.</p>
-
-                </div>
-                <p>Pour plus d’informations, vous pouvez prendre connaissance du document <a href="https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf">« Faire face à une maladie chronique pendant le confinement »</a> de la HAS.</p>
-
-                <div class="conseil">
-                    <p>Si vos enfants sortent à l’extérieur du foyer, il convient de mettre en place des mesures de <strong>distanciation physique renforcée</strong> :</p>
+<p>Si vous devez rester à domicile pour vous occuper d’une personne vulnérable et que le télétravail n’est pas possible, contactez votre médecin pour envisager les mesures possibles.</p> </div> <p>Pour plus d’informations, vous pouvez prendre connaissance du document <a href="https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf">« Faire face à une maladie chronique pendant le confinement »</a> de la HAS.</p> <div class="conseil"> <p>Si vos enfants sortent à l’extérieur du foyer, il convient de mettre en place des mesures de <strong>distanciation physique renforcée</strong> :</p>
 <ul>
 <li>Application stricte des gestes barrières</li>
 <li>Distance de sécurité &gt; 1m soit 4m<sup>2</sup></li>
 <li>Réduire les sorties au strict minimum possible</li>
 <li>En complément des gestes barrières, porter un masque lorsque la distanciation de 1m ne peut pas être respectée.</li>
 </ul>
-<p>Si vous ne pouvez pas faire garder votre enfant, des solutions existent (voir plus bas).</p>
-
-                </div>
-                <p>Nous vous recommandons de prendre contact avec votre mairie pour connaître les modalités de <strong>réouverture des écoles</strong>. Prenez connaissance des informations officielles concernant la scolarité des enfants sur <a href="https://www.gouvernement.fr/info-coronavirus#questions__reponses">le site du gouvernement</a>, section « Pour vos enfants et leur scolarité ».</p>
+<p>Si vous ne pouvez pas faire garder votre enfant, des solutions existent (voir plus bas).</p> </div> <p>Nous vous recommandons de prendre contact avec votre mairie pour connaître les modalités de <strong>réouverture des écoles</strong>. Prenez connaissance des informations officielles concernant la scolarité des enfants sur <a href="https://www.gouvernement.fr/info-coronavirus#questions__reponses">le site du gouvernement</a>, section « Pour vos enfants et leur scolarité ».</p>
 <p>Si vous n’avez pas de solution pour faire garder votre enfant :</p>
 <ul>
 <li><p>Informez votre employeur et envisagez avec lui les modalités de télétravail qui pourraient être mises en place ou d’indemnisation si ce n’est pas possible.</p>
 </li>
 <li><p>Si vous êtes travailleur indépendant ou exploitant agricole, renseignez-vous sur <a href="https://declare.ameli.fr/">le téléservice de l’Assurance Maladie.</a></p>
 </li>
-</ul>
-
-                <p>Les consultations de vos enfants comportant des 
-<strong>vaccins</strong> obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) 
-doivent être <strong>maintenues.</strong></p>
-
-            </div>
-        </div>
-        <div id="conseils-caracteristiques" class="conseils" hidden>
-            <h3>Vos caractéristiques et antécédents</h3>
-            <div class="reponse">
-                <div id="reponse-caracteristiques" hidden>
-                    <p>Vous présentez une ou des caractéristiques à risque : <b id="nom-caracteristiques"></b> (<a href="#caracteristiques">modifier</a>)</p>
-
-                </div>
-                <div id="reponse-antecedents" hidden>
-                    <p>Vous présentez un ou des antécédents à risque : <b id="nom-antecedents"></b>
- (<a href="#antecedents">modifier</a>)</p>
-
-                </div>
-            </div>
-            <div id="conseils-caracteristiques-antecedents" hidden>
-                <div class="conseil">
-                    <p>Afin d’éviter une forme grave de COVID19, il vous est recommandé
+</ul> <p>Les consultations de vos enfants comportant des <strong>vaccins</strong> obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) doivent être <strong>maintenues.</strong></p> </div> </div> <div id="conseils-caracteristiques" class="conseils" hidden> <h3>Vos caractéristiques et antécédents</h3> <div class="reponse"> <div id="reponse-caracteristiques" hidden> <p>Vous présentez une ou des caractéristiques à risque : <b id="nom-caracteristiques"></b> (<a href="#caracteristiques">modifier</a>)</p> </div> <div id="reponse-antecedents" hidden> <p>Vous présentez un ou des antécédents à risque : <b id="nom-antecedents"></b> (<a href="#antecedents">modifier</a>)</p> </div> </div> <div id="conseils-caracteristiques-antecedents" hidden> <div class="conseil"> <p>Afin d’éviter une forme grave de COVID19, il vous est recommandé
 d’appliquer les mesures de <strong>distanciation physique renforcée :</strong></p>
 <ul>
 <li>Application stricte des gestes barrières</li>
@@ -801,13 +172,7 @@ d’appliquer les mesures de <strong>distanciation physique renforcée :</stron
 <li>Contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une prescription de masques chirurgicaux.</li>
 </ul>
 <p>Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d’urgence.</p>
-<p>Il vous est conseillé de <strong>poursuivre le suivi et le renouvellement de vos médicaments</strong> auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi.</p>
-
-                </div>
-            </div>
-            <div id="conseils-caracteristiques-antecedents-activite-pro" hidden>
-                <div class="conseil">
-                    <p>Afin d’éviter une forme grave de COVID19, il vous est recommandé
+<p>Il vous est conseillé de <strong>poursuivre le suivi et le renouvellement de vos médicaments</strong> auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi.</p> </div> </div> <div id="conseils-caracteristiques-antecedents-activite-pro" hidden> <div class="conseil"> <p>Afin d’éviter une forme grave de COVID19, il vous est recommandé
 d’appliquer les mesures de <strong>distanciation physique renforcée :</strong></p>
 <ul>
 <li>Privilégier le télétravail</li>
@@ -819,40 +184,12 @@ d’appliquer les mesures de <strong>distanciation physique renforcée :</stron
 <li>Contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une prescription de masques chirurgicaux.</li>
 </ul>
 <p>Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d’urgence.</p>
-<p>Il vous est conseillé de <strong>poursuivre le suivi et le renouvellement de vos médicaments</strong> auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi.</p>
-
-                </div>
-            </div>
-            <div id="conseils-caracteristiques-antecedents-info" hidden>
-                <p>Pour plus d’informations, vous pouvez consulter le <a href="https://www.gouvernement.fr/info-coronavirus">site du gouvernement</a>.</p>
-
-            </div>
-            <div id="conseils-caracteristiques-antecedents-info-risque" hidden>
-                <p>Pour plus d’informations, vous pouvez :</p>
+<p>Il vous est conseillé de <strong>poursuivre le suivi et le renouvellement de vos médicaments</strong> auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi.</p> </div> </div> <div id="conseils-caracteristiques-antecedents-info" hidden> <p>Pour plus d’informations, vous pouvez consulter le <a href="https://www.gouvernement.fr/info-coronavirus">site du gouvernement</a>.</p> </div> <div id="conseils-caracteristiques-antecedents-info-risque" hidden> <p>Pour plus d’informations, vous pouvez :</p>
 <ul>
 <li>prendre connaissance du document <a href="https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf">« Faire face à une maladie chronique pendant le confinement »</a> de la HAS</li>
 <li>consulter le <a href="https://www.gouvernement.fr/info-coronavirus">site du gouvernement</a>.</li>
-</ul>
-
-            </div>
-            <div id="conseils-antecedents-chroniques-autres" hidden>
-                <div class="conseil">
-                    <p>Il vous est conseillé de <strong>poursuivre ou de reprendre votre suivi médical habituel</strong> et <strong>votre traitement</strong> si vous en avez un.</p>
-
-                </div>
-                <p>Pour plus d’informations, vous pouvez prendre connaissance du document <a href="https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf">« Faire face à une maladie chronique pendant le confinement »</a> de la HAS.</p>
-
-            </div>
-        </div>
-        <div id="conseils-generaux" class="conseils">
-            <h3>Conseils d’ordre général</h3>
-            <div class="conseil">
-                <p>Le COVID n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de <strong>consulter au moindre signe de maladie</strong>. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.</p>
-<p>De plus, le respect des <strong>gestes barrières</strong> et de <strong>distanciation physique</strong> reste indispensable et le <strong>port du masque</strong> s’impose dans certaines situations.</p>
-
-            </div>
-            <div>
-                <p>Enfin, il est conseillé d’aérer très régulièrement les pièces dans lesquelles vous vivez ou travaillez en ouvrant les fenêtres (au moins 10 minutes plusieurs fois par jour).</p>
+</ul> </div> <div id="conseils-antecedents-chroniques-autres" hidden> <div class="conseil"> <p>Il vous est conseillé de <strong>poursuivre ou de reprendre votre suivi médical habituel</strong> et <strong>votre traitement</strong> si vous en avez un.</p> </div> <p>Pour plus d’informations, vous pouvez prendre connaissance du document <a href="https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf">« Faire face à une maladie chronique pendant le confinement »</a> de la HAS.</p> </div> </div> <div id="conseils-generaux" class="conseils"> <h3>Conseils d’ordre général</h3> <div class="conseil"> <p>Le COVID n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de <strong>consulter au moindre signe de maladie</strong>. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.</p>
+<p>De plus, le respect des <strong>gestes barrières</strong> et de <strong>distanciation physique</strong> reste indispensable et le <strong>port du masque</strong> s’impose dans certaines situations.</p> </div> <div> <p>Enfin, il est conseillé d’aérer très régulièrement les pièces dans lesquelles vous vivez ou travaillez en ouvrant les fenêtres (au moins 10 minutes plusieurs fois par jour).</p>
 <p>Pour plus d’informations, vous pouvez consulter :</p>
 <ul>
 <li><p>sur <strong>le port du masque</strong> :</p>
@@ -872,26 +209,8 @@ d’appliquer les mesures de <strong>distanciation physique renforcée :</stron
 </li>
 <li><p>la page <a href="https://www.gouvernement.fr/info-coronavirus/tests-et-depistage">« Tests et dépistage »</a> et l’infographie <a href="https://www.gouvernement.fr/sites/default/files/infographie_tests.pdf">« Coronavirus, 2 types de tests »</a>.</p>
 </li>
-</ul>
-
-            </div>
-        </div>
-        <div>
-            <a id="back-button button-outline" class="button button-full-width" href="#residence">Modifier mes réponses</a>
-        </div>
-    </div>
-</section>
-
-<section id="conseilssymptomesactuels" hidden>
-    <div id="conseils-symptomes-actuels-block" class="block">
-        <div class="statut statut-risque-eleve">
-            <p>Il vous est conseillé de rester <strong>en isolement</strong>.</p>
-
-        </div>
-        <h2>Vos conseils personnalisés</h2>
-        <div class="conseils">
-            <div class="conseil conseil-rouge">
-                <p><strong>Vous êtes peut-être porteur·se du COVID19.</strong></p>
+</ul> </div> </div> <div> <a id="back-button button-outline" class="button button-full-width" href="#residence">Modifier mes réponses</a> </div> </div>
+</section> <section id="conseilssymptomesactuels" hidden> <div id="conseils-symptomes-actuels-block" class="block"> <div class="statut statut-risque-eleve"> <p>Il vous est conseillé de rester <strong>en isolement</strong>.</p> </div> <h2>Vos conseils personnalisés</h2> <div class="conseils"> <div class="conseil conseil-rouge"> <p><strong>Vous êtes peut-être porteur·se du COVID19.</strong></p>
 <p>Pour agir, il vous est conseillé :</p>
 <ul>
 <li><p>De vous maintenir <strong>en isolement</strong> ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.</p>
@@ -902,31 +221,13 @@ d’appliquer les mesures de <strong>distanciation physique renforcée :</stron
 </li>
 <li><p>D’appliquer les <strong>gestes barrières</strong>.</p>
 </li>
-</ul>
-
-            </div>
-            <p>Pour plus d’informations sur l’isolement : <a href="https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf">« Je suis atteint par le coronavirus et je dois rester chez moi jusqu’à ma guérison »</a>.</p>
-
-            <p>Si votre médecin vous prescrit un <strong>test de dépistage</strong> covid-19, 
-le site Santé.fr vous propose la
+</ul> </div> <p>Pour plus d’informations sur l’isolement : <a href="https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf">« Je suis atteint par le coronavirus et je dois rester chez moi jusqu’à ma guérison »</a>.</p> <p>Si votre médecin vous prescrit un <strong>test de dépistage</strong> covid-19, le site Santé.fr vous propose la
 <a href="https://sante.fr/cartographie-depistage-covid">carte des lieux de test du coronavirus</a>.</p>
-<p>Il vous prescrira peut-être une solution de <a href="https://sante.fr/covid-numerique-pro">télésurveillance</a> ou autre outil numérique.</p>
-
-            <p>Si vous le souhaitez, <strong>vous pouvez limiter la chaîne de transmission</strong> en informant vous-même vos proches et contacts à risque à l’aide de ce document :
-<a href="memo-contacts.pdf">Mémo-Contacts</a></p>
+<p>Il vous prescrira peut-être une solution de <a href="https://sante.fr/covid-numerique-pro">télésurveillance</a> ou autre outil numérique.</p> <p>Si vous le souhaitez, <strong>vous pouvez limiter la chaîne de transmission</strong> en informant vous-même vos proches et contacts à risque à l’aide de ce document :
+<a href="/memo-contacts.pdf">Mémo-Contacts</a></p>
 <p>Ce document pourra aussi aider les professionnels de santé
-si vous souhaitez le partager.</p>
-
-        </div>
-        <div id="conseils-generaux" class="conseils">
-            <h3>Conseils d’ordre général</h3>
-            <div class="conseil">
-                <p>Le COVID n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de <strong>consulter au moindre signe de maladie</strong>. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.</p>
-<p>De plus, le respect des <strong>gestes barrières</strong> et de <strong>distanciation physique</strong> reste indispensable et le <strong>port du masque</strong> s’impose dans certaines situations.</p>
-
-            </div>
-            <div>
-                <p>Enfin, il est conseillé d’aérer très régulièrement les pièces dans lesquelles vous vivez ou travaillez en ouvrant les fenêtres (au moins 10 minutes plusieurs fois par jour).</p>
+si vous souhaitez le partager.</p> </div> <div id="conseils-generaux" class="conseils"> <h3>Conseils d’ordre général</h3> <div class="conseil"> <p>Le COVID n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de <strong>consulter au moindre signe de maladie</strong>. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.</p>
+<p>De plus, le respect des <strong>gestes barrières</strong> et de <strong>distanciation physique</strong> reste indispensable et le <strong>port du masque</strong> s’impose dans certaines situations.</p> </div> <div> <p>Enfin, il est conseillé d’aérer très régulièrement les pièces dans lesquelles vous vivez ou travaillez en ouvrant les fenêtres (au moins 10 minutes plusieurs fois par jour).</p>
 <p>Pour plus d’informations, vous pouvez consulter :</p>
 <ul>
 <li><p>sur <strong>le port du masque</strong> :</p>
@@ -946,27 +247,8 @@ si vous souhaitez le partager.</p>
 </li>
 <li><p>la page <a href="https://www.gouvernement.fr/info-coronavirus/tests-et-depistage">« Tests et dépistage »</a> et l’infographie <a href="https://www.gouvernement.fr/sites/default/files/infographie_tests.pdf">« Coronavirus, 2 types de tests »</a>.</p>
 </li>
-</ul>
-
-            </div>
-        </div>
-        <div>
-            <a id="back-button button-outline" class="button button-full-width" href="#residence">Modifier mes réponses</a>
-        </div>
-    </div>
-</section>
-
-<section id="conseilssymptomespasses" hidden>
-    <div id="conseils-symptomes-passes-block" class="block">
-        <div class="statut statut-risque-eleve">
-            <p>Il vous est conseillé de rester <strong>en isolement</strong>.</p>
-
-        </div>
-        <h2>Vos conseils personnalisés</h2>
-        <div class="conseils">
-            <div id="conseils-symptomes-passes-sans-risques" hidden>
-                <div class="conseil conseil-rouge">
-                    <p>Il vous est conseillé de :</p>
+</ul> </div> </div> <div> <a id="back-button button-outline" class="button button-full-width" href="#residence">Modifier mes réponses</a> </div> </div>
+</section> <section id="conseilssymptomespasses" hidden> <div id="conseils-symptomes-passes-block" class="block"> <div class="statut statut-risque-eleve"> <p>Il vous est conseillé de rester <strong>en isolement</strong>.</p> </div> <h2>Vos conseils personnalisés</h2> <div class="conseils"> <div id="conseils-symptomes-passes-sans-risques" hidden> <div class="conseil conseil-rouge"> <p>Il vous est conseillé de :</p>
 <ul>
 <li><p><strong>Vous maintenir en isolement</strong> ainsi que <strong>votre foyer</strong>, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.</p>
 </li>
@@ -974,15 +256,7 @@ si vous souhaitez le partager.</p>
 </li>
 <li><p>Appliquer les <strong>gestes barrières</strong>.</p>
 </li>
-</ul>
-
-                </div>
-                <p>De façon générale il est conseillé une levée de l’isolement 8 jours après le début des symptômes et après 48 heures sans fièvre ni gêne respiratoire.</p>
-
-            </div>
-            <div id="conseils-symptomes-passes-avec-risques" hidden>
-                <div class="conseil conseil-rouge">
-                    <p>Il vous est conseillé de :</p>
+</ul> </div> <p>De façon générale il est conseillé une levée de l’isolement 8 jours après le début des symptômes et après 48 heures sans fièvre ni gêne respiratoire.</p> </div> <div id="conseils-symptomes-passes-avec-risques" hidden> <div class="conseil conseil-rouge"> <p>Il vous est conseillé de :</p>
 <ul>
 <li><p><strong>Vous maintenir en isolement</strong> ainsi que <strong>votre foyer</strong>, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.</p>
 </li>
@@ -990,47 +264,12 @@ si vous souhaitez le partager.</p>
 </li>
 <li><p>Appliquer les <strong>gestes barrières</strong>.</p>
 </li>
-</ul>
-
-                </div>
-                <p>De façon générale il est conseillé une levée de l’isolement 10 jours après le début des symptômes (si vous ou un membre de votre foyer êtes à risque de forme grave) et après 48 heures sans fièvre ni gêne respiratoire.</p>
-
-            </div>
-            <div id="conseils-symptomes-passes-default">
-                <p>Pour plus d’informations sur l’isolement : <a href="https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf">« Je suis atteint par le coronavirus et je dois rester chez moi jusqu’à ma guérison »</a>.</p>
-
-                <p>Si votre médecin vous prescrit un <strong>test de dépistage</strong> covid-19, 
-le site Santé.fr vous propose la
+</ul> </div> <p>De façon générale il est conseillé une levée de l’isolement 10 jours après le début des symptômes (si vous ou un membre de votre foyer êtes à risque de forme grave) et après 48 heures sans fièvre ni gêne respiratoire.</p> </div> <div id="conseils-symptomes-passes-default"> <p>Pour plus d’informations sur l’isolement : <a href="https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf">« Je suis atteint par le coronavirus et je dois rester chez moi jusqu’à ma guérison »</a>.</p> <p>Si votre médecin vous prescrit un <strong>test de dépistage</strong> covid-19, le site Santé.fr vous propose la
 <a href="https://sante.fr/cartographie-depistage-covid">carte des lieux de test du coronavirus</a>.</p>
-<p>Il vous prescrira peut-être une solution de <a href="https://sante.fr/covid-numerique-pro">télésurveillance</a> ou autre outil numérique.</p>
-
-                <p>Si vous le souhaitez, <strong>vous pouvez limiter la chaîne de transmission</strong> en informant vous-même vos proches et contacts à risque à l’aide de ce document :
-<a href="memo-contacts.pdf">Mémo-Contacts</a></p>
+<p>Il vous prescrira peut-être une solution de <a href="https://sante.fr/covid-numerique-pro">télésurveillance</a> ou autre outil numérique.</p> <p>Si vous le souhaitez, <strong>vous pouvez limiter la chaîne de transmission</strong> en informant vous-même vos proches et contacts à risque à l’aide de ce document :
+<a href="/memo-contacts.pdf">Mémo-Contacts</a></p>
 <p>Ce document pourra aussi aider les professionnels de santé
-si vous souhaitez le partager.</p>
-
-            </div>
-        </div>
-        <div id="conseils-departement" class="conseils" hidden>
-            <h3>Votre localisation</h3>
-            <div class="reponse">
-                <p>Votre lieu de résidence actuel : <b id="nom-departement"></b> (<a href="#residence">modifier</a>)</p>
-
-            </div>
-            <div id="conseils-departement-rouge" hidden>
-                <div class="conseil conseil-rouge">
-                    <p>Votre département est en <strong>niveau rouge</strong>, la circulation épidémique est élevée. Le déconfinement prendra une forme plus stricte.</p>
-
-                </div>
-            </div>
-            <div id="conseils-departement-vert" hidden>
-                <div class="conseil conseil-vert">
-                    <p>Votre département est en <strong>niveau vert</strong>. Cependant le virus circule toujours, maintenez les gestes barrières.</p>
-
-                </div>
-            </div>
-            <div id="conseils-departement-default">
-                <p>Pour plus d’informations, vous pouvez consulter :</p>
+si vous souhaitez le partager.</p> </div> </div> <div id="conseils-departement" class="conseils" hidden> <h3>Votre localisation</h3> <div class="reponse"> <p>Votre lieu de résidence actuel : <b id="nom-departement"></b> (<a href="#residence">modifier</a>)</p> </div> <div id="conseils-departement-rouge" hidden> <div class="conseil conseil-rouge"> <p>Votre département est en <strong>niveau rouge</strong>, la circulation épidémique est élevée. Le déconfinement prendra une forme plus stricte.</p> </div> </div> <div id="conseils-departement-vert" hidden> <div class="conseil conseil-vert"> <p>Votre département est en <strong>niveau vert</strong>. Cependant le virus circule toujours, maintenez les gestes barrières.</p> </div> </div> <div id="conseils-departement-default"> <p>Pour plus d’informations, vous pouvez consulter :</p>
 <ul>
 <li><p><a href="https://www.gouvernement.fr/sites/default/files/cimages/infographie_deconfinement.jpg">l’infographie récapitulative</a> du plan de déconfinement</p>
 </li>
@@ -1038,29 +277,11 @@ si vous souhaitez le partager.</p>
 </li>
 <li><p>les consignes à appliquer dans vos activités sur <a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">le site du gouvernement</a></p>
 </li>
-</ul>
-
-            </div>
-        </div>
-        <div id="conseils-foyer" class="conseils">
-            <h3>Votre foyer</h3>
-            <div id="conseils-foyer-fragile">
-                <p>Si vous ou un membre de votre foyer êtes considéré comme fragile face au covid-19 ou porteur de handicap, il vous est conseillé de poursuivre le <strong>suivi
+</ul> </div> </div> <div id="conseils-foyer" class="conseils"> <h3>Votre foyer</h3> <div id="conseils-foyer-fragile"> <p>Si vous ou un membre de votre foyer êtes considéré comme fragile face au covid-19 ou porteur de handicap, il vous est conseillé de poursuivre le <strong>suivi
 et le renouvellement de vos médicaments</strong> auprès de vos médecins
 référents qui vous orienteront vers le meilleur moyen de suivi :
-<a href="https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf">has-sante.fr</a>.</p>
-
-            </div>
-        </div>
-        <div id="conseils-generaux" class="conseils">
-            <h3>Conseils d’ordre général</h3>
-            <div class="conseil">
-                <p>Le COVID n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de <strong>consulter au moindre signe de maladie</strong>. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.</p>
-<p>De plus, le respect des <strong>gestes barrières</strong> et de <strong>distanciation physique</strong> reste indispensable et le <strong>port du masque</strong> s’impose dans certaines situations.</p>
-
-            </div>
-            <div>
-                <p>Enfin, il est conseillé d’aérer très régulièrement les pièces dans lesquelles vous vivez ou travaillez en ouvrant les fenêtres (au moins 10 minutes plusieurs fois par jour).</p>
+<a href="https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf">has-sante.fr</a>.</p> </div> </div> <div id="conseils-generaux" class="conseils"> <h3>Conseils d’ordre général</h3> <div class="conseil"> <p>Le COVID n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de <strong>consulter au moindre signe de maladie</strong>. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.</p>
+<p>De plus, le respect des <strong>gestes barrières</strong> et de <strong>distanciation physique</strong> reste indispensable et le <strong>port du masque</strong> s’impose dans certaines situations.</p> </div> <div> <p>Enfin, il est conseillé d’aérer très régulièrement les pièces dans lesquelles vous vivez ou travaillez en ouvrant les fenêtres (au moins 10 minutes plusieurs fois par jour).</p>
 <p>Pour plus d’informations, vous pouvez consulter :</p>
 <ul>
 <li><p>sur <strong>le port du masque</strong> :</p>
@@ -1080,26 +301,8 @@ référents qui vous orienteront vers le meilleur moyen de suivi :
 </li>
 <li><p>la page <a href="https://www.gouvernement.fr/info-coronavirus/tests-et-depistage">« Tests et dépistage »</a> et l’infographie <a href="https://www.gouvernement.fr/sites/default/files/infographie_tests.pdf">« Coronavirus, 2 types de tests »</a>.</p>
 </li>
-</ul>
-
-            </div>
-        </div>
-        <div>
-            <a id="back-button button-outline" class="button button-full-width" href="#residence">Modifier mes réponses</a>
-        </div>
-    </div>
-</section>
-
-<section id="conseilscontactarisque" hidden>
-    <div id="conseils-contact-a-risque-block" class="block">
-        <div class="statut statut-risque-eleve">
-            <p>Il vous est conseillé de rester <strong>en isolement</strong>.</p>
-
-        </div>
-        <h2>Vos conseils personnalisés</h2>
-        <div class="conseils">
-            <div class="conseil conseil-rouge">
-                <p>Nous vous conseillons de <strong>contacter votre médecin généraliste</strong>. Par la suite, les services de l’Assurance Maladie  vous contacteront si cela n’est pas déjà fait.</p>
+</ul> </div> </div> <div> <a id="back-button button-outline" class="button button-full-width" href="#residence">Modifier mes réponses</a> </div> </div>
+</section> <section id="conseilscontactarisque" hidden> <div id="conseils-contact-a-risque-block" class="block"> <div class="statut statut-risque-eleve"> <p>Il vous est conseillé de rester <strong>en isolement</strong>.</p> </div> <h2>Vos conseils personnalisés</h2> <div class="conseils"> <div class="conseil conseil-rouge"> <p>Nous vous conseillons de <strong>contacter votre médecin généraliste</strong>. Par la suite, les services de l’Assurance Maladie vous contacteront si cela n’est pas déjà fait.</p>
 <p>En attendant plus d’informations, il vous est conseillé de :</p>
 <ul>
 <li><p>Vous <strong>maintenir en isolement</strong> ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école.</p>
@@ -1108,10 +311,7 @@ référents qui vous orienteront vers le meilleur moyen de suivi :
 </li>
 <li><p>Surveiller l’apparition de <strong>symptômes</strong> et contacter votre médecin si des symptômes apparaissent.</p>
 </li>
-</ul>
-
-            </div>
-            <p>Pour plus d’informations :</p>
+</ul> </div> <p>Pour plus d’informations :</p>
 <ul>
 <li><p>la fiche : <a href="https://solidarites-sante.gouv.fr/IMG/pdf/fiche_personne_contact.pdf">« Quelles conduites adopter et quel sera mon parcours si j’ai été en contact avec un cas COVID-19 »</a> du ministère des solidarités et de la santé.</p>
 </li>
@@ -1119,33 +319,7 @@ référents qui vous orienteront vers le meilleur moyen de suivi :
 </li>
 <li><p>les gestes barrières : <a href="https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf">« Comment se protéger du coronavirus COVID-19 ? »</a> du ministère des solidarités et de la santé.</p>
 </li>
-</ul>
-
-            <div id="conseils-contact-a-risque-autre" hidden>
-                <p>Vous avez passé du temps avec quelqu’un de positif sans prendre de risques. Si dans les jours qui viennent vous ressentez des premiers symptômes, n’hésitez pas à contacter un médecin.</p>
-
-            </div>
-        </div>
-        <div id="conseils-departement" class="conseils" hidden>
-            <h3>Votre localisation</h3>
-            <div class="reponse">
-                <p>Votre lieu de résidence actuel : <b id="nom-departement"></b> (<a href="#residence">modifier</a>)</p>
-
-            </div>
-            <div id="conseils-departement-rouge" hidden>
-                <div class="conseil conseil-rouge">
-                    <p>Votre département est en <strong>niveau rouge</strong>, la circulation épidémique est élevée. Le déconfinement prendra une forme plus stricte.</p>
-
-                </div>
-            </div>
-            <div id="conseils-departement-vert" hidden>
-                <div class="conseil conseil-vert">
-                    <p>Votre département est en <strong>niveau vert</strong>. Cependant le virus circule toujours, maintenez les gestes barrières.</p>
-
-                </div>
-            </div>
-            <div id="conseils-departement-default">
-                <p>Pour plus d’informations, vous pouvez consulter :</p>
+</ul> <div id="conseils-contact-a-risque-autre" hidden> <p>Vous avez passé du temps avec quelqu’un de positif sans prendre de risques. Si dans les jours qui viennent vous ressentez des premiers symptômes, n’hésitez pas à contacter un médecin.</p> </div> </div> <div id="conseils-departement" class="conseils" hidden> <h3>Votre localisation</h3> <div class="reponse"> <p>Votre lieu de résidence actuel : <b id="nom-departement"></b> (<a href="#residence">modifier</a>)</p> </div> <div id="conseils-departement-rouge" hidden> <div class="conseil conseil-rouge"> <p>Votre département est en <strong>niveau rouge</strong>, la circulation épidémique est élevée. Le déconfinement prendra une forme plus stricte.</p> </div> </div> <div id="conseils-departement-vert" hidden> <div class="conseil conseil-vert"> <p>Votre département est en <strong>niveau vert</strong>. Cependant le virus circule toujours, maintenez les gestes barrières.</p> </div> </div> <div id="conseils-departement-default"> <p>Pour plus d’informations, vous pouvez consulter :</p>
 <ul>
 <li><p><a href="https://www.gouvernement.fr/sites/default/files/cimages/infographie_deconfinement.jpg">l’infographie récapitulative</a> du plan de déconfinement</p>
 </li>
@@ -1153,29 +327,11 @@ référents qui vous orienteront vers le meilleur moyen de suivi :
 </li>
 <li><p>les consignes à appliquer dans vos activités sur <a href="https://www.gouvernement.fr/info-coronavirus/strategie-de-deconfinement">le site du gouvernement</a></p>
 </li>
-</ul>
-
-            </div>
-        </div>
-        <div id="conseils-foyer" class="conseils">
-            <h3>Votre foyer</h3>
-            <div id="conseils-foyer-fragile">
-                <p>Si vous ou un membre de votre foyer êtes considéré comme fragile face au covid-19 ou porteur de handicap, il vous est conseillé de poursuivre le <strong>suivi
+</ul> </div> </div> <div id="conseils-foyer" class="conseils"> <h3>Votre foyer</h3> <div id="conseils-foyer-fragile"> <p>Si vous ou un membre de votre foyer êtes considéré comme fragile face au covid-19 ou porteur de handicap, il vous est conseillé de poursuivre le <strong>suivi
 et le renouvellement de vos médicaments</strong> auprès de vos médecins
 référents qui vous orienteront vers le meilleur moyen de suivi :
-<a href="https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf">has-sante.fr</a>.</p>
-
-            </div>
-        </div>
-        <div id="conseils-generaux" class="conseils">
-            <h3>Conseils d’ordre général</h3>
-            <div class="conseil">
-                <p>Le COVID n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de <strong>consulter au moindre signe de maladie</strong>. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.</p>
-<p>De plus, le respect des <strong>gestes barrières</strong> et de <strong>distanciation physique</strong> reste indispensable et le <strong>port du masque</strong> s’impose dans certaines situations.</p>
-
-            </div>
-            <div>
-                <p>Enfin, il est conseillé d’aérer très régulièrement les pièces dans lesquelles vous vivez ou travaillez en ouvrant les fenêtres (au moins 10 minutes plusieurs fois par jour).</p>
+<a href="https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf">has-sante.fr</a>.</p> </div> </div> <div id="conseils-generaux" class="conseils"> <h3>Conseils d’ordre général</h3> <div class="conseil"> <p>Le COVID n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de <strong>consulter au moindre signe de maladie</strong>. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.</p>
+<p>De plus, le respect des <strong>gestes barrières</strong> et de <strong>distanciation physique</strong> reste indispensable et le <strong>port du masque</strong> s’impose dans certaines situations.</p> </div> <div> <p>Enfin, il est conseillé d’aérer très régulièrement les pièces dans lesquelles vous vivez ou travaillez en ouvrant les fenêtres (au moins 10 minutes plusieurs fois par jour).</p>
 <p>Pour plus d’informations, vous pouvez consulter :</p>
 <ul>
 <li><p>sur <strong>le port du masque</strong> :</p>
@@ -1195,31 +351,12 @@ référents qui vous orienteront vers le meilleur moyen de suivi :
 </li>
 <li><p>la page <a href="https://www.gouvernement.fr/info-coronavirus/tests-et-depistage">« Tests et dépistage »</a> et l’infographie <a href="https://www.gouvernement.fr/sites/default/files/infographie_tests.pdf">« Coronavirus, 2 types de tests »</a>.</p>
 </li>
-</ul>
-
-            </div>
-        </div>
-        <div>
-            <a id="back-button button-outline" class="button button-full-width" href="#residence">Modifier mes réponses</a>
-        </div>
-    </div>
-</section>
-
-<section id="nouvelleversiondisponible" hidden>
-    <div id="nouvelle-version-disponible-block" class="block">
-        <div><h2>Une nouvelle version du site est disponible</h2>
+</ul> </div> </div> <div> <a id="back-button button-outline" class="button button-full-width" href="#residence">Modifier mes réponses</a> </div> </div>
+</section> <section id="nouvelleversiondisponible" hidden> <div id="nouvelle-version-disponible-block" class="block"> <div><h2>Une nouvelle version du site est disponible</h2>
 <p>Veuillez cliquer sur le bouton ci-dessous pour améliorer les conseils relatifs à votre questionnaire. <b>Vos données ne seront pas perdues</b>.</p>
 <p>Vous serez redirigé·e vers le questionnaire si de nouvelles informations sont nécessaires afin d’affiner la pertinence de vos conseils personnalisés.</p>
-</div>
-        <div>
-            <a id="refresh-button" class="button button-full-width" href="">Mettre à jour</a>
-        </div>
-    </div>
-</section>
-
-<section id="conditionsutilisation" hidden>
-    <div id="conditions-utilisation-block" class="block">
-        <h2>Conditions d’utilisation</h2>
+</div> <div> <a id="refresh-button" class="button button-full-width" href="">Mettre à jour</a> </div> </div>
+</section> <section id="conditionsutilisation" hidden> <div id="conditions-utilisation-block" class="block"> <h2>Conditions d’utilisation</h2>
 <h3>À propos</h3>
 <p>mesconseilscovid.sante.gouv.fr est un service de prévention et de conseil personnalisé pour se protéger et protéger les autres face au virus.</p>
 <p>mesconseilscovid.sante.gouv.fr est un service du ministère des solidarités et de la santé.</p>
@@ -1239,15 +376,11 @@ référents qui vous orienteront vers le meilleur moyen de suivi :
 </ul>
 <p>Il renvoie vers les consignes préfectorales pour les mesures locales et les recommandations du ministère du travail concernant la reprise de l’activité.</p>
 <p>Les informations diffusées ici sont basées sur des recommandations officielles, de sources fiables. Mais il n’est pas exempt de défauts, d’erreurs ou d’omissions.</p>
-<p>N’hésitez pas à nous contacter à l’adresse 
-<a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a> 
-si vous identifiez une information contraire aux connaissances médicales sur la maladie.</p>
+<p>N’hésitez pas à nous contacter à l’adresse <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a> si vous identifiez une information contraire aux connaissances médicales sur la maladie.</p>
 <h3>Accessibilité</h3>
 <p>Nous tâchons de rendre ce site accessible à toutes et à tous. Nous n’avons pas encore testé le respect des normes formelles d’accessibilité du service.</p>
-<p>Si vous rencontrez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou une fonctionnalité du site, merci de nous contacter à l’adresse 
-<a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a></p>
-<p>Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits. Pour en savoir plus sur la politique d’accessibilité numérique de l’État : 
-<a href="http://references.modernisation.gouv.fr/accessibilite-numerique">references.modernisation.gouv.fr</a></p>
+<p>Si vous rencontrez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou une fonctionnalité du site, merci de nous contacter à l’adresse <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a></p>
+<p>Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits. Pour en savoir plus sur la politique d’accessibilité numérique de l’État : <a href="http://references.modernisation.gouv.fr/accessibilite-numerique">references.modernisation.gouv.fr</a></p>
 <h3>Responsabilités et protection des données à caractère personnel</h3>
 <p>Le service s’appuie sur les données que vous déclarez pour personnaliser les conseils fournis. Il s’agit par exemple de données concernant votre état de santé ou votre lieu de résidence.</p>
 <p>Ces données sont traitées, le temps de fournir la recommandation appropriée et sur la base de votre consentement.</p>
@@ -1255,34 +388,11 @@ si vous identifiez une information contraire aux connaissances médicales sur la
 <p>En cours de navigation, vous pouvez supprimer ces données en cliquant sur le bouton prévu à cet effet en bas de chaque écran.</p>
 <p>Seules vos données de connexion au service (heure, date…) sont conservées pour répondre à une obligation légale (article 6 de la loi n°2004-575 du 21 juin 2004) et pour une durée d’1 an conformément à la loi.</p>
 <p>Au sein du ministère, le responsable de traitement de mesconseilscovid.sante.gouv.fr est la Délégation ministérielle du numérique en santé (DNS) du ministère des solidarités et de la Santé. La déléguée est directrice de publication.</p>
-<p>Vous pouvez également demander des informations ou exercer vos droits auprès de la Déléguée à la protection des données du ministère des solidarités et de la santé à l’adresse suivante 
-<a href="mailto:dpd-minsociaux@sg.social.gouv.fr">dpd-minsociaux@sg.social.gouv.fr</a></p>
+<p>Vous pouvez également demander des informations ou exercer vos droits auprès de la Déléguée à la protection des données du ministère des solidarités et de la santé à l’adresse suivante <a href="mailto:dpd-minsociaux@sg.social.gouv.fr">dpd-minsociaux@sg.social.gouv.fr</a></p>
 <p>Le service est hébergé par :</p>
-<p>OVH<br />
-2, rue Kellermann<br />
-59100 Roubaix<br />
-<a href="https://www.ovh.com/fr/protection-donnees-personnelles/">OVH - Données personnelles</a></p>
-
-        <div>
-            <a class="button button-full-width" href="">Revenir au questionnaire</a>
-        </div>
-    </div>
-</section>
-
-    <script src="localforage-1.7.3.min.js"></script>
-    <script src="navigo-7.1.2.min.js"></script>
-    <script src="main-be0fa33b.js"></script>
-    <script type="text/javascript">
-        ;(function() {
-            document.addEventListener('dataLoaded', function (event) {
-                router.resolve()
-                updater.checkForUpdatesEvery(10) // Minutes.
-            })
-            stockageLocal.charger(questionnaire)
-            document
-                .getElementById('delete-data')
-                .addEventListener('click', resetPrivateData)
-        })()
-    </script>
-</body>
-</html>
+<p>OVH<br>
+2, rue Kellermann<br>
+59100 Roubaix<br>
+<a href="https://www.ovh.com/fr/protection-donnees-personnelles/">OVH - Données personnelles</a></p> <div> <a class="button button-full-width" href="">Revenir au questionnaire</a> </div> </div>
+</section> <script src="/main.5291080b.js"></script>
+</body></html>
