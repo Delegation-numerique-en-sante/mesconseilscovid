@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-05-28
+
+* ajout d’un bouton pour imprimer ses conseils
+* diverses optimisations techniques
+
 ## 2020-05-26
 
 * mise à jour des conseils généraux : ajout d’informations sur les tests et le dépistage + N° téléphone officiel informations covid
