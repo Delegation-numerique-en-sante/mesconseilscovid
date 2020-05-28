@@ -544,3 +544,39 @@ a#geolocalisation {
     background-color: #ffb6a5;
     border-color: #ff6f4c;
 }
+
+
+@media print {
+    #conseils-departement h3,
+    #conseils-activite h3,
+    #conseils-foyer h3,
+    #conseils-caracteristiques h3,
+    #conseils-generaux h3,
+    #conseils-symptomes-actuels-block h2,
+    #conseils-symptomes-passes-block h2,
+    #conseils-contact-a-risque-block h2 {
+        padding-top: 0;
+        background-image: none;
+    }
+
+    .block {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+    .block * {
+        font-size: 14px;
+    }
+    .statut {
+        padding: 0;
+        margin: 0 0 14px 0;
+    }
+
+    .block > h2,
+    a[href^='#'],
+    .form-controls,
+    footer {
+        display: none;
+    }
+
+}

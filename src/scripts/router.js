@@ -2,6 +2,7 @@ var Navigo = require('navigo')
 
 var affichage = require('./affichage.js')
 var algorithme = require('./algorithme.js')
+var impression = require('./impression.js')
 
 var getCurrentPageName = function () {
     var hash = document.location.hash
@@ -282,6 +283,7 @@ function initRouter() {
             )
 
             affichage.displayBlocks(element, blockNames)
+            impression.setup(element)
 
             // Dynamic data injections.
             injectionScripts.departement(element, data)
@@ -291,6 +293,7 @@ function initRouter() {
         .on(new RegExp('^conseilssymptomesactuels$'), function () {
             var pageName = 'conseilssymptomesactuels'
             var element = loadPage(pageName)
+            impression.setup(element)
         })
         .on(new RegExp('^conseilssymptomespasses$'), function () {
             var pageName = 'conseilssymptomespasses'
@@ -307,6 +310,7 @@ function initRouter() {
             )
 
             affichage.displayBlocks(element, blockNames)
+            impression.setup(element)
 
             // Dynamic data injections.
             injectionScripts.departement(element, data)
@@ -326,6 +330,7 @@ function initRouter() {
             )
 
             affichage.displayBlocks(element, blockNames)
+            impression.setup(element)
 
             // Dynamic data injections.
             injectionScripts.departement(element, data)
