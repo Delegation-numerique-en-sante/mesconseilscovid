@@ -90,7 +90,9 @@ var loadPage = function (pageName) {
     var clone = section.cloneNode(true)
     page.innerHTML = '' // Flush the current content.
     var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
-    element.scrollIntoView({ behavior: 'smooth' })
+    if (pageName !== 'introduction') {
+        element.scrollIntoView({ behavior: 'smooth' })
+    }
     return element
 }
 
