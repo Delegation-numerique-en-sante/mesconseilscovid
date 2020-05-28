@@ -1,8 +1,6 @@
 require('./polyfills/custom_event.js')
 
-var affichage = require('./affichage.js')
 var CarteDepartements = require('./carte.js')
-var Geolocaliseur = require('./geoloc.js')
 var Updater = require('./updater.js')
 var Questionnaire = require('./questionnaire.js')
 var StockageLocal = require('./stockage.js')
@@ -143,46 +141,6 @@ window.resetPrivateData = function (event) {
     questionnaire.resetData()
     stockageLocal.supprimer()
     router.navigate('introduction')
-}
-
-window.geolocaliseur = new Geolocaliseur()
-
-function geolocalisation(event) {
-    event.preventDefault()
-    var form = document.querySelector('form#residence-form')
-    affichage.hideSelector(form, '#error-geolocalisation')
-    var onDepartementFound = function (departement) {
-        var select = form.querySelector('#departement')
-        select.value = departement.code
-        // We manually trigger the change event for the submit button toggle.
-        select.dispatchEvent(new CustomEvent('change'))
-    }
-    var onDepartementNotFound = function () {
-        // L’utilisateur n’est probablement pas sur le territoire français.
-        affichage.displayElement(form, 'error-geolocalisation')
-    }
-    navigator.geolocation.getCurrentPosition(
-        function (position) {
-            var latitude = position.coords.latitude
-            var longitude = position.coords.longitude
-            geolocaliseur.matchDepartement(
-                latitude,
-                longitude,
-                onDepartementFound,
-                onDepartementNotFound
-            )
-        },
-        function (error) {
-            // L’utilisateur a probablement refusé la géolocalisation.
-            console.warn('ERREUR (' + error.code + '): ' + error.message)
-            onDepartementNotFound()
-        },
-        {
-            enableHighAccuracy: true,
-            timeout: 5000,
-            maximumAge: 0,
-        }
-    )
 }
 
 window.updater = new Updater()

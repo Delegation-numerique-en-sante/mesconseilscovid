@@ -1,4 +1,6 @@
-module.exports = function () {
+var affichage = require('./affichage.js')
+
+var Geolocaliseur = function () {
     this.matchDepartement = function (lat, lon, departementFound, departementNotFound) {
         // Warning, in case of multiple polygons, you can have multiple matches.
         var that = this
@@ -53,4 +55,47 @@ module.exports = function () {
 
         return inside
     }
+}
+
+function geolocalisation(event) {
+    event.preventDefault()
+    var geolocaliseur = new Geolocaliseur()
+    var form = document.querySelector('form#residence-form')
+    affichage.hideSelector(form, '#error-geolocalisation')
+    var onDepartementFound = function (departement) {
+        var select = form.querySelector('#departement')
+        select.value = departement.code
+        // We manually trigger the change event for the submit button toggle.
+        select.dispatchEvent(new CustomEvent('change'))
+    }
+    var onDepartementNotFound = function () {
+        // L’utilisateur n’est probablement pas sur le territoire français.
+        affichage.displayElement(form, 'error-geolocalisation')
+    }
+    navigator.geolocation.getCurrentPosition(
+        function (position) {
+            var latitude = position.coords.latitude
+            var longitude = position.coords.longitude
+            geolocaliseur.matchDepartement(
+                latitude,
+                longitude,
+                onDepartementFound,
+                onDepartementNotFound
+            )
+        },
+        function (error) {
+            // L’utilisateur a probablement refusé la géolocalisation.
+            console.warn('ERREUR (' + error.code + '): ' + error.message)
+            onDepartementNotFound()
+        },
+        {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0,
+        }
+    )
+}
+
+module.exports = {
+    geolocalisation,
 }

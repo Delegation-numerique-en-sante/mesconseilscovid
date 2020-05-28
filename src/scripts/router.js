@@ -3,6 +3,7 @@ var Navigo = require('navigo')
 var affichage = require('./affichage.js')
 var algorithme = require('./algorithme.js')
 var impression = require('./impression.js')
+var geoloc = require('./geoloc.js')
 
 var getCurrentPageName = function () {
     var hash = document.location.hash
@@ -166,7 +167,7 @@ function initRouter() {
             form.addEventListener('submit', onSubmitFormScripts[pageName])
             document
                 .getElementById('geolocalisation')
-                .addEventListener('click', geolocalisation)
+                .addEventListener('click', geoloc.geolocalisation)
         })
         .on(new RegExp('^activitepro$'), function () {
             var pageName = 'activitepro'
