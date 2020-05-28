@@ -481,6 +481,10 @@
 
 <section id="conseils" hidden>
     <div id="conseils-block" class="block">
+
+        <div id="statut-risque-eleve" class="statut statut-risque-eleve" hidden>
+            {{ statut_risque_élevé_contamination }}
+        </div>
         <div id="statut-personne-fragile" class="statut statut-personne-fragile" hidden>
             {{ statut_personne_fragile }}
         </div>
@@ -490,7 +494,48 @@
         <div id="statut-peu-de-risques" class="statut statut-peu-de-risques" hidden>
             {{ statut_peu_de_risques }}
         </div>
+
         <h2>Vos conseils personnalisés</h2>
+
+        <div id="conseils-personnels-symptomes-actuels" class="conseils" hidden>
+            <div class="conseil conseil-orange">
+                {{ conseils_symptômes_actuels }}
+            </div>
+            {{ conseils_isolement }}
+            {{ conseils_cartographie_dépistage }}
+            {{ conseils_symptômes_défaut }}
+        </div>
+
+        <div id="conseils-personnels-symptomes-passes" class="conseils" hidden>
+            <div id="conseils-personnels-symptomes-passes-sans-risques" hidden>
+                <div class="conseil conseil-orange">
+                    {{ conseils_symptômes_passés_sans_risques }}
+                </div>
+                {{ conseils_symptômes_passés_sans_risques_info }}
+            </div>
+            <div id="conseils-personnels-symptomes-passes-avec-risques" hidden>
+                <div class="conseil conseil-orange">
+                    {{ conseils_symptômes_passés_avec_risques }}
+                </div>
+                {{ conseils_symptômes_passés_avec_risques_info }}
+            </div>
+            <div id="conseils-symptomes-passes-default">
+                {{ conseils_isolement }}
+                {{ conseils_cartographie_dépistage }}
+                {{ conseils_symptômes_défaut }}
+            </div>
+        </div>
+
+        <div id="conseils-personnels-contact-a-risque" class="conseils" hidden>
+            <div class="conseil conseil-orange">
+                {{ conseils_contact_à_risque }}
+            </div>
+            {{ conseils_contact_à_risque_info }}
+            <div id="conseils-personnels-contact-a-risque-autre" hidden>
+                {{ conseils_contact_à_risque_autre }}
+            </div>
+        </div>
+
         <div id="conseils-departement" class="conseils" hidden>
             <h3>Votre localisation</h3>
             <div class="reponse">
@@ -510,6 +555,7 @@
                 {{ conseils_département_défaut }}
             </div>
         </div>
+
         <div id="conseils-activite" class="conseils" hidden>
             <h3>Votre activité</h3>
             <div class="reponse">
@@ -545,6 +591,7 @@
                 {{ conseils_activité_pro_infos }}
             </div>
         </div>
+
         <div id="conseils-foyer" class="conseils" hidden>
             <h3>Votre foyer</h3>
             <div id="conseils-foyer-enfants" hidden>
@@ -581,7 +628,11 @@
                 {{ conseils_foyer_enfant_garde }}
                 {{ conseils_foyer_enfants_vaccins }}
             </div>
+            <div id="conseils-foyer-fragile-suivi" hidden>
+                {{ conseils_foyer_fragile_suivi }}
+            </div>
         </div>
+
         <div id="conseils-caracteristiques" class="conseils" hidden>
             <h3>Vos caractéristiques et antécédents</h3>
             <div class="reponse">
@@ -615,36 +666,8 @@
                 {{ conseils_maladie_chronique_info }}
             </div>
         </div>
-        <div id="conseils-generaux" class="conseils">
-            <h3>Conseils d’ordre général</h3>
-            <div class="conseil">
-                {{ conseils_généraux }}
-            </div>
-            <div>
-                {{ conseils_généraux_info }}
-            </div>
-        </div>
-        <div class="form-controls">
-            <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
-            <a class="button button-full-width" href="" id="impression">Imprimer mes conseils</a>
-        </div>
-    </div>
-</section>
 
-<section id="conseilssymptomesactuels" hidden>
-    <div id="conseils-symptomes-actuels-block" class="block">
-        <div class="statut statut-risque-eleve">
-            {{ statut_risque_élevé_contamination }}
-        </div>
-        <h2>Vos conseils personnalisés</h2>
-        <div class="conseils">
-            <div class="conseil conseil-orange">
-                {{ conseils_symptômes_actuels }}
-            </div>
-            {{ conseils_isolement }}
-            {{ conseils_cartographie_dépistage }}
-            {{ conseils_symptômes_défaut }}
-        </div>
+        <!-- Conseils généraux toujours affichés. -->
         <div id="conseils-generaux" class="conseils">
             <h3>Conseils d’ordre général</h3>
             <div class="conseil">
@@ -654,128 +677,8 @@
                 {{ conseils_généraux_info }}
             </div>
         </div>
-        <div class="form-controls">
-            <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
-            <a class="button button-full-width" href="" id="impression">Imprimer mes conseils</a>
-        </div>
-    </div>
-</section>
 
-<section id="conseilssymptomespasses" hidden>
-    <div id="conseils-symptomes-passes-block" class="block">
-        <div class="statut statut-risque-eleve">
-            {{ statut_risque_élevé_contamination }}
-        </div>
-        <h2>Vos conseils personnalisés</h2>
-        <div class="conseils">
-            <div id="conseils-symptomes-passes-sans-risques" hidden>
-                <div class="conseil conseil-orange">
-                    {{ conseils_symptômes_passés_sans_risques }}
-                </div>
-                {{ conseils_symptômes_passés_sans_risques_info }}
-            </div>
-            <div id="conseils-symptomes-passes-avec-risques" hidden>
-                <div class="conseil conseil-orange">
-                    {{ conseils_symptômes_passés_avec_risques }}
-                </div>
-                {{ conseils_symptômes_passés_avec_risques_info }}
-            </div>
-            <div id="conseils-symptomes-passes-default">
-                {{ conseils_isolement }}
-                {{ conseils_cartographie_dépistage }}
-                {{ conseils_symptômes_défaut }}
-            </div>
-        </div>
-        <div id="conseils-departement" class="conseils" hidden>
-            <h3>Votre localisation</h3>
-            <div class="reponse">
-                {{ réponse_département }}
-            </div>
-            <div id="conseils-departement-orange" hidden>
-                <div class="conseil conseil-orange">
-                    {{ conseils_département_orange }}
-                </div>
-            </div>
-            <div id="conseils-departement-vert" hidden>
-                <div class="conseil conseil-vert">
-                    {{ conseils_département_vert }}
-                </div>
-            </div>
-            <div id="conseils-departement-default">
-                {{ conseils_département_défaut }}
-            </div>
-        </div>
-        <div id="conseils-foyer" class="conseils">
-            <h3>Votre foyer</h3>
-            <div id="conseils-foyer-fragile">
-                {{ conseils_foyer_fragile_suivi }}
-            </div>
-        </div>
-        <div id="conseils-generaux" class="conseils">
-            <h3>Conseils d’ordre général</h3>
-            <div class="conseil">
-                {{ conseils_généraux }}
-            </div>
-            <div>
-                {{ conseils_généraux_info }}
-            </div>
-        </div>
-        <div class="form-controls">
-            <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
-            <a class="button button-full-width" href="" id="impression">Imprimer mes conseils</a>
-        </div>
-    </div>
-</section>
-
-<section id="conseilscontactarisque" hidden>
-    <div id="conseils-contact-a-risque-block" class="block">
-        <div class="statut statut-risque-eleve">
-            {{ statut_risque_élevé_contamination }}
-        </div>
-        <h2>Vos conseils personnalisés</h2>
-        <div class="conseils">
-            <div class="conseil conseil-orange">
-                {{ conseils_contact_à_risque }}
-            </div>
-            {{ conseils_contact_à_risque_info }}
-            <div id="conseils-contact-a-risque-autre" hidden>
-                {{ conseils_contact_à_risque_autre }}
-            </div>
-        </div>
-        <div id="conseils-departement" class="conseils" hidden>
-            <h3>Votre localisation</h3>
-            <div class="reponse">
-                {{ réponse_département }}
-            </div>
-            <div id="conseils-departement-orange" hidden>
-                <div class="conseil conseil-orange">
-                    {{ conseils_département_orange }}
-                </div>
-            </div>
-            <div id="conseils-departement-vert" hidden>
-                <div class="conseil conseil-vert">
-                    {{ conseils_département_vert }}
-                </div>
-            </div>
-            <div id="conseils-departement-default">
-                {{ conseils_département_défaut }}
-            </div>
-        </div>
-        <div id="conseils-foyer" class="conseils">
-            <h3>Votre foyer</h3>
-            <div id="conseils-foyer-fragile">
-                {{ conseils_foyer_fragile_suivi }}
-            </div>
-        </div>
-        <div id="conseils-generaux" class="conseils">
-            <h3>Conseils d’ordre général</h3>
-            <div class="conseil">
-                {{ conseils_généraux }}
-            </div>
-            <div>
-                {{ conseils_généraux_info }}
-            </div>
-        </div>
+        <!-- Boutons de modification/impression toujours affichés. -->
         <div class="form-controls">
             <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
             <a class="button button-full-width" href="" id="impression">Imprimer mes conseils</a>

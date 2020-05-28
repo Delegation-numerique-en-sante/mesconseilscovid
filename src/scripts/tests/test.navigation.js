@@ -224,7 +224,7 @@ describe('Navigation mes symptômes passés', function () {
                 antecedent_cardio: false,
                 symptomes_actuels: true,
             })
-        ).to.equal('conseilssymptomesactuels')
+        ).to.equal('conseils')
     })
 })
 
@@ -278,7 +278,7 @@ describe('Navigation mes contacts à risque', function () {
                 antecedent_cardio: false,
                 symptomes_actuels: true,
             })
-        ).to.equal('conseilssymptomesactuels')
+        ).to.equal('conseils')
     })
     it('redirige vers conseils si réponse positive à la 7', function () {
         chai.expect(
@@ -291,7 +291,7 @@ describe('Navigation mes contacts à risque', function () {
                 symptomes_actuels: false,
                 symptomes_passes: true,
             })
-        ).to.equal('conseilssymptomespasses')
+        ).to.equal('conseils')
     })
 })
 
@@ -306,7 +306,7 @@ describe('Navigation Sortie 1', function () {
                 antecedent_cardio: false,
                 symptomes_actuels: true,
             })
-        ).to.be.undefined
+        ).to.equal('conseils')
     })
     it('redirige sortie 1 si symptômes actuels et target inconnu', function () {
         chai.expect(
@@ -318,7 +318,7 @@ describe('Navigation Sortie 1', function () {
                 antecedent_cardio: false,
                 symptomes_actuels: true,
             })
-        ).to.equal('conseilssymptomesactuels')
+        ).to.equal('conseils')
     })
     it('redirige sortie 2 -> 1 si symptômes actuels', function () {
         chai.expect(
@@ -330,7 +330,7 @@ describe('Navigation Sortie 1', function () {
                 antecedent_cardio: false,
                 symptomes_actuels: true,
             })
-        ).to.equal('conseilssymptomesactuels')
+        ).to.equal('conseils')
     })
     it('redirige sortie 3 -> 1 si symptômes actuels', function () {
         chai.expect(
@@ -342,7 +342,7 @@ describe('Navigation Sortie 1', function () {
                 antecedent_cardio: false,
                 symptomes_actuels: true,
             })
-        ).to.equal('conseilssymptomesactuels')
+        ).to.equal('conseils')
     })
     it('redirige sortie 4 -> 1 si symptômes actuels', function () {
         chai.expect(
@@ -354,7 +354,7 @@ describe('Navigation Sortie 1', function () {
                 antecedent_cardio: false,
                 symptomes_actuels: true,
             })
-        ).to.equal('conseilssymptomesactuels')
+        ).to.be.undefined
     })
 })
 
@@ -370,7 +370,7 @@ describe('Navigation Sortie 2', function () {
                 symptomes_actuels: false,
                 symptomes_passes: true,
             })
-        ).to.be.undefined
+        ).to.equal('conseils')
     })
     it('redirige sortie 2 si symptômes passés et target inconnu', function () {
         chai.expect(
@@ -383,7 +383,7 @@ describe('Navigation Sortie 2', function () {
                 symptomes_actuels: false,
                 symptomes_passes: true,
             })
-        ).to.equal('conseilssymptomespasses')
+        ).to.equal('conseils')
     })
     it('redirige sortie 1 -> 2 si symptômes passés', function () {
         chai.expect(
@@ -396,7 +396,7 @@ describe('Navigation Sortie 2', function () {
                 symptomes_actuels: false,
                 symptomes_passes: true,
             })
-        ).to.equal('conseilssymptomespasses')
+        ).to.equal('conseils')
     })
     it('redirige sortie 3 -> 2 si symptômes passés', function () {
         chai.expect(
@@ -409,7 +409,7 @@ describe('Navigation Sortie 2', function () {
                 symptomes_actuels: false,
                 symptomes_passes: true,
             })
-        ).to.equal('conseilssymptomespasses')
+        ).to.equal('conseils')
     })
     it('redirige sortie 4 -> 2 si symptômes passés', function () {
         chai.expect(
@@ -422,7 +422,7 @@ describe('Navigation Sortie 2', function () {
                 symptomes_actuels: false,
                 symptomes_passes: true,
             })
-        ).to.equal('conseilssymptomespasses')
+        ).to.be.undefined
     })
 })
 
@@ -439,7 +439,7 @@ describe('Navigation Sortie 3', function () {
                 symptomes_passes: false,
                 contact_a_risque: true,
             })
-        ).to.be.undefined
+        ).to.equal('conseils')
     })
     it('redirige sortie 3 si symptômes passés et target inconnu', function () {
         chai.expect(
@@ -453,7 +453,7 @@ describe('Navigation Sortie 3', function () {
                 symptomes_passes: false,
                 contact_a_risque: true,
             })
-        ).to.equal('conseilscontactarisque')
+        ).to.equal('conseils')
     })
     it('redirige sortie 1 -> 3 si contact à risque', function () {
         chai.expect(
@@ -467,7 +467,7 @@ describe('Navigation Sortie 3', function () {
                 symptomes_passes: false,
                 contact_a_risque: true,
             })
-        ).to.equal('conseilscontactarisque')
+        ).to.equal('conseils')
     })
     it('redirige sortie 2 -> 3 si contact à risque', function () {
         chai.expect(
@@ -481,7 +481,7 @@ describe('Navigation Sortie 3', function () {
                 symptomes_passes: false,
                 contact_a_risque: true,
             })
-        ).to.equal('conseilscontactarisque')
+        ).to.equal('conseils')
     })
     it('redirige sortie 4 -> 3 si contact à risque', function () {
         chai.expect(
@@ -495,7 +495,7 @@ describe('Navigation Sortie 3', function () {
                 symptomes_passes: false,
                 contact_a_risque: true,
             })
-        ).to.equal('conseilscontactarisque')
+        ).to.be.undefined
     })
 })
 
