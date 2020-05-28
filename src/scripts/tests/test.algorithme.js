@@ -54,6 +54,143 @@ describe('Algorithme statut', function () {
             algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal(['statut-personne-fragile'])
     })
+
+    it('Un profil avec des symptômes actuels présente un risque élevé', function () {
+        var data = {
+            symptomes_actuels: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
+        ).to.deep.equal(['statut-risque-eleve'])
+    })
+
+    it('Un profil avec des symptômes passés présente un risque élevé', function () {
+        var data = {
+            symptomes_passes: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
+        ).to.deep.equal(['statut-risque-eleve'])
+    })
+
+    it('Un profil avec un contact à risque présente un risque élevé', function () {
+        var data = {
+            contact_a_risque: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
+        ).to.deep.equal(['statut-risque-eleve'])
+    })
+})
+
+describe('Algorithme conseils personnels', function () {
+    beforeEach(function () {
+        questionnaire.resetData()
+    })
+
+    afterEach(function () {
+        questionnaire.resetData()
+    })
+
+    it('Un profil sans risques n’affiche rien de particulier', function () {
+        var data = {}
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.conseilsPersonnelsBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
+        ).to.deep.equal([])
+    })
+
+    it('Un profil avec des symptômes actuels', function () {
+        var data = {
+            symptomes_actuels: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.conseilsPersonnelsBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
+        ).to.deep.equal(['conseils-personnels-symptomes-actuels'])
+    })
+
+    it('Un profil avec des symptômes passés', function () {
+        var data = {
+            symptomes_passes: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.conseilsPersonnelsBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
+        ).to.deep.equal([
+            'conseils-personnels-symptomes-passes',
+            'conseils-personnels-symptomes-passes-sans-risques',
+        ])
+    })
+
+    it('Un profil avec des symptômes passés + personne à risque', function () {
+        var data = {
+            symptomes_passes: true,
+            sup65: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.conseilsPersonnelsBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
+        ).to.deep.equal([
+            'conseils-personnels-symptomes-passes',
+            'conseils-personnels-symptomes-passes-avec-risques',
+        ])
+    })
+
+    it('Un profil avec des symptômes passés + foyer à risque', function () {
+        var data = {
+            symptomes_passes: true,
+            foyer_fragile: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.conseilsPersonnelsBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
+        ).to.deep.equal([
+            'conseils-personnels-symptomes-passes',
+            'conseils-personnels-symptomes-passes-avec-risques',
+        ])
+    })
+
+    it('Un profil avec un contact à risque', function () {
+        var data = {
+            contact_a_risque: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.conseilsPersonnelsBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
+        ).to.deep.equal(['conseils-personnels-contact-a-risque'])
+    })
+
+    it('Un profil avec un contact à risque', function () {
+        var data = {
+            contact_a_risque: true,
+            contact_a_risque_autre: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.conseilsPersonnelsBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
+        ).to.deep.equal([
+            'conseils-personnels-contact-a-risque',
+            'conseils-personnels-contact-a-risque-autre',
+        ])
+    })
 })
 
 describe('Algorithme département', function () {
@@ -94,6 +231,39 @@ describe('Algorithme département', function () {
             algorithme.departementBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal(['conseils-departement'])
     })
+
+    it('Un département + symptômes actuels n’affiche pas la localisation', function () {
+        var data = {
+            departement: '01',
+            symptomes_actuels: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.departementBlockNamesToDisplay(algorithme.getData(questionnaire))
+        ).to.deep.equal([])
+    })
+
+    it('Un département + symptômes passés affiche la localisation', function () {
+        var data = {
+            departement: '01',
+            symptomes_passes: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.departementBlockNamesToDisplay(algorithme.getData(questionnaire))
+        ).to.deep.equal(['conseils-departement', 'conseils-departement-vert'])
+    })
+
+    it('Un département + contact à risque affiche la localisation', function () {
+        var data = {
+            departement: '01',
+            contact_a_risque: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.departementBlockNamesToDisplay(algorithme.getData(questionnaire))
+        ).to.deep.equal(['conseils-departement', 'conseils-departement-vert'])
+    })
 })
 
 describe('Algorithme activité pro', function () {
@@ -106,6 +276,36 @@ describe('Algorithme activité pro', function () {
     })
 
     it('Aucune activité pro n’affiche rien', function () {
+        chai.expect(
+            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(questionnaire))
+        ).to.deep.equal([])
+    })
+
+    it('Symptômes actuels n’affiche rien', function () {
+        var data = {
+            symptomes_actuels: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(questionnaire))
+        ).to.deep.equal([])
+    })
+
+    it('Symptômes passés n’affiche rien', function () {
+        var data = {
+            symptomes_passes: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(questionnaire))
+        ).to.deep.equal([])
+    })
+
+    it('Contact à risque n’affiche rien', function () {
+        var data = {
+            contact_a_risque: true,
+        }
+        questionnaire.fillData(data)
         chai.expect(
             algorithme.activiteProBlockNamesToDisplay(algorithme.getData(questionnaire))
         ).to.deep.equal([])
@@ -190,6 +390,36 @@ describe('Algorithme foyer', function () {
         ).to.deep.equal([])
     })
 
+    it('Symptômes actuels n’affiche rien', function () {
+        var data = {
+            symptomes_actuels: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.foyerBlockNamesToDisplay(algorithme.getData(questionnaire))
+        ).to.deep.equal([])
+    })
+
+    it('Symptômes passés affiche suivi', function () {
+        var data = {
+            symptomes_passes: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.foyerBlockNamesToDisplay(algorithme.getData(questionnaire))
+        ).to.deep.equal(['conseils-foyer', 'conseils-foyer-fragile-suivi'])
+    })
+
+    it('Contact à risque affiche suivi', function () {
+        var data = {
+            contact_a_risque: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.foyerBlockNamesToDisplay(algorithme.getData(questionnaire))
+        ).to.deep.equal(['conseils-foyer', 'conseils-foyer-fragile-suivi'])
+    })
+
     it('Risque enfant', function () {
         var data = {
             foyer_enfants: true,
@@ -234,6 +464,42 @@ describe('Algorithme caractéristiques et antécédents', function () {
     it('Aucun antécédent n’affiche rien', function () {
         chai.expect(
             algorithme.foyerBlockNamesToDisplay(algorithme.getData(questionnaire))
+        ).to.deep.equal([])
+    })
+
+    it('Symptômes actuels n’affiche rien', function () {
+        var data = {
+            symptomes_actuels: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
+        ).to.deep.equal([])
+    })
+
+    it('Symptômes passés n’affiche rien', function () {
+        var data = {
+            symptomes_passes: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
+        ).to.deep.equal([])
+    })
+
+    it('Contact à risque n’affiche rien', function () {
+        var data = {
+            contact_a_risque: true,
+        }
+        questionnaire.fillData(data)
+        chai.expect(
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
+                algorithme.getData(questionnaire)
+            )
         ).to.deep.equal([])
     })
 
@@ -340,85 +606,5 @@ describe('Algorithme caractéristiques et antécédents', function () {
             'conseils-caracteristiques-antecedents-info-risque',
             'conseils-antecedents-chroniques-autres',
         ])
-    })
-})
-
-describe('Algorithme symptômes passés', function () {
-    beforeEach(function () {
-        questionnaire.resetData()
-    })
-
-    afterEach(function () {
-        questionnaire.resetData()
-    })
-
-    it('Si pas de risques', function () {
-        var data = {
-            sup65: false,
-        }
-        questionnaire.fillData(data)
-        chai.expect(
-            algorithme.symptomesPassesBlockNamesToDisplay(
-                algorithme.getData(questionnaire)
-            )
-        ).to.deep.equal(['conseils-symptomes-passes-sans-risques'])
-    })
-
-    it('Si personne à risque', function () {
-        var data = {
-            sup65: true,
-        }
-        questionnaire.fillData(data)
-        chai.expect(
-            algorithme.symptomesPassesBlockNamesToDisplay(
-                algorithme.getData(questionnaire)
-            )
-        ).to.deep.equal(['conseils-symptomes-passes-avec-risques'])
-    })
-
-    it('Si foyer à risque', function () {
-        var data = {
-            foyer_fragile: true,
-        }
-        questionnaire.fillData(data)
-        chai.expect(
-            algorithme.symptomesPassesBlockNamesToDisplay(
-                algorithme.getData(questionnaire)
-            )
-        ).to.deep.equal(['conseils-symptomes-passes-avec-risques'])
-    })
-})
-
-describe('Algorithme contact à risque', function () {
-    beforeEach(function () {
-        questionnaire.resetData()
-    })
-
-    afterEach(function () {
-        questionnaire.resetData()
-    })
-
-    it('Si contact à risque', function () {
-        var data = {
-            contact_a_risque: true,
-        }
-        questionnaire.fillData(data)
-        chai.expect(
-            algorithme.contactARisqueBlockNamesToDisplay(
-                algorithme.getData(questionnaire)
-            )
-        ).to.deep.equal([])
-    })
-
-    it('Si contact à risque autre', function () {
-        var data = {
-            contact_a_risque_autre: true,
-        }
-        questionnaire.fillData(data)
-        chai.expect(
-            algorithme.contactARisqueBlockNamesToDisplay(
-                algorithme.getData(questionnaire)
-            )
-        ).to.deep.equal(['conseils-contact-a-risque-autre'])
     })
 })

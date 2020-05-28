@@ -222,7 +222,7 @@ var OnSubmitFormScripts = function () {
             questionnaire.contact_a_risque_meme_classe = undefined
             questionnaire.contact_a_risque_autre = undefined
             stockageLocal.enregistrer(questionnaire)
-            router.navigate('conseilssymptomesactuels')
+            router.navigate('conseils')
         } else {
             stockageLocal.enregistrer(questionnaire)
             router.navigate('symptomespasses')
@@ -243,7 +243,7 @@ var OnSubmitFormScripts = function () {
             questionnaire.contact_a_risque_meme_classe = undefined
             questionnaire.contact_a_risque_autre = undefined
             stockageLocal.enregistrer(questionnaire)
-            router.navigate('conseilssymptomespasses')
+            router.navigate('conseils')
         } else {
             stockageLocal.enregistrer(questionnaire)
             router.navigate('contactarisque')
@@ -267,11 +267,7 @@ var OnSubmitFormScripts = function () {
         questionnaire.contact_a_risque_autre =
             event.target.elements['contact_a_risque_autre'].checked
         stockageLocal.enregistrer(questionnaire)
-        if (questionnaire.contact_a_risque) {
-            router.navigate('conseilscontactarisque')
-        } else {
-            router.navigate('conseils')
-        }
+        router.navigate('conseils')
     }
 }
 

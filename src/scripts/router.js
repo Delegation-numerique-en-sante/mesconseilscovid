@@ -54,9 +54,7 @@ var redirectToUnansweredQuestions = function (page, questionnaire) {
     if (page === 'symptomesactuels') return
 
     if (questionnaire.symptomes_actuels === true)
-        return page === 'conseilssymptomesactuels'
-            ? undefined
-            : 'conseilssymptomesactuels'
+        return page === 'conseils' ? undefined : 'conseils'
 
     if (
         typeof questionnaire.symptomes_passes === 'undefined' &&
@@ -67,9 +65,7 @@ var redirectToUnansweredQuestions = function (page, questionnaire) {
     if (page === 'symptomespasses') return
 
     if (questionnaire.symptomes_passes === true)
-        return page === 'conseilssymptomespasses'
-            ? undefined
-            : 'conseilssymptomespasses'
+        return page === 'conseils' ? undefined : 'conseils'
 
     if (
         typeof questionnaire.contact_a_risque === 'undefined' &&
@@ -79,11 +75,7 @@ var redirectToUnansweredQuestions = function (page, questionnaire) {
 
     if (page === 'contactarisque') return
 
-    if (questionnaire.contact_a_risque === true)
-        return page === 'conseilscontactarisque' ? undefined : 'conseilscontactarisque'
-
-    if (questionnaire.contact_a_risque === false)
-        return page === 'conseils' ? undefined : 'conseils'
+    return page === 'conseils' ? undefined : 'conseils'
 }
 
 var loadPage = function (pageName) {
@@ -273,6 +265,9 @@ function initRouter() {
 
             var blockNames = algorithme.statutBlockNamesToDisplay(data)
             blockNames = blockNames.concat(
+                algorithme.conseilsPersonnelsBlockNamesToDisplay(data)
+            )
+            blockNames = blockNames.concat(
                 algorithme.departementBlockNamesToDisplay(data)
             )
             blockNames = blockNames.concat(
@@ -282,59 +277,15 @@ function initRouter() {
             blockNames = blockNames.concat(
                 algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(data)
             )
-
             affichage.displayBlocks(element, blockNames)
+
+            // Make the print button clickable.
             impression.setup(element)
 
             // Dynamic data injections.
             injectionScripts.departement(element, data)
             injectionScripts.caracteristiques(element, data)
             injectionScripts.antecedents(element, data)
-        })
-        .on(new RegExp('^conseilssymptomesactuels$'), function () {
-            var pageName = 'conseilssymptomesactuels'
-            var element = loadPage(pageName)
-            impression.setup(element)
-        })
-        .on(new RegExp('^conseilssymptomespasses$'), function () {
-            var pageName = 'conseilssymptomespasses'
-            var element = loadPage(pageName)
-            // Hide all conseils that might have been made visible on previous runs.
-            affichage.hideSelector(element, '.visible')
-
-            // Display appropriate conseils.
-            var data = algorithme.getData(questionnaire)
-
-            var blockNames = algorithme.symptomesPassesBlockNamesToDisplay(data)
-            blockNames = blockNames.concat(
-                algorithme.departementBlockNamesToDisplay(data)
-            )
-
-            affichage.displayBlocks(element, blockNames)
-            impression.setup(element)
-
-            // Dynamic data injections.
-            injectionScripts.departement(element, data)
-        })
-        .on(new RegExp('^conseilscontactarisque$'), function () {
-            var pageName = 'conseilscontactarisque'
-            var element = loadPage(pageName)
-            // Hide all conseils that might have been made visible on previous runs.
-            affichage.hideSelector(element, '.visible')
-
-            // Display appropriate conseils.
-            var data = algorithme.getData(questionnaire)
-
-            var blockNames = algorithme.contactARisqueBlockNamesToDisplay(data)
-            blockNames = blockNames.concat(
-                algorithme.departementBlockNamesToDisplay(data)
-            )
-
-            affichage.displayBlocks(element, blockNames)
-            impression.setup(element)
-
-            // Dynamic data injections.
-            injectionScripts.departement(element, data)
         })
         .on(new RegExp('^conditionsutilisation$'), function () {
             var pageName = 'conditionsutilisation'

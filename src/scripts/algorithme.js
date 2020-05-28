@@ -45,7 +45,9 @@ function hasSymptomes(data) {
 function statutBlockNamesToDisplay(data) {
     var blockNames = []
     // L’ordre est important car risques > foyer_fragile.
-    if (data.risques) {
+    if (data.symptomes) {
+        blockNames.push('statut-risque-eleve')
+    } else if (data.risques) {
         blockNames.push('statut-personne-fragile')
     } else if (data.foyer_fragile) {
         blockNames.push('statut-foyer-fragile')
@@ -55,8 +57,31 @@ function statutBlockNamesToDisplay(data) {
     return blockNames
 }
 
+function conseilsPersonnelsBlockNamesToDisplay(data) {
+    var blockNames = []
+    if (data.symptomes_actuels) {
+        blockNames.push('conseils-personnels-symptomes-actuels')
+    } else if (data.symptomes_passes) {
+        blockNames.push('conseils-personnels-symptomes-passes')
+        if (data.risques || data.foyer_fragile) {
+            blockNames.push('conseils-personnels-symptomes-passes-avec-risques')
+        } else {
+            blockNames.push('conseils-personnels-symptomes-passes-sans-risques')
+        }
+    } else if (data.contact_a_risque) {
+        blockNames.push('conseils-personnels-contact-a-risque')
+        if (data.contact_a_risque_autre) {
+            blockNames.push('conseils-personnels-contact-a-risque-autre')
+        }
+    }
+    return blockNames
+}
+
 function departementBlockNamesToDisplay(data) {
     var blockNames = []
+    if (data.symptomes_actuels) {
+        return []
+    }
     blockNames.push('conseils-departement')
     if (data.couleur === 'orange') {
         blockNames.push('conseils-departement-orange')
@@ -69,6 +94,9 @@ function departementBlockNamesToDisplay(data) {
 
 function activiteProBlockNamesToDisplay(data) {
     var blockNames = []
+    if (data.symptomes) {
+        return []
+    }
     if (data.activite_pro || data.activite_pro_public || data.activite_pro_sante) {
         blockNames.push('conseils-activite')
         // Les blocs de réponses sont exclusifs.
@@ -100,13 +128,19 @@ function activiteProBlockNamesToDisplay(data) {
 
 function foyerBlockNamesToDisplay(data) {
     var blockNames = []
-    if (data.foyer_enfants || data.foyer_fragile) {
+    if (data.symptomes_actuels) {
+        return []
+    }
+    if (data.symptomes_passes || data.contact_a_risque) {
+        blockNames.push('conseils-foyer')
+        blockNames.push('conseils-foyer-fragile-suivi')
+    } else if (data.foyer_enfants || data.foyer_fragile) {
         blockNames.push('conseils-foyer')
         if (data.foyer_enfants && data.foyer_fragile) {
             blockNames.push('conseils-foyer-enfants-fragile')
         } else if (data.foyer_enfants) {
             blockNames.push('conseils-foyer-enfants')
-        } /* if (data.foyer_fragile) inutile mais logique */ else {
+        } else if (data.foyer_fragile) {
             blockNames.push('conseils-foyer-fragile')
         }
     }
@@ -115,6 +149,9 @@ function foyerBlockNamesToDisplay(data) {
 
 function caracteristiquesAntecedentsBlockNamesToDisplay(data) {
     var blockNames = []
+    if (data.symptomes) {
+        return []
+    }
     if (data.risques || data.antecedent_chronique_autre) {
         blockNames.push('conseils-caracteristiques')
         // Réponses
@@ -142,31 +179,12 @@ function caracteristiquesAntecedentsBlockNamesToDisplay(data) {
     return blockNames
 }
 
-function symptomesPassesBlockNamesToDisplay(data) {
-    var blockNames = []
-    if (data.risques || data.foyer_fragile) {
-        blockNames.push('conseils-symptomes-passes-avec-risques')
-    } else {
-        blockNames.push('conseils-symptomes-passes-sans-risques')
-    }
-    return blockNames
-}
-
-function contactARisqueBlockNamesToDisplay(data) {
-    var blockNames = []
-    if (data.contact_a_risque_autre) {
-        blockNames.push('conseils-contact-a-risque-autre')
-    }
-    return blockNames
-}
-
 module.exports = {
     getData,
     statutBlockNamesToDisplay,
+    conseilsPersonnelsBlockNamesToDisplay,
     departementBlockNamesToDisplay,
     activiteProBlockNamesToDisplay,
     foyerBlockNamesToDisplay,
     caracteristiquesAntecedentsBlockNamesToDisplay,
-    symptomesPassesBlockNamesToDisplay,
-    contactARisqueBlockNamesToDisplay,
 }
