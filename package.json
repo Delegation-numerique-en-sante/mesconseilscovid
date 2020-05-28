@@ -8,5 +8,10 @@
   "dependencies": {
     "localforage": "^1.7.3",
     "navigo": "^7.1.2"
+  },
+  "scripts": {
+    "test": "mocha src/scripts/tests/",
+    "prebuild": "rm -rf dist",
+    "build": "parcel build src/index.html"
   }
 }

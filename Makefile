@@ -12,11 +12,11 @@ install:  ## Install Python and JS dependencies.
 	npm install
 
 test:  ## Run JS unit tests.
-	./node_modules/.bin/mocha src/scripts/tests/
+	npm run-script test
 
 build:  ## Build the index from `template.html` + contenus markdown files.
 	python3 build.py all
-	./node_modules/.bin/parcel build src/index.html
+	npm run-script build
 
 autobuild:  ## Serve the `src` folder _without_ `https` but with build on file change.
 	python3 autobuild.py
