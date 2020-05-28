@@ -34,7 +34,16 @@
             </div>
         </section>
         <section id="page">
-            <noscript>Ce site a besoin de JavaScript pour fonctionner.</noscript>
+            <div id="introduction-block" class="block">
+                {{ meta_introduction }}
+                <noscript>
+                    <h1>Ce site a besoin de JavaScript pour fonctionner.</h1>
+                    <p>
+                        Veuillez <a href="mailto:mesconseilscovid@sante.gouv.fr">nous contacter</a>
+                        en cas de difficulté pour utiliser le service.
+                    </p>
+                </noscript>
+            </div>
         </section>
         <footer>
             {{ meta_pied_de_page }}
