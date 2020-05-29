@@ -42,19 +42,18 @@ function hasSymptomes(data) {
     return data.symptomes_actuels || data.symptomes_passes || data.contact_a_risque
 }
 
-function statutBlockNamesToDisplay(data) {
-    var blockNames = []
+function statut(data) {
     // L’ordre est important car risques > foyer_fragile.
     if (data.symptomes) {
-        blockNames.push('statut-risque-eleve')
-    } else if (data.risques) {
-        blockNames.push('statut-personne-fragile')
-    } else if (data.foyer_fragile) {
-        blockNames.push('statut-foyer-fragile')
-    } else {
-        blockNames.push('statut-peu-de-risques')
+        return 'risque-eleve'
     }
-    return blockNames
+    if (data.risques) {
+        return 'personne-fragile'
+    }
+    if (data.foyer_fragile) {
+        return 'foyer-fragile'
+    }
+    return 'peu-de-risques'
 }
 
 function conseilsPersonnelsBlockNamesToDisplay(data) {
@@ -181,7 +180,7 @@ function caracteristiquesAntecedentsBlockNamesToDisplay(data) {
 
 module.exports = {
     getData,
-    statutBlockNamesToDisplay,
+    statut,
     conseilsPersonnelsBlockNamesToDisplay,
     departementBlockNamesToDisplay,
     activiteProBlockNamesToDisplay,

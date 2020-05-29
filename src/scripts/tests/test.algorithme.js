@@ -2,8 +2,6 @@ var chai = require('chai')
 
 var algorithme = require('../algorithme.js')
 
-// var carteDepartements = require('../carte.js')
-
 var Questionnaire = require('../questionnaire.js')
 var questionnaire = new Questionnaire()
 
@@ -19,9 +17,9 @@ describe('Algorithme statut', function () {
     it('Un profil sans risques affiche le statut par défaut', function () {
         var data = {}
         questionnaire.fillData(data)
-        chai.expect(
-            algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
-        ).to.deep.equal(['statut-peu-de-risques'])
+        chai.expect(algorithme.statut(algorithme.getData(questionnaire))).to.equal(
+            'peu-de-risques'
+        )
     })
 
     it('Un profil avec foyer à risque', function () {
@@ -29,9 +27,9 @@ describe('Algorithme statut', function () {
             foyer_fragile: true,
         }
         questionnaire.fillData(data)
-        chai.expect(
-            algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
-        ).to.deep.equal(['statut-foyer-fragile'])
+        chai.expect(algorithme.statut(algorithme.getData(questionnaire))).to.equal(
+            'foyer-fragile'
+        )
     })
 
     it('Un profil avec personne à risque', function () {
@@ -39,9 +37,9 @@ describe('Algorithme statut', function () {
             antecedent_cardio: true,
         }
         questionnaire.fillData(data)
-        chai.expect(
-            algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
-        ).to.deep.equal(['statut-personne-fragile'])
+        chai.expect(algorithme.statut(algorithme.getData(questionnaire))).to.equal(
+            'personne-fragile'
+        )
     })
 
     it('Un profil avec personne à risque + foyer à risque', function () {
@@ -50,9 +48,9 @@ describe('Algorithme statut', function () {
             foyer_fragile: true,
         }
         questionnaire.fillData(data)
-        chai.expect(
-            algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
-        ).to.deep.equal(['statut-personne-fragile'])
+        chai.expect(algorithme.statut(algorithme.getData(questionnaire))).to.equal(
+            'personne-fragile'
+        )
     })
 
     it('Un profil avec des symptômes actuels présente un risque élevé', function () {
@@ -60,9 +58,9 @@ describe('Algorithme statut', function () {
             symptomes_actuels: true,
         }
         questionnaire.fillData(data)
-        chai.expect(
-            algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
-        ).to.deep.equal(['statut-risque-eleve'])
+        chai.expect(algorithme.statut(algorithme.getData(questionnaire))).to.equal(
+            'risque-eleve'
+        )
     })
 
     it('Un profil avec des symptômes passés présente un risque élevé', function () {
@@ -70,9 +68,9 @@ describe('Algorithme statut', function () {
             symptomes_passes: true,
         }
         questionnaire.fillData(data)
-        chai.expect(
-            algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
-        ).to.deep.equal(['statut-risque-eleve'])
+        chai.expect(algorithme.statut(algorithme.getData(questionnaire))).to.equal(
+            'risque-eleve'
+        )
     })
 
     it('Un profil avec un contact à risque présente un risque élevé', function () {
@@ -80,9 +78,9 @@ describe('Algorithme statut', function () {
             contact_a_risque: true,
         }
         questionnaire.fillData(data)
-        chai.expect(
-            algorithme.statutBlockNamesToDisplay(algorithme.getData(questionnaire))
-        ).to.deep.equal(['statut-risque-eleve'])
+        chai.expect(algorithme.statut(algorithme.getData(questionnaire))).to.equal(
+            'risque-eleve'
+        )
     })
 })
 
