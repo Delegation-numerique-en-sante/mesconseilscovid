@@ -3,7 +3,7 @@ var Navigo = require('navigo')
 var affichage = require('./affichage.js')
 var conseils = require('./conseils.js')
 var formUtils = require('./formutils.js')
-var geoloc = require('./geoloc.js')
+var questionnaire = require('./questionnaire.js')
 
 var getCurrentPageName = function () {
     var hash = document.location.hash
@@ -126,114 +126,42 @@ function initRouter() {
         .on(new RegExp('^residence$'), function () {
             var pageName = 'residence'
             var form = loadPage(pageName)
-            var button = form.querySelector('input[type=submit]')
-            formUtils.preloadForm(form, 'departement')
-            formUtils.toggleFormButtonOnSelectFieldsRequired(
-                form,
-                button.value,
-                'Votre département de résidence est requis'
-            )
-            affichage.hideSelector(form, '#error-geolocalisation')
-            form.querySelector('select').addEventListener('change', function () {
-                affichage.hideSelector(form, '#error-geolocalisation')
-            })
-            form.addEventListener('submit', onSubmitFormScripts[pageName])
-            document
-                .getElementById('geolocalisation')
-                .addEventListener('click', geoloc.geolocalisation)
+            questionnaire.residence(pageName, form)
         })
         .on(new RegExp('^activitepro$'), function () {
             var pageName = 'activitepro'
             var form = loadPage(pageName)
-            var button = form.querySelector('input[type=submit]')
-            formUtils.preloadCheckboxForm(form, 'activite_pro')
-            formUtils.preloadCheckboxForm(form, 'activite_pro_public')
-            formUtils.preloadCheckboxForm(form, 'activite_pro_sante')
-            var primary = form.elements['activite_pro']
-            formUtils.enableOrDisableSecondaryFields(form, primary)
-            primary.addEventListener('click', function () {
-                formUtils.enableOrDisableSecondaryFields(form, primary)
-            })
-            formUtils.toggleFormButtonOnCheck(form, button.value, 'Continuer')
-            form.addEventListener('submit', onSubmitFormScripts[pageName])
+            questionnaire.activitepro(pageName, form)
         })
         .on(new RegExp('^foyer$'), function () {
             var pageName = 'foyer'
             var form = loadPage(pageName)
-            formUtils.preloadCheckboxForm(form, 'foyer_enfants')
-            formUtils.preloadCheckboxForm(form, 'foyer_fragile')
-            form.addEventListener('submit', onSubmitFormScripts[pageName])
+            questionnaire.foyer(pageName, form)
         })
         .on(new RegExp('^caracteristiques$'), function () {
             var pageName = 'caracteristiques'
             var form = loadPage(pageName)
-            var button = form.querySelector('input[type=submit]')
-            formUtils.preloadCheckboxForm(form, 'sup65')
-            formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre')
-            formUtils.preloadForm(form, 'taille')
-            formUtils.preloadForm(form, 'poids')
-            formUtils.toggleFormButtonOnTextFieldsRequired(
-                form,
-                button.value,
-                'Les informations de poids et de taille sont requises'
-            )
-            form.addEventListener('submit', onSubmitFormScripts[pageName])
+            questionnaire.caracteristiques(pageName, form)
         })
         .on(new RegExp('^antecedents$'), function () {
             var pageName = 'antecedents'
             var form = loadPage(pageName)
-            var button = form.querySelector('input[type=submit]')
-            formUtils.preloadCheckboxForm(form, 'antecedent_cardio')
-            formUtils.preloadCheckboxForm(form, 'antecedent_diabete')
-            formUtils.preloadCheckboxForm(form, 'antecedent_respi')
-            formUtils.preloadCheckboxForm(form, 'antecedent_dialyse')
-            formUtils.preloadCheckboxForm(form, 'antecedent_cancer')
-            formUtils.preloadCheckboxForm(form, 'antecedent_immunodep')
-            formUtils.preloadCheckboxForm(form, 'antecedent_cirrhose')
-            formUtils.preloadCheckboxForm(form, 'antecedent_drepano')
-            formUtils.preloadCheckboxForm(form, 'antecedent_chronique_autre')
-            formUtils.toggleFormButtonOnCheck(form, button.value, 'Continuer')
-            form.addEventListener('submit', onSubmitFormScripts[pageName])
+            questionnaire.antecedents(pageName, form)
         })
         .on(new RegExp('^symptomesactuels$'), function () {
             var pageName = 'symptomesactuels'
             var form = loadPage(pageName)
-            var button = form.querySelector('input[type=submit]')
-            formUtils.preloadCheckboxForm(form, 'symptomes_actuels')
-            formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
-            form.addEventListener('submit', onSubmitFormScripts[pageName])
+            questionnaire.symptomesactuels(pageName, form)
         })
         .on(new RegExp('^symptomespasses$'), function () {
             var pageName = 'symptomespasses'
             var form = loadPage(pageName)
-            var button = form.querySelector('input[type=submit]')
-            formUtils.preloadCheckboxForm(form, 'symptomes_passes')
-            formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
-            form.addEventListener('submit', onSubmitFormScripts[pageName])
+            questionnaire.symptomespasses(pageName, form)
         })
         .on(new RegExp('^contactarisque$'), function () {
             var pageName = 'contactarisque'
             var form = loadPage(pageName)
-            var button = form.querySelector('input[type=submit]')
-            formUtils.preloadCheckboxForm(form, 'contact_a_risque')
-            formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_lieu_de_vie')
-            formUtils.preloadCheckboxForm(form, 'contact_a_risque_contact_direct')
-            formUtils.preloadCheckboxForm(form, 'contact_a_risque_actes')
-            formUtils.preloadCheckboxForm(form, 'contact_a_risque_espace_confine')
-            formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_classe')
-            formUtils.preloadCheckboxForm(form, 'contact_a_risque_autre')
-            var primary = form.elements['contact_a_risque']
-            formUtils.enableOrDisableSecondaryFields(form, primary)
-            primary.addEventListener('click', function () {
-                formUtils.enableOrDisableSecondaryFields(form, primary)
-            })
-            formUtils.toggleFormButtonOnCheckRequired(
-                form,
-                button.value,
-                'Terminer',
-                'Vous devez saisir l’un des sous-choix proposés'
-            )
-            form.addEventListener('submit', onSubmitFormScripts[pageName])
+            questionnaire.contactarisque(pageName, form)
         })
         .on(new RegExp('^conseils$'), function () {
             var pageName = 'conseils'
