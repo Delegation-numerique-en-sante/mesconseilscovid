@@ -2,6 +2,7 @@ var Navigo = require('navigo')
 
 var affichage = require('./affichage.js')
 var algorithme = require('./algorithme.js')
+var conseils = require('./conseils.js')
 var impression = require('./impression.js')
 var geoloc = require('./geoloc.js')
 
@@ -263,7 +264,7 @@ function initRouter() {
             // Display appropriate conseils.
             var data = algorithme.getData(questionnaire)
 
-            var blockNames = algorithme.statutBlockNamesToDisplay(data)
+            var blockNames = conseils.statutBlockNamesToDisplay(data)
             blockNames = blockNames.concat(
                 algorithme.conseilsPersonnelsBlockNamesToDisplay(data)
             )
