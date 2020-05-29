@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-05-29
+
+* correction d’un lien cassé vers le site gouvernement.fr
+* correction d’un bug sur la géolocalisation
+
 ## 2020-05-28
 
 * ajout d’un bouton pour imprimer ses conseils
