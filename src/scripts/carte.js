@@ -339,8 +339,6 @@ var _liens_prefectures = {
         'http://www.haute-savoie.gouv.fr/Actualites/Actualites/Coronavirus-Covid-19/Strategie-nationale-locale-du-plan-de-deconfinement',
     '75':
         'https://www.prefectures-regions.gouv.fr/ile-de-france/Actualites/Strategie-locale-de-deconfinement',
-    '75':
-        'https://www.prefecturedepolice.interieur.gouv.fr/Nous-connaitre/Actualites/Prevention/Strategie-locale-de-deconfinement',
     '76':
         'http://www.seine-maritime.gouv.fr/Actualites/COVID-19/Covid-19-Strategie-de-deconfinement-progressif-Economie-Ecoles-Informations-Reglementation',
     '77':

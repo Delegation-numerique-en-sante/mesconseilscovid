@@ -4,6 +4,7 @@ function hideElement(element) {
 }
 
 function hideSelector(element, selector) {
+    // eslint-disable-next-line no-extra-semi
     ;[].forEach.call(element.querySelectorAll(selector), hideElement)
 }
 

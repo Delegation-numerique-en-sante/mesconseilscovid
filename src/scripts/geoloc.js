@@ -7,10 +7,11 @@ var Geolocaliseur = function () {
         this.loadMap(function (featureCollection) {
             var notFound = true
             featureCollection.features.forEach(function (departement) {
+                var polyCoordinates
                 if (departement.geometry.type === 'Polygon') {
-                    var polyCoordinates = [departement.geometry.coordinates]
+                    polyCoordinates = [departement.geometry.coordinates]
                 } else {
-                    var polyCoordinates = departement.geometry.coordinates
+                    polyCoordinates = departement.geometry.coordinates
                 }
                 polyCoordinates.forEach(function (polyCoordinate) {
                     polyCoordinate.forEach(function (coord) {

@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "chai": "^4.2.0",
+    "eslint": "^7.1.0",
     "mocha": "^7.2.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-html-externals": "^0.2.0",
@@ -12,6 +13,7 @@
   },
   "scripts": {
     "test": "mocha src/scripts/tests/",
+    "lint": "eslint src/scripts/",
     "prebuild": "rm -rf dist",
     "build": "parcel build src/index.html"
   },

@@ -5,7 +5,7 @@ module.exports = {
             event.preventDefault()
             try {
                 window.print()
-            } catch {
+            } catch (e) {
                 alert('Cette fonctionnalité n’est pas présente sur votre appareil')
             }
         })

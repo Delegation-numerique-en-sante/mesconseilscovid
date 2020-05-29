@@ -1,6 +1,5 @@
 require('./polyfills/custom_event.js')
 
-var CarteDepartements = require('./carte.js')
 var Updater = require('./updater.js')
 var Questionnaire = require('./questionnaire.js')
 var StockageLocal = require('./stockage.js')
@@ -23,7 +22,7 @@ var FormUtils = function () {
     this.toggleFormButtonOnCheck = function (form, initialLabel, alternateLabel) {
         var button = form.querySelector('input[type=submit]')
         var checkboxes = [].slice.call(form.querySelectorAll('input[type=checkbox]'))
-        function updateSubmitButtonLabel(event) {
+        function updateSubmitButtonLabel() {
             var hasChecks = checkboxes.some(function (checkbox) {
                 return checkbox.checked
             })
@@ -47,7 +46,7 @@ var FormUtils = function () {
             form.querySelectorAll('.secondary input[type=checkbox]')
         )
 
-        function updateSubmitButtonLabelRequired(event) {
+        function updateSubmitButtonLabelRequired() {
             var hasChecks = checkboxes.some(function (checkbox) {
                 return checkbox.checked
             })
@@ -77,7 +76,7 @@ var FormUtils = function () {
         var button = form.querySelector('input[type=submit]')
         var textFields = [].slice.call(form.querySelectorAll('input[type=text]'))
 
-        function updateSubmitButtonLabelRequired(event) {
+        function updateSubmitButtonLabelRequired() {
             var allFilled = textFields.every(function (textField) {
                 return textField.value !== ''
             })
@@ -98,7 +97,7 @@ var FormUtils = function () {
         var button = form.querySelector('input[type=submit]')
         var selectFields = [].slice.call(form.querySelectorAll('select'))
 
-        function updateSubmitButtonLabelRequired(event) {
+        function updateSubmitButtonLabelRequired() {
             var allFilled = selectFields.every(function (selectField) {
                 return selectField.value !== selectField.options[0].value
             })
@@ -276,7 +275,7 @@ window.onSubmitFormScripts = new OnSubmitFormScripts()
 var Router = require('./router.js')
 window.router = Router.initRouter()
 ;(function () {
-    document.addEventListener('dataLoaded', function (event) {
+    document.addEventListener('dataLoaded', function () {
         router.resolve()
         updater.checkForUpdatesEvery(10) // Minutes.
     })
