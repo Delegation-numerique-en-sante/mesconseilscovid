@@ -1,7 +1,6 @@
 var Navigo = require('navigo')
 
 var affichage = require('./affichage.js')
-var algorithme = require('./algorithme.js')
 var conseils = require('./conseils.js')
 var geoloc = require('./geoloc.js')
 
@@ -101,7 +100,7 @@ function initRouter() {
     }
 
     router.hooks({
-        before: function (done, params) {
+        before: function (done) {
             // Global hook to redirect on the correct page given registered data.
             var requestedPage = getCurrentPageName() || 'introduction'
             var redirectedPage = redirectToUnansweredQuestions(
@@ -113,7 +112,7 @@ function initRouter() {
             }
             done()
         },
-        after: function (params) {
+        after: function () {
             // Global hook to send a custom event on each page change.
             var pageName = getCurrentPageName()
             var customPageEvent = document.createEvent('CustomEvent')
@@ -261,11 +260,11 @@ function initRouter() {
         })
         .on(new RegExp('^conditionsutilisation$'), function () {
             var pageName = 'conditionsutilisation'
-            var element = loadPage(pageName)
+            loadPage(pageName)
         })
         .on(new RegExp('^nouvelleversiondisponible$'), function () {
             var pageName = 'nouvelleversiondisponible'
-            var element = loadPage(pageName)
+            loadPage(pageName)
         })
         .notFound(function () {
             router.navigate('introduction')

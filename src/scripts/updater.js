@@ -1,4 +1,5 @@
 var Router = require('./router.js')
+var affichage = require('./affichage.js')
 
 module.exports = function () {
     this.checkForUpdatesEvery = function (intervalInMinutes) {
@@ -53,7 +54,7 @@ module.exports = function () {
             } else {
                 document.addEventListener(
                     'pageChanged:nouvelleversiondisponible',
-                    function (event) {
+                    function () {
                         var refreshButton = document.querySelector(
                             '#nouvelle-version-disponible-block #refresh-button'
                         )
@@ -69,7 +70,7 @@ module.exports = function () {
         }
     }
 
-    this.forceReloadCurrentPageWithHash = function (event) {
+    this.forceReloadCurrentPageWithHash = function () {
         // This one is tricky: we let the browser go to the anchor we just set
         // (no preventDefault) and just after that (timeout=1) we reload the
         // page with `true` parameter == reload from server.

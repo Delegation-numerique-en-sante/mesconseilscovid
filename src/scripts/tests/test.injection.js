@@ -3,14 +3,8 @@ var chai = require('chai')
 var jsdom = require('jsdom')
 var { JSDOM } = jsdom
 
-var affichage = require('../affichage.js')
-
 var algorithme = require('../algorithme.js')
-
-var carteDepartements = require('../carte.js')
-
 var injection = require('../injection.js')
-
 var Questionnaire = require('../questionnaire.js')
 var questionnaire = new Questionnaire()
 
@@ -34,9 +28,9 @@ describe('Injection', function () {
             departement: '01',
         }
         questionnaire.fillData(data)
-        var data = algorithme.getData(questionnaire)
 
-        injection.departement(element, data)
+        var computedData = algorithme.getData(questionnaire)
+        injection.departement(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
             <strong id="nom-departement">Ain</strong>
@@ -54,9 +48,9 @@ describe('Injection', function () {
             sup65: true,
         }
         questionnaire.fillData(data)
-        var data = algorithme.getData(questionnaire)
 
-        injection.caracteristiques(element, data)
+        var computedData = algorithme.getData(questionnaire)
+        injection.caracteristiques(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
             <strong id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans.</strong>
@@ -73,9 +67,9 @@ describe('Injection', function () {
             grossesse_3e_trimestre: true,
         }
         questionnaire.fillData(data)
-        var data = algorithme.getData(questionnaire)
 
-        injection.caracteristiques(element, data)
+        var computedData = algorithme.getData(questionnaire)
+        injection.caracteristiques(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
             <strong id="nom-caracteristiques">vous êtes au 3e trimestre de votre grossesse.</strong>
@@ -93,9 +87,9 @@ describe('Injection', function () {
             grossesse_3e_trimestre: true,
         }
         questionnaire.fillData(data)
-        var data = algorithme.getData(questionnaire)
 
-        injection.caracteristiques(element, data)
+        var computedData = algorithme.getData(questionnaire)
+        injection.caracteristiques(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
             <strong id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans.</strong>
@@ -113,9 +107,9 @@ describe('Injection', function () {
             poids: 150,
         }
         questionnaire.fillData(data)
-        var data = algorithme.getData(questionnaire)
 
-        injection.caracteristiques(element, data)
+        var computedData = algorithme.getData(questionnaire)
+        injection.caracteristiques(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
             <strong id="nom-caracteristiques">vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</strong>
@@ -134,9 +128,9 @@ describe('Injection', function () {
             poids: 150,
         }
         questionnaire.fillData(data)
-        var data = algorithme.getData(questionnaire)
 
-        injection.caracteristiques(element, data)
+        var computedData = algorithme.getData(questionnaire)
+        injection.caracteristiques(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
             <strong id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</strong>
@@ -155,9 +149,9 @@ describe('Injection', function () {
             poids: 150,
         }
         questionnaire.fillData(data)
-        var data = algorithme.getData(questionnaire)
 
-        injection.caracteristiques(element, data)
+        var computedData = algorithme.getData(questionnaire)
+        injection.caracteristiques(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
             <strong id="nom-caracteristiques">vous êtes au 3e trimestre de votre grossesse et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</strong>
@@ -174,9 +168,9 @@ describe('Injection', function () {
             antecedent_cardio: true,
         }
         questionnaire.fillData(data)
-        var data = algorithme.getData(questionnaire)
 
-        injection.antecedents(element, data)
+        var computedData = algorithme.getData(questionnaire)
+        injection.antecedents(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
             <strong id="nom-antecedents">vous avez des antécédents à risque.</strong>
@@ -193,9 +187,9 @@ describe('Injection', function () {
             antecedent_chronique_autre: true,
         }
         questionnaire.fillData(data)
-        var data = algorithme.getData(questionnaire)
 
-        injection.antecedents(element, data)
+        var computedData = algorithme.getData(questionnaire)
+        injection.antecedents(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
             <strong id="nom-antecedents">vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</strong>
@@ -213,9 +207,9 @@ describe('Injection', function () {
             antecedent_chronique_autre: true,
         }
         questionnaire.fillData(data)
-        var data = algorithme.getData(questionnaire)
 
-        injection.antecedents(element, data)
+        var computedData = algorithme.getData(questionnaire)
+        injection.antecedents(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
             <strong id="nom-antecedents">vous avez des antécédents à risque et vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</strong>

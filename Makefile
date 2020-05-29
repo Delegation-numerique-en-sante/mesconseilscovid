@@ -17,6 +17,9 @@ install:  ## Install Python and JS dependencies.
 test:  ## Run JS unit tests.
 	npm run-script test
 
+lint:  ## Run ESLint.
+	npm run-script lint
+
 build:  ## Build the index from `template.html` + contenus markdown files.
 	python3 build.py all
 	npm run-script build
