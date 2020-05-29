@@ -1,4 +1,5 @@
 var affichage = require('./affichage.js')
+var departements = require('../departements-1000m.geojson')
 
 var Geolocaliseur = function () {
     this.matchDepartement = function (lat, lon, departementFound, departementNotFound) {
@@ -28,7 +29,7 @@ var Geolocaliseur = function () {
     this.loadMap = function (callback) {
         var xhr = new XMLHttpRequest()
         xhr.overrideMimeType('application/json')
-        xhr.open('GET', 'departements-1000m.geojson', true)
+        xhr.open('GET', departements, true)
         xhr.onload = function () {
             var jsonResponse = JSON.parse(xhr.responseText)
             callback(jsonResponse)
