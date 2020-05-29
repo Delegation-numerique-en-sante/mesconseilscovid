@@ -1,18 +1,18 @@
-function preloadForm (form, key) {
-    var value = questionnaire.getData()[key]
+function preloadForm(form, key) {
+    var value = profil.getData()[key]
     if (typeof value !== 'undefined' && value !== '') {
         form[key].value = value
     }
 }
 
-function preloadCheckboxForm (form, key) {
-    var value = questionnaire.getData()[key]
+function preloadCheckboxForm(form, key) {
+    var value = profil.getData()[key]
     if (typeof value !== 'undefined' && value) {
         form[key].checked = true
     }
 }
 
-function toggleFormButtonOnCheck (form, initialLabel, alternateLabel) {
+function toggleFormButtonOnCheck(form, initialLabel, alternateLabel) {
     var button = form.querySelector('input[type=submit]')
     var checkboxes = [].slice.call(form.querySelectorAll('input[type=checkbox]'))
     function updateSubmitButtonLabel() {
@@ -27,7 +27,7 @@ function toggleFormButtonOnCheck (form, initialLabel, alternateLabel) {
     })
 }
 
-function toggleFormButtonOnCheckRequired (
+function toggleFormButtonOnCheckRequired(
     form,
     initialLabel,
     alternateLabel,
@@ -61,7 +61,7 @@ function toggleFormButtonOnCheckRequired (
     })
 }
 
-function toggleFormButtonOnTextFieldsRequired (form, initialLabel, requiredLabel) {
+function toggleFormButtonOnTextFieldsRequired(form, initialLabel, requiredLabel) {
     var button = form.querySelector('input[type=submit]')
     var textFields = [].slice.call(form.querySelectorAll('input[type=text]'))
 
@@ -78,7 +78,7 @@ function toggleFormButtonOnTextFieldsRequired (form, initialLabel, requiredLabel
     })
 }
 
-function toggleFormButtonOnSelectFieldsRequired (form, initialLabel, requiredLabel) {
+function toggleFormButtonOnSelectFieldsRequired(form, initialLabel, requiredLabel) {
     var button = form.querySelector('input[type=submit]')
     var selectFields = [].slice.call(form.querySelectorAll('select'))
 
@@ -95,7 +95,7 @@ function toggleFormButtonOnSelectFieldsRequired (form, initialLabel, requiredLab
     })
 }
 
-function enableOrDisableSecondaryFields (form, primary) {
+function enableOrDisableSecondaryFields(form, primary) {
     var primaryDisabled = !primary.checked
     ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
         var secondary = elem.querySelector('input')

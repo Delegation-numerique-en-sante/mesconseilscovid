@@ -10,67 +10,54 @@ var getCurrentPageName = function () {
     return hash ? hash.slice(1) : ''
 }
 
-var redirectToUnansweredQuestions = function (page, questionnaire) {
+var redirectToUnansweredQuestions = function (page, profil) {
     if (page === 'introduction') return
     if (page === 'conditionsutilisation') return
     if (page === 'nouvelleversiondisponible') return
 
     // Questions obligatoires
 
-    if (typeof questionnaire.departement === 'undefined' && page !== 'residence')
+    if (typeof profil.departement === 'undefined' && page !== 'residence')
         return 'introduction' // aucune réponse = retour à l’accueil
 
     if (page === 'residence') return
 
-    if (typeof questionnaire.activite_pro === 'undefined' && page !== 'activitepro')
+    if (typeof profil.activite_pro === 'undefined' && page !== 'activitepro')
         return 'activitepro'
 
     if (page === 'activitepro') return
 
-    if (typeof questionnaire.foyer_enfants === 'undefined' && page !== 'foyer')
-        return 'foyer'
+    if (typeof profil.foyer_enfants === 'undefined' && page !== 'foyer') return 'foyer'
 
     if (page === 'foyer') return
 
-    if (typeof questionnaire.sup65 === 'undefined' && page !== 'caracteristiques')
+    if (typeof profil.sup65 === 'undefined' && page !== 'caracteristiques')
         return 'caracteristiques'
 
     if (page === 'caracteristiques') return
 
-    if (
-        typeof questionnaire.antecedent_cardio === 'undefined' &&
-        page !== 'antecedents'
-    )
+    if (typeof profil.antecedent_cardio === 'undefined' && page !== 'antecedents')
         return 'antecedents'
 
     if (page === 'antecedents') return
 
-    if (
-        typeof questionnaire.symptomes_actuels === 'undefined' &&
-        page !== 'symptomesactuels'
-    )
+    if (typeof profil.symptomes_actuels === 'undefined' && page !== 'symptomesactuels')
         return 'symptomesactuels'
 
     if (page === 'symptomesactuels') return
 
-    if (questionnaire.symptomes_actuels === true)
+    if (profil.symptomes_actuels === true)
         return page === 'conseils' ? undefined : 'conseils'
 
-    if (
-        typeof questionnaire.symptomes_passes === 'undefined' &&
-        page !== 'symptomespasses'
-    )
+    if (typeof profil.symptomes_passes === 'undefined' && page !== 'symptomespasses')
         return 'symptomespasses'
 
     if (page === 'symptomespasses') return
 
-    if (questionnaire.symptomes_passes === true)
+    if (profil.symptomes_passes === true)
         return page === 'conseils' ? undefined : 'conseils'
 
-    if (
-        typeof questionnaire.contact_a_risque === 'undefined' &&
-        page !== 'contactarisque'
-    )
+    if (typeof profil.contact_a_risque === 'undefined' && page !== 'contactarisque')
         return 'contactarisque'
 
     if (page === 'contactarisque') return
@@ -104,10 +91,7 @@ function initRouter() {
         before: function (done) {
             // Global hook to redirect on the correct page given registered data.
             var requestedPage = getCurrentPageName() || 'introduction'
-            var redirectedPage = redirectToUnansweredQuestions(
-                requestedPage,
-                questionnaire
-            )
+            var redirectedPage = redirectToUnansweredQuestions(requestedPage, profil)
             if (redirectedPage) {
                 router.navigate(redirectedPage)
             }
@@ -131,14 +115,11 @@ function initRouter() {
         .on(new RegExp('^introduction$'), function () {
             var pageName = 'introduction'
             var element = loadPage(pageName)
-            if (questionnaire.isComplete()) {
-                affichage.displayElement(element, 'js-questionnaire-full')
-                affichage.hideElement(element.querySelector('#js-questionnaire-empty'))
+            if (profil.isComplete()) {
+                affichage.displayElement(element, 'js-store-full')
+                affichage.hideElement(element.querySelector('#js-store-empty'))
                 var mesConseilsLink = element.querySelector('#mes-conseils-link')
-                var target = redirectToUnansweredQuestions(
-                    'findCorrectExit',
-                    questionnaire
-                )
+                var target = redirectToUnansweredQuestions('findCorrectExit', profil)
                 mesConseilsLink.setAttribute('href', '#' + target)
             }
         })
@@ -257,7 +238,7 @@ function initRouter() {
         .on(new RegExp('^conseils$'), function () {
             var pageName = 'conseils'
             var element = loadPage(pageName)
-            conseils(element, questionnaire)
+            conseils(element, profil)
         })
         .on(new RegExp('^conditionsutilisation$'), function () {
             var pageName = 'conditionsutilisation'

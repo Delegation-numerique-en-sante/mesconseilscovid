@@ -5,16 +5,16 @@ var { JSDOM } = jsdom
 
 var algorithme = require('../algorithme.js')
 var injection = require('../injection.js')
-var Questionnaire = require('../questionnaire.js')
-var questionnaire = new Questionnaire()
+var Profil = require('../profil.js')
+var profil = new Profil()
 
 describe('Injection', function () {
     beforeEach(function () {
-        questionnaire.resetData()
+        profil.resetData()
     })
 
     afterEach(function () {
-        questionnaire.resetData()
+        profil.resetData()
     })
 
     it('Départements', function () {
@@ -27,9 +27,9 @@ describe('Injection', function () {
         var data = {
             departement: '01',
         }
-        questionnaire.fillData(data)
+        profil.fillData(data)
 
-        var computedData = algorithme.getData(questionnaire)
+        var computedData = algorithme.getData(profil)
         injection.departement(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
@@ -47,9 +47,9 @@ describe('Injection', function () {
         var data = {
             sup65: true,
         }
-        questionnaire.fillData(data)
+        profil.fillData(data)
 
-        var computedData = algorithme.getData(questionnaire)
+        var computedData = algorithme.getData(profil)
         injection.caracteristiques(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
@@ -66,9 +66,9 @@ describe('Injection', function () {
         var data = {
             grossesse_3e_trimestre: true,
         }
-        questionnaire.fillData(data)
+        profil.fillData(data)
 
-        var computedData = algorithme.getData(questionnaire)
+        var computedData = algorithme.getData(profil)
         injection.caracteristiques(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
@@ -86,9 +86,9 @@ describe('Injection', function () {
             sup65: true,
             grossesse_3e_trimestre: true,
         }
-        questionnaire.fillData(data)
+        profil.fillData(data)
 
-        var computedData = algorithme.getData(questionnaire)
+        var computedData = algorithme.getData(profil)
         injection.caracteristiques(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
@@ -106,9 +106,9 @@ describe('Injection', function () {
             taille: 150,
             poids: 150,
         }
-        questionnaire.fillData(data)
+        profil.fillData(data)
 
-        var computedData = algorithme.getData(questionnaire)
+        var computedData = algorithme.getData(profil)
         injection.caracteristiques(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
@@ -127,9 +127,9 @@ describe('Injection', function () {
             taille: 150,
             poids: 150,
         }
-        questionnaire.fillData(data)
+        profil.fillData(data)
 
-        var computedData = algorithme.getData(questionnaire)
+        var computedData = algorithme.getData(profil)
         injection.caracteristiques(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
@@ -148,9 +148,9 @@ describe('Injection', function () {
             taille: 150,
             poids: 150,
         }
-        questionnaire.fillData(data)
+        profil.fillData(data)
 
-        var computedData = algorithme.getData(questionnaire)
+        var computedData = algorithme.getData(profil)
         injection.caracteristiques(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
@@ -167,9 +167,9 @@ describe('Injection', function () {
         var data = {
             antecedent_cardio: true,
         }
-        questionnaire.fillData(data)
+        profil.fillData(data)
 
-        var computedData = algorithme.getData(questionnaire)
+        var computedData = algorithme.getData(profil)
         injection.antecedents(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
@@ -186,9 +186,9 @@ describe('Injection', function () {
         var data = {
             antecedent_chronique_autre: true,
         }
-        questionnaire.fillData(data)
+        profil.fillData(data)
 
-        var computedData = algorithme.getData(questionnaire)
+        var computedData = algorithme.getData(profil)
         injection.antecedents(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
@@ -206,9 +206,9 @@ describe('Injection', function () {
             antecedent_cardio: true,
             antecedent_chronique_autre: true,
         }
-        questionnaire.fillData(data)
+        profil.fillData(data)
 
-        var computedData = algorithme.getData(questionnaire)
+        var computedData = algorithme.getData(profil)
         injection.antecedents(element, computedData)
 
         chai.expect(element.innerHTML).to.equal(`
