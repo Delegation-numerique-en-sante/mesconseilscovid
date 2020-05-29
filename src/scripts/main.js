@@ -275,9 +275,6 @@ window.onSubmitFormScripts = new OnSubmitFormScripts()
 
 var Router = require('./router.js')
 window.router = Router.initRouter()
-
-var InjectionScripts = require('./injection.js')
-window.injectionScripts = new InjectionScripts()
 ;(function () {
     document.addEventListener('dataLoaded', function (event) {
         router.resolve()

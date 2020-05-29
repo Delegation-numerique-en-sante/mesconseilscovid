@@ -1,8 +1,8 @@
 var affichage = require('./affichage.js')
 var carteDepartements = require('./carte.js')
 
-module.exports = function () {
-    this.departement = function (element, data) {
+module.exports = {
+    departement: function (element, data) {
         affichage.injectContent(
             element,
             carteDepartements.nom(data.departement),
@@ -14,9 +14,9 @@ module.exports = function () {
             carteDepartements.lien_prefecture(data.departement),
             '#lien-prefecture'
         )
-    }
+    },
 
-    this.caracteristiques = function (element, data) {
+    caracteristiques: function (element, data) {
         if (data.sup65 || data.grossesse_3e_trimestre || data.imc > 30) {
             var content = ''
             if (data.sup65) {
@@ -34,9 +34,9 @@ module.exports = function () {
             content += '.'
             affichage.injectContent(element, content, '#nom-caracteristiques')
         }
-    }
+    },
 
-    this.antecedents = function (element, data) {
+    antecedents: function (element, data) {
         if (data.antecedents || data.antecedent_chronique_autre) {
             var content = ''
             if (data.antecedents) {
@@ -53,5 +53,5 @@ module.exports = function () {
             content += '.'
             affichage.injectContent(element, content, '#nom-antecedents')
         }
-    }
+    },
 }
