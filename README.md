@@ -35,20 +35,24 @@ $ make install
 $ make build
 ```
 
-### Lancer un serveur local sur https (pour la géolocalisation)
+### Lancer un serveur local
 
-Pour lancer un serveur local sur [https://localhost:8443/](https://localhost:8443/) :
+Ce serveur reconstruit automatiquement le site en cas de modification des fichiers source, et utilise LiveReload pour recharger automatiquement la page dans le navigateur (pratique lorsqu’on édite les contenus).
+
+Pour lancer ce serveur local sur [http://0.0.0.0:5500/](http://0.0.0.0:5500/) :
 
 ```
 $ make serve
 ```
 
-### Lancer un serveur local qui build automatiquement (si édition de fichiers markdown)
+### Lancer un serveur local en HTTPS
 
-Pour lancer ce serveur local sur [http://127.0.0.1:5500/](http://127.0.0.1:5500/) :
+Activer HTTPS permet de tester la géolocalisation, mais ne permet plus d’utiliser LiveReload, il faudra donc recharger manuellement la page dans le navigateur en cas de modification.
+
+Pour lancer ce serveur local sur [https://0.0.0.0:8443/](https://0.0.0.0:8443/) :
 
 ```
-$ make autobuild
+$ make serve-ssl
 ```
 
 ### Lancer les tests
