@@ -3,7 +3,6 @@ var Navigo = require('navigo')
 var affichage = require('./affichage.js')
 var algorithme = require('./algorithme.js')
 var conseils = require('./conseils.js')
-var impression = require('./impression.js')
 var geoloc = require('./geoloc.js')
 
 var getCurrentPageName = function () {
@@ -258,35 +257,7 @@ function initRouter() {
         .on(new RegExp('^conseils$'), function () {
             var pageName = 'conseils'
             var element = loadPage(pageName)
-            // Hide all conseils that might have been made visible on previous runs.
-            affichage.hideSelector(element, '.visible')
-
-            // Display appropriate conseils.
-            var data = algorithme.getData(questionnaire)
-
-            var blockNames = conseils.statutBlockNamesToDisplay(data)
-            blockNames = blockNames.concat(
-                algorithme.conseilsPersonnelsBlockNamesToDisplay(data)
-            )
-            blockNames = blockNames.concat(
-                algorithme.departementBlockNamesToDisplay(data)
-            )
-            blockNames = blockNames.concat(
-                algorithme.activiteProBlockNamesToDisplay(data)
-            )
-            blockNames = blockNames.concat(algorithme.foyerBlockNamesToDisplay(data))
-            blockNames = blockNames.concat(
-                algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(data)
-            )
-            affichage.displayBlocks(element, blockNames)
-
-            // Make the print button clickable.
-            impression.setup(element)
-
-            // Dynamic data injections.
-            injectionScripts.departement(element, data)
-            injectionScripts.caracteristiques(element, data)
-            injectionScripts.antecedents(element, data)
+            conseils(element, questionnaire)
         })
         .on(new RegExp('^conditionsutilisation$'), function () {
             var pageName = 'conditionsutilisation'
