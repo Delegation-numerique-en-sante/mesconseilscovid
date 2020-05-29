@@ -126,42 +126,42 @@ function initRouter() {
         .on(new RegExp('^residence$'), function () {
             var pageName = 'residence'
             var form = loadPage(pageName)
-            questionnaire.residence(pageName, form)
+            questionnaire.residence(form, profil, stockageLocal, router)
         })
         .on(new RegExp('^activitepro$'), function () {
             var pageName = 'activitepro'
             var form = loadPage(pageName)
-            questionnaire.activitepro(pageName, form)
+            questionnaire.activitepro(form, profil, stockageLocal, router)
         })
         .on(new RegExp('^foyer$'), function () {
             var pageName = 'foyer'
             var form = loadPage(pageName)
-            questionnaire.foyer(pageName, form)
+            questionnaire.foyer(form, profil, stockageLocal, router)
         })
         .on(new RegExp('^caracteristiques$'), function () {
             var pageName = 'caracteristiques'
             var form = loadPage(pageName)
-            questionnaire.caracteristiques(pageName, form)
+            questionnaire.caracteristiques(form, profil, stockageLocal, router)
         })
         .on(new RegExp('^antecedents$'), function () {
             var pageName = 'antecedents'
             var form = loadPage(pageName)
-            questionnaire.antecedents(pageName, form)
+            questionnaire.antecedents(form, profil, stockageLocal, router)
         })
         .on(new RegExp('^symptomesactuels$'), function () {
             var pageName = 'symptomesactuels'
             var form = loadPage(pageName)
-            questionnaire.symptomesactuels(pageName, form)
+            questionnaire.symptomesactuels(form, profil, stockageLocal, router)
         })
         .on(new RegExp('^symptomespasses$'), function () {
             var pageName = 'symptomespasses'
             var form = loadPage(pageName)
-            questionnaire.symptomespasses(pageName, form)
+            questionnaire.symptomespasses(form, profil, stockageLocal, router)
         })
         .on(new RegExp('^contactarisque$'), function () {
             var pageName = 'contactarisque'
             var form = loadPage(pageName)
-            questionnaire.contactarisque(pageName, form)
+            questionnaire.contactarisque(form, profil, stockageLocal, router)
         })
         .on(new RegExp('^conseils$'), function () {
             var pageName = 'conseils'
