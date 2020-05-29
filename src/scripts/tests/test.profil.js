@@ -1,19 +1,19 @@
 var chai = require('chai')
 
-var Questionnaire = require('../questionnaire.js')
-var questionnaire = new Questionnaire()
+var Profil = require('../profil.js')
+var profil = new Profil()
 
-describe('Questionnaire', function () {
+describe('Profil', function () {
     beforeEach(function () {
-        questionnaire.resetData()
+        profil.resetData()
     })
 
     afterEach(function () {
-        questionnaire.resetData()
+        profil.resetData()
     })
 
     it('Le questionnaire est vide par défaut', function () {
-        chai.expect(questionnaire.getData()).to.deep.equal({
+        chai.expect(profil.getData()).to.deep.equal({
             departement: undefined,
             activite_pro: undefined,
             activite_pro_public: undefined,
@@ -43,25 +43,25 @@ describe('Questionnaire', function () {
             contact_a_risque_meme_classe: undefined,
             contact_a_risque_autre: undefined,
         })
-        chai.expect(questionnaire.isComplete()).to.equal(false)
+        chai.expect(profil.isComplete()).to.equal(false)
     })
 
     it('Le questionnaire peut être partiellement rempli', function () {
         var data = {
             departement: '01',
         }
-        questionnaire.fillData(data)
-        chai.expect(questionnaire.getData()).to.include(data)
-        chai.expect(questionnaire.isComplete()).to.equal(false)
+        profil.fillData(data)
+        chai.expect(profil.getData()).to.include(data)
+        chai.expect(profil.isComplete()).to.equal(false)
     })
 
     it('Le questionnaire peut être partiellement vidé', function () {
         var data = {
             departement: '01',
         }
-        questionnaire.fillData(data)
-        questionnaire.resetData()
-        chai.expect(questionnaire.getData()).to.include({
+        profil.fillData(data)
+        profil.resetData()
+        chai.expect(profil.getData()).to.include({
             departement: undefined,
         })
     })
@@ -97,9 +97,9 @@ describe('Questionnaire', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_autre: true,
         }
-        questionnaire.fillData(data)
-        chai.expect(questionnaire.getData()).to.deep.equal(data)
-        chai.expect(questionnaire.isComplete()).to.equal(true)
+        profil.fillData(data)
+        chai.expect(profil.getData()).to.deep.equal(data)
+        chai.expect(profil.isComplete()).to.equal(true)
     })
 
     it('Le questionnaire peut être complètement vidé', function () {
@@ -133,9 +133,9 @@ describe('Questionnaire', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_autre: true,
         }
-        questionnaire.fillData(data)
-        questionnaire.resetData()
-        chai.expect(questionnaire.getData()).to.deep.equal({
+        profil.fillData(data)
+        profil.resetData()
+        chai.expect(profil.getData()).to.deep.equal({
             departement: undefined,
             activite_pro: undefined,
             activite_pro_public: undefined,
@@ -165,6 +165,6 @@ describe('Questionnaire', function () {
             contact_a_risque_meme_classe: undefined,
             contact_a_risque_autre: undefined,
         })
-        chai.expect(questionnaire.isComplete()).to.equal(false)
+        chai.expect(profil.isComplete()).to.equal(false)
     })
 })

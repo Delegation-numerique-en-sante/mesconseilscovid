@@ -16,13 +16,13 @@ module.exports = function () {
             })
     }
 
-    this.charger = function (questionnaire) {
+    this.charger = function (profil) {
         return localforage.getItem('mes_infos').then(
             function (data) {
                 if (data !== null) {
                     console.debug('Données locales:')
                     console.log(data)
-                    questionnaire.fillData(data)
+                    profil.fillData(data)
                 } else {
                     console.debug('Pas de données locales pour l’instant')
                 }
@@ -36,9 +36,9 @@ module.exports = function () {
         )
     }
 
-    this.enregistrer = function (questionnaire) {
+    this.enregistrer = function (profil) {
         return localforage
-            .setItem('mes_infos', questionnaire.getData())
+            .setItem('mes_infos', profil.getData())
             .then(function (data) {
                 console.debug('Les réponses au questionnaire ont bien été enregistrées')
                 console.debug(data)

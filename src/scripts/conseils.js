@@ -3,12 +3,12 @@ var algorithme = require('./algorithme.js')
 var impression = require('./impression.js')
 var injection = require('./injection.js')
 
-function page(element, questionnaire) {
+function page(element, profil) {
     // Hide all conseils that might have been made visible on previous runs.
     affichage.hideSelector(element, '.visible')
 
     // Display appropriate conseils.
-    var data = algorithme.getData(questionnaire)
+    var data = algorithme.getData(profil)
 
     var blockNames = statutBlockNamesToDisplay(data)
     blockNames = blockNames.concat(

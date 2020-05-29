@@ -1,7 +1,7 @@
 var carteDepartements = require('./carte.js')
 
-function getData(questionnaire) {
-    var data = questionnaire.getData()
+function getData(profil) {
+    var data = profil.getData()
     // On a besoin de l’IMC avant pour pouvoir calculer les risques.
     data.imc = computeIMC(data.poids, data.taille)
     data.couleur = carteDepartements.couleur(data.departement)
