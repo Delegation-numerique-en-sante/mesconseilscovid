@@ -2,6 +2,7 @@ var Navigo = require('navigo')
 
 var affichage = require('./affichage.js')
 var conseils = require('./conseils.js')
+var formUtils = require('./formutils.js')
 var geoloc = require('./geoloc.js')
 
 var getCurrentPageName = function () {
