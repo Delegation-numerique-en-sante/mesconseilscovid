@@ -115,8 +115,8 @@ function initRouter(profil, stockageLocal) {
             var pageName = 'introduction'
             var element = loadPage(pageName)
             if (profil.isComplete()) {
-                affichage.displayElement(element, 'js-store-full')
-                affichage.hideElement(element.querySelector('#js-store-empty'))
+                affichage.displayElement(element, 'js-profil-full')
+                affichage.hideElement(element.querySelector('#js-profil-empty'))
                 var mesConseilsLink = element.querySelector('#mes-conseils-link')
                 var target = redirectToUnansweredQuestions('findCorrectExit', profil)
                 mesConseilsLink.setAttribute('href', '#' + target)
