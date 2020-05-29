@@ -4,28 +4,24 @@ var Updater = require('./updater.js')
 
 var StockageLocal = require('./stockage.js')
 var stockageLocal = new StockageLocal()
-window.stockageLocal = stockageLocal
 
 var Profil = require('./profil.js')
 var profil = new Profil()
-window.profil = profil
-
-window.resetPrivateData = function (event) {
-    event.preventDefault()
-    profil.resetData()
-    stockageLocal.supprimer()
-    router.navigate('introduction')
-}
-
-window.updater = new Updater()
 
 var Router = require('./router.js')
-window.router = Router.initRouter()
+var router = Router.initRouter(profil, stockageLocal)
+window.router = router
 ;(function () {
     document.addEventListener('dataLoaded', function () {
         router.resolve()
+        var updater = new Updater(router)
         updater.checkForUpdatesEvery(10) // Minutes.
     })
     stockageLocal.charger(profil)
-    document.getElementById('delete-data').addEventListener('click', resetPrivateData)
+    document.getElementById('delete-data').addEventListener('click', function (event) {
+        event.preventDefault()
+        profil.resetData()
+        stockageLocal.supprimer()
+        router.navigate('introduction')
+    })
 })()

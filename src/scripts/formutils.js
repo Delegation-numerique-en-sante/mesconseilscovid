@@ -1,11 +1,11 @@
-function preloadForm(form, key) {
+function preloadForm(form, key, profil) {
     var value = profil.getData()[key]
     if (typeof value !== 'undefined' && value !== '') {
         form[key].value = value
     }
 }
 
-function preloadCheckboxForm(form, key) {
+function preloadCheckboxForm(form, key, profil) {
     var value = profil.getData()[key]
     if (typeof value !== 'undefined' && value) {
         form[key].checked = true

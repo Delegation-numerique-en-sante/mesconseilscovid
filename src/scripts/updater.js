@@ -1,7 +1,7 @@
 var Router = require('./router.js')
 var affichage = require('./affichage.js')
 
-module.exports = function () {
+module.exports = function (router) {
     this.checkForUpdatesEvery = function (intervalInMinutes) {
         this.checkForUpdate()
         setInterval(this.checkForUpdate.bind(this), intervalInMinutes * 60 * 1000)

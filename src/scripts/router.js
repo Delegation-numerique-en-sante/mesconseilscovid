@@ -2,7 +2,6 @@ var Navigo = require('navigo')
 
 var affichage = require('./affichage.js')
 var conseils = require('./conseils.js')
-var formUtils = require('./formutils.js')
 var questionnaire = require('./questionnaire.js')
 
 var getCurrentPageName = function () {
@@ -77,7 +76,7 @@ var loadPage = function (pageName) {
     return element
 }
 
-function initRouter() {
+function initRouter(profil, stockageLocal) {
     var root = null
     var useHash = true
     var router = new Navigo(root, useHash)

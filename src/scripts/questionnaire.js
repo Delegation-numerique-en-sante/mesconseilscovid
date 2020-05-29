@@ -4,7 +4,7 @@ var geoloc = require('./geoloc.js')
 
 function residence(form, profil, stockageLocal, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadForm(form, 'departement')
+    formUtils.preloadForm(form, 'departement', profil)
     formUtils.toggleFormButtonOnSelectFieldsRequired(
         form,
         button.value,
@@ -27,9 +27,9 @@ function residence(form, profil, stockageLocal, router) {
 
 function activitepro(form, profil, stockageLocal, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'activite_pro')
-    formUtils.preloadCheckboxForm(form, 'activite_pro_public')
-    formUtils.preloadCheckboxForm(form, 'activite_pro_sante')
+    formUtils.preloadCheckboxForm(form, 'activite_pro', profil)
+    formUtils.preloadCheckboxForm(form, 'activite_pro_public', profil)
+    formUtils.preloadCheckboxForm(form, 'activite_pro_sante', profil)
     var primary = form.elements['activite_pro']
     formUtils.enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
@@ -48,8 +48,8 @@ function activitepro(form, profil, stockageLocal, router) {
 }
 
 function foyer(form, profil, stockageLocal, router) {
-    formUtils.preloadCheckboxForm(form, 'foyer_enfants')
-    formUtils.preloadCheckboxForm(form, 'foyer_fragile')
+    formUtils.preloadCheckboxForm(form, 'foyer_enfants', profil)
+    formUtils.preloadCheckboxForm(form, 'foyer_fragile', profil)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         profil.foyer_enfants = event.target.elements['foyer_enfants'].checked
@@ -61,10 +61,10 @@ function foyer(form, profil, stockageLocal, router) {
 
 function caracteristiques(form, profil, stockageLocal, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'sup65')
-    formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre')
-    formUtils.preloadForm(form, 'taille')
-    formUtils.preloadForm(form, 'poids')
+    formUtils.preloadCheckboxForm(form, 'sup65', profil)
+    formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre', profil)
+    formUtils.preloadForm(form, 'taille', profil)
+    formUtils.preloadForm(form, 'poids', profil)
     formUtils.toggleFormButtonOnTextFieldsRequired(
         form,
         button.value,
@@ -84,15 +84,15 @@ function caracteristiques(form, profil, stockageLocal, router) {
 
 function antecedents(form, profil, stockageLocal, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'antecedent_cardio')
-    formUtils.preloadCheckboxForm(form, 'antecedent_diabete')
-    formUtils.preloadCheckboxForm(form, 'antecedent_respi')
-    formUtils.preloadCheckboxForm(form, 'antecedent_dialyse')
-    formUtils.preloadCheckboxForm(form, 'antecedent_cancer')
-    formUtils.preloadCheckboxForm(form, 'antecedent_immunodep')
-    formUtils.preloadCheckboxForm(form, 'antecedent_cirrhose')
-    formUtils.preloadCheckboxForm(form, 'antecedent_drepano')
-    formUtils.preloadCheckboxForm(form, 'antecedent_chronique_autre')
+    formUtils.preloadCheckboxForm(form, 'antecedent_cardio', profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_diabete', profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_respi', profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_dialyse', profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_cancer', profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_immunodep', profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_cirrhose', profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_drepano', profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_chronique_autre', profil)
     formUtils.toggleFormButtonOnCheck(form, button.value, 'Continuer')
     form.addEventListener('submit', function (event) {
         event.preventDefault()
@@ -115,7 +115,7 @@ function antecedents(form, profil, stockageLocal, router) {
 
 function symptomesactuels(form, profil, stockageLocal, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels')
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels', profil)
     formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
     form.addEventListener('submit', function (event) {
         event.preventDefault()
@@ -141,7 +141,7 @@ function symptomesactuels(form, profil, stockageLocal, router) {
 
 function symptomespasses(form, profil, stockageLocal, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'symptomes_passes')
+    formUtils.preloadCheckboxForm(form, 'symptomes_passes', profil)
     formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
     form.addEventListener('submit', function (event) {
         event.preventDefault()
@@ -166,13 +166,13 @@ function symptomespasses(form, profil, stockageLocal, router) {
 
 function contactarisque(form, profil, stockageLocal, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque')
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_lieu_de_vie')
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_contact_direct')
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_actes')
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_espace_confine')
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_classe')
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_autre')
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque', profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_lieu_de_vie', profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque_contact_direct', profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque_actes', profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque_espace_confine', profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_classe', profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque_autre', profil)
     var primary = form.elements['contact_a_risque']
     formUtils.enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
