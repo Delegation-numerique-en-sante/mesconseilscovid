@@ -17,7 +17,7 @@ WATCHED_PATHS = [
     "src/scripts/**/*.js",
     "src/style.css",
     "src/template.html",
-    "src/version.json",
+    "static/version.json",
 ]
 
 COMMAND = "make build"
