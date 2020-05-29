@@ -1,6 +1,7 @@
 var affichage = require('./affichage.js')
 var algorithme = require('./algorithme.js')
 var impression = require('./impression.js')
+var injection = require('./injection.js')
 
 function page(element, questionnaire) {
     // Hide all conseils that might have been made visible on previous runs.
@@ -25,9 +26,9 @@ function page(element, questionnaire) {
     impression.setup(element)
 
     // Dynamic data injections.
-    injectionScripts.departement(element, data)
-    injectionScripts.caracteristiques(element, data)
-    injectionScripts.antecedents(element, data)
+    injection.departement(element, data)
+    injection.caracteristiques(element, data)
+    injection.antecedents(element, data)
 }
 
 function statutBlockNamesToDisplay(data) {
