@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-05-30
+
+* ajout du lien vers les dernières règles de déconfinement
+
 ## 2020-05-29
 
 * correction d’un lien cassé vers le site gouvernement.fr
