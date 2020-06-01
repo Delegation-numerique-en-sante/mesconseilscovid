@@ -14,7 +14,7 @@ Il est recommandé de **télétravailler** si cela vous est possible. Si vous de
 
 ## [conseils_activité_pro_infos.md](conseils_activité_pro_infos.md)
 
-Pour plus d’informations, vous pouvez consulter les fiches-conseils métier pour aider à la mise en œuvre des mesures de protection sur le site du [Ministère du travail](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/proteger-les-travailleurs/article/fiches-conseils-metiers-et-guides-pour-les-salaries-et-les-employeurs).
+Pour plus d’informations, vous pouvez consulter l’espace dédié pour les professionnels sur le site du [gouvernement.fr](https://www.gouvernement.fr/info-coronavirus/espace-pour-les-professionnels) et les informations dédiées à la [reprise du travail](https://www.gouvernement.fr/info-coronavirus/retour-au-travail).
 
 
 ---
@@ -22,7 +22,7 @@ Pour plus d’informations, vous pouvez consulter les fiches-conseils métier po
 
 ## [conseils_activité_pro_public.md](conseils_activité_pro_public.md)
 
-Nous vous recommandons de prendre connaissance des **précautions** relatives aux établissements recevant du **public** sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus#questions__reponses), sections « Pour vos achats et besoins essentiels » et  « Pour votre vie sociale ».
+Nous vous recommandons de prendre connaissance des **fiches-conseils métier** pour aider à la mise en œuvre des mesures de protection sur le site du [Ministère du travail](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/proteger-les-travailleurs/article/fiches-conseils-metiers-et-guides-pour-les-salaries-et-les-employeurs).
 
 
 ---
@@ -35,6 +35,8 @@ Vous pouvez trouver les recommandations adaptées sur le site du ministère des 
 * Pour les [professionnels **de santé**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/article/protection-des-professionnels-de-sante-face-au-covid-19)
 
 * Pour les [professionnels **du médico-social**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-du-social-et-medico-social/)
+
+* Vous pouvez également consulter les [recommandations](https://www.hcsp.fr/Explore.cgi/Telecharger?NomFichier=hcspa20200523_sarcovprodestabdesansocetmdisoc.pdf) du Haut conseil de la santé publique relatives à la conduite à tenir vis-à-vis des professionnels intervenant en établissement de santé (ES) ainsi qu’en établissement social et médico-social (ESMS) selon leur statut vis-à-vis du SARS-CoV-2.
 
 
 ---
@@ -101,7 +103,7 @@ Pour plus d’informations, vous pouvez consulter le [site du gouvernement](http
 Pour plus d’informations, vous pouvez :
 
 * prendre connaissance du document [« Faire face à une maladie chronique pendant le confinement »](https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf) de la HAS
-* consulter le [site du gouvernement](https://www.gouvernement.fr/info-coronavirus).
+* retrouver des réponses à vos questions sur la [page dédiée](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/personnes-a-risques-reponses-a-vos-questions) sur le site du ministère des solidarité et de la santé.
 
 
 ---
@@ -159,13 +161,13 @@ Pour plus d’informations :
 
 ## [conseils_département_défaut.md](conseils_département_défaut.md)
 
+Le **mardi 2 juin** les [règles de déconfinement changent](https://www.gouvernement.fr/info-coronavirus). Le détail des nouvelles recommandations est disponible sur cette page de conseils, nous vous invitons à la mettre en favori pour y revenir régulièrement. Vous n’aurez pas à saisir de nouveau vos informations qui restent stockées dans votre ordinateur ou téléphone.
+
 Pour plus d’informations, vous pouvez consulter :
 
-* [l’infographie récapitulative](https://www.gouvernement.fr/sites/default/files/cimages/infographie_deconfinement.jpg) du plan de déconfinement
+* [l’infographie récapitulative](https://www.gouvernement.fr/sites/default/files/cimages/infog_deconfinement.jpg) du plan de déconfinement
 
 * les règles spécifiques de votre département sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
-
-* les consignes à appliquer dans vos activités sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/les-actions-du-gouvernement)
 
 
 ---
@@ -173,9 +175,7 @@ Pour plus d’informations, vous pouvez consulter :
 
 ## [conseils_département_rouge.md](conseils_département_rouge.md)
 
-Votre département est en **niveau rouge**, la circulation épidémique est élevée. Le déconfinement prendra une forme plus stricte.
-
-Le **mardi 2 juin** les [règles de déconfinement changent](https://www.gouvernement.fr/sites/default/files/document/document/2020/05/presentation_-_2eme_etape_du_plan_de_deconfinement_-_28.05.2020.pdf). Le détail des nouvelles recommandations sera disponible sur cette page de conseils, nous vous invitons à la mettre en favori pour y revenir régulièrement. Vous n’aurez pas à saisir de nouveau vos informations qui restent stockées dans votre ordinateur ou téléphone.
+Votre département est en **niveau orange**, la circulation épidémique justifie une vigilance accrue face au virus. Le déconfinement y prend une forme plus stricte.
 
 
 ---
@@ -185,15 +185,14 @@ Le **mardi 2 juin** les [règles de déconfinement changent](https://www.gouvern
 
 Votre département est en **niveau vert**. Cependant le virus circule toujours, maintenez les gestes barrières.
 
-Le **mardi 2 juin** les [règles de déconfinement changent](https://www.gouvernement.fr/sites/default/files/document/document/2020/05/presentation_-_2eme_etape_du_plan_de_deconfinement_-_28.05.2020.pdf). Le détail des nouvelles recommandations sera disponible sur cette page de conseils, nous vous invitons à la mettre en favori pour y revenir régulièrement. Vous n’aurez pas à saisir de nouveau vos informations qui restent stockées dans votre ordinateur ou téléphone.
-
 
 ---
 
 
 ## [conseils_foyer_enfant_garde.md](conseils_foyer_enfant_garde.md)
 
-Nous vous recommandons de prendre contact avec votre mairie pour connaître les modalités de **réouverture des écoles**. Prenez connaissance des informations officielles concernant la scolarité des enfants sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus#questions__reponses), section « Pour vos enfants et leur scolarité ».
+À partir du **2 juin** l’ouverture des écoles, collèges et lycées se [poursuivra](https://www.education.gouv.fr/deconfinement-phase-2-point-de-situation-au-28-mai-303813). 
+Nous vous recommandons de prendre contact avec votre mairie pour connaître les modalités de **réouverture des écoles**. Prenez connaissance des informations officielles concernant la scolarité des enfants sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus#questions__reponses), section « Pour vos enfants et leur scolarité ».
 
 Si vous n’avez pas de solution pour faire garder votre enfant : 
 
@@ -255,6 +254,8 @@ Il est conseillé à votre proche de :
 
 Si vous devez rester à domicile pour vous occuper d’une personne vulnérable et que le télétravail n’est pas possible, contactez votre médecin pour envisager les mesures possibles.
 
+Pour plus d’informations, retrouvez des réponses à vos questions sur la [page dédiée](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/personnes-a-risques-reponses-a-vos-questions) sur le site du ministère des solidarité et de la santé.
+
 
 ---
 
@@ -290,8 +291,9 @@ référents qui vous orienteront vers le meilleur moyen de suivi :
 ## [conseils_généraux.md](conseils_généraux.md)
 
 Le COVID n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de **consulter au moindre signe de maladie**. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.
+* pour plus d’informations : les [recommandations du ministère de la santé pour la reprise des soins en toute sécurité](https://solidarites-sante.gouv.fr/grands-dossiers/deconfinement-les-recommandations-du-ministere-pour-la-reprise-des-soins-en/).
 
-De plus, le respect des **gestes barrières** et de **distanciation physique** reste indispensable et le **port du masque** s’impose dans certaines situations.
+De plus, **l’aération régulière** [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf), le respect des **gestes barrières**, et de **distanciation physique** reste indispensable et le **port du masque** s’impose dans certaines situations.
 
 
 ---
@@ -317,6 +319,8 @@ Pour plus d’informations, vous pouvez consulter :
 * le site [covid19-faq](https://www.covid19-faq.fr/) ou appeler le 0 800 130 000 si vous avez des questions par rapport au COVID.
 
 * la page [« Tests et dépistage »](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage) et l’infographie [« Coronavirus, 2 types de tests »](https://www.gouvernement.fr/sites/default/files/infographie_tests.pdf).
+
+* l’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) : cet outil peut vous permettre de vous prévenir immédiatement si vous avez été en contact rapproché dans les derniers jours avec une personne que vous ne connaissez pas et qui vient d’être testée positive au COVID-19.
 
 
 ---
