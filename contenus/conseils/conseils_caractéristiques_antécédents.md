@@ -10,3 +10,5 @@ d’appliquer les mesures de **distanciation physique renforcée :**
 Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d’urgence.
 
 Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi.
+
+Pour plus d'information retrouvez des réponses a vos questions sur la [page dédiée](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/personnes-a-risques-reponses-a-vos-questions) sur la site du ministère des solidarité et de la santé.
