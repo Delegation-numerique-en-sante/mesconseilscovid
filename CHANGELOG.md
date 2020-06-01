@@ -1,5 +1,17 @@
 # Changelog
 
+## 2020-06-01
+
+* ajout du texte pour les départements oranges
+* mise à jour des conseils lié à une activité professionnelle
+* ajout du lien vers les recommandations du HCSP
+* ajout du lien vers les questions pour les personnes à risques du ministère de la santé
+* mise à jour du lien vers l’infographie du déconfinement
+* mise à jour du lien vers les informations liées à la 2e phase du déconfinement pour les écoles, collèges et lycées
+* ajout du lien vers les recommandations pour a reprise des soins en toute sécurité
+* ajout d’une recommandation relative à l’aération régulière des espaces clos
+* ajout d’un lien vers l’application StopCovid
+
 ## 2020-05-30
 
 * ajout du lien vers les dernières règles de déconfinement
