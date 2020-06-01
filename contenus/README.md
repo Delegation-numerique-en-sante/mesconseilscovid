@@ -232,6 +232,8 @@ Sous-question (espace confiné) : [libellé](questions/question_symptômes_conta
 
 Sous-question (même classe) : [libellé](questions/question_symptômes_contact_à_risque_même_classe_libellé.md)
 
+Sous-question (stop covid) : [libellé](questions/question_symptômes_contact_à_risque_stop_covid_libellé.md)
+
 Sous-question (autre) : [libellé](questions/question_symptômes_contact_à_risque_autre_libellé.md)
 
 Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange)

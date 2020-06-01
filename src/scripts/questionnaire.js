@@ -129,6 +129,7 @@ function symptomesactuels(form, profil, stockageLocal, router) {
             profil.contact_a_risque_actes = undefined
             profil.contact_a_risque_espace_confine = undefined
             profil.contact_a_risque_meme_classe = undefined
+            profil.contact_a_risque_stop_covid = undefined
             profil.contact_a_risque_autre = undefined
             stockageLocal.enregistrer(profil)
             router.navigate('conseils')
@@ -154,6 +155,7 @@ function symptomespasses(form, profil, stockageLocal, router) {
             profil.contact_a_risque_actes = undefined
             profil.contact_a_risque_espace_confine = undefined
             profil.contact_a_risque_meme_classe = undefined
+            profil.contact_a_risque_stop_covid = undefined
             profil.contact_a_risque_autre = undefined
             stockageLocal.enregistrer(profil)
             router.navigate('conseils')
@@ -172,6 +174,7 @@ function contactarisque(form, profil, stockageLocal, router) {
     formUtils.preloadCheckboxForm(form, 'contact_a_risque_actes', profil)
     formUtils.preloadCheckboxForm(form, 'contact_a_risque_espace_confine', profil)
     formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_classe', profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque_stop_covid', profil)
     formUtils.preloadCheckboxForm(form, 'contact_a_risque_autre', profil)
     var primary = form.elements['contact_a_risque']
     formUtils.enableOrDisableSecondaryFields(form, primary)
@@ -197,6 +200,8 @@ function contactarisque(form, profil, stockageLocal, router) {
             event.target.elements['contact_a_risque_espace_confine'].checked
         profil.contact_a_risque_meme_classe =
             event.target.elements['contact_a_risque_meme_classe'].checked
+        profil.contact_a_risque_stop_covid =
+            event.target.elements['contact_a_risque_stop_covid'].checked
         profil.contact_a_risque_autre =
             event.target.elements['contact_a_risque_autre'].checked
         stockageLocal.enregistrer(profil)
