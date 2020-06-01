@@ -17,4 +17,4 @@ Pour plus d’informations, vous pouvez consulter :
 
 * la page [« Tests et dépistage »](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage) et l’infographie [« Coronavirus, 2 types de tests »](https://www.gouvernement.fr/sites/default/files/infographie_tests.pdf).
 
-* prendre connaissance de l'application [Stopcovid](https://www.gouvernement.fr/info-coronavirus/stopcovid). cet outil peu vous permettre de vous prévenir immédiatement si vous avez été en contact rapproché dans les derniers jours avec une personne que vous ne connaissez pas et qui vient d’être testée positive au COVID-19.
+* l’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) : cet outil peut vous permettre de vous prévenir immédiatement si vous avez été en contact rapproché dans les derniers jours avec une personne que vous ne connaissez pas et qui vient d’être testée positive au COVID-19.
