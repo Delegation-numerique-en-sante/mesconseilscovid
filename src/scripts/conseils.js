@@ -10,6 +10,16 @@ function page(element, profil) {
     // Display appropriate conseils.
     var data = algorithme.getData(profil)
 
+    if(data.symptomes_actuels) {
+        element.classList.add("symptomes-actuels")
+    }
+    else if(data.symptomes_passes) {
+        element.classList.add("symptomes-passes")
+    }
+    else if(data.contact_a_risque) {
+        element.classList.add("contact-a-risque")
+    }
+
     var blockNames = statutBlockNamesToDisplay(data)
     blockNames = blockNames.concat(
         algorithme.conseilsPersonnelsBlockNamesToDisplay(data)

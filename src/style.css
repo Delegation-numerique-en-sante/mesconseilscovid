@@ -138,9 +138,9 @@ main footer {
 #conseils-foyer h3,
 #conseils-caracteristiques h3,
 #conseils-generaux h3,
-#conseils-symptomes-actuels-block h2,
-#conseils-symptomes-passes-block h2,
-#conseils-contact-a-risque-block h2 {
+#conseils-block.symptomes-actuels h2,
+#conseils-block.symptomes-passes h2,
+#conseils-block.contact-a-risque h2 {
     padding-top: 50%;
     background-position: center 1rem;
     background-repeat: no-repeat;
@@ -164,9 +164,9 @@ main footer {
     #conseils-foyer h3,
     #conseils-caracteristiques h3,
     #conseils-generaux h3,
-    #conseils-symptomes-actuels-block h2,
-    #conseils-symptomes-passes-block h2,
-    #conseils-contact-a-risque-block h2 {
+    #conseils-block.symptomes-actuels h2,
+    #conseils-block.symptomes-passes h2,
+    #conseils-block.contact-a-risque h2 {
         padding-top: 35%;
         background-size: 40%;
     }
@@ -195,15 +195,15 @@ main footer {
 #conseils-generaux h3 {
     background-image: url('illustrations/accueil.svg');
 }
-#conseils-symptomes-actuels-block h2,
+#conseils-block.symptomes-actuels h2,
 #symptomes-actuels-form {
     background-image: url('illustrations/symptomesactuels.svg');
 }
-#conseils-symptomes-passes-block h2,
+#conseils-block.symptomes-passes h2,
 #symptomes-passes-form {
     background-image: url('illustrations/symptomespasses.svg');
 }
-#conseils-contact-a-risque-block h2,
+#conseils-block.contact-a-risque h2,
 #contact-a-risque-form {
     background-image: url('illustrations/contactarisque.svg');
 }
@@ -552,9 +552,9 @@ a#geolocalisation {
     #conseils-foyer h3,
     #conseils-caracteristiques h3,
     #conseils-generaux h3,
-    #conseils-symptomes-actuels-block h2,
-    #conseils-symptomes-passes-block h2,
-    #conseils-contact-a-risque-block h2 {
+    #conseils-block.symptomes-actuels h2,
+    #conseils-block.symptomes-passes h2,
+    #conseils-block.contact-a-risque h2 {
         padding-top: 0;
         background-image: none;
     }
