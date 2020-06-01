@@ -16,8 +16,8 @@ describe('Carte départements', function () {
     it('On récupère la couleur verte depuis le département', function () {
         chai.expect(carteDepartements.couleur('01')).to.equal('vert')
     })
-    it('On récupère la couleur rouge depuis le département', function () {
-        chai.expect(carteDepartements.couleur('02')).to.equal('rouge')
+    it('On récupère la couleur orange depuis le département', function () {
+        chai.expect(carteDepartements.couleur('75')).to.equal('orange')
     })
     it('On récupère la couleur inconnue si on n’a pas la donnée', function () {
         chai.expect(carteDepartements.couleur('977')).to.equal('inconnue')

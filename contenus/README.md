@@ -49,7 +49,7 @@ Réponse : [réponse_département.md](réponses/réponse_département.md)
 
 Conseils :
 
-1. [conseils rouge](conseils/conseils_département_rouge.md) ou [conseils vert](conseils/conseils_département_vert.md) selon la [Couleur](#couleur) du département
+1. [conseils orange](conseils/conseils_département_orange.md) ou [conseils vert](conseils/conseils_département_vert.md) selon la [Couleur](#couleur) du département
 2. [conseils par défaut](conseils/conseils_département_défaut.md).
 
 
@@ -186,7 +186,7 @@ Si case antécédents chroniques autres cochée :
 
 Question : [libellé](questions/question_symptômes_actuels_libellé.md), [aide](questions/question_symptômes_aide.md)
 
-Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (rouge)
+Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange)
 
 Conseils :
 
@@ -203,7 +203,7 @@ Conseils :
 
 Question : [libellé](questions/question_symptômes_passés_libellé.md), [aide](questions/question_symptômes_aide.md)
 
-Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (rouge)
+Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange)
 
 Conseils :
 
@@ -234,7 +234,7 @@ Sous-question (même classe) : [libellé](questions/question_symptômes_contact_
 
 Sous-question (autre) : [libellé](questions/question_symptômes_contact_à_risque_autre_libellé.md)
 
-Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (rouge)
+Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange)
 
 Conseils :
 
@@ -250,7 +250,7 @@ Conseils :
 
 #### Couleur
 
-La couleur d’un département (`rouge` ou `verte` si on a les données) est déterminée en fonction de l’[Indicateurs d’activité épidémique vert/rouge](https://www.data.gouv.fr/fr/datasets/indicateurs-dactivite-epidemique-covid-19-par-departement/) (fichier `donnees-carte-synthese-tricolore.json`, attention il est cumulatif au fil du temps).
+La couleur d’un département (`orange` ou `verte` si on a les données) est déterminée en fonction de l’[Indicateurs d’activité épidémique vert/orange](https://www.data.gouv.fr/fr/datasets/indicateurs-dactivite-epidemique-covid-19-par-departement/) (fichier `donnees-carte-synthese-tricolore.json`, attention il est cumulatif au fil du temps).
 
 #### Antécédents
 

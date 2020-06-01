@@ -58,8 +58,8 @@ function statutBlockNamesToDisplay(data) {
 function departementBlockNamesToDisplay(data) {
     var blockNames = []
     blockNames.push('conseils-departement')
-    if (data.couleur === 'rouge') {
-        blockNames.push('conseils-departement-rouge')
+    if (data.couleur === 'orange') {
+        blockNames.push('conseils-departement-orange')
     }
     if (data.couleur === 'vert') {
         blockNames.push('conseils-departement-vert')

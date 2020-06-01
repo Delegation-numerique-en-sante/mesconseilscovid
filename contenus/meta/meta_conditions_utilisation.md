@@ -23,7 +23,7 @@ Le service s’appuie sur des informations officielles issues :
 
 * des recommandations de Santé Publique France 
 * des recommandations de la Haute Autorité de Santé et du Haut Conseil de Santé Publique
-* de la liste des départements rouge/vert publiée par le ministère
+* de la liste des départements orange/vert publiée par le ministère
 * de certains sites de référence d’associations de patients
 * des données sur l’épidémie publiées sur le site du gouvernement
  

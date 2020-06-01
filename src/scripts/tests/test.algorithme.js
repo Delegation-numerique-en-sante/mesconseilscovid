@@ -75,14 +75,14 @@ describe('Algorithme département', function () {
         ).to.deep.equal(['conseils-departement', 'conseils-departement-vert'])
     })
 
-    it('Un département rouge affiche le bloc rouge', function () {
+    it('Un département orange affiche le bloc orange', function () {
         var data = {
-            departement: '02',
+            departement: '75',
         }
         questionnaire.fillData(data)
         chai.expect(
             algorithme.departementBlockNamesToDisplay(algorithme.getData(questionnaire))
-        ).to.deep.equal(['conseils-departement', 'conseils-departement-rouge'])
+        ).to.deep.equal(['conseils-departement', 'conseils-departement-orange'])
     })
 
     it('Un département inconnu n’affiche pas de bloc couleur', function () {

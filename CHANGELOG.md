@@ -2,7 +2,7 @@
 
 ## 2020-06-01
 
-* ajout du texte pour les départements oranges
+* mise à jour de la carte des départements (vert/orange)
 * mise à jour des conseils lié à une activité professionnelle
 * ajout du lien vers les recommandations du HCSP
 * ajout du lien vers les questions pour les personnes à risques du ministère de la santé
