@@ -390,14 +390,24 @@ input[type='submit'] {
     white-space: pre-wrap;
 }
 
-a.button-full-width {
+.button-full-width {
     width: 100%;
+    display: block;
+}
+.button-half-width {
+    width: 100%;
+    margin: 0 auto;
     display: block;
 }
 a.button-outline {
     background-color: white;
     border: 1px solid #000091;
     color: #000091;
+}
+p.extra-button {
+    text-align: center;
+    font-size: small;
+    margin: 0;
 }
 
 @media
@@ -418,8 +428,11 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 680px) 
         flex-grow: 1;
         width: inherit;
     }
-    a.button-outline {
+    .form-controls a.button-outline {
         margin-right: 1rem;
+    }
+    .button-half-width {
+        width: 50%;
     }
 }
 
@@ -543,6 +556,24 @@ a#geolocalisation {
 .message-error {
     background-color: #ffb6a5;
     border-color: #ff6f4c;
+}
+
+#pour-finir .icon {
+    background: no-repeat left center;
+    padding-left: 4rem;
+    margin: 2.5rem 0;
+}
+
+#pour-finir .icon-favori {
+    background-image: url('star.svg');
+}
+
+#pour-finir .icon-impression {
+    background-image: url('printer.svg');
+}
+
+#pour-finir .icon-suppression {
+    background-image: url('trash.svg');
 }
 
 
