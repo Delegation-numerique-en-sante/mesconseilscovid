@@ -14,8 +14,9 @@ install:  ## Install Python and JS dependencies.
 	python3 -m pip install -r requirements.txt
 	npm install
 
-test:  ## Run JS unit tests.
+test:  ## Run JS unit tests + links checker.
 	npm run-script test
+	python3 test.py links
 
 lint:  ## Run ESLint.
 	npm run-script lint
