@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-06-02
+
+* ajout d’une option relative à l’application StopCovid dans l’écran des contacts à risque
+
 ## 2020-06-01
 
 * mise à jour de la carte des départements (vert/orange)
