@@ -15,6 +15,7 @@ ROOT_DIR = "dist/"
 WATCHED_PATHS = [
     "contenus/**/[!README]*.md",
     "src/scripts/**/*.js",
+    "src/scripts/*.js",
     "src/style.css",
     "src/template.html",
     "static/version.json",
