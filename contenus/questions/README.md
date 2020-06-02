@@ -390,7 +390,7 @@ Des personnes croisées dans l’espace public de manière fugace ne sont pas co
 
 ## [question_symptômes_contact_à_risque_stop_covid_libellé.md](question_symptômes_contact_à_risque_stop_covid_libellé.md)
 
-<!---->J’ai été informé par l’application StopCovid que j’ai eu un contact à risque avec une personne testée positive au COVID-19
+<!---->J’ai été informé par l’application StopCovid que j’ai été en contact avec une personne testée positive au COVID-19
 
 
 ---

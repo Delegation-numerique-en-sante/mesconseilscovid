@@ -362,11 +362,7 @@ Pour agir, il vous est conseillé :
 
 ## [conseils_symptômes_défaut.md](conseils_symptômes_défaut.md)
 
-Si vous le souhaitez, **vous pouvez limiter la chaîne de transmission** en informant vous-même vos proches et contacts à risque à l’aide de ce document :
-[Mémo-Contacts](memo-contacts.pdf)
-
-Ce document pourra aussi aider les professionnels de santé
-si vous souhaitez le partager.
+Si vous le souhaitez, **vous pouvez limiter la chaîne de transmission** en informant vous-même vos proches et contacts à risque. Le site [BriserLaChaine.org](https://www.briserlachaine.org/statut) peut vous aider à vous souvenir de toutes les personnes que vous avez croisé depuis le début de votre période contagieuse. 
 
 
 ---

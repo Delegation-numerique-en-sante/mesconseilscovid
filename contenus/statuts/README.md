@@ -14,7 +14,7 @@ Prenez soin de vos proches à risque face au COVID-19.
 
 ## [statut_personne_fragile.md](statut_personne_fragile.md)
 
-Vous êtes considéré·e à risque de forme plus sévère de COVID-19, nous vous invitons à être **particulièrement vigilant·e**.
+Vous êtes considéré·e comme une personne ayant plus de risques de développer une forme sévère de COVID-19, nous vous invitons à être **particulièrement vigilant·e**.
 
 
 ---
