@@ -138,9 +138,9 @@ main footer {
 #conseils-foyer h3,
 #conseils-caracteristiques h3,
 #conseils-generaux h3,
-#conseils-block.symptomes-actuels h2,
-#conseils-block.symptomes-passes h2,
-#conseils-block.contact-a-risque h2 {
+#conseils-block.symptomes-actuels h2.with-illustration,
+#conseils-block.symptomes-passes h2.with-illustration,
+#conseils-block.contact-a-risque h2.with-illustration {
     padding-top: 50%;
     background-position: center 1rem;
     background-repeat: no-repeat;
@@ -164,9 +164,9 @@ main footer {
     #conseils-foyer h3,
     #conseils-caracteristiques h3,
     #conseils-generaux h3,
-    #conseils-block.symptomes-actuels h2,
-    #conseils-block.symptomes-passes h2,
-    #conseils-block.contact-a-risque h2 {
+    #conseils-block.symptomes-actuels h2.with-illustration,
+    #conseils-block.symptomes-passes h2.with-illustration,
+    #conseils-block.contact-a-risque h2.with-illustration {
         padding-top: 35%;
         background-size: 40%;
     }
@@ -195,15 +195,15 @@ main footer {
 #conseils-generaux h3 {
     background-image: url('illustrations/accueil.svg');
 }
-#conseils-block.symptomes-actuels h2,
+#conseils-block.symptomes-actuels h2.with-illustration,
 #symptomes-actuels-form {
     background-image: url('illustrations/symptomesactuels.svg');
 }
-#conseils-block.symptomes-passes h2,
+#conseils-block.symptomes-passes h2.with-illustration,
 #symptomes-passes-form {
     background-image: url('illustrations/symptomespasses.svg');
 }
-#conseils-block.contact-a-risque h2,
+#conseils-block.contact-a-risque h2.with-illustration,
 #contact-a-risque-form {
     background-image: url('illustrations/contactarisque.svg');
 }
@@ -219,9 +219,9 @@ main footer {
 .statut {
     font-size: 1.2rem;
     padding: .5rem 1rem;
-    border: 2px solid;
+    border: 4px solid;
     text-align: center;
-    margin: 3rem auto 3rem;
+    margin: 3rem auto 6rem;
 }
 .statut-risque-eleve {
     background: #ffb6a5;
