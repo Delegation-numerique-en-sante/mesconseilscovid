@@ -57,7 +57,7 @@ d’appliquer les mesures de **distanciation physique renforcée :**
 
 * Application stricte des gestes barrières
 * Masque en permanence à l’extérieur de mon foyer et à l’intérieur si je reçois des personnes étrangères à mon domicile
-* Distance de sécurité > 1m soit 4m<sup>2</sup>
+* Distance de sécurité de 1m autour de soi, soit 4m<sup>2</sup>
 * Réduire les sorties au strict minimum
 * Contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une prescription de masques chirurgicaux.
 
@@ -78,7 +78,7 @@ d’appliquer les mesures de **distanciation physique renforcée :**
 * Rentrez en contact avec votre employeur pour envisager des solutions individuelles (éventuellement via la Médecine du Travail de l’entreprise)
 * Application stricte des gestes barrières
 * Masque en permanence à l’extérieur de mon foyer et à l’intérieur si je reçois des personnes étrangères à mon domicile
-* Distance de sécurité > 1m soit 4m<sup>2</sup>
+* Distance de sécurité de 1m autour de soi, soit 4m<sup>2</sup>
 * Réduire les sorties au strict minimum
 * Contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une prescription de masques chirurgicaux.
 
@@ -209,7 +209,7 @@ Si vous n’avez pas de solution pour faire garder votre enfant :
 Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face au COVID, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants :
 
 * Application stricte des gestes barrières
-* Distance de sécurité > 1m soit 4m<sup>2</sup>
+* Distance de sécurité de 1m autour de soi, soit 4m<sup>2</sup>
 * Réduire les sorties au strict minimum possible
 * En complément des gestes barrières, porter un masque lorsque la distanciation de 1m ne peut pas être respectée entre l’enfant et les personnes qui le gardent
 
@@ -224,7 +224,7 @@ Si vous ne pouvez pas faire garder votre enfant, des solutions existent (voir pl
 Si vos enfants sortent à l’extérieur du foyer, il convient de mettre en place des mesures de **distanciation physique renforcée** :
 
 * Application stricte des gestes barrières
-* Distance de sécurité > 1m soit 4m<sup>2</sup>
+* Distance de sécurité de 1m autour de soi, soit 4m<sup>2</sup>
 * Réduire les sorties au strict minimum possible
 * En complément des gestes barrières, porter un masque lorsque la distanciation de 1m ne peut pas être respectée.
 
@@ -265,13 +265,9 @@ Pour plus d’informations, retrouvez des réponses à vos questions sur la [pag
 Si vous devez accueillir des enfants au sein de votre foyer, nous vous recommandons de mettre en place des mesures de **distanciation physique renforcée** pendant la présence des enfants :
 
 * Application stricte des gestes barrières
-
-* Distance de sécurité > 1m soit 4m<sup>2</sup>
-
+* Distance de sécurité de 1m autour de soi, soit 4m<sup>2</sup>
 * Réduire les sorties au strict minimum possible
-
 * En complément des gestes barrières, porter un masque lorsque la distanciation de 1m ne peut pas être respectée entre l’enfant et les personnes qui le gardent
-
 
 
 ---
