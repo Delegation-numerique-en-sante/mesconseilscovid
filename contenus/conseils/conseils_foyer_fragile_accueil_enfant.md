@@ -2,7 +2,7 @@ Si vous devez accueillir des enfants au sein de votre foyer, nous vous recommand
 
 * Application stricte des gestes barrières
 
-* Distance de sécurité > 1m soit 4m<sup>2</sup>
+* Distance de sécurité de 1m autour de soi, soit 4m<sup>2</sup>
 
 * Réduire les sorties au strict minimum possible
 
