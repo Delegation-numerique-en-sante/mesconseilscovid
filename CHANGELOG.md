@@ -3,6 +3,7 @@
 ## 2020-06-02
 
 * ajout d’une option relative à l’application StopCovid dans l’écran des contacts à risque
+* remplacement du doc Memo par un lien vers BriserLaChaine.org
 
 ## 2020-06-01
 
