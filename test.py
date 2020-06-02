@@ -32,7 +32,7 @@ def links():
     for link in parser.links:
         response = httpx.get(link)
         if response.status_code != HTTPStatus.OK:
-            raise Exception(f"{link} is broken!")
+            raise Exception(f"{link} is broken! ({response.status_code})")
 
 
 @wrap
