@@ -145,6 +145,14 @@ Vous avez passé du temps avec quelqu’un de positif sans prendre de risques. S
 ---
 
 
+## [conseils_contact_à_risque_autre_uniquement.md](conseils_contact_à_risque_autre_uniquement.md)
+
+Vous avez passé du temps avec quelqu’un de positif mais il ne s’agit pas *a priori* d’un contact à risque, au moindre doute ou en cas d’apparition de symptômes n’hésitez pas à contacter votre médecin.
+
+
+---
+
+
 ## [conseils_contact_à_risque_info.md](conseils_contact_à_risque_info.md)
 
 Pour plus d’informations :

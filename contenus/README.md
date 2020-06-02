@@ -240,12 +240,13 @@ Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé
 
 Conseils :
 
-1. [conseils_contact_à_risque.md](conseils/conseils_contact_à_risque.md) + [conseils_contact_à_risque_info.md](conseils/conseils_contact_à_risque_info.md)
-2. [conseils_contact_à_risque_autre.md](conseils/conseils_contact_à_risque_autre.md) si la case `aucune de ces situations` est cochée
-3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
-4. [Localisation](#localisation)
-5. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
-6. [Conseils d’ordre général](#conseils-dordre-général)
+1. [conseils_contact_à_risque.md](conseils/conseils_contact_à_risque.md) ou [conseils_contact_à_risque_autre_uniquement.md](conseils/conseils_contact_à_risque_autre_uniquement.md) si [Contact à risque autre uniquement](#Contact-a-risque-autre-uniquement)
+2. [conseils_contact_à_risque_info.md](conseils/conseils_contact_à_risque_info.md)
+3. [conseils_contact_à_risque_autre.md](conseils/conseils_contact_à_risque_autre.md) si la case `Je n’étais dans aucune de ces situations` est cochée mais pas toute seule
+4. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
+5. [Localisation](#localisation)
+6. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
+7. [Conseils d’ordre général](#conseils-dordre-général)
 
 
 ### Critères
@@ -277,3 +278,6 @@ Est définie comme étant une personne à risque celle qui vérifie l’une de c
 * a un IMC > 30
 * a des [Antécédents](#antécédents)
 
+#### Contact à risque autre uniquement
+
+Cas particulier lorsque la personne n’a coché que la case « Je n’étais dans aucune de ces situations » pour ses contacts récents.

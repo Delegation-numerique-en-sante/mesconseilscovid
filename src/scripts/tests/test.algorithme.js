@@ -82,6 +82,17 @@ describe('Algorithme statut', function () {
             'risque-eleve'
         )
     })
+
+    it('Un profil avec un contact à risque mais autre ne présente pas un risque élevé', function () {
+        var data = {
+            contact_a_risque: true,
+            contact_a_risque_autre: true,
+        }
+        profil.fillData(data)
+        chai.expect(algorithme.statut(algorithme.getData(profil))).to.equal(
+            'peu-de-risques'
+        )
+    })
 })
 
 describe('Algorithme conseils personnels', function () {
@@ -159,10 +170,13 @@ describe('Algorithme conseils personnels', function () {
         profil.fillData(data)
         chai.expect(
             algorithme.conseilsPersonnelsBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal(['conseils-personnels-contact-a-risque'])
+        ).to.deep.equal([
+            'conseils-personnels-contact-a-risque',
+            'conseils-personnels-contact-a-risque-default',
+        ])
     })
 
-    it('Un profil avec un contact à risque + autre', function () {
+    it('Un profil avec un contact à risque + autre seulement', function () {
         var data = {
             contact_a_risque: true,
             contact_a_risque_autre: true,
@@ -172,6 +186,22 @@ describe('Algorithme conseils personnels', function () {
             algorithme.conseilsPersonnelsBlockNamesToDisplay(algorithme.getData(profil))
         ).to.deep.equal([
             'conseils-personnels-contact-a-risque',
+            'conseils-personnels-contact-a-risque-autre-only',
+        ])
+    })
+
+    it('Un profil avec un contact à risque + autre + autre case cochée', function () {
+        var data = {
+            contact_a_risque: true,
+            contact_a_risque_contact_direct: true,
+            contact_a_risque_autre: true,
+        }
+        profil.fillData(data)
+        chai.expect(
+            algorithme.conseilsPersonnelsBlockNamesToDisplay(algorithme.getData(profil))
+        ).to.deep.equal([
+            'conseils-personnels-contact-a-risque',
+            'conseils-personnels-contact-a-risque-default',
             'conseils-personnels-contact-a-risque-autre',
         ])
     })

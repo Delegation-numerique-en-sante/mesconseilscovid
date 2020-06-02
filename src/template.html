@@ -533,13 +533,17 @@
         </div>
 
         <div id="conseils-personnels-contact-a-risque" class="conseils" hidden>
-            <div class="conseil conseil-orange">
+            <div id="conseils-personnels-contact-a-risque-default" class="conseil conseil-orange" hidden>
                 {{ conseils_contact_à_risque }}
+            </div>
+            <div id="conseils-personnels-contact-a-risque-autre-only" class="conseil" hidden>
+                {{ conseils_contact_à_risque_autre_uniquement }}
             </div>
             {{ conseils_contact_à_risque_info }}
             <div id="conseils-personnels-contact-a-risque-autre" hidden>
                 {{ conseils_contact_à_risque_autre }}
             </div>
+            {{ conseils_cartographie_dépistage }}
         </div>
 
         <div id="conseils-departement" class="conseils" hidden>
