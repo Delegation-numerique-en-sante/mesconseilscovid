@@ -22,13 +22,13 @@ jobs:
         run: |
           make install
 
-      - name: Run tests
-        run: |
-          make test
-
       - name: Build
         run: |
           make build
+
+      - name: Run tests
+        run: |
+          make test
 
       - uses: actions/upload-artifact@v2
         with:
