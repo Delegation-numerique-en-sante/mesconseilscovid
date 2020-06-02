@@ -41,6 +41,7 @@ describe('Profil', function () {
             contact_a_risque_actes: undefined,
             contact_a_risque_espace_confine: undefined,
             contact_a_risque_meme_classe: undefined,
+            contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
         })
         chai.expect(profil.isComplete()).to.equal(false)
@@ -95,6 +96,7 @@ describe('Profil', function () {
             contact_a_risque_actes: false,
             contact_a_risque_espace_confine: false,
             contact_a_risque_meme_classe: false,
+            contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
         }
         profil.fillData(data)
@@ -131,6 +133,7 @@ describe('Profil', function () {
             contact_a_risque_actes: false,
             contact_a_risque_espace_confine: false,
             contact_a_risque_meme_classe: false,
+            contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
         }
         profil.fillData(data)
@@ -163,6 +166,7 @@ describe('Profil', function () {
             contact_a_risque_actes: undefined,
             contact_a_risque_espace_confine: undefined,
             contact_a_risque_meme_classe: undefined,
+            contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
         })
         chai.expect(profil.isComplete()).to.equal(false)

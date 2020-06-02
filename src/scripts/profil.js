@@ -27,6 +27,7 @@ module.exports = function () {
         this.contact_a_risque_actes = undefined
         this.contact_a_risque_espace_confine = undefined
         this.contact_a_risque_meme_classe = undefined
+        this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_autre = undefined
     }
 
@@ -59,6 +60,7 @@ module.exports = function () {
         this.contact_a_risque_actes = data['contact_a_risque_actes']
         this.contact_a_risque_espace_confine = data['contact_a_risque_espace_confine']
         this.contact_a_risque_meme_classe = data['contact_a_risque_meme_classe']
+        this.contact_a_risque_stop_covid = data['contact_a_risque_stop_covid']
         this.contact_a_risque_autre = data['contact_a_risque_autre']
     }
 
@@ -91,6 +93,7 @@ module.exports = function () {
             contact_a_risque_actes: this.contact_a_risque_actes,
             contact_a_risque_espace_confine: this.contact_a_risque_espace_confine,
             contact_a_risque_meme_classe: this.contact_a_risque_meme_classe,
+            contact_a_risque_stop_covid: this.contact_a_risque_stop_covid,
             contact_a_risque_autre: this.contact_a_risque_autre,
         }
     }
