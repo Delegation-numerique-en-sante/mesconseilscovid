@@ -1,5 +1,11 @@
 # Changelog
 
+## 2020-06-03
+
+* #111 : mise à jour de l’algorithme, cas particulier lorsque autre contact à risque
+* ajout d’un bloc « Pour finir » en pied de page de conseils
+* rendu plus explicite du bloc de statut avec un bloc « En résumé »
+
 ## 2020-06-02
 
 * ajout d’une option relative à l’application StopCovid dans l’écran des contacts à risque
