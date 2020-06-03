@@ -151,16 +151,6 @@ Nous n’avons pas accès à vos données et vous pouvez <a class="js-suppressio
 
 </div>
 
-<div class="form-controls">
-    <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
-    <div class="button-full-width">
-        <a class="button button-full-width js-suppression" href="">
-            Refaire le questionnaire<br>
-            (pour un proche ?)
-        </a>
-        <p class="extra-button">Vos données seront effacées.</p>
-    </div>
-</div>
 
 
 ---
