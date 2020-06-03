@@ -186,11 +186,30 @@ Si case antécédents chroniques autres cochée :
 
 Question : [libellé](questions/question_symptômes_actuels_libellé.md), [aide](questions/question_symptômes_aide.md)
 
+Sous-question (température) : [libellé](questions/question_symptômes_actuels_température_libellé.md)
+
+Sous-question (température inconnue) : [libellé](questions/question_symptômes_actuels_température_inconnue_libellé.md)
+
+Sous-question (toux) : [libellé](questions/question_symptômes_actuels_toux_libellé.md)
+
+Sous-question (odorat) : [libellé](questions/question_symptômes_actuels_odorat_libellé.md)
+
+Sous-question (douleurs) : [libellé](questions/question_symptômes_actuels_douleurs_libellé.md)
+
+Sous-question (diarrhée) : [libellé](questions/question_symptômes_actuels_diarrhée_libellé.md)
+
+Sous-question (fatigue) : [libellé](questions/question_symptômes_actuels_fatigue_libellé.md)
+
+Sous-question (alimentation) : [libellé](questions/question_symptômes_actuels_alimentation_libellé.md)
+
+Sous-question (souffle) : [libellé](questions/question_symptômes_actuels_souffle_libellé.md)
+
+
 Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange)
 
 Conseils :
 
-1. [conseils_symptômes_actuels.md](conseils/conseils_symptômes_actuels.md)
+1. [conseils_symptômes_actuels.md](conseils/conseils_symptômes_actuels.md) ou [conseils_symptômes_actuels_majeurs.md](conseils/conseils_symptômes_actuels_majeurs.md) si [Gravité majeure](#gravité-majeure)
 2. [conseils_isolement.md](conseils/conseils_isolement.md)
 3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
 4. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
@@ -277,6 +296,15 @@ Est définie comme étant une personne à risque celle qui vérifie l’une de c
 * est au 3e trimestre de sa grossesse
 * a un IMC > 30
 * a des [Antécédents](#antécédents)
+
+
+#### Gravité majeure
+
+Est définie comme étant une personne à gravité majeure celle qui vérifie l’une de ces conditions :
+
+* a une gêne respiratoire (essoufflement)
+* a des difficulté importantes pour s’alimenter ou boire depuis plus de 24 heures
+
 
 #### Contact à risque autre uniquement
 

@@ -119,7 +119,24 @@ describe('Algorithme conseils personnels', function () {
         profil.fillData(data)
         chai.expect(
             algorithme.conseilsPersonnelsBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal(['conseils-personnels-symptomes-actuels'])
+        ).to.deep.equal([
+            'conseils-personnels-symptomes-actuels',
+            'conseils-personnels-symptomes-actuels-default',
+        ])
+    })
+
+    it('Un profil avec des symptômes actuels majeurs', function () {
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_alimentation: true,
+        }
+        profil.fillData(data)
+        chai.expect(
+            algorithme.conseilsPersonnelsBlockNamesToDisplay(algorithme.getData(profil))
+        ).to.deep.equal([
+            'conseils-personnels-symptomes-actuels',
+            'conseils-personnels-symptomes-actuels-majeurs',
+        ])
     })
 
     it('Un profil avec des symptômes passés', function () {

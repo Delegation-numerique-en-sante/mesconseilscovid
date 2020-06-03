@@ -8,6 +8,8 @@ function getData(profil) {
     data.antecedents = hasAntecedents(data)
     data.contactARisqueAutresOnly = hasContactARisqueAutresOnly(data)
     data.symptomes = hasSymptomes(data)
+    data.symptomesActuelsMajeurs = hasSymptomesActuelsMajeurs(data)
+    data.symptomesActuelsMineurs = hasSymptomesActuelsMineurs(data)
     data.risques = hasRisques(data)
     return data
 }
@@ -47,6 +49,23 @@ function hasSymptomes(data) {
     )
 }
 
+function hasSymptomesActuelsMajeurs(data) {
+    return (
+        data.symptomes_actuels &&
+        (data.symptomes_actuels_souffle ||
+            data.symptomes_actuels_alimentation)
+    )
+}
+
+function hasSymptomesActuelsMineurs(data) {
+    return (
+        data.symptomes_actuels &&
+        (data.symptomes_actuels_temperature ||
+            data.symptomes_actuels_temperature_inconnue ||
+            data.symptomes_actuels_fatigue)
+    )
+}
+
 function hasContactARisqueAutresOnly(data) {
     return (
         data.contact_a_risque &&
@@ -78,6 +97,11 @@ function conseilsPersonnelsBlockNamesToDisplay(data) {
     var blockNames = []
     if (data.symptomes_actuels) {
         blockNames.push('conseils-personnels-symptomes-actuels')
+        if (data.symptomesActuelsMajeurs) {
+            blockNames.push('conseils-personnels-symptomes-actuels-majeurs')
+        } else {
+            blockNames.push('conseils-personnels-symptomes-actuels-default')
+        }
     } else if (data.symptomes_passes) {
         blockNames.push('conseils-personnels-symptomes-passes')
         if (data.risques || data.foyer_fragile) {

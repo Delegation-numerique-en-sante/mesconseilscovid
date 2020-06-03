@@ -393,6 +393,61 @@
                 </label>
                 <div class="details">{{ question_symptômes_aide }}</div>
             </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_temperature" type="checkbox" name="symptomes_actuels_temperature" disabled>
+                <label for="symptomes_actuels_temperature">
+                    <span>{{ question_symptômes_actuels_température_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_temperature_inconnue" type="checkbox" name="symptomes_actuels_temperature_inconnue" disabled>
+                <label for="symptomes_actuels_temperature_inconnue">
+                    <span>{{ question_symptômes_actuels_température_inconnue_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_toux" type="checkbox" name="symptomes_actuels_toux" disabled>
+                <label for="symptomes_actuels_toux">
+                    <span>{{ question_symptômes_actuels_toux_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_odorat" type="checkbox" name="symptomes_actuels_odorat" disabled>
+                <label for="symptomes_actuels_odorat">
+                    <span>{{ question_symptômes_actuels_odorat_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_douleurs" type="checkbox" name="symptomes_actuels_douleurs" disabled>
+                <label for="symptomes_actuels_douleurs">
+                    <span>{{ question_symptômes_actuels_douleurs_libellé }}</span>
+                </label>
+                <div class="details">{{ question_symptômes_actuels_douleurs_aide }}</div>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_diarrhee" type="checkbox" name="symptomes_actuels_diarrhee" disabled>
+                <label for="symptomes_actuels_diarrhee">
+                    <span>{{ question_symptômes_actuels_diarrhée_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_fatigue" type="checkbox" name="symptomes_actuels_fatigue" disabled>
+                <label for="symptomes_actuels_fatigue">
+                    <span>{{ question_symptômes_actuels_fatigue_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_alimentation" type="checkbox" name="symptomes_actuels_alimentation" disabled>
+                <label for="symptomes_actuels_alimentation">
+                    <span>{{ question_symptômes_actuels_alimentation_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_souffle" type="checkbox" name="symptomes_actuels_souffle" disabled>
+                <label for="symptomes_actuels_souffle">
+                    <span>{{ question_symptômes_actuels_souffle_libellé }}</span>
+                </label>
+            </div>
         </fieldset>
         <div class="form-controls">
             <a href="#antecedents" class="back-button button-outline">Retour</a>
@@ -511,7 +566,10 @@
             <h2 class="with-illustration">Vos conseils personnalisés</h2>
 
             <div id="conseils-personnels-symptomes-actuels" class="conseils" hidden>
-                <div class="conseil conseil-orange">
+                <div id="conseils-personnels-symptomes-actuels-majeurs" class="conseil conseil-orange" hidden>
+                    {{ conseils_symptômes_actuels_majeurs }}
+                </div>
+                <div id="conseils-personnels-symptomes-actuels-default" class="conseil conseil-orange" hidden>
                     {{ conseils_symptômes_actuels }}
                 </div>
                 {{ conseils_isolement }}

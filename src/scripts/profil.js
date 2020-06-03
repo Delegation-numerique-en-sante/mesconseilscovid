@@ -20,6 +20,15 @@ module.exports = function () {
         this.antecedent_drepano = undefined
         this.antecedent_chronique_autre = undefined
         this.symptomes_actuels = undefined
+        this.symptomes_actuels_temperature = undefined
+        this.symptomes_actuels_temperature_inconnue = undefined
+        this.symptomes_actuels_toux = undefined
+        this.symptomes_actuels_odorat = undefined
+        this.symptomes_actuels_douleurs = undefined
+        this.symptomes_actuels_diarrhee = undefined
+        this.symptomes_actuels_fatigue = undefined
+        this.symptomes_actuels_alimentation = undefined
+        this.symptomes_actuels_souffle = undefined
         this.symptomes_passes = undefined
         this.contact_a_risque = undefined
         this.contact_a_risque_meme_lieu_de_vie = undefined
@@ -52,6 +61,16 @@ module.exports = function () {
         this.antecedent_drepano = data['antecedent_drepano']
         this.antecedent_chronique_autre = data['antecedent_chronique_autre']
         this.symptomes_actuels = data['symptomes_actuels']
+        this.symptomes_actuels_temperature = data['symptomes_actuels_temperature']
+        this.symptomes_actuels_temperature_inconnue =
+            data['symptomes_actuels_temperature_inconnue']
+        this.symptomes_actuels_toux = data['symptomes_actuels_toux']
+        this.symptomes_actuels_odorat = data['symptomes_actuels_odorat']
+        this.symptomes_actuels_douleurs = data['symptomes_actuels_douleurs']
+        this.symptomes_actuels_diarrhee = data['symptomes_actuels_diarrhee']
+        this.symptomes_actuels_fatigue = data['symptomes_actuels_fatigue']
+        this.symptomes_actuels_alimentation = data['symptomes_actuels_alimentation']
+        this.symptomes_actuels_souffle = data['symptomes_actuels_souffle']
         this.symptomes_passes = data['symptomes_passes']
         this.contact_a_risque = data['contact_a_risque']
         this.contact_a_risque_meme_lieu_de_vie =
@@ -86,6 +105,16 @@ module.exports = function () {
             antecedent_drepano: this.antecedent_drepano,
             antecedent_chronique_autre: this.antecedent_chronique_autre,
             symptomes_actuels: this.symptomes_actuels,
+            symptomes_actuels_temperature: this.symptomes_actuels_temperature,
+            symptomes_actuels_temperature_inconnue: this
+                .symptomes_actuels_temperature_inconnue,
+            symptomes_actuels_toux: this.symptomes_actuels_toux,
+            symptomes_actuels_odorat: this.symptomes_actuels_odorat,
+            symptomes_actuels_douleurs: this.symptomes_actuels_douleurs,
+            symptomes_actuels_diarrhee: this.symptomes_actuels_diarrhee,
+            symptomes_actuels_fatigue: this.symptomes_actuels_fatigue,
+            symptomes_actuels_alimentation: this.symptomes_actuels_alimentation,
+            symptomes_actuels_souffle: this.symptomes_actuels_souffle,
             symptomes_passes: this.symptomes_passes,
             contact_a_risque: this.contact_a_risque,
             contact_a_risque_meme_lieu_de_vie: this.contact_a_risque_meme_lieu_de_vie,

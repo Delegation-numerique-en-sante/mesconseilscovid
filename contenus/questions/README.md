@@ -269,6 +269,46 @@ Une personne considérée comme fragile face au covid-19 est une personne prése
 ---
 
 
+## [question_symptômes_actuels_alimentation_libellé.md](question_symptômes_actuels_alimentation_libellé.md)
+
+<!---->Je suis dans l’impossibilité de m’alimenter <em>ou</em> de boire <b>depuis 24 heures ou plus</b>.
+
+
+---
+
+
+## [question_symptômes_actuels_diarrhée_libellé.md](question_symptômes_actuels_diarrhée_libellé.md)
+
+<!---->J’ai eu de la <b>diarrhée</b> ces dernières 24 heures (au moins 3 selles molles).
+
+
+---
+
+
+## [question_symptômes_actuels_douleurs_aide.md](question_symptômes_actuels_douleurs_aide.md)
+
+Si vous avez des maux de tête qui ne disparaissent pas après la prise de médicaments anti-douleurs (dont paracétamol) et que vous décririez comme intolérables : **appelez le 15**.
+
+
+---
+
+
+## [question_symptômes_actuels_douleurs_libellé.md](question_symptômes_actuels_douleurs_libellé.md)
+
+<!---->J’ai un <b>mal de gorge</b> <em>ou</em> des <b>douleurs musculaires</b> <em>ou</em> des <b>courbatures</b> inhabituelles <em>ou</em> des <b>maux de tête</b> inhabituels ces derniers jours.
+
+
+---
+
+
+## [question_symptômes_actuels_fatigue_libellé.md](question_symptômes_actuels_fatigue_libellé.md)
+
+<!---->J’ai une <b>fatigue inhabituelle</b> ces derniers jours <em>et</em> cette fatigue m’oblige à me reposer plus de <b>la moitié de la journée</b>.
+
+
+---
+
+
 ## [question_symptômes_actuels_libellé.md](question_symptômes_actuels_libellé.md)
 
 <!---->J’ai un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>actuellement</b>.
@@ -277,9 +317,49 @@ Une personne considérée comme fragile face au covid-19 est une personne prése
 ---
 
 
+## [question_symptômes_actuels_odorat_libellé.md](question_symptômes_actuels_odorat_libellé.md)
+
+<!---->J’ai noté une <b>perte</b> ou une forte diminution de mon <b>goût</b> <em>ou</em> de mon <b>odorat</b> ces derniers jours.
+
+
+---
+
+
+## [question_symptômes_actuels_souffle_libellé.md](question_symptômes_actuels_souffle_libellé.md)
+
+<!---->J’ai noté un <b>manque de souffle inhabituel</b> lorsque je parle <em>ou</em> fais un petit effort <b>dans les dernières 24 heures</b>.
+
+
+---
+
+
+## [question_symptômes_actuels_température_inconnue_libellé.md](question_symptômes_actuels_température_inconnue_libellé.md)
+
+<!----><b>Je ne sais pas</b> quelle a été ma température ces dernières 48 heures.
+
+
+---
+
+
+## [question_symptômes_actuels_température_libellé.md](question_symptômes_actuels_température_libellé.md)
+
+<!---->J’ai eu une température <b>&lt; 35,5°C</b> <em>ou</em> <b>>= 39°C</b> ces dernières 48 heures.
+
+
+---
+
+
 ## [question_symptômes_actuels_titre.md](question_symptômes_actuels_titre.md)
 
 <!---->Mon état actuel
+
+
+---
+
+
+## [question_symptômes_actuels_toux_libellé.md](question_symptômes_actuels_toux_libellé.md)
+
+<!---->J’ai une <b>toux</b> <em>ou</em> ma toux habituelle s’est modifiée ces derniers jours.
 
 
 ---
