@@ -6,6 +6,7 @@ function getData(profil) {
     data.imc = computeIMC(data.poids, data.taille)
     data.couleur = carteDepartements.couleur(data.departement)
     data.antecedents = hasAntecedents(data)
+    data.contactARisqueAutresOnly = hasContactARisqueAutresOnly(data)
     data.symptomes = hasSymptomes(data)
     data.risques = hasRisques(data)
     return data
@@ -39,7 +40,24 @@ function hasAntecedents(data) {
 }
 
 function hasSymptomes(data) {
-    return data.symptomes_actuels || data.symptomes_passes || data.contact_a_risque
+    return (
+        data.symptomes_actuels ||
+        data.symptomes_passes ||
+        (data.contact_a_risque && !data.contactARisqueAutresOnly)
+    )
+}
+
+function hasContactARisqueAutresOnly(data) {
+    return (
+        data.contact_a_risque &&
+        data.contact_a_risque_autre &&
+        !data.contact_a_risque_meme_lieu_de_vie &&
+        !data.contact_a_risque_contact_direct &&
+        !data.contact_a_risque_actes &&
+        !data.contact_a_risque_espace_confine &&
+        !data.contact_a_risque_meme_classe &&
+        !data.contact_a_risque_stop_covid
+    )
 }
 
 function statut(data) {
@@ -69,8 +87,13 @@ function conseilsPersonnelsBlockNamesToDisplay(data) {
         }
     } else if (data.contact_a_risque) {
         blockNames.push('conseils-personnels-contact-a-risque')
-        if (data.contact_a_risque_autre) {
-            blockNames.push('conseils-personnels-contact-a-risque-autre')
+        if (data.contactARisqueAutresOnly) {
+            blockNames.push('conseils-personnels-contact-a-risque-autre-only')
+        } else {
+            blockNames.push('conseils-personnels-contact-a-risque-default')
+            if (data.contact_a_risque_autre) {
+                blockNames.push('conseils-personnels-contact-a-risque-autre')
+            }
         }
     }
     return blockNames
