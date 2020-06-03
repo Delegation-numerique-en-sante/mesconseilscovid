@@ -165,7 +165,7 @@ function initRouter(profil, stockageLocal) {
         .on(new RegExp('^conseils$'), function () {
             var pageName = 'conseils'
             var element = loadPage(pageName)
-            conseils(element, profil)
+            conseils(element, profil, stockageLocal, router)
         })
         .on(new RegExp('^conditionsutilisation$'), function () {
             var pageName = 'conditionsutilisation'

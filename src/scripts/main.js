@@ -1,6 +1,7 @@
 require('./polyfills/custom_event.js')
 
 var Updater = require('./updater.js')
+var actions = require('./actions.js')
 
 var StockageLocal = require('./stockage.js')
 var stockageLocal = new StockageLocal()
@@ -16,12 +17,8 @@ window.router = router
         router.resolve()
         var updater = new Updater(router)
         updater.checkForUpdatesEvery(10) // Minutes.
+        var footer = document.querySelector('footer')
+        actions.bindSuppression(footer, profil, stockageLocal, router)
     })
     stockageLocal.charger(profil)
-    document.getElementById('delete-data').addEventListener('click', function (event) {
-        event.preventDefault()
-        profil.resetData()
-        stockageLocal.supprimer()
-        router.navigate('introduction')
-    })
 })()

@@ -486,212 +486,224 @@
 </section>
 
 <section id="conseils" hidden>
-    <div id="conseils-block" class="block">
-        <h2>En résumé</h2>
-        <div id="statut-risque-eleve" class="statut statut-risque-eleve" hidden>
-            {{ statut_risque_élevé_contamination }}
-        </div>
-        <div id="statut-personne-fragile" class="statut statut-personne-fragile" hidden>
-            {{ statut_personne_fragile }}
-        </div>
-        <div id="statut-foyer-fragile" class="statut statut-foyer-fragile" hidden>
-            {{ statut_foyer_fragile }}
-        </div>
-        <div id="statut-peu-de-risques" class="statut statut-peu-de-risques" hidden>
-            {{ statut_peu_de_risques }}
-        </div>
-
-        <h2 class="with-illustration">Vos conseils personnalisés</h2>
-
-        <div id="conseils-personnels-symptomes-actuels" class="conseils" hidden>
-            <div class="conseil conseil-orange">
-                {{ conseils_symptômes_actuels }}
+    <div>
+        <div id="conseils-block" class="block">
+            <h2>En résumé</h2>
+            <div id="statut-risque-eleve" class="statut statut-risque-eleve" hidden>
+                {{ statut_risque_élevé_contamination }}
             </div>
-            {{ conseils_isolement }}
-            {{ conseils_cartographie_dépistage }}
-            {{ conseils_symptômes_défaut }}
-        </div>
+            <div id="statut-personne-fragile" class="statut statut-personne-fragile" hidden>
+                {{ statut_personne_fragile }}
+            </div>
+            <div id="statut-foyer-fragile" class="statut statut-foyer-fragile" hidden>
+                {{ statut_foyer_fragile }}
+            </div>
+            <div id="statut-peu-de-risques" class="statut statut-peu-de-risques" hidden>
+                {{ statut_peu_de_risques }}
+            </div>
 
-        <div id="conseils-personnels-symptomes-passes" class="conseils" hidden>
-            <div id="conseils-personnels-symptomes-passes-sans-risques" hidden>
+            <h2 class="with-illustration">Vos conseils personnalisés</h2>
+
+            <div id="conseils-personnels-symptomes-actuels" class="conseils" hidden>
                 <div class="conseil conseil-orange">
-                    {{ conseils_symptômes_passés_sans_risques }}
+                    {{ conseils_symptômes_actuels }}
                 </div>
-                {{ conseils_symptômes_passés_sans_risques_info }}
-            </div>
-            <div id="conseils-personnels-symptomes-passes-avec-risques" hidden>
-                <div class="conseil conseil-orange">
-                    {{ conseils_symptômes_passés_avec_risques }}
-                </div>
-                {{ conseils_symptômes_passés_avec_risques_info }}
-            </div>
-            <div id="conseils-symptomes-passes-default">
                 {{ conseils_isolement }}
                 {{ conseils_cartographie_dépistage }}
                 {{ conseils_symptômes_défaut }}
             </div>
-        </div>
 
-        <div id="conseils-personnels-contact-a-risque" class="conseils" hidden>
-            <div id="conseils-personnels-contact-a-risque-default" class="conseil conseil-orange" hidden>
-                {{ conseils_contact_à_risque }}
+            <div id="conseils-personnels-symptomes-passes" class="conseils" hidden>
+                <div id="conseils-personnels-symptomes-passes-sans-risques" hidden>
+                    <div class="conseil conseil-orange">
+                        {{ conseils_symptômes_passés_sans_risques }}
+                    </div>
+                    {{ conseils_symptômes_passés_sans_risques_info }}
+                </div>
+                <div id="conseils-personnels-symptomes-passes-avec-risques" hidden>
+                    <div class="conseil conseil-orange">
+                        {{ conseils_symptômes_passés_avec_risques }}
+                    </div>
+                    {{ conseils_symptômes_passés_avec_risques_info }}
+                </div>
+                <div id="conseils-symptomes-passes-default">
+                    {{ conseils_isolement }}
+                    {{ conseils_cartographie_dépistage }}
+                    {{ conseils_symptômes_défaut }}
+                </div>
             </div>
-            <div id="conseils-personnels-contact-a-risque-autre-only" class="conseil" hidden>
-                {{ conseils_contact_à_risque_autre_uniquement }}
-            </div>
-            {{ conseils_contact_à_risque_info }}
-            <div id="conseils-personnels-contact-a-risque-autre" hidden>
-                {{ conseils_contact_à_risque_autre }}
-            </div>
-            {{ conseils_cartographie_dépistage }}
-        </div>
 
-        <div id="conseils-departement" class="conseils" hidden>
-            <h3>Votre localisation</h3>
-            <div class="reponse">
-                {{ réponse_département }}
-            </div>
-            <div id="conseils-departement-orange" hidden>
-                <div class="conseil conseil-orange">
-                    {{ conseils_département_orange }}
+            <div id="conseils-personnels-contact-a-risque" class="conseils" hidden>
+                <div id="conseils-personnels-contact-a-risque-default" class="conseil conseil-orange" hidden>
+                    {{ conseils_contact_à_risque }}
                 </div>
-            </div>
-            <div id="conseils-departement-vert" hidden>
-                <div class="conseil conseil-vert">
-                    {{ conseils_département_vert }}
+                <div id="conseils-personnels-contact-a-risque-autre-only" class="conseil" hidden>
+                    {{ conseils_contact_à_risque_autre_uniquement }}
                 </div>
+                {{ conseils_contact_à_risque_info }}
+                <div id="conseils-personnels-contact-a-risque-autre" hidden>
+                    {{ conseils_contact_à_risque_autre }}
+                </div>
+                {{ conseils_cartographie_dépistage }}
             </div>
-            <div id="conseils-departement-default">
-                {{ conseils_département_défaut }}
-            </div>
-        </div>
 
-        <div id="conseils-activite" class="conseils" hidden>
-            <h3>Votre activité</h3>
-            <div class="reponse">
-                <div id="reponse-activite-pro" hidden>
-                    {{ réponse_activité_pro }}
-                </div>
-                <div id="reponse-activite-pro-public" hidden>
-                    {{ réponse_activité_pro_public }}
-                </div>
-                <div id="reponse-activite-pro-sante" hidden>
-                    {{ réponse_activité_pro_santé }}
-                </div>
-                <div id="reponse-activite-pro-public-sante" hidden>
-                    {{ réponse_activité_pro_public_santé }}
-                </div>
-            </div>
-            <div id="conseils-activite-pro" hidden>
-                <div class="conseil">
-                    {{ conseils_activité_pro }}
-                </div>
-            </div>
-            <div id="conseils-activite-pro-public" hidden>
-                <div class="conseil">
-                    {{ conseils_activité_pro_public }}
-                </div>
-            </div>
-            <div id="conseils-activite-pro-sante" hidden>
-                <div class="conseil">
-                    {{ conseils_activité_pro_santé }}
-                </div>
-            </div>
-            <div id="conseils-activite-pro-infos" hidden>
-                {{ conseils_activité_pro_infos }}
-            </div>
-        </div>
-
-        <div id="conseils-foyer" class="conseils" hidden>
-            <h3>Votre foyer</h3>
-            <div id="conseils-foyer-enfants" hidden>
+            <div id="conseils-departement" class="conseils" hidden>
+                <h3>Votre localisation</h3>
                 <div class="reponse">
-                    {{ réponse_foyer_enfants }}
+                    {{ réponse_département }}
                 </div>
-                <div class="conseil">
-                    {{ conseils_foyer_enfants }}
+                <div id="conseils-departement-orange" hidden>
+                    <div class="conseil conseil-orange">
+                        {{ conseils_département_orange }}
+                    </div>
                 </div>
-                {{ conseils_foyer_enfant_garde }}
-                {{ conseils_foyer_enfants_vaccins }}
+                <div id="conseils-departement-vert" hidden>
+                    <div class="conseil conseil-vert">
+                        {{ conseils_département_vert }}
+                    </div>
+                </div>
+                <div id="conseils-departement-default">
+                    {{ conseils_département_défaut }}
+                </div>
             </div>
-            <div id="conseils-foyer-fragile" hidden>
+
+            <div id="conseils-activite" class="conseils" hidden>
+                <h3>Votre activité</h3>
                 <div class="reponse">
-                    {{ réponse_foyer_fragile }}
+                    <div id="reponse-activite-pro" hidden>
+                        {{ réponse_activité_pro }}
+                    </div>
+                    <div id="reponse-activite-pro-public" hidden>
+                        {{ réponse_activité_pro_public }}
+                    </div>
+                    <div id="reponse-activite-pro-sante" hidden>
+                        {{ réponse_activité_pro_santé }}
+                    </div>
+                    <div id="reponse-activite-pro-public-sante" hidden>
+                        {{ réponse_activité_pro_public_santé }}
+                    </div>
                 </div>
-                <div class="conseil">
-                    {{ conseils_foyer_fragile }}
+                <div id="conseils-activite-pro" hidden>
+                    <div class="conseil">
+                        {{ conseils_activité_pro }}
+                    </div>
                 </div>
-                {{ conseils_foyer_fragile_accueil_enfant }}
-                {{ conseils_maladie_chronique_info }}
+                <div id="conseils-activite-pro-public" hidden>
+                    <div class="conseil">
+                        {{ conseils_activité_pro_public }}
+                    </div>
+                </div>
+                <div id="conseils-activite-pro-sante" hidden>
+                    <div class="conseil">
+                        {{ conseils_activité_pro_santé }}
+                    </div>
+                </div>
+                <div id="conseils-activite-pro-infos" hidden>
+                    {{ conseils_activité_pro_infos }}
+                </div>
             </div>
-            <div id="conseils-foyer-enfants-fragile" hidden>
+
+            <div id="conseils-foyer" class="conseils" hidden>
+                <h3>Votre foyer</h3>
+                <div id="conseils-foyer-enfants" hidden>
+                    <div class="reponse">
+                        {{ réponse_foyer_enfants }}
+                    </div>
+                    <div class="conseil">
+                        {{ conseils_foyer_enfants }}
+                    </div>
+                    {{ conseils_foyer_enfant_garde }}
+                    {{ conseils_foyer_enfants_vaccins }}
+                </div>
+                <div id="conseils-foyer-fragile" hidden>
+                    <div class="reponse">
+                        {{ réponse_foyer_fragile }}
+                    </div>
+                    <div class="conseil">
+                        {{ conseils_foyer_fragile }}
+                    </div>
+                    {{ conseils_foyer_fragile_accueil_enfant }}
+                    {{ conseils_maladie_chronique_info }}
+                </div>
+                <div id="conseils-foyer-enfants-fragile" hidden>
+                    <div class="reponse">
+                        {{ réponse_foyer_enfants_fragile }}
+                    </div>
+                    <div class="conseil">
+                        {{ conseils_foyer_fragile }}
+                    </div>
+                    {{ conseils_maladie_chronique_info }}
+                    <div class="conseil">
+                        {{ conseils_foyer_enfants_fragile }}
+                    </div>
+                    {{ conseils_foyer_enfant_garde }}
+                    {{ conseils_foyer_enfants_vaccins }}
+                </div>
+                <div id="conseils-foyer-fragile-suivi" hidden>
+                    {{ conseils_foyer_fragile_suivi }}
+                </div>
+            </div>
+
+            <div id="conseils-caracteristiques" class="conseils" hidden>
+                <h3>Vos caractéristiques et antécédents</h3>
                 <div class="reponse">
-                    {{ réponse_foyer_enfants_fragile }}
+                    <div id="reponse-caracteristiques" hidden>
+                        {{ réponse_caractéristiques }}
+                    </div>
+                    <div id="reponse-antecedents" hidden>
+                        {{ réponse_antécédents }}
+                    </div>
                 </div>
-                <div class="conseil">
-                    {{ conseils_foyer_fragile }}
+                <div id="conseils-caracteristiques-antecedents" hidden>
+                    <div class="conseil">
+                        {{ conseils_caractéristiques_antécédents }}
+                    </div>
                 </div>
-                {{ conseils_maladie_chronique_info }}
-                <div class="conseil">
-                    {{ conseils_foyer_enfants_fragile }}
+                <div id="conseils-caracteristiques-antecedents-activite-pro" hidden>
+                    <div class="conseil">
+                        {{ conseils_caractéristiques_antécédents_activité_pro }}
+                    </div>
                 </div>
-                {{ conseils_foyer_enfant_garde }}
-                {{ conseils_foyer_enfants_vaccins }}
+                <div id="conseils-caracteristiques-antecedents-info" hidden>
+                    {{ conseils_caractéristiques_antécédents_info }}
+                </div>
+                <div id="conseils-caracteristiques-antecedents-info-risque" hidden>
+                    {{ conseils_caractéristiques_antécédents_info_risque }}
+                </div>
+                <div id="conseils-antecedents-chroniques-autres" hidden>
+                    <div class="conseil">
+                        {{ conseils_antécédents_chroniques_autres }}
+                    </div>
+                    {{ conseils_maladie_chronique_info }}
+                </div>
             </div>
-            <div id="conseils-foyer-fragile-suivi" hidden>
-                {{ conseils_foyer_fragile_suivi }}
+
+            <!-- Conseils généraux toujours affichés. -->
+            <div id="conseils-generaux" class="conseils">
+                <h3>Conseils d’ordre général</h3>
+                <div class="conseil">
+                    {{ conseils_généraux }}
+                </div>
+                <div>
+                    {{ conseils_généraux_info }}
+                </div>
             </div>
         </div>
 
-        <div id="conseils-caracteristiques" class="conseils" hidden>
-            <h3>Vos caractéristiques et antécédents</h3>
-            <div class="reponse">
-                <div id="reponse-caracteristiques" hidden>
-                    {{ réponse_caractéristiques }}
-                </div>
-                <div id="reponse-antecedents" hidden>
-                    {{ réponse_antécédents }}
-                </div>
-            </div>
-            <div id="conseils-caracteristiques-antecedents" hidden>
-                <div class="conseil">
-                    {{ conseils_caractéristiques_antécédents }}
-                </div>
-            </div>
-            <div id="conseils-caracteristiques-antecedents-activite-pro" hidden>
-                <div class="conseil">
-                    {{ conseils_caractéristiques_antécédents_activité_pro }}
+        <div id="conseils-block" class="block">
+            <div id="pour-finir" class="conseils">
+                {{ meta_pour_finir }}
+                <div class="form-controls">
+                    <a class="button back-button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
+                    <div class="button-full-width">
+                        <a class="button button-full-width js-suppression" href="">
+                            Refaire le questionnaire<br>
+                            (pour un proche ?)
+                        </a>
+                        <p class="extra-button">Vos données seront effacées.</p>
+                    </div>
                 </div>
             </div>
-            <div id="conseils-caracteristiques-antecedents-info" hidden>
-                {{ conseils_caractéristiques_antécédents_info }}
-            </div>
-            <div id="conseils-caracteristiques-antecedents-info-risque" hidden>
-                {{ conseils_caractéristiques_antécédents_info_risque }}
-            </div>
-            <div id="conseils-antecedents-chroniques-autres" hidden>
-                <div class="conseil">
-                    {{ conseils_antécédents_chroniques_autres }}
-                </div>
-                {{ conseils_maladie_chronique_info }}
-            </div>
-        </div>
-
-        <!-- Conseils généraux toujours affichés. -->
-        <div id="conseils-generaux" class="conseils">
-            <h3>Conseils d’ordre général</h3>
-            <div class="conseil">
-                {{ conseils_généraux }}
-            </div>
-            <div>
-                {{ conseils_généraux_info }}
-            </div>
-        </div>
-
-        <!-- Boutons de modification/impression toujours affichés. -->
-        <div class="form-controls">
-            <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
-            <a class="button button-full-width" href="" id="impression">Imprimer mes conseils</a>
         </div>
     </div>
 </section>
