@@ -236,11 +236,11 @@ Sous-question (stop covid) : [libellé](questions/question_symptômes_contact_à
 
 Sous-question (autre) : [libellé](questions/question_symptômes_contact_à_risque_autre_libellé.md)
 
-Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange)
+Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange) ou [statut_peu_de_risques.md](statuts/statut_peu_de_risques.md) (vert) si [Contact à risque autre uniquement](#contact-à-risque-autre-uniquement)
 
 Conseils :
 
-1. [conseils_contact_à_risque.md](conseils/conseils_contact_à_risque.md) ou [conseils_contact_à_risque_autre_uniquement.md](conseils/conseils_contact_à_risque_autre_uniquement.md) si [Contact à risque autre uniquement](#Contact-a-risque-autre-uniquement)
+1. [conseils_contact_à_risque.md](conseils/conseils_contact_à_risque.md) ou [conseils_contact_à_risque_autre_uniquement.md](conseils/conseils_contact_à_risque_autre_uniquement.md) si [Contact à risque autre uniquement](#contact-à-risque-autre-uniquement)
 2. [conseils_contact_à_risque_info.md](conseils/conseils_contact_à_risque_info.md)
 3. [conseils_contact_à_risque_autre.md](conseils/conseils_contact_à_risque_autre.md) si la case `Je n’étais dans aucune de ces situations` est cochée mais pas toute seule
 4. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
