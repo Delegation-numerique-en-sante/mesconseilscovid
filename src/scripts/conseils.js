@@ -1,5 +1,5 @@
 var affichage = require('./affichage.js')
-var algorithme = require('./algorithme.js')
+var Algorithme = require('./algorithme.js').Algorithme
 var actions = require('./actions.js')
 var injection = require('./injection.js')
 
@@ -7,28 +7,21 @@ function page(element, profil, stockageLocal, router) {
     // Hide all conseils that might have been made visible on previous runs.
     affichage.hideSelector(element, '.visible')
 
-    // Display appropriate conseils.
-    var data = algorithme.getData(profil)
-
     // Use custom illustration if needed
-    var conseilsBlock = element.querySelector('#conseils-block')
-    if (data.symptomes_actuels) {
-        conseilsBlock.classList.add('symptomes-actuels')
-    } else if (data.symptomes_passes) {
-        conseilsBlock.classList.add('symptomes-passes')
-    } else if (data.contact_a_risque) {
-        conseilsBlock.classList.add('contact-a-risque')
+    var extraClass = getCustomIllustrationName(profil)
+    if (extraClass) {
+        element.querySelector('#conseils-block').classList.add(extraClass)
     }
 
-    var blockNames = statutBlockNamesToDisplay(data)
+    // Display appropriate conseils.
+    var algorithme = new Algorithme(profil)
+    var blockNames = statutBlockNamesToDisplay(algorithme)
+    blockNames = blockNames.concat(algorithme.conseilsPersonnelsBlockNamesToDisplay())
+    blockNames = blockNames.concat(algorithme.departementBlockNamesToDisplay())
+    blockNames = blockNames.concat(algorithme.activiteProBlockNamesToDisplay())
+    blockNames = blockNames.concat(algorithme.foyerBlockNamesToDisplay())
     blockNames = blockNames.concat(
-        algorithme.conseilsPersonnelsBlockNamesToDisplay(data)
-    )
-    blockNames = blockNames.concat(algorithme.departementBlockNamesToDisplay(data))
-    blockNames = blockNames.concat(algorithme.activiteProBlockNamesToDisplay(data))
-    blockNames = blockNames.concat(algorithme.foyerBlockNamesToDisplay(data))
-    blockNames = blockNames.concat(
-        algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(data)
+        algorithme.caracteristiquesAntecedentsBlockNamesToDisplay()
     )
     affichage.displayBlocks(element, blockNames)
 
@@ -37,13 +30,25 @@ function page(element, profil, stockageLocal, router) {
     actions.bindSuppression(element, profil, stockageLocal, router)
 
     // Dynamic data injections.
-    injection.departement(element, data)
-    injection.caracteristiques(element, data)
-    injection.antecedents(element, data)
+    injection.departement(element, profil.departement)
+    injection.caracteristiques(element, algorithme)
+    injection.antecedents(element, algorithme)
 }
 
-function statutBlockNamesToDisplay(data) {
-    return ['statut-' + algorithme.statut(data)]
+function getCustomIllustrationName(profil) {
+    if (profil.symptomes_actuels) {
+        return 'symptomes-actuels'
+    }
+    if (profil.symptomes_passes) {
+        return 'symptomes-passes'
+    }
+    if (profil.contact_a_risque) {
+        return 'contact-a-risque'
+    }
+}
+
+function statutBlockNamesToDisplay(algorithme) {
+    return ['statut-' + algorithme.statut()]
 }
 
 module.exports = page

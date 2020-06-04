@@ -1,6 +1,6 @@
 var chai = require('chai')
 
-var algorithme = require('../algorithme.js')
+var Algorithme = require('../algorithme.js').Algorithme
 
 var Profil = require('../profil.js')
 var profil = new Profil()
@@ -17,9 +17,8 @@ describe('Algorithme statut', function () {
     it('Un profil sans risques affiche le statut par défaut', function () {
         var data = {}
         profil.fillData(data)
-        chai.expect(algorithme.statut(algorithme.getData(profil))).to.equal(
-            'peu-de-risques'
-        )
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.statut()).to.equal('peu-de-risques')
     })
 
     it('Un profil avec foyer à risque', function () {
@@ -27,9 +26,8 @@ describe('Algorithme statut', function () {
             foyer_fragile: true,
         }
         profil.fillData(data)
-        chai.expect(algorithme.statut(algorithme.getData(profil))).to.equal(
-            'foyer-fragile'
-        )
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.statut()).to.equal('foyer-fragile')
     })
 
     it('Un profil avec personne à risque', function () {
@@ -37,9 +35,8 @@ describe('Algorithme statut', function () {
             antecedent_cardio: true,
         }
         profil.fillData(data)
-        chai.expect(algorithme.statut(algorithme.getData(profil))).to.equal(
-            'personne-fragile'
-        )
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.statut()).to.equal('personne-fragile')
     })
 
     it('Un profil avec personne à risque + foyer à risque', function () {
@@ -48,9 +45,8 @@ describe('Algorithme statut', function () {
             foyer_fragile: true,
         }
         profil.fillData(data)
-        chai.expect(algorithme.statut(algorithme.getData(profil))).to.equal(
-            'personne-fragile'
-        )
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.statut()).to.equal('personne-fragile')
     })
 
     it('Un profil avec des symptômes actuels présente un risque élevé', function () {
@@ -58,9 +54,8 @@ describe('Algorithme statut', function () {
             symptomes_actuels: true,
         }
         profil.fillData(data)
-        chai.expect(algorithme.statut(algorithme.getData(profil))).to.equal(
-            'risque-eleve'
-        )
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.statut()).to.equal('risque-eleve')
     })
 
     it('Un profil avec des symptômes passés présente un risque élevé', function () {
@@ -68,9 +63,8 @@ describe('Algorithme statut', function () {
             symptomes_passes: true,
         }
         profil.fillData(data)
-        chai.expect(algorithme.statut(algorithme.getData(profil))).to.equal(
-            'risque-eleve'
-        )
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.statut()).to.equal('risque-eleve')
     })
 
     it('Un profil avec un contact à risque présente un risque élevé', function () {
@@ -78,9 +72,8 @@ describe('Algorithme statut', function () {
             contact_a_risque: true,
         }
         profil.fillData(data)
-        chai.expect(algorithme.statut(algorithme.getData(profil))).to.equal(
-            'risque-eleve'
-        )
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.statut()).to.equal('risque-eleve')
     })
 
     it('Un profil avec un contact à risque mais autre ne présente pas un risque élevé', function () {
@@ -89,9 +82,8 @@ describe('Algorithme statut', function () {
             contact_a_risque_autre: true,
         }
         profil.fillData(data)
-        chai.expect(algorithme.statut(algorithme.getData(profil))).to.equal(
-            'peu-de-risques'
-        )
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.statut()).to.equal('peu-de-risques')
     })
 })
 
@@ -107,9 +99,10 @@ describe('Algorithme conseils personnels', function () {
     it('Un profil sans risques n’affiche rien de particulier', function () {
         var data = {}
         profil.fillData(data)
-        chai.expect(
-            algorithme.conseilsPersonnelsBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal(
+            []
+        )
     })
 
     it('Un profil avec des symptômes actuels', function () {
@@ -117,9 +110,8 @@ describe('Algorithme conseils personnels', function () {
             symptomes_actuels: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.conseilsPersonnelsBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-actuels',
             'conseils-personnels-symptomes-actuels-default',
         ])
@@ -131,9 +123,8 @@ describe('Algorithme conseils personnels', function () {
             symptomes_actuels_alimentation: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.conseilsPersonnelsBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-actuels',
             'conseils-personnels-symptomes-actuels-majeurs',
         ])
@@ -144,9 +135,8 @@ describe('Algorithme conseils personnels', function () {
             symptomes_passes: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.conseilsPersonnelsBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-passes',
             'conseils-personnels-symptomes-passes-sans-risques',
         ])
@@ -158,9 +148,8 @@ describe('Algorithme conseils personnels', function () {
             sup65: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.conseilsPersonnelsBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-passes',
             'conseils-personnels-symptomes-passes-avec-risques',
         ])
@@ -172,9 +161,8 @@ describe('Algorithme conseils personnels', function () {
             foyer_fragile: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.conseilsPersonnelsBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-passes',
             'conseils-personnels-symptomes-passes-avec-risques',
         ])
@@ -185,9 +173,8 @@ describe('Algorithme conseils personnels', function () {
             contact_a_risque: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.conseilsPersonnelsBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-contact-a-risque',
             'conseils-personnels-contact-a-risque-default',
         ])
@@ -199,9 +186,8 @@ describe('Algorithme conseils personnels', function () {
             contact_a_risque_autre: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.conseilsPersonnelsBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-contact-a-risque',
             'conseils-personnels-contact-a-risque-autre-only',
         ])
@@ -214,9 +200,8 @@ describe('Algorithme conseils personnels', function () {
             contact_a_risque_autre: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.conseilsPersonnelsBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-contact-a-risque',
             'conseils-personnels-contact-a-risque-default',
             'conseils-personnels-contact-a-risque-autre',
@@ -238,9 +223,11 @@ describe('Algorithme département', function () {
             departement: '01',
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.departementBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal(['conseils-departement', 'conseils-departement-vert'])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.departementBlockNamesToDisplay()).to.deep.equal([
+            'conseils-departement',
+            'conseils-departement-vert',
+        ])
     })
 
     it('Un département orange affiche le bloc orange', function () {
@@ -248,9 +235,11 @@ describe('Algorithme département', function () {
             departement: '75',
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.departementBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal(['conseils-departement', 'conseils-departement-orange'])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.departementBlockNamesToDisplay()).to.deep.equal([
+            'conseils-departement',
+            'conseils-departement-orange',
+        ])
     })
 
     it('Un département inconnu n’affiche pas de bloc couleur', function () {
@@ -258,9 +247,10 @@ describe('Algorithme département', function () {
             departement: '977',
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.departementBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal(['conseils-departement'])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.departementBlockNamesToDisplay()).to.deep.equal([
+            'conseils-departement',
+        ])
     })
 
     it('Un département + symptômes actuels n’affiche pas la localisation', function () {
@@ -269,9 +259,8 @@ describe('Algorithme département', function () {
             symptomes_actuels: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.departementBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.departementBlockNamesToDisplay()).to.deep.equal([])
     })
 
     it('Un département + symptômes passés affiche la localisation', function () {
@@ -280,9 +269,11 @@ describe('Algorithme département', function () {
             symptomes_passes: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.departementBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal(['conseils-departement', 'conseils-departement-vert'])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.departementBlockNamesToDisplay()).to.deep.equal([
+            'conseils-departement',
+            'conseils-departement-vert',
+        ])
     })
 
     it('Un département + contact à risque affiche la localisation', function () {
@@ -291,9 +282,11 @@ describe('Algorithme département', function () {
             contact_a_risque: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.departementBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal(['conseils-departement', 'conseils-departement-vert'])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.departementBlockNamesToDisplay()).to.deep.equal([
+            'conseils-departement',
+            'conseils-departement-vert',
+        ])
     })
 })
 
@@ -307,9 +300,8 @@ describe('Algorithme activité pro', function () {
     })
 
     it('Aucune activité pro n’affiche rien', function () {
-        chai.expect(
-            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.activiteProBlockNamesToDisplay()).to.deep.equal([])
     })
 
     it('Symptômes actuels n’affiche rien', function () {
@@ -317,9 +309,8 @@ describe('Algorithme activité pro', function () {
             symptomes_actuels: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.activiteProBlockNamesToDisplay()).to.deep.equal([])
     })
 
     it('Symptômes passés n’affiche rien', function () {
@@ -327,9 +318,8 @@ describe('Algorithme activité pro', function () {
             symptomes_passes: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.activiteProBlockNamesToDisplay()).to.deep.equal([])
     })
 
     it('Contact à risque n’affiche rien', function () {
@@ -337,9 +327,8 @@ describe('Algorithme activité pro', function () {
             contact_a_risque: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.activiteProBlockNamesToDisplay()).to.deep.equal([])
     })
 
     it('Une activité pro affiche des conseils + pro + infos', function () {
@@ -347,9 +336,8 @@ describe('Algorithme activité pro', function () {
             activite_pro: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.activiteProBlockNamesToDisplay()).to.deep.equal([
             'conseils-activite',
             'reponse-activite-pro',
             'conseils-activite-pro',
@@ -363,9 +351,8 @@ describe('Algorithme activité pro', function () {
             activite_pro_public: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.activiteProBlockNamesToDisplay()).to.deep.equal([
             'conseils-activite',
             'reponse-activite-pro-public',
             'conseils-activite-pro-public',
@@ -379,9 +366,8 @@ describe('Algorithme activité pro', function () {
             activite_pro_sante: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.activiteProBlockNamesToDisplay()).to.deep.equal([
             'conseils-activite',
             'reponse-activite-pro-sante',
             'conseils-activite-pro-sante',
@@ -395,9 +381,8 @@ describe('Algorithme activité pro', function () {
             activite_pro_sante: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.activiteProBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.activiteProBlockNamesToDisplay()).to.deep.equal([
             'conseils-activite',
             'reponse-activite-pro-public-sante',
             'conseils-activite-pro-public',
@@ -416,9 +401,8 @@ describe('Algorithme foyer', function () {
     })
 
     it('Aucun risque foyer n’affiche rien', function () {
-        chai.expect(
-            algorithme.foyerBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.foyerBlockNamesToDisplay()).to.deep.equal([])
     })
 
     it('Symptômes actuels n’affiche rien', function () {
@@ -426,9 +410,8 @@ describe('Algorithme foyer', function () {
             symptomes_actuels: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.foyerBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.foyerBlockNamesToDisplay()).to.deep.equal([])
     })
 
     it('Symptômes passés affiche suivi', function () {
@@ -436,9 +419,11 @@ describe('Algorithme foyer', function () {
             symptomes_passes: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.foyerBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal(['conseils-foyer', 'conseils-foyer-fragile-suivi'])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.foyerBlockNamesToDisplay()).to.deep.equal([
+            'conseils-foyer',
+            'conseils-foyer-fragile-suivi',
+        ])
     })
 
     it('Contact à risque affiche suivi', function () {
@@ -446,9 +431,11 @@ describe('Algorithme foyer', function () {
             contact_a_risque: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.foyerBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal(['conseils-foyer', 'conseils-foyer-fragile-suivi'])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.foyerBlockNamesToDisplay()).to.deep.equal([
+            'conseils-foyer',
+            'conseils-foyer-fragile-suivi',
+        ])
     })
 
     it('Risque enfant', function () {
@@ -456,9 +443,11 @@ describe('Algorithme foyer', function () {
             foyer_enfants: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.foyerBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal(['conseils-foyer', 'conseils-foyer-enfants'])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.foyerBlockNamesToDisplay()).to.deep.equal([
+            'conseils-foyer',
+            'conseils-foyer-enfants',
+        ])
     })
 
     it('Risque fragile', function () {
@@ -466,9 +455,11 @@ describe('Algorithme foyer', function () {
             foyer_fragile: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.foyerBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal(['conseils-foyer', 'conseils-foyer-fragile'])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.foyerBlockNamesToDisplay()).to.deep.equal([
+            'conseils-foyer',
+            'conseils-foyer-fragile',
+        ])
     })
 
     it('Risque enfant ET fragile', function () {
@@ -477,9 +468,11 @@ describe('Algorithme foyer', function () {
             foyer_fragile: true,
         }
         profil.fillData(data)
-        chai.expect(
-            algorithme.foyerBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal(['conseils-foyer', 'conseils-foyer-enfants-fragile'])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.foyerBlockNamesToDisplay()).to.deep.equal([
+            'conseils-foyer',
+            'conseils-foyer-enfants-fragile',
+        ])
     })
 })
 
@@ -493,9 +486,8 @@ describe('Algorithme caractéristiques et antécédents', function () {
     })
 
     it('Aucun antécédent n’affiche rien', function () {
-        chai.expect(
-            algorithme.foyerBlockNamesToDisplay(algorithme.getData(profil))
-        ).to.deep.equal([])
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.foyerBlockNamesToDisplay()).to.deep.equal([])
     })
 
     it('Symptômes actuels n’affiche rien', function () {
@@ -503,10 +495,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             symptomes_actuels: true,
         }
         profil.fillData(data)
+        var algorithme = new Algorithme(profil)
         chai.expect(
-            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData(profil)
-            )
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay()
         ).to.deep.equal([])
     })
 
@@ -515,10 +506,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             symptomes_passes: true,
         }
         profil.fillData(data)
+        var algorithme = new Algorithme(profil)
         chai.expect(
-            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData(profil)
-            )
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay()
         ).to.deep.equal([])
     })
 
@@ -527,10 +517,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             contact_a_risque: true,
         }
         profil.fillData(data)
+        var algorithme = new Algorithme(profil)
         chai.expect(
-            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData(profil)
-            )
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay()
         ).to.deep.equal([])
     })
 
@@ -539,10 +528,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             sup65: true,
         }
         profil.fillData(data)
+        var algorithme = new Algorithme(profil)
         chai.expect(
-            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData(profil)
-            )
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay()
         ).to.deep.equal([
             'conseils-caracteristiques',
             'reponse-caracteristiques',
@@ -557,10 +545,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             poids: 100,
         }
         profil.fillData(data)
+        var algorithme = new Algorithme(profil)
         chai.expect(
-            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData(profil)
-            )
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay()
         ).to.deep.equal([
             'conseils-caracteristiques',
             'reponse-caracteristiques',
@@ -574,10 +561,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             grossesse_3e_trimestre: true,
         }
         profil.fillData(data)
+        var algorithme = new Algorithme(profil)
         chai.expect(
-            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData(profil)
-            )
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay()
         ).to.deep.equal([
             'conseils-caracteristiques',
             'reponse-caracteristiques',
@@ -591,10 +577,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             antecedent_cardio: true,
         }
         profil.fillData(data)
+        var algorithme = new Algorithme(profil)
         chai.expect(
-            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData(profil)
-            )
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay()
         ).to.deep.equal([
             'conseils-caracteristiques',
             'reponse-antecedents',
@@ -609,10 +594,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             activite_pro: true,
         }
         profil.fillData(data)
+        var algorithme = new Algorithme(profil)
         chai.expect(
-            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData(profil)
-            )
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay()
         ).to.deep.equal([
             'conseils-caracteristiques',
             'reponse-antecedents',
@@ -626,10 +610,9 @@ describe('Algorithme caractéristiques et antécédents', function () {
             antecedent_chronique_autre: true,
         }
         profil.fillData(data)
+        var algorithme = new Algorithme(profil)
         chai.expect(
-            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(
-                algorithme.getData(profil)
-            )
+            algorithme.caracteristiquesAntecedentsBlockNamesToDisplay()
         ).to.deep.equal([
             'conseils-caracteristiques',
             'reponse-antecedents',
