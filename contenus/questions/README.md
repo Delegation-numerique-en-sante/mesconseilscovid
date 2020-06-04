@@ -343,7 +343,7 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 
 ## [question_symptômes_actuels_température_libellé.md](question_symptômes_actuels_température_libellé.md)
 
-<!---->J’ai eu une température <b>&lt; 35,5°C</b> <em>ou</em> <b>>= 39°C</b> ces dernières 48 heures.
+<!---->J’ai eu une température <b>&lt; 35,5°C</b> <em>ou</em> <b>&ge; 39°C</b> ces dernières 48 heures.
 
 
 ---
