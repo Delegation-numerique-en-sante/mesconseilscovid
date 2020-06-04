@@ -10,12 +10,14 @@ function page(element, profil, stockageLocal, router) {
     // Display appropriate conseils.
     var data = algorithme.getData(profil)
 
+    // Use custom illustration if needed
+    var conseilsBlock = element.querySelector('#conseils-block')
     if (data.symptomes_actuels) {
-        element.classList.add('symptomes-actuels')
+        conseilsBlock.classList.add('symptomes-actuels')
     } else if (data.symptomes_passes) {
-        element.classList.add('symptomes-passes')
+        conseilsBlock.classList.add('symptomes-passes')
     } else if (data.contact_a_risque) {
-        element.classList.add('contact-a-risque')
+        conseilsBlock.classList.add('contact-a-risque')
     }
 
     var blockNames = statutBlockNamesToDisplay(data)

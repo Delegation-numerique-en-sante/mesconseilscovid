@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-06-04
+
+* corrige l’affichage des illustrations sur la page de conseils
+
 ## 2020-06-03
 
 * #111 : mise à jour de l’algorithme, cas particulier lorsque autre contact à risque
