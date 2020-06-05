@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-06-05
+
+* ajoute des métadonnées OpenGraph pour le partage sur les réseaux sociaux
+
 ## 2020-06-04
 
 * corrige l’affichage des illustrations sur la page de conseils
