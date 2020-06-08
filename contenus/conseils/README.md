@@ -346,15 +346,13 @@ Pour plus d’informations, vous pouvez prendre connaissance du document [« Fa
 ---
 
 
-## [conseils_symptômes_actuels.md](conseils_symptômes_actuels.md)
-
-**Vous êtes peut-être porteur·se du COVID19.**
+## [conseils_symptômes_actuels_gravité1.md](conseils_symptômes_actuels_gravité1.md)
 
 Pour agir, il vous est conseillé :
 
-* De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
+* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le 0 800 130 000 ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
 
-* **D’évaluer vos symptômes** avec [le service public d’orientation médicale](https://www.gouvernement.fr/info-coronavirus/orientation-medicale), qui vous orientera vers le professionnel de santé adapté.
+* De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 
 * De prendre connaissance de l’**infographie** sur le parcours : [j’ai des symptômes du COVID-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
 
@@ -364,11 +362,65 @@ Pour agir, il vous est conseillé :
 ---
 
 
-## [conseils_symptômes_actuels_majeurs.md](conseils_symptômes_actuels_majeurs.md)
+## [conseils_symptômes_actuels_gravité2.md](conseils_symptômes_actuels_gravité2.md)
+
+Pour agir, il vous est conseillé :
+
+* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le 0 800 130 000 ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
+
+* Si vous n’arrivez pas à obtenir de consultation, **appelez le 15**.
+
+* De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
+
+* De prendre connaissance de l’**infographie** sur le parcours : [j’ai des symptômes du COVID-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
+
+* D’appliquer les **gestes barrières**.
+
+
+---
+
+
+## [conseils_symptômes_actuels_gravité3.md](conseils_symptômes_actuels_gravité3.md)
+
+Pour agir, il vous est conseillé :
+
+* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le 0 800 130 000 ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
+
+* Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent **pendant plus de 24 heures**.
+
+* De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
+
+* De prendre connaissance de l’**infographie** sur le parcours : [j’ai des symptômes du COVID-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
+
+* D’appliquer les **gestes barrières**.
+
+
+---
+
+
+## [conseils_symptômes_actuels_gravité4.md](conseils_symptômes_actuels_gravité4.md)
 
 **Appelez le SAMU / 15 ou demandez à quelqu’un de le faire pour vous pour être pris en charge rapidement.**
 
 Pour agir, il vous est conseillé :
+
+* De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
+
+* De prendre connaissance de l’**infographie** sur le parcours : [j’ai des symptômes du COVID-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
+
+* D’appliquer les **gestes barrières**.
+
+
+---
+
+
+## [conseils_symptômes_actuels_gravité5.md](conseils_symptômes_actuels_gravité5.md)
+
+Pour agir, il vous est conseillé :
+
+* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le 0 800 130 000 ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
+
+* Au moindre doute, **appelez le 15**.
 
 * De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 

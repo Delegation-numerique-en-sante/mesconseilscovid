@@ -550,6 +550,9 @@
     <div>
         <div id="conseils-block" class="block">
             <h2>En résumé</h2>
+            <div id="statut-symptomatique" class="statut statut-symptomatique" hidden>
+                {{ statut_symptomatique }}
+            </div>
             <div id="statut-risque-eleve" class="statut statut-risque-eleve" hidden>
                 {{ statut_risque_élevé_contamination }}
             </div>
@@ -566,11 +569,20 @@
             <h2 class="with-illustration">Vos conseils personnalisés</h2>
 
             <div id="conseils-personnels-symptomes-actuels" class="conseils" hidden>
-                <div id="conseils-personnels-symptomes-actuels-majeurs" class="conseil conseil-orange" hidden>
-                    {{ conseils_symptômes_actuels_majeurs }}
+                <div id="conseils-personnels-symptomes-actuels-gravite1" class="conseil conseil-orange" hidden>
+                    {{ conseils_symptômes_actuels_gravité1 }}
                 </div>
-                <div id="conseils-personnels-symptomes-actuels-default" class="conseil conseil-orange" hidden>
-                    {{ conseils_symptômes_actuels }}
+                <div id="conseils-personnels-symptomes-actuels-gravite2" class="conseil conseil-orange" hidden>
+                    {{ conseils_symptômes_actuels_gravité2 }}
+                </div>
+                <div id="conseils-personnels-symptomes-actuels-gravite3" class="conseil conseil-orange" hidden>
+                    {{ conseils_symptômes_actuels_gravité3 }}
+                </div>
+                <div id="conseils-personnels-symptomes-actuels-gravite4" class="conseil conseil-orange" hidden>
+                    {{ conseils_symptômes_actuels_gravité4 }}
+                </div>
+                <div id="conseils-personnels-symptomes-actuels-gravite5" class="conseil conseil-orange" hidden>
+                    {{ conseils_symptômes_actuels_gravité5 }}
                 </div>
                 {{ conseils_isolement }}
                 {{ conseils_cartographie_dépistage }}

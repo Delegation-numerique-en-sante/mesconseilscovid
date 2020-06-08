@@ -49,13 +49,13 @@ describe('Algorithme statut', function () {
         chai.expect(algorithme.statut).to.equal('personne-fragile')
     })
 
-    it('Un profil avec des symptômes actuels présente un risque élevé', function () {
+    it('Un profil avec des symptômes actuels est symptomatique', function () {
         var data = {
             symptomes_actuels: true,
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
-        chai.expect(algorithme.statut).to.equal('risque-eleve')
+        chai.expect(algorithme.statut).to.equal('symptomatique')
     })
 
     it('Un profil avec des symptômes passés présente un risque élevé', function () {
@@ -113,7 +113,7 @@ describe('Algorithme conseils personnels', function () {
         var algorithme = new Algorithme(profil)
         chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-actuels',
-            'conseils-personnels-symptomes-actuels-default',
+            'conseils-personnels-symptomes-actuels-gravite1',
         ])
     })
 
@@ -126,7 +126,7 @@ describe('Algorithme conseils personnels', function () {
         var algorithme = new Algorithme(profil)
         chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-actuels',
-            'conseils-personnels-symptomes-actuels-majeurs',
+            'conseils-personnels-symptomes-actuels-gravite4',
         ])
     })
 

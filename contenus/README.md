@@ -205,11 +205,11 @@ Sous-question (alimentation) : [libellé](questions/question_symptômes_actuels_
 Sous-question (souffle) : [libellé](questions/question_symptômes_actuels_souffle_libellé.md)
 
 
-Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange)
+Statut : [statut_symptomatique.md](statuts/statut_symptomatique.md) (orange)
 
 Conseils :
 
-1. [conseils_symptômes_actuels.md](conseils/conseils_symptômes_actuels.md) ou [conseils_symptômes_actuels_majeurs.md](conseils/conseils_symptômes_actuels_majeurs.md) si [Gravité majeure](#gravité-majeure)
+1. [conseils_symptômes_actuels_gravité1.md](conseils/conseils_symptômes_actuels_gravité1.md) ou [conseils_symptômes_actuels_gravité4.md](conseils/conseils_symptômes_actuels_gravité4.md) si [Gravité majeure](#gravité-majeure)
 2. [conseils_isolement.md](conseils/conseils_isolement.md)
 3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
 4. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)

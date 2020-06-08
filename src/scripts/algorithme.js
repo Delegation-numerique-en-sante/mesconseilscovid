@@ -75,6 +75,9 @@ class Algorithme {
 
     get statut() {
         // L’ordre est important car risques > foyer_fragile.
+        if (this.profil.symptomes_actuels) {
+            return 'symptomatique'
+        }
         if (this.symptomes) {
             return 'risque-eleve'
         }
@@ -92,9 +95,9 @@ class Algorithme {
         if (this.profil.symptomes_actuels) {
             blockNames.push('conseils-personnels-symptomes-actuels')
             if (this.facteursDeGraviteMajeurs) {
-                blockNames.push('conseils-personnels-symptomes-actuels-majeurs')
+                blockNames.push('conseils-personnels-symptomes-actuels-gravite4')
             } else {
-                blockNames.push('conseils-personnels-symptomes-actuels-default')
+                blockNames.push('conseils-personnels-symptomes-actuels-gravite1')
             }
         } else if (this.profil.symptomes_passes) {
             blockNames.push('conseils-personnels-symptomes-passes')
