@@ -206,6 +206,7 @@ Sous-question (souffle) : [libellé](questions/question_symptômes_actuels_souff
 
 Sous-question (autre) : [libellé](questions/question_symptômes_actuels_autre_libellé.md)
 
+Cas particulier : si [Symptôme actuel autre](#symptôme-actuel-autre) (`Sous-question (autre)` est cochée), la personne continue vers les questions relatives aux symptômes passés (cas nominal).
 
 Statut : [statut_symptomatique.md](statuts/statut_symptomatique.md) (orange)
 
@@ -257,17 +258,16 @@ Sous-question (stop covid) : [libellé](questions/question_symptômes_contact_à
 
 Sous-question (autre) : [libellé](questions/question_symptômes_contact_à_risque_autre_libellé.md)
 
-Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange) ou [statut_peu_de_risques.md](statuts/statut_peu_de_risques.md) (vert) si [Contact à risque autre uniquement](#contact-à-risque-autre-uniquement)
+Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange) ou [statut_peu_de_risques.md](statuts/statut_peu_de_risques.md) (vert) si [Contact à risque autre](#contact-à-risque-autre)
 
 Conseils :
 
-1. [conseils_contact_à_risque.md](conseils/conseils_contact_à_risque.md) ou [conseils_contact_à_risque_autre_uniquement.md](conseils/conseils_contact_à_risque_autre_uniquement.md) si [Contact à risque autre uniquement](#contact-à-risque-autre-uniquement)
+1. [conseils_contact_à_risque.md](conseils/conseils_contact_à_risque.md) ou [conseils_contact_à_risque_autre.md](conseils/conseils_contact_à_risque_autre.md) si [Contact à risque autre](#contact-à-risque-autre)
 2. [conseils_contact_à_risque_info.md](conseils/conseils_contact_à_risque_info.md)
-3. [conseils_contact_à_risque_autre.md](conseils/conseils_contact_à_risque_autre.md) si la case `Je n’étais dans aucune de ces situations` est cochée mais pas toute seule
-4. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
-5. [Localisation](#localisation)
-6. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
-7. [Conseils d’ordre général](#conseils-dordre-général)
+3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
+4. [Localisation](#localisation)
+5. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
+6. [Conseils d’ordre général](#conseils-dordre-général)
 
 
 ### Critères
@@ -308,6 +308,11 @@ Est définie comme étant une personne à gravité majeure celle qui vérifie l�
 * a des difficulté importantes pour s’alimenter ou boire depuis plus de 24 heures
 
 
-#### Contact à risque autre uniquement
+#### Symptôme actuel autre
 
-Cas particulier lorsque la personne n’a coché que la case « Je n’étais dans aucune de ces situations » pour ses contacts récents.
+Cas particulier lorsque la personne a coché la case « Je n’ai aucun de ces symptômes » pour ses symptômes actuels.
+
+
+#### Contact à risque autre
+
+Cas particulier lorsque la personne a coché la case « Je n’étais dans aucune de ces situations » pour ses contacts récents.

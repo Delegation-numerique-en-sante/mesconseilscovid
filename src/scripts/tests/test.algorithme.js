@@ -199,21 +199,6 @@ describe('Algorithme conseils personnels', function () {
         var algorithme = new Algorithme(profil)
         chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-contact-a-risque',
-            'conseils-personnels-contact-a-risque-autre-only',
-        ])
-    })
-
-    it('Un profil avec un contact à risque + autre + autre case cochée', function () {
-        var data = {
-            contact_a_risque: true,
-            contact_a_risque_contact_direct: true,
-            contact_a_risque_autre: true,
-        }
-        profil.fillData(data)
-        var algorithme = new Algorithme(profil)
-        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
-            'conseils-personnels-contact-a-risque',
-            'conseils-personnels-contact-a-risque-default',
             'conseils-personnels-contact-a-risque-autre',
         ])
     })

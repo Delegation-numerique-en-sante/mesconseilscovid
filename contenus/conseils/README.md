@@ -139,14 +139,6 @@ En attendant plus d’informations, il vous est conseillé de :
 
 ## [conseils_contact_à_risque_autre.md](conseils_contact_à_risque_autre.md)
 
-Vous avez passé du temps avec quelqu’un de positif sans prendre de risques. Si dans les jours qui viennent vous ressentez des premiers symptômes, n’hésitez pas à contacter un médecin.
-
-
----
-
-
-## [conseils_contact_à_risque_autre_uniquement.md](conseils_contact_à_risque_autre_uniquement.md)
-
 Vous avez passé du temps avec quelqu’un de positif mais il ne s’agit pas *a priori* d’un contact à risque, au moindre doute ou en cas d’apparition de symptômes n’hésitez pas à contacter votre médecin.
 
 

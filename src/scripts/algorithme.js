@@ -52,24 +52,11 @@ class Algorithme {
         )
     }
 
-    get contactARisqueAutreOnly() {
-        return (
-            this.profil.contact_a_risque &&
-            this.profil.contact_a_risque_autre &&
-            !this.profil.contact_a_risque_meme_lieu_de_vie &&
-            !this.profil.contact_a_risque_contact_direct &&
-            !this.profil.contact_a_risque_actes &&
-            !this.profil.contact_a_risque_espace_confine &&
-            !this.profil.contact_a_risque_meme_classe &&
-            !this.profil.contact_a_risque_stop_covid
-        )
-    }
-
     get symptomes() {
         return (
             (this.profil.symptomes_actuels && !this.profil.symptomes_actuels_autre) ||
             this.profil.symptomes_passes ||
-            (this.profil.contact_a_risque && !this.contactARisqueAutreOnly) // ???
+            (this.profil.contact_a_risque && !this.profil.contact_a_risque_autre)
         )
     }
 
@@ -108,13 +95,10 @@ class Algorithme {
             }
         } else if (this.profil.contact_a_risque) {
             blockNames.push('conseils-personnels-contact-a-risque')
-            if (this.contactARisqueAutreOnly) {
-                blockNames.push('conseils-personnels-contact-a-risque-autre-only')
+            if (this.profil.contact_a_risque_autre) {
+                blockNames.push('conseils-personnels-contact-a-risque-autre')
             } else {
                 blockNames.push('conseils-personnels-contact-a-risque-default')
-                if (this.profil.contact_a_risque_autre) {
-                    blockNames.push('conseils-personnels-contact-a-risque-autre')
-                }
             }
         }
         return blockNames
