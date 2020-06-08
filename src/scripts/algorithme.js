@@ -37,12 +37,21 @@ class Algorithme {
         )
     }
 
-    get facteursDeGraviteMineurs() {
+    get fievre() {
         return (
-            this.profil.symptomes_actuels_temperature ||
-            this.profil.symptomes_actuels_temperature_inconnue ||
-            this.profil.symptomes_actuels_fatigue
+            this.profil.symptomes_actuels &&
+            (this.profil.symptomes_actuels_temperature ||
+                this.profil.symptomes_actuels_temperature_inconnue)
         )
+    }
+
+    get totalFacteursDeGraviteMineurs() {
+        // Return an integer (sum of truthy values from array).
+        return [
+            this.profil.symptomes_actuels_temperature,
+            this.profil.symptomes_actuels_temperature_inconnue,
+            this.profil.symptomes_actuels_fatigue,
+        ].reduce((a, b) => (a || false) + (b || false), 0)
     }
 
     get facteursDeGraviteMajeurs() {
@@ -62,6 +71,9 @@ class Algorithme {
 
     get statut() {
         // L’ordre est important car risques > foyer_fragile.
+        if (this.profil.symptomes_actuels && this.facteursDeGraviteMajeurs) {
+            return 'symptomatique-urgent'
+        }
         if (this.profil.symptomes_actuels && !this.profil.symptomes_actuels_autre) {
             return 'symptomatique'
         }
@@ -81,11 +93,33 @@ class Algorithme {
         const blockNames = []
         if (this.profil.symptomes_actuels) {
             blockNames.push('conseils-personnels-symptomes-actuels')
+            var gravite = 1
             if (this.facteursDeGraviteMajeurs) {
-                blockNames.push('conseils-personnels-symptomes-actuels-gravite4')
+                gravite = 4
             } else {
-                blockNames.push('conseils-personnels-symptomes-actuels-gravite1')
+                // #3.3
+                if (this.fievre && this.profil.symptomes_actuels_toux) {
+                    if (this.personne_fragile) {
+                        if (this.totalFacteursDeGraviteMineurs > 1) {
+                            gravite = 2
+                        } else {
+                            gravite = 3
+                        }
+                    }
+                }
+                // #3.4: TODO :-)
+                // #3.5
+                if (
+                    !this.fievre &&
+                    (this.profil.symptomes_actuels_toux ||
+                        this.profil.symptomes_actuels_douleurs ||
+                        this.profil.symptomes_actuels_odorat) &&
+                    this.personne_fragile
+                ) {
+                    gravite = 3
+                }
             }
+            blockNames.push('conseils-personnels-symptomes-actuels-gravite' + gravite)
         } else if (this.profil.symptomes_passes) {
             blockNames.push('conseils-personnels-symptomes-passes')
             if (this.personne_fragile || this.profil.foyer_fragile) {

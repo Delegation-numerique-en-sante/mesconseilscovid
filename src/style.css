@@ -223,6 +223,7 @@ main footer {
     text-align: center;
     margin: 3rem auto 6rem;
 }
+.statut-symptomatique-urgent,
 .statut-symptomatique,
 .statut-risque-eleve {
     background: #ffb6a5;

@@ -58,6 +58,16 @@ describe('Algorithme statut', function () {
         chai.expect(algorithme.statut).to.equal('symptomatique')
     })
 
+    it('Un profil avec des symptômes actuels et facteurs de gravité majeurs est symptomatique urgent', function () {
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_souffle: true,
+        }
+        profil.fillData(data)
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.statut).to.equal('symptomatique-urgent')
+    })
+
     it('Un profil avec des symptômes actuels autres', function () {
         var data = {
             symptomes_actuels: true,
@@ -124,6 +134,52 @@ describe('Algorithme conseils personnels', function () {
         chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-actuels',
             'conseils-personnels-symptomes-actuels-gravite1',
+        ])
+    })
+
+    it('Un profil avec des symptômes actuels + température + toux + fragile', function () {
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_toux: true,
+            symptomes_actuels_temperature: true,
+            sup65: true,
+        }
+        profil.fillData(data)
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
+            'conseils-personnels-symptomes-actuels',
+            'conseils-personnels-symptomes-actuels-gravite3',
+        ])
+    })
+
+    it('Un profil avec des symptômes actuels + température + toux + fatigue + fragile', function () {
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_toux: true,
+            symptomes_actuels_temperature: true,
+            symptomes_actuels_fatigue: true,
+            sup65: true,
+        }
+        profil.fillData(data)
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
+            'conseils-personnels-symptomes-actuels',
+            'conseils-personnels-symptomes-actuels-gravite2',
+        ])
+    })
+
+    it('Un profil avec des symptômes actuels + sans température + toux + fragile', function () {
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_toux: true,
+            symptomes_actuels_temperature: false,
+            sup65: true,
+        }
+        profil.fillData(data)
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
+            'conseils-personnels-symptomes-actuels',
+            'conseils-personnels-symptomes-actuels-gravite3',
         ])
     })
 

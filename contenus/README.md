@@ -208,11 +208,15 @@ Sous-question (autre) : [libellé](questions/question_symptômes_actuels_autre_l
 
 Cas particulier : si [Symptôme actuel autre](#symptôme-actuel-autre) (`Sous-question (autre)` est cochée), la personne continue vers les questions relatives aux symptômes passés (cas nominal).
 
-Statut : [statut_symptomatique.md](statuts/statut_symptomatique.md) (orange)
+Statut : [statut_symptomatique.md](statuts/statut_symptomatique.md) (orange) ou [statut_symptomatique_urgent.md](statuts/statut_symptomatique_urgent.md) (orange) si [Gravité majeure](#gravité-majeure)
 
 Conseils :
 
-1. [conseils_symptômes_actuels_gravité1.md](conseils/conseils_symptômes_actuels_gravité1.md) ou [conseils_symptômes_actuels_gravité4.md](conseils/conseils_symptômes_actuels_gravité4.md) si [Gravité majeure](#gravité-majeure)
+1. Plusieurs options :
+    * [conseils_symptômes_actuels_gravité4.md](conseils/conseils_symptômes_actuels_gravité4.md) si [Gravité majeure](#gravité-majeure)
+    * ou [conseils_symptômes_actuels_gravité3.md](conseils/conseils_symptômes_actuels_gravité3.md) si (température et toux, personne à [Risque](#risque) mais *un seul* facteur de [gravité mineure](#gravité-mineure)) OU (pas de température et (toux ou douleurs ou odorat) et personne à [Risque](#risque))
+    * ou [conseils_symptômes_actuels_gravité2.md](conseils/conseils_symptômes_actuels_gravité2.md) si température et toux, personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure)
+    * ou [conseils_symptômes_actuels_gravité1.md](conseils/conseils_symptômes_actuels_gravité1.md) par défaut
 2. [conseils_isolement.md](conseils/conseils_isolement.md)
 3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
 4. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
@@ -306,6 +310,13 @@ Est définie comme étant une personne à gravité majeure celle qui vérifie l�
 
 * a une gêne respiratoire (essoufflement)
 * a des difficulté importantes pour s’alimenter ou boire depuis plus de 24 heures
+
+#### Gravité mineure
+
+Est définie comme étant une personne à gravité mineure celle qui vérifie l’une de ces conditions :
+
+* a une température < 35,5°C ou ≥ 39°C (ou ne sait pas)
+* a une fatigue inhabituelle
 
 
 #### Symptôme actuel autre
