@@ -107,7 +107,33 @@ class Algorithme {
                         }
                     }
                 }
-                // #3.4: TODO :-)
+                // #3.4
+                if (
+                    this.fievre ||
+                    (!this.fievre &&
+                        (this.profil.symptomes_actuels_diarrhee ||
+                            (this.profil.symptomes_actuels_toux &&
+                                this.profil.symptomes_actuels_douleurs) ||
+                            (this.profil.symptomes_actuels_toux &&
+                                this.profil.symptomes_actuels_odorat)))
+                ) {
+                    if (this.personne_fragile) {
+                        if (this.totalFacteursDeGraviteMineurs > 1) {
+                            gravite = 2
+                        } else {
+                            gravite = 3
+                        }
+                    } else {
+                        // TODISCUSS: jamais atteint car sup65 == fragile…
+                        // ou alors c’est vraiment 50 ans et on n’a pas l’info.
+                        if (
+                            this.profil.sup65 ||
+                            this.totalFacteursDeGraviteMineurs >= 1
+                        ) {
+                            gravite = 3
+                        }
+                    }
+                }
                 // #3.5
                 if (
                     !this.fievre &&

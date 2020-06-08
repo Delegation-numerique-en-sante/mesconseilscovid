@@ -137,6 +137,57 @@ describe('Algorithme conseils personnels', function () {
         ])
     })
 
+    it('Un profil avec des symptômes actuels + température inconnue + diarrhée + fatigue + fragile', function () {
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_temperature: false,
+            symptomes_actuels_temperature_inconnue: true,
+            symptomes_actuels_diarrhee: true,
+            symptomes_actuels_fatigue: true,
+            sup65: true,
+        }
+        profil.fillData(data)
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
+            'conseils-personnels-symptomes-actuels',
+            'conseils-personnels-symptomes-actuels-gravite2',
+        ])
+    })
+
+    it('Un profil avec des symptômes actuels + température inconnue + toux + douleurs + fragile', function () {
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_temperature: false,
+            symptomes_actuels_temperature_inconnue: true,
+            symptomes_actuels_toux: true,
+            symptomes_actuels_douleurs: true,
+            sup65: true,
+        }
+        profil.fillData(data)
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
+            'conseils-personnels-symptomes-actuels',
+            'conseils-personnels-symptomes-actuels-gravite3',
+        ])
+    })
+
+    it('Un profil avec des symptômes actuels + sans température + toux + odorat + sup65', function () {
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_temperature: false,
+            symptomes_actuels_temperature_inconnue: false,
+            symptomes_actuels_toux: true,
+            symptomes_actuels_odorat: true,
+            sup65: true,
+        }
+        profil.fillData(data)
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
+            'conseils-personnels-symptomes-actuels',
+            'conseils-personnels-symptomes-actuels-gravite3',
+        ])
+    })
+
     it('Un profil avec des symptômes actuels + température + toux + fragile', function () {
         var data = {
             symptomes_actuels: true,
