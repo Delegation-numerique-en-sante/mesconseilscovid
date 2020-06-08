@@ -1,29 +1,30 @@
-var carteDepartements = require('./carte.js')
+const carteDepartements = require('./carte.js')
 
-var Algorithme = (function () {
-    function Algorithme(profil) {
+class Algorithme {
+    constructor(profil) {
         this.profil = profil
-        this.imc = computeIMC(profil.poids, profil.taille)
-        this.couleur = carteDepartements.couleur(profil.departement)
-        this.personne_fragile = this.isFragile()
-        this.contactARisqueAutresOnly = this.hasContactARisqueAutresOnly()
-        this.symptomes = this.hasSymptomes()
-        this.antecedents = this.hasAntecedents()
-        this.facteursDeGraviteMajeurs = this.hasFacteursDeGraviteMajeurs()
-        this.facteursDeGraviteMineurs = this.hasFacteursDeGraviteMineurs()
+    }
+
+    get couleur() {
+        return carteDepartements.couleur(this.profil.departement)
+    }
+
+    get imc() {
+        const taille_en_metres = this.profil.taille / 100
+        return this.profil.poids / (taille_en_metres * taille_en_metres)
     }
 
     // Facteurs pronostiques de forme grave liés au terrain (fragilité)
-    Algorithme.prototype.isFragile = function () {
+    get personne_fragile() {
         return (
             this.profil.sup65 ||
             this.profil.grossesse_3e_trimestre ||
             this.imc > 30 ||
-            this.hasAntecedents()
+            this.antecedents
         )
     }
 
-    Algorithme.prototype.hasAntecedents = function () {
+    get antecedents() {
         return (
             this.profil.antecedent_cardio ||
             this.profil.antecedent_diabete ||
@@ -36,7 +37,7 @@ var Algorithme = (function () {
         )
     }
 
-    Algorithme.prototype.hasFacteursDeGraviteMineurs = function () {
+    get facteursDeGraviteMineurs() {
         return (
             this.profil.symptomes_actuels_temperature ||
             this.profil.symptomes_actuels_temperature_inconnue ||
@@ -44,14 +45,14 @@ var Algorithme = (function () {
         )
     }
 
-    Algorithme.prototype.hasFacteursDeGraviteMajeurs = function () {
+    get facteursDeGraviteMajeurs() {
         return (
             this.profil.symptomes_actuels_souffle ||
             this.profil.symptomes_actuels_alimentation
         )
     }
 
-    Algorithme.prototype.hasContactARisqueAutresOnly = function () {
+    get contactARisqueAutresOnly() {
         return (
             this.profil.contact_a_risque &&
             this.profil.contact_a_risque_autre &&
@@ -64,7 +65,7 @@ var Algorithme = (function () {
         )
     }
 
-    Algorithme.prototype.hasSymptomes = function () {
+    get symptomes() {
         return (
             this.profil.symptomes_actuels ||
             this.profil.symptomes_passes ||
@@ -72,7 +73,7 @@ var Algorithme = (function () {
         )
     }
 
-    Algorithme.prototype.statut = function () {
+    get statut() {
         // L’ordre est important car risques > foyer_fragile.
         if (this.symptomes) {
             return 'risque-eleve'
@@ -86,8 +87,8 @@ var Algorithme = (function () {
         return 'peu-de-risques'
     }
 
-    Algorithme.prototype.conseilsPersonnelsBlockNamesToDisplay = function () {
-        var blockNames = []
+    conseilsPersonnelsBlockNamesToDisplay() {
+        const blockNames = []
         if (this.profil.symptomes_actuels) {
             blockNames.push('conseils-personnels-symptomes-actuels')
             if (this.facteursDeGraviteMajeurs) {
@@ -116,8 +117,8 @@ var Algorithme = (function () {
         return blockNames
     }
 
-    Algorithme.prototype.departementBlockNamesToDisplay = function () {
-        var blockNames = []
+    departementBlockNamesToDisplay() {
+        const blockNames = []
         if (this.profil.symptomes_actuels) {
             return []
         }
@@ -131,8 +132,8 @@ var Algorithme = (function () {
         return blockNames
     }
 
-    Algorithme.prototype.activiteProBlockNamesToDisplay = function () {
-        var blockNames = []
+    activiteProBlockNamesToDisplay() {
+        const blockNames = []
         if (this.symptomes) {
             return []
         }
@@ -169,8 +170,8 @@ var Algorithme = (function () {
         return blockNames
     }
 
-    Algorithme.prototype.foyerBlockNamesToDisplay = function () {
-        var blockNames = []
+    foyerBlockNamesToDisplay() {
+        const blockNames = []
         if (this.profil.symptomes_actuels) {
             return []
         }
@@ -190,8 +191,8 @@ var Algorithme = (function () {
         return blockNames
     }
 
-    Algorithme.prototype.caracteristiquesAntecedentsBlockNamesToDisplay = function () {
-        var blockNames = []
+    caracteristiquesAntecedentsBlockNamesToDisplay() {
+        const blockNames = []
         if (this.symptomes) {
             return []
         }
@@ -225,13 +226,6 @@ var Algorithme = (function () {
         }
         return blockNames
     }
-
-    return Algorithme
-})()
-
-function computeIMC(poids, taille) {
-    var taille_en_metres = taille / 100
-    return poids / (taille_en_metres * taille_en_metres)
 }
 
 module.exports = {

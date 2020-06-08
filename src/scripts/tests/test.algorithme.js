@@ -18,7 +18,7 @@ describe('Algorithme statut', function () {
         var data = {}
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
-        chai.expect(algorithme.statut()).to.equal('peu-de-risques')
+        chai.expect(algorithme.statut).to.equal('peu-de-risques')
     })
 
     it('Un profil avec foyer à risque', function () {
@@ -27,7 +27,7 @@ describe('Algorithme statut', function () {
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
-        chai.expect(algorithme.statut()).to.equal('foyer-fragile')
+        chai.expect(algorithme.statut).to.equal('foyer-fragile')
     })
 
     it('Un profil avec personne à risque', function () {
@@ -36,7 +36,7 @@ describe('Algorithme statut', function () {
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
-        chai.expect(algorithme.statut()).to.equal('personne-fragile')
+        chai.expect(algorithme.statut).to.equal('personne-fragile')
     })
 
     it('Un profil avec personne à risque + foyer à risque', function () {
@@ -46,7 +46,7 @@ describe('Algorithme statut', function () {
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
-        chai.expect(algorithme.statut()).to.equal('personne-fragile')
+        chai.expect(algorithme.statut).to.equal('personne-fragile')
     })
 
     it('Un profil avec des symptômes actuels présente un risque élevé', function () {
@@ -55,7 +55,7 @@ describe('Algorithme statut', function () {
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
-        chai.expect(algorithme.statut()).to.equal('risque-eleve')
+        chai.expect(algorithme.statut).to.equal('risque-eleve')
     })
 
     it('Un profil avec des symptômes passés présente un risque élevé', function () {
@@ -64,7 +64,7 @@ describe('Algorithme statut', function () {
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
-        chai.expect(algorithme.statut()).to.equal('risque-eleve')
+        chai.expect(algorithme.statut).to.equal('risque-eleve')
     })
 
     it('Un profil avec un contact à risque présente un risque élevé', function () {
@@ -73,7 +73,7 @@ describe('Algorithme statut', function () {
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
-        chai.expect(algorithme.statut()).to.equal('risque-eleve')
+        chai.expect(algorithme.statut).to.equal('risque-eleve')
     })
 
     it('Un profil avec un contact à risque mais autre ne présente pas un risque élevé', function () {
@@ -83,7 +83,7 @@ describe('Algorithme statut', function () {
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
-        chai.expect(algorithme.statut()).to.equal('peu-de-risques')
+        chai.expect(algorithme.statut).to.equal('peu-de-risques')
     })
 })
 

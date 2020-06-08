@@ -48,7 +48,7 @@ function getCustomIllustrationName(profil) {
 }
 
 function statutBlockNamesToDisplay(algorithme) {
-    return ['statut-' + algorithme.statut()]
+    return ['statut-' + algorithme.statut]
 }
 
 module.exports = page
