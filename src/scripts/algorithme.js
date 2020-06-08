@@ -61,9 +61,13 @@ class Algorithme {
         )
     }
 
+    get symptomesActuelsReconnus() {
+        return this.profil.symptomes_actuels && !this.profil.symptomes_actuels_autre
+    }
+
     get symptomes() {
         return (
-            (this.profil.symptomes_actuels && !this.profil.symptomes_actuels_autre) ||
+            this.symptomesActuelsReconnus ||
             this.profil.symptomes_passes ||
             (this.profil.contact_a_risque && !this.profil.contact_a_risque_autre)
         )
@@ -74,7 +78,7 @@ class Algorithme {
         if (this.profil.symptomes_actuels && this.facteursDeGraviteMajeurs) {
             return 'symptomatique-urgent'
         }
-        if (this.profil.symptomes_actuels && !this.profil.symptomes_actuels_autre) {
+        if (this.symptomesActuelsReconnus) {
             return 'symptomatique'
         }
         if (this.symptomes && !this.profil.symptomes_actuels_autre) {
@@ -93,6 +97,19 @@ class Algorithme {
         const blockNames = []
         if (this.profil.symptomes_actuels) {
             blockNames.push('conseils-personnels-symptomes-actuels')
+            if (this.antecedents || this.profil.antecedent_chronique_autre) {
+                blockNames.push('reponse-symptomes-actuels-antecedents')
+            }
+            if (
+                this.profil.sup65 ||
+                this.profil.grossesse_3e_trimestre ||
+                this.imc > 30
+            ) {
+                blockNames.push('reponse-symptomes-actuels-caracteristiques')
+            }
+            if (this.symptomesActuelsReconnus) {
+                blockNames.push('reponse-symptomes-actuels-symptomesactuelsreconnus')
+            }
             var gravite = 1
             if (this.facteursDeGraviteMajeurs) {
                 gravite = 4

@@ -31,8 +31,17 @@ function page(element, profil, stockageLocal, router) {
 
     // Dynamic data injections.
     injection.departement(element, profil.departement)
-    injection.caracteristiques(element, algorithme)
-    injection.antecedents(element, algorithme)
+    // We need to target more specifically given there are two similar ids.
+    var selector
+    if (algorithme.symptomesActuelsReconnus) {
+        selector = '#conseils-personnels-symptomes-actuels .reponse'
+    } else {
+        selector = '#conseils-caracteristiques .reponse'
+    }
+    var subElement = element.querySelector(selector)
+    injection.caracteristiques(subElement, algorithme)
+    injection.antecedents(subElement, algorithme)
+    injection.symptomesactuels(subElement, algorithme)
 }
 
 function getCustomIllustrationName(profil) {

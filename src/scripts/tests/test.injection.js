@@ -21,13 +21,13 @@ describe('Injection', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <strong id="nom-departement"></strong>
+            <b id="nom-departement"></b>
             <a href="#conseils-departement" id="lien-prefecture">Site</a>
         `
         injection.departement(element, '01')
 
         chai.expect(element.innerHTML).to.equal(`
-            <strong id="nom-departement">Ain</strong>
+            <b id="nom-departement">Ain</b>
             <a href="http://www.ain.gouv.fr/strategie-locale-de-deconfinement-a6156.html" id="lien-prefecture">Site</a>
         `)
     })
@@ -36,7 +36,7 @@ describe('Injection', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <strong id="nom-caracteristiques"></strong>
+            <b id="nom-caracteristiques"></b>
         `
         var data = {
             sup65: true,
@@ -47,7 +47,7 @@ describe('Injection', function () {
         injection.caracteristiques(element, algorithme)
 
         chai.expect(element.innerHTML).to.equal(`
-            <strong id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans.</strong>
+            <b id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans.</b>
         `)
     })
 
@@ -55,7 +55,7 @@ describe('Injection', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <strong id="nom-caracteristiques"></strong>
+            <b id="nom-caracteristiques"></b>
         `
         var data = {
             grossesse_3e_trimestre: true,
@@ -66,7 +66,7 @@ describe('Injection', function () {
         injection.caracteristiques(element, algorithme)
 
         chai.expect(element.innerHTML).to.equal(`
-            <strong id="nom-caracteristiques">vous êtes au 3e trimestre de votre grossesse.</strong>
+            <b id="nom-caracteristiques">vous êtes au 3e trimestre de votre grossesse.</b>
         `)
     })
 
@@ -74,7 +74,7 @@ describe('Injection', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <strong id="nom-caracteristiques"></strong>
+            <b id="nom-caracteristiques"></b>
         `
         var data = {
             sup65: true,
@@ -86,7 +86,7 @@ describe('Injection', function () {
         injection.caracteristiques(element, algorithme)
 
         chai.expect(element.innerHTML).to.equal(`
-            <strong id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans.</strong>
+            <b id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans.</b>
         `)
     })
 
@@ -94,7 +94,7 @@ describe('Injection', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <strong id="nom-caracteristiques"></strong>
+            <b id="nom-caracteristiques"></b>
         `
         var data = {
             taille: 150,
@@ -106,7 +106,7 @@ describe('Injection', function () {
         injection.caracteristiques(element, algorithme)
 
         chai.expect(element.innerHTML).to.equal(`
-            <strong id="nom-caracteristiques">vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</strong>
+            <b id="nom-caracteristiques">vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
         `)
     })
 
@@ -114,7 +114,7 @@ describe('Injection', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <strong id="nom-caracteristiques"></strong>
+            <b id="nom-caracteristiques"></b>
         `
         var data = {
             sup65: true,
@@ -127,7 +127,7 @@ describe('Injection', function () {
         injection.caracteristiques(element, algorithme)
 
         chai.expect(element.innerHTML).to.equal(`
-            <strong id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</strong>
+            <b id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
         `)
     })
 
@@ -135,7 +135,7 @@ describe('Injection', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <strong id="nom-caracteristiques"></strong>
+            <b id="nom-caracteristiques"></b>
         `
         var data = {
             grossesse_3e_trimestre: true,
@@ -148,7 +148,7 @@ describe('Injection', function () {
         injection.caracteristiques(element, algorithme)
 
         chai.expect(element.innerHTML).to.equal(`
-            <strong id="nom-caracteristiques">vous êtes au 3e trimestre de votre grossesse et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</strong>
+            <b id="nom-caracteristiques">vous êtes au 3e trimestre de votre grossesse et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
         `)
     })
 
@@ -156,7 +156,7 @@ describe('Injection', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <strong id="nom-antecedents"></strong>
+            <b id="nom-antecedents"></b>
         `
         var data = {
             antecedent_cardio: true,
@@ -167,7 +167,7 @@ describe('Injection', function () {
         injection.antecedents(element, algorithme)
 
         chai.expect(element.innerHTML).to.equal(`
-            <strong id="nom-antecedents">vous avez des antécédents à risque.</strong>
+            <b id="nom-antecedents">Vous avez des antécédents à risque.</b>
         `)
     })
 
@@ -175,7 +175,7 @@ describe('Injection', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <strong id="nom-antecedents"></strong>
+            <b id="nom-antecedents"></b>
         `
         var data = {
             antecedent_chronique_autre: true,
@@ -186,7 +186,7 @@ describe('Injection', function () {
         injection.antecedents(element, algorithme)
 
         chai.expect(element.innerHTML).to.equal(`
-            <strong id="nom-antecedents">vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</strong>
+            <b id="nom-antecedents">Vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</b>
         `)
     })
 
@@ -194,7 +194,7 @@ describe('Injection', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <strong id="nom-antecedents"></strong>
+            <b id="nom-antecedents"></b>
         `
         var data = {
             antecedent_cardio: true,
@@ -206,7 +206,208 @@ describe('Injection', function () {
         injection.antecedents(element, algorithme)
 
         chai.expect(element.innerHTML).to.equal(`
-            <strong id="nom-antecedents">vous avez des antécédents à risque et vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</strong>
+            <b id="nom-antecedents">Vous avez des antécédents à risque et vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</b>
+        `)
+    })
+
+    it('Symptômes actuels (température)', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = `
+            <b id="nom-symptomesactuels"></b>
+        `
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_temperature: true,
+        }
+        profil.fillData(data)
+
+        var algorithme = new Algorithme(profil)
+        injection.symptomesactuels(element, algorithme)
+
+        chai.expect(element.innerHTML).to.equal(`
+            <b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas).</b>
+        `)
+    })
+
+    it('Symptômes actuels (température inconnue)', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = `
+            <b id="nom-symptomesactuels"></b>
+        `
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_temperature_inconnue: true,
+        }
+        profil.fillData(data)
+
+        var algorithme = new Algorithme(profil)
+        injection.symptomesactuels(element, algorithme)
+
+        chai.expect(element.innerHTML).to.equal(`
+            <b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas).</b>
+        `)
+    })
+
+    it('Symptômes actuels (toux)', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = `
+            <b id="nom-symptomesactuels"></b>
+        `
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_toux: true,
+        }
+        profil.fillData(data)
+
+        var algorithme = new Algorithme(profil)
+        injection.symptomesactuels(element, algorithme)
+
+        chai.expect(element.innerHTML).to.equal(`
+            <b id="nom-symptomesactuels">vous avez de la toux.</b>
+        `)
+    })
+
+    it('Symptômes actuels (température + toux)', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = `
+            <b id="nom-symptomesactuels"></b>
+        `
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_temperature: true,
+            symptomes_actuels_toux: true,
+        }
+        profil.fillData(data)
+
+        var algorithme = new Algorithme(profil)
+        injection.symptomesactuels(element, algorithme)
+
+        chai.expect(element.innerHTML).to.equal(`
+            <b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas) et vous avez de la toux.</b>
+        `)
+    })
+
+    it('Symptômes actuels (odorat)', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = `
+            <b id="nom-symptomesactuels"></b>
+        `
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_odorat: true,
+        }
+        profil.fillData(data)
+
+        var algorithme = new Algorithme(profil)
+        injection.symptomesactuels(element, algorithme)
+
+        chai.expect(element.innerHTML).to.equal(`
+            <b id="nom-symptomesactuels">vous avez perdu l’odorat.</b>
+        `)
+    })
+
+    it('Symptômes actuels (douleurs)', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = `
+            <b id="nom-symptomesactuels"></b>
+        `
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_douleurs: true,
+        }
+        profil.fillData(data)
+
+        var algorithme = new Algorithme(profil)
+        injection.symptomesactuels(element, algorithme)
+
+        chai.expect(element.innerHTML).to.equal(`
+            <b id="nom-symptomesactuels">vous avez des douleurs.</b>
+        `)
+    })
+
+    it('Symptômes actuels (diarrhée)', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = `
+            <b id="nom-symptomesactuels"></b>
+        `
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_diarrhee: true,
+        }
+        profil.fillData(data)
+
+        var algorithme = new Algorithme(profil)
+        injection.symptomesactuels(element, algorithme)
+
+        chai.expect(element.innerHTML).to.equal(`
+            <b id="nom-symptomesactuels">vous avez de la diarrhée.</b>
+        `)
+    })
+
+    it('Symptômes actuels (fatigue)', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = `
+            <b id="nom-symptomesactuels"></b>
+        `
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_fatigue: true,
+        }
+        profil.fillData(data)
+
+        var algorithme = new Algorithme(profil)
+        injection.symptomesactuels(element, algorithme)
+
+        chai.expect(element.innerHTML).to.equal(`
+            <b id="nom-symptomesactuels">vous êtes fatigué·e.</b>
+        `)
+    })
+
+    it('Symptômes actuels (alimentation)', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = `
+            <b id="nom-symptomesactuels"></b>
+        `
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_alimentation: true,
+        }
+        profil.fillData(data)
+
+        var algorithme = new Algorithme(profil)
+        injection.symptomesactuels(element, algorithme)
+
+        chai.expect(element.innerHTML).to.equal(`
+            <b id="nom-symptomesactuels">vous avez arrêté de boire ou de manger.</b>
+        `)
+    })
+
+    it('Symptômes actuels (souffle)', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = `
+            <b id="nom-symptomesactuels"></b>
+        `
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_souffle: true,
+        }
+        profil.fillData(data)
+
+        var algorithme = new Algorithme(profil)
+        injection.symptomesactuels(element, algorithme)
+
+        chai.expect(element.innerHTML).to.equal(`
+            <b id="nom-symptomesactuels">vous êtes essouflé·e.</b>
         `)
     })
 })

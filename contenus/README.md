@@ -210,6 +210,12 @@ Cas particulier : si [Symptôme actuel autre](#symptôme-actuel-autre) (`Sous-qu
 
 Statut : [statut_symptomatique.md](statuts/statut_symptomatique.md) (orange) ou [statut_symptomatique_urgent.md](statuts/statut_symptomatique_urgent.md) (orange) si [Gravité majeure](#gravité-majeure)
 
+Réponse :
+
+* [réponse_antécédents.md](réponses/réponse_antécédents.md) si [Antécédents](#antécédents) ou antécédents chroniques autres
+* [réponse_caractéristiques.md](réponses/réponse_caractéristiques.md) si âge > 65 ou grossesse 3e trimestre ou IMC > 30
+* [réponse_symptômes_actuels.md](réponses/réponse_symptômes_actuels.md) si pas [Symptôme actuel autre](#symptôme-actuel-autre)
+
 Conseils :
 
 1. Plusieurs options :

@@ -29,9 +29,7 @@ module.exports = {
                 content = 'vous êtes au 3e trimestre de votre grossesse'
             }
             if (algorithme.imc > 30) {
-                if (content !== '') {
-                    content += ' et '
-                }
+                content += content ? ' et ' : ''
                 content +=
                     'vous avez un IMC supérieur à 30 (' +
                     Math.round(algorithme.imc) +
@@ -46,18 +44,58 @@ module.exports = {
         if (algorithme.antecedents || algorithme.profil.antecedent_chronique_autre) {
             var content = ''
             if (algorithme.antecedents) {
-                content = 'vous avez des antécédents à risque'
+                content = 'Vous avez des antécédents à risque'
             }
             if (algorithme.profil.antecedent_chronique_autre) {
-                if (content !== '') {
-                    content += ' et '
-                }
+                content += content ? ' et vous ' : 'Vous '
                 content +=
-                    'vous avez une maladie chronique, un handicap ' +
+                    'avez une maladie chronique, un handicap ' +
                     'ou vous prenez un traitement au long cours'
             }
             content += '.'
             affichage.injectContent(element, content, '#nom-antecedents')
+        }
+    },
+
+    symptomesactuels: function (element, algorithme) {
+        if (algorithme.symptomesActuelsReconnus) {
+            var content = ''
+            if (
+                algorithme.profil.symptomes_actuels_temperature ||
+                algorithme.profil.symptomes_actuels_temperature_inconnue
+            ) {
+                content = 'vous avez de la température (ou vous ne savez pas)'
+            }
+            if (algorithme.profil.symptomes_actuels_toux) {
+                content += content ? ' et ' : ''
+                content += 'vous avez de la toux'
+            }
+            if (algorithme.profil.symptomes_actuels_odorat) {
+                content += content ? ' et ' : ''
+                content += 'vous avez perdu l’odorat'
+            }
+            if (algorithme.profil.symptomes_actuels_douleurs) {
+                content += content ? ' et ' : ''
+                content += 'vous avez des douleurs'
+            }
+            if (algorithme.profil.symptomes_actuels_diarrhee) {
+                content += content ? ' et ' : ''
+                content += 'vous avez de la diarrhée'
+            }
+            if (algorithme.profil.symptomes_actuels_fatigue) {
+                content += content ? ' et ' : ''
+                content += 'vous êtes fatigué·e'
+            }
+            if (algorithme.profil.symptomes_actuels_alimentation) {
+                content += content ? ' et ' : ''
+                content += 'vous avez arrêté de boire ou de manger'
+            }
+            if (algorithme.profil.symptomes_actuels_souffle) {
+                content += content ? ' et ' : ''
+                content += 'vous êtes essouflé·e'
+            }
+            content += '.'
+            affichage.injectContent(element, content, '#nom-symptomesactuels')
         }
     },
 }

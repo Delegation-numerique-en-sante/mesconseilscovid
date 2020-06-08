@@ -133,6 +133,7 @@ describe('Algorithme conseils personnels', function () {
         var algorithme = new Algorithme(profil)
         chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-actuels',
+            'reponse-symptomes-actuels-symptomesactuelsreconnus',
             'conseils-personnels-symptomes-actuels-gravite1',
         ])
     })
@@ -150,6 +151,8 @@ describe('Algorithme conseils personnels', function () {
         var algorithme = new Algorithme(profil)
         chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-actuels',
+            'reponse-symptomes-actuels-caracteristiques',
+            'reponse-symptomes-actuels-symptomesactuelsreconnus',
             'conseils-personnels-symptomes-actuels-gravite2',
         ])
     })
@@ -167,6 +170,8 @@ describe('Algorithme conseils personnels', function () {
         var algorithme = new Algorithme(profil)
         chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-actuels',
+            'reponse-symptomes-actuels-caracteristiques',
+            'reponse-symptomes-actuels-symptomesactuelsreconnus',
             'conseils-personnels-symptomes-actuels-gravite3',
         ])
     })
@@ -184,6 +189,8 @@ describe('Algorithme conseils personnels', function () {
         var algorithme = new Algorithme(profil)
         chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-actuels',
+            'reponse-symptomes-actuels-caracteristiques',
+            'reponse-symptomes-actuels-symptomesactuelsreconnus',
             'conseils-personnels-symptomes-actuels-gravite3',
         ])
     })
@@ -199,6 +206,8 @@ describe('Algorithme conseils personnels', function () {
         var algorithme = new Algorithme(profil)
         chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-actuels',
+            'reponse-symptomes-actuels-caracteristiques',
+            'reponse-symptomes-actuels-symptomesactuelsreconnus',
             'conseils-personnels-symptomes-actuels-gravite3',
         ])
     })
@@ -215,6 +224,8 @@ describe('Algorithme conseils personnels', function () {
         var algorithme = new Algorithme(profil)
         chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-actuels',
+            'reponse-symptomes-actuels-caracteristiques',
+            'reponse-symptomes-actuels-symptomesactuelsreconnus',
             'conseils-personnels-symptomes-actuels-gravite2',
         ])
     })
@@ -230,6 +241,8 @@ describe('Algorithme conseils personnels', function () {
         var algorithme = new Algorithme(profil)
         chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-actuels',
+            'reponse-symptomes-actuels-caracteristiques',
+            'reponse-symptomes-actuels-symptomesactuelsreconnus',
             'conseils-personnels-symptomes-actuels-gravite3',
         ])
     })
@@ -243,6 +256,7 @@ describe('Algorithme conseils personnels', function () {
         var algorithme = new Algorithme(profil)
         chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
             'conseils-personnels-symptomes-actuels',
+            'reponse-symptomes-actuels-symptomesactuelsreconnus',
             'conseils-personnels-symptomes-actuels-gravite4',
         ])
     })

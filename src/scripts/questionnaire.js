@@ -138,7 +138,7 @@ function symptomesactuels(form, profil, stockageLocal, router) {
     formUtils.toggleFormButtonOnCheckRequired(
         form,
         button.value,
-        'Terminer',
+        'Continuer',
         'Vous devez saisir l’un des sous-choix proposés'
     )
     form.addEventListener('submit', function (event) {

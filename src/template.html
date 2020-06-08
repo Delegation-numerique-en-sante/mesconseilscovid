@@ -578,6 +578,17 @@
             <h2 class="with-illustration">Vos conseils personnalisés</h2>
 
             <div id="conseils-personnels-symptomes-actuels" class="conseils" hidden>
+                <div class="reponse">
+                    <div id="reponse-symptomes-actuels-caracteristiques" hidden>
+                        {{ réponse_caractéristiques }}
+                    </div>
+                    <div id="reponse-symptomes-actuels-antecedents" hidden>
+                        {{ réponse_antécédents }}
+                    </div>
+                    <div id="reponse-symptomes-actuels-symptomesactuelsreconnus" hidden>
+                        {{ réponse_symptômes_actuels_reconnus }}
+                    </div>
+                </div>
                 <div id="conseils-personnels-symptomes-actuels-gravite1" class="conseil conseil-orange" hidden>
                     {{ conseils_symptômes_actuels_gravité1 }}
                 </div>
