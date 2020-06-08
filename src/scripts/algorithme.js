@@ -52,7 +52,7 @@ class Algorithme {
         )
     }
 
-    get contactARisqueAutresOnly() {
+    get contactARisqueAutreOnly() {
         return (
             this.profil.contact_a_risque &&
             this.profil.contact_a_risque_autre &&
@@ -67,18 +67,18 @@ class Algorithme {
 
     get symptomes() {
         return (
-            this.profil.symptomes_actuels ||
+            (this.profil.symptomes_actuels && !this.profil.symptomes_actuels_autre) ||
             this.profil.symptomes_passes ||
-            (this.profil.contact_a_risque && !this.contactARisqueAutresOnly) // ???
+            (this.profil.contact_a_risque && !this.contactARisqueAutreOnly) // ???
         )
     }
 
     get statut() {
         // L’ordre est important car risques > foyer_fragile.
-        if (this.profil.symptomes_actuels) {
+        if (this.profil.symptomes_actuels && !this.profil.symptomes_actuels_autre) {
             return 'symptomatique'
         }
-        if (this.symptomes) {
+        if (this.symptomes && !this.profil.symptomes_actuels_autre) {
             return 'risque-eleve'
         }
         if (this.personne_fragile) {
@@ -108,7 +108,7 @@ class Algorithme {
             }
         } else if (this.profil.contact_a_risque) {
             blockNames.push('conseils-personnels-contact-a-risque')
-            if (this.contactARisqueAutresOnly) {
+            if (this.contactARisqueAutreOnly) {
                 blockNames.push('conseils-personnels-contact-a-risque-autre-only')
             } else {
                 blockNames.push('conseils-personnels-contact-a-risque-default')

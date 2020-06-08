@@ -38,6 +38,8 @@ function toggleFormButtonOnCheckRequired(
     var secondaryCheckboxes = [].slice.call(
         form.querySelectorAll('.secondary input[type=checkbox]')
     )
+    // Warning: removes otherCheckbox from secondaryCheckboxes:
+    var otherCheckbox = secondaryCheckboxes.pop()
 
     function updateSubmitButtonLabelRequired() {
         var hasChecks = checkboxes.some(function (checkbox) {
@@ -49,7 +51,7 @@ function toggleFormButtonOnCheckRequired(
             var hasSecondaryChecks = secondaryCheckboxes.some(function (checkbox) {
                 return checkbox.checked
             })
-            if (!hasSecondaryChecks) {
+            if (!hasSecondaryChecks && !otherCheckbox.checked) {
                 button.disabled = true
                 button.value = requiredLabel
             }
@@ -59,6 +61,21 @@ function toggleFormButtonOnCheckRequired(
     checkboxes.forEach(function (elem) {
         elem.addEventListener('change', updateSubmitButtonLabelRequired)
     })
+
+    function updateToggleOnOther() {
+        if (otherCheckbox.checked) {
+            secondaryCheckboxes.forEach(function (secondaryCheckbox) {
+                secondaryCheckbox.checked = false
+                secondaryCheckbox.disabled = true
+            })
+        } else {
+            secondaryCheckboxes.forEach(function (secondaryCheckbox) {
+                secondaryCheckbox.disabled = false
+            })
+        }
+    }
+    updateToggleOnOther()
+    otherCheckbox.addEventListener('change', updateToggleOnOther)
 }
 
 function toggleFormButtonOnTextFieldsRequired(form, initialLabel, requiredLabel) {

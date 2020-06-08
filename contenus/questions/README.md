@@ -277,6 +277,14 @@ Une personne considérée comme fragile face au covid-19 est une personne prése
 ---
 
 
+## [question_symptômes_actuels_autre_libellé.md](question_symptômes_actuels_autre_libellé.md)
+
+<!---->Je n’ai <b>aucun de ces symptômes</b>
+
+
+---
+
+
 ## [question_symptômes_actuels_diarrhée_libellé.md](question_symptômes_actuels_diarrhée_libellé.md)
 
 <!---->J’ai eu de la <b>diarrhée</b> ces dernières 24 heures (au moins 3 selles molles).

@@ -204,6 +204,8 @@ Sous-question (alimentation) : [libellé](questions/question_symptômes_actuels_
 
 Sous-question (souffle) : [libellé](questions/question_symptômes_actuels_souffle_libellé.md)
 
+Sous-question (autre) : [libellé](questions/question_symptômes_actuels_autre_libellé.md)
+
 
 Statut : [statut_symptomatique.md](statuts/statut_symptomatique.md) (orange)
 

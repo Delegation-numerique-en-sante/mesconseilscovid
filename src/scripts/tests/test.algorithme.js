@@ -58,6 +58,16 @@ describe('Algorithme statut', function () {
         chai.expect(algorithme.statut).to.equal('symptomatique')
     })
 
+    it('Un profil avec des symptômes actuels autres', function () {
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_autre: true,
+        }
+        profil.fillData(data)
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.statut).to.equal('peu-de-risques')
+    })
+
     it('Un profil avec des symptômes passés présente un risque élevé', function () {
         var data = {
             symptomes_passes: true,

@@ -29,6 +29,7 @@ module.exports = function () {
         this.symptomes_actuels_fatigue = undefined
         this.symptomes_actuels_alimentation = undefined
         this.symptomes_actuels_souffle = undefined
+        this.symptomes_actuels_autre = undefined
         this.symptomes_passes = undefined
         this.contact_a_risque = undefined
         this.contact_a_risque_meme_lieu_de_vie = undefined
@@ -71,6 +72,7 @@ module.exports = function () {
         this.symptomes_actuels_fatigue = data['symptomes_actuels_fatigue']
         this.symptomes_actuels_alimentation = data['symptomes_actuels_alimentation']
         this.symptomes_actuels_souffle = data['symptomes_actuels_souffle']
+        this.symptomes_actuels_autre = data['symptomes_actuels_autre']
         this.symptomes_passes = data['symptomes_passes']
         this.contact_a_risque = data['contact_a_risque']
         this.contact_a_risque_meme_lieu_de_vie =
@@ -115,6 +117,7 @@ module.exports = function () {
             symptomes_actuels_fatigue: this.symptomes_actuels_fatigue,
             symptomes_actuels_alimentation: this.symptomes_actuels_alimentation,
             symptomes_actuels_souffle: this.symptomes_actuels_souffle,
+            symptomes_actuels_autre: this.symptomes_actuels_autre,
             symptomes_passes: this.symptomes_passes,
             contact_a_risque: this.contact_a_risque,
             contact_a_risque_meme_lieu_de_vie: this.contact_a_risque_meme_lieu_de_vie,

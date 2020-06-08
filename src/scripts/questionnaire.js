@@ -129,12 +129,18 @@ function symptomesactuels(form, profil, stockageLocal, router) {
     formUtils.preloadCheckboxForm(form, 'symptomes_actuels_fatigue', profil)
     formUtils.preloadCheckboxForm(form, 'symptomes_actuels_alimentation', profil)
     formUtils.preloadCheckboxForm(form, 'symptomes_actuels_souffle', profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_autre', profil)
     var primary = form.elements['symptomes_actuels']
     formUtils.enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
         formUtils.enableOrDisableSecondaryFields(form, primary)
     })
-    formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
+    formUtils.toggleFormButtonOnCheckRequired(
+        form,
+        button.value,
+        'Terminer',
+        'Vous devez saisir l’un des sous-choix proposés'
+    )
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         profil.symptomes_actuels = event.target.elements['symptomes_actuels'].checked
@@ -156,7 +162,9 @@ function symptomesactuels(form, profil, stockageLocal, router) {
             event.target.elements['symptomes_actuels_alimentation'].checked
         profil.symptomes_actuels_souffle =
             event.target.elements['symptomes_actuels_souffle'].checked
-        if (profil.symptomes_actuels) {
+        profil.symptomes_actuels_autre =
+            event.target.elements['symptomes_actuels_autre'].checked
+        if (profil.symptomes_actuels && !profil.symptomes_actuels_autre) {
             // On complète manuellement le formulaire pour le rendre complet.
             profil.symptomes_passes = false
             profil.contact_a_risque = false

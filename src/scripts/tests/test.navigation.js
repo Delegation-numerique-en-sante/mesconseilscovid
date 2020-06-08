@@ -201,6 +201,19 @@ describe('Navigation mes symptômes passés', function () {
             })
         ).to.be.undefined
     })
+    it('ok d’aller à la question 7 si réponse positive à la 6 mais que autre', function () {
+        chai.expect(
+            redirectToUnansweredQuestions('symptomespasses', {
+                departement: '80',
+                activite_pro: false,
+                foyer_enfants: false,
+                sup65: false,
+                antecedent_cardio: false,
+                symptomes_actuels: true,
+                symptomes_actuels_autre: true,
+            })
+        ).to.be.undefined
+    })
     it('ok d’aller à la question 7 même si déjà répondu', function () {
         chai.expect(
             redirectToUnansweredQuestions('symptomespasses', {
@@ -250,6 +263,20 @@ describe('Navigation mes contacts à risque', function () {
                 sup65: false,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
+                symptomes_passes: false,
+            })
+        ).to.be.undefined
+    })
+    it('ok d’aller à la question 8 si réponse négative à la 7 et positive mais autre à la 6', function () {
+        chai.expect(
+            redirectToUnansweredQuestions('contactarisque', {
+                departement: '80',
+                activite_pro: false,
+                foyer_enfants: false,
+                sup65: false,
+                antecedent_cardio: false,
+                symptomes_actuels: true,
+                symptomes_actuels_autre: true,
                 symptomes_passes: false,
             })
         ).to.be.undefined

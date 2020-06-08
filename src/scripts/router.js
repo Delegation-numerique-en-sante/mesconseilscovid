@@ -45,7 +45,7 @@ var redirectToUnansweredQuestions = function (page, profil) {
 
     if (page === 'symptomesactuels') return
 
-    if (profil.symptomes_actuels === true)
+    if (profil.symptomes_actuels === true && !profil.symptomes_actuels_autre)
         return page === 'conseils' ? undefined : 'conseils'
 
     if (typeof profil.symptomes_passes === 'undefined' && page !== 'symptomespasses')
