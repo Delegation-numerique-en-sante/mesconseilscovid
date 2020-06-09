@@ -46,7 +46,7 @@ Vous êtes peut-être **porteur du COVID-19**.
 
 ## [statut_symptomatique_urgent.md](statut_symptomatique_urgent.md)
 
-Vous êtes peut-être **porteur du COVID-19**. **Appelez le SAMU / 15** ou demandez à quelqu’un de le faire pour vous pour être pris en charge **rapidement**.
+**Appelez le SAMU / 15** ou demandez à quelqu’un de le faire pour vous pour être pris en charge **rapidement**. Vous êtes peut-être **porteur du COVID-19**.
 
 
 ---
