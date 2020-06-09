@@ -59,42 +59,35 @@ module.exports = {
 
     symptomesactuels: function (element, algorithme) {
         if (algorithme.symptomesActuelsReconnus) {
-            var content = ''
+            var symptomes = []
             if (
                 algorithme.profil.symptomes_actuels_temperature ||
                 algorithme.profil.symptomes_actuels_temperature_inconnue
             ) {
-                content = 'vous avez de la température (ou vous ne savez pas)'
+                symptomes.push('vous avez de la température (ou vous ne savez pas)')
             }
             if (algorithme.profil.symptomes_actuels_toux) {
-                content += content ? ' et ' : ''
-                content += 'vous avez de la toux'
+                symptomes.push('vous avez de la toux')
             }
             if (algorithme.profil.symptomes_actuels_odorat) {
-                content += content ? ' et ' : ''
-                content += 'vous avez perdu l’odorat'
+                symptomes.push('vous avez perdu l’odorat')
             }
             if (algorithme.profil.symptomes_actuels_douleurs) {
-                content += content ? ' et ' : ''
-                content += 'vous avez des douleurs'
+                symptomes.push('vous avez des douleurs')
             }
             if (algorithme.profil.symptomes_actuels_diarrhee) {
-                content += content ? ' et ' : ''
-                content += 'vous avez de la diarrhée'
+                symptomes.push('vous avez de la diarrhée')
             }
             if (algorithme.profil.symptomes_actuels_fatigue) {
-                content += content ? ' et ' : ''
-                content += 'vous êtes fatigué·e'
+                symptomes.push('vous êtes fatigué·e')
             }
             if (algorithme.profil.symptomes_actuels_alimentation) {
-                content += content ? ' et ' : ''
-                content += 'vous avez arrêté de boire ou de manger'
+                symptomes.push('vous avez arrêté de boire ou de manger')
             }
             if (algorithme.profil.symptomes_actuels_souffle) {
-                content += content ? ' et ' : ''
-                content += 'vous êtes essouflé·e'
+                symptomes.push('vous êtes essouflé·e')
             }
-            content += '.'
+            var content = symptomes.join(' ; ') + '.'
             affichage.injectContent(element, content, '#nom-symptomesactuels')
         }
     },

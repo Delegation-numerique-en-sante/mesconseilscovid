@@ -287,7 +287,7 @@ describe('Injection', function () {
         injection.symptomesactuels(element, algorithme)
 
         chai.expect(element.innerHTML).to.equal(`
-            <b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas) et vous avez de la toux.</b>
+            <b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas)&nbsp;; vous avez de la toux.</b>
         `)
     })
 
