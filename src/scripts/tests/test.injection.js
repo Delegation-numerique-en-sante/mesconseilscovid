@@ -20,14 +20,21 @@ describe('Injection', function () {
     it('Départements', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
+        element.innerHTML = `<b id="nom-departement"></b>`
+        injection.departement(element.querySelector('#nom-departement'), '01')
+
+        chai.expect(element.innerHTML).to.equal(`<b id="nom-departement">Ain</b>`)
+    })
+
+    it('Lien préfecture', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <b id="nom-departement"></b>
             <a href="#conseils-departement" id="lien-prefecture">Site</a>
         `
-        injection.departement(element, '01')
+        injection.lienPrefecture(element.querySelector('#lien-prefecture'), '01')
 
         chai.expect(element.innerHTML).to.equal(`
-            <b id="nom-departement">Ain</b>
             <a href="http://www.ain.gouv.fr/strategie-locale-de-deconfinement-a6156.html" id="lien-prefecture">Site</a>
         `)
     })
@@ -44,7 +51,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.caracteristiques(element, algorithme)
+        injection.caracteristiques(
+            element.querySelector('#nom-caracteristiques'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans.</b>
@@ -63,7 +73,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.caracteristiques(element, algorithme)
+        injection.caracteristiques(
+            element.querySelector('#nom-caracteristiques'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-caracteristiques">vous êtes au 3e trimestre de votre grossesse.</b>
@@ -83,7 +96,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.caracteristiques(element, algorithme)
+        injection.caracteristiques(
+            element.querySelector('#nom-caracteristiques'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans.</b>
@@ -103,7 +119,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.caracteristiques(element, algorithme)
+        injection.caracteristiques(
+            element.querySelector('#nom-caracteristiques'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-caracteristiques">vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
@@ -124,7 +143,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.caracteristiques(element, algorithme)
+        injection.caracteristiques(
+            element.querySelector('#nom-caracteristiques'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
@@ -145,7 +167,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.caracteristiques(element, algorithme)
+        injection.caracteristiques(
+            element.querySelector('#nom-caracteristiques'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-caracteristiques">vous êtes au 3e trimestre de votre grossesse et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
@@ -164,7 +189,7 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.antecedents(element, algorithme)
+        injection.antecedents(element.querySelector('#nom-antecedents'), algorithme)
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-antecedents">Vous avez des antécédents à risque.</b>
@@ -183,7 +208,7 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.antecedents(element, algorithme)
+        injection.antecedents(element.querySelector('#nom-antecedents'), algorithme)
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-antecedents">Vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</b>
@@ -203,7 +228,7 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.antecedents(element, algorithme)
+        injection.antecedents(element.querySelector('#nom-antecedents'), algorithme)
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-antecedents">Vous avez des antécédents à risque et vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</b>
@@ -223,7 +248,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.symptomesactuels(element, algorithme)
+        injection.symptomesactuels(
+            element.querySelector('#nom-symptomesactuels'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas).</b>
@@ -243,7 +271,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.symptomesactuels(element, algorithme)
+        injection.symptomesactuels(
+            element.querySelector('#nom-symptomesactuels'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas).</b>
@@ -263,7 +294,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.symptomesactuels(element, algorithme)
+        injection.symptomesactuels(
+            element.querySelector('#nom-symptomesactuels'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-symptomesactuels">vous avez de la toux.</b>
@@ -284,7 +318,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.symptomesactuels(element, algorithme)
+        injection.symptomesactuels(
+            element.querySelector('#nom-symptomesactuels'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas)&nbsp;; vous avez de la toux.</b>
@@ -304,7 +341,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.symptomesactuels(element, algorithme)
+        injection.symptomesactuels(
+            element.querySelector('#nom-symptomesactuels'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-symptomesactuels">vous avez perdu l’odorat.</b>
@@ -324,7 +364,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.symptomesactuels(element, algorithme)
+        injection.symptomesactuels(
+            element.querySelector('#nom-symptomesactuels'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-symptomesactuels">vous avez des douleurs.</b>
@@ -344,7 +387,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.symptomesactuels(element, algorithme)
+        injection.symptomesactuels(
+            element.querySelector('#nom-symptomesactuels'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-symptomesactuels">vous avez de la diarrhée.</b>
@@ -364,7 +410,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.symptomesactuels(element, algorithme)
+        injection.symptomesactuels(
+            element.querySelector('#nom-symptomesactuels'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-symptomesactuels">vous êtes fatigué·e.</b>
@@ -384,7 +433,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.symptomesactuels(element, algorithme)
+        injection.symptomesactuels(
+            element.querySelector('#nom-symptomesactuels'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-symptomesactuels">vous avez arrêté de boire ou de manger.</b>
@@ -404,7 +456,10 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.symptomesactuels(element, algorithme)
+        injection.symptomesactuels(
+            element.querySelector('#nom-symptomesactuels'),
+            algorithme
+        )
 
         chai.expect(element.innerHTML).to.equal(`
             <b id="nom-symptomesactuels">vous êtes essouflé·e.</b>

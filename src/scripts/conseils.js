@@ -30,7 +30,12 @@ function page(element, profil, stockageLocal, router) {
     actions.bindSuppression(element, profil, stockageLocal, router)
 
     // Dynamic data injections.
-    injection.departement(element, profil.departement)
+    injection.departement(element.querySelector('#nom-departement'), profil.departement)
+    injection.lienPrefecture(
+        element.querySelector('#lien-prefecture'),
+        profil.departement
+    )
+
     // We need to target more specifically given there are two similar ids.
     var selector
     if (algorithme.symptomesActuelsReconnus) {
@@ -39,9 +44,15 @@ function page(element, profil, stockageLocal, router) {
         selector = '#conseils-caracteristiques .reponse'
     }
     var subElement = element.querySelector(selector)
-    injection.caracteristiques(subElement, algorithme)
-    injection.antecedents(subElement, algorithme)
-    injection.symptomesactuels(subElement, algorithme)
+    injection.caracteristiques(
+        subElement.querySelector('#nom-caracteristiques'),
+        algorithme
+    )
+    injection.antecedents(subElement.querySelector('#nom-antecedents'), algorithme)
+    injection.symptomesactuels(
+        subElement.querySelector('#nom-symptomesactuels'),
+        algorithme
+    )
 }
 
 function getCustomIllustrationName(profil) {

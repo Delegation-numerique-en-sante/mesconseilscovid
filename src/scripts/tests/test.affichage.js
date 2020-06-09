@@ -33,7 +33,7 @@ describe('affichage', function () {
         var element = dom.window.document.querySelector('div')
         element.innerHTML = '<div id="foo"></div>'
 
-        affichage.injectContent(element, 'bar', '#foo')
+        affichage.injectContent(element.querySelector('#foo'), 'bar')
 
         chai.expect(element.firstElementChild.textContent).to.equal('bar')
     })
@@ -43,7 +43,11 @@ describe('affichage', function () {
         var element = dom.window.document.querySelector('div')
         element.innerHTML = '<a id="foo"></a>'
 
-        affichage.injectAttribute(element, 'href', 'http://example.com', '#foo')
+        affichage.injectAttribute(
+            element.querySelector('#foo'),
+            'href',
+            'http://example.com'
+        )
 
         chai.expect(element.firstElementChild.getAttribute('href')).to.equal(
             'http://example.com'

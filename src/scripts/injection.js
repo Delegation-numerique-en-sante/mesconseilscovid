@@ -3,16 +3,14 @@ var carteDepartements = require('./carte.js')
 
 module.exports = {
     departement: function (element, departement) {
-        affichage.injectContent(
-            element,
-            carteDepartements.nom(departement),
-            '#nom-departement'
-        )
+        affichage.injectContent(element, carteDepartements.nom(departement))
+    },
+
+    lienPrefecture: function (element, departement) {
         affichage.injectAttribute(
             element,
             'href',
-            carteDepartements.lien_prefecture(departement),
-            '#lien-prefecture'
+            carteDepartements.lien_prefecture(departement)
         )
     },
 
@@ -36,7 +34,7 @@ module.exports = {
                     ')'
             }
             content += '.'
-            affichage.injectContent(element, content, '#nom-caracteristiques')
+            affichage.injectContent(element, content)
         }
     },
 
@@ -53,7 +51,7 @@ module.exports = {
                     'ou vous prenez un traitement au long cours'
             }
             content += '.'
-            affichage.injectContent(element, content, '#nom-antecedents')
+            affichage.injectContent(element, content)
         }
     },
 
@@ -88,7 +86,7 @@ module.exports = {
                 symptomes.push('vous êtes essouflé·e')
             }
             var content = symptomes.join(' ; ') + '.'
-            affichage.injectContent(element, content, '#nom-symptomesactuels')
+            affichage.injectContent(element, content)
         }
     },
 }
