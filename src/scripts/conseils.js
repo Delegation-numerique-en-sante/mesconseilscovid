@@ -13,8 +13,32 @@ function page(element, profil, stockageLocal, router) {
         element.querySelector('#conseils-block').classList.add(extraClass)
     }
 
-    // Display appropriate conseils.
     var algorithme = new Algorithme(profil)
+
+    // Display appropriate conseils.
+    showRelevantBlocks(element, profil, algorithme)
+
+    // Dynamic data injections.
+    showRelevantAnswersRecap(element, profil, algorithme)
+
+    // Make the buttons clickable with appropriated actions.
+    actions.bindImpression(element)
+    actions.bindSuppression(element, profil, stockageLocal, router)
+}
+
+function getCustomIllustrationName(profil) {
+    if (profil.symptomes_actuels) {
+        return 'symptomes-actuels'
+    }
+    if (profil.symptomes_passes) {
+        return 'symptomes-passes'
+    }
+    if (profil.contact_a_risque) {
+        return 'contact-a-risque'
+    }
+}
+
+function showRelevantBlocks(element, profil, algorithme) {
     var blockNames = statutBlockNamesToDisplay(algorithme)
     blockNames = blockNames.concat(algorithme.conseilsPersonnelsBlockNamesToDisplay())
     blockNames = blockNames.concat(algorithme.departementBlockNamesToDisplay())
@@ -24,12 +48,9 @@ function page(element, profil, stockageLocal, router) {
         algorithme.caracteristiquesAntecedentsBlockNamesToDisplay()
     )
     affichage.displayBlocks(element, blockNames)
+}
 
-    // Make the buttons clickable with appropriated actions.
-    actions.bindImpression(element)
-    actions.bindSuppression(element, profil, stockageLocal, router)
-
-    // Dynamic data injections.
+function showRelevantAnswersRecap(element, profil, algorithme) {
     injection.departement(element.querySelector('#nom-departement'), profil.departement)
     injection.lienPrefecture(
         element.querySelector('#lien-prefecture'),
@@ -53,18 +74,6 @@ function page(element, profil, stockageLocal, router) {
         subElement.querySelector('#nom-symptomesactuels'),
         algorithme
     )
-}
-
-function getCustomIllustrationName(profil) {
-    if (profil.symptomes_actuels) {
-        return 'symptomes-actuels'
-    }
-    if (profil.symptomes_passes) {
-        return 'symptomes-passes'
-    }
-    if (profil.contact_a_risque) {
-        return 'contact-a-risque'
-    }
 }
 
 function statutBlockNamesToDisplay(algorithme) {
