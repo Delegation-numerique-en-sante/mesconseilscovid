@@ -9,6 +9,14 @@ class Algorithme {
         return carteDepartements.couleur(this.profil.departement)
     }
 
+    get sup65() {
+        return this.profil.age >= 65
+    }
+
+    get sup50() {
+        return this.profil.age >= 50
+    }
+
     get imc() {
         const taille_en_metres = this.profil.taille / 100
         return this.profil.poids / (taille_en_metres * taille_en_metres)
@@ -17,7 +25,7 @@ class Algorithme {
     // Facteurs pronostiques de forme grave liés au terrain (fragilité)
     get personne_fragile() {
         return (
-            this.profil.sup65 ||
+            this.sup65 ||
             this.profil.grossesse_3e_trimestre ||
             this.imc > 30 ||
             this.antecedents
@@ -100,11 +108,7 @@ class Algorithme {
             if (this.antecedents || this.profil.antecedent_chronique_autre) {
                 blockNames.push('reponse-symptomes-actuels-antecedents')
             }
-            if (
-                this.profil.sup65 ||
-                this.profil.grossesse_3e_trimestre ||
-                this.imc > 30
-            ) {
+            if (this.sup50 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
                 blockNames.push('reponse-symptomes-actuels-caracteristiques')
             }
             if (this.symptomesActuelsReconnus) {
@@ -141,12 +145,7 @@ class Algorithme {
                             gravite = 3
                         }
                     } else {
-                        // TODISCUSS: jamais atteint car sup65 == fragile…
-                        // ou alors c’est vraiment 50 ans et on n’a pas l’info.
-                        if (
-                            this.profil.sup65 ||
-                            this.totalFacteursDeGraviteMineurs >= 1
-                        ) {
+                        if (this.sup50 || this.totalFacteursDeGraviteMineurs >= 1) {
                             gravite = 3
                         }
                     }
@@ -266,11 +265,7 @@ class Algorithme {
             if (this.antecedents || this.profil.antecedent_chronique_autre) {
                 blockNames.push('reponse-antecedents')
             }
-            if (
-                this.profil.sup65 ||
-                this.profil.grossesse_3e_trimestre ||
-                this.imc > 30
-            ) {
+            if (this.sup65 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
                 blockNames.push('reponse-caracteristiques')
             }
             // Conseils

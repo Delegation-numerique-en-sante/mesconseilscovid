@@ -6,7 +6,7 @@ module.exports = function () {
         this.activite_pro_sante = undefined
         this.foyer_enfants = undefined
         this.foyer_fragile = undefined
-        this.sup65 = undefined
+        this.age = undefined
         this.grossesse_3e_trimestre = undefined
         this.poids = undefined
         this.taille = undefined
@@ -48,7 +48,7 @@ module.exports = function () {
         this.activite_pro_sante = data['activite_pro_sante']
         this.foyer_enfants = data['foyer_enfants']
         this.foyer_fragile = data['foyer_fragile']
-        this.sup65 = data['sup65']
+        this.age = data['age']
         this.grossesse_3e_trimestre = data['grossesse_3e_trimestre']
         this.poids = data['poids']
         this.taille = data['taille']
@@ -93,7 +93,7 @@ module.exports = function () {
             activite_pro_sante: this.activite_pro_sante,
             foyer_enfants: this.foyer_enfants,
             foyer_fragile: this.foyer_fragile,
-            sup65: this.sup65,
+            age: this.age,
             grossesse_3e_trimestre: this.grossesse_3e_trimestre,
             poids: this.poids,
             taille: this.taille,
@@ -138,7 +138,7 @@ module.exports = function () {
             typeof this.activite_pro_sante !== 'undefined' &&
             typeof this.foyer_enfants !== 'undefined' &&
             typeof this.foyer_fragile !== 'undefined' &&
-            typeof this.sup65 !== 'undefined' &&
+            typeof this.age !== 'undefined' &&
             typeof this.grossesse_3e_trimestre !== 'undefined' &&
             typeof this.poids !== 'undefined' &&
             typeof this.taille !== 'undefined' &&

@@ -202,7 +202,7 @@ broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome 
 
 ## [question_caractéristiques_âge_libellé.md](question_caractéristiques_âge_libellé.md)
 
-<!---->Je suis âgé·e de 65 ans ou plus
+<!---->Mon âge (ex. 42) :
 
 
 ---

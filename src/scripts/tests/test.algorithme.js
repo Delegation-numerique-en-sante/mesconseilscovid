@@ -145,7 +145,7 @@ describe('Algorithme conseils personnels', function () {
             symptomes_actuels_temperature_inconnue: true,
             symptomes_actuels_diarrhee: true,
             symptomes_actuels_fatigue: true,
-            sup65: true,
+            age: 65,
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
@@ -164,7 +164,7 @@ describe('Algorithme conseils personnels', function () {
             symptomes_actuels_temperature_inconnue: true,
             symptomes_actuels_toux: true,
             symptomes_actuels_douleurs: true,
-            sup65: true,
+            age: 65,
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
@@ -183,7 +183,26 @@ describe('Algorithme conseils personnels', function () {
             symptomes_actuels_temperature_inconnue: false,
             symptomes_actuels_toux: true,
             symptomes_actuels_odorat: true,
-            sup65: true,
+            age: 65,
+        }
+        profil.fillData(data)
+        var algorithme = new Algorithme(profil)
+        chai.expect(algorithme.conseilsPersonnelsBlockNamesToDisplay()).to.deep.equal([
+            'conseils-personnels-symptomes-actuels',
+            'reponse-symptomes-actuels-caracteristiques',
+            'reponse-symptomes-actuels-symptomesactuelsreconnus',
+            'conseils-personnels-symptomes-actuels-gravite3',
+        ])
+    })
+
+    it('Un profil avec des symptômes actuels + sans température + toux + douleurs + sup50', function () {
+        var data = {
+            symptomes_actuels: true,
+            symptomes_actuels_temperature: false,
+            symptomes_actuels_temperature_inconnue: false,
+            symptomes_actuels_toux: true,
+            symptomes_actuels_odorat: true,
+            age: 50,
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
@@ -200,7 +219,7 @@ describe('Algorithme conseils personnels', function () {
             symptomes_actuels: true,
             symptomes_actuels_toux: true,
             symptomes_actuels_temperature: true,
-            sup65: true,
+            age: 65,
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
@@ -218,7 +237,7 @@ describe('Algorithme conseils personnels', function () {
             symptomes_actuels_toux: true,
             symptomes_actuels_temperature: true,
             symptomes_actuels_fatigue: true,
-            sup65: true,
+            age: 65,
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
@@ -235,7 +254,7 @@ describe('Algorithme conseils personnels', function () {
             symptomes_actuels: true,
             symptomes_actuels_toux: true,
             symptomes_actuels_temperature: false,
-            sup65: true,
+            age: 65,
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
@@ -276,7 +295,7 @@ describe('Algorithme conseils personnels', function () {
     it('Un profil avec des symptômes passés + personne à risque', function () {
         var data = {
             symptomes_passes: true,
-            sup65: true,
+            age: 65,
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
@@ -641,7 +660,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
 
     it('Risque âge', function () {
         var data = {
-            sup65: true,
+            age: 65,
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)

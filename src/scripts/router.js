@@ -30,7 +30,7 @@ var redirectToUnansweredQuestions = function (page, profil) {
 
     if (page === 'foyer') return
 
-    if (typeof profil.sup65 === 'undefined' && page !== 'caracteristiques')
+    if (typeof profil.age === 'undefined' && page !== 'caracteristiques')
         return 'caracteristiques'
 
     if (page === 'caracteristiques') return

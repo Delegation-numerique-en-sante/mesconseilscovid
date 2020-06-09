@@ -46,7 +46,7 @@ describe('Injection', function () {
             <b id="nom-caracteristiques"></b>
         `
         var data = {
-            sup65: true,
+            age: 65,
         }
         profil.fillData(data)
 
@@ -90,7 +90,7 @@ describe('Injection', function () {
             <b id="nom-caracteristiques"></b>
         `
         var data = {
-            sup65: true,
+            age: 65,
             grossesse_3e_trimestre: true,
         }
         profil.fillData(data)
@@ -136,7 +136,7 @@ describe('Injection', function () {
             <b id="nom-caracteristiques"></b>
         `
         var data = {
-            sup65: true,
+            age: 65,
             taille: 150,
             poids: 150,
         }

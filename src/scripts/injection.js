@@ -11,12 +11,12 @@ module.exports = {
 
     caracteristiques: function (element, algorithme) {
         if (
-            algorithme.profil.sup65 ||
+            algorithme.sup65 ||
             algorithme.profil.grossesse_3e_trimestre ||
             algorithme.imc > 30
         ) {
             var content = ''
-            if (algorithme.profil.sup65) {
+            if (algorithme.sup65) {
                 content = 'vous êtes âgé·e de plus de 65 ans'
             } else if (algorithme.profil.grossesse_3e_trimestre) {
                 content = 'vous êtes au 3e trimestre de votre grossesse'

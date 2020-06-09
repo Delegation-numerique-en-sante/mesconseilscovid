@@ -61,18 +61,18 @@ function foyer(form, profil, stockageLocal, router) {
 
 function caracteristiques(form, profil, stockageLocal, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'sup65', profil)
+    formUtils.preloadForm(form, 'age', profil)
     formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre', profil)
     formUtils.preloadForm(form, 'taille', profil)
     formUtils.preloadForm(form, 'poids', profil)
     formUtils.toggleFormButtonOnTextFieldsRequired(
         form,
         button.value,
-        'Les informations de poids et de taille sont requises'
+        'Les informations d’âge, de poids et de taille sont requises'
     )
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        profil.sup65 = event.target.elements['sup65'].checked
+        profil.age = event.target.elements['age'].value
         profil.grossesse_3e_trimestre =
             event.target.elements['grossesse_3e_trimestre'].checked
         profil.poids = event.target.elements['poids'].value
