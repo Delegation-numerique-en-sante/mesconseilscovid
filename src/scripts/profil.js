@@ -139,6 +139,7 @@ module.exports = function () {
             typeof this.foyer_enfants !== 'undefined' &&
             typeof this.foyer_fragile !== 'undefined' &&
             typeof this.age !== 'undefined' &&
+            this.age >= 15 &&
             typeof this.grossesse_3e_trimestre !== 'undefined' &&
             typeof this.poids !== 'undefined' &&
             typeof this.taille !== 'undefined' &&

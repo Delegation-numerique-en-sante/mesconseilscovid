@@ -10,6 +10,9 @@ describe('Navigation générale', function () {
     it('ok d’aller à la page d’accueil', function () {
         chai.expect(redirectToUnansweredQuestions('introduction', {})).to.be.undefined
     })
+    it('ok d’aller à la page de pédiatrie', function () {
+        chai.expect(redirectToUnansweredQuestions('pediatrie', {})).to.be.undefined
+    })
     it('ok d’aller au conditions d’utilisation', function () {
         chai.expect(redirectToUnansweredQuestions('conditionsutilisation', {})).to.be
             .undefined
@@ -115,6 +118,16 @@ describe('Navigation mes antécédents', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
+            })
+        ).to.equal('caracteristiques')
+    })
+    it('redirige vers question 4 si âge inférieur à 15', function () {
+        chai.expect(
+            redirectToUnansweredQuestions('antecedents', {
+                departement: '80',
+                activite_pro: false,
+                foyer_enfants: false,
+                age: 12,
             })
         ).to.equal('caracteristiques')
     })
@@ -554,6 +567,20 @@ describe('Navigation Sortie 4', function () {
                 contact_a_risque: false,
             })
         ).to.equal('conseils')
+    })
+    it('redirige sortie 4 si âge inférieur à 15 ans', function () {
+        chai.expect(
+            redirectToUnansweredQuestions('conseils', {
+                departement: '80',
+                activite_pro: false,
+                foyer_enfants: false,
+                age: 12,
+                antecedent_cardio: false,
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+            })
+        ).to.equal('caracteristiques')
     })
     it('redirige sortie 1 -> 4 si ni symptôme ni contact', function () {
         chai.expect(

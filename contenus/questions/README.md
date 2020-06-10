@@ -176,25 +176,9 @@ broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome 
 ---
 
 
-## [question_caractéristiques_taille_poids_titre.md](question_caractéristiques_taille_poids_titre.md)
-
-<!---->Calculer mon Indice de Masse Corporelle (IMC)
-
-
----
-
-
 ## [question_caractéristiques_titre.md](question_caractéristiques_titre.md)
 
 <!---->Mes caractéristiques
-
-
----
-
-
-## [question_caractéristiques_âge_grossesse_titre.md](question_caractéristiques_âge_grossesse_titre.md)
-
-<!---->Mes facteurs de risques
 
 
 ---
