@@ -1,4 +1,4 @@
-À partir du **2 juin** l’ouverture des écoles, collèges et lycées se [poursuivra](https://www.education.gouv.fr/deconfinement-phase-2-point-de-situation-au-28-mai-303813). 
+Depuis le **2 juin** l’ouverture des écoles, collèges et lycées se [poursuit](https://www.education.gouv.fr/deconfinement-phase-2-point-de-situation-au-28-mai-303813). 
 Nous vous recommandons de prendre contact avec votre mairie pour connaître les modalités de **réouverture des écoles**. Prenez connaissance des informations officielles concernant la scolarité des enfants sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus#questions__reponses), section « Pour vos enfants et leur scolarité ».
 
 Si vous n’avez pas de solution pour faire garder votre enfant : 
