@@ -1,5 +1,12 @@
 # Changelog
 
+## 2020-06-10
+
+* implémente l’algorithme d’orientation avec différents niveaux de gravité si l’on présente des symptômes actuels
+* ajoute des conseils relatifs aux enfants de moins de 15 ans
+* demande explicite de l’âge
+* ajoute les métadonnées OpenGraph pour le partage sur les réseaux sociaux
+
 ## 2020-06-05
 
 * ajoute des métadonnées OpenGraph pour le partage sur les réseaux sociaux
