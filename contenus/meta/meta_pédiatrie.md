@@ -47,7 +47,7 @@ Oui, si ces personnes ne sont pas malades et en appliquant les mesures de préve
 
 </div>
 
-<div class="conseils">
+<div id="conseils-pediatrie-ecole" class="conseils">
 
 ### Questions relatives à la crèche / école
 
