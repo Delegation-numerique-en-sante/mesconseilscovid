@@ -31,7 +31,10 @@ var redirectToUnansweredQuestions = function (page, profil) {
 
     if (page === 'foyer') return
 
-    if (typeof profil.age === 'undefined' && page !== 'caracteristiques')
+    if (
+        (typeof profil.age === 'undefined' || profil.age < 15) &&
+        page !== 'caracteristiques'
+    )
         return 'caracteristiques'
 
     if (page === 'caracteristiques') return
@@ -170,7 +173,14 @@ function initRouter(profil, stockageLocal) {
         })
         .on(new RegExp('^pediatrie$'), function () {
             var pageName = 'pediatrie'
-            loadPage(pageName)
+            var element = loadPage(pageName)
+            if (profil.isComplete()) {
+                affichage.displayElement(element, 'js-profil-full')
+                affichage.hideElement(element.querySelector('#js-profil-empty'))
+                var mesConseilsLink = element.querySelector('#mes-conseils-link')
+                var target = redirectToUnansweredQuestions('findCorrectExit', profil)
+                mesConseilsLink.setAttribute('href', '#' + target)
+            }
         })
         .on(new RegExp('^conditionsutilisation$'), function () {
             var pageName = 'conditionsutilisation'

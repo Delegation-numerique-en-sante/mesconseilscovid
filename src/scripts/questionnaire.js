@@ -62,9 +62,9 @@ function foyer(form, profil, stockageLocal, router) {
 function caracteristiques(form, profil, stockageLocal, router) {
     var button = form.querySelector('input[type=submit]')
     formUtils.preloadForm(form, 'age', profil)
-    formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre', profil)
     formUtils.preloadForm(form, 'taille', profil)
     formUtils.preloadForm(form, 'poids', profil)
+    formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre', profil)
     formUtils.toggleFormButtonOnTextFieldsRequired(
         form,
         button.value,
@@ -73,12 +73,16 @@ function caracteristiques(form, profil, stockageLocal, router) {
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         profil.age = event.target.elements['age'].value
-        profil.grossesse_3e_trimestre =
-            event.target.elements['grossesse_3e_trimestre'].checked
         profil.poids = event.target.elements['poids'].value
         profil.taille = event.target.elements['taille'].value
+        profil.grossesse_3e_trimestre =
+            event.target.elements['grossesse_3e_trimestre'].checked
         stockageLocal.enregistrer(profil)
-        router.navigate('antecedents')
+        if (profil.age < 15) {
+            router.navigate('pediatrie')
+        } else {
+            router.navigate('antecedents')
+        }
     })
 }
 

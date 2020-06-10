@@ -121,6 +121,16 @@ describe('Navigation mes antécédents', function () {
             })
         ).to.equal('caracteristiques')
     })
+    it('redirige vers question 4 si âge inférieur à 15', function () {
+        chai.expect(
+            redirectToUnansweredQuestions('antecedents', {
+                departement: '80',
+                activite_pro: false,
+                foyer_enfants: false,
+                age: 12,
+            })
+        ).to.equal('caracteristiques')
+    })
     it('ok d’aller à la question 5 si réponse à la 4', function () {
         chai.expect(
             redirectToUnansweredQuestions('antecedents', {
@@ -557,6 +567,20 @@ describe('Navigation Sortie 4', function () {
                 contact_a_risque: false,
             })
         ).to.equal('conseils')
+    })
+    it('redirige sortie 4 si âge inférieur à 15 ans', function () {
+        chai.expect(
+            redirectToUnansweredQuestions('conseils', {
+                departement: '80',
+                activite_pro: false,
+                foyer_enfants: false,
+                age: 12,
+                antecedent_cardio: false,
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+            })
+        ).to.equal('caracteristiques')
     })
     it('redirige sortie 1 -> 4 si ni symptôme ni contact', function () {
         chai.expect(
