@@ -1,4 +1,4 @@
-## Pédiatrie
+## Conseils pour les moins de 15 ans
 
 <div class="conseils">
 

@@ -226,6 +226,11 @@ main footer {
     color: #000091;
     font-size: 175%;
 }
+.conseils h4 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 125%;
+}
 
 .statut {
     font-size: 1.2rem;
