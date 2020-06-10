@@ -138,7 +138,9 @@ main footer {
 #conseils-foyer h3,
 #conseils-caracteristiques h3,
 #conseils-generaux h3,
+#conseils-pediatrie-general h3,
 #conseils-pediatrie-ecole h3,
+#conseils-pediatrie-medical h3,
 #conseils-block.symptomes-actuels h2.with-illustration,
 #conseils-block.symptomes-passes h2.with-illustration,
 #conseils-block.contact-a-risque h2.with-illustration {
@@ -147,7 +149,7 @@ main footer {
     background-repeat: no-repeat;
     background-size: 50%;
 }
-#conseils-pediatrie-ecole h3 {
+#conseils-pediatrie-general h3 {
     padding-top: 200px;
 }
 @media only screen and (min-width: 680px) {
@@ -168,14 +170,16 @@ main footer {
     #conseils-foyer h3,
     #conseils-caracteristiques h3,
     #conseils-generaux h3,
+    #conseils-pediatrie-general h3,
     #conseils-pediatrie-ecole h3,
+    #conseils-pediatrie-medical h3,
     #conseils-block.symptomes-actuels h2.with-illustration,
     #conseils-block.symptomes-passes h2.with-illustration,
     #conseils-block.contact-a-risque h2.with-illustration {
         padding-top: 300px;
         background-size: 40%;
     }
-    #conseils-pediatrie-ecole h3 {
+    #conseils-pediatrie-general h3 {
         padding-top: 400px;
     }
 }
@@ -203,8 +207,14 @@ main footer {
 #conseils-generaux h3 {
     background-image: url('illustrations/accueil.svg');
 }
+#conseils-pediatrie-general h3 {
+    background-image: url('illustrations/pediatriegeneral.svg');
+}
 #conseils-pediatrie-ecole h3 {
     background-image: url('illustrations/pediatrieecole.svg');
+}
+#conseils-pediatrie-medical h3 {
+    background-image: url('illustrations/pediatriemedical.svg');
 }
 #conseils-block.symptomes-actuels h2.with-illustration,
 #symptomes-actuels-form {

@@ -160,7 +160,7 @@ Nous n’avons pas accès à vos données et vous pouvez <a class="js-suppressio
 
 ## Conseils pour les moins de 15 ans
 
-<div class="conseils">
+<div id="conseils-pediatrie-general" class="conseils">
 
 ### Questions générales
 
@@ -229,7 +229,7 @@ Le port du masque et les gestes barrières ne perturbent pas les interactions, q
 
 </div>
 
-<div class="conseils">
+<div id="conseils-pediatrie-medical" class="conseils">
 
 ### Questions médicales
 
