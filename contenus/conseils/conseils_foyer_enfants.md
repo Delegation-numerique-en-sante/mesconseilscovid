@@ -1,3 +1,5 @@
+<span class="nouveau">nouveau</span> Pour des informations relatives aux activités et à la santé des enfants en période de COVID19, vous pouvez consulter notre page dédiée : [Conseils pour les moins de 15 ans](#pediatrie).
+
 Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face au COVID, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants :
 
 * Application stricte des gestes barrières
@@ -7,4 +9,3 @@ Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à 
 
 Si vous ne pouvez pas faire garder votre enfant, des solutions existent (voir plus bas).
 
-Pour des informations relatives aux activités et à la santé des enfants en période de COVID19, vous pouvez [consulter la page suivante](#pediatrie).

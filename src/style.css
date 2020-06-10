@@ -568,6 +568,16 @@ a#geolocalisation {
     margin-bottom: 1rem;
 }
 
+.nouveau {
+    border: #000091 solid 1px;
+    border-radius: 20px;
+    padding: 1px 6px;
+    font-size: 0.8em;
+    margin-right: 0.4em;
+    background: #000091;
+    color: #fff;
+}
+
 .message {
     border: 1px solid;
     padding: 1rem;
