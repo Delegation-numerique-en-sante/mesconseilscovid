@@ -119,17 +119,13 @@ Si seule la case fragile est cochée :
 
 [Titre caractéristiques](questions/question_caractéristiques_titre.md)
 
-Question (âge + grossesse) : [titre](questions/question_caractéristiques_âge_grossesse_titre.md)
-
 Question (âge) : [libellé](questions/question_caractéristiques_âge_libellé.md)
-
-Question (grossesse) : [libellé](questions/question_caractéristiques_grossesse_libellé.md)
-
-Question (taille + poids) : [titre](questions/question_caractéristiques_taille_poids_titre.md)
 
 Question (taille) : [libellé](questions/question_caractéristiques_taille_libellé.md)
 
 Question (poids) : [libellé](questions/question_caractéristiques_poids_libellé.md)
+
+Question (grossesse) : [libellé](questions/question_caractéristiques_grossesse_libellé.md)
 
 
 [Titre antécédents](questions/question_antécédents_titre.md)
@@ -186,11 +182,43 @@ Si case antécédents chroniques autres cochée :
 
 Question : [libellé](questions/question_symptômes_actuels_libellé.md), [aide](questions/question_symptômes_aide.md)
 
-Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange)
+Sous-question (température) : [libellé](questions/question_symptômes_actuels_température_libellé.md)
+
+Sous-question (température inconnue) : [libellé](questions/question_symptômes_actuels_température_inconnue_libellé.md)
+
+Sous-question (toux) : [libellé](questions/question_symptômes_actuels_toux_libellé.md)
+
+Sous-question (odorat) : [libellé](questions/question_symptômes_actuels_odorat_libellé.md)
+
+Sous-question (douleurs) : [libellé](questions/question_symptômes_actuels_douleurs_libellé.md)
+
+Sous-question (diarrhée) : [libellé](questions/question_symptômes_actuels_diarrhée_libellé.md)
+
+Sous-question (fatigue) : [libellé](questions/question_symptômes_actuels_fatigue_libellé.md)
+
+Sous-question (alimentation) : [libellé](questions/question_symptômes_actuels_alimentation_libellé.md)
+
+Sous-question (souffle) : [libellé](questions/question_symptômes_actuels_souffle_libellé.md)
+
+Sous-question (autre) : [libellé](questions/question_symptômes_actuels_autre_libellé.md)
+
+Cas particulier : si [Symptôme actuel autre](#symptôme-actuel-autre) (`Sous-question (autre)` est cochée), la personne continue vers les questions relatives aux symptômes passés (cas nominal).
+
+Statut : [statut_symptomatique.md](statuts/statut_symptomatique.md) (orange) ou [statut_symptomatique_urgent.md](statuts/statut_symptomatique_urgent.md) (orange) si [Gravité majeure](#gravité-majeure)
+
+Réponse :
+
+* [réponse_antécédents.md](réponses/réponse_antécédents.md) si [Antécédents](#antécédents) ou antécédents chroniques autres
+* [réponse_caractéristiques.md](réponses/réponse_caractéristiques.md) si âge > 65 ou grossesse 3e trimestre ou IMC > 30
+* [réponse_symptômes_actuels.md](réponses/réponse_symptômes_actuels.md) si pas [Symptôme actuel autre](#symptôme-actuel-autre)
 
 Conseils :
 
-1. [conseils_symptômes_actuels.md](conseils/conseils_symptômes_actuels.md)
+1. Plusieurs options :
+    * [conseils_symptômes_actuels_gravité4.md](conseils/conseils_symptômes_actuels_gravité4.md) si [Gravité majeure](#gravité-majeure)
+    * ou [conseils_symptômes_actuels_gravité3.md](conseils/conseils_symptômes_actuels_gravité3.md) si (température et toux, personne à [Risque](#risque) mais *un seul* facteur de [gravité mineure](#gravité-mineure)) OU (pas de température et (toux ou douleurs ou odorat) et personne à [Risque](#risque)) OU (avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie)) et (personne à [Risque](#risque) *sans* facteur de [gravité mineure](#gravité-mineure) OU âge supérieur à 50 ans OU *un* ou *plusieurs* facteur de [gravité mineure](#gravité-mineure)))
+    * ou [conseils_symptômes_actuels_gravité2.md](conseils/conseils_symptômes_actuels_gravité2.md) si (température et toux, personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure)) OU (avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie)) et personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure))
+    * ou [conseils_symptômes_actuels_gravité1.md](conseils/conseils_symptômes_actuels_gravité1.md) par défaut
 2. [conseils_isolement.md](conseils/conseils_isolement.md)
 3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
 4. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
@@ -236,17 +264,16 @@ Sous-question (stop covid) : [libellé](questions/question_symptômes_contact_à
 
 Sous-question (autre) : [libellé](questions/question_symptômes_contact_à_risque_autre_libellé.md)
 
-Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange) ou [statut_peu_de_risques.md](statuts/statut_peu_de_risques.md) (vert) si [Contact à risque autre uniquement](#contact-à-risque-autre-uniquement)
+Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange) ou [statut_peu_de_risques.md](statuts/statut_peu_de_risques.md) (vert) si [Contact à risque autre](#contact-à-risque-autre)
 
 Conseils :
 
-1. [conseils_contact_à_risque.md](conseils/conseils_contact_à_risque.md) ou [conseils_contact_à_risque_autre_uniquement.md](conseils/conseils_contact_à_risque_autre_uniquement.md) si [Contact à risque autre uniquement](#contact-à-risque-autre-uniquement)
+1. [conseils_contact_à_risque.md](conseils/conseils_contact_à_risque.md) ou [conseils_contact_à_risque_autre.md](conseils/conseils_contact_à_risque_autre.md) si [Contact à risque autre](#contact-à-risque-autre)
 2. [conseils_contact_à_risque_info.md](conseils/conseils_contact_à_risque_info.md)
-3. [conseils_contact_à_risque_autre.md](conseils/conseils_contact_à_risque_autre.md) si la case `Je n’étais dans aucune de ces situations` est cochée mais pas toute seule
-4. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
-5. [Localisation](#localisation)
-6. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
-7. [Conseils d’ordre général](#conseils-dordre-général)
+3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
+4. [Localisation](#localisation)
+5. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
+6. [Conseils d’ordre général](#conseils-dordre-général)
 
 
 ### Critères
@@ -278,6 +305,27 @@ Est définie comme étant une personne à risque celle qui vérifie l’une de c
 * a un IMC > 30
 * a des [Antécédents](#antécédents)
 
-#### Contact à risque autre uniquement
 
-Cas particulier lorsque la personne n’a coché que la case « Je n’étais dans aucune de ces situations » pour ses contacts récents.
+#### Gravité majeure
+
+Est définie comme étant une personne à gravité majeure celle qui vérifie l’une de ces conditions :
+
+* a une gêne respiratoire (essoufflement)
+* a des difficulté importantes pour s’alimenter ou boire depuis plus de 24 heures
+
+#### Gravité mineure
+
+Est définie comme étant une personne à gravité mineure celle qui vérifie l’une de ces conditions :
+
+* a une température < 35,5°C ou ≥ 39°C (ou ne sait pas)
+* a une fatigue inhabituelle
+
+
+#### Symptôme actuel autre
+
+Cas particulier lorsque la personne a coché la case « Je n’ai aucun de ces symptômes » pour ses symptômes actuels.
+
+
+#### Contact à risque autre
+
+Cas particulier lorsque la personne a coché la case « Je n’étais dans aucune de ces situations » pour ses contacts récents.

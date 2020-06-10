@@ -38,6 +38,9 @@ Vous pouvez trouver les recommandations adaptées sur le site du ministère des 
 
 * Vous pouvez également consulter les [recommandations](https://www.hcsp.fr/Explore.cgi/Telecharger?NomFichier=hcspa20200523_sarcovprodestabdesansocetmdisoc.pdf) du Haut conseil de la santé publique relatives à la conduite à tenir vis-à-vis des professionnels intervenant en établissement de santé (ES) ainsi qu’en établissement social et médico-social (ESMS) selon leur statut vis-à-vis du SARS-CoV-2.
 
+<span class="nouveau">nouveau</span> Si vous travaillez auprès d’enfants et/ou vous devez conseiller des parents, vous pouvez trouver des informations relatives aux activités et à la santé des enfants en période de COVID19 notre page dédiée : [Conseils pour les moins de 15 ans](#pediatrie).
+
+
 
 ---
 
@@ -139,14 +142,6 @@ En attendant plus d’informations, il vous est conseillé de :
 
 ## [conseils_contact_à_risque_autre.md](conseils_contact_à_risque_autre.md)
 
-Vous avez passé du temps avec quelqu’un de positif sans prendre de risques. Si dans les jours qui viennent vous ressentez des premiers symptômes, n’hésitez pas à contacter un médecin.
-
-
----
-
-
-## [conseils_contact_à_risque_autre_uniquement.md](conseils_contact_à_risque_autre_uniquement.md)
-
 Vous avez passé du temps avec quelqu’un de positif mais il ne s’agit pas *a priori* d’un contact à risque, au moindre doute ou en cas d’apparition de symptômes n’hésitez pas à contacter votre médecin.
 
 
@@ -214,6 +209,8 @@ Si vous n’avez pas de solution pour faire garder votre enfant :
 
 ## [conseils_foyer_enfants.md](conseils_foyer_enfants.md)
 
+<span class="nouveau">nouveau</span> Pour des informations relatives aux activités et à la santé des enfants en période de COVID19, vous pouvez consulter notre page dédiée : [Conseils pour les moins de 15 ans](#pediatrie).
+
 Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face au COVID, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants :
 
 * Application stricte des gestes barrières
@@ -224,10 +221,13 @@ Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à 
 Si vous ne pouvez pas faire garder votre enfant, des solutions existent (voir plus bas).
 
 
+
 ---
 
 
 ## [conseils_foyer_enfants_fragile.md](conseils_foyer_enfants_fragile.md)
+
+<span class="nouveau">nouveau</span> Pour des informations relatives aux activités et à la santé des enfants en période de COVID19, vous pouvez consulter notre page dédiée : [Conseils pour les moins de 15 ans](#pediatrie).
 
 Si vos enfants sortent à l’extérieur du foyer, il convient de mettre en place des mesures de **distanciation physique renforcée** :
 
@@ -346,15 +346,63 @@ Pour plus d’informations, vous pouvez prendre connaissance du document [« Fa
 ---
 
 
-## [conseils_symptômes_actuels.md](conseils_symptômes_actuels.md)
+## [conseils_symptômes_actuels_gravité1.md](conseils_symptômes_actuels_gravité1.md)
 
-**Vous êtes peut-être porteur·se du COVID19.**
+Pour agir, il vous est conseillé :
+
+* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le 0 800 130 000 ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
+
+* De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
+
+* De prendre connaissance de l’**infographie** sur le parcours : [j’ai des symptômes du COVID-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
+
+* D’appliquer les **gestes barrières**.
+
+
+---
+
+
+## [conseils_symptômes_actuels_gravité2.md](conseils_symptômes_actuels_gravité2.md)
+
+Pour agir, il vous est conseillé :
+
+* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le 0 800 130 000 ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
+
+* Si vous n’arrivez pas à obtenir de consultation, **appelez le 15**.
+
+* De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
+
+* De prendre connaissance de l’**infographie** sur le parcours : [j’ai des symptômes du COVID-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
+
+* D’appliquer les **gestes barrières**.
+
+
+---
+
+
+## [conseils_symptômes_actuels_gravité3.md](conseils_symptômes_actuels_gravité3.md)
+
+Pour agir, il vous est conseillé :
+
+* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le 0 800 130 000 ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
+
+* Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent **pendant plus de 24 heures**.
+
+* De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
+
+* De prendre connaissance de l’**infographie** sur le parcours : [j’ai des symptômes du COVID-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
+
+* D’appliquer les **gestes barrières**.
+
+
+---
+
+
+## [conseils_symptômes_actuels_gravité4.md](conseils_symptômes_actuels_gravité4.md)
 
 Pour agir, il vous est conseillé :
 
 * De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
-
-* **D’évaluer vos symptômes** avec [le service public d’orientation médicale](https://www.gouvernement.fr/info-coronavirus/orientation-medicale), qui vous orientera vers le professionnel de santé adapté.
 
 * De prendre connaissance de l’**infographie** sur le parcours : [j’ai des symptômes du COVID-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
 

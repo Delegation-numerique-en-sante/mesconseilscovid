@@ -37,21 +37,9 @@ function displayBlocks(element, blockNames) {
     })
 }
 
-function injectContent(element, content, selector) {
-    var childElement = element.querySelector(selector)
-    childElement.textContent = content
-}
-
-function injectAttribute(element, attrName, attrValue, selector) {
-    var childElement = element.querySelector(selector)
-    childElement.setAttribute(attrName, attrValue)
-}
-
 module.exports = {
     hideElement,
     hideSelector,
     displayElement,
     displayBlocks,
-    injectContent,
-    injectAttribute,
 }

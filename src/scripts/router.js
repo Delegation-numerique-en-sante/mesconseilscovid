@@ -11,6 +11,7 @@ var getCurrentPageName = function () {
 
 var redirectToUnansweredQuestions = function (page, profil) {
     if (page === 'introduction') return
+    if (page === 'pediatrie') return
     if (page === 'conditionsutilisation') return
     if (page === 'nouvelleversiondisponible') return
 
@@ -30,7 +31,10 @@ var redirectToUnansweredQuestions = function (page, profil) {
 
     if (page === 'foyer') return
 
-    if (typeof profil.sup65 === 'undefined' && page !== 'caracteristiques')
+    if (
+        (typeof profil.age === 'undefined' || profil.age < 15) &&
+        page !== 'caracteristiques'
+    )
         return 'caracteristiques'
 
     if (page === 'caracteristiques') return
@@ -45,7 +49,7 @@ var redirectToUnansweredQuestions = function (page, profil) {
 
     if (page === 'symptomesactuels') return
 
-    if (profil.symptomes_actuels === true)
+    if (profil.symptomes_actuels === true && !profil.symptomes_actuels_autre)
         return page === 'conseils' ? undefined : 'conseils'
 
     if (typeof profil.symptomes_passes === 'undefined' && page !== 'symptomespasses')
@@ -166,6 +170,17 @@ function initRouter(profil, stockageLocal) {
             var pageName = 'conseils'
             var element = loadPage(pageName)
             conseils(element, profil, stockageLocal, router)
+        })
+        .on(new RegExp('^pediatrie$'), function () {
+            var pageName = 'pediatrie'
+            var element = loadPage(pageName)
+            if (profil.isComplete()) {
+                affichage.displayElement(element, 'js-profil-full')
+                affichage.hideElement(element.querySelector('#js-profil-empty'))
+                var mesConseilsLink = element.querySelector('#mes-conseils-link')
+                var target = redirectToUnansweredQuestions('findCorrectExit', profil)
+                mesConseilsLink.setAttribute('href', '#' + target)
+            }
         })
         .on(new RegExp('^conditionsutilisation$'), function () {
             var pageName = 'conditionsutilisation'

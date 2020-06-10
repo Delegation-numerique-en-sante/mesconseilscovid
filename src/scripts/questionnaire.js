@@ -61,24 +61,28 @@ function foyer(form, profil, stockageLocal, router) {
 
 function caracteristiques(form, profil, stockageLocal, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'sup65', profil)
-    formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre', profil)
+    formUtils.preloadForm(form, 'age', profil)
     formUtils.preloadForm(form, 'taille', profil)
     formUtils.preloadForm(form, 'poids', profil)
+    formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre', profil)
     formUtils.toggleFormButtonOnTextFieldsRequired(
         form,
         button.value,
-        'Les informations de poids et de taille sont requises'
+        'Les informations d’âge, de poids et de taille sont requises'
     )
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        profil.sup65 = event.target.elements['sup65'].checked
-        profil.grossesse_3e_trimestre =
-            event.target.elements['grossesse_3e_trimestre'].checked
+        profil.age = event.target.elements['age'].value
         profil.poids = event.target.elements['poids'].value
         profil.taille = event.target.elements['taille'].value
+        profil.grossesse_3e_trimestre =
+            event.target.elements['grossesse_3e_trimestre'].checked
         stockageLocal.enregistrer(profil)
-        router.navigate('antecedents')
+        if (profil.age < 15) {
+            router.navigate('pediatrie')
+        } else {
+            router.navigate('antecedents')
+        }
     })
 }
 
@@ -116,11 +120,55 @@ function antecedents(form, profil, stockageLocal, router) {
 function symptomesactuels(form, profil, stockageLocal, router) {
     var button = form.querySelector('input[type=submit]')
     formUtils.preloadCheckboxForm(form, 'symptomes_actuels', profil)
-    formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_temperature', profil)
+    formUtils.preloadCheckboxForm(
+        form,
+        'symptomes_actuels_temperature_inconnue',
+        profil
+    )
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_toux', profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_odorat', profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_douleurs', profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_diarrhee', profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_fatigue', profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_alimentation', profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_souffle', profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_autre', profil)
+    var primary = form.elements['symptomes_actuels']
+    formUtils.enableOrDisableSecondaryFields(form, primary)
+    primary.addEventListener('click', function () {
+        formUtils.enableOrDisableSecondaryFields(form, primary)
+    })
+    formUtils.toggleFormButtonOnCheckRequired(
+        form,
+        button.value,
+        'Continuer',
+        'Vous devez saisir l’un des sous-choix proposés'
+    )
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         profil.symptomes_actuels = event.target.elements['symptomes_actuels'].checked
-        if (profil.symptomes_actuels) {
+        profil.symptomes_actuels_temperature =
+            event.target.elements['symptomes_actuels_temperature'].checked
+        profil.symptomes_actuels_temperature_inconnue =
+            event.target.elements['symptomes_actuels_temperature_inconnue'].checked
+        profil.symptomes_actuels_toux =
+            event.target.elements['symptomes_actuels_toux'].checked
+        profil.symptomes_actuels_odorat =
+            event.target.elements['symptomes_actuels_odorat'].checked
+        profil.symptomes_actuels_douleurs =
+            event.target.elements['symptomes_actuels_douleurs'].checked
+        profil.symptomes_actuels_diarrhee =
+            event.target.elements['symptomes_actuels_diarrhee'].checked
+        profil.symptomes_actuels_fatigue =
+            event.target.elements['symptomes_actuels_fatigue'].checked
+        profil.symptomes_actuels_alimentation =
+            event.target.elements['symptomes_actuels_alimentation'].checked
+        profil.symptomes_actuels_souffle =
+            event.target.elements['symptomes_actuels_souffle'].checked
+        profil.symptomes_actuels_autre =
+            event.target.elements['symptomes_actuels_autre'].checked
+        if (profil.symptomes_actuels && !profil.symptomes_actuels_autre) {
             // On complète manuellement le formulaire pour le rendre complet.
             profil.symptomes_passes = false
             profil.contact_a_risque = false

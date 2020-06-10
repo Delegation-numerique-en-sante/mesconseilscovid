@@ -261,21 +261,11 @@
     <form id="caracteristiques-form" action="" class="block">
         <fieldset>
             <legend>4/8 - {{ question_caractéristiques_titre }}</legend>
-            <h3>{{ question_caractéristiques_âge_grossesse_titre }}</h3>
-            <div class="field">
-                <input id="sup65" type="checkbox" name="sup65">
-                <label for="sup65">
-                    <span>{{ question_caractéristiques_âge_libellé }}</span>
-                </label>
-            </div>
-            <div class="field">
-                <input id="grossesse_3e_trimestre" type="checkbox" name="grossesse_3e_trimestre">
-                <label for="grossesse_3e_trimestre">
-                    <span>{{ question_caractéristiques_grossesse_libellé }}</span>
-                </label>
-            </div>
-            <h3>{{ question_caractéristiques_taille_poids_titre }}</h3>
             <ul class="no-list-style">
+                <li class="row">
+                    <label for="age">{{ question_caractéristiques_âge_libellé }}</label>
+                    <input id="age" type="text" inputmode="numeric" pattern="[0-9]*" required>
+                </li>
                 <li class="row">
                     <label for="taille">{{ question_caractéristiques_taille_libellé }}</label>
                     <input id="taille" type="text" inputmode="numeric" pattern="[0-9]*" required>
@@ -285,6 +275,12 @@
                     <input id="poids" type="text" inputmode="numeric" pattern="[0-9]*" required>
                 </li>
             </ul>
+            <div class="field">
+                <input id="grossesse_3e_trimestre" type="checkbox" name="grossesse_3e_trimestre">
+                <label for="grossesse_3e_trimestre">
+                    <span>{{ question_caractéristiques_grossesse_libellé }}</span>
+                </label>
+            </div>
         </fieldset>
         <div class="form-controls">
             <a href="#foyer" class="back-button button-outline">Retour</a>
@@ -393,6 +389,67 @@
                 </label>
                 <div class="details">{{ question_symptômes_aide }}</div>
             </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_temperature" type="checkbox" name="symptomes_actuels_temperature" disabled>
+                <label for="symptomes_actuels_temperature">
+                    <span>{{ question_symptômes_actuels_température_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_temperature_inconnue" type="checkbox" name="symptomes_actuels_temperature_inconnue" disabled>
+                <label for="symptomes_actuels_temperature_inconnue">
+                    <span>{{ question_symptômes_actuels_température_inconnue_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_toux" type="checkbox" name="symptomes_actuels_toux" disabled>
+                <label for="symptomes_actuels_toux">
+                    <span>{{ question_symptômes_actuels_toux_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_odorat" type="checkbox" name="symptomes_actuels_odorat" disabled>
+                <label for="symptomes_actuels_odorat">
+                    <span>{{ question_symptômes_actuels_odorat_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_douleurs" type="checkbox" name="symptomes_actuels_douleurs" disabled>
+                <label for="symptomes_actuels_douleurs">
+                    <span>{{ question_symptômes_actuels_douleurs_libellé }}</span>
+                </label>
+                <div class="details">{{ question_symptômes_actuels_douleurs_aide }}</div>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_diarrhee" type="checkbox" name="symptomes_actuels_diarrhee" disabled>
+                <label for="symptomes_actuels_diarrhee">
+                    <span>{{ question_symptômes_actuels_diarrhée_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_fatigue" type="checkbox" name="symptomes_actuels_fatigue" disabled>
+                <label for="symptomes_actuels_fatigue">
+                    <span>{{ question_symptômes_actuels_fatigue_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_alimentation" type="checkbox" name="symptomes_actuels_alimentation" disabled>
+                <label for="symptomes_actuels_alimentation">
+                    <span>{{ question_symptômes_actuels_alimentation_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_souffle" type="checkbox" name="symptomes_actuels_souffle" disabled>
+                <label for="symptomes_actuels_souffle">
+                    <span>{{ question_symptômes_actuels_souffle_libellé }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="symptomes_actuels_autre" type="checkbox" name="symptomes_actuels_autre" disabled>
+                <label for="symptomes_actuels_autre">
+                    <span>{{ question_symptômes_actuels_autre_libellé }}</span>
+                </label>
+            </div>
         </fieldset>
         <div class="form-controls">
             <a href="#antecedents" class="back-button button-outline">Retour</a>
@@ -495,6 +552,12 @@
     <div>
         <div id="conseils-block" class="block">
             <h2>En résumé</h2>
+            <div id="statut-symptomatique-urgent" class="statut statut-symptomatique-urgent" hidden>
+                {{ statut_symptomatique_urgent }}
+            </div>
+            <div id="statut-symptomatique" class="statut statut-symptomatique" hidden>
+                {{ statut_symptomatique }}
+            </div>
             <div id="statut-risque-eleve" class="statut statut-risque-eleve" hidden>
                 {{ statut_risque_élevé_contamination }}
             </div>
@@ -511,8 +574,28 @@
             <h2 class="with-illustration">Vos conseils personnalisés</h2>
 
             <div id="conseils-personnels-symptomes-actuels" class="conseils" hidden>
-                <div class="conseil conseil-orange">
-                    {{ conseils_symptômes_actuels }}
+                <div class="reponse">
+                    <div id="reponse-symptomes-actuels-caracteristiques" hidden>
+                        {{ réponse_caractéristiques }}
+                    </div>
+                    <div id="reponse-symptomes-actuels-antecedents" hidden>
+                        {{ réponse_antécédents }}
+                    </div>
+                    <div id="reponse-symptomes-actuels-symptomesactuelsreconnus" hidden>
+                        {{ réponse_symptômes_actuels_reconnus }}
+                    </div>
+                </div>
+                <div id="conseils-personnels-symptomes-actuels-gravite1" class="conseil conseil-orange" hidden>
+                    {{ conseils_symptômes_actuels_gravité1 }}
+                </div>
+                <div id="conseils-personnels-symptomes-actuels-gravite2" class="conseil conseil-orange" hidden>
+                    {{ conseils_symptômes_actuels_gravité2 }}
+                </div>
+                <div id="conseils-personnels-symptomes-actuels-gravite3" class="conseil conseil-orange" hidden>
+                    {{ conseils_symptômes_actuels_gravité3 }}
+                </div>
+                <div id="conseils-personnels-symptomes-actuels-gravite4" class="conseil conseil-orange" hidden>
+                    {{ conseils_symptômes_actuels_gravité4 }}
                 </div>
                 {{ conseils_isolement }}
                 {{ conseils_cartographie_dépistage }}
@@ -543,13 +626,10 @@
                 <div id="conseils-personnels-contact-a-risque-default" class="conseil conseil-orange" hidden>
                     {{ conseils_contact_à_risque }}
                 </div>
-                <div id="conseils-personnels-contact-a-risque-autre-only" class="conseil" hidden>
-                    {{ conseils_contact_à_risque_autre_uniquement }}
-                </div>
-                {{ conseils_contact_à_risque_info }}
-                <div id="conseils-personnels-contact-a-risque-autre" hidden>
+                <div id="conseils-personnels-contact-a-risque-autre" class="conseil" hidden>
                     {{ conseils_contact_à_risque_autre }}
                 </div>
+                {{ conseils_contact_à_risque_info }}
                 {{ conseils_cartographie_dépistage }}
             </div>
 
@@ -711,6 +791,20 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section id="pediatrie" hidden>
+    <div id="pediatrie-block" class="block">
+        {{ meta_pédiatrie }}
+        <div id="js-profil-full" class="form-controls" hidden>
+            <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
+            <a class="button button-full-width" href="" id="mes-conseils-link">Retourner à mes conseils</a>
+        </div>
+        <div id="js-profil-empty">
+            <a class="button button-full-width" href="#residence">Démarrer le questionnaire</a>
+        </div>
+
     </div>
 </section>
 

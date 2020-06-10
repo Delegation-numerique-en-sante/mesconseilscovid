@@ -10,6 +10,9 @@ describe('Navigation générale', function () {
     it('ok d’aller à la page d’accueil', function () {
         chai.expect(redirectToUnansweredQuestions('introduction', {})).to.be.undefined
     })
+    it('ok d’aller à la page de pédiatrie', function () {
+        chai.expect(redirectToUnansweredQuestions('pediatrie', {})).to.be.undefined
+    })
     it('ok d’aller au conditions d’utilisation', function () {
         chai.expect(redirectToUnansweredQuestions('conditionsutilisation', {})).to.be
             .undefined
@@ -102,7 +105,7 @@ describe('Navigation mes caractéristiques', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
             })
         ).to.be.undefined
     })
@@ -118,13 +121,23 @@ describe('Navigation mes antécédents', function () {
             })
         ).to.equal('caracteristiques')
     })
+    it('redirige vers question 4 si âge inférieur à 15', function () {
+        chai.expect(
+            redirectToUnansweredQuestions('antecedents', {
+                departement: '80',
+                activite_pro: false,
+                foyer_enfants: false,
+                age: 12,
+            })
+        ).to.equal('caracteristiques')
+    })
     it('ok d’aller à la question 5 si réponse à la 4', function () {
         chai.expect(
             redirectToUnansweredQuestions('antecedents', {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
             })
         ).to.be.undefined
     })
@@ -134,7 +147,7 @@ describe('Navigation mes antécédents', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
             })
         ).to.be.undefined
@@ -148,7 +161,7 @@ describe('Navigation mes symptômes actuels', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
             })
         ).to.equal('antecedents')
     })
@@ -158,7 +171,7 @@ describe('Navigation mes symptômes actuels', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
             })
         ).to.be.undefined
@@ -169,7 +182,7 @@ describe('Navigation mes symptômes actuels', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
             })
@@ -184,7 +197,7 @@ describe('Navigation mes symptômes passés', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
             })
         ).to.equal('symptomesactuels')
@@ -195,9 +208,22 @@ describe('Navigation mes symptômes passés', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
+            })
+        ).to.be.undefined
+    })
+    it('ok d’aller à la question 7 si réponse positive à la 6 mais que autre', function () {
+        chai.expect(
+            redirectToUnansweredQuestions('symptomespasses', {
+                departement: '80',
+                activite_pro: false,
+                foyer_enfants: false,
+                age: 42,
+                antecedent_cardio: false,
+                symptomes_actuels: true,
+                symptomes_actuels_autre: true,
             })
         ).to.be.undefined
     })
@@ -207,7 +233,7 @@ describe('Navigation mes symptômes passés', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: true,
@@ -220,7 +246,7 @@ describe('Navigation mes symptômes passés', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: true,
             })
@@ -235,7 +261,7 @@ describe('Navigation mes contacts à risque', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
             })
@@ -247,9 +273,23 @@ describe('Navigation mes contacts à risque', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
+                symptomes_passes: false,
+            })
+        ).to.be.undefined
+    })
+    it('ok d’aller à la question 8 si réponse négative à la 7 et positive mais autre à la 6', function () {
+        chai.expect(
+            redirectToUnansweredQuestions('contactarisque', {
+                departement: '80',
+                activite_pro: false,
+                foyer_enfants: false,
+                age: 42,
+                antecedent_cardio: false,
+                symptomes_actuels: true,
+                symptomes_actuels_autre: true,
                 symptomes_passes: false,
             })
         ).to.be.undefined
@@ -260,7 +300,7 @@ describe('Navigation mes contacts à risque', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -274,7 +314,7 @@ describe('Navigation mes contacts à risque', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: true,
             })
@@ -286,7 +326,7 @@ describe('Navigation mes contacts à risque', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: true,
@@ -302,7 +342,7 @@ describe('Navigation Sortie 1', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: true,
             })
@@ -314,7 +354,7 @@ describe('Navigation Sortie 1', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: true,
             })
@@ -326,7 +366,7 @@ describe('Navigation Sortie 1', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: true,
             })
@@ -338,7 +378,7 @@ describe('Navigation Sortie 1', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: true,
             })
@@ -350,7 +390,7 @@ describe('Navigation Sortie 1', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: true,
             })
@@ -365,7 +405,7 @@ describe('Navigation Sortie 2', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: true,
@@ -378,7 +418,7 @@ describe('Navigation Sortie 2', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: true,
@@ -391,7 +431,7 @@ describe('Navigation Sortie 2', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: true,
@@ -404,7 +444,7 @@ describe('Navigation Sortie 2', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: true,
@@ -417,7 +457,7 @@ describe('Navigation Sortie 2', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: true,
@@ -433,7 +473,7 @@ describe('Navigation Sortie 3', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -447,7 +487,7 @@ describe('Navigation Sortie 3', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -461,7 +501,7 @@ describe('Navigation Sortie 3', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -475,7 +515,7 @@ describe('Navigation Sortie 3', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -489,7 +529,7 @@ describe('Navigation Sortie 3', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -506,7 +546,7 @@ describe('Navigation Sortie 4', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -520,7 +560,7 @@ describe('Navigation Sortie 4', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -528,13 +568,27 @@ describe('Navigation Sortie 4', function () {
             })
         ).to.equal('conseils')
     })
+    it('redirige sortie 4 si âge inférieur à 15 ans', function () {
+        chai.expect(
+            redirectToUnansweredQuestions('conseils', {
+                departement: '80',
+                activite_pro: false,
+                foyer_enfants: false,
+                age: 12,
+                antecedent_cardio: false,
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+            })
+        ).to.equal('caracteristiques')
+    })
     it('redirige sortie 1 -> 4 si ni symptôme ni contact', function () {
         chai.expect(
             redirectToUnansweredQuestions('conseilssymptomesactuels', {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -548,7 +602,7 @@ describe('Navigation Sortie 4', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -562,7 +616,7 @@ describe('Navigation Sortie 4', function () {
                 departement: '80',
                 activite_pro: false,
                 foyer_enfants: false,
-                sup65: false,
+                age: 42,
                 antecedent_cardio: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,

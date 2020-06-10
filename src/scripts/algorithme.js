@@ -1,212 +1,292 @@
-var carteDepartements = require('./carte.js')
+const carteDepartements = require('./carte.js')
 
-function getData(profil) {
-    var data = profil.getData()
-    // On a besoin de l’IMC avant pour pouvoir calculer les risques.
-    data.imc = computeIMC(data.poids, data.taille)
-    data.couleur = carteDepartements.couleur(data.departement)
-    data.antecedents = hasAntecedents(data)
-    data.contactARisqueAutresOnly = hasContactARisqueAutresOnly(data)
-    data.symptomes = hasSymptomes(data)
-    data.risques = hasRisques(data)
-    return data
-}
-
-function computeIMC(poids, taille) {
-    var taille_en_metres = taille / 100
-    return poids / (taille_en_metres * taille_en_metres)
-}
-
-function hasRisques(data) {
-    return (
-        data.sup65 ||
-        data.grossesse_3e_trimestre ||
-        data.imc > 30 ||
-        hasAntecedents(data)
-    )
-}
-
-function hasAntecedents(data) {
-    return (
-        data.antecedent_cardio ||
-        data.antecedent_diabete ||
-        data.antecedent_respi ||
-        data.antecedent_dialyse ||
-        data.antecedent_cancer ||
-        data.antecedent_immunodep ||
-        data.antecedent_cirrhose ||
-        data.antecedent_drepano
-    )
-}
-
-function hasSymptomes(data) {
-    return (
-        data.symptomes_actuels ||
-        data.symptomes_passes ||
-        (data.contact_a_risque && !data.contactARisqueAutresOnly)
-    )
-}
-
-function hasContactARisqueAutresOnly(data) {
-    return (
-        data.contact_a_risque &&
-        data.contact_a_risque_autre &&
-        !data.contact_a_risque_meme_lieu_de_vie &&
-        !data.contact_a_risque_contact_direct &&
-        !data.contact_a_risque_actes &&
-        !data.contact_a_risque_espace_confine &&
-        !data.contact_a_risque_meme_classe &&
-        !data.contact_a_risque_stop_covid
-    )
-}
-
-function statut(data) {
-    // L’ordre est important car risques > foyer_fragile.
-    if (data.symptomes) {
-        return 'risque-eleve'
+class Algorithme {
+    constructor(profil) {
+        this.profil = profil
     }
-    if (data.risques) {
-        return 'personne-fragile'
-    }
-    if (data.foyer_fragile) {
-        return 'foyer-fragile'
-    }
-    return 'peu-de-risques'
-}
 
-function conseilsPersonnelsBlockNamesToDisplay(data) {
-    var blockNames = []
-    if (data.symptomes_actuels) {
-        blockNames.push('conseils-personnels-symptomes-actuels')
-    } else if (data.symptomes_passes) {
-        blockNames.push('conseils-personnels-symptomes-passes')
-        if (data.risques || data.foyer_fragile) {
-            blockNames.push('conseils-personnels-symptomes-passes-avec-risques')
-        } else {
-            blockNames.push('conseils-personnels-symptomes-passes-sans-risques')
+    get couleur() {
+        return carteDepartements.couleur(this.profil.departement)
+    }
+
+    get sup65() {
+        return this.profil.age >= 65
+    }
+
+    get sup50() {
+        return this.profil.age >= 50
+    }
+
+    get imc() {
+        const taille_en_metres = this.profil.taille / 100
+        return this.profil.poids / (taille_en_metres * taille_en_metres)
+    }
+
+    // Facteurs pronostiques de forme grave liés au terrain (fragilité)
+    get personne_fragile() {
+        return (
+            this.sup65 ||
+            this.profil.grossesse_3e_trimestre ||
+            this.imc > 30 ||
+            this.antecedents
+        )
+    }
+
+    get antecedents() {
+        return (
+            this.profil.antecedent_cardio ||
+            this.profil.antecedent_diabete ||
+            this.profil.antecedent_respi ||
+            this.profil.antecedent_dialyse ||
+            this.profil.antecedent_cancer ||
+            this.profil.antecedent_immunodep ||
+            this.profil.antecedent_cirrhose ||
+            this.profil.antecedent_drepano
+        )
+    }
+
+    get fievre() {
+        return (
+            this.profil.symptomes_actuels &&
+            (this.profil.symptomes_actuels_temperature ||
+                this.profil.symptomes_actuels_temperature_inconnue)
+        )
+    }
+
+    get totalFacteursDeGraviteMineurs() {
+        // Return an integer (sum of truthy values from array).
+        return [
+            this.profil.symptomes_actuels_temperature,
+            this.profil.symptomes_actuels_temperature_inconnue,
+            this.profil.symptomes_actuels_fatigue,
+        ].reduce((a, b) => (a || false) + (b || false), 0)
+    }
+
+    get facteursDeGraviteMajeurs() {
+        return (
+            this.profil.symptomes_actuels_souffle ||
+            this.profil.symptomes_actuels_alimentation
+        )
+    }
+
+    get symptomesActuelsReconnus() {
+        return this.profil.symptomes_actuels && !this.profil.symptomes_actuels_autre
+    }
+
+    get symptomes() {
+        return (
+            this.symptomesActuelsReconnus ||
+            this.profil.symptomes_passes ||
+            (this.profil.contact_a_risque && !this.profil.contact_a_risque_autre)
+        )
+    }
+
+    get statut() {
+        // L’ordre est important car risques > foyer_fragile.
+        if (this.profil.symptomes_actuels && this.facteursDeGraviteMajeurs) {
+            return 'symptomatique-urgent'
         }
-    } else if (data.contact_a_risque) {
-        blockNames.push('conseils-personnels-contact-a-risque')
-        if (data.contactARisqueAutresOnly) {
-            blockNames.push('conseils-personnels-contact-a-risque-autre-only')
-        } else {
-            blockNames.push('conseils-personnels-contact-a-risque-default')
-            if (data.contact_a_risque_autre) {
+        if (this.symptomesActuelsReconnus) {
+            return 'symptomatique'
+        }
+        if (this.symptomes && !this.profil.symptomes_actuels_autre) {
+            return 'risque-eleve'
+        }
+        if (this.personne_fragile) {
+            return 'personne-fragile'
+        }
+        if (this.profil.foyer_fragile) {
+            return 'foyer-fragile'
+        }
+        return 'peu-de-risques'
+    }
+
+    conseilsPersonnelsBlockNamesToDisplay() {
+        const blockNames = []
+        if (this.profil.symptomes_actuels) {
+            blockNames.push('conseils-personnels-symptomes-actuels')
+            if (this.antecedents || this.profil.antecedent_chronique_autre) {
+                blockNames.push('reponse-symptomes-actuels-antecedents')
+            }
+            if (this.sup50 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
+                blockNames.push('reponse-symptomes-actuels-caracteristiques')
+            }
+            if (this.symptomesActuelsReconnus) {
+                blockNames.push('reponse-symptomes-actuels-symptomesactuelsreconnus')
+            }
+            var gravite = 1
+            if (this.facteursDeGraviteMajeurs) {
+                gravite = 4
+            } else {
+                // #3.3
+                if (this.fievre && this.profil.symptomes_actuels_toux) {
+                    if (this.personne_fragile) {
+                        if (this.totalFacteursDeGraviteMineurs > 1) {
+                            gravite = 2
+                        } else {
+                            gravite = 3
+                        }
+                    }
+                }
+                // #3.4
+                if (
+                    this.fievre ||
+                    (!this.fievre &&
+                        (this.profil.symptomes_actuels_diarrhee ||
+                            (this.profil.symptomes_actuels_toux &&
+                                this.profil.symptomes_actuels_douleurs) ||
+                            (this.profil.symptomes_actuels_toux &&
+                                this.profil.symptomes_actuels_odorat)))
+                ) {
+                    if (this.personne_fragile) {
+                        if (this.totalFacteursDeGraviteMineurs > 1) {
+                            gravite = 2
+                        } else {
+                            gravite = 3
+                        }
+                    } else {
+                        if (this.sup50 || this.totalFacteursDeGraviteMineurs >= 1) {
+                            gravite = 3
+                        }
+                    }
+                }
+                // #3.5
+                if (
+                    !this.fievre &&
+                    (this.profil.symptomes_actuels_toux ||
+                        this.profil.symptomes_actuels_douleurs ||
+                        this.profil.symptomes_actuels_odorat) &&
+                    this.personne_fragile
+                ) {
+                    gravite = 3
+                }
+            }
+            blockNames.push('conseils-personnels-symptomes-actuels-gravite' + gravite)
+        } else if (this.profil.symptomes_passes) {
+            blockNames.push('conseils-personnels-symptomes-passes')
+            if (this.personne_fragile || this.profil.foyer_fragile) {
+                blockNames.push('conseils-personnels-symptomes-passes-avec-risques')
+            } else {
+                blockNames.push('conseils-personnels-symptomes-passes-sans-risques')
+            }
+        } else if (this.profil.contact_a_risque) {
+            blockNames.push('conseils-personnels-contact-a-risque')
+            if (this.profil.contact_a_risque_autre) {
                 blockNames.push('conseils-personnels-contact-a-risque-autre')
+            } else {
+                blockNames.push('conseils-personnels-contact-a-risque-default')
             }
         }
+        return blockNames
     }
-    return blockNames
-}
 
-function departementBlockNamesToDisplay(data) {
-    var blockNames = []
-    if (data.symptomes_actuels) {
-        return []
+    departementBlockNamesToDisplay() {
+        const blockNames = []
+        if (this.profil.symptomes_actuels) {
+            return []
+        }
+        blockNames.push('conseils-departement')
+        if (this.couleur === 'orange') {
+            blockNames.push('conseils-departement-orange')
+        }
+        if (this.couleur === 'vert') {
+            blockNames.push('conseils-departement-vert')
+        }
+        return blockNames
     }
-    blockNames.push('conseils-departement')
-    if (data.couleur === 'orange') {
-        blockNames.push('conseils-departement-orange')
-    }
-    if (data.couleur === 'vert') {
-        blockNames.push('conseils-departement-vert')
-    }
-    return blockNames
-}
 
-function activiteProBlockNamesToDisplay(data) {
-    var blockNames = []
-    if (data.symptomes) {
-        return []
-    }
-    if (data.activite_pro || data.activite_pro_public || data.activite_pro_sante) {
-        blockNames.push('conseils-activite')
-        // Les blocs de réponses sont exclusifs.
-        if (data.activite_pro_public && data.activite_pro_sante) {
-            blockNames.push('reponse-activite-pro-public-sante')
-        } else if (data.activite_pro_public) {
-            blockNames.push('reponse-activite-pro-public')
-        } else if (data.activite_pro_sante) {
-            blockNames.push('reponse-activite-pro-sante')
-        } else {
-            blockNames.push('reponse-activite-pro')
+    activiteProBlockNamesToDisplay() {
+        const blockNames = []
+        if (this.symptomes) {
+            return []
         }
-        // Les blocs de conseils sont quasi-exclusifs aussi.
-        if (data.activite_pro_public && data.activite_pro_sante) {
-            blockNames.push('conseils-activite-pro-public')
-            blockNames.push('conseils-activite-pro-sante')
-        } else if (data.activite_pro_public) {
-            blockNames.push('conseils-activite-pro-public')
-            blockNames.push('conseils-activite-pro-infos')
-        } else if (data.activite_pro_sante) {
-            blockNames.push('conseils-activite-pro-sante')
-        } else {
-            blockNames.push('conseils-activite-pro')
-            blockNames.push('conseils-activite-pro-infos')
+        if (
+            this.profil.activite_pro ||
+            this.profil.activite_pro_public ||
+            this.profil.activite_pro_sante
+        ) {
+            blockNames.push('conseils-activite')
+            // Les blocs de réponses sont exclusifs.
+            if (this.profil.activite_pro_public && this.profil.activite_pro_sante) {
+                blockNames.push('reponse-activite-pro-public-sante')
+            } else if (this.profil.activite_pro_public) {
+                blockNames.push('reponse-activite-pro-public')
+            } else if (this.profil.activite_pro_sante) {
+                blockNames.push('reponse-activite-pro-sante')
+            } else {
+                blockNames.push('reponse-activite-pro')
+            }
+            // Les blocs de conseils sont quasi-exclusifs aussi.
+            if (this.profil.activite_pro_public && this.profil.activite_pro_sante) {
+                blockNames.push('conseils-activite-pro-public')
+                blockNames.push('conseils-activite-pro-sante')
+            } else if (this.profil.activite_pro_public) {
+                blockNames.push('conseils-activite-pro-public')
+                blockNames.push('conseils-activite-pro-infos')
+            } else if (this.profil.activite_pro_sante) {
+                blockNames.push('conseils-activite-pro-sante')
+            } else {
+                blockNames.push('conseils-activite-pro')
+                blockNames.push('conseils-activite-pro-infos')
+            }
         }
+        return blockNames
     }
-    return blockNames
-}
 
-function foyerBlockNamesToDisplay(data) {
-    var blockNames = []
-    if (data.symptomes_actuels) {
-        return []
-    }
-    if (data.symptomes_passes || data.contact_a_risque) {
-        blockNames.push('conseils-foyer')
-        blockNames.push('conseils-foyer-fragile-suivi')
-    } else if (data.foyer_enfants || data.foyer_fragile) {
-        blockNames.push('conseils-foyer')
-        if (data.foyer_enfants && data.foyer_fragile) {
-            blockNames.push('conseils-foyer-enfants-fragile')
-        } else if (data.foyer_enfants) {
-            blockNames.push('conseils-foyer-enfants')
-        } else if (data.foyer_fragile) {
-            blockNames.push('conseils-foyer-fragile')
+    foyerBlockNamesToDisplay() {
+        const blockNames = []
+        if (this.profil.symptomes_actuels) {
+            return []
         }
+        if (this.profil.symptomes_passes || this.profil.contact_a_risque) {
+            blockNames.push('conseils-foyer')
+            blockNames.push('conseils-foyer-fragile-suivi')
+        } else if (this.profil.foyer_enfants || this.profil.foyer_fragile) {
+            blockNames.push('conseils-foyer')
+            if (this.profil.foyer_enfants && this.profil.foyer_fragile) {
+                blockNames.push('conseils-foyer-enfants-fragile')
+            } else if (this.profil.foyer_enfants) {
+                blockNames.push('conseils-foyer-enfants')
+            } else if (this.profil.foyer_fragile) {
+                blockNames.push('conseils-foyer-fragile')
+            }
+        }
+        return blockNames
     }
-    return blockNames
-}
 
-function caracteristiquesAntecedentsBlockNamesToDisplay(data) {
-    var blockNames = []
-    if (data.symptomes) {
-        return []
+    caracteristiquesAntecedentsBlockNamesToDisplay() {
+        const blockNames = []
+        if (this.symptomes) {
+            return []
+        }
+        if (this.personne_fragile || this.profil.antecedent_chronique_autre) {
+            blockNames.push('conseils-caracteristiques')
+            // Réponses
+            if (this.antecedents || this.profil.antecedent_chronique_autre) {
+                blockNames.push('reponse-antecedents')
+            }
+            if (this.sup65 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
+                blockNames.push('reponse-caracteristiques')
+            }
+            // Conseils
+            if (this.profil.activite_pro) {
+                blockNames.push('conseils-caracteristiques-antecedents-activite-pro')
+            } else {
+                blockNames.push('conseils-caracteristiques-antecedents')
+            }
+            if (this.antecedents || this.profil.antecedent_chronique_autre) {
+                blockNames.push('conseils-caracteristiques-antecedents-info-risque')
+            } else {
+                blockNames.push('conseils-caracteristiques-antecedents-info')
+            }
+            if (this.profil.antecedent_chronique_autre) {
+                blockNames.push('conseils-antecedents-chroniques-autres')
+            }
+        }
+        return blockNames
     }
-    if (data.risques || data.antecedent_chronique_autre) {
-        blockNames.push('conseils-caracteristiques')
-        // Réponses
-        if (data.antecedents || data.antecedent_chronique_autre) {
-            blockNames.push('reponse-antecedents')
-        }
-        if (data.sup65 || data.grossesse_3e_trimestre || data.imc > 30) {
-            blockNames.push('reponse-caracteristiques')
-        }
-        // Conseils
-        if (data.activite_pro) {
-            blockNames.push('conseils-caracteristiques-antecedents-activite-pro')
-        } else {
-            blockNames.push('conseils-caracteristiques-antecedents')
-        }
-        if (data.antecedents || data.antecedent_chronique_autre) {
-            blockNames.push('conseils-caracteristiques-antecedents-info-risque')
-        } else {
-            blockNames.push('conseils-caracteristiques-antecedents-info')
-        }
-        if (data.antecedent_chronique_autre) {
-            blockNames.push('conseils-antecedents-chroniques-autres')
-        }
-    }
-    return blockNames
 }
 
 module.exports = {
-    getData,
-    statut,
-    conseilsPersonnelsBlockNamesToDisplay,
-    departementBlockNamesToDisplay,
-    activiteProBlockNamesToDisplay,
-    foyerBlockNamesToDisplay,
-    caracteristiquesAntecedentsBlockNamesToDisplay,
+    Algorithme,
 }

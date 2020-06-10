@@ -35,3 +35,19 @@ Il vous est conseillé de rester **en isolement**.
 
 ---
 
+
+## [statut_symptomatique.md](statut_symptomatique.md)
+
+Vous êtes peut-être **porteur du COVID-19**.
+
+
+---
+
+
+## [statut_symptomatique_urgent.md](statut_symptomatique_urgent.md)
+
+**Appelez le SAMU / 15** ou demandez à quelqu’un de le faire pour vous pour être pris en charge **rapidement**. Vous êtes peut-être **porteur du COVID-19**.
+
+
+---
+
