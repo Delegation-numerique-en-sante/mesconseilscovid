@@ -38,6 +38,8 @@ Vous pouvez trouver les recommandations adaptées sur le site du ministère des 
 
 * Vous pouvez également consulter les [recommandations](https://www.hcsp.fr/Explore.cgi/Telecharger?NomFichier=hcspa20200523_sarcovprodestabdesansocetmdisoc.pdf) du Haut conseil de la santé publique relatives à la conduite à tenir vis-à-vis des professionnels intervenant en établissement de santé (ES) ainsi qu’en établissement social et médico-social (ESMS) selon leur statut vis-à-vis du SARS-CoV-2.
 
+Si vous travaillez auprès d’enfants et/ou vous devez conseiller des parents, vous pouvez trouver des informations relatives aux activités et à la santé des enfants en période de COVID19 [sur la page suivante](#pediatrie).
+
 
 ---
 
@@ -215,6 +217,8 @@ Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à 
 
 Si vous ne pouvez pas faire garder votre enfant, des solutions existent (voir plus bas).
 
+Pour des informations relatives aux activités et à la santé des enfants en période de COVID19, vous pouvez [consulter la page suivante](#pediatrie).
+
 
 ---
 
@@ -229,6 +233,8 @@ Si vos enfants sortent à l’extérieur du foyer, il convient de mettre en plac
 * En complément des gestes barrières, porter un masque lorsque la distanciation de 1m ne peut pas être respectée.
 
 Si vous ne pouvez pas faire garder votre enfant, des solutions existent (voir plus bas).
+
+Pour des informations relatives aux activités et à la santé des enfants en période de COVID19, vous pouvez [consulter la page suivante](#pediatrie).
 
 
 ---

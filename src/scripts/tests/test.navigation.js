@@ -10,6 +10,9 @@ describe('Navigation générale', function () {
     it('ok d’aller à la page d’accueil', function () {
         chai.expect(redirectToUnansweredQuestions('introduction', {})).to.be.undefined
     })
+    it('ok d’aller à la page de pédiatrie', function () {
+        chai.expect(redirectToUnansweredQuestions('pediatrie', {})).to.be.undefined
+    })
     it('ok d’aller au conditions d’utilisation', function () {
         chai.expect(redirectToUnansweredQuestions('conditionsutilisation', {})).to.be
             .undefined

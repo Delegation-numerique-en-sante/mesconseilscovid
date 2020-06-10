@@ -11,6 +11,7 @@ var getCurrentPageName = function () {
 
 var redirectToUnansweredQuestions = function (page, profil) {
     if (page === 'introduction') return
+    if (page === 'pediatrie') return
     if (page === 'conditionsutilisation') return
     if (page === 'nouvelleversiondisponible') return
 
@@ -166,6 +167,10 @@ function initRouter(profil, stockageLocal) {
             var pageName = 'conseils'
             var element = loadPage(pageName)
             conseils(element, profil, stockageLocal, router)
+        })
+        .on(new RegExp('^pediatrie$'), function () {
+            var pageName = 'pediatrie'
+            loadPage(pageName)
         })
         .on(new RegExp('^conditionsutilisation$'), function () {
             var pageName = 'conditionsutilisation'
