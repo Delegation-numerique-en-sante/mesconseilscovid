@@ -23,7 +23,7 @@
 ## [question_activité_pro_santé_aide.md](question_activité_pro_santé_aide.md)
 
 <sup>*</sup>
-Médecin, infirmier, aide soignant, brancardier, manipulateur radio, kinésithérapeute, psychologue…
+Médecin, infirmier, aide soignant, brancardier, manipulateur radio, kinésithérapeute, sages-femmes, psychologue…
 
 
 ---
