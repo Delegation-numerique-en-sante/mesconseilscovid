@@ -1,5 +1,11 @@
 # Changelog
 
+## 2020-06-11
+
+* ajout d’un lien vers une vidéo sur la santé et sécurité au travail
+* ajout d’un message sur le bon usage des antibiotiques
+* ajout de « sage-femme » dans la liste des professions médicales
+
 ## 2020-06-10
 
 * implémente l’algorithme d’orientation avec différents niveaux de gravité si l’on présente des symptômes actuels
