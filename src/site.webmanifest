@@ -1,6 +1,7 @@
 {
     "name": "Mes Conseils Covid",
     "short_name": "Conseils Covid",
+    "description": "Des conseils personnalisés pour agir contre le virus",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -15,5 +16,6 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "start_url": "/"
 }
