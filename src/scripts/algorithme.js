@@ -279,6 +279,9 @@ class Algorithme {
             } else {
                 blockNames.push('conseils-caracteristiques-antecedents-info')
             }
+            if (this.profil.grossesse_3e_trimestre) {
+                blockNames.push('conseils-caracteristiques-antecedents-femme-enceinte')
+            }
             if (this.profil.antecedent_chronique_autre) {
                 blockNames.push('conseils-antecedents-chroniques-autres')
             }
