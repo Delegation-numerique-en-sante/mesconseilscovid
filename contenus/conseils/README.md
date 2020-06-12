@@ -14,9 +14,9 @@ Il est recommandé de **télétravailler** si cela vous est possible. Si vous de
 
 ## [conseils_activité_pro_infos.md](conseils_activité_pro_infos.md)
 
-Pour plus d’informations, vous pouvez consulter l’espace dédié pour les professionnels sur le site du [gouvernement.fr](https://www.gouvernement.fr/info-coronavirus/espace-pour-les-professionnels) et les informations dédiées à la [reprise du travail](https://www.gouvernement.fr/info-coronavirus/retour-au-travail).
+Pour plus d’informations, vous pouvez consulter l’[espace dédié pour les professionnels](https://www.gouvernement.fr/info-coronavirus/espace-pour-les-professionnels) et la page concernant le [retour au travail](https://www.gouvernement.fr/info-coronavirus/retour-au-travail) sur le site du gouvernement.
 
-Pour savoir comment assurer sa santé et sa sécurité au travail retrouvez également une [vidéo](https://travail-emploi.gouv.fr/actualites/l-actualite-du-ministere/article/covid-19-comment-assurer-ma-sante-et-ma-securite-au-travail) sur le site du ministère du travail 
+Retrouvez également une vidéo pour savoir [comment assurer sa santé et sa sécurité au travail](https://travail-emploi.gouv.fr/actualites/l-actualite-du-ministere/article/covid-19-comment-assurer-ma-sante-et-ma-securite-au-travail) sur le site du ministère du travail.
 
 
 ---
@@ -170,9 +170,9 @@ Le **mardi 2 juin** les [règles de déconfinement changent](https://www.gouvern
 
 Pour plus d’informations, vous pouvez consulter :
 
-* [l’infographie récapitulative](https://www.gouvernement.fr/sites/default/files/cimages/infog_deconfinement.jpg) du plan de déconfinement
+* l’infographie récapitulative du [plan de déconfinement](https://www.gouvernement.fr/sites/default/files/cimages/infog_deconfinement.jpg) ;
 
-* les règles spécifiques de votre département sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
+* les <a href="#conseils-departement" id="lien-prefecture">règles spécifiques de votre département</a> sur le site de votre préfecture.
 
 
 ---
@@ -301,7 +301,7 @@ Le COVID n’a pas fait disparaitre les autres pathologies. Afin de préserver v
 
 De plus, **l’aération régulière** [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf), le respect des **gestes barrières**, et de **distanciation physique** reste indispensable et le **port du masque** s’impose dans certaines situations.
 
-Comme l’origine du Covid-19 n’est pas bactérienne, en dehors de la présence de signes de gravité, il n’est pas nécessaire de prescrire une antibiothérapie : ils ne sont pas efficaces. Pour plus d’informations sur les antibiotiques retrouvez des information sur [sante.fr](https://sante.fr/antibiomalin).
+Comme l’origine du Covid-19 n’est pas bactérienne, en dehors de la présence de signes de gravité, il n’est pas nécessaire de prescrire une antibiothérapie : ils ne sont pas efficaces. Retrouvez [plus d’informations sur les antibiotiques](https://sante.fr/antibiomalin) sur le site Santé.fr.
 
 
 ---

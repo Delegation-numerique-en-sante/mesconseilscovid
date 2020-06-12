@@ -2,6 +2,6 @@ Le **mardi 2 juin** les [règles de déconfinement changent](https://www.gouvern
 
 Pour plus d’informations, vous pouvez consulter :
 
-* [l’infographie récapitulative](https://www.gouvernement.fr/sites/default/files/cimages/infog_deconfinement.jpg) du plan de déconfinement
+* l’infographie récapitulative du [plan de déconfinement](https://www.gouvernement.fr/sites/default/files/cimages/infog_deconfinement.jpg) ;
 
-* les règles spécifiques de votre département sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
+* les <a href="#conseils-departement" id="lien-prefecture">règles spécifiques de votre département</a> sur le site de votre préfecture.
