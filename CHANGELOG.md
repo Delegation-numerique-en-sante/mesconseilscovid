@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-06-12
+
+* ajout de conseils pour les femmes enceintes
+
 ## 2020-06-11
 
 * ajout d’un lien vers une vidéo sur la santé et sécurité au travail
