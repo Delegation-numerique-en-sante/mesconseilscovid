@@ -704,6 +704,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
             'reponse-caracteristiques',
             'conseils-caracteristiques-antecedents',
             'conseils-caracteristiques-antecedents-info',
+            'conseils-caracteristiques-antecedents-femme-enceinte',
         ])
     })
 
