@@ -6,15 +6,12 @@ jobs:
   cleanup:
     name: Clean up
     runs-on: ubuntu-latest
+    if: ${{ github.event.ref_type == 'branch' }}
     steps:
-      - name: Debug
-        run: |
-          echo '${{ toJson(github.event) }}'
       - name: Send event to trigger cleanup workflow
-        if: ${{ github.event.client_payload.ref_type == 'branch' }}
         run: |
           curl -XPOST https://api.github.com/repos/Delegation-numerique-en-sante/mesconseilscovid-infra/dispatches \
                -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
                -H "Accept: application/vnd.github.everest-preview+json" \
                -H "Content-Type: application/json" \
-               --data '{"event_type": "cleanup", "client_payload": {"branch": "${{ github.event.client_payload.ref }}"}}'
+               --data '{"event_type": "cleanup", "client_payload": {"branch": "${{ github.event.ref }}"}}'
