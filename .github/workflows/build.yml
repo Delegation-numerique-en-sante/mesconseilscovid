@@ -45,4 +45,4 @@ jobs:
                -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
                -H "Accept: application/vnd.github.everest-preview+json" \
                -H "Content-Type: application/json" \
-               --data '{"event_type": "deploy", "client_payload": {"repo": "${{ github.repository }}", "commit": "${{ env.GITHUB_SHA }}", "branch": "${{ env.GITHUB_REF }}", "artifact": "mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}"}}'
+               --data '{"event_type": "deploy", "client_payload": {"repo": "${{ github.repository }}", "commit": "${{ github.sha }}", "ref": "${{ github.ref }}", "artifact": "mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}"}}'
