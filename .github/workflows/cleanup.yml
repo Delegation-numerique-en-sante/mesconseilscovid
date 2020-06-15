@@ -1,0 +1,19 @@
+name: Nettoyer les déploiements de versions de test obsolètes
+
+on: delete
+
+jobs:
+  cleanup:
+    name: Clean up
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inject slug/short variables
+        uses: rlespinasse/github-slug-action@v2.x
+
+      - name: Send event to trigger cleanup workflow
+        run: |
+          curl -XPOST https://api.github.com/repos/Delegation-numerique-en-sante/mesconseilscovid-infra/dispatches \
+               -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+               -H "Accept: application/vnd.github.everest-preview+json" \
+               -H "Content-Type: application/json" \
+               --data '{"event_type": "cleanup", "client_payload": {"repo": "${{ github.repository }}", "commit": "${{ github.sha }}", "branch": "${{ env.GITHUB_REF_SLUG_URL }}", "artifact": "mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}"}}'
