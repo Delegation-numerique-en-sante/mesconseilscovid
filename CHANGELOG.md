@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-06-15
+
+* passage de l’Île-de-France en vert
+
 ## 2020-06-12
 
 * ajout de conseils pour les femmes enceintes
