@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Debug
         run: |
-          echo '${{ github.event }}'
+          echo '${{ toJson(github.event) }}'
       - name: Send event to trigger cleanup workflow
         if: ${{ github.event.client_payload.ref_type == 'branch' }}
         run: |
