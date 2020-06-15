@@ -367,7 +367,7 @@ describe('Algorithme département', function () {
 
     it('Un département orange affiche le bloc orange', function () {
         var data = {
-            departement: '75',
+            departement: '973',
         }
         profil.fillData(data)
         var algorithme = new Algorithme(profil)
