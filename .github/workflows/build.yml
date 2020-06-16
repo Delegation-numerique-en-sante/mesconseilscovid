@@ -44,8 +44,9 @@ jobs:
         uses: maxkomarychev/oction-create-deployment@v0.7.1
         id: create_deployment
         with:
-          ref: ${{ github.sha }}
+          ref: ${{ github.ref }}
           environment: test
+          required_contexts: []
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Send event to trigger deployment workflow
