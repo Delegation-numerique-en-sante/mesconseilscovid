@@ -46,7 +46,7 @@ jobs:
         with:
           ref: ${{ github.ref }}
           environment: test
-          required_contexts: "[]"
+          required_contexts: "<<EMPTY>>"
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Send event to trigger deployment workflow
