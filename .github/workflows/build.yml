@@ -46,6 +46,7 @@ jobs:
         with:
           ref: ${{ github.sha }}
           environment: test
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Send event to trigger deployment workflow
         if: ${{ github.ref != 'refs/heads/master' }}
