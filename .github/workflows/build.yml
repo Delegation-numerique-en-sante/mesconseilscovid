@@ -39,10 +39,19 @@ jobs:
           name: mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}
           path: dist/
 
+      - name: Create deployment
+        if: ${{ github.ref != 'refs/heads/master' }}
+        uses: maxkomarychev/oction-create-deployment@v0.7.1
+        id: create_deployment
+        with:
+          ref: ${{ github.sha }}
+          environment: test
+
       - name: Send event to trigger deployment workflow
+        if: ${{ github.ref != 'refs/heads/master' }}
         run: |
           curl -XPOST https://api.github.com/repos/Delegation-numerique-en-sante/mesconseilscovid-infra/dispatches \
                -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
                -H "Accept: application/vnd.github.everest-preview+json" \
                -H "Content-Type: application/json" \
-               --data '{"event_type": "deploy", "client_payload": {"repo": "${{ github.repository }}", "commit": "${{ github.sha }}", "ref": "${{ github.ref }}", "slug": "${{ env.GITHUB_REF_SLUG_URL }}", "artifact": "mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}"}}'
+               --data '{"event_type": "deploy", "client_payload": {"repo": "${{ github.repository }}", "commit": "${{ github.sha }}", "ref": "${{ github.ref }}", "slug": "${{ env.GITHUB_REF_SLUG_URL }}", "artifact": "mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}", "deployment_id": "${{ steps.create_deployment.outputs.id }}"}}'
