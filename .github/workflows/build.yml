@@ -45,7 +45,7 @@ jobs:
         id: create_deployment
         with:
           ref: ${{ github.ref }}
-          environment: test
+          environment: ${{ env.GITHUB_REF_SLUG_URL }}.test
           required_contexts: "<<EMPTY>>"
           token: ${{ secrets.GITHUB_TOKEN }}
 
