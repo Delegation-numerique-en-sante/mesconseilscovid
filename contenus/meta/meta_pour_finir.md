@@ -2,12 +2,12 @@
 
 Vos réponses sont sauvegardées dans votre navigateur et les conseils sont mis à jour régulièrement.
 
-<div class="icon icon-favori browser-mobile-safari" style="display: none">
+<div class="icon icon-favori browser-mobile-safari" hidden>
 
 Vous pouvez **installer l’application sur votre téléphone** : pour cela, touchez l’icône <img src="ei-share-apple.svg" class="ios-share-button" alt="Partager">, puis sélectionnez « Sur l’écran d’accueil » dans la liste.
 
 </div>
-<div class="icon icon-favori favori browser-other" style="display: none">
+<div class="icon icon-favori favori browser-other" hidden>
 
 N’hésitez pas à mettre cette page en favori pour **y revenir plus tard**. Par exemple en appuyant sur les touches <kbd class="conseil">Control + D</kbd> (Windows) ou <kbd class="conseil">Command + D</kbd> (macOS).
 

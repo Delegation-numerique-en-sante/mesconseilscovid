@@ -3,6 +3,11 @@ function hideElement(element) {
     element.classList.remove('visible')
 }
 
+function showElement(element) {
+    element.removeAttribute('hidden')
+    element.classList.add('visible')
+}
+
 function hideSelector(element, selector) {
     // eslint-disable-next-line no-extra-semi
     ;[].forEach.call(element.querySelectorAll(selector), hideElement)
@@ -10,8 +15,7 @@ function hideSelector(element, selector) {
 
 function displayElement(element, id) {
     var block = element.querySelector('#' + id)
-    block.removeAttribute('hidden')
-    block.classList.add('visible')
+    showElement(block)
 
     // We avoid using the `document` global, as it is not available
     // when running unit tests in Node.
