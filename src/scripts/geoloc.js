@@ -71,7 +71,7 @@ function geolocalisation(event) {
     }
     var onDepartementNotFound = function () {
         // L’utilisateur n’est probablement pas sur le territoire français.
-        affichage.displayElement(form, 'error-geolocalisation')
+        affichage.displayElementById(form, 'error-geolocalisation')
     }
     navigator.geolocation.getCurrentPosition(
         function (position) {

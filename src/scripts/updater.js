@@ -50,7 +50,7 @@ module.exports = function (router) {
                         that.forceReloadCurrentPageWithHash
                     )
                 })
-                affichage.displayElement(document, 'update-banner')
+                affichage.displayElementById(document, 'update-banner')
             } else {
                 document.addEventListener(
                     'pageChanged:nouvelleversiondisponible',
