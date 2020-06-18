@@ -21,6 +21,16 @@ function page(element, profil, stockageLocal, router) {
     // Dynamic data injections.
     showRelevantAnswersRecap(element, profil, algorithme)
 
+    // Show instructions to install PWA (iOS) or add bookmark (others)
+    if (isMobileSafari()) {
+        const isPWA = navigator.standalone
+        if (!isPWA) {
+            element.querySelector('.browser-mobile-safari').style.display = 'block'
+        }
+    } else {
+        element.querySelector('.browser-other').style.display = 'block'
+    }
+
     // Make the buttons clickable with appropriated actions.
     actions.bindImpression(element)
     actions.bindSuppression(element, profil, stockageLocal, router)
@@ -78,6 +88,16 @@ function showRelevantAnswersRecap(element, profil, algorithme) {
 
 function statutBlockNamesToDisplay(algorithme) {
     return ['statut-' + algorithme.statut]
+}
+
+function isMobileSafari() {
+    const ua = window.navigator.userAgent
+    const isIPad = !!ua.match(/iPad/i)
+    const isIPhone = !!ua.match(/iPhone/i)
+    const isIOS = isIPad || isIPhone
+    const isWebkit = !!ua.match(/WebKit/i)
+    const isChrome = !!ua.match(/CriOS/i)
+    return isIOS && isWebkit && !isChrome
 }
 
 module.exports = page

@@ -615,6 +615,10 @@ a#geolocalisation {
     background-image: url('trash.svg');
 }
 
+#pour-finir .ios-share-button {
+    height: 1.5rem;
+    margin-bottom: -0.4rem;
+}
 
 @media print {
     #conseils-departement h3,
