@@ -25,10 +25,10 @@ function page(element, profil, stockageLocal, router) {
     if (isMobileSafari()) {
         const isPWA = navigator.standalone
         if (!isPWA) {
-            element.querySelector('.browser-mobile-safari').style.display = 'block'
+            affichage.showElement(element.querySelector('.browser-mobile-safari'))
         }
     } else {
-        element.querySelector('.browser-other').style.display = 'block'
+        affichage.showElement(element.querySelector('.browser-other'))
     }
 
     // Make the buttons clickable with appropriated actions.
