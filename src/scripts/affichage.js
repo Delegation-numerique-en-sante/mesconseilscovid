@@ -13,7 +13,7 @@ function hideSelector(element, selector) {
     ;[].forEach.call(element.querySelectorAll(selector), hideElement)
 }
 
-function displayElement(element, id) {
+function displayElementById(element, id) {
     var block = element.querySelector('#' + id)
     showElement(block)
 
@@ -37,13 +37,14 @@ function getRoot(node) {
 
 function displayBlocks(element, blockNames) {
     blockNames.forEach(function (block) {
-        displayElement(element, block)
+        displayElementById(element, block)
     })
 }
 
 module.exports = {
     hideElement,
+    showElement,
     hideSelector,
-    displayElement,
+    displayElementById,
     displayBlocks,
 }
