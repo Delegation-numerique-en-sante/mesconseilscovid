@@ -1,1 +1,1 @@
-Vous présentez une ou des caractéristiques à risque : <b id="nom-caracteristiques"></b> (<a href="#caracteristiques">modifier</a>)
+Vous avez les caractéristiques suivantes : <b id="nom-caracteristiques-age"></b> ans, <b id="nom-caracteristiques-taille"></b> cm et <b id="nom-caracteristiques-poids"></b> kg (<a href="#caracteristiques">modifier</a>)

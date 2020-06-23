@@ -62,28 +62,46 @@ function showRelevantBlocks(element, profil, algorithme) {
 
 function showRelevantAnswersRecap(element, profil, algorithme) {
     injection.departement(element.querySelector('#nom-departement'), profil.departement)
-    injection.lienPrefecture(
-        element.querySelector('#lien-prefecture'),
-        profil.departement
-    )
+    var lienPrefecture = element.querySelector('#lien-prefecture')
+    if (lienPrefecture) {
+        injection.lienPrefecture(lienPrefecture, profil.departement)
+    }
 
     // We need to target more specifically given there are two similar ids.
     var selector
     if (algorithme.symptomesActuelsReconnus) {
-        selector = '#conseils-personnels-symptomes-actuels .reponse'
+        selector = '#conseils-personnels-symptomes-actuels'
     } else {
-        selector = '#conseils-caracteristiques .reponse'
+        selector = '#conseils-caracteristiques'
     }
     var subElement = element.querySelector(selector)
-    injection.caracteristiques(
-        subElement.querySelector('#nom-caracteristiques'),
-        algorithme
+    if (!subElement) return
+    injection.caracteristique(
+        subElement.querySelector('#nom-caracteristiques-age'),
+        profil.age
     )
-    injection.antecedents(subElement.querySelector('#nom-antecedents'), algorithme)
-    injection.symptomesactuels(
-        subElement.querySelector('#nom-symptomesactuels'),
-        algorithme
+    injection.caracteristique(
+        subElement.querySelector('#nom-caracteristiques-taille'),
+        profil.taille
     )
+    injection.caracteristique(
+        subElement.querySelector('#nom-caracteristiques-poids'),
+        profil.poids
+    )
+    var nomCaracteristiquesARisques = subElement.querySelector(
+        '#nom-caracteristiques-a-risques'
+    )
+    if (nomCaracteristiquesARisques) {
+        injection.caracteristiquesARisques(nomCaracteristiquesARisques, algorithme)
+    }
+    var nomAntecedents = subElement.querySelector('#nom-antecedents')
+    if (nomAntecedents) {
+        injection.antecedents(nomAntecedents, algorithme)
+    }
+    var nomSymptomesActuels = subElement.querySelector('#nom-symptomesactuels')
+    if (nomSymptomesActuels) {
+        injection.symptomesactuels(nomSymptomesActuels, algorithme)
+    }
 }
 
 function statutBlockNamesToDisplay(algorithme) {
@@ -100,4 +118,8 @@ function isMobileSafari() {
     return isIOS && isWebkit && !isChrome
 }
 
-module.exports = page
+module.exports = {
+    page,
+    showRelevantBlocks,
+    showRelevantAnswersRecap,
+}

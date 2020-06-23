@@ -58,7 +58,6 @@ header img {
 header h1 {
     text-align: center;
     flex-grow: 2;
-    padding-right: 10%; /* To compensate the width of the logo on desktop. */
 }
 header h1 a {
     text-decoration: none;
@@ -69,6 +68,9 @@ header h1 a:hover {
 }
 header h1 a:visited {
     color: black;
+}
+header a.button {
+    margin-top: 1rem;
 }
 main {
     background-color: #f9f8f6;

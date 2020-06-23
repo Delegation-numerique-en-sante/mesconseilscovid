@@ -3,6 +3,7 @@ var Navigo = require('navigo')
 var affichage = require('./affichage.js')
 var conseils = require('./conseils.js')
 var questionnaire = require('./questionnaire.js')
+var profils = require('./profils.js')
 
 var getCurrentPageName = function () {
     var hash = document.location.hash
@@ -11,6 +12,7 @@ var getCurrentPageName = function () {
 
 var redirectToUnansweredQuestions = function (page, profil) {
     if (page === 'introduction') return
+    if (page === 'profils') return
     if (page === 'pediatrie') return
     if (page === 'conditionsutilisation') return
     if (page === 'nouvelleversiondisponible') return
@@ -115,9 +117,29 @@ function initRouter(profil, stockageLocal) {
     })
 
     router
+        .on(new RegExp('^profils$'), function () {
+            if (profil.isEmpty()) {
+                router.navigate('introduction')
+            }
+            var pageName = 'profils'
+            var element = loadPage(pageName)
+            profils(element, profil)
+            if (profil.isComplete()) {
+                affichage.displayElement(element, 'js-profil-full')
+                affichage.hideElement(element.querySelector('#js-profil-empty'))
+                var mesConseilsLink = element.querySelector('#mes-conseils-link')
+                var target = redirectToUnansweredQuestions('findCorrectExit', profil)
+                mesConseilsLink.setAttribute('href', '#' + target)
+            }
+        })
         .on(new RegExp('^introduction$'), function () {
             var pageName = 'introduction'
             var element = loadPage(pageName)
+            if (!profil.isEmpty()) {
+                var header = document.querySelector('header section')
+                affichage.displayElement(header, 'js-profil-full')
+                affichage.hideElement(header.querySelector('#js-profil-empty'))
+            }
             if (profil.isComplete()) {
                 affichage.showElement(element.querySelector('#js-profil-full'))
                 affichage.hideElement(element.querySelector('#js-profil-empty'))
@@ -169,11 +191,21 @@ function initRouter(profil, stockageLocal) {
         .on(new RegExp('^conseils$'), function () {
             var pageName = 'conseils'
             var element = loadPage(pageName)
-            conseils(element, profil, stockageLocal, router)
+            if (!profil.isEmpty()) {
+                var header = document.querySelector('header section')
+                affichage.displayElement(header, 'js-profil-full')
+                affichage.hideElement(header.querySelector('#js-profil-empty'))
+            }
+            conseils.page(element, profil, stockageLocal, router)
         })
         .on(new RegExp('^pediatrie$'), function () {
             var pageName = 'pediatrie'
             var element = loadPage(pageName)
+            if (!profil.isEmpty()) {
+                var header = document.querySelector('header section')
+                affichage.displayElement(header, 'js-profil-full')
+                affichage.hideElement(header.querySelector('#js-profil-empty'))
+            }
             if (profil.isComplete()) {
                 affichage.showElement(element.querySelector('#js-profil-full'))
                 affichage.hideElement(element.querySelector('#js-profil-empty'))

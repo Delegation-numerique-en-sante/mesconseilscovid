@@ -667,7 +667,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
         var algorithme = new Algorithme(profil)
         assert.deepEqual(algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(), [
             'conseils-caracteristiques',
-            'reponse-caracteristiques',
+            'reponse-caracteristiques-a-risques',
             'conseils-caracteristiques-antecedents',
             'conseils-caracteristiques-antecedents-info',
         ])
@@ -682,7 +682,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
         var algorithme = new Algorithme(profil)
         assert.deepEqual(algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(), [
             'conseils-caracteristiques',
-            'reponse-caracteristiques',
+            'reponse-caracteristiques-a-risques',
             'conseils-caracteristiques-antecedents',
             'conseils-caracteristiques-antecedents-info',
         ])
@@ -696,7 +696,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
         var algorithme = new Algorithme(profil)
         assert.deepEqual(algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(), [
             'conseils-caracteristiques',
-            'reponse-caracteristiques',
+            'reponse-caracteristiques-a-risques',
             'conseils-caracteristiques-antecedents',
             'conseils-caracteristiques-antecedents-info',
             'conseils-caracteristiques-antecedents-femme-enceinte',

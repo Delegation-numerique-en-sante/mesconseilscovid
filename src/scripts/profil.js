@@ -130,6 +130,33 @@ module.exports = function () {
         }
     }
 
+    this.isEmpty = function () {
+        return (
+            typeof this.departement === 'undefined' &&
+            typeof this.activite_pro === 'undefined' &&
+            typeof this.activite_pro_public === 'undefined' &&
+            typeof this.activite_pro_sante === 'undefined' &&
+            typeof this.foyer_enfants === 'undefined' &&
+            typeof this.foyer_fragile === 'undefined' &&
+            typeof this.age === 'undefined' &&
+            typeof this.grossesse_3e_trimestre === 'undefined' &&
+            typeof this.poids === 'undefined' &&
+            typeof this.taille === 'undefined' &&
+            typeof this.antecedent_cardio === 'undefined' &&
+            typeof this.antecedent_diabete === 'undefined' &&
+            typeof this.antecedent_respi === 'undefined' &&
+            typeof this.antecedent_dialyse === 'undefined' &&
+            typeof this.antecedent_cancer === 'undefined' &&
+            typeof this.antecedent_immunodep === 'undefined' &&
+            typeof this.antecedent_cirrhose === 'undefined' &&
+            typeof this.antecedent_drepano === 'undefined' &&
+            typeof this.antecedent_chronique_autre === 'undefined' &&
+            typeof this.symptomes_actuels === 'undefined' &&
+            typeof this.symptomes_passes === 'undefined' &&
+            typeof this.contact_a_risque === 'undefined'
+        )
+    }
+
     this.isComplete = function () {
         return (
             typeof this.departement !== 'undefined' &&

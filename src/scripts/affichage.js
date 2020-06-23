@@ -15,6 +15,7 @@ function hideSelector(element, selector) {
 
 function displayElementById(element, id) {
     var block = element.querySelector('#' + id)
+    if (!block) return
     showElement(block)
 
     // We avoid using the `document` global, as it is not available

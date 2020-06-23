@@ -55,6 +55,7 @@ describe('Profil', function () {
             contact_a_risque_autre: undefined,
         })
         assert.isFalse(profil.isComplete())
+        assert.isTrue(profil.isEmpty())
     })
 
     it('Le questionnaire peut être partiellement rempli', function () {
@@ -64,6 +65,7 @@ describe('Profil', function () {
         profil.fillData(data)
         assert.include(profil.getData(), data)
         assert.isFalse(profil.isComplete())
+        assert.isFalse(profil.isEmpty())
     })
 
     it('Le questionnaire peut être partiellement vidé', function () {
@@ -122,6 +124,7 @@ describe('Profil', function () {
         profil.fillData(data)
         assert.deepEqual(profil.getData(), data)
         assert.isTrue(profil.isComplete())
+        assert.isFalse(profil.isEmpty())
     })
 
     it('Le questionnaire peut être complètement rempli mais âge < 15', function () {
@@ -169,6 +172,7 @@ describe('Profil', function () {
         profil.fillData(data)
         assert.deepEqual(profil.getData(), data)
         assert.isFalse(profil.isComplete())
+        assert.isFalse(profil.isEmpty())
     })
 
     it('Le questionnaire peut être complètement vidé', function () {
@@ -257,5 +261,6 @@ describe('Profil', function () {
             contact_a_risque_autre: undefined,
         })
         assert.isFalse(profil.isComplete())
+        assert.isTrue(profil.isEmpty())
     })
 })

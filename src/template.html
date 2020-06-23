@@ -34,6 +34,10 @@
                 alt="Logo du Ministère des Solidarités et de la Santé"
                 width="100" height="78">
             {{ meta_titre }}
+            <div id="js-profil-full" hidden>
+                <a class="button button-outline button-full-width" href="#profils">Profils</a>
+            </div>
+            <div id="js-profil-empty"></div>
         </section>
     </header>
     <main>
@@ -61,6 +65,57 @@
             {{ meta_pied_de_page }}
         </footer>
     </main>
+
+<section id="profils" hidden>
+    <div id="profils-block" class="block">
+        <h2>Vos profils</h2>
+        <div class="conseils">
+            {{ réponse_département }}
+            {{ réponse_foyer_enfants }}
+            <div id="reponse-activite-pro" hidden>
+                {{ réponse_activité_pro }}
+            </div>
+            <div id="reponse-activite-pro-public" hidden>
+                {{ réponse_activité_pro_public }}
+            </div>
+            <div id="reponse-activite-pro-sante" hidden>
+                {{ réponse_activité_pro_santé }}
+            </div>
+            <div id="reponse-activite-pro-public-sante" hidden>
+                {{ réponse_activité_pro_public_santé }}
+            </div>
+            <div id="conseils-caracteristiques" hidden>
+                {{ réponse_caractéristiques }}
+                <div id="reponse-caracteristiques-a-risques" hidden>
+                    {{ réponse_caractéristiques_à_risques }}
+                </div>
+                <div id="reponse-antecedents" hidden>
+                    {{ réponse_antécédents }}
+                </div>
+            </div>
+            <div id="conseils-personnels-symptomes-actuels" hidden>
+                {{ réponse_caractéristiques }}
+                <div id="reponse-symptomes-actuels-caracteristiques" hidden>
+                    {{ réponse_caractéristiques_à_risques }}
+                </div>
+                <div id="reponse-symptomes-actuels-antecedents" hidden>
+                    {{ réponse_antécédents }}
+                </div>
+                <div id="reponse-symptomes-actuels-symptomesactuelsreconnus" hidden>
+                    {{ réponse_symptômes_actuels_reconnus }}
+                </div>
+            </div>
+            {{ meta_profils }}
+        </div>
+        <div id="js-profil-full" class="form-controls" hidden>
+            <a class="button button-outline button-full-width" href="#residence">Modifier les réponses de ce profil</a>
+            <a class="button button-full-width" href="" id="mes-conseils-link">Voir les conseils de ce profil</a>
+        </div>
+        <div id="js-profil-empty">
+            <a class="button button-full-width" href="#residence">Démarrer</a>
+        </div>
+    </div>
+</section>
 
 <section id="introduction" hidden>
     <div id="introduction-block" class="block">
@@ -581,7 +636,7 @@
             <div id="conseils-personnels-symptomes-actuels" class="conseils" hidden>
                 <div class="reponse">
                     <div id="reponse-symptomes-actuels-caracteristiques" hidden>
-                        {{ réponse_caractéristiques }}
+                        {{ réponse_caractéristiques_à_risques }}
                     </div>
                     <div id="reponse-symptomes-actuels-antecedents" hidden>
                         {{ réponse_antécédents }}
@@ -738,8 +793,8 @@
             <div id="conseils-caracteristiques" class="conseils" hidden>
                 <h3>Vos caractéristiques et antécédents</h3>
                 <div class="reponse">
-                    <div id="reponse-caracteristiques" hidden>
-                        {{ réponse_caractéristiques }}
+                    <div id="reponse-caracteristiques-a-risques" hidden>
+                        {{ réponse_caractéristiques_à_risques }}
                     </div>
                     <div id="reponse-antecedents" hidden>
                         {{ réponse_antécédents }}
