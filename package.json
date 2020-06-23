@@ -17,7 +17,7 @@
     "test": "mocha src/scripts/tests/",
     "lint": "eslint src/scripts/",
     "prebuild": "rm -rf dist",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html src/service-worker.js"
   },
   "externals": {
     "version.json": false
