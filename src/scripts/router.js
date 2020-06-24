@@ -93,17 +93,18 @@ function initRouter(app) {
         router.root = router.root + '/'
     }
 
-    var profil = app.profil
-
     router.hooks({
         before: function (done) {
             // Global hook to redirect on the correct page given registered data.
             var requestedPage = getCurrentPageName() || 'introduction'
-            var redirectedPage = redirectToUnansweredQuestions(requestedPage, profil)
+            var redirectedPage = redirectToUnansweredQuestions(
+                requestedPage,
+                app.profil
+            )
             if (redirectedPage) {
                 router.navigate(redirectedPage)
             }
-            if (!profil.isEmpty()) {
+            if (!app.profil.isEmpty()) {
                 var header = document.querySelector('header section')
                 affichage.displayElement(header, 'js-profil-full')
                 affichage.hideElement(header.querySelector('#js-profil-empty'))
@@ -127,28 +128,34 @@ function initRouter(app) {
 
     router
         .on(new RegExp('^profils$'), function () {
-            if (profil.isEmpty()) {
+            if (app.profil.isEmpty()) {
                 router.navigate('introduction')
             }
             var pageName = 'profils'
             var element = loadPage(pageName)
-            profils(element, profil)
-            if (profil.isComplete()) {
+            profils(element, app.profil)
+            if (app.profil.isComplete()) {
                 affichage.displayElement(element, 'js-profil-full')
                 affichage.hideElement(element.querySelector('#js-profil-empty'))
                 var mesConseilsLink = element.querySelector('#mes-conseils-link')
-                var target = redirectToUnansweredQuestions('findCorrectExit', profil)
+                var target = redirectToUnansweredQuestions(
+                    'findCorrectExit',
+                    app.profil
+                )
                 mesConseilsLink.setAttribute('href', '#' + target)
             }
         })
         .on(new RegExp('^introduction$'), function () {
             var pageName = 'introduction'
             var element = loadPage(pageName)
-            if (profil.isComplete()) {
+            if (app.profil.isComplete()) {
                 affichage.showElement(element.querySelector('#js-profil-full'))
                 affichage.hideElement(element.querySelector('#js-profil-empty'))
                 var mesConseilsLink = element.querySelector('#mes-conseils-link')
-                var target = redirectToUnansweredQuestions('findCorrectExit', profil)
+                var target = redirectToUnansweredQuestions(
+                    'findCorrectExit',
+                    app.profil
+                )
                 mesConseilsLink.setAttribute('href', '#' + target)
             }
         })
@@ -200,11 +207,14 @@ function initRouter(app) {
         .on(new RegExp('^pediatrie$'), function () {
             var pageName = 'pediatrie'
             var element = loadPage(pageName)
-            if (profil.isComplete()) {
+            if (app.profil.isComplete()) {
                 affichage.showElement(element.querySelector('#js-profil-full'))
                 affichage.hideElement(element.querySelector('#js-profil-empty'))
                 var mesConseilsLink = element.querySelector('#mes-conseils-link')
-                var target = redirectToUnansweredQuestions('findCorrectExit', profil)
+                var target = redirectToUnansweredQuestions(
+                    'findCorrectExit',
+                    app.profil
+                )
                 mesConseilsLink.setAttribute('href', '#' + target)
             }
         })

@@ -14,7 +14,7 @@ class StockageLocal {
     }
 
     supprimer() {
-        localforage
+        return localforage
             .dropInstance()
             .then(function () {
                 console.debug('Les données personnelles ont été supprimées')
@@ -36,9 +36,6 @@ class StockageLocal {
                 } else {
                     console.debug('Pas de données locales pour l’instant')
                 }
-                var customLoadingEvent = document.createEvent('CustomEvent')
-                customLoadingEvent.initCustomEvent('dataLoaded', true, true, data)
-                document.dispatchEvent(customLoadingEvent)
             },
             function (error) {
                 console.error('Erreur de chargement des données locales ' + error)

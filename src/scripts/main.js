@@ -4,6 +4,7 @@ var Updater = require('./updater.js')
 var actions = require('./actions.js')
 var StockageLocal = require('./stockage.js').StockageLocal
 var Profil = require('./profil.js').Profil
+var Router = require('./router.js')
 
 class App {
     constructor() {
@@ -11,45 +12,46 @@ class App {
         this.stockage = new StockageLocal()
     }
     init() {
-        this.chargerProfilActuel()
+        return this.chargerProfilActuel()
     }
     chargerProfilActuel() {
-        this.stockage.getProfilActuel().then((nom) => {
-            this.chargerProfil(nom)
+        return this.stockage.getProfilActuel().then((nom) => {
+            return this.chargerProfil(nom)
         })
     }
     enregistrerProfilActuel() {
-        this.stockage.getProfilActuel().then((nom) => {
-            this.stockage.enregistrer(this.profil, nom)
+        return this.stockage.getProfilActuel().then((nom) => {
+            return this.stockage.enregistrer(this.profil, nom)
         })
     }
     basculerVersProfil(nom) {
-        this.stockage.setProfilActuel(nom).then(() => {
-            this.chargerProfil(nom)
+        return this.stockage.setProfilActuel(nom).then(() => {
+            return this.chargerProfil(nom)
         })
     }
     chargerProfil(nom) {
-        this.stockage.charger(this.profil, nom)
+        return this.stockage.charger(this.profil, nom)
     }
     supprimerTout() {
-        this.profil.resetData()
-        this.stockage.supprimer()
+        return this.stockage.supprimer().then(() => {
+            this.profil.resetData()
+        })
     }
 }
 
 var app = new App()
 window.app = app
-
-var Router = require('./router.js')
-var router = Router.initRouter(app)
-window.router = router
 ;(function () {
-    document.addEventListener('dataLoaded', function () {
-        router.resolve()
-        var updater = new Updater(router)
-        updater.checkForUpdatesEvery(10) // Minutes.
-        var footer = document.querySelector('footer')
-        actions.bindSuppression(footer, app, router)
-    })
     app.init()
+        .then(() => {
+            var router = Router.initRouter(app)
+            router.resolve()
+            return router
+        })
+        .then((router) => {
+            var updater = new Updater(router)
+            updater.checkForUpdatesEvery(10) // Minutes.
+            var footer = document.querySelector('footer')
+            actions.bindSuppression(footer, app, router)
+        })
 })()
