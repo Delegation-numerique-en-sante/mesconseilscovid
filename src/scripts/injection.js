@@ -1,6 +1,12 @@
 var carteDepartements = require('./carte.js')
 
 module.exports = {
+    profil: function (element, app) {
+        app.stockage.getProfilActuel().then((nom) => {
+            element.textContent = nom
+        })
+    },
+
     departement: function (element, departement) {
         element.textContent = carteDepartements.nom(departement)
     },

@@ -4,6 +4,7 @@ var affichage = require('./affichage.js')
 var conseils = require('./conseils.js')
 var questionnaire = require('./questionnaire.js')
 var profils = require('./profils.js')
+var injection = require('./injection.js')
 
 var getCurrentPageName = function () {
     var hash = document.location.hash
@@ -102,6 +103,12 @@ function initRouter(app) {
             if (redirectedPage) {
                 router.navigate(redirectedPage)
             }
+            if (!profil.isEmpty()) {
+                var header = document.querySelector('header section')
+                affichage.displayElement(header, 'js-profil-full')
+                affichage.hideElement(header.querySelector('#js-profil-empty'))
+                injection.profil(header.querySelector('#nom-profil'), app)
+            }
             done()
         },
         after: function () {
@@ -137,11 +144,6 @@ function initRouter(app) {
         .on(new RegExp('^introduction$'), function () {
             var pageName = 'introduction'
             var element = loadPage(pageName)
-            if (!profil.isEmpty()) {
-                var header = document.querySelector('header section')
-                affichage.displayElement(header, 'js-profil-full')
-                affichage.hideElement(header.querySelector('#js-profil-empty'))
-            }
             if (profil.isComplete()) {
                 affichage.showElement(element.querySelector('#js-profil-full'))
                 affichage.hideElement(element.querySelector('#js-profil-empty'))
@@ -193,21 +195,11 @@ function initRouter(app) {
         .on(new RegExp('^conseils$'), function () {
             var pageName = 'conseils'
             var element = loadPage(pageName)
-            if (!profil.isEmpty()) {
-                var header = document.querySelector('header section')
-                affichage.displayElement(header, 'js-profil-full')
-                affichage.hideElement(header.querySelector('#js-profil-empty'))
-            }
             conseils.page(element, app, router)
         })
         .on(new RegExp('^pediatrie$'), function () {
             var pageName = 'pediatrie'
             var element = loadPage(pageName)
-            if (!profil.isEmpty()) {
-                var header = document.querySelector('header section')
-                affichage.displayElement(header, 'js-profil-full')
-                affichage.hideElement(header.querySelector('#js-profil-empty'))
-            }
             if (profil.isComplete()) {
                 affichage.showElement(element.querySelector('#js-profil-full'))
                 affichage.hideElement(element.querySelector('#js-profil-empty'))
