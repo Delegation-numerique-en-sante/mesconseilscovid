@@ -1,5 +1,5 @@
-module.exports = function () {
-    this.resetData = function () {
+class Profil {
+    resetData() {
         this.departement = undefined
         this.activite_pro = undefined
         this.activite_pro_public = undefined
@@ -41,7 +41,7 @@ module.exports = function () {
         this.contact_a_risque_autre = undefined
     }
 
-    this.fillData = function (data) {
+    fillData(data) {
         this.departement = data['departement']
         this.activite_pro = data['activite_pro']
         this.activite_pro_public = data['activite_pro_public']
@@ -85,7 +85,7 @@ module.exports = function () {
         this.contact_a_risque_autre = data['contact_a_risque_autre']
     }
 
-    this.getData = function () {
+    getData() {
         return {
             departement: this.departement,
             activite_pro: this.activite_pro,
@@ -130,7 +130,7 @@ module.exports = function () {
         }
     }
 
-    this.isEmpty = function () {
+    isEmpty() {
         return (
             typeof this.departement === 'undefined' &&
             typeof this.activite_pro === 'undefined' &&
@@ -157,7 +157,7 @@ module.exports = function () {
         )
     }
 
-    this.isComplete = function () {
+    isComplete() {
         return (
             typeof this.departement !== 'undefined' &&
             typeof this.activite_pro !== 'undefined' &&
@@ -184,4 +184,13 @@ module.exports = function () {
             typeof this.contact_a_risque !== 'undefined'
         )
     }
+}
+
+function profilActuel() {
+    return new Profil()
+}
+
+module.exports = {
+    Profil,
+    profilActuel,
 }

@@ -2,8 +2,7 @@ var assert = require('chai').assert
 
 var Algorithme = require('../algorithme.js').Algorithme
 
-var Profil = require('../profil.js')
-var profil = new Profil()
+var profil = require('../profil.js').profilActuel()
 
 describe('Algorithme statut', function () {
     beforeEach(function () {

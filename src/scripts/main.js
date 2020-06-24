@@ -6,8 +6,7 @@ var actions = require('./actions.js')
 var StockageLocal = require('./stockage.js')
 var stockageLocal = new StockageLocal()
 
-var Profil = require('./profil.js')
-var profil = new Profil()
+var profil = require('./profil.js').profilActuel()
 
 var Router = require('./router.js')
 var router = Router.initRouter(profil, stockageLocal)

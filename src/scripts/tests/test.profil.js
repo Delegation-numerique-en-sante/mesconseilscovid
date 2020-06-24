@@ -1,7 +1,6 @@
 var assert = require('chai').assert
 
-var Profil = require('../profil.js')
-var profil = new Profil()
+var profil = require('../profil.js').profilActuel()
 
 describe('Profil', function () {
     beforeEach(function () {
