@@ -186,11 +186,6 @@ class Profil {
     }
 }
 
-function profilActuel() {
-    return new Profil()
-}
-
 module.exports = {
     Profil,
-    profilActuel,
 }

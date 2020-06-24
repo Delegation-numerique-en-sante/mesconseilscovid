@@ -82,7 +82,7 @@ var loadPage = function (pageName) {
     return element
 }
 
-function initRouter(profil, stockageLocal) {
+function initRouter(app) {
     var root = null
     var useHash = true
     var router = new Navigo(root, useHash)
@@ -91,6 +91,8 @@ function initRouter(profil, stockageLocal) {
     if (router.root.slice(-1) !== '/') {
         router.root = router.root + '/'
     }
+
+    var profil = app.profil
 
     router.hooks({
         before: function (done) {
@@ -151,42 +153,42 @@ function initRouter(profil, stockageLocal) {
         .on(new RegExp('^residence$'), function () {
             var pageName = 'residence'
             var form = loadPage(pageName)
-            questionnaire.residence(form, profil, stockageLocal, router)
+            questionnaire.residence(form, app, router)
         })
         .on(new RegExp('^activitepro$'), function () {
             var pageName = 'activitepro'
             var form = loadPage(pageName)
-            questionnaire.activitepro(form, profil, stockageLocal, router)
+            questionnaire.activitepro(form, app, router)
         })
         .on(new RegExp('^foyer$'), function () {
             var pageName = 'foyer'
             var form = loadPage(pageName)
-            questionnaire.foyer(form, profil, stockageLocal, router)
+            questionnaire.foyer(form, app, router)
         })
         .on(new RegExp('^caracteristiques$'), function () {
             var pageName = 'caracteristiques'
             var form = loadPage(pageName)
-            questionnaire.caracteristiques(form, profil, stockageLocal, router)
+            questionnaire.caracteristiques(form, app, router)
         })
         .on(new RegExp('^antecedents$'), function () {
             var pageName = 'antecedents'
             var form = loadPage(pageName)
-            questionnaire.antecedents(form, profil, stockageLocal, router)
+            questionnaire.antecedents(form, app, router)
         })
         .on(new RegExp('^symptomesactuels$'), function () {
             var pageName = 'symptomesactuels'
             var form = loadPage(pageName)
-            questionnaire.symptomesactuels(form, profil, stockageLocal, router)
+            questionnaire.symptomesactuels(form, app, router)
         })
         .on(new RegExp('^symptomespasses$'), function () {
             var pageName = 'symptomespasses'
             var form = loadPage(pageName)
-            questionnaire.symptomespasses(form, profil, stockageLocal, router)
+            questionnaire.symptomespasses(form, app, router)
         })
         .on(new RegExp('^contactarisque$'), function () {
             var pageName = 'contactarisque'
             var form = loadPage(pageName)
-            questionnaire.contactarisque(form, profil, stockageLocal, router)
+            questionnaire.contactarisque(form, app, router)
         })
         .on(new RegExp('^conseils$'), function () {
             var pageName = 'conseils'
@@ -196,7 +198,7 @@ function initRouter(profil, stockageLocal) {
                 affichage.displayElement(header, 'js-profil-full')
                 affichage.hideElement(header.querySelector('#js-profil-empty'))
             }
-            conseils.page(element, profil, stockageLocal, router)
+            conseils.page(element, app, router)
         })
         .on(new RegExp('^pediatrie$'), function () {
             var pageName = 'pediatrie'

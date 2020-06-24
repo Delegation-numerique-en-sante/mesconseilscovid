@@ -3,23 +3,23 @@ var Algorithme = require('./algorithme.js').Algorithme
 var actions = require('./actions.js')
 var injection = require('./injection.js')
 
-function page(element, profil, stockageLocal, router) {
+function page(element, app, router) {
     // Hide all conseils that might have been made visible on previous runs.
     affichage.hideSelector(element, '.visible')
 
     // Use custom illustration if needed
-    var extraClass = getCustomIllustrationName(profil)
+    var extraClass = getCustomIllustrationName(app.profil)
     if (extraClass) {
         element.querySelector('#conseils-block').classList.add(extraClass)
     }
 
-    var algorithme = new Algorithme(profil)
+    var algorithme = new Algorithme(app.profil)
 
     // Display appropriate conseils.
-    showRelevantBlocks(element, profil, algorithme)
+    showRelevantBlocks(element, app.profil, algorithme)
 
     // Dynamic data injections.
-    showRelevantAnswersRecap(element, profil, algorithme)
+    showRelevantAnswersRecap(element, app.profil, algorithme)
 
     // Show instructions to install PWA (iOS) or add bookmark (others)
     if (isMobileSafari()) {
@@ -33,7 +33,7 @@ function page(element, profil, stockageLocal, router) {
 
     // Make the buttons clickable with appropriated actions.
     actions.bindImpression(element)
-    actions.bindSuppression(element, profil, stockageLocal, router)
+    actions.bindSuppression(element, app, router)
 }
 
 function getCustomIllustrationName(profil) {

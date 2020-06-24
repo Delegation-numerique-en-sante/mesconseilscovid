@@ -3,8 +3,14 @@
 var localforage = require('localforage')
 
 class StockageLocal {
-    constructor(name) {
-        this.name = name
+    getProfilActuel() {
+        return localforage.getItem('profil').then(function (value) {
+            return value || 'mes_infos'
+        })
+    }
+
+    setProfilActuel(nom) {
+        return localforage.setItem('profil', nom)
     }
 
     supprimer() {
@@ -20,8 +26,8 @@ class StockageLocal {
             })
     }
 
-    charger(profil) {
-        return localforage.getItem(this.name).then(
+    charger(profil, nom) {
+        return localforage.getItem(nom).then(
             function (data) {
                 if (data !== null) {
                     console.debug('Données locales:')
@@ -40,9 +46,9 @@ class StockageLocal {
         )
     }
 
-    enregistrer(profil) {
+    enregistrer(profil, nom) {
         return localforage
-            .setItem(this.name, profil.getData())
+            .setItem(nom, profil.getData())
             .then(function (data) {
                 console.debug('Les réponses au questionnaire ont bien été enregistrées')
                 console.debug(data)

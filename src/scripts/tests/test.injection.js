@@ -6,7 +6,8 @@ var { JSDOM } = jsdom
 var Algorithme = require('../algorithme.js').Algorithme
 var injection = require('../injection.js')
 
-var profil = require('../profil.js').profilActuel()
+var Profil = require('../profil.js').Profil
+var profil = new Profil()
 
 describe('Injection', function () {
     beforeEach(function () {

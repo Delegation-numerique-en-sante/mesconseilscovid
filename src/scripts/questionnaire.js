@@ -2,9 +2,9 @@ var affichage = require('./affichage.js')
 var formUtils = require('./formutils.js')
 var geoloc = require('./geoloc.js')
 
-function residence(form, profil, stockageLocal, router) {
+function residence(form, app, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadForm(form, 'departement', profil)
+    formUtils.preloadForm(form, 'departement', app.profil)
     formUtils.toggleFormButtonOnSelectFieldsRequired(
         form,
         button.value,
@@ -16,8 +16,8 @@ function residence(form, profil, stockageLocal, router) {
     })
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        profil.departement = event.target.elements['departement'].value
-        stockageLocal.enregistrer(profil)
+        app.profil.departement = event.target.elements['departement'].value
+        app.enregistrerProfilActuel()
         router.navigate('activitepro')
     })
     document
@@ -25,11 +25,11 @@ function residence(form, profil, stockageLocal, router) {
         .addEventListener('click', geoloc.geolocalisation)
 }
 
-function activitepro(form, profil, stockageLocal, router) {
+function activitepro(form, app, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'activite_pro', profil)
-    formUtils.preloadCheckboxForm(form, 'activite_pro_public', profil)
-    formUtils.preloadCheckboxForm(form, 'activite_pro_sante', profil)
+    formUtils.preloadCheckboxForm(form, 'activite_pro', app.profil)
+    formUtils.preloadCheckboxForm(form, 'activite_pro_public', app.profil)
+    formUtils.preloadCheckboxForm(form, 'activite_pro_sante', app.profil)
     var primary = form.elements['activite_pro']
     formUtils.enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
@@ -38,33 +38,34 @@ function activitepro(form, profil, stockageLocal, router) {
     formUtils.toggleFormButtonOnCheck(form, button.value, 'Continuer')
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        profil.activite_pro = event.target.elements['activite_pro'].checked
-        profil.activite_pro_public =
+        app.profil.activite_pro = event.target.elements['activite_pro'].checked
+        app.profil.activite_pro_public =
             event.target.elements['activite_pro_public'].checked
-        profil.activite_pro_sante = event.target.elements['activite_pro_sante'].checked
-        stockageLocal.enregistrer(profil)
+        app.profil.activite_pro_sante =
+            event.target.elements['activite_pro_sante'].checked
+        app.enregistrerProfilActuel()
         router.navigate('foyer')
     })
 }
 
-function foyer(form, profil, stockageLocal, router) {
-    formUtils.preloadCheckboxForm(form, 'foyer_enfants', profil)
-    formUtils.preloadCheckboxForm(form, 'foyer_fragile', profil)
+function foyer(form, app, router) {
+    formUtils.preloadCheckboxForm(form, 'foyer_enfants', app.profil)
+    formUtils.preloadCheckboxForm(form, 'foyer_fragile', app.profil)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        profil.foyer_enfants = event.target.elements['foyer_enfants'].checked
-        profil.foyer_fragile = event.target.elements['foyer_fragile'].checked
-        stockageLocal.enregistrer(profil)
+        app.profil.foyer_enfants = event.target.elements['foyer_enfants'].checked
+        app.profil.foyer_fragile = event.target.elements['foyer_fragile'].checked
+        app.enregistrerProfilActuel()
         router.navigate('caracteristiques')
     })
 }
 
-function caracteristiques(form, profil, stockageLocal, router) {
+function caracteristiques(form, app, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadForm(form, 'age', profil)
-    formUtils.preloadForm(form, 'taille', profil)
-    formUtils.preloadForm(form, 'poids', profil)
-    formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre', profil)
+    formUtils.preloadForm(form, 'age', app.profil)
+    formUtils.preloadForm(form, 'taille', app.profil)
+    formUtils.preloadForm(form, 'poids', app.profil)
+    formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre', app.profil)
     formUtils.toggleFormButtonOnTextFieldsRequired(
         form,
         button.value,
@@ -72,13 +73,13 @@ function caracteristiques(form, profil, stockageLocal, router) {
     )
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        profil.age = event.target.elements['age'].value
-        profil.poids = event.target.elements['poids'].value
-        profil.taille = event.target.elements['taille'].value
-        profil.grossesse_3e_trimestre =
+        app.profil.age = event.target.elements['age'].value
+        app.profil.poids = event.target.elements['poids'].value
+        app.profil.taille = event.target.elements['taille'].value
+        app.profil.grossesse_3e_trimestre =
             event.target.elements['grossesse_3e_trimestre'].checked
-        stockageLocal.enregistrer(profil)
-        if (profil.age < 15) {
+        app.enregistrerProfilActuel()
+        if (app.profil.age < 15) {
             router.navigate('pediatrie')
         } else {
             router.navigate('antecedents')
@@ -86,54 +87,59 @@ function caracteristiques(form, profil, stockageLocal, router) {
     })
 }
 
-function antecedents(form, profil, stockageLocal, router) {
+function antecedents(form, app, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'antecedent_cardio', profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_diabete', profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_respi', profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_dialyse', profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_cancer', profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_immunodep', profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_cirrhose', profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_drepano', profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_chronique_autre', profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_cardio', app.profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_diabete', app.profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_respi', app.profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_dialyse', app.profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_cancer', app.profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_immunodep', app.profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_cirrhose', app.profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_drepano', app.profil)
+    formUtils.preloadCheckboxForm(form, 'antecedent_chronique_autre', app.profil)
     formUtils.toggleFormButtonOnCheck(form, button.value, 'Continuer')
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        profil.antecedent_cardio = event.target.elements['antecedent_cardio'].checked
-        profil.antecedent_diabete = event.target.elements['antecedent_diabete'].checked
-        profil.antecedent_respi = event.target.elements['antecedent_respi'].checked
-        profil.antecedent_dialyse = event.target.elements['antecedent_dialyse'].checked
-        profil.antecedent_cancer = event.target.elements['antecedent_cancer'].checked
-        profil.antecedent_immunodep =
+        app.profil.antecedent_cardio =
+            event.target.elements['antecedent_cardio'].checked
+        app.profil.antecedent_diabete =
+            event.target.elements['antecedent_diabete'].checked
+        app.profil.antecedent_respi = event.target.elements['antecedent_respi'].checked
+        app.profil.antecedent_dialyse =
+            event.target.elements['antecedent_dialyse'].checked
+        app.profil.antecedent_cancer =
+            event.target.elements['antecedent_cancer'].checked
+        app.profil.antecedent_immunodep =
             event.target.elements['antecedent_immunodep'].checked
-        profil.antecedent_cirrhose =
+        app.profil.antecedent_cirrhose =
             event.target.elements['antecedent_cirrhose'].checked
-        profil.antecedent_drepano = event.target.elements['antecedent_drepano'].checked
-        profil.antecedent_chronique_autre =
+        app.profil.antecedent_drepano =
+            event.target.elements['antecedent_drepano'].checked
+        app.profil.antecedent_chronique_autre =
             event.target.elements['antecedent_chronique_autre'].checked
-        stockageLocal.enregistrer(profil)
+        app.enregistrerProfilActuel()
         router.navigate('symptomesactuels')
     })
 }
 
-function symptomesactuels(form, profil, stockageLocal, router) {
+function symptomesactuels(form, app, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels', profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_temperature', profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels', app.profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_temperature', app.profil)
     formUtils.preloadCheckboxForm(
         form,
         'symptomes_actuels_temperature_inconnue',
-        profil
+        app.profil
     )
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_toux', profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_odorat', profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_douleurs', profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_diarrhee', profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_fatigue', profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_alimentation', profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_souffle', profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_autre', profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_toux', app.profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_odorat', app.profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_douleurs', app.profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_diarrhee', app.profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_fatigue', app.profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_alimentation', app.profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_souffle', app.profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_autre', app.profil)
     var primary = form.elements['symptomes_actuels']
     formUtils.enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
@@ -147,83 +153,84 @@ function symptomesactuels(form, profil, stockageLocal, router) {
     )
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        profil.symptomes_actuels = event.target.elements['symptomes_actuels'].checked
-        profil.symptomes_actuels_temperature =
+        app.profil.symptomes_actuels =
+            event.target.elements['symptomes_actuels'].checked
+        app.profil.symptomes_actuels_temperature =
             event.target.elements['symptomes_actuels_temperature'].checked
-        profil.symptomes_actuels_temperature_inconnue =
+        app.profil.symptomes_actuels_temperature_inconnue =
             event.target.elements['symptomes_actuels_temperature_inconnue'].checked
-        profil.symptomes_actuels_toux =
+        app.profil.symptomes_actuels_toux =
             event.target.elements['symptomes_actuels_toux'].checked
-        profil.symptomes_actuels_odorat =
+        app.profil.symptomes_actuels_odorat =
             event.target.elements['symptomes_actuels_odorat'].checked
-        profil.symptomes_actuels_douleurs =
+        app.profil.symptomes_actuels_douleurs =
             event.target.elements['symptomes_actuels_douleurs'].checked
-        profil.symptomes_actuels_diarrhee =
+        app.profil.symptomes_actuels_diarrhee =
             event.target.elements['symptomes_actuels_diarrhee'].checked
-        profil.symptomes_actuels_fatigue =
+        app.profil.symptomes_actuels_fatigue =
             event.target.elements['symptomes_actuels_fatigue'].checked
-        profil.symptomes_actuels_alimentation =
+        app.profil.symptomes_actuels_alimentation =
             event.target.elements['symptomes_actuels_alimentation'].checked
-        profil.symptomes_actuels_souffle =
+        app.profil.symptomes_actuels_souffle =
             event.target.elements['symptomes_actuels_souffle'].checked
-        profil.symptomes_actuels_autre =
+        app.profil.symptomes_actuels_autre =
             event.target.elements['symptomes_actuels_autre'].checked
-        if (profil.symptomes_actuels && !profil.symptomes_actuels_autre) {
+        if (app.profil.symptomes_actuels && !app.profil.symptomes_actuels_autre) {
             // On complète manuellement le formulaire pour le rendre complet.
-            profil.symptomes_passes = false
-            profil.contact_a_risque = false
-            profil.contact_a_risque_meme_lieu_de_vie = undefined
-            profil.contact_a_risque_contact_direct = undefined
-            profil.contact_a_risque_actes = undefined
-            profil.contact_a_risque_espace_confine = undefined
-            profil.contact_a_risque_meme_classe = undefined
-            profil.contact_a_risque_stop_covid = undefined
-            profil.contact_a_risque_autre = undefined
-            stockageLocal.enregistrer(profil)
+            app.profil.symptomes_passes = false
+            app.profil.contact_a_risque = false
+            app.profil.contact_a_risque_meme_lieu_de_vie = undefined
+            app.profil.contact_a_risque_contact_direct = undefined
+            app.profil.contact_a_risque_actes = undefined
+            app.profil.contact_a_risque_espace_confine = undefined
+            app.profil.contact_a_risque_meme_classe = undefined
+            app.profil.contact_a_risque_stop_covid = undefined
+            app.profil.contact_a_risque_autre = undefined
+            app.enregistrerProfilActuel()
             router.navigate('conseils')
         } else {
-            stockageLocal.enregistrer(profil)
+            app.enregistrerProfilActuel()
             router.navigate('symptomespasses')
         }
     })
 }
 
-function symptomespasses(form, profil, stockageLocal, router) {
+function symptomespasses(form, app, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'symptomes_passes', profil)
+    formUtils.preloadCheckboxForm(form, 'symptomes_passes', app.profil)
     formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        profil.symptomes_passes = event.target.elements['symptomes_passes'].checked
-        if (profil.symptomes_passes) {
+        app.profil.symptomes_passes = event.target.elements['symptomes_passes'].checked
+        if (app.profil.symptomes_passes) {
             // On complète manuellement le formulaire pour le rendre complet.
-            profil.contact_a_risque = false
-            profil.contact_a_risque_meme_lieu_de_vie = undefined
-            profil.contact_a_risque_contact_direct = undefined
-            profil.contact_a_risque_actes = undefined
-            profil.contact_a_risque_espace_confine = undefined
-            profil.contact_a_risque_meme_classe = undefined
-            profil.contact_a_risque_stop_covid = undefined
-            profil.contact_a_risque_autre = undefined
-            stockageLocal.enregistrer(profil)
+            app.profil.contact_a_risque = false
+            app.profil.contact_a_risque_meme_lieu_de_vie = undefined
+            app.profil.contact_a_risque_contact_direct = undefined
+            app.profil.contact_a_risque_actes = undefined
+            app.profil.contact_a_risque_espace_confine = undefined
+            app.profil.contact_a_risque_meme_classe = undefined
+            app.profil.contact_a_risque_stop_covid = undefined
+            app.profil.contact_a_risque_autre = undefined
+            app.enregistrerProfilActuel()
             router.navigate('conseils')
         } else {
-            stockageLocal.enregistrer(profil)
+            app.enregistrerProfilActuel()
             router.navigate('contactarisque')
         }
     })
 }
 
-function contactarisque(form, profil, stockageLocal, router) {
+function contactarisque(form, app, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque', profil)
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_lieu_de_vie', profil)
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_contact_direct', profil)
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_actes', profil)
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_espace_confine', profil)
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_classe', profil)
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_stop_covid', profil)
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_autre', profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque', app.profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_lieu_de_vie', app.profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque_contact_direct', app.profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque_actes', app.profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque_espace_confine', app.profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_classe', app.profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque_stop_covid', app.profil)
+    formUtils.preloadCheckboxForm(form, 'contact_a_risque_autre', app.profil)
     var primary = form.elements['contact_a_risque']
     formUtils.enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
@@ -237,22 +244,22 @@ function contactarisque(form, profil, stockageLocal, router) {
     )
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        profil.contact_a_risque = event.target.elements['contact_a_risque'].checked
-        profil.contact_a_risque_meme_lieu_de_vie =
+        app.profil.contact_a_risque = event.target.elements['contact_a_risque'].checked
+        app.profil.contact_a_risque_meme_lieu_de_vie =
             event.target.elements['contact_a_risque_meme_lieu_de_vie'].checked
-        profil.contact_a_risque_contact_direct =
+        app.profil.contact_a_risque_contact_direct =
             event.target.elements['contact_a_risque_contact_direct'].checked
-        profil.contact_a_risque_actes =
+        app.profil.contact_a_risque_actes =
             event.target.elements['contact_a_risque_actes'].checked
-        profil.contact_a_risque_espace_confine =
+        app.profil.contact_a_risque_espace_confine =
             event.target.elements['contact_a_risque_espace_confine'].checked
-        profil.contact_a_risque_meme_classe =
+        app.profil.contact_a_risque_meme_classe =
             event.target.elements['contact_a_risque_meme_classe'].checked
-        profil.contact_a_risque_stop_covid =
+        app.profil.contact_a_risque_stop_covid =
             event.target.elements['contact_a_risque_stop_covid'].checked
-        profil.contact_a_risque_autre =
+        app.profil.contact_a_risque_autre =
             event.target.elements['contact_a_risque_autre'].checked
-        stockageLocal.enregistrer(profil)
+        app.enregistrerProfilActuel()
         router.navigate('conseils')
     })
 }

@@ -10,15 +10,14 @@ module.exports = {
             }
         })
     },
-    bindSuppression: function (element, profil, stockageLocal, router) {
+    bindSuppression: function (element, app, router) {
         // eslint-disable-next-line no-extra-semi
         ;[].forEach.call(element.querySelectorAll('.js-suppression'), function (
             element
         ) {
             element.addEventListener('click', function (event) {
                 event.preventDefault()
-                profil.resetData()
-                stockageLocal.supprimer()
+                app.supprimerTout()
                 router.navigate('introduction')
             })
         })
