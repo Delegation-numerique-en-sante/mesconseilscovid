@@ -3,8 +3,8 @@ require('./polyfills/custom_event.js')
 var Updater = require('./updater.js')
 var actions = require('./actions.js')
 
-var StockageLocal = require('./stockage.js')
-var stockageLocal = new StockageLocal()
+var StockageLocal = require('./stockage.js').StockageLocal
+var stockageLocal = new StockageLocal('mes_infos')
 
 var profil = require('./profil.js').profilActuel()
 

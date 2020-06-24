@@ -2,8 +2,12 @@
 
 var localforage = require('localforage')
 
-module.exports = function () {
-    this.supprimer = function () {
+class StockageLocal {
+    constructor(name) {
+        this.name = name
+    }
+
+    supprimer() {
         localforage
             .dropInstance()
             .then(function () {
@@ -16,8 +20,8 @@ module.exports = function () {
             })
     }
 
-    this.charger = function (profil) {
-        return localforage.getItem('mes_infos').then(
+    charger(profil) {
+        return localforage.getItem(this.name).then(
             function (data) {
                 if (data !== null) {
                     console.debug('Données locales:')
@@ -36,9 +40,9 @@ module.exports = function () {
         )
     }
 
-    this.enregistrer = function (profil) {
+    enregistrer(profil) {
         return localforage
-            .setItem('mes_infos', profil.getData())
+            .setItem(this.name, profil.getData())
             .then(function (data) {
                 console.debug('Les réponses au questionnaire ont bien été enregistrées')
                 console.debug(data)
@@ -50,4 +54,8 @@ module.exports = function () {
                 console.error(error)
             })
     }
+}
+
+module.exports = {
+    StockageLocal,
 }
