@@ -26,8 +26,8 @@ class StockageLocal {
             })
     }
 
-    charger(profil, nom) {
-        return localforage.getItem(nom).then(
+    charger(profil) {
+        return localforage.getItem(profil.nom).then(
             function (data) {
                 if (data !== null) {
                     console.debug('Données locales:')
@@ -43,9 +43,9 @@ class StockageLocal {
         )
     }
 
-    enregistrer(profil, nom) {
+    enregistrer(profil) {
         return localforage
-            .setItem(nom, profil.getData())
+            .setItem(profil.nom, profil.getData())
             .then(function (data) {
                 console.debug('Les réponses au questionnaire ont bien été enregistrées')
                 console.debug(data)

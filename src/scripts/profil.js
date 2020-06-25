@@ -1,4 +1,8 @@
 class Profil {
+    constructor(nom) {
+        this.nom = nom
+    }
+
     resetData() {
         this.departement = undefined
         this.activite_pro = undefined

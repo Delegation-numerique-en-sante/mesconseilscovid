@@ -8,7 +8,7 @@ var Router = require('./router.js')
 
 class App {
     constructor() {
-        this.profil = new Profil()
+        this.profil = new Profil('mes_infos')
         this.stockage = new StockageLocal()
     }
     init() {
@@ -20,9 +20,7 @@ class App {
         })
     }
     enregistrerProfilActuel() {
-        return this.stockage.getProfilActuel().then((nom) => {
-            return this.stockage.enregistrer(this.profil, nom)
-        })
+        return this.stockage.enregistrer(this.profil)
     }
     basculerVersProfil(nom) {
         return this.stockage.setProfilActuel(nom).then(() => {
@@ -30,6 +28,7 @@ class App {
         })
     }
     chargerProfil(nom) {
+        this.profil.nom = nom
         return this.stockage.charger(this.profil, nom)
     }
     supprimerTout() {
