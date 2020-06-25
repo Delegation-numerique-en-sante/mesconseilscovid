@@ -70,45 +70,9 @@
 
 <section id="profils" hidden>
     <div id="profils-block" class="block">
-        <h2>Vos profils (<span id="noms-profils"></span>)</h2>
+        <h2>Vos profils</h2>
         <div class="conseils">
-            <h3 id="nom-profil"></h3>
-            {{ réponse_département }}
-            {{ réponse_foyer_enfants }}
-            <div id="reponse-activite-pro" hidden>
-                {{ réponse_activité_pro }}
-            </div>
-            <div id="reponse-activite-pro-public" hidden>
-                {{ réponse_activité_pro_public }}
-            </div>
-            <div id="reponse-activite-pro-sante" hidden>
-                {{ réponse_activité_pro_santé }}
-            </div>
-            <div id="reponse-activite-pro-public-sante" hidden>
-                {{ réponse_activité_pro_public_santé }}
-            </div>
-            <div id="conseils-caracteristiques" hidden>
-                {{ réponse_caractéristiques }}
-                <div id="reponse-caracteristiques-a-risques" hidden>
-                    {{ réponse_caractéristiques_à_risques }}
-                </div>
-                <div id="reponse-antecedents" hidden>
-                    {{ réponse_antécédents }}
-                </div>
-            </div>
-            <div id="conseils-personnels-symptomes-actuels" hidden>
-                {{ réponse_caractéristiques }}
-                <div id="reponse-symptomes-actuels-caracteristiques" hidden>
-                    {{ réponse_caractéristiques_à_risques }}
-                </div>
-                <div id="reponse-symptomes-actuels-antecedents" hidden>
-                    {{ réponse_antécédents }}
-                </div>
-                <div id="reponse-symptomes-actuels-symptomesactuelsreconnus" hidden>
-                    {{ réponse_symptômes_actuels_reconnus }}
-                </div>
-            </div>
-            {{ meta_profils }}
+            <div id="profils-content"></div>
         </div>
     </div>
 </section>

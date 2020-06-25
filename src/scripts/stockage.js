@@ -18,8 +18,8 @@ class StockageLocal {
     }
 
     getProfils() {
-        return localforage.keys().then(noms => {
-            return noms.filter(nom => nom != 'profil')
+        return localforage.keys().then((noms) => {
+            return noms.filter((nom) => nom != 'profil')
         })
     }
 
@@ -43,6 +43,7 @@ class StockageLocal {
                     console.debug('Données locales (' + profil.nom + ') :')
                     console.log(data)
                     profil.fillData(data)
+                    return profil
                 } else {
                     console.debug(
                         'Pas de données locales pour l’instant (' + profil.nom + ')'

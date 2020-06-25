@@ -112,7 +112,7 @@ function initRouter(app) {
             } else {
                 affichage.displayElement(header, 'js-profil-full')
                 affichage.hideElement(header.querySelector('#js-profil-empty'))
-                injection.profil(header.querySelector('#nom-profil'), app)
+                injection.nomProfil(header.querySelector('#nom-profil'), app)
             }
             done()
         },

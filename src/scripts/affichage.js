@@ -42,10 +42,17 @@ function displayBlocks(element, blockNames) {
     })
 }
 
+function createElementFromHTML(htmlString) {
+    var div = document.createElement('div')
+    div.innerHTML = htmlString.trim()
+    return div.firstElementChild
+}
+
 module.exports = {
     hideElement,
     showElement,
     hideSelector,
     displayElementById,
     displayBlocks,
+    createElementFromHTML,
 }

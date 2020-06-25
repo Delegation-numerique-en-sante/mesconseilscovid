@@ -1,3 +1,6 @@
+var affichage = require('./affichage.js')
+const carteDepartements = require('./carte.js')
+
 class Profil {
     constructor(nom) {
         this.nom = nom
@@ -187,6 +190,36 @@ class Profil {
             typeof this.symptomes_passes !== 'undefined' &&
             typeof this.contact_a_risque !== 'undefined'
         )
+    }
+
+    affichageNom() {
+        return this.nom == 'mes_infos' ? 'Moi' : this.nom
+    }
+
+    renderNom() {
+        return `<h3>${this.affichageNom()}</h3>`
+    }
+
+    renderDepartement() {
+        return this.departement
+            ? `<li>Lieu de résidence : ${carteDepartements.nom(this.departement)}</li>`
+            : ''
+    }
+
+    renderAge() {
+        return this.age ? `<li>Âge : ${this.age} ans</li>` : ''
+    }
+
+    render() {
+        return affichage.createElementFromHTML(`
+        <div class="profil">
+            ${this.renderNom()}
+            <ul>
+                ${this.renderAge()}
+                ${this.renderDepartement()}
+            </ul>
+        </div>
+        `)
     }
 }
 

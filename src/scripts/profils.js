@@ -1,22 +1,15 @@
-var affichage = require('./affichage.js')
-var Algorithme = require('./algorithme.js').Algorithme
-var conseils = require('./conseils.js')
-var injection = require('./injection.js')
+var Profil = require('./profil.js').Profil
 
 function profils(element, app) {
-    // Hide all conseils that might have been made visible on previous runs.
-    affichage.hideSelector(element, '.visible')
-
-    var algorithme = new Algorithme(app.profil)
-
-    // Display appropriate reponses.
-    conseils.showRelevantBlocks(element, app.profil, algorithme)
-
-    // Dynamic data injections.
-    conseils.showRelevantAnswersRecap(element, app.profil, algorithme)
-
-    injection.profils(element.querySelector('#noms-profils'), app)
-    injection.profil(element.querySelector('#nom-profil'), app)
+    app.stockage.getProfils().then((noms) => {
+        noms.forEach((nom) => {
+            var profil = new Profil(nom)
+            app.stockage.charger(profil).then((profil) => {
+                var container = element.querySelector('#profils-content')
+                container.appendChild(profil.render())
+            })
+        })
+    })
 }
 
 module.exports = profils
