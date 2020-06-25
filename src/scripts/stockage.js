@@ -3,6 +3,10 @@
 var localforage = require('localforage')
 
 class StockageLocal {
+    constructor() {
+        this.localforage = localforage
+    }
+
     getProfilActuel() {
         return localforage.getItem('profil').then(function (value) {
             return value || 'mes_infos'
@@ -11,6 +15,12 @@ class StockageLocal {
 
     setProfilActuel(nom) {
         return localforage.setItem('profil', nom)
+    }
+
+    getProfils() {
+        return localforage.keys().then(noms => {
+            return noms.filter(nom => nom != 'profil')
+        })
     }
 
     supprimer() {
@@ -30,11 +40,13 @@ class StockageLocal {
         return localforage.getItem(profil.nom).then(
             function (data) {
                 if (data !== null) {
-                    console.debug('Données locales:')
+                    console.debug('Données locales (' + profil.nom + ') :')
                     console.log(data)
                     profil.fillData(data)
                 } else {
-                    console.debug('Pas de données locales pour l’instant')
+                    console.debug(
+                        'Pas de données locales pour l’instant (' + profil.nom + ')'
+                    )
                 }
             },
             function (error) {
@@ -47,12 +59,18 @@ class StockageLocal {
         return localforage
             .setItem(profil.nom, profil.getData())
             .then(function (data) {
-                console.debug('Les réponses au questionnaire ont bien été enregistrées')
+                console.debug(
+                    'Les réponses au questionnaire ont bien été enregistrées (' +
+                        profil.nom +
+                        ')'
+                )
                 console.debug(data)
             })
             .catch(function (error) {
                 console.error(
-                    'Les réponses au questionnaire n’ont pas pu être enregistrées'
+                    'Les réponses au questionnaire n’ont pas pu être enregistrées (' +
+                        profil.nom +
+                        ')'
                 )
                 console.error(error)
             })

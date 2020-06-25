@@ -5,6 +5,7 @@ var conseils = require('./conseils.js')
 var questionnaire = require('./questionnaire.js')
 var profils = require('./profils.js')
 var injection = require('./injection.js')
+var actions = require('./actions.js')
 
 var getCurrentPageName = function () {
     var hash = document.location.hash
@@ -136,17 +137,7 @@ function initRouter(app) {
             }
             var pageName = 'profils'
             var element = loadPage(pageName)
-            profils(element, app.profil)
-            if (app.profil.isComplete()) {
-                affichage.displayElement(element, 'js-profil-full')
-                affichage.hideElement(element.querySelector('#js-profil-empty'))
-                var mesConseilsLink = element.querySelector('#mes-conseils-link')
-                var target = redirectToUnansweredQuestions(
-                    'findCorrectExit',
-                    app.profil
-                )
-                mesConseilsLink.setAttribute('href', '#' + target)
-            }
+            profils(element, app)
         })
         .on(new RegExp('^introduction$'), function () {
             var pageName = 'introduction'
@@ -161,6 +152,8 @@ function initRouter(app) {
                 )
                 mesConseilsLink.setAttribute('href', '#' + target)
             }
+            actions.bindMyProfil(element, app)
+            actions.bindNewProfil(element, app)
         })
         .on(new RegExp('^residence$'), function () {
             var pageName = 'residence'

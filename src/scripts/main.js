@@ -44,6 +44,7 @@ window.app = app
     app.init()
         .then(() => {
             var router = Router.initRouter(app)
+            app.router = router
             router.resolve()
             return router
         })

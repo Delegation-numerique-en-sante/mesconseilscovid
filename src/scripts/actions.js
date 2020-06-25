@@ -10,6 +10,35 @@ module.exports = {
             }
         })
     },
+    bindMyProfil: function (element, app) {
+        // eslint-disable-next-line no-extra-semi
+        ;[].forEach.call(element.querySelectorAll('.js-profil-myself'), function (
+            element
+        ) {
+            element.addEventListener('click', function (event) {
+                event.preventDefault()
+                app.basculerVersProfil('mes_infos').then(() => {
+                    var url = new URL(event.target.href)
+                    app.router.navigate(url.hash)
+                })
+            })
+        })
+    },
+    bindNewProfil: function (element, app) {
+        // eslint-disable-next-line no-extra-semi
+        ;[].forEach.call(element.querySelectorAll('.js-profil-new'), function (
+            element
+        ) {
+            element.addEventListener('click', function (event) {
+                event.preventDefault()
+                var nom = prompt('Pour qui remplissez-vous ce questionnaire ?')
+                app.basculerVersProfil(nom).then(() => {
+                    var url = new URL(event.target.href)
+                    app.router.navigate(url.hash)
+                })
+            })
+        })
+    },
     bindSuppression: function (element, app, router) {
         // eslint-disable-next-line no-extra-semi
         ;[].forEach.call(element.querySelectorAll('.js-suppression'), function (
