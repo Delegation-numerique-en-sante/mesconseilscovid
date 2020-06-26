@@ -20,6 +20,9 @@ module.exports = function (router) {
             var jsonResponse = JSON.parse(xhr.responseText)
             that.updateVersion(jsonResponse.version)
         }
+        xhr.onerror = function () {
+            console.debug('Impossible de récupérer les informations de mise à jour')
+        }
         xhr.send()
     }
 
