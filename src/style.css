@@ -434,6 +434,11 @@ a.button-outline {
     border: 1px solid #000091;
     color: #000091;
 }
+a.button-red {
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    color: #fff;
+}
 p.extra-button {
     text-align: center;
     font-size: small;

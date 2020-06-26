@@ -33,7 +33,6 @@ function page(element, app, router) {
 
     // Make the buttons clickable with appropriated actions.
     actions.bindImpression(element)
-    actions.bindSuppression(element, app, router)
 }
 
 function getCustomIllustrationName(profil) {

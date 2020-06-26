@@ -1,7 +1,6 @@
 require('./polyfills/custom_event.js')
 
 var Updater = require('./updater.js')
-var actions = require('./actions.js')
 var StockageLocal = require('./stockage.js').StockageLocal
 var Profil = require('./profil.js').Profil
 var Router = require('./router.js')
@@ -51,7 +50,5 @@ window.app = app
         .then((router) => {
             var updater = new Updater(router)
             updater.checkForUpdatesEvery(10) // Minutes.
-            var footer = document.querySelector('footer')
-            actions.bindSuppression(footer, app, router)
         })
 })()

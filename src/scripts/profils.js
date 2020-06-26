@@ -1,6 +1,8 @@
 var Profil = require('./profil.js').Profil
+var actions = require('./actions.js')
 
 function page(element, app) {
+    actions.bindSuppressionTotale(element, app)
     app.stockage.getProfils().then((noms) => {
         noms.forEach((nom) => {
             var profil = new Profil(nom)
