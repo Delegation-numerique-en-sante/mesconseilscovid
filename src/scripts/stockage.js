@@ -24,7 +24,7 @@ class StockageLocal {
                 return noms.filter((nom) => nom != 'profil')
             })
             .then((noms) => {
-                return noms.sort(([a, ]) => {
+                return noms.sort((a) => {
                     // Make sure we return my profile first.
                     return a !== 'mes_infos'
                 })

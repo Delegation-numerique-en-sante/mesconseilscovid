@@ -3,7 +3,7 @@ var Algorithme = require('./algorithme.js').Algorithme
 var actions = require('./actions.js')
 var injection = require('./injection.js')
 
-function page(element, app, router) {
+function page(element, app) {
     // Hide all conseils that might have been made visible on previous runs.
     affichage.hideSelector(element, '.visible')
 

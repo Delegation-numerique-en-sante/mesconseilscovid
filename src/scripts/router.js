@@ -111,7 +111,7 @@ function initRouter(app) {
         .on(new RegExp('^conseils$'), function () {
             var pageName = 'conseils'
             var element = pagination.loadPage(pageName)
-            conseils.page(element, app, router)
+            conseils.page(element, app)
         })
         .on(new RegExp('^pediatrie$'), function () {
             var pageName = 'pediatrie'
