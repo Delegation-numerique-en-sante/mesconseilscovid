@@ -3,15 +3,19 @@ function hideElement(element) {
     element.classList.remove('visible')
 }
 
+function showElement(element) {
+    element.removeAttribute('hidden')
+    element.classList.add('visible')
+}
+
 function hideSelector(element, selector) {
     // eslint-disable-next-line no-extra-semi
     ;[].forEach.call(element.querySelectorAll(selector), hideElement)
 }
 
-function displayElement(element, id) {
+function displayElementById(element, id) {
     var block = element.querySelector('#' + id)
-    block.removeAttribute('hidden')
-    block.classList.add('visible')
+    showElement(block)
 
     // We avoid using the `document` global, as it is not available
     // when running unit tests in Node.
@@ -33,13 +37,14 @@ function getRoot(node) {
 
 function displayBlocks(element, blockNames) {
     blockNames.forEach(function (block) {
-        displayElement(element, block)
+        displayElementById(element, block)
     })
 }
 
 module.exports = {
     hideElement,
+    showElement,
     hideSelector,
-    displayElement,
+    displayElementById,
     displayBlocks,
 }
