@@ -10,7 +10,7 @@ serve-ssl: key.pem build  ## Local HTTPS server with auto rebuild (without LiveR
 	python3 serve.py --watch --ssl
 
 install:  ## Install Python and JS dependencies.
-	python3 -m pip install -U pip
+	python3 -m pip install -U pip setuptools wheel
 	python3 -m pip install -r requirements.txt
 	npm install
 
