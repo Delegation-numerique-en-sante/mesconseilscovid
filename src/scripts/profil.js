@@ -218,12 +218,24 @@ class Profil {
         return affichage.createElementFromHTML(`
         <div class="profil-full">
             ${this.renderNom()}
+            ${this.renderDeleteButton()}
             <ul>
                 ${this.renderAge()}
                 ${this.renderDepartement()}
             </ul>
         </div>
         `)
+    }
+
+    renderDeleteButton() {
+        if (this.estMonProfil()) {
+            return ''
+        }
+        return `
+            <a class="button button-red" data-profil="${this.nom}" href="">\
+                Supprimer ce profil\
+            </a>
+        `
     }
 
     buttons() {

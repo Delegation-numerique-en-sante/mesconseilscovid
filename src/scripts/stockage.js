@@ -31,7 +31,7 @@ class StockageLocal {
             })
     }
 
-    supprimer() {
+    supprimerTout() {
         return localforage
             .dropInstance()
             .then(function () {
@@ -41,6 +41,25 @@ class StockageLocal {
                 console.error(
                     'Erreur lors de la suppression des données personnelles ' + error
                 )
+            })
+    }
+
+    supprimer(profil) {
+        return localforage
+            .removeItem(profil.nom)
+            .then(function () {
+                console.debug(
+                    `Les données personnelles de ${profil.nom} ont été supprimées`
+                )
+                return
+            })
+            .catch(function (error) {
+                console.error(
+                    `Erreur lors de la suppression des données personnelles de ${profil.nom} : ${error}`
+                )
+            })
+            .then(() => {
+                return this.setProfilActuel('mes_infos')
             })
     }
 
