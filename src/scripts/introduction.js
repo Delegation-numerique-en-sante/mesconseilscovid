@@ -17,7 +17,10 @@ function page(element, app) {
                     )
                     conseilsLink.setAttribute('href', '#' + target)
                 }
-                actions.bindChangeProfil(card.querySelector('[data-profil]'), app)
+                var profilLinks = card.querySelectorAll('[data-profil]')
+                Array.from(profilLinks).forEach(profilLink => {
+                    actions.bindChangeProfil(profilLink, app)
+                })
             })
         })
     })
