@@ -1,23 +1,29 @@
-var Profil = require('./profil.js').Profil
-var actions = require('./actions.js')
-var pagination = require('./pagination.js')
+import {Profil} from './profil.js'
+import actions from './actions.js'
+import pagination from './pagination.js'
 
 function page(element, app) {
     app.stockage.getProfils().then((noms) => {
+        const container = element.querySelector('#profils-cards')
+        if (!noms.length) {
+            const profilLink = container.querySelector('[data-profil]')
+            actions.bindChangeProfil(profilLink, app)
+            return
+        }
+        container.innerHTML = '' // Empty default state with Démarrer link.
         noms.forEach((nom) => {
-            var profil = new Profil(nom)
+            const profil = new Profil(nom)
             app.stockage.charger(profil).then((profil) => {
-                var container = element.querySelector('#profils-cards')
-                var card = container.appendChild(profil.renderCard())
+                const card = container.appendChild(profil.renderCard())
                 if (profil.isComplete()) {
-                    var conseilsLink = card.querySelector('.conseils-link')
-                    var target = pagination.redirectToUnansweredQuestions(
+                    const conseilsLink = card.querySelector('.conseils-link')
+                    const target = pagination.redirectToUnansweredQuestions(
                         'findCorrectExit',
                         profil
                     )
                     conseilsLink.setAttribute('href', '#' + target)
                 }
-                var profilLinks = card.querySelectorAll('[data-profil]')
+                const profilLinks = card.querySelectorAll('[data-profil]')
                 Array.from(profilLinks).forEach((profilLink) => {
                     actions.bindChangeProfil(profilLink, app)
                 })
