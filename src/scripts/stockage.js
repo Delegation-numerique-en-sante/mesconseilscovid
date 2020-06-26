@@ -18,9 +18,17 @@ class StockageLocal {
     }
 
     getProfils() {
-        return localforage.keys().then((noms) => {
-            return noms.filter((nom) => nom != 'profil')
-        })
+        return localforage
+            .keys()
+            .then((noms) => {
+                return noms.filter((nom) => nom != 'profil')
+            })
+            .then((noms) => {
+                return noms.sort(([a, ]) => {
+                    // Make sure we return my profile first.
+                    return a !== 'mes_infos'
+                })
+            })
     }
 
     supprimer() {

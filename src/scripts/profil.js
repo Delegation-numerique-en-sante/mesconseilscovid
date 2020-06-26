@@ -192,8 +192,12 @@ class Profil {
         )
     }
 
+    estMonProfil() {
+        return this.nom == 'mes_infos'
+    }
+
     affichageNom() {
-        return this.nom == 'mes_infos' ? 'Moi' : this.nom
+        return this.estMonProfil() ? 'Moi' : this.nom
     }
 
     renderNom() {
@@ -210,14 +214,44 @@ class Profil {
         return this.age ? `<li>Âge : ${this.age} ans</li>` : ''
     }
 
-    render() {
+    renderFull() {
         return affichage.createElementFromHTML(`
-        <div class="profil">
+        <div class="profil-full">
             ${this.renderNom()}
             <ul>
                 ${this.renderAge()}
                 ${this.renderDepartement()}
             </ul>
+        </div>
+        `)
+    }
+
+    buttons() {
+        if (this.isComplete()) {
+            var possessif = this.estMonProfil() ? 'mes' : 'ses'
+            return `
+                <a class="button button-full-width button-outline" data-profil="${this.nom}" href="#residence">\
+                    Modifier ${possessif} réponses\
+                </a>
+                <a class="button button-full-width conseils-link" data-profil="${this.nom}" href="">\
+                    Voir ${possessif} conseils\
+                </a>
+            `
+        } else {
+            var label = this.isEmpty() ? 'Démarrer' : 'Continuer'
+            return `
+                <a class="button button-full-width" data-profil="${this.nom}" href="#residence">\
+                    ${label}\
+                </a>
+            `
+        }
+    }
+
+    renderCard() {
+        return affichage.createElementFromHTML(`
+        <div class="profil-card">
+            ${this.renderNom()}
+            <div class="form-controls">${this.buttons()}</div>
         </div>
         `)
     }

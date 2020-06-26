@@ -1,7 +1,7 @@
 var assert = require('chai').assert
 
-var Router = require('../router.js')
-var redirectToUnansweredQuestions = Router.redirectToUnansweredQuestions
+var pagination = require('../pagination.js')
+var redirectToUnansweredQuestions = pagination.redirectToUnansweredQuestions
 
 describe('Navigation générale', function () {
     it('page inconnue renvoie au début', function () {

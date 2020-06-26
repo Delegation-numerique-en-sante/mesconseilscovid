@@ -80,13 +80,14 @@
 <section id="introduction" hidden>
     <div id="introduction-block" class="block">
         {{ meta_introduction }}
-        <div id="js-profil-full" class="form-controls" hidden>
-            <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
-            <a class="button button-full-width" href="" id="mes-conseils-link">Voir mes conseils</a>
-        </div>
-        <div id="js-profil-empty" class="form-controls">
-            <a class="button button-outline button-full-width js-profil-new" href="#residence">Faire pour un proche</a>
-            <a class="button button-full-width js-profil-myself" href="#residence">Démarrer pour moi</a>
+        <div class="conseils">
+            <div id="profils-cards"></div>
+            <div class="profil-card">
+                <h3>Un autre profil ?</h3>
+                <div class="form-controls">
+                    <a class="button button-outline button-full-width js-profil-new" href="#residence">Faire pour un proche</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>

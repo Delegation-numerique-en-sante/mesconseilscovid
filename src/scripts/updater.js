@@ -1,4 +1,4 @@
-var Router = require('./router.js')
+var pagination = require('./pagination.js')
 var affichage = require('./affichage.js')
 
 module.exports = function (router) {
@@ -8,7 +8,7 @@ module.exports = function (router) {
     }
 
     this.checkForUpdate = function () {
-        var pageName = Router.getCurrentPageName()
+        var pageName = pagination.getCurrentPageName()
         if (pageName === 'nouvelleversiondisponible') {
             return
         }
@@ -34,7 +34,7 @@ module.exports = function (router) {
             return
         } else {
             var that = this
-            var pageName = Router.getCurrentPageName()
+            var pageName = pagination.getCurrentPageName()
             if (this.isFillingQuestionnaire()) {
                 document.addEventListener('elementDisplayed:update-banner', function (
                     event
@@ -83,7 +83,7 @@ module.exports = function (router) {
     }
 
     this.isFillingQuestionnaire = function () {
-        var pageName = Router.getCurrentPageName()
+        var pageName = pagination.getCurrentPageName()
         return (
             pageName === 'residence' ||
             pageName === 'activitepro' ||
