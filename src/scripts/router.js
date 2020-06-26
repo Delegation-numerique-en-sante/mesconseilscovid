@@ -56,9 +56,6 @@ function initRouter(app) {
 
     router
         .on(new RegExp('^profils$'), function () {
-            if (app.profil.isEmpty()) {
-                router.navigate('introduction')
-            }
             var pageName = 'profils'
             var element = pagination.loadPage(pageName)
             profils.page(element, app)
