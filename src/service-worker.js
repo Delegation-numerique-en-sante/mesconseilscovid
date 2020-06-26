@@ -1,6 +1,6 @@
 /* Implementation of the network-or-cache pattern:
 https://serviceworke.rs/strategy-network-or-cache.html */
-const CACHE_NAME = 'network-or-cache-2020-06-23'
+const CACHE_NAME = 'network-or-cache-2020-06-26'
 const CACHE_FILES = [
     '/',
     'style.css',

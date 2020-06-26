@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-06-26
+
+* amélioration de l’expérience pour l’installation sur mobile (PWA)
+
 ## 2020-06-15
 
 * passage de l’Île-de-France en vert
