@@ -1,6 +1,5 @@
 // Données privées, stockées uniquement en local
-
-var localforage = require('localforage')
+import localforage from 'localforage'
 
 class StockageLocal {
     constructor() {
@@ -8,7 +7,7 @@ class StockageLocal {
     }
 
     getProfilActuel() {
-        return localforage.getItem('profil').then(function (value) {
+        return localforage.getItem('profil').then((value) => {
             return value || 'mes_infos'
         })
     }
@@ -34,29 +33,31 @@ class StockageLocal {
     supprimerTout() {
         return localforage
             .dropInstance()
-            .then(function () {
+            .then(() => {
                 console.debug('Les données personnelles ont été supprimées')
             })
-            .catch(function (error) {
+            .catch((error) => {
                 console.error(
-                    'Erreur lors de la suppression des données personnelles ' + error
+                    `Erreur lors de la suppression de toutes les données personnelles`
                 )
+                console.error(error)
             })
     }
 
     supprimer(profil) {
         return localforage
             .removeItem(profil.nom)
-            .then(function () {
+            .then(() => {
                 console.debug(
-                    `Les données personnelles de ${profil.nom} ont été supprimées`
+                    `Les données personnelles ont été supprimées (${profil.nom})`
                 )
                 return
             })
-            .catch(function (error) {
+            .catch((error) => {
                 console.error(
-                    `Erreur lors de la suppression des données personnelles de ${profil.nom} : ${error}`
+                    `Erreur lors de la suppression des données personnelles (${profil.nom})`
                 )
+                console.error(error)
             })
             .then(() => {
                 return this.setProfilActuel('mes_infos')
@@ -64,42 +65,41 @@ class StockageLocal {
     }
 
     charger(profil) {
-        return localforage.getItem(profil.nom).then(
-            function (data) {
+        return localforage
+            .getItem(profil.nom)
+            .then((data) => {
                 if (data !== null) {
-                    console.debug('Données locales (' + profil.nom + ') :')
+                    console.debug(`Données locales (${profil.nom})`)
                     console.log(data)
                     profil.fillData(data)
                 } else {
                     console.debug(
-                        'Pas de données locales pour l’instant (' + profil.nom + ')'
+                        `Pas de données locales pour l’instant (${profil.nom})`
                     )
                     profil.resetData()
                 }
                 return profil
-            },
-            function (error) {
-                console.error('Erreur de chargement des données locales ' + error)
-            }
-        )
+            })
+            .catch((error) => {
+                console.error(
+                    `Erreur de chargement des données locales (${profil.nom})`
+                )
+                console.error(error)
+            })
     }
 
     enregistrer(profil) {
         return localforage
             .setItem(profil.nom, profil.getData())
-            .then(function (data) {
+            .then((data) => {
                 console.debug(
-                    'Les réponses au questionnaire ont bien été enregistrées (' +
-                        profil.nom +
-                        ')'
+                    `Les réponses au questionnaire ont bien été enregistrées (${profil.nom})`
                 )
                 console.debug(data)
             })
-            .catch(function (error) {
+            .catch((error) => {
                 console.error(
-                    'Les réponses au questionnaire n’ont pas pu être enregistrées (' +
-                        profil.nom +
-                        ')'
+                    `Les réponses au questionnaire n’ont pas pu être enregistrées (${profil.nom})`
                 )
                 console.error(error)
             })
