@@ -17,8 +17,9 @@ module.exports = {
         ) {
             element.addEventListener('click', function (event) {
                 event.preventDefault()
-                app.supprimerTout()
-                router.navigate('introduction')
+                app.supprimerTout().then(() => {
+                    router.navigate('introduction')
+                })
             })
         })
     },

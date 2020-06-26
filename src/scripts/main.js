@@ -34,7 +34,7 @@ class App {
     }
     supprimerTout() {
         return this.stockage.supprimer().then(() => {
-            this.profil.resetData()
+            return new Promise(this.profil.resetData)
         })
     }
 }

@@ -104,8 +104,11 @@ function initRouter(app) {
             if (redirectedPage) {
                 router.navigate(redirectedPage)
             }
-            if (!app.profil.isEmpty()) {
-                var header = document.querySelector('header section')
+            var header = document.querySelector('header section')
+            if (app.profil.isEmpty()) {
+                affichage.displayElement(header, 'js-profil-empty')
+                affichage.hideElement(header.querySelector('#js-profil-full'))
+            } else {
                 affichage.displayElement(header, 'js-profil-full')
                 affichage.hideElement(header.querySelector('#js-profil-empty'))
                 injection.profil(header.querySelector('#nom-profil'), app)
