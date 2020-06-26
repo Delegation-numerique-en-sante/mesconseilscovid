@@ -34,20 +34,15 @@ module.exports = {
         })
     },
     bindSuppressionTotale: function (element, app) {
-        // eslint-disable-next-line no-extra-semi
-        ;[].forEach.call(element.querySelectorAll('.js-suppression'), function (
-            element
-        ) {
-            element.addEventListener('click', function (event) {
-                event.preventDefault()
-                if (
-                    confirm('Êtes-vous sûr·e de vouloir supprimer tous les profils ?')
-                ) {
-                    app.supprimerTout().then(() => {
-                        app.router.navigate('introduction')
-                    })
-                }
-            })
+        element.addEventListener('click', function (event) {
+            event.preventDefault()
+            if (
+                confirm('Êtes-vous sûr·e de vouloir supprimer tous les profils ?')
+            ) {
+                app.supprimerTout().then(() => {
+                    app.router.navigate('introduction')
+                })
+            }
         })
     },
 }
