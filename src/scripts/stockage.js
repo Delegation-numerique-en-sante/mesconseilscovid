@@ -70,12 +70,13 @@ class StockageLocal {
                     console.debug('Données locales (' + profil.nom + ') :')
                     console.log(data)
                     profil.fillData(data)
-                    return profil
                 } else {
                     console.debug(
                         'Pas de données locales pour l’instant (' + profil.nom + ')'
                     )
+                    profil.resetData()
                 }
+                return profil
             },
             function (error) {
                 console.error('Erreur de chargement des données locales ' + error)
