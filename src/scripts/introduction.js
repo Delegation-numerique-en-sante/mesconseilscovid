@@ -7,16 +7,17 @@ function page(element, app) {
     container.innerHTML = '<div class="break"></div>'
     app.stockage.getProfils().then((noms) => {
         if (!noms.includes('mes_infos')) {
-            container.appendChild(
+            const card = container.appendChild(
                 affichage.createElementFromHTML(`
                     <div class="profil-card card">
                         <h3>Pour moi</h3>
                         <div class="form-controls">
-                            <a class="button button-full-width" href="#residence">Démarrer</a>
+                            <a class="button button-full-width" data-profil="mes_infos" href="#residence">Démarrer</a>
                         </div>
                     </div>
                 `)
             )
+            bindChangeProfil(card.querySelector('[data-profil]'), app)
         }
         container.appendChild(
             affichage.createElementFromHTML(`
