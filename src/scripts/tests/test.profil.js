@@ -1,7 +1,7 @@
 var assert = require('chai').assert
 
 var Profil = require('../profil.js').Profil
-var profil = new Profil()
+var profil = new Profil('mes_infos')
 
 describe('Profil', function () {
     beforeEach(function () {
@@ -10,6 +10,12 @@ describe('Profil', function () {
 
     afterEach(function () {
         profil.resetData()
+    })
+
+    it('Le nom du profil n’est pas échappé', function () {
+        var evil = '<script>alert("something evil")</script>'
+        var profil = new Profil(evil)
+        assert.strictEqual(profil.nom, '<script>alert("something evil")</script>')
     })
 
     it('Le questionnaire est vide par défaut', function () {

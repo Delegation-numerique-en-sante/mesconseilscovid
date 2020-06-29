@@ -200,7 +200,7 @@ class Profil {
     }
 
     renderNom() {
-        return `<h3>${this.affichageNom()}</h3>`
+        return affichage.safeHtml`<h3>${this.affichageNom()}</h3>`
     }
 
     renderButtons() {
@@ -209,14 +209,14 @@ class Profil {
         var mainButton
         if (this.isComplete()) {
             const outlined = this.estMonProfil() ? '' : 'button-outline'
-            mainButton = `
+            mainButton = affichage.safeHtml`
                 <a class="button ${outlined} conseils-link"
                     data-set-profil="${this.nom}" href="#conseils"
                     >Voir ${possessifPluriel} conseils</a>
             `
         } else {
             var label = this.isEmpty() ? 'Démarrer' : 'Continuer'
-            mainButton = `
+            mainButton = affichage.safeHtml`
                 <a class="button button-full-width conseils-link"
                     data-set-profil="${this.nom}" href="#residence"
                     >${label}</a>
@@ -224,13 +224,11 @@ class Profil {
         }
         return (
             mainButton +
-            String.raw`
-            <a data-set-profil="${this.nom}" href="#residence">
-                Modifier ${possessifPluriel} réponses
-            </a>
-            <a data-delete-profil="${this.nom}" href="">
-                Supprimer ${possessifMasculinSingulier} profil
-            </a>
+            affichage.safeHtml`
+            <a data-set-profil="${this.nom}" href="#residence"
+                >Modifier ${possessifPluriel} réponses</a>
+            <a data-delete-profil="${this.nom}" href=""
+                >Supprimer ${possessifMasculinSingulier} profil</a>
             `
         )
     }

@@ -1,16 +1,16 @@
 var carteDepartements = require('./carte.js')
-var showElement = require('./affichage.js').showElement
+var affichage = require('./affichage.js')
 
 module.exports = {
     nomProfil: function (element, app) {
         if (!element) return
-        element.innerHTML = app.profil.affichageNom()
+        element.textContent = app.profil.affichageNom()
     },
 
     titreConseils: function (element, profil) {
         if (!element) return
         if (profil.estMonProfil()) return
-        showElement(element)
+        affichage.showElement(element)
         element.textContent = `Conseils pour « ${profil.nom} »`
     },
 

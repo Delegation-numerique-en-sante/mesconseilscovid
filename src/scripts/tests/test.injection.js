@@ -7,7 +7,7 @@ var Algorithme = require('../algorithme.js').Algorithme
 var injection = require('../injection.js')
 
 var Profil = require('../profil.js').Profil
-var profil = new Profil()
+var profil = new Profil('mes_infos')
 
 describe('Injection', function () {
     beforeEach(function () {

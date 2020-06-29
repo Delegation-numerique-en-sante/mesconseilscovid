@@ -48,6 +48,28 @@ function createElementFromHTML(htmlString) {
     return div.firstElementChild
 }
 
+function escapeHtml(str) {
+    return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#x27;')
+        .replace(/`/g, '&#x60;')
+}
+
+function safeHtml(literals, ...substitutions) {
+    let result = ''
+
+    for (let i = 0; i < substitutions.length; i++) {
+        result += literals[i]
+        result += escapeHtml(substitutions[i])
+    }
+    // add the last literal
+    result += literals[literals.length - 1]
+    return result
+}
+
 module.exports = {
     hideElement,
     showElement,
@@ -55,4 +77,6 @@ module.exports = {
     displayElementById,
     displayBlocks,
     createElementFromHTML,
+    safeHtml,
+    escapeHtml,
 }

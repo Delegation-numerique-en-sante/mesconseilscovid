@@ -12,7 +12,9 @@ function page(element, app) {
                     <div class="profil-card card">
                         <h3>Pour moi</h3>
                         <div class="form-controls">
-                            <a class="button button-full-width" data-set-profil="mes_infos" href="#residence">Démarrer</a>
+                            <a class="button button-full-width"
+                                data-set-profil="mes_infos" href="#residence"
+                                >Démarrer</a>
                         </div>
                     </div>
                 `)
@@ -24,7 +26,9 @@ function page(element, app) {
                 <div class="profil-card card">
                     <h3>Pour un proche</h3>
                     <div class="form-controls">
-                        <a class="button button-full-width js-profil-new" href="#residence">Démarrer</a>
+                        <a class="button button-full-width js-profil-new"
+                            href="#residence"
+                            >Démarrer</a>
                     </div>
                 </div>
             `)
