@@ -1,9 +1,17 @@
 var carteDepartements = require('./carte.js')
+var showElement = require('./affichage.js').showElement
 
 module.exports = {
     nomProfil: function (element, app) {
         if (!element) return
         element.innerHTML = app.profil.affichageNom()
+    },
+
+    titreConseils: function (element, profil) {
+        if (!element) return
+        if (profil.estMonProfil()) return
+        showElement(element)
+        element.textContent = `Conseils pour « ${profil.nom} »`
     },
 
     departement: function (element, departement) {

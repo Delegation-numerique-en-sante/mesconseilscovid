@@ -87,6 +87,13 @@ main {
     max-width: 48rem;
     margin: auto;
 }
+.block > h1 {
+    color: #000091;
+    font-size: 250%;
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
 .block > h2 {
     color: #000091;
     font-size: 225%;

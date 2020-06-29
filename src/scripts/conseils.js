@@ -60,6 +60,7 @@ function showRelevantBlocks(element, profil, algorithme) {
 }
 
 function showRelevantAnswersRecap(element, profil, algorithme) {
+    injection.titreConseils(element.querySelector('#conseils-block-titre'), profil)
     injection.departement(element.querySelector('#nom-departement'), profil.departement)
     var lienPrefecture = element.querySelector('#lien-prefecture')
     if (lienPrefecture) {
