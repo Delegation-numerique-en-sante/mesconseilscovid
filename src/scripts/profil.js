@@ -238,14 +238,14 @@ class Profil {
         `
     }
 
-    buttons() {
+    renderButtons() {
         if (this.isComplete()) {
             var possessif = this.estMonProfil() ? 'mes' : 'ses'
             return `
-                <a class="button button-full-width button-outline" data-profil="${this.nom}" href="#residence">\
+                <a data-profil="${this.nom}" href="#residence">\
                     Modifier ${possessif} réponses\
                 </a>
-                <a class="button button-full-width conseils-link" data-profil="${this.nom}" href="">\
+                <a class="conseils-link" data-profil="${this.nom}" href="">\
                     Voir ${possessif} conseils\
                 </a>
             `
@@ -261,9 +261,9 @@ class Profil {
 
     renderCard() {
         return affichage.createElementFromHTML(`
-        <div class="profil-card">
+        <div class="card">
             ${this.renderNom()}
-            <div class="form-controls">${this.buttons()}</div>
+            <div>${this.renderButtons()}</div>
         </div>
         `)
     }
