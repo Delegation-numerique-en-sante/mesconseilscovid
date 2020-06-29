@@ -5,7 +5,6 @@ var getCurrentPageName = function () {
 
 var redirectToUnansweredQuestions = function (page, profil) {
     if (page === 'introduction') return
-    if (page === 'profils') return
     if (page === 'pediatrie') return
     if (page === 'conditionsutilisation') return
     if (page === 'nouvelleversiondisponible') return

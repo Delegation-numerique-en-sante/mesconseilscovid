@@ -1,5 +1,4 @@
 var affichage = require('./affichage.js')
-const carteDepartements = require('./carte.js')
 
 class Profil {
     constructor(nom) {
@@ -202,40 +201,6 @@ class Profil {
 
     renderNom() {
         return `<h3>${this.affichageNom()}</h3>`
-    }
-
-    renderDepartement() {
-        return this.departement
-            ? `<li>Lieu de résidence : ${carteDepartements.nom(this.departement)}</li>`
-            : ''
-    }
-
-    renderAge() {
-        return this.age ? `<li>Âge : ${this.age} ans</li>` : ''
-    }
-
-    renderFull() {
-        return affichage.createElementFromHTML(`
-        <div class="profil-full">
-            ${this.renderNom()}
-            ${this.renderDeleteButton()}
-            <ul>
-                ${this.renderAge()}
-                ${this.renderDepartement()}
-            </ul>
-        </div>
-        `)
-    }
-
-    renderDeleteButton() {
-        if (this.estMonProfil()) {
-            return ''
-        }
-        return `
-            <a class="button button-red" data-delete-profil="${this.nom}" href="">\
-                Supprimer ce profil\
-            </a>
-        `
     }
 
     renderButtons() {

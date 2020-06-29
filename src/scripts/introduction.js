@@ -1,5 +1,4 @@
 import { Profil } from './profil.js'
-import actions from './actions.js'
 import affichage from './affichage.js'
 import pagination from './pagination.js'
 
@@ -56,7 +55,7 @@ function renderProfilCards(container, noms, app) {
                 bindChangeProfil(profilLink, app)
             })
 
-            actions.bindSuppression(card.querySelector('[data-delete-profil]'), app)
+            bindSuppression(card.querySelector('[data-delete-profil]'), app)
         })
     })
 }
@@ -68,6 +67,22 @@ function bindChangeProfil(element, app) {
             var url = new URL(event.target.href)
             app.router.navigate(url.hash)
         })
+    })
+}
+
+function bindSuppression(element, app) {
+    element.addEventListener('click', function (event) {
+        event.preventDefault()
+        const nom = element.dataset.deleteProfil
+        const description = nom === 'mes_infos' ? 'votre profil' : `le profil de ${nom}`
+        if (confirm(`Êtes-vous sûr·e de vouloir supprimer ${description}?`)) {
+            app.supprimerProfil(nom).then(() => {
+                app.chargerProfilActuel().then(() => {
+                    // TODO: find a clever way to re-render the current page.
+                    window.location.reload(true)
+                })
+            })
+        }
     })
 }
 

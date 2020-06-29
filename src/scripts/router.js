@@ -4,7 +4,6 @@ var introduction = require('./introduction.js')
 var affichage = require('./affichage.js')
 var conseils = require('./conseils.js')
 var questionnaire = require('./questionnaire.js')
-var profils = require('./profils.js')
 var injection = require('./injection.js')
 var pagination = require('./pagination.js')
 
@@ -55,11 +54,6 @@ function initRouter(app) {
     })
 
     router
-        .on(new RegExp('^profils$'), function () {
-            var pageName = 'profils'
-            var element = pagination.loadPage(pageName)
-            profils.page(element, app)
-        })
         .on(new RegExp('^introduction$'), function () {
             var pageName = 'introduction'
             var element = pagination.loadPage(pageName)
