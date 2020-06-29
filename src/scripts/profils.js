@@ -1,4 +1,4 @@
-import {Profil} from './profil.js'
+import { Profil } from './profil.js'
 import actions from './actions.js'
 
 function page(element, app) {
@@ -10,7 +10,7 @@ function page(element, app) {
             const profil = new Profil(nom)
             app.stockage.charger(profil).then((profil) => {
                 const profilElement = container.appendChild(profil.renderFull())
-                const deleteLink = profilElement.querySelector('[data-profil]')
+                const deleteLink = profilElement.querySelector('[data-delete-profil]')
                 if (deleteLink) {
                     actions.bindSuppression(deleteLink, app)
                 }

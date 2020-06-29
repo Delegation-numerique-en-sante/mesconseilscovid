@@ -44,18 +44,16 @@ class StockageLocal {
             })
     }
 
-    supprimer(profil) {
+    supprimer(nom) {
         return localforage
-            .removeItem(profil.nom)
+            .removeItem(nom)
             .then(() => {
-                console.debug(
-                    `Les données personnelles ont été supprimées (${profil.nom})`
-                )
+                console.debug(`Les données personnelles ont été supprimées (${nom})`)
                 return
             })
             .catch((error) => {
                 console.error(
-                    `Erreur lors de la suppression des données personnelles (${profil.nom})`
+                    `Erreur lors de la suppression des données personnelles (${nom})`
                 )
                 console.error(error)
             })

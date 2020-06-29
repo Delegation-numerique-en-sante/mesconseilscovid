@@ -30,8 +30,8 @@ class App {
         this.profil.nom = nom
         return this.stockage.charger(this.profil, nom)
     }
-    supprimerProfil(profil) {
-        return this.stockage.supprimer(profil)
+    supprimerProfil(nom) {
+        return this.stockage.supprimer(nom)
     }
     supprimerTout() {
         return this.stockage.supprimerTout().then(() => {

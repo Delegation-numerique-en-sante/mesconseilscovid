@@ -232,29 +232,35 @@ class Profil {
             return ''
         }
         return `
-            <a class="button button-red" data-profil="${this.nom}" href="">\
+            <a class="button button-red" data-delete-profil="${this.nom}" href="">\
                 Supprimer ce profil\
             </a>
         `
     }
 
     renderButtons() {
+        const possessifMasculinSingulier = this.estMonProfil() ? 'mon' : 'son'
+        const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
+        var mainButton
         if (this.isComplete()) {
-            var possessif = this.estMonProfil() ? 'mes' : 'ses'
-            return `
-                <a data-profil="${this.nom}" href="#residence">\
-                    Modifier ${possessif} réponses\
-                </a>
-                <a class="conseils-link" data-profil="${this.nom}" href="">\
-                    Voir ${possessif} conseils\
-                </a>
+            mainButton = `
+                <a class="button button-outline conseils-link" data-set-profil="${this.nom}" href="">Voir ${possessifPluriel} conseils</a>
             `
         } else {
             var label = this.isEmpty() ? 'Démarrer' : 'Continuer'
-            return `
-                <a class="button button-full-width conseils-link" data-profil="${this.nom}" href="#residence">${label}</a>
+            mainButton = `
+                <a class="button button-full-width conseils-link" data-set-profil="${this.nom}" href="#residence">${label}</a>
             `
         }
+        return (
+            mainButton +
+            `<a data-set-profil="${this.nom}" href="#residence">\
+                    Modifier ${possessifPluriel} réponses\
+                </a>
+                <a data-delete-profil="${this.nom}" href="">\
+                    Supprimer ${possessifMasculinSingulier} profil\
+                </a>`
+        )
     }
 
     renderCard() {

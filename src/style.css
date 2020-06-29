@@ -121,14 +121,17 @@ main {
     flex-shrink: 0;
     width: 100%;
     margin: 1rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 .card h3 {
     margin-top: 0.5rem;
 }
 .card a {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+.card a.button {
+    margin-bottom: 1.5rem;
 }
 .break {
     flex-basis: 100%;

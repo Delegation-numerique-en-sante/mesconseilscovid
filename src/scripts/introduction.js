@@ -1,4 +1,5 @@
 import { Profil } from './profil.js'
+import actions from './actions.js'
 import affichage from './affichage.js'
 import pagination from './pagination.js'
 
@@ -12,12 +13,12 @@ function page(element, app) {
                     <div class="profil-card card">
                         <h3>Pour moi</h3>
                         <div class="form-controls">
-                            <a class="button button-full-width" data-profil="mes_infos" href="#residence">Démarrer</a>
+                            <a class="button button-full-width" data-set-profil="mes_infos" href="#residence">Démarrer</a>
                         </div>
                     </div>
                 `)
             )
-            bindChangeProfil(card.querySelector('[data-profil]'), app)
+            bindChangeProfil(card.querySelector('[data-set-profil]'), app)
         }
         container.appendChild(
             affichage.createElementFromHTML(`
@@ -50,10 +51,12 @@ function renderProfilCards(container, noms, app) {
                 conseilsLink.setAttribute('href', '#' + target)
             }
 
-            const profilLinks = card.querySelectorAll('[data-profil]')
+            const profilLinks = card.querySelectorAll('[data-set-profil]')
             Array.from(profilLinks).forEach((profilLink) => {
                 bindChangeProfil(profilLink, app)
             })
+
+            actions.bindSuppression(card.querySelector('[data-delete-profil]'), app)
         })
     })
 }
@@ -61,7 +64,7 @@ function renderProfilCards(container, noms, app) {
 function bindChangeProfil(element, app) {
     element.addEventListener('click', function (event) {
         event.preventDefault()
-        app.basculerVersProfil(element.dataset.profil).then(() => {
+        app.basculerVersProfil(element.dataset.setProfil).then(() => {
             var url = new URL(event.target.href)
             app.router.navigate(url.hash)
         })
