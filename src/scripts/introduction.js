@@ -79,7 +79,7 @@ function bindSuppression(element, app) {
         event.preventDefault()
         const nom = element.dataset.deleteProfil
         const description = nom === 'mes_infos' ? 'votre profil' : `le profil de ${nom}`
-        if (confirm(`Êtes-vous sûr·e de vouloir supprimer ${description}?`)) {
+        if (confirm(`Êtes-vous sûr·e de vouloir supprimer ${description} ?`)) {
             app.supprimerProfil(nom).then(() => {
                 app.chargerProfilActuel().then(() => {
                     // TODO: find a clever way to re-render the current page.
