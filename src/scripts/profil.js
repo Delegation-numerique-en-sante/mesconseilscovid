@@ -208,23 +208,30 @@ class Profil {
         const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
         var mainButton
         if (this.isComplete()) {
+            const outlined = this.estMonProfil() ? '' : 'button-outline'
             mainButton = `
-                <a class="button button-outline conseils-link" data-set-profil="${this.nom}" href="">Voir ${possessifPluriel} conseils</a>
+                <a class="button ${outlined} conseils-link"
+                    data-set-profil="${this.nom}" href="#conseils"
+                    >Voir ${possessifPluriel} conseils</a>
             `
         } else {
             var label = this.isEmpty() ? 'Démarrer' : 'Continuer'
             mainButton = `
-                <a class="button button-full-width conseils-link" data-set-profil="${this.nom}" href="#residence">${label}</a>
+                <a class="button button-full-width conseils-link"
+                    data-set-profil="${this.nom}" href="#residence"
+                    >${label}</a>
             `
         }
         return (
             mainButton +
-            `<a data-set-profil="${this.nom}" href="#residence">\
-                    Modifier ${possessifPluriel} réponses\
-                </a>
-                <a data-delete-profil="${this.nom}" href="">\
-                    Supprimer ${possessifMasculinSingulier} profil\
-                </a>`
+            String.raw`
+            <a data-set-profil="${this.nom}" href="#residence">
+                Modifier ${possessifPluriel} réponses
+            </a>
+            <a data-delete-profil="${this.nom}" href="">
+                Supprimer ${possessifMasculinSingulier} profil
+            </a>
+            `
         )
     }
 
