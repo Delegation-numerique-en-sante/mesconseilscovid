@@ -40,14 +40,16 @@ function renderProfilCards(container, noms, app) {
         const profil = new Profil(nom)
         app.stockage.charger(profil).then((profil) => {
             const card = container.insertBefore(profil.renderCard(), lastCard)
-            if (profil.isComplete()) {
-                const conseilsLink = card.querySelector('.conseils-link')
+
+            const conseilsLink = card.querySelector('.conseils-link')
+            if (conseilsLink) {
                 const target = pagination.redirectToUnansweredQuestions(
                     'findCorrectExit',
                     profil
                 )
                 conseilsLink.setAttribute('href', '#' + target)
             }
+
             const profilLinks = card.querySelectorAll('[data-profil]')
             Array.from(profilLinks).forEach((profilLink) => {
                 bindChangeProfil(profilLink, app)

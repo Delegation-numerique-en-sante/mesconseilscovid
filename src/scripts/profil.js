@@ -252,7 +252,7 @@ class Profil {
         } else {
             var label = this.isEmpty() ? 'Démarrer' : 'Continuer'
             return `
-                <a class="button button-full-width" data-profil="${this.nom}" href="#residence">${label}</a>
+                <a class="button button-full-width conseils-link" data-profil="${this.nom}" href="#residence">${label}</a>
             `
         }
     }
