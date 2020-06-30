@@ -61,42 +61,42 @@ function initRouter(app) {
         })
         .on(new RegExp('^residence$'), function () {
             var pageName = 'residence'
-            var form = pagination.loadPage(pageName)
+            var form = pagination.loadPage(pageName, app)
             questionnaire.residence(form, app, router)
         })
         .on(new RegExp('^activitepro$'), function () {
             var pageName = 'activitepro'
-            var form = pagination.loadPage(pageName)
+            var form = pagination.loadPage(pageName, app)
             questionnaire.activitepro(form, app, router)
         })
         .on(new RegExp('^foyer$'), function () {
             var pageName = 'foyer'
-            var form = pagination.loadPage(pageName)
+            var form = pagination.loadPage(pageName, app)
             questionnaire.foyer(form, app, router)
         })
         .on(new RegExp('^caracteristiques$'), function () {
             var pageName = 'caracteristiques'
-            var form = pagination.loadPage(pageName)
+            var form = pagination.loadPage(pageName, app)
             questionnaire.caracteristiques(form, app, router)
         })
         .on(new RegExp('^antecedents$'), function () {
             var pageName = 'antecedents'
-            var form = pagination.loadPage(pageName)
+            var form = pagination.loadPage(pageName, app)
             questionnaire.antecedents(form, app, router)
         })
         .on(new RegExp('^symptomesactuels$'), function () {
             var pageName = 'symptomesactuels'
-            var form = pagination.loadPage(pageName)
+            var form = pagination.loadPage(pageName, app)
             questionnaire.symptomesactuels(form, app, router)
         })
         .on(new RegExp('^symptomespasses$'), function () {
             var pageName = 'symptomespasses'
-            var form = pagination.loadPage(pageName)
+            var form = pagination.loadPage(pageName, app)
             questionnaire.symptomespasses(form, app, router)
         })
         .on(new RegExp('^contactarisque$'), function () {
             var pageName = 'contactarisque'
-            var form = pagination.loadPage(pageName)
+            var form = pagination.loadPage(pageName, app)
             questionnaire.contactarisque(form, app, router)
         })
         .on(new RegExp('^conseils$'), function () {

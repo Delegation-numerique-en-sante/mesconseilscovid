@@ -1,3 +1,5 @@
+var affichage = require('./affichage.js')
+
 var getCurrentPageName = function () {
     var hash = document.location.hash
     return hash ? hash.slice(1) : ''
@@ -62,12 +64,20 @@ var redirectToUnansweredQuestions = function (page, profil) {
     return page === 'conseils' ? undefined : 'conseils'
 }
 
-var loadPage = function (pageName) {
+var loadPage = function (pageName, app) {
     var page = document.querySelector('section#page')
     var section = document.querySelector('#' + pageName)
     var clone = section.cloneNode(true)
     page.innerHTML = '' // Flush the current content.
     var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
+
+    if (app && !app.profil.estMonProfil()) {
+        Array.from(element.querySelectorAll('.me')).forEach((meElement) => {
+            affichage.hideElement(meElement)
+            affichage.showElement(meElement.nextSibling)
+        })
+    }
+
     if (pageName !== 'introduction') {
         element.scrollIntoView({ behavior: 'smooth' })
     }

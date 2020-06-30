@@ -97,9 +97,9 @@
 <section id="residence" hidden>
     <form id="residence-form" action="" class="block">
         <fieldset>
-            <legend>1/8 - {{ question_résidence_titre }}</legend>
+            <legend>1/8 - {{ question_résidence_titre|me_or_you }}</legend>
             <div class="row">
-                <label for="departement">{{ question_résidence_libellé }}</label>
+                <label for="departement">{{ question_résidence_libellé|me_or_you }}</label>
                 <div class="dpt-container">
                     <select id="departement" required>
                         <option selected disabled>Choisir dans la liste…</option>
@@ -228,23 +228,23 @@
 <section id="activitepro" hidden>
     <form id="activite-pro-form" action="" class="block">
         <fieldset>
-            <legend>2/8 - {{ question_activité_pro_titre }}</legend>
+            <legend>2/8 - {{ question_activité_pro_titre|me_or_you }}</legend>
             <div>
                 <input id="activite_pro" type="checkbox" name="activite_pro">
                 <label for="activite_pro">
-                    <span>{{ question_activité_pro_libellé }}</span>
+                    <span>{{ question_activité_pro_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="activite_pro_public" type="checkbox" name="activite_pro_public" disabled>
                 <label for="activite_pro_public">
-                    <span>{{ question_activité_pro_public_libellé }}</span>
+                    <span>{{ question_activité_pro_public_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
                 <label for="activite_pro_sante">
-                    <span>{{ question_activité_pro_santé_libellé }}</span>
+                    <span>{{ question_activité_pro_santé_libellé|me_or_you }}</span>
                 </label>
                 <div class="details">{{ question_activité_pro_santé_aide }}</div>
             </div>
@@ -259,17 +259,17 @@
 <section id="foyer" hidden>
     <form id="foyer-form" action="" class="block">
         <fieldset>
-            <legend>3/8 - {{ question_foyer_titre }}</legend>
+            <legend>3/8 - {{ question_foyer_titre|me_or_you }}</legend>
             <div>
                 <input id="foyer_enfants" type="checkbox" name="foyer_enfants">
                 <label for="foyer_enfants">
-                    <span>{{ question_foyer_enfants_libellé }}</span>
+                    <span>{{ question_foyer_enfants_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div>
                 <input id="foyer_fragile" type="checkbox" name="foyer_fragile">
                 <label for="foyer_fragile">
-                    <span>{{ question_foyer_fragile_libellé }}</span>
+                    <span>{{ question_foyer_fragile_libellé|me_or_you }}</span>
                 </label>
                 <div class="details">{{ question_foyer_fragile_aide }}</div>
             </div>
@@ -284,25 +284,25 @@
 <section id="caracteristiques" hidden>
     <form id="caracteristiques-form" action="" class="block">
         <fieldset>
-            <legend>4/8 - {{ question_caractéristiques_titre }}</legend>
+            <legend>4/8 - {{ question_caractéristiques_titre|me_or_you }}</legend>
             <ul class="no-list-style">
                 <li class="row">
-                    <label for="age">{{ question_caractéristiques_âge_libellé }}</label>
+                    <label for="age">{{ question_caractéristiques_âge_libellé|me_or_you }}</label>
                     <input id="age" type="text" inputmode="numeric" pattern="[0-9]*" required>
                 </li>
                 <li class="row">
-                    <label for="taille">{{ question_caractéristiques_taille_libellé }}</label>
+                    <label for="taille">{{ question_caractéristiques_taille_libellé|me_or_you }}</label>
                     <input id="taille" type="text" inputmode="numeric" pattern="[0-9]*" required>
                 </li>
                 <li class="row">
-                    <label for="poids">{{ question_caractéristiques_poids_libellé }}</label>
+                    <label for="poids">{{ question_caractéristiques_poids_libellé|me_or_you }}</label>
                     <input id="poids" type="text" inputmode="numeric" pattern="[0-9]*" required>
                 </li>
             </ul>
             <div class="field">
                 <input id="grossesse_3e_trimestre" type="checkbox" name="grossesse_3e_trimestre">
                 <label for="grossesse_3e_trimestre">
-                    <span>{{ question_caractéristiques_grossesse_libellé }}</span>
+                    <span>{{ question_caractéristiques_grossesse_libellé|me_or_you }}</span>
                 </label>
             </div>
         </fieldset>
@@ -316,12 +316,12 @@
 <section id="antecedents" hidden>
     <form id="antecedents-form" action="" class="block">
         <fieldset>
-            <legend>5/8 - {{ question_antécédents_titre }}</legend>
+            <legend>5/8 - {{ question_antécédents_titre|me_or_you }}</legend>
             <div class="field">
                 <input id="antecedent_cardio" type="checkbox" name="antecedent_cardio">
                 <label for="antecedent_cardio">
                     <span>
-                        {{ question_antécédents_cardio_libellé }}
+                        {{ question_antécédents_cardio_libellé|me_or_you }}
                     </span>
                 </label>
                 <div class="details">{{ question_antécédents_cardio_aide }}</div>
@@ -330,7 +330,7 @@
                 <input id="antecedent_diabete" type="checkbox" name="antecedent_diabete">
                 <label for="antecedent_diabete">
                     <span>
-                        {{ question_antécédents_diabète_libellé }}
+                        {{ question_antécédents_diabète_libellé|me_or_you }}
                     </span>
                 </label>
             </div>
@@ -338,7 +338,7 @@
                 <input id="antecedent_respi" type="checkbox" name="antecedent_respi">
                 <label for="antecedent_respi">
                     <span>
-                        {{ question_antécédents_respi_libellé }}
+                        {{ question_antécédents_respi_libellé|me_or_you }}
                     </span>
                 </label>
                 <div class="details">{{ question_antécédents_respi_aide }}</div>
@@ -347,7 +347,7 @@
                 <input id="antecedent_dialyse" type="checkbox" name="antecedent_dialyse">
                 <label for="antecedent_dialyse">
                     <span>
-                        {{ question_antécédents_dialyse_libellé }}
+                        {{ question_antécédents_dialyse_libellé|me_or_you }}
                     </span>
                 </label>
             </div>
@@ -355,7 +355,7 @@
                 <input id="antecedent_cancer" type="checkbox" name="antecedent_cancer">
                 <label for="antecedent_cancer">
                     <span>
-                        {{ question_antécédents_cancer_libellé }}
+                        {{ question_antécédents_cancer_libellé|me_or_you }}
                     </span>
                 </label>
             </div>
@@ -363,7 +363,7 @@
                 <input id="antecedent_immunodep" type="checkbox" name="antecedent_immunodep">
                 <label for="antecedent_immunodep">
                     <span>
-                        {{ question_antécédents_immunodépression_libellé }}
+                        {{ question_antécédents_immunodépression_libellé|me_or_you }}
                     </span>
                 </label>
                 <div class="details">{{ question_antécédents_immunodépression_aide }}</div>
@@ -372,7 +372,7 @@
                 <input id="antecedent_cirrhose" type="checkbox" name="antecedent_cirrhose">
                 <label for="antecedent_cirrhose">
                     <span>
-                        {{ question_antécédents_cirrhose_libellé }}
+                        {{ question_antécédents_cirrhose_libellé|me_or_you }}
                     </span>
                 </label>
             </div>
@@ -380,7 +380,7 @@
                 <input id="antecedent_drepano" type="checkbox" name="antecedent_drepano">
                 <label for="antecedent_drepano">
                     <span>
-                        {{ question_antécédents_drépanocytose_libellé }}
+                        {{ question_antécédents_drépanocytose_libellé|me_or_you }}
                     </span>
                 </label>
             </div>
@@ -388,7 +388,7 @@
                 <input id="antecedent_chronique_autre" type="checkbox" name="antecedent_chronique_autre">
                 <label for="antecedent_chronique_autre">
                     <span>
-                        {{ question_antécédents_chronique_autre_libellé }}
+                        {{ question_antécédents_chronique_autre_libellé|me_or_you }}
                     </span>
                 </label>
             </div>
@@ -403,12 +403,12 @@
 <section id="symptomesactuels" hidden>
     <form id="symptomes-actuels-form" action="" class="block">
         <fieldset>
-            <legend>6/8 - {{ question_symptômes_actuels_titre }}</legend>
+            <legend>6/8 - {{ question_symptômes_actuels_titre|me_or_you }}</legend>
             <div>
                 <input id="symptomes_actuels" type="checkbox" name="symptomes_actuels">
                 <label for="symptomes_actuels">
                     <span>
-                        {{ question_symptômes_actuels_libellé }}
+                        {{ question_symptômes_actuels_libellé|me_or_you }}
                     </span>
                 </label>
                 <div class="details">{{ question_symptômes_aide }}</div>
@@ -416,62 +416,62 @@
             <div class="secondary disabled">
                 <input id="symptomes_actuels_temperature" type="checkbox" name="symptomes_actuels_temperature" disabled>
                 <label for="symptomes_actuels_temperature">
-                    <span>{{ question_symptômes_actuels_température_libellé }}</span>
+                    <span>{{ question_symptômes_actuels_température_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="symptomes_actuels_temperature_inconnue" type="checkbox" name="symptomes_actuels_temperature_inconnue" disabled>
                 <label for="symptomes_actuels_temperature_inconnue">
-                    <span>{{ question_symptômes_actuels_température_inconnue_libellé }}</span>
+                    <span>{{ question_symptômes_actuels_température_inconnue_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="symptomes_actuels_toux" type="checkbox" name="symptomes_actuels_toux" disabled>
                 <label for="symptomes_actuels_toux">
-                    <span>{{ question_symptômes_actuels_toux_libellé }}</span>
+                    <span>{{ question_symptômes_actuels_toux_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="symptomes_actuels_odorat" type="checkbox" name="symptomes_actuels_odorat" disabled>
                 <label for="symptomes_actuels_odorat">
-                    <span>{{ question_symptômes_actuels_odorat_libellé }}</span>
+                    <span>{{ question_symptômes_actuels_odorat_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="symptomes_actuels_douleurs" type="checkbox" name="symptomes_actuels_douleurs" disabled>
                 <label for="symptomes_actuels_douleurs">
-                    <span>{{ question_symptômes_actuels_douleurs_libellé }}</span>
+                    <span>{{ question_symptômes_actuels_douleurs_libellé|me_or_you }}</span>
                 </label>
                 <div class="details">{{ question_symptômes_actuels_douleurs_aide }}</div>
             </div>
             <div class="secondary disabled">
                 <input id="symptomes_actuels_diarrhee" type="checkbox" name="symptomes_actuels_diarrhee" disabled>
                 <label for="symptomes_actuels_diarrhee">
-                    <span>{{ question_symptômes_actuels_diarrhée_libellé }}</span>
+                    <span>{{ question_symptômes_actuels_diarrhée_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="symptomes_actuels_fatigue" type="checkbox" name="symptomes_actuels_fatigue" disabled>
                 <label for="symptomes_actuels_fatigue">
-                    <span>{{ question_symptômes_actuels_fatigue_libellé }}</span>
+                    <span>{{ question_symptômes_actuels_fatigue_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="symptomes_actuels_alimentation" type="checkbox" name="symptomes_actuels_alimentation" disabled>
                 <label for="symptomes_actuels_alimentation">
-                    <span>{{ question_symptômes_actuels_alimentation_libellé }}</span>
+                    <span>{{ question_symptômes_actuels_alimentation_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="symptomes_actuels_souffle" type="checkbox" name="symptomes_actuels_souffle" disabled>
                 <label for="symptomes_actuels_souffle">
-                    <span>{{ question_symptômes_actuels_souffle_libellé }}</span>
+                    <span>{{ question_symptômes_actuels_souffle_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="symptomes_actuels_autre" type="checkbox" name="symptomes_actuels_autre" disabled>
                 <label for="symptomes_actuels_autre">
-                    <span>{{ question_symptômes_actuels_autre_libellé }}</span>
+                    <span>{{ question_symptômes_actuels_autre_libellé|me_or_you }}</span>
                 </label>
             </div>
         </fieldset>
@@ -485,12 +485,12 @@
 <section id="symptomespasses" hidden>
     <form id="symptomes-passes-form" action="" class="block">
         <fieldset>
-            <legend>7/8 - {{ question_symptômes_passés_titre }}</legend>
+            <legend>7/8 - {{ question_symptômes_passés_titre|me_or_you }}</legend>
             <div>
                 <input id="symptomes_passes" type="checkbox" name="symptomes_passes">
                 <label for="symptomes_passes">
                     <span>
-                        {{ question_symptômes_passés_libellé }}
+                        {{ question_symptômes_passés_libellé|me_or_you }}
                     </span>
                 </label>
                 <div class="details">{{ question_symptômes_aide }}</div>
@@ -506,57 +506,57 @@
 <section id="contactarisque" hidden>
     <form id="contact-a-risque-form" action="" class="block">
         <fieldset>
-            <legend>8/8 - {{ question_symptômes_contact_à_risque_titre }}</legend>
+            <legend>8/8 - {{ question_symptômes_contact_à_risque_titre|me_or_you }}</legend>
             <div>
                 <input id="contact_a_risque" type="checkbox" name="contact_a_risque">
                 <label for="contact_a_risque">
                     <span>
-                        {{ question_symptômes_contact_à_risque_libellé }}
+                        {{ question_symptômes_contact_à_risque_libellé|me_or_you }}
                     </span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="contact_a_risque_meme_lieu_de_vie" type="checkbox" name="contact_a_risque_meme_lieu_de_vie" disabled>
                 <label for="contact_a_risque_meme_lieu_de_vie">
-                    <span>{{ question_symptômes_contact_à_risque_même_lieu_de_vie_libellé }}</span>
+                    <span>{{ question_symptômes_contact_à_risque_même_lieu_de_vie_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="contact_a_risque_contact_direct" type="checkbox" name="contact_a_risque_contact_direct" disabled>
                 <label for="contact_a_risque_contact_direct">
-                    <span>{{ question_symptômes_contact_à_risque_contact_direct_libellé }}</span>
+                    <span>{{ question_symptômes_contact_à_risque_contact_direct_libellé|me_or_you }}</span>
                 </label>
                 <div class="details">{{ question_symptômes_contact_à_risque_contact_direct_aide }}</div>
             </div>
             <div class="secondary disabled">
                 <input id="contact_a_risque_actes" type="checkbox" name="contact_a_risque_actes" disabled>
                 <label for="contact_a_risque_actes">
-                    <span>{{ question_symptômes_contact_à_risque_actes_libellé }}</span>
+                    <span>{{ question_symptômes_contact_à_risque_actes_libellé|me_or_you }}</span>
                 </label>
                 <div class="details">{{ question_symptômes_contact_à_risque_actes_aide }}</div>
             </div>
             <div class="secondary disabled">
                 <input id="contact_a_risque_espace_confine" type="checkbox" name="contact_a_risque_espace_confine" disabled>
                 <label for="contact_a_risque_espace_confine">
-                    <span>{{ question_symptômes_contact_à_risque_espace_confiné_libellé }}</span>
+                    <span>{{ question_symptômes_contact_à_risque_espace_confiné_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="contact_a_risque_meme_classe" type="checkbox" name="contact_a_risque_meme_classe" disabled>
                 <label for="contact_a_risque_meme_classe">
-                    <span>{{ question_symptômes_contact_à_risque_même_classe_libellé }}</span>
+                    <span>{{ question_symptômes_contact_à_risque_même_classe_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="contact_a_risque_stop_covid" type="checkbox" name="contact_a_risque_stop_covid" disabled>
                 <label for="contact_a_risque_stop_covid">
-                    <span>{{ question_symptômes_contact_à_risque_stop_covid_libellé }}</span>
+                    <span>{{ question_symptômes_contact_à_risque_stop_covid_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="secondary disabled">
                 <input id="contact_a_risque_autre" type="checkbox" name="contact_a_risque_autre" disabled>
                 <label for="contact_a_risque_autre">
-                    <span>{{ question_symptômes_contact_à_risque_autre_libellé }}</span>
+                    <span>{{ question_symptômes_contact_à_risque_autre_libellé|me_or_you }}</span>
                 </label>
             </div>
             <div class="details">

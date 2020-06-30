@@ -79,8 +79,6 @@ OVH
 [OVH - Données personnelles](https://www.ovh.com/fr/protection-donnees-personnelles/) 
 
 
----
-
 
 ## [meta_introduction.md](meta_introduction.md)
 
@@ -94,8 +92,6 @@ Vos informations personnelles sont seulement stockées sur cet appareil et ne so
 
 
 
----
-
 
 ## [meta_nouvelle_version_disponible.md](meta_nouvelle_version_disponible.md)
 
@@ -106,8 +102,6 @@ Veuillez cliquer sur le bouton ci-dessous pour améliorer les conseils relatifs 
 Vous serez redirigé·e vers le questionnaire si de nouvelles informations sont nécessaires afin d’affiner la pertinence de vos conseils personnalisés.
 
 
----
-
 
 ## [meta_nouvelle_version_disponible_bannière.md](meta_nouvelle_version_disponible_bannière.md)
 
@@ -116,8 +110,6 @@ Vous serez redirigé·e vers le questionnaire si de nouvelles informations sont 
 Il est recommandé de mettre à jour dès que possible en cliquant sur le bouton ci-dessous (vos données ne seront pas perdues) :
 
 
----
-
 
 ## [meta_pied_de_page.md](meta_pied_de_page.md)
 
@@ -125,8 +117,6 @@ Vos informations personnelles sont seulement stockées sur cet appareil, et ne s
 À tout moment, vous pouvez <a class="js-suppression" href="">supprimer l’intégralité de ces données</a>.  
 [Conditions d’utilisation](#conditionsutilisation) - [Contact](mailto:mesconseilscovid@sante.gouv.fr) - [Code source](https://github.com/Delegation-numerique-en-sante/mesconseilscovid)
 
-
----
 
 
 ## [meta_pour_finir.md](meta_pour_finir.md)
@@ -157,8 +147,6 @@ Nous n’avons pas accès à vos données et vous pouvez <a href="#introduction"
 </div>
 
 
-
----
 
 
 ## [meta_pédiatrie.md](meta_pédiatrie.md)
@@ -282,13 +270,9 @@ Ligne d’écoute pour les parents, ressources pour les parents et professionnel
 </div>
 
 
----
-
 
 ## [meta_titre.md](meta_titre.md)
 
 # [Mes conseils Covid]()
 
-
----
 
