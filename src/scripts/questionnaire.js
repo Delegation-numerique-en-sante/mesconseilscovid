@@ -5,11 +5,10 @@ var geoloc = require('./geoloc.js')
 function residence(form, app, router) {
     var button = form.querySelector('input[type=submit]')
     formUtils.preloadForm(form, 'departement', app.profil)
-    formUtils.toggleFormButtonOnSelectFieldsRequired(
-        form,
-        button.value,
-        'Votre département de résidence est requis'
-    )
+    const requiredLabel = app.profil.estMonProfil()
+        ? 'Votre département de résidence est requis'
+        : 'Son département de résidence est requis'
+    formUtils.toggleFormButtonOnSelectFieldsRequired(form, button.value, requiredLabel)
     affichage.hideSelector(form, '#error-geolocalisation')
     form.querySelector('select').addEventListener('change', function () {
         affichage.hideSelector(form, '#error-geolocalisation')
@@ -35,7 +34,10 @@ function activitepro(form, app, router) {
     primary.addEventListener('click', function () {
         formUtils.enableOrDisableSecondaryFields(form, primary)
     })
-    formUtils.toggleFormButtonOnCheck(form, button.value, 'Continuer')
+    const uncheckedLabel = app.profil.estMonProfil()
+        ? 'Je n’ai pas d’activité professionnelle ou bénévole'
+        : 'Il ou elle n’a pas d’activité professionnelle ou bénévole'
+    formUtils.toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.activite_pro = event.target.elements['activite_pro'].checked
@@ -66,11 +68,8 @@ function caracteristiques(form, app, router) {
     formUtils.preloadForm(form, 'taille', app.profil)
     formUtils.preloadForm(form, 'poids', app.profil)
     formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre', app.profil)
-    formUtils.toggleFormButtonOnTextFieldsRequired(
-        form,
-        button.value,
-        'Les informations d’âge, de poids et de taille sont requises'
-    )
+    const requiredLabel = 'Les informations d’âge, de poids et de taille sont requises'
+    formUtils.toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.age = event.target.elements['age'].value
@@ -98,7 +97,10 @@ function antecedents(form, app, router) {
     formUtils.preloadCheckboxForm(form, 'antecedent_cirrhose', app.profil)
     formUtils.preloadCheckboxForm(form, 'antecedent_drepano', app.profil)
     formUtils.preloadCheckboxForm(form, 'antecedent_chronique_autre', app.profil)
-    formUtils.toggleFormButtonOnCheck(form, button.value, 'Continuer')
+    const uncheckedLabel = app.profil.estMonProfil()
+        ? 'Aucun de ces éléments ne correspond à ma situation'
+        : 'Aucun de ces éléments ne correspond à sa situation'
+    formUtils.toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.antecedent_cardio =
@@ -145,11 +147,15 @@ function symptomesactuels(form, app, router) {
     primary.addEventListener('click', function () {
         formUtils.enableOrDisableSecondaryFields(form, primary)
     })
+    const uncheckedLabel = app.profil.estMonProfil()
+        ? 'Je n’ai pas de symptômes actuellement'
+        : 'Il ou elle n’a pas de symptômes actuellement'
+    const requiredLabel = 'Vous devez saisir l’un des sous-choix proposés'
     formUtils.toggleFormButtonOnCheckRequired(
         form,
         button.value,
-        'Continuer',
-        'Vous devez saisir l’un des sous-choix proposés'
+        uncheckedLabel,
+        requiredLabel
     )
     form.addEventListener('submit', function (event) {
         event.preventDefault()
@@ -198,7 +204,10 @@ function symptomesactuels(form, app, router) {
 function symptomespasses(form, app, router) {
     var button = form.querySelector('input[type=submit]')
     formUtils.preloadCheckboxForm(form, 'symptomes_passes', app.profil)
-    formUtils.toggleFormButtonOnCheck(form, button.value, 'Terminer')
+    const uncheckedLabel = app.profil.estMonProfil()
+        ? 'Je n’ai pas eu de symptômes dans les 14 derniers jours'
+        : 'Il ou elle n’a pas eu de symptômes dans les 14 derniers jours'
+    formUtils.toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.symptomes_passes = event.target.elements['symptomes_passes'].checked
