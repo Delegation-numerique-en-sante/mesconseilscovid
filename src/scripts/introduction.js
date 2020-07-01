@@ -6,6 +6,9 @@ function page(element, app) {
     const container = element.querySelector('#profils-cards')
     container.innerHTML = '<div class="break"></div>'
     app.stockage.getProfils().then((noms) => {
+        if (noms.length) {
+            affichage.hideElement(element.querySelector('.js-intro'))
+        }
         if (!noms.includes('mes_infos')) {
             const card = container.appendChild(
                 affichage.createElementFromHTML(`
