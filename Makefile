@@ -3,10 +3,10 @@
 key.pem:  ## Generate certificates to be able to run `https` on `localhost`.
 	openssl req -nodes -newkey rsa:2048 -x509  -days 365 -keyout key.pem -out cert.pem -subj "/C=FR/CN=localhost"
 
-serve: build  ## Local HTTP server with auto rebuild (with LiveReload)
+serve: build  ## Local HTTP server with auto rebuild (with LiveReload).
 	python3 serve.py --watch
 
-serve-ssl: key.pem build  ## Local HTTPS server with auto rebuild (without LiveReload)
+serve-ssl: key.pem build  ## Local HTTPS server with auto rebuild (without LiveReload).
 	python3 serve.py --watch --ssl
 
 install:  ## Install Python and JS dependencies.
@@ -14,10 +14,10 @@ install:  ## Install Python and JS dependencies.
 	python3 -m pip install -r requirements.txt
 	npm install
 
-test:  ## Run JS unit tests
+test:  ## Run JS unit tests.
 	npm run-script test
 
-check-links:
+check-links:  # Check that links to external pages are still valid.
 	python3 check.py links
 
 lint:  ## Run ESLint.
