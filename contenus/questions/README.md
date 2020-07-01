@@ -172,6 +172,12 @@ broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome 
 
 
 
+## [question_caractéristiques_aide.md](question_caractéristiques_aide.md)
+
+Si vous ne disposez pas de ces informations précises, vous pouvez saisir une approximation et revenir plus tard pour affiner ces caractéristiques. <b>Les conseils seront alors mis à jour.</b>
+
+
+
 ## [question_caractéristiques_grossesse_libellé.md](question_caractéristiques_grossesse_libellé.md)
 
 <!---->Je suis enceinte au 3<sup>e</sup> trimestre de ma grossesse
