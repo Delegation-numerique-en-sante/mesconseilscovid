@@ -10,7 +10,7 @@
 
 ---
 
-<!---->Il ou elle exerce une <b>activité</b> professionnelle et/ou bénévole
+<!---->Cette personne exerce une <b>activité</b> professionnelle et/ou bénévole
 
 
 
@@ -83,7 +83,7 @@ hypertension artérielle compliquée (avec complications cardiaques, rénales), 
 
 ---
 
-<!---->Il ou elle a une autre maladie chronique, ou handicap, ou il ou elle prend un traitement au long cours
+<!---->Il ou elle a une autre maladie chronique, ou handicap, ou prend un traitement au long cours
 
 
 
@@ -113,7 +113,7 @@ hypertension artérielle compliquée (avec complications cardiaques, rénales), 
 
 ---
 
-<!---->Il ou elle a une <b>insuffisance rénale</b> chronique et il ou elle est sous dialyse
+<!---->Il ou elle a une <b>insuffisance rénale</b> chronique et cette personne est sous dialyse
 
 
 
@@ -121,10 +121,9 @@ hypertension artérielle compliquée (avec complications cardiaques, rénales), 
 
 <!---->J’ai une <b>drépanocytose</b> homozygote, ou j’ai bénéficié d’une <b>splénectomie</b> (ablation de la rate) à cause de la drépanocytose
 
-
 ---
 
-<!---->Il ou elle a une <b>drépanocytose</b> homozygote, ou il ou elle a bénéficié d’une <b>splénectomie</b> (ablation de la rate) à cause de la drépanocytose
+<!---->Il ou elle a une <b>drépanocytose</b> homozygote, ou a bénéficié d’une <b>splénectomie</b> (ablation de la rate) à cause de la drépanocytose
 
 
 
@@ -179,7 +178,7 @@ broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome 
 
 ---
 
-<!---->Elle est enceinte au 3<sup>e</sup> trimestre de sa grossesse
+<!---->Cette personne est enceinte au 3<sup>e</sup> trimestre de sa grossesse
 
 
 
@@ -229,7 +228,7 @@ broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome 
 
 ---
 
-<!---->Il ou elle vit avec un ou des <b>enfants</b> en âge d’aller à la crèche ou à l’école
+<!---->Cette personne vit avec un ou des <b>enfants</b> en âge d’aller à la crèche ou à l’école
 
 
 
@@ -239,7 +238,7 @@ broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome 
 Une personne considérée comme fragile face au covid-19 est une personne présentant au moins une des caractéristiques suivantes :  
 * avoir un âge > ou égal à 65 ans,
 * avoir une obésité, c’est-à-dire un indice de masse corporelle (IMC) > 30 kgm<sup>-2</sup>,
-* être une femme enceinte au 3<sup>e</sup> trimestre de grossesse, 
+* être enceinte au 3<sup>e</sup> trimestre de grossesse, 
 * ou avoir une ou plusieurs de ces conditions : 
   * maladie cardiovasculaire, 
   * diabète mal équilibré ou avec des complications (yeux, reins), 
@@ -258,7 +257,7 @@ Une personne considérée comme fragile face au covid-19 est une personne prése
 
 ---
 
-<!---->Il ou elle vit avec une ou des personnes considérée(s) comme <b>fragile(s)</b><sup>*</sup> face au covid-19 et/ou en situation de handicap
+<!---->Cette personne vit avec une ou des personnes considérée(s) comme <b>fragile(s)</b><sup>*</sup> face au covid-19 et/ou en situation de handicap
 
 
 
@@ -353,7 +352,7 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 
 ---
 
-<!---->Il ou elle a un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>actuellement</b>.
+<!---->Cette personne a un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>actuellement</b>.
 
 
 
@@ -373,7 +372,7 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 
 ---
 
-<!---->Il ou elle a noté un <b>manque de souffle inhabituel</b> lorsque il ou elle parle <em>ou</em> fait un petit effort <b>dans les dernières 24 heures</b>.
+<!---->Il ou elle a noté un <b>manque de souffle inhabituel</b> en parlant <em>ou</em> en faisant un petit effort <b>dans les dernières 24 heures</b>.
 
 
 
@@ -488,7 +487,7 @@ Des personnes croisées dans l’espace public de manière fugace ne sont pas co
 
 ---
 
-<!---->Il ou elle a partagé un espace confiné (bureau ou salle de réunion, véhicule personnel…) pendant au moins 15 minutes avec cette personne, ou il ou elle est resté en face à face avec elle durant plusieurs épisodes de toux ou d’éternuement
+<!---->Il ou elle a partagé un espace confiné (bureau ou salle de réunion, véhicule personnel…) pendant au moins 15 minutes avec cette personne, ou est resté en face à face avec elle durant plusieurs épisodes de toux ou d’éternuement
 
 
 
@@ -528,7 +527,7 @@ Des personnes croisées dans l’espace public de manière fugace ne sont pas co
 
 ---
 
-<!---->Il ou elle a été informé par l’application StopCovid qu’il ou elle a été en contact avec une personne testée positive au COVID-19
+<!---->Il ou elle a été informé par l’application StopCovid d’avoir été en contact avec une personne testée positive au COVID-19
 
 
 
@@ -548,7 +547,7 @@ Des personnes croisées dans l’espace public de manière fugace ne sont pas co
 
 ---
 
-<!---->Il ou elle a eu des <b>symptômes</b> qui peuvent évoquer le COVID <b>dans les 14 derniers jours</b>.
+<!---->Cette personne a eu des <b>symptômes</b> qui peuvent évoquer le COVID <b>dans les 14 derniers jours</b>.
 
 
 

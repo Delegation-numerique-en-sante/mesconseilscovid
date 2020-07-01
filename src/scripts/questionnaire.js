@@ -36,7 +36,7 @@ function activitepro(form, app, router) {
     })
     const uncheckedLabel = app.profil.estMonProfil()
         ? 'Je n’ai pas d’activité professionnelle ou bénévole'
-        : 'Il ou elle n’a pas d’activité professionnelle ou bénévole'
+        : 'Cette personne n’a pas d’activité professionnelle ou bénévole'
     formUtils.toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
@@ -149,7 +149,7 @@ function symptomesactuels(form, app, router) {
     })
     const uncheckedLabel = app.profil.estMonProfil()
         ? 'Je n’ai pas de symptômes actuellement'
-        : 'Il ou elle n’a pas de symptômes actuellement'
+        : 'Cette personne n’a pas de symptômes actuellement'
     const requiredLabel = 'Vous devez saisir l’un des sous-choix proposés'
     formUtils.toggleFormButtonOnCheckRequired(
         form,
@@ -206,7 +206,7 @@ function symptomespasses(form, app, router) {
     formUtils.preloadCheckboxForm(form, 'symptomes_passes', app.profil)
     const uncheckedLabel = app.profil.estMonProfil()
         ? 'Je n’ai pas eu de symptômes dans les 14 derniers jours'
-        : 'Il ou elle n’a pas eu de symptômes dans les 14 derniers jours'
+        : 'Cette personne n’a pas eu de symptômes dans les 14 derniers jours'
     formUtils.toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()

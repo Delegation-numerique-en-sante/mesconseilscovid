@@ -2,7 +2,7 @@
 Une personne considérée comme fragile face au covid-19 est une personne présentant au moins une des caractéristiques suivantes :  
 * avoir un âge > ou égal à 65 ans,
 * avoir une obésité, c’est-à-dire un indice de masse corporelle (IMC) > 30 kgm<sup>-2</sup>,
-* être une femme enceinte au 3<sup>e</sup> trimestre de grossesse, 
+* être enceinte au 3<sup>e</sup> trimestre de grossesse, 
 * ou avoir une ou plusieurs de ces conditions : 
   * maladie cardiovasculaire, 
   * diabète mal équilibré ou avec des complications (yeux, reins), 
