@@ -21,6 +21,9 @@ describe('Navigation générale', function () {
             redirectToUnansweredQuestions('nouvelleversiondisponible', {})
         )
     })
+    it('ok d’aller à la page de saisie du nom', function () {
+        assert.isUndefined(redirectToUnansweredQuestions('nom', {}))
+    })
 })
 
 describe('Navigation lieu de résidence', function () {

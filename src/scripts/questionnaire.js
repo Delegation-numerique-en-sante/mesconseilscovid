@@ -2,6 +2,19 @@ var affichage = require('./affichage.js')
 var formUtils = require('./formutils.js')
 var geoloc = require('./geoloc.js')
 
+function nom(form, app, router) {
+    var button = form.querySelector('input[type=submit]')
+    const requiredLabel = 'Cette information est requise'
+    formUtils.toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+        const nom = event.target.elements['nom'].value
+        app.basculerVersProfil(nom).then(() => {
+            router.navigate('residence')
+        })
+    })
+}
+
 function residence(form, app, router) {
     var button = form.querySelector('input[type=submit]')
     formUtils.preloadForm(form, 'departement', app.profil)
@@ -274,6 +287,7 @@ function contactarisque(form, app, router) {
 }
 
 module.exports = {
+    nom,
     residence,
     activitepro,
     foyer,

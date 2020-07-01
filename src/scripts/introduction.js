@@ -30,14 +30,13 @@ function page(element, app) {
                     <h3>Pour un proche</h3>
                     <div class="form-controls">
                         <a class="button button-full-width js-profil-new"
-                            href="#residence"
+                            href="#nom"
                             >Démarrer</a>
                     </div>
                 </div>
             `)
         )
         renderProfilCards(container, noms, app)
-        bindNewProfil(element.querySelector('.js-profil-new'), app)
     })
 }
 
@@ -90,21 +89,6 @@ function bindSuppression(element, app) {
                 })
             })
         }
-    })
-}
-
-function bindNewProfil(element, app) {
-    element.addEventListener('click', function (event) {
-        event.preventDefault()
-        var nom = prompt('Pour qui remplissez-vous ce questionnaire ?')
-        if (!nom || !nom.trim()) {
-            app.router.navigate('introduction')
-            return
-        }
-        app.basculerVersProfil(nom).then(() => {
-            var url = new URL(event.target.href)
-            app.router.navigate(url.hash)
-        })
     })
 }
 

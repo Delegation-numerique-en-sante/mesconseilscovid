@@ -158,6 +158,7 @@ main footer {
     background-size: 50%;
 }
 
+#nom-form,
 #residence-form,
 #activite-pro-form,
 #foyer-form,
@@ -223,6 +224,9 @@ main footer {
     }
 }
 
+#nom-form {
+    background-image: url('illustrations/nom.svg');
+}
 #residence-form,
 #conseils-departement h3 {
     background-image: url('illustrations/residence.svg');

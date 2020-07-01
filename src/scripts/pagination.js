@@ -10,6 +10,7 @@ var redirectToUnansweredQuestions = function (page, profil) {
     if (page === 'pediatrie') return
     if (page === 'conditionsutilisation') return
     if (page === 'nouvelleversiondisponible') return
+    if (page === 'nom') return
 
     // Questions obligatoires
 

@@ -59,6 +59,11 @@ function initRouter(app) {
             var element = pagination.loadPage(pageName)
             introduction.page(element, app)
         })
+        .on(new RegExp('^nom$'), function () {
+            var pageName = 'nom'
+            var form = pagination.loadPage(pageName, app)
+            questionnaire.nom(form, app, router)
+        })
         .on(new RegExp('^residence$'), function () {
             var pageName = 'residence'
             var form = pagination.loadPage(pageName, app)

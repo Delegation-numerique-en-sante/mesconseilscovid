@@ -277,6 +277,24 @@ Une personne considérée comme fragile face au covid-19 est une personne prése
 
 
 
+## [question_nom_aide.md](question_nom_aide.md)
+
+Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proches pour lesquels vous remplissez le questionnaire.
+
+
+
+## [question_nom_libellé.md](question_nom_libellé.md)
+
+<!---->Nom
+
+
+
+## [question_nom_titre.md](question_nom_titre.md)
+
+<!---->Nom du profil
+
+
+
 ## [question_résidence_libellé.md](question_résidence_libellé.md)
 
 <!---->Mon <b>département</b> de résidence actuel :
