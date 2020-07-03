@@ -14,9 +14,11 @@ install:  ## Install Python and JS dependencies.
 	python3 -m pip install -r requirements.txt
 	npm install
 
-test:  ## Run JS unit tests + links checker.
+test:  ## Run JS unit tests
 	npm run-script test
-	python3 test.py links
+
+check-links:
+	python3 check.py links
 
 lint:  ## Run ESLint.
 	npm run-script lint
@@ -25,7 +27,7 @@ build:  ## Build the index from `template.html` + contenus markdown files.
 	python3 build.py all
 	npm run-script build
 
-.PHONY: serve serve-ssl install test build
+.PHONY: serve serve-ssl install test check-links build help
 
 help:  ## Display this help.
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)

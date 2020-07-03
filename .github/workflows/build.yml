@@ -34,6 +34,10 @@ jobs:
         run: |
           make test
 
+      - name: Check links
+        run: |
+          make check-links
+
       - uses: actions/upload-artifact@v2
         with:
           name: mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}
