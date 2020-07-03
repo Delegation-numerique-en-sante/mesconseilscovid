@@ -42,6 +42,8 @@ jobs:
       - name: Check links
         run: |
           make check-links
+        env:
+          PYTHONUNBUFFERED: "1"
 
       - uses: actions/upload-artifact@v2
         with:
