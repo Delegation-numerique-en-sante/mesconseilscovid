@@ -18,6 +18,11 @@ jobs:
         with:
           python-version: 3.8
 
+      - name: Set up Node v14
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+
       - name: Install dependencies
         run: |
           make install
