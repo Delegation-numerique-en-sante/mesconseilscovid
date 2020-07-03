@@ -1,4 +1,4 @@
-var chai = require('chai')
+var assert = require('chai').assert
 
 var Profil = require('../profil.js')
 var profil = new Profil()
@@ -13,7 +13,7 @@ describe('Profil', function () {
     })
 
     it('Le questionnaire est vide par défaut', function () {
-        chai.expect(profil.getData()).to.deep.equal({
+        assert.deepEqual(profil.getData(), {
             departement: undefined,
             activite_pro: undefined,
             activite_pro_public: undefined,
@@ -54,7 +54,7 @@ describe('Profil', function () {
             contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
         })
-        chai.expect(profil.isComplete()).to.equal(false)
+        assert.isFalse(profil.isComplete())
     })
 
     it('Le questionnaire peut être partiellement rempli', function () {
@@ -62,8 +62,8 @@ describe('Profil', function () {
             departement: '01',
         }
         profil.fillData(data)
-        chai.expect(profil.getData()).to.include(data)
-        chai.expect(profil.isComplete()).to.equal(false)
+        assert.include(profil.getData(), data)
+        assert.isFalse(profil.isComplete())
     })
 
     it('Le questionnaire peut être partiellement vidé', function () {
@@ -72,7 +72,7 @@ describe('Profil', function () {
         }
         profil.fillData(data)
         profil.resetData()
-        chai.expect(profil.getData()).to.include({
+        assert.include(profil.getData(), {
             departement: undefined,
         })
     })
@@ -120,8 +120,8 @@ describe('Profil', function () {
             contact_a_risque_autre: true,
         }
         profil.fillData(data)
-        chai.expect(profil.getData()).to.deep.equal(data)
-        chai.expect(profil.isComplete()).to.equal(true)
+        assert.deepEqual(profil.getData(), data)
+        assert.isTrue(profil.isComplete())
     })
 
     it('Le questionnaire peut être complètement rempli mais âge < 15', function () {
@@ -167,8 +167,8 @@ describe('Profil', function () {
             contact_a_risque_autre: true,
         }
         profil.fillData(data)
-        chai.expect(profil.getData()).to.deep.equal(data)
-        chai.expect(profil.isComplete()).to.equal(false)
+        assert.deepEqual(profil.getData(), data)
+        assert.isFalse(profil.isComplete())
     })
 
     it('Le questionnaire peut être complètement vidé', function () {
@@ -215,7 +215,7 @@ describe('Profil', function () {
         }
         profil.fillData(data)
         profil.resetData()
-        chai.expect(profil.getData()).to.deep.equal({
+        assert.deepEqual(profil.getData(), {
             departement: undefined,
             activite_pro: undefined,
             activite_pro_public: undefined,
@@ -256,6 +256,6 @@ describe('Profil', function () {
             contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
         })
-        chai.expect(profil.isComplete()).to.equal(false)
+        assert.isFalse(profil.isComplete())
     })
 })

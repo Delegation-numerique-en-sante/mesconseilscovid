@@ -1,4 +1,4 @@
-var chai = require('chai')
+var assert = require('chai').assert
 
 var jsdom = require('jsdom')
 var { JSDOM } = jsdom
@@ -13,8 +13,8 @@ describe('affichage', function () {
 
         affichage.hideSelector(element, '.visible')
 
-        chai.expect(element.firstElementChild.className).to.equal('')
-        chai.expect(element.firstElementChild.hasAttribute('hidden')).to.equal(true)
+        assert.strictEqual(element.firstElementChild.className, '')
+        assert.isTrue(element.firstElementChild.hasAttribute('hidden'))
     })
 
     it('On peut afficher des éléments masqués', function () {
@@ -24,7 +24,7 @@ describe('affichage', function () {
 
         affichage.displayBlocks(element, ['foo'])
 
-        chai.expect(element.firstElementChild.className).to.equal('visible')
-        chai.expect(element.firstElementChild.hasAttribute('hidden')).to.equal(false)
+        assert.strictEqual(element.firstElementChild.className, 'visible')
+        assert.isFalse(element.firstElementChild.hasAttribute('hidden'))
     })
 })
