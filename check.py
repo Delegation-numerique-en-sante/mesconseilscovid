@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-import fnmatch
-import os
 from html.parser import HTMLParser
 from pathlib import Path
 from time import perf_counter
@@ -25,12 +23,12 @@ class LinkExtractor(HTMLParser):
 
 
 @cli
-def links():
+def links(timeout: int = 10):
     parser = LinkExtractor()
     content = open(HERE / "src" / "index.html").read()
     parser.feed(content)
     for link in parser.links:
-        response = httpx.get(link)
+        response = httpx.get(link, timeout=timeout)
         if response.status_code != HTTPStatus.OK:
             raise Exception(f"{link} is broken! ({response.status_code})")
 
