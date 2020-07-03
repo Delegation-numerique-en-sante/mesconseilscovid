@@ -1,4 +1,4 @@
-var chai = require('chai')
+var assert = require('chai').assert
 
 var jsdom = require('jsdom')
 var { JSDOM } = jsdom
@@ -23,7 +23,7 @@ describe('Injection', function () {
         element.innerHTML = `<b id="nom-departement"></b>`
         injection.departement(element.querySelector('#nom-departement'), '01')
 
-        chai.expect(element.innerHTML).to.equal(`<b id="nom-departement">Ain</b>`)
+        assert.strictEqual(element.innerHTML, `<b id="nom-departement">Ain</b>`)
     })
 
     it('Lien préfecture', function () {
@@ -34,9 +34,12 @@ describe('Injection', function () {
         `
         injection.lienPrefecture(element.querySelector('#lien-prefecture'), '01')
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <a href="http://www.ain.gouv.fr/strategie-locale-de-deconfinement-a6156.html" id="lien-prefecture">Site</a>
-        `)
+        `
+        )
     })
 
     it('Caractéristiques (âge)', function () {
@@ -56,9 +59,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans.</b>
-        `)
+        `
+        )
     })
 
     it('Caractéristiques (grossesse)', function () {
@@ -78,9 +84,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-caracteristiques">vous êtes au 3e trimestre de votre grossesse.</b>
-        `)
+        `
+        )
     })
 
     it('Caractéristiques (âge + grossesse = âge)', function () {
@@ -101,9 +110,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans.</b>
-        `)
+        `
+        )
     })
 
     it('Caractéristiques (IMC)', function () {
@@ -124,9 +136,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-caracteristiques">vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
-        `)
+        `
+        )
     })
 
     it('Caractéristiques (âge + IMC)', function () {
@@ -148,9 +163,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
-        `)
+        `
+        )
     })
 
     it('Caractéristiques (grossesse + IMC)', function () {
@@ -172,9 +190,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-caracteristiques">vous êtes au 3e trimestre de votre grossesse et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
-        `)
+        `
+        )
     })
 
     it('Antécédents (cardio)', function () {
@@ -191,9 +212,12 @@ describe('Injection', function () {
         var algorithme = new Algorithme(profil)
         injection.antecedents(element.querySelector('#nom-antecedents'), algorithme)
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-antecedents">Vous avez des antécédents à risque.</b>
-        `)
+        `
+        )
     })
 
     it('Antécédents (autres)', function () {
@@ -210,9 +234,12 @@ describe('Injection', function () {
         var algorithme = new Algorithme(profil)
         injection.antecedents(element.querySelector('#nom-antecedents'), algorithme)
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-antecedents">Vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</b>
-        `)
+        `
+        )
     })
 
     it('Antécédents (cardio + autres)', function () {
@@ -230,9 +257,12 @@ describe('Injection', function () {
         var algorithme = new Algorithme(profil)
         injection.antecedents(element.querySelector('#nom-antecedents'), algorithme)
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-antecedents">Vous avez des antécédents à risque et vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</b>
-        `)
+        `
+        )
     })
 
     it('Symptômes actuels (température)', function () {
@@ -253,9 +283,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas).</b>
-        `)
+        `
+        )
     })
 
     it('Symptômes actuels (température inconnue)', function () {
@@ -276,9 +309,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas).</b>
-        `)
+        `
+        )
     })
 
     it('Symptômes actuels (toux)', function () {
@@ -299,9 +335,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-symptomesactuels">vous avez de la toux.</b>
-        `)
+        `
+        )
     })
 
     it('Symptômes actuels (température + toux)', function () {
@@ -323,9 +362,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas)&nbsp;; vous avez de la toux.</b>
-        `)
+        `
+        )
     })
 
     it('Symptômes actuels (odorat)', function () {
@@ -346,9 +388,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-symptomesactuels">vous avez perdu l’odorat.</b>
-        `)
+        `
+        )
     })
 
     it('Symptômes actuels (douleurs)', function () {
@@ -369,9 +414,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-symptomesactuels">vous avez des douleurs.</b>
-        `)
+        `
+        )
     })
 
     it('Symptômes actuels (diarrhée)', function () {
@@ -392,9 +440,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-symptomesactuels">vous avez de la diarrhée.</b>
-        `)
+        `
+        )
     })
 
     it('Symptômes actuels (fatigue)', function () {
@@ -415,9 +466,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-symptomesactuels">vous êtes fatigué·e.</b>
-        `)
+        `
+        )
     })
 
     it('Symptômes actuels (alimentation)', function () {
@@ -438,9 +492,12 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-symptomesactuels">vous avez arrêté de boire ou de manger.</b>
-        `)
+        `
+        )
     })
 
     it('Symptômes actuels (souffle)', function () {
@@ -461,8 +518,11 @@ describe('Injection', function () {
             algorithme
         )
 
-        chai.expect(element.innerHTML).to.equal(`
+        assert.strictEqual(
+            element.innerHTML,
+            `
             <b id="nom-symptomesactuels">vous êtes essouflé·e.</b>
-        `)
+        `
+        )
     })
 })

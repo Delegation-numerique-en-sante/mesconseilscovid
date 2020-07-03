@@ -1,34 +1,36 @@
-var chai = require('chai')
+var assert = require('chai').assert
 
 var carteDepartements = require('../carte.js')
 
 describe('Carte départements', function () {
     it('Il y a le bon nombre de noms', function () {
-        chai.expect(Object.keys(carteDepartements._noms).length).to.equal(104)
+        assert.strictEqual(Object.keys(carteDepartements._noms).length, 104)
     })
     it('On récupère le nom depuis le département', function () {
-        chai.expect(carteDepartements.nom('01')).to.equal('Ain')
+        assert.strictEqual(carteDepartements.nom('01'), 'Ain')
     })
     it('Il y a (presque) le bon nombre de couleurs', function () {
         // Manque Saint-Pierre-et-Miquelon, Saint-Barthélemy et Saint-Martin.
-        chai.expect(Object.keys(carteDepartements._couleurs).length).to.equal(101)
+        assert.strictEqual(Object.keys(carteDepartements._couleurs).length, 101)
     })
     it('On récupère la couleur verte depuis le département', function () {
-        chai.expect(carteDepartements.couleur('01')).to.equal('vert')
+        assert.strictEqual(carteDepartements.couleur('01'), 'vert')
     })
     it('On récupère la couleur orange depuis le département', function () {
-        chai.expect(carteDepartements.couleur('973')).to.equal('orange')
+        assert.strictEqual(carteDepartements.couleur('973'), 'orange')
     })
     it('On récupère la couleur inconnue si on n’a pas la donnée', function () {
-        chai.expect(carteDepartements.couleur('977')).to.equal('inconnue')
+        assert.strictEqual(carteDepartements.couleur('977'), 'inconnue')
     })
     it('Il y a le bon nombre de liens vers les préféctures', function () {
-        chai.expect(Object.keys(carteDepartements._liens_prefectures).length).to.equal(
+        assert.strictEqual(
+            Object.keys(carteDepartements._liens_prefectures).length,
             104
         )
     })
     it('On récupère le lien vers la préfecture depuis le département', function () {
-        chai.expect(carteDepartements.lien_prefecture('01')).to.equal(
+        assert.strictEqual(
+            carteDepartements.lien_prefecture('01'),
             'http://www.ain.gouv.fr/strategie-locale-de-deconfinement-a6156.html'
         )
     })
