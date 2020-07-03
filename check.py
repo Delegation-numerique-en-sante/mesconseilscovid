@@ -27,7 +27,8 @@ def links(timeout: int = 10):
     parser = LinkExtractor()
     content = open(HERE / "src" / "index.html").read()
     parser.feed(content)
-    for link in parser.links:
+    for link in sorted(parser.links):
+        print(link)
         response = httpx.get(link, timeout=timeout)
         if response.status_code != HTTPStatus.OK:
             raise Exception(f"{link} is broken! ({response.status_code})")
