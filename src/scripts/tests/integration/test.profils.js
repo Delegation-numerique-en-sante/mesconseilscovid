@@ -3,7 +3,7 @@ const playwright = require('playwright')
 const http = require('http')
 const nodeStatic = require('node-static')
 
-describe('Scénarios navigateur', function () {
+describe('Profils', function () {
     // Lance un serveur HTTP
     let server
     before(() => {
@@ -41,15 +41,7 @@ describe('Scénarios navigateur', function () {
         await page.close()
     })
 
-    it('titre de la page', async () => {
-        await page.goto('http://localhost:8080/')
-        assert.equal(
-            await page.title(),
-            'Mes conseils Covid — Des conseils personnalisés pour agir contre le virus'
-        )
-    })
-
-    it('remplir le questionnaire', async () => {
+    it('remplir le questionnaire pour un proche', async () => {
         // On est redirigé vers l’introduction
         await Promise.all([
             page.goto('http://localhost:8080/'),
@@ -58,13 +50,28 @@ describe('Scénarios navigateur', function () {
 
         // Page d’accueil
         {
-            let bouton = await page.waitForSelector('text="Démarrer"')
+            let bouton = await page.waitForSelector('.js-profil-new >> text="Démarrer"')
             assert.equal(
                 await bouton.evaluate(
                     (e) => e.parentElement.parentElement.querySelector('h3').innerText
                 ),
-                'Pour moi'
+                'Pour un proche'
             )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#nom' }),
+            ])
+        }
+
+        // Saisie nom
+        {
+            let titre = await page.$('#page legend')
+            assert.equal(
+                (await titre.innerText()).trim(),
+                'Nom du profil'
+            )
+            await page.fill('#page #nom', 'Mamie')
+            let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
                 page.waitForNavigation({ url: '**/#residence' }),
@@ -76,7 +83,7 @@ describe('Scénarios navigateur', function () {
             let titre = await page.$('#page legend')
             assert.equal(
                 (await titre.innerText()).trim(),
-                '1/8 - Mon lieu de résidence'
+                '1/8 - Son lieu de résidence'
             )
             await page.selectOption('#page select#departement', '80')
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
@@ -127,7 +134,7 @@ describe('Scénarios navigateur', function () {
         // Questionnaire 5/8
         {
             let bouton = await page.waitForSelector(
-                '#page >> text="Aucun de ces éléments ne correspond à ma situation"'
+                '#page >> text="Aucun de ces éléments ne correspond à sa situation"'
             )
             await Promise.all([
                 bouton.click(),
@@ -138,7 +145,7 @@ describe('Scénarios navigateur', function () {
         // Questionnaire 6/8
         {
             let bouton = await page.waitForSelector(
-                '#page >> text="Je n’ai pas de symptômes actuellement"'
+                '#page >> text="Cette personne n’a pas de symptômes actuellement"'
             )
             await Promise.all([
                 bouton.click(),
@@ -151,10 +158,10 @@ describe('Scénarios navigateur', function () {
             let titre = await page.$('#page legend')
             assert.equal(
                 (await titre.innerText()).trim(),
-                '7/8 - Mon état ces 14 derniers jours'
+                '7/8 - Son état ces 14 derniers jours'
             )
             let bouton = await page.waitForSelector(
-                '#page >> text="Je n’ai pas eu de symptômes dans les 14 derniers jours"' // &nbsp; après le 14
+                '#page >> text="Cette personne n’a pas eu de symptômes dans les 14 derniers jours"' // &nbsp; après le 14
             )
             await Promise.all([
                 bouton.click(),
@@ -165,7 +172,7 @@ describe('Scénarios navigateur', function () {
         // Questionnaire 8/8
         {
             let titre = await page.$('#page legend')
-            assert.equal((await titre.innerText()).trim(), '8/8 - Mes contacts récents')
+            assert.equal((await titre.innerText()).trim(), '8/8 - Ses contacts récents')
             let bouton = await page.waitForSelector('#page >> text="Terminer"')
             await Promise.all([
                 bouton.click(),
@@ -175,6 +182,10 @@ describe('Scénarios navigateur', function () {
 
         // Conseils
         {
+            // On retrouve le titre explicite
+            let titre = await page.$('#page #conseils-block-titre')
+            assert.equal(await titre.innerText(), 'Conseils pour « Mamie »') // &nbsp; autour du nom
+
             // On retrouve le département de résidence
             let residence = await page.$('#page #nom-departement')
             assert.equal(await residence.innerText(), 'Somme')
