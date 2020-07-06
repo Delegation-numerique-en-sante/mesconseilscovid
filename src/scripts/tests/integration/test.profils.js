@@ -66,10 +66,7 @@ describe('Profils', function () {
         // Saisie nom
         {
             let titre = await page.$('#page legend')
-            assert.equal(
-                (await titre.innerText()).trim(),
-                'Nom du profil'
-            )
+            assert.equal((await titre.innerText()).trim(), 'Nom du profil')
             await page.fill('#page #nom', 'Mamie')
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
@@ -195,6 +192,26 @@ describe('Profils', function () {
             assert.equal(
                 (await activite.innerText()).trim(),
                 'Vous exercez une activité professionnelle et/ou bénévole (modifier)'
+            )
+
+            let bouton = await page.waitForSelector(
+                '#page >> text="Refaire le questionnaire"'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#introduction' }),
+            ])
+        }
+
+        // Introduction
+        {
+            // La page comporte maintenant un lien direct vers ses conseils
+            let bouton = await page.waitForSelector('#page >> text="Voir ses conseils"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Mamie'
             )
         }
     })

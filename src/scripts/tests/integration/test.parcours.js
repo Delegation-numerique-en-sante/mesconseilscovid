@@ -49,7 +49,7 @@ describe('Parcours', function () {
         )
     })
 
-    it('remplir le questionnaire', async () => {
+    it('remplir le questionnaire classique', async () => {
         // On est redirigé vers l’introduction
         await Promise.all([
             page.goto('http://localhost:8080/'),
@@ -184,6 +184,25 @@ describe('Parcours', function () {
             assert.equal(
                 (await activite.innerText()).trim(),
                 'Vous exercez une activité professionnelle et/ou bénévole (modifier)'
+            )
+            let bouton = await page.waitForSelector(
+                '#page >> text="Refaire le questionnaire"'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#introduction' }),
+            ])
+        }
+
+        // Introduction
+        {
+            // La page comporte maintenant un lien direct vers mes conseils
+            let bouton = await page.waitForSelector('#page >> text="Voir mes conseils"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Moi'
             )
         }
     })
@@ -410,9 +429,7 @@ describe('Parcours', function () {
             let label
             label = await page.waitForSelector('#page label[for="symptomes_passes"]')
             await label.click()
-            let bouton = await page.waitForSelector(
-                '#page >> text="Terminer"'
-            )
+            let bouton = await page.waitForSelector('#page >> text="Terminer"')
             await Promise.all([
                 bouton.click(),
                 page.waitForNavigation({ url: '**/#conseils' }),
