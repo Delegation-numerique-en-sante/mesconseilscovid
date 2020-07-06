@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-07-06
+
+* mise à jour de liens cassés sur le site du gouvernement
+
 ## 2020-06-26
 
 * amélioration de l’expérience pour l’installation sur mobile (PWA)
