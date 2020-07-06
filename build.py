@@ -58,18 +58,18 @@ def index():
     render_template("template.html", SRC_DIR / "index.html", **responses)
 
 
-def me_or_you(value):
+def me_or_them(value):
     separator = "<hr />"
     if separator in value:
-        me, you = value.split(separator)
+        me, them = value.split(separator)
         value = (
-            f'<span class="me visible">{me}</span><span class="you" hidden>{you}</span>'
+            f'<span class="me visible">{me}</span><span class="them" hidden>{them}</span>'
         )
     return value
 
 
 def render_template(src, output, **context):
-    jinja_env.filters["me_or_you"] = me_or_you
+    jinja_env.filters["me_or_them"] = me_or_them
     template = jinja_env.get_template(src)
     content = template.render(**context,)
     output.open("w").write(content)
