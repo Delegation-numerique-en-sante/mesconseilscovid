@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "mocha --timeout 5000 src/scripts/tests/",
-    "lint": "eslint src/scripts/",
+    "lint": "eslint src/scripts/ src/service-worker.js",
     "prebuild": "rm -rf dist",
     "build": "parcel build src/index.html"
   },
