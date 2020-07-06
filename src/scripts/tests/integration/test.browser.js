@@ -1,5 +1,5 @@
 const assert = require('assert')
-const { chromium } = require('playwright')
+const playwright = require('playwright')
 const http = require('http')
 const nodeStatic = require('node-static')
 
@@ -24,7 +24,9 @@ describe('Scénarios navigateur', function () {
     // Lance un navigateur « headless »
     let browser
     before(async () => {
-        browser = await chromium.launch({ headless: true })
+        browser = await playwright[process.env.npm_config_browser].launch({
+            headless: true,
+        })
     })
     after(async () => {
         await browser.close()
@@ -72,7 +74,10 @@ describe('Scénarios navigateur', function () {
         // Questionnaire 1/8
         {
             let titre = await page.$('#page legend')
-            assert.equal(await titre.innerText(), '1/8 - Mon lieu de résidence')
+            assert.equal(
+                (await titre.innerText()).trim(),
+                '1/8 - Mon lieu de résidence'
+            )
             await page.selectOption('#page select#departement', '80')
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
@@ -145,7 +150,7 @@ describe('Scénarios navigateur', function () {
         {
             let titre = await page.$('#page legend')
             assert.equal(
-                await titre.innerText(),
+                (await titre.innerText()).trim(),
                 '7/8 - Mon état ces 14 derniers jours'
             )
             let bouton = await page.waitForSelector(
@@ -160,7 +165,7 @@ describe('Scénarios navigateur', function () {
         // Questionnaire 8/8
         {
             let titre = await page.$('#page legend')
-            assert.equal(await titre.innerText(), '8/8 - Mes contacts récents')
+            assert.equal((await titre.innerText()).trim(), '8/8 - Mes contacts récents')
             let bouton = await page.waitForSelector('#page >> text="Terminer"')
             await Promise.all([
                 bouton.click(),
@@ -177,7 +182,7 @@ describe('Scénarios navigateur', function () {
             // On retrouve l’activité
             let activite = await page.$('#page #reponse-activite-pro')
             assert.equal(
-                await activite.innerText(),
+                (await activite.innerText()).trim(),
                 'Vous exercez une activité professionnelle et/ou bénévole (modifier)'
             )
         }

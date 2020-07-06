@@ -16,6 +16,9 @@ install:  ## Install Python and JS dependencies.
 
 test:  ## Run JS unit tests.
 	npm run-script test
+	npm run-script --browser=chromium test-integration
+	npm run-script --browser=firefox test-integration
+	npm run-script --browser=webkit test-integration
 
 check-links:  # Check that links to external pages are still valid.
 	python3 check.py links

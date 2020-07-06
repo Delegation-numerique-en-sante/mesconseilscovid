@@ -17,7 +17,8 @@
     "navigo": "^7.1.2"
   },
   "scripts": {
-    "test": "mocha --timeout 5000 src/scripts/tests/",
+    "test": "mocha src/scripts/tests/",
+    "test-integration": "mocha --timeout 10000 src/scripts/tests/integration/",
     "lint": "eslint src/scripts/ src/service-worker.js",
     "prebuild": "rm -rf dist",
     "build": "parcel build src/index.html"
