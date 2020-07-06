@@ -7,7 +7,7 @@ hstspreload==2020.6.23
 httpcore==0.9.1
 httpx==0.13.3
 hyperframe==5.2.0
-idna==2.9
+idna==2.10
 Jinja2==2.11.2
 livereload==2.6.2
 MarkupSafe==1.1.1
