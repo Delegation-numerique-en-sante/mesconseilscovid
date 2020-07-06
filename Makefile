@@ -20,6 +20,11 @@ test:  ## Run JS unit tests.
 	npm run-script --browser=firefox test-integration
 	npm run-script --browser=webkit test-integration
 
+test-unit:  ## Run JS unit tests matching a given pattern/browser engine.
+	# Usage: make test-unit browser=webkit grep=proche
+	npm run-script test -- --grep $(grep)
+	npm run-script --browser=$(browser) test-integration -- --grep $(grep)
+
 check-links:  # Check that links to external pages are still valid.
 	python3 check.py links
 
