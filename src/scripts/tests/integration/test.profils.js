@@ -65,7 +65,7 @@ describe('Profils', function () {
 
         // Saisie nom
         {
-            let titre = await page.$('#page legend')
+            let titre = await page.waitForSelector('#page legend')
             assert.equal((await titre.innerText()).trim(), 'Nom du profil')
             await page.fill('#page #nom', 'Mamie')
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
@@ -77,7 +77,7 @@ describe('Profils', function () {
 
         // Questionnaire 1/8
         {
-            let titre = await page.$('#page legend')
+            let titre = await page.waitForSelector('#page legend')
             assert.equal(
                 (await titre.innerText()).trim(),
                 '1/8 - Son lieu de résidence'
@@ -152,7 +152,7 @@ describe('Profils', function () {
 
         // Questionnaire 7/8
         {
-            let titre = await page.$('#page legend')
+            let titre = await page.waitForSelector('#page legend')
             assert.equal(
                 (await titre.innerText()).trim(),
                 '7/8 - Son état ces 14 derniers jours'
@@ -168,7 +168,7 @@ describe('Profils', function () {
 
         // Questionnaire 8/8
         {
-            let titre = await page.$('#page legend')
+            let titre = await page.waitForSelector('#page legend')
             assert.equal((await titre.innerText()).trim(), '8/8 - Ses contacts récents')
             let bouton = await page.waitForSelector('#page >> text="Terminer"')
             await Promise.all([
@@ -180,15 +180,15 @@ describe('Profils', function () {
         // Conseils
         {
             // On retrouve le titre explicite
-            let titre = await page.$('#page #conseils-block-titre')
+            let titre = await page.waitForSelector('#page #conseils-block-titre')
             assert.equal(await titre.innerText(), 'Conseils pour « Mamie »') // &nbsp; autour du nom
 
             // On retrouve le département de résidence
-            let residence = await page.$('#page #nom-departement')
+            let residence = await page.waitForSelector('#page #nom-departement')
             assert.equal(await residence.innerText(), 'Somme')
 
             // On retrouve l’activité
-            let activite = await page.$('#page #reponse-activite-pro')
+            let activite = await page.waitForSelector('#page #reponse-activite-pro')
             assert.equal(
                 (await activite.innerText()).trim(),
                 'Vous exercez une activité professionnelle et/ou bénévole (modifier)'
