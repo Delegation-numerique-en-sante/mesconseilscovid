@@ -9,7 +9,7 @@ function page(element, app) {
         if (noms.length) {
             affichage.hideElement(element.querySelector('.js-intro'))
         }
-        if (!noms.includes('mes_infos')) {
+        if (noms.indexOf('mes_infos') === -1) {
             const card = container.appendChild(
                 affichage.createElementFromHTML(`
                     <div class="profil-card card">
