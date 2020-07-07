@@ -73,7 +73,8 @@ var loadPage = function (pageName, app) {
     var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
 
     if (app && !app.profil.estMonProfil()) {
-        Array.from(element.querySelectorAll('.me')).forEach((meElement) => {
+        // eslint-disable-next-line no-extra-semi
+        ;[].forEach.call(element.querySelectorAll('.me'), (meElement) => {
             affichage.hideElement(meElement)
             affichage.showElement(meElement.nextSibling)
         })

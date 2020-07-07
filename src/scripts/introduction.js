@@ -57,7 +57,7 @@ function renderProfilCards(container, noms, app) {
             }
 
             const profilLinks = card.querySelectorAll('[data-set-profil]')
-            Array.from(profilLinks).forEach((profilLink) => {
+            ;[].forEach.call(profilLinks, (profilLink) => {
                 bindChangeProfil(profilLink, app)
             })
 
