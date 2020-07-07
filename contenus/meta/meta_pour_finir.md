@@ -14,7 +14,7 @@ N’hésitez pas à mettre cette page en favori pour **y revenir plus tard**. Pa
 </div>
 <div class="icon icon-impression">
 
-Vous pouvez <a class="js-impression" href="">imprimer ces conseils</a> pour **les garder avec vous** ou les partager avec vos proches.
+Vous pouvez <a class="js-impression" href="">imprimer ces conseils</a> pour **les garder avec vous** ou les **envoyer à vos proches**.
 
 </div>
 <div class="icon icon-suppression">
