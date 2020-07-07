@@ -137,6 +137,9 @@ a .profil {
     flex-flow: row wrap;
     justify-content: center;
 }
+.block ul.cards {
+    padding: 0;
+}
 .card {
     border: thin solid #ccc;
     border-radius: 0.5rem;
