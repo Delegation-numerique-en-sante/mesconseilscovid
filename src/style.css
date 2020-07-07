@@ -77,6 +77,22 @@ main {
     padding: 18px 15px 48px 15px;
 }
 
+.nouveau-profil {
+    background-image: url('plus-circle.svg');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding: 10px 24px 9px 40px;
+}
+.profil {
+    background-image: url('user-circle.svg');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding: 10px 24px 9px 40px;
+}
+a .profil {
+    background-image: url('user-circle-blue.svg');
+}
+
 .block {
     background-color: #ffffff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);

@@ -13,7 +13,7 @@ function page(element, app) {
             const card = container.appendChild(
                 affichage.createElementFromHTML(`
                     <div class="profil-card card">
-                        <h3>Pour moi</h3>
+                        <h3><span class="nouveau-profil">Pour moi</span></h3>
                         <div class="form-controls">
                             <a class="button button-full-width"
                                 data-set-profil="mes_infos" href="#residence"
@@ -27,7 +27,7 @@ function page(element, app) {
         container.appendChild(
             affichage.createElementFromHTML(`
                 <div class="profil-card card">
-                    <h3>Pour un proche</h3>
+                    <h3><span class="nouveau-profil">Pour un proche</span></h3>
                     <div class="form-controls">
                         <a class="button button-full-width js-profil-new"
                             href="#nom"

@@ -200,7 +200,7 @@ class Profil {
     }
 
     renderNom() {
-        return affichage.safeHtml`<h3>${this.affichageNom()}</h3>`
+        return affichage.safeHtml`<h3><span class="profil">${this.affichageNom()}</span></h3>`
     }
 
     renderButtons() {
