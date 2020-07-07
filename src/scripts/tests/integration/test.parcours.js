@@ -73,11 +73,6 @@ describe('Parcours', function () {
 
         // Questionnaire 1/8
         {
-            let titre = await page.waitForSelector('#page legend')
-            assert.equal(
-                (await titre.innerText()).trim(),
-                '1/8 - Mon lieu de résidence'
-            )
             await page.selectOption('#page select#departement', '80')
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
@@ -148,11 +143,6 @@ describe('Parcours', function () {
 
         // Questionnaire 7/8
         {
-            let titre = await page.waitForSelector('#page legend')
-            assert.equal(
-                (await titre.innerText()).trim(),
-                '7/8 - Mon état ces 14 derniers jours'
-            )
             let bouton = await page.waitForSelector(
                 '#page >> text="Je n’ai pas eu de symptômes dans les 14 derniers jours"' // &nbsp; après le 14
             )
@@ -164,8 +154,6 @@ describe('Parcours', function () {
 
         // Questionnaire 8/8
         {
-            let titre = await page.waitForSelector('#page legend')
-            assert.equal((await titre.innerText()).trim(), '8/8 - Mes contacts récents')
             let bouton = await page.waitForSelector('#page >> text="Terminer"')
             await Promise.all([
                 bouton.click(),
@@ -231,11 +219,6 @@ describe('Parcours', function () {
 
         // Questionnaire 1/8
         {
-            let titre = await page.waitForSelector('#page legend')
-            assert.equal(
-                (await titre.innerText()).trim(),
-                '1/8 - Mon lieu de résidence'
-            )
             await page.selectOption('#page select#departement', '80')
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
@@ -315,7 +298,8 @@ describe('Parcours', function () {
             // On retrouve le message de porteur éventuel
             let statut = await page.waitForSelector('#page #statut-symptomatique')
             assert.equal(
-                (await statut.innerText()).trim(), 'Vous êtes peut-être porteur du COVID-19.'
+                (await statut.innerText()).trim(),
+                'Vous êtes peut-être porteur du COVID-19.'
             )
         }
     })
@@ -344,11 +328,6 @@ describe('Parcours', function () {
 
         // Questionnaire 1/8
         {
-            let titre = await page.waitForSelector('#page legend')
-            assert.equal(
-                (await titre.innerText()).trim(),
-                '1/8 - Mon lieu de résidence'
-            )
             await page.selectOption('#page select#departement', '80')
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
@@ -426,7 +405,9 @@ describe('Parcours', function () {
         // Conseils
         {
             // On retrouve le message d’appel du SAMU
-            let statut = await page.waitForSelector('#page #statut-symptomatique-urgent')
+            let statut = await page.waitForSelector(
+                '#page #statut-symptomatique-urgent'
+            )
             assert.equal(
                 (await statut.innerText()).trim().startsWith('Appelez le SAMU / 15'),
                 true
@@ -458,11 +439,6 @@ describe('Parcours', function () {
 
         // Questionnaire 1/8
         {
-            let titre = await page.waitForSelector('#page legend')
-            assert.equal(
-                (await titre.innerText()).trim(),
-                '1/8 - Mon lieu de résidence'
-            )
             await page.selectOption('#page select#departement', '80')
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
@@ -533,11 +509,6 @@ describe('Parcours', function () {
 
         // Questionnaire 7/8
         {
-            let titre = await page.waitForSelector('#page legend')
-            assert.equal(
-                (await titre.innerText()).trim(),
-                '7/8 - Mon état ces 14 derniers jours'
-            )
             // Je n’arrive pas à cocher la case directement, alors je clique sur le label
             let label
             label = await page.waitForSelector('#page label[for="symptomes_passes"]')

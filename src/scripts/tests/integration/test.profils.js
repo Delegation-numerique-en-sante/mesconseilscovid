@@ -65,8 +65,6 @@ describe('Profils', function () {
 
         // Saisie nom
         {
-            let titre = await page.waitForSelector('#page legend')
-            assert.equal((await titre.innerText()).trim(), 'Nom du profil')
             await page.fill('#page #nom', 'Mamie')
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
@@ -77,11 +75,6 @@ describe('Profils', function () {
 
         // Questionnaire 1/8
         {
-            let titre = await page.waitForSelector('#page legend')
-            assert.equal(
-                (await titre.innerText()).trim(),
-                '1/8 - Son lieu de résidence'
-            )
             await page.selectOption('#page select#departement', '80')
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
@@ -152,11 +145,6 @@ describe('Profils', function () {
 
         // Questionnaire 7/8
         {
-            let titre = await page.waitForSelector('#page legend')
-            assert.equal(
-                (await titre.innerText()).trim(),
-                '7/8 - Son état ces 14 derniers jours'
-            )
             let bouton = await page.waitForSelector(
                 '#page >> text="Cette personne n’a pas eu de symptômes dans les 14 derniers jours"' // &nbsp; après le 14
             )
@@ -168,8 +156,6 @@ describe('Profils', function () {
 
         // Questionnaire 8/8
         {
-            let titre = await page.waitForSelector('#page legend')
-            assert.equal((await titre.innerText()).trim(), '8/8 - Ses contacts récents')
             let bouton = await page.waitForSelector('#page >> text="Terminer"')
             await Promise.all([
                 bouton.click(),
