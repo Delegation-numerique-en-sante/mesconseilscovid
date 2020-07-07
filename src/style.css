@@ -162,7 +162,7 @@ a .profil {
 }
 
 main footer {
-    font-size: .8rem;
+    font-size: 0.8rem;
     text-align: center;
 }
 
@@ -303,7 +303,7 @@ main footer {
 
 .statut {
     font-size: 1.2rem;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     border: 4px solid;
     text-align: center;
     margin: 3rem auto 6rem;
@@ -319,7 +319,7 @@ main footer {
     border-color: #ff9940;
 }
 .statut-foyer-fragile {
-    background: #fdE7a0;
+    background: #fde7a0;
     border-color: #fdcf41;
 }
 .statut-peu-de-risques {
@@ -329,7 +329,7 @@ main footer {
 
 .conseil {
     background: #d5dbef;
-    padding: .1rem 1rem;
+    padding: 0.1rem 1rem;
     border-left: 5px solid #000091;
 }
 .conseil-orange {
@@ -396,7 +396,7 @@ fieldset .details {
 }
 fieldset .details ul {
     margin-top: 0;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
 }
 fieldset .details p {
     margin-top: 0;
@@ -429,7 +429,7 @@ fieldset ul.details {
 }
 .form-controls .back-button {
     margin-top: 2rem;
-    background-image: url("arrow-left.svg");
+    background-image: url('arrow-left.svg');
     background-position: 10px center;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -503,13 +503,12 @@ p.extra-button {
     max-width: 100%;
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 680px),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 680px),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 680px),
-only screen and (        min-device-pixel-ratio: 2)      and (min-width: 680px),
-only screen and (                min-resolution: 192dpi) and (min-width: 680px),
-only screen and (                min-resolution: 2dppx)  and (min-width: 680px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 680px),
+    only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 680px),
+    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 680px),
+    only screen and (min-device-pixel-ratio: 2) and (min-width: 680px),
+    only screen and (min-resolution: 192dpi) and (min-width: 680px),
+    only screen and (min-resolution: 2dppx) and (min-width: 680px) {
     .form-controls {
         flex-direction: row;
         align-items: baseline;
@@ -529,7 +528,6 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 680px) 
     }
 }
 
-
 /* Nicer select, based on https://github.com/filamentgroup/select-css */
 select {
     background-image: url('select.svg');
@@ -539,78 +537,75 @@ select {
 }
 
 input[type='checkbox'] {
-  position: absolute;
+    position: absolute;
 }
 
 input[type='checkbox'] + label {
-  display: block;
-  position: relative;
-  padding: 0 1.5rem;
-  margin-top: 2rem;
-  display: flex;
+    display: block;
+    position: relative;
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+    display: flex;
 }
 
 input[type='checkbox'] + label::before {
-  content: '';
-  position: relative;
-  display: inline-block;
-  margin-right: 10px;
-  margin-left: -2rem;
-  width: 1.2rem;
-  height: 1.2rem;
-  background: white;
-  border: 2px solid #000091;
+    content: '';
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: -2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: white;
+    border: 2px solid #000091;
 }
 
 input[type='checkbox'] + label span {
-  flex-shrink: 20;
+    flex-shrink: 20;
 }
 
 input[type='checkbox']:checked + label::before {
-  background: #000091;
+    background: #000091;
 }
 input[type='checkbox']:checked + label::after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: calc(28px - 2rem);
-  border-left: 3px solid white;
-  border-bottom: 3px solid white;
-  height: 6px;
-  width: 13px;
-  transform: rotate(-45deg);
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: calc(28px - 2rem);
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    height: 6px;
+    width: 13px;
+    transform: rotate(-45deg);
 }
 input[type='checkbox']:focus + label::before {
-  outline: #5d9dd5 solid 1px;
-  box-shadow: 0 0px 8px #5e9ed6;
+    outline: #5d9dd5 solid 1px;
+    box-shadow: 0 0px 8px #5e9ed6;
 }
 
 input[type='checkbox'] {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
 }
 
-
 input[type='checkbox']:disabled + label {
-  color: #575757;
+    color: #575757;
 }
 
 input[type='checkbox']:disabled + label::before {
-  background: #ddd;
+    background: #ddd;
 }
 
 input[type='submit']:disabled {
-  color: black;
-  background: #ddd;
-  border-color: black;
-  cursor: not-allowed;
+    color: black;
+    background: #ddd;
+    border-color: black;
+    cursor: not-allowed;
 }
-
-
 
 .button:hover,
 .back-button:hover {
@@ -632,13 +627,13 @@ a#geolocalisation {
     display: block;
     width: 2rem;
     height: 2rem;
-    background-image: url("map-marker2.svg");
+    background-image: url('map-marker2.svg');
     background-size: contain;
 }
 
 .reponse {
     color: #494e77;
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-bottom: 1rem;
 }
 
@@ -721,5 +716,4 @@ a#geolocalisation {
     footer {
         display: none;
     }
-
 }
