@@ -50,6 +50,7 @@ header {
 }
 header section {
     display: flex;
+    align-items: center;
 }
 header img {
     width: 100px;
