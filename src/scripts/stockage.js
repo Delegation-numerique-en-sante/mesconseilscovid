@@ -7,9 +7,7 @@ class StockageLocal {
     }
 
     getProfilActuel() {
-        return localforage.getItem('profil').then((value) => {
-            return value || 'mes_infos'
-        })
+        return localforage.getItem('profil')
     }
 
     setProfilActuel(nom) {
@@ -56,9 +54,6 @@ class StockageLocal {
                     `Erreur lors de la suppression des données personnelles (${nom})`
                 )
                 console.error(error)
-            })
-            .then(() => {
-                return this.setProfilActuel('mes_infos')
             })
     }
 

@@ -15,7 +15,7 @@ var redirectToUnansweredQuestions = function (page, profil) {
     // Questions obligatoires
 
     if (typeof profil.departement === 'undefined' && page !== 'residence')
-        return 'introduction' // aucune réponse = retour à l’accueil
+        return 'residence'
 
     if (page === 'residence') return
 

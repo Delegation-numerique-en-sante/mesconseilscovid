@@ -22,7 +22,7 @@ function page(element, app) {
                     </div>
                 `)
             )
-            bindChangeProfil(card.querySelector('[data-set-profil]'), app)
+            bindCreateProfil(card.querySelector('[data-set-profil]'), app)
         }
         container.appendChild(
             affichage.createElementFromHTML(`
@@ -66,10 +66,18 @@ function renderProfilCards(container, noms, app) {
     })
 }
 
+function bindCreateProfil(element, app) {
+    return _bindFunc(element, app, app.creerProfil.bind(app))
+}
+
 function bindChangeProfil(element, app) {
+    return _bindFunc(element, app, app.basculerVersProfil.bind(app))
+}
+
+function _bindFunc(element, app, func) {
     element.addEventListener('click', function (event) {
         event.preventDefault()
-        app.basculerVersProfil(element.dataset.setProfil).then(() => {
+        func(element.dataset.setProfil).then(() => {
             var url = new URL(event.target.href)
             app.router.navigate(url.hash)
         })

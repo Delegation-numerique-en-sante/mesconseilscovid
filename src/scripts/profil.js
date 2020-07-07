@@ -5,7 +5,8 @@ class Profil {
         this.nom = nom
     }
 
-    resetData() {
+    resetData(nom) {
+        this.nom = nom
         this.departement = undefined
         this.activite_pro = undefined
         this.activite_pro_public = undefined

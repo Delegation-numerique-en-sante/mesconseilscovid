@@ -29,7 +29,7 @@ function initRouter(app) {
                 router.navigate(redirectedPage)
             }
             var header = document.querySelector('header section')
-            if (app.profil.isEmpty()) {
+            if (!app.profil.nom) {
                 affichage.showElement(header.querySelector('#js-profil-empty'))
                 affichage.hideElement(header.querySelector('#js-profil-full'))
             } else {

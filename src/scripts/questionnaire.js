@@ -9,7 +9,7 @@ function nom(form, app, router) {
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         const nom = event.target.elements['nom'].value
-        app.basculerVersProfil(nom).then(() => {
+        app.creerProfil(nom).then(() => {
             router.navigate('residence')
         })
     })
