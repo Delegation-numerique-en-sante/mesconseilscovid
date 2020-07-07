@@ -500,12 +500,6 @@ a.button-red {
     border: 1px solid #dc3545;
     color: #fff;
 }
-p.extra-button {
-    text-align: center;
-    font-size: small;
-    margin: 0.5rem 0 0 0;
-    max-width: 100%;
-}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 680px),
     only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 680px),
