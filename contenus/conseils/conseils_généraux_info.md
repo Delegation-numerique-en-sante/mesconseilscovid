@@ -1,5 +1,3 @@
-Enfin, il est conseillé d’aérer très régulièrement les pièces dans lesquelles vous vivez ou travaillez en ouvrant les fenêtres (au moins 10 minutes plusieurs fois par jour).
-
 Pour plus d’informations, vous pouvez consulter :
 
 * sur **le port du masque** :
