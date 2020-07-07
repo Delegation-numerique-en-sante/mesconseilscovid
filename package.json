@@ -28,5 +28,9 @@
   },
   "externals": {
     "version.json": false
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "IE 11"
+  ]
 }
