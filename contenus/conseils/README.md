@@ -9,8 +9,6 @@
 Il est recommandé de **télétravailler** si cela vous est possible. Si vous devez vous rendre sur votre lieu de travail, le respect des **gestes barrières** et de la **distanciation physique** permet de limiter les risques de propagation du virus.
 
 
----
-
 
 ## [conseils_activité_pro_infos.md](conseils_activité_pro_infos.md)
 
@@ -19,15 +17,11 @@ Pour plus d’informations, vous pouvez consulter l’[espace dédié pour les p
 Retrouvez également une vidéo pour savoir [comment assurer sa santé et sa sécurité au travail](https://travail-emploi.gouv.fr/actualites/l-actualite-du-ministere/article/covid-19-comment-assurer-ma-sante-et-ma-securite-au-travail) sur le site du ministère du travail.
 
 
----
-
 
 ## [conseils_activité_pro_public.md](conseils_activité_pro_public.md)
 
 Nous vous recommandons de prendre connaissance des **fiches-conseils métier** pour aider à la mise en œuvre des mesures de protection sur le site du [Ministère du travail](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/proteger-les-travailleurs/article/fiches-conseils-metiers-et-guides-pour-les-salaries-et-les-employeurs).
 
-
----
 
 
 ## [conseils_activité_pro_santé.md](conseils_activité_pro_santé.md)
@@ -44,15 +38,11 @@ Vous pouvez trouver les recommandations adaptées sur le site du ministère des 
 
 
 
----
-
 
 ## [conseils_antécédents_chroniques_autres.md](conseils_antécédents_chroniques_autres.md)
 
 Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habituel** et **votre traitement** si vous en avez un. 
 
-
----
 
 
 ## [conseils_caractéristiques_antécédents.md](conseils_caractéristiques_antécédents.md)
@@ -70,8 +60,6 @@ Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d�
 
 Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi.
 
-
----
 
 
 ## [conseils_caractéristiques_antécédents_activité_pro.md](conseils_caractéristiques_antécédents_activité_pro.md)
@@ -92,8 +80,6 @@ Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d�
 Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi.
 
 
----
-
 
 ## [conseils_caractéristiques_antécédents_femme_enceinte.md](conseils_caractéristiques_antécédents_femme_enceinte.md)
 
@@ -103,15 +89,11 @@ Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos méd
 * le [retour à la maison après l’accouchement](https://www.has-sante.fr/jcms/p_3186783/fr/accouchement-votre-retour-a-la-maison-pendant-l-epidemie-de-covid-19) pendant l’épidémie de COVID-19.
 
 
----
-
 
 ## [conseils_caractéristiques_antécédents_info.md](conseils_caractéristiques_antécédents_info.md)
 
 Pour plus d’informations, vous pouvez consulter le [site du gouvernement](https://www.gouvernement.fr/info-coronavirus).
 
-
----
 
 
 ## [conseils_caractéristiques_antécédents_info_risque.md](conseils_caractéristiques_antécédents_info_risque.md)
@@ -122,8 +104,6 @@ Pour plus d’informations, vous pouvez :
 * retrouver des réponses à vos questions sur la [page dédiée](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/personnes-a-risques-reponses-a-vos-questions) sur le site du ministère des solidarité et de la santé.
 
 
----
-
 
 ## [conseils_cartographie_dépistage.md](conseils_cartographie_dépistage.md)
 
@@ -133,8 +113,6 @@ le site Santé.fr vous propose la
 
 Il vous prescrira peut-être une solution de [télésurveillance](https://sante.fr/covid-numerique-pro) ou autre outil numérique.
 
-
----
 
 
 ## [conseils_contact_à_risque.md](conseils_contact_à_risque.md)
@@ -150,15 +128,11 @@ En attendant plus d’informations, il vous est conseillé de :
 * Surveiller l’apparition de **symptômes** et contacter votre médecin si des symptômes apparaissent.
 
 
----
-
 
 ## [conseils_contact_à_risque_autre.md](conseils_contact_à_risque_autre.md)
 
 Vous avez passé du temps avec quelqu’un de positif mais il ne s’agit pas *a priori* d’un contact à risque, au moindre doute ou en cas d’apparition de symptômes n’hésitez pas à contacter votre médecin.
 
-
----
 
 
 ## [conseils_contact_à_risque_info.md](conseils_contact_à_risque_info.md)
@@ -172,8 +146,6 @@ Pour plus d’informations :
 * les gestes barrières : [« Comment se protéger du coronavirus COVID-19 ? »](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf) du ministère des solidarités et de la santé.
 
 
----
-
 
 ## [conseils_département_défaut.md](conseils_département_défaut.md)
 
@@ -186,23 +158,17 @@ Pour plus d’informations, vous pouvez consulter :
 * les <a href="#conseils-departement" id="lien-prefecture">règles spécifiques de votre département</a> sur le site de votre préfecture.
 
 
----
-
 
 ## [conseils_département_orange.md](conseils_département_orange.md)
 
 Votre département est en **niveau orange**, la circulation épidémique justifie une vigilance accrue face au virus. Le déconfinement y prend une forme plus stricte.
 
 
----
-
 
 ## [conseils_département_vert.md](conseils_département_vert.md)
 
 Votre département est en **niveau vert**. Cependant le virus circule toujours, maintenez les gestes barrières.
 
-
----
 
 
 ## [conseils_foyer_enfant_garde.md](conseils_foyer_enfant_garde.md)
@@ -216,8 +182,6 @@ Si vous n’avez pas de solution pour faire garder votre enfant :
 
 * Si vous êtes travailleur indépendant ou exploitant agricole, renseignez-vous sur [le téléservice de l’Assurance Maladie.](https://declare.ameli.fr/)
 
-
----
 
 
 ## [conseils_foyer_enfants.md](conseils_foyer_enfants.md)
@@ -235,8 +199,6 @@ Si vous ne pouvez pas faire garder votre enfant, des solutions existent (voir pl
 
 
 
----
-
 
 ## [conseils_foyer_enfants_fragile.md](conseils_foyer_enfants_fragile.md)
 
@@ -252,8 +214,6 @@ Si vos enfants sortent à l’extérieur du foyer, il convient de mettre en plac
 Si vous ne pouvez pas faire garder votre enfant, des solutions existent (voir plus bas).
 
 
----
-
 
 ## [conseils_foyer_enfants_vaccins.md](conseils_foyer_enfants_vaccins.md)
 
@@ -261,8 +221,6 @@ Les consultations de vos enfants comportant des
 **vaccins** obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) 
 doivent être **maintenues.** 
 
-
----
 
 
 ## [conseils_foyer_fragile.md](conseils_foyer_fragile.md)
@@ -278,8 +236,6 @@ Si vous devez rester à domicile pour vous occuper d’une personne vulnérable 
 Pour plus d’informations, retrouvez des réponses à vos questions sur la [page dédiée](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/personnes-a-risques-reponses-a-vos-questions) sur le site du ministère des solidarité et de la santé.
 
 
----
-
 
 ## [conseils_foyer_fragile_accueil_enfant.md](conseils_foyer_fragile_accueil_enfant.md)
 
@@ -291,8 +247,6 @@ Si vous devez accueillir des enfants au sein de votre foyer, nous vous recommand
 * En complément des gestes barrières, porter un masque lorsque la distanciation de 1m ne peut pas être respectée entre l’enfant et les personnes qui le gardent
 
 
----
-
 
 ## [conseils_foyer_fragile_suivi.md](conseils_foyer_fragile_suivi.md)
 
@@ -301,8 +255,6 @@ et le renouvellement de vos médicaments** auprès de vos médecins
 référents qui vous orienteront vers le meilleur moyen de suivi :
 [has-sante.fr](https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf).
 
-
----
 
 
 ## [conseils_généraux.md](conseils_généraux.md)
@@ -314,8 +266,6 @@ De plus, **l’aération régulière** [des pièces et espaces clos](https://sol
 
 Comme l’origine du Covid-19 n’est pas bactérienne, en dehors de la présence de signes de gravité, il n’est pas nécessaire de prescrire une antibiothérapie : ils ne sont pas efficaces. Retrouvez [plus d’informations sur les antibiotiques](https://sante.fr/antibiomalin) sur le site Santé.fr.
 
-
----
 
 
 ## [conseils_généraux_info.md](conseils_généraux_info.md)
@@ -342,23 +292,17 @@ Pour plus d’informations, vous pouvez consulter :
 * l’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) : cet outil peut vous permettre de vous prévenir immédiatement si vous avez été en contact rapproché dans les derniers jours avec une personne que vous ne connaissez pas et qui vient d’être testée positive au COVID-19.
 
 
----
-
 
 ## [conseils_isolement.md](conseils_isolement.md)
 
 Pour plus d’informations sur l’isolement : [« Je suis atteint par le coronavirus et je dois rester chez moi jusqu’à ma guérison »](https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf).
 
 
----
-
 
 ## [conseils_maladie_chronique_info.md](conseils_maladie_chronique_info.md)
 
 Pour plus d’informations, vous pouvez prendre connaissance du document [« Faire face à une maladie chronique pendant le confinement »](https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf) de la HAS.
 
-
----
 
 
 ## [conseils_symptômes_actuels_gravité1.md](conseils_symptômes_actuels_gravité1.md)
@@ -373,8 +317,6 @@ Pour agir, il vous est conseillé :
 
 * D’appliquer les **gestes barrières**.
 
-
----
 
 
 ## [conseils_symptômes_actuels_gravité2.md](conseils_symptômes_actuels_gravité2.md)
@@ -392,8 +334,6 @@ Pour agir, il vous est conseillé :
 * D’appliquer les **gestes barrières**.
 
 
----
-
 
 ## [conseils_symptômes_actuels_gravité3.md](conseils_symptômes_actuels_gravité3.md)
 
@@ -410,8 +350,6 @@ Pour agir, il vous est conseillé :
 * D’appliquer les **gestes barrières**.
 
 
----
-
 
 ## [conseils_symptômes_actuels_gravité4.md](conseils_symptômes_actuels_gravité4.md)
 
@@ -424,15 +362,11 @@ Pour agir, il vous est conseillé :
 * D’appliquer les **gestes barrières**.
 
 
----
-
 
 ## [conseils_symptômes_défaut.md](conseils_symptômes_défaut.md)
 
 Si vous le souhaitez, **vous pouvez limiter la chaîne de transmission** en informant vous-même vos proches et contacts à risque. Le site [BriserLaChaine.org](https://www.briserlachaine.org/statut) peut vous aider à vous souvenir de toutes les personnes que vous avez croisé depuis le début de votre période contagieuse. 
 
-
----
 
 
 ## [conseils_symptômes_passés_avec_risques.md](conseils_symptômes_passés_avec_risques.md)
@@ -446,15 +380,11 @@ Il vous est conseillé de :
 * Appliquer les **gestes barrières**.
 
 
----
-
 
 ## [conseils_symptômes_passés_avec_risques_info.md](conseils_symptômes_passés_avec_risques_info.md)
 
 De façon générale il est conseillé une levée de l’isolement 10 jours après le début des symptômes (si vous ou un membre de votre foyer êtes à risque de forme grave) et après 48 heures sans fièvre ni gêne respiratoire.
 
-
----
 
 
 ## [conseils_symptômes_passés_sans_risques.md](conseils_symptômes_passés_sans_risques.md)
@@ -468,13 +398,9 @@ Il vous est conseillé de :
 * Appliquer les **gestes barrières**.
 
 
----
-
 
 ## [conseils_symptômes_passés_sans_risques_info.md](conseils_symptômes_passés_sans_risques_info.md)
 
 De façon générale il est conseillé une levée de l’isolement 8 jours après le début des symptômes et après 48 heures sans fièvre ni gêne respiratoire.
 
-
----
 

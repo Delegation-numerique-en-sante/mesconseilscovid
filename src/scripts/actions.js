@@ -10,17 +10,18 @@ module.exports = {
             }
         })
     },
-    bindSuppression: function (element, profil, stockageLocal, router) {
-        // eslint-disable-next-line no-extra-semi
-        ;[].forEach.call(element.querySelectorAll('.js-suppression'), function (
-            element
-        ) {
-            element.addEventListener('click', function (event) {
-                event.preventDefault()
-                profil.resetData()
-                stockageLocal.supprimer()
-                router.navigate('introduction')
-            })
+    bindSuppressionTotale: function (element, app) {
+        element.addEventListener('click', function (event) {
+            event.preventDefault()
+            if (confirm('Êtes-vous sûr·e de vouloir supprimer tous les profils ?')) {
+                app.supprimerTout().then(() => {
+                    if (app.router.lastRouteResolved().url === 'introduction') {
+                        window.location.reload(true)
+                    } else {
+                        app.router.navigate('introduction')
+                    }
+                })
+            }
         })
     },
 }

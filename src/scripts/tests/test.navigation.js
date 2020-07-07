@@ -1,12 +1,9 @@
 var assert = require('chai').assert
 
-var Router = require('../router.js')
-var redirectToUnansweredQuestions = Router.redirectToUnansweredQuestions
+var pagination = require('../pagination.js')
+var redirectToUnansweredQuestions = pagination.redirectToUnansweredQuestions
 
 describe('Navigation générale', function () {
-    it('page inconnue renvoie au début', function () {
-        assert.strictEqual(redirectToUnansweredQuestions('foo', {}), 'introduction')
-    })
     it('ok d’aller à la page d’accueil', function () {
         assert.isUndefined(redirectToUnansweredQuestions('introduction', {}))
     })
@@ -20,6 +17,9 @@ describe('Navigation générale', function () {
         assert.isUndefined(
             redirectToUnansweredQuestions('nouvelleversiondisponible', {})
         )
+    })
+    it('ok d’aller à la page de saisie du nom', function () {
+        assert.isUndefined(redirectToUnansweredQuestions('nom', {}))
     })
 })
 
@@ -37,10 +37,10 @@ describe('Navigation lieu de résidence', function () {
 })
 
 describe('Navigation mon activité', function () {
-    it('redirige vers l’accueil si réponse 1 manquante', function () {
+    it('redirige vers le lieu de résidence si réponse 1 manquante', function () {
         assert.strictEqual(
             redirectToUnansweredQuestions('activitepro', {}),
-            'introduction'
+            'residence'
         )
     })
     it('ok d’aller à la question 2 si réponse à la 1', function () {

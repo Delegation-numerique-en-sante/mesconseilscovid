@@ -5,8 +5,9 @@ var { JSDOM } = jsdom
 
 var Algorithme = require('../algorithme.js').Algorithme
 var injection = require('../injection.js')
-var Profil = require('../profil.js')
-var profil = new Profil()
+
+var Profil = require('../profil.js').Profil
+var profil = new Profil('mes_infos')
 
 describe('Injection', function () {
     beforeEach(function () {
@@ -42,11 +43,11 @@ describe('Injection', function () {
         )
     })
 
-    it('Caractéristiques (âge)', function () {
+    it('Caractéristiques à risques (âge)', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <b id="nom-caracteristiques"></b>
+            <b id="nom-caracteristiques-a-risques"></b>
         `
         var data = {
             age: 65,
@@ -54,24 +55,24 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.caracteristiques(
-            element.querySelector('#nom-caracteristiques'),
+        injection.caracteristiquesARisques(
+            element.querySelector('#nom-caracteristiques-a-risques'),
             algorithme
         )
 
         assert.strictEqual(
             element.innerHTML,
             `
-            <b id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans.</b>
+            <b id="nom-caracteristiques-a-risques">vous êtes âgé·e de plus de 65&nbsp;ans.</b>
         `
         )
     })
 
-    it('Caractéristiques (grossesse)', function () {
+    it('Caractéristiques à risques (grossesse)', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <b id="nom-caracteristiques"></b>
+            <b id="nom-caracteristiques-a-risques"></b>
         `
         var data = {
             grossesse_3e_trimestre: true,
@@ -79,24 +80,24 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.caracteristiques(
-            element.querySelector('#nom-caracteristiques'),
+        injection.caracteristiquesARisques(
+            element.querySelector('#nom-caracteristiques-a-risques'),
             algorithme
         )
 
         assert.strictEqual(
             element.innerHTML,
             `
-            <b id="nom-caracteristiques">vous êtes au 3e trimestre de votre grossesse.</b>
+            <b id="nom-caracteristiques-a-risques">vous êtes au 3e trimestre de votre grossesse.</b>
         `
         )
     })
 
-    it('Caractéristiques (âge + grossesse = âge)', function () {
+    it('Caractéristiques à risques (âge + grossesse = âge)', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <b id="nom-caracteristiques"></b>
+            <b id="nom-caracteristiques-a-risques"></b>
         `
         var data = {
             age: 65,
@@ -105,24 +106,24 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.caracteristiques(
-            element.querySelector('#nom-caracteristiques'),
+        injection.caracteristiquesARisques(
+            element.querySelector('#nom-caracteristiques-a-risques'),
             algorithme
         )
 
         assert.strictEqual(
             element.innerHTML,
             `
-            <b id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans.</b>
+            <b id="nom-caracteristiques-a-risques">vous êtes âgé·e de plus de 65&nbsp;ans.</b>
         `
         )
     })
 
-    it('Caractéristiques (IMC)', function () {
+    it('Caractéristiques à risques (IMC)', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <b id="nom-caracteristiques"></b>
+            <b id="nom-caracteristiques-a-risques"></b>
         `
         var data = {
             taille: 150,
@@ -131,24 +132,24 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.caracteristiques(
-            element.querySelector('#nom-caracteristiques'),
+        injection.caracteristiquesARisques(
+            element.querySelector('#nom-caracteristiques-a-risques'),
             algorithme
         )
 
         assert.strictEqual(
             element.innerHTML,
             `
-            <b id="nom-caracteristiques">vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
+            <b id="nom-caracteristiques-a-risques">vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
         `
         )
     })
 
-    it('Caractéristiques (âge + IMC)', function () {
+    it('Caractéristiques à risques (âge + IMC)', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <b id="nom-caracteristiques"></b>
+            <b id="nom-caracteristiques-a-risques"></b>
         `
         var data = {
             age: 65,
@@ -158,24 +159,24 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.caracteristiques(
-            element.querySelector('#nom-caracteristiques'),
+        injection.caracteristiquesARisques(
+            element.querySelector('#nom-caracteristiques-a-risques'),
             algorithme
         )
 
         assert.strictEqual(
             element.innerHTML,
             `
-            <b id="nom-caracteristiques">vous êtes âgé·e de plus de 65&nbsp;ans et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
+            <b id="nom-caracteristiques-a-risques">vous êtes âgé·e de plus de 65&nbsp;ans et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
         `
         )
     })
 
-    it('Caractéristiques (grossesse + IMC)', function () {
+    it('Caractéristiques à risques (grossesse + IMC)', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = `
-            <b id="nom-caracteristiques"></b>
+            <b id="nom-caracteristiques-a-risques"></b>
         `
         var data = {
             grossesse_3e_trimestre: true,
@@ -185,15 +186,15 @@ describe('Injection', function () {
         profil.fillData(data)
 
         var algorithme = new Algorithme(profil)
-        injection.caracteristiques(
-            element.querySelector('#nom-caracteristiques'),
+        injection.caracteristiquesARisques(
+            element.querySelector('#nom-caracteristiques-a-risques'),
             algorithme
         )
 
         assert.strictEqual(
             element.innerHTML,
             `
-            <b id="nom-caracteristiques">vous êtes au 3e trimestre de votre grossesse et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
+            <b id="nom-caracteristiques-a-risques">vous êtes au 3e trimestre de votre grossesse et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
         `
         )
     })

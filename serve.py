@@ -2,10 +2,12 @@
 Start local development server
 """
 import argparse
+import logging
+from contextlib import suppress
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from ssl import wrap_socket
 
-from livereload import Server, shell
+from livereload.server import LogFormatter, Server, shell
 from watchdog.observers import Observer
 from watchdog.tricks import ShellCommandTrick
 
@@ -35,8 +37,28 @@ def parse_args():
     return parser.parse_args()
 
 
+class CustomServer(Server):
+    """
+    Custom server with logger that decodes bytes in logs
+    """
+
+    def _setup_logging(self):
+        super()._setup_logging()
+        logger = logging.getLogger("livereload")
+        formatter = self.BytesFormatter()
+        for handler in logger.handlers:
+            handler.setFormatter(formatter)
+
+    class BytesFormatter(LogFormatter):
+        def format(self, record):
+            if isinstance(record.msg, bytes):
+                with suppress(UnicodeDecodeError):
+                    record.msg = record.msg.decode("utf-8")
+            return super().format(record)
+
+
 def serve(address, port, watch):
-    server = Server()
+    server = CustomServer()
     if watch:
         for path in WATCHED_PATHS:
             server.watch(path, shell(COMMAND))

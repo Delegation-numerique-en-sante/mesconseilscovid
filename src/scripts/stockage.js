@@ -1,53 +1,104 @@
 // Données privées, stockées uniquement en local
+import localforage from 'localforage'
 
-var localforage = require('localforage')
+class StockageLocal {
+    constructor() {
+        this.localforage = localforage
+    }
 
-module.exports = function () {
-    this.supprimer = function () {
-        localforage
+    getProfilActuel() {
+        return localforage.getItem('profil')
+    }
+
+    setProfilActuel(nom) {
+        return localforage.setItem('profil', nom)
+    }
+
+    getProfils() {
+        return localforage
+            .keys()
+            .then((noms) => {
+                return noms.filter((nom) => nom != 'profil')
+            })
+            .then((noms) => {
+                return noms.sort((a) => {
+                    // Make sure we return my profile first.
+                    return a !== 'mes_infos'
+                })
+            })
+    }
+
+    supprimerTout() {
+        return localforage
             .dropInstance()
-            .then(function () {
+            .then(() => {
                 console.debug('Les données personnelles ont été supprimées')
             })
-            .catch(function (error) {
+            .catch((error) => {
                 console.error(
-                    'Erreur lors de la suppression des données personnelles ' + error
-                )
-            })
-    }
-
-    this.charger = function (profil) {
-        return localforage.getItem('mes_infos').then(
-            function (data) {
-                if (data !== null) {
-                    console.debug('Données locales:')
-                    console.log(data)
-                    profil.fillData(data)
-                } else {
-                    console.debug('Pas de données locales pour l’instant')
-                }
-                var customLoadingEvent = document.createEvent('CustomEvent')
-                customLoadingEvent.initCustomEvent('dataLoaded', true, true, data)
-                document.dispatchEvent(customLoadingEvent)
-            },
-            function (error) {
-                console.error('Erreur de chargement des données locales ' + error)
-            }
-        )
-    }
-
-    this.enregistrer = function (profil) {
-        return localforage
-            .setItem('mes_infos', profil.getData())
-            .then(function (data) {
-                console.debug('Les réponses au questionnaire ont bien été enregistrées')
-                console.debug(data)
-            })
-            .catch(function (error) {
-                console.error(
-                    'Les réponses au questionnaire n’ont pas pu être enregistrées'
+                    `Erreur lors de la suppression de toutes les données personnelles`
                 )
                 console.error(error)
             })
     }
+
+    supprimer(nom) {
+        return localforage
+            .removeItem(nom)
+            .then(() => {
+                console.debug(`Les données personnelles ont été supprimées (${nom})`)
+                return
+            })
+            .catch((error) => {
+                console.error(
+                    `Erreur lors de la suppression des données personnelles (${nom})`
+                )
+                console.error(error)
+            })
+    }
+
+    charger(profil) {
+        return localforage
+            .getItem(profil.nom)
+            .then((data) => {
+                if (data !== null) {
+                    console.debug(`Données locales (${profil.nom})`)
+                    console.log(data)
+                    profil.fillData(data)
+                } else {
+                    console.debug(
+                        `Pas de données locales pour l’instant (${profil.nom})`
+                    )
+                    profil.resetData()
+                }
+                return profil
+            })
+            .catch((error) => {
+                console.error(
+                    `Erreur de chargement des données locales (${profil.nom})`
+                )
+                console.error(error)
+            })
+    }
+
+    enregistrer(profil) {
+        return localforage
+            .setItem(profil.nom, profil.getData())
+            .then((data) => {
+                console.debug(
+                    `Les réponses au questionnaire ont bien été enregistrées (${profil.nom})`
+                )
+                console.debug(data)
+            })
+            .catch((error) => {
+                console.error(
+                    `Les réponses au questionnaire n’ont pas pu être enregistrées (${profil.nom})`
+                )
+                console.error(error)
+            })
+    }
+}
+
+module.exports = {
+    StockageLocal,
 }

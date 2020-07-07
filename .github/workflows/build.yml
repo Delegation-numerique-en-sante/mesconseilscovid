@@ -23,6 +23,9 @@ jobs:
         with:
           node-version: '14'
 
+      - name: Set up Playwright
+        uses: microsoft/playwright-github-action@v1
+
       - name: Install dependencies
         run: |
           make install
@@ -35,9 +38,21 @@ jobs:
         run: |
           make lint
 
-      - name: Run tests
+      - name: Run unit tests
         run: |
-          make test
+          npm run-script test
+
+      - name: Run browser tests (chromium)
+        run: |
+          npm run-script --browser=chromium test-integration
+
+      - name: Run browser tests (firefox)
+        run: |
+          npm run-script --browser=firefox test-integration
+
+      - name: Run browser tests (webkit)
+        run: |
+          npm run-script --browser=webkit test-integration
 
       - name: Check links
         run: |

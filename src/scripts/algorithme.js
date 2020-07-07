@@ -266,7 +266,7 @@ class Algorithme {
                 blockNames.push('reponse-antecedents')
             }
             if (this.sup65 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
-                blockNames.push('reponse-caracteristiques')
+                blockNames.push('reponse-caracteristiques-a-risques')
             }
             // Conseils
             if (this.profil.activite_pro) {

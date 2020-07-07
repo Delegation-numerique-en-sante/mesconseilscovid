@@ -8,6 +8,8 @@ Les dossiers listés ci-dessus contiennent l’intégralité des contenus du sit
 
 Les fichiers dans le dossier [`questions/`](questions/) correspondent aux titres, libellés et aides relatifs aux question. Vous devez maintenir les caractères `<!---->` au début du fichier s’ils existent.
 
+Afin de pouvoir effectuer le formulaire pour soi-même et/ou pour un proche, les différentes versions du texte sont dupliqués et séparés par `---`, il faut conserver cette séparation.
+
 ### Réponses
 
 Les fichiers dans le dossier [`réponses/`](réponses/) correspondent à l’affichage des réponses saisies par l’utilisateur·ice.
@@ -37,6 +39,15 @@ Les règles d’affichage des conseils en fonction des réponses sont décrites 
 * [statut_personne_fragile.md](statuts/statut_personne_fragile.md) (orange) si la personne présente un [Risque](#risque)
 * [statut_foyer_fragile.md](statuts/statut_foyer_fragile.md) (jaune) si la case [Foyer](#foyer) fragile est cochée
 * [statut_peu_de_risques.md](statuts/statut_peu_de_risques.md) (vert) par défaut
+
+
+#### Nom (uniquement pour un proche)
+
+[Titre](questions/question_nom_titre.md)
+
+Aide : [aide](questions/question_nom_aide.md)
+
+Question : [libellé](questions/question_nom_libellé.md)
 
 
 #### Localisation
@@ -119,6 +130,8 @@ Si seule la case fragile est cochée :
 
 [Titre caractéristiques](questions/question_caractéristiques_titre.md)
 
+Aide : [aide](questions/question_caractéristiques_aide.md)
+
 Question (âge) : [libellé](questions/question_caractéristiques_âge_libellé.md)
 
 Question (taille) : [libellé](questions/question_caractéristiques_taille_libellé.md)
@@ -151,7 +164,7 @@ Question (chronique autre) : [libellé](questions/question_antécédents_chroniq
 Réponse :
 
 * [réponse_antécédents.md](réponses/réponse_antécédents.md) si [Antécédents](#antécédents) ou antécédents chroniques autres
-* [réponse_caractéristiques.md](réponses/réponse_caractéristiques.md) si âge > 65 ou grossesse 3e trimestre ou IMC > 30
+* [réponse_caractéristiques_à_risques.md](réponses/réponse_caractéristiques_à_risques.md) si âge > 65 ou grossesse 3e trimestre ou IMC > 30
 
 Conseils :
 
@@ -211,7 +224,7 @@ Statut : [statut_symptomatique.md](statuts/statut_symptomatique.md) (orange) ou
 Réponse :
 
 * [réponse_antécédents.md](réponses/réponse_antécédents.md) si [Antécédents](#antécédents) ou antécédents chroniques autres
-* [réponse_caractéristiques.md](réponses/réponse_caractéristiques.md) si âge > 65 ou grossesse 3e trimestre ou IMC > 30
+* [réponse_caractéristiques_à_risques.md](réponses/réponse_caractéristiques_à_risques.md) si âge > 65 ou grossesse 3e trimestre ou IMC > 30
 * [réponse_symptômes_actuels.md](réponses/réponse_symptômes_actuels.md) si pas [Symptôme actuel autre](#symptôme-actuel-autre)
 
 Conseils :

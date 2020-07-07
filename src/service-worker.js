@@ -1,6 +1,8 @@
+/* eslint-env serviceworker */
+
 /* Implementation of the network-or-cache pattern:
 https://serviceworke.rs/strategy-network-or-cache.html */
-const CACHE_NAME = 'network-or-cache-2020-06-26'
+const CACHE_NAME = 'network-or-cache-2020-07-01'
 const CACHE_FILES = [
     '/',
     'style.css',
@@ -23,6 +25,7 @@ const CACHE_FILES = [
     'star.svg',
     'trash.svg',
     'illustrations/accueil.svg',
+    'illustrations/nom.svg',
     'illustrations/activitepro.svg',
     'illustrations/antecedents.svg',
     'illustrations/caracteristiques.svg',

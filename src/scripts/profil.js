@@ -1,5 +1,12 @@
-module.exports = function () {
-    this.resetData = function () {
+var affichage = require('./affichage.js')
+
+class Profil {
+    constructor(nom) {
+        this.nom = nom
+    }
+
+    resetData(nom) {
+        this.nom = nom
         this.departement = undefined
         this.activite_pro = undefined
         this.activite_pro_public = undefined
@@ -41,7 +48,7 @@ module.exports = function () {
         this.contact_a_risque_autre = undefined
     }
 
-    this.fillData = function (data) {
+    fillData(data) {
         this.departement = data['departement']
         this.activite_pro = data['activite_pro']
         this.activite_pro_public = data['activite_pro_public']
@@ -85,7 +92,7 @@ module.exports = function () {
         this.contact_a_risque_autre = data['contact_a_risque_autre']
     }
 
-    this.getData = function () {
+    getData() {
         return {
             departement: this.departement,
             activite_pro: this.activite_pro,
@@ -130,7 +137,34 @@ module.exports = function () {
         }
     }
 
-    this.isComplete = function () {
+    isEmpty() {
+        return (
+            typeof this.departement === 'undefined' &&
+            typeof this.activite_pro === 'undefined' &&
+            typeof this.activite_pro_public === 'undefined' &&
+            typeof this.activite_pro_sante === 'undefined' &&
+            typeof this.foyer_enfants === 'undefined' &&
+            typeof this.foyer_fragile === 'undefined' &&
+            typeof this.age === 'undefined' &&
+            typeof this.grossesse_3e_trimestre === 'undefined' &&
+            typeof this.poids === 'undefined' &&
+            typeof this.taille === 'undefined' &&
+            typeof this.antecedent_cardio === 'undefined' &&
+            typeof this.antecedent_diabete === 'undefined' &&
+            typeof this.antecedent_respi === 'undefined' &&
+            typeof this.antecedent_dialyse === 'undefined' &&
+            typeof this.antecedent_cancer === 'undefined' &&
+            typeof this.antecedent_immunodep === 'undefined' &&
+            typeof this.antecedent_cirrhose === 'undefined' &&
+            typeof this.antecedent_drepano === 'undefined' &&
+            typeof this.antecedent_chronique_autre === 'undefined' &&
+            typeof this.symptomes_actuels === 'undefined' &&
+            typeof this.symptomes_passes === 'undefined' &&
+            typeof this.contact_a_risque === 'undefined'
+        )
+    }
+
+    isComplete() {
         return (
             typeof this.departement !== 'undefined' &&
             typeof this.activite_pro !== 'undefined' &&
@@ -157,4 +191,59 @@ module.exports = function () {
             typeof this.contact_a_risque !== 'undefined'
         )
     }
+
+    estMonProfil() {
+        return this.nom == 'mes_infos'
+    }
+
+    affichageNom() {
+        return this.estMonProfil() ? 'Moi' : this.nom
+    }
+
+    renderNom() {
+        return affichage.safeHtml`<h3><span class="profil">${this.affichageNom()}</span></h3>`
+    }
+
+    renderButtons() {
+        const possessifMasculinSingulier = this.estMonProfil() ? 'mon' : 'son'
+        const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
+        var mainButton
+        if (this.isComplete()) {
+            const outlined = this.estMonProfil() ? '' : 'button-outline'
+            mainButton = affichage.safeHtml`
+                <a class="button ${outlined} conseils-link"
+                    data-set-profil="${this.nom}" href="#conseils"
+                    >Voir ${possessifPluriel} conseils</a>
+            `
+        } else {
+            var label = this.isEmpty() ? 'Démarrer' : 'Continuer'
+            mainButton = affichage.safeHtml`
+                <a class="button button-full-width conseils-link"
+                    data-set-profil="${this.nom}" href="#residence"
+                    >${label}</a>
+            `
+        }
+        return (
+            mainButton +
+            affichage.safeHtml`
+            <a data-set-profil="${this.nom}" href="#residence"
+                >Modifier ${possessifPluriel} réponses</a>
+            <a data-delete-profil="${this.nom}" href=""
+                >Supprimer ${possessifMasculinSingulier} profil</a>
+            `
+        )
+    }
+
+    renderCard() {
+        return affichage.createElementFromHTML(`
+        <div class="card">
+            ${this.renderNom()}
+            <div>${this.renderButtons()}</div>
+        </div>
+        `)
+    }
+}
+
+module.exports = {
+    Profil,
 }

@@ -2,8 +2,8 @@ var assert = require('chai').assert
 
 var Algorithme = require('../algorithme.js').Algorithme
 
-var Profil = require('../profil.js')
-var profil = new Profil()
+var Profil = require('../profil.js').Profil
+var profil = new Profil('mes_infos')
 
 describe('Algorithme statut', function () {
     beforeEach(function () {
@@ -667,7 +667,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
         var algorithme = new Algorithme(profil)
         assert.deepEqual(algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(), [
             'conseils-caracteristiques',
-            'reponse-caracteristiques',
+            'reponse-caracteristiques-a-risques',
             'conseils-caracteristiques-antecedents',
             'conseils-caracteristiques-antecedents-info',
         ])
@@ -682,7 +682,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
         var algorithme = new Algorithme(profil)
         assert.deepEqual(algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(), [
             'conseils-caracteristiques',
-            'reponse-caracteristiques',
+            'reponse-caracteristiques-a-risques',
             'conseils-caracteristiques-antecedents',
             'conseils-caracteristiques-antecedents-info',
         ])
@@ -696,7 +696,7 @@ describe('Algorithme caractéristiques et antécédents', function () {
         var algorithme = new Algorithme(profil)
         assert.deepEqual(algorithme.caracteristiquesAntecedentsBlockNamesToDisplay(), [
             'conseils-caracteristiques',
-            'reponse-caracteristiques',
+            'reponse-caracteristiques-a-risques',
             'conseils-caracteristiques-antecedents',
             'conseils-caracteristiques-antecedents-info',
             'conseils-caracteristiques-antecedents-femme-enceinte',

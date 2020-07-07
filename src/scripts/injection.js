@@ -1,6 +1,19 @@
 var carteDepartements = require('./carte.js')
+var affichage = require('./affichage.js')
 
 module.exports = {
+    nomProfil: function (element, app) {
+        if (!element) return
+        element.textContent = app.profil.affichageNom()
+    },
+
+    titreConseils: function (element, profil) {
+        if (!element) return
+        if (profil.estMonProfil()) return
+        affichage.showElement(element)
+        element.textContent = `Conseils pour « ${profil.nom} »`
+    },
+
     departement: function (element, departement) {
         element.textContent = carteDepartements.nom(departement)
     },
@@ -9,7 +22,7 @@ module.exports = {
         element.setAttribute('href', carteDepartements.lien_prefecture(departement))
     },
 
-    caracteristiques: function (element, algorithme) {
+    caracteristiquesARisques: function (element, algorithme) {
         if (
             algorithme.sup65 ||
             algorithme.profil.grossesse_3e_trimestre ||

@@ -12,14 +12,14 @@ function preloadCheckboxForm(form, key, profil) {
     }
 }
 
-function toggleFormButtonOnCheck(form, initialLabel, alternateLabel) {
+function toggleFormButtonOnCheck(form, continueLabel, uncheckedLabel) {
     var button = form.querySelector('input[type=submit]')
     var checkboxes = [].slice.call(form.querySelectorAll('input[type=checkbox]'))
     function updateSubmitButtonLabel() {
         var hasChecks = checkboxes.some(function (checkbox) {
             return checkbox.checked
         })
-        button.value = hasChecks ? alternateLabel : initialLabel
+        button.value = hasChecks ? continueLabel : uncheckedLabel
     }
     updateSubmitButtonLabel()
     checkboxes.forEach(function (elem) {
@@ -29,8 +29,8 @@ function toggleFormButtonOnCheck(form, initialLabel, alternateLabel) {
 
 function toggleFormButtonOnCheckRequired(
     form,
-    initialLabel,
-    alternateLabel,
+    continueLabel,
+    uncheckedLabel,
     requiredLabel
 ) {
     var button = form.querySelector('input[type=submit]')
@@ -46,7 +46,7 @@ function toggleFormButtonOnCheckRequired(
             return checkbox.checked
         })
         button.disabled = false
-        button.value = hasChecks ? alternateLabel : initialLabel
+        button.value = hasChecks ? continueLabel : uncheckedLabel
         if (hasChecks) {
             var hasSecondaryChecks = secondaryCheckboxes.some(function (checkbox) {
                 return checkbox.checked
@@ -78,7 +78,7 @@ function toggleFormButtonOnCheckRequired(
     otherCheckbox.addEventListener('change', updateToggleOnOther)
 }
 
-function toggleFormButtonOnTextFieldsRequired(form, initialLabel, requiredLabel) {
+function toggleFormButtonOnTextFieldsRequired(form, continueLabel, requiredLabel) {
     var button = form.querySelector('input[type=submit]')
     var textFields = [].slice.call(form.querySelectorAll('input[type=text]'))
 
@@ -87,7 +87,7 @@ function toggleFormButtonOnTextFieldsRequired(form, initialLabel, requiredLabel)
             return textField.value !== ''
         })
         button.disabled = !allFilled
-        button.value = allFilled ? initialLabel : requiredLabel
+        button.value = allFilled ? continueLabel : requiredLabel
     }
     updateSubmitButtonLabelRequired()
     textFields.forEach(function (elem) {
@@ -95,7 +95,7 @@ function toggleFormButtonOnTextFieldsRequired(form, initialLabel, requiredLabel)
     })
 }
 
-function toggleFormButtonOnSelectFieldsRequired(form, initialLabel, requiredLabel) {
+function toggleFormButtonOnSelectFieldsRequired(form, continueLabel, requiredLabel) {
     var button = form.querySelector('input[type=submit]')
     var selectFields = [].slice.call(form.querySelectorAll('select'))
 
@@ -104,7 +104,7 @@ function toggleFormButtonOnSelectFieldsRequired(form, initialLabel, requiredLabe
             return selectField.value !== selectField.options[0].value
         })
         button.disabled = !allFilled
-        button.value = allFilled ? initialLabel : requiredLabel
+        button.value = allFilled ? continueLabel : requiredLabel
     }
     updateSubmitButtonLabelRequired()
     selectFields.forEach(function (elem) {

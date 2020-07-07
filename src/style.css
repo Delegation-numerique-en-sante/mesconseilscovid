@@ -50,6 +50,7 @@ header {
 }
 header section {
     display: flex;
+    align-items: center;
 }
 header img {
     width: 100px;
@@ -58,7 +59,6 @@ header img {
 header h1 {
     text-align: center;
     flex-grow: 2;
-    padding-right: 10%; /* To compensate the width of the logo on desktop. */
 }
 header h1 a {
     text-decoration: none;
@@ -70,9 +70,28 @@ header h1 a:hover {
 header h1 a:visited {
     color: black;
 }
+header a.button {
+    margin-top: 1rem;
+}
 main {
     background-color: #f9f8f6;
     padding: 18px 15px 48px 15px;
+}
+
+.nouveau-profil {
+    background-image: url('plus-circle.svg');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding: 10px 24px 9px 40px;
+}
+.profil {
+    background-image: url('user-circle.svg');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding: 10px 24px 9px 40px;
+}
+a .profil {
+    background-image: url('user-circle-blue.svg');
 }
 
 .block {
@@ -84,6 +103,13 @@ main {
 .block > * {
     max-width: 48rem;
     margin: auto;
+}
+.block > h1 {
+    color: #000091;
+    font-size: 250%;
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
 }
 .block > h2 {
     color: #000091;
@@ -106,8 +132,41 @@ main {
     max-width: 60ch;
 }
 
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.block ul.cards {
+    padding: 0;
+}
+.card {
+    border: thin solid #ccc;
+    border-radius: 0.5rem;
+    flex-basis: 18em;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem 2rem;
+}
+.card h3 {
+    margin-top: 0.5rem;
+}
+.card a {
+    display: block;
+    margin-bottom: 0.75rem;
+}
+.card a.button {
+    margin-bottom: 1.5rem;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
 main footer {
-    font-size: .8rem;
+    font-size: 0.8rem;
     text-align: center;
 }
 
@@ -119,6 +178,7 @@ main footer {
     background-size: 50%;
 }
 
+#nom-form,
 #residence-form,
 #activite-pro-form,
 #foyer-form,
@@ -184,6 +244,9 @@ main footer {
     }
 }
 
+#nom-form {
+    background-image: url('illustrations/nom.svg');
+}
 #residence-form,
 #conseils-departement h3 {
     background-image: url('illustrations/residence.svg');
@@ -244,7 +307,7 @@ main footer {
 
 .statut {
     font-size: 1.2rem;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     border: 4px solid;
     text-align: center;
     margin: 3rem auto 6rem;
@@ -260,7 +323,7 @@ main footer {
     border-color: #ff9940;
 }
 .statut-foyer-fragile {
-    background: #fdE7a0;
+    background: #fde7a0;
     border-color: #fdcf41;
 }
 .statut-peu-de-risques {
@@ -270,7 +333,7 @@ main footer {
 
 .conseil {
     background: #d5dbef;
-    padding: .1rem 1rem;
+    padding: 0.1rem 1rem;
     border-left: 5px solid #000091;
 }
 .conseil-orange {
@@ -337,7 +400,7 @@ fieldset .details {
 }
 fieldset .details ul {
     margin-top: 0;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
 }
 fieldset .details p {
     margin-top: 0;
@@ -370,7 +433,7 @@ fieldset ul.details {
 }
 .form-controls .back-button {
     margin-top: 2rem;
-    background-image: url("arrow-left.svg");
+    background-image: url('arrow-left.svg');
     background-position: 10px center;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -432,20 +495,18 @@ a.button-outline {
     border: 1px solid #000091;
     color: #000091;
 }
-p.extra-button {
-    text-align: center;
-    font-size: small;
-    margin: 0.5rem 0 0 0;
-    max-width: 100%;
+a.button-red {
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    color: #fff;
 }
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 680px),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 680px),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 680px),
-only screen and (        min-device-pixel-ratio: 2)      and (min-width: 680px),
-only screen and (                min-resolution: 192dpi) and (min-width: 680px),
-only screen and (                min-resolution: 2dppx)  and (min-width: 680px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 680px),
+    only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 680px),
+    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 680px),
+    only screen and (min-device-pixel-ratio: 2) and (min-width: 680px),
+    only screen and (min-resolution: 192dpi) and (min-width: 680px),
+    only screen and (min-resolution: 2dppx) and (min-width: 680px) {
     .form-controls {
         flex-direction: row;
         align-items: baseline;
@@ -465,7 +526,6 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 680px) 
     }
 }
 
-
 /* Nicer select, based on https://github.com/filamentgroup/select-css */
 select {
     background-image: url('select.svg');
@@ -475,78 +535,75 @@ select {
 }
 
 input[type='checkbox'] {
-  position: absolute;
+    position: absolute;
 }
 
 input[type='checkbox'] + label {
-  display: block;
-  position: relative;
-  padding: 0 1.5rem;
-  margin-top: 2rem;
-  display: flex;
+    display: block;
+    position: relative;
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+    display: flex;
 }
 
 input[type='checkbox'] + label::before {
-  content: '';
-  position: relative;
-  display: inline-block;
-  margin-right: 10px;
-  margin-left: -2rem;
-  width: 1.2rem;
-  height: 1.2rem;
-  background: white;
-  border: 2px solid #000091;
+    content: '';
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: -2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: white;
+    border: 2px solid #000091;
 }
 
 input[type='checkbox'] + label span {
-  flex-shrink: 20;
+    flex-shrink: 20;
 }
 
 input[type='checkbox']:checked + label::before {
-  background: #000091;
+    background: #000091;
 }
 input[type='checkbox']:checked + label::after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: calc(28px - 2rem);
-  border-left: 3px solid white;
-  border-bottom: 3px solid white;
-  height: 6px;
-  width: 13px;
-  transform: rotate(-45deg);
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: calc(28px - 2rem);
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    height: 6px;
+    width: 13px;
+    transform: rotate(-45deg);
 }
 input[type='checkbox']:focus + label::before {
-  outline: #5d9dd5 solid 1px;
-  box-shadow: 0 0px 8px #5e9ed6;
+    outline: #5d9dd5 solid 1px;
+    box-shadow: 0 0px 8px #5e9ed6;
 }
 
 input[type='checkbox'] {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
 }
 
-
 input[type='checkbox']:disabled + label {
-  color: #575757;
+    color: #575757;
 }
 
 input[type='checkbox']:disabled + label::before {
-  background: #ddd;
+    background: #ddd;
 }
 
 input[type='submit']:disabled {
-  color: black;
-  background: #ddd;
-  border-color: black;
-  cursor: not-allowed;
+    color: black;
+    background: #ddd;
+    border-color: black;
+    cursor: not-allowed;
 }
-
-
 
 .button:hover,
 .back-button:hover {
@@ -568,13 +625,13 @@ a#geolocalisation {
     display: block;
     width: 2rem;
     height: 2rem;
-    background-image: url("map-marker2.svg");
+    background-image: url('map-marker2.svg');
     background-size: contain;
 }
 
 .reponse {
     color: #494e77;
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-bottom: 1rem;
 }
 
@@ -657,5 +714,4 @@ a#geolocalisation {
     footer {
         display: none;
     }
-
 }

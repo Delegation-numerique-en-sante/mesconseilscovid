@@ -1,3 +1,3 @@
 Vos informations personnelles sont seulement stockées sur cet appareil, et ne sont pas partagées.  
-À tout moment, vous pouvez <a href="" class="js-suppression">supprimer l’intégralité de ces données</a>.  
+À tout moment, vous pouvez <a class="js-suppression" href="">supprimer l’intégralité de ces données</a>.  
 [Conditions d’utilisation](#conditionsutilisation) - [Contact](mailto:mesconseilscovid@sante.gouv.fr) - [Code source](https://github.com/Delegation-numerique-en-sante/mesconseilscovid)

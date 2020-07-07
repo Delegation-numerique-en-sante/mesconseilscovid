@@ -1,1 +1,5 @@
 <!---->Mes caractéristiques
+
+---
+
+<!---->Ses caractéristiques

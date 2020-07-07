@@ -1,7 +1,7 @@
 var assert = require('chai').assert
 
-var Profil = require('../profil.js')
-var profil = new Profil()
+var Profil = require('../profil.js').Profil
+var profil = new Profil('mes_infos')
 
 describe('Profil', function () {
     beforeEach(function () {
@@ -10,6 +10,12 @@ describe('Profil', function () {
 
     afterEach(function () {
         profil.resetData()
+    })
+
+    it('Le nom du profil n’est pas échappé', function () {
+        var evil = '<script>alert("something evil")</script>'
+        var profil = new Profil(evil)
+        assert.strictEqual(profil.nom, '<script>alert("something evil")</script>')
     })
 
     it('Le questionnaire est vide par défaut', function () {
@@ -55,6 +61,7 @@ describe('Profil', function () {
             contact_a_risque_autre: undefined,
         })
         assert.isFalse(profil.isComplete())
+        assert.isTrue(profil.isEmpty())
     })
 
     it('Le questionnaire peut être partiellement rempli', function () {
@@ -64,6 +71,7 @@ describe('Profil', function () {
         profil.fillData(data)
         assert.include(profil.getData(), data)
         assert.isFalse(profil.isComplete())
+        assert.isFalse(profil.isEmpty())
     })
 
     it('Le questionnaire peut être partiellement vidé', function () {
@@ -122,6 +130,7 @@ describe('Profil', function () {
         profil.fillData(data)
         assert.deepEqual(profil.getData(), data)
         assert.isTrue(profil.isComplete())
+        assert.isFalse(profil.isEmpty())
     })
 
     it('Le questionnaire peut être complètement rempli mais âge < 15', function () {
@@ -169,6 +178,7 @@ describe('Profil', function () {
         profil.fillData(data)
         assert.deepEqual(profil.getData(), data)
         assert.isFalse(profil.isComplete())
+        assert.isFalse(profil.isEmpty())
     })
 
     it('Le questionnaire peut être complètement vidé', function () {
@@ -257,5 +267,6 @@ describe('Profil', function () {
             contact_a_risque_autre: undefined,
         })
         assert.isFalse(profil.isComplete())
+        assert.isTrue(profil.isEmpty())
     })
 })
