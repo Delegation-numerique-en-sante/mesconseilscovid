@@ -139,6 +139,7 @@ a .profil {
 }
 .block ul.cards {
     padding: 0;
+    margin: auto;
 }
 .card {
     border: thin solid #ccc;
