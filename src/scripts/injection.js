@@ -22,13 +22,6 @@ module.exports = {
         element.setAttribute('href', carteDepartements.lien_prefecture(departement))
     },
 
-    caracteristique: function (element, value) {
-        if (!element) return
-        if (value) {
-            element.textContent = value
-        }
-    },
-
     caracteristiquesARisques: function (element, algorithme) {
         if (
             algorithme.sup65 ||

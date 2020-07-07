@@ -76,18 +76,6 @@ function showRelevantAnswersRecap(element, profil, algorithme) {
     }
     var subElement = element.querySelector(selector)
     if (!subElement) return
-    injection.caracteristique(
-        subElement.querySelector('#nom-caracteristiques-age'),
-        profil.age
-    )
-    injection.caracteristique(
-        subElement.querySelector('#nom-caracteristiques-taille'),
-        profil.taille
-    )
-    injection.caracteristique(
-        subElement.querySelector('#nom-caracteristiques-poids'),
-        profil.poids
-    )
     var nomCaracteristiquesARisques = subElement.querySelector(
         '#nom-caracteristiques-a-risques'
     )
