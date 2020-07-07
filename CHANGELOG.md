@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-07-07
+
+* ajout de la gestion de multiples profils
+
 ## 2020-07-06
 
 * mise à jour de liens cassés sur le site du gouvernement
