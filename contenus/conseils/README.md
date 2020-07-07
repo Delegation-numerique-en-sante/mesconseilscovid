@@ -149,8 +149,6 @@ Pour plus d’informations :
 
 ## [conseils_département_défaut.md](conseils_département_défaut.md)
 
-Le **mardi 2 juin** les [règles de déconfinement changent](https://www.gouvernement.fr/info-coronavirus). Le détail des nouvelles recommandations est disponible sur cette page de conseils, nous vous invitons à la mettre en favori pour y revenir régulièrement. Vous n’aurez pas à saisir de nouveau vos informations qui restent stockées dans votre ordinateur ou téléphone.
-
 Pour plus d’informations, vous pouvez consulter :
 
 * l’infographie récapitulative du [plan de déconfinement](https://www.gouvernement.fr/partage/11439-coronavirus-ce-qu-il-faut-savoir) ;
@@ -269,8 +267,6 @@ Comme l’origine du Covid-19 n’est pas bactérienne, en dehors de la présenc
 
 
 ## [conseils_généraux_info.md](conseils_généraux_info.md)
-
-Enfin, il est conseillé d’aérer très régulièrement les pièces dans lesquelles vous vivez ou travaillez en ouvrant les fenêtres (au moins 10 minutes plusieurs fois par jour).
 
 Pour plus d’informations, vous pouvez consulter :
 
