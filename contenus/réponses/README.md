@@ -34,12 +34,6 @@ Vous exercez une activité professionnelle et/ou bénévole dans le domaine de l
 
 
 
-## [réponse_caractéristiques.md](réponse_caractéristiques.md)
-
-Vous avez les caractéristiques suivantes : <b id="nom-caracteristiques-age"></b> ans, <b id="nom-caracteristiques-taille"></b> cm et <b id="nom-caracteristiques-poids"></b> kg (<a href="#caracteristiques">modifier</a>)
-
-
-
 ## [réponse_caractéristiques_à_risques.md](réponse_caractéristiques_à_risques.md)
 
 Vous présentez une ou des caractéristiques à risque : <b id="nom-caracteristiques-a-risques"></b> (<a href="#caracteristiques">modifier</a>)
