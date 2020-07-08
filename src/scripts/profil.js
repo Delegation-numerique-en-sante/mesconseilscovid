@@ -271,7 +271,7 @@ class Profil {
         var label = this.hasSuiviStartDate() ? 'Continuer' : 'Démarrer'
         return affichage.safeHtml`
             <a class="button button-full-width conseils-link"
-                data-set-profil="${this.nom}" href="#suiviquestionnaire"
+                data-set-profil="${this.nom}" href="#suivisymptomes"
                 >${label} ${possessifMasculinSingulier} suivi</a>
         `
     }

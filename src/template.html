@@ -834,13 +834,65 @@
 </section>
 
 <section id="suiviintroduction" hidden>
-    <div id="suiviintroduction-block" class="block">
+    <div id="suivi-introduction-block" class="block">
         <h2>Auto-suivi de la maladie</h2>
         <p id="tagline-suivi">{{ meta_suivi_introduction|me_or_them }}</p>
         <div id="profils-cards" class="cards"></div>
         <p>
             <strong>Nous vous conseillons de renseigner le questionnaire 1 à 2 fois par jour.</strong>
         </p>
+    </div>
+</section>
+
+<section id="suivisymptomes" hidden>
+    <form id="suivi-symptomes-form" action="" class="block">
+        <fieldset>
+            <legend>{{ question_suivi_symptômes_titre|me_or_them }}</legend>
+            <div>
+                <input id="suivi_symptomes" type="checkbox" name="suivi_symptomes">
+                <label for="suivi_symptomes">
+                    <span>
+                        {{ question_suivi_symptômes_libellé|me_or_them }}
+                    </span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <p>
+                    {{ question_suivi_symptômes_essoufflement_libellé|me_or_them }}
+                </p>
+                <input id="suivi_symptomes_essoufflement_mieux" type="radio" name="suivi_symptomes_essoufflement" value="mieux">
+                <label for="suivi_symptomes_essoufflement_mieux">Mieux</label>
+                <input id="suivi_symptomes_essoufflement_stable" type="radio" name="suivi_symptomes_essoufflement" value="stable">
+                <label for="suivi_symptomes_essoufflement_stable">Stable</label>
+                <input id="suivi_symptomes_essoufflement_pire" type="radio" name="suivi_symptomes_essoufflement" value="pire">
+                <label for="suivi_symptomes_essoufflement_pire">Un peu moins bien</label>
+                <input id="suivi_symptomes_essoufflement_critique" type="radio" name="suivi_symptomes_essoufflement" value="critique">
+                <label for="suivi_symptomes_essoufflement_critique">Beaucoup moins bien</label>
+            </div>
+            <div class="secondary disabled">
+                <p>
+                    {{ question_suivi_symptômes_état_général_libellé|me_or_them }}
+                </p>
+                <input id="suivi_symptomes_etat_general_mieux" type="radio" name="suivi_symptomes_etat_general" value="mieux">
+                <label for="suivi_symptomes_etat_general_mieux">Mieux</label>
+                <input id="suivi_symptomes_etat_general_stable" type="radio" name="suivi_symptomes_etat_general" value="stable">
+                <label for="suivi_symptomes_etat_general_stable">Stable</label>
+                <input id="suivi_symptomes_etat_general_pire" type="radio" name="suivi_symptomes_etat_general" value="pire">
+                <label for="suivi_symptomes_etat_general_pire">Un peu moins bien</label>
+                <input id="suivi_symptomes_etat_general_critique" type="radio" name="suivi_symptomes_etat_general" value="critique">
+                <label for="suivi_symptomes_etat_general_critique">Beaucoup moins bien</label>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <a href="#suiviintroduction" class="back-button button-outline">Retour</a>
+            <input type="submit" class="button" value="Continuer">
+        </div>
+    </form>
+</section>
+
+<section id="suiviconseils" hidden>
+    <div id="suivi-conseils-block" class="block">
+        <h2>TODO</h2>
     </div>
 </section>
 

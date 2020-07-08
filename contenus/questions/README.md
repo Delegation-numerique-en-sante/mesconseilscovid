@@ -314,6 +314,46 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
+## [question_suivi_symptômes_essoufflement_libellé.md](question_suivi_symptômes_essoufflement_libellé.md)
+
+<!---->Si vous ressentez un manque de souffle quand vous parlez ou faites un petit effort, comment cela a-t-il évolué depuis hier (ou votre dernière connexion) ?
+
+---
+
+<!---->Si votre proche ressent un manque de souffle quand il/elle parle ou fait un petit effort, comment cela a-t-il évolué depuis hier (ou la dernière connexion) ?
+
+
+
+## [question_suivi_symptômes_libellé.md](question_suivi_symptômes_libellé.md)
+
+<!---->J’ai un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>aujourd’hui</b>.
+
+---
+
+<!---->Cette personne a un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>aujourd’hui</b>.
+
+
+
+## [question_suivi_symptômes_titre.md](question_suivi_symptômes_titre.md)
+
+<!---->Mon état actuel
+
+---
+
+<!---->Son état actuel
+
+
+
+## [question_suivi_symptômes_état_général_libellé.md](question_suivi_symptômes_état_général_libellé.md)
+
+<!---->Concernant votre état physique, comment vous sentez-vous depuis hier (ou votre dernière connexion) ?
+
+---
+
+<!---->Concernant l’état physique de votre proche, comment se sent-il/elle depuis hier (ou la dernière connexion) ?
+
+
+
 ## [question_symptômes_actuels_alimentation_libellé.md](question_symptômes_actuels_alimentation_libellé.md)
 
 <!---->Je suis dans l’impossibilité de m’alimenter <em>ou</em> de boire <b>depuis 24 heures ou plus</b>.

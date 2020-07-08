@@ -292,6 +292,19 @@ Conseils :
 6. [Conseils d’ordre général](#conseils-dordre-général)
 
 
+### Auto-suivi
+
+#### Symptômes
+
+[Titre](questions/question_suivi_symptômes_titre.md)
+
+Question : [libellé](questions/question_suivi_symptômes_libellé.md)
+
+Sous-question (essoufflement) : [libellé](questions/question_suivi_symptômes_essoufflement_libellé.md)
+
+Sous-question (état général) : [libellé](questions/question_suivi_symptômes_état_général_libellé.md)
+
+
 ### Critères
 
 #### Couleur

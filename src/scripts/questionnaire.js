@@ -286,6 +286,38 @@ function contactarisque(form, app, router) {
     })
 }
 
+function suivisymptomes(form, app, router) {
+    var button = form.querySelector('input[type=submit]')
+    var primary = form.elements['suivi_symptomes']
+    formUtils.enableOrDisableSecondaryFields(form, primary)
+    primary.addEventListener('click', function () {
+        formUtils.enableOrDisableSecondaryFields(form, primary)
+    })
+    const uncheckedLabel = app.profil.estMonProfil()
+        ? 'Je n’ai pas eu de symptômes aujourd’hui'
+        : 'Cette personne n’a pas de symptômes aujourd’hui'
+    const requiredLabel = 'Veuillez remplir le formulaire au complet'
+    formUtils.toggleFormButtonOnRadioRequired(
+        form,
+        button.value,
+        uncheckedLabel,
+        requiredLabel
+    )
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+        const suivi = {
+            date: +new Date(),
+            symptomes: event.target.elements['suivi_symptomes'].checked,
+            essoufflement: event.target.elements['suivi_symptomes_essoufflement'].value,
+            general: event.target.elements['suivi_symptomes_etat_general'].value,
+        }
+        console.log(suivi)
+        // app.profil.suivi = suivi
+        // app.enregistrerProfilActuel()
+        router.navigate('suiviconseils')
+    })
+}
+
 module.exports = {
     nom,
     residence,
@@ -296,4 +328,5 @@ module.exports = {
     symptomesactuels,
     symptomespasses,
     contactarisque,
+    suivisymptomes,
 }
