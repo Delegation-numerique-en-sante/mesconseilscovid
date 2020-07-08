@@ -1,11 +1,10 @@
 // Polyfills pour ES2015
-import 'core-js/stable'
+import 'core-js/features/promise'
 
-// Polyfill pour window.fetch (pas inclus dans core-js pour l’instant)
+// Polyfills pour les API du navigateur
+import 'core-js/web/url'
 import 'whatwg-fetch'
-
-// Polyfill pour CustomEvent
-require('./polyfills/custom_event.js')
+import './polyfills/custom_event.js'
 
 var Updater = require('./updater.js')
 var actions = require('./actions.js')
