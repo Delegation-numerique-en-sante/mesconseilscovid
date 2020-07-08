@@ -30,10 +30,7 @@ module.exports = function (router) {
     this.showBanner = function (document) {
         const block = document.querySelector('#update-banner')
         affichage.showElement(block)
-
-        const customDisplayEvent = document.createEvent('CustomEvent')
-        customDisplayEvent.initCustomEvent('show-banner', true, true, block)
-        document.dispatchEvent(customDisplayEvent)
+        document.dispatchEvent(new CustomEvent('show-banner', { detail: block }))
     }
 
     this.updateVersion = function (fetchedVersion) {
