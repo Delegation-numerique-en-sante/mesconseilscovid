@@ -835,8 +835,12 @@
 
 <section id="suiviintroduction" hidden>
     <div id="suiviintroduction-block" class="block">
-        {{ meta_suivi_introduction }}
-        <ul id="profils-cards" class="cards"></ul>
+        <h2>Auto-suivi de la maladie</h2>
+        <p id="tagline-suivi">{{ meta_suivi_introduction|me_or_them }}</p>
+        <div id="profils-cards" class="cards"></div>
+        <p>
+            <strong>Nous vous conseillons de renseigner le questionnaire 1 à 2 fois par jour.</strong>
+        </p>
     </div>
 </section>
 

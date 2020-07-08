@@ -5,6 +5,15 @@ class Profil {
         this.nom = nom
     }
 
+    get suivi_start_date() {
+        return new Date(parseInt(this._suivi_start_date))
+    }
+
+    set suivi_start_date(date) {
+        // `+` to turn it into a timestamp
+        this._suivi_start_date = +date
+    }
+
     resetData(nom) {
         this.nom = nom
         this.departement = undefined
@@ -46,6 +55,7 @@ class Profil {
         this.contact_a_risque_meme_classe = undefined
         this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_autre = undefined
+        this._suivi_start_date = undefined
     }
 
     fillData(data) {
@@ -90,6 +100,7 @@ class Profil {
         this.contact_a_risque_meme_classe = data['contact_a_risque_meme_classe']
         this.contact_a_risque_stop_covid = data['contact_a_risque_stop_covid']
         this.contact_a_risque_autre = data['contact_a_risque_autre']
+        this._suivi_start_date = data['_suivi_start_date']
     }
 
     getData() {
@@ -134,6 +145,7 @@ class Profil {
             contact_a_risque_meme_classe: this.contact_a_risque_meme_classe,
             contact_a_risque_stop_covid: this.contact_a_risque_stop_covid,
             contact_a_risque_autre: this.contact_a_risque_autre,
+            _suivi_start_date: this._suivi_start_date,
         }
     }
 
@@ -192,6 +204,10 @@ class Profil {
         )
     }
 
+    hasSuiviStartDate() {
+        return typeof this._suivi_start_date !== 'undefined'
+    }
+
     estMonProfil() {
         return this.nom == 'mes_infos'
     }
@@ -215,6 +231,13 @@ class Profil {
                     data-set-profil="${this.nom}" href="#conseils"
                     >Voir ${possessifPluriel} conseils</a>
             `
+            if (this.hasSuiviStartDate()) {
+                mainButton += affichage.safeHtml`
+                    <a class="button ${outlined} suivi-link"
+                        data-set-profil="${this.nom}" href="#suiviintroduction"
+                        >Continuer ${possessifMasculinSingulier} suivi</a>
+                `
+            }
         } else {
             var label = this.isEmpty() ? 'Démarrer' : 'Continuer'
             mainButton = affichage.safeHtml`
@@ -243,28 +266,21 @@ class Profil {
         `)
     }
 
-    renderButtonsSuivi() {
+    renderButtonSuivi() {
         const possessifMasculinSingulier = this.estMonProfil() ? 'mon' : 'son'
-        var label = this.isEmpty() ? 'Démarrer' : 'Continuer'
-        var mainButton = affichage.safeHtml`
+        var label = this.hasSuiviStartDate() ? 'Continuer' : 'Démarrer'
+        return affichage.safeHtml`
             <a class="button button-full-width conseils-link"
-                data-set-profil="${this.nom}" href="#residence"
+                data-set-profil="${this.nom}" href="#suiviquestionnaire"
                 >${label} ${possessifMasculinSingulier} suivi</a>
         `
-        return (
-            mainButton +
-            affichage.safeHtml`
-            <a data-set-profil="${this.nom}" href="#suiviconseils"
-                >Visualiser ${possessifMasculinSingulier} suivi</a>
-            `
-        )
     }
 
     renderCardSuivi() {
         return affichage.createElementFromHTML(`
         <div class="card">
             ${this.renderNom()}
-            <div>${this.renderButtonsSuivi()}</div>
+            <div>${this.renderButtonSuivi()}</div>
         </div>
         `)
     }

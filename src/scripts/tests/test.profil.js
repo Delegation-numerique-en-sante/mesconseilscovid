@@ -59,6 +59,7 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: undefined,
             contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
+            _suivi_start_date: undefined,
         })
         assert.isFalse(profil.isComplete())
         assert.isTrue(profil.isEmpty())
@@ -126,6 +127,7 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
+            _suivi_start_date: 1594232323612,
         }
         profil.fillData(data)
         assert.deepEqual(profil.getData(), data)
@@ -174,6 +176,7 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
+            _suivi_start_date: 1594232323612,
         }
         profil.fillData(data)
         assert.deepEqual(profil.getData(), data)
@@ -222,6 +225,7 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
+            _suivi_start_date: 1594232323612,
         }
         profil.fillData(data)
         profil.resetData()
@@ -265,6 +269,7 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: undefined,
             contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
+            _suivi_start_date: undefined,
         })
         assert.isFalse(profil.isComplete())
         assert.isTrue(profil.isEmpty())
