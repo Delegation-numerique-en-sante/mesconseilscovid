@@ -1,5 +1,8 @@
 {
-    "extends": "../../.eslintrc.json",
+    "extends": [
+        "../../.eslintrc.json",
+        "plugin:compat/recommended"
+    ],
     "env": {
         "browser": true
     },
@@ -9,5 +12,11 @@
     },
     "rules": {
         "no-irregular-whitespace": ["error", { "skipTemplates": true }]
+    },
+    "settings": {
+        "polyfills": [
+            "Promise",
+            "URL"
+        ]
     }
 }

@@ -4,6 +4,7 @@
     "@babel/preset-env": "^7.10.4",
     "chai": "^4.2.0",
     "eslint": "^7.1.0",
+    "eslint-plugin-compat": "^3.8.0",
     "jsdom": "^16.2.2",
     "mocha": "^8.0.1",
     "node-static": "^0.7.11",
@@ -35,17 +36,17 @@
       [
         "@babel/preset-env",
         {
-          "targets": [
-            ">0.5% in FR",
-            "last 2 versions",
-            "IE 11",
-            "Firefox ESR",
-            "not dead"
-          ],
           "useBuiltIns": "usage",
           "corejs": 3
         }
       ]
     ]
-  }
+  },
+  "browserslist": [
+    ">0.5% in FR",
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR",
+    "not dead"
+  ]
 }
