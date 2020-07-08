@@ -310,6 +310,13 @@ Pour plus d’informations, vous pouvez prendre connaissance du document [« Fa
 
 
 
+## [conseils_symptômes_actuels_autosuivi.md](conseils_symptômes_actuels_autosuivi.md)
+
+**Après avoir vu un médecin,** vous pourrez suivre l’évolution de vos symptômes ici :
+
+
+
+
 ## [conseils_symptômes_actuels_gravité1.md](conseils_symptômes_actuels_gravité1.md)
 
 Pour agir, il vous est conseillé :

@@ -12,6 +12,9 @@ var redirectToUnansweredQuestions = function (page, profil) {
     if (page === 'nouvelleversiondisponible') return
     if (page === 'nom') return
 
+    // TODO: discuter des conditions requises
+    if (page === 'suiviintroduction') return
+
     // Questions obligatoires
 
     if (typeof profil.departement === 'undefined' && page !== 'residence')

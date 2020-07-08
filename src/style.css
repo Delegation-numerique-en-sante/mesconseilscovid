@@ -123,10 +123,12 @@ a .profil {
     max-width: 80ch;
 }
 
-#introduction-block {
+#introduction-block,
+#suiviintroduction-block {
     text-align: center;
 }
-#introduction-block p {
+#introduction-block p,
+#suiviintroduction-block p {
     margin-left: auto;
     margin-right: auto;
     max-width: 60ch;
@@ -177,6 +179,10 @@ main footer {
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: 50%;
+}
+
+#tagline-suivi {
+    font-size: x-large;
 }
 
 #nom-form,
@@ -344,6 +350,10 @@ main footer {
 .conseil-vert {
     background-color: #7fd5c5;
     border-color: #00ac8c;
+}
+.conseil-autosuivi {
+    padding: 1rem;
+    margin: 2rem auto;
 }
 
 fieldset {

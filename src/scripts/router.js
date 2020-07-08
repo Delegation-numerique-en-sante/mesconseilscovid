@@ -1,6 +1,7 @@
 var Navigo = require('navigo')
 
 var introduction = require('./introduction.js')
+var suiviintroduction = require('./suiviintroduction.js')
 var affichage = require('./affichage.js')
 var conseils = require('./conseils.js')
 var questionnaire = require('./questionnaire.js')
@@ -101,6 +102,11 @@ function initRouter(app) {
             var pageName = 'conseils'
             var element = pagination.loadPage(pageName)
             conseils.page(element, app)
+        })
+        .on(new RegExp('^suiviintroduction$'), function () {
+            var pageName = 'suiviintroduction'
+            var element = pagination.loadPage(pageName)
+            suiviintroduction.page(element, app)
         })
         .on(new RegExp('^pediatrie$'), function () {
             var pageName = 'pediatrie'

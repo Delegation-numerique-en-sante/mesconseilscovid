@@ -75,7 +75,7 @@
                     <a class="button button-full-width" data-set-profil="mes_infos" href="#residence">Démarrer</a>
                 </div>
             </div>
-        </div>
+        </ul>
     </div>
 </section>
 
@@ -627,6 +627,15 @@
                 <div id="conseils-personnels-symptomes-actuels-gravite4" class="conseil conseil-orange" hidden>
                     {{ conseils_symptômes_actuels_gravité4 }}
                 </div>
+                <div class="conseil conseil-autosuivi">
+                    {{ conseils_symptômes_actuels_autosuivi }}
+                    <div class="form-controls">
+                        <div class="button-full-width">
+                            <a class="button button-full-width" href="#suiviintroduction"
+                                >Gérer mon auto-suivi de la maladie</a>
+                        </div>
+                    </div>
+                </div>
                 {{ conseils_isolement }}
                 {{ conseils_cartographie_dépistage }}
                 {{ conseils_symptômes_défaut }}
@@ -821,6 +830,13 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section id="suiviintroduction" hidden>
+    <div id="suiviintroduction-block" class="block">
+        {{ meta_suivi_introduction }}
+        <ul id="profils-cards" class="cards"></ul>
     </div>
 </section>
 

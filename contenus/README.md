@@ -234,10 +234,11 @@ Conseils :
     * ou [conseils_symptômes_actuels_gravité3.md](conseils/conseils_symptômes_actuels_gravité3.md) si (température et toux, personne à [Risque](#risque) mais *un seul* facteur de [gravité mineure](#gravité-mineure)) OU (pas de température et (toux ou douleurs ou odorat) et personne à [Risque](#risque)) OU (avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie)) et (personne à [Risque](#risque) *sans* facteur de [gravité mineure](#gravité-mineure) OU âge supérieur à 50 ans OU *un* ou *plusieurs* facteur de [gravité mineure](#gravité-mineure)))
     * ou [conseils_symptômes_actuels_gravité2.md](conseils/conseils_symptômes_actuels_gravité2.md) si (température et toux, personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure)) OU (avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie)) et personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure))
     * ou [conseils_symptômes_actuels_gravité1.md](conseils/conseils_symptômes_actuels_gravité1.md) par défaut
-2. [conseils_isolement.md](conseils/conseils_isolement.md)
-3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
-4. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
-5. [Conseils d’ordre général](#conseils-dordre-général)
+2. [conseils_symptômes_actuels_autosuivi.md](conseils/conseils_symptômes_actuels_autosuivi.md)
+3. [conseils_isolement.md](conseils/conseils_isolement.md)
+4. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
+5. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
+6. [Conseils d’ordre général](#conseils-dordre-général)
 
 
 #### Symptômes passés

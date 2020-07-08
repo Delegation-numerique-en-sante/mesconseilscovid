@@ -242,6 +242,32 @@ class Profil {
         </div>
         `)
     }
+
+    renderButtonsSuivi() {
+        const possessifMasculinSingulier = this.estMonProfil() ? 'mon' : 'son'
+        var label = this.isEmpty() ? 'Démarrer' : 'Continuer'
+        var mainButton = affichage.safeHtml`
+            <a class="button button-full-width conseils-link"
+                data-set-profil="${this.nom}" href="#residence"
+                >${label} ${possessifMasculinSingulier} suivi</a>
+        `
+        return (
+            mainButton +
+            affichage.safeHtml`
+            <a data-set-profil="${this.nom}" href="#suiviconseils"
+                >Visualiser ${possessifMasculinSingulier} suivi</a>
+            `
+        )
+    }
+
+    renderCardSuivi() {
+        return affichage.createElementFromHTML(`
+        <div class="card">
+            ${this.renderNom()}
+            <div>${this.renderButtonsSuivi()}</div>
+        </div>
+        `)
+    }
 }
 
 module.exports = {
