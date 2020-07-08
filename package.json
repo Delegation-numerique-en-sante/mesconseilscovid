@@ -1,14 +1,13 @@
 {
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
     "chai": "^4.2.0",
     "eslint": "^7.1.0",
     "jsdom": "^16.2.2",
     "mocha": "^8.0.1",
     "node-static": "^0.7.11",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-goodie-bag": "^2.0.0",
     "parcel-plugin-html-externals": "^0.2.0",
     "parcel-plugin-ogimage": "^1.2.0",
     "parcel-plugin-static-files-copy": "^2.3.1",
@@ -16,8 +15,10 @@
     "playwright": "^1.1.1"
   },
   "dependencies": {
+    "core-js": "^3.6.5",
     "localforage": "^1.7.3",
-    "navigo": "^7.1.2"
+    "navigo": "^7.1.2",
+    "whatwg-fetch": "^3.1.0"
   },
   "scripts": {
     "test": "mocha src/scripts/tests/",
@@ -29,8 +30,22 @@
   "externals": {
     "version.json": false
   },
-  "browserslist": [
-    "defaults",
-    "IE 11"
-  ]
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": [
+            ">0.5% in FR",
+            "last 2 versions",
+            "IE 11",
+            "Firefox ESR",
+            "not dead"
+          ],
+          "useBuiltIns": "usage",
+          "corejs": 3
+        }
+      ]
+    ]
+  }
 }
