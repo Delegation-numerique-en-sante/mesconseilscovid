@@ -215,7 +215,9 @@ describe('Auto-suivi', function () {
 
         // La page d’Introduction contient maintenant un lien vers mon suivi
         {
-            let bouton = await page.waitForSelector('#page >> text="Continuer mon suivi"')
+            let bouton = await page.waitForSelector(
+                '#page >> text="Continuer mon suivi"'
+            )
             assert.equal(
                 await bouton.evaluate(
                     (e) => e.parentElement.parentElement.querySelector('h3').innerText

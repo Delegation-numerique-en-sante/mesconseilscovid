@@ -32,7 +32,7 @@ lint:  ## Run ESLint.
 	npm run-script lint
 
 pretty:  ## Run PrettierJS.
-	prettier src/**/*.js src/style.css --write
+	prettier src/*.js src/**/*.js src/**/**/*.js src/**/**/**/*.js src/style.css --write
 
 build:  ## Build the index from `template.html` + contenus markdown files.
 	python3 build.py all
