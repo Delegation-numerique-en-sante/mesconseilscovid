@@ -304,6 +304,13 @@ Sous-question (essoufflement) : [libellé](questions/question_suivi_symptômes_e
 
 Sous-question (état général) : [libellé](questions/question_suivi_symptômes_état_général_libellé.md)
 
+Conseils :
+
+* Si au moins une réponse « Beaucoup moins bien » alors [suivi_gravité_3.md](suivi/suivi_gravité_3.md)
+* Si au moins une réponse « Un peu moins bien » alors [suivi_gravité_2.md](suivi/suivi_gravité_2.md)
+* Si température ou diarrhée ou toux alors [suivi_gravité_1.md](suivi/suivi_gravité_1.md)
+* Si que des réponses « Mieux » ou « Stable » alors [suivi_gravité_0.md](suivi/suivi_gravité_0.md)
+
 
 ### Critères
 

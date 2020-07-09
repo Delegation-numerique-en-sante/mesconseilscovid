@@ -1,5 +1,6 @@
 var affichage = require('./affichage.js')
 var Algorithme = require('./algorithme.js').Algorithme
+var AlgorithmeSuivi = require('./algorithmesuivi.js').AlgorithmeSuivi
 var actions = require('./actions.js')
 var injection = require('./injection.js')
 
@@ -14,6 +15,12 @@ function page(element, app) {
     }
 
     var algorithme = new Algorithme(app.profil)
+
+    if (app.profil.hasSuiviStartDate() && app.profil.suivi.length) {
+        var algorithmeSuivi = new AlgorithmeSuivi(app.profil)
+        affichage.displayElementById(element, 'suivi')
+        showRelevantSuiviBlocks(element, algorithmeSuivi)
+    }
 
     // Display appropriate conseils.
     showRelevantBlocks(element, app.profil, algorithme)
@@ -45,6 +52,11 @@ function getCustomIllustrationName(profil) {
     if (profil.contact_a_risque) {
         return 'contact-a-risque'
     }
+}
+
+function showRelevantSuiviBlocks(element, algorithmeSuivi) {
+    var blockNames = [algorithmeSuivi.graviteBlockNameToDisplay()]
+    affichage.displayBlocks(element, blockNames)
 }
 
 function showRelevantBlocks(element, profil, algorithme) {

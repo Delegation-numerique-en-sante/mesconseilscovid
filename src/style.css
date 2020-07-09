@@ -321,19 +321,23 @@ main footer {
 }
 .statut-symptomatique-urgent,
 .statut-symptomatique,
-.statut-risque-eleve {
+.statut-risque-eleve,
+.suivi-gravite-3 {
     background: #ffb6a5;
     border-color: #ff6f4c;
 }
-.statut-personne-fragile {
+.statut-personne-fragile,
+.suivi-gravite-2 {
     background: #ffcc9f;
     border-color: #ff9940;
 }
-.statut-foyer-fragile {
+.statut-foyer-fragile,
+.suivi-gravite-1 {
     background: #fde7a0;
     border-color: #fdcf41;
 }
-.statut-peu-de-risques {
+.statut-peu-de-risques,
+.suivi-gravite-0 {
     background: #7fd5c5;
     border-color: #00ac8c;
 }
