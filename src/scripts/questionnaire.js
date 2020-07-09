@@ -288,6 +288,8 @@ function contactarisque(form, app, router) {
 
 function suivisymptomes(form, app, router) {
     var button = form.querySelector('input[type=submit]')
+    // On pré-suppose que la personne qui fait son auto-suivi a des symptômes
+    form['suivi_symptomes'].checked = true
     var primary = form.elements['suivi_symptomes']
     formUtils.enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
