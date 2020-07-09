@@ -314,6 +314,16 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
+## [question_suivi_symptômes_alimentation_hydratation_libellé.md](question_suivi_symptômes_alimentation_hydratation_libellé.md)
+
+<!---->Êtes-vous dans l’impossibilité de vous alimenter ou de boire <b>depuis 24 heures ou plus</b> ?
+
+---
+
+<!---->Votre proche est-il/elle dans l’impossibilité de s’alimenter ou de boire <b>depuis 24 heures ou plus</b> ?
+
+
+
 ## [question_suivi_symptômes_essoufflement_libellé.md](question_suivi_symptômes_essoufflement_libellé.md)
 
 <!---->Si vous ressentez un manque de souffle quand vous parlez ou faites un petit effort, comment cela a-t-il évolué depuis hier (ou votre dernière connexion) ?

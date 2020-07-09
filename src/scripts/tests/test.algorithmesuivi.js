@@ -53,6 +53,20 @@ describe('AlgorithmeSuivi statut', function () {
         assert.strictEqual(algorithme.graviteBlockNameToDisplay(), "suivi-gravite-2")
     })
 
+    it('Un suivi a une gravité 2 si pas d’alimentation ou d’hydratation', function () {
+        var data = {
+            suivi: [{
+                essoufflement: "mieux",
+                etatGeneral: "mieux",
+                alimentationHydratation: "oui"
+            }]
+        }
+        profil.fillData(data)
+        var algorithme = new AlgorithmeSuivi(profil)
+        assert.strictEqual(algorithme.gravite, 2)
+        assert.strictEqual(algorithme.graviteBlockNameToDisplay(), "suivi-gravite-2")
+    })
+
     it('Un suivi a une gravité 3 si au moins un critique', function () {
         var data = {
             suivi: [{

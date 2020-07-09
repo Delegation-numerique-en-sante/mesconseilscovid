@@ -896,6 +896,15 @@
                 <input id="suivi_symptomes_etat_general_critique" type="radio" name="suivi_symptomes_etat_general" value="critique">
                 <label for="suivi_symptomes_etat_general_critique">Beaucoup moins bien</label>
             </div>
+            <div class="secondary disabled">
+                <p>
+                    {{ question_suivi_symptômes_alimentation_hydratation_libellé|me_or_them }}
+                </p>
+                <input id="suivi_symptomes_alimentation_hydratation_oui" type="radio" name="suivi_symptomes_alimentation_hydratation" value="oui">
+                <label for="suivi_symptomes_alimentation_hydratation_oui">Oui</label>
+                <input id="suivi_symptomes_alimentation_hydratation_non" type="radio" name="suivi_symptomes_alimentation_hydratation" value="non">
+                <label for="suivi_symptomes_alimentation_hydratation_non">Non</label>
+            </div>
         </fieldset>
         <div class="form-controls">
             <a href="#suiviintroduction" class="back-button button-outline">Retour</a>

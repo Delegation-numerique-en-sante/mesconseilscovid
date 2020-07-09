@@ -8,7 +8,8 @@ class AlgorithmeSuivi {
         let gravite = 0
         if (
             this.dernierEtat.essoufflement === 'pire' ||
-            this.dernierEtat.etatGeneral === 'pire'
+            this.dernierEtat.etatGeneral === 'pire' ||
+            this.dernierEtat.alimentationHydratation === 'oui'
         ) {
             gravite = 2
         }
