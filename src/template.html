@@ -922,6 +922,15 @@
                 <input id="suivi_symptomes_etat_psychologique_critique" type="radio" name="suivi_symptomes_etat_psychologique" value="critique">
                 <label for="suivi_symptomes_etat_psychologique_critique">Beaucoup moins bien</label>
             </div>
+            <div class="secondary disabled">
+                <p>
+                    {{ question_suivi_symptômes_fièvre_libellé|me_or_them }}
+                </p>
+                <input id="suivi_symptomes_fievre_oui" type="radio" name="suivi_symptomes_fievre" value="oui">
+                <label for="suivi_symptomes_fievre_oui">Oui</label>
+                <input id="suivi_symptomes_fievre_non" type="radio" name="suivi_symptomes_fievre" value="non">
+                <label for="suivi_symptomes_fievre_non">Non</label>
+            </div>
         </fieldset>
         <div class="form-controls">
             <a href="#suiviintroduction" class="back-button button-outline">Retour</a>

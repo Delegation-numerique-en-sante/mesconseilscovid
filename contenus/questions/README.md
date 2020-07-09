@@ -334,6 +334,16 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
+## [question_suivi_symptômes_fièvre_libellé.md](question_suivi_symptômes_fièvre_libellé.md)
+
+<!---->Votre température est supérieure à 39° et ne diminue pas malgré la prise de Paracétamol ?
+
+---
+
+<!---->La température corporelle de votre proche est supérieure à 39° et ne diminue pas malgré la prise de Paracétamol ?
+
+
+
 ## [question_suivi_symptômes_libellé.md](question_suivi_symptômes_libellé.md)
 
 <!---->J’ai un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>aujourd’hui</b>.

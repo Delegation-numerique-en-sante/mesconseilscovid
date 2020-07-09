@@ -6,6 +6,9 @@ class AlgorithmeSuivi {
 
     get gravite() {
         let gravite = 0
+        if (this.dernierEtat.fievre === 'oui') {
+            gravite = 1
+        }
         if (
             this.dernierEtat.essoufflement === 'pire' ||
             this.dernierEtat.etatGeneral === 'pire' ||

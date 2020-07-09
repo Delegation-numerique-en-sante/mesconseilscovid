@@ -27,6 +27,20 @@ describe('AlgorithmeSuivi gravité', function () {
         assert.strictEqual(algorithme.graviteBlockNameToDisplay(), "suivi-gravite-0")
     })
 
+    it('Un suivi a une gravité 1 si fièvre', function () {
+        var data = {
+            suivi: [{
+                essoufflement: "mieux",
+                etatGeneral: "mieux",
+                fievre: "oui"
+            }]
+        }
+        profil.fillData(data)
+        var algorithme = new AlgorithmeSuivi(profil)
+        assert.strictEqual(algorithme.gravite, 1)
+        assert.strictEqual(algorithme.graviteBlockNameToDisplay(), "suivi-gravite-1")
+    })
+
     it('Un suivi a une gravité 2 si au moins un pire', function () {
         var data = {
             suivi: [{
