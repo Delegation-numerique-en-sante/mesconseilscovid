@@ -305,16 +305,15 @@ function suivisymptomes(form, app, router) {
     )
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        const suivi = {
+        const etat = {
             date: (new Date()).toJSON(),
             symptomes: event.target.elements['suivi_symptomes'].checked,
             essoufflement: event.target.elements['suivi_symptomes_essoufflement'].value,
             general: event.target.elements['suivi_symptomes_etat_general'].value,
         }
-        console.log(suivi)
-        // app.profil.suivi = suivi
-        // app.enregistrerProfilActuel()
-        router.navigate('suiviconseils')
+        app.profil.ajouterEtat(etat)
+        app.enregistrerProfilActuel()
+        router.navigate('conseils')
     })
 }
 

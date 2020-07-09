@@ -56,6 +56,7 @@ class Profil {
         this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_autre = undefined
         this._suivi_start_date = undefined
+        this.suivi = []
     }
 
     fillData(data) {
@@ -101,6 +102,7 @@ class Profil {
         this.contact_a_risque_stop_covid = data['contact_a_risque_stop_covid']
         this.contact_a_risque_autre = data['contact_a_risque_autre']
         this._suivi_start_date = data['_suivi_start_date']
+        this.suivi = data['suivi'] || []
     }
 
     getData() {
@@ -146,6 +148,7 @@ class Profil {
             contact_a_risque_stop_covid: this.contact_a_risque_stop_covid,
             contact_a_risque_autre: this.contact_a_risque_autre,
             _suivi_start_date: this._suivi_start_date,
+            suivi: this.suivi,
         }
     }
 
@@ -206,6 +209,14 @@ class Profil {
 
     hasSuiviStartDate() {
         return typeof this._suivi_start_date !== 'undefined'
+    }
+
+    ajouterEtat(etat) {
+        this.suivi.push(etat)
+    }
+
+    dernierEtat() {
+        return this.suivi.slice(-1)[0]
     }
 
     estMonProfil() {

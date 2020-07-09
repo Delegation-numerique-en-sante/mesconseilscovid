@@ -60,6 +60,7 @@ describe('Profil', function () {
             contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
             _suivi_start_date: undefined,
+            suivi: [],
         })
         assert.isFalse(profil.isComplete())
         assert.isTrue(profil.isEmpty())
@@ -72,6 +73,22 @@ describe('Profil', function () {
         assert.typeOf(profil._suivi_start_date, "string")
         assert.deepEqual(profil.suivi_start_date, date)
         assert.typeOf(profil.suivi_start_date, "date")
+    })
+
+    it('On peut ajouter et récupérer un état au suivi', function () {
+        assert.deepEqual(profil.suivi, [])
+        var etat = {
+            date: (new Date("2020-07-09T14:03:41.000Z")).toJSON()
+        }
+        profil.ajouterEtat(etat)
+        assert.deepEqual(profil.suivi, [{
+            date: "2020-07-09T14:03:41.000Z"
+        }])
+        var etat2 = {
+            date: (new Date("2020-07-10T14:03:41.000Z")).toJSON()
+        }
+        profil.ajouterEtat(etat2)
+        assert.deepEqual(profil.dernierEtat(), etat2)
     })
 
     it('Le questionnaire peut être partiellement rempli', function () {
@@ -136,7 +153,8 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
-            _suivi_start_date: 1594232323612,
+            _suivi_start_date: "2020-07-09T14:03:41.000Z",
+            suivi: [],
         }
         profil.fillData(data)
         assert.deepEqual(profil.getData(), data)
@@ -185,7 +203,8 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
-            _suivi_start_date: 1594232323612,
+            _suivi_start_date: "2020-07-09T14:03:41.000Z",
+            suivi: [],
         }
         profil.fillData(data)
         assert.deepEqual(profil.getData(), data)
@@ -234,7 +253,8 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
-            _suivi_start_date: 1594232323612,
+            _suivi_start_date: "2020-07-09T14:03:41.000Z",
+            suivi: [{foo: "bar"}],
         }
         profil.fillData(data)
         profil.resetData()
@@ -279,6 +299,7 @@ describe('Profil', function () {
             contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
             _suivi_start_date: undefined,
+            suivi: [],
         })
         assert.isFalse(profil.isComplete())
         assert.isTrue(profil.isEmpty())
