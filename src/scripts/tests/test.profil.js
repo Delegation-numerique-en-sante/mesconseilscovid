@@ -65,6 +65,15 @@ describe('Profil', function () {
         assert.isTrue(profil.isEmpty())
     })
 
+    it('La valeur de suivi_start_date est stockée sous forme de chaîne', function () {
+        var date = new Date("2020-07-09T14:03:41.000Z")
+        profil.suivi_start_date = date
+        assert.strictEqual(profil._suivi_start_date, "2020-07-09T14:03:41.000Z")
+        assert.typeOf(profil._suivi_start_date, "string")
+        assert.deepEqual(profil.suivi_start_date, date)
+        assert.typeOf(profil.suivi_start_date, "date")
+    })
+
     it('Le questionnaire peut être partiellement rempli', function () {
         var data = {
             departement: '01',

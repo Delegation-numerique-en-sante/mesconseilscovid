@@ -306,7 +306,7 @@ function suivisymptomes(form, app, router) {
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         const suivi = {
-            date: +new Date(),
+            date: (new Date()).toJSON(),
             symptomes: event.target.elements['suivi_symptomes'].checked,
             essoufflement: event.target.elements['suivi_symptomes_essoufflement'].value,
             general: event.target.elements['suivi_symptomes_etat_general'].value,

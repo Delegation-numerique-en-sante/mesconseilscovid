@@ -6,12 +6,12 @@ class Profil {
     }
 
     get suivi_start_date() {
-        return new Date(parseInt(this._suivi_start_date))
+        return new Date(this._suivi_start_date)
     }
 
     set suivi_start_date(date) {
-        // `+` to turn it into a timestamp
-        this._suivi_start_date = +date
+        // Turn the date into a readable string.
+        this._suivi_start_date = date.toJSON()
     }
 
     resetData(nom) {
