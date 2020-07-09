@@ -364,6 +364,16 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
+## [question_suivi_symptômes_état_psychologique_libellé.md](question_suivi_symptômes_état_psychologique_libellé.md)
+
+<!---->Comment votre moral et votre niveau d’anxiété ont évolué depuis hier (ou votre dernière connexion) ?
+
+---
+
+<!---->Comment le moral et le niveau d’anxiété de votre proche ont évolué depuis hier (ou la dernière connexion) ?
+
+
+
 ## [question_symptômes_actuels_alimentation_libellé.md](question_symptômes_actuels_alimentation_libellé.md)
 
 <!---->Je suis dans l’impossibilité de m’alimenter <em>ou</em> de boire <b>depuis 24 heures ou plus</b>.

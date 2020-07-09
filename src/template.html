@@ -595,6 +595,12 @@
                 <div id="suivi-gravite-0" class="statut suivi-gravite-0" hidden>
                     {{ suivi_gravité_0 }}
                 </div>
+                <div id="suivi-psy-2" class="statut suivi-psy-2" hidden>
+                    {{ suivi_psy_2 }}
+                </div>
+                <div id="suivi-psy-1" class="statut suivi-psy-1" hidden>
+                    {{ suivi_psy_1 }}
+                </div>
             </div>
             <div id="statut-symptomatique-urgent" class="statut statut-symptomatique-urgent" hidden>
                 {{ statut_symptomatique_urgent }}
@@ -904,6 +910,17 @@
                 <label for="suivi_symptomes_alimentation_hydratation_oui">Oui</label>
                 <input id="suivi_symptomes_alimentation_hydratation_non" type="radio" name="suivi_symptomes_alimentation_hydratation" value="non">
                 <label for="suivi_symptomes_alimentation_hydratation_non">Non</label>
+            </div>
+            <div class="secondary disabled">
+                <p>
+                    {{ question_suivi_symptômes_état_psychologique_libellé|me_or_them }}
+                </p>
+                <input id="suivi_symptomes_etat_psychologique_mieux" type="radio" name="suivi_symptomes_etat_psychologique" value="mieux">
+                <label for="suivi_symptomes_etat_psychologique_mieux">Mieux</label>
+                <input id="suivi_symptomes_etat_psychologique_stable" type="radio" name="suivi_symptomes_etat_psychologique" value="stable">
+                <label for="suivi_symptomes_etat_psychologique_stable">Stable</label>
+                <input id="suivi_symptomes_etat_psychologique_critique" type="radio" name="suivi_symptomes_etat_psychologique" value="critique">
+                <label for="suivi_symptomes_etat_psychologique_critique">Beaucoup moins bien</label>
             </div>
         </fieldset>
         <div class="form-controls">

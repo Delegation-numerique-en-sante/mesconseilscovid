@@ -25,6 +25,18 @@ class AlgorithmeSuivi {
     graviteBlockNameToDisplay() {
         return `suivi-gravite-${this.gravite}`
     }
+
+    get psy() {
+        let psy = 0
+        if (this.dernierEtat.etatPsychologique === 'critique') {
+            psy = this.gravite === 0 ? 1 : 2
+        }
+        return psy
+    }
+
+    psyBlockNameToDisplay() {
+        return `suivi-psy-${this.psy}`
+    }
 }
 
 module.exports = {

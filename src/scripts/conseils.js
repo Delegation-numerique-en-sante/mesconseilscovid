@@ -56,6 +56,9 @@ function getCustomIllustrationName(profil) {
 
 function showRelevantSuiviBlocks(element, algorithmeSuivi) {
     var blockNames = [algorithmeSuivi.graviteBlockNameToDisplay()]
+    if (algorithmeSuivi.psy !== 0) {
+        blockNames = blockNames.concat([algorithmeSuivi.psyBlockNameToDisplay()])
+    }
     affichage.displayBlocks(element, blockNames)
 }
 

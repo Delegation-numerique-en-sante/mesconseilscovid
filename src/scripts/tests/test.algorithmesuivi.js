@@ -5,7 +5,7 @@ var AlgorithmeSuivi = require('../algorithmesuivi.js').AlgorithmeSuivi
 var Profil = require('../profil.js').Profil
 var profil = new Profil('mes_infos')
 
-describe('AlgorithmeSuivi statut', function () {
+describe('AlgorithmeSuivi gravité', function () {
     beforeEach(function () {
         profil.resetData()
     })
@@ -91,5 +91,57 @@ describe('AlgorithmeSuivi statut', function () {
         var algorithme = new AlgorithmeSuivi(profil)
         assert.strictEqual(algorithme.gravite, 3)
         assert.strictEqual(algorithme.graviteBlockNameToDisplay(), "suivi-gravite-3")
+    })
+})
+
+describe('AlgorithmeSuivi psy', function () {
+    beforeEach(function () {
+        profil.resetData()
+    })
+
+    afterEach(function () {
+        profil.resetData()
+    })
+
+    it('Un suivi a un psy par défaut de 0', function () {
+        var data = {
+            suivi: [{
+                essoufflement: "mieux",
+                etatGeneral: "mieux",
+                etatPsychologique: "mieux"
+            }]
+        }
+        profil.fillData(data)
+        var algorithme = new AlgorithmeSuivi(profil)
+        assert.strictEqual(algorithme.psy, 0)
+        assert.strictEqual(algorithme.psyBlockNameToDisplay(), "suivi-psy-0")
+    })
+
+    it('Un suivi a un psy 1 si gravité à 0', function () {
+        var data = {
+            suivi: [{
+                essoufflement: "stable",
+                etatGeneral: "mieux",
+                etatPsychologique: "critique"
+            }]
+        }
+        profil.fillData(data)
+        var algorithme = new AlgorithmeSuivi(profil)
+        assert.strictEqual(algorithme.psy, 1)
+        assert.strictEqual(algorithme.psyBlockNameToDisplay(), "suivi-psy-1")
+    })
+
+    it('Un suivi a un psy 2 si gravité > 0', function () {
+        var data = {
+            suivi: [{
+                essoufflement: "mieux",
+                etatGeneral: "pire",
+                etatPsychologique: "critique"
+            }]
+        }
+        profil.fillData(data)
+        var algorithme = new AlgorithmeSuivi(profil)
+        assert.strictEqual(algorithme.psy, 2)
+        assert.strictEqual(algorithme.psyBlockNameToDisplay(), "suivi-psy-2")
     })
 })

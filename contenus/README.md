@@ -306,12 +306,18 @@ Sous-question (état général) : [libellé](questions/question_suivi_symptômes
 
 Sous-question (alimentation et hydratation) : [libellé](questions/question_suivi_symptômes_alimentation_hydratation_libellé.md)
 
+Sous-question (état psychologique) : [libellé](questions/question_suivi_symptômes_état_psychologique_libellé.md)
+
 Conseils :
 
 * Si au moins une réponse « Beaucoup moins bien » alors [suivi_gravité_3.md](suivi/suivi_gravité_3.md)
-* Si au moins une réponse « Un peu moins bien » OU « Oui » à « alimentation et hydratation » alors [suivi_gravité_2.md](suivi/suivi_gravité_2.md)
+* Si au moins une réponse « Un peu moins bien » OU « Oui » à `alimentation et hydratation` alors [suivi_gravité_2.md](suivi/suivi_gravité_2.md)
 * Si température OU diarrhée OU toux alors [suivi_gravité_1.md](suivi/suivi_gravité_1.md)
-* Si que des réponses « Mieux » OU « Stable » OU « Non » alors [suivi_gravité_0.md](suivi/suivi_gravité_0.md)
+* Si (que des réponses « Mieux » OU « Stable ») ET (« Non » à `alimentation et hydratation`) alors [suivi_gravité_0.md](suivi/suivi_gravité_0.md)
+
+Cas particulier état psychologique :
+
+* Si réponse « Oui » à `état psychologique` on affiche en plus [suivi_psy_2.md](suivi/suivi_psy_2.md) si gravité > 0 OU [suivi_psy_1.md](suivi/suivi_psy_1.md) si gravité = 0.
 
 
 ### Critères
