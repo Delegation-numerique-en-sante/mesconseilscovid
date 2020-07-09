@@ -6,7 +6,10 @@ class AlgorithmeSuivi {
 
     get gravite() {
         let gravite = 0
-        if (this.dernierEtat.fievre === 'oui') {
+        if (
+            this.dernierEtat.fievre === 'oui' ||
+            this.dernierEtat.diarrheeVomissements === 'oui'
+        ) {
             gravite = 1
         }
         if (

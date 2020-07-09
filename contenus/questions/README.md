@@ -324,6 +324,16 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
+## [question_suivi_symptômes_diarrhée_vomissements.md](question_suivi_symptômes_diarrhée_vomissements.md)
+
+<!---->Depuis hier (ou votre dernière connexion), avez-vous eu de la diarrhée (au moins 3 selles liquides par jour) ou des vomissements importants ?
+
+---
+
+<!---->Depuis hier (ou votre dernière connexion), votre proche a-t-il/elle eu de la diarrhée (au moins 3 selles liquides par jour) ou des vomissements importants ?
+
+
+
 ## [question_suivi_symptômes_essoufflement_libellé.md](question_suivi_symptômes_essoufflement_libellé.md)
 
 <!---->Si vous ressentez un manque de souffle quand vous parlez ou faites un petit effort, comment cela a-t-il évolué depuis hier (ou votre dernière connexion) ?

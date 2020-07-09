@@ -931,6 +931,15 @@
                 <input id="suivi_symptomes_fievre_non" type="radio" name="suivi_symptomes_fievre" value="non">
                 <label for="suivi_symptomes_fievre_non">Non</label>
             </div>
+            <div class="secondary disabled">
+                <p>
+                    {{ question_suivi_symptômes_diarrhée_vomissements|me_or_them }}
+                </p>
+                <input id="suivi_symptomes_diarrhee_vomissements_oui" type="radio" name="suivi_symptomes_diarrhee_vomissements" value="oui">
+                <label for="suivi_symptomes_diarrhee_vomissements_oui">Oui</label>
+                <input id="suivi_symptomes_diarrhee_vomissements_non" type="radio" name="suivi_symptomes_diarrhee_vomissements" value="non">
+                <label for="suivi_symptomes_diarrhee_vomissements_non">Non</label>
+            </div>
         </fieldset>
         <div class="form-controls">
             <a href="#suiviintroduction" class="back-button button-outline">Retour</a>

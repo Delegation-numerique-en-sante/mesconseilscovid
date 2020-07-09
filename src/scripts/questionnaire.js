@@ -315,6 +315,8 @@ function suivisymptomes(form, app, router) {
             etatPsychologique:
                 event.target.elements['suivi_symptomes_etat_psychologique'].value,
             fievre: event.target.elements['suivi_symptomes_fievre'].value,
+            diarrheeVomissements:
+                event.target.elements['suivi_symptomes_diarrhee_vomissements'].value,
         }
         app.profil.ajouterEtat(etat)
         app.enregistrerProfilActuel()

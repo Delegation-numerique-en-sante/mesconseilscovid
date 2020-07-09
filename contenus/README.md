@@ -310,12 +310,14 @@ Sous-question (état psychologique) : [libellé](questions/question_suivi_sympt�
 
 Sous-question (fièvre) : [libellé](questions/question_suivi_symptômes_fièvre_libellé.md)
 
+Sous-question (diarrhée ou vomissements) : [libellé](questions/question_suivi_symptômes_diarrhée_vomissements.md)
+
 Conseils :
 
 * Si au moins une réponse « Beaucoup moins bien » alors [suivi_gravité_3.md](suivi/suivi_gravité_3.md)
 * Si au moins une réponse « Un peu moins bien » OU « Oui » à `alimentation et hydratation` alors [suivi_gravité_2.md](suivi/suivi_gravité_2.md)
-* Si « Oui » à `fièvre` OU diarrhée OU toux alors [suivi_gravité_1.md](suivi/suivi_gravité_1.md)
-* Si (que des réponses « Mieux » OU « Stable ») ET (« Non » à `alimentation et hydratation`) ET (« Non » à `fièvre`) alors [suivi_gravité_0.md](suivi/suivi_gravité_0.md)
+* Si (« Oui » à `fièvre`) OU (« Oui » à `diarrhée ou vomissements`) alors [suivi_gravité_1.md](suivi/suivi_gravité_1.md)
+* Si (que des réponses « Mieux » OU « Stable ») ET (« Non » à `alimentation et hydratation`) ET (« Non » à `fièvre`) ET (« Non » à `diarrhée ou vomissements`) alors [suivi_gravité_0.md](suivi/suivi_gravité_0.md)
 
 Cas particulier état psychologique :
 
