@@ -980,21 +980,22 @@
             </div>
             <div class="secondary disabled">
                 <p>
-                    {{ question_suivi_symptômes_maux_de_tête_libellé|me_or_them }}
-                </p>
-                <input id="suivi_symptomes_maux_de_tete_oui" type="radio" name="suivi_symptomes_maux_de_tete" value="oui">
-                <label for="suivi_symptomes_maux_de_tete_oui">Oui</label>
-                <input id="suivi_symptomes_maux_de_tete_non" type="radio" name="suivi_symptomes_maux_de_tete" value="non">
-                <label for="suivi_symptomes_maux_de_tete_non">Non</label>
-            </div>
-            <div class="secondary disabled">
-                <p>
                     {{ question_suivi_symptômes_toux_libellé|me_or_them }}
                 </p>
                 <input id="suivi_symptomes_toux_oui" type="radio" name="suivi_symptomes_toux" value="oui">
                 <label for="suivi_symptomes_toux_oui">Oui</label>
                 <input id="suivi_symptomes_toux_non" type="radio" name="suivi_symptomes_toux" value="non">
                 <label for="suivi_symptomes_toux_non">Non</label>
+            </div>
+            <div class="secondary disabled">
+                <p>
+                    {{ question_suivi_symptômes_maux_de_tête_libellé|me_or_them }}
+                </p>
+                <input id="suivi_symptomes_maux_de_tete_oui" type="radio" name="suivi_symptomes_maux_de_tete" value="oui">
+                <label for="suivi_symptomes_maux_de_tete_oui">Oui</label>
+                <input id="suivi_symptomes_maux_de_tete_non" type="radio" name="suivi_symptomes_maux_de_tete" value="non">
+                <label for="suivi_symptomes_maux_de_tete_non">Non</label>
+                <div class="details">{{ question_suivi_symptômes_maux_de_tête_aide }}</div>
             </div>
         </fieldset>
         <div class="form-controls">

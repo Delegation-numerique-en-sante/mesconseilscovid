@@ -312,9 +312,9 @@ Sous-question (fièvre) : [libellé](questions/question_suivi_symptômes_fièvre
 
 Sous-question (diarrhée ou vomissements) : [libellé](questions/question_suivi_symptômes_diarrhée_vomissements_libellé.md)
 
-Sous-question (maux de tête) [optionnelle] : [libellé](questions/question_suivi_symptômes_maux_de_tête_libellé.md)
-
 Sous-question (toux) [optionnelle] : [libellé](questions/question_suivi_symptômes_toux_libellé.md)
+
+Sous-question (maux de tête) [optionnelle] : [libellé](questions/question_suivi_symptômes_maux_de_tête_libellé.md), [aide](questions/question_suivi_symptômes_maux_de_tête_aide.md)
 
 Réponses :
 
