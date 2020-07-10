@@ -314,6 +314,8 @@ Sous-question (diarrhée ou vomissements) : [libellé](questions/question_suivi_
 
 Sous-question (maux de tête) [optionnelle] : [libellé](questions/question_suivi_symptômes_maux_de_tête.md)
 
+Sous-question (toux) [optionnelle] : [libellé](questions/question_suivi_symptômes_toux.md)
+
 Réponses :
 
 * [réponse_suivi_essoufflement_gravité_3.md](réponses/réponse_suivi_essoufflement_gravité_3.md) si `essoufflement` à « Beaucoup moins bien »
@@ -325,12 +327,13 @@ Réponses :
 * [réponse_suivi_fièvre_gravité_1.md](réponses/réponse_suivi_fièvre_gravité_1.md) si fièvre à « Oui »
 * [réponse_suivi_diarrhee_vomissements_gravité_1.md](réponses/réponse_suivi_diarrhee_vomissements_gravité_1.md) si `diarrhée et vomissements` à « Oui »
 * [réponse_suivi_maux_de_tête_gravité_2.md](réponses/réponse_suivi_maux_de_tête_gravité_2.md) si `maux de tête` à « Oui »
+* [réponse_suivi_toux_gravité_1.md](réponses/réponse_suivi_toux_gravité_1.md) si `maux de tête` à « Oui »
 
 Conseils :
 
 * Si au moins une réponse « Beaucoup moins bien » alors [suivi_gravité_3.md](suivi/suivi_gravité_3.md)
 * Si au moins une réponse « Un peu moins bien » OU « Oui » à `alimentation et hydratation` OU « Oui » à `maux de tête` alors [suivi_gravité_2.md](suivi/suivi_gravité_2.md)
-* Si (« Oui » à `fièvre`) OU (« Oui » à `diarrhée ou vomissements`) alors [suivi_gravité_1.md](suivi/suivi_gravité_1.md)
+* Si (« Oui » à `fièvre`) OU (« Oui » à `diarrhée ou vomissements`) OU (« Oui » à `toux`) alors [suivi_gravité_1.md](suivi/suivi_gravité_1.md)
 * Si (que des réponses « Mieux » OU « Stable ») ET (« Non » à `alimentation et hydratation`) ET (« Non » à `fièvre`) ET (« Non » à `diarrhée ou vomissements`) alors [suivi_gravité_0.md](suivi/suivi_gravité_0.md)
 
 Cas particulier état psychologique :

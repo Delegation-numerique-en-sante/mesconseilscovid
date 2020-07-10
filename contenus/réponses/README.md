@@ -100,6 +100,12 @@ Vous vivez avec une ou des personnes considérée(s) comme fragile(s) face au co
 
 
 
+## [réponse_suivi_toux_gravité_1.md](réponse_suivi_toux_gravité_1.md)
+
+<!---->Toux évoluant
+
+
+
 ## [réponse_suivi_état_général_gravité_2.md](réponse_suivi_état_général_gravité_2.md)
 
 <!---->État physique général : un peu moins bien

@@ -7,7 +7,11 @@ class AlgorithmeSuivi {
     get gravite() {
         let gravite = 0
         const etat = this.dernierEtat
-        if (etat.fievre === 'oui' || etat.diarrheeVomissements === 'oui') {
+        if (
+            etat.fievre === 'oui' ||
+            etat.diarrheeVomissements === 'oui' ||
+            etat.toux === 'oui'
+        ) {
             gravite = 1
         }
         if (
@@ -69,6 +73,9 @@ class AlgorithmeSuivi {
         }
         if (etat.mauxDeTete === 'oui') {
             evolutions.push('maux-de-tete-gravite-2')
+        }
+        if (etat.toux === 'oui') {
+            evolutions.push('toux-gravite-1')
         }
         return evolutions
     }

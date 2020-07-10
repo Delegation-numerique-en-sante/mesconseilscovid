@@ -614,6 +614,9 @@
                         <li id="maux-de-tete-gravite-2" hidden>
                             {{ réponse_suivi_maux_de_tête_gravité_2 }}
                         </li>
+                        <li id="toux-gravite-1" hidden>
+                            {{ réponse_suivi_toux_gravité_1 }}
+                        </li>
                     </ul>
                 </div>
                 <div id="suivi-gravite-3" class="statut suivi-gravite-3" hidden>
@@ -983,6 +986,15 @@
                 <label for="suivi_symptomes_maux_de_tete_oui">Oui</label>
                 <input id="suivi_symptomes_maux_de_tete_non" type="radio" name="suivi_symptomes_maux_de_tete" value="non">
                 <label for="suivi_symptomes_maux_de_tete_non">Non</label>
+            </div>
+            <div class="secondary disabled">
+                <p>
+                    {{ question_suivi_symptômes_toux|me_or_them }}
+                </p>
+                <input id="suivi_symptomes_toux_oui" type="radio" name="suivi_symptomes_toux" value="oui">
+                <label for="suivi_symptomes_toux_oui">Oui</label>
+                <input id="suivi_symptomes_toux_non" type="radio" name="suivi_symptomes_toux" value="non">
+                <label for="suivi_symptomes_toux_non">Non</label>
             </div>
         </fieldset>
         <div class="form-controls">

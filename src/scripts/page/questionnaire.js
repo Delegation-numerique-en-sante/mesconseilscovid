@@ -320,6 +320,7 @@ function suivisymptomes(form, app, router) {
             diarrheeVomissements:
                 event.target.elements['suivi_symptomes_diarrhee_vomissements'].value,
             mauxDeTete: event.target.elements['suivi_symptomes_maux_de_tete'].value,
+            toux: event.target.elements['suivi_symptomes_toux'].value,
         }
         app.profil.ajouterEtat(etat)
         app.enregistrerProfilActuel()
