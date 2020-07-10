@@ -2,7 +2,6 @@
 import 'core-js/features/promise'
 
 // Polyfills pour les API du navigateur
-import 'core-js/web/url'
 import 'whatwg-fetch'
 import './polyfills/custom_event.js'
 

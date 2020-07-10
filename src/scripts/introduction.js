@@ -78,8 +78,7 @@ function _bindFunc(element, app, func) {
     element.addEventListener('click', function (event) {
         event.preventDefault()
         func(element.dataset.setProfil).then(() => {
-            var url = new URL(event.target.href)
-            app.router.navigate(url.hash)
+            app.router.navigate(event.target.getAttribute('href'))
         })
     })
 }
