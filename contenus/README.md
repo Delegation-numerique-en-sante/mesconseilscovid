@@ -310,11 +310,11 @@ Sous-question (état psychologique) : [libellé](questions/question_suivi_sympt�
 
 Sous-question (fièvre) : [libellé](questions/question_suivi_symptômes_fièvre_libellé.md)
 
-Sous-question (diarrhée ou vomissements) : [libellé](questions/question_suivi_symptômes_diarrhée_vomissements.md)
+Sous-question (diarrhée ou vomissements) : [libellé](questions/question_suivi_symptômes_diarrhée_vomissements_libellé.md)
 
-Sous-question (maux de tête) [optionnelle] : [libellé](questions/question_suivi_symptômes_maux_de_tête.md)
+Sous-question (maux de tête) [optionnelle] : [libellé](questions/question_suivi_symptômes_maux_de_tête_libellé.md)
 
-Sous-question (toux) [optionnelle] : [libellé](questions/question_suivi_symptômes_toux.md)
+Sous-question (toux) [optionnelle] : [libellé](questions/question_suivi_symptômes_toux_libellé.md)
 
 Réponses :
 

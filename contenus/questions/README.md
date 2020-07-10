@@ -324,7 +324,7 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
-## [question_suivi_symptômes_diarrhée_vomissements.md](question_suivi_symptômes_diarrhée_vomissements.md)
+## [question_suivi_symptômes_diarrhée_vomissements_libellé.md](question_suivi_symptômes_diarrhée_vomissements_libellé.md)
 
 <!---->Depuis hier (ou votre dernière connexion), avez-vous eu de la <b>diarrhée</b> (au moins 3 selles liquides par jour) ou des <b>vomissements</b> importants ?
 
@@ -364,7 +364,7 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
-## [question_suivi_symptômes_maux_de_tête.md](question_suivi_symptômes_maux_de_tête.md)
+## [question_suivi_symptômes_maux_de_tête_libellé.md](question_suivi_symptômes_maux_de_tête_libellé.md)
 
 <!---->Ressentez-vous des <b>maux de tête</b> qui résistent aux médicaments anti-douleurs (dont paracétamol) et que vous décririez comme intolérables depuis hier (ou votre dernière connexion) ?
 
@@ -384,7 +384,7 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
-## [question_suivi_symptômes_toux.md](question_suivi_symptômes_toux.md)
+## [question_suivi_symptômes_toux_libellé.md](question_suivi_symptômes_toux_libellé.md)
 
 <!---->Est-ce que l’aspect de vos crachats lors de la <b>toux</b> s’est modifié (aspect coloré jaune ou orangé ou sanglant) depuis hier (ou votre dernière connexion) ?
 
