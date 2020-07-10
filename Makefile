@@ -66,7 +66,7 @@ generate:  ## Auto-regenerate the `index.html` file from `template.html` + conte
 dev:  ## Auto-rebuild and serve the static website with Parcel.
 	npm run-script build-dev
 
-pre-commit: lint pretty test-unit build  ## Interesting prior to commit/push.
+pre-commit: pretty lint test-unit build  ## Interesting prior to commit/push.
 
 prod: clean install lint pretty test check-links  ## Make sure everything is clean prior to deploy.
 	# Note: `test` dependency will actually generate the `build`.
