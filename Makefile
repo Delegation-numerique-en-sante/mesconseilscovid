@@ -14,6 +14,10 @@ install:  ## Install Python and JS dependencies.
 	python3 -m pip install -r requirements.txt
 	npm install
 
+clean:  ## Clean up JS related stuff.
+	rm -rf ./node_modules
+	rm -rf ./.cache
+
 ##
 ## Run JS unit tests matching a given pattern/browser engine.
 ##
@@ -52,11 +56,22 @@ lint:  ## Run ESLint + check code style.
 pretty:  ## Run PrettierJS.
 	./node_modules/.bin/prettier src/*.js src/**/*.js src/**/**/*.js src/**/**/**/*.js src/style.css --write
 
-build:  ## Build the index from `template.html` + contenus markdown files.
+build:  ## Build all files (markdown + statics).
 	python3 build.py all
-	npm run-script build
+	npm run-script build-prod
 
-.PHONY: serve serve-ssl install test test-unit test-integration check-links build help
+generate:  ## Auto-regenerate the `index.html` file from `template.html` + contenus.
+	find ./contenus -type f \( -iname "*.md" ! -iname "README.md" \) | entr -r python3 build.py index
+
+dev:  ## Auto-rebuild and serve the static website with Parcel.
+	npm run-script build-dev
+
+pre-commit: lint pretty test-unit build  ## Interesting prior to commit/push.
+
+prod: clean install lint pretty test check-links  ## Make sure everything is clean prior to deploy.
+	# Note: `test` dependency will actually generate the `build`.
+
+.PHONY: serve serve-ssl install clean test test-unit test-integration check-links build generate dev pre-commit prod help
 
 help:  ## Display this help.
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)

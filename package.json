@@ -27,7 +27,8 @@
     "test-integration": "mocha --timeout 10000 src/scripts/tests/integration/",
     "lint": "eslint src/scripts/ src/service-worker.js",
     "prebuild": "rm -rf dist",
-    "build": "parcel build src/index.html --detailed-report 20 --experimental-scope-hoisting"
+    "build-prod": "parcel build src/index.html --detailed-report 20 --experimental-scope-hoisting",
+    "build-dev": "parcel src/index.html --log-level 3 --open"
   },
   "externals": {
     "version.json": false
