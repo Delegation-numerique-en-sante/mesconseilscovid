@@ -316,41 +316,41 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 ## [question_suivi_symptômes_alimentation_hydratation_libellé.md](question_suivi_symptômes_alimentation_hydratation_libellé.md)
 
-<!---->Êtes-vous dans l’impossibilité de vous alimenter ou de boire <b>depuis 24 heures ou plus</b> ?
+<!---->Êtes-vous dans l’<b>impossibilité de vous alimenter</b> ou de boire depuis <b>24 heures ou plus</b> ?
 
 ---
 
-<!---->Votre proche est-il/elle dans l’impossibilité de s’alimenter ou de boire <b>depuis 24 heures ou plus</b> ?
+<!---->Votre proche est-il/elle dans l’<b>impossibilité de s’alimenter</b> ou de boire depuis <b>24 heures ou plus</b> ?
 
 
 
 ## [question_suivi_symptômes_diarrhée_vomissements.md](question_suivi_symptômes_diarrhée_vomissements.md)
 
-<!---->Depuis hier (ou votre dernière connexion), avez-vous eu de la diarrhée (au moins 3 selles liquides par jour) ou des vomissements importants ?
+<!---->Depuis hier (ou votre dernière connexion), avez-vous eu de la <b>diarrhée</b> (au moins 3 selles liquides par jour) ou des <b>vomissements</b> importants ?
 
 ---
 
-<!---->Depuis hier (ou votre dernière connexion), votre proche a-t-il/elle eu de la diarrhée (au moins 3 selles liquides par jour) ou des vomissements importants ?
+<!---->Depuis hier (ou votre dernière connexion), votre proche a-t-il/elle eu de la <b>diarrhée</b> (au moins 3 selles liquides par jour) ou des <b>vomissements</b> importants ?
 
 
 
 ## [question_suivi_symptômes_essoufflement_libellé.md](question_suivi_symptômes_essoufflement_libellé.md)
 
-<!---->Si vous ressentez un manque de souffle quand vous parlez ou faites un petit effort, comment cela a-t-il évolué depuis hier (ou votre dernière connexion) ?
+<!---->Si vous ressentez un <b>manque de souffle</b> quand vous parlez ou faites un petit effort, comment cela a-t-il évolué depuis hier (ou votre dernière connexion) ?
 
 ---
 
-<!---->Si votre proche ressent un manque de souffle quand il/elle parle ou fait un petit effort, comment cela a-t-il évolué depuis hier (ou la dernière connexion) ?
+<!---->Si votre proche ressent un <b>manque de souffle</b> quand il/elle parle ou fait un petit effort, comment cela a-t-il évolué depuis hier (ou la dernière connexion) ?
 
 
 
 ## [question_suivi_symptômes_fièvre_libellé.md](question_suivi_symptômes_fièvre_libellé.md)
 
-<!---->Votre température est supérieure à 39° et ne diminue pas malgré la prise de Paracétamol ?
+<!---->Votre <b>température</b> est supérieure à 39° et ne diminue pas malgré la prise de paracétamol ?
 
 ---
 
-<!---->La température corporelle de votre proche est supérieure à 39° et ne diminue pas malgré la prise de Paracétamol ?
+<!---->La <b>température</b> corporelle de votre proche est supérieure à 39° et ne diminue pas malgré la prise de paracétamol ?
 
 
 
@@ -376,21 +376,21 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 ## [question_suivi_symptômes_état_général_libellé.md](question_suivi_symptômes_état_général_libellé.md)
 
-<!---->Concernant votre état physique, comment vous sentez-vous depuis hier (ou votre dernière connexion) ?
+<!---->Concernant votre <b>état physique</b>, comment vous sentez-vous depuis hier (ou votre dernière connexion) ?
 
 ---
 
-<!---->Concernant l’état physique de votre proche, comment se sent-il/elle depuis hier (ou la dernière connexion) ?
+<!---->Concernant l’<b>état physique</b> de votre proche, comment se sent-il/elle depuis hier (ou la dernière connexion) ?
 
 
 
 ## [question_suivi_symptômes_état_psychologique_libellé.md](question_suivi_symptômes_état_psychologique_libellé.md)
 
-<!---->Comment votre moral et votre niveau d’anxiété ont évolué depuis hier (ou votre dernière connexion) ?
+<!---->Comment votre <b>moral</b> et votre niveau d’<b>anxiété</b> ont évolué depuis hier (ou votre dernière connexion) ?
 
 ---
 
-<!---->Comment le moral et le niveau d’anxiété de votre proche ont évolué depuis hier (ou la dernière connexion) ?
+<!---->Comment le <b>moral</b> et le niveau d’<b>anxiété</b> de votre proche ont évolué depuis hier (ou la dernière connexion) ?
 
 
 
