@@ -108,6 +108,11 @@ function initRouter(app) {
             var element = pagination.loadPage(pageName)
             suivi.page(element, app)
         })
+        .on(new RegExp('^suividate$'), function () {
+            var pageName = 'suividate'
+            var form = pagination.loadPage(pageName)
+            questionnaire.suividate(form, app, router)
+        })
         .on(new RegExp('^suivisymptomes$'), function () {
             var pageName = 'suivisymptomes'
             var form = pagination.loadPage(pageName)

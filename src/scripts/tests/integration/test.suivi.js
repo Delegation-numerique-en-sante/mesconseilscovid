@@ -158,6 +158,15 @@ describe('Auto-suivi', function () {
             )
             await Promise.all([
                 bouton.click(),
+                page.waitForNavigation({ url: '**/#suividate' }),
+            ])
+        }
+
+        // La page de date du suivi apparait la première fois
+        {
+            let bouton = await page.waitForSelector('#page >> text="Continuer"')
+            await Promise.all([
+                bouton.click(),
                 page.waitForNavigation({ url: '**/#suivisymptomes' }),
             ])
         }
@@ -224,6 +233,28 @@ describe('Auto-suivi', function () {
                 ),
                 'Moi'
             )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#suiviintroduction' }),
+            ])
+        }
+
+        // La page d’introduction du suivi comporte un lien direct
+        // vers mes symptômes car on a déjà renseignée la date de début
+        {
+            let bouton = await page.waitForSelector(
+                '#page >> text="Continuer mon suivi"'
+            )
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Moi'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#suivisymptomes' }),
+            ])
         }
     })
 })

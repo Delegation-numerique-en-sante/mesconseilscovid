@@ -314,6 +314,22 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
+## [question_suivi_date_libellé.md](question_suivi_date_libellé.md)
+
+Cette date est une information importante afin de déterminer la période de d’incubation et de guérison de votre maladie.
+
+
+
+## [question_suivi_date_titre.md](question_suivi_date_titre.md)
+
+<!---->Mes premiers symptômes
+
+---
+
+<!---->Ses premiers symptômes
+
+
+
 ## [question_suivi_symptômes_alimentation_hydratation_libellé.md](question_suivi_symptômes_alimentation_hydratation_libellé.md)
 
 <!---->Êtes-vous dans l’<b>impossibilité de vous alimenter</b> ou de boire depuis <b>24 heures ou plus</b> ?

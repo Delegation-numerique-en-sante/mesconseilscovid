@@ -286,6 +286,41 @@ function contactarisque(form, app, router) {
     })
 }
 
+function suividate(form, app, router) {
+    function dateFromString(string) {
+        let delta
+        switch (string) {
+            case 'aujourdhui':
+                delta = 0
+                break
+            case 'hier':
+                delta = 1
+                break
+            case 'avant_hier':
+                delta = 2
+                break
+            case 'avant_avant_hier':
+                delta = 3
+                break
+            case 'encore_avant_hier':
+                // Que faire ?
+                delta = 4
+                break
+        }
+        const today = new Date()
+        return new Date(today.setDate(today.getDate() - delta))
+    }
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+        app.profil.symptomes_start_date = dateFromString(
+            event.target.elements['suivi_symptomes_date'].value
+        )
+        app.enregistrerProfilActuel()
+        router.navigate('suivisymptomes')
+    })
+}
+
 function suivisymptomes(form, app, router) {
     var button = form.querySelector('input[type=submit]')
     // On pré-suppose que la personne qui fait son auto-suivi a des symptômes
@@ -338,5 +373,6 @@ module.exports = {
     symptomesactuels,
     symptomespasses,
     contactarisque,
+    suividate,
     suivisymptomes,
 }

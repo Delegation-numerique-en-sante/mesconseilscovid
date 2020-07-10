@@ -14,8 +14,18 @@ class Profil {
         this._suivi_start_date = date.toJSON()
     }
 
+    get symptomes_start_date() {
+        return new Date(this._symptomes_start_date)
+    }
+
+    set symptomes_start_date(date) {
+        // Turn the date into a readable string.
+        this._symptomes_start_date = date.toJSON()
+    }
+
     resetSuivi() {
         this._suivi_start_date = undefined
+        this._symptomes_start_date = undefined
         this.suivi = []
     }
 
@@ -61,6 +71,7 @@ class Profil {
         this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_autre = undefined
         this._suivi_start_date = undefined
+        this._symptomes_start_date = undefined
         this.suivi = []
     }
 
@@ -107,6 +118,7 @@ class Profil {
         this.contact_a_risque_stop_covid = data['contact_a_risque_stop_covid']
         this.contact_a_risque_autre = data['contact_a_risque_autre']
         this._suivi_start_date = data['_suivi_start_date']
+        this._symptomes_start_date = data['_symptomes_start_date']
         this.suivi = data['suivi'] || []
     }
 
@@ -153,6 +165,7 @@ class Profil {
             contact_a_risque_stop_covid: this.contact_a_risque_stop_covid,
             contact_a_risque_autre: this.contact_a_risque_autre,
             _suivi_start_date: this._suivi_start_date,
+            _symptomes_start_date: this._symptomes_start_date,
             suivi: this.suivi,
         }
     }
@@ -216,6 +229,10 @@ class Profil {
         return typeof this._suivi_start_date !== 'undefined'
     }
 
+    hasSymptomesStartDate() {
+        return typeof this._symptomes_start_date !== 'undefined'
+    }
+
     ajouterEtat(etat) {
         this.suivi.push(etat)
     }
@@ -242,7 +259,8 @@ class Profil {
         var mainButton = ''
         if (this.isComplete()) {
             const hasSuiviStartDate = this.hasSuiviStartDate()
-            const outlined = (this.estMonProfil() && !hasSuiviStartDate) ? '' : 'button-outline'
+            const outlined =
+                this.estMonProfil() && !hasSuiviStartDate ? '' : 'button-outline'
             if (hasSuiviStartDate) {
                 mainButton += affichage.safeHtml`
                     <a class="button suivi-link"
@@ -286,10 +304,11 @@ class Profil {
     renderButtonSuivi() {
         const possessifMasculinSingulier = this.estMonProfil() ? 'mon' : 'son'
         const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
-        var label = this.hasSuiviStartDate() ? 'Continuer' : 'Démarrer'
+        const label = this.hasSuiviStartDate() ? 'Continuer' : 'Démarrer'
+        const nextPage = this.hasSymptomesStartDate() ? 'suivisymptomes' : 'suividate'
         const suiviButton = affichage.safeHtml`
             <a class="button button-full-width conseils-link"
-                data-set-profil="${this.nom}" href="#suivisymptomes"
+                data-set-profil="${this.nom}" href="#${nextPage}"
                 >${label} ${possessifMasculinSingulier} suivi</a>
         `
         const conseilsButton = affichage.safeHtml`

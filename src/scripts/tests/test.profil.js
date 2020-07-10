@@ -60,6 +60,7 @@ describe('Profil', function () {
             contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
             _suivi_start_date: undefined,
+            _symptomes_start_date: undefined,
             suivi: [],
         })
         assert.isFalse(profil.isComplete())
@@ -156,6 +157,7 @@ describe('Profil', function () {
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
             _suivi_start_date: '2020-07-09T14:03:41.000Z',
+            _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             suivi: [],
         }
         profil.fillData(data)
@@ -206,6 +208,7 @@ describe('Profil', function () {
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
             _suivi_start_date: '2020-07-09T14:03:41.000Z',
+            _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             suivi: [],
         }
         profil.fillData(data)
@@ -256,6 +259,7 @@ describe('Profil', function () {
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
             _suivi_start_date: '2020-07-09T14:03:41.000Z',
+            _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             suivi: [{ foo: 'bar' }],
         }
         profil.fillData(data)
@@ -301,6 +305,7 @@ describe('Profil', function () {
             contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
             _suivi_start_date: undefined,
+            _symptomes_start_date: undefined,
             suivi: [],
         })
         assert.isFalse(profil.isComplete())
@@ -349,6 +354,7 @@ describe('Profil', function () {
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
             _suivi_start_date: '2020-07-09T14:03:41.000Z',
+            _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             suivi: [{ foo: 'bar' }],
         }
         profil.fillData(data)
@@ -394,6 +400,7 @@ describe('Profil', function () {
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
             _suivi_start_date: undefined,
+            _symptomes_start_date: undefined,
             suivi: [],
         })
         assert.isTrue(profil.isComplete())

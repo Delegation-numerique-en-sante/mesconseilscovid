@@ -14,6 +14,7 @@ var redirectToUnansweredQuestions = function (page, profil) {
 
     // TODO: discuter des conditions requises
     if (page === 'suiviintroduction') return
+    if (page === 'suividate') return
     if (page === 'suivisymptomes') return
 
     // Questions obligatoires

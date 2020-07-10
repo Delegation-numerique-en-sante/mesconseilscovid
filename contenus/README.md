@@ -294,7 +294,14 @@ Conseils :
 
 ### Auto-suivi
 
-#### Symptômes
+#### Suivi date
+
+[Titre](questions/question_suivi_date_titre.md)
+
+Question : [libellé](questions/question_suivi_date_libellé.md)
+
+
+#### Suivi symptômes
 
 [Titre](questions/question_suivi_symptômes_titre.md)
 
