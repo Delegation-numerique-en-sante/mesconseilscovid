@@ -61,7 +61,7 @@ build:  ## Build all files (markdown + statics).
 	npm run-script build-prod
 
 generate:  ## Auto-regenerate the `index.html` file from `template.html` + contenus.
-	find ./contenus -type f \( -iname "*.md" ! -iname "README.md" \) | entr -r python3 build.py index
+	find . -type f \( -iname "*.md" ! -iname "README.md" ! -iname "CHANGELOG.md" -o -iname "template.html" ! -iname "CHANGELOG.md" \) -not -path "./node_modules/*" -not -path "./venv/*" | entr -r python3 build.py index
 
 dev:  ## Auto-rebuild and serve the static website with Parcel.
 	npm run-script build-dev
