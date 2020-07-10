@@ -6,7 +6,7 @@ var AlgorithmeOrientation = require('../algorithme/orientation.js')
 var Profil = require('../profil.js').Profil
 var profil = new Profil('mes_infos')
 
-describe('Algorithme statut', function () {
+describe('Algorithme orientation statut', function () {
     beforeEach(function () {
         profil.resetData()
     })
@@ -108,7 +108,7 @@ describe('Algorithme statut', function () {
     })
 })
 
-describe('Algorithme conseils personnels', function () {
+describe('Algorithme orientation conseils personnels', function () {
     beforeEach(function () {
         profil.resetData()
     })
@@ -343,7 +343,7 @@ describe('Algorithme conseils personnels', function () {
     })
 })
 
-describe('Algorithme département', function () {
+describe('Algorithme orientation département', function () {
     beforeEach(function () {
         profil.resetData()
     })
@@ -424,7 +424,7 @@ describe('Algorithme département', function () {
     })
 })
 
-describe('Algorithme activité pro', function () {
+describe('Algorithme orientation activité pro', function () {
     beforeEach(function () {
         profil.resetData()
     })
@@ -525,7 +525,7 @@ describe('Algorithme activité pro', function () {
     })
 })
 
-describe('Algorithme foyer', function () {
+describe('Algorithme orientation foyer', function () {
     beforeEach(function () {
         profil.resetData()
     })
@@ -610,7 +610,7 @@ describe('Algorithme foyer', function () {
     })
 })
 
-describe('Algorithme caractéristiques et antécédents', function () {
+describe('Algorithme orientation caractéristiques et antécédents', function () {
     beforeEach(function () {
         profil.resetData()
     })
