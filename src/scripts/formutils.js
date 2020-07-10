@@ -86,21 +86,25 @@ function toggleFormButtonOnRadioRequired(
 ) {
     var button = form.querySelector('input[type=submit]')
     var checkbox = form.querySelector('input[type=checkbox]')
-    var secondaries = [].slice.call(form.querySelectorAll('.secondary'))
+    var secondariesRequired = [].slice.call(
+        form.querySelectorAll('.secondary.required')
+    )
     var radios = [].slice.call(form.querySelectorAll('.secondary input[type=radio]'))
 
     function updateSubmitButtonLabelRequired() {
         button.disabled = false
         button.value = checkbox.checked ? continueLabel : uncheckedLabel
         if (checkbox.checked) {
-            var hasAllRadioChecks = secondaries.every(function (secondary) {
+            var hasAllRequiredRadioChecks = secondariesRequired.every(function (
+                secondary
+            ) {
                 return [].slice
                     .call(secondary.querySelectorAll('input[type=radio]'))
                     .some(function (radio) {
                         return radio.checked
                     })
             })
-            if (!hasAllRadioChecks) {
+            if (!hasAllRequiredRadioChecks) {
                 button.disabled = true
                 button.value = requiredLabel
             }

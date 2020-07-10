@@ -94,6 +94,12 @@ Vous vivez avec une ou des personnes considérée(s) comme fragile(s) face au co
 
 
 
+## [réponse_suivi_maux_de_tête_gravité_2.md](réponse_suivi_maux_de_tête_gravité_2.md)
+
+<!---->Maux de tête
+
+
+
 ## [réponse_suivi_état_général_gravité_2.md](réponse_suivi_état_général_gravité_2.md)
 
 <!---->État physique général : un peu moins bien

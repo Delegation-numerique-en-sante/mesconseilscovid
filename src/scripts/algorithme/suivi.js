@@ -13,7 +13,8 @@ class AlgorithmeSuivi {
         if (
             etat.essoufflement === 'pire' ||
             etat.etatGeneral === 'pire' ||
-            etat.alimentationHydratation === 'oui'
+            etat.alimentationHydratation === 'oui' ||
+            etat.mauxDeTete === 'oui'
         ) {
             gravite = 2
         }
@@ -65,6 +66,9 @@ class AlgorithmeSuivi {
         }
         if (etat.diarrheeVomissements === 'oui') {
             evolutions.push('diarrhee-vomissements-gravite-1')
+        }
+        if (etat.mauxDeTete === 'oui') {
+            evolutions.push('maux-de-tete-gravite-2')
         }
         return evolutions
     }
