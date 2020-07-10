@@ -1,9 +1,9 @@
 var Navigo = require('navigo')
 
-var introduction = require('./introduction.js')
+var introduction = require('./page/introduction.js')
 var affichage = require('./affichage.js')
-var conseils = require('./conseils.js')
-var questionnaire = require('./questionnaire.js')
+var conseils = require('./page/conseils.js')
+var questionnaire = require('./page/questionnaire.js')
 var injection = require('./injection.js')
 var pagination = require('./pagination.js')
 

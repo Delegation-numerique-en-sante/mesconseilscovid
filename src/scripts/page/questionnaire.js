@@ -1,6 +1,6 @@
-var affichage = require('./affichage.js')
-var formUtils = require('./formutils.js')
-var geoloc = require('./geoloc.js')
+import affichage from '../affichage.js'
+import formUtils from '../formutils.js'
+import geoloc from '../geoloc.js'
 
 function nom(form, app, router) {
     var button = form.querySelector('input[type=submit]')

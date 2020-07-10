@@ -1,8 +1,8 @@
-var affichage = require('./affichage.js')
-var AlgorithmeOrientation = require('./algorithme/orientation.js').AlgorithmeOrientation
-var AlgorithmeSuivi = require('./algorithme/suivi.js').AlgorithmeSuivi
-var actions = require('./actions.js')
-var injection = require('./injection.js')
+import actions from '../actions.js'
+import affichage from '../affichage.js'
+import injection from '../injection.js'
+import { AlgorithmeOrientation } from '../algorithme/orientation.js'
+import { AlgorithmeSuivi } from '../algorithme/suivi.js'
 
 function page(element, app) {
     // Hide all conseils that might have been made visible on previous runs.
