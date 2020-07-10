@@ -14,6 +14,11 @@ class Profil {
         this._suivi_start_date = date.toJSON()
     }
 
+    resetSuivi() {
+        this._suivi_start_date = undefined
+        this.suivi = []
+    }
+
     resetData(nom) {
         this.nom = nom
         this.departement = undefined
@@ -234,21 +239,22 @@ class Profil {
     renderButtons() {
         const possessifMasculinSingulier = this.estMonProfil() ? 'mon' : 'son'
         const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
-        var mainButton
+        var mainButton = ''
         if (this.isComplete()) {
-            const outlined = this.estMonProfil() ? '' : 'button-outline'
-            mainButton = affichage.safeHtml`
-                <a class="button ${outlined} conseils-link"
-                    data-set-profil="${this.nom}" href="#conseils"
-                    >Voir ${possessifPluriel} conseils</a>
-            `
-            if (this.hasSuiviStartDate()) {
+            const hasSuiviStartDate = this.hasSuiviStartDate()
+            const outlined = (this.estMonProfil() && !hasSuiviStartDate) ? '' : 'button-outline'
+            if (hasSuiviStartDate) {
                 mainButton += affichage.safeHtml`
-                    <a class="button ${outlined} suivi-link"
+                    <a class="button suivi-link"
                         data-set-profil="${this.nom}" href="#suiviintroduction"
                         >Continuer ${possessifMasculinSingulier} suivi</a>
                 `
             }
+            mainButton += affichage.safeHtml`
+                <a class="button ${outlined} conseils-link"
+                    data-set-profil="${this.nom}" href="#conseils"
+                    >Voir ${possessifPluriel} conseils</a>
+            `
         } else {
             var label = this.isEmpty() ? 'Démarrer' : 'Continuer'
             mainButton = affichage.safeHtml`
@@ -279,12 +285,26 @@ class Profil {
 
     renderButtonSuivi() {
         const possessifMasculinSingulier = this.estMonProfil() ? 'mon' : 'son'
+        const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
         var label = this.hasSuiviStartDate() ? 'Continuer' : 'Démarrer'
-        return affichage.safeHtml`
+        const suiviButton = affichage.safeHtml`
             <a class="button button-full-width conseils-link"
                 data-set-profil="${this.nom}" href="#suivisymptomes"
                 >${label} ${possessifMasculinSingulier} suivi</a>
         `
+        const conseilsButton = affichage.safeHtml`
+            <a class="button button-outline button-full-width conseils-link"
+                data-set-profil="${this.nom}" href="#conseils"
+                >Voir ${possessifPluriel} conseils</a>
+        `
+        let deleteLink = ''
+        if (this.hasSuiviStartDate()) {
+            deleteLink = affichage.safeHtml`
+                <a data-delete-suivi="${this.nom}" href=""
+                    >Supprimer ${possessifMasculinSingulier} auto-suivi</a>
+            `
+        }
+        return suiviButton + conseilsButton + deleteLink
     }
 
     renderCardSuivi() {

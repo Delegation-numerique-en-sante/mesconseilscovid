@@ -4,6 +4,7 @@ var introduction = require('./page/introduction.js')
 var affichage = require('./affichage.js')
 var conseils = require('./page/conseils.js')
 var questionnaire = require('./page/questionnaire.js')
+var suivi = require('./page/suivi.js')
 var injection = require('./injection.js')
 var pagination = require('./pagination.js')
 
@@ -105,13 +106,7 @@ function initRouter(app) {
         .on(new RegExp('^suiviintroduction$'), function () {
             var pageName = 'suiviintroduction'
             var element = pagination.loadPage(pageName)
-            const container = element.querySelector('#profils-cards')
-            container.innerHTML = '<div class="break"></div>'
-            container.insertBefore(app.profil.renderCardSuivi(), container.firstChild)
-            if (!app.profil.hasSuiviStartDate()) {
-                app.profil.suivi_start_date = new Date()
-                app.enregistrerProfilActuel()
-            }
+            suivi.page(element, app)
         })
         .on(new RegExp('^suivisymptomes$'), function () {
             var pageName = 'suivisymptomes'

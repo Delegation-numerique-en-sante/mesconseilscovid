@@ -40,6 +40,12 @@ class App {
             }
         })
     }
+    supprimerSuivi(nom) {
+        return this.basculerVersProfil(nom).then((profil) => {
+            profil.resetSuivi()
+            return this.stockage.enregistrer(profil)
+        })
+    }
     supprimerTout() {
         return this.stockage.supprimerTout().then(() => {
             this.profil.resetData()
