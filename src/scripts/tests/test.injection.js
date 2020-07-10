@@ -3,7 +3,8 @@ var assert = require('chai').assert
 var jsdom = require('jsdom')
 var { JSDOM } = jsdom
 
-var Algorithme = require('../algorithme.js').Algorithme
+var AlgorithmeOrientation = require('../algorithme/orientation.js')
+    .AlgorithmeOrientation
 var injection = require('../injection.js')
 
 var Profil = require('../profil.js').Profil
@@ -54,10 +55,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.caracteristiquesARisques(
             element.querySelector('#nom-caracteristiques-a-risques'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -79,10 +80,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.caracteristiquesARisques(
             element.querySelector('#nom-caracteristiques-a-risques'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -105,10 +106,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.caracteristiquesARisques(
             element.querySelector('#nom-caracteristiques-a-risques'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -131,10 +132,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.caracteristiquesARisques(
             element.querySelector('#nom-caracteristiques-a-risques'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -158,10 +159,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.caracteristiquesARisques(
             element.querySelector('#nom-caracteristiques-a-risques'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -185,10 +186,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.caracteristiquesARisques(
             element.querySelector('#nom-caracteristiques-a-risques'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -210,8 +211,11 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
-        injection.antecedents(element.querySelector('#nom-antecedents'), algorithme)
+        var algoOrientation = new AlgorithmeOrientation(profil)
+        injection.antecedents(
+            element.querySelector('#nom-antecedents'),
+            algoOrientation
+        )
 
         assert.strictEqual(
             element.innerHTML,
@@ -232,8 +236,11 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
-        injection.antecedents(element.querySelector('#nom-antecedents'), algorithme)
+        var algoOrientation = new AlgorithmeOrientation(profil)
+        injection.antecedents(
+            element.querySelector('#nom-antecedents'),
+            algoOrientation
+        )
 
         assert.strictEqual(
             element.innerHTML,
@@ -255,8 +262,11 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
-        injection.antecedents(element.querySelector('#nom-antecedents'), algorithme)
+        var algoOrientation = new AlgorithmeOrientation(profil)
+        injection.antecedents(
+            element.querySelector('#nom-antecedents'),
+            algoOrientation
+        )
 
         assert.strictEqual(
             element.innerHTML,
@@ -278,10 +288,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.symptomesactuels(
             element.querySelector('#nom-symptomesactuels'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -304,10 +314,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.symptomesactuels(
             element.querySelector('#nom-symptomesactuels'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -330,10 +340,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.symptomesactuels(
             element.querySelector('#nom-symptomesactuels'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -357,10 +367,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.symptomesactuels(
             element.querySelector('#nom-symptomesactuels'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -383,10 +393,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.symptomesactuels(
             element.querySelector('#nom-symptomesactuels'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -409,10 +419,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.symptomesactuels(
             element.querySelector('#nom-symptomesactuels'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -435,10 +445,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.symptomesactuels(
             element.querySelector('#nom-symptomesactuels'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -461,10 +471,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.symptomesactuels(
             element.querySelector('#nom-symptomesactuels'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -487,10 +497,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.symptomesactuels(
             element.querySelector('#nom-symptomesactuels'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(
@@ -513,10 +523,10 @@ describe('Injection', function () {
         }
         profil.fillData(data)
 
-        var algorithme = new Algorithme(profil)
+        var algoOrientation = new AlgorithmeOrientation(profil)
         injection.symptomesactuels(
             element.querySelector('#nom-symptomesactuels'),
-            algorithme
+            algoOrientation
         )
 
         assert.strictEqual(

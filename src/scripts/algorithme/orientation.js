@@ -1,6 +1,6 @@
-const carteDepartements = require('./carte.js')
+const carteDepartements = require('../carte.js')
 
-class Algorithme {
+class AlgorithmeOrientation {
     constructor(profil) {
         this.profil = profil
     }
@@ -291,5 +291,5 @@ class Algorithme {
 }
 
 module.exports = {
-    Algorithme,
+    AlgorithmeOrientation,
 }

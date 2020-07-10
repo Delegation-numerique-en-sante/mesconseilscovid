@@ -1,6 +1,6 @@
 var affichage = require('./affichage.js')
-var Algorithme = require('./algorithme.js').Algorithme
-var AlgorithmeSuivi = require('./algorithmesuivi.js').AlgorithmeSuivi
+var AlgorithmeOrientation = require('./algorithme/orientation.js').AlgorithmeOrientation
+var AlgorithmeSuivi = require('./algorithme/suivi.js').AlgorithmeSuivi
 var actions = require('./actions.js')
 var injection = require('./injection.js')
 
@@ -14,19 +14,19 @@ function page(element, app) {
         element.querySelector('#conseils-block').classList.add(extraClass)
     }
 
-    var algorithme = new Algorithme(app.profil)
+    var algoOrientation = new AlgorithmeOrientation(app.profil)
 
     if (app.profil.hasSuiviStartDate() && app.profil.suivi.length) {
-        var algorithmeSuivi = new AlgorithmeSuivi(app.profil)
+        var algoSuivi = new AlgorithmeSuivi(app.profil)
         affichage.displayElementById(element, 'suivi')
-        showRelevantSuiviBlocks(element, algorithmeSuivi)
+        showRelevantSuiviBlocks(element, algoSuivi)
     }
 
     // Display appropriate conseils.
-    showRelevantBlocks(element, app.profil, algorithme)
+    showRelevantBlocks(element, app.profil, algoOrientation)
 
     // Dynamic data injections.
-    showRelevantAnswersRecap(element, app.profil, algorithme)
+    showRelevantAnswersRecap(element, app.profil, algoOrientation)
 
     // Show instructions to install PWA (iOS) or add bookmark (others)
     if (isMobileSafari()) {
@@ -54,27 +54,29 @@ function getCustomIllustrationName(profil) {
     }
 }
 
-function showRelevantSuiviBlocks(element, algorithmeSuivi) {
-    var blockNames = [algorithmeSuivi.graviteBlockNameToDisplay()]
-    if (algorithmeSuivi.psy !== 0) {
-        blockNames = blockNames.concat([algorithmeSuivi.psyBlockNameToDisplay()])
+function showRelevantSuiviBlocks(element, algoSuivi) {
+    var blockNames = [algoSuivi.graviteBlockNameToDisplay()]
+    if (algoSuivi.psy !== 0) {
+        blockNames = blockNames.concat([algoSuivi.psyBlockNameToDisplay()])
     }
     affichage.displayBlocks(element, blockNames)
 }
 
-function showRelevantBlocks(element, profil, algorithme) {
-    var blockNames = statutBlockNamesToDisplay(algorithme)
-    blockNames = blockNames.concat(algorithme.conseilsPersonnelsBlockNamesToDisplay())
-    blockNames = blockNames.concat(algorithme.departementBlockNamesToDisplay())
-    blockNames = blockNames.concat(algorithme.activiteProBlockNamesToDisplay())
-    blockNames = blockNames.concat(algorithme.foyerBlockNamesToDisplay())
+function showRelevantBlocks(element, profil, algoOrientation) {
+    var blockNames = statutBlockNamesToDisplay(algoOrientation)
     blockNames = blockNames.concat(
-        algorithme.caracteristiquesAntecedentsBlockNamesToDisplay()
+        algoOrientation.conseilsPersonnelsBlockNamesToDisplay()
+    )
+    blockNames = blockNames.concat(algoOrientation.departementBlockNamesToDisplay())
+    blockNames = blockNames.concat(algoOrientation.activiteProBlockNamesToDisplay())
+    blockNames = blockNames.concat(algoOrientation.foyerBlockNamesToDisplay())
+    blockNames = blockNames.concat(
+        algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay()
     )
     affichage.displayBlocks(element, blockNames)
 }
 
-function showRelevantAnswersRecap(element, profil, algorithme) {
+function showRelevantAnswersRecap(element, profil, algoOrientation) {
     injection.titreConseils(element.querySelector('#conseils-block-titre'), profil)
     injection.departement(element.querySelector('#nom-departement'), profil.departement)
     var lienPrefecture = element.querySelector('#lien-prefecture')
@@ -84,7 +86,7 @@ function showRelevantAnswersRecap(element, profil, algorithme) {
 
     // We need to target more specifically given there are two similar ids.
     var selector
-    if (algorithme.symptomesActuelsReconnus) {
+    if (algoOrientation.symptomesActuelsReconnus) {
         selector = '#conseils-personnels-symptomes-actuels'
     } else {
         selector = '#conseils-caracteristiques'
@@ -95,20 +97,20 @@ function showRelevantAnswersRecap(element, profil, algorithme) {
         '#nom-caracteristiques-a-risques'
     )
     if (nomCaracteristiquesARisques) {
-        injection.caracteristiquesARisques(nomCaracteristiquesARisques, algorithme)
+        injection.caracteristiquesARisques(nomCaracteristiquesARisques, algoOrientation)
     }
     var nomAntecedents = subElement.querySelector('#nom-antecedents')
     if (nomAntecedents) {
-        injection.antecedents(nomAntecedents, algorithme)
+        injection.antecedents(nomAntecedents, algoOrientation)
     }
     var nomSymptomesActuels = subElement.querySelector('#nom-symptomesactuels')
     if (nomSymptomesActuels) {
-        injection.symptomesactuels(nomSymptomesActuels, algorithme)
+        injection.symptomesactuels(nomSymptomesActuels, algoOrientation)
     }
 }
 
-function statutBlockNamesToDisplay(algorithme) {
-    return ['statut-' + algorithme.statut]
+function statutBlockNamesToDisplay(algoOrientation) {
+    return ['statut-' + algoOrientation.statut]
 }
 
 function isMobileSafari() {
