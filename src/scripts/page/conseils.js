@@ -79,7 +79,10 @@ function showRelevantBlocks(element, profil, algoOrientation) {
 
 function showRelevantEvolutionsRecap(element, algoSuivi) {
     var blockNames = algoSuivi.evolutionsBlockNamesToDisplay()
-    affichage.displayBlocks(element, blockNames)
+    if (blockNames.length) {
+        affichage.showElement(element.querySelector('.reponse'))
+        affichage.displayBlocks(element, blockNames)
+    }
 }
 
 function showRelevantAnswersRecap(element, profil, algoOrientation) {

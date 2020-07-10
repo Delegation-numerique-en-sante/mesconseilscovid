@@ -45,17 +45,20 @@ class AlgorithmeSuivi {
         if (etat.essoufflement === 'critique') {
             evolutions.push('essoufflement-gravite-3')
         }
-        if (etat.etatGeneral === 'critique') {
-            evolutions.push('etat-general-gravite-3')
-        }
         if (etat.essoufflement === 'pire') {
             evolutions.push('essoufflement-gravite-2')
+        }
+        if (etat.etatGeneral === 'critique') {
+            evolutions.push('etat-general-gravite-3')
         }
         if (etat.etatGeneral === 'pire') {
             evolutions.push('etat-general-gravite-2')
         }
         if (etat.alimentationHydratation === 'oui') {
             evolutions.push('alimentation-hydratation-gravite-2')
+        }
+        if (etat.etatPsychologique === 'critique') {
+            evolutions.push('etat-psychologique-gravite-3')
         }
         if (etat.fievre === 'oui') {
             evolutions.push('fievre-gravite-1')

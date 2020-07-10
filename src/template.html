@@ -584,15 +584,33 @@
 
             <div id="suivi" hidden>
                 <h2>L’évolution de vos symptômes</h2>
-                <div class="reponse">
+                <div class="reponse" hidden>
+                    <p>Symptômes actuels :</p>
                     <ul class="evolution-symptomes">
-                        <li id="essoufflement-gravite-3" hidden>Manque de souffle : beaucoup moins bien</li>
-                        <li id="etat-general-gravite-3" hidden>État physique général : beaucoup moins bien</li>
-                        <li id="essoufflement-gravite-2" hidden>Manque de souffle : un peu moins bien</li>
-                        <li id="etat-general-gravite-2" hidden>État physique général : un peu moins bien</li>
-                        <li id="alimentation-hydratation-gravite-2" hidden>Impossibilité de vous alimenter ou de boire depuis plus de 24 heures</li>
-                        <li id="fievre-gravite-1" hidden>Température supérieure à 39°C, et qui ne diminue pas malgré la prise de paracétamol</li>
-                        <li id="diarrhee-vomissements-gravite-1" hidden>Diarrhée ou vomissements importants</li>
+                        <li id="essoufflement-gravite-3" hidden>
+                            {{ réponse_suivi_essoufflement_gravité_3 }}
+                        </li>
+                        <li id="essoufflement-gravite-2" hidden>
+                            {{ réponse_suivi_essoufflement_gravité_2 }}
+                        </li>
+                        <li id="etat-general-gravite-3" hidden>
+                            {{ réponse_suivi_état_général_gravité_3 }}
+                        </li>
+                        <li id="etat-general-gravite-2" hidden>
+                            {{ réponse_suivi_état_général_gravité_2 }}
+                        </li>
+                        <li id="alimentation-hydratation-gravite-2" hidden>
+                            {{ réponse_suivi_alimentation_hydratation_gravité_2 }}
+                        </li>
+                        <li id="etat-psychologique-gravite-3" hidden>
+                            {{ réponse_suivi_état_psychologique_gravité_3 }}
+                        </li>
+                        <li id="fievre-gravite-1" hidden>
+                            {{ réponse_suivi_fièvre_gravité_1 }}
+                        </li>
+                        <li id="diarrhee-vomissements-gravite-1" hidden>
+                            {{ réponse_suivi_diarrhee_vomissements_gravité_1 }}
+                        </li>
                     </ul>
                 </div>
                 <div id="suivi-gravite-3" class="statut suivi-gravite-3" hidden>

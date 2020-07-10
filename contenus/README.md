@@ -312,6 +312,17 @@ Sous-question (fièvre) : [libellé](questions/question_suivi_symptômes_fièvre
 
 Sous-question (diarrhée ou vomissements) : [libellé](questions/question_suivi_symptômes_diarrhée_vomissements.md)
 
+Réponses :
+
+* [réponse_suivi_essoufflement_gravité_3.md](réponses/réponse_suivi_essoufflement_gravité_3.md) si `essoufflement` à « Beaucoup moins bien »
+* [réponse_suivi_essoufflement_gravité_2.md](réponses/réponse_suivi_essoufflement_gravité_2.md) si `essoufflement` à « Un peu moins bien »
+* [réponse_suivi_état_général_gravité_3.md](réponses/réponse_suivi_état_général_gravité_3.md) si `état général` à « Beaucoup moins bien »
+* [réponse_suivi_état_général_gravité_2.md](réponses/réponse_suivi_état_général_gravité_2.md) si `état général` à « Un peu moins bien »
+* [réponse_suivi_état_psychologique_gravité_3.md](réponses/réponse_suivi_état_psychologique_gravité_3.md) si `état psychologique` à « Beaucoup moins bien »
+* [réponse_suivi_alimentation_hydratation_gravité_2.md](réponses/réponse_suivi_alimentation_hydratation_gravité_2.md) si `alimentation et hydratation` à « Oui »
+* [réponse_suivi_fièvre_gravité_1.md](réponses/réponse_suivi_fièvre_gravité_1.md) si fièvre à « Oui »
+* [réponse_suivi_diarrhee_vomissements_gravité_1.md](réponses/réponse_suivi_diarrhee_vomissements_gravité_1.md) si `diarrhée et vomissements` à « Oui »
+
 Conseils :
 
 * Si au moins une réponse « Beaucoup moins bien » alors [suivi_gravité_3.md](suivi/suivi_gravité_3.md)
