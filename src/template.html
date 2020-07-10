@@ -581,8 +581,20 @@
     <div>
         <div id="conseils-block" class="block">
             <h1 id="conseils-block-titre" hidden></h1>
-            <h2>En résumé</h2>
+
             <div id="suivi" hidden>
+                <h2>L’évolution de vos symptômes</h2>
+                <div class="reponse">
+                    <ul class="evolution-symptomes">
+                        <li id="essoufflement-gravite-3" hidden>Manque de souffle : beaucoup moins bien</li>
+                        <li id="etat-general-gravite-3" hidden>État physique général : beaucoup moins bien</li>
+                        <li id="essoufflement-gravite-2" hidden>Manque de souffle : un peu moins bien</li>
+                        <li id="etat-general-gravite-2" hidden>État physique général : un peu moins bien</li>
+                        <li id="alimentation-hydratation-gravite-2" hidden>Impossibilité de vous alimenter ou de boire depuis plus de 24 heures</li>
+                        <li id="fievre-gravite-1" hidden>Température supérieure à 39°C, et qui ne diminue pas malgré la prise de paracétamol</li>
+                        <li id="diarrhee-vomissements-gravite-1" hidden>Diarrhée ou vomissements importants</li>
+                    </ul>
+                </div>
                 <div id="suivi-gravite-3" class="statut suivi-gravite-3" hidden>
                     {{ suivi_gravité_3 }}
                 </div>
@@ -602,6 +614,8 @@
                     {{ suivi_psy_1 }}
                 </div>
             </div>
+
+            <h2>En résumé</h2>
             <div id="statut-symptomatique-urgent" class="statut statut-symptomatique-urgent" hidden>
                 {{ statut_symptomatique_urgent }}
             </div>

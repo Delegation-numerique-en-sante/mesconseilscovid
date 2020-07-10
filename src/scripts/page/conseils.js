@@ -20,6 +20,7 @@ function page(element, app) {
         var algoSuivi = new AlgorithmeSuivi(app.profil)
         affichage.displayElementById(element, 'suivi')
         showRelevantSuiviBlocks(element, algoSuivi)
+        showRelevantEvolutionsRecap(element, algoSuivi)
     }
 
     // Display appropriate conseils.
@@ -73,6 +74,11 @@ function showRelevantBlocks(element, profil, algoOrientation) {
     blockNames = blockNames.concat(
         algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay()
     )
+    affichage.displayBlocks(element, blockNames)
+}
+
+function showRelevantEvolutionsRecap(element, algoSuivi) {
+    var blockNames = algoSuivi.evolutionsBlockNamesToDisplay()
     affichage.displayBlocks(element, blockNames)
 }
 

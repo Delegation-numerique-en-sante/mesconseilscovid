@@ -111,7 +111,7 @@ a .profil {
     padding-top: 3rem;
     margin-bottom: 3rem;
 }
-.block > h2 {
+.block h2 {
     color: #000091;
     font-size: 225%;
     padding-top: 3rem;
@@ -215,6 +215,7 @@ main footer {
     background-position: center 1rem;
     background-repeat: no-repeat;
     background-size: 50%;
+    margin-top: 6rem;
 }
 #conseils-pediatrie-general h3 {
     padding-top: 200px;
@@ -317,7 +318,7 @@ main footer {
     padding: 0.5rem 1rem;
     border: 4px solid;
     text-align: center;
-    margin: 3rem auto 6rem;
+    margin: 3rem auto;
 }
 .statut-symptomatique-urgent,
 .statut-symptomatique,
