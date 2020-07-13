@@ -1,47 +1,9 @@
 const assert = require('assert')
-const playwright = require('playwright')
-const http = require('http')
-const nodeStatic = require('node-static')
 
 describe('Auto-suivi', function () {
-    // Lance un serveur HTTP
-    let server
-    before(function () {
-        let file = new nodeStatic.Server('./dist')
-        server = http.createServer(function (request, response) {
-            request
-                .addListener('end', function () {
-                    file.serve(request, response)
-                })
-                .resume()
-        })
-        server.listen(8080)
-    })
-    after(function () {
-        server.close()
-    })
-
-    // Lance un navigateur « headless »
-    let browser
-    before(async function () {
-        browser = await playwright[process.env.npm_config_browser].launch({
-            headless: true,
-        })
-    })
-    after(async function () {
-        await browser.close()
-    })
-
-    // Chaque test tourne dans un nouvel onglet
-    let page
-    beforeEach(async function () {
-        page = await browser.newPage()
-    })
-    afterEach(async function () {
-        await page.close()
-    })
-
     it('remplir le questionnaire de suivi pour moi', async function () {
+        const page = this.test.page
+
         // On est redirigé vers l’introduction
         await Promise.all([
             page.goto('http://localhost:8080/'),
@@ -259,6 +221,8 @@ describe('Auto-suivi', function () {
     })
 
     it('remplir le questionnaire de suivi pour un proche', async function () {
+        const page = this.test.page
+
         // On est redirigé vers l’introduction
         await Promise.all([
             page.goto('http://localhost:8080/'),
