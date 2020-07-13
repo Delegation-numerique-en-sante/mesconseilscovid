@@ -1,0 +1,1 @@
+Avez-vous remarqué chez votre proche l’apparition d’une forte **somnolence** ou d’une **confusion** ces dernières heures ?

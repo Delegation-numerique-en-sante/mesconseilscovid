@@ -344,6 +344,11 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
+## [question_suivi_symptômes_confusion_libellé.md](question_suivi_symptômes_confusion_libellé.md)
+
+Avez-vous remarqué chez votre proche l’apparition d’une forte **somnolence** ou d’une **confusion** ces dernières heures ?
+
+
 ## [question_suivi_symptômes_diarrhée_vomissements_libellé.md](question_suivi_symptômes_diarrhée_vomissements_libellé.md)
 
 <!---->Depuis hier (ou votre dernière connexion), avez-vous eu de la <b>diarrhée</b> (au moins 3 selles liquides par jour) ou des <b>vomissements</b> importants ?

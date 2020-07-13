@@ -599,6 +599,9 @@
                         <li id="etat-general-gravite-2" hidden>
                             {{ réponse_suivi_état_général_gravité_2 }}
                         </li>
+                        <li id="confusion-gravite-2" hidden>
+                            {{ réponse_suivi_confusion_gravité_2 }}
+                        </li>
                         <li id="alimentation-hydratation-gravite-2" hidden>
                             {{ réponse_suivi_alimentation_hydratation_gravité_2 }}
                         </li>
@@ -964,6 +967,15 @@
                 <label for="suivi_symptomes_etat_general_pire">Un peu moins bien</label>
                 <input id="suivi_symptomes_etat_general_critique" type="radio" name="suivi_symptomes_etat_general" value="critique">
                 <label for="suivi_symptomes_etat_general_critique">Beaucoup moins bien</label>
+            </div>
+            <div class="secondary disabled required them-only">
+                <p>
+                    {{ question_suivi_symptômes_confusion_libellé }}
+                </p>
+                <input id="suivi_symptomes_confusion_oui" type="radio" name="suivi_symptomes_confusion" value="oui">
+                <label for="suivi_symptomes_confusion_oui">Oui</label>
+                <input id="suivi_symptomes_confusion_non" type="radio" name="suivi_symptomes_confusion" value="non">
+                <label for="suivi_symptomes_confusion_non">Non</label>
             </div>
             <div class="secondary disabled required">
                 <p>

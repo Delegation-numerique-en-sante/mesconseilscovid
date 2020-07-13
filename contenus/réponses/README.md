@@ -70,6 +70,12 @@ Vous vivez avec une ou des personnes considérée(s) comme fragile(s) face au co
 
 
 
+## [réponse_suivi_confusion_gravité_2.md](réponse_suivi_confusion_gravité_2.md)
+
+<!---->Apparition de somnolence ou de confusion
+
+
+
 ## [réponse_suivi_diarrhee_vomissements_gravité_1.md](réponse_suivi_diarrhee_vomissements_gravité_1.md)
 
 <!---->Diarrhée ou vomissements importants

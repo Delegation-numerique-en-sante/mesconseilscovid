@@ -17,6 +17,7 @@ class AlgorithmeSuivi {
         if (
             etat.essoufflement === 'pire' ||
             etat.etatGeneral === 'pire' ||
+            etat.confusion === 'oui' ||
             etat.alimentationHydratation === 'oui' ||
             etat.mauxDeTete === 'oui'
         ) {
@@ -58,6 +59,9 @@ class AlgorithmeSuivi {
         }
         if (etat.etatGeneral === 'pire') {
             evolutions.push('etat-general-gravite-2')
+        }
+        if (etat.confusion === 'oui') {
+            evolutions.push('confusion-gravite-2')
         }
         if (etat.alimentationHydratation === 'oui') {
             evolutions.push('alimentation-hydratation-gravite-2')

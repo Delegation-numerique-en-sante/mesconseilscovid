@@ -322,6 +322,17 @@ function suividate(form, app, router) {
 }
 
 function suivisymptomes(form, app, router) {
+    // Question affichée seulement si on répond pour un proche
+    const pourUnProche = !app.profil.estMonProfil()
+    var themOnly = form.querySelector('.them-only')
+    if (pourUnProche) {
+        affichage.showElement(themOnly)
+        themOnly.classList.add('required')
+    } else {
+        affichage.hideElement(themOnly)
+        themOnly.classList.remove('required')
+    }
+
     var button = form.querySelector('input[type=submit]')
     // On pré-suppose que la personne qui fait son auto-suivi a des symptômes
     form['suivi_symptomes'].checked = true
@@ -342,7 +353,7 @@ function suivisymptomes(form, app, router) {
     )
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        const etat = {
+        let etat = {
             date: new Date().toJSON(),
             symptomes: event.target.elements['suivi_symptomes'].checked,
             essoufflement: event.target.elements['suivi_symptomes_essoufflement'].value,
@@ -357,6 +368,10 @@ function suivisymptomes(form, app, router) {
             mauxDeTete: event.target.elements['suivi_symptomes_maux_de_tete'].value,
             toux: event.target.elements['suivi_symptomes_toux'].value,
         }
+        if (pourUnProche) {
+            etat.confusion = event.target.elements['suivi_symptomes_confusion'].value
+        }
+
         app.profil.ajouterEtat(etat)
         app.enregistrerProfilActuel()
         router.navigate('conseils')
