@@ -22,518 +22,445 @@ describe('Injection', function () {
     it('Départements', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
-        element.innerHTML = `<b id="nom-departement"></b>`
+        element.innerHTML = '<b id="nom-departement"></b>'
         injection.departement(element.querySelector('#nom-departement'), '01')
 
-        assert.strictEqual(element.innerHTML, `<b id="nom-departement">Ain</b>`)
+        assert.strictEqual(element.innerHTML, '<b id="nom-departement">Ain</b>')
     })
 
     it('Lien préfecture', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <a href="#conseils-departement" id="lien-prefecture">Site</a>
-        `
+        element.innerHTML =
+            '<a href="#conseils-departement" id="lien-prefecture">Site</a>'
         injection.lienPrefecture(element.querySelector('#lien-prefecture'), '01')
 
         assert.strictEqual(
             element.innerHTML,
-            `
-            <a href="http://www.ain.gouv.fr/strategie-locale-de-deconfinement-a6156.html" id="lien-prefecture">Site</a>
-        `
+            '<a href="http://www.ain.gouv.fr/strategie-locale-de-deconfinement-a6156.html" id="lien-prefecture">Site</a>'
         )
     })
 
-    it('Caractéristiques à risques (âge)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-caracteristiques-a-risques"></b>
-        `
-        var data = {
-            age: 65,
-        }
-        profil.fillData(data)
+    describe('Caractéristiques à risques', function () {
+        it('âge', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-caracteristiques-a-risques"></b>'
+            var data = {
+                age: 65,
+            }
+            profil.fillData(data)
 
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.caracteristiquesARisques(
-            element.querySelector('#nom-caracteristiques-a-risques'),
-            algoOrientation
-        )
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.caracteristiquesARisques(
+                element.querySelector('#nom-caracteristiques-a-risques'),
+                algoOrientation
+            )
 
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-caracteristiques-a-risques">vous êtes âgé·e de plus de 65&nbsp;ans.</b>
-        `
-        )
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-caracteristiques-a-risques">vous êtes âgé·e de plus de 65&nbsp;ans.</b>'
+            )
+        })
+
+        it('grossesse', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-caracteristiques-a-risques"></b>'
+            var data = {
+                grossesse_3e_trimestre: true,
+            }
+            profil.fillData(data)
+
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.caracteristiquesARisques(
+                element.querySelector('#nom-caracteristiques-a-risques'),
+                algoOrientation
+            )
+
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-caracteristiques-a-risques">vous êtes au 3e trimestre de votre grossesse.</b>'
+            )
+        })
+
+        it('âge + grossesse = âge', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-caracteristiques-a-risques"></b>'
+            var data = {
+                age: 65,
+                grossesse_3e_trimestre: true,
+            }
+            profil.fillData(data)
+
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.caracteristiquesARisques(
+                element.querySelector('#nom-caracteristiques-a-risques'),
+                algoOrientation
+            )
+
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-caracteristiques-a-risques">vous êtes âgé·e de plus de 65&nbsp;ans.</b>'
+            )
+        })
+
+        it('IMC', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-caracteristiques-a-risques"></b>'
+            var data = {
+                taille: 150,
+                poids: 150,
+            }
+            profil.fillData(data)
+
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.caracteristiquesARisques(
+                element.querySelector('#nom-caracteristiques-a-risques'),
+                algoOrientation
+            )
+
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-caracteristiques-a-risques">vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>'
+            )
+        })
+
+        it('âge + IMC', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-caracteristiques-a-risques"></b>'
+            var data = {
+                age: 65,
+                taille: 150,
+                poids: 150,
+            }
+            profil.fillData(data)
+
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.caracteristiquesARisques(
+                element.querySelector('#nom-caracteristiques-a-risques'),
+                algoOrientation
+            )
+
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-caracteristiques-a-risques">vous êtes âgé·e de plus de 65&nbsp;ans et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>'
+            )
+        })
+
+        it('grossesse + IMC', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-caracteristiques-a-risques"></b>'
+            var data = {
+                grossesse_3e_trimestre: true,
+                taille: 150,
+                poids: 150,
+            }
+            profil.fillData(data)
+
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.caracteristiquesARisques(
+                element.querySelector('#nom-caracteristiques-a-risques'),
+                algoOrientation
+            )
+
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-caracteristiques-a-risques">vous êtes au 3e trimestre de votre grossesse et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>'
+            )
+        })
     })
 
-    it('Caractéristiques à risques (grossesse)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-caracteristiques-a-risques"></b>
-        `
-        var data = {
-            grossesse_3e_trimestre: true,
-        }
-        profil.fillData(data)
+    describe('Antécédents', function () {
+        it('cardio', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-antecedents"></b>'
+            var data = {
+                antecedent_cardio: true,
+            }
+            profil.fillData(data)
 
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.caracteristiquesARisques(
-            element.querySelector('#nom-caracteristiques-a-risques'),
-            algoOrientation
-        )
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.antecedents(
+                element.querySelector('#nom-antecedents'),
+                algoOrientation
+            )
 
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-caracteristiques-a-risques">vous êtes au 3e trimestre de votre grossesse.</b>
-        `
-        )
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-antecedents">Vous avez des antécédents à risque.</b>'
+            )
+        })
+
+        it('autres', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-antecedents"></b>'
+            var data = {
+                antecedent_chronique_autre: true,
+            }
+            profil.fillData(data)
+
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.antecedents(
+                element.querySelector('#nom-antecedents'),
+                algoOrientation
+            )
+
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-antecedents">Vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</b>'
+            )
+        })
+
+        it('cardio + autres', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-antecedents"></b>'
+            var data = {
+                antecedent_cardio: true,
+                antecedent_chronique_autre: true,
+            }
+            profil.fillData(data)
+
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.antecedents(
+                element.querySelector('#nom-antecedents'),
+                algoOrientation
+            )
+
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-antecedents">Vous avez des antécédents à risque et vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</b>'
+            )
+        })
     })
 
-    it('Caractéristiques à risques (âge + grossesse = âge)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-caracteristiques-a-risques"></b>
-        `
-        var data = {
-            age: 65,
-            grossesse_3e_trimestre: true,
-        }
-        profil.fillData(data)
+    describe('Symptômes actuels', function () {
+        it('température', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            var data = {
+                symptomes_actuels: true,
+                symptomes_actuels_temperature: true,
+            }
+            profil.fillData(data)
 
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.caracteristiquesARisques(
-            element.querySelector('#nom-caracteristiques-a-risques'),
-            algoOrientation
-        )
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.symptomesactuels(
+                element.querySelector('#nom-symptomesactuels'),
+                algoOrientation
+            )
 
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-caracteristiques-a-risques">vous êtes âgé·e de plus de 65&nbsp;ans.</b>
-        `
-        )
-    })
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas).</b>'
+            )
+        })
 
-    it('Caractéristiques à risques (IMC)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-caracteristiques-a-risques"></b>
-        `
-        var data = {
-            taille: 150,
-            poids: 150,
-        }
-        profil.fillData(data)
+        it('température inconnue', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            var data = {
+                symptomes_actuels: true,
+                symptomes_actuels_temperature_inconnue: true,
+            }
+            profil.fillData(data)
 
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.caracteristiquesARisques(
-            element.querySelector('#nom-caracteristiques-a-risques'),
-            algoOrientation
-        )
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.symptomesactuels(
+                element.querySelector('#nom-symptomesactuels'),
+                algoOrientation
+            )
 
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-caracteristiques-a-risques">vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
-        `
-        )
-    })
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas).</b>'
+            )
+        })
 
-    it('Caractéristiques à risques (âge + IMC)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-caracteristiques-a-risques"></b>
-        `
-        var data = {
-            age: 65,
-            taille: 150,
-            poids: 150,
-        }
-        profil.fillData(data)
+        it('toux', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            var data = {
+                symptomes_actuels: true,
+                symptomes_actuels_toux: true,
+            }
+            profil.fillData(data)
 
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.caracteristiquesARisques(
-            element.querySelector('#nom-caracteristiques-a-risques'),
-            algoOrientation
-        )
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.symptomesactuels(
+                element.querySelector('#nom-symptomesactuels'),
+                algoOrientation
+            )
 
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-caracteristiques-a-risques">vous êtes âgé·e de plus de 65&nbsp;ans et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
-        `
-        )
-    })
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-symptomesactuels">vous avez de la toux.</b>'
+            )
+        })
 
-    it('Caractéristiques à risques (grossesse + IMC)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-caracteristiques-a-risques"></b>
-        `
-        var data = {
-            grossesse_3e_trimestre: true,
-            taille: 150,
-            poids: 150,
-        }
-        profil.fillData(data)
+        it('température + toux', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            var data = {
+                symptomes_actuels: true,
+                symptomes_actuels_temperature: true,
+                symptomes_actuels_toux: true,
+            }
+            profil.fillData(data)
 
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.caracteristiquesARisques(
-            element.querySelector('#nom-caracteristiques-a-risques'),
-            algoOrientation
-        )
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.symptomesactuels(
+                element.querySelector('#nom-symptomesactuels'),
+                algoOrientation
+            )
 
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-caracteristiques-a-risques">vous êtes au 3e trimestre de votre grossesse et vous avez un IMC supérieur&nbsp;à&nbsp;30&nbsp;(67).</b>
-        `
-        )
-    })
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas)&nbsp;; vous avez de la toux.</b>'
+            )
+        })
 
-    it('Antécédents (cardio)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-antecedents"></b>
-        `
-        var data = {
-            antecedent_cardio: true,
-        }
-        profil.fillData(data)
+        it('odorat', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            var data = {
+                symptomes_actuels: true,
+                symptomes_actuels_odorat: true,
+            }
+            profil.fillData(data)
 
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.antecedents(
-            element.querySelector('#nom-antecedents'),
-            algoOrientation
-        )
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.symptomesactuels(
+                element.querySelector('#nom-symptomesactuels'),
+                algoOrientation
+            )
 
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-antecedents">Vous avez des antécédents à risque.</b>
-        `
-        )
-    })
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-symptomesactuels">vous avez perdu l’odorat.</b>'
+            )
+        })
 
-    it('Antécédents (autres)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-antecedents"></b>
-        `
-        var data = {
-            antecedent_chronique_autre: true,
-        }
-        profil.fillData(data)
+        it('douleurs', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            var data = {
+                symptomes_actuels: true,
+                symptomes_actuels_douleurs: true,
+            }
+            profil.fillData(data)
 
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.antecedents(
-            element.querySelector('#nom-antecedents'),
-            algoOrientation
-        )
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.symptomesactuels(
+                element.querySelector('#nom-symptomesactuels'),
+                algoOrientation
+            )
 
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-antecedents">Vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</b>
-        `
-        )
-    })
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-symptomesactuels">vous avez des douleurs.</b>'
+            )
+        })
 
-    it('Antécédents (cardio + autres)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-antecedents"></b>
-        `
-        var data = {
-            antecedent_cardio: true,
-            antecedent_chronique_autre: true,
-        }
-        profil.fillData(data)
+        it('diarrhée', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            var data = {
+                symptomes_actuels: true,
+                symptomes_actuels_diarrhee: true,
+            }
+            profil.fillData(data)
 
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.antecedents(
-            element.querySelector('#nom-antecedents'),
-            algoOrientation
-        )
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.symptomesactuels(
+                element.querySelector('#nom-symptomesactuels'),
+                algoOrientation
+            )
 
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-antecedents">Vous avez des antécédents à risque et vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</b>
-        `
-        )
-    })
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-symptomesactuels">vous avez de la diarrhée.</b>'
+            )
+        })
 
-    it('Symptômes actuels (température)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-symptomesactuels"></b>
-        `
-        var data = {
-            symptomes_actuels: true,
-            symptomes_actuels_temperature: true,
-        }
-        profil.fillData(data)
+        it('fatigue', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            var data = {
+                symptomes_actuels: true,
+                symptomes_actuels_fatigue: true,
+            }
+            profil.fillData(data)
 
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.symptomesactuels(
-            element.querySelector('#nom-symptomesactuels'),
-            algoOrientation
-        )
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.symptomesactuels(
+                element.querySelector('#nom-symptomesactuels'),
+                algoOrientation
+            )
 
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas).</b>
-        `
-        )
-    })
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-symptomesactuels">vous êtes fatigué·e.</b>'
+            )
+        })
 
-    it('Symptômes actuels (température inconnue)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-symptomesactuels"></b>
-        `
-        var data = {
-            symptomes_actuels: true,
-            symptomes_actuels_temperature_inconnue: true,
-        }
-        profil.fillData(data)
+        it('alimentation', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            var data = {
+                symptomes_actuels: true,
+                symptomes_actuels_alimentation: true,
+            }
+            profil.fillData(data)
 
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.symptomesactuels(
-            element.querySelector('#nom-symptomesactuels'),
-            algoOrientation
-        )
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.symptomesactuels(
+                element.querySelector('#nom-symptomesactuels'),
+                algoOrientation
+            )
 
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas).</b>
-        `
-        )
-    })
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-symptomesactuels">vous avez arrêté de boire ou de manger.</b>'
+            )
+        })
 
-    it('Symptômes actuels (toux)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-symptomesactuels"></b>
-        `
-        var data = {
-            symptomes_actuels: true,
-            symptomes_actuels_toux: true,
-        }
-        profil.fillData(data)
+        it('souffle', function () {
+            var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+            var element = dom.window.document.querySelector('div')
+            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            var data = {
+                symptomes_actuels: true,
+                symptomes_actuels_souffle: true,
+            }
+            profil.fillData(data)
 
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.symptomesactuels(
-            element.querySelector('#nom-symptomesactuels'),
-            algoOrientation
-        )
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            injection.symptomesactuels(
+                element.querySelector('#nom-symptomesactuels'),
+                algoOrientation
+            )
 
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-symptomesactuels">vous avez de la toux.</b>
-        `
-        )
-    })
-
-    it('Symptômes actuels (température + toux)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-symptomesactuels"></b>
-        `
-        var data = {
-            symptomes_actuels: true,
-            symptomes_actuels_temperature: true,
-            symptomes_actuels_toux: true,
-        }
-        profil.fillData(data)
-
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.symptomesactuels(
-            element.querySelector('#nom-symptomesactuels'),
-            algoOrientation
-        )
-
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas)&nbsp;; vous avez de la toux.</b>
-        `
-        )
-    })
-
-    it('Symptômes actuels (odorat)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-symptomesactuels"></b>
-        `
-        var data = {
-            symptomes_actuels: true,
-            symptomes_actuels_odorat: true,
-        }
-        profil.fillData(data)
-
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.symptomesactuels(
-            element.querySelector('#nom-symptomesactuels'),
-            algoOrientation
-        )
-
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-symptomesactuels">vous avez perdu l’odorat.</b>
-        `
-        )
-    })
-
-    it('Symptômes actuels (douleurs)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-symptomesactuels"></b>
-        `
-        var data = {
-            symptomes_actuels: true,
-            symptomes_actuels_douleurs: true,
-        }
-        profil.fillData(data)
-
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.symptomesactuels(
-            element.querySelector('#nom-symptomesactuels'),
-            algoOrientation
-        )
-
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-symptomesactuels">vous avez des douleurs.</b>
-        `
-        )
-    })
-
-    it('Symptômes actuels (diarrhée)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-symptomesactuels"></b>
-        `
-        var data = {
-            symptomes_actuels: true,
-            symptomes_actuels_diarrhee: true,
-        }
-        profil.fillData(data)
-
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.symptomesactuels(
-            element.querySelector('#nom-symptomesactuels'),
-            algoOrientation
-        )
-
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-symptomesactuels">vous avez de la diarrhée.</b>
-        `
-        )
-    })
-
-    it('Symptômes actuels (fatigue)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-symptomesactuels"></b>
-        `
-        var data = {
-            symptomes_actuels: true,
-            symptomes_actuels_fatigue: true,
-        }
-        profil.fillData(data)
-
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.symptomesactuels(
-            element.querySelector('#nom-symptomesactuels'),
-            algoOrientation
-        )
-
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-symptomesactuels">vous êtes fatigué·e.</b>
-        `
-        )
-    })
-
-    it('Symptômes actuels (alimentation)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-symptomesactuels"></b>
-        `
-        var data = {
-            symptomes_actuels: true,
-            symptomes_actuels_alimentation: true,
-        }
-        profil.fillData(data)
-
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.symptomesactuels(
-            element.querySelector('#nom-symptomesactuels'),
-            algoOrientation
-        )
-
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-symptomesactuels">vous avez arrêté de boire ou de manger.</b>
-        `
-        )
-    })
-
-    it('Symptômes actuels (souffle)', function () {
-        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
-        var element = dom.window.document.querySelector('div')
-        element.innerHTML = `
-            <b id="nom-symptomesactuels"></b>
-        `
-        var data = {
-            symptomes_actuels: true,
-            symptomes_actuels_souffle: true,
-        }
-        profil.fillData(data)
-
-        var algoOrientation = new AlgorithmeOrientation(profil)
-        injection.symptomesactuels(
-            element.querySelector('#nom-symptomesactuels'),
-            algoOrientation
-        )
-
-        assert.strictEqual(
-            element.innerHTML,
-            `
-            <b id="nom-symptomesactuels">vous êtes essouflé·e.</b>
-        `
-        )
+            assert.strictEqual(
+                element.innerHTML,
+                '<b id="nom-symptomesactuels">vous êtes essouflé·e.</b>'
+            )
+        })
     })
 })
