@@ -568,6 +568,7 @@ input[type='radio'] + label {
     position: relative;
     padding: 0 1.5rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
 }
 input[type='radio'] + label {
