@@ -6,7 +6,7 @@ const nodeStatic = require('node-static')
 describe('Auto-suivi', function () {
     // Lance un serveur HTTP
     let server
-    before(() => {
+    before(function () {
         let file = new nodeStatic.Server('./dist')
         server = http.createServer(function (request, response) {
             request
@@ -17,31 +17,31 @@ describe('Auto-suivi', function () {
         })
         server.listen(8080)
     })
-    after(() => {
+    after(function () {
         server.close()
     })
 
     // Lance un navigateur « headless »
     let browser
-    before(async () => {
+    before(async function () {
         browser = await playwright[process.env.npm_config_browser].launch({
             headless: true,
         })
     })
-    after(async () => {
+    after(async function () {
         await browser.close()
     })
 
     // Chaque test tourne dans un nouvel onglet
     let page
-    beforeEach(async () => {
+    beforeEach(async function () {
         page = await browser.newPage()
     })
-    afterEach(async () => {
+    afterEach(async function () {
         await page.close()
     })
 
-    it('remplir le questionnaire de suivi pour moi', async () => {
+    it('remplir le questionnaire de suivi pour moi', async function () {
         // On est redirigé vers l’introduction
         await Promise.all([
             page.goto('http://localhost:8080/'),
@@ -258,7 +258,7 @@ describe('Auto-suivi', function () {
         }
     })
 
-    it('remplir le questionnaire de suivi pour un proche', async () => {
+    it('remplir le questionnaire de suivi pour un proche', async function () {
         // On est redirigé vers l’introduction
         await Promise.all([
             page.goto('http://localhost:8080/'),

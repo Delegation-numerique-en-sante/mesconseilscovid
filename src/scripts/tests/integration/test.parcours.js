@@ -6,7 +6,7 @@ const nodeStatic = require('node-static')
 describe('Parcours', function () {
     // Lance un serveur HTTP
     let server
-    before(() => {
+    before(function () {
         let file = new nodeStatic.Server('./dist')
         server = http.createServer(function (request, response) {
             request
@@ -17,31 +17,31 @@ describe('Parcours', function () {
         })
         server.listen(8080)
     })
-    after(() => {
+    after(function () {
         server.close()
     })
 
     // Lance un navigateur « headless »
     let browser
-    before(async () => {
+    before(async function () {
         browser = await playwright[process.env.npm_config_browser].launch({
             headless: true,
         })
     })
-    after(async () => {
+    after(async function () {
         await browser.close()
     })
 
     // Chaque test tourne dans un nouvel onglet
     let page
-    beforeEach(async () => {
+    beforeEach(async function () {
         page = await browser.newPage()
     })
-    afterEach(async () => {
+    afterEach(async function () {
         await page.close()
     })
 
-    it('titre de la page', async () => {
+    it('titre de la page', async function () {
         await page.goto('http://localhost:8080/')
         assert.equal(
             await page.title(),
@@ -49,7 +49,7 @@ describe('Parcours', function () {
         )
     })
 
-    it('remplir le questionnaire classique', async () => {
+    it('remplir le questionnaire classique', async function () {
         // On est redirigé vers l’introduction
         await Promise.all([
             page.goto('http://localhost:8080/'),
@@ -195,7 +195,7 @@ describe('Parcours', function () {
         }
     })
 
-    it('remplir le questionnaire avec symptômes actuels', async () => {
+    it('remplir le questionnaire avec symptômes actuels', async function () {
         // On est redirigé vers l’introduction
         await Promise.all([
             page.goto('http://localhost:8080/'),
@@ -304,7 +304,7 @@ describe('Parcours', function () {
         }
     })
 
-    it('remplir le questionnaire avec symptômes actuels (gravité majeure)', async () => {
+    it('remplir le questionnaire avec symptômes actuels (gravité majeure)', async function () {
         // On est redirigé vers l’introduction
         await Promise.all([
             page.goto('http://localhost:8080/'),
@@ -415,7 +415,7 @@ describe('Parcours', function () {
         }
     })
 
-    it('remplir le questionnaire avec symptômes passés', async () => {
+    it('remplir le questionnaire avec symptômes passés', async function () {
         // On est redirigé vers l’introduction
         await Promise.all([
             page.goto('http://localhost:8080/'),
