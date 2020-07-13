@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-07-13
+
+* corrige l’ordre des départements 04 et 05 dans la liste
+* corrige des problèmes de compabilité avec IE 11
+
 ## 2020-07-07
 
 * ajout de la gestion de multiples profils
