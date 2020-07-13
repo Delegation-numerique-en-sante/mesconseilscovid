@@ -105,17 +105,17 @@ function initRouter(app) {
         })
         .on(new RegExp('^suiviintroduction$'), function () {
             var pageName = 'suiviintroduction'
-            var element = pagination.loadPage(pageName)
+            var element = pagination.loadPage(pageName, app)
             suivi.page(element, app)
         })
         .on(new RegExp('^suividate$'), function () {
             var pageName = 'suividate'
-            var form = pagination.loadPage(pageName)
+            var form = pagination.loadPage(pageName, app)
             questionnaire.suividate(form, app, router)
         })
         .on(new RegExp('^suivisymptomes$'), function () {
             var pageName = 'suivisymptomes'
-            var form = pagination.loadPage(pageName)
+            var form = pagination.loadPage(pageName, app)
             questionnaire.suivisymptomes(form, app, router)
         })
         .on(new RegExp('^pediatrie$'), function () {

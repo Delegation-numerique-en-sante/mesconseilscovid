@@ -906,7 +906,7 @@
     <form id="suivi-date-form" action="" class="block">
         <fieldset>
             <legend>{{ question_suivi_date_titre|me_or_them }}</legend>
-            {{ question_suivi_date_libellé }}
+            {{ question_suivi_date_libellé|me_or_them }}
             <div>
                 <input id="suivi_date_aujourdhui" type="radio" required checked name="suivi_symptomes_date" value="aujourdhui">
                 <label for="suivi_date_aujourdhui">Aujourd’hui</label>

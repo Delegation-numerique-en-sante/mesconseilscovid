@@ -316,7 +316,11 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 ## [question_suivi_date_libellé.md](question_suivi_date_libellé.md)
 
-Cette date est une information importante afin de déterminer la période de d’incubation et de guérison de votre maladie.
+<!---->Cette date est une information importante afin de déterminer la période de d’incubation et de guérison de votre maladie.
+
+---
+
+<!---->Cette date est une information importante afin de déterminer la période de d’incubation et de guérison de sa maladie.
 
 
 
