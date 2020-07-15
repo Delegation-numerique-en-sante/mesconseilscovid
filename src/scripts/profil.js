@@ -320,7 +320,7 @@ class Profil {
         if (this.hasSuiviStartDate()) {
             deleteLink = affichage.safeHtml`
                 <a data-delete-suivi="${this.nom}" href=""
-                    >Supprimer ${possessifMasculinSingulier} auto-suivi</a>
+                    >Supprimer ${possessifMasculinSingulier} suivi</a>
             `
         }
         return suiviButton + conseilsButton + deleteLink
