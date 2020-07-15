@@ -110,7 +110,7 @@ describe('Auto-suivi', function () {
             let gravite = await page.waitForSelector('#page #suivi-gravite-0')
             assert.equal(
                 (await gravite.innerText()).trim(),
-                'Poursuivez votre autosuivi à la maison comme entendu avec votre médecin.'
+                'Poursuivez votre auto-suivi à la maison comme entendu avec votre médecin.'
             )
             let bouton = await page.waitForSelector(
                 '#page >> text="Refaire le questionnaire"'
@@ -287,7 +287,7 @@ describe('Auto-suivi', function () {
             let gravite = await page.waitForSelector('#page #suivi-gravite-0')
             assert.equal(
                 (await gravite.innerText()).trim(),
-                'Poursuivez votre autosuivi à la maison comme entendu avec votre médecin.'
+                'Poursuivez votre auto-suivi à la maison comme entendu avec votre médecin.'
             )
             let bouton = await page.waitForSelector(
                 '#page >> text="Refaire le questionnaire"'
