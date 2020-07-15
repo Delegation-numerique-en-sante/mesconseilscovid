@@ -70,6 +70,7 @@ class Profil {
         this.contact_a_risque_meme_classe = undefined
         this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_autre = undefined
+        this.suivi_active = undefined
         this._suivi_start_date = undefined
         this._symptomes_start_date = undefined
         this.suivi = []
@@ -119,6 +120,7 @@ class Profil {
         this.contact_a_risque_autre = data['contact_a_risque_autre']
         this._suivi_start_date = data['_suivi_start_date']
         this._symptomes_start_date = data['_symptomes_start_date']
+        this.suivi_active = data['suivi_active'] || false
         this.suivi = data['suivi'] || []
     }
 
@@ -164,6 +166,7 @@ class Profil {
             contact_a_risque_meme_classe: this.contact_a_risque_meme_classe,
             contact_a_risque_stop_covid: this.contact_a_risque_stop_covid,
             contact_a_risque_autre: this.contact_a_risque_autre,
+            suivi_active: this.suivi_active,
             _suivi_start_date: this._suivi_start_date,
             _symptomes_start_date: this._symptomes_start_date,
             suivi: this.suivi,
@@ -258,16 +261,16 @@ class Profil {
         const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
         var mainButton = ''
         if (this.isComplete()) {
-            const hasSuiviStartDate = this.hasSuiviStartDate()
-            const outlined =
-                this.estMonProfil() && !hasSuiviStartDate ? '' : 'button-outline'
-            if (hasSuiviStartDate) {
+            if (this.suivi_active) {
+                const verbe = this.hasSuiviStartDate() ? 'Continuer' : 'Démarrer'
                 mainButton += affichage.safeHtml`
                     <a class="button suivi-link"
                         data-set-profil="${this.nom}" href="#suiviintroduction"
-                        >Continuer ${possessifMasculinSingulier} suivi</a>
+                        >${verbe} ${possessifMasculinSingulier} suivi</a>
                 `
             }
+            const outlined =
+                this.estMonProfil() && !this.suivi_active ? '' : 'button-outline'
             mainButton += affichage.safeHtml`
                 <a class="button ${outlined} conseils-link"
                     data-set-profil="${this.nom}" href="#conseils"

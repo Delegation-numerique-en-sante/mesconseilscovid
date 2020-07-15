@@ -16,6 +16,15 @@ function page(element, app) {
 
     var algoOrientation = new AlgorithmeOrientation(app.profil)
 
+    // Activer / désactiver l’autosuivi pour ce profil ?
+    if (algoOrientation.recommandeAutoSuivi() && !app.profil.suivi_active) {
+        app.profil.suivi_active = true
+        app.enregistrerProfilActuel()
+    } else if (app.profil.suivi_active && !app.profil.hasSuiviStartDate()) {
+        app.profil.suivi_active = false
+        app.enregistrerProfilActuel()
+    }
+
     if (app.profil.hasSuiviStartDate() && app.profil.suivi.length) {
         var algoSuivi = new AlgorithmeSuivi(app.profil)
         affichage.displayElementById(element, 'suivi')

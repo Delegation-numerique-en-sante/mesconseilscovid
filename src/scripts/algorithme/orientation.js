@@ -101,6 +101,10 @@ class AlgorithmeOrientation {
         return 'peu-de-risques'
     }
 
+    recommandeAutoSuivi() {
+        return this.profil.symptomes_actuels
+    }
+
     conseilsPersonnelsBlockNamesToDisplay() {
         const blockNames = []
         if (this.profil.symptomes_actuels) {

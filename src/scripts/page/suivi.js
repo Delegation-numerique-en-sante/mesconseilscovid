@@ -5,10 +5,7 @@ function page(element, app) {
         app.profil.renderCardSuivi(),
         container.firstChild
     )
-    if (!app.profil.hasSuiviStartDate()) {
-        app.profil.suivi_start_date = new Date()
-        app.enregistrerProfilActuel()
-    } else {
+    if (app.profil.hasSuiviStartDate()) {
         bindSuppression(card.querySelector('[data-delete-suivi]'), app)
     }
 }

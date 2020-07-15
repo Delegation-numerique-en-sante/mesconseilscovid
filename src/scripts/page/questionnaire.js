@@ -311,6 +311,12 @@ function suividate(form, app, router) {
         return new Date(today.setDate(today.getDate() - delta))
     }
 
+    // Enregistre le démarrage du suivi
+    if (!app.profil.hasSuiviStartDate()) {
+        app.profil.suivi_start_date = new Date()
+        app.enregistrerProfilActuel()
+    }
+
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.symptomes_start_date = dateFromString(
