@@ -6,12 +6,12 @@ class Profil {
     }
 
     get suivi_start_date() {
+        if (typeof this._suivi_start_date === 'undefined') return undefined
         return new Date(this._suivi_start_date)
     }
 
     set suivi_start_date(date) {
-        // Turn the date into a readable string.
-        this._suivi_start_date = date.toJSON()
+        this._suivi_start_date = typeof date !== 'undefined' ? date.toJSON() : undefined
     }
 
     get symptomes_start_date() {

@@ -77,6 +77,14 @@ describe('Profil', function () {
         assert.typeOf(profil.suivi_start_date, 'date')
     })
 
+    it('La valeur de suivi_start_date peut être indéfinie', function () {
+        assert.isUndefined(profil._suivi_start_date, undefined)
+        assert.isUndefined(profil.suivi_start_date, undefined)
+        profil.suivi_start_date = undefined
+        assert.isUndefined(profil._suivi_start_date, undefined)
+        assert.isUndefined(profil.suivi_start_date, undefined)
+    })
+
     it('On peut ajouter et récupérer un état au suivi', function () {
         assert.deepEqual(profil.suivi, [])
         var etat = {
