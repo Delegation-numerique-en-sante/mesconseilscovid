@@ -8,10 +8,10 @@ function page(element, app) {
     // Hide all conseils that might have been made visible on previous runs.
     affichage.hideSelector(element, '.visible')
 
-    // Make sure we (re-)show profile-specific text
+    // Make sure we (re-)show profile-specific text.
     affichage.showMeOrThem(element, app.profil)
 
-    // Use custom illustration if needed
+    // Use custom illustration if needed.
     var extraClass = getCustomIllustrationName(app.profil)
     if (extraClass) {
         element.querySelector('#conseils-block').classList.add(extraClass)
@@ -19,7 +19,7 @@ function page(element, app) {
 
     var algoOrientation = new AlgorithmeOrientation(app.profil)
 
-    // Activer / désactiver l’autosuivi pour ce profil ?
+    // Activer / désactiver l’auto-suivi pour ce profil ?
     if (algoOrientation.recommandeAutoSuivi() && !app.profil.suivi_active) {
         app.profil.suivi_active = true
         app.enregistrerProfilActuel()
@@ -28,6 +28,7 @@ function page(element, app) {
         app.enregistrerProfilActuel()
     }
 
+    // Afficher le bloc de résultats de l’auto-suivi ?
     if (app.profil.hasSuiviStartDate() && app.profil.suivi.length) {
         var algoSuivi = new AlgorithmeSuivi(app.profil)
         affichage.displayElementById(element, 'suivi')
@@ -38,10 +39,15 @@ function page(element, app) {
     // Display appropriate conseils.
     showRelevantBlocks(element, app.profil, algoOrientation)
 
+    // Cacher le bloc de recommandation de l’auto-suivi si on l’a déjà démarré.
+    if (app.profil.suivi.length) {
+        affichage.hideSelector(element, '.conseil-autosuivi')
+    }
+
     // Dynamic data injections.
     showRelevantAnswersRecap(element, app.profil, algoOrientation)
 
-    // Show instructions to install PWA (iOS) or add bookmark (others)
+    // Show instructions to install PWA (iOS) or add bookmark (others).
     if (isMobileSafari()) {
         const isPWA = navigator.standalone
         if (!isPWA) {
