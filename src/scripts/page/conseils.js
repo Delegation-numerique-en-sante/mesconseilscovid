@@ -28,12 +28,13 @@ function page(element, app) {
         app.enregistrerProfilActuel()
     }
 
-    // Afficher le bloc de résultats de l’auto-suivi ?
+    // Afficher le bloc de résultats de l’auto-suivi ou le statut ?
     if (app.profil.hasSuiviStartDate() && app.profil.suivi.length) {
         var algoSuivi = new AlgorithmeSuivi(app.profil)
         affichage.displayElementById(element, 'suivi')
         showRelevantSuiviBlocks(element, algoSuivi)
         showRelevantEvolutionsRecap(element, algoSuivi)
+        affichage.hideSelector(element, '#conseils-statut')
     }
 
     // Display appropriate conseils.
