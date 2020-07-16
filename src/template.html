@@ -689,11 +689,10 @@
                     {{ conseils_symptômes_actuels_gravité4 }}
                 </div>
                 <div class="conseil conseil-autosuivi">
-                    {{ conseils_symptômes_actuels_autosuivi }}
+                    {{ conseils_symptômes_actuels_autosuivi|me_or_them }}
                     <div class="form-controls">
                         <div class="button-full-width">
-                            <a class="button button-full-width" href="#suiviintroduction"
-                                >Gérer le suivi de ma maladie</a>
+                            <a class="button button-full-width" href="#suiviintroduction">{{ conseils_symptômes_actuels_autosuivi_bouton|me_or_them }}</a>
                         </div>
                     </div>
                 </div>

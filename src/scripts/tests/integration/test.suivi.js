@@ -35,7 +35,7 @@ describe('Auto-suivi', function () {
         // La page de Conseils doit contenir le bouton pour effectuer son suivi
         {
             let bouton = await page.waitForSelector(
-                '#page >> text="Gérer le suivi de ma maladie"'
+                '*css=#page a >> text="Accéder au suivi de ma maladie"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suiviintroduction')
             await Promise.all([
@@ -208,7 +208,7 @@ describe('Auto-suivi', function () {
         // La page de Conseils doit contenir le bouton pour effectuer son suivi
         {
             let bouton = await page.waitForSelector(
-                '#page >> text="Gérer le suivi de ma maladie"'
+                '*css=#page a >> text="Accéder au suivi de sa maladie"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suiviintroduction')
             await Promise.all([

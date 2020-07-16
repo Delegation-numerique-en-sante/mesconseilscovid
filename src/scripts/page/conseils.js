@@ -8,6 +8,9 @@ function page(element, app) {
     // Hide all conseils that might have been made visible on previous runs.
     affichage.hideSelector(element, '.visible')
 
+    // Make sure we (re-)show profile-specific text
+    affichage.showMeOrThem(element, app.profil)
+
     // Use custom illustration if needed
     var extraClass = getCustomIllustrationName(app.profil)
     if (extraClass) {

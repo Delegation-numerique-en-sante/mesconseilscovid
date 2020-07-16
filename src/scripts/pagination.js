@@ -77,12 +77,8 @@ var loadPage = function (pageName, app) {
     page.innerHTML = '' // Flush the current content.
     var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
 
-    if (app && !app.profil.estMonProfil()) {
-        // eslint-disable-next-line no-extra-semi
-        ;[].forEach.call(element.querySelectorAll('.me'), (meElement) => {
-            affichage.hideElement(meElement)
-            affichage.showElement(meElement.nextSibling)
-        })
+    if (app) {
+        affichage.showMeOrThem(element, app.profil)
     }
 
     if (pageName !== 'introduction') {

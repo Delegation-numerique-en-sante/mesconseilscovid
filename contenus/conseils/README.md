@@ -312,8 +312,21 @@ Pour plus d’informations, vous pouvez prendre connaissance du document [« Fa
 
 ## [conseils_symptômes_actuels_autosuivi.md](conseils_symptômes_actuels_autosuivi.md)
 
-**Après avoir vu un médecin,** vous pourrez suivre l’évolution de vos symptômes ici :
+Après avoir **consulté un médecin**, votre pourrez suivre votre maladie et obtenir des conseils quotidiens sur la conduite à tenir en fonction de l’**évolution de vos symptômes** :
 
+---
+
+Après qu’il aura **consulté un médecin**, votre pourrez suivre la maladie de votre proche et obtenir des conseils quotidiens sur la conduite à tenir en fonction de l’**évolution de ses symptômes** :
+
+
+
+## [conseils_symptômes_actuels_autosuivi_bouton.md](conseils_symptômes_actuels_autosuivi_bouton.md)
+
+<!---->Accéder au suivi de ma maladie
+
+---
+
+<!---->Accéder au suivi de sa maladie
 
 
 
