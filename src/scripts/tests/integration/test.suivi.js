@@ -63,6 +63,11 @@ describe('Auto-suivi', function () {
 
         // La page de date du suivi apparait la première fois
         {
+            let label = await page.waitForSelector(
+                '#page label[for="suivi_date_aujourdhui"]'
+            )
+            await label.click()
+
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
@@ -236,6 +241,11 @@ describe('Auto-suivi', function () {
 
         // La page de date du suivi apparait la première fois
         {
+            let label = await page.waitForSelector(
+                '#page label[for="suivi_date_aujourdhui"]'
+            )
+            await label.click()
+
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),

@@ -910,7 +910,7 @@
             <legend>{{ question_suivi_date_titre|me_or_them }}</legend>
             {{ question_suivi_date_libellé|me_or_them }}
             <div>
-                <input id="suivi_date_aujourdhui" type="radio" required checked name="suivi_symptomes_date" value="aujourdhui">
+                <input id="suivi_date_aujourdhui" type="radio" required name="suivi_symptomes_date" value="aujourdhui">
                 <label for="suivi_date_aujourdhui">Aujourd’hui</label>
                 <input id="suivi_date_hier" type="radio" required name="suivi_symptomes_date" value="hier">
                 <label for="suivi_date_hier">Hier</label>
@@ -927,7 +927,7 @@
         </fieldset>
         <div class="form-controls">
             <a href="#suiviintroduction" class="back-button button-outline">Retour</a>
-            <input type="submit" class="button" value="Continuer">
+            <input type="submit" class="button" value="Continuer" disabled>
         </div>
     </form>
 </section>
