@@ -133,6 +133,10 @@ a .profil {
     margin-right: auto;
     max-width: 60ch;
 }
+#suivi-introduction-block h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
 
 .cards {
     display: flex;

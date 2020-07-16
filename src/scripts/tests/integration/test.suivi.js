@@ -141,7 +141,7 @@ describe('Auto-suivi', function () {
         // La page d’introduction du suivi comporte un lien direct
         // vers mes symptômes car on a déjà renseignée la date de début
         {
-            await page.waitForSelector('#page h2 >> text="Auto-suivi de la maladie"')
+            await page.waitForSelector('#page h2 >> text="Suivi de la maladie"')
 
             let bouton = await page.waitForSelector(
                 '#page >> text="Continuer mon suivi"'
@@ -318,7 +318,7 @@ describe('Auto-suivi', function () {
         // La page d’introduction du suivi comporte un lien direct
         // vers ses symptômes car on a déjà renseignée la date de début
         {
-            await page.waitForSelector('#page h2 >> text="Auto-suivi de la maladie"')
+            await page.waitForSelector('#page h2 >> text="Suivi de la maladie"')
 
             let bouton = await page.waitForSelector(
                 '#page >> text="Continuer son suivi"'
