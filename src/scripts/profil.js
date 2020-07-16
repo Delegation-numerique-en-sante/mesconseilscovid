@@ -1,3 +1,5 @@
+var format = require('timeago.js').format
+
 var affichage = require('./affichage.js')
 
 class Profil {
@@ -329,10 +331,20 @@ class Profil {
         return suiviButton + conseilsButton + deleteLink
     }
 
+    renderDernierSuivi() {
+        const dernierEtat = this.dernierEtat()
+        if (dernierEtat) {
+            const relativeDate = format(new Date(dernierEtat.date), 'fr')
+            return `<small>Dernière réponse : ${relativeDate}</small>`
+        }
+        return ''
+    }
+
     renderCardSuivi() {
         return affichage.createElementFromHTML(`
         <div class="card">
             ${this.renderNom()}
+            ${this.renderDernierSuivi()}
             <div>${this.renderButtonSuivi()}</div>
         </div>
         `)
