@@ -318,23 +318,23 @@ function suivisymptomes(form, app, router) {
     )
     form.addEventListener('submit', function (event) {
         event.preventDefault()
+        const elements = event.target.elements
         let etat = {
             date: new Date().toJSON(),
-            symptomes: event.target.elements['suivi_symptomes'].checked,
-            essoufflement: event.target.elements['suivi_symptomes_essoufflement'].value,
-            etatGeneral: event.target.elements['suivi_symptomes_etat_general'].value,
+            symptomes: elements['suivi_symptomes'].checked,
+            essoufflement: elements['suivi_symptomes_essoufflement'].value,
+            etatGeneral: elements['suivi_symptomes_etat_general'].value,
             alimentationHydratation:
-                event.target.elements['suivi_symptomes_alimentation_hydratation'].value,
-            etatPsychologique:
-                event.target.elements['suivi_symptomes_etat_psychologique'].value,
-            fievre: event.target.elements['suivi_symptomes_fievre'].value,
+                elements['suivi_symptomes_alimentation_hydratation'].value,
+            etatPsychologique: elements['suivi_symptomes_etat_psychologique'].value,
+            fievre: elements['suivi_symptomes_fievre'].value,
             diarrheeVomissements:
-                event.target.elements['suivi_symptomes_diarrhee_vomissements'].value,
-            mauxDeTete: event.target.elements['suivi_symptomes_maux_de_tete'].value,
-            toux: event.target.elements['suivi_symptomes_toux'].value,
+                elements['suivi_symptomes_diarrhee_vomissements'].value,
+            mauxDeTete: elements['suivi_symptomes_maux_de_tete'].value,
+            toux: elements['suivi_symptomes_toux'].value,
         }
         if (pourUnProche) {
-            etat.confusion = event.target.elements['suivi_symptomes_confusion'].value
+            etat.confusion = elements['suivi_symptomes_confusion'].value
         }
 
         app.profil.ajouterEtat(etat)
