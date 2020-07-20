@@ -3,7 +3,7 @@ d’appliquer les mesures de **distanciation physique renforcée :**
 
 * Application stricte des gestes barrières
 * Masque en permanence à l’extérieur de mon foyer et à l’intérieur si je reçois des personnes étrangères à mon domicile
-* Distance de sécurité de 1m autour de soi, soit 4m<sup>2</sup>
+* Distance de sécurité de plus d'1 mètre avec chaque personne 
 * Réduire les sorties au strict minimum
 * Contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une prescription de masques chirurgicaux.
 
