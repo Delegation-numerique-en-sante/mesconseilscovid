@@ -12,10 +12,13 @@ var redirectToUnansweredQuestions = function (page, profil) {
     if (page === 'nouvelleversiondisponible') return
     if (page === 'nom') return
 
-    // TODO: discuter des conditions requises
-    if (page === 'suiviintroduction') return
-    if (page === 'suividate') return
-    if (page === 'suivisymptomes') return
+    // Suivi
+    if (page === 'suiviintroduction' && profil.isComplete()) return
+
+    if (page === 'suividate' && profil.isComplete()) return
+
+    if (page === 'suivisymptomes' && profil.isComplete())
+        return profil.hasSymptomesStartDate() ? undefined : 'suividate'
 
     // Questions obligatoires
 
