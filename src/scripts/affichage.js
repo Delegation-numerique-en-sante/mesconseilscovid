@@ -11,9 +11,9 @@ function showMe(meElement) {
     hideElement(meElement.nextSibling)
 }
 
-function showThem(meElement) {
-    hideElement(meElement)
-    showElement(meElement.nextSibling)
+function showThem(themElement) {
+    hideElement(themElement)
+    showElement(themElement.nextSibling)
 }
 
 function hideElement(element) {
