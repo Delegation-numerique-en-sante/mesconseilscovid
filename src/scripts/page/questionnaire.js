@@ -306,9 +306,9 @@ function suivisymptomes(form, app, router) {
     primary.addEventListener('click', function () {
         formUtils.enableOrDisableSecondaryFields(form, primary)
     })
-    const uncheckedLabel = app.profil.estMonProfil()
-        ? 'Je n’ai pas eu de symptômes aujourd’hui'
-        : 'Cette personne n’a pas de symptômes aujourd’hui'
+    const uncheckedLabel = pourUnProche
+        ? 'Cette personne n’a pas de symptômes aujourd’hui'
+        : 'Je n’ai pas eu de symptômes aujourd’hui'
     const requiredLabel = 'Veuillez remplir le formulaire au complet'
     formUtils.toggleFormButtonOnRadioRequired(
         form,
