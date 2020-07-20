@@ -7,7 +7,7 @@ Pour plus d’informations, vous pouvez consulter :
 
 * la fiche : [« Quelles conduites adopter pour limiter la transmission du virus »](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf).
 
-* les réponses à vos questions sur vos [déplacements et voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements ») 
+* les réponses à vos questions sur vos [déplacements et voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements »)
 
 * les [recommandations de l’Anses](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses) sur l’alimentation, les courses et le nettoyage.
 
