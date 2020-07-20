@@ -8,8 +8,8 @@
 
 Il est recommandé de **télétravailler** si cela vous est possible. Si vous devez vous rendre sur votre lieu de travail, le respect des **gestes barrières** et de la **distanciation physique** permet de limiter les risques de propagation du virus.
 
-*Plus d’informations du ministère du travail sur :
-* les [gestes barrières au travail en vidéo](https://travail-emploi.gouv.fr/actualites/l-actualite-du-ministere/article/covid-19-comment-assurer-ma-sante-et-ma-securite-au-travail)
+<span class="nouveau">nouveau</span> Plus d’informations du ministère du travail sur :
+* les [gestes barrières au travail](https://travail-emploi.gouv.fr/actualites/l-actualite-du-ministere/article/covid-19-comment-assurer-ma-sante-et-ma-securite-au-travail) en vidéo
 * les [conditions de reprise et relance de l’activité](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/conditions-de-reprise-et-relance-de-l-activite/)
 * les [autres questions](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/) que se posent les employeurs, les particuliers et les professionnels des secteurs du travail, de l’emploi, de la formation professionnelle
 
@@ -39,7 +39,7 @@ Vous pouvez trouver les recommandations adaptées sur le site du ministère des 
 
 * Vous pouvez également consulter les [recommandations](https://www.hcsp.fr/Explore.cgi/Telecharger?NomFichier=hcspa20200523_sarcovprodestabdesansocetmdisoc.pdf) du Haut conseil de la santé publique relatives à la conduite à tenir vis-à-vis des professionnels intervenant en établissement de santé (ES) ainsi qu’en établissement social et médico-social (ESMS) selon leur statut vis-à-vis du SARS-CoV-2.
 
-<span class="nouveau">nouveau</span> Si vous travaillez auprès d’enfants et/ou vous devez conseiller des parents, vous pouvez trouver des informations relatives aux activités et à la santé des enfants en période de COVID19 notre page dédiée : [Conseils pour les moins de 15 ans](#pediatrie).
+Si vous travaillez auprès d’enfants et/ou vous devez conseiller des parents, vous pouvez trouver des informations relatives aux activités et à la santé des enfants en période de COVID19 notre page dédiée : [Conseils pour les moins de 15 ans](#pediatrie).
 
 
 
@@ -88,7 +88,7 @@ Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos méd
 
 ## [conseils_caractéristiques_antécédents_femme_enceinte.md](conseils_caractéristiques_antécédents_femme_enceinte.md)
 
-<span class="nouveau">nouveau</span> Vis-à-vis de **votre grossesse**, vous pouvez consulter :
+Vis-à-vis de **votre grossesse**, vous pouvez consulter :
 
 * le [suivi de grossesse](https://www.has-sante.fr/jcms/p_3187133/fr/grossesse-votre-suivi-pendant-l-epidemie-de-covid-19) pendant l’épidémie de COVID-19 ;
 * le [retour à la maison après l’accouchement](https://www.has-sante.fr/jcms/p_3186783/fr/accouchement-votre-retour-a-la-maison-pendant-l-epidemie-de-covid-19) pendant l’épidémie de COVID-19.
@@ -189,7 +189,7 @@ Si vous n’avez pas de solution pour faire garder votre enfant :
 
 ## [conseils_foyer_enfants.md](conseils_foyer_enfants.md)
 
-<span class="nouveau">nouveau</span> Pour des informations relatives aux activités et à la santé des enfants en période de COVID19, vous pouvez consulter notre page dédiée : [Conseils pour les moins de 15 ans](#pediatrie).
+Pour des informations relatives aux activités et à la santé des enfants en période de COVID19, vous pouvez consulter notre page dédiée : [Conseils pour les moins de 15 ans](#pediatrie).
 
 Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face au COVID, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants :
 
@@ -205,7 +205,7 @@ Si vous ne pouvez pas faire garder votre enfant, des solutions existent (voir pl
 
 ## [conseils_foyer_enfants_fragile.md](conseils_foyer_enfants_fragile.md)
 
-<span class="nouveau">nouveau</span> Pour des informations relatives aux activités et à la santé des enfants en période de COVID19, vous pouvez consulter notre page dédiée : [Conseils pour les moins de 15 ans](#pediatrie).
+Pour des informations relatives aux activités et à la santé des enfants en période de COVID19, vous pouvez consulter notre page dédiée : [Conseils pour les moins de 15 ans](#pediatrie).
 
 Si vos enfants sortent à l’extérieur du foyer, il convient de mettre en place des mesures de **distanciation physique renforcée** :
 
@@ -265,7 +265,7 @@ référents qui vous orienteront vers le meilleur moyen de suivi :
 Le COVID n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de **consulter au moindre signe de maladie**. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.
 * pour plus d’informations : les [recommandations du ministère de la santé pour la reprise des soins en toute sécurité](https://solidarites-sante.gouv.fr/grands-dossiers/deconfinement-les-recommandations-du-ministere-pour-la-reprise-des-soins-en/).
 
-**À compter du 20 juillet 2020, toute personne de 11 ans et plus doit porter un masque grand public dans les lieux publics clos, en complément de l’application des gestes barrières.** Pour plus d’informations : [Port du masque « grand public » obligatoire en lieux clos](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/port-du-masque-grand-public-obligatoire-en-lieux-clos-faq).
+<span class="nouveau">nouveau</span> **À compter du 20 juillet 2020, toute personne de 11 ans et plus doit porter un masque grand public dans les lieux publics clos, en complément de l’application des gestes barrières.** Pour plus d’informations : [Port du masque « grand public » obligatoire en lieux clos](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/port-du-masque-grand-public-obligatoire-en-lieux-clos-faq).
 
 De plus, **l’aération régulière** [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf), le respect des **gestes barrières**, et de **distanciation physique** reste indispensable.
 
