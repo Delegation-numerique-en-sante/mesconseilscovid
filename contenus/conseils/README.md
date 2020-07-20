@@ -8,6 +8,11 @@
 
 Il est recommandé de **télétravailler** si cela vous est possible. Si vous devez vous rendre sur votre lieu de travail, le respect des **gestes barrières** et de la **distanciation physique** permet de limiter les risques de propagation du virus.
 
+*Plus d’informations du ministère du travail sur :
+* les [gestes barrières au travail en vidéo](https://travail-emploi.gouv.fr/actualites/l-actualite-du-ministere/article/covid-19-comment-assurer-ma-sante-et-ma-securite-au-travail)
+* les [conditions de reprise et relance de l’activité](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/conditions-de-reprise-et-relance-de-l-activite/)
+* les [autres questions](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/) que se posent les employeurs, les particuliers et les professionnels des secteurs du travail, de l’emploi, de la formation professionnelle
+
 
 
 ## [conseils_activité_pro_infos.md](conseils_activité_pro_infos.md)
@@ -52,7 +57,7 @@ d’appliquer les mesures de **distanciation physique renforcée :**
 
 * Application stricte des gestes barrières
 * Masque en permanence à l’extérieur de mon foyer et à l’intérieur si je reçois des personnes étrangères à mon domicile
-* Distance de sécurité de 1m autour de soi, soit 4m<sup>2</sup>
+* Distance de sécurité de plus d’1 mètre avec chaque personne
 * Réduire les sorties au strict minimum
 * Contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une prescription de masques chirurgicaux.
 
@@ -260,7 +265,9 @@ référents qui vous orienteront vers le meilleur moyen de suivi :
 Le COVID n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de **consulter au moindre signe de maladie**. Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.
 * pour plus d’informations : les [recommandations du ministère de la santé pour la reprise des soins en toute sécurité](https://solidarites-sante.gouv.fr/grands-dossiers/deconfinement-les-recommandations-du-ministere-pour-la-reprise-des-soins-en/).
 
-De plus, **l’aération régulière** [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf), le respect des **gestes barrières**, et de **distanciation physique** reste indispensable et le **port du masque** s’impose dans certaines situations.
+**À compter du 20 juillet 2020, toute personne de 11 ans et plus doit porter un masque grand public dans les lieux publics clos, en complément de l’application des gestes barrières.** Pour plus d’informations : [Port du masque « grand public » obligatoire en lieux clos](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/port-du-masque-grand-public-obligatoire-en-lieux-clos-faq).
+
+De plus, **l’aération régulière** [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf), le respect des **gestes barrières**, et de **distanciation physique** reste indispensable.
 
 Comme l’origine du Covid-19 n’est pas bactérienne, en dehors de la présence de signes de gravité, il n’est pas nécessaire de prescrire une antibiothérapie : ils ne sont pas efficaces. Retrouvez [plus d’informations sur les antibiotiques](https://sante.fr/antibiomalin) sur le site Santé.fr.
 
@@ -283,7 +290,7 @@ Pour plus d’informations, vous pouvez consulter :
 
 * le site [covid19-faq](https://www.covid19-faq.fr/) ou appeler le 0 800 130 000 si vous avez des questions par rapport au COVID.
 
-* la page [« Tests et dépistage »](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage) et l’infographie [« Coronavirus, 2 types de tests »](https://www.gouvernement.fr/sites/default/files/explication_entre_les_deux_types_de_tests.jpg).
+* la page [« Tests et dépistage »](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage), l’infographie [« Coronavirus, 2 types de tests »](https://www.gouvernement.fr/sites/default/files/explication_entre_les_deux_types_de_tests.jpg) et la page [sérologies : réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/les-serologies-reponses-a-vos-questions) .
 
 * l’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) : cet outil peut vous permettre de vous prévenir immédiatement si vous avez été en contact rapproché dans les derniers jours avec une personne que vous ne connaissez pas et qui vient d’être testée positive au COVID-19.
 
