@@ -290,7 +290,7 @@ Pour plus d’informations, vous pouvez consulter :
 
 * la page sur les gestes barrières : [« Comment se protéger du coronavirus COVID-19 ? »](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf) du ministère des solidarités et de la santé.
 
-* le site [covid19-faq](https://www.covid19-faq.fr/) ou appeler le 0 800 130 000 si vous avez des questions par rapport au COVID.
+* le site [covid19-faq](https://www.covid19-faq.fr/) ou appeler le [0 800 130 000](tel:+33800130000) si vous avez des questions par rapport au COVID.
 
 * la page [« Tests et dépistage »](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage), l’infographie [« Coronavirus, 2 types de tests »](https://www.gouvernement.fr/sites/default/files/explication_entre_les_deux_types_de_tests.jpg) et la page [sérologies : réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/les-serologies-reponses-a-vos-questions) .
 
@@ -334,7 +334,7 @@ Après qu’il aura **consulté un médecin**, votre pourrez suivre la maladie d
 
 Pour agir, il vous est conseillé :
 
-* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le 0 800 130 000 ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
+* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le [0 800 130 000](tel:+33800130000) ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
 
 * De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 
@@ -348,7 +348,7 @@ Pour agir, il vous est conseillé :
 
 Pour agir, il vous est conseillé :
 
-* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le 0 800 130 000 ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
+* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le [0 800 130 000](tel:+33800130000) ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
 
 * Si vous n’arrivez pas à obtenir de consultation, **appelez le 15**.
 
@@ -364,7 +364,7 @@ Pour agir, il vous est conseillé :
 
 Pour agir, il vous est conseillé :
 
-* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le 0 800 130 000 ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
+* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le [0 800 130 000](tel:+33800130000) ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
 
 * Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent **pendant plus de 24 heures**.
 
