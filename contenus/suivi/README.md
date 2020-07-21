@@ -30,12 +30,12 @@ Contactez le 15 ou demandez à un votre proche de le faire pour vous immédiatem
 
 ## [suivi_psy_1.md](suivi_psy_1.md)
 
-Pour tout problème de moral ou d’anxiété supplémentaire, vous pouvez appeler un numéro dédié {N° officiel}
+Pour tout problème de moral ou d’anxiété supplémentaire, vous pouvez appeler un numéro dédié [0 800 130 000](tel:+33800130000).
 
 
 
 ## [suivi_psy_2.md](suivi_psy_2.md)
 
-Pour tout problème de moral ou d’anxiété, si vous le désirez, vous pouvez appeler votre médecin ou un numéro dédié {N° officiel}
+Pour tout problème de moral ou d’anxiété, si vous le désirez, vous pouvez appeler votre médecin ou un numéro dédié [0 800 130 000](tel:+33800130000).
 
 
