@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-07-21
+
+* mise à jour de la doctrine relative au port du masque obligatoire
+* ajout d’un lien (vidéo) sur les gestes barrières au travail
+
 ## 2020-07-13
 
 * corrige l’ordre des départements 04 et 05 dans la liste
