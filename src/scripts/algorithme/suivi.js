@@ -1,6 +1,6 @@
 class AlgorithmeSuivi {
     constructor(profil) {
-        this.suivi = profil.suivi
+        this.profil = profil
         this.dernierEtat = profil.dernierEtat()
     }
 

@@ -360,7 +360,8 @@ main footer {
     background-color: #7fd5c5;
     border-color: #00ac8c;
 }
-.conseil-autosuivi {
+.conseil-autosuivi,
+.conseil-autosuivi-historique {
     padding: 1rem;
     margin: 2rem auto;
 }

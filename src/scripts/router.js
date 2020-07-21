@@ -6,6 +6,7 @@ var conseils = require('./page/conseils.js')
 var questionnaire = require('./page/questionnaire.js')
 var suivi = require('./page/suivi.js')
 var suividate = require('./page/suividate.js')
+var suivihistorique = require('./page/suivihistorique.js')
 var injection = require('./injection.js')
 var pagination = require('./pagination.js')
 
@@ -118,6 +119,11 @@ function initRouter(app) {
             var pageName = 'suivisymptomes'
             var form = pagination.loadPage(pageName, app)
             questionnaire.suivisymptomes(form, app, router)
+        })
+        .on(new RegExp('^suivihistorique$'), function () {
+            var pageName = 'suivihistorique'
+            var element = pagination.loadPage(pageName, app)
+            suivihistorique.page(element, app)
         })
         .on(new RegExp('^pediatrie$'), function () {
             var pageName = 'pediatrie'

@@ -20,6 +20,14 @@ var redirectToUnansweredQuestions = function (page, profil) {
     if (page === 'suivisymptomes' && profil.isComplete())
         return profil.hasSymptomesStartDate() ? undefined : 'suividate'
 
+    if (
+        page === 'suivihistorique' &&
+        profil.isComplete() &&
+        profil.hasSymptomesStartDate() &&
+        profil.hasHistorique()
+    )
+        return
+
     // Questions obligatoires
 
     if (typeof profil.departement === 'undefined' && page !== 'residence')

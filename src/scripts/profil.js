@@ -238,6 +238,10 @@ class Profil {
         return typeof this._symptomes_start_date !== 'undefined'
     }
 
+    hasHistorique() {
+        return this.suivi.length > 1
+    }
+
     ajouterEtat(etat) {
         this.suivi.push(etat)
     }
@@ -348,6 +352,157 @@ class Profil {
             <div>${this.renderButtonSuivi()}</div>
         </div>
         `)
+    }
+
+    renderDebutSymptomes() {
+        return `<p>Début des symptômes : ${this.symptomes_start_date.toLocaleString()}</p>`
+    }
+
+    renderDebutSuivi() {
+        return `<p>Début du suivi : ${this.suivi_start_date.toLocaleString()}</p>`
+    }
+
+    renderHistorique() {
+        return affichage.createElementFromHTML(`
+            <div>
+                ${this.renderDebutSymptomes()}
+                ${this.renderDebutSuivi()}
+                ${this.suivi.map((etat) => new Etat(etat).render()).join('\n')}
+            </div>
+        `)
+    }
+}
+
+class Etat {
+    constructor(data) {
+        this.data = data
+    }
+
+    renderRaw() {
+        return `<pre>${JSON.stringify(this.data, null, '  ')}</pre>`
+    }
+
+    renderTitle() {
+        return `<h3>Symptômes le ${this.renderDate()}</h3>`
+    }
+
+    renderDate() {
+        return `${new Date(this.data.date).toLocaleString()}`
+    }
+
+    renderSymptomes() {
+        if (this.data.symptomes) {
+            return '<p>Vous présentiez ces symptômes à ce moment là :</p>'
+        } else {
+            return '<p>Vous ne présentiez plus aucun symptôme à ce moment là.</p>'
+        }
+    }
+
+    renderStatut(symptome) {
+        let statut = ''
+        switch (symptome) {
+            case 'critique':
+                statut = 'beaucoup moins bien'
+                break
+            case 'pire':
+                statut = 'un peu moins bien'
+                break
+            case 'stable':
+                statut = 'stable'
+                break
+            case 'mieux':
+                statut = 'mieux'
+                break
+        }
+        return statut
+    }
+
+    renderEssoufflement() {
+        return `<li>Manque de souffle : ${this.renderStatut(
+            this.data.essoufflement
+        )}</li>`
+    }
+
+    renderEtatGeneral() {
+        return `<li>État général : ${this.renderStatut(this.data.etatGeneral)}</li>`
+    }
+
+    renderConfusion() {
+        if (this.data.confusion) {
+            return '<li>Apparition de somnolence ou de confusion</li>'
+        }
+        return ''
+    }
+
+    renderAlimentationHydratation() {
+        if (this.data.alimentationHydratation == 'oui') {
+            return `<li>Impossibilité de vous alimenter ou de boire depuis plus de 24 heures</li>`
+        } else {
+            return `<li>Capacité à vous alimenter et à boire depuis plus de 24 heures</li>`
+        }
+    }
+
+    renderEtatPsychologique() {
+        return `<li>État psychologique : ${this.renderStatut(
+            this.data.etatPsychologique
+        )}</li>`
+    }
+
+    renderTemperature() {
+        if (this.data.fievre == 'oui') {
+            return `<li>Température supérieure à 39°C, et qui ne diminue pas malgré la prise de paracétamol</li>`
+        } else {
+            return `<li>Température inférieure à 39°C</li>`
+        }
+    }
+
+    renderDiarrheeVomissements() {
+        if (this.data.diarrheeVomissements == 'oui') {
+            return `<li>Diarrhée ou vomissements importants</li>`
+        } else {
+            return `<li>Peu ou pas de diarrhée ou vomissements</li>`
+        }
+    }
+
+    renderMauxDeTete() {
+        if (this.data.mauxDeTete == 'oui') {
+            return `<li>Maux de tête</li>`
+        } else {
+            return `<li>Pas de maux de tête</li>`
+        }
+    }
+
+    renderToux() {
+        if (this.data.toux == 'oui') {
+            return `<li>Toux</li>`
+        } else {
+            return `<li>Pas de toux</li>`
+        }
+    }
+
+    render() {
+        if (this.data.symptomes) {
+            return `
+                ${this.renderTitle()}
+                ${this.renderSymptomes()}
+                <ul>
+                    ${this.renderEssoufflement()}
+                    ${this.renderEtatGeneral()}
+                    ${this.renderConfusion()}
+                    ${this.renderAlimentationHydratation()}
+                    ${this.renderEtatPsychologique()}
+                    ${this.renderTemperature()}
+                    ${this.renderDiarrheeVomissements()}
+                    ${this.renderMauxDeTete()}
+                    ${this.renderToux()}
+                </ul>
+            `
+        } else {
+            return `
+                ${this.renderTitle()}
+                ${this.renderSymptomes()}
+            `
+        }
     }
 }
 

@@ -77,7 +77,10 @@ function getCustomIllustrationName(profil) {
 function showRelevantSuiviBlocks(element, algoSuivi) {
     var blockNames = [algoSuivi.graviteBlockNameToDisplay()]
     if (algoSuivi.psy !== 0) {
-        blockNames = blockNames.concat([algoSuivi.psyBlockNameToDisplay()])
+        blockNames.push(algoSuivi.psyBlockNameToDisplay())
+    }
+    if (algoSuivi.profil.hasHistorique()) {
+        blockNames.push('conseil-autosuivi-historique')
     }
     affichage.displayBlocks(element, blockNames)
 }

@@ -640,6 +640,14 @@
                 <div id="suivi-psy-1" class="statut suivi-psy-1" hidden>
                     {{ suivi_psy_1 }}
                 </div>
+                <div id="conseil-autosuivi-historique" class="conseil conseil-autosuivi-historique" hidden>
+                    {{ conseils_autosuivi_historique|me_or_them }}
+                    <div class="form-controls">
+                        <div class="button-full-width">
+                            <a class="button button-full-width" href="#suivihistorique">{{ conseils_autosuivi_historique_bouton|me_or_them }}</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="conseils-statut">
@@ -1042,6 +1050,17 @@
             <input type="submit" class="button" value="Continuer">
         </div>
     </form>
+</section>
+
+<section id="suivihistorique" hidden>
+    <div id="suivi-historique-block" class="block">
+        <h2>Historique des réponses au suivi</h2>
+        <div id="timeline"></div>
+        <div class="form-controls">
+            <a href="#conseils" class="back-button button-outline">Retour</a>
+            <a class="button button-full-width js-impression" href="">Imprimer ce suivi</a>
+        </div>
+    </div>
 </section>
 
 <section id="pediatrie" hidden>
