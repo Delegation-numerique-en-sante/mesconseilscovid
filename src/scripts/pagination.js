@@ -23,10 +23,10 @@ var redirectToUnansweredQuestions = function (page, profil) {
     if (
         page === 'suivihistorique' &&
         profil.isComplete() &&
-        profil.hasSymptomesStartDate() &&
-        profil.hasHistorique()
-    )
-        return
+        profil.hasSymptomesStartDate()
+    ) {
+        return profil.hasHistorique() ? undefined : 'suiviintroduction'
+    }
 
     // Questions obligatoires
 
