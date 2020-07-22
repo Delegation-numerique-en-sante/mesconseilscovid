@@ -307,7 +307,8 @@ main footer {
 .conseils {
     margin-bottom: 5rem;
 }
-.conseils h3 {
+.conseils h3,
+#historique h3 {
     color: #000091;
     font-size: 175%;
 }
@@ -734,6 +735,23 @@ a#geolocalisation {
 #pour-finir .ios-share-button {
     height: 1.5rem;
     margin-bottom: -0.4rem;
+}
+
+#historique h3 {
+    margin-top: 5rem;
+}
+#historique table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+#historique table thead td {
+    font-weight: bold;
+}
+#historique table td {
+    border: 1px solid black;
+    padding: 0.5rem;
 }
 
 @media print {

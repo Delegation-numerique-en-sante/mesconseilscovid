@@ -4,9 +4,8 @@ class AlgorithmeSuivi {
         this.dernierEtat = profil.dernierEtat()
     }
 
-    get gravite() {
+    calculGravite(etat) {
         let gravite = 0
-        const etat = this.dernierEtat
         if (
             etat.fievre === 'oui' ||
             etat.diarrheeVomissements === 'oui' ||
@@ -27,6 +26,10 @@ class AlgorithmeSuivi {
             gravite = 3
         }
         return gravite
+    }
+
+    get gravite() {
+        return this.calculGravite(this.dernierEtat)
     }
 
     graviteBlockNameToDisplay() {

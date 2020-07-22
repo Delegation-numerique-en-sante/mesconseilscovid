@@ -1,6 +1,7 @@
 var format = require('timeago.js').format
 
 var affichage = require('./affichage.js')
+var AlgorithmeSuivi = require('./algorithme/suivi.js').AlgorithmeSuivi
 
 class Profil {
     constructor(nom) {
@@ -362,147 +363,316 @@ class Profil {
         return `<p>Début du suivi : ${this.suivi_start_date.toLocaleString()}</p>`
     }
 
-    renderHistorique() {
-        return affichage.createElementFromHTML(`
-            <div>
-                ${this.renderDebutSymptomes()}
-                ${this.renderDebutSuivi()}
-                ${this.suivi.map((etat) => new Etat(etat).render()).join('\n')}
-            </div>
-        `)
-    }
-}
-
-class Etat {
-    constructor(data) {
-        this.data = data
+    suiviParSymptome(symptome) {
+        return this.suivi.map((etat) => {
+            return { date: etat.date, statut: etat[symptome] }
+        })
     }
 
-    renderRaw() {
-        return `<pre>${JSON.stringify(this.data, null, '  ')}</pre>`
-    }
-
-    renderTitle() {
-        return `<h3>Symptômes le ${this.renderDate()}</h3>`
-    }
-
-    renderDate() {
-        return `${new Date(this.data.date).toLocaleString()}`
-    }
-
-    renderSymptomes() {
-        if (this.data.symptomes) {
-            return '<p>Vous présentiez ces symptômes à ce moment là :</p>'
-        } else {
-            return '<p>Vous ne présentiez plus aucun symptôme à ce moment là.</p>'
+    switchSymptomeTitre(value) {
+        let titre = ''
+        switch (value) {
+            case 'essoufflement':
+                titre = 'Manque de souffle'
+                break
+            case 'etatGeneral':
+                titre = 'État général'
+                break
+            case 'etatPsychologique':
+                titre = 'État psychologique'
+                break
+            case 'alimentationHydratation':
+                titre = 'Absence d’alimentation et d’hydratation'
+                break
+            case 'diarrheeVomissements':
+                titre = 'Diarrhée et vomissements'
+                break
+            case 'fievre':
+                titre = 'Fièvre supérieure à 39°C'
+                break
+            case 'confusion':
+                titre = 'Somnolence et confusion'
+                break
+            case 'mauxDeTete':
+                titre = 'Maux de tête (optionnel)'
+                break
+            case 'toux':
+                titre = 'Toux (optionnel)'
+                break
         }
+        return titre
     }
 
-    renderStatut(symptome) {
+    switchStatut(value) {
         let statut = ''
-        switch (symptome) {
+        switch (value) {
             case 'critique':
-                statut = 'beaucoup moins bien'
+                statut = 'Beaucoup moins bien'
                 break
             case 'pire':
-                statut = 'un peu moins bien'
+                statut = 'Un peu moins bien'
                 break
             case 'stable':
-                statut = 'stable'
+                statut = 'Stable'
                 break
             case 'mieux':
-                statut = 'mieux'
+                statut = 'Mieux'
+                break
+            case '':
+                statut = 'Pas de symptômes'
                 break
         }
         return statut
     }
 
-    renderEssoufflement() {
-        return `<li>Manque de souffle : ${this.renderStatut(
-            this.data.essoufflement
-        )}</li>`
-    }
-
-    renderEtatGeneral() {
-        return `<li>État général : ${this.renderStatut(this.data.etatGeneral)}</li>`
-    }
-
-    renderConfusion() {
-        if (this.data.confusion) {
-            return '<li>Apparition de somnolence ou de confusion</li>'
+    switchBooleen(value) {
+        let booleen = ''
+        switch (value) {
+            case 'oui':
+                booleen = 'Oui'
+                break
+            case 'non':
+                booleen = 'Non'
+                break
+            case '':
+                booleen = 'Pas de symptômes'
+                break
         }
-        return ''
+        return booleen
     }
 
-    renderAlimentationHydratation() {
-        if (this.data.alimentationHydratation == 'oui') {
-            return `<li>Impossibilité de vous alimenter ou de boire depuis plus de 24 heures</li>`
-        } else {
-            return `<li>Capacité à vous alimenter et à boire depuis plus de 24 heures</li>`
+    switchBooleenOptionnel(value) {
+        let booleen = ''
+        switch (value) {
+            case 'oui':
+                booleen = 'Oui'
+                break
+            case 'non':
+                booleen = 'Non'
+                break
+            case '':
+                booleen = 'Pas d’information'
+                break
         }
+        return booleen
     }
 
-    renderEtatPsychologique() {
-        return `<li>État psychologique : ${this.renderStatut(
-            this.data.etatPsychologique
-        )}</li>`
-    }
-
-    renderTemperature() {
-        if (this.data.fievre == 'oui') {
-            return `<li>Température supérieure à 39°C, et qui ne diminue pas malgré la prise de paracétamol</li>`
-        } else {
-            return `<li>Température inférieure à 39°C</li>`
+    switchGravite(value) {
+        let gravite = ''
+        switch (value) {
+            case 'gravite_3':
+                gravite = 'État grave, il est recommandé d’appeler le SAMU (15)'
+                break
+            case 'gravite_2':
+                gravite =
+                    'État préoccupant, consulter un médecin ou à défaut le SAMU (15)'
+                break
+            case 'gravite_1':
+                gravite = 'État à vérifier, consulter votre médecin traitant'
+                break
+            case 'gravite_0':
+                gravite = 'État correct'
+                break
         }
+        return gravite
     }
 
-    renderDiarrheeVomissements() {
-        if (this.data.diarrheeVomissements == 'oui') {
-            return `<li>Diarrhée ou vomissements importants</li>`
-        } else {
-            return `<li>Peu ou pas de diarrhée ou vomissements</li>`
+    switchIcone(value) {
+        let icone = ''
+        switch (value) {
+            case 'critique':
+                icone = 'gravite_superieure'
+                break
+            case 'oui':
+                icone = 'gravite_superieure'
+                break
+            case 'gravite_3':
+                icone = 'gravite_superieure'
+                break
+            case 'pire':
+                icone = 'gravite'
+                break
+            case 'gravite_2':
+                icone = 'gravite'
+                break
+            case 'stable':
+                icone = 'stable'
+                break
+            case 'gravite_1':
+                icone = 'stable'
+                break
+            case 'mieux':
+                icone = 'ok'
+                break
+            case 'non':
+                icone = 'ok'
+                break
+            case 'gravite_0':
+                icone = 'ok'
+                break
+            case '':
+                icone = 'interrogation'
+                break
         }
+        return icone
     }
 
-    renderMauxDeTete() {
-        if (this.data.mauxDeTete == 'oui') {
-            return `<li>Maux de tête</li>`
-        } else {
-            return `<li>Pas de maux de tête</li>`
-        }
+    renderIcone(statut) {
+        const imgSrc = `../suivi_${this.switchIcone(statut)}.svg`
+        return `<img src="${imgSrc}" width="40px" height="40px" />`
     }
 
-    renderToux() {
-        if (this.data.toux == 'oui') {
-            return `<li>Toux</li>`
-        } else {
-            return `<li>Pas de toux</li>`
-        }
+    renderSymptomeStatutTableCell(etat) {
+        return `<tr>
+            <td>${new Date(etat.date).toLocaleString()}</td>
+            <td>${this.renderIcone(etat.statut)}</td>
+            <td>${this.switchStatut(etat.statut)}</td>
+        </tr>`
     }
 
-    render() {
-        if (this.data.symptomes) {
-            return `
-                ${this.renderTitle()}
-                ${this.renderSymptomes()}
-                <ul>
-                    ${this.renderEssoufflement()}
-                    ${this.renderEtatGeneral()}
-                    ${this.renderConfusion()}
-                    ${this.renderAlimentationHydratation()}
-                    ${this.renderEtatPsychologique()}
-                    ${this.renderTemperature()}
-                    ${this.renderDiarrheeVomissements()}
-                    ${this.renderMauxDeTete()}
-                    ${this.renderToux()}
-                </ul>
-            `
-        } else {
-            return `
-                ${this.renderTitle()}
-                ${this.renderSymptomes()}
-            `
+    renderSymptomeStatutTable(data) {
+        const header = `<thead><tr><td>Date</td><td colspan="2">Statut</td></tr></thead>`
+        const body = `<tbody>
+            ${data.map((etat) => this.renderSymptomeStatutTableCell(etat)).join('\n')}
+        </tbody>`
+        return `<table>
+            ${header}
+            ${body}
+        </table>`
+    }
+
+    renderSymptomeStatut(symptome, data) {
+        const title = `<h3>${this.switchSymptomeTitre(symptome)}</h3>`
+        return `${title}
+            ${this.renderSymptomeStatutTable(data)}
+        `
+    }
+
+    renderSymptomeBooleenTableCell(etat) {
+        return `<tr>
+            <td>${new Date(etat.date).toLocaleString()}</td>
+            <td>${this.renderIcone(etat.statut)}</td>
+            <td>${this.switchBooleen(etat.statut)}</td>
+        </tr>`
+    }
+
+    renderSymptomeBooleenTable(data) {
+        const header = `<thead><tr><td>Date</td><td colspan="2">Statut</td></tr></thead>`
+        const body = `<tbody>
+            ${data.map((etat) => this.renderSymptomeBooleenTableCell(etat)).join('\n')}
+        </tbody>`
+        return `<table>
+            ${header}
+            ${body}
+        </table>`
+    }
+
+    renderSymptomeBooleen(symptome, data) {
+        const title = `<h3>${this.switchSymptomeTitre(symptome)}</h3>`
+        return `${title}
+            ${this.renderSymptomeBooleenTable(data)}
+        `
+    }
+
+    renderSymptomeBooleenOptionnelTableCell(etat) {
+        return `<tr>
+            <td>${new Date(etat.date).toLocaleString()}</td>
+            <td>${this.renderIcone(etat.statut)}</td>
+            <td>${this.switchBooleenOptionnel(etat.statut)}</td>
+        </tr>`
+    }
+
+    renderSymptomeBooleenOptionnelTable(data) {
+        const header = `<thead><tr><td>Date</td><td colspan="2">Statut</td></tr></thead>`
+        const body = `<tbody>
+            ${data
+                .map((etat) => this.renderSymptomeBooleenOptionnelTableCell(etat))
+                .join('\n')}
+        </tbody>`
+        return `<table>
+            ${header}
+            ${body}
+        </table>`
+    }
+
+    renderSymptomeBooleenOptionnel(symptome, data) {
+        const title = `<h3>${this.switchSymptomeTitre(symptome)}</h3>`
+        return `${title}
+            ${this.renderSymptomeBooleenOptionnelTable(data)}
+        `
+    }
+
+    renderGraviteTableCell(etat, algoSuivi) {
+        const gravite = `gravite_${algoSuivi.calculGravite(etat)}`
+        return `<tr>
+            <td>${new Date(etat.date).toLocaleString()}</td>
+            <td>${this.renderIcone(gravite)}</td>
+            <td>${this.switchGravite(gravite)}</td>
+        </tr>`
+    }
+
+    renderGraviteTable(data, algoSuivi) {
+        const header = `<thead><tr><td>Date</td><td colspan="2">Statut</td></tr></thead>`
+        const body = `<tbody>
+            ${data
+                .map((etat) => this.renderGraviteTableCell(etat, algoSuivi))
+                .join('\n')}
+        </tbody>`
+        return `<table>
+            ${header}
+            ${body}
+        </table>`
+    }
+
+    renderGravite() {
+        const algoSuivi = new AlgorithmeSuivi(this)
+        return `<h3>Bilan de votre situation</h3>
+            ${this.renderGraviteTable(this.suivi, algoSuivi)}
+        `
+    }
+
+    renderHistorique() {
+        const symptomesStatuts = ['essoufflement', 'etatGeneral', 'etatPsychologique']
+        const symptomesBooleens = [
+            'alimentationHydratation',
+            'diarrheeVomissements',
+            'fievre',
+        ]
+        if (!this.estMonProfil()) {
+            symptomesBooleens.push('confusion')
         }
+        const symptomesBooleensOptionnels = ['mauxDeTete', 'toux']
+        return affichage.createElementFromHTML(`
+            <div>
+                ${this.renderDebutSymptomes()}
+                ${this.renderDebutSuivi()}
+                ${this.renderGravite()}
+                ${symptomesStatuts
+                    .map((symptome) =>
+                        this.renderSymptomeStatut(
+                            symptome,
+                            this.suiviParSymptome(symptome)
+                        )
+                    )
+                    .join('\n')}
+                ${symptomesBooleens
+                    .map((symptome) =>
+                        this.renderSymptomeBooleen(
+                            symptome,
+                            this.suiviParSymptome(symptome)
+                        )
+                    )
+                    .join('\n')}
+                ${symptomesBooleensOptionnels
+                    .map((symptome) =>
+                        this.renderSymptomeBooleenOptionnel(
+                            symptome,
+                            this.suiviParSymptome(symptome)
+                        )
+                    )
+                    .join('\n')}
+            </div>
+        `)
     }
 }
 

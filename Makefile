@@ -58,7 +58,7 @@ pretty:  ## Run PrettierJS.
 
 build:  ## Build all files (markdown + statics).
 	python3 build.py all
-	npm run-script build-prod
+	npm run-script build
 
 generate:  ## Auto-regenerate the `index.html` file from `template.html` + contenus.
 	find . -type f \( -iname "*.md" ! -iname "README.md" ! -iname "CHANGELOG.md" -o -iname "template.html" ! -iname "CHANGELOG.md" \) -not -path "./node_modules/*" -not -path "./venv/*" | entr -r python3 build.py index
