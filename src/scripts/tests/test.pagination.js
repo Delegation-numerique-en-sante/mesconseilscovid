@@ -4,7 +4,7 @@ var pagination = require('../pagination.js')
 var Profil = require('../profil.js').Profil
 var redirectToUnansweredQuestions = pagination.redirectToUnansweredQuestions
 
-describe('Navigation', function () {
+describe('Pagination', function () {
     describe('Navigation générale', function () {
         it('ok d’aller à la page d’accueil', function () {
             assert.isUndefined(redirectToUnansweredQuestions('introduction', {}))
