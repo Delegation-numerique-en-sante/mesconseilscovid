@@ -323,19 +323,6 @@ Sous-question (toux) [optionnelle] : [libellé](questions/question_suivi_symptô
 
 Sous-question (maux de tête) [optionnelle] : [libellé](questions/question_suivi_symptômes_maux_de_tête_libellé.md), [aide](questions/question_suivi_symptômes_maux_de_tête_aide.md)
 
-Réponses :
-
-* [réponse_suivi_essoufflement_gravité_3.md](réponses/réponse_suivi_essoufflement_gravité_3.md) si `essoufflement` à « Beaucoup moins bien »
-* [réponse_suivi_essoufflement_gravité_2.md](réponses/réponse_suivi_essoufflement_gravité_2.md) si `essoufflement` à « Un peu moins bien »
-* [réponse_suivi_état_général_gravité_3.md](réponses/réponse_suivi_état_général_gravité_3.md) si `état général` à « Beaucoup moins bien »
-* [réponse_suivi_état_général_gravité_2.md](réponses/réponse_suivi_état_général_gravité_2.md) si `état général` à « Un peu moins bien »
-* [réponse_suivi_alimentation_hydratation_gravité_2.md](réponses/réponse_suivi_alimentation_hydratation_gravité_2.md) si `alimentation et hydratation` à « Oui »
-* [réponse_suivi_état_psychologique_gravité_3.md](réponses/réponse_suivi_état_psychologique_gravité_3.md) si `état psychologique` à « Beaucoup moins bien »
-* [réponse_suivi_fièvre_gravité_1.md](réponses/réponse_suivi_fièvre_gravité_1.md) si fièvre à « Oui »
-* [réponse_suivi_diarrhee_vomissements_gravité_1.md](réponses/réponse_suivi_diarrhee_vomissements_gravité_1.md) si `diarrhée et vomissements` à « Oui »
-* [réponse_suivi_maux_de_tête_gravité_2.md](réponses/réponse_suivi_maux_de_tête_gravité_2.md) si `maux de tête` à « Oui »
-* [réponse_suivi_toux_gravité_1.md](réponses/réponse_suivi_toux_gravité_1.md) si `maux de tête` à « Oui »
-
 
 #### Suivi conseils
 
@@ -344,14 +331,11 @@ Réponses :
 * Si (« Oui » à `fièvre`) OU (« Oui » à `diarrhée ou vomissements`) OU (« Oui » à `toux`) alors [suivi_gravité_1.md](suivi/suivi_gravité_1.md)
 * Si (que des réponses « Mieux » OU « Stable ») ET (« Non » à `alimentation et hydratation`) ET (« Non » à `fièvre`) ET (« Non » à `diarrhée ou vomissements`) alors [suivi_gravité_0.md](suivi/suivi_gravité_0.md)
 
-Cas particulier état psychologique :
+
+#### Suivi plus d’infos
 
 * Si réponse « Oui » à `état psychologique` on affiche en plus [suivi_psy_2.md](suivi/suivi_psy_2.md) si gravité > 0 OU [suivi_psy_1.md](suivi/suivi_psy_1.md) si gravité = 0.
-
-
-#### Suivi navigation
-
-* [conseils_autosuivi_historique.md](conseils/conseils_autosuivi_historique.md) s’affiche lorsque plus d’une entrée est présente dans le suivi, [bouton](conseils/conseils_autosuivi_historique_bouton.md).
+* [conseils_autosuivi_historique.md](conseils/conseils_autosuivi_historique.md) s’affiche lorsque plus d’une entrée est présente dans le suivi.
 
 
 ### Critères

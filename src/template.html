@@ -584,44 +584,6 @@
 
             <div id="suivi" hidden>
                 <h2>L’évolution de vos symptômes</h2>
-                <div class="reponse" hidden>
-                    <p>Symptômes actuels :</p>
-                    <ul class="evolution-symptomes">
-                        <li id="essoufflement-gravite-3" hidden>
-                            {{ réponse_suivi_essoufflement_gravité_3 }}
-                        </li>
-                        <li id="essoufflement-gravite-2" hidden>
-                            {{ réponse_suivi_essoufflement_gravité_2 }}
-                        </li>
-                        <li id="etat-general-gravite-3" hidden>
-                            {{ réponse_suivi_état_général_gravité_3 }}
-                        </li>
-                        <li id="etat-general-gravite-2" hidden>
-                            {{ réponse_suivi_état_général_gravité_2 }}
-                        </li>
-                        <li id="confusion-gravite-2" hidden>
-                            {{ réponse_suivi_confusion_gravité_2 }}
-                        </li>
-                        <li id="alimentation-hydratation-gravite-2" hidden>
-                            {{ réponse_suivi_alimentation_hydratation_gravité_2 }}
-                        </li>
-                        <li id="etat-psychologique-gravite-3" hidden>
-                            {{ réponse_suivi_état_psychologique_gravité_3 }}
-                        </li>
-                        <li id="fievre-gravite-1" hidden>
-                            {{ réponse_suivi_fièvre_gravité_1 }}
-                        </li>
-                        <li id="diarrhee-vomissements-gravite-1" hidden>
-                            {{ réponse_suivi_diarrhee_vomissements_gravité_1 }}
-                        </li>
-                        <li id="maux-de-tete-gravite-2" hidden>
-                            {{ réponse_suivi_maux_de_tête_gravité_2 }}
-                        </li>
-                        <li id="toux-gravite-1" hidden>
-                            {{ réponse_suivi_toux_gravité_1 }}
-                        </li>
-                    </ul>
-                </div>
                 <div id="suivi-gravite-3" class="statut suivi-gravite-3" hidden>
                     {{ suivi_gravité_3 }}
                 </div>
@@ -634,20 +596,11 @@
                 <div id="suivi-gravite-0" class="statut suivi-gravite-0" hidden>
                     {{ suivi_gravité_0 }}
                 </div>
-                <div id="suivi-psy-2" class="statut suivi-psy-2" hidden>
-                    {{ suivi_psy_2 }}
-                </div>
-                <div id="suivi-psy-1" class="statut suivi-psy-1" hidden>
-                    {{ suivi_psy_1 }}
-                </div>
-                <div id="conseil-autosuivi-historique" class="conseil conseil-autosuivi-historique" hidden>
-                    {{ conseils_autosuivi_historique|me_or_them }}
-                    <div class="form-controls">
-                        <div class="button-full-width">
-                            <a class="button button-full-width" href="#suivihistorique">{{ conseils_autosuivi_historique_bouton|me_or_them }}</a>
-                        </div>
-                    </div>
-                </div>
+                <ul>
+                    <li id="suivi-psy-2" hidden>{{ suivi_psy_2 }}</li>
+                    <li id="suivi-psy-1" hidden>{{ suivi_psy_1 }}</li>
+                    <li>{{ conseils_autosuivi_historique|me_or_them }}</li>
+                </ul>
             </div>
 
             <div id="conseils-statut">

@@ -1,1 +1,0 @@
-<!---->Diarrhée ou vomissements importants

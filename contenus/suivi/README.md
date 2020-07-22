@@ -24,7 +24,7 @@ Contactez votre médecin généraliste ou le 15 si votre médecin généraliste 
 
 ## [suivi_gravité_3.md](suivi_gravité_3.md)
 
-Contactez le 15 ou demandez à un votre proche de le faire pour vous immédiatement.
+**Contactez le 15** ou demandez à un votre proche de le faire pour vous immédiatement.
 
 
 

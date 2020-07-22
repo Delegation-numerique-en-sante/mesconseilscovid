@@ -239,7 +239,7 @@ class Profil {
     }
 
     hasHistorique() {
-        return this.suivi.length > 1
+        return this.suivi.length
     }
 
     ajouterEtat(etat) {
