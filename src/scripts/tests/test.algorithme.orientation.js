@@ -275,6 +275,19 @@ describe('Algorithme d’orientation', function () {
             ])
         })
 
+        it('Un profil avec des symptômes actuels autres', function () {
+            var data = {
+                symptomes_actuels: true,
+                symptomes_actuels_autre: true,
+            }
+            profil.fillData(data)
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(
+                algoOrientation.conseilsPersonnelsBlockNamesToDisplay(),
+                []
+            )
+        })
+
         it('Un profil avec des symptômes passés', function () {
             var data = {
                 symptomes_passes: true,
