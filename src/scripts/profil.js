@@ -382,16 +382,16 @@ class Profil {
                 titre = 'État psychologique'
                 break
             case 'alimentationHydratation':
-                titre = 'Absence d’alimentation et d’hydratation'
+                titre = 'Absence d’alimentation ou d’hydratation'
                 break
             case 'diarrheeVomissements':
-                titre = 'Diarrhée et vomissements'
+                titre = 'Diarrhée ou vomissements'
                 break
             case 'fievre':
                 titre = 'Fièvre supérieure à 39°C'
                 break
             case 'confusion':
-                titre = 'Somnolence et confusion'
+                titre = 'Somnolence ou confusion'
                 break
             case 'mauxDeTete':
                 titre = 'Maux de tête (optionnel)'
