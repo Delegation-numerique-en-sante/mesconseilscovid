@@ -142,6 +142,7 @@ a .profil {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    list-style-type: none;
 }
 .block ul.cards {
     padding: 0;
