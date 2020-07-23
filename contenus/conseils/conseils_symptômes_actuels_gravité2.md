@@ -1,6 +1,6 @@
 Pour agir, il vous est conseillé :
 
-* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le 0 800 130 000 ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
+* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le [0 800 130 000](tel:+33800130000) ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
 
 * Si vous n’arrivez pas à obtenir de consultation, **appelez le 15**.
 

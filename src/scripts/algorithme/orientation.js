@@ -1,6 +1,6 @@
-const carteDepartements = require('./carte.js')
+const carteDepartements = require('../carte.js')
 
-class Algorithme {
+class AlgorithmeOrientation {
     constructor(profil) {
         this.profil = profil
     }
@@ -99,6 +99,10 @@ class Algorithme {
             return 'foyer-fragile'
         }
         return 'peu-de-risques'
+    }
+
+    recommandeAutoSuivi() {
+        return this.profil.symptomes_actuels
     }
 
     conseilsPersonnelsBlockNamesToDisplay() {
@@ -291,5 +295,5 @@ class Algorithme {
 }
 
 module.exports = {
-    Algorithme,
+    AlgorithmeOrientation,
 }

@@ -12,6 +12,22 @@ var redirectToUnansweredQuestions = function (page, profil) {
     if (page === 'nouvelleversiondisponible') return
     if (page === 'nom') return
 
+    // Suivi
+    if (page === 'suiviintroduction' && profil.isComplete()) return
+
+    if (page === 'suividate' && profil.isComplete()) return
+
+    if (page === 'suivisymptomes' && profil.isComplete())
+        return profil.hasSymptomesStartDate() ? undefined : 'suividate'
+
+    if (
+        page === 'suivihistorique' &&
+        profil.isComplete() &&
+        profil.hasSymptomesStartDate()
+    ) {
+        return profil.hasHistorique() ? undefined : 'suiviintroduction'
+    }
+
     // Questions obligatoires
 
     if (typeof profil.departement === 'undefined' && page !== 'residence')
@@ -72,12 +88,8 @@ var loadPage = function (pageName, app) {
     page.innerHTML = '' // Flush the current content.
     var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
 
-    if (app && !app.profil.estMonProfil()) {
-        // eslint-disable-next-line no-extra-semi
-        ;[].forEach.call(element.querySelectorAll('.me'), (meElement) => {
-            affichage.hideElement(meElement)
-            affichage.showElement(meElement.nextSibling)
-        })
+    if (app) {
+        affichage.showMeOrThem(element, app.profil)
     }
 
     if (pageName !== 'introduction') {

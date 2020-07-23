@@ -61,7 +61,7 @@ def index():
 def me_or_them(value):
     separator = "<hr />"
     if separator in value:
-        me, them = value.split(separator)
+        me, them = (part.strip() for part in value.split(separator))
         value = (
             f'<span class="me visible">{me}</span><span class="them" hidden>{them}</span>'
         )

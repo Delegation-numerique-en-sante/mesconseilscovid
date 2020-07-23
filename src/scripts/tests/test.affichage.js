@@ -5,7 +5,7 @@ var { JSDOM } = jsdom
 
 var affichage = require('../affichage.js')
 
-describe('affichage', function () {
+describe('Affichage', function () {
     it('On peut masquer des éléments visibles', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')

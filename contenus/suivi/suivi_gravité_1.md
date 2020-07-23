@@ -1,0 +1,1 @@
+Contactez votre médecin généraliste.

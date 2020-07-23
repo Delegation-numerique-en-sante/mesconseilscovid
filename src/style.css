@@ -111,7 +111,7 @@ a .profil {
     padding-top: 3rem;
     margin-bottom: 3rem;
 }
-.block > h2 {
+.block h2 {
     color: #000091;
     font-size: 225%;
     padding-top: 3rem;
@@ -123,13 +123,19 @@ a .profil {
     max-width: 80ch;
 }
 
-#introduction-block {
+#introduction-block,
+#suivi-introduction-block {
     text-align: center;
 }
-#introduction-block p {
+#introduction-block p,
+#suivi-introduction-block p {
     margin-left: auto;
     margin-right: auto;
     max-width: 60ch;
+}
+#suivi-introduction-block h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .cards {
@@ -179,6 +185,10 @@ main footer {
     background-size: 50%;
 }
 
+#tagline-suivi {
+    font-size: x-large;
+}
+
 #nom-form,
 #residence-form,
 #activite-pro-form,
@@ -209,6 +219,7 @@ main footer {
     background-position: center 1rem;
     background-repeat: no-repeat;
     background-size: 50%;
+    margin-top: 6rem;
 }
 #conseils-pediatrie-general h3 {
     padding-top: 200px;
@@ -296,7 +307,8 @@ main footer {
 .conseils {
     margin-bottom: 5rem;
 }
-.conseils h3 {
+.conseils h3,
+#historique h3 {
     color: #000091;
     font-size: 175%;
 }
@@ -311,23 +323,27 @@ main footer {
     padding: 0.5rem 1rem;
     border: 4px solid;
     text-align: center;
-    margin: 3rem auto 6rem;
+    margin: 3rem auto;
 }
 .statut-symptomatique-urgent,
 .statut-symptomatique,
-.statut-risque-eleve {
+.statut-risque-eleve,
+.suivi-gravite-3 {
     background: #ffb6a5;
     border-color: #ff6f4c;
 }
-.statut-personne-fragile {
+.statut-personne-fragile,
+.suivi-gravite-2 {
     background: #ffcc9f;
     border-color: #ff9940;
 }
-.statut-foyer-fragile {
+.statut-foyer-fragile,
+.suivi-gravite-1 {
     background: #fde7a0;
     border-color: #fdcf41;
 }
-.statut-peu-de-risques {
+.statut-peu-de-risques,
+.suivi-gravite-0 {
     background: #7fd5c5;
     border-color: #00ac8c;
 }
@@ -344,6 +360,11 @@ main footer {
 .conseil-vert {
     background-color: #7fd5c5;
     border-color: #00ac8c;
+}
+.conseil-autosuivi,
+.conseil-autosuivi-historique {
+    padding: 1rem;
+    margin: 2rem auto;
 }
 
 fieldset {
@@ -386,6 +407,9 @@ fieldset .secondary {
 }
 fieldset .secondary.disabled {
     display: none;
+}
+fieldset .secondary > p {
+    margin: 4rem 0 2rem 1rem;
 }
 
 fieldset .field {
@@ -535,19 +559,30 @@ select {
     background-size: 0.65em auto;
 }
 
-input[type='checkbox'] {
+/* Nicer checkboxes and radio buttons
+https://www.a11ywithlindsey.com/blog/create-custom-keyboard-accesible-checkboxes
+https://webdesign.tutsplus.com/tutorials/
+how-to-make-custom-accessible-checkboxes-and-radio-buttons--cms-32074 */
+input[type='checkbox'],
+input[type='radio'] {
     position: absolute;
 }
 
-input[type='checkbox'] + label {
+input[type='checkbox'] + label,
+input[type='radio'] + label {
     display: block;
     position: relative;
     padding: 0 1.5rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
 }
+input[type='radio'] + label {
+    padding-left: 4rem;
+}
 
-input[type='checkbox'] + label::before {
+input[type='checkbox'] + label::before,
+input[type='radio'] + label::before {
     content: '';
     position: relative;
     display: inline-block;
@@ -557,6 +592,26 @@ input[type='checkbox'] + label::before {
     height: 1.2rem;
     background: white;
     border: 2px solid #000091;
+}
+input[type='radio'] + label::before {
+    border-radius: 50%;
+}
+
+input[type='radio'] + label::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    margin-right: 10px;
+    left: 36.3px;
+    top: 4.3px;
+    width: 0.9rem;
+    height: 0.9rem;
+    background: #000091;
+    opacity: 0;
+    border-radius: 50%;
+}
+input[type='radio']:checked + label::after {
+    opacity: 1;
 }
 
 input[type='checkbox'] + label span {
@@ -577,12 +632,14 @@ input[type='checkbox']:checked + label::after {
     width: 13px;
     transform: rotate(-45deg);
 }
-input[type='checkbox']:focus + label::before {
+input[type='checkbox']:focus + label::before,
+input[type='radio']:focus + label::before {
     outline: #5d9dd5 solid 1px;
     box-shadow: 0 0px 8px #5e9ed6;
 }
 
-input[type='checkbox'] {
+input[type='checkbox'],
+input[type='radio'] {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -591,11 +648,13 @@ input[type='checkbox'] {
     clip: rect(1px, 1px, 1px, 1px);
 }
 
-input[type='checkbox']:disabled + label {
+input[type='checkbox']:disabled + label,
+input[type='radio']:disabled + label {
     color: #575757;
 }
 
-input[type='checkbox']:disabled + label::before {
+input[type='checkbox']:disabled + label::before,
+input[type='radio']:disabled + label::before {
     background: #ddd;
 }
 
@@ -676,6 +735,23 @@ a#geolocalisation {
 #pour-finir .ios-share-button {
     height: 1.5rem;
     margin-bottom: -0.4rem;
+}
+
+#historique h3 {
+    margin-top: 5rem;
+}
+#historique table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+#historique table thead td {
+    font-weight: bold;
+}
+#historique table td {
+    border: 1px solid black;
+    padding: 0.5rem;
 }
 
 @media print {

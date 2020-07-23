@@ -314,6 +314,147 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
+## [question_suivi_date_libellé.md](question_suivi_date_libellé.md)
+
+<!---->Cette date est une information importante afin de déterminer la période de d’incubation et de guérison de votre maladie.
+
+---
+
+<!---->Cette date est une information importante afin de déterminer la période de d’incubation et de guérison de sa maladie.
+
+
+
+## [question_suivi_date_titre.md](question_suivi_date_titre.md)
+
+<!---->Mes premiers symptômes
+
+---
+
+<!---->Ses premiers symptômes
+
+
+
+## [question_suivi_symptômes_alimentation_hydratation_libellé.md](question_suivi_symptômes_alimentation_hydratation_libellé.md)
+
+<!---->Êtes-vous dans l’<b>impossibilité de vous alimenter</b> ou de boire depuis <b>24 heures ou plus</b> ?
+
+---
+
+<!---->Votre proche est-il/elle dans l’<b>impossibilité de s’alimenter</b> ou de boire depuis <b>24 heures ou plus</b> ?
+
+
+
+## [question_suivi_symptômes_confusion_libellé.md](question_suivi_symptômes_confusion_libellé.md)
+
+Avez-vous remarqué chez votre proche l’apparition d’une forte **somnolence** ou d’une **confusion** ces dernières heures ?
+
+
+## [question_suivi_symptômes_diarrhée_vomissements_libellé.md](question_suivi_symptômes_diarrhée_vomissements_libellé.md)
+
+<!---->Depuis hier (ou votre dernière connexion), avez-vous eu de la <b>diarrhée</b> (au moins 3 selles liquides par jour) ou des <b>vomissements</b> importants ?
+
+---
+
+<!---->Depuis hier (ou votre dernière connexion), votre proche a-t-il/elle eu de la <b>diarrhée</b> (au moins 3 selles liquides par jour) ou des <b>vomissements</b> importants ?
+
+
+
+## [question_suivi_symptômes_essoufflement_libellé.md](question_suivi_symptômes_essoufflement_libellé.md)
+
+<!---->Si vous ressentez un <b>manque de souffle</b> quand vous parlez ou faites un petit effort, comment cela a-t-il évolué depuis hier (ou votre dernière connexion) ?
+
+---
+
+<!---->Si votre proche ressent un <b>manque de souffle</b> quand il/elle parle ou fait un petit effort, comment cela a-t-il évolué depuis hier (ou la dernière connexion) ?
+
+
+
+## [question_suivi_symptômes_fièvre_libellé.md](question_suivi_symptômes_fièvre_libellé.md)
+
+<!---->Votre <b>température</b> est supérieure à 39° et ne diminue pas malgré la prise de paracétamol ?
+
+---
+
+<!---->La <b>température</b> corporelle de votre proche est supérieure à 39° et ne diminue pas malgré la prise de paracétamol ?
+
+
+
+## [question_suivi_symptômes_libellé.md](question_suivi_symptômes_libellé.md)
+
+<!---->J’ai un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>aujourd’hui</b>.
+
+---
+
+<!---->Cette personne a un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>aujourd’hui</b>.
+
+
+
+## [question_suivi_symptômes_maux_de_tête_aide.md](question_suivi_symptômes_maux_de_tête_aide.md)
+
+De manière générale, l’auto-médication par anti-inflammatoires doit être proscrite. De plus, il semblerait que les anti-inflammatoires non stéroïdiens pourraient être un facteur d’aggravation de l’infection.
+
+Ainsi, dans le cas d’une infection au coronavirus COVID-19 :
+
+* Seul le paracétamol est recommandé, avec pas plus de 1g par prise (espacée au minimum de 4h), et pas plus de 3g au total par jour ([en savoir plus sur le paracétamol](https://sfpt-fr.org/covid19-foire-aux-questions/1099-j-ai-de-la-fievre-quel-medicament-dois-je-prendre)).
+* Si vous êtes déjà sous anti-inflammatoires ou en cas de doute : demandez conseil à votre médecin ou consultez le site [covid19-medicaments.com](https://www.covid19-medicaments.com)
+
+Plus d’informations sur le site de la Société Française de Pharmacologie et de Thérapeutique :
+
+* [Sur la prise d’anti-inflammatoires non stéroïdiens en cas de fièvre](https://sfpt-fr.org/covid19-foire-aux-questions/1085-je-prends-ou-je-souhaite-prendre-un-anti-inflammatoire-non-steroidien-ains-pour-la-fievre-que-dois-je-faire)
+* [Sur la prise d’anti-inflammatoires non stéroïdiens en cas de toux ou de myalgies](https://sfpt-fr.org/covid19-foire-aux-questions/1087-j-ai-de-la-fievre-et-je-prends-ou-je-souhaite-prendre-un-anti-inflammatoire-non-steroidien-ains-pour-la-toux-ou-les-myalgies-que-dois-je-faire)
+
+
+
+## [question_suivi_symptômes_maux_de_tête_libellé.md](question_suivi_symptômes_maux_de_tête_libellé.md)
+
+<!---->Ressentez-vous des <b>maux de tête</b> qui résistent aux médicaments anti-douleurs (dont paracétamol) et que vous décririez comme intolérables depuis hier (ou votre dernière connexion) ?
+
+---
+
+<!---->Votre proche ressent-il/elle des <b>maux de tête</b> qui résistent aux médicaments anti-douleur (dont paracétamol) et qu’il/elle décrirait comme intolérables depuis hier (ou votre dernière connexion) ?
+
+
+
+## [question_suivi_symptômes_titre.md](question_suivi_symptômes_titre.md)
+
+<!---->Mon état actuel
+
+---
+
+<!---->Son état actuel
+
+
+
+## [question_suivi_symptômes_toux_libellé.md](question_suivi_symptômes_toux_libellé.md)
+
+<!---->Est-ce que l’aspect de vos crachats lors de la <b>toux</b> s’est modifié (aspect coloré jaune ou orangé ou sanglant) depuis hier (ou votre dernière connexion) ?
+
+---
+
+<!---->Est-ce que l’aspect des crachats lors de la toux de votre proche s’est modifié (aspect coloré jaune ou orangé ou sanglant) depuis hier (ou votre dernière connexion) ?
+
+
+
+## [question_suivi_symptômes_état_général_libellé.md](question_suivi_symptômes_état_général_libellé.md)
+
+<!---->Concernant votre <b>état physique</b>, comment vous sentez-vous depuis hier (ou votre dernière connexion) ?
+
+---
+
+<!---->Concernant l’<b>état physique</b> de votre proche, comment se sent-il/elle depuis hier (ou la dernière connexion) ?
+
+
+
+## [question_suivi_symptômes_état_psychologique_libellé.md](question_suivi_symptômes_état_psychologique_libellé.md)
+
+<!---->Comment votre <b>moral</b> et votre niveau d’<b>anxiété</b> ont évolué depuis hier (ou votre dernière connexion) ?
+
+---
+
+<!---->Comment le <b>moral</b> et le niveau d’<b>anxiété</b> de votre proche ont évolué depuis hier (ou la dernière connexion) ?
+
+
+
 ## [question_symptômes_actuels_alimentation_libellé.md](question_symptômes_actuels_alimentation_libellé.md)
 
 <!---->Je suis dans l’impossibilité de m’alimenter <em>ou</em> de boire <b>depuis 24 heures ou plus</b>.

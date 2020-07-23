@@ -1,3 +1,21 @@
+function showMeOrThem(element, profil) {
+    // eslint-disable-next-line no-extra-semi
+    ;[].forEach.call(
+        element.querySelectorAll('.me'),
+        profil.estMonProfil() ? showMe : showThem
+    )
+}
+
+function showMe(meElement) {
+    showElement(meElement)
+    hideElement(meElement.nextSibling)
+}
+
+function showThem(themElement) {
+    hideElement(themElement)
+    showElement(themElement.nextSibling)
+}
+
 function hideElement(element) {
     element.setAttribute('hidden', '')
     element.classList.remove('visible')
@@ -54,6 +72,7 @@ function safeHtml(literals, ...substitutions) {
 }
 
 module.exports = {
+    showMeOrThem,
     hideElement,
     showElement,
     hideSelector,

@@ -14,28 +14,64 @@ install:  ## Install Python and JS dependencies.
 	python3 -m pip install -r requirements.txt
 	npm install
 
-test:  ## Run JS unit tests.
-	npm run-script test
-	npm run-script --browser=chromium test-integration
-	npm run-script --browser=firefox test-integration
-	npm run-script --browser=webkit test-integration
+clean:  ## Clean up JS related stuff.
+	rm -rf ./node_modules
+	rm -rf ./.cache
 
-test-unit:  ## Run JS unit tests matching a given pattern/browser engine.
-	# Usage: make test-unit browser=webkit grep=proche
-	npm run-script test -- --grep $(grep)
-	npm run-script --browser=$(browser) test-integration -- --grep $(grep)
+##
+## Run JS unit tests matching a given pattern/browser engine.
+##
+## Examples:
+##    make test-unit grep=profil
+##    make test-integration browser=webkit grep=suivi
+##    make test browser=webkit
+
+test: test-unit test-integration
+
+ifdef grep
+script_flags = -- --grep $(grep)
+else
+script_flags =
+endif
+
+test-unit:  ## Run JS unit tests.
+	npm run-script test $(script_flags)
+
+test-integration: build  ## Run JS browser tests.
+ifdef browser
+	npm run-script --browser=$(browser) test-integration $(script_flags)
+else
+	npm run-script --browser=chromium test-integration $(script_flags)
+	npm run-script --browser=firefox test-integration $(script_flags)
+	npm run-script --browser=webkit test-integration $(script_flags)
+endif
 
 check-links:  # Check that links to external pages are still valid.
 	python3 check.py links
 
-lint:  ## Run ESLint.
+lint:  ## Run ESLint + check code style.
 	npm run-script lint
+	./node_modules/.bin/prettier src/*.js src/**/*.js src/**/**/*.js src/**/**/**/*.js src/style.css --check
 
-build:  ## Build the index from `template.html` + contenus markdown files.
+pretty:  ## Run PrettierJS.
+	./node_modules/.bin/prettier src/*.js src/**/*.js src/**/**/*.js src/**/**/**/*.js src/style.css --write
+
+build:  ## Build all files (markdown + statics).
 	python3 build.py all
 	npm run-script build
 
-.PHONY: serve serve-ssl install test check-links build help
+generate:  ## Auto-regenerate the `index.html` file from `template.html` + contenus.
+	find . -type f \( -iname "*.md" ! -iname "README.md" ! -iname "CHANGELOG.md" -o -iname "template.html" ! -iname "CHANGELOG.md" \) -not -path "./node_modules/*" -not -path "./venv/*" | entr -r python3 build.py index
+
+dev:  ## Auto-rebuild and serve the static website with Parcel.
+	npm run-script build-dev
+
+pre-commit: pretty lint test-unit build  ## Interesting prior to commit/push.
+
+prod: clean install lint pretty test check-links  ## Make sure everything is clean prior to deploy.
+	# Note: `test` dependency will actually generate the `build`.
+
+.PHONY: serve serve-ssl install clean test test-unit test-integration check-links build generate dev pre-commit prod help
 
 help:  ## Display this help.
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)

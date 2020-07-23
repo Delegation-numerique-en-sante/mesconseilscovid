@@ -5,57 +5,12 @@ import 'core-js/features/promise'
 import 'whatwg-fetch'
 import './polyfills/custom_event.js'
 
+import { register } from 'timeago.js'
+
 var Updater = require('./updater.js')
 var actions = require('./actions.js')
-var StockageLocal = require('./stockage.js').StockageLocal
-var Profil = require('./profil.js').Profil
 var Router = require('./router.js')
-
-class App {
-    constructor() {
-        this.profil = new Profil()
-        this.stockage = new StockageLocal()
-    }
-    init() {
-        return this.chargerProfilActuel()
-    }
-    chargerProfilActuel() {
-        return this.stockage.getProfilActuel().then((nom) => {
-            return this.chargerProfil(nom)
-        })
-    }
-    enregistrerProfilActuel() {
-        return this.stockage.enregistrer(this.profil)
-    }
-    creerProfil(nom) {
-        this.profil.resetData(nom)
-        return this.stockage.setProfilActuel(nom).then(() => {
-            return this.enregistrerProfilActuel()
-        })
-    }
-    basculerVersProfil(nom) {
-        return this.stockage.setProfilActuel(nom).then(() => {
-            return this.chargerProfil(nom)
-        })
-    }
-    chargerProfil(nom) {
-        this.profil.nom = nom
-        return this.stockage.charger(this.profil, nom)
-    }
-    supprimerProfil(nom) {
-        return this.stockage.supprimer(nom).then(() => {
-            if (this.profil.nom === nom) {
-                this.profil.nom = undefined
-                this.stockage.setProfilActuel(undefined)
-            }
-        })
-    }
-    supprimerTout() {
-        return this.stockage.supprimerTout().then(() => {
-            this.profil.resetData()
-        })
-    }
-}
+var App = require('./app.js').App
 
 var app = new App()
 window.app = app
@@ -77,3 +32,22 @@ window.app = app
             )
         })
 })()
+
+register('fr', function (number, index) {
+    return [
+        ["à l'instant", 'dans un instant'],
+        ['il y a %s secondes', 'dans %s secondes'],
+        ['il y a 1 minute', 'dans 1 minute'],
+        ['il y a %s minutes', 'dans %s minutes'],
+        ['il y a 1 heure', 'dans 1 heure'],
+        ['il y a %s heures', 'dans %s heures'],
+        ['il y a 1 jour', 'dans 1 jour'],
+        ['il y a %s jours', 'dans %s jours'],
+        ['il y a 1 semaine', 'dans 1 semaine'],
+        ['il y a %s semaines', 'dans %s semaines'],
+        ['il y a 1 mois', 'dans 1 mois'],
+        ['il y a %s mois', 'dans %s mois'],
+        ['il y a 1 an', 'dans 1 an'],
+        ['il y a %s ans', 'dans %s ans'],
+    ][index]
+})

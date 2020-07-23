@@ -1,9 +1,12 @@
 var Navigo = require('navigo')
 
-var introduction = require('./introduction.js')
+var introduction = require('./page/introduction.js')
 var affichage = require('./affichage.js')
-var conseils = require('./conseils.js')
-var questionnaire = require('./questionnaire.js')
+var conseils = require('./page/conseils.js')
+var questionnaire = require('./page/questionnaire.js')
+var suivi = require('./page/suivi.js')
+var suividate = require('./page/suividate.js')
+var suivihistorique = require('./page/suivihistorique.js')
 var injection = require('./injection.js')
 var pagination = require('./pagination.js')
 
@@ -99,8 +102,28 @@ function initRouter(app) {
         })
         .on(new RegExp('^conseils$'), function () {
             var pageName = 'conseils'
-            var element = pagination.loadPage(pageName)
+            var element = pagination.loadPage(pageName, app)
             conseils.page(element, app)
+        })
+        .on(new RegExp('^suiviintroduction$'), function () {
+            var pageName = 'suiviintroduction'
+            var element = pagination.loadPage(pageName, app)
+            suivi.page(element, app)
+        })
+        .on(new RegExp('^suividate$'), function () {
+            var pageName = 'suividate'
+            var form = pagination.loadPage(pageName, app)
+            suividate.page(form, app, router)
+        })
+        .on(new RegExp('^suivisymptomes$'), function () {
+            var pageName = 'suivisymptomes'
+            var form = pagination.loadPage(pageName, app)
+            questionnaire.suivisymptomes(form, app, router)
+        })
+        .on(new RegExp('^suivihistorique$'), function () {
+            var pageName = 'suivihistorique'
+            var element = pagination.loadPage(pageName, app)
+            suivihistorique.page(element, app)
         })
         .on(new RegExp('^pediatrie$'), function () {
             var pageName = 'pediatrie'

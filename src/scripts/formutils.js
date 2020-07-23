@@ -78,6 +78,60 @@ function toggleFormButtonOnCheckRequired(
     otherCheckbox.addEventListener('change', updateToggleOnOther)
 }
 
+function toggleFormButtonOnRadioRequired(
+    form,
+    continueLabel,
+    uncheckedLabel,
+    requiredLabel
+) {
+    var button = form.querySelector('input[type=submit]')
+    var checkbox = form.querySelector('input[type=checkbox]')
+    var secondariesRequired = [].slice.call(
+        form.querySelectorAll('.secondary.required')
+    )
+    var radios = [].slice.call(form.querySelectorAll('.secondary input[type=radio]'))
+
+    function updateSubmitButtonLabelRequired() {
+        button.disabled = false
+        button.value = checkbox.checked ? continueLabel : uncheckedLabel
+        if (checkbox.checked) {
+            var hasAllRequiredRadioChecks = secondariesRequired.every(function (
+                secondary
+            ) {
+                return [].slice
+                    .call(secondary.querySelectorAll('input[type=radio]'))
+                    .some(function (radio) {
+                        return radio.checked
+                    })
+            })
+            if (!hasAllRequiredRadioChecks) {
+                button.disabled = true
+                button.value = requiredLabel
+            }
+        }
+    }
+    updateSubmitButtonLabelRequired()
+    radios.forEach(function (elem) {
+        elem.addEventListener('change', updateSubmitButtonLabelRequired)
+    })
+
+    function updateToggleOnCheckbox() {
+        updateSubmitButtonLabelRequired()
+        if (checkbox.checked) {
+            radios.forEach(function (radio) {
+                radio.disabled = false
+            })
+        } else {
+            radios.forEach(function (radio) {
+                radio.checked = false
+                radio.disabled = true
+            })
+        }
+    }
+    updateToggleOnCheckbox()
+    checkbox.addEventListener('change', updateToggleOnCheckbox)
+}
+
 function toggleFormButtonOnTextFieldsRequired(form, continueLabel, requiredLabel) {
     var button = form.querySelector('input[type=submit]')
     var textFields = [].slice.call(form.querySelectorAll('input[type=text]'))
@@ -134,6 +188,7 @@ module.exports = {
     preloadCheckboxForm,
     toggleFormButtonOnCheck,
     toggleFormButtonOnCheckRequired,
+    toggleFormButtonOnRadioRequired,
     toggleFormButtonOnTextFieldsRequired,
     toggleFormButtonOnSelectFieldsRequired,
     enableOrDisableSecondaryFields,

@@ -234,10 +234,11 @@ Conseils :
     * ou [conseils_symptômes_actuels_gravité3.md](conseils/conseils_symptômes_actuels_gravité3.md) si (température et toux, personne à [Risque](#risque) mais *un seul* facteur de [gravité mineure](#gravité-mineure)) OU (pas de température et (toux ou douleurs ou odorat) et personne à [Risque](#risque)) OU (avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie)) et (personne à [Risque](#risque) *sans* facteur de [gravité mineure](#gravité-mineure) OU âge supérieur à 50 ans OU *un* ou *plusieurs* facteur de [gravité mineure](#gravité-mineure)))
     * ou [conseils_symptômes_actuels_gravité2.md](conseils/conseils_symptômes_actuels_gravité2.md) si (température et toux, personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure)) OU (avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie)) et personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure))
     * ou [conseils_symptômes_actuels_gravité1.md](conseils/conseils_symptômes_actuels_gravité1.md) par défaut
-2. [conseils_isolement.md](conseils/conseils_isolement.md)
-3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
-4. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
-5. [Conseils d’ordre général](#conseils-dordre-général)
+2. [conseils_symptômes_actuels_autosuivi.md](conseils/conseils_symptômes_actuels_autosuivi.md), [bouton](conseils/conseils_symptômes_actuels_autosuivi_bouton.md)
+3. [conseils_isolement.md](conseils/conseils_isolement.md)
+4. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
+5. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
+6. [Conseils d’ordre général](#conseils-dordre-général)
 
 
 #### Symptômes passés
@@ -289,6 +290,52 @@ Conseils :
 4. [Localisation](#localisation)
 5. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
 6. [Conseils d’ordre général](#conseils-dordre-général)
+
+
+### Auto-suivi
+
+#### Suivi date
+
+[Titre](questions/question_suivi_date_titre.md)
+
+Question : [libellé](questions/question_suivi_date_libellé.md)
+
+
+#### Suivi symptômes
+
+[Titre](questions/question_suivi_symptômes_titre.md)
+
+Question : [libellé](questions/question_suivi_symptômes_libellé.md)
+
+Sous-question (essoufflement) : [libellé](questions/question_suivi_symptômes_essoufflement_libellé.md)
+
+Sous-question (état général) : [libellé](questions/question_suivi_symptômes_état_général_libellé.md)
+
+Sous-question (alimentation et hydratation) : [libellé](questions/question_suivi_symptômes_alimentation_hydratation_libellé.md)
+
+Sous-question (état psychologique) : [libellé](questions/question_suivi_symptômes_état_psychologique_libellé.md)
+
+Sous-question (fièvre) : [libellé](questions/question_suivi_symptômes_fièvre_libellé.md)
+
+Sous-question (diarrhée ou vomissements) : [libellé](questions/question_suivi_symptômes_diarrhée_vomissements_libellé.md)
+
+Sous-question (toux) [optionnelle] : [libellé](questions/question_suivi_symptômes_toux_libellé.md)
+
+Sous-question (maux de tête) [optionnelle] : [libellé](questions/question_suivi_symptômes_maux_de_tête_libellé.md), [aide](questions/question_suivi_symptômes_maux_de_tête_aide.md)
+
+
+#### Suivi conseils
+
+* Si au moins une réponse « Beaucoup moins bien » alors [suivi_gravité_3.md](suivi/suivi_gravité_3.md)
+* Si au moins une réponse « Un peu moins bien » OU « Oui » à `alimentation et hydratation` OU « Oui » à `maux de tête` alors [suivi_gravité_2.md](suivi/suivi_gravité_2.md)
+* Si (« Oui » à `fièvre`) OU (« Oui » à `diarrhée ou vomissements`) OU (« Oui » à `toux`) alors [suivi_gravité_1.md](suivi/suivi_gravité_1.md)
+* Si (que des réponses « Mieux » OU « Stable ») ET (« Non » à `alimentation et hydratation`) ET (« Non » à `fièvre`) ET (« Non » à `diarrhée ou vomissements`) alors [suivi_gravité_0.md](suivi/suivi_gravité_0.md)
+
+
+#### Suivi plus d’infos
+
+* Si réponse « Oui » à `état psychologique` on affiche en plus [suivi_psy_2.md](suivi/suivi_psy_2.md) si gravité > 0 OU [suivi_psy_1.md](suivi/suivi_psy_1.md) si gravité = 0.
+* [conseils_autosuivi_historique.md](conseils/conseils_autosuivi_historique.md) s’affiche lorsque plus d’une entrée est présente dans le suivi.
 
 
 ### Critères

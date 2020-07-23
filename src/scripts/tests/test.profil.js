@@ -59,9 +59,48 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: undefined,
             contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
+            suivi_active: undefined,
+            _suivi_start_date: undefined,
+            _symptomes_start_date: undefined,
+            suivi: [],
         })
         assert.isFalse(profil.isComplete())
         assert.isTrue(profil.isEmpty())
+    })
+
+    it('La valeur de suivi_start_date est stockée sous forme de chaîne', function () {
+        var date = new Date('2020-07-09T14:03:41.000Z')
+        profil.suivi_start_date = date
+        assert.strictEqual(profil._suivi_start_date, '2020-07-09T14:03:41.000Z')
+        assert.typeOf(profil._suivi_start_date, 'string')
+        assert.deepEqual(profil.suivi_start_date, date)
+        assert.typeOf(profil.suivi_start_date, 'date')
+    })
+
+    it('La valeur de suivi_start_date peut être indéfinie', function () {
+        assert.isUndefined(profil._suivi_start_date, undefined)
+        assert.isUndefined(profil.suivi_start_date, undefined)
+        profil.suivi_start_date = undefined
+        assert.isUndefined(profil._suivi_start_date, undefined)
+        assert.isUndefined(profil.suivi_start_date, undefined)
+    })
+
+    it('On peut ajouter et récupérer un état au suivi', function () {
+        assert.deepEqual(profil.suivi, [])
+        var etat = {
+            date: new Date('2020-07-09T14:03:41.000Z').toJSON(),
+        }
+        profil.ajouterEtat(etat)
+        assert.deepEqual(profil.suivi, [
+            {
+                date: '2020-07-09T14:03:41.000Z',
+            },
+        ])
+        var etat2 = {
+            date: new Date('2020-07-10T14:03:41.000Z').toJSON(),
+        }
+        profil.ajouterEtat(etat2)
+        assert.deepEqual(profil.dernierEtat(), etat2)
     })
 
     it('Le questionnaire peut être partiellement rempli', function () {
@@ -126,6 +165,10 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
+            suivi_active: true,
+            _suivi_start_date: '2020-07-09T14:03:41.000Z',
+            _symptomes_start_date: '2020-07-09T14:03:41.000Z',
+            suivi: [],
         }
         profil.fillData(data)
         assert.deepEqual(profil.getData(), data)
@@ -174,6 +217,10 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
+            suivi_active: true,
+            _suivi_start_date: '2020-07-09T14:03:41.000Z',
+            _symptomes_start_date: '2020-07-09T14:03:41.000Z',
+            suivi: [],
         }
         profil.fillData(data)
         assert.deepEqual(profil.getData(), data)
@@ -222,6 +269,10 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
+            suivi_active: true,
+            _suivi_start_date: '2020-07-09T14:03:41.000Z',
+            _symptomes_start_date: '2020-07-09T14:03:41.000Z',
+            suivi: [{ foo: 'bar' }],
         }
         profil.fillData(data)
         profil.resetData()
@@ -265,8 +316,109 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: undefined,
             contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
+            suivi_active: undefined,
+            _suivi_start_date: undefined,
+            _symptomes_start_date: undefined,
+            suivi: [],
         })
         assert.isFalse(profil.isComplete())
         assert.isTrue(profil.isEmpty())
+    })
+
+    it('Le suivi seul peut être complètement vidé', function () {
+        var data = {
+            departement: '34',
+            activite_pro: false,
+            activite_pro_public: false,
+            activite_pro_sante: false,
+            foyer_enfants: true,
+            foyer_fragile: false,
+            age: '42',
+            grossesse_3e_trimestre: false,
+            poids: '70',
+            taille: '178',
+            antecedent_cardio: false,
+            antecedent_diabete: true,
+            antecedent_respi: false,
+            antecedent_dialyse: true,
+            antecedent_cancer: false,
+            antecedent_immunodep: false,
+            antecedent_cirrhose: false,
+            antecedent_drepano: false,
+            antecedent_chronique_autre: false,
+            symptomes_actuels: false,
+            symptomes_actuels_temperature: false,
+            symptomes_actuels_temperature_inconnue: false,
+            symptomes_actuels_toux: false,
+            symptomes_actuels_odorat: false,
+            symptomes_actuels_douleurs: false,
+            symptomes_actuels_diarrhee: false,
+            symptomes_actuels_fatigue: false,
+            symptomes_actuels_alimentation: false,
+            symptomes_actuels_souffle: false,
+            symptomes_actuels_autre: false,
+            symptomes_passes: false,
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie: false,
+            contact_a_risque_contact_direct: false,
+            contact_a_risque_actes: false,
+            contact_a_risque_espace_confine: false,
+            contact_a_risque_meme_classe: false,
+            contact_a_risque_stop_covid: false,
+            contact_a_risque_autre: true,
+            suivi_active: true,
+            _suivi_start_date: '2020-07-09T14:03:41.000Z',
+            _symptomes_start_date: '2020-07-09T14:03:41.000Z',
+            suivi: [{ foo: 'bar' }],
+        }
+        profil.fillData(data)
+        profil.resetSuivi()
+        assert.deepEqual(profil.getData(), {
+            departement: '34',
+            activite_pro: false,
+            activite_pro_public: false,
+            activite_pro_sante: false,
+            foyer_enfants: true,
+            foyer_fragile: false,
+            age: '42',
+            grossesse_3e_trimestre: false,
+            poids: '70',
+            taille: '178',
+            antecedent_cardio: false,
+            antecedent_diabete: true,
+            antecedent_respi: false,
+            antecedent_dialyse: true,
+            antecedent_cancer: false,
+            antecedent_immunodep: false,
+            antecedent_cirrhose: false,
+            antecedent_drepano: false,
+            antecedent_chronique_autre: false,
+            symptomes_actuels: false,
+            symptomes_actuels_temperature: false,
+            symptomes_actuels_temperature_inconnue: false,
+            symptomes_actuels_toux: false,
+            symptomes_actuels_odorat: false,
+            symptomes_actuels_douleurs: false,
+            symptomes_actuels_diarrhee: false,
+            symptomes_actuels_fatigue: false,
+            symptomes_actuels_alimentation: false,
+            symptomes_actuels_souffle: false,
+            symptomes_actuels_autre: false,
+            symptomes_passes: false,
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie: false,
+            contact_a_risque_contact_direct: false,
+            contact_a_risque_actes: false,
+            contact_a_risque_espace_confine: false,
+            contact_a_risque_meme_classe: false,
+            contact_a_risque_stop_covid: false,
+            contact_a_risque_autre: true,
+            suivi_active: true,
+            _suivi_start_date: undefined,
+            _symptomes_start_date: undefined,
+            suivi: [],
+        })
+        assert.isTrue(profil.isComplete())
+        assert.isFalse(profil.isEmpty())
     })
 })

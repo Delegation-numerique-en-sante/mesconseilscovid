@@ -1,6 +1,6 @@
-import { Profil } from './profil.js'
-import affichage from './affichage.js'
-import pagination from './pagination.js'
+import { Profil } from '../profil.js'
+import affichage from '../affichage.js'
+import pagination from '../pagination.js'
 
 function page(element, app) {
     const container = element.querySelector('#profils-cards')

@@ -13,12 +13,14 @@
     "parcel-plugin-ogimage": "^1.2.0",
     "parcel-plugin-static-files-copy": "^2.3.1",
     "parcel-plugin-sw-asset-urls": "^0.1.2",
-    "playwright": "^1.1.1"
+    "playwright": "^1.1.1",
+    "prettier": "^2.0.5"
   },
   "dependencies": {
     "core-js": "3.6.5",
     "localforage": "1.7.3",
     "navigo": "7.1.2",
+    "timeago.js": "4.0.2",
     "whatwg-fetch": "3.1.0"
   },
   "scripts": {
@@ -26,7 +28,8 @@
     "test-integration": "mocha --timeout 10000 src/scripts/tests/integration/",
     "lint": "eslint src/scripts/ src/service-worker.js",
     "prebuild": "rm -rf dist",
-    "build": "parcel build src/index.html --detailed-report 20 --experimental-scope-hoisting"
+    "build": "parcel build src/index.html --detailed-report 20 --experimental-scope-hoisting",
+    "build-dev": "parcel src/index.html --log-level 3 --open"
   },
   "externals": {
     "version.json": false
