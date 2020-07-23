@@ -31,9 +31,11 @@ def each_folder_from(source_dir):
             yield direntry
 
 
-def each_markdown_from(source_dir, file_name="*.md"):
+def each_file_from(source_dir, file_name="*", exclude=None):
     """Walk across the `source_dir` and return the md file paths."""
     for filename in fnmatch.filter(sorted(os.listdir(source_dir)), file_name):
+        if exclude is not None and filename in exclude:
+            continue
         yield os.path.join(source_dir, filename), filename
 
 
@@ -41,7 +43,7 @@ def build_responses(source_dir):
     """Extract and convert markdown from a `source_dir` directory into a dict."""
     responses = {}
     for folder in each_folder_from(source_dir):
-        for file_path, filename in each_markdown_from(folder):
+        for file_path, filename in each_file_from(folder, file_name="*.md"):
             html_content = markdown.read(file_path)
             # Remove empty comments set to hack markdown rendering
             # when we do not want paragraphs.
@@ -62,9 +64,7 @@ def me_or_them(value):
     separator = "<hr />"
     if separator in value:
         me, them = (part.strip() for part in value.split(separator))
-        value = (
-            f'<span class="me visible">{me}</span><span class="them" hidden>{them}</span>'
-        )
+        value = f'<span class="me visible">{me}</span><span class="them" hidden>{them}</span>'
     return value
 
 
@@ -86,7 +86,7 @@ def readmes():
 il ne doit pas être édité !*
 
 """
-        for file_path, filename in each_markdown_from(folder):
+        for file_path, filename in each_file_from(folder):
             if filename == "README.md":
                 continue
             file_content = open(file_path).read()

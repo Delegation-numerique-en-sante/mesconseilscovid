@@ -8,7 +8,7 @@ from http import HTTPStatus
 import httpx
 from minicli import cli, run, wrap
 
-from build import each_folder_from, each_markdown_from
+from build import each_folder_from, each_file_from
 
 HERE = Path(__file__).parent
 
@@ -53,22 +53,100 @@ def versions():
 
 
 @cli
+def service_worker():
+    KNOWN_EXCLUDED_FILES = {
+        "service-worker.js",
+        "version.json",
+        "template.html",
+        "index.html",
+        "illustrations/mesconseilscovid.png",
+        "departements-1000m.geojson",
+        "browserconfig.xml",
+    }
+    REQUIRED_FILES = {"/", "style.css", "scripts/main.js", "favicon.ico"}
+
+    # Retrieving the list from CACHE_FILES.
+    sw_filenames = set()
+    start = False
+    for line in open(HERE / "src" / "service-worker.js"):
+        # Parsing a JS file in Python, what could potentially go wrong?
+        if line.startswith("const CACHE_FILES = ["):
+            start = True
+            continue
+
+        if start:
+            sw_filenames.add(line.strip()[1:-2])
+
+        if line.startswith("]"):
+            break
+    sw_filenames |= KNOWN_EXCLUDED_FILES
+
+    # Make sure the required files are present.
+    if not REQUIRED_FILES.issubset(sw_filenames):
+        raise Exception(
+            f"File(s) missing in service-worker.js: {REQUIRED_FILES - sw_filenames}"
+        )
+
+    # Compare the list to static files.
+    static_file_names = {
+        filename
+        for file_path, filename in each_file_from(
+            HERE / "static", exclude=[".DS_Store"]
+        )
+    }
+    if not static_file_names.issubset(sw_filenames):
+        raise Exception(
+            f"File(s) missing in service-worker.js: {static_file_names - sw_filenames}"
+        )
+
+    # Compare the list to font files.
+    fonts_file_names = {
+        f"fonts/{filename}"
+        for file_path, filename in each_file_from(
+            HERE / "src" / "fonts", file_name="*.woff2", exclude=[".DS_Store"]
+        )
+    }
+    if not fonts_file_names.issubset(sw_filenames):
+        raise Exception(
+            f"File(s) missing in service-worker.js: {fonts_file_names - sw_filenames}"
+        )
+
+    # Compare the list to illustration files.
+    illustrations_file_names = {
+        f"illustrations/{filename}"
+        for file_path, filename in each_file_from(
+            HERE / "src" / "illustrations", exclude=[".DS_Store"],
+        )
+    }
+    if not illustrations_file_names.issubset(sw_filenames):
+        raise Exception(
+            f"File(s) missing in service-worker.js: {illustrations_file_names - sw_filenames}"
+        )
+
+    # Compare the list to src files.
+    src_file_names = {
+        filename
+        for file_path, filename in each_file_from(
+            HERE / "src", file_name="*.*", exclude=[".DS_Store"],
+        )
+    }
+    if not src_file_names.issubset(sw_filenames):
+        raise Exception(
+            f"File(s) missing in service-worker.js: {src_file_names - sw_filenames}"
+        )
+
+
+@cli
 def documentation():
     readme = open(HERE / "contenus" / "README.md").read()
     for folder in each_folder_from(HERE / "contenus"):
-        for file_path, filename in each_markdown_from(folder):
-            if filename == "README.md" or filename.startswith("meta_"):
+        for file_path, filename in each_file_from(
+            folder, file_name="*.md", exclude=["README.md"]
+        ):
+            if filename.startswith("meta_"):
                 continue
             if filename not in readme:
                 raise Exception(f"Documentation missing for {filename}")
-
-
-@wrap
-def perf_wrapper():
-    start = perf_counter()
-    yield
-    elapsed = perf_counter() - start
-    print(f"Done in {elapsed:.5f} seconds.")
 
 
 if __name__ == "__main__":
