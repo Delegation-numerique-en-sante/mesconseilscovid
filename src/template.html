@@ -559,9 +559,7 @@
                 </label>
             </div>
             <div class="details">
-                <span>
-                    {{ question_symptômes_contact_à_risque_aide }}
-                </span>
+                {{ question_symptômes_contact_à_risque_aide }}
             </div>
         </fieldset>
         <div class="form-controls">
@@ -646,7 +644,9 @@
                     {{ conseils_symptômes_actuels_gravité4 }}
                 </div>
                 <div class="conseil conseil-autosuivi">
-                    {{ conseils_symptômes_actuels_autosuivi|me_or_them }}
+                    <p>
+                        {{ conseils_symptômes_actuels_autosuivi|me_or_them }}
+                    </p>
                     <div class="form-controls">
                         <div class="button-full-width">
                             <a class="button button-full-width" href="#suiviintroduction">{{ conseils_symptômes_actuels_autosuivi_bouton|me_or_them }}</a>
