@@ -66,6 +66,12 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
 
+      - name: Check versions
+        run: |
+          make check-versions
+        env:
+          PYTHONUNBUFFERED: "1"
+
       - uses: actions/upload-artifact@v2
         with:
           name: mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}

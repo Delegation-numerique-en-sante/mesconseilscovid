@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import json
 from html.parser import HTMLParser
 from pathlib import Path
 from time import perf_counter
@@ -32,6 +33,21 @@ def links(timeout: int = 10):
         response = httpx.get(link, timeout=timeout)
         if response.status_code != HTTPStatus.OK:
             raise Exception(f"{link} is broken! ({response.status_code})")
+
+
+@cli
+def versions():
+    content = open(HERE / "static" / "version.json").read()
+    data = json.loads(content)
+    version = data["version"]
+    line_prefix = "const CACHE_NAME = "
+    for line in open(HERE / "src" / "service-worker.js"):
+        if line.startswith(line_prefix):
+            break
+    if version not in line:
+        raise Exception(
+            f"Version mismatch between version.json ({version}) and service-worker.js"
+        )
 
 
 @wrap

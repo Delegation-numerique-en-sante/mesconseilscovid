@@ -49,6 +49,9 @@ endif
 check-links:  # Check that links to external pages are still valid.
 	python3 check.py links
 
+check-versions:  # Check that current version matches service-worker one.
+	python3 check.py versions
+
 lint:  ## Run ESLint + check code style.
 	npm run-script lint
 	./node_modules/.bin/prettier src/*.js src/**/*.js src/**/**/*.js src/**/**/**/*.js src/style.css --check
@@ -68,10 +71,10 @@ dev:  ## Auto-rebuild and serve the static website with Parcel.
 
 pre-commit: pretty lint test-unit build  ## Interesting prior to commit/push.
 
-prod: clean install lint pretty test check-links  ## Make sure everything is clean prior to deploy.
+prod: clean install lint pretty test check-links check-versions  ## Make sure everything is clean prior to deploy.
 	# Note: `test` dependency will actually generate the `build`.
 
-.PHONY: serve serve-ssl install clean test test-unit test-integration check-links build generate dev pre-commit prod help
+.PHONY: serve serve-ssl install clean test test-unit test-integration check-links check-versions build generate dev pre-commit prod help
 
 help:  ## Display this help.
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
