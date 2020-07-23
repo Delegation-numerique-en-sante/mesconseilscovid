@@ -91,7 +91,7 @@ Conseils :
 
 #### Foyer
 
-[Titre](questions/question_activité_pro_titre.md)
+[Titre](questions/question_foyer_titre.md)
 
 Question (enfants) : [libellé](questions/question_foyer_enfants_libellé.md)
 
@@ -163,8 +163,9 @@ Question (chronique autre) : [libellé](questions/question_antécédents_chroniq
 
 Réponse :
 
-* [réponse_antécédents.md](réponses/réponse_antécédents.md) si [Antécédents](#antécédents) ou antécédents chroniques autres
 * [réponse_caractéristiques_à_risques.md](réponses/réponse_caractéristiques_à_risques.md) si âge > 65 ou grossesse 3e trimestre ou IMC > 30
+* [réponse_antécédents.md](réponses/réponse_antécédents.md) si [Antécédents](#antécédents) ou antécédents chroniques autres
+* [réponse_symptômes_actuels_reconnus.md](réponses/réponse_symptômes_actuels_reconnus.md) si [Antécédents](#antécédents) mais pas antécédents chroniques autres
 
 Conseils :
 
@@ -205,7 +206,7 @@ Sous-question (toux) : [libellé](questions/question_symptômes_actuels_toux_lib
 
 Sous-question (odorat) : [libellé](questions/question_symptômes_actuels_odorat_libellé.md)
 
-Sous-question (douleurs) : [libellé](questions/question_symptômes_actuels_douleurs_libellé.md)
+Sous-question (douleurs) : [libellé](questions/question_symptômes_actuels_douleurs_libellé.md), [aide](questions/question_symptômes_actuels_douleurs_aide.md)
 
 Sous-question (diarrhée) : [libellé](questions/question_symptômes_actuels_diarrhée_libellé.md)
 
@@ -319,6 +320,8 @@ Sous-question (état psychologique) : [libellé](questions/question_suivi_sympt�
 Sous-question (fièvre) : [libellé](questions/question_suivi_symptômes_fièvre_libellé.md)
 
 Sous-question (diarrhée ou vomissements) : [libellé](questions/question_suivi_symptômes_diarrhée_vomissements_libellé.md)
+
+Sous-question (confusion) [pour un proche seulement] : [libellé](questions/question_suivi_symptômes_confusion_libellé.md)
 
 Sous-question (toux) [optionnelle] : [libellé](questions/question_suivi_symptômes_toux_libellé.md)
 

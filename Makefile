@@ -46,8 +46,19 @@ else
 	npm run-script --browser=webkit test-integration $(script_flags)
 endif
 
+check: check-links check-versions check-documentation check-service-worker
+
 check-links:  # Check that links to external pages are still valid.
 	python3 check.py links
+
+check-versions:  # Check that current version matches service-worker one.
+	python3 check.py versions
+
+check-documentation:  # Check that all markdown files are documented.
+	python3 check.py documentation
+
+check-service-worker:  # Check that all files in use are listed in service-worker.js.
+	python3 check.py service_worker
 
 lint:  ## Run ESLint + check code style.
 	npm run-script lint
@@ -66,12 +77,12 @@ generate:  ## Auto-regenerate the `index.html` file from `template.html` + conte
 dev:  ## Auto-rebuild and serve the static website with Parcel.
 	npm run-script build-dev
 
-pre-commit: pretty lint test-unit build  ## Interesting prior to commit/push.
+pre-commit: pretty lint test-unit build check-versions check-documentation check-service-worker  ## Interesting prior to commit/push.
 
-prod: clean install lint pretty test check-links  ## Make sure everything is clean prior to deploy.
+prod: clean install lint pretty test check  ## Make sure everything is clean prior to deploy.
 	# Note: `test` dependency will actually generate the `build`.
 
-.PHONY: serve serve-ssl install clean test test-unit test-integration check-links build generate dev pre-commit prod help
+.PHONY: serve serve-ssl install clean test test-unit test-integration check-links check-versions check-documentation check-service-worker build generate dev pre-commit prod help
 
 help:  ## Display this help.
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
