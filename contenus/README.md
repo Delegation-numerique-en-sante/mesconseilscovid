@@ -240,6 +240,7 @@ Conseils :
 5. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
 6. [Conseils d’ordre général](#conseils-dordre-général)
 
+Cas particulier : si [Symptôme actuel autre](#symptôme-actuel-autre), aucun de ces conseils n’est affiché.
 
 #### Symptômes passés
 

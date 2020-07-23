@@ -107,7 +107,7 @@ class AlgorithmeOrientation {
 
     conseilsPersonnelsBlockNamesToDisplay() {
         const blockNames = []
-        if (this.profil.symptomes_actuels) {
+        if (this.symptomesActuelsReconnus) {
             blockNames.push('conseils-personnels-symptomes-actuels')
             if (this.antecedents || this.profil.antecedent_chronique_autre) {
                 blockNames.push('reponse-symptomes-actuels-antecedents')
