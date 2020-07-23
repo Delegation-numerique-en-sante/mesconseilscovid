@@ -34,10 +34,10 @@
                 alt="Logo du Ministère des Solidarités et de la Santé"
                 width="100" height="78">
             {{ meta_titre }}
-            <div id="js-profil-full" hidden>
-                <b class="profil" id="nom-profil"></b>
+            <div id="js-profil-full-header" hidden>
+                <b class="profil" id="nom-profil-header"></b>
             </div>
-            <div id="js-profil-empty"></div>
+            <div id="js-profil-empty-header"></div>
         </section>
     </header>
     <main>
@@ -50,7 +50,7 @@
             </div>
         </section>
         <section id="page">
-            <div id="introduction-block" class="block">
+            <div class="block introduction-block">
                 {{ meta_introduction }}
                 <noscript>
                     <h1>Ce site a besoin de JavaScript pour fonctionner.</h1>
@@ -67,27 +67,21 @@
     </main>
 
 <section id="introduction" hidden>
-    <div id="introduction-block" class="block">
+    <div id="introduction-block" class="block introduction-block">
         {{ meta_introduction }}
-        <ul id="profils-cards" class="cards">
-            <div class="card">
-                <div class="form-controls">
-                    <a class="button button-full-width" data-set-profil="mes_infos" href="#residence">Démarrer</a>
-                </div>
-            </div>
-        </ul>
+        <ul id="profils-cards" class="cards"></ul>
     </div>
 </section>
 
 <section id="nom" hidden>
-    <form id="nom-form" action="" class="block">
+    <form id="nom-form" class="block">
         <fieldset>
             <legend>{{ question_nom_titre }}</legend>
             <div class="details">{{ question_nom_aide }}</div>
             <ul class="no-list-style">
                 <li class="row">
-                    <label for="nom">{{ question_nom_libellé }}</label>
-                    <input id="nom" type="text" required>
+                    <label for="name">{{ question_nom_libellé }}</label>
+                    <input id="name" type="text" required>
                 </li>
             </ul>
         </fieldset>
@@ -99,14 +93,14 @@
 </section>
 
 <section id="residence" hidden>
-    <form id="residence-form" action="" class="block">
+    <form id="residence-form" class="block">
         <fieldset>
             <legend>1/8 - {{ question_résidence_titre|me_or_them }}</legend>
             <div class="row">
                 <label for="departement">{{ question_résidence_libellé|me_or_them }}</label>
                 <div class="dpt-container">
                     <select id="departement" required>
-                        <option selected disabled>Choisir dans la liste…</option>
+                        <option value="" selected disabled>Choisir dans la liste…</option>
                         <option value="01">01 - Ain</option>
                         <option value="02">02 - Aisne</option>
                         <option value="03">03 - Allier</option>
@@ -207,10 +201,10 @@
                         <option value="972">972 - Martinique</option>
                         <option value="973">973 - Guyane</option>
                         <option value="974">974 - Réunion</option>
-                        <option value="974">975 - Saint-Pierre-et-Miquelon</option>
+                        <option value="975">975 - Saint-Pierre-et-Miquelon</option>
                         <option value="976">976 - Mayotte</option>
-                        <option value="976">977 - Saint-Barthélemy</option>
-                        <option value="976">978 - Saint-Martin</option>
+                        <option value="977">977 - Saint-Barthélemy</option>
+                        <option value="978">978 - Saint-Martin</option>
                     </select>
                     <div>
                         <a href="#" id="geolocalisation" title="Géolocalisation"></a>
@@ -230,7 +224,7 @@
 </section>
 
 <section id="activitepro" hidden>
-    <form id="activite-pro-form" action="" class="block">
+    <form id="activite-pro-form" class="block">
         <fieldset>
             <legend>2/8 - {{ question_activité_pro_titre|me_or_them }}</legend>
             <div>
@@ -261,7 +255,7 @@
 </section>
 
 <section id="foyer" hidden>
-    <form id="foyer-form" action="" class="block">
+    <form id="foyer-form" class="block">
         <fieldset>
             <legend>3/8 - {{ question_foyer_titre|me_or_them }}</legend>
             <div>
@@ -286,7 +280,7 @@
 </section>
 
 <section id="caracteristiques" hidden>
-    <form id="caracteristiques-form" action="" class="block">
+    <form id="caracteristiques-form" class="block">
         <fieldset>
             <legend>4/8 - {{ question_caractéristiques_titre|me_or_them }}</legend>
             <div class="details">{{ question_caractéristiques_aide }}</div>
@@ -319,7 +313,7 @@
 </section>
 
 <section id="antecedents" hidden>
-    <form id="antecedents-form" action="" class="block">
+    <form id="antecedents-form" class="block">
         <fieldset>
             <legend>5/8 - {{ question_antécédents_titre|me_or_them }}</legend>
             <div class="field">
@@ -406,7 +400,7 @@
 </section>
 
 <section id="symptomesactuels" hidden>
-    <form id="symptomes-actuels-form" action="" class="block">
+    <form id="symptomes-actuels-form" class="block">
         <fieldset>
             <legend>6/8 - {{ question_symptômes_actuels_titre|me_or_them }}</legend>
             <div>
@@ -488,7 +482,7 @@
 </section>
 
 <section id="symptomespasses" hidden>
-    <form id="symptomes-passes-form" action="" class="block">
+    <form id="symptomes-passes-form" class="block">
         <fieldset>
             <legend>7/8 - {{ question_symptômes_passés_titre|me_or_them }}</legend>
             <div>
@@ -509,7 +503,7 @@
 </section>
 
 <section id="contactarisque" hidden>
-    <form id="contact-a-risque-form" action="" class="block">
+    <form id="contact-a-risque-form" class="block">
         <fieldset>
             <legend>8/8 - {{ question_symptômes_contact_à_risque_titre|me_or_them }}</legend>
             <div>
@@ -565,9 +559,7 @@
                 </label>
             </div>
             <div class="details">
-                <span>
-                    {{ question_symptômes_contact_à_risque_aide }}
-                </span>
+                {{ question_symptômes_contact_à_risque_aide }}
             </div>
         </fieldset>
         <div class="form-controls">
@@ -652,7 +644,9 @@
                     {{ conseils_symptômes_actuels_gravité4 }}
                 </div>
                 <div class="conseil conseil-autosuivi">
-                    {{ conseils_symptômes_actuels_autosuivi|me_or_them }}
+                    <p>
+                        {{ conseils_symptômes_actuels_autosuivi|me_or_them }}
+                    </p>
                     <div class="form-controls">
                         <div class="button-full-width">
                             <a class="button button-full-width" href="#suiviintroduction">{{ conseils_symptômes_actuels_autosuivi_bouton|me_or_them }}</a>
@@ -841,7 +835,7 @@
             </div>
         </div>
 
-        <div id="conseils-block" class="block">
+        <div class="block">
             <div id="pour-finir" class="conseils">
                 {{ meta_pour_finir }}
                 <div class="form-controls">
@@ -857,16 +851,16 @@
 </section>
 
 <section id="suiviintroduction" hidden>
-    <div id="suivi-introduction-block" class="block">
+    <div id="suivi-introduction-block" class="block introduction-block">
         <h2>Suivi de la maladie</h2>
-        <p id="tagline-suivi">{{ meta_suivi_introduction|me_or_them }}</p>
+        <p class="tagline-suivi">{{ meta_suivi_introduction|me_or_them }}</p>
         <h4>Nous vous conseillons de renseigner le questionnaire 1 à 2 fois par jour.</h4>
-        <div id="profils-cards" class="cards"></div>
+        <ul id="profils-cards-suivi" class="cards"></ul>
     </div>
 </section>
 
 <section id="suividate" hidden>
-    <form id="suivi-date-form" action="" class="block">
+    <form id="suivi-date-form" class="block">
         <fieldset>
             <legend>{{ question_suivi_date_titre|me_or_them }}</legend>
             {{ question_suivi_date_libellé|me_or_them }}
@@ -894,7 +888,7 @@
 </section>
 
 <section id="suivisymptomes" hidden>
-    <form id="suivi-symptomes-form" action="" class="block">
+    <form id="suivi-symptomes-form" class="block">
         <fieldset>
             <legend>{{ question_suivi_symptômes_titre|me_or_them }}</legend>
             <div>

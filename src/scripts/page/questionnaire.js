@@ -8,7 +8,7 @@ function nom(form, app, router) {
     formUtils.toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        const nom = event.target.elements['nom'].value
+        const nom = event.target.elements['name'].value
         app.creerProfil(nom).then(() => {
             router.navigate('residence')
         })

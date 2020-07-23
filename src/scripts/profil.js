@@ -304,10 +304,10 @@ class Profil {
 
     renderCard() {
         return affichage.createElementFromHTML(`
-        <div class="card">
+        <li class="card">
             ${this.renderNom()}
             <div>${this.renderButtons()}</div>
-        </div>
+        </li>
         `)
     }
 
@@ -347,11 +347,11 @@ class Profil {
 
     renderCardSuivi() {
         return affichage.createElementFromHTML(`
-        <div class="card">
+        <li class="card">
             ${this.renderNom()}
             ${this.renderDernierSuivi()}
             <div>${this.renderButtonSuivi()}</div>
-        </div>
+        </li>
         `)
     }
 

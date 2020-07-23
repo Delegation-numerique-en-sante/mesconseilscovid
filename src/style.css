@@ -123,12 +123,10 @@ a .profil {
     max-width: 80ch;
 }
 
-#introduction-block,
-#suivi-introduction-block {
+.introduction-block {
     text-align: center;
 }
-#introduction-block p,
-#suivi-introduction-block p {
+.introduction-block p {
     margin-left: auto;
     margin-right: auto;
     max-width: 60ch;
@@ -142,6 +140,7 @@ a .profil {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    list-style-type: none;
 }
 .block ul.cards {
     padding: 0;
@@ -177,7 +176,7 @@ main footer {
     text-align: center;
 }
 
-#tagline {
+.tagline {
     font-size: x-large;
     padding-bottom: 45%;
     background-position: bottom center;
@@ -185,7 +184,7 @@ main footer {
     background-size: 50%;
 }
 
-#tagline-suivi {
+.tagline-suivi {
     font-size: x-large;
 }
 
@@ -278,7 +277,7 @@ main footer {
 #antecedents-form {
     background-image: url('illustrations/antecedents.svg');
 }
-#tagline,
+.tagline,
 #conseils-generaux h3 {
     background-image: url('illustrations/accueil.svg');
 }

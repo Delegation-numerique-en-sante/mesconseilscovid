@@ -33,12 +33,12 @@ function initRouter(app) {
             }
             var header = document.querySelector('header section')
             if (typeof app.profil.nom === 'undefined') {
-                affichage.showElement(header.querySelector('#js-profil-empty'))
-                affichage.hideElement(header.querySelector('#js-profil-full'))
+                affichage.showElement(header.querySelector('#js-profil-empty-header'))
+                affichage.hideElement(header.querySelector('#js-profil-full-header'))
             } else {
-                affichage.showElement(header.querySelector('#js-profil-full'))
-                affichage.hideElement(header.querySelector('#js-profil-empty'))
-                injection.nomProfil(header.querySelector('#nom-profil'), app)
+                affichage.showElement(header.querySelector('#js-profil-full-header'))
+                affichage.hideElement(header.querySelector('#js-profil-empty-header'))
+                injection.nomProfil(header.querySelector('#nom-profil-header'), app)
             }
             done()
         },

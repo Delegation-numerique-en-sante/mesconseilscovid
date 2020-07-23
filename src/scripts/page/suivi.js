@@ -1,6 +1,5 @@
 function page(element, app) {
-    const container = element.querySelector('#profils-cards')
-    container.innerHTML = '<div class="break"></div>'
+    const container = element.querySelector('#profils-cards-suivi')
     const card = container.insertBefore(
         app.profil.renderCardSuivi(),
         container.firstChild
