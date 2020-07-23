@@ -2,7 +2,7 @@
 
 /* Implementation of the network-or-cache pattern:
 https://serviceworke.rs/strategy-network-or-cache.html */
-const CACHE_NAME = 'network-or-cache-2020-07-21'
+const CACHE_NAME = 'network-or-cache-2020-07-23'
 const CACHE_FILES = [
     '/',
     'style.css',
@@ -37,6 +37,11 @@ const CACHE_FILES = [
     'illustrations/residence.svg',
     'illustrations/symptomesactuels.svg',
     'illustrations/symptomespasses.svg',
+    'suivi_gravite.svg',
+    'suivi_gravite_superieure.svg',
+    'suivi_ok.svg',
+    'suivi_stable.svg',
+    'suivi_interrogation.svg',
 ]
 const TIMEOUT = 500 // ms.
 
