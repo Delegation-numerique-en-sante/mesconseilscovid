@@ -8,6 +8,8 @@ from http import HTTPStatus
 import httpx
 from minicli import cli, run, wrap
 
+from build import each_folder_from, each_markdown_from
+
 HERE = Path(__file__).parent
 
 
@@ -48,6 +50,17 @@ def versions():
         raise Exception(
             f"Version mismatch between version.json ({version}) and service-worker.js"
         )
+
+
+@cli
+def documentation():
+    readme = open(HERE / "contenus" / "README.md").read()
+    for folder in each_folder_from(HERE / "contenus"):
+        for file_path, filename in each_markdown_from(folder):
+            if filename == "README.md" or filename.startswith("meta_"):
+                continue
+            if filename not in readme:
+                raise Exception(f"Documentation missing for {filename}")
 
 
 @wrap
