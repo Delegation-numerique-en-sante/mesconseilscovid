@@ -77,32 +77,16 @@ describe('Auto-suivi', function () {
 
         // La page du suivi des symptômes
         {
-            // Je n’arrive pas à cocher la case directement, alors je clique sur le label
-            let label
-            label = await page.waitForSelector(
-                '#page label[for="suivi_symptomes_essoufflement_mieux"]'
-            )
-            await label.click()
-            label = await page.waitForSelector(
-                '#page label[for="suivi_symptomes_etat_general_mieux"]'
-            )
-            await label.click()
-            label = await page.waitForSelector(
-                '#page label[for="suivi_symptomes_alimentation_hydratation_non"]'
-            )
-            await label.click()
-            label = await page.waitForSelector(
-                '#page label[for="suivi_symptomes_etat_psychologique_mieux"]'
-            )
-            await label.click()
-            label = await page.waitForSelector(
-                '#page label[for="suivi_symptomes_fievre_non"]'
-            )
-            await label.click()
-            label = await page.waitForSelector(
-                '#page label[for="suivi_symptomes_diarrhee_vomissements_non"]'
-            )
-            await label.click()
+            await helpers.remplirSuivi(page, {
+                essoufflement: 'mieux',
+                etat_general: 'mieux',
+                alimentation_hydratation: 'non',
+                etat_psychologique: 'mieux',
+                fievre: 'non',
+                diarrhee_vomissements: 'non',
+                toux: 'non',
+            })
+
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
@@ -255,36 +239,16 @@ describe('Auto-suivi', function () {
 
         // La page du suivi des symptômes
         {
-            // Je n’arrive pas à cocher la case directement, alors je clique sur le label
-            let label
-            label = await page.waitForSelector(
-                '#page label[for="suivi_symptomes_essoufflement_mieux"]'
-            )
-            await label.click()
-            label = await page.waitForSelector(
-                '#page label[for="suivi_symptomes_etat_general_mieux"]'
-            )
-            await label.click()
-            label = await page.waitForSelector(
-                '#page label[for="suivi_symptomes_confusion_non"]'
-            )
-            await label.click()
-            label = await page.waitForSelector(
-                '#page label[for="suivi_symptomes_alimentation_hydratation_non"]'
-            )
-            await label.click()
-            label = await page.waitForSelector(
-                '#page label[for="suivi_symptomes_etat_psychologique_mieux"]'
-            )
-            await label.click()
-            label = await page.waitForSelector(
-                '#page label[for="suivi_symptomes_fievre_non"]'
-            )
-            await label.click()
-            label = await page.waitForSelector(
-                '#page label[for="suivi_symptomes_diarrhee_vomissements_non"]'
-            )
-            await label.click()
+            await helpers.remplirSuivi(page, {
+                essoufflement: 'mieux',
+                etat_general: 'mieux',
+                alimentation_hydratation: 'non',
+                etat_psychologique: 'mieux',
+                fievre: 'non',
+                diarrhee_vomissements: 'non',
+                confusion: 'non',
+            })
+
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),

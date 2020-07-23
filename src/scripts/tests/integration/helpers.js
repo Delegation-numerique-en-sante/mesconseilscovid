@@ -142,6 +142,58 @@ async function remplirContactsARisque(page) {
     await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#conseils' })])
 }
 
+async function remplirSuivi(page, symptomes) {
+    // Obligatoires
+    let label
+    label = await page.waitForSelector(
+        `#page label[for="suivi_symptomes_essoufflement_${symptomes.essoufflement}"]`
+    )
+    await label.click()
+    label = await page.waitForSelector(
+        `#page label[for="suivi_symptomes_etat_general_${symptomes.etat_general}"]`
+    )
+    await label.click()
+    label = await page.waitForSelector(
+        `#page label[for="suivi_symptomes_alimentation_hydratation_${symptomes.alimentation_hydratation}"]`
+    )
+    await label.click()
+    label = await page.waitForSelector(
+        `#page label[for="suivi_symptomes_etat_psychologique_${symptomes.etat_psychologique}"]`
+    )
+    await label.click()
+    label = await page.waitForSelector(
+        `#page label[for="suivi_symptomes_fievre_${symptomes.fievre}"]`
+    )
+    await label.click()
+    label = await page.waitForSelector(
+        `#page label[for="suivi_symptomes_diarrhee_vomissements_${symptomes.diarrhee_vomissements}"]`
+    )
+    await label.click()
+
+    // Seulement pour les proches
+    if (symptomes.confusion) {
+        label = await page.waitForSelector(
+            `#page label[for="suivi_symptomes_confusion_${symptomes.confusion}"]`
+        )
+        await label.click()
+    }
+
+    // Optionnels
+    if (symptomes.maux_de_tete) {
+        label = await page.waitForSelector(
+            `#page label[for="suivi_symptomes_maux_de_tete_${symptomes.maux_de_tete}"]`
+        )
+        await label.click()
+    }
+    if (symptomes.toux) {
+        label = await page.waitForSelector(
+            `#page label[for="suivi_symptomes_toux_${symptomes.toux}"]`
+        )
+        await label.click()
+    }
+}
+
 module.exports = {
     remplirQuestionnaire,
+    remplirSuivi,
 }
