@@ -94,14 +94,21 @@ describe('Auto-suivi', function () {
             ])
         }
 
-        // La page de Conseils doit contenir la phrase de gravité 0
+        // La page de Conseils doit contenir :
         {
+            // la phrase de gravité 0
             let gravite = await page.waitForSelector('#page #suivi-gravite-0')
             assert.equal(
                 (await gravite.innerText()).trim(),
                 'Poursuivez votre auto-suivi à la maison comme entendu avec votre médecin.'
             )
+            // un bouton vers l’historique du suivi
             let bouton = await page.waitForSelector(
+                '#page >> text="l’historique de vos symptômes"'
+            )
+            assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
+            // un bouton pour refaire le questionnaire
+            bouton = await page.waitForSelector(
                 '#page >> text="Refaire le questionnaire"'
             )
             await Promise.all([
@@ -256,14 +263,21 @@ describe('Auto-suivi', function () {
             ])
         }
 
-        // La page de Conseils doit contenir la phrase de gravité 0
+        // La page de Conseils doit contenir :
         {
+            // la phrase de gravité 0
             let gravite = await page.waitForSelector('#page #suivi-gravite-0')
             assert.equal(
                 (await gravite.innerText()).trim(),
                 'Poursuivez votre auto-suivi à la maison comme entendu avec votre médecin.'
             )
+            // un bouton vers l’historique du suivi
             let bouton = await page.waitForSelector(
+                '#page >> text="l’historique des symptômes"'
+            )
+            assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
+            // un bouton pour refaire le questionnaire
+            bouton = await page.waitForSelector(
                 '#page >> text="Refaire le questionnaire"'
             )
             await Promise.all([
