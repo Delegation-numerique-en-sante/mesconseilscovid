@@ -28,7 +28,7 @@ describe('Profils', function () {
 
         // Saisie nom
         {
-            await page.fill('#page #nom', 'Mamie')
+            await page.fill('#page #name', 'Mamie')
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
