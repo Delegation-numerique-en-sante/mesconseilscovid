@@ -1,3 +1,5 @@
+var utils = require('../utils.js')
+
 class AlgorithmeDeconfinement {
     constructor(profil, algoOrientation) {
         this.profil = profil
@@ -9,11 +11,7 @@ class AlgorithmeDeconfinement {
         if (this.algoOrientation.facteursDeGraviteMajeurs) {
             delta = 10
         }
-        const today = new Date()
-        const target = new Date(
-            today.setDate(this.profil.symptomes_start_date.getDate() + delta)
-        )
-        return new Date() > target
+        return utils.joursAvant(delta) > this.profil.symptomes_start_date
     }
 
     isFievreDone() {

@@ -1,5 +1,6 @@
 var format = require('timeago.js').format
 
+var utils = require('./utils.js')
 var affichage = require('./affichage.js')
 var AlgorithmeSuivi = require('./algorithme/suivi.js').AlgorithmeSuivi
 
@@ -255,10 +256,7 @@ class Profil {
     }
 
     suiviDernieres48h() {
-        return this.suivi.filter((etat) => {
-            const today = new Date()
-            return etat.date > new Date(today.setDate(today.getDate() - 2))
-        })
+        return this.suivi.filter((etat) => etat.date > utils.joursAvant(2))
     }
 
     estMonProfil() {

@@ -1,5 +1,6 @@
 var assert = require('chai').assert
 
+var utils = require('../utils.js')
 var AlgorithmeOrientation = require('../algorithme/orientation.js')
     .AlgorithmeOrientation
 var AlgorithmeDeconfinement = require('../algorithme/deconfinement.js')
@@ -30,8 +31,7 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Faux s’il y a 8 jours', function () {
-            const today = new Date()
-            profil.symptomes_start_date = new Date(today.setDate(today.getDate() - 8))
+            profil.symptomes_start_date = utils.joursAvant(8)
             const algoOrientation = new AlgorithmeOrientation(profil)
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
@@ -41,8 +41,7 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Vrai s’il y a 9 jours', function () {
-            const today = new Date()
-            profil.symptomes_start_date = new Date(today.setDate(today.getDate() - 9))
+            profil.symptomes_start_date = utils.joursAvant(9)
             const algoOrientation = new AlgorithmeOrientation(profil)
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
@@ -75,8 +74,7 @@ describe('Algorithme déconfinement', function () {
                 symptomes_actuels_souffle: true,
             }
             profil.fillData(data)
-            const today = new Date()
-            profil.symptomes_start_date = new Date(today.setDate(today.getDate() - 10))
+            profil.symptomes_start_date = utils.joursAvant(10)
             const algoOrientation = new AlgorithmeOrientation(profil)
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
@@ -91,8 +89,7 @@ describe('Algorithme déconfinement', function () {
                 symptomes_actuels_souffle: true,
             }
             profil.fillData(data)
-            const today = new Date()
-            profil.symptomes_start_date = new Date(today.setDate(today.getDate() - 11))
+            profil.symptomes_start_date = utils.joursAvant(11)
             const algoOrientation = new AlgorithmeOrientation(profil)
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
@@ -104,11 +101,10 @@ describe('Algorithme déconfinement', function () {
 
     describe('Fièvre', function () {
         it('Vrai si suivi récent sans fièvre', function () {
-            const today = new Date()
             const data = {
                 suivi: [
                     {
-                        date: today,
+                        date: new Date(),
                         fievre: 'non',
                     },
                 ],
@@ -123,11 +119,10 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Faux si suivi récent avec fièvre', function () {
-            const today = new Date()
             const data = {
                 suivi: [
                     {
-                        date: today,
+                        date: new Date(),
                         fievre: 'oui',
                     },
                 ],
@@ -142,12 +137,10 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Vrai si suivi > 48h sans fièvre', function () {
-            const today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 suivi: [
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         fievre: 'non',
                     },
                 ],
@@ -162,12 +155,10 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Vrai si suivi > 48h avec fièvre', function () {
-            const today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 suivi: [
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         fievre: 'oui',
                     },
                 ],
@@ -182,8 +173,6 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Faux si suivi récent avec fièvre + > 48h avec fièvre', function () {
-            const today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 suivi: [
                     {
@@ -191,7 +180,7 @@ describe('Algorithme déconfinement', function () {
                         fievre: 'oui',
                     },
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         fievre: 'oui',
                     },
                 ],
@@ -206,8 +195,6 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Vrai si suivi récent sans fièvre + > 48h avec fièvre', function () {
-            const today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 suivi: [
                     {
@@ -215,7 +202,7 @@ describe('Algorithme déconfinement', function () {
                         fievre: 'non',
                     },
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         fievre: 'oui',
                     },
                 ],
@@ -232,11 +219,10 @@ describe('Algorithme déconfinement', function () {
 
     describe('Essoufflement', function () {
         it('Vrai si suivi récent sans essoufflement', function () {
-            const today = new Date()
             const data = {
                 suivi: [
                     {
-                        date: today,
+                        date: new Date(),
                         essoufflement: 'non',
                     },
                 ],
@@ -251,11 +237,10 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Faux si suivi récent avec essoufflement', function () {
-            const today = new Date()
             const data = {
                 suivi: [
                     {
-                        date: today,
+                        date: new Date(),
                         essoufflement: 'oui',
                     },
                 ],
@@ -270,12 +255,10 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Vrai si suivi > 48h sans essoufflement', function () {
-            const today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 suivi: [
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         essoufflement: 'non',
                     },
                 ],
@@ -290,12 +273,10 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Vrai si suivi > 48h avec essoufflement', function () {
-            const today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 suivi: [
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         essoufflement: 'oui',
                     },
                 ],
@@ -310,8 +291,6 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Faux si suivi récent avec essoufflement + > 48h avec essoufflement', function () {
-            const today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 suivi: [
                     {
@@ -319,7 +298,7 @@ describe('Algorithme déconfinement', function () {
                         essoufflement: 'oui',
                     },
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         essoufflement: 'oui',
                     },
                 ],
@@ -334,8 +313,6 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Vrai si suivi récent sans essoufflement + > 48h avec essoufflement', function () {
-            const today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 suivi: [
                     {
@@ -343,7 +320,7 @@ describe('Algorithme déconfinement', function () {
                         essoufflement: 'non',
                     },
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         essoufflement: 'oui',
                     },
                 ],
@@ -360,8 +337,6 @@ describe('Algorithme déconfinement', function () {
 
     describe('Déconfinable sans gravité', function () {
         it('Vrai s’il y a 9 jours et plus de fièvre ni essoufflement', function () {
-            let today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 suivi: [
                     {
@@ -370,15 +345,14 @@ describe('Algorithme déconfinement', function () {
                         essoufflement: 'non',
                     },
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         fievre: 'oui',
                         essoufflement: 'oui',
                     },
                 ],
             }
             profil.fillData(data)
-            today = new Date()
-            profil.symptomes_start_date = new Date(today.setDate(today.getDate() - 9))
+            profil.symptomes_start_date = utils.joursAvant(9)
             const algoOrientation = new AlgorithmeOrientation(profil)
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
@@ -388,8 +362,6 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Faux s’il y a 8 jours et plus de fièvre ni essoufflement', function () {
-            let today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 suivi: [
                     {
@@ -398,15 +370,14 @@ describe('Algorithme déconfinement', function () {
                         essoufflement: 'non',
                     },
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         fievre: 'oui',
                         essoufflement: 'oui',
                     },
                 ],
             }
             profil.fillData(data)
-            today = new Date()
-            profil.symptomes_start_date = new Date(today.setDate(today.getDate() - 8))
+            profil.symptomes_start_date = utils.joursAvant(8)
             const algoOrientation = new AlgorithmeOrientation(profil)
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
@@ -416,8 +387,6 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Faux s’il y a 9 jours et fièvre récente mais pas essoufflement', function () {
-            let today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 suivi: [
                     {
@@ -426,15 +395,14 @@ describe('Algorithme déconfinement', function () {
                         essoufflement: 'non',
                     },
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         fievre: 'oui',
                         essoufflement: 'oui',
                     },
                 ],
             }
             profil.fillData(data)
-            today = new Date()
-            profil.symptomes_start_date = new Date(today.setDate(today.getDate() - 9))
+            profil.symptomes_start_date = utils.joursAvant(9)
             const algoOrientation = new AlgorithmeOrientation(profil)
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
@@ -444,8 +412,6 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Faux s’il y a 9 jours et plus de fièvre mais essoufflement', function () {
-            let today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 suivi: [
                     {
@@ -454,15 +420,14 @@ describe('Algorithme déconfinement', function () {
                         essoufflement: 'oui',
                     },
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         fievre: 'oui',
                         essoufflement: 'oui',
                     },
                 ],
             }
             profil.fillData(data)
-            today = new Date()
-            profil.symptomes_start_date = new Date(today.setDate(today.getDate() - 9))
+            profil.symptomes_start_date = utils.joursAvant(9)
             const algoOrientation = new AlgorithmeOrientation(profil)
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
@@ -474,8 +439,6 @@ describe('Algorithme déconfinement', function () {
 
     describe('Déconfinable avec gravité', function () {
         it('Vrai s’il y a 11 jours et plus de fièvre ni essoufflement', function () {
-            let today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 symptomes_actuels: true,
                 symptomes_actuels_souffle: true,
@@ -486,15 +449,14 @@ describe('Algorithme déconfinement', function () {
                         essoufflement: 'non',
                     },
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         fievre: 'oui',
                         essoufflement: 'oui',
                     },
                 ],
             }
             profil.fillData(data)
-            today = new Date()
-            profil.symptomes_start_date = new Date(today.setDate(today.getDate() - 11))
+            profil.symptomes_start_date = utils.joursAvant(11)
             const algoOrientation = new AlgorithmeOrientation(profil)
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
@@ -504,8 +466,6 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Faux s’il y a 10 jours et plus de fièvre ni essoufflement', function () {
-            let today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 symptomes_actuels: true,
                 symptomes_actuels_souffle: true,
@@ -516,15 +476,14 @@ describe('Algorithme déconfinement', function () {
                         essoufflement: 'non',
                     },
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         fievre: 'oui',
                         essoufflement: 'oui',
                     },
                 ],
             }
             profil.fillData(data)
-            today = new Date()
-            profil.symptomes_start_date = new Date(today.setDate(today.getDate() - 10))
+            profil.symptomes_start_date = utils.joursAvant(10)
             const algoOrientation = new AlgorithmeOrientation(profil)
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
@@ -534,8 +493,6 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Faux s’il y a 11 jours et fièvre récente mais pas essoufflement', function () {
-            let today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 symptomes_actuels: true,
                 symptomes_actuels_souffle: true,
@@ -546,15 +503,14 @@ describe('Algorithme déconfinement', function () {
                         essoufflement: 'non',
                     },
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         fievre: 'oui',
                         essoufflement: 'oui',
                     },
                 ],
             }
             profil.fillData(data)
-            today = new Date()
-            profil.symptomes_start_date = new Date(today.setDate(today.getDate() - 11))
+            profil.symptomes_start_date = utils.joursAvant(11)
             const algoOrientation = new AlgorithmeOrientation(profil)
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
@@ -564,8 +520,6 @@ describe('Algorithme déconfinement', function () {
         })
 
         it('Faux s’il y a 11 jours et plus de fièvre mais essoufflement', function () {
-            let today = new Date()
-            const target = new Date(today.setDate(today.getDate() - 3))
             const data = {
                 symptomes_actuels: true,
                 symptomes_actuels_souffle: true,
@@ -576,15 +530,14 @@ describe('Algorithme déconfinement', function () {
                         essoufflement: 'oui',
                     },
                     {
-                        date: target,
+                        date: utils.joursAvant(3),
                         fievre: 'oui',
                         essoufflement: 'oui',
                     },
                 ],
             }
             profil.fillData(data)
-            today = new Date()
-            profil.symptomes_start_date = new Date(today.setDate(today.getDate() - 11))
+            profil.symptomes_start_date = utils.joursAvant(11)
             const algoOrientation = new AlgorithmeOrientation(profil)
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
