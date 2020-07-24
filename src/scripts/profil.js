@@ -75,9 +75,7 @@ class Profil {
         this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_autre = undefined
         this.suivi_active = undefined
-        this._suivi_start_date = undefined
-        this._symptomes_start_date = undefined
-        this.suivi = []
+        this.resetSuivi()
     }
 
     fillData(data) {
@@ -254,6 +252,13 @@ class Profil {
 
     dernierEtat() {
         return this.suivi.slice(-1)[0]
+    }
+
+    suiviDernieres48h() {
+        return this.suivi.filter((etat) => {
+            const today = new Date()
+            return etat.date > new Date(today.setDate(today.getDate() - 2))
+        })
     }
 
     estMonProfil() {
