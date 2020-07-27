@@ -10,24 +10,6 @@ Vous exercez une activité professionnelle et/ou bénévole (<a href="#activitep
 
 
 
-## [réponse_activité_pro_public.md](réponse_activité_pro_public.md)
-
-Vous exercez une activité professionnelle et/ou bénévole en contact direct avec du public (<a href="#activitepro">modifier</a>)
-
-
-
-## [réponse_activité_pro_public_santé.md](réponse_activité_pro_public_santé.md)
-
-Vous exercez une activité professionnelle et/ou bénévole en contact direct avec du public dans le domaine de la santé ou du médico-social (<a href="#activitepro">modifier</a>)
-
-
-
-## [réponse_activité_pro_santé.md](réponse_activité_pro_santé.md)
-
-Vous exercez une activité professionnelle et/ou bénévole dans le domaine de la santé ou du médico-social (<a href="#activitepro">modifier</a>)
-
-
-
 ## [réponse_antécédents.md](réponse_antécédents.md)
 
 <b id="nom-antecedents"></b> (<a href="#antecedents">modifier</a>)

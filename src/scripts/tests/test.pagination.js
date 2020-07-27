@@ -69,11 +69,29 @@ describe('Pagination', function () {
                 'activitepro'
             )
         })
+        it('redirige vers question 2 si activité pro mais pas profession libérale', function () {
+            assert.strictEqual(
+                redirectToUnansweredQuestions('foyer', {
+                    departement: '80',
+                    activite_pro: true,
+                }),
+                'activitepro'
+            )
+        })
         it('ok d’aller à la question 3 si réponse à la 2', function () {
             assert.isUndefined(
                 redirectToUnansweredQuestions('foyer', {
                     departement: '80',
                     activite_pro: false,
+                })
+            )
+        })
+        it('ok d’aller à la question 3 si réponse vraie à la 2 + profession libérale', function () {
+            assert.isUndefined(
+                redirectToUnansweredQuestions('foyer', {
+                    departement: '80',
+                    activite_pro: true,
+                    activite_pro_liberal: false,
                 })
             )
         })
@@ -667,6 +685,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 activite_pro_public: false,
                 activite_pro_sante: false,
+                activite_pro_liberal: false,
                 foyer_enfants: true,
                 foyer_fragile: false,
                 age: '42',
@@ -714,6 +733,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 activite_pro_public: false,
                 activite_pro_sante: false,
+                activite_pro_liberal: false,
                 foyer_enfants: true,
                 foyer_fragile: false,
                 age: '42',
@@ -759,6 +779,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 activite_pro_public: false,
                 activite_pro_sante: false,
+                activite_pro_liberal: false,
                 foyer_enfants: true,
                 foyer_fragile: false,
                 age: '42',
@@ -805,6 +826,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 activite_pro_public: false,
                 activite_pro_sante: false,
+                activite_pro_liberal: false,
                 foyer_enfants: true,
                 foyer_fragile: false,
                 age: '42',
@@ -852,6 +874,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 activite_pro_public: false,
                 activite_pro_sante: false,
+                activite_pro_liberal: false,
                 foyer_enfants: true,
                 foyer_fragile: false,
                 age: '42',
@@ -900,6 +923,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 activite_pro_public: false,
                 activite_pro_sante: false,
+                activite_pro_liberal: false,
                 foyer_enfants: true,
                 foyer_fragile: false,
                 age: '42',
@@ -928,6 +952,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 activite_pro_public: false,
                 activite_pro_sante: false,
+                activite_pro_liberal: false,
                 foyer_enfants: true,
                 foyer_fragile: false,
                 age: '42',
@@ -956,6 +981,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 activite_pro_public: false,
                 activite_pro_sante: false,
+                activite_pro_liberal: false,
                 foyer_enfants: true,
                 foyer_fragile: false,
                 age: '42',
@@ -984,6 +1010,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 activite_pro_public: false,
                 activite_pro_sante: false,
+                activite_pro_liberal: false,
                 foyer_enfants: true,
                 foyer_fragile: false,
                 age: '42',

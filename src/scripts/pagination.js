@@ -38,6 +38,15 @@ var redirectToUnansweredQuestions = function (page, profil) {
     if (typeof profil.activite_pro === 'undefined' && page !== 'activitepro')
         return 'activitepro'
 
+    // Si la personne a coché une activité pro, on propose à nouveau cet écran
+    // pour prendre en compte la nouvelle case : profession libérale.
+    if (
+        profil.activite_pro &&
+        typeof profil.activite_pro_liberal === 'undefined' &&
+        page !== 'activitepro'
+    )
+        return 'activitepro'
+
     if (page === 'activitepro') return
 
     if (typeof profil.foyer_enfants === 'undefined' && page !== 'foyer') return 'foyer'

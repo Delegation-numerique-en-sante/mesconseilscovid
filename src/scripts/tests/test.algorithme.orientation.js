@@ -481,7 +481,7 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
-                'reponse-activite-pro-public',
+                'reponse-activite-pro',
                 'conseils-activite-pro-public',
                 'conseils-activite-pro-infos',
             ])
@@ -496,8 +496,24 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
-                'reponse-activite-pro-sante',
+                'reponse-activite-pro',
                 'conseils-activite-pro-sante',
+            ])
+        })
+
+        it('Une activité pro avec libéral affiche des conseils + liberal', function () {
+            var data = {
+                activite_pro: true,
+                activite_pro_liberal: true,
+            }
+            profil.fillData(data)
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
+                'conseils-activite',
+                'reponse-activite-pro',
+                'conseils-activite-pro-liberal',
+                'conseils-activite-pro',
+                'conseils-activite-pro-infos',
             ])
         })
 
@@ -511,7 +527,25 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
-                'reponse-activite-pro-public-sante',
+                'reponse-activite-pro',
+                'conseils-activite-pro-public',
+                'conseils-activite-pro-sante',
+            ])
+        })
+
+        it('Une activité pro avec public et sante et libéral affiche des conseils + public + sante + liberal', function () {
+            var data = {
+                activite_pro: true,
+                activite_pro_public: true,
+                activite_pro_sante: true,
+                activite_pro_liberal: true,
+            }
+            profil.fillData(data)
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
+                'conseils-activite',
+                'reponse-activite-pro',
+                'conseils-activite-pro-liberal',
                 'conseils-activite-pro-public',
                 'conseils-activite-pro-sante',
             ])
