@@ -32,6 +32,21 @@ describe('Auto-suivi', function () {
             symptomesActuels: ['temperature'],
         })
 
+        // Avec des symptômes actuels on est automatiquement redirigé vers le suivi
+        {
+            let bouton = await page.waitForSelector('text="Voir mes conseils"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Moi'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#conseils' }),
+            ])
+        }
+
         // La page de Conseils doit contenir le bouton pour effectuer son suivi
         {
             let bouton = await page.waitForSelector(
@@ -200,6 +215,21 @@ describe('Auto-suivi', function () {
             grossesse: false,
             symptomesActuels: ['temperature'],
         })
+
+        // Avec des symptômes actuels on est automatiquement redirigé vers le suivi
+        {
+            let bouton = await page.waitForSelector('text="Voir ses conseils"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Mamie'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#conseils' }),
+            ])
+        }
 
         // La page de Conseils doit contenir le bouton pour effectuer son suivi
         {

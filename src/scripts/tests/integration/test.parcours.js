@@ -119,6 +119,21 @@ describe('Parcours', function () {
             symptomesActuels: ['temperature'],
         })
 
+        // Page de suivi
+        {
+            let bouton = await page.waitForSelector('text="Voir mes conseils"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Moi'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#conseils' }),
+            ])
+        }
+
         // Conseils
         {
             // On retrouve le message de porteur éventuel
@@ -165,6 +180,21 @@ describe('Parcours', function () {
             grossesse: false,
             symptomesActuels: ['souffle'],
         })
+
+        // Page de suivi
+        {
+            let bouton = await page.waitForSelector('text="Voir mes conseils"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Moi'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#conseils' }),
+            ])
+        }
 
         // Conseils
         {

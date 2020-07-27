@@ -11,7 +11,7 @@ Il est recommandé de **télétravailler** si cela vous est possible. Si vous de
 <span class="nouveau">nouveau</span> Plus d’informations du ministère du travail sur :
 * les [gestes barrières au travail](https://travail-emploi.gouv.fr/actualites/l-actualite-du-ministere/article/covid-19-comment-assurer-ma-sante-et-ma-securite-au-travail) en vidéo
 * les [conditions de reprise et relance de l’activité](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/conditions-de-reprise-et-relance-de-l-activite/)
-* les [autres questions](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/) que se posent les employeurs, les particuliers et les professionnels des secteurs du travail, de l’emploi, de la formation professionnelle
+* les autres questions que se posent les employeurs, les particuliers et les professionnels des secteurs du travail, de l’emploi, de la formation professionnelle sur une [page dédiée](#medecinedutravail) et sur le site du [ministère du travail](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/).
 
 
 
@@ -65,6 +65,16 @@ Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habi
 ---
 
 <!---->À tout moment, vous pouvez consulter <a href="#suivihistorique">l’historique des symptômes</a> de votre proche, par exemple pour <b>communiquer avec son médecin</b> de manière plus efficace.
+
+
+
+## [conseils_autosuivi_régularité.md](conseils_autosuivi_régularité.md)
+
+<!---->Nous vous conseillons de <a href="#suiviintroduction">renseigner le questionnaire</a> <b>1 à 2 fois par jour</b>.
+
+---
+
+<!---->Nous vous conseillons de <a href="#suiviintroduction">renseigner son questionnaire</a> <b>1 à 2 fois par jour</b>.
 
 
 
