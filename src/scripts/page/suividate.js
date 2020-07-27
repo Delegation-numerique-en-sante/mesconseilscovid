@@ -25,7 +25,6 @@ function page(form, app, router) {
         app.profil.symptomes_start_date =
             dateFromPicker(event.target.elements['suivi_symptomes_date_exacte']) ||
             dateFromRadioButton(event.target.elements['suivi_symptomes_date'])
-        console.log(app.profil.symptomes_start_date)
         app.enregistrerProfilActuel()
         router.navigate('suivisymptomes')
     })

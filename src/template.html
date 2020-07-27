@@ -863,6 +863,28 @@
     </div>
 </section>
 
+<section id="suivimedecin" hidden>
+    <form id="suivi-medecin-form" class="block">
+        <fieldset>
+            <legend>{{ question_suivi_médecin_titre|me_or_them }}</legend>
+            <div>
+                <p>
+                    {{ question_suivi_médecin_libellé|me_or_them }}
+                </p>
+                <input id="suivi_medecin_oui" type="radio" required name="suivi_medecin" value="oui">
+                <label for="suivi_medecin_oui">Oui</label>
+                <input id="suivi_medecin_non" type="radio" name="suivi_medecin" value="non">
+                <label for="suivi_medecin_non">Non</label>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <a href="#symptomesactuels" class="back-button button-outline">Retour</a>
+            <input type="submit" class="button" value="Continuer">
+        </div>
+    </form>
+</section>
+
+
 <section id="suividate" hidden>
     <form id="suivi-date-form" class="block">
         <fieldset>
