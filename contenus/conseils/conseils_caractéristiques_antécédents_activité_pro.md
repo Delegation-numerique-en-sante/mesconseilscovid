@@ -5,7 +5,7 @@ d’appliquer les mesures de **distanciation physique renforcée :**
 * Rentrez en contact avec votre employeur pour envisager des solutions individuelles (éventuellement via la Médecine du Travail de l’entreprise). En appliquant les gestes barrières, le risque de contamination — notamment sur le lieu de travail — n’est pas plus important qu’en allant faire ses courses.
 * Application stricte des gestes barrières
 * Masque en permanence à l’extérieur de mon foyer et à l’intérieur si je reçois des personnes étrangères à mon domicile
-* Distance de sécurité de 1m autour de soi, soit 4m<sup>2</sup>
+* Distance de sécurité de plus d’1 mètre avec chaque personne
 * Réduire les sorties au strict minimum
 * Contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une prescription de masques chirurgicaux.
 
