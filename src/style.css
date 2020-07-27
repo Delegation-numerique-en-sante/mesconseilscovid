@@ -195,6 +195,7 @@ main footer {
 #caracteristiques-form,
 #antecedents-form,
 #symptomes-actuels-form,
+#suivi-date-form,
 #symptomes-passes-form,
 #contact-a-risque-form {
     padding-top: 40%;
@@ -230,6 +231,7 @@ main footer {
     #caracteristiques-form,
     #antecedents-form,
     #symptomes-actuels-form,
+    #suivi-date-form,
     #symptomes-passes-form,
     #contact-a-risque-form {
         padding-top: 25%;
@@ -295,6 +297,7 @@ main footer {
     background-image: url('illustrations/symptomesactuels.svg');
 }
 #conseils-block.symptomes-passes h2.with-illustration,
+#suivi-date-form,
 #symptomes-passes-form {
     background-image: url('illustrations/symptomespasses.svg');
 }
