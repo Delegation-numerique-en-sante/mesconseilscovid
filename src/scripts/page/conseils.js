@@ -28,20 +28,21 @@ function page(element, app) {
         app.enregistrerProfilActuel()
     }
 
-    // Afficher le bloc de résultats de l’auto-suivi ou le statut ?
-    if (app.profil.hasSuiviStartDate() && app.profil.suivi.length) {
+    // Display appropriate conseils.
+    showRelevantBlocks(element, app.profil, algoOrientation)
+
+    if (app.profil.hasSuiviStartDate() && app.profil.hasHistorique()) {
+        // Afficher le bloc de résultats de l’auto-suivi
         var algoSuivi = new AlgorithmeSuivi(app.profil)
         affichage.displayElementById(element, 'suivi')
         showRelevantSuiviBlocks(element, algoSuivi)
         showRelevantEvolutionsRecap(element, algoSuivi)
+
+        // Cacher le bloc de statut si on est en auto-suivi.
         affichage.hideSelector(element, '#conseils-statut')
-    }
 
-    // Display appropriate conseils.
-    showRelevantBlocks(element, app.profil, algoOrientation)
-
-    // Cacher le bloc de recommandation de l’auto-suivi si on l’a déjà démarré.
-    if (app.profil.suivi.length) {
+        // Cacher le bloc de recommandation de l’auto-suivi
+        // si on l’a déjà démarré.
         affichage.hideSelector(element, '.conseil-autosuivi')
     }
 

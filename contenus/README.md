@@ -339,7 +339,8 @@ Sous-question (maux de tête) [optionnelle] : [libellé](questions/question_suiv
 #### Suivi plus d’infos
 
 * Si réponse « Oui » à `état psychologique` on affiche en plus [suivi_psy_2.md](suivi/suivi_psy_2.md) si gravité > 0 OU [suivi_psy_1.md](suivi/suivi_psy_1.md) si gravité = 0.
-* [conseils_autosuivi_historique.md](conseils/conseils_autosuivi_historique.md) s’affiche lorsque plus d’une entrée est présente dans le suivi.
+* [conseils_autosuivi_régularité.md](conseils/conseils_autosuivi_régularité.md) s’affiche lorsque le suivi est activé (date de début + une entrée saisie).
+* [conseils_autosuivi_historique.md](conseils/conseils_autosuivi_historique.md) s’affiche lorsque le suivi est activé (date de début + une entrée saisie).
 
 
 ### Critères

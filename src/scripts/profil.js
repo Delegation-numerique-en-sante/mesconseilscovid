@@ -274,7 +274,10 @@ class Profil {
         var mainButton = ''
         if (this.isComplete()) {
             if (this.suivi_active) {
-                const verbe = this.hasSuiviStartDate() ? 'Continuer' : 'Démarrer'
+                const verbe =
+                    this.hasSuiviStartDate() && this.hasHistorique()
+                        ? 'Continuer'
+                        : 'Démarrer'
                 mainButton += affichage.safeHtml`
                     <a class="button suivi-link"
                         data-set-profil="${this.nom}" href="#suiviintroduction"
@@ -319,7 +322,8 @@ class Profil {
     renderButtonSuivi() {
         const possessifMasculinSingulier = this.estMonProfil() ? 'mon' : 'son'
         const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
-        const label = this.hasSuiviStartDate() ? 'Continuer' : 'Démarrer'
+        const label =
+            this.hasSuiviStartDate() && this.hasHistorique() ? 'Continuer' : 'Démarrer'
         const nextPage = this.hasSymptomesStartDate() ? 'suivisymptomes' : 'suividate'
         const suiviButton = affichage.safeHtml`
             <a class="button button-full-width conseils-link"

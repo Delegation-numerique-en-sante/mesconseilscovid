@@ -68,6 +68,16 @@ Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habi
 
 
 
+## [conseils_autosuivi_régularité.md](conseils_autosuivi_régularité.md)
+
+<!---->Nous vous conseillons de <a href="#suiviintroduction">renseigner le questionnaire</a> <b>1 à 2 fois par jour</b>.
+
+---
+
+<!---->Nous vous conseillons de <a href="#suiviintroduction">renseigner son questionnaire</a> <b>1 à 2 fois par jour</b>.
+
+
+
 ## [conseils_caractéristiques_antécédents.md](conseils_caractéristiques_antécédents.md)
 
 Afin d’éviter une forme grave de COVID19, il vous est recommandé
