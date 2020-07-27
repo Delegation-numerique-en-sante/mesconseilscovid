@@ -42,6 +42,7 @@ function activitepro(form, app, router) {
     formUtils.preloadCheckboxForm(form, 'activite_pro', app.profil)
     formUtils.preloadCheckboxForm(form, 'activite_pro_public', app.profil)
     formUtils.preloadCheckboxForm(form, 'activite_pro_sante', app.profil)
+    formUtils.preloadCheckboxForm(form, 'activite_pro_liberal', app.profil)
     var primary = form.elements['activite_pro']
     formUtils.enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
@@ -58,6 +59,8 @@ function activitepro(form, app, router) {
             event.target.elements['activite_pro_public'].checked
         app.profil.activite_pro_sante =
             event.target.elements['activite_pro_sante'].checked
+        app.profil.activite_pro_liberal =
+            event.target.elements['activite_pro_liberal'].checked
         app.enregistrerProfilActuel()
         router.navigate('foyer')
     })

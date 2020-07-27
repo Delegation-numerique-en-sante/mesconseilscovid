@@ -38,6 +38,7 @@ class Profil {
         this.activite_pro = undefined
         this.activite_pro_public = undefined
         this.activite_pro_sante = undefined
+        this.activite_pro_liberal = undefined
         this.foyer_enfants = undefined
         this.foyer_fragile = undefined
         this.age = undefined
@@ -84,6 +85,7 @@ class Profil {
         this.activite_pro = data['activite_pro']
         this.activite_pro_public = data['activite_pro_public']
         this.activite_pro_sante = data['activite_pro_sante']
+        this.activite_pro_liberal = data['activite_pro_liberal']
         this.foyer_enfants = data['foyer_enfants']
         this.foyer_fragile = data['foyer_fragile']
         this.age = data['age']
@@ -133,6 +135,7 @@ class Profil {
             activite_pro: this.activite_pro,
             activite_pro_public: this.activite_pro_public,
             activite_pro_sante: this.activite_pro_sante,
+            activite_pro_liberal: this.activite_pro_liberal,
             foyer_enfants: this.foyer_enfants,
             foyer_fragile: this.foyer_fragile,
             age: this.age,
@@ -182,6 +185,7 @@ class Profil {
             typeof this.activite_pro === 'undefined' &&
             typeof this.activite_pro_public === 'undefined' &&
             typeof this.activite_pro_sante === 'undefined' &&
+            typeof this.activite_pro_liberal === 'undefined' &&
             typeof this.foyer_enfants === 'undefined' &&
             typeof this.foyer_fragile === 'undefined' &&
             typeof this.age === 'undefined' &&
@@ -209,6 +213,7 @@ class Profil {
             typeof this.activite_pro !== 'undefined' &&
             typeof this.activite_pro_public !== 'undefined' &&
             typeof this.activite_pro_sante !== 'undefined' &&
+            typeof this.activite_pro_liberal !== 'undefined' &&
             typeof this.foyer_enfants !== 'undefined' &&
             typeof this.foyer_fragile !== 'undefined' &&
             typeof this.age !== 'undefined' &&

@@ -241,6 +241,12 @@
                 </label>
             </div>
             <div class="secondary disabled">
+                <input id="activite_pro_liberal" type="checkbox" name="activite_pro_liberal" disabled>
+                <label for="activite_pro_liberal">
+                    <span>{{ question_activité_pro_libéral_libellé|me_or_them }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
                 <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
                 <label for="activite_pro_sante">
                     <span>{{ question_activité_pro_santé_libellé|me_or_them }}</span>
@@ -716,15 +722,6 @@
                     <div id="reponse-activite-pro" hidden>
                         {{ réponse_activité_pro }}
                     </div>
-                    <div id="reponse-activite-pro-public" hidden>
-                        {{ réponse_activité_pro_public }}
-                    </div>
-                    <div id="reponse-activite-pro-sante" hidden>
-                        {{ réponse_activité_pro_santé }}
-                    </div>
-                    <div id="reponse-activite-pro-public-sante" hidden>
-                        {{ réponse_activité_pro_public_santé }}
-                    </div>
                 </div>
                 <div id="conseils-activite-pro" hidden>
                     <div class="conseil">
@@ -739,6 +736,11 @@
                 <div id="conseils-activite-pro-sante" hidden>
                     <div class="conseil">
                         {{ conseils_activité_pro_santé }}
+                    </div>
+                </div>
+                <div id="conseils-activite-pro-liberal" hidden>
+                    <div class="conseil">
+                        {{ conseils_activité_pro_libéral }}
                     </div>
                 </div>
                 <div id="conseils-activite-pro-infos" hidden>

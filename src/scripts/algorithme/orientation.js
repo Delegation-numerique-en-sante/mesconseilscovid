@@ -207,20 +207,15 @@ class AlgorithmeOrientation {
         if (
             this.profil.activite_pro ||
             this.profil.activite_pro_public ||
-            this.profil.activite_pro_sante
+            this.profil.activite_pro_sante ||
+            this.profil.activite_pro_liberal
         ) {
             blockNames.push('conseils-activite')
-            // Les blocs de réponses sont exclusifs.
-            if (this.profil.activite_pro_public && this.profil.activite_pro_sante) {
-                blockNames.push('reponse-activite-pro-public-sante')
-            } else if (this.profil.activite_pro_public) {
-                blockNames.push('reponse-activite-pro-public')
-            } else if (this.profil.activite_pro_sante) {
-                blockNames.push('reponse-activite-pro-sante')
-            } else {
-                blockNames.push('reponse-activite-pro')
-            }
+            blockNames.push('reponse-activite-pro')
             // Les blocs de conseils sont quasi-exclusifs aussi.
+            if (this.profil.activite_pro_liberal) {
+                blockNames.push('conseils-activite-pro-liberal')
+            }
             if (this.profil.activite_pro_public && this.profil.activite_pro_sante) {
                 blockNames.push('conseils-activite-pro-public')
                 blockNames.push('conseils-activite-pro-sante')

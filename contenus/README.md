@@ -72,20 +72,20 @@ Question : [libellé](questions/question_activité_pro_libellé.md)
 
 Sous-question (contact public) : [libellé](questions/question_activité_pro_public_libellé.md)
 
+Sous-question (libéral) : [libellé](questions/question_activité_pro_libéral_libellé.md)
+
 Sous-question (domaine santé) : [libellé](questions/question_activité_pro_santé_libellé.md), [aide](questions/question_activité_pro_santé_aide.md)
 
 Réponse :
 
 * [réponse_activité_pro.md](réponses/réponse_activité_pro.md) si case cochée
-* [réponse_activité_pro_public.md](réponses/réponse_activité_pro_public.md) si case cochée
-* [réponse_activité_pro_santé.md](réponses/réponse_activité_pro_santé.md) si case cochée
-* [réponse_activité_pro_public_santé.md](réponses/réponse_activité_pro_public_santé.md) si deux cases cochées
 
 Conseils :
 
 * [conseils_activité_pro.md](conseils/conseils_activité_pro.md) si case cochée
 * [conseils_activité_pro_public.md](conseils/conseils_activité_pro_public.md) si case cochée
 * [conseils_activité_pro_santé.md](conseils/conseils_activité_pro_santé.md) si case cochée
+* [conseils_activité_pro_libéral.md](conseils/conseils_activité_pro_libéral.md) si case cochée
 * [conseils_activité_pro_infos.md](conseils/conseils_activité_pro_infos.md) si case activité cochée et/ou case public cochée (mais pas la case santé)
 
 

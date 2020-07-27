@@ -14,6 +14,16 @@
 
 
 
+## [question_activité_pro_libéral_libellé.md](question_activité_pro_libéral_libellé.md)
+
+<!----><span class="nouveau">nouveau</span> J’exerce une profession libérale ou je suis travailleur indépendant
+
+---
+
+<!----><span class="nouveau">nouveau</span> Il ou elle exerce une profession libérale ou est travailleur indépendant
+
+
+
 ## [question_activité_pro_public_libellé.md](question_activité_pro_public_libellé.md)
 
 <!---->Dans le cadre de cette activité, je suis en contact direct avec du public

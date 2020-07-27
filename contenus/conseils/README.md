@@ -23,6 +23,14 @@ Retrouvez également une vidéo pour savoir [comment assurer sa santé et sa sé
 
 
 
+## [conseils_activité_pro_libéral.md](conseils_activité_pro_libéral.md)
+
+<span class="nouveau">nouveau</span> En tant que **travailleur indépendant ou libéral**, je ne bénéficie pas d’une prise en charge par la médecine du travail mais je peux me rapprocher des centres régionaux de pathologies professionnelles et environnementales situés dans les CHU. Ces services sont des centres d’expertise sur les questions d’imputabilité d’un état de santé à une exposition professionnelle et/ou environnementale ainsi que sur les possibilités de maintien dans l’emploi au regard de l’état de santé.
+
+Lorsqu’en raison de mon état de santé je suis considéré comme une personne vulnérable ou à risque au regard de l’avis du Haut Conseil de Santé Publique et en l’absence de solution de télétravail, je peux bénéficier d’un arrêt de travail soit en renouvelant mon arrêt de travail sur le site ameli (assurance maladie) ou de la msa (mutualité sociale agricole), soit auprès de mon médecin traitant.
+
+
+
 ## [conseils_activité_pro_public.md](conseils_activité_pro_public.md)
 
 Nous vous recommandons de prendre connaissance des **fiches-conseils métier** pour aider à la mise en œuvre des mesures de protection sur le site du [Ministère du travail](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/proteger-les-travailleurs/article/fiches-conseils-metiers-et-guides-pour-les-salaries-et-les-employeurs).
