@@ -12,6 +12,9 @@ describe('Pagination', function () {
         it('ok d’aller à la page de pédiatrie', function () {
             assert.isUndefined(redirectToUnansweredQuestions('pediatrie', {}))
         })
+        it('ok d’aller à la page de médecine du travail', function () {
+            assert.isUndefined(redirectToUnansweredQuestions('medecinedutravail', {}))
+        })
         it('ok d’aller au conditions d’utilisation', function () {
             assert.isUndefined(
                 redirectToUnansweredQuestions('conditionsutilisation', {})

@@ -8,6 +8,7 @@ var getCurrentPageName = function () {
 var redirectToUnansweredQuestions = function (page, profil) {
     if (page === 'introduction') return
     if (page === 'pediatrie') return
+    if (page === 'medecinedutravail') return
     if (page === 'conditionsutilisation') return
     if (page === 'nouvelleversiondisponible') return
     if (page === 'nom') return
