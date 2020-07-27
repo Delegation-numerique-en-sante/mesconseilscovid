@@ -139,6 +139,20 @@ function initRouter(app) {
                 mesConseilsLink.setAttribute('href', '#' + target)
             }
         })
+        .on(new RegExp('^medecinedutravail$'), function () {
+            var pageName = 'medecinedutravail'
+            var element = pagination.loadPage(pageName)
+            if (app.profil.isComplete()) {
+                affichage.showElement(element.querySelector('#js-profil-full'))
+                affichage.hideElement(element.querySelector('#js-profil-empty'))
+                var mesConseilsLink = element.querySelector('#mes-conseils-link')
+                var target = pagination.redirectToUnansweredQuestions(
+                    'findCorrectExit',
+                    app.profil
+                )
+                mesConseilsLink.setAttribute('href', '#' + target)
+            }
+        })
         .on(new RegExp('^conditionsutilisation$'), function () {
             var pageName = 'conditionsutilisation'
             pagination.loadPage(pageName)
