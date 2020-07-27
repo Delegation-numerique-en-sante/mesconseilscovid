@@ -197,6 +197,7 @@ main footer {
 #symptomes-actuels-form,
 #symptomes-passes-form,
 #contact-a-risque-form,
+#suivi-medecin-form,
 #suivi-date-form,
 #suivi-symptomes-form {
     padding-top: 40%;
@@ -234,6 +235,7 @@ main footer {
     #symptomes-actuels-form,
     #symptomes-passes-form,
     #contact-a-risque-form,
+    #suivi-medecin-form,
     #suivi-date-form,
     #suivi-symptomes-form {
         padding-top: 25%;
@@ -278,7 +280,8 @@ main footer {
 #conseils-caracteristiques h3 {
     background-image: url('illustrations/caracteristiques.svg');
 }
-#antecedents-form {
+#antecedents-form,
+#suivi-medecin-form {
     background-image: url('illustrations/antecedents.svg');
 }
 .tagline,

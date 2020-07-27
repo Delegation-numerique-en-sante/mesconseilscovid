@@ -775,6 +775,52 @@ describe('Pagination', function () {
             })
             assert.isUndefined(redirectToUnansweredQuestions('suividate', profil))
         })
+        it('ok d’aller à la question suivi médecin si profil complet', function () {
+            const profil = new Profil()
+            profil.fillData({
+                departement: '34',
+                activite_pro: false,
+                activite_pro_public: false,
+                activite_pro_sante: false,
+                activite_pro_liberal: false,
+                foyer_enfants: true,
+                foyer_fragile: false,
+                age: '42',
+                grossesse_3e_trimestre: false,
+                poids: '70',
+                taille: '178',
+                antecedent_cardio: false,
+                antecedent_diabete: true,
+                antecedent_respi: false,
+                antecedent_dialyse: true,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                symptomes_actuels: true,
+                symptomes_actuels_temperature: true,
+                symptomes_actuels_temperature_inconnue: false,
+                symptomes_actuels_toux: false,
+                symptomes_actuels_odorat: false,
+                symptomes_actuels_douleurs: false,
+                symptomes_actuels_diarrhee: false,
+                symptomes_actuels_fatigue: false,
+                symptomes_actuels_alimentation: false,
+                symptomes_actuels_souffle: false,
+                symptomes_actuels_autre: false,
+                symptomes_passes: false,
+                contact_a_risque: true,
+                contact_a_risque_meme_lieu_de_vie: false,
+                contact_a_risque_contact_direct: false,
+                contact_a_risque_actes: false,
+                contact_a_risque_espace_confine: false,
+                contact_a_risque_meme_classe: false,
+                contact_a_risque_stop_covid: false,
+                contact_a_risque_autre: true,
+            })
+            assert.isUndefined(redirectToUnansweredQuestions('suivimedecin', profil))
+        })
         it('ok d’aller au questionnaire si profil complet et date symptômes', function () {
             const profil = new Profil()
             profil.fillData({
@@ -919,6 +965,106 @@ describe('Pagination', function () {
                 'suividate'
             )
         })
+        it('redirige suivi medecin si profil complet et date symptômes', function () {
+            const profil = new Profil()
+            profil.fillData({
+                departement: '34',
+                activite_pro: false,
+                activite_pro_public: false,
+                activite_pro_sante: false,
+                activite_pro_liberal: false,
+                foyer_enfants: true,
+                foyer_fragile: false,
+                age: '42',
+                grossesse_3e_trimestre: false,
+                poids: '70',
+                taille: '178',
+                antecedent_cardio: false,
+                antecedent_diabete: true,
+                antecedent_respi: false,
+                antecedent_dialyse: true,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                symptomes_actuels: false,
+                symptomes_actuels_temperature: false,
+                symptomes_actuels_temperature_inconnue: false,
+                symptomes_actuels_toux: false,
+                symptomes_actuels_odorat: false,
+                symptomes_actuels_douleurs: false,
+                symptomes_actuels_diarrhee: false,
+                symptomes_actuels_fatigue: false,
+                symptomes_actuels_alimentation: false,
+                symptomes_actuels_souffle: false,
+                symptomes_actuels_autre: false,
+                symptomes_passes: false,
+                contact_a_risque: true,
+                contact_a_risque_meme_lieu_de_vie: false,
+                contact_a_risque_contact_direct: false,
+                contact_a_risque_actes: false,
+                contact_a_risque_espace_confine: false,
+                contact_a_risque_meme_classe: false,
+                contact_a_risque_stop_covid: false,
+                contact_a_risque_autre: true,
+                _symptomes_start_date: '2020-07-09T14:03:41.000Z',
+            })
+            assert.strictEqual(
+                redirectToUnansweredQuestions('suivimedecin', profil),
+                'suivisymptomes'
+            )
+        })
+        it('redirige suivi date si profil complet et date symptômes', function () {
+            const profil = new Profil()
+            profil.fillData({
+                departement: '34',
+                activite_pro: false,
+                activite_pro_public: false,
+                activite_pro_sante: false,
+                activite_pro_liberal: false,
+                foyer_enfants: true,
+                foyer_fragile: false,
+                age: '42',
+                grossesse_3e_trimestre: false,
+                poids: '70',
+                taille: '178',
+                antecedent_cardio: false,
+                antecedent_diabete: true,
+                antecedent_respi: false,
+                antecedent_dialyse: true,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                symptomes_actuels: false,
+                symptomes_actuels_temperature: false,
+                symptomes_actuels_temperature_inconnue: false,
+                symptomes_actuels_toux: false,
+                symptomes_actuels_odorat: false,
+                symptomes_actuels_douleurs: false,
+                symptomes_actuels_diarrhee: false,
+                symptomes_actuels_fatigue: false,
+                symptomes_actuels_alimentation: false,
+                symptomes_actuels_souffle: false,
+                symptomes_actuels_autre: false,
+                symptomes_passes: false,
+                contact_a_risque: true,
+                contact_a_risque_meme_lieu_de_vie: false,
+                contact_a_risque_contact_direct: false,
+                contact_a_risque_actes: false,
+                contact_a_risque_espace_confine: false,
+                contact_a_risque_meme_classe: false,
+                contact_a_risque_stop_covid: false,
+                contact_a_risque_autre: true,
+                _symptomes_start_date: '2020-07-09T14:03:41.000Z',
+            })
+            assert.strictEqual(
+                redirectToUnansweredQuestions('suividate', profil),
+                'suivisymptomes'
+            )
+        })
         it('redirige suivi introduction vers algo orientation si profil non complet', function () {
             const profil = new Profil()
             profil.fillData({
@@ -945,6 +1091,35 @@ describe('Pagination', function () {
             })
             assert.strictEqual(
                 redirectToUnansweredQuestions('suiviintroduction', profil),
+                'symptomesactuels'
+            )
+        })
+        it('redirige suivi médecin vers algo orientation si profil non complet', function () {
+            const profil = new Profil()
+            profil.fillData({
+                departement: '34',
+                activite_pro: false,
+                activite_pro_public: false,
+                activite_pro_sante: false,
+                activite_pro_liberal: false,
+                foyer_enfants: true,
+                foyer_fragile: false,
+                age: '42',
+                grossesse_3e_trimestre: false,
+                poids: '70',
+                taille: '178',
+                antecedent_cardio: false,
+                antecedent_diabete: true,
+                antecedent_respi: false,
+                antecedent_dialyse: true,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+            })
+            assert.strictEqual(
+                redirectToUnansweredQuestions('suivimedecin', profil),
                 'symptomesactuels'
             )
         })

@@ -119,18 +119,23 @@ describe('Parcours', function () {
             symptomesActuels: ['temperature'],
         })
 
-        // Page de suivi
+        // Avec des symptômes actuels on est redirigé vers le consentement médecin
         {
-            let bouton = await page.waitForSelector('text="Voir mes conseils"')
-            assert.equal(
-                await bouton.evaluate(
-                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
-                ),
-                'Moi'
+            const consentement = 'non' // non => redirection `conseils`
+
+            // Je n’arrive pas à cocher la case directement, alors je clique sur le label
+            let label = await page.waitForSelector(
+                `#page label[for="suivi_medecin_${consentement}"]`
             )
+            await label.click()
+
+            const text = '"Aller vers mes conseils"'
+            const nextPage = 'conseils'
+
+            let bouton = await page.waitForSelector(`#page >> text=${text}`)
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#conseils' }),
+                page.waitForNavigation({ url: `**/#${nextPage}` }),
             ])
         }
 
@@ -181,18 +186,23 @@ describe('Parcours', function () {
             symptomesActuels: ['souffle'],
         })
 
-        // Page de suivi
+        // Avec des symptômes actuels on est redirigé vers le consentement médecin
         {
-            let bouton = await page.waitForSelector('text="Voir mes conseils"')
-            assert.equal(
-                await bouton.evaluate(
-                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
-                ),
-                'Moi'
+            const consentement = 'non' // non => redirection `conseils`
+
+            // Je n’arrive pas à cocher la case directement, alors je clique sur le label
+            let label = await page.waitForSelector(
+                `#page label[for="suivi_medecin_${consentement}"]`
             )
+            await label.click()
+
+            const text = '"Aller vers mes conseils"'
+            const nextPage = 'conseils'
+
+            let bouton = await page.waitForSelector(`#page >> text=${text}`)
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#conseils' }),
+                page.waitForNavigation({ url: `**/#${nextPage}` }),
             ])
         }
 

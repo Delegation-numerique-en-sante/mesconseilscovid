@@ -243,6 +243,9 @@ Conseils :
 
 Cas particulier : si [Symptôme actuel autre](#symptôme-actuel-autre), aucun de ces conseils n’est affiché.
 
+Note : par défaut, lorsqu’un symptôme actuel est déclaré, la personne est redirigée ensuite vers le [suivi médecin](#suivi-conseils).
+
+
 #### Symptômes passés
 
 [Titre](questions/question_symptômes_passés_titre.md)
@@ -295,6 +298,18 @@ Conseils :
 
 
 ### Auto-suivi
+
+#### Suivi médecin
+
+[Titre](questions/question_suivi_médecin_titre.md)
+
+Question : [libellé](questions/question_suivi_médecin_libellé.md)
+
+Algorithme :
+
+* Si la personne répond « Non » au consentement médecin, elle est redirigée vers les conseils
+* Si elle répond « Oui » au consentement médecin, elle est redirigée vers le [Suivi date](#suivi-date)
+
 
 #### Suivi date
 

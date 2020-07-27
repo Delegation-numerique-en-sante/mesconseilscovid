@@ -16,7 +16,13 @@ var redirectToUnansweredQuestions = function (page, profil) {
     // Suivi
     if (page === 'suiviintroduction' && profil.isComplete()) return
 
-    if (page === 'suividate' && profil.isComplete()) return
+    if (page === 'suivimedecin' && profil.isComplete()) {
+        return profil.hasSymptomesStartDate() ? 'suivisymptomes' : undefined
+    }
+
+    if (page === 'suividate' && profil.isComplete()) {
+        return profil.hasSymptomesStartDate() ? 'suivisymptomes' : undefined
+    }
 
     if (page === 'suivisymptomes' && profil.isComplete())
         return profil.hasSymptomesStartDate() ? undefined : 'suividate'
