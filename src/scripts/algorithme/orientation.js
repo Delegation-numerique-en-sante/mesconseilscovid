@@ -165,7 +165,13 @@ class AlgorithmeOrientation {
                     gravite = 3
                 }
             }
-            blockNames.push('conseils-personnels-symptomes-actuels-gravite' + gravite)
+            if (this.profil.hasHistorique()) {
+                blockNames.push('conseils-personnels-symptomes-actuels-suivi')
+            } else {
+                blockNames.push(
+                    'conseils-personnels-symptomes-actuels-gravite' + gravite
+                )
+            }
         } else if (this.profil.symptomes_passes) {
             blockNames.push('conseils-personnels-symptomes-passes')
             if (this.personne_fragile || this.profil.foyer_fragile) {

@@ -275,6 +275,21 @@ describe('Algorithme d’orientation', function () {
             ])
         })
 
+        it('Un profil avec des symptômes actuels + un suivi', function () {
+            var data = {
+                symptomes_actuels: true,
+                symptomes_actuels_alimentation: true,
+                suivi: [{ foo: 'bar' }],
+            }
+            profil.fillData(data)
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
+                'conseils-personnels-symptomes-actuels',
+                'reponse-symptomes-actuels-symptomesactuelsreconnus',
+                'conseils-personnels-symptomes-actuels-suivi',
+            ])
+        })
+
         it('Un profil avec des symptômes actuels autres', function () {
             var data = {
                 symptomes_actuels: true,
