@@ -8,7 +8,7 @@ class AlgorithmeDeconfinement {
 
     isQuarantaineDone() {
         let delta = 8
-        if (this.algoOrientation.facteursDeGraviteMajeurs) {
+        if (this.algoOrientation.personne_fragile) {
             delta = 10
         }
         return utils.joursAvant(delta) > this.profil.symptomes_start_date

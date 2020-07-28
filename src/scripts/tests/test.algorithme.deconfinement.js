@@ -18,7 +18,7 @@ describe('Algorithme déconfinement', function () {
         profil.resetData()
     })
 
-    describe('Quarantaine sans gravité', function () {
+    describe('Quarantaine sans personne fragile', function () {
         it('Faux si aujourd’hui', function () {
             const today = new Date()
             profil.symptomes_start_date = today
@@ -51,11 +51,10 @@ describe('Algorithme déconfinement', function () {
         })
     })
 
-    describe('Quarantaine avec gravité', function () {
+    describe('Quarantaine avec personne fragile', function () {
         it('Faux si aujourd’hui', function () {
             const data = {
-                symptomes_actuels: true,
-                symptomes_actuels_souffle: true,
+                grossesse_3e_trimestre: true,
             }
             profil.fillData(data)
             const today = new Date()
@@ -70,8 +69,7 @@ describe('Algorithme déconfinement', function () {
 
         it('Faux s’il y a 10 jours', function () {
             const data = {
-                symptomes_actuels: true,
-                symptomes_actuels_souffle: true,
+                grossesse_3e_trimestre: true,
             }
             profil.fillData(data)
             profil.symptomes_start_date = utils.joursAvant(10)
@@ -85,8 +83,7 @@ describe('Algorithme déconfinement', function () {
 
         it('Vrai s’il y a 11 jours', function () {
             const data = {
-                symptomes_actuels: true,
-                symptomes_actuels_souffle: true,
+                grossesse_3e_trimestre: true,
             }
             profil.fillData(data)
             profil.symptomes_start_date = utils.joursAvant(11)
@@ -335,7 +332,7 @@ describe('Algorithme déconfinement', function () {
         })
     })
 
-    describe('Déconfinable sans gravité', function () {
+    describe('Déconfinable sans personne fragile', function () {
         it('Vrai s’il y a 9 jours et plus de fièvre ni essoufflement', function () {
             const data = {
                 suivi: [
@@ -437,11 +434,10 @@ describe('Algorithme déconfinement', function () {
         })
     })
 
-    describe('Déconfinable avec gravité', function () {
+    describe('Déconfinable avec personne fragile', function () {
         it('Vrai s’il y a 11 jours et plus de fièvre ni essoufflement', function () {
             const data = {
-                symptomes_actuels: true,
-                symptomes_actuels_souffle: true,
+                grossesse_3e_trimestre: true,
                 suivi: [
                     {
                         date: new Date(),
@@ -467,8 +463,7 @@ describe('Algorithme déconfinement', function () {
 
         it('Faux s’il y a 10 jours et plus de fièvre ni essoufflement', function () {
             const data = {
-                symptomes_actuels: true,
-                symptomes_actuels_souffle: true,
+                grossesse_3e_trimestre: true,
                 suivi: [
                     {
                         date: new Date(),
@@ -494,8 +489,7 @@ describe('Algorithme déconfinement', function () {
 
         it('Faux s’il y a 11 jours et fièvre récente mais pas essoufflement', function () {
             const data = {
-                symptomes_actuels: true,
-                symptomes_actuels_souffle: true,
+                grossesse_3e_trimestre: true,
                 suivi: [
                     {
                         date: new Date(),
@@ -521,8 +515,7 @@ describe('Algorithme déconfinement', function () {
 
         it('Faux s’il y a 11 jours et plus de fièvre mais essoufflement', function () {
             const data = {
-                symptomes_actuels: true,
-                symptomes_actuels_souffle: true,
+                grossesse_3e_trimestre: true,
                 suivi: [
                     {
                         date: new Date(),
