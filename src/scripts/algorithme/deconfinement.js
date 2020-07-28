@@ -14,19 +14,28 @@ class AlgorithmeDeconfinement {
         return utils.joursAvant(delta) > this.profil.symptomes_start_date
     }
 
+    isSuiviRegulier() {
+        // Au moins une entrée ces dernières 24h + une entrée ces dernières 48h.
+        return (
+            this.profil.suiviDerniersJours(1).length >= 1 &&
+            this.profil.suiviDerniersJours(2).length >= 2
+        )
+    }
+
     isFievreDone() {
-        return this.profil.suiviDernieres48h().every((etat) => etat.fievre === 'non')
+        return this.profil.suiviDerniersJours(2).every((etat) => etat.fievre === 'non')
     }
 
     isEssoufflementDone() {
         return this.profil
-            .suiviDernieres48h()
+            .suiviDerniersJours(2)
             .every((etat) => etat.essoufflement === 'non')
     }
 
     isDeconfinable() {
         return (
             this.isQuarantaineDone() &&
+            this.isSuiviRegulier() &&
             this.isFievreDone() &&
             this.isEssoufflementDone()
         )

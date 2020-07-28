@@ -96,6 +96,62 @@ describe('Algorithme déconfinement', function () {
         })
     })
 
+    describe('Régularité', function () {
+        it('Vrai si une entrée ces dernières 24h + une entrée ces dernières 48h', function () {
+            const data = {
+                suivi: [
+                    {
+                        date: new Date(),
+                    },
+                    {
+                        date: utils.joursAvant(1),
+                    },
+                ],
+            }
+            profil.fillData(data)
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoDeconfinement = new AlgorithmeDeconfinement(
+                profil,
+                algoOrientation
+            )
+            assert.strictEqual(algoDeconfinement.isSuiviRegulier(), true)
+        })
+
+        it('Faux si une entrée ces dernières 24h seulement', function () {
+            const data = {
+                suivi: [
+                    {
+                        date: new Date(),
+                    },
+                ],
+            }
+            profil.fillData(data)
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoDeconfinement = new AlgorithmeDeconfinement(
+                profil,
+                algoOrientation
+            )
+            assert.strictEqual(algoDeconfinement.isSuiviRegulier(), false)
+        })
+
+        it('Faux si une entrée ces dernières 48h seulement', function () {
+            const data = {
+                suivi: [
+                    {
+                        date: utils.joursAvant(1),
+                    },
+                ],
+            }
+            profil.fillData(data)
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoDeconfinement = new AlgorithmeDeconfinement(
+                profil,
+                algoOrientation
+            )
+            assert.strictEqual(algoDeconfinement.isSuiviRegulier(), false)
+        })
+    })
+
     describe('Fièvre', function () {
         it('Vrai si suivi récent sans fièvre', function () {
             const data = {
@@ -342,6 +398,11 @@ describe('Algorithme déconfinement', function () {
                         essoufflement: 'non',
                     },
                     {
+                        date: utils.joursAvant(1),
+                        fievre: 'non',
+                        essoufflement: 'non',
+                    },
+                    {
                         date: utils.joursAvant(3),
                         fievre: 'oui',
                         essoufflement: 'oui',
@@ -358,11 +419,41 @@ describe('Algorithme déconfinement', function () {
             assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
         })
 
+        it('Faux s’il y a 9 jours et plus de fièvre ni essoufflement mais sans régularité', function () {
+            const data = {
+                suivi: [
+                    {
+                        date: new Date(),
+                        fievre: 'non',
+                        essoufflement: 'non',
+                    },
+                    {
+                        date: utils.joursAvant(3),
+                        fievre: 'oui',
+                        essoufflement: 'oui',
+                    },
+                ],
+            }
+            profil.fillData(data)
+            profil.symptomes_start_date = utils.joursAvant(9)
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoDeconfinement = new AlgorithmeDeconfinement(
+                profil,
+                algoOrientation
+            )
+            assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
+        })
+
         it('Faux s’il y a 8 jours et plus de fièvre ni essoufflement', function () {
             const data = {
                 suivi: [
                     {
                         date: new Date(),
+                        fievre: 'non',
+                        essoufflement: 'non',
+                    },
+                    {
+                        date: utils.joursAvant(1),
                         fievre: 'non',
                         essoufflement: 'non',
                     },
@@ -392,6 +483,11 @@ describe('Algorithme déconfinement', function () {
                         essoufflement: 'non',
                     },
                     {
+                        date: utils.joursAvant(1),
+                        fievre: 'non',
+                        essoufflement: 'non',
+                    },
+                    {
                         date: utils.joursAvant(3),
                         fievre: 'oui',
                         essoufflement: 'oui',
@@ -415,6 +511,11 @@ describe('Algorithme déconfinement', function () {
                         date: new Date(),
                         fievre: 'non',
                         essoufflement: 'oui',
+                    },
+                    {
+                        date: utils.joursAvant(1),
+                        fievre: 'non',
+                        essoufflement: 'non',
                     },
                     {
                         date: utils.joursAvant(3),
@@ -445,6 +546,11 @@ describe('Algorithme déconfinement', function () {
                         essoufflement: 'non',
                     },
                     {
+                        date: utils.joursAvant(1),
+                        fievre: 'non',
+                        essoufflement: 'non',
+                    },
+                    {
                         date: utils.joursAvant(3),
                         fievre: 'oui',
                         essoufflement: 'oui',
@@ -461,12 +567,43 @@ describe('Algorithme déconfinement', function () {
             assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
         })
 
+        it('Vrai s’il y a 11 jours et plus de fièvre ni essoufflement mais pas régularité', function () {
+            const data = {
+                grossesse_3e_trimestre: true,
+                suivi: [
+                    {
+                        date: new Date(),
+                        fievre: 'non',
+                        essoufflement: 'non',
+                    },
+                    {
+                        date: utils.joursAvant(3),
+                        fievre: 'oui',
+                        essoufflement: 'oui',
+                    },
+                ],
+            }
+            profil.fillData(data)
+            profil.symptomes_start_date = utils.joursAvant(11)
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoDeconfinement = new AlgorithmeDeconfinement(
+                profil,
+                algoOrientation
+            )
+            assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
+        })
+
         it('Faux s’il y a 10 jours et plus de fièvre ni essoufflement', function () {
             const data = {
                 grossesse_3e_trimestre: true,
                 suivi: [
                     {
                         date: new Date(),
+                        fievre: 'non',
+                        essoufflement: 'non',
+                    },
+                    {
+                        date: utils.joursAvant(1),
                         fievre: 'non',
                         essoufflement: 'non',
                     },
@@ -497,6 +634,11 @@ describe('Algorithme déconfinement', function () {
                         essoufflement: 'non',
                     },
                     {
+                        date: utils.joursAvant(1),
+                        fievre: 'non',
+                        essoufflement: 'non',
+                    },
+                    {
                         date: utils.joursAvant(3),
                         fievre: 'oui',
                         essoufflement: 'oui',
@@ -521,6 +663,11 @@ describe('Algorithme déconfinement', function () {
                         date: new Date(),
                         fievre: 'non',
                         essoufflement: 'oui',
+                    },
+                    {
+                        date: utils.joursAvant(1),
+                        fievre: 'non',
+                        essoufflement: 'non',
                     },
                     {
                         date: utils.joursAvant(3),

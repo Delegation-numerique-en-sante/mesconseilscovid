@@ -255,8 +255,8 @@ class Profil {
         return this.suivi.slice(-1)[0]
     }
 
-    suiviDernieres48h() {
-        return this.suivi.filter((etat) => etat.date > utils.joursAvant(2))
+    suiviDerniersJours(delta) {
+        return this.suivi.filter((etat) => etat.date > utils.joursAvant(delta))
     }
 
     estMonProfil() {

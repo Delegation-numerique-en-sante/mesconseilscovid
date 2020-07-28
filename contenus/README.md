@@ -358,6 +358,15 @@ Sous-question (maux de tête) [optionnelle] : [libellé](questions/question_suiv
 * [conseils_autosuivi_historique.md](conseils/conseils_autosuivi_historique.md) s’affiche lorsque le suivi est activé (date de début + une entrée saisie).
 
 
+#### Suivi déconfinement
+
+La sortie de confinement est proposée si toutes les conditions suivantes sont réunies :
+
+* le début des symptômes était il y a 8 jours (ou 10 si personne à [Risque](#risque)) ;
+* il y a eu (au moins) une entrée dans le suivi par 24h ces dernières 48h ;
+* il n’y a pas eu de fièvre ni d’essoufflement ces dernières 48h.
+
+
 ### Critères
 
 #### Couleur
