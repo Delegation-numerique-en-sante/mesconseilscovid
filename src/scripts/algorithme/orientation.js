@@ -101,6 +101,57 @@ class AlgorithmeOrientation {
         return 'peu-de-risques'
     }
 
+    get gravite() {
+        let gravite = 1
+        if (this.facteursDeGraviteMajeurs) {
+            gravite = 4
+        } else {
+            // #3.3
+            if (this.fievre && this.profil.symptomes_actuels_toux) {
+                if (this.personne_fragile) {
+                    if (this.totalFacteursDeGraviteMineurs > 1) {
+                        gravite = 2
+                    } else {
+                        gravite = 3
+                    }
+                }
+            }
+            // #3.4
+            if (
+                this.fievre ||
+                (!this.fievre &&
+                    (this.profil.symptomes_actuels_diarrhee ||
+                        (this.profil.symptomes_actuels_toux &&
+                            this.profil.symptomes_actuels_douleurs) ||
+                        (this.profil.symptomes_actuels_toux &&
+                            this.profil.symptomes_actuels_odorat)))
+            ) {
+                if (this.personne_fragile) {
+                    if (this.totalFacteursDeGraviteMineurs > 1) {
+                        gravite = 2
+                    } else {
+                        gravite = 3
+                    }
+                } else {
+                    if (this.sup50 || this.totalFacteursDeGraviteMineurs >= 1) {
+                        gravite = 3
+                    }
+                }
+            }
+            // #3.5
+            if (
+                !this.fievre &&
+                (this.profil.symptomes_actuels_toux ||
+                    this.profil.symptomes_actuels_douleurs ||
+                    this.profil.symptomes_actuels_odorat) &&
+                this.personne_fragile
+            ) {
+                gravite = 3
+            }
+        }
+        return gravite
+    }
+
     recommandeAutoSuivi() {
         return this.profil.symptomes_actuels
     }
@@ -118,58 +169,11 @@ class AlgorithmeOrientation {
             if (this.symptomesActuelsReconnus) {
                 blockNames.push('reponse-symptomes-actuels-symptomesactuelsreconnus')
             }
-            var gravite = 1
-            if (this.facteursDeGraviteMajeurs) {
-                gravite = 4
-            } else {
-                // #3.3
-                if (this.fievre && this.profil.symptomes_actuels_toux) {
-                    if (this.personne_fragile) {
-                        if (this.totalFacteursDeGraviteMineurs > 1) {
-                            gravite = 2
-                        } else {
-                            gravite = 3
-                        }
-                    }
-                }
-                // #3.4
-                if (
-                    this.fievre ||
-                    (!this.fievre &&
-                        (this.profil.symptomes_actuels_diarrhee ||
-                            (this.profil.symptomes_actuels_toux &&
-                                this.profil.symptomes_actuels_douleurs) ||
-                            (this.profil.symptomes_actuels_toux &&
-                                this.profil.symptomes_actuels_odorat)))
-                ) {
-                    if (this.personne_fragile) {
-                        if (this.totalFacteursDeGraviteMineurs > 1) {
-                            gravite = 2
-                        } else {
-                            gravite = 3
-                        }
-                    } else {
-                        if (this.sup50 || this.totalFacteursDeGraviteMineurs >= 1) {
-                            gravite = 3
-                        }
-                    }
-                }
-                // #3.5
-                if (
-                    !this.fievre &&
-                    (this.profil.symptomes_actuels_toux ||
-                        this.profil.symptomes_actuels_douleurs ||
-                        this.profil.symptomes_actuels_odorat) &&
-                    this.personne_fragile
-                ) {
-                    gravite = 3
-                }
-            }
             if (this.profil.hasHistorique()) {
                 blockNames.push('conseils-personnels-symptomes-actuels-suivi')
             } else {
                 blockNames.push(
-                    'conseils-personnels-symptomes-actuels-gravite' + gravite
+                    'conseils-personnels-symptomes-actuels-gravite' + this.gravite
                 )
             }
         } else if (this.profil.symptomes_passes) {
