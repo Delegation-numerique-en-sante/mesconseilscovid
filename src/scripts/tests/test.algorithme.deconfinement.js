@@ -101,10 +101,10 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
                     },
                     {
-                        date: utils.joursAvant(1),
+                        date: utils.joursAvant(1).toJSON(),
                     },
                 ],
             }
@@ -121,7 +121,7 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
                     },
                 ],
             }
@@ -138,7 +138,7 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: utils.joursAvant(1),
+                        date: utils.joursAvant(1).toJSON(),
                     },
                 ],
             }
@@ -157,8 +157,27 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
+                        symptomes: true,
                         fievre: 'non',
+                    },
+                ],
+            }
+            profil.fillData(data)
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoDeconfinement = new AlgorithmeDeconfinement(
+                profil,
+                algoOrientation
+            )
+            assert.strictEqual(algoDeconfinement.isFievreDone(), true)
+        })
+
+        it('Vrai si suivi récent sans symptômes', function () {
+            const data = {
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: false,
                     },
                 ],
             }
@@ -175,7 +194,8 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
                     },
                 ],
@@ -193,7 +213,8 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: utils.joursAvant(3),
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
                         fievre: 'non',
                     },
                 ],
@@ -211,7 +232,8 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: utils.joursAvant(3),
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
                     },
                 ],
@@ -229,11 +251,13 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
                     },
                     {
-                        date: utils.joursAvant(3),
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
                     },
                 ],
@@ -251,11 +275,13 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
+                        symptomes: true,
                         fievre: 'non',
                     },
                     {
-                        date: utils.joursAvant(3),
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
                     },
                 ],
@@ -275,8 +301,27 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
-                        essoufflement: 'non',
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        essoufflement: 'mieux',
+                    },
+                ],
+            }
+            profil.fillData(data)
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoDeconfinement = new AlgorithmeDeconfinement(
+                profil,
+                algoOrientation
+            )
+            assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
+        })
+
+        it('Vrai si suivi récent sans symptômes', function () {
+            const data = {
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: false,
                     },
                 ],
             }
@@ -293,8 +338,9 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
-                        essoufflement: 'oui',
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        essoufflement: 'critique',
                     },
                 ],
             }
@@ -311,8 +357,9 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: utils.joursAvant(3),
-                        essoufflement: 'non',
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
+                        essoufflement: 'mieux',
                     },
                 ],
             }
@@ -329,8 +376,9 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: utils.joursAvant(3),
-                        essoufflement: 'oui',
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
+                        essoufflement: 'critique',
                     },
                 ],
             }
@@ -347,12 +395,14 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
-                        essoufflement: 'oui',
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        essoufflement: 'critique',
                     },
                     {
-                        date: utils.joursAvant(3),
-                        essoufflement: 'oui',
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
+                        essoufflement: 'critique',
                     },
                 ],
             }
@@ -369,12 +419,14 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
-                        essoufflement: 'non',
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(3),
-                        essoufflement: 'oui',
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
+                        essoufflement: 'critique',
                     },
                 ],
             }
@@ -393,19 +445,51 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(1),
+                        date: utils.joursAvant(1).toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(3),
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
-                        essoufflement: 'oui',
+                        essoufflement: 'critique',
+                    },
+                ],
+            }
+            profil.fillData(data)
+            profil.symptomes_start_date = utils.joursAvant(9)
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoDeconfinement = new AlgorithmeDeconfinement(
+                profil,
+                algoOrientation
+            )
+            assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
+        })
+
+        it('Vrai s’il y a 9 jours et plus de symptômes', function () {
+            const data = {
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: false,
+                    },
+                    {
+                        date: utils.joursAvant(1).toJSON(),
+                        symptomes: false,
+                    },
+                    {
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
+                        fievre: 'oui',
+                        essoufflement: 'critique',
                     },
                 ],
             }
@@ -423,14 +507,16 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(3),
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
-                        essoufflement: 'oui',
+                        essoufflement: 'critique',
                     },
                 ],
             }
@@ -448,19 +534,22 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(1),
+                        date: utils.joursAvant(1).toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(3),
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
-                        essoufflement: 'oui',
+                        essoufflement: 'critique',
                     },
                 ],
             }
@@ -478,19 +567,22 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(1),
+                        date: utils.joursAvant(1).toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(3),
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
-                        essoufflement: 'oui',
+                        essoufflement: 'critique',
                     },
                 ],
             }
@@ -508,19 +600,22 @@ describe('Algorithme déconfinement', function () {
             const data = {
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'oui',
+                        essoufflement: 'critique',
                     },
                     {
-                        date: utils.joursAvant(1),
+                        date: utils.joursAvant(1).toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(3),
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
-                        essoufflement: 'oui',
+                        essoufflement: 'critique',
                     },
                 ],
             }
@@ -541,19 +636,52 @@ describe('Algorithme déconfinement', function () {
                 grossesse_3e_trimestre: true,
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(1),
+                        date: utils.joursAvant(1).toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(3),
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
-                        essoufflement: 'oui',
+                        essoufflement: 'critique',
+                    },
+                ],
+            }
+            profil.fillData(data)
+            profil.symptomes_start_date = utils.joursAvant(11)
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoDeconfinement = new AlgorithmeDeconfinement(
+                profil,
+                algoOrientation
+            )
+            assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
+        })
+
+        it('Vrai s’il y a 11 jours et plus de symptômes', function () {
+            const data = {
+                grossesse_3e_trimestre: true,
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: false,
+                    },
+                    {
+                        date: utils.joursAvant(1).toJSON(),
+                        symptomes: false,
+                    },
+                    {
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
+                        fievre: 'oui',
+                        essoufflement: 'critique',
                     },
                 ],
             }
@@ -572,14 +700,16 @@ describe('Algorithme déconfinement', function () {
                 grossesse_3e_trimestre: true,
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(3),
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
-                        essoufflement: 'oui',
+                        essoufflement: 'critique',
                     },
                 ],
             }
@@ -598,19 +728,22 @@ describe('Algorithme déconfinement', function () {
                 grossesse_3e_trimestre: true,
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(1),
+                        date: utils.joursAvant(1).toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(3),
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
-                        essoufflement: 'oui',
+                        essoufflement: 'critique',
                     },
                 ],
             }
@@ -629,19 +762,22 @@ describe('Algorithme déconfinement', function () {
                 grossesse_3e_trimestre: true,
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(1),
+                        date: utils.joursAvant(1).toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(3),
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
-                        essoufflement: 'oui',
+                        essoufflement: 'critique',
                     },
                 ],
             }
@@ -660,19 +796,22 @@ describe('Algorithme déconfinement', function () {
                 grossesse_3e_trimestre: true,
                 suivi: [
                     {
-                        date: new Date(),
+                        date: new Date().toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'oui',
+                        essoufflement: 'critique',
                     },
                     {
-                        date: utils.joursAvant(1),
+                        date: utils.joursAvant(1).toJSON(),
+                        symptomes: true,
                         fievre: 'non',
-                        essoufflement: 'non',
+                        essoufflement: 'mieux',
                     },
                     {
-                        date: utils.joursAvant(3),
+                        date: utils.joursAvant(3).toJSON(),
+                        symptomes: true,
                         fievre: 'oui',
-                        essoufflement: 'oui',
+                        essoufflement: 'critique',
                     },
                 ],
             }

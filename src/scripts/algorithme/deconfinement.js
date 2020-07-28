@@ -23,13 +23,23 @@ class AlgorithmeDeconfinement {
     }
 
     isFievreDone() {
-        return this.profil.suiviDerniersJours(2).every((etat) => etat.fievre === 'non')
+        return this.profil.suiviDerniersJours(2).every((etat) => {
+            if (etat.symptomes) {
+                return etat.fievre === 'non'
+            } else {
+                return true
+            }
+        })
     }
 
     isEssoufflementDone() {
-        return this.profil
-            .suiviDerniersJours(2)
-            .every((etat) => etat.essoufflement === 'non')
+        return this.profil.suiviDerniersJours(2).every((etat) => {
+            if (etat.symptomes) {
+                return etat.essoufflement === 'mieux' || etat.essoufflement === 'stable'
+            } else {
+                return true
+            }
+        })
     }
 
     isDeconfinable() {
