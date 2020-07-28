@@ -25,9 +25,9 @@ Retrouvez également une vidéo pour savoir [comment assurer sa santé et sa sé
 
 ## [conseils_activité_pro_libéral.md](conseils_activité_pro_libéral.md)
 
-<span class="nouveau">nouveau</span> En tant que **travailleur indépendant ou libéral**, je ne bénéficie pas d’une prise en charge par la médecine du travail mais je peux me rapprocher des centres régionaux de pathologies professionnelles et environnementales situés dans les CHU. Ces services sont des centres d’expertise sur les questions d’imputabilité d’un état de santé à une exposition professionnelle et/ou environnementale ainsi que sur les possibilités de maintien dans l’emploi au regard de l’état de santé.
+<span class="nouveau">nouveau</span> En tant que **travailleur indépendant ou libéral**, vous ne bénéficiez pas d’une prise en charge par la médecine du travail mais vous pouvez vous rapprocher des centres régionaux de pathologies professionnelles et environnementales situés dans les CHU. Ces services sont des centres d’expertise sur les questions d’imputabilité d’un état de santé à une exposition professionnelle et/ou environnementale ainsi que sur les possibilités de maintien dans l’emploi au regard de l’état de santé.
 
-Lorsqu’en raison de mon état de santé je suis considéré comme une personne vulnérable ou à risque au regard de l’avis du Haut Conseil de Santé Publique et en l’absence de solution de télétravail, je peux bénéficier d’un arrêt de travail soit en renouvelant mon arrêt de travail sur le site ameli (assurance maladie) ou de la msa (mutualité sociale agricole), soit auprès de mon médecin traitant.
+Lorsqu’en raison de votre état de santé vous êtes considéré comme une personne vulnérable ou à risque au regard de l’avis du Haut Conseil de Santé Publique et en l’absence de solution de télétravail, vous pouvez bénéficier d’un arrêt de travail soit en renouvelant votre arrêt de travail sur le site ameli (assurance maladie) ou de la msa (mutualité sociale agricole), soit auprès de votre médecin traitant.
 
 
 
@@ -134,7 +134,7 @@ Pour plus d’informations, vous pouvez consulter le [site du gouvernement](http
 Pour plus d’informations, vous pouvez :
 
 * prendre connaissance du document [« Faire face à une maladie chronique pendant le confinement »](https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf) de la HAS
-* retrouver des réponses à vos questions sur la [page dédiée](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/personnes-a-risques-reponses-a-vos-questions) sur le site du ministère des solidarité et de la santé.
+* retrouver des réponses à vos questions sur la [page dédiée](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/personnes-a-risques-reponses-a-vos-questions) sur le site du ministère des solidarités et de la santé.
 
 
 
