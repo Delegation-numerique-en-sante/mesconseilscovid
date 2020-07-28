@@ -134,6 +134,10 @@ function initRouter(app) {
             var element = pagination.loadPage(pageName, app)
             suivihistorique.page(element, app)
         })
+        .on(new RegExp('^suivideconfinement$'), function () {
+            var pageName = 'suivideconfinement'
+            pagination.loadPage(pageName, app)
+        })
         .on(new RegExp('^pediatrie$'), function () {
             var pageName = 'pediatrie'
             var element = pagination.loadPage(pageName)

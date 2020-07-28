@@ -31,6 +31,15 @@ var redirectToUnansweredQuestions = function (page, profil) {
         return profil.hasHistorique() ? undefined : 'suiviintroduction'
     }
 
+    if (
+        page === 'suivideconfinement' &&
+        profil.isComplete() &&
+        profil.hasSymptomesStartDate()
+    ) {
+        // TODO: vérifier si isDeconfinable() aussi ?
+        return profil.hasHistorique() ? undefined : 'suiviintroduction'
+    }
+
     // Questions obligatoires
 
     if (typeof profil.departement === 'undefined' && page !== 'residence')
