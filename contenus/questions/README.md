@@ -401,11 +401,11 @@ Avez-vous remarqué chez votre proche l’apparition d’une forte **somnolence*
 
 ## [question_suivi_symptômes_fièvre_libellé.md](question_suivi_symptômes_fièvre_libellé.md)
 
-<!---->Votre <b>température</b> est supérieure à 39° et ne diminue pas malgré la prise de paracétamol ?
+<!---->Votre <b>température</b> est supérieure à 39°C et ne diminue pas malgré la prise de paracétamol ?
 
 ---
 
-<!---->La <b>température</b> corporelle de votre proche est supérieure à 39° et ne diminue pas malgré la prise de paracétamol ?
+<!---->La <b>température</b> corporelle de votre proche est supérieure à 39°C et ne diminue pas malgré la prise de paracétamol ?
 
 
 
