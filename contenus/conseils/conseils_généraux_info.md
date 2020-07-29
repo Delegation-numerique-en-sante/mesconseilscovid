@@ -1,7 +1,7 @@
 Pour plus d’informations :
 
 * Le port du **masque** :
-  * [Tous ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf).
+  * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf).
   * [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw).
   * [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE).
 
