@@ -1,4 +1,4 @@
-De manière générale, l’auto-médication par des médicaments anti-inflammatoires doit être proscrite. De plus, il semblerait que les anti-inflammatoires non stéroïdiens (AINS, comme l'Ibuprofène ou le Kétoprofène) pourraient aggraver l’infection à COVID-19.
+De manière générale, l’auto-médication par des médicaments anti-inflammatoires doit être proscrite. De plus, il semblerait que les anti-inflammatoires non stéroïdiens (AINS, comme l’Ibuprofène ou le Kétoprofène) pourraient aggraver l’infection à COVID-19.
 
 Ainsi, dans le cas d’une infection au coronavirus COVID-19 :
 
