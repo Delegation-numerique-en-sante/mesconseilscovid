@@ -424,6 +424,9 @@ class Profil {
             case 'stable':
                 statut = 'Stable'
                 break
+            case 'aucun':
+                statut = 'Pas ce symptôme'
+                break
             case 'mieux':
                 statut = 'Mieux'
                 break
@@ -505,6 +508,9 @@ class Profil {
                 icone = 'gravite'
                 break
             case 'stable':
+                icone = 'stable'
+                break
+            case 'aucun':
                 icone = 'stable'
                 break
             case 'gravite_1':
