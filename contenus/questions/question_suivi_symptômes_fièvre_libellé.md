@@ -1,5 +1,5 @@
-<!---->Votre <b>température</b> est supérieure à 39°C et ne diminue pas malgré la prise de paracétamol ?
+<!---->Avez-vous une <b>température</b> supérieure ou égale à 39°C <em>et</em> qui ne diminue pas malgré la prise de paracétamol (ou Doliprane® ou Efferalgan®) ?
 
 ---
 
-<!---->La <b>température</b> corporelle de votre proche est supérieure à 39°C et ne diminue pas malgré la prise de paracétamol ?
+<!---->Est-ce que votre proche a une <b>température</b> supérieure ou égale à 39°C <em>et</em> qui ne diminue pas malgré la prise de paracétamol (ou Doliprane® ou Efferalgan®) ?
