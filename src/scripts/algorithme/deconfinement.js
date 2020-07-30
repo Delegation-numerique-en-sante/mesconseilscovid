@@ -35,7 +35,11 @@ class AlgorithmeDeconfinement {
     isEssoufflementDone() {
         return this.profil.suiviDerniersJours(2).every((etat) => {
             if (etat.symptomes) {
-                return etat.essoufflement === 'mieux' || etat.essoufflement === 'stable'
+                return (
+                    etat.essoufflement === 'mieux' ||
+                    etat.essoufflement === 'stable' ||
+                    etat.essoufflement === 'aucun'
+                )
             } else {
                 return true
             }

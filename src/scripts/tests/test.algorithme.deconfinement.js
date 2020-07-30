@@ -297,13 +297,51 @@ describe('Algorithme déconfinement', function () {
     })
 
     describe('Essoufflement', function () {
-        it('Vrai si suivi récent sans essoufflement', function () {
+        it('Vrai si suivi récent sans essoufflement (mieux)', function () {
             const data = {
                 suivi: [
                     {
                         date: new Date().toJSON(),
                         symptomes: true,
                         essoufflement: 'mieux',
+                    },
+                ],
+            }
+            profil.fillData(data)
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoDeconfinement = new AlgorithmeDeconfinement(
+                profil,
+                algoOrientation
+            )
+            assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
+        })
+
+        it('Vrai si suivi récent sans essoufflement (stable)', function () {
+            const data = {
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        essoufflement: 'stable',
+                    },
+                ],
+            }
+            profil.fillData(data)
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoDeconfinement = new AlgorithmeDeconfinement(
+                profil,
+                algoOrientation
+            )
+            assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
+        })
+
+        it('Vrai si suivi récent sans essoufflement (aucun)', function () {
+            const data = {
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        essoufflement: 'aucun',
                     },
                 ],
             }
