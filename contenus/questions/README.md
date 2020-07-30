@@ -336,11 +336,11 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 ## [question_suivi_date_titre.md](question_suivi_date_titre.md)
 
-<!---->Mes premiers symptômes
+<!---->La date de mes premiers symptômes
 
 ---
 
-<!---->Ses premiers symptômes
+<!---->La date de ses premiers symptômes
 
 
 
@@ -401,11 +401,11 @@ Avez-vous remarqué chez votre proche l’apparition d’une forte **somnolence*
 
 ## [question_suivi_symptômes_fièvre_libellé.md](question_suivi_symptômes_fièvre_libellé.md)
 
-<!---->Votre <b>température</b> est supérieure à 39°C et ne diminue pas malgré la prise de paracétamol ?
+<!---->Avez-vous une <b>température</b> supérieure ou égale à 39°C <em>et</em> qui ne diminue pas malgré la prise de paracétamol (ou Doliprane® ou Efferalgan®) ?
 
 ---
 
-<!---->La <b>température</b> corporelle de votre proche est supérieure à 39°C et ne diminue pas malgré la prise de paracétamol ?
+<!---->Est-ce que votre proche a une <b>température</b> supérieure ou égale à 39°C <em>et</em> qui ne diminue pas malgré la prise de paracétamol (ou Doliprane® ou Efferalgan®) ?
 
 
 
@@ -421,17 +421,17 @@ Avez-vous remarqué chez votre proche l’apparition d’une forte **somnolence*
 
 ## [question_suivi_symptômes_maux_de_tête_aide.md](question_suivi_symptômes_maux_de_tête_aide.md)
 
-De manière générale, l’auto-médication par anti-inflammatoires doit être proscrite. De plus, il semblerait que les anti-inflammatoires non stéroïdiens pourraient être un facteur d’aggravation de l’infection.
+De manière générale, l’auto-médication par des médicaments anti-inflammatoires doit être proscrite. De plus, il semblerait que les anti-inflammatoires non stéroïdiens (AINS, comme l’Ibuprofène ou le Kétoprofène) pourraient aggraver l’infection à COVID-19.
 
 Ainsi, dans le cas d’une infection au coronavirus COVID-19 :
 
-* Seul le paracétamol est recommandé, avec pas plus de 1g par prise (espacée au minimum de 4h), et pas plus de 3g au total par jour ([en savoir plus sur le paracétamol](https://sfpt-fr.org/covid19-foire-aux-questions/1099-j-ai-de-la-fievre-quel-medicament-dois-je-prendre)).
+* Seul le paracétamol est recommandé, à la dose de 1g (1000 mg) par prise (espacées au minimum de 4h), sans dépasser un total de 3g par jour ([en savoir plus sur le paracétamol](https://sfpt-fr.org/covid19-foire-aux-questions/1099-j-ai-de-la-fievre-quel-medicament-dois-je-prendre)).
 * Si vous êtes déjà sous anti-inflammatoires ou en cas de doute : demandez conseil à votre médecin ou consultez le site [covid19-medicaments.com](https://www.covid19-medicaments.com)
 
 Plus d’informations sur le site de la Société Française de Pharmacologie et de Thérapeutique :
 
 * [Sur la prise d’anti-inflammatoires non stéroïdiens en cas de fièvre](https://sfpt-fr.org/covid19-foire-aux-questions/1085-je-prends-ou-je-souhaite-prendre-un-anti-inflammatoire-non-steroidien-ains-pour-la-fievre-que-dois-je-faire)
-* [Sur la prise d’anti-inflammatoires non stéroïdiens en cas de toux ou de myalgies](https://sfpt-fr.org/covid19-foire-aux-questions/1087-j-ai-de-la-fievre-et-je-prends-ou-je-souhaite-prendre-un-anti-inflammatoire-non-steroidien-ains-pour-la-toux-ou-les-myalgies-que-dois-je-faire)
+* [Sur la prise d’anti-inflammatoires non stéroïdiens en cas de toux ou de douleurs musculaires](https://sfpt-fr.org/covid19-foire-aux-questions/1087-j-ai-de-la-fievre-et-je-prends-ou-je-souhaite-prendre-un-anti-inflammatoire-non-steroidien-ains-pour-la-toux-ou-les-myalgies-que-dois-je-faire)
 
 
 
