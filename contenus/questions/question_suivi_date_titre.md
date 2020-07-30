@@ -1,5 +1,5 @@
-<!---->Mes premiers symptômes
+<!---->La date de mes premiers symptômes
 
 ---
 
-<!---->Ses premiers symptômes
+<!---->La date de ses premiers symptômes
