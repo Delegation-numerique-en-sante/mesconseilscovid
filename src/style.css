@@ -75,7 +75,13 @@ header a.button {
 }
 main {
     background-color: #f9f8f6;
-    padding: 18px 15px 48px 15px;
+    padding: 18px 0 48px 0;
+}
+@media only screen and (min-width: 680px) {
+    main {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .nouveau-profil {
@@ -97,7 +103,7 @@ a .profil {
 .block {
     background-color: #ffffff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-    padding: 2rem;
+    padding: 1rem;
     margin: 1rem 0;
 }
 .block > * {
@@ -121,6 +127,12 @@ a .profil {
 .block ul {
     margin: 1rem 0;
     max-width: 80ch;
+}
+.block ul {
+    padding-left: 1rem;
+}
+.block ul li {
+    margin-bottom: 0.5rem;
 }
 
 .introduction-block {
@@ -221,12 +233,12 @@ main footer {
     background-position: center 1rem;
     background-repeat: no-repeat;
     background-size: 50%;
-    margin-top: 6rem;
+    margin-top: 1rem;
 }
 #conseils-pediatrie-general h3 {
     padding-top: 200px;
 }
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 450px) {
     #residence-form,
     #activite-pro-form,
     #foyer-form,
@@ -313,7 +325,7 @@ main footer {
 }
 
 .conseils {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .conseils h3,
 #historique h3 {
@@ -474,6 +486,7 @@ fieldset ul.details {
     transform: translate(-0.1em, -0.1em);
     transition: all 100ms ease-in;
     align-self: flex-start;
+    text-decoration: underline;
 }
 .form-controls input[type='submit'],
 .form-controls .main-button {
@@ -720,6 +733,57 @@ a[href*='youtube.com']::after {
     align-items: center;
     width: 25px;
     height: 20px;
+}
+
+.conseils details {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s;
+    border: 1px solid lightgray;
+    padding: 1rem;
+}
+@media only screen and (min-width: 680px) {
+    .conseils details {
+        padding: 2rem;
+    }
+}
+
+.conseils details summary {
+    outline: 0;
+    cursor: pointer;
+    list-style: none;
+}
+.conseils details summary h3 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.conseils details summary svg {
+    height: 40px;
+    width: 60px;
+    color: #000091;
+    transition: all 0.4s;
+}
+.conseils details:hover,
+.conseils details[open] {
+    outline: 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8);
+}
+.conseils details[open] summary svg {
+    transform: rotate(450deg);
+}
+.conseils details summary::-webkit-details-marker {
+    display: none;
+}
+.conseils details[open] summary ~ * {
+    animation: open 0.3s ease-in-out;
+}
+@keyframes open {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 a#geolocalisation {
