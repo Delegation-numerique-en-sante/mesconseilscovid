@@ -403,10 +403,10 @@ class Profil {
                 titre = 'Somnolence ou confusion'
                 break
             case 'mauxDeTete':
-                titre = 'Maux de tête (optionnel)'
+                titre = 'Maux de tête'
                 break
             case 'toux':
-                titre = 'Toux (optionnel)'
+                titre = 'Toux'
                 break
         }
         return titre
