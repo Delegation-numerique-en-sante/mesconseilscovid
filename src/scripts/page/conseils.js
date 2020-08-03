@@ -1,6 +1,7 @@
 import actions from '../actions.js'
 import affichage from '../affichage.js'
 import injection from '../injection.js'
+import { AlgorithmeDeconfinement } from '../algorithme/deconfinement.js'
 import { AlgorithmeOrientation } from '../algorithme/orientation.js'
 import { AlgorithmeSuivi } from '../algorithme/suivi.js'
 
@@ -32,11 +33,20 @@ function page(element, app) {
     showRelevantBlocks(element, app.profil, algoOrientation)
 
     if (app.profil.hasSuiviStartDate() && app.profil.hasHistorique()) {
-        // Afficher le bloc de résultats de l’auto-suivi
-        var algoSuivi = new AlgorithmeSuivi(app.profil)
-        affichage.displayElementById(element, 'suivi')
-        showRelevantSuiviBlocks(element, algoSuivi)
-        showRelevantEvolutionsRecap(element, algoSuivi)
+        const algoSuivi = new AlgorithmeSuivi(app.profil)
+        const algoDeconfinement = new AlgorithmeDeconfinement(
+            app.profil,
+            algoOrientation
+        )
+        if (algoDeconfinement.isDeconfinable()) {
+            // Afficher le bloc de déconfinement
+            affichage.displayElementById(element, 'deconfinement')
+        } else {
+            // Afficher le bloc de résultats de l’auto-suivi
+            affichage.displayElementById(element, 'suivi')
+            showRelevantSuiviBlocks(element, algoSuivi)
+            showRelevantEvolutionsRecap(element, algoSuivi)
+        }
 
         // Cacher le bloc de statut si on est en auto-suivi.
         affichage.hideSelector(element, '#conseils-statut')

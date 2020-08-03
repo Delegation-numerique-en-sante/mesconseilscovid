@@ -1,7 +1,5 @@
 import affichage from '../affichage.js'
 import formUtils from '../formutils.js'
-import { AlgorithmeOrientation } from '../algorithme/orientation.js'
-import { AlgorithmeDeconfinement } from '../algorithme/deconfinement.js'
 
 function page(form, app, router) {
     // Question affichée seulement si on répond pour un proche
@@ -56,16 +54,7 @@ function page(form, app, router) {
 
         app.profil.ajouterEtat(etat)
         app.enregistrerProfilActuel().then(() => {
-            const algoOrientation = new AlgorithmeOrientation(app.profil)
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                app.profil,
-                algoOrientation
-            )
-            if (algoDeconfinement.isDeconfinable()) {
-                router.navigate('suivideconfinement')
-            } else {
-                router.navigate('conseils')
-            }
+            router.navigate('conseils')
         })
     })
 }

@@ -4,6 +4,22 @@
 *Ce fichier est généré automatiquement pour pouvoir accéder rapidement aux contenus,il ne doit pas être édité !*
 
 
+## [suivi_déconfinement.md](suivi_déconfinement.md)
+
+## Conclusion de votre suivi
+
+<div class="statut statut-deconfinement">
+
+### Vous pouvez (enfin) vous déconfiner ! 🎉
+
+</div>
+
+* vérifiez l’évolution de vos symptômes auprès d’un médecin en <a href="#suivihistorique">imprimant l’historique de votre suivi</a> ;
+* poursuivez <a href="#suiviintroduction">votre suivi</a> si votre état se dégrade ces prochains jours ;
+* continuez à appliquer les gestes barrières et à suivre vos conseils personnalisés ci-dessous.
+
+
+
 ## [suivi_gravité_0.md](suivi_gravité_0.md)
 
 Poursuivez votre auto-suivi à la maison comme entendu avec votre médecin.

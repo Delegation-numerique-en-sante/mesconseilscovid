@@ -581,6 +581,10 @@
         <div id="conseils-block" class="block">
             <h1 id="conseils-block-titre" hidden></h1>
 
+            <div id="deconfinement" hidden>
+                {{ suivi_déconfinement }}
+            </div>
+
             <div id="suivi" hidden>
                 <h2>L’évolution de vos symptômes</h2>
                 <div id="suivi-gravite-3" class="statut suivi-gravite-3" hidden>
@@ -1072,16 +1076,6 @@
         <div class="form-controls">
             <a href="#conseils" class="back-button button-outline">Retour</a>
             <a class="button button-full-width js-impression" href="">Imprimer ce suivi</a>
-        </div>
-    </div>
-</section>
-
-<section id="suivideconfinement" hidden>
-    <div id="suivi-deconfinement-block" class="block">
-        {{ meta_déconfinement }}
-        <div class="form-controls">
-            <a href="#conseils" class="back-button button-outline">Conseils</a>
-            <a class="button button-full-width" href="#suivihistorique">Accès à l’historique de votre suivi</a>
         </div>
     </div>
 </section>
