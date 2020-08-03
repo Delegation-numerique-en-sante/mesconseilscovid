@@ -27,9 +27,20 @@ class Profil {
         this._symptomes_start_date = date.toJSON()
     }
 
+    get deconfinement_date() {
+        if (typeof this._suivi_start_date === 'undefined') return undefined
+        return new Date(this._deconfinement_date)
+    }
+
+    set deconfinement_date(date) {
+        this._deconfinement_date =
+            typeof date !== 'undefined' ? date.toJSON() : undefined
+    }
+
     resetSuivi() {
         this._suivi_start_date = undefined
         this._symptomes_start_date = undefined
+        this._deconfinement_date = undefined
         this.suivi = []
     }
 
@@ -124,6 +135,7 @@ class Profil {
         this.contact_a_risque_autre = data['contact_a_risque_autre']
         this._suivi_start_date = data['_suivi_start_date']
         this._symptomes_start_date = data['_symptomes_start_date']
+        this._deconfinement_date = data['_deconfinement_date']
         this.suivi_active = data['suivi_active'] || false
         this.suivi = data['suivi'] || []
     }
@@ -174,6 +186,7 @@ class Profil {
             suivi_active: this.suivi_active,
             _suivi_start_date: this._suivi_start_date,
             _symptomes_start_date: this._symptomes_start_date,
+            _deconfinement_date: this._deconfinement_date,
             suivi: this.suivi,
         }
     }
@@ -241,6 +254,10 @@ class Profil {
 
     hasSymptomesStartDate() {
         return typeof this._symptomes_start_date !== 'undefined'
+    }
+
+    hasDeconfinementDate() {
+        return typeof this._deconfinement_date !== 'undefined'
     }
 
     hasHistorique() {
