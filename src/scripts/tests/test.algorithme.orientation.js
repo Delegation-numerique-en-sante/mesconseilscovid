@@ -487,6 +487,22 @@ describe('Algorithme d’orientation', function () {
             ])
         })
 
+        it('Une activité pro + personne fragile affiche des conseils + pro + infos + arrêt', function () {
+            var data = {
+                activite_pro: true,
+                grossesse_3e_trimestre: true,
+            }
+            profil.fillData(data)
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
+                'conseils-activite',
+                'reponse-activite-pro',
+                'conseils-activite-pro',
+                'conseils-activite-pro-infos',
+                'conseils-activite-pro-arret',
+            ])
+        })
+
         it('Une activité pro avec public affiche des conseils + public + infos', function () {
             var data = {
                 activite_pro: true,

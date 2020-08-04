@@ -238,6 +238,9 @@ class AlgorithmeOrientation {
                 blockNames.push('conseils-activite-pro')
                 blockNames.push('conseils-activite-pro-infos')
             }
+            if (this.personne_fragile) {
+                blockNames.push('conseils-activite-pro-arret')
+            }
         }
         return blockNames
     }
