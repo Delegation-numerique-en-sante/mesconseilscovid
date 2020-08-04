@@ -63,6 +63,7 @@ describe('Profil', function () {
             suivi_active: undefined,
             _suivi_start_date: undefined,
             _symptomes_start_date: undefined,
+            _deconfinement_date: undefined,
             suivi: [],
         })
         assert.isFalse(profil.isComplete())
@@ -170,6 +171,7 @@ describe('Profil', function () {
             suivi_active: true,
             _suivi_start_date: '2020-07-09T14:03:41.000Z',
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
+            _deconfinement_date: '2020-07-09T14:03:41.000Z',
             suivi: [],
         }
         profil.fillData(data)
@@ -223,6 +225,7 @@ describe('Profil', function () {
             suivi_active: true,
             _suivi_start_date: '2020-07-09T14:03:41.000Z',
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
+            _deconfinement_date: '2020-07-09T14:03:41.000Z',
             suivi: [],
         }
         profil.fillData(data)
@@ -276,6 +279,7 @@ describe('Profil', function () {
             suivi_active: true,
             _suivi_start_date: '2020-07-09T14:03:41.000Z',
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
+            _deconfinement_date: '2020-07-09T14:03:41.000Z',
             suivi: [{ foo: 'bar' }],
         }
         profil.fillData(data)
@@ -324,6 +328,7 @@ describe('Profil', function () {
             suivi_active: undefined,
             _suivi_start_date: undefined,
             _symptomes_start_date: undefined,
+            _deconfinement_date: undefined,
             suivi: [],
         })
         assert.isFalse(profil.isComplete())
@@ -375,6 +380,7 @@ describe('Profil', function () {
             suivi_active: true,
             _suivi_start_date: '2020-07-09T14:03:41.000Z',
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
+            _deconfinement_date: '2020-07-09T14:03:41.000Z',
             suivi: [{ foo: 'bar' }],
         }
         profil.fillData(data)
@@ -423,6 +429,7 @@ describe('Profil', function () {
             suivi_active: true,
             _suivi_start_date: undefined,
             _symptomes_start_date: undefined,
+            _deconfinement_date: undefined,
             suivi: [],
         })
         assert.isTrue(profil.isComplete())

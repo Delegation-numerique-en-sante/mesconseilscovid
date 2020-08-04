@@ -363,7 +363,8 @@ main footer {
     border-color: #fdcf41;
 }
 .statut-peu-de-risques,
-.suivi-gravite-0 {
+.suivi-gravite-0,
+.statut-deconfinement {
     background: #7fd5c5;
     border-color: #00ac8c;
 }

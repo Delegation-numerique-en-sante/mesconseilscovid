@@ -1,5 +1,6 @@
 var format = require('timeago.js').format
 
+var utils = require('./utils.js')
 var affichage = require('./affichage.js')
 var AlgorithmeSuivi = require('./algorithme/suivi.js').AlgorithmeSuivi
 
@@ -26,9 +27,20 @@ class Profil {
         this._symptomes_start_date = date.toJSON()
     }
 
+    get deconfinement_date() {
+        if (typeof this._suivi_start_date === 'undefined') return undefined
+        return new Date(this._deconfinement_date)
+    }
+
+    set deconfinement_date(date) {
+        this._deconfinement_date =
+            typeof date !== 'undefined' ? date.toJSON() : undefined
+    }
+
     resetSuivi() {
         this._suivi_start_date = undefined
         this._symptomes_start_date = undefined
+        this._deconfinement_date = undefined
         this.suivi = []
     }
 
@@ -75,9 +87,7 @@ class Profil {
         this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_autre = undefined
         this.suivi_active = undefined
-        this._suivi_start_date = undefined
-        this._symptomes_start_date = undefined
-        this.suivi = []
+        this.resetSuivi()
     }
 
     fillData(data) {
@@ -125,6 +135,7 @@ class Profil {
         this.contact_a_risque_autre = data['contact_a_risque_autre']
         this._suivi_start_date = data['_suivi_start_date']
         this._symptomes_start_date = data['_symptomes_start_date']
+        this._deconfinement_date = data['_deconfinement_date']
         this.suivi_active = data['suivi_active'] || false
         this.suivi = data['suivi'] || []
     }
@@ -175,6 +186,7 @@ class Profil {
             suivi_active: this.suivi_active,
             _suivi_start_date: this._suivi_start_date,
             _symptomes_start_date: this._symptomes_start_date,
+            _deconfinement_date: this._deconfinement_date,
             suivi: this.suivi,
         }
     }
@@ -244,6 +256,10 @@ class Profil {
         return typeof this._symptomes_start_date !== 'undefined'
     }
 
+    hasDeconfinementDate() {
+        return typeof this._deconfinement_date !== 'undefined'
+    }
+
     hasHistorique() {
         return this.suivi.length
     }
@@ -254,6 +270,12 @@ class Profil {
 
     dernierEtat() {
         return this.suivi.slice(-1)[0]
+    }
+
+    suiviDerniersJours(delta) {
+        return this.suivi.filter(
+            (etat) => new Date(etat.date) > utils.joursAvant(delta)
+        )
     }
 
     estMonProfil() {

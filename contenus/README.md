@@ -345,6 +345,8 @@ Sous-question (maux de tête) [optionnelle] : [libellé](questions/question_suiv
 
 #### Suivi conseils
 
+Dans ce cas particulier, les [conseils relatifs aux symptômes actuels](#symptomes-actuels) ne sont pas affichés. Les conseils suivants s’affichent :
+
 * Si au moins une réponse « Beaucoup moins bien » alors [suivi_gravité_3.md](suivi/suivi_gravité_3.md)
 * Si au moins une réponse « Un peu moins bien » OU « Oui » à `alimentation et hydratation` OU « Oui » à `maux de tête` alors [suivi_gravité_2.md](suivi/suivi_gravité_2.md)
 * Si (« Oui » à `fièvre`) OU (« Oui » à `diarrhée ou vomissements`) OU (« Oui » à `toux`) alors [suivi_gravité_1.md](suivi/suivi_gravité_1.md)
@@ -356,6 +358,17 @@ Sous-question (maux de tête) [optionnelle] : [libellé](questions/question_suiv
 * Si réponse « Oui » à `état psychologique` on affiche en plus [suivi_psy_2.md](suivi/suivi_psy_2.md) si gravité > 0 OU [suivi_psy_1.md](suivi/suivi_psy_1.md) si gravité = 0.
 * [conseils_autosuivi_régularité.md](conseils/conseils_autosuivi_régularité.md) s’affiche lorsque le suivi est activé (date de début + une entrée saisie).
 * [conseils_autosuivi_historique.md](conseils/conseils_autosuivi_historique.md) s’affiche lorsque le suivi est activé (date de début + une entrée saisie).
+
+
+#### Suivi déconfinement
+
+La sortie de confinement est proposée si toutes les conditions suivantes sont réunies :
+
+* le début des symptômes était il y a 8 jours (ou 10 si personne à [Risque](#risque)) ;
+* il y a eu (au moins) une entrée dans le suivi par 24h ces dernières 48h ;
+* il n’y a pas eu de fièvre ni d’essoufflement ces dernières 48h.
+
+Dans ce cas particulier, le fichier [suivi_déconfinement.md](suivi/suivi_déconfinement.md) est affiché à la place du [statut de suivi](#suivi-conseils) + [infos](#suivi-plus-dinfos) ou des [conseils relatifs aux symptômes actuels](#symptomes-actuels).
 
 
 ### Critères

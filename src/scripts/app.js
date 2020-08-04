@@ -1,5 +1,6 @@
 import { StockageLocal } from './stockage.js'
 import { Profil } from './profil.js'
+import { joursAvant } from './utils.js'
 
 class App {
     constructor() {
@@ -50,6 +51,27 @@ class App {
         return this.stockage.supprimerTout().then(() => {
             this.profil.resetData()
         })
+    }
+
+    loadFakeSuiviData() {
+        // Useful to be able to test the deconfinement page.
+        this.profil.symptomes_start_date = joursAvant(11)
+        this.profil.suivi_start_date = joursAvant(11)
+        this.profil.suivi = [
+            {
+                date: joursAvant(1).toJSON(),
+                symptomes: true,
+                essoufflement: 'mieux',
+                etatGeneral: 'mieux',
+                etatPsychologique: 'mieux',
+                alimentationHydratation: 'non',
+                fievre: 'non',
+                diarrheeVomissements: 'non',
+                mauxDeTete: 'non',
+                toux: 'non',
+            },
+        ]
+        this.enregistrerProfilActuel()
     }
 }
 
