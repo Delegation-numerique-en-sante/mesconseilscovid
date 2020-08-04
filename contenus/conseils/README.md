@@ -210,7 +210,6 @@ Nous vous recommandons de prendre contact avec votre mairie pour connaître les 
 Si vous n’avez pas de solution pour faire garder votre enfant : 
 
 * Informez votre employeur et envisagez avec lui les modalités de télétravail qui pourraient être mises en place ou d’indemnisation si ce n’est pas possible.
-
 * Si vous êtes travailleur indépendant ou exploitant agricole, renseignez-vous sur [le téléservice de l’Assurance Maladie.](https://declare.ameli.fr/)
 
 
@@ -259,7 +258,6 @@ doivent être **maintenues.**
 Il est conseillé à votre proche de :
 
 * Poursuivre ou de reprendre son **suivi médical habituel** et **son traitement** si il ou elle en a un.
-
 * Contacter son médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une prescription de masques chirurgicaux.
 
 Si vous devez rester à domicile pour vous occuper d’une personne vulnérable et que le télétravail n’est pas possible, contactez votre médecin pour envisager les mesures possibles.

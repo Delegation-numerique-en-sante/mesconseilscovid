@@ -51,9 +51,15 @@ describe('Parcours', function () {
 
         // Conseils
         {
+            // On rend la localisation visible
+            await page.click('#page #conseils-departement h3')
+
             // On retrouve le département de résidence
             let residence = await page.waitForSelector('#page #nom-departement')
             assert.equal(await residence.innerText(), 'Somme')
+
+            // On rend l’activité visible
+            await page.click('#page #conseils-activite h3')
 
             // On retrouve l’activité
             let activite = await page.waitForSelector('#page #reponse-activite-pro')
