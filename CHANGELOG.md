@@ -1,5 +1,12 @@
 # Changelog
 
+## 2020-08-04
+
+* ajout de la fonctionnalité d’auto-suivi sous réserve de validation par un médecin incluant historique et recommandation de sortie d’isolement
+* mise à jour de la section relative à l’activité professionnelle (professions libérales, travailleurs indépendants et arrêts de travail)
+* ajout d’une page dédiée à la médecine du travail
+* réagencement des blocs de conseils et transformation en cartes dépliables
+
 ## 2020-07-21
 
 * mise à jour de la doctrine relative au port du masque obligatoire
