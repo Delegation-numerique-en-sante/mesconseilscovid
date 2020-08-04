@@ -1,3 +1,5 @@
+import actions from '../actions.js'
+
 function page(element, app) {
     const container = element.querySelector('#profils-cards-suivi')
     const card = container.insertBefore(
@@ -6,11 +8,12 @@ function page(element, app) {
     )
     if (app.profil.hasSuiviStartDate()) {
         bindSuppression(card.querySelector('[data-delete-suivi]'), app)
+        actions.bindCalendar(element, app.profil)
     }
 }
 
 function bindSuppression(element, app) {
-    element.addEventListener('click', function (event) {
+    element.addEventListener('click', (event) => {
         event.preventDefault()
         const nom = element.dataset.deleteSuivi
         const description = nom === 'mes_infos' ? 'votre suivi' : `le suivi de ${nom}`
