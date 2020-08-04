@@ -10,13 +10,14 @@
 
 <div class="statut statut-deconfinement">
 
-### Vous pouvez (enfin) vous déconfiner ! 🎉
+### Vous pouvez mettre fin à votre isolement
 
 </div>
 
-* vérifiez l’évolution de vos symptômes auprès d’un médecin en <a href="#suivihistorique">imprimant l’historique de votre suivi</a> ;
-* poursuivez <a href="#suiviintroduction">votre suivi</a> si votre état se dégrade ces prochains jours ;
-* continuez à appliquer les gestes barrières et à suivre vos conseils personnalisés ci-dessous.
+* Vous pouvez demander conseil à votre médecin et lui partager <a href="#suivihistorique">l’historique de vos symptômes</a>.
+* Poursuivez <a href="#suiviintroduction">votre suivi</a> si votre état se dégrade ces prochains jours.
+* Continuez d’appliquer les gestes barrières.
+* Retrouvez tous vos conseils personnalisés ci-dessous.
 
 
 

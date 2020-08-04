@@ -124,7 +124,7 @@ describe('Auto-suivi', function () {
             )
             // un bouton vers l’historique du suivi
             let bouton = await page.waitForSelector(
-                '#page >> text="l’historique de vos symptômes"'
+                '#page #suivi >> text="l’historique de vos symptômes"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             // un bouton pour refaire le questionnaire
