@@ -85,6 +85,7 @@ Conseils :
 * [conseils_activité_pro.md](conseils/conseils_activité_pro.md) si case cochée
 * [conseils_activité_pro_public.md](conseils/conseils_activité_pro_public.md) si case cochée
 * [conseils_activité_pro_santé.md](conseils/conseils_activité_pro_santé.md) si case cochée
+* [conseils_activité_pro_arrêt.md](conseils/conseils_activité_pro_arrêt.md) si personne à [Risque](#risque)
 * [conseils_activité_pro_libéral.md](conseils/conseils_activité_pro_libéral.md) si case cochée
 * [conseils_activité_pro_infos.md](conseils/conseils_activité_pro_infos.md) si case activité cochée et/ou case public cochée (mais pas la case santé)
 
