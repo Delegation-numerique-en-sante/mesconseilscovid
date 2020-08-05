@@ -209,7 +209,11 @@ function symptomesactuels(form, app, router) {
             app.profil.contact_a_risque_stop_covid = undefined
             app.profil.contact_a_risque_autre = undefined
             app.enregistrerProfilActuel()
-            router.navigate('suivimedecin')
+            if (app.profil.symptomes_start_date) {
+                router.navigate('suiviintroduction')
+            } else {
+                router.navigate('suivimedecin')
+            }
         } else {
             app.enregistrerProfilActuel()
             router.navigate('symptomespasses')

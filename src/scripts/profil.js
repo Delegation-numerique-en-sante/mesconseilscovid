@@ -19,12 +19,14 @@ class Profil {
     }
 
     get symptomes_start_date() {
+        if (typeof this._symptomes_start_date === 'undefined') return undefined
         return new Date(this._symptomes_start_date)
     }
 
     set symptomes_start_date(date) {
         // Turn the date into a readable string.
-        this._symptomes_start_date = date.toJSON()
+        this._symptomes_start_date =
+            typeof date !== 'undefined' ? date.toJSON() : undefined
     }
 
     get deconfinement_date() {
