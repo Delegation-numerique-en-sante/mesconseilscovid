@@ -56,13 +56,6 @@ Question : [libellé](questions/question_nom_libellé.md)
 
 Question : [libellé](questions/question_résidence_libellé.md)
 
-Réponse : [réponse_département.md](réponses/réponse_département.md)
-
-Conseils :
-
-1. [conseils orange](conseils/conseils_département_orange.md) ou [conseils vert](conseils/conseils_département_vert.md) selon la [Couleur](#couleur) du département
-2. [conseils par défaut](conseils/conseils_département_défaut.md).
-
 
 #### Activité
 

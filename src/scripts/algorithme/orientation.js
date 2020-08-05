@@ -1,12 +1,6 @@
-const carteDepartements = require('../carte.js')
-
 class AlgorithmeOrientation {
     constructor(profil) {
         this.profil = profil
-    }
-
-    get couleur() {
-        return carteDepartements.couleur(this.profil.departement)
     }
 
     get sup65() {
@@ -190,21 +184,6 @@ class AlgorithmeOrientation {
             } else {
                 blockNames.push('conseils-personnels-contact-a-risque-default')
             }
-        }
-        return blockNames
-    }
-
-    departementBlockNamesToDisplay() {
-        const blockNames = []
-        if (this.profil.symptomes_actuels) {
-            return []
-        }
-        blockNames.push('conseils-departement')
-        if (this.couleur === 'orange') {
-            blockNames.push('conseils-departement-orange')
-        }
-        if (this.couleur === 'vert') {
-            blockNames.push('conseils-departement-vert')
         }
         return blockNames
     }

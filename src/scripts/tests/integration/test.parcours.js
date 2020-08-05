@@ -51,13 +51,76 @@ describe('Parcours', function () {
 
         // Conseils
         {
-            // On rend la localisation visible
-            await page.click('#page #conseils-departement h3')
+            // On rend l’activité visible
+            await page.click('#page #conseils-activite h3')
 
-            // On retrouve le département de résidence
-            let residence = await page.waitForSelector('#page #nom-departement')
-            assert.equal(await residence.innerText(), 'Somme')
+            // On retrouve l’activité
+            let activite = await page.waitForSelector('#page #reponse-activite-pro')
+            assert.equal(
+                (await activite.innerText()).trim(),
+                'Vous exercez une activité professionnelle et/ou bénévole (modifier)'
+            )
+            let bouton = await page.waitForSelector(
+                '#page >> text="Refaire le questionnaire"'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#introduction' }),
+            ])
+        }
 
+        // Introduction
+        {
+            // La page comporte maintenant un lien direct vers mes conseils
+            let bouton = await page.waitForSelector('#page >> text="Voir mes conseils"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Moi'
+            )
+        }
+    })
+
+    it('remplir le questionnaire avec département autre', async function () {
+        const page = this.test.page
+
+        // On est redirigé vers l’introduction
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/#introduction' }),
+        ])
+
+        // Page d’accueil
+        {
+            let bouton = await page.waitForSelector('text="Démarrer"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Pour moi'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#residence' }),
+            ])
+        }
+
+        // Remplir le questionnaire
+        await helpers.remplirQuestionnaire(page, {
+            departement: '00',
+            activitePro: true,
+            enfants: true,
+            age: '42',
+            taille: '165',
+            poids: '70',
+            grossesse: false,
+            symptomesActuels: [],
+            symptomesPasses: false,
+        })
+
+        // Conseils
+        {
             // On rend l’activité visible
             await page.click('#page #conseils-activite h3')
 

@@ -22,12 +22,6 @@ Vous présentez une ou des caractéristiques à risque : <b id="nom-caracterist
 
 
 
-## [réponse_département.md](réponse_département.md)
-
-Votre lieu de résidence actuel : <b id="nom-departement"></b> (<a href="#residence">modifier</a>)
-
-
-
 ## [réponse_foyer_enfants.md](réponse_foyer_enfants.md)
 
 Vous vivez avec un ou des enfants en âge d’aller à la crèche ou à l’école (<a href="#foyer">modifier</a>)

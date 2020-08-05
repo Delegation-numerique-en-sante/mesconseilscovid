@@ -100,7 +100,6 @@ function showRelevantBlocks(element, profil, algoOrientation) {
     blockNames = blockNames.concat(
         algoOrientation.conseilsPersonnelsBlockNamesToDisplay()
     )
-    blockNames = blockNames.concat(algoOrientation.departementBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.activiteProBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.foyerBlockNamesToDisplay())
     blockNames = blockNames.concat(
@@ -119,11 +118,6 @@ function showRelevantEvolutionsRecap(element, algoSuivi) {
 
 function showRelevantAnswersRecap(element, profil, algoOrientation) {
     injection.titreConseils(element.querySelector('#conseils-block-titre'), profil)
-    injection.departement(element.querySelector('#nom-departement'), profil.departement)
-    var lienPrefecture = element.querySelector('#lien-prefecture')
-    if (lienPrefecture) {
-        injection.lienPrefecture(lienPrefecture, profil.departement)
-    }
 
     // We need to target more specifically given there are two similar ids.
     var selector
