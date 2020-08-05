@@ -185,28 +185,6 @@ Pour plus d’informations :
 
 
 
-## [conseils_département_défaut.md](conseils_département_défaut.md)
-
-Pour plus d’informations, vous pouvez consulter :
-
-* l’infographie récapitulative du [plan de déconfinement](https://www.gouvernement.fr/partage/11439-coronavirus-ce-qu-il-faut-savoir) ;
-
-* les <a href="#conseils-departement" id="lien-prefecture">règles spécifiques de votre département</a> sur le site de votre préfecture.
-
-
-
-## [conseils_département_orange.md](conseils_département_orange.md)
-
-Votre département est en **niveau orange**, la circulation épidémique justifie une vigilance accrue face au virus. Le déconfinement y prend une forme plus stricte.
-
-
-
-## [conseils_département_vert.md](conseils_département_vert.md)
-
-Votre département est en **niveau vert**. Cependant le virus circule toujours, maintenez les gestes barrières.
-
-
-
 ## [conseils_foyer_enfant_garde.md](conseils_foyer_enfant_garde.md)
 
 Depuis le **2 juin** l’ouverture des écoles, collèges et lycées se [poursuit](https://www.education.gouv.fr/deconfinement-phase-2-point-de-situation-au-28-mai-303813). 

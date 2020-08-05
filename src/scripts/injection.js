@@ -1,4 +1,3 @@
-var carteDepartements = require('./carte.js')
 var affichage = require('./affichage.js')
 
 module.exports = {
@@ -12,14 +11,6 @@ module.exports = {
         if (profil.estMonProfil()) return
         affichage.showElement(element)
         element.textContent = `Conseils pour « ${profil.nom} »`
-    },
-
-    departement: function (element, departement) {
-        element.textContent = carteDepartements.nom(departement)
-    },
-
-    lienPrefecture: function (element, departement) {
-        element.setAttribute('href', carteDepartements.lien_prefecture(departement))
     },
 
     caracteristiquesARisques: function (element, algoOrientation) {
