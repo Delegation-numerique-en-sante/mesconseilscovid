@@ -430,7 +430,7 @@ fieldset .secondary.disabled {
     display: none;
 }
 fieldset .secondary > p {
-    margin: 4rem 0 2rem 1rem;
+    margin: 4rem 0 0 1rem;
 }
 
 fieldset .field {
