@@ -25,7 +25,7 @@
   },
   "scripts": {
     "test": "mocha src/scripts/tests/",
-    "test-integration": "mocha --timeout 10000 src/scripts/tests/integration/",
+    "test-integration": "mocha --bail --timeout 10000 src/scripts/tests/integration/",
     "lint": "eslint src/scripts/ src/service-worker.js",
     "prebuild": "rm -rf dist",
     "build": "parcel build src/index.html --detailed-report 20 --experimental-scope-hoisting",
