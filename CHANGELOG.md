@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-08-06
+
+* retrait du bloc de conseils relatif à la localisation (couleur des départements)
+* ajout d’une option « Autre » à l’étape de localisation pour les personnes ne résidant pas sur le territoire français
+
 ## 2020-08-04
 
 * ajout de la fonctionnalité d’auto-suivi sous réserve de validation par un médecin incluant historique et recommandation de sortie d’isolement
