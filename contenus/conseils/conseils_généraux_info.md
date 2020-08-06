@@ -10,14 +10,15 @@ Pour plus d’informations :
   * [Les gestes barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf).
 
 
-* **Les tests** pour le COVID19 :
+* **Les tests** pour le Covid-19 :
   * [« Tests et dépistage »](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
   * [Sérologies : réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/les-serologies-reponses-a-vos-questions)
 
 * La **vie quotidienne** :
   * [Déplacements et voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements »)
-  * [L’alimentation, les courses et le nettoyage.](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses) par l'Anses
+  * [L’alimentation, les courses et le nettoyage](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses) par l'Anses
 
-* Plus d’informations autour du COVID19 :
+* Plus d’informations autour du Covid-19 :
   * [Covid19-faq](https://www.covid19-faq.fr/) ou appeler le [0 800 130 000](tel:+33800130000)
+  * [Une antibiothérapie](https://sante.fr/antibiomalin) n'est pas efficace en l'absence de signes de gravité liés au Covid-19.
   * L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) : cet outil peut vous permettre de vous prévenir immédiatement si vous avez été en contact rapproché dans les derniers jours avec une personne que vous ne connaissez pas et qui vient d’être testée positive au COVID-19.
