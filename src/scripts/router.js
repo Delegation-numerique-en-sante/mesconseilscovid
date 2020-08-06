@@ -49,7 +49,7 @@ function initRouter(app) {
         after: function () {
             // Global hook to send a custom event on each page change.
             var pageName = pagination.getCurrentPageName()
-            document.dispatchEvent(new CustomEvent('pageChanged:' + pageName))
+            document.dispatchEvent(new CustomEvent('pageChanged', { detail: pageName }))
         },
     })
 

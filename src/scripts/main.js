@@ -17,6 +17,7 @@ window.app = app
 ;(function () {
     app.init()
         .then(() => {
+            actions.bindStatistics(document)
             var router = Router.initRouter(app)
             app.router = router
             router.resolve()

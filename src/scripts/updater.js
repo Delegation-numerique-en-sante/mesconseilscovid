@@ -57,19 +57,19 @@ module.exports = function (router) {
                 })
                 this.showBanner(document)
             } else {
-                document.addEventListener(
-                    'pageChanged:nouvelleversiondisponible',
-                    () => {
-                        const refreshButton = document.querySelector(
-                            '#nouvelle-version-disponible-block #refresh-button'
-                        )
-                        refreshButton.setAttribute('href', '#' + pageName)
-                        refreshButton.addEventListener(
-                            'click',
-                            this.forceReloadCurrentPageWithHash
-                        )
+                document.addEventListener('pageChanged', (event) => {
+                    if (event.detail !== 'nouvelleversiondisponible') {
+                        return
                     }
-                )
+                    const refreshButton = document.querySelector(
+                        '#nouvelle-version-disponible-block #refresh-button'
+                    )
+                    refreshButton.setAttribute('href', '#' + pageName)
+                    refreshButton.addEventListener(
+                        'click',
+                        this.forceReloadCurrentPageWithHash
+                    )
+                })
                 router.navigate('nouvelleversiondisponible')
             }
         }

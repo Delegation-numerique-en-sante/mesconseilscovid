@@ -1,3 +1,4 @@
+import { ping } from './stats.js'
 import { ICS } from './ics.js'
 
 module.exports = {
@@ -54,6 +55,11 @@ module.exports = {
                     }
                 })
             }
+        })
+    },
+    bindStatistics: function (document) {
+        document.addEventListener('pageChanged', (event) => {
+            ping(event.detail)
         })
     },
 }
