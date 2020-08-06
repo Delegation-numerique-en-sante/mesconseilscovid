@@ -15,8 +15,8 @@ Pour plus d’informations :
   * [Sérologies : réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/les-serologies-reponses-a-vos-questions)
 
 * La **vie quotidienne** :
-  * [Déplacements et voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements »)
   * [L’alimentation, les courses et le nettoyage](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses) par l'Anses
+  * [Déplacements et voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements »)
 
 * Plus d’informations autour du Covid-19 :
   * [Covid19-faq](https://www.covid19-faq.fr/) ou appeler le [0 800 130 000](tel:+33800130000)
