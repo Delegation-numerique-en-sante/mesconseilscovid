@@ -11,8 +11,8 @@ Pour plus d’informations :
 
 
 * **Les tests** pour le COVID19 :
-  * [« Tests et dépistage »](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
   * [« Coronavirus, 2 types de tests »](https://www.gouvernement.fr/sites/default/files/explication_entre_les_deux_types_de_tests.jpg)
+  * [« Tests et dépistage »](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
   * [Sérologies : réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/les-serologies-reponses-a-vos-questions)
 
 * La **vie quotidienne** :
