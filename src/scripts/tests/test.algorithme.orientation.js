@@ -367,6 +367,89 @@ describe('Algorithme d’orientation', function () {
         })
     })
 
+    describe('Département', function () {
+        it('Un département vert affiche le bloc vert', function () {
+            var data = {
+                departement: '02',
+            }
+            profil.fillData(data)
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
+                'conseils-departement',
+                'conseils-departement-vert',
+            ])
+        })
+
+        it('Un département orange affiche le bloc orange', function () {
+            var data = {
+                departement: '34',
+            }
+            profil.fillData(data)
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
+                'conseils-departement',
+                'conseils-departement-orange',
+            ])
+        })
+
+        it('Un département rouge affiche le bloc orange', function () {
+            var data = {
+                departement: '75',
+            }
+            profil.fillData(data)
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
+                'conseils-departement',
+                'conseils-departement-rouge',
+            ])
+        })
+
+        it('Un département inconnu n’affiche pas la localisation', function () {
+            var data = {
+                departement: '00',
+            }
+            profil.fillData(data)
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [])
+        })
+
+        it('Un département + symptômes actuels n’affiche pas la localisation', function () {
+            var data = {
+                departement: '01',
+                symptomes_actuels: true,
+            }
+            profil.fillData(data)
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [])
+        })
+
+        it('Un département + symptômes passés affiche la localisation', function () {
+            var data = {
+                departement: '02',
+                symptomes_passes: true,
+            }
+            profil.fillData(data)
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
+                'conseils-departement',
+                'conseils-departement-vert',
+            ])
+        })
+
+        it('Un département + contact à risque affiche la localisation', function () {
+            var data = {
+                departement: '02',
+                contact_a_risque: true,
+            }
+            profil.fillData(data)
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
+                'conseils-departement',
+                'conseils-departement-vert',
+            ])
+        })
+    })
+
     describe('Activité pro', function () {
         it('Aucune activité pro n’affiche rien', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)

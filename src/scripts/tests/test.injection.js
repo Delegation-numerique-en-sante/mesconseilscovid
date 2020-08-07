@@ -19,6 +19,28 @@ describe('Injection', function () {
         profil.resetData()
     })
 
+    it('Départements', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = '<b id="nom-departement"></b>'
+        injection.departement(element.querySelector('#nom-departement'), '01')
+
+        assert.strictEqual(element.innerHTML, '<b id="nom-departement">Ain</b>')
+    })
+
+    it('Lien préfecture', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML =
+            '<a href="#conseils-departement" id="lien-prefecture">Site</a>'
+        injection.lienPrefecture(element.querySelector('#lien-prefecture'), '01')
+
+        assert.strictEqual(
+            element.innerHTML,
+            '<a href="http://www.ain.gouv.fr/strategie-locale-de-deconfinement-a6156.html" id="lien-prefecture">Site</a>'
+        )
+    })
+
     describe('Caractéristiques à risques', function () {
         it('âge', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)

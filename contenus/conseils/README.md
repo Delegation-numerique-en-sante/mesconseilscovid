@@ -166,6 +166,38 @@ Pour plus d’informations :
 
 * la fiche : [« quelles conduites adopter et quel sera mon parcours si j’ai été en contact avec un cas Covid-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_personne_contact.pdf) du ministère des solidarités et de la santé ;
 
+* l’infographie : [« je suis une personne contact d’un cas COVID-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-personne_contact.pdf). 
+
+* les gestes barrières : [« Comment se protéger du coronavirus COVID-19 ? »](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf) du ministère des solidarités et de la santé.
+
+
+
+## [conseils_département_défaut.md](conseils_département_défaut.md)
+
+Pour plus d’informations, vous pouvez consulter les <a href="#conseils-departement" id="lien-prefecture">règles spécifiques de votre département</a> sur le site de votre préfecture.
+
+
+
+## [conseils_département_orange.md](conseils_département_orange.md)
+
+Votre département est en **niveau orange**, la circulation épidémique justifie une vigilance accrue face au virus. Le déconfinement y prend une forme plus stricte.
+
+
+
+## [conseils_département_rouge.md](conseils_département_rouge.md)
+
+Votre département est en **niveau rouge**, la circulation épidémique justifie une vigilance accrue face au virus. Le déconfinement y prend une forme plus stricte.
+
+
+
+## [conseils_département_vert.md](conseils_département_vert.md)
+
+Votre département est en **niveau vert**. Cependant le virus circule toujours, maintenez les gestes barrières.
+
+
+
+## [conseils_foyer_enfant_garde.md](conseils_foyer_enfant_garde.md)
+
 * l’infographie : [« je suis une personne contact d’un cas Covid-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-personne_contact.pdf).
 
 
