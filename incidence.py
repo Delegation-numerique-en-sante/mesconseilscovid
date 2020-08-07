@@ -40,8 +40,8 @@ def aggregate_by_departement(data):
 def aggregate_by_week(by_departement):
     by_week = {}
     for departement, data in by_departement.items():
-        by_week[departement] = sum(
-            float(item[1]) for item in sorted(data, reverse=True)[:7]
+        by_week[departement] = round(
+            sum(float(item[1]) for item in sorted(data, reverse=True)[:7]), 1
         )
     return by_week
 
