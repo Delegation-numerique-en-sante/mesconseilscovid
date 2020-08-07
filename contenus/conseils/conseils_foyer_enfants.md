@@ -1,4 +1,4 @@
-[Visitez « Conseils pour les moins de 15 ans »](#pediatrie) pour des informations relatives aux activités et à la santé des enfants en période de Covid-19.
+Visitez [« Conseils pour les moins de 15 ans »](#pediatrie) pour des informations relatives aux activités et à la santé des enfants en période de Covid-19.
 
 Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face au Covid, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants :
 
