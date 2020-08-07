@@ -507,11 +507,13 @@ select {
     padding: 8px;
     font-size: 16px;
 }
+
+a.button:focus,
 input[type='text']:focus,
 input[type='submit']:focus,
 select:focus {
     outline: none;
-    box-shadow: 0 0 5px 0 -webkit-focus-ring-color;
+    box-shadow: 0 0 10px 0 #5002fb;
 }
 
 a.button,
@@ -656,8 +658,8 @@ input[type='checkbox']:checked + label::after {
 }
 input[type='checkbox']:focus + label::before,
 input[type='radio']:focus + label::before {
-    outline: #5d9dd5 solid 1px;
-    box-shadow: 0 0px 8px #5e9ed6;
+    outline: 1px solid #5002fb;
+    box-shadow: 0 0px 8px #5002fb;
 }
 
 input[type='checkbox'],
