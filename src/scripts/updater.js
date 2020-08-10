@@ -47,37 +47,9 @@ class Updater {
         } else {
             const pageName = pagination.getCurrentPageName()
             if (this.isFillingQuestionnaire()) {
-                document.addEventListener('show-banner', (event) => {
-                    // Even with an event, we need to wait for the next few
-                    // ticks to be able to scroll to the newly visible element.
-                    setTimeout(() => {
-                        event.detail.scrollIntoView({ behavior: 'smooth' })
-                    }, 100)
-                    const refreshButton = event.detail.querySelector(
-                        '#refresh-button-banner'
-                    )
-                    refreshButton.setAttribute('href', '#' + pageName)
-                    refreshButton.addEventListener(
-                        'click',
-                        this.forceReloadCurrentPageWithHash
-                    )
-                })
-                this.showBanner(document)
+                this.notifyUserWithoutInterrupting(pageName)
             } else {
-                document.addEventListener(
-                    'pageChanged:nouvelleversiondisponible',
-                    () => {
-                        const refreshButton = document.querySelector(
-                            '#nouvelle-version-disponible-block #refresh-button'
-                        )
-                        refreshButton.setAttribute('href', '#' + pageName)
-                        refreshButton.addEventListener(
-                            'click',
-                            this.forceReloadCurrentPageWithHash
-                        )
-                    }
-                )
-                this.router.navigate('nouvelleversiondisponible')
+                this.redirectUserToUpdatePage(pageName)
             }
         }
     }
@@ -102,6 +74,31 @@ class Updater {
             pageName === 'symptomespasses' ||
             pageName === 'contactarisque'
         )
+    }
+
+    notifyUserWithoutInterrupting(pageName) {
+        document.addEventListener('show-banner', (event) => {
+            // Even with an event, we need to wait for the next few
+            // ticks to be able to scroll to the newly visible element.
+            setTimeout(() => {
+                event.detail.scrollIntoView({ behavior: 'smooth' })
+            }, 100)
+            const refreshButton = event.detail.querySelector('#refresh-button-banner')
+            refreshButton.setAttribute('href', '#' + pageName)
+            refreshButton.addEventListener('click', this.forceReloadCurrentPageWithHash)
+        })
+        this.showBanner(document)
+    }
+
+    redirectUserToUpdatePage(pageName) {
+        document.addEventListener('pageChanged:nouvelleversiondisponible', () => {
+            const refreshButton = document.querySelector(
+                '#nouvelle-version-disponible-block #refresh-button'
+            )
+            refreshButton.setAttribute('href', '#' + pageName)
+            refreshButton.addEventListener('click', this.forceReloadCurrentPageWithHash)
+        })
+        this.router.navigate('nouvelleversiondisponible')
     }
 }
 
