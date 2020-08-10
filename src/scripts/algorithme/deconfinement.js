@@ -16,9 +16,12 @@ class AlgorithmeDeconfinement {
 
     isSuiviRegulier() {
         // Au moins une entrée ces dernières 24h + une entrée ces dernières 48h.
+        const maintenant = utils.joursAvant(0)
+        const ilYA24h = utils.joursAvant(1)
+        const ilYA48h = utils.joursAvant(2)
         return (
-            this.profil.suiviDerniersJours(1).length >= 1 &&
-            this.profil.suiviDerniersJours(2).length >= 2
+            this.profil.suiviEntre(ilYA24h, maintenant).length >= 1 &&
+            this.profil.suiviEntre(ilYA48h, ilYA24h).length >= 1
         )
     }
 

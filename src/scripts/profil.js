@@ -280,6 +280,13 @@ class Profil {
         )
     }
 
+    suiviEntre(strictementApres, avant) {
+        return this.suivi.filter((etat) => {
+            const date = new Date(etat.date)
+            return date > strictementApres && date <= avant
+        })
+    }
+
     estMonProfil() {
         return this.nom == 'mes_infos'
     }
