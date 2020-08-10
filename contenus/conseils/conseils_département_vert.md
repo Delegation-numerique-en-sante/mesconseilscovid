@@ -1,1 +1,1 @@
-Votre département est en **niveau vert**. Cependant le virus circule toujours, maintenez les gestes barrières.
+La circulation du virus est relativement lente dans votre département. Par précaution, maintenez les gestes barrières.
