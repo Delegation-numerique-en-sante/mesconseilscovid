@@ -84,10 +84,9 @@ function deleteOldCaches() {
 }
 
 self.addEventListener('fetch', function (evt) {
-    console.log('The service worker is serving the asset.')
-
     evt.respondWith(
         fromNetwork(evt.request, TIMEOUT).catch(function () {
+            console.debug(`Service worker serving ${evt.request.url} from cache`)
             return fromCache(evt.request)
         })
     )
