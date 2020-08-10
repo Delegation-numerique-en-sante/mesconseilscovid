@@ -21,8 +21,12 @@ class Updater {
         xhr.open('GET', 'version.json?' + new Date().getTime(), true)
         xhr.setRequestHeader('Cache-Control', 'no-cache')
         xhr.onload = () => {
-            const jsonResponse = JSON.parse(xhr.responseText)
-            this.updateVersion(jsonResponse.version)
+            if (xhr.status === 200) {
+                const jsonResponse = JSON.parse(xhr.responseText)
+                this.updateVersion(jsonResponse.version)
+            } else {
+                console.debug('Impossible de récupérer les informations de mise à jour')
+            }
         }
         xhr.onerror = () => {
             console.debug('Impossible de récupérer les informations de mise à jour')
