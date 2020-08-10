@@ -52,6 +52,7 @@ const CACHE_FILES = [
     'suivi_ok.svg',
     'suivi_stable.svg',
     'suivi_interrogation.svg',
+    'departements-1000m.geojson',
 ]
 const TIMEOUT = 500 // ms.
 
