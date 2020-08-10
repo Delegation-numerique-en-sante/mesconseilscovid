@@ -21,5 +21,5 @@ Pour plus d’informations :
 
 * Plus d’informations autour du Covid-19 :
   * [Covid19-faq](https://www.covid19-faq.fr/) ou appeler le [0 800 130 000](tel:+33800130000)
-  * [Une antibiothérapie](https://sante.fr/antibiomalin) n'est pas efficace en l'absence de signes de gravité liés au Covid-19.
-  * L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) peut vous permettre de vous prévenir immédiatement si vous avez été en contact rapproché avec une personne testée positive au COVID-19.
+  * [Une antibiothérapie](https://sante.fr/antibiomalin) n'est pas efficace en l'absence de signes de gravité liés au Covid-19
+  * L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) peut vous permettre de vous prévenir immédiatement si vous avez été en contact rapproché avec une personne testée positive au COVID-19
