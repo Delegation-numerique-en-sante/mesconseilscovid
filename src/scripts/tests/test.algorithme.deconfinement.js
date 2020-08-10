@@ -134,9 +134,49 @@ describe('Algorithme déconfinement', function () {
             assert.strictEqual(algoDeconfinement.isSuiviRegulier(), false)
         })
 
+        it('Faux si deux entrées ces dernières 24h seulement', function () {
+            const data = {
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                    },
+                    {
+                        date: new Date().toJSON(),
+                    },
+                ],
+            }
+            profil.fillData(data)
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoDeconfinement = new AlgorithmeDeconfinement(
+                profil,
+                algoOrientation
+            )
+            assert.strictEqual(algoDeconfinement.isSuiviRegulier(), false)
+        })
+
         it('Faux si une entrée ces dernières 48h seulement', function () {
             const data = {
                 suivi: [
+                    {
+                        date: utils.joursAvant(1).toJSON(),
+                    },
+                ],
+            }
+            profil.fillData(data)
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoDeconfinement = new AlgorithmeDeconfinement(
+                profil,
+                algoOrientation
+            )
+            assert.strictEqual(algoDeconfinement.isSuiviRegulier(), false)
+        })
+
+        it('Faux si deux entrées ces dernières 48h seulement', function () {
+            const data = {
+                suivi: [
+                    {
+                        date: utils.joursAvant(1).toJSON(),
+                    },
                     {
                         date: utils.joursAvant(1).toJSON(),
                     },
