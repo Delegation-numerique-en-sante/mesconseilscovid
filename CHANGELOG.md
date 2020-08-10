@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-08-10
+
+* corrige une des conditions de déconfinement post-suivi
+
 ## 2020-08-06
 
 * retrait du bloc de conseils relatif à la localisation (couleur des départements)
