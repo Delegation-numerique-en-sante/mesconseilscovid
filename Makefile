@@ -49,7 +49,7 @@ endif
 check: check-links check-versions check-documentation check-service-worker
 
 check-links:  # Check that links to external pages are still valid.
-	python3 check.py links --timeout 30
+	python3 check.py links --timeout 30 --delay 0.2
 
 check-versions:  # Check that current version matches service-worker one.
 	python3 check.py versions
