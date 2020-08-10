@@ -62,6 +62,27 @@ self.addEventListener('install', function (evt) {
     evt.waitUntil(precache())
 })
 
+self.addEventListener('activate', (event) => {
+    event.waitUntil(
+        deleteOldCaches().then(() => {
+            console.log('The service worker is ready to handle fetches')
+        })
+    )
+})
+
+function deleteOldCaches() {
+    return caches.keys().then((keys) =>
+        Promise.all(
+            keys.map((key) => {
+                if (key !== CACHE_NAME) {
+                    console.log('Deleting old cache', key)
+                    return caches.delete(key)
+                }
+            })
+        )
+    )
+}
+
 self.addEventListener('fetch', function (evt) {
     console.log('The service worker is serving the asset.')
 
