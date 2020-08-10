@@ -68,7 +68,6 @@ def service_worker():
         "template.html",
         "index.html",
         "illustrations/mesconseilscovid.png",
-        "departements-1000m.geojson",
         "browserconfig.xml",
     }
     REQUIRED_FILES = {"/", "style.css", "scripts/main.js", "favicon.ico"}
