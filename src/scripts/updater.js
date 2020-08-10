@@ -54,14 +54,6 @@ class Updater {
         }
     }
 
-    forceReloadCurrentPageWithHash(event) {
-        event.preventDefault()
-        // We need to go to the page _before_ we reload.
-        // Hence the double reload feeling…
-        window.location = event.target.href
-        window.location.reload(true) // `true` means: reload from server.
-    }
-
     isFillingQuestionnaire() {
         const pageName = pagination.getCurrentPageName()
         return (
@@ -99,6 +91,14 @@ class Updater {
             refreshButton.addEventListener('click', this.forceReloadCurrentPageWithHash)
         })
         this.router.navigate('nouvelleversiondisponible')
+    }
+
+    forceReloadCurrentPageWithHash(event) {
+        event.preventDefault()
+        // We need to go to the page _before_ we reload.
+        // Hence the double reload feeling…
+        window.location = event.target.href
+        window.location.reload(true) // `true` means: reload from server.
     }
 }
 
