@@ -32,7 +32,11 @@ def links(timeout: int = 10, delay: float = 0.1):
     parser.feed(content)
     for link in sorted(parser.links):
         print(link)
-        response = httpx.get(link, timeout=timeout)
+        response = httpx.get(
+            link,
+            timeout=timeout,
+            verify=False,  # ignore SSL certificate validation errors
+        )
         if response.status_code != HTTPStatus.OK:
             raise Exception(f"{link} is broken! ({response.status_code})")
         time.sleep(delay)  # avoid being throttled
