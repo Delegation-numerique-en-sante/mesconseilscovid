@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 import json
+import time
 from html.parser import HTMLParser
-from pathlib import Path
-from time import perf_counter
 from http import HTTPStatus
+from pathlib import Path
 
 import httpx
-from minicli import cli, run, wrap
+from minicli import cli, run
 
 from build import each_folder_from, each_file_from
 
@@ -26,7 +26,7 @@ class LinkExtractor(HTMLParser):
 
 
 @cli
-def links(timeout: int = 10):
+def links(timeout: int = 10, delay: float = 0.1):
     parser = LinkExtractor()
     content = open(HERE / "src" / "index.html").read()
     parser.feed(content)
@@ -35,6 +35,7 @@ def links(timeout: int = 10):
         response = httpx.get(link, timeout=timeout)
         if response.status_code != HTTPStatus.OK:
             raise Exception(f"{link} is broken! ({response.status_code})")
+        time.sleep(delay)  # avoid being throttled
 
 
 @cli
