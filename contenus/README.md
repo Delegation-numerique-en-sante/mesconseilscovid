@@ -60,7 +60,7 @@ Réponse : [réponse_département.md](réponses/réponse_département.md)
 
 Conseils :
 
-1. [conseils rouge](conseils/conseils_département_rouge.md), [conseils orange](conseils/conseils_département_orange.md) ou [conseils vert](conseils/conseils_département_vert.md) selon le taux d’[Incidence](#incidence) du département
+1. [conseils circulation faible](conseils/conseils_département_circulation_faible.md) ou [conseils circulation élevée](conseils/conseils_département_circulation_élevée.md) selon le taux d’[Incidence](#incidence) du département
 2. [conseils par défaut](conseils/conseils_département_défaut.md)
 
 

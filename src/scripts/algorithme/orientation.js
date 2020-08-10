@@ -200,14 +200,10 @@ class AlgorithmeOrientation {
             return []
         }
         blockNames.push('conseils-departement')
-        if (this.incidence > 20) {
-            blockNames.push('conseils-departement-rouge')
-        }
-        if (this.incidence <= 20 && this.incidence > 5) {
-            blockNames.push('conseils-departement-orange')
-        }
-        if (this.incidence <= 5) {
-            blockNames.push('conseils-departement-vert')
+        if (this.incidence >= 10) {
+            blockNames.push('conseils-departement-circulation-elevee')
+        } else {
+            blockNames.push('conseils-departement-circulation-faible')
         }
         return blockNames
     }

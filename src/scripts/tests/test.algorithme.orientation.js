@@ -368,7 +368,7 @@ describe('Algorithme d’orientation', function () {
     })
 
     describe('Département', function () {
-        it('Un département vert affiche le bloc vert', function () {
+        it('Un département à circulation faible', function () {
             var data = {
                 departement: '02',
             }
@@ -376,11 +376,11 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
                 'conseils-departement',
-                'conseils-departement-vert',
+                'conseils-departement-circulation-faible',
             ])
         })
 
-        it('Un département orange affiche le bloc orange', function () {
+        it('Un département à circulation élevée', function () {
             var data = {
                 departement: '34',
             }
@@ -388,19 +388,7 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
                 'conseils-departement',
-                'conseils-departement-orange',
-            ])
-        })
-
-        it('Un département rouge affiche le bloc orange', function () {
-            var data = {
-                departement: '75',
-            }
-            profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
-                'conseils-departement',
-                'conseils-departement-rouge',
+                'conseils-departement-circulation-elevee',
             ])
         })
 
@@ -432,7 +420,7 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
                 'conseils-departement',
-                'conseils-departement-vert',
+                'conseils-departement-circulation-faible',
             ])
         })
 
@@ -445,7 +433,7 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
                 'conseils-departement',
-                'conseils-departement-vert',
+                'conseils-departement-circulation-faible',
             ])
         })
     })
