@@ -1,13 +1,18 @@
 var pagination = require('./pagination.js')
 var affichage = require('./affichage.js')
 
-module.exports = function (router) {
-    this.checkForUpdatesEvery = function (intervalInMinutes) {
+class Updater {
+    constructor(router) {
+        this.router = router
+        this.currentVersion = null
+    }
+
+    checkForUpdatesEvery(intervalInMinutes) {
         this.checkForUpdate()
         setInterval(this.checkForUpdate.bind(this), intervalInMinutes * 60 * 1000)
     }
 
-    this.checkForUpdate = function () {
+    checkForUpdate() {
         const pageName = pagination.getCurrentPageName()
         if (pageName === 'nouvelleversiondisponible') {
             return
@@ -25,15 +30,13 @@ module.exports = function (router) {
         xhr.send()
     }
 
-    this.currentVersion = null
-
-    this.showBanner = function (document) {
+    showBanner(document) {
         const block = document.querySelector('#update-banner')
         affichage.showElement(block)
         document.dispatchEvent(new CustomEvent('show-banner', { detail: block }))
     }
 
-    this.updateVersion = function (fetchedVersion) {
+    updateVersion(fetchedVersion) {
         if (this.currentVersion === null || this.currentVersion === fetchedVersion) {
             this.currentVersion = fetchedVersion
             return
@@ -70,12 +73,12 @@ module.exports = function (router) {
                         )
                     }
                 )
-                router.navigate('nouvelleversiondisponible')
+                this.router.navigate('nouvelleversiondisponible')
             }
         }
     }
 
-    this.forceReloadCurrentPageWithHash = function (event) {
+    forceReloadCurrentPageWithHash(event) {
         event.preventDefault()
         // We need to go to the page _before_ we reload.
         // Hence the double reload feeling…
@@ -83,7 +86,7 @@ module.exports = function (router) {
         window.location.reload(true) // `true` means: reload from server.
     }
 
-    this.isFillingQuestionnaire = function () {
+    isFillingQuestionnaire() {
         const pageName = pagination.getCurrentPageName()
         return (
             pageName === 'residence' ||
@@ -96,4 +99,8 @@ module.exports = function (router) {
             pageName === 'contactarisque'
         )
     }
+}
+
+module.exports = {
+    Updater,
 }

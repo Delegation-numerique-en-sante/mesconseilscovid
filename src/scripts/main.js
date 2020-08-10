@@ -7,7 +7,7 @@ import './polyfills/custom_event.js'
 
 import { register } from 'timeago.js'
 
-var Updater = require('./updater.js')
+var Updater = require('./updater.js').Updater
 var actions = require('./actions.js')
 var Router = require('./router.js')
 var App = require('./app.js').App
