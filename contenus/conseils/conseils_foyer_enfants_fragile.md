@@ -1,4 +1,4 @@
-Visitez [« Conseils pour les moins de 15 ans »](#pediatrie) pour des informations relatives aux activités et à la santé des enfants en période de Covid-19.
+Conseultez les [« conseils liés aux activités et à la santé des moins de 15 ans »](#pediatrie) face au Covid-19.
 
 Si vos enfants sortent à l’extérieur du foyer, il convient de mettre en place des mesures de **distanciation physique renforcée** :
 
