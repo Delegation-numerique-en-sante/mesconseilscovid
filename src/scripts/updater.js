@@ -5,6 +5,7 @@ class Updater {
     constructor(router) {
         this.router = router
         this.currentVersion = null
+        this.updateInProgress = false
     }
 
     checkForUpdatesEvery(intervalInMinutes) {
@@ -13,10 +14,15 @@ class Updater {
     }
 
     checkForUpdate() {
+        if (this.updateInProgress === true) {
+            return
+        }
+
         const pageName = pagination.getCurrentPageName()
         if (pageName === 'nouvelleversiondisponible') {
             return
         }
+
         const xhr = new XMLHttpRequest()
         xhr.open('GET', 'version.json?' + new Date().getTime(), true)
         xhr.setRequestHeader('Cache-Control', 'no-cache')
@@ -44,13 +50,15 @@ class Updater {
         if (this.currentVersion === null || this.currentVersion === fetchedVersion) {
             this.currentVersion = fetchedVersion
             return
+        }
+
+        this.updateInProgress = true
+
+        const pageName = pagination.getCurrentPageName()
+        if (this.isFillingQuestionnaire()) {
+            this.notifyUserWithoutInterrupting(pageName)
         } else {
-            const pageName = pagination.getCurrentPageName()
-            if (this.isFillingQuestionnaire()) {
-                this.notifyUserWithoutInterrupting(pageName)
-            } else {
-                this.redirectUserToUpdatePage(pageName)
-            }
+            this.redirectUserToUpdatePage(pageName)
         }
     }
 
