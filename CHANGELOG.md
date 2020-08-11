@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-08-11
+
+* améliore l’accessibilité et la navigation au clavier
+
 ## 2020-08-10
 
 * corrige une des conditions de déconfinement post-suivi
