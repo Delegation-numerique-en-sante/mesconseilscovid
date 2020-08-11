@@ -680,6 +680,7 @@ input[type='radio']:disabled + label::before {
     background: #ddd;
 }
 
+a.button[href=''],
 input[type='submit']:disabled {
     color: black;
     background: #ddd;

@@ -62,6 +62,13 @@ self.addEventListener('install', function (evt) {
     evt.waitUntil(precache())
 })
 
+self.addEventListener('message', (event) => {
+    if (event.data === 'skipWaiting') {
+        console.log('Activating service worker now (skip waiting)')
+        self.skipWaiting()
+    }
+})
+
 self.addEventListener('activate', (event) => {
     event.waitUntil(
         deleteOldCaches().then(() => {
