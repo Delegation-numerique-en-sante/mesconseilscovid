@@ -218,14 +218,14 @@ main footer {
     background-size: 40%;
 }
 
-#conseils-departement h3,
-#conseils-activite h3,
-#conseils-foyer h3,
-#conseils-caracteristiques h3,
-#conseils-generaux h3,
-#conseils-pediatrie-general h3,
-#conseils-pediatrie-ecole h3,
-#conseils-pediatrie-medical h3,
+#conseils-departement header,
+#conseils-activite header,
+#conseils-foyer header,
+#conseils-caracteristiques header,
+#conseils-generaux header,
+#conseils-pediatrie-general header,
+#conseils-pediatrie-ecole header,
+#conseils-pediatrie-medical header,
 #conseils-block.symptomes-actuels h2.with-illustration,
 #conseils-block.symptomes-passes h2.with-illustration,
 #conseils-block.contact-a-risque h2.with-illustration {
@@ -235,7 +235,7 @@ main footer {
     background-size: 50%;
     margin-top: 1rem;
 }
-#conseils-pediatrie-general h3 {
+#conseils-pediatrie-general header {
     padding-top: 200px;
 }
 @media only screen and (min-width: 450px) {
@@ -254,21 +254,21 @@ main footer {
         background-size: 30%;
     }
 
-    #conseils-departement h3,
-    #conseils-activite h3,
-    #conseils-foyer h3,
-    #conseils-caracteristiques h3,
-    #conseils-generaux h3,
-    #conseils-pediatrie-general h3,
-    #conseils-pediatrie-ecole h3,
-    #conseils-pediatrie-medical h3,
+    #conseils-departement header,
+    #conseils-activite header,
+    #conseils-foyer header,
+    #conseils-caracteristiques header,
+    #conseils-generaux header,
+    #conseils-pediatrie-general header,
+    #conseils-pediatrie-ecole header,
+    #conseils-pediatrie-medical header,
     #conseils-block.symptomes-actuels h2.with-illustration,
     #conseils-block.symptomes-passes h2.with-illustration,
     #conseils-block.contact-a-risque h2.with-illustration {
         padding-top: 300px;
         background-size: 40%;
     }
-    #conseils-pediatrie-general h3 {
+    #conseils-pediatrie-general header {
         padding-top: 400px;
     }
 }
@@ -277,19 +277,19 @@ main footer {
     background-image: url('illustrations/nom.svg');
 }
 #residence-form,
-#conseils-departement h3 {
+#conseils-departement header {
     background-image: url('illustrations/residence.svg');
 }
 #activite-pro-form,
-#conseils-activite h3 {
+#conseils-activite header {
     background-image: url('illustrations/activitepro.svg');
 }
 #foyer-form,
-#conseils-foyer h3 {
+#conseils-foyer header {
     background-image: url('illustrations/foyer.svg');
 }
 #caracteristiques-form,
-#conseils-caracteristiques h3 {
+#conseils-caracteristiques header {
     background-image: url('illustrations/caracteristiques.svg');
 }
 #antecedents-form,
@@ -297,16 +297,16 @@ main footer {
     background-image: url('illustrations/antecedents.svg');
 }
 .tagline,
-#conseils-generaux h3 {
+#conseils-generaux header {
     background-image: url('illustrations/accueil.svg');
 }
-#conseils-pediatrie-general h3 {
+#conseils-pediatrie-general header {
     background-image: url('illustrations/pediatriegeneral.svg');
 }
-#conseils-pediatrie-ecole h3 {
+#conseils-pediatrie-ecole header {
     background-image: url('illustrations/pediatrieecole.svg');
 }
-#conseils-pediatrie-medical h3 {
+#conseils-pediatrie-medical header {
     background-image: url('illustrations/pediatriemedical.svg');
 }
 #conseils-block.symptomes-actuels h2.with-illustration,
@@ -329,8 +329,13 @@ main footer {
 }
 .conseils h3,
 #historique h3 {
+    display: flex;
+    justify-content: space-between;
     color: #000091;
     font-size: 175%;
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.35rem;
 }
 .conseils h4 {
     margin-top: 3rem;
@@ -756,10 +761,11 @@ a[href*='youtube.com']::after {
     cursor: pointer;
     list-style: none;
 }
-.conseils details summary h3 {
+.conseils details summary header {
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
+    margin: 0;
 }
 .conseils details summary svg {
     height: 40px;
@@ -771,6 +777,10 @@ a[href*='youtube.com']::after {
 .conseils details[open] {
     outline: 0;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8);
+}
+.conseils details summary:focus h3 {
+    outline: 0;
+    box-shadow: 0 0px 8px #5002fb;
 }
 .conseils details[open] summary svg {
     transform: rotate(450deg);
@@ -864,11 +874,11 @@ a#geolocalisation {
 }
 
 @media print {
-    #conseils-departement h3,
-    #conseils-activite h3,
-    #conseils-foyer h3,
-    #conseils-caracteristiques h3,
-    #conseils-generaux h3,
+    #conseils-departement header,
+    #conseils-activite header,
+    #conseils-foyer header,
+    #conseils-caracteristiques header,
+    #conseils-generaux header,
     #conseils-block.symptomes-actuels h2,
     #conseils-block.symptomes-passes h2,
     #conseils-block.contact-a-risque h2 {
