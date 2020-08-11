@@ -474,7 +474,7 @@ fieldset ul.details {
 .form-controls {
     display: flex;
     justify-content: space-between;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
 }
 .form-controls .back-button {
@@ -557,7 +557,7 @@ a.button-red {
     only screen and (min-resolution: 192dpi) and (min-width: 680px),
     only screen and (min-resolution: 2dppx) and (min-width: 680px) {
     .form-controls {
-        flex-direction: row;
+        flex-direction: row-reverse;
         align-items: baseline;
     }
     .form-controls .back-button {
