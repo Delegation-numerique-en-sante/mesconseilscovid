@@ -138,9 +138,7 @@ class Updater {
 
         // Change the URL without triggering the router
         this.router.pause()
-        console.debug(window.location.href)
         window.location = button.href
-        console.debug(window.location.href)
 
         // User feedback as it may take more than a few milliseconds
         button.innerText = 'Mise à jour en cours...'
