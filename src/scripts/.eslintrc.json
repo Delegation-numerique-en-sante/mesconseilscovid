@@ -16,7 +16,8 @@
     "settings": {
         "polyfills": [
             "Promise",
-            "URL"
+            "URL",
+            "URLSearchParams"
         ]
     }
 }

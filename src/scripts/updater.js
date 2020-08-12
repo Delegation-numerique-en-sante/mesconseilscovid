@@ -116,29 +116,26 @@ class Updater {
     }
 
     redirectUserToUpdatePage(pageName) {
-        document.addEventListener('pageChanged:nouvelleversiondisponible', () => {
-            const refreshButton = document.querySelector(
-                '#nouvelle-version-disponible-block #refresh-button'
-            )
-            this.setupRefreshButton(refreshButton, pageName)
-        })
-        this.router.navigate('nouvelleversiondisponible')
+        this.router.navigate(`nouvelleversiondisponible?origine=${pageName}`)
     }
 
     setupRefreshButton(button, pageName) {
         button.innerText = 'Mettre à jour'
-        button.setAttribute('href', '#' + pageName)
+        button.setAttribute('href', '#' + (pageName || 'introduction'))
         button.addEventListener('click', this.onClickRefreshButton.bind(this))
     }
 
     onClickRefreshButton(event) {
+        console.debug('Updater.onClickRefreshButton()')
         event.preventDefault()
 
         let button = event.target
 
         // Change the URL without triggering the router
         this.router.pause()
+        console.log(window.location)
         window.location = button.href
+        console.log(window.location)
 
         // User feedback as it may take more than a few milliseconds
         button.innerText = 'Mise à jour en cours...'
