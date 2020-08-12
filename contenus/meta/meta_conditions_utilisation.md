@@ -60,8 +60,8 @@ Seules vos données de connexion au service (heure, date…) sont conservées po
 
 Au sein du ministère, le responsable de traitement de mesconseilscovid.sante.gouv.fr est la Délégation ministérielle du numérique en santé (DNS) du ministère des solidarités et de la Santé. La déléguée est directrice de publication. 
 
-Vous pouvez également demander des informations ou exercer vos droits auprès de la Déléguée à la protection des données du ministère des solidarités et de la santé à l’adresse suivante 
-[dpd-minsociaux@sg.social.gouv.fr](mailto:dpd-minsociaux@sg.social.gouv.fr)
+Vous pouvez également demander des informations ou exercer vos droits concernant la protection de vos données personnelles à l’adresse suivante 
+[mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr)
 
 Le service est hébergé par :
 
