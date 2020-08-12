@@ -2,7 +2,8 @@ var affichage = require('./affichage.js')
 
 var getCurrentPageName = function () {
     var hash = document.location.hash
-    return hash ? hash.slice(1) : ''
+    var fragment = hash ? hash.slice(1) : ''
+    return fragment.split('?')[0]
 }
 
 var redirectToUnansweredQuestions = function (page, profil) {

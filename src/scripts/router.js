@@ -4,6 +4,7 @@ var introduction = require('./page/introduction.js')
 var affichage = require('./affichage.js')
 var conseils = require('./page/conseils.js')
 var questionnaire = require('./page/questionnaire.js')
+var nouvelleversion = require('./page/nouvelleversion.js')
 
 var suiviintroduction = require('./page/suiviintroduction.js')
 var suivimedecin = require('./page/suivimedecin.js')
@@ -15,6 +16,7 @@ var injection = require('./injection.js')
 var pagination = require('./pagination.js')
 
 function initRouter(app) {
+    console.debug('initRouter()')
     var root = null
     var useHash = true
     var router = new Navigo(root, useHash)
@@ -167,8 +169,13 @@ function initRouter(app) {
             pagination.loadPage(pageName)
         })
         .on(new RegExp('^nouvelleversiondisponible$'), function () {
+            const route = router.lastRouteResolved()
+            const urlParams = new URLSearchParams(route.query)
+            const origine = urlParams.get('origine')
+
             var pageName = 'nouvelleversiondisponible'
-            pagination.loadPage(pageName)
+            var element = pagination.loadPage(pageName)
+            nouvelleversion.page(element, app, origine)
         })
         .notFound(function () {
             router.navigate('introduction')

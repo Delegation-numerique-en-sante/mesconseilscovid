@@ -2,12 +2,17 @@ import { StockageLocal } from './stockage.js'
 import { Profil } from './profil.js'
 import { joursAvant } from './utils.js'
 
+var Router = require('./router.js')
+var Updater = require('./updater.js').Updater
+
 class App {
     constructor() {
         this.profil = new Profil()
         this.stockage = new StockageLocal()
     }
     init() {
+        this.router = Router.initRouter(this)
+        this.updater = new Updater(this.router)
         return this.chargerProfilActuel()
     }
     chargerProfilActuel() {
