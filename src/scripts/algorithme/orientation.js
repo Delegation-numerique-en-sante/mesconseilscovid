@@ -267,8 +267,6 @@ class AlgorithmeOrientation {
             }
             if (this.antecedents || this.profil.antecedent_chronique_autre) {
                 blockNames.push('conseils-caracteristiques-antecedents-info-risque')
-            } else {
-                blockNames.push('conseils-caracteristiques-antecedents-info')
             }
             if (this.profil.grossesse_3e_trimestre) {
                 blockNames.push('conseils-caracteristiques-antecedents-femme-enceinte')
