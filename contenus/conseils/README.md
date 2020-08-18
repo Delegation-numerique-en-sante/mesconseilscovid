@@ -6,59 +6,54 @@
 
 ## [conseils_activité_pro.md](conseils_activité_pro.md)
 
-Il est recommandé de **télétravailler** si cela vous est possible. Si vous devez vous rendre sur votre lieu de travail, le respect des **gestes barrières** et de la **distanciation physique** permet de limiter les risques de propagation du virus.
+Si cela est possible, privilégiez le **télétravail**.
+Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique** et les **gestes barrières** limitent la propagation du virus entre collègues.
 
 <span class="nouveau">nouveau</span> Plus d’informations sur :
 
-* les [gestes barrières au travail](https://travail-emploi.gouv.fr/actualites/l-actualite-du-ministere/article/covid-19-comment-assurer-ma-sante-et-ma-securite-au-travail) en vidéo
-* les [conditions de reprise et relance de l’activité](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/conditions-de-reprise-et-relance-de-l-activite/)
-* les autres questions que se posent les employeurs, les particuliers et les professionnels des secteurs du travail, de l’emploi, de la formation professionnelle sur :
-  * une [page dédiée](#medecinedutravail)
-  * le site du [ministère du travail](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/).
+* [les gestes barrières au travail](https://travail-emploi.gouv.fr/actualites/l-actualite-du-ministere/article/covid-19-comment-assurer-ma-sante-et-ma-securite-au-travail) en vidéo
+* [les conditions de reprise et relance de l’activité](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/conditions-de-reprise-et-relance-de-l-activite/)
+* les autres questions que se posent les employeurs, les particuliers et les professionnels des secteurs du travail, de l’emploi, de la formation professionnelle :
+  * [Conseils pour la médecine du travail](#medecinedutravail)
+  * [Le site du ministère du travail](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/)
 
 
 
 ## [conseils_activité_pro_arrêt.md](conseils_activité_pro_arrêt.md)
 
-Si vous risquez de développer **une forme sevère de Covid-19** en raison de votre état de santé et que vous n’avez pas la possibilité de télétravailler, vous pouvez **bénéficier d’un arrêt de travail.** Vous pouvez le demander ou le renouveller sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?p_p_id=56_INSTANCE_XV0ItAcVS4ow&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_56_INSTANCE_XV0ItAcVS4ow_read_more=2), soit auprès de votre médecin traitant.
+Si vous n’avez pas la possibilité de télétravailler et que votre état de santé vous expose au risque de développer une **forme sévère de Covid19**, vous pouvez **bénéficier d’un arrêt de travail.** Vous pouvez le demander ou le renouveller sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?p_p_id=56_INSTANCE_XV0ItAcVS4ow&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_56_INSTANCE_XV0ItAcVS4ow_read_more=2), soit auprès de votre médecin traitant.
 
 
 
 ## [conseils_activité_pro_infos.md](conseils_activité_pro_infos.md)
 
-Pour plus d’informations :
-
-* [Comment assurer sa santé et sa sécurité au travail](https://travail-emploi.gouv.fr/actualites/l-actualite-du-ministere/article/covid-19-comment-assurer-ma-sante-et-ma-securite-au-travail)
-* [L'espace dédié pour les professionnels](https://www.gouvernement.fr/info-coronavirus/espace-pour-les-professionnels)
-* [Le retour au travail](https://www.gouvernement.fr/info-coronavirus/retour-au-travail) sur le site du gouvernement.
+Pour plus d’informations, consultez [l’espace dédié pour les professionnels](https://www.gouvernement.fr/info-coronavirus/espace-pour-les-professionnels) sur le site du gouvernement.
 
 
 
 ## [conseils_activité_pro_libéral.md](conseils_activité_pro_libéral.md)
 
-<span class="nouveau">nouveau</span> En tant que **travailleur indépendant ou libéral**, vous n’avez pas de service de médecine du travail. Vous pouvez vous rapprocher du centre régional de pathologies professionnelles et environnementales de l'hôpital (CHU) le plus proche de chez vous. Ces services travaillent sur les impacts du travail (exposition professionnelle et/ou environnementale) sur la santé et peuvent **vous renseigner sur les conditions de maintien dans l’emploi au regard de votre état de santé.**
+<span class="nouveau">nouveau</span> En tant que **travailleur indépendant ou libéral**, vous n’avez pas de service de médecine du travail. Vous pouvez vous rapprocher du centre régional de pathologies professionnelles et environnementales de l’hôpital (CHU) le plus proche de chez vous. Ces services travaillent sur les impacts du travail (exposition professionnelle et/ou environnementale) sur la santé et peuvent **vous renseigner sur vos conditions de travail au regard de votre état de santé**.
 
 
 
 ## [conseils_activité_pro_public.md](conseils_activité_pro_public.md)
 
-Pour plus d'informations :
-
-* Les [**fiches-conseils métier**](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/proteger-les-travailleurs/article/fiches-conseils-metiers-et-guides-pour-les-salaries-et-les-employeurs) pour aider à la mise en œuvre des mesures de protection.
+Vous pouvez consulter les [**fiches-conseils métier**](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/proteger-les-travailleurs/article/fiches-conseils-metiers-et-guides-pour-les-salaries-et-les-employeurs) pour aider à la mise en œuvre des mesures de protection.
 
 
 
 ## [conseils_activité_pro_santé.md](conseils_activité_pro_santé.md)
 
-Pour plus d'informations :
+Pour plus d’informations :
 
-* [Protection des professionnels **de santé**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/article/protection-des-professionnels-de-sante-face-au-covid-19)
+* [La protection des professionnels **de santé**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/article/protection-des-professionnels-de-sante-face-au-covid-19)
 
-* [Professionnels **du médico-social**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-du-social-et-medico-social/)
+* [Pour les professionnels **du médico-social**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-du-social-et-medico-social/)
 
-* [La conduite à tenir](https://www.hcsp.fr/Explore.cgi/Telecharger?NomFichier=hcspa20200523_sarcovprodestabdesansocetmdisoc.pdf) vis-à-vis des professionnels intervenant en établissement de santé (ES) ainsi qu’en établissement social et médico-social (ESMS) selon leur statut vis-à-vis du SARS-CoV-2.
+* [La conduite à tenir](https://www.hcsp.fr/Explore.cgi/Telecharger?NomFichier=hcspa20200523_sarcovprodestabdesansocetmdisoc.pdf) vis-à-vis des professionnels intervenant en établissement de santé (ES) ainsi qu’en établissement social et médico-social (ESMS) selon leur statut vis-à-vis du SARS-CoV-2.
 
-* [Conseils pour les moins de 15 ans](#pediatrie) si vous travaillez auprès d’enfants et/ou vous devez conseiller des parents.
+* [Conseils pour les moins de 15 ans](#pediatrie) si vous travaillez auprès d’enfants et/ou devez conseiller des parents.
 
 
 
@@ -70,21 +65,20 @@ Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habi
 
 ## [conseils_autosuivi_historique.md](conseils_autosuivi_historique.md)
 
-<!---->À tout moment, vous pouvez consulter <a href="#suivihistorique">l’historique de vos symptômes</a>, par exemple pour <b>communiquer avec votre médecin</b> de manière plus efficace.
-
+<!---->À tout moment, vous pouvez consulter <a href="#suivihistorique">l’historique de vos symptômes</a>, par exemple pour <b>les partager avec votre médecin</b>. 
 ---
 
-<!---->À tout moment, vous pouvez consulter <a href="#suivihistorique">l’historique des symptômes</a> de votre proche, par exemple pour <b>communiquer avec son médecin</b> de manière plus efficace.
+<!---->À tout moment, vous pouvez consulter <a href="#suivihistorique">l’historique des symptômes</a> de votre proche, par exemple pour <b>les partager avec son médecin</b>.
 
 
 
 ## [conseils_autosuivi_régularité.md](conseils_autosuivi_régularité.md)
 
-<!---->Nous vous conseillons de <a href="#suiviintroduction">renseigner le questionnaire</a> <b>1 à 2 fois par jour</b>, par exemple en mettant en place un rappel sur votre téléphone ou en <a href="" class="js-calendar" download="rappel-covid19.ics">ajoutant un évènement récurrent à votre calendrier</a>.
+<!---->Nous vous conseillons de <a href="#suiviintroduction">renseigner le questionnaire</a> <b>1 à 2 fois par jour</b>. Pour vous en souvenir, mettez un rappel sur votre téléphone ou <a href="" class="js-calendar" download="rappel-covid19.ics">ajoutez un évènement récurrent à votre calendrier</a>.
 
 ---
 
-<!---->Nous vous conseillons de <a href="#suiviintroduction">renseigner son questionnaire</a> <b>1 à 2 fois par jour</b>, par exemple en mettant en place un rappel sur votre téléphone ou en <a href="" class="js-calendar" download="rappel-covid19.ics">ajoutant un évènement récurrent à votre calendrier</a>.
+<!---->Nous vous conseillons de <a href="#suiviintroduction">renseigner son questionnaire</a> <b>1 à 2 fois par jour</b>. Pour vous en souvenir, mettez un rappel sur votre téléphone ou <a href="" class="js-calendar" download="rappel-covid19.ics">ajoutez un évènement récurrent à votre calendrier</a>.
 
 
 
@@ -93,15 +87,15 @@ Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habi
 Afin d’éviter une forme grave de Covid-19, il vous est recommandé
 d’appliquer les mesures de **distanciation physique renforcée :**
 
-* Application stricte **des gestes barrières**
-* **Masque en permanence** à l’extérieur de mon foyer et à l’intérieur si je reçois des personnes étrangères à mon domicile
-* Distance de sécurité de **plus d’1 mètre** avec chaque personne
-* **Réduire les sorties** au strict minimum
-* Contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
+* Appliquez strictement **les gestes barrières**
+* Portez le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile
+* Gardez une distance de **plus d’1 mètre** avec chaque personne
+* **Réduisez vos sorties** au strict minimum
+* Contactez votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
 
 Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d’urgence.
 
-Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi.
+Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins.
 
 
 
@@ -147,32 +141,26 @@ Pour plus d’informations :
 
 * [« Faire face à une maladie chronique pendant le confinement »](https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf)
 * [Personnes à risques : Réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/personnes-a-risques-reponses-a-vos-questions)
-* [Les gestes barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf)
-* [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
 
 
 
 ## [conseils_cartographie_dépistage.md](conseils_cartographie_dépistage.md)
 
-Si votre médecin vous prescrit un **test de dépistage** covid-19, 
-le site Santé.fr vous propose la
-[carte des lieux de test du coronavirus](https://sante.fr/cartographie-depistage-covid). 
-
-Il vous prescrira peut-être une solution de [télésurveillance](https://sante.fr/covid-numerique-pro) ou autre outil numérique.
+Retrouvez le [lieu de test le plus près de vous](https://sante.fr/cartographie-depistage-covid), si votre médecin vous prescrit un **test de depistage**.
 
 
 
 ## [conseils_contact_à_risque.md](conseils_contact_à_risque.md)
 
-Nous vous conseillons de **contacter votre médecin généraliste**. Par la suite, les services de l’Assurance Maladie  vous contacteront si cela n’est pas déjà fait.
+Nous vous conseillons de **contacter votre médecin généraliste**. 
 
-En attendant plus d’informations, il vous est conseillé de :
+En attendant, il vous est conseillé de :
 
 * Vous **maintenir en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école.
 
 * Appliquer **les gestes barrières**.
 
-* Surveiller l’apparition de **symptômes** et contacter votre médecin si des symptômes apparaissent.
+* Surveiller l’apparition de **symptômes** et contacter de nouveau votre médecin si des symptômes apparaissent.
 
 
 
@@ -186,17 +174,15 @@ Vous avez passé du temps avec quelqu’un de positif mais il ne s’agit pas *a
 
 Pour plus d’informations :
 
-* la fiche : [« Quelles conduites adopter et quel sera mon parcours si j’ai été en contact avec un cas COVID-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_personne_contact.pdf) du ministère des solidarités et de la santé. 
+* la fiche : [« quelles conduites adopter et quel sera mon parcours si j’ai été en contact avec un cas Covid-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_personne_contact.pdf) du ministère des solidarités et de la santé ;
 
-* l’infographie : [« je suis une personne contact d’un cas COVID-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-personne_contact.pdf). 
-
-* les gestes barrières : [« Comment se protéger du coronavirus COVID-19 ? »](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf) du ministère des solidarités et de la santé.
+* l’infographie : [« je suis une personne contact d’un cas Covid-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-personne_contact.pdf).
 
 
 
 ## [conseils_foyer_enfants.md](conseils_foyer_enfants.md)
 
-[Visitez « Conseils pour les moins de 15 ans »](#pediatrie) pour des informations relatives aux activités et à la santé des enfants en période de Covid-19.
+Consultez les [« conseils liés aux activités et à la santé des moins de 15 ans »](#pediatrie) face au Covid-19.
 
 Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face au Covid, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants :
 
@@ -209,7 +195,7 @@ Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à 
 
 ## [conseils_foyer_enfants_fragile.md](conseils_foyer_enfants_fragile.md)
 
-[Visitez « Conseils pour les moins de 15 ans »](#pediatrie) pour des informations relatives aux activités et à la santé des enfants en période de Covid-19.
+Consultez les [« conseils liés aux activités et à la santé des moins de 15 ans »](#pediatrie) face au Covid-19.
 
 Si vos enfants sortent à l’extérieur du foyer, il convient de mettre en place des mesures de **distanciation physique renforcée** :
 
@@ -224,13 +210,11 @@ Si vos enfants sortent à l’extérieur du foyer, il convient de mettre en plac
 
 Pour plus d’informations :
 
-* Si vous n’avez **pas de solution pour faire garder votre enfant :** Informez votre employeur et envisagez avec lui les modalités de télétravail qui pourraient être mises en place, ou d’indemnisation si ce n’est pas possible.
+* [La scolarité des enfants](https://www.gouvernement.fr/info-coronavirus#questions__reponses), section « Pour vos enfants et leur scolarité ».
 
-* Les consultations de vos enfants comportant des
-**vaccins** obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment)
-doivent être **maintenues.**
+* Si vous n’avez **pas de solution pour faire garder votre enfant :** informez votre employeur et envisagez avec lui les modalités de télétravail qui pourraient être mises en place, ou d’indemnisation si ce n’est pas possible.
 
-* La scolarité des enfants sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus#questions__reponses), section « Pour vos enfants et leur scolarité ».
+* Les consultations de vos enfants comportant des **vaccins** obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) doivent être **maintenues.**
 
 
 
@@ -245,7 +229,7 @@ Il est conseillé à votre proche de :
 
 ## [conseils_foyer_fragile_accueil_enfant.md](conseils_foyer_fragile_accueil_enfant.md)
 
-Pour plus d'informations :
+Pour plus d’informations :
 
 * Si vous devez rester à domicile pour vous occuper d’une personne vulnérable et que le télétravail n’est pas possible, contactez votre médecin pour envisager les mesures possibles.
 
@@ -261,9 +245,9 @@ Pour plus d'informations :
 
 ## [conseils_généraux.md](conseils_généraux.md)
 
-<span class="nouveau">nouveau</span> **À compter du 20 juillet 2020, toute personne de 11 ans et plus [doit porter un masque grand public dans les lieux publics clos,](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/port-du-masque-grand-public-obligatoire-en-lieux-clos-faq).**
+<span class="nouveau">nouveau</span> **À compter du 20 juillet 2020, toute personne de 11 ans et plus [doit porter un masque grand public dans les lieux publics clos](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/port-du-masque-grand-public-obligatoire-en-lieux-clos-faq).**
 
-Le Covid-19 n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de [consulter au moindre signe de maladie](https://solidarites-sante.gouv.fr/grands-dossiers/deconfinement-les-recommandations-du-ministere-pour-la-reprise-des-soins-en/). Il ne faut pas craindre de déranger les professionnels de santé : ils se sont organisés pour continuer à vous prendre en charge dans des conditions sécurisées.
+Le Covid-19 n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de [consulter au moindre signe de maladie](https://solidarites-sante.gouv.fr/grands-dossiers/deconfinement-les-recommandations-du-ministere-pour-la-reprise-des-soins-en/).
 
 De plus, **l’aération régulière** [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf), le respect des **gestes barrières**, et de **distanciation physique** reste indispensable.
 
@@ -274,13 +258,13 @@ De plus, **l’aération régulière** [des pièces et espaces clos](https://sol
 Pour plus d’informations :
 
 * Le port du **masque** :
-  * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf).
-  * [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw).
-  * [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE).
+  * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
+  * [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
+  * [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
 
 * Comment **limiter la transmission** du virus ?
-  * [Quelles conduites adopter ?](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf).
-  * [Les gestes barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf).
+  * [Quelles conduites adopter ?](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)
+  * [Les gestes barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf)
 
 
 * **Les tests** pour le Covid-19 :
@@ -288,14 +272,13 @@ Pour plus d’informations :
   * [Sérologies : réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/les-serologies-reponses-a-vos-questions)
 
 * La **vie quotidienne** :
-  * [L’alimentation, les courses et le nettoyage](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses) par l'Anses
+  * [L’alimentation, les courses et le nettoyage](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses)
   * [Déplacements et voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements »)
 
 * Plus d’informations autour du Covid-19 :
   * [Covid19-faq](https://www.covid19-faq.fr/) ou appeler le [0 800 130 000](tel:+33800130000)
-  * [Le site du gouvernement](https://www.gouvernement.fr/info-coronavirus)
-  * [Une antibiothérapie](https://sante.fr/antibiomalin) n'est pas efficace en l'absence de signes de gravité liés au Covid-19.
-  * L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) : cet outil peut vous permettre de vous prévenir immédiatement si vous avez été en contact rapproché dans les derniers jours avec une personne que vous ne connaissez pas et qui vient d’être testée positive au COVID-19.
+  * [Une antibiothérapie](https://sante.fr/antibiomalin) n’est pas efficace en l’absence de signes de gravité liés au Covid-19
+  * L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) peut vous permettre de vous prévenir immédiatement si vous avez été en contact rapproché avec une personne testée positive au Covid-19
 
 
 
@@ -307,7 +290,7 @@ Pour plus d’informations sur l’isolement : [« Je suis atteint par le coro
 
 ## [conseils_maladie_chronique_info.md](conseils_maladie_chronique_info.md)
 
-Pour plus d’informations, vous pouvez prendre connaissance du document [« Faire face à une maladie chronique pendant le confinement »](https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf) de la HAS.
+Pour plus d’informations, consultez le document [« Faire face à une maladie chronique pendant le confinement »](https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf) de la Haute Autorité de Santé.
 
 
 
@@ -333,65 +316,57 @@ Pour plus d’informations, vous pouvez prendre connaissance du document [« Fa
 
 ## [conseils_symptômes_actuels_gravité1.md](conseils_symptômes_actuels_gravité1.md)
 
-Pour agir, il vous est conseillé :
+* **Contactez votre médecin** pour obtenir une téléconsultation ou une consultation. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde en composant le [0 800 130 000](tel:+33800130000). 
 
-* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le [0 800 130 000](tel:+33800130000) ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
+* Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 
-* De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
+* Prenez connaissance des prochaines étapes du parcours : [j’ai des symptômes du Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
 
-* De prendre connaissance de l’**infographie** sur le parcours : [j’ai des symptômes du COVID-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
-
-* D’appliquer les **gestes barrières**.
+* Appliquez strictement les **gestes barrières**.
 
 
 
 ## [conseils_symptômes_actuels_gravité2.md](conseils_symptômes_actuels_gravité2.md)
 
-Pour agir, il vous est conseillé :
-
-* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le [0 800 130 000](tel:+33800130000) ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
+* **Contactez votre médecin** pour obtenir une téléconsultation ou une consultation. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde en composant le [0 800 130 000](tel:+33800130000). 
 
 * Si vous n’arrivez pas à obtenir de consultation, **appelez le 15**.
 
-* De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
+* Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 
-* De prendre connaissance de l’**infographie** sur le parcours : [j’ai des symptômes du COVID-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
+* Prenez connaissance des prochaines étapes du parcours : [j’ai des symptômes du Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
 
-* D’appliquer les **gestes barrières**.
+* Appliquez strictement les **gestes barrières**.
 
 
 
 ## [conseils_symptômes_actuels_gravité3.md](conseils_symptômes_actuels_gravité3.md)
 
-Pour agir, il vous est conseillé :
-
-* De **contacter votre médecin** pour obtenir une téléconsultation ou une consultation après avoir obtenu son accord pour vous recevoir dans des conditions adéquates. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde. Pour cela, vous pouvez composer le [0 800 130 000](tel:+33800130000) ou trouver la liste des médecins de garde sur Internet, auprès de votre pharmacie ou de votre laboratoire d’analyses médicales. 
+* **Contactez votre médecin** pour obtenir une téléconsultation ou une consultation. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde en composant le [0 800 130 000](tel:+33800130000). 
 
 * Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent **pendant plus de 24 heures**.
 
-* De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
+* Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 
-* De prendre connaissance de l’**infographie** sur le parcours : [j’ai des symptômes du COVID-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
+* Prenez connaissance des prochaines étapes du parcours : [j’ai des symptômes du Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
 
-* D’appliquer les **gestes barrières**.
+* Appliquez strictement les **gestes barrières**.
 
 
 
 ## [conseils_symptômes_actuels_gravité4.md](conseils_symptômes_actuels_gravité4.md)
 
-Pour agir, il vous est conseillé :
+* Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 
-* De vous maintenir **en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
+* Prenez connaissance des prochaines étapes du parcours : [j’ai des symptômes du Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
 
-* De prendre connaissance de l’**infographie** sur le parcours : [j’ai des symptômes du COVID-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
-
-* D’appliquer les **gestes barrières**.
+* Appliquez strictement les **gestes barrières**.
 
 
 
 ## [conseils_symptômes_défaut.md](conseils_symptômes_défaut.md)
 
-Si vous le souhaitez, **vous pouvez limiter la chaîne de transmission** en informant vous-même vos proches et contacts à risque. Le site [BriserLaChaine.org](https://www.briserlachaine.org/statut) peut vous aider à vous souvenir de toutes les personnes que vous avez croisé depuis le début de votre période contagieuse. 
+Pour **limiter la chaîne de transmission**, informez vos proches et les personnes que vous avez croisés dernièrement. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisé depuis le début de votre période contagieuse. 
 
 
 
@@ -415,11 +390,9 @@ De façon générale il est conseillé une levée de l’isolement 10 jours apr�
 
 ## [conseils_symptômes_passés_sans_risques.md](conseils_symptômes_passés_sans_risques.md)
 
-Il vous est conseillé de :
+* Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 
-* **Vous maintenir en isolement** ainsi que **votre foyer**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
-
-* **Contacter votre médecin** pour avoir des informations personnalisées sur l’isolement et les tests diagnostiques.
+* **Contactez votre médecin** pour avoir des informations personnalisées sur l’isolement et les **tests de depistage**.
 
 * Appliquer les **gestes barrières**.
 

@@ -252,7 +252,7 @@ Si vous ne disposez pas de ces informations précises, vous pouvez saisir une ap
 
 <sup>*</sup>
 Une personne considérée comme fragile face au covid-19 est une personne présentant au moins une des caractéristiques suivantes :  
-* avoir un âge > ou égal à 65 ans,
+* avoir un âge > ou égal à 65 ans,
 * avoir une obésité, c’est-à-dire un indice de masse corporelle (IMC) > 30 kgm<sup>-2</sup>,
 * être enceinte au 3<sup>e</sup> trimestre de grossesse, 
 * ou avoir une ou plusieurs de ces conditions : 
@@ -421,14 +421,14 @@ Avez-vous remarqué chez votre proche l’apparition d’une forte **somnolence*
 
 ## [question_suivi_symptômes_maux_de_tête_aide.md](question_suivi_symptômes_maux_de_tête_aide.md)
 
-De manière générale, l’auto-médication par des médicaments anti-inflammatoires doit être proscrite. De plus, il semblerait que les anti-inflammatoires non stéroïdiens (AINS, comme l’Ibuprofène ou le Kétoprofène) pourraient aggraver l’infection à COVID-19.
+De manière générale, l’auto-médication par des médicaments anti-inflammatoires doit être proscrite. De plus, il semblerait que les anti-inflammatoires non stéroïdiens (AINS, comme l’Ibuprofène ou le Kétoprofène) pourraient aggraver l’infection à Covid-19.
 
-Ainsi, dans le cas d’une infection au coronavirus COVID-19 :
+Ainsi, dans le cas d’une infection au coronavirus Covid-19 :
 
-* Seul le paracétamol est recommandé, à la dose de 1g (1000 mg) par prise (espacées au minimum de 4h), sans dépasser un total de 3g par jour ([en savoir plus sur le paracétamol](https://sfpt-fr.org/covid19-foire-aux-questions/1099-j-ai-de-la-fievre-quel-medicament-dois-je-prendre)).
+* Seul le paracétamol est recommandé, à la dose de 1g (1000 mg) par prise (espacées au minimum de 4h), sans dépasser un total de 3g par jour ([en savoir plus sur le paracétamol](https://sfpt-fr.org/covid19-foire-aux-questions/1099-j-ai-de-la-fievre-quel-medicament-dois-je-prendre)).
 * Si vous êtes déjà sous anti-inflammatoires ou en cas de doute : demandez conseil à votre médecin ou consultez le site [covid19-medicaments.com](https://www.covid19-medicaments.com)
 
-Plus d’informations sur le site de la Société Française de Pharmacologie et de Thérapeutique :
+Plus d’informations sur le site de la Société Française de Pharmacologie et de Thérapeutique :
 
 * [Sur la prise d’anti-inflammatoires non stéroïdiens en cas de fièvre](https://sfpt-fr.org/covid19-foire-aux-questions/1085-je-prends-ou-je-souhaite-prendre-un-anti-inflammatoire-non-steroidien-ains-pour-la-fievre-que-dois-je-faire)
 * [Sur la prise d’anti-inflammatoires non stéroïdiens en cas de toux ou de douleurs musculaires](https://sfpt-fr.org/covid19-foire-aux-questions/1087-j-ai-de-la-fievre-et-je-prends-ou-je-souhaite-prendre-un-anti-inflammatoire-non-steroidien-ains-pour-la-toux-ou-les-myalgies-que-dois-je-faire)
@@ -620,7 +620,7 @@ C’est-à-dire l’apparition brutale d’un ou plusieurs signes parmi :
 * maux de tête en dehors d’une migraine connue,
 * perte ou diminution de l’odorat et du gout.
 
-*Chez les personnes de plus de 80 ans, d’autres signes sont évocateurs :  
+*Chez les personnes de plus de 80 ans, d’autres signes sont évocateurs :  
 Baisse de l’état général, chutes à répétition, apparition ou aggravation de troubles cognitifs, confusion, diarrhée, aggravation d’une maladie chronique.*
 
 
@@ -718,11 +718,11 @@ Des personnes croisées dans l’espace public de manière fugace ne sont pas co
 
 ## [question_symptômes_contact_à_risque_stop_covid_libellé.md](question_symptômes_contact_à_risque_stop_covid_libellé.md)
 
-<!---->J’ai été informé par l’application StopCovid que j’ai été en contact avec une personne testée positive au COVID-19
+<!---->J’ai été informé par l’application StopCovid que j’ai été en contact avec une personne testée positive au Covid-19
 
 ---
 
-<!---->Il ou elle a été informé par l’application StopCovid d’avoir été en contact avec une personne testée positive au COVID-19
+<!---->Il ou elle a été informé par l’application StopCovid d’avoir été en contact avec une personne testée positive au Covid-19
 
 
 
