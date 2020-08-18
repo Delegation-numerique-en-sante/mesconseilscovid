@@ -649,7 +649,6 @@ describe('Algorithme d’orientation', function () {
                     'conseils-caracteristiques',
                     'reponse-caracteristiques-a-risques',
                     'conseils-caracteristiques-antecedents',
-                    'conseils-caracteristiques-antecedents-info',
                 ]
             )
         })
@@ -667,7 +666,6 @@ describe('Algorithme d’orientation', function () {
                     'conseils-caracteristiques',
                     'reponse-caracteristiques-a-risques',
                     'conseils-caracteristiques-antecedents',
-                    'conseils-caracteristiques-antecedents-info',
                 ]
             )
         })
@@ -684,7 +682,6 @@ describe('Algorithme d’orientation', function () {
                     'conseils-caracteristiques',
                     'reponse-caracteristiques-a-risques',
                     'conseils-caracteristiques-antecedents',
-                    'conseils-caracteristiques-antecedents-info',
                     'conseils-caracteristiques-antecedents-femme-enceinte',
                 ]
             )

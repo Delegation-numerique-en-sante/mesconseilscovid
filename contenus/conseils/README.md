@@ -125,15 +125,6 @@ Pour plus d’informations vis-à-vis de **votre grossesse** :
 
 
 
-## [conseils_caractéristiques_antécédents_info.md](conseils_caractéristiques_antécédents_info.md)
-
-Pour plus d’informations :
-
-* [Les gestes barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf)
-* [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
-
-
-
 ## [conseils_caractéristiques_antécédents_info_risque.md](conseils_caractéristiques_antécédents_info_risque.md)
 
 Pour plus d’informations :
