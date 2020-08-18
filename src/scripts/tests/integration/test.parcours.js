@@ -214,7 +214,7 @@ describe('Parcours', function () {
             let statut = await page.waitForSelector('#page #statut-symptomatique')
             assert.equal(
                 (await statut.innerText()).trim(),
-                'Vous êtes peut-être porteur du COVID-19.'
+                'Vous êtes peut-être porteur du Covid-19.'
             )
         }
     })
