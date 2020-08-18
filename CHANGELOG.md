@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-08-18
+
+* supprime un lien vers une infographie obsolète
+
 ## 2020-08-11
 
 * améliore l’accessibilité et la navigation au clavier
