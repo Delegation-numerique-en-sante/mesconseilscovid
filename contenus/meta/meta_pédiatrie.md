@@ -112,6 +112,6 @@ Les consultations pour vaccination ne doivent pas être reportées et les retard
 
 ### Ressources diverses
 
-Ligne d’écoute pour les parents, ressources pour les parents et professionnels : [enfance et covid](http://www.enfance-et-covid.org/).
+Ligne d’écoute pour les parents, ressources pour les parents et professionnels : [Enfance & Covid](https://eduensemble.org/enfance-covid/).
 
 </div>
