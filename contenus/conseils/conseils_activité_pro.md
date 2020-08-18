@@ -1,6 +1,9 @@
 Si cela est possible, privilégiez le **télétravail**.
 Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique** et les **gestes barrières** limitent la propagation du virus entre collègues.
 
+Rentrez en contact avec votre employeur pour envisager des solutions individuelles (éventuellement via la Médecine du Travail de l’entreprise).
+En appliquant les gestes barrières, le risque de contamination — notamment sur le lieu de travail — n’est pas plus important qu’en allant faire ses courses.
+
 <span class="nouveau">nouveau</span> Plus d’informations sur :
 
 * [les gestes barrières au travail](https://travail-emploi.gouv.fr/actualites/l-actualite-du-ministere/article/covid-19-comment-assurer-ma-sante-et-ma-securite-au-travail) en vidéo
