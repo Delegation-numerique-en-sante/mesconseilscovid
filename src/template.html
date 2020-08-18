@@ -840,6 +840,33 @@
                 </details>
             </div>
 
+            <div id="conseils-departement" class="conseils" hidden>
+                <details>
+                    <summary>
+                        <h3>
+                            Votre localisation
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                        </h3>
+                    </summary>
+                    <div class="reponse">
+                        {{ réponse_département }}
+                    </div>
+                    <div id="conseils-departement-circulation-faible" hidden>
+                        <div class="conseil">
+                            {{ conseils_département_circulation_faible }}
+                        </div>
+                    </div>
+                    <div id="conseils-departement-circulation-elevee" hidden>
+                        <div class="conseil conseil-orange">
+                            {{ conseils_département_circulation_élevée }}
+                        </div>
+                    </div>
+                    <div id="conseils-departement-default">
+                        {{ conseils_département_défaut }}
+                    </div>
+                </details>
+            </div>
+
             <!-- Conseils généraux toujours affichés. -->
             <div id="conseils-generaux" class="conseils">
                 <details>

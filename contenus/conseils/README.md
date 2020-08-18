@@ -170,6 +170,24 @@ Pour plus d’informations :
 
 
 
+## [conseils_département_circulation_faible.md](conseils_département_circulation_faible.md)
+
+La circulation du virus est relativement lente dans votre département. Par précaution, maintenez les gestes barrières.
+
+
+
+## [conseils_département_circulation_élevée.md](conseils_département_circulation_élevée.md)
+
+Vous résidez dans un département où le virus est **particulièrement présent**. Faites attention et appliquez strictement les gestes barrières.
+
+
+
+## [conseils_département_défaut.md](conseils_département_défaut.md)
+
+Pour plus d’informations, vous pouvez consulter les <a href="#conseils-departement" id="lien-prefecture">règles spécifiques de votre département</a> sur le site de votre préfecture.
+
+
+
 ## [conseils_foyer_enfants.md](conseils_foyer_enfants.md)
 
 Consultez les [« conseils liés aux activités et à la santé des moins de 15 ans »](#pediatrie) face au Covid-19.

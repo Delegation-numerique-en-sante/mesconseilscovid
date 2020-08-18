@@ -1,4 +1,6 @@
 var affichage = require('./affichage.js')
+const prefectures = require('./data/prefectures.js').prefectures
+const departements = require('./data/departements.js').departements
 
 module.exports = {
     nomProfil: function (element, app) {
@@ -11,6 +13,14 @@ module.exports = {
         if (profil.estMonProfil()) return
         affichage.showElement(element)
         element.textContent = `Conseils pour « ${profil.nom} »`
+    },
+
+    departement: function (element, departement) {
+        element.textContent = departements[departement] || 'Inconnu'
+    },
+
+    lienPrefecture: function (element, departement) {
+        element.setAttribute('href', prefectures[departement])
     },
 
     caracteristiquesARisques: function (element, algoOrientation) {

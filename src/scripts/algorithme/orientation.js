@@ -1,6 +1,12 @@
+const incidence = require('../data/incidence.js').incidence
+
 class AlgorithmeOrientation {
     constructor(profil) {
         this.profil = profil
+    }
+
+    get incidence() {
+        return incidence[this.profil.departement]
     }
 
     get sup65() {
@@ -184,6 +190,20 @@ class AlgorithmeOrientation {
             } else {
                 blockNames.push('conseils-personnels-contact-a-risque-default')
             }
+        }
+        return blockNames
+    }
+
+    departementBlockNamesToDisplay() {
+        const blockNames = []
+        if (this.profil.symptomes_actuels || typeof this.incidence === 'undefined') {
+            return []
+        }
+        blockNames.push('conseils-departement')
+        if (this.incidence >= 10) {
+            blockNames.push('conseils-departement-circulation-elevee')
+        } else {
+            blockNames.push('conseils-departement-circulation-faible')
         }
         return blockNames
     }

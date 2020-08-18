@@ -56,6 +56,13 @@ Question : [libellé](questions/question_nom_libellé.md)
 
 Question : [libellé](questions/question_résidence_libellé.md)
 
+Réponse : [réponse_département.md](réponses/réponse_département.md)
+
+Conseils :
+
+1. [conseils circulation faible](conseils/conseils_département_circulation_faible.md) ou [conseils circulation élevée](conseils/conseils_département_circulation_élevée.md) selon le taux d’[Incidence](#incidence) du département
+2. [conseils par défaut](conseils/conseils_département_défaut.md)
+
 
 #### Activité
 
@@ -365,9 +372,10 @@ Dans ce cas particulier, le fichier [suivi_déconfinement.md](suivi/suivi_décon
 
 ### Critères
 
-#### Couleur
+#### Incidence
 
-La couleur d’un département (`orange` ou `verte` si on a les données) est déterminée en fonction de l’[Indicateurs d’activité épidémique vert/orange](https://www.data.gouv.fr/fr/datasets/indicateurs-dactivite-epidemique-covid-19-par-departement/) (fichier `donnees-carte-synthese-tricolore.json`, attention il est cumulatif au fil du temps).
+L’incidence d’un département est déterminée en fonction du [Taux d’incidence de l'épidémie de COVID-19](https://www.data.gouv.fr/fr/datasets/taux-dincidence-de-lepidemie-de-covid-19/) (fichier `sp-pe-tb-quot-dep-2020-08-07-19h15.csv`, attention il est cumulatif au fil du temps). La somme de ce taux sur les 7 derniers jours en cumulé est utilisée.
+
 
 #### Antécédents
 
