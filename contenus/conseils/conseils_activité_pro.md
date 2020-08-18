@@ -1,4 +1,6 @@
-Il est recommandé de **télétravailler** si cela vous est possible. Si vous devez vous rendre sur votre lieu de travail, le respect des **gestes barrières** et de la **distanciation physique** permet de limiter les risques de propagation du virus.
+Il vous est recommandé de **privilégier le télétravail** si cela vous est possible. Si vous devez vous rendre sur votre lieu de travail, le respect des **gestes barrières** et de la **distanciation physique** permet de limiter les risques de propagation du virus.
+
+Rentrez en contact avec votre employeur pour envisager des solutions individuelles (éventuellement via la Médecine du Travail de l’entreprise). En appliquant les gestes barrières, le risque de contamination — notamment sur le lieu de travail — n’est pas plus important qu’en allant faire ses courses.
 
 <span class="nouveau">nouveau</span> Plus d’informations du ministère du travail sur :
 
