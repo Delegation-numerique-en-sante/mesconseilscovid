@@ -1,1 +1,1 @@
-Vous êtes peut-être **porteur du COVID-19**.
+Vous êtes peut-être **porteur du Covid-19**.
