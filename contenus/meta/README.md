@@ -230,7 +230,7 @@ Attention à ne pas laisser le produit à portée des jeunes enfants car il exis
 
 #### Quel sont les précautions pour emmener mon enfant au parc de jeux collectifs (jeux, bacs à sable, points d’eau, etc.) ?
 
-Il est déconseillé d’emmener votre(vos) enfant(s) dans les parcs et les aires de jeux collectifs si l’un des membres du foyer a été diagnostiqué COVID19 dans les deux semaines précédentes, ou si le(s) enfant(s) présentent des symptômes de COVID19.
+Il est déconseillé d’emmener votre(vos) enfant(s) dans les parcs et les aires de jeux collectifs si l’un des membres du foyer a été diagnostiqué Covid-19 dans les deux semaines précédentes, ou si le(s) enfant(s) présentent des symptômes de Covid-19.
 
 Dans les autres cas, vous pouvez emmener votre(vos) enfant(s) dans les parcs et les aires de jeux collectifs sous réserve des précautions suivantes :
 
@@ -288,7 +288,7 @@ Le retour de l’enfant en collectivité ne pourra être envisagé qu’après a
 
 #### Mon enfant est atteint d’une maladie chronique, quelles sont les précautions supplémentaires à prendre ?
 
-Même chez l’enfant atteint d’une pathologie chronique, l’infection à COVID19 est généralement bénigne. 
+Même chez l’enfant atteint d’une pathologie chronique, l’infection à Covid-19 est généralement bénigne. 
 
 Il faut favoriser le retour dans leur établissement scolaire de tous les enfants ayant une pathologie chronique, car cela est bénéfique pour leur santé, leur bien-être et leur avenir. La poursuite d’une scolarisation à domicile ne peut concerner que quelques cas particuliers, sur avis du médecin référent.
 
@@ -297,14 +297,14 @@ Pour plus d’informations, vous pouvez consulter la fiche de la HAS suivante :
 Seuls quelques enfants suivis pour des pathologies rares et graves et en situation de grande vulnérabilité en lien avec leur pathologie ou leurs traitements nécessitent des précautions particulières voire du maintien des soins, des activités éducatives, d’une scolarité à domicile.
 
 
-####  La sérologie COVID19 fonctionne-t-elle également pour les enfants ?
+####  La sérologie Covid-19 fonctionne-t-elle également pour les enfants ?
 
 Oui, comme chez l’adulte la sérologie indique un contact avec le virus. Cependant, la prescription d’une sérologie COVID et son interprétation doivent être faites par un médecin. 
 
 
 #### Étant donné la situation, dois/puis-je décaler le prochain vaccin de mon enfant ?
 
-Il est primordial de maintenir l’ensemble des vaccinations de vos enfants dans le contexte de COVID-19.
+Il est primordial de maintenir l’ensemble des vaccinations de vos enfants dans le contexte de Covid-19.
 
 Les consultations pour vaccination ne doivent pas être reportées et les retards de vaccinations doivent être rattrapés. 
  
