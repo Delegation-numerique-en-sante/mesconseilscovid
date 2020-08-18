@@ -9,6 +9,9 @@
 Si cela est possible, privilégiez le **télétravail**.
 Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique** et les **gestes barrières** limitent la propagation du virus entre collègues.
 
+Rentrez en contact avec votre employeur pour envisager des solutions individuelles (éventuellement via la Médecine du Travail de l’entreprise).
+En appliquant les gestes barrières, le risque de contamination — notamment sur le lieu de travail — n’est pas plus important qu’en allant faire ses courses.
+
 <span class="nouveau">nouveau</span> Plus d’informations sur :
 
 * [les gestes barrières au travail](https://travail-emploi.gouv.fr/actualites/l-actualite-du-ministere/article/covid-19-comment-assurer-ma-sante-et-ma-securite-au-travail) en vidéo
@@ -47,12 +50,8 @@ Vous pouvez consulter les [**fiches-conseils métier**](https://travail-emploi.g
 
 Pour plus d’informations :
 
-* [La protection des professionnels **de santé**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/article/protection-des-professionnels-de-sante-face-au-covid-19)
-
+* [La protection des professionnels **de santé**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/)
 * [Pour les professionnels **du médico-social**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-du-social-et-medico-social/)
-
-* [La conduite à tenir](https://www.hcsp.fr/Explore.cgi/Telecharger?NomFichier=hcspa20200523_sarcovprodestabdesansocetmdisoc.pdf) vis-à-vis des professionnels intervenant en établissement de santé (ES) ainsi qu’en établissement social et médico-social (ESMS) selon leur statut vis-à-vis du SARS-CoV-2.
-
 * [Conseils pour les moins de 15 ans](#pediatrie) si vous travaillez auprès d’enfants et/ou devez conseiller des parents.
 
 
