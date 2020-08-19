@@ -27,13 +27,6 @@
     }
 
     function trigger(eventName, options) {
-        if (
-            /^localhost$|^127(?:\.[0-9]+){0,2}\.[0-9]+$|^(?:0*:)*?:?0*1$/.test(
-                location.hostname
-            ) ||
-            location.protocol === 'file:'
-        )
-            return ignore('running locally')
         if (document.visibilityState === 'prerender') return ignore('prerendering')
 
         var payload = {}
@@ -45,6 +38,16 @@
         payload.user_agent = window.navigator.userAgent
         payload.screen_width = window.innerWidth
 
+        if (
+            /^localhost$|^127(?:\.[0-9]+){0,2}\.[0-9]+$|^(?:0*:)*?:?0*1$/.test(
+                location.hostname
+            ) ||
+            location.protocol === 'file:'
+        ) {
+            ignore('running locally')
+            console.debug(payload)
+            return
+        }
         var request = new XMLHttpRequest()
         request.open('POST', plausibleHost + '/api/event', true)
         request.setRequestHeader('Content-Type', 'text/plain')
