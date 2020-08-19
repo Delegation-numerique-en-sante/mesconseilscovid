@@ -2,15 +2,20 @@ import { ICS } from './ics.js'
 
 module.exports = {
     bindCalendar: function (element, profil) {
-        const subject = 'Suivi COVID19'
-        const description =
-            'Aller faire mon suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/#suiviintroduction'
-        // On démarre à partir de la date de suivi pour les personnes
-        // ajoutant le rappel après quelques jours de suivi.
-        const startDate = profil.suivi_start_date
-        const endDate = profil.suivi_start_date
+        const ics = new ICS(navigator.appVersion)
         const duration = 1 // heures bloquées sur le calendrier.
-        endDate.setHours(endDate.getHours() + duration)
+        const urlSuivi = 'https://mesconseilscovid.sante.gouv.fr/#suiviintroduction'
+
+        // Définition de l'évènement de début des symptômes (pas de récurrence).
+        ics.addEvent(
+            'Début symptômes Covid-19',
+            `Vous pouvez faire votre suivi quotidien sur ${urlSuivi}`,
+            profil.symptomes_start_date,
+            duration,
+            undefined
+        )
+
+        // Définition de l'évènement récurrent à partir du premier suivi.
         const occurences = 15 // entrées dans le calendrier.
         const rrule = {
             // Le rappel est quotidien.
@@ -18,10 +23,14 @@ module.exports = {
             interval: 1,
             count: occurences,
         }
+        ics.addEvent(
+            'Suivi Covid-19',
+            `Aller faire mon suivi quotidien sur ${urlSuivi}`,
+            profil.suivi_start_date,
+            duration,
+            rrule
+        )
 
-        // Génération de l’entrée du calendrier.
-        const ics = new ICS(navigator.appVersion)
-        ics.addEvent(subject, description, startDate, endDate, rrule)
         const calendar = ics.generateCalendar()
 
         // eslint-disable-next-line no-extra-semi
