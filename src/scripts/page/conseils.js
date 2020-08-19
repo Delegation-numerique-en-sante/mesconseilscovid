@@ -66,6 +66,7 @@ function page(element, app) {
     }
 
     // Make the buttons clickable with appropriated actions.
+    actions.bindAvis(element)
     actions.bindImpression(element)
     if (app.profil.hasSuiviStartDate()) {
         actions.bindCalendar(element, app.profil)

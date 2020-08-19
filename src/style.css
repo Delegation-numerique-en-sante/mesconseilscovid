@@ -840,6 +840,34 @@ a#geolocalisation {
     background-image: url('trash.svg');
 }
 
+#pour-finir .icon-information {
+    background-image: url('information.svg');
+}
+#pour-finir .icon-information.js-submitted {
+    background-image: url('information-soumission.svg');
+}
+
+#pour-finir .icon-information p {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#pour-finir .avis-positif {
+    background: no-repeat 24px center url('avis-positif.svg');
+    padding: 12px 24px 12px 60px;
+    margin: 0 1rem;
+    cursor: pointer;
+    border-color: #000091;
+    color: #000091;
+}
+#pour-finir .avis-negatif {
+    background: no-repeat 65px center url('avis-negatif.svg');
+    padding: 12px 60px 12px 24px;
+    cursor: pointer;
+    border-color: #000091;
+    color: #000091;
+}
+
 #pour-finir .ios-share-button {
     height: 1.5rem;
     margin-bottom: -0.4rem;

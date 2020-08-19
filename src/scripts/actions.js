@@ -31,6 +31,33 @@ module.exports = {
             calendarButton.setAttribute('href', href)
         })
     },
+    bindAvis: function (element) {
+        function displayFeedback(button) {
+            const paragraph = button.parentElement
+            paragraph.style.opacity = '0'
+            const email = 'mesconseilscovid@sante.gouv.fr'
+            const message = `
+                Merci pour votre retour, si vous souhaitez nous en dire plus,
+                écrivez-nous à : <a href="mailto:${email}">${email}</a>`
+            window.setTimeout(() => {
+                paragraph.innerHTML = message
+                paragraph.style.opacity = '1'
+                paragraph.parentElement.classList.add('js-submitted')
+            }, 500) // Time for the CSS transition `#pour-finir .icon-information p`
+        }
+        const avisPositifButton = element.querySelector('.avis-positif')
+        avisPositifButton.addEventListener('click', (event) => {
+            event.preventDefault()
+            window.plausible('Avis positif')
+            displayFeedback(event.target)
+        })
+        const avisNegatifButton = element.querySelector('.avis-negatif')
+        avisNegatifButton.addEventListener('click', (event) => {
+            event.preventDefault()
+            window.plausible('Avis negatif')
+            displayFeedback(event.target)
+        })
+    },
     bindImpression: function (element) {
         const printButton = element.querySelector('.js-impression')
         printButton.addEventListener('click', (event) => {

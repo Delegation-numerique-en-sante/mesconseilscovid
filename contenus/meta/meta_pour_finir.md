@@ -2,6 +2,13 @@
 
 Vos réponses sont sauvegardées dans votre navigateur et les conseils sont mis à jour régulièrement.
 
+<div class="icon icon-information">
+
+Ces conseils vous ont été utiles ?
+<a class="button button-outline avis-positif" href="">Oui</a>
+<a class="button button-outline avis-negatif" href="">Non</a>
+
+</div>
 <div class="icon icon-favori browser-mobile-safari" hidden>
 
 Vous pouvez **installer l’application sur votre téléphone** : pour cela, touchez l’icône <img src="ei-share-apple.svg" class="ios-share-button" alt="Partager">, puis sélectionnez « Sur l’écran d’accueil » dans la liste.
