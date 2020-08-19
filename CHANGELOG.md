@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-08-19
+
+* allègement de la page de conseils
+* ajout de la notion d’incidence
+
 ## 2020-08-18
 
 * supprime un lien vers une infographie obsolète
