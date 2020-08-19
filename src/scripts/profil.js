@@ -396,7 +396,10 @@ class Profil {
     }
 
     renderDebutSymptomes() {
-        return `<p>Début des symptômes : ${this.symptomes_start_date.toLocaleString()}</p>`
+        return `<p>Début des symptômes :
+            ${this.symptomes_start_date.toLocaleString()}
+            (<a href="#suividate">modifier</a>)
+        </p>`
     }
 
     renderDebutSuivi() {
