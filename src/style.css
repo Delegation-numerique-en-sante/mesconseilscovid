@@ -229,11 +229,10 @@ main footer {
 #conseils-block.symptomes-actuels h2.with-illustration,
 #conseils-block.symptomes-passes h2.with-illustration,
 #conseils-block.contact-a-risque h2.with-illustration {
-    padding-top: 150px;
     background-position: center 1rem;
     background-repeat: no-repeat;
-    background-size: 50%;
-    margin-top: 1rem;
+    background-size: 35%;
+    padding: 90px 0 0 0;
 }
 #conseils-pediatrie-general header {
     padding-top: 200px;
@@ -265,8 +264,9 @@ main footer {
     #conseils-block.symptomes-actuels h2.with-illustration,
     #conseils-block.symptomes-passes h2.with-illustration,
     #conseils-block.contact-a-risque h2.with-illustration {
-        padding-top: 300px;
-        background-size: 40%;
+        background-size: 15%;
+        background-position: center left;
+        padding: 0 0 0 8rem;
     }
     #conseils-pediatrie-general header {
         padding-top: 400px;
@@ -743,14 +743,8 @@ a[href*='youtube.com']::after {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     transition: box-shadow 0.3s;
     border: 1px solid lightgray;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
-@media only screen and (min-width: 680px) {
-    .conseils details {
-        padding: 2rem;
-    }
-}
-
 .conseils details summary {
     outline: 0;
     cursor: pointer;
