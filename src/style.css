@@ -535,6 +535,14 @@ input[type='submit'] {
     white-space: pre-wrap;
 }
 
+a.button[href=''],
+input[type='submit']:disabled {
+    color: black;
+    background: #ddd;
+    border-color: black;
+    cursor: not-allowed;
+}
+
 .button-full-width {
     width: 100%;
     display: block;
@@ -553,6 +561,20 @@ a.button-red {
     background-color: #dc3545;
     border: 1px solid #dc3545;
     color: #fff;
+}
+a.button-feedback[href=''] {
+    cursor: pointer;
+    border-color: #000091;
+    color: #000091;
+}
+a.button-feedback-positif[href=''] {
+    background: no-repeat 24px center url('feedback-positif.svg');
+    padding: 12px 24px 12px 60px;
+    margin: 0 1rem;
+}
+a.button-feedback-negatif[href=''] {
+    background: no-repeat 65px center url('feedback-negatif.svg');
+    padding: 12px 60px 12px 24px;
 }
 
 @media only screen and (min-width: 680px) {
@@ -680,14 +702,6 @@ input[type='radio']:disabled + label {
 input[type='checkbox']:disabled + label::before,
 input[type='radio']:disabled + label::before {
     background: #ddd;
-}
-
-a.button[href=''],
-input[type='submit']:disabled {
-    color: black;
-    background: #ddd;
-    border-color: black;
-    cursor: not-allowed;
 }
 
 .button:hover,
@@ -843,29 +857,8 @@ a#geolocalisation {
 #pour-finir .icon-information {
     background-image: url('information.svg');
 }
-#pour-finir .icon-information.js-submitted {
+#pour-finir .icon-information.js-feedback-submitted {
     background-image: url('information-soumission.svg');
-}
-
-#pour-finir .icon-information p {
-    opacity: 1;
-    transition: opacity 0.5s;
-}
-
-#pour-finir .avis-positif {
-    background: no-repeat 24px center url('avis-positif.svg');
-    padding: 12px 24px 12px 60px;
-    margin: 0 1rem;
-    cursor: pointer;
-    border-color: #000091;
-    color: #000091;
-}
-#pour-finir .avis-negatif {
-    background: no-repeat 65px center url('avis-negatif.svg');
-    padding: 12px 60px 12px 24px;
-    cursor: pointer;
-    border-color: #000091;
-    color: #000091;
 }
 
 #pour-finir .ios-share-button {

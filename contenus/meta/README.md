@@ -175,11 +175,11 @@ Vos informations personnelles sont seulement stockées sur cet appareil, et ne s
 Vos réponses sont sauvegardées dans votre navigateur et les conseils sont mis à jour régulièrement.
 
 <div class="icon icon-information">
-
+<p class="feedback-component" data-feedback-transition-delay="500">
 Ces conseils vous ont été utiles ?
-<a class="button button-outline avis-positif" href="">Oui</a>
-<a class="button button-outline avis-negatif" href="">Non</a>
-
+<a class="button button-outline button-feedback button-feedback-positif" data-feedback="positif" href="">Oui</a>
+<a class="button button-outline button-feedback button-feedback-negatif" data-feedback="negatif" href="">Non</a>
+</p>
 </div>
 <div class="icon icon-favori browser-mobile-safari" hidden>
 
