@@ -27,6 +27,8 @@ const CACHE_FILES = [
     'printer.svg',
     'feedback-negatif.svg',
     'feedback-positif.svg',
+    'feedback-contact.svg',
+    'feedback-flag.svg',
     'information.svg',
     'information-soumission.svg',
     'select.svg',

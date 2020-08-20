@@ -162,9 +162,30 @@ Il est recommandé de mettre à jour dès que possible en cliquant sur le bouton
 
 ## [meta_pied_de_page.md](meta_pied_de_page.md)
 
+<div class="feedback-block">
+    <p class="feedback-component" data-feedback-transition-delay="500">
+        <span class="feedback-question">
+            Des difficultés avec cette page ?
+            <span class="feedback-controls">
+                <a class="button button-outline button-feedback button-feedback-flag" data-feedback="flag" href="">Oui</a>
+                <a class="button button-outline button-feedback-contact" href="mailto:mesconseilscovid@sante.gouv.fr">Nous contacter</a>
+            </span>
+        </span>
+        <span class="feedback-message" hidden>
+            Merci pour votre retour, si vous souhaitez nous en dire plus,
+            écrivez-nous à : 
+            <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a>
+        </span>
+    </p>
+</div>
+
+<div class="legals">
+
 Vos informations personnelles sont seulement stockées sur cet appareil, et ne sont pas partagées.  
 À tout moment, vous pouvez <a class="js-suppression" href="">supprimer l’intégralité de ces données</a>.  
-[Conditions d’utilisation](#conditionsutilisation) - [Contact](mailto:mesconseilscovid@sante.gouv.fr) - [Code source](https://github.com/Delegation-numerique-en-sante/mesconseilscovid)
+[Conditions d’utilisation](#conditionsutilisation) - [Code source](https://github.com/Delegation-numerique-en-sante/mesconseilscovid)
+
+</div>
 
 
 
@@ -175,11 +196,20 @@ Vos informations personnelles sont seulement stockées sur cet appareil, et ne s
 Vos réponses sont sauvegardées dans votre navigateur et les conseils sont mis à jour régulièrement.
 
 <div class="icon icon-information">
-<p class="feedback-component" data-feedback-transition-delay="500">
-Ces conseils vous ont été utiles ?
-<a class="button button-outline button-feedback button-feedback-positif" data-feedback="positif" href="">Oui</a>
-<a class="button button-outline button-feedback button-feedback-negatif" data-feedback="negatif" href="">Non</a>
-</p>
+    <p class="feedback-component" data-feedback-transition-delay="500">
+        <span class="feedback-question">
+            Ces conseils vous ont été utiles ?
+            <span class="feedback-controls">
+            <a class="button button-outline button-feedback button-feedback-positif" data-feedback="positif" href="">Oui</a>
+            <a class="button button-outline button-feedback button-feedback-negatif" data-feedback="negatif" href="">Non</a>
+            </span>
+        </span>
+        <span class="feedback-message" hidden>
+            Merci pour votre retour, si vous souhaitez nous en dire plus,
+            écrivez-nous à : 
+            <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a>
+        </span>
+    </p>
 </div>
 <div class="icon icon-favori browser-mobile-safari" hidden>
 

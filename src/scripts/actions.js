@@ -1,4 +1,5 @@
 import { ICS } from './ics.js'
+import { hideElement, showElement } from './affichage.js'
 
 module.exports = {
     bindCalendar: function (element, profil) {
@@ -36,12 +37,9 @@ module.exports = {
             const transitionDelay = component.dataset.feedbackTransitionDelay
             component.style.transition = `opacity ${transitionDelay / 1000}s`
             component.style.opacity = '0'
-            const email = 'mesconseilscovid@sante.gouv.fr'
-            const message = `
-                Merci pour votre retour, si vous souhaitez nous en dire plus,
-                écrivez-nous à : <a href="mailto:${email}">${email}</a>`
             window.setTimeout(() => {
-                component.innerHTML = message
+                hideElement(component.querySelector('.feedback-question'))
+                showElement(component.querySelector('.feedback-message'))
                 component.style.opacity = '1'
                 component.parentElement.classList.add('js-feedback-submitted')
             }, transitionDelay)
@@ -50,9 +48,14 @@ module.exports = {
         ;[].forEach.call(component.querySelectorAll('.button-feedback'), (button) => {
             button.addEventListener('click', (event) => {
                 event.preventDefault()
-                window.plausible(`Avis conseils ${event.target.dataset.feedback}`)
+                window.plausible(`Avis ${event.target.dataset.feedback}`)
                 fillThankYouMessageWithTransition()
             })
+        })
+        document.addEventListener('pageChanged', () => {
+            // Display again the question if the user change page.
+            hideElement(component.querySelector('.feedback-message'))
+            showElement(component.querySelector('.feedback-question'))
         })
     },
     bindImpression: function (element) {
