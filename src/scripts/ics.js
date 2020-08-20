@@ -14,7 +14,9 @@ class ICS {
         this.calendarEnd = this.SEPARATOR + 'END:VCALENDAR'
     }
 
-    addEvent(subject, description, startDate, endDate, rrule, now) {
+    addEvent(subject, description, startDate, duration, rrule, now) {
+        const endDate = new Date(startDate)
+        endDate.setHours(endDate.getHours() + duration)
         const dates = this.generateDates(startDate, endDate, now)
         const rruleString = this.generateRRule(rrule)
 
