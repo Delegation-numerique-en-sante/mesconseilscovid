@@ -1,4 +1,5 @@
 import { ICS } from './ics.js'
+import { hideElement, showElement } from './affichage.js'
 
 module.exports = {
     bindCalendar: function (element, profil) {
@@ -29,6 +30,32 @@ module.exports = {
             const href =
                 'data:text/x-vCalendar;charset=utf-8,' + encodeURIComponent(calendar)
             calendarButton.setAttribute('href', href)
+        })
+    },
+    bindFeedback: function (component) {
+        function fillThankYouMessageWithTransition() {
+            const transitionDelay = component.dataset.feedbackTransitionDelay
+            component.style.transition = `opacity ${transitionDelay / 1000}s`
+            component.style.opacity = '0'
+            window.setTimeout(() => {
+                hideElement(component.querySelector('.feedback-question'))
+                showElement(component.querySelector('.feedback-message'))
+                component.style.opacity = '1'
+                component.parentElement.classList.add('js-feedback-submitted')
+            }, transitionDelay)
+        }
+        // eslint-disable-next-line no-extra-semi
+        ;[].forEach.call(component.querySelectorAll('.button-feedback'), (button) => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault()
+                window.plausible(`Avis ${event.target.dataset.feedback}`)
+                fillThankYouMessageWithTransition()
+            })
+        })
+        document.addEventListener('pageChanged', () => {
+            // Display again the question if the user change page.
+            hideElement(component.querySelector('.feedback-message'))
+            showElement(component.querySelector('.feedback-question'))
         })
     },
     bindImpression: function (element) {

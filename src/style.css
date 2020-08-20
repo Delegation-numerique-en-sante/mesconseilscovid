@@ -40,8 +40,9 @@ a:active {
     text-decoration-style: dashed;
 }
 
-section {
-    max-width: 60em;
+section,
+main footer {
+    max-width: 60rem;
     margin: 0 auto;
 }
 
@@ -183,7 +184,12 @@ a .profil {
     height: 0;
 }
 
-main footer {
+main footer .feedback-block {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+main footer .legals {
     font-size: 0.8rem;
     text-align: center;
 }
@@ -481,6 +487,7 @@ fieldset ul.details {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 }
 .form-controls .back-button {
     margin-top: 2rem;
@@ -497,6 +504,14 @@ fieldset ul.details {
 .form-controls input[type='submit'],
 .form-controls .main-button {
     width: 100%;
+}
+
+.feedback-controls {
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 0 1rem;
+    padding-top: 1rem;
+    align-items: center;
 }
 
 input[type='text'],
@@ -535,6 +550,14 @@ input[type='submit'] {
     white-space: pre-wrap;
 }
 
+a.button[href=''],
+input[type='submit']:disabled {
+    color: black;
+    background: #ddd;
+    border-color: black;
+    cursor: not-allowed;
+}
+
 .button-full-width {
     width: 100%;
     display: block;
@@ -553,6 +576,33 @@ a.button-red {
     background-color: #dc3545;
     border: 1px solid #dc3545;
     color: #fff;
+}
+a.button-feedback[href=''] {
+    cursor: pointer;
+    border-color: #000091;
+    color: #000091;
+}
+a.button-feedback-positif[href=''] {
+    background: no-repeat 24px center url('feedback-positif.svg');
+    padding: 12px 24px 12px 60px;
+    margin-top: 0;
+}
+a.button-feedback-negatif[href=''] {
+    background: no-repeat 65px center url('feedback-negatif.svg');
+    padding: 12px 60px 12px 24px;
+    margin-top: 0;
+    margin-left: 1rem;
+}
+a.button-feedback-flag[href=''] {
+    background: no-repeat 24px center url('feedback-flag.svg');
+    padding: 12px 24px 12px 60px;
+    margin-top: 0;
+}
+a.button-feedback-contact {
+    background: no-repeat 24px center url('feedback-contact.svg');
+    padding: 12px 24px 12px 60px;
+    margin-top: 0;
+    margin-left: 1rem;
 }
 
 @media only screen and (min-width: 680px) {
@@ -680,14 +730,6 @@ input[type='radio']:disabled + label {
 input[type='checkbox']:disabled + label::before,
 input[type='radio']:disabled + label::before {
     background: #ddd;
-}
-
-a.button[href=''],
-input[type='submit']:disabled {
-    color: black;
-    background: #ddd;
-    border-color: black;
-    cursor: not-allowed;
 }
 
 .button:hover,
@@ -838,6 +880,15 @@ a#geolocalisation {
 
 #pour-finir .icon-suppression {
     background-image: url('trash.svg');
+}
+
+#pour-finir .icon-information {
+    background-image: url('information.svg');
+    background-position: left 1.8rem;
+}
+#pour-finir .icon-information.js-feedback-submitted {
+    background-image: url('information-soumission.svg');
+    background-position: left center;
 }
 
 #pour-finir .ios-share-button {

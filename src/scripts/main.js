@@ -17,6 +17,7 @@ window.app = app
     app.init().then(() => {
         app.router.resolve()
         app.updater.checkForUpdatesEvery(10) // Minutes.
+        actions.bindFeedback(document.querySelector('footer .feedback-component'))
         actions.bindSuppressionTotale(
             document.querySelector('footer .js-suppression'),
             app
