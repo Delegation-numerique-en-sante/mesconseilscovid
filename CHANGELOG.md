@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-08-20
+
+* collecte de statistiques d’usage anonymes
+* ajout d’un évènement de début des symptômes
+
 ## 2020-08-19
 
 * allègement de la page de conseils
