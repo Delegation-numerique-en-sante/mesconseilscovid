@@ -87,4 +87,4 @@
         new Image().src =
             plausibleHost + '/api/error?message=' + encodeURIComponent(e.message)
     }
-})(window, 'https://stats.mesconseilscovid.fr/')
+})(window, 'https://stats.mesconseilscovid.fr')
