@@ -5,7 +5,7 @@ httpcore==0.10.1
 httpx==0.14.1
 idna==2.10
 Jinja2==2.11.2
-livereload==2.6.2
+livereload==2.6.3
 MarkupSafe==1.1.1
 minicli==0.4.4
 mistune==2.0.0a4
