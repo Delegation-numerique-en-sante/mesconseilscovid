@@ -30,8 +30,8 @@ describe('Algorithme déconfinement', function () {
             assert.strictEqual(algoDeconfinement.isQuarantaineDone(), false)
         })
 
-        it('Faux s’il y a 8 jours', function () {
-            profil.symptomes_start_date = utils.joursAvant(8)
+        it('Faux s’il y a 7 jours', function () {
+            profil.symptomes_start_date = utils.joursAvant(7)
             const algoOrientation = new AlgorithmeOrientation(profil)
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
@@ -67,12 +67,12 @@ describe('Algorithme déconfinement', function () {
             assert.strictEqual(algoDeconfinement.isQuarantaineDone(), false)
         })
 
-        it('Faux s’il y a 10 jours', function () {
+        it('Faux s’il y a 9 jours', function () {
             const data = {
                 grossesse_3e_trimestre: true,
             }
             profil.fillData(data)
-            profil.symptomes_start_date = utils.joursAvant(10)
+            profil.symptomes_start_date = utils.joursAvant(9)
             const algoOrientation = new AlgorithmeOrientation(profil)
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
