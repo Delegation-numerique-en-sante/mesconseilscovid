@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-08-24
+
+* corrige des problèmes de compabilité avec IE 11 et Edge <= 44
+
 ## 2020-08-20
 
 * collecte de statistiques d’usage anonymes
