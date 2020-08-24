@@ -3,3 +3,4 @@ tabWidth: 4
 semi: false
 singleQuote: true
 printWidth: 88
+quoteProps: "consistent"
