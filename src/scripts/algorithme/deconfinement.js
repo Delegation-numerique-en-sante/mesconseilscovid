@@ -11,7 +11,12 @@ class AlgorithmeDeconfinement {
         if (this.algoOrientation.personne_fragile) {
             delta = 10
         }
-        return utils.joursAvant(delta) > this.profil.symptomes_start_date
+        const now = new Date()
+        const finDeQuarantaine = utils.joursApres(
+            delta,
+            this.profil.symptomes_start_date
+        )
+        return now > finDeQuarantaine
     }
 
     isSuiviRegulier() {
