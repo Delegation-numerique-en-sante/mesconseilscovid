@@ -60,7 +60,7 @@ const CACHE_FILES = [
     'suivi_interrogation.svg',
     'departements-1000m.geojson',
 ]
-const TIMEOUT = 500 // ms.
+const TIMEOUT = 2000 // ms.
 
 self.addEventListener('install', function (evt) {
     console.log('The service worker is being installed')
