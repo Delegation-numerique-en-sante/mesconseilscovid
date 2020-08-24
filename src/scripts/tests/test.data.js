@@ -15,7 +15,8 @@ describe('Carte départements', function () {
         assert.strictEqual(Object.keys(incidence).length, 104)
     })
     it('On récupère l’incidence depuis le département', function () {
-        assert.strictEqual(incidence['01'], 14.7)
+        assert.isNumber(incidence['01'])
+        assert.isAtLeast(incidence['01'], 0)
     })
     it('Il y a le bon nombre de liens vers les préféctures', function () {
         assert.strictEqual(Object.keys(prefectures).length, 104)
