@@ -919,8 +919,8 @@
     <form id="suivi-medecin-form" class="block">
         <fieldset>
             <legend>{{ question_suivi_médecin_titre|me_or_them }}</legend>
-            <div>
-                <p>
+            <div role="radiogroup" aria-labelledby="suivi-medecin-label">
+                <p id="suivi-medecin-label">
                     {{ question_suivi_médecin_libellé|me_or_them }}
                 </p>
                 <input id="suivi_medecin_oui" type="radio" required name="suivi_medecin" value="oui">
