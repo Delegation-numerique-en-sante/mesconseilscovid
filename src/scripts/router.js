@@ -71,15 +71,15 @@ function initRouter(app) {
             var form = pagination.loadPage(pageName, app)
             questionnaire.residence(form, app, router)
         })
-        .on(new RegExp('^activitepro$'), function () {
-            var pageName = 'activitepro'
-            var form = pagination.loadPage(pageName, app)
-            questionnaire.activitepro(form, app, router)
-        })
         .on(new RegExp('^foyer$'), function () {
             var pageName = 'foyer'
             var form = pagination.loadPage(pageName, app)
             questionnaire.foyer(form, app, router)
+        })
+        .on(new RegExp('^activitepro$'), function () {
+            var pageName = 'activitepro'
+            var form = pagination.loadPage(pageName, app)
+            questionnaire.activitepro(form, app, router)
         })
         .on(new RegExp('^caracteristiques$'), function () {
             var pageName = 'caracteristiques'

@@ -1,7 +1,7 @@
 async function remplirQuestionnaire(page, choix) {
     await remplirDepartement(page, choix.departement)
-    await remplirActivite(page, choix.activitePro)
     await remplirFoyer(page, choix.enfants)
+    await remplirActivite(page, choix.activitePro)
     await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
     await remplirAntecedents(page)
     await remplirSymptomesActuels(page, choix.symptomesActuels)
@@ -17,13 +17,28 @@ async function remplirQuestionnaire(page, choix) {
 async function remplirDepartement(page, departement) {
     await page.selectOption('#page select#departement', departement)
     let bouton = await page.waitForSelector('#page >> text="Continuer"')
+    await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#foyer' })])
+}
+
+// Questionnaire 2/8
+async function remplirFoyer(page, enfants) {
+    if (enfants === true) {
+        // Je n’arrive pas à cocher la case directement, alors je clique sur le label
+        let label
+        label = await page.waitForSelector('#page label[for="foyer_enfants"]')
+        await label.click()
+    }
+
+    // TODO: personnes fragiles
+
+    let bouton = await page.waitForSelector('#page >> text="Continuer"')
     await Promise.all([
         bouton.click(),
         page.waitForNavigation({ url: '**/#activitepro' }),
     ])
 }
 
-// Questionnaire 2/8
+// Questionnaire 3/8
 async function remplirActivite(page, activitePro) {
     let label = await page.waitForSelector('#page label[for="activite_pro"]')
     let text
@@ -37,21 +52,6 @@ async function remplirActivite(page, activitePro) {
     }
 
     let bouton = await page.waitForSelector(`#page >> text="${text}"`)
-    await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#foyer' })])
-}
-
-// Questionnaire 3/8
-async function remplirFoyer(page, enfants) {
-    if (enfants === true) {
-        // Je n’arrive pas à cocher la case directement, alors je clique sur le label
-        let label
-        label = await page.waitForSelector('#page label[for="foyer_enfants"]')
-        await label.click()
-    }
-
-    // TODO: personnes fragiles
-
-    let bouton = await page.waitForSelector('#page >> text="Continuer"')
     await Promise.all([
         bouton.click(),
         page.waitForNavigation({ url: '**/#caracteristiques' }),

@@ -30,11 +30,23 @@ function residence(form, app, router) {
         event.preventDefault()
         app.profil.departement = event.target.elements['departement'].value
         app.enregistrerProfilActuel()
-        router.navigate('activitepro')
+        router.navigate('foyer')
     })
     document
         .getElementById('geolocalisation')
         .addEventListener('click', geoloc.geolocalisation)
+}
+
+function foyer(form, app, router) {
+    formUtils.preloadCheckboxForm(form, 'foyer_enfants', app.profil)
+    formUtils.preloadCheckboxForm(form, 'foyer_fragile', app.profil)
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+        app.profil.foyer_enfants = event.target.elements['foyer_enfants'].checked
+        app.profil.foyer_fragile = event.target.elements['foyer_fragile'].checked
+        app.enregistrerProfilActuel()
+        router.navigate('activitepro')
+    })
 }
 
 function activitepro(form, app, router) {
@@ -61,18 +73,6 @@ function activitepro(form, app, router) {
             event.target.elements['activite_pro_sante'].checked
         app.profil.activite_pro_liberal =
             event.target.elements['activite_pro_liberal'].checked
-        app.enregistrerProfilActuel()
-        router.navigate('foyer')
-    })
-}
-
-function foyer(form, app, router) {
-    formUtils.preloadCheckboxForm(form, 'foyer_enfants', app.profil)
-    formUtils.preloadCheckboxForm(form, 'foyer_fragile', app.profil)
-    form.addEventListener('submit', function (event) {
-        event.preventDefault()
-        app.profil.foyer_enfants = event.target.elements['foyer_enfants'].checked
-        app.profil.foyer_fragile = event.target.elements['foyer_fragile'].checked
         app.enregistrerProfilActuel()
         router.navigate('caracteristiques')
     })

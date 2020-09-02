@@ -226,10 +226,35 @@
     </form>
 </section>
 
+<section id="foyer" hidden>
+    <form id="foyer-form" class="block">
+        <fieldset>
+            <legend>2/8 - {{ question_foyer_titre|me_or_them }}</legend>
+            <div>
+                <input id="foyer_enfants" type="checkbox" name="foyer_enfants">
+                <label for="foyer_enfants">
+                    <span>{{ question_foyer_enfants_libellé|me_or_them }}</span>
+                </label>
+            </div>
+            <div>
+                <input id="foyer_fragile" type="checkbox" name="foyer_fragile">
+                <label for="foyer_fragile">
+                    <span>{{ question_foyer_fragile_libellé|me_or_them }}</span>
+                </label>
+                <div class="details">{{ question_foyer_fragile_aide }}</div>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <input type="submit" class="button" value="Continuer">
+            <a href="#residence" class="back-button button-outline">Retour</a>
+        </div>
+    </form>
+</section>
+
 <section id="activitepro" hidden>
     <form id="activite-pro-form" class="block">
         <fieldset>
-            <legend>2/8 - {{ question_activité_pro_titre|me_or_them }}</legend>
+            <legend>3/8 - {{ question_activité_pro_titre|me_or_them }}</legend>
             <div>
                 <input id="activite_pro" type="checkbox" name="activite_pro">
                 <label for="activite_pro">
@@ -258,32 +283,7 @@
         </fieldset>
         <div class="form-controls">
             <input type="submit" class="button" value="Continuer">
-            <a href="#residence" class="back-button button-outline">Retour</a>
-        </div>
-    </form>
-</section>
-
-<section id="foyer" hidden>
-    <form id="foyer-form" class="block">
-        <fieldset>
-            <legend>3/8 - {{ question_foyer_titre|me_or_them }}</legend>
-            <div>
-                <input id="foyer_enfants" type="checkbox" name="foyer_enfants">
-                <label for="foyer_enfants">
-                    <span>{{ question_foyer_enfants_libellé|me_or_them }}</span>
-                </label>
-            </div>
-            <div>
-                <input id="foyer_fragile" type="checkbox" name="foyer_fragile">
-                <label for="foyer_fragile">
-                    <span>{{ question_foyer_fragile_libellé|me_or_them }}</span>
-                </label>
-                <div class="details">{{ question_foyer_fragile_aide }}</div>
-            </div>
-        </fieldset>
-        <div class="form-controls">
-            <input type="submit" class="button" value="Continuer">
-            <a href="#activitepro" class="back-button button-outline">Retour</a>
+            <a href="#foyer" class="back-button button-outline">Retour</a>
         </div>
     </form>
 </section>
@@ -316,7 +316,7 @@
         </fieldset>
         <div class="form-controls">
             <input type="submit" class="button" value="Continuer">
-            <a href="#foyer" class="back-button button-outline">Retour</a>
+            <a href="#activitepro" class="back-button button-outline">Retour</a>
         </div>
     </form>
 </section>

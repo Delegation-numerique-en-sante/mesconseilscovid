@@ -39,6 +39,10 @@ var redirectToUnansweredQuestions = function (page, profil) {
 
     if (page === 'residence') return
 
+    if (typeof profil.foyer_enfants === 'undefined' && page !== 'foyer') return 'foyer'
+
+    if (page === 'foyer') return
+
     if (typeof profil.activite_pro === 'undefined' && page !== 'activitepro')
         return 'activitepro'
 
@@ -52,10 +56,6 @@ var redirectToUnansweredQuestions = function (page, profil) {
         return 'activitepro'
 
     if (page === 'activitepro') return
-
-    if (typeof profil.foyer_enfants === 'undefined' && page !== 'foyer') return 'foyer'
-
-    if (page === 'foyer') return
 
     if (
         (typeof profil.age === 'undefined' || profil.age < 15) &&
