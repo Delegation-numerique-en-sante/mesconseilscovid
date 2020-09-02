@@ -46,7 +46,17 @@ class Updater {
         document.dispatchEvent(new CustomEvent('show-banner', { detail: block }))
     }
 
+    updateFooter(fetchedVersion) {
+        if (this.currentVersion !== fetchedVersion) {
+            const element = document.querySelector('.js-latest-update')
+            const readableVersion = fetchedVersion.split('-').reverse().join('-')
+            element.innerText = ` - Mis à jour le : ${readableVersion}.`
+        }
+    }
+
     updateVersion(fetchedVersion) {
+        this.updateFooter(fetchedVersion)
+
         if (this.currentVersion === null || this.currentVersion === fetchedVersion) {
             this.currentVersion = fetchedVersion
             return
