@@ -1,5 +1,6 @@
 import { ICS } from './ics.js'
 import { hideElement, showElement } from './affichage.js'
+import { getCurrentPageName } from './pagination.js'
 
 module.exports = {
     bindCalendar: function (element, profil) {
@@ -42,28 +43,45 @@ module.exports = {
         })
     },
     bindFeedback: function (component) {
-        function fillThankYouMessageWithTransition() {
+        function fillThankYouMessageWithTransition(feedback) {
             const transitionDelay = component.dataset.feedbackTransitionDelay
             component.style.transition = `opacity ${transitionDelay / 1000}s`
             component.style.opacity = '0'
             window.setTimeout(() => {
                 hideElement(component.querySelector('.feedback-question'))
-                showElement(component.querySelector('.feedback-message'))
+                showElement(component.querySelector('.feedback-form'))
                 component.style.opacity = '1'
                 component.parentElement.classList.add('js-feedback-submitted')
+                const form = component.querySelector('.feedback-form form')
+                form.addEventListener('submit', (event) => {
+                    event.preventDefault()
+                    const message = event.target.elements.message.value
+                    // Actually send the values to a server.
+                    console.log(feedback, message, getCurrentPageName())
+                    // TODO: refactor the transition effect.
+                    component.style.transition = `opacity ${transitionDelay / 1000}s`
+                    component.style.opacity = '0'
+                    window.setTimeout(() => {
+                        hideElement(component.querySelector('.feedback-form'))
+                        showElement(component.querySelector('.feedback-thankyou'))
+                        component.style.opacity = '1'
+                    }, transitionDelay)
+                })
             }, transitionDelay)
         }
         // eslint-disable-next-line no-extra-semi
         ;[].forEach.call(component.querySelectorAll('.button-feedback'), (button) => {
             button.addEventListener('click', (event) => {
                 event.preventDefault()
-                window.plausible(`Avis ${event.target.dataset.feedback}`)
-                fillThankYouMessageWithTransition()
+                const feedback = event.target.dataset.feedback
+                window.plausible(`Avis ${feedback}`)
+                fillThankYouMessageWithTransition(feedback)
             })
         })
         document.addEventListener('pageChanged', () => {
             // Display again the question if the user change page.
-            hideElement(component.querySelector('.feedback-message'))
+            hideElement(component.querySelector('.feedback-form'))
+            hideElement(component.querySelector('.feedback-thankyou'))
             showElement(component.querySelector('.feedback-question'))
         })
     },
