@@ -370,7 +370,7 @@ describe('Algorithme d’orientation', function () {
     describe('Département', function () {
         it('Un département à circulation faible', function () {
             var data = {
-                departement: '02',
+                departement: '15',
             }
             profil.fillData(data)
             var algoOrientation = new AlgorithmeOrientation(profil)
@@ -413,7 +413,7 @@ describe('Algorithme d’orientation', function () {
 
         it('Un département + symptômes passés affiche la localisation', function () {
             var data = {
-                departement: '02',
+                departement: '15',
                 symptomes_passes: true,
             }
             profil.fillData(data)
@@ -426,7 +426,7 @@ describe('Algorithme d’orientation', function () {
 
         it('Un département + contact à risque affiche la localisation', function () {
             var data = {
-                departement: '02',
+                departement: '15',
                 contact_a_risque: true,
             }
             profil.fillData(data)
