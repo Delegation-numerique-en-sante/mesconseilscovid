@@ -1,9 +1,9 @@
 async function remplirQuestionnaire(page, choix) {
     await remplirDepartement(page, choix.departement)
-    await remplirActivite(page, choix.activitePro)
     await remplirFoyer(page, choix.enfants)
     await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
     await remplirAntecedents(page)
+    await remplirActivite(page, choix.activitePro)
     await remplirSymptomesActuels(page, choix.symptomesActuels)
     if (choix.symptomesActuels.length === 0) {
         await remplirSymptomesPasses(page, choix.symptomesPasses)
@@ -17,30 +17,10 @@ async function remplirQuestionnaire(page, choix) {
 async function remplirDepartement(page, departement) {
     await page.selectOption('#page select#departement', departement)
     let bouton = await page.waitForSelector('#page >> text="Continuer"')
-    await Promise.all([
-        bouton.click(),
-        page.waitForNavigation({ url: '**/#activitepro' }),
-    ])
-}
-
-// Questionnaire 2/8
-async function remplirActivite(page, activitePro) {
-    let label = await page.waitForSelector('#page label[for="activite_pro"]')
-    let text
-
-    if (activitePro === true) {
-        // Je n’arrive pas à cocher la case directement, alors je clique sur le label
-        await label.click()
-        text = 'Continuer'
-    } else {
-        text = 'Je n’ai pas d’activité professionnelle ou bénévole'
-    }
-
-    let bouton = await page.waitForSelector(`#page >> text="${text}"`)
     await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#foyer' })])
 }
 
-// Questionnaire 3/8
+// Questionnaire 2/8
 async function remplirFoyer(page, enfants) {
     if (enfants === true) {
         // Je n’arrive pas à cocher la case directement, alors je clique sur le label
@@ -58,7 +38,7 @@ async function remplirFoyer(page, enfants) {
     ])
 }
 
-// Questionnaire 4/8
+// Questionnaire 3/8
 async function remplirCaracteristiques(page, age, taille, poids) {
     await page.fill('#page #age', age)
     await page.fill('#page #taille', taille)
@@ -71,12 +51,32 @@ async function remplirCaracteristiques(page, age, taille, poids) {
     ])
 }
 
-// Questionnaire 5/8
+// Questionnaire 4/8
 async function remplirAntecedents(page) {
     // TODO: cocher les cases
     let bouton = await page.waitForSelector(
         '#page >> text=/Aucun de ces éléments ne correspond à .* situation/'
     )
+    await Promise.all([
+        bouton.click(),
+        page.waitForNavigation({ url: '**/#activitepro' }),
+    ])
+}
+
+// Questionnaire 5/8
+async function remplirActivite(page, activitePro) {
+    let label = await page.waitForSelector('#page label[for="activite_pro"]')
+    let text
+
+    if (activitePro === true) {
+        // Je n’arrive pas à cocher la case directement, alors je clique sur le label
+        await label.click()
+        text = 'Continuer'
+    } else {
+        text = 'Je n’ai pas d’activité professionnelle ou bénévole'
+    }
+
+    let bouton = await page.waitForSelector(`#page >> text="${text}"`)
     await Promise.all([
         bouton.click(),
         page.waitForNavigation({ url: '**/#symptomesactuels' }),

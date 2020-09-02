@@ -30,40 +30,11 @@ function residence(form, app, router) {
         event.preventDefault()
         app.profil.departement = event.target.elements['departement'].value
         app.enregistrerProfilActuel()
-        router.navigate('activitepro')
+        router.navigate('foyer')
     })
     document
         .getElementById('geolocalisation')
         .addEventListener('click', geoloc.geolocalisation)
-}
-
-function activitepro(form, app, router) {
-    var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'activite_pro', app.profil)
-    formUtils.preloadCheckboxForm(form, 'activite_pro_public', app.profil)
-    formUtils.preloadCheckboxForm(form, 'activite_pro_sante', app.profil)
-    formUtils.preloadCheckboxForm(form, 'activite_pro_liberal', app.profil)
-    var primary = form.elements['activite_pro']
-    formUtils.enableOrDisableSecondaryFields(form, primary)
-    primary.addEventListener('click', function () {
-        formUtils.enableOrDisableSecondaryFields(form, primary)
-    })
-    const uncheckedLabel = app.profil.estMonProfil()
-        ? 'Je n’ai pas d’activité professionnelle ou bénévole'
-        : 'Cette personne n’a pas d’activité professionnelle ou bénévole'
-    formUtils.toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
-    form.addEventListener('submit', function (event) {
-        event.preventDefault()
-        app.profil.activite_pro = event.target.elements['activite_pro'].checked
-        app.profil.activite_pro_public =
-            event.target.elements['activite_pro_public'].checked
-        app.profil.activite_pro_sante =
-            event.target.elements['activite_pro_sante'].checked
-        app.profil.activite_pro_liberal =
-            event.target.elements['activite_pro_liberal'].checked
-        app.enregistrerProfilActuel()
-        router.navigate('foyer')
-    })
 }
 
 function foyer(form, app, router) {
@@ -136,6 +107,35 @@ function antecedents(form, app, router) {
             event.target.elements['antecedent_drepano'].checked
         app.profil.antecedent_chronique_autre =
             event.target.elements['antecedent_chronique_autre'].checked
+        app.enregistrerProfilActuel()
+        router.navigate('activitepro')
+    })
+}
+
+function activitepro(form, app, router) {
+    var button = form.querySelector('input[type=submit]')
+    formUtils.preloadCheckboxForm(form, 'activite_pro', app.profil)
+    formUtils.preloadCheckboxForm(form, 'activite_pro_public', app.profil)
+    formUtils.preloadCheckboxForm(form, 'activite_pro_sante', app.profil)
+    formUtils.preloadCheckboxForm(form, 'activite_pro_liberal', app.profil)
+    var primary = form.elements['activite_pro']
+    formUtils.enableOrDisableSecondaryFields(form, primary)
+    primary.addEventListener('click', function () {
+        formUtils.enableOrDisableSecondaryFields(form, primary)
+    })
+    const uncheckedLabel = app.profil.estMonProfil()
+        ? 'Je n’ai pas d’activité professionnelle ou bénévole'
+        : 'Cette personne n’a pas d’activité professionnelle ou bénévole'
+    formUtils.toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+        app.profil.activite_pro = event.target.elements['activite_pro'].checked
+        app.profil.activite_pro_public =
+            event.target.elements['activite_pro_public'].checked
+        app.profil.activite_pro_sante =
+            event.target.elements['activite_pro_sante'].checked
+        app.profil.activite_pro_liberal =
+            event.target.elements['activite_pro_liberal'].checked
         app.enregistrerProfilActuel()
         router.navigate('symptomesactuels')
     })
