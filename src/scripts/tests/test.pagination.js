@@ -64,16 +64,25 @@ describe('Pagination', function () {
         })
     })
 
-    describe('Mon activité', function () {
+    describe('Mes caractéristiques', function () {
         it('redirige vers le lieu de résidence si réponse 1 manquante', function () {
             assert.strictEqual(
-                redirectToUnansweredQuestions('activitepro', {}),
+                redirectToUnansweredQuestions('caracteristiques', {}),
                 'residence'
             )
         })
-        it('ok d’aller à la question 3 si réponse à la 1 et 2', function () {
+
+        it('redirige vers question 2 si réponse manquante', function () {
+            assert.strictEqual(
+                redirectToUnansweredQuestions('caracteristiques', {
+                    departement: '80',
+                }),
+                'foyer'
+            )
+        })
+        it('ok d’aller à la question 3 si réponse à la 3', function () {
             assert.isUndefined(
-                redirectToUnansweredQuestions('activitepro', {
+                redirectToUnansweredQuestions('caracteristiques', {
                     departement: '80',
                     foyer_enfants: false,
                 })
@@ -81,59 +90,8 @@ describe('Pagination', function () {
         })
         it('ok d’aller à la question 3 même si déjà répondu', function () {
             assert.isUndefined(
-                redirectToUnansweredQuestions('activitepro', {
-                    departement: '80',
-                    foyer_enfants: false,
-                    activite_pro: false,
-                })
-            )
-        })
-    })
-
-    describe('Mes caractéristiques', function () {
-        it('redirige vers question 3 si réponse manquante', function () {
-            assert.strictEqual(
                 redirectToUnansweredQuestions('caracteristiques', {
                     departement: '80',
-                    foyer_enfants: false,
-                }),
-                'activitepro'
-            )
-        })
-        it('redirige vers question 3 si activité pro mais pas profession libérale', function () {
-            assert.strictEqual(
-                redirectToUnansweredQuestions('caracteristiques', {
-                    departement: '80',
-                    foyer_enfants: false,
-                    activite_pro: true,
-                }),
-                'activitepro'
-            )
-        })
-        it('ok d’aller à la question 4 si réponse vraie à la 3 + profession libérale', function () {
-            assert.isUndefined(
-                redirectToUnansweredQuestions('caracteristiques', {
-                    departement: '80',
-                    foyer_enfants: false,
-                    activite_pro: true,
-                    activite_pro_liberal: false,
-                })
-            )
-        })
-        it('ok d’aller à la question 4 si réponse à la 3', function () {
-            assert.isUndefined(
-                redirectToUnansweredQuestions('caracteristiques', {
-                    departement: '80',
-                    activite_pro: false,
-                    foyer_enfants: false,
-                })
-            )
-        })
-        it('ok d’aller à la question 4 même si déjà répondu', function () {
-            assert.isUndefined(
-                redirectToUnansweredQuestions('caracteristiques', {
-                    departement: '80',
-                    activite_pro: false,
                     foyer_enfants: false,
                     age: 42,
                 })
@@ -142,42 +100,38 @@ describe('Pagination', function () {
     })
 
     describe('Mes antécédents', function () {
-        it('redirige vers question 4 si réponse manquante', function () {
+        it('redirige vers question 3 si réponse manquante', function () {
             assert.strictEqual(
                 redirectToUnansweredQuestions('antecedents', {
                     departement: '80',
-                    activite_pro: false,
                     foyer_enfants: false,
                 }),
                 'caracteristiques'
             )
         })
-        it('redirige vers question 4 si âge inférieur à 15', function () {
+        it('redirige vers question 3 si âge inférieur à 15', function () {
             assert.strictEqual(
                 redirectToUnansweredQuestions('antecedents', {
                     departement: '80',
-                    activite_pro: false,
                     foyer_enfants: false,
                     age: 12,
                 }),
                 'caracteristiques'
             )
         })
-        it('ok d’aller à la question 5 si réponse à la 4', function () {
+        it('ok d’aller à la question 4 si réponse à la 3', function () {
             assert.isUndefined(
                 redirectToUnansweredQuestions('antecedents', {
                     departement: '80',
-                    activite_pro: false,
                     foyer_enfants: false,
                     age: 42,
                 })
             )
         })
-        it('ok d’aller à la question 5 même si déjà répondu', function () {
+        it('ok d’aller à la question 4 même si déjà répondu', function () {
             assert.isUndefined(
                 redirectToUnansweredQuestions('antecedents', {
                     departement: '80',
-                    activite_pro: false,
                     foyer_enfants: false,
                     age: 42,
                     antecedent_cardio: false,
@@ -186,16 +140,67 @@ describe('Pagination', function () {
         })
     })
 
+    describe('Mon activité', function () {
+        it('ok d’aller à la question 5 si réponse à la 4', function () {
+            assert.isUndefined(
+                redirectToUnansweredQuestions('activitepro', {
+                    departement: '80',
+                    foyer_enfants: false,
+                    age: 42,
+                    antecedent_cardio: false,
+                })
+            )
+        })
+        it('ok d’aller à la question 5 même si déjà répondu', function () {
+            assert.isUndefined(
+                redirectToUnansweredQuestions('activitepro', {
+                    departement: '80',
+                    foyer_enfants: false,
+                    age: 42,
+                    antecedent_cardio: false,
+                    activite_pro: false,
+                })
+            )
+        })
+    })
+
     describe('Mes symptômes actuels', function () {
+        // Début rattrapage profession libérale.
+        it('redirige vers question 5 si activité pro mais pas profession libérale', function () {
+            assert.strictEqual(
+                redirectToUnansweredQuestions('symptomesactuels', {
+                    departement: '80',
+                    foyer_enfants: false,
+                    activite_pro: true,
+                    age: 42,
+                    antecedent_cardio: false,
+                }),
+                'activitepro'
+            )
+        })
+        it('ok d’aller à la question 6 si réponse vraie à la 5 + profession libérale', function () {
+            assert.isUndefined(
+                redirectToUnansweredQuestions('symptomesactuels', {
+                    departement: '80',
+                    foyer_enfants: false,
+                    activite_pro: true,
+                    activite_pro_liberal: false,
+                    age: 42,
+                    antecedent_cardio: false,
+                })
+            )
+        })
+        // Fin rattrapage profession libérale.
+
         it('redirige vers question 5 si réponse manquante', function () {
             assert.strictEqual(
                 redirectToUnansweredQuestions('symptomesactuels', {
                     departement: '80',
-                    activite_pro: false,
                     foyer_enfants: false,
                     age: 42,
+                    antecedent_cardio: false,
                 }),
-                'antecedents'
+                'activitepro'
             )
         })
         it('ok d’aller à la question 6 si réponse à la 5', function () {
@@ -203,9 +208,9 @@ describe('Pagination', function () {
                 redirectToUnansweredQuestions('symptomesactuels', {
                     departement: '80',
                     activite_pro: false,
-                    foyer_enfants: false,
                     age: 42,
                     antecedent_cardio: false,
+                    foyer_enfants: false,
                 })
             )
         })

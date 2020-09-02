@@ -1,9 +1,9 @@
 async function remplirQuestionnaire(page, choix) {
     await remplirDepartement(page, choix.departement)
     await remplirFoyer(page, choix.enfants)
-    await remplirActivite(page, choix.activitePro)
     await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
     await remplirAntecedents(page)
+    await remplirActivite(page, choix.activitePro)
     await remplirSymptomesActuels(page, choix.symptomesActuels)
     if (choix.symptomesActuels.length === 0) {
         await remplirSymptomesPasses(page, choix.symptomesPasses)
@@ -34,11 +34,36 @@ async function remplirFoyer(page, enfants) {
     let bouton = await page.waitForSelector('#page >> text="Continuer"')
     await Promise.all([
         bouton.click(),
-        page.waitForNavigation({ url: '**/#activitepro' }),
+        page.waitForNavigation({ url: '**/#caracteristiques' }),
     ])
 }
 
 // Questionnaire 3/8
+async function remplirCaracteristiques(page, age, taille, poids) {
+    await page.fill('#page #age', age)
+    await page.fill('#page #taille', taille)
+    await page.fill('#page #poids', poids)
+    // TODO: grossesse
+    let bouton = await page.waitForSelector('#page >> text="Continuer"')
+    await Promise.all([
+        bouton.click(),
+        page.waitForNavigation({ url: '**/#antecedents' }),
+    ])
+}
+
+// Questionnaire 4/8
+async function remplirAntecedents(page) {
+    // TODO: cocher les cases
+    let bouton = await page.waitForSelector(
+        '#page >> text=/Aucun de ces éléments ne correspond à .* situation/'
+    )
+    await Promise.all([
+        bouton.click(),
+        page.waitForNavigation({ url: '**/#activitepro' }),
+    ])
+}
+
+// Questionnaire 5/8
 async function remplirActivite(page, activitePro) {
     let label = await page.waitForSelector('#page label[for="activite_pro"]')
     let text
@@ -52,31 +77,6 @@ async function remplirActivite(page, activitePro) {
     }
 
     let bouton = await page.waitForSelector(`#page >> text="${text}"`)
-    await Promise.all([
-        bouton.click(),
-        page.waitForNavigation({ url: '**/#caracteristiques' }),
-    ])
-}
-
-// Questionnaire 4/8
-async function remplirCaracteristiques(page, age, taille, poids) {
-    await page.fill('#page #age', age)
-    await page.fill('#page #taille', taille)
-    await page.fill('#page #poids', poids)
-    // TODO: grossesse
-    let bouton = await page.waitForSelector('#page >> text="Continuer"')
-    await Promise.all([
-        bouton.click(),
-        page.waitForNavigation({ url: '**/#antecedents' }),
-    ])
-}
-
-// Questionnaire 5/8
-async function remplirAntecedents(page) {
-    // TODO: cocher les cases
-    let bouton = await page.waitForSelector(
-        '#page >> text=/Aucun de ces éléments ne correspond à .* situation/'
-    )
     await Promise.all([
         bouton.click(),
         page.waitForNavigation({ url: '**/#symptomesactuels' }),

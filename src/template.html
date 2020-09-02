@@ -251,47 +251,10 @@
     </form>
 </section>
 
-<section id="activitepro" hidden>
-    <form id="activite-pro-form" class="block">
-        <fieldset>
-            <legend>3/8 - {{ question_activité_pro_titre|me_or_them }}</legend>
-            <div>
-                <input id="activite_pro" type="checkbox" name="activite_pro">
-                <label for="activite_pro">
-                    <span>{{ question_activité_pro_libellé|me_or_them }}</span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="activite_pro_public" type="checkbox" name="activite_pro_public" disabled>
-                <label for="activite_pro_public">
-                    <span>{{ question_activité_pro_public_libellé|me_or_them }}</span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="activite_pro_liberal" type="checkbox" name="activite_pro_liberal" disabled>
-                <label for="activite_pro_liberal">
-                    <span>{{ question_activité_pro_libéral_libellé|me_or_them }}</span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
-                <label for="activite_pro_sante">
-                    <span>{{ question_activité_pro_santé_libellé|me_or_them }}</span>
-                </label>
-                <div class="details">{{ question_activité_pro_santé_aide }}</div>
-            </div>
-        </fieldset>
-        <div class="form-controls">
-            <input type="submit" class="button" value="Continuer">
-            <a href="#foyer" class="back-button button-outline">Retour</a>
-        </div>
-    </form>
-</section>
-
 <section id="caracteristiques" hidden>
     <form id="caracteristiques-form" class="block">
         <fieldset>
-            <legend>4/8 - {{ question_caractéristiques_titre|me_or_them }}</legend>
+            <legend>3/8 - {{ question_caractéristiques_titre|me_or_them }}</legend>
             <div class="details">{{ question_caractéristiques_aide }}</div>
             <ul class="no-list-style">
                 <li class="row">
@@ -316,7 +279,7 @@
         </fieldset>
         <div class="form-controls">
             <input type="submit" class="button" value="Continuer">
-            <a href="#activitepro" class="back-button button-outline">Retour</a>
+            <a href="#foyer" class="back-button button-outline">Retour</a>
         </div>
     </form>
 </section>
@@ -324,7 +287,7 @@
 <section id="antecedents" hidden>
     <form id="antecedents-form" class="block">
         <fieldset>
-            <legend>5/8 - {{ question_antécédents_titre|me_or_them }}</legend>
+            <legend>4/8 - {{ question_antécédents_titre|me_or_them }}</legend>
             <div class="field">
                 <input id="antecedent_cardio" type="checkbox" name="antecedent_cardio">
                 <label for="antecedent_cardio">
@@ -408,6 +371,43 @@
     </form>
 </section>
 
+<section id="activitepro" hidden>
+    <form id="activite-pro-form" class="block">
+        <fieldset>
+            <legend>5/8 - {{ question_activité_pro_titre|me_or_them }}</legend>
+            <div>
+                <input id="activite_pro" type="checkbox" name="activite_pro">
+                <label for="activite_pro">
+                    <span>{{ question_activité_pro_libellé|me_or_them }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="activite_pro_public" type="checkbox" name="activite_pro_public" disabled>
+                <label for="activite_pro_public">
+                    <span>{{ question_activité_pro_public_libellé|me_or_them }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="activite_pro_liberal" type="checkbox" name="activite_pro_liberal" disabled>
+                <label for="activite_pro_liberal">
+                    <span>{{ question_activité_pro_libéral_libellé|me_or_them }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
+                <label for="activite_pro_sante">
+                    <span>{{ question_activité_pro_santé_libellé|me_or_them }}</span>
+                </label>
+                <div class="details">{{ question_activité_pro_santé_aide }}</div>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <input type="submit" class="button" value="Continuer">
+            <a href="#antecedents" class="back-button button-outline">Retour</a>
+        </div>
+    </form>
+</section>
+
 <section id="symptomesactuels" hidden>
     <form id="symptomes-actuels-form" class="block">
         <fieldset>
@@ -485,7 +485,7 @@
         </fieldset>
         <div class="form-controls">
             <input type="submit" class="button" value="Continuer">
-            <a href="#antecedents" class="back-button button-outline">Retour</a>
+            <a href="#activitepro" class="back-button button-outline">Retour</a>
         </div>
     </form>
 </section>

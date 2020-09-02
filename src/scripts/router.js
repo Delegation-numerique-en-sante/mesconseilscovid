@@ -76,11 +76,6 @@ function initRouter(app) {
             var form = pagination.loadPage(pageName, app)
             questionnaire.foyer(form, app, router)
         })
-        .on(new RegExp('^activitepro$'), function () {
-            var pageName = 'activitepro'
-            var form = pagination.loadPage(pageName, app)
-            questionnaire.activitepro(form, app, router)
-        })
         .on(new RegExp('^caracteristiques$'), function () {
             var pageName = 'caracteristiques'
             var form = pagination.loadPage(pageName, app)
@@ -90,6 +85,11 @@ function initRouter(app) {
             var pageName = 'antecedents'
             var form = pagination.loadPage(pageName, app)
             questionnaire.antecedents(form, app, router)
+        })
+        .on(new RegExp('^activitepro$'), function () {
+            var pageName = 'activitepro'
+            var form = pagination.loadPage(pageName, app)
+            questionnaire.activitepro(form, app, router)
         })
         .on(new RegExp('^symptomesactuels$'), function () {
             var pageName = 'symptomesactuels'

@@ -43,6 +43,19 @@ var redirectToUnansweredQuestions = function (page, profil) {
 
     if (page === 'foyer') return
 
+    if (
+        (typeof profil.age === 'undefined' || profil.age < 15) &&
+        page !== 'caracteristiques'
+    )
+        return 'caracteristiques'
+
+    if (page === 'caracteristiques') return
+
+    if (typeof profil.antecedent_cardio === 'undefined' && page !== 'antecedents')
+        return 'antecedents'
+
+    if (page === 'antecedents') return
+
     if (typeof profil.activite_pro === 'undefined' && page !== 'activitepro')
         return 'activitepro'
 
@@ -56,19 +69,6 @@ var redirectToUnansweredQuestions = function (page, profil) {
         return 'activitepro'
 
     if (page === 'activitepro') return
-
-    if (
-        (typeof profil.age === 'undefined' || profil.age < 15) &&
-        page !== 'caracteristiques'
-    )
-        return 'caracteristiques'
-
-    if (page === 'caracteristiques') return
-
-    if (typeof profil.antecedent_cardio === 'undefined' && page !== 'antecedents')
-        return 'antecedents'
-
-    if (page === 'antecedents') return
 
     if (typeof profil.symptomes_actuels === 'undefined' && page !== 'symptomesactuels')
         return 'symptomesactuels'
