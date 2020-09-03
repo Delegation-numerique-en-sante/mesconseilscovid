@@ -45,31 +45,7 @@ function foyer(form, app, router) {
         app.profil.foyer_enfants = event.target.elements['foyer_enfants'].checked
         app.profil.foyer_fragile = event.target.elements['foyer_fragile'].checked
         app.enregistrerProfilActuel()
-        router.navigate('caracteristiques')
-    })
-}
-
-function caracteristiques(form, app, router) {
-    var button = form.querySelector('input[type=submit]')
-    formUtils.preloadForm(form, 'age', app.profil)
-    formUtils.preloadForm(form, 'taille', app.profil)
-    formUtils.preloadForm(form, 'poids', app.profil)
-    formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre', app.profil)
-    const requiredLabel = 'Les informations d’âge, de poids et de taille sont requises'
-    formUtils.toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)
-    form.addEventListener('submit', function (event) {
-        event.preventDefault()
-        app.profil.age = event.target.elements['age'].value
-        app.profil.poids = event.target.elements['poids'].value
-        app.profil.taille = event.target.elements['taille'].value
-        app.profil.grossesse_3e_trimestre =
-            event.target.elements['grossesse_3e_trimestre'].checked
-        app.enregistrerProfilActuel()
-        if (app.profil.age < 15) {
-            router.navigate('pediatrie')
-        } else {
-            router.navigate('antecedents')
-        }
+        router.navigate('antecedents')
     })
 }
 
@@ -108,7 +84,31 @@ function antecedents(form, app, router) {
         app.profil.antecedent_chronique_autre =
             event.target.elements['antecedent_chronique_autre'].checked
         app.enregistrerProfilActuel()
-        router.navigate('activitepro')
+        router.navigate('caracteristiques')
+    })
+}
+
+function caracteristiques(form, app, router) {
+    var button = form.querySelector('input[type=submit]')
+    formUtils.preloadForm(form, 'age', app.profil)
+    formUtils.preloadForm(form, 'taille', app.profil)
+    formUtils.preloadForm(form, 'poids', app.profil)
+    formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre', app.profil)
+    const requiredLabel = 'Les informations d’âge, de poids et de taille sont requises'
+    formUtils.toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+        app.profil.age = event.target.elements['age'].value
+        app.profil.poids = event.target.elements['poids'].value
+        app.profil.taille = event.target.elements['taille'].value
+        app.profil.grossesse_3e_trimestre =
+            event.target.elements['grossesse_3e_trimestre'].checked
+        app.enregistrerProfilActuel()
+        if (app.profil.age < 15) {
+            router.navigate('pediatrie')
+        } else {
+            router.navigate('activitepro')
+        }
     })
 }
 

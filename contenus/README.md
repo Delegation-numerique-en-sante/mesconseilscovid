@@ -64,32 +64,6 @@ Conseils :
 2. [conseils par défaut](conseils/conseils_département_défaut.md)
 
 
-#### Activité
-
-[Titre](questions/question_activité_pro_titre.md)
-
-Question : [libellé](questions/question_activité_pro_libellé.md)
-
-Sous-question (contact public) : [libellé](questions/question_activité_pro_public_libellé.md)
-
-Sous-question (libéral) : [libellé](questions/question_activité_pro_libéral_libellé.md)
-
-Sous-question (domaine santé) : [libellé](questions/question_activité_pro_santé_libellé.md), [aide](questions/question_activité_pro_santé_aide.md)
-
-Réponse :
-
-* [réponse_activité_pro.md](réponses/réponse_activité_pro.md) si case cochée
-
-Conseils :
-
-* [conseils_activité_pro.md](conseils/conseils_activité_pro.md) si case cochée
-* [conseils_activité_pro_public.md](conseils/conseils_activité_pro_public.md) si case cochée
-* [conseils_activité_pro_santé.md](conseils/conseils_activité_pro_santé.md) si case cochée
-* [conseils_activité_pro_arrêt.md](conseils/conseils_activité_pro_arrêt.md) si personne à [Risque](#risque)
-* [conseils_activité_pro_libéral.md](conseils/conseils_activité_pro_libéral.md) si case cochée
-* [conseils_activité_pro_infos.md](conseils/conseils_activité_pro_infos.md) si case activité cochée et/ou case public cochée (mais pas la case santé)
-
-
 #### Foyer
 
 [Titre](questions/question_foyer_titre.md)
@@ -128,19 +102,6 @@ Si seule la case fragile est cochée :
 
 #### Caractéristiques et antécédents
 
-[Titre caractéristiques](questions/question_caractéristiques_titre.md)
-
-Aide : [aide](questions/question_caractéristiques_aide.md)
-
-Question (âge) : [libellé](questions/question_caractéristiques_âge_libellé.md)
-
-Question (taille) : [libellé](questions/question_caractéristiques_taille_libellé.md)
-
-Question (poids) : [libellé](questions/question_caractéristiques_poids_libellé.md)
-
-Question (grossesse) : [libellé](questions/question_caractéristiques_grossesse_libellé.md)
-
-
 [Titre antécédents](questions/question_antécédents_titre.md)
 
 Question (cardio) : [libellé](questions/question_antécédents_cardio_libellé.md), [aide](questions/question_antécédents_cardio_aide.md)
@@ -160,6 +121,18 @@ Question (cirrhose) : [libellé](questions/question_antécédents_cirrhose_libel
 Question (drépanocytose) : [libellé](questions/question_antécédents_drépanocytose_libellé.md)
 
 Question (chronique autre) : [libellé](questions/question_antécédents_chronique_autre_libellé.md)
+
+[Titre caractéristiques](questions/question_caractéristiques_titre.md)
+
+Aide : [aide](questions/question_caractéristiques_aide.md)
+
+Question (âge) : [libellé](questions/question_caractéristiques_âge_libellé.md)
+
+Question (taille) : [libellé](questions/question_caractéristiques_taille_libellé.md)
+
+Question (poids) : [libellé](questions/question_caractéristiques_poids_libellé.md)
+
+Question (grossesse) : [libellé](questions/question_caractéristiques_grossesse_libellé.md)
 
 Réponse :
 
@@ -187,6 +160,33 @@ Si case antécédents chroniques autres cochée :
 
 1. [conseils_généraux.md](conseils/conseils_généraux.md)
 2. [conseils_généraux_info.md](conseils/conseils_généraux_info.md)
+
+
+#### Activité
+
+[Titre](questions/question_activité_pro_titre.md)
+
+Question : [libellé](questions/question_activité_pro_libellé.md)
+
+Sous-question (contact public) : [libellé](questions/question_activité_pro_public_libellé.md)
+
+Sous-question (libéral) : [libellé](questions/question_activité_pro_libéral_libellé.md)
+
+Sous-question (domaine santé) : [libellé](questions/question_activité_pro_santé_libellé.md), [aide](questions/question_activité_pro_santé_aide.md)
+
+Réponse :
+
+* [réponse_activité_pro.md](réponses/réponse_activité_pro.md) si case cochée
+
+Conseils :
+
+* [conseils_activité_pro.md](conseils/conseils_activité_pro.md) si case cochée
+* [conseils_activité_pro_public.md](conseils/conseils_activité_pro_public.md) si case cochée
+* [conseils_activité_pro_santé.md](conseils/conseils_activité_pro_santé.md) si case cochée
+* [conseils_activité_pro_arrêt.md](conseils/conseils_activité_pro_arrêt.md) si personne à [Risque](#risque)
+* [conseils_activité_pro_libéral.md](conseils/conseils_activité_pro_libéral.md) si case cochée
+* [conseils_activité_pro_infos.md](conseils/conseils_activité_pro_infos.md) si case activité cochée et/ou case public cochée (mais pas la case santé)
+
 
 
 ### Cas particuliers
