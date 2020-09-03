@@ -1,9 +1,10 @@
 // eslint-disable-next-line no-extra-semi
-;(function (window, plausibleHost) {
+;(function (window) {
     'use strict'
 
     var location = window.location
     var document = window.document
+    var plausibleHost = document.body.dataset.statsUrl
 
     var CONFIG = { domain: location.hostname }
 
@@ -87,4 +88,4 @@
         new Image().src =
             plausibleHost + '/api/error?message=' + encodeURIComponent(e.message)
     }
-})(window, 'https://stats.mesconseilscovid.fr')
+})(window)

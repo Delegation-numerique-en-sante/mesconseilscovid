@@ -150,7 +150,7 @@ def documentation():
         for file_path, filename in each_file_from(
             folder, file_name="*.md", exclude=["README.md"]
         ):
-            if filename.startswith("meta_"):
+            if filename.startswith("meta_") or filename.startswith("config_"):
                 continue
             if filename not in readme:
                 raise Exception(f"Documentation missing for {filename}")

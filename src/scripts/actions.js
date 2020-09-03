@@ -55,9 +55,17 @@ module.exports = {
                 const form = component.querySelector('.feedback-form form')
                 form.addEventListener('submit', (event) => {
                     event.preventDefault()
-                    const message = event.target.elements.message.value
-                    // Actually send the values to a server.
-                    console.log(feedback, message, getCurrentPageName())
+                    const feedbackHost = document.body.dataset.statsUrl
+                    const payload = {
+                        kind: feedback,
+                        message: event.target.elements.message.value,
+                        page: getCurrentPageName(),
+                    }
+                    const request = new XMLHttpRequest()
+                    request.open('POST', feedbackHost + '/feedback', true)
+                    request.setRequestHeader('Content-Type', 'application/json')
+                    request.send(JSON.stringify(payload))
+
                     // TODO: refactor the transition effect.
                     component.style.transition = `opacity ${transitionDelay / 1000}s`
                     component.style.opacity = '0'
