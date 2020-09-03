@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-09-03
+
+* permutation des pages de formulaires pour l’orientation
+* affichage de la date de dernière mise à jour en pied de page
+
 ## 2020-08-24
 
 * corrige des problèmes de compabilité avec IE 11 et Edge <= 44
