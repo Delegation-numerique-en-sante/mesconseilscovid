@@ -43,14 +43,21 @@ module.exports = {
         })
     },
     bindFeedback: function (component) {
-        function fillThankYouMessageWithTransition(feedback) {
-            const transitionDelay = component.dataset.feedbackTransitionDelay
-            component.style.transition = `opacity ${transitionDelay / 1000}s`
+        function opacityTransition(component, delay, callback) {
+            component.style.transition = `opacity ${delay / 1000}s`
             component.style.opacity = '0'
             window.setTimeout(() => {
+                component.style.opacity = '1'
+                callback(component)
+            }, delay)
+        }
+
+        function askForMoreFeedback(feedback, component) {
+            const transitionDelay = component.dataset.feedbackTransitionDelay
+
+            opacityTransition(component, transitionDelay, (component) => {
                 hideElement(component.querySelector('.feedback-question'))
                 showElement(component.querySelector('.feedback-form'))
-                component.style.opacity = '1'
                 component.parentElement.classList.add('js-feedback-submitted')
                 const form = component.querySelector('.feedback-form form')
                 form.addEventListener('submit', (event) => {
@@ -66,16 +73,12 @@ module.exports = {
                     request.setRequestHeader('Content-Type', 'application/json')
                     request.send(JSON.stringify(payload))
 
-                    // TODO: refactor the transition effect.
-                    component.style.transition = `opacity ${transitionDelay / 1000}s`
-                    component.style.opacity = '0'
-                    window.setTimeout(() => {
+                    opacityTransition(component, transitionDelay, (component) => {
                         hideElement(component.querySelector('.feedback-form'))
                         showElement(component.querySelector('.feedback-thankyou'))
-                        component.style.opacity = '1'
-                    }, transitionDelay)
+                    })
                 })
-            }, transitionDelay)
+            })
         }
         // eslint-disable-next-line no-extra-semi
         ;[].forEach.call(component.querySelectorAll('.button-feedback'), (button) => {
@@ -83,7 +86,7 @@ module.exports = {
                 event.preventDefault()
                 const feedback = event.target.dataset.feedback
                 window.plausible(`Avis ${feedback}`)
-                fillThankYouMessageWithTransition(feedback)
+                askForMoreFeedback(feedback, component)
             })
         })
         document.addEventListener('pageChanged', () => {
