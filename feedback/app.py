@@ -4,28 +4,83 @@ import os
 from http import HTTPStatus
 
 from pykeybasebot import Bot
-from roll import Roll
+from roll import HttpError, Roll
 from roll.extensions import cors, options, simple_server, traceback
 
 logger = logging.getLogger(__name__)
 
-COVIDOUDOU_GENERAL = "00001ec246802cf2e3efb0e00ac6c7733313ef24d49f6b835877011974dde0c5"
 
-try:
-    paperkey = os.environ["KEYBASE_PAPERKEY"]
-except KeyError:
-    print("You must set the KEYBASE_PAPERKEY env var.")
-    exit(1)
+class CoviBot(Bot):
+    """
+    Minimal Keybase bot that can send messages to a channel
+    """
+
+    def __init__(self, paperkey, channel):
+        super().__init__(
+            username="covibot", paperkey=paperkey, handler=CoviBot.Handler()
+        )
+        self.channel = channel
+
+    class Handler:
+        async def __call__(self, *args):
+            return  # do nothing
+
+    async def send_message(self, message):
+        await self.chat.send(self.channel, message)
 
 
-class Handler:
-    async def __call__(self, bot, event):
-        return
+class FeedbackApp(Roll):
+    """
+    Minimal async web app that relays feedback messages to Keybase
+    """
+
+    def __init__(self):
+        super().__init__()
+        cors(self, origin="*", headers=["content-type"])
+        options(self)
+        traceback(self)
+        self.bot = self.create_bot()
+
+    def create_bot(self):
+        try:
+            paperkey = os.environ["COVIBOT_PAPERKEY"]
+        except KeyError:
+            print("You must set the COVIBOT_PAPERKEY env var.")
+            exit(1)
+        try:
+            conv_id = os.environ["COVIBOT_CONV_ID"]
+        except KeyError:
+            print("You must set the COVIBOT_CONV_ID env var.")
+            exit(1)
+        return CoviBot(paperkey=paperkey, channel=conv_id)
 
 
-bot = Bot(username="covibot", paperkey=paperkey, handler=Handler())
+app = FeedbackApp()
 
-app = Roll()
+
+@app.route("/feedback")
+class FeedbackView:
+
+    KIND_EMOJI = {"flag": ":golf:", "positif": ":+1:", "negatif": ":-1:"}
+
+    async def on_post(self, request, response):
+        payload = request.json
+        try:
+            kind = payload["kind"]
+            page = payload["page"]
+            message = payload["message"]
+        except KeyError:
+            raise HttpError(HTTPStatus.BAD_REQUEST)
+
+        message = f"{self.KIND_EMOJI[kind]} ({page}): {message}"
+
+        if request.host.startswith("127.0.0.1"):
+            print(message)
+        else:
+            await request.app.bot.send_message(message)
+
+        response.status = HTTPStatus.ACCEPTED
+        response.json = {"message": message}
 
 
 @app.listen("error")
@@ -43,22 +98,6 @@ async def json_error_response(request, response, error):
         )
 
 
-@app.route("/feedback", methods=["POST"])
-async def feedback(request, response):
-    payload = request.json
-    kind_emoji = {"flag": ":golf:", "positif": ":+1:", "negatif": ":-1:"}
-    message = f'{kind_emoji[payload["kind"]]} ({payload["page"]}): {payload["message"]}'
-    if request.host.startswith("127.0.0.1"):
-        print(message)
-    else:
-        await bot.chat.send(COVIDOUDOU_GENERAL, message)
-    response.body = {"message": message}
-    response.status = HTTPStatus.ACCEPTED
-
-
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    cors(app, origin="*", headers=["content-type"])
-    options(app)
-    traceback(app)
     simple_server(app, port=5678)
