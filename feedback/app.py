@@ -100,4 +100,6 @@ async def json_error_response(request, response, error):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    simple_server(app, port=5678)
+    simple_server(
+        app, host=os.environ.get("HOST", "127.0.0.1"), port=os.environ.get("PORT", 5678)
+    )
