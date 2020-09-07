@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-09-07
+
+* ajoute des formulaires pour décrire les difficultés rencontrées
+
 ## 2020-09-03
 
 * permutation des pages de formulaires pour l’orientation
