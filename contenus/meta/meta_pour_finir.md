@@ -16,7 +16,7 @@ Vos réponses sont sauvegardées dans votre navigateur et les conseils sont mis 
         <div class="feedback-form" hidden>
             <form>
                 <fieldset>
-                    <p>Merci pour votre retour, aidez-nous en complétant le formulaire suivant (vos données saisies ne seront pas perdues) :</p>
+                    <p>Merci pour votre retour. Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?</p>
                     <label for="message" hidden>Message :</label>
                     <textarea id="message" name="message" rows="9" cols="20" required></textarea>
                 </fieldset>
@@ -28,7 +28,7 @@ Vos réponses sont sauvegardées dans votre navigateur et les conseils sont mis 
         </div>
         <div class="feedback-thankyou" hidden>
             <p>
-                Merci beaucoup pour votre message qui nous aidera à améliorer le site.
+                Merci beaucoup pour votre message qui nous aidera à améliorer les conseils.
             </p>
         </div>
     </div>
