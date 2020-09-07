@@ -28,7 +28,7 @@ Vos réponses sont sauvegardées dans votre navigateur et les conseils sont mis 
         </div>
         <div class="feedback-thankyou" hidden>
             <p>
-                Merci beaucoup pour votre message qui nous aidera a améliorer le site.
+                Merci beaucoup pour votre message qui nous aidera à améliorer le site.
             </p>
         </div>
     </div>
