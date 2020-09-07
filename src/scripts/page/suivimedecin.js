@@ -39,8 +39,10 @@ function page(form, app, router) {
         event.preventDefault()
         const medecin = event.target.elements['suivi_medecin'].value
         if (medecin === 'oui') {
+            window.plausible(`Suivi medecin oui`)
             router.navigate('suividate')
         } else {
+            window.plausible(`Suivi medecin non`)
             router.navigate('conseils')
         }
     })
