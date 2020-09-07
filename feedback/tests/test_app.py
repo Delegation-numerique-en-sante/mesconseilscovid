@@ -12,9 +12,9 @@ def app(monkeypatch):
     monkeypatch.setenv("COVIBOT_PAPERKEY", "dummy paper key")
     monkeypatch.setenv("COVIBOT_CONV_ID", "abcd1234")
 
-    from app import app as app_
+    from mesconseilscovid_feedback.app import app as app_
 
-    with patch("app.CoviBot.chat") as mock_chat:
+    with patch("mesconseilscovid_feedback.app.CoviBot.chat") as mock_chat:
         mock_chat.send = AsyncMock()
         yield app_
 

@@ -7,7 +7,7 @@ setup(
     author="Délégation ministérielle du numérique en santé",
     author_email="mesconseilscovid@sante.gouv.fr",
     description="Retours utilisateurs pour Mes Conseils Covid",
-    modules=["app"],
+    packages=["mesconseilscovid_feedback"],
     python_requires=">=3.7",
     install_requires=["roll", "pykeybasebot"],
 )
