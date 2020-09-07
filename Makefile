@@ -26,7 +26,7 @@ clean:  ## Clean up JS related stuff.
 ##    make test-integration browser=webkit grep=suivi
 ##    make test browser=webkit
 
-test: test-unit test-integration
+test: test-unit test-integration test-feedback
 
 ifdef grep
 script_flags = -- --grep $(grep)
@@ -45,6 +45,9 @@ else
 	npm run-script --browser=firefox test-integration $(script_flags)
 	npm run-script --browser=webkit test-integration $(script_flags)
 endif
+
+test-feedback:
+	tox -c feedback/tox.ini
 
 check: check-links check-versions check-documentation check-service-worker
 
@@ -86,7 +89,7 @@ pre-commit: pretty lint test-unit build check-versions check-documentation check
 prod: clean install lint pretty test check  ## Make sure everything is clean prior to deploy.
 	# Note: `test` dependency will actually generate the `build`.
 
-.PHONY: serve serve-ssl install clean test test-unit test-integration check-links check-versions check-documentation check-service-worker build generate dev pre-commit prod help
+.PHONY: serve serve-ssl install clean test test-unit test-integration test-feedback check-links check-versions check-documentation check-service-worker build generate dev pre-commit prod help
 
 help:  ## Display this help.
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)

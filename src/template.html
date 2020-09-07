@@ -27,9 +27,8 @@
     <meta property="og:image" content="/illustrations/mesconseilscovid.png">
     <meta property="og:url" content="https://mesconseilscovid.sante.gouv.fr/">
     <meta property="og:locale" content="fr_FR">
-    <script async defer src="scripts/plausible.js"></script>
 </head>
-<body>
+<body data-stats-url="{{ config_stats_url|trim }}">
     <header>
         <section>
             <img src="marianne.png"
@@ -1135,6 +1134,7 @@
         </div>
     </div>
 </section>
+    <script async defer src="scripts/plausible.js"></script>
     <script type="text/javascript">
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./service-worker.js').then(function(registration) {

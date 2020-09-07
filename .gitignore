@@ -6,3 +6,5 @@ src/index.html
 package-lock.json
 .cache
 __pycache__
+feedback/paper_key
+contenus/zoverride

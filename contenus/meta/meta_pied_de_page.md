@@ -1,18 +1,33 @@
 <div class="feedback-block">
-    <p class="feedback-component" data-feedback-transition-delay="500">
-        <span class="feedback-question">
-            Des difficultés avec cette page ?
-            <span class="feedback-controls">
-                <a class="button button-outline button-feedback button-feedback-flag" data-feedback="flag" href="">Oui</a>
-                <a class="button button-outline button-feedback-contact" href="mailto:mesconseilscovid@sante.gouv.fr">Nous contacter</a>
-            </span>
-        </span>
-        <span class="feedback-message" hidden>
-            Merci pour votre retour, si vous souhaitez nous en dire plus,
-            écrivez-nous à : 
-            <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a>
-        </span>
-    </p>
+    <div class="feedback-component" data-feedback-transition-delay="500">
+        <div class="feedback-question">
+            <p>
+                Des difficultés avec cette page ?
+                <span class="feedback-controls">
+                    <a class="button button-outline button-feedback button-feedback-flag" data-feedback="flag" href="">Oui</a>
+                    <a class="button button-outline button-feedback-contact" href="mailto:mesconseilscovid@sante.gouv.fr">Nous contacter</a>
+                </span>
+            </p>
+        </div>
+        <div class="feedback-form" hidden>
+            <form>
+                <fieldset>
+                    <p>Merci de nous avoir signalé vos difficultés avec cette page. Pouvez-vous nous en dire plus, afin que nous puissions l’améliorer ?</p>
+                    <label for="message" hidden>Message :</label>
+                    <textarea id="message" name="message" rows="9" cols="20" required></textarea>
+                </fieldset>
+                <div class="form-controls">
+                    <input type="submit" class="button" value="Envoyer">
+                </div>
+            </form>
+            <p>ou écrivez-nous à : <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a></p>
+        </div>
+        <div class="feedback-thankyou" hidden>
+            <p>
+                Merci beaucoup pour votre message qui nous aidera à améliorer le site.
+            </p>
+        </div>
+    </div>
 </div>
 
 <div class="legals">

@@ -1,5 +1,6 @@
 import { ICS } from './ics.js'
 import { hideElement, showElement } from './affichage.js'
+import { getCurrentPageName } from './pagination.js'
 
 module.exports = {
     bindCalendar: function (element, profil) {
@@ -42,28 +43,56 @@ module.exports = {
         })
     },
     bindFeedback: function (component) {
-        function fillThankYouMessageWithTransition() {
-            const transitionDelay = component.dataset.feedbackTransitionDelay
-            component.style.transition = `opacity ${transitionDelay / 1000}s`
+        function opacityTransition(component, delay, callback) {
+            component.style.transition = `opacity ${delay / 1000}s`
             component.style.opacity = '0'
             window.setTimeout(() => {
-                hideElement(component.querySelector('.feedback-question'))
-                showElement(component.querySelector('.feedback-message'))
                 component.style.opacity = '1'
+                callback(component)
+            }, delay)
+        }
+
+        function askForMoreFeedback(feedback, component) {
+            const transitionDelay = component.dataset.feedbackTransitionDelay
+
+            opacityTransition(component, transitionDelay, (component) => {
+                hideElement(component.querySelector('.feedback-question'))
+                showElement(component.querySelector('.feedback-form'))
                 component.parentElement.classList.add('js-feedback-submitted')
-            }, transitionDelay)
+                const form = component.querySelector('.feedback-form form')
+                form.addEventListener('submit', (event) => {
+                    event.preventDefault()
+                    const feedbackHost = document.body.dataset.statsUrl
+                    const payload = {
+                        kind: feedback,
+                        message: event.target.elements.message.value,
+                        page: getCurrentPageName(),
+                    }
+                    const request = new XMLHttpRequest()
+                    request.open('POST', feedbackHost + '/feedback', true)
+                    request.setRequestHeader('Content-Type', 'application/json')
+                    request.send(JSON.stringify(payload))
+
+                    opacityTransition(component, transitionDelay, (component) => {
+                        hideElement(component.querySelector('.feedback-form'))
+                        showElement(component.querySelector('.feedback-thankyou'))
+                    })
+                })
+            })
         }
         // eslint-disable-next-line no-extra-semi
         ;[].forEach.call(component.querySelectorAll('.button-feedback'), (button) => {
             button.addEventListener('click', (event) => {
                 event.preventDefault()
-                window.plausible(`Avis ${event.target.dataset.feedback}`)
-                fillThankYouMessageWithTransition()
+                const feedback = event.target.dataset.feedback
+                window.plausible(`Avis ${feedback}`)
+                askForMoreFeedback(feedback, component)
             })
         })
         document.addEventListener('pageChanged', () => {
             // Display again the question if the user change page.
-            hideElement(component.querySelector('.feedback-message'))
+            hideElement(component.querySelector('.feedback-form'))
+            hideElement(component.querySelector('.feedback-thankyou'))
             showElement(component.querySelector('.feedback-question'))
         })
     },

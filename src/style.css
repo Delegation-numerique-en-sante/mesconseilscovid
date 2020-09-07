@@ -45,6 +45,9 @@ main footer {
     max-width: 60rem;
     margin: 0 auto;
 }
+main footer {
+    padding: 0 1rem;
+}
 
 header {
     margin: 0 15px;
@@ -187,6 +190,17 @@ a .profil {
 main footer .feedback-block {
     text-align: center;
     padding: 0.5rem;
+}
+
+.feedback-form textarea {
+    font-size: 1.3rem;
+    display: block;
+    margin: 1rem auto 0;
+    width: 100%;
+}
+
+.feedback-form input[type='submit'] {
+    margin-top: 0;
 }
 
 main footer .legals {

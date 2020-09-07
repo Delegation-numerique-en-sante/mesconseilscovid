@@ -163,20 +163,35 @@ Il est recommandé de mettre à jour dès que possible en cliquant sur le bouton
 ## [meta_pied_de_page.md](meta_pied_de_page.md)
 
 <div class="feedback-block">
-    <p class="feedback-component" data-feedback-transition-delay="500">
-        <span class="feedback-question">
-            Des difficultés avec cette page ?
-            <span class="feedback-controls">
-                <a class="button button-outline button-feedback button-feedback-flag" data-feedback="flag" href="">Oui</a>
-                <a class="button button-outline button-feedback-contact" href="mailto:mesconseilscovid@sante.gouv.fr">Nous contacter</a>
-            </span>
-        </span>
-        <span class="feedback-message" hidden>
-            Merci pour votre retour, si vous souhaitez nous en dire plus,
-            écrivez-nous à : 
-            <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a>
-        </span>
-    </p>
+    <div class="feedback-component" data-feedback-transition-delay="500">
+        <div class="feedback-question">
+            <p>
+                Des difficultés avec cette page ?
+                <span class="feedback-controls">
+                    <a class="button button-outline button-feedback button-feedback-flag" data-feedback="flag" href="">Oui</a>
+                    <a class="button button-outline button-feedback-contact" href="mailto:mesconseilscovid@sante.gouv.fr">Nous contacter</a>
+                </span>
+            </p>
+        </div>
+        <div class="feedback-form" hidden>
+            <form>
+                <fieldset>
+                    <p>Merci de nous avoir signalé vos difficultés avec cette page. Pouvez-vous nous en dire plus, afin que nous puissions l’améliorer ?</p>
+                    <label for="message" hidden>Message :</label>
+                    <textarea id="message" name="message" rows="9" cols="20" required></textarea>
+                </fieldset>
+                <div class="form-controls">
+                    <input type="submit" class="button" value="Envoyer">
+                </div>
+            </form>
+            <p>ou écrivez-nous à : <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a></p>
+        </div>
+        <div class="feedback-thankyou" hidden>
+            <p>
+                Merci beaucoup pour votre message qui nous aidera à améliorer le site.
+            </p>
+        </div>
+    </div>
 </div>
 
 <div class="legals">
@@ -197,20 +212,35 @@ Vos informations personnelles sont seulement stockées sur cet appareil, et ne s
 Vos réponses sont sauvegardées dans votre navigateur et les conseils sont mis à jour régulièrement.
 
 <div class="icon icon-information">
-    <p class="feedback-component" data-feedback-transition-delay="500">
-        <span class="feedback-question">
-            Ces conseils vous ont été utiles ?
-            <span class="feedback-controls">
-            <a class="button button-outline button-feedback button-feedback-positif" data-feedback="positif" href="">Oui</a>
-            <a class="button button-outline button-feedback button-feedback-negatif" data-feedback="negatif" href="">Non</a>
-            </span>
-        </span>
-        <span class="feedback-message" hidden>
-            Merci pour votre retour, si vous souhaitez nous en dire plus,
-            écrivez-nous à : 
-            <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a>
-        </span>
-    </p>
+    <div class="feedback-component" data-feedback-transition-delay="500">
+        <div class="feedback-question">
+            <p>
+                Ces conseils vous ont été utiles ?
+                <span class="feedback-controls">
+                <a class="button button-outline button-feedback button-feedback-positif" data-feedback="positif" href="">Oui</a>
+                <a class="button button-outline button-feedback button-feedback-negatif" data-feedback="negatif" href="">Non</a>
+                </span>
+            </p>
+        </div>
+        <div class="feedback-form" hidden>
+            <form>
+                <fieldset>
+                    <p>Merci pour votre retour. Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?</p>
+                    <label for="message" hidden>Message :</label>
+                    <textarea id="message" name="message" rows="9" cols="20" required></textarea>
+                </fieldset>
+                <div class="form-controls">
+                    <input type="submit" class="button" value="Envoyer">
+                </div>
+            </form>
+            <p>ou écrivez-nous à : <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a></p>
+        </div>
+        <div class="feedback-thankyou" hidden>
+            <p>
+                Merci beaucoup pour votre message qui nous aidera à améliorer les conseils.
+            </p>
+        </div>
+    </div>
 </div>
 <div class="icon icon-favori browser-mobile-safari" hidden>
 
