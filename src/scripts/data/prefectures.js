@@ -1,180 +1,172 @@
 const prefectures = {
-    '01': 'http://www.ain.gouv.fr/strategie-locale-de-deconfinement-a6156.html',
-    '02': 'http://www.aisne.gouv.fr/Actualites/Strategie-locale-de-deconfinement',
-    '03': 'http://www.allier.gouv.fr/strategie-locale-de-deconfinement-a2967.html',
+    '01': 'http://www.ain.gouv.fr/coronavirus-covid-19-r1627.html',
+    '02':
+        'https://www.aisne.gouv.fr/Actualites/COVID-19-point-sur-la-situation-dans-l-Aisne',
+    '03':
+        'http://www.allier.gouv.fr/covid-19-point-sur-la-situation-dans-l-allier-a3067.html',
     '04':
-        'http://www.alpes-de-haute-provence.gouv.fr/Actualites/Strategie-locale-de-deconfinement',
-    '05':
-        'http://www.hautes-alpes.gouv.fr/strategie-locale-de-deconfinement-a7932.html',
+        'http://www.alpes-de-haute-provence.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-dans-les-Alpes-de-Haute-Provence',
+    '05': 'http://www.hautes-alpes.gouv.fr/informations-covid-19-r1977.html',
     '06':
-        'http://www.alpes-maritimes.gouv.fr/Actualites/Strategie-locale-de-deconfinement',
-    '07': 'http://www.ardeche.gouv.fr/strategie-locale-de-deconfinement-a9810.html',
-    '08': 'http://www.ardennes.gouv.fr/strategie-locale-de-deconfinement-a3016.html',
-    '09': 'http://www.ariege.gouv.fr/Actualites/Plan-de-deconfinement',
-    '10': 'https://www.aube.gouv.fr/Actualites/Strategie-locale-de-deconfinement',
-    '11': 'http://www.aude.gouv.fr/strategie-locale-de-deconfinement-a11212.html',
-    '12': 'http://www.aveyron.gouv.fr/strategie-locale-de-deconfinement-a7183.html',
+        'http://www.alpes-maritimes.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-dans-les-Alpes-Maritimes',
+    '07':
+        'http://www.ardeche.gouv.fr/covid-19-point-sur-la-situation-en-ardeche-r1877.html',
+    '08':
+        'http://www.ardennes.gouv.fr/crise-sanitaire-liee-a-l-epidemie-de-covid-19-r906.html',
+    '09':
+        'http://www.ariege.gouv.fr/Actualites/Covid-19-Intensification-du-port-du-masque-et-controle-du-respect-des-mesures-barriere',
+    '10':
+        'http://www.aube.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-de-l-Aube',
+    '11': 'http://www.aude.gouv.fr/coronavirus-r2462.html',
+    '12': 'http://www.aveyron.gouv.fr/covid-19-r396.html',
     '13':
-        'http://www.bouches-du-rhone.gouv.fr/Actualites/A-la-Une/Actualites-COVID-19/Covid-19-Strategie-locale-de-deconfinement',
-    '14': 'http://www.calvados.gouv.fr/strategie-locale-de-deconfinement-r1962.html',
-    '15': 'http://www.cantal.gouv.fr/strategie-locale-de-deconfinement-a6525.html',
-    '16': 'http://www.charente.gouv.fr/deconfinement',
+        'http://www.bouches-du-rhone.gouv.fr/Actualites/Actualites/Actualites-COVID-19',
+    '14': 'http://www.calvados.gouv.fr/coronavirus-covid-19-informations-et-r1953.html',
+    '15': 'http://www.cantal.gouv.fr/coronavirus-covid-19-informations-et-r2804.html',
+    '16':
+        'http://www.charente.gouv.fr/Actualites/Coronavirus-COVID-19-informations-mesures-sanitaires-et-deconfinement',
     '17':
-        'http://www.charente-maritime.gouv.fr/Politiques-publiques/Securite/Securite-sanitaire/COVID19-Strategie-locale-de-deconfinement',
-    '18': 'http://www.cher.gouv.fr/Actualites/Strategie-locale-de-deconfinement',
-    '19':
-        'http://www.correze.gouv.fr/Politiques-publiques/Sante/Strategie-locale-de-deconfinement',
-    '21': 'http://www.cote-dor.gouv.fr/strategie-locale-de-deconfinement-a8876.html',
-    '22':
-        'http://www.cotes-darmor.gouv.fr/Politiques-publiques/Sante/Covid-19/Mesures-pour-le-deconfinement',
-    '23':
-        'http://www.creuse.gouv.fr/Actualites/Covid-19/Strategie-locale-de-deconfinement',
+        'http://www.charente-maritime.gouv.fr/Politiques-publiques/Securite/Securite-sanitaire/Coronavirus-Deconfinement-Masques-Tests/Coronavirus-COVID-19-Informations-recommandations',
+    '18':
+        'https://www.cher.gouv.fr/Actualites/COVID-19-point-sur-la-situation-dans-le-Cher',
+    '19': 'http://www.correze.gouv.fr/Politiques-publiques/Sante/COVID-19',
+    '21':
+        'http://www.cote-dor.gouv.fr/coronavirus-covid-19-toutes-les-informations-r3115.html',
+    '22': 'https://www.cotes-darmor.gouv.fr/Politiques-publiques/Sante/Covid-19',
+    '23': 'http://www.creuse.gouv.fr/Actualites/Covid-19',
     '24':
-        'http://www.dordogne.gouv.fr/Politiques-publiques/Sante-solidarite-et-cohesion-sociale/Informations-coronavirus-COVID19/COVID-19-Strategie-locale-de-deconfinement',
+        'http://www.dordogne.gouv.fr/Politiques-publiques/Sante-solidarite-et-cohesion-sociale/Informations-coronavirus-COVID19',
     '25':
-        'http://www.doubs.gouv.fr/Actualites/Actualites-2020/COVID19-Strategie-locale-de-deconfinement',
-    '26':
-        'http://www.drome.gouv.fr/strategie-locale-de-deconfinement-en-drome-a7414.html',
-    '27':
-        'http://www.eure.gouv.fr/Politiques-publiques/Sante/Coronavirus-COVID-19/Strategie-locale-de-deconfinement',
+        'http://www.doubs.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-dans-le-Doubs',
+    '26': 'http://www.drome.gouv.fr/le-covid-19-en-drome-a7414.html',
+    '27': 'https://www.eure.gouv.fr/Politiques-publiques/Sante/Coronavirus-COVID-19',
     '28':
-        'http://www.eure-et-loir.gouv.fr/Actualites/Annee-2020/INFORMATIONS-CORONAVIRUS-COVID-19/Strategie-nationale-et-locale-du-plan-de-deconfinement/Strategie-locale-de-deconfinement',
-    '29': 'http://www.finistere.gouv.fr/Actualites/Strategie-locale-de-deconfinement',
-    '2A':
-        'http://www.corse-du-sud.gouv.fr/strategie-locale-de-deconfinement-a2375.html',
-    '2B': 'http://www.haute-corse.gouv.fr/strategie-locale-de-deconfinement-a3331.html',
-    '30': 'http://www.gard.gouv.fr/Actualites/Strategie-de-deconfinement',
-    '31': 'http://www.haute-garonne.gouv.fr/Deconfinement',
+        'https://www.eure-et-loir.gouv.fr/Actualites/Annee-2020/INFORMATIONS-CORONAVIRUS-COVID-19',
+    '29': 'https://www.finistere.gouv.fr/Actualites/Covid-19-informations',
+    '2A': 'http://www.corse-du-sud.gouv.fr/information-coronavirus-a2335.html',
+    '2B':
+        'http://www.haute-corse.gouv.fr/covid-19-point-sur-la-situation-en-haute-corse-r651.html',
+    '30':
+        'http://www.gard.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-dans-le-Gard',
+    '31':
+        'http://www.haute-garonne.gouv.fr/Politiques-publiques/Securite-et-protection-des-personnes-et-des-biens/Coronavirus-COVID19',
     '32':
-        'http://www.gers.gouv.fr/Actualites/Dossiers-d-actualite/COVID-19-Deconfinement',
+        'http://www.gers.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-sans-le-Gers',
     '33':
-        'http://www.gironde.gouv.fr/Actualites/Breves/Strategie-locale-de-deconfinement.',
+        'http://www.gironde.gouv.fr/Actualites/COVID-19-point-de-la-situation-en-Gironde',
     '34':
-        'http://www.herault.gouv.fr/Actualites/INFOS/Covid19-Strategie-locale-de-deconfinement',
-    '35': 'http://www.ille-et-vilaine.gouv.fr/deconfinement',
+        'http://www.herault.gouv.fr/Actualites/INFOS/Covid-19-Point-sur-la-situation-dans-l-Herault',
+    '35': 'https://www.ille-et-vilaine.gouv.fr/Actualites/Coronavirus-COVID-19',
     '36':
-        'http://www.indre.gouv.fr/Politiques-publiques/Securite-et-protection-de-la-population/COVID-19/Strategie-locale-de-deconfinement',
+        'https://www.indre.gouv.fr/Politiques-publiques/Securite-et-protection-de-la-population/COVID-19',
     '37':
-        'http://www.indre-et-loire.gouv.fr/Actualites/COVID-19-Strategie-locale-de-deconfinement',
+        'https://www.indre-et-loire.gouv.fr/Actualites/COVID-19-Deconfinement-phase-2',
     '38':
-        'http://www.isere.gouv.fr/Politiques-publiques/Risques/Risques-sanitaires/Covid-19/Strategie-locale-de-deconfinement',
-    '39': 'http://www.jura.gouv.fr/Actualites/Breves/Strategie-locale-de-deconfinement',
-    '40': 'http://www.landes.gouv.fr/strategie-locale-de-deconfinement-a5921.html',
+        'http://www.isere.gouv.fr/Actualites/Actualite-des-particuliers/Actualites-COVID-de-RENTREE-2020',
+    '39':
+        'http://www.isere.gouv.fr/Politiques-publiques/Risques/Risques-sanitaires/Covid-19',
+    '40':
+        'http://www.landes.gouv.fr/covid-19-point-sur-la-situation-dans-les-landes-r887.html',
     '41':
-        'http://www.loir-et-cher.gouv.fr/Actualites/Strategie-locale-de-deconfinement',
+        'https://www.loir-et-cher.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-en-Loir-et-Cher',
     '42':
-        'http://www.loire.gouv.fr/coronavirus-covid19-strategie-de-deconfinement-a7474.html',
-    '43':
-        'http://www.haute-loire.gouv.fr/covid-19-strategie-de-deconfinement-a3212.html',
+        'http://www.loire.gouv.fr/covid-19-point-de-situation-dans-la-loire-r1747.html',
+    '43': 'http://www.haute-loire.gouv.fr/',
     '44':
-        'http://www.loire-atlantique.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-en-Loire-Atlantique/Covid-19-strategie-locale-de-deconfinement',
-    '45': 'http://www.loiret.gouv.fr/Actualites/Strategie-locale-de-deconfinement',
-    '46': 'http://www.lot.gouv.fr/strategie-locale-de-deconfinement-a12917.html',
+        'https://www.loire-atlantique.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-en-Loire-Atlantique',
+    '45':
+        'https://www.loiret.gouv.fr/Actualites/COVID-19-Informations-recommandations-mesures-sanitaires',
+    '46':
+        'http://www.lot.gouv.fr/covid-19-point-sur-la-situation-dans-le-lot-r4332.html',
     '47':
-        'http://www.lot-et-garonne.gouv.fr/strategie-locale-de-deconfinement-a6330.html',
-    '48':
-        'http://www.lozere.gouv.fr/Actualites/Actualites-des-services/2020/Mai/Strategie-locale-de-deconfinement',
+        'http://www.lot-et-garonne.gouv.fr/coronavirus-covid-19-toutes-les-informations-r876.html',
+    '48': 'http://www.lozere.gouv.fr/Actualites/COVID-19-Point-de-situation-en-Lozere',
     '49':
-        'http://www.maine-et-loire.gouv.fr/coronavirus-covid-19-strategie-de-deconfinement-a6929.html',
-    '50':
-        'http://www.manche.gouv.fr/Politiques-publiques/Sante/Coronavirus-COVID-19/Strategie-locale-de-deconfinement',
-    '51':
-        'http://www.marne.gouv.fr/Actualites/Infos/Coronavirus-COVID-19/Strategie-locale-du-plan-de-deconfinement',
+        'http://www.maine-et-loire.gouv.fr/coronavirus-covid-19-strategie-de-deconfinement-r2190.html',
+    '50': 'https://www.manche.gouv.fr/Politiques-publiques/Sante/Coronavirus-COVID-19',
+    '51': 'http://www.marne.gouv.fr/Actualites/Infos/Coronavirus-COVID-19',
     '52':
-        'http://www.haute-marne.gouv.fr/Politiques-publiques/Securite/Securite-sanitaire/Strategie-locale-de-deconfinement',
+        'http://www.haute-marne.gouv.fr/Politiques-publiques/Securite/Securite-sanitaire/COVID-19/Covid-19',
     '53':
-        'http://www.mayenne.gouv.fr/Politiques-publiques/Sante/Coronavirus-COVID-19-Informations-recommandations-et-mesures-sanitaires/Strategie-de-deconfinement/Strategie-de-deconfinement',
+        'https://www.mayenne.gouv.fr/Politiques-publiques/Sante/Coronavirus-COVID-19-Informations-recommandations-et-mesures-sanitaires',
     '54':
-        'http://www.meurthe-et-moselle.gouv.fr/Politiques-publiques/Securite-et-protection-de-la-population/Coronavirus-COVID-19/Strategie-locale-de-deconfinement/Strategie-locale-de-deconfinement',
+        'http://www.meurthe-et-moselle.gouv.fr/Politiques-publiques/Securite-et-protection-de-la-population/Coronavirus-COVID-19',
     '55':
-        'http://www.meuse.gouv.fr/Actualites/Mesures-relatives-a-la-lutte-contre-le-virus-Covid-19/Strategie-locale-de-deconfinement',
+        'http://www.meuse.gouv.fr/Actualites/Mesures-relatives-a-la-lutte-contre-le-virus-Covid-19',
     '56':
-        'http://www.morbihan.gouv.fr/Actualites/Actus/Le-Morbihan-face-au-Coronavirus-Covid19/Deconfinement/Strategie-locale-de-deconfinement',
-    '57':
-        'http://www.seine-et-marne.gouv.fr/Actualites/Actualite-du-prefet/Presentation-des-grands-axes-du-plan-de-deconfinement-a-compter-du-11-mai-2020',
-    '58': 'http://www.nievre.gouv.fr/strategie-locale-de-deconfinement-a4734.html',
+        'https://www.morbihan.gouv.fr/Actualites/Actus/Le-Morbihan-face-au-Coronavirus-Covid19',
+    '57': 'http://www.moselle.gouv.fr/tags/view/Les+dossiers/Informations+COVID-19',
+    '58': 'http://www.nievre.gouv.fr/covid-19-r781.html',
     '59':
-        'http://www.nord.gouv.fr/Actualites/Actualites/Covid-19-Strategie-locale-de-deconfinement',
-    '60':
-        'http://www.oise.gouv.fr/Actualites/Coronavirus-mesures-applicables-dans-le-departement-de-l-Oise',
-    '61':
-        'http://www.orne.gouv.fr/point-de-situation-de-la-semaine-en-cours-a10153.html',
+        'https://www.nord.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-dans-le-Nord',
+    '60': 'https://www.oise.gouv.fr/Actualites/COVID-19',
+    '61': 'http://www.orne.gouv.fr/coronavirus-covid19-r4087.html',
     '62':
-        'http://www.pas-de-calais.gouv.fr/Actualites/Actualites/Strategie-locale-de-deconfinement',
+        'https://www.pas-de-calais.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-dans-le-Pas-de-Calais.',
     '63': 'http://www.puy-de-dome.gouv.fr/strategie-locale-de-deconfinement-a8240.html',
     '64':
-        'http://www.pyrenees-atlantiques.gouv.fr/Politiques-publiques/Securite/Gestion-de-crise/COVID-19-Strategie-de-deconfinement',
+        'http://www.pyrenees-atlantiques.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-en-Pyrenees-Atlantiques',
     '65':
-        'http://www.hautes-pyrenees.gouv.fr/strategie-locale-de-deconfinement-a5451.html',
-    '66':
-        'http://www.pyrenees-orientales.gouv.fr/Actualites/Coronavirus-Covid-19/Strategie-locale-de-deconfinement-dans-les-Pyrenees-Orientales',
-    '67':
-        'http://www.bas-rhin.gouv.fr/Actualites/Sante/Strategie-locale-de-deconfinement',
+        'http://www.hautes-pyrenees.gouv.fr/covid-19-point-sur-la-situation-en-hautes-pyrenees-r1537.html',
+    '66': 'http://www.pyrenees-orientales.gouv.fr/Actualites/Coronavirus-Covid-19',
+    '67': 'http://www.bas-rhin.gouv.fr/Actualites/Covid-19',
     '68':
-        'http://www.haut-rhin.gouv.fr/Actualites/Actualites-du-Prefet-et-des-Sous-Prefets/Strategie-locale-de-deconfinement',
-    '69': 'http://www.rhone.gouv.fr/Actualites/Strategie-locale-de-deconfinement',
-    '70':
-        'http://www.haute-saone.gouv.fr/Politiques-publiques/Sante/Coronavirus/Deconfinement/Strategie-locale-de-deconfinement',
+        'http://www.haut-rhin.gouv.fr/Actualites/Actualites-du-Prefet-et-des-Sous-Prefets/Coronavirus-COVID-19',
+    '69': 'http://www.rhone.gouv.fr/Actualites/COVID-19',
+    '70': 'http://www.haute-saone.gouv.fr/Politiques-publiques/Sante/Coronavirus',
     '71':
-        'http://www.saone-et-loire.gouv.fr/strategie-locale-de-deconfinement-a12500.html',
+        'http://www.saone-et-loire.gouv.fr/informations-coronavirus-covid-19-r2997.html',
     '72':
-        'http://www.sarthe.gouv.fr/covid-19-strategie-locale-de-deconfinement-a4720.html',
+        'http://www.sarthe.gouv.fr/covid-19-point-sur-la-situation-en-sarthe-a4484.html',
     '73':
-        'http://www.savoie.gouv.fr/Actualites/Actualites/Strategie-locale-de-deconfinement',
-    '74':
-        'http://www.haute-savoie.gouv.fr/Actualites/Actualites/Coronavirus-Covid-19/Strategie-nationale-locale-du-plan-de-deconfinement',
+        'http://www.savoie.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-en-Savoie',
+    '74': 'http://www.haute-savoie.gouv.fr/Actualites/Actualites/Coronavirus-Covid-19',
     '75':
-        'https://www.prefectures-regions.gouv.fr/ile-de-france/Actualites/Strategie-locale-de-deconfinement',
-    '76':
-        'http://www.seine-maritime.gouv.fr/Actualites/COVID-19/Covid-19-Strategie-de-deconfinement-progressif-Economie-Ecoles-Informations-Reglementation',
+        'https://www.prefectures-regions.gouv.fr/ile-de-france/Actualites/Covid-19-le-bilan-de-l-action-des-services-de-l-Etat-en-Ile-de-France',
+    '76': 'https://www.seine-maritime.gouv.fr/Actualites/COVID-19',
     '77':
-        'http://www.seine-et-marne.gouv.fr/Actualites/Actualite-du-prefet/Presentation-des-grands-axes-du-plan-de-deconfinement-a-compter-du-11-mai-2020',
-    '78':
-        'http://www.yvelines.gouv.fr/Actualites/Strategie-locale-de-deconfinement-dans-les-Yvelines',
+        'http://www.seine-et-marne.gouv.fr/Actualites/Actualite-du-prefet/Les-infos-locales-et-nationales-sur-le-Coronavirus',
+    '78': 'http://www.yvelines.gouv.fr/Actualites/COVID-19',
     '79':
-        'http://www.deux-sevres.gouv.fr/Actualites/Coronavirus-Covid-19/Strategie-locale-de-deconfinement',
+        'http://www.deux-sevres.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-en-Deux-Sevres',
     '80':
-        'http://www.somme.gouv.fr/Actualites/Strategie-locale-du-plan-de-deconfinement',
-    '81': 'http://www.tarn.gouv.fr/coronavirus-deconfinement-a8446.html',
+        'https://www.somme.gouv.fr/Actualites/COVID-19-point-sur-la-situation-dans-la-Somme',
+    '81':
+        'http://www.tarn.gouv.fr/covid-19-point-sur-la-situation-dans-le-tarn-r1145.html',
     '82':
-        'http://www.tarn-et-garonne.gouv.fr/Actualites/Strategie-locale-de-deconfinement',
-    '83': 'http://www.var.gouv.fr/strategie-locale-de-deconfinement-a8545.html',
-    '84': 'http://www.vaucluse.gouv.fr/strategie-locale-de-deconfinement-a13170.html',
-    '85':
-        'http://www.vendee.gouv.fr/covid-19-coronavirus-strategie-locale-de-a3396.html',
-    '86': 'http://www.vienne.gouv.fr/Actualites/Coronavirus-Covid19-deconfinement',
-    '87':
-        'http://www.haute-vienne.gouv.fr/Actualites/COVID-19-le-deconfinement-en-Haute-Vienne/Strategie-locale-de-deconfinement',
-    '88':
-        'http://www.vosges.gouv.fr/Actualites/Coronavirus-Covid-19/Deconfinement/Strategie-locale-de-deconfinement',
+        'http://www.tarn-et-garonne.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-en-Tarn-et-Garonne',
+    '83': 'http://www.var.gouv.fr/le-var-face-au-covid-19-r2322.html',
+    '84':
+        'http://www.vaucluse.gouv.fr/covid-19-point-de-situation-en-vaucluse-r3752.html',
+    '85': 'http://www.vendee.gouv.fr/',
+    '86':
+        'http://www.vienne.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-en-Vienne',
+    '87': 'http://www.haute-vienne.gouv.fr/Actualites/COVID-19-en-Haute-Vienne',
+    '88': 'http://www.vosges.gouv.fr/Actualites/Coronavirus-Covid-19',
     '89':
-        'http://www.yonne.gouv.fr/Actualites/COVID-19-Coronavirus-toutes-les-informations/Strategie-locale-de-deconfinement',
+        'http://www.yonne.gouv.fr/Actualites/COVID-19-Coronavirus-toutes-les-informations',
     '90':
-        'http://www.territoire-de-belfort.gouv.fr/Politiques-publiques/Sante-Solidarites-et-cohesion-sociale/Coronavirus-COVID-19/Deconfinement/Strategie-locale-de-deconfinemen',
+        'http://www.territoire-de-belfort.gouv.fr/Politiques-publiques/Sante-Solidarites-et-cohesion-sociale/Coronavirus-COVID-19',
     '91':
-        'http://www.essonne.gouv.fr/Actualites/Coronavirus-Strategie-locale-de-deconfinement',
+        'http://www.essonne.gouv.fr/Actualites/Covid-19-point-sur-la-situation-en-Essonne',
     '92':
-        'http://www.hauts-de-seine.gouv.fr/COVID-19-Les-informations/Strategie-locale-de-deconfinement',
+        'http://www.hauts-de-seine.gouv.fr/COVID-19-Point-sur-la-situation-dans-les-Hauts-de-Seine',
     '93':
-        'https://www.seine-saint-denis.gouv.fr/Actualites/COVID-19-Informations/Strategie-locale-de-deconfinement',
+        'http://www.seine-saint-denis.gouv.fr/Actualites/COVID-19-Informations/COVID-19-Point-sur-la-situation-en-Seine-Saint-Denis',
     '94':
-        'http://www.val-de-marne.gouv.fr/Actualites/Coronavirus-COVID-19-Informations-recommandations-mesures-sanitaires/Gouvernement-COVID-19-plan-de-deconfinement-et-organisation-de-la-vie-quotidienne',
-    '95': 'http://www.val-doise.gouv.fr/Actualites/Strategie-locale-de-deconfinement',
+        'http://www.val-de-marne.gouv.fr/Actualites/COVID-19-Plan-de-deconfinement-et-organisation-de-la-vie-quotidienne',
+    '95':
+        'http://www.val-doise.gouv.fr/Actualites/COVID-19-Mesures-et-declarations-officielles',
     '971':
-        'http://www.guadeloupe.gouv.fr/Politiques-publiques/Risques-naturels-technologiques-et-sanitaires/Securite-sanitaire/Informations-coronavirus/La-strategie-de-deconfinement-en-Guadeloupe',
+        'http://www.guadeloupe.gouv.fr/Politiques-publiques/Risques-naturels-technologiques-et-sanitaires/Securite-sanitaire/Informations-coronavirus',
     '972':
-        'http://www.martinique.gouv.fr/Politiques-publiques/Environnement-sante-publique/Sante/Informations-COVID-19/Le-plan-de-deconfinement/Strategie-locale-de-deconfinement',
-    '973':
-        'http://www.guyane.gouv.fr/Politiques-publiques/Sante/Coronavirus-Covid-19/Deconfinement',
-    '974': 'http://www.reunion.gouv.fr/strategie-locale-de-deconfinement-r480.html',
+        'http://www.martinique.gouv.fr/Politiques-publiques/Environnement-sante-publique/Sante/Informations-COVID-19',
+    '973': 'http://www.guyane.gouv.fr/Politiques-publiques/COVID-19',
+    '974': 'http://www.reunion.gouv.fr/la-reunion-face-au-covid-19-r461.html',
     '975':
-        'http://www.saint-pierre-et-miquelon.gouv.fr/Publications/Communiques/Communiques-2020/Deconfinement-individuel-Saint-Pierre-et-Miquelon',
-    '976':
-        'http://www.mayotte.gouv.fr/Politiques-publiques/Sante/CORONAVIRUS-COVID-19/Strategie-locale-de-deconfinement/Informations-sur-la-strategie-de-fin-de-confinement-a-Mayotte',
-    '977':
-        'http://www.saint-barth-saint-martin.gouv.fr/Actualites/LA-UNE/Actualites/Strategie-locale-de-deconfinement',
-    '978':
-        'http://www.saint-barth-saint-martin.gouv.fr/Actualites/LA-UNE/Actualites/Strategie-locale-de-deconfinement',
+        'http://www.saint-pierre-et-miquelon.gouv.fr/Publications/Coronavirus-Covid-19',
+    '976': 'http://www.mayotte.gouv.fr/Politiques-publiques/Sante/CORONAVIRUS-COVID-19',
+    '977': 'http://www.saint-barth-saint-martin.gouv.fr/',
+    '978': 'http://www.saint-barth-saint-martin.gouv.fr/',
 }
-
 module.exports = { prefectures }

@@ -81,6 +81,10 @@ incidence:  ## Generate data related to incidence.
 	python incidence.py generate
 	make pretty
 
+prefectures:  ## Generate data related to prefectures.
+	python prefectures.py generate
+	make pretty
+
 dev:  ## Auto-rebuild and serve the static website with Parcel.
 	npm run-script build-dev
 
