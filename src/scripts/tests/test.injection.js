@@ -37,7 +37,7 @@ describe('Injection', function () {
 
         assert.strictEqual(
             element.innerHTML,
-            '<a href="http://www.ain.gouv.fr/strategie-locale-de-deconfinement-a6156.html" id="lien-prefecture">Site</a>'
+            '<a href="http://www.ain.gouv.fr/coronavirus-covid-19-r1627.html" id="lien-prefecture">Site</a>'
         )
     })
 

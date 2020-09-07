@@ -24,7 +24,7 @@ describe('Carte départements', function () {
     it('On récupère le lien vers la préfecture depuis le département', function () {
         assert.strictEqual(
             prefectures['01'],
-            'http://www.ain.gouv.fr/strategie-locale-de-deconfinement-a6156.html'
+            'http://www.ain.gouv.fr/coronavirus-covid-19-r1627.html'
         )
     })
 })
