@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 import csv
-import fnmatch
-import os
 from collections import defaultdict
 from pathlib import Path
 from time import perf_counter
