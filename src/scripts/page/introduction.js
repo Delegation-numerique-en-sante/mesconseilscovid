@@ -1,6 +1,5 @@
-import { Profil } from '../profil.js'
-import affichage from '../affichage.js'
-import pagination from '../pagination.js'
+import Profil from '../profil'
+import affichage from '../affichage'
 
 function page(element, app) {
     const container = element.querySelector('#profils-cards')
@@ -48,11 +47,7 @@ function renderProfilCards(container, noms, app) {
 
             const conseilsLink = card.querySelector('.conseils-link')
             if (conseilsLink) {
-                const target = pagination.redirectToUnansweredQuestions(
-                    'findCorrectExit',
-                    profil
-                )
-                conseilsLink.setAttribute('href', '#' + target)
+                conseilsLink.setAttribute('href', '#conseils')
             }
 
             const profilLinks = card.querySelectorAll('[data-set-profil]')
@@ -98,4 +93,6 @@ function bindSuppression(element, app) {
     })
 }
 
-module.exports = { page }
+export default {
+    page,
+}

@@ -2,7 +2,7 @@ import { assert } from 'chai'
 
 import { AlgorithmeOrientation } from '../algorithme/orientation'
 
-import { Profil } from '../profil'
+import Profil from '../profil'
 var profil = new Profil('mes_infos')
 
 describe('Algorithme d’orientation', function () {

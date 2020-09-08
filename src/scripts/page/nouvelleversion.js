@@ -5,6 +5,6 @@ function page(element, app, origine) {
     app.updater.setupRefreshButton(refreshButton, origine)
 }
 
-module.exports = {
+export default {
     page,
 }

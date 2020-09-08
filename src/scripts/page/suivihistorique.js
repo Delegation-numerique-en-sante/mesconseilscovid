@@ -1,4 +1,10 @@
-import actions from '../actions.js'
+import actions from '../actions'
+
+function before(profil) {
+    if (!profil.isComplete()) return 'conseils'
+    if (!profil.hasSymptomesStartDate()) return 'suividate'
+    if (!profil.hasHistorique()) return 'suiviintroduction'
+}
 
 function page(element, app) {
     const container = element.querySelector('#historique')
@@ -7,4 +13,4 @@ function page(element, app) {
     actions.bindImpression(element)
 }
 
-module.exports = { page }
+export default { before, page }

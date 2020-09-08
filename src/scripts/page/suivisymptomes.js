@@ -1,8 +1,13 @@
-import affichage from '../affichage.js'
-import formUtils from '../formutils.js'
+import affichage from '../affichage'
+import formUtils from '../formutils'
 
-import { AlgorithmeDeconfinement } from '../algorithme/deconfinement.js'
-import { AlgorithmeOrientation } from '../algorithme/orientation.js'
+import { AlgorithmeDeconfinement } from '../algorithme/deconfinement'
+import { AlgorithmeOrientation } from '../algorithme/orientation'
+
+function before(profil) {
+    if (!profil.isComplete()) return 'conseils'
+    if (!profil.hasSymptomesStartDate()) return 'suividate'
+}
 
 function page(form, app, router) {
     // Question affichée seulement si on répond pour un proche
@@ -77,6 +82,7 @@ function page(form, app, router) {
     })
 }
 
-module.exports = {
+export default {
+    before,
     page,
 }

@@ -1,5 +1,5 @@
+import Profil from './profil'
 import { StockageLocal } from './stockage.js'
-import { Profil } from './profil.js'
 import { joursAvant } from './utils.js'
 
 var Router = require('./router.js')
