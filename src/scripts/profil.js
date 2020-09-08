@@ -1,10 +1,10 @@
 var format = require('timeago.js').format
 
 var utils = require('./utils.js')
-var affichage = require('./affichage.js')
+import affichage from './affichage'
 var AlgorithmeSuivi = require('./algorithme/suivi.js').AlgorithmeSuivi
 
-class Profil {
+export default class Profil {
     constructor(nom) {
         this.nom = nom
     }
@@ -221,20 +221,19 @@ class Profil {
         )
     }
 
-    isComplete() {
+    isResidenceComplete() {
+        return typeof this.departement !== 'undefined'
+    }
+
+    isFoyerComplete() {
         return (
-            typeof this.departement !== 'undefined' &&
-            typeof this.activite_pro !== 'undefined' &&
-            typeof this.activite_pro_public !== 'undefined' &&
-            typeof this.activite_pro_sante !== 'undefined' &&
-            typeof this.activite_pro_liberal !== 'undefined' &&
             typeof this.foyer_enfants !== 'undefined' &&
-            typeof this.foyer_fragile !== 'undefined' &&
-            typeof this.age !== 'undefined' &&
-            this.age >= 15 &&
-            typeof this.grossesse_3e_trimestre !== 'undefined' &&
-            typeof this.poids !== 'undefined' &&
-            typeof this.taille !== 'undefined' &&
+            typeof this.foyer_fragile !== 'undefined'
+        )
+    }
+
+    isAntecedentsComplete() {
+        return (
             typeof this.antecedent_cardio !== 'undefined' &&
             typeof this.antecedent_diabete !== 'undefined' &&
             typeof this.antecedent_respi !== 'undefined' &&
@@ -243,10 +242,46 @@ class Profil {
             typeof this.antecedent_immunodep !== 'undefined' &&
             typeof this.antecedent_cirrhose !== 'undefined' &&
             typeof this.antecedent_drepano !== 'undefined' &&
-            typeof this.antecedent_chronique_autre !== 'undefined' &&
-            typeof this.symptomes_actuels !== 'undefined' &&
-            typeof this.symptomes_passes !== 'undefined' &&
-            typeof this.contact_a_risque !== 'undefined'
+            typeof this.antecedent_chronique_autre !== 'undefined'
+        )
+    }
+
+    isCaracteristiquesComplete() {
+        return (
+            typeof this.age !== 'undefined' &&
+            this.age >= 15 &&
+            typeof this.grossesse_3e_trimestre !== 'undefined' &&
+            typeof this.poids !== 'undefined' &&
+            typeof this.taille !== 'undefined'
+        )
+    }
+
+    isActiviteProComplete() {
+        return typeof this.activite_pro !== 'undefined'
+    }
+
+    isSymptomesActuelsComplete() {
+        return typeof this.symptomes_actuels !== 'undefined'
+    }
+
+    isSymptomesPassesComplete() {
+        return typeof this.symptomes_passes !== 'undefined'
+    }
+
+    isContactARisqueComplete() {
+        return typeof this.contact_a_risque !== 'undefined'
+    }
+
+    isComplete() {
+        return (
+            this.isResidenceComplete() &&
+            this.isFoyerComplete() &&
+            this.isAntecedentsComplete() &&
+            this.isCaracteristiquesComplete() &&
+            this.isActiviteProComplete() &&
+            this.isSymptomesActuelsComplete() &&
+            this.isSymptomesPassesComplete() &&
+            this.isContactARisqueComplete()
         )
     }
 
@@ -723,8 +758,4 @@ class Profil {
             </div>
         `)
     }
-}
-
-module.exports = {
-    Profil,
 }

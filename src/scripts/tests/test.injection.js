@@ -4,7 +4,7 @@ import { JSDOM } from 'jsdom'
 import { AlgorithmeOrientation } from '../algorithme/orientation'
 import injection from '../injection'
 
-import { Profil } from '../profil'
+import Profil from '../profil'
 var profil = new Profil('mes_infos')
 
 describe('Injection', function () {

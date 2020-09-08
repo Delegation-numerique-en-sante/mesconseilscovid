@@ -4,12 +4,12 @@ import 'core-js/features/promise'
 // Polyfills pour les API du navigateur
 import 'core-js/web/url-search-params'
 import 'whatwg-fetch'
-import './polyfills/custom_event.js'
+import './polyfills/custom_event'
 
 import { register } from 'timeago.js'
 
-var actions = require('./actions.js')
-var App = require('./app.js').App
+import actions from './actions'
+import { App } from './app'
 
 var app = new App()
 window.app = app

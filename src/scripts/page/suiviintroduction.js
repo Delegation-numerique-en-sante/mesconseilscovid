@@ -1,5 +1,9 @@
 import actions from '../actions.js'
 
+function before(profil) {
+    if (!profil.isComplete()) return 'conseils'
+}
+
 function page(element, app) {
     const container = element.querySelector('#profils-cards-suivi')
     const card = container.insertBefore(
@@ -28,4 +32,4 @@ function bindSuppression(element, app) {
     })
 }
 
-module.exports = { page }
+export default { before, page }

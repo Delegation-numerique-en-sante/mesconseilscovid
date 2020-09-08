@@ -1,19 +1,19 @@
 var Navigo = require('navigo')
 
-var introduction = require('./page/introduction.js')
-var affichage = require('./affichage.js')
-var conseils = require('./page/conseils.js')
-var questionnaire = require('./page/questionnaire.js')
-var nouvelleversion = require('./page/nouvelleversion.js')
+import affichage from './affichage'
+import pagination from './pagination'
+import introduction from './page/introduction'
+import nouvelleversion from './page/nouvelleversion'
+import questionnaire from './page/questionnaire'
+import conseils from './page/conseils'
 
-var suiviintroduction = require('./page/suiviintroduction.js')
-var suivimedecin = require('./page/suivimedecin.js')
-var suividate = require('./page/suividate.js')
-var suivisymptomes = require('./page/suivisymptomes.js')
-var suivihistorique = require('./page/suivihistorique.js')
+import suiviintroduction from './page/suiviintroduction'
+import suivimedecin from './page/suivimedecin'
+import suividate from './page/suividate'
+import suivisymptomes from './page/suivisymptomes'
+import suivihistorique from './page/suivihistorique'
 
-var injection = require('./injection.js')
-var pagination = require('./pagination.js')
+import injection from './injection'
 
 function initRouter(app) {
     console.debug('initRouter()')
@@ -28,15 +28,6 @@ function initRouter(app) {
 
     router.hooks({
         before: function (done) {
-            // Global hook to redirect on the correct page given registered data.
-            var requestedPage = pagination.getCurrentPageName() || 'introduction'
-            var redirectedPage = pagination.redirectToUnansweredQuestions(
-                requestedPage,
-                app.profil
-            )
-            if (redirectedPage) {
-                router.navigate(redirectedPage)
-            }
             var header = document.querySelector('header section')
             if (typeof app.profil.nom === 'undefined') {
                 affichage.showElement(header.querySelector('#js-profil-empty-header'))
@@ -71,71 +62,201 @@ function initRouter(app) {
             var form = pagination.loadPage(pageName, app)
             questionnaire.residence(form, app, router)
         })
-        .on(new RegExp('^foyer$'), function () {
-            var pageName = 'foyer'
-            var form = pagination.loadPage(pageName, app)
-            questionnaire.foyer(form, app, router)
-        })
-        .on(new RegExp('^caracteristiques$'), function () {
-            var pageName = 'caracteristiques'
-            var form = pagination.loadPage(pageName, app)
-            questionnaire.caracteristiques(form, app, router)
-        })
-        .on(new RegExp('^antecedents$'), function () {
-            var pageName = 'antecedents'
-            var form = pagination.loadPage(pageName, app)
-            questionnaire.antecedents(form, app, router)
-        })
-        .on(new RegExp('^activitepro$'), function () {
-            var pageName = 'activitepro'
-            var form = pagination.loadPage(pageName, app)
-            questionnaire.activitepro(form, app, router)
-        })
-        .on(new RegExp('^symptomesactuels$'), function () {
-            var pageName = 'symptomesactuels'
-            var form = pagination.loadPage(pageName, app)
-            questionnaire.symptomesactuels(form, app, router)
-        })
-        .on(new RegExp('^symptomespasses$'), function () {
-            var pageName = 'symptomespasses'
-            var form = pagination.loadPage(pageName, app)
-            questionnaire.symptomespasses(form, app, router)
-        })
-        .on(new RegExp('^contactarisque$'), function () {
-            var pageName = 'contactarisque'
-            var form = pagination.loadPage(pageName, app)
-            questionnaire.contactarisque(form, app, router)
-        })
-        .on(new RegExp('^conseils$'), function () {
-            var pageName = 'conseils'
-            var element = pagination.loadPage(pageName, app)
-            conseils.page(element, app)
-        })
-        .on(new RegExp('^suiviintroduction$'), function () {
-            var pageName = 'suiviintroduction'
-            var element = pagination.loadPage(pageName, app)
-            suiviintroduction.page(element, app)
-        })
-        .on(new RegExp('^suivimedecin$'), function () {
-            var pageName = 'suivimedecin'
-            var element = pagination.loadPage(pageName, app)
-            suivimedecin.page(element, app, router)
-        })
-        .on(new RegExp('^suividate$'), function () {
-            var pageName = 'suividate'
-            var form = pagination.loadPage(pageName, app)
-            suividate.page(form, app, router)
-        })
-        .on(new RegExp('^suivisymptomes$'), function () {
-            var pageName = 'suivisymptomes'
-            var form = pagination.loadPage(pageName, app)
-            suivisymptomes.page(form, app, router)
-        })
-        .on(new RegExp('^suivihistorique$'), function () {
-            var pageName = 'suivihistorique'
-            var element = pagination.loadPage(pageName, app)
-            suivihistorique.page(element, app)
-        })
+        .on(
+            new RegExp('^foyer$'),
+            function () {
+                var pageName = 'foyer'
+                var form = pagination.loadPage(pageName, app)
+                questionnaire.foyer(form, app, router)
+            },
+            {
+                before: function (done) {
+                    const target = questionnaire.beforeFoyer(app.profil)
+                    if (target) router.navigate(target)
+                    done()
+                },
+            }
+        )
+        .on(
+            new RegExp('^antecedents$'),
+            function () {
+                var pageName = 'antecedents'
+                var form = pagination.loadPage(pageName, app)
+                questionnaire.antecedents(form, app, router)
+            },
+            {
+                before: function (done) {
+                    const target = questionnaire.beforeAntecedents(app.profil)
+                    if (target) router.navigate(target)
+                    done()
+                },
+            }
+        )
+        .on(
+            new RegExp('^caracteristiques$'),
+            function () {
+                var pageName = 'caracteristiques'
+                var form = pagination.loadPage(pageName, app)
+                questionnaire.caracteristiques(form, app, router)
+            },
+            {
+                before: function (done) {
+                    const target = questionnaire.beforeCaracteristiques(app.profil)
+                    if (target) router.navigate(target)
+                    done()
+                },
+            }
+        )
+        .on(
+            new RegExp('^activitepro$'),
+            function () {
+                var pageName = 'activitepro'
+                var form = pagination.loadPage(pageName, app)
+                questionnaire.activitepro(form, app, router)
+            },
+            {
+                before: function (done) {
+                    const target = questionnaire.beforeActivitePro(app.profil)
+                    if (target) router.navigate(target)
+                    done()
+                },
+            }
+        )
+        .on(
+            new RegExp('^symptomesactuels$'),
+            function () {
+                var pageName = 'symptomesactuels'
+                var form = pagination.loadPage(pageName, app)
+                questionnaire.symptomesactuels(form, app, router)
+            },
+            {
+                before: function (done) {
+                    const target = questionnaire.beforeSymptomesActuels(app.profil)
+                    if (target) router.navigate(target)
+                    done()
+                },
+            }
+        )
+        .on(
+            new RegExp('^symptomespasses$'),
+            function () {
+                var pageName = 'symptomespasses'
+                var form = pagination.loadPage(pageName, app)
+                questionnaire.symptomespasses(form, app, router)
+            },
+            {
+                before: function (done) {
+                    const target = questionnaire.beforeSymptomesPasses(app.profil)
+                    if (target) router.navigate(target)
+                    done()
+                },
+            }
+        )
+        .on(
+            new RegExp('^contactarisque$'),
+            function () {
+                var pageName = 'contactarisque'
+                var form = pagination.loadPage(pageName, app)
+                questionnaire.contactarisque(form, app, router)
+            },
+            {
+                before: function (done) {
+                    const target = questionnaire.beforeContactARisque(app.profil)
+                    if (target) router.navigate(target)
+                    done()
+                },
+            }
+        )
+        .on(
+            new RegExp('^conseils$'),
+            function () {
+                var pageName = 'conseils'
+                var element = pagination.loadPage(pageName, app)
+                conseils.page(element, app)
+            },
+            {
+                before: function (done) {
+                    const target = conseils.before(app.profil)
+                    if (target) router.navigate(target)
+                    done()
+                },
+            }
+        )
+        .on(
+            new RegExp('^suiviintroduction$'),
+            function () {
+                var pageName = 'suiviintroduction'
+                var element = pagination.loadPage(pageName, app)
+                suiviintroduction.page(element, app)
+            },
+            {
+                before: function (done) {
+                    const target = suiviintroduction.before(app.profil)
+                    if (target) router.navigate(target)
+                    done()
+                },
+            }
+        )
+        .on(
+            new RegExp('^suivimedecin$'),
+            function () {
+                var pageName = 'suivimedecin'
+                var element = pagination.loadPage(pageName, app)
+                suivimedecin.page(element, app, router)
+            },
+            {
+                before: function (done) {
+                    const target = suivimedecin.before(app.profil)
+                    if (target) router.navigate(target)
+                    done()
+                },
+            }
+        )
+        .on(
+            new RegExp('^suividate$'),
+            function () {
+                var pageName = 'suividate'
+                var form = pagination.loadPage(pageName, app)
+                suividate.page(form, app, router)
+            },
+            {
+                before: function (done) {
+                    const target = suividate.before(app.profil)
+                    if (target) router.navigate(target)
+                    done()
+                },
+            }
+        )
+        .on(
+            new RegExp('^suivisymptomes$'),
+            function () {
+                var pageName = 'suivisymptomes'
+                var form = pagination.loadPage(pageName, app)
+                suivisymptomes.page(form, app, router)
+            },
+            {
+                before: function (done) {
+                    const target = suivisymptomes.before(app.profil)
+                    if (target) router.navigate(target)
+                    done()
+                },
+            }
+        )
+        .on(
+            new RegExp('^suivihistorique$'),
+            function () {
+                var pageName = 'suivihistorique'
+                var element = pagination.loadPage(pageName, app)
+                suivihistorique.page(element, app)
+            },
+            {
+                before: function (done) {
+                    const target = suivihistorique.before(app.profil)
+                    if (target) router.navigate(target)
+                    done()
+                },
+            }
+        )
         .on(new RegExp('^pediatrie$'), function () {
             var pageName = 'pediatrie'
             var element = pagination.loadPage(pageName)
@@ -143,11 +264,7 @@ function initRouter(app) {
                 affichage.showElement(element.querySelector('#js-profil-full'))
                 affichage.hideElement(element.querySelector('#js-profil-empty'))
                 var mesConseilsLink = element.querySelector('#mes-conseils-link')
-                var target = pagination.redirectToUnansweredQuestions(
-                    'findCorrectExit',
-                    app.profil
-                )
-                mesConseilsLink.setAttribute('href', '#' + target)
+                mesConseilsLink.setAttribute('href', '#conseils')
             }
         })
         .on(new RegExp('^medecinedutravail$'), function () {
@@ -157,11 +274,7 @@ function initRouter(app) {
                 affichage.showElement(element.querySelector('#js-profil-full'))
                 affichage.hideElement(element.querySelector('#js-profil-empty'))
                 var mesConseilsLink = element.querySelector('#mes-conseils-link')
-                var target = pagination.redirectToUnansweredQuestions(
-                    'findCorrectExit',
-                    app.profil
-                )
-                mesConseilsLink.setAttribute('href', '#' + target)
+                mesConseilsLink.setAttribute('href', '#conseils')
             }
         })
         .on(new RegExp('^conditionsutilisation$'), function () {

@@ -71,7 +71,7 @@ function safeHtml(literals, ...substitutions) {
     return result
 }
 
-module.exports = {
+export default {
     showMeOrThem,
     hideElement,
     showElement,

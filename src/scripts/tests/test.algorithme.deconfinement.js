@@ -4,7 +4,7 @@ import { joursAvant } from '../utils'
 import { AlgorithmeOrientation } from '../algorithme/orientation'
 import { AlgorithmeDeconfinement } from '../algorithme/deconfinement'
 
-import { Profil } from '../profil'
+import Profil from '../profil'
 var profil = new Profil('mes_infos')
 
 describe('Algorithme déconfinement', function () {

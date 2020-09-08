@@ -37,6 +37,10 @@ function residence(form, app, router) {
         .addEventListener('click', geoloc.geolocalisation)
 }
 
+function beforeFoyer(profil) {
+    if (!profil.isResidenceComplete()) return 'residence'
+}
+
 function foyer(form, app, router) {
     formUtils.preloadCheckboxForm(form, 'foyer_enfants', app.profil)
     formUtils.preloadCheckboxForm(form, 'foyer_fragile', app.profil)
@@ -47,6 +51,11 @@ function foyer(form, app, router) {
         app.enregistrerProfilActuel()
         router.navigate('antecedents')
     })
+}
+
+function beforeAntecedents(profil) {
+    beforeFoyer(profil)
+    if (!profil.isFoyerComplete()) return 'foyer'
 }
 
 function antecedents(form, app, router) {
@@ -88,6 +97,11 @@ function antecedents(form, app, router) {
     })
 }
 
+function beforeCaracteristiques(profil) {
+    beforeAntecedents(profil)
+    if (!profil.isAntecedentsComplete()) return 'antecedents'
+}
+
 function caracteristiques(form, app, router) {
     var button = form.querySelector('input[type=submit]')
     formUtils.preloadForm(form, 'age', app.profil)
@@ -110,6 +124,13 @@ function caracteristiques(form, app, router) {
             router.navigate('activitepro')
         }
     })
+}
+
+function beforeActivitePro(profil) {
+    const target = beforeCaracteristiques(profil)
+    if (target) return target
+    if (profil.age < 15) return 'pediatrie'
+    if (!profil.isCaracteristiquesComplete()) return 'caracteristiques'
 }
 
 function activitepro(form, app, router) {
@@ -139,6 +160,18 @@ function activitepro(form, app, router) {
         app.enregistrerProfilActuel()
         router.navigate('symptomesactuels')
     })
+}
+
+function beforeSymptomesActuels(profil) {
+    const target = beforeActivitePro(profil)
+    if (target) return target
+
+    // Si la personne a coché une activité pro, on propose à nouveau cet écran
+    // pour prendre en compte la nouvelle case : profession libérale.
+    if (profil.activite_pro && typeof profil.activite_pro_liberal === 'undefined')
+        return 'activitepro'
+
+    if (!profil.isActiviteProComplete()) return 'activitepro'
 }
 
 function symptomesactuels(form, app, router) {
@@ -221,6 +254,14 @@ function symptomesactuels(form, app, router) {
     })
 }
 
+function beforeSymptomesPasses(profil) {
+    const target = beforeSymptomesActuels(profil)
+    if (target) return target
+    if (!profil.isSymptomesActuelsComplete()) return 'symptomesactuels'
+    if (profil.symptomes_actuels === true && profil.symptomes_actuels_autre === false)
+        return 'conseils'
+}
+
 function symptomespasses(form, app, router) {
     var button = form.querySelector('input[type=submit]')
     formUtils.preloadCheckboxForm(form, 'symptomes_passes', app.profil)
@@ -248,6 +289,13 @@ function symptomespasses(form, app, router) {
             router.navigate('contactarisque')
         }
     })
+}
+
+function beforeContactARisque(profil) {
+    const target = beforeSymptomesPasses(profil)
+    if (target) return target
+    if (!profil.isSymptomesPassesComplete()) return 'symptomespasses'
+    if (profil.symptomes_passes === true) return 'conseils'
 }
 
 function contactarisque(form, app, router) {
@@ -293,14 +341,21 @@ function contactarisque(form, app, router) {
     })
 }
 
-module.exports = {
+export default {
     nom,
     residence,
-    activitepro,
+    beforeFoyer,
     foyer,
-    caracteristiques,
+    beforeAntecedents,
     antecedents,
+    beforeCaracteristiques,
+    caracteristiques,
+    beforeActivitePro,
+    activitepro,
+    beforeSymptomesActuels,
     symptomesactuels,
+    beforeSymptomesPasses,
     symptomespasses,
+    beforeContactARisque,
     contactarisque,
 }

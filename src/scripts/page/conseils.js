@@ -1,9 +1,33 @@
-import actions from '../actions.js'
-import affichage from '../affichage.js'
-import injection from '../injection.js'
+import actions from '../actions'
+import affichage from '../affichage'
+import injection from '../injection'
+import questionnaire from './questionnaire'
 
-import { AlgorithmeOrientation } from '../algorithme/orientation.js'
-import { AlgorithmeSuivi } from '../algorithme/suivi.js'
+import { AlgorithmeOrientation } from '../algorithme/orientation'
+import { AlgorithmeSuivi } from '../algorithme/suivi'
+
+function before(profil) {
+    if (profil.isContactARisqueComplete()) {
+        return questionnaire.beforeContactARisque(profil)
+    } else if (profil.isSymptomesPassesComplete()) {
+        if (profil.symptomes_passes === false) {
+            return 'contactarisque'
+        } else {
+            return questionnaire.beforeSymptomesPasses(profil)
+        }
+    } else if (profil.isSymptomesActuelsComplete()) {
+        if (
+            profil.symptomes_actuels === false ||
+            profil.symptomes_actuels_autre === true
+        ) {
+            return 'symptomespasses'
+        } else {
+            return questionnaire.beforeSymptomesActuels(profil)
+        }
+    } else {
+        return questionnaire.beforeSymptomesActuels(profil) || 'symptomesactuels'
+    }
+}
 
 function page(element, app) {
     // Hide all conseils that might have been made visible on previous runs.
@@ -166,7 +190,8 @@ function isMobileSafari() {
     return isIOS && isWebkit && !isChrome
 }
 
-module.exports = {
+export default {
+    before,
     page,
     showRelevantBlocks,
     showRelevantAnswersRecap,

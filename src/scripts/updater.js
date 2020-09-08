@@ -1,5 +1,5 @@
-var pagination = require('./pagination.js')
-var affichage = require('./affichage.js')
+import pagination from './pagination'
+import affichage from './affichage'
 
 class Updater {
     constructor(router) {
