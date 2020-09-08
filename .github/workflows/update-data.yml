@@ -6,7 +6,7 @@ on:
 
 jobs:
   update-incidence:
-        runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -30,7 +30,7 @@ jobs:
           commit-message: Mise à jour des valeurs d’incidence
 
   update-prefectures:
-        runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
