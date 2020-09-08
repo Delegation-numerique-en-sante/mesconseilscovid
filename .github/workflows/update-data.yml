@@ -1,0 +1,54 @@
+name: Mettre à jour les données quotidiennement
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update-incidence:
+        runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install Python dependencies
+        run: |
+          make install-python
+
+      - name: Update incidence data
+        run: |
+          make incidence
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: Mise à jour des valeurs d’incidence
+
+  update-prefectures:
+        runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install Python dependencies
+        run: |
+          make install-python
+
+      - name: Update prefectures data
+        run: |
+          make prefectures
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: Mise à jour des liens vers les préfectures

@@ -9,9 +9,13 @@ serve: build  ## Local HTTP server with auto rebuild (with LiveReload).
 serve-ssl: key.pem build  ## Local HTTPS server with auto rebuild (without LiveReload).
 	python3 serve.py --watch --ssl
 
-install:  ## Install Python and JS dependencies.
+install: install-python install-js
+
+install-python:  ## Install Python dependencies.
 	python3 -m pip install -U pip setuptools wheel
 	python3 -m pip install -r requirements.txt --use-feature=2020-resolver
+
+install-js:  ## Install JS dependencies.
 	npm install
 
 clean:  ## Clean up JS related stuff.
@@ -93,7 +97,7 @@ pre-commit: pretty lint test-unit build check-versions check-documentation check
 prod: clean install lint pretty test check  ## Make sure everything is clean prior to deploy.
 	# Note: `test` dependency will actually generate the `build`.
 
-.PHONY: serve serve-ssl install clean test test-unit test-integration test-feedback check-links check-versions check-documentation check-service-worker build generate dev pre-commit prod help
+.PHONY: serve serve-ssl install install-python install-js clean test test-unit test-integration test-feedback check-links check-versions check-documentation check-service-worker build generate dev pre-commit prod help
 
 help:  ## Display this help.
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
