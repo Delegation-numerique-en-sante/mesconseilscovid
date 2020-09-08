@@ -65,6 +65,7 @@ function page(form, app, router) {
         if (algoDeconfinement.isDeconfinable()) {
             if (!app.profil.hasDeconfinementDate()) {
                 app.profil.deconfinement_date = new Date()
+                window.plausible(`Suivi deconfinement`)
             }
         } else {
             app.profil.deconfinement_date = undefined
