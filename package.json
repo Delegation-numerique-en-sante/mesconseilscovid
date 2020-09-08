@@ -21,7 +21,7 @@
     "localforage": "1.7.3",
     "navigo": "7.1.2",
     "timeago.js": "4.0.2",
-    "whatwg-fetch": "3.4.0"
+    "whatwg-fetch": "3.4.1"
   },
   "scripts": {
     "test": "mocha src/scripts/tests/",
