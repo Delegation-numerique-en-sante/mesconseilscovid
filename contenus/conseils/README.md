@@ -184,7 +184,7 @@ Vous résidez dans un département où le virus est **particulièrement présent
 
 ## [conseils_département_défaut.md](conseils_département_défaut.md)
 
-Pour plus d’informations, vous pouvez consulter les <a href="#conseils-departement" id="lien-prefecture">règles spécifiques de votre département</a> sur le site de votre préfecture.
+Pour connaître les règles spécifiques de votre département, consultez le <a href="#conseils-departement" id="lien-prefecture">site de votre préfecture</a>.
 
 
 
