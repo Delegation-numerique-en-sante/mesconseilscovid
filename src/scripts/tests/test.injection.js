@@ -1,13 +1,10 @@
-var assert = require('chai').assert
+import { assert } from 'chai'
+import { JSDOM } from 'jsdom'
 
-var jsdom = require('jsdom')
-var { JSDOM } = jsdom
+import { AlgorithmeOrientation } from '../algorithme/orientation'
+import injection from '../injection'
 
-var AlgorithmeOrientation = require('../algorithme/orientation.js')
-    .AlgorithmeOrientation
-var injection = require('../injection.js')
-
-var Profil = require('../profil.js').Profil
+import { Profil } from '../profil'
 var profil = new Profil('mes_infos')
 
 describe('Injection', function () {

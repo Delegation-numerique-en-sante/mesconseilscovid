@@ -1,8 +1,8 @@
-var assert = require('chai').assert
+import { assert } from 'chai'
 
-var AlgorithmeSuivi = require('../algorithme/suivi.js').AlgorithmeSuivi
+import { AlgorithmeSuivi } from '../algorithme/suivi'
 
-var Profil = require('../profil.js').Profil
+import { Profil } from '../profil'
 var profil = new Profil('mes_infos')
 
 describe('Algorithme auto-suivi', function () {

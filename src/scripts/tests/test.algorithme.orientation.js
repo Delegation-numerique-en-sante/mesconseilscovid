@@ -1,9 +1,8 @@
-var assert = require('chai').assert
+import { assert } from 'chai'
 
-var AlgorithmeOrientation = require('../algorithme/orientation.js')
-    .AlgorithmeOrientation
+import { AlgorithmeOrientation } from '../algorithme/orientation'
 
-var Profil = require('../profil.js').Profil
+import { Profil } from '../profil'
 var profil = new Profil('mes_infos')
 
 describe('Algorithme d’orientation', function () {
