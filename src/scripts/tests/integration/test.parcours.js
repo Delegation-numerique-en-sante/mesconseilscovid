@@ -1,5 +1,5 @@
-const assert = require('assert')
-const helpers = require('./helpers.js')
+import { assert } from 'chai'
+import helpers from './helpers'
 
 describe('Parcours', function () {
     it('titre de la page', async function () {

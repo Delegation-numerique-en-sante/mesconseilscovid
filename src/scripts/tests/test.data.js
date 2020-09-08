@@ -1,8 +1,8 @@
-const assert = require('chai').assert
+import { assert } from 'chai'
 
-const incidence = require('../data/incidence.js').incidence
-const prefectures = require('../data/prefectures.js').prefectures
-const departements = require('../data/departements.js').departements
+import { incidence } from '../data/incidence'
+import { prefectures } from '../data/prefectures'
+import { departements } from '../data/departements'
 
 describe('Carte départements', function () {
     it('Il y a le bon nombre de noms', function () {

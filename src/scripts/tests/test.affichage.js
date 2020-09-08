@@ -1,9 +1,7 @@
-var assert = require('chai').assert
+import { assert } from 'chai'
+import { JSDOM } from 'jsdom'
 
-var jsdom = require('jsdom')
-var { JSDOM } = jsdom
-
-var affichage = require('../affichage.js')
+import affichage from '../affichage.js'
 
 describe('Affichage', function () {
     it('On peut masquer des éléments visibles', function () {

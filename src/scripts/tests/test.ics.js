@@ -1,6 +1,6 @@
-var assert = require('chai').assert
+import { assert } from 'chai'
 
-var ICS = require('../ics.js').ICS
+import { ICS } from '../ics'
 
 describe('ICS', function () {
     it('On génère un ics sans rrule', function () {

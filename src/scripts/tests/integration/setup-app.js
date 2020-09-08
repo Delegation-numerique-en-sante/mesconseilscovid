@@ -1,5 +1,5 @@
-const http = require('http')
-const nodeStatic = require('node-static')
+import http from 'http'
+import nodeStatic from 'node-static'
 
 let server
 

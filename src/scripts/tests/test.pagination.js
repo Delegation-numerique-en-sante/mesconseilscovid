@@ -1,8 +1,7 @@
-var assert = require('chai').assert
+import { assert } from 'chai'
 
-var pagination = require('../pagination.js')
-var Profil = require('../profil.js').Profil
-var redirectToUnansweredQuestions = pagination.redirectToUnansweredQuestions
+import { redirectToUnansweredQuestions } from '../pagination'
+import { Profil } from '../profil'
 
 describe('Pagination', function () {
     describe('Navigation générale', function () {
