@@ -100,7 +100,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Send event to trigger deployment workflow
-        if: ${{ github.ref != 'refs/heads/master' }}
         run: |
           curl -XPOST https://api.github.com/repos/Delegation-numerique-en-sante/mesconseilscovid-infra/dispatches \
                -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
