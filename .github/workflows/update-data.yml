@@ -2,7 +2,7 @@ name: Mettre à jour les données quotidiennement
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 10 * * *'
 
 jobs:
   update-incidence:
@@ -19,6 +19,10 @@ jobs:
       - name: Install Python dependencies
         run: |
           make install-python
+
+      - name: Install Prettier
+        run: |
+          npm install prettier
 
       - name: Update incidence data
         run: |
@@ -43,6 +47,10 @@ jobs:
       - name: Install Python dependencies
         run: |
           make install-python
+
+      - name: Install Prettier
+        run: |
+          npm install prettier
 
       - name: Update prefectures data
         run: |
