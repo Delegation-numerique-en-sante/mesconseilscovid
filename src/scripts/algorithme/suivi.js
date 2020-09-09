@@ -1,4 +1,4 @@
-class AlgorithmeSuivi {
+export default class AlgorithmeSuivi {
     constructor(profil) {
         this.profil = profil
         this.dernierEtat = profil.dernierEtat()
@@ -86,8 +86,4 @@ class AlgorithmeSuivi {
         }
         return evolutions
     }
-}
-
-module.exports = {
-    AlgorithmeSuivi,
 }

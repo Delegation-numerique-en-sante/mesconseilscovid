@@ -1,18 +1,18 @@
-function preloadForm(form, key, profil) {
+export function preloadForm(form, key, profil) {
     var value = profil.getData()[key]
     if (typeof value !== 'undefined' && value !== '') {
         form[key].value = value
     }
 }
 
-function preloadCheckboxForm(form, key, profil) {
+export function preloadCheckboxForm(form, key, profil) {
     var value = profil.getData()[key]
     if (typeof value !== 'undefined' && value) {
         form[key].checked = true
     }
 }
 
-function toggleFormButtonOnCheck(form, continueLabel, uncheckedLabel) {
+export function toggleFormButtonOnCheck(form, continueLabel, uncheckedLabel) {
     var button = form.querySelector('input[type=submit]')
     var checkboxes = [].slice.call(form.querySelectorAll('input[type=checkbox]'))
     function updateSubmitButtonLabel() {
@@ -27,7 +27,7 @@ function toggleFormButtonOnCheck(form, continueLabel, uncheckedLabel) {
     })
 }
 
-function toggleFormButtonOnCheckRequired(
+export function toggleFormButtonOnCheckRequired(
     form,
     continueLabel,
     uncheckedLabel,
@@ -78,7 +78,7 @@ function toggleFormButtonOnCheckRequired(
     otherCheckbox.addEventListener('change', updateToggleOnOther)
 }
 
-function toggleFormButtonOnRadioRequired(
+export function toggleFormButtonOnRadioRequired(
     form,
     continueLabel,
     uncheckedLabel,
@@ -132,7 +132,11 @@ function toggleFormButtonOnRadioRequired(
     checkbox.addEventListener('change', updateToggleOnCheckbox)
 }
 
-function toggleFormButtonOnTextFieldsRequired(form, continueLabel, requiredLabel) {
+export function toggleFormButtonOnTextFieldsRequired(
+    form,
+    continueLabel,
+    requiredLabel
+) {
     var button = form.querySelector('input[type=submit]')
     var textFields = [].slice.call(form.querySelectorAll('input[type=text]'))
 
@@ -149,7 +153,11 @@ function toggleFormButtonOnTextFieldsRequired(form, continueLabel, requiredLabel
     })
 }
 
-function toggleFormButtonOnSelectFieldsRequired(form, continueLabel, requiredLabel) {
+export function toggleFormButtonOnSelectFieldsRequired(
+    form,
+    continueLabel,
+    requiredLabel
+) {
     var button = form.querySelector('input[type=submit]')
     var selectFields = [].slice.call(form.querySelectorAll('select'))
 
@@ -166,7 +174,7 @@ function toggleFormButtonOnSelectFieldsRequired(form, continueLabel, requiredLab
     })
 }
 
-function enableOrDisableSecondaryFields(form, primary) {
+export function enableOrDisableSecondaryFields(form, primary) {
     var primaryDisabled = !primary.checked
     ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
         var secondary = elem.querySelector('input')
@@ -181,15 +189,4 @@ function enableOrDisableSecondaryFields(form, primary) {
             elem.classList.remove('disabled')
         }
     })
-}
-
-module.exports = {
-    preloadForm,
-    preloadCheckboxForm,
-    toggleFormButtonOnCheck,
-    toggleFormButtonOnCheckRequired,
-    toggleFormButtonOnRadioRequired,
-    toggleFormButtonOnTextFieldsRequired,
-    toggleFormButtonOnSelectFieldsRequired,
-    enableOrDisableSecondaryFields,
 }

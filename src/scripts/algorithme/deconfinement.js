@@ -1,6 +1,6 @@
-var utils = require('../utils.js')
+import { joursApres, joursAvant } from '../utils.js'
 
-class AlgorithmeDeconfinement {
+export default class AlgorithmeDeconfinement {
     constructor(profil, algoOrientation) {
         this.profil = profil
         this.algoOrientation = algoOrientation
@@ -12,18 +12,15 @@ class AlgorithmeDeconfinement {
             delta = 10
         }
         const now = new Date()
-        const finDeQuarantaine = utils.joursApres(
-            delta,
-            this.profil.symptomes_start_date
-        )
+        const finDeQuarantaine = joursApres(delta, this.profil.symptomes_start_date)
         return now > finDeQuarantaine
     }
 
     isSuiviRegulier() {
         // Au moins une entrée ces dernières 24h + une entrée ces dernières 48h.
-        const maintenant = utils.joursAvant(0)
-        const ilYA24h = utils.joursAvant(1)
-        const ilYA48h = utils.joursAvant(2)
+        const maintenant = joursAvant(0)
+        const ilYA24h = joursAvant(1)
+        const ilYA48h = joursAvant(2)
         return (
             this.profil.suiviEntre(ilYA24h, maintenant).length >= 1 &&
             this.profil.suiviEntre(ilYA48h, ilYA24h).length >= 1
@@ -62,8 +59,4 @@ class AlgorithmeDeconfinement {
             this.isEssoufflementDone()
         )
     }
-}
-
-module.exports = {
-    AlgorithmeDeconfinement,
 }

@@ -1,10 +1,10 @@
-var utils = require('../utils.js')
+import { joursAvant } from '../utils.js'
 
-function before(profil) {
+export function before(profil) {
     if (!profil.isComplete()) return 'conseils'
 }
 
-function page(form, app, router) {
+export function page(form, app, router) {
     // Enregistre le démarrage du suivi
     if (!app.profil.hasSuiviStartDate()) {
         app.profil.suivi_start_date = new Date()
@@ -68,6 +68,7 @@ function dateFromPicker(element) {
         return new Date(element.value)
     }
 }
+
 function dateFromRadioButton(element) {
     let delta
     switch (element.value) {
@@ -84,7 +85,5 @@ function dateFromRadioButton(element) {
             delta = 3
             break
     }
-    return utils.joursAvant(delta)
+    return joursAvant(delta)
 }
-
-export default { before, page }

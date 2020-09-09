@@ -29,9 +29,7 @@ def retrieve_data(url):
 def generate():
     data = retrieve_data(DATA_URL)
     prefectures = {item["codeDepartement"]: item["pagePrefecture"] for item in data}
-    open(DATA_DIR / "prefectures.js", "w").write(
-        f"const prefectures = {prefectures}\nmodule.exports = {{prefectures}}"
-    )
+    open(DATA_DIR / "prefectures.js", "w").write(f"export default {prefectures}\n")
 
 
 @wrap

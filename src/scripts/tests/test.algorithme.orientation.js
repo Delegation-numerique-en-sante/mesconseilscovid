@@ -1,8 +1,8 @@
 import { assert } from 'chai'
 
-import { AlgorithmeOrientation } from '../algorithme/orientation'
+import AlgorithmeOrientation from '../algorithme/orientation.js'
 
-import Profil from '../profil'
+import Profil from '../profil.js'
 var profil = new Profil('mes_infos')
 
 describe('Algorithme d’orientation', function () {

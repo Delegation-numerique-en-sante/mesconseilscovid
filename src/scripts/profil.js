@@ -1,8 +1,8 @@
-var format = require('timeago.js').format
+import { format } from 'timeago.js'
 
-var utils = require('./utils.js')
-import affichage from './affichage'
-var AlgorithmeSuivi = require('./algorithme/suivi.js').AlgorithmeSuivi
+import { joursAvant } from './utils.js'
+import { createElementFromHTML, safeHtml } from './affichage.js'
+import AlgorithmeSuivi from './algorithme/suivi.js'
 
 export default class Profil {
     constructor(nom) {
@@ -310,9 +310,7 @@ export default class Profil {
     }
 
     suiviDerniersJours(delta) {
-        return this.suivi.filter(
-            (etat) => new Date(etat.date) > utils.joursAvant(delta)
-        )
+        return this.suivi.filter((etat) => new Date(etat.date) > joursAvant(delta))
     }
 
     suiviEntre(strictementApres, avant) {
@@ -331,7 +329,7 @@ export default class Profil {
     }
 
     renderNom() {
-        return affichage.safeHtml`<h3><span class="profil">${this.affichageNom()}</span></h3>`
+        return safeHtml`<h3><span class="profil">${this.affichageNom()}</span></h3>`
     }
 
     renderButtons() {
@@ -344,7 +342,7 @@ export default class Profil {
                     this.hasSuiviStartDate() && this.hasHistorique()
                         ? 'Continuer'
                         : 'Démarrer'
-                mainButton += affichage.safeHtml`
+                mainButton += safeHtml`
                     <a class="button suivi-link"
                         data-set-profil="${this.nom}" href="#suiviintroduction"
                         >${verbe} ${possessifMasculinSingulier} suivi</a>
@@ -352,14 +350,14 @@ export default class Profil {
             }
             const outlined =
                 this.estMonProfil() && !this.suivi_active ? '' : 'button-outline'
-            mainButton += affichage.safeHtml`
+            mainButton += safeHtml`
                 <a class="button ${outlined} conseils-link"
                     data-set-profil="${this.nom}" href="#conseils"
                     >Voir ${possessifPluriel} conseils</a>
             `
         } else {
             var label = this.isEmpty() ? 'Démarrer' : 'Continuer'
-            mainButton = affichage.safeHtml`
+            mainButton = safeHtml`
                 <a class="button button-full-width conseils-link"
                     data-set-profil="${this.nom}" href="#residence"
                     >${label}</a>
@@ -367,7 +365,7 @@ export default class Profil {
         }
         return (
             mainButton +
-            affichage.safeHtml`
+            safeHtml`
             <a data-set-profil="${this.nom}" href="#residence"
                 >Modifier ${possessifPluriel} réponses</a>
             <a data-delete-profil="${this.nom}" href=""
@@ -377,7 +375,7 @@ export default class Profil {
     }
 
     renderCard() {
-        return affichage.createElementFromHTML(`
+        return createElementFromHTML(`
         <li class="card">
             ${this.renderNom()}
             <div>${this.renderButtons()}</div>
@@ -391,19 +389,19 @@ export default class Profil {
         const label =
             this.hasSuiviStartDate() && this.hasHistorique() ? 'Continuer' : 'Démarrer'
         const nextPage = this.hasSymptomesStartDate() ? 'suivisymptomes' : 'suividate'
-        const suiviButton = affichage.safeHtml`
+        const suiviButton = safeHtml`
             <a class="button button-full-width conseils-link"
                 data-set-profil="${this.nom}" href="#${nextPage}"
                 >${label} ${possessifMasculinSingulier} suivi</a>
         `
-        const conseilsButton = affichage.safeHtml`
+        const conseilsButton = safeHtml`
             <a class="button button-outline button-full-width conseils-link"
                 data-set-profil="${this.nom}" href="#conseils"
                 >Voir ${possessifPluriel} conseils</a>
         `
         let deleteLink = ''
         if (this.hasSuiviStartDate()) {
-            deleteLink = affichage.safeHtml`
+            deleteLink = safeHtml`
                 <a data-delete-suivi="${this.nom}" href=""
                     >Supprimer ${possessifMasculinSingulier} suivi</a>
             `
@@ -421,7 +419,7 @@ export default class Profil {
     }
 
     renderCardSuivi() {
-        return affichage.createElementFromHTML(`
+        return createElementFromHTML(`
         <li class="card">
             ${this.renderNom()}
             ${this.renderDernierSuivi()}
@@ -726,7 +724,7 @@ export default class Profil {
             symptomesBooleens.push('confusion')
         }
         const symptomesBooleensOptionnels = ['mauxDeTete', 'toux']
-        return affichage.createElementFromHTML(`
+        return createElementFromHTML(`
             <div>
                 ${this.renderDebutSymptomes()}
                 ${this.renderDebutSuivi()}

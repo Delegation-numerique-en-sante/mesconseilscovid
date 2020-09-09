@@ -1,7 +1,7 @@
-import pagination from './pagination'
-import affichage from './affichage'
+import { getCurrentPageName } from './pagination.js'
+import { showElement } from './affichage.js'
 
-class Updater {
+export default class Updater {
     constructor(router) {
         this.router = router
         this.currentVersion = null
@@ -18,7 +18,7 @@ class Updater {
             return
         }
 
-        const pageName = pagination.getCurrentPageName()
+        const pageName = getCurrentPageName()
         if (pageName === 'nouvelleversiondisponible') {
             return
         }
@@ -42,7 +42,7 @@ class Updater {
 
     showBanner(document) {
         const block = document.querySelector('#update-banner')
-        affichage.showElement(block)
+        showElement(block)
         document.dispatchEvent(new CustomEvent('show-banner', { detail: block }))
     }
 
@@ -90,7 +90,7 @@ class Updater {
     }
 
     notifyUser() {
-        const pageName = pagination.getCurrentPageName()
+        const pageName = getCurrentPageName()
         if (this.isFillingQuestionnaire()) {
             this.notifyUserWithoutInterrupting(pageName)
         } else {
@@ -99,7 +99,7 @@ class Updater {
     }
 
     isFillingQuestionnaire() {
-        const pageName = pagination.getCurrentPageName()
+        const pageName = getCurrentPageName()
         return (
             pageName === 'residence' ||
             pageName === 'activitepro' ||
@@ -176,8 +176,4 @@ class Updater {
             window.location.reload(true) // `true` means: reload from server.
         }
     }
-}
-
-module.exports = {
-    Updater,
 }

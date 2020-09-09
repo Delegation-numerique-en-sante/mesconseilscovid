@@ -1,10 +1,11 @@
 import { assert } from 'chai'
 import { JSDOM } from 'jsdom'
 
-import { AlgorithmeOrientation } from '../algorithme/orientation'
-import injection from '../injection'
+import AlgorithmeOrientation from '../algorithme/orientation.js'
 
-import Profil from '../profil'
+import * as injection from '../injection.js'
+
+import Profil from '../profil.js'
 var profil = new Profil('mes_infos')
 
 describe('Injection', function () {

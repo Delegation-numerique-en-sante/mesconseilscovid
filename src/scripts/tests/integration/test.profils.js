@@ -1,5 +1,5 @@
 import { assert } from 'chai'
-import helpers from './helpers'
+import { remplirQuestionnaire } from './helpers.js'
 
 describe('Profils', function () {
     it('remplir le questionnaire pour un proche', async function () {
@@ -37,7 +37,7 @@ describe('Profils', function () {
         }
 
         // Remplir le questionnaire
-        await helpers.remplirQuestionnaire(page, {
+        await remplirQuestionnaire(page, {
             departement: '80',
             activitePro: true,
             enfants: true,

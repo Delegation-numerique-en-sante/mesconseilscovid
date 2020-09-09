@@ -1,23 +1,26 @@
-import affichage from '../affichage'
-import formUtils from '../formutils'
+import { hideElement, showElement } from '../affichage.js'
+import {
+    enableOrDisableSecondaryFields,
+    toggleFormButtonOnRadioRequired,
+} from '../formutils.js'
 
-import { AlgorithmeDeconfinement } from '../algorithme/deconfinement'
-import { AlgorithmeOrientation } from '../algorithme/orientation'
+import AlgorithmeDeconfinement from '../algorithme/deconfinement.js'
+import AlgorithmeOrientation from '../algorithme/orientation.js'
 
-function before(profil) {
+export function before(profil) {
     if (!profil.isComplete()) return 'conseils'
     if (!profil.hasSymptomesStartDate()) return 'suividate'
 }
 
-function page(form, app, router) {
+export function page(form, app, router) {
     // Question affichée seulement si on répond pour un proche
     const pourUnProche = !app.profil.estMonProfil()
     var themOnly = form.querySelector('.them-only')
     if (pourUnProche) {
-        affichage.showElement(themOnly)
+        showElement(themOnly)
         themOnly.classList.add('required')
     } else {
-        affichage.hideElement(themOnly)
+        hideElement(themOnly)
         themOnly.classList.remove('required')
     }
 
@@ -25,20 +28,15 @@ function page(form, app, router) {
     // On pré-suppose que la personne qui fait son auto-suivi a des symptômes
     form['suivi_symptomes'].checked = true
     var primary = form.elements['suivi_symptomes']
-    formUtils.enableOrDisableSecondaryFields(form, primary)
+    enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
-        formUtils.enableOrDisableSecondaryFields(form, primary)
+        enableOrDisableSecondaryFields(form, primary)
     })
     const uncheckedLabel = pourUnProche
         ? 'Cette personne n’a pas de symptômes aujourd’hui'
         : 'Je n’ai pas eu de symptômes aujourd’hui'
     const requiredLabel = 'Veuillez remplir le formulaire au complet'
-    formUtils.toggleFormButtonOnRadioRequired(
-        form,
-        button.value,
-        uncheckedLabel,
-        requiredLabel
-    )
+    toggleFormButtonOnRadioRequired(form, button.value, uncheckedLabel, requiredLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         const elements = event.target.elements
@@ -80,9 +78,4 @@ function page(form, app, router) {
             router.navigate('conseils')
         })
     })
-}
-
-export default {
-    before,
-    page,
 }

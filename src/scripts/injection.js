@@ -1,29 +1,29 @@
-import affichage from './affichage'
+import { showElement } from './affichage.js'
 
-const prefectures = require('./data/prefectures.js').prefectures
-const departements = require('./data/departements.js').departements
+import prefectures from './data/prefectures.js'
+import departements from './data/departements.js'
 
-function nomProfil(element, app) {
+export function nomProfil(element, app) {
     if (!element) return
     element.textContent = app.profil.affichageNom()
 }
 
-function titreConseils(element, profil) {
+export function titreConseils(element, profil) {
     if (!element) return
     if (profil.estMonProfil()) return
-    affichage.showElement(element)
+    showElement(element)
     element.textContent = `Conseils pour « ${profil.nom} »`
 }
 
-function departement(element, departement) {
+export function departement(element, departement) {
     element.textContent = departements[departement] || 'Inconnu'
 }
 
-function lienPrefecture(element, departement) {
+export function lienPrefecture(element, departement) {
     element.setAttribute('href', prefectures[departement])
 }
 
-function caracteristiquesARisques(element, algoOrientation) {
+export function caracteristiquesARisques(element, algoOrientation) {
     if (
         algoOrientation.sup65 ||
         algoOrientation.profil.grossesse_3e_trimestre ||
@@ -47,7 +47,7 @@ function caracteristiquesARisques(element, algoOrientation) {
     }
 }
 
-function antecedents(element, algoOrientation) {
+export function antecedents(element, algoOrientation) {
     if (
         algoOrientation.antecedents ||
         algoOrientation.profil.antecedent_chronique_autre
@@ -67,7 +67,7 @@ function antecedents(element, algoOrientation) {
     }
 }
 
-function symptomesactuels(element, algoOrientation) {
+export function symptomesactuels(element, algoOrientation) {
     if (algoOrientation.symptomesActuelsReconnus) {
         var symptomes = []
         if (
@@ -100,14 +100,4 @@ function symptomesactuels(element, algoOrientation) {
         var content = symptomes.join(' ; ') + '.'
         element.textContent = content
     }
-}
-
-export default {
-    nomProfil,
-    titreConseils,
-    departement,
-    lienPrefecture,
-    caracteristiquesARisques,
-    antecedents,
-    symptomesactuels,
 }

@@ -1,15 +1,15 @@
-import Profil from '../profil'
-import affichage from '../affichage'
+import Profil from '../profil.js'
+import { createElementFromHTML, hideElement } from '../affichage.js'
 
-function page(element, app) {
+export function page(element, app) {
     const container = element.querySelector('#profils-cards')
     app.stockage.getProfils().then((noms) => {
         if (noms.length) {
-            affichage.hideElement(element.querySelector('.js-intro'))
+            hideElement(element.querySelector('.js-intro'))
         }
         if (noms.indexOf('mes_infos') === -1) {
             const card = container.appendChild(
-                affichage.createElementFromHTML(`
+                createElementFromHTML(`
                     <div class="profil-card card">
                         <h3><span class="nouveau-profil">Pour moi</span></h3>
                         <div class="form-controls">
@@ -23,7 +23,7 @@ function page(element, app) {
             bindCreateProfil(card.querySelector('[data-set-profil]'), app)
         }
         container.appendChild(
-            affichage.createElementFromHTML(`
+            createElementFromHTML(`
                 <div class="profil-card card">
                     <h3><span class="nouveau-profil">Pour un proche</span></h3>
                     <div class="form-controls">
@@ -91,8 +91,4 @@ function bindSuppression(element, app) {
             })
         }
     })
-}
-
-export default {
-    page,
 }

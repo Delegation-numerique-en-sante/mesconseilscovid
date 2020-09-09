@@ -49,9 +49,7 @@ def generate():
     data = retrieve_data(DATA_URL)
     by_departement = aggregate_by_departement(data)
     by_week = aggregate_by_week(by_departement)
-    open(DATA_DIR / "incidence.js", "w").write(
-        f"const incidence = {by_week}\nmodule.exports = {{incidence}}"
-    )
+    open(DATA_DIR / "incidence.js", "w").write(f"export default {by_week}\n")
 
 
 @wrap

@@ -1,17 +1,17 @@
-import Profil from './profil'
-import { StockageLocal } from './stockage.js'
+import Profil from './profil.js'
+import StockageLocal from './stockage.js'
 import { joursAvant } from './utils.js'
 
-var Router = require('./router.js')
-var Updater = require('./updater.js').Updater
+import { initRouter } from './router.js'
+import Updater from './updater.js'
 
-class App {
+export default class App {
     constructor() {
         this.profil = new Profil()
         this.stockage = new StockageLocal()
     }
     init() {
-        this.router = Router.initRouter(this)
+        this.router = initRouter(this)
         this.updater = new Updater(this.router)
         return this.chargerProfilActuel()
     }
@@ -78,8 +78,4 @@ class App {
         ]
         this.enregistrerProfilActuel()
     }
-}
-
-module.exports = {
-    App,
 }

@@ -1,10 +1,10 @@
-import actions from '../actions.js'
+import { bindCalendar } from '../actions.js'
 
-function before(profil) {
+export function before(profil) {
     if (!profil.isComplete()) return 'conseils'
 }
 
-function page(element, app) {
+export function page(element, app) {
     const container = element.querySelector('#profils-cards-suivi')
     const card = container.insertBefore(
         app.profil.renderCardSuivi(),
@@ -12,7 +12,7 @@ function page(element, app) {
     )
     if (app.profil.hasSuiviStartDate()) {
         bindSuppression(card.querySelector('[data-delete-suivi]'), app)
-        actions.bindCalendar(element, app.profil)
+        bindCalendar(element, app.profil)
     }
 }
 
@@ -31,5 +31,3 @@ function bindSuppression(element, app) {
         }
     })
 }
-
-export default { before, page }

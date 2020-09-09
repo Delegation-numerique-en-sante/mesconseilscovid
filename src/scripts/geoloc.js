@@ -1,4 +1,4 @@
-var affichage = require('./affichage.js')
+import { hideSelector, displayElementById } from './affichage.js'
 
 var Geolocaliseur = function () {
     this.matchDepartement = function (lat, lon, departementFound, departementNotFound) {
@@ -58,11 +58,11 @@ var Geolocaliseur = function () {
     }
 }
 
-function geolocalisation(event) {
+export default function geolocalisation(event) {
     event.preventDefault()
     var geolocaliseur = new Geolocaliseur()
     var form = document.querySelector('form#residence-form')
-    affichage.hideSelector(form, '#error-geolocalisation')
+    hideSelector(form, '#error-geolocalisation')
     var onDepartementFound = function (departement) {
         var select = form.querySelector('#departement')
         select.value = departement.code
@@ -71,7 +71,7 @@ function geolocalisation(event) {
     }
     var onDepartementNotFound = function () {
         // L’utilisateur n’est probablement pas sur le territoire français.
-        affichage.displayElementById(form, 'error-geolocalisation')
+        displayElementById(form, 'error-geolocalisation')
     }
     navigator.geolocation.getCurrentPosition(
         function (position) {
@@ -95,8 +95,4 @@ function geolocalisation(event) {
             maximumAge: 0,
         }
     )
-}
-
-module.exports = {
-    geolocalisation,
 }

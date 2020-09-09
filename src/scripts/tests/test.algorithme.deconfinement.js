@@ -1,10 +1,10 @@
 import { assert } from 'chai'
 
-import { joursAvant } from '../utils'
-import { AlgorithmeOrientation } from '../algorithme/orientation'
-import { AlgorithmeDeconfinement } from '../algorithme/deconfinement'
+import { joursAvant } from '../utils.js'
+import AlgorithmeOrientation from '../algorithme/orientation.js'
+import AlgorithmeDeconfinement from '../algorithme/deconfinement.js'
 
-import Profil from '../profil'
+import Profil from '../profil.js'
 var profil = new Profil('mes_infos')
 
 describe('Algorithme déconfinement', function () {

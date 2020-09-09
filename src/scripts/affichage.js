@@ -1,4 +1,4 @@
-function showMeOrThem(element, profil) {
+export function showMeOrThem(element, profil) {
     // eslint-disable-next-line no-extra-semi
     ;[].forEach.call(
         element.querySelectorAll('.me'),
@@ -16,40 +16,40 @@ function showThem(themElement) {
     showElement(themElement.nextSibling)
 }
 
-function hideElement(element) {
+export function hideElement(element) {
     element.setAttribute('hidden', '')
     element.classList.remove('visible')
 }
 
-function showElement(element) {
+export function showElement(element) {
     element.removeAttribute('hidden')
     element.classList.add('visible')
 }
 
-function hideSelector(element, selector) {
+export function hideSelector(element, selector) {
     // eslint-disable-next-line no-extra-semi
     ;[].forEach.call(element.querySelectorAll(selector), hideElement)
 }
 
-function displayElementById(element, id) {
+export function displayElementById(element, id) {
     var block = element.querySelector('#' + id)
     if (!block) return
     showElement(block)
 }
 
-function displayBlocks(element, blockNames) {
+export function displayBlocks(element, blockNames) {
     blockNames.forEach(function (block) {
         displayElementById(element, block)
     })
 }
 
-function createElementFromHTML(htmlString) {
+export function createElementFromHTML(htmlString) {
     var div = document.createElement('div')
     div.innerHTML = htmlString.trim()
     return div.firstElementChild
 }
 
-function escapeHtml(str) {
+export function escapeHtml(str) {
     return str
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
@@ -59,7 +59,7 @@ function escapeHtml(str) {
         .replace(/`/g, '&#x60;')
 }
 
-function safeHtml(literals, ...substitutions) {
+export function safeHtml(literals, ...substitutions) {
     let result = ''
 
     for (let i = 0; i < substitutions.length; i++) {
@@ -69,16 +69,4 @@ function safeHtml(literals, ...substitutions) {
     // add the last literal
     result += literals[literals.length - 1]
     return result
-}
-
-export default {
-    showMeOrThem,
-    hideElement,
-    showElement,
-    hideSelector,
-    displayElementById,
-    displayBlocks,
-    createElementFromHTML,
-    safeHtml,
-    escapeHtml,
 }

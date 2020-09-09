@@ -1,7 +1,7 @@
 // Données privées, stockées uniquement en local
 import localforage from 'localforage'
 
-class StockageLocal {
+export default class StockageLocal {
     constructor() {
         this.localforage = localforage
     }
@@ -97,8 +97,4 @@ class StockageLocal {
                 console.error(error)
             })
     }
-}
-
-module.exports = {
-    StockageLocal,
 }

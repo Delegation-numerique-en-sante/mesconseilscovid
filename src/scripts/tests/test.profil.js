@@ -1,6 +1,6 @@
 import { assert } from 'chai'
 
-import Profil from '../profil'
+import Profil from '../profil.js'
 var profil = new Profil('mes_infos')
 
 describe('Profil', function () {

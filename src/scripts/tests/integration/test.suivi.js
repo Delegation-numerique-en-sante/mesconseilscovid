@@ -1,5 +1,5 @@
 import { assert } from 'chai'
-import helpers from './helpers'
+import { remplirQuestionnaire, remplirSuivi } from './helpers.js'
 
 describe('Auto-suivi', function () {
     it('remplir le questionnaire de suivi pour moi sans consentement médecin', async function () {
@@ -21,7 +21,7 @@ describe('Auto-suivi', function () {
         }
 
         // Remplir le questionnaire
-        await helpers.remplirQuestionnaire(page, {
+        await remplirQuestionnaire(page, {
             departement: '80',
             activitePro: true,
             enfants: true,
@@ -97,7 +97,7 @@ describe('Auto-suivi', function () {
 
         // La page du suivi des symptômes
         {
-            await helpers.remplirSuivi(page, {
+            await remplirSuivi(page, {
                 essoufflement: 'mieux',
                 etat_general: 'mieux',
                 alimentation_hydratation: 'non',
@@ -194,7 +194,7 @@ describe('Auto-suivi', function () {
         }
 
         // Remplir le questionnaire
-        await helpers.remplirQuestionnaire(page, {
+        await remplirQuestionnaire(page, {
             departement: '80',
             activitePro: true,
             enfants: true,
@@ -241,7 +241,7 @@ describe('Auto-suivi', function () {
 
         // La page du suivi des symptômes
         {
-            await helpers.remplirSuivi(page, {
+            await remplirSuivi(page, {
                 essoufflement: 'critique',
                 etat_general: 'mieux',
                 alimentation_hydratation: 'oui',
@@ -304,7 +304,7 @@ describe('Auto-suivi', function () {
         }
 
         // Remplir le questionnaire
-        await helpers.remplirQuestionnaire(page, {
+        await remplirQuestionnaire(page, {
             departement: '80',
             activitePro: true,
             enfants: true,
@@ -380,7 +380,7 @@ describe('Auto-suivi', function () {
 
         // La page du suivi des symptômes
         {
-            await helpers.remplirSuivi(page, {
+            await remplirSuivi(page, {
                 essoufflement: 'mieux',
                 etat_general: 'mieux',
                 alimentation_hydratation: 'non',
@@ -493,7 +493,7 @@ describe('Auto-suivi', function () {
         }
 
         // Remplir le questionnaire
-        await helpers.remplirQuestionnaire(page, {
+        await remplirQuestionnaire(page, {
             departement: '80',
             activitePro: true,
             enfants: true,
@@ -540,7 +540,7 @@ describe('Auto-suivi', function () {
 
         // La page du suivi des symptômes
         {
-            await helpers.remplirSuivi(page, {
+            await remplirSuivi(page, {
                 essoufflement: 'critique',
                 etat_general: 'mieux',
                 alimentation_hydratation: 'oui',

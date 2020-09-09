@@ -1,8 +1,8 @@
 import { assert } from 'chai'
 
-import { incidence } from '../data/incidence'
-import { prefectures } from '../data/prefectures'
-import { departements } from '../data/departements'
+import incidence from '../data/incidence.js'
+import prefectures from '../data/prefectures.js'
+import departements from '../data/departements.js'
 
 describe('Carte départements', function () {
     it('Il y a le bon nombre de noms', function () {
