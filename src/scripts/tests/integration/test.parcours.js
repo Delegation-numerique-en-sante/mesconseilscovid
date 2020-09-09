@@ -342,4 +342,51 @@ describe('Parcours', function () {
             )
         }
     })
+
+    it('remplir le questionnaire avec pédiatrie', async function () {
+        const page = this.test.page
+
+        // On est redirigé vers l’introduction
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/#introduction' }),
+        ])
+
+        // Page d’accueil
+        {
+            let bouton = await page.waitForSelector('text="Démarrer"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Pour moi'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#residence' }),
+            ])
+        }
+
+        // Remplir le questionnaire
+        await remplirQuestionnaire(page, {
+            departement: '80',
+            enfants: true,
+            age: '12',
+            taille: '165',
+            poids: '70',
+            grossesse: false,
+        })
+
+        // Pédiatrie
+        {
+            // On retrouve le titre explicite
+            let titre = await page.waitForSelector('#page h2')
+            assert.equal(await titre.innerText(), 'Conseils pour les moins de 15 ans')
+
+            // On retrouve le bouton pour repartir vers le questionnaire
+            let button = await page.waitForSelector('#page #js-profil-empty a')
+            assert.equal((await button.innerText()).trim(), 'Démarrer le questionnaire')
+            assert.equal(await button.getAttribute('href'), '#caracteristiques')
+        }
+    })
 })
