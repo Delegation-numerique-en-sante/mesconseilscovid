@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-09-09
+
+* met jour les liens vers les consignes préfectorales
+
 ## 2020-09-07
 
 * ajoute des formulaires pour décrire les difficultés rencontrées
