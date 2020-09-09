@@ -2,7 +2,7 @@
 
 ## 2020-09-09
 
-* met jour les liens vers les consignes préfectorales
+* met à jour les liens vers les consignes préfectorales
 
 ## 2020-09-07
 
