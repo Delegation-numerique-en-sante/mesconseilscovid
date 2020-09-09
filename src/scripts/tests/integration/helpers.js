@@ -3,6 +3,7 @@ export async function remplirQuestionnaire(page, choix) {
     await remplirFoyer(page, choix.enfants)
     await remplirAntecedents(page)
     await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
+    if (choix.age < 15) return
     await remplirActivite(page, choix.activitePro)
     await remplirSymptomesActuels(page, choix.symptomesActuels)
     if (choix.symptomesActuels.length === 0) {
@@ -57,9 +58,10 @@ async function remplirCaracteristiques(page, age, taille, poids) {
     await page.fill('#page #poids', poids)
     // TODO: grossesse
     let bouton = await page.waitForSelector('#page >> text="Continuer"')
+    const target = age < 15 ? 'pediatrie' : 'activitepro'
     await Promise.all([
         bouton.click(),
-        page.waitForNavigation({ url: '**/#activitepro' }),
+        page.waitForNavigation({ url: `**/#${target}` }),
     ])
 }
 
