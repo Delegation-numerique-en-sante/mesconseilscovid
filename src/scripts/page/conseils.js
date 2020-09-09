@@ -1,12 +1,18 @@
-import actions from '../actions'
-import affichage from '../affichage'
-import injection from '../injection'
-import questionnaire from './questionnaire'
+import { bindCalendar, bindFeedback, bindImpression } from '../actions.js'
+import {
+    displayBlocks,
+    displayElementById,
+    hideSelector,
+    showElement,
+    showMeOrThem,
+} from '../affichage.js'
+import * as injection from '../injection.js'
+import * as questionnaire from './questionnaire.js'
 
-import { AlgorithmeOrientation } from '../algorithme/orientation'
-import { AlgorithmeSuivi } from '../algorithme/suivi'
+import AlgorithmeOrientation from '../algorithme/orientation.js'
+import AlgorithmeSuivi from '../algorithme/suivi.js'
 
-function before(profil) {
+export function before(profil) {
     if (profil.isContactARisqueComplete()) {
         return questionnaire.beforeContactARisque(profil)
     } else if (profil.isSymptomesPassesComplete()) {
@@ -29,12 +35,12 @@ function before(profil) {
     }
 }
 
-function page(element, app) {
+export function page(element, app) {
     // Hide all conseils that might have been made visible on previous runs.
-    affichage.hideSelector(element, '.visible')
+    hideSelector(element, '.visible')
 
     // Make sure we (re-)show profile-specific text.
-    affichage.showMeOrThem(element, app.profil)
+    showMeOrThem(element, app.profil)
 
     // Use custom illustration if needed.
     var extraClass = getCustomIllustrationName(app.profil)
@@ -59,21 +65,21 @@ function page(element, app) {
     if (app.profil.hasSuiviStartDate() && app.profil.hasHistorique()) {
         if (app.profil.hasDeconfinementDate()) {
             // Afficher le bloc de déconfinement
-            affichage.displayElementById(element, 'deconfinement')
+            displayElementById(element, 'deconfinement')
         } else {
             // Afficher le bloc de résultats de l’auto-suivi
             const algoSuivi = new AlgorithmeSuivi(app.profil)
-            affichage.displayElementById(element, 'suivi')
+            displayElementById(element, 'suivi')
             showRelevantSuiviBlocks(element, algoSuivi)
             showRelevantEvolutionsRecap(element, algoSuivi)
         }
 
         // Cacher le bloc de statut si on est en auto-suivi.
-        affichage.hideSelector(element, '#conseils-statut')
+        hideSelector(element, '#conseils-statut')
 
         // Cacher le bloc de recommandation de l’auto-suivi
         // si on l’a déjà démarré.
-        affichage.hideSelector(element, '.conseil-autosuivi')
+        hideSelector(element, '.conseil-autosuivi')
     }
 
     // Dynamic data injections.
@@ -83,17 +89,17 @@ function page(element, app) {
     if (isMobileSafari()) {
         const isPWA = navigator.standalone
         if (!isPWA) {
-            affichage.showElement(element.querySelector('.browser-mobile-safari'))
+            showElement(element.querySelector('.browser-mobile-safari'))
         }
     } else {
-        affichage.showElement(element.querySelector('.browser-other'))
+        showElement(element.querySelector('.browser-other'))
     }
 
     // Make the buttons clickable with appropriated actions.
-    actions.bindFeedback(element.querySelector('.feedback-component'))
-    actions.bindImpression(element)
+    bindFeedback(element.querySelector('.feedback-component'))
+    bindImpression(element)
     if (app.profil.hasSuiviStartDate()) {
-        actions.bindCalendar(element, app.profil)
+        bindCalendar(element, app.profil)
     }
 }
 
@@ -117,10 +123,10 @@ function showRelevantSuiviBlocks(element, algoSuivi) {
     if (algoSuivi.profil.hasHistorique()) {
         blockNames.push('conseil-autosuivi-historique')
     }
-    affichage.displayBlocks(element, blockNames)
+    displayBlocks(element, blockNames)
 }
 
-function showRelevantBlocks(element, profil, algoOrientation) {
+export function showRelevantBlocks(element, profil, algoOrientation) {
     var blockNames = statutBlockNamesToDisplay(algoOrientation)
     blockNames = blockNames.concat(
         algoOrientation.conseilsPersonnelsBlockNamesToDisplay()
@@ -131,18 +137,18 @@ function showRelevantBlocks(element, profil, algoOrientation) {
     blockNames = blockNames.concat(
         algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay()
     )
-    affichage.displayBlocks(element, blockNames)
+    displayBlocks(element, blockNames)
 }
 
 function showRelevantEvolutionsRecap(element, algoSuivi) {
     var blockNames = algoSuivi.evolutionsBlockNamesToDisplay()
     if (blockNames.length) {
-        affichage.showElement(element.querySelector('.reponse'))
-        affichage.displayBlocks(element, blockNames)
+        showElement(element.querySelector('.reponse'))
+        displayBlocks(element, blockNames)
     }
 }
 
-function showRelevantAnswersRecap(element, profil, algoOrientation) {
+export function showRelevantAnswersRecap(element, profil, algoOrientation) {
     injection.titreConseils(element.querySelector('#conseils-block-titre'), profil)
 
     injection.departement(element.querySelector('#nom-departement'), profil.departement)
@@ -188,11 +194,4 @@ function isMobileSafari() {
     const isWebkit = !!ua.match(/WebKit/i)
     const isChrome = !!ua.match(/CriOS/i)
     return isIOS && isWebkit && !isChrome
-}
-
-export default {
-    before,
-    page,
-    showRelevantBlocks,
-    showRelevantAnswersRecap,
 }

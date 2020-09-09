@@ -1,8 +1,8 @@
-import { ICS } from './ics'
-import affichage from './affichage'
-import pagination from './pagination'
+import ICS from './ics.js'
+import { hideElement, showElement } from './affichage.js'
+import { getCurrentPageName } from './pagination.js'
 
-function bindCalendar(element, profil) {
+export function bindCalendar(element, profil) {
     const ics = new ICS(navigator.appVersion)
     const duration = 1 // heures bloquées sur le calendrier.
     const urlSuivi = 'https://mesconseilscovid.sante.gouv.fr/#suiviintroduction'
@@ -42,7 +42,7 @@ function bindCalendar(element, profil) {
     })
 }
 
-function bindFeedback(component) {
+export function bindFeedback(component) {
     function opacityTransition(component, delay, callback) {
         component.style.transition = `opacity ${delay / 1000}s`
         component.style.opacity = '0'
@@ -56,8 +56,8 @@ function bindFeedback(component) {
         const transitionDelay = component.dataset.feedbackTransitionDelay
 
         opacityTransition(component, transitionDelay, (component) => {
-            affichage.hideElement(component.querySelector('.feedback-question'))
-            affichage.showElement(component.querySelector('.feedback-form'))
+            hideElement(component.querySelector('.feedback-question'))
+            showElement(component.querySelector('.feedback-form'))
             component.parentElement.classList.add('js-feedback-submitted')
             const form = component.querySelector('.feedback-form form')
             form.addEventListener('submit', (event) => {
@@ -66,7 +66,7 @@ function bindFeedback(component) {
                 const payload = {
                     kind: feedback,
                     message: event.target.elements.message.value,
-                    page: pagination.getCurrentPageName(),
+                    page: getCurrentPageName(),
                 }
                 const request = new XMLHttpRequest()
                 request.open('POST', feedbackHost + '/feedback', true)
@@ -74,8 +74,8 @@ function bindFeedback(component) {
                 request.send(JSON.stringify(payload))
 
                 opacityTransition(component, transitionDelay, (component) => {
-                    affichage.hideElement(component.querySelector('.feedback-form'))
-                    affichage.showElement(component.querySelector('.feedback-thankyou'))
+                    hideElement(component.querySelector('.feedback-form'))
+                    showElement(component.querySelector('.feedback-thankyou'))
                 })
             })
         })
@@ -91,13 +91,13 @@ function bindFeedback(component) {
     })
     document.addEventListener('pageChanged', () => {
         // Display again the question if the user change page.
-        affichage.hideElement(component.querySelector('.feedback-form'))
-        affichage.hideElement(component.querySelector('.feedback-thankyou'))
-        affichage.showElement(component.querySelector('.feedback-question'))
+        hideElement(component.querySelector('.feedback-form'))
+        hideElement(component.querySelector('.feedback-thankyou'))
+        showElement(component.querySelector('.feedback-question'))
     })
 }
 
-function bindImpression(element) {
+export function bindImpression(element) {
     const printButton = element.querySelector('.js-impression')
     printButton.addEventListener('click', (event) => {
         event.preventDefault()
@@ -109,7 +109,7 @@ function bindImpression(element) {
     })
 }
 
-function bindSuppressionTotale(element, app) {
+export function bindSuppressionTotale(element, app) {
     element.addEventListener('click', (event) => {
         event.preventDefault()
         if (confirm('Êtes-vous sûr·e de vouloir supprimer tous les profils ?')) {
@@ -122,11 +122,4 @@ function bindSuppressionTotale(element, app) {
             })
         }
     })
-}
-
-export default {
-    bindImpression,
-    bindFeedback,
-    bindCalendar,
-    bindSuppressionTotale,
 }

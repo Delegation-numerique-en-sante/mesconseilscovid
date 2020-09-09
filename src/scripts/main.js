@@ -8,8 +8,8 @@ import './polyfills/custom_event'
 
 import { register } from 'timeago.js'
 
-import actions from './actions'
-import { App } from './app'
+import { bindFeedback, bindSuppressionTotale } from './actions.js'
+import App from './app.js'
 
 var app = new App()
 window.app = app
@@ -17,11 +17,8 @@ window.app = app
     app.init().then(() => {
         app.router.resolve()
         app.updater.checkForUpdatesEvery(10) // Minutes.
-        actions.bindFeedback(document.querySelector('footer .feedback-component'))
-        actions.bindSuppressionTotale(
-            document.querySelector('footer .js-suppression'),
-            app
-        )
+        bindFeedback(document.querySelector('footer .feedback-component'))
+        bindSuppressionTotale(document.querySelector('footer .js-suppression'), app)
     })
 })()
 

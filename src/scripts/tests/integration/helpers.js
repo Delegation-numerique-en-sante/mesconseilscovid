@@ -1,4 +1,4 @@
-async function remplirQuestionnaire(page, choix) {
+export async function remplirQuestionnaire(page, choix) {
     await remplirDepartement(page, choix.departement)
     await remplirFoyer(page, choix.enfants)
     await remplirAntecedents(page)
@@ -142,7 +142,7 @@ async function remplirContactsARisque(page) {
     await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#conseils' })])
 }
 
-async function remplirSuivi(page, symptomes) {
+export async function remplirSuivi(page, symptomes) {
     // Obligatoires
     let label
     label = await page.waitForSelector(
@@ -191,9 +191,4 @@ async function remplirSuivi(page, symptomes) {
         )
         await label.click()
     }
-}
-
-module.exports = {
-    remplirQuestionnaire,
-    remplirSuivi,
 }

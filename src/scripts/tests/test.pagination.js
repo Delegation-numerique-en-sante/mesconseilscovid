@@ -1,14 +1,14 @@
 import { assert } from 'chai'
 
-import conseils from '../page/conseils'
-import suiviintroduction from '../page/suiviintroduction'
-import suivimedecin from '../page/suivimedecin'
-import suividate from '../page/suividate'
-import suivisymptomes from '../page/suivisymptomes'
-import suivihistorique from '../page/suivihistorique'
-import questionnaire from '../page/questionnaire'
+import * as conseils from '../page/conseils.js'
+import * as suiviintroduction from '../page/suiviintroduction.js'
+import * as suivimedecin from '../page/suivimedecin.js'
+import * as suividate from '../page/suividate.js'
+import * as suivisymptomes from '../page/suivisymptomes.js'
+import * as suivihistorique from '../page/suivihistorique.js'
+import * as questionnaire from '../page/questionnaire.js'
 
-import Profil from '../profil'
+import Profil from '../profil.js'
 
 describe('Pagination', function () {
     describe('Mon foyer', function () {

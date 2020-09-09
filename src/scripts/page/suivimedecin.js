@@ -1,8 +1,8 @@
-function before(profil) {
+export function before(profil) {
     if (!profil.isComplete()) return 'conseils'
 }
 
-function page(form, app, router) {
+export function page(form, app, router) {
     const button = form.querySelector('input[type=submit]')
     const requiredLabel = 'Vous devez saisir l’un des choix proposés'
 
@@ -51,5 +51,3 @@ function page(form, app, router) {
         }
     })
 }
-
-export default { before, page }

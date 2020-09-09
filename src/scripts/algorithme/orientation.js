@@ -1,6 +1,6 @@
-const incidence = require('../data/incidence.js').incidence
+import incidence from '../data/incidence.js'
 
-class AlgorithmeOrientation {
+export default class AlgorithmeOrientation {
     constructor(profil) {
         this.profil = profil
     }
@@ -297,8 +297,4 @@ class AlgorithmeOrientation {
         }
         return blockNames
     }
-}
-
-module.exports = {
-    AlgorithmeOrientation,
 }

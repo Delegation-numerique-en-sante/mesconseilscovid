@@ -1,4 +1,4 @@
-const departements = {
+export default {
     '01': 'Ain',
     '02': 'Aisne',
     '03': 'Allier',
@@ -104,5 +104,3 @@ const departements = {
     '977': 'Saint-Barthélemy',
     '978': 'Saint-Martin',
 }
-
-module.exports = { departements }

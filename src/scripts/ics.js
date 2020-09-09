@@ -1,6 +1,6 @@
 /* Inspired by https://github.com/nwcell/ics.js */
 
-class ICS {
+export default class ICS {
     constructor(appVersion) {
         this.uidDomain = 'default'
         this.prodId = 'Calendar'
@@ -106,8 +106,4 @@ class ICS {
         }
         return rruleString
     }
-}
-
-module.exports = {
-    ICS,
 }

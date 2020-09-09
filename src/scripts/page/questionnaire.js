@@ -1,11 +1,19 @@
-import affichage from '../affichage.js'
-import formUtils from '../formutils.js'
-import geoloc from '../geoloc.js'
+import { hideSelector } from '../affichage.js'
+import {
+    enableOrDisableSecondaryFields,
+    preloadForm,
+    preloadCheckboxForm,
+    toggleFormButtonOnCheck,
+    toggleFormButtonOnCheckRequired,
+    toggleFormButtonOnSelectFieldsRequired,
+    toggleFormButtonOnTextFieldsRequired,
+} from '../formutils.js'
+import geolocalisation from '../geoloc.js'
 
-function nom(form, app, router) {
+export function nom(form, app, router) {
     var button = form.querySelector('input[type=submit]')
     const requiredLabel = 'Cette information est requise'
-    formUtils.toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)
+    toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         const nom = event.target.elements['name'].value
@@ -15,16 +23,16 @@ function nom(form, app, router) {
     })
 }
 
-function residence(form, app, router) {
+export function residence(form, app, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadForm(form, 'departement', app.profil)
+    preloadForm(form, 'departement', app.profil)
     const requiredLabel = app.profil.estMonProfil()
         ? 'Votre département de résidence est requis'
         : 'Son département de résidence est requis'
-    formUtils.toggleFormButtonOnSelectFieldsRequired(form, button.value, requiredLabel)
-    affichage.hideSelector(form, '#error-geolocalisation')
+    toggleFormButtonOnSelectFieldsRequired(form, button.value, requiredLabel)
+    hideSelector(form, '#error-geolocalisation')
     form.querySelector('select').addEventListener('change', function () {
-        affichage.hideSelector(form, '#error-geolocalisation')
+        hideSelector(form, '#error-geolocalisation')
     })
     form.addEventListener('submit', function (event) {
         event.preventDefault()
@@ -34,16 +42,16 @@ function residence(form, app, router) {
     })
     document
         .getElementById('geolocalisation')
-        .addEventListener('click', geoloc.geolocalisation)
+        .addEventListener('click', geolocalisation)
 }
 
-function beforeFoyer(profil) {
+export function beforeFoyer(profil) {
     if (!profil.isResidenceComplete()) return 'residence'
 }
 
-function foyer(form, app, router) {
-    formUtils.preloadCheckboxForm(form, 'foyer_enfants', app.profil)
-    formUtils.preloadCheckboxForm(form, 'foyer_fragile', app.profil)
+export function foyer(form, app, router) {
+    preloadCheckboxForm(form, 'foyer_enfants', app.profil)
+    preloadCheckboxForm(form, 'foyer_fragile', app.profil)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.foyer_enfants = event.target.elements['foyer_enfants'].checked
@@ -53,26 +61,26 @@ function foyer(form, app, router) {
     })
 }
 
-function beforeAntecedents(profil) {
+export function beforeAntecedents(profil) {
     beforeFoyer(profil)
     if (!profil.isFoyerComplete()) return 'foyer'
 }
 
-function antecedents(form, app, router) {
+export function antecedents(form, app, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'antecedent_cardio', app.profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_diabete', app.profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_respi', app.profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_dialyse', app.profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_cancer', app.profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_immunodep', app.profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_cirrhose', app.profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_drepano', app.profil)
-    formUtils.preloadCheckboxForm(form, 'antecedent_chronique_autre', app.profil)
+    preloadCheckboxForm(form, 'antecedent_cardio', app.profil)
+    preloadCheckboxForm(form, 'antecedent_diabete', app.profil)
+    preloadCheckboxForm(form, 'antecedent_respi', app.profil)
+    preloadCheckboxForm(form, 'antecedent_dialyse', app.profil)
+    preloadCheckboxForm(form, 'antecedent_cancer', app.profil)
+    preloadCheckboxForm(form, 'antecedent_immunodep', app.profil)
+    preloadCheckboxForm(form, 'antecedent_cirrhose', app.profil)
+    preloadCheckboxForm(form, 'antecedent_drepano', app.profil)
+    preloadCheckboxForm(form, 'antecedent_chronique_autre', app.profil)
     const uncheckedLabel = app.profil.estMonProfil()
         ? 'Aucun de ces éléments ne correspond à ma situation'
         : 'Aucun de ces éléments ne correspond à sa situation'
-    formUtils.toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
+    toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.antecedent_cardio =
@@ -97,19 +105,19 @@ function antecedents(form, app, router) {
     })
 }
 
-function beforeCaracteristiques(profil) {
+export function beforeCaracteristiques(profil) {
     beforeAntecedents(profil)
     if (!profil.isAntecedentsComplete()) return 'antecedents'
 }
 
-function caracteristiques(form, app, router) {
+export function caracteristiques(form, app, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadForm(form, 'age', app.profil)
-    formUtils.preloadForm(form, 'taille', app.profil)
-    formUtils.preloadForm(form, 'poids', app.profil)
-    formUtils.preloadCheckboxForm(form, 'grossesse_3e_trimestre', app.profil)
+    preloadForm(form, 'age', app.profil)
+    preloadForm(form, 'taille', app.profil)
+    preloadForm(form, 'poids', app.profil)
+    preloadCheckboxForm(form, 'grossesse_3e_trimestre', app.profil)
     const requiredLabel = 'Les informations d’âge, de poids et de taille sont requises'
-    formUtils.toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)
+    toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.age = event.target.elements['age'].value
@@ -126,28 +134,28 @@ function caracteristiques(form, app, router) {
     })
 }
 
-function beforeActivitePro(profil) {
+export function beforeActivitePro(profil) {
     const target = beforeCaracteristiques(profil)
     if (target) return target
     if (profil.age < 15) return 'pediatrie'
     if (!profil.isCaracteristiquesComplete()) return 'caracteristiques'
 }
 
-function activitepro(form, app, router) {
+export function activitepro(form, app, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'activite_pro', app.profil)
-    formUtils.preloadCheckboxForm(form, 'activite_pro_public', app.profil)
-    formUtils.preloadCheckboxForm(form, 'activite_pro_sante', app.profil)
-    formUtils.preloadCheckboxForm(form, 'activite_pro_liberal', app.profil)
+    preloadCheckboxForm(form, 'activite_pro', app.profil)
+    preloadCheckboxForm(form, 'activite_pro_public', app.profil)
+    preloadCheckboxForm(form, 'activite_pro_sante', app.profil)
+    preloadCheckboxForm(form, 'activite_pro_liberal', app.profil)
     var primary = form.elements['activite_pro']
-    formUtils.enableOrDisableSecondaryFields(form, primary)
+    enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
-        formUtils.enableOrDisableSecondaryFields(form, primary)
+        enableOrDisableSecondaryFields(form, primary)
     })
     const uncheckedLabel = app.profil.estMonProfil()
         ? 'Je n’ai pas d’activité professionnelle ou bénévole'
         : 'Cette personne n’a pas d’activité professionnelle ou bénévole'
-    formUtils.toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
+    toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.activite_pro = event.target.elements['activite_pro'].checked
@@ -162,7 +170,7 @@ function activitepro(form, app, router) {
     })
 }
 
-function beforeSymptomesActuels(profil) {
+export function beforeSymptomesActuels(profil) {
     const target = beforeActivitePro(profil)
     if (target) return target
 
@@ -174,38 +182,29 @@ function beforeSymptomesActuels(profil) {
     if (!profil.isActiviteProComplete()) return 'activitepro'
 }
 
-function symptomesactuels(form, app, router) {
+export function symptomesactuels(form, app, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels', app.profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_temperature', app.profil)
-    formUtils.preloadCheckboxForm(
-        form,
-        'symptomes_actuels_temperature_inconnue',
-        app.profil
-    )
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_toux', app.profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_odorat', app.profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_douleurs', app.profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_diarrhee', app.profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_fatigue', app.profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_alimentation', app.profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_souffle', app.profil)
-    formUtils.preloadCheckboxForm(form, 'symptomes_actuels_autre', app.profil)
+    preloadCheckboxForm(form, 'symptomes_actuels', app.profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_temperature', app.profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_temperature_inconnue', app.profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_toux', app.profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_odorat', app.profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_douleurs', app.profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_diarrhee', app.profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_fatigue', app.profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_alimentation', app.profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_souffle', app.profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_autre', app.profil)
     var primary = form.elements['symptomes_actuels']
-    formUtils.enableOrDisableSecondaryFields(form, primary)
+    enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
-        formUtils.enableOrDisableSecondaryFields(form, primary)
+        enableOrDisableSecondaryFields(form, primary)
     })
     const uncheckedLabel = app.profil.estMonProfil()
         ? 'Je n’ai pas de symptômes actuellement'
         : 'Cette personne n’a pas de symptômes actuellement'
     const requiredLabel = 'Vous devez saisir l’un des sous-choix proposés'
-    formUtils.toggleFormButtonOnCheckRequired(
-        form,
-        button.value,
-        uncheckedLabel,
-        requiredLabel
-    )
+    toggleFormButtonOnCheckRequired(form, button.value, uncheckedLabel, requiredLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.symptomes_actuels =
@@ -254,7 +253,7 @@ function symptomesactuels(form, app, router) {
     })
 }
 
-function beforeSymptomesPasses(profil) {
+export function beforeSymptomesPasses(profil) {
     const target = beforeSymptomesActuels(profil)
     if (target) return target
     if (!profil.isSymptomesActuelsComplete()) return 'symptomesactuels'
@@ -262,13 +261,13 @@ function beforeSymptomesPasses(profil) {
         return 'conseils'
 }
 
-function symptomespasses(form, app, router) {
+export function symptomespasses(form, app, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'symptomes_passes', app.profil)
+    preloadCheckboxForm(form, 'symptomes_passes', app.profil)
     const uncheckedLabel = app.profil.estMonProfil()
         ? 'Je n’ai pas eu de symptômes dans les 14 derniers jours'
         : 'Cette personne n’a pas eu de symptômes dans les 14 derniers jours'
-    formUtils.toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
+    toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.symptomes_passes = event.target.elements['symptomes_passes'].checked
@@ -291,29 +290,29 @@ function symptomespasses(form, app, router) {
     })
 }
 
-function beforeContactARisque(profil) {
+export function beforeContactARisque(profil) {
     const target = beforeSymptomesPasses(profil)
     if (target) return target
     if (!profil.isSymptomesPassesComplete()) return 'symptomespasses'
     if (profil.symptomes_passes === true) return 'conseils'
 }
 
-function contactarisque(form, app, router) {
+export function contactarisque(form, app, router) {
     var button = form.querySelector('input[type=submit]')
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque', app.profil)
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_lieu_de_vie', app.profil)
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_contact_direct', app.profil)
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_actes', app.profil)
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_espace_confine', app.profil)
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_meme_classe', app.profil)
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_stop_covid', app.profil)
-    formUtils.preloadCheckboxForm(form, 'contact_a_risque_autre', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_meme_lieu_de_vie', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_contact_direct', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_actes', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_espace_confine', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_meme_classe', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_stop_covid', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_autre', app.profil)
     var primary = form.elements['contact_a_risque']
-    formUtils.enableOrDisableSecondaryFields(form, primary)
+    enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
-        formUtils.enableOrDisableSecondaryFields(form, primary)
+        enableOrDisableSecondaryFields(form, primary)
     })
-    formUtils.toggleFormButtonOnCheckRequired(
+    toggleFormButtonOnCheckRequired(
         form,
         button.value,
         'Terminer',
@@ -339,23 +338,4 @@ function contactarisque(form, app, router) {
         app.enregistrerProfilActuel()
         router.navigate('conseils')
     })
-}
-
-export default {
-    nom,
-    residence,
-    beforeFoyer,
-    foyer,
-    beforeAntecedents,
-    antecedents,
-    beforeCaracteristiques,
-    caracteristiques,
-    beforeActivitePro,
-    activitepro,
-    beforeSymptomesActuels,
-    symptomesactuels,
-    beforeSymptomesPasses,
-    symptomespasses,
-    beforeContactARisque,
-    contactarisque,
 }

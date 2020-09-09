@@ -1,5 +1,5 @@
 import { assert } from 'chai'
-import helpers from './helpers'
+import { remplirQuestionnaire } from './helpers.js'
 
 describe('Parcours', function () {
     it('titre de la page', async function () {
@@ -37,7 +37,7 @@ describe('Parcours', function () {
         }
 
         // Remplir le questionnaire
-        await helpers.remplirQuestionnaire(page, {
+        await remplirQuestionnaire(page, {
             departement: '80',
             activitePro: true,
             enfants: true,
@@ -114,7 +114,7 @@ describe('Parcours', function () {
         }
 
         // Remplir le questionnaire
-        await helpers.remplirQuestionnaire(page, {
+        await remplirQuestionnaire(page, {
             departement: '00',
             activitePro: true,
             enfants: true,
@@ -184,7 +184,7 @@ describe('Parcours', function () {
         }
 
         // Remplir le questionnaire
-        await helpers.remplirQuestionnaire(page, {
+        await remplirQuestionnaire(page, {
             departement: '80',
             activitePro: true,
             enfants: true,
@@ -251,7 +251,7 @@ describe('Parcours', function () {
         }
 
         // Remplir le questionnaire
-        await helpers.remplirQuestionnaire(page, {
+        await remplirQuestionnaire(page, {
             departement: '80',
             activitePro: true,
             enfants: true,
@@ -320,7 +320,7 @@ describe('Parcours', function () {
         }
 
         // Remplir le questionnaire
-        await helpers.remplirQuestionnaire(page, {
+        await remplirQuestionnaire(page, {
             departement: '80',
             activitePro: true,
             enfants: true,

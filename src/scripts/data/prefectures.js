@@ -1,4 +1,4 @@
-const prefectures = {
+export default {
     '01': 'http://www.ain.gouv.fr/coronavirus-covid-19-r1627.html',
     '02':
         'https://www.aisne.gouv.fr/Actualites/COVID-19-point-sur-la-situation-dans-l-Aisne',
@@ -169,4 +169,3 @@ const prefectures = {
     '977': 'http://www.saint-barth-saint-martin.gouv.fr/',
     '978': 'http://www.saint-barth-saint-martin.gouv.fr/',
 }
-module.exports = { prefectures }

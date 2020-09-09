@@ -1,8 +1,8 @@
 import { assert } from 'chai'
 
-import { AlgorithmeSuivi } from '../algorithme/suivi'
+import AlgorithmeSuivi from '../algorithme/suivi.js'
 
-import Profil from '../profil'
+import Profil from '../profil.js'
 var profil = new Profil('mes_infos')
 
 describe('Algorithme auto-suivi', function () {
