@@ -2,7 +2,7 @@ name: Mettre à jour les données quotidiennement
 
 on:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '15 11 * * *'
 
 jobs:
   update-incidence:
@@ -31,6 +31,12 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
+          title: Mise à jour des valeurs d’incidence
+          body: |
+            Mise jour automatique des valeurs d’incidence à partir des données
+            publiées par Santé Publique France sur
+            https://www.data.gouv.fr/fr/datasets/taux-dincidence-de-lepidemie-de-covid-19/
+            (fichier CSV `sp-pe-std-quot-dep`)
           commit-message: Mise à jour des valeurs d’incidence
 
   update-prefectures:
@@ -59,4 +65,9 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          commit-message: Mise à jour des liens vers les préfectures
+          title: Mise à jour des liens vers les consignes préfectorales
+          body: |
+            Mise jour automatique des liens vers les consignes préfectorales
+            publiés par le Service d’Information du Gouvernement sur
+            https://www.data.gouv.fr/fr/datasets/liste-des-liens-url-redirigeant-vers-les-consignes-prefectorales-dans-le-cadre-du-covid-19/
+          commit-message: Mise à jour des liens vers les consignes préfectorales
