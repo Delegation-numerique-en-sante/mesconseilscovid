@@ -89,6 +89,71 @@ describe('Parcours', function () {
         }
     })
 
+    it('remplir le questionnaire classique puis médecine du travail', async function () {
+        const page = this.test.page
+
+        // On est redirigé vers l’introduction
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/#introduction' }),
+        ])
+
+        // Page d’accueil
+        {
+            let bouton = await page.waitForSelector('text="Démarrer"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Pour moi'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#residence' }),
+            ])
+        }
+
+        // Remplir le questionnaire
+        await remplirQuestionnaire(page, {
+            departement: '80',
+            activitePro: true,
+            enfants: true,
+            age: '42',
+            taille: '165',
+            poids: '70',
+            grossesse: false,
+            symptomesActuels: [],
+            symptomesPasses: false,
+        })
+
+        // Conseils
+        {
+            // On rend l’activité pro visible
+            await page.click('#page #conseils-activite h3')
+
+            // On peut aller vers la médecine du travail
+            let link = await page.waitForSelector(
+                '#page >> text="Conseils pour la médecine du travail"'
+            )
+            await Promise.all([
+                link.click(),
+                page.waitForNavigation({ url: '**/#medecinedutravail' }),
+            ])
+        }
+
+        // Médecine du travail
+        {
+            // La page comporte un lien direct de retour vers mes conseils
+            let link = await page.waitForSelector(
+                '#page >> text="Retourner à mes conseils"'
+            )
+            await Promise.all([
+                link.click(),
+                page.waitForNavigation({ url: '**/#conseils' }),
+            ])
+        }
+    })
+
     it('remplir le questionnaire avec département autre', async function () {
         const page = this.test.page
 
