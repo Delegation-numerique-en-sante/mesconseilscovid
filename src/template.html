@@ -1093,13 +1093,12 @@
     <div id="pediatrie-block" class="block">
         {{ meta_pédiatrie }}
         <div id="js-profil-full" class="form-controls" hidden>
-            <a class="button button-outline back-button button-full-width" href="#foyer">Modifier mes réponses</a>
-            <a class="button button-full-width" href="" id="mes-conseils-link">Retourner à mes conseils</a>
+            <a class="button button-outline back-button button-full-width" href="#residence">Modifier mes réponses</a>
+            <a class="button button-full-width" href="#conseils">Retourner à mes conseils</a>
         </div>
         <div id="js-profil-empty">
-            <a class="button button-full-width" href="#caracteristiques">Démarrer le questionnaire</a>
+            <a class="button button-full-width" href="#residence">Démarrer le questionnaire</a>
         </div>
-
     </div>
 </section>
 
@@ -1108,12 +1107,24 @@
         {{ meta_médecine_du_travail }}
         <div id="js-profil-full" class="form-controls" hidden>
             <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
-            <a class="button button-full-width" href="" id="mes-conseils-link">Retourner à mes conseils</a>
+            <a class="button button-full-width" href="#conseils">Retourner à mes conseils</a>
         </div>
         <div id="js-profil-empty">
             <a class="button button-full-width" href="#residence">Démarrer le questionnaire</a>
         </div>
+    </div>
+</section>
 
+<section id="conditionsutilisation" hidden>
+    <div id="conditions-utilisation-block" class="block">
+        {{ meta_conditions_utilisation }}
+        <div id="js-profil-full" class="form-controls" hidden>
+            <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
+            <a class="button button-full-width" href="#conseils">Retourner à mes conseils</a>
+        </div>
+        <div id="js-profil-empty">
+            <a class="button button-full-width" href="#residence">Démarrer le questionnaire</a>
+        </div>
     </div>
 </section>
 
@@ -1126,14 +1137,6 @@
     </div>
 </section>
 
-<section id="conditionsutilisation" hidden>
-    <div id="conditions-utilisation-block" class="block">
-        {{ meta_conditions_utilisation }}
-        <div>
-            <a class="button button-full-width" href="">Revenir au questionnaire</a>
-        </div>
-    </div>
-</section>
     <script async defer src="scripts/plausible.js"></script>
     <script type="text/javascript">
         if ('serviceWorker' in navigator) {

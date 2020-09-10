@@ -451,7 +451,7 @@ describe('Parcours', function () {
             // On retrouve le bouton pour repartir vers le questionnaire
             let button = await page.waitForSelector('#page #js-profil-empty a')
             assert.equal((await button.innerText()).trim(), 'Démarrer le questionnaire')
-            assert.equal(await button.getAttribute('href'), '#caracteristiques')
+            assert.equal(await button.getAttribute('href'), '#residence')
         }
     })
 })
