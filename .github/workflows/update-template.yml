@@ -1,0 +1,37 @@
+name: Mettre à jour le template et les fichiers README.md
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  update-template-and-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install Python dependencies
+        run: |
+          make install-python
+
+      - name: Rebuild template and README files
+        run: |
+          python3 build.py all
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: Mise à jour du template et des fichiers README
+          body: |
+            Mise jour automatique du template et des fichiers README
+            en fonction des changements apportés aux contenus.
+          commit-message: Mise à jour du template et des fichiers README
+          branch: update-template-and-readme
+          delete-branch: true
