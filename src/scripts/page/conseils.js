@@ -7,32 +7,15 @@ import {
     showMeOrThem,
 } from '../affichage.js'
 import * as injection from '../injection.js'
-import * as questionnaire from './questionnaire.js'
+import { beforeTest } from './questionnaire.js'
 
 import AlgorithmeOrientation from '../algorithme/orientation.js'
 import AlgorithmeSuivi from '../algorithme/suivi.js'
 
 export function before(profil) {
-    if (profil.isContactARisqueComplete()) {
-        return questionnaire.beforeContactARisque(profil)
-    } else if (profil.isSymptomesPassesComplete()) {
-        if (profil.symptomes_passes === false) {
-            return 'contactarisque'
-        } else {
-            return questionnaire.beforeSymptomesPasses(profil)
-        }
-    } else if (profil.isSymptomesActuelsComplete()) {
-        if (
-            profil.symptomes_actuels === false ||
-            profil.symptomes_actuels_autre === true
-        ) {
-            return 'symptomespasses'
-        } else {
-            return questionnaire.beforeSymptomesActuels(profil)
-        }
-    } else {
-        return questionnaire.beforeSymptomesActuels(profil) || 'symptomesactuels'
-    }
+    const target = beforeTest(profil)
+    if (target) return target
+    if (!profil.isTestComplete()) return 'test'
 }
 
 export function page(element, app) {

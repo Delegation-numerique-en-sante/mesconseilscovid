@@ -755,3 +755,23 @@ Des personnes croisées dans l’espace public de manière fugace ne sont pas co
 <!---->Son état ces 14 derniers jours
 
 
+
+## [question_test_libellé.md](question_test_libellé.md)
+
+<!----><span class="nouveau">nouveau</span> J’ai déjà réalisé un test de Covid-19
+
+---
+
+<!----><span class="nouveau">nouveau</span> Cette personne a déjà réalisé un test de Covid-19
+
+
+
+## [question_test_titre.md](question_test_titre.md)
+
+<!---->Mon test
+
+---
+
+<!---->Son test
+
+

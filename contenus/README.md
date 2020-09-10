@@ -296,6 +296,13 @@ Conseils :
 6. [Conseils d’ordre général](#conseils-dordre-général)
 
 
+#### Test
+
+[Titre](questions/question_test_titre.md)
+
+Question : [libellé](questions/question_test_libellé.md)
+
+
 ### Auto-suivi
 
 #### Suivi médecin

@@ -241,11 +241,7 @@ export function symptomesactuels(form, app, router) {
             app.profil.contact_a_risque_stop_covid = undefined
             app.profil.contact_a_risque_autre = undefined
             app.enregistrerProfilActuel()
-            if (app.profil.symptomes_start_date) {
-                router.navigate('suiviintroduction')
-            } else {
-                router.navigate('suivimedecin')
-            }
+            router.navigate('test')
         } else {
             app.enregistrerProfilActuel()
             router.navigate('symptomespasses')
@@ -257,8 +253,9 @@ export function beforeSymptomesPasses(profil) {
     const target = beforeSymptomesActuels(profil)
     if (target) return target
     if (!profil.isSymptomesActuelsComplete()) return 'symptomesactuels'
-    if (profil.symptomes_actuels === true && profil.symptomes_actuels_autre === false)
-        return 'conseils'
+    if (profil.symptomes_actuels === true && profil.symptomes_actuels_autre === false) {
+        return typeof profil.test === 'undefined' ? 'test' : 'conseils'
+    }
 }
 
 export function symptomespasses(form, app, router) {
@@ -282,7 +279,7 @@ export function symptomespasses(form, app, router) {
             app.profil.contact_a_risque_stop_covid = undefined
             app.profil.contact_a_risque_autre = undefined
             app.enregistrerProfilActuel()
-            router.navigate('conseils')
+            router.navigate('test')
         } else {
             app.enregistrerProfilActuel()
             router.navigate('contactarisque')
@@ -294,7 +291,9 @@ export function beforeContactARisque(profil) {
     const target = beforeSymptomesPasses(profil)
     if (target) return target
     if (!profil.isSymptomesPassesComplete()) return 'symptomespasses'
-    if (profil.symptomes_passes === true) return 'conseils'
+    if (profil.symptomes_passes === true) {
+        return typeof profil.test === 'undefined' ? 'test' : 'conseils'
+    }
 }
 
 export function contactarisque(form, app, router) {
@@ -312,10 +311,13 @@ export function contactarisque(form, app, router) {
     primary.addEventListener('click', function () {
         enableOrDisableSecondaryFields(form, primary)
     })
+    const uncheckedLabel = app.profil.estMonProfil()
+        ? 'Je n’ai pas eu de contact à risque'
+        : 'Cette personne n’a pas eu de contact à risque'
     toggleFormButtonOnCheckRequired(
         form,
         button.value,
-        'Terminer',
+        uncheckedLabel,
         'Vous devez saisir l’un des sous-choix proposés'
     )
     form.addEventListener('submit', function (event) {
@@ -335,7 +337,63 @@ export function contactarisque(form, app, router) {
             event.target.elements['contact_a_risque_stop_covid'].checked
         app.profil.contact_a_risque_autre =
             event.target.elements['contact_a_risque_autre'].checked
+        if (app.profil.contact_a_risque) {
+            app.enregistrerProfilActuel()
+            router.navigate('test')
+        } else {
+            app.profil.test = false
+            app.enregistrerProfilActuel()
+            router.navigate('conseils')
+        }
+    })
+}
+
+export function beforeTest(profil) {
+    let target
+    if (profil.isContactARisqueComplete()) {
+        target = beforeContactARisque(profil)
+    } else if (profil.isSymptomesPassesComplete()) {
+        if (profil.symptomes_passes === false) {
+            target = 'contactarisque'
+        } else {
+            target = beforeSymptomesPasses(profil)
+        }
+    } else if (profil.isSymptomesActuelsComplete()) {
+        if (
+            profil.symptomes_actuels === false ||
+            profil.symptomes_actuels_autre === true
+        ) {
+            target = 'symptomespasses'
+        } else {
+            target = beforeSymptomesActuels(profil)
+        }
+    } else {
+        target = beforeSymptomesActuels(profil) || 'symptomesactuels'
+    }
+    return target
+}
+
+export function test(form, app, router) {
+    var button = form.querySelector('input[type=submit]')
+    preloadCheckboxForm(form, 'test', app.profil)
+    const uncheckedLabel = app.profil.estMonProfil()
+        ? 'Je n’ai pas réalisé de test'
+        : 'Cette personne n’a pas réalisé de test'
+    toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+        app.profil.test = event.target.elements['test'].checked
         app.enregistrerProfilActuel()
-        router.navigate('conseils')
+        let target
+        if (app.profil.symptomes_actuels) {
+            if (app.profil.symptomes_start_date) {
+                target = 'suiviintroduction'
+            } else {
+                target = 'suivimedecin'
+            }
+        } else {
+            target = 'conseils'
+        }
+        router.navigate(target)
     })
 }

@@ -229,6 +229,7 @@ main footer .legals {
 #symptomes-actuels-form,
 #symptomes-passes-form,
 #contact-a-risque-form,
+#test-form,
 #suivi-medecin-form,
 #suivi-date-form,
 #suivi-symptomes-form {
@@ -266,6 +267,7 @@ main footer .legals {
     #symptomes-actuels-form,
     #symptomes-passes-form,
     #contact-a-risque-form,
+    #test-form,
     #suivi-medecin-form,
     #suivi-date-form,
     #suivi-symptomes-form {
@@ -342,6 +344,9 @@ main footer .legals {
 #conseils-block.contact-a-risque h2.with-illustration,
 #contact-a-risque-form {
     background-image: url('illustrations/contactarisque.svg');
+}
+#test-form {
+    background-image: url('illustrations/test.svg');
 }
 
 .conseils {

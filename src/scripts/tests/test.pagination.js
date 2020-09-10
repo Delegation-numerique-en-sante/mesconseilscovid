@@ -446,7 +446,7 @@ describe('Pagination', function () {
             })
             assert.isUndefined(questionnaire.beforeSymptomesPasses(profil))
         })
-        it('redirige vers conseils si réponse positive à la 6', function () {
+        it('redirige vers test si réponse positive à la 6', function () {
             const profil = new Profil()
             profil.fillData({
                 departement: '80',
@@ -469,7 +469,7 @@ describe('Pagination', function () {
                 symptomes_actuels: true,
                 symptomes_actuels_autre: false,
             })
-            assert.strictEqual(questionnaire.beforeSymptomesPasses(profil), 'conseils')
+            assert.strictEqual(questionnaire.beforeSymptomesPasses(profil), 'test')
         })
     })
 
@@ -578,7 +578,7 @@ describe('Pagination', function () {
             })
             assert.isUndefined(questionnaire.beforeContactARisque(profil))
         })
-        it('redirige vers conseils si réponse positive à la 6', function () {
+        it('redirige vers test si réponse positive à la 6', function () {
             const profil = new Profil()
             profil.fillData({
                 departement: '80',
@@ -601,9 +601,9 @@ describe('Pagination', function () {
                 symptomes_actuels: true,
                 symptomes_actuels_autre: false,
             })
-            assert.strictEqual(questionnaire.beforeContactARisque(profil), 'conseils')
+            assert.strictEqual(questionnaire.beforeContactARisque(profil), 'test')
         })
-        it('redirige vers conseils si réponse positive à la 7', function () {
+        it('redirige vers test si réponse positive à la 7', function () {
             const profil = new Profil()
             profil.fillData({
                 departement: '80',
@@ -626,7 +626,208 @@ describe('Pagination', function () {
                 symptomes_actuels: false,
                 symptomes_passes: true,
             })
-            assert.strictEqual(questionnaire.beforeContactARisque(profil), 'conseils')
+            assert.strictEqual(questionnaire.beforeContactARisque(profil), 'test')
+        })
+    })
+
+    describe('Mon test', function () {
+        it('ok d’aller au test si toutes les réponses', function () {
+            const profil = new Profil()
+            profil.fillData({
+                departement: '80',
+                foyer_enfants: false,
+                foyer_fragile: false,
+                antecedent_cardio: false,
+                antecedent_diabete: false,
+                antecedent_respi: false,
+                antecedent_dialyse: false,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                age: 42,
+                grossesse_3e_trimestre: false,
+                poids: 80,
+                taille: 180,
+                activite_pro: false,
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+            })
+            assert.isUndefined(questionnaire.beforeTest(profil))
+        })
+        it('redirige vers question 8 si réponse manquante', function () {
+            const profil = new Profil()
+            profil.fillData({
+                departement: '80',
+                foyer_enfants: false,
+                foyer_fragile: false,
+                antecedent_cardio: false,
+                antecedent_diabete: false,
+                antecedent_respi: false,
+                antecedent_dialyse: false,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                age: 42,
+                grossesse_3e_trimestre: false,
+                poids: 80,
+                taille: 180,
+                activite_pro: false,
+                symptomes_actuels: false,
+                symptomes_passes: false,
+            })
+            assert.strictEqual(questionnaire.beforeTest(profil), 'contactarisque')
+        })
+        it('redirige vers question 7 si réponse manquante', function () {
+            const profil = new Profil()
+            profil.fillData({
+                departement: '80',
+                foyer_enfants: false,
+                foyer_fragile: false,
+                antecedent_cardio: false,
+                antecedent_diabete: false,
+                antecedent_respi: false,
+                antecedent_dialyse: false,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                age: 42,
+                grossesse_3e_trimestre: false,
+                poids: 80,
+                taille: 180,
+                activite_pro: false,
+                symptomes_actuels: false,
+            })
+            assert.strictEqual(questionnaire.beforeTest(profil), 'symptomespasses')
+        })
+        it('redirige vers question 7 si symptômes actuels autres', function () {
+            const profil = new Profil()
+            profil.fillData({
+                departement: '80',
+                foyer_enfants: false,
+                foyer_fragile: false,
+                antecedent_cardio: false,
+                antecedent_diabete: false,
+                antecedent_respi: false,
+                antecedent_dialyse: false,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                age: 42,
+                grossesse_3e_trimestre: false,
+                poids: 80,
+                taille: 180,
+                activite_pro: false,
+                symptomes_actuels: true,
+                symptomes_actuels_autre: true,
+            })
+            assert.strictEqual(questionnaire.beforeTest(profil), 'symptomespasses')
+        })
+        it('redirige vers question 6 si réponse manquante', function () {
+            const profil = new Profil()
+            profil.fillData({
+                departement: '80',
+                foyer_enfants: false,
+                foyer_fragile: false,
+                antecedent_cardio: false,
+                antecedent_diabete: false,
+                antecedent_respi: false,
+                antecedent_dialyse: false,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                age: 42,
+                grossesse_3e_trimestre: false,
+                poids: 80,
+                taille: 180,
+                activite_pro: false,
+            })
+            assert.strictEqual(questionnaire.beforeTest(profil), 'symptomesactuels')
+        })
+        it('redirige vers pediatrie si age < 15', function () {
+            const profil = new Profil()
+            profil.fillData({
+                departement: '80',
+                foyer_enfants: false,
+                foyer_fragile: false,
+                antecedent_cardio: false,
+                antecedent_diabete: false,
+                antecedent_respi: false,
+                antecedent_dialyse: false,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                age: 12,
+                grossesse_3e_trimestre: false,
+                poids: 80,
+                taille: 180,
+                activite_pro: false,
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+            })
+            assert.strictEqual(questionnaire.beforeTest(profil), 'pediatrie')
+        })
+        it('ok d’aller aux tests si symptômes actuels', function () {
+            const profil = new Profil()
+            profil.fillData({
+                departement: '80',
+                foyer_enfants: false,
+                foyer_fragile: false,
+                antecedent_cardio: false,
+                antecedent_diabete: false,
+                antecedent_respi: false,
+                antecedent_dialyse: false,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                age: 42,
+                grossesse_3e_trimestre: false,
+                poids: 80,
+                taille: 180,
+                activite_pro: false,
+                symptomes_actuels: true,
+            })
+            assert.isUndefined(questionnaire.beforeTest(profil))
+        })
+        it('ok d’aller aux tests si symptômes passés', function () {
+            const profil = new Profil()
+            profil.fillData({
+                departement: '80',
+                foyer_enfants: false,
+                foyer_fragile: false,
+                antecedent_cardio: false,
+                antecedent_diabete: false,
+                antecedent_respi: false,
+                antecedent_dialyse: false,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                age: 42,
+                grossesse_3e_trimestre: false,
+                poids: 80,
+                taille: 180,
+                activite_pro: false,
+                symptomes_actuels: false,
+                symptomes_passes: true,
+            })
+            assert.isUndefined(questionnaire.beforeTest(profil))
         })
     })
 
@@ -654,34 +855,11 @@ describe('Pagination', function () {
                 symptomes_actuels: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
+                test: false,
             })
             assert.isUndefined(conseils.before(profil))
         })
-        it('ok d’aller aux conseils si symptômes actuels', function () {
-            const profil = new Profil()
-            profil.fillData({
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
-                symptomes_actuels: true,
-            })
-            assert.isUndefined(conseils.before(profil))
-        })
-        it('ok d’aller aux conseils si symptômes passés', function () {
+        it('redirige vers question 9 si réponse manquante', function () {
             const profil = new Profil()
             profil.fillData({
                 departement: '80',
@@ -702,9 +880,10 @@ describe('Pagination', function () {
                 taille: 180,
                 activite_pro: false,
                 symptomes_actuels: false,
-                symptomes_passes: true,
+                symptomes_passes: false,
+                contact_a_risque: false,
             })
-            assert.isUndefined(conseils.before(profil))
+            assert.strictEqual(conseils.before(profil), 'test')
         })
         it('redirige vers question 8 si réponse manquante', function () {
             const profil = new Profil()
@@ -875,6 +1054,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
+                test: false,
             })
             assert.isUndefined(suiviintroduction.before(profil))
         })
@@ -918,6 +1098,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
+                test: false,
             })
             assert.isUndefined(suiviintroduction.before(profil))
         })
@@ -964,6 +1145,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
+                test: false,
             })
             assert.isUndefined(suiviintroduction.before(profil))
         })
@@ -1010,6 +1192,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
+                test: false,
             })
             assert.isUndefined(suiviintroduction.before(profil))
         })
@@ -1056,6 +1239,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
+                test: false,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
             assert.isUndefined(suiviintroduction.before(profil))
@@ -1103,6 +1287,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
+                test: false,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
                 suivi: [{ foo: 'bar' }, { baz: 'quux' }],
             })
@@ -1151,6 +1336,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
+                test: false,
             })
             assert.strictEqual(suivisymptomes.before(profil), 'suividate')
         })

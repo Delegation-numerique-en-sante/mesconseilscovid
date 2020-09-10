@@ -47,6 +47,8 @@ describe('Profils', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            contactARisque: [],
+            test: false,
         })
 
         // Conseils

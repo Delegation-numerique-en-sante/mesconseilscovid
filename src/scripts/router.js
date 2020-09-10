@@ -168,6 +168,21 @@ export function initRouter(app) {
             }
         )
         .on(
+            new RegExp('^test$'),
+            function () {
+                var pageName = 'test'
+                var form = loadPage(pageName, app)
+                questionnaire.test(form, app, router)
+            },
+            {
+                before: function (done) {
+                    const target = questionnaire.beforeTest(app.profil)
+                    if (target) router.navigate(target)
+                    done()
+                },
+            }
+        )
+        .on(
             new RegExp('^conseils$'),
             function () {
                 var pageName = 'conseils'

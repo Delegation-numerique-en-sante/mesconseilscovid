@@ -9,19 +9,26 @@ export async function remplirQuestionnaire(page, choix) {
     if (choix.symptomesActuels.length === 0) {
         await remplirSymptomesPasses(page, choix.symptomesPasses)
         if (choix.symptomesPasses === false) {
-            await remplirContactsARisque(page)
+            await remplirContactsARisque(page, choix.contactARisque)
         }
+    }
+    if (
+        choix.symptomesActuels.length !== 0 ||
+        choix.symptomesPasses === true ||
+        choix.contactARisque.length !== 0
+    ) {
+        await remplirTest(page, choix.test, choix.symptomesActuels.length)
     }
 }
 
-// Questionnaire 1/8
+// Questionnaire 1/9
 async function remplirDepartement(page, departement) {
     await page.selectOption('#page select#departement', departement)
     let bouton = await page.waitForSelector('#page >> text="Continuer"')
     await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#foyer' })])
 }
 
-// Questionnaire 2/8
+// Questionnaire 2/9
 async function remplirFoyer(page, enfants) {
     if (enfants === true) {
         // Je n’arrive pas à cocher la case directement, alors je clique sur le label
@@ -39,7 +46,7 @@ async function remplirFoyer(page, enfants) {
     ])
 }
 
-// Questionnaire 3/8
+// Questionnaire 3/9
 async function remplirAntecedents(page) {
     // TODO: cocher les cases
     let bouton = await page.waitForSelector(
@@ -51,7 +58,7 @@ async function remplirAntecedents(page) {
     ])
 }
 
-// Questionnaire 4/8
+// Questionnaire 4/9
 async function remplirCaracteristiques(page, age, taille, poids) {
     await page.fill('#page #age', age)
     await page.fill('#page #taille', taille)
@@ -65,7 +72,7 @@ async function remplirCaracteristiques(page, age, taille, poids) {
     ])
 }
 
-// Questionnaire 5/8
+// Questionnaire 5/9
 async function remplirActivite(page, activitePro) {
     let label = await page.waitForSelector('#page label[for="activite_pro"]')
     let text
@@ -85,7 +92,7 @@ async function remplirActivite(page, activitePro) {
     ])
 }
 
-// Questionnaire 6/8
+// Questionnaire 6/9
 async function remplirSymptomesActuels(page, symptomesActuels) {
     let text
     let nextPage
@@ -102,7 +109,7 @@ async function remplirSymptomesActuels(page, symptomesActuels) {
             await label.click()
         })
         text = '"Continuer"'
-        nextPage = 'suivimedecin'
+        nextPage = 'test'
     } else {
         text = '/.* pas de symptômes actuellement/'
         nextPage = 'symptomespasses'
@@ -115,7 +122,7 @@ async function remplirSymptomesActuels(page, symptomesActuels) {
     ])
 }
 
-// Questionnaire 7/8
+// Questionnaire 7/9
 async function remplirSymptomesPasses(page, symptomesPasses) {
     let text
     let nextPage
@@ -124,8 +131,8 @@ async function remplirSymptomesPasses(page, symptomesPasses) {
         // Je n’arrive pas à cocher la case directement, alors je clique sur le label
         let label = await page.waitForSelector('#page label[for="symptomes_passes"]')
         await label.click()
-        text = '"Terminer"'
-        nextPage = 'conseils'
+        text = '"Continuer"'
+        nextPage = 'test'
     } else {
         text = '/.* pas eu de symptômes dans les 14 derniers jours/' // &nbsp; après le 14
         nextPage = 'contactarisque'
@@ -137,11 +144,61 @@ async function remplirSymptomesPasses(page, symptomesPasses) {
     ])
 }
 
-// Questionnaire 8/8
-async function remplirContactsARisque(page) {
-    // TODO: cocher la case
-    let bouton = await page.waitForSelector('#page >> text="Terminer"')
-    await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#conseils' })])
+// Questionnaire 8/9
+async function remplirContactsARisque(page, contactARisque) {
+    let text
+    let nextPage
+
+    if (contactARisque.length > 0) {
+        // Je n’arrive pas à cocher la case directement, alors je clique sur le label
+        let label = await page.waitForSelector('#page label[for="symptomes_actuels"]')
+        await label.click()
+
+        contactARisque.forEach(async (nom) => {
+            let label = await page.waitForSelector(
+                `#page label[for="contact_a_risque_${nom}"]`
+            )
+            await label.click()
+        })
+        text = '"Continuer"'
+        nextPage = 'test'
+    } else {
+        text = '/.* pas eu de contact à risque/'
+        nextPage = 'conseils'
+    }
+
+    let bouton = await page.waitForSelector(`#page >> text=${text}`)
+    await Promise.all([
+        bouton.click(),
+        page.waitForNavigation({ url: `**/#${nextPage}` }),
+    ])
+}
+
+// Questionnaire 9/9
+async function remplirTest(page, test, symptomesActuelsLength) {
+    let text
+    let nextPage
+
+    if (test === true) {
+        // Je n’arrive pas à cocher la case directement, alors je clique sur le label
+        let label
+        label = await page.waitForSelector('#page label[for="test"]')
+        await label.click()
+        text = 'Terminer'
+    } else {
+        text = '/.* pas réalisé de test/'
+    }
+    if (symptomesActuelsLength > 0) {
+        nextPage = 'suivimedecin'
+    } else {
+        nextPage = 'conseils'
+    }
+
+    let bouton = await page.waitForSelector(`#page >> text=${text}`)
+    await Promise.all([
+        bouton.click(),
+        page.waitForNavigation({ url: `**/#${nextPage}` }),
+    ])
 }
 
 export async function remplirSuivi(page, symptomes) {

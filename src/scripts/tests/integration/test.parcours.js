@@ -47,6 +47,8 @@ describe('Parcours', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            contactARisque: [],
+            test: false,
         })
 
         // Conseils
@@ -124,6 +126,8 @@ describe('Parcours', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            contactARisque: [],
+            test: false,
         })
 
         // Conseils
@@ -189,6 +193,8 @@ describe('Parcours', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            contactARisque: [],
+            test: false,
         })
 
         // Conseils
@@ -258,6 +264,9 @@ describe('Parcours', function () {
             poids: '70',
             grossesse: false,
             symptomesActuels: ['temperature'],
+            symptomesPasses: false,
+            contactARisque: [],
+            test: false,
         })
 
         // Avec des symptômes actuels on est redirigé vers le consentement médecin
@@ -325,6 +334,8 @@ describe('Parcours', function () {
             poids: '70',
             grossesse: false,
             symptomesActuels: ['souffle'],
+            contactARisque: [],
+            test: false,
         })
 
         // Avec des symptômes actuels on est redirigé vers le consentement médecin
@@ -395,6 +406,8 @@ describe('Parcours', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: true,
+            contactARisque: [],
+            test: false,
         })
 
         // Conseils
@@ -475,14 +488,14 @@ describe('Parcours', function () {
 
         // Conditions d’utilisation
         {
-            // On retrouve le titre explicite
-            let titre = await page.waitForSelector('#page h2')
-            assert.equal(await titre.innerText(), 'Conditions d’utilisation')
-
             // On retrouve le bouton pour repartir vers le questionnaire
             let button = await page.waitForSelector('#page #js-profil-empty a')
             assert.equal((await button.innerText()).trim(), 'Démarrer le questionnaire')
             assert.equal(await button.getAttribute('href'), '#residence')
+
+            // On retrouve le titre explicite
+            let titre = await page.waitForSelector('#page h2')
+            assert.equal(await titre.innerText(), 'Conditions d’utilisation')
         }
     })
 })

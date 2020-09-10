@@ -88,6 +88,7 @@ export default class Profil {
         this.contact_a_risque_meme_classe = undefined
         this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_autre = undefined
+        this.test = undefined
         this.suivi_active = undefined
         this.resetSuivi()
     }
@@ -135,6 +136,7 @@ export default class Profil {
         this.contact_a_risque_meme_classe = data['contact_a_risque_meme_classe']
         this.contact_a_risque_stop_covid = data['contact_a_risque_stop_covid']
         this.contact_a_risque_autre = data['contact_a_risque_autre']
+        this.test = data['test']
         this._suivi_start_date = data['_suivi_start_date']
         this._symptomes_start_date = data['_symptomes_start_date']
         this._deconfinement_date = data['_deconfinement_date']
@@ -185,6 +187,7 @@ export default class Profil {
             contact_a_risque_meme_classe: this.contact_a_risque_meme_classe,
             contact_a_risque_stop_covid: this.contact_a_risque_stop_covid,
             contact_a_risque_autre: this.contact_a_risque_autre,
+            test: this.test,
             suivi_active: this.suivi_active,
             _suivi_start_date: this._suivi_start_date,
             _symptomes_start_date: this._symptomes_start_date,
@@ -217,7 +220,8 @@ export default class Profil {
             typeof this.antecedent_chronique_autre === 'undefined' &&
             typeof this.symptomes_actuels === 'undefined' &&
             typeof this.symptomes_passes === 'undefined' &&
-            typeof this.contact_a_risque === 'undefined'
+            typeof this.contact_a_risque === 'undefined' &&
+            typeof this.test === 'undefined'
         )
     }
 
@@ -272,6 +276,10 @@ export default class Profil {
         return typeof this.contact_a_risque !== 'undefined'
     }
 
+    isTestComplete() {
+        return typeof this.test !== 'undefined'
+    }
+
     isComplete() {
         return (
             this.isResidenceComplete() &&
@@ -281,7 +289,8 @@ export default class Profil {
             this.isActiviteProComplete() &&
             this.isSymptomesActuelsComplete() &&
             this.isSymptomesPassesComplete() &&
-            this.isContactARisqueComplete()
+            this.isContactARisqueComplete() &&
+            this.isTestComplete()
         )
     }
 
