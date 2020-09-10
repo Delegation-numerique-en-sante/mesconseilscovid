@@ -38,6 +38,8 @@ jobs:
             https://www.data.gouv.fr/fr/datasets/taux-dincidence-de-lepidemie-de-covid-19/
             (fichier CSV `sp-pe-std-quot-dep`)
           commit-message: Mise à jour des valeurs d’incidence
+          branch: update-incidence
+          delete-branch: true
 
   update-prefectures:
     runs-on: ubuntu-latest
@@ -71,3 +73,5 @@ jobs:
             publiés par le Service d’Information du Gouvernement sur
             https://www.data.gouv.fr/fr/datasets/liste-des-liens-url-redirigeant-vers-les-consignes-prefectorales-dans-le-cadre-du-covid-19/
           commit-message: Mise à jour des liens vers les consignes préfectorales
+          branch: update-prefectures
+          delete-branch: true
