@@ -263,8 +263,6 @@ export function initRouter(app) {
             if (app.profil.isComplete()) {
                 showElement(element.querySelector('#js-profil-full'))
                 hideElement(element.querySelector('#js-profil-empty'))
-                var mesConseilsLink = element.querySelector('#mes-conseils-link')
-                mesConseilsLink.setAttribute('href', '#conseils')
             }
         })
         .on(new RegExp('^medecinedutravail$'), function () {
@@ -273,13 +271,15 @@ export function initRouter(app) {
             if (app.profil.isComplete()) {
                 showElement(element.querySelector('#js-profil-full'))
                 hideElement(element.querySelector('#js-profil-empty'))
-                var mesConseilsLink = element.querySelector('#mes-conseils-link')
-                mesConseilsLink.setAttribute('href', '#conseils')
             }
         })
         .on(new RegExp('^conditionsutilisation$'), function () {
             var pageName = 'conditionsutilisation'
-            loadPage(pageName)
+            var element = loadPage(pageName)
+            if (app.profil.isComplete()) {
+                showElement(element.querySelector('#js-profil-full'))
+                hideElement(element.querySelector('#js-profil-empty'))
+            }
         })
         .on(new RegExp('^nouvelleversiondisponible$'), function () {
             const route = router.lastRouteResolved()
