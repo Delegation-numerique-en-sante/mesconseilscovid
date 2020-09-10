@@ -485,35 +485,4 @@ describe('Parcours', function () {
             assert.equal(await button.getAttribute('href'), '#residence')
         }
     })
-
-    it('on peut accéder aux CGU depuis l’accueil', async function () {
-        const page = this.test.page
-
-        // On est redirigé vers l’introduction
-        await Promise.all([
-            page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
-        ])
-
-        // On va vers la page de CGU
-        {
-            let bouton = await page.waitForSelector('text="Conditions d’utilisation"')
-            await Promise.all([
-                bouton.click(),
-                page.waitForNavigation({ url: '**/#conditionsutilisation' }),
-            ])
-        }
-
-        // Conditions d’utilisation
-        {
-            // On retrouve le titre explicite
-            let titre = await page.waitForSelector('#page h2')
-            assert.equal(await titre.innerText(), 'Conditions d’utilisation')
-
-            // On retrouve le bouton pour repartir vers le questionnaire
-            let button = await page.waitForSelector('#page #js-profil-empty a')
-            assert.equal((await button.innerText()).trim(), 'Démarrer le questionnaire')
-            assert.equal(await button.getAttribute('href'), '#residence')
-        }
-    })
 })
