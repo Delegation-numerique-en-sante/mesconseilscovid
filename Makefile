@@ -38,8 +38,14 @@ else
 script_flags =
 endif
 
+ifdef cover
+	coverage = :coverage
+else
+	coverage =
+endif
+
 test-unit:  ## Run JS unit tests.
-	npm run-script test:coverage $(script_flags)
+	npm run-script test$(coverage) $(script_flags)
 
 test-integration: build  ## Run JS browser tests.
 ifdef browser

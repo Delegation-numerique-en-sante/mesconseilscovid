@@ -40,7 +40,7 @@ jobs:
 
       - name: Run unit tests
         run: |
-          npm run-script test
+          npm run-script test:coverage
 
       - name: Run browser tests (chromium)
         run: |
