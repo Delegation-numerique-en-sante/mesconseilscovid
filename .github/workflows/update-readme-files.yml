@@ -1,4 +1,4 @@
-name: Mettre à jour le template et les fichiers README.md
+name: Mettre à jour les fichiers README.md
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  update-template-and-readme:
+  update-readme-files:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,10 +28,10 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          title: Mise à jour du template et des fichiers README
+          title: Mise à jour des fichiers README
           body: |
-            Mise jour automatique du template et des fichiers README
+            Mise jour automatique des fichiers README
             en fonction des changements apportés aux contenus.
-          commit-message: Mise à jour du template et des fichiers README
-          branch: update-template-and-readme
+          commit-message: Mise à jour des fichiers README
+          branch: update-readme-files
           delete-branch: true
