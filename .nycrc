@@ -1,0 +1,16 @@
+{
+  "reporter": [
+    "text",
+    "text-summary"
+  ],
+  "include": [
+    "src/scripts/**/*.js"
+  ],
+  "exclude": [
+    "src/scripts/tests/**/*.js"
+  ],
+  "require": [
+  ],
+  "check-coverage": false,
+  "cache": true
+}

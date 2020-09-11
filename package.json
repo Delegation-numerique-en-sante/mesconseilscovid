@@ -9,6 +9,7 @@
     "jsdom": "^16.2.2",
     "mocha": "^8.0.1",
     "node-static": "^0.7.11",
+    "nyc": "^15.1.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-html-externals": "^0.2.0",
     "parcel-plugin-ogimage": "^1.2.0",
@@ -26,6 +27,7 @@
   },
   "scripts": {
     "test": "mocha --require @babel/register src/scripts/tests/",
+    "test:coverage": "nyc npm run test",
     "test-integration": "mocha --require @babel/register --bail --timeout 10000 src/scripts/tests/integration/",
     "lint": "eslint src/scripts/ src/service-worker.js",
     "prebuild": "rm -rf dist",
