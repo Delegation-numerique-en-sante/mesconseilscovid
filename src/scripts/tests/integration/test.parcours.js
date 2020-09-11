@@ -475,14 +475,13 @@ describe('Parcours', function () {
 
         // Conditions d’utilisation
         {
-            // On retrouve le titre explicite
-            let titre = await page.waitForSelector('#page h2')
-            assert.equal(await titre.innerText(), 'Conditions d’utilisation')
-
             // On retrouve le bouton pour repartir vers le questionnaire
             let button = await page.waitForSelector('#page #js-profil-empty a')
             assert.equal((await button.innerText()).trim(), 'Démarrer le questionnaire')
             assert.equal(await button.getAttribute('href'), '#residence')
+            // On retrouve le titre explicite
+            let titre = await page.waitForSelector('#page h2')
+            assert.equal(await titre.innerText(), 'Conditions d’utilisation')
         }
     })
 })
