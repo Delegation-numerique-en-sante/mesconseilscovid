@@ -49,7 +49,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.caracteristiquesARisques(
                 element.querySelector('#nom-caracteristiques-a-risques'),
                 algoOrientation
@@ -70,7 +70,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.caracteristiquesARisques(
                 element.querySelector('#nom-caracteristiques-a-risques'),
                 algoOrientation
@@ -92,7 +92,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.caracteristiquesARisques(
                 element.querySelector('#nom-caracteristiques-a-risques'),
                 algoOrientation
@@ -114,7 +114,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.caracteristiquesARisques(
                 element.querySelector('#nom-caracteristiques-a-risques'),
                 algoOrientation
@@ -137,7 +137,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.caracteristiquesARisques(
                 element.querySelector('#nom-caracteristiques-a-risques'),
                 algoOrientation
@@ -160,7 +160,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.caracteristiquesARisques(
                 element.querySelector('#nom-caracteristiques-a-risques'),
                 algoOrientation
@@ -183,7 +183,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.antecedents(
                 element.querySelector('#nom-antecedents'),
                 algoOrientation
@@ -204,7 +204,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.antecedents(
                 element.querySelector('#nom-antecedents'),
                 algoOrientation
@@ -226,7 +226,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.antecedents(
                 element.querySelector('#nom-antecedents'),
                 algoOrientation
@@ -250,7 +250,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
                 element.querySelector('#nom-symptomesactuels'),
                 algoOrientation
@@ -272,7 +272,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
                 element.querySelector('#nom-symptomesactuels'),
                 algoOrientation
@@ -294,7 +294,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
                 element.querySelector('#nom-symptomesactuels'),
                 algoOrientation
@@ -317,7 +317,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
                 element.querySelector('#nom-symptomesactuels'),
                 algoOrientation
@@ -339,7 +339,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
                 element.querySelector('#nom-symptomesactuels'),
                 algoOrientation
@@ -361,7 +361,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
                 element.querySelector('#nom-symptomesactuels'),
                 algoOrientation
@@ -383,7 +383,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
                 element.querySelector('#nom-symptomesactuels'),
                 algoOrientation
@@ -405,7 +405,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
                 element.querySelector('#nom-symptomesactuels'),
                 algoOrientation
@@ -427,7 +427,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
                 element.querySelector('#nom-symptomesactuels'),
                 algoOrientation
@@ -449,7 +449,7 @@ describe('Injection', function () {
             }
             profil.fillData(data)
 
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
                 element.querySelector('#nom-symptomesactuels'),
                 algoOrientation

@@ -9,6 +9,8 @@ import {
 import * as injection from '../injection.js'
 import * as questionnaire from './questionnaire.js'
 
+import incidenceParDepartement from '../data/incidence.js'
+
 import AlgorithmeOrientation from '../algorithme/orientation.js'
 import AlgorithmeSuivi from '../algorithme/suivi.js'
 
@@ -48,7 +50,7 @@ export function page(element, app) {
         element.querySelector('#conseils-block').classList.add(extraClass)
     }
 
-    var algoOrientation = new AlgorithmeOrientation(app.profil)
+    var algoOrientation = new AlgorithmeOrientation(app.profil, incidenceParDepartement)
 
     // Activer / désactiver l’auto-suivi pour ce profil ?
     if (algoOrientation.recommandeAutoSuivi() && !app.profil.suivi_active) {

@@ -1,12 +1,11 @@
-import incidence from '../data/incidence.js'
-
 export default class AlgorithmeOrientation {
-    constructor(profil) {
+    constructor(profil, incidenceParDepartement) {
         this.profil = profil
+        this.incidenceParDepartement = incidenceParDepartement
     }
 
     get incidence() {
-        return incidence[this.profil.departement]
+        return this.incidenceParDepartement[this.profil.departement]
     }
 
     get sup65() {

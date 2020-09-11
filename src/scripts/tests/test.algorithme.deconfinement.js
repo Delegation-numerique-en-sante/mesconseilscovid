@@ -20,7 +20,7 @@ describe('Algorithme déconfinement', function () {
         it('Faux si aujourd’hui', function () {
             const today = new Date()
             profil.symptomes_start_date = today
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -30,7 +30,7 @@ describe('Algorithme déconfinement', function () {
 
         it('Faux s’il y a 7 jours', function () {
             profil.symptomes_start_date = joursAvant(7)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -40,7 +40,7 @@ describe('Algorithme déconfinement', function () {
 
         it('Vrai s’il y a 9 jours', function () {
             profil.symptomes_start_date = joursAvant(9)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -57,7 +57,7 @@ describe('Algorithme déconfinement', function () {
             profil.fillData(data)
             const today = new Date()
             profil.symptomes_start_date = today
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -71,7 +71,7 @@ describe('Algorithme déconfinement', function () {
             }
             profil.fillData(data)
             profil.symptomes_start_date = joursAvant(9)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -85,7 +85,7 @@ describe('Algorithme déconfinement', function () {
             }
             profil.fillData(data)
             profil.symptomes_start_date = joursAvant(11)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -107,7 +107,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -124,7 +124,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -144,7 +144,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -161,7 +161,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -181,7 +181,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -202,7 +202,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -220,7 +220,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -239,7 +239,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -258,7 +258,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -277,7 +277,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -301,7 +301,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -325,7 +325,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -346,7 +346,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -365,7 +365,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -384,7 +384,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -402,7 +402,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -421,7 +421,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -440,7 +440,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -459,7 +459,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -483,7 +483,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -507,7 +507,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             }
             profil.fillData(data)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -542,7 +542,7 @@ describe('Algorithme déconfinement', function () {
             }
             profil.fillData(data)
             profil.symptomes_start_date = joursAvant(9)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -571,7 +571,7 @@ describe('Algorithme déconfinement', function () {
             }
             profil.fillData(data)
             profil.symptomes_start_date = joursAvant(9)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -598,7 +598,7 @@ describe('Algorithme déconfinement', function () {
             }
             profil.fillData(data)
             profil.symptomes_start_date = joursAvant(9)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -631,7 +631,7 @@ describe('Algorithme déconfinement', function () {
             }
             profil.fillData(data)
             profil.symptomes_start_date = joursAvant(8)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -664,7 +664,7 @@ describe('Algorithme déconfinement', function () {
             }
             profil.fillData(data)
             profil.symptomes_start_date = joursAvant(9)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -697,7 +697,7 @@ describe('Algorithme déconfinement', function () {
             }
             profil.fillData(data)
             profil.symptomes_start_date = joursAvant(9)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -733,7 +733,7 @@ describe('Algorithme déconfinement', function () {
             }
             profil.fillData(data)
             profil.symptomes_start_date = joursAvant(11)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -763,7 +763,7 @@ describe('Algorithme déconfinement', function () {
             }
             profil.fillData(data)
             profil.symptomes_start_date = joursAvant(11)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -791,7 +791,7 @@ describe('Algorithme déconfinement', function () {
             }
             profil.fillData(data)
             profil.symptomes_start_date = joursAvant(11)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -825,7 +825,7 @@ describe('Algorithme déconfinement', function () {
             }
             profil.fillData(data)
             profil.symptomes_start_date = joursAvant(10)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -859,7 +859,7 @@ describe('Algorithme déconfinement', function () {
             }
             profil.fillData(data)
             profil.symptomes_start_date = joursAvant(11)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
@@ -893,7 +893,7 @@ describe('Algorithme déconfinement', function () {
             }
             profil.fillData(data)
             profil.symptomes_start_date = joursAvant(11)
-            const algoOrientation = new AlgorithmeOrientation(profil)
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
             const algoDeconfinement = new AlgorithmeDeconfinement(
                 profil,
                 algoOrientation
