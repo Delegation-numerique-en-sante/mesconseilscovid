@@ -5,6 +5,7 @@ node_modules/
 src/index.html
 package-lock.json
 .cache
+.nyc_output
 __pycache__
 feedback/paper_key
 contenus/zoverride
