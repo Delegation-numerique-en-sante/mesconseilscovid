@@ -18,7 +18,7 @@ describe('Algorithme d’orientation', function () {
         it('Un profil sans risques affiche le statut par défaut', function () {
             var data = {}
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.strictEqual(algoOrientation.statut, 'peu-de-risques')
         })
 
@@ -27,7 +27,7 @@ describe('Algorithme d’orientation', function () {
                 foyer_fragile: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.strictEqual(algoOrientation.statut, 'foyer-fragile')
         })
 
@@ -36,7 +36,7 @@ describe('Algorithme d’orientation', function () {
                 antecedent_cardio: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.strictEqual(algoOrientation.statut, 'personne-fragile')
         })
 
@@ -46,7 +46,7 @@ describe('Algorithme d’orientation', function () {
                 foyer_fragile: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.strictEqual(algoOrientation.statut, 'personne-fragile')
         })
 
@@ -55,7 +55,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_actuels: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.strictEqual(algoOrientation.statut, 'symptomatique')
         })
 
@@ -65,7 +65,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_actuels_souffle: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.strictEqual(algoOrientation.statut, 'symptomatique-urgent')
         })
 
@@ -75,7 +75,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_actuels_autre: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.strictEqual(algoOrientation.statut, 'peu-de-risques')
         })
 
@@ -84,7 +84,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_passes: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.strictEqual(algoOrientation.statut, 'risque-eleve')
         })
 
@@ -93,7 +93,7 @@ describe('Algorithme d’orientation', function () {
                 contact_a_risque: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.strictEqual(algoOrientation.statut, 'risque-eleve')
         })
 
@@ -103,7 +103,7 @@ describe('Algorithme d’orientation', function () {
                 contact_a_risque_autre: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.strictEqual(algoOrientation.statut, 'peu-de-risques')
         })
     })
@@ -112,7 +112,7 @@ describe('Algorithme d’orientation', function () {
         it('Un profil sans risques n’affiche rien de particulier', function () {
             var data = {}
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(
                 algoOrientation.conseilsPersonnelsBlockNamesToDisplay(),
                 []
@@ -124,7 +124,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_actuels: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
                 'reponse-symptomes-actuels-symptomesactuelsreconnus',
@@ -142,7 +142,7 @@ describe('Algorithme d’orientation', function () {
                 age: 65,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
                 'reponse-symptomes-actuels-caracteristiques',
@@ -161,7 +161,7 @@ describe('Algorithme d’orientation', function () {
                 age: 65,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
                 'reponse-symptomes-actuels-caracteristiques',
@@ -180,7 +180,7 @@ describe('Algorithme d’orientation', function () {
                 age: 65,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
                 'reponse-symptomes-actuels-caracteristiques',
@@ -199,7 +199,7 @@ describe('Algorithme d’orientation', function () {
                 age: 50,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
                 'reponse-symptomes-actuels-caracteristiques',
@@ -216,7 +216,7 @@ describe('Algorithme d’orientation', function () {
                 age: 65,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
                 'reponse-symptomes-actuels-caracteristiques',
@@ -234,7 +234,7 @@ describe('Algorithme d’orientation', function () {
                 age: 65,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
                 'reponse-symptomes-actuels-caracteristiques',
@@ -251,7 +251,7 @@ describe('Algorithme d’orientation', function () {
                 age: 65,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
                 'reponse-symptomes-actuels-caracteristiques',
@@ -266,7 +266,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_actuels_alimentation: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
                 'reponse-symptomes-actuels-symptomesactuelsreconnus',
@@ -281,7 +281,7 @@ describe('Algorithme d’orientation', function () {
                 suivi: [{ foo: 'bar' }],
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
                 'reponse-symptomes-actuels-symptomesactuelsreconnus',
@@ -295,7 +295,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_actuels_autre: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(
                 algoOrientation.conseilsPersonnelsBlockNamesToDisplay(),
                 []
@@ -307,7 +307,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_passes: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-passes',
                 'conseils-personnels-symptomes-passes-sans-risques',
@@ -320,7 +320,7 @@ describe('Algorithme d’orientation', function () {
                 age: 65,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-passes',
                 'conseils-personnels-symptomes-passes-avec-risques',
@@ -333,7 +333,7 @@ describe('Algorithme d’orientation', function () {
                 foyer_fragile: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-passes',
                 'conseils-personnels-symptomes-passes-avec-risques',
@@ -345,7 +345,7 @@ describe('Algorithme d’orientation', function () {
                 contact_a_risque: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-contact-a-risque',
                 'conseils-personnels-contact-a-risque-default',
@@ -358,7 +358,7 @@ describe('Algorithme d’orientation', function () {
                 contact_a_risque_autre: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-contact-a-risque',
                 'conseils-personnels-contact-a-risque-autre',
@@ -369,10 +369,10 @@ describe('Algorithme d’orientation', function () {
     describe('Département', function () {
         it('Un département à circulation faible', function () {
             var data = {
-                departement: '23',
+                departement: '01',
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
             assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
                 'conseils-departement',
                 'conseils-departement-circulation-faible',
@@ -381,10 +381,10 @@ describe('Algorithme d’orientation', function () {
 
         it('Un département à circulation élevée', function () {
             var data = {
-                departement: '34',
+                departement: '01',
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 10.1 })
             assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
                 'conseils-departement',
                 'conseils-departement-circulation-elevee',
@@ -393,10 +393,10 @@ describe('Algorithme d’orientation', function () {
 
         it('Un département inconnu n’affiche pas la localisation', function () {
             var data = {
-                departement: '00',
+                departement: '01',
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [])
         })
 
@@ -406,17 +406,17 @@ describe('Algorithme d’orientation', function () {
                 symptomes_actuels: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
             assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [])
         })
 
         it('Un département + symptômes passés affiche la localisation', function () {
             var data = {
-                departement: '23',
+                departement: '01',
                 symptomes_passes: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
             assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
                 'conseils-departement',
                 'conseils-departement-circulation-faible',
@@ -425,11 +425,11 @@ describe('Algorithme d’orientation', function () {
 
         it('Un département + contact à risque affiche la localisation', function () {
             var data = {
-                departement: '23',
+                departement: '01',
                 contact_a_risque: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
             assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
                 'conseils-departement',
                 'conseils-departement-circulation-faible',
@@ -439,7 +439,7 @@ describe('Algorithme d’orientation', function () {
 
     describe('Activité pro', function () {
         it('Aucune activité pro n’affiche rien', function () {
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [])
         })
 
@@ -448,7 +448,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_actuels: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [])
         })
 
@@ -457,7 +457,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_passes: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [])
         })
 
@@ -466,7 +466,7 @@ describe('Algorithme d’orientation', function () {
                 contact_a_risque: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [])
         })
 
@@ -475,7 +475,7 @@ describe('Algorithme d’orientation', function () {
                 activite_pro: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
@@ -490,7 +490,7 @@ describe('Algorithme d’orientation', function () {
                 grossesse_3e_trimestre: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
@@ -506,7 +506,7 @@ describe('Algorithme d’orientation', function () {
                 activite_pro_public: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
@@ -521,7 +521,7 @@ describe('Algorithme d’orientation', function () {
                 activite_pro_sante: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
@@ -535,7 +535,7 @@ describe('Algorithme d’orientation', function () {
                 activite_pro_liberal: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
@@ -552,7 +552,7 @@ describe('Algorithme d’orientation', function () {
                 activite_pro_sante: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
@@ -569,7 +569,7 @@ describe('Algorithme d’orientation', function () {
                 activite_pro_liberal: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
@@ -590,7 +590,7 @@ describe('Algorithme d’orientation', function () {
         })
 
         it('Aucun risque foyer n’affiche rien', function () {
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [])
         })
 
@@ -599,7 +599,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_actuels: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [])
         })
 
@@ -608,7 +608,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_passes: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
                 'conseils-foyer',
                 'conseils-foyer-fragile-suivi',
@@ -620,7 +620,7 @@ describe('Algorithme d’orientation', function () {
                 contact_a_risque: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
                 'conseils-foyer',
                 'conseils-foyer-fragile-suivi',
@@ -632,7 +632,7 @@ describe('Algorithme d’orientation', function () {
                 foyer_enfants: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
                 'conseils-foyer',
                 'conseils-foyer-enfants',
@@ -644,7 +644,7 @@ describe('Algorithme d’orientation', function () {
                 foyer_fragile: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
                 'conseils-foyer',
                 'conseils-foyer-fragile',
@@ -657,7 +657,7 @@ describe('Algorithme d’orientation', function () {
                 foyer_fragile: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
                 'conseils-foyer',
                 'conseils-foyer-enfants-fragile',
@@ -667,7 +667,7 @@ describe('Algorithme d’orientation', function () {
 
     describe('Caractéristiques et antécédents', function () {
         it('Aucun antécédent n’affiche rien', function () {
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [])
         })
 
@@ -676,7 +676,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_actuels: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(
                 algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay(),
                 []
@@ -688,7 +688,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_passes: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(
                 algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay(),
                 []
@@ -700,7 +700,7 @@ describe('Algorithme d’orientation', function () {
                 contact_a_risque: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(
                 algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay(),
                 []
@@ -712,7 +712,7 @@ describe('Algorithme d’orientation', function () {
                 age: 65,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(
                 algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay(),
                 [
@@ -729,7 +729,7 @@ describe('Algorithme d’orientation', function () {
                 poids: 100,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(
                 algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay(),
                 [
@@ -745,7 +745,7 @@ describe('Algorithme d’orientation', function () {
                 grossesse_3e_trimestre: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(
                 algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay(),
                 [
@@ -762,7 +762,7 @@ describe('Algorithme d’orientation', function () {
                 antecedent_cardio: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(
                 algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay(),
                 [
@@ -780,7 +780,7 @@ describe('Algorithme d’orientation', function () {
                 activite_pro: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(
                 algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay(),
                 [
@@ -797,7 +797,7 @@ describe('Algorithme d’orientation', function () {
                 antecedent_chronique_autre: true,
             }
             profil.fillData(data)
-            var algoOrientation = new AlgorithmeOrientation(profil)
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(
                 algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay(),
                 [
