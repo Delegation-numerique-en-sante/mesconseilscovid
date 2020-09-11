@@ -657,6 +657,55 @@ describe('Pagination', function () {
             })
             assert.isUndefined(conseils.before(profil))
         })
+        it('ok d’aller aux conseils si symptômes actuels', function () {
+            const profil = new Profil()
+            profil.fillData({
+                departement: '80',
+                foyer_enfants: false,
+                foyer_fragile: false,
+                antecedent_cardio: false,
+                antecedent_diabete: false,
+                antecedent_respi: false,
+                antecedent_dialyse: false,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                age: 42,
+                grossesse_3e_trimestre: false,
+                poids: 80,
+                taille: 180,
+                activite_pro: false,
+                symptomes_actuels: true,
+            })
+            assert.isUndefined(conseils.before(profil))
+        })
+        it('ok d’aller aux conseils si symptômes passés', function () {
+            const profil = new Profil()
+            profil.fillData({
+                departement: '80',
+                foyer_enfants: false,
+                foyer_fragile: false,
+                antecedent_cardio: false,
+                antecedent_diabete: false,
+                antecedent_respi: false,
+                antecedent_dialyse: false,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                age: 42,
+                grossesse_3e_trimestre: false,
+                poids: 80,
+                taille: 180,
+                activite_pro: false,
+                symptomes_actuels: false,
+                symptomes_passes: true,
+            })
+            assert.isUndefined(conseils.before(profil))
+        })
         it('redirige vers question 8 si réponse manquante', function () {
             const profil = new Profil()
             profil.fillData({
