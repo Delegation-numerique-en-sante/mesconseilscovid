@@ -544,28 +544,6 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [])
         })
 
-        it('Symptômes passés affiche suivi', function () {
-            var profil = new Profil('mes_infos', {
-                symptomes_passes: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
-                'conseils-foyer',
-                'conseils-foyer-fragile-suivi',
-            ])
-        })
-
-        it('Contact à risque affiche suivi', function () {
-            var profil = new Profil('mes_infos', {
-                contact_a_risque: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
-                'conseils-foyer',
-                'conseils-foyer-fragile-suivi',
-            ])
-        })
-
         it('Risque enfant', function () {
             var profil = new Profil('mes_infos', {
                 foyer_enfants: true,
