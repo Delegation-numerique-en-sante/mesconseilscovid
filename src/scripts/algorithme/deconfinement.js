@@ -1,16 +1,12 @@
 import { joursApres, joursAvant } from '../utils.js'
 
 export default class AlgorithmeDeconfinement {
-    constructor(profil, algoOrientation) {
+    constructor(profil) {
         this.profil = profil
-        this.algoOrientation = algoOrientation
     }
 
     isQuarantaineDone() {
-        let delta = 8
-        if (this.algoOrientation.personne_fragile) {
-            delta = 10
-        }
+        let delta = 7
         const now = new Date()
         const finDeQuarantaine = joursApres(delta, this.profil.symptomes_start_date)
         return now > finDeQuarantaine

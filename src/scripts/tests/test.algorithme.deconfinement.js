@@ -1,86 +1,31 @@
 import { assert } from 'chai'
 
-import { joursAvant } from '../utils.js'
-import AlgorithmeOrientation from '../algorithme/orientation.js'
+import { joursAvant, heuresAvant } from '../utils.js'
 import AlgorithmeDeconfinement from '../algorithme/deconfinement.js'
 
 import Profil from '../profil.js'
 
 describe('Algorithme déconfinement', function () {
-    describe('Quarantaine sans personne fragile', function () {
+    describe('Quarantaine pour tous', function () {
         it('Faux si aujourd’hui', function () {
             var profil = new Profil('mes_infos')
             const today = new Date()
             profil.symptomes_start_date = today
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isQuarantaineDone(), false)
         })
 
-        it('Faux s’il y a 7 jours', function () {
+        it('Faux s’il y a 6 jours', function () {
             var profil = new Profil('mes_infos')
-            profil.symptomes_start_date = joursAvant(7)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            profil.symptomes_start_date = joursAvant(6)
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isQuarantaineDone(), false)
         })
 
-        it('Vrai s’il y a 9 jours', function () {
+        it('Vrai s’il y a 7 jours', function () {
             var profil = new Profil('mes_infos')
-            profil.symptomes_start_date = joursAvant(9)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
-            assert.strictEqual(algoDeconfinement.isQuarantaineDone(), true)
-        })
-    })
-
-    describe('Quarantaine avec personne fragile', function () {
-        it('Faux si aujourd’hui', function () {
-            var profil = new Profil('mes_infos', {
-                grossesse_3e_trimestre: true,
-            })
-            const today = new Date()
-            profil.symptomes_start_date = today
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
-            assert.strictEqual(algoDeconfinement.isQuarantaineDone(), false)
-        })
-
-        it('Faux s’il y a 9 jours', function () {
-            var profil = new Profil('mes_infos', {
-                grossesse_3e_trimestre: true,
-            })
-            profil.symptomes_start_date = joursAvant(9)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
-            assert.strictEqual(algoDeconfinement.isQuarantaineDone(), false)
-        })
-
-        it('Vrai s’il y a 11 jours', function () {
-            var profil = new Profil('mes_infos', {
-                grossesse_3e_trimestre: true,
-            })
-            profil.symptomes_start_date = joursAvant(11)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isQuarantaineDone(), true)
         })
     })
@@ -97,11 +42,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isSuiviRegulier(), true)
         })
 
@@ -113,11 +54,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isSuiviRegulier(), false)
         })
 
@@ -132,11 +69,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isSuiviRegulier(), false)
         })
 
@@ -148,11 +81,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isSuiviRegulier(), false)
         })
 
@@ -167,11 +96,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isSuiviRegulier(), false)
         })
     })
@@ -187,11 +112,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isFievreDone(), true)
         })
 
@@ -204,11 +125,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isFievreDone(), true)
         })
 
@@ -222,11 +139,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isFievreDone(), false)
         })
 
@@ -240,11 +153,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isFievreDone(), true)
         })
 
@@ -258,11 +167,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isFievreDone(), true)
         })
 
@@ -281,11 +186,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isFievreDone(), false)
         })
 
@@ -304,11 +205,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isFievreDone(), true)
         })
     })
@@ -324,11 +221,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
         })
 
@@ -342,11 +235,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
         })
 
@@ -360,11 +249,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
         })
 
@@ -377,11 +262,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
         })
 
@@ -395,11 +276,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isEssoufflementDone(), false)
         })
 
@@ -413,11 +290,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
         })
 
@@ -431,11 +304,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
         })
 
@@ -454,11 +323,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isEssoufflementDone(), false)
         })
 
@@ -477,17 +342,13 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
         })
     })
 
-    describe('Déconfinable sans personne fragile', function () {
-        it('Vrai s’il y a 9 jours et plus de fièvre ni essoufflement', function () {
+    describe('Déconfinable pour tous', function () {
+        it('Vrai s’il y a 7 jours et plus de fièvre ni essoufflement', function () {
             var profil = new Profil('mes_infos', {
                 suivi: [
                     {
@@ -510,16 +371,12 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = joursAvant(9)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
         })
 
-        it('Vrai s’il y a 9 jours et plus de symptômes', function () {
+        it('Vrai s’il y a 7 jours et plus de symptômes', function () {
             var profil = new Profil('mes_infos', {
                 suivi: [
                     {
@@ -538,16 +395,12 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = joursAvant(9)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
         })
 
-        it('Faux s’il y a 9 jours et plus de fièvre ni essoufflement mais sans régularité', function () {
+        it('Faux s’il y a 7 jours et plus de fièvre ni essoufflement mais sans régularité', function () {
             var profil = new Profil('mes_infos', {
                 suivi: [
                     {
@@ -564,16 +417,12 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = joursAvant(9)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
         })
 
-        it('Faux s’il y a 8 jours et plus de fièvre ni essoufflement', function () {
+        it('Faux s’il y a 6 jours et plus de fièvre ni essoufflement', function () {
             var profil = new Profil('mes_infos', {
                 suivi: [
                     {
@@ -596,16 +445,12 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = joursAvant(8)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            profil.symptomes_start_date = joursAvant(6)
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
         })
 
-        it('Faux s’il y a 9 jours et fièvre récente mais pas essoufflement', function () {
+        it('Faux s’il y a 7 jours et fièvre récente mais pas essoufflement', function () {
             var profil = new Profil('mes_infos', {
                 suivi: [
                     {
@@ -628,16 +473,12 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = joursAvant(9)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
         })
 
-        it('Faux s’il y a 9 jours et plus de fièvre mais essoufflement', function () {
+        it('Faux s’il y a 7 jours et plus de fièvre mais essoufflement', function () {
             var profil = new Profil('mes_infos', {
                 suivi: [
                     {
@@ -660,202 +501,8 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = joursAvant(9)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
-            assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
-        })
-    })
-
-    describe('Déconfinable avec personne fragile', function () {
-        it('Vrai s’il y a 11 jours et plus de fièvre ni essoufflement', function () {
-            var profil = new Profil('mes_infos', {
-                grossesse_3e_trimestre: true,
-                suivi: [
-                    {
-                        date: new Date().toJSON(),
-                        symptomes: true,
-                        fievre: 'non',
-                        essoufflement: 'mieux',
-                    },
-                    {
-                        date: joursAvant(1).toJSON(),
-                        symptomes: true,
-                        fievre: 'non',
-                        essoufflement: 'mieux',
-                    },
-                    {
-                        date: joursAvant(3).toJSON(),
-                        symptomes: true,
-                        fievre: 'oui',
-                        essoufflement: 'critique',
-                    },
-                ],
-            })
-            profil.symptomes_start_date = joursAvant(11)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
-            assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
-        })
-
-        it('Vrai s’il y a 11 jours et plus de symptômes', function () {
-            var profil = new Profil('mes_infos', {
-                grossesse_3e_trimestre: true,
-                suivi: [
-                    {
-                        date: new Date().toJSON(),
-                        symptomes: false,
-                    },
-                    {
-                        date: joursAvant(1).toJSON(),
-                        symptomes: false,
-                    },
-                    {
-                        date: joursAvant(3).toJSON(),
-                        symptomes: true,
-                        fievre: 'oui',
-                        essoufflement: 'critique',
-                    },
-                ],
-            })
-            profil.symptomes_start_date = joursAvant(11)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
-            assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
-        })
-
-        it('Vrai s’il y a 11 jours et plus de fièvre ni essoufflement mais pas régularité', function () {
-            var profil = new Profil('mes_infos', {
-                grossesse_3e_trimestre: true,
-                suivi: [
-                    {
-                        date: new Date().toJSON(),
-                        symptomes: true,
-                        fievre: 'non',
-                        essoufflement: 'mieux',
-                    },
-                    {
-                        date: joursAvant(3).toJSON(),
-                        symptomes: true,
-                        fievre: 'oui',
-                        essoufflement: 'critique',
-                    },
-                ],
-            })
-            profil.symptomes_start_date = joursAvant(11)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
-            assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
-        })
-
-        it('Faux s’il y a 10 jours et plus de fièvre ni essoufflement', function () {
-            var profil = new Profil('mes_infos', {
-                grossesse_3e_trimestre: true,
-                suivi: [
-                    {
-                        date: new Date().toJSON(),
-                        symptomes: true,
-                        fievre: 'non',
-                        essoufflement: 'mieux',
-                    },
-                    {
-                        date: joursAvant(1).toJSON(),
-                        symptomes: true,
-                        fievre: 'non',
-                        essoufflement: 'mieux',
-                    },
-                    {
-                        date: joursAvant(3).toJSON(),
-                        symptomes: true,
-                        fievre: 'oui',
-                        essoufflement: 'critique',
-                    },
-                ],
-            })
-            profil.symptomes_start_date = joursAvant(10)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
-            assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
-        })
-
-        it('Faux s’il y a 11 jours et fièvre récente mais pas essoufflement', function () {
-            var profil = new Profil('mes_infos', {
-                grossesse_3e_trimestre: true,
-                suivi: [
-                    {
-                        date: new Date().toJSON(),
-                        symptomes: true,
-                        fievre: 'oui',
-                        essoufflement: 'mieux',
-                    },
-                    {
-                        date: joursAvant(1).toJSON(),
-                        symptomes: true,
-                        fievre: 'non',
-                        essoufflement: 'mieux',
-                    },
-                    {
-                        date: joursAvant(3).toJSON(),
-                        symptomes: true,
-                        fievre: 'oui',
-                        essoufflement: 'critique',
-                    },
-                ],
-            })
-            profil.symptomes_start_date = joursAvant(11)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
-            assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
-        })
-
-        it('Faux s’il y a 11 jours et plus de fièvre mais essoufflement', function () {
-            var profil = new Profil('mes_infos', {
-                grossesse_3e_trimestre: true,
-                suivi: [
-                    {
-                        date: new Date().toJSON(),
-                        symptomes: true,
-                        fievre: 'non',
-                        essoufflement: 'critique',
-                    },
-                    {
-                        date: joursAvant(1).toJSON(),
-                        symptomes: true,
-                        fievre: 'non',
-                        essoufflement: 'mieux',
-                    },
-                    {
-                        date: joursAvant(3).toJSON(),
-                        symptomes: true,
-                        fievre: 'oui',
-                        essoufflement: 'critique',
-                    },
-                ],
-            })
-            profil.symptomes_start_date = joursAvant(11)
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            const algoDeconfinement = new AlgorithmeDeconfinement(
-                profil,
-                algoOrientation
-            )
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
         })
     })
