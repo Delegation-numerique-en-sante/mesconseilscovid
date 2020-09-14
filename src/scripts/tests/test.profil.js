@@ -1,17 +1,8 @@
 import { assert } from 'chai'
 
 import Profil from '../profil.js'
-var profil = new Profil('mes_infos')
 
 describe('Profil', function () {
-    beforeEach(function () {
-        profil.resetData()
-    })
-
-    afterEach(function () {
-        profil.resetData()
-    })
-
     it('Le nom du profil n’est pas échappé', function () {
         var evil = '<script>alert("something evil")</script>'
         var profil = new Profil(evil)
@@ -19,6 +10,7 @@ describe('Profil', function () {
     })
 
     it('Le questionnaire est vide par défaut', function () {
+        var profil = new Profil('mes_infos')
         assert.deepEqual(profil.getData(), {
             departement: undefined,
             activite_pro: undefined,
@@ -60,7 +52,7 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: undefined,
             contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
-            suivi_active: undefined,
+            suivi_active: false,
             _suivi_start_date: undefined,
             _symptomes_start_date: undefined,
             _deconfinement_date: undefined,
@@ -71,6 +63,7 @@ describe('Profil', function () {
     })
 
     it('La valeur de suivi_start_date est stockée sous forme de chaîne', function () {
+        var profil = new Profil('mes_infos')
         var date = new Date('2020-07-09T14:03:41.000Z')
         profil.suivi_start_date = date
         assert.strictEqual(profil._suivi_start_date, '2020-07-09T14:03:41.000Z')
@@ -80,6 +73,7 @@ describe('Profil', function () {
     })
 
     it('La valeur de suivi_start_date peut être indéfinie', function () {
+        var profil = new Profil('mes_infos')
         assert.isUndefined(profil._suivi_start_date, undefined)
         assert.isUndefined(profil.suivi_start_date, undefined)
         profil.suivi_start_date = undefined
@@ -88,6 +82,7 @@ describe('Profil', function () {
     })
 
     it('On peut ajouter et récupérer un état au suivi', function () {
+        var profil = new Profil('mes_infos')
         assert.deepEqual(profil.suivi, [])
         var etat = {
             date: new Date('2020-07-09T14:03:41.000Z').toJSON(),
@@ -106,6 +101,7 @@ describe('Profil', function () {
     })
 
     it('Le questionnaire peut être partiellement rempli', function () {
+        var profil = new Profil('mes_infos')
         var data = {
             departement: '01',
         }
@@ -116,10 +112,9 @@ describe('Profil', function () {
     })
 
     it('Le questionnaire peut être partiellement vidé', function () {
-        var data = {
+        var profil = new Profil('mes_infos', {
             departement: '01',
-        }
-        profil.fillData(data)
+        })
         profil.resetData()
         assert.include(profil.getData(), {
             departement: undefined,
@@ -127,6 +122,7 @@ describe('Profil', function () {
     })
 
     it('Le questionnaire peut être complètement rempli', function () {
+        var profil = new Profil('mes_infos')
         var data = {
             departement: '34',
             activite_pro: false,
@@ -181,6 +177,7 @@ describe('Profil', function () {
     })
 
     it('Le questionnaire peut être complètement rempli mais âge < 15', function () {
+        var profil = new Profil('mes_infos')
         var data = {
             departement: '34',
             activite_pro: false,
@@ -235,7 +232,7 @@ describe('Profil', function () {
     })
 
     it('Le questionnaire peut être complètement vidé', function () {
-        var data = {
+        var profil = new Profil('mes_infos', {
             departement: '34',
             activite_pro: false,
             activite_pro_public: false,
@@ -281,8 +278,7 @@ describe('Profil', function () {
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             _deconfinement_date: '2020-07-09T14:03:41.000Z',
             suivi: [{ foo: 'bar' }],
-        }
-        profil.fillData(data)
+        })
         profil.resetData()
         assert.deepEqual(profil.getData(), {
             departement: undefined,
@@ -325,7 +321,7 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: undefined,
             contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
-            suivi_active: undefined,
+            suivi_active: false,
             _suivi_start_date: undefined,
             _symptomes_start_date: undefined,
             _deconfinement_date: undefined,
@@ -336,7 +332,7 @@ describe('Profil', function () {
     })
 
     it('Le suivi seul peut être complètement vidé', function () {
-        var data = {
+        var profil = new Profil('mes_infos', {
             departement: '34',
             activite_pro: false,
             activite_pro_public: false,
@@ -382,8 +378,7 @@ describe('Profil', function () {
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             _deconfinement_date: '2020-07-09T14:03:41.000Z',
             suivi: [{ foo: 'bar' }],
-        }
-        profil.fillData(data)
+        })
         profil.resetSuivi()
         assert.deepEqual(profil.getData(), {
             departement: '34',
