@@ -248,10 +248,7 @@ export default class AlgorithmeOrientation {
         if (this.profil.symptomes_actuels) {
             return []
         }
-        if (this.profil.symptomes_passes || this.profil.contact_a_risque) {
-            blockNames.push('conseils-foyer')
-            blockNames.push('conseils-foyer-fragile-suivi')
-        } else if (this.profil.foyer_enfants || this.profil.foyer_fragile) {
+        if (this.profil.foyer_enfants || this.profil.foyer_fragile) {
             blockNames.push('conseils-foyer')
             if (this.profil.foyer_enfants && this.profil.foyer_fragile) {
                 blockNames.push('conseils-foyer-enfants-fragile')
