@@ -164,9 +164,9 @@ Vous avez passé du temps avec quelqu’un de positif mais il ne s’agit pas *a
 
 Pour plus d’informations :
 
-* la fiche : [« quelles conduites adopter et quel sera mon parcours si j’ai été en contact avec un cas Covid-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_personne_contact.pdf) du ministère des solidarités et de la santé ;
+* la fiche : [« quelles conduites adopter et quel sera mon parcours si j’ai été en contact avec un cas Covid-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/j_ai_ete_en_contact_a_risque_avec_une_personne_malade_du_covid19.pdf) du ministère des solidarités et de la santé ;
 
-* l’infographie : [« je suis une personne contact d’un cas Covid-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-personne_contact.pdf).
+* l’infographie : [« Isolement, test : que faire ? »](https://solidarites-sante.gouv.fr/IMG/pdf/isolement_test_-_que_faire_infographie_decisionnelle.pdf).
 
 
 
@@ -255,7 +255,7 @@ Pour plus d’informations :
 
 <span class="nouveau">nouveau</span> **À compter du 20 juillet 2020, toute personne de 11 ans et plus [doit porter un masque grand public dans les lieux publics clos](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/port-du-masque-grand-public-obligatoire-en-lieux-clos-faq).**
 
-Le Covid-19 n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de [consulter au moindre signe de maladie](https://solidarites-sante.gouv.fr/grands-dossiers/deconfinement-les-recommandations-du-ministere-pour-la-reprise-des-soins-en/).
+Le Covid-19 n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de [consulter au moindre signe de maladie](https://solidarites-sante.gouv.fr/IMG/pdf/j_ai_des_symptomes_que_dois-je_faire_-_infographie.pdf).
 
 De plus, **l’aération régulière** [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf), le respect des **gestes barrières**, et de **distanciation physique** reste indispensable.
 
@@ -292,7 +292,7 @@ Pour plus d’informations :
 
 ## [conseils_isolement.md](conseils_isolement.md)
 
-Pour plus d’informations sur l’isolement : [« Je suis atteint par le coronavirus et je dois rester chez moi jusqu’à ma guérison »](https://solidarites-sante.gouv.fr/IMG/pdf/covid19_fiche_patients-2.pdf).
+Pour plus d’informations sur l’isolement : [« J’ai les signes de la maladie du COVID-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/j_ai_des_signes_de_la_maladie_du_covid19.pdf).
 
 
 
@@ -324,11 +324,11 @@ Pour plus d’informations, consultez le document [« Faire face à une maladie
 
 ## [conseils_symptômes_actuels_gravité1.md](conseils_symptômes_actuels_gravité1.md)
 
-* **Contactez votre médecin** pour obtenir une téléconsultation ou une consultation. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde en composant le [0 800 130 000](tel:+33800130000). 
+* **Contactez votre médecin** pour obtenir une téléconsultation ou une consultation. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde en composant le [0 800 130 000](tel:+33800130000).
 
 * Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 
-* Prenez connaissance des prochaines étapes du parcours : [j’ai des symptômes du Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
+* Prenez connaissance des prochaines étapes du parcours : [j’ai des symptômes du Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/isolement_test_-_que_faire_infographie_decisionnelle.pdf).
 
 * Appliquez strictement les **gestes barrières**.
 
@@ -336,13 +336,13 @@ Pour plus d’informations, consultez le document [« Faire face à une maladie
 
 ## [conseils_symptômes_actuels_gravité2.md](conseils_symptômes_actuels_gravité2.md)
 
-* **Contactez votre médecin** pour obtenir une téléconsultation ou une consultation. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde en composant le [0 800 130 000](tel:+33800130000). 
+* **Contactez votre médecin** pour obtenir une téléconsultation ou une consultation. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde en composant le [0 800 130 000](tel:+33800130000).
 
 * Si vous n’arrivez pas à obtenir de consultation, **appelez le 15**.
 
 * Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 
-* Prenez connaissance des prochaines étapes du parcours : [j’ai des symptômes du Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
+* Prenez connaissance des prochaines étapes du parcours : [j’ai des symptômes du Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/isolement_test_-_que_faire_infographie_decisionnelle.pdf).
 
 * Appliquez strictement les **gestes barrières**.
 
@@ -350,13 +350,13 @@ Pour plus d’informations, consultez le document [« Faire face à une maladie
 
 ## [conseils_symptômes_actuels_gravité3.md](conseils_symptômes_actuels_gravité3.md)
 
-* **Contactez votre médecin** pour obtenir une téléconsultation ou une consultation. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde en composant le [0 800 130 000](tel:+33800130000). 
+* **Contactez votre médecin** pour obtenir une téléconsultation ou une consultation. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde en composant le [0 800 130 000](tel:+33800130000).
 
 * Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent **pendant plus de 24 heures**.
 
 * Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 
-* Prenez connaissance des prochaines étapes du parcours : [j’ai des symptômes du Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
+* Prenez connaissance des prochaines étapes du parcours : [j’ai des symptômes du Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/isolement_test_-_que_faire_infographie_decisionnelle.pdf).
 
 * Appliquez strictement les **gestes barrières**.
 
@@ -366,7 +366,7 @@ Pour plus d’informations, consultez le document [« Faire face à une maladie
 
 * Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 
-* Prenez connaissance des prochaines étapes du parcours : [j’ai des symptômes du Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf). 
+* Prenez connaissance des prochaines étapes du parcours : [j’ai des symptômes du Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/a4-covid19-symptomes.pdf).
 
 * Appliquez strictement les **gestes barrières**.
 
@@ -392,7 +392,7 @@ Il vous est conseillé de :
 
 ## [conseils_symptômes_passés_avec_risques_info.md](conseils_symptômes_passés_avec_risques_info.md)
 
-De façon générale il est conseillé une levée de l’isolement 10 jours après le début des symptômes (si vous ou un membre de votre foyer êtes à risque de forme grave) et après 48 heures sans fièvre ni gêne respiratoire.
+De façon générale il est conseillé une levée de l’isolement 7 jours après le début des symptômes (si vous ou un membre de votre foyer êtes à risque de forme grave) et après 48 heures sans fièvre ni gêne respiratoire.
 
 
 
@@ -408,6 +408,6 @@ De façon générale il est conseillé une levée de l’isolement 10 jours apr�
 
 ## [conseils_symptômes_passés_sans_risques_info.md](conseils_symptômes_passés_sans_risques_info.md)
 
-De façon générale il est conseillé une levée de l’isolement 8 jours après le début des symptômes et après 48 heures sans fièvre ni gêne respiratoire.
+De façon générale il est conseillé une levée de l’isolement 7 jours après le début des symptômes et après 48 heures sans fièvre ni gêne respiratoire.
 
 
