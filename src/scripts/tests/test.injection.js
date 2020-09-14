@@ -6,17 +6,8 @@ import AlgorithmeOrientation from '../algorithme/orientation.js'
 import * as injection from '../injection.js'
 
 import Profil from '../profil.js'
-var profil = new Profil('mes_infos')
 
 describe('Injection', function () {
-    beforeEach(function () {
-        profil.resetData()
-    })
-
-    afterEach(function () {
-        profil.resetData()
-    })
-
     it('Départements', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
@@ -44,10 +35,10 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-caracteristiques-a-risques"></b>'
-            var data = {
+
+            var profil = new Profil('mes_infos', {
                 age: 65,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.caracteristiquesARisques(
@@ -65,10 +56,10 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-caracteristiques-a-risques"></b>'
-            var data = {
+
+            var profil = new Profil('mes_infos', {
                 grossesse_3e_trimestre: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.caracteristiquesARisques(
@@ -86,11 +77,11 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-caracteristiques-a-risques"></b>'
-            var data = {
+
+            var profil = new Profil('mes_infos', {
                 age: 65,
                 grossesse_3e_trimestre: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.caracteristiquesARisques(
@@ -108,11 +99,10 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-caracteristiques-a-risques"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 taille: 150,
                 poids: 150,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.caracteristiquesARisques(
@@ -130,12 +120,11 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-caracteristiques-a-risques"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 age: 65,
                 taille: 150,
                 poids: 150,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.caracteristiquesARisques(
@@ -153,12 +142,11 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-caracteristiques-a-risques"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 grossesse_3e_trimestre: true,
                 taille: 150,
                 poids: 150,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.caracteristiquesARisques(
@@ -178,10 +166,9 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-antecedents"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 antecedent_cardio: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.antecedents(
@@ -199,10 +186,9 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-antecedents"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 antecedent_chronique_autre: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.antecedents(
@@ -220,11 +206,10 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-antecedents"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 antecedent_cardio: true,
                 antecedent_chronique_autre: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.antecedents(
@@ -244,11 +229,10 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-symptomesactuels"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_temperature: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
@@ -266,11 +250,10 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-symptomesactuels"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_temperature_inconnue: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
@@ -288,11 +271,10 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-symptomesactuels"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_toux: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
@@ -310,12 +292,11 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-symptomesactuels"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_temperature: true,
                 symptomes_actuels_toux: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
@@ -333,11 +314,10 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-symptomesactuels"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_odorat: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
@@ -355,11 +335,10 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-symptomesactuels"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_douleurs: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
@@ -377,11 +356,10 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-symptomesactuels"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_diarrhee: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
@@ -399,11 +377,10 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-symptomesactuels"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_fatigue: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
@@ -421,11 +398,10 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-symptomesactuels"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_alimentation: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
@@ -443,11 +419,10 @@ describe('Injection', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
             element.innerHTML = '<b id="nom-symptomesactuels"></b>'
-            var data = {
+            var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_souffle: true,
-            }
-            profil.fillData(data)
+            })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(

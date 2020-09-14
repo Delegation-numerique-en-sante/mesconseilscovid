@@ -5,8 +5,9 @@ import { createElementFromHTML, safeHtml } from './affichage.js'
 import AlgorithmeSuivi from './algorithme/suivi.js'
 
 export default class Profil {
-    constructor(nom) {
+    constructor(nom, data) {
         this.nom = nom
+        this.fillData(data || {})
     }
 
     get suivi_start_date() {
@@ -88,7 +89,7 @@ export default class Profil {
         this.contact_a_risque_meme_classe = undefined
         this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_autre = undefined
-        this.suivi_active = undefined
+        this.suivi_active = false
         this.resetSuivi()
     }
 

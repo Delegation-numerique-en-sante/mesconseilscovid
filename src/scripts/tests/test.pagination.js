@@ -13,18 +13,15 @@ import Profil from '../profil.js'
 describe('Pagination', function () {
     describe('Mon foyer', function () {
         it('redirige vers question 1 si réponse manquante', function () {
-            const profil = new Profil()
-            profil.fillData({})
+            const profil = new Profil('mes_infos', {})
             assert.strictEqual(questionnaire.beforeFoyer(profil), 'residence')
         })
         it('ok d’aller à la question 2 si réponse à la 1', function () {
-            const profil = new Profil()
-            profil.fillData({ departement: '80' })
+            const profil = new Profil('mes_infos', { departement: '80' })
             assert.isUndefined(questionnaire.beforeFoyer(profil))
         })
         it('ok d’aller à la question 2 même si déjà répondu', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
             })
@@ -34,13 +31,11 @@ describe('Pagination', function () {
 
     describe('Mes antécédents', function () {
         it('redirige vers question 2 si réponse manquante', function () {
-            const profil = new Profil()
-            profil.fillData({ departement: '80' })
+            const profil = new Profil('mes_infos', { departement: '80' })
             assert.strictEqual(questionnaire.beforeAntecedents(profil), 'foyer')
         })
         it('ok d’aller à la question 3 si réponse à la 2', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -48,8 +43,7 @@ describe('Pagination', function () {
             assert.isUndefined(questionnaire.beforeAntecedents(profil))
         })
         it('ok d’aller à la question 3 même si déjà répondu', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -69,8 +63,7 @@ describe('Pagination', function () {
 
     describe('Mes caractéristiques', function () {
         it('redirige vers question 3 si réponse manquante', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -82,8 +75,7 @@ describe('Pagination', function () {
         })
 
         it('ok d’aller à la question 4 si réponse à la 3', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -100,8 +92,7 @@ describe('Pagination', function () {
             assert.isUndefined(questionnaire.beforeCaracteristiques(profil))
         })
         it('ok d’aller à la question 3 même si déjà répondu', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -125,8 +116,7 @@ describe('Pagination', function () {
 
     describe('Mon activité', function () {
         it('redirige vers question 4 si réponse manquante', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -149,8 +139,7 @@ describe('Pagination', function () {
             )
         })
         it('redirige vers pédiatrie si âge inférieur à 15', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -171,8 +160,7 @@ describe('Pagination', function () {
             assert.strictEqual(questionnaire.beforeActivitePro(profil), 'pediatrie')
         })
         it('ok d’aller à la question 5 si réponse à la 4', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -193,8 +181,7 @@ describe('Pagination', function () {
             assert.isUndefined(questionnaire.beforeActivitePro(profil))
         })
         it('ok d’aller à la question 5 même si déjà répondu', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -220,8 +207,7 @@ describe('Pagination', function () {
     describe('Mes symptômes actuels', function () {
         // Début rattrapage profession libérale.
         it('redirige vers question 5 si activité pro mais pas profession libérale', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -246,8 +232,7 @@ describe('Pagination', function () {
             )
         })
         it('ok d’aller à la question 6 si réponse vraie à la 5 + profession libérale', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -272,8 +257,7 @@ describe('Pagination', function () {
         // Fin rattrapage profession libérale.
 
         it('redirige vers question 5 si réponse manquante', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -297,8 +281,7 @@ describe('Pagination', function () {
             )
         })
         it('ok d’aller à la question 6 si réponse à la 5', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -320,8 +303,7 @@ describe('Pagination', function () {
             assert.isUndefined(questionnaire.beforeSymptomesActuels(profil))
         })
         it('ok d’aller à la question 6 même si déjà répondu', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -347,8 +329,7 @@ describe('Pagination', function () {
 
     describe('Mes symptômes passés', function () {
         it('redirige vers question 6 si réponse manquante', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -373,8 +354,7 @@ describe('Pagination', function () {
             )
         })
         it('ok d’aller à la question 7 si réponse négative à la 6', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -397,8 +377,7 @@ describe('Pagination', function () {
             assert.isUndefined(questionnaire.beforeSymptomesPasses(profil))
         })
         it('ok d’aller à la question 7 si réponse positive à la 6 mais que autre', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -422,8 +401,7 @@ describe('Pagination', function () {
             assert.isUndefined(questionnaire.beforeSymptomesPasses(profil))
         })
         it('ok d’aller à la question 7 même si déjà répondu', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -447,8 +425,7 @@ describe('Pagination', function () {
             assert.isUndefined(questionnaire.beforeSymptomesPasses(profil))
         })
         it('redirige vers conseils si réponse positive à la 6', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -475,8 +452,7 @@ describe('Pagination', function () {
 
     describe('Mes contacts à risque', function () {
         it('redirige vers question 7 si réponse manquante', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -502,8 +478,7 @@ describe('Pagination', function () {
             )
         })
         it('ok d’aller à la question 8 si réponse négative aux 6 et 7', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -527,8 +502,7 @@ describe('Pagination', function () {
             assert.isUndefined(questionnaire.beforeContactARisque(profil))
         })
         it('ok d’aller à la question 8 si réponse négative à la 7 et positive mais autre à la 6', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -553,8 +527,7 @@ describe('Pagination', function () {
             assert.isUndefined(questionnaire.beforeContactARisque(profil))
         })
         it('ok d’aller à la question 8 même si déjà répondu', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -579,8 +552,7 @@ describe('Pagination', function () {
             assert.isUndefined(questionnaire.beforeContactARisque(profil))
         })
         it('redirige vers conseils si réponse positive à la 6', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -604,8 +576,7 @@ describe('Pagination', function () {
             assert.strictEqual(questionnaire.beforeContactARisque(profil), 'conseils')
         })
         it('redirige vers conseils si réponse positive à la 7', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -632,8 +603,7 @@ describe('Pagination', function () {
 
     describe('Mes conseils', function () {
         it('ok d’aller aux conseils si toutes les réponses', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -658,8 +628,7 @@ describe('Pagination', function () {
             assert.isUndefined(conseils.before(profil))
         })
         it('ok d’aller aux conseils si symptômes actuels', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -682,8 +651,7 @@ describe('Pagination', function () {
             assert.isUndefined(conseils.before(profil))
         })
         it('ok d’aller aux conseils si symptômes passés', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -707,8 +675,7 @@ describe('Pagination', function () {
             assert.isUndefined(conseils.before(profil))
         })
         it('redirige vers question 8 si réponse manquante', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -732,8 +699,7 @@ describe('Pagination', function () {
             assert.strictEqual(conseils.before(profil), 'contactarisque')
         })
         it('redirige vers question 7 si réponse manquante', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -756,8 +722,7 @@ describe('Pagination', function () {
             assert.strictEqual(conseils.before(profil), 'symptomespasses')
         })
         it('redirige vers question 7 si symptômes actuels autres', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -781,8 +746,7 @@ describe('Pagination', function () {
             assert.strictEqual(conseils.before(profil), 'symptomespasses')
         })
         it('redirige vers question 6 si réponse manquante', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -804,8 +768,7 @@ describe('Pagination', function () {
             assert.strictEqual(conseils.before(profil), 'symptomesactuels')
         })
         it('redirige vers pediatrie si age < 15', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -833,8 +796,7 @@ describe('Pagination', function () {
 
     describe('Suivi', function () {
         it('ok d’aller à l’introduction si profil complet', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_public: false,
@@ -879,8 +841,7 @@ describe('Pagination', function () {
             assert.isUndefined(suiviintroduction.before(profil))
         })
         it('ok d’aller à l’introduction si profil sans sous-options activité pro', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
                 foyer_enfants: true,
@@ -922,8 +883,7 @@ describe('Pagination', function () {
             assert.isUndefined(suiviintroduction.before(profil))
         })
         it('ok d’aller à la date des symptômes si profil complet', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_public: false,
@@ -968,8 +928,7 @@ describe('Pagination', function () {
             assert.isUndefined(suiviintroduction.before(profil))
         })
         it('ok d’aller à la question suivi médecin si profil complet', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_public: false,
@@ -1014,8 +973,7 @@ describe('Pagination', function () {
             assert.isUndefined(suiviintroduction.before(profil))
         })
         it('ok d’aller au questionnaire si profil complet et date symptômes', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_public: false,
@@ -1061,8 +1019,7 @@ describe('Pagination', function () {
             assert.isUndefined(suiviintroduction.before(profil))
         })
         it('ok d’aller à l’historique du suivi si profil complet et date symptômes et entrée(s) dans le suivi', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_public: false,
@@ -1109,8 +1066,7 @@ describe('Pagination', function () {
             assert.isUndefined(suiviintroduction.before(profil))
         })
         it('redirige date symptômes si profil complet mais pas de date', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_public: false,
@@ -1155,8 +1111,7 @@ describe('Pagination', function () {
             assert.strictEqual(suivisymptomes.before(profil), 'suividate')
         })
         it('redirige suivi introduction vers algo orientation si profil non complet', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_public: false,
@@ -1181,8 +1136,7 @@ describe('Pagination', function () {
             assert.strictEqual(suiviintroduction.before(profil), 'conseils')
         })
         it('redirige suivi médecin vers algo orientation si profil non complet', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_public: false,
@@ -1207,8 +1161,7 @@ describe('Pagination', function () {
             assert.strictEqual(suivimedecin.before(profil), 'conseils')
         })
         it('redirige suivi date vers algo orientation si profil non complet', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_public: false,
@@ -1233,8 +1186,7 @@ describe('Pagination', function () {
             assert.strictEqual(suividate.before(profil), 'conseils')
         })
         it('redirige suivi symptômes vers algo orientation si profil non complet', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_public: false,
@@ -1259,8 +1211,7 @@ describe('Pagination', function () {
             assert.strictEqual(suivisymptomes.before(profil), 'conseils')
         })
         it('redirige suivi historique vers algo orientation si profil non complet', function () {
-            const profil = new Profil()
-            profil.fillData({
+            const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_public: false,
