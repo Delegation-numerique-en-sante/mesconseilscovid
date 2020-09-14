@@ -127,7 +127,7 @@ async function remplirSymptomesActuels(page, symptomesActuels) {
             await label.click()
         })
         text = '"Continuer"'
-        nextPage = 'suivimedecin'
+        nextPage = 'suividate'
     } else {
         text = '/.* pas de symptômes actuellement/'
         nextPage = 'symptomespasses'

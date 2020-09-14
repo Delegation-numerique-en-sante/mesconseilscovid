@@ -344,26 +344,6 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
-## [question_suivi_médecin_libellé.md](question_suivi_médecin_libellé.md)
-
-<!---->Votre médecin vous a conseillé de suivre votre état de santé via ce questionnaire en ligne :
-
----
-
-<!---->Un médecin a conseillé à votre proche de suivre son état de santé via ce questionnaire en ligne :
-
-
-
-## [question_suivi_médecin_titre.md](question_suivi_médecin_titre.md)
-
-<!---->Mon médecin
-
----
-
-<!---->Son médecin
-
-
-
 ## [question_suivi_symptômes_alimentation_hydratation_libellé.md](question_suivi_symptômes_alimentation_hydratation_libellé.md)
 
 <!---->Êtes-vous dans l’<b>impossibilité de vous alimenter</b> ou de boire depuis <b>24 heures ou plus</b> ?

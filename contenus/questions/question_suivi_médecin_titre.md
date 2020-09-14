@@ -1,5 +1,0 @@
-<!---->Mon médecin
-
----
-
-<!---->Son médecin
