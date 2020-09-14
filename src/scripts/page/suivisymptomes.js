@@ -4,10 +4,7 @@ import {
     toggleFormButtonOnRadioRequired,
 } from '../formutils.js'
 
-import incidenceParDepartement from '../data/incidence.js'
-
 import AlgorithmeDeconfinement from '../algorithme/deconfinement.js'
-import AlgorithmeOrientation from '../algorithme/orientation.js'
 
 export function before(profil) {
     if (!profil.isComplete()) return 'conseils'
@@ -62,14 +59,7 @@ export function page(form, app, router) {
 
         app.profil.ajouterEtat(etat)
 
-        const algoOrientation = new AlgorithmeOrientation(
-            app.profil,
-            incidenceParDepartement
-        )
-        const algoDeconfinement = new AlgorithmeDeconfinement(
-            app.profil,
-            algoOrientation
-        )
+        const algoDeconfinement = new AlgorithmeDeconfinement(app.profil)
         if (algoDeconfinement.isDeconfinable()) {
             if (!app.profil.hasDeconfinementDate()) {
                 app.profil.deconfinement_date = new Date()
