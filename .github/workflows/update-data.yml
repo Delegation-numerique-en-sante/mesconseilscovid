@@ -1,8 +1,9 @@
 name: Mettre à jour les données quotidiennement
 
+# Lancement à 19h20 (Paris) car les données d’incidence sont publiées à 19h15
 on:
   schedule:
-    - cron: '15 11 * * *'
+    - cron: '17 20 * * *'
 
 jobs:
   update-incidence:
