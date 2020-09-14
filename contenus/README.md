@@ -298,18 +298,6 @@ Conseils :
 
 ### Auto-suivi
 
-#### Suivi médecin
-
-[Titre](questions/question_suivi_médecin_titre.md)
-
-Question : [libellé](questions/question_suivi_médecin_libellé.md)
-
-Algorithme :
-
-* Si la personne répond « Non » au consentement médecin, elle est redirigée vers les conseils
-* Si elle répond « Oui » au consentement médecin, elle est redirigée vers le [Suivi date](#suivi-date)
-
-
 #### Suivi date
 
 [Titre](questions/question_suivi_date_titre.md)

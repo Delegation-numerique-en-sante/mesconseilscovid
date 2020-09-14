@@ -10,7 +10,6 @@ import * as questionnaire from './page/questionnaire.js'
 import * as conseils from './page/conseils.js'
 
 import * as suiviintroduction from './page/suiviintroduction.js'
-import * as suivimedecin from './page/suivimedecin.js'
 import * as suividate from './page/suividate.js'
 import * as suivisymptomes from './page/suivisymptomes.js'
 import * as suivihistorique from './page/suivihistorique.js'
@@ -154,14 +153,6 @@ export function initRouter(app) {
             suiviintroduction.page(element, app, router)
         },
         suiviintroduction.before
-    )
-
-    addRoute(
-        'suivimedecin',
-        function (element) {
-            suivimedecin.page(element, app, router)
-        },
-        suivimedecin.before
     )
 
     addRoute(

@@ -266,34 +266,18 @@ describe('Parcours', function () {
             symptomesActuels: ['temperature'],
         })
 
-        // Avec des symptômes actuels on est redirigé vers le consentement médecin
+        // Avec des symptômes actuels on est redirigé vers la date de suivi (parcours suivi)
         {
-            const consentement = 'non' // non => redirection `conseils`
-
-            // Je n’arrive pas à cocher la case directement, alors je clique sur le label
             let label = await page.waitForSelector(
-                `#page label[for="suivi_medecin_${consentement}"]`
+                '#page label[for="suivi_date_aujourdhui"]'
             )
             await label.click()
 
-            const text = '"Aller vers mes conseils"'
-            const nextPage = 'conseils'
-
-            let bouton = await page.waitForSelector(`#page >> text=${text}`)
+            let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: `**/#${nextPage}` }),
+                page.waitForNavigation({ url: '**/#suivisymptomes' }),
             ])
-        }
-
-        // Conseils
-        {
-            // On retrouve le message de porteur éventuel
-            let statut = await page.waitForSelector('#page #statut-symptomatique')
-            assert.equal(
-                (await statut.innerText()).trim(),
-                'Vous êtes peut-être porteur du Covid-19.'
-            )
         }
     })
 
@@ -333,36 +317,18 @@ describe('Parcours', function () {
             symptomesActuels: ['souffle'],
         })
 
-        // Avec des symptômes actuels on est redirigé vers le consentement médecin
+        // Avec des symptômes actuels on est redirigé vers la date de suivi (parcours suivi)
         {
-            const consentement = 'non' // non => redirection `conseils`
-
-            // Je n’arrive pas à cocher la case directement, alors je clique sur le label
             let label = await page.waitForSelector(
-                `#page label[for="suivi_medecin_${consentement}"]`
+                '#page label[for="suivi_date_aujourdhui"]'
             )
             await label.click()
 
-            const text = '"Aller vers mes conseils"'
-            const nextPage = 'conseils'
-
-            let bouton = await page.waitForSelector(`#page >> text=${text}`)
+            let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: `**/#${nextPage}` }),
+                page.waitForNavigation({ url: '**/#suivisymptomes' }),
             ])
-        }
-
-        // Conseils
-        {
-            // On retrouve le message d’appel du SAMU
-            let statut = await page.waitForSelector(
-                '#page #statut-symptomatique-urgent'
-            )
-            assert.equal(
-                (await statut.innerText()).trim().startsWith('Appelez le SAMU / 15'),
-                true
-            )
         }
     })
 

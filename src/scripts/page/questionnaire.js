@@ -258,7 +258,7 @@ export function symptomesactuels(form, app, router) {
             if (app.profil.symptomes_start_date) {
                 router.navigate('suiviintroduction')
             } else {
-                router.navigate('suivimedecin')
+                router.navigate('suividate')
             }
         } else {
             app.enregistrerProfilActuel()

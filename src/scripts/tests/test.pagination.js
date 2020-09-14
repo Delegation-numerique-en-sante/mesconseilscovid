@@ -2,7 +2,6 @@ import { assert } from 'chai'
 
 import * as conseils from '../page/conseils.js'
 import * as suiviintroduction from '../page/suiviintroduction.js'
-import * as suivimedecin from '../page/suivimedecin.js'
 import * as suividate from '../page/suividate.js'
 import * as suivisymptomes from '../page/suivisymptomes.js'
 import * as suivihistorique from '../page/suivihistorique.js'
@@ -1134,31 +1133,6 @@ describe('Pagination', function () {
                 antecedent_chronique_autre: false,
             })
             assert.strictEqual(suiviintroduction.before(profil), 'conseils')
-        })
-        it('redirige suivi médecin vers algo orientation si profil non complet', function () {
-            const profil = new Profil('mes_infos', {
-                departement: '34',
-                activite_pro: false,
-                activite_pro_public: false,
-                activite_pro_sante: false,
-                activite_pro_liberal: false,
-                foyer_enfants: true,
-                foyer_fragile: false,
-                age: '42',
-                grossesse_3e_trimestre: false,
-                poids: '70',
-                taille: '178',
-                antecedent_cardio: false,
-                antecedent_diabete: true,
-                antecedent_respi: false,
-                antecedent_dialyse: true,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-            })
-            assert.strictEqual(suivimedecin.before(profil), 'conseils')
         })
         it('redirige suivi date vers algo orientation si profil non complet', function () {
             const profil = new Profil('mes_infos', {
