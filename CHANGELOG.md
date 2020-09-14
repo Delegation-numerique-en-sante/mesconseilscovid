@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-09-14
+
+* passe la durée d’isolement recommandée à 7 jours
+* met à jour les liens vers les infographies associées
+
 ## 2020-09-09
 
 * met à jour les liens vers les consignes préfectorales
