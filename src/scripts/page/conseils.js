@@ -52,6 +52,14 @@ export function page(element, app) {
 
     var algoOrientation = new AlgorithmeOrientation(app.profil, incidenceParDepartement)
 
+    // Première complétion du formulaire ?
+    if (!app.profil.questionnaire_completed) {
+        console.debug(`Questionnaire terminé`)
+        app.profil.questionnaire_completed = true
+        app.enregistrerProfilActuel()
+        window.plausible(`Questionnaire terminé`)
+    }
+
     // Activer / désactiver l’auto-suivi pour ce profil ?
     if (algoOrientation.recommandeAutoSuivi() && !app.profil.suivi_active) {
         app.profil.suivi_active = true
