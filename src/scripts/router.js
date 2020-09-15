@@ -45,305 +45,177 @@ export function initRouter(app) {
         },
     })
 
-    router
-        .on(new RegExp('^introduction$'), function () {
-            var pageName = 'introduction'
-            var element = loadPage(pageName)
-            introduction.page(element, app)
-        })
-        .on(new RegExp('^nom$'), function () {
-            var pageName = 'nom'
-            var form = loadPage(pageName, app)
-            questionnaire.nom(form, app, router)
-        })
-        .on(new RegExp('^residence$'), function () {
-            var pageName = 'residence'
-            var form = loadPage(pageName, app)
-            questionnaire.residence(form, app, router)
-        })
-        .on(
-            new RegExp('^foyer$'),
+    function addRoute(pageName, viewFunc, beforeFunc) {
+        router.on(
+            new RegExp('^' + pageName + '$'),
             function () {
-                var pageName = 'foyer'
-                var form = loadPage(pageName, app)
-                questionnaire.foyer(form, app, router)
+                var element = loadPage(pageName)
+                viewFunc(element)
             },
             {
                 before: function (done) {
-                    const target = questionnaire.beforeFoyer(app.profil)
-                    if (target && target !== 'foyer') {
-                        router.navigate(target)
-                        done(false)
-                    } else {
-                        done()
-                    }
-                },
-            }
-        )
-        .on(
-            new RegExp('^antecedents$'),
-            function () {
-                var pageName = 'antecedents'
-                var form = loadPage(pageName, app)
-                questionnaire.antecedents(form, app, router)
-            },
-            {
-                before: function (done) {
-                    const target = questionnaire.beforeAntecedents(app.profil)
-                    if (target && target !== 'antecedents') {
-                        router.navigate(target)
-                        done(false)
-                    } else {
-                        done()
-                    }
-                },
-            }
-        )
-        .on(
-            new RegExp('^caracteristiques$'),
-            function () {
-                var pageName = 'caracteristiques'
-                var form = loadPage(pageName, app)
-                questionnaire.caracteristiques(form, app, router)
-            },
-            {
-                before: function (done) {
-                    const target = questionnaire.beforeCaracteristiques(app.profil)
-                    if (target && target !== 'caracteristiques') {
-                        router.navigate(target)
-                        done(false)
-                    } else {
-                        done()
-                    }
-                },
-            }
-        )
-        .on(
-            new RegExp('^activitepro$'),
-            function () {
-                var pageName = 'activitepro'
-                var form = loadPage(pageName, app)
-                questionnaire.activitepro(form, app, router)
-            },
-            {
-                before: function (done) {
-                    const target = questionnaire.beforeActivitePro(app.profil)
-                    if (target && target !== 'activitepro') {
-                        router.navigate(target)
-                        done(false)
-                    } else {
-                        done()
-                    }
-                },
-            }
-        )
-        .on(
-            new RegExp('^symptomesactuels$'),
-            function () {
-                var pageName = 'symptomesactuels'
-                var form = loadPage(pageName, app)
-                questionnaire.symptomesactuels(form, app, router)
-            },
-            {
-                before: function (done) {
-                    const target = questionnaire.beforeSymptomesActuels(app.profil)
-                    if (target && target !== 'symptomesactuels') {
-                        router.navigate(target)
-                        done(false)
-                    } else {
-                        done()
-                    }
-                },
-            }
-        )
-        .on(
-            new RegExp('^symptomespasses$'),
-            function () {
-                var pageName = 'symptomespasses'
-                var form = loadPage(pageName, app)
-                questionnaire.symptomespasses(form, app, router)
-            },
-            {
-                before: function (done) {
-                    const target = questionnaire.beforeSymptomesPasses(app.profil)
-                    if (target && target !== 'symptomespasses') {
-                        router.navigate(target)
-                        done(false)
-                    } else {
-                        done()
-                    }
-                },
-            }
-        )
-        .on(
-            new RegExp('^contactarisque$'),
-            function () {
-                var pageName = 'contactarisque'
-                var form = loadPage(pageName, app)
-                questionnaire.contactarisque(form, app, router)
-            },
-            {
-                before: function (done) {
-                    const target = questionnaire.beforeContactARisque(app.profil)
-                    if (target && target !== 'contactarisque') {
-                        router.navigate(target)
-                        done(false)
-                    } else {
-                        done()
-                    }
-                },
-            }
-        )
-        .on(
-            new RegExp('^conseils$'),
-            function () {
-                var pageName = 'conseils'
-                var element = loadPage(pageName, app)
-                conseils.page(element, app)
-            },
-            {
-                before: function (done) {
-                    const target = conseils.before(app.profil)
-                    if (target && target !== 'conseils') {
-                        router.navigate(target)
-                        done(false)
-                    } else {
-                        done()
-                    }
-                },
-            }
-        )
-        .on(
-            new RegExp('^suiviintroduction$'),
-            function () {
-                var pageName = 'suiviintroduction'
-                var element = loadPage(pageName, app)
-                suiviintroduction.page(element, app)
-            },
-            {
-                before: function (done) {
-                    const target = suiviintroduction.before(app.profil)
-                    if (target && target !== 'suiviintroduction') {
-                        router.navigate(target)
-                        done(false)
-                    } else {
-                        done()
-                    }
-                },
-            }
-        )
-        .on(
-            new RegExp('^suivimedecin$'),
-            function () {
-                var pageName = 'suivimedecin'
-                var element = loadPage(pageName, app)
-                suivimedecin.page(element, app, router)
-            },
-            {
-                before: function (done) {
-                    const target = suivimedecin.before(app.profil)
-                    if (target && target !== 'suivimedecin') {
-                        router.navigate(target)
-                        done(false)
-                    } else {
-                        done()
-                    }
-                },
-            }
-        )
-        .on(
-            new RegExp('^suividate$'),
-            function () {
-                var pageName = 'suividate'
-                var form = loadPage(pageName, app)
-                suividate.page(form, app, router)
-            },
-            {
-                before: function (done) {
-                    const target = suividate.before(app.profil)
-                    if (target && target !== 'suividate') {
-                        router.navigate(target)
-                        done(false)
-                    } else {
-                        done()
-                    }
-                },
-            }
-        )
-        .on(
-            new RegExp('^suivisymptomes$'),
-            function () {
-                var pageName = 'suivisymptomes'
-                var form = loadPage(pageName, app)
-                suivisymptomes.page(form, app, router)
-            },
-            {
-                before: function (done) {
-                    const target = suivisymptomes.before(app.profil)
-                    if (target && target !== 'suivisymptomes') {
-                        router.navigate(target)
-                        done(false)
-                    } else {
-                        done()
-                    }
-                },
-            }
-        )
-        .on(
-            new RegExp('^suivihistorique$'),
-            function () {
-                var pageName = 'suivihistorique'
-                var element = loadPage(pageName, app)
-                suivihistorique.page(element, app)
-            },
-            {
-                before: function (done) {
-                    const target = suivihistorique.before(app.profil)
-                    if (target && target !== 'suivihistorique') {
-                        router.navigate(target)
-                        done(false)
-                    } else {
-                        done()
-                    }
-                },
-            }
-        )
-        .on(new RegExp('^pediatrie$'), function () {
-            var pageName = 'pediatrie'
-            var element = loadPage(pageName)
-            if (app.profil.isComplete()) {
-                showElement(element.querySelector('#js-profil-full'))
-                hideElement(element.querySelector('#js-profil-empty'))
-            }
-        })
-        .on(new RegExp('^medecinedutravail$'), function () {
-            var pageName = 'medecinedutravail'
-            var element = loadPage(pageName)
-            if (app.profil.isComplete()) {
-                showElement(element.querySelector('#js-profil-full'))
-                hideElement(element.querySelector('#js-profil-empty'))
-            }
-        })
-        .on(new RegExp('^conditionsutilisation$'), function () {
-            var pageName = 'conditionsutilisation'
-            var element = loadPage(pageName)
-            if (app.profil.isComplete()) {
-                showElement(element.querySelector('#js-profil-full'))
-                hideElement(element.querySelector('#js-profil-empty'))
-            }
-        })
-        .on(new RegExp('^nouvelleversiondisponible$'), function () {
-            const route = router.lastRouteResolved()
-            const urlParams = new URLSearchParams(route.query)
-            const origine = urlParams.get('origine')
+                    if (!beforeFunc) done()
 
-            var pageName = 'nouvelleversiondisponible'
-            var element = loadPage(pageName)
-            nouvelleversion.page(element, app, origine)
-        })
-        .notFound(function () {
-            router.navigate('introduction')
-        })
+                    const target = beforeFunc(app.profil)
+                    if (target && target !== pageName) {
+                        router.navigate(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
+                },
+            }
+        )
+    }
+
+    addRoute('introduction', function (element) {
+        introduction.page(element, app)
+    })
+
+    addRoute('nom', function (element) {
+        questionnaire.nom(element, app, router)
+    })
+
+    addRoute('residence', function (element) {
+        questionnaire.residence(element, app, router)
+    })
+
+    addRoute(
+        'foyer',
+        function (element) {
+            questionnaire.foyer(element, app, router)
+        },
+        questionnaire.beforeFoyer
+    )
+
+    addRoute(
+        'antecedents',
+        function (element) {
+            questionnaire.antecedents(element, app, router)
+        },
+        questionnaire.beforeAntecedents
+    )
+
+    addRoute(
+        'caracteristiques',
+        function (element) {
+            questionnaire.caracteristiques(element, app, router)
+        },
+        questionnaire.beforeCaracteristiques
+    )
+
+    addRoute(
+        'activitepro',
+        function (element) {
+            questionnaire.activitepro(element, app, router)
+        },
+        questionnaire.beforeActivitePro
+    )
+
+    addRoute(
+        'symptomesactuels',
+        function (element) {
+            questionnaire.symptomesactuels(element, app, router)
+        },
+        questionnaire.beforeSymptomesActuels
+    )
+
+    addRoute(
+        'symptomespasses',
+        function (element) {
+            questionnaire.symptomespasses(element, app, router)
+        },
+        questionnaire.beforeSymptomesPasses
+    )
+
+    addRoute(
+        'contactarisque',
+        function (element) {
+            questionnaire.contactarisque(element, app, router)
+        },
+        questionnaire.beforeContactARisque
+    )
+
+    addRoute(
+        'conseils',
+        function (element) {
+            conseils.page(element, app, router)
+        },
+        conseils.before
+    )
+
+    addRoute(
+        'suiviintroduction',
+        function (element) {
+            suiviintroduction.page(element, app, router)
+        },
+        suiviintroduction.before
+    )
+
+    addRoute(
+        'suivimedecin',
+        function (element) {
+            suivimedecin.page(element, app, router)
+        },
+        suivimedecin.before
+    )
+
+    addRoute(
+        'suividate',
+        function (element) {
+            suividate.page(element, app, router)
+        },
+        suividate.before
+    )
+
+    addRoute(
+        'suivisymptomes',
+        function (element) {
+            suivisymptomes.page(element, app, router)
+        },
+        suivisymptomes.before
+    )
+
+    addRoute(
+        'suivihistorique',
+        function (element) {
+            suivihistorique.page(element, app, router)
+        },
+        suivihistorique.before
+    )
+
+    addRoute('pediatrie', function (element) {
+        if (app.profil.isComplete()) {
+            showElement(element.querySelector('#js-profil-full'))
+            hideElement(element.querySelector('#js-profil-empty'))
+        }
+    })
+
+    addRoute('medecinedutravail', function (element) {
+        if (app.profil.isComplete()) {
+            showElement(element.querySelector('#js-profil-full'))
+            hideElement(element.querySelector('#js-profil-empty'))
+        }
+    })
+
+    addRoute('conditionsutilisation', function (element) {
+        if (app.profil.isComplete()) {
+            showElement(element.querySelector('#js-profil-full'))
+            hideElement(element.querySelector('#js-profil-empty'))
+        }
+    })
+
+    addRoute('nouvelleversiondisponible', function (element) {
+        const route = router.lastRouteResolved()
+        const urlParams = new URLSearchParams(route.query)
+        const origine = urlParams.get('origine')
+
+        nouvelleversion.page(element, app, origine)
+    })
+
+    router.notFound(function () {
+        router.navigate('introduction')
+    })
 
     return router
 }
