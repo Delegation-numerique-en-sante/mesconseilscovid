@@ -16,7 +16,6 @@ import * as suivisymptomes from './page/suivisymptomes.js'
 import * as suivihistorique from './page/suivihistorique.js'
 
 export function initRouter(app) {
-    console.debug('initRouter()')
     var root = null
     var useHash = true
     var router = new Navigo(root, useHash)
@@ -72,8 +71,12 @@ export function initRouter(app) {
             {
                 before: function (done) {
                     const target = questionnaire.beforeFoyer(app.profil)
-                    if (target) router.navigate(target)
-                    done()
+                    if (target && target !== 'foyer') {
+                        router.navigate(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
                 },
             }
         )
@@ -87,8 +90,12 @@ export function initRouter(app) {
             {
                 before: function (done) {
                     const target = questionnaire.beforeAntecedents(app.profil)
-                    if (target) router.navigate(target)
-                    done()
+                    if (target && target !== 'antecedents') {
+                        router.navigate(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
                 },
             }
         )
@@ -102,8 +109,12 @@ export function initRouter(app) {
             {
                 before: function (done) {
                     const target = questionnaire.beforeCaracteristiques(app.profil)
-                    if (target) router.navigate(target)
-                    done()
+                    if (target && target !== 'caracteristiques') {
+                        router.navigate(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
                 },
             }
         )
@@ -117,8 +128,12 @@ export function initRouter(app) {
             {
                 before: function (done) {
                     const target = questionnaire.beforeActivitePro(app.profil)
-                    if (target) router.navigate(target)
-                    done()
+                    if (target && target !== 'activitepro') {
+                        router.navigate(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
                 },
             }
         )
@@ -132,8 +147,12 @@ export function initRouter(app) {
             {
                 before: function (done) {
                     const target = questionnaire.beforeSymptomesActuels(app.profil)
-                    if (target) router.navigate(target)
-                    done()
+                    if (target && target !== 'symptomesactuels') {
+                        router.navigate(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
                 },
             }
         )
@@ -147,8 +166,12 @@ export function initRouter(app) {
             {
                 before: function (done) {
                     const target = questionnaire.beforeSymptomesPasses(app.profil)
-                    if (target) router.navigate(target)
-                    done()
+                    if (target && target !== 'symptomespasses') {
+                        router.navigate(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
                 },
             }
         )
@@ -162,8 +185,12 @@ export function initRouter(app) {
             {
                 before: function (done) {
                     const target = questionnaire.beforeContactARisque(app.profil)
-                    if (target) router.navigate(target)
-                    done()
+                    if (target && target !== 'contactarisque') {
+                        router.navigate(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
                 },
             }
         )
@@ -177,8 +204,12 @@ export function initRouter(app) {
             {
                 before: function (done) {
                     const target = conseils.before(app.profil)
-                    if (target) router.navigate(target)
-                    done()
+                    if (target && target !== 'conseils') {
+                        router.navigate(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
                 },
             }
         )
@@ -192,8 +223,12 @@ export function initRouter(app) {
             {
                 before: function (done) {
                     const target = suiviintroduction.before(app.profil)
-                    if (target) router.navigate(target)
-                    done()
+                    if (target && target !== 'suiviintroduction') {
+                        router.navigate(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
                 },
             }
         )
@@ -207,8 +242,12 @@ export function initRouter(app) {
             {
                 before: function (done) {
                     const target = suivimedecin.before(app.profil)
-                    if (target) router.navigate(target)
-                    done()
+                    if (target && target !== 'suivimedecin') {
+                        router.navigate(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
                 },
             }
         )
@@ -222,8 +261,12 @@ export function initRouter(app) {
             {
                 before: function (done) {
                     const target = suividate.before(app.profil)
-                    if (target) router.navigate(target)
-                    done()
+                    if (target && target !== 'suividate') {
+                        router.navigate(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
                 },
             }
         )
@@ -237,8 +280,12 @@ export function initRouter(app) {
             {
                 before: function (done) {
                     const target = suivisymptomes.before(app.profil)
-                    if (target) router.navigate(target)
-                    done()
+                    if (target && target !== 'suivisymptomes') {
+                        router.navigate(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
                 },
             }
         )
@@ -252,8 +299,12 @@ export function initRouter(app) {
             {
                 before: function (done) {
                     const target = suivihistorique.before(app.profil)
-                    if (target) router.navigate(target)
-                    done()
+                    if (target && target !== 'suivihistorique') {
+                        router.navigate(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
                 },
             }
         )
