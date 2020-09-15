@@ -49,17 +49,22 @@ export default class Profil {
 
     resetData(nom) {
         this.nom = nom
+
         this.departement = undefined
+
         this.activite_pro = undefined
         this.activite_pro_public = undefined
         this.activite_pro_sante = undefined
         this.activite_pro_liberal = undefined
+
         this.foyer_enfants = undefined
         this.foyer_fragile = undefined
+
         this.age = undefined
         this.grossesse_3e_trimestre = undefined
         this.poids = undefined
         this.taille = undefined
+
         this.antecedent_cardio = undefined
         this.antecedent_diabete = undefined
         this.antecedent_respi = undefined
@@ -69,6 +74,7 @@ export default class Profil {
         this.antecedent_cirrhose = undefined
         this.antecedent_drepano = undefined
         this.antecedent_chronique_autre = undefined
+
         this.symptomes_actuels = undefined
         this.symptomes_actuels_temperature = undefined
         this.symptomes_actuels_temperature_inconnue = undefined
@@ -80,7 +86,9 @@ export default class Profil {
         this.symptomes_actuels_alimentation = undefined
         this.symptomes_actuels_souffle = undefined
         this.symptomes_actuels_autre = undefined
+
         this.symptomes_passes = undefined
+
         this.contact_a_risque = undefined
         this.contact_a_risque_meme_lieu_de_vie = undefined
         this.contact_a_risque_contact_direct = undefined
@@ -89,22 +97,30 @@ export default class Profil {
         this.contact_a_risque_meme_classe = undefined
         this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_autre = undefined
+
         this.suivi_active = false
         this.resetSuivi()
+
+        this.questionnaire_started = false
+        this.questionnaire_completed = false
     }
 
     fillData(data) {
         this.departement = data['departement']
+
         this.activite_pro = data['activite_pro']
         this.activite_pro_public = data['activite_pro_public']
         this.activite_pro_sante = data['activite_pro_sante']
         this.activite_pro_liberal = data['activite_pro_liberal']
+
         this.foyer_enfants = data['foyer_enfants']
         this.foyer_fragile = data['foyer_fragile']
+
         this.age = data['age']
         this.grossesse_3e_trimestre = data['grossesse_3e_trimestre']
         this.poids = data['poids']
         this.taille = data['taille']
+
         this.antecedent_cardio = data['antecedent_cardio']
         this.antecedent_diabete = data['antecedent_diabete']
         this.antecedent_respi = data['antecedent_respi']
@@ -114,6 +130,7 @@ export default class Profil {
         this.antecedent_cirrhose = data['antecedent_cirrhose']
         this.antecedent_drepano = data['antecedent_drepano']
         this.antecedent_chronique_autre = data['antecedent_chronique_autre']
+
         this.symptomes_actuels = data['symptomes_actuels']
         this.symptomes_actuels_temperature = data['symptomes_actuels_temperature']
         this.symptomes_actuels_temperature_inconnue =
@@ -126,7 +143,9 @@ export default class Profil {
         this.symptomes_actuels_alimentation = data['symptomes_actuels_alimentation']
         this.symptomes_actuels_souffle = data['symptomes_actuels_souffle']
         this.symptomes_actuels_autre = data['symptomes_actuels_autre']
+
         this.symptomes_passes = data['symptomes_passes']
+
         this.contact_a_risque = data['contact_a_risque']
         this.contact_a_risque_meme_lieu_de_vie =
             data['contact_a_risque_meme_lieu_de_vie']
@@ -136,11 +155,33 @@ export default class Profil {
         this.contact_a_risque_meme_classe = data['contact_a_risque_meme_classe']
         this.contact_a_risque_stop_covid = data['contact_a_risque_stop_covid']
         this.contact_a_risque_autre = data['contact_a_risque_autre']
+
         this._suivi_start_date = data['_suivi_start_date']
         this._symptomes_start_date = data['_symptomes_start_date']
         this._deconfinement_date = data['_deconfinement_date']
         this.suivi_active = data['suivi_active'] || false
         this.suivi = data['suivi'] || []
+
+        this.fillQuestionnaireStarted(data['questionnaire_started'])
+        this.fillQuestionnaireCompleted(data['questionnaire_completed'])
+    }
+
+    fillQuestionnaireStarted(value) {
+        if (typeof value !== 'undefined') {
+            this.questionnaire_started = value
+        } else {
+            // Migration d’un ancien profil : calculer la donnée manquante
+            this.questionnaire_started = !this.isEmpty()
+        }
+    }
+
+    fillQuestionnaireCompleted(value) {
+        if (typeof value !== 'undefined') {
+            this.questionnaire_completed = value
+        } else {
+            // Migration d’un ancien profil : calculer la donnée manquante
+            this.questionnaire_completed = this.isComplete()
+        }
     }
 
     getData() {
@@ -191,6 +232,8 @@ export default class Profil {
             _symptomes_start_date: this._symptomes_start_date,
             _deconfinement_date: this._deconfinement_date,
             suivi: this.suivi,
+            questionnaire_started: this.questionnaire_started,
+            questionnaire_completed: this.questionnaire_completed,
         }
     }
 
