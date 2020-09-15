@@ -1,4 +1,4 @@
-<span class="nouveau">nouveau</span> **À compter du 20 juillet 2020, toute personne de 11 ans et plus [doit porter un masque grand public dans les lieux publics clos](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/port-du-masque-grand-public-obligatoire-en-lieux-clos-faq).**
+**À compter du 20 juillet 2020, toute personne de 11 ans et plus [doit porter un masque grand public dans les lieux publics clos](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/port-du-masque-grand-public-obligatoire-en-lieux-clos-faq).**
 
 Le Covid-19 n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de [consulter au moindre signe de maladie](https://solidarites-sante.gouv.fr/IMG/pdf/j_ai_des_symptomes_que_dois-je_faire_-_infographie.pdf).
 
