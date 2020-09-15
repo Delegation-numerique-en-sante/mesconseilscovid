@@ -9,6 +9,7 @@ export default class App {
     constructor() {
         this.profil = new Profil()
         this.stockage = new StockageLocal()
+        this._plausibleTrackingEvents = []
     }
     init() {
         this.router = initRouter(this)
