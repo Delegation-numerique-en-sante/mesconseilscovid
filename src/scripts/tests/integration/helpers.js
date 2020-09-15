@@ -1,3 +1,9 @@
+export async function getPlausibleTrackingEvents(page) {
+    return await page.evaluate(() => {
+        return window.app._plausibleTrackingEvents
+    })
+}
+
 export async function remplirQuestionnaire(page, choix) {
     await remplirDepartement(page, choix.departement)
     await remplirFoyer(page, choix.enfants)

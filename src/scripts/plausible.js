@@ -46,7 +46,10 @@
             location.protocol === 'file:'
         ) {
             ignore('running locally')
-            console.debug('[Plausible]', JSON.stringify(payload))
+            window.app._plausibleTrackingEvents.push(
+                `${payload.name}:${location.hash.slice(1)}`
+            )
+            console.debug('[Plausible]', payload)
             return
         }
         var request = new XMLHttpRequest()
