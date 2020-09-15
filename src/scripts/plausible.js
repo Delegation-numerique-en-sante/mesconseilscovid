@@ -46,7 +46,7 @@
             location.protocol === 'file:'
         ) {
             ignore('running locally')
-            console.debug(payload)
+            console.debug('[Plausible]', JSON.stringify(payload))
             return
         }
         var request = new XMLHttpRequest()
