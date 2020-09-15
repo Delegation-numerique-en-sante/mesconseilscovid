@@ -48,6 +48,7 @@ describe('Parcours', function () {
             symptomesActuels: [],
             symptomesPasses: false,
         })
+        assert.include(this.test.plausibleTrackingNames, 'Questionnaire commencé')
 
         // Conseils
         {
@@ -67,6 +68,10 @@ describe('Parcours', function () {
                 (await activite.innerText()).trim(),
                 'Vous exercez une activité professionnelle et/ou bénévole (modifier)'
             )
+
+            assert.include(this.test.plausibleTrackingNames, 'Questionnaire terminé')
+
+            // On retourne à l'intro
             let bouton = await page.waitForSelector(
                 '#page >> text="Refaire le questionnaire"'
             )
