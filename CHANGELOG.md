@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-09-15
+
+* correction de bugs et mise à jour des incidences
+
 ## 2020-09-14
 
 * passe la durée d’isolement recommandée à 7 jours
