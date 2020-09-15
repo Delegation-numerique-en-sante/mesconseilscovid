@@ -54,7 +54,10 @@ export function initRouter(app) {
             },
             {
                 before: function (done) {
-                    if (!beforeFunc) done()
+                    if (typeof beforeFunc === 'undefined') {
+                        done()
+                        return
+                    }
 
                     const target = beforeFunc(app.profil)
                     if (target && target !== pageName) {
