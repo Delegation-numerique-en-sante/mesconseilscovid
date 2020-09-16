@@ -1,5 +1,5 @@
 import { assert } from 'chai'
-import { getPlausibleTrackingEvents, remplirQuestionnaire } from './helpers.js'
+import { remplirQuestionnaire, waitForPlausibleTrackingEvents } from './helpers.js'
 
 describe('Plausible', function () {
     it('accès à une page', async function () {
@@ -10,8 +10,8 @@ describe('Plausible', function () {
             await page.title(),
             'Mes conseils Covid — Des conseils personnalisés pour agir contre le virus'
         )
-        const plausibleTrackingEvents = await getPlausibleTrackingEvents(page)
-        assert.deepEqual(plausibleTrackingEvents, ['pageview:introduction'])
+
+        await waitForPlausibleTrackingEvents(page, ['pageview:introduction'])
     })
 
     it('drapeau sur une page', async function () {
@@ -29,8 +29,8 @@ describe('Plausible', function () {
             await form.innerHTML(),
             'Merci de nous avoir signalé vos difficultés avec cette page.'
         )
-        const plausibleTrackingEvents = await getPlausibleTrackingEvents(page)
-        assert.deepEqual(plausibleTrackingEvents, [
+
+        await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
             'Avis flag:introduction',
         ])
@@ -60,11 +60,11 @@ describe('Plausible', function () {
         await bouton.click()
         const form = await page.waitForSelector('.feedback-component .feedback-form')
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
-        const plausibleTrackingEvents = await getPlausibleTrackingEvents(page)
-        assert.deepEqual(plausibleTrackingEvents, [
+
+        await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
-            'pageview:residence',
             'Questionnaire commencé:residence',
+            'pageview:residence',
             'pageview:foyer',
             'pageview:antecedents',
             'pageview:caracteristiques',
@@ -72,8 +72,8 @@ describe('Plausible', function () {
             'pageview:symptomesactuels',
             'pageview:symptomespasses',
             'pageview:contactarisque',
-            'pageview:conseils',
             'Questionnaire terminé:conseils',
+            'pageview:conseils',
             'Avis positif:conseils',
         ])
     })
@@ -102,11 +102,11 @@ describe('Plausible', function () {
         await bouton.click()
         const form = await page.waitForSelector('.feedback-component .feedback-form')
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
-        const plausibleTrackingEvents = await getPlausibleTrackingEvents(page)
-        assert.deepEqual(plausibleTrackingEvents, [
+
+        await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
-            'pageview:residence',
             'Questionnaire commencé:residence',
+            'pageview:residence',
             'pageview:foyer',
             'pageview:antecedents',
             'pageview:caracteristiques',
@@ -114,8 +114,8 @@ describe('Plausible', function () {
             'pageview:symptomesactuels',
             'pageview:symptomespasses',
             'pageview:contactarisque',
-            'pageview:conseils',
             'Questionnaire terminé:conseils',
+            'pageview:conseils',
             'Avis negatif:conseils',
         ])
     })

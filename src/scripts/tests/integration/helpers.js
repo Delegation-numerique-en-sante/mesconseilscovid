@@ -4,6 +4,25 @@ export async function getPlausibleTrackingEvents(page) {
     })
 }
 
+export async function waitForPlausibleTrackingEvent(page, name) {
+    await page.waitForFunction((name) => {
+        return window.app._plausibleTrackingEvents.includes(name)
+    }, name)
+    return await getPlausibleTrackingEvents(page)
+}
+
+export async function waitForPlausibleTrackingEvents(page, names) {
+    await page.waitForFunction(
+        (events) =>
+            window.app._plausibleTrackingEvents.length === events.length &&
+            window.app._plausibleTrackingEvents.every(
+                (val, index) => val === events[index]
+            ),
+        names,
+        { timeout: 2000 }
+    )
+}
+
 export async function remplirQuestionnaire(page, choix) {
     await remplirDepartement(page, choix.departement)
     await remplirFoyer(page, choix.enfants)

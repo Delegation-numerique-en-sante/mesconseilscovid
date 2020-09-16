@@ -1,5 +1,5 @@
 import { assert } from 'chai'
-import { getPlausibleTrackingEvents, remplirQuestionnaire } from './helpers.js'
+import { remplirQuestionnaire, waitForPlausibleTrackingEvent } from './helpers.js'
 
 describe('Parcours', function () {
     it('titre de la page', async function () {
@@ -48,8 +48,8 @@ describe('Parcours', function () {
             symptomesActuels: [],
             symptomesPasses: false,
         })
-        const plausibleTrackingEvents = await getPlausibleTrackingEvents(page)
-        assert.include(plausibleTrackingEvents, 'Questionnaire commencé:residence')
+
+        await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:residence')
 
         // Conseils
         {
@@ -70,8 +70,7 @@ describe('Parcours', function () {
                 'Vous exercez une activité professionnelle et/ou bénévole (modifier)'
             )
 
-            const plausibleTrackingEvents = await getPlausibleTrackingEvents(page)
-            assert.include(plausibleTrackingEvents, 'Questionnaire terminé:conseils')
+            await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
 
             // On retourne à l'intro
             let bouton = await page.waitForSelector(
