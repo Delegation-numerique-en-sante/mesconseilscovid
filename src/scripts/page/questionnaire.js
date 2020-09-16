@@ -13,7 +13,6 @@ import geolocalisation from '../geoloc.js'
 export function nom(form, app, router) {
     // Premier démarrage du formulaire ?
     if (!app.profil.questionnaire_started) {
-        console.debug(`Questionnaire commencé`)
         app.profil.questionnaire_started = true
         app.enregistrerProfilActuel()
         window.plausible(`Questionnaire commencé`)
@@ -34,7 +33,6 @@ export function nom(form, app, router) {
 export function residence(form, app, router) {
     // Premier démarrage du formulaire ?
     if (!app.profil.questionnaire_started) {
-        console.debug(`Questionnaire commencé`)
         app.profil.questionnaire_started = true
         app.enregistrerProfilActuel()
         window.plausible(`Questionnaire commencé`)

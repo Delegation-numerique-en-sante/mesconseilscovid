@@ -54,7 +54,6 @@ export function page(element, app) {
 
     // Première complétion du formulaire ?
     if (!app.profil.questionnaire_completed) {
-        console.debug(`Questionnaire terminé`)
         app.profil.questionnaire_completed = true
         app.enregistrerProfilActuel()
         window.plausible(`Questionnaire terminé`)
