@@ -65,28 +65,17 @@
         }
     }
 
-    function page() {
-        trigger('pageview')
-    }
-
     try {
-        var his = window.history
-        if (his.pushState) {
-            var originalPushState = his['pushState']
-            his.pushState = function () {
-                originalPushState.apply(this, arguments)
-                page()
-            }
-            window.addEventListener('popstate', page)
-        }
-
         var queue = (window.plausible && window.plausible.q) || []
         window.plausible = trigger
         for (var i = 0; i < queue.length; i++) {
             trigger.apply(this, queue[i])
         }
 
-        page()
+        // Seulement pour la racine, sinon ça fait doublon
+        if (location.hash.slice(1) === '') {
+            trigger('pageview')
+        }
     } catch (e) {
         new Image().src =
             plausibleHost + '/api/error?message=' + encodeURIComponent(e.message)

@@ -51,6 +51,7 @@ export function initRouter(app) {
             function () {
                 var element = loadPage(pageName)
                 viewFunc(element)
+                window.plausible('pageview')
             },
             {
                 before: function (done) {
