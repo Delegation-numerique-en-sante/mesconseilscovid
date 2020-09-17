@@ -28,7 +28,7 @@
   "scripts": {
     "test": "mocha --require @babel/register src/scripts/tests/",
     "test:coverage": "nyc npm run test",
-    "test-integration": "mocha --require @babel/register --bail --timeout 10000 src/scripts/tests/integration/",
+    "test-integration": "mocha --require @babel/register --bail --timeout 15000 src/scripts/tests/integration/",
     "lint": "eslint src/scripts/ src/service-worker.js",
     "prebuild": "rm -rf dist",
     "build": "parcel build src/index.html --detailed-report 20 --experimental-scope-hoisting",
