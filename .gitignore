@@ -3,7 +3,6 @@ cert.pem
 dist/
 node_modules/
 src/index.html
-package-lock.json
 .cache
 .nyc_output
 __pycache__
