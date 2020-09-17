@@ -1,5 +1,11 @@
 # Changelog
 
+## 2020-09-17
+
+* dirige directement vers le questionnaire de suivi en cas de symptômes
+* met à jour les taux d’incidence
+* met à jour les liens vers les consignes préfectorales
+
 ## 2020-09-15
 
 * correction de bugs et mise à jour des incidences
