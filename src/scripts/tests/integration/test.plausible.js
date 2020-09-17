@@ -1,5 +1,9 @@
 import { assert } from 'chai'
-import { remplirQuestionnaire, waitForPlausibleTrackingEvents } from './helpers.js'
+import {
+    remplirQuestionnaire,
+    waitForPlausibleTrackingEvent,
+    waitForPlausibleTrackingEvents,
+} from './helpers.js'
 
 describe('Plausible', function () {
     it('accès à une page', async function () {
@@ -41,10 +45,12 @@ describe('Plausible', function () {
 
         await page.goto('http://localhost:8080/#introduction')
         let bouton = await page.waitForSelector('text="Démarrer"')
+
         await Promise.all([
             bouton.click(),
             page.waitForNavigation({ url: '**/#residence' }),
         ])
+
         await remplirQuestionnaire(page, {
             departement: '80',
             activitePro: true,
@@ -56,9 +62,20 @@ describe('Plausible', function () {
             symptomesActuels: [],
             symptomesPasses: false,
         })
-        bouton = await page.waitForSelector('.feedback-component >> text="Oui"')
-        await bouton.click()
-        const form = await page.waitForSelector('.feedback-component .feedback-form')
+
+        await waitForPlausibleTrackingEvent(page, 'pageview:conseils')
+
+        bouton = await page.waitForSelector('#page .button-feedback-positif')
+
+        await Promise.all([
+            bouton.click(),
+            page.waitForSelector('#page .feedback-component .feedback-form'),
+        ])
+
+        const form = await page.waitForSelector(
+            '#page .feedback-component .feedback-form'
+        )
+
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
         await waitForPlausibleTrackingEvents(page, [
@@ -98,9 +115,20 @@ describe('Plausible', function () {
             symptomesActuels: [],
             symptomesPasses: false,
         })
-        bouton = await page.waitForSelector('.feedback-component >> text="Non"')
-        await bouton.click()
-        const form = await page.waitForSelector('.feedback-component .feedback-form')
+
+        await waitForPlausibleTrackingEvent(page, 'pageview:conseils')
+
+        bouton = await page.waitForSelector('#page .button-feedback-negatif')
+
+        await Promise.all([
+            bouton.click(),
+            page.waitForSelector('#page .feedback-component .feedback-form'),
+        ])
+
+        const form = await page.waitForSelector(
+            '#page .feedback-component .feedback-form'
+        )
+
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
         await waitForPlausibleTrackingEvents(page, [
