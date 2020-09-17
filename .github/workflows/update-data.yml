@@ -23,7 +23,7 @@ jobs:
 
       - name: Install Prettier
         run: |
-          npm install prettier
+          npm install prettier --no-save
 
       - name: Update incidence data
         run: |
@@ -59,7 +59,7 @@ jobs:
 
       - name: Install Prettier
         run: |
-          npm install prettier
+          npm install prettier --no-save
 
       - name: Update prefectures data
         run: |
