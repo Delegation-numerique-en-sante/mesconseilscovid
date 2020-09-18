@@ -34,7 +34,7 @@ Dans les autres cas, vous pouvez emmener votre(vos) enfant(s) dans les parcs et 
 
 * Lui laver les mains à l’eau et au savon avant de quitter le domicile et en rentrant
 * Respecter dans la mesure du possible une distanciation physique avec les autres personnes
-* Ne pas partager les jouets individuels entre les enfants
+* Éviter de partager les jouets individuels entre les enfants
 * En cas de contact rapproché avec un enfant présentant des symptômes apparents (rhume et/ou toux), faire un lavage des mains à l’eau et au savon ou sinon au gel hydro-alcoolique
 
 
@@ -106,6 +106,34 @@ Il est primordial de maintenir l’ensemble des vaccinations de vos enfants dans
 
 Les consultations pour vaccination ne doivent pas être reportées et les retards de vaccinations doivent être rattrapés. 
  
+
+#### Mon enfant de moins de 6 ans a le nez qui coule et tousse mais n’a pas de fièvre, dois-je le sortir de l’école maternelle ?
+
+**NON**, sauf s’il a été en contact avec un adulte ou un autre enfant dont l’infection au coronavirus a été prouvée.
+
+S’il apparaît de la fièvre ou si cette « rhino » se prolonge au dela de 3 jours, il doit rester à domicile et consulter un médecin.
+
+
+#### Mon enfant est asymptomatique et a été testé positif au coronavirus, que dois-je faire pour l’école ?
+
+Il doit rester au domicile pendant 7 jours, un contrôle de la PCR n’est pas nécessaire pour le retour en collectivité et l’école ne peut pas exiger de certificat médical. 
+
+
+#### Mon enfant asymptomatique, mais contact d’un autre enfant malade, a été testé positif au coronavirus, dois-je m’inquiéter ?
+
+**NON** les enfants ont 100 fois moins de risque d’hospitalisation et 1000 fois moins de risque de forme grave que les adultes. 
+S’il présente de la fièvre ou s’il a des signes de rhinopharyngite ou des troubles digestifs, une consultation médicale est souhaitable. S’il apparait une gêne respiratoire, la consultation médicale est urgente.
+
+
+#### Mon enfant de plus de 6 ans est malade mais le médecin n’a pas prescrit un test de dépistage du COVID par PCR. Que dois-je faire pour l’école ?
+
+L’enfant malade ne doit pas retourner à l’école tant qu’il a des symptômes ; si ceux-ci persistent au-delà du 3<sup>e</sup> jour, recontactez votre médecin car la réalisation d’un test peut alors être nécessaire. S’il est négatif, il peut retourner à l’école dès la fin des symptômes. Un certificat médical n’est pas nécessaire pour retourner à l’école.
+
+
+#### Aucun cas n’a été identifié dans l’école mais je réside dans une région où la maladie est très fréquente. Dois-je faire faire régulièrement un test de dépistage à mon enfant ? 
+
+**NON**, les enfants ont 10 fois moins de risque d’attraper la Covid que les adultes. S’ils sont infectés, ils sont beaucoup moins contagieux, surtout s’ils n’ont aucun symptôme. De plus, le test nasal est difficile et peut être douloureux chez le jeune enfant. 
+
 </div>
 
 <div class="conseils">
