@@ -1,5 +1,11 @@
 # Changelog
 
+## 2020-09-20
+
+* met à jour la page pédiatrie
+* met à jour les taux d’incidence
+* supprime un lien vers une infographie disparue
+
 ## 2020-09-17
 
 * dirige directement vers le questionnaire de suivi en cas de symptômes
