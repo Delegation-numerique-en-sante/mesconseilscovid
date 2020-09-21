@@ -1,9 +1,5 @@
 import { preloadCheckboxForm } from '../../formutils.js'
 
-export function beforeFoyer(profil) {
-    if (!profil.isResidenceComplete()) return 'residence'
-}
-
 export function foyer(form, app) {
     preloadCheckboxForm(form, 'foyer_enfants', app.profil)
     preloadCheckboxForm(form, 'foyer_fragile', app.profil)

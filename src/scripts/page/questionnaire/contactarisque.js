@@ -4,15 +4,6 @@ import {
     toggleFormButtonOnCheckRequired,
 } from '../../formutils.js'
 
-import { beforeSymptomesPasses } from './symptomespasses.js'
-
-export function beforeContactARisque(profil) {
-    const target = beforeSymptomesPasses(profil)
-    if (target) return target
-    if (!profil.isSymptomesPassesComplete()) return 'symptomespasses'
-    if (profil.symptomes_passes === true) return 'conseils'
-}
-
 export function contactarisque(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'contact_a_risque', app.profil)

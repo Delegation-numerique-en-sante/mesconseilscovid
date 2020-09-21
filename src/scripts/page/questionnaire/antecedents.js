@@ -1,12 +1,5 @@
 import { preloadCheckboxForm, toggleFormButtonOnCheck } from '../../formutils.js'
 
-import { beforeFoyer } from './foyer.js'
-
-export function beforeAntecedents(profil) {
-    beforeFoyer(profil)
-    if (!profil.isFoyerComplete()) return 'foyer'
-}
-
 export function antecedents(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'antecedent_cardio', app.profil)

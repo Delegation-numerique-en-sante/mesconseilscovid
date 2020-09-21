@@ -1,15 +1,5 @@
 import { preloadCheckboxForm, toggleFormButtonOnCheck } from '../../formutils.js'
 
-import { beforeSymptomesActuels } from './symptomesactuels.js'
-
-export function beforeSymptomesPasses(profil) {
-    const target = beforeSymptomesActuels(profil)
-    if (target) return target
-    if (!profil.isSymptomesActuelsComplete()) return 'symptomesactuels'
-    if (profil.symptomes_actuels === true && profil.symptomes_actuels_autre === false)
-        return 'conseils'
-}
-
 export function symptomespasses(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'symptomes_passes', app.profil)

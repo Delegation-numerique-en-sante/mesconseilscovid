@@ -13,33 +13,6 @@ import incidenceParDepartement from '../data/incidence.js'
 import AlgorithmeOrientation from '../algorithme/orientation.js'
 import AlgorithmeSuivi from '../algorithme/suivi.js'
 
-import { beforeSymptomesActuels } from '../page/questionnaire/symptomesactuels.js'
-import { beforeSymptomesPasses } from '../page/questionnaire/symptomespasses.js'
-import { beforeContactARisque } from '../page/questionnaire/contactarisque.js'
-
-export function before(profil) {
-    if (profil.isContactARisqueComplete()) {
-        return beforeContactARisque(profil)
-    } else if (profil.isSymptomesPassesComplete()) {
-        if (profil.symptomes_passes === false) {
-            return 'contactarisque'
-        } else {
-            return beforeSymptomesPasses(profil)
-        }
-    } else if (profil.isSymptomesActuelsComplete()) {
-        if (
-            profil.symptomes_actuels === false ||
-            profil.symptomes_actuels_autre === true
-        ) {
-            return 'symptomespasses'
-        } else {
-            return beforeSymptomesActuels(profil)
-        }
-    } else {
-        return beforeSymptomesActuels(profil) || 'symptomesactuels'
-    }
-}
-
 export function page(element, app) {
     // Hide all conseils that might have been made visible on previous runs.
     hideSelector(element, '.visible')

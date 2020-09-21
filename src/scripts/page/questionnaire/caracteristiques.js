@@ -4,13 +4,6 @@ import {
     toggleFormButtonOnTextFieldsRequired,
 } from '../../formutils.js'
 
-import { beforeAntecedents } from './antecedents.js'
-
-export function beforeCaracteristiques(profil) {
-    beforeAntecedents(profil)
-    if (!profil.isAntecedentsComplete()) return 'antecedents'
-}
-
 export function caracteristiques(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadForm(form, 'age', app.profil)
