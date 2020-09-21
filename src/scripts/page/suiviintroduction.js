@@ -1,6 +1,6 @@
 import { bindCalendar } from '../actions.js'
 
-export function page(element, app) {
+export default function suiviintroduction(element, app) {
     const container = element.querySelector('#profils-cards-suivi')
     const card = container.insertBefore(
         app.profil.renderCardSuivi(),

@@ -1,6 +1,6 @@
 import { joursAvant } from '../utils.js'
 
-export function page(form, app) {
+export default function suividate(form, app) {
     // Enregistre le démarrage du suivi
     if (!app.profil.hasSuiviStartDate()) {
         app.profil.suivi_start_date = new Date()

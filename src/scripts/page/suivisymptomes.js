@@ -6,7 +6,7 @@ import {
 
 import AlgorithmeDeconfinement from '../algorithme/deconfinement.js'
 
-export function page(form, app) {
+export default function suivisymptomes(form, app) {
     // Question affichée seulement si on répond pour un proche
     const pourUnProche = !app.profil.estMonProfil()
     var themOnly = form.querySelector('.them-only')

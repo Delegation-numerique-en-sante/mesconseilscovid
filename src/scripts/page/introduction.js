@@ -1,7 +1,7 @@
 import Profil from '../profil.js'
 import { createElementFromHTML, hideElement } from '../affichage.js'
 
-export function page(element, app) {
+export default function introduction(element, app) {
     const container = element.querySelector('#profils-cards')
     app.stockage.getProfils().then((noms) => {
         if (noms.length) {

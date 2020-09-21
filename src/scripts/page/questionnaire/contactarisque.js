@@ -4,7 +4,7 @@ import {
     toggleFormButtonOnCheckRequired,
 } from '../../formutils.js'
 
-export function contactarisque(form, app) {
+export default function contactarisque(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'contact_a_risque', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_meme_lieu_de_vie', app.profil)

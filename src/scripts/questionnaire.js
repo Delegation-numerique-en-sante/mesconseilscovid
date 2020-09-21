@@ -162,6 +162,10 @@ export const questions = {
 }
 
 class Questionnaire {
+    before(page) {
+        const question = questions[page]
+        if (typeof question !== 'undefined') return question.before
+    }
     nextPage(currentPage, profil) {
         const question = questions[currentPage]
         if (typeof question.next !== 'undefined') return question.next(profil)
