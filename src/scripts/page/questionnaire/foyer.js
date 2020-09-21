@@ -1,6 +1,6 @@
 import { preloadCheckboxForm } from '../../formutils.js'
 
-export function foyer(form, app) {
+export default function foyer(form, app) {
     preloadCheckboxForm(form, 'foyer_enfants', app.profil)
     preloadCheckboxForm(form, 'foyer_fragile', app.profil)
     form.addEventListener('submit', function (event) {

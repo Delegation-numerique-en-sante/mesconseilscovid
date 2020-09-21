@@ -13,7 +13,7 @@ import incidenceParDepartement from '../data/incidence.js'
 import AlgorithmeOrientation from '../algorithme/orientation.js'
 import AlgorithmeSuivi from '../algorithme/suivi.js'
 
-export function page(element, app) {
+export default function conseils(element, app) {
     // Hide all conseils that might have been made visible on previous runs.
     hideSelector(element, '.visible')
 

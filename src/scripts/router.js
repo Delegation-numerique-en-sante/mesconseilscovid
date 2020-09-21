@@ -3,27 +3,27 @@ import Navigo from 'navigo'
 import { hideElement, showElement } from './affichage.js'
 import { nomProfil } from './injection.js'
 import { getCurrentPageName, loadPage } from './pagination.js'
-import { questions } from './questionnaire.js'
 
-import * as introduction from './page/introduction.js'
-import * as nouvelleversion from './page/nouvelleversion.js'
+import introduction from './page/introduction.js'
+
+import nouvelleversion from './page/nouvelleversion.js'
 
 import nom from './page/questionnaire/nom.js'
 import residence from './page/questionnaire/residence.js'
-import { foyer } from './page/questionnaire/foyer.js'
-import { antecedents } from './page/questionnaire/antecedents.js'
-import { caracteristiques } from './page/questionnaire/caracteristiques.js'
-import { activitepro } from './page/questionnaire/activitepro.js'
-import { symptomesactuels } from './page/questionnaire/symptomesactuels.js'
-import { symptomespasses } from './page/questionnaire/symptomespasses.js'
-import { contactarisque } from './page/questionnaire/contactarisque.js'
+import foyer from './page/questionnaire/foyer.js'
+import antecedents from './page/questionnaire/antecedents.js'
+import caracteristiques from './page/questionnaire/caracteristiques.js'
+import activitepro from './page/questionnaire/activitepro.js'
+import symptomesactuels from './page/questionnaire/symptomesactuels.js'
+import symptomespasses from './page/questionnaire/symptomespasses.js'
+import contactarisque from './page/questionnaire/contactarisque.js'
 
-import * as conseils from './page/conseils.js'
+import conseils from './page/conseils.js'
 
-import * as suiviintroduction from './page/suiviintroduction.js'
-import * as suividate from './page/suividate.js'
-import * as suivisymptomes from './page/suivisymptomes.js'
-import * as suivihistorique from './page/suivihistorique.js'
+import suiviintroduction from './page/suiviintroduction.js'
+import suividate from './page/suividate.js'
+import suivisymptomes from './page/suivisymptomes.js'
+import suivihistorique from './page/suivihistorique.js'
 
 export function initRouter(app) {
     var root = null
@@ -54,6 +54,13 @@ export function initRouter(app) {
             document.dispatchEvent(new CustomEvent('pageChanged', { detail: pageName }))
         },
     })
+
+    function addQuestionnaireRoute(pageName, view) {
+        function viewFunc(element) {
+            view(element, app)
+        }
+        addRoute(pageName, viewFunc, app.questionnaire.before(pageName))
+    }
 
     function addRoute(pageName, viewFunc, beforeFunc) {
         router.on(
@@ -92,113 +99,21 @@ export function initRouter(app) {
         )
     }
 
-    addRoute('introduction', function (element) {
-        introduction.page(element, app)
-    })
-
-    addRoute('nom', function (element) {
-        nom(element, app)
-    })
-
-    addRoute('residence', function (element) {
-        residence(element, app)
-    })
-
-    addRoute(
-        'foyer',
-        function (element) {
-            foyer(element, app)
-        },
-        questions.foyer.before
-    )
-
-    addRoute(
-        'antecedents',
-        function (element) {
-            antecedents(element, app)
-        },
-        questions.antecedents.before
-    )
-
-    addRoute(
-        'caracteristiques',
-        function (element) {
-            caracteristiques(element, app)
-        },
-        questions.caracteristiques.before
-    )
-
-    addRoute(
-        'activitepro',
-        function (element) {
-            activitepro(element, app)
-        },
-        questions.activitepro.before
-    )
-
-    addRoute(
-        'symptomesactuels',
-        function (element) {
-            symptomesactuels(element, app)
-        },
-        questions.symptomesactuels.before
-    )
-
-    addRoute(
-        'symptomespasses',
-        function (element) {
-            symptomespasses(element, app)
-        },
-        questions.symptomespasses.before
-    )
-
-    addRoute(
-        'contactarisque',
-        function (element) {
-            contactarisque(element, app)
-        },
-        questions.contactarisque.before
-    )
-
-    addRoute(
-        'conseils',
-        function (element) {
-            conseils.page(element, app)
-        },
-        questions.conseils.before
-    )
-
-    addRoute(
-        'suiviintroduction',
-        function (element) {
-            suiviintroduction.page(element, app)
-        },
-        questions.suiviintroduction.before
-    )
-
-    addRoute(
-        'suividate',
-        function (element) {
-            suividate.page(element, app)
-        },
-        questions.suividate.before
-    )
-
-    addRoute(
-        'suivisymptomes',
-        function (element) {
-            suivisymptomes.page(element, app)
-        },
-        questions.suivisymptomes.before
-    )
-
-    addRoute(
-        'suivihistorique',
-        function (element) {
-            suivihistorique.page(element, app)
-        },
-        questions.suivihistorique.before
-    )
+    addQuestionnaireRoute('introduction', introduction)
+    addQuestionnaireRoute('nom', nom)
+    addQuestionnaireRoute('residence', residence)
+    addQuestionnaireRoute('foyer', foyer)
+    addQuestionnaireRoute('antecedents', antecedents)
+    addQuestionnaireRoute('caracteristiques', caracteristiques)
+    addQuestionnaireRoute('activitepro', activitepro)
+    addQuestionnaireRoute('symptomesactuels', symptomesactuels)
+    addQuestionnaireRoute('symptomespasses', symptomespasses)
+    addQuestionnaireRoute('contactarisque', contactarisque)
+    addQuestionnaireRoute('conseils', conseils)
+    addQuestionnaireRoute('suiviintroduction', suiviintroduction)
+    addQuestionnaireRoute('suividate', suividate)
+    addQuestionnaireRoute('suivisymptomes', suivisymptomes)
+    addQuestionnaireRoute('suivihistorique', suivihistorique)
 
     addRoute('pediatrie', function (element) {
         if (app.profil.isComplete()) {
@@ -226,7 +141,7 @@ export function initRouter(app) {
         const urlParams = new URLSearchParams(route.query)
         const origine = urlParams.get('origine')
 
-        nouvelleversion.page(element, app, origine)
+        nouvelleversion(element, app, origine)
     })
 
     router.notFound(function () {

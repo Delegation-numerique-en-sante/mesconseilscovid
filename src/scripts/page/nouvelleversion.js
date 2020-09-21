@@ -1,4 +1,4 @@
-export function page(element, app, origine) {
+export default function nouvelleversion(element, app, origine) {
     const refreshButton = document.querySelector(
         '#nouvelle-version-disponible-block #refresh-button'
     )

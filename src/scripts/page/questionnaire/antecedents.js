@@ -1,6 +1,6 @@
 import { preloadCheckboxForm, toggleFormButtonOnCheck } from '../../formutils.js'
 
-export function antecedents(form, app) {
+export default function antecedents(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'antecedent_cardio', app.profil)
     preloadCheckboxForm(form, 'antecedent_diabete', app.profil)

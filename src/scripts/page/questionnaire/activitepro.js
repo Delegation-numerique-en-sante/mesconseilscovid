@@ -4,7 +4,7 @@ import {
     toggleFormButtonOnCheck,
 } from '../../formutils.js'
 
-export function activitepro(form, app) {
+export default function activitepro(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'activite_pro', app.profil)
     preloadCheckboxForm(form, 'activite_pro_public', app.profil)

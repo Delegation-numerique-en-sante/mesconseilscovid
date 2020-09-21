@@ -4,7 +4,7 @@ import {
     toggleFormButtonOnTextFieldsRequired,
 } from '../../formutils.js'
 
-export function caracteristiques(form, app) {
+export default function caracteristiques(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadForm(form, 'age', app.profil)
     preloadForm(form, 'taille', app.profil)

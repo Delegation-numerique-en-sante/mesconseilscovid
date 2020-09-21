@@ -1,6 +1,6 @@
 import { preloadCheckboxForm, toggleFormButtonOnCheck } from '../../formutils.js'
 
-export function symptomespasses(form, app) {
+export default function symptomespasses(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'symptomes_passes', app.profil)
     const uncheckedLabel = app.profil.estMonProfil()

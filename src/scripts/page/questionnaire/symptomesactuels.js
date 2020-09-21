@@ -4,7 +4,7 @@ import {
     toggleFormButtonOnCheckRequired,
 } from '../../formutils.js'
 
-export function symptomesactuels(form, app) {
+export default function symptomesactuels(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'symptomes_actuels', app.profil)
     preloadCheckboxForm(form, 'symptomes_actuels_temperature', app.profil)
