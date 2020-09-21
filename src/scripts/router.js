@@ -71,7 +71,17 @@ export function initRouter(app) {
             new RegExp('^' + pageName + '$'),
             function () {
                 var element = loadPage(pageName)
+
+                const boutonRetour = element.querySelector('form .back-button')
+                if (boutonRetour) {
+                    const previousPage = app.questionnaire.previousPage(pageName)
+                    if (previousPage) {
+                        boutonRetour.setAttribute('href', `#${previousPage}`)
+                    }
+                }
+
                 viewFunc(element)
+
                 window.plausible('pageview')
             },
             {
