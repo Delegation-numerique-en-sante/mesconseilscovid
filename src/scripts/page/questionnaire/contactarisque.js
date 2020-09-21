@@ -13,7 +13,7 @@ export function beforeContactARisque(profil) {
     if (profil.symptomes_passes === true) return 'conseils'
 }
 
-export function contactarisque(form, app, router) {
+export function contactarisque(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'contact_a_risque', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_meme_lieu_de_vie', app.profil)
@@ -51,7 +51,8 @@ export function contactarisque(form, app, router) {
             event.target.elements['contact_a_risque_stop_covid'].checked
         app.profil.contact_a_risque_autre =
             event.target.elements['contact_a_risque_autre'].checked
-        app.enregistrerProfilActuel()
-        router.navigate('conseils')
+        app.enregistrerProfilActuel().then(() => {
+            app.goToNextPage('contactarisque')
+        })
     })
 }

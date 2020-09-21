@@ -10,7 +10,7 @@ export function beforeSymptomesPasses(profil) {
         return 'conseils'
 }
 
-export function symptomespasses(form, app, router) {
+export function symptomespasses(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'symptomes_passes', app.profil)
     const uncheckedLabel = app.profil.estMonProfil()
@@ -20,8 +20,9 @@ export function symptomespasses(form, app, router) {
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.symptomes_passes = event.target.elements['symptomes_passes'].checked
+
+        // On complète manuellement le formulaire pour le rendre complet.
         if (app.profil.symptomes_passes) {
-            // On complète manuellement le formulaire pour le rendre complet.
             app.profil.contact_a_risque = false
             app.profil.contact_a_risque_meme_lieu_de_vie = undefined
             app.profil.contact_a_risque_contact_direct = undefined
@@ -30,11 +31,10 @@ export function symptomespasses(form, app, router) {
             app.profil.contact_a_risque_meme_classe = undefined
             app.profil.contact_a_risque_stop_covid = undefined
             app.profil.contact_a_risque_autre = undefined
-            app.enregistrerProfilActuel()
-            router.navigate('conseils')
-        } else {
-            app.enregistrerProfilActuel()
-            router.navigate('contactarisque')
         }
+
+        app.enregistrerProfilActuel().then(() => {
+            app.goToNextPage('symptomespasses')
+        })
     })
 }

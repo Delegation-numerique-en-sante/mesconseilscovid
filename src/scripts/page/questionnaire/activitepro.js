@@ -13,7 +13,7 @@ export function beforeActivitePro(profil) {
     if (!profil.isCaracteristiquesComplete()) return 'caracteristiques'
 }
 
-export function activitepro(form, app, router) {
+export function activitepro(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'activite_pro', app.profil)
     preloadCheckboxForm(form, 'activite_pro_public', app.profil)
@@ -37,7 +37,8 @@ export function activitepro(form, app, router) {
             event.target.elements['activite_pro_sante'].checked
         app.profil.activite_pro_liberal =
             event.target.elements['activite_pro_liberal'].checked
-        app.enregistrerProfilActuel()
-        router.navigate('symptomesactuels')
+        app.enregistrerProfilActuel().then(() => {
+            app.goToNextPage('activitepro')
+        })
     })
 }

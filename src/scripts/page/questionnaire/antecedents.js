@@ -7,7 +7,7 @@ export function beforeAntecedents(profil) {
     if (!profil.isFoyerComplete()) return 'foyer'
 }
 
-export function antecedents(form, app, router) {
+export function antecedents(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'antecedent_cardio', app.profil)
     preloadCheckboxForm(form, 'antecedent_diabete', app.profil)
@@ -41,7 +41,8 @@ export function antecedents(form, app, router) {
             event.target.elements['antecedent_drepano'].checked
         app.profil.antecedent_chronique_autre =
             event.target.elements['antecedent_chronique_autre'].checked
-        app.enregistrerProfilActuel()
-        router.navigate('caracteristiques')
+        app.enregistrerProfilActuel().then(() => {
+            app.goToNextPage('antecedents')
+        })
     })
 }

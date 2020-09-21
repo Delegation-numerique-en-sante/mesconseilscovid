@@ -2,7 +2,7 @@ import { hideSelector } from '../../affichage.js'
 import { preloadForm, toggleFormButtonOnSelectFieldsRequired } from '../../formutils.js'
 import geolocalisation from '../../geoloc.js'
 
-export default function residence(form, app, router) {
+export default function residence(form, app) {
     // Premier démarrage du formulaire ?
     if (!app.profil.questionnaire_started) {
         app.profil.questionnaire_started = true
@@ -23,8 +23,9 @@ export default function residence(form, app, router) {
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.departement = event.target.elements['departement'].value
-        app.enregistrerProfilActuel()
-        router.navigate('foyer')
+        app.enregistrerProfilActuel().then(() => {
+            app.goToNextPage('residence')
+        })
     })
     document
         .getElementById('geolocalisation')

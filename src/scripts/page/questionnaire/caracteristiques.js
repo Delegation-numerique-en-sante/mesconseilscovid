@@ -11,7 +11,7 @@ export function beforeCaracteristiques(profil) {
     if (!profil.isAntecedentsComplete()) return 'antecedents'
 }
 
-export function caracteristiques(form, app, router) {
+export function caracteristiques(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadForm(form, 'age', app.profil)
     preloadForm(form, 'taille', app.profil)
@@ -26,11 +26,8 @@ export function caracteristiques(form, app, router) {
         app.profil.taille = event.target.elements['taille'].value
         app.profil.grossesse_3e_trimestre =
             event.target.elements['grossesse_3e_trimestre'].checked
-        app.enregistrerProfilActuel()
-        if (app.profil.age < 15) {
-            router.navigate('pediatrie')
-        } else {
-            router.navigate('activitepro')
-        }
+        app.enregistrerProfilActuel().then(() => {
+            app.goToNextPage('caracteristiques')
+        })
     })
 }

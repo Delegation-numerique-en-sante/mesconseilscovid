@@ -11,7 +11,7 @@ export function before(profil) {
     if (!profil.hasSymptomesStartDate()) return 'suividate'
 }
 
-export function page(form, app, router) {
+export function page(form, app) {
     // Question affichée seulement si on répond pour un proche
     const pourUnProche = !app.profil.estMonProfil()
     var themOnly = form.querySelector('.them-only')
@@ -70,7 +70,7 @@ export function page(form, app, router) {
         }
 
         app.enregistrerProfilActuel().then(() => {
-            router.navigate('conseils')
+            app.goToNextPage('suivisymptomes')
         })
     })
 }

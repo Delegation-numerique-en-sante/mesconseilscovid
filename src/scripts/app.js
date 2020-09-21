@@ -1,5 +1,6 @@
 import Profil from './profil.js'
 import StockageLocal from './stockage.js'
+import Questionnaire from './questionnaire.js'
 import { joursAvant } from './utils.js'
 
 import { initRouter } from './router.js'
@@ -9,6 +10,7 @@ export default class App {
     constructor() {
         this.profil = new Profil()
         this.stockage = new StockageLocal()
+        this.questionnaire = new Questionnaire(this.profil)
         this._plausibleTrackingEvents = []
     }
     init() {
@@ -58,7 +60,10 @@ export default class App {
             this.profil.resetData()
         })
     }
-
+    goToNextPage(currentPage) {
+        const nextPage = this.questionnaire.nextPage(currentPage, this.profil)
+        this.router.navigate(nextPage)
+    }
     loadFakeSuiviData() {
         // Useful to be able to test the deconfinement page.
         this.profil.symptomes_start_date = joursAvant(11)

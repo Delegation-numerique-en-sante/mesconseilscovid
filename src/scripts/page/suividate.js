@@ -4,7 +4,7 @@ export function before(profil) {
     if (!profil.isComplete()) return 'conseils'
 }
 
-export function page(form, app, router) {
+export function page(form, app) {
     // Enregistre le démarrage du suivi
     if (!app.profil.hasSuiviStartDate()) {
         app.profil.suivi_start_date = new Date()
@@ -31,8 +31,9 @@ export function page(form, app, router) {
         app.profil.symptomes_start_date =
             dateFromPicker(event.target.elements['suivi_symptomes_date_exacte']) ||
             dateFromRadioButton(event.target.elements['suivi_symptomes_date'])
-        app.enregistrerProfilActuel()
-        router.navigate('suivisymptomes')
+        app.enregistrerProfilActuel().then(() => {
+            app.goToNextPage('suividate')
+        })
     })
 }
 
