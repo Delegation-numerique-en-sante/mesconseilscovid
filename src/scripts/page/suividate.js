@@ -1,9 +1,5 @@
 import { joursAvant } from '../utils.js'
 
-export function before(profil) {
-    if (!profil.isComplete()) return 'conseils'
-}
-
 export function page(form, app) {
     // Enregistre le démarrage du suivi
     if (!app.profil.hasSuiviStartDate()) {

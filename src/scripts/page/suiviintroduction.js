@@ -1,9 +1,5 @@
 import { bindCalendar } from '../actions.js'
 
-export function before(profil) {
-    if (!profil.isComplete()) return 'conseils'
-}
-
 export function page(element, app) {
     const container = element.querySelector('#profils-cards-suivi')
     const card = container.insertBefore(

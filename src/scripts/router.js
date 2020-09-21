@@ -3,31 +3,20 @@ import Navigo from 'navigo'
 import { hideElement, showElement } from './affichage.js'
 import { nomProfil } from './injection.js'
 import { getCurrentPageName, loadPage } from './pagination.js'
+import { questions } from './questionnaire.js'
 
 import * as introduction from './page/introduction.js'
 import * as nouvelleversion from './page/nouvelleversion.js'
 
 import nom from './page/questionnaire/nom.js'
 import residence from './page/questionnaire/residence.js'
-import { foyer, beforeFoyer } from './page/questionnaire/foyer.js'
-import { antecedents, beforeAntecedents } from './page/questionnaire/antecedents.js'
-import {
-    caracteristiques,
-    beforeCaracteristiques,
-} from './page/questionnaire/caracteristiques.js'
-import { activitepro, beforeActivitePro } from './page/questionnaire/activitepro.js'
-import {
-    symptomesactuels,
-    beforeSymptomesActuels,
-} from './page/questionnaire/symptomesactuels.js'
-import {
-    symptomespasses,
-    beforeSymptomesPasses,
-} from './page/questionnaire/symptomespasses.js'
-import {
-    contactarisque,
-    beforeContactARisque,
-} from './page/questionnaire/contactarisque.js'
+import { foyer } from './page/questionnaire/foyer.js'
+import { antecedents } from './page/questionnaire/antecedents.js'
+import { caracteristiques } from './page/questionnaire/caracteristiques.js'
+import { activitepro } from './page/questionnaire/activitepro.js'
+import { symptomesactuels } from './page/questionnaire/symptomesactuels.js'
+import { symptomespasses } from './page/questionnaire/symptomespasses.js'
+import { contactarisque } from './page/questionnaire/contactarisque.js'
 
 import * as conseils from './page/conseils.js'
 
@@ -120,7 +109,7 @@ export function initRouter(app) {
         function (element) {
             foyer(element, app)
         },
-        beforeFoyer
+        questions.foyer.before
     )
 
     addRoute(
@@ -128,7 +117,7 @@ export function initRouter(app) {
         function (element) {
             antecedents(element, app)
         },
-        beforeAntecedents
+        questions.antecedents.before
     )
 
     addRoute(
@@ -136,7 +125,7 @@ export function initRouter(app) {
         function (element) {
             caracteristiques(element, app)
         },
-        beforeCaracteristiques
+        questions.caracteristiques.before
     )
 
     addRoute(
@@ -144,7 +133,7 @@ export function initRouter(app) {
         function (element) {
             activitepro(element, app)
         },
-        beforeActivitePro
+        questions.activitepro.before
     )
 
     addRoute(
@@ -152,7 +141,7 @@ export function initRouter(app) {
         function (element) {
             symptomesactuels(element, app)
         },
-        beforeSymptomesActuels
+        questions.symptomesactuels.before
     )
 
     addRoute(
@@ -160,7 +149,7 @@ export function initRouter(app) {
         function (element) {
             symptomespasses(element, app)
         },
-        beforeSymptomesPasses
+        questions.symptomespasses.before
     )
 
     addRoute(
@@ -168,7 +157,7 @@ export function initRouter(app) {
         function (element) {
             contactarisque(element, app)
         },
-        beforeContactARisque
+        questions.contactarisque.before
     )
 
     addRoute(
@@ -176,7 +165,7 @@ export function initRouter(app) {
         function (element) {
             conseils.page(element, app)
         },
-        conseils.before
+        questions.conseils.before
     )
 
     addRoute(
@@ -184,7 +173,7 @@ export function initRouter(app) {
         function (element) {
             suiviintroduction.page(element, app)
         },
-        suiviintroduction.before
+        questions.suiviintroduction.before
     )
 
     addRoute(
@@ -192,7 +181,7 @@ export function initRouter(app) {
         function (element) {
             suividate.page(element, app)
         },
-        suividate.before
+        questions.suividate.before
     )
 
     addRoute(
@@ -200,7 +189,7 @@ export function initRouter(app) {
         function (element) {
             suivisymptomes.page(element, app)
         },
-        suivisymptomes.before
+        questions.suivisymptomes.before
     )
 
     addRoute(
@@ -208,7 +197,7 @@ export function initRouter(app) {
         function (element) {
             suivihistorique.page(element, app)
         },
-        suivihistorique.before
+        questions.suivihistorique.before
     )
 
     addRoute('pediatrie', function (element) {

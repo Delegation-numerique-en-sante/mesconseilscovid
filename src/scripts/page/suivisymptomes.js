@@ -6,11 +6,6 @@ import {
 
 import AlgorithmeDeconfinement from '../algorithme/deconfinement.js'
 
-export function before(profil) {
-    if (!profil.isComplete()) return 'conseils'
-    if (!profil.hasSymptomesStartDate()) return 'suividate'
-}
-
 export function page(form, app) {
     // Question affichée seulement si on répond pour un proche
     const pourUnProche = !app.profil.estMonProfil()

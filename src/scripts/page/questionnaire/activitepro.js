@@ -4,15 +4,6 @@ import {
     toggleFormButtonOnCheck,
 } from '../../formutils.js'
 
-import { beforeCaracteristiques } from './caracteristiques.js'
-
-export function beforeActivitePro(profil) {
-    const target = beforeCaracteristiques(profil)
-    if (target) return target
-    if (profil.age < 15) return 'pediatrie'
-    if (!profil.isCaracteristiquesComplete()) return 'caracteristiques'
-}
-
 export function activitepro(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'activite_pro', app.profil)

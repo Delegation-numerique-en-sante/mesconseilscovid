@@ -4,20 +4,6 @@ import {
     toggleFormButtonOnCheckRequired,
 } from '../../formutils.js'
 
-import { beforeActivitePro } from './activitepro.js'
-
-export function beforeSymptomesActuels(profil) {
-    const target = beforeActivitePro(profil)
-    if (target) return target
-
-    // Si la personne a coché une activité pro, on propose à nouveau cet écran
-    // pour prendre en compte la nouvelle case : profession libérale.
-    if (profil.activite_pro && typeof profil.activite_pro_liberal === 'undefined')
-        return 'activitepro'
-
-    if (!profil.isActiviteProComplete()) return 'activitepro'
-}
-
 export function symptomesactuels(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'symptomes_actuels', app.profil)
