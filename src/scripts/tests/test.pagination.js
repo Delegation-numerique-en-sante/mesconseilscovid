@@ -5,7 +5,14 @@ import * as suiviintroduction from '../page/suiviintroduction.js'
 import * as suividate from '../page/suividate.js'
 import * as suivisymptomes from '../page/suivisymptomes.js'
 import * as suivihistorique from '../page/suivihistorique.js'
-import * as questionnaire from '../page/questionnaire.js'
+
+import { beforeFoyer } from '../page/questionnaire/foyer.js'
+import { beforeAntecedents } from '../page/questionnaire/antecedents.js'
+import { beforeCaracteristiques } from '../page/questionnaire/caracteristiques.js'
+import { beforeActivitePro } from '../page/questionnaire/activitepro.js'
+import { beforeSymptomesActuels } from '../page/questionnaire/symptomesactuels.js'
+import { beforeSymptomesPasses } from '../page/questionnaire/symptomespasses.js'
+import { beforeContactARisque } from '../page/questionnaire/contactarisque.js'
 
 import Profil from '../profil.js'
 
@@ -13,25 +20,25 @@ describe('Pagination', function () {
     describe('Mon foyer', function () {
         it('redirige vers question 1 si réponse manquante', function () {
             const profil = new Profil('mes_infos', {})
-            assert.strictEqual(questionnaire.beforeFoyer(profil), 'residence')
+            assert.strictEqual(beforeFoyer(profil), 'residence')
         })
         it('ok d’aller à la question 2 si réponse à la 1', function () {
             const profil = new Profil('mes_infos', { departement: '80' })
-            assert.isUndefined(questionnaire.beforeFoyer(profil))
+            assert.isUndefined(beforeFoyer(profil))
         })
         it('ok d’aller à la question 2 même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
             })
-            assert.isUndefined(questionnaire.beforeFoyer(profil))
+            assert.isUndefined(beforeFoyer(profil))
         })
     })
 
     describe('Mes antécédents', function () {
         it('redirige vers question 2 si réponse manquante', function () {
             const profil = new Profil('mes_infos', { departement: '80' })
-            assert.strictEqual(questionnaire.beforeAntecedents(profil), 'foyer')
+            assert.strictEqual(beforeAntecedents(profil), 'foyer')
         })
         it('ok d’aller à la question 3 si réponse à la 2', function () {
             const profil = new Profil('mes_infos', {
@@ -39,7 +46,7 @@ describe('Pagination', function () {
                 foyer_enfants: false,
                 foyer_fragile: false,
             })
-            assert.isUndefined(questionnaire.beforeAntecedents(profil))
+            assert.isUndefined(beforeAntecedents(profil))
         })
         it('ok d’aller à la question 3 même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
@@ -56,7 +63,7 @@ describe('Pagination', function () {
                 antecedent_drepano: false,
                 antecedent_chronique_autre: false,
             })
-            assert.isUndefined(questionnaire.beforeAntecedents(profil))
+            assert.isUndefined(beforeAntecedents(profil))
         })
     })
 
@@ -67,10 +74,7 @@ describe('Pagination', function () {
                 foyer_enfants: false,
                 foyer_fragile: false,
             })
-            assert.strictEqual(
-                questionnaire.beforeCaracteristiques(profil),
-                'antecedents'
-            )
+            assert.strictEqual(beforeCaracteristiques(profil), 'antecedents')
         })
 
         it('ok d’aller à la question 4 si réponse à la 3', function () {
@@ -88,7 +92,7 @@ describe('Pagination', function () {
                 antecedent_drepano: false,
                 antecedent_chronique_autre: false,
             })
-            assert.isUndefined(questionnaire.beforeCaracteristiques(profil))
+            assert.isUndefined(beforeCaracteristiques(profil))
         })
         it('ok d’aller à la question 3 même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
@@ -109,7 +113,7 @@ describe('Pagination', function () {
                 poids: 80,
                 taille: 180,
             })
-            assert.isUndefined(questionnaire.beforeCaracteristiques(profil))
+            assert.isUndefined(beforeCaracteristiques(profil))
         })
     })
 
@@ -132,10 +136,7 @@ describe('Pagination', function () {
                 grossesse_3e_trimestre: false,
                 poids: 80,
             })
-            assert.strictEqual(
-                questionnaire.beforeActivitePro(profil),
-                'caracteristiques'
-            )
+            assert.strictEqual(beforeActivitePro(profil), 'caracteristiques')
         })
         it('redirige vers pédiatrie si âge inférieur à 15', function () {
             const profil = new Profil('mes_infos', {
@@ -156,7 +157,7 @@ describe('Pagination', function () {
                 poids: 80,
                 taille: 180,
             })
-            assert.strictEqual(questionnaire.beforeActivitePro(profil), 'pediatrie')
+            assert.strictEqual(beforeActivitePro(profil), 'pediatrie')
         })
         it('ok d’aller à la question 5 si réponse à la 4', function () {
             const profil = new Profil('mes_infos', {
@@ -177,7 +178,7 @@ describe('Pagination', function () {
                 poids: 80,
                 taille: 180,
             })
-            assert.isUndefined(questionnaire.beforeActivitePro(profil))
+            assert.isUndefined(beforeActivitePro(profil))
         })
         it('ok d’aller à la question 5 même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
@@ -199,7 +200,7 @@ describe('Pagination', function () {
                 taille: 180,
                 activite_pro: false,
             })
-            assert.isUndefined(questionnaire.beforeActivitePro(profil))
+            assert.isUndefined(beforeActivitePro(profil))
         })
     })
 
@@ -225,10 +226,7 @@ describe('Pagination', function () {
                 taille: 180,
                 activite_pro: true,
             })
-            assert.strictEqual(
-                questionnaire.beforeSymptomesActuels(profil),
-                'activitepro'
-            )
+            assert.strictEqual(beforeSymptomesActuels(profil), 'activitepro')
         })
         it('ok d’aller à la question 6 si réponse vraie à la 5 + profession libérale', function () {
             const profil = new Profil('mes_infos', {
@@ -251,7 +249,7 @@ describe('Pagination', function () {
                 activite_pro: true,
                 activite_pro_liberal: false,
             })
-            assert.isUndefined(questionnaire.beforeSymptomesActuels(profil))
+            assert.isUndefined(beforeSymptomesActuels(profil))
         })
         // Fin rattrapage profession libérale.
 
@@ -274,10 +272,7 @@ describe('Pagination', function () {
                 poids: 80,
                 taille: 180,
             })
-            assert.strictEqual(
-                questionnaire.beforeSymptomesActuels(profil),
-                'activitepro'
-            )
+            assert.strictEqual(beforeSymptomesActuels(profil), 'activitepro')
         })
         it('ok d’aller à la question 6 si réponse à la 5', function () {
             const profil = new Profil('mes_infos', {
@@ -299,7 +294,7 @@ describe('Pagination', function () {
                 taille: 180,
                 activite_pro: false,
             })
-            assert.isUndefined(questionnaire.beforeSymptomesActuels(profil))
+            assert.isUndefined(beforeSymptomesActuels(profil))
         })
         it('ok d’aller à la question 6 même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
@@ -322,7 +317,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 symptomes_actuels: false,
             })
-            assert.isUndefined(questionnaire.beforeSymptomesActuels(profil))
+            assert.isUndefined(beforeSymptomesActuels(profil))
         })
     })
 
@@ -347,10 +342,7 @@ describe('Pagination', function () {
                 taille: 180,
                 activite_pro: false,
             })
-            assert.strictEqual(
-                questionnaire.beforeSymptomesPasses(profil),
-                'symptomesactuels'
-            )
+            assert.strictEqual(beforeSymptomesPasses(profil), 'symptomesactuels')
         })
         it('ok d’aller à la question 7 si réponse négative à la 6', function () {
             const profil = new Profil('mes_infos', {
@@ -373,7 +365,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 symptomes_actuels: false,
             })
-            assert.isUndefined(questionnaire.beforeSymptomesPasses(profil))
+            assert.isUndefined(beforeSymptomesPasses(profil))
         })
         it('ok d’aller à la question 7 si réponse positive à la 6 mais que autre', function () {
             const profil = new Profil('mes_infos', {
@@ -397,7 +389,7 @@ describe('Pagination', function () {
                 symptomes_actuels: true,
                 symptomes_actuels_autre: true,
             })
-            assert.isUndefined(questionnaire.beforeSymptomesPasses(profil))
+            assert.isUndefined(beforeSymptomesPasses(profil))
         })
         it('ok d’aller à la question 7 même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
@@ -421,7 +413,7 @@ describe('Pagination', function () {
                 symptomes_actuels: false,
                 symptomes_passes: false,
             })
-            assert.isUndefined(questionnaire.beforeSymptomesPasses(profil))
+            assert.isUndefined(beforeSymptomesPasses(profil))
         })
         it('redirige vers conseils si réponse positive à la 6', function () {
             const profil = new Profil('mes_infos', {
@@ -445,7 +437,7 @@ describe('Pagination', function () {
                 symptomes_actuels: true,
                 symptomes_actuels_autre: false,
             })
-            assert.strictEqual(questionnaire.beforeSymptomesPasses(profil), 'conseils')
+            assert.strictEqual(beforeSymptomesPasses(profil), 'conseils')
         })
     })
 
@@ -471,10 +463,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 symptomes_actuels: false,
             })
-            assert.strictEqual(
-                questionnaire.beforeContactARisque(profil),
-                'symptomespasses'
-            )
+            assert.strictEqual(beforeContactARisque(profil), 'symptomespasses')
         })
         it('ok d’aller à la question 8 si réponse négative aux 6 et 7', function () {
             const profil = new Profil('mes_infos', {
@@ -498,7 +487,7 @@ describe('Pagination', function () {
                 symptomes_actuels: false,
                 symptomes_passes: false,
             })
-            assert.isUndefined(questionnaire.beforeContactARisque(profil))
+            assert.isUndefined(beforeContactARisque(profil))
         })
         it('ok d’aller à la question 8 si réponse négative à la 7 et positive mais autre à la 6', function () {
             const profil = new Profil('mes_infos', {
@@ -523,7 +512,7 @@ describe('Pagination', function () {
                 symptomes_actuels_autre: true,
                 symptomes_passes: false,
             })
-            assert.isUndefined(questionnaire.beforeContactARisque(profil))
+            assert.isUndefined(beforeContactARisque(profil))
         })
         it('ok d’aller à la question 8 même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
@@ -548,7 +537,7 @@ describe('Pagination', function () {
                 symptomes_passes: false,
                 contact_a_risque: false,
             })
-            assert.isUndefined(questionnaire.beforeContactARisque(profil))
+            assert.isUndefined(beforeContactARisque(profil))
         })
         it('redirige vers conseils si réponse positive à la 6', function () {
             const profil = new Profil('mes_infos', {
@@ -572,7 +561,7 @@ describe('Pagination', function () {
                 symptomes_actuels: true,
                 symptomes_actuels_autre: false,
             })
-            assert.strictEqual(questionnaire.beforeContactARisque(profil), 'conseils')
+            assert.strictEqual(beforeContactARisque(profil), 'conseils')
         })
         it('redirige vers conseils si réponse positive à la 7', function () {
             const profil = new Profil('mes_infos', {
@@ -596,7 +585,7 @@ describe('Pagination', function () {
                 symptomes_actuels: false,
                 symptomes_passes: true,
             })
-            assert.strictEqual(questionnaire.beforeContactARisque(profil), 'conseils')
+            assert.strictEqual(beforeContactARisque(profil), 'conseils')
         })
     })
 

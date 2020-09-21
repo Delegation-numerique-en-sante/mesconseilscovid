@@ -1,0 +1,17 @@
+import { preloadCheckboxForm } from '../../formutils.js'
+
+export function beforeFoyer(profil) {
+    if (!profil.isResidenceComplete()) return 'residence'
+}
+
+export function foyer(form, app, router) {
+    preloadCheckboxForm(form, 'foyer_enfants', app.profil)
+    preloadCheckboxForm(form, 'foyer_fragile', app.profil)
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+        app.profil.foyer_enfants = event.target.elements['foyer_enfants'].checked
+        app.profil.foyer_fragile = event.target.elements['foyer_fragile'].checked
+        app.enregistrerProfilActuel()
+        router.navigate('antecedents')
+    })
+}

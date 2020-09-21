@@ -7,21 +7,24 @@ import {
     showMeOrThem,
 } from '../affichage.js'
 import * as injection from '../injection.js'
-import * as questionnaire from './questionnaire.js'
 
 import incidenceParDepartement from '../data/incidence.js'
 
 import AlgorithmeOrientation from '../algorithme/orientation.js'
 import AlgorithmeSuivi from '../algorithme/suivi.js'
 
+import { beforeSymptomesActuels } from '../page/questionnaire/symptomesactuels.js'
+import { beforeSymptomesPasses } from '../page/questionnaire/symptomespasses.js'
+import { beforeContactARisque } from '../page/questionnaire/contactarisque.js'
+
 export function before(profil) {
     if (profil.isContactARisqueComplete()) {
-        return questionnaire.beforeContactARisque(profil)
+        return beforeContactARisque(profil)
     } else if (profil.isSymptomesPassesComplete()) {
         if (profil.symptomes_passes === false) {
             return 'contactarisque'
         } else {
-            return questionnaire.beforeSymptomesPasses(profil)
+            return beforeSymptomesPasses(profil)
         }
     } else if (profil.isSymptomesActuelsComplete()) {
         if (
@@ -30,10 +33,10 @@ export function before(profil) {
         ) {
             return 'symptomespasses'
         } else {
-            return questionnaire.beforeSymptomesActuels(profil)
+            return beforeSymptomesActuels(profil)
         }
     } else {
-        return questionnaire.beforeSymptomesActuels(profil) || 'symptomesactuels'
+        return beforeSymptomesActuels(profil) || 'symptomesactuels'
     }
 }
 
