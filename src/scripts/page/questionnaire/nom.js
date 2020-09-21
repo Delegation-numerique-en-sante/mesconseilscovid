@@ -1,6 +1,6 @@
 import { toggleFormButtonOnTextFieldsRequired } from '../../formutils.js'
 
-export default function nom(form, app, router) {
+export default function nom(form, app) {
     // Premier démarrage du formulaire ?
     if (!app.profil.questionnaire_started) {
         app.profil.questionnaire_started = true
@@ -15,7 +15,7 @@ export default function nom(form, app, router) {
         event.preventDefault()
         const nom = event.target.elements['name'].value
         app.creerProfil(nom).then(() => {
-            router.navigate('residence')
+            app.goToNextPage('nom')
         })
     })
 }

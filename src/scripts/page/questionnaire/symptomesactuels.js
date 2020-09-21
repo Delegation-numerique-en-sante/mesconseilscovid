@@ -18,7 +18,7 @@ export function beforeSymptomesActuels(profil) {
     if (!profil.isActiviteProComplete()) return 'activitepro'
 }
 
-export function symptomesactuels(form, app, router) {
+export function symptomesactuels(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'symptomes_actuels', app.profil)
     preloadCheckboxForm(form, 'symptomes_actuels_temperature', app.profil)
@@ -65,8 +65,9 @@ export function symptomesactuels(form, app, router) {
             event.target.elements['symptomes_actuels_souffle'].checked
         app.profil.symptomes_actuels_autre =
             event.target.elements['symptomes_actuels_autre'].checked
+
+        // On complète manuellement le formulaire pour le rendre complet.
         if (app.profil.symptomes_actuels && !app.profil.symptomes_actuels_autre) {
-            // On complète manuellement le formulaire pour le rendre complet.
             app.profil.symptomes_passes = false
             app.profil.contact_a_risque = false
             app.profil.contact_a_risque_meme_lieu_de_vie = undefined
@@ -76,15 +77,10 @@ export function symptomesactuels(form, app, router) {
             app.profil.contact_a_risque_meme_classe = undefined
             app.profil.contact_a_risque_stop_covid = undefined
             app.profil.contact_a_risque_autre = undefined
-            app.enregistrerProfilActuel()
-            if (app.profil.symptomes_start_date) {
-                router.navigate('suiviintroduction')
-            } else {
-                router.navigate('suividate')
-            }
-        } else {
-            app.enregistrerProfilActuel()
-            router.navigate('symptomespasses')
         }
+
+        app.enregistrerProfilActuel().then(() => {
+            app.goToNextPage('symptomesactuels')
+        })
     })
 }

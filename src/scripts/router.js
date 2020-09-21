@@ -98,17 +98,17 @@ export function initRouter(app) {
     })
 
     addRoute('nom', function (element) {
-        nom(element, app, router)
+        nom(element, app)
     })
 
     addRoute('residence', function (element) {
-        residence(element, app, router)
+        residence(element, app)
     })
 
     addRoute(
         'foyer',
         function (element) {
-            foyer(element, app, router)
+            foyer(element, app)
         },
         beforeFoyer
     )
@@ -116,7 +116,7 @@ export function initRouter(app) {
     addRoute(
         'antecedents',
         function (element) {
-            antecedents(element, app, router)
+            antecedents(element, app)
         },
         beforeAntecedents
     )
@@ -124,7 +124,7 @@ export function initRouter(app) {
     addRoute(
         'caracteristiques',
         function (element) {
-            caracteristiques(element, app, router)
+            caracteristiques(element, app)
         },
         beforeCaracteristiques
     )
@@ -132,7 +132,7 @@ export function initRouter(app) {
     addRoute(
         'activitepro',
         function (element) {
-            activitepro(element, app, router)
+            activitepro(element, app)
         },
         beforeActivitePro
     )
@@ -140,7 +140,7 @@ export function initRouter(app) {
     addRoute(
         'symptomesactuels',
         function (element) {
-            symptomesactuels(element, app, router)
+            symptomesactuels(element, app)
         },
         beforeSymptomesActuels
     )
@@ -148,7 +148,7 @@ export function initRouter(app) {
     addRoute(
         'symptomespasses',
         function (element) {
-            symptomespasses(element, app, router)
+            symptomespasses(element, app)
         },
         beforeSymptomesPasses
     )
@@ -156,7 +156,7 @@ export function initRouter(app) {
     addRoute(
         'contactarisque',
         function (element) {
-            contactarisque(element, app, router)
+            contactarisque(element, app)
         },
         beforeContactARisque
     )
@@ -164,7 +164,7 @@ export function initRouter(app) {
     addRoute(
         'conseils',
         function (element) {
-            conseils.page(element, app, router)
+            conseils.page(element, app)
         },
         conseils.before
     )
@@ -172,7 +172,7 @@ export function initRouter(app) {
     addRoute(
         'suiviintroduction',
         function (element) {
-            suiviintroduction.page(element, app, router)
+            suiviintroduction.page(element, app)
         },
         suiviintroduction.before
     )
@@ -180,7 +180,7 @@ export function initRouter(app) {
     addRoute(
         'suividate',
         function (element) {
-            suividate.page(element, app, router)
+            suividate.page(element, app)
         },
         suividate.before
     )
@@ -188,7 +188,7 @@ export function initRouter(app) {
     addRoute(
         'suivisymptomes',
         function (element) {
-            suivisymptomes.page(element, app, router)
+            suivisymptomes.page(element, app)
         },
         suivisymptomes.before
     )
@@ -196,7 +196,7 @@ export function initRouter(app) {
     addRoute(
         'suivihistorique',
         function (element) {
-            suivihistorique.page(element, app, router)
+            suivihistorique.page(element, app)
         },
         suivihistorique.before
     )
