@@ -1,0 +1,57 @@
+import {
+    enableOrDisableSecondaryFields,
+    preloadCheckboxForm,
+    toggleFormButtonOnCheckRequired,
+} from '../../formutils.js'
+
+import { beforeSymptomesPasses } from './symptomespasses.js'
+
+export function beforeContactARisque(profil) {
+    const target = beforeSymptomesPasses(profil)
+    if (target) return target
+    if (!profil.isSymptomesPassesComplete()) return 'symptomespasses'
+    if (profil.symptomes_passes === true) return 'conseils'
+}
+
+export function contactarisque(form, app, router) {
+    var button = form.querySelector('input[type=submit]')
+    preloadCheckboxForm(form, 'contact_a_risque', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_meme_lieu_de_vie', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_contact_direct', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_actes', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_espace_confine', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_meme_classe', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_stop_covid', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_autre', app.profil)
+    var primary = form.elements['contact_a_risque']
+    enableOrDisableSecondaryFields(form, primary)
+    primary.addEventListener('click', function () {
+        enableOrDisableSecondaryFields(form, primary)
+    })
+    toggleFormButtonOnCheckRequired(
+        form,
+        button.value,
+        'Terminer',
+        'Vous devez saisir l’un des sous-choix proposés'
+    )
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+        app.profil.contact_a_risque = event.target.elements['contact_a_risque'].checked
+        app.profil.contact_a_risque_meme_lieu_de_vie =
+            event.target.elements['contact_a_risque_meme_lieu_de_vie'].checked
+        app.profil.contact_a_risque_contact_direct =
+            event.target.elements['contact_a_risque_contact_direct'].checked
+        app.profil.contact_a_risque_actes =
+            event.target.elements['contact_a_risque_actes'].checked
+        app.profil.contact_a_risque_espace_confine =
+            event.target.elements['contact_a_risque_espace_confine'].checked
+        app.profil.contact_a_risque_meme_classe =
+            event.target.elements['contact_a_risque_meme_classe'].checked
+        app.profil.contact_a_risque_stop_covid =
+            event.target.elements['contact_a_risque_stop_covid'].checked
+        app.profil.contact_a_risque_autre =
+            event.target.elements['contact_a_risque_autre'].checked
+        app.enregistrerProfilActuel()
+        router.navigate('conseils')
+    })
+}

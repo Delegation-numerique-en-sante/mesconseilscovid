@@ -6,7 +6,29 @@ import { getCurrentPageName, loadPage } from './pagination.js'
 
 import * as introduction from './page/introduction.js'
 import * as nouvelleversion from './page/nouvelleversion.js'
-import * as questionnaire from './page/questionnaire.js'
+
+import nom from './page/questionnaire/nom.js'
+import residence from './page/questionnaire/residence.js'
+import { foyer, beforeFoyer } from './page/questionnaire/foyer.js'
+import { antecedents, beforeAntecedents } from './page/questionnaire/antecedents.js'
+import {
+    caracteristiques,
+    beforeCaracteristiques,
+} from './page/questionnaire/caracteristiques.js'
+import { activitepro, beforeActivitePro } from './page/questionnaire/activitepro.js'
+import {
+    symptomesactuels,
+    beforeSymptomesActuels,
+} from './page/questionnaire/symptomesactuels.js'
+import {
+    symptomespasses,
+    beforeSymptomesPasses,
+} from './page/questionnaire/symptomespasses.js'
+import {
+    contactarisque,
+    beforeContactARisque,
+} from './page/questionnaire/contactarisque.js'
+
 import * as conseils from './page/conseils.js'
 
 import * as suiviintroduction from './page/suiviintroduction.js'
@@ -76,67 +98,67 @@ export function initRouter(app) {
     })
 
     addRoute('nom', function (element) {
-        questionnaire.nom(element, app, router)
+        nom(element, app, router)
     })
 
     addRoute('residence', function (element) {
-        questionnaire.residence(element, app, router)
+        residence(element, app, router)
     })
 
     addRoute(
         'foyer',
         function (element) {
-            questionnaire.foyer(element, app, router)
+            foyer(element, app, router)
         },
-        questionnaire.beforeFoyer
+        beforeFoyer
     )
 
     addRoute(
         'antecedents',
         function (element) {
-            questionnaire.antecedents(element, app, router)
+            antecedents(element, app, router)
         },
-        questionnaire.beforeAntecedents
+        beforeAntecedents
     )
 
     addRoute(
         'caracteristiques',
         function (element) {
-            questionnaire.caracteristiques(element, app, router)
+            caracteristiques(element, app, router)
         },
-        questionnaire.beforeCaracteristiques
+        beforeCaracteristiques
     )
 
     addRoute(
         'activitepro',
         function (element) {
-            questionnaire.activitepro(element, app, router)
+            activitepro(element, app, router)
         },
-        questionnaire.beforeActivitePro
+        beforeActivitePro
     )
 
     addRoute(
         'symptomesactuels',
         function (element) {
-            questionnaire.symptomesactuels(element, app, router)
+            symptomesactuels(element, app, router)
         },
-        questionnaire.beforeSymptomesActuels
+        beforeSymptomesActuels
     )
 
     addRoute(
         'symptomespasses',
         function (element) {
-            questionnaire.symptomespasses(element, app, router)
+            symptomespasses(element, app, router)
         },
-        questionnaire.beforeSymptomesPasses
+        beforeSymptomesPasses
     )
 
     addRoute(
         'contactarisque',
         function (element) {
-            questionnaire.contactarisque(element, app, router)
+            contactarisque(element, app, router)
         },
-        questionnaire.beforeContactARisque
+        beforeContactARisque
     )
 
     addRoute(
