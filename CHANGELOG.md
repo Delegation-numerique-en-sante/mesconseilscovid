@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-09-22
+
+* met à jour les taux d’incidence
+
 ## 2020-09-20
 
 * met à jour la page pédiatrie
