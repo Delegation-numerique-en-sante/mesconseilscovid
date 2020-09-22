@@ -6,6 +6,7 @@ from http import HTTPStatus
 from pykeybasebot import Bot
 from roll import HttpError, Roll
 from roll.extensions import cors, options, simple_server, traceback
+from user_agents import parse
 
 logger = logging.getLogger(__name__)
 
@@ -73,6 +74,10 @@ class FeedbackView:
             raise HttpError(HTTPStatus.BAD_REQUEST)
 
         message = f"{self.KIND_EMOJI[kind]} ({page}): {message}"
+
+        user_agent = request.headers.get("USER-AGENT")
+        if user_agent:
+            message += f" [envoyé depuis {parse(user_agent)}]"
 
         if request.host.startswith("127.0.0.1"):
             print(message)
