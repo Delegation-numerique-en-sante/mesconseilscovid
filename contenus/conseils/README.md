@@ -58,13 +58,13 @@ Pour plus d’informations :
 
 ## [conseils_antécédents_chroniques_autres.md](conseils_antécédents_chroniques_autres.md)
 
-Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habituel** et **votre traitement** si vous en avez un. 
+Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habituel** et **votre traitement** si vous en avez un.
 
 
 
 ## [conseils_autosuivi_historique.md](conseils_autosuivi_historique.md)
 
-<!---->À tout moment, vous pouvez consulter <a href="#suivihistorique">l’historique de vos symptômes</a>, par exemple pour <b>les partager avec votre médecin</b>. 
+<!---->À tout moment, vous pouvez consulter <a href="#suivihistorique">l’historique de vos symptômes</a>, par exemple pour <b>les partager avec votre médecin</b>.
 ---
 
 <!---->À tout moment, vous pouvez consulter <a href="#suivihistorique">l’historique des symptômes</a> de votre proche, par exemple pour <b>les partager avec son médecin</b>.
@@ -136,13 +136,13 @@ Pour plus d’informations :
 
 ## [conseils_cartographie_dépistage.md](conseils_cartographie_dépistage.md)
 
-Retrouvez le [lieu de test le plus près de vous](https://sante.fr/cartographie-depistage-covid), si votre médecin vous prescrit un **test de depistage**.
+Retrouvez le [lieu de test le plus près de vous](https://sante.fr/cartographie-depistage-covid), si votre médecin vous prescrit un **test de dépistage**.
 
 
 
 ## [conseils_contact_à_risque.md](conseils_contact_à_risque.md)
 
-Nous vous conseillons de **contacter votre médecin généraliste**. 
+Nous vous conseillons de **contacter votre médecin généraliste**.
 
 En attendant, il vous est conseillé de :
 
@@ -373,7 +373,7 @@ Pour plus d’informations, consultez le document [« Faire face à une maladie
 
 ## [conseils_symptômes_défaut.md](conseils_symptômes_défaut.md)
 
-Pour **limiter la chaîne de transmission**, informez vos proches et les personnes que vous avez croisés dernièrement. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisé depuis le début de votre période contagieuse. 
+Pour **limiter la chaîne de transmission**, informez vos proches et les personnes que vous avez croisés dernièrement. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisé depuis le début de votre période contagieuse.
 
 
 
@@ -399,9 +399,9 @@ De façon générale il est conseillé une levée de l’isolement 7 jours aprè
 
 * Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
 
-* **Contactez votre médecin** pour avoir des informations personnalisées sur l’isolement et les **tests de depistage**.
+* **Contactez votre médecin** pour avoir des informations personnalisées sur l’isolement et les **tests de dépistage**.
 
-* Appliquer les **gestes barrières**.
+* Appliquez les **gestes barrières**.
 
 
 
