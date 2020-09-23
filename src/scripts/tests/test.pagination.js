@@ -427,6 +427,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 symptomes_actuels: true,
                 symptomes_actuels_autre: false,
+                _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
             assert.strictEqual(questions.symptomespasses.before(profil), 'conseils')
         })
@@ -554,6 +555,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 symptomes_actuels: true,
                 symptomes_actuels_autre: false,
+                _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
             assert.strictEqual(questions.contactarisque.before(profil), 'conseils')
         })
@@ -629,6 +631,7 @@ describe('Pagination', function () {
                 taille: 180,
                 activite_pro: false,
                 symptomes_actuels: true,
+                _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
             assert.isUndefined(questions.conseils.before(profil))
         })
@@ -819,6 +822,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
+                suivi_active: true,
             })
             assert.isUndefined(questions.suiviintroduction.before(profil))
         })
@@ -861,6 +865,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
+                suivi_active: true,
             })
             assert.isUndefined(questions.suiviintroduction.before(profil))
         })
@@ -906,6 +911,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
+                suivi_active: true,
             })
             assert.isUndefined(questions.suiviintroduction.before(profil))
         })
@@ -951,6 +957,8 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
+                suivi_active: true,
+                _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
             assert.isUndefined(questions.suiviintroduction.before(profil))
         })
@@ -996,6 +1004,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
+                suivi_active: true,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
             assert.isUndefined(questions.suiviintroduction.before(profil))
@@ -1042,6 +1051,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
+                suivi_active: true,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
                 suivi: [{ foo: 'bar' }, { baz: 'quux' }],
             })
@@ -1089,6 +1099,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
+                suivi_active: true,
             })
             assert.strictEqual(questions.suivisymptomes.before(profil), 'suividate')
         })
