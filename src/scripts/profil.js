@@ -293,7 +293,6 @@ export default class Profil {
     isCaracteristiquesComplete() {
         return (
             typeof this.age !== 'undefined' &&
-            this.age >= 15 &&
             typeof this.grossesse_3e_trimestre !== 'undefined' &&
             typeof this.poids !== 'undefined' &&
             typeof this.taille !== 'undefined'

@@ -66,7 +66,10 @@ export default function symptomesactuels(form, app) {
         }
 
         app.enregistrerProfilActuel().then(() => {
-            app.goToNextPage('symptomesactuels')
+            let nextPage = app.questionnaire.nextPage('symptomesactuels', app.profil)
+            if (nextPage === 'conseils')
+                nextPage = app.profil.suivi_start_date ? 'suivisymptomes' : 'suividate'
+            app.router.navigate(nextPage)
         })
     })
 }
