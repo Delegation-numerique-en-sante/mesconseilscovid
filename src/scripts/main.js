@@ -1,4 +1,5 @@
-// Polyfills pour ES2015
+// Polyfills pour ES2015+
+import 'core-js/features/object/entries'
 import 'core-js/features/promise'
 
 // Polyfills pour les API du navigateur

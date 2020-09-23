@@ -233,7 +233,7 @@ describe('Profil', function () {
         }
         profil.fillData(data)
         assert.deepEqual(profil.getData(), data)
-        assert.isFalse(profil.isComplete())
+        assert.isTrue(profil.isComplete())
         assert.isFalse(profil.isEmpty())
     })
 

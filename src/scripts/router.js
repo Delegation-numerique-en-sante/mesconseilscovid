@@ -25,6 +25,27 @@ import suividate from './page/suividate.js'
 import suivisymptomes from './page/suivisymptomes.js'
 import suivihistorique from './page/suivihistorique.js'
 
+export function beforeConseils(profil, questionnaire) {
+    if (!profil.isComplete()) return questionnaire.checkPathTo('conseils', profil)
+}
+
+export function beforeSuiviIntroduction(profil, questionnaire) {
+    if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
+}
+
+export function beforeSuiviDate(profil, questionnaire) {
+    if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
+}
+
+export function beforeSuiviSymptomes(profil, questionnaire) {
+    if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
+    if (typeof profil.symptomes_start_date === 'undefined') return 'suividate'
+}
+
+export function beforeSuiviHistorique(profil, questionnaire) {
+    if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
+}
+
 export function initRouter(app) {
     var root = null
     var useHash = true
@@ -56,16 +77,24 @@ export function initRouter(app) {
     })
 
     function addQuestionnaireRoute(pageName, view) {
+        function beforeFunc(profil) {
+            return app.questionnaire.before(pageName, profil)
+        }
+        addAppRoute(pageName, view, beforeFunc)
+    }
+
+    function addAppRoute(pageName, view, before) {
         function viewFunc(element) {
             view(element, app)
         }
-        addRoute(pageName, viewFunc, app.questionnaire.before(pageName))
+        addRoute(pageName, viewFunc, before)
     }
 
     function addRoute(pageName, viewFunc, beforeFunc) {
         router.on(
             new RegExp('^' + pageName + '$'),
             function () {
+                console.debug('start view')
                 var element = loadPage(pageName)
 
                 const boutonRetour = element.querySelector('form .back-button')
@@ -87,7 +116,9 @@ export function initRouter(app) {
                         return
                     }
 
-                    const target = beforeFunc(app.profil)
+                    console.debug('start before hook')
+                    const target = beforeFunc(app.profil, app.questionnaire)
+                    console.log('target', target)
                     if (target && target !== pageName) {
                         router.navigate(target)
                         done(false)
@@ -99,8 +130,10 @@ export function initRouter(app) {
         )
     }
 
-    addQuestionnaireRoute('introduction', introduction)
-    addQuestionnaireRoute('nom', nom)
+    addAppRoute('introduction', introduction)
+
+    addAppRoute('nom', nom)
+
     addQuestionnaireRoute('residence', residence)
     addQuestionnaireRoute('foyer', foyer)
     addQuestionnaireRoute('antecedents', antecedents)
@@ -109,11 +142,12 @@ export function initRouter(app) {
     addQuestionnaireRoute('symptomesactuels', symptomesactuels)
     addQuestionnaireRoute('symptomespasses', symptomespasses)
     addQuestionnaireRoute('contactarisque', contactarisque)
-    addQuestionnaireRoute('conseils', conseils)
-    addQuestionnaireRoute('suiviintroduction', suiviintroduction)
-    addQuestionnaireRoute('suividate', suividate)
-    addQuestionnaireRoute('suivisymptomes', suivisymptomes)
-    addQuestionnaireRoute('suivihistorique', suivihistorique)
+
+    addAppRoute('conseils', conseils, beforeConseils)
+    addAppRoute('suiviintroduction', suiviintroduction, beforeSuiviIntroduction)
+    addAppRoute('suividate', suividate)
+    addAppRoute('suivisymptomes', suivisymptomes, beforeSuiviSymptomes)
+    addAppRoute('suivihistorique', suivihistorique)
 
     addRoute('pediatrie', function (element) {
         if (app.profil.isComplete()) {

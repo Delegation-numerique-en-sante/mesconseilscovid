@@ -1,178 +1,149 @@
-export const questions = {
+// Représentation de la structure du questionnaire d’orientation
+export const ORIENTATION = {
     nom: {
         previous: () => 'introduction',
-        next: () => 'residence',
+        next: { residence: (profil) => profil.nom },
     },
     residence: {
         previous: () => 'introduction',
-        next: () => 'foyer',
+        next: { foyer: (profil) => profil.isResidenceComplete() },
     },
     foyer: {
         previous: () => 'residence',
-        next: () => 'antecedents',
-        before: (profil) => {
-            if (!profil.isResidenceComplete()) return 'residence'
-        },
+        next: { antecedents: (profil) => profil.isFoyerComplete() },
     },
     antecedents: {
         previous: () => 'foyer',
-        next: () => 'caracteristiques',
-        before: (profil) => {
-            const target = questions.foyer.before(profil)
-            if (target) return target
-
-            if (!profil.isFoyerComplete()) return 'foyer'
-        },
+        next: { caracteristiques: (profil) => profil.isAntecedentsComplete() },
     },
     caracteristiques: {
         previous: () => 'antecedents',
-        next: (profil) => {
-            if (profil.age < 15) {
-                return 'pediatrie'
-            } else {
-                return 'activitepro'
-            }
-        },
-        before: (profil) => {
-            const target = questions.antecedents.before(profil)
-            if (target) return target
-
-            if (!profil.isAntecedentsComplete()) return 'antecedents'
+        next: {
+            activitepro: (profil) =>
+                profil.isCaracteristiquesComplete() && profil.age >= 15,
+            pediatrie: (profil) =>
+                profil.isCaracteristiquesComplete() && profil.age < 15,
         },
     },
     activitepro: {
         previous: () => 'caracteristiques',
-        next: () => 'symptomesactuels',
-        before: (profil) => {
-            const target = questions.caracteristiques.before(profil)
-            if (target) return target
-            if (profil.age < 15) return 'pediatrie'
-            if (!profil.isCaracteristiquesComplete()) return 'caracteristiques'
+        next: {
+            symptomesactuels: (profil) =>
+                profil.isActiviteProComplete() &&
+                (!profil.activite_pro ||
+                    typeof profil.activite_pro_liberal !== 'undefined'),
         },
     },
     symptomesactuels: {
         previous: () => 'activitepro',
-        next: (profil) => {
-            if (profil.symptomes_actuels && !profil.symptomes_actuels_autre) {
-                if (profil.symptomes_start_date) {
-                    return 'suiviintroduction'
-                } else {
-                    return 'suividate'
-                }
-            } else {
-                return 'symptomespasses'
-            }
-        },
-        before: (profil) => {
-            const target = questions.activitepro.before(profil)
-            if (target) return target
-
-            // Si la personne a coché une activité pro, on propose à nouveau cet écran
-            // pour prendre en compte la nouvelle case : profession libérale.
-            if (
-                profil.activite_pro &&
-                typeof profil.activite_pro_liberal === 'undefined'
-            )
-                return 'activitepro'
-
-            if (!profil.isActiviteProComplete()) return 'activitepro'
-        },
-    },
-    symptomespasses: {
-        previous: () => 'symptomesactuels',
-        next: (profil) => {
-            if (profil.symptomes_passes) {
-                return 'conseils'
-            } else {
-                return 'contactarisque'
-            }
-        },
-        before: (profil) => {
-            const target = questions.symptomesactuels.before(profil)
-            if (target) return target
-            if (!profil.isSymptomesActuelsComplete()) return 'symptomesactuels'
-            if (
-                profil.symptomes_actuels === true &&
-                profil.symptomes_actuels_autre === false
-            )
-                return 'conseils'
-        },
-    },
-    contactarisque: {
-        previous: () => 'symptomespasses',
-        next: () => 'conseils',
-        before: (profil) => {
-            const target = questions.symptomespasses.before(profil)
-            if (target) return target
-            if (!profil.isSymptomesPassesComplete()) return 'symptomespasses'
-            if (profil.symptomes_passes === true) return 'conseils'
-        },
-    },
-    suiviintroduction: {
-        before: (profil) => {
-            if (!profil.isComplete()) return 'conseils'
+        next: {
+            conseils: (profil) =>
+                profil.isSymptomesActuelsComplete() &&
+                profil.symptomes_actuels &&
+                !profil.symptomes_actuels_autre,
+            symptomespasses: (profil) =>
+                profil.isSymptomesActuelsComplete() &&
+                (!profil.symptomes_actuels || profil.symptomes_actuels_autre),
         },
     },
     suividate: {
         previous: () => 'suiviintroduction',
-        next: () => 'suivisymptomes',
-        before: (profil) => {
-            if (!profil.isComplete()) return 'conseils'
+        next: {
+            suivisymptomes: (profil) => profil.suivi_start_date,
         },
     },
     suivisymptomes: {
         previous: () => 'suiviintroduction',
-        next: () => 'conseils',
-        before: (profil) => {
-            if (!profil.isComplete()) return 'conseils'
-            if (!profil.hasSymptomesStartDate()) return 'suividate'
+        next: {
+            conseils: () => true,
         },
     },
-    suivihistorique: {
-        before: (profil) => {
-            if (!profil.isComplete()) return 'conseils'
-            if (!profil.hasSymptomesStartDate()) return 'suividate'
-            if (!profil.hasHistorique()) return 'suiviintroduction'
+    symptomespasses: {
+        previous: () => 'symptomesactuels',
+        next: {
+            conseils: (profil) =>
+                profil.isSymptomesPassesComplete() && profil.symptomes_passes,
+            contactarisque: (profil) => profil.isSymptomesPassesComplete(),
         },
     },
-    conseils: {
-        before: (profil) => {
-            if (profil.isContactARisqueComplete()) {
-                return questions.contactarisque.before(profil)
-            } else if (profil.isSymptomesPassesComplete()) {
-                if (profil.symptomes_passes === false) {
-                    return 'contactarisque'
-                } else {
-                    return questions.symptomespasses.before(profil)
-                }
-            } else if (profil.isSymptomesActuelsComplete()) {
-                if (
-                    profil.symptomes_actuels === false ||
-                    profil.symptomes_actuels_autre === true
-                ) {
-                    return 'symptomespasses'
-                } else {
-                    return questions.symptomesactuels.before(profil)
-                }
-            } else {
-                return questions.symptomesactuels.before(profil) || 'symptomesactuels'
-            }
+    contactarisque: {
+        previous: () => 'symptomespasses',
+        next: {
+            conseils: (profil) => profil.isContactARisqueComplete(),
         },
     },
+    conseils: {},
 }
 
-class Questionnaire {
-    before(page) {
-        const question = questions[page]
-        if (typeof question !== 'undefined') return question.before
+export class Questionnaire {
+    constructor(questions, firstPage) {
+        this.questions = questions
+        this.firstPage = firstPage
     }
+
+    before(page, profil) {
+        const question = this.questions[page]
+        if (typeof question === 'undefined') return
+
+        return this.checkPathTo(page, profil)
+    }
+
+    // Vérifie si la page du questionnaire est accessible en l’état.
+    // Renvoie `undefined` si c’est OK, ou le nom d’une autre page
+    // accessible vers laquelle renvoyer l’utilisateur.
+    checkPathTo(page, profil) {
+        let step = this.firstPage
+        let steps = [step]
+        while (step) {
+            if (step === page) {
+                console.debug('success!')
+                return
+            }
+
+            const nextStep = this.nextPage(step, profil)
+            if (!nextStep) break
+            if (steps.indexOf(nextStep) > -1) break // avoid loops
+
+            console.debug(`next step: ${nextStep}`)
+            step = nextStep
+            steps.push(step)
+        }
+        console.debug(`could not reach ${page}`, page)
+
+        console.debug('steps', steps)
+
+        const lastReachablePage = steps[steps.length - 1]
+        console.debug(`redirecting to ${lastReachablePage}`)
+        return lastReachablePage
+    }
+
+    // Détermine la page suivante du questionnaire en fonction des réponses
+    // données jusqu’ici. Les pages suivantes potentielles sont listées de
+    // manière ordonnée. La page choisie est la première dont le prédicat
+    // est vérifié.
     nextPage(currentPage, profil) {
-        const question = questions[currentPage]
-        if (typeof question.next !== 'undefined') return question.next(profil)
+        const question = this.questions[currentPage]
+        if (typeof question === 'undefined') return
+        if (typeof question.next === 'undefined') return
+
+        for (const [dest, predicate] of Object.entries(question.next)) {
+            if (predicate(profil)) {
+                console.debug(`matched predicate for ${dest}:`, predicate)
+                return dest
+            } else {
+                console.debug(`did not match predicate for ${dest}:`, predicate)
+            }
+        }
+        console.debug('end of questionnaire')
     }
+
+    // Détermine la page précédente du questionnaire, pour pouvoir inclure
+    // un lien « Retour » à chaque étape.
     previousPage(currentPage) {
-        const question = questions[currentPage]
-        if (typeof question.previous !== 'undefined') return question.previous()
+        const question = this.questions[currentPage]
+        if (typeof question.previous === 'undefined') return
+
+        return question.previous()
     }
 }
 export default Questionnaire
