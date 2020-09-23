@@ -6,7 +6,7 @@
 
 #### À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
 
-Le port du masque n’est pas recommandé chez les nourrissons ni chez les enfants de maternelle et de primaire. 
+Le port du masque n’est pas recommandé chez les nourrissons ni chez les enfants de maternelle et de primaire.
 
 Le port du masque est préconisé uniquement chez les collégiens et les lycéens.
 
@@ -23,7 +23,7 @@ Il peut être utilisé à tout âge, cependant il est préférable de donner la 
 
 Il doit être appliqué sur peau saine en se frottant les mains jusqu’à ce qu’elles soient sèches.
 
-Attention à ne pas laisser le produit à portée des jeunes enfants car il existe un risque de projection dans les yeux et d’ingestion accidentelle. 
+Attention à ne pas laisser le produit à portée des jeunes enfants car il existe un risque de projection dans les yeux et d’ingestion accidentelle.
 
 
 #### Quel sont les précautions pour emmener mon enfant au parc de jeux collectifs (jeux, bacs à sable, points d’eau, etc.) ?
@@ -53,7 +53,7 @@ Oui, si ces personnes ne sont pas malades et en appliquant les mesures de préve
 
 #### Est-il recommandé de mettre mon enfant à la crèche en l’absence de distanciation physique possible ?
 
-Oui le retour en crèche est recommandé car le port du masque par les adultes remplace efficacement la distanciation physique. Par ailleurs, la limitation du nombre d’enfants et l’application des gestes barrières réduit considérablement le risque de contamination chez les enfants et les professionnels de la petite enfance. 
+Oui le retour en crèche est recommandé car le port du masque par les adultes remplace efficacement la distanciation physique. Par ailleurs, la limitation du nombre d’enfants et l’application des gestes barrières réduit considérablement le risque de contamination chez les enfants et les professionnels de la petite enfance.
 
 
 #### Mon enfant peut-il garder son doudou ou sa tétine à la crèche ? Comment faut-il en prendre soin ?
@@ -63,7 +63,7 @@ Il est important pour votre enfant de ne pas perdre ses repères. Garder son dou
 Il faut privilégier des objets en plastique ou tissu et les dupliquer lorsque c’est possible (un pour la maison, un pour la crèche à laisser dans le sac/casier personnel de l’enfant). Pour les doudous, un lavage régulier en machine à 60° est recommandé.
 
 
-#### Quel est l’impact psychologique pour un bébé d’être gardé en crèche par du personnel masqué ? 
+#### Quel est l’impact psychologique pour un bébé d’être gardé en crèche par du personnel masqué ?
 
 Le port du masque et les gestes barrières ne perturbent pas les interactions, qui restent possibles par le regard, la parole et même les gestes. Les enfants n’étant pas masqués, leurs interactions sont très bénéfiques.
 
@@ -86,7 +86,7 @@ Le retour de l’enfant en collectivité ne pourra être envisagé qu’après a
 
 #### Mon enfant est atteint d’une maladie chronique, quelles sont les précautions supplémentaires à prendre ?
 
-Même chez l’enfant atteint d’une pathologie chronique, l’infection à Covid-19 est généralement bénigne. 
+Même chez l’enfant atteint d’une pathologie chronique, l’infection à Covid-19 est généralement bénigne.
 
 Il faut favoriser le retour dans leur établissement scolaire de tous les enfants ayant une pathologie chronique, car cela est bénéfique pour leur santé, leur bien-être et leur avenir. La poursuite d’une scolarisation à domicile ne peut concerner que quelques cas particuliers, sur avis du médecin référent.
 
@@ -97,14 +97,14 @@ Seuls quelques enfants suivis pour des pathologies rares et graves et en situati
 
 ####  La sérologie Covid-19 fonctionne-t-elle également pour les enfants ?
 
-Oui, comme chez l’adulte la sérologie indique un contact avec le virus. Cependant, la prescription d’une sérologie COVID et son interprétation doivent être faites par un médecin. 
+Oui, comme chez l’adulte la sérologie indique un contact avec le virus. Cependant, la prescription d’une sérologie COVID et son interprétation doivent être faites par un médecin.
 
 
 #### Étant donné la situation, dois/puis-je décaler le prochain vaccin de mon enfant ?
 
 Il est primordial de maintenir l’ensemble des vaccinations de vos enfants dans le contexte de Covid-19.
 
-Les consultations pour vaccination ne doivent pas être reportées et les retards de vaccinations doivent être rattrapés. 
+Les consultations pour vaccination ne doivent pas être reportées et les retards de vaccinations doivent être rattrapés.
  
 
 #### Mon enfant de moins de 6 ans a le nez qui coule et tousse mais n’a pas de fièvre, dois-je le sortir de l’école maternelle ?
@@ -116,12 +116,13 @@ S’il apparaît de la fièvre ou si cette « rhino » se prolonge au dela de 
 
 #### Mon enfant est asymptomatique et a été testé positif au coronavirus, que dois-je faire pour l’école ?
 
-Il doit rester au domicile pendant 7 jours, un contrôle de la PCR n’est pas nécessaire pour le retour en collectivité et l’école ne peut pas exiger de certificat médical. 
+Il doit rester au domicile pendant 7 jours, un contrôle de la PCR n’est pas nécessaire pour le retour en collectivité et l’école ne peut pas exiger de certificat médical.
 
 
 #### Mon enfant asymptomatique, mais contact d’un autre enfant malade, a été testé positif au coronavirus, dois-je m’inquiéter ?
 
-**NON** les enfants ont 100 fois moins de risque d’hospitalisation et 1000 fois moins de risque de forme grave que les adultes. 
+**NON**, les enfants ont 100 fois moins de risque d’hospitalisation et 1000 fois moins de risque de forme grave que les adultes.
+
 S’il présente de la fièvre ou s’il a des signes de rhinopharyngite ou des troubles digestifs, une consultation médicale est souhaitable. S’il apparait une gêne respiratoire, la consultation médicale est urgente.
 
 
@@ -130,9 +131,9 @@ S’il présente de la fièvre ou s’il a des signes de rhinopharyngite ou des 
 L’enfant malade ne doit pas retourner à l’école tant qu’il a des symptômes ; si ceux-ci persistent au-delà du 3<sup>e</sup> jour, recontactez votre médecin car la réalisation d’un test peut alors être nécessaire. S’il est négatif, il peut retourner à l’école dès la fin des symptômes. Un certificat médical n’est pas nécessaire pour retourner à l’école.
 
 
-#### Aucun cas n’a été identifié dans l’école mais je réside dans une région où la maladie est très fréquente. Dois-je faire faire régulièrement un test de dépistage à mon enfant ? 
+#### Aucun cas n’a été identifié dans l’école mais je réside dans une région où la maladie est très fréquente. Dois-je faire faire régulièrement un test de dépistage à mon enfant ?
 
-**NON**, les enfants ont 10 fois moins de risque d’attraper la Covid que les adultes. S’ils sont infectés, ils sont beaucoup moins contagieux, surtout s’ils n’ont aucun symptôme. De plus, le test nasal est difficile et peut être douloureux chez le jeune enfant. 
+**NON**, les enfants ont 10 fois moins de risque d’attraper la Covid que les adultes. S’ils sont infectés, ils sont beaucoup moins contagieux, surtout s’ils n’ont aucun symptôme. De plus, le test nasal est difficile et peut être douloureux chez le jeune enfant.
 
 </div>
 

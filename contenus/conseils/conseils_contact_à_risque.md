@@ -1,4 +1,4 @@
-Nous vous conseillons de **contacter votre médecin généraliste**. 
+Nous vous conseillons de **contacter votre médecin généraliste**.
 
 En attendant, il vous est conseillé de :
 

@@ -12,45 +12,45 @@
 
 mesconseilscovid.sante.gouv.fr est un service de prévention et de conseil personnalisé pour se protéger et protéger les autres face au virus.
 
-mesconseilscovid.sante.gouv.fr est un service du ministère des solidarités et de la santé. 
+mesconseilscovid.sante.gouv.fr est un service du ministère des solidarités et de la santé.
 
 Nous sommes une équipe mixte, composée de médecins (infectiologues, anesthésistes, généralistes…), de représentants d’associations de patients et d’experts du numérique, en charge de sa conception.
 
-Notre objectif est de fournir à tous une source d’information simple et fiable pour agir dans la lutte contre le virus. 
+Notre objectif est de fournir à tous une source d’information simple et fiable pour agir dans la lutte contre le virus.
 
 Les conseils sont personnalisés en fonction de votre situation médicale, familiale, professionnelle et géographique.
 
-Ils sont mis à jour au fur et à mesure de l’évolution de la connaissance du virus et de la politique nationale de lutte contre l’épidémie. 
+Ils sont mis à jour au fur et à mesure de l’évolution de la connaissance du virus et de la politique nationale de lutte contre l’épidémie.
 
-Ce service est utile en amont du parcours de soin. L’information fournie ne se substitue pas aux conseils d’un médecin. Dans certains cas, nous vous conseillerons d’ailleurs de consulter votre médecin. 
+Ce service est utile en amont du parcours de soin. L’information fournie ne se substitue pas aux conseils d’un médecin. Dans certains cas, nous vous conseillerons d’ailleurs de consulter votre médecin.
 
 
 ### Source de l’information
 
 Le service s’appuie sur des informations officielles issues :
 
-* des recommandations de Santé Publique France 
+* des recommandations de Santé Publique France
 * des recommandations de la Haute Autorité de Santé et du Haut Conseil de Santé Publique
 * de la liste des départements orange/vert publiée par le ministère
 * de certains sites de référence d’associations de patients
 * des données sur l’épidémie publiées sur le site du gouvernement
- 
+
 Il renvoie vers les consignes préfectorales pour les mesures locales et les recommandations du ministère du travail concernant la reprise de l’activité.
 
-Les informations diffusées ici sont basées sur des recommandations officielles, de sources fiables. Mais il n’est pas exempt de défauts, d’erreurs ou d’omissions. 
+Les informations diffusées ici sont basées sur des recommandations officielles, de sources fiables. Mais il n’est pas exempt de défauts, d’erreurs ou d’omissions.
 
-N’hésitez pas à nous contacter à l’adresse 
-[mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr) 
+N’hésitez pas à nous contacter à l’adresse
+[mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr)
 si vous identifiez une information contraire aux connaissances médicales sur la maladie.
 
 ### Accessibilité
 
-Nous tâchons de rendre ce site accessible à toutes et à tous. Nous n’avons pas encore testé le respect des normes formelles d’accessibilité du service. 
+Nous tâchons de rendre ce site accessible à toutes et à tous. Nous n’avons pas encore testé le respect des normes formelles d’accessibilité du service.
 
-Si vous rencontrez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou une fonctionnalité du site, merci de nous contacter à l’adresse 
-[mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr)
+Si vous rencontrez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou une fonctionnalité du site, merci de nous contacter à l’adresse
+[mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr).
 
-Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits. Pour en savoir plus sur la politique d’accessibilité numérique de l’État : 
+Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits. Pour en savoir plus sur la politique d’accessibilité numérique de l’État :
 [references.modernisation.gouv.fr](http://references.modernisation.gouv.fr/accessibilite-numerique)
 
 
@@ -66,17 +66,17 @@ En cours de navigation, vous pouvez supprimer ces données en cliquant sur le bo
 
 Seules vos données de connexion au service (heure, date…) sont conservées pour répondre à une obligation légale (article 6 de la loi n°2004-575 du 21 juin 2004) et pour une durée d’1 an conformément à la loi.
 
-Au sein du ministère, le responsable de traitement de mesconseilscovid.sante.gouv.fr est la Délégation ministérielle du numérique en santé (DNS) du ministère des solidarités et de la Santé. La déléguée est directrice de publication. 
+Au sein du ministère, le responsable de traitement de mesconseilscovid.sante.gouv.fr est la Délégation ministérielle du numérique en santé (DNS) du ministère des solidarités et de la Santé. La déléguée est directrice de publication.
 
-Vous pouvez également demander des informations ou exercer vos droits concernant la protection de vos données personnelles à l’adresse suivante 
-[mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr)
+Vous pouvez également demander des informations ou exercer vos droits concernant la protection de vos données personnelles à l’adresse suivante
+[mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr).
 
 Le service est hébergé par :
 
 OVH  
 2, rue Kellermann  
 59100 Roubaix  
-[OVH - Données personnelles](https://www.ovh.com/fr/protection-donnees-personnelles/) 
+[OVH - Données personnelles](https://www.ovh.com/fr/protection-donnees-personnelles/)
 
 
 
@@ -109,7 +109,7 @@ La protection repose sur 4 mesures :
 * Le lavage des mains qui est la mesure la plus efficace pour limiter la transmission (se laver les mains avant de manger sur le lieu de travail, après avoir manipulé son masque, après s’être mouché et toussé, après avoir pris les transports en commun …). Il faut se laver les mains au moins 30 secondes à l’eau et au savon ou bien respecter les 6 étapes pour la friction hydro-alcoolique (paume contre paume/dos des mains/entre les doigts/les dos des doigts/les pouces/le bout des doigts et des ongles).
 * La distanciation physique d’un mètre minimum (dans l’idéal 1 personne pour 4 mètre carré).
 * Les gestes barrières (ne pas serrer la main, ne pas s’embrasser, tousser dans son coude ou dans un mouchoir jetable).
-* Le port du masque est recommandé, à changer toutes les 4 heures au maximum. Les masques doivent être portés sans les toucher. Le masque peut être retiré au poste de travail si la distance d’au moins 1 mètre est respectée. Cependant, lors de la circulation dans les lieux de travail, le port du masque est recommandé. 
+* Le port du masque est recommandé, à changer toutes les 4 heures au maximum. Les masques doivent être portés sans les toucher. Le masque peut être retiré au poste de travail si la distance d’au moins 1 mètre est respectée. Cependant, lors de la circulation dans les lieux de travail, le port du masque est recommandé.
 
 
 ### A qui m’adresser si les mesures barrières peuvent être difficilement respectées sur mon lieu de travail ?
@@ -118,7 +118,7 @@ Le télétravail doit être poursuivi si possible.
 
 Si le télétravail n’est pas possible :
 
-* Si vous êtes salarié, vous pouvez être placé en activité partielle. Vous pouvez vous adresser à votre médecin traitant ou au spécialiste qui vous suit pour la pathologie à risque de forme grave de Covid-19 pour obtenir un certificat d’isolement ou à votre médecin du travail qui peut établir une déclaration d’interruption de travail.  
+* Si vous êtes salarié, vous pouvez être placé en activité partielle. Vous pouvez vous adresser à votre médecin traitant ou au spécialiste qui vous suit pour la pathologie à risque de forme grave de Covid-19 pour obtenir un certificat d’isolement ou à votre médecin du travail qui peut établir une déclaration d’interruption de travail.
 * Si vous n’êtes pas salarié, votre médecin traitant peut rédiger un arrêt de travail.
 
 
@@ -130,14 +130,14 @@ Votre médecin du travail pourra vous aider lors de votre retour au poste de tra
 
 Si l’activité professionnelle en présentiel est nécessaire, il faut favoriser un poste de travail non partagé, seul ou avec distanciation sociale respectée. Si le bureau est partagé, il doit être nettoyé et désinfecté en début et en fin de poste au minimum avec les produits habituels utilisés par l’entreprise.
 
-Vous pouvez également demander un aménagement des horaires de travail.  
+Vous pouvez également demander un aménagement des horaires de travail.
 
 
 ### Puis-je utiliser les transports en commun pour aller au travail ?
 
 Les personnes à risque de formes graves de Covid-19 peuvent utiliser les transports en commun. Il est recommandé de porter un masque à usage médical pendant tout le trajet et de respecter au mieux les distances de sécurité.
 
-Il sera important de se désinfecter les mains à l’entrée et à la sortie des transports. 
+Il sera important de se désinfecter les mains à l’entrée et à la sortie des transports.
 </div>
 
 
@@ -276,7 +276,7 @@ Nous n’avons pas accès à vos données et vous pouvez <a href="#introduction"
 
 #### À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
 
-Le port du masque n’est pas recommandé chez les nourrissons ni chez les enfants de maternelle et de primaire. 
+Le port du masque n’est pas recommandé chez les nourrissons ni chez les enfants de maternelle et de primaire.
 
 Le port du masque est préconisé uniquement chez les collégiens et les lycéens.
 
@@ -293,7 +293,7 @@ Il peut être utilisé à tout âge, cependant il est préférable de donner la 
 
 Il doit être appliqué sur peau saine en se frottant les mains jusqu’à ce qu’elles soient sèches.
 
-Attention à ne pas laisser le produit à portée des jeunes enfants car il existe un risque de projection dans les yeux et d’ingestion accidentelle. 
+Attention à ne pas laisser le produit à portée des jeunes enfants car il existe un risque de projection dans les yeux et d’ingestion accidentelle.
 
 
 #### Quel sont les précautions pour emmener mon enfant au parc de jeux collectifs (jeux, bacs à sable, points d’eau, etc.) ?
@@ -323,7 +323,7 @@ Oui, si ces personnes ne sont pas malades et en appliquant les mesures de préve
 
 #### Est-il recommandé de mettre mon enfant à la crèche en l’absence de distanciation physique possible ?
 
-Oui le retour en crèche est recommandé car le port du masque par les adultes remplace efficacement la distanciation physique. Par ailleurs, la limitation du nombre d’enfants et l’application des gestes barrières réduit considérablement le risque de contamination chez les enfants et les professionnels de la petite enfance. 
+Oui le retour en crèche est recommandé car le port du masque par les adultes remplace efficacement la distanciation physique. Par ailleurs, la limitation du nombre d’enfants et l’application des gestes barrières réduit considérablement le risque de contamination chez les enfants et les professionnels de la petite enfance.
 
 
 #### Mon enfant peut-il garder son doudou ou sa tétine à la crèche ? Comment faut-il en prendre soin ?
@@ -333,7 +333,7 @@ Il est important pour votre enfant de ne pas perdre ses repères. Garder son dou
 Il faut privilégier des objets en plastique ou tissu et les dupliquer lorsque c’est possible (un pour la maison, un pour la crèche à laisser dans le sac/casier personnel de l’enfant). Pour les doudous, un lavage régulier en machine à 60° est recommandé.
 
 
-#### Quel est l’impact psychologique pour un bébé d’être gardé en crèche par du personnel masqué ? 
+#### Quel est l’impact psychologique pour un bébé d’être gardé en crèche par du personnel masqué ?
 
 Le port du masque et les gestes barrières ne perturbent pas les interactions, qui restent possibles par le regard, la parole et même les gestes. Les enfants n’étant pas masqués, leurs interactions sont très bénéfiques.
 
@@ -356,7 +356,7 @@ Le retour de l’enfant en collectivité ne pourra être envisagé qu’après a
 
 #### Mon enfant est atteint d’une maladie chronique, quelles sont les précautions supplémentaires à prendre ?
 
-Même chez l’enfant atteint d’une pathologie chronique, l’infection à Covid-19 est généralement bénigne. 
+Même chez l’enfant atteint d’une pathologie chronique, l’infection à Covid-19 est généralement bénigne.
 
 Il faut favoriser le retour dans leur établissement scolaire de tous les enfants ayant une pathologie chronique, car cela est bénéfique pour leur santé, leur bien-être et leur avenir. La poursuite d’une scolarisation à domicile ne peut concerner que quelques cas particuliers, sur avis du médecin référent.
 
@@ -367,14 +367,14 @@ Seuls quelques enfants suivis pour des pathologies rares et graves et en situati
 
 ####  La sérologie Covid-19 fonctionne-t-elle également pour les enfants ?
 
-Oui, comme chez l’adulte la sérologie indique un contact avec le virus. Cependant, la prescription d’une sérologie COVID et son interprétation doivent être faites par un médecin. 
+Oui, comme chez l’adulte la sérologie indique un contact avec le virus. Cependant, la prescription d’une sérologie COVID et son interprétation doivent être faites par un médecin.
 
 
 #### Étant donné la situation, dois/puis-je décaler le prochain vaccin de mon enfant ?
 
 Il est primordial de maintenir l’ensemble des vaccinations de vos enfants dans le contexte de Covid-19.
 
-Les consultations pour vaccination ne doivent pas être reportées et les retards de vaccinations doivent être rattrapés. 
+Les consultations pour vaccination ne doivent pas être reportées et les retards de vaccinations doivent être rattrapés.
  
 
 #### Mon enfant de moins de 6 ans a le nez qui coule et tousse mais n’a pas de fièvre, dois-je le sortir de l’école maternelle ?
@@ -386,12 +386,13 @@ S’il apparaît de la fièvre ou si cette « rhino » se prolonge au dela de 
 
 #### Mon enfant est asymptomatique et a été testé positif au coronavirus, que dois-je faire pour l’école ?
 
-Il doit rester au domicile pendant 7 jours, un contrôle de la PCR n’est pas nécessaire pour le retour en collectivité et l’école ne peut pas exiger de certificat médical. 
+Il doit rester au domicile pendant 7 jours, un contrôle de la PCR n’est pas nécessaire pour le retour en collectivité et l’école ne peut pas exiger de certificat médical.
 
 
 #### Mon enfant asymptomatique, mais contact d’un autre enfant malade, a été testé positif au coronavirus, dois-je m’inquiéter ?
 
-**NON** les enfants ont 100 fois moins de risque d’hospitalisation et 1000 fois moins de risque de forme grave que les adultes. 
+**NON**, les enfants ont 100 fois moins de risque d’hospitalisation et 1000 fois moins de risque de forme grave que les adultes.
+
 S’il présente de la fièvre ou s’il a des signes de rhinopharyngite ou des troubles digestifs, une consultation médicale est souhaitable. S’il apparait une gêne respiratoire, la consultation médicale est urgente.
 
 
@@ -400,9 +401,9 @@ S’il présente de la fièvre ou s’il a des signes de rhinopharyngite ou des 
 L’enfant malade ne doit pas retourner à l’école tant qu’il a des symptômes ; si ceux-ci persistent au-delà du 3<sup>e</sup> jour, recontactez votre médecin car la réalisation d’un test peut alors être nécessaire. S’il est négatif, il peut retourner à l’école dès la fin des symptômes. Un certificat médical n’est pas nécessaire pour retourner à l’école.
 
 
-#### Aucun cas n’a été identifié dans l’école mais je réside dans une région où la maladie est très fréquente. Dois-je faire faire régulièrement un test de dépistage à mon enfant ? 
+#### Aucun cas n’a été identifié dans l’école mais je réside dans une région où la maladie est très fréquente. Dois-je faire faire régulièrement un test de dépistage à mon enfant ?
 
-**NON**, les enfants ont 10 fois moins de risque d’attraper la Covid que les adultes. S’ils sont infectés, ils sont beaucoup moins contagieux, surtout s’ils n’ont aucun symptôme. De plus, le test nasal est difficile et peut être douloureux chez le jeune enfant. 
+**NON**, les enfants ont 10 fois moins de risque d’attraper la Covid que les adultes. S’ils sont infectés, ils sont beaucoup moins contagieux, surtout s’ils n’ont aucun symptôme. De plus, le test nasal est difficile et peut être douloureux chez le jeune enfant.
 
 </div>
 
