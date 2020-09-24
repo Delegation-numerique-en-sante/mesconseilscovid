@@ -5,18 +5,22 @@ export const ORIENTATION = {
         next: { residence: (profil) => profil.nom },
     },
     residence: {
+        num: 1,
         previous: () => 'introduction',
         next: { foyer: (profil) => profil.isResidenceComplete() },
     },
     foyer: {
+        num: 2,
         previous: () => 'residence',
         next: { antecedents: (profil) => profil.isFoyerComplete() },
     },
     antecedents: {
+        num: 3,
         previous: () => 'foyer',
         next: { caracteristiques: (profil) => profil.isAntecedentsComplete() },
     },
     caracteristiques: {
+        num: 4,
         previous: () => 'antecedents',
         next: {
             activitepro: (profil) =>
@@ -26,6 +30,7 @@ export const ORIENTATION = {
         },
     },
     activitepro: {
+        num: 5,
         previous: () => 'caracteristiques',
         next: {
             symptomesactuels: (profil) =>
@@ -35,6 +40,7 @@ export const ORIENTATION = {
         },
     },
     symptomesactuels: {
+        num: 6,
         previous: () => 'activitepro',
         next: {
             conseils: (profil) =>
@@ -59,6 +65,7 @@ export const ORIENTATION = {
         },
     },
     symptomespasses: {
+        num: 7,
         previous: () => 'symptomesactuels',
         next: {
             conseils: (profil) =>
@@ -67,6 +74,7 @@ export const ORIENTATION = {
         },
     },
     contactarisque: {
+        num: 8,
         previous: () => 'symptomespasses',
         next: {
             conseils: (profil) => profil.isContactARisqueComplete(),
@@ -79,6 +87,12 @@ export class Questionnaire {
     constructor(questions, firstPage) {
         this.questions = questions
         this.firstPage = firstPage
+        this.total = 0
+        for (const question of Object.values(questions)) {
+            if (question.num > this.total) {
+                this.total = question.num
+            }
+        }
     }
 
     before(page, profil) {
@@ -135,6 +149,14 @@ export class Questionnaire {
             }
         }
         console.debug('end of questionnaire')
+    }
+
+    // Détermine la progression dans le questionnaire (p. ex. « 2/8»)
+    progress(currentPage) {
+        const question = this.questions[currentPage]
+        if (typeof question.num === 'undefined') return ''
+
+        return `${question.num}/${this.total} - `
     }
 
     // Détermine la page précédente du questionnaire, pour pouvoir inclure
