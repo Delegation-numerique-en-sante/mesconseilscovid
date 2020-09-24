@@ -156,7 +156,7 @@ En attendant, il vous est conseillé de :
 
 ## [conseils_contact_à_risque_autre.md](conseils_contact_à_risque_autre.md)
 
-Vous avez passé du temps avec quelqu’un de positif mais il ne s’agit pas *a priori* d’un contact à risque, au moindre doute ou en cas d’apparition de symptômes n’hésitez pas à contacter votre médecin.
+Vous avez passé du temps avec quelqu’un de positif mais il ne s’agit pas *a priori* d’un contact à risque. Au moindre doute ou en cas d’apparition de symptômes n’hésitez pas à contacter votre médecin.
 
 
 
@@ -285,7 +285,7 @@ Pour plus d’informations :
 
 * Plus d’informations autour du Covid-19 :
   * [Covid19-faq](https://www.covid19-faq.fr/) ou appeler le [0 800 130 000](tel:+33800130000)
-  * L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) peut vous permettre de vous prévenir immédiatement si vous avez été en contact rapproché avec une personne testée positive au Covid-19
+  * L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) vous permettra de recevoir immédiatement une notification si vous avez été en contact rapproché avec une personne testée positive au Covid-19
 
 
 
