@@ -375,7 +375,7 @@ export default class Profil {
         return safeHtml`<h3><span class="profil">${this.affichageNom()}</span></h3>`
     }
 
-    renderButtons() {
+    renderButtons(questionnaire) {
         const possessifMasculinSingulier = this.estMonProfil() ? 'mon' : 'son'
         const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
         var mainButton = ''
@@ -402,14 +402,14 @@ export default class Profil {
             var label = this.isEmpty() ? 'Démarrer' : 'Continuer'
             mainButton = safeHtml`
                 <a class="button button-full-width conseils-link"
-                    data-set-profil="${this.nom}" href="#residence"
+                    data-set-profil="${this.nom}" href="#${questionnaire.firstPage}"
                     >${label}</a>
             `
         }
         return (
             mainButton +
             safeHtml`
-            <a data-set-profil="${this.nom}" href="#residence"
+            <a data-set-profil="${this.nom}" href="#${questionnaire.firstPage}"
                 >Modifier ${possessifPluriel} réponses</a>
             <a data-delete-profil="${this.nom}" href=""
                 >Supprimer ${possessifMasculinSingulier} profil</a>
@@ -417,11 +417,11 @@ export default class Profil {
         )
     }
 
-    renderCard() {
+    renderCard(questionnaire) {
         return createElementFromHTML(`
         <li class="card">
             ${this.renderNom()}
-            <div>${this.renderButtons()}</div>
+            <div>${this.renderButtons(questionnaire)}</div>
         </li>
         `)
     }

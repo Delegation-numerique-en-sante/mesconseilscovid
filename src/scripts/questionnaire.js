@@ -84,11 +84,13 @@ export const ORIENTATION = {
 }
 
 export class Questionnaire {
-    constructor(questions, firstPage) {
+    constructor(questions) {
         this.questions = questions
-        this.firstPage = firstPage
         this.total = 0
-        for (const question of Object.values(questions)) {
+        for (const [pageName, question] of Object.entries(questions)) {
+            if (question.num == 1) {
+                this.firstPage = pageName
+            }
             if (question.num > this.total) {
                 this.total = question.num
             }

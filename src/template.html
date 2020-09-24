@@ -896,7 +896,7 @@
                         <a class="button button-full-width" href="#introduction"
                             >Refaire le questionnaire</a>
                     </div>
-                    <a class="button back-button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
+                    <a class="premiere-question button back-button button-outline button-full-width" href="#">Modifier mes réponses</a>
                 </div>
             </div>
         </div>
@@ -1069,11 +1069,11 @@
     <div id="pediatrie-block" class="block">
         {{ meta_pédiatrie }}
         <div id="js-profil-full" class="form-controls" hidden>
-            <a class="button button-outline back-button button-full-width" href="#residence">Modifier mes réponses</a>
+            <a class="premiere-question button button-outline back-button button-full-width" href="#">Modifier mes réponses</a>
             <a class="button button-full-width" href="#conseils">Retourner à mes conseils</a>
         </div>
         <div id="js-profil-empty">
-            <a class="button button-full-width" href="#residence">Démarrer le questionnaire</a>
+            <a class="premiere-question button button-full-width" href="#">Démarrer le questionnaire</a>
         </div>
     </div>
 </section>
@@ -1082,11 +1082,11 @@
     <div id="medecinedutravail-block" class="block">
         {{ meta_médecine_du_travail }}
         <div id="js-profil-full" class="form-controls" hidden>
-            <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
+            <a class="premiere-question button button-outline button-full-width" href="#">Modifier mes réponses</a>
             <a class="button button-full-width" href="#conseils">Retourner à mes conseils</a>
         </div>
         <div id="js-profil-empty">
-            <a class="button button-full-width" href="#residence">Démarrer le questionnaire</a>
+            <a class="premiere-question button button-full-width" href="#">Démarrer le questionnaire</a>
         </div>
     </div>
 </section>
@@ -1095,11 +1095,11 @@
     <div id="conditions-utilisation-block" class="block">
         {{ meta_conditions_utilisation }}
         <div id="js-profil-full" class="form-controls" hidden>
-            <a class="button button-outline button-full-width" href="#residence">Modifier mes réponses</a>
+            <a class="premiere-question button button-outline button-full-width" href="#">Modifier mes réponses</a>
             <a class="button button-full-width" href="#conseils">Retourner à mes conseils</a>
         </div>
         <div id="js-profil-empty">
-            <a class="button button-full-width" href="#residence">Démarrer le questionnaire</a>
+            <a class="premiere-question button button-full-width" href="#">Démarrer le questionnaire</a>
         </div>
     </div>
 </section>
@@ -1119,7 +1119,7 @@
     <script type="text/javascript">
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./service-worker.js').then(function(registration) {
-                console.log('ServiceWorker registration successful with scope: ', registration.scope)
+                // console.log('ServiceWorker registration successful with scope: ', registration.scope)
             }).catch(function(err) {
                 console.log('ServiceWorker registration failed: ', err)
             })
