@@ -121,6 +121,7 @@ export function initRouter(app) {
     }
 
     function fillNavigation(element, pageName) {
+        console.debug('fillNavigation', element)
         const progress = element.querySelector('legend .progress')
         if (progress) {
             progress.innerText = app.questionnaire.progress(pageName)
@@ -133,7 +134,13 @@ export function initRouter(app) {
                 boutonRetour.setAttribute('href', `#${previousPage}`)
             }
         }
+
+        for (const lien of element.querySelectorAll('.premiere-question')) {
+            lien.setAttribute('href', `#${app.questionnaire.firstPage}`)
+            console.debug('lien', lien)
+        }
     }
+
     addAppRoute('introduction', introduction)
 
     addAppRoute('nom', nom)

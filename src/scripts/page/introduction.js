@@ -14,7 +14,8 @@ export default function introduction(element, app) {
                         <h3><span class="nouveau-profil">Pour moi</span></h3>
                         <div class="form-controls">
                             <a class="button button-full-width"
-                                data-set-profil="mes_infos" href="#residence"
+                                data-set-profil="mes_infos"
+                                href="#${app.questionnaire.firstPage}"
                                 >Démarrer</a>
                         </div>
                     </div>
@@ -43,7 +44,10 @@ function renderProfilCards(container, noms, app) {
     noms.forEach((nom) => {
         const profil = new Profil(nom)
         app.stockage.charger(profil).then((profil) => {
-            const card = container.insertBefore(profil.renderCard(), lastCard)
+            const card = container.insertBefore(
+                profil.renderCard(app.questionnaire),
+                lastCard
+            )
 
             const conseilsLink = card.querySelector('.conseils-link')
             if (conseilsLink) {

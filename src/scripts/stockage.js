@@ -62,8 +62,8 @@ export default class StockageLocal {
             .getItem(profil.nom)
             .then((data) => {
                 if (data !== null) {
-                    console.debug(`Données locales (${profil.nom})`)
-                    console.log(data)
+                    // console.debug(`Données locales (${profil.nom})`)
+                    // console.log(data)
                     profil.fillData(data)
                 } else {
                     console.debug(
