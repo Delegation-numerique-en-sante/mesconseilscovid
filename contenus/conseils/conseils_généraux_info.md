@@ -20,4 +20,4 @@ Pour plus d’informations :
 
 * Plus d’informations autour du Covid-19 :
   * [Covid19-faq](https://www.covid19-faq.fr/) ou appeler le [0 800 130 000](tel:+33800130000)
-  * L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) peut vous permettre de vous prévenir immédiatement si vous avez été en contact rapproché avec une personne testée positive au Covid-19
+  * L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) vous permettra de recevoir immédiatement une notification si vous avez été en contact rapproché avec une personne testée positive au Covid-19
