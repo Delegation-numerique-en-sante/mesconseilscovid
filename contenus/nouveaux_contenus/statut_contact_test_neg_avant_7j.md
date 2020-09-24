@@ -7,3 +7,17 @@ Nous vous conseillons de :
 3. Surveiller l’apparition de **symptômes** et contacter votre médecin si des symptômes apparaissent.
 
 4. Prévoir un test **à la fin des 7 jours d'isolement** avec [la carte des lieux de test.](https://sante.fr/cartographie-depistage-covid). S'il est négatif, vous pouvez lever votre isolement.
+
+
+// Blocs en-dessous :
+// Contact à risque
+// Isolement
+// Tests
+// Contacter un médecin
+// Gestes Barrières
+// La Covid-19
+// Les enfants de moins de 15 ans
+// Ma santé
+// Ma grossesse
+// Mon travail
+// Ma vie quotidienne
