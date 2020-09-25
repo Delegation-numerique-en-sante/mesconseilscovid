@@ -84,10 +84,10 @@ export const ORIENTATION = {
 }
 
 export class Questionnaire {
-    constructor(questions) {
-        this.questions = questions
+    constructor(orientation = ORIENTATION) {
+        this.orientation = orientation
         this.total = 0
-        for (const [pageName, question] of Object.entries(questions)) {
+        for (const [pageName, question] of Object.entries(orientation)) {
             if (question.num == 1) {
                 this.firstPage = pageName
             }
@@ -98,7 +98,7 @@ export class Questionnaire {
     }
 
     before(page, profil) {
-        const question = this.questions[page]
+        const question = this.orientation[page]
         if (typeof question === 'undefined') return
 
         return this.checkPathTo(page, profil)
@@ -138,7 +138,7 @@ export class Questionnaire {
     // manière ordonnée. La page choisie est la première dont le prédicat
     // est vérifié.
     nextPage(currentPage, profil) {
-        const question = this.questions[currentPage]
+        const question = this.orientation[currentPage]
         if (typeof question === 'undefined') return
         if (typeof question.next === 'undefined') return
 
@@ -155,7 +155,7 @@ export class Questionnaire {
 
     // Détermine la progression dans le questionnaire (p. ex. « 2/8»)
     progress(currentPage) {
-        const question = this.questions[currentPage]
+        const question = this.orientation[currentPage]
         if (typeof question.num === 'undefined') return ''
 
         return `${question.num}/${this.total} - `
@@ -164,7 +164,7 @@ export class Questionnaire {
     // Détermine la page précédente du questionnaire, pour pouvoir inclure
     // un lien « Retour » à chaque étape.
     previousPage(currentPage) {
-        const question = this.questions[currentPage]
+        const question = this.orientation[currentPage]
         if (typeof question.previous === 'undefined') return
 
         return question.previous()
