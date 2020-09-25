@@ -1,6 +1,6 @@
 import { assert } from 'chai'
 
-import { Questionnaire, ORIENTATION } from '../questionnaire.js'
+import { Questionnaire } from '../questionnaire.js'
 
 import {
     beforeSuiviIntroduction,
@@ -11,7 +11,7 @@ import {
 
 import Profil from '../profil.js'
 
-const questionnaire = new Questionnaire(ORIENTATION, 'residence')
+const questionnaire = new Questionnaire()
 
 describe('Pagination', function () {
     describe('Mon foyer', function () {

@@ -1,6 +1,6 @@
 import Profil from './profil.js'
 import StockageLocal from './stockage.js'
-import { Questionnaire, ORIENTATION } from './questionnaire.js'
+import { Questionnaire } from './questionnaire.js'
 import { joursAvant } from './utils.js'
 
 import { initRouter } from './router.js'
@@ -10,7 +10,7 @@ export default class App {
     constructor() {
         this.profil = new Profil()
         this.stockage = new StockageLocal()
-        this.questionnaire = new Questionnaire(ORIENTATION, 'residence')
+        this.questionnaire = new Questionnaire()
         this._plausibleTrackingEvents = []
     }
     init() {
