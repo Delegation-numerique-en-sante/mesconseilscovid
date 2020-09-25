@@ -917,7 +917,7 @@
         <fieldset>
             <legend>{{ question_suivi_date_titre|me_or_them }}</legend>
             {{ question_suivi_date_libellé|me_or_them }}
-            <div>
+            <div role="radiogroup">
                 <input id="suivi_date_aujourdhui" type="radio" required name="suivi_symptomes_date" value="aujourdhui">
                 <label for="suivi_date_aujourdhui">Aujourd’hui</label>
                 <input id="suivi_date_hier" type="radio" required name="suivi_symptomes_date" value="hier">
@@ -952,8 +952,9 @@
                     </span>
                 </label>
             </div>
-            <div class="secondary disabled required">
-                <p>
+            <div class="secondary disabled required" role="radiogroup"
+                 aria-labelledby="suivi-symptomes-essoufflement-label">
+                <p id="suivi-symptomes-essoufflement-label">
                     {{ question_suivi_symptômes_essoufflement_libellé|me_or_them }}
                 </p>
                 <input id="suivi_symptomes_essoufflement_mieux" type="radio" required name="suivi_symptomes_essoufflement" value="mieux">
@@ -967,8 +968,9 @@
                 <input id="suivi_symptomes_essoufflement_aucun" type="radio" name="suivi_symptomes_essoufflement" value="aucun">
                 <label for="suivi_symptomes_essoufflement_aucun">Je n’ai pas de manque de souffle</label>
             </div>
-            <div class="secondary disabled required">
-                <p>
+            <div class="secondary disabled required" role="radiogroup"
+                 aria-labelledby="suivi-symptomes-etat-general-label">
+                <p id="suivi-symptomes-etat-general-label">
                     {{ question_suivi_symptômes_état_général_libellé|me_or_them }}
                 </p>
                 <input id="suivi_symptomes_etat_general_mieux" type="radio" required name="suivi_symptomes_etat_general" value="mieux">
@@ -980,8 +982,9 @@
                 <input id="suivi_symptomes_etat_general_critique" type="radio" name="suivi_symptomes_etat_general" value="critique">
                 <label for="suivi_symptomes_etat_general_critique">Beaucoup moins bien</label>
             </div>
-            <div class="secondary disabled required them-only">
-                <p>
+            <div class="secondary disabled required them-only" role="radiogroup"
+                 aria-labelledby="suivi-symptomes-confusion-label">
+                <p id="suivi-symptomes-confusion-label">
                     {{ question_suivi_symptômes_confusion_libellé }}
                 </p>
                 <input id="suivi_symptomes_confusion_oui" type="radio" name="suivi_symptomes_confusion" value="oui">
@@ -989,8 +992,9 @@
                 <input id="suivi_symptomes_confusion_non" type="radio" name="suivi_symptomes_confusion" value="non">
                 <label for="suivi_symptomes_confusion_non">Non</label>
             </div>
-            <div class="secondary disabled required">
-                <p>
+            <div class="secondary disabled required" role="radiogroup"
+                 aria-labelledby="suivi-symptomes-alimentation-hydratation-label">
+                <p id="suivi-symptomes-alimentation-hydratation-label">
                     {{ question_suivi_symptômes_alimentation_hydratation_libellé|me_or_them }}
                 </p>
                 <input id="suivi_symptomes_alimentation_hydratation_oui" type="radio" required name="suivi_symptomes_alimentation_hydratation" value="oui">
@@ -998,8 +1002,9 @@
                 <input id="suivi_symptomes_alimentation_hydratation_non" type="radio" name="suivi_symptomes_alimentation_hydratation" value="non">
                 <label for="suivi_symptomes_alimentation_hydratation_non">Non</label>
             </div>
-            <div class="secondary disabled required">
-                <p>
+            <div class="secondary disabled required" role="radiogroup"
+                 aria-labelledby="suivi-symptomes-etat-psychologique-label">
+                <p id="suivi-symptomes-etat-psychologique-label">
                     {{ question_suivi_symptômes_état_psychologique_libellé|me_or_them }}
                 </p>
                 <input id="suivi_symptomes_etat_psychologique_mieux" type="radio" required name="suivi_symptomes_etat_psychologique" value="mieux">
@@ -1009,8 +1014,9 @@
                 <input id="suivi_symptomes_etat_psychologique_critique" type="radio" name="suivi_symptomes_etat_psychologique" value="critique">
                 <label for="suivi_symptomes_etat_psychologique_critique">Beaucoup moins bien</label>
             </div>
-            <div class="secondary disabled required">
-                <p>
+            <div class="secondary disabled required" role="radiogroup"
+                 aria-labelledby="suivi-symptomes-fievre-label">
+                <p id="suivi-symptomes-fievre-label">
                     {{ question_suivi_symptômes_fièvre_libellé|me_or_them }}
                 </p>
                 <input id="suivi_symptomes_fievre_oui" type="radio" required name="suivi_symptomes_fievre" value="oui">
@@ -1018,8 +1024,9 @@
                 <input id="suivi_symptomes_fievre_non" type="radio" name="suivi_symptomes_fievre" value="non">
                 <label for="suivi_symptomes_fievre_non">Non</label>
             </div>
-            <div class="secondary disabled required">
-                <p>
+            <div class="secondary disabled required" role="radiogroup"
+                 aria-labelledby="suivi-symptomes-diarrhee-vomissements-label">
+                <p id="suivi-symptomes-diarrhee-vomissements-label">
                     {{ question_suivi_symptômes_diarrhée_vomissements_libellé|me_or_them }}
                 </p>
                 <input id="suivi_symptomes_diarrhee_vomissements_oui" type="radio" required name="suivi_symptomes_diarrhee_vomissements" value="oui">
@@ -1027,8 +1034,9 @@
                 <input id="suivi_symptomes_diarrhee_vomissements_non" type="radio" name="suivi_symptomes_diarrhee_vomissements" value="non">
                 <label for="suivi_symptomes_diarrhee_vomissements_non">Non</label>
             </div>
-            <div class="secondary disabled">
-                <p>
+            <div class="secondary disabled" role="radiogroup"
+                 aria-labelledby="suivi-symptomes-toux-label">
+                <p id="suivi-symptomes-toux-label">
                     {{ question_suivi_symptômes_toux_libellé|me_or_them }}
                 </p>
                 <input id="suivi_symptomes_toux_oui" type="radio" name="suivi_symptomes_toux" value="oui">
@@ -1036,8 +1044,9 @@
                 <input id="suivi_symptomes_toux_non" type="radio" name="suivi_symptomes_toux" value="non">
                 <label for="suivi_symptomes_toux_non">Non</label>
             </div>
-            <div class="secondary disabled">
-                <p>
+            <div class="secondary disabled" role="radiogroup"
+                 aria-labelledby="suivi-symptomes-maux-de-tete-label">
+                <p id="suivi-symptomes-maux-de-tete-label">
                     {{ question_suivi_symptômes_maux_de_tête_libellé|me_or_them }}
                 </p>
                 <input id="suivi_symptomes_maux_de_tete_oui" type="radio" name="suivi_symptomes_maux_de_tete" value="oui">
