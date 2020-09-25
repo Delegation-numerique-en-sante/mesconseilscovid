@@ -106,11 +106,9 @@ export function initRouter(app) {
                         return
                     }
 
-                    console.debug('start before hook')
                     const target = beforeFunc(app.profil, app.questionnaire)
-                    console.log('target', target)
                     if (target && target !== pageName) {
-                        router.navigate(target)
+                        redirectTo(target)
                         done(false)
                     } else {
                         done()
@@ -121,7 +119,6 @@ export function initRouter(app) {
     }
 
     function fillNavigation(element, pageName) {
-        console.debug('fillNavigation', element)
         const progress = element.querySelector('legend .progress')
         if (progress) {
             progress.innerText = app.questionnaire.progress(pageName)
@@ -137,7 +134,21 @@ export function initRouter(app) {
 
         for (const lien of element.querySelectorAll('.premiere-question')) {
             lien.setAttribute('href', `#${app.questionnaire.firstPage}`)
-            console.debug('lien', lien)
+        }
+    }
+
+    function redirectTo(target) {
+        if (
+            typeof window !== 'undefined' &&
+            window.history &&
+            window.history.replaceState
+        ) {
+            // Replace current page with target page in the browser history
+            // so that we don’t break the back button
+            window.history.replaceState({}, '', `#${target}`)
+            router.resolve()
+        } else {
+            router.navigate(target)
         }
     }
 
@@ -190,7 +201,7 @@ export function initRouter(app) {
     })
 
     router.notFound(function () {
-        router.navigate('introduction')
+        redirectTo('introduction')
     })
 
     return router
