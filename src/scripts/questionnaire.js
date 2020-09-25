@@ -87,14 +87,15 @@ export class Questionnaire {
     constructor(orientation = ORIENTATION) {
         this.orientation = orientation
         this.total = 0
-        for (const [pageName, question] of Object.entries(orientation)) {
+        Object.keys(orientation).forEach((pageName) => {
+            const question = orientation[pageName]
             if (question.num == 1) {
                 this.firstPage = pageName
             }
             if (question.num > this.total) {
                 this.total = question.num
             }
-        }
+        })
     }
 
     before(page, profil) {
@@ -142,15 +143,18 @@ export class Questionnaire {
         if (typeof question === 'undefined') return
         if (typeof question.next === 'undefined') return
 
-        for (const [dest, predicate] of Object.entries(question.next)) {
+        let nextPage
+        Object.keys(question.next).forEach((dest) => {
+            const predicate = question.next[dest]
             if (predicate(profil)) {
                 console.debug(`matched predicate for ${dest}:`, predicate)
-                return dest
+                if (!nextPage) nextPage = dest
             } else {
                 console.debug(`did not match predicate for ${dest}:`, predicate)
             }
-        }
+        })
         console.debug('end of questionnaire')
+        return nextPage
     }
 
     // Détermine la progression dans le questionnaire (p. ex. « 2/8»)
