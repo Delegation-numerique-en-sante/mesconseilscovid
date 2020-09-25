@@ -106,9 +106,7 @@ export function initRouter(app) {
                         return
                     }
 
-                    console.debug('start before hook')
                     const target = beforeFunc(app.profil, app.questionnaire)
-                    console.log('target', target)
                     if (target && target !== pageName) {
                         router.navigate(target)
                         done(false)
@@ -121,7 +119,6 @@ export function initRouter(app) {
     }
 
     function fillNavigation(element, pageName) {
-        console.debug('fillNavigation', element)
         const progress = element.querySelector('legend .progress')
         if (progress) {
             progress.innerText = app.questionnaire.progress(pageName)
@@ -137,7 +134,6 @@ export function initRouter(app) {
 
         for (const lien of element.querySelectorAll('.premiere-question')) {
             lien.setAttribute('href', `#${app.questionnaire.firstPage}`)
-            console.debug('lien', lien)
         }
     }
 
