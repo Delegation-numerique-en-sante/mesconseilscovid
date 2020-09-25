@@ -3,13 +3,6 @@ import { preloadForm, toggleFormButtonOnSelectFieldsRequired } from '../../formu
 import geolocalisation from '../../geoloc.js'
 
 export default function residence(form, app) {
-    // Premier démarrage du formulaire ?
-    if (!app.profil.questionnaire_started) {
-        app.profil.questionnaire_started = true
-        app.enregistrerProfilActuel()
-        window.plausible(`Questionnaire commencé`)
-    }
-
     var button = form.querySelector('input[type=submit]')
     preloadForm(form, 'departement', app.profil)
     const requiredLabel = app.profil.estMonProfil()

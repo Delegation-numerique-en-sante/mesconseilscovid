@@ -14,17 +14,59 @@ import Profil from '../profil.js'
 const questionnaire = new Questionnaire()
 
 describe('Pagination', function () {
+    describe('Ma résidence', function () {
+        it('redirige vers question contact à risque si réponse manquante', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+            })
+            assert.strictEqual(
+                questionnaire.before('residence', profil),
+                'contactarisque'
+            )
+        })
+        it('ok d’aller à la question résidence si réponse à contact à risque', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+            })
+            assert.isUndefined(questionnaire.before('residence', profil))
+        })
+        it('ok d’aller à la question résidence même si déjà répondu', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+                departement: '80',
+            })
+            assert.isUndefined(questionnaire.before('residence', profil))
+        })
+    })
+
     describe('Mon foyer', function () {
-        it('redirige vers question 1 si réponse manquante', function () {
-            const profil = new Profil('mes_infos', {})
+        it('redirige vers question résidence si réponse manquante', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+            })
             assert.strictEqual(questionnaire.before('foyer', profil), 'residence')
         })
-        it('ok d’aller à la question 2 si réponse à la 1', function () {
-            const profil = new Profil('mes_infos', { departement: '80' })
+        it('ok d’aller à la question foyer si réponse à résidence', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+                departement: '80',
+            })
             assert.isUndefined(questionnaire.before('foyer', profil))
         })
-        it('ok d’aller à la question 2 même si déjà répondu', function () {
+        it('ok d’aller à la question foyer même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
             })
@@ -33,20 +75,31 @@ describe('Pagination', function () {
     })
 
     describe('Mes antécédents', function () {
-        it('redirige vers question 2 si réponse manquante', function () {
-            const profil = new Profil('mes_infos', { departement: '80' })
+        it('redirige vers question foyer si réponse manquante', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+                departement: '80',
+            })
             assert.strictEqual(questionnaire.before('antecedents', profil), 'foyer')
         })
-        it('ok d’aller à la question 3 si réponse à la 2', function () {
+        it('ok d’aller à la question antécédents si réponse à foyer', function () {
             const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
             })
             assert.isUndefined(questionnaire.before('antecedents', profil))
         })
-        it('ok d’aller à la question 3 même si déjà répondu', function () {
+        it('ok d’aller à la question antécédents même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -65,8 +118,11 @@ describe('Pagination', function () {
     })
 
     describe('Mes caractéristiques', function () {
-        it('redirige vers question 3 si réponse manquante', function () {
+        it('redirige vers question antécédents si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -77,8 +133,11 @@ describe('Pagination', function () {
             )
         })
 
-        it('ok d’aller à la question 4 si réponse à la 3', function () {
+        it('ok d’aller à la question caractéristiques si réponse à antécédents', function () {
             const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -94,8 +153,11 @@ describe('Pagination', function () {
             })
             assert.isUndefined(questionnaire.before('caracteristiques', profil))
         })
-        it('ok d’aller à la question 3 même si déjà répondu', function () {
+        it('ok d’aller à la question caractéristiques même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -118,8 +180,11 @@ describe('Pagination', function () {
     })
 
     describe('Mon activité', function () {
-        it('redirige vers question 4 si réponse manquante', function () {
+        it('redirige vers question caractéristiques si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -135,6 +200,7 @@ describe('Pagination', function () {
                 age: 42,
                 grossesse_3e_trimestre: false,
                 poids: 80,
+                // Manque la taille.
             })
             assert.strictEqual(
                 questionnaire.before('activitepro', profil),
@@ -143,6 +209,9 @@ describe('Pagination', function () {
         })
         it('redirige vers pédiatrie si âge inférieur à 15', function () {
             const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -162,8 +231,11 @@ describe('Pagination', function () {
             })
             assert.strictEqual(questionnaire.before('activitepro', profil), 'pediatrie')
         })
-        it('ok d’aller à la question 5 si réponse à la 4', function () {
+        it('ok d’aller à la question activité pro si réponse à caractéristiques', function () {
             const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -183,8 +255,11 @@ describe('Pagination', function () {
             })
             assert.isUndefined(questionnaire.before('activitepro', profil))
         })
-        it('ok d’aller à la question 5 même si déjà répondu', function () {
+        it('ok d’aller à la question activité pro même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
@@ -208,122 +283,12 @@ describe('Pagination', function () {
     })
 
     describe('Mes symptômes actuels', function () {
-        // Début rattrapage profession libérale.
-        it('redirige vers question 5 si activité pro mais pas profession libérale', function () {
-            const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: true,
-            })
-            assert.strictEqual(
-                questionnaire.before('symptomesactuels', profil),
-                'activitepro'
-            )
-        })
-        it('ok d’aller à la question 6 si réponse vraie à la 5 + profession libérale', function () {
-            const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: true,
-                activite_pro_liberal: false,
-            })
+        it('ok d’aller aux symptômes actuels avec profil vide', function () {
+            const profil = new Profil('mes_infos', {})
             assert.isUndefined(questionnaire.before('symptomesactuels', profil))
         })
-        // Fin rattrapage profession libérale.
-
-        it('redirige vers question 5 si réponse manquante', function () {
+        it('ok d’aller aux symptômes actuels même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-            })
-            assert.strictEqual(
-                questionnaire.before('symptomesactuels', profil),
-                'activitepro'
-            )
-        })
-        it('ok d’aller à la question 6 si réponse à la 5', function () {
-            const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
-            })
-            assert.isUndefined(questionnaire.before('symptomesactuels', profil))
-        })
-        it('ok d’aller à la question 6 même si déjà répondu', function () {
-            const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: false,
             })
             assert.isUndefined(questionnaire.before('symptomesactuels', profil))
@@ -331,121 +296,35 @@ describe('Pagination', function () {
     })
 
     describe('Mes symptômes passés', function () {
-        it('redirige vers question 6 si réponse manquante', function () {
-            const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
-            })
+        it('redirige vers question symptômes actuels si réponse manquante', function () {
+            const profil = new Profil('mes_infos', {})
             assert.strictEqual(
                 questionnaire.before('symptomespasses', profil),
                 'symptomesactuels'
             )
         })
-        it('ok d’aller à la question 7 si réponse négative à la 6', function () {
+        it('ok d’aller à la question symptômes passés si réponse négative à symptômes actuels', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: false,
             })
             assert.isUndefined(questionnaire.before('symptomespasses', profil))
         })
-        it('ok d’aller à la question 7 si réponse positive à la 6 mais que autre', function () {
+        it('ok d’aller à la question symptômes passés si réponse positive à symptômes actuels mais que autre', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: true,
                 symptomes_actuels_autre: true,
             })
             assert.isUndefined(questionnaire.before('symptomespasses', profil))
         })
-        it('ok d’aller à la question 7 même si déjà répondu', function () {
+        it('ok d’aller à la question symptômes passés même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
             })
             assert.isUndefined(questionnaire.before('symptomespasses', profil))
         })
-        it('redirige vers conseils si réponse positive à la 6', function () {
+        it('redirige vers conseils si réponse positive à symptômes actuels', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: true,
                 symptomes_actuels_autre: false,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
@@ -458,25 +337,8 @@ describe('Pagination', function () {
     })
 
     describe('Mes contacts à risque', function () {
-        it('redirige vers question 7 si réponse manquante', function () {
+        it('redirige vers question symptômes passés si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: false,
             })
             assert.strictEqual(
@@ -484,99 +346,31 @@ describe('Pagination', function () {
                 'symptomespasses'
             )
         })
-        it('ok d’aller à la question 8 si réponse négative aux 6 et 7', function () {
+        it('ok d’aller à la question contact à risque si réponse négative à symptômes actuels et symptômes passés', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
             })
             assert.isUndefined(questionnaire.before('contactarisque', profil))
         })
-        it('ok d’aller à la question 8 si réponse négative à la 7 et positive mais autre à la 6', function () {
+        it('ok d’aller à la question contact à risque si réponse négative à symptômes passés et positive mais autre à symptômes actuels', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: true,
                 symptomes_actuels_autre: true,
                 symptomes_passes: false,
             })
             assert.isUndefined(questionnaire.before('contactarisque', profil))
         })
-        it('ok d’aller à la question 8 même si déjà répondu', function () {
+        it('ok d’aller à la question contact à risque même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
             })
             assert.isUndefined(questionnaire.before('contactarisque', profil))
         })
-        it('redirige vers conseils si réponse positive à la 6', function () {
+        it('redirige vers conseils si réponse positive à symptômes actuels', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: true,
                 symptomes_actuels_autre: false,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
@@ -586,25 +380,8 @@ describe('Pagination', function () {
                 'conseils'
             )
         })
-        it('redirige vers conseils si réponse positive à la 7', function () {
+        it('redirige vers conseils si réponse positive à symptômes passés', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: false,
                 symptomes_passes: true,
             })
@@ -689,7 +466,7 @@ describe('Pagination', function () {
             })
             assert.isUndefined(questionnaire.before('conseils', profil))
         })
-        it('redirige vers question 8 si réponse manquante', function () {
+        it('redirige vers question contact à risque si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
@@ -716,7 +493,7 @@ describe('Pagination', function () {
                 'contactarisque'
             )
         })
-        it('redirige vers question 7 si réponse manquante', function () {
+        it('redirige vers question symptômes passés si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
@@ -742,7 +519,7 @@ describe('Pagination', function () {
                 'symptomespasses'
             )
         })
-        it('redirige vers question 7 si symptômes actuels autres', function () {
+        it('redirige vers question symptômes passés si symptômes actuels autres', function () {
             const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
@@ -769,7 +546,7 @@ describe('Pagination', function () {
                 'symptomespasses'
             )
         })
-        it('redirige vers question 6 si réponse manquante', function () {
+        it('redirige vers question symptômes actuels si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 departement: '80',
                 foyer_enfants: false,
@@ -793,6 +570,30 @@ describe('Pagination', function () {
                 questionnaire.before('conseils', profil),
                 'symptomesactuels'
             )
+        })
+        it('redirige vers question activité pro si réponse manquante', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+                departement: '80',
+                foyer_enfants: false,
+                foyer_fragile: false,
+                antecedent_cardio: false,
+                antecedent_diabete: false,
+                antecedent_respi: false,
+                antecedent_dialyse: false,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                age: 42,
+                grossesse_3e_trimestre: false,
+                poids: 80,
+                taille: 180,
+            })
+            assert.strictEqual(questionnaire.before('conseils', profil), 'activitepro')
         })
         it('redirige vers pediatrie si age < 15', function () {
             const profil = new Profil('mes_infos', {

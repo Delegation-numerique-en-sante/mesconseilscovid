@@ -5,22 +5,22 @@ export const ORIENTATION = {
         next: { residence: (profil) => profil.nom },
     },
     residence: {
-        num: 1,
-        previous: () => 'introduction',
+        num: 4,
+        previous: () => 'contactarisque',
         next: { foyer: (profil) => profil.isResidenceComplete() },
     },
     foyer: {
-        num: 2,
+        num: 5,
         previous: () => 'residence',
         next: { antecedents: (profil) => profil.isFoyerComplete() },
     },
     antecedents: {
-        num: 3,
+        num: 6,
         previous: () => 'foyer',
         next: { caracteristiques: (profil) => profil.isAntecedentsComplete() },
     },
     caracteristiques: {
-        num: 4,
+        num: 7,
         previous: () => 'antecedents',
         next: {
             activitepro: (profil) =>
@@ -30,18 +30,15 @@ export const ORIENTATION = {
         },
     },
     activitepro: {
-        num: 5,
+        num: 8,
         previous: () => 'caracteristiques',
         next: {
-            symptomesactuels: (profil) =>
-                profil.isActiviteProComplete() &&
-                (!profil.activite_pro ||
-                    typeof profil.activite_pro_liberal !== 'undefined'),
+            conseils: (profil) => profil.isActiviteProComplete(),
         },
     },
     symptomesactuels: {
-        num: 6,
-        previous: () => 'activitepro',
+        num: 1,
+        previous: () => 'introduction',
         next: {
             conseils: (profil) =>
                 profil.isSymptomesActuelsComplete() &&
@@ -65,7 +62,7 @@ export const ORIENTATION = {
         },
     },
     symptomespasses: {
-        num: 7,
+        num: 2,
         previous: () => 'symptomesactuels',
         next: {
             conseils: (profil) =>
@@ -74,10 +71,14 @@ export const ORIENTATION = {
         },
     },
     contactarisque: {
-        num: 8,
+        num: 3,
         previous: () => 'symptomespasses',
         next: {
-            conseils: (profil) => profil.isContactARisqueComplete(),
+            conseils: (profil) =>
+                profil.isContactARisqueComplete() &&
+                profil.contact_a_risque &&
+                !profil.contact_a_risque_autre,
+            residence: (profil) => profil.isContactARisqueComplete(),
         },
     },
     conseils: {},

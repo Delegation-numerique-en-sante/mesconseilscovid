@@ -24,12 +24,6 @@ export async function waitForPlausibleTrackingEvents(page, names) {
 }
 
 export async function remplirQuestionnaire(page, choix) {
-    await remplirDepartement(page, choix.departement)
-    await remplirFoyer(page, choix.enfants)
-    await remplirAntecedents(page)
-    await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
-    if (choix.age < 15) return
-    await remplirActivite(page, choix.activitePro)
     await remplirSymptomesActuels(page, choix.symptomesActuels)
     if (choix.symptomesActuels.length === 0) {
         await remplirSymptomesPasses(page, choix.symptomesPasses)
@@ -37,16 +31,23 @@ export async function remplirQuestionnaire(page, choix) {
             await remplirContactsARisque(page)
         }
     }
+    if (choix.symptomesActuels.length !== 0 || choix.symptomesPasses === true) {
+        return
+    }
+    await remplirDepartement(page, choix.departement)
+    await remplirFoyer(page, choix.enfants)
+    await remplirAntecedents(page)
+    await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
+    if (choix.age < 15) return
+    await remplirActivite(page, choix.activitePro)
 }
 
-// Questionnaire 1/8
 async function remplirDepartement(page, departement) {
     await page.selectOption('#page select#departement', departement)
     let bouton = await page.waitForSelector('#page >> text="Continuer"')
     await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#foyer' })])
 }
 
-// Questionnaire 2/8
 async function remplirFoyer(page, enfants) {
     if (enfants === true) {
         // Je n’arrive pas à cocher la case directement, alors je clique sur le label
@@ -64,7 +65,6 @@ async function remplirFoyer(page, enfants) {
     ])
 }
 
-// Questionnaire 3/8
 async function remplirAntecedents(page) {
     // TODO: cocher les cases
     let bouton = await page.waitForSelector(
@@ -76,7 +76,6 @@ async function remplirAntecedents(page) {
     ])
 }
 
-// Questionnaire 4/8
 async function remplirCaracteristiques(page, age, taille, poids) {
     await page.fill('#page #age', age)
     await page.fill('#page #taille', taille)
@@ -90,7 +89,6 @@ async function remplirCaracteristiques(page, age, taille, poids) {
     ])
 }
 
-// Questionnaire 5/8
 async function remplirActivite(page, activitePro) {
     let label = await page.waitForSelector('#page label[for="activite_pro"]')
     let text
@@ -98,19 +96,15 @@ async function remplirActivite(page, activitePro) {
     if (activitePro === true) {
         // Je n’arrive pas à cocher la case directement, alors je clique sur le label
         await label.click()
-        text = 'Continuer'
+        text = 'Terminer'
     } else {
         text = 'Je n’ai pas d’activité professionnelle ou bénévole'
     }
 
     let bouton = await page.waitForSelector(`#page >> text="${text}"`)
-    await Promise.all([
-        bouton.click(),
-        page.waitForNavigation({ url: '**/#symptomesactuels' }),
-    ])
+    await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#conseils' })])
 }
 
-// Questionnaire 6/8
 async function remplirSymptomesActuels(page, symptomesActuels) {
     let text
     let nextPage
@@ -140,7 +134,6 @@ async function remplirSymptomesActuels(page, symptomesActuels) {
     ])
 }
 
-// Questionnaire 7/8
 async function remplirSymptomesPasses(page, symptomesPasses) {
     let text
     let nextPage
@@ -149,7 +142,7 @@ async function remplirSymptomesPasses(page, symptomesPasses) {
         // Je n’arrive pas à cocher la case directement, alors je clique sur le label
         let label = await page.waitForSelector('#page label[for="symptomes_passes"]')
         await label.click()
-        text = '"Terminer"'
+        text = '"Continuer"'
         nextPage = 'conseils'
     } else {
         text = '/.* pas eu de symptômes dans les 14 derniers jours/' // &nbsp; après le 14
@@ -162,11 +155,13 @@ async function remplirSymptomesPasses(page, symptomesPasses) {
     ])
 }
 
-// Questionnaire 8/8
 async function remplirContactsARisque(page) {
     // TODO: cocher la case
-    let bouton = await page.waitForSelector('#page >> text="Terminer"')
-    await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#conseils' })])
+    let bouton = await page.waitForSelector('#page >> text="Continuer"')
+    await Promise.all([
+        bouton.click(),
+        page.waitForNavigation({ url: '**/#residence' }),
+    ])
 }
 
 export async function remplirSuivi(page, symptomes) {

@@ -20,19 +20,12 @@ describe('Auto-suivi', function () {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:residence'),
+                waitForPlausibleTrackingEvent(page, 'pageview:symptomesactuels'),
             ])
         }
 
         // Remplir le questionnaire
         await remplirQuestionnaire(page, {
-            departement: '80',
-            activitePro: true,
-            enfants: true,
-            age: '42',
-            taille: '165',
-            poids: '70',
-            grossesse: false,
             symptomesActuels: ['temperature'],
         })
 
@@ -204,19 +197,12 @@ describe('Auto-suivi', function () {
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:residence'),
+                waitForPlausibleTrackingEvent(page, 'pageview:symptomesactuels'),
             ])
         }
 
         // Remplir le questionnaire
         await remplirQuestionnaire(page, {
-            departement: '80',
-            activitePro: true,
-            enfants: true,
-            age: '42',
-            taille: '165',
-            poids: '70',
-            grossesse: false,
             symptomesActuels: ['temperature'],
         })
 

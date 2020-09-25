@@ -5,6 +5,13 @@ import {
 } from '../../formutils.js'
 
 export default function symptomesactuels(form, app) {
+    // Premier démarrage du formulaire ?
+    if (!app.profil.questionnaire_started) {
+        app.profil.questionnaire_started = true
+        app.enregistrerProfilActuel()
+        window.plausible(`Questionnaire commencé`)
+    }
+
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'symptomes_actuels', app.profil)
     preloadCheckboxForm(form, 'symptomes_actuels_temperature', app.profil)
@@ -66,6 +73,7 @@ export default function symptomesactuels(form, app) {
         }
 
         app.enregistrerProfilActuel().then(() => {
+            // TODISCUSS: étrange d’avoir cette logique ici et pas dans `next`.
             let nextPage = app.questionnaire.nextPage('symptomesactuels', app.profil)
             if (nextPage === 'conseils')
                 nextPage = app.profil.suivi_start_date ? 'suivisymptomes' : 'suividate'

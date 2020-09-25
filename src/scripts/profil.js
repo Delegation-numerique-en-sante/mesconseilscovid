@@ -379,7 +379,10 @@ export default class Profil {
         const possessifMasculinSingulier = this.estMonProfil() ? 'mon' : 'son'
         const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
         var mainButton = ''
-        if (this.isComplete()) {
+        if (
+            this.isComplete() ||
+            (this.symptomes_actuels && !this.symptomes_actuels_autre)
+        ) {
             if (this.suivi_active) {
                 const verbe =
                     this.hasSuiviStartDate() && this.hasHistorique()
