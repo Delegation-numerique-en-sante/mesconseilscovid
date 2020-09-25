@@ -125,9 +125,7 @@ export class Questionnaire {
             step = nextStep
             steps.push(step)
         }
-        console.debug(`could not reach ${page}`, page)
-
-        console.debug('steps', steps)
+        console.debug(`could not reach ${page} via steps:`, steps)
 
         const lastReachablePage = steps[steps.length - 1]
         console.debug(`redirecting to ${lastReachablePage}`)
@@ -153,8 +151,8 @@ export class Questionnaire {
                 console.debug(`did not match predicate for ${dest}:`, predicate)
             }
         })
-        console.debug('end of questionnaire')
-        return nextPage
+        if (nextPage) return nextPage
+        console.debug(`no reachable page after ${currentPage}`)
     }
 
     // Détermine la progression dans le questionnaire (p. ex. « 2/8»)
