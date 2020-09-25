@@ -60,7 +60,7 @@ export default function symptomesactuels(form, app) {
             event.target.elements['symptomes_actuels_autre'].checked
 
         // On complète manuellement le formulaire pour le rendre complet.
-        if (app.profil.symptomes_actuels && !app.profil.symptomes_actuels_autre) {
+        if (app.profil.hasSymptomesActuelsReconnus()) {
             app.profil.symptomes_passes = false
             app.profil.contact_a_risque = false
             app.profil.contact_a_risque_meme_lieu_de_vie = undefined

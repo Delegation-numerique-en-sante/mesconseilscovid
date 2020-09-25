@@ -42,11 +42,10 @@ export const ORIENTATION = {
         next: {
             conseils: (profil) =>
                 profil.isSymptomesActuelsComplete() &&
-                profil.symptomes_actuels &&
-                !profil.symptomes_actuels_autre,
+                profil.hasSymptomesActuelsReconnus(),
             symptomespasses: (profil) =>
                 profil.isSymptomesActuelsComplete() &&
-                (!profil.symptomes_actuels || profil.symptomes_actuels_autre),
+                !profil.hasSymptomesActuelsReconnus(),
         },
     },
     suividate: {
