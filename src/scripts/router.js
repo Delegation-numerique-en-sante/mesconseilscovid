@@ -132,9 +132,10 @@ export function initRouter(app) {
             }
         }
 
-        for (const lien of element.querySelectorAll('.premiere-question')) {
+        // eslint-disable-next-line no-extra-semi
+        ;[].forEach.call(element.querySelectorAll('.premiere-question'), (lien) => {
             lien.setAttribute('href', `#${app.questionnaire.firstPage}`)
-        }
+        })
     }
 
     function redirectTo(target) {
