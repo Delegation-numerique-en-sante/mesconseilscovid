@@ -1,13 +1,6 @@
 import { toggleFormButtonOnTextFieldsRequired } from '../../formutils.js'
 
 export default function nom(form, app) {
-    // Premier démarrage du formulaire ?
-    if (!app.profil.questionnaire_started) {
-        app.profil.questionnaire_started = true
-        app.enregistrerProfilActuel()
-        window.plausible(`Questionnaire commencé`)
-    }
-
     var button = form.querySelector('input[type=submit]')
     const requiredLabel = 'Cette information est requise'
     toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)
