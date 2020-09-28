@@ -1,15 +1,16 @@
 import http from 'http'
-import nodeStatic from 'node-static'
+import serveStatic from 'serve-static'
 
 let server
 
 before(function () {
     // Lance un serveur HTTP
-    let file = new nodeStatic.Server('./dist')
+    let serve = new serveStatic('./dist')
+
     server = http.createServer(function (request, response) {
         request
             .addListener('end', function () {
-                file.serve(request, response)
+                serve(request, response)
             })
             .resume()
     })
