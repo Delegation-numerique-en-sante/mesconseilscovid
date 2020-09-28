@@ -32,7 +32,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#residence' }),
+                page.waitForNavigation({ url: '**/#symptomesactuels' }),
             ])
         }
 
@@ -49,7 +49,10 @@ describe('Parcours', function () {
             symptomesPasses: false,
         })
 
-        await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:residence')
+        await waitForPlausibleTrackingEvent(
+            page,
+            'Questionnaire commencé:symptomesactuels'
+        )
 
         // Conseils
         {
@@ -115,7 +118,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#residence' }),
+                page.waitForNavigation({ url: '**/#symptomesactuels' }),
             ])
         }
 
@@ -180,7 +183,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#residence' }),
+                page.waitForNavigation({ url: '**/#symptomesactuels' }),
             ])
         }
 
@@ -250,19 +253,12 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#residence' }),
+                page.waitForNavigation({ url: '**/#symptomesactuels' }),
             ])
         }
 
         // Remplir le questionnaire
         await remplirQuestionnaire(page, {
-            departement: '80',
-            activitePro: true,
-            enfants: true,
-            age: '42',
-            taille: '165',
-            poids: '70',
-            grossesse: false,
             symptomesActuels: ['temperature'],
         })
 
@@ -301,19 +297,12 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#residence' }),
+                page.waitForNavigation({ url: '**/#symptomesactuels' }),
             ])
         }
 
         // Remplir le questionnaire
         await remplirQuestionnaire(page, {
-            departement: '80',
-            activitePro: true,
-            enfants: true,
-            age: '42',
-            taille: '165',
-            poids: '70',
-            grossesse: false,
             symptomesActuels: ['souffle'],
         })
 
@@ -352,19 +341,12 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#residence' }),
+                page.waitForNavigation({ url: '**/#symptomesactuels' }),
             ])
         }
 
         // Remplir le questionnaire
         await remplirQuestionnaire(page, {
-            departement: '80',
-            activitePro: true,
-            enfants: true,
-            age: '42',
-            taille: '165',
-            poids: '70',
-            grossesse: false,
             symptomesActuels: [],
             symptomesPasses: true,
         })
@@ -400,12 +382,14 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#residence' }),
+                page.waitForNavigation({ url: '**/#symptomesactuels' }),
             ])
         }
 
         // Remplir le questionnaire
         await remplirQuestionnaire(page, {
+            symptomesActuels: [],
+            symptomesPasses: false,
             departement: '80',
             enfants: true,
             age: '12',
@@ -423,7 +407,7 @@ describe('Parcours', function () {
             // On retrouve le bouton pour repartir vers le questionnaire
             let button = await page.waitForSelector('#page #js-profil-empty a')
             assert.equal((await button.innerText()).trim(), 'Démarrer le questionnaire')
-            assert.equal(await button.getAttribute('href'), '#residence')
+            assert.equal(await button.getAttribute('href'), '#symptomesactuels')
         }
     })
 
@@ -450,7 +434,7 @@ describe('Parcours', function () {
             // On retrouve le bouton pour repartir vers le questionnaire
             let button = await page.waitForSelector('#page #js-profil-empty a')
             assert.equal((await button.innerText()).trim(), 'Démarrer le questionnaire')
-            assert.equal(await button.getAttribute('href'), '#residence')
+            assert.equal(await button.getAttribute('href'), '#symptomesactuels')
             // On retrouve le titre explicite
             let titre = await page.waitForSelector('#page h2')
             assert.equal(await titre.innerText(), 'Conditions d’utilisation')

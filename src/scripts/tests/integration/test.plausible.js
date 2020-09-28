@@ -48,7 +48,7 @@ describe('Plausible', function () {
 
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/#residence' }),
+            page.waitForNavigation({ url: '**/#symptomesactuels' }),
         ])
 
         await remplirQuestionnaire(page, {
@@ -80,15 +80,15 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
-            'Questionnaire commencé:residence',
+            'Questionnaire commencé:symptomesactuels',
+            'pageview:symptomesactuels',
+            'pageview:symptomespasses',
+            'pageview:contactarisque',
             'pageview:residence',
             'pageview:foyer',
             'pageview:antecedents',
             'pageview:caracteristiques',
             'pageview:activitepro',
-            'pageview:symptomesactuels',
-            'pageview:symptomespasses',
-            'pageview:contactarisque',
             'Questionnaire terminé:conseils',
             'pageview:conseils',
             'Avis positif:conseils',
@@ -102,7 +102,7 @@ describe('Plausible', function () {
         let bouton = await page.waitForSelector('text="Démarrer"')
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/#residence' }),
+            page.waitForNavigation({ url: '**/#symptomesactuels' }),
         ])
         await remplirQuestionnaire(page, {
             departement: '80',
@@ -133,15 +133,15 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
-            'Questionnaire commencé:residence',
+            'Questionnaire commencé:symptomesactuels',
+            'pageview:symptomesactuels',
+            'pageview:symptomespasses',
+            'pageview:contactarisque',
             'pageview:residence',
             'pageview:foyer',
             'pageview:antecedents',
             'pageview:caracteristiques',
             'pageview:activitepro',
-            'pageview:symptomesactuels',
-            'pageview:symptomespasses',
-            'pageview:contactarisque',
             'Questionnaire terminé:conseils',
             'pageview:conseils',
             'Avis negatif:conseils',

@@ -68,7 +68,7 @@ export function antecedents(element, algoOrientation) {
 }
 
 export function symptomesactuels(element, algoOrientation) {
-    if (algoOrientation.symptomesActuelsReconnus) {
+    if (algoOrientation.profil.hasSymptomesActuelsReconnus()) {
         var symptomes = []
         if (
             algoOrientation.profil.symptomes_actuels_temperature ||

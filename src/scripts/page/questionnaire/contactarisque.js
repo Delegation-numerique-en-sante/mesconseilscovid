@@ -22,7 +22,7 @@ export default function contactarisque(form, app) {
     toggleFormButtonOnCheckRequired(
         form,
         button.value,
-        'Terminer',
+        'Continuer',
         'Vous devez saisir l’un des sous-choix proposés'
     )
     form.addEventListener('submit', function (event) {

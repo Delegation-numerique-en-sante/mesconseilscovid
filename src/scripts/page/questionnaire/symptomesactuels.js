@@ -5,6 +5,13 @@ import {
 } from '../../formutils.js'
 
 export default function symptomesactuels(form, app) {
+    // Premier démarrage du formulaire ?
+    if (!app.profil.questionnaire_started) {
+        app.profil.questionnaire_started = true
+        app.enregistrerProfilActuel()
+        window.plausible(`Questionnaire commencé`)
+    }
+
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'symptomes_actuels', app.profil)
     preloadCheckboxForm(form, 'symptomes_actuels_temperature', app.profil)
@@ -53,7 +60,7 @@ export default function symptomesactuels(form, app) {
             event.target.elements['symptomes_actuels_autre'].checked
 
         // On complète manuellement le formulaire pour le rendre complet.
-        if (app.profil.symptomes_actuels && !app.profil.symptomes_actuels_autre) {
+        if (app.profil.hasSymptomesActuelsReconnus()) {
             app.profil.symptomes_passes = false
             app.profil.contact_a_risque = false
             app.profil.contact_a_risque_meme_lieu_de_vie = undefined
@@ -66,6 +73,8 @@ export default function symptomesactuels(form, app) {
         }
 
         app.enregistrerProfilActuel().then(() => {
+            // On redirige manuellement vers le suivi pour conserver une `nextPage`
+            // conseils qui va permettre de considérer la page comme étant accessible.
             let nextPage = app.questionnaire.nextPage('symptomesactuels', app.profil)
             if (nextPage === 'conseils')
                 nextPage = app.profil.suivi_start_date ? 'suivisymptomes' : 'suividate'

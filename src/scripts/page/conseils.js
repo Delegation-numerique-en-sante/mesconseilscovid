@@ -144,7 +144,7 @@ export function showRelevantAnswersRecap(element, profil, algoOrientation) {
 
     // We need to target more specifically given there are two similar ids.
     var selector
-    if (algoOrientation.symptomesActuelsReconnus) {
+    if (profil.hasSymptomesActuelsReconnus()) {
         selector = '#conseils-personnels-symptomes-actuels'
     } else {
         selector = '#conseils-caracteristiques'
