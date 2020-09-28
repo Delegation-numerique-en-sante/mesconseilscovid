@@ -1,5 +1,5 @@
-<!---->J’ai un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>actuellement</b>.
+<!---->J’ai un ou des <b>symptômes</b> (signes infectieux, toux ou gêne respiratoire, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>actuellement</b>.
 
 ---
 
-<!---->Cette personne a un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>actuellement</b>.
+<!---->Cette personne a un ou des <b>symptômes</b> (signes infectieux, toux ou gêne respiratoire, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>actuellement</b>.
