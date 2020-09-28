@@ -87,7 +87,7 @@ il ne doit pas être édité !*
 
 """
         for file_path, filename in each_file_from(folder):
-            if filename == "README.md":
+            if filename in ("README.md", ".DS_Store"):
                 continue
             file_content = open(file_path).read()
             folder_content += f"""
