@@ -411,11 +411,11 @@ Avez-vous remarqué chez votre proche l’apparition d’une forte **somnolence*
 
 ## [question_suivi_symptômes_titre.md](question_suivi_symptômes_titre.md)
 
-<!---->Mon état actuel
+<!---->L’évolution de mes symptômes
 
 ---
 
-<!---->Son état actuel
+<!---->L’évolution de ses symptômes
 
 
 

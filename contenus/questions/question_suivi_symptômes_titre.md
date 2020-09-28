@@ -1,5 +1,5 @@
-<!---->Mon état actuel
+<!---->L’évolution de mes symptômes
 
 ---
 
-<!---->Son état actuel
+<!---->L’évolution de ses symptômes
