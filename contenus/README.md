@@ -96,8 +96,9 @@ Conseils :
 2. [conseils_symptômes_actuels_autosuivi.md](conseils/conseils_symptômes_actuels_autosuivi.md), [bouton](conseils/conseils_symptômes_actuels_autosuivi_bouton.md)
 3. [conseils_isolement.md](conseils/conseils_isolement.md)
 4. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
-5. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
-6. [Conseils d’ordre général](#conseils-dordre-général)
+5. [conseils_symptômes_maux_de_tête.md](conseils/conseils_symptômes_maux_de_tête.md)
+6. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
+7. [Conseils d’ordre général](#conseils-dordre-général)
 
 Cas particulier : si [Symptôme actuel autre](#symptôme-actuel-autre), aucun de ces conseils n’est affiché.
 
@@ -325,7 +326,7 @@ Sous-question (confusion) [pour un proche seulement] : [libellé](questions/ques
 
 Sous-question (toux) [optionnelle] : [libellé](questions/question_suivi_symptômes_toux_libellé.md)
 
-Sous-question (maux de tête) [optionnelle] : [libellé](questions/question_suivi_symptômes_maux_de_tête_libellé.md), [aide](questions/question_suivi_symptômes_maux_de_tête_aide.md)
+Sous-question (maux de tête) [optionnelle] : [libellé](questions/question_suivi_symptômes_maux_de_tête_libellé.md)
 
 
 #### Suivi conseils
