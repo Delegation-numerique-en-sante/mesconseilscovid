@@ -523,11 +523,11 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 
 ## [question_symptômes_actuels_libellé.md](question_symptômes_actuels_libellé.md)
 
-<!---->J’ai un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>actuellement</b>.
+<!---->J’ai un ou des <b>symptômes</b> (signes infectieux, toux ou gêne respiratoire, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>actuellement</b>.
 
 ---
 
-<!---->Cette personne a un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>actuellement</b>.
+<!---->Cette personne a un ou des <b>symptômes</b> (signes infectieux, toux ou gêne respiratoire, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>actuellement</b>.
 
 
 
@@ -592,13 +592,6 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 
 
 ## [question_symptômes_aide.md](question_symptômes_aide.md)
-
-C’est-à-dire l’apparition brutale d’un ou plusieurs signes parmi : 
-
-* signes infectieux (fièvre ou sensation de fièvre, frissons),
-* toux ou gêne respiratoire, fatigue inexpliquée, courbatures inexpliquées,
-* maux de tête en dehors d’une migraine connue,
-* perte ou diminution de l’odorat et du gout.
 
 *Chez les personnes de plus de 80 ans, d’autres signes sont évocateurs :  
 Baisse de l’état général, chutes à répétition, apparition ou aggravation de troubles cognitifs, confusion, diarrhée, aggravation d’une maladie chronique.*
@@ -718,11 +711,11 @@ Des personnes croisées dans l’espace public de manière fugace ne sont pas co
 
 ## [question_symptômes_passés_libellé.md](question_symptômes_passés_libellé.md)
 
-<!---->J’ai eu des <b>symptômes</b> qui peuvent évoquer le COVID <b>dans les 14 derniers jours</b>.
+<!---->J’ai eu des <b>symptômes</b> (signes infectieux, toux ou gêne respiratoire, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>dans les 14 derniers jours</b>.
 
 ---
 
-<!---->Cette personne a eu des <b>symptômes</b> qui peuvent évoquer le COVID <b>dans les 14 derniers jours</b>.
+<!---->Cette personne a eu des <b>symptômes</b> (signes infectieux, toux ou gêne respiratoire, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>dans les 14 derniers jours</b>.
 
 
 
