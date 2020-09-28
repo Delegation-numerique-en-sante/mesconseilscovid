@@ -73,7 +73,8 @@ export default function symptomesactuels(form, app) {
         }
 
         app.enregistrerProfilActuel().then(() => {
-            // TODISCUSS: étrange d’avoir cette logique ici et pas dans `next`.
+            // On redirige manuellement vers le suivi pour conserver une `nextPage`
+            // conseils qui va permettre de considérer la page comme étant accessible.
             let nextPage = app.questionnaire.nextPage('symptomesactuels', app.profil)
             if (nextPage === 'conseils')
                 nextPage = app.profil.suivi_start_date ? 'suivisymptomes' : 'suividate'

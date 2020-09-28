@@ -1,26 +1,33 @@
 // Représentation de la structure du questionnaire d’orientation
-export const ORIENTATION = {
+export const ORDRE = [
+    'symptomesactuels',
+    'symptomespasses',
+    'contactarisque',
+    'residence',
+    'foyer',
+    'antecedents',
+    'caracteristiques',
+    'activitepro',
+]
+
+export const TRANSITIONS = {
     nom: {
         previous: () => 'introduction',
         next: { residence: (profil) => profil.nom },
     },
     residence: {
-        num: 4,
         previous: () => 'contactarisque',
         next: { foyer: (profil) => profil.isResidenceComplete() },
     },
     foyer: {
-        num: 5,
         previous: () => 'residence',
         next: { antecedents: (profil) => profil.isFoyerComplete() },
     },
     antecedents: {
-        num: 6,
         previous: () => 'foyer',
         next: { caracteristiques: (profil) => profil.isAntecedentsComplete() },
     },
     caracteristiques: {
-        num: 7,
         previous: () => 'antecedents',
         next: {
             activitepro: (profil) =>
@@ -30,14 +37,12 @@ export const ORIENTATION = {
         },
     },
     activitepro: {
-        num: 8,
         previous: () => 'caracteristiques',
         next: {
             conseils: (profil) => profil.isActiviteProComplete(),
         },
     },
     symptomesactuels: {
-        num: 1,
         previous: () => 'introduction',
         next: {
             conseils: (profil) =>
@@ -61,7 +66,6 @@ export const ORIENTATION = {
         },
     },
     symptomespasses: {
-        num: 2,
         previous: () => 'symptomesactuels',
         next: {
             conseils: (profil) =>
@@ -70,7 +74,6 @@ export const ORIENTATION = {
         },
     },
     contactarisque: {
-        num: 3,
         previous: () => 'symptomespasses',
         next: {
             conseils: (profil) =>
@@ -84,22 +87,15 @@ export const ORIENTATION = {
 }
 
 export class Questionnaire {
-    constructor(orientation = ORIENTATION) {
-        this.orientation = orientation
-        this.total = 0
-        Object.keys(orientation).forEach((pageName) => {
-            const question = orientation[pageName]
-            if (question.num == 1) {
-                this.firstPage = pageName
-            }
-            if (question.num > this.total) {
-                this.total = question.num
-            }
-        })
+    constructor(transitions = TRANSITIONS, ordre = ORDRE) {
+        this.transitions = transitions
+        this.ordre = ordre
+        this.total = ordre.length
+        this.firstPage = ordre[0]
     }
 
     before(page, profil) {
-        const question = this.orientation[page]
+        const question = this.transitions[page]
         if (typeof question === 'undefined') return
 
         return this.checkPathTo(page, profil)
@@ -137,7 +133,7 @@ export class Questionnaire {
     // manière ordonnée. La page choisie est la première dont le prédicat
     // est vérifié.
     nextPage(currentPage, profil) {
-        const question = this.orientation[currentPage]
+        const question = this.transitions[currentPage]
         if (typeof question === 'undefined') return
         if (typeof question.next === 'undefined') return
 
@@ -157,16 +153,16 @@ export class Questionnaire {
 
     // Détermine la progression dans le questionnaire (p. ex. « 2/8»)
     progress(currentPage) {
-        const question = this.orientation[currentPage]
-        if (typeof question.num === 'undefined') return ''
+        const num = this.ordre.indexOf(currentPage) + 1
+        if (num === 0) return ''
 
-        return `${question.num}/${this.total} - `
+        return `${num}/${this.total} - `
     }
 
     // Détermine la page précédente du questionnaire, pour pouvoir inclure
     // un lien « Retour » à chaque étape.
     previousPage(currentPage) {
-        const question = this.orientation[currentPage]
+        const question = this.transitions[currentPage]
         if (typeof question.previous === 'undefined') return
 
         return question.previous()
