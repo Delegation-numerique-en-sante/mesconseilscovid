@@ -94,7 +94,7 @@ export function initRouter(app) {
         router.on(
             new RegExp('^' + pageName + '$'),
             function () {
-                var element = loadPage(pageName)
+                var element = loadPage(pageName, app)
                 fillNavigation(element, pageName)
                 viewFunc(element)
                 window.plausible('pageview')

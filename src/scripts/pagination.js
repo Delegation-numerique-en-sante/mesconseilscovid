@@ -13,9 +13,7 @@ export function loadPage(pageName, app) {
     page.innerHTML = '' // Flush the current content.
     var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
 
-    if (app) {
-        showMeOrThem(element, app.profil)
-    }
+    showMeOrThem(element, app.profil)
 
     if (pageName !== 'introduction') {
         element.scrollIntoView({ behavior: 'smooth' })
