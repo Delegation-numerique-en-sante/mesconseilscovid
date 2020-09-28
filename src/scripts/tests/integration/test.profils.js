@@ -38,8 +38,10 @@ describe('Profils', function () {
 
         // Légende adaptée
         {
-            let legend = await page.waitForSelector('#page #residence-form legend')
-            assert.equal(await legend.innerText(), '1/8 - Son lieu de résidence')
+            let legend = await page.waitForSelector(
+                '#page #symptomes-actuels-form legend'
+            )
+            assert.equal(await legend.innerText(), '1/8 - Son état actuel')
         }
 
         // Remplir le questionnaire
