@@ -418,6 +418,42 @@ describe('Pagination', function () {
         })
     })
 
+    describe('Mon dépistage', function () {
+        it('redirige vers question symptômes actuels si réponse manquante', function () {
+            const profil = new Profil('mes_infos', {})
+            assert.strictEqual(
+                questionnaire.before('depistage', profil),
+                'symptomesactuels'
+            )
+        })
+        it('ok d’aller à la question dépistage si réponse négative à symptômes actuels', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+            })
+            assert.isUndefined(questionnaire.before('depistage', profil))
+        })
+        it('ok d’aller à la question dépistage si réponse positive à symptômes actuels', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+            })
+            assert.isUndefined(questionnaire.before('depistage', profil))
+        })
+        it('ok d’aller à la question dépistage si réponse positive mais autre à symptômes actuels', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+                symptomes_actuels_autre: true,
+            })
+            assert.isUndefined(questionnaire.before('depistage', profil))
+        })
+        it('ok d’aller à la question dépistage même si déjà répondu', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                depistage: false,
+            })
+            assert.isUndefined(questionnaire.before('depistage', profil))
+        })
+    })
+
     describe('Mes conseils', function () {
         it('ok d’aller aux conseils si toutes les réponses', function () {
             const profil = new Profil('mes_infos', {
@@ -602,6 +638,30 @@ describe('Pagination', function () {
                 questionnaire.before('conseils', profil),
                 'symptomesactuels'
             )
+        })
+        it('redirige vers question dépistage si réponse manquante', function () {
+            const profil = new Profil('mes_infos', {
+                departement: '80',
+                foyer_enfants: false,
+                foyer_fragile: false,
+                antecedent_cardio: false,
+                antecedent_diabete: false,
+                antecedent_respi: false,
+                antecedent_dialyse: false,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+                age: 42,
+                grossesse_3e_trimestre: false,
+                poids: 80,
+                taille: 180,
+                activite_pro: false,
+                symptomes_actuels: false,
+                symptomes_passes: true,
+            })
+            assert.strictEqual(questionnaire.before('conseils', profil), 'depistage')
         })
         it('redirige vers question activité pro si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
