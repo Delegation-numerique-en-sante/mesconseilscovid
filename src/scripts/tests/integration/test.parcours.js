@@ -327,6 +327,59 @@ describe('Parcours', function () {
         }
     })
 
+    it('remplir le questionnaire avec dépistage positif sans symptômes (asymptomatique)', async function () {
+        const page = this.test.page
+
+        // On est redirigé vers l’introduction
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/#introduction' }),
+        ])
+
+        // Page d’accueil
+        {
+            let bouton = await page.waitForSelector('text="Démarrer"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Pour moi'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#symptomesactuels' }),
+            ])
+        }
+
+        // Remplir le questionnaire
+        await remplirQuestionnaire(page, {
+            symptomesActuels: [],
+            depistage: true,
+            depistageResultat: 'positif',
+            symptomesPasses: false,
+            contactARisque: [],
+            departement: '80',
+            activitePro: true,
+            enfants: true,
+            age: '42',
+            taille: '165',
+            poids: '70',
+            grossesse: false,
+        })
+
+        // Conseils
+        {
+            // On retrouve le message d’isolement
+            let statut = await page.waitForSelector('#page #statut-asymptomatique')
+            assert.equal(
+                (await statut.innerText()).trim(),
+                'Vous êtes porteur du Covid-19 sans symptômes, ' +
+                    'il est important de vous isoler afin de ' +
+                    'ne pas contaminer d’autres personnes.'
+            )
+        }
+    })
+
     it('remplir le questionnaire avec symptômes passés', async function () {
         const page = this.test.page
 

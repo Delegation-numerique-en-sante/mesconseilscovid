@@ -381,6 +381,14 @@ export default class Profil {
         })
     }
 
+    estAsymptomatique() {
+        return (
+            this.symptomes_actuels === false &&
+            this.depistage === true &&
+            this.depistage_resultat === 'positif'
+        )
+    }
+
     estMonProfil() {
         return this.nom == 'mes_infos'
     }
