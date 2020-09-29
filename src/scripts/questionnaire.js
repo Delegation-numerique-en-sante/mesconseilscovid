@@ -1,6 +1,7 @@
 // Représentation de la structure du questionnaire d’orientation
 export const ORDRE = [
     'symptomesactuels',
+    'depistage',
     'symptomespasses',
     'contactarisque',
     'residence',
@@ -45,12 +46,17 @@ export const TRANSITIONS = {
     symptomesactuels: {
         previous: () => 'introduction',
         next: {
+            depistage: (profil) => profil.isSymptomesActuelsComplete(),
+        },
+    },
+    depistage: {
+        previous: () => 'symptomesactuels',
+        next: {
             conseils: (profil) =>
-                profil.isSymptomesActuelsComplete() &&
-                profil.hasSymptomesActuelsReconnus(),
-            symptomespasses: (profil) =>
-                profil.isSymptomesActuelsComplete() &&
-                !profil.hasSymptomesActuelsReconnus(),
+                profil.isDepistageComplete() &&
+                (profil.hasSymptomesActuelsReconnus() ||
+                    profil.depistage_resultat === 'positif'),
+            symptomespasses: (profil) => profil.isDepistageComplete(),
         },
     },
     suividate: {
@@ -66,7 +72,7 @@ export const TRANSITIONS = {
         },
     },
     symptomespasses: {
-        previous: () => 'symptomesactuels',
+        previous: () => 'depistage',
         next: {
             conseils: (profil) =>
                 profil.isSymptomesPassesComplete() && profil.symptomes_passes,

@@ -9,14 +9,16 @@ import introduction from './page/introduction.js'
 import nouvelleversion from './page/nouvelleversion.js'
 
 import nom from './page/questionnaire/nom.js'
+
+import symptomesactuels from './page/questionnaire/symptomesactuels.js'
+import depistage from './page/questionnaire/depistage.js'
+import symptomespasses from './page/questionnaire/symptomespasses.js'
+import contactarisque from './page/questionnaire/contactarisque.js'
 import residence from './page/questionnaire/residence.js'
 import foyer from './page/questionnaire/foyer.js'
 import antecedents from './page/questionnaire/antecedents.js'
 import caracteristiques from './page/questionnaire/caracteristiques.js'
 import activitepro from './page/questionnaire/activitepro.js'
-import symptomesactuels from './page/questionnaire/symptomesactuels.js'
-import symptomespasses from './page/questionnaire/symptomespasses.js'
-import contactarisque from './page/questionnaire/contactarisque.js'
 
 import conseils from './page/conseils.js'
 
@@ -157,14 +159,15 @@ export function initRouter(app) {
 
     addAppRoute('nom', nom)
 
+    addQuestionnaireRoute('symptomesactuels', symptomesactuels)
+    addQuestionnaireRoute('depistage', depistage)
+    addQuestionnaireRoute('symptomespasses', symptomespasses)
+    addQuestionnaireRoute('contactarisque', contactarisque)
     addQuestionnaireRoute('residence', residence)
     addQuestionnaireRoute('foyer', foyer)
     addQuestionnaireRoute('antecedents', antecedents)
     addQuestionnaireRoute('caracteristiques', caracteristiques)
     addQuestionnaireRoute('activitepro', activitepro)
-    addQuestionnaireRoute('symptomesactuels', symptomesactuels)
-    addQuestionnaireRoute('symptomespasses', symptomespasses)
-    addQuestionnaireRoute('contactarisque', contactarisque)
 
     addAppRoute('conseils', conseils, beforeConseils)
     addAppRoute('suiviintroduction', suiviintroduction, beforeSuiviIntroduction)

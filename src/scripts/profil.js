@@ -98,6 +98,9 @@ export default class Profil {
         this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_autre = undefined
 
+        this.depistage = undefined
+        this.depistage_resultat = undefined
+
         this.suivi_active = false
         this.resetSuivi()
 
@@ -155,6 +158,9 @@ export default class Profil {
         this.contact_a_risque_meme_classe = data['contact_a_risque_meme_classe']
         this.contact_a_risque_stop_covid = data['contact_a_risque_stop_covid']
         this.contact_a_risque_autre = data['contact_a_risque_autre']
+
+        this.depistage = data['depistage']
+        this.depistage_resultat = data['depistage_resultat']
 
         this._suivi_start_date = data['_suivi_start_date']
         this._symptomes_start_date = data['_symptomes_start_date']
@@ -227,6 +233,8 @@ export default class Profil {
             contact_a_risque_meme_classe: this.contact_a_risque_meme_classe,
             contact_a_risque_stop_covid: this.contact_a_risque_stop_covid,
             contact_a_risque_autre: this.contact_a_risque_autre,
+            depistage: this.depistage,
+            depistage_resultat: this.depistage_resultat,
             suivi_active: this.suivi_active,
             _suivi_start_date: this._suivi_start_date,
             _symptomes_start_date: this._symptomes_start_date,
@@ -261,7 +269,8 @@ export default class Profil {
             typeof this.antecedent_chronique_autre === 'undefined' &&
             typeof this.symptomes_actuels === 'undefined' &&
             typeof this.symptomes_passes === 'undefined' &&
-            typeof this.contact_a_risque === 'undefined'
+            typeof this.contact_a_risque === 'undefined' &&
+            typeof this.depistage == 'undefined'
         )
     }
 
@@ -315,6 +324,10 @@ export default class Profil {
         return typeof this.contact_a_risque !== 'undefined'
     }
 
+    isDepistageComplete() {
+        return typeof this.depistage !== 'undefined'
+    }
+
     isComplete() {
         return (
             this.isResidenceComplete() &&
@@ -324,7 +337,8 @@ export default class Profil {
             this.isActiviteProComplete() &&
             this.isSymptomesActuelsComplete() &&
             this.isSymptomesPassesComplete() &&
-            this.isContactARisqueComplete()
+            this.isContactARisqueComplete() &&
+            this.isDepistageComplete()
         )
     }
 
