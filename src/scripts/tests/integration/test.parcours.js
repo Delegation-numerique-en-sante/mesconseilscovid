@@ -47,6 +47,7 @@ describe('Parcours', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            depistage: false,
         })
 
         await waitForPlausibleTrackingEvent(
@@ -133,6 +134,7 @@ describe('Parcours', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            depistage: false,
         })
 
         // Conseils
@@ -198,6 +200,7 @@ describe('Parcours', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            depistage: false,
         })
 
         // Conseils

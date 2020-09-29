@@ -61,6 +61,7 @@ describe('Plausible', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            depistage: false,
         })
 
         await waitForPlausibleTrackingEvent(page, 'pageview:conseils')
@@ -82,6 +83,7 @@ describe('Plausible', function () {
             'pageview:introduction',
             'Questionnaire commencé:symptomesactuels',
             'pageview:symptomesactuels',
+            'pageview:depistage',
             'pageview:symptomespasses',
             'pageview:contactarisque',
             'pageview:residence',
@@ -114,6 +116,7 @@ describe('Plausible', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            depistage: false,
         })
 
         await waitForPlausibleTrackingEvent(page, 'pageview:conseils')
@@ -135,6 +138,7 @@ describe('Plausible', function () {
             'pageview:introduction',
             'Questionnaire commencé:symptomesactuels',
             'pageview:symptomesactuels',
+            'pageview:depistage',
             'pageview:symptomespasses',
             'pageview:contactarisque',
             'pageview:residence',
