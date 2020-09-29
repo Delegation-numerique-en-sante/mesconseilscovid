@@ -47,6 +47,7 @@ describe('Parcours', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            contactARisque: [],
             depistage: false,
         })
 
@@ -134,6 +135,7 @@ describe('Parcours', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            contactARisque: [],
             depistage: false,
         })
 
@@ -200,6 +202,7 @@ describe('Parcours', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            contactARisque: [],
             depistage: false,
         })
 
@@ -352,6 +355,49 @@ describe('Parcours', function () {
         await remplirQuestionnaire(page, {
             symptomesActuels: [],
             symptomesPasses: true,
+            contactARisque: [],
+        })
+
+        // Conseils
+        {
+            // On retrouve le message d’isolement
+            let statut = await page.waitForSelector('#page #statut-risque-eleve')
+            assert.equal(
+                (await statut.innerText()).trim(),
+                'Il vous est conseillé de rester en isolement.'
+            )
+        }
+    })
+
+    it('remplir le questionnaire avec contact à risque', async function () {
+        const page = this.test.page
+
+        // On est redirigé vers l’introduction
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/#introduction' }),
+        ])
+
+        // Page d’accueil
+        {
+            let bouton = await page.waitForSelector('text="Démarrer"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Pour moi'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#symptomesactuels' }),
+            ])
+        }
+
+        // Remplir le questionnaire
+        await remplirQuestionnaire(page, {
+            symptomesActuels: [],
+            symptomesPasses: false,
+            contactARisque: ['meme_lieu_de_vie'],
         })
 
         // Conseils
@@ -393,6 +439,7 @@ describe('Parcours', function () {
         await remplirQuestionnaire(page, {
             symptomesActuels: [],
             symptomesPasses: false,
+            contactARisque: [],
             departement: '80',
             enfants: true,
             age: '12',
