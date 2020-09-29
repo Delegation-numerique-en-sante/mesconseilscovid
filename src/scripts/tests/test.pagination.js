@@ -18,6 +18,7 @@ describe('Pagination', function () {
         it('redirige vers question contact à risque si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
             })
             assert.strictEqual(
@@ -28,6 +29,7 @@ describe('Pagination', function () {
         it('ok d’aller à la question résidence si réponse à contact à risque', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
             })
@@ -36,6 +38,7 @@ describe('Pagination', function () {
         it('ok d’aller à la question résidence même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
@@ -48,6 +51,7 @@ describe('Pagination', function () {
         it('redirige vers question résidence si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
             })
@@ -56,6 +60,7 @@ describe('Pagination', function () {
         it('ok d’aller à la question foyer si réponse à résidence', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
@@ -65,6 +70,7 @@ describe('Pagination', function () {
         it('ok d’aller à la question foyer même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
@@ -78,6 +84,7 @@ describe('Pagination', function () {
         it('redirige vers question foyer si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
@@ -87,6 +94,7 @@ describe('Pagination', function () {
         it('ok d’aller à la question antécédents si réponse à foyer', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
@@ -98,6 +106,7 @@ describe('Pagination', function () {
         it('ok d’aller à la question antécédents même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
@@ -121,6 +130,7 @@ describe('Pagination', function () {
         it('redirige vers question antécédents si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
@@ -136,6 +146,7 @@ describe('Pagination', function () {
         it('ok d’aller à la question caractéristiques si réponse à antécédents', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
@@ -156,6 +167,7 @@ describe('Pagination', function () {
         it('ok d’aller à la question caractéristiques même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
@@ -183,6 +195,7 @@ describe('Pagination', function () {
         it('redirige vers question caractéristiques si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
@@ -210,6 +223,7 @@ describe('Pagination', function () {
         it('redirige vers pédiatrie si âge inférieur à 15', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
@@ -234,6 +248,7 @@ describe('Pagination', function () {
         it('ok d’aller à la question activité pro si réponse à caractéristiques', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
@@ -258,6 +273,7 @@ describe('Pagination', function () {
         it('ok d’aller à la question activité pro même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
@@ -306,6 +322,7 @@ describe('Pagination', function () {
         it('ok d’aller à la question symptômes passés si réponse négative à symptômes actuels', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
             })
             assert.isUndefined(questionnaire.before('symptomespasses', profil))
         })
@@ -313,12 +330,14 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_autre: true,
+                depistage: false,
             })
             assert.isUndefined(questionnaire.before('symptomespasses', profil))
         })
         it('ok d’aller à la question symptômes passés même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
             })
             assert.isUndefined(questionnaire.before('symptomespasses', profil))
@@ -328,6 +347,7 @@ describe('Pagination', function () {
                 symptomes_actuels: true,
                 symptomes_actuels_autre: false,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
+                depistage: false,
             })
             assert.strictEqual(
                 questionnaire.before('symptomespasses', profil),
@@ -340,6 +360,7 @@ describe('Pagination', function () {
         it('redirige vers question symptômes passés si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
             })
             assert.strictEqual(
                 questionnaire.before('contactarisque', profil),
@@ -349,6 +370,7 @@ describe('Pagination', function () {
         it('ok d’aller à la question contact à risque si réponse négative à symptômes actuels et symptômes passés', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
             })
             assert.isUndefined(questionnaire.before('contactarisque', profil))
@@ -357,6 +379,7 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_autre: true,
+                depistage: false,
                 symptomes_passes: false,
             })
             assert.isUndefined(questionnaire.before('contactarisque', profil))
@@ -364,6 +387,7 @@ describe('Pagination', function () {
         it('ok d’aller à la question contact à risque même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
             })
@@ -373,6 +397,7 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_autre: false,
+                depistage: false,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
             assert.strictEqual(
@@ -383,6 +408,7 @@ describe('Pagination', function () {
         it('redirige vers conseils si réponse positive à symptômes passés', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: true,
             })
             assert.strictEqual(
@@ -413,6 +439,7 @@ describe('Pagination', function () {
                 taille: 180,
                 activite_pro: false,
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
             })
@@ -438,6 +465,7 @@ describe('Pagination', function () {
                 taille: 180,
                 activite_pro: false,
                 symptomes_actuels: true,
+                depistage: false,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
             assert.isUndefined(questionnaire.before('conseils', profil))
@@ -462,6 +490,7 @@ describe('Pagination', function () {
                 taille: 180,
                 activite_pro: false,
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: true,
             })
             assert.isUndefined(questionnaire.before('conseils', profil))
@@ -486,6 +515,7 @@ describe('Pagination', function () {
                 taille: 180,
                 activite_pro: false,
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
             })
             assert.strictEqual(
@@ -513,6 +543,7 @@ describe('Pagination', function () {
                 taille: 180,
                 activite_pro: false,
                 symptomes_actuels: false,
+                depistage: false,
             })
             assert.strictEqual(
                 questionnaire.before('conseils', profil),
@@ -540,6 +571,7 @@ describe('Pagination', function () {
                 activite_pro: false,
                 symptomes_actuels: true,
                 symptomes_actuels_autre: true,
+                depistage: false,
             })
             assert.strictEqual(
                 questionnaire.before('conseils', profil),
@@ -574,6 +606,7 @@ describe('Pagination', function () {
         it('redirige vers question activité pro si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
@@ -615,6 +648,7 @@ describe('Pagination', function () {
                 taille: 180,
                 activite_pro: false,
                 symptomes_actuels: false,
+                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
             })

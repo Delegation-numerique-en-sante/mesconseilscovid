@@ -489,6 +489,41 @@
     </form>
 </section>
 
+<section id="depistage" hidden>
+    <form id="depistage-form" class="block">
+        <fieldset>
+            <legend><span class="progress"></span>Mon test Covid</legend>
+            <div>
+                <input id="depistage" type="checkbox" name="depistage">
+                <label for="depistage">
+                    <span>
+                        J’ai passé un test dans les 7 derniers jours.
+                    </span>
+                </label>
+                <div class="details">Le test virologique (aussi appelé RT-PCR) détecte la présence du virus par un prélèvement nasal.</div>
+            </div>
+            <div role="radiogroup">
+                <div class="secondary disabled">
+                    <input id="depistage_resultat_positif" type="radio" required name="depistage_resultat" value="positif">
+                    <label for="depistage_resultat_positif"><span>Le résultat était <strong>positif</strong>.</span></label>
+                </div>
+                <div class="secondary disabled">
+                    <input id="depistage_resultat_negatif" type="radio" required name="depistage_resultat" value="negatif">
+                    <label for="depistage_resultat_negatif"><span>Le résultat était <strong>négatif</strong>.</span></label>
+                </div>
+                <div class="secondary disabled">
+                    <input id="depistage_resultat_en_attente" type="radio" required name="depistage_resultat" value="en_attente">
+                    <label for="depistage_resultat_en_attente">Je n’ai pas encore reçu le résultat.</label>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <input type="submit" class="button" value="Continuer">
+            <a href="#" class="back-button button-outline">Retour</a>
+        </div>
+    </form>
+</section>
+
 <section id="symptomespasses" hidden>
     <form id="symptomes-passes-form" class="block">
         <fieldset>
