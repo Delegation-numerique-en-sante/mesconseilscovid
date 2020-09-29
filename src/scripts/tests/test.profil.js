@@ -182,6 +182,7 @@ describe('Profil', function () {
         assert.deepEqual(profil.getData(), data)
         assert.isTrue(profil.isComplete())
         assert.isFalse(profil.isEmpty())
+        assert.isTrue(profil.estAsymptomatique())
     })
 
     it('Le questionnaire peut être complètement rempli mais âge < 15', function () {
@@ -534,5 +535,6 @@ describe('Profil', function () {
             depistage: false,
         })
         assert.isTrue(profil.questionnaire_completed)
+        assert.isFalse(profil.estAsymptomatique())
     })
 })

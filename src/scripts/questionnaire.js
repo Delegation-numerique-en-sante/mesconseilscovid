@@ -55,7 +55,8 @@ export const TRANSITIONS = {
             conseils: (profil) =>
                 profil.isDepistageComplete() &&
                 (profil.hasSymptomesActuelsReconnus() ||
-                    profil.depistage_resultat === 'positif'),
+                    profil.depistage_resultat === 'positif') &&
+                !profil.estAsymptomatique(),
             symptomespasses: (profil) => profil.isDepistageComplete(),
         },
     },

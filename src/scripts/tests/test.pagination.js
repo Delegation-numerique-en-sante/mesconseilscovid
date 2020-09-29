@@ -483,48 +483,25 @@ describe('Pagination', function () {
         })
         it('ok d’aller aux conseils si symptômes actuels', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: true,
                 depistage: false,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
             assert.isUndefined(questionnaire.before('conseils', profil))
         })
+        it('redirige vers symptômes passés si dépistage asymptomatique', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                depistage: true,
+                depistage_resultat: 'positif',
+            })
+            assert.strictEqual(
+                questionnaire.before('conseils', profil),
+                'symptomespasses'
+            )
+        })
         it('ok d’aller aux conseils si symptômes passés', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: false,
                 depistage: false,
                 symptomes_passes: true,
@@ -533,23 +510,6 @@ describe('Pagination', function () {
         })
         it('redirige vers question contact à risque si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: false,
                 depistage: false,
                 symptomes_passes: false,
@@ -561,23 +521,6 @@ describe('Pagination', function () {
         })
         it('redirige vers question symptômes passés si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: false,
                 depistage: false,
             })
@@ -588,23 +531,6 @@ describe('Pagination', function () {
         })
         it('redirige vers question symptômes passés si symptômes actuels autres', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: true,
                 symptomes_actuels_autre: true,
                 depistage: false,
@@ -615,25 +541,7 @@ describe('Pagination', function () {
             )
         })
         it('redirige vers question symptômes actuels si réponse manquante', function () {
-            const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
-            })
+            const profil = new Profil('mes_infos', {})
             assert.strictEqual(
                 questionnaire.before('conseils', profil),
                 'symptomesactuels'
@@ -641,25 +549,7 @@ describe('Pagination', function () {
         })
         it('redirige vers question dépistage si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
                 symptomes_actuels: false,
-                symptomes_passes: true,
             })
             assert.strictEqual(questionnaire.before('conseils', profil), 'depistage')
         })

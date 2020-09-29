@@ -84,6 +84,9 @@ export default class AlgorithmeOrientation {
         if (this.profil.hasSymptomesActuelsReconnus()) {
             return 'symptomatique'
         }
+        if (this.profil.estAsymptomatique()) {
+            return 'asymptomatique'
+        }
         if (this.symptomes && !this.profil.symptomes_actuels_autre) {
             return 'risque-eleve'
         }

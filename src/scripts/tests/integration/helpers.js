@@ -40,7 +40,7 @@ export async function remplirQuestionnaire(page, choix) {
     if (
         choix.symptomesActuels.length !== 0 ||
         choix.symptomesPasses === true ||
-        choix.contactARisque.length != 0
+        choix.contactARisque.length !== 0
     ) {
         return
     }
@@ -209,7 +209,10 @@ async function remplirDepistage(page, depistage, resultat, symptomes) {
         text = '/.* pas passé de test/'
     }
 
-    if ((depistage && resultat === 'positif') || symptomes.length > 0)
+    if (
+        (depistage && resultat === 'positif' && symptomes.length) ||
+        symptomes.length > 0
+    )
         nextPage = 'suividate'
     else nextPage = 'symptomespasses'
 
