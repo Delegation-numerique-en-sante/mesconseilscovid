@@ -145,7 +145,7 @@ async function remplirSymptomesPasses(page, symptomesPasses) {
         text = '"Continuer"'
         nextPage = 'conseils'
     } else {
-        text = '/.* pas eu de symptômes dans les 14 derniers jours/' // &nbsp; après le 14
+        text = '/.* pas eu de symptômes dans les 7 derniers jours/' // &nbsp; après le 7
         nextPage = 'contactarisque'
     }
     let bouton = await page.waitForSelector(`#page >> text=${text}`)

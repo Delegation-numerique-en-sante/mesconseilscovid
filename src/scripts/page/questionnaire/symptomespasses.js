@@ -4,8 +4,8 @@ export default function symptomespasses(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'symptomes_passes', app.profil)
     const uncheckedLabel = app.profil.estMonProfil()
-        ? 'Je n’ai pas eu de symptômes dans les 14 derniers jours'
-        : 'Cette personne n’a pas eu de symptômes dans les 14 derniers jours'
+        ? 'Je n’ai pas eu de symptômes dans les 7 derniers jours'
+        : 'Cette personne n’a pas eu de symptômes dans les 7 derniers jours'
     toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
