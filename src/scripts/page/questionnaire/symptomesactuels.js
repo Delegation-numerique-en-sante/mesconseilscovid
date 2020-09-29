@@ -41,6 +41,16 @@ export default function symptomesactuels(form, app) {
     const requiredLabel = 'Vous devez saisir l’un des sous-choix proposés'
     toggleFormButtonOnCheckRequired(form, button.value, uncheckedLabel, requiredLabel)
 
+    // Les choix concernant la température sont mutuellement exclusifs
+    let tempAnormale = form.querySelector('#symptomes_actuels_temperature')
+    let tempInconnue = form.querySelector('#symptomes_actuels_temperature_inconnue')
+    tempAnormale.addEventListener('change', function () {
+        if (tempAnormale.checked) tempInconnue.checked = false
+    })
+    tempInconnue.addEventListener('change', function () {
+        if (tempInconnue.checked) tempAnormale.checked = false
+    })
+
     // Soumission du formulaire
     form.addEventListener('submit', function (event) {
         event.preventDefault()
