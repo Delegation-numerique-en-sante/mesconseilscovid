@@ -34,10 +34,14 @@ export async function remplirQuestionnaire(page, choix) {
     if (choix.symptomesActuels.length === 0) {
         await remplirSymptomesPasses(page, choix.symptomesPasses)
         if (choix.symptomesPasses === false) {
-            await remplirContactsARisque(page)
+            await remplirContactsARisque(page, choix.contactARisque)
         }
     }
-    if (choix.symptomesActuels.length !== 0 || choix.symptomesPasses === true) {
+    if (
+        choix.symptomesActuels.length !== 0 ||
+        choix.symptomesPasses === true ||
+        choix.contactARisque.length != 0
+    ) {
         return
     }
     await remplirDepartement(page, choix.departement)
@@ -158,12 +162,32 @@ async function remplirSymptomesPasses(page, symptomesPasses) {
     ])
 }
 
-async function remplirContactsARisque(page) {
-    // TODO: cocher la case
-    let bouton = await page.waitForSelector('#page >> text="Continuer"')
+async function remplirContactsARisque(page, contactARisque) {
+    let text
+    let nextPage
+
+    if (contactARisque.length > 0) {
+        // Je n’arrive pas à cocher la case directement, alors je clique sur le label
+        let label = await page.waitForSelector('#page label[for="contact_a_risque"]')
+        await label.click()
+
+        contactARisque.forEach(async (nom) => {
+            let label = await page.waitForSelector(
+                `#page label[for="contact_a_risque_${nom}"]`
+            )
+            await label.click()
+        })
+        text = '"Continuer"'
+        nextPage = 'conseils'
+    } else {
+        text = '/.* pas eu de contact récents/'
+        nextPage = 'residence'
+    }
+
+    let bouton = await page.waitForSelector(`#page >> text=${text}`)
     await Promise.all([
         bouton.click(),
-        page.waitForNavigation({ url: '**/#residence' }),
+        page.waitForNavigation({ url: `**/#${nextPage}` }),
     ])
 }
 

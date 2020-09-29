@@ -55,6 +55,7 @@ describe('Profils', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            contactARisque: [],
             depistage: false,
         })
 

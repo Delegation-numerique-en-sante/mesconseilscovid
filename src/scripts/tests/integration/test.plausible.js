@@ -61,6 +61,7 @@ describe('Plausible', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            contactARisque: [],
             depistage: false,
         })
 
@@ -116,6 +117,7 @@ describe('Plausible', function () {
             grossesse: false,
             symptomesActuels: [],
             symptomesPasses: false,
+            contactARisque: [],
             depistage: false,
         })
 
