@@ -383,7 +383,7 @@ De manière générale, l’auto-médication par des médicaments anti-inflammat
 
 Ainsi, dans le cas d’une infection au coronavirus Covid-19 :
 
-* Seul le paracétamol est recommandé, à la dose de 1g (1000 mg) par prise (espacées au minimum de 4h), sans dépasser un total de 3g par jour ([en savoir plus sur le paracétamol](https://sfpt-fr.org/covid19-foire-aux-questions/1099-j-ai-de-la-fievre-quel-medicament-dois-je-prendre)).
+* Seul le paracétamol est recommandé, à la dose de 1 g (1 000 mg) par prise (espacées au minimum de 4 h), sans dépasser un total de 3 g par jour ([en savoir plus sur le paracétamol](https://sfpt-fr.org/covid19-foire-aux-questions/1099-j-ai-de-la-fievre-quel-medicament-dois-je-prendre)).
 * Si vous êtes déjà sous anti-inflammatoires ou en cas de doute : demandez conseil à votre médecin ou consultez le site [covid19-medicaments.com](https://www.covid19-medicaments.com)
 
 Plus d’informations sur le site de la Société Française de Pharmacologie et de Thérapeutique :
