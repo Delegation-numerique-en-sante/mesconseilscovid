@@ -12,7 +12,7 @@ export default function symptomesactuels(form, app) {
         window.plausible(`Questionnaire commencé`)
     }
 
-    var button = form.querySelector('input[type=submit]')
+    // Remplir le formulaire avec les données du profil
     preloadCheckboxForm(form, 'symptomes_actuels', app.profil)
     preloadCheckboxForm(form, 'symptomes_actuels_temperature', app.profil)
     preloadCheckboxForm(form, 'symptomes_actuels_temperature_inconnue', app.profil)
@@ -24,16 +24,24 @@ export default function symptomesactuels(form, app) {
     preloadCheckboxForm(form, 'symptomes_actuels_alimentation', app.profil)
     preloadCheckboxForm(form, 'symptomes_actuels_souffle', app.profil)
     preloadCheckboxForm(form, 'symptomes_actuels_autre', app.profil)
+
+    // La première case active ou désactive les autres
     var primary = form.elements['symptomes_actuels']
     enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
         enableOrDisableSecondaryFields(form, primary)
     })
+
+    // Le libellé du bouton change en fonction des choix,
+    // et le choix "aucun de ces symptômes" désactive les autres cases.
+    var button = form.querySelector('input[type=submit]')
     const uncheckedLabel = app.profil.estMonProfil()
         ? 'Je n’ai pas de symptômes actuellement'
         : 'Cette personne n’a pas de symptômes actuellement'
     const requiredLabel = 'Vous devez saisir l’un des sous-choix proposés'
     toggleFormButtonOnCheckRequired(form, button.value, uncheckedLabel, requiredLabel)
+
+    // Soumission du formulaire
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.symptomes_actuels =
