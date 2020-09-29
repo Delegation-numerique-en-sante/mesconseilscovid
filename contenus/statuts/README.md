@@ -4,6 +4,12 @@
 *Ce fichier est généré automatiquement pour pouvoir accéder rapidement aux contenus,il ne doit pas être édité !*
 
 
+## [statut_asymptomatique.md](statut_asymptomatique.md)
+
+Vous êtes **porteur du Covid-19** sans symptômes, il est important de vous isoler afin de ne pas contaminer d’autres personnes.
+
+
+
 ## [statut_foyer_fragile.md](statut_foyer_fragile.md)
 
 Prenez soin de vos proches à risque face au Covid-19.

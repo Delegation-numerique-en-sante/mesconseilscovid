@@ -78,7 +78,7 @@ Sous-question (autre) : [libellé](questions/question_symptômes_actuels_autre_l
 
 Cas particulier : si [Symptôme actuel autre](#symptôme-actuel-autre) (`Sous-question (autre)` est cochée), la personne continue vers les questions relatives aux symptômes passés (cas nominal).
 
-Statut : [statut_symptomatique.md](statuts/statut_symptomatique.md) (orange) ou [statut_symptomatique_urgent.md](statuts/statut_symptomatique_urgent.md) (orange) si [Gravité majeure](#gravité-majeure)
+Statut : [statut_symptomatique.md](statuts/statut_symptomatique.md) (orange) ou [statut_symptomatique_urgent.md](statuts/statut_symptomatique_urgent.md) (orange) si [Gravité majeure](#gravité-majeure), [statut_asymptomatique.md](statuts/statut_asymptomatique.md) (orange) si dépistage positif sans symptômes.
 
 Réponse :
 

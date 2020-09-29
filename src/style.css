@@ -377,6 +377,7 @@ main footer .legals {
 }
 .statut-symptomatique-urgent,
 .statut-symptomatique,
+.statut-asymptomatique,
 .statut-risque-eleve,
 .suivi-gravite-3 {
     background: #ffb6a5;
