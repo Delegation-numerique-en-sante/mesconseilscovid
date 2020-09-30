@@ -1,5 +1,19 @@
 # Changelog
 
+## 2020-09-30
+
+* change l’ordre des questions : on commence par les questions sur les
+  symptômes
+* réduit la durée de référence de 14 à 7 jours pour les symptômes passés
+  et les contacts à risque
+* améliore la rédaction de certains conseils
+* déplace les informations sur l’auto-médication vers la page de conseils
+* retire une information non explicite sur l'antibiothérapie
+* met à jour les liens vers certaines infographies qui ont changé
+* met à jour les taux d’incidence
+* corrige le fonctionnement du bouton retour du navigateur
+* améliore l’accessibilité du suivi des symptômes
+
 ## 2020-09-22
 
 * met à jour les taux d’incidence
