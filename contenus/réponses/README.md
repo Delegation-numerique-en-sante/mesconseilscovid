@@ -34,12 +34,6 @@ Vous vivez avec un ou des enfants en âge d’aller à la crèche ou à l’éco
 
 
 
-## [réponse_foyer_enfants_fragile.md](réponse_foyer_enfants_fragile.md)
-
-Vous vivez avec un ou des enfants en âge d’aller à la crèche ou à l’école et avec une ou des personnes considérée(s) comme fragile(s) face au covid-19 et/ou en situation de handicap (<a href="#foyer">modifier</a>)
-
-
-
 ## [réponse_foyer_fragile.md](réponse_foyer_fragile.md)
 
 Vous vivez avec une ou des personnes considérée(s) comme fragile(s) face au covid-19 et/ou en situation de handicap (<a href="#foyer">modifier</a>)
