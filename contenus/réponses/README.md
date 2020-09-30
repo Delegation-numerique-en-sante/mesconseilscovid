@@ -46,6 +46,11 @@ Vous vivez avec une ou des personnes considérée(s) comme fragile(s) face au co
 
 
 
+## [réponse_grossesse.md](réponse_grossesse.md)
+
+Vous êtes enceinte au 3e trimestre de votre grossesse (<a href="#caracteristiques">modifier</a>)
+
+
 ## [réponse_symptômes_actuels_reconnus.md](réponse_symptômes_actuels_reconnus.md)
 
 Vous avez actuellement les symptômes suivants : <b id="nom-symptomesactuels"></b> (<a href="#symptomesactuels">modifier</a>)

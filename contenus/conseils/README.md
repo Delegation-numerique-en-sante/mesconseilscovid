@@ -118,8 +118,6 @@ Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos méd
 
 ## [conseils_caractéristiques_antécédents_femme_enceinte.md](conseils_caractéristiques_antécédents_femme_enceinte.md)
 
-Pour plus d’informations vis-à-vis de **votre grossesse** :
-
 * le [suivi de grossesse](https://www.has-sante.fr/jcms/p_3187133/fr/grossesse-votre-suivi-pendant-l-epidemie-de-covid-19) pendant l’épidémie de Covid-19
 * le [retour à la maison après l’accouchement](https://www.has-sante.fr/jcms/p_3186783/fr/accouchement-votre-retour-a-la-maison-pendant-l-epidemie-de-covid-19) pendant l’épidémie de Covid-19
 

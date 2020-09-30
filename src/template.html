@@ -775,15 +775,31 @@
                     <div id="conseils-caracteristiques-antecedents-info-risque" hidden>
                         {{ conseils_caractéristiques_antécédents_info_risque }}
                     </div>
-                    <div id="conseils-caracteristiques-antecedents-femme-enceinte" hidden>
-                        {{ conseils_caractéristiques_antécédents_femme_enceinte }}
-                    </div>
                     <div id="conseils-antecedents-chroniques-autres" hidden>
                         <div class="conseil">
                             {{ conseils_antécédents_chroniques_autres }}
                         </div>
                         {{ conseils_maladie_chronique_info }}
                     </div>
+                </details>
+            </div>
+
+
+            <div id="conseils-caracteristiques-antecedents-femme-enceinte" class="conseils" hidden>
+                <details>
+                    <summary>
+                        <header>
+                            <h3>
+                                Ma grossesse
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+
+                            </h3>
+                        </header>
+                    </summary>
+                    <div class="reponse">
+                        {{ réponse_grossesse }}
+                    </div>
+                    {{ conseils_caractéristiques_antécédents_femme_enceinte }}
                 </details>
             </div>
 
