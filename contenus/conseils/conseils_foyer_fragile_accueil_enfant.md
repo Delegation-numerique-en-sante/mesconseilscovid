@@ -8,4 +8,4 @@ Pour plus d’informations :
   * **Réduire les sorties** au strict minimum possible
   * En complément des gestes barrières, **porter un masque** lorsque la distanciation de 1m ne peut pas être respectée entre l’enfant et les personnes qui le gardent
 
-* [Personnes à risques : Réponse à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/personnes-a-risques-reponses-a-vos-questions)
+* [Personnes à risques : Réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/personnes-a-risques-reponses-a-vos-questions)
