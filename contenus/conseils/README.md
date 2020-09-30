@@ -185,41 +185,21 @@ Pour connaître les règles spécifiques de votre département, consultez le <a 
 
 
 
-## [conseils_foyer_enfants.md](conseils_foyer_enfants.md)
+## [conseils_enfants.md](conseils_enfants.md)
 
-Consultez les [« conseils liés aux activités et à la santé des moins de 15 ans »](#pediatrie) face au Covid-19.
+<div class="conseil">
 
-Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face au Covid, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants :
+Consultez notre page dédiée : [« Conseils liés aux activités et à la santé des moins de 15 ans »](#pediatrie)
 
-* Application stricte des **gestes barrières**
-* Distance de sécurité de **plus d’1 mètre** avec chaque personne
-* **Réduire les sorties** au strict minimum possible
-* En complément des gestes barrières, **porter un masque** lorsque la distanciation de 1m ne peut pas être respectée entre l’enfant et les personnes qui le gardent
+</div>
 
+* Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face à la Covid, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants.
 
-
-## [conseils_foyer_enfants_fragile.md](conseils_foyer_enfants_fragile.md)
-
-Consultez les [« conseils liés aux activités et à la santé des moins de 15 ans »](#pediatrie) face au Covid-19.
-
-Si vos enfants sortent à l’extérieur du foyer, il convient de mettre en place des mesures de **distanciation physique renforcée** :
-
-* Application stricte des **gestes barrières**
-* Distance de sécurité de **plus d’1 mètre** avec chaque personne
-* **Réduire les sorties** au strict minimum possible
-* En complément des gestes barrières, **porter un masque** lorsque la distanciation de 1m ne peut pas être respectée.
-
-
-
-## [conseils_foyer_enfants_infos.md](conseils_foyer_enfants_infos.md)
-
-Pour plus d’informations :
-
-* [La scolarité des enfants](https://www.gouvernement.fr/info-coronavirus#questions__reponses), section « Pour vos enfants et leur scolarité ».
-
-* Si vous n’avez **pas de solution pour faire garder votre enfant :** informez votre employeur et envisagez avec lui les modalités de télétravail qui pourraient être mises en place, ou d’indemnisation si ce n’est pas possible.
+* Si vous n’avez **pas de solution pour faire garder votre enfant :** informez votre employeur et envisagez avec lui les modalités de télétravail qui pourraient être mises en place, [ou d’indemnisation si ce n’est pas possible.](https://www.ameli.fr/haute-garonne/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail#text_114568)
 
 * Les consultations de vos enfants comportant des **vaccins** obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) doivent être **maintenues.**
+
+* [La scolarité des enfants](https://www.gouvernement.fr/info-coronavirus#questions__reponses), section « Pour vos enfants et leur scolarité ».
 
 
 
@@ -229,22 +209,6 @@ Il est conseillé à votre proche de :
 
 * Poursuivre ou de reprendre son **suivi médical habituel** et **son traitement** si il ou elle en a un.
 * Contacter son médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
-
-
-
-## [conseils_foyer_fragile_accueil_enfant.md](conseils_foyer_fragile_accueil_enfant.md)
-
-Pour plus d’informations :
-
-* Si vous devez rester à domicile pour vous occuper d’une personne vulnérable et que le télétravail n’est pas possible, contactez votre médecin pour envisager les mesures possibles.
-
-* Si vous devez accueillir des enfants au sein de votre foyer, nous vous recommandons de mettre en place des mesures de **distanciation physique renforcée** pendant la présence des enfants :
-  * Application stricte des **gestes barrières**
-  * Distance de sécurité de **plus d’1 mètre** avec chaque personne
-  * **Réduire les sorties** au strict minimum possible
-  * En complément des gestes barrières, **porter un masque** lorsque la distanciation de 1m ne peut pas être respectée entre l’enfant et les personnes qui le gardent
-
-* [Personnes à risques : Réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/personnes-a-risques-reponses-a-vos-questions)
 
 
 

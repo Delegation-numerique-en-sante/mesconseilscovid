@@ -182,27 +182,16 @@ Réponse :
 
 * [réponse_foyer_enfants.md](réponses/réponse_foyer_enfants.md) si case cochée
 * [réponse_foyer_fragile.md](réponses/réponse_foyer_fragile.md) si case cochée
-* [réponse_foyer_enfants_fragile.md](réponses/réponse_foyer_enfants_fragile.md) si deux cases cochées
 
 Conseils :
 
-Si les cases enfants *et* fragile sont cochées :
+Si la case enfants est cochée :
+
+* [conseils_enfants.md](conseils/conseils_enfants.md)
+
+Si la case fragile est cochée :
 
 * [conseils_foyer_fragile.md](conseils/conseils_foyer_fragile.md)
-* [conseils_maladie_chronique_info.md](conseils/conseils_maladie_chronique_info.md)
-* [conseils_foyer_enfants_fragile.md](conseils/conseils_foyer_enfants_fragile.md)
-* [conseils_foyer_enfants_info.md](conseils/conseils_foyer_enfants_infos.md)
-
-Si seule la case enfants est cochée :
-
-* [conseils_foyer_enfants.md](conseils/conseils_foyer_enfants.md)
-* [conseils_foyer_enfant_garde.md](conseils/conseils_foyer_enfant_garde.md)
-* [conseils_foyer_enfants_vaccins.md](conseils/conseils_foyer_enfants_vaccins.md)
-
-Si seule la case fragile est cochée :
-
-* [conseils_foyer_fragile.md](conseils/conseils_foyer_fragile.md)
-* [conseils_foyer_fragile_accueil_enfant.md](conseils/conseils_foyer_fragile_accueil_enfant.md)
 * [conseils_maladie_chronique_info.md](conseils/conseils_maladie_chronique_info.md)
 
 

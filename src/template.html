@@ -784,7 +784,6 @@
                 </details>
             </div>
 
-
             <div id="conseils-caracteristiques-antecedents-femme-enceinte" class="conseils" hidden>
                 <details>
                     <summary>
@@ -803,6 +802,24 @@
                 </details>
             </div>
 
+            <div id="conseils-foyer-enfants" class="conseils" hidden>
+                <details>
+                    <summary>
+                        <header>
+                            <h3>
+                                Les enfants de moins de 15 ans
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+
+                            </h3>
+                        </header>
+                    </summary>
+                    <div class="reponse">
+                        {{ réponse_foyer_enfants }}
+                    </div>
+                    {{ conseils_enfants }}
+                </details>
+            </div>
+
             <div id="conseils-foyer" class="conseils" hidden>
                 <details>
                     <summary>
@@ -813,16 +830,6 @@
                             </h3>
                         </header>
                     </summary>
-                    <div id="conseils-foyer-enfants" hidden>
-                        <div class="reponse">
-                            {{ réponse_foyer_enfants }}
-                        </div>
-                        <div class="conseil">
-                            {{ conseils_foyer_enfants }}
-                        </div>
-                        {{ conseils_foyer_enfants_infos }}
-
-                    </div>
                     <div id="conseils-foyer-fragile" hidden>
                         <div class="reponse">
                             {{ réponse_foyer_fragile }}
@@ -830,19 +837,6 @@
                         <div class="conseil">
                             {{ conseils_foyer_fragile }}
                         </div>
-                        {{ conseils_foyer_fragile_accueil_enfant }}
-                    </div>
-                    <div id="conseils-foyer-enfants-fragile" hidden>
-                        <div class="reponse">
-                            {{ réponse_foyer_enfants_fragile }}
-                        </div>
-                        <div class="conseil">
-                            {{ conseils_foyer_fragile }}
-                        </div>
-                        <div class="conseil">
-                            {{ conseils_foyer_enfants_fragile }}
-                        </div>
-                        {{ conseils_foyer_enfants_infos }}
                     </div>
                 </details>
             </div>
