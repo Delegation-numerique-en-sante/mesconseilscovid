@@ -146,7 +146,7 @@ def service_worker():
 @cli
 def documentation():
     readme = open(HERE / "contenus" / "README.md").read()
-    for folder in each_folder_from(HERE / "contenus"):
+    for folder in each_folder_from(HERE / "contenus", exclude=["nouveaux_contenus"]):
         for file_path, filename in each_file_from(
             folder, file_name="*.md", exclude=["README.md"]
         ):

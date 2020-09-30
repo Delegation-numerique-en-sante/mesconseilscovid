@@ -24,10 +24,12 @@ def all():
     readmes()
 
 
-def each_folder_from(source_dir):
+def each_folder_from(source_dir, exclude=None):
     """Walk across the `source_dir` and return the folder paths."""
     for direntry in os.scandir(source_dir):
         if direntry.is_dir():
+            if exclude is not None and direntry.name in exclude:
+                continue
             yield direntry
 
 
