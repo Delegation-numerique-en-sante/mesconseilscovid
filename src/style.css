@@ -244,6 +244,7 @@ main footer .legals {
 #conseils-foyer header,
 #conseils-caracteristiques header,
 #conseils-caracteristiques-antecedents-femme-enceinte header,
+#conseils-foyer-enfants header,
 #conseils-generaux header,
 #conseils-pediatrie-general header,
 #conseils-pediatrie-ecole header,
@@ -281,6 +282,7 @@ main footer .legals {
     #conseils-foyer header,
     #conseils-caracteristiques header,
     #conseils-caracteristiques-antecedents-femme-enceinte header,
+    #conseils-foyer-enfants header,
     #conseils-generaux header,
     #conseils-pediatrie-general header,
     #conseils-pediatrie-ecole header,
@@ -318,6 +320,9 @@ main footer .legals {
 }
 #conseils-caracteristiques-antecedents-femme-enceinte header {
     background-image: url('illustrations/grossesse.svg');
+}
+#conseils-foyer-enfants header {
+    background-image: url('illustrations/pediatriegeneral.svg');
 }
 #antecedents-form,
 #suivi-medecin-form {
