@@ -308,6 +308,8 @@ Question : [libellé](questions/question_suivi_date_libellé.md)
 
 [Titre](questions/question_suivi_symptômes_titre.md)
 
+Aide : [aide](questions/question_suivi_symptômes_aide.md)
+
 Question : [libellé](questions/question_suivi_symptômes_libellé.md)
 
 Sous-question (essoufflement) : [libellé](questions/question_suivi_symptômes_essoufflement_libellé.md)
