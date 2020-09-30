@@ -245,6 +245,7 @@ Réponse :
 * [réponse_caractéristiques_à_risques.md](réponses/réponse_caractéristiques_à_risques.md) si âge > 65 ou grossesse 3e trimestre ou IMC > 30
 * [réponse_antécédents.md](réponses/réponse_antécédents.md) si [Antécédents](#antécédents) ou antécédents chroniques autres
 * [réponse_symptômes_actuels_reconnus.md](réponses/réponse_symptômes_actuels_reconnus.md) si [Antécédents](#antécédents) mais pas antécédents chroniques autres
+* [réponse_grossesse.md](réponses/réponse_grossesse.md) si grossesse 3e trimestre
 
 Conseils :
 
@@ -261,6 +262,7 @@ Si case antécédents chroniques autres cochée :
 
 * [conseils_antécédents_chroniques_autres.md](conseils/conseils_antécédents_chroniques_autres.md)
 * [conseils_maladie_chronique_info.md](conseils/conseils_maladie_chronique_info.md)
+
 
 #### Conseils d’ordre général
 
