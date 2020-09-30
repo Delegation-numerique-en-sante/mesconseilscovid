@@ -345,6 +345,15 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
+## [question_suivi_symptômes_aide.md](question_suivi_symptômes_aide.md)
+
+<!---->Décrivez ici l'évolution quotidienne de vos symptômes, pour obtenir des conseils adaptés pendant votre période d'isolement.
+
+---
+
+<!---->Décrivez ici l'évolution quotidienne de ses symptômes, pour obtenir des conseils adaptés pendant sa période d'isolement.
+
+
 ## [question_suivi_symptômes_alimentation_hydratation_libellé.md](question_suivi_symptômes_alimentation_hydratation_libellé.md)
 
 <!---->Êtes-vous dans l’<b>impossibilité de manger</b> ou de boire depuis <b>24 heures ou plus</b> ?
