@@ -116,6 +116,7 @@ export function showRelevantBlocks(element, profil, algoOrientation) {
     blockNames = blockNames.concat(
         algoOrientation.conseilsPersonnelsBlockNamesToDisplay()
     )
+    blockNames = blockNames.concat(algoOrientation.gestesBarriereBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.departementBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.activiteProBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.foyerBlockNamesToDisplay())
@@ -150,17 +151,23 @@ export function showRelevantAnswersRecap(element, profil, algoOrientation) {
         selector = '#conseils-caracteristiques'
     }
     var subElement = element.querySelector(selector)
-    if (!subElement) return
-    var nomCaracteristiquesARisques = subElement.querySelector(
-        '#nom-caracteristiques-a-risques'
+    if (!subElement) {
+        return
+    }
+
+    // eslint-disable-next-line no-extra-semi
+    ;[].forEach.call(
+        element.querySelectorAll('.nom-caracteristiques-a-risques'),
+        (elem) => {
+            injection.caracteristiquesARisques(elem, algoOrientation)
+        }
     )
-    if (nomCaracteristiquesARisques) {
-        injection.caracteristiquesARisques(nomCaracteristiquesARisques, algoOrientation)
-    }
-    var nomAntecedents = subElement.querySelector('#nom-antecedents')
-    if (nomAntecedents) {
-        injection.antecedents(nomAntecedents, algoOrientation)
-    }
+
+    // eslint-disable-next-line no-extra-semi
+    ;[].forEach.call(element.querySelectorAll('.nom-antecedents'), (elem) => {
+        injection.antecedents(elem, algoOrientation)
+    })
+
     var nomSymptomesActuels = subElement.querySelector('#nom-symptomesactuels')
     if (nomSymptomesActuels) {
         injection.symptomesactuels(nomSymptomesActuels, algoOrientation)

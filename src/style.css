@@ -242,6 +242,7 @@ main footer .legals {
 #conseils-departement header,
 #conseils-activite header,
 #conseils-foyer header,
+#conseils-gestes-barrieres-masque header,
 #conseils-caracteristiques header,
 #conseils-caracteristiques-antecedents-femme-enceinte header,
 #conseils-foyer-enfants header,
@@ -280,6 +281,7 @@ main footer .legals {
     #conseils-departement header,
     #conseils-activite header,
     #conseils-foyer header,
+    #conseils-gestes-barrieres-masque header,
     #conseils-caracteristiques header,
     #conseils-caracteristiques-antecedents-femme-enceinte header,
     #conseils-foyer-enfants header,
@@ -313,6 +315,9 @@ main footer .legals {
 #foyer-form,
 #conseils-foyer header {
     background-image: url('illustrations/foyer.svg');
+}
+#conseils-gestes-barrieres-masque header {
+    background-image: url('illustrations/gestesbarrieres.svg');
 }
 #caracteristiques-form,
 #conseils-caracteristiques header {

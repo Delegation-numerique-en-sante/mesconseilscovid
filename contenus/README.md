@@ -156,6 +156,14 @@ Conseils :
 6. [Conseils d’ordre général](#conseils-dordre-général)
 
 
+#### Gestes barrières & masque
+
+Conseils :
+
+1. [conseils par défaut](conseils/conseils_gestes_barrieres_masque_general.md)
+2. [conseils personne fragile](conseils/conseils_gestes_barrieres_masque_fragile.md)
+
+
 #### Localisation
 
 [Titre](questions/question_résidence_titre.md)
