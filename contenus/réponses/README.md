@@ -12,13 +12,13 @@ Vous travaillez et/ou êtes bénévole (<a href="#activitepro">modifier</a>)
 
 ## [réponse_antécédents.md](réponse_antécédents.md)
 
-<b id="nom-antecedents"></b> (<a href="#antecedents">modifier</a>)
+<b class="nom-antecedents"></b> (<a href="#antecedents">modifier</a>)
 
 
 
 ## [réponse_caractéristiques_à_risques.md](réponse_caractéristiques_à_risques.md)
 
-Vous présentez une ou des caractéristiques à risque : <b id="nom-caracteristiques-a-risques"></b> (<a href="#caracteristiques">modifier</a>)
+Vous présentez une ou des caractéristiques à risque : <b class="nom-caracteristiques-a-risques"></b> (<a href="#caracteristiques">modifier</a>)
 
 
 

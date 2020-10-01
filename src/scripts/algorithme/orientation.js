@@ -192,6 +192,24 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
+    gestesBarriereBlockNamesToDisplay() {
+        const blockNames = ['conseils-gestes-barrieres-masque']
+        if (this.personne_fragile) {
+            if (this.antecedents || this.profil.antecedent_chronique_autre) {
+                blockNames.push('reponse-gestes-barrieres-masque-antecedents')
+            }
+            if (this.sup65 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
+                blockNames.push(
+                    'reponse-gestes-barrieres-masque-caracteristiques-a-risques'
+                )
+            }
+            blockNames.push('conseils-gestes-barrieres-masque-fragile')
+        } else {
+            blockNames.push('conseils-gestes-barrieres-masque-general')
+        }
+        return blockNames
+    }
+
     departementBlockNamesToDisplay() {
         const blockNames = []
         if (this.profil.symptomes_actuels || typeof this.incidence === 'undefined') {
