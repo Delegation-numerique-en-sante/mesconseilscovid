@@ -1,11 +1,7 @@
-## Les gestes barrières & le masque
-
 * Les mesures de **distanciation physique renforcée** pour prendre soin des personnes fragiles face à la Covid-19 :
 
-  * Appliquez strictement [les gestes barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf)
+  * Appliquez strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/affiche_-_gestes_barrieres.pdf)
   * Garder une distance de **plus d’1 mètre** avec chaque personne
-
-  // Si fragile
   * Portez le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile
   * **Réduisez vos sorties** au strict minimum
   * Contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
