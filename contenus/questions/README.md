@@ -238,6 +238,50 @@ Si vous ne disposez pas de ces informations précises, vous pouvez saisir une ap
 
 
 
+## [question_dépistage_aide.md](question_dépistage_aide.md)
+
+Le test virologique (aussi appelé RT-PCR) détecte la présence du virus par un prélèvement nasal.
+
+
+
+## [question_dépistage_attente_libellé.md](question_dépistage_attente_libellé.md)
+
+<!---->Je n’ai pas encore reçu le résultat.
+
+
+
+## [question_dépistage_libellé.md](question_dépistage_libellé.md)
+
+<!---->J’ai passé un test dans les 7 derniers jours
+
+---
+
+<!---->Cette personne a passé un test dans les 7 derniers jours.
+
+
+
+## [question_dépistage_négatif_libellé.md](question_dépistage_négatif_libellé.md)
+
+<!---->Le résultat était <strong>négatif</strong>.
+
+
+
+## [question_dépistage_positif_libellé.md](question_dépistage_positif_libellé.md)
+
+<!---->Le résultat était <strong>positif</strong>.
+
+
+
+## [question_dépistage_titre.md](question_dépistage_titre.md)
+
+<!---->Mon test Covid
+
+---
+
+<!---->Son test Covid
+
+
+
 ## [question_foyer_enfants_libellé.md](question_foyer_enfants_libellé.md)
 
 <!---->Je vis avec un ou des <b>enfants</b> de moins de 11 ans

@@ -78,7 +78,7 @@ Sous-question (autre) : [libellé](questions/question_symptômes_actuels_autre_l
 
 Cas particulier : si [Symptôme actuel autre](#symptôme-actuel-autre) (`Sous-question (autre)` est cochée), la personne continue vers les questions relatives aux symptômes passés (cas nominal).
 
-Statut : [statut_symptomatique.md](statuts/statut_symptomatique.md) (orange) ou [statut_symptomatique_urgent.md](statuts/statut_symptomatique_urgent.md) (orange) si [Gravité majeure](#gravité-majeure), [statut_asymptomatique.md](statuts/statut_asymptomatique.md) (orange) si dépistage positif sans symptômes.
+Statut : [statut_symptomatique.md](statuts/statut_symptomatique.md) (orange) ou [statut_symptomatique_urgent.md](statuts/statut_symptomatique_urgent.md) (orange) si [Gravité majeure](#gravité-majeure).
 
 Réponse :
 
@@ -154,6 +154,21 @@ Conseils :
 4. [Localisation](#localisation)
 5. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
 6. [Conseils d’ordre général](#conseils-dordre-général)
+
+
+#### Dépistage
+
+[Titre](questions/question_dépistage_titre.md)
+
+Question : [libellé](questions/question_dépistage_libellé.md), [aide](questions/question_dépistage_aide.md)
+
+Sous-question (positif) : [libellé](questions/question_dépistage_positif_libellé.md)
+
+Sous-question (négatif) : [libellé](questions/question_dépistage_négatif_libellé.md)
+
+Sous-question (attente) : [libellé](questions/question_dépistage_attente_libellé.md)
+
+Statut : [statut_asymptomatique.md](statuts/statut_asymptomatique.md) (orange) si positif sans aucun [Symptômes actuels](#symptômes-actuels).
 
 
 #### Gestes barrières & masque
