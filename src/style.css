@@ -391,6 +391,7 @@ main footer .legals {
     margin: 3rem auto;
 }
 .statut-symptomatique-urgent,
+.statut-symptomatique-positif,
 .statut-symptomatique,
 .statut-asymptomatique,
 .statut-risque-eleve,
@@ -404,6 +405,7 @@ main footer .legals {
     border-color: #ff9940;
 }
 .statut-foyer-fragile,
+.statut-symptomatique-negatif,
 .suivi-gravite-1 {
     background: #fde7a0;
     border-color: #fdcf41;

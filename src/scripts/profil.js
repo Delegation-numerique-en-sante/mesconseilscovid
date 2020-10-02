@@ -381,6 +381,22 @@ export default class Profil {
         })
     }
 
+    estPositif() {
+        return (
+            this.hasSymptomesActuelsReconnus() &&
+            this.depistage === true &&
+            this.depistage_resultat === 'positif'
+        )
+    }
+
+    estNegatif() {
+        return (
+            this.hasSymptomesActuelsReconnus() &&
+            this.depistage === true &&
+            this.depistage_resultat === 'negatif'
+        )
+    }
+
     estAsymptomatique() {
         return (
             this.symptomes_actuels === false &&
