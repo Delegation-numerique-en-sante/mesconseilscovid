@@ -45,6 +45,36 @@ describe('Algorithme d’orientation', function () {
             assert.strictEqual(algoOrientation.statut, 'symptomatique')
         })
 
+        it('Un profil avec des symptômes actuels + dépistage? est symptomatique', function () {
+            var profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+                depistage: true,
+                depistage_resultat: 'attente',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.strictEqual(algoOrientation.statut, 'symptomatique')
+        })
+
+        it('Un profil avec des symptômes actuels + dépistage+ est symptomatique positif', function () {
+            var profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+                depistage: true,
+                depistage_resultat: 'positif',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.strictEqual(algoOrientation.statut, 'symptomatique-positif')
+        })
+
+        it('Un profil avec des symptômes actuels + dépistage- est symptomatique négatif', function () {
+            var profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+                depistage: true,
+                depistage_resultat: 'negatif',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.strictEqual(algoOrientation.statut, 'symptomatique-negatif')
+        })
+
         it('Un profil avec des symptômes actuels et facteurs de gravité majeurs est symptomatique urgent', function () {
             var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
