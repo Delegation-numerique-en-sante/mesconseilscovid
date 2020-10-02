@@ -36,7 +36,19 @@ Il vous est conseillé de rester **en isolement**.
 
 ## [statut_symptomatique.md](statut_symptomatique.md)
 
-Vous êtes peut-être **porteur du Covid-19**.
+Vous êtes peut-être **porteur de la Covid**.
+
+
+
+## [statut_symptomatique_négatif.md](statut_symptomatique_négatif.md)
+
+Vous êtes malade mais **non porteur** de la Covid.
+
+
+
+## [statut_symptomatique_positif.md](statut_symptomatique_positif.md)
+
+Vous êtes **porteur de la Covid**.
 
 
 

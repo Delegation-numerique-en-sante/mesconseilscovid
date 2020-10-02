@@ -82,7 +82,13 @@ export default class AlgorithmeOrientation {
             return 'symptomatique-urgent'
         }
         if (this.profil.hasSymptomesActuelsReconnus()) {
-            return 'symptomatique'
+            if (this.profil.estPositif()) {
+                return 'symptomatique-positif'
+            } else if (this.profil.estNegatif()) {
+                return 'symptomatique-negatif'
+            } else {
+                return 'symptomatique'
+            }
         }
         if (this.profil.estAsymptomatique()) {
             return 'asymptomatique'
