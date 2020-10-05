@@ -115,13 +115,6 @@ Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos méd
 
 
 
-## [conseils_caractéristiques_antécédents_femme_enceinte.md](conseils_caractéristiques_antécédents_femme_enceinte.md)
-
-* le [suivi de grossesse](https://www.has-sante.fr/jcms/p_3187133/fr/grossesse-votre-suivi-pendant-l-epidemie-de-covid-19) pendant l’épidémie de Covid-19
-* le [retour à la maison après l’accouchement](https://www.has-sante.fr/jcms/p_3186783/fr/accouchement-votre-retour-a-la-maison-pendant-l-epidemie-de-covid-19) pendant l’épidémie de Covid-19
-
-
-
 ## [conseils_caractéristiques_antécédents_info_risque.md](conseils_caractéristiques_antécédents_info_risque.md)
 
 Pour plus d’informations :
@@ -244,6 +237,13 @@ Il est conseillé à votre proche de :
   * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
 * [l’aération régulière des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf)
 * Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)
+
+
+
+## [conseils_grossesse.md](conseils_grossesse.md)
+
+* le [suivi de grossesse](https://www.has-sante.fr/jcms/p_3187133/fr/grossesse-votre-suivi-pendant-l-epidemie-de-covid-19) pendant l’épidémie de Covid-19
+* le [retour à la maison après l’accouchement](https://www.has-sante.fr/jcms/p_3186783/fr/accouchement-votre-retour-a-la-maison-pendant-l-epidemie-de-covid-19) pendant l’épidémie de Covid-19
 
 
 

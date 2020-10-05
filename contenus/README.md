@@ -274,7 +274,7 @@ Si âge > 65 ou grossesse 3e trimestre ou IMC > 30 ou [Antécédents](#antécéd
 
 * [conseils_caractéristiques_antécédents_info_risque.md](conseils/conseils_caractéristiques_antécédents_info_risque.md) si [Antécédents](#antécédents) ou maladie chronique autre.
 
-* [conseils_caractéristiques_antécédents_femme_enceinte.md](conseils/conseils_caractéristiques_antécédents_femme_enceinte.md) si grossesse 3e trimestre
+* [conseils_grossesse.md](conseils/conseils_grossesse.md) si grossesse 3e trimestre
 
 Si case antécédents chroniques autres cochée :
 
