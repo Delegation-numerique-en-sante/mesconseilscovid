@@ -165,47 +165,47 @@ describe('Injection', function () {
         it('cardio', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
-            element.innerHTML = '<b id="nom-antecedents"></b>'
+            element.innerHTML = '<b class="nom-antecedents"></b>'
             var profil = new Profil('mes_infos', {
                 antecedent_cardio: true,
             })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.antecedents(
-                element.querySelector('#nom-antecedents'),
+                element.querySelector('.nom-antecedents'),
                 algoOrientation
             )
 
             assert.strictEqual(
                 element.innerHTML,
-                '<b id="nom-antecedents">Vous avez des antécédents à risque.</b>'
+                '<b class="nom-antecedents">Vous avez des antécédents à risque.</b>'
             )
         })
 
         it('autres', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
-            element.innerHTML = '<b id="nom-antecedents"></b>'
+            element.innerHTML = '<b class="nom-antecedents"></b>'
             var profil = new Profil('mes_infos', {
                 antecedent_chronique_autre: true,
             })
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.antecedents(
-                element.querySelector('#nom-antecedents'),
+                element.querySelector('.nom-antecedents'),
                 algoOrientation
             )
 
             assert.strictEqual(
                 element.innerHTML,
-                '<b id="nom-antecedents">Vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</b>'
+                '<b class="nom-antecedents">Vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</b>'
             )
         })
 
         it('cardio + autres', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
-            element.innerHTML = '<b id="nom-antecedents"></b>'
+            element.innerHTML = '<b class="nom-antecedents"></b>'
             var profil = new Profil('mes_infos', {
                 antecedent_cardio: true,
                 antecedent_chronique_autre: true,
@@ -213,13 +213,13 @@ describe('Injection', function () {
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.antecedents(
-                element.querySelector('#nom-antecedents'),
+                element.querySelector('.nom-antecedents'),
                 algoOrientation
             )
 
             assert.strictEqual(
                 element.innerHTML,
-                '<b id="nom-antecedents">Vous avez des antécédents à risque et vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</b>'
+                '<b class="nom-antecedents">Vous avez des antécédents à risque et vous avez une maladie chronique, un handicap ou vous prenez un traitement au long cours.</b>'
             )
         })
     })
