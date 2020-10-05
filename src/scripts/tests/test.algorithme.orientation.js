@@ -469,7 +469,39 @@ describe('Algorithme d’orientation', function () {
             ])
         })
 
-        it('Une activité pro + antecedents affiche des conseils + pro + infos + arrêt', function () {
+        it('Une activité pro + grossesse affiche des conseils + pro + infos + personne fragile', function () {
+            var profil = new Profil('mes_infos', {
+                activite_pro: true,
+                grossesse_3e_trimestre: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
+                'conseils-activite',
+                'reponse-activite-pro',
+                'conseils-activite-pro',
+                'conseils-activite-pro-infos',
+                'reponse-activite-pro-personne-fragile',
+                'conseils-activite-pro-personne-fragile',
+            ])
+        })
+
+        it('Une activité pro + 65 ans affiche des conseils + pro + infos + personne fragile', function () {
+            var profil = new Profil('mes_infos', {
+                activite_pro: true,
+                age: 65,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
+                'conseils-activite',
+                'reponse-activite-pro',
+                'conseils-activite-pro',
+                'conseils-activite-pro-infos',
+                'reponse-activite-pro-personne-fragile',
+                'conseils-activite-pro-personne-fragile',
+            ])
+        })
+
+        it('Une activité pro + antecedents affiche des conseils + pro + infos + personne fragile + arrêt', function () {
             var profil = new Profil('mes_infos', {
                 activite_pro: true,
                 antecedent_cancer: true,
@@ -480,6 +512,8 @@ describe('Algorithme d’orientation', function () {
                 'reponse-activite-pro',
                 'conseils-activite-pro',
                 'conseils-activite-pro-infos',
+                'reponse-activite-pro-personne-fragile',
+                'conseils-activite-pro-personne-fragile',
                 'reponse-activite-pro-antecedents',
                 'conseils-activite-pro-arret',
             ])
@@ -580,11 +614,102 @@ describe('Algorithme d’orientation', function () {
         })
     })
 
+    describe('Ma santé', function () {
+        it('Le bloc santé s’affiche par défaut', function () {
+            var profil = new Profil('mes_infos', {})
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
+                'conseils-sante',
+            ])
+        })
+
+        it('Même avec symptômes actuels', function () {
+            var profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
+                'conseils-sante',
+            ])
+        })
+
+        it('Même avec symptômes passés', function () {
+            var profil = new Profil('mes_infos', {
+                symptomes_passes: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
+                'conseils-sante',
+            ])
+        })
+
+        it('Même avec contact à risque', function () {
+            var profil = new Profil('mes_infos', {
+                contact_a_risque: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
+                'conseils-sante',
+            ])
+        })
+
+        it('Risque âge', function () {
+            var profil = new Profil('mes_infos', {
+                age: 65,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
+                'conseils-sante',
+                'reponse-sante-caracteristiques-a-risques',
+                'conseils-sante-personne-fragile',
+            ])
+        })
+
+        it('Risque IMC > 30', function () {
+            var profil = new Profil('mes_infos', {
+                taille: 150,
+                poids: 100,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
+                'conseils-sante',
+                'reponse-sante-caracteristiques-a-risques',
+                'conseils-sante-personne-fragile',
+            ])
+        })
+
+        it('Risque grossesse 3e trimestre', function () {
+            var profil = new Profil('mes_infos', {
+                grossesse_3e_trimestre: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
+                'conseils-sante',
+                'reponse-sante-caracteristiques-a-risques',
+                'conseils-sante-personne-fragile',
+            ])
+        })
+
+        it('Risque cardio', function () {
+            var profil = new Profil('mes_infos', {
+                antecedent_cardio: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
+                'conseils-sante',
+                'reponse-sante-antecedents',
+                'conseils-sante-personne-fragile',
+            ])
+        })
+    })
     describe('Caractéristiques et antécédents', function () {
         it('Aucun antécédent n’affiche rien', function () {
             var profil = new Profil('mes_infos', {})
             var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [])
+            assert.deepEqual(
+                algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay(),
+                []
+            )
         })
 
         it('Symptômes actuels n’affiche rien', function () {

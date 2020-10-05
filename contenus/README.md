@@ -224,6 +224,14 @@ Si la case fragile est cochée :
 * [conseils_activité_pro_foyer_fragile.md](conseils/conseils_activité_pro_foyer_fragile.md)
 
 
+#### Ma santé
+
+Conseils :
+
+* [conseils_santé](conseils/conseils_santé.md)
+* [conseils_santé_personne_fragile](conseils/conseils_santé_personne_fragile.md)
+
+
 #### Caractéristiques et antécédents
 
 [Titre antécédents](questions/question_antécédents_titre.md)
@@ -275,6 +283,8 @@ Si âge > 65 ou grossesse 3e trimestre ou IMC > 30 ou [Antécédents](#antécéd
 * [conseils_caractéristiques_antécédents_info_risque.md](conseils/conseils_caractéristiques_antécédents_info_risque.md) si [Antécédents](#antécédents) ou maladie chronique autre.
 
 * [conseils_grossesse.md](conseils/conseils_grossesse.md) si grossesse 3e trimestre
+
+* [conseils_activité_pro_personne_fragile.md](conseils/conseils_activité_pro_personne_fragile.md)
 
 Si case antécédents chroniques autres cochée :
 
