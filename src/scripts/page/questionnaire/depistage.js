@@ -5,6 +5,13 @@ import {
 } from '../../formutils.js'
 
 export default function depistage(form, app) {
+    // Premier démarrage du formulaire ?
+    if (!app.profil.questionnaire_started) {
+        app.profil.questionnaire_started = true
+        app.enregistrerProfilActuel()
+        window.plausible(`Questionnaire commencé`)
+    }
+
     // Remplir le formulaire avec les données du profil
     preloadCheckboxForm(form, 'depistage', app.profil)
     if (app.profil.depistage) {

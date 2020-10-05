@@ -72,7 +72,7 @@ export default class AlgorithmeOrientation {
         return (
             this.profil.hasSymptomesActuelsReconnus() ||
             this.profil.symptomes_passes ||
-            (this.profil.contact_a_risque && !this.profil.contact_a_risque_autre)
+            this.profil.hasContactARisqueReconnus()
         )
     }
 

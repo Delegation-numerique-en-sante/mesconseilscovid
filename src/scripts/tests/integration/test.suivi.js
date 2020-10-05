@@ -20,12 +20,13 @@ describe('Auto-suivi', function () {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:symptomesactuels'),
+                waitForPlausibleTrackingEvent(page, 'pageview:depistage'),
             ])
         }
 
         // Remplir le questionnaire
         await remplirQuestionnaire(page, {
+            depistage: false,
             symptomesActuels: ['temperature'],
         })
 
@@ -197,12 +198,13 @@ describe('Auto-suivi', function () {
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:symptomesactuels'),
+                waitForPlausibleTrackingEvent(page, 'pageview:depistage'),
             ])
         }
 
         // Remplir le questionnaire
         await remplirQuestionnaire(page, {
+            depistage: false,
             symptomesActuels: ['temperature'],
         })
 
