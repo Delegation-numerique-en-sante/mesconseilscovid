@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-10-05
+
+* met à jour les liens vers certaines infographies qui ont changé
+* met à jour les taux d’incidence
+
 ## 2020-09-30
 
 * change l’ordre des questions : on commence par les questions sur les
