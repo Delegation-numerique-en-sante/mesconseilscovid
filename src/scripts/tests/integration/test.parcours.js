@@ -100,7 +100,7 @@ describe('Parcours', function () {
         }
     })
 
-    it('remplir le questionnaire classique puis médecine du travail', async function () {
+    it('remplir le questionnaire classique puis santé au travail', async function () {
         const page = this.test.page
 
         // On est redirigé vers l’introduction
@@ -145,9 +145,7 @@ describe('Parcours', function () {
             await page.click('#page #conseils-activite h3')
 
             // On peut aller vers la médecine du travail
-            let link = await page.waitForSelector(
-                '#page >> text="Conseils pour la médecine du travail"'
-            )
+            let link = await page.waitForSelector('#page a >> text="santé au travail"')
             await Promise.all([
                 link.click(),
                 page.waitForNavigation({ url: '**/#medecinedutravail' }),
