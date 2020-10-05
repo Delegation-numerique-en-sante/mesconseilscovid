@@ -32,31 +32,29 @@ describe('Profils', function () {
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#residence' }),
+                page.waitForNavigation({ url: '**/#depistage' }),
             ])
         }
 
         // Légende adaptée
         {
-            let legend = await page.waitForSelector(
-                '#page #symptomes-actuels-form legend'
-            )
-            assert.equal(await legend.innerText(), '1/9 - Son état actuel')
+            let legend = await page.waitForSelector('#page #depistage-form legend')
+            assert.equal(await legend.innerText(), '1/9 - Son test Covid')
         }
 
         // Remplir le questionnaire
         await remplirQuestionnaire(page, {
+            depistage: false,
+            symptomesActuels: [],
+            symptomesPasses: false,
+            contactARisque: [],
             departement: '80',
-            activitePro: true,
             enfants: true,
             age: '42',
             taille: '165',
             poids: '70',
             grossesse: false,
-            symptomesActuels: [],
-            symptomesPasses: false,
-            contactARisque: [],
-            depistage: false,
+            activitePro: true,
         })
 
         // Conseils

@@ -49,7 +49,7 @@ describe('Algorithme d’orientation', function () {
             var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 depistage: true,
-                depistage_resultat: 'attente',
+                depistage_resultat: 'en_attente',
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.strictEqual(algoOrientation.statut, 'symptomatique')

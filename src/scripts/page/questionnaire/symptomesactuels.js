@@ -5,13 +5,6 @@ import {
 } from '../../formutils.js'
 
 export default function symptomesactuels(form, app) {
-    // Premier démarrage du formulaire ?
-    if (!app.profil.questionnaire_started) {
-        app.profil.questionnaire_started = true
-        app.enregistrerProfilActuel()
-        window.plausible(`Questionnaire commencé`)
-    }
-
     // Remplir le formulaire avec les données du profil
     preloadCheckboxForm(form, 'symptomes_actuels', app.profil)
     preloadCheckboxForm(form, 'symptomes_actuels_temperature', app.profil)
@@ -91,7 +84,12 @@ export default function symptomesactuels(form, app) {
         }
 
         app.enregistrerProfilActuel().then(() => {
-            app.goToNextPage('symptomesactuels')
+            // On redirige manuellement vers le suivi pour conserver une `nextPage`
+            // conseils qui va permettre de considérer la page comme étant accessible.
+            let nextPage = app.questionnaire.nextPage('symptomesactuels', app.profil)
+            if (nextPage === 'conseils')
+                nextPage = app.profil.suivi_start_date ? 'suivisymptomes' : 'suividate'
+            app.router.navigate(nextPage)
         })
     })
 }

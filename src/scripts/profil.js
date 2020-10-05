@@ -346,6 +346,10 @@ export default class Profil {
         return this.symptomes_actuels && !this.symptomes_actuels_autre
     }
 
+    hasContactARisqueReconnus() {
+        return this.contact_a_risque && !this.contact_a_risque_autre
+    }
+
     hasSuiviStartDate() {
         return typeof this._suivi_start_date !== 'undefined'
     }
