@@ -6,52 +6,53 @@
 
 ## [conseils_activité_pro.md](conseils_activité_pro.md)
 
-Si cela est possible, privilégiez le **télétravail**.
-Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique** et les **gestes barrières** limitent la propagation du virus entre collègues.
+<div class="conseil">
 
-Rentrez en contact avec votre employeur pour envisager des solutions individuelles (éventuellement via la Médecine du Travail de l’entreprise).
-En appliquant les gestes barrières, le risque de contamination — notamment sur le lieu de travail — n’est pas plus important qu’en allant faire ses courses.
+* Si cela est possible, privilégiez le **télétravail**.
+* Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique** et les **gestes barrières** limitent la propagation du virus entre collègues.
+* Nos conseils pour préserver votre [santé au travail](#medecinedutravail).
 
-Plus d’informations sur :
-
-* [les conditions de reprise et relance de l’activité](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/conditions-de-reprise-et-relance-de-l-activite/)
-* les autres questions que se posent les employeurs, les particuliers et les professionnels des secteurs du travail, de l’emploi, de la formation professionnelle :
-  * [Conseils pour la médecine du travail](#medecinedutravail)
-  * [Le site du ministère du travail](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/)
+</div>
 
 
 
 ## [conseils_activité_pro_arrêt.md](conseils_activité_pro_arrêt.md)
 
-Si vous n’avez pas la possibilité de télétravailler et que votre état de santé vous expose au risque de développer une **forme sévère de Covid19**, vous pouvez **bénéficier d’un arrêt de travail.** Vous pouvez le demander ou le renouveller sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?_56_INSTANCE_XV0ItAcVS4ow_read_more=2), soit auprès de votre médecin traitant.
+Si vous n’avez pas la possibilité de télétravailler et que votre état de santé vous expose à un **très haut risque** de développer une **forme sévère** de Covid,  votre médecin traitant pourra vous fournir un **certificat d’isolement** à donner à votre employeur. Plus d’informations sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?_56_INSTANCE_XV0ItAcVS4ow_read_more=2). 🧑‍⚕️
+
+
+
+## [conseils_activité_pro_foyer_fragile.md](conseils_activité_pro_foyer_fragile.md)
+
+Si vous devez rester à domicile pour vous occuper d’une personne vulnérable et que le télétravail n’est pas possible, contactez votre médecin pour envisager les mesures possibles. 🧑‍⚕️
 
 
 
 ## [conseils_activité_pro_infos.md](conseils_activité_pro_infos.md)
 
-Pour plus d’informations, consultez [l’espace dédié pour les professionnels](https://www.gouvernement.fr/info-coronavirus/espace-pour-les-professionnels) sur le site du gouvernement.
+* [L’espace dédié pour les professionnels](https://www.gouvernement.fr/info-coronavirus/espace-pour-les-professionnels) sur le site du gouvernement.
+* [Les conditions de reprise de l’activité](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/conditions-de-reprise-et-relance-de-l-activite/).
+* [Les **fiches-conseils métier**](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/proteger-les-travailleurs-les-emplois-les-savoir-faire-et-les-competences/proteger-les-travailleurs/article/fiches-conseils-metiers-et-guides-pour-les-salaries-et-les-employeurs) du ministère du travail.
+* [Les questions-réponses](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/) du ministère du travail.
 
 
 
 ## [conseils_activité_pro_libéral.md](conseils_activité_pro_libéral.md)
 
-En tant que **travailleur indépendant ou libéral**, vous n’avez pas de service de médecine du travail. Vous pouvez vous rapprocher du centre régional de pathologies professionnelles et environnementales de l’hôpital (CHU) le plus proche de chez vous. Ces services travaillent sur les impacts du travail (exposition professionnelle et/ou environnementale) sur la santé et peuvent **vous renseigner sur vos conditions de travail au regard de votre état de santé**.
-
-
-
-## [conseils_activité_pro_public.md](conseils_activité_pro_public.md)
-
-Vous pouvez consulter les [**fiches-conseils métier**](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/proteger-les-travailleurs/article/fiches-conseils-metiers-et-guides-pour-les-salaries-et-les-employeurs) pour aider à la mise en œuvre des mesures de protection.
+Comme les **professions libérales** n'ont pas de médecine du travail, vous pouvez vous rapprocher du centre régional de pathologies professionnelles et environnementales de l’hôpital (CHU) le plus proche de chez vous. Ces services travaillent sur les impacts du travail (exposition professionnelle et/ou environnementale) sur la santé et peuvent vous renseigner sur **vos conditions de travail** au regard de **votre état de santé**.
 
 
 
 ## [conseils_activité_pro_santé.md](conseils_activité_pro_santé.md)
 
-Pour plus d’informations :
+* Les informations du ministère de la santé sur :
 
-* [La protection des professionnels **de santé**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/)
-* [Pour les professionnels **du médico-social**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-du-social-et-medico-social/)
-* [Conseils pour les moins de 15 ans](#pediatrie) si vous travaillez auprès d’enfants et/ou devez conseiller des parents.
+    * la protection des [professionnels **de santé**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/distrilog-sante),
+    * la protection des [professionnels **du médico-social**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-du-social-et-medico-social/),
+    * les [aides logistiques et psychologiques](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/article/aides-logistiques-et-psychologiques-aux-professionnels) pour tous les professionnels de santé.🧑‍⚕️
+
+* Nos conseils pour [les moins de 15 ans](#pediatrie), si vous travaillez auprès d’enfants et/ou devez conseiller des parents.
+* [L’espace dédié pour les professionnels](https://www.gouvernement.fr/info-coronavirus/espace-pour-les-professionnels) sur le site du gouvernement.
 
 
 
@@ -103,7 +104,6 @@ Afin d’éviter une forme grave de Covid-19, il vous est recommandé
 d’appliquer les mesures de **distanciation physique renforcée :**
 
 * Application stricte des **gestes barrières**
-* Privilégier le **télétravail** ou rentrer en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**. En appliquant les gestes barrières, le risque de contamination sur le lieu de travail n’est pas plus important qu’en allant faire ses courses.
 * **Masque en permanence** à l’extérieur de mon foyer et à l’intérieur si je reçois des personnes étrangères à mon domicile
 * Distance de sécurité de **plus d’1 mètre** avec chaque personne
 * **Réduire les sorties** au strict minimum

@@ -243,24 +243,26 @@ export default class AlgorithmeOrientation {
         ) {
             blockNames.push('conseils-activite')
             blockNames.push('reponse-activite-pro')
-            // Les blocs de conseils sont quasi-exclusifs aussi.
-            if (this.profil.activite_pro_liberal) {
-                blockNames.push('conseils-activite-pro-liberal')
-            }
-            if (this.profil.activite_pro_public && this.profil.activite_pro_sante) {
-                blockNames.push('conseils-activite-pro-public')
-                blockNames.push('conseils-activite-pro-sante')
-            } else if (this.profil.activite_pro_public) {
-                blockNames.push('conseils-activite-pro-public')
-                blockNames.push('conseils-activite-pro-infos')
-            } else if (this.profil.activite_pro_sante) {
+
+            // Professionnel de santé ou non ?
+            if (this.profil.activite_pro_sante) {
                 blockNames.push('conseils-activite-pro-sante')
             } else {
                 blockNames.push('conseils-activite-pro')
                 blockNames.push('conseils-activite-pro-infos')
             }
-            if (this.personne_fragile) {
+
+            // Blocs additionnels.
+            if (this.profil.activite_pro_liberal) {
+                blockNames.push('conseils-activite-pro-liberal')
+            }
+            if (this.antecedents) {
+                blockNames.push('reponse-activite-pro-antecedents')
                 blockNames.push('conseils-activite-pro-arret')
+            }
+            if (this.profil.foyer_fragile) {
+                blockNames.push('reponse-activite-pro-foyer-fragile')
+                blockNames.push('conseils-activite-pro-foyer-fragile')
             }
         }
         return blockNames

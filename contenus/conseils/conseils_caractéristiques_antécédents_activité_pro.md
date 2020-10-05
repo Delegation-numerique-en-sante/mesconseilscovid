@@ -2,7 +2,6 @@ Afin d’éviter une forme grave de Covid-19, il vous est recommandé
 d’appliquer les mesures de **distanciation physique renforcée :**
 
 * Application stricte des **gestes barrières**
-* Privilégier le **télétravail** ou rentrer en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**. En appliquant les gestes barrières, le risque de contamination sur le lieu de travail n’est pas plus important qu’en allant faire ses courses.
 * **Masque en permanence** à l’extérieur de mon foyer et à l’intérieur si je reçois des personnes étrangères à mon domicile
 * Distance de sécurité de **plus d’1 mètre** avec chaque personne
 * **Réduire les sorties** au strict minimum
