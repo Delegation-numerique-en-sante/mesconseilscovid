@@ -48,7 +48,7 @@ describe('Plausible', function () {
 
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/#symptomesactuels' }),
+            page.waitForNavigation({ url: '**/#depistage' }),
         ])
 
         await remplirQuestionnaire(page, {
@@ -82,9 +82,9 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
-            'Questionnaire commencé:symptomesactuels',
-            'pageview:symptomesactuels',
+            'Questionnaire commencé:depistage',
             'pageview:depistage',
+            'pageview:symptomesactuels',
             'pageview:symptomespasses',
             'pageview:contactarisque',
             'pageview:residence',
@@ -105,7 +105,7 @@ describe('Plausible', function () {
         let bouton = await page.waitForSelector('text="Démarrer"')
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/#symptomesactuels' }),
+            page.waitForNavigation({ url: '**/#depistage' }),
         ])
         await remplirQuestionnaire(page, {
             departement: '80',
@@ -138,9 +138,9 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
-            'Questionnaire commencé:symptomesactuels',
-            'pageview:symptomesactuels',
+            'Questionnaire commencé:depistage',
             'pageview:depistage',
+            'pageview:symptomesactuels',
             'pageview:symptomespasses',
             'pageview:contactarisque',
             'pageview:residence',

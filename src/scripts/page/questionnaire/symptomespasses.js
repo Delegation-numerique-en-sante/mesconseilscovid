@@ -24,7 +24,12 @@ export default function symptomespasses(form, app) {
         }
 
         app.enregistrerProfilActuel().then(() => {
-            app.goToNextPage('symptomespasses')
+            // On redirige manuellement vers le suivi pour conserver une `nextPage`
+            // conseils qui va permettre de considérer la page comme étant accessible.
+            let nextPage = app.questionnaire.nextPage('symptomespasses', app.profil)
+            if (nextPage === 'conseils')
+                nextPage = app.profil.suivi_start_date ? 'suivisymptomes' : 'suividate'
+            app.router.navigate(nextPage)
         })
     })
 }
