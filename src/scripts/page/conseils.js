@@ -119,6 +119,7 @@ export function showRelevantBlocks(element, profil, algoOrientation) {
     blockNames = blockNames.concat(algoOrientation.gestesBarriereBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.departementBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.activiteProBlockNamesToDisplay())
+    blockNames = blockNames.concat(algoOrientation.santeBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.foyerBlockNamesToDisplay())
     blockNames = blockNames.concat(
         algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay()
@@ -159,6 +160,7 @@ export function showRelevantAnswersRecap(element, profil, algoOrientation) {
     ;[].forEach.call(
         element.querySelectorAll('.nom-caracteristiques-a-risques'),
         (elem) => {
+            console.debug(elem)
             injection.caracteristiquesARisques(elem, algoOrientation)
         }
     )

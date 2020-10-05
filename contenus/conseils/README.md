@@ -43,6 +43,12 @@ Comme les **professions libérales** n'ont pas de médecine du travail, vous pou
 
 
 
+## [conseils_activité_pro_personne_fragile.md](conseils_activité_pro_personne_fragile.md)
+
+Nous vous invitons à privilégier le **télétravail** ou rentrer en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**. En appliquant les gestes barrières, le risque de contamination sur le lieu de travail n’est pas plus important qu’en allant faire ses courses.
+
+
+
 ## [conseils_activité_pro_santé.md](conseils_activité_pro_santé.md)
 
 * Les informations du ministère de la santé sur :
@@ -251,8 +257,6 @@ Il est conseillé à votre proche de :
 
 **À compter du 20 juillet 2020, toute personne de 11 ans et plus [doit porter un masque grand public dans les lieux publics clos](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/port-du-masque-grand-public-obligatoire-en-lieux-clos-faq).**
 
-Le Covid-19 n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de consulter au moindre signe de maladie.
-
 De plus, **l’aération régulière** [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf), le respect des **gestes barrières**, et de **distanciation physique** reste indispensable.
 
 
@@ -294,6 +298,26 @@ Pour plus d’informations sur l’isolement : [« J’ai les signes de la mal
 ## [conseils_maladie_chronique_info.md](conseils_maladie_chronique_info.md)
 
 Pour plus d’informations, consultez le document [« Faire face à une maladie chronique pendant le confinement »](https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf) de la Haute Autorité de Santé.
+
+
+
+## [conseils_santé.md](conseils_santé.md)
+
+* La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver votre santé, il vous est recommandé de consulter au moindre signe de maladie.
+
+
+
+## [conseils_santé_personne_fragile.md](conseils_santé_personne_fragile.md)
+
+* Il vous est conseillé de **poursuivre votre suivi médical habituel** et **votre traitement** si vous en avez un.
+
+* Vous pouvez contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
+
+* Continuez, dans la mesure du possible, à limiter vos déplacements et à éviter les transports en commun ou à défaut à éviter les heures de pointe.
+
+* Privilégiez les périodes les moins fréquentées pour faire vos courses.
+
+* [Personnes à risques : Réponse à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/personnes-a-risques-reponses-a-vos-questions)
 
 
 

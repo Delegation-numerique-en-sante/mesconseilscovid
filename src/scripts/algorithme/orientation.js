@@ -252,18 +252,42 @@ export default class AlgorithmeOrientation {
                 blockNames.push('conseils-activite-pro-infos')
             }
 
-            // Blocs additionnels.
+            // Bloc additionnel: activité libérale
             if (this.profil.activite_pro_liberal) {
                 blockNames.push('conseils-activite-pro-liberal')
             }
+
+            // Bloc additionnel: personne fragile
+            if (this.personne_fragile) {
+                blockNames.push('reponse-activite-pro-personne-fragile')
+                blockNames.push('conseils-activite-pro-personne-fragile')
+            }
+
+            // Bloc additionnel: personne à très haut risque (arrêt de travail)
             if (this.antecedents) {
                 blockNames.push('reponse-activite-pro-antecedents')
                 blockNames.push('conseils-activite-pro-arret')
             }
+
+            // Bloc additionnel: personne fragile dans le foyer
             if (this.profil.foyer_fragile) {
                 blockNames.push('reponse-activite-pro-foyer-fragile')
                 blockNames.push('conseils-activite-pro-foyer-fragile')
             }
+        }
+        return blockNames
+    }
+
+    santeBlockNamesToDisplay() {
+        const blockNames = ['conseils-sante']
+        if (this.sup65 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
+            blockNames.push('reponse-sante-caracteristiques-a-risques')
+        }
+        if (this.antecedents) {
+            blockNames.push('reponse-sante-antecedents')
+        }
+        if (this.personne_fragile) {
+            blockNames.push('conseils-sante-personne-fragile')
         }
         return blockNames
     }
