@@ -8,13 +8,15 @@ export function bindCalendar(element, profil) {
     const urlSuivi = 'https://mesconseilscovid.sante.gouv.fr/#suiviintroduction'
 
     // Définition de l'évènement de début des symptômes (pas de récurrence).
-    ics.addEvent(
-        'Début symptômes Covid-19',
-        `Vous pouvez faire votre suivi quotidien sur ${urlSuivi}`,
-        profil.symptomes_start_date,
-        duration,
-        undefined
-    )
+    if (profil.hasSymptomesStartDate()) {
+        ics.addEvent(
+            'Début symptômes Covid-19',
+            `Vous pouvez faire votre suivi quotidien sur ${urlSuivi}`,
+            profil.symptomes_start_date,
+            duration,
+            undefined
+        )
+    }
 
     // Définition de l'évènement récurrent à partir du premier suivi.
     const occurences = 15 // entrées dans le calendrier.
