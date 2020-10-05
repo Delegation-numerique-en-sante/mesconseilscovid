@@ -98,7 +98,7 @@ Vos informations personnelles sont seulement stockées sur cet appareil et ne so
 
 ## [meta_médecine_du_travail.md](meta_médecine_du_travail.md)
 
-## Conseils pour la médecine du travail
+## Conseils pour la santé au travail
 
 <div id="conseils-medecine-du-travail-general" class="conseils">
 
@@ -112,7 +112,7 @@ La protection repose sur 4 mesures :
 * Le port du masque est recommandé, à changer toutes les 4 heures au maximum. Les masques doivent être portés sans les toucher. Le masque peut être retiré au poste de travail si la distance d’au moins 1 mètre est respectée. Cependant, lors de la circulation dans les lieux de travail, le port du masque est recommandé.
 
 
-### A qui m’adresser si les mesures barrières peuvent être difficilement respectées sur mon lieu de travail ?
+### À qui m’adresser si les mesures barrières peuvent être difficilement respectées sur mon lieu de travail ?
 
 Le télétravail doit être poursuivi si possible.
 

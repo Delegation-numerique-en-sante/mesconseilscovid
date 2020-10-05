@@ -469,10 +469,10 @@ describe('Algorithme d’orientation', function () {
             ])
         })
 
-        it('Une activité pro + personne fragile affiche des conseils + pro + infos + arrêt', function () {
+        it('Une activité pro + antecedents affiche des conseils + pro + infos + arrêt', function () {
             var profil = new Profil('mes_infos', {
                 activite_pro: true,
-                grossesse_3e_trimestre: true,
+                antecedent_cancer: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
@@ -480,21 +480,24 @@ describe('Algorithme d’orientation', function () {
                 'reponse-activite-pro',
                 'conseils-activite-pro',
                 'conseils-activite-pro-infos',
+                'reponse-activite-pro-antecedents',
                 'conseils-activite-pro-arret',
             ])
         })
 
-        it('Une activité pro avec public affiche des conseils + public + infos', function () {
+        it('Une activité pro + foyer fragile affiche des conseils + pro + infos + foyer fragile', function () {
             var profil = new Profil('mes_infos', {
                 activite_pro: true,
-                activite_pro_public: true,
+                foyer_fragile: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
-                'conseils-activite-pro-public',
+                'conseils-activite-pro',
                 'conseils-activite-pro-infos',
+                'reponse-activite-pro-foyer-fragile',
+                'conseils-activite-pro-foyer-fragile',
             ])
         })
 
@@ -520,41 +523,9 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
-                'conseils-activite-pro-liberal',
                 'conseils-activite-pro',
                 'conseils-activite-pro-infos',
-            ])
-        })
-
-        it('Une activité pro avec public et sante affiche des conseils + public + sante', function () {
-            var profil = new Profil('mes_infos', {
-                activite_pro: true,
-                activite_pro_public: true,
-                activite_pro_sante: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
-                'conseils-activite',
-                'reponse-activite-pro',
-                'conseils-activite-pro-public',
-                'conseils-activite-pro-sante',
-            ])
-        })
-
-        it('Une activité pro avec public et sante et libéral affiche des conseils + public + sante + liberal', function () {
-            var profil = new Profil('mes_infos', {
-                activite_pro: true,
-                activite_pro_public: true,
-                activite_pro_sante: true,
-                activite_pro_liberal: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
-                'conseils-activite',
-                'reponse-activite-pro',
                 'conseils-activite-pro-liberal',
-                'conseils-activite-pro-public',
-                'conseils-activite-pro-sante',
             ])
         })
     })

@@ -221,6 +221,7 @@ Si la case fragile est cochée :
 
 * [conseils_foyer_fragile.md](conseils/conseils_foyer_fragile.md)
 * [conseils_maladie_chronique_info.md](conseils/conseils_maladie_chronique_info.md)
+* [conseils_activité_pro_foyer_fragile.md](conseils/conseils_activité_pro_foyer_fragile.md)
 
 
 #### Caractéristiques et antécédents
