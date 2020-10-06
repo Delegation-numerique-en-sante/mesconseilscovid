@@ -25,6 +25,13 @@ export async function waitForPlausibleTrackingEvents(page, names) {
 
 export async function remplirQuestionnaire(page, choix) {
     await remplirDepistage(page, choix.depistage, choix.depistageResultat)
+    if (
+        choix.depistage === true &&
+        (choix.depistageResultat === 'positif' ||
+            choix.depistageResultat === 'en_attente')
+    ) {
+        return
+    }
     await remplirSymptomesActuels(page, choix.symptomesActuels)
     if (choix.symptomesActuels.length === 0) {
         await remplirSymptomesPasses(page, choix.symptomesPasses)
