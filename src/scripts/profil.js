@@ -392,8 +392,7 @@ export default class Profil {
                 (this.depistage_resultat === 'positif' ||
                     this.depistage_resultat === 'en_attente')) ||
                 (this.depistage === false && this.hasSymptomesActuelsReconnus()) ||
-                (this.depistage === false && this.symptomes_passes) ||
-                (this.depistage === false && this.hasContactARisqueReconnus()))
+                (this.depistage === false && this.symptomes_passes))
         )
     }
 
