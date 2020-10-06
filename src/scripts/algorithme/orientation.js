@@ -291,6 +291,17 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
+    grossesseBlockNamesToDisplay() {
+        const blockNames = []
+        if (this.symptomes) {
+            return []
+        }
+        if (this.profil.grossesse_3e_trimestre) {
+            blockNames.push('conseils-grossesse')
+        }
+        return blockNames
+    }
+
     santeBlockNamesToDisplay() {
         const blockNames = ['conseils-sante']
         if (this.sup65 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
