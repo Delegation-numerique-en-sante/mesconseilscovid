@@ -92,11 +92,10 @@ Conseils :
     * ou [conseils_symptômes_actuels_gravité2.md](conseils/conseils_symptômes_actuels_gravité2.md) si (température et toux, personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure)) OU (avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie)) et personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure))
     * ou [conseils_symptômes_actuels_gravité1.md](conseils/conseils_symptômes_actuels_gravité1.md) par défaut
 2. [conseils_symptômes_actuels_autosuivi.md](conseils/conseils_symptômes_actuels_autosuivi.md), [bouton](conseils/conseils_symptômes_actuels_autosuivi_bouton.md)
-3. [conseils_isolement.md](conseils/conseils_isolement.md)
-4. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
-5. [conseils_symptômes_maux_de_tête.md](conseils/conseils_symptômes_maux_de_tête.md)
-6. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
-7. [Conseils d’ordre général](#conseils-dordre-général)
+3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
+4. [conseils_symptômes_maux_de_tête.md](conseils/conseils_symptômes_maux_de_tête.md)
+5. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
+6. [Conseils d’ordre général](#conseils-dordre-général)
 
 Cas particulier : si [Symptôme actuel autre](#symptôme-actuel-autre), aucun de ces conseils n’est affiché.
 
@@ -279,6 +278,11 @@ Conseils :
 * [conseils_grossesse.md](conseils/conseils_grossesse.md) si grossesse 3e trimestre
 
 * [conseils_activité_pro_personne_fragile.md](conseils/conseils_activité_pro_personne_fragile.md)
+
+
+#### L’isolement
+
+1. [conseils_isolement_symptômes.md](conseils/conseils_isolement_symptômes.md)
 
 
 #### Les tests de dépistage
