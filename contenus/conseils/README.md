@@ -180,8 +180,7 @@ Vous résidez dans un département où le virus est **particulièrement présent
 
 ## [conseils_département_défaut.md](conseils_département_défaut.md)
 
-Pour connaître les règles spécifiques de votre département, consultez le <a href="#conseils-departement" id="lien-prefecture">site de votre préfecture</a>.
-
+Retrouvez les règles spécifiques de votre département sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
 
 
 ## [conseils_enfants.md](conseils_enfants.md)
@@ -310,10 +309,6 @@ La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver 
 * La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver votre santé, il vous est recommandé de consulter au moindre signe de maladie.
 
 * Vous pouvez contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
-
-* Continuez, dans la mesure du possible, à limiter vos déplacements et à éviter les transports en commun ou à défaut à éviter les heures de pointe.
-
-* Privilégiez les périodes les moins fréquentées pour faire vos courses.
 
 </div>
 
@@ -444,5 +439,21 @@ De façon générale il est conseillé une levée de l’isolement 7 jours aprè
 ## [conseils_symptômes_passés_sans_risques_info.md](conseils_symptômes_passés_sans_risques_info.md)
 
 De façon générale il est conseillé une levée de l’isolement 7 jours après le début des symptômes et après 48 heures sans fièvre ni gêne respiratoire.
+
+
+
+## [conseils_vie_quotidienne.md](conseils_vie_quotidienne.md)
+
+<div class="conseil">
+
+* Continuez, dans la mesure du possible, à **limiter vos déplacements** et à éviter les transports en commun ou, à défaut, à **éviter les heures de pointe**.
+
+* Privilégiez les périodes les moins fréquentées pour faire vos courses.
+
+</div>
+
+Retrouvez les réponses à vos questions sur :
+* [l’alimentation, les courses et le nettoyage](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses)
+* [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »)
 
 
