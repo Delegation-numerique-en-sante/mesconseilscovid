@@ -1,5 +1,14 @@
 import { assert } from 'chai'
-import { remplirQuestionnaire, waitForPlausibleTrackingEvent } from './helpers.js'
+import {
+    remplirQuestionnaire,
+    remplirDepartement,
+    remplirFoyer,
+    remplirAntecedents,
+    remplirCaracteristiques,
+    remplirActivite,
+    remplirSuivi,
+    waitForPlausibleTrackingEvent,
+} from './helpers.js'
 
 describe('Parcours', function () {
     it('titre de la page', async function () {
@@ -230,6 +239,295 @@ describe('Parcours', function () {
                     (e) => e.parentElement.parentElement.querySelector('h3').innerText
                 ),
                 'Moi'
+            )
+        }
+    })
+
+    it('remplir le questionnaire avec dépistage positif', async function () {
+        const page = this.test.page
+
+        // On est redirigé vers l’introduction
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/#introduction' }),
+        ])
+
+        // Page d’accueil
+        {
+            let bouton = await page.waitForSelector('text="Démarrer"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Pour moi'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#depistage' }),
+            ])
+        }
+
+        // Remplir le questionnaire
+        await remplirQuestionnaire(page, {
+            depistage: true,
+            depistageResultat: 'positif',
+        })
+
+        // On est redirigé vers la date de suivi (parcours suivi)
+        {
+            let label = await page.waitForSelector(
+                '#page label[for="suivi_date_aujourdhui"]'
+            )
+            await label.click()
+
+            let bouton = await page.waitForSelector('#page >> text="Continuer"')
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#suivisymptomes' }),
+            ])
+        }
+
+        // La page du suivi des symptômes
+        {
+            await remplirSuivi(page, {
+                essoufflement: 'mieux',
+                etat_general: 'mieux',
+                alimentation_hydratation: 'non',
+                etat_psychologique: 'mieux',
+                fievre: 'non',
+                diarrhee_vomissements: 'non',
+                toux: 'non',
+            })
+
+            let bouton = await page.waitForSelector('#page >> text="Continuer"')
+            await Promise.all([
+                bouton.click(),
+                waitForPlausibleTrackingEvent(page, 'pageview:residence'),
+            ])
+        }
+
+        // Remplir la suite du questionnaire
+        {
+            const choix = {
+                departement: '00',
+                activitePro: true,
+                enfants: true,
+                age: '42',
+                taille: '165',
+                poids: '70',
+                grossesse: false,
+            }
+            await remplirDepartement(page, choix.departement)
+            await remplirFoyer(page, choix.enfants)
+            await remplirAntecedents(page)
+            await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
+            await remplirActivite(page, choix.activitePro)
+        }
+
+        // La page de Conseils doit contenir :
+        {
+            // la phrase de gravité 0
+            let gravite = await page.waitForSelector('#page #suivi-gravite-0')
+            assert.equal(
+                (await gravite.innerText()).trim(),
+                'Poursuivez votre auto-suivi à la maison.'
+            )
+        }
+    })
+
+    it('remplir le questionnaire avec dépistage en attente', async function () {
+        const page = this.test.page
+
+        // On est redirigé vers l’introduction
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/#introduction' }),
+        ])
+
+        // Page d’accueil
+        {
+            let bouton = await page.waitForSelector('text="Démarrer"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Pour moi'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#depistage' }),
+            ])
+        }
+
+        // Remplir le questionnaire
+        await remplirQuestionnaire(page, {
+            depistage: true,
+            depistageResultat: 'en_attente',
+        })
+
+        // On est redirigé vers la date de suivi (parcours suivi)
+        {
+            let label = await page.waitForSelector(
+                '#page label[for="suivi_date_aujourdhui"]'
+            )
+            await label.click()
+
+            let bouton = await page.waitForSelector('#page >> text="Continuer"')
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#suivisymptomes' }),
+            ])
+        }
+
+        // La page du suivi des symptômes
+        {
+            await remplirSuivi(page, {
+                essoufflement: 'mieux',
+                etat_general: 'mieux',
+                alimentation_hydratation: 'non',
+                etat_psychologique: 'mieux',
+                fievre: 'non',
+                diarrhee_vomissements: 'non',
+                toux: 'non',
+            })
+
+            let bouton = await page.waitForSelector('#page >> text="Continuer"')
+            await Promise.all([
+                bouton.click(),
+                waitForPlausibleTrackingEvent(page, 'pageview:residence'),
+            ])
+        }
+
+        // Remplir la suite du questionnaire
+        {
+            const choix = {
+                departement: '00',
+                activitePro: true,
+                enfants: true,
+                age: '42',
+                taille: '165',
+                poids: '70',
+                grossesse: false,
+            }
+            await remplirDepartement(page, choix.departement)
+            await remplirFoyer(page, choix.enfants)
+            await remplirAntecedents(page)
+            await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
+            await remplirActivite(page, choix.activitePro)
+        }
+
+        // La page de Conseils doit contenir :
+        {
+            // la phrase de gravité 0
+            let gravite = await page.waitForSelector('#page #suivi-gravite-0')
+            assert.equal(
+                (await gravite.innerText()).trim(),
+                'Poursuivez votre auto-suivi à la maison.'
+            )
+        }
+    })
+
+    it('remplir le questionnaire avec dépistage négatif et sans symptômes', async function () {
+        const page = this.test.page
+
+        // On est redirigé vers l’introduction
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/#introduction' }),
+        ])
+
+        // Page d’accueil
+        {
+            let bouton = await page.waitForSelector('text="Démarrer"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Pour moi'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#depistage' }),
+            ])
+        }
+
+        // Remplir le questionnaire
+        await remplirQuestionnaire(page, {
+            depistage: true,
+            depistageResultat: 'negatif',
+            symptomesActuels: [],
+            symptomesPasses: false,
+            contactARisque: [],
+            departement: '80',
+            activitePro: true,
+            enfants: true,
+            age: '42',
+            taille: '165',
+            poids: '70',
+            grossesse: false,
+        })
+
+        // On termine le parcours orientation
+        {
+            await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
+
+            // On retrouve le statut attendu
+            let statut = await page.waitForSelector('#page #conseils-statut')
+            assert.include(
+                (await statut.innerText()).trim(),
+                'Vous ne présentez pas de risque particulier face à la Covid'
+            )
+        }
+    })
+
+    it('remplir le questionnaire sans dépistage et sans symptômes', async function () {
+        const page = this.test.page
+
+        // On est redirigé vers l’introduction
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/#introduction' }),
+        ])
+
+        // Page d’accueil
+        {
+            let bouton = await page.waitForSelector('text="Démarrer"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Pour moi'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#depistage' }),
+            ])
+        }
+
+        // Remplir le questionnaire
+        await remplirQuestionnaire(page, {
+            depistage: false,
+            symptomesActuels: [],
+            symptomesPasses: false,
+            contactARisque: [],
+            departement: '80',
+            activitePro: true,
+            enfants: true,
+            age: '42',
+            taille: '165',
+            poids: '70',
+            grossesse: false,
+        })
+
+        // On termine le parcours orientation
+        {
+            await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
+
+            // On retrouve le statut attendu
+            let statut = await page.waitForSelector('#page #conseils-statut')
+            assert.include(
+                (await statut.innerText()).trim(),
+                'Vous ne présentez pas de risque particulier face à la Covid'
             )
         }
     })
