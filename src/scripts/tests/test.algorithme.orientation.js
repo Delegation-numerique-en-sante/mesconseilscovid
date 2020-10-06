@@ -427,6 +427,26 @@ describe('Algorithme d’orientation', function () {
         })
     })
 
+    describe('Les tests de dépistage', function () {
+        it('Cas général', function () {
+            var profil = new Profil('mes_infos', {})
+            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [
+                'conseils-tests',
+            ])
+        })
+        it('En attente de résultat', function () {
+            var profil = new Profil('mes_infos', {
+                depistage_resultat: 'en_attente',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [
+                'conseils-tests',
+                'conseils-tests-resultats',
+            ])
+        })
+    })
+
     describe('Activité pro', function () {
         it('Aucune activité pro n’affiche rien', function () {
             var profil = new Profil('mes_infos', {})
