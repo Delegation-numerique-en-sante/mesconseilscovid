@@ -711,7 +711,6 @@
                         </div>
                     </div>
                 </div>
-                {{ conseils_isolement }}
                 {{ conseils_cartographie_dépistage }}
                 {{ conseils_symptômes_maux_de_tête }}
                 {{ conseils_symptômes_défaut }}
@@ -731,7 +730,6 @@
                     {{ conseils_symptômes_passés_avec_risques_info }}
                 </div>
                 <div id="conseils-symptomes-passes-default">
-                    {{ conseils_isolement }}
                     {{ conseils_cartographie_dépistage }}
                     {{ conseils_symptômes_défaut }}
                 </div>
@@ -745,6 +743,21 @@
                     {{ conseils_contact_à_risque_autre }}
                 </div>
                 {{ conseils_cartographie_dépistage }}
+            </div>
+
+            <div id="conseils-isolement" class="conseils" hidden>
+                <details>
+                    <summary>
+                        <header>
+                            <h3>
+                                L’isolement
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                            </h3>
+                        </header>
+                    </summary>
+                    <div id="conseils-isolement-symptomes">
+                    {{ conseils_isolement_symptômes }}
+                </details>
             </div>
 
             <div id="conseils-tests" class="conseils" hidden>
