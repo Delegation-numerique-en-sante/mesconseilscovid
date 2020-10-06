@@ -228,7 +228,7 @@ describe('Injection', function () {
         it('température', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
-            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            element.innerHTML = '<b class="nom-symptomesactuels"></b>'
             var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_temperature: true,
@@ -236,20 +236,20 @@ describe('Injection', function () {
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
-                element.querySelector('#nom-symptomesactuels'),
+                element.querySelector('.nom-symptomesactuels'),
                 algoOrientation
             )
 
             assert.strictEqual(
                 element.innerHTML,
-                '<b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas).</b>'
+                '<b class="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas).</b>'
             )
         })
 
         it('température inconnue', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
-            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            element.innerHTML = '<b class="nom-symptomesactuels"></b>'
             var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_temperature_inconnue: true,
@@ -257,20 +257,20 @@ describe('Injection', function () {
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
-                element.querySelector('#nom-symptomesactuels'),
+                element.querySelector('.nom-symptomesactuels'),
                 algoOrientation
             )
 
             assert.strictEqual(
                 element.innerHTML,
-                '<b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas).</b>'
+                '<b class="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas).</b>'
             )
         })
 
         it('toux', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
-            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            element.innerHTML = '<b class="nom-symptomesactuels"></b>'
             var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_toux: true,
@@ -278,20 +278,20 @@ describe('Injection', function () {
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
-                element.querySelector('#nom-symptomesactuels'),
+                element.querySelector('.nom-symptomesactuels'),
                 algoOrientation
             )
 
             assert.strictEqual(
                 element.innerHTML,
-                '<b id="nom-symptomesactuels">vous avez de la toux.</b>'
+                '<b class="nom-symptomesactuels">vous avez de la toux.</b>'
             )
         })
 
         it('température + toux', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
-            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            element.innerHTML = '<b class="nom-symptomesactuels"></b>'
             var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_temperature: true,
@@ -300,20 +300,20 @@ describe('Injection', function () {
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
-                element.querySelector('#nom-symptomesactuels'),
+                element.querySelector('.nom-symptomesactuels'),
                 algoOrientation
             )
 
             assert.strictEqual(
                 element.innerHTML,
-                '<b id="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas)&nbsp;; vous avez de la toux.</b>'
+                '<b class="nom-symptomesactuels">vous avez de la température (ou vous ne savez pas)&nbsp;; vous avez de la toux.</b>'
             )
         })
 
         it('odorat', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
-            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            element.innerHTML = '<b class="nom-symptomesactuels"></b>'
             var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_odorat: true,
@@ -321,20 +321,20 @@ describe('Injection', function () {
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
-                element.querySelector('#nom-symptomesactuels'),
+                element.querySelector('.nom-symptomesactuels'),
                 algoOrientation
             )
 
             assert.strictEqual(
                 element.innerHTML,
-                '<b id="nom-symptomesactuels">vous avez perdu l’odorat.</b>'
+                '<b class="nom-symptomesactuels">vous avez perdu l’odorat.</b>'
             )
         })
 
         it('douleurs', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
-            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            element.innerHTML = '<b class="nom-symptomesactuels"></b>'
             var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_douleurs: true,
@@ -342,20 +342,20 @@ describe('Injection', function () {
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
-                element.querySelector('#nom-symptomesactuels'),
+                element.querySelector('.nom-symptomesactuels'),
                 algoOrientation
             )
 
             assert.strictEqual(
                 element.innerHTML,
-                '<b id="nom-symptomesactuels">vous avez des douleurs.</b>'
+                '<b class="nom-symptomesactuels">vous avez des douleurs.</b>'
             )
         })
 
         it('diarrhée', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
-            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            element.innerHTML = '<b class="nom-symptomesactuels"></b>'
             var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_diarrhee: true,
@@ -363,20 +363,20 @@ describe('Injection', function () {
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
-                element.querySelector('#nom-symptomesactuels'),
+                element.querySelector('.nom-symptomesactuels'),
                 algoOrientation
             )
 
             assert.strictEqual(
                 element.innerHTML,
-                '<b id="nom-symptomesactuels">vous avez de la diarrhée.</b>'
+                '<b class="nom-symptomesactuels">vous avez de la diarrhée.</b>'
             )
         })
 
         it('fatigue', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
-            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            element.innerHTML = '<b class="nom-symptomesactuels"></b>'
             var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_fatigue: true,
@@ -384,20 +384,20 @@ describe('Injection', function () {
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
-                element.querySelector('#nom-symptomesactuels'),
+                element.querySelector('.nom-symptomesactuels'),
                 algoOrientation
             )
 
             assert.strictEqual(
                 element.innerHTML,
-                '<b id="nom-symptomesactuels">vous êtes fatigué·e.</b>'
+                '<b class="nom-symptomesactuels">vous êtes fatigué·e.</b>'
             )
         })
 
         it('alimentation', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
-            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            element.innerHTML = '<b class="nom-symptomesactuels"></b>'
             var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_alimentation: true,
@@ -405,20 +405,20 @@ describe('Injection', function () {
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
-                element.querySelector('#nom-symptomesactuels'),
+                element.querySelector('.nom-symptomesactuels'),
                 algoOrientation
             )
 
             assert.strictEqual(
                 element.innerHTML,
-                '<b id="nom-symptomesactuels">vous avez arrêté de boire ou de manger.</b>'
+                '<b class="nom-symptomesactuels">vous avez arrêté de boire ou de manger.</b>'
             )
         })
 
         it('souffle', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
             var element = dom.window.document.querySelector('div')
-            element.innerHTML = '<b id="nom-symptomesactuels"></b>'
+            element.innerHTML = '<b class="nom-symptomesactuels"></b>'
             var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_souffle: true,
@@ -426,13 +426,13 @@ describe('Injection', function () {
 
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             injection.symptomesactuels(
-                element.querySelector('#nom-symptomesactuels'),
+                element.querySelector('.nom-symptomesactuels'),
                 algoOrientation
             )
 
             assert.strictEqual(
                 element.innerHTML,
-                '<b id="nom-symptomesactuels">vous êtes essouflé·e.</b>'
+                '<b class="nom-symptomesactuels">vous êtes essouflé·e.</b>'
             )
         })
     })
