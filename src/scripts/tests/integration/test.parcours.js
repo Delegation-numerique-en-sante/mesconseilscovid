@@ -56,7 +56,7 @@ describe('Parcours', function () {
         // Conseils
         {
             // On rend la localisation visible
-            await page.click('#page #conseils-departement h3')
+            await page.click('#page #conseils-vie-quotidienne h3')
 
             // On retrouve le département de résidence
             let residence = await page.waitForSelector('#page #nom-departement')

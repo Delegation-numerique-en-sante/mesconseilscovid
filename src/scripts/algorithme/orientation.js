@@ -220,12 +220,12 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
-    departementBlockNamesToDisplay() {
+    vieQuotidienneBlockNamesToDisplay() {
         const blockNames = []
         if (this.profil.symptomes_actuels || typeof this.incidence === 'undefined') {
             return []
         }
-        blockNames.push('conseils-departement')
+        blockNames.push('conseils-vie-quotidienne')
         if (this.incidence >= 10) {
             blockNames.push('conseils-departement-circulation-elevee')
         } else {

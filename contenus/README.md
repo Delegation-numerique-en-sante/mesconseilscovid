@@ -292,6 +292,11 @@ Si case antécédents chroniques autres cochée :
 * [conseils_maladie_chronique_info.md](conseils/conseils_maladie_chronique_info.md)
 
 
+#### Vie quotidienne
+
+1. [conseils_vie_quotidienne.md](conseils/conseils_vie_quotidienne.md)
+
+
 #### Conseils d’ordre général
 
 1. [conseils_généraux_info.md](conseils/conseils_généraux_info.md)

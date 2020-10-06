@@ -239,7 +239,7 @@ main footer .legals {
     background-size: 40%;
 }
 
-#conseils-departement header,
+#conseils-vie-quotidienne header,
 #conseils-activite header,
 #conseils-foyer header,
 #conseils-gestes-barrieres-masque header,
@@ -279,7 +279,7 @@ main footer .legals {
         background-size: 30%;
     }
 
-    #conseils-departement header,
+    #conseils-vie-quotidienne header,
     #conseils-activite header,
     #conseils-foyer header,
     #conseils-gestes-barrieres-masque header,
@@ -307,7 +307,7 @@ main footer .legals {
     background-image: url('illustrations/nom.svg');
 }
 #residence-form,
-#conseils-departement header {
+#conseils-vie-quotidienne header {
     background-image: url('illustrations/residence.svg');
 }
 #activite-pro-form,
@@ -955,7 +955,7 @@ a#geolocalisation {
 }
 
 @media print {
-    #conseils-departement header,
+    #conseils-vie-quotidienne header,
     #conseils-activite header,
     #conseils-foyer header,
     #conseils-caracteristiques header,

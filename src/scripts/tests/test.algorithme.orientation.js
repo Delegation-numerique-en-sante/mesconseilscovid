@@ -360,14 +360,14 @@ describe('Algorithme d’orientation', function () {
         })
     })
 
-    describe('Département', function () {
+    describe('Vie quotidienne', function () {
         it('Un département à circulation faible', function () {
             var profil = new Profil('mes_infos', {
                 departement: '01',
             })
             var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
-            assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
-                'conseils-departement',
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
                 'conseils-departement-circulation-faible',
             ])
         })
@@ -377,8 +377,8 @@ describe('Algorithme d’orientation', function () {
                 departement: '01',
             })
             var algoOrientation = new AlgorithmeOrientation(profil, { '01': 10.1 })
-            assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
-                'conseils-departement',
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
                 'conseils-departement-circulation-elevee',
             ])
         })
@@ -388,7 +388,7 @@ describe('Algorithme d’orientation', function () {
                 departement: '01',
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [])
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [])
         })
 
         it('Un département + symptômes actuels n’affiche pas la localisation', function () {
@@ -397,7 +397,7 @@ describe('Algorithme d’orientation', function () {
                 symptomes_actuels: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
-            assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [])
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [])
         })
 
         it('Un département + symptômes passés affiche la localisation', function () {
@@ -406,8 +406,8 @@ describe('Algorithme d’orientation', function () {
                 symptomes_passes: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
-            assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
-                'conseils-departement',
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
                 'conseils-departement-circulation-faible',
             ])
         })
@@ -418,8 +418,8 @@ describe('Algorithme d’orientation', function () {
                 contact_a_risque: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
-            assert.deepEqual(algoOrientation.departementBlockNamesToDisplay(), [
-                'conseils-departement',
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
                 'conseils-departement-circulation-faible',
             ])
         })
