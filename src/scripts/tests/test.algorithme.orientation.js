@@ -725,6 +725,20 @@ describe('Algorithme d’orientation', function () {
                 'conseils-sante',
                 'reponse-sante-antecedents',
                 'conseils-sante-personne-fragile',
+                'conseils-sante-maladie-chronique',
+            ])
+        })
+
+        it('Risque antécédent chronique autre', function () {
+            var profil = new Profil('mes_infos', {
+                antecedent_chronique_autre: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
+                'conseils-sante',
+                'reponse-sante-antecedents',
+                'conseils-sante-general',
+                'conseils-sante-maladie-chronique',
             ])
         })
     })
