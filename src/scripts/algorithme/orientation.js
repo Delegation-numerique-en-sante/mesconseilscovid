@@ -296,13 +296,16 @@ export default class AlgorithmeOrientation {
         if (this.sup65 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
             blockNames.push('reponse-sante-caracteristiques-a-risques')
         }
-        if (this.antecedents) {
+        if (this.antecedents || this.profil.antecedent_chronique_autre) {
             blockNames.push('reponse-sante-antecedents')
         }
         if (this.personne_fragile) {
             blockNames.push('conseils-sante-personne-fragile')
         } else {
             blockNames.push('conseils-sante-general')
+        }
+        if (this.antecedents || this.profil.antecedent_chronique_autre) {
+            blockNames.push('conseils-sante-maladie-chronique')
         }
         return blockNames
     }

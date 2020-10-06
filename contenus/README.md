@@ -229,7 +229,8 @@ Si la case fragile est cochée :
 Conseils :
 
 * [conseils_santé](conseils/conseils_santé.md)
-* [conseils_santé_personne_fragile](conseils/conseils_santé_personne_fragile.md)
+* [conseils_santé_personne_fragile](conseils/conseils_santé_personne_fragile.md) si personne fragile
+* [conseils_santé_maladie_chronique.md](conseils/conseils_santé_maladie_chronique.md) si [antécédents](#antécédents) ou maladie chronique autre.
 
 
 #### Caractéristiques et antécédents

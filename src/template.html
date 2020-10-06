@@ -873,17 +873,22 @@
                             </h3>
                         </header>
                     </summary>
-                    <div id="reponse-sante-caracteristiques-a-risques" class="reponse" hidden>
-                        {{ réponse_caractéristiques_à_risques }}
-                    </div>
-                    <div id="reponse-sante-antecedents" class="reponse" hidden>
-                        {{ réponse_antécédents }}
+                    <div class="reponse">
+                        <div id="reponse-sante-caracteristiques-a-risques" hidden>
+                            {{ réponse_caractéristiques_à_risques }}
+                        </div>
+                        <div id="reponse-sante-antecedents" hidden>
+                            {{ réponse_antécédents }}
+                        </div>
                     </div>
                     <div id="conseils-sante-general" class="conseil" hidden>
                         {{ conseils_santé }}
                     </div>
                     <div id="conseils-sante-personne-fragile" hidden>
                         {{ conseils_santé_personne_fragile }}
+                    </div>
+                    <div id="conseils-sante-maladie-chronique" hidden>
+                        {{ conseils_santé_maladie_chronique }}
                     </div>
                 </details>
             </div>
