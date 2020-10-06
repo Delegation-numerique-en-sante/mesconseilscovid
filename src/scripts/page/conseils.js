@@ -143,23 +143,10 @@ export function showRelevantAnswersRecap(element, profil, algoOrientation) {
         injection.lienPrefecture(lienPrefecture, profil.departement)
     }
 
-    // We need to target more specifically given there are two similar ids.
-    var selector
-    if (profil.hasSymptomesActuelsReconnus()) {
-        selector = '#conseils-personnels-symptomes-actuels'
-    } else {
-        selector = '#conseils-caracteristiques'
-    }
-    var subElement = element.querySelector(selector)
-    if (!subElement) {
-        return
-    }
-
     // eslint-disable-next-line no-extra-semi
     ;[].forEach.call(
         element.querySelectorAll('.nom-caracteristiques-a-risques'),
         (elem) => {
-            console.debug(elem)
             injection.caracteristiquesARisques(elem, algoOrientation)
         }
     )
@@ -169,10 +156,10 @@ export function showRelevantAnswersRecap(element, profil, algoOrientation) {
         injection.antecedents(elem, algoOrientation)
     })
 
-    var nomSymptomesActuels = subElement.querySelector('#nom-symptomesactuels')
-    if (nomSymptomesActuels) {
-        injection.symptomesactuels(nomSymptomesActuels, algoOrientation)
-    }
+    // eslint-disable-next-line no-extra-semi
+    ;[].forEach.call(element.querySelectorAll('.nom-symptomesactuels'), (elem) => {
+        injection.symptomesactuels(elem, algoOrientation)
+    })
 }
 
 function statutBlockNamesToDisplay(algoOrientation) {

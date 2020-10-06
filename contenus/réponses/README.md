@@ -47,6 +47,6 @@ Vous êtes enceinte au 3e trimestre de votre grossesse (<a href="#caracteristiqu
 
 ## [réponse_symptômes_actuels_reconnus.md](réponse_symptômes_actuels_reconnus.md)
 
-Vous avez actuellement les symptômes suivants : <b id="nom-symptomesactuels"></b> (<a href="#symptomesactuels">modifier</a>)
+Vous avez actuellement les symptômes suivants : <b class="nom-symptomesactuels"></b> (<a href="#symptomesactuels">modifier</a>)
 
 
