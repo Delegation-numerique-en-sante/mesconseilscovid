@@ -103,27 +103,6 @@ Les résultats du test de dépistage sont normalement disponibles dans les 36 he
 
 
 
-## [infos_vie_quotidienne.md](infos_vie_quotidienne.md)
-
-## Ma vie quotidienne
-
-// Si circulation faible
-
-La circulation du virus est relativement lente dans votre département. Par précaution, maintenez les gestes barrières.
-
-
-
-// Si circulation élevée
-Vous résidez dans un département où le virus est **particulièrement présent**. Faites attention et appliquez strictement les gestes barrières.
-
-
-
-* Les règles spécifiques de votre département sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
-* [L’alimentation, les courses et le nettoyage](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses)
-* [Les déplacements et voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements »)
-
-
-
 ## [statut_contact_sans_symptomes_ni_test.md](statut_contact_sans_symptomes_ni_test.md)
 
 Nous vous conseillons de :
