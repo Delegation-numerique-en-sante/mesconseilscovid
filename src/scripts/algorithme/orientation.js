@@ -327,37 +327,4 @@ export default class AlgorithmeOrientation {
         }
         return blockNames
     }
-
-    caracteristiquesAntecedentsBlockNamesToDisplay() {
-        const blockNames = []
-        if (this.symptomes) {
-            return []
-        }
-        if (this.personne_fragile || this.profil.antecedent_chronique_autre) {
-            blockNames.push('conseils-caracteristiques')
-            // Réponses
-            if (this.antecedents || this.profil.antecedent_chronique_autre) {
-                blockNames.push('reponse-antecedents')
-            }
-            if (this.sup65 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
-                blockNames.push('reponse-caracteristiques-a-risques')
-            }
-            // Conseils
-            if (this.profil.activite_pro) {
-                blockNames.push('conseils-caracteristiques-antecedents-activite-pro')
-            } else {
-                blockNames.push('conseils-caracteristiques-antecedents')
-            }
-            if (this.antecedents || this.profil.antecedent_chronique_autre) {
-                blockNames.push('conseils-caracteristiques-antecedents-info-risque')
-            }
-            if (this.profil.grossesse_3e_trimestre) {
-                blockNames.push('conseils-caracteristiques-antecedents-femme-enceinte')
-            }
-            if (this.profil.antecedent_chronique_autre) {
-                blockNames.push('conseils-antecedents-chroniques-autres')
-            }
-        }
-        return blockNames
-    }
 }
