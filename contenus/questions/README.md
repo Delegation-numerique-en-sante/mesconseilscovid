@@ -444,11 +444,11 @@ Avez-vous remarqué chez votre proche l’apparition d’une forte **somnolence*
 
 ## [question_suivi_symptômes_libellé.md](question_suivi_symptômes_libellé.md)
 
-<!---->J’ai un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>aujourd’hui</b>.
+<!---->J’ai un ou des <b>symptômes</b> qui peuvent évoquer la Covid <b>aujourd’hui</b>.
 
 ---
 
-<!---->Cette personne a un ou des <b>symptômes</b> qui peuvent évoquer le COVID <b>aujourd’hui</b>.
+<!---->Cette personne a un ou des <b>symptômes</b> qui peuvent évoquer la Covid <b>aujourd’hui</b>.
 
 
 
@@ -560,11 +560,11 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 
 ## [question_symptômes_actuels_libellé.md](question_symptômes_actuels_libellé.md)
 
-<!---->J’ai un ou des <b>symptômes</b> (signes infectieux, toux ou gêne respiratoire, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>actuellement</b>.
+<!---->J’ai un ou des <b>symptômes</b> (signes infectieux, toux ou gêne respiratoire, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer la Covid <b>actuellement</b>.
 
 ---
 
-<!---->Cette personne a un ou des <b>symptômes</b> (signes infectieux, toux ou gêne respiratoire, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>actuellement</b>.
+<!---->Cette personne a un ou des <b>symptômes</b> (signes infectieux, toux ou gêne respiratoire, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer la Covid <b>actuellement</b>.
 
 
 
@@ -697,11 +697,11 @@ Des personnes croisées dans l’espace public de manière fugace ne sont pas co
 
 ## [question_symptômes_contact_à_risque_libellé.md](question_symptômes_contact_à_risque_libellé.md)
 
-<!---->J’ai passé du temps avec une personne <b>testée positive au COVID</b> dans les <b>7 derniers jours</b>, sans mesure de protection dédiée (hygiaphone, séparation physique, masque chirurgical, FFP2, ou autre masque porté par moi et par la personne COVID confirmée)<sup>*</sup>
+<!---->J’ai passé du temps avec une personne <b>testée positive à la Covid</b> dans les <b>7 derniers jours</b>, sans mesure de protection dédiée (hygiaphone, séparation physique, masque chirurgical, FFP2, ou autre masque porté par moi et par la personne Covid confirmée)<sup>*</sup>
 
 ---
 
-<!---->Il ou elle a passé du temps avec une personne <b>testée positive au COVID</b> dans les <b>7 derniers jours</b>, sans mesure de protection dédiée (hygiaphone, séparation physique, masque chirurgical, FFP2, ou autre masque porté par lui ou elle et par la personne COVID confirmée)<sup>*</sup>
+<!---->Il ou elle a passé du temps avec une personne <b>testée positive à la Covid</b> dans les <b>7 derniers jours</b>, sans mesure de protection dédiée (hygiaphone, séparation physique, masque chirurgical, FFP2, ou autre masque porté par lui ou elle et par la personne Covid confirmée)<sup>*</sup>
 
 
 
@@ -727,11 +727,11 @@ Des personnes croisées dans l’espace public de manière fugace ne sont pas co
 
 ## [question_symptômes_contact_à_risque_stop_covid_libellé.md](question_symptômes_contact_à_risque_stop_covid_libellé.md)
 
-<!---->J’ai été informé par l’application StopCovid que j’ai été en contact avec une personne testée positive au Covid-19
+<!---->J’ai été informé par l’application StopCovid que j’ai été en contact avec une personne testée positive à la Covid
 
 ---
 
-<!---->Il ou elle a été informé par l’application StopCovid d’avoir été en contact avec une personne testée positive au Covid-19
+<!---->Il ou elle a été informé par l’application StopCovid d’avoir été en contact avec une personne testée positive à la Covid
 
 
 
@@ -747,11 +747,11 @@ Des personnes croisées dans l’espace public de manière fugace ne sont pas co
 
 ## [question_symptômes_passés_libellé.md](question_symptômes_passés_libellé.md)
 
-<!---->J’ai eu des <b>symptômes</b> (signes infectieux, toux ou gêne respiratoire, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>dans les 7 derniers jours</b>.
+<!---->J’ai eu des <b>symptômes</b> (signes infectieux, toux ou gêne respiratoire, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer la Covid <b>dans les 7 derniers jours</b>.
 
 ---
 
-<!---->Cette personne a eu des <b>symptômes</b> (signes infectieux, toux ou gêne respiratoire, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>dans les 7 derniers jours</b>.
+<!---->Cette personne a eu des <b>symptômes</b> (signes infectieux, toux ou gêne respiratoire, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer la Covid <b>dans les 7 derniers jours</b>.
 
 
 

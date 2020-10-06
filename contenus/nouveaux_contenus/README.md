@@ -28,7 +28,7 @@
 
 ## La Covid-19
 
-Pour toutes vos questions sur la Covid-19, vous pouvez:
+Pour toutes vos questions sur la Covid, vous pouvez:
 * aller sur [Covid19-faq](https://www.covid19-faq.fr/)
 * appeler le [0 800 130 000](tel:+33800130000)
 
@@ -50,7 +50,7 @@ Pour plus d’informations sur l’isolement : [« J’ai les signes de la mal
 
 ## Ma santé
 
-* La Covid-19 n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de consulter au moindre signe de maladie.
+* La Covid n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de consulter au moindre signe de maladie.
 
 // Si antécédents
 * Il vous est conseillé de **poursuivre votre suivi médical habituel** et **votre traitement** si vous en avez un.
@@ -91,7 +91,7 @@ Depuis le 11 septembre 2020, une stratégie de priorisation des tests de dépist
 Les résultats du test de dépistage sont normalement disponibles dans les 36 heures après la réalisation du test. Ils vous seront transmis :
 
 * par le laboratoire (par téléphone, ou sur internet) ;
-* et/ou par SI-DEP (un système d’information national de suivi du dépistage Covid-19 mis en place depuis mai 2020).
+* et/ou par SI-DEP (un système d’information national de suivi du dépistage Covid mis en place depuis mai 2020).
 
 **En cas de difficultés à obtenir vos résultats, contactez le laboratoire de test**
 

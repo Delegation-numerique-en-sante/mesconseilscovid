@@ -1,4 +1,4 @@
-* Les mesures de **distanciation physique renforcée** pour prendre soin des personnes fragiles face à la Covid-19 :
+* Les mesures de **distanciation physique renforcée** pour prendre soin des personnes fragiles face à la Covid :
 
   * Appliquez strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/affiche_-_gestes_barrieres.pdf)
   * Garder une distance de **plus d’1 mètre** avec chaque personne
