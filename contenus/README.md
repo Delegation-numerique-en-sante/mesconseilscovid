@@ -294,8 +294,7 @@ Si case antécédents chroniques autres cochée :
 
 #### Conseils d’ordre général
 
-1. [conseils_généraux.md](conseils/conseils_généraux.md)
-2. [conseils_généraux_info.md](conseils/conseils_généraux_info.md)
+1. [conseils_généraux_info.md](conseils/conseils_généraux_info.md)
 
 
 #### Activité
