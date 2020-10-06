@@ -46,29 +46,32 @@ export const TRANSITIONS = {
     depistage: {
         previous: () => 'introduction',
         next: {
-            conseils: (profil) =>
-                profil.isDepistageComplete() &&
-                (profil.depistage_resultat === 'en_attente' ||
-                    profil.depistage_resultat === 'positif'),
+            suividate: (profil) =>
+                profil.requiertSuivi() && !profil.hasSuiviStartDate(),
+            suivisymptomes: (profil) =>
+                profil.requiertSuivi() && profil.hasSuiviStartDate(),
             symptomesactuels: (profil) => profil.isDepistageComplete(),
         },
     },
     suividate: {
         previous: () => 'suiviintroduction',
         next: {
-            suivisymptomes: (profil) => profil.suivi_start_date,
+            suivisymptomes: (profil) => profil.hasSuiviStartDate(),
         },
     },
     suivisymptomes: {
         previous: () => 'suiviintroduction',
         next: {
-            conseils: () => true,
+            conseils: (profil) => profil.isComplete(),
+            residence: (profil) => profil.isContactARisqueComplete(),
         },
     },
     symptomesactuels: {
         previous: () => 'depistage',
         next: {
-            conseils: (profil) =>
+            suividate: (profil) =>
+                profil.isSymptomesActuelsComplete() && profil.requiertSuivi(),
+            residence: (profil) =>
                 profil.isSymptomesActuelsComplete() &&
                 profil.hasSymptomesActuelsReconnus(),
             symptomespasses: (profil) => profil.isSymptomesActuelsComplete(),
@@ -77,7 +80,9 @@ export const TRANSITIONS = {
     symptomespasses: {
         previous: () => 'symptomesactuels',
         next: {
-            conseils: (profil) =>
+            suividate: (profil) =>
+                profil.isSymptomesPassesComplete() && profil.requiertSuivi(),
+            residence: (profil) =>
                 profil.isSymptomesPassesComplete() && profil.symptomes_passes,
             contactarisque: (profil) => profil.isSymptomesPassesComplete(),
         },
@@ -85,8 +90,8 @@ export const TRANSITIONS = {
     contactarisque: {
         previous: () => 'symptomespasses',
         next: {
-            conseils: (profil) =>
-                profil.isContactARisqueComplete() && profil.hasContactARisqueReconnus(),
+            suividate: (profil) =>
+                profil.isContactARisqueComplete() && profil.requiertSuivi(),
             residence: (profil) => profil.isContactARisqueComplete(),
         },
     },

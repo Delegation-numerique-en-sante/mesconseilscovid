@@ -47,13 +47,13 @@ export async function remplirQuestionnaire(page, choix) {
     await remplirActivite(page, choix.activitePro)
 }
 
-async function remplirDepartement(page, departement) {
+export async function remplirDepartement(page, departement) {
     await page.selectOption('#page select#departement', departement)
     let bouton = await page.waitForSelector('#page >> text="Continuer"')
     await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#foyer' })])
 }
 
-async function remplirFoyer(page, enfants) {
+export async function remplirFoyer(page, enfants) {
     if (enfants === true) {
         // Je n’arrive pas à cocher la case directement, alors je clique sur le label
         let label
@@ -70,7 +70,7 @@ async function remplirFoyer(page, enfants) {
     ])
 }
 
-async function remplirAntecedents(page) {
+export async function remplirAntecedents(page) {
     // TODO: cocher les cases
     let bouton = await page.waitForSelector(
         '#page >> text=/Aucun de ces éléments ne correspond à .* situation/'
@@ -81,7 +81,7 @@ async function remplirAntecedents(page) {
     ])
 }
 
-async function remplirCaracteristiques(page, age, taille, poids) {
+export async function remplirCaracteristiques(page, age, taille, poids) {
     await page.fill('#page #age', age)
     await page.fill('#page #taille', taille)
     await page.fill('#page #poids', poids)
@@ -94,7 +94,7 @@ async function remplirCaracteristiques(page, age, taille, poids) {
     ])
 }
 
-async function remplirActivite(page, activitePro) {
+export async function remplirActivite(page, activitePro) {
     let label = await page.waitForSelector('#page label[for="activite_pro"]')
     let text
 

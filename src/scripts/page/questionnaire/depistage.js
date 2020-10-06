@@ -46,14 +46,22 @@ export default function depistage(form, app) {
         app.profil.depistage_resultat =
             event.target.elements['depistage_resultat'].value || undefined
 
+        // On complète manuellement le formulaire pour le rendre complet.
+        if (app.profil.requiertSuivi()) {
+            app.profil.symptomes_actuels = false // Temporaire.
+            app.profil.symptomes_passes = false
+            app.profil.contact_a_risque = false
+            app.profil.contact_a_risque_meme_lieu_de_vie = undefined
+            app.profil.contact_a_risque_contact_direct = undefined
+            app.profil.contact_a_risque_actes = undefined
+            app.profil.contact_a_risque_espace_confine = undefined
+            app.profil.contact_a_risque_meme_classe = undefined
+            app.profil.contact_a_risque_stop_covid = undefined
+            app.profil.contact_a_risque_autre = undefined
+        }
+
         app.enregistrerProfilActuel().then(() => {
-            // app.goToNextPage('depistage')
-            // On redirige manuellement vers le suivi pour conserver une `nextPage`
-            // conseils qui va permettre de considérer la page comme étant accessible.
-            let nextPage = app.questionnaire.nextPage('depistage', app.profil)
-            if (nextPage === 'conseils')
-                nextPage = app.profil.suivi_start_date ? 'suivisymptomes' : 'suividate'
-            app.router.navigate(nextPage)
+            app.goToNextPage('depistage')
         })
     })
 }

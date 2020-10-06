@@ -1,12 +1,6 @@
 import { joursAvant } from '../utils.js'
 
 export default function suividate(form, app) {
-    // Enregistre le démarrage du suivi
-    if (!app.profil.hasSuiviStartDate()) {
-        app.profil.suivi_start_date = new Date()
-        app.enregistrerProfilActuel()
-    }
-
     // eslint-disable-next-line no-extra-semi
     ;[].forEach.call(
         form.querySelectorAll('[name="suivi_symptomes_date"]'),
@@ -27,6 +21,12 @@ export default function suividate(form, app) {
         app.profil.symptomes_start_date =
             dateFromPicker(event.target.elements['suivi_symptomes_date_exacte']) ||
             dateFromRadioButton(event.target.elements['suivi_symptomes_date'])
+
+        // Enregistre le démarrage du suivi
+        if (!app.profil.hasSuiviStartDate()) {
+            app.profil.suivi_start_date = new Date()
+        }
+
         app.enregistrerProfilActuel().then(() => {
             app.goToNextPage('suividate')
         })
