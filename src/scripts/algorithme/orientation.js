@@ -203,6 +203,14 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
+    isolementBlockNamesToDisplay() {
+        const blockNames = []
+        if (this.profil.hasSymptomesActuelsReconnus()) {
+            blockNames.push('conseils-isolement-symptomes')
+        }
+        return blockNames
+    }
+
     depistageBlockNamesToDisplay() {
         const blockNames = ['conseils-tests']
         if (this.profil.depistage_resultat === 'en_attente') {

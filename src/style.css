@@ -243,6 +243,7 @@ main footer .legals {
 #conseils-activite header,
 #conseils-foyer header,
 #conseils-tests header,
+#conseils-isolement header,
 #conseils-contact-a-risque header,
 #conseils-gestes-barrieres-masque header,
 #conseils-sante header,
@@ -284,6 +285,7 @@ main footer .legals {
     #conseils-activite header,
     #conseils-foyer header,
     #conseils-tests header,
+    #conseils-isolement header,
     #conseils-contact-a-risque header,
     #conseils-gestes-barrieres-masque header,
     #conseils-sante header,
@@ -322,6 +324,9 @@ main footer .legals {
 }
 #conseils-tests header {
     background-image: url('illustrations/depistage.svg');
+}
+#conseils-isolement header {
+    background-image: url('illustrations/isolement.svg');
 }
 #conseils-contact-a-risque header {
     background-image: url('illustrations/contactarisque.svg');
