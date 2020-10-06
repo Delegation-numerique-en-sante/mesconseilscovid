@@ -1,6 +1,6 @@
 ## Ma santé
 
-* La Covid-19 n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de consulter au moindre signe de maladie.
+* La Covid n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de consulter au moindre signe de maladie.
 
 // Si antécédents
 * Il vous est conseillé de **poursuivre votre suivi médical habituel** et **votre traitement** si vous en avez un.

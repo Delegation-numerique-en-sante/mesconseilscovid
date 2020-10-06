@@ -118,7 +118,7 @@ Le télétravail doit être poursuivi si possible.
 
 Si le télétravail n’est pas possible :
 
-* Si vous êtes salarié, vous pouvez être placé en activité partielle. Vous pouvez vous adresser à votre médecin traitant ou au spécialiste qui vous suit pour la pathologie à risque de forme grave de Covid-19 pour obtenir un certificat d’isolement ou à votre médecin du travail qui peut établir une déclaration d’interruption de travail.
+* Si vous êtes salarié, vous pouvez être placé en activité partielle. Vous pouvez vous adresser à votre médecin traitant ou au spécialiste qui vous suit pour la pathologie à risque de forme grave de Covid pour obtenir un certificat d’isolement ou à votre médecin du travail qui peut établir une déclaration d’interruption de travail.
 * Si vous n’êtes pas salarié, votre médecin traitant peut rédiger un arrêt de travail.
 
 
@@ -135,7 +135,7 @@ Vous pouvez également demander un aménagement des horaires de travail.
 
 ### Puis-je utiliser les transports en commun pour aller au travail ?
 
-Les personnes à risque de formes graves de Covid-19 peuvent utiliser les transports en commun. Il est recommandé de porter un masque à usage médical pendant tout le trajet et de respecter au mieux les distances de sécurité.
+Les personnes à risque de formes graves de Covid peuvent utiliser les transports en commun. Il est recommandé de porter un masque à usage médical pendant tout le trajet et de respecter au mieux les distances de sécurité.
 
 Il sera important de se désinfecter les mains à l’entrée et à la sortie des transports.
 </div>
@@ -367,7 +367,7 @@ Seuls quelques enfants suivis pour des pathologies rares et graves et en situati
 
 ####  La sérologie Covid-19 fonctionne-t-elle également pour les enfants ?
 
-Oui, comme chez l’adulte la sérologie indique un contact avec le virus. Cependant, la prescription d’une sérologie COVID et son interprétation doivent être faites par un médecin.
+Oui, comme chez l’adulte la sérologie indique un contact avec le virus. Cependant, la prescription d’une sérologie Covid et son interprétation doivent être faites par un médecin.
 
 
 #### Étant donné la situation, dois/puis-je décaler le prochain vaccin de mon enfant ?
@@ -396,7 +396,7 @@ Il doit rester au domicile pendant 7 jours, un contrôle de la PCR n’est pas 
 S’il présente de la fièvre ou s’il a des signes de rhinopharyngite ou des troubles digestifs, une consultation médicale est souhaitable. S’il apparait une gêne respiratoire, la consultation médicale est urgente.
 
 
-#### Mon enfant de plus de 6 ans est malade mais le médecin n’a pas prescrit un test de dépistage du COVID par PCR. Que dois-je faire pour l’école ?
+#### Mon enfant de plus de 6 ans est malade mais le médecin n’a pas prescrit un test de dépistage du Covid par PCR. Que dois-je faire pour l’école ?
 
 L’enfant malade ne doit pas retourner à l’école tant qu’il a des symptômes ; si ceux-ci persistent au-delà du 3<sup>e</sup> jour, recontactez votre médecin car la réalisation d’un test peut alors être nécessaire. S’il est négatif, il peut retourner à l’école dès la fin des symptômes. Un certificat médical n’est pas nécessaire pour retourner à l’école.
 
