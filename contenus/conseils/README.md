@@ -215,33 +215,45 @@ Il est conseillé à votre proche de :
 
 * Les mesures de **distanciation physique renforcée** pour prendre soin des personnes fragiles face à la Covid :
 
-  * Appliquez strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/affiche_-_gestes_barrieres.pdf)
-  * Garder une distance de **plus d’1 mètre** avec chaque personne
-  * Portez le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile
-  * **Réduisez vos sorties** au strict minimum
-  * Contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
+  * appliquer strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/affiche_-_gestes_barrieres.pdf),
+  * garder une distance de **plus d’1 mètre** avec chaque personne,
+  * porter le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile,
+  * **réduire vos sorties** au strict minimum,
+  * contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
 
 * Le port du **masque** :
   * [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
   * [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
   * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
-* [l’aération régulière des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf)
+
+* L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf)
+
 * Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)
 
 
 
 ## [conseils_gestes_barrieres_masque_general.md](conseils_gestes_barrieres_masque_general.md)
 
-* Les mesures de **distanciation physique renforcée** pour prendre soin des personnes fragiles face à la Covid :
+<div class="conseil">
 
-  * Appliquez strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/affiche_-_gestes_barrieres.pdf)
-  * Garder une distance de **plus d’1 mètre** avec chaque personne
+Le **port du masque est obligatoire** dans les **[lieux publics clos](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/port-du-masque-grand-public-obligatoire-en-lieux-clos-faq)** pour toute personne de 11 ans et plus.
+
+Il peut aussi être rendu obligatoire dans certains **lieux publics ouverts** (rues, marchés, abords des écoles…) sur décision du préfet.
+
+</div>
+
+* Les mesures de **distanciation physique** :
+
+  * appliquer strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/affiche_-_gestes_barrieres.pdf),
+  * garder une distance de **plus d’1 mètre** avec chaque personne.
 
 * Le port du **masque** :
   * [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
   * [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
   * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
-* [l’aération régulière des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf)
+
+* L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf)
+
 * Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)
 
 
@@ -253,27 +265,9 @@ Il est conseillé à votre proche de :
 
 
 
-## [conseils_généraux.md](conseils_généraux.md)
-
-**À compter du 20 juillet 2020, toute personne de 11 ans et plus [doit porter un masque grand public dans les lieux publics clos](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/port-du-masque-grand-public-obligatoire-en-lieux-clos-faq).**
-
-De plus, **l’aération régulière** [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf), le respect des **gestes barrières**, et de **distanciation physique** reste indispensable.
-
-
-
 ## [conseils_généraux_info.md](conseils_généraux_info.md)
 
 Pour plus d’informations :
-
-* Le port du **masque** :
-  * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
-  * [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
-  * [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
-
-* Comment **limiter la transmission** du virus ?
-  * [Quelles conduites adopter ?](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)
-  * [Les gestes barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf)
-
 
 * **Les tests** pour la Covid :
   * [« Tests et dépistage »](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
