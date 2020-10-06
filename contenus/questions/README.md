@@ -369,13 +369,23 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
-## [question_suivi_date_libellé.md](question_suivi_date_libellé.md)
+## [question_suivi_date_aide.md](question_suivi_date_aide.md)
 
 <!---->Cette date est importante pour connaître la période d’incubation et de guérison de votre maladie.
 
 ---
 
 <!---->Cette date est importante pour connaître la période d’incubation et de guérison de sa maladie.
+
+
+
+## [question_suivi_date_libellé.md](question_suivi_date_libellé.md)
+
+<!---->J’ai un ou des <b>symptômes</b> qui peuvent évoquer la Covid depuis :
+
+---
+
+<!---->Cette personne a un ou des <b>symptômes</b> qui peuvent évoquer la Covid depuis :
 
 
 

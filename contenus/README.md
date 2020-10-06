@@ -334,7 +334,7 @@ Conseils :
 
 [Titre](questions/question_suivi_date_titre.md)
 
-Question : [libellé](questions/question_suivi_date_libellé.md)
+Question : [libellé](questions/question_suivi_date_libellé.md), [aide](questions/question_suivi_date_aide.md)
 
 
 #### Suivi symptômes

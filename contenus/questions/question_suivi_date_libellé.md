@@ -1,5 +1,5 @@
-<!---->Cette date est importante pour connaître la période d’incubation et de guérison de votre maladie.
+<!---->J’ai un ou des <b>signes</b> qui peuvent évoquer la Covid depuis :
 
 ---
 
-<!---->Cette date est importante pour connaître la période d’incubation et de guérison de sa maladie.
+<!---->Cette personne a un ou des <b>signes</b> qui peuvent évoquer la Covid depuis :
