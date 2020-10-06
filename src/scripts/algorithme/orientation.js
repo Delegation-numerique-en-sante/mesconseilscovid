@@ -203,6 +203,14 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
+    depistageBlockNamesToDisplay() {
+        const blockNames = ['conseils-tests']
+        if (this.profil.depistage_resultat === 'en_attente') {
+            blockNames.push('conseils-tests-resultats')
+        }
+        return blockNames
+    }
+
     gestesBarriereBlockNamesToDisplay() {
         const blockNames = ['conseils-gestes-barrieres-masque']
         if (this.personne_fragile) {

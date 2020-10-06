@@ -292,6 +292,12 @@ Si case antécédents chroniques autres cochée :
 * [conseils_maladie_chronique_info.md](conseils/conseils_maladie_chronique_info.md)
 
 
+#### Les tests de dépistage
+
+1. [conseils_tests.md](conseils/conseils_tests.md)
+2. [conseils_tests_résultats.md](conseils/conseils_tests_résultats.md)
+
+
 #### Vie quotidienne
 
 1. [conseils_vie_quotidienne.md](conseils/conseils_vie_quotidienne.md)
