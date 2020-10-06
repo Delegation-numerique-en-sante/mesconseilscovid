@@ -90,8 +90,6 @@ export const TRANSITIONS = {
     contactarisque: {
         previous: () => 'symptomespasses',
         next: {
-            suividate: (profil) =>
-                profil.isContactARisqueComplete() && profil.requiertSuivi(),
             residence: (profil) => profil.isContactARisqueComplete(),
         },
     },

@@ -401,19 +401,31 @@ describe('Parcours', function () {
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: ['meme_lieu_de_vie'],
+            departement: '00',
+            activitePro: true,
+            enfants: true,
+            age: '42',
+            taille: '165',
+            poids: '70',
+            grossesse: false,
         })
 
-        // Avec un contact à risque on est redirigé vers la date de suivi (parcours suivi)
+        // Conseils
         {
-            let label = await page.waitForSelector(
-                '#page label[for="suivi_date_aujourdhui"]'
+            // On retrouve la partie contact à risque
+            let contact_a_risque = await page.waitForSelector(
+                '#page #conseils-personnels-contact-a-risque'
             )
-            await label.click()
-
-            let bouton = await page.waitForSelector('#page >> text="Continuer"')
+            assert.include(
+                (await contact_a_risque.innerText()).trim(),
+                'Retrouvez le lieu de test le plus près de vous'
+            )
+            let bouton = await page.waitForSelector(
+                '#page >> text="Refaire le questionnaire"'
+            )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#suivisymptomes' }),
+                page.waitForNavigation({ url: '**/#introduction' }),
             ])
         }
     })
