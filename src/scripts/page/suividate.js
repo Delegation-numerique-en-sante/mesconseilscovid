@@ -1,6 +1,20 @@
 import { joursAvant } from '../utils.js'
+import {
+    enableOrDisableSecondaryFields,
+    toggleFormButtonOnRadioRequired,
+} from '../formutils.js'
 
 export default function suividate(form, app) {
+    const button = form.querySelector('input[type=submit]')
+    // On pré-suppose que la personne qui fait son auto-suivi a des symptômes
+    form['suivi_date'].checked = true
+
+    const primary = form.elements['suivi_date']
+    enableOrDisableSecondaryFields(form, primary)
+    primary.addEventListener('click', function () {
+        enableOrDisableSecondaryFields(form, primary)
+    })
+
     // eslint-disable-next-line no-extra-semi
     ;[].forEach.call(
         form.querySelectorAll('[name="suivi_symptomes_date"]'),
@@ -16,15 +30,28 @@ export default function suividate(form, app) {
         datePickerChanged(form, event.target)
     })
 
+    const pourUnProche = !app.profil.estMonProfil()
+    const uncheckedLabel = pourUnProche
+        ? 'Cette personne n’a pas de symptômes'
+        : 'Je n’ai pas de symptômes'
+    const requiredLabel = 'Veuillez remplir le formulaire au complet'
+    toggleFormButtonOnRadioRequired(form, button.value, uncheckedLabel, requiredLabel)
+
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.symptomes_start_date =
             dateFromPicker(event.target.elements['suivi_symptomes_date_exacte']) ||
             dateFromRadioButton(event.target.elements['suivi_symptomes_date'])
 
+        const suivi_date_checked = event.target.elements['suivi_date'].checked
+
         // Enregistre le démarrage du suivi
-        if (!app.profil.hasSuiviStartDate()) {
+        if (!app.profil.hasSuiviStartDate() && suivi_date_checked) {
             app.profil.suivi_start_date = new Date()
+        }
+        // On considère qu’il y a des symptômes si la case est cochée.
+        if (suivi_date_checked) {
+            app.profil.symptomes_actuels = true
         }
 
         app.enregistrerProfilActuel().then(() => {
