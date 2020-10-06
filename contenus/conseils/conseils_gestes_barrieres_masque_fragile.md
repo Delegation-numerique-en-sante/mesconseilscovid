@@ -1,15 +1,16 @@
-* Les mesures de **distanciation physique renforcée** pour prendre soin des personnes fragiles face à la Covid :
+* Afin d’éviter une forme grave de Covid, il vous est recommandé d’appliquer les mesures de **distanciation physique renforcée** :
 
-  * appliquer strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/affiche_-_gestes_barrieres.pdf),
-  * garder une distance de **plus d’1 mètre** avec chaque personne,
-  * porter le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile,
-  * **réduire vos sorties** au strict minimum,
-  * contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
+  * appliquez strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/affiche_-_gestes_barrieres.pdf),
+  * gardez une distance de **plus d’1 mètre** avec chaque personne,
+  * portez le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile,
+  * **réduisez vos sorties** au strict minimum.
 
 * Le port du **masque** :
+  * contactez votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux**
   * [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
   * [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
   * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
+
 
 * L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf)
 

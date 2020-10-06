@@ -89,15 +89,6 @@ Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habi
 
 ## [conseils_caractéristiques_antécédents.md](conseils_caractéristiques_antécédents.md)
 
-Afin d’éviter une forme grave de Covid, il vous est recommandé
-d’appliquer les mesures de **distanciation physique renforcée :**
-
-* Appliquez strictement **les gestes barrières**
-* Portez le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile
-* Gardez une distance de **plus d’1 mètre** avec chaque personne
-* **Réduisez vos sorties** au strict minimum
-* Contactez votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
-
 Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d’urgence.
 
 Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins.
@@ -126,7 +117,6 @@ Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos méd
 Pour plus d’informations :
 
 * [« Faire face à une maladie chronique pendant le confinement »](https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf)
-* [Personnes à risques : Réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-le-covid-19/article/personnes-a-risques-reponses-a-vos-questions)
 
 
 
@@ -210,18 +200,19 @@ Il est conseillé à votre proche de :
 
 ## [conseils_gestes_barrieres_masque_fragile.md](conseils_gestes_barrieres_masque_fragile.md)
 
-* Les mesures de **distanciation physique renforcée** pour prendre soin des personnes fragiles face à la Covid :
+* Afin d’éviter une forme grave de Covid, il vous est recommandé d’appliquer les mesures de **distanciation physique renforcée** :
 
-  * appliquer strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/affiche_-_gestes_barrieres.pdf),
-  * garder une distance de **plus d’1 mètre** avec chaque personne,
-  * porter le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile,
-  * **réduire vos sorties** au strict minimum,
-  * contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
+  * appliquez strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/affiche_-_gestes_barrieres.pdf),
+  * gardez une distance de **plus d’1 mètre** avec chaque personne,
+  * portez le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile,
+  * **réduisez vos sorties** au strict minimum.
 
 * Le port du **masque** :
+  * contactez votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux**
   * [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
   * [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
   * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
+
 
 * L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf)
 
@@ -305,8 +296,6 @@ La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver 
 * Il vous est conseillé de **poursuivre votre suivi médical habituel** et **votre traitement** si vous en avez un.
 
 * La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver votre santé, il vous est recommandé de consulter au moindre signe de maladie.
-
-* Vous pouvez contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
 
 </div>
 
