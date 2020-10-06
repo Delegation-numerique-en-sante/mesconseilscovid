@@ -242,6 +242,7 @@ main footer .legals {
 #conseils-vie-quotidienne header,
 #conseils-activite header,
 #conseils-foyer header,
+#conseils-contact-a-risque header,
 #conseils-gestes-barrieres-masque header,
 #conseils-sante header,
 #conseils-caracteristiques header,
@@ -282,6 +283,7 @@ main footer .legals {
     #conseils-vie-quotidienne header,
     #conseils-activite header,
     #conseils-foyer header,
+    #conseils-contact-a-risque header,
     #conseils-gestes-barrieres-masque header,
     #conseils-sante header,
     #conseils-caracteristiques header,
@@ -317,6 +319,9 @@ main footer .legals {
 #foyer-form,
 #conseils-foyer header {
     background-image: url('illustrations/foyer.svg');
+}
+#conseils-contact-a-risque header {
+    background-image: url('illustrations/contactarisque.svg');
 }
 #conseils-gestes-barrieres-masque header {
     background-image: url('illustrations/gestesbarrieres.svg');

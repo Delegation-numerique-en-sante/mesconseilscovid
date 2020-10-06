@@ -198,6 +198,7 @@ export default class AlgorithmeOrientation {
             } else {
                 blockNames.push('conseils-personnels-contact-a-risque-default')
             }
+            blockNames.push('conseils-contact-a-risque')
         }
         return blockNames
     }

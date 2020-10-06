@@ -4,16 +4,6 @@
 *Ce fichier est généré automatiquement pour pouvoir accéder rapidement aux contenus,il ne doit pas être édité !*
 
 
-## [infos_contact_a_risque.md](infos_contact_a_risque.md)
-
-## Contact à risque
-
-* [Isolement, test : que faire ?](https://solidarites-sante.gouv.fr/IMG/pdf/isolement_test_-_que_faire_infographie_decisionnelle.pdf)
-
-* [Quelles conduites adopter et quel sera mon parcours si j’ai été en contact avec un cas Covid-19.](https://solidarites-sante.gouv.fr/IMG/pdf/j_ai_ete_en_contact_a_risque_avec_une_personne_malade_du_covid19.pdf)
-
-
-
 ## [infos_contacter_un_medecin.md](infos_contacter_un_medecin.md)
 
 ## Contacter un médecin
@@ -43,31 +33,6 @@ De façon générale il est conseillé une levée de l’isolement :
 * et après **48 heures sans fièvre ni gêne respiratoire.**
 
 Pour plus d’informations sur l’isolement : [« J’ai les signes de la maladie du COVID-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/j_ai_des_signes_de_la_maladie_du_covid19.pdf)
-
-
-
-## [infos_sante.md](infos_sante.md)
-
-## Ma santé
-
-* La Covid n’a pas fait disparaitre les autres pathologies. Afin de préserver votre santé, il vous est recommandé de consulter au moindre signe de maladie.
-
-// Si antécédents
-* Il vous est conseillé de **poursuivre votre suivi médical habituel** et **votre traitement** si vous en avez un.
-
-* Vous pouvez contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
-
-* Continuez, dans la mesure du possible, à limiter vos déplacements et à éviter les transports en commun ou à défaut à éviter les heures de pointe.
-
-* Privilégiez les périodes les moins fréquentées pour faire vos courses.
-
-
-// Si travail et antécédents
-* Nous vous invitons à privilégier le **télétravail** ou rentrer en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**. En appliquant les gestes barrières, le risque de contamination sur le lieu de travail n’est pas plus important qu’en allant faire ses courses.
-
-// Si antécédents
-
-* [Personnes à risques : Réponse à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/personnes-a-risques-reponses-a-vos-questions)
 
 
 

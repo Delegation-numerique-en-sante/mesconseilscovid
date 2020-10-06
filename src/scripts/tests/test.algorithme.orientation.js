@@ -344,6 +344,7 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-contact-a-risque',
                 'conseils-personnels-contact-a-risque-default',
+                'conseils-contact-a-risque',
             ])
         })
 
@@ -356,6 +357,7 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-contact-a-risque',
                 'conseils-personnels-contact-a-risque-autre',
+                'conseils-contact-a-risque',
             ])
         })
     })
