@@ -276,21 +276,9 @@ Réponse :
 
 Conseils :
 
-Si âge > 65 ou grossesse 3e trimestre ou IMC > 30 ou [Antécédents](#antécédents) ou antécédents chroniques autres :
-
-* [conseils_caractéristiques_antécédents.md](conseils/conseils_caractéristiques_antécédents.md) si pas d’activité pro
-* [conseils_caractéristiques_antécédents_activité_pro.md](conseils/conseils_caractéristiques_antécédents.md) si activité pro
-
-* [conseils_caractéristiques_antécédents_info_risque.md](conseils/conseils_caractéristiques_antécédents_info_risque.md) si [Antécédents](#antécédents) ou maladie chronique autre.
-
 * [conseils_grossesse.md](conseils/conseils_grossesse.md) si grossesse 3e trimestre
 
 * [conseils_activité_pro_personne_fragile.md](conseils/conseils_activité_pro_personne_fragile.md)
-
-Si case antécédents chroniques autres cochée :
-
-* [conseils_antécédents_chroniques_autres.md](conseils/conseils_antécédents_chroniques_autres.md)
-* [conseils_maladie_chronique_info.md](conseils/conseils_maladie_chronique_info.md)
 
 
 #### Les tests de dépistage

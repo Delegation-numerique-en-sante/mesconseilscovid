@@ -62,12 +62,6 @@ Nous vous invitons à privilégier le **télétravail** ou rentrer en contact av
 
 
 
-## [conseils_antécédents_chroniques_autres.md](conseils_antécédents_chroniques_autres.md)
-
-Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habituel** et **votre traitement** si vous en avez un.
-
-
-
 ## [conseils_autosuivi_historique.md](conseils_autosuivi_historique.md)
 
 <!---->À tout moment, vous pouvez consulter <a href="#suivihistorique">l’historique de vos symptômes</a>, par exemple pour <b>les partager avec votre médecin</b>.
@@ -84,39 +78,6 @@ Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habi
 ---
 
 <!---->Nous vous conseillons de <a href="#suiviintroduction">renseigner son questionnaire</a> <b>1 à 2 fois par jour</b>. Pour vous en souvenir, mettez un rappel sur votre téléphone ou <a href="" class="js-calendar" download="rappel-covid19.ics">ajoutez un évènement récurrent à votre calendrier</a>.
-
-
-
-## [conseils_caractéristiques_antécédents.md](conseils_caractéristiques_antécédents.md)
-
-Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d’urgence.
-
-Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins.
-
-
-
-## [conseils_caractéristiques_antécédents_activité_pro.md](conseils_caractéristiques_antécédents_activité_pro.md)
-
-Afin d’éviter une forme grave de Covid, il vous est recommandé
-d’appliquer les mesures de **distanciation physique renforcée :**
-
-* Application stricte des **gestes barrières**
-* **Masque en permanence** à l’extérieur de mon foyer et à l’intérieur si je reçois des personnes étrangères à mon domicile
-* Distance de sécurité de **plus d’1 mètre** avec chaque personne
-* **Réduire les sorties** au strict minimum
-* Contacter votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
-
-Au moindre symptôme, contactez votre médecin généraliste ou le 15 en cas d’urgence.
-
-Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos médicaments** auprès de vos médecins référents qui vous orienteront vers le meilleur moyen de suivi.
-
-
-
-## [conseils_caractéristiques_antécédents_info_risque.md](conseils_caractéristiques_antécédents_info_risque.md)
-
-Pour plus d’informations :
-
-* [« Faire face à une maladie chronique pendant le confinement »](https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf)
 
 
 
@@ -264,12 +225,6 @@ Plus d’informations autour de la Covid :
 ## [conseils_isolement.md](conseils_isolement.md)
 
 Pour plus d’informations sur l’isolement : [« J’ai les signes de la maladie du COVID-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/j_ai_des_signes_de_la_maladie_du_covid19.pdf).
-
-
-
-## [conseils_maladie_chronique_info.md](conseils_maladie_chronique_info.md)
-
-Pour plus d’informations, consultez le document [« Faire face à une maladie chronique pendant le confinement »](https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf) de la Haute Autorité de Santé.
 
 
 
