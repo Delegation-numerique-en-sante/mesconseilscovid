@@ -54,6 +54,20 @@ export default function suivisymptomes(form, app) {
 
         app.profil.ajouterEtat(etat)
 
+        app.profil.symptomes_actuels = etat.symptomes
+        app.profil.symptomes_actuels_temperature = etat.fievre
+        app.profil.symptomes_actuels_temperature_inconnue = false
+        app.profil.symptomes_actuels_toux = etat.toux
+        app.profil.symptomes_actuels_odorat = false // ???
+        app.profil.symptomes_actuels_douleurs =
+            etat.etatGeneral === 'pire' || etat.etatGeneral === 'critique'
+        app.profil.symptomes_actuels_diarrhee = etat.diarrheeVomissements
+        app.profil.symptomes_actuels_fatigue =
+            etat.etatGeneral === 'pire' || etat.etatGeneral === 'critique'
+        app.profil.symptomes_actuels_alimentation = etat.alimentationHydratation
+        app.profil.symptomes_actuels_souffle =
+            etat.essoufflement === 'pire' || etat.etatGeneral === 'critique'
+
         const algoDeconfinement = new AlgorithmeDeconfinement(app.profil)
         if (algoDeconfinement.isDeconfinable()) {
             if (!app.profil.hasDeconfinementDate()) {

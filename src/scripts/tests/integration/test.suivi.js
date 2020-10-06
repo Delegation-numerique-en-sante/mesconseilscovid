@@ -1,6 +1,11 @@
 import { assert } from 'chai'
 import {
     remplirQuestionnaire,
+    remplirDepartement,
+    remplirFoyer,
+    remplirAntecedents,
+    remplirCaracteristiques,
+    remplirActivite,
     remplirSuivi,
     waitForPlausibleTrackingEvent,
 } from './helpers.js'
@@ -59,8 +64,26 @@ describe('Auto-suivi', function () {
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:conseils'),
+                waitForPlausibleTrackingEvent(page, 'pageview:residence'),
             ])
+        }
+
+        // Remplir la suite du questionnaire
+        {
+            const choix = {
+                departement: '00',
+                activitePro: true,
+                enfants: true,
+                age: '42',
+                taille: '165',
+                poids: '70',
+                grossesse: false,
+            }
+            await remplirDepartement(page, choix.departement)
+            await remplirFoyer(page, choix.enfants)
+            await remplirAntecedents(page)
+            await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
+            await remplirActivite(page, choix.activitePro)
         }
 
         // La page de Conseils doit contenir :
@@ -237,8 +260,26 @@ describe('Auto-suivi', function () {
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:conseils'),
+                waitForPlausibleTrackingEvent(page, 'pageview:residence'),
             ])
+        }
+
+        // Remplir la suite du questionnaire
+        {
+            const choix = {
+                departement: '00',
+                activitePro: true,
+                enfants: true,
+                age: '42',
+                taille: '165',
+                poids: '70',
+                grossesse: false,
+            }
+            await remplirDepartement(page, choix.departement)
+            await remplirFoyer(page, choix.enfants)
+            await remplirAntecedents(page)
+            await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
+            await remplirActivite(page, choix.activitePro)
         }
 
         // La page de Conseils doit contenir :
