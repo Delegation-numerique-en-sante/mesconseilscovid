@@ -46,12 +46,7 @@ export default function contactarisque(form, app) {
         app.profil.contact_a_risque_autre =
             event.target.elements['contact_a_risque_autre'].checked
         app.enregistrerProfilActuel().then(() => {
-            // On redirige manuellement vers le suivi pour conserver une `nextPage`
-            // conseils qui va permettre de considérer la page comme étant accessible.
-            let nextPage = app.questionnaire.nextPage('contactarisque', app.profil)
-            if (nextPage === 'conseils')
-                nextPage = app.profil.suivi_start_date ? 'suivisymptomes' : 'suividate'
-            app.router.navigate(nextPage)
+            app.goToNextPage('contactarisque')
         })
     })
 }

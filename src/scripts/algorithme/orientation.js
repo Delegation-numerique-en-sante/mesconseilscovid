@@ -157,7 +157,11 @@ export default class AlgorithmeOrientation {
     }
 
     recommandeAutoSuivi() {
-        return this.profil.symptomes_actuels
+        return (
+            this.profil.symptomes_actuels &&
+            !this.profil.estAsymptomatique() &&
+            !this.profil.estNegatif()
+        )
     }
 
     conseilsPersonnelsBlockNamesToDisplay() {

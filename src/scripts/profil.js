@@ -385,6 +385,18 @@ export default class Profil {
         })
     }
 
+    requiertSuivi() {
+        return (
+            this.isDepistageComplete() &&
+            ((this.depistage === true &&
+                (this.depistage_resultat === 'positif' ||
+                    this.depistage_resultat === 'en_attente')) ||
+                (this.depistage === false && this.hasSymptomesActuelsReconnus()) ||
+                (this.depistage === false && this.symptomes_passes) ||
+                (this.depistage === false && this.hasContactARisqueReconnus()))
+        )
+    }
+
     estPositif() {
         return (
             this.hasSymptomesActuelsReconnus() &&
@@ -425,7 +437,7 @@ export default class Profil {
         const possessifMasculinSingulier = this.estMonProfil() ? 'mon' : 'son'
         const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
         var mainButton = ''
-        if (this.isComplete() || this.hasSymptomesActuelsReconnus()) {
+        if (this.isComplete() || this.suivi_active) {
             if (this.suivi_active) {
                 const verbe =
                     this.hasSuiviStartDate() && this.hasHistorique()
