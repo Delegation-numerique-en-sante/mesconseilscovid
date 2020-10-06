@@ -335,6 +335,81 @@ describe('Parcours', function () {
         }
     })
 
+    it('remplir le questionnaire avec dépistage positif mais asymptômatique', async function () {
+        const page = this.test.page
+
+        // On est redirigé vers l’introduction
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/#introduction' }),
+        ])
+
+        // Page d’accueil
+        {
+            let bouton = await page.waitForSelector('text="Démarrer"')
+            assert.equal(
+                await bouton.evaluate(
+                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
+                ),
+                'Pour moi'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#depistage' }),
+            ])
+        }
+
+        // Remplir le questionnaire
+        await remplirQuestionnaire(page, {
+            depistage: true,
+            depistageResultat: 'positif',
+        })
+
+        // On est redirigé vers la date de suivi (parcours suivi)
+        // puis directement vers la résidence sans passer par les symptômes
+        {
+            let label = await page.waitForSelector('#page label[for="suivi_date"]')
+            await label.click()
+
+            let bouton = await page.waitForSelector(
+                '#page >> text="Je n’ai pas de symptômes"'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#residence' }),
+            ])
+        }
+
+        // Remplir la suite du questionnaire
+        {
+            const choix = {
+                departement: '00',
+                activitePro: true,
+                enfants: true,
+                age: '42',
+                taille: '165',
+                poids: '70',
+                grossesse: false,
+            }
+            await remplirDepartement(page, choix.departement)
+            await remplirFoyer(page, choix.enfants)
+            await remplirAntecedents(page)
+            await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
+            await remplirActivite(page, choix.activitePro)
+        }
+
+        // La page de Conseils doit contenir :
+        {
+            // On retrouve le statut attendu
+            let statut = await page.waitForSelector('#page #conseils-statut')
+            assert.include(
+                (await statut.innerText()).trim(),
+                'Vous êtes porteur de la Covid sans symptômes, ' +
+                    'il est important de vous isoler'
+            )
+        }
+    })
+
     it('remplir le questionnaire avec dépistage en attente', async function () {
         const page = this.test.page
 

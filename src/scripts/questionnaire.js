@@ -56,6 +56,8 @@ export const TRANSITIONS = {
     suividate: {
         previous: () => 'suiviintroduction',
         next: {
+            residence: (profil) =>
+                profil.symptomes_actuels === false && profil.symptomes_passes === false,
             suivisymptomes: (profil) => profil.hasSuiviStartDate(),
         },
     },

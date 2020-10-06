@@ -1030,8 +1030,16 @@
     <form id="suivi-date-form" class="block">
         <fieldset>
             <legend>{{ question_suivi_date_titre|me_or_them }}</legend>
-            {{ question_suivi_date_libellé|me_or_them }}
-            <div role="radiogroup">
+            <div>
+                <input id="suivi_date" type="checkbox" name="suivi_date">
+                <label for="suivi_date">
+                    <span>
+                        {{ question_suivi_date_libellé|me_or_them }}
+                    </span>
+                </label>
+                <div class="details">{{ question_suivi_date_aide|me_or_them }}</div>
+            </div>
+            <div class="secondary disabled required" role="radiogroup">
                 <input id="suivi_date_aujourdhui" type="radio" required name="suivi_symptomes_date" value="aujourdhui">
                 <label for="suivi_date_aujourdhui">Aujourd’hui</label>
                 <input id="suivi_date_hier" type="radio" required name="suivi_symptomes_date" value="hier">
