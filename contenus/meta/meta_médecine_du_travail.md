@@ -18,7 +18,7 @@ Le télétravail doit être poursuivi si possible.
 
 Si le télétravail n’est pas possible :
 
-* Si vous êtes salarié, vous pouvez être placé en activité partielle. Vous pouvez vous adresser à votre médecin traitant ou au spécialiste qui vous suit pour la pathologie à risque de forme grave de Covid-19 pour obtenir un certificat d’isolement ou à votre médecin du travail qui peut établir une déclaration d’interruption de travail.
+* Si vous êtes salarié, vous pouvez être placé en activité partielle. Vous pouvez vous adresser à votre médecin traitant ou au spécialiste qui vous suit pour la pathologie à risque de forme grave de Covid pour obtenir un certificat d’isolement ou à votre médecin du travail qui peut établir une déclaration d’interruption de travail.
 * Si vous n’êtes pas salarié, votre médecin traitant peut rédiger un arrêt de travail.
 
 
@@ -35,7 +35,7 @@ Vous pouvez également demander un aménagement des horaires de travail.
 
 ### Puis-je utiliser les transports en commun pour aller au travail ?
 
-Les personnes à risque de formes graves de Covid-19 peuvent utiliser les transports en commun. Il est recommandé de porter un masque à usage médical pendant tout le trajet et de respecter au mieux les distances de sécurité.
+Les personnes à risque de formes graves de Covid peuvent utiliser les transports en commun. Il est recommandé de porter un masque à usage médical pendant tout le trajet et de respecter au mieux les distances de sécurité.
 
 Il sera important de se désinfecter les mains à l’entrée et à la sortie des transports.
 </div>

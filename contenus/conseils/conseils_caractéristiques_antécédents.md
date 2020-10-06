@@ -1,4 +1,4 @@
-Afin d’éviter une forme grave de Covid-19, il vous est recommandé
+Afin d’éviter une forme grave de Covid, il vous est recommandé
 d’appliquer les mesures de **distanciation physique renforcée :**
 
 * Appliquez strictement **les gestes barrières**

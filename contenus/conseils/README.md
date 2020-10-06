@@ -89,7 +89,7 @@ Il vous est conseillé de **poursuivre ou de reprendre votre suivi médical habi
 
 ## [conseils_caractéristiques_antécédents.md](conseils_caractéristiques_antécédents.md)
 
-Afin d’éviter une forme grave de Covid-19, il vous est recommandé
+Afin d’éviter une forme grave de Covid, il vous est recommandé
 d’appliquer les mesures de **distanciation physique renforcée :**
 
 * Appliquez strictement **les gestes barrières**
@@ -106,7 +106,7 @@ Il vous est conseillé de **poursuivre le suivi et le renouvellement de vos méd
 
 ## [conseils_caractéristiques_antécédents_activité_pro.md](conseils_caractéristiques_antécédents_activité_pro.md)
 
-Afin d’éviter une forme grave de Covid-19, il vous est recommandé
+Afin d’éviter une forme grave de Covid, il vous est recommandé
 d’appliquer les mesures de **distanciation physique renforcée :**
 
 * Application stricte des **gestes barrières**
@@ -213,7 +213,7 @@ Il est conseillé à votre proche de :
 
 ## [conseils_gestes_barrieres_masque_fragile.md](conseils_gestes_barrieres_masque_fragile.md)
 
-* Les mesures de **distanciation physique renforcée** pour prendre soin des personnes fragiles face à la Covid-19 :
+* Les mesures de **distanciation physique renforcée** pour prendre soin des personnes fragiles face à la Covid :
 
   * Appliquez strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/affiche_-_gestes_barrieres.pdf)
   * Garder une distance de **plus d’1 mètre** avec chaque personne
@@ -232,7 +232,7 @@ Il est conseillé à votre proche de :
 
 ## [conseils_gestes_barrieres_masque_general.md](conseils_gestes_barrieres_masque_general.md)
 
-* Les mesures de **distanciation physique renforcée** pour prendre soin des personnes fragiles face à la Covid-19 :
+* Les mesures de **distanciation physique renforcée** pour prendre soin des personnes fragiles face à la Covid :
 
   * Appliquez strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/affiche_-_gestes_barrieres.pdf)
   * Garder une distance de **plus d’1 mètre** avec chaque personne
@@ -248,8 +248,8 @@ Il est conseillé à votre proche de :
 
 ## [conseils_grossesse.md](conseils_grossesse.md)
 
-* le [suivi de grossesse](https://www.has-sante.fr/jcms/p_3187133/fr/grossesse-votre-suivi-pendant-l-epidemie-de-covid-19) pendant l’épidémie de Covid-19
-* le [retour à la maison après l’accouchement](https://www.has-sante.fr/jcms/p_3186783/fr/accouchement-votre-retour-a-la-maison-pendant-l-epidemie-de-covid-19) pendant l’épidémie de Covid-19
+* le [suivi de grossesse](https://www.has-sante.fr/jcms/p_3187133/fr/grossesse-votre-suivi-pendant-l-epidemie-de-covid-19) pendant l’épidémie de Covid
+* le [retour à la maison après l’accouchement](https://www.has-sante.fr/jcms/p_3186783/fr/accouchement-votre-retour-a-la-maison-pendant-l-epidemie-de-covid-19) pendant l’épidémie de Covid
 
 
 
@@ -275,7 +275,7 @@ Pour plus d’informations :
   * [Les gestes barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf)
 
 
-* **Les tests** pour le Covid-19 :
+* **Les tests** pour la Covid :
   * [« Tests et dépistage »](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
   * [Sérologies : réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/les-serologies-reponses-a-vos-questions)
 
@@ -283,9 +283,9 @@ Pour plus d’informations :
   * [L’alimentation, les courses et le nettoyage](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses)
   * [Déplacements et voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements »)
 
-* Plus d’informations autour du Covid-19 :
+* Plus d’informations autour de la Covid :
   * [Covid19-faq](https://www.covid19-faq.fr/) ou appeler le [0 800 130 000](tel:+33800130000)
-  * L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) vous permettra de recevoir immédiatement une notification si vous avez été en contact rapproché avec une personne testée positive au Covid-19
+  * L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) vous permettra de recevoir immédiatement une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid
 
 
 
