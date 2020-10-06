@@ -292,6 +292,8 @@ export default class AlgorithmeOrientation {
         }
         if (this.personne_fragile) {
             blockNames.push('conseils-sante-personne-fragile')
+        } else {
+            blockNames.push('conseils-sante-general')
         }
         return blockNames
     }

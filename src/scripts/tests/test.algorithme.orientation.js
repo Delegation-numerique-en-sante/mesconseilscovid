@@ -620,6 +620,7 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
+                'conseils-sante-general',
             ])
         })
 
@@ -630,6 +631,7 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
+                'conseils-sante-general',
             ])
         })
 
@@ -640,6 +642,7 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
+                'conseils-sante-general',
             ])
         })
 
@@ -650,6 +653,7 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
+                'conseils-sante-general',
             ])
         })
 
@@ -702,6 +706,7 @@ describe('Algorithme d’orientation', function () {
             ])
         })
     })
+
     describe('Caractéristiques et antécédents', function () {
         it('Aucun antécédent n’affiche rien', function () {
             var profil = new Profil('mes_infos', {})
