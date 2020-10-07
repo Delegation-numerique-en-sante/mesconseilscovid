@@ -3,7 +3,7 @@ name: Déployer une démo sur GitHub Pages
 on:
   push:
     branches:
-      - master
+      - question-test-3
 
 jobs:
   build-and-deploy:
