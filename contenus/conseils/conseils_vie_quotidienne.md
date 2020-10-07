@@ -7,6 +7,7 @@
 </div>
 
 Retrouvez les réponses à vos questions sur :
+
 * [l’alimentation, les courses et le nettoyage](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses)
 * [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »)
 
