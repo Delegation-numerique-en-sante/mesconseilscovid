@@ -268,12 +268,6 @@ Il peut aussi être rendu obligatoire dans certains **lieux publics ouverts** (r
 
 
 
-## [conseils_généraux_info.md](conseils_généraux_info.md)
-
-* L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) vous permettra de recevoir immédiatement une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid
-
-
-
 ## [conseils_isolement_symptômes.md](conseils_isolement_symptômes.md)
 
 De façon générale il est conseillé une levée de l’isolement :
@@ -447,5 +441,7 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 Retrouvez les réponses à vos questions sur :
 * [l’alimentation, les courses et le nettoyage](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses)
 * [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »)
+
+L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) vous permettra de recevoir immédiatement une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid.
 
 
