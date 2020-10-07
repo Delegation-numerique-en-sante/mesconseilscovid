@@ -282,16 +282,21 @@ describe('Algorithme d’orientation', function () {
                 departement: '01',
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [])
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+            ])
         })
 
-        it('Un département + symptômes actuels n’affiche pas la localisation', function () {
+        it('Un département + symptômes actuels affiche la localisation', function () {
             var profil = new Profil('mes_infos', {
                 departement: '01',
                 symptomes_actuels: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
-            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [])
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+                'conseils-departement-circulation-faible',
+            ])
         })
 
         it('Un département + symptômes passés affiche la localisation', function () {
