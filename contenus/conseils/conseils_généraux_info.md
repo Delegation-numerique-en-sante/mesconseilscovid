@@ -1,1 +1,0 @@
-* L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) vous permettra de recevoir immédiatement une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid
