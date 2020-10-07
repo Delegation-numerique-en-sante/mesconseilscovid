@@ -167,9 +167,9 @@ export default class AlgorithmeOrientation {
     conseilsPersonnelsBlockNamesToDisplay() {
         const blockNames = []
         if (this.profil.estPositifSymptomatique()) {
-            blockNames.push('conseils-depistage-positif-symptomatique')
+            blockNames.push('conseils-personnels-depistage-positif-symptomatique')
         } else if (this.profil.estPositifAsymptomatique()) {
-            blockNames.push('conseils-depistage-positif-asymptomatique')
+            blockNames.push('conseils-personnels-depistage-positif-asymptomatique')
         } else if (this.profil.hasSymptomesActuelsReconnus()) {
             blockNames.push('conseils-personnels-symptomes-actuels')
             blockNames.push('reponse-symptomes-actuels-symptomesactuelsreconnus')
