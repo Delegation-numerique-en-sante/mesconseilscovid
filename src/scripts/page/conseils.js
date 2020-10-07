@@ -61,10 +61,6 @@ export default function conseils(element, app) {
 
         // Cacher le bloc de statut si on est en auto-suivi.
         hideSelector(element, '#conseils-statut')
-
-        // Cacher le bloc de recommandation de l’auto-suivi
-        // si on l’a déjà démarré.
-        hideSelector(element, '.conseil-autosuivi')
     }
 
     // Dynamic data injections.

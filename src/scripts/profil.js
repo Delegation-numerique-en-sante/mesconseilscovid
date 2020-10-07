@@ -396,7 +396,7 @@ export default class Profil {
         )
     }
 
-    estPositif() {
+    estPositifSymptomatique() {
         return (
             this.hasSymptomesActuelsReconnus() &&
             this.depistage === true &&
@@ -404,7 +404,7 @@ export default class Profil {
         )
     }
 
-    estNegatif() {
+    estNegatifSymptomatique() {
         return (
             this.hasSymptomesActuelsReconnus() &&
             this.depistage === true &&
@@ -412,7 +412,7 @@ export default class Profil {
         )
     }
 
-    estAsymptomatique() {
+    estPositifAsymptomatique() {
         return (
             this.symptomes_actuels === false &&
             this.depistage === true &&

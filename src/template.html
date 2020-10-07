@@ -672,46 +672,29 @@
                 </div>
             </div>
 
-            <h2 class="with-illustration">Vos conseils personnalisés</h2>
+            <h2>Vos conseils personnalisés</h2>
+
+            <div id="conseils-depistage-positif-symptomatique" class="conseils" hidden>
+                <div class="conseil">
+                    {{ conseils_depistage_positif_symptomatique }}
+                </div>
+            </div>
+
+            <div id="conseils-depistage-positif-asymptomatique" class="conseils" hidden>
+                <div class="conseil">
+                    {{ conseils_depistage_positif_asymptomatique }}
+                </div>
+            </div>
 
             <div id="conseils-personnels-symptomes-actuels" class="conseils" hidden>
                 <div class="reponse">
-                    <div id="reponse-symptomes-actuels-caracteristiques" hidden>
-                        {{ réponse_caractéristiques_à_risques }}
-                    </div>
-                    <div id="reponse-symptomes-actuels-antecedents" hidden>
-                        {{ réponse_antécédents }}
-                    </div>
                     <div id="reponse-symptomes-actuels-symptomesactuelsreconnus" hidden>
                         {{ réponse_symptômes_actuels_reconnus }}
                     </div>
                 </div>
-                <div id="conseils-personnels-symptomes-actuels-gravite1" class="conseil conseil-orange" hidden>
-                    {{ conseils_symptômes_actuels_gravité1 }}
+                <div id="conseils-personnels-symptomes-actuels-sans-depistage" class="conseil" hidden>
+                    {{ conseils_symptômes_actuels_sans_depistage }}
                 </div>
-                <div id="conseils-personnels-symptomes-actuels-gravite2" class="conseil conseil-orange" hidden>
-                    {{ conseils_symptômes_actuels_gravité2 }}
-                </div>
-                <div id="conseils-personnels-symptomes-actuels-gravite3" class="conseil conseil-orange" hidden>
-                    {{ conseils_symptômes_actuels_gravité3 }}
-                </div>
-                <div id="conseils-personnels-symptomes-actuels-gravite4" class="conseil conseil-orange" hidden>
-                    {{ conseils_symptômes_actuels_gravité4 }}
-                </div>
-                <div id="conseils-personnels-symptomes-actuels-suivi" class="conseil" hidden>
-                    {{ conseils_symptômes_actuels_gravité4 }}{# réutilisation du même texte #}
-                </div>
-                <div class="conseil conseil-autosuivi">
-                    <p>
-                        {{ conseils_symptômes_actuels_autosuivi|me_or_them }}
-                    </p>
-                    <div class="form-controls">
-                        <div class="button-full-width">
-                            <a class="button button-full-width" href="#suiviintroduction">{{ conseils_symptômes_actuels_autosuivi_bouton|me_or_them }}</a>
-                        </div>
-                    </div>
-                </div>
-                {{ conseils_symptômes_défaut }}
             </div>
 
             <div id="conseils-personnels-symptomes-passes" class="conseils" hidden>
