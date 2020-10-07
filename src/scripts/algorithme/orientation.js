@@ -201,7 +201,6 @@ export default class AlgorithmeOrientation {
             this.profil.hasContactARisqueReconnus()
         ) {
             blockNames.push('conseils-isolement')
-            blockNames.push('conseils-isolement-symptomes')
         }
         return blockNames
     }
