@@ -73,11 +73,11 @@ Nous vous invitons à privilégier le **télétravail** ou rentrer en contact av
 
 ## [conseils_autosuivi_régularité.md](conseils_autosuivi_régularité.md)
 
-<!---->Nous vous conseillons de <a href="#suiviintroduction">renseigner le questionnaire</a> <b>1 à 2 fois par jour</b>. Pour vous en souvenir, mettez un rappel sur votre téléphone ou <a href="" class="js-calendar" download="rappel-covid19.ics">ajoutez un évènement récurrent à votre calendrier</a>.
+<!---->Nous vous conseillons de <a href="#suiviintroduction">renseigner le questionnaire</a> <b>1 à 2 fois par jour</b>. Pour vous en souvenir, mettez un rappel sur votre téléphone ou <a href="" class="js-calendar" download="rappel-covid19.ics">ajoutez un évènement récurrent à votre calendrier</a>.
 
 ---
 
-<!---->Nous vous conseillons de <a href="#suiviintroduction">renseigner son questionnaire</a> <b>1 à 2 fois par jour</b>. Pour vous en souvenir, mettez un rappel sur votre téléphone ou <a href="" class="js-calendar" download="rappel-covid19.ics">ajoutez un évènement récurrent à votre calendrier</a>.
+<!---->Nous vous conseillons de <a href="#suiviintroduction">renseigner son questionnaire</a> <b>1 à 2 fois par jour</b>. Pour vous en souvenir, mettez un rappel sur votre téléphone ou <a href="" class="js-calendar" download="rappel-covid19.ics">ajoutez un évènement récurrent à votre calendrier</a>.
 
 
 
@@ -127,7 +127,8 @@ Vous avez passé du temps avec quelqu’un de positif, mais il ne s’agit pas *
 
 ## [conseils_covid.md](conseils_covid.md)
 
-Pour toutes vos questions sur la Covid, vous pouvez:
+Pour toutes vos questions sur la Covid, vous pouvez :
+
 * aller sur [Covid19-faq](https://www.covid19-faq.fr/)
 * appeler le numéro vert [0 800 130 000](tel:+33800130000) (24h/24 et 7j/7)
 
@@ -257,7 +258,7 @@ Il peut aussi être rendu obligatoire dans certains **lieux publics ouverts** (r
 
 * L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf)
 
-* Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)
+* Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)
 
 
 
@@ -298,7 +299,7 @@ La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver 
 
 ## [conseils_santé_maladie_chronique.md](conseils_santé_maladie_chronique.md)
 
-* Maladies chroniques :
+* Maladies chroniques :
     * [Évaluer ses risques avec l’équipe de soins et adapter son mode de vie](https://www.has-sante.fr/jcms/p_3189294/fr/covid-19-evaluer-ses-risques-avec-l-equipe-de-soins-et-adapter-son-mode-de-vie) 🧑‍⚕️
     * [« Faire face à une maladie chronique pendant le confinement »](https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf) 🧑‍⚕️
 
@@ -316,7 +317,7 @@ La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver 
 
 </div>
 
-* [Personnes à risques : Réponse à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/personnes-a-risques-reponses-a-vos-questions)
+* [Personnes à risques : Réponse à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/personnes-a-risques-reponses-a-vos-questions)
 
 
 
@@ -327,16 +328,6 @@ La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver 
 ---
 
 <!---->Vous pouvez suivre la maladie de votre proche et obtenir des conseils quotidiens sur la conduite à tenir en fonction de l’<b>évolution de ses symptômes</b> :
-
-
-
-## [conseils_symptômes_actuels_autosuivi_bouton.md](conseils_symptômes_actuels_autosuivi_bouton.md)
-
-<!---->Accéder au suivi de ma maladie
-
----
-
-<!---->Accéder au suivi de sa maladie
 
 
 
@@ -408,7 +399,7 @@ Retrouvez le [lieu de test le plus proche](https://sante.fr/cartographie-depista
 
 * Plus d’informations :
 
-    * Les prochaines étapes du parcours : [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf)
+    * Les prochaines étapes du parcours : [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf)
 
     * [La stratégie de dépistage](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
 
@@ -419,9 +410,9 @@ Retrouvez le [lieu de test le plus proche](https://sante.fr/cartographie-depista
 
 ## [conseils_tests_résultats.md](conseils_tests_résultats.md)
 
-Les **résultats du test** de dépistage sont normalement disponibles dans les 36 heures après la réalisation du test. Ils vous seront transmis :
+Les **résultats du test** de dépistage sont normalement disponibles dans les 36 heures après la réalisation du test. Ils vous seront transmis :
 
-* par le laboratoire (par téléphone, ou sur internet) ;
+* par le laboratoire (par téléphone, ou sur internet) ;
 * et/ou par SI-DEP (un système d’information national de suivi du dépistage Covid mis en place depuis mai 2020).
 
 **En cas de difficultés à obtenir vos résultats, contactez le laboratoire.**
@@ -439,6 +430,7 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 </div>
 
 Retrouvez les réponses à vos questions sur :
+
 * [l’alimentation, les courses et le nettoyage](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses)
 * [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »)
 

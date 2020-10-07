@@ -18,4 +18,4 @@ Il peut aussi être rendu obligatoire dans certains **lieux publics ouverts** (r
 
 * L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf)
 
-* Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)
+* Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)

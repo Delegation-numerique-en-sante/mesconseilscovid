@@ -12,7 +12,7 @@ Retrouvez le [lieu de test le plus proche](https://sante.fr/cartographie-depista
 
 * Plus d’informations :
 
-    * Les prochaines étapes du parcours : [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf)
+    * Les prochaines étapes du parcours : [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf)
 
     * [La stratégie de dépistage](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
 
