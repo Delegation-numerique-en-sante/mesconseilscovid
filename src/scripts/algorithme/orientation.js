@@ -205,7 +205,8 @@ export default class AlgorithmeOrientation {
 
     isolementBlockNamesToDisplay() {
         const blockNames = []
-        if (this.profil.hasSymptomesActuelsReconnus()) {
+        if (this.profil.hasSymptomesActuelsReconnus() || this.profil.symptomes_passes) {
+            blockNames.push('conseils-isolement')
             blockNames.push('conseils-isolement-symptomes')
         }
         return blockNames
