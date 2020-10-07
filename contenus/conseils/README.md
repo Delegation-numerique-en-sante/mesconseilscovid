@@ -109,6 +109,14 @@ Vous avez passé du temps avec quelqu’un de positif mais il ne s’agit pas *a
 
 
 
+## [conseils_contacter_un_médecin.md](conseils_contacter_un_médecin.md)
+
+* En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde en composant le [0 800 130 000](tel:+33800130000). 🧑‍⚕️
+
+* Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent **pendant plus de 24 heures**.
+
+
+
 ## [conseils_covid.md](conseils_covid.md)
 
 Pour toutes vos questions sur la Covid, vous pouvez:
@@ -252,7 +260,7 @@ La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver 
 
 * Il vous est conseillé de **poursuivre votre suivi médical habituel** et **votre traitement** si vous en avez un.
 
-* Au moindre symptôme évoquant la Covid, contactez votre médecin généraliste, ou le 15 en cas d’urgence.
+* Au moindre symptôme évoquant la Covid, contactez votre médecin généraliste.
 
 * La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver votre santé, il vous est recommandé de consulter au moindre signe de maladie.
 
