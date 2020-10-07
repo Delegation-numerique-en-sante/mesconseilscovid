@@ -203,9 +203,14 @@ export default class AlgorithmeOrientation {
     }
 
     depistageBlockNamesToDisplay() {
-        const blockNames = ['conseils-tests']
-        if (this.profil.depistage_resultat === 'en_attente') {
-            blockNames.push('conseils-tests-resultats')
+        const blockNames = []
+        if (this.profil.contact_a_risque && this.profil.contact_a_risque_autre) {
+            // rien
+        } else {
+            blockNames.push('conseils-tests')
+            if (this.profil.depistage_resultat === 'en_attente') {
+                blockNames.push('conseils-tests-resultats')
+            }
         }
         return blockNames
     }
