@@ -92,9 +92,8 @@ Conseils :
     * ou [conseils_symptômes_actuels_gravité2.md](conseils/conseils_symptômes_actuels_gravité2.md) si (température et toux, personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure)) OU (avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie)) et personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure))
     * ou [conseils_symptômes_actuels_gravité1.md](conseils/conseils_symptômes_actuels_gravité1.md) par défaut
 2. [conseils_symptômes_actuels_autosuivi.md](conseils/conseils_symptômes_actuels_autosuivi.md), [bouton](conseils/conseils_symptômes_actuels_autosuivi_bouton.md)
-3. [conseils_symptômes_maux_de_tête.md](conseils/conseils_symptômes_maux_de_tête.md)
-4. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
-5. [Conseils d’ordre général](#conseils-dordre-général)
+3. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
+4. [Conseils d’ordre général](#conseils-dordre-général)
 
 Cas particulier : si [Symptôme actuel autre](#symptôme-actuel-autre), aucun de ces conseils n’est affiché.
 
@@ -228,6 +227,7 @@ Conseils :
 * [conseils_santé_personne_fragile](conseils/conseils_santé_personne_fragile.md) si personne fragile
 * [conseils_contacter_un_médecin.md](conseils/conseils_contacter_un_médecin.md)
 * [conseils_santé_maladie_chronique.md](conseils/conseils_santé_maladie_chronique.md) si [antécédents](#antécédents) ou maladie chronique autre.
+* [conseils_santé_automédication.md](conseils/conseils_santé_automédication.md)
 
 
 #### Caractéristiques et antécédents
