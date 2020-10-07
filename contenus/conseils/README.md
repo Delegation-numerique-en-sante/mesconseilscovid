@@ -81,12 +81,6 @@ Nous vous invitons à privilégier le **télétravail** ou rentrer en contact av
 
 
 
-## [conseils_cartographie_dépistage.md](conseils_cartographie_dépistage.md)
-
-Retrouvez le [lieu de test le plus près de vous](https://sante.fr/cartographie-depistage-covid), si votre médecin vous prescrit un **test de dépistage**.
-
-
-
 ## [conseils_contact_à_risque.md](conseils_contact_à_risque.md)
 
 Nous vous conseillons de **contacter votre médecin généraliste**.
@@ -389,6 +383,8 @@ De façon générale il est conseillé une levée de l’isolement 7 jours aprè
 
 
 ## [conseils_tests.md](conseils_tests.md)
+
+* Retrouvez le [lieu de test le plus près de vous](https://sante.fr/cartographie-depistage-covid), si votre médecin vous prescrit un **test de dépistage**.
 
 * Les tests de dépistage sont **accessibles sur demande** et sans prescription médicale, sans même présenter de symptômes.
 
