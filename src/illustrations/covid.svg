@@ -1,428 +1,314 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1000px" height="800px" viewBox="0 0 1000 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>covid</title>
-    <defs>
-        <rect id="path-1" x="0.5" y="0" width="768" height="587"></rect>
-    </defs>
-    <g id="covid" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(116.000000, 107.000000)">
-            <mask id="mask-2" fill="white">
-                <use xlink:href="#path-1"></use>
-            </mask>
-            <use id="Mask" fill="#DFE2F2" fill-rule="nonzero" xlink:href="#path-1"></use>
-            <g mask="url(#mask-2)" id="petit_covid">
-                <g transform="translate(462.000000, 281.000000)" id="Group-5">
-                    <ellipse id="Oval" fill="#5770BE" cx="148.75" cy="152.619718" rx="55.25" ry="55.1126761"></ellipse>
-                    <g id="Group-2" transform="translate(42.500000, 38.154930)">
-                        <g id="illu/virus/branche" transform="translate(106.250000, 97.507042)">
-                            <ellipse id="Oval" fill="#5770BE" cx="103.0625" cy="14.8380282" rx="7.4375" ry="14.8380282"></ellipse>
-                            <line x1="100.9375" y1="14.8380282" x2="1.0625" y2="14.8380282" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                        </g>
-                        <g id="Group" transform="translate(0.000000, 97.507042)">
-                            <g id="illu/virus/branche" transform="translate(55.250000, 14.838028) scale(-1, 1) translate(-55.250000, -14.838028) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="103.0625" cy="14.8380282" rx="7.4375" ry="14.8380282"></ellipse>
-                                <line x1="100.9375" y1="14.8380282" x2="1.0625" y2="14.8380282" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(51.000000, 42.394366)">
-                            <g id="illu/virus/branche" transform="translate(55.250000, 14.838028) scale(1, -1) rotate(90.000000) translate(-55.250000, -14.838028) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="103.0625" cy="14.8380282" rx="7.4375" ry="14.8380282"></ellipse>
-                                <line x1="100.9375" y1="14.8380282" x2="1.0625" y2="14.8380282" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(51.000000, 148.380282)">
-                            <g id="illu/virus/branche" transform="translate(55.250000, 14.838028) scale(-1, 1) rotate(90.000000) translate(-55.250000, -14.838028) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="103.0625" cy="14.8380282" rx="7.4375" ry="14.8380282"></ellipse>
-                                <line x1="100.9375" y1="14.8380282" x2="1.0625" y2="14.8380282" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                    <g id="Group" transform="translate(152.058332, 150.759196) rotate(45.000000) translate(-152.058332, -150.759196) translate(45.808332, 44.773280)">
-                        <g transform="translate(105.643646, 90.886305)" id="illu/virus/branche">
-                            <ellipse id="Oval" fill="#5770BE" cx="98.5330158" cy="15.1477175" rx="7.11063001" ry="15.1477175"></ellipse>
-                            <line x1="96.5014072" y1="15.1477175" x2="1.01580429" y2="15.1477175" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                        </g>
-                        <g transform="translate(0.000000, 90.886305)" id="illu/virus/branche">
-                            <g transform="translate(52.821823, 15.147717) scale(-1, 1) translate(-52.821823, -15.147717) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="98.5330158" cy="15.1477175" rx="7.11063001" ry="15.1477175"></ellipse>
-                                <line x1="96.5014072" y1="15.1477175" x2="1.01580429" y2="15.1477175" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(52.821823, 38.374218)" id="illu/virus/branche">
-                            <g transform="translate(52.821823, 15.147717) scale(1, -1) rotate(90.000000) translate(-52.821823, -15.147717) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="98.5330158" cy="15.1477175" rx="7.11063001" ry="15.1477175"></ellipse>
-                                <line x1="96.5014072" y1="15.1477175" x2="1.01580429" y2="15.1477175" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(52.821823, 143.398392)" id="illu/virus/branche">
-                            <g transform="translate(52.821823, 15.147717) scale(-1, 1) rotate(90.000000) translate(-52.821823, -15.147717) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="98.5330158" cy="15.1477175" rx="7.11063001" ry="15.1477175"></ellipse>
-                                <line x1="96.5014072" y1="15.1477175" x2="1.01580429" y2="15.1477175" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                    <g id="Group-4" transform="translate(68.114967, 68.987472)">
-                        <g id="Group" transform="translate(81.451126, 86.427580)">
-                            <g id="illu/virus/branche" transform="translate(40.632171, 11.108326) rotate(22.500000) translate(-40.632171, -11.108326) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.7946275" cy="11.1083261" rx="5.46971539" ry="11.1083261"></ellipse>
-                                <line x1="74.2318517" y1="11.1083261" x2="0.781387913" y2="11.1083261" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(4.250000, 54.112450)">
-                            <g id="illu/virus/branche" transform="translate(40.632171, 11.108326) scale(-1, 1) rotate(-22.500000) translate(-40.632171, -11.108326) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.7946275" cy="11.1083261" rx="5.46971539" ry="11.1083261"></ellipse>
-                                <line x1="74.2318517" y1="11.1083261" x2="0.781387913" y2="11.1083261" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(59.103431, 33.915493)">
-                            <g id="illu/virus/branche" transform="translate(40.632171, 11.108326) scale(1, -1) rotate(67.500000) translate(-40.632171, -11.108326) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.7946275" cy="11.1083261" rx="5.46971539" ry="11.1083261"></ellipse>
-                                <line x1="74.2318517" y1="11.1083261" x2="0.781387913" y2="11.1083261" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(26.597694, 106.624537)">
-                            <g id="illu/virus/branche" transform="translate(40.632171, 11.108326) scale(-1, 1) rotate(67.500000) translate(-40.632171, -11.108326) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.7946275" cy="11.1083261" rx="5.46971539" ry="11.1083261"></ellipse>
-                                <line x1="74.2318517" y1="11.1083261" x2="0.781387913" y2="11.1083261" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                    <g id="Group" transform="translate(150.749896, 152.342047) rotate(67.500000) translate(-150.749896, -152.342047) translate(67.874896, 69.673033)">
-                        <g transform="translate(81.366566, 69.542391)" id="illu/virus/branche">
-                            <ellipse id="Oval" fill="#5770BE" cx="75.8970527" cy="11.5895288" rx="5.4771069" ry="11.5895288"></ellipse>
-                            <line x1="74.332165" y1="11.5895288" x2="0.782443842" y2="11.5895288" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                        </g>
-                        <g transform="translate(-0.007594, 69.542391)" id="illu/virus/branche">
-                            <g transform="translate(40.687080, 11.589529) scale(-1, 1) translate(-40.687080, -11.589529) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.8970527" cy="11.5895288" rx="5.4771069" ry="11.5895288"></ellipse>
-                                <line x1="74.332165" y1="11.5895288" x2="0.782443842" y2="11.5895288" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(40.679486, 29.365357)" id="illu/virus/branche">
-                            <g transform="translate(40.687080, 11.589529) scale(1, -1) rotate(90.000000) translate(-40.687080, -11.589529) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.8970527" cy="11.5895288" rx="5.4771069" ry="11.5895288"></ellipse>
-                                <line x1="74.332165" y1="11.5895288" x2="0.782443842" y2="11.5895288" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(40.679486, 109.719424)" id="illu/virus/branche">
-                            <g transform="translate(40.687080, 11.589529) scale(-1, 1) rotate(90.000000) translate(-40.687080, -11.589529) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.8970527" cy="11.5895288" rx="5.4771069" ry="11.5895288"></ellipse>
-                                <line x1="74.332165" y1="11.5895288" x2="0.782443842" y2="11.5895288" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 800">
+  <defs>
+    <path id="a" d="M.5 0h768v587H.5z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(116 107)">
+      <mask id="b" fill="#fff">
+        <use xlink:href="#a"/>
+      </mask>
+      <use fill="#DFE2F2" fill-rule="nonzero" xlink:href="#a"/>
+      <g mask="url(#b)">
+        <g transform="translate(462 281)">
+          <ellipse fill="#5770BE" cx="148.8" cy="152.6" rx="55.3" ry="55.1"/>
+          <g transform="translate(148.8 135.7)">
+            <ellipse fill="#5770BE" cx="103.1" cy="14.8" rx="7.4" ry="14.8"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M100.9 14.8H1.1"/>
+          </g>
+          <g transform="matrix(-1 0 0 1 153 135.7)">
+            <ellipse fill="#5770BE" cx="103.1" cy="14.8" rx="7.4" ry="14.8"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M100.9 14.8H1.1"/>
+          </g>
+          <g transform="matrix(0 -1 -1 0 163.6 150.6)">
+            <ellipse fill="#5770BE" cx="103.1" cy="14.8" rx="7.4" ry="14.8"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M100.9 14.8H1.1"/>
+          </g>
+          <g transform="matrix(0 1 1 0 134 146.1)">
+            <ellipse fill="#5770BE" cx="103.1" cy="14.8" rx="7.4" ry="14.8"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M100.9 14.8H1.1"/>
+          </g>
+          <g>
+            <g transform="rotate(45 -87.4 265.7)">
+              <ellipse fill="#5770BE" cx="98.5" cy="15.1" rx="7.1" ry="15.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M96.5 15.1H1"/>
             </g>
-            <g mask="url(#mask-2)" id="petit_covid">
-                <g transform="translate(-168.000000, 241.000000)" id="Group-5">
-                    <ellipse id="Oval" fill="#5770BE" cx="148.75" cy="152.619718" rx="55.25" ry="55.1126761"></ellipse>
-                    <g id="Group-2" transform="translate(42.500000, 38.154930)">
-                        <g id="illu/virus/branche" transform="translate(106.250000, 97.507042)">
-                            <ellipse id="Oval" fill="#5770BE" cx="103.0625" cy="14.8380282" rx="7.4375" ry="14.8380282"></ellipse>
-                            <line x1="100.9375" y1="14.8380282" x2="1.0625" y2="14.8380282" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                        </g>
-                        <g id="Group" transform="translate(0.000000, 97.507042)">
-                            <g id="illu/virus/branche" transform="translate(55.250000, 14.838028) scale(-1, 1) translate(-55.250000, -14.838028) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="103.0625" cy="14.8380282" rx="7.4375" ry="14.8380282"></ellipse>
-                                <line x1="100.9375" y1="14.8380282" x2="1.0625" y2="14.8380282" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(51.000000, 42.394366)">
-                            <g id="illu/virus/branche" transform="translate(55.250000, 14.838028) scale(1, -1) rotate(90.000000) translate(-55.250000, -14.838028) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="103.0625" cy="14.8380282" rx="7.4375" ry="14.8380282"></ellipse>
-                                <line x1="100.9375" y1="14.8380282" x2="1.0625" y2="14.8380282" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(51.000000, 148.380282)">
-                            <g id="illu/virus/branche" transform="translate(55.250000, 14.838028) scale(-1, 1) rotate(90.000000) translate(-55.250000, -14.838028) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="103.0625" cy="14.8380282" rx="7.4375" ry="14.8380282"></ellipse>
-                                <line x1="100.9375" y1="14.8380282" x2="1.0625" y2="14.8380282" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                    <g id="Group" transform="translate(152.058332, 150.759196) rotate(45.000000) translate(-152.058332, -150.759196) translate(45.808332, 44.773280)">
-                        <g transform="translate(105.643646, 90.886305)" id="illu/virus/branche">
-                            <ellipse id="Oval" fill="#5770BE" cx="98.5330158" cy="15.1477175" rx="7.11063001" ry="15.1477175"></ellipse>
-                            <line x1="96.5014072" y1="15.1477175" x2="1.01580429" y2="15.1477175" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                        </g>
-                        <g transform="translate(0.000000, 90.886305)" id="illu/virus/branche">
-                            <g transform="translate(52.821823, 15.147717) scale(-1, 1) translate(-52.821823, -15.147717) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="98.5330158" cy="15.1477175" rx="7.11063001" ry="15.1477175"></ellipse>
-                                <line x1="96.5014072" y1="15.1477175" x2="1.01580429" y2="15.1477175" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(52.821823, 38.374218)" id="illu/virus/branche">
-                            <g transform="translate(52.821823, 15.147717) scale(1, -1) rotate(90.000000) translate(-52.821823, -15.147717) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="98.5330158" cy="15.1477175" rx="7.11063001" ry="15.1477175"></ellipse>
-                                <line x1="96.5014072" y1="15.1477175" x2="1.01580429" y2="15.1477175" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(52.821823, 143.398392)" id="illu/virus/branche">
-                            <g transform="translate(52.821823, 15.147717) scale(-1, 1) rotate(90.000000) translate(-52.821823, -15.147717) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="98.5330158" cy="15.1477175" rx="7.11063001" ry="15.1477175"></ellipse>
-                                <line x1="96.5014072" y1="15.1477175" x2="1.01580429" y2="15.1477175" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                    <g id="Group-4" transform="translate(68.114967, 68.987472)">
-                        <g id="Group" transform="translate(81.451126, 86.427580)">
-                            <g id="illu/virus/branche" transform="translate(40.632171, 11.108326) rotate(22.500000) translate(-40.632171, -11.108326) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.7946275" cy="11.1083261" rx="5.46971539" ry="11.1083261"></ellipse>
-                                <line x1="74.2318517" y1="11.1083261" x2="0.781387913" y2="11.1083261" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(4.250000, 54.112450)">
-                            <g id="illu/virus/branche" transform="translate(40.632171, 11.108326) scale(-1, 1) rotate(-22.500000) translate(-40.632171, -11.108326) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.7946275" cy="11.1083261" rx="5.46971539" ry="11.1083261"></ellipse>
-                                <line x1="74.2318517" y1="11.1083261" x2="0.781387913" y2="11.1083261" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(59.103431, 33.915493)">
-                            <g id="illu/virus/branche" transform="translate(40.632171, 11.108326) scale(1, -1) rotate(67.500000) translate(-40.632171, -11.108326) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.7946275" cy="11.1083261" rx="5.46971539" ry="11.1083261"></ellipse>
-                                <line x1="74.2318517" y1="11.1083261" x2="0.781387913" y2="11.1083261" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(26.597694, 106.624537)">
-                            <g id="illu/virus/branche" transform="translate(40.632171, 11.108326) scale(-1, 1) rotate(67.500000) translate(-40.632171, -11.108326) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.7946275" cy="11.1083261" rx="5.46971539" ry="11.1083261"></ellipse>
-                                <line x1="74.2318517" y1="11.1083261" x2="0.781387913" y2="11.1083261" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                    <g id="Group" transform="translate(150.749896, 152.342047) rotate(67.500000) translate(-150.749896, -152.342047) translate(67.874896, 69.673033)">
-                        <g transform="translate(81.366566, 69.542391)" id="illu/virus/branche">
-                            <ellipse id="Oval" fill="#5770BE" cx="75.8970527" cy="11.5895288" rx="5.4771069" ry="11.5895288"></ellipse>
-                            <line x1="74.332165" y1="11.5895288" x2="0.782443842" y2="11.5895288" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                        </g>
-                        <g transform="translate(-0.007594, 69.542391)" id="illu/virus/branche">
-                            <g transform="translate(40.687080, 11.589529) scale(-1, 1) translate(-40.687080, -11.589529) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.8970527" cy="11.5895288" rx="5.4771069" ry="11.5895288"></ellipse>
-                                <line x1="74.332165" y1="11.5895288" x2="0.782443842" y2="11.5895288" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(40.679486, 29.365357)" id="illu/virus/branche">
-                            <g transform="translate(40.687080, 11.589529) scale(1, -1) rotate(90.000000) translate(-40.687080, -11.589529) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.8970527" cy="11.5895288" rx="5.4771069" ry="11.5895288"></ellipse>
-                                <line x1="74.332165" y1="11.5895288" x2="0.782443842" y2="11.5895288" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(40.679486, 109.719424)" id="illu/virus/branche">
-                            <g transform="translate(40.687080, 11.589529) scale(-1, 1) rotate(90.000000) translate(-40.687080, -11.589529) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.8970527" cy="11.5895288" rx="5.4771069" ry="11.5895288"></ellipse>
-                                <line x1="74.332165" y1="11.5895288" x2="0.782443842" y2="11.5895288" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                </g>
+            <g transform="scale(-1 1) rotate(-45 87.4 265.7)">
+              <ellipse fill="#5770BE" cx="98.5" cy="15.1" rx="7.1" ry="15.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M96.5 15.1H1"/>
             </g>
-            <g mask="url(#mask-2)" id="petit_covid">
-                <g transform="translate(480.000000, -151.000000)" id="Group-5">
-                    <ellipse id="Oval" fill="#5770BE" cx="148.75" cy="152.619718" rx="55.25" ry="55.1126761"></ellipse>
-                    <g id="Group-2" transform="translate(42.500000, 38.154930)">
-                        <g id="illu/virus/branche" transform="translate(106.250000, 97.507042)">
-                            <ellipse id="Oval" fill="#5770BE" cx="103.0625" cy="14.8380282" rx="7.4375" ry="14.8380282"></ellipse>
-                            <line x1="100.9375" y1="14.8380282" x2="1.0625" y2="14.8380282" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                        </g>
-                        <g id="Group" transform="translate(0.000000, 97.507042)">
-                            <g id="illu/virus/branche" transform="translate(55.250000, 14.838028) scale(-1, 1) translate(-55.250000, -14.838028) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="103.0625" cy="14.8380282" rx="7.4375" ry="14.8380282"></ellipse>
-                                <line x1="100.9375" y1="14.8380282" x2="1.0625" y2="14.8380282" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(51.000000, 42.394366)">
-                            <g id="illu/virus/branche" transform="translate(55.250000, 14.838028) scale(1, -1) rotate(90.000000) translate(-55.250000, -14.838028) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="103.0625" cy="14.8380282" rx="7.4375" ry="14.8380282"></ellipse>
-                                <line x1="100.9375" y1="14.8380282" x2="1.0625" y2="14.8380282" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(51.000000, 148.380282)">
-                            <g id="illu/virus/branche" transform="translate(55.250000, 14.838028) scale(-1, 1) rotate(90.000000) translate(-55.250000, -14.838028) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="103.0625" cy="14.8380282" rx="7.4375" ry="14.8380282"></ellipse>
-                                <line x1="100.9375" y1="14.8380282" x2="1.0625" y2="14.8380282" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                    <g id="Group" transform="translate(152.058332, 150.759196) rotate(45.000000) translate(-152.058332, -150.759196) translate(45.808332, 44.773280)">
-                        <g transform="translate(105.643646, 90.886305)" id="illu/virus/branche">
-                            <ellipse id="Oval" fill="#5770BE" cx="98.5330158" cy="15.1477175" rx="7.11063001" ry="15.1477175"></ellipse>
-                            <line x1="96.5014072" y1="15.1477175" x2="1.01580429" y2="15.1477175" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                        </g>
-                        <g transform="translate(0.000000, 90.886305)" id="illu/virus/branche">
-                            <g transform="translate(52.821823, 15.147717) scale(-1, 1) translate(-52.821823, -15.147717) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="98.5330158" cy="15.1477175" rx="7.11063001" ry="15.1477175"></ellipse>
-                                <line x1="96.5014072" y1="15.1477175" x2="1.01580429" y2="15.1477175" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(52.821823, 38.374218)" id="illu/virus/branche">
-                            <g transform="translate(52.821823, 15.147717) scale(1, -1) rotate(90.000000) translate(-52.821823, -15.147717) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="98.5330158" cy="15.1477175" rx="7.11063001" ry="15.1477175"></ellipse>
-                                <line x1="96.5014072" y1="15.1477175" x2="1.01580429" y2="15.1477175" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(52.821823, 143.398392)" id="illu/virus/branche">
-                            <g transform="translate(52.821823, 15.147717) scale(-1, 1) rotate(90.000000) translate(-52.821823, -15.147717) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="98.5330158" cy="15.1477175" rx="7.11063001" ry="15.1477175"></ellipse>
-                                <line x1="96.5014072" y1="15.1477175" x2="1.01580429" y2="15.1477175" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                    <g id="Group-4" transform="translate(68.114967, 68.987472)">
-                        <g id="Group" transform="translate(81.451126, 86.427580)">
-                            <g id="illu/virus/branche" transform="translate(40.632171, 11.108326) rotate(22.500000) translate(-40.632171, -11.108326) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.7946275" cy="11.1083261" rx="5.46971539" ry="11.1083261"></ellipse>
-                                <line x1="74.2318517" y1="11.1083261" x2="0.781387913" y2="11.1083261" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(4.250000, 54.112450)">
-                            <g id="illu/virus/branche" transform="translate(40.632171, 11.108326) scale(-1, 1) rotate(-22.500000) translate(-40.632171, -11.108326) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.7946275" cy="11.1083261" rx="5.46971539" ry="11.1083261"></ellipse>
-                                <line x1="74.2318517" y1="11.1083261" x2="0.781387913" y2="11.1083261" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(59.103431, 33.915493)">
-                            <g id="illu/virus/branche" transform="translate(40.632171, 11.108326) scale(1, -1) rotate(67.500000) translate(-40.632171, -11.108326) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.7946275" cy="11.1083261" rx="5.46971539" ry="11.1083261"></ellipse>
-                                <line x1="74.2318517" y1="11.1083261" x2="0.781387913" y2="11.1083261" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(26.597694, 106.624537)">
-                            <g id="illu/virus/branche" transform="translate(40.632171, 11.108326) scale(-1, 1) rotate(67.500000) translate(-40.632171, -11.108326) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.7946275" cy="11.1083261" rx="5.46971539" ry="11.1083261"></ellipse>
-                                <line x1="74.2318517" y1="11.1083261" x2="0.781387913" y2="11.1083261" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                    <g id="Group" transform="translate(150.749896, 152.342047) rotate(67.500000) translate(-150.749896, -152.342047) translate(67.874896, 69.673033)">
-                        <g transform="translate(81.366566, 69.542391)" id="illu/virus/branche">
-                            <ellipse id="Oval" fill="#5770BE" cx="75.8970527" cy="11.5895288" rx="5.4771069" ry="11.5895288"></ellipse>
-                            <line x1="74.332165" y1="11.5895288" x2="0.782443842" y2="11.5895288" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                        </g>
-                        <g transform="translate(-0.007594, 69.542391)" id="illu/virus/branche">
-                            <g transform="translate(40.687080, 11.589529) scale(-1, 1) translate(-40.687080, -11.589529) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.8970527" cy="11.5895288" rx="5.4771069" ry="11.5895288"></ellipse>
-                                <line x1="74.332165" y1="11.5895288" x2="0.782443842" y2="11.5895288" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(40.679486, 29.365357)" id="illu/virus/branche">
-                            <g transform="translate(40.687080, 11.589529) scale(1, -1) rotate(90.000000) translate(-40.687080, -11.589529) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.8970527" cy="11.5895288" rx="5.4771069" ry="11.5895288"></ellipse>
-                                <line x1="74.332165" y1="11.5895288" x2="0.782443842" y2="11.5895288" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(40.679486, 109.719424)" id="illu/virus/branche">
-                            <g transform="translate(40.687080, 11.589529) scale(-1, 1) rotate(90.000000) translate(-40.687080, -11.589529) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="75.8970527" cy="11.5895288" rx="5.4771069" ry="11.5895288"></ellipse>
-                                <line x1="74.332165" y1="11.5895288" x2="0.782443842" y2="11.5895288" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                </g>
+            <g transform="scale(1 -1) rotate(45 275.7 115)">
+              <ellipse fill="#5770BE" cx="98.5" cy="15.1" rx="7.1" ry="15.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M96.5 15.1H1"/>
             </g>
-            <g mask="url(#mask-2)" id="covid">
-                <g transform="translate(62.000000, 46.000000)" id="Group-5">
-                    <ellipse id="Oval" fill="#5770BE" cx="220.380952" cy="221" rx="80.5238095" ry="80.75"></ellipse>
-                    <g id="Group-4" transform="translate(67.809524, 59.500000)">
-                        <g id="illu/virus/branche" transform="translate(152.571429, 140.250000)">
-                            <ellipse id="Oval" fill="#5770BE" cx="146.255037" cy="21.25" rx="10.5544872" ry="21.25"></ellipse>
-                            <line x1="143.239469" y1="21.25" x2="1.50778388" y2="21.25" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                        </g>
-                        <g id="Group" transform="translate(0.000000, 140.250000)">
-                            <g id="illu/virus/branche" transform="translate(78.404762, 21.250000) scale(-1, 1) translate(-78.404762, -21.250000) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="146.255037" cy="21.25" rx="10.5544872" ry="21.25"></ellipse>
-                                <line x1="143.239469" y1="21.25" x2="1.50778388" y2="21.25" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(72.047619, 59.500000)">
-                            <g id="illu/virus/branche" transform="translate(78.404762, 21.250000) scale(1, -1) rotate(90.000000) translate(-78.404762, -21.250000) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="146.255037" cy="21.25" rx="10.5544872" ry="21.25"></ellipse>
-                                <line x1="143.239469" y1="21.25" x2="1.50778388" y2="21.25" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(72.047619, 212.500000)">
-                            <g id="illu/virus/branche" transform="translate(78.404762, 21.250000) scale(-1, 1) rotate(90.000000) translate(-78.404762, -21.250000) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="146.255037" cy="21.25" rx="10.5544872" ry="21.25"></ellipse>
-                                <line x1="143.239469" y1="21.25" x2="1.50778388" y2="21.25" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                    <g id="Group" transform="translate(222.742999, 220.869024) rotate(45.000000) translate(-222.742999, -220.869024) translate(68.052523, 65.744024)">
-                        <g transform="translate(153.632099, 132.872783)" id="illu/virus/branche">
-                            <ellipse id="Oval" fill="#5770BE" cx="143.291477" cy="22.1454639" rx="10.3406221" ry="22.1454639"></ellipse>
-                            <line x1="140.337014" y1="22.1454639" x2="1.47723172" y2="22.1454639" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                        </g>
-                        <g transform="translate(0.000000, 132.872783)" id="illu/virus/branche">
-                            <g transform="translate(76.816050, 22.145464) scale(-1, 1) translate(-76.816050, -22.145464) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="143.291477" cy="22.1454639" rx="10.3406221" ry="22.1454639"></ellipse>
-                                <line x1="140.337014" y1="22.1454639" x2="1.47723172" y2="22.1454639" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(76.816050, 56.101842)" id="illu/virus/branche">
-                            <g transform="translate(76.816050, 22.145464) scale(1, -1) rotate(90.000000) translate(-76.816050, -22.145464) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="143.291477" cy="22.1454639" rx="10.3406221" ry="22.1454639"></ellipse>
-                                <line x1="140.337014" y1="22.1454639" x2="1.47723172" y2="22.1454639" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(76.816050, 209.643725)" id="illu/virus/branche">
-                            <g transform="translate(76.816050, 22.145464) scale(-1, 1) rotate(90.000000) translate(-76.816050, -22.145464) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="143.291477" cy="22.1454639" rx="10.3406221" ry="22.1454639"></ellipse>
-                                <line x1="140.337014" y1="22.1454639" x2="1.47723172" y2="22.1454639" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                    <g id="Group-2" transform="translate(102.610957, 103.904357)">
-                        <g id="Group" transform="translate(116.507706, 123.520941)">
-                            <g id="illu/virus/branche" transform="translate(59.089269, 16.240007) rotate(22.500000) translate(-59.089269, -16.240007) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="110.224213" cy="16.2400068" rx="7.95432467" ry="16.2400068"></ellipse>
-                                <line x1="107.951549" y1="16.2400068" x2="1.1363321" y2="16.2400068" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(4.238095, 76.277285)">
-                            <g id="illu/virus/branche" transform="translate(59.089269, 16.240007) scale(-1, 1) rotate(-22.500000) translate(-59.089269, -16.240007) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="110.224213" cy="16.2400068" rx="7.95432467" ry="16.2400068"></ellipse>
-                                <line x1="107.951549" y1="16.2400068" x2="1.1363321" y2="16.2400068" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(84.008608, 46.750000)">
-                            <g id="illu/virus/branche" transform="translate(59.089269, 16.240007) scale(1, -1) rotate(67.500000) translate(-59.089269, -16.240007) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="110.224213" cy="16.2400068" rx="7.95432467" ry="16.2400068"></ellipse>
-                                <line x1="107.951549" y1="16.2400068" x2="1.1363321" y2="16.2400068" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g id="Group" transform="translate(36.737193, 153.048227)">
-                            <g id="illu/virus/branche" transform="translate(59.089269, 16.240007) scale(-1, 1) rotate(67.500000) translate(-59.089269, -16.240007) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="110.224213" cy="16.2400068" rx="7.95432467" ry="16.2400068"></ellipse>
-                                <line x1="107.951549" y1="16.2400068" x2="1.1363321" y2="16.2400068" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                    <g id="Group" transform="translate(221.822497, 220.494587) rotate(67.500000) translate(-221.822497, -220.494587) translate(103.155830, 101.494587)">
-                        <g transform="translate(118.343306, 101.652387)" id="illu/virus/branche">
-                            <ellipse id="Oval" fill="#5770BE" cx="110.373165" cy="16.9435093" rx="7.96507376" ry="16.9435093"></ellipse>
-                            <line x1="108.09743" y1="16.9435093" x2="1.13786768" y2="16.9435093" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                        </g>
-                        <g transform="translate(0.005067, 101.652387)" id="illu/virus/branche">
-                            <g transform="translate(59.169119, 16.943509) scale(-1, 1) translate(-59.169119, -16.943509) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="110.373165" cy="16.9435093" rx="7.96507376" ry="16.9435093"></ellipse>
-                                <line x1="108.09743" y1="16.9435093" x2="1.13786768" y2="16.9435093" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(59.174186, 42.914888)" id="illu/virus/branche">
-                            <g transform="translate(59.169119, 16.943509) scale(1, -1) rotate(90.000000) translate(-59.169119, -16.943509) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="110.373165" cy="16.9435093" rx="7.96507376" ry="16.9435093"></ellipse>
-                                <line x1="108.09743" y1="16.9435093" x2="1.13786768" y2="16.9435093" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                        <g transform="translate(59.174186, 160.389886)" id="illu/virus/branche">
-                            <g transform="translate(59.169119, 16.943509) scale(-1, 1) rotate(90.000000) translate(-59.169119, -16.943509) ">
-                                <ellipse id="Oval" fill="#5770BE" cx="110.373165" cy="16.9435093" rx="7.96507376" ry="16.9435093"></ellipse>
-                                <line x1="108.09743" y1="16.9435093" x2="1.13786768" y2="16.9435093" id="Line" stroke="#5770BE" stroke-width="3" stroke-linecap="square"></line>
-                            </g>
-                        </g>
-                    </g>
-                </g>
+            <g transform="scale(-1 1) rotate(45 -238.9 -100.6)">
+              <ellipse fill="#5770BE" cx="98.5" cy="15.1" rx="7.1" ry="15.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M96.5 15.1H1"/>
             </g>
+          </g>
+          <g>
+            <g transform="rotate(22.5 -275.2 464.8)">
+              <ellipse fill="#5770BE" cx="75.8" cy="11.1" rx="5.5" ry="11.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.2 11.1H.8"/>
+            </g>
+            <g transform="scale(-1 1) rotate(-22.5 273.3 458.8)">
+              <ellipse fill="#5770BE" cx="75.8" cy="11.1" rx="5.5" ry="11.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.2 11.1H.8"/>
+            </g>
+            <g transform="scale(1 -1) rotate(67.5 197.9 43.7)">
+              <ellipse fill="#5770BE" cx="75.8" cy="11.1" rx="5.5" ry="11.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.2 11.1H.8"/>
+            </g>
+            <g transform="scale(-1 1) rotate(67.5 -178.8 -32.8)">
+              <ellipse fill="#5770BE" cx="75.8" cy="11.1" rx="5.5" ry="11.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.2 11.1H.8"/>
+            </g>
+          </g>
+          <g>
+            <g transform="rotate(67.5 -28 194.4)">
+              <ellipse fill="#5770BE" cx="75.9" cy="11.6" rx="5.5" ry="11.6"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.3 11.6H.8"/>
+            </g>
+            <g transform="scale(-1 1) rotate(-67.5 28 194.4)">
+              <ellipse fill="#5770BE" cx="75.9" cy="11.6" rx="5.5" ry="11.6"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.3 11.6H.8"/>
+            </g>
+            <g transform="scale(1 -1) rotate(22.5 483.1 310.4)">
+              <ellipse fill="#5770BE" cx="75.9" cy="11.6" rx="5.5" ry="11.6"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.3 11.6H.8"/>
+            </g>
+            <g transform="scale(-1 1) rotate(22.5 -424.4 -301.4)">
+              <ellipse fill="#5770BE" cx="75.9" cy="11.6" rx="5.5" ry="11.6"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.3 11.6H.8"/>
+            </g>
+          </g>
         </g>
-        <rect id="Rectangle" fill="#504F88" fill-rule="nonzero" x="402" y="94" width="171" height="24"></rect>
+      </g>
+      <g mask="url(#b)">
+        <g transform="translate(-168 241)">
+          <ellipse fill="#5770BE" cx="148.8" cy="152.6" rx="55.3" ry="55.1"/>
+          <g transform="translate(148.8 135.7)">
+            <ellipse fill="#5770BE" cx="103.1" cy="14.8" rx="7.4" ry="14.8"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M100.9 14.8H1.1"/>
+          </g>
+          <g transform="matrix(-1 0 0 1 153 135.7)">
+            <ellipse fill="#5770BE" cx="103.1" cy="14.8" rx="7.4" ry="14.8"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M100.9 14.8H1.1"/>
+          </g>
+          <g transform="matrix(0 -1 -1 0 163.6 150.6)">
+            <ellipse fill="#5770BE" cx="103.1" cy="14.8" rx="7.4" ry="14.8"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M100.9 14.8H1.1"/>
+          </g>
+          <g transform="matrix(0 1 1 0 134 146.1)">
+            <ellipse fill="#5770BE" cx="103.1" cy="14.8" rx="7.4" ry="14.8"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M100.9 14.8H1.1"/>
+          </g>
+          <g>
+            <g transform="rotate(45 -87.4 265.7)">
+              <ellipse fill="#5770BE" cx="98.5" cy="15.1" rx="7.1" ry="15.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M96.5 15.1H1"/>
+            </g>
+            <g transform="scale(-1 1) rotate(-45 87.4 265.7)">
+              <ellipse fill="#5770BE" cx="98.5" cy="15.1" rx="7.1" ry="15.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M96.5 15.1H1"/>
+            </g>
+            <g transform="scale(1 -1) rotate(45 275.7 115)">
+              <ellipse fill="#5770BE" cx="98.5" cy="15.1" rx="7.1" ry="15.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M96.5 15.1H1"/>
+            </g>
+            <g transform="scale(-1 1) rotate(45 -238.9 -100.6)">
+              <ellipse fill="#5770BE" cx="98.5" cy="15.1" rx="7.1" ry="15.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M96.5 15.1H1"/>
+            </g>
+          </g>
+          <g>
+            <g transform="rotate(22.5 -275.2 464.8)">
+              <ellipse fill="#5770BE" cx="75.8" cy="11.1" rx="5.5" ry="11.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.2 11.1H.8"/>
+            </g>
+            <g transform="scale(-1 1) rotate(-22.5 273.3 458.8)">
+              <ellipse fill="#5770BE" cx="75.8" cy="11.1" rx="5.5" ry="11.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.2 11.1H.8"/>
+            </g>
+            <g transform="scale(1 -1) rotate(67.5 197.9 43.7)">
+              <ellipse fill="#5770BE" cx="75.8" cy="11.1" rx="5.5" ry="11.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.2 11.1H.8"/>
+            </g>
+            <g transform="scale(-1 1) rotate(67.5 -178.8 -32.8)">
+              <ellipse fill="#5770BE" cx="75.8" cy="11.1" rx="5.5" ry="11.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.2 11.1H.8"/>
+            </g>
+          </g>
+          <g>
+            <g transform="rotate(67.5 -28 194.4)">
+              <ellipse fill="#5770BE" cx="75.9" cy="11.6" rx="5.5" ry="11.6"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.3 11.6H.8"/>
+            </g>
+            <g transform="scale(-1 1) rotate(-67.5 28 194.4)">
+              <ellipse fill="#5770BE" cx="75.9" cy="11.6" rx="5.5" ry="11.6"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.3 11.6H.8"/>
+            </g>
+            <g transform="scale(1 -1) rotate(22.5 483.1 310.4)">
+              <ellipse fill="#5770BE" cx="75.9" cy="11.6" rx="5.5" ry="11.6"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.3 11.6H.8"/>
+            </g>
+            <g transform="scale(-1 1) rotate(22.5 -424.4 -301.4)">
+              <ellipse fill="#5770BE" cx="75.9" cy="11.6" rx="5.5" ry="11.6"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.3 11.6H.8"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g mask="url(#b)">
+        <g transform="translate(480 -151)">
+          <ellipse fill="#5770BE" cx="148.8" cy="152.6" rx="55.3" ry="55.1"/>
+          <g transform="translate(148.8 135.7)">
+            <ellipse fill="#5770BE" cx="103.1" cy="14.8" rx="7.4" ry="14.8"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M100.9 14.8H1.1"/>
+          </g>
+          <g transform="matrix(-1 0 0 1 153 135.7)">
+            <ellipse fill="#5770BE" cx="103.1" cy="14.8" rx="7.4" ry="14.8"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M100.9 14.8H1.1"/>
+          </g>
+          <g transform="matrix(0 -1 -1 0 163.6 150.6)">
+            <ellipse fill="#5770BE" cx="103.1" cy="14.8" rx="7.4" ry="14.8"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M100.9 14.8H1.1"/>
+          </g>
+          <g transform="matrix(0 1 1 0 134 146.1)">
+            <ellipse fill="#5770BE" cx="103.1" cy="14.8" rx="7.4" ry="14.8"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M100.9 14.8H1.1"/>
+          </g>
+          <g>
+            <g transform="rotate(45 -87.4 265.7)">
+              <ellipse fill="#5770BE" cx="98.5" cy="15.1" rx="7.1" ry="15.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M96.5 15.1H1"/>
+            </g>
+            <g transform="scale(-1 1) rotate(-45 87.4 265.7)">
+              <ellipse fill="#5770BE" cx="98.5" cy="15.1" rx="7.1" ry="15.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M96.5 15.1H1"/>
+            </g>
+            <g transform="scale(1 -1) rotate(45 275.7 115)">
+              <ellipse fill="#5770BE" cx="98.5" cy="15.1" rx="7.1" ry="15.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M96.5 15.1H1"/>
+            </g>
+            <g transform="scale(-1 1) rotate(45 -238.9 -100.6)">
+              <ellipse fill="#5770BE" cx="98.5" cy="15.1" rx="7.1" ry="15.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M96.5 15.1H1"/>
+            </g>
+          </g>
+          <g>
+            <g transform="rotate(22.5 -275.2 464.8)">
+              <ellipse fill="#5770BE" cx="75.8" cy="11.1" rx="5.5" ry="11.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.2 11.1H.8"/>
+            </g>
+            <g transform="scale(-1 1) rotate(-22.5 273.3 458.8)">
+              <ellipse fill="#5770BE" cx="75.8" cy="11.1" rx="5.5" ry="11.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.2 11.1H.8"/>
+            </g>
+            <g transform="scale(1 -1) rotate(67.5 197.9 43.7)">
+              <ellipse fill="#5770BE" cx="75.8" cy="11.1" rx="5.5" ry="11.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.2 11.1H.8"/>
+            </g>
+            <g transform="scale(-1 1) rotate(67.5 -178.8 -32.8)">
+              <ellipse fill="#5770BE" cx="75.8" cy="11.1" rx="5.5" ry="11.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.2 11.1H.8"/>
+            </g>
+          </g>
+          <g>
+            <g transform="rotate(67.5 -28 194.4)">
+              <ellipse fill="#5770BE" cx="75.9" cy="11.6" rx="5.5" ry="11.6"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.3 11.6H.8"/>
+            </g>
+            <g transform="scale(-1 1) rotate(-67.5 28 194.4)">
+              <ellipse fill="#5770BE" cx="75.9" cy="11.6" rx="5.5" ry="11.6"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.3 11.6H.8"/>
+            </g>
+            <g transform="scale(1 -1) rotate(22.5 483.1 310.4)">
+              <ellipse fill="#5770BE" cx="75.9" cy="11.6" rx="5.5" ry="11.6"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.3 11.6H.8"/>
+            </g>
+            <g transform="scale(-1 1) rotate(22.5 -424.4 -301.4)">
+              <ellipse fill="#5770BE" cx="75.9" cy="11.6" rx="5.5" ry="11.6"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M74.3 11.6H.8"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g mask="url(#b)">
+        <g transform="translate(62 46)">
+          <ellipse fill="#5770BE" cx="220.4" cy="221" rx="80.5" ry="80.8"/>
+          <g transform="translate(220.4 199.8)">
+            <ellipse fill="#5770BE" cx="146.3" cy="21.3" rx="10.6" ry="21.3"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M143.2 21.3H1.5"/>
+          </g>
+          <g transform="matrix(-1 0 0 1 224.6 199.8)">
+            <ellipse fill="#5770BE" cx="146.3" cy="21.3" rx="10.6" ry="21.3"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M143.2 21.3H1.5"/>
+          </g>
+          <g transform="matrix(0 -1 -1 0 239.5 218.7)">
+            <ellipse fill="#5770BE" cx="146.3" cy="21.3" rx="10.6" ry="21.3"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M143.2 21.3H1.5"/>
+          </g>
+          <g transform="matrix(0 1 1 0 197 214.8)">
+            <ellipse fill="#5770BE" cx="146.3" cy="21.3" rx="10.6" ry="21.3"/>
+            <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M143.2 21.3H1.5"/>
+          </g>
+          <g>
+            <g transform="rotate(45 -127.9 389.2)">
+              <ellipse fill="#5770BE" cx="143.3" cy="22.1" rx="10.3" ry="22.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M140.3 22.1H1.5"/>
+            </g>
+            <g transform="scale(-1 1) rotate(-45 127.9 389.2)">
+              <ellipse fill="#5770BE" cx="143.3" cy="22.1" rx="10.3" ry="22.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M140.3 22.1H1.5"/>
+            </g>
+            <g transform="scale(1 -1) rotate(45 403.4 169)">
+              <ellipse fill="#5770BE" cx="143.3" cy="22.1" rx="10.3" ry="22.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M140.3 22.1H1.5"/>
+            </g>
+            <g transform="scale(-1 1) rotate(45 -349.9 -147)">
+              <ellipse fill="#5770BE" cx="143.3" cy="22.1" rx="10.3" ry="22.1"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M140.3 22.1H1.5"/>
+            </g>
+          </g>
+          <g>
+            <g transform="rotate(22.5 -403 680.7)">
+              <ellipse fill="#5770BE" cx="110.2" cy="16.2" rx="8" ry="16.2"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M108 16.2H1.1"/>
+            </g>
+            <g transform="scale(-1 1) rotate(-22.5 399.5 672)">
+              <ellipse fill="#5770BE" cx="110.2" cy="16.2" rx="8" ry="16.2"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M108 16.2H1.1"/>
+            </g>
+            <g transform="scale(1 -1) rotate(67.5 289.4 64.3)">
+              <ellipse fill="#5770BE" cx="110.2" cy="16.2" rx="8" ry="16.2"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M108 16.2H1.1"/>
+            </g>
+            <g transform="scale(-1 1) rotate(67.5 -262 -48)">
+              <ellipse fill="#5770BE" cx="110.2" cy="16.2" rx="8" ry="16.2"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M108 16.2H1.1"/>
+            </g>
+          </g>
+          <g>
+            <g transform="rotate(67.5 -41 284.7)">
+              <ellipse fill="#5770BE" cx="110.4" cy="16.9" rx="8" ry="16.9"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M108.1 16.9H1.1"/>
+            </g>
+            <g transform="scale(-1 1) rotate(-67.5 41 284.7)">
+              <ellipse fill="#5770BE" cx="110.4" cy="16.9" rx="8" ry="16.9"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M108.1 16.9H1.1"/>
+            </g>
+            <g transform="scale(1 -1) rotate(22.5 707 455.6)">
+              <ellipse fill="#5770BE" cx="110.4" cy="16.9" rx="8" ry="16.9"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M108.1 16.9H1.1"/>
+            </g>
+            <g transform="scale(-1 1) rotate(22.5 -621.3 -440.8)">
+              <ellipse fill="#5770BE" cx="110.4" cy="16.9" rx="8" ry="16.9"/>
+              <path stroke="#5770BE" stroke-width="3" stroke-linecap="square" d="M108.1 16.9H1.1"/>
+            </g>
+          </g>
+        </g>
+      </g>
     </g>
+    <path fill="#504F88" fill-rule="nonzero" d="M402 94h171v24H402z"/>
+  </g>
 </svg>
