@@ -81,34 +81,6 @@ Nous vous invitons à privilégier le **télétravail** ou rentrer en contact av
 
 
 
-## [conseils_contact_à_risque.md](conseils_contact_à_risque.md)
-
-Nous vous conseillons de :
-
-1. Contacter votre **médecin généraliste**.
-
-2. Vous maintenir **en isolement pendant 7 jours** après le dernier contact avec le malade.
-
-3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
-
-4. Si vous constatez l’apparition de **symptômes**, contactez de nouveau votre médecin, et suivez leur évolution avec le [questionnaire de suivi](#suivisymptomes).
-
-5. **Prévoir un test au 7<sup>e</sup> jour** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid) (vous serez prioritaire). S’il est négatif, vous pouvez lever votre isolement. S’il est positif, il faudra à nouveau 7 jours d’isolement, et surveiller l’apparition de symptômes.
-
-6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
-
-
-
-## [conseils_contact_à_risque_autre.md](conseils_contact_à_risque_autre.md)
-
-Vous avez passé du temps avec quelqu’un de positif, mais il ne s’agit pas *a priori* d’un contact à risque. Au moindre doute, ou en cas d’apparition de symptômes, n’hésitez pas à :
-
-1. Contacter **votre médecin**.
-
-2. **Revenir sur Mes Conseils Covid** si votre situation change, afin d’avoir les conseils adaptés à votre nouvelle situation !
-
-
-
 ## [conseils_contact_à_risque_info.md](conseils_contact_à_risque_info.md)
 
 * [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf)
@@ -131,42 +103,6 @@ Pour toutes vos questions sur la Covid, vous pouvez :
 
 * aller sur [Covid19-faq](https://www.covid19-faq.fr/)
 * appeler le numéro vert [0 800 130 000](tel:+33800130000) (24h/24 et 7j/7)
-
-
-
-## [conseils_depistage_positif_asymptomatique.md](conseils_depistage_positif_asymptomatique.md)
-
-Nous vous conseillons de :
-
-1. Vous maintenir **en isolement** pendant au moins 7 jours.
-
-2. Si vous constatez l’apparition de **symptômes**, vous pouvez suivre leur évolution avec le [questionnaire de suivi](#suivisymptomes).
-
-3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
-
-4. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisées depuis le début de votre période contagieuse.
-
-5. Si vous avez installé l’application StopCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans l’onglet « Me déclarer ».
-
-6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
-
-
-
-## [conseils_depistage_positif_symptomatique.md](conseils_depistage_positif_symptomatique.md)
-
-Nous vous conseillons de :
-
-1. Vous maintenir **en isolement** pendant au moins 7 jours.
-
-2. Suivre vos **symptômes** avec le [questionnaire de suivi](#suivisymptomes) pour plus de précisions sur votre sortie d’isolement.
-
-3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
-
-4. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisées depuis le début de votre période contagieuse.
-
-5. Si vous avez installé l’application StopCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans l’onglet « Me déclarer ».
-
-6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 
 
@@ -279,6 +215,132 @@ Pour plus d’informations sur l’isolement : [« J’ai les signes de la mal
 
 
 
+## [conseils_personnels_contact_à_risque.md](conseils_personnels_contact_à_risque.md)
+
+Nous vous conseillons de :
+
+1. Contacter votre **médecin généraliste**.
+
+2. Vous maintenir **en isolement pendant 7 jours** après le dernier contact avec le malade.
+
+3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
+
+4. Si vous constatez l’apparition de **symptômes**, contactez de nouveau votre médecin, et suivez leur évolution avec le [questionnaire de suivi](#suivisymptomes).
+
+5. **Prévoir un test au 7<sup>e</sup> jour** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid) (vous serez prioritaire). S’il est négatif, vous pouvez lever votre isolement. S’il est positif, il faudra à nouveau 7 jours d’isolement, et surveiller l’apparition de symptômes.
+
+6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+
+
+
+## [conseils_personnels_contact_à_risque_autre.md](conseils_personnels_contact_à_risque_autre.md)
+
+Vous avez passé du temps avec quelqu’un de positif, mais il ne s’agit pas *a priori* d’un contact à risque. Au moindre doute, ou en cas d’apparition de symptômes, n’hésitez pas à :
+
+1. Contacter **votre médecin**.
+
+2. **Revenir sur Mes Conseils Covid** si votre situation change, afin d’avoir les conseils adaptés à votre nouvelle situation !
+
+
+
+## [conseils_personnels_depistage_positif_asymptomatique.md](conseils_personnels_depistage_positif_asymptomatique.md)
+
+Nous vous conseillons de :
+
+1. Vous maintenir **en isolement** pendant au moins 7 jours.
+
+2. Si vous constatez l’apparition de **symptômes**, vous pouvez suivre leur évolution avec le [questionnaire de suivi](#suivisymptomes).
+
+3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
+
+4. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisées depuis le début de votre période contagieuse.
+
+5. Si vous avez installé l’application StopCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans l’onglet « Me déclarer ».
+
+6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+
+
+
+## [conseils_personnels_depistage_positif_symptomatique.md](conseils_personnels_depistage_positif_symptomatique.md)
+
+Nous vous conseillons de :
+
+1. Vous maintenir **en isolement** pendant au moins 7 jours.
+
+2. Suivre vos **symptômes** avec le [questionnaire de suivi](#suivisymptomes) pour plus de précisions sur votre sortie d’isolement.
+
+3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
+
+4. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisées depuis le début de votre période contagieuse.
+
+5. Si vous avez installé l’application StopCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans l’onglet « Me déclarer ».
+
+6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+
+
+
+## [conseils_personnels_symptômes_actuels_sans_depistage.md](conseils_personnels_symptômes_actuels_sans_depistage.md)
+
+Nous vous conseillons de :
+
+1. **Contacter votre médecin généraliste**.
+
+2. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid).
+
+3. Vous maintenir **en isolement** jusqu’au résultat du test.
+
+4. Suivre vos **symptômes** avec le [questionnaire de suivi](#suivisymptomes).
+
+5. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
+
+6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+
+
+
+## [conseils_personnels_symptômes_actuels_sans_depistage_critique.md](conseils_personnels_symptômes_actuels_sans_depistage_critique.md)
+
+Nous vous conseillons de **communiquer au 15** :
+
+1. Que vous ressentez un **manque de souffle** quand vous parlez ou faites un petit effort
+
+2. Que vous êtes dans l’impossibilité de vous alimenter *ou* de boire **depuis 24 heures ou plus** 
+
+
+
+## [conseils_personnels_symptômes_défaut.md](conseils_personnels_symptômes_défaut.md)
+
+Pour **limiter la chaîne de transmission**, informez vos proches et les personnes que vous avez croisés dernièrement. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisé depuis le début de votre période contagieuse.
+
+
+
+## [conseils_personnels_symptômes_passés_avec_risques.md](conseils_personnels_symptômes_passés_avec_risques.md)
+
+Il vous est conseillé de :
+
+* **Vous maintenir en isolement** ainsi que **votre foyer**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
+
+* **Contacter votre médecin** pour avoir des informations personnalisées sur l’isolement et les tests diagnostiques.
+
+* Appliquer les **gestes barrières**.
+
+
+
+## [conseils_personnels_symptômes_passés_avec_risques_info.md](conseils_personnels_symptômes_passés_avec_risques_info.md)
+
+De façon générale il est conseillé une levée de l’isolement 7 jours après le début des symptômes (si vous ou un membre de votre foyer êtes à risque de forme grave) et après 48 heures sans fièvre ni gêne respiratoire.
+
+
+
+## [conseils_personnels_symptômes_passés_sans_risques.md](conseils_personnels_symptômes_passés_sans_risques.md)
+
+* Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
+
+* **Contactez votre médecin** pour avoir des informations personnalisées sur l’isolement et les **tests de dépistage**.
+
+* Appliquez les **gestes barrières**.
+
+
+
 ## [conseils_santé.md](conseils_santé.md)
 
 La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver votre santé, il vous est recommandé de consulter au moindre signe de maladie.
@@ -318,68 +380,6 @@ La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver 
 </div>
 
 * [Personnes à risques : Réponse à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/personnes-a-risques-reponses-a-vos-questions)
-
-
-
-## [conseils_symptômes_actuels_sans_depistage.md](conseils_symptômes_actuels_sans_depistage.md)
-
-Nous vous conseillons de :
-
-1. **Contacter votre médecin généraliste**.
-
-2. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid).
-
-3. Vous maintenir **en isolement** jusqu’au résultat du test.
-
-4. Suivre vos **symptômes** avec le [questionnaire de suivi](#suivisymptomes).
-
-5. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
-
-6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
-
-
-
-## [conseils_symptômes_actuels_sans_depistage_critique.md](conseils_symptômes_actuels_sans_depistage_critique.md)
-
-Nous vous conseillons de **communiquer au 15** :
-
-1. Que vous ressentez un **manque de souffle** quand vous parlez ou faites un petit effort
-
-2. Que vous êtes dans l’impossibilité de vous alimenter *ou* de boire **depuis 24 heures ou plus** 
-
-
-
-## [conseils_symptômes_défaut.md](conseils_symptômes_défaut.md)
-
-Pour **limiter la chaîne de transmission**, informez vos proches et les personnes que vous avez croisés dernièrement. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisé depuis le début de votre période contagieuse.
-
-
-
-## [conseils_symptômes_passés_avec_risques.md](conseils_symptômes_passés_avec_risques.md)
-
-Il vous est conseillé de :
-
-* **Vous maintenir en isolement** ainsi que **votre foyer**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
-
-* **Contacter votre médecin** pour avoir des informations personnalisées sur l’isolement et les tests diagnostiques.
-
-* Appliquer les **gestes barrières**.
-
-
-
-## [conseils_symptômes_passés_avec_risques_info.md](conseils_symptômes_passés_avec_risques_info.md)
-
-De façon générale il est conseillé une levée de l’isolement 7 jours après le début des symptômes (si vous ou un membre de votre foyer êtes à risque de forme grave) et après 48 heures sans fièvre ni gêne respiratoire.
-
-
-
-## [conseils_symptômes_passés_sans_risques.md](conseils_symptômes_passés_sans_risques.md)
-
-* Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
-
-* **Contactez votre médecin** pour avoir des informations personnalisées sur l’isolement et les **tests de dépistage**.
-
-* Appliquez les **gestes barrières**.
 
 
 

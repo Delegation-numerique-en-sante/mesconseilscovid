@@ -22,6 +22,10 @@ Les fichiers dans le dossier [`statuts/`](statuts/) correspondent aux différent
 
 Les fichiers dans le dossier [`conseils/`](conseils/) correspondent aux différents conseils prodigués par le questionnaire.
 
+### Suivi
+
+Les fichiers dans le dossier [`suivi/`](suivi/) correspondent aux différents messages relatifs à l’évolution des symptômes de la personne.
+
 ### Meta
 
 Les fichiers dans le dossier [`meta/`](meta/) correspondent aux informations additionnelles comme la page d’introduction ou le pied de page par exemple.
@@ -31,368 +35,41 @@ Les fichiers dans le dossier [`meta/`](meta/) correspondent aux informations add
 
 Les règles d’affichage des conseils en fonction des réponses sont décrites ci-dessous :
 
-### Cas nominal
+### Parcours
 
+La première question est relative au dépistage :
 
-#### Statut
+* Si le test est positif ou que la personne est en attente de résultats, elle est redirigée vers le suivi (`Date de premiers symptômes` + `Évolution des symptômes`)
+* Si le test est négatif ou que la personne n’a pas effectué de test, elle est redirigée vers la description de ses `Symptômes actuels` puis `Symptômes passés` et enfin `Contact à risque`.
 
-* [statut_personne_fragile.md](statuts/statut_personne_fragile.md) (orange) si la personne présente un [Risque](#risque)
-* [statut_foyer_fragile.md](statuts/statut_foyer_fragile.md) (jaune) si la case [Foyer](#foyer) fragile est cochée
-* [statut_peu_de_risques.md](statuts/statut_peu_de_risques.md) (vert) par défaut
+Si la personne a des `Symptômes actuels` ou `Symptômes passés`, elle est redirigée vers le suivi (`Date de premiers symptômes` + `Évolution des symptômes`).
 
+Tous les parcours se terminent par les 5 étapes suivantes :
 
-#### Nom (uniquement pour un proche)
+1. `Résidence`
+2. `Foyer`
+3. `Antécédents`
+4. `Caractéristiques`
+5. `Activité professionnelle`
 
-[Titre](questions/question_nom_titre.md)
+Les fichiers pour modifier ces pages de parcours se situent dans le dossier [`questions/`](questions/).
 
-Aide : [aide](questions/question_nom_aide.md)
 
-Question : [libellé](questions/question_nom_libellé.md)
+### Conseils
 
+#### Suivi ou statut
 
-#### Symptômes actuels
+Il s’agit de la phrase de résumé en haut de page, elle correspond aux fichiers dans les dossiers [`suivi/`](suivi/) et [`statuts/`](statuts/).
 
-[Titre](questions/question_symptômes_actuels_titre.md)
 
-Question : [libellé](questions/question_symptômes_actuels_libellé.md), [aide](questions/question_symptômes_aide.md)
+#### Conseils personnels
 
-Sous-question (température) : [libellé](questions/question_symptômes_actuels_température_libellé.md)
+Il s’agit de la première partie de la page intitulée « Vos conseils personnalisés », les fichiers relatifs sont dans le dossier [`conseils/`](conseils/) et commencent tous par `conseils_personnels_*`.
 
-Sous-question (température inconnue) : [libellé](questions/question_symptômes_actuels_température_inconnue_libellé.md)
 
-Sous-question (toux) : [libellé](questions/question_symptômes_actuels_toux_libellé.md)
+#### Conseils blocs
 
-Sous-question (odorat) : [libellé](questions/question_symptômes_actuels_odorat_libellé.md)
-
-Sous-question (douleurs) : [libellé](questions/question_symptômes_actuels_douleurs_libellé.md), [aide](questions/question_symptômes_actuels_douleurs_aide.md)
-
-Sous-question (diarrhée) : [libellé](questions/question_symptômes_actuels_diarrhée_libellé.md)
-
-Sous-question (fatigue) : [libellé](questions/question_symptômes_actuels_fatigue_libellé.md)
-
-Sous-question (alimentation) : [libellé](questions/question_symptômes_actuels_alimentation_libellé.md)
-
-Sous-question (souffle) : [libellé](questions/question_symptômes_actuels_souffle_libellé.md)
-
-Sous-question (autre) : [libellé](questions/question_symptômes_actuels_autre_libellé.md)
-
-Cas particulier : si [Symptôme actuel autre](#symptôme-actuel-autre) (`Sous-question (autre)` est cochée), la personne continue vers les questions relatives aux symptômes passés (cas nominal).
-
-Réponse :
-
-* [réponse_antécédents.md](réponses/réponse_antécédents.md) si [Antécédents](#antécédents) ou antécédents chroniques autres
-* [réponse_caractéristiques_à_risques.md](réponses/réponse_caractéristiques_à_risques.md) si âge > 65 ou grossesse 3e trimestre ou IMC > 30
-* [réponse_symptômes_actuels.md](réponses/réponse_symptômes_actuels.md) si pas [Symptôme actuel autre](#symptôme-actuel-autre)
-
-Conseils :
-
-1. Plusieurs options :
-    * [conseils_symptômes_actuels_gravité4.md](conseils/conseils_symptômes_actuels_gravité4.md) si [Gravité majeure](#gravité-majeure)
-    * ou [conseils_symptômes_actuels_gravité3.md](conseils/conseils_symptômes_actuels_gravité3.md) si (température et toux, personne à [Risque](#risque) mais *un seul* facteur de [gravité mineure](#gravité-mineure)) OU (pas de température et (toux ou douleurs ou odorat) et personne à [Risque](#risque)) OU (avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie)) et (personne à [Risque](#risque) *sans* facteur de [gravité mineure](#gravité-mineure) OU âge supérieur à 50 ans OU *un* ou *plusieurs* facteur de [gravité mineure](#gravité-mineure)))
-    * ou [conseils_symptômes_actuels_gravité2.md](conseils/conseils_symptômes_actuels_gravité2.md) si (température et toux, personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure)) OU (avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie)) et personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure))
-    * ou [conseils_symptômes_actuels_gravité1.md](conseils/conseils_symptômes_actuels_gravité1.md) par défaut
-2. [conseils_symptômes_actuels_autosuivi.md](conseils/conseils_symptômes_actuels_autosuivi.md), [bouton](conseils/conseils_symptômes_actuels_autosuivi_bouton.md)
-3. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
-4. [Conseils d’ordre général](#conseils-dordre-général)
-
-Cas particulier : si [Symptôme actuel autre](#symptôme-actuel-autre), aucun de ces conseils n’est affiché.
-
-Note : par défaut, lorsqu’un symptôme actuel est déclaré, la personne est redirigée ensuite vers le [suivi médecin](#suivi-conseils).
-
-
-#### Dépistage
-
-[Titre](questions/question_dépistage_titre.md)
-
-Question : [libellé](questions/question_dépistage_libellé.md), [aide](questions/question_dépistage_aide.md)
-
-Sous-question (positif) : [libellé](questions/question_dépistage_positif_libellé.md)
-
-Sous-question (négatif) : [libellé](questions/question_dépistage_négatif_libellé.md)
-
-Sous-question (attente) : [libellé](questions/question_dépistage_attente_libellé.md)
-
-Statuts :
-
-* [statut_symptomatique_urgent.md](statuts/statut_symptomatique_urgent.md) (orange) si [Gravité majeure](#gravité-majeure)
-* [statut_symptomatique_positif.md](statuts/statut_symptomatique_positif.md) (orange) si `positif` avec [Symptômes actuels](#symptômes-actuels)
-* [statut_symptomatique_négatif.md](statuts/statut_symptomatique_négatif.md) (orange) si `negatif` avec [Symptômes actuels](#symptômes-actuels)
-* [statut_symptomatique.md](statuts/statut_symptomatique.md) (orange) si `attente` avec [Symptômes actuels](#symptômes-actuels)
-* [statut_asymptomatique.md](statuts/statut_asymptomatique.md) (orange) si `positif` sans [Symptômes actuels](#symptômes-actuels)
-
-
-
-#### Symptômes passés
-
-[Titre](questions/question_symptômes_passés_titre.md)
-
-Question : [libellé](questions/question_symptômes_passés_libellé.md), [aide](questions/question_symptômes_aide.md)
-
-Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange)
-
-Conseils :
-
-1. [conseils_symptômes_passés_sans_risques.md](conseils/conseils_symptômes_passés_sans_risques.md) ou [conseils_symptômes_passés_avec_risques.md](conseils/conseils_symptômes_passés_avec_risques.md) + [conseils_symptômes_passés_avec_risques_info.md](conseils/conseils_symptômes_passés_avec_risques_info.md) selon la valeur de [Risque](#risque) (ou case foyer à risque cochée)
-2. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
-3. [conseils_isolement.md](conseils/conseils_isolement.md)
-4. [Localisation](#localisation)
-5. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
-6. [Conseils d’ordre général](#conseils-dordre-général)
-
-
-#### Contact à risque
-
-[Titre](questions/question_symptômes_contact_à_risque_titre.md)
-
-Question : [libellé](questions/question_symptômes_contact_à_risque_libellé.md), [aide](questions/question_symptômes_contact_à_risque_aide.md)
-
-Sous-question (même lieu de vie) : [libellé](questions/question_symptômes_contact_à_risque_même_lieu_de_vie_libellé.md)
-
-Sous-question (contact direct) : [libellé](questions/question_symptômes_contact_à_risque_contact_direct_libellé.md), [aide](questions/question_symptômes_contact_à_risque_contact_direct_aide.md)
-
-Sous-question (actes) : [libellé](questions/question_symptômes_contact_à_risque_actes_libellé.md), [aide](questions/question_symptômes_contact_à_risque_actes_aide.md)
-
-Sous-question (espace confiné) : [libellé](questions/question_symptômes_contact_à_risque_espace_confiné_libellé.md)
-
-Sous-question (même classe) : [libellé](questions/question_symptômes_contact_à_risque_même_classe_libellé.md)
-
-Sous-question (stop covid) : [libellé](questions/question_symptômes_contact_à_risque_stop_covid_libellé.md)
-
-Sous-question (autre) : [libellé](questions/question_symptômes_contact_à_risque_autre_libellé.md)
-
-Statut : [statut_risque_élevé_contamination.md](statuts/statut_risque_élevé_contamination.md) (orange) ou [statut_peu_de_risques.md](statuts/statut_peu_de_risques.md) (vert) si [Contact à risque autre](#contact-à-risque-autre)
-
-Conseils :
-
-1. [conseils_contact_à_risque.md](conseils/conseils_contact_à_risque.md) ou [conseils_contact_à_risque_autre.md](conseils/conseils_contact_à_risque_autre.md) si [Contact à risque autre](#contact-à-risque-autre)
-2. [conseils_contact_à_risque_info.md](conseils/conseils_contact_à_risque_info.md)
-3. [Localisation](#localisation)
-4. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
-5. [Conseils d’ordre général](#conseils-dordre-général)
-
-
-#### Gestes barrières & masque
-
-Conseils :
-
-1. [conseils par défaut](conseils/conseils_gestes_barrieres_masque_general.md)
-2. [conseils personne fragile](conseils/conseils_gestes_barrieres_masque_fragile.md)
-
-
-#### Localisation
-
-[Titre](questions/question_résidence_titre.md)
-
-Question : [libellé](questions/question_résidence_libellé.md)
-
-Réponse : [réponse_département.md](réponses/réponse_département.md)
-
-Conseils :
-
-1. [conseils circulation faible](conseils/conseils_département_circulation_faible.md) ou [conseils circulation élevée](conseils/conseils_département_circulation_élevée.md) selon le taux d’[Incidence](#incidence) du département
-2. [conseils par défaut](conseils/conseils_département_défaut.md)
-
-
-#### Foyer
-
-[Titre](questions/question_foyer_titre.md)
-
-Question (enfants) : [libellé](questions/question_foyer_enfants_libellé.md)
-
-Question (fragile) : [libellé](questions/question_foyer_fragile_libellé.md), [aide](questions/question_foyer_fragile_aide.md)
-
-Réponse :
-
-* [réponse_foyer_enfants.md](réponses/réponse_foyer_enfants.md) si case cochée
-* [réponse_foyer_fragile.md](réponses/réponse_foyer_fragile.md) si case cochée
-
-Conseils :
-
-Si la case enfants est cochée :
-
-* [conseils_enfants.md](conseils/conseils_enfants.md)
-
-Si la case fragile est cochée :
-
-* [conseils_foyer_fragile.md](conseils/conseils_foyer_fragile.md)
-* [conseils_maladie_chronique_info.md](conseils/conseils_maladie_chronique_info.md)
-* [conseils_activité_pro_foyer_fragile.md](conseils/conseils_activité_pro_foyer_fragile.md)
-
-
-#### Ma santé
-
-Conseils :
-
-* [conseils_santé](conseils/conseils_santé.md)
-* [conseils_santé_personne_fragile](conseils/conseils_santé_personne_fragile.md) si personne fragile
-* [conseils_contacter_un_médecin.md](conseils/conseils_contacter_un_médecin.md)
-* [conseils_santé_maladie_chronique.md](conseils/conseils_santé_maladie_chronique.md) si [antécédents](#antécédents) ou maladie chronique autre.
-* [conseils_santé_automédication.md](conseils/conseils_santé_automédication.md)
-
-
-#### Caractéristiques et antécédents
-
-[Titre antécédents](questions/question_antécédents_titre.md)
-
-Question (cardio) : [libellé](questions/question_antécédents_cardio_libellé.md), [aide](questions/question_antécédents_cardio_aide.md)
-
-Question (diabète) : [libellé](questions/question_antécédents_diabète_libellé.md)
-
-Question (respi) : [libellé](questions/question_antécédents_respi_libellé.md), [aide](questions/question_antécédents_respi_aide.md)
-
-Question (dialyse) : [libellé](questions/question_antécédents_dialyse_libellé.md)
-
-Question (cancer) : [libellé](questions/question_antécédents_cancer_libellé.md)
-
-Question (immunodépression) : [libellé](questions/question_antécédents_immunodépression_libellé.md), [aide](questions/question_antécédents_immunodépression_aide.md)
-
-Question (cirrhose) : [libellé](questions/question_antécédents_cirrhose_libellé.md)
-
-Question (drépanocytose) : [libellé](questions/question_antécédents_drépanocytose_libellé.md)
-
-Question (chronique autre) : [libellé](questions/question_antécédents_chronique_autre_libellé.md)
-
-[Titre caractéristiques](questions/question_caractéristiques_titre.md)
-
-Aide : [aide](questions/question_caractéristiques_aide.md)
-
-Question (âge) : [libellé](questions/question_caractéristiques_âge_libellé.md)
-
-Question (taille) : [libellé](questions/question_caractéristiques_taille_libellé.md)
-
-Question (poids) : [libellé](questions/question_caractéristiques_poids_libellé.md)
-
-Question (grossesse) : [libellé](questions/question_caractéristiques_grossesse_libellé.md)
-
-Réponse :
-
-* [réponse_caractéristiques_à_risques.md](réponses/réponse_caractéristiques_à_risques.md) si âge > 65 ou grossesse 3e trimestre ou IMC > 30
-* [réponse_antécédents.md](réponses/réponse_antécédents.md) si [Antécédents](#antécédents) ou antécédents chroniques autres
-* [réponse_symptômes_actuels_reconnus.md](réponses/réponse_symptômes_actuels_reconnus.md) si [Antécédents](#antécédents) mais pas antécédents chroniques autres
-* [réponse_grossesse.md](réponses/réponse_grossesse.md) si grossesse 3e trimestre
-
-Conseils :
-
-* [conseils_grossesse.md](conseils/conseils_grossesse.md) si grossesse 3e trimestre
-
-* [conseils_activité_pro_personne_fragile.md](conseils/conseils_activité_pro_personne_fragile.md)
-
-
-#### L’isolement
-
-1. [conseils_isolement_symptômes.md](conseils/conseils_isolement_symptômes.md)
-
-
-#### Les tests de dépistage
-
-1. [conseils_tests.md](conseils/conseils_tests.md)
-2. [conseils_tests_résultats.md](conseils/conseils_tests_résultats.md)
-
-
-#### La Covid
-
-1. [conseils_covid.md](conseils/conseils_covid.md)
-
-
-#### Vie quotidienne
-
-1. [conseils_vie_quotidienne.md](conseils/conseils_vie_quotidienne.md)
-
-
-#### Conseils d’ordre général
-
-1. [conseils_généraux_info.md](conseils/conseils_généraux_info.md)
-
-
-#### Activité
-
-[Titre](questions/question_activité_pro_titre.md)
-
-Question : [libellé](questions/question_activité_pro_libellé.md)
-
-Sous-question (contact public) : [libellé](questions/question_activité_pro_public_libellé.md)
-
-Sous-question (libéral) : [libellé](questions/question_activité_pro_libéral_libellé.md)
-
-Sous-question (domaine santé) : [libellé](questions/question_activité_pro_santé_libellé.md), [aide](questions/question_activité_pro_santé_aide.md)
-
-Réponse :
-
-* [réponse_activité_pro.md](réponses/réponse_activité_pro.md) si case cochée
-
-Conseils :
-
-* [conseils_activité_pro.md](conseils/conseils_activité_pro.md) si case cochée
-* [conseils_activité_pro_public.md](conseils/conseils_activité_pro_public.md) si case cochée
-* [conseils_activité_pro_santé.md](conseils/conseils_activité_pro_santé.md) si case cochée
-* [conseils_activité_pro_arrêt.md](conseils/conseils_activité_pro_arrêt.md) si personne à [Risque](#risque)
-* [conseils_activité_pro_libéral.md](conseils/conseils_activité_pro_libéral.md) si case cochée
-* [conseils_activité_pro_infos.md](conseils/conseils_activité_pro_infos.md) si case activité cochée et/ou case public cochée (mais pas la case santé)
-
-
-
-### Auto-suivi
-
-#### Suivi date
-
-[Titre](questions/question_suivi_date_titre.md)
-
-Question : [libellé](questions/question_suivi_date_libellé.md), [aide](questions/question_suivi_date_aide.md)
-
-
-#### Suivi symptômes
-
-[Titre](questions/question_suivi_symptômes_titre.md)
-
-Aide : [aide](questions/question_suivi_symptômes_aide.md)
-
-Question : [libellé](questions/question_suivi_symptômes_libellé.md)
-
-Sous-question (essoufflement) : [libellé](questions/question_suivi_symptômes_essoufflement_libellé.md)
-
-Sous-question (état général) : [libellé](questions/question_suivi_symptômes_état_général_libellé.md)
-
-Sous-question (alimentation et hydratation) : [libellé](questions/question_suivi_symptômes_alimentation_hydratation_libellé.md)
-
-Sous-question (état psychologique) : [libellé](questions/question_suivi_symptômes_état_psychologique_libellé.md)
-
-Sous-question (fièvre) : [libellé](questions/question_suivi_symptômes_fièvre_libellé.md)
-
-Sous-question (diarrhée ou vomissements) : [libellé](questions/question_suivi_symptômes_diarrhée_vomissements_libellé.md)
-
-Sous-question (confusion) [pour un proche seulement] : [libellé](questions/question_suivi_symptômes_confusion_libellé.md)
-
-Sous-question (toux) [optionnelle] : [libellé](questions/question_suivi_symptômes_toux_libellé.md)
-
-Sous-question (maux de tête) [optionnelle] : [libellé](questions/question_suivi_symptômes_maux_de_tête_libellé.md)
-
-
-#### Suivi conseils
-
-Dans ce cas particulier, les [conseils relatifs aux symptômes actuels](#symptomes-actuels) ne sont pas affichés. Les conseils suivants s’affichent :
-
-* Si au moins une réponse « Beaucoup moins bien » alors [suivi_gravité_3.md](suivi/suivi_gravité_3.md)
-* Si au moins une réponse « Un peu moins bien » OU « Oui » à `alimentation et hydratation` OU « Oui » à `maux de tête` alors [suivi_gravité_2.md](suivi/suivi_gravité_2.md)
-* Si (« Oui » à `fièvre`) OU (« Oui » à `diarrhée ou vomissements`) OU (« Oui » à `toux`) alors [suivi_gravité_1.md](suivi/suivi_gravité_1.md)
-* Si (que des réponses « Mieux » OU « Stable ») ET (« Non » à `alimentation et hydratation`) ET (« Non » à `fièvre`) ET (« Non » à `diarrhée ou vomissements`) alors [suivi_gravité_0.md](suivi/suivi_gravité_0.md)
-
-
-#### Suivi plus d’infos
-
-* Si réponse « Oui » à `état psychologique` on affiche en plus [suivi_psy_2.md](suivi/suivi_psy_2.md) si gravité > 0 OU [suivi_psy_1.md](suivi/suivi_psy_1.md) si gravité = 0.
-* [conseils_autosuivi_régularité.md](conseils/conseils_autosuivi_régularité.md) s’affiche lorsque le suivi est activé (date de début + une entrée saisie).
-* [conseils_autosuivi_historique.md](conseils/conseils_autosuivi_historique.md) s’affiche lorsque le suivi est activé (date de début + une entrée saisie).
-
-
-#### Suivi déconfinement
-
-La sortie de confinement est proposée si toutes les conditions suivantes sont réunies :
-
-* le début des symptômes était il y a 8 jours (ou 10 si personne à [Risque](#risque)) ;
-* il y a eu (au moins) une entrée dans le suivi par 24h ces dernières 48h ;
-* il n’y a pas eu de fièvre ni d’essoufflement ces dernières 48h.
-
-Dans ce cas particulier, le fichier [suivi_déconfinement.md](suivi/suivi_déconfinement.md) est affiché à la place du [statut de suivi](#suivi-conseils) + [infos](#suivi-plus-dinfos) ou des [conseils relatifs aux symptômes actuels](#symptomes-actuels).
+Il s’agit de la seconde partie de la page constituée de blocs dépliables, les fichiers relatifs sont dans le dossier [`conseils/`](conseils/) et NE commencent PAS par `conseils_personnels_*`.
 
 
 ### Critères
@@ -432,6 +109,7 @@ Est définie comme étant une personne à gravité majeure celle qui vérifie l�
 
 * a une gêne respiratoire (essoufflement)
 * a des difficulté importantes pour s’alimenter ou boire depuis plus de 24 heures
+
 
 #### Gravité mineure
 

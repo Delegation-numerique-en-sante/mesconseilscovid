@@ -137,7 +137,7 @@ describe('Algorithme d’orientation', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
-                'conseils-depistage-positif-symptomatique',
+                'conseils-personnels-depistage-positif-symptomatique',
             ])
         })
 
@@ -149,7 +149,7 @@ describe('Algorithme d’orientation', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
-                'conseils-depistage-positif-asymptomatique',
+                'conseils-personnels-depistage-positif-asymptomatique',
             ])
         })
 
