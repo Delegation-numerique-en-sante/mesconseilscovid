@@ -238,15 +238,13 @@ export default class AlgorithmeOrientation {
     }
 
     vieQuotidienneBlockNamesToDisplay() {
-        const blockNames = []
-        if (this.profil.symptomes_actuels || typeof this.incidence === 'undefined') {
-            return []
-        }
-        blockNames.push('conseils-vie-quotidienne')
-        if (this.incidence >= 10) {
-            blockNames.push('conseils-departement-circulation-elevee')
-        } else {
-            blockNames.push('conseils-departement-circulation-faible')
+        const blockNames = ['conseils-vie-quotidienne']
+        if (typeof this.incidence !== 'undefined') {
+            if (this.incidence >= 10) {
+                blockNames.push('conseils-departement-circulation-elevee')
+            } else {
+                blockNames.push('conseils-departement-circulation-faible')
+            }
         }
         return blockNames
     }
