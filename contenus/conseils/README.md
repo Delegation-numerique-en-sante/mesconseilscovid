@@ -109,6 +109,14 @@ Vous avez passé du temps avec quelqu’un de positif mais il ne s’agit pas *a
 
 
 
+## [conseils_covid.md](conseils_covid.md)
+
+Pour toutes vos questions sur la Covid, vous pouvez:
+* aller sur [Covid19-faq](https://www.covid19-faq.fr/)
+* appeler le numéro vert [0 800 130 000](tel:+33800130000) (24h/24 et 7j/7)
+
+
+
 ## [conseils_département_circulation_faible.md](conseils_département_circulation_faible.md)
 
 La circulation du virus est relativement lente dans votre département. Par précaution, maintenez les gestes barrières.
@@ -210,9 +218,7 @@ Il peut aussi être rendu obligatoire dans certains **lieux publics ouverts** (r
 
 ## [conseils_généraux_info.md](conseils_généraux_info.md)
 
-Plus d’informations autour de la Covid :
-  * [Covid19-faq](https://www.covid19-faq.fr/) ou appeler le [0 800 130 000](tel:+33800130000)
-  * L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) vous permettra de recevoir immédiatement une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid
+* L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) vous permettra de recevoir immédiatement une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid
 
 
 

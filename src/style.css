@@ -249,6 +249,7 @@ main footer .legals {
 #conseils-sante header,
 #conseils-grossesse header,
 #conseils-foyer-enfants header,
+#conseils-covid header,
 #conseils-generaux header,
 #conseils-pediatrie-general header,
 #conseils-pediatrie-ecole header,
@@ -291,6 +292,7 @@ main footer .legals {
     #conseils-sante header,
     #conseils-grossesse header,
     #conseils-foyer-enfants header,
+    #conseils-covid header,
     #conseils-generaux header,
     #conseils-pediatrie-general header,
     #conseils-pediatrie-ecole header,
@@ -349,6 +351,9 @@ main footer .legals {
 #antecedents-form,
 #suivi-medecin-form {
     background-image: url('illustrations/antecedents.svg');
+}
+#conseils-covid header {
+    background-image: url('illustrations/covid.svg');
 }
 .tagline,
 #conseils-generaux header {
@@ -970,6 +975,7 @@ a#geolocalisation {
     #conseils-activite header,
     #conseils-foyer header,
     #conseils-grossesse header,
+    #conseils-covid header,
     #conseils-generaux header,
     #conseils-block.symptomes-actuels h2,
     #conseils-block.symptomes-passes h2,
