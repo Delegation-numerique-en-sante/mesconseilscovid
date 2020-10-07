@@ -16,38 +16,6 @@ Pour plus d’informations sur l’isolement : [« J’ai les signes de la mal
 
 
 
-## [statut_contact_sans_symptomes_ni_test.md](statut_contact_sans_symptomes_ni_test.md)
-
-Nous vous conseillons de :
-
-1. **Contacter votre médecin généraliste**.
-
-2. Vous maintenir **en isolement pendant 7 jours**
-
-3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
-
-4. Surveiller l’apparition de **symptômes** et contacter de nouveau votre médecin si des symptômes apparaissent.
-
-5. **Prévoir un test au 7e jour** grâce à [la carte des lieux de test.](https://sante.fr/cartographie-depistage-covid)
-
-6. Revenir sur Mes Conseils Covid **si votre situation change** afin d'avoir les conseils adaptés à votre nouvelle situation !
-
-
-// Blocs en-dessous :
-// Contact à risque
-// Isolement
-// Tests
-// Contacter un médecin
-// Gestes Barrières
-// La Covid-19
-// Les enfants de moins de 15 ans
-// Ma santé
-// Ma grossesse
-// Mon travail
-// Ma vie quotidienne
-
-
-
 ## [statut_contact_test_neg_avant_7j.md](statut_contact_test_neg_avant_7j.md)
 
 Nous vous conseillons de :
@@ -87,63 +55,6 @@ Vous avez passé du temps avec quelqu’un de positif mais il ne s’agit pas *a
 
 // Blocs en-dessous :
 // Contact à risque
-// Gestes Barrières
-// La Covid-19
-// Les enfants de moins de 15 ans
-// Ma santé
-// Ma grossesse
-// Mon travail
-// Ma vie quotidienne
-
-
-
-## [statut_symptomes_sans_test.md](statut_symptomes_sans_test.md)
-
-Nous vous conseillons de :
-
-1. **Contacter votre médecin généraliste**.
-
-2. **Réaliser un test** à l'aide de [la carte des lieux de test.](https://sante.fr/cartographie-depistage-covid)
-
-3. Vous maintenir **en isolement** jusqu'au résultat du test.
-
-4. Suivre vos **symptômes** avec l'auto-suivi.
-
-5. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
-
-6. Revenir sur Mes Conseils Covid **si votre situation change** afin d'avoir les conseils adaptés à votre nouvelle situation !
-
-// Blocs en-dessous :
-// Contacter un médecin
-// Isolement
-// Tests
-// Gestes Barrières
-// La Covid-19
-// Les enfants de moins de 15 ans
-// Ma santé
-// Ma grossesse
-// Mon travail
-// Ma vie quotidienne
-
-
-
-## [statut_symptomes_test_positif.md](statut_symptomes_test_positif.md)
-
-Nous vous conseillons de :
-
-1. Vous maintenir **en isolement** pendant au moins 7 jours.
-
-2. Suivre vos **symptômes** avec [l'auto-suivi](#lelienpourl'autosuiveDavidouRonans'ilvousplait) pour plus de précisions sur votre sortie d'isolement.
-
-3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test.](https://sante.fr/cartographie-depistage-covid)
-
-4. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisé depuis le début de votre période contagieuse.
-
-5. Revenir sur Mes Conseils Covid **si votre situation change** afin d'avoir les conseils adaptés à votre nouvelle situation !
-
-// Blocs en-dessous :
-// Isolement
-// Contacter un médecin
 // Gestes Barrières
 // La Covid-19
 // Les enfants de moins de 15 ans
