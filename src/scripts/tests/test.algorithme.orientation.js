@@ -129,154 +129,46 @@ describe('Algorithme d’orientation', function () {
             )
         })
 
+        it('Un profil avec dépistage positif et des symptômes actuels', function () {
+            var profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_resultat: 'positif',
+                symptomes_actuels: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
+                'conseils-depistage-positif-symptomatique',
+            ])
+        })
+
+        it('Un profil avec dépistage positif et sans symptômes actuels', function () {
+            var profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_resultat: 'positif',
+                symptomes_actuels: false,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
+                'conseils-depistage-positif-asymptomatique',
+            ])
+        })
+
         it('Un profil avec des symptômes actuels', function () {
             var profil = new Profil('mes_infos', {
+                depistage: false,
                 symptomes_actuels: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
                 'reponse-symptomes-actuels-symptomesactuelsreconnus',
-                'conseils-personnels-symptomes-actuels-gravite1',
-            ])
-        })
-
-        it('Un profil avec des symptômes actuels + température inconnue + diarrhée + fatigue + fragile', function () {
-            var profil = new Profil('mes_infos', {
-                symptomes_actuels: true,
-                symptomes_actuels_temperature: false,
-                symptomes_actuels_temperature_inconnue: true,
-                symptomes_actuels_diarrhee: true,
-                symptomes_actuels_fatigue: true,
-                age: 65,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
-                'conseils-personnels-symptomes-actuels',
-                'reponse-symptomes-actuels-caracteristiques',
-                'reponse-symptomes-actuels-symptomesactuelsreconnus',
-                'conseils-personnels-symptomes-actuels-gravite2',
-            ])
-        })
-
-        it('Un profil avec des symptômes actuels + température inconnue + toux + douleurs + fragile', function () {
-            var profil = new Profil('mes_infos', {
-                symptomes_actuels: true,
-                symptomes_actuels_temperature: false,
-                symptomes_actuels_temperature_inconnue: true,
-                symptomes_actuels_toux: true,
-                symptomes_actuels_douleurs: true,
-                age: 65,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
-                'conseils-personnels-symptomes-actuels',
-                'reponse-symptomes-actuels-caracteristiques',
-                'reponse-symptomes-actuels-symptomesactuelsreconnus',
-                'conseils-personnels-symptomes-actuels-gravite3',
-            ])
-        })
-
-        it('Un profil avec des symptômes actuels + sans température + toux + odorat + sup65', function () {
-            var profil = new Profil('mes_infos', {
-                symptomes_actuels: true,
-                symptomes_actuels_temperature: false,
-                symptomes_actuels_temperature_inconnue: false,
-                symptomes_actuels_toux: true,
-                symptomes_actuels_odorat: true,
-                age: 65,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
-                'conseils-personnels-symptomes-actuels',
-                'reponse-symptomes-actuels-caracteristiques',
-                'reponse-symptomes-actuels-symptomesactuelsreconnus',
-                'conseils-personnels-symptomes-actuels-gravite3',
-            ])
-        })
-
-        it('Un profil avec des symptômes actuels + sans température + toux + douleurs + sup50', function () {
-            var profil = new Profil('mes_infos', {
-                symptomes_actuels: true,
-                symptomes_actuels_temperature: false,
-                symptomes_actuels_temperature_inconnue: false,
-                symptomes_actuels_toux: true,
-                symptomes_actuels_odorat: true,
-                age: 50,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
-                'conseils-personnels-symptomes-actuels',
-                'reponse-symptomes-actuels-caracteristiques',
-                'reponse-symptomes-actuels-symptomesactuelsreconnus',
-                'conseils-personnels-symptomes-actuels-gravite3',
-            ])
-        })
-
-        it('Un profil avec des symptômes actuels + température + toux + fragile', function () {
-            var profil = new Profil('mes_infos', {
-                symptomes_actuels: true,
-                symptomes_actuels_toux: true,
-                symptomes_actuels_temperature: true,
-                age: 65,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
-                'conseils-personnels-symptomes-actuels',
-                'reponse-symptomes-actuels-caracteristiques',
-                'reponse-symptomes-actuels-symptomesactuelsreconnus',
-                'conseils-personnels-symptomes-actuels-gravite3',
-            ])
-        })
-
-        it('Un profil avec des symptômes actuels + température + toux + fatigue + fragile', function () {
-            var profil = new Profil('mes_infos', {
-                symptomes_actuels: true,
-                symptomes_actuels_toux: true,
-                symptomes_actuels_temperature: true,
-                symptomes_actuels_fatigue: true,
-                age: 65,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
-                'conseils-personnels-symptomes-actuels',
-                'reponse-symptomes-actuels-caracteristiques',
-                'reponse-symptomes-actuels-symptomesactuelsreconnus',
-                'conseils-personnels-symptomes-actuels-gravite2',
-            ])
-        })
-
-        it('Un profil avec des symptômes actuels + sans température + toux + fragile', function () {
-            var profil = new Profil('mes_infos', {
-                symptomes_actuels: true,
-                symptomes_actuels_toux: true,
-                symptomes_actuels_temperature: false,
-                age: 65,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
-                'conseils-personnels-symptomes-actuels',
-                'reponse-symptomes-actuels-caracteristiques',
-                'reponse-symptomes-actuels-symptomesactuelsreconnus',
-                'conseils-personnels-symptomes-actuels-gravite3',
-            ])
-        })
-
-        it('Un profil avec des symptômes actuels majeurs', function () {
-            var profil = new Profil('mes_infos', {
-                symptomes_actuels: true,
-                symptomes_actuels_alimentation: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
-                'conseils-personnels-symptomes-actuels',
-                'reponse-symptomes-actuels-symptomesactuelsreconnus',
-                'conseils-personnels-symptomes-actuels-gravite4',
+                'conseils-personnels-symptomes-actuels-sans-depistage',
             ])
         })
 
         it('Un profil avec des symptômes actuels + un suivi', function () {
             var profil = new Profil('mes_infos', {
+                depistage: false,
                 symptomes_actuels: true,
                 symptomes_actuels_alimentation: true,
                 suivi: [{ foo: 'bar' }],
@@ -285,7 +177,7 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
                 'reponse-symptomes-actuels-symptomesactuelsreconnus',
-                'conseils-personnels-symptomes-actuels-suivi',
+                'conseils-personnels-symptomes-actuels-sans-depistage',
             ])
         })
 

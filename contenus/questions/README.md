@@ -248,6 +248,10 @@ Le test virologique (aussi appelé RT-PCR) détecte la présence du virus par un
 
 <!---->Je n’ai pas encore reçu le résultat.
 
+---
+
+<!---->Cette personne n’a pas encore reçu le résultat.
+
 
 
 ## [question_dépistage_libellé.md](question_dépistage_libellé.md)

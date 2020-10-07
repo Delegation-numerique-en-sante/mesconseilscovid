@@ -82,15 +82,15 @@ export default class AlgorithmeOrientation {
             return 'symptomatique-urgent'
         }
         if (this.profil.hasSymptomesActuelsReconnus()) {
-            if (this.profil.estPositif()) {
+            if (this.profil.estPositifSymptomatique()) {
                 return 'symptomatique-positif'
-            } else if (this.profil.estNegatif()) {
+            } else if (this.profil.estNegatifSymptomatique()) {
                 return 'symptomatique-negatif'
             } else {
                 return 'symptomatique'
             }
         }
-        if (this.profil.estAsymptomatique()) {
+        if (this.profil.estPositifAsymptomatique()) {
             return 'asymptomatique'
         }
         if (this.symptomes && !this.profil.symptomes_actuels_autre) {
@@ -159,31 +159,21 @@ export default class AlgorithmeOrientation {
     recommandeAutoSuivi() {
         return (
             this.profil.symptomes_actuels &&
-            !this.profil.estAsymptomatique() &&
-            !this.profil.estNegatif()
+            !this.profil.estPositifAsymptomatique() &&
+            !this.profil.estNegatifSymptomatique()
         )
     }
 
     conseilsPersonnelsBlockNamesToDisplay() {
         const blockNames = []
-        if (this.profil.hasSymptomesActuelsReconnus()) {
+        if (this.profil.estPositifSymptomatique()) {
+            blockNames.push('conseils-depistage-positif-symptomatique')
+        } else if (this.profil.estPositifAsymptomatique()) {
+            blockNames.push('conseils-depistage-positif-asymptomatique')
+        } else if (this.profil.hasSymptomesActuelsReconnus()) {
             blockNames.push('conseils-personnels-symptomes-actuels')
-            if (this.antecedents || this.profil.antecedent_chronique_autre) {
-                blockNames.push('reponse-symptomes-actuels-antecedents')
-            }
-            if (this.sup50 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
-                blockNames.push('reponse-symptomes-actuels-caracteristiques')
-            }
-            if (this.profil.hasSymptomesActuelsReconnus()) {
-                blockNames.push('reponse-symptomes-actuels-symptomesactuelsreconnus')
-            }
-            if (this.profil.hasHistorique()) {
-                blockNames.push('conseils-personnels-symptomes-actuels-suivi')
-            } else {
-                blockNames.push(
-                    'conseils-personnels-symptomes-actuels-gravite' + this.gravite
-                )
-            }
+            blockNames.push('reponse-symptomes-actuels-symptomesactuelsreconnus')
+            blockNames.push('conseils-personnels-symptomes-actuels-sans-depistage')
         } else if (this.profil.symptomes_passes) {
             blockNames.push('conseils-personnels-symptomes-passes')
             if (this.personne_fragile || this.profil.foyer_fragile) {
