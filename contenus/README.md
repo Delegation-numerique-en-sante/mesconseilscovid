@@ -288,6 +288,11 @@ Conseils :
 2. [conseils_tests_résultats.md](conseils/conseils_tests_résultats.md)
 
 
+#### La Covid
+
+1. [conseils_covid.md](conseils/conseils_covid.md)
+
+
 #### Vie quotidienne
 
 1. [conseils_vie_quotidienne.md](conseils/conseils_vie_quotidienne.md)
