@@ -92,10 +92,9 @@ Conseils :
     * ou [conseils_symptômes_actuels_gravité2.md](conseils/conseils_symptômes_actuels_gravité2.md) si (température et toux, personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure)) OU (avec fièvre ou (sans fièvre et avec (diarrhée ou (toux et douleurs) ou (toux et anosmie)) et personne à [Risque](#risque) et *plusieurs* facteur de [gravité mineure](#gravité-mineure))
     * ou [conseils_symptômes_actuels_gravité1.md](conseils/conseils_symptômes_actuels_gravité1.md) par défaut
 2. [conseils_symptômes_actuels_autosuivi.md](conseils/conseils_symptômes_actuels_autosuivi.md), [bouton](conseils/conseils_symptômes_actuels_autosuivi_bouton.md)
-3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
-4. [conseils_symptômes_maux_de_tête.md](conseils/conseils_symptômes_maux_de_tête.md)
-5. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
-6. [Conseils d’ordre général](#conseils-dordre-général)
+3. [conseils_symptômes_maux_de_tête.md](conseils/conseils_symptômes_maux_de_tête.md)
+4. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
+5. [Conseils d’ordre général](#conseils-dordre-général)
 
 Cas particulier : si [Symptôme actuel autre](#symptôme-actuel-autre), aucun de ces conseils n’est affiché.
 
@@ -137,10 +136,9 @@ Conseils :
 1. [conseils_symptômes_passés_sans_risques.md](conseils/conseils_symptômes_passés_sans_risques.md) + [conseils_symptômes_passés_sans_risques_info.md](conseils/conseils_symptômes_passés_sans_risques_info.md) ou [conseils_symptômes_passés_avec_risques.md](conseils/conseils_symptômes_passés_avec_risques.md) + [conseils_symptômes_passés_avec_risques_info.md](conseils/conseils_symptômes_passés_avec_risques_info.md) selon la valeur de [Risque](#risque) (ou case foyer à risque cochée)
 2. [conseils_symptômes_défaut.md](conseils/conseils_symptômes_défaut.md)
 3. [conseils_isolement.md](conseils/conseils_isolement.md)
-4. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
-5. [Localisation](#localisation)
-6. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
-7. [Conseils d’ordre général](#conseils-dordre-général)
+4. [Localisation](#localisation)
+5. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
+6. [Conseils d’ordre général](#conseils-dordre-général)
 
 
 #### Contact à risque
@@ -169,10 +167,9 @@ Conseils :
 
 1. [conseils_contact_à_risque.md](conseils/conseils_contact_à_risque.md) ou [conseils_contact_à_risque_autre.md](conseils/conseils_contact_à_risque_autre.md) si [Contact à risque autre](#contact-à-risque-autre)
 2. [conseils_contact_à_risque_info.md](conseils/conseils_contact_à_risque_info.md)
-3. [conseils_cartographie_dépistage.md](conseils/conseils_cartographie_dépistage.md)
-4. [Localisation](#localisation)
-5. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
-6. [Conseils d’ordre général](#conseils-dordre-général)
+3. [Localisation](#localisation)
+4. [conseils_foyer_fragile_suivi.md](conseils/conseils_foyer_fragile_suivi.md)
+5. [Conseils d’ordre général](#conseils-dordre-général)
 
 
 #### Gestes barrières & masque

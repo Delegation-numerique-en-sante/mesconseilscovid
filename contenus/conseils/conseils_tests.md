@@ -1,3 +1,5 @@
+* Retrouvez le [lieu de test le plus près de vous](https://sante.fr/cartographie-depistage-covid), si votre médecin vous prescrit un **test de dépistage**.
+
 * Les tests de dépistage sont **accessibles sur demande** et sans prescription médicale, sans même présenter de symptômes.
 
 * Ils sont **intégralement pris en charge** par l'assurance maladie. Ces dispositions sont également applicables aux personnes qui ne sont pas assurés sociaux.
