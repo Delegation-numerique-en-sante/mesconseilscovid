@@ -511,7 +511,7 @@
                 </div>
                 <div class="secondary disabled">
                     <input id="depistage_resultat_en_attente" type="radio" required name="depistage_resultat" value="en_attente">
-                    <label for="depistage_resultat_en_attente"><span>{{ question_dépistage_attente_libellé }}</span></label>
+                    <label for="depistage_resultat_en_attente"><span>{{ question_dépistage_attente_libellé|me_or_them }}</span></label>
                 </div>
             </div>
         </fieldset>
@@ -1052,7 +1052,6 @@
                         {{ question_suivi_date_libellé|me_or_them }}
                     </span>
                 </label>
-                <div class="details">{{ question_suivi_date_aide|me_or_them }}</div>
             </div>
             <div class="secondary disabled required" role="radiogroup">
                 <input id="suivi_date_aujourdhui" type="radio" required name="suivi_symptomes_date" value="aujourdhui">
@@ -1069,6 +1068,7 @@
                     <input type="date" lang="fr" id="suivi_date_exacte" name="suivi_symptomes_date_exacte" disabled>
                 </label>
             </div>
+            <div class="details">{{ question_suivi_date_aide|me_or_them }}</div>
         </fieldset>
         <div class="form-controls">
             <input type="submit" class="button" value="Continuer" disabled>
