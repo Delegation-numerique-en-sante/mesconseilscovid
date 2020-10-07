@@ -327,6 +327,7 @@ export default class AlgorithmeOrientation {
         if (this.antecedents || this.profil.antecedent_chronique_autre) {
             blockNames.push('conseils-sante-maladie-chronique')
         }
+        blockNames.push('conseils-sante-automedication')
         return blockNames
     }
 
