@@ -72,6 +72,12 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
 
+      - name: Check orphelins
+        run: |
+          make check-orphelins
+        env:
+          PYTHONUNBUFFERED: "1"
+
       - name: Check service-worker
         run: |
           make check-service-worker
