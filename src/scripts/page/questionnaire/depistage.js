@@ -49,6 +49,16 @@ export default function depistage(form, app) {
         // On complète manuellement le formulaire pour le rendre complet.
         if (app.profil.requiertSuivi()) {
             app.profil.symptomes_actuels = false // Temporaire.
+            app.profil.symptomes_actuels_alimentation = undefined
+            app.profil.symptomes_actuels_autre = undefined
+            app.profil.symptomes_actuels_diarrhee = undefined
+            app.profil.symptomes_actuels_douleurs = undefined
+            app.profil.symptomes_actuels_fatigue = undefined
+            app.profil.symptomes_actuels_odorat = undefined
+            app.profil.symptomes_actuels_souffle = undefined
+            app.profil.symptomes_actuels_temperature = undefined
+            app.profil.symptomes_actuels_temperature_inconnue = undefined
+            app.profil.symptomes_actuels_toux = undefined
             app.profil.symptomes_passes = false
             app.profil.contact_a_risque = false
             app.profil.contact_a_risque_meme_lieu_de_vie = undefined
