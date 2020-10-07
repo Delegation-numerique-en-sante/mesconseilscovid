@@ -321,16 +321,6 @@ La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver 
 
 
 
-## [conseils_symptômes_actuels_autosuivi.md](conseils_symptômes_actuels_autosuivi.md)
-
-<!---->Vous pouvez suivre votre maladie et obtenir des conseils quotidiens sur la conduite à tenir en fonction de l’<b>évolution de vos symptômes</b> :
-
----
-
-<!---->Vous pouvez suivre la maladie de votre proche et obtenir des conseils quotidiens sur la conduite à tenir en fonction de l’<b>évolution de ses symptômes</b> :
-
-
-
 ## [conseils_symptômes_actuels_sans_depistage.md](conseils_symptômes_actuels_sans_depistage.md)
 
 Nous vous conseillons de :
@@ -346,6 +336,16 @@ Nous vous conseillons de :
 5. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
 
 6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+
+
+
+## [conseils_symptômes_actuels_sans_depistage_critique.md](conseils_symptômes_actuels_sans_depistage_critique.md)
+
+Nous vous conseillons de **communiquer au 15** :
+
+1. Que vous ressentez un **manque de souffle** quand vous parlez ou faites un petit effort
+
+2. Que vous êtes dans l’impossibilité de vous alimenter *ou* de boire **depuis 24 heures ou plus** 
 
 
 

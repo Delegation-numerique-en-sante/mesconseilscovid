@@ -166,7 +166,22 @@ describe('Algorithme d’orientation', function () {
             ])
         })
 
-        it('Un profil avec des symptômes actuels + un suivi', function () {
+        it('Un profil avec des symptômes actuels + un suivi non critique', function () {
+            var profil = new Profil('mes_infos', {
+                depistage: false,
+                symptomes_actuels: true,
+                symptomes_actuels_fatigue: true,
+                suivi: [{ foo: 'bar' }],
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
+                'conseils-personnels-symptomes-actuels',
+                'reponse-symptomes-actuels-symptomesactuelsreconnus',
+                'conseils-personnels-symptomes-actuels-sans-depistage',
+            ])
+        })
+
+        it('Un profil avec des symptômes actuels + un suivi critique', function () {
             var profil = new Profil('mes_infos', {
                 depistage: false,
                 symptomes_actuels: true,
@@ -177,7 +192,7 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
                 'reponse-symptomes-actuels-symptomesactuelsreconnus',
-                'conseils-personnels-symptomes-actuels-sans-depistage',
+                'conseils-personnels-symptomes-actuels-sans-depistage-critique',
             ])
         })
 
