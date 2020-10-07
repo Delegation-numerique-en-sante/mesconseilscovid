@@ -1,4 +1,4 @@
-import { showElement } from './affichage.js'
+import { showElement, hideElement } from './affichage.js'
 
 import prefectures from './data/prefectures.js'
 import departements from './data/departements.js'
@@ -97,7 +97,11 @@ export function symptomesactuels(element, algoOrientation) {
         if (algoOrientation.profil.symptomes_actuels_souffle) {
             symptomes.push('vous êtes essouflé·e')
         }
-        var content = symptomes.join(' ; ') + '.'
-        element.textContent = content
+        if (symptomes.length) {
+            const content = symptomes.join(' ; ') + '.'
+            element.textContent = content
+        } else {
+            hideElement(element.parentElement)
+        }
     }
 }
