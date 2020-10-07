@@ -125,6 +125,42 @@ Pour toutes vos questions sur la Covid, vous pouvez:
 
 
 
+## [conseils_depistage_positif_asymptomatique.md](conseils_depistage_positif_asymptomatique.md)
+
+Nous vous conseillons de :
+
+1. Vous maintenir **en isolement** pendant au moins 7 jours.
+
+2. Si vous constatez l’apparition de **symptômes**, vous pouvez suivre leur évolution avec le [questionnaire de suivi](#suivisymptomes).
+
+3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
+
+4. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisées depuis le début de votre période contagieuse.
+
+5. Si vous avez installé StopCovid sur votre smartphone, vous pouvez scanner le QR code présent sur vos résultats dans l’application (onglet « Me déclarer »).
+
+6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+
+
+
+## [conseils_depistage_positif_symptomatique.md](conseils_depistage_positif_symptomatique.md)
+
+Nous vous conseillons de :
+
+1. Vous maintenir **en isolement** pendant au moins 7 jours.
+
+2. Suivre vos **symptômes** avec le [questionnaire de suivi](#suivisymptomes) pour plus de précisions sur votre sortie d’isolement.
+
+3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
+
+4. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisées depuis le début de votre période contagieuse.
+
+5. Si vous avez installé StopCovid sur votre smartphone, vous pouvez scanner le QR code présent sur vos résultats dans l’application (onglet « Me déclarer »).
+
+6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+
+
+
 ## [conseils_département_circulation_faible.md](conseils_département_circulation_faible.md)
 
 La circulation du virus est relativement lente dans votre département. Par précaution, maintenez les gestes barrières.
@@ -302,53 +338,21 @@ La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver 
 
 
 
-## [conseils_symptômes_actuels_gravité1.md](conseils_symptômes_actuels_gravité1.md)
+## [conseils_symptômes_actuels_sans_depistage.md](conseils_symptômes_actuels_sans_depistage.md)
 
-* **Contactez votre médecin** pour obtenir une téléconsultation ou une consultation. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde en composant le [0 800 130 000](tel:+33800130000).
+Nous vous conseillons de :
 
-* Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
+1. **Contacter votre médecin généraliste**.
 
-* Prenez connaissance des prochaines étapes du parcours : [j’ai les symptômes de la Covid-19](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf).
+2. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid).
 
-* Appliquez strictement les **gestes barrières**.
+3. Vous maintenir **en isolement** jusqu’au résultat du test.
 
+4. Suivre vos **symptômes** avec le [questionnaire de suivi](#suivisymptomes).
 
+5. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
 
-## [conseils_symptômes_actuels_gravité2.md](conseils_symptômes_actuels_gravité2.md)
-
-* **Contactez votre médecin** pour obtenir une téléconsultation ou une consultation. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde en composant le [0 800 130 000](tel:+33800130000).
-
-* Si vous n’arrivez pas à obtenir de consultation, **appelez le 15**.
-
-* Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
-
-* Prenez connaissance des prochaines étapes du parcours : [j’ai les symptômes de la Covid-19](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf).
-
-* Appliquez strictement les **gestes barrières**.
-
-
-
-## [conseils_symptômes_actuels_gravité3.md](conseils_symptômes_actuels_gravité3.md)
-
-* **Contactez votre médecin** pour obtenir une téléconsultation ou une consultation. En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde en composant le [0 800 130 000](tel:+33800130000).
-
-* Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent **pendant plus de 24 heures**.
-
-* Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
-
-* Prenez connaissance des prochaines étapes du parcours : [j’ai les symptômes de la Covid-19](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf).
-
-* Appliquez strictement les **gestes barrières**.
-
-
-
-## [conseils_symptômes_actuels_gravité4.md](conseils_symptômes_actuels_gravité4.md)
-
-* Maintenez vous et les membres de votre foyer **en isolement**, y compris les enfants en âge d’aller à la crèche ou à l’école, le temps d’avoir un avis médical.
-
-* Prenez connaissance des prochaines étapes du parcours : [j’ai les symptômes de la Covid-19](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf).
-
-* Appliquez strictement les **gestes barrières**.
+6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 
 
