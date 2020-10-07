@@ -615,388 +615,394 @@
         <div id="conseils-block" class="block">
             <h1 id="conseils-block-titre" hidden></h1>
 
-            <div id="deconfinement" hidden>
-                {{ suivi_déconfinement }}
-            </div>
+            <div id="conseils-suivi-ou-statut">
+                <div id="deconfinement" hidden>
+                    {{ suivi_déconfinement }}
+                </div>
 
-            <div id="suivi" hidden>
-                <h2>L’évolution de vos symptômes</h2>
-                <div id="suivi-gravite-3" class="statut suivi-gravite-3" hidden>
-                    {{ suivi_gravité_3 }}
+                <div id="suivi" hidden>
+                    <h2>L’évolution de vos symptômes</h2>
+                    <div id="suivi-gravite-3" class="statut suivi-gravite-3" hidden>
+                        {{ suivi_gravité_3 }}
+                    </div>
+                    <div id="suivi-gravite-2" class="statut suivi-gravite-2" hidden>
+                        {{ suivi_gravité_2 }}
+                    </div>
+                    <div id="suivi-gravite-1" class="statut suivi-gravite-1" hidden>
+                        {{ suivi_gravité_1 }}
+                    </div>
+                    <div id="suivi-gravite-0" class="statut suivi-gravite-0" hidden>
+                        {{ suivi_gravité_0 }}
+                    </div>
+                    <ul>
+                        <li id="suivi-psy-2" hidden>{{ suivi_psy_2 }}</li>
+                        <li id="suivi-psy-1" hidden>{{ suivi_psy_1 }}</li>
+                        <li>{{ conseils_autosuivi_régularité|me_or_them }}</li>
+                        <li>{{ conseils_autosuivi_historique|me_or_them }}</li>
+                    </ul>
                 </div>
-                <div id="suivi-gravite-2" class="statut suivi-gravite-2" hidden>
-                    {{ suivi_gravité_2 }}
-                </div>
-                <div id="suivi-gravite-1" class="statut suivi-gravite-1" hidden>
-                    {{ suivi_gravité_1 }}
-                </div>
-                <div id="suivi-gravite-0" class="statut suivi-gravite-0" hidden>
-                    {{ suivi_gravité_0 }}
-                </div>
-                <ul>
-                    <li id="suivi-psy-2" hidden>{{ suivi_psy_2 }}</li>
-                    <li id="suivi-psy-1" hidden>{{ suivi_psy_1 }}</li>
-                    <li>{{ conseils_autosuivi_régularité|me_or_them }}</li>
-                    <li>{{ conseils_autosuivi_historique|me_or_them }}</li>
-                </ul>
-            </div>
 
-            <div id="conseils-statut">
-                <h2>En résumé</h2>
-                <div id="statut-symptomatique-urgent" class="statut statut-symptomatique-urgent" hidden>
-                    {{ statut_symptomatique_urgent }}
-                </div>
-                <div id="statut-symptomatique-positif" class="statut statut-symptomatique-positif" hidden>
-                    {{ statut_symptomatique_positif }}
-                </div>
-                <div id="statut-symptomatique-negatif" class="statut statut-symptomatique-negatif" hidden>
-                    {{ statut_symptomatique_négatif }}
-                </div>
-                <div id="statut-symptomatique" class="statut statut-symptomatique" hidden>
-                    {{ statut_symptomatique }}
-                </div>
-                <div id="statut-asymptomatique" class="statut statut-asymptomatique" hidden>
-                    {{ statut_asymptomatique }}
-                </div>
-                <div id="statut-risque-eleve" class="statut statut-risque-eleve" hidden>
-                    {{ statut_risque_élevé_contamination }}
-                </div>
-                <div id="statut-personne-fragile" class="statut statut-personne-fragile" hidden>
-                    {{ statut_personne_fragile }}
-                </div>
-                <div id="statut-foyer-fragile" class="statut statut-foyer-fragile" hidden>
-                    {{ statut_foyer_fragile }}
-                </div>
-                <div id="statut-peu-de-risques" class="statut statut-peu-de-risques" hidden>
-                    {{ statut_peu_de_risques }}
+                <div id="conseils-statut">
+                    <h2>En résumé</h2>
+                    <div id="statut-symptomatique-urgent" class="statut statut-symptomatique-urgent" hidden>
+                        {{ statut_symptomatique_urgent }}
+                    </div>
+                    <div id="statut-symptomatique-positif" class="statut statut-symptomatique-positif" hidden>
+                        {{ statut_symptomatique_positif }}
+                    </div>
+                    <div id="statut-symptomatique-negatif" class="statut statut-symptomatique-negatif" hidden>
+                        {{ statut_symptomatique_négatif }}
+                    </div>
+                    <div id="statut-symptomatique" class="statut statut-symptomatique" hidden>
+                        {{ statut_symptomatique }}
+                    </div>
+                    <div id="statut-asymptomatique" class="statut statut-asymptomatique" hidden>
+                        {{ statut_asymptomatique }}
+                    </div>
+                    <div id="statut-risque-eleve" class="statut statut-risque-eleve" hidden>
+                        {{ statut_risque_élevé_contamination }}
+                    </div>
+                    <div id="statut-personne-fragile" class="statut statut-personne-fragile" hidden>
+                        {{ statut_personne_fragile }}
+                    </div>
+                    <div id="statut-foyer-fragile" class="statut statut-foyer-fragile" hidden>
+                        {{ statut_foyer_fragile }}
+                    </div>
+                    <div id="statut-peu-de-risques" class="statut statut-peu-de-risques" hidden>
+                        {{ statut_peu_de_risques }}
+                    </div>
                 </div>
             </div>
 
             <h2>Vos conseils personnalisés</h2>
 
-            <div id="conseils-depistage-positif-symptomatique" class="conseils" hidden>
-                <div class="conseil">
-                    {{ conseils_depistage_positif_symptomatique }}
-                </div>
-            </div>
-
-            <div id="conseils-depistage-positif-asymptomatique" class="conseils" hidden>
-                <div class="conseil">
-                    {{ conseils_depistage_positif_asymptomatique }}
-                </div>
-            </div>
-
-            <div id="conseils-personnels-symptomes-actuels" class="conseils" hidden>
-                <div class="reponse">
-                    <div id="reponse-symptomes-actuels-symptomesactuelsreconnus" hidden>
-                        {{ réponse_symptômes_actuels_reconnus }}
+            <div id="conseils-personnels">
+                <div id="conseils-depistage-positif-symptomatique" class="conseils" hidden>
+                    <div class="conseil">
+                        {{ conseils_depistage_positif_symptomatique }}
                     </div>
                 </div>
-                <div id="conseils-personnels-symptomes-actuels-sans-depistage" class="conseil" hidden>
-                    {{ conseils_symptômes_actuels_sans_depistage }}
-                </div>
-            </div>
 
-            <div id="conseils-personnels-symptomes-passes" class="conseils" hidden>
-                <div id="conseils-personnels-symptomes-passes-sans-risques" hidden>
-                    <div class="conseil conseil-orange">
-                        {{ conseils_symptômes_passés_sans_risques }}
+                <div id="conseils-depistage-positif-asymptomatique" class="conseils" hidden>
+                    <div class="conseil">
+                        {{ conseils_depistage_positif_asymptomatique }}
                     </div>
                 </div>
-                <div id="conseils-personnels-symptomes-passes-avec-risques" hidden>
-                    <div class="conseil conseil-orange">
-                        {{ conseils_symptômes_passés_avec_risques }}
-                    </div>
-                    {{ conseils_symptômes_passés_avec_risques_info }}
-                </div>
-                <div id="conseils-symptomes-passes-default">
-                    {{ conseils_symptômes_défaut }}
-                </div>
-            </div>
 
-            <div id="conseils-personnels-contact-a-risque" class="conseils" hidden>
-                <div id="conseils-personnels-contact-a-risque-default" class="conseil conseil-orange" hidden>
-                    {{ conseils_contact_à_risque }}
-                </div>
-                <div id="conseils-personnels-contact-a-risque-autre" class="conseil" hidden>
-                    {{ conseils_contact_à_risque_autre }}
-                </div>
-            </div>
-
-            <div id="conseils-isolement" class="conseils" hidden>
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                L’isolement
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                            </h3>
-                        </header>
-                    </summary>
-                    <div id="conseils-isolement-symptomes" hidden>
-                    {{ conseils_isolement_symptômes }}
-                </details>
-            </div>
-
-            <div id="conseils-tests" class="conseils" hidden>
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Les tests de dépistage
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                            </h3>
-                        </header>
-                    </summary>
-                    <div id="conseils-tests-resultats" class="conseil" hidden>
-                        {{ conseils_tests_résultats }}
-                    </div>
-                    {{ conseils_tests }}
-                </details>
-            </div>
-
-            <div id="conseils-contact-a-risque" class="conseils" hidden>
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Contact à risque
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                            </h3>
-                        </header>
-                    </summary>
-                    {{ conseils_contact_à_risque_info }}
-                </details>
-            </div>
-
-            <div id="conseils-gestes-barrieres-masque" class="conseils" hidden>
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Les gestes barrières &amp; le masque
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                            </h3>
-                        </header>
-                    </summary>
-                <div class="reponse">
-                    <div id="reponse-gestes-barrieres-masque-caracteristiques-a-risques" hidden>
-                        {{ réponse_caractéristiques_à_risques }}
-                    </div>
-                    <div id="reponse-gestes-barrieres-masque-antecedents" hidden>
-                        {{ réponse_antécédents }}
-                    </div>
-                </div>
-                <div id="conseils-gestes-barrieres-masque-general" hidden>
-                    {{ conseils_gestes_barrieres_masque_general }}
-                </div>
-                <div id="conseils-gestes-barrieres-masque-fragile" hidden>
-                    {{ conseils_gestes_barrieres_masque_fragile }}
-                </div>
-            </div>
-
-            <div id="conseils-covid" class="conseils">
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                La Covid
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                            </h3>
-                        </header>
-                    </summary>
-                    <div>
-                        {{ conseils_covid }}
-                    </div>
-                </details>
-            </div>
-
-            <div id="conseils-grossesse" class="conseils" hidden>
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Ma grossesse
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-
-                            </h3>
-                        </header>
-                    </summary>
+                <div id="conseils-personnels-symptomes-actuels" class="conseils" hidden>
                     <div class="reponse">
-                        {{ réponse_grossesse }}
+                        <div id="reponse-symptomes-actuels-symptomesactuelsreconnus" hidden>
+                            {{ réponse_symptômes_actuels_reconnus }}
+                        </div>
                     </div>
-                    {{ conseils_grossesse }}
-                </details>
+                    <div id="conseils-personnels-symptomes-actuels-sans-depistage" class="conseil" hidden>
+                        {{ conseils_symptômes_actuels_sans_depistage }}
+                    </div>
+                </div>
+
+                <div id="conseils-personnels-symptomes-passes" class="conseils" hidden>
+                    <div id="conseils-personnels-symptomes-passes-sans-risques" hidden>
+                        <div class="conseil conseil-orange">
+                            {{ conseils_symptômes_passés_sans_risques }}
+                        </div>
+                    </div>
+                    <div id="conseils-personnels-symptomes-passes-avec-risques" hidden>
+                        <div class="conseil conseil-orange">
+                            {{ conseils_symptômes_passés_avec_risques }}
+                        </div>
+                        {{ conseils_symptômes_passés_avec_risques_info }}
+                    </div>
+                    <div id="conseils-symptomes-passes-default">
+                        {{ conseils_symptômes_défaut }}
+                    </div>
+                </div>
+
+                <div id="conseils-personnels-contact-a-risque" class="conseils" hidden>
+                    <div id="conseils-personnels-contact-a-risque-default" class="conseil conseil-orange" hidden>
+                        {{ conseils_contact_à_risque }}
+                    </div>
+                    <div id="conseils-personnels-contact-a-risque-autre" class="conseil" hidden>
+                        {{ conseils_contact_à_risque_autre }}
+                    </div>
+                </div>
             </div>
 
-            <div id="conseils-sante" class="conseils">
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Ma santé
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+            <div id="conseils-blocs">
+                <div id="conseils-isolement" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    L’isolement
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        <div id="conseils-isolement-symptomes" hidden>
+                        {{ conseils_isolement_symptômes }}
+                    </details>
+                </div>
 
-                            </h3>
-                        </header>
-                    </summary>
+                <div id="conseils-tests" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Les tests de dépistage
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        <div id="conseils-tests-resultats" class="conseil" hidden>
+                            {{ conseils_tests_résultats }}
+                        </div>
+                        {{ conseils_tests }}
+                    </details>
+                </div>
+
+                <div id="conseils-contact-a-risque" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Contact à risque
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        {{ conseils_contact_à_risque_info }}
+                    </details>
+                </div>
+
+                <div id="conseils-gestes-barrieres-masque" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Les gestes barrières &amp; le masque
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
                     <div class="reponse">
-                        <div id="reponse-sante-caracteristiques-a-risques" hidden>
+                        <div id="reponse-gestes-barrieres-masque-caracteristiques-a-risques" hidden>
                             {{ réponse_caractéristiques_à_risques }}
                         </div>
-                        <div id="reponse-sante-antecedents" hidden>
+                        <div id="reponse-gestes-barrieres-masque-antecedents" hidden>
                             {{ réponse_antécédents }}
                         </div>
                     </div>
-                    <div id="conseils-sante-general" class="conseil" hidden>
-                        {{ conseils_santé }}
+                    <div id="conseils-gestes-barrieres-masque-general" hidden>
+                        {{ conseils_gestes_barrieres_masque_general }}
                     </div>
-                    <div id="conseils-sante-personne-fragile" hidden>
-                        {{ conseils_santé_personne_fragile }}
+                    <div id="conseils-gestes-barrieres-masque-fragile" hidden>
+                        {{ conseils_gestes_barrieres_masque_fragile }}
                     </div>
-                    {{ conseils_contacter_un_médecin }}
-                    <div id="conseils-sante-maladie-chronique" hidden>
-                        {{ conseils_santé_maladie_chronique }}
-                    </div>
-                    <div id="conseils-sante-automedication" hidden>
-                        {{ conseils_santé_automédication }}
-                    </div>
-                </details>
-            </div>
+                </div>
 
-            <div id="conseils-foyer-enfants" class="conseils" hidden>
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Les enfants de moins de 15 ans
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                <div id="conseils-covid" class="conseils">
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    La Covid
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        <div>
+                            {{ conseils_covid }}
+                        </div>
+                    </details>
+                </div>
 
-                            </h3>
-                        </header>
-                    </summary>
-                    <div class="reponse">
-                        {{ réponse_foyer_enfants }}
-                    </div>
-                    {{ conseils_enfants }}
-                </details>
-            </div>
+                <div id="conseils-grossesse" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Ma grossesse
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
 
-            <div id="conseils-foyer" class="conseils" hidden>
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Votre foyer
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                            </h3>
-                        </header>
-                    </summary>
-                    <div id="conseils-foyer-fragile" hidden>
+                                </h3>
+                            </header>
+                        </summary>
                         <div class="reponse">
-                            {{ réponse_foyer_fragile }}
+                            {{ réponse_grossesse }}
                         </div>
-                        <div class="conseil">
-                            {{ conseils_foyer_fragile }}
-                        </div>
-                    </div>
-                </details>
-            </div>
+                        {{ conseils_grossesse }}
+                    </details>
+                </div>
 
-            <div id="conseils-activite" class="conseils" hidden>
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Mon activité
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                            </h3>
-                        </header>
-                    </summary>
-                    <div class="reponse">
-                        <div id="reponse-activite-pro" hidden>
-                            {{ réponse_activité_pro }}
-                        </div>
-                        <div id="reponse-activite-pro-antecedents" hidden>
-                            {{ réponse_antécédents }}
-                        </div>
-                        <div id="reponse-activite-pro-foyer-fragile" hidden>
-                            {{ réponse_foyer_fragile }}
-                        </div>
-                    </div>
-                    <div id="conseils-activite-pro-personne-fragile" hidden>
-                        <div class="conseil">
-                            {{ conseils_activité_pro_personne_fragile }}
-                        </div>
-                    </div>
-                    <div id="conseils-activite-pro" hidden>
-                        {{ conseils_activité_pro }}
-                    </div>
-                    <div id="conseils-activite-pro-arret" hidden>
-                        <div class="conseil">
-                            {{ conseils_activité_pro_arrêt }}
-                        </div>
-                    </div>
-                    <div id="conseils-activite-pro-foyer-fragile" hidden>
-                        <div class="conseil">
-                            {{ conseils_activité_pro_foyer_fragile }}
-                        </div>
-                    </div>
-                    <div id="conseils-activite-pro-sante" hidden>
-                        {{ conseils_activité_pro_santé }}
-                    </div>
-                    <div id="conseils-activite-pro-liberal" hidden>
-                        {{ conseils_activité_pro_libéral }}
-                    </div>
-                    <div id="conseils-activite-pro-infos" hidden>
-                        {{ conseils_activité_pro_infos }}
-                    </div>
-                </details>
-            </div>
+                <div id="conseils-sante" class="conseils">
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Ma santé
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
 
-            <div id="conseils-vie-quotidienne" class="conseils" hidden>
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Ma vie quotidienne
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                            </h3>
-                        </header>
-                    </summary>
-                    <div class="reponse">
-                        {{ réponse_département }}
-                    </div>
-                    <div id="conseils-departement-circulation-faible" hidden>
-                        <div class="conseil">
-                            {{ conseils_département_circulation_faible }}
+                                </h3>
+                            </header>
+                        </summary>
+                        <div class="reponse">
+                            <div id="reponse-sante-caracteristiques-a-risques" hidden>
+                                {{ réponse_caractéristiques_à_risques }}
+                            </div>
+                            <div id="reponse-sante-antecedents" hidden>
+                                {{ réponse_antécédents }}
+                            </div>
                         </div>
-                    </div>
-                    <div id="conseils-departement-circulation-elevee" hidden>
-                        <div class="conseil conseil-orange">
-                            {{ conseils_département_circulation_élevée }}
+                        <div id="conseils-sante-general" class="conseil" hidden>
+                            {{ conseils_santé }}
                         </div>
-                    </div>
-                    {{ conseils_département_défaut }}
-                    {{ conseils_vie_quotidienne }}
-                </details>
-            </div>
+                        <div id="conseils-sante-personne-fragile" hidden>
+                            {{ conseils_santé_personne_fragile }}
+                        </div>
+                        {{ conseils_contacter_un_médecin }}
+                        <div id="conseils-sante-maladie-chronique" hidden>
+                            {{ conseils_santé_maladie_chronique }}
+                        </div>
+                        <div id="conseils-sante-automedication" hidden>
+                            {{ conseils_santé_automédication }}
+                        </div>
+                    </details>
+                </div>
 
-            <!-- Conseils généraux toujours affichés. -->
-            <div id="conseils-generaux" class="conseils">
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Conseils d’ordre général
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                            </h3>
-                        </header>
-                    </summary>
-                    <div>
-                        {{ conseils_généraux_info }}
-                    </div>
-                </details>
+                <div id="conseils-foyer-enfants" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Les enfants de moins de 15 ans
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+
+                                </h3>
+                            </header>
+                        </summary>
+                        <div class="reponse">
+                            {{ réponse_foyer_enfants }}
+                        </div>
+                        {{ conseils_enfants }}
+                    </details>
+                </div>
+
+                <div id="conseils-foyer" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Votre foyer
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        <div id="conseils-foyer-fragile" hidden>
+                            <div class="reponse">
+                                {{ réponse_foyer_fragile }}
+                            </div>
+                            <div class="conseil">
+                                {{ conseils_foyer_fragile }}
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <div id="conseils-activite" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Mon activité
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        <div class="reponse">
+                            <div id="reponse-activite-pro" hidden>
+                                {{ réponse_activité_pro }}
+                            </div>
+                            <div id="reponse-activite-pro-antecedents" hidden>
+                                {{ réponse_antécédents }}
+                            </div>
+                            <div id="reponse-activite-pro-foyer-fragile" hidden>
+                                {{ réponse_foyer_fragile }}
+                            </div>
+                        </div>
+                        <div id="conseils-activite-pro-personne-fragile" hidden>
+                            <div class="conseil">
+                                {{ conseils_activité_pro_personne_fragile }}
+                            </div>
+                        </div>
+                        <div id="conseils-activite-pro" hidden>
+                            {{ conseils_activité_pro }}
+                        </div>
+                        <div id="conseils-activite-pro-arret" hidden>
+                            <div class="conseil">
+                                {{ conseils_activité_pro_arrêt }}
+                            </div>
+                        </div>
+                        <div id="conseils-activite-pro-foyer-fragile" hidden>
+                            <div class="conseil">
+                                {{ conseils_activité_pro_foyer_fragile }}
+                            </div>
+                        </div>
+                        <div id="conseils-activite-pro-sante" hidden>
+                            {{ conseils_activité_pro_santé }}
+                        </div>
+                        <div id="conseils-activite-pro-liberal" hidden>
+                            {{ conseils_activité_pro_libéral }}
+                        </div>
+                        <div id="conseils-activite-pro-infos" hidden>
+                            {{ conseils_activité_pro_infos }}
+                        </div>
+                    </details>
+                </div>
+
+                <div id="conseils-vie-quotidienne" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Ma vie quotidienne
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        <div class="reponse">
+                            {{ réponse_département }}
+                        </div>
+                        <div id="conseils-departement-circulation-faible" hidden>
+                            <div class="conseil">
+                                {{ conseils_département_circulation_faible }}
+                            </div>
+                        </div>
+                        <div id="conseils-departement-circulation-elevee" hidden>
+                            <div class="conseil conseil-orange">
+                                {{ conseils_département_circulation_élevée }}
+                            </div>
+                        </div>
+                        {{ conseils_département_défaut }}
+                        {{ conseils_vie_quotidienne }}
+                    </details>
+                </div>
+
+                <!-- Conseils généraux toujours affichés. -->
+                <div id="conseils-generaux" class="conseils">
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Conseils d’ordre général
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        <div>
+                            {{ conseils_généraux_info }}
+                        </div>
+                    </details>
+                </div>
             </div>
         </div>
 

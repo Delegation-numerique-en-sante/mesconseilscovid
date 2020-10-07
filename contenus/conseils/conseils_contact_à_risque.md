@@ -1,9 +1,13 @@
-Nous vous conseillons de **contacter votre médecin généraliste**.
+Nous vous conseillons de :
 
-En attendant, il vous est conseillé de :
+1. **Contacter votre médecin généraliste**.
 
-* Vous **maintenir en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école.
+2. Vous maintenir **en isolement pendant 7 jours**.
 
-* Appliquer **les gestes barrières**.
+3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
 
-* Surveiller l’apparition de **symptômes** et contacter de nouveau votre médecin si des symptômes apparaissent.
+4. Si vous constatez l’apparition de **symptômes**, contactez de nouveau votre médecin, et suivez leur évolution avec le [questionnaire de suivi](#suivisymptomes).
+
+5. **Prévoir un test au 7<sup>e</sup> jour** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid).
+
+6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
