@@ -791,7 +791,7 @@ describe('Parcours', function () {
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
-                'Retrouvez le lieu de test le plus près de vous'
+                'Nous vous conseillons de contacter votre médecin généraliste.'
             )
             let bouton = await page.waitForSelector(
                 '#page >> text="Refaire le questionnaire"'
