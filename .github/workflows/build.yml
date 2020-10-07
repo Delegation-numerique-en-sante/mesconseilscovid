@@ -72,12 +72,6 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
 
-      - name: Check documentation
-        run: |
-          make check-documentation
-        env:
-          PYTHONUNBUFFERED: "1"
-
       - name: Check service-worker
         run: |
           make check-service-worker
