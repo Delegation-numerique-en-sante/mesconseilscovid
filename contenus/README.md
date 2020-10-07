@@ -226,6 +226,7 @@ Conseils :
 
 * [conseils_santé](conseils/conseils_santé.md)
 * [conseils_santé_personne_fragile](conseils/conseils_santé_personne_fragile.md) si personne fragile
+* [conseils_contacter_un_médecin.md](conseils/conseils_contacter_un_médecin.md)
 * [conseils_santé_maladie_chronique.md](conseils/conseils_santé_maladie_chronique.md) si [antécédents](#antécédents) ou maladie chronique autre.
 
 
