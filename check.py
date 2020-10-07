@@ -157,18 +157,5 @@ def orphelins():
                 raise Exception(f"Reference missing for {filename}")
 
 
-@cli
-def documentation():
-    readme = open(HERE / "contenus" / "README.md").read()
-    for folder in each_folder_from(HERE / "contenus", exclude=["nouveaux_contenus"]):
-        for file_path, filename in each_file_from(
-            folder, file_name="*.md", exclude=["README.md"]
-        ):
-            if filename.startswith("meta_") or filename.startswith("config_"):
-                continue
-            if filename not in readme:
-                raise Exception(f"Documentation missing for {filename}")
-
-
 if __name__ == "__main__":
     run()

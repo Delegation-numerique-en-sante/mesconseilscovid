@@ -59,7 +59,7 @@ endif
 test-feedback:
 	tox -c feedback/tox.ini
 
-check: check-links check-versions check-documentation check-service-worker
+check: check-links check-versions check-orphelins check-service-worker
 
 check-links:  # Check that links to external pages are still valid.
 	python3 check.py links --timeout 30 --delay 0.2
@@ -69,9 +69,6 @@ check-versions:  # Check that current version matches service-worker one.
 
 check-orphelins:  # Check that all markdown files are in use in template.
 	python3 check.py orphelins
-
-check-documentation:  # Check that all markdown files are documented.
-	python3 check.py documentation
 
 check-service-worker:  # Check that all files in use are listed in service-worker.js.
 	python3 check.py service_worker
