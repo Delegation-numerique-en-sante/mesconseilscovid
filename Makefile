@@ -98,7 +98,7 @@ prefectures:  ## Generate data related to prefectures.
 dev:  ## Auto-rebuild and serve the static website with Parcel.
 	npm run-script build-dev
 
-pre-commit: pretty lint test-unit build check-versions check-documentation check-service-worker  ## Interesting prior to commit/push.
+pre-commit: pretty lint test-unit build check-versions check-service-worker  ## Interesting prior to commit/push.
 
 prod: clean install lint pretty test check  ## Make sure everything is clean prior to deploy.
 	# Note: `test` dependency will actually generate the `build`.
