@@ -337,6 +337,14 @@ describe('Algorithme d’orientation', function () {
                 'conseils-tests-resultats',
             ])
         })
+        it('Contact pas vraiment à risque', function () {
+            var profil = new Profil('mes_infos', {
+                contact_a_risque: true,
+                contact_a_risque_autre: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [])
+        })
     })
 
     describe('Activité pro', function () {
