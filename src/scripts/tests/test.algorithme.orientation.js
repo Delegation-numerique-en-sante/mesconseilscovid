@@ -503,8 +503,8 @@ describe('Algorithme d’orientation', function () {
         })
     })
 
-    describe('Algorithme orientation foyer', function () {
-        it('Aucun risque foyer n’affiche rien', function () {
+    describe('Algorithme orientation foyer (fragile)', function () {
+        it('Aucun risque foyer (fragile) n’affiche rien', function () {
             var profil = new Profil('mes_infos', {})
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [])
@@ -518,18 +518,7 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [])
         })
 
-        it('Risque enfant', function () {
-            var profil = new Profil('mes_infos', {
-                foyer_enfants: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
-                'conseils-foyer',
-                'conseils-foyer-enfants',
-            ])
-        })
-
-        it('Risque fragile', function () {
+        it('Risque foyer (fragile)', function () {
             var profil = new Profil('mes_infos', {
                 foyer_fragile: true,
             })
@@ -539,16 +528,30 @@ describe('Algorithme d’orientation', function () {
                 'conseils-foyer-fragile',
             ])
         })
+    })
 
-        it('Risque enfant ET fragile', function () {
+    describe('Algorithme orientation foyer (enfants)', function () {
+        it('Aucun risque foyer (enfants) n’affiche rien', function () {
+            var profil = new Profil('mes_infos', {})
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.enfantsBlockNamesToDisplay(), [])
+        })
+
+        it('Symptômes actuels n’affiche rien', function () {
             var profil = new Profil('mes_infos', {
-                foyer_enfants: true,
-                foyer_fragile: true,
+                symptomes_actuels: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
-                'conseils-foyer',
-                'conseils-foyer-enfants-fragile',
+            assert.deepEqual(algoOrientation.enfantsBlockNamesToDisplay(), [])
+        })
+
+        it('Risque foyer (enfant)', function () {
+            var profil = new Profil('mes_infos', {
+                foyer_enfants: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.enfantsBlockNamesToDisplay(), [
+                'conseils-foyer-enfants',
             ])
         })
     })

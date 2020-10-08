@@ -117,6 +117,7 @@ export function showRelevantBlocks(element, profil, algoOrientation) {
     blockNames = blockNames.concat(algoOrientation.grossesseBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.santeBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.foyerBlockNamesToDisplay())
+    blockNames = blockNames.concat(algoOrientation.enfantsBlockNamesToDisplay())
     displayBlocks(element, blockNames)
 }
 

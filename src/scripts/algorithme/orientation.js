@@ -337,15 +337,20 @@ export default class AlgorithmeOrientation {
         if (this.profil.symptomes_actuels) {
             return []
         }
-        if (this.profil.foyer_enfants || this.profil.foyer_fragile) {
+        if (this.profil.foyer_fragile) {
             blockNames.push('conseils-foyer')
-            if (this.profil.foyer_enfants && this.profil.foyer_fragile) {
-                blockNames.push('conseils-foyer-enfants-fragile')
-            } else if (this.profil.foyer_enfants) {
-                blockNames.push('conseils-foyer-enfants')
-            } else if (this.profil.foyer_fragile) {
-                blockNames.push('conseils-foyer-fragile')
-            }
+            blockNames.push('conseils-foyer-fragile')
+        }
+        return blockNames
+    }
+
+    enfantsBlockNamesToDisplay() {
+        const blockNames = []
+        if (this.profil.symptomes_actuels) {
+            return []
+        }
+        if (this.profil.foyer_enfants) {
+            blockNames.push('conseils-foyer-enfants')
         }
         return blockNames
     }
