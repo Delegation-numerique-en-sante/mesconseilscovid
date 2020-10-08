@@ -161,7 +161,6 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
-                'reponse-symptomes-actuels-symptomesactuelsreconnus',
                 'conseils-personnels-symptomes-actuels-sans-depistage',
             ])
         })
@@ -176,7 +175,6 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
-                'reponse-symptomes-actuels-symptomesactuelsreconnus',
                 'conseils-personnels-symptomes-actuels-sans-depistage',
             ])
         })
@@ -191,7 +189,6 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.conseilsPersonnelsBlockNamesToDisplay(), [
                 'conseils-personnels-symptomes-actuels',
-                'reponse-symptomes-actuels-symptomesactuelsreconnus',
                 'conseils-personnels-symptomes-actuels-sans-depistage-critique',
             ])
         })
