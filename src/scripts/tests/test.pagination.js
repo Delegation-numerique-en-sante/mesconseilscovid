@@ -4,7 +4,7 @@ import { Questionnaire } from '../questionnaire.js'
 
 import {
     beforeSuiviIntroduction,
-    beforeSuiviDate,
+    beforeDebutSymptomes,
     beforeSuiviSymptomes,
     beforeSuiviHistorique,
 } from '../router.js'
@@ -306,24 +306,24 @@ describe('Pagination', function () {
                 'depistage'
             )
         })
-        it('redirige vers suivi date si réponse dépistage positif', function () {
+        it('redirige vers début symptômes si réponse dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
                 depistage_resultat: 'positif',
             })
             assert.strictEqual(
                 questionnaire.before('symptomesactuels', profil),
-                'suividate'
+                'debutsymptomes'
             )
         })
-        it('redirige vers suivi date si réponse dépistage en attente', function () {
+        it('redirige vers début symptômes si réponse dépistage en attente', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
                 depistage_resultat: 'en_attente',
             })
             assert.strictEqual(
                 questionnaire.before('symptomesactuels', profil),
-                'suividate'
+                'debutsymptomes'
             )
         })
         it('ok d’aller aux symptômes actuels avec si réponse dépistage negatif', function () {
@@ -382,7 +382,7 @@ describe('Pagination', function () {
             })
             assert.isUndefined(questionnaire.before('symptomespasses', profil))
         })
-        it('redirige vers suivi date si réponse positive à symptômes actuels', function () {
+        it('redirige vers début symptômes si réponse positive à symptômes actuels', function () {
             const profil = new Profil('mes_infos', {
                 depistage: false,
                 symptomes_actuels: true,
@@ -391,17 +391,17 @@ describe('Pagination', function () {
             })
             assert.strictEqual(
                 questionnaire.before('symptomespasses', profil),
-                'suividate'
+                'debutsymptomes'
             )
         })
-        it('redirige vers suividate si réponse dépistage positif', function () {
+        it('redirige vers debutsymptomes si réponse dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
                 depistage_resultat: 'positif',
             })
             assert.strictEqual(
                 questionnaire.before('symptomesactuels', profil),
-                'suividate'
+                'debutsymptomes'
             )
         })
     })
@@ -443,7 +443,7 @@ describe('Pagination', function () {
             })
             assert.isUndefined(questionnaire.before('contactarisque', profil))
         })
-        it('redirige vers suivi date si réponse positive à symptômes passés', function () {
+        it('redirige vers début symptômes si réponse positive à symptômes passés', function () {
             const profil = new Profil('mes_infos', {
                 depistage: false,
                 symptomes_actuels: false,
@@ -451,7 +451,7 @@ describe('Pagination', function () {
             })
             assert.strictEqual(
                 questionnaire.before('contactarisque', profil),
-                'suividate'
+                'debutsymptomes'
             )
         })
     })
@@ -496,21 +496,27 @@ describe('Pagination', function () {
             })
             assert.isUndefined(questionnaire.before('conseils', profil))
         })
-        it('redirige vers suivi date si symptômes actuels et réponses manquantes', function () {
+        it('redirige vers début symptômes si symptômes actuels et réponses manquantes', function () {
             const profil = new Profil('mes_infos', {
                 depistage: false,
                 symptomes_actuels: true,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
-            assert.strictEqual(questionnaire.before('conseils', profil), 'suividate')
+            assert.strictEqual(
+                questionnaire.before('conseils', profil),
+                'debutsymptomes'
+            )
         })
-        it('redirige vers suivi date si symptômes passés et réponses manquantes', function () {
+        it('redirige vers début symptômes si symptômes passés et réponses manquantes', function () {
             const profil = new Profil('mes_infos', {
                 depistage: false,
                 symptomes_actuels: false,
                 symptomes_passes: true,
             })
-            assert.strictEqual(questionnaire.before('conseils', profil), 'suividate')
+            assert.strictEqual(
+                questionnaire.before('conseils', profil),
+                'debutsymptomes'
+            )
         })
         it('redirige vers question contact à risque si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
@@ -959,7 +965,7 @@ describe('Pagination', function () {
                 'depistage'
             )
         })
-        it('redirige suivi date vers algo orientation si profil non complet', function () {
+        it('redirige début symptômes vers algo orientation si profil non complet', function () {
             const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
@@ -982,7 +988,7 @@ describe('Pagination', function () {
                 antecedent_drepano: false,
                 antecedent_chronique_autre: false,
             })
-            assert.strictEqual(beforeSuiviDate(profil, questionnaire), 'depistage')
+            assert.strictEqual(beforeDebutSymptomes(profil, questionnaire), 'depistage')
         })
         it('redirige suivi symptômes vers algo orientation si profil non complet', function () {
             const profil = new Profil('mes_infos', {

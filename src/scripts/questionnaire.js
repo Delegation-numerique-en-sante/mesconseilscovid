@@ -46,14 +46,14 @@ export const TRANSITIONS = {
     depistage: {
         previous: () => 'introduction',
         next: {
-            suividate: (profil) =>
+            debutsymptomes: (profil) =>
                 profil.requiertSuivi() && !profil.hasSuiviStartDate(),
             suivisymptomes: (profil) =>
                 profil.requiertSuivi() && profil.hasSuiviStartDate(),
             symptomesactuels: (profil) => profil.isDepistageComplete(),
         },
     },
-    suividate: {
+    debutsymptomes: {
         previous: () => 'suiviintroduction',
         next: {
             residence: (profil) =>
@@ -71,7 +71,7 @@ export const TRANSITIONS = {
     symptomesactuels: {
         previous: () => 'depistage',
         next: {
-            suividate: (profil) =>
+            debutsymptomes: (profil) =>
                 profil.isSymptomesActuelsComplete() && profil.requiertSuivi(),
             residence: (profil) =>
                 profil.isSymptomesActuelsComplete() &&
@@ -82,7 +82,7 @@ export const TRANSITIONS = {
     symptomespasses: {
         previous: () => 'symptomesactuels',
         next: {
-            suividate: (profil) =>
+            debutsymptomes: (profil) =>
                 profil.isSymptomesPassesComplete() && profil.requiertSuivi(),
             residence: (profil) =>
                 profil.isSymptomesPassesComplete() && profil.symptomes_passes,

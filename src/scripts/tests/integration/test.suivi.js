@@ -38,7 +38,7 @@ describe('Auto-suivi', function () {
         // La page de date du suivi apparait la première fois
         {
             let label = await page.waitForSelector(
-                '#page label[for="suivi_date_aujourdhui"]'
+                '#page label[for="debut_symptomes_aujourdhui"]'
             )
             await label.click()
 
@@ -234,7 +234,7 @@ describe('Auto-suivi', function () {
         // La page de date du suivi apparait la première fois
         {
             let label = await page.waitForSelector(
-                '#page label[for="suivi_date_aujourdhui"]'
+                '#page label[for="debut_symptomes_aujourdhui"]'
             )
             await label.click()
 

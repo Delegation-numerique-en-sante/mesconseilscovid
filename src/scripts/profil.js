@@ -488,7 +488,9 @@ export default class Profil {
         const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
         const label =
             this.hasSuiviStartDate() && this.hasHistorique() ? 'Continuer' : 'Démarrer'
-        const nextPage = this.hasSymptomesStartDate() ? 'suivisymptomes' : 'suividate'
+        const nextPage = this.hasSymptomesStartDate()
+            ? 'suivisymptomes'
+            : 'debutsymptomes'
         const suiviButton = safeHtml`
             <a class="button button-full-width conseils-link"
                 data-set-profil="${this.nom}" href="#${nextPage}"
@@ -531,7 +533,7 @@ export default class Profil {
     renderDebutSymptomes() {
         return `<p>Début des symptômes :
             ${this.symptomes_start_date.toLocaleString()}
-            (<a href="#suividate">modifier</a>)
+            (<a href="#debutsymptomes">modifier</a>)
         </p>`
     }
 

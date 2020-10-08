@@ -238,6 +238,36 @@ Si vous ne disposez pas de ces informations précises, vous pouvez saisir une ap
 
 
 
+## [question_debut_symptomes_aide.md](question_debut_symptomes_aide.md)
+
+<!---->Cette date est importante afin de déterminer la période d’incubation et de guérison de votre maladie.
+
+---
+
+<!---->Cette date est importante afin de déterminer la période d’incubation et de guérison de sa maladie.
+
+
+
+## [question_debut_symptomes_libellé.md](question_debut_symptomes_libellé.md)
+
+<!---->J’ai un ou des <b>signes</b> qui peuvent évoquer la Covid depuis :
+
+---
+
+<!---->Cette personne a un ou des <b>signes</b> qui peuvent évoquer la Covid depuis :
+
+
+
+## [question_debut_symptomes_titre.md](question_debut_symptomes_titre.md)
+
+<!---->La date de mes premiers symptômes
+
+---
+
+<!---->La date de ses premiers symptômes
+
+
+
 ## [question_dépistage_aide.md](question_dépistage_aide.md)
 
 Le test virologique (aussi appelé RT-PCR) détecte la présence du virus dans un prélèvement nasal.
@@ -370,36 +400,6 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 ---
 
 <!---->Son lieu de résidence
-
-
-
-## [question_suivi_date_aide.md](question_suivi_date_aide.md)
-
-<!---->Cette date est importante pour connaître la période d’incubation et de guérison de votre maladie.
-
----
-
-<!---->Cette date est importante pour connaître la période d’incubation et de guérison de sa maladie.
-
-
-
-## [question_suivi_date_libellé.md](question_suivi_date_libellé.md)
-
-<!---->J’ai un ou des <b>symptômes</b> qui peuvent évoquer la Covid depuis :
-
----
-
-<!---->Cette personne a un ou des <b>symptômes</b> qui peuvent évoquer la Covid depuis :
-
-
-
-## [question_suivi_date_titre.md](question_suivi_date_titre.md)
-
-<!---->La date de mes premiers symptômes
-
----
-
-<!---->La date de ses premiers symptômes
 
 
 

@@ -276,7 +276,7 @@ describe('Parcours', function () {
         // On est redirigé vers la date de suivi (parcours suivi)
         {
             let label = await page.waitForSelector(
-                '#page label[for="suivi_date_aujourdhui"]'
+                '#page label[for="debut_symptomes_aujourdhui"]'
             )
             await label.click()
 
@@ -368,7 +368,7 @@ describe('Parcours', function () {
         // On est redirigé vers la date de suivi (parcours suivi)
         // puis directement vers la résidence sans passer par les symptômes
         {
-            let label = await page.waitForSelector('#page label[for="suivi_date"]')
+            let label = await page.waitForSelector('#page label[for="debut_symptomes"]')
             await label.click()
 
             let bouton = await page.waitForSelector(
@@ -443,7 +443,7 @@ describe('Parcours', function () {
         // On est redirigé vers la date de suivi (parcours suivi)
         {
             let label = await page.waitForSelector(
-                '#page label[for="suivi_date_aujourdhui"]'
+                '#page label[for="debut_symptomes_aujourdhui"]'
             )
             await label.click()
 
@@ -640,7 +640,7 @@ describe('Parcours', function () {
         // Avec des symptômes actuels on est redirigé vers la date de suivi (parcours suivi)
         {
             let label = await page.waitForSelector(
-                '#page label[for="suivi_date_aujourdhui"]'
+                '#page label[for="debut_symptomes_aujourdhui"]'
             )
             await label.click()
 
@@ -685,7 +685,7 @@ describe('Parcours', function () {
         // Avec des symptômes actuels on est redirigé vers la date de suivi (parcours suivi)
         {
             let label = await page.waitForSelector(
-                '#page label[for="suivi_date_aujourdhui"]'
+                '#page label[for="debut_symptomes_aujourdhui"]'
             )
             await label.click()
 
@@ -732,7 +732,7 @@ describe('Parcours', function () {
         // Avec des symptômes passés on est redirigé vers la date de suivi (parcours suivi)
         {
             let label = await page.waitForSelector(
-                '#page label[for="suivi_date_aujourdhui"]'
+                '#page label[for="debut_symptomes_aujourdhui"]'
             )
             await label.click()
 
