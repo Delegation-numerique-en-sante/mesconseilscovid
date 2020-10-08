@@ -1,5 +1,3 @@
-import { hideElement } from './affichage.js'
-
 import prefectures from './data/prefectures.js'
 import departements from './data/departements.js'
 
@@ -63,44 +61,5 @@ export function antecedents(element, algoOrientation) {
         }
         content += '.'
         element.textContent = content
-    }
-}
-
-export function symptomesactuels(element, algoOrientation) {
-    if (algoOrientation.profil.hasSymptomesActuelsReconnus()) {
-        var symptomes = []
-        if (
-            algoOrientation.profil.symptomes_actuels_temperature ||
-            algoOrientation.profil.symptomes_actuels_temperature_inconnue
-        ) {
-            symptomes.push('vous avez de la température (ou vous ne savez pas)')
-        }
-        if (algoOrientation.profil.symptomes_actuels_toux) {
-            symptomes.push('vous avez de la toux')
-        }
-        if (algoOrientation.profil.symptomes_actuels_odorat) {
-            symptomes.push('vous avez perdu l’odorat')
-        }
-        if (algoOrientation.profil.symptomes_actuels_douleurs) {
-            symptomes.push('vous avez des douleurs')
-        }
-        if (algoOrientation.profil.symptomes_actuels_diarrhee) {
-            symptomes.push('vous avez de la diarrhée')
-        }
-        if (algoOrientation.profil.symptomes_actuels_fatigue) {
-            symptomes.push('vous êtes fatigué·e')
-        }
-        if (algoOrientation.profil.symptomes_actuels_alimentation) {
-            symptomes.push('vous avez arrêté de boire ou de manger')
-        }
-        if (algoOrientation.profil.symptomes_actuels_souffle) {
-            symptomes.push('vous êtes essouflé·e')
-        }
-        if (symptomes.length) {
-            const content = symptomes.join(' ; ') + '.'
-            element.textContent = content
-        } else {
-            hideElement(element.parentElement)
-        }
     }
 }

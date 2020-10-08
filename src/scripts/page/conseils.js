@@ -149,11 +149,6 @@ export function showRelevantAnswersRecap(element, profil, algoOrientation) {
     ;[].forEach.call(element.querySelectorAll('.nom-antecedents'), (elem) => {
         injection.antecedents(elem, algoOrientation)
     })
-
-    // eslint-disable-next-line no-extra-semi
-    ;[].forEach.call(element.querySelectorAll('.nom-symptomesactuels'), (elem) => {
-        injection.symptomesactuels(elem, algoOrientation)
-    })
 }
 
 function statutBlockNamesToDisplay(algoOrientation) {

@@ -172,7 +172,6 @@ export default class AlgorithmeOrientation {
             blockNames.push('conseils-personnels-depistage-positif-asymptomatique')
         } else if (this.profil.hasSymptomesActuelsReconnus()) {
             blockNames.push('conseils-personnels-symptomes-actuels')
-            blockNames.push('reponse-symptomes-actuels-symptomesactuelsreconnus')
             if (this.facteursDeGraviteMajeurs) {
                 blockNames.push(
                     'conseils-personnels-symptomes-actuels-sans-depistage-critique'
