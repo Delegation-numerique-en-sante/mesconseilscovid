@@ -637,8 +637,6 @@
                     <ul>
                         <li id="suivi-psy-2" hidden>{{ suivi_psy_2 }}</li>
                         <li id="suivi-psy-1" hidden>{{ suivi_psy_1 }}</li>
-                        <li>{{ conseils_autosuivi_régularité|me_or_them }}</li>
-                        <li>{{ conseils_autosuivi_historique|me_or_them }}</li>
                     </ul>
                 </div>
 
@@ -854,6 +852,9 @@
                             <div id="reponse-sante-antecedents" hidden>
                                 {{ réponse_antécédents }}
                             </div>
+                        </div>
+                        <div class="conseil">
+                            <p>{{ conseils_autosuivi_historique|me_or_them }}</p>
                         </div>
                         <div id="conseils-sante-general" class="conseil" hidden>
                             {{ conseils_santé }}
