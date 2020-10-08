@@ -23,8 +23,7 @@
 
 ## [suivi_gravité_0.md](suivi_gravité_0.md)
 
-Poursuivez votre auto-suivi à la maison.
-
+Continuez à suivre l’évolution de vos symptômes pendant votre isolement.
 
 
 ## [suivi_gravité_1.md](suivi_gravité_1.md)
