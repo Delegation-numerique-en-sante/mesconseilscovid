@@ -94,9 +94,12 @@ describe('Auto-suivi', function () {
                 (await gravite.innerText()).trim(),
                 'Poursuivez votre auto-suivi à la maison.'
             )
+            // le bloc « Ma santé »
+            let bloc = await page.waitForSelector('#page #conseils-sante summary')
+            await bloc.click()
             // un bouton vers l’historique du suivi
             let bouton = await page.waitForSelector(
-                '#page #suivi >> text="l’historique de vos symptômes"'
+                '#page #conseils-sante >> text="l’historique de vos symptômes"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             // un bouton pour refaire le questionnaire
@@ -173,9 +176,12 @@ describe('Auto-suivi', function () {
                 (await gravite.innerText()).trim(),
                 'Contactez le 15 ou demandez à un votre proche de le faire pour vous immédiatement.'
             )
+            // le bloc « Ma santé »
+            let bloc = await page.waitForSelector('#page #conseils-sante summary')
+            await bloc.click()
             // un bouton vers l’historique du suivi
             let bouton = await page.waitForSelector(
-                '#page #suivi >> text="l’historique de vos symptômes"'
+                '#page #conseils-sante >> text="l’historique de vos symptômes"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             await Promise.all([
@@ -290,9 +296,12 @@ describe('Auto-suivi', function () {
                 (await gravite.innerText()).trim(),
                 'Poursuivez votre auto-suivi à la maison.'
             )
+            // le bloc « Ma santé »
+            let bloc = await page.waitForSelector('#page #conseils-sante summary')
+            await bloc.click()
             // un bouton vers l’historique du suivi
             let bouton = await page.waitForSelector(
-                '#page >> text="l’historique des symptômes"'
+                '#page #conseils-sante >> text="l’historique des symptômes"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             // un bouton pour refaire le questionnaire
@@ -370,9 +379,12 @@ describe('Auto-suivi', function () {
                 (await gravite.innerText()).trim(),
                 'Contactez le 15 ou demandez à un votre proche de le faire pour vous immédiatement.'
             )
+            // le bloc « Ma santé »
+            let bloc = await page.waitForSelector('#page #conseils-sante summary')
+            await bloc.click()
             // un bouton vers l’historique du suivi
             let bouton = await page.waitForSelector(
-                '#page #suivi >> text="l’historique des symptômes"'
+                '#page #conseils-sante >> text="l’historique des symptômes"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             await Promise.all([

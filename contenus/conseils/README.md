@@ -267,7 +267,7 @@ Nous vous conseillons de :
 
 1. Vous maintenir **en isolement** pendant au moins 7 jours.
 
-2. Suivre vos **symptômes** avec le [questionnaire de suivi](#suivisymptomes) pour plus de précisions sur votre sortie d’isolement.
+2. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 
 3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
 
@@ -289,7 +289,7 @@ Nous vous conseillons de :
 
 3. Vous maintenir **en isolement** jusqu’au résultat du test.
 
-4. Suivre vos **symptômes** avec le [questionnaire de suivi](#suivisymptomes).
+4. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 
 5. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
 
