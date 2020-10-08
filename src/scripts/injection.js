@@ -1,4 +1,4 @@
-import { showElement, hideElement } from './affichage.js'
+import { hideElement } from './affichage.js'
 
 import prefectures from './data/prefectures.js'
 import departements from './data/departements.js'
@@ -10,9 +10,8 @@ export function nomProfil(element, app) {
 
 export function titreConseils(element, profil) {
     if (!element) return
-    if (profil.estMonProfil()) return
-    showElement(element)
-    element.textContent = `Conseils pour « ${profil.nom} »`
+    if (profil.estMonProfil()) element.textContent = `Mes conseils`
+    else element.textContent = `Conseils pour « ${profil.nom} »`
 }
 
 export function departement(element, departement) {
