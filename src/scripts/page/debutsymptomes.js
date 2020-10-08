@@ -4,12 +4,12 @@ import {
     toggleFormButtonOnRadioRequired,
 } from '../formutils.js'
 
-export default function suividate(form, app) {
+export default function debutsymptomes(form, app) {
     const button = form.querySelector('input[type=submit]')
     // On pré-suppose que la personne qui fait son auto-suivi a des symptômes
-    form['suivi_date'].checked = true
+    form['debut_symptomes'].checked = true
 
-    const primary = form.elements['suivi_date']
+    const primary = form.elements['debut_symptomes']
     enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
         enableOrDisableSecondaryFields(form, primary)
@@ -25,7 +25,7 @@ export default function suividate(form, app) {
         }
     )
 
-    const datePicker = form.querySelector('#suivi_date_exacte')
+    const datePicker = form.querySelector('#debut_symptomes_exacte')
     datePicker.addEventListener('change', (event) => {
         datePickerChanged(form, event.target)
     })
@@ -43,25 +43,25 @@ export default function suividate(form, app) {
             dateFromPicker(event.target.elements['suivi_symptomes_date_exacte']) ||
             dateFromRadioButton(event.target.elements['suivi_symptomes_date'])
 
-        const suivi_date_checked = event.target.elements['suivi_date'].checked
+        const debut_symptomes_checked = event.target.elements['debut_symptomes'].checked
 
         // Enregistre le démarrage du suivi
-        if (!app.profil.hasSuiviStartDate() && suivi_date_checked) {
+        if (!app.profil.hasSuiviStartDate() && debut_symptomes_checked) {
             app.profil.suivi_start_date = new Date()
         }
         // On considère qu’il y a des symptômes si la case est cochée.
-        if (suivi_date_checked) {
+        if (debut_symptomes_checked) {
             app.profil.symptomes_actuels = true
         }
 
         app.enregistrerProfilActuel().then(() => {
-            app.goToNextPage('suividate')
+            app.goToNextPage('debutsymptomes')
         })
     })
 }
 
 function radioButtonChanged(form, input) {
-    let datePicker = form.querySelector('#suivi_date_exacte')
+    let datePicker = form.querySelector('#debut_symptomes_exacte')
     let submitButton = form.querySelector('input[type="submit"]')
     if (input.value === 'encore_avant_hier') {
         datePicker.removeAttribute('disabled')

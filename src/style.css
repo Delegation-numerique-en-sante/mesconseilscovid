@@ -231,7 +231,7 @@ main footer .legals {
 #contact-a-risque-form,
 #depistage-form,
 #suivi-medecin-form,
-#suivi-date-form,
+#debut-symptomes-form,
 #suivi-symptomes-form {
     padding-top: 40%;
     background-position: center 1rem;
@@ -275,7 +275,7 @@ main footer .legals {
     #contact-a-risque-form,
     #depistage-form,
     #suivi-medecin-form,
-    #suivi-date-form,
+    #debut-symptomes-form,
     #suivi-symptomes-form {
         padding-top: 25%;
         background-size: 30%;
@@ -372,7 +372,7 @@ main footer .legals {
 }
 #conseils-block.symptomes-passes h2.with-illustration,
 #symptomes-passes-form,
-#suivi-date-form {
+#debut-symptomes-form {
     background-image: url('illustrations/symptomespasses.svg');
 }
 #conseils-block.contact-a-risque h2.with-illustration,
