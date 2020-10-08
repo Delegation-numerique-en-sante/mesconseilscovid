@@ -14,10 +14,7 @@ import AlgorithmeOrientation from '../algorithme/orientation.js'
 import AlgorithmeSuivi from '../algorithme/suivi.js'
 
 export default function conseils(element, app) {
-    // Hide all conseils that might have been made visible on previous runs.
-    hideSelector(element, '.visible')
-
-    // Make sure we (re-)show profile-specific text.
+    // Make sure we show profile-specific text.
     showMeOrThem(element, app.profil)
 
     // Use custom illustration if needed.
