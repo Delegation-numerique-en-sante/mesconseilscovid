@@ -37,7 +37,7 @@
 ## [question_activité_pro_santé_aide.md](question_activité_pro_santé_aide.md)
 
 <sup>*</sup>
-Médecin, infirmier, aide soignant, orthophoniste, brancardier, manipulateur radio, kinésithérapeute, sage-femme, psychologue…
+Médecin, infirmier, aide soignant, pharmacien, orthophoniste, brancardier, manipulateur radio, kinésithérapeute, sage-femme, psychologue…
 
 
 
