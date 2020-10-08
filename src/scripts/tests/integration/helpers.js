@@ -132,7 +132,7 @@ async function remplirDepistage(page, depistage, resultat) {
     }
 
     if (depistage && (resultat === 'positif' || resultat === 'en_attente')) {
-        nextPage = 'suividate'
+        nextPage = 'debutsymptomes'
     } else {
         nextPage = 'symptomesactuels'
     }
@@ -167,7 +167,7 @@ async function remplirSymptomesActuels(page, symptomesActuels) {
         ) {
             nextPage = 'symptomespasses'
         } else {
-            nextPage = 'suividate'
+            nextPage = 'debutsymptomes'
         }
     } else {
         text = '/.* pas de symptômes actuellement/'
@@ -190,7 +190,7 @@ async function remplirSymptomesPasses(page, symptomesPasses) {
         let label = await page.waitForSelector('#page label[for="symptomes_passes"]')
         await label.click()
         text = '"Continuer"'
-        nextPage = 'suividate'
+        nextPage = 'debutsymptomes'
     } else {
         text = '/.* pas eu de symptômes dans les 7 derniers jours/' // &nbsp; après le 7
         nextPage = 'contactarisque'

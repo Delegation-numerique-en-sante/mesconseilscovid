@@ -23,7 +23,7 @@ import activitepro from './page/questionnaire/activitepro.js'
 import conseils from './page/conseils.js'
 
 import suiviintroduction from './page/suiviintroduction.js'
-import suividate from './page/suividate.js'
+import debutsymptomes from './page/debutsymptomes.js'
 import suivisymptomes from './page/suivisymptomes.js'
 import suivihistorique from './page/suivihistorique.js'
 
@@ -35,13 +35,13 @@ export function beforeSuiviIntroduction(profil, questionnaire) {
     if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
 }
 
-export function beforeSuiviDate(profil, questionnaire) {
+export function beforeDebutSymptomes(profil, questionnaire) {
     if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
 }
 
 export function beforeSuiviSymptomes(profil) {
     if (!profil.requiertSuivi()) return 'depistage'
-    if (typeof profil.symptomes_start_date === 'undefined') return 'suividate'
+    if (typeof profil.symptomes_start_date === 'undefined') return 'debutsymptomes'
 }
 
 export function beforeSuiviHistorique(profil, questionnaire) {
@@ -171,7 +171,7 @@ export function initRouter(app) {
 
     addAppRoute('conseils', conseils, beforeConseils)
     addAppRoute('suiviintroduction', suiviintroduction, beforeSuiviIntroduction)
-    addAppRoute('suividate', suividate)
+    addAppRoute('debutsymptomes', debutsymptomes)
     addAppRoute('suivisymptomes', suivisymptomes, beforeSuiviSymptomes)
     addAppRoute('suivihistorique', suivihistorique)
 
@@ -202,6 +202,13 @@ export function initRouter(app) {
         const origine = urlParams.get('origine')
 
         nouvelleversion(element, app, origine)
+    })
+
+    router.on(new RegExp('^suividate$'), function () {}, {
+        before: function (done) {
+            redirectTo('debutsymptomes')
+            done(false)
+        },
     })
 
     router.notFound(function () {

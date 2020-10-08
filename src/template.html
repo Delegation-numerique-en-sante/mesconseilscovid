@@ -1015,34 +1015,34 @@
     </div>
 </section>
 
-<section id="suividate" hidden>
-    <form id="suivi-date-form" class="block">
+<section id="debutsymptomes" hidden>
+    <form id="debut-symptomes-form" class="block">
         <fieldset>
-            <legend>{{ question_suivi_date_titre|me_or_them }}</legend>
+            <legend>{{ question_debut_symptomes_titre|me_or_them }}</legend>
             <div>
-                <input id="suivi_date" type="checkbox" name="suivi_date">
-                <label for="suivi_date">
+                <input id="debut_symptomes" type="checkbox" name="debut_symptomes">
+                <label for="debut_symptomes">
                     <span>
-                        {{ question_suivi_date_libellé|me_or_them }}
+                        {{ question_debut_symptomes_libellé|me_or_them }}
                     </span>
                 </label>
             </div>
             <div class="secondary disabled required" role="radiogroup">
-                <input id="suivi_date_aujourdhui" type="radio" required name="suivi_symptomes_date" value="aujourdhui">
-                <label for="suivi_date_aujourdhui">Aujourd’hui</label>
-                <input id="suivi_date_hier" type="radio" required name="suivi_symptomes_date" value="hier">
-                <label for="suivi_date_hier">Hier</label>
-                <input id="suivi_date_avant_hier" type="radio" required name="suivi_symptomes_date" value="avant_hier">
-                <label for="suivi_date_avant_hier">Avant-hier</label>
-                <input id="suivi_date_avant_avant_hier" type="radio" required name="suivi_symptomes_date" value="avant_avant_hier">
-                <label for="suivi_date_avant_avant_hier">Il y a 3 jours</label>
-                <input id="suivi_date_encore_avant_hier" type="radio" required name="suivi_symptomes_date" value="encore_avant_hier">
-                <label for="suivi_date_encore_avant_hier">
+                <input id="debut_symptomes_aujourdhui" type="radio" required name="suivi_symptomes_date" value="aujourdhui">
+                <label for="debut_symptomes_aujourdhui">Aujourd’hui</label>
+                <input id="debut_symptomes_hier" type="radio" required name="suivi_symptomes_date" value="hier">
+                <label for="debut_symptomes_hier">Hier</label>
+                <input id="debut_symptomes_avant_hier" type="radio" required name="suivi_symptomes_date" value="avant_hier">
+                <label for="debut_symptomes_avant_hier">Avant-hier</label>
+                <input id="debut_symptomes_avant_avant_hier" type="radio" required name="suivi_symptomes_date" value="avant_avant_hier">
+                <label for="debut_symptomes_avant_avant_hier">Il y a 3 jours</label>
+                <input id="debut_symptomes_encore_avant_hier" type="radio" required name="suivi_symptomes_date" value="encore_avant_hier">
+                <label for="debut_symptomes_encore_avant_hier">
                     Encore avant : 
-                    <input type="date" lang="fr" id="suivi_date_exacte" name="suivi_symptomes_date_exacte" disabled>
+                    <input type="date" lang="fr" id="debut_symptomes_exacte" name="suivi_symptomes_date_exacte" disabled>
                 </label>
             </div>
-            <div class="details">{{ question_suivi_date_aide|me_or_them }}</div>
+            <div class="details">{{ question_debut_symptomes_aide|me_or_them }}</div>
         </fieldset>
         <div class="form-controls">
             <input type="submit" class="button" value="Continuer" disabled>
