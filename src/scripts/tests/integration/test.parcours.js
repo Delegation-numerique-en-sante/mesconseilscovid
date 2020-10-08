@@ -330,7 +330,7 @@ describe('Parcours', function () {
             let gravite = await page.waitForSelector('#page #suivi-gravite-0')
             assert.equal(
                 (await gravite.innerText()).trim(),
-                'Poursuivez votre auto-suivi à la maison.'
+                'Continuez à suivre l’évolution de vos symptômes pendant votre isolement.'
             )
         }
     })
@@ -497,7 +497,7 @@ describe('Parcours', function () {
             let gravite = await page.waitForSelector('#page #suivi-gravite-0')
             assert.equal(
                 (await gravite.innerText()).trim(),
-                'Poursuivez votre auto-suivi à la maison.'
+                'Continuez à suivre l’évolution de vos symptômes pendant votre isolement.'
             )
         }
     })
