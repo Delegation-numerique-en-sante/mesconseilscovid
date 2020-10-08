@@ -18,13 +18,13 @@
 
 ## [conseils_activité_pro_arrêt.md](conseils_activité_pro_arrêt.md)
 
-Si vous n’avez pas la possibilité de télétravailler et que votre état de santé vous expose à un **très haut risque** de développer une **forme sévère** de Covid,  votre médecin traitant pourra vous fournir un **certificat d’isolement** à donner à votre employeur. Plus d’informations sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?_56_INSTANCE_XV0ItAcVS4ow_read_more=2). 🧑‍⚕️
+Si vous n’avez pas la possibilité de télétravailler et que votre état de santé vous expose à un **très haut risque** de développer une **forme sévère** de Covid,  votre médecin traitant pourra vous fournir un **certificat d’isolement** à donner à votre employeur. Plus d’informations sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?_56_INSTANCE_XV0ItAcVS4ow_read_more=2).
 
 
 
 ## [conseils_activité_pro_foyer_fragile.md](conseils_activité_pro_foyer_fragile.md)
 
-Si vous devez rester à domicile pour vous occuper d’une personne vulnérable et que le télétravail n’est pas possible, contactez votre médecin pour envisager les mesures possibles. 🧑‍⚕️
+Notez qu’à compter du 1<sup>er</sup> septembre 2020, les salariés vivant avec une personne vulnérable ne peuvent plus bénéficier d’un arrêt de travail dérogatoire indemnisé.
 
 
 
@@ -55,10 +55,12 @@ Nous vous invitons à privilégier le **télétravail** ou rentrer en contact av
 
     * la protection des [professionnels **de santé**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/distrilog-sante),
     * la protection des [professionnels **du médico-social**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-du-social-et-medico-social/),
-    * les [aides logistiques et psychologiques](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/article/aides-logistiques-et-psychologiques-aux-professionnels) pour tous les professionnels de santé.🧑‍⚕️
+    * les [aides logistiques et psychologiques](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/article/aides-logistiques-et-psychologiques-aux-professionnels) pour tous les professionnels de santé.
 
 * Nos conseils pour [les moins de 15 ans](#pediatrie), si vous travaillez auprès d’enfants et/ou devez conseiller des parents.
 * [L’espace dédié pour les professionnels](https://www.gouvernement.fr/info-coronavirus/espace-pour-les-professionnels) sur le site du gouvernement.
+
+Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous sur la [plateforme Renfort-RH](https://renfortrh.solidarites-sante.gouv.fr/).
 
 
 
@@ -91,7 +93,7 @@ Nous vous invitons à privilégier le **télétravail** ou rentrer en contact av
 
 ## [conseils_contacter_un_médecin.md](conseils_contacter_un_médecin.md)
 
-* En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde en composant le [0 800 130 000](tel:+33800130000). 🧑‍⚕️
+* En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde.
 
 * Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent **pendant plus de 24 heures**.
 
@@ -349,7 +351,7 @@ La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver 
 
 ## [conseils_santé_automédication.md](conseils_santé_automédication.md)
 
-* Ne prenez pas d’**anti-inflammatoires** sans avis médical. De plus, il semblerait que les anti-inflammatoires non stéroïdiens (AINS), comme l’ibuprofène ou le kétoprofène, pourraient **aggraver** l’infection à la Covid. C’est pourquoi :
+* Si vous avez des symptômes évocateurs de la Covid, ne prenez pas d’**anti-inflammatoires** sans avis médical. De plus, il semblerait que les anti-inflammatoires non stéroïdiens (AINS), comme l’ibuprofène ou le kétoprofène, pourraient **aggraver** l’infection à la Covid. C’est pourquoi :
 
     * seul le **paracétamol** est recommandé, à la dose de 1 g (1 000 mg) par prise (espacées au minimum de 4 h), sans dépasser un total de 3 g par jour ([en savoir plus](https://sfpt-fr.org/covid19-foire-aux-questions/1099-j-ai-de-la-fievre-quel-medicament-dois-je-prendre)) ;
 
@@ -361,9 +363,7 @@ La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver 
 
 ## [conseils_santé_maladie_chronique.md](conseils_santé_maladie_chronique.md)
 
-* Maladies chroniques :
-    * [Évaluer ses risques avec l’équipe de soins et adapter son mode de vie](https://www.has-sante.fr/jcms/p_3189294/fr/covid-19-evaluer-ses-risques-avec-l-equipe-de-soins-et-adapter-son-mode-de-vie) 🧑‍⚕️
-    * [« Faire face à une maladie chronique pendant le confinement »](https://www.has-sante.fr/upload/docs/application/pdf/2020-04/covid-19_-_faire_face_a_une_maladie_chronique_pendant_le_confinement_-_guide_patient.pdf) 🧑‍⚕️
+* Maladies chroniques : [Évaluer ses risques avec l’équipe de soins et adapter son mode de vie](https://www.has-sante.fr/jcms/p_3189294/fr/covid-19-evaluer-ses-risques-avec-l-equipe-de-soins-et-adapter-son-mode-de-vie)
 
 
 
