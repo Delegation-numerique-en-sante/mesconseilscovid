@@ -1,7 +1,7 @@
 import {
     enableOrDisableSecondaryFields,
     preloadCheckboxForm,
-    toggleFormButtonOnCheck,
+    toggleFormButtonOnRadioRequired,
 } from '../../formutils.js'
 
 export default function depistage(form, app) {
@@ -36,7 +36,8 @@ export default function depistage(form, app) {
     const uncheckedLabel = app.profil.estMonProfil()
         ? 'Je n’ai pas passé de test'
         : 'Cette personne n’a pas passé de test'
-    toggleFormButtonOnCheck(form, button.value, uncheckedLabel)
+    const requiredLabel = 'Veuillez remplir le formulaire au complet'
+    toggleFormButtonOnRadioRequired(form, button.value, uncheckedLabel, requiredLabel)
 
     // Soumission du formulaire
     form.addEventListener('submit', function (event) {

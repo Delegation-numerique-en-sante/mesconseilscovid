@@ -500,16 +500,16 @@
                 </label>
                 <div class="details">{{ question_dépistage_aide }}</div>
             </div>
-            <div role="radiogroup">
-                <div class="secondary disabled">
+            <div class="secondary disabled required" role="radiogroup">
+                <div>
                     <input id="depistage_resultat_positif" type="radio" required name="depistage_resultat" value="positif">
                     <label for="depistage_resultat_positif"><span>{{ question_dépistage_positif_libellé }}</span></label>
                 </div>
-                <div class="secondary disabled">
+                <div>
                     <input id="depistage_resultat_negatif" type="radio" required name="depistage_resultat" value="negatif">
                     <label for="depistage_resultat_negatif"><span>{{ question_dépistage_négatif_libellé }}</span></label>
                 </div>
-                <div class="secondary disabled">
+                <div>
                     <input id="depistage_resultat_en_attente" type="radio" required name="depistage_resultat" value="en_attente">
                     <label for="depistage_resultat_en_attente"><span>{{ question_dépistage_attente_libellé|me_or_them }}</span></label>
                 </div>
