@@ -633,10 +633,6 @@
                     <div id="suivi-gravite-0" class="statut suivi-gravite-0" hidden>
                         {{ suivi_gravité_0 }}
                     </div>
-                    <ul>
-                        <li id="suivi-psy-2" hidden>{{ suivi_psy_2 }}</li>
-                        <li id="suivi-psy-1" hidden>{{ suivi_psy_1 }}</li>
-                    </ul>
                 </div>
 
                 <div id="conseils-statut">
@@ -668,23 +664,22 @@
                         {{ statut_peu_de_risques }}
                     </div>
                 </div>
-
             </div>
 
-            <div id="conseils-personnels">
-                <div id="conseils-personnels-depistage-positif-symptomatique" class="conseils" hidden>
+            <div id="conseils-personnels" class="conseils">
+                <div id="conseils-personnels-depistage-positif-symptomatique" hidden>
                     <div class="conseil">
                         {{ conseils_personnels_depistage_positif_symptomatique }}
                     </div>
                 </div>
 
-                <div id="conseils-personnels-depistage-positif-asymptomatique" class="conseils" hidden>
+                <div id="conseils-personnels-depistage-positif-asymptomatique" hidden>
                     <div class="conseil">
                         {{ conseils_personnels_depistage_positif_asymptomatique }}
                     </div>
                 </div>
 
-                <div id="conseils-personnels-symptomes-actuels" class="conseils" hidden>
+                <div id="conseils-personnels-symptomes-actuels" hidden>
                     <div class="reponse">
                         <div id="reponse-symptomes-actuels-symptomesactuelsreconnus" hidden>
                             {{ réponse_symptômes_actuels_reconnus }}
@@ -698,7 +693,7 @@
                     </div>
                 </div>
 
-                <div id="conseils-personnels-symptomes-passes" class="conseils" hidden>
+                <div id="conseils-personnels-symptomes-passes" hidden>
                     <div id="conseils-personnels-symptomes-passes-sans-risques" hidden>
                         <div class="conseil">
                             {{ conseils_personnels_symptômes_passés_sans_risques }}
@@ -715,13 +710,20 @@
                     </div>
                 </div>
 
-                <div id="conseils-personnels-contact-a-risque" class="conseils" hidden>
+                <div id="conseils-personnels-contact-a-risque" hidden>
                     <div id="conseils-personnels-contact-a-risque-default" class="conseil" hidden>
                         {{ conseils_personnels_contact_à_risque }}
                     </div>
                     <div id="conseils-personnels-contact-a-risque-autre" class="conseil" hidden>
                         {{ conseils_personnels_contact_à_risque_autre }}
                     </div>
+                </div>
+
+                <div class="conseil" id="suivi-psy-2" hidden>
+                    {{ suivi_psy_2 }}
+                </div>
+                <div class="conseil" id="suivi-psy-1" hidden>
+                    {{ suivi_psy_1 }}
                 </div>
             </div>
 
