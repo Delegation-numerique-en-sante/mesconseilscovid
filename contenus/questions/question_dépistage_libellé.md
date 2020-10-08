@@ -1,5 +1,5 @@
-<!---->J’ai passé un test dans les 7 derniers jours
+<!---->J’ai passé un <b>test Covid</b> dans les 7 derniers jours.
 
 ---
 
-<!---->Cette personne a passé un test dans les 7 derniers jours.
+<!---->Cette personne a passé un <b>test Covid</b> dans les 7 derniers jours.
