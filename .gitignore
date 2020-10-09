@@ -8,3 +8,5 @@ src/index.html
 __pycache__
 feedback/paper_key
 contenus/zoverride
+.tox
+*.egg-info
