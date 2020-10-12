@@ -35,7 +35,7 @@ export default class AlgorithmeOrientation {
     }
 
     // Facteurs pronostiques de forme grave liés au terrain (fragilité)
-    get personne_fragile() {
+    get personneFragile() {
         return (
             this.sup65 ||
             this.profil.grossesse_3e_trimestre ||
@@ -113,7 +113,7 @@ export default class AlgorithmeOrientation {
         if (this.risqueDInfection && !this.profil.symptomes_actuels_autre) {
             return 'risque-eleve'
         }
-        if (this.personne_fragile) {
+        if (this.personneFragile) {
             return 'personne-fragile'
         }
         if (this.profil.foyer_fragile) {
@@ -129,7 +129,7 @@ export default class AlgorithmeOrientation {
         } else {
             // #3.3
             if (this.fievre && this.profil.symptomes_actuels_toux) {
-                if (this.personne_fragile) {
+                if (this.personneFragile) {
                     if (this.totalFacteursDeGraviteMineurs > 1) {
                         gravite = 2
                     } else {
@@ -147,7 +147,7 @@ export default class AlgorithmeOrientation {
                         (this.profil.symptomes_actuels_toux &&
                             this.profil.symptomes_actuels_odorat)))
             ) {
-                if (this.personne_fragile) {
+                if (this.personneFragile) {
                     if (this.totalFacteursDeGraviteMineurs > 1) {
                         gravite = 2
                     } else {
@@ -165,7 +165,7 @@ export default class AlgorithmeOrientation {
                 (this.profil.symptomes_actuels_toux ||
                     this.profil.symptomes_actuels_douleurs ||
                     this.profil.symptomes_actuels_odorat) &&
-                this.personne_fragile
+                this.personneFragile
             ) {
                 gravite = 3
             }
@@ -198,7 +198,7 @@ export default class AlgorithmeOrientation {
             }
         } else if (this.profil.symptomes_passes) {
             blockNames.push('conseils-personnels-symptomes-passes')
-            if (this.personne_fragile || this.profil.foyer_fragile) {
+            if (this.personneFragile || this.profil.foyer_fragile) {
                 blockNames.push('conseils-personnels-symptomes-passes-avec-risques')
             } else {
                 blockNames.push('conseils-personnels-symptomes-passes-sans-risques')
@@ -242,7 +242,7 @@ export default class AlgorithmeOrientation {
 
     gestesBarriereBlockNamesToDisplay() {
         const blockNames = ['conseils-gestes-barrieres-masque']
-        if (this.personne_fragile) {
+        if (this.personneFragile) {
             if (this.antecedents || this.profil.antecedent_chronique_autre) {
                 blockNames.push('reponse-gestes-barrieres-masque-antecedents')
             }
@@ -298,7 +298,7 @@ export default class AlgorithmeOrientation {
             }
 
             // Bloc additionnel: personne fragile
-            if (this.personne_fragile) {
+            if (this.personneFragile) {
                 blockNames.push('reponse-activite-pro-personne-fragile')
                 blockNames.push('conseils-activite-pro-personne-fragile')
             }
@@ -337,7 +337,7 @@ export default class AlgorithmeOrientation {
         if (this.antecedents || this.profil.antecedent_chronique_autre) {
             blockNames.push('reponse-sante-antecedents')
         }
-        if (this.personne_fragile) {
+        if (this.personneFragile) {
             blockNames.push('conseils-sante-personne-fragile')
         } else {
             blockNames.push('conseils-sante-general')
