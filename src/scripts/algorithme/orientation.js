@@ -1,3 +1,16 @@
+// Les statuts possibles en sortie de l’algorithme
+const STATUTS = [
+    'symptomatique-urgent',
+    'symptomatique-positif',
+    'symptomatique-negatif',
+    'symptomatique',
+    'asymptomatique',
+    'risque-eleve',
+    'personne-fragile',
+    'foyer-fragile',
+    'peu-de-risques',
+]
+
 export default class AlgorithmeOrientation {
     constructor(profil, incidenceParDepartement) {
         this.profil = profil
@@ -74,6 +87,10 @@ export default class AlgorithmeOrientation {
             this.profil.symptomes_passes ||
             this.profil.hasContactARisqueReconnus()
         )
+    }
+
+    get listStatuts() {
+        return STATUTS
     }
 
     get statut() {
