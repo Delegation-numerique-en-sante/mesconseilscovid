@@ -81,7 +81,7 @@ export default class AlgorithmeOrientation {
         )
     }
 
-    get symptomes() {
+    get risqueDInfection() {
         return (
             this.profil.hasSymptomesActuelsReconnus() ||
             this.profil.symptomes_passes ||
@@ -110,7 +110,7 @@ export default class AlgorithmeOrientation {
         if (this.profil.estPositifAsymptomatique()) {
             return 'asymptomatique'
         }
-        if (this.symptomes && !this.profil.symptomes_actuels_autre) {
+        if (this.risqueDInfection && !this.profil.symptomes_actuels_autre) {
             return 'risque-eleve'
         }
         if (this.personne_fragile) {
@@ -272,7 +272,7 @@ export default class AlgorithmeOrientation {
 
     activiteProBlockNamesToDisplay() {
         const blockNames = []
-        if (this.symptomes) {
+        if (this.risqueDInfection) {
             return []
         }
         if (
@@ -320,7 +320,7 @@ export default class AlgorithmeOrientation {
 
     grossesseBlockNamesToDisplay() {
         const blockNames = []
-        if (this.symptomes) {
+        if (this.risqueDInfection) {
             return []
         }
         if (this.profil.grossesse_3e_trimestre) {
