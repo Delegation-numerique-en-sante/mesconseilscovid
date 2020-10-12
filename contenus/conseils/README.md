@@ -9,7 +9,7 @@
 <div class="conseil">
 
 * Si cela est possible, privilégiez le **télétravail**.
-* Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique** et les **gestes barrières** limitent la propagation du virus entre collègues.
+* Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues.
 * Nos conseils pour préserver votre [santé au travail](#medecinedutravail).
 
 </div>
@@ -110,13 +110,13 @@ Pour toutes vos questions sur la Covid, vous pouvez :
 
 ## [conseils_département_circulation_faible.md](conseils_département_circulation_faible.md)
 
-La circulation du virus est relativement lente dans votre département. Par précaution, maintenez les gestes barrières.
+La circulation du virus est relativement lente dans votre département. Par précaution, maintenez les gestes barrières, **y compris le port du masque**.
 
 
 
 ## [conseils_département_circulation_élevée.md](conseils_département_circulation_élevée.md)
 
-Vous résidez dans un département où le virus est **particulièrement présent**. Faites attention et appliquez strictement les gestes barrières.
+Vous résidez dans un département où le virus est **particulièrement présent**. Faites attention et appliquez strictement les gestes barrières, **dont le port du masque**.
 
 
 
