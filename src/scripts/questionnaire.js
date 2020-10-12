@@ -54,7 +54,24 @@ export const TRANSITIONS = {
         },
     },
     debutsymptomes: {
-        previous: () => 'suiviintroduction',
+        previous: (profil) => {
+            if (
+                profil.depistage === true &&
+                (profil.depistage_resultat === 'positif' ||
+                    profil.depistage_resultat === 'en_attente')
+            ) {
+                return 'depistage'
+            } else if (
+                profil.depistage === false &&
+                profil.hasSymptomesActuelsReconnus()
+            ) {
+                return 'symptomesactuels'
+            } else if (profil.depistage === false && profil.symptomes_passes) {
+                return 'symptomespasses'
+            } else {
+                return 'suiviintroduction'
+            }
+        },
         next: {
             residence: (profil) =>
                 profil.symptomes_actuels === false && profil.symptomes_passes === false,
