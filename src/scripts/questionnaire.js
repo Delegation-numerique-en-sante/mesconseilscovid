@@ -173,11 +173,11 @@ export class Questionnaire {
 
     // Détermine la page précédente du questionnaire, pour pouvoir inclure
     // un lien « Retour » à chaque étape.
-    previousPage(currentPage) {
+    previousPage(currentPage, profil) {
         const question = this.transitions[currentPage]
         if (typeof question.previous === 'undefined') return
 
-        return question.previous()
+        return question.previous(profil)
     }
 }
 export default Questionnaire
