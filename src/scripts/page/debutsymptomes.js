@@ -5,7 +5,6 @@ import {
 } from '../formutils.js'
 
 export default function debutsymptomes(form, app) {
-    const button = form.querySelector('input[type=submit]')
     // On pré-suppose que la personne qui fait son auto-suivi a des symptômes
     form['debut_symptomes'].checked = true
 
@@ -30,6 +29,7 @@ export default function debutsymptomes(form, app) {
         datePickerChanged(form, event.target)
     })
 
+    const button = form.querySelector('input[type=submit]')
     const pourUnProche = !app.profil.estMonProfil()
     const uncheckedLabel = pourUnProche
         ? 'Cette personne n’a pas de symptômes'
