@@ -16,8 +16,82 @@ export const TRANSITIONS = {
         previous: { introduction: () => true },
         next: { depistage: (profil) => profil.nom },
     },
+    depistage: {
+        previous: { introduction: () => true },
+        next: {
+            debutsymptomes: (profil) => profil.requiertSuivi(),
+            symptomesactuels: (profil) => profil.isDepistageComplete(),
+        },
+    },
+    debutsymptomes: {
+        previous: {
+            depistage: (profil) =>
+                profil.depistage === true &&
+                (profil.depistage_resultat === 'positif' ||
+                    profil.depistage_resultat === 'en_attente'),
+            symptomesactuels: (profil) =>
+                profil.depistage === false && profil.hasSymptomesActuelsReconnus(),
+            symptomespasses: (profil) =>
+                profil.depistage === false && profil.symptomes_passes,
+            suiviintroduction: () => true,
+        },
+        next: {
+            residence: (profil) =>
+                profil.symptomes_actuels === false && profil.symptomes_passes === false,
+            suivisymptomes: (profil) => profil.hasSuiviStartDate(),
+        },
+    },
+    suivisymptomes: {
+        previous: { debutsymptomes: () => true },
+        next: {
+            conseils: (profil) => profil.isComplete(),
+            residence: (profil) => profil.isContactARisqueComplete(),
+        },
+    },
+    symptomesactuels: {
+        previous: { depistage: () => true },
+        next: {
+            debutsymptomes: (profil) =>
+                profil.isSymptomesActuelsComplete() &&
+                profil.requiertSuivi() &&
+                !profil.hasSuiviStartDate(),
+            residence: (profil) =>
+                profil.isSymptomesActuelsComplete() &&
+                profil.hasSymptomesActuelsReconnus(),
+            symptomespasses: (profil) => profil.isSymptomesActuelsComplete(),
+        },
+    },
+    symptomespasses: {
+        previous: { symptomesactuels: () => true },
+        next: {
+            debutsymptomes: (profil) =>
+                profil.isSymptomesPassesComplete() &&
+                profil.requiertSuivi() &&
+                !profil.hasSuiviStartDate(),
+            residence: (profil) =>
+                profil.isSymptomesPassesComplete() && profil.symptomes_passes,
+            contactarisque: (profil) => profil.isSymptomesPassesComplete(),
+        },
+    },
+    contactarisque: {
+        previous: { symptomespasses: () => true },
+        next: {
+            residence: (profil) => profil.isContactARisqueComplete(),
+        },
+    },
     residence: {
-        previous: { contactarisque: () => true },
+        previous: {
+            suivisymptomes: (profil) =>
+                profil.depistage === true &&
+                (profil.depistage_resultat === 'positif' ||
+                    profil.depistage_resultat === 'en_attente'),
+            symptomesactuels: (profil) =>
+                profil.isSymptomesActuelsComplete() &&
+                profil.hasSymptomesActuelsReconnus(),
+            symptomespasses: (profil) =>
+                profil.isSymptomesPassesComplete() && profil.symptomes_passes,
+            contactarisque: (profil) => profil.isContactARisqueComplete(),
+        },
         next: { foyer: (profil) => profil.isResidenceComplete() },
     },
     foyer: {
@@ -41,68 +115,6 @@ export const TRANSITIONS = {
         previous: { caracteristiques: () => true },
         next: {
             conseils: (profil) => profil.isActiviteProComplete(),
-        },
-    },
-    depistage: {
-        previous: { introduction: () => true },
-        next: {
-            debutsymptomes: (profil) =>
-                profil.requiertSuivi() && !profil.hasSuiviStartDate(),
-            suivisymptomes: (profil) =>
-                profil.requiertSuivi() && profil.hasSuiviStartDate(),
-            symptomesactuels: (profil) => profil.isDepistageComplete(),
-        },
-    },
-    debutsymptomes: {
-        previous: {
-            depistage: (profil) =>
-                profil.depistage === true &&
-                (profil.depistage_resultat === 'positif' ||
-                    profil.depistage_resultat === 'en_attente'),
-            symptomesactuels: (profil) =>
-                profil.depistage === false && profil.hasSymptomesActuelsReconnus(),
-            symptomespasses: (profil) =>
-                profil.depistage === false && profil.symptomes_passes,
-            suiviintroduction: () => true,
-        },
-        next: {
-            residence: (profil) =>
-                profil.symptomes_actuels === false && profil.symptomes_passes === false,
-            suivisymptomes: (profil) => profil.hasSuiviStartDate(),
-        },
-    },
-    suivisymptomes: {
-        previous: { suiviintroduction: () => true },
-        next: {
-            conseils: (profil) => profil.isComplete(),
-            residence: (profil) => profil.isContactARisqueComplete(),
-        },
-    },
-    symptomesactuels: {
-        previous: { depistage: () => true },
-        next: {
-            debutsymptomes: (profil) =>
-                profil.isSymptomesActuelsComplete() && profil.requiertSuivi(),
-            residence: (profil) =>
-                profil.isSymptomesActuelsComplete() &&
-                profil.hasSymptomesActuelsReconnus(),
-            symptomespasses: (profil) => profil.isSymptomesActuelsComplete(),
-        },
-    },
-    symptomespasses: {
-        previous: { symptomesactuels: () => true },
-        next: {
-            debutsymptomes: (profil) =>
-                profil.isSymptomesPassesComplete() && profil.requiertSuivi(),
-            residence: (profil) =>
-                profil.isSymptomesPassesComplete() && profil.symptomes_passes,
-            contactarisque: (profil) => profil.isSymptomesPassesComplete(),
-        },
-    },
-    contactarisque: {
-        previous: { symptomespasses: () => true },
-        next: {
-            residence: (profil) => profil.isContactARisqueComplete(),
         },
     },
     conseils: {},
