@@ -348,9 +348,6 @@ export default class AlgorithmeOrientation {
 
     foyerBlockNamesToDisplay() {
         const blockNames = []
-        if (this.profil.symptomes_actuels) {
-            return []
-        }
         if (this.profil.foyer_fragile) {
             blockNames.push('conseils-foyer')
             blockNames.push('conseils-foyer-fragile')
