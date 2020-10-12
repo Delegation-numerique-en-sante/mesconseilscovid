@@ -13,23 +13,23 @@ export const ORDRE = [
 
 export const TRANSITIONS = {
     nom: {
-        previous: () => 'introduction',
+        previous: { introduction: () => true },
         next: { depistage: (profil) => profil.nom },
     },
     residence: {
-        previous: () => 'contactarisque',
+        previous: { contactarisque: () => true },
         next: { foyer: (profil) => profil.isResidenceComplete() },
     },
     foyer: {
-        previous: () => 'residence',
+        previous: { residence: () => true },
         next: { antecedents: (profil) => profil.isFoyerComplete() },
     },
     antecedents: {
-        previous: () => 'foyer',
+        previous: { foyer: () => true },
         next: { caracteristiques: (profil) => profil.isAntecedentsComplete() },
     },
     caracteristiques: {
-        previous: () => 'antecedents',
+        previous: { antecedents: () => true },
         next: {
             activitepro: (profil) =>
                 profil.isCaracteristiquesComplete() && profil.age >= 15,
@@ -38,13 +38,13 @@ export const TRANSITIONS = {
         },
     },
     activitepro: {
-        previous: () => 'caracteristiques',
+        previous: { caracteristiques: () => true },
         next: {
             conseils: (profil) => profil.isActiviteProComplete(),
         },
     },
     depistage: {
-        previous: () => 'introduction',
+        previous: { introduction: () => true },
         next: {
             debutsymptomes: (profil) =>
                 profil.requiertSuivi() && !profil.hasSuiviStartDate(),
@@ -54,23 +54,16 @@ export const TRANSITIONS = {
         },
     },
     debutsymptomes: {
-        previous: (profil) => {
-            if (
+        previous: {
+            depistage: (profil) =>
                 profil.depistage === true &&
                 (profil.depistage_resultat === 'positif' ||
-                    profil.depistage_resultat === 'en_attente')
-            ) {
-                return 'depistage'
-            } else if (
-                profil.depistage === false &&
-                profil.hasSymptomesActuelsReconnus()
-            ) {
-                return 'symptomesactuels'
-            } else if (profil.depistage === false && profil.symptomes_passes) {
-                return 'symptomespasses'
-            } else {
-                return 'suiviintroduction'
-            }
+                    profil.depistage_resultat === 'en_attente'),
+            symptomesactuels: (profil) =>
+                profil.depistage === false && profil.hasSymptomesActuelsReconnus(),
+            symptomespasses: (profil) =>
+                profil.depistage === false && profil.symptomes_passes,
+            suiviintroduction: () => true,
         },
         next: {
             residence: (profil) =>
@@ -79,14 +72,14 @@ export const TRANSITIONS = {
         },
     },
     suivisymptomes: {
-        previous: () => 'suiviintroduction',
+        previous: { suiviintroduction: () => true },
         next: {
             conseils: (profil) => profil.isComplete(),
             residence: (profil) => profil.isContactARisqueComplete(),
         },
     },
     symptomesactuels: {
-        previous: () => 'depistage',
+        previous: { depistage: () => true },
         next: {
             debutsymptomes: (profil) =>
                 profil.isSymptomesActuelsComplete() && profil.requiertSuivi(),
@@ -97,7 +90,7 @@ export const TRANSITIONS = {
         },
     },
     symptomespasses: {
-        previous: () => 'symptomesactuels',
+        previous: { symptomesactuels: () => true },
         next: {
             debutsymptomes: (profil) =>
                 profil.isSymptomesPassesComplete() && profil.requiertSuivi(),
@@ -107,7 +100,7 @@ export const TRANSITIONS = {
         },
     },
     contactarisque: {
-        previous: () => 'symptomespasses',
+        previous: { symptomespasses: () => true },
         next: {
             residence: (profil) => profil.isContactARisqueComplete(),
         },
@@ -180,21 +173,33 @@ export class Questionnaire {
         console.debug(`no reachable page after ${currentPage}`)
     }
 
+    // Détermine la page précédente du questionnaire, pour pouvoir inclure
+    // un lien « Retour » à chaque étape.
+    previousPage(currentPage, profil) {
+        const question = this.transitions[currentPage]
+        if (typeof question === 'undefined') return
+        if (typeof question.previous === 'undefined') return
+
+        let previousPage
+        Object.keys(question.previous).forEach((dest) => {
+            const predicate = question.previous[dest]
+            if (predicate(profil)) {
+                console.debug(`matched predicate for ${dest}:`, predicate)
+                if (!previousPage) previousPage = dest
+            } else {
+                console.debug(`did not match predicate for ${dest}:`, predicate)
+            }
+        })
+        if (previousPage) return previousPage
+        console.debug(`no reachable page before ${currentPage}`)
+    }
+
     // Détermine la progression dans le questionnaire (p. ex. « 2/8»)
     progress(currentPage) {
         const num = this.ordre.indexOf(currentPage) + 1
         if (num === 0) return ''
 
         return `${num}/${this.total} - `
-    }
-
-    // Détermine la page précédente du questionnaire, pour pouvoir inclure
-    // un lien « Retour » à chaque étape.
-    previousPage(currentPage, profil) {
-        const question = this.transitions[currentPage]
-        if (typeof question.previous === 'undefined') return
-
-        return question.previous(profil)
     }
 }
 export default Questionnaire
