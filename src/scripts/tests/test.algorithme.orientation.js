@@ -510,17 +510,45 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [])
         })
 
-        it('Symptômes actuels n’affiche rien', function () {
-            var profil = new Profil('mes_infos', {
-                symptomes_actuels: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [])
-        })
-
         it('Risque foyer (fragile)', function () {
             var profil = new Profil('mes_infos', {
                 foyer_fragile: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
+                'conseils-foyer',
+                'conseils-foyer-fragile',
+            ])
+        })
+
+        it('Même avec symptômes actuels', function () {
+            var profil = new Profil('mes_infos', {
+                foyer_fragile: true,
+                symptomes_actuels: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
+                'conseils-foyer',
+                'conseils-foyer-fragile',
+            ])
+        })
+
+        it('Même avec symptômes passés', function () {
+            var profil = new Profil('mes_infos', {
+                foyer_fragile: true,
+                symptomes_passes: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
+                'conseils-foyer',
+                'conseils-foyer-fragile',
+            ])
+        })
+
+        it('Même avec contact à risque', function () {
+            var profil = new Profil('mes_infos', {
+                foyer_fragile: true,
+                contact_a_risque: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
