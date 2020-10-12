@@ -128,7 +128,7 @@ export function initRouter(app) {
 
         const boutonRetour = element.querySelector('form .back-button')
         if (boutonRetour) {
-            const previousPage = app.questionnaire.previousPage(pageName)
+            const previousPage = app.questionnaire.previousPage(pageName, app.profil)
             if (previousPage) {
                 boutonRetour.setAttribute('href', `#${previousPage}`)
             }
