@@ -1,3 +1,4 @@
+import { hideElement } from '../affichage.js'
 import { joursAvant } from '../utils.js'
 import {
     enableOrDisableSecondaryFields,
@@ -7,6 +8,13 @@ import {
 export default function debutsymptomes(form, app) {
     // On pré-suppose que la personne qui fait son auto-suivi a des symptômes
     form['debut_symptomes'].checked = true
+
+    // On évite de redemander à la personne si elle a des symptômes aujourd’hui
+    // lorsque c’était la question précédente
+    const previous = app.questionnaire.previousPage('debutsymptomes', app.profil)
+    if (previous === 'symptomesactuels') {
+        hideElement(form['debut_symptomes'])
+    }
 
     const primary = form.elements['debut_symptomes']
     enableOrDisableSecondaryFields(form, primary)

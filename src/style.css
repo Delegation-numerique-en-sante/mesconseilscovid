@@ -732,6 +732,18 @@ input[type='radio'] + label::before {
     border-radius: 50%;
 }
 
+input[type='checkbox'][hidden] + label::before,
+input[type='radio'][hidden] + label::before,
+input[type='checkbox'][hidden] + label::after,
+input[type='radio'][hidden] + label::after {
+    display: none;
+}
+input[type='checkbox'][hidden] + label,
+input[type='radio'][hidden] + label {
+    margin-left: 0.25rem;
+    padding-left: 0;
+}
+
 input[type='radio'] + label::after {
     content: '';
     position: absolute;
