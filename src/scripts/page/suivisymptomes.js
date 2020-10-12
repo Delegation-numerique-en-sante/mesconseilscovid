@@ -7,6 +7,18 @@ import {
 import AlgorithmeDeconfinement from '../algorithme/deconfinement.js'
 
 export default function suivisymptomes(form, app) {
+    // On évite de redemander à la personne si elle a des symptômes aujourd’hui
+    // lorsqu’on est dans la continuité du formulaire (vs suivi)
+    if (!app.profil.isComplete()) {
+        const elem = form.querySelector('#suivi-symptomes-aujourdhui')
+        if (elem) {
+            hideElement(elem)
+            ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
+                elem.setAttribute('style', 'margin-left: 0')
+            })
+        }
+    }
+
     // Question affichée seulement si on répond pour un proche
     const pourUnProche = !app.profil.estMonProfil()
     var themOnly = form.querySelector('.them-only')
