@@ -167,43 +167,32 @@ export class Questionnaire {
     // manière ordonnée. La page choisie est la première dont le prédicat
     // est vérifié.
     nextPage(currentPage, profil) {
-        const question = this.transitions[currentPage]
-        if (typeof question === 'undefined') return
-        if (typeof question.next === 'undefined') return
-
-        let nextPage
-        Object.keys(question.next).forEach((dest) => {
-            const predicate = question.next[dest]
-            if (predicate(profil)) {
-                console.debug(`matched predicate for ${dest}:`, predicate)
-                if (!nextPage) nextPage = dest
-            } else {
-                console.debug(`did not match predicate for ${dest}:`, predicate)
-            }
-        })
-        if (nextPage) return nextPage
-        console.debug(`no reachable page after ${currentPage}`)
+        return this.findNeighbor('next', currentPage, profil)
     }
 
     // Détermine la page précédente du questionnaire, pour pouvoir inclure
     // un lien « Retour » à chaque étape.
     previousPage(currentPage, profil) {
+        return this.findNeighbor('previous', currentPage, profil)
+    }
+
+    findNeighbor(direction, currentPage, profil) {
         const question = this.transitions[currentPage]
         if (typeof question === 'undefined') return
-        if (typeof question.previous === 'undefined') return
+        if (typeof question[direction] === 'undefined') return
 
-        let previousPage
-        Object.keys(question.previous).forEach((dest) => {
-            const predicate = question.previous[dest]
+        let result
+        Object.keys(question[direction]).forEach((dest) => {
+            const predicate = question[direction][dest]
             if (predicate(profil)) {
                 console.debug(`matched predicate for ${dest}:`, predicate)
-                if (!previousPage) previousPage = dest
+                if (!result) result = dest
             } else {
                 console.debug(`did not match predicate for ${dest}:`, predicate)
             }
         })
-        if (previousPage) return previousPage
-        console.debug(`no reachable page before ${currentPage}`)
+        if (result) return result
+        console.debug(`no ${direction} reachable page for ${currentPage}`)
     }
 
     // Détermine la progression dans le questionnaire (p. ex. « 2/8»)
