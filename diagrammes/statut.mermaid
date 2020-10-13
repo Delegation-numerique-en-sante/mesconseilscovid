@@ -1,0 +1,37 @@
+graph LR
+    symptomes-actuels{{"Symptômes<br>actuels ?"}}
+    symptomes-actuels -->|oui| facteurs-de-gravite-majeurs
+    symptomes-actuels -->|non| symptomes-passes-ou-contact-a-risque
+
+    facteurs-de-gravite-majeurs{{"Facteurs<br>de gravité<br>majeurs ?"}}
+    facteurs-de-gravite-majeurs -->|oui| statut-symptomatique-urgent
+    facteurs-de-gravite-majeurs -->|non| statut-symptomatique
+
+    symptomes-passes-ou-contact-a-risque{{"Symptômes<br>passés<br>ou contact<br>à risque ?"}}
+    symptomes-passes-ou-contact-a-risque -->|oui| statut-risque-eleve
+    symptomes-passes-ou-contact-a-risque -->|non| personne-fragile
+
+    personne-fragile{{"Personne<br>fragile ?"}}
+    personne-fragile -->|oui| statut-personne-fragile
+    personne-fragile -->|non| foyer-fragile
+
+    foyer-fragile{{"Foyer<br>fragile ?"}}
+    foyer-fragile -->|oui| statut-foyer-fragile
+    foyer-fragile -->|non| statut-peu-de-risques
+
+    statut-foyer-fragile["statut_foyer_fragile.md"]
+    statut-personne-fragile["statut_personne_fragile.md"]
+    statut-peu-de-risques["statut_peu_de_risques.md"]
+    statut-risque-eleve["statut_risque_élevé_contamination.md"]
+    statut-symptomatique["statut_symptomatique.md"]
+    statut-symptomatique-urgent["statut_symptomatique_urgent.md"]
+
+    classDef default fill:#acf;
+    classDef statut fill:#ffc;
+
+    class statut-foyer-fragile statut;
+    class statut-personne-fragile statut;
+    class statut-peu-de-risques statut;
+    class statut-risque-eleve statut;
+    class statut-symptomatique statut;
+    class statut-symptomatique-urgent statut;
