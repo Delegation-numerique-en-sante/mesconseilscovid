@@ -1,4 +1,4 @@
-all: parcours.png
+all: parcours.png statut.png
 
 %.png: %.mermaid
 	../node_modules/.bin/mmdc --width 1280 --height 960 -i $< -o $@
