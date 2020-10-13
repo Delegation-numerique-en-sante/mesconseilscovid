@@ -1,0 +1,40 @@
+graph TD
+    introduction(("Page d’accueil")) -->|pour moi| symptomesactuels
+    introduction(("Page d’accueil")) -->|pour un proche| nom
+
+    nom("Nom ?") --> symptomesactuels
+
+    symptomesactuels("Symptômes actuels ?")
+    symptomesactuels -->|"oui, lesquels ?"| debutsymptomes
+    symptomesactuels -->|non| symptomespasses
+
+    symptomespasses("Symptômes passés == 7 jours ?")
+    symptomespasses -->|oui, lesquels ?| debutsymptomes
+    symptomespasses -->|non| contactarisque
+
+    debutsymptomes("Depuis quand ?")
+    debutsymptomes -->|date| depistage
+
+    contactarisque("Contact à risque ?")
+    contactarisque -->|oui| depistage
+    contactarisque -->|non| depistage
+
+    depistage("Test Covid ?")
+    depistage --->|pas de test| residence
+    depistage --->|positif| residence
+    depistage --->|négatif| residence
+    depistage --->|en attente| residence
+
+    subgraph Questions bonus
+    residence("Résidence") --> foyer("Foyer") --> antecedents("Antécédents") --> caracteristiques("Caractéristiques") --> activitepro("Activité")
+    end
+
+    activitepro --> algorithmeconseils
+
+    algorithmeconseils{Algorithme Conseils}
+
+    algorithmeconseils -->|TODO| conseils(("Conseils"))
+
+    conseils -->|"si positif OU<br> en attente OU<br> symptomes actuels OU<br> symptomes passés OU<br> contact à risque"|suivisymptomes
+
+    suivisymptomes("Évolution des symptômes (suivi)") --> conseils

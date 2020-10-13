@@ -1,0 +1,29 @@
+graph TD
+    introduction(("Page d’accueil")) -->|pour moi| depistage
+    introduction(("Page d’accueil")) -->|pour un proche| nom
+
+    nom("Nom ?") --> depistage
+
+    depistage("Test Covid ?")
+    depistage --->|pas de test| situationactuelle
+    depistage --->|positif| situationactuelle
+    depistage --->|négatif| situationactuelle
+    depistage --->|en attente| situationactuelle
+
+    subgraph Suivi
+    debutsymptomes("Depuis quand ça dure ?") -->|date| suivisymptomes("Évolution des symptômes")
+    end
+
+    suivisymptomes --> residence
+
+    situationactuelle("Situation actuelle ?")
+    situationactuelle --->|"j'ai des symptômes maintenant"| debutsymptomes
+    situationactuelle -->|"j'ai eu un contact à risque"| residence
+    situationactuelle -->|"j'ai eu des symptômes,<br>mais maintenant c'est bon"| residence
+    situationactuelle -->|"rien de tout ça"| residence
+
+    subgraph Questions bonus
+    residence("Résidence") --> foyer("Foyer") --> antecedents("Antécédents") --> caracteristiques("Caractéristiques") --> activitepro("Activité")
+    end
+
+    activitepro --> conseils(("Conseils"))
