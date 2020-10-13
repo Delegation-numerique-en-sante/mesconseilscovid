@@ -5,13 +5,6 @@ import {
 } from '../../formutils.js'
 
 export default function depistage(form, app) {
-    // Premier démarrage du formulaire ?
-    if (!app.profil.questionnaire_started) {
-        app.profil.questionnaire_started = true
-        app.enregistrerProfilActuel()
-        window.plausible(`Questionnaire commencé`)
-    }
-
     // Remplir le formulaire avec les données du profil
     preloadCheckboxForm(form, 'depistage', app.profil)
     if (app.profil.depistage) {
@@ -46,30 +39,6 @@ export default function depistage(form, app) {
         app.profil.depistage = event.target.elements['depistage'].checked
         app.profil.depistage_resultat =
             event.target.elements['depistage_resultat'].value || undefined
-
-        // On complète manuellement le formulaire pour le rendre complet.
-        if (app.profil.requiertSuivi()) {
-            app.profil.symptomes_actuels = false // Temporaire.
-            app.profil.symptomes_actuels_alimentation = undefined
-            app.profil.symptomes_actuels_autre = undefined
-            app.profil.symptomes_actuels_diarrhee = undefined
-            app.profil.symptomes_actuels_douleurs = undefined
-            app.profil.symptomes_actuels_fatigue = undefined
-            app.profil.symptomes_actuels_odorat = undefined
-            app.profil.symptomes_actuels_souffle = undefined
-            app.profil.symptomes_actuels_temperature = undefined
-            app.profil.symptomes_actuels_temperature_inconnue = undefined
-            app.profil.symptomes_actuels_toux = undefined
-            app.profil.symptomes_passes = false
-            app.profil.contact_a_risque = false
-            app.profil.contact_a_risque_meme_lieu_de_vie = undefined
-            app.profil.contact_a_risque_contact_direct = undefined
-            app.profil.contact_a_risque_actes = undefined
-            app.profil.contact_a_risque_espace_confine = undefined
-            app.profil.contact_a_risque_meme_classe = undefined
-            app.profil.contact_a_risque_stop_covid = undefined
-            app.profil.contact_a_risque_autre = undefined
-        }
 
         app.enregistrerProfilActuel().then(() => {
             app.goToNextPage('depistage')

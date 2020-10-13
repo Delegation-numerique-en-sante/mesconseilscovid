@@ -48,10 +48,14 @@ describe('Plausible', function () {
 
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/#depistage' }),
+            page.waitForNavigation({ url: '**/#symptomesactuels' }),
         ])
 
         await remplirQuestionnaire(page, {
+            symptomesActuels: [],
+            symptomesPasses: false,
+            contactARisque: [],
+            depistage: false,
             departement: '80',
             activitePro: true,
             enfants: true,
@@ -59,10 +63,6 @@ describe('Plausible', function () {
             taille: '165',
             poids: '70',
             grossesse: false,
-            symptomesActuels: [],
-            symptomesPasses: false,
-            contactARisque: [],
-            depistage: false,
         })
 
         await waitForPlausibleTrackingEvent(page, 'pageview:conseils')
@@ -82,11 +82,11 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
-            'Questionnaire commencé:depistage',
-            'pageview:depistage',
+            'Questionnaire commencé:symptomesactuels',
             'pageview:symptomesactuels',
             'pageview:symptomespasses',
             'pageview:contactarisque',
+            'pageview:depistage',
             'pageview:residence',
             'pageview:foyer',
             'pageview:antecedents',
@@ -105,9 +105,13 @@ describe('Plausible', function () {
         let bouton = await page.waitForSelector('text="Démarrer"')
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/#depistage' }),
+            page.waitForNavigation({ url: '**/#symptomesactuels' }),
         ])
         await remplirQuestionnaire(page, {
+            symptomesActuels: [],
+            symptomesPasses: false,
+            contactARisque: [],
+            depistage: false,
             departement: '80',
             activitePro: true,
             enfants: true,
@@ -115,10 +119,6 @@ describe('Plausible', function () {
             taille: '165',
             poids: '70',
             grossesse: false,
-            symptomesActuels: [],
-            symptomesPasses: false,
-            contactARisque: [],
-            depistage: false,
         })
 
         await waitForPlausibleTrackingEvent(page, 'pageview:conseils')
@@ -138,11 +138,11 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
-            'Questionnaire commencé:depistage',
-            'pageview:depistage',
+            'Questionnaire commencé:symptomesactuels',
             'pageview:symptomesactuels',
             'pageview:symptomespasses',
             'pageview:contactarisque',
+            'pageview:depistage',
             'pageview:residence',
             'pageview:foyer',
             'pageview:antecedents',
