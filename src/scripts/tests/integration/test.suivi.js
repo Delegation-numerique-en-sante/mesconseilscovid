@@ -46,11 +46,16 @@ describe('Suivi', function () {
                 (await gravite.innerText()).trim(),
                 'Vous êtes peut-être porteur de la Covid.'
             )
+            // un bouton vers le suivi des symptômes
+            let bouton = await page.waitForSelector(
+                '#page #conseils-personnels-symptomes-actuels-sans-depistage >> text="questionnaire de suivi"'
+            )
+            assert.equal(await bouton.getAttribute('href'), '#suivisymptomes')
             // le bloc « Ma santé »
             let bloc = await page.waitForSelector('#page #conseils-sante summary')
             await bloc.click()
             // un bouton vers l’historique du suivi
-            let bouton = await page.waitForSelector(
+            bouton = await page.waitForSelector(
                 '#page #conseils-sante >> text="l’historique de vos symptômes"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
@@ -268,11 +273,15 @@ describe('Suivi', function () {
                 (await gravite.innerText()).trim(),
                 'Vous êtes peut-être porteur de la Covid.'
             )
+            // un bouton vers le suivi des symptômes
+            let bouton = await page.waitForSelector(
+                '#page #conseils-personnels-symptomes-actuels-sans-depistage >> text="questionnaire de suivi"'
+            )
             // le bloc « Ma santé »
             let bloc = await page.waitForSelector('#page #conseils-sante summary')
             await bloc.click()
             // un bouton vers l’historique du suivi
-            let bouton = await page.waitForSelector(
+            bouton = await page.waitForSelector(
                 '#page #conseils-sante >> text="l’historique des symptômes"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
