@@ -8,8 +8,8 @@ graph TD
     symptomesactuels -->|"oui, lesquels ?"| debutsymptomes
     symptomesactuels -->|non| symptomespasses
 
-    symptomespasses("Symptômes passés == 7 jours ?")
-    symptomespasses -->|oui, lesquels ?| debutsymptomes
+    symptomespasses("Symptômes passés <= 7 jours ?")
+    symptomespasses -->|oui| debutsymptomes
     symptomespasses -->|non| contactarisque
 
     debutsymptomes("Depuis quand ?")
@@ -35,6 +35,15 @@ graph TD
 
     algorithmeconseils -->|TODO| conseils(("Conseils"))
 
-    conseils -->|"si positif OU<br> en attente OU<br> symptomes actuels OU<br> symptomes passés OU<br> contact à risque"|suivisymptomes
+    conseils -->|"si positif OU<br> en attente OU<br> symptomes actuels OU<br> symptomes passés OU<br> contact à risque"|debutconnu
 
-    suivisymptomes("Évolution des symptômes (suivi)") --> conseils
+    debutconnu("Date de début connue")
+
+    subgraph Suivi
+        debutsymptomes2("Depuis quand ?")
+        debutconnu -->|oui| suivisymptomes
+        debutconnu -->|non| debutsymptomes2
+        debutsymptomes2 --> suivisymptomes
+    end
+
+    %% suivisymptomes("Évolution des symptômes (suivi)") --> conseils
