@@ -8,7 +8,7 @@ describe('Parcours', function () {
         await page.goto('http://localhost:8080/')
         assert.equal(
             await page.title(),
-            'Mes conseils Covid — Des conseils personnalisés pour agir contre le virus'
+            'Mes Conseils Covid — Des conseils personnalisés pour agir contre le virus'
         )
     })
 
