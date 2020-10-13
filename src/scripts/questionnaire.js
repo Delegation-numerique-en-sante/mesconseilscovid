@@ -1,9 +1,9 @@
 // Représentation de la structure du questionnaire d’orientation
 export const ORDRE = [
-    'depistage',
     'symptomesactuels',
     'symptomespasses',
     'contactarisque',
+    'depistage',
     'residence',
     'foyer',
     'antecedents',
@@ -14,50 +14,15 @@ export const ORDRE = [
 export const TRANSITIONS = {
     nom: {
         previous: { introduction: () => true },
-        next: { depistage: (profil) => profil.nom },
-    },
-    depistage: {
-        previous: { introduction: () => true },
-        next: {
-            debutsymptomes: (profil) => profil.requiertSuivi(),
-            symptomesactuels: (profil) => profil.isDepistageComplete(),
-        },
-    },
-    debutsymptomes: {
-        previous: {
-            depistage: (profil) =>
-                profil.depistage === true &&
-                (profil.depistage_resultat === 'positif' ||
-                    profil.depistage_resultat === 'en_attente'),
-            symptomesactuels: (profil) =>
-                profil.depistage === false && profil.hasSymptomesActuelsReconnus(),
-            symptomespasses: (profil) =>
-                profil.depistage === false && profil.symptomes_passes,
-            suiviintroduction: () => true,
-        },
-        next: {
-            residence: (profil) =>
-                profil.symptomes_actuels === false && profil.symptomes_passes === false,
-            suivisymptomes: (profil) => profil.hasSuiviStartDate(),
-        },
-    },
-    suivisymptomes: {
-        previous: { debutsymptomes: () => true },
-        next: {
-            conseils: (profil) => profil.isComplete(),
-            residence: (profil) => profil.isContactARisqueComplete(),
-        },
+        next: { symptomesactuels: (profil) => profil.nom },
     },
     symptomesactuels: {
-        previous: { depistage: () => true },
+        previous: { introduction: () => true },
         next: {
             debutsymptomes: (profil) =>
                 profil.isSymptomesActuelsComplete() &&
-                profil.requiertSuivi() &&
+                profil.hasSymptomesActuelsReconnus() &&
                 !profil.hasSuiviStartDate(),
-            residence: (profil) =>
-                profil.isSymptomesActuelsComplete() &&
-                profil.hasSymptomesActuelsReconnus(),
             symptomespasses: (profil) => profil.isSymptomesActuelsComplete(),
         },
     },
@@ -66,31 +31,38 @@ export const TRANSITIONS = {
         next: {
             debutsymptomes: (profil) =>
                 profil.isSymptomesPassesComplete() &&
-                profil.requiertSuivi() &&
+                profil.symptomes_passes &&
                 !profil.hasSuiviStartDate(),
-            residence: (profil) =>
-                profil.isSymptomesPassesComplete() && profil.symptomes_passes,
             contactarisque: (profil) => profil.isSymptomesPassesComplete(),
         },
     },
     contactarisque: {
         previous: { symptomespasses: () => true },
         next: {
-            residence: (profil) => profil.isContactARisqueComplete(),
+            depistage: (profil) => profil.isContactARisqueComplete(),
+        },
+    },
+    debutsymptomes: {
+        previous: {
+            symptomesactuels: (profil) => profil.hasSymptomesActuelsReconnus(),
+            symptomespasses: (profil) => profil.symptomes_passes,
+        },
+        next: {
+            residence: (profil) => profil.hasSuiviStartDate(),
+        },
+    },
+    depistage: {
+        previous: {
+            debutsymptomes: (profil) => profil.hasSuiviStartDate(),
+            contactarisque: (profil) => profil.isContactARisqueComplete(),
+        },
+        next: {
+            residence: (profil) => profil.isDepistageComplete(),
         },
     },
     residence: {
         previous: {
-            suivisymptomes: (profil) =>
-                profil.depistage === true &&
-                (profil.depistage_resultat === 'positif' ||
-                    profil.depistage_resultat === 'en_attente'),
-            symptomesactuels: (profil) =>
-                profil.isSymptomesActuelsComplete() &&
-                profil.hasSymptomesActuelsReconnus(),
-            symptomespasses: (profil) =>
-                profil.isSymptomesPassesComplete() && profil.symptomes_passes,
-            contactarisque: (profil) => profil.isContactARisqueComplete(),
+            depistage: (profil) => profil.isDepistageComplete(),
         },
         next: { foyer: (profil) => profil.isResidenceComplete() },
     },
@@ -118,6 +90,12 @@ export const TRANSITIONS = {
         },
     },
     conseils: {},
+    suivisymptomes: {
+        previous: { conseils: () => true },
+        next: {
+            conseils: (profil) => profil.isComplete(),
+        },
+    },
 }
 
 export class Questionnaire {

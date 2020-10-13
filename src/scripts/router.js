@@ -41,7 +41,7 @@ export function beforeDebutSymptomes(profil, questionnaire) {
 
 export function beforeSuiviSymptomes(profil) {
     if (!profil.requiertSuivi()) return 'depistage'
-    if (typeof profil.symptomes_start_date === 'undefined') return 'debutsymptomes'
+    if (typeof profil.suivi_start_date === 'undefined') return 'debutsymptomes'
 }
 
 export function beforeSuiviHistorique(profil, questionnaire) {

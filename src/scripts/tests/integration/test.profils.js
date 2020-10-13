@@ -1,5 +1,5 @@
 import { assert } from 'chai'
-import { remplirQuestionnaire } from './helpers.js'
+import { remplirQuestionnaire, waitForPlausibleTrackingEvent } from './helpers.js'
 
 describe('Profils', function () {
     it('remplir le questionnaire pour un proche', async function () {
@@ -32,22 +32,24 @@ describe('Profils', function () {
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#depistage' }),
+                page.waitForNavigation({ url: '**/#symptomesactuels' }),
             ])
         }
 
         // Légende adaptée
         {
-            let legend = await page.waitForSelector('#page #depistage-form legend')
-            assert.equal(await legend.innerText(), '1/9 - Son test Covid')
+            let legend = await page.waitForSelector(
+                '#page #symptomes-actuels-form legend'
+            )
+            assert.equal(await legend.innerText(), '1/9 - Son état actuel')
         }
 
         // Remplir le questionnaire
         await remplirQuestionnaire(page, {
-            depistage: false,
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],
+            depistage: false,
             departement: '80',
             enfants: true,
             age: '42',
@@ -79,6 +81,8 @@ describe('Profils', function () {
                 (await activite.innerText()).trim(),
                 'Vous exercez une activité professionnelle et/ou bénévole (modifier)'
             )
+
+            await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
 
             let bouton = await page.waitForSelector(
                 '#page >> text="Refaire le questionnaire"'

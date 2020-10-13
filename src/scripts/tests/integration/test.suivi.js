@@ -1,16 +1,11 @@
 import { assert } from 'chai'
 import {
     remplirQuestionnaire,
-    remplirDepartement,
-    remplirFoyer,
-    remplirAntecedents,
-    remplirCaracteristiques,
-    remplirActivite,
     remplirSuivi,
     waitForPlausibleTrackingEvent,
 } from './helpers.js'
 
-describe('Auto-suivi', function () {
+describe('Suivi', function () {
     it('remplir le questionnaire de suivi pour moi', async function () {
         const page = this.test.page
 
@@ -25,24 +20,62 @@ describe('Auto-suivi', function () {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:depistage'),
+                waitForPlausibleTrackingEvent(page, 'pageview:symptomesactuels'),
             ])
         }
 
-        // Remplir le questionnaire
+        // Remplir le questionnaire avec symptômes actuels
         await remplirQuestionnaire(page, {
-            depistage: false,
             symptomesActuels: ['temperature'],
+            debutSymptomes: 'aujourdhui',
+            depistage: false,
+            departement: '80',
+            enfants: true,
+            age: '42',
+            taille: '165',
+            poids: '70',
+            grossesse: false,
+            activitePro: true,
         })
 
-        // La page de date du suivi apparait la première fois
+        // La page de Conseils doit contenir :
         {
-            let label = await page.waitForSelector(
-                '#page label[for="debut_symptomes_aujourdhui"]'
+            // la phrase de gravité 0
+            let gravite = await page.waitForSelector('#page #statut-symptomatique')
+            assert.equal(
+                (await gravite.innerText()).trim(),
+                'Vous êtes peut-être porteur de la Covid.'
             )
-            await label.click()
+            // le bloc « Ma santé »
+            let bloc = await page.waitForSelector('#page #conseils-sante summary')
+            await bloc.click()
+            // un bouton vers l’historique du suivi
+            let bouton = await page.waitForSelector(
+                '#page #conseils-sante >> text="l’historique de vos symptômes"'
+            )
+            assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
+            // un bouton pour refaire le questionnaire
+            bouton = await page.waitForSelector(
+                '#page >> text="Refaire le questionnaire"'
+            )
+            await Promise.all([
+                bouton.click(),
+                waitForPlausibleTrackingEvent(page, 'pageview:introduction'),
+            ])
+        }
 
-            let bouton = await page.waitForSelector('#page >> text="Continuer"')
+        // Page d’accueil
+        {
+            let bouton = await page.waitForSelector('text="Démarrer mon suivi"')
+            await Promise.all([
+                bouton.click(),
+                waitForPlausibleTrackingEvent(page, 'pageview:suiviintroduction'),
+            ])
+        }
+
+        // Page d’introduction du suivi
+        {
+            let bouton = await page.waitForSelector('text="Démarrer mon suivi"')
             await Promise.all([
                 bouton.click(),
                 waitForPlausibleTrackingEvent(page, 'pageview:suivisymptomes'),
@@ -64,26 +97,8 @@ describe('Auto-suivi', function () {
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:residence'),
+                waitForPlausibleTrackingEvent(page, 'pageview:conseils'),
             ])
-        }
-
-        // Remplir la suite du questionnaire
-        {
-            const choix = {
-                departement: '00',
-                activitePro: true,
-                enfants: true,
-                age: '42',
-                taille: '165',
-                poids: '70',
-                grossesse: false,
-            }
-            await remplirDepartement(page, choix.departement)
-            await remplirFoyer(page, choix.enfants)
-            await remplirAntecedents(page)
-            await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
-            await remplirActivite(page, choix.activitePro)
         }
 
         // La page de Conseils doit contenir :
@@ -227,74 +242,31 @@ describe('Auto-suivi', function () {
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:depistage'),
+                waitForPlausibleTrackingEvent(page, 'pageview:symptomesactuels'),
             ])
         }
 
-        // Remplir le questionnaire
+        // Remplir le questionnaire avec symptômes actuels
         await remplirQuestionnaire(page, {
-            depistage: false,
             symptomesActuels: ['temperature'],
+            debutSymptomes: 'aujourdhui',
+            depistage: false,
+            departement: '80',
+            enfants: true,
+            age: '42',
+            taille: '165',
+            poids: '70',
+            grossesse: false,
+            activitePro: true,
         })
-
-        // La page de date du suivi apparait la première fois
-        {
-            let label = await page.waitForSelector(
-                '#page label[for="debut_symptomes_aujourdhui"]'
-            )
-            await label.click()
-
-            let bouton = await page.waitForSelector('#page >> text="Continuer"')
-            await Promise.all([
-                bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:suivisymptomes'),
-            ])
-        }
-
-        // La page du suivi des symptômes
-        {
-            await remplirSuivi(page, {
-                essoufflement: 'mieux',
-                etat_general: 'mieux',
-                alimentation_hydratation: 'non',
-                etat_psychologique: 'mieux',
-                fievre: 'non',
-                diarrhee_vomissements: 'non',
-                confusion: 'non',
-            })
-
-            let bouton = await page.waitForSelector('#page >> text="Continuer"')
-            await Promise.all([
-                bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:residence'),
-            ])
-        }
-
-        // Remplir la suite du questionnaire
-        {
-            const choix = {
-                departement: '00',
-                activitePro: true,
-                enfants: true,
-                age: '42',
-                taille: '165',
-                poids: '70',
-                grossesse: false,
-            }
-            await remplirDepartement(page, choix.departement)
-            await remplirFoyer(page, choix.enfants)
-            await remplirAntecedents(page)
-            await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
-            await remplirActivite(page, choix.activitePro)
-        }
 
         // La page de Conseils doit contenir :
         {
             // la phrase de gravité 0
-            let gravite = await page.waitForSelector('#page #suivi-gravite-0')
+            let gravite = await page.waitForSelector('#page #statut-symptomatique')
             assert.equal(
                 (await gravite.innerText()).trim(),
-                'Continuez à suivre l’évolution de vos symptômes pendant votre isolement.'
+                'Vous êtes peut-être porteur de la Covid.'
             )
             // le bloc « Ma santé »
             let bloc = await page.waitForSelector('#page #conseils-sante summary')
@@ -314,11 +286,9 @@ describe('Auto-suivi', function () {
             ])
         }
 
-        // La page d’Introduction contient maintenant un lien vers son suivi
+        // Page d’accueil
         {
-            let bouton = await page.waitForSelector(
-                '#page >> text="Continuer son suivi"'
-            )
+            let bouton = await page.waitForSelector('text="Démarrer son suivi"')
             assert.equal(
                 await bouton.evaluate(
                     (e) => e.parentElement.parentElement.querySelector('h3').innerText
@@ -331,14 +301,9 @@ describe('Auto-suivi', function () {
             ])
         }
 
-        // La page d’introduction du suivi comporte un lien direct
-        // vers ses symptômes car on a déjà renseignée la date de début
+        // Page d’introduction du suivi
         {
-            await page.waitForSelector('#page h2 >> text="Suivi de la maladie"')
-
-            let bouton = await page.waitForSelector(
-                '#page >> text="Continuer son suivi"'
-            )
+            let bouton = await page.waitForSelector('text="Démarrer son suivi"')
             assert.equal(
                 await bouton.evaluate(
                     (e) => e.parentElement.parentElement.querySelector('h3').innerText

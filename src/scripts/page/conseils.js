@@ -60,6 +60,11 @@ export default function conseils(element, app) {
         hideSelector(element, '#conseils-statut')
     }
 
+    // TODO: dedicated section.
+    if (app.profil.requiertSuivi()) {
+        displayBlocks(element, ['conseils-sante-historique-symptomes'])
+    }
+
     // Dynamic data injections.
     showRelevantAnswersRecap(element, app.profil, algoOrientation)
 

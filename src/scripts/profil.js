@@ -371,7 +371,7 @@ export default class Profil {
     }
 
     dernierEtat() {
-        return this.suivi.slice(-1)[0]
+        return this.hasHistorique() ? this.suivi.slice(-1)[0] : {}
     }
 
     suiviDerniersJours(delta) {
