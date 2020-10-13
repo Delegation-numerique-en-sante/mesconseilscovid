@@ -1,0 +1,28 @@
+graph TD
+    introduction(("Page d’accueil")) -->|pour moi| symptomesactuels
+    introduction(("Page d’accueil")) -->|pour un proche| nom
+
+    nom("Nom ?") --> symptomesactuels
+
+    symptomesactuels("Symptômes actuels ?")
+    symptomesactuels -->|oui| debutsymptomes("Début des symptômes")
+    symptomesactuels -->|non| symptomespasses("Symptômes passés ?")
+
+    symptomespasses("Symptômes passés ?")
+    symptomespasses -->|oui| conseils((Conseils))
+    symptomespasses -->|non| contactarisque("Contact à risque ?")
+
+    contactarisque("Contact à risque ?")
+    contactarisque -->|oui| conseils((Conseils))
+    contactarisque -->|non| residence(Résidence)
+
+    subgraph Suivi
+    debutsymptomes("Début des symptômes") -->|date| suivisymptomes("Évolution des symptômes")
+    end
+
+    suivisymptomes --> conseils((Conseils))
+    activitepro --> conseils((Conseils))
+
+    subgraph Questions bonus
+    residence("Résidence") --> foyer("Foyer") --> antecedents("Antécédents") --> caracteristiques("Caractéristiques") --> activitepro("Activité")
+    end
