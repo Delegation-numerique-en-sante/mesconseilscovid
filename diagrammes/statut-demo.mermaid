@@ -23,16 +23,16 @@ graph LR
         symptomes-actuels -->|non| depistage-sans-symptomes
 
         facteurs-de-gravite-majeurs{{"Facteurs<br>de gravité<br>majeurs ?"}}
-        facteurs-de-gravite-majeurs ----->|oui| statut-symptomatique-urgent + conseils_personnels_symptômes_actuels_sans_depistage_critique.md
+        facteurs-de-gravite-majeurs ----->|oui| statut-symptomatique-urgent
         facteurs-de-gravite-majeurs -->|non| depistage-avec-symptomes
 
         depistage-avec-symptomes{{"Résultat de test ?"}}
-        depistage-avec-symptomes ---->|positif| statut-symptomatique-positif + conseils_personnels_depistage_positif_symptomatique.md
+        depistage-avec-symptomes ---->|positif| statut-symptomatique-positif
         depistage-avec-symptomes ---->|negatif| statut-symptomatique-negatif
-        depistage-avec-symptomes ---->|pas de résultat| statut-symptomatique + conseils_personnels_symptômes_actuels_sans_depistage.md
+        depistage-avec-symptomes ---->|pas de résultat| statut-symptomatique
 
         depistage-sans-symptomes{{"Résultat de test ?"}}
-        depistage-sans-symptomes ----->|positif| statut-asymptomatique + conseils_personnels_depistage_positif_asymptomatique.md
+        depistage-sans-symptomes ----->|positif| statut-asymptomatique
         depistage-sans-symptomes -->|autres cas| symptomes-passes-ou-contact-a-risque
 
         symptomes-passes-ou-contact-a-risque{{"Symptômes<br>passés<br>ou contact<br>à risque ?"}}
@@ -40,7 +40,7 @@ graph LR
         symptomes-passes-ou-contact-a-risque -->|non| personne-fragile
 
         personne-fragile{{"Personne<br>fragile ?"}}
-        personne-fragile --->|oui| statut-personne-fragile + conseils_personnels_symptômes_passés_avec_risques.md + conseils_personnels_symptômes_passés_avec_risques_info.md
+        personne-fragile --->|oui| statut-personne-fragile
         personne-fragile -->|non| foyer-fragile
 
         foyer-fragile{{"Foyer<br>fragile ?"}}
@@ -54,14 +54,14 @@ graph LR
     suivi-gravite-0["suivi_gravité_0.md"]
 
     statut-foyer-fragile["statut_foyer_fragile.md"]
-    statut-personne-fragile["statut_personne_fragile.md"]
+    statut-personne-fragile["statut_personne_fragile.md<br>+ conseils_personnels_symptômes_passés_avec_risques.md<br>+ conseils_personnels_symptômes_passés_avec_risques_info.md"]
     statut-peu-de-risques["statut_peu_de_risques.md"]
     statut-risque-eleve["statut_risque_élevé_contamination.md"]
-    statut-asymptomatique["statut_asymptomatique.md"]
-    statut-symptomatique["statut_symptomatique.md"]
+    statut-asymptomatique["statut_asymptomatique.md<br>+ conseils_personnels_depistage_positif_asymptomatique.md"]
+    statut-symptomatique["statut_symptomatique.md<br>+ conseils_personnels_symptômes_actuels_sans_depistage.md"]
     statut-symptomatique-negatif["statut_symptomatique_négatif.md"]
-    statut-symptomatique-positif["statut_symptomatique_positif.md"]
-    statut-symptomatique-urgent["statut_symptomatique_urgent.md"]
+    statut-symptomatique-positif["statut_symptomatique_positif.md<br>+ conseils_personnels_depistage_positif_symptomatique.md"]
+    statut-symptomatique-urgent["statut_symptomatique_urgent.md <br>+ conseils_personnels_symptômes_actuels_sans_depistage_critique.md"]
 
     classDef default fill:#acf;
     classDef statut fill:#ffc;
