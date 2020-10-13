@@ -1,0 +1,83 @@
+graph LR
+    suivi{{"Suivi des<br>symptômes<br>démarré ?"}}
+    suivi --->|oui| gravite-3
+    suivi --->|non| symptomes-actuels
+
+    subgraph Suivi
+        gravite-3{{"Aggravation forte<br>du souffle ou<br>de l&rsquo;état général"}}
+        gravite-3 ------>|oui| suivi-gravite-3
+        gravite-3 -->|non| gravite-2
+
+        gravite-2{{"Aggravation du souffle<br>ou de l&rsquo;état général,<br>confusion,<br>impossibilité de boire<br> ou de s&rsquo;alimenter,<br>ou maux de tête"}}
+        gravite-2 ----->|oui| suivi-gravite-2
+        gravite-2 -->|non| gravite-1
+
+        gravite-1{{"Fièvre,<br>diarrhée,<br>vomissements,<br>ou toux"}}
+        gravite-1 ---->|oui| suivi-gravite-1
+        gravite-1 ---->|non| suivi-gravite-0
+    end
+
+    subgraph Orientation
+        symptomes-actuels{{"Symptômes<br>actuels ?"}}
+        symptomes-actuels -->|oui| facteurs-de-gravite-majeurs
+        symptomes-actuels -->|non| depistage-sans-symptomes
+
+        facteurs-de-gravite-majeurs{{"Facteurs<br>de gravité<br>majeurs ?"}}
+        facteurs-de-gravite-majeurs ----->|oui| statut-symptomatique-urgent
+        facteurs-de-gravite-majeurs -->|non| depistage-avec-symptomes
+
+        depistage-avec-symptomes{{"Résultat de test ?"}}
+        depistage-avec-symptomes ---->|positif| statut-symptomatique-positif
+        depistage-avec-symptomes ---->|negatif| statut-symptomatique-negatif
+        depistage-avec-symptomes ---->|pas de résultat| statut-symptomatique
+
+        depistage-sans-symptomes{{"Résultat de test ?"}}
+        depistage-sans-symptomes ----->|positif| statut-asymptomatique
+        depistage-sans-symptomes -->|autres cas| symptomes-passes-ou-contact-a-risque
+
+        symptomes-passes-ou-contact-a-risque{{"Symptômes<br>passés<br>ou contact<br>à risque ?"}}
+        symptomes-passes-ou-contact-a-risque ---->|oui| statut-risque-eleve
+        symptomes-passes-ou-contact-a-risque -->|non| personne-fragile
+
+        personne-fragile{{"Personne<br>fragile ?"}}
+        personne-fragile --->|oui| statut-personne-fragile
+        personne-fragile -->|non| foyer-fragile
+
+        foyer-fragile{{"Foyer<br>fragile ?"}}
+        foyer-fragile -->|oui| statut-foyer-fragile
+        foyer-fragile -->|non| statut-peu-de-risques
+    end
+
+    suivi-gravite-3["suivi_gravité_3.md"]
+    suivi-gravite-2["suivi_gravité_2.md"]
+    suivi-gravite-1["suivi_gravité_1.md"]
+    suivi-gravite-0["suivi_gravité_0.md"]
+
+    statut-foyer-fragile["statut_foyer_fragile.md"]
+    statut-personne-fragile["statut_personne_fragile.md"]
+    statut-peu-de-risques["statut_peu_de_risques.md"]
+    statut-risque-eleve["statut_risque_élevé_contamination.md"]
+    statut-asymptomatique["statut_asymptomatique.md"]
+    statut-symptomatique["statut_symptomatique.md"]
+    statut-symptomatique-negatif["statut_symptomatique_négatif.md"]
+    statut-symptomatique-positif["statut_symptomatique_positif.md"]
+    statut-symptomatique-urgent["statut_symptomatique_urgent.md"]
+
+    classDef default fill:#acf;
+    classDef statut fill:#ffc;
+    classDef statut-inaccessible fill:#eca;
+
+    class suivi-gravite-3 statut;
+    class suivi-gravite-2 statut;
+    class suivi-gravite-1 statut;
+    class suivi-gravite-0 statut;
+
+    class statut-foyer-fragile statut;
+    class statut-personne-fragile statut;
+    class statut-peu-de-risques statut;
+    class statut-risque-eleve statut;
+    class statut-asymptomatique statut;
+    class statut-symptomatique statut-inaccessible;
+    class statut-symptomatique-negatif statut-inaccessible;
+    class statut-symptomatique-positif statut-inaccessible;
+    class statut-symptomatique-urgent statut-inaccessible;
