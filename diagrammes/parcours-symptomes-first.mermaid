@@ -26,24 +26,18 @@ graph TD
     depistage --->|en attente| residence
 
     subgraph Questions bonus
-    residence("Résidence") --> foyer("Foyer") --> antecedents("Antécédents") --> caracteristiques("Caractéristiques") --> activitepro("Activité")
+        residence("Résidence") --> foyer("Foyer") --> antecedents("Antécédents") --> caracteristiques("Caractéristiques") --> activitepro("Activité")
     end
 
-    activitepro --> algorithmeconseils
+    activitepro --> conseils(("Conseils"))
 
-    algorithmeconseils{Algorithme Conseils}
-
-    algorithmeconseils -->|TODO| conseils(("Conseils"))
-
-    conseils -->|"si positif OU<br> en attente OU<br> symptomes actuels OU<br> symptomes passés OU<br> contact à risque"|debutconnu
-
-    debutconnu("Date de début connue")
+    conseils --> debutconnu
 
     subgraph Suivi
-        debutsymptomes2("Depuis quand ?")
+        debutconnu("Date de début connue")
         debutconnu -->|oui| suivisymptomes
         debutconnu -->|non| debutsymptomes2
+
+        debutsymptomes2("Depuis quand ?")
         debutsymptomes2 --> suivisymptomes
     end
-
-    %% suivisymptomes("Évolution des symptômes (suivi)") --> conseils
