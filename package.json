@@ -15,7 +15,7 @@
     "parcel-plugin-ogimage": "^1.2.0",
     "parcel-plugin-static-files-copy": "^2.3.1",
     "parcel-plugin-sw-asset-urls": "^0.1.2",
-    "playwright": "^1.4.2",
+    "playwright": "^1.5.0",
     "prettier": "^2.1.2",
     "serve-static": "^1.14.1"
   },
