@@ -387,7 +387,11 @@ export default class AlgorithmeOrientation {
             blockNames.push('reponse-sante-antecedents')
         }
         if (this.personneFragile) {
-            blockNames.push('conseils-sante-personne-fragile')
+            if (this.profil.hasSymptomesActuelsReconnus()) {
+                blockNames.push('conseils-sante-personne-fragile-symptomatique')
+            } else {
+                blockNames.push('conseils-sante-personne-fragile')
+            }
         } else {
             blockNames.push('conseils-sante-general')
         }
