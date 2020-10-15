@@ -81,6 +81,7 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
             assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [
                 'conseils-tests',
+                'conseils-tests-general',
             ])
         })
         it('En attente de résultat', function () {
@@ -93,6 +94,22 @@ describe('Algorithme d’orientation', function () {
                 'conseils-tests',
                 'conseils-tests-resultats',
             ])
+        })
+        it('Positif', function () {
+            var profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_resultat: 'positif',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [])
+        })
+        it('Négatif', function () {
+            var profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_resultat: 'negatif',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [])
         })
         it('Contact pas vraiment à risque', function () {
             var profil = new Profil('mes_infos', {
