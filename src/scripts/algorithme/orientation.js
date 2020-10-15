@@ -43,10 +43,7 @@ export default class AlgorithmeOrientation {
         let symptomes
         if (this.profil.hasSymptomesActuelsReconnus()) {
             symptomes = 'symptomes_actuels'
-            if (
-                this.profil.symptomes_actuels_souffle ||
-                this.profil.symptomes_actuels_alimentation
-            ) {
+            if (this.facteursDeGraviteMajeurs) {
                 symptomes += '_graves'
             }
         } else if (this.profil.symptomes_passes) {
