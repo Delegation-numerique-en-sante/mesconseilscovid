@@ -784,8 +784,7 @@ a[href*='youtube.com']::after {
     width: 25px;
     height: 20px;
 }
-.conseils a[href="https://travail-emploi.gouv.fr/actualites/l-actualite-du-ministere/article/covid-19-comment-assurer-ma-sante-et-ma-securite-au-travail"]::before,
-.conseils a[href*="youtube.com"]::before {
+.conseils a[href*='youtube.com']::before {
     background: no-repeat bottom left url('icone_video.svg');
     content: '';
     display: inline-flex;
