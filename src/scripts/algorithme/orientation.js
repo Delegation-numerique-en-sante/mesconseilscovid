@@ -17,6 +17,32 @@ export default class AlgorithmeOrientation {
         this.incidenceParDepartement = incidenceParDepartement
     }
 
+    get situation() {
+        if (!this.profil.isComplete()) return ''
+        const depistage = this.profil.depistage
+            ? this.profil.depistage_resultat
+            : 'pas_teste'
+        let symptomes
+        if (this.profil.hasSymptomesActuelsReconnus()) {
+            symptomes = 'symptomes_actuels'
+            if (
+                this.profil.symptomes_actuels_souffle ||
+                this.profil.symptomes_actuels_alimentation
+            ) {
+                symptomes += '_graves'
+            }
+        } else if (this.profil.symptomes_passes) {
+            symptomes = 'symptomes_passes'
+        } else if (this.profil.hasContactARisqueReconnus()) {
+            symptomes = 'contact_a_risque'
+        } else if (this.profil.contact_a_risque_autre) {
+            symptomes = 'contact_pas_vraiment_a_risque'
+        } else {
+            symptomes = 'asymptomatique'
+        }
+        return `${depistage}_${symptomes}`
+    }
+
     get incidence() {
         return this.incidenceParDepartement[this.profil.departement]
     }
