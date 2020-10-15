@@ -70,7 +70,7 @@ export default function suivisymptomes(form, app) {
         app.profil.symptomes_actuels_temperature = etat.fievre === 'oui'
         app.profil.symptomes_actuels_temperature_inconnue = false
         app.profil.symptomes_actuels_toux = etat.toux === 'oui'
-        app.profil.symptomes_actuels_odorat = false // ???
+        // app.profil.symptomes_actuels_odorat = false // ???
         app.profil.symptomes_actuels_douleurs =
             etat.etatGeneral === 'pire' || etat.etatGeneral === 'critique'
         app.profil.symptomes_actuels_diarrhee = etat.diarrheeVomissements === 'oui'
