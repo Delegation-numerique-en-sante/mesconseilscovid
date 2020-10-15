@@ -833,8 +833,6 @@ a[href*='youtube.com']::after {
 }
 .conseils a[href="https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf"]::before,
 .conseils a[href="https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf"]::before,
-.conseils a[href="https://www.gouvernement.fr/partage/11439-coronavirus-ce-qu-il-faut-savoir"]::before,
-.conseils a[href="https://www.gouvernement.fr/sites/default/files/explication_entre_les_deux_types_de_tests.jpg"]::before
 {
     background: no-repeat bottom left url('icone_infographie.svg');
     content: '';
