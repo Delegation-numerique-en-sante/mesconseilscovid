@@ -11,6 +11,24 @@ const STATUTS = [
     'peu-de-risques',
 ]
 
+// Les 13 statuts possibles en sortie de l’algorithme
+// eslint-disable-next-line no-unused-vars
+const NOUVEAUX_STATUTS = [
+    'asymptomatique',
+    'contact-a-risque-avec-test',
+    'contact-a-risque-sans-test',
+    'en-attente',
+    'foyer-fragile',
+    'personne-fragile',
+    'peu-de-risques',
+    'positif-symptomatique-urgent',
+    'symptomatique-en-attente',
+    'symptomatique-negatif',
+    'symptomatique-positif',
+    'symptomatique-sans-test',
+    'symptomatique-urgent',
+]
+
 export default class AlgorithmeOrientation {
     constructor(profil, incidenceParDepartement) {
         this.profil = profil
@@ -145,6 +163,117 @@ export default class AlgorithmeOrientation {
         if (this.profil.foyer_fragile) {
             return 'foyer-fragile'
         }
+        return 'peu-de-risques'
+    }
+
+    get statutEtConseils() {
+        // Statut et conseils à afficher dans les 24 situations
+        switch (this.situation) {
+            case 'positif_symptomes_actuels_graves':
+                return {
+                    statut: 'positif-symptomatique-urgent',
+                    conseils: 'symptomes-actuels-positif-critique',
+                }
+
+            case 'negatif_symptomes_actuels_graves':
+            case 'en_attente_symptomes_actuels_graves':
+            case 'pas_teste_symptomes_actuels_graves':
+                return {
+                    statut: 'symptomatique-urgent',
+                    conseils: 'symptomes-actuels-sans-depistage-critique',
+                }
+
+            case 'positif_symptomes_actuels':
+                return {
+                    statut: 'symptomatique-positif',
+                    conseils: 'depistage-positif-symptomatique',
+                }
+
+            case 'positif_symptomes_passes':
+                return {
+                    statut: 'symptomatique-positif',
+                    conseils: 'symptomes-passes-positif',
+                }
+
+            case 'positif_contact_a_risque':
+            case 'positif_contact_pas_vraiment_a_risque':
+            case 'positif_asymptomatique':
+                return {
+                    statut: 'asymptomatique',
+                    conseils: 'depistage-positif-asymptomatique',
+                }
+
+            case 'negatif_symptomes_actuels':
+                return { statut: 'symptomatique-negatif', conseils: null }
+
+            case 'negatif_symptomes_passes':
+                return { statut: this.statutSelonFragilite(), conseils: null }
+
+            case 'negatif_contact_a_risque':
+            case 'en_attente_contact_a_risque':
+                return {
+                    statut: 'contact-a-risque-avec-test',
+                    conseils: 'contact-a-risque',
+                }
+
+            case 'negatif_contact_pas_vraiment_a_risque':
+            case 'negatif_asymptomatique':
+                return { statut: this.statutSelonFragilite(), conseils: null }
+
+            case 'en_attente_symptomes_actuels':
+                return {
+                    statut: 'symptomatique-en-attente',
+                    conseils: 'symptomes-actuels-en-attente',
+                }
+
+            case 'en_attente_symptomes_passes':
+                return {
+                    statut: 'symptomatique-en-attente',
+                    conseils: 'symptomes-passes-en-attente',
+                }
+
+            case 'en_attente_contact_pas_vraiment_a_risque':
+                return { statut: 'en-attente', conseils: 'contact-a-risque-autre' }
+
+            case 'en_attente_asymptomatique':
+                return { statut: 'en-attente', conseils: null }
+
+            case 'pas_teste_symptomes_actuels':
+                return {
+                    statut: 'symptomatique-sans-test',
+                    conseils: 'symptomes-actuels-sans-depistage',
+                }
+
+            case 'pas_teste_symptomes_passes':
+                return {
+                    statut: 'symptomatique-sans-test',
+                    conseils: 'symptomes-passes-sans-depistage',
+                }
+
+            case 'pas_teste_contact_a_risque':
+                return {
+                    statut: 'contact-a-risque-sans-test',
+                    conseils: 'contact-a-risque',
+                }
+
+            case 'pas_teste_contact_pas_vraiment_a_risque':
+                return {
+                    statut: this.statutSelonFragilite(),
+                    conseils: 'contact-a-risque-autre',
+                }
+
+            case 'pas_teste_asymptomatique':
+                return { statut: this.statutSelonFragilite(), conseils: null }
+
+            default:
+                console.error('situation inconnue', this.situation)
+                return { statut: null, conseils: null }
+        }
+    }
+
+    statutSelonFragilite() {
+        if (this.personneFragile) return 'personne-fragile'
+        if (this.profil.foyer_fragile) return 'foyer-fragile'
         return 'peu-de-risques'
     }
 
