@@ -269,9 +269,10 @@ export default class AlgorithmeOrientation {
     isolementBlockNamesToDisplay() {
         const blockNames = []
         if (
-            this.profil.hasSymptomesActuelsReconnus() ||
-            this.profil.symptomes_passes ||
-            this.profil.hasContactARisqueReconnus()
+            this.profil.estPositif() ||
+            (this.profil.estNegatif() && this.profil.hasContactARisqueReconnus()) ||
+            (this.profil.estEnAttente() && this.risqueDInfection) ||
+            (this.profil.sansDepistage() && this.risqueDInfection)
         ) {
             blockNames.push('conseils-isolement')
         }
@@ -284,7 +285,7 @@ export default class AlgorithmeOrientation {
             // rien
         } else {
             blockNames.push('conseils-tests')
-            if (this.profil.depistage_resultat === 'en_attente') {
+            if (this.profil.estEnAttente()) {
                 blockNames.push('conseils-tests-resultats')
             }
         }

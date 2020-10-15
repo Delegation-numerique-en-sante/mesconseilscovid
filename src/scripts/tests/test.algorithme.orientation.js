@@ -85,6 +85,7 @@ describe('Algorithme d’orientation', function () {
         })
         it('En attente de résultat', function () {
             var profil = new Profil('mes_infos', {
+                depistage: true,
                 depistage_resultat: 'en_attente',
             })
             var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
