@@ -8,8 +8,10 @@ export function nomProfil(element, app) {
 
 export function titreConseils(element, profil) {
     if (!element) return
-    if (profil.estMonProfil()) element.textContent = `Mes conseils`
-    else element.textContent = `Conseils pour « ${profil.nom} »`
+    const titre = profil.estMonProfil()
+        ? 'Mes conseils'
+        : `Conseils pour « ${profil.nom} »`
+    element.textContent = titre
 }
 
 export function departement(element, departement) {
