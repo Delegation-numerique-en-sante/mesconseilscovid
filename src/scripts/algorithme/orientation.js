@@ -106,15 +106,6 @@ export default class AlgorithmeOrientation {
         )
     }
 
-    get totalFacteursDeGraviteMineurs() {
-        // Return an integer (sum of truthy values from array).
-        return [
-            this.profil.symptomes_actuels_temperature,
-            this.profil.symptomes_actuels_temperature_inconnue,
-            this.profil.symptomes_actuels_fatigue,
-        ].reduce((a, b) => (a || false) + (b || false), 0)
-    }
-
     get facteursDeGraviteMajeurs() {
         return (
             this.profil.symptomes_actuels_souffle ||
@@ -272,57 +263,6 @@ export default class AlgorithmeOrientation {
         if (this.personneFragile) return 'personne-fragile'
         if (this.profil.foyer_fragile) return 'foyer-fragile'
         return 'peu-de-risques'
-    }
-
-    get gravite() {
-        let gravite = 1
-        if (this.facteursDeGraviteMajeurs) {
-            gravite = 4
-        } else {
-            // #3.3
-            if (this.fievre && this.profil.symptomes_actuels_toux) {
-                if (this.personneFragile) {
-                    if (this.totalFacteursDeGraviteMineurs > 1) {
-                        gravite = 2
-                    } else {
-                        gravite = 3
-                    }
-                }
-            }
-            // #3.4
-            if (
-                this.fievre ||
-                (!this.fievre &&
-                    (this.profil.symptomes_actuels_diarrhee ||
-                        (this.profil.symptomes_actuels_toux &&
-                            this.profil.symptomes_actuels_douleurs) ||
-                        (this.profil.symptomes_actuels_toux &&
-                            this.profil.symptomes_actuels_odorat)))
-            ) {
-                if (this.personneFragile) {
-                    if (this.totalFacteursDeGraviteMineurs > 1) {
-                        gravite = 2
-                    } else {
-                        gravite = 3
-                    }
-                } else {
-                    if (this.sup50 || this.totalFacteursDeGraviteMineurs >= 1) {
-                        gravite = 3
-                    }
-                }
-            }
-            // #3.5
-            if (
-                !this.fievre &&
-                (this.profil.symptomes_actuels_toux ||
-                    this.profil.symptomes_actuels_douleurs ||
-                    this.profil.symptomes_actuels_odorat) &&
-                this.personneFragile
-            ) {
-                gravite = 3
-            }
-        }
-        return gravite
     }
 
     recommandeAutoSuivi() {
