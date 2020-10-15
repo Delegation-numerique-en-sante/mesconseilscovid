@@ -2,10 +2,13 @@ import { assert } from 'chai'
 
 import { createProfil } from './helpers.js'
 
+import AlgorithmeOrientation from '../algorithme/orientation.js'
+
 describe('Situation', function () {
     it('Non testé et asymptomatique', function () {
         const profil = createProfil()
-        assert.equal(profil.situation, 'pas_teste_asymptomatique')
+        const algo = new AlgorithmeOrientation(profil, {})
+        assert.equal(algo.situation, 'pas_teste_asymptomatique')
     })
 
     it('En attente et contact pas vraiment à risque', function () {
@@ -15,7 +18,8 @@ describe('Situation', function () {
             depistage: true,
             depistage_resultat: 'en_attente',
         })
-        assert.equal(profil.situation, 'en_attente_contact_pas_vraiment_a_risque')
+        const algo = new AlgorithmeOrientation(profil, {})
+        assert.equal(algo.situation, 'en_attente_contact_pas_vraiment_a_risque')
     })
 
     it('Négatif et contact à risque', function () {
@@ -25,7 +29,8 @@ describe('Situation', function () {
             depistage: true,
             depistage_resultat: 'negatif',
         })
-        assert.equal(profil.situation, 'negatif_contact_a_risque')
+        const algo = new AlgorithmeOrientation(profil, {})
+        assert.equal(algo.situation, 'negatif_contact_a_risque')
     })
 
     it('Positif et symptômes passés', function () {
@@ -34,7 +39,8 @@ describe('Situation', function () {
             depistage: true,
             depistage_resultat: 'positif',
         })
-        assert.equal(profil.situation, 'positif_symptomes_passes')
+        const algo = new AlgorithmeOrientation(profil, {})
+        assert.equal(algo.situation, 'positif_symptomes_passes')
     })
 
     it('Négatif et symptômes actuels pas graves', function () {
@@ -44,7 +50,8 @@ describe('Situation', function () {
             depistage: true,
             depistage_resultat: 'negatif',
         })
-        assert.equal(profil.situation, 'negatif_symptomes_actuels')
+        const algo = new AlgorithmeOrientation(profil, {})
+        assert.equal(algo.situation, 'negatif_symptomes_actuels')
     })
 
     it('En attente et symptômes actuels graves', function () {
@@ -54,6 +61,7 @@ describe('Situation', function () {
             depistage: true,
             depistage_resultat: 'en_attente',
         })
-        assert.equal(profil.situation, 'en_attente_symptomes_actuels_graves')
+        const algo = new AlgorithmeOrientation(profil, {})
+        assert.equal(algo.situation, 'en_attente_symptomes_actuels_graves')
     })
 })

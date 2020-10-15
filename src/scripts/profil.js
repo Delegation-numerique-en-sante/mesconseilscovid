@@ -40,27 +40,6 @@ export default class Profil {
             typeof date !== 'undefined' ? date.toJSON() : undefined
     }
 
-    get situation() {
-        if (!this.isComplete()) return ''
-        const depistage = this.depistage ? this.depistage_resultat : 'pas_teste'
-        let symptomes
-        if (this.hasSymptomesActuelsReconnus()) {
-            symptomes = 'symptomes_actuels'
-            if (this.symptomes_actuels_souffle || this.symptomes_actuels_alimentation) {
-                symptomes += '_graves'
-            }
-        } else if (this.symptomes_passes) {
-            symptomes = 'symptomes_passes'
-        } else if (this.hasContactARisqueReconnus()) {
-            symptomes = 'contact_a_risque'
-        } else if (this.contact_a_risque_autre) {
-            symptomes = 'contact_pas_vraiment_a_risque'
-        } else {
-            symptomes = 'asymptomatique'
-        }
-        return `${depistage}_${symptomes}`
-    }
-
     resetSuivi() {
         this._suivi_start_date = undefined
         this._symptomes_start_date = undefined
