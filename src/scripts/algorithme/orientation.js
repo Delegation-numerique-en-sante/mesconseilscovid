@@ -281,12 +281,18 @@ export default class AlgorithmeOrientation {
 
     depistageBlockNamesToDisplay() {
         const blockNames = []
-        if (this.profil.contact_a_risque && this.profil.contact_a_risque_autre) {
+        if (
+            this.profil.estPositif() ||
+            this.profil.estNegatif() ||
+            (this.profil.contact_a_risque && this.profil.contact_a_risque_autre)
+        ) {
             // rien
         } else {
             blockNames.push('conseils-tests')
             if (this.profil.estEnAttente()) {
                 blockNames.push('conseils-tests-resultats')
+            } else {
+                blockNames.push('conseils-tests-general')
             }
         }
         return blockNames
