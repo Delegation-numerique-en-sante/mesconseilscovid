@@ -18,31 +18,41 @@ graph LR
     end
 
     subgraph Orientation
-        symptomes-actuels{{"Symptômes<br>actuels ?"}}
-        symptomes-actuels -->|oui| facteurs-de-gravite-majeurs
-        symptomes-actuels -->|non| depistage-sans-symptomes
+
+        situation -->|"symptômes actuels"| facteurs-de-gravite-majeurs
+        situation -->|"symptômes passés"| depistage-symptomes-passes
+        situation -->|"contact à risque"| statut-contact-a-risque
+        situation -->|"rien de tout ça"| personne-fragile
 
         facteurs-de-gravite-majeurs{{"Facteurs<br>de gravité<br>majeurs ?"}}
-        facteurs-de-gravite-majeurs ------>|oui| statut-symptomatique-urgent
+        facteurs-de-gravite-majeurs -->|oui| depistage-avec-gravite-majeure
         facteurs-de-gravite-majeurs -->|non| depistage-avec-symptomes
+
+        depistage-avec-gravite-majeure{{"Résultat de test ?"}}
+        depistage-avec-gravite-majeure ----->|positif| statut-positif-symptomatique-urgent
+        depistage-avec-gravite-majeure ----->|negatif| statut-symptomatique-urgent
+        depistage-avec-gravite-majeure ----->|en attente| statut-symptomatique-urgent
+        depistage-avec-gravite-majeure ----->|pas testé| statut-symptomatique-urgent
 
         depistage-avec-symptomes{{"Résultat de test ?"}}
         depistage-avec-symptomes ----->|positif| statut-symptomatique-positif
         depistage-avec-symptomes ----->|negatif| statut-symptomatique-negatif
-        depistage-avec-symptomes ----->|en attente| statut-symptomatique
-        depistage-avec-symptomes ----->|pas testé| statut-symptomatique
+        depistage-avec-symptomes ----->|en attente| statut-symptomatique-en-attente
+        depistage-avec-symptomes ----->|pas testé| statut-symptomatique-sans-test
 
-        depistage-sans-symptomes{{"Résultat de test ?"}}
-        depistage-sans-symptomes ------>|positif| statut-asymptomatique
-        depistage-sans-symptomes -->|autres cas| symptomes-passes
+        depistage-symptomes-passes{{Résultat de test ?}}
+        depistage-symptomes-passes -->|positif| statut-symptomes-passes-positif
+        depistage-symptomes-passes -->|en attente| statut-symptomes-passes-en-attente
+        depistage-symptomes-passes -->|pas testé| statut-symptomes-passes-pas-teste
+        depistage-symptomes-passes -->|negatif| personne-fragile
 
-        symptomes-passes{{"Symptômes<br>passés ?"}}
-        symptomes-passes ----->|oui| statut-symptomes-passes
-        symptomes-passes -->|non| contact-a-risque
+        %% depistage-sans-symptomes{{"Résultat de test ?"}}
+        %% depistage-sans-symptomes ------>|positif| statut-asymptomatique
+        %% depistage-sans-symptomes -->|autres cas| symptomes-passes
 
-        contact-a-risque{{"Contact<br>à risque ?"}}
-        contact-a-risque ---->|oui| statut-contact-a-risque
-        contact-a-risque -->|non| personne-fragile
+        %% symptomes-passes{{"Symptômes<br>passés ?"}}
+        %% symptomes-passes -->|oui| depistage-symptomes-passes
+        %% symptomes-passes -->|non| contact-a-risque
 
         personne-fragile{{"Personne<br>fragile ?"}}
         personne-fragile --->|oui| statut-personne-fragile
@@ -53,21 +63,29 @@ graph LR
         foyer-fragile -->|non| statut-peu-de-risques
     end
 
+    statut-positif-symptomatique-urgent["Appelle le 15 et dis que tu as la Covid + tes symptomes<br><br>statut_positif_symptomatique_urgent.md<br>conseils_personnels_symptômes_actuels_positif_critique.md"]
+    statut-symptomatique-urgent["Appelle le 15 et dis tes symptomes, tu as peut-être la Covid<br><br>statut_symptomatique_urgent.md<br>conseils_personnels_symptômes_actuels_sans_depistage_critique.md"]
+
+    statut-symptomatique-positif["Tu as la Covid (merci Cap. Obvious!), reste isolé et suis tes symptômes<br><br>statut_symptomatique_positif.md<br>+ conseils_personnels_depistage_positif_symptomatique.md"]
+    statut-symptomatique-negatif["Tu n’as pas la Covid, mais appelle ton médecin pour tes symptômes<br><br>statut_symptomatique_négatif.md"]
+    statut-symptomatique-en-attente["Reste chez toi en attendant le résultat<br><br>statut_symptomatique_en_attente.md<br>conseils_personnels_symptômes_actuels_en_attente.md"]
+    statut-symptomatique-sans-test["Reste chez toi le temps de faire un test<br><br>statut_symptomatique.md<br>+ conseils_personnels_symptômes_actuels_sans_depistage.md"]
+
+    statut-asymptomatique["Reste quand même chez toi<br><br>statut_asymptomatique.md<br>+ conseils_personnels_depistage_positif_asymptomatique.md"]
+
+    statut-symptomes-passes-positif["Reste chez toi 7 jours après début des symptômes"]
+    statut-symptomes-passes-en-attente["Reste chez toi 7 jours après début des symptômes et fais un test<br><br>statut_risque_élevé_contamination.md<br>conseils_personnels_symptômes_passés.md"]
+    statut-symptomes-passes-pas-teste["Reste chez toi 7 jours après début des symptômes et fais un test<br><br>statut_risque_élevé_contamination.md<br>conseils_personnels_symptômes_passés.md"]
+
+    statut-contact-a-risque["statut_risque_élevé_contamination.md"]
+    statut-personne-fragile["statut_personne_fragile.md<br>+ conseils_personnels_symptômes_passés_avec_risques.md<br>+ conseils_personnels_symptômes_passés_avec_risques_info.md"]
+    statut-foyer-fragile["statut_foyer_fragile.md"]
+    statut-peu-de-risques["statut_peu_de_risques.md"]
+
     suivi-gravite-3["suivi_gravité_3.md"]
     suivi-gravite-2["suivi_gravité_2.md"]
     suivi-gravite-1["suivi_gravité_1.md"]
     suivi-gravite-0["suivi_gravité_0.md"]
-
-    statut-foyer-fragile["statut_foyer_fragile.md"]
-    statut-personne-fragile["statut_personne_fragile.md<br>+ conseils_personnels_symptômes_passés_avec_risques.md<br>+ conseils_personnels_symptômes_passés_avec_risques_info.md"]
-    statut-peu-de-risques["statut_peu_de_risques.md"]
-    statut-symptomes-passes["statut_risque_élevé_contamination.md"]
-    statut-contact-a-risque["statut_risque_élevé_contamination.md"]
-    statut-asymptomatique["statut_asymptomatique.md<br>+ conseils_personnels_depistage_positif_asymptomatique.md"]
-    statut-symptomatique["statut_symptomatique.md<br>+ conseils_personnels_symptômes_actuels_sans_depistage.md"]
-    statut-symptomatique-negatif["statut_symptomatique_négatif.md<br>+ conseils_personnels_symptômes_actuels_sans_depistage.md"]
-    statut-symptomatique-positif["statut_symptomatique_positif.md<br>+ conseils_personnels_depistage_positif_symptomatique.md"]
-    statut-symptomatique-urgent["statut_symptomatique_urgent.md <br>+ conseils_personnels_symptômes_actuels_sans_depistage_critique.md"]
 
     classDef default fill:#acf;
     classDef statut fill:#ffc;
@@ -84,7 +102,9 @@ graph LR
     class statut-symptomes-passes statut-a-revoir;
     class statut-contact-a-risque statut-a-revoir;
     class statut-asymptomatique statut;
-    class statut-symptomatique statut;
-    class statut-symptomatique-negatif statut-a-revoir;
     class statut-symptomatique-positif statut;
+    class statut-symptomatique-negatif statut;
+    class statut-symptomatique-en-attente statut;
+    class statut-symptomatique-sans-test statut;
     class statut-symptomatique-urgent statut;
+    class statut-positif-symptomatique-urgent statut;

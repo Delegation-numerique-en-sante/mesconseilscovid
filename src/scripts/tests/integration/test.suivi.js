@@ -41,10 +41,12 @@ describe('Suivi', function () {
         // La page de Conseils doit contenir :
         {
             // la phrase de gravité 0
-            let gravite = await page.waitForSelector('#page #statut-symptomatique')
+            let statut = await page.waitForSelector(
+                '#page #statut-symptomatique-sans-test'
+            )
             assert.equal(
-                (await gravite.innerText()).trim(),
-                'Vous êtes peut-être porteur de la Covid.'
+                (await statut.innerText()).trim(),
+                'Vous êtes peut-être porteur de la Covid. Restez isolé le temps de faire un test.'
             )
             // un bouton vers le suivi des symptômes
             let bouton = await page.waitForSelector(
@@ -267,11 +269,13 @@ describe('Suivi', function () {
 
         // La page de Conseils doit contenir :
         {
-            // la phrase de gravité 0
-            let gravite = await page.waitForSelector('#page #statut-symptomatique')
+            // le statut
+            let statut = await page.waitForSelector(
+                '#page #statut-symptomatique-sans-test'
+            )
             assert.equal(
-                (await gravite.innerText()).trim(),
-                'Vous êtes peut-être porteur de la Covid.'
+                (await statut.innerText()).trim(),
+                'Vous êtes peut-être porteur de la Covid. Restez isolé le temps de faire un test.'
             )
             // un bouton vers le suivi des symptômes
             let bouton = await page.waitForSelector(

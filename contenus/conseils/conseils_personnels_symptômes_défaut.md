@@ -1,1 +1,0 @@
-Pour **limiter la chaîne de transmission**, informez vos proches et les personnes que vous avez croisés dernièrement. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisé depuis le début de votre période contagieuse.

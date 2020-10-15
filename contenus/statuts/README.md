@@ -10,6 +10,24 @@ Vous êtes **porteur de la Covid** sans symptômes, il est important de vous iso
 
 
 
+## [statut_contact_a_risque_avec_test.md](statut_contact_a_risque_avec_test.md)
+
+Restez **en isolement** et refaites un test 7 jours après votre dernier contact à risque.
+
+
+
+## [statut_contact_a_risque_sans_test.md](statut_contact_a_risque_sans_test.md)
+
+Restez **en isolement** et faites un test 7 jours après votre dernier contact à risque.
+
+
+
+## [statut_en_attente.md](statut_en_attente.md)
+
+Continuez à appliquer les **gestes barrières** en attendant les résultats de votre test.
+
+
+
 ## [statut_foyer_fragile.md](statut_foyer_fragile.md)
 
 Prenez soin de vos proches à risque face à la Covid.
@@ -28,27 +46,33 @@ Vous ne présentez pas de risque particulier face à la Covid, cependant le viru
 
 
 
-## [statut_risque_élevé_contamination.md](statut_risque_élevé_contamination.md)
+## [statut_positif_symptomatique_urgent.md](statut_positif_symptomatique_urgent.md)
 
-Il vous est conseillé de rester **en isolement**.
+**Appelez le SAMU / 15** ou demandez à quelqu’un de le faire pour vous pour être pris en charge **rapidement**.
 
 
 
-## [statut_symptomatique.md](statut_symptomatique.md)
+## [statut_symptomatique_en_attente.md](statut_symptomatique_en_attente.md)
 
-Vous êtes peut-être **porteur de la Covid**.
+Restez **en isolement** en attendant les résultats du test.
 
 
 
 ## [statut_symptomatique_négatif.md](statut_symptomatique_négatif.md)
 
-Vous êtes malade mais **non porteur** de la Covid.
+Vous êtes malade mais **non porteur** de la Covid. Contactez votre médecin généraliste pour lui parler de vos symptômes.
 
 
 
 ## [statut_symptomatique_positif.md](statut_symptomatique_positif.md)
 
-Vous êtes **porteur de la Covid**.
+Maintenez-vous **en isolement** au moins 7 jours après le début des symptômes.
+
+
+
+## [statut_symptomatique_sans_test.md](statut_symptomatique_sans_test.md)
+
+Vous êtes peut-être **porteur de la Covid**. Restez isolé le temps de faire un test.
 
 
 

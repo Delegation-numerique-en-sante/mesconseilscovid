@@ -253,7 +253,7 @@ describe('Parcours', function () {
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
-                'Contacter votre médecin généraliste.'
+                'Prévoir un test au 7e jour suivant le dernier contact avec le malade'
             )
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
         }
@@ -343,13 +343,11 @@ describe('Parcours', function () {
 
         // Conseils
         {
-            // On retrouve la partie contact à risque
-            let contact_a_risque = await page.waitForSelector(
-                '#page #statut-peu-de-risques'
-            )
+            // On retrouve le statut
+            let statut = await page.waitForSelector('#page #statut-en-attente')
             assert.include(
-                (await contact_a_risque.innerText()).trim(),
-                'Vous ne présentez pas de risque particulier face à la Covid'
+                (await statut.innerText()).trim(),
+                'Continuez à appliquer les gestes barrières en attendant les résultats de votre test'
             )
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
         }
