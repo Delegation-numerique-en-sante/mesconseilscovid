@@ -158,7 +158,9 @@ export function showRelevantAnswersRecap(element, profil, algoOrientation) {
 }
 
 function statutBlockNamesToDisplay(algoOrientation) {
-    return ['statut-' + algoOrientation.statut]
+    const statut = `statut-${algoOrientation.statutEtConseils.statut}`
+    console.log(statut)
+    return [statut]
 }
 
 function isMobileSafari() {

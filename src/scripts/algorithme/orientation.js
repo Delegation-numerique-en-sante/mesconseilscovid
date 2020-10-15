@@ -140,35 +140,6 @@ export default class AlgorithmeOrientation {
         return STATUTS
     }
 
-    get statut() {
-        // L’ordre est important car risques > foyer_fragile.
-        if (this.profil.symptomes_actuels && this.facteursDeGraviteMajeurs) {
-            return 'symptomatique-urgent'
-        }
-        if (this.profil.hasSymptomesActuelsReconnus()) {
-            if (this.profil.estPositifSymptomatique()) {
-                return 'symptomatique-positif'
-            } else if (this.profil.estNegatifSymptomatique()) {
-                return 'symptomatique-negatif'
-            } else {
-                return 'symptomatique'
-            }
-        }
-        if (this.profil.estPositifAsymptomatique()) {
-            return 'asymptomatique'
-        }
-        if (this.risqueDInfection && !this.profil.symptomes_actuels_autre) {
-            return 'risque-eleve'
-        }
-        if (this.personneFragile) {
-            return 'personne-fragile'
-        }
-        if (this.profil.foyer_fragile) {
-            return 'foyer-fragile'
-        }
-        return 'peu-de-risques'
-    }
-
     get statutEtConseils() {
         // Statut et conseils à afficher dans les 24 situations
         switch (this.situation) {
@@ -290,35 +261,8 @@ export default class AlgorithmeOrientation {
 
     conseilsPersonnelsBlockNamesToDisplay() {
         const blockNames = []
-        if (this.profil.estPositifSymptomatique()) {
-            blockNames.push('conseils-personnels-depistage-positif-symptomatique')
-        } else if (this.profil.estPositifAsymptomatique()) {
-            blockNames.push('conseils-personnels-depistage-positif-asymptomatique')
-        } else if (this.profil.hasSymptomesActuelsReconnus()) {
-            blockNames.push('conseils-personnels-symptomes-actuels')
-            if (this.facteursDeGraviteMajeurs) {
-                blockNames.push(
-                    'conseils-personnels-symptomes-actuels-sans-depistage-critique'
-                )
-            } else {
-                blockNames.push('conseils-personnels-symptomes-actuels-sans-depistage')
-            }
-        } else if (this.profil.symptomes_passes) {
-            blockNames.push('conseils-personnels-symptomes-passes')
-            if (this.personneFragile || this.profil.foyer_fragile) {
-                blockNames.push('conseils-personnels-symptomes-passes-avec-risques')
-            } else {
-                blockNames.push('conseils-personnels-symptomes-passes-sans-risques')
-            }
-        } else if (this.profil.contact_a_risque) {
-            blockNames.push('conseils-personnels-contact-a-risque')
-            if (this.profil.contact_a_risque_autre) {
-                blockNames.push('conseils-personnels-contact-a-risque-autre')
-            } else {
-                blockNames.push('conseils-personnels-contact-a-risque-default')
-            }
-            blockNames.push('conseils-contact-a-risque')
-        }
+        blockNames.push(`conseils-personnels-${this.statutEtConseils.conseils}`)
+        console.log(blockNames)
         return blockNames
     }
 

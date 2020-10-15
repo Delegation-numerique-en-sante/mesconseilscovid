@@ -1,10 +1,10 @@
 Nous vous conseillons de :
 
-1. Vous maintenir **en isolement** pendant au moins 7 jours.
+1. Vous maintenir **en isolement**, au moins 7 jours à partir de la date d’apparition des symptômes.
 
-2. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
+2. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
 
-3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
+3. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 
 4. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisées depuis le début de votre période contagieuse.
 

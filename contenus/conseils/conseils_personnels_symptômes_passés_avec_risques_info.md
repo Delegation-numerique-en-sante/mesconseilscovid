@@ -1,1 +1,0 @@
-De façon générale il est conseillé une levée de l’isolement 7 jours après le début des symptômes (si vous ou un membre de votre foyer êtes à risque de forme grave) et après 48 heures sans fièvre ni gêne respiratoire.
