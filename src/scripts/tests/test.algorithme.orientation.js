@@ -384,6 +384,21 @@ describe('Algorithme d’orientation', function () {
             ])
         })
 
+        it('Risque âge + symptomatique', function () {
+            var profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+                symptomes_actuels_douleurs: true,
+                age: 65,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
+                'conseils-sante',
+                'reponse-sante-caracteristiques-a-risques',
+                'conseils-sante-personne-fragile-symptomatique',
+                'conseils-sante-automedication',
+            ])
+        })
+
         it('Risque IMC > 30', function () {
             var profil = new Profil('mes_infos', {
                 taille: 150,
