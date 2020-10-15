@@ -29,6 +29,21 @@ const NOUVEAUX_STATUTS = [
     'symptomatique-urgent',
 ]
 
+// eslint-disable-next-line no-unused-vars
+const NOUVEAUX_CONSEILS_PERSONNELS = [
+    'contact-a-risque',
+    'contact-a-risque-autre',
+    'depistage-positif-asymptomatique',
+    'depistage-positif-symptomatique',
+    'symptomes-actuels-en-attente',
+    'symptomes-actuels-positif-critique',
+    'symptomes-actuels-sans-depistage',
+    'symptomes-actuels-sans-depistage-critique',
+    'symptomes-passes-en-attente',
+    'symptomes-passes-positif',
+    'symptomes-passes-sans-depistage',
+]
+
 export default class AlgorithmeOrientation {
     constructor(profil, incidenceParDepartement) {
         this.profil = profil
