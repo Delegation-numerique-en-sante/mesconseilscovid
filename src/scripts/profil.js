@@ -388,36 +388,35 @@ export default class Profil {
     requiertSuivi() {
         return (
             this.isDepistageComplete() &&
-            ((this.depistage === true &&
-                (this.depistage_resultat === 'positif' ||
-                    this.depistage_resultat === 'en_attente')) ||
-                (this.depistage === false && this.hasSymptomesActuelsReconnus()) ||
-                (this.depistage === false && this.symptomes_passes))
+            (this.estPositif() ||
+                this.estEnAttente() ||
+                (this.sansDepistage() && this.hasSymptomesActuelsReconnus()) ||
+                (this.sansDepistage() && this.symptomes_passes))
         )
     }
 
-    estPositifSymptomatique() {
-        return (
-            this.hasSymptomesActuelsReconnus() &&
-            this.depistage === true &&
-            this.depistage_resultat === 'positif'
-        )
+    estPositif() {
+        return this.depistage === true && this.depistage_resultat === 'positif'
+    }
+
+    estNegatif() {
+        return this.depistage === true && this.depistage_resultat === 'negatif'
+    }
+
+    estEnAttente() {
+        return this.depistage === true && this.depistage_resultat === 'en_attente'
+    }
+
+    sansDepistage() {
+        return this.depistage === false
     }
 
     estNegatifSymptomatique() {
-        return (
-            this.hasSymptomesActuelsReconnus() &&
-            this.depistage === true &&
-            this.depistage_resultat === 'negatif'
-        )
+        return this.hasSymptomesActuelsReconnus() && this.estNegatif()
     }
 
     estPositifAsymptomatique() {
-        return (
-            this.symptomes_actuels === false &&
-            this.depistage === true &&
-            this.depistage_resultat === 'positif'
-        )
+        return this.symptomes_actuels === false && this.estPositif()
     }
 
     estMonProfil() {
