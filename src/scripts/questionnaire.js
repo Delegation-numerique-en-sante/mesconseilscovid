@@ -23,6 +23,10 @@ export const TRANSITIONS = {
                 profil.isSymptomesActuelsComplete() &&
                 profil.hasSymptomesActuelsReconnus() &&
                 !profil.hasSuiviStartDate(),
+            depistage: (profil) =>
+                profil.isSymptomesActuelsComplete() &&
+                profil.hasSymptomesActuelsReconnus() &&
+                profil.hasSuiviStartDate(),
             symptomespasses: (profil) => profil.isSymptomesActuelsComplete(),
         },
     },
@@ -33,6 +37,10 @@ export const TRANSITIONS = {
                 profil.isSymptomesPassesComplete() &&
                 profil.symptomes_passes &&
                 !profil.hasSuiviStartDate(),
+            depistage: (profil) =>
+                profil.isSymptomesPassesComplete() &&
+                profil.symptomes_passes &&
+                profil.hasSuiviStartDate(),
             contactarisque: (profil) => profil.isSymptomesPassesComplete(),
         },
     },
