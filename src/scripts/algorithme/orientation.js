@@ -405,6 +405,11 @@ export default class AlgorithmeOrientation {
             blockNames.push('conseils-sante-maladie-chronique')
         }
         blockNames.push('conseils-sante-automedication')
+        if (this.personneFragile || this.profil.activite_pro_sante) {
+            blockNames.push('conseils-sante-grippe-fragile')
+        } else {
+            blockNames.push('conseils-sante-grippe')
+        }
         return blockNames
     }
 
