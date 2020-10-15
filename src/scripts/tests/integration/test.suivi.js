@@ -56,11 +56,6 @@ describe('Suivi', function () {
             // le bloc « Ma santé »
             let bloc = await page.waitForSelector('#page #conseils-sante summary')
             await bloc.click()
-            // un bouton vers l’historique du suivi
-            bouton = await page.waitForSelector(
-                '#page #conseils-sante >> text="l’historique de vos symptômes"'
-            )
-            assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             // un bouton pour refaire le questionnaire
             bouton = await page.waitForSelector(
                 '#page >> text="Refaire le questionnaire"'
@@ -284,11 +279,6 @@ describe('Suivi', function () {
             // le bloc « Ma santé »
             let bloc = await page.waitForSelector('#page #conseils-sante summary')
             await bloc.click()
-            // un bouton vers l’historique du suivi
-            bouton = await page.waitForSelector(
-                '#page #conseils-sante >> text="l’historique des symptômes"'
-            )
-            assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             // un bouton pour refaire le questionnaire
             bouton = await page.waitForSelector(
                 '#page >> text="Refaire le questionnaire"'
