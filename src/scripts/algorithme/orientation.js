@@ -262,7 +262,6 @@ export default class AlgorithmeOrientation {
     conseilsPersonnelsBlockNamesToDisplay() {
         const blockNames = []
         blockNames.push(`conseils-personnels-${this.statutEtConseils.conseils}`)
-        console.log(blockNames)
         return blockNames
     }
 

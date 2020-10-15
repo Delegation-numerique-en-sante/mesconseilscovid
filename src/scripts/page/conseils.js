@@ -159,7 +159,6 @@ export function showRelevantAnswersRecap(element, profil, algoOrientation) {
 
 function statutBlockNamesToDisplay(algoOrientation) {
     const statut = `statut-${algoOrientation.statutEtConseils.statut}`
-    console.log(statut)
     return [statut]
 }
 
