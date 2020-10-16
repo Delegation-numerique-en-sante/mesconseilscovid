@@ -1,19 +1,5 @@
-// Les statuts possibles en sortie de l’algorithme
-const STATUTS = [
-    'symptomatique-urgent',
-    'symptomatique-positif',
-    'symptomatique-negatif',
-    'symptomatique',
-    'asymptomatique',
-    'risque-eleve',
-    'personne-fragile',
-    'foyer-fragile',
-    'peu-de-risques',
-]
-
 // Les 13 statuts possibles en sortie de l’algorithme
-// eslint-disable-next-line no-unused-vars
-const NOUVEAUX_STATUTS = [
+const STATUTS = [
     'asymptomatique',
     'contact-a-risque-avec-test',
     'contact-a-risque-sans-test',
@@ -29,8 +15,8 @@ const NOUVEAUX_STATUTS = [
     'symptomatique-urgent',
 ]
 
-// eslint-disable-next-line no-unused-vars
-const NOUVEAUX_CONSEILS_PERSONNELS = [
+// Les 11 blocs de conseils personnels possibles en sortie de l’algorithme
+const CONSEILS_PERSONNELS = [
     'contact-a-risque',
     'contact-a-risque-autre',
     'depistage-positif-asymptomatique',
@@ -138,6 +124,10 @@ export default class AlgorithmeOrientation {
 
     get listStatuts() {
         return STATUTS
+    }
+
+    get listConseilsPersonnels() {
+        return CONSEILS_PERSONNELS
     }
 
     get statutEtConseils() {
