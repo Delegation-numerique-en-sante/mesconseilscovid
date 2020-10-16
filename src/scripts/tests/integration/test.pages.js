@@ -51,9 +51,8 @@ describe('Pages', function () {
             await page.click('#page #conseils-activite h3')
 
             // On peut aller vers la médecine du travail
-            let link = await page.waitForSelector('#page a >> text="santé au travail"')
             await Promise.all([
-                link.click(),
+                page.click('#page #conseils-activite-pro a >> text="santé au travail"'),
                 page.waitForNavigation({ url: '**/#medecinedutravail' }),
             ])
         }
@@ -61,11 +60,8 @@ describe('Pages', function () {
         // Médecine du travail
         {
             // La page comporte un lien direct de retour vers mes conseils
-            let link = await page.waitForSelector(
-                '#page >> text="Retourner à mes conseils"'
-            )
             await Promise.all([
-                link.click(),
+                page.click('#page a >> text="Retourner à mes conseils"'),
                 page.waitForNavigation({ url: '**/#conseils' }),
             ])
         }
