@@ -397,7 +397,6 @@ export default class AlgorithmeOrientation {
         if (this.antecedents || this.profil.antecedent_chronique_autre) {
             blockNames.push('conseils-sante-maladie-chronique')
         }
-        blockNames.push('conseils-sante-automedication')
         if (this.personneFragile || this.profil.activite_pro_sante) {
             blockNames.push('conseils-sante-grippe-fragile')
         } else {

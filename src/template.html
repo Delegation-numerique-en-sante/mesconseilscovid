@@ -805,6 +805,9 @@
                                 </h3>
                             </header>
                         </summary>
+                        <div class="conseil">
+                            {{ conseils_covid_automédication }}
+                        </div>
                         <div>
                             {{ conseils_covid }}
                         </div>
@@ -848,6 +851,12 @@
                                 {{ réponse_antécédents }}
                             </div>
                         </div>
+                        <div id="conseils-sante-grippe-fragile" class="conseil conseil-jaune" hidden>
+                            {{ conseils_santé_grippe_fragile }}
+                        </div>
+                        <div id="conseils-sante-grippe" class="conseil conseil" hidden>
+                            {{ conseils_santé_grippe }}
+                        </div>
                         <div id="conseils-sante-historique-symptomes" class="conseil" hidden>
                             <p>{{ conseils_autosuivi_historique|me_or_them }}</p>
                         </div>
@@ -860,19 +869,10 @@
                         <div id="conseils-sante-personne-fragile-symptomatique" hidden>
                             {{ conseils_santé_personne_fragile_symptomatique }}
                         </div>
-                        {{ conseils_contacter_un_médecin }}
                         <div id="conseils-sante-maladie-chronique" hidden>
                             {{ conseils_santé_maladie_chronique }}
                         </div>
-                        <div id="conseils-sante-automedication" hidden>
-                            {{ conseils_santé_automédication }}
-                        </div>
-                        <div id="conseils-sante-grippe-fragile" class="conseil conseil-orange" hidden>
-                            {{ conseils_santé_grippe_fragile }}
-                        </div>
-                        <div id="conseils-sante-grippe" class="conseil conseil-vert" hidden>
-                            {{ conseils_santé_grippe }}
-                        </div>
+                        {{ conseils_contacter_un_médecin }}
                     </details>
                 </div>
 

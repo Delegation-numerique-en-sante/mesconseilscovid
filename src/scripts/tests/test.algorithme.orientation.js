@@ -303,7 +303,6 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
                 'conseils-sante-general',
-                'conseils-sante-automedication',
                 'conseils-sante-grippe',
             ])
         })
@@ -316,7 +315,6 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
                 'conseils-sante-general',
-                'conseils-sante-automedication',
                 'conseils-sante-grippe',
             ])
         })
@@ -329,7 +327,6 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
                 'conseils-sante-general',
-                'conseils-sante-automedication',
                 'conseils-sante-grippe',
             ])
         })
@@ -342,7 +339,6 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
                 'conseils-sante-general',
-                'conseils-sante-automedication',
                 'conseils-sante-grippe',
             ])
         })
@@ -356,7 +352,6 @@ describe('Algorithme d’orientation', function () {
                 'conseils-sante',
                 'reponse-sante-caracteristiques-a-risques',
                 'conseils-sante-personne-fragile',
-                'conseils-sante-automedication',
                 'conseils-sante-grippe-fragile',
             ])
         })
@@ -372,7 +367,6 @@ describe('Algorithme d’orientation', function () {
                 'conseils-sante',
                 'reponse-sante-caracteristiques-a-risques',
                 'conseils-sante-personne-fragile-symptomatique',
-                'conseils-sante-automedication',
                 'conseils-sante-grippe-fragile',
             ])
         })
@@ -387,7 +381,6 @@ describe('Algorithme d’orientation', function () {
                 'conseils-sante',
                 'reponse-sante-caracteristiques-a-risques',
                 'conseils-sante-personne-fragile',
-                'conseils-sante-automedication',
                 'conseils-sante-grippe-fragile',
             ])
         })
@@ -401,7 +394,6 @@ describe('Algorithme d’orientation', function () {
                 'conseils-sante',
                 'reponse-sante-caracteristiques-a-risques',
                 'conseils-sante-personne-fragile',
-                'conseils-sante-automedication',
                 'conseils-sante-grippe-fragile',
             ])
         })
@@ -416,7 +408,6 @@ describe('Algorithme d’orientation', function () {
                 'reponse-sante-antecedents',
                 'conseils-sante-personne-fragile',
                 'conseils-sante-maladie-chronique',
-                'conseils-sante-automedication',
                 'conseils-sante-grippe-fragile',
             ])
         })
@@ -431,7 +422,6 @@ describe('Algorithme d’orientation', function () {
                 'reponse-sante-antecedents',
                 'conseils-sante-general',
                 'conseils-sante-maladie-chronique',
-                'conseils-sante-automedication',
                 'conseils-sante-grippe',
             ])
         })
