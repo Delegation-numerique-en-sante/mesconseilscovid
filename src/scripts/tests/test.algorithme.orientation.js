@@ -120,30 +120,6 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [])
         })
 
-        it('Symptômes actuels n’affiche rien', function () {
-            var profil = new Profil('mes_infos', {
-                symptomes_actuels: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [])
-        })
-
-        it('Symptômes passés n’affiche rien', function () {
-            var profil = new Profil('mes_infos', {
-                symptomes_passes: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [])
-        })
-
-        it('Contact à risque n’affiche rien', function () {
-            var profil = new Profil('mes_infos', {
-                contact_a_risque: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [])
-        })
-
         it('Une activité pro affiche des conseils + pro + infos', function () {
             var profil = new Profil('mes_infos', {
                 activite_pro: true,
@@ -310,14 +286,6 @@ describe('Algorithme d’orientation', function () {
     describe('Algorithme orientation foyer (enfants)', function () {
         it('Aucun risque foyer (enfants) n’affiche rien', function () {
             var profil = new Profil('mes_infos', {})
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.enfantsBlockNamesToDisplay(), [])
-        })
-
-        it('Symptômes actuels n’affiche rien', function () {
-            var profil = new Profil('mes_infos', {
-                symptomes_actuels: true,
-            })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.enfantsBlockNamesToDisplay(), [])
         })

@@ -330,9 +330,6 @@ export default class AlgorithmeOrientation {
 
     activiteProBlockNamesToDisplay() {
         const blockNames = []
-        if (this.risqueDInfection) {
-            return []
-        }
         if (
             this.profil.activite_pro ||
             this.profil.activite_pro_public ||
@@ -424,9 +421,6 @@ export default class AlgorithmeOrientation {
 
     enfantsBlockNamesToDisplay() {
         const blockNames = []
-        if (this.profil.symptomes_actuels) {
-            return []
-        }
         if (this.profil.foyer_enfants) {
             blockNames.push('conseils-foyer-enfants')
         }
