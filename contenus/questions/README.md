@@ -250,21 +250,21 @@ Si vous ne disposez pas de ces informations précises, vous pouvez saisir une ap
 
 ## [question_debut_symptomes_libellé.md](question_debut_symptomes_libellé.md)
 
-<!---->J’ai un ou des <b>symptômes</b> qui peuvent évoquer la Covid depuis :
+<!---->Mes premiers <b>symptômes</b> sont apparus :
 
 ---
 
-<!---->Cette personne a un ou des <b>symptômes</b> qui peuvent évoquer la Covid depuis :
+<!---->Ses premiers <b>symptômes</b> sont apparus :
 
 
 
 ## [question_debut_symptomes_titre.md](question_debut_symptomes_titre.md)
 
-<!---->La date de mes premiers symptômes
+<!---->La date de début de mes symptômes
 
 ---
 
-<!---->La date de ses premiers symptômes
+<!---->La date de début de ses symptômes
 
 
 

@@ -1,5 +1,5 @@
-<!---->J’ai un ou des <b>symptômes</b> qui peuvent évoquer la Covid depuis :
+<!---->Mes premiers <b>symptômes</b> sont apparus :
 
 ---
 
-<!---->Cette personne a un ou des <b>symptômes</b> qui peuvent évoquer la Covid depuis :
+<!---->Ses premiers <b>symptômes</b> sont apparus :
