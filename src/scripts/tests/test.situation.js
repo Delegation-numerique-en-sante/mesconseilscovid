@@ -169,7 +169,7 @@ const matrice = [
         },
         situation: 'negatif_contact_pas_vraiment_a_risque',
         statut: 'peu-de-risques',
-        conseils: null,
+        conseils: 'contact-a-risque-autre',
     },
     {
         description: 'Négatif et contact pas vraiment à risque + personne fragile',
@@ -182,7 +182,7 @@ const matrice = [
         },
         situation: 'negatif_contact_pas_vraiment_a_risque',
         statut: 'personne-fragile',
-        conseils: null,
+        conseils: 'contact-a-risque-autre',
     },
     {
         description: 'Négatif et contact pas vraiment à risque + foyer fragile',
@@ -195,7 +195,7 @@ const matrice = [
         },
         situation: 'negatif_contact_pas_vraiment_a_risque',
         statut: 'foyer-fragile',
-        conseils: null,
+        conseils: 'contact-a-risque-autre',
     },
     {
         description: 'Négatif et rien de tout ça',

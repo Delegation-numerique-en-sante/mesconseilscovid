@@ -191,6 +191,11 @@ export default class AlgorithmeOrientation {
                 }
 
             case 'negatif_contact_pas_vraiment_a_risque':
+                return {
+                    statut: this.statutSelonFragilite(),
+                    conseils: 'contact-a-risque-autre',
+                }
+
             case 'negatif_asymptomatique':
                 return { statut: this.statutSelonFragilite(), conseils: null }
 
