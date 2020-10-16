@@ -104,6 +104,9 @@ export const TRANSITIONS = {
             conseils: (profil) => profil.isComplete(),
         },
     },
+    suivihistorique: {
+        previous: { conseils: () => true },
+    },
 }
 
 export class Questionnaire {
