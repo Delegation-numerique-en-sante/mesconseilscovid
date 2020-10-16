@@ -197,7 +197,7 @@ describe('Parcours', function () {
         await remplirQuestionnaire(page, {
             symptomesActuels: [],
             symptomesPasses: true,
-            debutSymptomes: 'aujourdhui',
+            debutSymptomes: 'hier',
             contactARisque: [],
             depistage: false,
             departement: '80',
