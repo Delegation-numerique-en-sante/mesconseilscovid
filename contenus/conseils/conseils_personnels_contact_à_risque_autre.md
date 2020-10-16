@@ -2,4 +2,4 @@ Vous avez passé du temps avec quelqu’un de positif, mais il ne s’agit pas *
 
 1. Contacter **votre médecin**.
 
-2. **Revenir sur Mes Conseils Covid** si votre situation change, afin d’avoir les conseils adaptés à votre nouvelle situation !
+2. **Revenir sur Mes Conseils Covid** afin d’avoir les conseils adaptés à votre nouvelle situation.
