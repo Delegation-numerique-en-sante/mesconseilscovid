@@ -57,10 +57,6 @@ export default function debutsymptomes(form, app) {
         if (!app.profil.hasSuiviStartDate() && debut_symptomes_checked) {
             app.profil.suivi_start_date = new Date()
         }
-        // On considère qu’il y a des symptômes si la case est cochée.
-        if (debut_symptomes_checked) {
-            app.profil.symptomes_actuels = true
-        }
 
         app.enregistrerProfilActuel().then(() => {
             app.goToNextPage('debutsymptomes')
