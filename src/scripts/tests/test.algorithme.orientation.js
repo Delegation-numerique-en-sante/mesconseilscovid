@@ -142,10 +142,9 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
-                'conseils-activite-pro',
-                'conseils-activite-pro-infos',
                 'reponse-activite-pro-personne-fragile',
                 'conseils-activite-pro-personne-fragile',
+                'conseils-activite-pro-infos',
             ])
         })
 
@@ -158,10 +157,9 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
-                'conseils-activite-pro',
-                'conseils-activite-pro-infos',
                 'reponse-activite-pro-personne-fragile',
                 'conseils-activite-pro-personne-fragile',
+                'conseils-activite-pro-infos',
             ])
         })
 
@@ -174,12 +172,9 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
-                'conseils-activite-pro',
-                'conseils-activite-pro-infos',
-                'reponse-activite-pro-personne-fragile',
-                'conseils-activite-pro-personne-fragile',
                 'reponse-activite-pro-antecedents',
                 'conseils-activite-pro-arret',
+                'conseils-activite-pro-infos',
             ])
         })
 
