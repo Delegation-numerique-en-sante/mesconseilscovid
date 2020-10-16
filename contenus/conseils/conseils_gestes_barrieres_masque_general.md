@@ -1,8 +1,6 @@
 <div class="conseil">
 
-Le **port du masque est obligatoire** dans les **[lieux publics clos](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/port-du-masque-grand-public-obligatoire-en-lieux-clos-faq)** pour toute personne de 11 ans et plus.
-
-Il peut aussi être rendu obligatoire dans certains **lieux publics ouverts** (rues, marchés, abords des écoles…) sur décision du préfet.
+Le **port du masque est obligatoire** dans les **[lieux publics clos](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/port-du-masque-grand-public-obligatoire-en-lieux-clos-faq)** pour toute personne de 11 ans et plus. Il peut aussi être rendu obligatoire dans certains **lieux publics ouverts** (rues, marchés, abords des écoles…) sur décision du préfet.
 
 </div>
 
