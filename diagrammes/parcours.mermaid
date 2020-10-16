@@ -5,24 +5,39 @@ graph TD
     nom("Nom ?") --> symptomesactuels
 
     symptomesactuels("Symptômes actuels ?")
-    symptomesactuels -->|oui| debutsymptomes("Début des symptômes")
-    symptomesactuels -->|non| symptomespasses("Symptômes passés ?")
+    symptomesactuels -->|"oui, lesquels ?"| debutsymptomes
+    symptomesactuels -->|non| symptomespasses
 
-    symptomespasses("Symptômes passés ?")
-    symptomespasses -->|oui| conseils((Conseils))
-    symptomespasses -->|non| contactarisque("Contact à risque ?")
+    symptomespasses("Symptômes passés <= 7 jours ?")
+    symptomespasses -->|oui| debutsymptomes
+    symptomespasses -->|non| contactarisque
+
+    debutsymptomes("Depuis quand ?")
+    debutsymptomes -->|date| depistage
 
     contactarisque("Contact à risque ?")
-    contactarisque -->|oui| conseils((Conseils))
-    contactarisque -->|non| residence(Résidence)
+    contactarisque -->|oui| depistage
+    contactarisque -->|non| depistage
 
-    subgraph Suivi
-    debutsymptomes("Début des symptômes") -->|date| suivisymptomes("Évolution des symptômes")
-    end
-
-    suivisymptomes --> conseils((Conseils))
-    activitepro --> conseils((Conseils))
+    depistage("Test Covid ?")
+    depistage --->|pas de test| residence
+    depistage --->|positif| residence
+    depistage --->|négatif| residence
+    depistage --->|en attente| residence
 
     subgraph Questions bonus
-    residence("Résidence") --> foyer("Foyer") --> antecedents("Antécédents") --> caracteristiques("Caractéristiques") --> activitepro("Activité")
+        residence("Résidence") --> foyer("Foyer") --> antecedents("Antécédents") --> caracteristiques("Caractéristiques") --> activitepro("Activité")
+    end
+
+    activitepro --> conseils(("Conseils"))
+
+    conseils --> debutconnu
+
+    subgraph Suivi
+        debutconnu("Date de début connue")
+        debutconnu -->|oui| suivisymptomes
+        debutconnu -->|non| debutsymptomes2
+
+        debutsymptomes2("Depuis quand ?")
+        debutsymptomes2 --> suivisymptomes
     end
