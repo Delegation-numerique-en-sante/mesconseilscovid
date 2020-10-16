@@ -41,7 +41,7 @@ Notez qu’à compter du 1<sup>er</sup> septembre 2020, les salariés vivant ave
 
 ## [conseils_activité_pro_libéral.md](conseils_activité_pro_libéral.md)
 
-Comme les **professions libérales** n'ont pas de médecine du travail, vous pouvez vous rapprocher du centre régional de pathologies professionnelles et environnementales de l’hôpital (CHU) le plus proche de chez vous. Ces services travaillent sur les impacts du travail (exposition professionnelle et/ou environnementale) sur la santé et peuvent vous renseigner sur **vos conditions de travail** au regard de **votre état de santé**.
+Comme les **professions libérales** n’ont pas de médecine du travail, vous pouvez vous rapprocher du centre régional de pathologies professionnelles et environnementales de l’hôpital (CHU) le plus proche de chez vous. Ces services travaillent sur les impacts du travail (exposition professionnelle et/ou environnementale) sur la santé et peuvent vous renseigner sur **vos conditions de travail** au regard de **votre état de santé**.
 
 
 
