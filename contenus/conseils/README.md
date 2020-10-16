@@ -18,7 +18,9 @@
 
 ## [conseils_activité_pro_arrêt.md](conseils_activité_pro_arrêt.md)
 
-Si vous n’avez pas la possibilité de télétravailler et que votre état de santé vous expose à un **très haut risque** de développer une **forme sévère** de Covid,  votre médecin traitant pourra vous fournir un **certificat d’isolement** à donner à votre employeur. Plus d’informations sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?_56_INSTANCE_XV0ItAcVS4ow_read_more=2).
+* Si vous n’avez pas la possibilité de **télétravailler** et que votre état de santé vous expose à un **très haut risque** de développer une **forme sévère** de Covid,  votre médecin traitant pourra vous fournir un **certificat d’isolement** à donner à votre employeur. Plus d’informations sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?_56_INSTANCE_XV0ItAcVS4ow_read_more=2).
+* Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues.
+* Nos conseils pour préserver votre [santé au travail](#medecinedutravail).
 
 
 
@@ -45,7 +47,9 @@ Comme les **professions libérales** n'ont pas de médecine du travail, vous pou
 
 ## [conseils_activité_pro_personne_fragile.md](conseils_activité_pro_personne_fragile.md)
 
-Nous vous invitons à privilégier le **télétravail** ou rentrer en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**. En appliquant les gestes barrières, le risque de contamination sur le lieu de travail n’est pas plus important qu’en allant faire ses courses.
+* Nous vous invitons à privilégier le **télétravail** ou rentrer en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**.
+* Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues.
+* Nos conseils pour préserver votre [santé au travail](#medecinedutravail).
 
 
 

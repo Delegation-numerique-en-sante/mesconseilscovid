@@ -1,1 +1,3 @@
-Nous vous invitons à privilégier le **télétravail** ou rentrer en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**. En appliquant les gestes barrières, le risque de contamination sur le lieu de travail n’est pas plus important qu’en allant faire ses courses.
+* Nous vous invitons à privilégier le **télétravail** ou rentrer en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**.
+* Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues.
+* Nos conseils pour préserver votre [santé au travail](#medecinedutravail).
