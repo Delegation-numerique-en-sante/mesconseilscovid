@@ -253,7 +253,7 @@ describe('Parcours', function () {
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
-                'Prévoir un test au 7e jour suivant le dernier contact avec le malade'
+                'Prévoir un test au 7e jour suivant le dernier contact avec le malade'
             )
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
         }
