@@ -1023,14 +1023,11 @@
         <fieldset>
             <legend>{{ question_debut_symptomes_titre|me_or_them }}</legend>
             <div>
-                <input id="debut_symptomes" type="checkbox" name="debut_symptomes">
-                <label for="debut_symptomes">
-                    <span>
-                        {{ question_debut_symptomes_libellé|me_or_them }}
-                    </span>
-                </label>
+                <p id="debut-symptomes-date-label">
+                    {{ question_debut_symptomes_libellé|me_or_them }}
+                </p>
             </div>
-            <div class="secondary disabled required" role="radiogroup">
+            <div role="radiogroup" aria-labelledby="debut-symptomes-date-label">
                 <input id="debut_symptomes_aujourdhui" type="radio" required name="suivi_symptomes_date" value="aujourdhui">
                 <label for="debut_symptomes_aujourdhui">Aujourd’hui</label>
                 <input id="debut_symptomes_hier" type="radio" required name="suivi_symptomes_date" value="hier">
