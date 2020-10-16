@@ -37,22 +37,7 @@ Les règles d’affichage des conseils en fonction des réponses sont décrites 
 
 ### Parcours
 
-La première question est relative au dépistage :
-
-* Si le test est positif ou que la personne est en attente de résultats, elle est redirigée vers le suivi (`Date de premiers symptômes` + `Évolution des symptômes`)
-* Si le test est négatif ou que la personne n’a pas effectué de test, elle est redirigée vers la description de ses `Symptômes actuels` puis `Symptômes passés` et enfin `Contact à risque`.
-
-Si la personne a des `Symptômes actuels` ou `Symptômes passés`, elle est redirigée vers le suivi (`Date de premiers symptômes` + `Évolution des symptômes`).
-
-Tous les parcours se terminent par les 5 étapes suivantes :
-
-1. `Résidence`
-2. `Foyer`
-3. `Antécédents`
-4. `Caractéristiques`
-5. `Activité professionnelle`
-
-Les fichiers pour modifier ces pages de parcours se situent dans le dossier [`questions/`](questions/).
+![Diagramme du parcours](https://raw.githubusercontent.com/Delegation-numerique-en-sante/mesconseilscovid/question-test-3/diagrammes/parcours.png)
 
 
 ### Conseils
