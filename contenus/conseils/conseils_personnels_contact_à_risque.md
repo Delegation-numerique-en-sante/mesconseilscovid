@@ -6,6 +6,8 @@ Nous vous conseillons de :
 
 3. Si vous constatez l’apparition de **symptômes**, contactez votre médecin, et suivez leur évolution avec le [questionnaire de suivi](#suivisymptomes).
 
-4. **Prévoir un test au 7<sup>e</sup> jour** suivant le dernier contact avec le malade, en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid) (vous serez prioritaire). S’il est négatif, vous pourrez lever votre isolement. S’il est positif, il faudra à nouveau 7 jours d’isolement, et surveiller l’apparition de symptômes.
+4. **Prévoir un test au 7<sup>e</sup> jour** suivant le dernier contact avec le malade, en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid). En tant que "Cas contact" d'une personne malade vous serez prioritaire pour faire votre test
 
-5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+5. Si le test est négatif, vous pourrez lever votre isolement. S’il est positif, il faudra à nouveau 7 jours d’isolement, et surveiller l’apparition de symptômes.
+
+6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
