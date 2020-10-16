@@ -409,11 +409,14 @@ main footer .legals {
     text-align: center;
     margin: 3rem auto;
 }
-.statut-symptomatique-urgent,
-.statut-symptomatique-positif,
-.statut-symptomatique,
 .statut-asymptomatique,
-.statut-risque-eleve,
+.statut-contact-a-risque-avec-test,
+.statut-contact-a-risque-sans-test,
+.statut-positif-symptomatique-urgent,
+.statut-symptomatique-en-attente,
+.statut-symptomatique-positif,
+.statut-symptomatique-sans-test,
+.statut-symptomatique-urgent,
 .suivi-gravite-3 {
     background: #ffb6a5;
     border-color: #ff6f4c;
@@ -429,6 +432,7 @@ main footer .legals {
     background: #fde7a0;
     border-color: #fdcf41;
 }
+.statut-en-attente,
 .statut-peu-de-risques,
 .suivi-gravite-0,
 .statut-deconfinement {
