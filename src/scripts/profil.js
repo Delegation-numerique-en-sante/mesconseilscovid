@@ -172,6 +172,104 @@ export default class Profil {
         this.fillQuestionnaireCompleted(data['questionnaire_completed'])
     }
 
+    fillTestData(depistage, symptomes, personneFragile, foyerFragile) {
+        let data = {
+            symptomes_actuels: false,
+            symptomes_actuels_temperature: false,
+            symptomes_actuels_temperature_inconnue: false,
+            symptomes_actuels_toux: false,
+            symptomes_actuels_odorat: false,
+            symptomes_actuels_douleurs: false,
+            symptomes_actuels_diarrhee: false,
+            symptomes_actuels_fatigue: false,
+            symptomes_actuels_alimentation: false,
+            symptomes_actuels_souffle: false,
+            symptomes_actuels_autre: false,
+            symptomes_passes: false,
+            contact_a_risque: false,
+            contact_a_risque_meme_lieu_de_vie: false,
+            contact_a_risque_contact_direct: false,
+            contact_a_risque_actes: false,
+            contact_a_risque_espace_confine: false,
+            contact_a_risque_meme_classe: false,
+            contact_a_risque_stop_covid: false,
+            contact_a_risque_autre: false,
+            depistage: false,
+            depistage_resultat: '',
+            departement: '34',
+            activite_pro: false,
+            activite_pro_public: false,
+            activite_pro_sante: false,
+            activite_pro_liberal: false,
+            foyer_enfants: false,
+            foyer_fragile: false,
+            age: '42',
+            grossesse_3e_trimestre: false,
+            poids: '70',
+            taille: '178',
+            antecedent_cardio: false,
+            antecedent_diabete: false,
+            antecedent_respi: false,
+            antecedent_dialyse: false,
+            antecedent_cancer: false,
+            antecedent_immunodep: false,
+            antecedent_cirrhose: false,
+            antecedent_drepano: false,
+            antecedent_chronique_autre: false,
+        }
+
+        if (depistage == 'Positif') {
+            data.depistage = true
+            data.depistage_resultat = 'positif'
+        } else if (depistage == 'Négatif') {
+            data.depistage = true
+            data.depistage_resultat = 'negatif'
+        } else if (depistage == 'En attente') {
+            data.depistage = true
+            data.depistage_resultat = 'en_attente'
+        } else if (depistage == 'Pas testé') {
+            // valeurs par défaut
+        } else {
+            console.error('Situation de dépistage inconnue')
+        }
+
+        if (symptomes === 'Symptômes actuels graves') {
+            data.symptomes_actuels = true
+            data.symptomes_actuels_souffle = true
+            data._symptomes_start_date = joursAvant(3).toJSON()
+        } else if (symptomes === 'Symptômes actuels') {
+            data.symptomes_actuels = true
+            data.symptomes_actuels_diarrhee = true
+            data._symptomes_start_date = joursAvant(3).toJSON()
+        } else if (symptomes === 'Symptômes actuels non évocateurs') {
+            data.symptomes_actuels = true
+            data.symptomes_actuels_autre = true
+        } else if (symptomes === 'Symptômes passés') {
+            data.symptomes_passes = true
+            data._symptomes_start_date = joursAvant(3).toJSON()
+        } else if (symptomes === 'Contact à risque') {
+            data.contact_a_risque = true
+            data.contact_a_risque_meme_lieu_de_vie = true
+        } else if (symptomes === 'Contact pas vraiment à risque') {
+            data.contact_a_risque = true
+            data.contact_a_risque_autre = true
+        } else if (symptomes === 'Rien de tout ça') {
+            // valeurs par défaut
+        } else {
+            console.error('Situation symptomatique inconnue')
+        }
+
+        if (personneFragile) {
+            data.age = 70
+        }
+
+        if (foyerFragile) {
+            data.foyer_fragile = true
+        }
+
+        return this.fillData(data)
+    }
+
     fillQuestionnaireStarted(value) {
         if (typeof value !== 'undefined') {
             this.questionnaire_started = value

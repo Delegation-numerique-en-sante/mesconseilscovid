@@ -14,6 +14,10 @@ export default class StockageLocal {
         return localforage.setItem('profil', nom)
     }
 
+    getProfil(nom) {
+        return localforage.getItem(nom)
+    }
+
     getProfils() {
         return localforage
             .keys()
