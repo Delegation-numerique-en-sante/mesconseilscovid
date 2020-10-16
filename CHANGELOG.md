@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-10-16
+
+* ajout d’une question relative aux tests
+* réorganisation des conseils par thématique
+
 ## 2020-10-05
 
 * met à jour les liens vers certaines infographies qui ont changé
