@@ -6,19 +6,19 @@
 
 ## [statut_asymptomatique.md](statut_asymptomatique.md)
 
-Vous êtes **porteur de la Covid** sans symptômes, il est important de vous isoler afin de ne pas contaminer d’autres personnes.
+Vous êtes **porteur de la Covid** sans symptômes, il est important de **vous isoler** afin de ne pas contaminer d’autres personnes.
 
 
 
 ## [statut_contact_a_risque_avec_test.md](statut_contact_a_risque_avec_test.md)
 
-Restez **en isolement** et refaites un test 7 jours après votre dernier contact à risque.
+Restez **en isolement** et **refaites un test** 7 jours après votre dernier contact à risque.
 
 
 
 ## [statut_contact_a_risque_sans_test.md](statut_contact_a_risque_sans_test.md)
 
-Restez **en isolement** et faites un test 7 jours après votre dernier contact à risque.
+Restez **en isolement** et **faites un test** 7 jours après votre dernier contact à risque.
 
 
 
@@ -72,7 +72,7 @@ Maintenez-vous **en isolement** au moins 7 jours après le début des symptômes
 
 ## [statut_symptomatique_sans_test.md](statut_symptomatique_sans_test.md)
 
-Vous êtes peut-être **porteur de la Covid**. Restez isolé le temps de faire un test.
+Vous êtes peut-être **porteur de la Covid**. Restez **isolé** le temps de **faire un test.**
 
 
 
