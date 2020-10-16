@@ -280,11 +280,7 @@ export default class AlgorithmeOrientation {
 
     depistageBlockNamesToDisplay() {
         const blockNames = []
-        if (
-            this.profil.estPositif() ||
-            this.profil.estNegatif() ||
-            (this.profil.contact_a_risque && this.profil.contact_a_risque_autre)
-        ) {
+        if (this.profil.estPositif() || this.profil.estNegatif()) {
             // rien
         } else {
             blockNames.push('conseils-tests')
