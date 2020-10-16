@@ -126,7 +126,9 @@ export function initRouter(app) {
             progress.innerText = app.questionnaire.progress(pageName)
         }
 
-        const boutonRetour = element.querySelector('form .back-button')
+        const boutonRetour = element.querySelector(
+            'form .back-button, .form-controls .back-button'
+        )
         if (boutonRetour) {
             const previousPage = app.questionnaire.previousPage(pageName, app.profil)
             if (previousPage) {
