@@ -4,6 +4,30 @@
 *Ce fichier est généré automatiquement pour pouvoir accéder rapidement aux contenus,il ne doit pas être édité !*
 
 
+## [reponse_depistage_en_attente.md](reponse_depistage_en_attente.md)
+
+Vous avez réalisé un test ces 7 derniers jours et vous êtes en attente de résultats (<a href="#depistage">modifier</a>)
+
+
+
+## [reponse_depistage_negatif.md](reponse_depistage_negatif.md)
+
+Vous avez réalisé un test ces 7 derniers jours et il est négatif (<a href="#depistage">modifier</a>)
+
+
+
+## [reponse_depistage_positif.md](reponse_depistage_positif.md)
+
+Vous avez réalisé un test ces 7 derniers jours et il est positif (<a href="#depistage">modifier</a>)
+
+
+
+## [reponse_depistage_sans.md](reponse_depistage_sans.md)
+
+Vous n’avez pas réalisé de test ces 7 derniers jours (<a href="#depistage">modifier</a>)
+
+
+
 ## [réponse_activité_pro.md](réponse_activité_pro.md)
 
 Vous travaillez et/ou êtes bénévole (<a href="#activitepro">modifier</a>)

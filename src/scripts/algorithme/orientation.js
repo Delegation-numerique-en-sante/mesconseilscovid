@@ -256,6 +256,15 @@ export default class AlgorithmeOrientation {
 
     conseilsPersonnelsBlockNamesToDisplay() {
         const blockNames = []
+        if (this.profil.estPositif()) {
+            blockNames.push('reponse-depistage-positif')
+        } else if (this.profil.estNegatif()) {
+            blockNames.push('reponse-depistage-negatif')
+        } else if (this.profil.estEnAttente()) {
+            blockNames.push('reponse-depistage-en-attente')
+        } else if (this.profil.sansDepistage()) {
+            blockNames.push('reponse-depistage-sans')
+        }
         blockNames.push(`conseils-personnels-${this.statutEtConseils.conseils}`)
         return blockNames
     }
