@@ -1,5 +1,5 @@
-<!---->Le <b>département</b> oû je suis actuellement :
+<!---->Le <b>département</b> où je suis actuellement :
 
 ---
 
-<!---->le <b>département</b> oû il est actuellement :
+<!---->Le <b>département</b> où il/elle est actuellement :
