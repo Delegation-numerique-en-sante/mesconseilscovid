@@ -1,1 +1,1 @@
-Vous exercez une activité professionnelle et/ou bénévole (<a href="#activitepro">modifier</a>)
+Vous travaillez et/ou etes bénévole (<a href="#activitepro">modifier</a>)
