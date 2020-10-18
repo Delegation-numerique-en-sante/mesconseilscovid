@@ -1,4 +1,4 @@
-<!---->J’ai fais ou reçu des actes d’hygiène ou de soins
+<!---->J’ai fait ou reçu des actes d’hygiène ou de soins
 
 ---
 
