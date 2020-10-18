@@ -1,6 +1,6 @@
 import { format } from 'timeago.js'
 
-import { joursAvant } from './utils.js'
+import { joursAvant, joursApres } from './utils.js'
 import { createElementFromHTML, safeHtml } from './affichage.js'
 import AlgorithmeSuivi from './algorithme/suivi.js'
 
@@ -27,6 +27,17 @@ export default class Profil {
     set symptomes_start_date(date) {
         // Turn the date into a readable string.
         this._symptomes_start_date =
+            typeof date !== 'undefined' ? date.toJSON() : undefined
+    }
+
+    get depistage_start_date() {
+        if (typeof this._depistage_start_date === 'undefined') return undefined
+        return new Date(this._depistage_start_date)
+    }
+
+    set depistage_start_date(date) {
+        // Turn the date into a readable string.
+        this._depistage_start_date =
             typeof date !== 'undefined' ? date.toJSON() : undefined
     }
 
@@ -100,6 +111,7 @@ export default class Profil {
 
         this.depistage = undefined
         this.depistage_resultat = undefined
+        this._depistage_start_date = undefined
 
         this.suivi_active = false
         this.resetSuivi()
@@ -161,6 +173,7 @@ export default class Profil {
 
         this.depistage = data['depistage']
         this.depistage_resultat = data['depistage_resultat']
+        this._depistage_start_date = data['_depistage_start_date']
 
         this._suivi_start_date = data['_suivi_start_date']
         this._symptomes_start_date = data['_symptomes_start_date']
@@ -221,12 +234,15 @@ export default class Profil {
         if (depistage == 'Positif') {
             data.depistage = true
             data.depistage_resultat = 'positif'
+            data._depistage_start_date = new Date().toJSON()
         } else if (depistage == 'Négatif') {
             data.depistage = true
             data.depistage_resultat = 'negatif'
+            data._depistage_start_date = new Date().toJSON()
         } else if (depistage == 'En attente') {
             data.depistage = true
             data.depistage_resultat = 'en_attente'
+            data._depistage_start_date = new Date().toJSON()
         } else if (depistage == 'Pas testé') {
             // valeurs par défaut
         } else {
@@ -333,6 +349,7 @@ export default class Profil {
             contact_a_risque_autre: this.contact_a_risque_autre,
             depistage: this.depistage,
             depistage_resultat: this.depistage_resultat,
+            _depistage_start_date: this._depistage_start_date,
             suivi_active: this.suivi_active,
             _suivi_start_date: this._suivi_start_date,
             _symptomes_start_date: this._symptomes_start_date,
@@ -493,16 +510,36 @@ export default class Profil {
         )
     }
 
+    depistageObsolete() {
+        // TODISCUSS: reset depistage data if true?
+        const delta = 7
+        const now = new Date()
+        const finDeValidite = joursApres(delta, this.depistage_start_date)
+        return now > finDeValidite
+    }
+
     estPositif() {
-        return this.depistage === true && this.depistage_resultat === 'positif'
+        return (
+            this.depistage === true &&
+            this.depistage_resultat === 'positif' &&
+            !this.depistageObsolete()
+        )
     }
 
     estNegatif() {
-        return this.depistage === true && this.depistage_resultat === 'negatif'
+        return (
+            this.depistage === true &&
+            this.depistage_resultat === 'negatif' &&
+            !this.depistageObsolete()
+        )
     }
 
     estEnAttente() {
-        return this.depistage === true && this.depistage_resultat === 'en_attente'
+        return (
+            this.depistage === true &&
+            this.depistage_resultat === 'en_attente' &&
+            !this.depistageObsolete()
+        )
     }
 
     sansDepistage() {
