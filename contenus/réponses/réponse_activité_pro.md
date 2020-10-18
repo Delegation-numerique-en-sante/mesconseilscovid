@@ -1,1 +1,1 @@
-Vous travaillez et/ou etes bénévole (<a href="#activitepro">modifier</a>)
+Vous travaillez et/ou êtes bénévole (<a href="#activitepro">modifier</a>)
