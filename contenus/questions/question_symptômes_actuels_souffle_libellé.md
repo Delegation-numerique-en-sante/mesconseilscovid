@@ -1,4 +1,4 @@
-<!---->Depuis hier j'ai </b>du mal à respirer</b> lorsque je parle <em>ou</em> fais un petit effort <b>.
+<!---->Depuis hier j’ai <b>du mal à respirer</b> lorsque je parle <em>ou</em> fais un petit effort.
 
 ---
 
