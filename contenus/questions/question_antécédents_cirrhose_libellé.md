@@ -1,5 +1,5 @@
-<!---->J’ai une <b>cirrhose</b>
+<!---->J’ai une <b>cirrhose</b> (maladie grave du foie)
 
 ---
 
-<!---->Il ou elle a une <b>cirrhose</b>
+<!---->Il ou elle a une <b>cirrhose</b> (maladie grave du foie)
