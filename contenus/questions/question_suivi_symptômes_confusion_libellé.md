@@ -1,1 +1,1 @@
-Avez-vous remarqué chez votre proche l’apparition d’une forte **somnolence** ou d’une **confusion** ces dernières heures ?
+Avez-vous remarqué que votre proche n’est pas comme d’habitude ces dernières heures : forte **fatigue** ou **confusion** ?

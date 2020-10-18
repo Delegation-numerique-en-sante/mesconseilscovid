@@ -1,1 +1,1 @@
-*Chez les personnes de plus de 80 ans, d’autres signes sont évocateurs : baisse de l’état général, chutes à répétition, apparition ou aggravation de troubles cognitifs, confusion, diarrhée, aggravation d’une maladie chronique.*
+*Chez les personnes de plus de 80 ans, d’autres signes font penser au Covid-19 : fatigue, perte de l’appétit, chutes à répétition, apparition ou aggravation de problèmes de mémoire, confusion, diarrhée, aggravation d’une autre maladie.*
