@@ -2,4 +2,4 @@
 
 ---
 
-<!---->Depuis hier il ou elle a </b>du mal à respirer</b> en parlant <em>ou</em> en faisant un petit effort <b>dans les dernières 24 heures</b>.
+<!---->Depuis hier il ou elle a <b>du mal à respirer</b> en parlant <em>ou</em> en faisant un petit effort.
