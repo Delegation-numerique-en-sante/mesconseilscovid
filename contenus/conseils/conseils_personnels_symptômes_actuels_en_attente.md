@@ -12,4 +12,4 @@ Nous vous conseillons de :
 
 6. Revenir sur Mes Conseils Covid **quand vous aurez reçu vos résultats** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
-Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw)
+Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
