@@ -1,1 +1,1 @@
-Des personnes croisées dans l’espace public de manière fugace ne sont pas considérées comme des personnes contacts à risque.
+Des personnes croisées a l'exterieur de chez moi un court instant ne sont pas considérées comme des personnes contacts à risque.
