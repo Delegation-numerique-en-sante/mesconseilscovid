@@ -1,5 +1,5 @@
-<!---->J’exerce une <b>activité</b> professionnelle et/ou bénévole
+<!---->Je travail et/ou suis bénévole
 
 ---
 
-<!---->Cette personne exerce une <b>activité</b> professionnelle et/ou bénévole
+<!---->Cette personne travail et/ou est bénévole
