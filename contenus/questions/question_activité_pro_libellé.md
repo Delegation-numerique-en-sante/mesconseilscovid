@@ -1,5 +1,5 @@
-<!---->Je travail et/ou suis bénévole
+<!---->Je travaille et/ou suis bénévole
 
 ---
 
-<!---->Cette personne travail et/ou est bénévole
+<!---->Cette personne travaille et/ou est bénévole
