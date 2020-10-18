@@ -1,5 +1,5 @@
-<!----><b>Je ne sais pas</b> quelle a été ma température ces dernières 48 heures.
+<!----><b>Je ne sais pas</b> si j'ai eu de la fiévre ces 2 derniers jours.
 
 ---
 
-<!----><b>Il ou elle ne sait pas</b> quelle a été sa température ces dernières 48 heures.
+<!----><b>Il ou elle ne sait pas</b> si il ou elle a eu de la fiévre ces 2 derniers jours.
