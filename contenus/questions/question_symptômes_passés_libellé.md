@@ -1,4 +1,4 @@
-<!---->J’ai eu des <b>signes</b> (fiévre, toux ou difficulté a respirer, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>dans les 7 derniers jours</b>.
+<!---->J’ai eu des <b>signes</b> (fièvre, toux ou difficultés à respirer, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>dans les 7 derniers jours</b>.
 
 ---
 
