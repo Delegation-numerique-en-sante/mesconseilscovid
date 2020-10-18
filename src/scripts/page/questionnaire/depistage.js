@@ -35,10 +35,34 @@ export default function depistage(form, app) {
     // Soumission du formulaire
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-
-        app.profil.depistage = event.target.elements['depistage'].checked
-        app.profil.depistage_resultat =
+        const depistageChecked = event.target.elements['depistage'].checked
+        const resultatValue =
             event.target.elements['depistage_resultat'].value || undefined
+
+        // On ne veut écraser depistage_start_date que si la valeur du
+        // résultat à changé, sinon on veut pouvoir se servir de la date
+        // originale pour calculer un éventuel déconfinement et/ou rendre
+        // caduque le résultat du test.
+        if (depistageChecked) {
+            const initialDepistage = app.profil.depistage
+            const initialDepistageResultat = app.profil.depistage_resultat
+            if (initialDepistage) {
+                if (initialDepistageResultat !== resultatValue) {
+                    app.profil.depistage_resultat = resultatValue
+                    app.profil.depistage_start_date = new Date()
+                } else {
+                    // Do nothing, we want to keep the original date.
+                }
+            } else {
+                app.profil.depistage = depistageChecked
+                app.profil.depistage_resultat = resultatValue
+                app.profil.depistage_start_date = new Date()
+            }
+        } else {
+            app.profil.depistage = depistageChecked
+            app.profil.depistage_resultat = resultatValue
+            app.profil.depistage_start_date = undefined
+        }
 
         app.enregistrerProfilActuel().then(() => {
             app.goToNextPage('depistage')
