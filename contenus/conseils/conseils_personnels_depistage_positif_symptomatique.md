@@ -1,6 +1,6 @@
 Nous vous conseillons de :
 
-1. Vous maintenir **en isolement**, au moins 7 jours à partir de la date d’apparition des symptômes.
+1. Vous maintenir **en isolement**, au moins 7 jours à partir de la date d’apparition des symptômes, et de contacter votre médecin au moindre doute.
 
 2. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
 
