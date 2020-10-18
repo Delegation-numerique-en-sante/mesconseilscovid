@@ -1,5 +1,5 @@
-<!---->Mon <b>département</b> de résidence actuel :
+<!---->Le <b>département</b> oû je suis actuellement :
 
 ---
 
-<!---->Son <b>département</b> de résidence actuel :
+<!---->le <b>département</b> oû il est actuellement :
