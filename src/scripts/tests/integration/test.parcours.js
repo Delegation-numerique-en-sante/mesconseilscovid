@@ -70,7 +70,7 @@ describe('Parcours', function () {
             let activite = await page.waitForSelector('#page #reponse-activite-pro')
             assert.equal(
                 (await activite.innerText()).trim(),
-                'Vous exercez une activité professionnelle et/ou bénévole (modifier)'
+                'Vous travaillez et/ou êtes bénévole (modifier)'
             )
 
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
@@ -209,7 +209,7 @@ describe('Parcours', function () {
             let activite = await page.waitForSelector('#page #reponse-activite-pro')
             assert.equal(
                 (await activite.innerText()).trim(),
-                'Vous exercez une activité professionnelle et/ou bénévole (modifier)'
+                'Vous travaillez et/ou êtes bénévole (modifier)'
             )
             let bouton = await page.waitForSelector(
                 '#page >> text="Refaire le questionnaire"'

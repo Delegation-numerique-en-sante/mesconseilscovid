@@ -77,7 +77,7 @@ describe('Profils', function () {
             let activite = await page.waitForSelector('#page #reponse-activite-pro')
             assert.equal(
                 (await activite.innerText()).trim(),
-                'Vous exercez une activité professionnelle et/ou bénévole (modifier)'
+                'Vous travaillez et/ou êtes bénévole (modifier)'
             )
 
             let bouton = await page.waitForSelector(
