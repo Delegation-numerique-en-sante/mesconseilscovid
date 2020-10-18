@@ -1,4 +1,4 @@
-<!---->Avez vous un <b>mal de tête</b> qui ne part pas, même après la prise de médicaments contre la douleur (dont paracétamol), et que vous décririez comme intolérable, depuis hier (ou votre dernière connexion) ?
+<!---->Avez-vous un <b>mal de tête</b> qui ne part pas, même après la prise de médicaments contre la douleur (dont paracétamol), et que vous décririez comme intolérable, depuis hier (ou votre dernière connexion) ?
 
 ---
 
