@@ -97,7 +97,7 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 
 ## [conseils_contacter_un_médecin.md](conseils_contacter_un_médecin.md)
 
-* En cas de difficulté à entrer en contact avec un médecin, contactez un médecin de garde.
+* Si vous n’arrivez pas à consulter un médecin, contactez un médecin de garde.
 
 * Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent **pendant plus de 24 heures**.
 
@@ -282,7 +282,7 @@ Nous vous conseillons de :
 
 Nous vous conseillons de :
 
-1. Vous maintenir **en isolement**, au moins 7 jours à partir de la date d’apparition des symptômes.
+1. Vous maintenir **en isolement**, au moins 7 jours à partir de la date d’apparition des symptômes, et de contacter votre médecin au moindre doute.
 
 2. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
 
