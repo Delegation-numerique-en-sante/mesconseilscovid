@@ -1,4 +1,4 @@
-<!----><b>Je ne sais pas</b> si j'ai eu de la fiévre ces 2 derniers jours.
+<!----><b>Je ne sais pas</b> si j’ai eu de la fièvre ces 2 derniers jours.
 
 ---
 
