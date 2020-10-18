@@ -1,1 +1,1 @@
-hypertension artérielle compliquée (avec complications cardiaques, rénales), accident vasculaire cérébral, maladie coronaire (infarctus), chirurgie cardiaque, insuffisance cardiaque avec essoufflement au moindre effort
+hypertension artérielle compliquée (tension trop élévée avec complications au niveau du coeur ou des reins), accident vasculaire cérébral, maladie coronaire (infarctus), chirurgie du coeur, insuffisance cardiaque avec difficultée à réspirer au moindre effort
