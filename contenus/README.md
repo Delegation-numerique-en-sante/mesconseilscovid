@@ -37,7 +37,7 @@ Les règles d’affichage des conseils en fonction des réponses sont décrites 
 
 ### Parcours
 
-![Diagramme du parcours](https://raw.githubusercontent.com/Delegation-numerique-en-sante/mesconseilscovid/question-test-3/diagrammes/parcours.png)
+![Diagramme du parcours](https://raw.githubusercontent.com/Delegation-numerique-en-sante/mesconseilscovid/master/diagrammes/parcours.png)
 
 
 ### Conseils
