@@ -9,19 +9,21 @@ import introduction from './page/introduction.js'
 import nouvelleversion from './page/nouvelleversion.js'
 
 import nom from './page/questionnaire/nom.js'
+
+import symptomesactuels from './page/questionnaire/symptomesactuels.js'
+import depistage from './page/questionnaire/depistage.js'
+import symptomespasses from './page/questionnaire/symptomespasses.js'
+import contactarisque from './page/questionnaire/contactarisque.js'
 import residence from './page/questionnaire/residence.js'
 import foyer from './page/questionnaire/foyer.js'
 import antecedents from './page/questionnaire/antecedents.js'
 import caracteristiques from './page/questionnaire/caracteristiques.js'
 import activitepro from './page/questionnaire/activitepro.js'
-import symptomesactuels from './page/questionnaire/symptomesactuels.js'
-import symptomespasses from './page/questionnaire/symptomespasses.js'
-import contactarisque from './page/questionnaire/contactarisque.js'
 
 import conseils from './page/conseils.js'
 
 import suiviintroduction from './page/suiviintroduction.js'
-import suividate from './page/suividate.js'
+import debutsymptomes from './page/debutsymptomes.js'
 import suivisymptomes from './page/suivisymptomes.js'
 import suivihistorique from './page/suivihistorique.js'
 
@@ -33,13 +35,12 @@ export function beforeSuiviIntroduction(profil, questionnaire) {
     if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
 }
 
-export function beforeSuiviDate(profil, questionnaire) {
+export function beforeDebutSymptomes(profil, questionnaire) {
     if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
 }
 
 export function beforeSuiviSymptomes(profil, questionnaire) {
     if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
-    if (typeof profil.symptomes_start_date === 'undefined') return 'suividate'
 }
 
 export function beforeSuiviHistorique(profil, questionnaire) {
@@ -124,9 +125,11 @@ export function initRouter(app) {
             progress.innerText = app.questionnaire.progress(pageName)
         }
 
-        const boutonRetour = element.querySelector('form .back-button')
+        const boutonRetour = element.querySelector(
+            'form .back-button, .form-controls .back-button'
+        )
         if (boutonRetour) {
-            const previousPage = app.questionnaire.previousPage(pageName)
+            const previousPage = app.questionnaire.previousPage(pageName, app.profil)
             if (previousPage) {
                 boutonRetour.setAttribute('href', `#${previousPage}`)
             }
@@ -157,18 +160,19 @@ export function initRouter(app) {
 
     addAppRoute('nom', nom)
 
+    addQuestionnaireRoute('symptomesactuels', symptomesactuels)
+    addQuestionnaireRoute('depistage', depistage)
+    addQuestionnaireRoute('symptomespasses', symptomespasses)
+    addQuestionnaireRoute('contactarisque', contactarisque)
     addQuestionnaireRoute('residence', residence)
     addQuestionnaireRoute('foyer', foyer)
     addQuestionnaireRoute('antecedents', antecedents)
     addQuestionnaireRoute('caracteristiques', caracteristiques)
     addQuestionnaireRoute('activitepro', activitepro)
-    addQuestionnaireRoute('symptomesactuels', symptomesactuels)
-    addQuestionnaireRoute('symptomespasses', symptomespasses)
-    addQuestionnaireRoute('contactarisque', contactarisque)
 
     addAppRoute('conseils', conseils, beforeConseils)
     addAppRoute('suiviintroduction', suiviintroduction, beforeSuiviIntroduction)
-    addAppRoute('suividate', suividate)
+    addAppRoute('debutsymptomes', debutsymptomes)
     addAppRoute('suivisymptomes', suivisymptomes, beforeSuiviSymptomes)
     addAppRoute('suivihistorique', suivihistorique)
 
@@ -199,6 +203,13 @@ export function initRouter(app) {
         const origine = urlParams.get('origine')
 
         nouvelleversion(element, app, origine)
+    })
+
+    router.on(new RegExp('^suividate$'), function () {}, {
+        before: function (done) {
+            redirectTo('debutsymptomes')
+            done(false)
+        },
     })
 
     router.notFound(function () {

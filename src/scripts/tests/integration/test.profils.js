@@ -1,5 +1,5 @@
 import { assert } from 'chai'
-import { remplirQuestionnaire } from './helpers.js'
+import { remplirQuestionnaire, waitForPlausibleTrackingEvent } from './helpers.js'
 
 describe('Profils', function () {
     it('remplir le questionnaire pour un proche', async function () {
@@ -32,7 +32,7 @@ describe('Profils', function () {
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#residence' }),
+                page.waitForNavigation({ url: '**/#symptomesactuels' }),
             ])
         }
 
@@ -41,20 +41,22 @@ describe('Profils', function () {
             let legend = await page.waitForSelector(
                 '#page #symptomes-actuels-form legend'
             )
-            assert.equal(await legend.innerText(), '1/8 - Son état actuel')
+            assert.equal(await legend.innerText(), '1/9 - Son état actuel')
         }
 
         // Remplir le questionnaire
         await remplirQuestionnaire(page, {
+            symptomesActuels: [],
+            symptomesPasses: false,
+            contactARisque: [],
+            depistage: false,
             departement: '80',
-            activitePro: true,
             enfants: true,
             age: '42',
             taille: '165',
             poids: '70',
             grossesse: false,
-            symptomesActuels: [],
-            symptomesPasses: false,
+            activitePro: true,
         })
 
         // Conseils
@@ -64,7 +66,7 @@ describe('Profils', function () {
             assert.equal(await titre.innerText(), 'Conseils pour « Mamie »') // &nbsp; autour du nom
 
             // On rend la localisation visible
-            await page.click('#page #conseils-departement h3')
+            await page.click('#page #conseils-vie-quotidienne h3')
 
             // On retrouve le département de résidence
             let residence = await page.waitForSelector('#page #nom-departement')
@@ -79,6 +81,8 @@ describe('Profils', function () {
                 (await activite.innerText()).trim(),
                 'Vous travaillez et/ou êtes bénévole (modifier)'
             )
+
+            await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
 
             let bouton = await page.waitForSelector(
                 '#page >> text="Refaire le questionnaire"'

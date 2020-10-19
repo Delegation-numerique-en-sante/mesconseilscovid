@@ -506,4 +506,128 @@ describe('Algorithme déconfinement', function () {
             assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
         })
     })
+
+    describe('Déconfinable et dépistage', function () {
+        it('Faux s’il y a 7 jours et plus de fièvre ni essoufflement mais dépistage positif récent', function () {
+            const profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_resultat: 'positif',
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(1).toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(3).toJSON(),
+                        symptomes: true,
+                        fievre: 'oui',
+                        essoufflement: 'critique',
+                    },
+                ],
+            })
+            profil.depistage_start_date = heuresAvant(1, joursAvant(3)) // < 7 jours.
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+            assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
+        })
+        it('Vrai s’il y a 7 jours et plus de fièvre ni essoufflement et dépistage positif ancien', function () {
+            const profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_resultat: 'positif',
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(1).toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(3).toJSON(),
+                        symptomes: true,
+                        fievre: 'oui',
+                        essoufflement: 'critique',
+                    },
+                ],
+            })
+            profil.depistage_start_date = heuresAvant(1, joursAvant(7))
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+            assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
+        })
+
+        it('Faux s’il y a 7 jours et plus de fièvre ni essoufflement mais dépistage en attente récent', function () {
+            const profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_resultat: 'en_attente',
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(1).toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(3).toJSON(),
+                        symptomes: true,
+                        fievre: 'oui',
+                        essoufflement: 'critique',
+                    },
+                ],
+            })
+            profil.depistage_start_date = heuresAvant(1, joursAvant(3)) // < 7 jours.
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+            assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
+        })
+        it('Vrai s’il y a 7 jours et plus de fièvre ni essoufflement et dépistage en attente ancien', function () {
+            const profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_resultat: 'en_attente',
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(1).toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(3).toJSON(),
+                        symptomes: true,
+                        fievre: 'oui',
+                        essoufflement: 'critique',
+                    },
+                ],
+            })
+            profil.depistage_start_date = heuresAvant(1, joursAvant(7))
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+            assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
+        })
+    })
 })

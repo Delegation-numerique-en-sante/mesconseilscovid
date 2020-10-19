@@ -72,9 +72,9 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
 
-      - name: Check documentation
+      - name: Check orphelins
         run: |
-          make check-documentation
+          make check-orphelins
         env:
           PYTHONUNBUFFERED: "1"
 

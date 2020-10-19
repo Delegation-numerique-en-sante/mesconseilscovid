@@ -37,7 +37,7 @@
 ## [question_activité_pro_santé_aide.md](question_activité_pro_santé_aide.md)
 
 <sup>*</sup>
-Médecin, infirmier, aide soignant, orthophoniste, brancardier, manipulateur radio, kinésithérapeute, sage-femme, psychologue…
+Médecin, infirmier, aide soignant, pharmacien, orthophoniste, brancardier, manipulateur radio, kinésithérapeute, sage-femme, psychologue…
 
 
 
@@ -238,6 +238,84 @@ Si vous ne disposez pas de ces informations précises, vous pouvez saisir une ap
 
 
 
+## [question_debut_symptomes_aide.md](question_debut_symptomes_aide.md)
+
+<!---->Cette date est importante afin de déterminer la période d’incubation et de guérison de votre maladie.
+
+---
+
+<!---->Cette date est importante afin de déterminer la période d’incubation et de guérison de sa maladie.
+
+
+
+## [question_debut_symptomes_libellé.md](question_debut_symptomes_libellé.md)
+
+<!---->Mes premiers <b>signes</b> de la maladie sont apparus :
+
+---
+
+<!---->Ses premiers <b>signes</b> de la maladie sont apparus :
+
+
+
+## [question_debut_symptomes_titre.md](question_debut_symptomes_titre.md)
+
+<!---->La date de début de mes symptômes
+
+---
+
+<!---->La date de début de ses symptômes
+
+
+
+## [question_dépistage_aide.md](question_dépistage_aide.md)
+
+Le test virologique (aussi appelé RT-PCR) détecte la présence du virus dans un prélèvement nasal.
+
+
+
+## [question_dépistage_attente_libellé.md](question_dépistage_attente_libellé.md)
+
+<!---->Je n’ai pas encore reçu le résultat.
+
+---
+
+<!---->Cette personne n’a pas encore reçu le résultat.
+
+
+
+## [question_dépistage_libellé.md](question_dépistage_libellé.md)
+
+<!---->J’ai passé un <b>test Covid</b> dans les 7 derniers jours.
+
+---
+
+<!---->Cette personne a passé un <b>test Covid</b> dans les 7 derniers jours.
+
+
+
+## [question_dépistage_négatif_libellé.md](question_dépistage_négatif_libellé.md)
+
+<!---->Le résultat était <strong>négatif</strong>.
+
+
+
+## [question_dépistage_positif_libellé.md](question_dépistage_positif_libellé.md)
+
+<!---->Le résultat était <strong>positif</strong>.
+
+
+
+## [question_dépistage_titre.md](question_dépistage_titre.md)
+
+<!---->Mon test Covid
+
+---
+
+<!---->Son test Covid
+
+
+
 ## [question_foyer_enfants_libellé.md](question_foyer_enfants_libellé.md)
 
 <!---->Je vis avec un ou des <b>enfants</b> de moins de 11 ans
@@ -251,29 +329,29 @@ Si vous ne disposez pas de ces informations précises, vous pouvez saisir une ap
 ## [question_foyer_fragile_aide.md](question_foyer_fragile_aide.md)
 
 <sup>*</sup>
-Une personne est considérée comme fragile face à la Covid si elle :  
+Une personne est considérée comme fragile face à la Covid si elle :
 * a plus 65 ans,
-* est obèse, c’est-à-dire un indice de masse corporelle (IMC) supérieur à 30 kgm<sup>-2</sup>,
-* est enceinte au 3<sup>e</sup> trimestre de grossesse, 
-* a une ou plusieurs de ces conditions : 
-  * maladie du cœur ou des artères, 
-  * diabète mal équilibré ou avec des complications (yeux, reins), 
-  * maladie respiratoire chronique (broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrôme d’apnées du sommeil, mucoviscidose), 
-  * insuffisance rénale chronique avec besoin de faire de la dialyse, 
-  * cancer évolutif sous traitement (hors hormonothérapie), 
-  * une cirrhose (maladie grave du foie), 
-  * une drépanocytose (maladie des globules rouges), 
-  * une baisse des défenses immunitaires face aux virus et bactéries (médicamenteuse : chimiothérapie contre le cancer, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive depuis plus de 15 jours ; infection à VIH non contrôlée ou avec des CD4 <200/mm<sup>3</sup> ; consécutive à une greffe; liée à cancer du sang en cours de traitement).
+* est obèse, c’est-à-dire un indice de masse corporelle (IMC) supérieur à 30 kgm<sup>-2</sup>,
+* est enceinte au 3<sup>e</sup> trimestre de grossesse,
+* a une ou plusieurs de ces conditions :
+  * maladie du cœur ou des artères,
+  * diabète mal équilibré ou avec des complications (yeux, reins),
+  * maladie respiratoire chronique (broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrôme d’apnées du sommeil, mucoviscidose),
+  * insuffisance rénale chronique avec besoin de faire de la dialyse,
+  * cancer évolutif sous traitement (hors hormonothérapie),
+  * une cirrhose (maladie grave du foie),
+  * une drépanocytose (maladie des globules rouges),
+  * une baisse des défenses immunitaires face aux virus et bactéries (médicamenteuse : chimiothérapie contre le cancer, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive depuis plus de 15 jours ; infection à VIH non contrôlée ou avec des CD4 inférieurs à 200/mm<sup>3</sup> ; consécutive à une greffe; liée à cancer du sang en cours de traitement).
 
 
 
 ## [question_foyer_fragile_libellé.md](question_foyer_fragile_libellé.md)
 
-<!---->Je vis avec une ou des personnes considérée(s) comme <b>fragile(s)</b><sup>*</sup> face au covid-19 et/ou en situation de handicap
+<!---->Je vis avec une ou des personnes considérée(s) comme <b>fragile(s)</b><sup>*</sup> face à la Covid et/ou en situation de handicap
 
 ---
 
-<!---->Cette personne vit avec une ou des personnes considérée(s) comme <b>fragile(s)</b><sup>*</sup> face au covid-19 et/ou en situation de handicap
+<!---->Cette personne vit avec une ou des personnes considérée(s) comme <b>fragile(s)</b><sup>*</sup> face à la Covid et/ou en situation de handicap
 
 
 
@@ -325,24 +403,13 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 
 
-## [question_suivi_date_libellé.md](question_suivi_date_libellé.md)
+## [question_suivi_symptômes_aide.md](question_suivi_symptômes_aide.md)
 
-<!---->Cette date est importante pour connaître la période d’incubation et de guérison de votre maladie.
-
----
-
-<!---->Cette date est importante pour connaître la période d’incubation et de guérison de sa maladie.
-
-
-
-## [question_suivi_date_titre.md](question_suivi_date_titre.md)
-
-<!---->La date de mes premiers symptômes
+<!---->Décrivez ici l'évolution quotidienne de vos symptômes, pour obtenir des conseils adaptés pendant votre période d'isolement.
 
 ---
 
-<!---->La date de ses premiers symptômes
-
+<!---->Décrivez ici l'évolution quotidienne de ses symptômes, pour obtenir des conseils adaptés pendant sa période d'isolement.
 
 
 ## [question_suivi_symptômes_alimentation_hydratation_libellé.md](question_suivi_symptômes_alimentation_hydratation_libellé.md)
@@ -393,11 +460,11 @@ Avez-vous remarqué que votre proche n’est pas comme d’habitude ces dernièr
 
 ## [question_suivi_symptômes_libellé.md](question_suivi_symptômes_libellé.md)
 
-<!---->J’ai un ou des <b>signes</b> qui peuvent évoquer le COVID <b>aujourd’hui</b>.
+<!---->J’ai un ou des <b>signes</b> qui peuvent évoquer la Covid <b>aujourd’hui</b>.
 
 ---
 
-<!---->Cette personne a un ou des <b>signes</b> qui peuvent évoquer le COVID <b>aujourd’hui</b>.
+<!---->Cette personne a un ou des <b>signes</b> qui peuvent évoquer la Covid <b>aujourd’hui</b>.
 
 
 
@@ -509,11 +576,11 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 
 ## [question_symptômes_actuels_libellé.md](question_symptômes_actuels_libellé.md)
 
-<!---->J’ai un ou des <b>signes</b> (fièvre, toux ou difficultés à respirer, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>actuellement</b>.
+<!---->J’ai <b>actuellement</b> un ou des signes qui peuvent évoquer la Covid comme <b>la fièvre, une toux ou des difficultés à respirer, des maux de tête ou une diminution de l’odorat et du goût</b>.
 
 ---
 
-<!---->Cette personne a un ou des <b>signes</b> (fièvre, toux ou difficultés à respirer, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>actuellement</b>.
+<!---->Cette personne a <b>actuellement</b> un ou des signes qui peuvent évoquer la Covid <b>la fièvre, une toux ou des difficultés à respirer, des maux de tête ou une diminution de l’odorat et du goût</b> .
 
 
 
@@ -646,11 +713,11 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_contact_à_risque_libellé.md](question_symptômes_contact_à_risque_libellé.md)
 
-<!---->J’ai passé du temps avec une personne <b>testée positive au COVID</b> dans les <b>7 derniers jours</b>, sans protection (distance de plus d’un mètre, masque porté par moi et par la personne COVID confirmée)<sup>*</sup>
+<!---->J’ai passé du temps avec une personne <b>testée positive à la Covid</b> dans les <b>7 derniers jours</b>, sans protection (distance de plus d’un mètre, masque porté par moi et par la personne Covid confirmée)<sup>*</sup>
 
 ---
 
-<!---->Il ou elle a passé du temps avec une personne <b>testée positive au COVID</b> dans les <b>7 derniers jours</b>, sans protection (distance de plus d’un mètre, masque porté par lui ou elle et par la personne COVID confirmée)<sup>*</sup>
+<!---->Il ou elle a passé du temps avec une personne <b>testée positive à la Covid</b> dans les <b>7 derniers jours</b>, sans protection (distance de plus d’un mètre, masque porté par lui ou elle et par la personne Covid confirmée)<sup>*</sup>
 
 
 
@@ -676,11 +743,11 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_contact_à_risque_stop_covid_libellé.md](question_symptômes_contact_à_risque_stop_covid_libellé.md)
 
-<!---->J’ai été informé par l’application StopCovid que j’ai été en contact avec une personne testée positive au Covid-19
+<!---->J’ai été informé par l’application StopCovid que j’ai été en contact avec une personne testée positive à la Covid
 
 ---
 
-<!---->Il ou elle a été informé par l’application StopCovid d’avoir été en contact avec une personne testée positive au Covid-19
+<!---->Il ou elle a été informé par l’application StopCovid d’avoir été en contact avec une personne testée positive à la Covid
 
 
 
@@ -696,11 +763,11 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_passés_libellé.md](question_symptômes_passés_libellé.md)
 
-<!---->J’ai eu des <b>signes</b> (fièvre, toux ou difficultés à respirer, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>dans les 7 derniers jours</b>.
+<!---->J’ai eu des <b>signes</b> (fièvre, toux ou difficultés à respirer, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer la Covid <b>dans les 7 derniers jours</b>.
 
 ---
 
-<!---->Cette personne a eu des <b>signes</b> (fièvre, toux ou difficultés à respirer, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer le COVID <b>dans les 7 derniers jours</b>.
+<!---->Cette personne a eu des <b>signes</b> (fièvre, toux ou difficultés à respirer, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer la Covid <b>dans les 7 derniers jours</b>.
 
 
 

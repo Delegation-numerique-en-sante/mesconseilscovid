@@ -25,15 +25,17 @@ export async function waitForPlausibleTrackingEvents(page, names) {
 
 export async function remplirQuestionnaire(page, choix) {
     await remplirSymptomesActuels(page, choix.symptomesActuels)
-    if (choix.symptomesActuels.length === 0) {
+    if (choix.symptomesActuels.length) {
+        await remplirDebutSymptomes(page, choix.debutSymptomes)
+    } else {
         await remplirSymptomesPasses(page, choix.symptomesPasses)
-        if (choix.symptomesPasses === false) {
-            await remplirContactsARisque(page)
+        if (choix.symptomesPasses) {
+            await remplirDebutSymptomes(page, choix.debutSymptomes)
+        } else {
+            await remplirContactsARisque(page, choix.contactARisque)
         }
     }
-    if (choix.symptomesActuels.length !== 0 || choix.symptomesPasses === true) {
-        return
-    }
+    await remplirDepistage(page, choix.depistage, choix.depistageResultat)
     await remplirDepartement(page, choix.departement)
     await remplirFoyer(page, choix.enfants)
     await remplirAntecedents(page)
@@ -105,6 +107,30 @@ async function remplirActivite(page, activitePro) {
     await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#conseils' })])
 }
 
+async function remplirDepistage(page, depistage, resultat) {
+    let text
+
+    if (depistage) {
+        let checkbox_label = await page.waitForSelector('#page label[for="depistage"]')
+        await checkbox_label.click()
+
+        let radio_label = await page.waitForSelector(
+            `#page label[for="depistage_resultat_${resultat}"]`
+        )
+        await radio_label.click()
+
+        text = '"Continuer"'
+    } else {
+        text = '/.* pas passé de test/'
+    }
+
+    let bouton = await page.waitForSelector(`#page >> text=${text}`)
+    await Promise.all([
+        bouton.click(),
+        page.waitForNavigation({ url: `**/#residence` }),
+    ])
+}
+
 async function remplirSymptomesActuels(page, symptomesActuels) {
     let text
     let nextPage
@@ -121,7 +147,15 @@ async function remplirSymptomesActuels(page, symptomesActuels) {
             await label.click()
         })
         text = '"Continuer"'
-        nextPage = 'suividate'
+        if (
+            symptomesActuels &&
+            symptomesActuels.length === 1 &&
+            symptomesActuels[0] === 'autre'
+        ) {
+            nextPage = 'symptomespasses'
+        } else {
+            nextPage = 'debutsymptomes'
+        }
     } else {
         text = '/.* pas de symptômes actuellement/'
         nextPage = 'symptomespasses'
@@ -143,7 +177,7 @@ async function remplirSymptomesPasses(page, symptomesPasses) {
         let label = await page.waitForSelector('#page label[for="symptomes_passes"]')
         await label.click()
         text = '"Continuer"'
-        nextPage = 'conseils'
+        nextPage = 'debutsymptomes'
     } else {
         text = '/.* pas eu de symptômes dans les 7 derniers jours/' // &nbsp; après le 7
         nextPage = 'contactarisque'
@@ -155,12 +189,40 @@ async function remplirSymptomesPasses(page, symptomesPasses) {
     ])
 }
 
-async function remplirContactsARisque(page) {
-    // TODO: cocher la case
+async function remplirContactsARisque(page, contactARisque) {
+    let text
+
+    if (contactARisque.length > 0) {
+        // Je n’arrive pas à cocher la case directement, alors je clique sur le label
+        let label = await page.waitForSelector('#page label[for="contact_a_risque"]')
+        await label.click()
+
+        contactARisque.forEach(async (nom) => {
+            let label = await page.waitForSelector(
+                `#page label[for="contact_a_risque_${nom}"]`
+            )
+            await label.click()
+        })
+        text = '"Continuer"'
+    } else {
+        text = '/.* pas eu de contact récents/'
+    }
+
+    let bouton = await page.waitForSelector(`#page >> text=${text}`)
+    await Promise.all([
+        bouton.click(),
+        page.waitForNavigation({ url: `**/#depistage` }),
+    ])
+}
+
+async function remplirDebutSymptomes(page, date) {
+    let label = await page.waitForSelector(`#page label[for="debut_symptomes_${date}"]`)
+    await label.click()
+
     let bouton = await page.waitForSelector('#page >> text="Continuer"')
     await Promise.all([
         bouton.click(),
-        page.waitForNavigation({ url: '**/#residence' }),
+        page.waitForNavigation({ url: `**/#depistage` }),
     ])
 }
 

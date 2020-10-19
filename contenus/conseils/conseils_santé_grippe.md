@@ -1,0 +1,1 @@
+<span class="nouveau">nouveau</span> Devant le risque de complication chez les personnes malades ou fragiles, il est important de **se protéger et protéger les autres en se faisant vacciner contre la grippe**. Vous pouvez réaliser ce vaccin dès maintenant, sans prescription médicale, auprès de votre médecin ou de votre pharmacien.

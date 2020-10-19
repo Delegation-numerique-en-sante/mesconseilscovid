@@ -1,6 +1,6 @@
 import { format } from 'timeago.js'
 
-import { joursAvant } from './utils.js'
+import { joursAvant, joursApres } from './utils.js'
 import { createElementFromHTML, safeHtml } from './affichage.js'
 import AlgorithmeSuivi from './algorithme/suivi.js'
 
@@ -27,6 +27,17 @@ export default class Profil {
     set symptomes_start_date(date) {
         // Turn the date into a readable string.
         this._symptomes_start_date =
+            typeof date !== 'undefined' ? date.toJSON() : undefined
+    }
+
+    get depistage_start_date() {
+        if (typeof this._depistage_start_date === 'undefined') return undefined
+        return new Date(this._depistage_start_date)
+    }
+
+    set depistage_start_date(date) {
+        // Turn the date into a readable string.
+        this._depistage_start_date =
             typeof date !== 'undefined' ? date.toJSON() : undefined
     }
 
@@ -98,6 +109,10 @@ export default class Profil {
         this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_autre = undefined
 
+        this.depistage = undefined
+        this.depistage_resultat = undefined
+        this._depistage_start_date = undefined
+
         this.suivi_active = false
         this.resetSuivi()
 
@@ -156,6 +171,10 @@ export default class Profil {
         this.contact_a_risque_stop_covid = data['contact_a_risque_stop_covid']
         this.contact_a_risque_autre = data['contact_a_risque_autre']
 
+        this.depistage = data['depistage']
+        this.depistage_resultat = data['depistage_resultat']
+        this._depistage_start_date = data['_depistage_start_date']
+
         this._suivi_start_date = data['_suivi_start_date']
         this._symptomes_start_date = data['_symptomes_start_date']
         this._deconfinement_date = data['_deconfinement_date']
@@ -164,6 +183,107 @@ export default class Profil {
 
         this.fillQuestionnaireStarted(data['questionnaire_started'])
         this.fillQuestionnaireCompleted(data['questionnaire_completed'])
+    }
+
+    fillTestData(depistage, symptomes, personneFragile, foyerFragile) {
+        let data = {
+            symptomes_actuels: false,
+            symptomes_actuels_temperature: false,
+            symptomes_actuels_temperature_inconnue: false,
+            symptomes_actuels_toux: false,
+            symptomes_actuels_odorat: false,
+            symptomes_actuels_douleurs: false,
+            symptomes_actuels_diarrhee: false,
+            symptomes_actuels_fatigue: false,
+            symptomes_actuels_alimentation: false,
+            symptomes_actuels_souffle: false,
+            symptomes_actuels_autre: false,
+            symptomes_passes: false,
+            contact_a_risque: false,
+            contact_a_risque_meme_lieu_de_vie: false,
+            contact_a_risque_contact_direct: false,
+            contact_a_risque_actes: false,
+            contact_a_risque_espace_confine: false,
+            contact_a_risque_meme_classe: false,
+            contact_a_risque_stop_covid: false,
+            contact_a_risque_autre: false,
+            depistage: false,
+            depistage_resultat: '',
+            departement: '34',
+            activite_pro: false,
+            activite_pro_public: false,
+            activite_pro_sante: false,
+            activite_pro_liberal: false,
+            foyer_enfants: false,
+            foyer_fragile: false,
+            age: '42',
+            grossesse_3e_trimestre: false,
+            poids: '70',
+            taille: '178',
+            antecedent_cardio: false,
+            antecedent_diabete: false,
+            antecedent_respi: false,
+            antecedent_dialyse: false,
+            antecedent_cancer: false,
+            antecedent_immunodep: false,
+            antecedent_cirrhose: false,
+            antecedent_drepano: false,
+            antecedent_chronique_autre: false,
+        }
+
+        if (depistage == 'Positif') {
+            data.depistage = true
+            data.depistage_resultat = 'positif'
+            data._depistage_start_date = new Date().toJSON()
+        } else if (depistage == 'Négatif') {
+            data.depistage = true
+            data.depistage_resultat = 'negatif'
+            data._depistage_start_date = new Date().toJSON()
+        } else if (depistage == 'En attente') {
+            data.depistage = true
+            data.depistage_resultat = 'en_attente'
+            data._depistage_start_date = new Date().toJSON()
+        } else if (depistage == 'Pas testé') {
+            // valeurs par défaut
+        } else {
+            console.error('Situation de dépistage inconnue')
+        }
+
+        if (symptomes === 'Symptômes actuels graves') {
+            data.symptomes_actuels = true
+            data.symptomes_actuels_souffle = true
+            data._symptomes_start_date = joursAvant(3).toJSON()
+        } else if (symptomes === 'Symptômes actuels') {
+            data.symptomes_actuels = true
+            data.symptomes_actuels_diarrhee = true
+            data._symptomes_start_date = joursAvant(3).toJSON()
+        } else if (symptomes === 'Symptômes actuels non évocateurs') {
+            data.symptomes_actuels = true
+            data.symptomes_actuels_autre = true
+        } else if (symptomes === 'Symptômes passés') {
+            data.symptomes_passes = true
+            data._symptomes_start_date = joursAvant(3).toJSON()
+        } else if (symptomes === 'Contact à risque') {
+            data.contact_a_risque = true
+            data.contact_a_risque_meme_lieu_de_vie = true
+        } else if (symptomes === 'Contact pas vraiment à risque') {
+            data.contact_a_risque = true
+            data.contact_a_risque_autre = true
+        } else if (symptomes === 'Rien de tout ça') {
+            // valeurs par défaut
+        } else {
+            console.error('Situation symptomatique inconnue')
+        }
+
+        if (personneFragile) {
+            data.age = 70
+        }
+
+        if (foyerFragile) {
+            data.foyer_fragile = true
+        }
+
+        return this.fillData(data)
     }
 
     fillQuestionnaireStarted(value) {
@@ -227,6 +347,9 @@ export default class Profil {
             contact_a_risque_meme_classe: this.contact_a_risque_meme_classe,
             contact_a_risque_stop_covid: this.contact_a_risque_stop_covid,
             contact_a_risque_autre: this.contact_a_risque_autre,
+            depistage: this.depistage,
+            depistage_resultat: this.depistage_resultat,
+            _depistage_start_date: this._depistage_start_date,
             suivi_active: this.suivi_active,
             _suivi_start_date: this._suivi_start_date,
             _symptomes_start_date: this._symptomes_start_date,
@@ -261,7 +384,8 @@ export default class Profil {
             typeof this.antecedent_chronique_autre === 'undefined' &&
             typeof this.symptomes_actuels === 'undefined' &&
             typeof this.symptomes_passes === 'undefined' &&
-            typeof this.contact_a_risque === 'undefined'
+            typeof this.contact_a_risque === 'undefined' &&
+            typeof this.depistage == 'undefined'
         )
     }
 
@@ -315,6 +439,10 @@ export default class Profil {
         return typeof this.contact_a_risque !== 'undefined'
     }
 
+    isDepistageComplete() {
+        return typeof this.depistage !== 'undefined'
+    }
+
     isComplete() {
         return (
             this.isResidenceComplete() &&
@@ -324,12 +452,17 @@ export default class Profil {
             this.isActiviteProComplete() &&
             this.isSymptomesActuelsComplete() &&
             this.isSymptomesPassesComplete() &&
-            this.isContactARisqueComplete()
+            this.isContactARisqueComplete() &&
+            this.isDepistageComplete()
         )
     }
 
     hasSymptomesActuelsReconnus() {
         return this.symptomes_actuels && !this.symptomes_actuels_autre
+    }
+
+    hasContactARisqueReconnus() {
+        return this.contact_a_risque && !this.contact_a_risque_autre
     }
 
     hasSuiviStartDate() {
@@ -353,7 +486,7 @@ export default class Profil {
     }
 
     dernierEtat() {
-        return this.suivi.slice(-1)[0]
+        return this.hasHistorique() ? this.suivi.slice(-1)[0] : {}
     }
 
     suiviDerniersJours(delta) {
@@ -365,6 +498,60 @@ export default class Profil {
             const date = new Date(etat.date)
             return date > strictementApres && date <= avant
         })
+    }
+
+    requiertSuivi() {
+        return (
+            this.isDepistageComplete() &&
+            (this.estPositif() ||
+                this.estEnAttente() ||
+                (this.sansDepistage() && this.hasSymptomesActuelsReconnus()) ||
+                (this.sansDepistage() && this.symptomes_passes))
+        )
+    }
+
+    depistageObsolete() {
+        // TODISCUSS: reset depistage data if true?
+        const delta = 7
+        const now = new Date()
+        const finDeValidite = joursApres(delta, this.depistage_start_date)
+        return now > finDeValidite
+    }
+
+    estPositif() {
+        return (
+            this.depistage === true &&
+            this.depistage_resultat === 'positif' &&
+            !this.depistageObsolete()
+        )
+    }
+
+    estNegatif() {
+        return (
+            this.depistage === true &&
+            this.depistage_resultat === 'negatif' &&
+            !this.depistageObsolete()
+        )
+    }
+
+    estEnAttente() {
+        return (
+            this.depistage === true &&
+            this.depistage_resultat === 'en_attente' &&
+            !this.depistageObsolete()
+        )
+    }
+
+    sansDepistage() {
+        return this.depistage === false
+    }
+
+    estNegatifSymptomatique() {
+        return this.hasSymptomesActuelsReconnus() && this.estNegatif()
+    }
+
+    estPositifAsymptomatique() {
+        return this.symptomes_actuels === false && this.estPositif()
     }
 
     estMonProfil() {
@@ -383,7 +570,7 @@ export default class Profil {
         const possessifMasculinSingulier = this.estMonProfil() ? 'mon' : 'son'
         const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
         var mainButton = ''
-        if (this.isComplete() || this.hasSymptomesActuelsReconnus()) {
+        if (this.isComplete() || this.suivi_active) {
             if (this.suivi_active) {
                 const verbe =
                     this.hasSuiviStartDate() && this.hasHistorique()
@@ -435,7 +622,9 @@ export default class Profil {
         const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
         const label =
             this.hasSuiviStartDate() && this.hasHistorique() ? 'Continuer' : 'Démarrer'
-        const nextPage = this.hasSymptomesStartDate() ? 'suivisymptomes' : 'suividate'
+        const nextPage = this.hasSymptomesStartDate()
+            ? 'suivisymptomes'
+            : 'debutsymptomes'
         const suiviButton = safeHtml`
             <a class="button button-full-width conseils-link"
                 data-set-profil="${this.nom}" href="#${nextPage}"
@@ -478,7 +667,7 @@ export default class Profil {
     renderDebutSymptomes() {
         return `<p>Début des symptômes :
             ${this.symptomes_start_date.toLocaleString()}
-            (<a href="#suividate">modifier</a>)
+            (<a href="#debutsymptomes">modifier</a>)
         </p>`
     }
 

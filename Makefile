@@ -59,7 +59,7 @@ endif
 test-feedback:
 	tox -c feedback/tox.ini
 
-check: check-links check-versions check-documentation check-service-worker
+check: check-links check-versions check-orphelins check-service-worker
 
 check-links:  # Check that links to external pages are still valid.
 	python3 check.py links --timeout 30 --delay 0.2
@@ -67,8 +67,8 @@ check-links:  # Check that links to external pages are still valid.
 check-versions:  # Check that current version matches service-worker one.
 	python3 check.py versions
 
-check-documentation:  # Check that all markdown files are documented.
-	python3 check.py documentation
+check-orphelins:  # Check that all markdown files are in use in template.
+	python3 check.py orphelins
 
 check-service-worker:  # Check that all files in use are listed in service-worker.js.
 	python3 check.py service_worker
@@ -98,7 +98,7 @@ prefectures:  ## Generate data related to prefectures.
 dev:  ## Auto-rebuild and serve the static website with Parcel.
 	npm run-script build-dev
 
-pre-commit: pretty lint test-unit build check-versions check-documentation check-service-worker  ## Interesting prior to commit/push.
+pre-commit: pretty lint test-unit build check-versions check-orphelins check-service-worker  ## Interesting prior to commit/push.
 
 prod: clean install lint pretty test check  ## Make sure everything is clean prior to deploy.
 	# Note: `test` dependency will actually generate the `build`.

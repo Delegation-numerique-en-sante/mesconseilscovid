@@ -1,0 +1,1 @@
+* Maladies chroniques : [Évaluer ses risques avec l’équipe de soins et adapter son mode de vie](https://www.has-sante.fr/jcms/p_3189294/fr/covid-19-evaluer-ses-risques-avec-l-equipe-de-soins-et-adapter-son-mode-de-vie)

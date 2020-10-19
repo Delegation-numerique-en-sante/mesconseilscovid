@@ -1,9 +1,0 @@
-Nous vous conseillons de **contacter votre médecin généraliste**.
-
-En attendant, il vous est conseillé de :
-
-* Vous **maintenir en isolement** ainsi que votre foyer, y compris les enfants en âge d’aller à la crèche ou à l’école.
-
-* Appliquer **les gestes barrières**.
-
-* Surveiller l’apparition de **symptômes** et contacter de nouveau votre médecin si des symptômes apparaissent.

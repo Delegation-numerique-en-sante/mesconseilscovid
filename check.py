@@ -68,6 +68,7 @@ def service_worker():
         "template.html",
         "index.html",
         "illustrations/mesconseilscovid.png",
+        "illustrations/_new",
         "browserconfig.xml",
     }
     REQUIRED_FILES = {"/", "style.css", "scripts/main.js", "favicon.ico"}
@@ -144,16 +145,16 @@ def service_worker():
 
 
 @cli
-def documentation():
-    readme = open(HERE / "contenus" / "README.md").read()
-    for folder in each_folder_from(HERE / "contenus"):
+def orphelins():
+    template = (HERE / "src" / "template.html").read_text()
+    for folder in each_folder_from(HERE / "contenus", exclude=["nouveaux_contenus"]):
         for file_path, filename in each_file_from(
             folder, file_name="*.md", exclude=["README.md"]
         ):
             if filename.startswith("meta_") or filename.startswith("config_"):
                 continue
-            if filename not in readme:
-                raise Exception(f"Documentation missing for {filename}")
+            if filename[: -len(".md")] not in template:
+                raise Exception(f"Reference missing for {filename}")
 
 
 if __name__ == "__main__":

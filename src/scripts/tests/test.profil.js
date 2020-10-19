@@ -52,6 +52,9 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: undefined,
             contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
+            depistage: undefined,
+            depistage_resultat: undefined,
+            _depistage_start_date: undefined,
             suivi_active: false,
             _suivi_start_date: undefined,
             _symptomes_start_date: undefined,
@@ -166,6 +169,9 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
+            depistage: true,
+            depistage_resultat: 'positif',
+            _depistage_start_date: new Date().toJSON(),
             suivi_active: true,
             _suivi_start_date: '2020-07-09T14:03:41.000Z',
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
@@ -178,6 +184,7 @@ describe('Profil', function () {
         assert.deepEqual(profil.getData(), data)
         assert.isTrue(profil.isComplete())
         assert.isFalse(profil.isEmpty())
+        assert.isTrue(profil.estPositifAsymptomatique())
     })
 
     it('Le questionnaire peut être complètement rempli mais âge < 15', function () {
@@ -223,6 +230,9 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
+            depistage: true,
+            depistage_resultat: 'positif',
+            _depistage_start_date: '2020-07-09T14:03:41.000Z',
             suivi_active: true,
             _suivi_start_date: '2020-07-09T14:03:41.000Z',
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
@@ -279,6 +289,9 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
+            depistage: true,
+            depistage_resultat: 'positif',
+            _depistage_start_date: '2020-07-09T14:03:41.000Z',
             suivi_active: true,
             _suivi_start_date: '2020-07-09T14:03:41.000Z',
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
@@ -329,6 +342,9 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: undefined,
             contact_a_risque_stop_covid: undefined,
             contact_a_risque_autre: undefined,
+            depistage: undefined,
+            depistage_resultat: undefined,
+            _depistage_start_date: undefined,
             suivi_active: false,
             _suivi_start_date: undefined,
             _symptomes_start_date: undefined,
@@ -383,6 +399,9 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
+            depistage: true,
+            depistage_resultat: 'positif',
+            _depistage_start_date: '2020-07-09T14:03:41.000Z',
             suivi_active: true,
             _suivi_start_date: '2020-07-09T14:03:41.000Z',
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
@@ -433,6 +452,9 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
+            depistage: true,
+            depistage_resultat: 'positif',
+            _depistage_start_date: '2020-07-09T14:03:41.000Z',
             suivi_active: true,
             _suivi_start_date: undefined,
             _symptomes_start_date: undefined,
@@ -517,7 +539,9 @@ describe('Profil', function () {
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: true,
+            depistage: false,
         })
         assert.isTrue(profil.questionnaire_completed)
+        assert.isFalse(profil.estPositifAsymptomatique())
     })
 })

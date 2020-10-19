@@ -1,1 +1,1 @@
-Poursuivez votre auto-suivi à la maison comme entendu avec votre médecin.
+Continuez à suivre l’évolution de vos symptômes pendant votre isolement.

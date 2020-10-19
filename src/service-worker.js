@@ -2,7 +2,7 @@
 
 /* Implementation of the network-or-cache pattern:
 https://serviceworke.rs/strategy-network-or-cache.html */
-const CACHE_NAME = 'network-or-cache-2020-10-05'
+const CACHE_NAME = 'network-or-cache-2020-10-16'
 const CACHE_FILES = [
     '/',
     'robots.txt',
@@ -41,12 +41,18 @@ const CACHE_FILES = [
     'icone_fiche.svg',
     'icone_infographie.svg',
     'illustrations/accueil.svg',
-    'illustrations/nom.svg',
     'illustrations/activitepro.svg',
     'illustrations/antecedents.svg',
     'illustrations/caracteristiques.svg',
+    'illustrations/contact_medecin.svg',
     'illustrations/contactarisque.svg',
+    'illustrations/covid.svg',
+    'illustrations/depistage.svg',
     'illustrations/foyer.svg',
+    'illustrations/gestesbarrieres.svg',
+    'illustrations/grossesse.svg',
+    'illustrations/isolement.svg',
+    'illustrations/nom.svg',
     'illustrations/pediatrieecole.svg',
     'illustrations/pediatriegeneral.svg',
     'illustrations/pediatriemedical.svg',

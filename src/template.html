@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mes conseils Covid — Des conseils personnalisés pour agir contre le virus</title>
+    <title>Mes Conseils Covid — Des conseils personnalisés pour agir contre le virus</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="prefetch" as="fetch" href="departements-1000m.geojson" crossorigin>
     <link rel="prefetch" as="fetch" href="version.json" crossorigin>
@@ -21,7 +21,7 @@
     <meta name="msapplication-TileColor" content="#000091">
     <meta name="theme-color" content="#ffffff">
     <meta name="referrer" content="none">
-    <meta property="og:title" content="Mes conseils Covid">
+    <meta property="og:title" content="Mes Conseils Covid">
     <meta property="og:description" content="Des conseils personnalisés pour agir contre le virus">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/illustrations/mesconseilscovid.png">
@@ -489,6 +489,39 @@
     </form>
 </section>
 
+<section id="depistage" hidden>
+    <form id="depistage-form" class="block">
+        <fieldset>
+            <legend><span class="progress"></span>{{ question_dépistage_titre|me_or_them }}</legend>
+            <div>
+                <input id="depistage" type="checkbox" name="depistage">
+                <label for="depistage">
+                    <span>{{ question_dépistage_libellé|me_or_them }}</span>
+                </label>
+                <div class="details">{{ question_dépistage_aide }}</div>
+            </div>
+            <div class="secondary disabled required" role="radiogroup">
+                <div>
+                    <input id="depistage_resultat_positif" type="radio" required name="depistage_resultat" value="positif">
+                    <label for="depistage_resultat_positif"><span>{{ question_dépistage_positif_libellé }}</span></label>
+                </div>
+                <div>
+                    <input id="depistage_resultat_negatif" type="radio" required name="depistage_resultat" value="negatif">
+                    <label for="depistage_resultat_negatif"><span>{{ question_dépistage_négatif_libellé }}</span></label>
+                </div>
+                <div>
+                    <input id="depistage_resultat_en_attente" type="radio" required name="depistage_resultat" value="en_attente">
+                    <label for="depistage_resultat_en_attente"><span>{{ question_dépistage_attente_libellé|me_or_them }}</span></label>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <input type="submit" class="button" value="Continuer">
+            <a href="#" class="back-button button-outline">Retour</a>
+        </div>
+    </form>
+</section>
+
 <section id="symptomespasses" hidden>
     <form id="symptomes-passes-form" class="block">
         <fieldset>
@@ -521,6 +554,9 @@
                         {{ question_symptômes_contact_à_risque_libellé|me_or_them }}
                     </span>
                 </label>
+                <div class="details">
+                    {{ question_symptômes_contact_à_risque_aide }}
+                </div>
             </div>
             <div class="secondary disabled">
                 <input id="contact_a_risque_meme_lieu_de_vie" type="checkbox" name="contact_a_risque_meme_lieu_de_vie" disabled>
@@ -566,9 +602,6 @@
                     <span>{{ question_symptômes_contact_à_risque_autre_libellé|me_or_them }}</span>
                 </label>
             </div>
-            <div class="details">
-                {{ question_symptômes_contact_à_risque_aide }}
-            </div>
         </fieldset>
         <div class="form-controls">
             <input type="submit" class="button" value="Continuer">
@@ -580,312 +613,398 @@
 <section id="conseils" hidden>
     <div>
         <div id="conseils-block" class="block">
-            <h1 id="conseils-block-titre" hidden></h1>
+            <h1 id="conseils-block-titre"></h1>
 
-            <div id="deconfinement" hidden>
-                {{ suivi_déconfinement }}
+            <div id="conseils-suivi-ou-statut">
+                <div id="deconfinement" hidden>
+                    {{ suivi_déconfinement }}
+                </div>
+
+                <div id="suivi" hidden>
+                    <div id="suivi-gravite-3" class="statut suivi-gravite-3" hidden>
+                        {{ suivi_gravité_3 }}
+                    </div>
+                    <div id="suivi-gravite-2" class="statut suivi-gravite-2" hidden>
+                        {{ suivi_gravité_2 }}
+                    </div>
+                    <div id="suivi-gravite-1" class="statut suivi-gravite-1" hidden>
+                        {{ suivi_gravité_1 }}
+                    </div>
+                    <div id="suivi-gravite-0" class="statut suivi-gravite-0" hidden>
+                        {{ suivi_gravité_0 }}
+                    </div>
+                </div>
+
+                <div id="conseils-statut">
+                    <div id="statut-asymptomatique" class="statut statut-asymptomatique" hidden>
+                        {{ statut_asymptomatique }}
+                    </div>
+                    <div id="statut-contact-a-risque-avec-test" class="statut statut-contact-a-risque-avec-test" hidden>
+                        {{ statut_contact_a_risque_avec_test }}
+                    </div>
+                    <div id="statut-contact-a-risque-sans-test" class="statut statut-contact-a-risque-sans-test" hidden>
+                        {{ statut_contact_a_risque_sans_test }}
+                    </div>
+                    <div id="statut-en-attente" class="statut statut-en-attente" hidden>
+                        {{ statut_en_attente }}
+                    </div>
+                    <div id="statut-foyer-fragile" class="statut statut-foyer-fragile" hidden>
+                        {{ statut_foyer_fragile }}
+                    </div>
+                    <div id="statut-personne-fragile" class="statut statut-personne-fragile" hidden>
+                        {{ statut_personne_fragile }}
+                    </div>
+                    <div id="statut-peu-de-risques" class="statut statut-peu-de-risques" hidden>
+                        {{ statut_peu_de_risques }}
+                    </div>
+                    <div id="statut-positif-symptomatique-urgent" class="statut statut-positif-symptomatique-urgent" hidden>
+                        {{ statut_positif_symptomatique_urgent }}
+                    </div>
+                    <div id="statut-symptomatique-en-attente" class="statut statut-symptomatique-en-attente" hidden>
+                        {{ statut_symptomatique_en_attente }}
+                    </div>
+                    <div id="statut-symptomatique-negatif" class="statut statut-symptomatique-negatif" hidden>
+                        {{ statut_symptomatique_négatif }}
+                    </div>
+                    <div id="statut-symptomatique-positif" class="statut statut-symptomatique-positif" hidden>
+                        {{ statut_symptomatique_positif }}
+                    </div>
+                    <div id="statut-symptomatique-sans-test" class="statut statut-symptomatique-sans-test" hidden>
+                        {{ statut_symptomatique_sans_test }}
+                    </div>
+                    <div id="statut-symptomatique-urgent" class="statut statut-symptomatique-urgent" hidden>
+                        {{ statut_symptomatique_urgent }}
+                    </div>
+                </div>
             </div>
 
-            <div id="suivi" hidden>
-                <h2>L’évolution de vos symptômes</h2>
-                <div id="suivi-gravite-3" class="statut suivi-gravite-3" hidden>
-                    {{ suivi_gravité_3 }}
-                </div>
-                <div id="suivi-gravite-2" class="statut suivi-gravite-2" hidden>
-                    {{ suivi_gravité_2 }}
-                </div>
-                <div id="suivi-gravite-1" class="statut suivi-gravite-1" hidden>
-                    {{ suivi_gravité_1 }}
-                </div>
-                <div id="suivi-gravite-0" class="statut suivi-gravite-0" hidden>
-                    {{ suivi_gravité_0 }}
-                </div>
-                <ul>
-                    <li id="suivi-psy-2" hidden>{{ suivi_psy_2 }}</li>
-                    <li id="suivi-psy-1" hidden>{{ suivi_psy_1 }}</li>
-                    <li>{{ conseils_autosuivi_régularité|me_or_them }}</li>
-                    <li>{{ conseils_autosuivi_historique|me_or_them }}</li>
-                </ul>
-            </div>
-
-            <div id="conseils-statut">
-                <h2>En résumé</h2>
-                <div id="statut-symptomatique-urgent" class="statut statut-symptomatique-urgent" hidden>
-                    {{ statut_symptomatique_urgent }}
-                </div>
-                <div id="statut-symptomatique" class="statut statut-symptomatique" hidden>
-                    {{ statut_symptomatique }}
-                </div>
-                <div id="statut-risque-eleve" class="statut statut-risque-eleve" hidden>
-                    {{ statut_risque_élevé_contamination }}
-                </div>
-                <div id="statut-personne-fragile" class="statut statut-personne-fragile" hidden>
-                    {{ statut_personne_fragile }}
-                </div>
-                <div id="statut-foyer-fragile" class="statut statut-foyer-fragile" hidden>
-                    {{ statut_foyer_fragile }}
-                </div>
-                <div id="statut-peu-de-risques" class="statut statut-peu-de-risques" hidden>
-                    {{ statut_peu_de_risques }}
-                </div>
-            </div>
-
-            <h2 class="with-illustration">Vos conseils personnalisés</h2>
-
-            <div id="conseils-personnels-symptomes-actuels" class="conseils" hidden>
+            <div id="conseils-personnels" class="conseils">
                 <div class="reponse">
-                    <div id="reponse-symptomes-actuels-caracteristiques" hidden>
-                        {{ réponse_caractéristiques_à_risques }}
+                    <div id="reponse-depistage-positif" hidden>
+                        {{ reponse_depistage_positif }}
                     </div>
-                    <div id="reponse-symptomes-actuels-antecedents" hidden>
-                        {{ réponse_antécédents }}
+                    <div id="reponse-depistage-negatif" hidden>
+                        {{ reponse_depistage_negatif }}
                     </div>
-                    <div id="reponse-symptomes-actuels-symptomesactuelsreconnus" hidden>
-                        {{ réponse_symptômes_actuels_reconnus }}
+                    <div id="reponse-depistage-en-attente" hidden>
+                        {{ reponse_depistage_en_attente }}
                     </div>
-                </div>
-                <div id="conseils-personnels-symptomes-actuels-gravite1" class="conseil conseil-orange" hidden>
-                    {{ conseils_symptômes_actuels_gravité1 }}
-                </div>
-                <div id="conseils-personnels-symptomes-actuels-gravite2" class="conseil conseil-orange" hidden>
-                    {{ conseils_symptômes_actuels_gravité2 }}
-                </div>
-                <div id="conseils-personnels-symptomes-actuels-gravite3" class="conseil conseil-orange" hidden>
-                    {{ conseils_symptômes_actuels_gravité3 }}
-                </div>
-                <div id="conseils-personnels-symptomes-actuels-gravite4" class="conseil conseil-orange" hidden>
-                    {{ conseils_symptômes_actuels_gravité4 }}
-                </div>
-                <div id="conseils-personnels-symptomes-actuels-suivi" class="conseil" hidden>
-                    {{ conseils_symptômes_actuels_gravité4 }}{# réutilisation du même texte #}
-                </div>
-                <div class="conseil conseil-autosuivi">
-                    <p>
-                        {{ conseils_symptômes_actuels_autosuivi|me_or_them }}
-                    </p>
-                    <div class="form-controls">
-                        <div class="button-full-width">
-                            <a class="button button-full-width" href="#suiviintroduction">{{ conseils_symptômes_actuels_autosuivi_bouton|me_or_them }}</a>
-                        </div>
+                    <div id="reponse-depistage-sans" hidden>
+                        {{ reponse_depistage_sans }}
                     </div>
                 </div>
-                {{ conseils_isolement }}
-                {{ conseils_cartographie_dépistage }}
-                {{ conseils_symptômes_maux_de_tête }}
-                {{ conseils_symptômes_défaut }}
-            </div>
-
-            <div id="conseils-personnels-symptomes-passes" class="conseils" hidden>
-                <div id="conseils-personnels-symptomes-passes-sans-risques" hidden>
-                    <div class="conseil conseil-orange">
-                        {{ conseils_symptômes_passés_sans_risques }}
-                    </div>
-                    {{ conseils_symptômes_passés_sans_risques_info }}
-                </div>
-                <div id="conseils-personnels-symptomes-passes-avec-risques" hidden>
-                    <div class="conseil conseil-orange">
-                        {{ conseils_symptômes_passés_avec_risques }}
-                    </div>
-                    {{ conseils_symptômes_passés_avec_risques_info }}
-                </div>
-                <div id="conseils-symptomes-passes-default">
-                    {{ conseils_isolement }}
-                    {{ conseils_cartographie_dépistage }}
-                    {{ conseils_symptômes_défaut }}
-                </div>
-            </div>
-
-            <div id="conseils-personnels-contact-a-risque" class="conseils" hidden>
-                <div id="conseils-personnels-contact-a-risque-default" class="conseil conseil-orange" hidden>
-                    {{ conseils_contact_à_risque }}
+                <div id="conseils-personnels-contact-a-risque" class="conseil" hidden>
+                    {{ conseils_personnels_contact_à_risque }}
                 </div>
                 <div id="conseils-personnels-contact-a-risque-autre" class="conseil" hidden>
-                    {{ conseils_contact_à_risque_autre }}
+                    {{ conseils_personnels_contact_à_risque_autre }}
                 </div>
-                {{ conseils_contact_à_risque_info }}
-                {{ conseils_cartographie_dépistage }}
+                <div id="conseils-personnels-depistage-positif-asymptomatique" class="conseil" hidden>
+                    {{ conseils_personnels_depistage_positif_asymptomatique }}
+                </div>
+                <div id="conseils-personnels-depistage-positif-symptomatique" class="conseil" hidden>
+                    {{ conseils_personnels_depistage_positif_symptomatique }}
+                </div>
+                <div id="conseils-personnels-symptomes-actuels-en-attente" class="conseil" hidden>
+                    {{ conseils_personnels_symptômes_actuels_en_attente }}
+                </div>
+                <div id="conseils-personnels-symptomes-actuels-positif-critique" class="conseil conseil-orange" hidden>
+                    {{ conseils_personnels_symptômes_actuels_positif_critique }}
+                </div>
+                <div id="conseils-personnels-symptomes-actuels-sans-depistage" class="conseil" hidden>
+                    {{ conseils_personnels_symptômes_actuels_sans_depistage }}
+                </div>
+                <div id="conseils-personnels-symptomes-actuels-sans-depistage-critique" class="conseil conseil-orange" hidden>
+                    {{ conseils_personnels_symptômes_actuels_sans_depistage_critique }}
+                </div>
+                <div id="conseils-personnels-symptomes-passes-en-attente" class="conseil" hidden>
+                    {{ conseils_personnels_symptômes_passés_en_attente }}
+                </div>
+                <div id="conseils-personnels-symptomes-passes-positif" class="conseil" hidden>
+                    {{ conseils_personnels_symptômes_passés_positif }}
+                </div>
+                <div id="conseils-personnels-symptomes-passes-sans-depistage" class="conseil" hidden>
+                    {{ conseils_personnels_symptômes_passés_sans_depistage }}
+                </div>
+
+                <div class="conseil" id="suivi-psy-2" hidden>
+                    {{ suivi_psy_2 }}
+                </div>
+                <div class="conseil" id="suivi-psy-1" hidden>
+                    {{ suivi_psy_1 }}
+                </div>
             </div>
 
-            <div id="conseils-caracteristiques" class="conseils" hidden>
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Vos caractéristiques et antécédents
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                            </h3>
-                        </header>
-                    </summary>
+            <div id="conseils-blocs">
+                <div id="conseils-isolement" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    L’isolement
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        {{ conseils_isolement }}
+                    </details>
+                </div>
+
+                <div id="conseils-tests" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Les tests de dépistage
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        <div id="conseils-tests-resultats" hidden>
+                            {{ conseils_tests_résultats }}
+                        </div>
+                        <div id="conseils-tests-general" hidden>
+                            {{ conseils_tests }}
+                        </div>
+                    </details>
+                </div>
+
+                <div id="conseils-contact-a-risque" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Contact à risque
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        {{ conseils_contact_à_risque_info }}
+                    </details>
+                </div>
+
+                <div id="conseils-gestes-barrieres-masque" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Les gestes barrières &amp; le masque
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
                     <div class="reponse">
-                        <div id="reponse-caracteristiques-a-risques" hidden>
+                        <div id="reponse-gestes-barrieres-masque-caracteristiques-a-risques" hidden>
                             {{ réponse_caractéristiques_à_risques }}
                         </div>
-                        <div id="reponse-antecedents" hidden>
+                        <div id="reponse-gestes-barrieres-masque-antecedents" hidden>
                             {{ réponse_antécédents }}
                         </div>
                     </div>
-                    <div id="conseils-caracteristiques-antecedents" hidden>
-                        <div class="conseil">
-                            {{ conseils_caractéristiques_antécédents }}
-                        </div>
+                    <div id="conseils-gestes-barrieres-masque-general" hidden>
+                        {{ conseils_gestes_barrieres_masque_general }}
                     </div>
-                    <div id="conseils-caracteristiques-antecedents-activite-pro" hidden>
-                        <div class="conseil">
-                            {{ conseils_caractéristiques_antécédents_activité_pro }}
-                        </div>
+                    <div id="conseils-gestes-barrieres-masque-fragile" hidden>
+                        {{ conseils_gestes_barrieres_masque_fragile }}
                     </div>
-                    <div id="conseils-caracteristiques-antecedents-info-risque" hidden>
-                        {{ conseils_caractéristiques_antécédents_info_risque }}
-                    </div>
-                    <div id="conseils-caracteristiques-antecedents-femme-enceinte" hidden>
-                        {{ conseils_caractéristiques_antécédents_femme_enceinte }}
-                    </div>
-                    <div id="conseils-antecedents-chroniques-autres" hidden>
-                        <div class="conseil">
-                            {{ conseils_antécédents_chroniques_autres }}
-                        </div>
-                        {{ conseils_maladie_chronique_info }}
-                    </div>
-                </details>
-            </div>
+                </div>
 
-            <div id="conseils-foyer" class="conseils" hidden>
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Votre foyer
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                            </h3>
-                        </header>
-                    </summary>
-                    <div id="conseils-foyer-enfants" hidden>
+                <div id="conseils-covid" class="conseils">
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    La Covid
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        <div class="conseil">
+                            {{ conseils_covid_automédication }}
+                        </div>
+                        <div>
+                            {{ conseils_covid }}
+                        </div>
+                    </details>
+                </div>
+
+                <div id="conseils-grossesse" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Ma grossesse
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+
+                                </h3>
+                            </header>
+                        </summary>
+                        <div class="reponse">
+                            {{ réponse_grossesse }}
+                        </div>
+                        {{ conseils_grossesse }}
+                    </details>
+                </div>
+
+                <div id="conseils-sante" class="conseils">
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Ma santé
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+
+                                </h3>
+                            </header>
+                        </summary>
+                        <div class="reponse">
+                            <div id="reponse-sante-caracteristiques-a-risques" hidden>
+                                {{ réponse_caractéristiques_à_risques }}
+                            </div>
+                            <div id="reponse-sante-antecedents" hidden>
+                                {{ réponse_antécédents }}
+                            </div>
+                        </div>
+                        <div id="conseils-sante-grippe-fragile" class="conseil conseil-jaune" hidden>
+                            {{ conseils_santé_grippe_fragile }}
+                        </div>
+                        <div id="conseils-sante-grippe" class="conseil conseil" hidden>
+                            {{ conseils_santé_grippe }}
+                        </div>
+                        <div id="conseils-sante-historique-symptomes" class="conseil" hidden>
+                            <p>{{ conseils_autosuivi_historique|me_or_them }}</p>
+                        </div>
+                        <div id="conseils-sante-general" class="conseil" hidden>
+                            {{ conseils_santé }}
+                        </div>
+                        <div id="conseils-sante-personne-fragile" hidden>
+                            {{ conseils_santé_personne_fragile }}
+                        </div>
+                        <div id="conseils-sante-personne-fragile-symptomatique" hidden>
+                            {{ conseils_santé_personne_fragile_symptomatique }}
+                        </div>
+                        <div id="conseils-sante-maladie-chronique" hidden>
+                            {{ conseils_santé_maladie_chronique }}
+                        </div>
+                        {{ conseils_contacter_un_médecin }}
+                    </details>
+                </div>
+
+                <div id="conseils-foyer-enfants" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Les enfants de moins de 15 ans
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+
+                                </h3>
+                            </header>
+                        </summary>
                         <div class="reponse">
                             {{ réponse_foyer_enfants }}
                         </div>
-                        <div class="conseil">
-                            {{ conseils_foyer_enfants }}
-                        </div>
-                        {{ conseils_foyer_enfants_infos }}
+                        {{ conseils_enfants }}
+                    </details>
+                </div>
 
-                    </div>
-                    <div id="conseils-foyer-fragile" hidden>
-                        <div class="reponse">
-                            {{ réponse_foyer_fragile }}
+                <div id="conseils-foyer" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Mon foyer
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        <div id="conseils-foyer-fragile" hidden>
+                            <div class="reponse">
+                                {{ réponse_foyer_fragile }}
+                            </div>
+                            <div class="conseil">
+                                {{ conseils_foyer_fragile }}
+                            </div>
                         </div>
-                        <div class="conseil">
-                            {{ conseils_foyer_fragile }}
-                        </div>
-                        {{ conseils_foyer_fragile_accueil_enfant }}
-                    </div>
-                    <div id="conseils-foyer-enfants-fragile" hidden>
-                        <div class="reponse">
-                            {{ réponse_foyer_enfants_fragile }}
-                        </div>
-                        <div class="conseil">
-                            {{ conseils_foyer_fragile }}
-                        </div>
-                        <div class="conseil">
-                            {{ conseils_foyer_enfants_fragile }}
-                        </div>
-                        {{ conseils_foyer_enfants_infos }}
-                    </div>
-                </details>
-            </div>
+                    </details>
+                </div>
 
-            <div id="conseils-activite" class="conseils" hidden>
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Votre activité
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                            </h3>
-                        </header>
-                    </summary>
-                    <div class="reponse">
-                        <div id="reponse-activite-pro" hidden>
-                            {{ réponse_activité_pro }}
+                <div id="conseils-activite" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Mon activité
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        <div class="reponse">
+                            <div id="reponse-activite-pro" hidden>
+                                {{ réponse_activité_pro }}
+                            </div>
+                            <div id="reponse-activite-pro-antecedents" hidden>
+                                {{ réponse_antécédents }}
+                            </div>
+                            <div id="reponse-activite-pro-foyer-fragile" hidden>
+                                {{ réponse_foyer_fragile }}
+                            </div>
                         </div>
-                    </div>
-                    <div id="conseils-activite-pro" hidden>
-                        <div class="conseil">
+                        <div id="conseils-activite-pro-personne-fragile" hidden>
+                            <div class="conseil">
+                                {{ conseils_activité_pro_personne_fragile }}
+                            </div>
+                        </div>
+                        <div id="conseils-activite-pro" hidden>
                             {{ conseils_activité_pro }}
                         </div>
-                    </div>
-                    <div id="conseils-activite-pro-public" hidden>
-                        <div class="conseil">
-                            {{ conseils_activité_pro_public }}
+                        <div id="conseils-activite-pro-arret" hidden>
+                            <div class="conseil">
+                                {{ conseils_activité_pro_arrêt }}
+                            </div>
                         </div>
-                    </div>
-                    <div id="conseils-activite-pro-sante" hidden>
-                        <div class="conseil">
+                        <div id="conseils-activite-pro-foyer-fragile" hidden>
+                            {{ conseils_activité_pro_foyer_fragile }}
+                        </div>
+                        <div id="conseils-activite-pro-sante" hidden>
                             {{ conseils_activité_pro_santé }}
                         </div>
-                    </div>
-                    <div id="conseils-activite-pro-arret" hidden>
-                        <div class="conseil">
-                            {{ conseils_activité_pro_arrêt }}
-                        </div>
-                    </div>
-                    <div id="conseils-activite-pro-liberal" hidden>
-                        <div class="conseil">
+                        <div id="conseils-activite-pro-liberal" hidden>
                             {{ conseils_activité_pro_libéral }}
                         </div>
-                    </div>
-                    <div id="conseils-activite-pro-infos" hidden>
-                        {{ conseils_activité_pro_infos }}
-                    </div>
-                </details>
-            </div>
+                        <div id="conseils-activite-pro-infos" hidden>
+                            {{ conseils_activité_pro_infos }}
+                        </div>
+                    </details>
+                </div>
 
-            <div id="conseils-departement" class="conseils" hidden>
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Votre localisation
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                            </h3>
-                        </header>
-                    </summary>
-                    <div class="reponse">
-                        {{ réponse_département }}
-                    </div>
-                    <div id="conseils-departement-circulation-faible" hidden>
-                        <div class="conseil">
-                            {{ conseils_département_circulation_faible }}
+                <div id="conseils-vie-quotidienne" class="conseils" hidden>
+                    <details>
+                        <summary>
+                            <header>
+                                <h3>
+                                    Ma vie quotidienne
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                                </h3>
+                            </header>
+                        </summary>
+                        <div class="reponse">
+                            {{ réponse_département }}
                         </div>
-                    </div>
-                    <div id="conseils-departement-circulation-elevee" hidden>
-                        <div class="conseil conseil-orange">
-                            {{ conseils_département_circulation_élevée }}
+                        <div id="conseils-departement-circulation-faible" hidden>
+                            <div class="conseil">
+                                {{ conseils_département_circulation_faible }}
+                            </div>
                         </div>
-                    </div>
-                    <div id="conseils-departement-default">
+                        <div id="conseils-departement-circulation-elevee" hidden>
+                            <div class="conseil conseil-orange">
+                                {{ conseils_département_circulation_élevée }}
+                            </div>
+                        </div>
                         {{ conseils_département_défaut }}
-                    </div>
-                </details>
-            </div>
-
-            <!-- Conseils généraux toujours affichés. -->
-            <div id="conseils-generaux" class="conseils">
-                <details>
-                    <summary>
-                        <header>
-                            <h3>
-                                Conseils d’ordre général
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                            </h3>
-                        </header>
-                    </summary>
-                    <div class="conseil">
-                        {{ conseils_généraux }}
-                    </div>
-                    <div>
-                        {{ conseils_généraux_info }}
-                    </div>
-                </details>
+                        {{ conseils_vie_quotidienne }}
+                    </details>
+                </div>
             </div>
         </div>
 
@@ -913,26 +1032,31 @@
     </div>
 </section>
 
-<section id="suividate" hidden>
-    <form id="suivi-date-form" class="block">
+<section id="debutsymptomes" hidden>
+    <form id="debut-symptomes-form" class="block">
         <fieldset>
-            <legend>{{ question_suivi_date_titre|me_or_them }}</legend>
-            {{ question_suivi_date_libellé|me_or_them }}
-            <div role="radiogroup">
-                <input id="suivi_date_aujourdhui" type="radio" required name="suivi_symptomes_date" value="aujourdhui">
-                <label for="suivi_date_aujourdhui">Aujourd’hui</label>
-                <input id="suivi_date_hier" type="radio" required name="suivi_symptomes_date" value="hier">
-                <label for="suivi_date_hier">Hier</label>
-                <input id="suivi_date_avant_hier" type="radio" required name="suivi_symptomes_date" value="avant_hier">
-                <label for="suivi_date_avant_hier">Avant-hier</label>
-                <input id="suivi_date_avant_avant_hier" type="radio" required name="suivi_symptomes_date" value="avant_avant_hier">
-                <label for="suivi_date_avant_avant_hier">Il y a 3 jours</label>
-                <input id="suivi_date_encore_avant_hier" type="radio" required name="suivi_symptomes_date" value="encore_avant_hier">
-                <label for="suivi_date_encore_avant_hier">
+            <legend>{{ question_debut_symptomes_titre|me_or_them }}</legend>
+            <div>
+                <p id="debut-symptomes-date-label">
+                    {{ question_debut_symptomes_libellé|me_or_them }}
+                </p>
+            </div>
+            <div role="radiogroup" aria-labelledby="debut-symptomes-date-label">
+                <input id="debut_symptomes_aujourdhui" type="radio" required name="suivi_symptomes_date" value="aujourdhui">
+                <label for="debut_symptomes_aujourdhui">Aujourd’hui</label>
+                <input id="debut_symptomes_hier" type="radio" required name="suivi_symptomes_date" value="hier">
+                <label for="debut_symptomes_hier">Hier</label>
+                <input id="debut_symptomes_avant_hier" type="radio" required name="suivi_symptomes_date" value="avant_hier">
+                <label for="debut_symptomes_avant_hier">Avant-hier</label>
+                <input id="debut_symptomes_avant_avant_hier" type="radio" required name="suivi_symptomes_date" value="avant_avant_hier">
+                <label for="debut_symptomes_avant_avant_hier">Il y a 3 jours</label>
+                <input id="debut_symptomes_encore_avant_hier" type="radio" required name="suivi_symptomes_date" value="encore_avant_hier">
+                <label for="debut_symptomes_encore_avant_hier">
                     Encore avant : 
-                    <input type="date" lang="fr" id="suivi_date_exacte" name="suivi_symptomes_date_exacte" disabled>
+                    <input type="date" lang="fr" id="debut_symptomes_exacte" name="suivi_symptomes_date_exacte" disabled>
                 </label>
             </div>
+            <div class="details">{{ question_debut_symptomes_aide|me_or_them }}</div>
         </fieldset>
         <div class="form-controls">
             <input type="submit" class="button" value="Continuer" disabled>
@@ -945,7 +1069,8 @@
     <form id="suivi-symptomes-form" class="block">
         <fieldset>
             <legend>{{ question_suivi_symptômes_titre|me_or_them }}</legend>
-            <div>
+            <div class="details">{{ question_suivi_symptômes_aide|me_or_them }}</div>
+            <div id="suivi-symptomes-aujourdhui">
                 <input id="suivi_symptomes" type="checkbox" name="suivi_symptomes">
                 <label for="suivi_symptomes">
                     <span>
@@ -953,107 +1078,111 @@
                     </span>
                 </label>
             </div>
-            <div class="secondary disabled required" role="radiogroup"
-                 aria-labelledby="suivi-symptomes-essoufflement-label">
-                <p id="suivi-symptomes-essoufflement-label">
-                    {{ question_suivi_symptômes_essoufflement_libellé|me_or_them }}
-                </p>
-                <input id="suivi_symptomes_essoufflement_mieux" type="radio" required name="suivi_symptomes_essoufflement" value="mieux">
-                <label for="suivi_symptomes_essoufflement_mieux">Mieux</label>
-                <input id="suivi_symptomes_essoufflement_stable" type="radio" name="suivi_symptomes_essoufflement" value="stable">
-                <label for="suivi_symptomes_essoufflement_stable">Stable</label>
-                <input id="suivi_symptomes_essoufflement_pire" type="radio" name="suivi_symptomes_essoufflement" value="pire">
-                <label for="suivi_symptomes_essoufflement_pire">Un peu moins bien</label>
-                <input id="suivi_symptomes_essoufflement_critique" type="radio" name="suivi_symptomes_essoufflement" value="critique">
-                <label for="suivi_symptomes_essoufflement_critique">Beaucoup moins bien</label>
-                <input id="suivi_symptomes_essoufflement_aucun" type="radio" name="suivi_symptomes_essoufflement" value="aucun">
-                <label for="suivi_symptomes_essoufflement_aucun">Je n’ai pas de manque de souffle</label>
-            </div>
-            <div class="secondary disabled required" role="radiogroup"
-                 aria-labelledby="suivi-symptomes-etat-general-label">
-                <p id="suivi-symptomes-etat-general-label">
-                    {{ question_suivi_symptômes_état_général_libellé|me_or_them }}
-                </p>
-                <input id="suivi_symptomes_etat_general_mieux" type="radio" required name="suivi_symptomes_etat_general" value="mieux">
-                <label for="suivi_symptomes_etat_general_mieux">Mieux</label>
-                <input id="suivi_symptomes_etat_general_stable" type="radio" name="suivi_symptomes_etat_general" value="stable">
-                <label for="suivi_symptomes_etat_general_stable">Stable</label>
-                <input id="suivi_symptomes_etat_general_pire" type="radio" name="suivi_symptomes_etat_general" value="pire">
-                <label for="suivi_symptomes_etat_general_pire">Un peu moins bien</label>
-                <input id="suivi_symptomes_etat_general_critique" type="radio" name="suivi_symptomes_etat_general" value="critique">
-                <label for="suivi_symptomes_etat_general_critique">Beaucoup moins bien</label>
-            </div>
-            <div class="secondary disabled required them-only" role="radiogroup"
-                 aria-labelledby="suivi-symptomes-confusion-label">
-                <p id="suivi-symptomes-confusion-label">
-                    {{ question_suivi_symptômes_confusion_libellé }}
-                </p>
-                <input id="suivi_symptomes_confusion_oui" type="radio" name="suivi_symptomes_confusion" value="oui">
-                <label for="suivi_symptomes_confusion_oui">Oui</label>
-                <input id="suivi_symptomes_confusion_non" type="radio" name="suivi_symptomes_confusion" value="non">
-                <label for="suivi_symptomes_confusion_non">Non</label>
-            </div>
-            <div class="secondary disabled required" role="radiogroup"
-                 aria-labelledby="suivi-symptomes-alimentation-hydratation-label">
-                <p id="suivi-symptomes-alimentation-hydratation-label">
-                    {{ question_suivi_symptômes_alimentation_hydratation_libellé|me_or_them }}
-                </p>
-                <input id="suivi_symptomes_alimentation_hydratation_oui" type="radio" required name="suivi_symptomes_alimentation_hydratation" value="oui">
-                <label for="suivi_symptomes_alimentation_hydratation_oui">Oui</label>
-                <input id="suivi_symptomes_alimentation_hydratation_non" type="radio" name="suivi_symptomes_alimentation_hydratation" value="non">
-                <label for="suivi_symptomes_alimentation_hydratation_non">Non</label>
-            </div>
-            <div class="secondary disabled required" role="radiogroup"
-                 aria-labelledby="suivi-symptomes-etat-psychologique-label">
-                <p id="suivi-symptomes-etat-psychologique-label">
-                    {{ question_suivi_symptômes_état_psychologique_libellé|me_or_them }}
-                </p>
-                <input id="suivi_symptomes_etat_psychologique_mieux" type="radio" required name="suivi_symptomes_etat_psychologique" value="mieux">
-                <label for="suivi_symptomes_etat_psychologique_mieux">Mieux</label>
-                <input id="suivi_symptomes_etat_psychologique_stable" type="radio" name="suivi_symptomes_etat_psychologique" value="stable">
-                <label for="suivi_symptomes_etat_psychologique_stable">Stable</label>
-                <input id="suivi_symptomes_etat_psychologique_critique" type="radio" name="suivi_symptomes_etat_psychologique" value="critique">
-                <label for="suivi_symptomes_etat_psychologique_critique">Beaucoup moins bien</label>
-            </div>
-            <div class="secondary disabled required" role="radiogroup"
-                 aria-labelledby="suivi-symptomes-fievre-label">
-                <p id="suivi-symptomes-fievre-label">
-                    {{ question_suivi_symptômes_fièvre_libellé|me_or_them }}
-                </p>
-                <input id="suivi_symptomes_fievre_oui" type="radio" required name="suivi_symptomes_fievre" value="oui">
-                <label for="suivi_symptomes_fievre_oui">Oui</label>
-                <input id="suivi_symptomes_fievre_non" type="radio" name="suivi_symptomes_fievre" value="non">
-                <label for="suivi_symptomes_fievre_non">Non</label>
-            </div>
-            <div class="secondary disabled required" role="radiogroup"
-                 aria-labelledby="suivi-symptomes-diarrhee-vomissements-label">
-                <p id="suivi-symptomes-diarrhee-vomissements-label">
-                    {{ question_suivi_symptômes_diarrhée_vomissements_libellé|me_or_them }}
-                </p>
-                <input id="suivi_symptomes_diarrhee_vomissements_oui" type="radio" required name="suivi_symptomes_diarrhee_vomissements" value="oui">
-                <label for="suivi_symptomes_diarrhee_vomissements_oui">Oui</label>
-                <input id="suivi_symptomes_diarrhee_vomissements_non" type="radio" name="suivi_symptomes_diarrhee_vomissements" value="non">
-                <label for="suivi_symptomes_diarrhee_vomissements_non">Non</label>
-            </div>
-            <div class="secondary disabled" role="radiogroup"
-                 aria-labelledby="suivi-symptomes-toux-label">
-                <p id="suivi-symptomes-toux-label">
-                    {{ question_suivi_symptômes_toux_libellé|me_or_them }}
-                </p>
-                <input id="suivi_symptomes_toux_oui" type="radio" name="suivi_symptomes_toux" value="oui">
-                <label for="suivi_symptomes_toux_oui">Oui</label>
-                <input id="suivi_symptomes_toux_non" type="radio" name="suivi_symptomes_toux" value="non">
-                <label for="suivi_symptomes_toux_non">Non</label>
-            </div>
-            <div class="secondary disabled" role="radiogroup"
-                 aria-labelledby="suivi-symptomes-maux-de-tete-label">
-                <p id="suivi-symptomes-maux-de-tete-label">
-                    {{ question_suivi_symptômes_maux_de_tête_libellé|me_or_them }}
-                </p>
-                <input id="suivi_symptomes_maux_de_tete_oui" type="radio" name="suivi_symptomes_maux_de_tete" value="oui">
-                <label for="suivi_symptomes_maux_de_tete_oui">Oui</label>
-                <input id="suivi_symptomes_maux_de_tete_non" type="radio" name="suivi_symptomes_maux_de_tete" value="non">
-                <label for="suivi_symptomes_maux_de_tete_non">Non</label>
+            <div>
+                <div class="secondary disabled required" role="radiogroup"
+                     aria-labelledby="suivi-symptomes-essoufflement-label">
+                    <p id="suivi-symptomes-essoufflement-label">
+                        {{ question_suivi_symptômes_essoufflement_libellé|me_or_them }}
+                    </p>
+                    <input id="suivi_symptomes_essoufflement_mieux" type="radio" required name="suivi_symptomes_essoufflement" value="mieux">
+                    <label for="suivi_symptomes_essoufflement_mieux">Mieux</label>
+                    <input id="suivi_symptomes_essoufflement_stable" type="radio" name="suivi_symptomes_essoufflement" value="stable">
+                    <label for="suivi_symptomes_essoufflement_stable">Stable</label>
+                    <input id="suivi_symptomes_essoufflement_pire" type="radio" name="suivi_symptomes_essoufflement" value="pire">
+                    <label for="suivi_symptomes_essoufflement_pire">Un peu moins bien</label>
+                    <input id="suivi_symptomes_essoufflement_critique" type="radio" name="suivi_symptomes_essoufflement" value="critique">
+                    <label for="suivi_symptomes_essoufflement_critique">Beaucoup moins bien</label>
+                    <input id="suivi_symptomes_essoufflement_aucun" type="radio" name="suivi_symptomes_essoufflement" value="aucun">
+                    <label for="suivi_symptomes_essoufflement_aucun">
+                        <span class="me visible">Je n’ai pas de manque de souffle</span><span class="them" hidden>Il/elle n’a pas de manque de souffle</span>
+                    </label>
+                </div>
+                <div class="secondary disabled required" role="radiogroup"
+                     aria-labelledby="suivi-symptomes-etat-general-label">
+                    <p id="suivi-symptomes-etat-general-label">
+                        {{ question_suivi_symptômes_état_général_libellé|me_or_them }}
+                    </p>
+                    <input id="suivi_symptomes_etat_general_mieux" type="radio" required name="suivi_symptomes_etat_general" value="mieux">
+                    <label for="suivi_symptomes_etat_general_mieux">Mieux</label>
+                    <input id="suivi_symptomes_etat_general_stable" type="radio" name="suivi_symptomes_etat_general" value="stable">
+                    <label for="suivi_symptomes_etat_general_stable">Stable</label>
+                    <input id="suivi_symptomes_etat_general_pire" type="radio" name="suivi_symptomes_etat_general" value="pire">
+                    <label for="suivi_symptomes_etat_general_pire">Un peu moins bien</label>
+                    <input id="suivi_symptomes_etat_general_critique" type="radio" name="suivi_symptomes_etat_general" value="critique">
+                    <label for="suivi_symptomes_etat_general_critique">Beaucoup moins bien</label>
+                </div>
+                <div class="secondary disabled required them-only" role="radiogroup"
+                     aria-labelledby="suivi-symptomes-confusion-label">
+                    <p id="suivi-symptomes-confusion-label">
+                        {{ question_suivi_symptômes_confusion_libellé }}
+                    </p>
+                    <input id="suivi_symptomes_confusion_oui" type="radio" name="suivi_symptomes_confusion" value="oui">
+                    <label for="suivi_symptomes_confusion_oui">Oui</label>
+                    <input id="suivi_symptomes_confusion_non" type="radio" name="suivi_symptomes_confusion" value="non">
+                    <label for="suivi_symptomes_confusion_non">Non</label>
+                </div>
+                <div class="secondary disabled required" role="radiogroup"
+                     aria-labelledby="suivi-symptomes-alimentation-hydratation-label">
+                    <p id="suivi-symptomes-alimentation-hydratation-label">
+                        {{ question_suivi_symptômes_alimentation_hydratation_libellé|me_or_them }}
+                    </p>
+                    <input id="suivi_symptomes_alimentation_hydratation_oui" type="radio" required name="suivi_symptomes_alimentation_hydratation" value="oui">
+                    <label for="suivi_symptomes_alimentation_hydratation_oui">Oui</label>
+                    <input id="suivi_symptomes_alimentation_hydratation_non" type="radio" name="suivi_symptomes_alimentation_hydratation" value="non">
+                    <label for="suivi_symptomes_alimentation_hydratation_non">Non</label>
+                </div>
+                <div class="secondary disabled required" role="radiogroup"
+                     aria-labelledby="suivi-symptomes-etat-psychologique-label">
+                    <p id="suivi-symptomes-etat-psychologique-label">
+                        {{ question_suivi_symptômes_état_psychologique_libellé|me_or_them }}
+                    </p>
+                    <input id="suivi_symptomes_etat_psychologique_mieux" type="radio" required name="suivi_symptomes_etat_psychologique" value="mieux">
+                    <label for="suivi_symptomes_etat_psychologique_mieux">Mieux</label>
+                    <input id="suivi_symptomes_etat_psychologique_stable" type="radio" name="suivi_symptomes_etat_psychologique" value="stable">
+                    <label for="suivi_symptomes_etat_psychologique_stable">Stable</label>
+                    <input id="suivi_symptomes_etat_psychologique_critique" type="radio" name="suivi_symptomes_etat_psychologique" value="critique">
+                    <label for="suivi_symptomes_etat_psychologique_critique">Beaucoup moins bien</label>
+                </div>
+                <div class="secondary disabled required" role="radiogroup"
+                     aria-labelledby="suivi-symptomes-fievre-label">
+                    <p id="suivi-symptomes-fievre-label">
+                        {{ question_suivi_symptômes_fièvre_libellé|me_or_them }}
+                    </p>
+                    <input id="suivi_symptomes_fievre_oui" type="radio" required name="suivi_symptomes_fievre" value="oui">
+                    <label for="suivi_symptomes_fievre_oui">Oui</label>
+                    <input id="suivi_symptomes_fievre_non" type="radio" name="suivi_symptomes_fievre" value="non">
+                    <label for="suivi_symptomes_fievre_non">Non</label>
+                </div>
+                <div class="secondary disabled required" role="radiogroup"
+                     aria-labelledby="suivi-symptomes-diarrhee-vomissements-label">
+                    <p id="suivi-symptomes-diarrhee-vomissements-label">
+                        {{ question_suivi_symptômes_diarrhée_vomissements_libellé|me_or_them }}
+                    </p>
+                    <input id="suivi_symptomes_diarrhee_vomissements_oui" type="radio" required name="suivi_symptomes_diarrhee_vomissements" value="oui">
+                    <label for="suivi_symptomes_diarrhee_vomissements_oui">Oui</label>
+                    <input id="suivi_symptomes_diarrhee_vomissements_non" type="radio" name="suivi_symptomes_diarrhee_vomissements" value="non">
+                    <label for="suivi_symptomes_diarrhee_vomissements_non">Non</label>
+                </div>
+                <div class="secondary disabled" role="radiogroup"
+                     aria-labelledby="suivi-symptomes-toux-label">
+                    <p id="suivi-symptomes-toux-label">
+                        {{ question_suivi_symptômes_toux_libellé|me_or_them }}
+                    </p>
+                    <input id="suivi_symptomes_toux_oui" type="radio" name="suivi_symptomes_toux" value="oui">
+                    <label for="suivi_symptomes_toux_oui">Oui</label>
+                    <input id="suivi_symptomes_toux_non" type="radio" name="suivi_symptomes_toux" value="non">
+                    <label for="suivi_symptomes_toux_non">Non</label>
+                </div>
+                <div class="secondary disabled" role="radiogroup"
+                     aria-labelledby="suivi-symptomes-maux-de-tete-label">
+                    <p id="suivi-symptomes-maux-de-tete-label">
+                        {{ question_suivi_symptômes_maux_de_tête_libellé|me_or_them }}
+                    </p>
+                    <input id="suivi_symptomes_maux_de_tete_oui" type="radio" name="suivi_symptomes_maux_de_tete" value="oui">
+                    <label for="suivi_symptomes_maux_de_tete_oui">Oui</label>
+                    <input id="suivi_symptomes_maux_de_tete_non" type="radio" name="suivi_symptomes_maux_de_tete" value="non">
+                    <label for="suivi_symptomes_maux_de_tete_non">Non</label>
+                </div>
             </div>
         </fieldset>
         <div class="form-controls">

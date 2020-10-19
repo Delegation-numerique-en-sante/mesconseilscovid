@@ -1,7 +1,62 @@
+// Les 13 statuts possibles en sortie de l’algorithme
+const STATUTS = [
+    'asymptomatique',
+    'contact-a-risque-avec-test',
+    'contact-a-risque-sans-test',
+    'en-attente',
+    'foyer-fragile',
+    'personne-fragile',
+    'peu-de-risques',
+    'positif-symptomatique-urgent',
+    'symptomatique-en-attente',
+    'symptomatique-negatif',
+    'symptomatique-positif',
+    'symptomatique-sans-test',
+    'symptomatique-urgent',
+]
+
+// Les 11 blocs de conseils personnels possibles en sortie de l’algorithme
+const CONSEILS_PERSONNELS = [
+    'contact-a-risque',
+    'contact-a-risque-autre',
+    'depistage-positif-asymptomatique',
+    'depistage-positif-symptomatique',
+    'symptomes-actuels-en-attente',
+    'symptomes-actuels-positif-critique',
+    'symptomes-actuels-sans-depistage',
+    'symptomes-actuels-sans-depistage-critique',
+    'symptomes-passes-en-attente',
+    'symptomes-passes-positif',
+    'symptomes-passes-sans-depistage',
+]
+
 export default class AlgorithmeOrientation {
     constructor(profil, incidenceParDepartement) {
         this.profil = profil
         this.incidenceParDepartement = incidenceParDepartement
+    }
+
+    get situation() {
+        if (!this.profil.isComplete()) return ''
+        const depistage = this.profil.depistage
+            ? this.profil.depistage_resultat
+            : 'pas_teste'
+        let symptomes
+        if (this.profil.hasSymptomesActuelsReconnus()) {
+            symptomes = 'symptomes_actuels'
+            if (this.facteursDeGraviteMajeurs) {
+                symptomes += '_graves'
+            }
+        } else if (this.profil.symptomes_passes) {
+            symptomes = 'symptomes_passes'
+        } else if (this.profil.hasContactARisqueReconnus()) {
+            symptomes = 'contact_a_risque'
+        } else if (this.profil.contact_a_risque_autre) {
+            symptomes = 'contact_pas_vraiment_a_risque'
+        } else {
+            symptomes = 'asymptomatique'
+        }
+        return `${depistage}_${symptomes}`
     }
 
     get incidence() {
@@ -22,7 +77,7 @@ export default class AlgorithmeOrientation {
     }
 
     // Facteurs pronostiques de forme grave liés au terrain (fragilité)
-    get personne_fragile() {
+    get personneFragile() {
         return (
             this.sup65 ||
             this.profil.grossesse_3e_trimestre ||
@@ -52,15 +107,6 @@ export default class AlgorithmeOrientation {
         )
     }
 
-    get totalFacteursDeGraviteMineurs() {
-        // Return an integer (sum of truthy values from array).
-        return [
-            this.profil.symptomes_actuels_temperature,
-            this.profil.symptomes_actuels_temperature_inconnue,
-            this.profil.symptomes_actuels_fatigue,
-        ].reduce((a, b) => (a || false) + (b || false), 0)
-    }
-
     get facteursDeGraviteMajeurs() {
         return (
             this.profil.symptomes_actuels_souffle ||
@@ -68,146 +114,221 @@ export default class AlgorithmeOrientation {
         )
     }
 
-    get symptomes() {
+    get risqueDInfection() {
         return (
             this.profil.hasSymptomesActuelsReconnus() ||
             this.profil.symptomes_passes ||
-            (this.profil.contact_a_risque && !this.profil.contact_a_risque_autre)
+            this.profil.hasContactARisqueReconnus()
         )
     }
 
-    get statut() {
-        // L’ordre est important car risques > foyer_fragile.
-        if (this.profil.symptomes_actuels && this.facteursDeGraviteMajeurs) {
-            return 'symptomatique-urgent'
+    get listStatuts() {
+        return STATUTS
+    }
+
+    get listConseilsPersonnels() {
+        return CONSEILS_PERSONNELS
+    }
+
+    get statutEtConseils() {
+        // Statut et conseils à afficher dans les 24 situations
+        switch (this.situation) {
+            case 'positif_symptomes_actuels_graves':
+                return {
+                    statut: 'positif-symptomatique-urgent',
+                    conseils: 'symptomes-actuels-positif-critique',
+                }
+
+            case 'negatif_symptomes_actuels_graves':
+            case 'en_attente_symptomes_actuels_graves':
+            case 'pas_teste_symptomes_actuels_graves':
+                return {
+                    statut: 'symptomatique-urgent',
+                    conseils: 'symptomes-actuels-sans-depistage-critique',
+                }
+
+            case 'positif_symptomes_actuels':
+                return {
+                    statut: 'symptomatique-positif',
+                    conseils: 'depistage-positif-symptomatique',
+                }
+
+            case 'positif_symptomes_passes':
+                return {
+                    statut: 'symptomatique-positif',
+                    conseils: 'symptomes-passes-positif',
+                }
+
+            case 'positif_contact_a_risque':
+            case 'positif_contact_pas_vraiment_a_risque':
+            case 'positif_asymptomatique':
+                return {
+                    statut: 'asymptomatique',
+                    conseils: 'depistage-positif-asymptomatique',
+                }
+
+            case 'negatif_symptomes_actuels':
+                return { statut: 'symptomatique-negatif', conseils: null }
+
+            case 'negatif_symptomes_passes':
+                return { statut: this.statutSelonFragilite(), conseils: null }
+
+            case 'negatif_contact_a_risque':
+            case 'en_attente_contact_a_risque':
+                return {
+                    statut: 'contact-a-risque-avec-test',
+                    conseils: 'contact-a-risque',
+                }
+
+            case 'negatif_contact_pas_vraiment_a_risque':
+                return {
+                    statut: this.statutSelonFragilite(),
+                    conseils: 'contact-a-risque-autre',
+                }
+
+            case 'negatif_asymptomatique':
+                return { statut: this.statutSelonFragilite(), conseils: null }
+
+            case 'en_attente_symptomes_actuels':
+                return {
+                    statut: 'symptomatique-en-attente',
+                    conseils: 'symptomes-actuels-en-attente',
+                }
+
+            case 'en_attente_symptomes_passes':
+                return {
+                    statut: 'symptomatique-en-attente',
+                    conseils: 'symptomes-passes-en-attente',
+                }
+
+            case 'en_attente_contact_pas_vraiment_a_risque':
+                return { statut: 'en-attente', conseils: 'contact-a-risque-autre' }
+
+            case 'en_attente_asymptomatique':
+                return { statut: 'en-attente', conseils: null }
+
+            case 'pas_teste_symptomes_actuels':
+                return {
+                    statut: 'symptomatique-sans-test',
+                    conseils: 'symptomes-actuels-sans-depistage',
+                }
+
+            case 'pas_teste_symptomes_passes':
+                return {
+                    statut: 'symptomatique-sans-test',
+                    conseils: 'symptomes-passes-sans-depistage',
+                }
+
+            case 'pas_teste_contact_a_risque':
+                return {
+                    statut: 'contact-a-risque-sans-test',
+                    conseils: 'contact-a-risque',
+                }
+
+            case 'pas_teste_contact_pas_vraiment_a_risque':
+                return {
+                    statut: this.statutSelonFragilite(),
+                    conseils: 'contact-a-risque-autre',
+                }
+
+            case 'pas_teste_asymptomatique':
+                return { statut: this.statutSelonFragilite(), conseils: null }
+
+            default:
+                console.error('situation inconnue', this.situation)
+                return { statut: null, conseils: null }
         }
-        if (this.profil.hasSymptomesActuelsReconnus()) {
-            return 'symptomatique'
-        }
-        if (this.symptomes && !this.profil.symptomes_actuels_autre) {
-            return 'risque-eleve'
-        }
-        if (this.personne_fragile) {
-            return 'personne-fragile'
-        }
-        if (this.profil.foyer_fragile) {
-            return 'foyer-fragile'
-        }
+    }
+
+    statutSelonFragilite() {
+        if (this.personneFragile) return 'personne-fragile'
+        if (this.profil.foyer_fragile) return 'foyer-fragile'
         return 'peu-de-risques'
     }
 
-    get gravite() {
-        let gravite = 1
-        if (this.facteursDeGraviteMajeurs) {
-            gravite = 4
-        } else {
-            // #3.3
-            if (this.fievre && this.profil.symptomes_actuels_toux) {
-                if (this.personne_fragile) {
-                    if (this.totalFacteursDeGraviteMineurs > 1) {
-                        gravite = 2
-                    } else {
-                        gravite = 3
-                    }
-                }
-            }
-            // #3.4
-            if (
-                this.fievre ||
-                (!this.fievre &&
-                    (this.profil.symptomes_actuels_diarrhee ||
-                        (this.profil.symptomes_actuels_toux &&
-                            this.profil.symptomes_actuels_douleurs) ||
-                        (this.profil.symptomes_actuels_toux &&
-                            this.profil.symptomes_actuels_odorat)))
-            ) {
-                if (this.personne_fragile) {
-                    if (this.totalFacteursDeGraviteMineurs > 1) {
-                        gravite = 2
-                    } else {
-                        gravite = 3
-                    }
-                } else {
-                    if (this.sup50 || this.totalFacteursDeGraviteMineurs >= 1) {
-                        gravite = 3
-                    }
-                }
-            }
-            // #3.5
-            if (
-                !this.fievre &&
-                (this.profil.symptomes_actuels_toux ||
-                    this.profil.symptomes_actuels_douleurs ||
-                    this.profil.symptomes_actuels_odorat) &&
-                this.personne_fragile
-            ) {
-                gravite = 3
-            }
-        }
-        return gravite
-    }
-
     recommandeAutoSuivi() {
-        return this.profil.symptomes_actuels
+        return (
+            this.profil.hasSymptomesActuelsReconnus() &&
+            !this.profil.estPositifAsymptomatique() &&
+            !this.profil.estNegatifSymptomatique()
+        )
     }
 
     conseilsPersonnelsBlockNamesToDisplay() {
         const blockNames = []
-        if (this.profil.hasSymptomesActuelsReconnus()) {
-            blockNames.push('conseils-personnels-symptomes-actuels')
-            if (this.antecedents || this.profil.antecedent_chronique_autre) {
-                blockNames.push('reponse-symptomes-actuels-antecedents')
-            }
-            if (this.sup50 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
-                blockNames.push('reponse-symptomes-actuels-caracteristiques')
-            }
-            if (this.profil.hasSymptomesActuelsReconnus()) {
-                blockNames.push('reponse-symptomes-actuels-symptomesactuelsreconnus')
-            }
-            if (this.profil.hasHistorique()) {
-                blockNames.push('conseils-personnels-symptomes-actuels-suivi')
+        if (this.profil.estPositif()) {
+            blockNames.push('reponse-depistage-positif')
+        } else if (this.profil.estNegatif()) {
+            blockNames.push('reponse-depistage-negatif')
+        } else if (this.profil.estEnAttente()) {
+            blockNames.push('reponse-depistage-en-attente')
+        } else if (this.profil.sansDepistage()) {
+            blockNames.push('reponse-depistage-sans')
+        }
+        blockNames.push(`conseils-personnels-${this.statutEtConseils.conseils}`)
+        return blockNames
+    }
+
+    isolementBlockNamesToDisplay() {
+        const blockNames = []
+        if (
+            this.profil.estPositif() ||
+            (this.profil.estNegatif() && this.profil.hasContactARisqueReconnus()) ||
+            (this.profil.estEnAttente() && this.risqueDInfection) ||
+            (this.profil.sansDepistage() && this.risqueDInfection)
+        ) {
+            blockNames.push('conseils-isolement')
+        }
+        return blockNames
+    }
+
+    depistageBlockNamesToDisplay() {
+        const blockNames = []
+        if (this.profil.estPositif() || this.profil.estNegatif()) {
+            // rien
+        } else {
+            blockNames.push('conseils-tests')
+            if (this.profil.estEnAttente()) {
+                blockNames.push('conseils-tests-resultats')
             } else {
-                blockNames.push(
-                    'conseils-personnels-symptomes-actuels-gravite' + this.gravite
-                )
-            }
-        } else if (this.profil.symptomes_passes) {
-            blockNames.push('conseils-personnels-symptomes-passes')
-            if (this.personne_fragile || this.profil.foyer_fragile) {
-                blockNames.push('conseils-personnels-symptomes-passes-avec-risques')
-            } else {
-                blockNames.push('conseils-personnels-symptomes-passes-sans-risques')
-            }
-        } else if (this.profil.contact_a_risque) {
-            blockNames.push('conseils-personnels-contact-a-risque')
-            if (this.profil.contact_a_risque_autre) {
-                blockNames.push('conseils-personnels-contact-a-risque-autre')
-            } else {
-                blockNames.push('conseils-personnels-contact-a-risque-default')
+                blockNames.push('conseils-tests-general')
             }
         }
         return blockNames
     }
 
-    departementBlockNamesToDisplay() {
-        const blockNames = []
-        if (this.profil.symptomes_actuels || typeof this.incidence === 'undefined') {
-            return []
-        }
-        blockNames.push('conseils-departement')
-        if (this.incidence >= 10) {
-            blockNames.push('conseils-departement-circulation-elevee')
+    gestesBarriereBlockNamesToDisplay() {
+        const blockNames = ['conseils-gestes-barrieres-masque']
+        if (this.personneFragile) {
+            if (this.antecedents || this.profil.antecedent_chronique_autre) {
+                blockNames.push('reponse-gestes-barrieres-masque-antecedents')
+            }
+            if (this.sup65 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
+                blockNames.push(
+                    'reponse-gestes-barrieres-masque-caracteristiques-a-risques'
+                )
+            }
+            blockNames.push('conseils-gestes-barrieres-masque-fragile')
         } else {
-            blockNames.push('conseils-departement-circulation-faible')
+            blockNames.push('conseils-gestes-barrieres-masque-general')
+        }
+        return blockNames
+    }
+
+    vieQuotidienneBlockNamesToDisplay() {
+        const blockNames = ['conseils-vie-quotidienne']
+        if (typeof this.incidence !== 'undefined') {
+            if (this.incidence >= 10) {
+                blockNames.push('conseils-departement-circulation-elevee')
+            } else {
+                blockNames.push('conseils-departement-circulation-faible')
+            }
         }
         return blockNames
     }
 
     activiteProBlockNamesToDisplay() {
         const blockNames = []
-        if (this.symptomes) {
-            return []
-        }
         if (
             this.profil.activite_pro ||
             this.profil.activite_pro_public ||
@@ -216,76 +337,86 @@ export default class AlgorithmeOrientation {
         ) {
             blockNames.push('conseils-activite')
             blockNames.push('reponse-activite-pro')
-            // Les blocs de conseils sont quasi-exclusifs aussi.
+
+            // Professionnel de santé ou non ?
+            if (this.profil.activite_pro_sante) {
+                blockNames.push('conseils-activite-pro-sante')
+            } else {
+                if (this.antecedents) {
+                    blockNames.push('reponse-activite-pro-antecedents')
+                    blockNames.push('conseils-activite-pro-arret')
+                } else if (this.personneFragile) {
+                    blockNames.push('reponse-activite-pro-personne-fragile')
+                    blockNames.push('conseils-activite-pro-personne-fragile')
+                } else {
+                    blockNames.push('conseils-activite-pro')
+                }
+                blockNames.push('conseils-activite-pro-infos')
+            }
+
+            // Bloc additionnel: activité libérale
             if (this.profil.activite_pro_liberal) {
                 blockNames.push('conseils-activite-pro-liberal')
             }
-            if (this.profil.activite_pro_public && this.profil.activite_pro_sante) {
-                blockNames.push('conseils-activite-pro-public')
-                blockNames.push('conseils-activite-pro-sante')
-            } else if (this.profil.activite_pro_public) {
-                blockNames.push('conseils-activite-pro-public')
-                blockNames.push('conseils-activite-pro-infos')
-            } else if (this.profil.activite_pro_sante) {
-                blockNames.push('conseils-activite-pro-sante')
+
+            // Bloc additionnel: personne fragile dans le foyer
+            if (this.profil.foyer_fragile) {
+                blockNames.push('reponse-activite-pro-foyer-fragile')
+                blockNames.push('conseils-activite-pro-foyer-fragile')
+            }
+        }
+        return blockNames
+    }
+
+    grossesseBlockNamesToDisplay() {
+        const blockNames = []
+        if (this.profil.grossesse_3e_trimestre) {
+            blockNames.push('conseils-grossesse')
+        }
+        return blockNames
+    }
+
+    santeBlockNamesToDisplay() {
+        const blockNames = ['conseils-sante']
+        if (this.sup65 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
+            blockNames.push('reponse-sante-caracteristiques-a-risques')
+        }
+        if (this.antecedents || this.profil.antecedent_chronique_autre) {
+            blockNames.push('reponse-sante-antecedents')
+        }
+        if (this.personneFragile) {
+            if (this.profil.hasSymptomesActuelsReconnus()) {
+                blockNames.push('conseils-sante-personne-fragile-symptomatique')
             } else {
-                blockNames.push('conseils-activite-pro')
-                blockNames.push('conseils-activite-pro-infos')
+                blockNames.push('conseils-sante-personne-fragile')
             }
-            if (this.personne_fragile) {
-                blockNames.push('conseils-activite-pro-arret')
-            }
+        } else {
+            blockNames.push('conseils-sante-general')
+        }
+        if (this.antecedents || this.profil.antecedent_chronique_autre) {
+            blockNames.push('conseils-sante-maladie-chronique')
+        }
+        if (this.personneFragile || this.profil.activite_pro_sante) {
+            blockNames.push('conseils-sante-grippe-fragile')
+        } else {
+            blockNames.push('conseils-sante-grippe')
         }
         return blockNames
     }
 
     foyerBlockNamesToDisplay() {
         const blockNames = []
-        if (this.profil.symptomes_actuels) {
-            return []
-        }
-        if (this.profil.foyer_enfants || this.profil.foyer_fragile) {
+        if (this.profil.foyer_fragile) {
             blockNames.push('conseils-foyer')
-            if (this.profil.foyer_enfants && this.profil.foyer_fragile) {
-                blockNames.push('conseils-foyer-enfants-fragile')
-            } else if (this.profil.foyer_enfants) {
-                blockNames.push('conseils-foyer-enfants')
-            } else if (this.profil.foyer_fragile) {
-                blockNames.push('conseils-foyer-fragile')
-            }
+            blockNames.push('conseils-foyer-fragile')
         }
         return blockNames
     }
 
-    caracteristiquesAntecedentsBlockNamesToDisplay() {
+    enfantsBlockNamesToDisplay() {
         const blockNames = []
-        if (this.symptomes) {
-            return []
-        }
-        if (this.personne_fragile || this.profil.antecedent_chronique_autre) {
-            blockNames.push('conseils-caracteristiques')
-            // Réponses
-            if (this.antecedents || this.profil.antecedent_chronique_autre) {
-                blockNames.push('reponse-antecedents')
-            }
-            if (this.sup65 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
-                blockNames.push('reponse-caracteristiques-a-risques')
-            }
-            // Conseils
-            if (this.profil.activite_pro) {
-                blockNames.push('conseils-caracteristiques-antecedents-activite-pro')
-            } else {
-                blockNames.push('conseils-caracteristiques-antecedents')
-            }
-            if (this.antecedents || this.profil.antecedent_chronique_autre) {
-                blockNames.push('conseils-caracteristiques-antecedents-info-risque')
-            }
-            if (this.profil.grossesse_3e_trimestre) {
-                blockNames.push('conseils-caracteristiques-antecedents-femme-enceinte')
-            }
-            if (this.profil.antecedent_chronique_autre) {
-                blockNames.push('conseils-antecedents-chroniques-autres')
-            }
+        if (this.profil.foyer_enfants) {
+            blockNames.push('conseils-foyer-enfants')
         }
         return blockNames
     }

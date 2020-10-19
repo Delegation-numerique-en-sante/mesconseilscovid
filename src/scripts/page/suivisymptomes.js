@@ -7,6 +7,18 @@ import {
 import AlgorithmeDeconfinement from '../algorithme/deconfinement.js'
 
 export default function suivisymptomes(form, app) {
+    // On évite de redemander à la personne si elle a des symptômes aujourd’hui
+    // lorsqu’on est dans la continuité du formulaire (vs suivi)
+    if (!app.profil.isComplete()) {
+        const elem = form.querySelector('#suivi-symptomes-aujourdhui')
+        if (elem) {
+            hideElement(elem)
+            ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
+                elem.setAttribute('style', 'margin-left: 0')
+            })
+        }
+    }
+
     // Question affichée seulement si on répond pour un proche
     const pourUnProche = !app.profil.estMonProfil()
     var themOnly = form.querySelector('.them-only')
@@ -53,6 +65,21 @@ export default function suivisymptomes(form, app) {
         }
 
         app.profil.ajouterEtat(etat)
+
+        app.profil.symptomes_actuels = etat.symptomes
+        app.profil.symptomes_actuels_temperature = etat.fievre === 'oui'
+        app.profil.symptomes_actuels_temperature_inconnue = false
+        app.profil.symptomes_actuels_toux = etat.toux === 'oui'
+        // app.profil.symptomes_actuels_odorat = false // ???
+        app.profil.symptomes_actuels_douleurs =
+            etat.etatGeneral === 'pire' || etat.etatGeneral === 'critique'
+        app.profil.symptomes_actuels_diarrhee = etat.diarrheeVomissements === 'oui'
+        app.profil.symptomes_actuels_fatigue =
+            etat.etatGeneral === 'pire' || etat.etatGeneral === 'critique'
+        app.profil.symptomes_actuels_alimentation =
+            etat.alimentationHydratation === 'oui'
+        app.profil.symptomes_actuels_souffle =
+            etat.essoufflement === 'pire' || etat.etatGeneral === 'critique'
 
         const algoDeconfinement = new AlgorithmeDeconfinement(app.profil)
         if (algoDeconfinement.isDeconfinable()) {

@@ -14,10 +14,7 @@ import AlgorithmeOrientation from '../algorithme/orientation.js'
 import AlgorithmeSuivi from '../algorithme/suivi.js'
 
 export default function conseils(element, app) {
-    // Hide all conseils that might have been made visible on previous runs.
-    hideSelector(element, '.visible')
-
-    // Make sure we (re-)show profile-specific text.
+    // Make sure we show profile-specific text.
     showMeOrThem(element, app.profil)
 
     // Use custom illustration if needed.
@@ -61,10 +58,6 @@ export default function conseils(element, app) {
 
         // Cacher le bloc de statut si on est en auto-suivi.
         hideSelector(element, '#conseils-statut')
-
-        // Cacher le bloc de recommandation de l’auto-suivi
-        // si on l’a déjà démarré.
-        hideSelector(element, '.conseil-autosuivi')
     }
 
     // Dynamic data injections.
@@ -106,7 +99,7 @@ function showRelevantSuiviBlocks(element, algoSuivi) {
         blockNames.push(algoSuivi.psyBlockNameToDisplay())
     }
     if (algoSuivi.profil.hasHistorique()) {
-        blockNames.push('conseil-autosuivi-historique')
+        blockNames.push('conseils-sante-historique-symptomes')
     }
     displayBlocks(element, blockNames)
 }
@@ -116,12 +109,15 @@ export function showRelevantBlocks(element, profil, algoOrientation) {
     blockNames = blockNames.concat(
         algoOrientation.conseilsPersonnelsBlockNamesToDisplay()
     )
-    blockNames = blockNames.concat(algoOrientation.departementBlockNamesToDisplay())
+    blockNames = blockNames.concat(algoOrientation.isolementBlockNamesToDisplay())
+    blockNames = blockNames.concat(algoOrientation.depistageBlockNamesToDisplay())
+    blockNames = blockNames.concat(algoOrientation.gestesBarriereBlockNamesToDisplay())
+    blockNames = blockNames.concat(algoOrientation.vieQuotidienneBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.activiteProBlockNamesToDisplay())
+    blockNames = blockNames.concat(algoOrientation.grossesseBlockNamesToDisplay())
+    blockNames = blockNames.concat(algoOrientation.santeBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.foyerBlockNamesToDisplay())
-    blockNames = blockNames.concat(
-        algoOrientation.caracteristiquesAntecedentsBlockNamesToDisplay()
-    )
+    blockNames = blockNames.concat(algoOrientation.enfantsBlockNamesToDisplay())
     displayBlocks(element, blockNames)
 }
 
@@ -142,33 +138,23 @@ export function showRelevantAnswersRecap(element, profil, algoOrientation) {
         injection.lienPrefecture(lienPrefecture, profil.departement)
     }
 
-    // We need to target more specifically given there are two similar ids.
-    var selector
-    if (profil.hasSymptomesActuelsReconnus()) {
-        selector = '#conseils-personnels-symptomes-actuels'
-    } else {
-        selector = '#conseils-caracteristiques'
-    }
-    var subElement = element.querySelector(selector)
-    if (!subElement) return
-    var nomCaracteristiquesARisques = subElement.querySelector(
-        '#nom-caracteristiques-a-risques'
+    // eslint-disable-next-line no-extra-semi
+    ;[].forEach.call(
+        element.querySelectorAll('.nom-caracteristiques-a-risques'),
+        (elem) => {
+            injection.caracteristiquesARisques(elem, algoOrientation)
+        }
     )
-    if (nomCaracteristiquesARisques) {
-        injection.caracteristiquesARisques(nomCaracteristiquesARisques, algoOrientation)
-    }
-    var nomAntecedents = subElement.querySelector('#nom-antecedents')
-    if (nomAntecedents) {
-        injection.antecedents(nomAntecedents, algoOrientation)
-    }
-    var nomSymptomesActuels = subElement.querySelector('#nom-symptomesactuels')
-    if (nomSymptomesActuels) {
-        injection.symptomesactuels(nomSymptomesActuels, algoOrientation)
-    }
+
+    // eslint-disable-next-line no-extra-semi
+    ;[].forEach.call(element.querySelectorAll('.nom-antecedents'), (elem) => {
+        injection.antecedents(elem, algoOrientation)
+    })
 }
 
 function statutBlockNamesToDisplay(algoOrientation) {
-    return ['statut-' + algoOrientation.statut]
+    const statut = `statut-${algoOrientation.statutEtConseils.statut}`
+    return [statut]
 }
 
 function isMobileSafari() {

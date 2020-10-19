@@ -32,6 +32,61 @@ export default class App {
             return this.enregistrerProfilActuel()
         })
     }
+    creerProfilsTypes() {
+        const listeDepistage = ['Positif', 'Négatif', 'En attente', 'Pas testé']
+        const listeSymptomes = [
+            'Symptômes actuels graves',
+            'Symptômes actuels',
+            'Symptômes actuels non évocateurs',
+            'Symptômes passés',
+            'Contact à risque',
+            'Contact pas vraiment à risque',
+            'Rien de tout ça',
+        ]
+        let promises = []
+        for (let d = 0; d < listeDepistage.length; d++) {
+            for (let s = 0; s < listeSymptomes.length; s++) {
+                const depistage = listeDepistage[d]
+                const symptomes = listeSymptomes[s]
+                if (
+                    (depistage === 'Négatif' &&
+                        (symptomes === 'Symptômes passés' ||
+                            symptomes === 'Contact pas vraiment à risque' ||
+                            symptomes === 'Rien de tout ça')) ||
+                    (depistage === 'Pas testé' &&
+                        (symptomes === 'Contact pas vraiment à risque' ||
+                            symptomes === 'Rien de tout ça'))
+                ) {
+                    promises.push(
+                        this.creerProfilType(depistage, symptomes, true, false)
+                    )
+                    promises.push(
+                        this.creerProfilType(depistage, symptomes, false, true)
+                    )
+                }
+                promises.push(this.creerProfilType(depistage, symptomes, false, false))
+            }
+        }
+        return Promise.all(promises)
+    }
+    creerProfilType(depistage, symptomes, personneFragile, foyerFragile) {
+        let nom = `${depistage} + ${symptomes}`
+        if (personneFragile) {
+            nom = `${nom} + personne fragile`
+        }
+        if (foyerFragile) {
+            nom = `${nom} + foyer fragile`
+        }
+        return this.stockage.getProfil(nom).then((profil) => {
+            if (profil === null) {
+                profil = new Profil(nom)
+                profil.fillTestData(depistage, symptomes, personneFragile, foyerFragile)
+                return this.stockage.enregistrer(profil)
+            } else {
+                console.error(`Le profil "${nom}" existe déjà`)
+            }
+        })
+    }
     basculerVersProfil(nom) {
         return this.stockage.setProfilActuel(nom).then(() => {
             return this.chargerProfil(nom)

@@ -229,8 +229,9 @@ main footer .legals {
 #symptomes-actuels-form,
 #symptomes-passes-form,
 #contact-a-risque-form,
+#depistage-form,
 #suivi-medecin-form,
-#suivi-date-form,
+#debut-symptomes-form,
 #suivi-symptomes-form {
     padding-top: 40%;
     background-position: center 1rem;
@@ -238,11 +239,17 @@ main footer .legals {
     background-size: 40%;
 }
 
-#conseils-departement header,
+#conseils-vie-quotidienne header,
 #conseils-activite header,
 #conseils-foyer header,
-#conseils-caracteristiques header,
-#conseils-generaux header,
+#conseils-tests header,
+#conseils-isolement header,
+#conseils-contact-a-risque header,
+#conseils-gestes-barrieres-masque header,
+#conseils-sante header,
+#conseils-grossesse header,
+#conseils-foyer-enfants header,
+#conseils-covid header,
 #conseils-pediatrie-general header,
 #conseils-pediatrie-ecole header,
 #conseils-pediatrie-medical header,
@@ -266,18 +273,25 @@ main footer .legals {
     #symptomes-actuels-form,
     #symptomes-passes-form,
     #contact-a-risque-form,
+    #depistage-form,
     #suivi-medecin-form,
-    #suivi-date-form,
+    #debut-symptomes-form,
     #suivi-symptomes-form {
         padding-top: 25%;
         background-size: 30%;
     }
 
-    #conseils-departement header,
+    #conseils-vie-quotidienne header,
     #conseils-activite header,
     #conseils-foyer header,
-    #conseils-caracteristiques header,
-    #conseils-generaux header,
+    #conseils-tests header,
+    #conseils-isolement header,
+    #conseils-contact-a-risque header,
+    #conseils-gestes-barrieres-masque header,
+    #conseils-sante header,
+    #conseils-grossesse header,
+    #conseils-foyer-enfants header,
+    #conseils-covid header,
     #conseils-pediatrie-general header,
     #conseils-pediatrie-ecole header,
     #conseils-pediatrie-medical header,
@@ -297,7 +311,7 @@ main footer .legals {
     background-image: url('illustrations/nom.svg');
 }
 #residence-form,
-#conseils-departement header {
+#conseils-vie-quotidienne header {
     background-image: url('illustrations/residence.svg');
 }
 #activite-pro-form,
@@ -308,16 +322,38 @@ main footer .legals {
 #conseils-foyer header {
     background-image: url('illustrations/foyer.svg');
 }
-#caracteristiques-form,
-#conseils-caracteristiques header {
+#conseils-tests header {
+    background-image: url('illustrations/depistage.svg');
+}
+#conseils-isolement header {
+    background-image: url('illustrations/isolement.svg');
+}
+#conseils-contact-a-risque header {
+    background-image: url('illustrations/contactarisque.svg');
+}
+#conseils-gestes-barrieres-masque header {
+    background-image: url('illustrations/gestesbarrieres.svg');
+}
+#conseils-sante header {
+    background-image: url('illustrations/contact_medecin.svg');
+}
+#caracteristiques-form {
     background-image: url('illustrations/caracteristiques.svg');
+}
+#conseils-grossesse header {
+    background-image: url('illustrations/grossesse.svg');
+}
+#conseils-foyer-enfants header {
+    background-image: url('illustrations/pediatriegeneral.svg');
 }
 #antecedents-form,
 #suivi-medecin-form {
     background-image: url('illustrations/antecedents.svg');
 }
-.tagline,
-#conseils-generaux header {
+#conseils-covid header {
+    background-image: url('illustrations/covid.svg');
+}
+.tagline {
     background-image: url('illustrations/accueil.svg');
 }
 #conseils-pediatrie-general header {
@@ -336,12 +372,15 @@ main footer .legals {
 }
 #conseils-block.symptomes-passes h2.with-illustration,
 #symptomes-passes-form,
-#suivi-date-form {
+#debut-symptomes-form {
     background-image: url('illustrations/symptomespasses.svg');
 }
 #conseils-block.contact-a-risque h2.with-illustration,
 #contact-a-risque-form {
     background-image: url('illustrations/contactarisque.svg');
+}
+#depistage-form {
+    background-image: url('illustrations/depistage.svg');
 }
 
 .conseils {
@@ -370,9 +409,14 @@ main footer .legals {
     text-align: center;
     margin: 3rem auto;
 }
+.statut-asymptomatique,
+.statut-contact-a-risque-avec-test,
+.statut-contact-a-risque-sans-test,
+.statut-positif-symptomatique-urgent,
+.statut-symptomatique-en-attente,
+.statut-symptomatique-positif,
+.statut-symptomatique-sans-test,
 .statut-symptomatique-urgent,
-.statut-symptomatique,
-.statut-risque-eleve,
 .suivi-gravite-3 {
     background: #ffb6a5;
     border-color: #ff6f4c;
@@ -383,10 +427,12 @@ main footer .legals {
     border-color: #ff9940;
 }
 .statut-foyer-fragile,
+.statut-symptomatique-negatif,
 .suivi-gravite-1 {
     background: #fde7a0;
     border-color: #fdcf41;
 }
+.statut-en-attente,
 .statut-peu-de-risques,
 .suivi-gravite-0,
 .statut-deconfinement {
@@ -398,19 +444,19 @@ main footer .legals {
     background: #d5dbef;
     padding: 0.1rem 1rem;
     border-left: 5px solid #000091;
+    margin-bottom: 1.5rem;
 }
 .conseil-orange {
     background-color: #ffb6a5;
     border-color: #ff6f4c;
 }
+.conseil-jaune {
+    background: #fde7a0;
+    border-color: #fdcf41;
+}
 .conseil-vert {
     background-color: #7fd5c5;
     border-color: #00ac8c;
-}
-.conseil-autosuivi,
-.conseil-autosuivi-historique {
-    padding: 1rem;
-    margin: 2rem auto;
 }
 
 fieldset {
@@ -421,7 +467,7 @@ fieldset {
 fieldset legend {
     color: #000091;
     font-size: 150%;
-    margin-bottom: 1.75rem;
+    margin: 1rem 0 0.5rem 0;
 }
 fieldset div {
     margin: 0.5rem 0;
@@ -448,6 +494,10 @@ fieldset .row > * {
     flex-basis: 50%;
 }
 
+fieldset [role='radiogroup'] {
+    margin-bottom: 2rem;
+}
+
 fieldset .secondary {
     margin-left: 2rem;
 }
@@ -455,7 +505,10 @@ fieldset .secondary.disabled {
     display: none;
 }
 fieldset .secondary > p {
-    margin: 4rem 0 0 1rem;
+    margin: 4rem 0 0 0.25rem;
+}
+fieldset .secondary:first-child > p {
+    margin-top: 2rem;
 }
 
 fieldset .field {
@@ -463,15 +516,17 @@ fieldset .field {
 }
 
 fieldset .details {
-    margin: 0.25rem 0 0 1.25rem;
-    padding-left: 0.5rem;
+    margin: 0.25rem 0 0 0.25rem;
     color: #484d7a;
     font-size: small;
     line-height: 1.75;
 }
+fieldset label ~ .details {
+    margin-left: 2.25rem;
+}
 fieldset .details ul {
     margin-top: 0;
-    padding-left: 0.5rem;
+    padding-left: 1.25rem;
 }
 fieldset .details p {
     margin-top: 0;
@@ -675,7 +730,7 @@ input[type='radio'] + label::before {
     position: relative;
     display: inline-block;
     margin-right: 10px;
-    margin-left: -2rem;
+    margin-left: -1.25rem;
     width: 1.2rem;
     height: 1.2rem;
     background: white;
@@ -685,12 +740,24 @@ input[type='radio'] + label::before {
     border-radius: 50%;
 }
 
+input[type='checkbox'][hidden] + label::before,
+input[type='radio'][hidden] + label::before,
+input[type='checkbox'][hidden] + label::after,
+input[type='radio'][hidden] + label::after {
+    display: none;
+}
+input[type='checkbox'][hidden] + label,
+input[type='radio'][hidden] + label {
+    margin-left: 0.25rem;
+    padding-left: 0;
+}
+
 input[type='radio'] + label::after {
     content: '';
     position: absolute;
     display: inline-block;
     margin-right: 10px;
-    left: 36.3px;
+    left: calc(68.3px - 1.25rem);
     top: 4.3px;
     width: 0.9rem;
     height: 0.9rem;
@@ -713,7 +780,7 @@ input[type='checkbox']:checked + label::after {
     content: '';
     position: absolute;
     top: 5px;
-    left: calc(28px - 2rem);
+    left: calc(28px - 1.25rem);
     border-left: 3px solid white;
     border-bottom: 3px solid white;
     height: 6px;
@@ -774,8 +841,6 @@ a[href*='youtube.com']::after {
 }
 .conseils a[href="https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf"]::before,
 .conseils a[href="https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf"]::before,
-.conseils a[href="https://www.gouvernement.fr/partage/11439-coronavirus-ce-qu-il-faut-savoir"]::before,
-.conseils a[href="https://www.gouvernement.fr/sites/default/files/explication_entre_les_deux_types_de_tests.jpg"]::before
 {
     background: no-repeat bottom left url('icone_infographie.svg');
     content: '';
@@ -926,11 +991,11 @@ a#geolocalisation {
 }
 
 @media print {
-    #conseils-departement header,
+    #conseils-vie-quotidienne header,
     #conseils-activite header,
     #conseils-foyer header,
-    #conseils-caracteristiques header,
-    #conseils-generaux header,
+    #conseils-grossesse header,
+    #conseils-covid header,
     #conseils-block.symptomes-actuels h2,
     #conseils-block.symptomes-passes h2,
     #conseils-block.contact-a-risque h2 {

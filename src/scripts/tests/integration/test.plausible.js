@@ -12,7 +12,7 @@ describe('Plausible', function () {
         await page.goto('http://localhost:8080/#introduction')
         assert.equal(
             await page.title(),
-            'Mes conseils Covid — Des conseils personnalisés pour agir contre le virus'
+            'Mes Conseils Covid — Des conseils personnalisés pour agir contre le virus'
         )
 
         await waitForPlausibleTrackingEvents(page, ['pageview:introduction'])
@@ -24,7 +24,7 @@ describe('Plausible', function () {
         await page.goto('http://localhost:8080/#introduction')
         assert.equal(
             await page.title(),
-            'Mes conseils Covid — Des conseils personnalisés pour agir contre le virus'
+            'Mes Conseils Covid — Des conseils personnalisés pour agir contre le virus'
         )
         const bouton = await page.waitForSelector('.feedback-component >> text="Oui"')
         await bouton.click()
@@ -52,6 +52,10 @@ describe('Plausible', function () {
         ])
 
         await remplirQuestionnaire(page, {
+            symptomesActuels: [],
+            symptomesPasses: false,
+            contactARisque: [],
+            depistage: false,
             departement: '80',
             activitePro: true,
             enfants: true,
@@ -59,8 +63,6 @@ describe('Plausible', function () {
             taille: '165',
             poids: '70',
             grossesse: false,
-            symptomesActuels: [],
-            symptomesPasses: false,
         })
 
         await waitForPlausibleTrackingEvent(page, 'pageview:conseils')
@@ -84,6 +86,7 @@ describe('Plausible', function () {
             'pageview:symptomesactuels',
             'pageview:symptomespasses',
             'pageview:contactarisque',
+            'pageview:depistage',
             'pageview:residence',
             'pageview:foyer',
             'pageview:antecedents',
@@ -105,6 +108,10 @@ describe('Plausible', function () {
             page.waitForNavigation({ url: '**/#symptomesactuels' }),
         ])
         await remplirQuestionnaire(page, {
+            symptomesActuels: [],
+            symptomesPasses: false,
+            contactARisque: [],
+            depistage: false,
             departement: '80',
             activitePro: true,
             enfants: true,
@@ -112,8 +119,6 @@ describe('Plausible', function () {
             taille: '165',
             poids: '70',
             grossesse: false,
-            symptomesActuels: [],
-            symptomesPasses: false,
         })
 
         await waitForPlausibleTrackingEvent(page, 'pageview:conseils')
@@ -137,6 +142,7 @@ describe('Plausible', function () {
             'pageview:symptomesactuels',
             'pageview:symptomespasses',
             'pageview:contactarisque',
+            'pageview:depistage',
             'pageview:residence',
             'pageview:foyer',
             'pageview:antecedents',
