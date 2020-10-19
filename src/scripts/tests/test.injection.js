@@ -223,4 +223,32 @@ describe('Injection', function () {
             )
         })
     })
+
+    it('Suivi répétition', function () {
+        const dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        const element = dom.window.document.querySelector('div')
+        element.innerHTML = '<span class="suivi-repetition"></span>'
+        const profil = new Profil('mes_infos')
+        profil.suivi = [{ date: 1 }, { date: 2 }, { date: 3 }]
+        injection.suiviRepetition(element.querySelector('.suivi-repetition'), profil)
+
+        assert.strictEqual(element.innerHTML, '<span class="suivi-repetition">3</span>')
+    })
+
+    it('Suivi dernière fois', function () {
+        const dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        const element = dom.window.document.querySelector('div')
+        element.innerHTML = '<span class="suivi-derniere-fois"></span>'
+        const profil = new Profil('mes_infos')
+        profil.suivi = [{}, {}, { date: new Date() }]
+        injection.suiviDerniereFois(
+            element.querySelector('.suivi-derniere-fois'),
+            profil
+        )
+
+        assert.strictEqual(
+            element.innerHTML,
+            '<span class="suivi-derniere-fois">just now</span>'
+        )
+    })
 })

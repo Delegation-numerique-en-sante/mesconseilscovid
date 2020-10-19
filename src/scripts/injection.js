@@ -1,3 +1,5 @@
+import { format } from 'timeago.js'
+
 import prefectures from './data/prefectures.js'
 import departements from './data/departements.js'
 
@@ -64,4 +66,13 @@ export function antecedents(element, algoOrientation) {
         content += '.'
         element.textContent = content
     }
+}
+
+export function suiviRepetition(element, profil) {
+    element.textContent = profil.suivi.length
+}
+
+export function suiviDerniereFois(element, profil) {
+    const dernierEtat = profil.dernierEtat()
+    element.textContent = dernierEtat ? format(new Date(dernierEtat.date), 'fr') : ''
 }
