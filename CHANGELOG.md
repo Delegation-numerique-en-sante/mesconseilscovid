@@ -1,6 +1,6 @@
 # Changelog
 
-## 2020-10-16
+## 2020-10-19
 
 * ajout d’une question relative aux tests
 * réorganisation des conseils par thématique
