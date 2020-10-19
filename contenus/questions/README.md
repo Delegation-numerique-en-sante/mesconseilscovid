@@ -318,11 +318,11 @@ Le test virologique (aussi appelé RT-PCR) détecte la présence du virus dans u
 
 ## [question_foyer_enfants_libellé.md](question_foyer_enfants_libellé.md)
 
-<!---->Je vis avec un ou des <b>enfants</b> de moins de 11 ans
+<!---->Je vis avec un ou des <b>enfants</b> de moins de 15 ans
 
 ---
 
-<!---->Cette personne vit avec un ou des <b>enfants</b> de moins de 11 ans
+<!---->Cette personne vit avec un ou des <b>enfants</b> de moins de 15 ans
 
 
 
