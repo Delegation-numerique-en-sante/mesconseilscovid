@@ -16,5 +16,5 @@ Retrouvez le [lieu de test le plus proche](https://sante.fr/cartographie-depista
 
     * [La stratégie de dépistage](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
 
-    * [Sérologies : réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/les-serologies-reponses-a-vos-questions)
+    * [Sérologies : réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/reponses-a-vos-questions-sur-les-medicaments-pendant-la-crise-du-covid-19)
 
