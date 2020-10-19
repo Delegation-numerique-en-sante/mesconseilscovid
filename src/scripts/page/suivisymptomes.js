@@ -7,16 +7,10 @@ import {
 import AlgorithmeDeconfinement from '../algorithme/deconfinement.js'
 
 export default function suivisymptomes(form, app) {
-    // On évite de redemander à la personne si elle a des symptômes aujourd’hui
-    // lorsqu’on est dans la continuité du formulaire (vs suivi)
-    if (!app.profil.isComplete()) {
-        const elem = form.querySelector('#suivi-symptomes-aujourdhui')
-        if (elem) {
-            hideElement(elem)
-            ;[].forEach.call(form.querySelectorAll('.secondary'), function (elem) {
-                elem.setAttribute('style', 'margin-left: 0')
-            })
-        }
+    // Enregistre le démarrage du suivi si la date n’est pas renseignée
+    // (elle a pu être mise à zéro en cas d’effacement du suivi).
+    if (!app.profil.hasSuiviStartDate()) {
+        app.profil.suivi_start_date = new Date()
     }
 
     // Question affichée seulement si on répond pour un proche

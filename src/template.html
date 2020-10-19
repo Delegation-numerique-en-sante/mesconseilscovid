@@ -621,6 +621,7 @@
                 </div>
 
                 <div id="suivi" hidden>
+                    <h2>Mon suivi</h2>
                     <div id="suivi-gravite-3" class="statut suivi-gravite-3" hidden>
                         {{ suivi_gravité_3 }}
                     </div>
@@ -632,6 +633,10 @@
                     </div>
                     <div id="suivi-gravite-0" class="statut suivi-gravite-0" hidden>
                         {{ suivi_gravité_0 }}
+                    </div>
+                    <div id="suivi-link" hidden>
+                        <a class="button button-full-width" href="#suiviintroduction">Remplir le questionnaire de suivi</a>
+                        <p>{{ conseils_autosuivi_historique|me_or_them }}</p>
                     </div>
                 </div>
 
@@ -679,6 +684,7 @@
             </div>
 
             <div id="conseils-personnels" class="conseils">
+                <h2 id="conseils-personnels-titre" hidden>Mes conseils personnels</h2>
                 <div class="reponse">
                     <div id="reponse-depistage-positif" hidden>
                         {{ reponse_depistage_positif }}

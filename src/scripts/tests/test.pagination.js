@@ -952,6 +952,7 @@ describe('Pagination', function () {
                 antecedent_cirrhose: false,
                 antecedent_drepano: false,
                 antecedent_chronique_autre: false,
+                _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
             assert.strictEqual(
                 beforeSuiviSymptomes(profil, questionnaire),
@@ -980,10 +981,67 @@ describe('Pagination', function () {
                 antecedent_cirrhose: false,
                 antecedent_drepano: false,
                 antecedent_chronique_autre: false,
+                _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
             assert.strictEqual(
                 beforeSuiviHistorique(profil, questionnaire),
                 'symptomesactuels'
+            )
+        })
+        it('redirige suivi symptômes vers début symptômes si manquant', function () {
+            const profil = new Profil('mes_infos', {
+                departement: '34',
+                activite_pro: false,
+                activite_pro_public: false,
+                activite_pro_sante: false,
+                activite_pro_liberal: false,
+                foyer_enfants: true,
+                foyer_fragile: false,
+                age: '42',
+                grossesse_3e_trimestre: false,
+                poids: '70',
+                taille: '178',
+                antecedent_cardio: false,
+                antecedent_diabete: true,
+                antecedent_respi: false,
+                antecedent_dialyse: true,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+            })
+            assert.strictEqual(
+                beforeSuiviSymptomes(profil, questionnaire),
+                'debutsymptomes'
+            )
+        })
+        it('redirige suivi historique vers début symptômes si manquant', function () {
+            const profil = new Profil('mes_infos', {
+                departement: '34',
+                activite_pro: false,
+                activite_pro_public: false,
+                activite_pro_sante: false,
+                activite_pro_liberal: false,
+                foyer_enfants: true,
+                foyer_fragile: false,
+                age: '42',
+                grossesse_3e_trimestre: false,
+                poids: '70',
+                taille: '178',
+                antecedent_cardio: false,
+                antecedent_diabete: true,
+                antecedent_respi: false,
+                antecedent_dialyse: true,
+                antecedent_cancer: false,
+                antecedent_immunodep: false,
+                antecedent_cirrhose: false,
+                antecedent_drepano: false,
+                antecedent_chronique_autre: false,
+            })
+            assert.strictEqual(
+                beforeSuiviHistorique(profil, questionnaire),
+                'debutsymptomes'
             )
         })
     })
