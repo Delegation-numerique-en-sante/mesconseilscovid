@@ -38,7 +38,7 @@ export async function remplirQuestionnaire(page, choix) {
     await remplirDepistage(page, choix.depistage, choix.depistageResultat)
     await remplirDepartement(page, choix.departement)
     await remplirFoyer(page, choix.enfants)
-    await remplirAntecedents(page)
+    await remplirAntecedents(page, choix.antecedents || [])
     await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
     if (choix.age < 15) return
     await remplirActivite(page, choix.activitePro)
@@ -67,11 +67,22 @@ async function remplirFoyer(page, enfants) {
     ])
 }
 
-async function remplirAntecedents(page) {
-    // TODO: cocher les cases
-    let bouton = await page.waitForSelector(
-        '#page >> text=/Aucun de ces éléments ne correspond à .* situation/'
-    )
+async function remplirAntecedents(page, antecedents) {
+    let bouton
+    let label
+    if (antecedents.length) {
+        antecedents.forEach(async (antecedent) => {
+            label = await page.waitForSelector(
+                `#page label[for="antecedent_${antecedent}"]`
+            )
+            await label.click()
+        })
+        bouton = await page.waitForSelector('#page >> text=Continuer')
+    } else {
+        bouton = await page.waitForSelector(
+            '#page >> text=/Aucun de ces éléments ne correspond à .* situation/'
+        )
+    }
     await Promise.all([
         bouton.click(),
         page.waitForNavigation({ url: '**/#caracteristiques' }),

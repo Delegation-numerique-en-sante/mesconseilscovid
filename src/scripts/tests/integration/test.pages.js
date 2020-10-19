@@ -37,6 +37,7 @@ describe('Pages', function () {
             contactARisque: [],
             depistage: false,
             departement: '80',
+            antecedents: ['cardio'],
             enfants: true,
             age: '42',
             taille: '165',
@@ -51,8 +52,11 @@ describe('Pages', function () {
             await page.click('#page #conseils-activite h3')
 
             // On peut aller vers la médecine du travail
+            let link = await page.waitForSelector(
+                '#page #conseils-activite-pro-arret a >> text="santé au travail"'
+            )
             await Promise.all([
-                page.click('#page #conseils-activite-pro a >> text="santé au travail"'),
+                link.click(),
                 page.waitForNavigation({ url: '**/#medecinedutravail' }),
             ])
         }
