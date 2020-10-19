@@ -1,1 +1,1 @@
-Si vous ne disposez pas de ces informations précises, vous pouvez saisir une approximation et revenir plus tard pour affiner ces caractéristiques. <b>Les conseils seront alors mis à jour.</b>
+Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour les modifier. <b>Les conseils seront alors mis à jour.</b>
