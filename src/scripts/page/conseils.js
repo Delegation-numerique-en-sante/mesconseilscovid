@@ -99,6 +99,8 @@ function showRelevantSuiviBlocks(element, algoSuivi) {
         blockNames.push(algoSuivi.psyBlockNameToDisplay())
     }
     if (algoSuivi.profil.hasHistorique()) {
+        blockNames.push('suivi-link')
+        blockNames.push('conseils-personnels-titre')
         blockNames.push('conseils-sante-historique-symptomes')
     }
     displayBlocks(element, blockNames)
