@@ -9,3 +9,5 @@ Nous vous conseillons de :
 4. Si vous avez installé l’application StopCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans l’onglet « Me déclarer ».
 
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+
+Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
