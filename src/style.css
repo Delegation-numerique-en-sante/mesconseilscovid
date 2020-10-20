@@ -991,14 +991,7 @@ a#geolocalisation {
 }
 
 @media print {
-    #conseils-vie-quotidienne header,
-    #conseils-activite header,
-    #conseils-foyer header,
-    #conseils-grossesse header,
-    #conseils-covid header,
-    #conseils-block.symptomes-actuels h2,
-    #conseils-block.symptomes-passes h2,
-    #conseils-block.contact-a-risque h2 {
+    #conseils-blocs .conseils header {
         padding-top: 0;
         background-image: none;
     }
@@ -1024,6 +1017,7 @@ a#geolocalisation {
     .block > h2,
     a[href^='#'],
     .form-controls,
+    #pour-finir,
     footer {
         display: none;
     }
