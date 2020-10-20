@@ -185,13 +185,6 @@ export function initRouter(app) {
         }
     })
 
-    addRoute('medecinedutravail', function (element) {
-        if (app.profil.isComplete()) {
-            showElement(element.querySelector('#js-profil-full'))
-            hideElement(element.querySelector('#js-profil-empty'))
-        }
-    })
-
     addRoute('conditionsutilisation', function (element) {
         if (app.profil.isComplete()) {
             showElement(element.querySelector('#js-profil-full'))

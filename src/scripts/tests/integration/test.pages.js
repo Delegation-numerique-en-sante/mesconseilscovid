@@ -12,61 +12,6 @@ describe('Pages', function () {
         )
     })
 
-    it('remplir le questionnaire classique puis santé au travail', async function () {
-        const page = this.test.page
-
-        // On est redirigé vers l’introduction
-        await Promise.all([
-            page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
-        ])
-
-        // Page d’accueil
-        {
-            let bouton = await page.waitForSelector('text="Démarrer"')
-            await Promise.all([
-                bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomesactuels' }),
-            ])
-        }
-
-        // Remplir le questionnaire
-        await remplirQuestionnaire(page, {
-            symptomesActuels: [],
-            symptomesPasses: false,
-            contactARisque: [],
-            depistage: false,
-            departement: '80',
-            enfants: true,
-            age: '42',
-            taille: '165',
-            poids: '70',
-            grossesse: false,
-            activitePro: true,
-        })
-
-        // Conseils
-        {
-            // On rend l’activité pro visible
-            await page.click('#page #conseils-activite h3')
-
-            // On peut aller vers la médecine du travail
-            await Promise.all([
-                page.click('#page #conseils-activite-pro a >> text="santé au travail"'),
-                page.waitForNavigation({ url: '**/#medecinedutravail' }),
-            ])
-        }
-
-        // Médecine du travail
-        {
-            // La page comporte un lien direct de retour vers mes conseils
-            await Promise.all([
-                page.click('#page a >> text="Retourner à mes conseils"'),
-                page.waitForNavigation({ url: '**/#conseils' }),
-            ])
-        }
-    })
-
     it('remplir le questionnaire avec pédiatrie', async function () {
         const page = this.test.page
 
