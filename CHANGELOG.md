@@ -1,5 +1,15 @@
 # Changelog
 
+## 2020-10-20
+
+* ajout de conseils liés au couvre-feu dans le bloc Vie quotidienne
+* correction orthographe Ille-et-Vilaine
+* ouverture des conseils avant l’impression
+* pertinence de la dénomination des enfants
+* ajout d’une vidéo pour les conseils avec cas symptomatiques
+* retrait de la page de médecine du travail (lien plus pertinent)
+* rend le bloc de suivi plus explicite
+
 ## 2020-10-19
 
 * ajout d’une question relative aux tests
