@@ -50,11 +50,11 @@ export default {
         'http://www.gard.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-dans-le-Gard',
     '31':
         'http://www.haute-garonne.gouv.fr/Politiques-publiques/Securite-et-protection-des-personnes-et-des-biens/Coronavirus-COVID19',
-    '32':
-        'http://www.gers.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-sans-le-Gers',
+    '32': 'https://www.gers.gouv.fr/Actualites/COVID-19-Une-rubrique-dediee',
     '33':
         'http://www.gironde.gouv.fr/Actualites/COVID-19-point-de-la-situation-en-Gironde',
-    '34': 'http://www.herault.gouv.fr/Actualites/L-Herault-face-a-la-Covid-19',
+    '34':
+        'http://www.herault.gouv.fr/Actualites/INFOS/Covid-19-Point-sur-la-situation-dans-l-Herault',
     '35': 'https://www.ille-et-vilaine.gouv.fr/Actualites/Coronavirus-COVID-19',
     '36':
         'https://www.indre.gouv.fr/Politiques-publiques/Securite-et-protection-de-la-population/COVID-19',
@@ -73,17 +73,17 @@ export default {
     '43': 'http://www.haute-loire.gouv.fr/',
     '44':
         'https://www.loire-atlantique.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-en-Loire-Atlantique',
-    '45':
-        'https://www.loiret.gouv.fr/Actualites/COVID-19-Informations-recommandations-mesures-sanitaires',
+    '45': 'https://www.loiret.gouv.fr/Actualites/COVID-19-La-situation-dans-le-Loiret',
     '46':
         'http://www.lot.gouv.fr/covid-19-point-sur-la-situation-dans-le-lot-r4332.html',
     '47':
         'http://www.lot-et-garonne.gouv.fr/coronavirus-covid-19-toutes-les-informations-r876.html',
     '48': 'http://www.lozere.gouv.fr/Actualites/COVID-19-Point-de-situation-en-Lozere',
     '49':
-        'http://www.maine-et-loire.gouv.fr/coronavirus-covid-19-strategie-de-deconfinement-r2190.html',
+        'http://www.maine-et-loire.gouv.fr/le-maine-et-loire-face-a-la-covid19-r2210.html',
     '50': 'https://www.manche.gouv.fr/Politiques-publiques/Sante/Coronavirus-COVID-19',
-    '51': 'http://www.marne.gouv.fr/Actualites/Infos/Coronavirus-COVID-19',
+    '51':
+        'http://www.marne.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-dans-la-Marne',
     '52':
         'http://www.haute-marne.gouv.fr/Politiques-publiques/Securite/Securite-sanitaire/COVID-19/Covid-19',
     '53':
@@ -94,7 +94,7 @@ export default {
         'http://www.meuse.gouv.fr/Actualites/Mesures-relatives-a-la-lutte-contre-le-virus-Covid-19',
     '56':
         'https://www.morbihan.gouv.fr/Actualites/Actus/Le-Morbihan-face-au-Coronavirus-Covid19',
-    '57': 'http://www.moselle.gouv.fr/tags/view/Les+dossiers/Informations+COVID-19',
+    '57': 'http://www.moselle.gouv.fr/',
     '58': 'http://www.nievre.gouv.fr/covid-19-r781.html',
     '59':
         'https://www.nord.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-dans-le-Nord',
@@ -122,7 +122,8 @@ export default {
     '74': 'http://www.haute-savoie.gouv.fr/Actualites/Actualites/Coronavirus-Covid-19',
     '75':
         'https://www.prefectures-regions.gouv.fr/ile-de-france/Actualites/Covid-19-le-bilan-de-l-action-des-services-de-l-Etat-en-Ile-de-France',
-    '76': 'https://www.seine-maritime.gouv.fr/Actualites/COVID-19',
+    '76':
+        'https://www.seine-maritime.gouv.fr/Actualites/COVID19-Point-de-situation-Les-mesures-en-vigueur-dans-le-departement-de-la-Seine-Maritime',
     '77':
         'http://www.seine-et-marne.gouv.fr/Actualites/Actualite-du-prefet/Les-infos-locales-et-nationales-sur-le-Coronavirus',
     '78': 'http://www.yvelines.gouv.fr/Actualites/COVID-19',
@@ -165,6 +166,8 @@ export default {
     '975':
         'http://www.saint-pierre-et-miquelon.gouv.fr/Publications/Coronavirus-Covid-19',
     '976': 'http://www.mayotte.gouv.fr/Politiques-publiques/Sante/CORONAVIRUS-COVID-19',
-    '977': 'http://www.saint-barth-saint-martin.gouv.fr/',
-    '978': 'http://www.saint-barth-saint-martin.gouv.fr/',
+    '977':
+        'http://www.saint-barth-saint-martin.gouv.fr/Actualites/LA-UNE/Actualites/COVID-19-Point-sur-la-situation-a-Saint-Martin-et-a-Saint-Barthelemy',
+    '978':
+        'http://www.saint-barth-saint-martin.gouv.fr/Actualites/LA-UNE/Actualites/COVID-19-Point-sur-la-situation-a-Saint-Martin-et-a-Saint-Barthelemy',
 }
