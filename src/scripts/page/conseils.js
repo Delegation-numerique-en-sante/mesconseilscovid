@@ -100,14 +100,25 @@ function getCustomIllustrationName(profil) {
 }
 
 function showRelevantSuiviBlocks(element, algoSuivi) {
-    var blockNames = [algoSuivi.graviteBlockNameToDisplay()]
+    const profil = algoSuivi.profil
+    const blockNames = [algoSuivi.graviteBlockNameToDisplay()]
     if (algoSuivi.psy !== 0) {
         blockNames.push(algoSuivi.psyBlockNameToDisplay())
     }
-    if (algoSuivi.profil.hasHistorique()) {
-        blockNames.push('suivi-link')
+    if (profil.hasHistorique()) {
+        blockNames.push('suivi-bloc-liens')
         blockNames.push('conseils-personnels-titre')
         blockNames.push('conseils-sante-historique-symptomes')
+
+        // eslint-disable-next-line no-extra-semi
+        ;[].forEach.call(element.querySelectorAll('.suivi-repetition'), (elem) => {
+            injection.suiviRepetition(elem, profil)
+        })
+
+        // eslint-disable-next-line no-extra-semi
+        ;[].forEach.call(element.querySelectorAll('.suivi-derniere-fois'), (elem) => {
+            injection.suiviDerniereFois(elem, profil)
+        })
     }
     displayBlocks(element, blockNames)
 }
