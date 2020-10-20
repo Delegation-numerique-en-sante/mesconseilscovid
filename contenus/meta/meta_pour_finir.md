@@ -28,8 +28,17 @@ Vos réponses sont sauvegardées dans votre navigateur et les conseils sont mis 
         </div>
         <div class="feedback-thankyou" hidden>
             <p>
-                Merci beaucoup pour votre message qui nous aidera à améliorer les conseils.
+                Merci beaucoup pour votre message qui nous aidera à améliorer les conseils. <br/>
+                Vous pouvez partager ce lien (vos données ne seront pas transmises) :
             </p>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fmesconseilscovid.sante.gouv.fr%2F&t=Mes%20Conseils%20Covid%20%3A%20Des%20conseils%20personnels%20pour%20agir%20contre%20le%20virus" class="button button-outline button-feedback-social-facebook" target="_blank" rel="noopener noreferrer">sur Facebook</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmesconseilscovid.sante.gouv.fr%2F&via=conseilscovid&text=Mes%20Conseils%20Covid%20%3A%20Des%20conseils%20personnels%20pour%20agir%20contre%20le%20virus&hashtags=covid" class="button button-outline button-feedback-social-twitter" target="_blank" rel="noopener noreferrer">sur Twitter</a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

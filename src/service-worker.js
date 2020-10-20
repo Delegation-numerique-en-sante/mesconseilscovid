@@ -29,6 +29,8 @@ const CACHE_FILES = [
     'feedback-positif.svg',
     'feedback-contact.svg',
     'feedback-flag.svg',
+    'feedback-social-facebook.svg',
+    'feedback-social-twitter.svg',
     'information.svg',
     'information-soumission.svg',
     'select.svg',
