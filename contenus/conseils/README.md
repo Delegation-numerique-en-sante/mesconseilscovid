@@ -324,6 +324,8 @@ Nous vous conseillons de :
 
 6. Revenir sur Mes Conseils Covid **quand vous aurez reçu vos résultats** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
+Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
+
 
 
 ## [conseils_personnels_symptômes_actuels_positif_critique.md](conseils_personnels_symptômes_actuels_positif_critique.md)
@@ -356,6 +358,8 @@ Nous vous conseillons de :
 
 7. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
+Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
+
 
 
 ## [conseils_personnels_symptômes_actuels_sans_depistage_critique.md](conseils_personnels_symptômes_actuels_sans_depistage_critique.md)
@@ -380,6 +384,8 @@ Nous vous conseillons de :
 
 4. Revenir sur Mes Conseils Covid **quand vous aurez reçu vos résultats** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
+Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
+
 
 
 ## [conseils_personnels_symptômes_passés_positif.md](conseils_personnels_symptômes_passés_positif.md)
@@ -396,6 +402,8 @@ Nous vous conseillons de :
 
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
+Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
+
 
 
 ## [conseils_personnels_symptômes_passés_sans_depistage.md](conseils_personnels_symptômes_passés_sans_depistage.md)
@@ -411,6 +419,8 @@ Nous vous conseillons de :
 4. Si le test est positif, contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisées depuis le début de votre période contagieuse.
 
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+
+Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
 
 
 
