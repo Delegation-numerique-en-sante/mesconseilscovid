@@ -1,6 +1,6 @@
 <div class="conseil">
 
-Consultez notre page dédiée : [« Conseils liés aux activités et à la santé des moins de 15 ans »](#pediatrie)
+Consultez notre page dédiée : [« Conseils liés aux activités et à la santé des enfants »](#pediatrie)
 
 </div>
 
