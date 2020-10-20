@@ -104,8 +104,12 @@ export function bindImpression(element) {
     printButton.addEventListener('click', (event) => {
         event.preventDefault()
         try {
+            element.querySelectorAll('details').forEach((detail) => {
+                detail.setAttribute('open', '')
+            })
             window.print()
         } catch (e) {
+            console.error(e)
             alert('Cette fonctionnalité n’est pas présente sur votre appareil')
         }
     })
