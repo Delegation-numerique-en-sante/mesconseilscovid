@@ -203,6 +203,27 @@ main footer .feedback-block {
     margin-top: 0;
 }
 
+.feedback-thankyou ul {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+}
+.feedback-thankyou ul li {
+    margin: 1rem;
+}
+@media only screen and (min-width: 680px) {
+    .feedback-thankyou ul {
+        align-items: stretch;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
 main footer .legals {
     font-size: 0.8rem;
     text-align: center;
@@ -669,6 +690,18 @@ a.button-feedback-flag[href=''] {
 }
 a.button-feedback-contact {
     background: no-repeat 24px center url('feedback-contact.svg');
+    padding: 12px 24px 12px 60px;
+    margin-top: 0;
+    margin-left: 1rem;
+}
+a.button-feedback-social-facebook {
+    background: no-repeat 24px center url('feedback-social-facebook.svg');
+    padding: 12px 24px 12px 60px;
+    margin-top: 0;
+    margin-left: 1rem;
+}
+a.button-feedback-social-twitter {
+    background: no-repeat 24px center url('feedback-social-twitter.svg');
     padding: 12px 24px 12px 60px;
     margin-top: 0;
     margin-left: 1rem;
