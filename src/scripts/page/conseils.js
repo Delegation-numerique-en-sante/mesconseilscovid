@@ -1,4 +1,9 @@
-import { bindCalendar, bindFeedback, bindImpression } from '../actions.js'
+import {
+    bindCalendar,
+    bindFeedback,
+    bindImpression,
+    bindSuppressionTotale,
+} from '../actions.js'
 import {
     displayBlocks,
     displayElementById,
@@ -79,6 +84,7 @@ export default function conseils(element, app) {
     if (app.profil.hasSuiviStartDate()) {
         bindCalendar(element, app.profil)
     }
+    bindSuppressionTotale(element.querySelector('.js-suppression'), app)
 }
 
 function getCustomIllustrationName(profil) {
