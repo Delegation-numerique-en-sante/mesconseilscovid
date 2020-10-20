@@ -222,7 +222,7 @@ Nous n’avons pas accès à vos données et vous pouvez <a href="#introduction"
 
 ## [meta_pédiatrie.md](meta_pédiatrie.md)
 
-## Conseils pour les moins de 15 ans
+## Conseils pour les enfants
 
 <div id="conseils-pediatrie-general" class="conseils">
 

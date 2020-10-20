@@ -1,4 +1,4 @@
-## Conseils pour les moins de 15 ans
+## Conseils pour les enfants
 
 <div id="conseils-pediatrie-general" class="conseils">
 
