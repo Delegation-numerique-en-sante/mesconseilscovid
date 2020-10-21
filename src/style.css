@@ -55,27 +55,41 @@ header {
 header section {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-header img {
+header img#marianne {
     width: 100px;
     margin-right: 10px;
 }
 header h1 {
     text-align: center;
-    flex-grow: 2;
+    margin: 0;
 }
 header h1 a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: black;
+    border: 2px solid white;
+    padding: 10px;
+    flex-direction: column;
 }
 header h1 a:hover {
-    text-decoration: underline;
+    border: 2px solid black;
 }
-header h1 a:visited {
-    color: black;
+@media only screen and (min-width: 680px) {
+    header h1 a {
+        flex-direction: row;
+    }
+    header h1 a #logo-titre {
+        width: 100px;
+        height: 45px;
+    }
 }
-header a.button {
-    margin-top: 1rem;
+
+header #js-profil-empty-header,
+header #js-profil-full-header {
+    min-width: 100px; /* Matches Marianne size. */
+    margin-left: 10px;
 }
 main {
     background-color: #f9f8f6;

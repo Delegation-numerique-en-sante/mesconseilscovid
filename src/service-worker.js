@@ -33,6 +33,8 @@ const CACHE_FILES = [
     'feedback-social-twitter.svg',
     'information.svg',
     'information-soumission.svg',
+    'logo-titre.png',
+    'logo-carre.png',
     'select.svg',
     'star.svg',
     'trash.svg',
