@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-10-21
+
+* ajout d’un logo
+* ajout de liens de partage vers Facebook et Twitter
+
 ## 2020-10-20
 
 * ajout de conseils liés au couvre-feu dans le bloc Vie quotidienne
