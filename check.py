@@ -68,7 +68,7 @@ def service_worker():
         "template.html",
         "index.html",
         "illustrations/mesconseilscovid.png",
-        "illustrations/_new",
+        "logo.png",
         "browserconfig.xml",
     }
     REQUIRED_FILES = {"/", "style.css", "scripts/main.js", "favicon.ico"}
