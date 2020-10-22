@@ -10,7 +10,11 @@ describe('Algorithme d’orientation', function () {
             var profil = new Profil('mes_infos', {
                 departement: '01',
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            var algoOrientation = new AlgorithmeOrientation(
+                profil,
+                { '01': 9.9 },
+                { '01': false }
+            )
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-departement-circulation-faible',
@@ -21,18 +25,23 @@ describe('Algorithme d’orientation', function () {
             var profil = new Profil('mes_infos', {
                 departement: '01',
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 10.1 })
+            var algoOrientation = new AlgorithmeOrientation(
+                profil,
+                { '01': 10.1 },
+                { '01': true }
+            )
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-departement-circulation-elevee',
+                'conseils-couvre-feu-actif',
             ])
         })
 
-        it('Un département inconnu n’affiche pas la localisation', function () {
+        it('Un département inconnu n’affiche pas la localisation ni le couvre-feu', function () {
             var profil = new Profil('mes_infos', {
                 departement: '01',
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil, {}, {})
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
             ])
@@ -43,7 +52,11 @@ describe('Algorithme d’orientation', function () {
                 departement: '01',
                 symptomes_actuels: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            var algoOrientation = new AlgorithmeOrientation(
+                profil,
+                { '01': 9.9 },
+                { '01': false }
+            )
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-departement-circulation-faible',
@@ -55,7 +68,11 @@ describe('Algorithme d’orientation', function () {
                 departement: '01',
                 symptomes_passes: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            var algoOrientation = new AlgorithmeOrientation(
+                profil,
+                { '01': 9.9 },
+                { '01': false }
+            )
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-departement-circulation-faible',
@@ -67,7 +84,11 @@ describe('Algorithme d’orientation', function () {
                 departement: '01',
                 contact_a_risque: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            var algoOrientation = new AlgorithmeOrientation(
+                profil,
+                { '01': 9.9 },
+                { '01': false }
+            )
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-departement-circulation-faible',

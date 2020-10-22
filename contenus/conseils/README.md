@@ -103,6 +103,20 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 
 
 
+## [conseils_couvre_feu_actif.md](conseils_couvre_feu_actif.md)
+
+<div class="conseil conseil-orange">
+
+<span class="nouveau">nouveau</span> À partir du samedi 24 octobre, le couvre-feu s’appliquera dans votre département de 21 h à 6 h.
+
+</div>
+
+Un couvre-feu a été mis en place de 21 h à 6 h en Île-de-France et dans huit métropoles : Grenoble, Lille, Lyon, Aix Marseille, Saint-Etienne, Rouen, Montpellier et Toulouse.
+
+Pour vous déplacer pendant le couvre-feu, il vous faut une **« Attestation de déplacement dérogatoire »**. Vous pouvez [la remplir et la télécharger en ligne ici](https://media.interieur.gouv.fr/attestation-couvre-feu-covid-19/).
+
+
+
 ## [conseils_covid.md](conseils_covid.md)
 
 Pour toutes vos questions sur la Covid, vous pouvez :
@@ -136,15 +150,7 @@ La circulation du virus est relativement lente dans votre département. Par pré
 
 ## [conseils_département_circulation_élevée.md](conseils_département_circulation_élevée.md)
 
-<div class="conseil conseil-orange">
-
 Vous résidez dans un département où le virus est **particulièrement présent**. Faites attention et appliquez strictement les gestes barrières, **dont le port du masque**.
-
-</div>
-
-Un couvre-feu a été mis en place de 21 h à 6 h en Île-de-France et dans huit métropoles : Grenoble, Lille, Lyon, Aix Marseille, Saint-Etienne, Rouen, Montpellier et Toulouse.
-
-Pour vous déplacer pendant le couvre-feu, il vous faut une **« Attestation de déplacement dérogatoire »**. Vous pouvez [la remplir et la télécharger en ligne ici](https://media.interieur.gouv.fr/attestation-couvre-feu-covid-19/).
 
 
 

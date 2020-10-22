@@ -977,6 +977,7 @@ a#geolocalisation {
     margin-right: 0.4em;
     background: #000091;
     color: #fff;
+    font-variant: small-caps;
 }
 
 .message {
