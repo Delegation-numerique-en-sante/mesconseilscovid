@@ -166,8 +166,4 @@ export default {
     '975':
         'http://www.saint-pierre-et-miquelon.gouv.fr/Publications/Coronavirus-Covid-19',
     '976': 'http://www.mayotte.gouv.fr/Politiques-publiques/Sante/CORONAVIRUS-COVID-19',
-    '977':
-        'http://www.saint-barth-saint-martin.gouv.fr/Actualites/LA-UNE/Actualites/COVID-19-Point-sur-la-situation-a-Saint-Martin-et-a-Saint-Barthelemy',
-    '978':
-        'http://www.saint-barth-saint-martin.gouv.fr/Actualites/LA-UNE/Actualites/COVID-19-Point-sur-la-situation-a-Saint-Martin-et-a-Saint-Barthelemy',
 }
