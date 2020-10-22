@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-10-22
+
+* ajout d’un message relatif au couvre-feu à venir dans 54 départements
+* passage de StopCovid à TousAntiCovid
+
 ## 2020-10-21
 
 * ajout d’un logo
