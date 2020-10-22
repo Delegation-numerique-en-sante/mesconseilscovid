@@ -284,7 +284,7 @@ Nous vous conseillons de :
 
 4. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisées depuis le début de votre période contagieuse.
 
-5. Si vous avez installé l’application StopCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans l’onglet « Me déclarer ».
+5. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans l’onglet « Me déclarer ».
 
 6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
@@ -302,7 +302,7 @@ Nous vous conseillons de :
 
 4. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisées depuis le début de votre période contagieuse.
 
-5. Si vous avez installé l’application StopCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans l’onglet « Me déclarer ».
+5. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans l’onglet « Me déclarer ».
 
 6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
@@ -398,7 +398,7 @@ Nous vous conseillons de :
 
 3. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisées depuis le début de votre période contagieuse.
 
-4. Si vous avez installé l’application StopCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans l’onglet « Me déclarer ».
+4. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans l’onglet « Me déclarer ».
 
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
@@ -528,6 +528,6 @@ Retrouvez les réponses à vos questions sur :
 * [l’alimentation, les courses et le nettoyage](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses)
 * [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »)
 
-L’application [StopCovid](https://www.gouvernement.fr/info-coronavirus/stopcovid) vous permettra de recevoir immédiatement une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid.
+L’application [TousAntiCovid](https://www.gouvernement.fr/info-coronavirus/tousanticovid) vous permettra de recevoir immédiatement une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid.
 
 

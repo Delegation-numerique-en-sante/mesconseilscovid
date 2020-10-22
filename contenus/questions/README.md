@@ -743,11 +743,11 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_contact_à_risque_stop_covid_libellé.md](question_symptômes_contact_à_risque_stop_covid_libellé.md)
 
-<!---->J’ai été informé par l’application StopCovid que j’ai été en contact avec une personne testée positive à la Covid
+<!---->J’ai été informé par l’application TousAntiCovid que j’ai été en contact avec une personne testée positive à la Covid
 
 ---
 
-<!---->Il ou elle a été informé par l’application StopCovid d’avoir été en contact avec une personne testée positive à la Covid
+<!---->Il ou elle a été informé par l’application TousAntiCovid d’avoir été en contact avec une personne testée positive à la Covid
 
 
 
