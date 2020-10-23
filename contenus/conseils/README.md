@@ -10,7 +10,7 @@
 
 * Si cela est possible, privilégiez le **télétravail**.
 * Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues.
-* Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/covid_guide_salaries_201020.pdf).
+* Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salariev20102020.pdf).
 
 </div>
 
@@ -20,7 +20,7 @@
 
 * Si vous n’avez pas la possibilité de **télétravailler** et que votre état de santé vous expose à un **très haut risque** de développer une **forme sévère** de Covid,  votre médecin traitant pourra vous fournir un **certificat d’isolement** à donner à votre employeur. Plus d’informations sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?_56_INSTANCE_XV0ItAcVS4ow_read_more=2).
 * Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues.
-* Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/covid_guide_salaries_201020.pdf).
+* Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salariev20102020.pdf).
 
 
 
@@ -49,7 +49,7 @@ Comme les **professions libérales** n’ont pas de médecine du travail, vous p
 
 * Nous vous invitons à privilégier le **télétravail** ou rentrer en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**.
 * Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues.
-* Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/covid_guide_salaries_201020.pdf).
+* Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salariev20102020.pdf).
 
 
 
@@ -190,7 +190,7 @@ Il est conseillé à votre proche de :
 
 * Afin d’éviter une forme grave de Covid, il vous est recommandé d’appliquer les mesures de **distanciation physique renforcée** :
 
-  * appliquez strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/affiche_-_gestes_barrieres.pdf),
+  * appliquez strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/coronavirus_mesures_barrieres_nouveau_.pdf),
   * gardez une distance de **plus d’1 mètre** avec chaque personne,
   * portez le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile,
   * **réduisez vos sorties** au strict minimum.
@@ -218,7 +218,7 @@ Le **port du masque est obligatoire** dans les **[lieux publics clos](https://so
 
 * Les mesures de **distanciation physique** :
 
-  * appliquer strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/affiche_-_gestes_barrieres.pdf),
+  * appliquer strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/coronavirus_mesures_barrieres_nouveau_.pdf),
   * garder une distance de **plus d’1 mètre** avec chaque personne.
 
 * Le port du **masque** :
