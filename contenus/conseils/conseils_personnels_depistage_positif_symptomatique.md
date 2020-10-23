@@ -6,7 +6,7 @@ Nous vous conseillons de :
 
 3. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 
-4. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisées depuis le début de votre période contagieuse.
+4. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. Des outils comme par exemple l'outil [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l'ONG BAYES peuvent vous aider à souvenir de toutes les personnes que vous avez croisées et des lieux que vous avez fréquenté depuis le début de votre période contagieuse. 
 
 5. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans l’onglet « Me déclarer ».
 
