@@ -53,8 +53,7 @@ export default {
     '32': 'https://www.gers.gouv.fr/Actualites/COVID-19-Une-rubrique-dediee',
     '33':
         'http://www.gironde.gouv.fr/Actualites/COVID-19-point-de-la-situation-en-Gironde',
-    '34':
-        'http://www.herault.gouv.fr/Actualites/INFOS/Covid-19-Point-sur-la-situation-dans-l-Herault',
+    '34': 'https://www.herault.gouv.fr/Actualites/L-Herault-face-a-la-Covid-19',
     '35': 'https://www.ille-et-vilaine.gouv.fr/Actualites/Coronavirus-COVID-19',
     '36':
         'https://www.indre.gouv.fr/Politiques-publiques/Securite-et-protection-de-la-population/COVID-19',
@@ -167,7 +166,7 @@ export default {
         'http://www.saint-pierre-et-miquelon.gouv.fr/Publications/Coronavirus-Covid-19',
     '976': 'http://www.mayotte.gouv.fr/Politiques-publiques/Sante/CORONAVIRUS-COVID-19',
     '977':
-        'http://www.saint-barth-saint-martin.gouv.fr/Actualites/LA-UNE/Actualites/COVID-19-Point-sur-la-situation-a-Saint-Martin-et-a-Saint-Barthelemy',
+        'http://www.saint-barth-saint-martin.gouv.fr/Actualites/LA-UNE/Actualites/COVID-19-Point-sur-la-situation-a-Saint-Martin-et-a-Saint-Barthelemy/(language)/fre-FR',
     '978':
-        'http://www.saint-barth-saint-martin.gouv.fr/Actualites/LA-UNE/Actualites/COVID-19-Point-sur-la-situation-a-Saint-Martin-et-a-Saint-Barthelemy',
+        'http://www.saint-barth-saint-martin.gouv.fr/Actualites/LA-UNE/Actualites/COVID-19-Point-sur-la-situation-a-Saint-Martin-et-a-Saint-Barthelemy/(language)/fre-FR',
 }
