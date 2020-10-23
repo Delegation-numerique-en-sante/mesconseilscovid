@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-10-23
+
+* ajout d’une couleur de texte par défaut, merci @notabene
+* mise à jour de liens cassés
+
 ## 2020-10-22
 
 * ajout d’un message relatif au couvre-feu à venir dans 54 départements
