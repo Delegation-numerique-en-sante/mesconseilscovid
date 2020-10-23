@@ -8,7 +8,7 @@ Nous vous conseillons de :
 
 4. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 
-5. Si le test est positif, contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. [BriserLaChaine.org](https://www.briserlachaine.org/statut) vous aidera à vous souvenir de toutes les personnes que vous avez croisées depuis le début de votre période contagieuse.
+5. Si le test est positif, contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. Des outils, comme par exemple l’outil [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées et des lieux que vous avez fréquentés depuis le début de votre période contagieuse.
 
 6. Revenir sur Mes Conseils Covid **quand vous aurez reçu vos résultats** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
