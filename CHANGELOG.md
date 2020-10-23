@@ -1,5 +1,11 @@
 # Changelog
 
+## 2020-10-24
+
+* mise à jour des valeurs d’incidence
+* mise à jour des liens vers les préfectures
+* précisions sur le lien briserlachaine.org
+
 ## 2020-10-23
 
 * ajout d’une couleur de texte par défaut, merci @notabene
