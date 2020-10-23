@@ -49,7 +49,10 @@ export default class Updater {
     updateFooter(fetchedVersion) {
         if (this.currentVersion !== fetchedVersion) {
             const element = document.querySelector('.js-latest-update')
-            const readableVersion = fetchedVersion.split('-').reverse().join('-')
+            // We might have a version with more characters than a date
+            // if multiple releases are required within the same day.
+            const datePart = fetchedVersion.substring(0, 10)
+            const readableVersion = datePart.split('-').reverse().join('-')
             element.innerText = ` - Mis à jour le : ${readableVersion}.`
         }
     }
