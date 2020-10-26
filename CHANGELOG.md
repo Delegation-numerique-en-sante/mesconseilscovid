@@ -1,5 +1,11 @@
 # Changelog
 
+## 2020-10-26
+
+* mise à jour du lien vers l’infographie des mesures barrières
+* mise à jour du texte relatif au couvre-feu
+* mise à jour des valeurs d’incidence
+
 ## 2020-10-24
 
 * mise à jour des valeurs d’incidence
