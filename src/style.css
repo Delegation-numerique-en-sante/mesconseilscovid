@@ -148,10 +148,14 @@ a .profil {
     max-width: 80ch;
 }
 .block ul {
-    padding-left: 1rem;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+.block .conseil ul {
+    margin: 1.5rem 0;
 }
 .block ul li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .introduction-block {
