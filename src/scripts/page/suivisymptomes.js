@@ -60,6 +60,16 @@ export default function suivisymptomes(form, app) {
 
         app.profil.ajouterEtat(etat)
 
+        window.plausible(`Suivi rempli`)
+
+        if (app.profil.suivi.length === 1) {
+            window.plausible(`Premier suivi`)
+        } else if (app.profil.suivi.length === 2) {
+            window.plausible(`Deuxième suivi`)
+        } else if (app.profil.suivi.length === 3) {
+            window.plausible(`Troisième suivi`)
+        }
+
         app.profil.symptomes_actuels = etat.symptomes
         app.profil.symptomes_actuels_temperature = etat.fievre === 'oui'
         app.profil.symptomes_actuels_temperature_inconnue = false
