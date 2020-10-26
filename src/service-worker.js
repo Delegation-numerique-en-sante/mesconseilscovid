@@ -12,6 +12,7 @@ const CACHE_FILES = [
     'fonts/marianne-bold-webfont.woff2',
     'site.webmanifest',
     'android-chrome-192x192.png',
+    'android-chrome-384x384.png',
     'android-chrome-512x512.png',
     'android-chrome-512x512-maskable.png',
     'apple-touch-icon.png',
