@@ -24,6 +24,7 @@
     "core-js": "3.6.5",
     "localforage": "1.7.3",
     "navigo": "7.1.2",
+    "pikaday": "^1.8.2",
     "timeago.js": "4.0.2",
     "whatwg-fetch": "3.4.1"
   },

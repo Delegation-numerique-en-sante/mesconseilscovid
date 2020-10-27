@@ -27,27 +27,13 @@ import debutsymptomes from './page/debutsymptomes.js'
 import suivisymptomes from './page/suivisymptomes.js'
 import suivihistorique from './page/suivihistorique.js'
 
-export function beforeConseils(profil, questionnaire) {
-    if (!profil.isComplete()) return questionnaire.checkPathTo('conseils', profil)
-}
-
-export function beforeSuiviIntroduction(profil, questionnaire) {
-    if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
-}
-
-export function beforeDebutSymptomes(profil, questionnaire) {
-    if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
-}
-
-export function beforeSuiviSymptomes(profil, questionnaire) {
-    if (!profil.symptomes_start_date) return 'debutsymptomes'
-    if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
-}
-
-export function beforeSuiviHistorique(profil, questionnaire) {
-    if (!profil.symptomes_start_date) return 'debutsymptomes'
-    if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
-}
+import {
+    beforeConseils,
+    beforeSuiviIntroduction,
+    beforeDebutSymptomes,
+    beforeSuiviSymptomes,
+    beforeSuiviHistorique,
+} from './questionnaire.js'
 
 export function initRouter(app) {
     var root = null
@@ -174,9 +160,9 @@ export function initRouter(app) {
 
     addAppRoute('conseils', conseils, beforeConseils)
     addAppRoute('suiviintroduction', suiviintroduction, beforeSuiviIntroduction)
-    addAppRoute('debutsymptomes', debutsymptomes)
+    addAppRoute('debutsymptomes', debutsymptomes, beforeDebutSymptomes)
     addAppRoute('suivisymptomes', suivisymptomes, beforeSuiviSymptomes)
-    addAppRoute('suivihistorique', suivihistorique)
+    addAppRoute('suivihistorique', suivihistorique, beforeSuiviHistorique)
 
     addRoute('pediatrie', function (element) {
         if (app.profil.isComplete()) {
