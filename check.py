@@ -69,6 +69,7 @@ def service_worker():
         "index.html",
         "illustrations/mesconseilscovid.png",
         "logo.png",
+        "logo-favicon.png",
         "browserconfig.xml",
     }
     REQUIRED_FILES = {"/", "style.css", "scripts/main.js", "favicon.ico"}
