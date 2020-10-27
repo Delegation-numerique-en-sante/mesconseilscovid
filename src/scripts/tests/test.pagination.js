@@ -7,7 +7,7 @@ import {
     beforeDebutSymptomes,
     beforeSuiviSymptomes,
     beforeSuiviHistorique,
-} from '../router.js'
+} from '../questionnaire.js'
 
 import Profil from '../profil.js'
 
