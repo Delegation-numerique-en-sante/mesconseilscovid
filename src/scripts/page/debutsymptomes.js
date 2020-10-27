@@ -80,6 +80,7 @@ export default function debutsymptomes(form, app) {
                 ],
                 weekdaysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
             },
+            theme: 'pika-mcc-theme',
         })
     }
 

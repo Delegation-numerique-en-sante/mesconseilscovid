@@ -1,5 +1,14 @@
 @import '../node_modules/pikaday/css/pikaday.css';
 
+.pika-mcc-theme .is-today .pika-button {
+    color: #000091;
+}
+.pika-mcc-theme .pika-button:hover,
+.pika-mcc-theme .pika-row.pick-whole-week:hover .pika-button {
+    color: #fff;
+    background-color: #000091;
+}
+
 @font-face {
     font-family: 'Marianne';
     font-style: normal;
