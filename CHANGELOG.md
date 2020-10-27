@@ -1,5 +1,11 @@
 # Changelog
 
+## 2020-10-27
+
+* amélioration du sélecteur de date pour le début des symptômes
+* message plus explicite de partage sur les réseaux sociaux
+* mise à jour des valeurs d’incidence
+
 ## 2020-10-26
 
 * mise à jour du lien vers l’infographie des mesures barrières
