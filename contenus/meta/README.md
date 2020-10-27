@@ -192,7 +192,7 @@ Vos réponses sont sauvegardées dans votre navigateur et les conseils sont mis 
         <div class="feedback-thankyou" hidden>
             <p>
                 Merci beaucoup pour votre message qui nous aidera à améliorer les conseils. <br/>
-                Vous pouvez partager ce lien (vos données ne seront pas transmises) :
+                Faites connaître Mes Conseils Covid en partageant ce lien (votre situation personnelle ne sera pas transmise) :
             </p>
             <ul>
                 <li>
