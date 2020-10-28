@@ -31,7 +31,7 @@ Si vous vivez seul :
 * demandez à vos proches ou au magasin / à la pharmacie de vous livrer vos courses et médicaments
 * faites déposer le colis sur votre palier pour minimiser les contacts
 * donnez des nouvelles à vos proches
-* si vous avez besoin de soins ou d'aide à domicile, de choisir une seule personne pour vous aider, qui devra se laver les mains très régulièrement et porter un masque
+* si vous avez besoin de soins ou d’aide à domicile, de choisir une seule personne pour vous aider, qui devra se laver les mains très régulièrement et porter un masque
 
 
 Pour plus d’informations sur l’isolement : [« J’ai les signes de la maladie du COVID-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/j_ai_des_signes_de_la_maladie_du_covid19.pdf)
