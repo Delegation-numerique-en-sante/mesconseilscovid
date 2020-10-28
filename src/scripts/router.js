@@ -86,7 +86,7 @@ export function initRouter(app) {
                 var element = loadPage(pageName, app)
                 fillNavigation(element, pageName)
                 viewFunc(element)
-                window.plausible('pageview')
+                trackPageView(pageName)
             },
             {
                 before: function (done) {
@@ -105,6 +105,13 @@ export function initRouter(app) {
                 },
             }
         )
+    }
+
+    function trackPageView(pageName) {
+        window.plausible('pageview')
+        if (location.hostname === 'mesconseilscovid.sante.gouv.fr') {
+            window.ATTag.page.send({ name: pageName })
+        }
     }
 
     function fillNavigation(element, pageName) {
