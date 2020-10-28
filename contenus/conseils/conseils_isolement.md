@@ -12,7 +12,7 @@ Si vous devez vous isoler, nous vous conseillons de :
 * privilégier des ustensiles de ménages qui ne dispersent pas les poussières comme une éponge ou une serpillère (l’aspirateur est à éviter).
 * jeter tout ce qui peut-être contaminé dans un sac poubelle à part, que vous mettrez dans un second sac poubelle une fois fermé.
 
-Si vous ne vivez pas seul, nous vous conseillons de ne pas partager vos espaces ou objets avec d'autres personnes :
+Si vous ne vivez pas seul, nous vous conseillons de ne pas partager vos espaces ou objets avec d’autres personnes :
 * restez, si possible, dans une pièce séparée, porte fermée
 * ne partagez pas votre lit
 * prenez vos repas seul
