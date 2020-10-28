@@ -1,5 +1,12 @@
 # Changelog
 
+## 2020-10-28
+
+* ajoute des conseils sur comment faire si je dois m’isoler
+* ajout de la mesure d’audience Stat@Gouv
+* corrige un lien cassé
+* mise à jour de la favicon
+
 ## 2020-10-27
 
 * amélioration du sélecteur de date pour le début des symptômes
