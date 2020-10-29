@@ -14,7 +14,7 @@ export default function introduction(element, app) {
         if (noms.indexOf('mes_infos') === -1) {
             const card = container.appendChild(
                 createElementFromHTML(`
-                    <div class="profil-card card">
+                    <li class="profil-card card">
                         <h3><span class="nouveau-profil">Pour moi</span></h3>
                         <div class="form-controls">
                             <a class="button button-full-width"
@@ -22,21 +22,21 @@ export default function introduction(element, app) {
                                 href="#${app.questionnaire.firstPage}"
                                 >Démarrer</a>
                         </div>
-                    </div>
+                    </li>
                 `)
             )
             bindCreateProfil(card.querySelector('[data-set-profil]'), app)
         }
         container.appendChild(
             createElementFromHTML(`
-                <div class="profil-card card">
+                <li class="profil-card card">
                     <h3><span class="nouveau-profil">Pour un proche</span></h3>
                     <div class="form-controls">
                         <a class="button button-full-width js-profil-new"
                             href="#nom"
                             >Démarrer</a>
                     </div>
-                </div>
+                </li>
             `)
         )
         renderProfilCards(container, noms, app)
