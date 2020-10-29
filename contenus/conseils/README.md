@@ -87,6 +87,16 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 
 
 
+## [conseils_confinement.md](conseils_confinement.md)
+
+<div class="conseil conseil-orange">
+
+<span class="nouveau">nouveau</span>À partir de ce soir minuit (dans la nuit du jeudi 29 au vendredi 30 octobre), le **confinement** s’applique sur tout le territoire français. Il vous faudra une attestation dérogatoire pour justifier de vos sorties à l'extérieur de votre domicile.
+
+</div>
+
+
+
 ## [conseils_contact_à_risque_info.md](conseils_contact_à_risque_info.md)
 
 * [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf)
@@ -154,7 +164,10 @@ Vous résidez dans un département où le virus est **particulièrement présent
 
 ## [conseils_département_défaut.md](conseils_département_défaut.md)
 
-Retrouvez les règles spécifiques de votre département sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
+L’ensemble des mesures liées au confinement seront détaillées prochainement par le Gouvernement, et nous mettrons alors à jour cette section.
+
+En attendant, vous pouvez visiter <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a> pour connaître les mesures en vigueur dans votre département.
+
 
 
 ## [conseils_enfants.md](conseils_enfants.md)

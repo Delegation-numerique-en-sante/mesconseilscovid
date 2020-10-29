@@ -332,6 +332,7 @@ export default class AlgorithmeOrientation {
         if (typeof this.couvrefeu !== 'undefined' && this.couvrefeu) {
             blockNames.push('conseils-couvre-feu-actif')
         }
+        blockNames.push('conseils-confinement')
         return blockNames
     }
 
