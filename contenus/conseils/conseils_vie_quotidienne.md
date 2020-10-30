@@ -10,6 +10,8 @@
 * les visites en EHPAD et maisons de retraite ;
 * les laboratoires d’analyse.
 
+Retrouvez les règles spécifiques de votre département sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
+
 Pour vos courses, nous vous conseillons de :
   * réaliser vos courses lors des périodes les moins fréquentées ;
   * suivre [les conseils de l'ANSES](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses).
