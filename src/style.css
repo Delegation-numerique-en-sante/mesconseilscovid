@@ -857,13 +857,16 @@ input[type='radio']:focus + label::before {
 }
 
 input[type='checkbox'],
-input[type='radio'] {
+input[type='radio'],
+.visually-hidden:not(:focus):not(:active) {
     position: absolute !important;
+    top: auto;
     height: 1px;
     width: 1px;
     overflow: hidden;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
 }
 
 input[type='checkbox']:disabled + label,
