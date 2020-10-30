@@ -10,7 +10,9 @@
 * les visites en EHPAD et maisons de retraite ;
 * les laboratoires d’analyse.
 
-Retrouvez les règles spécifiques de votre **département** sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
+Pour plus d’informations sur **les mesures du confinement**, vous pouvez consulter :
+* [la page dédiée du site du gouvernement](https://www.gouvernement.fr/info-coronavirus/confinement),
+* les règles spécifiques de votre **département** sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
 
 Pour vos **courses**, nous vous conseillons de :
   * réaliser vos courses lors des périodes les moins fréquentées ;
