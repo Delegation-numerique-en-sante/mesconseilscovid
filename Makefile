@@ -87,10 +87,6 @@ build:  ## Build all files (markdown + statics).
 generate:  ## Auto-regenerate the `index.html` file from `template.html` + contenus.
 	find . -type f \( -iname "*.md" ! -iname "README.md" ! -iname "CHANGELOG.md" -o -iname "template.html" ! -iname "CHANGELOG.md" \) -not -path "./node_modules/*" -not -path "./venv/*" | entr -r python3 build.py index
 
-incidence:  ## Generate data related to incidence.
-	python incidence.py generate
-	make pretty
-
 prefectures:  ## Generate data related to prefectures.
 	python prefectures.py generate
 	make pretty

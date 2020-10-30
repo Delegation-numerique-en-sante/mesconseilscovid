@@ -31,9 +31,8 @@ const CONSEILS_PERSONNELS = [
 ]
 
 export default class AlgorithmeOrientation {
-    constructor(profil, incidenceParDepartement) {
+    constructor(profil) {
         this.profil = profil
-        this.incidenceParDepartement = incidenceParDepartement
     }
 
     get situation() {
@@ -57,10 +56,6 @@ export default class AlgorithmeOrientation {
             symptomes = 'asymptomatique'
         }
         return `${depistage}_${symptomes}`
-    }
-
-    get incidence() {
-        return this.incidenceParDepartement[this.profil.departement]
     }
 
     get sup65() {
@@ -317,13 +312,6 @@ export default class AlgorithmeOrientation {
 
     vieQuotidienneBlockNamesToDisplay() {
         const blockNames = ['conseils-vie-quotidienne']
-        if (typeof this.incidence !== 'undefined') {
-            if (this.incidence >= 10) {
-                blockNames.push('conseils-departement-circulation-elevee')
-            } else {
-                blockNames.push('conseils-departement-circulation-faible')
-            }
-        }
         blockNames.push('conseils-confinement')
         return blockNames
     }

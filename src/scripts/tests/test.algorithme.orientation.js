@@ -6,38 +6,6 @@ import Profil from '../profil.js'
 
 describe('Algorithme d’orientation', function () {
     describe('Vie quotidienne', function () {
-        it('Un département à circulation faible', function () {
-            var profil = new Profil('mes_infos', {
-                departement: '01',
-            })
-            var algoOrientation = new AlgorithmeOrientation(
-                profil,
-                { '01': 9.9 },
-                { '01': false }
-            )
-            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
-                'conseils-vie-quotidienne',
-                'conseils-departement-circulation-faible',
-                'conseils-confinement',
-            ])
-        })
-
-        it('Un département à circulation élevée', function () {
-            var profil = new Profil('mes_infos', {
-                departement: '01',
-            })
-            var algoOrientation = new AlgorithmeOrientation(
-                profil,
-                { '01': 10.1 },
-                { '01': true }
-            )
-            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
-                'conseils-vie-quotidienne',
-                'conseils-departement-circulation-elevee',
-                'conseils-confinement',
-            ])
-        })
-
         it('Un département inconnu n’affiche pas la localisation', function () {
             var profil = new Profil('mes_infos', {
                 departement: '01',
@@ -61,7 +29,6 @@ describe('Algorithme d’orientation', function () {
             )
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-departement-circulation-faible',
                 'conseils-confinement',
             ])
         })
@@ -78,7 +45,6 @@ describe('Algorithme d’orientation', function () {
             )
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-departement-circulation-faible',
                 'conseils-confinement',
             ])
         })
@@ -95,7 +61,6 @@ describe('Algorithme d’orientation', function () {
             )
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-departement-circulation-faible',
                 'conseils-confinement',
             ])
         })
