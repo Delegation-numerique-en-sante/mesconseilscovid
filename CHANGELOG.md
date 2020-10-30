@@ -1,5 +1,12 @@
 # Changelog
 
+## 2020-10-30
+
+* mise à jour des informations relatives au confinement
+* ajout de contacts utiles :
+  * 39 19 (violences conjugales)
+  * 0800 19 00 00 (écoute et soutien psychologique)
+
 ## 2020-10-28
 
 * ajoute des conseils sur comment faire si je dois m’isoler
