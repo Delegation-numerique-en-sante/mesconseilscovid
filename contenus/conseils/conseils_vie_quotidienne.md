@@ -1,4 +1,4 @@
-<span class="nouveau">nouveau</span>Lors du confinement, restent ouverts :
+<span class="nouveau">nouveau</span>Lors du confinement, **restent ouverts** :
 * les services publics ;
 * les marchés alimentaires ;
 * les parcs, jardins, plages et plans d’eau ;
@@ -10,13 +10,13 @@
 * les visites en EHPAD et maisons de retraite ;
 * les laboratoires d’analyse.
 
-Retrouvez les règles spécifiques de votre département sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
+Retrouvez les règles spécifiques de votre **département** sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
 
-Pour vos courses, nous vous conseillons de :
+Pour vos **courses**, nous vous conseillons de :
   * réaliser vos courses lors des périodes les moins fréquentées ;
   * suivre [les conseils de l'ANSES](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses).
 
-Pour vos déplacements :
+Pour vos **déplacements** :
   * seules les frontières aves l’Union Européenne restent ouvertes ; un test négatif de moins de 72h est obligatoire pour entrer sur le territoire ;
   * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »).
 
