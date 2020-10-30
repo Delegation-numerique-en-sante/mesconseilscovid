@@ -17,8 +17,8 @@ Vos réponses sont sauvegardées dans votre navigateur et les conseils sont mis 
             <form>
                 <fieldset>
                     <p>Merci pour votre retour. Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?</p>
-                    <label for="message" hidden>Message :</label>
-                    <textarea id="message" name="message" rows="9" cols="20" required></textarea>
+                    <label for="message_conseils" hidden>Message :</label>
+                    <textarea id="message_conseils" name="message" rows="9" cols="20" required></textarea>
                 </fieldset>
                 <div class="form-controls">
                     <input type="submit" class="button" value="Envoyer">

@@ -13,8 +13,8 @@
             <form>
                 <fieldset>
                     <p>Merci de nous avoir signalé vos difficultés avec cette page. Pouvez-vous nous en dire plus, afin que nous puissions l’améliorer ?</p>
-                    <label for="message" hidden>Message :</label>
-                    <textarea id="report_message" name="report_message" rows="9" cols="20" required></textarea>
+                    <label for="message_pied_de_page" hidden>Message :</label>
+                    <textarea id="message_pied_de_page" name="message" rows="9" cols="20" required></textarea>
                 </fieldset>
                 <div class="form-controls">
                     <input type="submit" class="button" value="Envoyer">
