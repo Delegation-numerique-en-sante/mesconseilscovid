@@ -6,6 +6,7 @@
 * ajout de contacts utiles :
   * 39 19 (violences conjugales)
   * 0800 19 00 00 (écoute et soutien psychologique)
+* améliorations d’accessibilité (merci @jobailla)
 
 ## 2020-10-28
 
