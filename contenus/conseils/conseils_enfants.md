@@ -19,4 +19,6 @@ Consultez notre page dédiée : [« Conseils liés aux activités et à la san
 
 * Les consultations de vos enfants comportant des **vaccins** obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) doivent être **maintenues.**
 
-* Pour plus d'informations sur la scolarité des enfants pendant le confinement, vous pouvez consulter [Rentrée novembre 2020 : modalités pratiques](https://www.education.gouv.fr/rentree-novembre-2020-modalites-pratiques-305467), ainsi que [La scolarité des enfants](https://www.gouvernement.fr/info-coronavirus#questions__reponses), section « Pour vos enfants et leur scolarité ».
+* Pour plus d'informations sur la scolarité des enfants pendant le confinement, vous pouvez consulter :
+    * [Rentrée novembre 2020 : modalités pratiques](https://www.education.gouv.fr/rentree-novembre-2020-modalites-pratiques-305467)
+    * [La scolarité des enfants](https://www.gouvernement.fr/info-coronavirus#questions__reponses), section « Pour vos enfants et leur scolarité ».
