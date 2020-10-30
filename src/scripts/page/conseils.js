@@ -13,8 +13,6 @@ import {
 } from '../affichage.js'
 import * as injection from '../injection.js'
 
-import incidenceParDepartement from '../data/incidence.js'
-
 import AlgorithmeOrientation from '../algorithme/orientation.js'
 import AlgorithmeSuivi from '../algorithme/suivi.js'
 
@@ -28,7 +26,7 @@ export default function conseils(element, app) {
         element.querySelector('#conseils-block').classList.add(extraClass)
     }
 
-    var algoOrientation = new AlgorithmeOrientation(app.profil, incidenceParDepartement)
+    var algoOrientation = new AlgorithmeOrientation(app.profil)
 
     // Première complétion du formulaire ?
     if (!app.profil.questionnaire_completed) {
