@@ -122,7 +122,9 @@ async function remplirDepistage(page, depistage, resultat) {
     let text
 
     if (depistage) {
-        let checkbox_label = await page.waitForSelector('#page label[for="depistage"]')
+        let checkbox_label = await page.waitForSelector(
+            '#page label[for="depistage_checkbox"]'
+        )
         await checkbox_label.click()
 
         let radio_label = await page.waitForSelector(
