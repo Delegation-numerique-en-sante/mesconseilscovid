@@ -8,8 +8,10 @@
 
 <div class="conseil">
 
-* Si cela est possible, privilégiez le **télétravail**.
-* Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues.
+* Partout où cela est possible, il est demandé de généraliser le **télétravail** durant le confinement.
+* Si vous devez vous rendre sur votre lieu de travail :
+  * la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues;
+  * il vous faudra un [justificatif de déplacement professionnel](https://www.gouvernement.fr/sites/default/files/30-10-2020-justificatif-de-deplacement-professionnel.pdf).
 * Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salariev20102020.pdf).
 
 </div>
@@ -18,8 +20,11 @@
 
 ## [conseils_activité_pro_arrêt.md](conseils_activité_pro_arrêt.md)
 
-* Si vous n’avez pas la possibilité de **télétravailler** et que votre état de santé vous expose à un **très haut risque** de développer une **forme sévère** de Covid,  votre médecin traitant pourra vous fournir un **certificat d’isolement** à donner à votre employeur. Plus d’informations sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?_56_INSTANCE_XV0ItAcVS4ow_read_more=2).
-* Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues.
+* Partout où cela est possible, il est demandé de généraliser le **télétravail** durant le confinement. Si ce n’est pas possible, rentrez en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**.
+* Si votre état de santé vous expose à un **très haut risque** de développer une **forme sévère** de Covid, votre médecin traitant pourra vous fournir un **certificat d’isolement** à donner à votre employeur. Plus d’informations sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?_56_INSTANCE_XV0ItAcVS4ow_read_more=2).
+* Si vous devez vous rendre sur votre lieu de travail :
+  * la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues;
+  * il vous faudra un [justificatif de déplacement professionnel](https://www.gouvernement.fr/sites/default/files/30-10-2020-justificatif-de-deplacement-professionnel.pdf).
 * Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salariev20102020.pdf).
 
 
@@ -47,8 +52,11 @@ Comme les **professions libérales** n’ont pas de médecine du travail, vous p
 
 ## [conseils_activité_pro_personne_fragile.md](conseils_activité_pro_personne_fragile.md)
 
-* Nous vous invitons à privilégier le **télétravail** ou rentrer en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**.
-* Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues.
+
+* Partout où cela est possible, il est demandé de généraliser le **télétravail** durant le confinement. Si ce n’est pas possible, rentrez en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**.
+* Si vous devez vous rendre sur votre lieu de travail :
+  * la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues;
+  * il vous faudra un [justificatif de déplacement professionnel](https://www.gouvernement.fr/sites/default/files/30-10-2020-justificatif-de-deplacement-professionnel.pdf).
 * Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salariev20102020.pdf).
 
 
@@ -87,6 +95,18 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 
 
 
+## [conseils_confinement.md](conseils_confinement.md)
+
+<div class="conseil conseil-orange">
+
+<span class="nouveau">nouveau</span>Depuis le vendredi 30 octobre, un **confinement** s’applique sur tout le territoire français, jusqu’au 1<sup>er</sup> décembre au minimum. Il vous faut [une attestation dérogatoire](https://media.interieur.gouv.fr/deplacement-covid-19/) pour justifier de vos sorties à l’extérieur de votre domicile.
+
+</div>
+
+Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919">39 19</a> (appel gratuit, de 9h à 19h du lundi au samedi) ou le <a href="tel:17">17</a> en cas d’urgence.
+
+
+
 ## [conseils_contact_à_risque_info.md](conseils_contact_à_risque_info.md)
 
 * [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf)
@@ -100,6 +120,12 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 * Si vous n’arrivez pas à consulter un médecin, contactez un médecin de garde.
 
 * Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent **pendant plus de 24 heures**.
+
+
+
+## [conseils_contacts_utiles.md](conseils_contacts_utiles.md)
+
+Le confinement peut être difficile à vivre. Si vous le souhaitez, vous pouvez contacter le <a href="tel:0800190000">0800 19 00 00</a> pour une écoute et un soutien psychologique (appel gratuit, tous les jours de 9h à 21h).
 
 
 
@@ -152,18 +178,22 @@ Vous résidez dans un département où le virus est **particulièrement présent
 
 
 
-## [conseils_département_défaut.md](conseils_département_défaut.md)
-
-Retrouvez les règles spécifiques de votre département sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
-
-
 ## [conseils_enfants.md](conseils_enfants.md)
 
 <div class="conseil">
 
+<span class="nouveau">nouveau</span> Depuis le vendredi 30 octobre :
+* le port du masque est obligatoire dès l’âge de 6 ans dans les écoles ;
+* vous devez vous munir d’un [justificatif de déplacement scolaire](https://www.gouvernement.fr/sites/default/files/30-10-2020-justificatif-de-deplacement-scolaire.pdf) pour le trajet entre votre domicile et le lieu d’accueil de l’enfant.
+
 Consultez notre page dédiée : [« Conseils liés aux activités et à la santé des enfants »](#pediatrie)
 
 </div>
+
+* <span class="nouveau">nouveau</span>Lors du confinement, restent ouverts :
+  * les crèches, écoles, collèges et lycées ;
+  * la prise en charge périscolaire (garderie, centres aérés) ;
+  * les structures d’accueil spécialisées pour les enfants en difficulté physique ou psychique notamment les instituts médico-éducatifs.
 
 * Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face à la Covid, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants.
 
@@ -550,19 +580,28 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 
 ## [conseils_vie_quotidienne.md](conseils_vie_quotidienne.md)
 
-<div class="conseil">
+<span class="nouveau">nouveau</span>Lors du confinement, **restent ouverts** :
+* les services publics ;
+* les marchés alimentaires ;
+* les parcs, jardins, plages et plans d’eau ;
+* les cimetières ;
+* les lieux de culte, pour les cérémonies funéraires dans la limite de 30 personnes et pour les mariages avec un maximum de 6 personnes ;
+* les crèches, écoles, collèges et lycées ;
+* la prise en charge périscolaire (garderie, centres aérés) ;
+* les structures d’accueil spécialisées pour les enfants en difficulté physique ou psychique notamment les instituts médico-éducatifs ;
+* les visites en EHPAD et maisons de retraite ;
+* les laboratoires d’analyse.
 
-* Continuez, dans la mesure du possible, à **limiter vos déplacements** et à éviter les transports en commun ou, à défaut, à **éviter les heures de pointe**.
+Retrouvez les règles spécifiques de votre **département** sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
 
-* Privilégiez les périodes les moins fréquentées pour faire vos courses.
+Pour vos **courses**, nous vous conseillons de :
+  * réaliser vos courses lors des périodes les moins fréquentées ;
+  * suivre [les conseils de l'ANSES](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses).
 
-</div>
+Pour vos **déplacements** :
+  * seules les frontières aves l’Union Européenne restent ouvertes ; un test négatif de moins de 72h est obligatoire pour entrer sur le territoire ;
+  * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »).
 
-Retrouvez les réponses à vos questions sur :
-
-* [l’alimentation, les courses et le nettoyage](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses)
-* [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »)
-
-L’application [TousAntiCovid](https://www.gouvernement.fr/info-coronavirus/tousanticovid) vous permettra de recevoir immédiatement une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid.
+L’application [TousAntiCovid](https://www.gouvernement.fr/info-coronavirus/tousanticovid) vous permettra de recevoir une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid.
 
 

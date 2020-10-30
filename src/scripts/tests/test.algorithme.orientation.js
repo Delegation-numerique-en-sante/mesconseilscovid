@@ -18,6 +18,7 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-departement-circulation-faible',
+                'conseils-confinement',
             ])
         })
 
@@ -34,6 +35,7 @@ describe('Algorithme d’orientation', function () {
                 'conseils-vie-quotidienne',
                 'conseils-departement-circulation-elevee',
                 'conseils-couvre-feu-actif',
+                'conseils-confinement',
             ])
         })
 
@@ -44,6 +46,7 @@ describe('Algorithme d’orientation', function () {
             var algoOrientation = new AlgorithmeOrientation(profil, {}, {})
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
+                'conseils-confinement',
             ])
         })
 
@@ -60,6 +63,7 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-departement-circulation-faible',
+                'conseils-confinement',
             ])
         })
 
@@ -76,6 +80,7 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-departement-circulation-faible',
+                'conseils-confinement',
             ])
         })
 
@@ -92,6 +97,7 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-departement-circulation-faible',
+                'conseils-confinement',
             ])
         })
     })

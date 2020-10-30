@@ -886,13 +886,10 @@
                         <div id="conseils-sante-grippe-fragile" class="conseil conseil-jaune" hidden>
                             {{ conseils_santé_grippe_fragile }}
                         </div>
-                        <div id="conseils-sante-grippe" class="conseil conseil" hidden>
-                            {{ conseils_santé_grippe }}
-                        </div>
                         <div id="conseils-sante-historique-symptomes" class="conseil" hidden>
                             <p>{{ conseils_autosuivi_historique|me_or_them }}</p>
                         </div>
-                        <div id="conseils-sante-general" class="conseil" hidden>
+                        <div id="conseils-sante-general" hidden>
                             {{ conseils_santé }}
                         </div>
                         <div id="conseils-sante-personne-fragile" hidden>
@@ -904,7 +901,11 @@
                         <div id="conseils-sante-maladie-chronique" hidden>
                             {{ conseils_santé_maladie_chronique }}
                         </div>
+                        <div id="conseils-sante-grippe" hidden>
+                            {{ conseils_santé_grippe }}
+                        </div>
                         {{ conseils_contacter_un_médecin }}
+                        {{ conseils_contacts_utiles }}
                     </details>
                 </div>
 
@@ -1018,7 +1019,9 @@
                         <div id="conseils-couvre-feu-actif" hidden>
                             {{ conseils_couvre_feu_actif }}
                         </div>
-                        {{ conseils_département_défaut }}
+                        <div id="conseils-confinement" hidden>
+                            {{ conseils_confinement }}
+                        </div>
                         {{ conseils_vie_quotidienne }}
                     </details>
                 </div>

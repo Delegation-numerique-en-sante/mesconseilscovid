@@ -1,8 +1,17 @@
 <div class="conseil">
 
+<span class="nouveau">nouveau</span> Depuis le vendredi 30 octobre :
+* le port du masque est obligatoire dès l’âge de 6 ans dans les écoles ;
+* vous devez vous munir d’un [justificatif de déplacement scolaire](https://www.gouvernement.fr/sites/default/files/30-10-2020-justificatif-de-deplacement-scolaire.pdf) pour le trajet entre votre domicile et le lieu d’accueil de l’enfant.
+
 Consultez notre page dédiée : [« Conseils liés aux activités et à la santé des enfants »](#pediatrie)
 
 </div>
+
+* <span class="nouveau">nouveau</span>Lors du confinement, restent ouverts :
+  * les crèches, écoles, collèges et lycées ;
+  * la prise en charge périscolaire (garderie, centres aérés) ;
+  * les structures d’accueil spécialisées pour les enfants en difficulté physique ou psychique notamment les instituts médico-éducatifs.
 
 * Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face à la Covid, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants.
 
