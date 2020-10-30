@@ -8,7 +8,7 @@ Consultez notre page dédiée : [« Conseils liés aux activités et à la san
 
 </div>
 
-<span class="nouveau">nouveau</span>Lors du confinement, restent ouverts :
+<span class="nouveau">nouveau</span>Lors du confinement, restent ouverts :
 * Les crèches, écoles, collèges et lycées
 * La prise en charge périscolaire (garderie, centres aérés)
 * les structures d’accueil spécialisées pour les enfants en difficulté physique ou psychique notamment les instituts médico-éducatifs.
