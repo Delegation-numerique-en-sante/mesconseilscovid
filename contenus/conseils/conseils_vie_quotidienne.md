@@ -14,7 +14,7 @@ Pour vos courses, nous vous conseillons de :
   * réaliser vos courses lors des périodes les moins fréquentées ;
   * suivre [les conseils de l'ANSES](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses).
 
-* Pour vos déplacements :
+Pour vos déplacements :
   * seules les frontières aves l'Union Européenne restent ouvertes ; un test négatif de moins de 72h est obligatoire pour entrer sur le territoire ;
   * pour plus d'informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »).
 
