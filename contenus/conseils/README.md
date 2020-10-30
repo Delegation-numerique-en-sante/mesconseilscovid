@@ -8,7 +8,7 @@
 
 <div class="conseil">
 
-* Partout où cela est possible, il est demandé de généraliser le **télétravail** durant le confinement.
+* Le **télétravail** est obligatoire à 100 % partout où il est possible durant le confinement.
 * Si vous devez vous rendre sur votre lieu de travail :
   * la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues;
   * il vous faudra un [justificatif de déplacement professionnel](https://www.gouvernement.fr/sites/default/files/30-10-2020-justificatif-de-deplacement-professionnel.pdf).
@@ -173,7 +173,9 @@ Consultez notre page dédiée : [« Conseils liés aux activités et à la san
 
 * Les consultations de vos enfants comportant des **vaccins** obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) doivent être **maintenues.**
 
-* [La scolarité des enfants](https://www.gouvernement.fr/info-coronavirus#questions__reponses), section « Pour vos enfants et leur scolarité ».
+* Pour plus d’informations sur la scolarité des enfants pendant le confinement, vous pouvez consulter :
+    * [Rentrée novembre 2020 : modalités pratiques](https://www.education.gouv.fr/rentree-novembre-2020-modalites-pratiques-305467),
+    * [La scolarité des enfants](https://www.gouvernement.fr/info-coronavirus#questions__reponses), section « Pour vos enfants et leur scolarité ».
 
 
 
@@ -564,7 +566,9 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 * les visites en EHPAD et maisons de retraite ;
 * les laboratoires d’analyse.
 
-Retrouvez les règles spécifiques de votre **département** sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
+Pour plus d’informations sur **les mesures du confinement**, vous pouvez consulter :
+* [la page dédiée du site du gouvernement](https://www.gouvernement.fr/info-coronavirus/confinement),
+* les règles spécifiques de votre **département** sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
 
 Pour vos **courses**, nous vous conseillons de :
   * réaliser vos courses lors des périodes les moins fréquentées ;
