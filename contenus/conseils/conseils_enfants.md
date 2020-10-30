@@ -2,6 +2,8 @@
 
 Consultez notre page dédiée : [« Conseils liés aux activités et à la santé des enfants »](#pediatrie)
 
+<span class="nouveau">nouveau</span> Depuis le vendredi 30 octobre, vous devez vous munir d'un [justificatif de déplacement scolaire](https://www.gouvernement.fr/sites/default/files/30-10-2020-justificatif-de-deplacement-scolaire.pdf) pour le trajet entre votre domicile et le lieu d'accueil de l'enfant.
+
 </div>
 
 * Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face à la Covid, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants.
