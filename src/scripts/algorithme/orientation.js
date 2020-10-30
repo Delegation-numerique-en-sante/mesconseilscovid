@@ -31,10 +31,9 @@ const CONSEILS_PERSONNELS = [
 ]
 
 export default class AlgorithmeOrientation {
-    constructor(profil, incidenceParDepartement, couvreFeuParDepartement) {
+    constructor(profil, incidenceParDepartement) {
         this.profil = profil
         this.incidenceParDepartement = incidenceParDepartement
-        this.couvreFeuParDepartement = couvreFeuParDepartement
     }
 
     get situation() {
@@ -62,10 +61,6 @@ export default class AlgorithmeOrientation {
 
     get incidence() {
         return this.incidenceParDepartement[this.profil.departement]
-    }
-
-    get couvrefeu() {
-        return this.couvreFeuParDepartement[this.profil.departement]
     }
 
     get sup65() {
@@ -328,9 +323,6 @@ export default class AlgorithmeOrientation {
             } else {
                 blockNames.push('conseils-departement-circulation-faible')
             }
-        }
-        if (typeof this.couvrefeu !== 'undefined' && this.couvrefeu) {
-            blockNames.push('conseils-couvre-feu-actif')
         }
         blockNames.push('conseils-confinement')
         return blockNames

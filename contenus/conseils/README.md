@@ -129,18 +129,6 @@ Le confinement peut être difficile à vivre. Si vous le souhaitez, vous pouvez 
 
 
 
-## [conseils_couvre_feu_actif.md](conseils_couvre_feu_actif.md)
-
-<div class="conseil conseil-orange">
-
-<span class="nouveau">nouveau</span> Depuis le samedi 24 octobre, le couvre-feu s’applique dans votre département de 21 h à 6 h.
-
-</div>
-
-Pour vous déplacer pendant le couvre-feu, il vous faut une **« Attestation de déplacement dérogatoire »**. Vous pouvez [la remplir et la télécharger en ligne ici](https://media.interieur.gouv.fr/attestation-couvre-feu-covid-19/).
-
-
-
 ## [conseils_covid.md](conseils_covid.md)
 
 Pour toutes vos questions sur la Covid, vous pouvez :

@@ -34,12 +34,11 @@ describe('Algorithme d’orientation', function () {
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-departement-circulation-elevee',
-                'conseils-couvre-feu-actif',
                 'conseils-confinement',
             ])
         })
 
-        it('Un département inconnu n’affiche pas la localisation ni le couvre-feu', function () {
+        it('Un département inconnu n’affiche pas la localisation', function () {
             var profil = new Profil('mes_infos', {
                 departement: '01',
             })
