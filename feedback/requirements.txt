@@ -21,7 +21,7 @@ pytest-asyncio==0.14.0
 roll==0.12.3
 six==1.15.0
 stringcase==1.2.0
-toml==0.10.1
+toml==0.10.2
 typing-extensions==3.7.4.3
 typing-inspect==0.6.0
 ua-parser==0.10.0
