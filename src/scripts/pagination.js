@@ -12,11 +12,18 @@ export function loadPage(pageName, app) {
     var clone = section.cloneNode(true)
     page.innerHTML = '' // Flush the current content.
     var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
-
     showMeOrThem(element, app.profil)
-
-    if (pageName !== 'introduction') {
-        element.scrollIntoView({ behavior: 'smooth' })
-    }
+    scrollToTopOfPage()
     return element
+}
+
+function scrollToTopOfPage() {
+    if (typeof document.documentElement.scrollTo === 'function') {
+        document.documentElement.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })
+    } else {
+        document.documentElement.scrollTop = 0
+    }
 }
