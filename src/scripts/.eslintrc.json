@@ -13,9 +13,6 @@
     "rules": {
         "no-irregular-whitespace": ["error", { "skipTemplates": true }]
     },
-    "ignorePatterns": [
-        "atinternet.js"
-    ],
     "settings": {
         "polyfills": [
             "Promise",
