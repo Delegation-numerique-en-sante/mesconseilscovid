@@ -2,16 +2,16 @@
 import localforage from 'localforage'
 
 export default class StockageLocal {
-    constructor() {
-        this.localforage = localforage
-    }
-
     getProfilActuel() {
         return localforage.getItem('profil')
     }
 
     setProfilActuel(nom) {
         return localforage.setItem('profil', nom)
+    }
+
+    unsetProfilActuel() {
+        return localforage.removeItem('profil')
     }
 
     getProfil(nom) {
@@ -33,22 +33,13 @@ export default class StockageLocal {
     }
 
     supprimerTout() {
-        return localforage
-            .dropInstance()
-            .then(() => {
-                console.debug('Les données personnelles ont été supprimées')
-            })
-            .catch((error) => {
-                console.error(
-                    `Erreur lors de la suppression de toutes les données personnelles`
-                )
-                console.error(error)
-            })
+        return this.unsetProfilActuel().then(() =>
+            this.getProfils().then((noms) => Promise.all(noms.map(this._supprimer)))
+        )
     }
 
     supprimer(nom) {
-        return localforage
-            .removeItem(nom)
+        return this._supprimer(nom)
             .then(() => {
                 console.debug(`Les données personnelles ont été supprimées (${nom})`)
                 return
@@ -61,18 +52,17 @@ export default class StockageLocal {
             })
     }
 
+    _supprimer(nom) {
+        return localforage.removeItem(nom)
+    }
+
     charger(profil) {
         return localforage
             .getItem(profil.nom)
             .then((data) => {
                 if (data !== null) {
-                    // console.debug(`Données locales (${profil.nom})`)
-                    // console.log(data)
                     profil.fillData(data)
                 } else {
-                    console.debug(
-                        `Pas de données locales pour l’instant (${profil.nom})`
-                    )
                     profil.resetData()
                 }
                 return profil
