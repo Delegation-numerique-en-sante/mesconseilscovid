@@ -109,9 +109,7 @@ export function initRouter(app) {
 
     function trackPageView(pageName) {
         window.plausible('pageview')
-        if (location.hostname === 'mesconseilscovid.sante.gouv.fr') {
-            window.ATTag.page.send({ name: pageName })
-        }
+        window.atinternet(pageName)
     }
 
     function fillNavigation(element, pageName) {
