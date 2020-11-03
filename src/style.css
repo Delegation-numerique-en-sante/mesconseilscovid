@@ -358,6 +358,11 @@ main footer .legals {
     }
 }
 
+#conseils-personnels h3.profil {
+    padding-left: 3rem;
+    background-image: url('user-circle-blue.svg');
+}
+
 #nom-form {
     background-image: url('illustrations/nom.svg');
 }

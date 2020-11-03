@@ -249,8 +249,11 @@ export default class AlgorithmeOrientation {
         )
     }
 
-    conseilsPersonnelsBlockNamesToDisplay() {
+    profilBlockNamesToDisplay() {
         const blockNames = []
+        if (this.risqueDInfection) {
+            blockNames.push('reponse-risque-infection')
+        }
         if (this.profil.estPositif()) {
             blockNames.push('reponse-depistage-positif')
         } else if (this.profil.estNegatif()) {
@@ -259,7 +262,16 @@ export default class AlgorithmeOrientation {
             blockNames.push('reponse-depistage-en-attente')
         } else if (this.profil.sansDepistage()) {
             blockNames.push('reponse-depistage-sans')
+        } else if (this.profil.depistageObsolete()) {
+            blockNames.push('reponse-depistage-obsolete')
         }
+        blockNames.push(`reponse-${this.statutSelonFragilite()}`)
+        blockNames.push('reponse-departement')
+        return blockNames
+    }
+
+    conseilsPersonnelsBlockNamesToDisplay() {
+        const blockNames = []
         blockNames.push(`conseils-personnels-${this.statutEtConseils.conseils}`)
         return blockNames
     }

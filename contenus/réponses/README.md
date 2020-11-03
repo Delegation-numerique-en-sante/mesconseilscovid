@@ -16,6 +16,12 @@ Vous avez réalisé un test ces 7 derniers jours et il est négatif (<a href="#
 
 
 
+## [reponse_depistage_obsolete.md](reponse_depistage_obsolete.md)
+
+Vous avez réalisé un test il y a plus de 7 jours (<a href="#depistage">modifier</a>)
+
+
+
 ## [reponse_depistage_positif.md](reponse_depistage_positif.md)
 
 Vous avez réalisé un test ces 7 derniers jours et il est positif (<a href="#depistage">modifier</a>)
@@ -25,6 +31,24 @@ Vous avez réalisé un test ces 7 derniers jours et il est positif (<a href="#d
 ## [reponse_depistage_sans.md](reponse_depistage_sans.md)
 
 Vous n’avez pas réalisé de test ces 7 derniers jours (<a href="#depistage">modifier</a>)
+
+
+
+## [reponse_foyer_fragile.md](reponse_foyer_fragile.md)
+
+Vous vivez avec des personnes considérées comme étant à risque (<a href="#foyer">modifier</a>)
+
+
+
+## [reponse_personne_fragile.md](reponse_personne_fragile.md)
+
+Vous êtes considéré·e comme étant à risque (<a href="#antecedents">modifier</a>)
+
+
+
+## [reponse_risque_infection.md](reponse_risque_infection.md)
+
+Vous avez un risque d’infection : symptômes actuels, passés ou contact à risque (<a href="#symptomesactuels">modifier</a>)
 
 
 

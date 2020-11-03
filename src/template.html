@@ -698,19 +698,37 @@
 
             <div id="conseils-personnels" class="conseils">
                 <h2 id="conseils-personnels-titre" hidden>Mes conseils personnels</h2>
-                <div class="reponse">
-                    <div id="reponse-depistage-positif" hidden>
-                        {{ reponse_depistage_positif }}
-                    </div>
-                    <div id="reponse-depistage-negatif" hidden>
-                        {{ reponse_depistage_negatif }}
-                    </div>
-                    <div id="reponse-depistage-en-attente" hidden>
-                        {{ reponse_depistage_en_attente }}
-                    </div>
-                    <div id="reponse-depistage-sans" hidden>
-                        {{ reponse_depistage_sans }}
-                    </div>
+                <div class="block">
+                    <h3 class="profil">Mon profil</h3>
+                    <ul>
+                        <li id="reponse-risque-infection" hidden>
+                            {{ reponse_risque_infection }}
+                        </li>
+                        <li id="reponse-depistage-positif" hidden>
+                            {{ reponse_depistage_positif }}
+                        </li>
+                        <li id="reponse-depistage-negatif" hidden>
+                            {{ reponse_depistage_negatif }}
+                        </li>
+                        <li id="reponse-depistage-en-attente" hidden>
+                            {{ reponse_depistage_en_attente }}
+                        </li>
+                        <li id="reponse-depistage-sans" hidden>
+                            {{ reponse_depistage_sans }}
+                        </li>
+                        <li id="reponse-depistage-obsolete" hidden>
+                            {{ reponse_depistage_obsolete }}
+                        </li>
+                        <li id="reponse-personne-fragile" hidden>
+                            {{ reponse_personne_fragile }}
+                        </li>
+                        <li id="reponse-foyer-fragile" hidden>
+                            {{ reponse_foyer_fragile }}
+                        </li>
+                        <li id="reponse-departement" hidden>
+                            {{ réponse_département }}
+                        </li>
+                    </ul>
                 </div>
                 <div id="conseils-personnels-contact-a-risque" class="conseil" hidden>
                     {{ conseils_personnels_contact_à_risque }}
