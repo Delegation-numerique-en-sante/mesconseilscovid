@@ -7,6 +7,7 @@ import {
 export default function contactarisque(form, app) {
     var button = form.querySelector('input[type=submit]')
     preloadCheckboxForm(form, 'contact_a_risque', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_meme_lieu_de_vie_actuel', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_meme_lieu_de_vie', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_contact_direct', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_actes', app.profil)
@@ -31,6 +32,8 @@ export default function contactarisque(form, app) {
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.contact_a_risque = event.target.elements['contact_a_risque'].checked
+        app.profil.contact_a_risque_meme_lieu_de_vie_actuel =
+            event.target.elements['contact_a_risque_meme_lieu_de_vie_actuel'].checked
         app.profil.contact_a_risque_meme_lieu_de_vie =
             event.target.elements['contact_a_risque_meme_lieu_de_vie'].checked
         app.profil.contact_a_risque_contact_direct =

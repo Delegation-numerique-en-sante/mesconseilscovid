@@ -731,6 +731,16 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 
 
+## [question_symptômes_contact_à_risque_même_lieu_de_vie_actuel_libellé.md](question_symptômes_contact_à_risque_même_lieu_de_vie_actuel_libellé.md)
+
+<!---->Je partage actuellement le même lieu de vie que cette personne
+
+---
+
+<!---->Il ou elle partage actuellement le même lieu de vie que cette personne
+
+
+
 ## [question_symptômes_contact_à_risque_même_lieu_de_vie_libellé.md](question_symptômes_contact_à_risque_même_lieu_de_vie_libellé.md)
 
 <!---->J’ai partagé le même lieu de vie que cette personne

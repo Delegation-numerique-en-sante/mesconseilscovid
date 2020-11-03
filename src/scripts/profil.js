@@ -101,6 +101,7 @@ export default class Profil {
         this.symptomes_passes = undefined
 
         this.contact_a_risque = undefined
+        this.contact_a_risque_meme_lieu_de_vie_actuel = undefined
         this.contact_a_risque_meme_lieu_de_vie = undefined
         this.contact_a_risque_contact_direct = undefined
         this.contact_a_risque_actes = undefined
@@ -162,6 +163,8 @@ export default class Profil {
         this.symptomes_passes = data['symptomes_passes']
 
         this.contact_a_risque = data['contact_a_risque']
+        this.contact_a_risque_meme_lieu_de_vie_actuel =
+            data['contact_a_risque_meme_lieu_de_vie_actuel']
         this.contact_a_risque_meme_lieu_de_vie =
             data['contact_a_risque_meme_lieu_de_vie']
         this.contact_a_risque_contact_direct = data['contact_a_risque_contact_direct']
@@ -200,6 +203,7 @@ export default class Profil {
             symptomes_actuels_autre: false,
             symptomes_passes: false,
             contact_a_risque: false,
+            contact_a_risque_meme_lieu_de_vie_actuel: false,
             contact_a_risque_meme_lieu_de_vie: false,
             contact_a_risque_contact_direct: false,
             contact_a_risque_actes: false,
@@ -340,6 +344,8 @@ export default class Profil {
             symptomes_actuels_autre: this.symptomes_actuels_autre,
             symptomes_passes: this.symptomes_passes,
             contact_a_risque: this.contact_a_risque,
+            contact_a_risque_meme_lieu_de_vie_actuel: this
+                .contact_a_risque_meme_lieu_de_vie_actuel,
             contact_a_risque_meme_lieu_de_vie: this.contact_a_risque_meme_lieu_de_vie,
             contact_a_risque_contact_direct: this.contact_a_risque_contact_direct,
             contact_a_risque_actes: this.contact_a_risque_actes,
