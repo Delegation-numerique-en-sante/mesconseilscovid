@@ -14,6 +14,7 @@ export default function symptomespasses(form, app) {
         // On complète manuellement le formulaire pour le rendre complet.
         if (app.profil.symptomes_passes) {
             app.profil.contact_a_risque = false
+            app.profil.contact_a_risque_meme_lieu_de_vie_actuel = undefined
             app.profil.contact_a_risque_meme_lieu_de_vie = undefined
             app.profil.contact_a_risque_contact_direct = undefined
             app.profil.contact_a_risque_actes = undefined

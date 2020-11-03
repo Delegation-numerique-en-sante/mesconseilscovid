@@ -55,6 +55,18 @@ const matrice = [
         conseils: 'depistage-positif-asymptomatique',
     },
     {
+        description: 'Positif et contact à risque même lieu de vie actuel',
+        profil: {
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie_actuel: true,
+            depistage: true,
+            depistage_resultat: 'positif',
+        },
+        situation: 'positif_contact_a_risque_meme_lieu_de_vie_actuel',
+        statut: 'asymptomatique',
+        conseils: 'depistage-positif-asymptomatique',
+    },
+    {
         description: 'Positif et contact pas vraiment à risque',
         profil: {
             contact_a_risque: true,
@@ -158,6 +170,18 @@ const matrice = [
         situation: 'negatif_contact_a_risque',
         statut: 'contact-a-risque-avec-test',
         conseils: 'contact-a-risque',
+    },
+    {
+        description: 'Négatif et contact à risque même lieu de vie actuel',
+        profil: {
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie_actuel: true,
+            depistage: true,
+            depistage_resultat: 'negatif',
+        },
+        situation: 'negatif_contact_a_risque_meme_lieu_de_vie_actuel',
+        statut: 'contact-a-risque-meme-lieu-de-vie-actuel',
+        conseils: 'contact-a-risque-meme-lieu-de-vie-actuel',
     },
     {
         description: 'Négatif et contact pas vraiment à risque',
@@ -276,6 +300,18 @@ const matrice = [
         situation: 'en_attente_contact_a_risque',
         statut: 'contact-a-risque-avec-test',
         conseils: 'contact-a-risque',
+    },
+    {
+        description: 'En attente et contact à risque même lieu de vie actuel',
+        profil: {
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie_actuel: true,
+            depistage: true,
+            depistage_resultat: 'en_attente',
+        },
+        situation: 'en_attente_contact_a_risque_meme_lieu_de_vie_actuel',
+        statut: 'contact-a-risque-meme-lieu-de-vie-actuel',
+        conseils: 'contact-a-risque-meme-lieu-de-vie-actuel',
     },
     {
         description: 'En attente et contact pas vraiment à risque',

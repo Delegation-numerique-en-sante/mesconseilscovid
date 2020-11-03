@@ -49,7 +49,11 @@ export default class AlgorithmeOrientation {
         } else if (this.profil.symptomes_passes) {
             symptomes = 'symptomes_passes'
         } else if (this.profil.hasContactARisqueReconnus()) {
-            symptomes = 'contact_a_risque'
+            if (this.profil.contact_a_risque_meme_lieu_de_vie_actuel) {
+                symptomes = 'contact_a_risque_meme_lieu_de_vie_actuel'
+            } else {
+                symptomes = 'contact_a_risque'
+            }
         } else if (this.profil.contact_a_risque_autre) {
             symptomes = 'contact_pas_vraiment_a_risque'
         } else {
@@ -155,6 +159,7 @@ export default class AlgorithmeOrientation {
                 }
 
             case 'positif_contact_a_risque':
+            case 'positif_contact_a_risque_meme_lieu_de_vie_actuel':
             case 'positif_contact_pas_vraiment_a_risque':
             case 'positif_asymptomatique':
                 return {
@@ -167,6 +172,13 @@ export default class AlgorithmeOrientation {
 
             case 'negatif_symptomes_passes':
                 return { statut: this.statutSelonFragilite(), conseils: null }
+
+            case 'negatif_contact_a_risque_meme_lieu_de_vie_actuel':
+            case 'en_attente_contact_a_risque_meme_lieu_de_vie_actuel':
+                return {
+                    statut: 'contact-a-risque-meme-lieu-de-vie-actuel',
+                    conseils: 'contact-a-risque-meme-lieu-de-vie-actuel',
+                }
 
             case 'negatif_contact_a_risque':
             case 'en_attente_contact_a_risque':

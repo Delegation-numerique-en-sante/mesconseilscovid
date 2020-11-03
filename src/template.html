@@ -573,6 +573,12 @@
                 </div>
             </div>
             <div class="secondary disabled">
+                <input id="contact_a_risque_meme_lieu_de_vie_actuel" type="checkbox" name="contact_a_risque_meme_lieu_de_vie_actuel" disabled>
+                <label for="contact_a_risque_meme_lieu_de_vie_actuel">
+                    <span>{{ question_symptômes_contact_à_risque_même_lieu_de_vie_actuel_libellé|me_or_them }}</span>
+                </label>
+            </div>
+            <div class="secondary disabled">
                 <input id="contact_a_risque_meme_lieu_de_vie" type="checkbox" name="contact_a_risque_meme_lieu_de_vie" disabled>
                 <label for="contact_a_risque_meme_lieu_de_vie">
                     <span>{{ question_symptômes_contact_à_risque_même_lieu_de_vie_libellé|me_or_them }}</span>
@@ -657,6 +663,9 @@
                     <div id="statut-asymptomatique" class="statut statut-asymptomatique" hidden>
                         {{ statut_asymptomatique }}
                     </div>
+                    <div id="statut-contact-a-risque-meme-lieu-de-vie-actuel" class="statut statut-contact-a-risque-meme-lieu-de-vie-actuel" hidden>
+                        {{ statut_contact_a_risque_meme_lieu_de_vie_actuel }}
+                    </div>
                     <div id="statut-contact-a-risque-avec-test" class="statut statut-contact-a-risque-avec-test" hidden>
                         {{ statut_contact_a_risque_avec_test }}
                     </div>
@@ -714,6 +723,9 @@
                 </div>
                 <div id="conseils-personnels-contact-a-risque" class="conseil" hidden>
                     {{ conseils_personnels_contact_à_risque }}
+                </div>
+                <div id="conseils-personnels-contact-a-risque-meme-lieu-de-vie-actuel" class="conseil" hidden>
+                    {{ conseils_personnels_contact_à_risque_meme_lieu_de_vie_actuel }}
                 </div>
                 <div id="conseils-personnels-contact-a-risque-autre" class="conseil" hidden>
                     {{ conseils_personnels_contact_à_risque_autre }}
