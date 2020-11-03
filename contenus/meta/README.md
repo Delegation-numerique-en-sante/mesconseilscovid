@@ -80,6 +80,18 @@ OVH
 
 
 
+## [meta_et_ensuite.md](meta_et_ensuite.md)
+
+### Et ensuite ?
+
+Vos réponses sont sauvegardées dans votre navigateur et les conseils sont mis à jour régulièrement.
+
+En cas **d’apparition ou d’évolution de vos symptômes**, n’hésitez pas à revenir pour connaître les conseils personnalisés relatifs à votre nouvel état.
+
+Vous pouvez aussi **mettre à jour vos réponses** en cas de résultat de tests ou de nouveau contact à risque. Le contexte évolue, Mes Conseils Covid propose les informations les plus récentes et les mieux adaptées à **votre situation**.
+
+
+
 ## [meta_introduction.md](meta_introduction.md)
 
 ## Des conseils personnalisés pour agir contre le virus
@@ -162,8 +174,6 @@ Vos informations personnelles sont seulement stockées sur cet appareil, et ne s
 ## [meta_pour_finir.md](meta_pour_finir.md)
 
 ### Pour finir…
-
-Vos réponses sont sauvegardées dans votre navigateur et les conseils sont mis à jour régulièrement.
 
 <div class="icon icon-information">
     <div class="feedback-component" data-feedback-transition-delay="500">
