@@ -1,1 +1,1 @@
-broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrome d’apnées du sommeil, mucoviscidose
+broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, apnées du sommeil, mucoviscidose
