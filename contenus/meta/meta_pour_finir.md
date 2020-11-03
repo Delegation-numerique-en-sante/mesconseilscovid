@@ -1,7 +1,5 @@
 ### Pour finir…
 
-Vos réponses sont sauvegardées dans votre navigateur et les conseils sont mis à jour régulièrement.
-
 <div class="icon icon-information">
     <div class="feedback-component" data-feedback-transition-delay="500">
         <div class="feedback-question">
