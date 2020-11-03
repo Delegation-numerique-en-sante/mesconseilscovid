@@ -6,7 +6,7 @@ Une personne est considérée comme fragile face à la Covid si elle :
 * a une ou plusieurs de ces conditions :
   * maladie du cœur ou des artères,
   * diabète mal équilibré ou avec des complications (yeux, reins),
-  * maladie respiratoire chronique (broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, syndrôme d’apnées du sommeil, mucoviscidose),
+  * maladie respiratoire chronique (broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, apnées du sommeil, mucoviscidose),
   * insuffisance rénale chronique avec besoin de faire de la dialyse,
   * cancer évolutif sous traitement (hors hormonothérapie),
   * une cirrhose (maladie grave du foie),
