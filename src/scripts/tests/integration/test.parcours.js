@@ -347,7 +347,7 @@ describe('Parcours', function () {
             let statut = await page.waitForSelector('#page #statut-en-attente')
             assert.include(
                 (await statut.innerText()).trim(),
-                'Continuez à appliquer les gestes barrières en attendant les résultats de votre test'
+                'Continuez à appliquer les mesures barrières en attendant les résultats de votre test'
             )
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
         }

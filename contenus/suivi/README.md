@@ -31,7 +31,7 @@ Nous vous recommandons de l’effectuer une à deux fois par jour (pour y penser
 
 * Vous pouvez demander conseil à votre médecin et lui partager <a href="#suivihistorique">l’historique de vos symptômes</a>.
 * Poursuivez <a href="#suiviintroduction">votre suivi</a> si votre état se dégrade ces prochains jours.
-* Continuez d’appliquer les gestes barrières.
+* Continuez d’appliquer les mesures barrières.
 * Retrouvez tous vos conseils personnalisés ci-dessous.
 
 

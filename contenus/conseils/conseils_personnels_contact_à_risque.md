@@ -2,7 +2,7 @@ Nous vous conseillons de :
 
 1. Vous maintenir **en isolement pendant 7 jours** après le dernier contact à risque.
 
-2. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
+2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 
 3. Si vous constatez l’apparition de **symptômes**, contactez votre médecin, et suivez leur évolution avec le [questionnaire de suivi](#suivisymptomes).
 

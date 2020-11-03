@@ -4,7 +4,7 @@ Nous vous conseillons de :
 
 2. Vous maintenir **en isolement** jusqu’au résultat du test.
 
-3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
+3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 
 4. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 

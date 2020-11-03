@@ -53,7 +53,7 @@ Oui, si ces personnes ne sont pas malades et en appliquant les mesures de préve
 
 #### Est-il recommandé de mettre mon enfant à la crèche en l’absence de distanciation physique possible ?
 
-Oui le retour en crèche est recommandé car le port du masque par les adultes remplace efficacement la distanciation physique. Par ailleurs, la limitation du nombre d’enfants et l’application des gestes barrières réduit considérablement le risque de contamination chez les enfants et les professionnels de la petite enfance.
+Oui le retour en crèche est recommandé car le port du masque par les adultes remplace efficacement la distanciation physique. Par ailleurs, la limitation du nombre d’enfants et l’application des mesures barrières réduit considérablement le risque de contamination chez les enfants et les professionnels de la petite enfance.
 
 
 #### Mon enfant peut-il garder son doudou ou sa tétine à la crèche ? Comment faut-il en prendre soin ?
@@ -65,7 +65,7 @@ Il faut privilégier des objets en plastique ou tissu et les dupliquer lorsque c
 
 #### Quel est l’impact psychologique pour un bébé d’être gardé en crèche par du personnel masqué ?
 
-Le port du masque et les gestes barrières ne perturbent pas les interactions, qui restent possibles par le regard, la parole et même les gestes. Les enfants n’étant pas masqués, leurs interactions sont très bénéfiques.
+Le port du masque et les mesures barrières ne perturbent pas les interactions, qui restent possibles par le regard, la parole et même les gestes. Les enfants n’étant pas masqués, leurs interactions sont très bénéfiques.
 
 </div>
 
@@ -79,7 +79,7 @@ Il vous est conseillé :
 
 * De maintenir **l’enfant à la maison**.
 * De contacter par téléphone un médecin (pédiatre si possible) ou le 15 : Il est déconseillé de se rendre spontanément chez le médecin traitant ou aux urgences sans contact téléphonique préalable.
-* D’appliquer les **gestes barrières**.
+* D’appliquer les **mesures barrières**.
 
 Le retour de l’enfant en collectivité ne pourra être envisagé qu’après avis d’un médecin.
 
