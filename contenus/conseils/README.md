@@ -10,7 +10,7 @@
 
 * Le **télétravail** est obligatoire à 100 % partout où il est possible durant le confinement.
 * Si vous devez vous rendre sur votre lieu de travail :
-  * la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues;
+  * la **distanciation physique**, le **port du masque**, et les **mesures barrières** limitent la propagation du virus entre collègues;
   * il vous faudra un [justificatif de déplacement professionnel](https://www.gouvernement.fr/sites/default/files/30-10-2020-justificatif-de-deplacement-professionnel.pdf).
 * Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salariev20102020.pdf).
 
@@ -23,7 +23,7 @@
 * Le **télétravail** est obligatoire à 100 % partout où il est possible durant le confinement. Si ce n’est pas possible, rentrez en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**.
 * Si votre état de santé vous expose à un **très haut risque** de développer une **forme sévère** de Covid, votre médecin traitant pourra vous fournir un **certificat d’isolement** à donner à votre employeur. Plus d’informations sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?_56_INSTANCE_XV0ItAcVS4ow_read_more=2).
 * Si vous devez vous rendre sur votre lieu de travail :
-  * la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues;
+  * la **distanciation physique**, le **port du masque**, et les **mesures barrières** limitent la propagation du virus entre collègues;
   * il vous faudra un [justificatif de déplacement professionnel](https://www.gouvernement.fr/sites/default/files/30-10-2020-justificatif-de-deplacement-professionnel.pdf).
 * Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salariev20102020.pdf).
 
@@ -54,7 +54,7 @@ Comme les **professions libérales** n’ont pas de médecine du travail, vous p
 
 * Le **télétravail** est obligatoire à 100 % partout où il est possible durant le confinement. Si ce n’est pas possible, rentrez en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**.
 * Si vous devez vous rendre sur votre lieu de travail :
-  * la **distanciation physique**, le **port du masque**, et les **gestes barrières** limitent la propagation du virus entre collègues;
+  * la **distanciation physique**, le **port du masque**, et les **mesures barrières** limitent la propagation du virus entre collègues;
   * il vous faudra un [justificatif de déplacement professionnel](https://www.gouvernement.fr/sites/default/files/30-10-2020-justificatif-de-deplacement-professionnel.pdf).
 * Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salariev20102020.pdf).
 
@@ -191,7 +191,7 @@ Il est conseillé à votre proche de :
 
 * Afin d’éviter une forme grave de Covid, il vous est recommandé d’appliquer les mesures de **distanciation physique renforcée** :
 
-  * appliquez strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/coronavirus_mesures_barrieres_nouveau.pdf),
+  * appliquez strictement [les mesures barrières](https://www.gouvernement.fr/sites/default/files/coronavirus_mesures_barrieres_nouveau.pdf),
   * gardez une distance de **plus d’1 mètre** avec chaque personne,
   * portez le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile,
   * **réduisez vos sorties** au strict minimum.
@@ -219,7 +219,7 @@ Le **port du masque est obligatoire** dans les **[lieux publics clos](https://so
 
 * Les mesures de **distanciation physique** :
 
-  * appliquer strictement [les gestes barrières](https://www.gouvernement.fr/sites/default/files/coronavirus_mesures_barrieres_nouveau.pdf),
+  * appliquer strictement [les mesures barrières](https://www.gouvernement.fr/sites/default/files/coronavirus_mesures_barrieres_nouveau.pdf),
   * garder une distance de **plus d’1 mètre** avec chaque personne.
 
 * Le port du **masque** :
@@ -287,7 +287,7 @@ Nous vous conseillons de :
 
 1. Vous maintenir **en isolement pendant 7 jours** après le dernier contact à risque.
 
-2. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
+2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 
 3. Si vous constatez l’apparition de **symptômes**, contactez votre médecin, et suivez leur évolution avec le [questionnaire de suivi](#suivisymptomes).
 
@@ -316,7 +316,7 @@ Nous vous conseillons de :
 
 1. Vous maintenir **en isolement**, au moins 7 jours à partir de la date du test.
 
-2. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
+2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
 
 3. Si vous constatez l’apparition de **symptômes**, vous pouvez suivre leur évolution avec le [questionnaire de suivi](#suivisymptomes).
 
@@ -334,7 +334,7 @@ Nous vous conseillons de :
 
 1. Vous maintenir **en isolement**, au moins 7 jours à partir de la date d’apparition des symptômes, et de contacter votre médecin au moindre doute.
 
-2. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
+2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
 
 3. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 
@@ -354,7 +354,7 @@ Nous vous conseillons de :
 
 2. Vous maintenir **en isolement** jusqu’au résultat du test.
 
-3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
+3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 
 4. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 
@@ -388,7 +388,7 @@ Nous vous conseillons de :
 
 3. Vous maintenir **en isolement** jusqu’au résultat du test. Si le résultat est négatif, vous pourrez mettre fin à votre isolement.
 
-4. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
+4. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 
 5. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 
@@ -416,7 +416,7 @@ Nous vous conseillons de :
 
 1. Vous maintenir **en isolement** jusqu’au résultat du test.
 
-2. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
+2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 
 3. Si le test est positif, contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. Des outils, comme par exemple l’outil [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées et des lieux que vous avez fréquentés depuis le début de votre période contagieuse.
 
@@ -432,7 +432,7 @@ Nous vous conseillons de :
 
 1. Vous maintenir **en isolement** au moins 7 jours à partir de la date d’apparition des symptômes.
 
-2. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
+2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
 
 3. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. Des outils, comme par exemple l’outil [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées et des lieux que vous avez fréquentés depuis le début de votre période contagieuse.
 
@@ -452,7 +452,7 @@ Nous vous conseillons de :
 
 2. Vous maintenir **en isolement** jusqu’au résultat du test. Si le résultat est négatif, vous pourrez mettre fin à votre isolement.
 
-3. Appliquer **les gestes barrières renforcés** avec les autres membres de votre foyer.
+3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 
 4. Si le test est positif, contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. Des outils, comme par exemple l’outil [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées et des lieux que vous avez fréquentés depuis le début de votre période contagieuse.
 

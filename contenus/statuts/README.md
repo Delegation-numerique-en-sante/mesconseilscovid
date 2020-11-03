@@ -24,7 +24,7 @@ Restez **en isolement** et **faites un test** 7 jours après votre dernier conta
 
 ## [statut_en_attente.md](statut_en_attente.md)
 
-Continuez à appliquer les **gestes barrières** en attendant les résultats de votre test.
+Continuez à appliquer les **mesures barrières** en attendant les résultats de votre test.
 
 
 
@@ -42,7 +42,7 @@ Vous êtes considéré·e comme une personne ayant plus de risques de développe
 
 ## [statut_peu_de_risques.md](statut_peu_de_risques.md)
 
-Vous ne présentez pas de risque particulier face à la Covid, cependant le virus circule toujours, **les gestes barrières s’imposent**.
+Vous ne présentez pas de risque particulier face à la Covid, cependant le virus circule toujours, **les mesures barrières s’imposent**.
 
 
 
