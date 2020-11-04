@@ -36,26 +36,45 @@ export default class AlgorithmeOrientation {
     }
 
     get situation() {
+        // 6 x 4 = 24 situations possibles
         if (!this.profil.isComplete()) return ''
-        const depistage = this.profil.depistage
-            ? this.profil.depistage_resultat
-            : 'pas_teste'
-        let symptomes
+        return `${this.situationDepistage}_${this.situationSymptomes}`
+    }
+
+    get situationDepistage() {
+        // Les valeurs possibles :
+        //  - 'positif'
+        //  - 'negatif'
+        //  - 'en_attente'
+        //  - 'pas_teste'
+        if (!this.profil.isComplete()) return ''
+        return this.profil.depistage ? this.profil.depistage_resultat : 'pas_teste'
+    }
+
+    get situationSymptomes() {
+        // Les valeurs possibles :
+        //  - 'symptomes_actuels_graves'
+        //  - 'symptomes_actuels'
+        //  - 'symptomes_passes'
+        //  - 'contact_a_risque'
+        //  - 'contact_pas_vraiment_a_risque'
+        //  - 'asymptomatique'
+        if (!this.profil.isComplete()) return ''
         if (this.profil.hasSymptomesActuelsReconnus()) {
-            symptomes = 'symptomes_actuels'
             if (this.facteursDeGraviteMajeurs) {
-                symptomes += '_graves'
+                return 'symptomes_actuels_graves'
+            } else {
+                return 'symptomes_actuels'
             }
         } else if (this.profil.symptomes_passes) {
-            symptomes = 'symptomes_passes'
+            return 'symptomes_passes'
         } else if (this.profil.hasContactARisqueReconnus()) {
-            symptomes = 'contact_a_risque'
+            return 'contact_a_risque'
         } else if (this.profil.contact_a_risque_autre) {
-            symptomes = 'contact_pas_vraiment_a_risque'
+            return 'contact_pas_vraiment_a_risque'
         } else {
-            symptomes = 'asymptomatique'
+            return 'asymptomatique'
         }
-        return `${depistage}_${symptomes}`
     }
 
     get sup65() {
