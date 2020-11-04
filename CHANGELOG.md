@@ -1,5 +1,11 @@
 # Changelog
 
+## 2020-11-03
+
+* mise à jour du lien vers les fiches conseils métiers
+* formulation : gestes barrières → mesures barrières
+* améliorations de stabilité et d’ergonomie
+
 ## 2020-10-30
 
 * mise à jour des informations relatives au confinement
