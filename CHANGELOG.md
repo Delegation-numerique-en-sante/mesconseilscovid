@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-11-04
+
+* mise à jour de la page de pédiatrie
+
 ## 2020-11-03
 
 * mise à jour du lien vers les fiches conseils métiers
