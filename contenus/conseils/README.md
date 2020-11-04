@@ -128,6 +128,12 @@ Le confinement peut être difficile à vivre. Si vous le souhaitez, vous pouvez 
 
 
 
+## [conseils_contagion.md](conseils_contagion.md)
+
+Une personne ayant la Covid est **contagieuse 48h avant** les premiers symptômes, et jusqu'à **7 jours après** leur apparition.
+
+
+
 ## [conseils_covid.md](conseils_covid.md)
 
 Pour toutes vos questions sur la Covid, vous pouvez :
