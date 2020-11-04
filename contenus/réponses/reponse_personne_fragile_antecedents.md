@@ -1,0 +1,1 @@
+Vous avez des antécédents médicaux qui vous rendent plus **fragile** face à la Covid (<a href="#antecedents">modifier</a>)

@@ -41,6 +41,7 @@ export default class AlgorithmeOrientation {
         return `${this.situationDepistage}_${this.situationSymptomes}`
     }
 
+    // TODO: ajouter obsolete ?
     get situationDepistage() {
         // Les valeurs possibles :
         //  - 'positif'
@@ -268,11 +269,10 @@ export default class AlgorithmeOrientation {
         )
     }
 
-    profilBlockNamesToDisplay() {
+    situationBlockNamesToDisplay() {
         const blockNames = []
-        if (this.risqueDInfection) {
-            blockNames.push('reponse-risque-infection')
-        }
+
+        // Situation relative au dépistage
         if (this.profil.estPositif()) {
             blockNames.push('reponse-depistage-positif')
         } else if (this.profil.estNegatif()) {
@@ -284,14 +284,54 @@ export default class AlgorithmeOrientation {
         } else if (this.profil.depistageObsolete()) {
             blockNames.push('reponse-depistage-obsolete')
         }
-        blockNames.push(`reponse-${this.statutSelonFragilite()}`)
-        blockNames.push('reponse-departement')
+
+        // Situation relative aux symptômes
+        switch (this.situationSymptomes) {
+            case 'symptomes_actuels_graves':
+                blockNames.push('reponse-symptomes-actuels-graves')
+                break
+            case 'symptomes_actuels':
+                if (!this.profil.estNegatif()) {
+                    blockNames.push('reponse-symptomes-actuels')
+                }
+                break
+            case 'symptomes_passes':
+                blockNames.push('reponse-symptomes-passes')
+                break
+            case 'contact_a_risque':
+                blockNames.push('reponse-contact-a-risque')
+                break
+            case 'contact_pas_vraiment_a_risque':
+            case 'asymptomatique':
+                blockNames.push('reponse-asymptomatique')
+                break
+        }
+
+        if (this.personneFragile) {
+            if (this.sup65) {
+                blockNames.push('reponse-personne-fragile-age')
+            }
+            if (this.profil.grossesse_3e_trimestre) {
+                blockNames.push('reponse-personne-fragile-grossesse')
+            }
+            if (this.imc > 30) {
+                blockNames.push('reponse-personne-fragile-imc')
+            }
+            if (this.antecedents) {
+                blockNames.push('reponse-personne-fragile-antecedents')
+            }
+        } else if (this.profil.foyer_fragile) {
+            blockNames.push('reponse-foyer-fragile')
+        }
         return blockNames
     }
 
     conseilsPersonnelsBlockNamesToDisplay() {
         const blockNames = []
-        blockNames.push(`conseils-personnels-${this.statutEtConseils.conseils}`)
+        if (this.statutEtConseils.conseils) {
+            blockNames.push('conseils-personnels')
+            blockNames.push(`conseils-personnels-${this.statutEtConseils.conseils}`)
+        }
         return blockNames
     }
 

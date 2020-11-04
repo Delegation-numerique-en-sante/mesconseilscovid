@@ -358,9 +358,16 @@ main footer .legals {
     }
 }
 
-#conseils-personnels h3.profil {
+#situation {
+    margin-bottom: 3rem;
+}
+#situation h3.profil {
     padding-left: 3rem;
     background-image: url('user-circle-blue.svg');
+}
+
+#conseils-personnels h3 {
+    margin-bottom: 1.5rem;
 }
 
 #nom-form {
@@ -443,6 +450,7 @@ main footer .legals {
     margin-bottom: 3rem;
 }
 .conseils h3,
+#situation h3,
 #historique h3 {
     display: flex;
     justify-content: space-between;

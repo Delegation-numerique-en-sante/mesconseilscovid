@@ -1,0 +1,1 @@
+Vous avez eu un **contact à risque** avec une personne testée positive à la Covid (<a href="#contactarisque">modifier</a>)

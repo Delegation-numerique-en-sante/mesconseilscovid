@@ -1,0 +1,1 @@
+Vous êtes agé·e de plus de 65 ans, ce qui vous rend plus **fragile** face à la Covid (<a href="#caracteristiques">modifier</a>)

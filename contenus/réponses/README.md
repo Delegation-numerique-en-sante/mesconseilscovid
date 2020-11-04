@@ -4,51 +4,88 @@
 *Ce fichier est généré automatiquement pour pouvoir accéder rapidement aux contenus,il ne doit pas être édité !*
 
 
+## [reponse_asymptomatique.md](reponse_asymptomatique.md)
+
+Vous n’avez pas actuellement de **signes** pouvant évoquer la Covid (<a href="#symptomesactuels">modifier</a>)
+
+
+
+## [reponse_contact_a_risque.md](reponse_contact_a_risque.md)
+
+Vous avez eu un **contact à risque** avec une personne testée positive à la Covid (<a href="#contactarisque">modifier</a>)
+
+
 ## [reponse_depistage_en_attente.md](reponse_depistage_en_attente.md)
 
-Vous avez réalisé un test ces 7 derniers jours et vous êtes en attente de résultats (<a href="#depistage">modifier</a>)
+Vous avez réalisé un **test** ces 7 derniers jours, et vous êtes en attente du résultat (<a href="#depistage">modifier</a>)
 
 
 
 ## [reponse_depistage_negatif.md](reponse_depistage_negatif.md)
 
-Vous avez réalisé un test ces 7 derniers jours et il est négatif (<a href="#depistage">modifier</a>)
+Vous avez réalisé un **test** ces 7 derniers jours, et il était négatif (<a href="#depistage">modifier</a>)
 
 
 
 ## [reponse_depistage_obsolete.md](reponse_depistage_obsolete.md)
 
-Vous avez réalisé un test il y a plus de 7 jours (<a href="#depistage">modifier</a>)
+Vous avez réalisé un **test** il y a plus de 7 jours (<a href="#depistage">modifier</a>)
 
 
 
 ## [reponse_depistage_positif.md](reponse_depistage_positif.md)
 
-Vous avez réalisé un test ces 7 derniers jours et il est positif (<a href="#depistage">modifier</a>)
+Vous avez réalisé un **test** ces 7 derniers jours, et il était positif (<a href="#depistage">modifier</a>)
 
 
 
 ## [reponse_depistage_sans.md](reponse_depistage_sans.md)
 
-Vous n’avez pas réalisé de test ces 7 derniers jours (<a href="#depistage">modifier</a>)
+Vous n’avez pas réalisé de **test** ces 7 derniers jours (<a href="#depistage">modifier</a>)
 
 
 
 ## [reponse_foyer_fragile.md](reponse_foyer_fragile.md)
 
-Vous vivez avec des personnes considérées comme étant à risque (<a href="#foyer">modifier</a>)
+Vous vivez avec des personnes considérées comme **fragiles** face à la Covid (<a href="#foyer">modifier</a>)
 
 
 
-## [reponse_personne_fragile.md](reponse_personne_fragile.md)
+## [reponse_personne_fragile_age.md](reponse_personne_fragile_age.md)
 
-Vous êtes considéré·e comme étant à risque (<a href="#antecedents">modifier</a>)
+Vous êtes agé·e de plus de 65 ans, ce qui vous rend plus **fragile** face à la Covid (<a href="#caracteristiques">modifier</a>)
+
+
+## [reponse_personne_fragile_antecedents.md](reponse_personne_fragile_antecedents.md)
+
+Vous avez des antécédents médicaux qui vous rendent plus **fragile** face à la Covid (<a href="#antecedents">modifier</a>)
+
+
+## [reponse_personne_fragile_grossesse.md](reponse_personne_fragile_grossesse.md)
+
+Vous êtes au 3<sup>e</sup> trimestre de votre grossesse, ce qui vous rend plus **fragile** face à la Covid (<a href="#caracteristiques">modifier</a>)
+
+
+## [reponse_personne_fragile_imc.md](reponse_personne_fragile_imc.md)
+
+Votre indice de masse corporelle (IMC) est supérieur à 30, ce qui vous rend plus **fragile** face à la Covid (<a href="#caracteristiques">modifier</a>)
+
+
+## [reponse_symptomes_actuels.md](reponse_symptomes_actuels.md)
+
+Vous avez actuellement des **signes** pouvant évoquer la Covid (<a href="#symptomesactuels">modifier</a>)
 
 
 
-## [reponse_risque_infection.md](reponse_risque_infection.md)
+## [reponse_symptomes_actuels_graves.md](reponse_symptomes_actuels_graves.md)
 
-Vous avez un risque d’infection : symptômes actuels, passés ou contact à risque (<a href="#symptomesactuels">modifier</a>)
+Vous avez actuellement des signes pouvant évoquer la Covid, et nécessitant une attention médicale immédiate (<a href="#symptomesactuels">modifier</a>)
+
+
+
+## [reponse_symptomes_passes.md](reponse_symptomes_passes.md)
+
+Vous avez eu des signes pouvant évoquer la Covid dans les 7 derniers jours (<a href="#symptomesactuels">modifier</a>)
 
 
 

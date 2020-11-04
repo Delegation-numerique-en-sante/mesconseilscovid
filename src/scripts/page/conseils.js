@@ -123,7 +123,7 @@ function showRelevantSuiviBlocks(element, algoSuivi) {
 
 export function showRelevantBlocks(element, profil, algoOrientation) {
     var blockNames = statutBlockNamesToDisplay(algoOrientation)
-    blockNames = blockNames.concat(algoOrientation.profilBlockNamesToDisplay())
+    blockNames = blockNames.concat(algoOrientation.situationBlockNamesToDisplay())
     blockNames = blockNames.concat(
         algoOrientation.conseilsPersonnelsBlockNamesToDisplay()
     )

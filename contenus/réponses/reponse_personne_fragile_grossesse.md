@@ -1,0 +1,1 @@
+Vous êtes au 3<sup>e</sup> trimestre de votre grossesse, ce qui vous rend plus **fragile** face à la Covid (<a href="#caracteristiques">modifier</a>)

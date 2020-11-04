@@ -1,0 +1,1 @@
+Votre indice de masse corporelle (IMC) est supérieur à 30, ce qui vous rend plus **fragile** face à la Covid (<a href="#caracteristiques">modifier</a>)

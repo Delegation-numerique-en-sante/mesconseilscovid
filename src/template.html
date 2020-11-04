@@ -696,79 +696,116 @@
                 </div>
             </div>
 
-            <div id="conseils-personnels" class="conseils">
-                <h2 id="conseils-personnels-titre" hidden>Mes conseils personnels</h2>
+            <div id="situation">
                 <div class="block">
-                    <h3 class="profil">Mon profil</h3>
+                    <h3 class="profil">Votre situation</h3>
                     <ul>
-                        <li id="reponse-risque-infection" hidden>
-                            {{ reponse_risque_infection }}
-                        </li>
+                        {# Dépistage positif en premier #}
                         <li id="reponse-depistage-positif" hidden>
                             {{ reponse_depistage_positif }}
                         </li>
+
+                        {# Symptômes ou contact à risque #}
+                        <li id="reponse-symptomes-actuels-graves" hidden>
+                            {{ reponse_symptomes_actuels_graves }}
+                        </li>
+                        <li id="reponse-symptomes-actuels" hidden>
+                            {{ reponse_symptomes_actuels }}
+                        </li>
+                        <li id="reponse-symptomes-passes" hidden>
+                            {{ reponse_symptomes_passes }}
+                        </li>
+                        <li id="reponse-contact-a-risque" hidden>
+                            {{ reponse_contact_a_risque }}
+                        </li>
+
+                        {# Dépistage négatif #}
                         <li id="reponse-depistage-negatif" hidden>
                             {{ reponse_depistage_negatif }}
                         </li>
+                        <li id="reponse-depistage-obsolete" hidden>
+                            {{ reponse_depistage_obsolete }}
+                        </li>
+
+                        {# Personne fragile : pourquoi ? #}
+                        <li id="reponse-personne-fragile-age" hidden>
+                            {{ reponse_personne_fragile_age }}
+                        </li>
+                        <li id="reponse-personne-fragile-antecedents" hidden>
+                            {{ reponse_personne_fragile_antecedents }}
+                        </li>
+                        <li id="reponse-personne-fragile-grossesse" hidden>
+                            {{ reponse_personne_fragile_grossesse }}
+                        </li>
+                        <li id="reponse-personne-fragile-imc" hidden>
+                            {{ reponse_personne_fragile_imc }}
+                        </li>
+
+                        {# Personne fragile dans le foyer#}
+                        <li id="reponse-foyer-fragile" hidden>
+                            {{ reponse_foyer_fragile }}
+                        </li>
+
+                        {# Pas de symptômes #}
+                        <li id="reponse-asymptomatique" hidden>
+                            {{ reponse_asymptomatique }}
+                        </li>
+
+                        {# Pas de test ou en attente #}
                         <li id="reponse-depistage-en-attente" hidden>
                             {{ reponse_depistage_en_attente }}
                         </li>
                         <li id="reponse-depistage-sans" hidden>
                             {{ reponse_depistage_sans }}
                         </li>
-                        <li id="reponse-depistage-obsolete" hidden>
-                            {{ reponse_depistage_obsolete }}
-                        </li>
-                        <li id="reponse-personne-fragile" hidden>
-                            {{ reponse_personne_fragile }}
-                        </li>
-                        <li id="reponse-foyer-fragile" hidden>
-                            {{ reponse_foyer_fragile }}
-                        </li>
-                        <li id="reponse-departement" hidden>
-                            {{ réponse_département }}
-                        </li>
+
                     </ul>
                 </div>
-                <div id="conseils-personnels-contact-a-risque" class="conseil" hidden>
-                    {{ conseils_personnels_contact_à_risque }}
-                </div>
-                <div id="conseils-personnels-contact-a-risque-autre" class="conseil" hidden>
-                    {{ conseils_personnels_contact_à_risque_autre }}
-                </div>
-                <div id="conseils-personnels-depistage-positif-asymptomatique" class="conseil" hidden>
-                    {{ conseils_personnels_depistage_positif_asymptomatique }}
-                </div>
-                <div id="conseils-personnels-depistage-positif-symptomatique" class="conseil" hidden>
-                    {{ conseils_personnels_depistage_positif_symptomatique }}
-                </div>
-                <div id="conseils-personnels-symptomes-actuels-en-attente" class="conseil" hidden>
-                    {{ conseils_personnels_symptômes_actuels_en_attente }}
-                </div>
-                <div id="conseils-personnels-symptomes-actuels-positif-critique" class="conseil conseil-orange" hidden>
-                    {{ conseils_personnels_symptômes_actuels_positif_critique }}
-                </div>
-                <div id="conseils-personnels-symptomes-actuels-sans-depistage" class="conseil" hidden>
-                    {{ conseils_personnels_symptômes_actuels_sans_depistage }}
-                </div>
-                <div id="conseils-personnels-symptomes-actuels-sans-depistage-critique" class="conseil conseil-orange" hidden>
-                    {{ conseils_personnels_symptômes_actuels_sans_depistage_critique }}
-                </div>
-                <div id="conseils-personnels-symptomes-passes-en-attente" class="conseil" hidden>
-                    {{ conseils_personnels_symptômes_passés_en_attente }}
-                </div>
-                <div id="conseils-personnels-symptomes-passes-positif" class="conseil" hidden>
-                    {{ conseils_personnels_symptômes_passés_positif }}
-                </div>
-                <div id="conseils-personnels-symptomes-passes-sans-depistage" class="conseil" hidden>
-                    {{ conseils_personnels_symptômes_passés_sans_depistage }}
-                </div>
+            </div>
 
-                <div class="conseil" id="suivi-psy-2" hidden>
-                    {{ suivi_psy_2 }}
-                </div>
-                <div class="conseil" id="suivi-psy-1" hidden>
-                    {{ suivi_psy_1 }}
+            <div id="conseils-personnels" hidden>
+                <div class="block conseils">
+                    <h3 id="conseils-personnels-titre">Nos recommandations</h3>
+                    <div id="conseils-personnels-contact-a-risque" class="conseil" hidden>
+                        {{ conseils_personnels_contact_à_risque }}
+                    </div>
+                    <div id="conseils-personnels-contact-a-risque-autre" class="conseil" hidden>
+                        {{ conseils_personnels_contact_à_risque_autre }}
+                    </div>
+                    <div id="conseils-personnels-depistage-positif-asymptomatique" class="conseil" hidden>
+                        {{ conseils_personnels_depistage_positif_asymptomatique }}
+                    </div>
+                    <div id="conseils-personnels-depistage-positif-symptomatique" class="conseil" hidden>
+                        {{ conseils_personnels_depistage_positif_symptomatique }}
+                    </div>
+                    <div id="conseils-personnels-symptomes-actuels-en-attente" class="conseil" hidden>
+                        {{ conseils_personnels_symptômes_actuels_en_attente }}
+                    </div>
+                    <div id="conseils-personnels-symptomes-actuels-positif-critique" class="conseil conseil-orange" hidden>
+                        {{ conseils_personnels_symptômes_actuels_positif_critique }}
+                    </div>
+                    <div id="conseils-personnels-symptomes-actuels-sans-depistage" class="conseil" hidden>
+                        {{ conseils_personnels_symptômes_actuels_sans_depistage }}
+                    </div>
+                    <div id="conseils-personnels-symptomes-actuels-sans-depistage-critique" class="conseil conseil-orange" hidden>
+                        {{ conseils_personnels_symptômes_actuels_sans_depistage_critique }}
+                    </div>
+                    <div id="conseils-personnels-symptomes-passes-en-attente" class="conseil" hidden>
+                        {{ conseils_personnels_symptômes_passés_en_attente }}
+                    </div>
+                    <div id="conseils-personnels-symptomes-passes-positif" class="conseil" hidden>
+                        {{ conseils_personnels_symptômes_passés_positif }}
+                    </div>
+                    <div id="conseils-personnels-symptomes-passes-sans-depistage" class="conseil" hidden>
+                        {{ conseils_personnels_symptômes_passés_sans_depistage }}
+                    </div>
+
+                    <div class="conseil" id="suivi-psy-2" hidden>
+                        {{ suivi_psy_2 }}
+                    </div>
+                    <div class="conseil" id="suivi-psy-1" hidden>
+                        {{ suivi_psy_1 }}
+                    </div>
                 </div>
             </div>
 
