@@ -69,7 +69,7 @@ describe('Parcours', function () {
 
             // On retourne à l'intro
             let bouton = await page.waitForSelector(
-                '#page >> text="Refaire le questionnaire"'
+                '#page >> text="Revenir à l’accueil"'
             )
             await Promise.all([
                 bouton.click(),

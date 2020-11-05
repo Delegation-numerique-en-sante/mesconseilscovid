@@ -444,8 +444,12 @@ main footer .legals {
     color: #000091;
     font-size: 175%;
     flex-grow: 1;
-    padding: 0.5rem 1rem;
     border-radius: 0.35rem;
+    margin: 1rem 0;
+}
+.conseils summary h3 {
+    padding: 0.5rem 1rem;
+    margin: 1.5rem 0;
 }
 .conseils h4 {
     margin-top: 3rem;
@@ -1011,7 +1015,7 @@ a#geolocalisation {
 #pour-finir .icon {
     background: no-repeat left center;
     padding-left: 4rem;
-    margin: 2.5rem 0;
+    margin: 0 0 2.5rem 0;
 }
 
 #pour-finir .icon-favori {
