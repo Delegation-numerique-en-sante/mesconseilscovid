@@ -57,9 +57,7 @@ describe('Suivi', function () {
             let bloc = await page.waitForSelector('#page #conseils-sante summary')
             await bloc.click()
             // un bouton pour refaire le questionnaire
-            bouton = await page.waitForSelector(
-                '#page >> text="Refaire le questionnaire"'
-            )
+            bouton = await page.waitForSelector('#page >> text="Revenir à l’accueil"')
             await Promise.all([
                 bouton.click(),
                 waitForPlausibleTrackingEvent(page, 'pageview:introduction'),
@@ -120,9 +118,7 @@ describe('Suivi', function () {
             )
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             // un bouton pour refaire le questionnaire
-            bouton = await page.waitForSelector(
-                '#page >> text="Refaire le questionnaire"'
-            )
+            bouton = await page.waitForSelector('#page >> text="Revenir à l’accueil"')
             await Promise.all([
                 bouton.click(),
                 waitForPlausibleTrackingEvent(page, 'pageview:introduction'),
@@ -280,9 +276,7 @@ describe('Suivi', function () {
             let bloc = await page.waitForSelector('#page #conseils-sante summary')
             await bloc.click()
             // un bouton pour refaire le questionnaire
-            bouton = await page.waitForSelector(
-                '#page >> text="Refaire le questionnaire"'
-            )
+            bouton = await page.waitForSelector('#page >> text="Revenir à l’accueil"')
             await Promise.all([
                 bouton.click(),
                 waitForPlausibleTrackingEvent(page, 'pageview:introduction'),
