@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-11-05
+
+* précise la période de contagiosité
+* ajoute un bloc « Et ensuite ? » en fin de page conseils
+
 ## 2020-11-04
 
 * mise à jour de la page de pédiatrie
