@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-11-06
+
+* corrige des liens cassés
+
 ## 2020-11-05
 
 * précise la période de contagiosité
