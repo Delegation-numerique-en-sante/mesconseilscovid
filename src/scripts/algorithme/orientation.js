@@ -234,8 +234,8 @@ export default class AlgorithmeOrientation {
 
             case 'pas_teste_contact_a_risque_meme_lieu_de_vie':
                 return {
-                    statut: 'contact-a-risque-meme-lieu-de-vie',
-                    conseils: 'contact-a-risque-meme-lieu-de-vie-sans-test',
+                    statut: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
+                    conseils: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
                 }
 
             case 'pas_teste_contact_pas_vraiment_a_risque':

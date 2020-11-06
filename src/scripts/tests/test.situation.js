@@ -386,8 +386,8 @@ const matrice = [
             depistage: false,
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie',
-        statut: 'contact-a-risque-meme-lieu-de-vie',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-sans-test',
+        statut: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
+        conseils: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
     },
     {
         description: 'Pas testé et contact pas vraiment à risque',
