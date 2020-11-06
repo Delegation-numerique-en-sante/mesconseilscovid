@@ -2,5 +2,5 @@
 * Si votre état de santé vous expose à un **très haut risque** de développer une **forme sévère** de Covid, votre médecin traitant pourra vous fournir un **certificat d’isolement** à donner à votre employeur. Plus d’informations sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?_56_INSTANCE_XV0ItAcVS4ow_read_more=2).
 * Si vous devez vous rendre sur votre lieu de travail :
   * la **distanciation physique**, le **port du masque**, et les **mesures barrières** limitent la propagation du virus entre collègues;
-  * il vous faudra un [justificatif de déplacement professionnel](https://www.gouvernement.fr/sites/default/files/30-10-2020-justificatif-de-deplacement-professionnel.pdf).
+  * il vous faudra un [justificatif de déplacement professionnel](https://www.gouvernement.fr/sites/default/files/05-11-2020-justificatif-de-deplacement-professionnel.pdf).
 * Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salariev20102020.pdf).
