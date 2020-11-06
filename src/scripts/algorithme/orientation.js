@@ -49,8 +49,8 @@ export default class AlgorithmeOrientation {
         } else if (this.profil.symptomes_passes) {
             symptomes = 'symptomes_passes'
         } else if (this.profil.hasContactARisqueReconnus()) {
-            if (this.profil.contact_a_risque_meme_lieu_de_vie_actuel) {
-                symptomes = 'contact_a_risque_meme_lieu_de_vie_actuel'
+            if (this.profil.contact_a_risque_meme_lieu_de_vie) {
+                symptomes = 'contact_a_risque_meme_lieu_de_vie'
             } else {
                 symptomes = 'contact_a_risque'
             }
@@ -159,7 +159,7 @@ export default class AlgorithmeOrientation {
                 }
 
             case 'positif_contact_a_risque':
-            case 'positif_contact_a_risque_meme_lieu_de_vie_actuel':
+            case 'positif_contact_a_risque_meme_lieu_de_vie':
             case 'positif_contact_pas_vraiment_a_risque':
             case 'positif_asymptomatique':
                 return {
@@ -173,11 +173,11 @@ export default class AlgorithmeOrientation {
             case 'negatif_symptomes_passes':
                 return { statut: this.statutSelonFragilite(), conseils: null }
 
-            case 'negatif_contact_a_risque_meme_lieu_de_vie_actuel':
-            case 'en_attente_contact_a_risque_meme_lieu_de_vie_actuel':
+            case 'negatif_contact_a_risque_meme_lieu_de_vie':
+            case 'en_attente_contact_a_risque_meme_lieu_de_vie':
                 return {
-                    statut: 'contact-a-risque-meme-lieu-de-vie-actuel',
-                    conseils: 'contact-a-risque-meme-lieu-de-vie-actuel',
+                    statut: 'contact-a-risque-meme-lieu-de-vie',
+                    conseils: 'contact-a-risque-meme-lieu-de-vie',
                 }
 
             case 'negatif_contact_a_risque':
@@ -230,6 +230,12 @@ export default class AlgorithmeOrientation {
                 return {
                     statut: 'contact-a-risque-sans-test',
                     conseils: 'contact-a-risque',
+                }
+
+            case 'pas_teste_contact_a_risque_meme_lieu_de_vie':
+                return {
+                    statut: 'contact-a-risque-meme-lieu-de-vie',
+                    conseils: 'contact-a-risque-meme-lieu-de-vie-sans-test',
                 }
 
             case 'pas_teste_contact_pas_vraiment_a_risque':

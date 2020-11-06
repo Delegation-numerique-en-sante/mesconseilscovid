@@ -234,7 +234,7 @@ describe('Parcours', function () {
         await remplirQuestionnaire(page, {
             symptomesActuels: [],
             symptomesPasses: false,
-            contactARisque: ['meme_lieu_de_vie'],
+            contactARisque: ['contact_direct'],
             depistage: false,
             departement: '00',
             enfants: true,

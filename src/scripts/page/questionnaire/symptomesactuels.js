@@ -81,7 +81,6 @@ export default function symptomesactuels(form, app) {
         if (app.profil.hasSymptomesActuelsReconnus()) {
             app.profil.symptomes_passes = false
             app.profil.contact_a_risque = false
-            app.profil.contact_a_risque_meme_lieu_de_vie_actuel = undefined
             app.profil.contact_a_risque_meme_lieu_de_vie = undefined
             app.profil.contact_a_risque_contact_direct = undefined
             app.profil.contact_a_risque_actes = undefined

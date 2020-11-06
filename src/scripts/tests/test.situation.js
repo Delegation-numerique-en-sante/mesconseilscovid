@@ -46,7 +46,7 @@ const matrice = [
         description: 'Positif et contact à risque',
         profil: {
             contact_a_risque: true,
-            contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_contact_direct: true,
             depistage: true,
             depistage_resultat: 'positif',
         },
@@ -55,14 +55,14 @@ const matrice = [
         conseils: 'depistage-positif-asymptomatique',
     },
     {
-        description: 'Positif et contact à risque même lieu de vie actuel',
+        description: 'Positif et contact à risque même lieu de vie',
         profil: {
             contact_a_risque: true,
-            contact_a_risque_meme_lieu_de_vie_actuel: true,
+            contact_a_risque_meme_lieu_de_vie: true,
             depistage: true,
             depistage_resultat: 'positif',
         },
-        situation: 'positif_contact_a_risque_meme_lieu_de_vie_actuel',
+        situation: 'positif_contact_a_risque_meme_lieu_de_vie',
         statut: 'asymptomatique',
         conseils: 'depistage-positif-asymptomatique',
     },
@@ -163,7 +163,7 @@ const matrice = [
         description: 'Négatif et contact à risque',
         profil: {
             contact_a_risque: true,
-            contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_contact_direct: true,
             depistage: true,
             depistage_resultat: 'negatif',
         },
@@ -172,16 +172,16 @@ const matrice = [
         conseils: 'contact-a-risque',
     },
     {
-        description: 'Négatif et contact à risque même lieu de vie actuel',
+        description: 'Négatif et contact à risque même lieu de vie',
         profil: {
             contact_a_risque: true,
-            contact_a_risque_meme_lieu_de_vie_actuel: true,
+            contact_a_risque_meme_lieu_de_vie: true,
             depistage: true,
             depistage_resultat: 'negatif',
         },
-        situation: 'negatif_contact_a_risque_meme_lieu_de_vie_actuel',
-        statut: 'contact-a-risque-meme-lieu-de-vie-actuel',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-actuel',
+        situation: 'negatif_contact_a_risque_meme_lieu_de_vie',
+        statut: 'contact-a-risque-meme-lieu-de-vie',
+        conseils: 'contact-a-risque-meme-lieu-de-vie',
     },
     {
         description: 'Négatif et contact pas vraiment à risque',
@@ -293,7 +293,7 @@ const matrice = [
         description: 'En attente et contact à risque',
         profil: {
             contact_a_risque: true,
-            contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_contact_direct: true,
             depistage: true,
             depistage_resultat: 'en_attente',
         },
@@ -302,16 +302,16 @@ const matrice = [
         conseils: 'contact-a-risque',
     },
     {
-        description: 'En attente et contact à risque même lieu de vie actuel',
+        description: 'En attente et contact à risque même lieu de vie',
         profil: {
             contact_a_risque: true,
-            contact_a_risque_meme_lieu_de_vie_actuel: true,
+            contact_a_risque_meme_lieu_de_vie: true,
             depistage: true,
             depistage_resultat: 'en_attente',
         },
-        situation: 'en_attente_contact_a_risque_meme_lieu_de_vie_actuel',
-        statut: 'contact-a-risque-meme-lieu-de-vie-actuel',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-actuel',
+        situation: 'en_attente_contact_a_risque_meme_lieu_de_vie',
+        statut: 'contact-a-risque-meme-lieu-de-vie',
+        conseils: 'contact-a-risque-meme-lieu-de-vie',
     },
     {
         description: 'En attente et contact pas vraiment à risque',
@@ -371,12 +371,23 @@ const matrice = [
         description: 'Pas testé et contact à risque',
         profil: {
             contact_a_risque: true,
-            contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_contact_direct: true,
             depistage: false,
         },
         situation: 'pas_teste_contact_a_risque',
         statut: 'contact-a-risque-sans-test',
         conseils: 'contact-a-risque',
+    },
+    {
+        description: 'Pas testé et contact à risque même lieu de vie',
+        profil: {
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie: true,
+            depistage: false,
+        },
+        situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie',
+        statut: 'contact-a-risque-meme-lieu-de-vie',
+        conseils: 'contact-a-risque-meme-lieu-de-vie-sans-test',
     },
     {
         description: 'Pas testé et contact pas vraiment à risque',
