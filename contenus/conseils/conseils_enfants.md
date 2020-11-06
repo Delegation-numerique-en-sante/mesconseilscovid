@@ -2,7 +2,7 @@
 
 <span class="nouveau">nouveau</span> Depuis le vendredi 30 octobre :
 * le port du masque est obligatoire dès l’âge de 6 ans dans les écoles ;
-* vous devez vous munir d’un [justificatif de déplacement scolaire](https://www.gouvernement.fr/sites/default/files/30-10-2020-justificatif-de-deplacement-scolaire.pdf) pour le trajet entre votre domicile et le lieu d’accueil de l’enfant.
+* vous devez vous munir d’un [justificatif de déplacement scolaire](https://www.gouvernement.fr/sites/default/files/05-11-2020-justificatif-de-deplacement-scolaire.pdf) pour le trajet entre votre domicile et le lieu d’accueil de l’enfant.
 
 Consultez notre page dédiée : [« Conseils liés aux activités et à la santé des enfants »](#pediatrie)
 
