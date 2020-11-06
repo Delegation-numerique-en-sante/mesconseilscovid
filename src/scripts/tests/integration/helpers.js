@@ -218,7 +218,7 @@ async function remplirContactsARisque(page, contactARisque) {
         })
         text = '"Continuer"'
     } else {
-        text = '/.* pas eu de contact récents/'
+        text = '/.* pas eu de contact à risque/'
     }
 
     let bouton = await page.waitForSelector(`#page >> text=${text}`)
