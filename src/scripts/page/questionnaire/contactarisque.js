@@ -20,8 +20,8 @@ export default function contactarisque(form, app) {
         enableOrDisableSecondaryFields(form, primary)
     })
     const uncheckedLabel = app.profil.estMonProfil()
-        ? 'Je n’ai pas eu de contact récents'
-        : 'Cette personne n’a pas eu de contact récents'
+        ? 'Je n’ai pas eu de contact à risque'
+        : 'Cette personne n’a pas eu de contact à risque'
     toggleFormButtonOnCheckRequired(
         form,
         button.value,
