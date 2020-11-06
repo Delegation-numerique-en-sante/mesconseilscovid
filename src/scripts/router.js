@@ -47,6 +47,8 @@ export function initRouter(app) {
 
     router.hooks({
         before: function (done) {
+            removeSourceQueryParamsFromURL()
+
             var header = document.querySelector('header section')
             if (typeof app.profil.nom === 'undefined') {
                 showElement(header.querySelector('#js-profil-empty-header'))
@@ -64,6 +66,42 @@ export function initRouter(app) {
             document.dispatchEvent(new CustomEvent('pageChanged', { detail: pageName }))
         },
     })
+
+    function removeSourceQueryParamsFromURL() {
+        if (
+            typeof window !== 'undefined' &&
+            window.history &&
+            window.history.replaceState
+        ) {
+            let url = new URL(window.location.href)
+            let changed = removeParamsFromURL(url, [
+                'ref',
+                'source',
+                'utm_source',
+                'utm_medium',
+                'utm_campaign',
+            ])
+            if (changed) {
+                router.pause()
+                window.history.replaceState({}, '', url)
+                router.resume()
+            }
+        }
+    }
+
+    function removeParamsFromURL(url, keys) {
+        let params = new URLSearchParams(url.search)
+        keys.forEach((key) => params.delete(key))
+        let newSearch = params.toString()
+        if (newSearch !== '') {
+            newSearch = '?' + newSearch
+        }
+        if (newSearch === url.search) {
+            return false
+        }
+        url.search = newSearch
+        return true
+    }
 
     function addQuestionnaireRoute(pageName, view) {
         function beforeFunc(profil) {

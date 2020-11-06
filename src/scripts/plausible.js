@@ -46,9 +46,9 @@
             location.protocol === 'file:'
         ) {
             ignore('running locally')
-            window.app._plausibleTrackingEvents.push(
-                `${payload.name}:${location.hash.slice(1)}`
-            )
+            let event = `${payload.name}:${location.hash.slice(1)}`
+            if (payload.source) event = `${event}:${payload.source}`
+            window.app._plausibleTrackingEvents.push(event)
             console.debug('[Plausible]', payload)
             return
         }
