@@ -16,7 +16,7 @@ Restez **en isolement** et **refaites un test** 7 jours après votre dernier con
 
 
 
-## [statut_contact_a_risque_meme_lieu_de_vie_actuel.md](statut_contact_a_risque_meme_lieu_de_vie_actuel.md)
+## [statut_contact_a_risque_meme_lieu_de_vie.md](statut_contact_a_risque_meme_lieu_de_vie.md)
 
 Restez **en isolement** jusqu’à 7 jours après la guérison du dernier cas infecté du foyer.
 
