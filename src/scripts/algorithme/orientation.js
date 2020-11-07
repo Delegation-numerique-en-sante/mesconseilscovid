@@ -272,6 +272,13 @@ export default class AlgorithmeOrientation {
             (this.profil.estEnAttente() && this.risqueDInfection) ||
             (this.profil.sansDepistage() && this.risqueDInfection)
         ) {
+            if (this.profil.estPositif()) {
+                blockNames.push('conseils-isolement-depistage-positif')
+            } else if (this.profil.hasContactARisqueReconnus()) {
+                blockNames.push('conseils-isolement-contact-a-risque')
+            } else if (this.risqueDInfection) {
+                blockNames.push('conseils-isolement-symptomes')
+            }
             blockNames.push('conseils-isolement')
         }
         return blockNames

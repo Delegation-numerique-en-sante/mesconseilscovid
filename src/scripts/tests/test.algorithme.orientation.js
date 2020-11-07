@@ -287,6 +287,65 @@ describe('Algorithme d’orientation', function () {
         })
     })
 
+    describe('L’isolement', function () {
+        it('Le bloc isolement ne s’affiche pas par défaut', function () {
+            const profil = new Profil('mes_infos', {})
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [])
+        })
+
+        it('Le bloc isolement s’affiche avec dépistage positif', function () {
+            const profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_resultat: 'positif',
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
+                'conseils-isolement-depistage-positif',
+                'conseils-isolement',
+            ])
+        })
+
+        it('Le bloc isolement s’affiche avec dépistage négatif et contact à risque', function () {
+            const profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_resultat: 'negatif',
+                contact_a_risque: true,
+                contact_a_risque_meme_lieu_de_vie: true,
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
+                'conseils-isolement-contact-a-risque',
+                'conseils-isolement',
+            ])
+        })
+
+        it('Le bloc isolement s’affiche avec dépistage en attente et symptômes', function () {
+            const profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_resultat: 'en_attente',
+                symptomes_passes: true,
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
+                'conseils-isolement-symptomes',
+                'conseils-isolement',
+            ])
+        })
+
+        it('Le bloc isolement s’affiche sans dépistage et symptômes', function () {
+            const profil = new Profil('mes_infos', {
+                depistage: false,
+                symptomes_passes: true,
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
+                'conseils-isolement-symptomes',
+                'conseils-isolement',
+            ])
+        })
+    })
+
     describe('Ma santé', function () {
         it('Le bloc santé s’affiche par défaut', function () {
             var profil = new Profil('mes_infos', {})
