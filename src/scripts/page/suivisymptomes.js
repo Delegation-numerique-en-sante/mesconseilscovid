@@ -70,20 +70,39 @@ export default function suivisymptomes(form, app) {
             window.plausible(`Troisième suivi`)
         }
 
-        app.profil.symptomes_actuels = etat.symptomes
-        app.profil.symptomes_actuels_temperature = etat.fievre === 'oui'
-        app.profil.symptomes_actuels_temperature_inconnue = false
-        app.profil.symptomes_actuels_toux = etat.toux === 'oui'
-        // app.profil.symptomes_actuels_odorat = false // ???
-        app.profil.symptomes_actuels_douleurs =
-            etat.etatGeneral === 'pire' || etat.etatGeneral === 'critique'
-        app.profil.symptomes_actuels_diarrhee = etat.diarrheeVomissements === 'oui'
-        app.profil.symptomes_actuels_fatigue =
-            etat.etatGeneral === 'pire' || etat.etatGeneral === 'critique'
-        app.profil.symptomes_actuels_alimentation =
-            etat.alimentationHydratation === 'oui'
-        app.profil.symptomes_actuels_souffle =
-            etat.essoufflement === 'pire' || etat.etatGeneral === 'critique'
+        const estOui = (symptome) => symptome === 'oui'
+        const estCritiqueOuPire = (symptome) =>
+            symptome === 'pire' || symptome === 'critique'
+
+        if (etat.symptomes) {
+            app.profil.symptomes_passes = false
+            // Met à jour symptômes actuels (approximation).
+            app.profil.symptomes_actuels = true
+            app.profil.symptomes_actuels_temperature = estOui(etat.fievre)
+            app.profil.symptomes_actuels_temperature_inconnue = false
+            app.profil.symptomes_actuels_toux = estOui(etat.toux)
+            // app.profil.symptomes_actuels_odorat = false // ???
+            app.profil.symptomes_actuels_douleurs = estCritiqueOuPire(etat.etatGeneral)
+            app.profil.symptomes_actuels_diarrhee = estOui(etat.diarrheeVomissements)
+            app.profil.symptomes_actuels_fatigue = estCritiqueOuPire(etat.etatGeneral)
+            app.profil.symptomes_actuels_alimentation = estOui(
+                etat.alimentationHydratation
+            )
+            app.profil.symptomes_actuels_souffle = estCritiqueOuPire(etat.essoufflement)
+        } else {
+            app.profil.symptomes_passes = true
+            // Mise à zéro symptômes actuels.
+            app.profil.symptomes_actuels = false
+            app.profil.symptomes_actuels_temperature = false
+            app.profil.symptomes_actuels_temperature_inconnue = false
+            app.profil.symptomes_actuels_toux = false
+            // app.profil.symptomes_actuels_odorat = false // ???
+            app.profil.symptomes_actuels_douleurs = false
+            app.profil.symptomes_actuels_diarrhee = false
+            app.profil.symptomes_actuels_fatigue = false
+            app.profil.symptomes_actuels_alimentation = false
+            app.profil.symptomes_actuels_souffle = false
+        }
 
         const algoDeconfinement = new AlgorithmeDeconfinement(app.profil)
         if (algoDeconfinement.isDeconfinable()) {
