@@ -931,6 +931,7 @@ a[href*='youtube.com']::after {
 }
 
 .conseils details {
+    display: block;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     transition: box-shadow 0.3s;
     border: 1px solid lightgray;
@@ -940,6 +941,9 @@ a[href*='youtube.com']::after {
     outline: 0;
     cursor: pointer;
     list-style: none;
+}
+html.no-details details > summary::before {
+    display: none !important;
 }
 .conseils details summary header {
     display: flex;
