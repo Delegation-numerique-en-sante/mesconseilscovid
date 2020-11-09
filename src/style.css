@@ -942,8 +942,8 @@ a[href*='youtube.com']::after {
     cursor: pointer;
     list-style: none;
 }
-html.no-details details > summary::before {
-    display: none !important;
+.conseils details:not([open]) > :not(summary) {
+    display: none;
 }
 .conseils details summary header {
     display: flex;
