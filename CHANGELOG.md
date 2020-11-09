@@ -1,5 +1,11 @@
 # Changelog
 
+## 2020-11-09
+
+* personnalise le bloc d’informations sur l’isolement
+* conseils mieux adaptés au cas où je vis avec une personne malade
+* améliorations d’ergonomie
+
 ## 2020-11-06
 
 * corrige des liens cassés
