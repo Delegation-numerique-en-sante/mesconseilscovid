@@ -22,7 +22,6 @@
   },
   "dependencies": {
     "core-js": "3.7.0",
-    "details-polyfill": "^1.1.0",
     "localforage": "1.7.3",
     "navigo": "7.1.2",
     "pikaday": "^1.8.2",

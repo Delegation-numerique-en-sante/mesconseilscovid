@@ -1,3 +1,5 @@
+import applyDetailsSummaryPolyfill from '../polyfills/details_polyfill.js'
+
 import {
     bindCalendar,
     bindFeedback,
@@ -17,6 +19,8 @@ import AlgorithmeOrientation from '../algorithme/orientation.js'
 import AlgorithmeSuivi from '../algorithme/suivi.js'
 
 export default function conseils(element, app) {
+    applyDetailsSummaryPolyfill(element)
+
     // Make sure we show profile-specific text.
     showMeOrThem(element, app.profil)
 
@@ -46,24 +50,6 @@ export default function conseils(element, app) {
 
     // Display appropriate conseils.
     showRelevantBlocks(element, app.profil, algoOrientation)
-
-    // Ouvrir/fermer les blocs d’information sous IE11.
-    ;[].forEach.call(
-        element.querySelectorAll('html.no-details details summary'),
-        (elem) => {
-            elem.addEventListener('click', function (event) {
-                let elem = event.target
-                while (elem.tagName !== 'DETAILS') {
-                    elem = elem.parentElement
-                }
-                if (elem.getAttribute('open')) {
-                    elem.removeAttribute('open')
-                } else {
-                    elem.setAttribute('open', 'open')
-                }
-            })
-        }
-    )
 
     if (app.profil.hasSuiviStartDate() && app.profil.hasHistorique()) {
         if (app.profil.hasDeconfinementDate()) {
