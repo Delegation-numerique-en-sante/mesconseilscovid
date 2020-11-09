@@ -47,6 +47,24 @@ export default function conseils(element, app) {
     // Display appropriate conseils.
     showRelevantBlocks(element, app.profil, algoOrientation)
 
+    // Ouvrir/fermer les blocs d’information sous IE11.
+    ;[].forEach.call(
+        element.querySelectorAll('html.no-details details summary'),
+        (elem) => {
+            elem.addEventListener('click', function (event) {
+                let elem = event.target
+                while (elem.tagName !== 'DETAILS') {
+                    elem = elem.parentElement
+                }
+                if (elem.getAttribute('open')) {
+                    elem.removeAttribute('open')
+                } else {
+                    elem.setAttribute('open', 'open')
+                }
+            })
+        }
+    )
+
     if (app.profil.hasSuiviStartDate() && app.profil.hasHistorique()) {
         if (app.profil.hasDeconfinementDate()) {
             // Afficher le bloc de déconfinement
