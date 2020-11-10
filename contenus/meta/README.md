@@ -247,7 +247,7 @@ Nous n’avons pas accès à vos données et vous pouvez <a href="#introduction"
 
 #### À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
 
-Le port du masque est recommandé **à partir de l'âge de 6 ans.**
+Le port du masque est recommandé **à partir de l’âge de 6 ans.**
 
 Dans le cadre du confinement, les crèches, écoles, collèges et lycées restent ouverts avec un protocole sanitaire renforcé dont le port du masque obligatoire dès l’âge de 6 ans.
 
@@ -348,34 +348,34 @@ Il est primordial de maintenir l’ensemble des vaccinations de vos enfants.
 Les consultations pour vaccination ne doivent pas être reportées et les retards de vaccinations doivent être rattrapés.
  
 
-#### Mon enfant de moins de 6 ans a le nez qui coule et tousse mais n’a pas de fièvre, dois-je le sortir de l’école maternelle ?
 
-**NON**, sauf s’il a été en contact avec un adulte ou un autre enfant dont l’infection au coronavirus a été prouvée.
+#### Mon enfant de 2 ans a de la diarrhée depuis 2 jours et a vomi plusieurs fois hier ; il devient fébrile et commence à tousser. On m’a parlé de gastroentérite mais il n’y a pas d’autres cas dans la famille ou à la crèche.  Peut-il s’agir de la Covid ?
 
-S’il apparaît de la fièvre ou si cette « rhino » se prolonge au dela de 3 jours, il doit rester à domicile et consulter un médecin.
-
-
-#### Mon enfant est asymptomatique et a été testé positif au coronavirus, que dois-je faire pour l’école ?
-
-Il doit rester au domicile pendant 7 jours, un contrôle de la PCR n’est pas nécessaire pour le retour en collectivité et l’école ne peut pas exiger de certificat médical.
+Bien que la Covid soit très rare à cet âge, il est prudent de consulter un médecin qui fera pratiquer un test car les troubles digestifs persistants peuvent être dûs au coronavirus. Cette infection est de toute façon le plus souvent bénigne, les enfants ont beaucoup moins de risque d’avoir des formes graves et d’être hospitalisés que les adultes.
 
 
-#### Mon enfant asymptomatique, mais contact d’un autre enfant malade, a été testé positif au coronavirus, dois-je m’inquiéter ?
+#### Mon enfant a moins de 6 ans et a le nez qui coule et une toux grasse mais n’a pas de fièvre, dois-je le sortir de l’école maternelle ?
 
-**NON**, les enfants ont 100 fois moins de risque d’hospitalisation et 1000 fois moins de risque de forme grave que les adultes.
-
-S’il présente de la fièvre ou s’il a des signes de rhinopharyngite ou des troubles digestifs, une consultation médicale est souhaitable. S’il apparait une gêne respiratoire, la consultation médicale est urgente.
+**NON**, sauf s’il a été en contact avec un adulte ou un autre enfant dont l’infection à coronavirus a été prouvée ; il n’y a pas non plus de nécessité de lui faire un test. Il faudra s’assurer de la disparition des symptômes ou au moins de leur amélioration au bout de 3 jours.
 
 
-#### Mon enfant de plus de 6 ans est malade mais le médecin n’a pas prescrit un test de dépistage du Covid par PCR. Que dois-je faire pour l’école ?
+#### Mon mari (père de l’enfant ci-dessus) est obèse et diabétique, dois-je prendre des précautions particulières ?
 
-L’enfant malade ne doit pas retourner à l’école tant qu’il a des symptômes ; si ceux-ci persistent au-delà du 3<sup>e</sup> jour, recontactez votre médecin car la réalisation d’un test peut alors être nécessaire. S’il est négatif, il peut retourner à l’école dès la fin des symptômes. Un certificat médical n’est pas nécessaire pour retourner à l’école.
+**OUI**, dans ce contexte particulier et bien que la Covid soit rare à cet âge, il faut s’assurer que votre mari ne risque pas d’être contaminé par sa fille ou son fils et donc pratiquer un test à votre enfant.
+
+En attendant le résultat, il faut « isoler » le papa lorsque que votre enfant est au domicile et c’est vous qui devez l’amener à l’école et vous en occuper.
 
 
-#### Aucun cas n’a été identifié dans l’école mais je réside dans une région où la maladie est très fréquente. Dois-je faire faire régulièrement un test de dépistage à mon enfant ?
+#### Mon enfant a plus de 6 ans et a eu mal à la gorge et de la fièvre, je l’ai gardé à la maison. Le médecin traitant a fait un test rapide avec un écouvillon sur les amygdales et a diagnostiqué une angine à streptocoque motivant un traitement antibiotique. Que dois je faire pour l’école ?
 
-**NON**, les enfants ont 10 fois moins de risque d’attraper la Covid que les adultes. S’ils sont infectés, ils sont beaucoup moins contagieux, surtout s’ils n’ont aucun symptôme. De plus, le test nasal est difficile et peut être douloureux chez le jeune enfant.
+Ne lui donnez pas d’anti inflammatoires et seulement du paracétamol en plus de l’antibiotique. Il peut retourner à l’école après 2 jours de traitement à condition qu’il n’ait plus de fièvre. Par contre si les symptômes ne s’améliorent pas ou s’il apparaît une gêne respiratoire, il faut consulter à nouveau et faire pratiquer un test Covid.
 
+
+#### Le collège m’a informé qu’une camarade de classe de ma fille a été testée positive à la Covid, après avoir été contaminée par son père. Cette enfant a un peu de fièvre mais ne tousse pas. Dois-je faire pratiquer un test à ma fille qui n’a aucun symptôme ?
+
+**NON**, s’il s’agit d’un seul cas dans la classe et si votre fille n’a pas eu de contact très proche sans masque avec sa camarade (par exemple en mangeant à sa table à la cantine) ; elle peut aller normalement au collège.
+
+Si votre fille présente à son tour dans les jours qui viennent de la fièvre ou de la toux, il faudra la garder à domicile et la faire tester. Le dépistage systématique de l’ensemble de la classe n’est justifié que si le professeur ou 3 enfants sont infectés.
 </div>
 
 <div class="conseils">
