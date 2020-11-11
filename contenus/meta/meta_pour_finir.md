@@ -1,5 +1,13 @@
 ### Pour finir…
 
+<div class="conseil">
+
+#### Aidez-nous à améliorer l’application MesConseilsCovid
+
+Nous organisons des tests utilisateurs individuels de 20 minutes dont l’objectif est de mieux comprendre vos attentes et vos besoins pour vous apporter des conseils plus pertinents. Si vous êtes volontaire pour participer à un test utilisateur, envoyez-nous « **OUI** » à l’adresse e-mail suivante : <a href="mailto:juliette@mesconseilscovid.fr">juliette@mesconseilscovid.fr</a>
+
+</div>
+
 <div class="icon icon-information">
     <div class="feedback-component" data-feedback-transition-delay="500">
         <div class="feedback-question">
@@ -22,7 +30,7 @@
                     <input type="submit" class="button" value="Envoyer">
                 </div>
             </form>
-            <p>ou écrivez-nous à : <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a></p>
+            <p class="feedback-email">ou écrivez-nous à : <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a></p>
         </div>
         <div class="feedback-thankyou" hidden>
             <p>
