@@ -4,9 +4,7 @@
 
 #### Aidez-nous à améliorer Mes Conseils Covid
 
-Afin de vous apporter des conseils plus pertinents, nous organisons des tests utilisateurs individuels de 20 minutes dont l’objectif est de mieux comprendre vos attentes.
-
-Vous souhaitez participer à un test utilisateur ? Envoyez-nous simplement **OK** par e-mail à l’adresse <a href="mailto:juliette@mesconseilscovid.fr">juliette@mesconseilscovid.fr</a>, et nous vous recontacterons pour convenir d’un rendez-vous.
+Nous organisons des tests utilisateurs individuels de 20 minutes dont l’objectif est de mieux comprendre vos attentes et vos besoins pour vous apporter des conseils plus pertinents. Si vous êtes volontaire pour participer à un test utilisateur, envoyez-nous « **OUI** » à l’adresse e-mail suivante : <a href="mailto:juliette@mesconseilscovid.fr">juliette@mesconseilscovid.fr</a>
 
 </div>
 
