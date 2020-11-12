@@ -1,5 +1,12 @@
 # Changelog
 
+## 2020-11-12
+
+* mise à jour des questions médicales dans les conseils pour les enfants
+* mise à jour de liens vers le ministère du travail
+* ajout d’un message pour inviter aux tests utilisateurs
+* meilleur rendu de la page conseils sous IE11
+
 ## 2020-11-09
 
 * personnalise le bloc d’informations sur l’isolement
