@@ -2,7 +2,7 @@
 
 <div class="conseil">
 
-#### Aidez-nous à améliorer Mes Conseils Covid
+#### Aidez-nous à améliorer l’application MesConseilsCovid
 
 Nous organisons des tests utilisateurs individuels de 20 minutes dont l’objectif est de mieux comprendre vos attentes et vos besoins pour vous apporter des conseils plus pertinents. Si vous êtes volontaire pour participer à un test utilisateur, envoyez-nous « **OUI** » à l’adresse e-mail suivante : <a href="mailto:juliette@mesconseilscovid.fr">juliette@mesconseilscovid.fr</a>
 
