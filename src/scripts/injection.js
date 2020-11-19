@@ -25,27 +25,38 @@ export function lienPrefecture(element, departement) {
 }
 
 export function caracteristiquesARisques(element, algoOrientation) {
-    if (
-        algoOrientation.sup65 ||
-        algoOrientation.profil.grossesse_3e_trimestre ||
-        algoOrientation.imc > 30
-    ) {
-        var content = ''
-        if (algoOrientation.sup65) {
-            content = 'vous êtes âgé·e de plus de 65 ans'
-        } else if (algoOrientation.profil.grossesse_3e_trimestre) {
-            content = 'vous êtes au 3e trimestre de votre grossesse'
-        }
-        if (algoOrientation.imc > 30) {
-            content += content ? ' et ' : ''
-            content +=
-                'vous avez un IMC supérieur à 30 (' +
-                Math.round(algoOrientation.imc) +
-                ')'
-        }
-        content += '.'
-        element.textContent = content
+    let caracteristiques = _caracteristiquesARisques(algoOrientation)
+    if (caracteristiques) {
+        var content = formatListe(caracteristiques)
+        element.textContent = content + '.'
     }
+}
+
+function _caracteristiquesARisques(algoOrientation) {
+    let caracteristiques = []
+    if (algoOrientation.sup65) {
+        caracteristiques.push('vous êtes âgé·e de plus de 65 ans')
+    } else if (algoOrientation.profil.grossesse_3e_trimestre) {
+        caracteristiques.push('vous êtes au 3e trimestre de votre grossesse')
+    }
+    if (algoOrientation.imc > 30) {
+        caracteristiques.push(
+            'vous avez un IMC supérieur à 30 (' + Math.round(algoOrientation.imc) + ')'
+        )
+    }
+    return caracteristiques
+}
+
+function formatListe(liste) {
+    if (liste.length === 1) {
+        return liste[0]
+    }
+    if (liste.length === 2) {
+        return liste.join(' et ')
+    }
+    return (
+        liste.slice(0, liste.length - 1).join(', ') + ' et ' + liste[liste.length - 1]
+    )
 }
 
 export function antecedents(element, algoOrientation) {
