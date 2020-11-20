@@ -270,7 +270,7 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 ## [question_dépistage_aide.md](question_dépistage_aide.md)
 
-Le test virologique (aussi appelé RT-PCR) détecte la présence du virus dans un prélèvement nasal.
+Les test virologiques rapides ou en laboratoire (aussi appelé RT-PCR) détectent la présence du virus dans un prélèvement nasal.
 
 
 

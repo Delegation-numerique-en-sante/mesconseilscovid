@@ -323,9 +323,9 @@ Nous vous conseillons de :
 
 2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 
-3. Si vous constatez l’apparition de **symptômes**, contactez votre médecin, et suivez leur évolution avec le [questionnaire de suivi](#suivisymptomes).
+3. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
 
-4. **Prévoir un test au 7<sup>e</sup> jour** suivant le dernier contact avec le malade, en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid). En tant que « Cas contact » d’une personne malade vous serez prioritaire pour faire votre test :
+4. **Prévoir un test en laboratoire au 7<sup>e</sup> jour** suivant le dernier contact avec le malade, en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid). En tant que « Cas contact » d’une personne malade vous serez prioritaire pour faire votre test :
 
     * S’il est **négatif**, vous pourrez lever votre isolement.
     * Si le test est **positif**, il faudra à nouveau 7 jours d’isolement, et surveiller l’apparition de symptômes.
@@ -352,7 +352,7 @@ Nous vous conseillons de :
 
 2. Appliquer **les mesures barrières renforcées** avec la personne malade et les autres membres de votre foyer.
 
-3. **Faire un test** 7 jours après la guérison de la personne malade :
+3. **Faire un test** en laboratoire 7 jours après la guérison de la personne malade :
 
     * S’il est **négatif**, vous pourrez lever votre isolement.
     * Si le test est **positif**, il faudra à nouveau 7 jours d’isolement, et surveiller l’apparition de symptômes.
@@ -371,12 +371,12 @@ Nous vous conseillons de :
 
 2. Appliquer **les mesures barrières renforcées** avec la personne malade et les autres membres de votre foyer.
 
-3. Faire un **test de dépistage** :
+3. Faire un **test de dépistage** en laboratoire :
 
     * Si celui-ci est positif, **restez 7 jours en isolement**.
     * Si celui-ci est négatif, **restez en isolement** et **refaites un test** 7 jours après la guérison de la personne malade.
 
-4. Si vous constatez l’apparition de **symptômes**, contactez votre médecin, et suivez leur évolution avec le [questionnaire de suivi](#suivisymptomes).
+4. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
 
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
@@ -456,7 +456,7 @@ Nous vous conseillons de :
 
 1. **Contacter votre médecin généraliste**.
 
-2. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid) (vous serez prioritaire).
+2. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid) (vous serez prioritaire). Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test rapide ou un test en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test en laboratoire est conseillé.
 
 3. Vous maintenir **en isolement** jusqu’au résultat du test. Si le résultat est négatif, vous pourrez mettre fin à votre isolement.
 
@@ -520,7 +520,7 @@ Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7q
 
 Nous vous conseillons de :
 
-1. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid).
+1. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid). Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test rapide ou un test en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test en laboratoire est conseillé.
 
 2. Vous maintenir **en isolement** jusqu’au résultat du test. Si le résultat est négatif, vous pourrez mettre fin à votre isolement.
 
@@ -597,6 +597,8 @@ Retrouvez le [lieu de test le plus proche](https://sante.fr/cartographie-depista
 </div>
 
 * Les tests de dépistage sont **accessibles sur demande** et sans prescription médicale, sans même présenter de symptômes.
+
+* Les nouveaux **tests antigéniques rapides** constituent un outil supplémentaire pour réduire les chaînes de transmission virale. Ils viennent en complément des tests RT-PCR qui restent la technique de référence pour la détection de l’infection à la Covid. Ils sont prioritairement réservés aux personnes symptomatiques. Les tests doivent être réalisés **dans un délai inférieur ou égal à 4 jours** après l’apparition des symptômes. Pour plus d’information : [Tout ce qu’il faut savoir sur les tests antigéniques du SRAS-CoV-2](https://www.ameli.fr/paris/assure/covid-19/les-tests-de-depistage-de-la-covid-19/tout-ce-quil-faut-savoir-sur-les-tests-antigeniques-du-sras-cov-2).
 
 * Ils sont **intégralement pris en charge** par l'assurance maladie. Ces dispositions sont également applicables aux personnes qui ne sont pas assurés sociaux.
 
