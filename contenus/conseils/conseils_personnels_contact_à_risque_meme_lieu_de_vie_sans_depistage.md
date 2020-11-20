@@ -4,7 +4,7 @@ Nous vous conseillons de :
 
 2. Appliquer **les mesures barrières renforcées** avec la personne malade et les autres membres de votre foyer.
 
-3. Faire un **test de dépistage** en laboratoire:
+3. Faire un **test de dépistage** en laboratoire :
 
     * Si celui-ci est positif, **restez 7 jours en isolement**.
     * Si celui-ci est négatif, **restez en isolement** et **refaites un test** 7 jours après la guérison de la personne malade.
