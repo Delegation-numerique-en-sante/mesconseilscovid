@@ -9,6 +9,6 @@ Nous vous conseillons de :
     * Si celui-ci est positif, **restez 7 jours en isolement**.
     * Si celui-ci est négatif, **restez en isolement** et **refaites un test** 7 jours après la guérison de la personne malade.
 
-4. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faite vous testez, et suivez leur évolution avec le [questionnaire de suivi](#suivisymptomes).
+4. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Suivez l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
 
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
