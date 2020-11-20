@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-11-20
+
+* mises à jour relatives aux différents types de tests possibles
+
 ## 2020-11-12
 
 * mise à jour des questions médicales dans les conseils pour les enfants
