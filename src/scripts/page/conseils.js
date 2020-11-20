@@ -127,6 +127,7 @@ function showRelevantSuiviBlocks(element, algoSuivi) {
 
 export function showRelevantBlocks(element, profil, algoOrientation) {
     var blockNames = statutBlockNamesToDisplay(algoOrientation)
+    blockNames = blockNames.concat(algoOrientation.timelineBlockNamesToDisplay())
     blockNames = blockNames.concat(
         algoOrientation.conseilsPersonnelsBlockNamesToDisplay()
     )

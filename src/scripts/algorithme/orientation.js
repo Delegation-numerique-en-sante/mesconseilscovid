@@ -267,6 +267,20 @@ export default class AlgorithmeOrientation {
         )
     }
 
+    timelineBlockNamesToDisplay() {
+        const blockNames = []
+        if (
+            (this.profil.hasSymptomesActuelsReconnus() ||
+                this.profil.symptomes_passes) &&
+            (this.profil.estPositif() ||
+                this.profil.estEnAttente() ||
+                this.profil.sansDepistage())
+        ) {
+            blockNames.push('conseils-timeline-isolement-symptomes')
+        }
+        return blockNames
+    }
+
     conseilsPersonnelsBlockNamesToDisplay() {
         const blockNames = []
         if (this.profil.estPositif()) {

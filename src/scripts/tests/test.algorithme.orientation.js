@@ -346,6 +346,87 @@ describe('Algorithme d’orientation', function () {
         })
     })
 
+    describe('La frise chronologique sur l’isolement', function () {
+        it('La frise ne s’affiche pas par défaut', function () {
+            const profil = new Profil('mes_infos', {})
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [])
+        })
+
+        it('La frise s’affiche avec symptômes actuels et dépistage positif', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+                symptomes_actuels_douleurs: true,
+                depistage: true,
+                depistage_resultat: 'positif',
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
+                'conseils-timeline-isolement-symptomes',
+            ])
+        })
+
+        it('La frise s’affiche avec symptômes passés et dépistage positif', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_passes: true,
+                depistage: true,
+                depistage_resultat: 'positif',
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
+                'conseils-timeline-isolement-symptomes',
+            ])
+        })
+
+        it('La frise s’affiche avec symptômes actuels et dépistage en attente', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+                symptomes_actuels_douleurs: true,
+                depistage: true,
+                depistage_resultat: 'en_attente',
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
+                'conseils-timeline-isolement-symptomes',
+            ])
+        })
+
+        it('La frise s’affiche avec symptômes passés et dépistage en attente', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_passes: true,
+                depistage: true,
+                depistage_resultat: 'en_attente',
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
+                'conseils-timeline-isolement-symptomes',
+            ])
+        })
+
+        it('La frise s’affiche avec symptômes actuels et sans dépistage', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+                symptomes_actuels_douleurs: true,
+                depistage: false,
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
+                'conseils-timeline-isolement-symptomes',
+            ])
+        })
+
+        it('La frise s’affiche avec symptômes passés et sans dépistage', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_passes: true,
+                depistage: false,
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
+                'conseils-timeline-isolement-symptomes',
+            ])
+        })
+    })
+
     describe('Ma santé', function () {
         it('Le bloc santé s’affiche par défaut', function () {
             var profil = new Profil('mes_infos', {})

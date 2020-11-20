@@ -450,6 +450,10 @@ main footer .legals {
     background-image: url('illustrations/depistage.svg');
 }
 
+.timeline img {
+    width: 100%;
+}
+
 .conseils {
     margin-bottom: 3rem;
 }
