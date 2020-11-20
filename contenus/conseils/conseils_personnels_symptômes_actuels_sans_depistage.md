@@ -2,7 +2,7 @@ Nous vous conseillons de :
 
 1. **Contacter votre médecin généraliste**.
 
-2. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid) (vous serez prioritaire).
+2. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid) (vous serez prioritaire). Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test rapide ou un test en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test en laboratoire est conseillé.
 
 3. Vous maintenir **en isolement** jusqu’au résultat du test. Si le résultat est négatif, vous pourrez mettre fin à votre isolement.
 
