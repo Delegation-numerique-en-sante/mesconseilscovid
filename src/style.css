@@ -181,6 +181,22 @@ a .profil {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+@media only screen and (max-width: 680px) {
+    .introduction-block h2 {
+        font-size: 175%;
+        padding-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .introduction-block .tagline {
+        font-size: 125%;
+    }
+    .introduction-block .form-controls {
+        margin-bottom: 0;
+    }
+    .introduction-block a.button {
+        margin-top: 0.5rem;
+    }
+}
 
 .cards {
     display: flex;
