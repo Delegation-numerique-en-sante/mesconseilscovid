@@ -4,7 +4,7 @@ Nous vous conseillons de :
 
 2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 
-3. Si vous constatez l’apparition de **symptômes**, contactez votre médecin, faite vous tester, et suivez leur évolution avec le [questionnaire de suivi](#suivisymptomes).
+3. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
 
 4. **Prévoir un test en laboratoire au 7<sup>e</sup> jour** suivant le dernier contact avec le malade, en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid). En tant que « Cas contact » d’une personne malade vous serez prioritaire pour faire votre test :
 
