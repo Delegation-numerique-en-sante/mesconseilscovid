@@ -1,1 +1,1 @@
-Les test virologiques rapide ou en laboratoire (aussi appelé RT-PCR) détecte la présence du virus dans un prélèvement nasal.
+Les test virologiques rapides ou en laboratoire (aussi appelé RT-PCR) détectent la présence du virus dans un prélèvement nasal.
