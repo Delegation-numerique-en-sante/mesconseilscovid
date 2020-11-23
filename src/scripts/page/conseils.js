@@ -168,6 +168,11 @@ export function showRelevantAnswersRecap(element, profil, algoOrientation) {
     )
 
     // eslint-disable-next-line no-extra-semi
+    ;[].forEach.call(element.querySelectorAll('.reponse-personne-fragile'), (elem) => {
+        injection.caracteristiquesOuAntecedentsARisques(elem, algoOrientation)
+    })
+
+    // eslint-disable-next-line no-extra-semi
     ;[].forEach.call(element.querySelectorAll('.nom-antecedents'), (elem) => {
         injection.antecedents(elem, algoOrientation)
     })
