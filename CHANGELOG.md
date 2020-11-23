@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-11-23
+
+* met à jour le lien vers une infographie
+
 ## 2020-11-20
 
 * mises à jour relatives aux différents types de tests possibles
