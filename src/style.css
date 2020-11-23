@@ -1016,6 +1016,9 @@ a#geolocalisation {
     font-size: 0.8rem;
     margin-bottom: 1rem;
 }
+.block .reponse p {
+    max-width: 100%;
+}
 
 .nouveau {
     border: #000091 solid 1px;
