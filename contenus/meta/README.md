@@ -100,8 +100,6 @@ Si votre situation change, vous pouvez **mettre à jour vos réponses**, par exe
 Obtenez en 3 minutes des recommandations pour <b>votre santé</b> et celle de vos proches.
 </p>
 
-Vos informations personnelles sont seulement stockées sur cet appareil et ne sont pas partagées.
-
 </div>
 
 
