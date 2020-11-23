@@ -24,6 +24,14 @@ export function lienPrefecture(element, departement) {
     element.setAttribute('href', prefectures[departement])
 }
 
+export function caracteristiquesOuAntecedentsARisques(element, algoOrientation) {
+    let caracteristiques = _caracteristiquesARisques(algoOrientation)
+    caracteristiques.push(..._antecedentsARisques(algoOrientation))
+    if (caracteristiques) {
+        element.textContent = formatListe(caracteristiques)
+    }
+}
+
 export function caracteristiquesARisques(element, algoOrientation) {
     let caracteristiques = _caracteristiquesARisques(algoOrientation)
     if (caracteristiques) {
@@ -60,23 +68,25 @@ function formatListe(liste) {
 }
 
 export function antecedents(element, algoOrientation) {
-    if (
-        algoOrientation.antecedents ||
-        algoOrientation.profil.antecedent_chronique_autre
-    ) {
-        var content = ''
-        if (algoOrientation.antecedents) {
-            content = 'Vous avez des antécédents à risque'
-        }
-        if (algoOrientation.profil.antecedent_chronique_autre) {
-            content += content ? ' et vous ' : 'Vous '
-            content +=
-                'avez une maladie chronique, un handicap ' +
-                'ou vous prenez un traitement au long cours'
-        }
-        content += '.'
-        element.textContent = content
+    let antecedents = _antecedentsARisques(algoOrientation)
+    if (antecedents) {
+        var content = formatListe(antecedents)
+        element.textContent = content.charAt(0).toUpperCase() + content.slice(1) + '.'
     }
+}
+
+export function _antecedentsARisques(algoOrientation) {
+    let antecedents = []
+    if (algoOrientation.antecedents) {
+        antecedents.push('vous avez des antécédents à risque')
+    }
+    if (algoOrientation.profil.antecedent_chronique_autre) {
+        antecedents.push(
+            'vous avez une maladie chronique, un handicap ' +
+                'ou vous prenez un traitement au long cours'
+        )
+    }
+    return antecedents
 }
 
 export function suiviRepetition(element, profil) {

@@ -68,3 +68,8 @@ Vous vivez avec une ou des personnes considérée(s) comme fragile(s) face à la
 
 Vous êtes enceinte au 3e trimestre de votre grossesse (<a href="#caracteristiques">modifier</a>)
 
+
+## [réponse_personne_fragile.md](réponse_personne_fragile.md)
+
+Vous êtes considéré·e « à risque » car <span class="reponse-personne-fragile"></span>. Cela signifie que si vous attrapez la Covid, vous <b>risquez des complications</b> qui nécessiteraient une hospitalisation.
+
