@@ -456,7 +456,7 @@ Nous vous conseillons de :
 
 1. **Contacter votre médecin généraliste**.
 
-2. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid) (vous serez prioritaire). Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test rapide ou un test en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test en laboratoire est conseillé.
+2. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid) (vous serez prioritaire). Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test antigénique rapide ou un test en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test en laboratoire est conseillé.
 
 3. Vous maintenir **en isolement** jusqu’au résultat du test. Si le résultat est négatif, vous pourrez mettre fin à votre isolement.
 
@@ -520,7 +520,7 @@ Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7q
 
 Nous vous conseillons de :
 
-1. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid). Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test rapide ou un test en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test en laboratoire est conseillé.
+1. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid). Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test antigénique rapide ou un test en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test en laboratoire est conseillé.
 
 2. Vous maintenir **en isolement** jusqu’au résultat du test. Si le résultat est négatif, vous pourrez mettre fin à votre isolement.
 
@@ -598,9 +598,9 @@ Retrouvez le [lieu de test le plus proche](https://sante.fr/cartographie-depista
 
 * Les tests de dépistage sont **accessibles sur demande** et sans prescription médicale, sans même présenter de symptômes.
 
-* <span class="nouveau">nouveau</span> Les nouveaux **tests antigéniques rapides** constituent un outil supplémentaire pour réduire les chaînes de transmission virale. Ils viennent en complément des tests RT-PCR qui restent la technique de référence pour la détection de l’infection à la Covid. Ils sont prioritairement réservés aux personnes symptomatiques. Les tests doivent être réalisés **dans un délai inférieur ou égal à 4 jours** après l’apparition des symptômes. Pour plus d’information : [Tout ce qu’il faut savoir sur les tests antigéniques du SRAS-CoV-2](https://www.ameli.fr/paris/assure/covid-19/les-tests-de-depistage-de-la-covid-19/tout-ce-quil-faut-savoir-sur-les-tests-antigeniques-du-sras-cov-2).
+* <span class="nouveau">nouveau</span> Les nouveaux **tests antigéniques rapides** constituent un outil supplémentaire pour réduire les chaînes de transmission virale. Ils viennent en complément des tests RT-PCR qui restent la technique de référence pour la détection de l’infection à la Covid. Ils sont prioritairement réservés aux personnes symptomatiques. Les tests doivent être réalisés **dans un délai inférieur ou égal à 4 jours** après l’apparition des symptômes. Pour plus d’information : [Tout ce qu’il faut savoir sur les tests antigéniques](https://www.ameli.fr/paris/assure/covid-19/les-tests-de-depistage-de-la-covid-19/tout-ce-quil-faut-savoir-sur-les-tests-antigeniques-du-sras-cov-2).
 
-* Ils sont **intégralement pris en charge** par l'assurance maladie. Ces dispositions sont également applicables aux personnes qui ne sont pas assurés sociaux.
+* Les tests de dépistage sont **intégralement pris en charge** par l'assurance maladie. Ces dispositions sont également applicables aux personnes qui ne sont pas assurés sociaux.
 
 * Depuis le 11 septembre 2020, une **stratégie de priorisation** des tests de dépistage a été mise en place. Seront testés en priorité : les personnes **ayant des symptômes**, les **cas contacts**, les **personnels soignants** ou assimilés.
 
