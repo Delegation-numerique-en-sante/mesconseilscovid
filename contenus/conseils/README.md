@@ -130,7 +130,7 @@ Le confinement peut être difficile à vivre. Si vous le souhaitez, vous pouvez 
 
 ## [conseils_contagion.md](conseils_contagion.md)
 
-Une personne ayant la Covid est **contagieuse 48h avant** les premiers symptômes, et jusqu’à **7 jours après** leur apparition.
+Une personne ayant la Covid est **contagieuse 48 h avant** les premiers symptômes, et jusqu’à **7 jours après** leur apparition.
 
 
 
@@ -531,6 +531,12 @@ Nous vous conseillons de :
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
+
+
+
+## [conseils_reattraper_la_covid.md](conseils_reattraper_la_covid.md)
+
+Une personne ayant eu la Covid **n’est immunisée que pour quelques semaines** et **peut la ré-attraper** par la suite.
 
 
 
