@@ -87,7 +87,7 @@ export function toggleFormButtonOnRadioRequired(
     var button = form.querySelector('input[type=submit]')
     var checkbox = form.querySelector('input[type=checkbox]')
     var secondariesRequired = [].slice.call(
-        form.querySelectorAll('.secondary.required')
+        form.querySelectorAll('.secondary.required[role="radiogroup"]')
     )
     var radios = [].slice.call(form.querySelectorAll('.secondary input[type=radio]'))
 
@@ -151,6 +151,69 @@ export function toggleFormButtonOnTextFieldsRequired(
     textFields.forEach(function (elem) {
         elem.addEventListener('input', updateSubmitButtonLabelRequired)
     })
+}
+
+export function toggleFormButtonOnTextFieldsAndRadioRequired(
+    form,
+    continueLabel,
+    uncheckedLabel,
+    requiredLabel
+) {
+    const button = form.querySelector('input[type=submit]')
+    const textFields = [].slice.call(
+        form.querySelectorAll('input[type=text], input[type=date]')
+    )
+    const checkbox = form.querySelector('input[type=checkbox]')
+    const secondariesRequired = [].slice.call(
+        form.querySelectorAll('.secondary.required[role="radiogroup"]')
+    )
+    const radios = [].slice.call(form.querySelectorAll('.secondary input[type=radio]'))
+
+    function updateSubmitButtonLabelRequired() {
+        const allFilled = textFields.every((textField) => textField.value !== '')
+
+        button.disabled = false
+        button.value = checkbox.checked ? continueLabel : uncheckedLabel
+
+        if (checkbox.checked) {
+            const hasAllRequiredRadioChecks = secondariesRequired.every((secondary) => {
+                return [].slice
+                    .call(secondary.querySelectorAll('input[type=radio]'))
+                    .some((radio) => radio.checked)
+            })
+            if (!hasAllRequiredRadioChecks || !allFilled) {
+                button.disabled = true
+                button.value = requiredLabel
+            }
+        }
+    }
+
+    updateSubmitButtonLabelRequired()
+    textFields.forEach((elem) => {
+        elem.addEventListener('input', updateSubmitButtonLabelRequired)
+    })
+    radios.forEach((elem) => {
+        elem.addEventListener('change', updateSubmitButtonLabelRequired)
+    })
+
+    function updateToggleOnCheckbox() {
+        updateSubmitButtonLabelRequired()
+        if (checkbox.checked) {
+            radios.forEach((radio) => {
+                radio.disabled = false
+            })
+        } else {
+            radios.forEach((radio) => {
+                radio.checked = false
+                radio.disabled = true
+            })
+            textFields.forEach((text) => {
+                text.value = ''
+            })
+        }
+    }
+    updateToggleOnCheckbox()
+    checkbox.addEventListener('change', updateToggleOnCheckbox)
 }
 
 export function toggleFormButtonOnSelectFieldsRequired(

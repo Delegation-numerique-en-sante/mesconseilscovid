@@ -78,6 +78,7 @@ describe('Algorithme d’orientation', function () {
         it('En attente de résultat', function () {
             var profil = new Profil('mes_infos', {
                 depistage: true,
+                depistage_type: 'rt-pcr',
                 depistage_resultat: 'en_attente',
             })
             var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
@@ -89,6 +90,7 @@ describe('Algorithme d’orientation', function () {
         it('Positif', function () {
             var profil = new Profil('mes_infos', {
                 depistage: true,
+                depistage_type: 'rt-pcr',
                 depistage_resultat: 'positif',
             })
             var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
@@ -97,6 +99,7 @@ describe('Algorithme d’orientation', function () {
         it('Négatif', function () {
             var profil = new Profil('mes_infos', {
                 depistage: true,
+                depistage_type: 'rt-pcr',
                 depistage_resultat: 'negatif',
             })
             var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
@@ -297,6 +300,7 @@ describe('Algorithme d’orientation', function () {
         it('Le bloc isolement s’affiche avec dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
+                depistage_type: 'rt-pcr',
                 depistage_resultat: 'positif',
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
@@ -309,6 +313,7 @@ describe('Algorithme d’orientation', function () {
         it('Le bloc isolement s’affiche avec dépistage négatif et contact à risque', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
+                depistage_type: 'rt-pcr',
                 depistage_resultat: 'negatif',
                 contact_a_risque: true,
                 contact_a_risque_meme_lieu_de_vie: true,
@@ -323,6 +328,7 @@ describe('Algorithme d’orientation', function () {
         it('Le bloc isolement s’affiche avec dépistage en attente et symptômes', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
+                depistage_type: 'rt-pcr',
                 depistage_resultat: 'en_attente',
                 symptomes_passes: true,
             })

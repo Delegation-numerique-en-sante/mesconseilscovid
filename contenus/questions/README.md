@@ -270,8 +270,12 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 ## [question_dépistage_aide.md](question_dépistage_aide.md)
 
-Les test virologiques rapides ou en laboratoire (aussi appelé RT-PCR) détectent la présence du virus dans un prélèvement nasal.
 
+
+
+## [question_dépistage_antigénique_libellé.md](question_dépistage_antigénique_libellé.md)
+
+<!---->C’était un <b>test antigénique rapide</b> (résultat en 15 à 30 minutes).
 
 
 ## [question_dépistage_attente_libellé.md](question_dépistage_attente_libellé.md)
@@ -284,13 +288,18 @@ Les test virologiques rapides ou en laboratoire (aussi appelé RT-PCR) détecten
 
 
 
+## [question_dépistage_date_libellé.md](question_dépistage_date_libellé.md)
+
+<!---->La date du prélèvement
+
+
 ## [question_dépistage_libellé.md](question_dépistage_libellé.md)
 
-<!---->J’ai passé un <b>test Covid</b> dans les 7 derniers jours.
+<!---->J’ai passé un <b>test Covid</b> (prélèvement nasal) dans les 7 derniers jours.
 
 ---
 
-<!---->Cette personne a passé un <b>test Covid</b> dans les 7 derniers jours.
+<!---->Cette personne a passé un <b>test Covid</b> (prélèvement nasal) dans les 7 derniers jours.
 
 
 
@@ -306,6 +315,17 @@ Les test virologiques rapides ou en laboratoire (aussi appelé RT-PCR) détecten
 
 
 
+## [question_dépistage_rtpcr_libellé.md](question_dépistage_rtpcr_libellé.md)
+
+<!---->C’était un <b>test RT-PCR</b> (résultat en 24h ou plus).
+
+
+## [question_dépistage_résultat_libellé.md](question_dépistage_résultat_libellé.md)
+
+<!---->Le résultat du test
+
+
+
 ## [question_dépistage_titre.md](question_dépistage_titre.md)
 
 <!---->Mon test Covid
@@ -313,6 +333,12 @@ Les test virologiques rapides ou en laboratoire (aussi appelé RT-PCR) détecten
 ---
 
 <!---->Son test Covid
+
+
+
+## [question_dépistage_type_libellé.md](question_dépistage_type_libellé.md)
+
+<!---->Le type de test
 
 
 

@@ -1,5 +1,4 @@
-import Pikaday from 'pikaday'
-
+import { addDatePickerPolyfill } from '../datepicker'
 import { hideElement } from '../affichage.js'
 import { joursAvant } from '../utils.js'
 
@@ -24,65 +23,12 @@ export default function debutsymptomes(form, app) {
     datePicker.addEventListener('change', (event) => {
         datePickerChanged(form, event.target)
     })
-
-    function isDateSupported() {
-        const input = document.createElement('input')
-        const value = 'a'
-        input.setAttribute('type', 'date')
-        input.setAttribute('value', value)
-        return input.value !== value
-    }
-
-    if (!isDateSupported()) {
-        new Pikaday({
-            field: datePicker,
-            format: 'YYYY-M-D',
-            toString(date) {
-                const day = date.getDate()
-                const month = date.getMonth() + 1
-                const year = date.getFullYear()
-                return `${year}-${month}-${day}`
-            },
-            parse(dateString) {
-                const parts = dateString.split('-')
-                const day = parseInt(parts[0], 10)
-                const month = parseInt(parts[1], 10) - 1
-                const year = parseInt(parts[2], 10)
-                return new Date(year, month, day)
-            },
-            maxDate: new Date(),
-            firstDay: 1, // Semaine débute le lundi.
-            i18n: {
-                previousMonth: 'Mois précédent',
-                nextMonth: 'Mois suivant',
-                months: [
-                    'Janvier',
-                    'Février',
-                    'Mars',
-                    'Avril',
-                    'Mai',
-                    'Juin',
-                    'Juillet',
-                    'Août',
-                    'Septembre',
-                    'Octobre',
-                    'Novembre',
-                    'Décembre',
-                ],
-                weekdays: [
-                    'Dimanche',
-                    'Lundi',
-                    'Mardi',
-                    'Mercredi',
-                    'Jeudi',
-                    'Vendredi',
-                    'Samedi',
-                ],
-                weekdaysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
-            },
-            theme: 'pika-mcc-theme',
-        })
-    }
+    // Autorise seulement un intervalle de dates (30 derniers jours)
+    const now = new Date()
+    datePicker.setAttribute('max', now.toISOString().substring(0, 10))
+    const trenteJoursAvant = joursAvant(30)
+    datePicker.setAttribute('min', trenteJoursAvant.toISOString().substring(0, 10))
+    addDatePickerPolyfill(datePicker, trenteJoursAvant, now)
 
     form.addEventListener('submit', function (event) {
         event.preventDefault()
