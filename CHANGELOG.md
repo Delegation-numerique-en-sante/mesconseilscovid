@@ -1,5 +1,11 @@
 # Changelog
 
+## 2020-11-24
+
+* page d’accueil mieux adaptée aux petits écrans
+* explications relatives à la fragilité de la personne
+* explicite le fait que l’on puisse ré-attraper la Covid
+
 ## 2020-11-23
 
 * met à jour le lien vers une infographie
