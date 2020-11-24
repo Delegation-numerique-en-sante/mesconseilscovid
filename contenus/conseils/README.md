@@ -98,7 +98,7 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 
 <div class="conseil conseil-orange">
 
-<span class="nouveau">nouveau</span>Depuis le vendredi 30 octobre, un **confinement** s’applique sur tout le territoire français, jusqu’au 1<sup>er</sup> décembre au minimum. Il vous faut [une attestation dérogatoire](https://media.interieur.gouv.fr/deplacement-covid-19/) pour justifier de vos sorties à l’extérieur de votre domicile.
+Depuis le vendredi 30 octobre, un **confinement** s’applique sur tout le territoire français, jusqu’au 1<sup>er</sup> décembre au minimum. Il vous faut [une attestation dérogatoire](https://media.interieur.gouv.fr/deplacement-covid-19/) pour justifier de vos sorties à l’extérieur de votre domicile.
 
 </div>
 
@@ -159,7 +159,7 @@ Si vous avez des symptômes évocateurs de la Covid, ne prenez pas d’**anti-in
 
 <div class="conseil">
 
-<span class="nouveau">nouveau</span> Depuis le vendredi 30 octobre :
+Depuis le vendredi 30 octobre :
 * le port du masque est obligatoire dès l’âge de 6 ans dans les écoles ;
 * vous devez vous munir d’un [justificatif de déplacement scolaire](https://www.gouvernement.fr/sites/default/files/05-11-2020-justificatif-de-deplacement-scolaire.pdf) pour le trajet entre votre domicile et le lieu d’accueil de l’enfant.
 
@@ -167,7 +167,7 @@ Consultez notre page dédiée : [« Conseils liés aux activités et à la san
 
 </div>
 
-* <span class="nouveau">nouveau</span>Lors du confinement, restent ouverts :
+* Lors du confinement, restent ouverts :
   * les crèches, écoles, collèges et lycées ;
   * la prise en charge périscolaire (garderie, centres aérés) ;
   * les structures d’accueil spécialisées pour les enfants en difficulté physique ou psychique notamment les instituts médico-éducatifs.
@@ -542,13 +542,13 @@ La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver 
 
 ## [conseils_santé_grippe.md](conseils_santé_grippe.md)
 
-<span class="nouveau">nouveau</span> Devant le risque de complication chez les personnes malades ou fragiles, il est important de **se protéger et protéger les autres en se faisant vacciner contre la grippe**. Vous pouvez réaliser ce vaccin dès maintenant, sans prescription médicale, auprès de votre médecin ou de votre pharmacien.
+Devant le risque de complication chez les personnes malades ou fragiles, il est important de **se protéger et protéger les autres en se faisant vacciner contre la grippe**. Vous pouvez réaliser ce vaccin dès maintenant, sans prescription médicale, auprès de votre médecin ou de votre pharmacien.
 
 
 
 ## [conseils_santé_grippe_fragile.md](conseils_santé_grippe_fragile.md)
 
-<span class="nouveau">nouveau</span> Devant le risque de complication **chez les personnes malades ou fragiles**, il est important de **vous faire vacciner contre la grippe** pour vous protéger et protéger les autres. Vous pouvez réaliser ce vaccin dès maintenant, sans prescription médicale, auprès de votre médecin ou de votre pharmacien.
+Devant le risque de complication **chez les personnes malades ou fragiles**, il est important de **vous faire vacciner contre la grippe** pour vous protéger et protéger les autres. Vous pouvez réaliser ce vaccin dès maintenant, sans prescription médicale, auprès de votre médecin ou de votre pharmacien.
 
 
 
@@ -598,7 +598,7 @@ Retrouvez le [lieu de test le plus proche](https://sante.fr/cartographie-depista
 
 * Les tests de dépistage sont **accessibles sur demande** et sans prescription médicale, sans même présenter de symptômes.
 
-* Les nouveaux **tests antigéniques rapides** constituent un outil supplémentaire pour réduire les chaînes de transmission virale. Ils viennent en complément des tests RT-PCR qui restent la technique de référence pour la détection de l’infection à la Covid. Ils sont prioritairement réservés aux personnes symptomatiques. Les tests doivent être réalisés **dans un délai inférieur ou égal à 4 jours** après l’apparition des symptômes. Pour plus d’information : [Tout ce qu’il faut savoir sur les tests antigéniques du SRAS-CoV-2](https://www.ameli.fr/paris/assure/covid-19/les-tests-de-depistage-de-la-covid-19/tout-ce-quil-faut-savoir-sur-les-tests-antigeniques-du-sras-cov-2).
+* <span class="nouveau">nouveau</span> Les nouveaux **tests antigéniques rapides** constituent un outil supplémentaire pour réduire les chaînes de transmission virale. Ils viennent en complément des tests RT-PCR qui restent la technique de référence pour la détection de l’infection à la Covid. Ils sont prioritairement réservés aux personnes symptomatiques. Les tests doivent être réalisés **dans un délai inférieur ou égal à 4 jours** après l’apparition des symptômes. Pour plus d’information : [Tout ce qu’il faut savoir sur les tests antigéniques du SRAS-CoV-2](https://www.ameli.fr/paris/assure/covid-19/les-tests-de-depistage-de-la-covid-19/tout-ce-quil-faut-savoir-sur-les-tests-antigeniques-du-sras-cov-2).
 
 * Ils sont **intégralement pris en charge** par l'assurance maladie. Ces dispositions sont également applicables aux personnes qui ne sont pas assurés sociaux.
 
@@ -627,7 +627,7 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 
 ## [conseils_vie_quotidienne.md](conseils_vie_quotidienne.md)
 
-<span class="nouveau">nouveau</span>Lors du confinement, **restent ouverts** :
+Lors du confinement, **restent ouverts** :
 * les services publics ;
 * les marchés alimentaires ;
 * les parcs, jardins, plages et plans d’eau ;

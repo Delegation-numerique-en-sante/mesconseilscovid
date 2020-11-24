@@ -1,4 +1,4 @@
-<span class="nouveau">nouveau</span>Lors du confinement, **restent ouverts** :
+Lors du confinement, **restent ouverts** :
 * les services publics ;
 * les marchés alimentaires ;
 * les parcs, jardins, plages et plans d’eau ;
