@@ -58,6 +58,8 @@ const CACHE_FILES = [
     'illustrations/grossesse.svg',
     'illustrations/isolement.svg',
     'illustrations/isolement-avec-symptomes.png',
+    'illustrations/isolement-sans-symptomes.png',
+    'illustrations/isolement-foyer-malade.png',
     'illustrations/nom.svg',
     'illustrations/pediatrieecole.svg',
     'illustrations/pediatriegeneral.svg',
