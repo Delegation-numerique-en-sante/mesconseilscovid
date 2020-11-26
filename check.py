@@ -63,14 +63,17 @@ def versions():
 @cli
 def service_worker():
     KNOWN_EXCLUDED_FILES = {
-        "service-worker.js",
-        "version.json",
-        "template.html",
-        "index.html",
+        "browserconfig.xml",
         "illustrations/mesconseilscovid.png",
+        "illustrations/isolement-avec-symptomes.png",
+        "illustrations/isolement-sans-symptomes.png",
+        "illustrations/isolement-foyer-malade.png",
+        "index.html",
         "logo.png",
         "logo-favicon.png",
-        "browserconfig.xml",
+        "service-worker.js",
+        "template.html",
+        "version.json",
     }
     REQUIRED_FILES = {"/", "style.css", "scripts/main.js", "favicon.ico"}
 
@@ -124,7 +127,8 @@ def service_worker():
     illustrations_file_names = {
         f"illustrations/{filename}"
         for file_path, filename in each_file_from(
-            HERE / "src" / "illustrations", exclude=[".DS_Store"],
+            HERE / "src" / "illustrations",
+            exclude=[".DS_Store"],
         )
     }
     if not illustrations_file_names.issubset(sw_filenames):
@@ -136,7 +140,9 @@ def service_worker():
     src_file_names = {
         filename
         for file_path, filename in each_file_from(
-            HERE / "src", file_name="*.*", exclude=[".DS_Store"],
+            HERE / "src",
+            file_name="*.*",
+            exclude=[".DS_Store"],
         )
     }
     if not src_file_names.issubset(sw_filenames):
