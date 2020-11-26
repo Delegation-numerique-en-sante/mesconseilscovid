@@ -135,6 +135,33 @@ const matrice = [
         conseils: null,
     },
     {
+        description: 'Négatif antigénique et symptômes actuels',
+        profil: {
+            symptomes_actuels: true,
+            symptomes_actuels_diarrhee: true,
+            depistage: true,
+            depistage_type: 'antigenique',
+            depistage_resultat: 'negatif',
+        },
+        situation: 'negatif_symptomes_actuels',
+        statut: 'symptomatique-negatif',
+        conseils: null,
+    },
+    {
+        description: 'Négatif antigénique et symptômes actuels et fragile',
+        profil: {
+            symptomes_actuels: true,
+            symptomes_actuels_diarrhee: true,
+            depistage: true,
+            depistage_type: 'antigenique',
+            depistage_resultat: 'negatif',
+            age: 70,
+        },
+        situation: 'antigenique_negatif_fragile_symptomes_actuels',
+        statut: 'antigenique-negatif-fragile',
+        conseils: 'antigenique-negatif-fragile',
+    },
+    {
         description: 'Négatif et symptômes passés',
         profil: {
             symptomes_passes: true,
@@ -147,11 +174,24 @@ const matrice = [
         conseils: null,
     },
     {
+        description: 'Négatif antigénique et symptômes passés',
+        profil: {
+            symptomes_passes: true,
+            depistage: true,
+            depistage_type: 'antigenique',
+            depistage_resultat: 'negatif',
+        },
+        situation: 'negatif_symptomes_passes',
+        statut: 'peu-de-risques',
+        conseils: null,
+    },
+    {
         description: 'Négatif et symptômes passés + personne fragile',
         profil: {
             symptomes_passes: true,
             depistage: true,
             age: 70,
+            depistage_type: 'rt-pcr',
             depistage_resultat: 'negatif',
         },
         situation: 'negatif_symptomes_passes',
@@ -159,11 +199,25 @@ const matrice = [
         conseils: null,
     },
     {
+        description: 'Négatif antigénique et symptômes passés + personne fragile',
+        profil: {
+            symptomes_passes: true,
+            depistage: true,
+            age: 70,
+            depistage_type: 'antigenique',
+            depistage_resultat: 'negatif',
+        },
+        situation: 'antigenique_negatif_fragile_symptomes_passes',
+        statut: 'antigenique-negatif-fragile',
+        conseils: 'antigenique-negatif-fragile',
+    },
+    {
         description: 'Négatif et symptômes passés + foyer fragile',
         profil: {
             symptomes_passes: true,
             depistage: true,
             foyer_fragile: true,
+            depistage_type: 'rt-pcr',
             depistage_resultat: 'negatif',
         },
         situation: 'negatif_symptomes_passes',
