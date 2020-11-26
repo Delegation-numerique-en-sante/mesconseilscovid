@@ -75,6 +75,20 @@ describe('Algorithme d’orientation', function () {
                 'conseils-tests-general',
             ])
         })
+        it('Cas particulier antigénique faux négatif', function () {
+            var profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_type: 'antigenique',
+                depistage_resultat: 'negatif',
+                symptomes_passes: true,
+                age: 70,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [
+                'conseils-tests',
+                'conseils-tests-rt-pcr',
+            ])
+        })
         it('En attente de résultat', function () {
             var profil = new Profil('mes_infos', {
                 depistage: true,

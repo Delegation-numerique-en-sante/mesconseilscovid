@@ -364,6 +364,17 @@ export default class AlgorithmeOrientation {
                 blockNames.push('conseils-tests-general')
             }
         }
+        // Cas très particulier antigénique faux négatif.
+        if (
+            this.profil.estNegatif() &&
+            typeof this.profil.depistage_type !== 'undefined' &&
+            this.profil.depistage_type === 'antigenique' &&
+            this.personneFragile &&
+            (this.profil.hasSymptomesActuelsReconnus() || this.profil.symptomes_passes)
+        ) {
+            blockNames.push('conseils-tests')
+            blockNames.push('conseils-tests-rt-pcr')
+        }
         return blockNames
     }
 
