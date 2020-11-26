@@ -267,6 +267,33 @@ export default class AlgorithmeOrientation {
         )
     }
 
+    timelineBlockNamesToDisplay() {
+        const blockNames = []
+        if (
+            (this.profil.hasSymptomesActuelsReconnus() ||
+                this.profil.symptomes_passes) &&
+            (this.profil.estPositif() ||
+                this.profil.estEnAttente() ||
+                this.profil.sansDepistage())
+        ) {
+            blockNames.push('conseils-timeline-isolement-avec-symptomes')
+        } else if (
+            !this.profil.hasSymptomesActuelsReconnus() &&
+            !this.profil.symptomes_passes &&
+            this.profil.estPositif()
+        ) {
+            blockNames.push('conseils-timeline-isolement-sans-symptomes')
+        }
+        if (
+            this.profil.hasContactARisqueReconnus() &&
+            this.profil.contact_a_risque_meme_lieu_de_vie &&
+            !this.profil.estPositif()
+        ) {
+            blockNames.push('conseils-timeline-isolement-foyer-malade')
+        }
+        return blockNames
+    }
+
     conseilsPersonnelsBlockNamesToDisplay() {
         const blockNames = []
         if (this.profil.estPositif()) {
