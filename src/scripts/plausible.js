@@ -18,26 +18,27 @@
             '//' +
             location.hostname +
             location.pathname +
-            location.hash.slice(1)
+            location.hash.slice(1) +
+            location.search
         )
-    }
-
-    function getSourceFromQueryParam() {
-        var result = location.search.match(/[?&](ref|source|utm_source)=([^?&]+)/)
-        return result ? result[2] : null
     }
 
     function trigger(eventName, options) {
         if (document.visibilityState === 'prerender') return ignore('prerendering')
 
         var payload = {}
-        payload.name = eventName
-        payload.url = getUrl()
-        payload.domain = CONFIG['domain']
-        payload.referrer = document.referrer || null
-        payload.source = getSourceFromQueryParam()
-        payload.user_agent = window.navigator.userAgent
-        payload.screen_width = window.innerWidth
+        payload.n = eventName
+        payload.u = getUrl()
+        payload.d = CONFIG['domain']
+        payload.r = document.referrer || null
+        payload.w = window.innerWidth
+
+        if (options && options.meta) {
+            payload.m = JSON.stringify(options.meta)
+        }
+        if (options && options.props) {
+            payload.p = JSON.stringify(options.props)
+        }
 
         if (
             /^localhost$|^127(?:\.[0-9]+){0,2}\.[0-9]+$|^(?:0*:)*?:?0*1$/.test(
