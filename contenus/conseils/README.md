@@ -108,7 +108,7 @@ Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contac
 
 ## [conseils_contact_à_risque_info.md](conseils_contact_à_risque_info.md)
 
-* [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf)
+* [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_-_nouveau.pdf)
 
 * [Quelles conduites adopter et quel sera mon parcours si j’ai été en contact avec un cas Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_personne_contact.pdf)
 
@@ -616,7 +616,7 @@ Retrouvez le [lieu de test le plus proche](https://sante.fr/cartographie-depista
 
 * Plus d’informations :
 
-    * Les prochaines étapes du parcours : [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf)
+    * Les prochaines étapes du parcours : [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_-_nouveau.pdf)
 
     * [La stratégie de dépistage](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
 

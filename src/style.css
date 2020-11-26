@@ -930,7 +930,7 @@ a[href*='youtube.com']::after {
     width: 25px;
     height: 22px;
 }
-.conseils a[href="https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_2909.pdf"]::before,
+.conseils a[href="https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_-_nouveau.pdf"]::before,
 .conseils a[href="https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf"]::before,
 {
     background: no-repeat bottom left url('icone_infographie.svg');
