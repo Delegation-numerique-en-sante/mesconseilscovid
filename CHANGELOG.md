@@ -1,5 +1,13 @@
 # Changelog
 
+## 2020-11-27
+
+* mise à jour des informations relatives au confinement au 28/11
+* prise en compte des tests antigéniques
+* ajout d’illustrations pour la période d’isolement
+* précisions sur les conditions de sortir d’isolement
+* mise à jour d’un lien cassé sur le site du gouvernement
+
 ## 2020-11-24
 
 * page d’accueil mieux adaptée aux petits écrans
