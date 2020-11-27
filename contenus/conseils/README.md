@@ -98,9 +98,11 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 
 <div class="conseil conseil-orange">
 
-Depuis le vendredi 30 octobre, un **confinement** s’applique sur tout le territoire français, jusqu’au 1<sup>er</sup> décembre au minimum. Il vous faut [une attestation dérogatoire](https://media.interieur.gouv.fr/deplacement-covid-19/) pour justifier de vos sorties à l’extérieur de votre domicile.
+Un **confinement** s’applique sur tout le territoire français métropolitain, jusqu’au 15 décembre au minimum. Il vous faut [une attestation dérogatoire](https://media.interieur.gouv.fr/deplacement-covid-19/) pour justifier de vos sorties à l’extérieur de votre domicile.
 
 </div>
+
+Des **attestations permanentes** peuvent être fournies par l’employeur pour les déplacements domicile-travail, et par les écoles pour amener et récupérer les enfants. Pour les autres motifs, une attestation individuelle doit être remplie à chaque déplacement.
 
 Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919">39 19</a> (appel gratuit, de 9h à 19h du lundi au samedi) ou le <a href="tel:17">17</a> en cas d’urgence.
 
@@ -668,29 +670,26 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 
 ## [conseils_vie_quotidienne.md](conseils_vie_quotidienne.md)
 
-Lors du confinement, **restent ouverts** :
-* les services publics ;
-* les marchés alimentaires ;
-* les parcs, jardins, plages et plans d’eau ;
-* les cimetières ;
-* les lieux de culte, pour les cérémonies funéraires dans la limite de 30 personnes et pour les mariages avec un maximum de 6 personnes ;
-* les crèches, écoles, collèges et lycées ;
-* la prise en charge périscolaire (garderie, centres aérés) ;
-* les structures d’accueil spécialisées pour les enfants en difficulté physique ou psychique notamment les instituts médico-éducatifs ;
-* les visites en EHPAD et maisons de retraite ;
-* les laboratoires d’analyse.
+<span class="nouveau">nouveau</span> Le confinement est dorénavant adapté :
+
+* les activités physiques et les promenades sont autorisées dans un rayon de 20 kilomètres et pour une durée maximum de 3 heures ;
+* les activités extra-scolaires sont autorisées en plein air ;
+* les commerces et services à domicile sont ouverts jusqu’à 21h00 dans le cadre d’un protocole sanitaire strict dont les librairies, les disquaires ou encore les bibliothèques.
 
 Pour plus d’informations sur **les mesures du confinement**, vous pouvez consulter :
-* [la page dédiée du site du gouvernement](https://www.gouvernement.fr/info-coronavirus/confinement),
+
+* [la page dédiée du site du gouvernement](https://www.gouvernement.fr/info-coronavirus/confinement) ;
 * les règles spécifiques de votre **département** sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
 
-Pour vos **courses**, nous vous conseillons de :
-  * réaliser vos courses lors des périodes les moins fréquentées ;
-  * suivre [les conseils de l'ANSES](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses).
+Pour vos **courses**, nous vous conseillons de :
 
-Pour vos **déplacements** :
-  * seules les frontières aves l’Union Européenne restent ouvertes ; un test négatif de moins de 72h est obligatoire pour entrer sur le territoire ;
-  * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »).
+  * réaliser vos courses lors des périodes les moins fréquentées ;
+  * suivre [les conseils de l’ANSES](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses).
+
+Pour vos **déplacements** :
+
+  * seules les frontières avec l’Union Européenne restent ouvertes ; un test négatif de moins de 72h est obligatoire pour entrer sur le territoire ;
+  * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »).
 
 L’application [TousAntiCovid](https://www.gouvernement.fr/info-coronavirus/tousanticovid) vous permettra de recevoir une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid.
 
