@@ -1,4 +1,4 @@
-Le confinement est dorénavant adapté :
+<span class="nouveau"></span> Le confinement est dorénavant adapté :
 
 * les activités physiques et les promenades sont autorisées dans un rayon de 20 kilomètres et pour une durée maximum de 3 heures ;
 * les activités extra-scolaires sont autorisées en plein air ;
