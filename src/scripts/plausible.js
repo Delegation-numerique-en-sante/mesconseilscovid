@@ -48,7 +48,7 @@
         ) {
             ignore('running locally')
             window.app._plausibleTrackingEvents.push(
-                `${payload.name}:${location.hash.slice(1)}`
+                `${payload.n}:${location.hash.slice(1)}`
             )
             console.debug('[Plausible]', payload)
             return
