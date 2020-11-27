@@ -1,13 +1,33 @@
+import { addDatePickerPolyfill } from '../../datepicker'
 import {
     enableOrDisableSecondaryFields,
     preloadCheckboxForm,
-    toggleFormButtonOnRadioRequired,
+    toggleFormButtonOnTextFieldsAndRadioRequired,
 } from '../../formutils.js'
+import { joursAvant } from '../../utils.js'
 
 export default function depistage(form, app) {
+    const datePicker = form.querySelector('#depistage_start_date')
+    // Autorise seulement un intervalle de dates (7 derniers jours)
+    const now = new Date()
+    datePicker.setAttribute('max', now.toISOString().substring(0, 10))
+    const septJoursAvant = joursAvant(7)
+    datePicker.setAttribute('min', septJoursAvant.toISOString().substring(0, 10))
+    addDatePickerPolyfill(datePicker, septJoursAvant, now)
+
     // Remplir le formulaire avec les données du profil
     preloadCheckboxForm(form, 'depistage', app.profil)
     if (app.profil.depistage) {
+        datePicker.value = app.profil.depistage_start_date
+            .toISOString()
+            .substring(0, 10)
+
+        if (app.profil.depistage_type === 'antigenique') {
+            form.querySelector('#depistage_type_antigenique').checked = true
+        } else if (app.profil.depistage_type === 'rt-pcr') {
+            form.querySelector('#depistage_type_rtpcr').checked = true
+        }
+
         if (app.profil.depistage_resultat === 'positif') {
             form.querySelector('#depistage_resultat_positif').checked = true
         } else if (app.profil.depistage_resultat === 'negatif') {
@@ -30,39 +50,24 @@ export default function depistage(form, app) {
         ? 'Je n’ai pas passé de test'
         : 'Cette personne n’a pas passé de test'
     const requiredLabel = 'Veuillez remplir le formulaire au complet'
-    toggleFormButtonOnRadioRequired(form, button.value, uncheckedLabel, requiredLabel)
+    toggleFormButtonOnTextFieldsAndRadioRequired(
+        form,
+        button.value,
+        uncheckedLabel,
+        requiredLabel
+    )
 
     // Soumission du formulaire
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        const depistageChecked = event.target.elements['depistage'].checked
-        const resultatValue =
+        app.profil.depistage = event.target.elements['depistage'].checked
+        app.profil.depistage_start_date = new Date(
+            event.target.elements['depistage_start_date'].value
+        )
+        app.profil.depistage_type =
+            event.target.elements['depistage_type'].value || undefined
+        app.profil.depistage_resultat =
             event.target.elements['depistage_resultat'].value || undefined
-
-        // On ne veut écraser depistage_start_date que si la valeur du
-        // résultat à changé, sinon on veut pouvoir se servir de la date
-        // originale pour calculer un éventuel déconfinement et/ou rendre
-        // caduque le résultat du test.
-        if (depistageChecked) {
-            const initialDepistage = app.profil.depistage
-            const initialDepistageResultat = app.profil.depistage_resultat
-            if (initialDepistage) {
-                if (initialDepistageResultat !== resultatValue) {
-                    app.profil.depistage_resultat = resultatValue
-                    app.profil.depistage_start_date = new Date()
-                } else {
-                    // Do nothing, we want to keep the original date.
-                }
-            } else {
-                app.profil.depistage = depistageChecked
-                app.profil.depistage_resultat = resultatValue
-                app.profil.depistage_start_date = new Date()
-            }
-        } else {
-            app.profil.depistage = depistageChecked
-            app.profil.depistage_resultat = resultatValue
-            app.profil.depistage_start_date = undefined
-        }
 
         app.enregistrerProfilActuel().then(() => {
             app.goToNextPage('depistage')

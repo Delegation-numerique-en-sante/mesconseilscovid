@@ -511,6 +511,7 @@ describe('Algorithme déconfinement', function () {
         it('Faux s’il y a 7 jours et plus de fièvre ni essoufflement mais dépistage positif récent', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
+                depistage_type: 'rt-pcr',
                 depistage_resultat: 'positif',
                 suivi: [
                     {
@@ -541,6 +542,7 @@ describe('Algorithme déconfinement', function () {
         it('Vrai s’il y a 7 jours et plus de fièvre ni essoufflement et dépistage positif ancien', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
+                depistage_type: 'rt-pcr',
                 depistage_resultat: 'positif',
                 suivi: [
                     {
@@ -572,6 +574,7 @@ describe('Algorithme déconfinement', function () {
         it('Faux s’il y a 7 jours et plus de fièvre ni essoufflement mais dépistage en attente récent', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
+                depistage_type: 'rt-pcr',
                 depistage_resultat: 'en_attente',
                 suivi: [
                     {
@@ -602,6 +605,7 @@ describe('Algorithme déconfinement', function () {
         it('Vrai s’il y a 7 jours et plus de fièvre ni essoufflement et dépistage en attente ancien', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
+                depistage_type: 'rt-pcr',
                 depistage_resultat: 'en_attente',
                 suivi: [
                     {

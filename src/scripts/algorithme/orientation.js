@@ -1,5 +1,6 @@
-// Les 13 statuts possibles en sortie de l’algorithme
+// Les statuts possibles en sortie de l’algorithme
 const STATUTS = [
+    'antigenique-negatif-fragile',
     'asymptomatique',
     'contact-a-risque-avec-test',
     'contact-a-risque-sans-test',
@@ -15,8 +16,9 @@ const STATUTS = [
     'symptomatique-urgent',
 ]
 
-// Les 11 blocs de conseils personnels possibles en sortie de l’algorithme
+// Les blocs de conseils personnels possibles en sortie de l’algorithme
 const CONSEILS_PERSONNELS = [
+    'antigenique-negatif-fragile',
     'contact-a-risque',
     'contact-a-risque-autre',
     'depistage-positif-asymptomatique',
@@ -37,9 +39,18 @@ export default class AlgorithmeOrientation {
 
     get situation() {
         if (!this.profil.isComplete()) return ''
-        const depistage = this.profil.depistage
-            ? this.profil.depistage_resultat
-            : 'pas_teste'
+        let depistage = 'pas_teste'
+        if (this.profil.depistage) {
+            if (
+                this.profil.depistage_type === 'antigenique' &&
+                this.profil.depistage_resultat === 'negatif' &&
+                this.personneFragile
+            ) {
+                depistage = 'antigenique_negatif_fragile'
+            } else {
+                depistage = this.profil.depistage_resultat
+            }
+        }
         let symptomes
         if (this.profil.hasSymptomesActuelsReconnus()) {
             symptomes = 'symptomes_actuels'
@@ -139,6 +150,7 @@ export default class AlgorithmeOrientation {
                 }
 
             case 'negatif_symptomes_actuels_graves':
+            case 'antigenique_negatif_fragile_symptomes_actuels_graves':
             case 'en_attente_symptomes_actuels_graves':
             case 'pas_teste_symptomes_actuels_graves':
                 return {
@@ -173,7 +185,15 @@ export default class AlgorithmeOrientation {
             case 'negatif_symptomes_passes':
                 return { statut: this.statutSelonFragilite(), conseils: null }
 
+            case 'antigenique_negatif_fragile_symptomes_actuels':
+            case 'antigenique_negatif_fragile_symptomes_passes':
+                return {
+                    statut: 'antigenique-negatif-fragile',
+                    conseils: 'antigenique-negatif-fragile',
+                }
+
             case 'negatif_contact_a_risque_meme_lieu_de_vie':
+            case 'antigenique_negatif_fragile_contact_a_risque_meme_lieu_de_vie':
             case 'en_attente_contact_a_risque_meme_lieu_de_vie':
                 return {
                     statut: 'contact-a-risque-meme-lieu-de-vie',
@@ -181,6 +201,7 @@ export default class AlgorithmeOrientation {
                 }
 
             case 'negatif_contact_a_risque':
+            case 'antigenique_negatif_fragile_contact_a_risque':
             case 'en_attente_contact_a_risque':
                 return {
                     statut: 'contact-a-risque-avec-test',
@@ -188,12 +209,14 @@ export default class AlgorithmeOrientation {
                 }
 
             case 'negatif_contact_pas_vraiment_a_risque':
+            case 'antigenique_negatif_fragile_contact_pas_vraiment_a_risque':
                 return {
                     statut: this.statutSelonFragilite(),
                     conseils: 'contact-a-risque-autre',
                 }
 
             case 'negatif_asymptomatique':
+            case 'antigenique_negatif_fragile_asymptomatique':
                 return { statut: this.statutSelonFragilite(), conseils: null }
 
             case 'en_attente_symptomes_actuels':
@@ -340,6 +363,17 @@ export default class AlgorithmeOrientation {
             } else {
                 blockNames.push('conseils-tests-general')
             }
+        }
+        // Cas très particulier antigénique faux négatif.
+        if (
+            this.profil.estNegatif() &&
+            typeof this.profil.depistage_type !== 'undefined' &&
+            this.profil.depistage_type === 'antigenique' &&
+            this.personneFragile &&
+            (this.profil.hasSymptomesActuelsReconnus() || this.profil.symptomes_passes)
+        ) {
+            blockNames.push('conseils-tests')
+            blockNames.push('conseils-tests-rt-pcr')
         }
         return blockNames
     }

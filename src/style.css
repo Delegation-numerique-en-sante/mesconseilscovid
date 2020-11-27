@@ -501,6 +501,7 @@ main footer .legals {
 .statut-symptomatique-positif,
 .statut-symptomatique-sans-test,
 .statut-symptomatique-urgent,
+.statut-antigenique-negatif-fragile,
 .suivi-gravite-3 {
     background: #ffb6a5;
     border-color: #ff6f4c;
@@ -553,6 +554,10 @@ fieldset legend {
     font-size: 150%;
     margin: 1rem 0 0.5rem 0;
 }
+fieldset .secondary legend {
+    font-size: 120%;
+    margin: 2rem 0 0.5rem 0;
+}
 fieldset div {
     margin: 0.5rem 0;
 }
@@ -579,7 +584,7 @@ fieldset .row > * {
 }
 
 fieldset [role='radiogroup'] {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 fieldset .secondary {
@@ -593,6 +598,11 @@ fieldset .secondary > p {
 }
 fieldset .secondary:first-child > p {
     margin-top: 2rem;
+}
+
+fieldset .secondary label[for='depistage_date'] {
+    margin-left: 2.8rem;
+    margin-right: 1rem;
 }
 
 fieldset .field {
@@ -668,6 +678,7 @@ fieldset ul.details {
 }
 
 input[type='text'],
+input[type='date'],
 input[type='submit'],
 select {
     appearance: none;
@@ -683,6 +694,7 @@ select {
 
 a.button:focus,
 input[type='text']:focus,
+input[type='date']:focus,
 input[type='submit']:focus,
 select:focus {
     outline: none;

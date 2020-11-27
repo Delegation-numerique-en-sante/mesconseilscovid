@@ -1,0 +1,1 @@
+<!---->C’était un <b>test antigénique rapide</b> (résultat en 15 à 30 minutes).

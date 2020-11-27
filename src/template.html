@@ -517,7 +517,35 @@
                 </label>
                 <div class="details">{{ question_dépistage_aide }}</div>
             </div>
-            <div class="secondary disabled required" role="radiogroup">
+
+            <div class="secondary disabled required" aria-labelledby="depistage-date-label">
+                <legend id="depistage-date-label">
+                    {{ question_dépistage_date_libellé }}
+                </legend>
+                <label for="depistage_start_date">
+                Le test a été réalisé le :
+                </label>
+                <input type="date" lang="fr" id="depistage_start_date" name="depistage_start_date" required>
+            </div>
+
+            <div class="secondary disabled required" role="radiogroup" aria-labelledby="depistage-type-label">
+                <legend id="depistage-type-label">
+                    {{ question_dépistage_type_libellé }}
+                </legend>
+                <div>
+                    <input id="depistage_type_antigenique" type="radio" required name="depistage_type" value="antigenique">
+                    <label for="depistage_type_antigenique"><span>{{ question_dépistage_antigénique_libellé }}</span></label>
+                </div>
+                <div>
+                    <input id="depistage_type_rtpcr" type="radio" required name="depistage_type" value="rt-pcr">
+                    <label for="depistage_type_rtpcr"><span>{{ question_dépistage_rtpcr_libellé }}</span></label>
+                </div>
+            </div>
+
+            <div class="secondary disabled required" role="radiogroup" aria-labelledby="depistage-resultat-label">
+                <legend id="depistage-resultat-label">
+                    {{ question_dépistage_résultat_libellé }}
+                </legend>
                 <div>
                     <input id="depistage_resultat_positif" type="radio" required name="depistage_resultat" value="positif">
                     <label for="depistage_resultat_positif"><span>{{ question_dépistage_positif_libellé }}</span></label>
@@ -707,6 +735,9 @@
                     <div id="statut-symptomatique-urgent" class="statut statut-symptomatique-urgent" hidden>
                         {{ statut_symptomatique_urgent }}
                     </div>
+                    <div id="statut-antigenique-negatif-fragile" class="statut statut-antigenique-negatif-fragile" hidden>
+                        {{ statut_antigenique_negatif_fragile }}
+                    </div>
                 </div>
             </div>
 
@@ -780,6 +811,9 @@
                 <div id="conseils-personnels-symptomes-passes-sans-depistage" class="conseil" hidden>
                     {{ conseils_personnels_symptômes_passés_sans_depistage }}
                 </div>
+                <div id="conseils-personnels-antigenique-negatif-fragile" class="conseil" hidden>
+                    {{ conseils_personnels_antigenique_negatif_fragile }}
+                </div>
 
                 <div class="conseil" id="suivi-psy-2" hidden>
                     {{ suivi_psy_2 }}
@@ -825,6 +859,9 @@
                         </summary>
                         <div id="conseils-tests-resultats" hidden>
                             {{ conseils_tests_résultats }}
+                        </div>
+                        <div id="conseils-tests-rt-pcr" hidden>
+                            {{ conseils_tests_rt_pcr }}
                         </div>
                         <div id="conseils-tests-general" hidden>
                             {{ conseils_tests }}

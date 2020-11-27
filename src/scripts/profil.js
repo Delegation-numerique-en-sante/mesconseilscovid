@@ -110,6 +110,7 @@ export default class Profil {
         this.contact_a_risque_autre = undefined
 
         this.depistage = undefined
+        this.depistage_type = undefined
         this.depistage_resultat = undefined
         this._depistage_start_date = undefined
 
@@ -172,6 +173,7 @@ export default class Profil {
         this.contact_a_risque_autre = data['contact_a_risque_autre']
 
         this.depistage = data['depistage']
+        this.depistage_type = data['depistage_type']
         this.depistage_resultat = data['depistage_resultat']
         this._depistage_start_date = data['_depistage_start_date']
 
@@ -208,6 +210,7 @@ export default class Profil {
             contact_a_risque_stop_covid: false,
             contact_a_risque_autre: false,
             depistage: false,
+            depistage_type: '',
             depistage_resultat: '',
             departement: '34',
             activite_pro: false,
@@ -233,14 +236,17 @@ export default class Profil {
 
         if (depistage == 'Positif') {
             data.depistage = true
+            data.depistage_type = 'rt-pcr'
             data.depistage_resultat = 'positif'
             data._depistage_start_date = new Date().toJSON()
         } else if (depistage == 'Négatif') {
             data.depistage = true
+            data.depistage_type = 'rt-pcr'
             data.depistage_resultat = 'negatif'
             data._depistage_start_date = new Date().toJSON()
         } else if (depistage == 'En attente') {
             data.depistage = true
+            data.depistage_type = 'rt-pcr'
             data.depistage_resultat = 'en_attente'
             data._depistage_start_date = new Date().toJSON()
         } else if (depistage == 'Pas testé') {
@@ -348,6 +354,7 @@ export default class Profil {
             contact_a_risque_stop_covid: this.contact_a_risque_stop_covid,
             contact_a_risque_autre: this.contact_a_risque_autre,
             depistage: this.depistage,
+            depistage_type: this.depistage_type,
             depistage_resultat: this.depistage_resultat,
             _depistage_start_date: this._depistage_start_date,
             suivi_active: this.suivi_active,

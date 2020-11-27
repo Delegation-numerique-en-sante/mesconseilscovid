@@ -35,7 +35,13 @@ export async function remplirQuestionnaire(page, choix) {
             await remplirContactsARisque(page, choix.contactARisque)
         }
     }
-    await remplirDepistage(page, choix.depistage, choix.depistageResultat)
+    await remplirDepistage(
+        page,
+        choix.depistage,
+        choix.depistageDate,
+        choix.depistageType,
+        choix.depistageResultat
+    )
     await remplirDepartement(page, choix.departement)
     await remplirFoyer(page, choix.enfants)
     await remplirAntecedents(page, choix.antecedents || [])
@@ -118,7 +124,7 @@ async function remplirActivite(page, activitePro) {
     await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#conseils' })])
 }
 
-async function remplirDepistage(page, depistage, resultat) {
+async function remplirDepistage(page, depistage, date, type, resultat) {
     let text
 
     if (depistage) {
@@ -127,10 +133,22 @@ async function remplirDepistage(page, depistage, resultat) {
         )
         await checkbox_label.click()
 
-        let radio_label = await page.waitForSelector(
+        let type_label = await page.waitForSelector(
+            `#page label[for="depistage_type_${type}"]`
+        )
+        await type_label.click()
+
+        let resultat_label = await page.waitForSelector(
             `#page label[for="depistage_resultat_${resultat}"]`
         )
-        await radio_label.click()
+        await resultat_label.click()
+
+        // Keep it at the end otherwise Safari from CI will not be able
+        // to escape Pikaday and be stuck on that form.
+        await page.fill(
+            '#page #depistage_start_date',
+            date.toISOString().substring(0, 10)
+        )
 
         text = '"Continuer"'
     } else {
