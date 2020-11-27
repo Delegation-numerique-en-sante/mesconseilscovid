@@ -16,7 +16,7 @@ Pour vos **courses**, nous vous conseillons de :
 
 Pour vos **déplacements** :
 
-  * seules les frontières aves l’Union Européenne restent ouvertes ; un test négatif de moins de 72h est obligatoire pour entrer sur le territoire ;
+  * seules les frontières avec l’Union Européenne restent ouvertes ; un test négatif de moins de 72h est obligatoire pour entrer sur le territoire ;
   * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »).
 
 L’application [TousAntiCovid](https://www.gouvernement.fr/info-coronavirus/tousanticovid) vous permettra de recevoir une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid.
