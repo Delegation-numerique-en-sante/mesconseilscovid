@@ -843,6 +843,7 @@ input[type='radio'] + label::before {
     height: 1.2rem;
     background: white;
     border: 2px solid #000091;
+    flex-shrink: 0;
 }
 input[type='radio'] + label::before {
     border-radius: 50%;
