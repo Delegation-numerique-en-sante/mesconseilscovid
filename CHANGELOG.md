@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-11-29
+
+* correction d’un problème graphique sur les boutons radio
+
 ## 2020-11-27
 
 * mise à jour des informations relatives au confinement au 28/11
