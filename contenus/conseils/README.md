@@ -157,6 +157,12 @@ Si vous avez des symptômes évocateurs de la Covid, ne prenez pas d’**anti-in
 
 
 
+## [conseils_covid_cas_contact_de_contact.md](conseils_covid_cas_contact_de_contact.md)
+
+Si vous avez **passé du temps avec une personne qui est cas contact** (contact sans protection avec une personne testée positive à la Covid), demandez à cette personne de vous tenir informé·e des résultats de son test. S’il est positif, vous devrez vous isoler et faire un test.
+
+
+
 ## [conseils_enfants.md](conseils_enfants.md)
 
 <div class="conseil">

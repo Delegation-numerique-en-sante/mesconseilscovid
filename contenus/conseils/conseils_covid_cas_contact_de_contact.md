@@ -1,0 +1,1 @@
+Si vous avez **passé du temps avec une personne qui est cas contact** (contact sans protection avec une personne testée positive à la Covid), demandez à cette personne de vous tenir informé·e des résultats de son test. S’il est positif, vous devrez vous isoler et faire un test.
