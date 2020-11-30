@@ -1143,7 +1143,6 @@ a#geolocalisation {
     }
 
     .block > h2,
-    a[href^='#'],
     .form-controls,
     #pour-finir,
     footer {
