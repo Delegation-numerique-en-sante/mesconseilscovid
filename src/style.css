@@ -181,6 +181,14 @@ a .profil {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+#conseils-block #conseils-block-titre {
+    margin-bottom: 0;
+}
+#conseils-block #conseils-block-date {
+    margin: 0 auto;
+    text-align: center;
+}
+
 @media only screen and (max-width: 680px) {
     .introduction-block h2 {
         font-size: 175%;

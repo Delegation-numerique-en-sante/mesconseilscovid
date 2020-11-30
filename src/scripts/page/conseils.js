@@ -183,6 +183,7 @@ function showRelevantEvolutionsRecap(element, algoSuivi) {
 
 export function showRelevantAnswersRecap(element, profil, algoOrientation) {
     injection.titreConseils(element.querySelector('#conseils-block-titre'), profil)
+    injection.dateConseils(element.querySelector('#conseils-block-date'))
 
     injection.departement(element.querySelector('#nom-departement'), profil.departement)
     var lienPrefecture = element.querySelector('#lien-prefecture')

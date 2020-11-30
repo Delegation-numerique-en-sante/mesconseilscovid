@@ -16,6 +16,14 @@ export function titreConseils(element, profil) {
     element.textContent = titre
 }
 
+export function dateConseils(element) {
+    if (!element) return
+    const now = new Date()
+    const nowISO = now.toISOString().substring(0, 10)
+    const nowReadable = now.toLocaleDateString()
+    element.innerHTML = `au <time datetime="${nowISO}">${nowReadable}</time>`
+}
+
 export function departement(element, departement) {
     element.textContent = departements[departement] || 'Inconnu'
 }
