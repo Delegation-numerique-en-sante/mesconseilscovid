@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 import fnmatch
 import os
+from html.parser import HTMLParser
+from http import HTTPStatus
 from pathlib import Path
 from time import perf_counter
 
+import httpx
 import mistune
 from jinja2 import Environment as JinjaEnv
 from jinja2 import FileSystemLoader, StrictUndefined
@@ -55,11 +58,74 @@ def build_responses(source_dir):
     return responses
 
 
+class PDFLinkExtractor(HTMLParser):
+    def reset(self):
+        HTMLParser.reset(self)
+        self.pdf_links = set()
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "a":
+            attrs = dict(attrs)
+            url = attrs["href"]
+            if url.startswith("http") and url.endswith(".pdf"):
+                self.pdf_links.update([url])
+
+
+def url_to_file_name(url: str) -> str:
+    file_name = (
+        url.replace("http://", "")
+        .replace("https://", "")
+        .replace(".", "-")
+        .replace("/", "-")
+        # Tempting to do `.replace("-pdf", ".pdf")` here but there are some
+        # use-cases where it fails if the URL contains `/pdf/` for instance.
+    )
+    return file_name
+
+
+def save_binary_response(file_path: Path, response: "httpx.Response"):
+    with open(file_path, "wb") as download_file:
+        for chunk in response.iter_bytes():
+            download_file.write(chunk)
+
+
+def put_pdfs_in_local_cache(content: str, timeout: int = 10) -> str:
+    pdfs_file_path = HERE / "src" / "pdfs"
+    if not pdfs_file_path.exists():
+        pdfs_file_path.mkdir(parents=True)
+    parser = PDFLinkExtractor()
+    parser.feed(content)
+    for pdf_link in sorted(parser.pdf_links):
+        file_name = url_to_file_name(pdf_link)
+        target = f"pdfs/{file_name}.pdf"
+        if (SRC_DIR / target).exists():
+            print(f"SKIP: {pdf_link} exists in {SRC_DIR / target}")
+        else:
+            print(f"FETCH: {pdf_link} to {SRC_DIR / target}")
+
+            with httpx.stream(
+                "GET",
+                pdf_link,
+                timeout=timeout,
+                verify=False,  # ignore SSL certificate validation errors
+            ) as response:
+                if response.status_code == HTTPStatus.TOO_MANY_REQUESTS:
+                    print("Warning: we’re being throttled, skipping link (429)")
+                    continue
+                if response.status_code != HTTPStatus.OK:
+                    raise Exception(f"{pdf_link} is broken! ({response.status_code})")
+                save_binary_response(pdfs_file_path / f"{file_name}.pdf", response)
+        content = content.replace(pdf_link, target)
+    return content
+
+
 @cli
 def index():
     """Build the index with contents from markdown dedicated folder."""
     responses = build_responses(CONTENUS_DIR)
-    render_template("template.html", SRC_DIR / "index.html", **responses)
+    content = render_template("template.html", **responses)
+    content = put_pdfs_in_local_cache(content)
+    (SRC_DIR / "index.html").write_text(content)
 
 
 def me_or_them(value):
@@ -70,11 +136,10 @@ def me_or_them(value):
     return value
 
 
-def render_template(src, output, **context):
+def render_template(src, **context):
     jinja_env.filters["me_or_them"] = me_or_them
     template = jinja_env.get_template(src)
-    content = template.render(**context,)
-    output.open("w").write(content)
+    return template.render(**context)
 
 
 @cli

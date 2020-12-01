@@ -3,6 +3,7 @@ cert.pem
 dist/
 node_modules/
 src/index.html
+src/pdfs/*
 .cache
 .nyc_output
 __pycache__
