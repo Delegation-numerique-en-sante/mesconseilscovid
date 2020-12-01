@@ -11,6 +11,8 @@ from minicli import cli, run
 from build import each_folder_from, each_file_from
 
 HERE = Path(__file__).parent
+SRC_DIR = HERE / "src"
+CONTENUS_DIR = HERE / "contenus"
 
 
 class LinkExtractor(HTMLParser):
@@ -37,7 +39,7 @@ class LinkExtractor(HTMLParser):
 @cli
 def links(timeout: int = 10, delay: float = 0.1):
     parser = LinkExtractor()
-    content = open(HERE / "src" / "index.html").read()
+    content = (SRC_DIR / "index.html").read_text()
     parser.feed(content)
     for link in sorted(parser.links):
         print(link)
@@ -61,7 +63,7 @@ def versions():
     data = json.loads(content)
     version = data["version"]
     line_prefix = "const CACHE_NAME = "
-    for line in open(HERE / "src" / "service-worker.js"):
+    for line in open(SRC_DIR / "service-worker.js"):
         if line.startswith(line_prefix):
             break
     if version not in line:
@@ -90,7 +92,7 @@ def service_worker():
     # Retrieving the list from CACHE_FILES.
     sw_filenames = set()
     start = False
-    for line in open(HERE / "src" / "service-worker.js"):
+    for line in open(SRC_DIR / "service-worker.js"):
         # Parsing a JS file in Python, what could potentially go wrong?
         if line.startswith("const CACHE_FILES = ["):
             start = True
@@ -125,7 +127,7 @@ def service_worker():
     fonts_file_names = {
         f"fonts/{filename}"
         for file_path, filename in each_file_from(
-            HERE / "src" / "fonts", file_name="*.woff2", exclude=[".DS_Store"]
+            SRC_DIR / "fonts", file_name="*.woff2", exclude=[".DS_Store"]
         )
     }
     if not fonts_file_names.issubset(sw_filenames):
@@ -137,7 +139,7 @@ def service_worker():
     illustrations_file_names = {
         f"illustrations/{filename}"
         for file_path, filename in each_file_from(
-            HERE / "src" / "illustrations",
+            SRC_DIR / "illustrations",
             exclude=[".DS_Store"],
         )
     }
@@ -150,7 +152,7 @@ def service_worker():
     src_file_names = {
         filename
         for file_path, filename in each_file_from(
-            HERE / "src",
+            SRC_DIR,
             file_name="*.*",
             exclude=[".DS_Store"],
         )
@@ -163,8 +165,8 @@ def service_worker():
 
 @cli
 def orphelins():
-    template = (HERE / "src" / "template.html").read_text()
-    for folder in each_folder_from(HERE / "contenus", exclude=["nouveaux_contenus"]):
+    template = (SRC_DIR / "template.html").read_text()
+    for folder in each_folder_from(CONTENUS_DIR, exclude=["nouveaux_contenus"]):
         for file_path, filename in each_file_from(
             folder, file_name="*.md", exclude=["README.md"]
         ):
