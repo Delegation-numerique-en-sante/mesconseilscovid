@@ -1118,7 +1118,15 @@ a#geolocalisation {
     padding: 0.5rem;
 }
 
+#conseils-block-date {
+    display: none;
+}
+
 @media print {
+    #conseils-block-date {
+        display: block;
+    }
+
     #conseils-blocs .conseils header {
         padding-top: 0;
         background-image: none;
