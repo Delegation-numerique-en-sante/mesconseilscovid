@@ -21,8 +21,17 @@ class LinkExtractor(HTMLParser):
     def handle_starttag(self, tag, attrs):
         if tag == "a":
             attrs = dict(attrs)
-            if attrs["href"].startswith("http"):
-                self.links.update([attrs["href"]])
+            url = attrs["href"]
+            if url.startswith("http"):
+                if url.startswith(
+                    (
+                        "https://www.facebook.com/",
+                        "https://twitter.com/",
+                        "https://github.com/",
+                    )
+                ):
+                    return
+                self.links.update([url])
 
 
 @cli
