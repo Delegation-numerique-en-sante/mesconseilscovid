@@ -43,14 +43,22 @@ jobs:
           npm run-script test:coverage
 
       - name: Run browser tests (chromium)
-        run: |
-          npm run-script --browser=chromium test-integration
+        uses: nick-invision/retry@v2
+        with:
+          max_attempts: 3
+          retry_on: error
+          timeout_minutes: 2
+          command: npm run-script --browser=chromium test-integration
         env:
           DEBUG: "pw:api"
 
       - name: Run browser tests (firefox)
-        run: |
-          npm run-script --browser=firefox test-integration
+        uses: nick-invision/retry@v2
+        with:
+          max_attempts: 3
+          retry_on: error
+          timeout_minutes: 2
+          command: npm run-script --browser=firefox test-integration
         env:
           DEBUG: "pw:api"
 
