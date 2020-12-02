@@ -157,6 +157,12 @@ Si vous avez des symptômes évocateurs de la Covid, ne prenez pas d’**anti-in
 
 
 
+## [conseils_covid_cas_contact_de_contact.md](conseils_covid_cas_contact_de_contact.md)
+
+Si vous avez **passé du temps avec une personne qui est cas contact** (contact sans protection avec une personne testée positive à la Covid), demandez à cette personne de vous tenir informé·e des résultats de son test. Vous ne devrez vous isoler que si celui-ci est positif, en attendant nous vous recommandons d’appliquer les mesures barrières.
+
+
+
 ## [conseils_enfants.md](conseils_enfants.md)
 
 <div class="conseil">
@@ -693,5 +699,4 @@ Pour vos **déplacements** :
   * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »).
 
 L’application [TousAntiCovid](https://www.gouvernement.fr/info-coronavirus/tousanticovid) vous permettra de recevoir une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid.
-
 
