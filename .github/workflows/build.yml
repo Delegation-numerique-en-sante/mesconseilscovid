@@ -55,8 +55,12 @@ jobs:
           DEBUG: "pw:api"
 
       - name: Run browser tests (webkit)
-        run: |
-          npm run-script --browser=webkit test-integration
+        uses: nick-invision/retry@v2
+        with:
+          max_attempts: 3
+          retry_on: error
+          timeout_minutes: 2
+          command: npm run-script --browser=webkit test-integration
         env:
           DEBUG: "pw:api"
 
