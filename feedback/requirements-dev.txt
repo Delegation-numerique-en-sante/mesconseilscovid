@@ -1,5 +1,5 @@
 attrs==20.3.0
-importlib-metadata==3.1.0
+importlib-metadata==3.1.1
 iniconfig==1.1.1
 mock==4.0.2
 more-itertools==8.6.0
