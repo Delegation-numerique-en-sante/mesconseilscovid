@@ -89,7 +89,10 @@ def save_binary_response(file_path: Path, response: "httpx.Response"):
             download_file.write(chunk)
 
 
-def put_pdfs_in_local_cache(content: str, timeout: int = 10) -> str:
+def cache_external_pdfs(content: str, timeout: int = 10) -> str:
+    """
+    Download external PDFs and replace links with the local copy
+    """
     pdfs_file_path = HERE / "src" / "pdfs"
     if not pdfs_file_path.exists():
         pdfs_file_path.mkdir(parents=True)
@@ -124,7 +127,7 @@ def index():
     """Build the index with contents from markdown dedicated folder."""
     responses = build_responses(CONTENUS_DIR)
     content = render_template("template.html", **responses)
-    content = put_pdfs_in_local_cache(content)
+    content = cache_external_pdfs(content)
     (SRC_DIR / "index.html").write_text(content)
 
 
