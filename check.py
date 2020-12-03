@@ -33,7 +33,7 @@ class LinkExtractor(HTMLParser):
                     )
                 ):
                     return
-                self.links.update([url])
+                self.links.add(url)
 
 
 @cli
