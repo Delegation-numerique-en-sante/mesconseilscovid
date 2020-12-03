@@ -68,7 +68,7 @@ class PDFLinkExtractor(HTMLParser):
             attrs = dict(attrs)
             url = attrs["href"]
             if url.startswith("http") and url.endswith(".pdf"):
-                self.pdf_links.update([url])
+                self.pdf_links.add(url)
 
 
 def url_to_file_name(url: str) -> str:
