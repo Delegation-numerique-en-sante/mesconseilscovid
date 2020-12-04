@@ -27,6 +27,29 @@ def all():
     readmes()
 
 
+@cli
+def index():
+    """Build the index with contents from markdown dedicated folder."""
+    responses = build_responses(CONTENUS_DIR)
+    content = render_template("template.html", **responses)
+    content = cache_external_pdfs(content)
+    (SRC_DIR / "index.html").write_text(content)
+
+
+def build_responses(source_dir):
+    """Extract and convert markdown from a `source_dir` directory into a dict."""
+    responses = {}
+    for folder in each_folder_from(source_dir):
+        for file_path, filename in each_file_from(folder, pattern="*.md"):
+            html_content = markdown.read(file_path)
+            # Remove empty comments set to hack markdown rendering
+            # when we do not want paragraphs.
+            html_content = html_content.replace("<!---->", "")
+            responses[filename[: -len(".md")]] = html_content
+
+    return responses
+
+
 def each_folder_from(source_dir, exclude=None):
     """Walk across the `source_dir` and return the folder paths."""
     for direntry in os.scandir(source_dir):
@@ -44,18 +67,39 @@ def each_file_from(source_dir, pattern="*", exclude=None):
         yield os.path.join(source_dir, filename), filename
 
 
-def build_responses(source_dir):
-    """Extract and convert markdown from a `source_dir` directory into a dict."""
-    responses = {}
-    for folder in each_folder_from(source_dir):
-        for file_path, filename in each_file_from(folder, pattern="*.md"):
-            html_content = markdown.read(file_path)
-            # Remove empty comments set to hack markdown rendering
-            # when we do not want paragraphs.
-            html_content = html_content.replace("<!---->", "")
-            responses[filename[: -len(".md")]] = html_content
+def render_template(src, **context):
+    jinja_env.filters["me_or_them"] = me_or_them
+    template = jinja_env.get_template(src)
+    return template.render(**context)
 
-    return responses
+
+def me_or_them(value):
+    separator = "<hr />"
+    if separator in value:
+        me, them = (part.strip() for part in value.split(separator))
+        value = f'<span class="me visible">{me}</span><span class="them" hidden>{them}</span>'
+    return value
+
+
+def cache_external_pdfs(content: str, timeout: int = 10) -> str:
+    """
+    Download external PDFs and replace links with the local copy
+    """
+    for url in _extract_pdf_links(content):
+        filename = url_to_filename(url)
+        download_file_if_needed(
+            url=url,
+            local_path=SRC_DIR / "pdfs" / filename,
+            timeout=timeout,
+        )
+        content = content.replace(url, f"pdfs/{filename}")
+    return content
+
+
+def _extract_pdf_links(content):
+    parser = PDFLinkExtractor()
+    parser.feed(content)
+    return sorted(parser.pdf_links)
 
 
 class PDFLinkExtractor(HTMLParser):
@@ -82,28 +126,7 @@ def url_to_filename(url: str) -> str:
     return f"{filename}.{extension}"
 
 
-def cache_external_pdfs(content: str, timeout: int = 10) -> str:
-    """
-    Download external PDFs and replace links with the local copy
-    """
-    for url in _extract_pdf_links(content):
-        filename = url_to_filename(url)
-        _download_file_if_needed(
-            url=url,
-            local_path=SRC_DIR / "pdfs" / filename,
-            timeout=timeout,
-        )
-        content = content.replace(url, f"pdfs/{filename}")
-    return content
-
-
-def _extract_pdf_links(content):
-    parser = PDFLinkExtractor()
-    parser.feed(content)
-    return sorted(parser.pdf_links)
-
-
-def _download_file_if_needed(url, local_path, timeout):
+def download_file_if_needed(url, local_path, timeout):
     if local_path.exists():
         print(f"SKIP: {url} exists in {local_path}")
     else:
@@ -129,29 +152,6 @@ def _save_binary_response(file_path: Path, response: "httpx.Response"):
     with open(file_path, "wb") as download_file:
         for chunk in response.iter_bytes():
             download_file.write(chunk)
-
-
-@cli
-def index():
-    """Build the index with contents from markdown dedicated folder."""
-    responses = build_responses(CONTENUS_DIR)
-    content = render_template("template.html", **responses)
-    content = cache_external_pdfs(content)
-    (SRC_DIR / "index.html").write_text(content)
-
-
-def me_or_them(value):
-    separator = "<hr />"
-    if separator in value:
-        me, them = (part.strip() for part in value.split(separator))
-        value = f'<span class="me visible">{me}</span><span class="them" hidden>{them}</span>'
-    return value
-
-
-def render_template(src, **context):
-    jinja_env.filters["me_or_them"] = me_or_them
-    template = jinja_env.get_template(src)
-    return template.render(**context)
 
 
 @cli
