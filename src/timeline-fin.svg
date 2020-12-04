@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45 45">
+  <defs>
+    <path id="a" d="M0 0h45v45H0z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#FFF" xlink:href="#a"/>
+    <text font-family="AppleColorEmoji, Apple Color Emoji" font-size="24" fill="#000">
+      <tspan x="10" y="33">🎉</tspan>
+    </text>
+  </g>
+</svg>

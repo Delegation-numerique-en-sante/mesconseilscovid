@@ -561,6 +561,10 @@ export default class Profil {
         return this.suivi.filter((etat) => new Date(etat.date) > joursAvant(delta))
     }
 
+    suiviAujourdhui() {
+        return this.suiviDerniersJours(1).length >= 1
+    }
+
     suiviEntre(strictementApres, avant) {
         return this.suivi.filter((etat) => {
             const date = new Date(etat.date)

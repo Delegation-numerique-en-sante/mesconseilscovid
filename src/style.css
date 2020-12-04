@@ -466,6 +466,121 @@ main footer .legals {
     width: 100%;
 }
 
+.timeline-container {
+    padding-top: 1rem;
+    margin: 1rem auto;
+    height: 43rem;
+    width: 20rem;
+    background-image: url('timeline-arrow.svg');
+    background-position: 13px bottom;
+    background-repeat: no-repeat;
+    font-size: 90%;
+}
+
+.timeline-block {
+    width: 100%;
+    min-height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.timeline-icon {
+    background-color: #fff;
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 6.5rem;
+    height: 3rem;
+    border: 2px solid #000091;
+    margin-top: 0.9rem;
+    margin-left: 0.5rem;
+}
+.timeline-content {
+    margin-left: 1rem;
+    position: relative;
+    min-width: 245px;
+}
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background: #000091;
+    width: 16px;
+    height: 2px;
+    left: -16px;
+    top: 36px;
+    transform: rotate(45);
+}
+.timeline-content p {
+    margin: 0;
+}
+.timeline-content .timeline-date {
+    color: #484d7a;
+    font-size: 90%;
+    padding-bottom: 0.2rem;
+    font-weight: bold;
+}
+.timeline-content .timeline-texte {
+    border-left: 2px solid #000091;
+    padding: 0.2rem 0.4rem;
+    background: #e5e7ef;
+}
+
+.timeline-exposition .timeline-icon {
+    background-image: url('timeline-covids.svg');
+}
+
+.timeline-contagiosite .timeline-icon {
+    background-image: url('timeline-masque.svg');
+    border-color: #fe6f4c;
+}
+.timeline-contagiosite .timeline-content::before {
+    background: #fe6f4c;
+}
+.timeline-contagiosite .timeline-content .timeline-texte {
+    border-color: #fe6f4c;
+    background: #ffb6a5;
+}
+
+.timeline-isolement .timeline-icon {
+    background-image: url('timeline-maison.svg');
+}
+
+.timeline-vousetesici {
+    position: relative;
+}
+.timeline-vousetesici .timeline-icon {
+    border-width: 5px;
+    border-radius: 200px;
+    width: 5.5rem;
+    height: 2.5rem;
+    margin-left: 13px;
+    margin-top: 17px;
+}
+.timeline-vousetesici .timeline-icon::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background: #000091;
+    width: 14px;
+    height: 14px;
+    border-radius: 100px;
+    top: 30px;
+    left: 26px;
+    transform: rotate(45);
+}
+
+.timeline-fin .timeline-icon {
+    background-image: url('timeline-fin.svg');
+    border-color: #00ac8c;
+}
+.timeline-fin .timeline-content::before {
+    background: #00ac8c;
+}
+.timeline-fin .timeline-content .timeline-texte {
+    background: #c3f6ec;
+    border-color: #00ac8c;
+}
+
 .conseils {
     margin-bottom: 3rem;
 }

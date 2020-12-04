@@ -17,6 +17,7 @@ import {
     showMeOrThem,
 } from '../affichage.js'
 import * as injection from '../injection.js'
+import { joursAvant, joursApres } from '../utils.js'
 
 import AlgorithmeOrientation from '../algorithme/orientation.js'
 import AlgorithmeSuivi from '../algorithme/suivi.js'
@@ -74,7 +75,7 @@ export default function conseils(element, app) {
     }
 
     // Dynamic data injections.
-    showRelevantAnswersRecap(element, app.profil, algoOrientation)
+    dynamicDataInjection(element, app.profil, algoOrientation)
 
     // Show instructions to install PWA (iOS) or add bookmark (others).
     if (isMobileSafari()) {
@@ -181,7 +182,7 @@ function showRelevantEvolutionsRecap(element, algoSuivi) {
     }
 }
 
-export function showRelevantAnswersRecap(element, profil, algoOrientation) {
+export function dynamicDataInjection(element, profil, algoOrientation) {
     injection.titreConseils(element.querySelector('#conseils-block-titre'), profil)
     injection.dateConseils(element.querySelector('#conseils-block-date'))
 
@@ -208,6 +209,56 @@ export function showRelevantAnswersRecap(element, profil, algoOrientation) {
     ;[].forEach.call(element.querySelectorAll('.nom-antecedents'), (elem) => {
         injection.antecedents(elem, algoOrientation)
     })
+
+    dynamicTimelineDataInjection(element, profil)
+}
+
+function dynamicTimelineDataInjection(element, profil) {
+    function formatDate(date) {
+        const options = {
+            weekday: 'long',
+            month: 'long',
+            day: 'numeric',
+        }
+        return date.toLocaleDateString('fr-FR', options)
+    }
+
+    function titleCase(text) {
+        return text.charAt(0).toUpperCase() + text.slice(1)
+    }
+
+    function fillDate(part, content) {
+        // eslint-disable-next-line no-extra-semi
+        ;[].forEach.call(
+            element.querySelectorAll(`.timeline .timeline-${part} .timeline-date`),
+            (elem) => {
+                elem.textContent = titleCase(content)
+            }
+        )
+    }
+
+    const dateExposition = joursAvant(4, profil.symptomes_start_date)
+    fillDate('exposition', `Avant le ${formatDate(dateExposition)}`)
+    fillDate('contagiosite', formatDate(joursAvant(2, profil.symptomes_start_date)))
+    fillDate('isolement', formatDate(profil.symptomes_start_date))
+    fillDate('vousetesici', `Aujourd’hui (${formatDate(new Date())})`)
+    const dateFin = joursApres(7, profil.symptomes_start_date)
+    fillDate('fin', `À partir du ${formatDate(dateFin)}`)
+
+    if (profil.suiviAujourdhui()) {
+        const suiviStatut = document.querySelector('#suivi div:not([hidden])')
+        if (suiviStatut) {
+            // eslint-disable-next-line no-extra-semi
+            ;[].forEach.call(
+                element.querySelectorAll(
+                    '.timeline .timeline-vousetesici .timeline-texte'
+                ),
+                (elem) => {
+                    elem.textContent = suiviStatut.textContent.trim()
+                }
+            )
+        }
+    }
 }
 
 function statutBlockNamesToDisplay(algoOrientation) {
