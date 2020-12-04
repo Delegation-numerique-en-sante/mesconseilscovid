@@ -950,7 +950,7 @@ a[href*='youtube.com']::after {
 }
 /* L’ordre est important, l’icône d’infographie écrase celle de fiche. */
 .conseils a[href="https://www.has-sante.fr/jcms/p_3185131/fr/accompagner-les-enfants-et-les-adolescents-dont-ceux-vivant-avec-une-maladie-chronique-lors-de-la-levee-du-confinement"]::before,
-.conseils a[href*="https://solidarites-sante.gouv.fr/IMG/pdf/"]::before,
+.conseils a[href*="solidarites-sante-gouv-fr-IMG-pdf-"]::before,
 .conseils a[href*="fiche"]::before {
     background: no-repeat bottom left url('icone_fiche.svg');
     content: '';
@@ -959,9 +959,12 @@ a[href*='youtube.com']::after {
     width: 25px;
     height: 22px;
 }
-.conseils a[href="https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_-_nouveau.pdf"]::before,
-.conseils a[href="https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf"]::before,
-{
+.conseils
+    a[href$='www-gouvernement-fr-sites-default-files-arbre_decisionnel_covid_-_nouveau.pdf']::before,
+.conseils
+    a[href$='www-gouvernement-fr-sites-default-files-coronavirus_mesures_barrieres_nouveau.pdf']::before,
+.conseils
+    a[href$='solidarites-sante-gouv-fr-IMG-pdf-affiche_masque_mode_d_emploi.pdf']::before {
     background: no-repeat bottom left url('icone_infographie.svg');
     content: '';
     display: inline-flex;
