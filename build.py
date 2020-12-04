@@ -36,9 +36,9 @@ def each_folder_from(source_dir, exclude=None):
             yield direntry
 
 
-def each_file_from(source_dir, file_name="*", exclude=None):
+def each_file_from(source_dir, pattern="*", exclude=None):
     """Walk across the `source_dir` and return the md file paths."""
-    for filename in fnmatch.filter(sorted(os.listdir(source_dir)), file_name):
+    for filename in fnmatch.filter(sorted(os.listdir(source_dir)), pattern):
         if exclude is not None and filename in exclude:
             continue
         yield os.path.join(source_dir, filename), filename
@@ -48,7 +48,7 @@ def build_responses(source_dir):
     """Extract and convert markdown from a `source_dir` directory into a dict."""
     responses = {}
     for folder in each_folder_from(source_dir):
-        for file_path, filename in each_file_from(folder, file_name="*.md"):
+        for file_path, filename in each_file_from(folder, pattern="*.md"):
             html_content = markdown.read(file_path)
             # Remove empty comments set to hack markdown rendering
             # when we do not want paragraphs.

@@ -127,7 +127,7 @@ def service_worker():
     fonts_file_names = {
         f"fonts/{filename}"
         for file_path, filename in each_file_from(
-            SRC_DIR / "fonts", file_name="*.woff2", exclude=[".DS_Store"]
+            SRC_DIR / "fonts", pattern="*.woff2", exclude=[".DS_Store"]
         )
     }
     if not fonts_file_names.issubset(sw_filenames):
@@ -153,7 +153,7 @@ def service_worker():
         filename
         for file_path, filename in each_file_from(
             SRC_DIR,
-            file_name="*.*",
+            pattern="*.*",
             exclude=[".DS_Store"],
         )
     }
@@ -168,7 +168,7 @@ def orphelins():
     template = (SRC_DIR / "template.html").read_text()
     for folder in each_folder_from(CONTENUS_DIR, exclude=["nouveaux_contenus"]):
         for file_path, filename in each_file_from(
-            folder, file_name="*.md", exclude=["README.md"]
+            folder, pattern="*.md", exclude=["README.md"]
         ):
             if filename.startswith("meta_") or filename.startswith("config_"):
                 continue
