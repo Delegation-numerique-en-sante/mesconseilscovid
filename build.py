@@ -71,55 +71,64 @@ class PDFLinkExtractor(HTMLParser):
                 self.pdf_links.add(url)
 
 
-def url_to_file_name(url: str) -> str:
-    file_name = (
-        url.replace("http://", "")
+def url_to_filename(url: str) -> str:
+    basename, extension = url.rsplit(".", 1)
+    filename = (
+        basename.replace("http://", "")
         .replace("https://", "")
         .replace(".", "-")
         .replace("/", "-")
-        # Tempting to do `.replace("-pdf", ".pdf")` here but there are some
-        # use-cases where it fails if the URL contains `/pdf/` for instance.
     )
-    return file_name
-
-
-def save_binary_response(file_path: Path, response: "httpx.Response"):
-    with open(file_path, "wb") as download_file:
-        for chunk in response.iter_bytes():
-            download_file.write(chunk)
+    return f"{filename}.{extension}"
 
 
 def cache_external_pdfs(content: str, timeout: int = 10) -> str:
     """
     Download external PDFs and replace links with the local copy
     """
-    pdfs_file_path = HERE / "src" / "pdfs"
-    if not pdfs_file_path.exists():
-        pdfs_file_path.mkdir(parents=True)
+    for url in _extract_pdf_links(content):
+        filename = url_to_filename(url)
+        _download_file_if_needed(
+            url=url,
+            local_path=SRC_DIR / "pdfs" / filename,
+            timeout=timeout,
+        )
+        content = content.replace(url, f"pdfs/{filename}")
+    return content
+
+
+def _extract_pdf_links(content):
     parser = PDFLinkExtractor()
     parser.feed(content)
-    for pdf_link in sorted(parser.pdf_links):
-        file_name = url_to_file_name(pdf_link)
-        target = f"pdfs/{file_name}.pdf"
-        if (SRC_DIR / target).exists():
-            print(f"SKIP: {pdf_link} exists in {SRC_DIR / target}")
-        else:
-            print(f"FETCH: {pdf_link} to {SRC_DIR / target}")
+    return sorted(parser.pdf_links)
 
-            with httpx.stream(
-                "GET",
-                pdf_link,
-                timeout=timeout,
-                verify=False,  # ignore SSL certificate validation errors
-            ) as response:
-                if response.status_code == HTTPStatus.TOO_MANY_REQUESTS:
-                    print("Warning: we’re being throttled, skipping link (429)")
-                    continue
-                if response.status_code != HTTPStatus.OK:
-                    raise Exception(f"{pdf_link} is broken! ({response.status_code})")
-                save_binary_response(pdfs_file_path / f"{file_name}.pdf", response)
-        content = content.replace(pdf_link, target)
-    return content
+
+def _download_file_if_needed(url, local_path, timeout):
+    if local_path.exists():
+        print(f"SKIP: {url} exists in {local_path}")
+    else:
+        print(f"FETCH: {url} to {local_path}")
+        _download_file(url, local_path, timeout)
+
+
+def _download_file(url, local_path, timeout):
+    with httpx.stream(
+        "GET",
+        url,
+        timeout=timeout,
+        verify=False,  # ignore SSL certificate validation errors
+    ) as response:
+        if response.status_code != HTTPStatus.OK:
+            raise Exception(f"{url} is broken! ({response.status_code})")
+        _save_binary_response(local_path, response)
+
+
+def _save_binary_response(file_path: Path, response: "httpx.Response"):
+    if not file_path.parent.exists():
+        file_path.parent.mkdir(parents=True)
+    with open(file_path, "wb") as download_file:
+        for chunk in response.iter_bytes():
+            download_file.write(chunk)
 
 
 @cli
