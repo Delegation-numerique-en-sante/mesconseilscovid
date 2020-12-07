@@ -215,6 +215,9 @@ export function dynamicDataInjection(element, profil, algoOrientation) {
 
 function dynamicTimelineDataInjection(element, profil) {
     function formatDate(date) {
+        if (typeof date === 'undefined') {
+            return ''
+        }
         const options = {
             weekday: 'long',
             month: 'long',
@@ -237,16 +240,45 @@ function dynamicTimelineDataInjection(element, profil) {
         )
     }
 
-    const dateExposition = joursAvant(4, profil.symptomes_start_date)
+    let dateExposition
+    let dateContagiosite
+    let dateIsolement
+    let dateFin
+    if (profil.estPositifAsymptomatique()) {
+        dateExposition = joursAvant(14, profil.depistage_start_date)
+        dateContagiosite = joursAvant(7, profil.depistage_start_date)
+        dateIsolement = profil.depistage_start_date
+        dateFin = joursApres(7, profil.depistage_start_date)
+    } else {
+        dateExposition = joursAvant(4, profil.symptomes_start_date)
+        dateContagiosite = joursAvant(2, profil.symptomes_start_date)
+        dateIsolement = profil.symptomes_start_date
+        dateFin = joursApres(7, profil.symptomes_start_date)
+    }
+
     fillDate('exposition', `Avant le ${formatDate(dateExposition)}`)
-    fillDate('contagiosite', formatDate(joursAvant(2, profil.symptomes_start_date)))
-    fillDate('isolement', formatDate(profil.symptomes_start_date))
+    fillDate('contagiosite', formatDate(dateContagiosite))
+    fillDate('isolement', formatDate(dateIsolement))
     fillDate('vousetesici', `Aujourd’hui (${formatDate(new Date())})`)
-    const dateFin = joursApres(7, profil.symptomes_start_date)
     fillDate('fin', `À partir du ${formatDate(dateFin)}`)
 
     if (profil.suiviAujourdhui()) {
         const suiviStatut = document.querySelector('#suivi div:not([hidden])')
+        if (suiviStatut) {
+            // eslint-disable-next-line no-extra-semi
+            ;[].forEach.call(
+                element.querySelectorAll(
+                    '.timeline .timeline-vousetesici .timeline-texte'
+                ),
+                (elem) => {
+                    elem.textContent = suiviStatut.textContent.trim()
+                }
+            )
+        }
+    }
+
+    if (profil.estPositifAsymptomatique()) {
+        const suiviStatut = document.querySelector('#conseils-statut .visible')
         if (suiviStatut) {
             // eslint-disable-next-line no-extra-semi
             ;[].forEach.call(
