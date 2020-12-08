@@ -288,6 +288,11 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 
 
+## [question_dépistage_date_aide.md](question_dépistage_date_aide.md)
+
+<!---->Le test a été réalisé le :
+
+
 ## [question_dépistage_date_libellé.md](question_dépistage_date_libellé.md)
 
 <!---->La date du prélèvement
