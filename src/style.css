@@ -595,7 +595,8 @@ fieldset [role='radiogroup'] {
     margin-bottom: 3rem;
 }
 
-fieldset .secondary {
+fieldset .secondary,
+fieldset .indented {
     margin-left: 2rem;
 }
 fieldset .secondary.disabled {
@@ -843,24 +844,20 @@ input[type='checkbox'] + label,
 input[type='radio'] + label {
     display: block;
     position: relative;
-    padding: 0 1.5rem;
+    padding: 0;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
     display: flex;
-}
-input[type='radio'] + label {
-    padding-left: 4rem;
 }
 
 input[type='checkbox'] + label::before,
 input[type='radio'] + label::before {
     content: '';
-    position: relative;
     display: inline-block;
-    margin-right: 10px;
-    margin-left: -1.25rem;
-    width: 1.2rem;
-    height: 1.2rem;
+    box-sizing: border-box;
+    margin: 1px 11px 1px 1px;
+    width: 22px;
+    height: 22px;
     background: white;
     border: 2px solid #000091;
     flex-shrink: 0;
@@ -885,11 +882,12 @@ input[type='radio'] + label::after {
     content: '';
     position: absolute;
     display: inline-block;
+    box-sizing: border-box;
     margin-right: 10px;
-    left: calc(68.3px - 1.25rem);
-    top: 4.3px;
-    width: 0.9rem;
-    height: 0.9rem;
+    left: 6px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
     background: #000091;
     opacity: 0;
     border-radius: 50%;
@@ -909,7 +907,7 @@ input[type='checkbox']:checked + label::after {
     content: '';
     position: absolute;
     top: 5px;
-    left: calc(28px - 1.25rem);
+    left: 4px;
     border-left: 3px solid white;
     border-bottom: 3px solid white;
     height: 6px;
