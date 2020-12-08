@@ -1,5 +1,13 @@
 # Changelog
 
+## 2020-12-08
+
+* amélioration de la page de dépistage sur mobile
+* ajout de conseils pour contacts de cas contacts
+* ajout d’une date à la page de conseils lors de l’impression
+* ajout d’un lien sur le niveau de protection avec masque
+* mise en conformité WCAG AAA des couleurs de liens (contraste)
+
 ## 2020-11-29
 
 * correction d’un problème graphique sur les boutons radio
