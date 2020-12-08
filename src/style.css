@@ -613,6 +613,17 @@ fieldset .secondary label[for='depistage_date'] {
     margin-right: 1rem;
 }
 
+input[type='radio'] + label[for='debut_symptomes_encore_avant_hier'] {
+    display: flex;
+    width: 100%;
+}
+
+label[for='debut_symptomes_encore_avant_hier'] input[type='date'] {
+    margin-top: -5px;
+    margin-left: 2rem;
+    flex-grow: 1;
+}
+
 fieldset .field {
     margin-bottom: 1.5rem;
 }
@@ -698,6 +709,7 @@ select {
     color: #484d7a;
     padding: 8px;
     font-size: 16px;
+    min-height: 36px;
 }
 
 a.button:focus,
