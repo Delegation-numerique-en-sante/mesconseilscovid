@@ -235,7 +235,7 @@ function dynamicTimelineDataInjection(element, profil) {
         ;[].forEach.call(
             element.querySelectorAll(`.timeline .timeline-${part} .timeline-date`),
             (elem) => {
-                elem.textContent = titleCase(content)
+                elem.innerHTML = titleCase(content)
             }
         )
     }
@@ -243,22 +243,29 @@ function dynamicTimelineDataInjection(element, profil) {
     let dateExposition
     let dateContagiosite
     let dateIsolement
+    let msgIsolement
     let dateFin
     if (profil.estPositifAsymptomatique()) {
         dateExposition = joursAvant(14, profil.depistage_start_date)
         dateContagiosite = joursAvant(7, profil.depistage_start_date)
         dateIsolement = profil.depistage_start_date
+        msgIsolement = `${formatDate(
+            dateIsolement
+        )} (<a href="#depistage">modifier</a>)`
         dateFin = joursApres(7, profil.depistage_start_date)
     } else {
-        dateExposition = joursAvant(4, profil.symptomes_start_date)
+        dateExposition = joursAvant(14, profil.symptomes_start_date)
         dateContagiosite = joursAvant(2, profil.symptomes_start_date)
         dateIsolement = profil.symptomes_start_date
+        msgIsolement = `${formatDate(
+            dateIsolement
+        )} (<a href="#debutsymptomes">modifier</a>)`
         dateFin = joursApres(7, profil.symptomes_start_date)
     }
 
-    fillDate('exposition', `Avant le ${formatDate(dateExposition)}`)
+    fillDate('exposition', `À partir du ${formatDate(dateExposition)}`)
     fillDate('contagiosite', formatDate(dateContagiosite))
-    fillDate('isolement', formatDate(dateIsolement))
+    fillDate('isolement', msgIsolement)
     fillDate('vousetesici', `Aujourd’hui (${formatDate(new Date())})`)
     fillDate('fin', `À partir du ${formatDate(dateFin)}`)
 
