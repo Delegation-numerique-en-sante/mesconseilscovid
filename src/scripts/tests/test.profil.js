@@ -476,7 +476,7 @@ describe('Profil', function () {
             _depistage_start_date: '2020-07-09T14:03:41.000Z',
             suivi_active: true,
             _suivi_start_date: undefined,
-            _symptomes_start_date: undefined,
+            _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             _deconfinement_date: undefined,
             suivi: [],
             questionnaire_started: true,

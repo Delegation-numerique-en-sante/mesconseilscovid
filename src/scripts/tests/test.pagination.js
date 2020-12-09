@@ -4,7 +4,6 @@ import { Questionnaire } from '../questionnaire.js'
 
 import {
     beforeSuiviIntroduction,
-    beforeDebutSymptomes,
     beforeSuiviSymptomes,
     beforeSuiviHistorique,
 } from '../questionnaire.js'
@@ -343,7 +342,6 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_autre: false,
-                _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
             assert.strictEqual(
                 questionnaire.before('symptomespasses', profil),
@@ -412,7 +410,6 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_autre: false,
-                contact_a_risque: false,
             })
             assert.strictEqual(
                 questionnaire.before('depistage', profil),
@@ -475,9 +472,7 @@ describe('Pagination', function () {
         })
         it('redirige vers début symptômes si symptômes actuels et réponses manquantes', function () {
             const profil = new Profil('mes_infos', {
-                depistage: false,
                 symptomes_actuels: true,
-                _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
             assert.strictEqual(
                 questionnaire.before('conseils', profil),
@@ -486,7 +481,6 @@ describe('Pagination', function () {
         })
         it('redirige vers début symptômes si symptômes passés et réponses manquantes', function () {
             const profil = new Profil('mes_infos', {
-                depistage: false,
                 symptomes_actuels: false,
                 symptomes_passes: true,
             })
@@ -497,7 +491,6 @@ describe('Pagination', function () {
         })
         it('redirige vers question contact à risque si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
-                depistage: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
             })
@@ -508,7 +501,6 @@ describe('Pagination', function () {
         })
         it('redirige vers question symptômes passés si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
-                depistage: false,
                 symptomes_actuels: false,
             })
             assert.strictEqual(
@@ -518,7 +510,6 @@ describe('Pagination', function () {
         })
         it('redirige vers question symptômes passés si symptômes actuels autres', function () {
             const profil = new Profil('mes_infos', {
-                depistage: false,
                 symptomes_actuels: true,
                 symptomes_actuels_autre: true,
             })
@@ -899,34 +890,6 @@ describe('Pagination', function () {
             })
             assert.strictEqual(
                 beforeSuiviIntroduction(profil, questionnaire),
-                'symptomesactuels'
-            )
-        })
-        it('redirige début symptômes vers algo orientation si profil non complet', function () {
-            const profil = new Profil('mes_infos', {
-                departement: '34',
-                activite_pro: false,
-                activite_pro_public: false,
-                activite_pro_sante: false,
-                activite_pro_liberal: false,
-                foyer_enfants: true,
-                foyer_fragile: false,
-                age: '42',
-                grossesse_3e_trimestre: false,
-                poids: '70',
-                taille: '178',
-                antecedent_cardio: false,
-                antecedent_diabete: true,
-                antecedent_respi: false,
-                antecedent_dialyse: true,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-            })
-            assert.strictEqual(
-                beforeDebutSymptomes(profil, questionnaire),
                 'symptomesactuels'
             )
         })
