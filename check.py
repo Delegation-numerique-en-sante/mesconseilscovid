@@ -74,20 +74,6 @@ def versions():
 
 @cli
 def service_worker():
-    KNOWN_EXCLUDED_FILES = {
-        "browserconfig.xml",
-        "illustrations/mesconseilscovid.png",
-        "illustrations/isolement-sans-symptomes.png",
-        "illustrations/isolement-foyer-malade.png",
-        "index.html",
-        "logo.png",
-        "logo-favicon.png",
-        "service-worker.js",
-        "template.html",
-        "version.json",
-    }
-    REQUIRED_FILES = {"/", "style.css", "scripts/main.js", "favicon.ico"}
-
     # Retrieving the list from CACHE_FILES.
     sw_filenames = set()
     start = False
@@ -102,6 +88,29 @@ def service_worker():
 
         if line.startswith("]"):
             break
+
+    # Make sure the cached files exist.
+    for filename in sw_filenames:
+        if not ((Path("src") / filename).exists() or (Path("static") / filename).exists()):
+            raise Exception(
+                f"Non-existent file in service-worker.js: {filename}"
+            )
+
+    REQUIRED_FILES = {"/", "style.css", "scripts/main.js", "favicon.ico"}
+
+    KNOWN_EXCLUDED_FILES = {
+        "browserconfig.xml",
+        "illustrations/mesconseilscovid.png",
+        "illustrations/isolement-sans-symptomes.png",
+        "illustrations/isolement-foyer-malade.png",
+        "index.html",
+        "logo.png",
+        "logo-favicon.png",
+        "service-worker.js",
+        "template.html",
+        "version.json",
+    }
+
     sw_filenames |= KNOWN_EXCLUDED_FILES
 
     # Make sure the required files are present.
