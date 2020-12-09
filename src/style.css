@@ -472,22 +472,20 @@ main footer .legals {
 }
 
 .timeline-container {
-    padding-top: 1rem;
+    padding: 1rem 0 4rem 0;
     margin: 1rem auto;
-    height: 43rem;
     width: 20rem;
     background-image: url('timeline-arrow.svg');
-    background-position: 13px bottom;
+    background-position: 7px bottom;
     background-repeat: no-repeat;
     font-size: 90%;
 }
 
 .timeline-block {
     width: 100%;
-    min-height: 7rem;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 .timeline-icon {
     background-color: #fff;
@@ -499,6 +497,9 @@ main footer .legals {
     border: 2px solid #000091;
     margin-top: 0.9rem;
     margin-left: 0.5rem;
+    font-size: 28px;
+    line-height: 1;
+    padding: 7px 0 0 6px;
 }
 .timeline-content {
     margin-left: 1rem;
@@ -531,12 +532,7 @@ main footer .legals {
     background: #e5e7ef;
 }
 
-.timeline-exposition .timeline-icon {
-    background-image: url('timeline-covids.svg');
-}
-
 .timeline-contagiosite .timeline-icon {
-    background-image: url('timeline-masque.svg');
     border-color: #fe6f4c;
 }
 .timeline-contagiosite .timeline-content::before {
@@ -547,10 +543,6 @@ main footer .legals {
     background: #ffb6a5;
 }
 
-.timeline-isolement .timeline-icon {
-    background-image: url('timeline-maison.svg');
-}
-
 .timeline-vousetesici {
     position: relative;
 }
@@ -559,7 +551,7 @@ main footer .legals {
     border-radius: 200px;
     width: 40px;
     height: 40px;
-    margin-left: 13px;
+    margin-left: 10px;
     margin-top: 17px;
 }
 .timeline-vousetesici .timeline-icon::after {
@@ -571,12 +563,11 @@ main footer .legals {
     height: 14px;
     border-radius: 100px;
     top: 30px;
-    left: 26px;
+    left: 23px;
     transform: rotate(45);
 }
 
 .timeline-fin .timeline-icon {
-    background-image: url('timeline-fin.svg');
     border-color: #00ac8c;
 }
 .timeline-fin .timeline-content::before {
