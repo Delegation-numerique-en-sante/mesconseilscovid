@@ -190,7 +190,7 @@ describe('Profil', function () {
         assert.deepEqual(profil.getData(), data)
         assert.isTrue(profil.isComplete())
         assert.isFalse(profil.isEmpty())
-        assert.isTrue(profil.estPositifAsymptomatique())
+        assert.isTrue(profil.depistagePositifRecentAsymptomatique())
     })
 
     it('Le questionnaire peut être complètement rempli mais âge < 15', function () {
@@ -572,6 +572,6 @@ describe('Profil', function () {
         })
         assert.isTrue(profil.questionnaire_completed)
         assert.instanceOf(profil.questionnaire_completion_date, Date)
-        assert.isFalse(profil.estPositifAsymptomatique())
+        assert.isFalse(profil.depistagePositifRecentAsymptomatique())
     })
 })

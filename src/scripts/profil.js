@@ -575,42 +575,42 @@ export default class Profil {
     requiertSuivi() {
         return (
             this.isDepistageComplete() &&
-            (this.estPositif() ||
-                this.estEnAttente() ||
+            (this.depistagePositifRecent() ||
+                this.depistageEnAttenteRecent() ||
                 (this.sansDepistage() && this.hasSymptomesActuelsReconnus()) ||
                 (this.sansDepistage() && this.symptomes_passes))
         )
     }
 
-    depistageObsolete() {
-        // TODISCUSS: reset depistage data if true?
+    depistageRecent() {
+        // TODISCUSS: reset depistage data if false?
         const delta = 7
         const now = new Date()
         const finDeValidite = joursApres(delta, this.depistage_start_date)
-        return now > finDeValidite
+        return now <= finDeValidite
     }
 
-    estPositif() {
+    depistagePositifRecent() {
         return (
             this.depistage === true &&
             this.depistage_resultat === 'positif' &&
-            !this.depistageObsolete()
+            this.depistageRecent()
         )
     }
 
-    estNegatif() {
+    depistageNegatifRecent() {
         return (
             this.depistage === true &&
             this.depistage_resultat === 'negatif' &&
-            !this.depistageObsolete()
+            this.depistageRecent()
         )
     }
 
-    estEnAttente() {
+    depistageEnAttenteRecent() {
         return (
             this.depistage === true &&
             this.depistage_resultat === 'en_attente' &&
-            !this.depistageObsolete()
+            this.depistageRecent()
         )
     }
 
@@ -618,12 +618,12 @@ export default class Profil {
         return this.depistage === false
     }
 
-    estNegatifSymptomatique() {
-        return this.hasSymptomesActuelsReconnus() && this.estNegatif()
+    depistageNegatifRecentSymptomatique() {
+        return this.hasSymptomesActuelsReconnus() && this.depistageNegatifRecent()
     }
 
-    estPositifAsymptomatique() {
-        return this.symptomes_actuels === false && this.estPositif()
+    depistagePositifRecentAsymptomatique() {
+        return this.symptomes_actuels === false && this.depistagePositifRecent()
     }
 
     estMonProfil() {
