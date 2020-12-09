@@ -42,7 +42,7 @@ export default class Profil {
     }
 
     get deconfinement_date() {
-        if (typeof this._suivi_start_date === 'undefined') return undefined
+        if (typeof this._deconfinement_date === 'undefined') return undefined
         return new Date(this._deconfinement_date)
     }
 
