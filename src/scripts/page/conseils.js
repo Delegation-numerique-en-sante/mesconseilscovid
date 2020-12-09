@@ -245,7 +245,7 @@ function dynamicTimelineDataInjection(element, profil) {
     let dateIsolement
     let msgIsolement
     let dateFin
-    if (profil.estPositifAsymptomatique()) {
+    if (profil.depistagePositifRecentAsymptomatique()) {
         dateExposition = joursAvant(14, profil.depistage_start_date)
         dateContagiosite = joursAvant(7, profil.depistage_start_date)
         dateIsolement = profil.depistage_start_date
@@ -284,7 +284,7 @@ function dynamicTimelineDataInjection(element, profil) {
         }
     }
 
-    if (profil.estPositifAsymptomatique()) {
+    if (profil.depistagePositifRecentAsymptomatique()) {
         const suiviStatut = document.querySelector('#conseils-statut .visible')
         if (suiviStatut) {
             // eslint-disable-next-line no-extra-semi

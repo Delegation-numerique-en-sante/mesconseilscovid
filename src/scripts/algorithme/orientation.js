@@ -285,14 +285,14 @@ export default class AlgorithmeOrientation {
     recommandeAutoSuivi() {
         return (
             this.profil.hasSymptomesActuelsReconnus() &&
-            !this.profil.estPositifAsymptomatique() &&
-            !this.profil.estNegatifSymptomatique()
+            !this.profil.depistagePositifRecentAsymptomatique() &&
+            !this.profil.depistageNegatifRecentSymptomatique()
         )
     }
 
     timelineBlockNamesToDisplay() {
         const blockNames = []
-        if (this.profil.estPositif()) {
+        if (this.profil.depistagePositifRecent()) {
             if (
                 this.profil.hasSymptomesActuelsReconnus() ||
                 this.profil.symptomes_passes
@@ -312,11 +312,11 @@ export default class AlgorithmeOrientation {
 
     conseilsPersonnelsBlockNamesToDisplay() {
         const blockNames = []
-        if (this.profil.estPositif()) {
+        if (this.profil.depistagePositifRecent()) {
             blockNames.push('reponse-depistage-positif')
-        } else if (this.profil.estNegatif()) {
+        } else if (this.profil.depistageNegatifRecent()) {
             blockNames.push('reponse-depistage-negatif')
-        } else if (this.profil.estEnAttente()) {
+        } else if (this.profil.depistageEnAttenteRecent()) {
             blockNames.push('reponse-depistage-en-attente')
         } else if (this.profil.sansDepistage()) {
             blockNames.push('reponse-depistage-sans')
@@ -328,12 +328,13 @@ export default class AlgorithmeOrientation {
     isolementBlockNamesToDisplay() {
         const blockNames = []
         if (
-            this.profil.estPositif() ||
-            (this.profil.estNegatif() && this.profil.hasContactARisqueReconnus()) ||
-            (this.profil.estEnAttente() && this.risqueDInfection) ||
+            this.profil.depistagePositifRecent() ||
+            (this.profil.depistageNegatifRecent() &&
+                this.profil.hasContactARisqueReconnus()) ||
+            (this.profil.depistageEnAttenteRecent() && this.risqueDInfection) ||
             (this.profil.sansDepistage() && this.risqueDInfection)
         ) {
-            if (this.profil.estPositif()) {
+            if (this.profil.depistagePositifRecent()) {
                 blockNames.push('conseils-isolement-depistage-positif')
             } else if (this.profil.hasContactARisqueReconnus()) {
                 blockNames.push('conseils-isolement-contact-a-risque')
@@ -347,11 +348,14 @@ export default class AlgorithmeOrientation {
 
     depistageBlockNamesToDisplay() {
         const blockNames = []
-        if (this.profil.estPositif() || this.profil.estNegatif()) {
+        if (
+            this.profil.depistagePositifRecent() ||
+            this.profil.depistageNegatifRecent()
+        ) {
             // rien
         } else {
             blockNames.push('conseils-tests')
-            if (this.profil.estEnAttente()) {
+            if (this.profil.depistageEnAttenteRecent()) {
                 blockNames.push('conseils-tests-resultats')
             } else {
                 blockNames.push('conseils-tests-general')
@@ -359,7 +363,7 @@ export default class AlgorithmeOrientation {
         }
         // Cas très particulier antigénique faux négatif.
         if (
-            this.profil.estNegatif() &&
+            this.profil.depistageNegatifRecent() &&
             typeof this.profil.depistage_type !== 'undefined' &&
             this.profil.depistage_type === 'antigenique' &&
             this.personneFragile &&
