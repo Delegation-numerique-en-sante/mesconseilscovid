@@ -5,13 +5,55 @@ import AlgorithmeOrientation from '../algorithme/orientation.js'
 import Profil from '../profil.js'
 
 describe('Frise chronologique sur l’isolement', function () {
-    describe('Frise chronologique sur l’isolement', function () {
+    describe('Pas de frise', function () {
         it('La frise ne s’affiche pas par défaut', function () {
             const profil = new Profil('mes_infos', {})
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [])
         })
 
+        it('La frise ne s’affiche pas avec symptômes actuels et dépistage en attente', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+                symptomes_actuels_douleurs: true,
+                depistage: true,
+                depistage_resultat: 'en_attente',
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [])
+        })
+
+        it('La frise ne s’affiche pas avec symptômes passés et dépistage en attente', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_passes: true,
+                depistage: true,
+                depistage_resultat: 'en_attente',
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [])
+        })
+
+        it('La frise ne s’affiche pas avec symptômes actuels et sans dépistage', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+                symptomes_actuels_douleurs: true,
+                depistage: false,
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [])
+        })
+
+        it('La frise ne s’affiche pas avec symptômes passés et sans dépistage', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_passes: true,
+                depistage: false,
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [])
+        })
+    })
+
+    describe('Frise dynamique n°1 : positif avec symptômes', function () {
         it('La frise n°1 s’affiche avec symptômes actuels et dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
@@ -21,7 +63,7 @@ describe('Frise chronologique sur l’isolement', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-avec-symptomes',
+                'conseils-timeline-isolement-positif-avec-symptomes',
             ])
         })
 
@@ -33,58 +75,12 @@ describe('Frise chronologique sur l’isolement', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-avec-symptomes',
+                'conseils-timeline-isolement-positif-avec-symptomes',
             ])
         })
+    })
 
-        it('La frise n°1 s’affiche avec symptômes actuels et dépistage en attente', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_actuels: true,
-                symptomes_actuels_douleurs: true,
-                depistage: true,
-                depistage_resultat: 'en_attente',
-            })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-avec-symptomes',
-            ])
-        })
-
-        it('La frise n°1 s’affiche avec symptômes passés et dépistage en attente', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_passes: true,
-                depistage: true,
-                depistage_resultat: 'en_attente',
-            })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-avec-symptomes',
-            ])
-        })
-
-        it('La frise n°1 s’affiche avec symptômes actuels et sans dépistage', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_actuels: true,
-                symptomes_actuels_douleurs: true,
-                depistage: false,
-            })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-avec-symptomes',
-            ])
-        })
-
-        it('La frise n°1 s’affiche avec symptômes passés et sans dépistage', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_passes: true,
-                depistage: false,
-            })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-avec-symptomes',
-            ])
-        })
-
+    describe('Frise dynamique n°2 : positif sans symptômes', function () {
         it('La frise n°2 s’affiche avec contact à risque et dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 contact_a_risque: true,
@@ -94,7 +90,7 @@ describe('Frise chronologique sur l’isolement', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-sans-symptomes',
+                'conseils-timeline-isolement-positif-sans-symptomes',
             ])
         })
 
@@ -107,7 +103,7 @@ describe('Frise chronologique sur l’isolement', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-sans-symptomes',
+                'conseils-timeline-isolement-positif-sans-symptomes',
             ])
         })
 
@@ -120,7 +116,7 @@ describe('Frise chronologique sur l’isolement', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-sans-symptomes',
+                'conseils-timeline-isolement-positif-sans-symptomes',
             ])
         })
 
@@ -131,10 +127,12 @@ describe('Frise chronologique sur l’isolement', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-sans-symptomes',
+                'conseils-timeline-isolement-positif-sans-symptomes',
             ])
         })
+    })
 
+    describe('Frise statique n°3 : je vis avec une personne malade', function () {
         it('La frise n°3 s’affiche avec contact à risque même lieu de vie et dépistage négatif', function () {
             const profil = new Profil('mes_infos', {
                 contact_a_risque: true,
