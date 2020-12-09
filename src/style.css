@@ -488,8 +488,9 @@ main footer .legals {
     background-color: #fff;
     background-position: top left;
     background-repeat: no-repeat;
-    width: 6.5rem;
-    height: 3rem;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
     border: 2px solid #000091;
     margin-top: 0.9rem;
     margin-left: 0.5rem;
@@ -551,8 +552,8 @@ main footer .legals {
 .timeline-vousetesici .timeline-icon {
     border-width: 5px;
     border-radius: 200px;
-    width: 5.5rem;
-    height: 2.5rem;
+    width: 40px;
+    height: 40px;
     margin-left: 13px;
     margin-top: 17px;
 }
