@@ -266,7 +266,7 @@ function dynamicTimelineDataInjection(element, profil) {
     fillDate('exposition', `À partir du ${formatDate(dateExposition)}`)
     fillDate('contagiosite', formatDate(dateContagiosite))
     fillDate('isolement', msgIsolement)
-    fillDate('vousetesici', `Aujourd’hui (${formatDate(new Date())})`)
+    fillDate('vousetesici', `${formatDate(new Date())} (aujourd’hui)`)
     fillDate('fin', `À partir du ${formatDate(dateFin)}`)
 
     if (profil.suiviAujourdhui()) {
