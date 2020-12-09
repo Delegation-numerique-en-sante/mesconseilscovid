@@ -495,8 +495,8 @@ main footer .legals {
     width: 44px;
     height: 44px;
     border: 2px solid #000091;
-    margin-top: 0.9rem;
-    margin-left: 0.5rem;
+    margin-top: 17px;
+    margin-left: 5px;
     font-size: 28px;
     line-height: 1;
     padding: 7px 0 0 6px;
@@ -551,8 +551,7 @@ main footer .legals {
     border-radius: 200px;
     width: 40px;
     height: 40px;
-    margin-left: 10px;
-    margin-top: 17px;
+    margin-left: 7px;
 }
 .timeline-vousetesici .timeline-icon::after {
     content: '';
@@ -563,7 +562,7 @@ main footer .legals {
     height: 14px;
     border-radius: 100px;
     top: 30px;
-    left: 23px;
+    left: 20px;
     transform: rotate(45);
 }
 
