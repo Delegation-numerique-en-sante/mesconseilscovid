@@ -6,7 +6,8 @@ Nous vous conseillons de :
 * **aérer régulièrement** si vous êtes en intérieur (10 minutes toutes les heures),
 * réaliser **un test** en cas de doute.
 
-Pour vos **repas de fêtes,** nil est recommandé de :
+Pour vos **repas de fêtes**, il est recommandé de :
+
 * **minimiser le nombre** de convives,
 * mettre **un masque** lors de la préparation des plats,
 * vous **laver** régulièrement **les mains**,
