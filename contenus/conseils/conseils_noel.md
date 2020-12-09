@@ -1,14 +1,14 @@
 <span class="nouveau">nouveau</span> Lors de vos rencontres de fin d’année, il est recommandé de ne pas se réunir à plus de **6 adultes**.
 
-Nous vous conseillons de :
-* porter **un masque**,
-* **aérer régulièrement** si vous êtes en intérieur (10 minutes toutes les heures),
-* réaliser **un test** en cas de doute.
-
 Pour vos **repas de fêtes**, il est recommandé de :
 
 * **minimiser le nombre** de convives,
 * mettre **un masque** lors de la préparation des plats,
 * vous **laver** régulièrement **les mains** particulièrement avant et après la préparation des repas,
 * **aérer régulièrement** avant, pendant et après le repas (10 minutes toutes les heures),
-* au moindre symptôme (fièvre, toux,… ) **restez chez vous**
+* espacer au maximum les convives à table,
+* faire le service à l'assiette, 
+* réaliser **un test** en cas de doute,
+* au moindre symptôme (fièvre, toux,… ) **restez chez vous**.
+
+Dans la mesure du possible, nous vous invitons à passer les fêtes de Noël et du nouvel an avec les mêmes personnes. 
