@@ -1,6 +1,6 @@
 <span class="nouveau">nouveau</span> Lors de vos rencontres de fin d’année, il est recommandé de ne pas se réunir à plus de **6 adultes**.
 
-Nous vous conseillons de :
+Nous vous conseillons de :
 * favoriser les rencontres **en extérieur**,
 * porter **un masque**,
 * **aérer régulièrement** si vous êtes en intérieur (10 minutes toutes les heures),
