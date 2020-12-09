@@ -292,25 +292,18 @@ export default class AlgorithmeOrientation {
 
     timelineBlockNamesToDisplay() {
         const blockNames = []
-        if (
-            (this.profil.hasSymptomesActuelsReconnus() ||
-                this.profil.symptomes_passes) &&
-            (this.profil.estPositif() ||
-                this.profil.estEnAttente() ||
-                this.profil.sansDepistage())
-        ) {
-            blockNames.push('conseils-timeline-isolement-avec-symptomes')
+        if (this.profil.estPositif()) {
+            if (
+                this.profil.hasSymptomesActuelsReconnus() ||
+                this.profil.symptomes_passes
+            ) {
+                blockNames.push('conseils-timeline-isolement-positif-avec-symptomes')
+            } else {
+                blockNames.push('conseils-timeline-isolement-positif-sans-symptomes')
+            }
         } else if (
-            !this.profil.hasSymptomesActuelsReconnus() &&
-            !this.profil.symptomes_passes &&
-            this.profil.estPositif()
-        ) {
-            blockNames.push('conseils-timeline-isolement-sans-symptomes')
-        }
-        if (
             this.profil.hasContactARisqueReconnus() &&
-            this.profil.contact_a_risque_meme_lieu_de_vie &&
-            !this.profil.estPositif()
+            this.profil.contact_a_risque_meme_lieu_de_vie
         ) {
             blockNames.push('conseils-timeline-isolement-foyer-malade')
         }
