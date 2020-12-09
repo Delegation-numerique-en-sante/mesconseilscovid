@@ -31,6 +31,11 @@ export function hideSelector(element, selector) {
     ;[].forEach.call(element.querySelectorAll(selector), hideElement)
 }
 
+export function showSelector(element, selector) {
+    // eslint-disable-next-line no-extra-semi
+    ;[].forEach.call(element.querySelectorAll(selector), showElement)
+}
+
 export function displayElementById(element, id) {
     var block = element.querySelector('#' + id)
     if (!block) return

@@ -15,6 +15,7 @@ import {
     hideSelector,
     showElement,
     showMeOrThem,
+    showSelector,
 } from '../affichage.js'
 import * as injection from '../injection.js'
 import { joursAvant, joursApres } from '../utils.js'
@@ -269,19 +270,17 @@ function dynamicTimelineDataInjection(element, profil) {
     fillDate('vousetesici', `${formatDate(new Date())} (aujourd’hui)`)
     fillDate('fin', `À partir du ${formatDate(dateFin)}`)
 
+    // Si on a fait le suivi aujourd’hui, on confirme et on dit de revenir demain
     if (profil.suiviAujourdhui()) {
-        const suiviStatut = document.querySelector('#suivi div:not([hidden])')
-        if (suiviStatut) {
-            // eslint-disable-next-line no-extra-semi
-            ;[].forEach.call(
-                element.querySelectorAll(
-                    '.timeline .timeline-vousetesici .timeline-texte'
-                ),
-                (elem) => {
-                    elem.textContent = suiviStatut.textContent.trim()
-                }
-            )
-        }
+        hideSelector(
+            element,
+            '.timeline .timeline-vousetesici .timeline-texte .suivi-a-faire'
+        )
+        showSelector(
+            element,
+            '.timeline .timeline-vousetesici .timeline-texte .suivi-fait'
+        )
+        showSelector(element, '.timeline .timeline-demain')
     }
 
     if (profil.depistagePositifRecentAsymptomatique()) {
