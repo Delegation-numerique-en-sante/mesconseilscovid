@@ -1,4 +1,4 @@
-<span class="nouveau">nouveau</span> Lors de vos rencontres de fin d'année, il est recommandé de ne pas dépasser une jauge de **6 adultes.**
+<span class="nouveau">nouveau</span> Lors de vos rencontres de fin d’année, il est recommandé de ne pas se réunir à plus de **6 adultes**.
 
 Nous vous conseillons de :
 * favoriser les rencontres **en extérieur**,
