@@ -525,7 +525,7 @@ main footer .legals {
 .timeline-content .timeline-texte {
     border-left: 2px solid #000091;
     padding: 0.2rem 0.4rem;
-    background: #e5e7ef;
+    background: #e9ecf7;
 }
 
 .timeline-contagiosite .timeline-icon {
@@ -536,7 +536,7 @@ main footer .legals {
 }
 .timeline-contagiosite .timeline-content .timeline-texte {
     border-color: #fe6f4c;
-    background: #ffb6a5;
+    background: #ffe7e1;
 }
 
 .timeline-aujourdhui {
@@ -569,7 +569,7 @@ main footer .legals {
     background: #00ac8c;
 }
 .timeline-fin .timeline-content .timeline-texte {
-    background: #c3f6ec;
+    background: #e0fff9;
     border-color: #00ac8c;
 }
 
