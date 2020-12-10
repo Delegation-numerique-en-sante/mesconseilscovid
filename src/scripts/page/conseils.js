@@ -36,8 +36,8 @@ export default function conseils(element, app) {
     var algoOrientation = new AlgorithmeOrientation(app.profil)
 
     // Première complétion du formulaire ?
-    if (!app.profil.questionnaire_completed) {
-        app.profil.questionnaire_completed = true
+    if (typeof app.profil.questionnaire_completion_date === 'undefined') {
+        app.profil.questionnaire_completion_date = new Date()
         app.enregistrerProfilActuel()
         window.plausible(`Questionnaire terminé`)
     }
