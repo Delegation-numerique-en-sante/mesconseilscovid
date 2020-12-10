@@ -495,7 +495,7 @@ main footer .legals {
     width: 44px;
     height: 44px;
     border: 2px solid #000091;
-    margin-top: 17px;
+    margin-top: 23px;
     margin-left: 5px;
     font-size: 28px;
     line-height: 1;
@@ -514,7 +514,7 @@ main footer .legals {
     width: 16px;
     height: 2px;
     left: -16px;
-    top: 36px;
+    top: 43px;
     transform: rotate(45);
 }
 .timeline-content p {
@@ -561,7 +561,7 @@ main footer .legals {
     width: 14px;
     height: 14px;
     border-radius: 100px;
-    top: 30px;
+    top: 36px;
     left: 20px;
     transform: rotate(45);
 }
