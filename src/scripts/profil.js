@@ -622,6 +622,10 @@ export default class Profil {
         return this.hasSymptomesActuelsReconnus() && this.depistageNegatifRecent()
     }
 
+    depistagePositifRecentSymptomatique() {
+        return this.hasSymptomesActuelsReconnus() && this.depistagePositifRecent()
+    }
+
     depistagePositifRecentAsymptomatique() {
         return this.symptomes_actuels === false && this.depistagePositifRecent()
     }
