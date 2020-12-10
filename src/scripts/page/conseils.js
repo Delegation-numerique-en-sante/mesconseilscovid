@@ -267,18 +267,18 @@ function dynamicTimelineDataInjection(element, profil) {
     fillDate('exposition', `À partir du ${formatDate(dateExposition)}`)
     fillDate('contagiosite', formatDate(dateContagiosite))
     fillDate('isolement', msgIsolement)
-    fillDate('vousetesici', `${formatDate(new Date())} (aujourd’hui)`)
+    fillDate('aujourdhui', `${formatDate(new Date())} (aujourd’hui)`)
     fillDate('fin', `À partir du ${formatDate(dateFin)}`)
 
     // Si on a fait le suivi aujourd’hui, on confirme et on dit de revenir demain
     if (profil.suiviAujourdhui()) {
         hideSelector(
             element,
-            '.timeline .timeline-vousetesici .timeline-texte .suivi-a-faire'
+            '.timeline .timeline-aujourdhui .timeline-texte .suivi-a-faire'
         )
         showSelector(
             element,
-            '.timeline .timeline-vousetesici .timeline-texte .suivi-fait'
+            '.timeline .timeline-aujourdhui .timeline-texte .suivi-fait'
         )
         showSelector(element, '.timeline .timeline-demain')
     }
@@ -289,7 +289,7 @@ function dynamicTimelineDataInjection(element, profil) {
             // eslint-disable-next-line no-extra-semi
             ;[].forEach.call(
                 element.querySelectorAll(
-                    '.timeline .timeline-vousetesici .timeline-texte'
+                    '.timeline .timeline-aujourdhui .timeline-texte'
                 ),
                 (elem) => {
                     elem.textContent = suiviStatut.textContent.trim()
