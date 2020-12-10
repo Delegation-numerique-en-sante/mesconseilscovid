@@ -2,6 +2,7 @@
 
 Pour vos **repas de fêtes**, il est recommandé de :
 
+* prévoir un temps de **discussion avec vos proches** pour l'organisation des fêtes
 * **minimiser le nombre** de convives,
 * mettre **un masque** lors de la préparation des plats,
 * vous **laver** régulièrement **les mains** particulièrement avant et après la préparation des repas,
