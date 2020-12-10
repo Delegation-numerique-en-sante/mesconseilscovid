@@ -25,7 +25,6 @@ export default class Profil {
     }
 
     set symptomes_start_date(date) {
-        // Turn the date into a readable string.
         this._symptomes_start_date =
             typeof date !== 'undefined' ? date.toJSON() : undefined
     }
@@ -36,7 +35,6 @@ export default class Profil {
     }
 
     set depistage_start_date(date) {
-        // Turn the date into a readable string.
         this._depistage_start_date =
             typeof date !== 'undefined' ? date.toJSON() : undefined
     }
@@ -48,6 +46,26 @@ export default class Profil {
 
     set deconfinement_date(date) {
         this._deconfinement_date =
+            typeof date !== 'undefined' ? date.toJSON() : undefined
+    }
+
+    get questionnaire_start_date() {
+        if (typeof this._questionnaire_start_date === 'undefined') return undefined
+        return new Date(this._questionnaire_start_date)
+    }
+
+    set questionnaire_start_date(date) {
+        this._questionnaire_start_date =
+            typeof date !== 'undefined' ? date.toJSON() : undefined
+    }
+
+    get questionnaire_completion_date() {
+        if (typeof this._questionnaire_completion_date === 'undefined') return undefined
+        return new Date(this._questionnaire_completion_date)
+    }
+
+    set questionnaire_completion_date(date) {
+        this._questionnaire_completion_date =
             typeof date !== 'undefined' ? date.toJSON() : undefined
     }
 
@@ -117,8 +135,13 @@ export default class Profil {
         this.suivi_active = false
         this.resetSuivi()
 
+        // Legacy: to be removed once migrated.
         this.questionnaire_started = false
         this.questionnaire_completed = false
+        // End of Legacy
+
+        this._questionnaire_start_date = undefined
+        this._questionnaire_completion_date = undefined
     }
 
     fillData(data) {
@@ -183,8 +206,62 @@ export default class Profil {
         this.suivi_active = data['suivi_active'] || false
         this.suivi = data['suivi'] || []
 
+        // Legacy
         this.fillQuestionnaireStarted(data['questionnaire_started'])
         this.fillQuestionnaireCompleted(data['questionnaire_completed'])
+
+        this.fillQuestionnaireStartDate(data['_questionnaire_start_date'])
+        this.fillQuestionnaireCompletionDate(data['_questionnaire_completion_date'])
+        // End of Legacy
+
+        /* At some point we would want to do instead:
+        this._questionnaire_start_date = data['_questionnaire_start_date']
+        this._questionnaire_completion_date = data['_questionnaire_completion_date']
+        */
+    }
+
+    // Legacy: at some point we will want to remove this method.
+    fillQuestionnaireStarted(value) {
+        if (typeof value !== 'undefined') {
+            this.questionnaire_started = value
+        } else {
+            // Migration d’un ancien profil : calculer la donnée manquante
+            this.questionnaire_started = !this.isEmpty()
+        }
+    }
+
+    // Legacy: at some point we will want to remove this method.
+    fillQuestionnaireCompleted(value) {
+        if (typeof value !== 'undefined') {
+            this.questionnaire_completed = value
+        } else {
+            // Migration d’un ancien profil : calculer la donnée manquante
+            this.questionnaire_completed = this.isComplete()
+        }
+    }
+
+    // Legacy: at some point we will want to remove this method.
+    fillQuestionnaireStartDate(value) {
+        if (typeof value !== 'undefined') {
+            this._questionnaire_start_date = value
+        } else {
+            // Migration d’un ancien profil : calculer la donnée manquante
+            this.questionnaire_start_date = this.questionnaire_started
+                ? new Date()
+                : undefined
+        }
+    }
+
+    // Legacy: at some point we will want to remove this method.
+    fillQuestionnaireCompletionDate(value) {
+        if (typeof value !== 'undefined') {
+            this._questionnaire_completion_date = value
+        } else {
+            // Migration d’un ancien profil : calculer la donnée manquante
+            this.questionnaire_completion_date = this.questionnaire_completed
+                ? new Date()
+                : undefined
+        }
     }
 
     fillTestData(depistage, symptomes, personneFragile, foyerFragile) {
@@ -292,24 +369,6 @@ export default class Profil {
         return this.fillData(data)
     }
 
-    fillQuestionnaireStarted(value) {
-        if (typeof value !== 'undefined') {
-            this.questionnaire_started = value
-        } else {
-            // Migration d’un ancien profil : calculer la donnée manquante
-            this.questionnaire_started = !this.isEmpty()
-        }
-    }
-
-    fillQuestionnaireCompleted(value) {
-        if (typeof value !== 'undefined') {
-            this.questionnaire_completed = value
-        } else {
-            // Migration d’un ancien profil : calculer la donnée manquante
-            this.questionnaire_completed = this.isComplete()
-        }
-    }
-
     getData() {
         return {
             departement: this.departement,
@@ -364,6 +423,8 @@ export default class Profil {
             suivi: this.suivi,
             questionnaire_started: this.questionnaire_started,
             questionnaire_completed: this.questionnaire_completed,
+            _questionnaire_start_date: this._questionnaire_start_date,
+            _questionnaire_completion_date: this._questionnaire_completion_date,
         }
     }
 

@@ -6,8 +6,8 @@ import {
 
 export default function symptomesactuels(form, app) {
     // Premier démarrage du formulaire ?
-    if (!app.profil.questionnaire_started) {
-        app.profil.questionnaire_started = true
+    if (typeof app.profil.questionnaire_start_date === 'undefined') {
+        app.profil.questionnaire_start_date = new Date()
         app.enregistrerProfilActuel()
         window.plausible(`Questionnaire commencé`)
     }

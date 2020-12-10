@@ -63,6 +63,8 @@ describe('Profil', function () {
             suivi: [],
             questionnaire_started: false,
             questionnaire_completed: false,
+            _questionnaire_start_date: undefined,
+            _questionnaire_completion_date: undefined,
         })
         assert.isFalse(profil.isComplete())
         assert.isTrue(profil.isEmpty())
@@ -181,6 +183,8 @@ describe('Profil', function () {
             suivi: [],
             questionnaire_started: true,
             questionnaire_completed: true,
+            _questionnaire_start_date: '2020-07-09T14:03:41.000Z',
+            _questionnaire_completion_date: '2020-07-09T14:03:41.000Z',
         }
         profil.fillData(data)
         assert.deepEqual(profil.getData(), data)
@@ -243,6 +247,8 @@ describe('Profil', function () {
             suivi: [],
             questionnaire_started: true,
             questionnaire_completed: true,
+            _questionnaire_start_date: '2020-07-09T14:03:41.000Z',
+            _questionnaire_completion_date: '2020-07-09T14:03:41.000Z',
         }
         profil.fillData(data)
         assert.deepEqual(profil.getData(), data)
@@ -303,6 +309,8 @@ describe('Profil', function () {
             suivi: [{ foo: 'bar' }],
             questionnaire_started: true,
             questionnaire_completed: true,
+            _questionnaire_start_date: '2020-07-09T14:03:41.000Z',
+            _questionnaire_completion_date: '2020-07-09T14:03:41.000Z',
         })
         profil.resetData()
         assert.deepEqual(profil.getData(), {
@@ -357,6 +365,8 @@ describe('Profil', function () {
             suivi: [],
             questionnaire_started: false,
             questionnaire_completed: false,
+            _questionnaire_start_date: undefined,
+            _questionnaire_completion_date: undefined,
         })
         assert.isFalse(profil.isComplete())
         assert.isTrue(profil.isEmpty())
@@ -415,6 +425,8 @@ describe('Profil', function () {
             suivi: [{ foo: 'bar' }],
             questionnaire_started: true,
             questionnaire_completed: true,
+            _questionnaire_start_date: '2020-07-09T14:03:41.000Z',
+            _questionnaire_completion_date: '2020-07-09T14:03:41.000Z',
         })
         profil.resetSuivi()
         assert.deepEqual(profil.getData(), {
@@ -469,6 +481,8 @@ describe('Profil', function () {
             suivi: [],
             questionnaire_started: true,
             questionnaire_completed: true,
+            _questionnaire_start_date: '2020-07-09T14:03:41.000Z',
+            _questionnaire_completion_date: '2020-07-09T14:03:41.000Z',
         })
         assert.isTrue(profil.isComplete())
         assert.isFalse(profil.isEmpty())
@@ -477,24 +491,30 @@ describe('Profil', function () {
     it('Le questionnaire n’est pas commencé par défaut', function () {
         var profil = new Profil('mes_infos')
         assert.isFalse(profil.questionnaire_started)
+        assert.isUndefined(profil.questionnaire_start_date)
     })
 
     it('Le questionnaire n’est pas terminé par défaut', function () {
         var profil = new Profil('mes_infos')
         assert.isFalse(profil.questionnaire_completed)
+        assert.isUndefined(profil.questionnaire_completion_date)
     })
     it('Le questionnaire n’est pas commencé après réinitialisation', function () {
         var profil = new Profil('mes_infos')
         profil.questionnaire_started = true
+        profil.questionnaire_start_date = new Date()
         profil.resetData()
         assert.isFalse(profil.questionnaire_started)
+        assert.isUndefined(profil.questionnaire_start_date)
     })
 
     it('Le questionnaire n’est pas terminé après réinitialisation', function () {
         var profil = new Profil('mes_infos')
         profil.questionnaire_completed = true
+        profil.questionnaire_start_date = new Date()
         profil.resetData()
         assert.isFalse(profil.questionnaire_completed)
+        assert.isUndefined(profil.questionnaire_completion_date)
     })
 
     it('Le questionnaire est commencé si on a au moins une réponse', function () {
@@ -502,6 +522,8 @@ describe('Profil', function () {
             departement: '80',
         })
         assert.isTrue(profil.questionnaire_started)
+        assert.isString(profil._questionnaire_start_date)
+        assert.instanceOf(profil.questionnaire_start_date, Date)
     })
 
     it('Le questionnaire est terminé si on a toutes les réponses', function () {
@@ -549,6 +571,7 @@ describe('Profil', function () {
             depistage: false,
         })
         assert.isTrue(profil.questionnaire_completed)
+        assert.instanceOf(profil.questionnaire_completion_date, Date)
         assert.isFalse(profil.estPositifAsymptomatique())
     })
 })
