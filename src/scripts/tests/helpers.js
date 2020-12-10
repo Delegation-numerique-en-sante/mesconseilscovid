@@ -44,7 +44,6 @@ export function createProfil({
     antecedent_cirrhose = false,
     antecedent_drepano = false,
     antecedent_chronique_autre = false,
-    _symptomes_start_date = '2020-07-09T14:03:41.000Z',
 } = {}) {
     return new Profil('mes_infos', {
         symptomes_actuels: symptomes_actuels,
@@ -90,6 +89,5 @@ export function createProfil({
         antecedent_cirrhose: antecedent_cirrhose,
         antecedent_drepano: antecedent_drepano,
         antecedent_chronique_autre: antecedent_chronique_autre,
-        _symptomes_start_date: _symptomes_start_date,
     })
 }

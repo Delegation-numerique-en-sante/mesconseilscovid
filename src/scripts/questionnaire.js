@@ -6,6 +6,10 @@ export function beforeSuiviIntroduction(profil, questionnaire) {
     if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
 }
 
+export function beforeDebutSymptomes(profil, questionnaire) {
+    if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
+}
+
 export function beforeSuiviSymptomes(profil, questionnaire) {
     if (!profil.symptomes_start_date) return 'debutsymptomes'
     if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
@@ -21,7 +25,6 @@ export const ORDRE = [
     'symptomesactuels',
     'symptomespasses',
     'contactarisque',
-    'debutsymptomes',
     'depistage',
     'residence',
     'foyer',
@@ -40,7 +43,12 @@ export const TRANSITIONS = {
         next: {
             debutsymptomes: (profil) =>
                 profil.isSymptomesActuelsComplete() &&
-                profil.hasSymptomesActuelsReconnus(),
+                profil.hasSymptomesActuelsReconnus() &&
+                !profil.hasSuiviStartDate(),
+            depistage: (profil) =>
+                profil.isSymptomesActuelsComplete() &&
+                profil.hasSymptomesActuelsReconnus() &&
+                profil.hasSuiviStartDate(),
             symptomespasses: (profil) => profil.isSymptomesActuelsComplete(),
         },
     },
@@ -48,7 +56,13 @@ export const TRANSITIONS = {
         previous: { symptomesactuels: () => true },
         next: {
             debutsymptomes: (profil) =>
-                profil.isSymptomesPassesComplete() && profil.symptomes_passes,
+                profil.isSymptomesPassesComplete() &&
+                profil.symptomes_passes &&
+                !profil.hasSuiviStartDate(),
+            depistage: (profil) =>
+                profil.isSymptomesPassesComplete() &&
+                profil.symptomes_passes &&
+                profil.hasSuiviStartDate(),
             contactarisque: (profil) => profil.isSymptomesPassesComplete(),
         },
     },
@@ -64,12 +78,12 @@ export const TRANSITIONS = {
             symptomespasses: (profil) => profil.symptomes_passes,
         },
         next: {
-            depistage: (profil) => profil.isDebutSymptomesComplete(),
+            residence: (profil) => profil.hasSuiviStartDate(),
         },
     },
     depistage: {
         previous: {
-            debutsymptomes: (profil) => profil.isDebutSymptomesComplete(),
+            debutsymptomes: (profil) => profil.hasSuiviStartDate(),
             contactarisque: (profil) => profil.isContactARisqueComplete(),
         },
         next: {

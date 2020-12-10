@@ -71,6 +71,7 @@ export default class Profil {
 
     resetSuivi() {
         this._suivi_start_date = undefined
+        this._symptomes_start_date = undefined
         this._deconfinement_date = undefined
         this.suivi = []
     }
@@ -125,8 +126,6 @@ export default class Profil {
         this.contact_a_risque_meme_classe = undefined
         this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_autre = undefined
-
-        this._symptomes_start_date = undefined
 
         this.depistage = undefined
         this.depistage_type = undefined
@@ -512,14 +511,6 @@ export default class Profil {
         return typeof this.depistage !== 'undefined'
     }
 
-    isDebutSymptomesComplete() {
-        if (this.hasSymptomesActuelsReconnus() || this.symptomes_passes) {
-            return this.hasSymptomesStartDate()
-        } else {
-            return true
-        }
-    }
-
     isComplete() {
         return (
             this.isResidenceComplete() &&
@@ -530,8 +521,7 @@ export default class Profil {
             this.isSymptomesActuelsComplete() &&
             this.isSymptomesPassesComplete() &&
             this.isContactARisqueComplete() &&
-            this.isDepistageComplete() &&
-            this.isDebutSymptomesComplete()
+            this.isDepistageComplete()
         )
     }
 
