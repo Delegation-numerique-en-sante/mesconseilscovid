@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@babel/core": "^7.12.9",
+    "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.7",
     "@babel/register": "^7.12.1",
     "@mermaid-js/mermaid-cli": "^8.8.1",
