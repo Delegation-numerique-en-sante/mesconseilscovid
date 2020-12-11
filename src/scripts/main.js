@@ -1,4 +1,6 @@
 // Polyfills pour ES2015+
+import 'core-js/features/array/from'
+import 'core-js/features/object/assign'
 import 'core-js/features/promise'
 
 // Polyfills pour les API du navigateur

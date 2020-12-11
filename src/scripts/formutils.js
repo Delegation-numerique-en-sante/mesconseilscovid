@@ -38,6 +38,13 @@ class Form {
     }
 }
 
+export function getRadioValue(form, key) {
+    const elem = form.querySelector(`input[name="${key}"]:checked`)
+    if (elem) {
+        return elem.value
+    }
+}
+
 export function preloadForm(form, key, profil) {
     const value = profil.getData()[key]
     if (typeof value !== 'undefined' && value !== '') {

@@ -1,5 +1,6 @@
 import { addDatePickerPolyfill } from '../datepicker'
 import { hideElement } from '../affichage.js'
+import { getRadioValue } from '../formutils.js'
 import { joursAvant } from '../utils.js'
 
 export default function debutsymptomes(form, app) {
@@ -34,7 +35,7 @@ export default function debutsymptomes(form, app) {
         event.preventDefault()
         app.profil.symptomes_start_date =
             dateFromPicker(event.target.elements['suivi_symptomes_date_exacte']) ||
-            dateFromRadioButton(event.target.elements['suivi_symptomes_date'])
+            dateFromRadioButton(getRadioValue(event.target, 'suivi_symptomes_date'))
 
         // Enregistre le démarrage du suivi
         if (!app.profil.hasSuiviStartDate()) {
@@ -80,9 +81,9 @@ function dateFromPicker(element) {
     }
 }
 
-function dateFromRadioButton(element) {
+function dateFromRadioButton(value) {
     let delta
-    switch (element.value) {
+    switch (value) {
         case 'aujourdhui':
             delta = 0
             break
