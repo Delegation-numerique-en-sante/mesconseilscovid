@@ -1,10 +1,6 @@
-<span class="nouveau">nouveau</span> Le confinement est dorénavant adapté :
+<span class="nouveau">nouveau</span> Un **couvrefeu** s'applique de 20h à 06h du matin, sauf pour la soirée du 24 décembre. En journée, les autorisations de sortie ne sont plus obligatoires.
 
-* les activités physiques et les promenades sont autorisées dans un rayon de 20 kilomètres et pour une durée maximum de 3 heures ;
-* les activités extra-scolaires sont autorisées en plein air ;
-* les commerces et services à domicile sont ouverts jusqu’à 21h00 dans le cadre d’un protocole sanitaire strict dont les librairies, les disquaires ou encore les bibliothèques.
-
-Pour plus d’informations sur **les mesures du confinement**, vous pouvez consulter :
+Pour plus d’informations, vous pouvez consulter :
 
 * [la page dédiée du site du gouvernement](https://www.gouvernement.fr/info-coronavirus/confinement) ;
 * les règles spécifiques de votre **département** sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
