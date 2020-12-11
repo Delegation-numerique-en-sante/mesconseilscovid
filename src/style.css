@@ -467,11 +467,12 @@ main footer .legals {
 }
 
 .timeline-container {
-    padding: 1rem 0 4rem 0;
+    padding: 1rem 0 2rem 0;
     margin: 1rem auto;
-    width: 20rem;
+    width: 320px;
     background-image: url('timeline-arrow.svg');
-    background-position: 7px bottom;
+    background-size: 80%;
+    background-position: 4px bottom;
     background-repeat: no-repeat;
     font-size: 90%;
 }
@@ -484,18 +485,15 @@ main footer .legals {
 }
 .timeline-icon {
     background-color: #fff;
-    background-position: top left;
-    background-repeat: no-repeat;
     flex-shrink: 0;
     width: 44px;
     height: 44px;
     border: 2px solid #000091;
     border-radius: 8px;
     margin-top: 23px;
-    margin-left: 5px;
-    font-size: 28px;
-    line-height: 1;
-    padding: 7px 0 0 6px;
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
 }
 .timeline-content {
     margin-left: 1rem;
@@ -547,7 +545,7 @@ main footer .legals {
     border-radius: 200px;
     width: 40px;
     height: 40px;
-    margin-left: 7px;
+    margin-left: 3px;
 }
 .timeline-aujourdhui .timeline-icon::after {
     content: '';
@@ -558,7 +556,7 @@ main footer .legals {
     height: 14px;
     border-radius: 100px;
     top: 36px;
-    left: 20px;
+    left: 16px;
     transform: rotate(45);
 }
 
