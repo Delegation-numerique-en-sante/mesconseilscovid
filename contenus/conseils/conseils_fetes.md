@@ -1,8 +1,8 @@
 <span class="nouveau">nouveau</span> Lors de vos rencontres de fin d’année, nous vous conseillons de :
 
-* prévoir un temps de **discussion avec vos proches** pour l’organisation des fêtes dans le contexte de l'épidémie,
+* prévoir un temps de **discussion avec vos proches** pour l’organisation des fêtes dans le contexte de l’épidémie,
 * éviter de vous réunir à plus de **6 adultes**,
-* ne pas serrez les mains, faire la bise ou prendre dans les bras, 
+* ne pas serrer les mains, faire la bise ou prendre dans les bras, 
 * porter un **masque** et **aérer régulièrement** si vous êtes en intérieur (10 minutes toutes les heures),
 * réaliser **un test** en cas de doute,
 * et au moindre symptôme (fièvre, toux… ) **rester chez soi**.
