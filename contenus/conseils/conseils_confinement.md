@@ -1,6 +1,6 @@
 <div class="conseil conseil-orange">
 
-Un **couvre feu** s’applique sur tout le territoire français métropolitain, sauf la soirée du 24 décembre.
+Un **couvre feu** s’applique sur tout le territoire français métropolitain de 20h à 06h du matin, sauf la soirée du 24 décembre.
 
 </div>
 
