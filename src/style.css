@@ -472,9 +472,8 @@ main footer .legals {
     width: 320px;
     background-image: url('timeline-arrow.svg');
     background-size: 80%;
-    background-position: 4px bottom;
+    background-position: left bottom;
     background-repeat: no-repeat;
-    font-size: 90%;
 }
 
 .timeline-block {
@@ -482,6 +481,7 @@ main footer .legals {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.5rem;
+    margin-left: 1px;
 }
 .timeline-icon {
     background-color: #fff;
@@ -491,6 +491,7 @@ main footer .legals {
     border: 2px solid #000091;
     border-radius: 8px;
     margin-top: 23px;
+    font-family: 'Joy Pixels', 'Apple Color Emoji', 'Noto Sans Emoji', 'Segoe UI Emoji';
     font-size: 27px;
     line-height: 40px;
     text-align: center;
@@ -513,6 +514,7 @@ main footer .legals {
 }
 .timeline-content p {
     margin: 0;
+    font-size: 90%;
 }
 .timeline-content .timeline-date {
     color: #484d7a;
