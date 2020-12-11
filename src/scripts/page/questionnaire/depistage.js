@@ -1,6 +1,7 @@
 import { addDatePickerPolyfill } from '../../datepicker'
 import {
     enableOrDisableSecondaryFields,
+    getRadioValue,
     preloadCheckboxForm,
     toggleFormButtonOnTextFieldsAndRadioRequired,
 } from '../../formutils.js'
@@ -60,14 +61,19 @@ export default function depistage(form, app) {
     // Soumission du formulaire
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        app.profil.depistage = event.target.elements['depistage'].checked
-        app.profil.depistage_start_date = new Date(
-            event.target.elements['depistage_start_date'].value
-        )
-        app.profil.depistage_type =
-            event.target.elements['depistage_type'].value || undefined
-        app.profil.depistage_resultat =
-            event.target.elements['depistage_resultat'].value || undefined
+        const form = event.target
+        app.profil.depistage = form.elements['depistage'].checked
+        if (app.profil.depistage) {
+            app.profil.depistage_start_date = new Date(
+                form.elements['depistage_start_date'].value
+            )
+            app.profil.depistage_type = getRadioValue(form, 'depistage_type')
+            app.profil.depistage_resultat = getRadioValue(form, 'depistage_resultat')
+        } else {
+            app.profil.depistage_start_date = undefined
+            app.profil.depistage_type = undefined
+            app.profil.depistage_resultat = undefined
+        }
 
         app.enregistrerProfilActuel().then(() => {
             app.goToNextPage('depistage')

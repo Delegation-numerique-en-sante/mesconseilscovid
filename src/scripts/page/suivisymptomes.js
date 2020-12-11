@@ -1,6 +1,7 @@
 import { hideElement, showElement } from '../affichage.js'
 import {
     enableOrDisableSecondaryFields,
+    getRadioValue,
     toggleFormButtonOnRadioRequired,
 } from '../formutils.js'
 
@@ -39,25 +40,31 @@ export default function suivisymptomes(form, app) {
     toggleFormButtonOnRadioRequired(form, button.value, uncheckedLabel, requiredLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        const elements = event.target.elements
+        const form = event.target
         let etat = {
             date: new Date().toJSON(),
-            symptomes: elements['suivi_symptomes'].checked,
-            essoufflement: elements['suivi_symptomes_essoufflement'].value,
-            etatGeneral: elements['suivi_symptomes_etat_general'].value,
-            alimentationHydratation:
-                elements['suivi_symptomes_alimentation_hydratation'].value,
-            etatPsychologique: elements['suivi_symptomes_etat_psychologique'].value,
-            fievre: elements['suivi_symptomes_fievre'].value,
-            diarrheeVomissements:
-                elements['suivi_symptomes_diarrhee_vomissements'].value,
-            mauxDeTete: elements['suivi_symptomes_maux_de_tete'].value,
-            toux: elements['suivi_symptomes_toux'].value,
+            symptomes: form.elements['suivi_symptomes'].checked,
+            essoufflement: getRadioValue(form, 'suivi_symptomes_essoufflement'),
+            etatGeneral: getRadioValue(form, 'suivi_symptomes_etat_general'),
+            alimentationHydratation: getRadioValue(
+                form,
+                'suivi_symptomes_alimentation_hydratation'
+            ),
+            etatPsychologique: getRadioValue(
+                form,
+                'suivi_symptomes_etat_psychologique'
+            ),
+            fievre: getRadioValue(form, 'suivi_symptomes_fievre'),
+            diarrheeVomissements: getRadioValue(
+                form,
+                'suivi_symptomes_diarrhee_vomissements'
+            ),
+            mauxDeTete: getRadioValue(form, 'suivi_symptomes_maux_de_tete'),
+            toux: getRadioValue(form, 'suivi_symptomes_toux'),
         }
         if (pourUnProche) {
-            etat.confusion = elements['suivi_symptomes_confusion'].value
+            etat.confusion = getRadioValue(form, 'suivi_symptomes_confusion')
         }
-
         app.profil.ajouterEtat(etat)
 
         window.plausible(`Suivi rempli`)
