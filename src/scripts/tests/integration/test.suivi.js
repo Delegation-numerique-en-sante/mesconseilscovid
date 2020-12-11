@@ -143,7 +143,7 @@ describe('Suivi', function () {
         }
 
         // La page d’introduction du suivi comporte un lien direct
-        // vers mes symptômes car on a déjà renseignée la date de début
+        // vers mes symptômes car on a déjà renseigné la date de début
         {
             await page.waitForSelector('#page h2 >> text="Suivi de la maladie"')
 
