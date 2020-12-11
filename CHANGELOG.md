@@ -1,5 +1,11 @@
 # Changelog
 
+## 2020-12-11
+
+* ajout de conseils pour les fêtes de fin d’année
+* frise chronologique personnalisée pour l’isolement
+* compatibilité IE11
+
 ## 2020-12-08
 
 * amélioration de la page de dépistage sur mobile
