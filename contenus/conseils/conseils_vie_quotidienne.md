@@ -1,4 +1,4 @@
-<span class="nouveau">nouveau</span> Un **couvrefeu** s'applique de 20h à 06h du matin, sauf pour la soirée du 24 décembre. En journée, les autorisations de sortie ne sont plus obligatoires.
+<span class="nouveau">nouveau</span> Un **couvrefeu** s’applique de 20h à 06h du matin, sauf pour la soirée du 24 décembre. En journée, les autorisations de sortie ne sont plus obligatoires.
 
 Pour plus d’informations, vous pouvez consulter :
 
