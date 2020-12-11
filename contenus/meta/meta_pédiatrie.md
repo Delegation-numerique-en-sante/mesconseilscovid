@@ -8,8 +8,6 @@
 
 Le port du masque est recommandé **à partir de l’âge de 6 ans.**
 
-Dans le cadre du confinement, les crèches, écoles, collèges et lycées restent ouverts avec un protocole sanitaire renforcé dont le port du masque obligatoire dès l’âge de 6 ans.
-
 Pour plus d’informations sur **le port du masque,** vous pouvez consulter :
 
 * [l’infographie explicative](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf) du ministère des solidarités et de la santé.
