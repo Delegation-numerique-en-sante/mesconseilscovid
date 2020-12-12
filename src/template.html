@@ -518,11 +518,11 @@
                 <div class="details">{{ question_dépistage_aide }}</div>
             </div>
 
-            <div class="secondary disabled required" aria-labelledby="depistage-date-label">
+            <div class="secondary disabled required">
                 <legend id="depistage-date-label">
                     {{ question_dépistage_date_libellé }}
                 </legend>
-                <div class="row">
+                <div class="row" aria-labelledby="depistage-date-label">
                     <label for="depistage_start_date">
                     {{ question_dépistage_date_aide }}
                     </label>
@@ -530,33 +530,27 @@
                 </div>
             </div>
 
-            <div class="secondary disabled required" role="radiogroup" aria-labelledby="depistage-type-label">
+            <div class="secondary disabled required">
                 <legend id="depistage-type-label">
                     {{ question_dépistage_type_libellé }}
                 </legend>
-                <div>
+                <div role="radiogroup" aria-labelledby="depistage-type-label">
                     <input id="depistage_type_rtpcr" type="radio" required name="depistage_type" value="rt-pcr">
                     <label for="depistage_type_rtpcr"><span>{{ question_dépistage_rtpcr_libellé }}</span></label>
-                </div>
-                <div>
                     <input id="depistage_type_antigenique" type="radio" required name="depistage_type" value="antigenique">
                     <label for="depistage_type_antigenique"><span>{{ question_dépistage_antigénique_libellé }}</span></label>
                 </div>
             </div>
 
-            <div class="secondary disabled required" role="radiogroup" aria-labelledby="depistage-resultat-label">
+            <div class="secondary disabled required">
                 <legend id="depistage-resultat-label">
                     {{ question_dépistage_résultat_libellé }}
                 </legend>
-                <div>
+                <div role="radiogroup" aria-labelledby="depistage-resultat-label">
                     <input id="depistage_resultat_positif" type="radio" required name="depistage_resultat" value="positif">
                     <label for="depistage_resultat_positif"><span>{{ question_dépistage_positif_libellé }}</span></label>
-                </div>
-                <div>
                     <input id="depistage_resultat_negatif" type="radio" required name="depistage_resultat" value="negatif">
                     <label for="depistage_resultat_negatif"><span>{{ question_dépistage_négatif_libellé }}</span></label>
-                </div>
-                <div>
                     <input id="depistage_resultat_en_attente" type="radio" required name="depistage_resultat" value="en_attente">
                     <label for="depistage_resultat_en_attente"><span>{{ question_dépistage_attente_libellé|me_or_them }}</span></label>
                 </div>
