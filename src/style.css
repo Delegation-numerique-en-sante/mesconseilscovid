@@ -674,9 +674,10 @@ fieldset legend {
     font-size: 150%;
     margin: 1rem 0 0.5rem 0;
 }
-fieldset .secondary legend {
+fieldset .secondary .secondary-title {
     font-size: 120%;
     margin: 2rem 0 0.5rem 0;
+    color: #000091;
 }
 fieldset div {
     margin: 0.5rem 0;
