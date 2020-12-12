@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-12-12
+
+* précisions sur les conseils de fin d’année
+* correction d’un problème lié à la soumission du suivi
+
 ## 2020-12-11
 
 * ajout de conseils pour les fêtes de fin d’année
