@@ -33,7 +33,7 @@ class Form {
     }
     get secondariesRequired() {
         return Array.from(
-            this.form.querySelectorAll('.secondary.required[role="radiogroup"]')
+            this.form.querySelectorAll('.secondary.required [role="radiogroup"]')
         )
     }
 }
