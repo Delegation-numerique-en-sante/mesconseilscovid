@@ -103,6 +103,7 @@ export function bindImpression(element) {
     const printButton = element.querySelector('.js-impression')
     printButton.addEventListener('click', (event) => {
         event.preventDefault()
+        window.plausible('Impression')
         try {
             element.querySelectorAll('details').forEach((detail) => {
                 detail.setAttribute('open', '')
