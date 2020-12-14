@@ -1,6 +1,6 @@
 <div class="conseil">
 
-Depuis le vendredi 30 octobre, le port du masque est obligatoire dès l’âge de 6 ans dans les écoles. 
+Depuis le vendredi 30 octobre, le port du masque est obligatoire dès l’âge de 6 ans dans les écoles.
 
 Consultez notre page dédiée : [« Conseils liés aux activités et à la santé des enfants »](#pediatrie)
 
