@@ -30,7 +30,6 @@ import suivihistorique from './page/suivihistorique.js'
 import {
     beforeConseils,
     beforeSuiviIntroduction,
-    beforeDebutSymptomes,
     beforeSuiviSymptomes,
     beforeSuiviHistorique,
 } from './questionnaire.js'
@@ -154,9 +153,10 @@ export function initRouter(app) {
     addAppRoute('nom', nom)
 
     addQuestionnaireRoute('symptomesactuels', symptomesactuels)
-    addQuestionnaireRoute('depistage', depistage)
     addQuestionnaireRoute('symptomespasses', symptomespasses)
     addQuestionnaireRoute('contactarisque', contactarisque)
+    addQuestionnaireRoute('debutsymptomes', debutsymptomes)
+    addQuestionnaireRoute('depistage', depistage)
     addQuestionnaireRoute('residence', residence)
     addQuestionnaireRoute('foyer', foyer)
     addQuestionnaireRoute('antecedents', antecedents)
@@ -165,7 +165,6 @@ export function initRouter(app) {
 
     addAppRoute('conseils', conseils, beforeConseils)
     addAppRoute('suiviintroduction', suiviintroduction, beforeSuiviIntroduction)
-    addAppRoute('debutsymptomes', debutsymptomes, beforeDebutSymptomes)
     addAppRoute('suivisymptomes', suivisymptomes, beforeSuiviSymptomes)
     addAppRoute('suivihistorique', suivihistorique, beforeSuiviHistorique)
 
