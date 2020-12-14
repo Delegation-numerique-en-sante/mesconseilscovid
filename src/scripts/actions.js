@@ -122,6 +122,7 @@ export function bindImpression(element) {
 export function bindSuppressionTotale(element, app) {
     element.addEventListener('click', (event) => {
         event.preventDefault()
+        window.plausible('Suppression totale')
         if (confirm('Êtes-vous sûr·e de vouloir supprimer tous les profils ?')) {
             app.supprimerTout().then(() => {
                 if (app.router.lastRouteResolved().url === 'introduction') {
