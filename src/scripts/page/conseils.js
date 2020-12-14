@@ -252,6 +252,7 @@ function dynamicTimelineDataInjection(element, profil) {
         fillDate('contagiosite', formatDate(dates.contagiosite))
         fillDate('isolement', dates.debutIsolement)
         fillDate('aujourdhui', `${formatDate(new Date())} (aujourd’hui)`)
+        fillDate('demain', `${formatDate(dates.demain)} (demain)`)
         fillDate('fin', `À partir du ${formatDate(dates.finIsolement)}`)
     }
 
@@ -264,6 +265,7 @@ function dynamicTimelineDataInjection(element, profil) {
             debutIsolement: `${formatDate(
                 profil.symptomes_start_date
             )} (<a href="#debutsymptomes">modifier</a>)`,
+            demain: joursApres(1, new Date()),
             finIsolement: joursApres(7, profil.symptomes_start_date),
         })
 
@@ -296,6 +298,7 @@ function dynamicTimelineDataInjection(element, profil) {
             debutIsolement: `${formatDate(
                 profil.depistage_start_date
             )} (<a href="#depistage">modifier</a>)`,
+            demain: joursApres(1, new Date()),
             finIsolement: joursApres(7, profil.depistage_start_date),
         })
     }
