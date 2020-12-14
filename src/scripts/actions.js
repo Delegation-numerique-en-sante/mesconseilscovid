@@ -44,7 +44,7 @@ export function bindCalendar(element, profil) {
     })
 }
 
-export function bindFeedback(component) {
+export function bindFeedback(component, app) {
     function opacityTransition(component, delay, callback) {
         component.style.transition = `opacity ${delay / 1000}s`
         component.style.opacity = '0'
@@ -65,9 +65,13 @@ export function bindFeedback(component) {
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
                 const feedbackHost = document.body.dataset.statsUrl
+                let message = event.target.elements.message.value
+                if (app.source == 'TousAntiCovid') {
+                    message += ' #TAC'
+                }
                 const payload = {
                     kind: feedback,
-                    message: event.target.elements.message.value,
+                    message: message,
                     page: getCurrentPageName(),
                 }
                 const request = new XMLHttpRequest()

@@ -12,6 +12,7 @@ export default class App {
         this.stockage = new StockageLocal()
         this.questionnaire = new Questionnaire()
         this._plausibleTrackingEvents = []
+        this.source = new URLSearchParams(window.location.search).get('source')
     }
     init() {
         this.router = initRouter(this)
