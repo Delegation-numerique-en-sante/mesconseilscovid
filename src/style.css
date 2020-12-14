@@ -1249,6 +1249,12 @@ a#geolocalisation {
 }
 
 @media print {
+    a {
+        text-decoration: none;
+    }
+    a[href^='http']:after {
+        content: ' ( ' attr(href) ' ) ';
+    }
     #conseils-block-date {
         display: block;
     }
