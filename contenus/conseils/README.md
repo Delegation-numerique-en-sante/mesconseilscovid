@@ -682,7 +682,7 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 
 ## [conseils_vie_quotidienne.md](conseils_vie_quotidienne.md)
 
-<span class="nouveau">nouveau</span> Un **couvre-feu** s’applique de 20h à 6h du matin, sauf pour la soirée du 24 décembre. En journée, les autorisations de sortie ne sont plus obligatoires.
+<span class="nouveau">nouveau</span> Un **couvre-feu** s’applique de 20h à 6h du matin, sauf pour la soirée du 24 décembre. En journée, les attestations de déplacement ne sont plus obligatoires.
 
 Pour plus d’informations, vous pouvez consulter :
 
