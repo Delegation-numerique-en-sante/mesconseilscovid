@@ -8,10 +8,8 @@
 
 <div class="conseil">
 
-* Le **télétravail** est obligatoire à 100 % partout où il est possible durant le confinement.
-* Si vous devez vous rendre sur votre lieu de travail :
-  * la **distanciation physique**, le **port du masque**, et les **mesures barrières** limitent la propagation du virus entre collègues;
-  * il vous faudra un [justificatif de déplacement professionnel](https://www.gouvernement.fr/sites/default/files/05-11-2020-justificatif-de-deplacement-professionnel.pdf).
+* Le **télétravail** est obligatoire à 100 % partout où il est possible.
+* Si vous devez vous rendre sur votre lieu de travail la **distanciation physique**, le **port du masque**, et les **mesures barrières** limitent la propagation du virus entre collègues.
 * Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salarie_v11112020.pdf).
 
 </div>
@@ -20,11 +18,9 @@
 
 ## [conseils_activité_pro_arrêt.md](conseils_activité_pro_arrêt.md)
 
-* Le **télétravail** est obligatoire à 100 % partout où il est possible durant le confinement. Si ce n’est pas possible, rentrez en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**.
+* Le **télétravail** est obligatoire à 100 % partout où il est possible. Si ce n’est pas possible, rentrez en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**.
 * Si votre état de santé vous expose à un **très haut risque** de développer une **forme sévère** de Covid, votre médecin traitant pourra vous fournir un **certificat d’isolement** à donner à votre employeur. Plus d’informations sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?_56_INSTANCE_XV0ItAcVS4ow_read_more=2).
-* Si vous devez vous rendre sur votre lieu de travail :
-  * la **distanciation physique**, le **port du masque**, et les **mesures barrières** limitent la propagation du virus entre collègues;
-  * il vous faudra un [justificatif de déplacement professionnel](https://www.gouvernement.fr/sites/default/files/05-11-2020-justificatif-de-deplacement-professionnel.pdf).
+* Si vous devez vous rendre sur votre lieu de travail la **distanciation physique**, le **port du masque**, et les **mesures barrières** limitent la propagation du virus entre collègues.
 * Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salarie_v11112020.pdf).
 
 
@@ -52,10 +48,8 @@ Comme les **professions libérales** n’ont pas de médecine du travail, vous p
 
 ## [conseils_activité_pro_personne_fragile.md](conseils_activité_pro_personne_fragile.md)
 
-* Le **télétravail** est obligatoire à 100 % partout où il est possible durant le confinement. Si ce n’est pas possible, rentrez en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**.
-* Si vous devez vous rendre sur votre lieu de travail :
-  * la **distanciation physique**, le **port du masque**, et les **mesures barrières** limitent la propagation du virus entre collègues;
-  * il vous faudra un [justificatif de déplacement professionnel](https://www.gouvernement.fr/sites/default/files/05-11-2020-justificatif-de-deplacement-professionnel.pdf).
+* Le **télétravail** est obligatoire à 100 % partout où il est possible. Si ce n’est pas possible, rentrez en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**.
+* Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique**, le **port du masque**, et les **mesures barrières** limitent la propagation du virus entre collègues.
 * Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salarie_v11112020.pdf).
 
 
@@ -98,11 +92,9 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 
 <div class="conseil conseil-orange">
 
-Un **confinement** s’applique sur tout le territoire français métropolitain, jusqu’au 15 décembre au minimum. Il vous faut [une attestation dérogatoire](https://media.interieur.gouv.fr/deplacement-covid-19/) pour justifier de vos sorties à l’extérieur de votre domicile.
+<span class="nouveau">nouveau</span> À partir du 15 décembre, un **couvre-feu** s’applique sur tout le territoire français métropolitain de 20h à 6h du matin, sauf la soirée du 24 décembre.
 
 </div>
-
-Des **attestations permanentes** peuvent être fournies par l’employeur pour les déplacements domicile-travail, et par les écoles pour amener et récupérer les enfants. Pour les autres motifs, une attestation individuelle doit être remplie à chaque déplacement.
 
 Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919">39 19</a> (appel gratuit, de 9h à 19h du lundi au samedi) ou le <a href="tel:17">17</a> en cas d’urgence.
 
@@ -126,7 +118,7 @@ Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contac
 
 ## [conseils_contacts_utiles.md](conseils_contacts_utiles.md)
 
-Le confinement peut être difficile à vivre. Si vous le souhaitez, vous pouvez contacter le <a href="tel:0800190000">0800 19 00 00</a> pour une écoute et un soutien psychologique (appel gratuit, tous les jours de 9h à 21h).
+La situation actuelle peut être difficile à vivre. Si vous le souhaitez, vous pouvez contacter le <a href="tel:0800190000">0800 19 00 00</a> pour une écoute et un soutien psychologique (appel gratuit, tous les jours de 9h à 21h).
 
 
 
@@ -167,28 +159,17 @@ Si vous avez **passé du temps avec une personne qui est cas contact** (contact 
 
 <div class="conseil">
 
-Depuis le vendredi 30 octobre :
-* le port du masque est obligatoire dès l’âge de 6 ans dans les écoles ;
-* vous devez vous munir d’un [justificatif de déplacement scolaire](https://www.gouvernement.fr/sites/default/files/05-11-2020-justificatif-de-deplacement-scolaire.pdf) pour le trajet entre votre domicile et le lieu d’accueil de l’enfant.
+Depuis le vendredi 30 octobre, le port du masque est obligatoire dès l’âge de 6 ans dans les écoles.
 
 Consultez notre page dédiée : [« Conseils liés aux activités et à la santé des enfants »](#pediatrie)
 
 </div>
-
-* Lors du confinement, restent ouverts :
-  * les crèches, écoles, collèges et lycées ;
-  * la prise en charge périscolaire (garderie, centres aérés) ;
-  * les structures d’accueil spécialisées pour les enfants en difficulté physique ou psychique notamment les instituts médico-éducatifs.
 
 * Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face à la Covid, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants.
 
 * Si vous n’avez **pas de solution pour faire garder votre enfant :** informez votre employeur et envisagez avec lui les modalités de télétravail qui pourraient être mises en place, [ou d’indemnisation si ce n’est pas possible.](https://www.ameli.fr/haute-garonne/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail#text_114568)
 
 * Les consultations de vos enfants comportant des **vaccins** obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) doivent être **maintenues.**
-
-* Pour plus d’informations sur la scolarité des enfants pendant le confinement, vous pouvez consulter :
-    * [Rentrée novembre 2020 : modalités pratiques](https://www.education.gouv.fr/rentree-novembre-2020-modalites-pratiques-305467),
-    * [La scolarité des enfants](https://www.gouvernement.fr/info-coronavirus#questions__reponses), section « Pour vos enfants et leur scolarité ».
 
 
 
@@ -701,13 +682,9 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 
 ## [conseils_vie_quotidienne.md](conseils_vie_quotidienne.md)
 
-<span class="nouveau">nouveau</span> Le confinement est dorénavant adapté :
+<span class="nouveau">nouveau</span> Un **couvre-feu** s’applique de 20h à 6h du matin, sauf pour la soirée du 24 décembre. En journée, les autorisations de sortie ne sont plus obligatoires.
 
-* les activités physiques et les promenades sont autorisées dans un rayon de 20 kilomètres et pour une durée maximum de 3 heures ;
-* les activités extra-scolaires sont autorisées en plein air ;
-* les commerces et services à domicile sont ouverts jusqu’à 21h00 dans le cadre d’un protocole sanitaire strict dont les librairies, les disquaires ou encore les bibliothèques.
-
-Pour plus d’informations sur **les mesures du confinement**, vous pouvez consulter :
+Pour plus d’informations, vous pouvez consulter :
 
 * [la page dédiée du site du gouvernement](https://www.gouvernement.fr/info-coronavirus/confinement) ;
 * les règles spécifiques de votre **département** sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
