@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-12-14
+
+* mise à jour des dispositions au 15 décembre (sortie du confinement)
+* accessibilité des émojis
+
 ## 2020-12-12
 
 * précisions sur les conseils de fin d’année
