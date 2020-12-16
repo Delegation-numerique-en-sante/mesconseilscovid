@@ -41,7 +41,12 @@ export default function conseils(element, app) {
     if (typeof app.profil.questionnaire_completion_date === 'undefined') {
         app.profil.questionnaire_completion_date = new Date()
         app.enregistrerProfilActuel()
-        window.plausible(`Questionnaire terminé`)
+        window.plausible('Questionnaire terminé')
+        if (app.profil.estMonProfil()) {
+            window.plausible('Questionnaire terminé pour moi')
+        } else {
+            window.plausible('Questionnaire terminé pour un proche')
+        }
     }
 
     // Activer / désactiver l’auto-suivi pour ce profil ?
