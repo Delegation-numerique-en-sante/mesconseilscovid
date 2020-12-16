@@ -177,6 +177,7 @@ Consultez notre page dédiée : [« Conseils liés aux activités et à la san
 <span class="nouveau">nouveau</span> Lors de vos rencontres de fin d’année, nous vous conseillons de :
 
 * prévoir un temps de **discussion avec vos proches** pour l’organisation des fêtes dans le contexte de l’épidémie,
+* privilégier le télétravail, et si possible rester chez soi, la semaine précédant votre rassemblement (une tolérance sera accordée en cas d’absence des élèves les 17 et 18 décembre, si les parents préviennent l’école), 
 * éviter de vous réunir à plus de **6 adultes**,
 * ne pas serrer les mains, faire la bise ou prendre dans les bras, 
 * porter un **masque** et **aérer régulièrement** si vous êtes en intérieur (10 minutes toutes les heures),
