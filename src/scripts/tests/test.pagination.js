@@ -951,7 +951,7 @@ describe('Pagination', function () {
                 'symptomesactuels'
             )
         })
-        it('redirige suivi symptômes vers début symptômes si manquant', function () {
+        it('ok d’aller au suivi symptômes sans date de début symptômes ni symptômes (asymptomatique)', function () {
             const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
@@ -973,13 +973,33 @@ describe('Pagination', function () {
                 antecedent_cirrhose: false,
                 antecedent_drepano: false,
                 antecedent_chronique_autre: false,
+                symptomes_actuels: false,
+                symptomes_actuels_temperature: false,
+                symptomes_actuels_temperature_inconnue: false,
+                symptomes_actuels_toux: false,
+                symptomes_actuels_odorat: false,
+                symptomes_actuels_douleurs: false,
+                symptomes_actuels_diarrhee: false,
+                symptomes_actuels_fatigue: false,
+                symptomes_actuels_alimentation: false,
+                symptomes_actuels_souffle: false,
+                symptomes_actuels_autre: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+                contact_a_risque_meme_lieu_de_vie: false,
+                contact_a_risque_contact_direct: false,
+                contact_a_risque_actes: false,
+                contact_a_risque_espace_confine: false,
+                contact_a_risque_meme_classe: false,
+                contact_a_risque_stop_covid: false,
+                contact_a_risque_autre: false,
+                depistage: true,
+                depistage_type: 'rt-pcr',
+                depistage_resultat: 'positif',
             })
-            assert.strictEqual(
-                beforeSuiviSymptomes(profil, questionnaire),
-                'debutsymptomes'
-            )
+            assert.isUndefined(beforeSuiviSymptomes(profil, questionnaire))
         })
-        it('redirige suivi historique vers début symptômes si manquant', function () {
+        it('ok d’aller au suivi historique sans date de début symptômes ni symptômes (asymptomatique)', function () {
             const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
@@ -1001,11 +1021,31 @@ describe('Pagination', function () {
                 antecedent_cirrhose: false,
                 antecedent_drepano: false,
                 antecedent_chronique_autre: false,
+                symptomes_actuels: false,
+                symptomes_actuels_temperature: false,
+                symptomes_actuels_temperature_inconnue: false,
+                symptomes_actuels_toux: false,
+                symptomes_actuels_odorat: false,
+                symptomes_actuels_douleurs: false,
+                symptomes_actuels_diarrhee: false,
+                symptomes_actuels_fatigue: false,
+                symptomes_actuels_alimentation: false,
+                symptomes_actuels_souffle: false,
+                symptomes_actuels_autre: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+                contact_a_risque_meme_lieu_de_vie: false,
+                contact_a_risque_contact_direct: false,
+                contact_a_risque_actes: false,
+                contact_a_risque_espace_confine: false,
+                contact_a_risque_meme_classe: false,
+                contact_a_risque_stop_covid: false,
+                contact_a_risque_autre: false,
+                depistage: true,
+                depistage_type: 'rt-pcr',
+                depistage_resultat: 'positif',
             })
-            assert.strictEqual(
-                beforeSuiviHistorique(profil, questionnaire),
-                'debutsymptomes'
-            )
+            assert.isUndefined(beforeSuiviHistorique(profil, questionnaire))
         })
     })
 })

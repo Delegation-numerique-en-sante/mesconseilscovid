@@ -82,6 +82,10 @@ export default function suivisymptomes(form, app) {
             symptome === 'pire' || symptome === 'critique'
 
         if (etat.symptomes) {
+            // Pour les asymptomatiques qui deviennent symptomatiques.
+            if (typeof app.profil.symptomes_start_date === 'undefined') {
+                app.profil.symptomes_start_date = new Date()
+            }
             app.profil.symptomes_passes = false
             // Met à jour symptômes actuels (approximation).
             app.profil.symptomes_actuels = true
