@@ -1,3 +1,5 @@
+import { assert } from 'chai'
+
 export async function getPlausibleTrackingEvents(page) {
     return await page.evaluate(() => {
         return window.app._plausibleTrackingEvents
@@ -12,18 +14,25 @@ export async function waitForPlausibleTrackingEvent(page, name) {
 }
 
 export async function waitForPlausibleTrackingEvents(page, names) {
-    await page.waitForFunction(
-        (events) =>
-            window.app._plausibleTrackingEvents.length === events.length &&
-            window.app._plausibleTrackingEvents.every(
-                (val, index) => val === events[index]
-            ),
-        names,
-        { timeout: 2000 }
-    )
+    try {
+        await page.waitForFunction(
+            (events) =>
+                window.app._plausibleTrackingEvents.length === events.length &&
+                window.app._plausibleTrackingEvents.every(
+                    (val, index) => val === events[index]
+                ),
+            names,
+            { timeout: 2000 }
+        )
+    } catch (e) {
+        assert.deepEqual(names, await getPlausibleTrackingEvents(page))
+    }
 }
 
 export async function remplirQuestionnaire(page, choix) {
+    if (typeof choix.nom !== 'undefined') {
+        await remplirNom(page, choix.nom)
+    }
     await remplirSymptomesActuels(page, choix.symptomesActuels)
     if (choix.symptomesActuels.length) {
         await remplirDebutSymptomes(page, choix.debutSymptomes)
@@ -48,6 +57,15 @@ export async function remplirQuestionnaire(page, choix) {
     await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
     if (choix.age < 15) return
     await remplirActivite(page, choix.activitePro)
+}
+
+async function remplirNom(page, nom) {
+    await page.fill('#page #name', nom)
+    let bouton = await page.waitForSelector('#page >> text="Continuer"')
+    await Promise.all([
+        bouton.click(),
+        page.waitForNavigation({ url: '**/#symptomesactuels' }),
+    ])
 }
 
 async function remplirDepartement(page, departement) {

@@ -9,7 +9,12 @@ export default function symptomesactuels(form, app) {
     if (typeof app.profil.questionnaire_start_date === 'undefined') {
         app.profil.questionnaire_start_date = new Date()
         app.enregistrerProfilActuel()
-        window.plausible(`Questionnaire commencé`)
+        window.plausible('Questionnaire commencé')
+        if (app.profil.estMonProfil()) {
+            window.plausible('Questionnaire commencé pour moi')
+        } else {
+            window.plausible('Questionnaire commencé pour un proche')
+        }
     }
 
     // Remplir le formulaire avec les données du profil
