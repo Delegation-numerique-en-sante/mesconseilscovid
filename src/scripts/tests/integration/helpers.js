@@ -1,16 +1,13 @@
 import { assert } from 'chai'
 
 export async function getPlausibleTrackingEvents(page) {
-    return await page.evaluate(() => {
-        return window.app._plausibleTrackingEvents
-    })
+    return await page.evaluate(() => window.app._plausibleTrackingEvents)
 }
 
 export async function waitForPlausibleTrackingEvent(page, name) {
-    await page.waitForFunction((name) => {
-        return window.app._plausibleTrackingEvents.includes(name)
-    }, name)
-    return await getPlausibleTrackingEvents(page)
+    const trackingEvents = await getPlausibleTrackingEvents(page)
+    assert.isTrue(trackingEvents.includes(name), `${name} not in ${trackingEvents}`)
+    return trackingEvents
 }
 
 export async function waitForPlausibleTrackingEvents(page, names) {

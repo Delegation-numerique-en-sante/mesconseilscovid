@@ -1,9 +1,5 @@
 import { assert } from 'chai'
-import {
-    remplirQuestionnaire,
-    remplirSuivi,
-    waitForPlausibleTrackingEvent,
-} from './helpers.js'
+import { remplirQuestionnaire, remplirSuivi } from './helpers.js'
 
 describe('Suivi', function () {
     it('remplir le questionnaire de suivi pour moi', async function () {
@@ -20,7 +16,7 @@ describe('Suivi', function () {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:symptomesactuels'),
+                page.waitForNavigation({ url: '**/#symptomesactuels' }),
             ])
         }
 
@@ -60,7 +56,7 @@ describe('Suivi', function () {
             bouton = await page.waitForSelector('#page >> text="Revenir à l’accueil"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:introduction'),
+                page.waitForNavigation({ url: '**/#introduction' }),
             ])
         }
 
@@ -69,7 +65,7 @@ describe('Suivi', function () {
             let bouton = await page.waitForSelector('text="Démarrer mon suivi"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:suiviintroduction'),
+                page.waitForNavigation({ url: '**/#suiviintroduction' }),
             ])
         }
 
@@ -78,7 +74,7 @@ describe('Suivi', function () {
             let bouton = await page.waitForSelector('text="Démarrer mon suivi"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:suivisymptomes'),
+                page.waitForNavigation({ url: '**/#suivisymptomes' }),
             ])
         }
 
@@ -97,7 +93,7 @@ describe('Suivi', function () {
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:conseils'),
+                page.waitForNavigation({ url: '**/#conseils' }),
             ])
         }
 
@@ -121,7 +117,7 @@ describe('Suivi', function () {
             bouton = await page.waitForSelector('#page >> text="Revenir à l’accueil"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:introduction'),
+                page.waitForNavigation({ url: '**/#introduction' }),
             ])
         }
 
@@ -138,7 +134,7 @@ describe('Suivi', function () {
             )
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:suiviintroduction'),
+                page.waitForNavigation({ url: '**/#suiviintroduction' }),
             ])
         }
 
@@ -158,7 +154,7 @@ describe('Suivi', function () {
             )
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:suivisymptomes'),
+                page.waitForNavigation({ url: '**/#suivisymptomes' }),
             ])
         }
 
@@ -177,7 +173,7 @@ describe('Suivi', function () {
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:conseils'),
+                page.waitForNavigation({ url: '**/#conseils' }),
             ])
         }
 
@@ -199,7 +195,7 @@ describe('Suivi', function () {
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:suivihistorique'),
+                page.waitForNavigation({ url: '**/#suivihistorique' }),
             ])
         }
 
@@ -230,22 +226,13 @@ describe('Suivi', function () {
             )
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:nom'),
-            ])
-        }
-
-        // Saisie nom
-        {
-            await page.fill('#page #name', 'Mamie')
-            let bouton = await page.waitForSelector('#page >> text="Continuer"')
-            await Promise.all([
-                bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:symptomesactuels'),
+                page.waitForNavigation({ url: '**/#nom' }),
             ])
         }
 
         // Remplir le questionnaire avec symptômes actuels
         await remplirQuestionnaire(page, {
+            nom: 'Mamie',
             symptomesActuels: ['temperature'],
             debutSymptomes: 'aujourdhui',
             depistage: false,
@@ -279,7 +266,7 @@ describe('Suivi', function () {
             bouton = await page.waitForSelector('#page >> text="Revenir à l’accueil"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:introduction'),
+                page.waitForNavigation({ url: '**/#introduction' }),
             ])
         }
 
@@ -294,7 +281,7 @@ describe('Suivi', function () {
             )
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:suiviintroduction'),
+                page.waitForNavigation({ url: '**/#suiviintroduction' }),
             ])
         }
 
@@ -309,7 +296,7 @@ describe('Suivi', function () {
             )
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:suivisymptomes'),
+                page.waitForNavigation({ url: '**/#suivisymptomes' }),
             ])
         }
 
@@ -329,7 +316,7 @@ describe('Suivi', function () {
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:conseils'),
+                page.waitForNavigation({ url: '**/#conseils' }),
             ])
         }
 
@@ -351,7 +338,7 @@ describe('Suivi', function () {
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:suivihistorique'),
+                page.waitForNavigation({ url: '**/#suivihistorique' }),
             ])
         }
 
