@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "@babel/register": "^7.12.10",
     "@mermaid-js/mermaid-cli": "^8.8.4",
     "chai": "^4.2.0",
