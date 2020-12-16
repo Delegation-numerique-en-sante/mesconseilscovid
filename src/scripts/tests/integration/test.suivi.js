@@ -234,18 +234,9 @@ describe('Suivi', function () {
             ])
         }
 
-        // Saisie nom
-        {
-            await page.fill('#page #name', 'Mamie')
-            let bouton = await page.waitForSelector('#page >> text="Continuer"')
-            await Promise.all([
-                bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:symptomesactuels'),
-            ])
-        }
-
         // Remplir le questionnaire avec symptômes actuels
         await remplirQuestionnaire(page, {
+            nom: 'Mamie',
             symptomesActuels: ['temperature'],
             debutSymptomes: 'aujourdhui',
             depistage: false,

@@ -1,15 +1,15 @@
 import { assert } from 'chai'
 
 export async function getPlausibleTrackingEvents(page) {
-    return await page.evaluate(() => {
-        return window.app._plausibleTrackingEvents
-    })
+    return await page.evaluate(() => window.app._plausibleTrackingEvents)
 }
 
 export async function waitForPlausibleTrackingEvent(page, name) {
-    await page.waitForFunction((name) => {
-        return window.app._plausibleTrackingEvents.includes(name)
-    }, name)
+    await page.waitForFunction(
+        (name) => window.app._plausibleTrackingEvents.includes(name),
+        name,
+        { timeout: 2000 }
+    )
     return await getPlausibleTrackingEvents(page)
 }
 
