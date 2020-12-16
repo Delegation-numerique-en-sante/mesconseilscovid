@@ -67,7 +67,10 @@ export const TRANSITIONS = {
     },
     depistage: {
         previous: {
-            debutsymptomes: (profil) => profil.isDebutSymptomesComplete(),
+            debutsymptomes: (profil) =>
+                (profil.isSymptomesActuelsComplete() &&
+                    profil.hasSymptomesActuelsReconnus()) ||
+                (profil.isSymptomesPassesComplete() && profil.symptomes_passes),
             contactarisque: (profil) => profil.isContactARisqueComplete(),
         },
         next: {
