@@ -7,12 +7,10 @@ export function beforeSuiviIntroduction(profil, questionnaire) {
 }
 
 export function beforeSuiviSymptomes(profil, questionnaire) {
-    if (!profil.symptomes_start_date) return 'debutsymptomes'
     if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
 }
 
 export function beforeSuiviHistorique(profil, questionnaire) {
-    if (!profil.symptomes_start_date) return 'debutsymptomes'
     if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
 }
 
