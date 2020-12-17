@@ -331,7 +331,8 @@ main footer .legals {
 #conseils-block.symptomes-actuels h2.with-illustration,
 #conseils-block.symptomes-passes h2.with-illustration,
 #conseils-block.contact-a-risque h2.with-illustration,
-#conseils-fetes header {
+#conseils-fetes header,
+#conseils-vaccins header {
     background-position: center 1rem;
     background-repeat: no-repeat;
     background-size: 35%;
@@ -374,7 +375,8 @@ main footer .legals {
     #conseils-block.symptomes-actuels h2.with-illustration,
     #conseils-block.symptomes-passes h2.with-illustration,
     #conseils-block.contact-a-risque h2.with-illustration,
-    #conseils-fetes header {
+    #conseils-fetes header,
+    #conseils-vaccins header {
         background-size: 15%;
         background-position: center left;
         padding: 0 0 0 8rem;
@@ -461,6 +463,9 @@ main footer .legals {
 }
 #conseils-fetes header {
     background-image: url('illustrations/fetes.svg');
+}
+#conseils-vaccins header {
+    background-image: url('illustrations/vaccins.svg');
 }
 
 .timeline {
