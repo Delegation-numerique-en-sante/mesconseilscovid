@@ -47,7 +47,7 @@ jobs:
         with:
           max_attempts: 3
           retry_on: error
-          timeout_minutes: 2
+          timeout_minutes: 3
           command: npm run-script --browser=chromium test-integration
         env:
           DEBUG: "pw:api"
@@ -57,7 +57,7 @@ jobs:
         with:
           max_attempts: 3
           retry_on: error
-          timeout_minutes: 2
+          timeout_minutes: 3
           command: npm run-script --browser=firefox test-integration
         env:
           DEBUG: "pw:api"
@@ -67,7 +67,7 @@ jobs:
         with:
           max_attempts: 3
           retry_on: error
-          timeout_minutes: 2
+          timeout_minutes: 3
           command: npm run-script --browser=webkit test-integration
         env:
           DEBUG: "pw:api"
