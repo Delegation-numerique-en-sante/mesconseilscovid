@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-12-17
+
+* mise à jour des conseils pour les fêtes de fin d’année
+* amélioration de l’impression
+
 ## 2020-12-14
 
 * mise à jour des dispositions au 15 décembre (sortie du confinement)
