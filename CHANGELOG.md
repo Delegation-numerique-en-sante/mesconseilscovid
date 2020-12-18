@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020-12-18
+
+* ajout d’un bloc d’informations sur les vaccins
+
 ## 2020-12-17
 
 * mise à jour des conseils pour les fêtes de fin d’année
