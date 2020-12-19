@@ -14,6 +14,7 @@ Pour les **repas de fêtes**, il est recommandé de :
 * **minimiser le nombre** de convives,
 * mettre **un masque** lors de la préparation des plats,
 * vous **laver** régulièrement **les mains**, particulièrement avant et après la préparation des repas,
+* manger plutôt **à l’extérieur** si c’est possible,
 * espacer au maximum les convives à table,
 * faire le service à l’assiette, ne pas partager les couverts, les verres ou les plats,
 * **aérer régulièrement** avant, pendant et après le repas (10 minutes toutes les heures).
