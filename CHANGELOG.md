@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020-12-19
+
+* adapte les conseils de fin d’année au climat
+* ajoute un lien vers le suivi dans la frise isolement asymptomatique
+
 ## 2020-12-18
 
 * ajout d’un bloc d’informations sur les vaccins
