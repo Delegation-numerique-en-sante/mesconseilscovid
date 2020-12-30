@@ -10,7 +10,7 @@
 
 * Le **télétravail** est obligatoire à 100 % partout où il est possible.
 * Si vous devez vous rendre sur votre lieu de travail la **distanciation physique**, le **port du masque**, et les **mesures barrières** limitent la propagation du virus entre collègues.
-* Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salarie_v11112020.pdf).
+* Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salarie_v22122020.pdf).
 
 </div>
 
@@ -21,7 +21,7 @@
 * Le **télétravail** est obligatoire à 100 % partout où il est possible. Si ce n’est pas possible, rentrez en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**.
 * Si votre état de santé vous expose à un **très haut risque** de développer une **forme sévère** de Covid, votre médecin traitant pourra vous fournir un **certificat d’isolement** à donner à votre employeur. Plus d’informations sur le site de l’[Assurance maladie](https://www.ameli.fr/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) ou de la [Mutualité sociale agricole](https://www.msa.fr/lfy/exploitant/coronavirus-mesures?_56_INSTANCE_XV0ItAcVS4ow_read_more=2).
 * Si vous devez vous rendre sur votre lieu de travail la **distanciation physique**, le **port du masque**, et les **mesures barrières** limitent la propagation du virus entre collègues.
-* Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salarie_v11112020.pdf).
+* Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salarie_v22122020.pdf).
 
 
 
@@ -50,7 +50,7 @@ Comme les **professions libérales** n’ont pas de médecine du travail, vous p
 
 * Le **télétravail** est obligatoire à 100 % partout où il est possible. Si ce n’est pas possible, rentrez en contact avec votre employeur ou la Médecine du Travail de l’entreprise pour envisager **des solutions individuelles**.
 * Si vous devez vous rendre sur votre lieu de travail, la **distanciation physique**, le **port du masque**, et les **mesures barrières** limitent la propagation du virus entre collègues.
-* Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salarie_v11112020.pdf).
+* Nos conseils pour préserver votre [santé au travail](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salarie_v22122020.pdf).
 
 
 
@@ -250,7 +250,7 @@ Il est conseillé à votre proche de :
   * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
 
 
-* L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf)
+* L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_covid-19_aeration-ventilation-climatisation-chauffage_28_10_2020.pdf)
 
 * Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)
 
@@ -275,7 +275,7 @@ Le **port du masque est obligatoire** dans les **[lieux publics clos](https://so
   * [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
   * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
 
-* L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf)
+* L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_covid-19_aeration-ventilation-climatisation-chauffage_28_10_2020.pdf)
 
 * Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)
 
