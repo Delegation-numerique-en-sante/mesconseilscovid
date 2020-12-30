@@ -15,6 +15,6 @@ Le **port du masque est obligatoire** dans les **[lieux publics clos](https://so
   * [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
   * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
 
-* L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/covid-19-aeration-ventilation-climatisation.pdf)
+* L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_covid-19_aeration-ventilation-climatisation-chauffage_28_10_2020.pdf)
 
 * Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)
