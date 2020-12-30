@@ -1,3 +1,5 @@
+import departementsCouvreFeu18H from '../data/departementsCouvreFeu18H.js'
+
 // Les statuts possibles en sortie de l’algorithme
 const STATUTS = [
     'antigenique-negatif-fragile',
@@ -290,6 +292,12 @@ export default class AlgorithmeOrientation {
         )
     }
 
+    couvreFeu18H() {
+        return (
+            Object.keys(departementsCouvreFeu18H).indexOf(this.profil.departement) > -1
+        )
+    }
+
     timelineBlockNamesToDisplay() {
         const blockNames = []
         if (this.profil.depistagePositifRecent()) {
@@ -395,7 +403,11 @@ export default class AlgorithmeOrientation {
 
     vieQuotidienneBlockNamesToDisplay() {
         const blockNames = ['conseils-vie-quotidienne']
-        blockNames.push('conseils-confinement')
+        if (this.couvreFeu18H()) {
+            blockNames.push('conseils-couvre-feu-18h')
+        } else {
+            blockNames.push('conseils-couvre-feu-20h')
+        }
         return blockNames
     }
 

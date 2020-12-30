@@ -663,62 +663,25 @@ describe('Blocs d’informations additionnels', function () {
     })
 
     describe('Bloc vie quotidienne', function () {
-        it('Un département inconnu n’affiche pas la localisation', function () {
+        it('Le couvre-feu à 20h est affiché par défaut', function () {
             var profil = new Profil('mes_infos', {
                 departement: '01',
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {}, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-confinement',
+                'conseils-couvre-feu-20h',
             ])
         })
 
-        it('Un département + symptômes actuels affiche la localisation', function () {
+        it('Le couvre-feu à 18h est affiché pour les départements du Nord-Est', function () {
             var profil = new Profil('mes_infos', {
-                departement: '01',
-                symptomes_actuels: true,
+                departement: '03',
             })
-            var algoOrientation = new AlgorithmeOrientation(
-                profil,
-                { '01': 9.9 },
-                { '01': false }
-            )
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-confinement',
-            ])
-        })
-
-        it('Un département + symptômes passés affiche la localisation', function () {
-            var profil = new Profil('mes_infos', {
-                departement: '01',
-                symptomes_passes: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(
-                profil,
-                { '01': 9.9 },
-                { '01': false }
-            )
-            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
-                'conseils-vie-quotidienne',
-                'conseils-confinement',
-            ])
-        })
-
-        it('Un département + contact à risque affiche la localisation', function () {
-            var profil = new Profil('mes_infos', {
-                departement: '01',
-                contact_a_risque: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(
-                profil,
-                { '01': 9.9 },
-                { '01': false }
-            )
-            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
-                'conseils-vie-quotidienne',
-                'conseils-confinement',
+                'conseils-couvre-feu-18h',
             ])
         })
     })
