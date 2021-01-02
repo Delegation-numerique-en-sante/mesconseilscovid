@@ -676,7 +676,7 @@ describe('Blocs d’informations additionnels', function () {
 
         it('Le couvre-feu à 18h est affiché pour les départements du Nord-Est', function () {
             var profil = new Profil('mes_infos', {
-                departement: '03',
+                departement: '05',
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
