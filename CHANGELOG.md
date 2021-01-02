@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-01-02
+
+* mise à jour de l’heure du couvre-feu (18 h) pour les départements concernés
+
 ## 2020-12-19
 
 * adapte les conseils de fin d’année au climat
