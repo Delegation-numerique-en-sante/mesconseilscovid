@@ -9,13 +9,13 @@ describe('Suivi', function () {
     it('remplir le questionnaire de suivi pour moi', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction
+        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // Page d’accueil
+        // Page d’accueil.
         {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
@@ -24,7 +24,7 @@ describe('Suivi', function () {
             ])
         }
 
-        // Remplir le questionnaire avec symptômes actuels
+        // Remplir le questionnaire avec symptômes actuels.
         await remplirQuestionnaire(page, {
             symptomesActuels: ['temperature'],
             debutSymptomes: 'aujourdhui',
@@ -64,7 +64,7 @@ describe('Suivi', function () {
             ])
         }
 
-        // Page d’accueil
+        // Page d’accueil.
         {
             let bouton = await page.waitForSelector('text="Démarrer mon suivi"')
             await Promise.all([
@@ -73,7 +73,7 @@ describe('Suivi', function () {
             ])
         }
 
-        // Page d’introduction du suivi
+        // Page d’introduction du suivi.
         {
             let bouton = await page.waitForSelector('text="Démarrer mon suivi"')
             await Promise.all([
@@ -82,7 +82,7 @@ describe('Suivi', function () {
             ])
         }
 
-        // La page du suivi des symptômes
+        // La page du suivi des symptômes.
         {
             await remplirSuivi(page, {
                 essoufflement: 'mieux',
@@ -125,7 +125,7 @@ describe('Suivi', function () {
             ])
         }
 
-        // La page d’Introduction contient maintenant un lien vers mon suivi
+        // La page d’Introduction contient maintenant un lien vers mon suivi.
         {
             let bouton = await page.waitForSelector(
                 '#page >> text="Continuer mon suivi"'
@@ -143,7 +143,7 @@ describe('Suivi', function () {
         }
 
         // La page d’introduction du suivi comporte un lien direct
-        // vers mes symptômes car on a déjà renseigné la date de début
+        // vers mes symptômes car on a déjà renseigné la date de début.
         {
             await page.waitForSelector('#page h2 >> text="Suivi de la maladie"')
 
@@ -162,7 +162,7 @@ describe('Suivi', function () {
             ])
         }
 
-        // La page du suivi des symptômes
+        // La page du suivi des symptômes.
         {
             await remplirSuivi(page, {
                 essoufflement: 'critique',
@@ -203,7 +203,7 @@ describe('Suivi', function () {
             ])
         }
 
-        // La page de suivi d'historique
+        // La page de suivi d'historique.
         {
             let bilanTitle = await page.waitForSelector('#page #historique h3')
             assert.equal(await bilanTitle.innerText(), 'Bilan de votre situation')
@@ -213,13 +213,13 @@ describe('Suivi', function () {
     it('remplir le questionnaire de suivi pour un proche', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction
+        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/#'),
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // Page d’accueil
+        // Page d’accueil.
         {
             let bouton = await page.waitForSelector('.js-profil-new >> text="Démarrer"')
             assert.equal(
@@ -234,7 +234,7 @@ describe('Suivi', function () {
             ])
         }
 
-        // Remplir le questionnaire avec symptômes actuels
+        // Remplir le questionnaire avec symptômes actuels.
         await remplirQuestionnaire(page, {
             nom: 'Mamie',
             symptomesActuels: ['temperature'],
@@ -274,7 +274,7 @@ describe('Suivi', function () {
             ])
         }
 
-        // Page d’accueil
+        // Page d’accueil.
         {
             let bouton = await page.waitForSelector('text="Démarrer son suivi"')
             assert.equal(
@@ -289,7 +289,7 @@ describe('Suivi', function () {
             ])
         }
 
-        // Page d’introduction du suivi
+        // Page d’introduction du suivi.
         {
             let bouton = await page.waitForSelector('text="Démarrer son suivi"')
             assert.equal(
@@ -304,7 +304,7 @@ describe('Suivi', function () {
             ])
         }
 
-        // La page du suivi des symptômes
+        // La page du suivi des symptômes.
         {
             await remplirSuivi(page, {
                 essoufflement: 'critique',
@@ -346,7 +346,7 @@ describe('Suivi', function () {
             ])
         }
 
-        // La page de suivi d'historique
+        // La page de suivi d'historique.
         {
             let bilanTitle = await page.waitForSelector('#page #historique h3')
             assert.equal(await bilanTitle.innerText(), 'Bilan de votre situation')

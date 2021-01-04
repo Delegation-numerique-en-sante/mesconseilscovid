@@ -24,7 +24,7 @@ export default function debutsymptomes(form, app) {
     datePicker.addEventListener('change', (event) => {
         datePickerChanged(form, event.target)
     })
-    // Autorise seulement un intervalle de dates (30 derniers jours)
+    // Autorise seulement un intervalle de dates (30 derniers jours).
     const now = new Date()
     datePicker.setAttribute('max', now.toISOString().substring(0, 10))
     const trenteJoursAvant = joursAvant(30)
@@ -37,7 +37,7 @@ export default function debutsymptomes(form, app) {
             dateFromPicker(event.target.elements['suivi_symptomes_date_exacte']) ||
             dateFromRadioButton(getRadioValue(event.target, 'suivi_symptomes_date'))
 
-        // Enregistre le démarrage du suivi
+        // Enregistre le démarrage du suivi.
         if (!app.profil.hasSuiviStartDate()) {
             app.profil.suivi_start_date = new Date()
         }

@@ -5,7 +5,7 @@ import { createProfil } from './helpers.js'
 
 import AlgorithmeOrientation from '../algorithme/orientation.js'
 
-// On parcourt tous les cas possibles par colonnes
+// On parcourt tous les cas possibles par colonnes.
 const matrice = [
     {
         description: 'Positif et symptômes actuels graves',

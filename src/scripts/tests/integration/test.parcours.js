@@ -5,13 +5,13 @@ describe('Parcours', function () {
     it('remplir le questionnaire sans symptômes ni dépistage', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction
+        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // Page d’accueil
+        // Page d’accueil.
         {
             let bouton = await page.waitForSelector('text="Démarrer"')
             assert.equal(
@@ -26,7 +26,7 @@ describe('Parcours', function () {
             ])
         }
 
-        // Remplir le questionnaire
+        // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
             symptomesActuels: [],
             symptomesPasses: false,
@@ -46,19 +46,19 @@ describe('Parcours', function () {
             'Questionnaire commencé:symptomesactuels'
         )
 
-        // Conseils
+        // Conseils.
         {
-            // On rend la localisation visible
+            // On rend la localisation visible.
             await page.click('#page #conseils-vie-quotidienne h3')
 
-            // On retrouve le département de résidence
+            // On retrouve le département de résidence.
             let residence = await page.waitForSelector('#page #nom-departement')
             assert.equal(await residence.innerText(), 'Somme')
 
-            // On rend l’activité visible
+            // On rend l’activité visible.
             await page.click('#page #conseils-activite h3')
 
-            // On retrouve l’activité
+            // On retrouve l’activité.
             let activite = await page.waitForSelector('#page #reponse-activite-pro')
             assert.equal(
                 (await activite.innerText()).trim(),
@@ -67,7 +67,7 @@ describe('Parcours', function () {
 
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
 
-            // On retourne à l'intro
+            // On retourne à l'intro.
             let bouton = await page.waitForSelector(
                 '#page >> text="Revenir à l’accueil"'
             )
@@ -77,9 +77,9 @@ describe('Parcours', function () {
             ])
         }
 
-        // Introduction
+        // Introduction.
         {
-            // La page comporte maintenant un lien direct vers mes conseils
+            // La page comporte maintenant un lien direct vers mes conseils.
             let bouton = await page.waitForSelector('#page >> text="Voir mes conseils"')
             assert.equal(
                 await bouton.evaluate(
@@ -93,13 +93,13 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec symptômes actuels', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction
+        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // Page d’accueil
+        // Page d’accueil.
         {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
@@ -108,7 +108,7 @@ describe('Parcours', function () {
             ])
         }
 
-        // Remplir le questionnaire
+        // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
             symptomesActuels: ['temperature'],
             debutSymptomes: 'aujourdhui',
@@ -127,12 +127,12 @@ describe('Parcours', function () {
             'Questionnaire commencé:symptomesactuels'
         )
 
-        // Conseils
+        // Conseils.
         {
-            // On rend la localisation visible
+            // On rend la localisation visible.
             await page.click('#page #conseils-vie-quotidienne h3')
 
-            // On retrouve le département de résidence
+            // On retrouve le département de résidence.
             let residence = await page.waitForSelector('#page #nom-departement')
             assert.equal(await residence.innerText(), 'Somme')
 
@@ -143,13 +143,13 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec symptômes actuels (gravité majeure)', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction
+        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // Page d’accueil
+        // Page d’accueil.
         {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
@@ -158,7 +158,7 @@ describe('Parcours', function () {
             ])
         }
 
-        // Remplir le questionnaire
+        // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
             symptomesActuels: ['souffle'],
             debutSymptomes: 'aujourdhui',
@@ -178,13 +178,13 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec symptômes passés', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction
+        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // Page d’accueil
+        // Page d’accueil.
         {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
@@ -193,7 +193,7 @@ describe('Parcours', function () {
             ])
         }
 
-        // Remplir le questionnaire
+        // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
             symptomesActuels: [],
             symptomesPasses: true,
@@ -215,13 +215,13 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec contact à risque', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction
+        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // Page d’accueil
+        // Page d’accueil.
         {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
@@ -230,7 +230,7 @@ describe('Parcours', function () {
             ])
         }
 
-        // Remplir le questionnaire
+        // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
             symptomesActuels: [],
             symptomesPasses: false,
@@ -245,9 +245,9 @@ describe('Parcours', function () {
             activitePro: true,
         })
 
-        // Conseils
+        // Conseils.
         {
-            // On retrouve la partie contact à risque
+            // On retrouve la partie contact à risque.
             let contact_a_risque = await page.waitForSelector(
                 '#page #conseils-personnels-contact-a-risque'
             )
@@ -262,13 +262,13 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec pas de symptômes et covid+ (asymptomatique)', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction
+        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // Page d’accueil
+        // Page d’accueil.
         {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
@@ -277,7 +277,7 @@ describe('Parcours', function () {
             ])
         }
 
-        // Remplir le questionnaire
+        // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
             symptomesActuels: [],
             symptomesPasses: false,
@@ -295,9 +295,9 @@ describe('Parcours', function () {
             activitePro: true,
         })
 
-        // Conseils
+        // Conseils.
         {
-            // On retrouve la partie contact à risque
+            // On retrouve la partie contact à risque.
             let contact_a_risque = await page.waitForSelector(
                 '#page #statut-asymptomatique'
             )
@@ -312,13 +312,13 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec pas de symptômes et covid? (attente)', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction
+        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // Page d’accueil
+        // Page d’accueil.
         {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
@@ -327,7 +327,7 @@ describe('Parcours', function () {
             ])
         }
 
-        // Remplir le questionnaire
+        // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
             symptomesActuels: [],
             symptomesPasses: false,
@@ -345,9 +345,9 @@ describe('Parcours', function () {
             activitePro: true,
         })
 
-        // Conseils
+        // Conseils.
         {
-            // On retrouve le statut
+            // On retrouve le statut.
             let statut = await page.waitForSelector('#page #statut-en-attente')
             assert.include(
                 (await statut.innerText()).trim(),
@@ -360,13 +360,13 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec département autre', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction
+        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // Page d’accueil
+        // Page d’accueil.
         {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
@@ -375,7 +375,7 @@ describe('Parcours', function () {
             ])
         }
 
-        // Remplir le questionnaire
+        // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
             symptomesActuels: [],
             symptomesPasses: false,

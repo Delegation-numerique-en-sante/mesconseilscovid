@@ -226,7 +226,7 @@ export default class Profil {
         if (typeof value !== 'undefined') {
             this.questionnaire_started = value
         } else {
-            // Migration d’un ancien profil : calculer la donnée manquante
+            // Migration d’un ancien profil : calculer la donnée manquante.
             this.questionnaire_started = !this.isEmpty()
         }
     }
@@ -236,7 +236,7 @@ export default class Profil {
         if (typeof value !== 'undefined') {
             this.questionnaire_completed = value
         } else {
-            // Migration d’un ancien profil : calculer la donnée manquante
+            // Migration d’un ancien profil : calculer la donnée manquante.
             this.questionnaire_completed = this.isComplete()
         }
     }
@@ -246,7 +246,7 @@ export default class Profil {
         if (typeof value !== 'undefined') {
             this._questionnaire_start_date = value
         } else {
-            // Migration d’un ancien profil : calculer la donnée manquante
+            // Migration d’un ancien profil : calculer la donnée manquante.
             this.questionnaire_start_date = this.questionnaire_started
                 ? new Date()
                 : undefined
@@ -258,7 +258,7 @@ export default class Profil {
         if (typeof value !== 'undefined') {
             this._questionnaire_completion_date = value
         } else {
-            // Migration d’un ancien profil : calculer la donnée manquante
+            // Migration d’un ancien profil : calculer la donnée manquante.
             this.questionnaire_completion_date = this.questionnaire_completed
                 ? new Date()
                 : undefined

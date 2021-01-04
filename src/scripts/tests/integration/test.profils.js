@@ -5,13 +5,13 @@ describe('Profils', function () {
     it('remplir le questionnaire pour un proche', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction
+        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // Page d’accueil
+        // Page d’accueil.
         {
             let bouton = await page.waitForSelector('.js-profil-new >> text="Démarrer"')
             assert.equal(
@@ -26,7 +26,7 @@ describe('Profils', function () {
             ])
         }
 
-        // Saisie nom
+        // Saisie nom.
         {
             await page.fill('#page #name', 'Mamie')
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
@@ -36,7 +36,7 @@ describe('Profils', function () {
             ])
         }
 
-        // Légende adaptée
+        // Légende adaptée.
         {
             let legend = await page.waitForSelector(
                 '#page #symptomes-actuels-form legend'
@@ -44,7 +44,7 @@ describe('Profils', function () {
             assert.equal(await legend.innerText(), '1/10 - Son état actuel')
         }
 
-        // Remplir le questionnaire
+        // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
             symptomesActuels: [],
             symptomesPasses: false,
@@ -59,23 +59,23 @@ describe('Profils', function () {
             activitePro: true,
         })
 
-        // Conseils
+        // Conseils.
         {
-            // On retrouve le titre explicite
+            // On retrouve le titre explicite.
             let titre = await page.waitForSelector('#page #conseils-block-titre')
             assert.equal(await titre.innerText(), 'Conseils pour « Mamie »') // &nbsp; autour du nom
 
-            // On rend la localisation visible
+            // On rend la localisation visible.
             await page.click('#page #conseils-vie-quotidienne h3')
 
-            // On retrouve le département de résidence
+            // On retrouve le département de résidence.
             let residence = await page.waitForSelector('#page #nom-departement')
             assert.equal(await residence.innerText(), 'Somme')
 
-            // On rend l’activité visible
+            // On rend l’activité visible.
             await page.click('#page #conseils-activite h3')
 
-            // On retrouve l’activité
+            // On retrouve l’activité.
             let activite = await page.waitForSelector('#page #reponse-activite-pro')
             assert.equal(
                 (await activite.innerText()).trim(),
@@ -93,9 +93,9 @@ describe('Profils', function () {
             ])
         }
 
-        // Introduction
+        // Introduction.
         {
-            // La page comporte maintenant un lien direct vers ses conseils
+            // La page comporte maintenant un lien direct vers ses conseils.
             let bouton = await page.waitForSelector('#page >> text="Voir ses conseils"')
             assert.equal(
                 await bouton.evaluate(

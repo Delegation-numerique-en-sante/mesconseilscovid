@@ -96,7 +96,7 @@ export function bindFeedback(component, app) {
         })
     })
     document.addEventListener('pageChanged', () => {
-        // Display again the question if the user change page.
+        // Display the question again if the user navigates to another page.
         hideElement(component.querySelector('.feedback-form'))
         hideElement(component.querySelector('.feedback-thankyou'))
         showElement(component.querySelector('.feedback-question'))

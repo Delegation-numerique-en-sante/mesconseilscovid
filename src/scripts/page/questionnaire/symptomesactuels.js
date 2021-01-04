@@ -17,7 +17,7 @@ export default function symptomesactuels(form, app) {
         }
     }
 
-    // Remplir le formulaire avec les données du profil
+    // Remplir le formulaire avec les données du profil.
     preloadCheckboxForm(form, 'symptomes_actuels', app.profil)
     preloadCheckboxForm(form, 'symptomes_actuels_temperature', app.profil)
     preloadCheckboxForm(form, 'symptomes_actuels_temperature_inconnue', app.profil)
@@ -30,7 +30,7 @@ export default function symptomesactuels(form, app) {
     preloadCheckboxForm(form, 'symptomes_actuels_souffle', app.profil)
     preloadCheckboxForm(form, 'symptomes_actuels_autre', app.profil)
 
-    // La première case active ou désactive les autres
+    // La première case active ou désactive les autres.
     var primary = form.elements['symptomes_actuels']
     enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
@@ -46,7 +46,7 @@ export default function symptomesactuels(form, app) {
     const requiredLabel = 'Vous devez saisir l’un des sous-choix proposés'
     toggleFormButtonOnCheckRequired(form, button.value, uncheckedLabel, requiredLabel)
 
-    // Les choix concernant la température sont mutuellement exclusifs
+    // Les choix concernant la température sont mutuellement exclusifs.
     let tempAnormale = form.querySelector('#symptomes_actuels_temperature')
     let tempInconnue = form.querySelector('#symptomes_actuels_temperature_inconnue')
     tempAnormale.addEventListener('change', function () {
@@ -56,7 +56,7 @@ export default function symptomesactuels(form, app) {
         if (tempInconnue.checked) tempAnormale.checked = false
     })
 
-    // Soumission du formulaire
+    // Soumission du formulaire.
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.symptomes_actuels =

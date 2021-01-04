@@ -1,4 +1,4 @@
-// Données privées, stockées uniquement en local
+// Données privées, stockées uniquement en local.
 import localforage from 'localforage'
 
 export default class StockageLocal {

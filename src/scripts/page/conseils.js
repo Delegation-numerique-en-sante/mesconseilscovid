@@ -66,10 +66,10 @@ export default function conseils(element, app) {
 
     if (app.profil.hasSuiviStartDate() && app.profil.hasHistorique()) {
         if (app.profil.hasDeconfinementDate()) {
-            // Afficher le bloc de déconfinement
+            // Afficher le bloc de déconfinement.
             displayElementById(element, 'deconfinement')
         } else {
-            // Afficher le bloc de résultats de l’auto-suivi
+            // Afficher le bloc de résultats de l’auto-suivi.
             const algoSuivi = new AlgorithmeSuivi(app.profil)
             displayElementById(element, 'suivi')
             showRelevantSuiviBlocks(element, algoSuivi)
@@ -93,7 +93,7 @@ export default function conseils(element, app) {
         showElement(element.querySelector('.browser-other'))
     }
 
-    // Make the buttons clickable with appropriated actions.
+    // Make the buttons clickable with appropriate actions.
     bindFeedback(element.querySelector('.feedback-component'), app)
     bindImpression(element)
     if (app.profil.hasSuiviStartDate()) {
@@ -255,9 +255,9 @@ function dynamicTimelineDataInjection(element, profil) {
         fillDate('fin', `À partir du ${formatDate(dates.finIsolement)}`)
     }
 
-    // Frise n°1 : positif + symptômes actuels ou passés
+    // Frise n°1 : positif + symptômes actuels ou passés.
     if (profil.depistagePositifRecentSymptomatique()) {
-        // Injecte les bonnes dates dans la frise
+        // Injecte les bonnes dates dans la frise.
         fillDates({
             exposition: joursAvant(14, profil.symptomes_start_date),
             contagiosite: joursAvant(2, profil.symptomes_start_date),
@@ -268,13 +268,13 @@ function dynamicTimelineDataInjection(element, profil) {
             finIsolement: joursApres(7, profil.symptomes_start_date),
         })
 
-        // Si les symptômes ont commencé aujourd’hui, on propose le suivi demain
+        // Si les symptômes ont commencé aujourd’hui, on propose le suivi demain.
         if (profil.symptomes_start_date > joursAvant(1)) {
             hideSelector(element, '.timeline .timeline-aujourdhui')
             showSelector(element, '.timeline .timeline-demain')
         }
 
-        // Si on a fait le suivi aujourd’hui, on confirme et on dit de revenir demain
+        // Si on a fait le suivi aujourd’hui, on confirme et on dit de revenir demain.
         else if (profil.suiviAujourdhui()) {
             hideSelector(
                 element,
@@ -288,9 +288,9 @@ function dynamicTimelineDataInjection(element, profil) {
         }
     }
 
-    // Frise n°2 : positif + asymptomatique
+    // Frise n°2 : positif + asymptomatique.
     else if (profil.depistagePositifRecentAsymptomatique()) {
-        // Injecte les bonnes dates dans la frise
+        // Injecte les bonnes dates dans la frise.
         fillDates({
             exposition: joursAvant(14, profil.depistage_start_date),
             contagiosite: joursAvant(2, profil.depistage_start_date),

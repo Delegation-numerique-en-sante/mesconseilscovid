@@ -71,7 +71,7 @@ export function safeHtml(literals, ...substitutions) {
         result += literals[i]
         result += escapeHtml(substitutions[i])
     }
-    // add the last literal
+    // add the last literal.
     result += literals[literals.length - 1]
     return result
 }
