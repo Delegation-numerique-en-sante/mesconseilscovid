@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-01-04
+
+* corrige l’envoi des messages de retours depuis la page conseils
+
 ## 2021-01-02
 
 * mise à jour de l’heure du couvre-feu (18 h) pour les départements concernés
