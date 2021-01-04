@@ -504,12 +504,4 @@ export default class AlgorithmeOrientation {
         }
         return blockNames
     }
-
-    fetesBlockNamesToDisplay() {
-        const climatDoux = ['971', '972', '973', '974', '976', '977', '978']
-        if (climatDoux.indexOf(this.profil.departement) >= 0) {
-            return ['conseils-fetes-climat-doux']
-        }
-        return ['conseils-fetes-climat-autre']
-    }
 }

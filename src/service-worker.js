@@ -54,7 +54,6 @@ const CACHE_FILES = [
     'illustrations/contactarisque.svg',
     'illustrations/covid.svg',
     'illustrations/depistage.svg',
-    'illustrations/fetes.svg',
     'illustrations/foyer.svg',
     'illustrations/gestesbarrieres.svg',
     'illustrations/grossesse.svg',
