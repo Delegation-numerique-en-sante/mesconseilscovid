@@ -685,35 +685,4 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
     })
-    describe('Bloc fêtes de fin d’année', function () {
-        it('Un département inconnu affiche les conseils par défaut', function () {
-            var profil = new Profil('mes_infos', {
-                departement: undefined,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {}, {})
-            assert.deepEqual(algoOrientation.fetesBlockNamesToDisplay(), [
-                'conseils-fetes-climat-autre',
-            ])
-        })
-
-        it('En Martinique on peut manger dehors', function () {
-            var profil = new Profil('mes_infos', {
-                departement: '972',
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {}, {})
-            assert.deepEqual(algoOrientation.fetesBlockNamesToDisplay(), [
-                'conseils-fetes-climat-doux',
-            ])
-        })
-
-        it('Dans le Calvados on reste à l’intérieur', function () {
-            var profil = new Profil('mes_infos', {
-                departement: '14',
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {}, {})
-            assert.deepEqual(algoOrientation.fetesBlockNamesToDisplay(), [
-                'conseils-fetes-climat-autre',
-            ])
-        })
-    })
 })
