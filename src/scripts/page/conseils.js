@@ -94,7 +94,7 @@ export default function conseils(element, app) {
     }
 
     // Make the buttons clickable with appropriated actions.
-    bindFeedback(element.querySelector('.feedback-component'))
+    bindFeedback(element.querySelector('.feedback-component'), app)
     bindImpression(element)
     if (app.profil.hasSuiviStartDate()) {
         bindCalendar(element, app.profil)
