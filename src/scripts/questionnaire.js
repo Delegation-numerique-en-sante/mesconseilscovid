@@ -14,7 +14,7 @@ export function beforeSuiviHistorique(profil, questionnaire) {
     if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
 }
 
-// Représentation de la structure du questionnaire d’orientation
+// Représentation de la structure du questionnaire d’orientation.
 export const ORDRE = [
     'symptomesactuels',
     'symptomespasses',

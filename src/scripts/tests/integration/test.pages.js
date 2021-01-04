@@ -15,13 +15,13 @@ describe('Pages', function () {
     it('remplir le questionnaire avec pédiatrie', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction
+        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // Page d’accueil
+        // Page d’accueil.
         {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
@@ -30,7 +30,7 @@ describe('Pages', function () {
             ])
         }
 
-        // Remplir le questionnaire
+        // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
             depistage: false,
             symptomesActuels: [],
@@ -44,13 +44,13 @@ describe('Pages', function () {
             grossesse: false,
         })
 
-        // Pédiatrie
+        // Pédiatrie.
         {
-            // On retrouve le titre explicite
+            // On retrouve le titre explicite.
             let titre = await page.waitForSelector('#page h2')
             assert.equal(await titre.innerText(), 'Conseils pour les enfants')
 
-            // On retrouve le bouton pour repartir vers le questionnaire
+            // On retrouve le bouton pour repartir vers le questionnaire.
             let button = await page.waitForSelector('#page #js-profil-empty a')
             assert.equal((await button.innerText()).trim(), 'Démarrer le questionnaire')
             assert.equal(await button.getAttribute('href'), '#symptomesactuels')
@@ -60,13 +60,13 @@ describe('Pages', function () {
     it('on peut accéder aux CGU depuis l’accueil', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction
+        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // On va vers la page de CGU
+        // On va vers la page de CGU.
         {
             let bouton = await page.waitForSelector('text="Conditions d’utilisation"')
             await Promise.all([
@@ -75,13 +75,13 @@ describe('Pages', function () {
             ])
         }
 
-        // Conditions d’utilisation
+        // Conditions d’utilisation.
         {
-            // On retrouve le bouton pour repartir vers le questionnaire
+            // On retrouve le bouton pour repartir vers le questionnaire.
             let button = await page.waitForSelector('#page #js-profil-empty a')
             assert.equal((await button.innerText()).trim(), 'Démarrer le questionnaire')
             assert.equal(await button.getAttribute('href'), '#symptomesactuels')
-            // On retrouve le titre explicite
+            // On retrouve le titre explicite.
             let titre = await page.waitForSelector('#page h2')
             assert.equal(await titre.innerText(), 'Conditions d’utilisation')
         }

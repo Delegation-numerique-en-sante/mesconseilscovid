@@ -5,7 +5,7 @@ import st from 'st'
 let server
 
 before(function () {
-    // Lance un serveur HTTP
+    // Lance un serveur HTTP.
     server = http.createServer(
         st({
             path: path.join(process.cwd(), '/dist'),

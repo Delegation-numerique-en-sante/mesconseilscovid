@@ -14,7 +14,7 @@ export default function suivisymptomes(form, app) {
         app.profil.suivi_start_date = new Date()
     }
 
-    // Question affichée seulement si on répond pour un proche
+    // Question affichée seulement si on répond pour un proche.
     const pourUnProche = !app.profil.estMonProfil()
     var themOnly = form.querySelector('.them-only')
     if (pourUnProche) {
@@ -26,7 +26,7 @@ export default function suivisymptomes(form, app) {
     }
 
     var button = form.querySelector('input[type=submit]')
-    // On pré-suppose que la personne qui fait son auto-suivi a des symptômes
+    // On pré-suppose que la personne qui fait son auto-suivi a des symptômes.
     form['suivi_symptomes'].checked = true
     var primary = form.elements['suivi_symptomes']
     enableOrDisableSecondaryFields(form, primary)

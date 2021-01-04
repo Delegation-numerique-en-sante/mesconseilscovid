@@ -73,7 +73,7 @@
             trigger.apply(this, queue[i])
         }
 
-        // Seulement pour la racine, sinon ça fait doublon
+        // Seulement pour la racine, sinon ça fait doublon.
         if (location.hash.slice(1) === '') {
             trigger('pageview')
         }

@@ -1,6 +1,6 @@
 import departementsCouvreFeu18H from '../data/departementsCouvreFeu18H.js'
 
-// Les statuts possibles en sortie de l’algorithme
+// Les statuts possibles en sortie de l’algorithme.
 const STATUTS = [
     'antigenique-negatif-fragile',
     'asymptomatique',
@@ -18,7 +18,7 @@ const STATUTS = [
     'symptomatique-urgent',
 ]
 
-// Les blocs de conseils personnels possibles en sortie de l’algorithme
+// Les blocs de conseils personnels possibles en sortie de l’algorithme.
 const CONSEILS_PERSONNELS = [
     'antigenique-negatif-fragile',
     'contact-a-risque',
@@ -88,7 +88,7 @@ export default class AlgorithmeOrientation {
         return this.profil.poids / (taille_en_metres * taille_en_metres)
     }
 
-    // Facteurs pronostiques de forme grave liés au terrain (fragilité)
+    // Facteurs pronostiques de forme grave liés au terrain (fragilité).
     get personneFragile() {
         return (
             this.sup65 ||
@@ -143,7 +143,7 @@ export default class AlgorithmeOrientation {
     }
 
     get statutEtConseils() {
-        // Statut et conseils à afficher dans les 24 situations
+        // Statut et conseils à afficher dans toutes les situations.
         switch (this.situation) {
             case 'positif_symptomes_actuels_graves':
                 return {
@@ -438,12 +438,12 @@ export default class AlgorithmeOrientation {
                 blockNames.push('conseils-activite-pro-infos')
             }
 
-            // Bloc additionnel: activité libérale
+            // Bloc additionnel: activité libérale.
             if (this.profil.activite_pro_liberal) {
                 blockNames.push('conseils-activite-pro-liberal')
             }
 
-            // Bloc additionnel: personne fragile dans le foyer
+            // Bloc additionnel: personne fragile dans le foyer.
             if (this.profil.foyer_fragile) {
                 blockNames.push('reponse-activite-pro-foyer-fragile')
                 blockNames.push('conseils-activite-pro-foyer-fragile')

@@ -67,7 +67,7 @@ export default class Updater {
 
         this.updateInProgress = true
 
-        // Update service worker first
+        // Update service worker first.
         if ('serviceWorker' in navigator) {
             console.debug('Service worker supported')
             navigator.serviceWorker.getRegistration().then((registration) => {
@@ -144,18 +144,18 @@ export default class Updater {
 
         let button = event.target
 
-        // Change the URL without triggering the router
+        // Change the URL without triggering the router.
         this.router.pause()
         console.log(window.location)
         window.location = button.href
         console.log(window.location)
 
-        // User feedback as it may take more than a few milliseconds
+        // User feedback as it may take more than a few milliseconds.
         button.innerText = 'Mise à jour en cours...'
         button.setAttribute('href', '')
 
         if ('serviceWorker' in navigator) {
-            // Tell new service worker to activate now
+            // Tell new service worker to activate now.
             navigator.serviceWorker.getRegistration().then((registration) => {
                 if (registration.waiting === null) {
                     console.debug('New service worker is already active')

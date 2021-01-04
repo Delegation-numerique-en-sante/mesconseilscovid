@@ -39,7 +39,7 @@ export function initRouter(app) {
     var useHash = true
     var router = new Navigo(root, useHash)
 
-    // Workaround unwanted behaviour in Navigo
+    // Workaround unwanted behaviour in Navigo.
     if (router.root.slice(-1) !== '/') {
         router.root = router.root + '/'
     }
@@ -140,7 +140,7 @@ export function initRouter(app) {
             window.history.replaceState
         ) {
             // Replace current page with target page in the browser history
-            // so that we don’t break the back button
+            // so that we don’t break the back button.
             window.history.replaceState({}, '', `#${target}`)
             router.resolve()
         } else {

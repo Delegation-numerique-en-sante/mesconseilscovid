@@ -76,7 +76,7 @@ async function remplirDepartement(page, departement) {
 
 async function remplirFoyer(page, enfants) {
     if (enfants === true) {
-        // Je n’arrive pas à cocher la case directement, alors je clique sur le label
+        // La "vraie" case à cocher est cachée, alors on clique sur le label.
         let label
         label = await page.waitForSelector('#page label[for="foyer_enfants"]')
         await label.click()
@@ -131,7 +131,7 @@ async function remplirActivite(page, activitePro) {
     let text
 
     if (activitePro === true) {
-        // Je n’arrive pas à cocher la case directement, alors je clique sur le label
+        // La "vraie" case à cocher est cachée, alors on clique sur le label.
         await label.click()
         text = 'Terminer'
     } else {
@@ -185,7 +185,7 @@ async function remplirSymptomesActuels(page, symptomesActuels) {
     let nextPage
 
     if (symptomesActuels.length > 0) {
-        // Je n’arrive pas à cocher la case directement, alors je clique sur le label
+        // La "vraie" case à cocher est cachée, alors on clique sur le label.
         let label = await page.waitForSelector('#page label[for="symptomes_actuels"]')
         await label.click()
 
@@ -222,7 +222,7 @@ async function remplirSymptomesPasses(page, symptomesPasses) {
     let nextPage
 
     if (symptomesPasses === true) {
-        // Je n’arrive pas à cocher la case directement, alors je clique sur le label
+        // La "vraie" case à cocher est cachée, alors on clique sur le label.
         let label = await page.waitForSelector('#page label[for="symptomes_passes"]')
         await label.click()
         text = '"Continuer"'
@@ -242,7 +242,7 @@ async function remplirContactsARisque(page, contactARisque) {
     let text
 
     if (contactARisque.length > 0) {
-        // Je n’arrive pas à cocher la case directement, alors je clique sur le label
+        // La "vraie" case à cocher est cachée, alors on clique sur le label.
         let label = await page.waitForSelector('#page label[for="contact_a_risque"]')
         await label.click()
 
@@ -276,7 +276,7 @@ async function remplirDebutSymptomes(page, date) {
 }
 
 export async function remplirSuivi(page, symptomes) {
-    // Obligatoires
+    // Réponses obligatoires.
     let label
     label = await page.waitForSelector(
         `#page label[for="suivi_symptomes_essoufflement_${symptomes.essoufflement}"]`
@@ -303,7 +303,7 @@ export async function remplirSuivi(page, symptomes) {
     )
     await label.click()
 
-    // Seulement pour les proches
+    // Question seulement posée quand on remplit pour un·e proche.
     if (symptomes.confusion) {
         label = await page.waitForSelector(
             `#page label[for="suivi_symptomes_confusion_${symptomes.confusion}"]`
@@ -311,7 +311,7 @@ export async function remplirSuivi(page, symptomes) {
         await label.click()
     }
 
-    // Optionnels
+    // Réponses optionnelles.
     if (symptomes.maux_de_tete) {
         label = await page.waitForSelector(
             `#page label[for="suivi_symptomes_maux_de_tete_${symptomes.maux_de_tete}"]`

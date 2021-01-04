@@ -9,14 +9,14 @@ import { joursAvant } from '../../utils.js'
 
 export default function depistage(form, app) {
     const datePicker = form.querySelector('#depistage_start_date')
-    // Autorise seulement un intervalle de dates (7 derniers jours)
+    // Autorise seulement un intervalle de dates (7 derniers jours).
     const now = new Date()
     datePicker.setAttribute('max', now.toISOString().substring(0, 10))
     const septJoursAvant = joursAvant(7)
     datePicker.setAttribute('min', septJoursAvant.toISOString().substring(0, 10))
     addDatePickerPolyfill(datePicker, septJoursAvant, now)
 
-    // Remplir le formulaire avec les données du profil
+    // Remplir le formulaire avec les données du profil.
     preloadCheckboxForm(form, 'depistage', app.profil)
     if (app.profil.depistage) {
         datePicker.value = app.profil.depistage_start_date
@@ -38,14 +38,14 @@ export default function depistage(form, app) {
         }
     }
 
-    // La première case active ou désactive les autres
+    // La première case active ou désactive les autres.
     var primary = form.elements['depistage']
     enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
         enableOrDisableSecondaryFields(form, primary)
     })
 
-    // Le libellé du bouton change en fonction des choix
+    // Le libellé du bouton change en fonction des choix.
     var button = form.querySelector('input[type=submit]')
     const uncheckedLabel = app.profil.estMonProfil()
         ? 'Je n’ai pas passé de test'
@@ -58,7 +58,7 @@ export default function depistage(form, app) {
         requiredLabel
     )
 
-    // Soumission du formulaire
+    // Soumission du formulaire.
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         const form = event.target
