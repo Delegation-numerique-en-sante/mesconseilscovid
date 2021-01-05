@@ -13,7 +13,7 @@ install: install-python install-js
 
 install-python:  ## Install Python dependencies.
 	python3 -m pip install -U pip setuptools wheel
-	python3 -m pip install -r requirements.txt --use-feature=2020-resolver
+	python3 -m pip install -r requirements.txt
 
 install-js:  ## Install JS dependencies.
 	npm install
