@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-01-06
+
+* supprime les conseils pour les fêtes de fin d’année
+
 ## 2021-01-04
 
 * corrige l’envoi des messages de retours depuis la page conseils
