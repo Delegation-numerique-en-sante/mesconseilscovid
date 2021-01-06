@@ -95,7 +95,7 @@ export default class App {
     }
     chargerProfil(nom) {
         this.profil.nom = nom
-        return this.stockage.charger(this.profil, nom)
+        return this.stockage.charger(this.profil)
     }
     supprimerProfil(nom) {
         return this.stockage.supprimer(nom).then(() => {
