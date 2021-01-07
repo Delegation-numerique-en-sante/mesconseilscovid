@@ -678,7 +678,9 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 
 La vaccination sera **gratuite** pour tous, et ne sera pas obligatoire.
 
-Pour en savoir plus :
+La campagne de vaccination est en cours de mise en place. Nous publierons la liste des lieux de vaccination et les modalités de prise de rendez-vous dès qu’elles seront fixées.
+
+Pour en savoir plus :
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
 * Le site [vaccination-info-service](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/COVID-19) de Santé Publique France
 
