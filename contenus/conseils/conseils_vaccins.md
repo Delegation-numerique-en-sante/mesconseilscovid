@@ -1,7 +1,8 @@
-<span class="nouveau">nouveau</span> Le déploiement de la vaccination se fera en trois phases :
+<span class="nouveau">nouveau</span> Le déploiement de la vaccination se fera en plusieurs phases :
 
-* d’abord les **personnes âgées en établissements**, notamment les EHPAD, ainsi que les personnes y travaillant (lorsqu’ils sont à risque de développer une forme grave du COVID) , ainsi que les **pompiers** et les **aides à domicile** de plus de 50 ans ;
-* ensuite les personnes présentant un **facteur de risque** lié à l’âge ou une pathologie chronique, ainsi que certains professionnels de santé ;
+* dès maintenant, les **personnes âgées en établissements** (notamment les EHPAD), les personnes y travaillant (lorsqu’elles sont à risque de développer une forme grave de COVID), les **pompiers**, et les **aides à domicile** de plus de 50 ans ;
+* avant fin janvier, les personnes de **75 ans et plus** hors établissements ;
+* ensuite, les personnes présentant un **facteur de risque** lié à l’âge ou une pathologie chronique, ainsi que certains professionnels de santé ;
 * enfin, la vaccination sera **ouverte à tous** à partir du printemps.
 
 La vaccination sera **gratuite** pour tous, et ne sera pas obligatoire.
