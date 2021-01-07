@@ -12,3 +12,5 @@ La campagne de vaccination est en cours de mise en place. Nous publierons la lis
 Pour en savoir plus :
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
 * Le site [vaccination-info-service](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/COVID-19) de Santé Publique France
+
+ℹ️ *Cette section sera mise à jour régulièrement avec les dernières informations disponibles.*
