@@ -7,7 +7,7 @@
 
 La vaccination sera **gratuite** pour tous, et ne sera pas obligatoire.
 
-La campagne de vaccination est en train de se mettre en place. Nous publierons les lieux de vaccination et les détails de la prise de rendez-vous dès que cette information dès qu'ils seront fixés.
+La campagne de vaccination est en train de se mettre en place. Nous publierons les lieux de vaccination et les détails de la prise de rendez-vous dès qu'ils seront fixés.
 
 Pour en savoir plus :
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
