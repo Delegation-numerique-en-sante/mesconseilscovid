@@ -2,9 +2,9 @@
 
 ### À propos
 
-mesconseilscovid.sante.gouv.fr est un service de prévention et de conseil personnalisé pour se protéger et protéger les autres face au virus.
+*mesconseilscovid.sante.gouv.fr* est un service de prévention et de conseil personnalisé pour se protéger et protéger les autres face au virus.
 
-mesconseilscovid.sante.gouv.fr est un service du ministère des solidarités et de la santé.
+*mesconseilscovid.sante.gouv.fr* est un service du ministère des solidarités et de la santé.
 
 Nous sommes une équipe mixte, composée de médecins (infectiologues, anesthésistes, généralistes…), de représentants d’associations de patients et d’experts du numérique, en charge de sa conception.
 
@@ -42,9 +42,10 @@ Nous tâchons de rendre ce site accessible à toutes et à tous. Nous n’avons 
 Si vous rencontrez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou une fonctionnalité du site, merci de nous contacter à l’adresse
 [mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr).
 
-Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits. Pour en savoir plus sur la politique d’accessibilité numérique de l’État :
-[references.modernisation.gouv.fr](http://references.modernisation.gouv.fr/accessibilite-numerique)
+Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits.
 
+Pour en savoir plus sur la politique d’accessibilité numérique de l’État :
+[Référentiel général d'amélioration de l'accessibilité V4](https://www.numerique.gouv.fr/publications/rgaa-accessibilite/).
 
 ### Responsabilités et protection des données à caractère personnel
 
@@ -58,7 +59,7 @@ En cours de navigation, vous pouvez supprimer ces données en cliquant sur le bo
 
 Seules vos données de connexion au service (heure, date…) sont conservées pour répondre à une obligation légale (article 6 de la loi n°2004-575 du 21 juin 2004) et pour une durée d’1 an conformément à la loi.
 
-Au sein du ministère, le responsable de traitement de mesconseilscovid.sante.gouv.fr est la Délégation ministérielle du numérique en santé (DNS) du ministère des solidarités et de la Santé. La déléguée est directrice de publication.
+Au sein du ministère, le responsable de traitement de *mesconseilscovid.sante.gouv.fr* est la Délégation ministérielle du numérique en santé (DNS) du ministère des solidarités et de la Santé. La déléguée est directrice de publication.
 
 Vous pouvez également demander des informations ou exercer vos droits concernant la protection de vos données personnelles à l’adresse suivante
 [mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr).
