@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-01-07
+
+* met à jour les informations sur les vaccins
+* ajoute un lien vers "Désintox : la parole à la science"
+
 ## 2021-01-06
 
 * supprime les conseils pour les fêtes de fin d’année
