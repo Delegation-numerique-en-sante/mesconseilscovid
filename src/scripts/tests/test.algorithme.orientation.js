@@ -674,14 +674,25 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
-        it('Le couvre-feu à 18h est affiché pour les départements du Nord-Est', function () {
+        it('Le couvre-feu à 18h du 2 janvier est affiché pour les départements du Nord-Est', function () {
             var profil = new Profil('mes_infos', {
                 departement: '05',
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-couvre-feu-18h',
+                'conseils-couvre-feu-18h-2janvier',
+            ])
+        })
+
+        it('Le couvre-feu à 18h du 10 janvier est affiché pour les Bouches-du-Rhône', function () {
+            var profil = new Profil('mes_infos', {
+                departement: '13',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+                'conseils-couvre-feu-18h-10janvier',
             ])
         })
     })
