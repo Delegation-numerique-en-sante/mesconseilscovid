@@ -291,6 +291,56 @@ describe('Blocs d’informations additionnels', function () {
         })
     })
 
+    describe('Bloc vaccins', function () {
+        it('Cas général (rien)', function () {
+            var profil = new Profil('mes_infos', {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [])
+        })
+
+        it('Cas activité pro santé < 50 ans (rien)', function () {
+            var profil = new Profil('mes_infos', {
+                age: 42,
+                activite_pro_sante: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [])
+        })
+
+        it('Cas activité pro santé < 50 ans et antécédents (conseils personnalisés)', function () {
+            var profil = new Profil('mes_infos', {
+                age: 42,
+                activite_pro_sante: true,
+                antecedent_cardio: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-ton-tour',
+            ])
+        })
+
+        it('Cas activité pro santé > 50 ans (conseils personnalisés)', function () {
+            var profil = new Profil('mes_infos', {
+                age: 52,
+                activite_pro_sante: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-ton-tour',
+            ])
+        })
+
+        it('Cas sans activité pro santé > 50 ans et antécédents (rien)', function () {
+            var profil = new Profil('mes_infos', {
+                age: 52,
+                activite_pro_sante: false,
+                antecedent_cardio: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [])
+        })
+    })
+
     describe('Bloc contacts à risque', function () {})
 
     describe('Bloc mesures barrières et le masque', function () {})

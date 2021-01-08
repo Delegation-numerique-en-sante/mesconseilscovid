@@ -683,7 +683,7 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 
 * dès maintenant :
     * les **personnes âgées en établissements** (notamment les EHPAD),
-    * les **professionnels de santé**, **pompiers**, **personnel des établissements** de santé et médico-sociaux, et **aides à domicile** intervenant auprès des personnes vulnérables, âgés de **plus de 50 ans** ou présentant un **risque de forme grave** de Covid  ;
+    * les **professionnels de santé**, **pompiers**, **personnel des établissements** de santé et médico-sociaux, et **aides à domicile** intervenant auprès des personnes vulnérables, âgés de **plus de 50 ans** ou présentant un **risque de forme grave** de Covid ;
 * à partir du 18 janvier, les personnes de **75 ans et plus** hors établissements ;
 * ensuite, entre février et mars, les personnes présentant un **facteur de risque** lié à l’âge ou une pathologie chronique, ainsi que certains professionnels de santé ;
 * enfin, à la fin du printemps, la vaccination sera **ouverte à tous**.
@@ -698,6 +698,16 @@ Pour en savoir plus :
 * Les [réponses à vos questions sur le vaccin Comirnaty®](https://sante.fr/vaccination-covid-19-arnm-bnt162b2-comirnatyr-toutes-les-reponses-vos-questions) de Pfizer/BioNTech
 
 ℹ️ *Cette section sera mise à jour régulièrement avec les dernières informations disponibles.*
+
+
+
+## [conseils_vaccins_ton_tour.md](conseils_vaccins_ton_tour.md)
+
+<div class="conseil">
+
+Vous êtes un·e professionnel·le de santé de plus de 50 ans ou présentant un risque de forme grave de Covid, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à [prendre rendez-vous dans le centre de vaccination le plus proche](https://sante.fr/recherche/trouver/VaccinationCovid).
+
+</div>
 
 
 
