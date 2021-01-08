@@ -680,7 +680,7 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 
 La vaccination sera **gratuite** pour tous, et ne sera pas obligatoire.
 
-La campagne de vaccination est en cours de mise en place. Nous publierons la liste des lieux de vaccination et les modalités de prise de rendez-vous dès qu’elles seront fixées.
+La campagne de vaccination est en cours de mise en place. Un numéro de téléphone et un site internet seront annoncés **jeudi 14 janvier** pour prendre rendez-vous dans un centre de vaccination.
 
 Pour en savoir plus :
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
