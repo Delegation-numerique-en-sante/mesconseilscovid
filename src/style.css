@@ -283,14 +283,7 @@ main footer .legals {
     text-align: center;
 }
 
-.tagline {
-    font-size: x-large;
-    padding-bottom: 45%;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-}
-
+.tagline,
 .tagline-suivi {
     font-size: x-large;
 }
@@ -429,9 +422,6 @@ main footer .legals {
 }
 #conseils-covid header {
     background-image: url('illustrations/covid.svg');
-}
-.tagline {
-    background-image: url('illustrations/accueil.svg');
 }
 #conseils-pediatrie-general header {
     background-image: url('illustrations/pediatriegeneral.svg');
@@ -1246,6 +1236,62 @@ a#geolocalisation {
 
 #conseils-block-date {
     display: none;
+}
+
+.video-player {
+    position: relative;
+    padding-bottom: 55%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border: 2px solid #000091;
+    margin: 0 2rem;
+}
+
+.video-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+}
+
+.video-player img {
+    object-fit: cover;
+    display: block;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    transition: 0.4s all;
+}
+
+.video-player img:hover {
+    -webkit-filter: brightness(75%);
+}
+
+.video-player .play {
+    height: 72px;
+    width: 72px;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    background: url('video-play-button.png') no-repeat;
+    cursor: pointer;
 }
 
 @media print {

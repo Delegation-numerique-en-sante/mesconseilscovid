@@ -46,7 +46,6 @@ const CACHE_FILES = [
     'icone_fiche.svg',
     'icone_infographie.svg',
     'timeline-arrow.svg',
-    'illustrations/accueil.svg',
     'illustrations/activitepro.svg',
     'illustrations/antecedents.svg',
     'illustrations/caracteristiques.svg',
@@ -72,6 +71,8 @@ const CACHE_FILES = [
     'suivi_stable.svg',
     'suivi_interrogation.svg',
     'departements-1000m.geojson',
+    'video-play-button.png',
+    'video-thumbnail-A9wREtWw6e4.png',
 ]
 const TIMEOUT = 2000 // ms.
 
