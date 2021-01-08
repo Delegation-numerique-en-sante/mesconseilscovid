@@ -383,6 +383,14 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
+    vaccinBlockNamesToDisplay() {
+        const blockNames = []
+        if (this.profil.activite_pro_sante && (this.sup50 || this.antecedents)) {
+            blockNames.push('conseils-vaccins-ton-tour')
+        }
+        return blockNames
+    }
+
     gestesBarriereBlockNamesToDisplay() {
         const blockNames = ['conseils-gestes-barrieres-masque']
         if (this.personneFragile) {
