@@ -4,8 +4,8 @@
     * les **personnes âgées en établissements** (notamment les EHPAD),
     * les **professionnels de santé**, **pompiers**, **personnel des établissements** de santé et médico-sociaux, et **aides à domicile** intervenant auprès des personnes vulnérables, âgés de **plus de 50 ans** ou présentant un **risque de forme grave** de Covid  ;
 * à partir du 18 janvier, les personnes de **75 ans et plus** hors établissements ;
-* ensuite, les personnes présentant un **facteur de risque** lié à l’âge ou une pathologie chronique, ainsi que certains professionnels de santé ;
-* enfin, la vaccination sera **ouverte à tous** à partir du printemps.
+* ensuite, entre février et mars, les personnes présentant un **facteur de risque** lié à l’âge ou une pathologie chronique, ainsi que certains professionnels de santé ;
+* enfin, à la fin du printemps, la vaccination sera **ouverte à tous**.
 
 La vaccination sera **gratuite** pour tous, et ne sera pas obligatoire.
 
