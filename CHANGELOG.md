@@ -2,7 +2,7 @@
 
 ## 2021-01-08
 
-* met à jour les informations sur la campagne de vacc
+* met à jour les informations sur la campagne de vaccination
 
 ## 2021-01-07
 
