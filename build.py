@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import fnmatch
 import os
+import re
 from html.parser import HTMLParser
 from http import HTTPStatus
 from pathlib import Path
@@ -20,67 +21,27 @@ jinja_env = JinjaEnv(loader=FileSystemLoader(str(SRC_DIR)), undefined=StrictUnde
 
 
 class FrenchTypographyRenderer(mistune.HTMLRenderer):
+    espace_fine = "&#8239;"
+    space_finder = re.compile(
+        r"""(?:
+        (\w?\s[:;!\?\xbb])|  # Before punctuation and ».
+        ([\xab]\s\w)|  # After «.
+        ([0-9]\s([\%ghj]|jour|mg)) |  # Before units.
+        ([0-9]\s[0-9])  # Between digits, keep at the end.
+        )""",
+        re.VERBOSE,
+    )
+
     def text(self, text):
         text = super().text(text)
-        # Jours.
-        text = text.replace(" jours ", "&#8239;jours ")
-        text = text.replace(" jours ", "&#8239;jours ")
-        text = text.replace(" jours)", "&#8239;jours)")
-        text = text.replace(" jours.", "&#8239;jours.")
-        text = text.replace(" jours ", "&#8239;jours ")
-        text = text.replace(" jours ", "&#8239;jours ")
-        text = text.replace(" jours)", "&#8239;jours)")
-        text = text.replace(" jours.", "&#8239;jours.")
-        text = text.replace(" jour ", "&#8239;jour ")
-        text = text.replace(" jour ", "&#8239;jour ")
-        text = text.replace(" jour)", "&#8239;jour)")
-        text = text.replace(" jour.", "&#8239;jour.")
-        text = text.replace(" jour ", "&#8239;jour ")
-        text = text.replace(" jour ", "&#8239;jour ")
-        text = text.replace(" jour)", "&#8239;jour)")
-        text = text.replace(" jour.", "&#8239;jour.")
-        # Heures.
-        # Pour l’instant ça ne matche pas `6h`.
-        text = text.replace(" h ", "&#8239;h ")
-        text = text.replace(" h ", "&#8239;h ")
-        text = text.replace(" h)", "&#8239;h)")
-        text = text.replace(" h.", "&#8239;h.")
-        text = text.replace(" h ", "&#8239;h ")
-        text = text.replace(" h ", "&#8239;h ")
-        text = text.replace(" h)", "&#8239;h)")
-        text = text.replace(" h.", "&#8239;h.")
-        # Grammes.
-        text = text.replace(" g ", "&#8239;g ")
-        text = text.replace(" g ", "&#8239;g ")
-        text = text.replace(" g)", "&#8239;g)")
-        text = text.replace(" g.", "&#8239;g.")
-        text = text.replace(" g ", "&#8239;g ")
-        text = text.replace(" g ", "&#8239;g ")
-        text = text.replace(" g)", "&#8239;g)")
-        text = text.replace(" g.", "&#8239;g.")
-        # Milligrammes.
-        text = text.replace(" mg ", "&#8239;mg ")
-        text = text.replace(" mg ", "&#8239;mg ")
-        text = text.replace(" mg)", "&#8239;mg)")
-        text = text.replace(" mg.", "&#8239;mg.")
-        text = text.replace(" mg ", "&#8239;mg ")
-        text = text.replace(" mg ", "&#8239;mg ")
-        text = text.replace(" mg)", "&#8239;mg)")
-        text = text.replace(" mg.", "&#8239;mg.")
-        # Point-virgules.
-        text = text.replace(" ;", "&#8239;;")
-        text = text.replace(" ;", "&#8239;;")
-        # Deux-points.
-        text = text.replace(" :", "&#8239;:")
-        text = text.replace(" :", "&#8239;:")
-        # Point d’interrogation.
-        text = text.replace(" ?", "&#8239;?")
-        text = text.replace(" ?", "&#8239;?")
-        # Guillemets.
-        text = text.replace(" »", "&#8239;»")
-        text = text.replace(" »", "&#8239;»")
-        text = text.replace("« ", "«&#8239;")
-        text = text.replace("« ", "«&#8239;")
+
+        # Remove non-breaking spaces once and for all.
+        text = text.replace("\u00A0", " ")
+
+        def substitute(matchobj):
+            return matchobj.group(0).replace(" ", self.espace_fine)
+
+        text = self.space_finder.sub(substitute, text)
 
         return text
 
