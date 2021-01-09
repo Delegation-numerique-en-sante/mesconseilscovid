@@ -463,10 +463,6 @@ main footer .legals {
     background-image: url('illustrations/vaccins.svg');
 }
 
-.timeline {
-    -webkit-user-select: none !important;
-    -webkit-touch-callout: none !important;
-}
 .timeline img {
     width: 100%;
 }
