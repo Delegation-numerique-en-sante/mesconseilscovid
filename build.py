@@ -18,7 +18,76 @@ CONTENUS_DIR = HERE / "contenus"
 
 jinja_env = JinjaEnv(loader=FileSystemLoader(str(SRC_DIR)), undefined=StrictUndefined)
 
-markdown = mistune.create_markdown(escape=False)
+
+class FrenchTypographyRenderer(mistune.HTMLRenderer):
+    def text(self, text):
+        text = super().text(text)
+        # Jours.
+        text = text.replace(" jours ", "&#8239;jours ")
+        text = text.replace(" jours ", "&#8239;jours ")
+        text = text.replace(" jours)", "&#8239;jours)")
+        text = text.replace(" jours.", "&#8239;jours.")
+        text = text.replace(" jours ", "&#8239;jours ")
+        text = text.replace(" jours ", "&#8239;jours ")
+        text = text.replace(" jours)", "&#8239;jours)")
+        text = text.replace(" jours.", "&#8239;jours.")
+        text = text.replace(" jour ", "&#8239;jour ")
+        text = text.replace(" jour ", "&#8239;jour ")
+        text = text.replace(" jour)", "&#8239;jour)")
+        text = text.replace(" jour.", "&#8239;jour.")
+        text = text.replace(" jour ", "&#8239;jour ")
+        text = text.replace(" jour ", "&#8239;jour ")
+        text = text.replace(" jour)", "&#8239;jour)")
+        text = text.replace(" jour.", "&#8239;jour.")
+        # Heures.
+        # Pour l’instant ça ne matche pas `6h`.
+        text = text.replace(" h ", "&#8239;h ")
+        text = text.replace(" h ", "&#8239;h ")
+        text = text.replace(" h)", "&#8239;h)")
+        text = text.replace(" h.", "&#8239;h.")
+        text = text.replace(" h ", "&#8239;h ")
+        text = text.replace(" h ", "&#8239;h ")
+        text = text.replace(" h)", "&#8239;h)")
+        text = text.replace(" h.", "&#8239;h.")
+        # Grammes.
+        text = text.replace(" g ", "&#8239;g ")
+        text = text.replace(" g ", "&#8239;g ")
+        text = text.replace(" g)", "&#8239;g)")
+        text = text.replace(" g.", "&#8239;g.")
+        text = text.replace(" g ", "&#8239;g ")
+        text = text.replace(" g ", "&#8239;g ")
+        text = text.replace(" g)", "&#8239;g)")
+        text = text.replace(" g.", "&#8239;g.")
+        # Milligrammes.
+        text = text.replace(" mg ", "&#8239;mg ")
+        text = text.replace(" mg ", "&#8239;mg ")
+        text = text.replace(" mg)", "&#8239;mg)")
+        text = text.replace(" mg.", "&#8239;mg.")
+        text = text.replace(" mg ", "&#8239;mg ")
+        text = text.replace(" mg ", "&#8239;mg ")
+        text = text.replace(" mg)", "&#8239;mg)")
+        text = text.replace(" mg.", "&#8239;mg.")
+        # Point-virgules.
+        text = text.replace(" ;", "&#8239;;")
+        text = text.replace(" ;", "&#8239;;")
+        # Deux-points.
+        text = text.replace(" :", "&#8239;:")
+        text = text.replace(" :", "&#8239;:")
+        # Point d’interrogation.
+        text = text.replace(" ?", "&#8239;?")
+        text = text.replace(" ?", "&#8239;?")
+        # Guillemets.
+        text = text.replace(" »", "&#8239;»")
+        text = text.replace(" »", "&#8239;»")
+        text = text.replace("« ", "«&#8239;")
+        text = text.replace("« ", "«&#8239;")
+
+        return text
+
+
+markdown = mistune.create_markdown(
+    escape=False, renderer=FrenchTypographyRenderer(escape=False)
+)
 
 
 @cli
