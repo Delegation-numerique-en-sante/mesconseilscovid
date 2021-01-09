@@ -396,7 +396,10 @@ export default class AlgorithmeOrientation {
 
     vaccinBlockNamesToDisplay() {
         const blockNames = []
-        if (this.profil.activite_pro_sante && (this.sup50 || this.antecedents)) {
+        if (
+            this.profil.activite_pro_sante &&
+            (this.sup50 || this.antecedents || this.imc > 30)
+        ) {
             blockNames.push('conseils-vaccins-ton-tour')
         }
         return blockNames

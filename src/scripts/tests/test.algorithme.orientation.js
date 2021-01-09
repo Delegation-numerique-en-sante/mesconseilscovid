@@ -339,6 +339,19 @@ describe('Blocs d’informations additionnels', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [])
         })
+
+        it('Cas activité pro santé et IMC > 30 (conseils personnalisés)', function () {
+            var profil = new Profil('mes_infos', {
+                age: 42,
+                activite_pro_sante: true,
+                taille: 150,
+                poids: 100,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-ton-tour',
+            ])
+        })
     })
 
     describe('Bloc contacts à risque', function () {})
