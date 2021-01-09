@@ -23,7 +23,6 @@
   "dependencies": {
     "core-js": "3.8.2",
     "localforage": "1.7.3",
-    "loupe-js": "^1.2.0",
     "navigo": "7.1.2",
     "pikaday": "^1.8.2",
     "timeago.js": "4.0.2",

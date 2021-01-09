@@ -1,8 +1,5 @@
 import applyDetailsSummaryPolyfill from '../polyfills/details_polyfill.js'
 
-import { Loupe, enableLoupe } from 'loupe-js'
-import 'loupe-js/dist/style.css'
-
 import {
     bindCalendar,
     bindFeedback,
@@ -61,9 +58,6 @@ export default function conseils(element, app) {
     // Display appropriate conseils.
     showRelevantBlocks(element, app.profil, algoOrientation)
 
-    // Loupe pour zoomer sur la frise chronologique.
-    enableLoupeIfInnerWidthIsLessThan(element, 667)
-
     if (app.profil.hasSuiviStartDate() && app.profil.hasHistorique()) {
         if (app.profil.hasDeconfinementDate()) {
             // Afficher le bloc de déconfinement.
@@ -100,30 +94,6 @@ export default function conseils(element, app) {
         bindCalendar(element, app.profil)
     }
     bindSuppressionTotale(element.querySelector('.js-suppression'), app)
-}
-
-function enableLoupeIfInnerWidthIsLessThan(element, maxWidth) {
-    const image = element.querySelector('.timeline img')
-    const loupe = new Loupe({
-        magnification: 2.25,
-        shape: 'circle',
-        width: 250,
-        height: 250,
-        style: { boxShadow: '4px 5px 5px 4px rgba(0,0,0,0.5)' },
-    })
-    let disable = null
-    function enableOrDisableLoupe() {
-        if (window.innerWidth < maxWidth) {
-            disable = enableLoupe(image, image.src, loupe)
-        } else {
-            if (disable) {
-                disable()
-                disable = null
-            }
-        }
-    }
-    enableOrDisableLoupe()
-    window.addEventListener('resize', enableOrDisableLoupe)
 }
 
 function getCustomIllustrationName(profil) {
