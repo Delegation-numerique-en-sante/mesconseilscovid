@@ -120,7 +120,7 @@ Une personne ayant la Covid est **contagieuse 48 h avant** les premiers symptô
 
 <div class="conseil conseil-orange">
 
-<span class="nouveau">nouveau</span> À partir du 10 janvier, un **couvre-feu** s’applique dans votre département de 18 h à 6 h du matin.
+<span class="nouveau">nouveau</span> À partir du 10 janvier, un **couvre-feu** s’applique dans votre département de 18h à 6h du matin.
 
 </div>
 
@@ -723,5 +723,4 @@ Pour vos **déplacements** :
 Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919">39 19</a> (appel gratuit, de 9h à 19h du lundi au samedi) ou le <a href="tel:17">17</a> en cas d’urgence.
 
 L’application [TousAntiCovid](https://www.gouvernement.fr/info-coronavirus/tousanticovid) vous permettra de recevoir une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid.
-
 
