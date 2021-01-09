@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-01-09
+
+* ajoute 5 départements en couvre-feu avancé à 18h à partir du 10 janvier
+* conseils personnalisés de vaccination pour professionnels de santé à risque
+* retire la loupe sur la frise chronologique suite à retours utilisateurs
+
 ## 2021-01-08
 
 * met à jour les informations sur la campagne de vaccination
