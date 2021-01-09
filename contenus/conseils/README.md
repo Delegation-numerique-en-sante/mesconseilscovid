@@ -156,16 +156,17 @@ Depuis le 15 décembre, un **couvre-feu** s’applique dans votre département d
 Pour toutes vos questions sur la Covid, vous pouvez :
 
 * aller sur [Covid19-faq](https://www.covid19-faq.fr/)
-* appeler le numéro vert [0 800 130 000](tel:+33800130000) (24h/24 et 7j/7)
+* appeler le numéro vert [0 800 130 000](tel:+33800130000) (24 h/24 et 7 j/7)
 
 Décrypter les fausses informations ? [Désintox : la parole à la science](https://recherchecovid.enseignementsup-recherche.gouv.fr/desintox-la-parole-la-science).
+
 
 
 ## [conseils_covid_automédication.md](conseils_covid_automédication.md)
 
 Si vous avez des symptômes évocateurs de la Covid, ne prenez pas d’**anti-inflammatoires** sans avis médical. De plus, il semblerait que les anti-inflammatoires non stéroïdiens (AINS), comme l’ibuprofène ou le kétoprofène, pourraient **aggraver** l’infection à la Covid. C’est pourquoi :
 
-* seul le **paracétamol** est recommandé, à la dose de 1 g (1 000 mg) par prise (espacées au minimum de 4 h), sans dépasser un total de 3 g par jour ([en savoir plus](https://sfpt-fr.org/covid19-foire-aux-questions/1099-j-ai-de-la-fievre-quel-medicament-dois-je-prendre)) ;
+* seul le **paracétamol** est recommandé, à la dose de 1 g (1 000 mg) par prise (espacées au minimum de 4 h), sans dépasser un total de 3 g par jour ([en savoir plus](https://sfpt-fr.org/covid19-foire-aux-questions/1099-j-ai-de-la-fievre-quel-medicament-dois-je-prendre)) ;
 
 * si vous êtes déjà sous anti-inflammatoires, ou en cas de doute, demandez conseil à votre médecin ou consultez le site [covid19-medicaments.com](https://www.covid19-medicaments.com) ;
 
