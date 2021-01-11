@@ -1,7 +1,10 @@
 import Profil from '../profil.js'
 import { createElementFromHTML, hideElement, showElement } from '../affichage.js'
+import { lazilyEmbedVideos } from '../embeds.js'
 
 export default function introduction(element, app) {
+    lazilyEmbedVideos()
+
     const header = document.querySelector('header section')
     showElement(header.querySelector('#js-profil-empty-header'))
     hideElement(header.querySelector('#js-profil-full-header'))

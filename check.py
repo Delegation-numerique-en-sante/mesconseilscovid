@@ -91,10 +91,10 @@ def service_worker():
 
     # Make sure the cached files exist.
     for filename in sw_filenames:
-        if not ((Path("src") / filename).exists() or (Path("static") / filename).exists()):
-            raise Exception(
-                f"Non-existent file in service-worker.js: {filename}"
-            )
+        if not (
+            (Path("src") / filename).exists() or (Path("static") / filename).exists()
+        ):
+            raise Exception(f"Non-existent file in service-worker.js: {filename}")
 
     REQUIRED_FILES = {"/", "style.css", "scripts/main.js", "favicon.ico"}
 
