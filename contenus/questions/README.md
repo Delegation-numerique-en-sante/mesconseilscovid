@@ -607,11 +607,11 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 
 ## [question_symptômes_actuels_libellé.md](question_symptômes_actuels_libellé.md)
 
-<!---->J’ai <b>actuellement</b> un ou des signes qui peuvent évoquer la Covid comme <b>la fièvre, une toux ou des difficultés à respirer, des maux de tête ou une diminution de l’odorat et du goût</b>.
+<!---->J’ai <b>actuellement</b> un symptôme qui évoque la Covid comme <b>la fièvre, une toux ou des difficultés à respirer, des maux de tête ou une diminution de l’odorat et du goût</b>.
 
 ---
 
-<!---->Cette personne a <b>actuellement</b> un ou des signes qui peuvent évoquer la Covid <b>la fièvre, une toux ou des difficultés à respirer, des maux de tête ou une diminution de l’odorat et du goût</b> .
+<!---->Cette personne a <b>actuellement</b> un symptôme qui évoque la Covid <b>la fièvre, une toux ou des difficultés à respirer, des maux de tête ou une diminution de l’odorat et du goût</b> .
 
 
 
@@ -785,11 +785,11 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_passés_libellé.md](question_symptômes_passés_libellé.md)
 
-<!---->J’ai eu des <b>signes</b> (fièvre, toux ou difficultés à respirer, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer la Covid <b>dans les 7 derniers jours</b>.
+<!---->J’ai eu un <b>symptôme</b> (fièvre, toux ou difficultés à respirer, maux de tête, diminution de l’odorat et du goût) qui évoque la Covid <b>dans les 7 derniers jours</b>.
 
 ---
 
-<!---->Cette personne a eu des <b>signes</b> (fièvre, toux ou difficultés à respirer, maux de tête, diminution de l’odorat et du goût) qui peuvent évoquer la Covid <b>dans les 7 derniers jours</b>.
+<!---->Cette personne a eu un <b>symptôme</b> (fièvre, toux ou difficultés à respirer, maux de tête, diminution de l’odorat et du goût) qui évoque la Covid <b>dans les 7 derniers jours</b>.
 
 
 
