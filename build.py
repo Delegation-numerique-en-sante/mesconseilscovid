@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import fnmatch
 import os
-import re
 from html.parser import HTMLParser
 from http import HTTPStatus
 from pathlib import Path
@@ -13,6 +12,8 @@ from jinja2 import Environment as JinjaEnv
 from jinja2 import FileSystemLoader, StrictUndefined
 from minicli import cli, run, wrap
 
+from typographie import typographie
+
 HERE = Path(__file__).parent
 SRC_DIR = HERE / "src"
 CONTENUS_DIR = HERE / "contenus"
@@ -21,29 +22,8 @@ jinja_env = JinjaEnv(loader=FileSystemLoader(str(SRC_DIR)), undefined=StrictUnde
 
 
 class FrenchTypographyRenderer(mistune.HTMLRenderer):
-    espace_fine = "&#8239;"
-    space_finder = re.compile(
-        r"""(?:
-        (\w?\s[:;!\?\xbb])|  # Before punctuation and ».
-        ([\xab]\s\w)|  # After «.
-        ([0-9]\s([\%ghj]|jour|mg)) |  # Before units.
-        ([0-9]\s[0-9])  # Between digits, keep at the end.
-        )""",
-        re.VERBOSE,
-    )
-
-    def text(self, text):
-        text = super().text(text)
-
-        # Remove non-breaking spaces once and for all.
-        text = text.replace("\u00A0", " ")
-
-        def substitute(matchobj):
-            return matchobj.group(0).replace(" ", self.espace_fine)
-
-        text = self.space_finder.sub(substitute, text)
-
-        return text
+    def text(self, text_):
+        return typographie(super().text(text_))
 
 
 markdown = mistune.create_markdown(
