@@ -1,1 +1,1 @@
-La situation actuelle peut être difficile à vivre. Si vous le souhaitez, vous pouvez contacter le <a href="tel:0800190000">0800 19 00 00</a> pour une écoute et un soutien psychologique (appel gratuit, tous les jours de 9h à 21h).
+La situation actuelle peut être difficile à vivre. Si vous le souhaitez, vous pouvez contacter le <a href="tel:0800190000">0800 19 00 00</a> pour une écoute et un soutien psychologique (appel gratuit, tous les jours de 9 h à 21 h).

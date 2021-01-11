@@ -292,7 +292,8 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 ## [question_dépistage_rtpcr_libellé.md](question_dépistage_rtpcr_libellé.md)
 
-<!---->C’était un <b>test RT-PCR</b> (résultat en 24h ou plus).
+<!---->C’était un <b>test RT-PCR</b> (résultat en 24 h ou plus).
+
 
 
 ## [question_dépistage_résultat_libellé.md](question_dépistage_résultat_libellé.md)
