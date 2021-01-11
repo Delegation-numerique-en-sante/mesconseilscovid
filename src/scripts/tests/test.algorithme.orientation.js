@@ -758,5 +758,16 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-couvre-feu-18h-10janvier',
             ])
         })
+
+        it('Le couvre-feu à 18h du 12 janvier est affiché pour le Var', function () {
+            var profil = new Profil('mes_infos', {
+                departement: '83',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+                'conseils-couvre-feu-18h-12janvier',
+            ])
+        })
     })
 })
