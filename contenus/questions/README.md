@@ -697,15 +697,6 @@ Coiffeur, aide à domicile, soins d’esthétique, soins infirmiers…
 
 
 
-## [question_symptômes_contact_à_risque_aide.md](question_symptômes_contact_à_risque_aide.md)
-
-<sup>*</sup>
-C’est-à-dire en l’absence de mesures de protection efficaces pendant **toute la durée du contact**.
-
-NB : Les professionnels de santé hospitaliers ne sont pas concernés par cette évaluation des contacts à risque. Dans un contexte de soins, une évaluation spécifique doit être réalisée par le médecin du travail et l’équipe opérationnelle.
-
-
-
 ## [question_symptômes_contact_à_risque_autre_libellé.md](question_symptômes_contact_à_risque_autre_libellé.md)
 
 <!---->Je n’étais dans <b>aucune de ces situations</b>
@@ -744,11 +735,11 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_contact_à_risque_libellé.md](question_symptômes_contact_à_risque_libellé.md)
 
-<!---->J’ai passé du temps avec une personne <b>testée positive à la Covid</b> dans les <b>7 derniers jours</b>, sans protection (distance de plus d’un mètre, masque porté par moi et par la personne Covid confirmée)<sup>*</sup>
+<!---->J’ai passé du temps avec une personne <b>testée positive à la Covid</b> dans les <b>7 derniers jours</b>, <b>sans protection</b> (distance de plus d’un mètre, masque porté par moi et par la personne Covid confirmée)
 
 ---
 
-<!---->Il ou elle a passé du temps avec une personne <b>testée positive à la Covid</b> dans les <b>7 derniers jours</b>, sans protection (distance de plus d’un mètre, masque porté par lui ou elle et par la personne Covid confirmée)<sup>*</sup>
+<!---->Il ou elle a passé du temps avec une personne <b>testée positive à la Covid</b> dans les <b>7 derniers jours</b>, <b>sans protection</b> (distance de plus d’un mètre, masque porté par lui ou elle et par la personne Covid confirmée)
 
 
 
@@ -774,11 +765,11 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_contact_à_risque_stop_covid_libellé.md](question_symptômes_contact_à_risque_stop_covid_libellé.md)
 
-<!---->J’ai été informé par l’application TousAntiCovid que j’ai été en contact avec une personne testée positive à la Covid
+<!---->J’ai été informé·e du contact par l’application TousAntiCovid
 
 ---
 
-<!---->Il ou elle a été informé par l’application TousAntiCovid d’avoir été en contact avec une personne testée positive à la Covid
+<!---->Il ou elle a été informé·e du contact par l’application TousAntiCovid
 
 
 
