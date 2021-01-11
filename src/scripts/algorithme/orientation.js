@@ -457,17 +457,30 @@ export default class AlgorithmeOrientation {
             blockNames.push('conseils-activite')
             blockNames.push('reponse-activite-pro')
 
-            // Professionnel de santé ou non ?
+            // Arrêt de travail pour isolement pendant le test?
+            const arretPourIsolement =
+                this.profil.hasSymptomesActuelsReconnus() &&
+                (!this.profil.depistage ||
+                    (this.profil.depistage &&
+                        this.profil.depistage_resultat == 'en_attente'))
+            if (arretPourIsolement) {
+                blockNames.push('conseils-activite-pro-arret-de-travail-isolement')
+            }
+
+            // Professionnel de santé ?
             if (this.profil.activite_pro_sante) {
                 blockNames.push('conseils-activite-pro-sante')
-            } else {
+            }
+
+            // Autres professionnels.
+            else {
                 if (this.antecedents) {
                     blockNames.push('reponse-activite-pro-antecedents')
                     blockNames.push('conseils-activite-pro-arret')
                 } else if (this.personneFragile) {
                     blockNames.push('reponse-activite-pro-personne-fragile')
                     blockNames.push('conseils-activite-pro-personne-fragile')
-                } else {
+                } else if (!arretPourIsolement) {
                     blockNames.push('conseils-activite-pro')
                 }
                 blockNames.push('conseils-activite-pro-infos')

@@ -723,6 +723,39 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-activite-pro-liberal',
             ])
         })
+
+        it('Une activité pro avec symptômes sans test affiche lien arrêt de travail', function () {
+            var profil = new Profil('mes_infos', {
+                activite_pro: true,
+                symptomes_actuels: true,
+                symptomes_actuels_temperature: true,
+                depistage: false,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
+                'conseils-activite',
+                'reponse-activite-pro',
+                'conseils-activite-pro-arret-de-travail-isolement',
+                'conseils-activite-pro-infos',
+            ])
+        })
+
+        it('Une activité pro avec symptômes en attente de résultat affiche lien arrêt de travail', function () {
+            var profil = new Profil('mes_infos', {
+                activite_pro: true,
+                symptomes_actuels: true,
+                symptomes_actuels_temperature: true,
+                depistage: true,
+                depistage_resultat: 'en_attente',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
+                'conseils-activite',
+                'reponse-activite-pro',
+                'conseils-activite-pro-arret-de-travail-isolement',
+                'conseils-activite-pro-infos',
+            ])
+        })
     })
 
     describe('Bloc vie quotidienne', function () {
