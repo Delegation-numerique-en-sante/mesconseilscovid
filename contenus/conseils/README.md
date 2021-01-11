@@ -99,7 +99,7 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 
 ## [conseils_contacts_utiles.md](conseils_contacts_utiles.md)
 
-La situation actuelle peut être difficile à vivre. Si vous le souhaitez, vous pouvez contacter le <a href="tel:0800190000">0800 19 00 00</a> pour une écoute et un soutien psychologique (appel gratuit, tous les jours de 9h à 21h).
+La situation actuelle peut être difficile à vivre. Si vous le souhaitez, vous pouvez contacter le <a href="tel:0800190000">0800 19 00 00</a> pour une écoute et un soutien psychologique (appel gratuit, tous les jours de 9 h à 21 h).
 
 
 
@@ -429,7 +429,7 @@ Nous vous conseillons de :
 
 3. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 
-4. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
+4. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 
 5. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
 
@@ -451,7 +451,7 @@ Nous vous conseillons de :
 
 4. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 
-5. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
+5. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 
 6. Revenir sur Mes Conseils Covid **quand vous aurez reçu vos résultats** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
@@ -487,7 +487,7 @@ Nous vous conseillons de :
 
 5. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 
-6. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
+6. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 
 7. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
@@ -513,7 +513,7 @@ Nous vous conseillons de :
 
 2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 
-3. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
+3. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 
 4. Revenir sur Mes Conseils Covid **quand vous aurez reçu vos résultats** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
@@ -529,7 +529,7 @@ Nous vous conseillons de :
 
 2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
 
-3. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
+3. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 
 4. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
 
@@ -549,7 +549,7 @@ Nous vous conseillons de :
 
 3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 
-4. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
+4. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
@@ -725,10 +725,10 @@ Pour vos **courses**, nous vous conseillons de :
 Pour vos **déplacements** :
 
   * à partir du 15 décembre, les déplacements vers l’étranger sont possibles ;
-  * un test négatif de moins de 72h est obligatoire pour entrer sur le territoire ;
+  * un test négatif de moins de 72 h est obligatoire pour entrer sur le territoire ;
   * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »).
 
-Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919">39 19</a> (appel gratuit, de 9h à 19h du lundi au samedi) ou le <a href="tel:17">17</a> en cas d’urgence.
+Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919">39 19</a> (appel gratuit, de 9 h à 19 h du lundi au samedi) ou le <a href="tel:17">17</a> en cas d’urgence.
 
 L’application [TousAntiCovid](https://www.gouvernement.fr/info-coronavirus/tousanticovid) vous permettra de recevoir une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid.
 
