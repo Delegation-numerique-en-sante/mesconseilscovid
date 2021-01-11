@@ -30,7 +30,7 @@ clean:  ## Clean up JS related stuff.
 ##    make test-integration browser=webkit grep=suivi
 ##    make test browser=webkit
 
-test: test-unit test-integration test-feedback
+test: test-unit test-integration tets-tools test-feedback
 
 ifdef grep
 script_flags = -- --grep $(grep)
@@ -55,6 +55,9 @@ else
 	npm run-script --browser=firefox test-integration $(script_flags)
 	npm run-script --browser=webkit test-integration $(script_flags)
 endif
+
+test-tools:
+	pytest test_*.py
 
 test-feedback:
 	tox -c feedback/tox.ini
