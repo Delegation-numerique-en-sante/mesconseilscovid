@@ -1,5 +1,6 @@
 import departementsCouvreFeu18H2Janvier from '../data/departementsCouvreFeu18H2Janvier.js'
 import departementsCouvreFeu18H10Janvier from '../data/departementsCouvreFeu18H10Janvier.js'
+import departementsCouvreFeu18H12Janvier from '../data/departementsCouvreFeu18H12Janvier.js'
 
 // Les statuts possibles en sortie de l’algorithme.
 const STATUTS = [
@@ -309,6 +310,14 @@ export default class AlgorithmeOrientation {
         )
     }
 
+    couvreFeu18H12Janvier() {
+        return (
+            Object.keys(departementsCouvreFeu18H12Janvier).indexOf(
+                this.profil.departement
+            ) > -1
+        )
+    }
+
     timelineBlockNamesToDisplay() {
         const blockNames = []
         if (this.profil.depistagePositifRecent()) {
@@ -429,6 +438,8 @@ export default class AlgorithmeOrientation {
             blockNames.push('conseils-couvre-feu-18h-2janvier')
         } else if (this.couvreFeu18H10Janvier()) {
             blockNames.push('conseils-couvre-feu-18h-10janvier')
+        } else if (this.couvreFeu18H12Janvier()) {
+            blockNames.push('conseils-couvre-feu-18h-12janvier')
         } else {
             blockNames.push('conseils-couvre-feu-20h')
         }
