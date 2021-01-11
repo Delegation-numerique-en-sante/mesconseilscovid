@@ -18,7 +18,7 @@ RE_ESPACES = regex.compile(
         build_regex(r"\w?", r"[:;!\?]"),  # Ponctuations doubles.
         build_regex(r"«", r"\w"),  # Guillemets typographiques.
         build_regex(r"\w", r"»"),  # Guillemets typographiques.
-        build_regex(r"\d", r"([ghj]|jours?|mg)(\b|$)"),  # Unités.
+        build_regex(r"\d", r"([ghj]|jours?|heures?|ans?|mg)(\b|$)"),  # Unités.
         build_regex(r"\d", r"%"),  # Pourcentages.
         build_regex(r"\d", r"\d"),  # Séparateurs de milliers.
     )
