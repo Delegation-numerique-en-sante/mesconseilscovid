@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-01-11
+
+* mise à jour de la liste des départements pour le couvre-feu avancé à 18h
+
 ## 2021-01-09
 
 * ajoute 5 départements en couvre-feu avancé à 18h à partir du 10 janvier
