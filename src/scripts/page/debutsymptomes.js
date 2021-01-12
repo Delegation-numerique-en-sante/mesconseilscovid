@@ -26,7 +26,7 @@ export default function debutsymptomes(form, app) {
         }
     )
 
-    setupDatePicker(form)
+    setupDatePicker(form, submitButton)
 
     form.addEventListener('submit', function (event) {
         event.preventDefault()
@@ -112,15 +112,16 @@ function updateSubmitButton(form, submitButton) {
 function dateFromForm(form) {
     const radioValue = getRadioValue(form, 'suivi_symptomes_date')
     if (radioValue === 'encore_avant_hier') {
-        return dateFromPicker(form.elements['suivi_symptomes_date_exacte'])
+        return dateFromPicker(form)
     } else {
         return dateFromRadioButton(radioValue)
     }
 }
 
-function dateFromPicker(element) {
-    if (element.value !== '') {
-        return new Date(element.value)
+function dateFromPicker(form) {
+    let datePicker = form.elements['suivi_symptomes_date_exacte']
+    if (datePicker.value !== '') {
+        return new Date(datePicker.value)
     }
 }
 
