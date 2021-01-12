@@ -79,10 +79,7 @@ export const TRANSITIONS = {
             depistage: (profil) => profil.isDepistageComplete(),
         },
         next: {
-            sante: (profil) =>
-                profil.isResidenceComplete() &&
-                profil.isFoyerComplete() &&
-                profil.isActiviteProComplete(),
+            sante: (profil) => profil.isSituationComplete(),
         },
     },
     sante: {

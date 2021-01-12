@@ -439,18 +439,6 @@ export default class Profil {
         )
     }
 
-    isResidenceComplete() {
-        return typeof this.departement !== 'undefined'
-    }
-
-    isFoyerComplete() {
-        return typeof this.foyer_enfants !== 'undefined'
-    }
-
-    isSanteComplete() {
-        return this.isAntecedentsComplete() && this.isCaracteristiquesComplete()
-    }
-
     isAntecedentsComplete() {
         return (
             typeof this.antecedent_cardio !== 'undefined' &&
@@ -474,8 +462,16 @@ export default class Profil {
         )
     }
 
-    isActiviteProComplete() {
-        return typeof this.activite_pro !== 'undefined'
+    isSanteComplete() {
+        return this.isAntecedentsComplete() && this.isCaracteristiquesComplete()
+    }
+
+    isSituationComplete() {
+        return (
+            typeof this.departement !== 'undefined' &&
+            typeof this.foyer_enfants !== 'undefined' &&
+            typeof this.activite_pro !== 'undefined'
+        )
     }
 
     isSymptomesActuelsComplete() {
@@ -504,10 +500,8 @@ export default class Profil {
 
     isComplete() {
         return (
-            this.isResidenceComplete() &&
-            this.isFoyerComplete() &&
+            this.isSituationComplete() &&
             this.isSanteComplete() &&
-            this.isActiviteProComplete() &&
             this.isSymptomesActuelsComplete() &&
             this.isSymptomesPassesComplete() &&
             this.isContactARisqueComplete() &&
