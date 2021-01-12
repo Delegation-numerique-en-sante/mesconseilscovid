@@ -1,5 +1,6 @@
 import { getCurrentPageName } from './pagination.js'
 import { showElement } from './affichage.js'
+import { ORDRE } from './questionnaire.js'
 
 export default class Updater {
     constructor(router) {
@@ -94,25 +95,16 @@ export default class Updater {
 
     notifyUser() {
         const pageName = getCurrentPageName()
-        if (this.isFillingQuestionnaire()) {
+        if (this.onInteractivePage(pageName)) {
             this.notifyUserWithoutInterrupting(pageName)
         } else {
             this.redirectUserToUpdatePage(pageName)
         }
     }
 
-    isFillingQuestionnaire() {
-        const pageName = getCurrentPageName()
-        return (
-            pageName === 'residence' ||
-            pageName === 'activitepro' ||
-            pageName === 'foyer' ||
-            pageName === 'caracteristiques' ||
-            pageName === 'antecedents' ||
-            pageName === 'symptomesactuels' ||
-            pageName === 'symptomespasses' ||
-            pageName === 'contactarisque'
-        )
+    onInteractivePage(pageName) {
+        const interactivePages = ORDRE.concat(['suivisymptomes'])
+        return interactivePages.indexOf(pageName) > -1
     }
 
     notifyUserWithoutInterrupting(pageName) {
