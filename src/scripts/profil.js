@@ -81,7 +81,6 @@ export default class Profil {
         this.departement = undefined
 
         this.activite_pro = undefined
-        this.activite_pro_public = undefined
         this.activite_pro_sante = undefined
 
         this.foyer_enfants = undefined
@@ -147,7 +146,6 @@ export default class Profil {
         this.departement = data['departement']
 
         this.activite_pro = data['activite_pro']
-        this.activite_pro_public = data['activite_pro_public']
         this.activite_pro_sante = data['activite_pro_sante']
 
         this.foyer_enfants = data['foyer_enfants']
@@ -288,7 +286,6 @@ export default class Profil {
             depistage_resultat: '',
             departement: '34',
             activite_pro: false,
-            activite_pro_public: false,
             activite_pro_sante: false,
             foyer_enfants: false,
             age: '42',
@@ -364,7 +361,6 @@ export default class Profil {
         return {
             departement: this.departement,
             activite_pro: this.activite_pro,
-            activite_pro_public: this.activite_pro_public,
             activite_pro_sante: this.activite_pro_sante,
             foyer_enfants: this.foyer_enfants,
             age: this.age,
@@ -421,7 +417,6 @@ export default class Profil {
         return (
             typeof this.departement === 'undefined' &&
             typeof this.activite_pro === 'undefined' &&
-            typeof this.activite_pro_public === 'undefined' &&
             typeof this.activite_pro_sante === 'undefined' &&
             typeof this.foyer_enfants === 'undefined' &&
             typeof this.age === 'undefined' &&
