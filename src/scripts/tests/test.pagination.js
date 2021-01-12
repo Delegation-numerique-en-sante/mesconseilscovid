@@ -389,7 +389,6 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
-                activite_pro_public: false,
                 activite_pro_sante: false,
                 foyer_enfants: true,
                 age: '42',
@@ -475,7 +474,6 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
-                activite_pro_public: false,
                 activite_pro_sante: false,
                 foyer_enfants: true,
                 age: '42',
@@ -519,7 +517,6 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
-                activite_pro_public: false,
                 activite_pro_sante: false,
                 foyer_enfants: true,
                 age: '42',
@@ -564,7 +561,6 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
-                activite_pro_public: false,
                 activite_pro_sante: false,
                 foyer_enfants: true,
                 age: '42',
@@ -609,7 +605,6 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
-                activite_pro_public: false,
                 activite_pro_sante: false,
                 foyer_enfants: true,
                 age: '42',
@@ -655,7 +650,6 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
-                activite_pro_public: false,
                 activite_pro_sante: false,
                 foyer_enfants: true,
                 age: '42',
@@ -681,7 +675,6 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
-                activite_pro_public: false,
                 activite_pro_sante: false,
                 foyer_enfants: true,
                 age: '42',
@@ -708,7 +701,6 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
-                activite_pro_public: false,
                 activite_pro_sante: false,
                 foyer_enfants: true,
                 age: '42',
@@ -735,7 +727,6 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
-                activite_pro_public: false,
                 activite_pro_sante: false,
                 foyer_enfants: true,
                 age: '42',
@@ -781,7 +772,6 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
-                activite_pro_public: false,
                 activite_pro_sante: false,
                 foyer_enfants: true,
                 age: '42',

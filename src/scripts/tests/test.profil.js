@@ -14,7 +14,6 @@ describe('Profil', function () {
         assert.deepEqual(profil.getData(), {
             departement: undefined,
             activite_pro: undefined,
-            activite_pro_public: undefined,
             activite_pro_sante: undefined,
             foyer_enfants: undefined,
             age: undefined,
@@ -132,7 +131,6 @@ describe('Profil', function () {
         var data = {
             departement: '34',
             activite_pro: false,
-            activite_pro_public: false,
             activite_pro_sante: false,
             foyer_enfants: true,
             age: '42',
@@ -194,7 +192,6 @@ describe('Profil', function () {
         var data = {
             departement: '34',
             activite_pro: false,
-            activite_pro_public: false,
             activite_pro_sante: false,
             foyer_enfants: true,
             age: '12',
@@ -254,7 +251,6 @@ describe('Profil', function () {
         var profil = new Profil('mes_infos', {
             departement: '34',
             activite_pro: false,
-            activite_pro_public: false,
             activite_pro_sante: false,
             foyer_enfants: true,
             age: '42',
@@ -308,7 +304,6 @@ describe('Profil', function () {
         assert.deepEqual(profil.getData(), {
             departement: undefined,
             activite_pro: undefined,
-            activite_pro_public: undefined,
             activite_pro_sante: undefined,
             foyer_enfants: undefined,
             age: undefined,
@@ -366,7 +361,6 @@ describe('Profil', function () {
         var profil = new Profil('mes_infos', {
             departement: '34',
             activite_pro: false,
-            activite_pro_public: false,
             activite_pro_sante: false,
             foyer_enfants: true,
             age: '42',
@@ -420,7 +414,6 @@ describe('Profil', function () {
         assert.deepEqual(profil.getData(), {
             departement: '34',
             activite_pro: false,
-            activite_pro_public: false,
             activite_pro_sante: false,
             foyer_enfants: true,
             age: '42',
@@ -516,7 +509,6 @@ describe('Profil', function () {
         var profil = new Profil('mes_infos', {
             departement: '34',
             activite_pro: false,
-            activite_pro_public: false,
             activite_pro_sante: false,
             foyer_enfants: true,
             age: '42',
