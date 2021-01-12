@@ -79,7 +79,7 @@ describe('Pagination', function () {
         })
     })
 
-    describe('Mes caractéristiques', function () {
+    describe('Ma santé', function () {
         it('redirige vers question foyer si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
@@ -88,13 +88,10 @@ describe('Pagination', function () {
                 contact_a_risque: false,
                 departement: '80',
             })
-            assert.strictEqual(
-                questionnaire.before('caracteristiques', profil),
-                'foyer'
-            )
+            assert.strictEqual(questionnaire.before('sante', profil), 'foyer')
         })
 
-        it('ok d’aller à la question caractéristiques si réponse à foyer', function () {
+        it('ok d’aller à la question santé si réponse à foyer', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
                 depistage: false,
@@ -104,9 +101,9 @@ describe('Pagination', function () {
                 foyer_enfants: false,
                 foyer_fragile: false,
             })
-            assert.isUndefined(questionnaire.before('caracteristiques', profil))
+            assert.isUndefined(questionnaire.before('sante', profil))
         })
-        it('ok d’aller à la question caractéristiques même si déjà répondu', function () {
+        it('ok d’aller à la question santé même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
                 depistage: false,
@@ -129,12 +126,12 @@ describe('Pagination', function () {
                 poids: 80,
                 taille: 180,
             })
-            assert.isUndefined(questionnaire.before('caracteristiques', profil))
+            assert.isUndefined(questionnaire.before('sante', profil))
         })
     })
 
     describe('Mon activité', function () {
-        it('redirige vers question caractéristiques si réponse manquante', function () {
+        it('redirige vers question santé si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
                 depistage: false,
@@ -157,10 +154,7 @@ describe('Pagination', function () {
                 poids: 80,
                 // Manque la taille.
             })
-            assert.strictEqual(
-                questionnaire.before('activitepro', profil),
-                'caracteristiques'
-            )
+            assert.strictEqual(questionnaire.before('activitepro', profil), 'sante')
         })
         it('redirige vers pédiatrie si âge inférieur à 15', function () {
             const profil = new Profil('mes_infos', {
@@ -187,7 +181,7 @@ describe('Pagination', function () {
             })
             assert.strictEqual(questionnaire.before('activitepro', profil), 'pediatrie')
         })
-        it('ok d’aller à la question activité pro si réponse à caractéristiques', function () {
+        it('ok d’aller à la question activité pro si réponse à santé', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
                 depistage: false,

@@ -299,7 +299,7 @@ main footer .legals {
 #residence-form,
 #activite-pro-form,
 #foyer-form,
-#caracteristiques-form,
+#sante-form,
 #symptomes-actuels-form,
 #symptomes-passes-form,
 #contact-a-risque-form,
@@ -343,7 +343,7 @@ main footer .legals {
     #residence-form,
     #activite-pro-form,
     #foyer-form,
-    #caracteristiques-form,
+    #sante-form,
     #symptomes-actuels-form,
     #symptomes-passes-form,
     #contact-a-risque-form,
@@ -413,8 +413,8 @@ main footer .legals {
     background-image: url('illustrations/contact_medecin.svg');
 }
 #suivi-medecin-form,
-#caracteristiques-form {
-    background-image: url('illustrations/caracteristiques.svg');
+#sante-form {
+    background-image: url('illustrations/sante.svg');
 }
 #conseils-grossesse header {
     background-image: url('illustrations/grossesse.svg');

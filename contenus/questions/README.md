@@ -220,11 +220,11 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 ## [question_caractéristiques_titre.md](question_caractéristiques_titre.md)
 
-<!---->Mes caractéristiques
+<!---->Ma santé
 
 ---
 
-<!---->Ses caractéristiques
+<!---->Sa santé
 
 
 
