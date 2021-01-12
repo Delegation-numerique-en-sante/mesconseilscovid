@@ -36,13 +36,13 @@ Vous travaillez et/ou êtes bénévole (<a href="#activitepro">modifier</a>)
 
 ## [réponse_antécédents.md](réponse_antécédents.md)
 
-<b class="nom-antecedents"></b> (<a href="#caracteristiques">modifier</a>)
+<b class="nom-antecedents"></b> (<a href="#sante">modifier</a>)
 
 
 
 ## [réponse_caractéristiques_à_risques.md](réponse_caractéristiques_à_risques.md)
 
-Vous présentez une ou des caractéristiques à risque : <b class="nom-caracteristiques-a-risques"></b> (<a href="#caracteristiques">modifier</a>)
+Vous présentez une ou des caractéristiques à risque : <b class="nom-caracteristiques-a-risques"></b> (<a href="#sante">modifier</a>)
 
 
 
@@ -66,7 +66,7 @@ Vous vivez avec une ou des personnes considérée(s) comme fragile(s) face à la
 
 ## [réponse_grossesse.md](réponse_grossesse.md)
 
-Vous êtes enceinte au 3e trimestre de votre grossesse (<a href="#caracteristiques">modifier</a>)
+Vous êtes enceinte au 3e trimestre de votre grossesse (<a href="#sante">modifier</a>)
 
 
 ## [réponse_personne_fragile.md](réponse_personne_fragile.md)
