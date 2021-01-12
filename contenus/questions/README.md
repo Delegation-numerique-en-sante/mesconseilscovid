@@ -63,11 +63,11 @@ Médecin, infirmier, aide soignant, pharmacien, orthophoniste, brancardier, mani
 
 ## [question_antecedent_chronique.md](question_antecedent_chronique.md)
 
-<!---->Je suis un traitement médical ou j’ai une maladie chronique
+<!---->Je prends un traitement de longue durée ou j’ai une maladie chronique
 
 ---
 
-<!---->Cette personne suit un traitement médical ou a une maladie chronique
+<!---->Cette personne prend un traitement de longue durée ou elle a une maladie chronique
 
 
 
