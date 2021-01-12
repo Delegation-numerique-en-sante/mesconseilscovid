@@ -30,9 +30,8 @@ export default function debutsymptomes(form, app) {
 
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        app.profil.symptomes_start_date =
-            dateFromPicker(event.target.elements['suivi_symptomes_date_exacte']) ||
-            dateFromRadioButton(getRadioValue(event.target, 'suivi_symptomes_date'))
+
+        app.profil.symptomes_start_date = dateFromForm(form)
 
         // Enregistre le démarrage du suivi.
         if (!app.profil.hasSuiviStartDate()) {
@@ -111,11 +110,11 @@ function updateSubmitButton(form, submitButton) {
 }
 
 function dateFromForm(form) {
-    let radio = form.elements['suivi_symptomes_date']
-    if (radio.value === 'encore_avant_hier') {
+    const radioValue = getRadioValue(form, 'suivi_symptomes_date')
+    if (radioValue === 'encore_avant_hier') {
         return dateFromPicker(form.elements['suivi_symptomes_date_exacte'])
     } else {
-        return dateFromRadioButton(radio)
+        return dateFromRadioButton(radioValue)
     }
 }
 
