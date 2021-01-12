@@ -469,6 +469,10 @@ export default class Profil {
         )
     }
 
+    isSanteComplete() {
+        return this.isAntecedentsComplete() && this.isCaracteristiquesComplete()
+    }
+
     isAntecedentsComplete() {
         return (
             typeof this.antecedent_cardio !== 'undefined' &&
@@ -524,8 +528,7 @@ export default class Profil {
         return (
             this.isResidenceComplete() &&
             this.isFoyerComplete() &&
-            this.isAntecedentsComplete() &&
-            this.isCaracteristiquesComplete() &&
+            this.isSanteComplete() &&
             this.isActiviteProComplete() &&
             this.isSymptomesActuelsComplete() &&
             this.isSymptomesPassesComplete() &&
