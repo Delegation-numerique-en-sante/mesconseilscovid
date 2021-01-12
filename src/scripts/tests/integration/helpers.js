@@ -53,7 +53,7 @@ export async function remplirQuestionnaire(page, choix) {
     )
     await remplirDepartement(page, choix.departement)
     await remplirFoyer(page, choix.enfants)
-    await remplirCaracteristiques(
+    await remplirSante(
         page,
         choix.age,
         choix.taille,
@@ -93,7 +93,7 @@ async function remplirFoyer(page, enfants) {
     await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#sante' })])
 }
 
-async function remplirCaracteristiques(page, age, taille, poids, antecedents) {
+async function remplirSante(page, age, taille, poids, antecedents) {
     let label
     await page.fill('#page #age', age)
     await page.fill('#page #taille', taille)
