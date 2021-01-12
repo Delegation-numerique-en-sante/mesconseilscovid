@@ -50,11 +50,9 @@ Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de t
 ## [conseils_activité_pro_santé.md](conseils_activité_pro_santé.md)
 
 * Les informations du ministère de la santé sur :
-
     * la protection des [professionnels **de santé**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/distrilog-sante),
     * la protection des [professionnels **du médico-social**](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-du-social-et-medico-social/),
     * les [aides logistiques et psychologiques](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/professionnels-de-sante/article/aides-logistiques-et-psychologiques-aux-professionnels) pour tous les professionnels de santé.
-
 * Nos conseils pour [les moins de 15 ans](#pediatrie), si vous travaillez auprès d’enfants et/ou devez conseiller des parents.
 * [L’espace dédié pour les professionnels](https://www.gouvernement.fr/info-coronavirus/espace-pour-les-professionnels) sur le site du gouvernement.
 
@@ -84,7 +82,6 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 ## [conseils_contact_à_risque_info.md](conseils_contact_à_risque_info.md)
 
 * [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_-_nouveau.pdf)
-
 * [Quelles conduites adopter et quel sera mon parcours si j’ai été en contact avec un cas Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_personne_contact.pdf)
 
 
@@ -92,7 +89,6 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 ## [conseils_contacter_un_médecin.md](conseils_contacter_un_médecin.md)
 
 * Si vous n’arrivez pas à consulter un médecin, contactez un médecin de garde.
-
 * Appelez le 15 si une gêne respiratoire ou des difficultés importantes pour vous alimenter ou boire apparaissent **pendant plus de 24 heures**.
 
 
@@ -167,9 +163,7 @@ Décrypter les fausses informations ? [Désintox : la parole à la science](htt
 Si vous avez des symptômes évocateurs de la Covid, ne prenez pas d’**anti-inflammatoires** sans avis médical. De plus, il semblerait que les anti-inflammatoires non stéroïdiens (AINS), comme l’ibuprofène ou le kétoprofène, pourraient **aggraver** l’infection à la Covid. C’est pourquoi :
 
 * seul le **paracétamol** est recommandé, à la dose de 1 g (1 000 mg) par prise (espacées au minimum de 4 h), sans dépasser un total de 3 g par jour ([en savoir plus](https://sfpt-fr.org/covid19-foire-aux-questions/1099-j-ai-de-la-fievre-quel-medicament-dois-je-prendre)) ;
-
 * si vous êtes déjà sous anti-inflammatoires, ou en cas de doute, demandez conseil à votre médecin ou consultez le site [covid19-medicaments.com](https://www.covid19-medicaments.com) ;
-
 * plus d’informations sur la prise d’anti-inflammatoires non stéroïdiens [en cas de fièvre](https://sfpt-fr.org/covid19-foire-aux-questions/1085-je-prends-ou-je-souhaite-prendre-un-anti-inflammatoire-non-steroidien-ains-pour-la-fievre-que-dois-je-faire), ou [en cas de toux ou de douleurs musculaires](https://sfpt-fr.org/covid19-foire-aux-questions/1087-j-ai-de-la-fievre-et-je-prends-ou-je-souhaite-prendre-un-anti-inflammatoire-non-steroidien-ains-pour-la-toux-ou-les-myalgies-que-dois-je-faire).
 
 
@@ -191,9 +185,7 @@ Consultez notre page dédiée : [« Conseils liés aux activités et à la san
 </div>
 
 * Si vos enfants sont gardés par leurs grands-parents et/ou par des personnes à risque face à la Covid, il convient de mettre en place des mesures de **distanciation physique renforcée** pendant la garde d’enfants.
-
 * Si vous n’avez **pas de solution pour faire garder votre enfant :** informez votre employeur et envisagez avec lui les modalités de télétravail qui pourraient être mises en place, [ou d’indemnisation si ce n’est pas possible.](https://www.ameli.fr/haute-garonne/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail#text_114568)
-
 * Les consultations de vos enfants comportant des **vaccins** obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) doivent être **maintenues.**
 
 
@@ -201,21 +193,16 @@ Consultez notre page dédiée : [« Conseils liés aux activités et à la san
 ## [conseils_gestes_barrieres_masque_fragile.md](conseils_gestes_barrieres_masque_fragile.md)
 
 * Afin d’éviter une forme grave de Covid, il vous est recommandé d’appliquer les mesures de **distanciation physique renforcée** :
-
   * appliquez strictement [les mesures barrières](https://www.gouvernement.fr/sites/default/files/coronavirus_mesures_barrieres_nouveau.pdf),
   * gardez une distance de **plus d’1 mètre** avec chaque personne,
   * portez le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile,
   * **réduisez vos sorties** au strict minimum.
-
 * Le port du **masque** :
   * contactez votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux**
   * [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
   * [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
   * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
-
-
 * L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_covid-19_aeration-ventilation-climatisation-chauffage_28_10_2020.pdf)
-
 * Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)
 
 
@@ -229,18 +216,14 @@ Le **port du masque est obligatoire** dans les **[lieux publics clos](https://so
 </div>
 
 * Les mesures de **distanciation physique** :
-
   * appliquer strictement [les mesures barrières](https://www.gouvernement.fr/sites/default/files/coronavirus_mesures_barrieres_nouveau.pdf),
   * garder une distance de **plus d’1 mètre** avec chaque personne.
-
 * Le port du **masque** :
   * [Quel est le niveau de protection entre deux personnes ?](https://www.gouvernement.fr/info-coronavirus/masques-grand-public#les_informations_essentielles)
   * [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
   * [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
   * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
-
 * L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_covid-19_aeration-ventilation-climatisation-chauffage_28_10_2020.pdf)
-
 * Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)
 
 
@@ -339,16 +322,11 @@ Vous avez des symptômes évocateurs de la Covid et vous pouvez développer une 
 Nous vous conseillons de :
 
 1. Vous maintenir **en isolement pendant 7 jours** après le dernier contact à risque.
-
 2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
-
 3. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
-
 4. **Prévoir un test en laboratoire au 7<sup>e</sup> jour** suivant le dernier contact avec le malade, en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid). En tant que « Cas contact » d’une personne malade vous serez prioritaire pour faire votre test :
-
     * S’il est **négatif**, vous pourrez lever votre isolement.
     * Si le test est **positif**, il faudra à nouveau 7 jours d’isolement, et surveiller l’apparition de symptômes.
-
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 
@@ -358,7 +336,6 @@ Nous vous conseillons de :
 Vous avez passé du temps avec quelqu’un de positif, mais il ne s’agit pas *a priori* d’un contact à risque. Au moindre doute, ou en cas d’apparition de symptômes, n’hésitez pas à :
 
 1. Contacter **votre médecin**.
-
 2. **Revenir sur Mes Conseils Covid** afin d’avoir les conseils adaptés à votre nouvelle situation.
 
 
@@ -368,16 +345,11 @@ Vous avez passé du temps avec quelqu’un de positif, mais il ne s’agit pas *
 Nous vous conseillons de :
 
 1. Vous maintenir **en isolement**.
-
 2. Appliquer **les mesures barrières renforcées** avec la personne malade et les autres membres de votre foyer.
-
 3. **Faire un test** en laboratoire 7 jours après la guérison de la personne malade :
-
     * S’il est **négatif**, vous pourrez lever votre isolement.
     * Si le test est **positif**, il faudra à nouveau 7 jours d’isolement, et surveiller l’apparition de symptômes.
-
 4. Si vous constatez l’apparition de **symptômes**, contactez votre médecin, et suivez leur évolution avec le [questionnaire de suivi](#suivisymptomes).
-
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 
@@ -387,16 +359,11 @@ Nous vous conseillons de :
 Nous vous conseillons de :
 
 1. Vous maintenir **en isolement**.
-
 2. Appliquer **les mesures barrières renforcées** avec la personne malade et les autres membres de votre foyer.
-
 3. Faire un **test de dépistage** en laboratoire :
-
     * Si celui-ci est positif, **restez 7 jours en isolement**.
     * Si celui-ci est négatif, **restez en isolement** et **refaites un test** 7 jours après la guérison de la personne malade.
-
 4. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
-
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 
@@ -406,15 +373,10 @@ Nous vous conseillons de :
 Nous vous conseillons de :
 
 1. Vous maintenir **en isolement**, au moins 7 jours à partir de la date du test.
-
 2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
-
 3. Si vous constatez l’apparition de **symptômes**, vous pouvez suivre leur évolution avec le [questionnaire de suivi](#suivisymptomes).
-
 4. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. Des outils, comme par exemple l’outil [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées et des lieux que vous avez fréquentés depuis le début de votre période contagieuse.
-
 5. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
-
 6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 
@@ -424,15 +386,10 @@ Nous vous conseillons de :
 Nous vous conseillons de :
 
 1. Vous maintenir **en isolement**, au moins 7 jours à partir de la date d’apparition des symptômes, et de contacter votre médecin au moindre doute.
-
 2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
-
 3. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
-
 4. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
-
 5. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
-
 6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 
@@ -442,17 +399,12 @@ Nous vous conseillons de :
 Nous vous conseillons de :
 
 1. **Contacter votre médecin généraliste** pour lui parler de vos symptômes.
-
 2. Vous maintenir **en isolement** jusqu’au résultat du test :
     * Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous en attendant le résultat.
     * Si le résultat est **négatif**, vous pourrez mettre fin à votre isolement.
-
 3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
-
 4. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
-
 5. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
-
 6. Revenir sur Mes Conseils Covid **quand vous aurez reçu vos résultats** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
@@ -464,9 +416,7 @@ Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7q
 Nous vous conseillons de **préciser au 15** :
 
 1. que vous avez la Covid,
-
 2. si vous ressentez un **manque de souffle** quand vous parlez ou faites un petit effort,
-
 3. si vous êtes dans l’impossibilité de vous alimenter *ou* de boire **depuis 24 heures ou plus**.
 
 
@@ -476,19 +426,13 @@ Nous vous conseillons de **préciser au 15** :
 Nous vous conseillons de :
 
 1. **Contacter votre médecin généraliste**.
-
 2. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid) (vous serez prioritaire). Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test antigénique rapide ou un test en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test en laboratoire est conseillé.
-
 3. Vous maintenir **en isolement** jusqu’au résultat du test :
     * Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous en attendant le résultat.
     * Si le résultat est **négatif**, vous pourrez mettre fin à votre isolement.
-
 4. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
-
 5. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
-
 6. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
-
 7. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
@@ -500,7 +444,6 @@ Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7q
 Nous vous conseillons de **préciser au 15** :
 
 1. si vous ressentez un **manque de souffle** quand vous parlez ou faites un petit effort,
-
 2. si vous êtes dans l’impossibilité de vous alimenter *ou* de boire **depuis 24 heures ou plus**.
 
 
@@ -510,11 +453,8 @@ Nous vous conseillons de **préciser au 15** :
 Nous vous conseillons de :
 
 1. Vous maintenir **en isolement** jusqu’au résultat du test.
-
 2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
-
 3. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
-
 4. Revenir sur Mes Conseils Covid **quand vous aurez reçu vos résultats** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
@@ -526,13 +466,9 @@ Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7q
 Nous vous conseillons de :
 
 1. Vous maintenir **en isolement** au moins 7 jours à partir de la date d’apparition des symptômes.
-
 2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://sante.fr/cartographie-depistage-covid).
-
 3. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
-
 4. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
-
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
@@ -544,13 +480,9 @@ Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7q
 Nous vous conseillons de :
 
 1. **Réaliser un test** en consultant [la carte des lieux de test](https://sante.fr/cartographie-depistage-covid). Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test antigénique rapide ou un test en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test en laboratoire est conseillé.
-
 2. Vous maintenir **en isolement** jusqu’au résultat du test. Si le résultat est négatif, vous pourrez mettre fin à votre isolement.
-
 3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
-
 4. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
-
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
@@ -592,9 +524,7 @@ Devant le risque de complication **chez les personnes malades ou fragiles**, il 
 <div class="conseil">
 
 * Il vous est conseillé de **poursuivre votre suivi médical habituel** et **votre traitement** si vous en avez un.
-
 * Au moindre symptôme évoquant la Covid, contactez votre médecin généraliste.
-
 * La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver votre santé, il vous est recommandé de consulter au moindre signe de maladie.
 
 </div>
@@ -608,7 +538,6 @@ Devant le risque de complication **chez les personnes malades ou fragiles**, il 
 <div class="conseil">
 
 * Il vous est conseillé de **poursuivre votre suivi médical habituel** et **votre traitement** si vous en avez un.
-
 * La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver votre santé, il vous est recommandé de consulter au moindre signe de maladie.
 
 </div>
@@ -626,19 +555,12 @@ Retrouvez le [lieu de test le plus proche](https://sante.fr/cartographie-depista
 </div>
 
 * Les tests de dépistage sont **accessibles sur demande** et sans prescription médicale, sans même présenter de symptômes.
-
 * <span class="nouveau">nouveau</span> Les nouveaux **tests antigéniques rapides** constituent un outil supplémentaire pour réduire les chaînes de transmission virale. Ils viennent en complément des tests RT-PCR qui restent la technique de référence pour la détection de l’infection à la Covid. Ils sont prioritairement réservés aux personnes symptomatiques. Les tests doivent être réalisés **dans un délai inférieur ou égal à 4 jours** après l’apparition des symptômes. Pour plus d’informations : [Tout ce qu’il faut savoir sur les tests antigéniques](https://www.ameli.fr/paris/assure/covid-19/les-tests-de-depistage-de-la-covid-19/tout-ce-quil-faut-savoir-sur-les-tests-antigeniques-du-sras-cov-2).
-
 * Les tests de dépistage sont **intégralement pris en charge** par l’assurance maladie. Ces dispositions sont également applicables aux personnes qui ne sont pas assurés sociaux.
-
 * Depuis le 11 septembre 2020, une **stratégie de priorisation** des tests de dépistage a été mise en place. Seront testés en priorité : les personnes **ayant des symptômes**, les **cas contacts**, les **personnels soignants** ou assimilés.
-
 * Plus d’informations :
-
     * Les prochaines étapes du parcours : [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_-_nouveau.pdf)
-
     * [La stratégie de dépistage](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
-
     * [Dépistage : réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/depistage-les-reponses-a-vos-questions)
 
 
@@ -652,15 +574,10 @@ Retrouvez le [lieu de test le plus proche](https://sante.fr/cartographie-depista
 </div>
 
 * Les tests de dépistage sont **accessibles sur demande** et sans prescription médicale, sans même présenter de symptômes.
-
 * Les tests de dépistage sont **intégralement pris en charge** par l’assurance maladie. Ces dispositions sont également applicables aux personnes qui ne sont pas assurés sociaux.
-
 * Plus d’informations :
-
     * Les prochaines étapes du parcours : [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_-_nouveau.pdf)
-
     * [La stratégie de dépistage](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
-
     * [Dépistage : réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/depistage-les-reponses-a-vos-questions)
 
 
