@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-01-12
+
+* ajout d’un lien pour demander un arrêt de travail en cas d’isolement pour test
+* réduction du nombre de pages du formulaire
+
 ## 2021-01-11
 
 * mise à jour de la liste des départements pour le couvre-feu avancé à 18h
