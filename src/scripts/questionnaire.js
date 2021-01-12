@@ -89,14 +89,8 @@ export const TRANSITIONS = {
     sante: {
         previous: { foyer: () => true },
         next: {
-            activitepro: (profil) =>
-                profil.isCaracteristiquesComplete() &&
-                profil.isAntecedentsComplete() &&
-                profil.age >= 15,
-            pediatrie: (profil) =>
-                profil.isCaracteristiquesComplete() &&
-                profil.isAntecedentsComplete() &&
-                profil.age < 15,
+            activitepro: (profil) => profil.isSanteComplete() && profil.age >= 15,
+            pediatrie: (profil) => profil.isSanteComplete() && profil.age < 15,
         },
     },
     activitepro: {
