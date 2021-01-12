@@ -636,21 +636,6 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
-        it('Une activité pro avec libéral affiche des conseils + liberal', function () {
-            var profil = new Profil('mes_infos', {
-                activite_pro: true,
-                activite_pro_liberal: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
-                'conseils-activite',
-                'reponse-activite-pro',
-                'conseils-activite-pro',
-                'conseils-activite-pro-infos',
-                'conseils-activite-pro-liberal',
-            ])
-        })
-
         it('Une activité pro avec symptômes sans test affiche lien arrêt de travail', function () {
             var profil = new Profil('mes_infos', {
                 activite_pro: true,
