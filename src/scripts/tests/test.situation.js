@@ -212,16 +212,15 @@ const matrice = [
         conseils: 'antigenique-negatif-fragile',
     },
     {
-        description: 'Négatif et symptômes passés + foyer fragile',
+        description: 'Négatif et symptômes passés',
         profil: {
             symptomes_passes: true,
             depistage: true,
-            foyer_fragile: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'negatif',
         },
         situation: 'negatif_symptomes_passes',
-        statut: 'foyer-fragile',
+        statut: 'peu-de-risques',
         conseils: null,
     },
     {
@@ -278,17 +277,16 @@ const matrice = [
         conseils: 'contact-a-risque-autre',
     },
     {
-        description: 'Négatif et contact pas vraiment à risque + foyer fragile',
+        description: 'Négatif et contact pas vraiment à risque',
         profil: {
             contact_a_risque: true,
             contact_a_risque_autre: true,
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'negatif',
-            foyer_fragile: true,
         },
         situation: 'negatif_contact_pas_vraiment_a_risque',
-        statut: 'foyer-fragile',
+        statut: 'peu-de-risques',
         conseils: 'contact-a-risque-autre',
     },
     {
@@ -320,10 +318,9 @@ const matrice = [
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'negatif',
-            foyer_fragile: true,
         },
         situation: 'negatif_asymptomatique',
-        statut: 'foyer-fragile',
+        statut: 'peu-de-risques',
         conseils: null,
     },
     {
@@ -356,7 +353,6 @@ const matrice = [
         description: 'En attente et symptômes passés',
         profil: {
             symptomes_passes: true,
-            foyer_fragile: true,
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'en_attente',
@@ -493,15 +489,14 @@ const matrice = [
         conseils: 'contact-a-risque-autre',
     },
     {
-        description: 'Pas testé et contact pas vraiment à risque + foyer fragile',
+        description: 'Pas testé et contact pas vraiment à risque',
         profil: {
             contact_a_risque: true,
             contact_a_risque_autre: true,
             depistage: false,
-            foyer_fragile: true,
         },
         situation: 'pas_teste_contact_pas_vraiment_a_risque',
-        statut: 'foyer-fragile',
+        statut: 'peu-de-risques',
         conseils: 'contact-a-risque-autre',
     },
     {
@@ -515,25 +510,6 @@ const matrice = [
         description: 'Pas testé et rien de tout ça + personne fragile',
         profil: {
             age: 70,
-        },
-        situation: 'pas_teste_asymptomatique',
-        statut: 'personne-fragile',
-        conseils: null,
-    },
-    {
-        description: 'Pas testé et rien de tout ça + foyer fragile',
-        profil: {
-            foyer_fragile: true,
-        },
-        situation: 'pas_teste_asymptomatique',
-        statut: 'foyer-fragile',
-        conseils: null,
-    },
-    {
-        description: 'Personne fragile prime sur foyer fragile',
-        profil: {
-            age: 70,
-            foyer_fragile: true,
         },
         situation: 'pas_teste_asymptomatique',
         statut: 'personne-fragile',

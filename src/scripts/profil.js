@@ -463,10 +463,7 @@ export default class Profil {
     }
 
     isFoyerComplete() {
-        return (
-            typeof this.foyer_enfants !== 'undefined' &&
-            typeof this.foyer_fragile !== 'undefined'
-        )
+        return typeof this.foyer_enfants !== 'undefined'
     }
 
     isSanteComplete() {

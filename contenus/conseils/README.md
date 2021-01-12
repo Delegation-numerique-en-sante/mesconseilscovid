@@ -30,24 +30,12 @@
 Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir **vous isoler** en attendant le résultat du test.
 
 
-## [conseils_activité_pro_foyer_fragile.md](conseils_activité_pro_foyer_fragile.md)
-
-Notez qu’à compter du 1<sup>er</sup> septembre 2020, les salariés vivant avec une personne vulnérable ne peuvent plus bénéficier d’un arrêt de travail dérogatoire indemnisé.
-
-
-
 ## [conseils_activité_pro_infos.md](conseils_activité_pro_infos.md)
 
 * [L’espace dédié pour les professionnels](https://www.gouvernement.fr/info-coronavirus/espace-pour-les-professionnels) sur le site du gouvernement.
 * [Les conditions de reprise de l’activité](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/conditions-de-reprise-et-relance-de-l-activite/).
 * [Les **fiches-conseils métier**](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/proteger-les-travailleurs/article/fiches-conseils-metiers-et-guides-pour-les-salaries-et-les-employeurs) du ministère du travail.
 * [Les questions-réponses](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/) du ministère du travail.
-
-
-
-## [conseils_activité_pro_libéral.md](conseils_activité_pro_libéral.md)
-
-Comme les **professions libérales** n’ont pas de médecine du travail, vous pouvez vous rapprocher du centre régional de pathologies professionnelles et environnementales de l’hôpital (CHU) le plus proche de chez vous. Ces services travaillent sur les impacts du travail (exposition professionnelle et/ou environnementale) sur la santé et peuvent vous renseigner sur **vos conditions de travail** au regard de **votre état de santé**.
 
 
 
@@ -206,15 +194,6 @@ Consultez notre page dédiée : [« Conseils liés aux activités et à la san
 * Si vous n’avez **pas de solution pour faire garder votre enfant :** informez votre employeur et envisagez avec lui les modalités de télétravail qui pourraient être mises en place, [ou d’indemnisation si ce n’est pas possible.](https://www.ameli.fr/haute-garonne/assure/covid-19/arret-de-travail/covid-19-dispositif-dindemnisation-des-interruptions-de-travail#text_114568)
 
 * Les consultations de vos enfants comportant des **vaccins** obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) doivent être **maintenues.**
-
-
-
-## [conseils_foyer_fragile.md](conseils_foyer_fragile.md)
-
-Il est conseillé à votre proche de :
-
-* Poursuivre ou de reprendre son **suivi médical habituel** et **son traitement** si il ou elle en a un.
-* Contacter son médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux.**
 
 
 

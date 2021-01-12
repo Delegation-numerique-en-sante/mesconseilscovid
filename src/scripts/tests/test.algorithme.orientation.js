@@ -560,61 +560,6 @@ describe('Blocs d’informations additionnels', function () {
         })
     })
 
-    describe('Bloc foyer', function () {
-        it('Aucun risque foyer (fragile) n’affiche rien', function () {
-            var profil = new Profil('mes_infos', {})
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [])
-        })
-
-        it('Risque foyer (fragile)', function () {
-            var profil = new Profil('mes_infos', {
-                foyer_fragile: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
-                'conseils-foyer',
-                'conseils-foyer-fragile',
-            ])
-        })
-
-        it('Même avec symptômes actuels', function () {
-            var profil = new Profil('mes_infos', {
-                foyer_fragile: true,
-                symptomes_actuels: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
-                'conseils-foyer',
-                'conseils-foyer-fragile',
-            ])
-        })
-
-        it('Même avec symptômes passés', function () {
-            var profil = new Profil('mes_infos', {
-                foyer_fragile: true,
-                symptomes_passes: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
-                'conseils-foyer',
-                'conseils-foyer-fragile',
-            ])
-        })
-
-        it('Même avec contact à risque', function () {
-            var profil = new Profil('mes_infos', {
-                foyer_fragile: true,
-                contact_a_risque: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.foyerBlockNamesToDisplay(), [
-                'conseils-foyer',
-                'conseils-foyer-fragile',
-            ])
-        })
-    })
-
     describe('Bloc activité pro', function () {
         it('Aucune activité pro n’affiche rien', function () {
             var profil = new Profil('mes_infos', {})
@@ -635,7 +580,7 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
-        it('Une activité pro + grossesse affiche des conseils + pro + infos + personne fragile', function () {
+        it('Une activité pro + grossesse affiche des conseils + pro + infos', function () {
             var profil = new Profil('mes_infos', {
                 activite_pro: true,
                 grossesse_3e_trimestre: true,
@@ -644,13 +589,12 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
-                'reponse-activite-pro-personne-fragile',
-                'conseils-activite-pro-personne-fragile',
+                'conseils-activite-pro',
                 'conseils-activite-pro-infos',
             ])
         })
 
-        it('Une activité pro + 65 ans affiche des conseils + pro + infos + personne fragile', function () {
+        it('Une activité pro + 65 ans affiche des conseils + pro + infos', function () {
             var profil = new Profil('mes_infos', {
                 activite_pro: true,
                 age: 65,
@@ -659,13 +603,12 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
-                'reponse-activite-pro-personne-fragile',
-                'conseils-activite-pro-personne-fragile',
+                'conseils-activite-pro',
                 'conseils-activite-pro-infos',
             ])
         })
 
-        it('Une activité pro + antecedents affiche des conseils + pro + infos + personne fragile + arrêt', function () {
+        it('Une activité pro + antecedents affiche des conseils + pro + infos + arrêt', function () {
             var profil = new Profil('mes_infos', {
                 activite_pro: true,
                 antecedent_cancer: true,
@@ -680,7 +623,7 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
-        it('Une activité pro + foyer fragile affiche des conseils + pro + infos + foyer fragile', function () {
+        it('Une activité pro + foyer fragile affiche des conseils + pro + infos', function () {
             var profil = new Profil('mes_infos', {
                 activite_pro: true,
                 foyer_fragile: true,
@@ -691,8 +634,6 @@ describe('Blocs d’informations additionnels', function () {
                 'reponse-activite-pro',
                 'conseils-activite-pro',
                 'conseils-activite-pro-infos',
-                'reponse-activite-pro-foyer-fragile',
-                'conseils-activite-pro-foyer-fragile',
             ])
         })
 

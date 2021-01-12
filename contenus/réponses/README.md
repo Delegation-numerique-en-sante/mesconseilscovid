@@ -54,13 +54,7 @@ Votre lieu de résidence actuel : <b id="nom-departement"></b> (<a href="#reside
 
 ## [réponse_foyer_enfants.md](réponse_foyer_enfants.md)
 
-Vous vivez avec un ou des enfants de moins de 11 ans (<a href="#foyer">modifier</a>)
-
-
-
-## [réponse_foyer_fragile.md](réponse_foyer_fragile.md)
-
-Vous vivez avec une ou des personnes considérée(s) comme fragile(s) face à la Covid et/ou en situation de handicap (<a href="#foyer">modifier</a>)
+Vous vivez avec un ou des enfants de moins de 11 ans (<a href="#residence">modifier</a>)
 
 
 

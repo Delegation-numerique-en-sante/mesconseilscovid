@@ -9,7 +9,6 @@ const STATUTS = [
     'contact-a-risque-avec-test',
     'contact-a-risque-sans-test',
     'en-attente',
-    'foyer-fragile',
     'personne-fragile',
     'peu-de-risques',
     'positif-symptomatique-urgent',
@@ -282,7 +281,6 @@ export default class AlgorithmeOrientation {
 
     statutSelonFragilite() {
         if (this.personneFragile) return 'personne-fragile'
-        if (this.profil.foyer_fragile) return 'foyer-fragile'
         return 'peu-de-risques'
     }
 
@@ -448,12 +446,7 @@ export default class AlgorithmeOrientation {
 
     activiteProBlockNamesToDisplay() {
         const blockNames = []
-        if (
-            this.profil.activite_pro ||
-            this.profil.activite_pro_public ||
-            this.profil.activite_pro_sante ||
-            this.profil.activite_pro_liberal
-        ) {
+        if (this.profil.activite_pro || this.profil.activite_pro_sante) {
             blockNames.push('conseils-activite')
             blockNames.push('reponse-activite-pro')
 
@@ -477,9 +470,6 @@ export default class AlgorithmeOrientation {
                 if (this.antecedents) {
                     blockNames.push('reponse-activite-pro-antecedents')
                     blockNames.push('conseils-activite-pro-arret')
-                } else if (this.personneFragile) {
-                    blockNames.push('reponse-activite-pro-personne-fragile')
-                    blockNames.push('conseils-activite-pro-personne-fragile')
                 } else if (!arretPourIsolement) {
                     blockNames.push('conseils-activite-pro')
                 }
@@ -489,12 +479,6 @@ export default class AlgorithmeOrientation {
             // Bloc additionnel: activité libérale.
             if (this.profil.activite_pro_liberal) {
                 blockNames.push('conseils-activite-pro-liberal')
-            }
-
-            // Bloc additionnel: personne fragile dans le foyer.
-            if (this.profil.foyer_fragile) {
-                blockNames.push('reponse-activite-pro-foyer-fragile')
-                blockNames.push('conseils-activite-pro-foyer-fragile')
             }
         }
         return blockNames
@@ -532,15 +516,6 @@ export default class AlgorithmeOrientation {
             blockNames.push('conseils-sante-grippe-fragile')
         } else {
             blockNames.push('conseils-sante-grippe')
-        }
-        return blockNames
-    }
-
-    foyerBlockNamesToDisplay() {
-        const blockNames = []
-        if (this.profil.foyer_fragile) {
-            blockNames.push('conseils-foyer')
-            blockNames.push('conseils-foyer-fragile')
         }
         return blockNames
     }

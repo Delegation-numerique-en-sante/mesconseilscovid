@@ -297,8 +297,6 @@ main footer .legals {
 
 #nom-form,
 #residence-form,
-#activite-pro-form,
-#foyer-form,
 #sante-form,
 #symptomes-actuels-form,
 #symptomes-passes-form,
@@ -315,7 +313,6 @@ main footer .legals {
 
 #conseils-vie-quotidienne header,
 #conseils-activite header,
-#conseils-foyer header,
 #conseils-tests header,
 #conseils-isolement header,
 #conseils-contact-a-risque header,
@@ -341,8 +338,6 @@ main footer .legals {
 }
 @media only screen and (min-width: 450px) {
     #residence-form,
-    #activite-pro-form,
-    #foyer-form,
     #sante-form,
     #symptomes-actuels-form,
     #symptomes-passes-form,
@@ -357,7 +352,6 @@ main footer .legals {
 
     #conseils-vie-quotidienne header,
     #conseils-activite header,
-    #conseils-foyer header,
     #conseils-tests header,
     #conseils-isolement header,
     #conseils-contact-a-risque header,
@@ -389,11 +383,9 @@ main footer .legals {
 #conseils-vie-quotidienne header {
     background-image: url('illustrations/residence.svg');
 }
-#activite-pro-form,
 #conseils-activite header {
     background-image: url('illustrations/activitepro.svg');
 }
-#foyer-form,
 #conseils-foyer header {
     background-image: url('illustrations/foyer.svg');
 }
@@ -622,7 +614,6 @@ main footer .legals {
     background: #ffcc9f;
     border-color: #ff9940;
 }
-.statut-foyer-fragile,
 .statut-symptomatique-negatif,
 .suivi-gravite-1 {
     background: #fde7a0;

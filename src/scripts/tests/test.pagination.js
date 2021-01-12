@@ -41,57 +41,24 @@ describe('Pagination', function () {
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
+                foyer_enfants: false,
+                activite_pro: false,
             })
             assert.isUndefined(questionnaire.before('residence', profil))
         })
     })
 
-    describe('Mon foyer', function () {
-        it('redirige vers question résidence si réponse manquante', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_actuels: false,
-                depistage: false,
-                symptomes_passes: false,
-                contact_a_risque: false,
-            })
-            assert.strictEqual(questionnaire.before('foyer', profil), 'residence')
-        })
-        it('ok d’aller à la question foyer si réponse à résidence', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_actuels: false,
-                depistage: false,
-                symptomes_passes: false,
-                contact_a_risque: false,
-                departement: '80',
-            })
-            assert.isUndefined(questionnaire.before('foyer', profil))
-        })
-        it('ok d’aller à la question foyer même si déjà répondu', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_actuels: false,
-                depistage: false,
-                symptomes_passes: false,
-                contact_a_risque: false,
-                departement: '80',
-                foyer_enfants: false,
-            })
-            assert.isUndefined(questionnaire.before('foyer', profil))
-        })
-    })
-
     describe('Ma santé', function () {
-        it('redirige vers question foyer si réponse manquante', function () {
+        it('redirige vers question residence si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
                 depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
-                departement: '80',
             })
-            assert.strictEqual(questionnaire.before('sante', profil), 'foyer')
+            assert.strictEqual(questionnaire.before('sante', profil), 'residence')
         })
-
-        it('ok d’aller à la question santé si réponse à foyer', function () {
+        it('ok d’aller à la question santé si réponse à residence', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
                 depistage: false,
@@ -99,7 +66,7 @@ describe('Pagination', function () {
                 contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
-                foyer_fragile: false,
+                activite_pro: false,
             })
             assert.isUndefined(questionnaire.before('sante', profil))
         })
@@ -111,7 +78,7 @@ describe('Pagination', function () {
                 contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
-                foyer_fragile: false,
+                activite_pro: false,
                 antecedent_cardio: false,
                 antecedent_diabete: false,
                 antecedent_respi: false,
@@ -127,110 +94,6 @@ describe('Pagination', function () {
                 taille: 180,
             })
             assert.isUndefined(questionnaire.before('sante', profil))
-        })
-    })
-
-    describe('Mon activité', function () {
-        it('redirige vers question santé si réponse manquante', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_actuels: false,
-                depistage: false,
-                symptomes_passes: false,
-                contact_a_risque: false,
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                // Manque la taille.
-            })
-            assert.strictEqual(questionnaire.before('activitepro', profil), 'sante')
-        })
-        it('redirige vers pédiatrie si âge inférieur à 15', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_actuels: false,
-                depistage: false,
-                symptomes_passes: false,
-                contact_a_risque: false,
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 12,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-            })
-            assert.strictEqual(questionnaire.before('activitepro', profil), 'pediatrie')
-        })
-        it('ok d’aller à la question activité pro si réponse à santé', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_actuels: false,
-                depistage: false,
-                symptomes_passes: false,
-                contact_a_risque: false,
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-            })
-            assert.isUndefined(questionnaire.before('activitepro', profil))
-        })
-        it('ok d’aller à la question activité pro même si déjà répondu', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_actuels: false,
-                depistage: false,
-                symptomes_passes: false,
-                contact_a_risque: false,
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-                age: 42,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
-            })
-            assert.isUndefined(questionnaire.before('activitepro', profil))
         })
     })
 
@@ -389,7 +252,6 @@ describe('Pagination', function () {
                 contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
-                foyer_fragile: false,
                 antecedent_cardio: false,
                 antecedent_diabete: false,
                 antecedent_respi: false,
@@ -471,7 +333,7 @@ describe('Pagination', function () {
                 'symptomespasses'
             )
         })
-        it('redirige vers question activité pro si réponse manquante', function () {
+        it('redirige vers question residence si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 depistage: false,
                 symptomes_actuels: false,
@@ -479,7 +341,6 @@ describe('Pagination', function () {
                 contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
-                foyer_fragile: false,
                 antecedent_cardio: false,
                 antecedent_diabete: false,
                 antecedent_respi: false,
@@ -494,7 +355,7 @@ describe('Pagination', function () {
                 poids: 80,
                 taille: 180,
             })
-            assert.strictEqual(questionnaire.before('conseils', profil), 'activitepro')
+            assert.strictEqual(questionnaire.before('conseils', profil), 'residence')
         })
         it('redirige vers pediatrie si age < 15', function () {
             const profil = new Profil('mes_infos', {
@@ -504,7 +365,6 @@ describe('Pagination', function () {
                 contact_a_risque: false,
                 departement: '80',
                 foyer_enfants: false,
-                foyer_fragile: false,
                 antecedent_cardio: false,
                 antecedent_diabete: false,
                 antecedent_respi: false,
@@ -533,7 +393,6 @@ describe('Pagination', function () {
                 activite_pro_sante: false,
                 activite_pro_liberal: false,
                 foyer_enfants: true,
-                foyer_fragile: false,
                 age: '42',
                 grossesse_3e_trimestre: false,
                 poids: '70',
@@ -576,7 +435,6 @@ describe('Pagination', function () {
                 departement: '34',
                 activite_pro: false,
                 foyer_enfants: true,
-                foyer_fragile: false,
                 age: '42',
                 grossesse_3e_trimestre: false,
                 poids: '70',
@@ -622,7 +480,6 @@ describe('Pagination', function () {
                 activite_pro_sante: false,
                 activite_pro_liberal: false,
                 foyer_enfants: true,
-                foyer_fragile: false,
                 age: '42',
                 grossesse_3e_trimestre: false,
                 poids: '70',
@@ -668,7 +525,6 @@ describe('Pagination', function () {
                 activite_pro_sante: false,
                 activite_pro_liberal: false,
                 foyer_enfants: true,
-                foyer_fragile: false,
                 age: '42',
                 grossesse_3e_trimestre: false,
                 poids: '70',
@@ -715,7 +571,6 @@ describe('Pagination', function () {
                 activite_pro_sante: false,
                 activite_pro_liberal: false,
                 foyer_enfants: true,
-                foyer_fragile: false,
                 age: '42',
                 grossesse_3e_trimestre: false,
                 poids: '70',
@@ -762,7 +617,6 @@ describe('Pagination', function () {
                 activite_pro_sante: false,
                 activite_pro_liberal: false,
                 foyer_enfants: true,
-                foyer_fragile: false,
                 age: '42',
                 grossesse_3e_trimestre: false,
                 poids: '70',
@@ -810,7 +664,6 @@ describe('Pagination', function () {
                 activite_pro_sante: false,
                 activite_pro_liberal: false,
                 foyer_enfants: true,
-                foyer_fragile: false,
                 age: '42',
                 grossesse_3e_trimestre: false,
                 poids: '70',
@@ -838,7 +691,6 @@ describe('Pagination', function () {
                 activite_pro_sante: false,
                 activite_pro_liberal: false,
                 foyer_enfants: true,
-                foyer_fragile: false,
                 age: '42',
                 grossesse_3e_trimestre: false,
                 poids: '70',
@@ -867,7 +719,6 @@ describe('Pagination', function () {
                 activite_pro_sante: false,
                 activite_pro_liberal: false,
                 foyer_enfants: true,
-                foyer_fragile: false,
                 age: '42',
                 grossesse_3e_trimestre: false,
                 poids: '70',
@@ -896,7 +747,6 @@ describe('Pagination', function () {
                 activite_pro_sante: false,
                 activite_pro_liberal: false,
                 foyer_enfants: true,
-                foyer_fragile: false,
                 age: '42',
                 grossesse_3e_trimestre: false,
                 poids: '70',
@@ -944,7 +794,6 @@ describe('Pagination', function () {
                 activite_pro_sante: false,
                 activite_pro_liberal: false,
                 foyer_enfants: true,
-                foyer_fragile: false,
                 age: '42',
                 grossesse_3e_trimestre: false,
                 poids: '70',
