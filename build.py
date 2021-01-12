@@ -51,13 +51,17 @@ def build_responses(source_dir):
     responses = {}
     for folder in each_folder_from(source_dir):
         for file_path, filename in each_file_from(folder, pattern="*.md"):
-            html_content = markdown.read(file_path)
-            # Remove empty comments set to hack markdown rendering
-            # when we do not want paragraphs.
-            html_content = html_content.replace("<!---->", "")
+            html_content = render_markdown_file(file_path)
             responses[filename[: -len(".md")]] = html_content
 
     return responses
+
+
+def render_markdown_file(file_path):
+    html_content = markdown.read(file_path)
+    # Remove empty comments set to hack markdown rendering
+    # when we do not want paragraphs.
+    return html_content.replace("<!---->", "")
 
 
 def each_folder_from(source_dir, exclude=None):
