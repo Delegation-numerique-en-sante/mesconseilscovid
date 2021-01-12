@@ -21,7 +21,7 @@ export const ORDRE = [
     'contactarisque',
     'debutsymptomes',
     'depistage',
-    'residence',
+    'situation',
     'sante',
 ]
 
@@ -71,10 +71,10 @@ export const TRANSITIONS = {
             contactarisque: (profil) => profil.isContactARisqueComplete(),
         },
         next: {
-            residence: (profil) => profil.isDepistageComplete(),
+            situation: (profil) => profil.isDepistageComplete(),
         },
     },
-    residence: {
+    situation: {
         previous: {
             depistage: (profil) => profil.isDepistageComplete(),
         },
@@ -86,7 +86,7 @@ export const TRANSITIONS = {
         },
     },
     sante: {
-        previous: { residence: () => true },
+        previous: { situation: () => true },
         next: {
             conseils: (profil) => profil.isSanteComplete() && profil.age >= 15,
             pediatrie: (profil) => profil.isSanteComplete() && profil.age < 15,

@@ -48,13 +48,13 @@ Vous présentez une ou des caractéristiques à risque : <b class="nom-caracter
 
 ## [réponse_département.md](réponse_département.md)
 
-Votre lieu de résidence actuel : <b id="nom-departement"></b> (<a href="#residence">modifier</a>)
+Votre lieu de résidence actuel : <b id="nom-departement"></b> (<a href="#situation">modifier</a>)
 
 
 
 ## [réponse_foyer_enfants.md](réponse_foyer_enfants.md)
 
-Vous vivez avec un ou des enfants de moins de 11 ans (<a href="#residence">modifier</a>)
+Vous vivez avec un ou des enfants de moins de 11 ans (<a href="#situation">modifier</a>)
 
 
 

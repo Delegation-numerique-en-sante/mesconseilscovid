@@ -61,7 +61,7 @@ var Geolocaliseur = function () {
 export default function geolocalisation(event) {
     event.preventDefault()
     var geolocaliseur = new Geolocaliseur()
-    var form = document.querySelector('form#residence-form')
+    var form = document.querySelector('form#situation-form')
     hideSelector(form, '#error-geolocalisation')
     var onDepartementFound = function (departement) {
         var select = form.querySelector('#departement')

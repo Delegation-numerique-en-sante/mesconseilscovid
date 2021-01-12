@@ -51,7 +51,7 @@ export async function remplirQuestionnaire(page, choix) {
         choix.depistageType,
         choix.depistageResultat
     )
-    await remplirDepartement(page, choix.departement, choix.enfants, choix.activitePro)
+    await remplirSituation(page, choix.departement, choix.enfants, choix.activitePro)
     await remplirSante(
         page,
         choix.age,
@@ -71,7 +71,7 @@ async function remplirNom(page, nom) {
     ])
 }
 
-async function remplirDepartement(page, departement, enfants, activitePro) {
+async function remplirSituation(page, departement, enfants, activitePro) {
     await page.selectOption('#page select#departement', departement)
     if (enfants === true) {
         // La "vraie" case à cocher est cachée, alors on clique sur le label.
@@ -150,7 +150,7 @@ async function remplirDepistage(page, depistage, date, type, resultat) {
     let bouton = await page.waitForSelector(`#page >> text=${text}`)
     await Promise.all([
         bouton.click(),
-        page.waitForNavigation({ url: `**/#residence` }),
+        page.waitForNavigation({ url: `**/#situation` }),
     ])
 }
 

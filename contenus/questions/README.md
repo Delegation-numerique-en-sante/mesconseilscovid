@@ -357,11 +357,11 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 ## [question_résidence_titre.md](question_résidence_titre.md)
 
-<!---->Mon lieu de résidence
+<!---->Ma situation
 
 ---
 
-<!---->Son lieu de résidence
+<!---->Sa situation
 
 
 

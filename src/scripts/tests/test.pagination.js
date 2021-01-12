@@ -13,7 +13,7 @@ import Profil from '../profil.js'
 const questionnaire = new Questionnaire()
 
 describe('Pagination', function () {
-    describe('Ma résidence', function () {
+    describe('Ma situation', function () {
         it('redirige vers question contact à risque si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
@@ -21,20 +21,20 @@ describe('Pagination', function () {
                 symptomes_passes: false,
             })
             assert.strictEqual(
-                questionnaire.before('residence', profil),
+                questionnaire.before('situation', profil),
                 'contactarisque'
             )
         })
-        it('ok d’aller à la question résidence si réponse à contact à risque', function () {
+        it('ok d’aller à la question situation si réponse à contact à risque', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
                 depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
             })
-            assert.isUndefined(questionnaire.before('residence', profil))
+            assert.isUndefined(questionnaire.before('situation', profil))
         })
-        it('ok d’aller à la question résidence même si déjà répondu', function () {
+        it('ok d’aller à la question situation même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
                 depistage: false,
@@ -44,21 +44,21 @@ describe('Pagination', function () {
                 foyer_enfants: false,
                 activite_pro: false,
             })
-            assert.isUndefined(questionnaire.before('residence', profil))
+            assert.isUndefined(questionnaire.before('situation', profil))
         })
     })
 
     describe('Ma santé', function () {
-        it('redirige vers question residence si réponse manquante', function () {
+        it('redirige vers question situation si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
                 depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
             })
-            assert.strictEqual(questionnaire.before('sante', profil), 'residence')
+            assert.strictEqual(questionnaire.before('sante', profil), 'situation')
         })
-        it('ok d’aller à la question santé si réponse à residence', function () {
+        it('ok d’aller à la question sante si réponse à situation', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
                 depistage: false,
@@ -333,7 +333,7 @@ describe('Pagination', function () {
                 'symptomespasses'
             )
         })
-        it('redirige vers question residence si réponse manquante', function () {
+        it('redirige vers question situation si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 depistage: false,
                 symptomes_actuels: false,
@@ -355,7 +355,7 @@ describe('Pagination', function () {
                 poids: 80,
                 taille: 180,
             })
-            assert.strictEqual(questionnaire.before('conseils', profil), 'residence')
+            assert.strictEqual(questionnaire.before('conseils', profil), 'situation')
         })
         it('redirige vers pediatrie si age < 15', function () {
             const profil = new Profil('mes_infos', {
