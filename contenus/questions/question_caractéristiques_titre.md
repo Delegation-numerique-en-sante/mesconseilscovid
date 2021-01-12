@@ -1,5 +1,5 @@
-<!---->Mes caractéristiques
+<!---->Ma santé
 
 ---
 
-<!---->Ses caractéristiques
+<!---->Sa santé

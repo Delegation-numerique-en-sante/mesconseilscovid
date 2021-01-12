@@ -6,7 +6,7 @@ import {
 } from '../../formutils.js'
 import AlgorithmeOrientation from '../../algorithme/orientation.js'
 
-export default function caracteristiques(form, app) {
+export default function sante(form, app) {
     const button = form.querySelector('input[type=submit]')
     preloadForm(form, 'age', app.profil)
     preloadForm(form, 'taille', app.profil)
@@ -55,7 +55,7 @@ export default function caracteristiques(form, app) {
         app.profil.antecedent_chronique_autre =
             event.target.elements['antecedent_chronique_autre'].checked
         app.enregistrerProfilActuel().then(() => {
-            app.goToNextPage('caracteristiques')
+            app.goToNextPage('sante')
         })
     })
 }

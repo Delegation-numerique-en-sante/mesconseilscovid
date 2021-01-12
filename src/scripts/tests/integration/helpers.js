@@ -90,10 +90,7 @@ async function remplirFoyer(page, enfants) {
     // TODO: personnes fragiles
 
     let bouton = await page.waitForSelector('#page >> text="Continuer"')
-    await Promise.all([
-        bouton.click(),
-        page.waitForNavigation({ url: '**/#caracteristiques' }),
-    ])
+    await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#sante' })])
 }
 
 async function remplirCaracteristiques(page, age, taille, poids, antecedents) {

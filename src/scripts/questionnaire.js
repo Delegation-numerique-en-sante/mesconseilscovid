@@ -23,7 +23,7 @@ export const ORDRE = [
     'depistage',
     'residence',
     'foyer',
-    'caracteristiques',
+    'sante',
     'activitepro',
 ]
 
@@ -84,9 +84,9 @@ export const TRANSITIONS = {
     },
     foyer: {
         previous: { residence: () => true },
-        next: { caracteristiques: (profil) => profil.isFoyerComplete() },
+        next: { sante: (profil) => profil.isFoyerComplete() },
     },
-    caracteristiques: {
+    sante: {
         previous: { foyer: () => true },
         next: {
             activitepro: (profil) =>
@@ -100,7 +100,7 @@ export const TRANSITIONS = {
         },
     },
     activitepro: {
-        previous: { caracteristiques: () => true },
+        previous: { sante: () => true },
         next: {
             conseils: (profil) => profil.isActiviteProComplete(),
         },
