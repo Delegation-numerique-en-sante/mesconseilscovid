@@ -7,10 +7,11 @@ import pytest
         ("", ""),
         (" ", " "),
         (" ", " "),
+        ("\u202f", "\u202f"),
         ("ici !", "ici\u202f!"),
         ("non ?", "non\u202f?"),
-        ("infos :", "infos\u202f:"),
-        ("entre « guillemets »", "entre «\u202fguillemets\u202f»"),
+        ("infos :", "infos :"),
+        ("entre « guillemets »", "entre « guillemets »"),
         ("18 h", "18\u202fh"),
         ("24 heures", "24\u202fheures"),
         ("24 heures", "24\u202fheures"),
@@ -29,7 +30,7 @@ import pytest
         ("pour 100 % des cas", "pour 100\u202f% des cas"),
     ],
 )
-def test_espaces(in_, out_):
+def test_espaces_insécables(in_, out_):
     from typographie import typographie
 
     assert typographie(in_) == out_
