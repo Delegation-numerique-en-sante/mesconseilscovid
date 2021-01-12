@@ -14,26 +14,6 @@
 
 
 
-## [question_activité_pro_libéral_libellé.md](question_activité_pro_libéral_libellé.md)
-
-<!---->J’exerce une profession libérale ou je suis travailleur indépendant
-
----
-
-<!---->Il ou elle exerce une profession libérale ou est travailleur indépendant
-
-
-
-## [question_activité_pro_public_libellé.md](question_activité_pro_public_libellé.md)
-
-<!---->Dans mon travail, je suis en contact direct avec du public
-
----
-
-<!---->Dans ce travail, il ou elle est en contact direct avec du public
-
-
-
 ## [question_activité_pro_santé_aide.md](question_activité_pro_santé_aide.md)
 
 <sup>*</sup>
@@ -48,16 +28,6 @@ Médecin, infirmier, aide soignant, pharmacien, orthophoniste, brancardier, mani
 ---
 
 <!---->Il ou elle travaille dans le domaine de la santé ou du médico-social<sup>*</sup>
-
-
-
-## [question_activité_pro_titre.md](question_activité_pro_titre.md)
-
-<!---->Mon activité
-
----
-
-<!---->Son activité
 
 
 
@@ -354,45 +324,6 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 ---
 
 <!---->Cette personne vit avec un ou des <b>enfants</b> de moins de 11 ans
-
-
-
-## [question_foyer_fragile_aide.md](question_foyer_fragile_aide.md)
-
-<sup>*</sup>
-Une personne est considérée comme fragile face à la Covid si elle :
-* a plus 65 ans,
-* est obèse, c’est-à-dire un indice de masse corporelle (IMC) supérieur à 30 kgm<sup>-2</sup>,
-* est enceinte au 3<sup>e</sup> trimestre de grossesse,
-* a une ou plusieurs de ces conditions :
-  * maladie du cœur ou des artères,
-  * diabète mal équilibré ou avec des complications (yeux, reins),
-  * maladie respiratoire chronique (broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, apnées du sommeil, mucoviscidose),
-  * insuffisance rénale chronique avec besoin de faire de la dialyse,
-  * cancer évolutif sous traitement (hors hormonothérapie),
-  * une cirrhose (maladie grave du foie),
-  * une drépanocytose (maladie des globules rouges),
-  * une baisse des défenses immunitaires face aux virus et bactéries (médicamenteuse : chimiothérapie contre le cancer, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive depuis plus de 15 jours ; infection à VIH non contrôlée ou avec des CD4 inférieurs à 200/mm<sup>3</sup> ; consécutive à une greffe; liée à cancer du sang en cours de traitement).
-
-
-
-## [question_foyer_fragile_libellé.md](question_foyer_fragile_libellé.md)
-
-<!---->Je vis avec une ou des personnes considérée(s) comme <b>fragile(s)</b><sup>*</sup> face à la Covid et/ou en situation de handicap
-
----
-
-<!---->Cette personne vit avec une ou des personnes considérée(s) comme <b>fragile(s)</b><sup>*</sup> face à la Covid et/ou en situation de handicap
-
-
-
-## [question_foyer_titre.md](question_foyer_titre.md)
-
-<!---->Mon foyer
-
----
-
-<!---->Son foyer
 
 
 

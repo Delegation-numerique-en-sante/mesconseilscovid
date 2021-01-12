@@ -51,8 +51,7 @@ export async function remplirQuestionnaire(page, choix) {
         choix.depistageType,
         choix.depistageResultat
     )
-    await remplirDepartement(page, choix.departement)
-    await remplirFoyer(page, choix.enfants)
+    await remplirDepartement(page, choix.departement, choix.enfants, choix.activitePro)
     await remplirSante(
         page,
         choix.age,
@@ -61,7 +60,6 @@ export async function remplirQuestionnaire(page, choix) {
         choix.antecedents || []
     )
     if (choix.age < 15) return
-    await remplirActivite(page, choix.activitePro)
 }
 
 async function remplirNom(page, nom) {
@@ -73,22 +71,19 @@ async function remplirNom(page, nom) {
     ])
 }
 
-async function remplirDepartement(page, departement) {
+async function remplirDepartement(page, departement, enfants, activitePro) {
     await page.selectOption('#page select#departement', departement)
-    let bouton = await page.waitForSelector('#page >> text="Continuer"')
-    await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#foyer' })])
-}
-
-async function remplirFoyer(page, enfants) {
     if (enfants === true) {
         // La "vraie" case à cocher est cachée, alors on clique sur le label.
         let label
         label = await page.waitForSelector('#page label[for="foyer_enfants"]')
         await label.click()
     }
-
-    // TODO: personnes fragiles
-
+    let label = await page.waitForSelector('#page label[for="activite_pro"]')
+    if (activitePro === true) {
+        // La "vraie" case à cocher est cachée, alors on clique sur le label.
+        await label.click()
+    }
     let bouton = await page.waitForSelector('#page >> text="Continuer"')
     await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#sante' })])
 }
@@ -113,28 +108,12 @@ async function remplirSante(page, age, taille, poids, antecedents) {
         })
     }
 
-    let bouton = await page.waitForSelector('#page >> text="Continuer"')
-    const target = age < 15 ? 'pediatrie' : 'activitepro'
+    let bouton = await page.waitForSelector('#page >> text="Terminer"')
+    const target = age < 15 ? 'pediatrie' : 'conseils'
     await Promise.all([
         bouton.click(),
         page.waitForNavigation({ url: `**/#${target}` }),
     ])
-}
-
-async function remplirActivite(page, activitePro) {
-    let label = await page.waitForSelector('#page label[for="activite_pro"]')
-    let text
-
-    if (activitePro === true) {
-        // La "vraie" case à cocher est cachée, alors on clique sur le label.
-        await label.click()
-        text = 'Terminer'
-    } else {
-        text = 'Je n’ai pas d’activité professionnelle ou bénévole'
-    }
-
-    let bouton = await page.waitForSelector(`#page >> text="${text}"`)
-    await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#conseils' })])
 }
 
 async function remplirDepistage(page, depistage, date, type, resultat) {

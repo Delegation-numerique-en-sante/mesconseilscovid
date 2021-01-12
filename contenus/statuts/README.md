@@ -46,12 +46,6 @@ Continuez à appliquer les **mesures barrières** en attendant les résultats de
 
 
 
-## [statut_foyer_fragile.md](statut_foyer_fragile.md)
-
-Prenez soin de vos proches à risque face à la Covid.
-
-
-
 ## [statut_personne_fragile.md](statut_personne_fragile.md)
 
 Vous êtes considéré·e comme une personne ayant plus de risques de développer une **forme sévère** de Covid, nous vous invitons à être **particulièrement vigilant·e**.

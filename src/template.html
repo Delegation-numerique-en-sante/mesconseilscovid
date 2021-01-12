@@ -234,18 +234,6 @@
                 Nous n’avons pas réussi à déterminer votre position automatiquement,
                 veuillez saisir un département dans la liste déroulante ci-dessus.
             </p>
-        </fieldset>
-        <div class="form-controls">
-            <input type="submit" class="button" value="Continuer">
-            <a href="#" class="back-button button-outline">Retour</a>
-        </div>
-    </form>
-</section>
-
-<section id="foyer" hidden>
-    <form id="foyer-form" class="block">
-        <fieldset>
-            <legend><span class="progress"></span>{{ question_foyer_titre|me_or_them }}</legend>
             <div>
                 <input id="foyer_enfants" type="checkbox" name="foyer_enfants">
                 <label for="foyer_enfants">
@@ -253,11 +241,17 @@
                 </label>
             </div>
             <div>
-                <input id="foyer_fragile" type="checkbox" name="foyer_fragile">
-                <label for="foyer_fragile">
-                    <span>{{ question_foyer_fragile_libellé|me_or_them }}</span>
+                <input id="activite_pro" type="checkbox" name="activite_pro">
+                <label for="activite_pro">
+                    <span>{{ question_activité_pro_libellé|me_or_them }}</span>
                 </label>
-                <div class="details">{{ question_foyer_fragile_aide }}</div>
+            </div>
+            <div class="secondary disabled">
+                <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
+                <label for="activite_pro_sante">
+                    <span>{{ question_activité_pro_santé_libellé|me_or_them }}</span>
+                </label>
+                <div class="details">{{ question_activité_pro_santé_aide }}</div>
             </div>
         </fieldset>
         <div class="form-controls">
@@ -372,43 +366,6 @@
                         {{ question_antécédents_chronique_autre_libellé|me_or_them }}
                     </span>
                 </label>
-            </div>
-        </fieldset>
-        <div class="form-controls">
-            <input type="submit" class="button" value="Continuer">
-            <a href="#" class="back-button button-outline">Retour</a>
-        </div>
-    </form>
-</section>
-
-<section id="activitepro" hidden>
-    <form id="activite-pro-form" class="block">
-        <fieldset>
-            <legend><span class="progress"></span>{{ question_activité_pro_titre|me_or_them }}</legend>
-            <div>
-                <input id="activite_pro" type="checkbox" name="activite_pro">
-                <label for="activite_pro">
-                    <span>{{ question_activité_pro_libellé|me_or_them }}</span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="activite_pro_public" type="checkbox" name="activite_pro_public" disabled>
-                <label for="activite_pro_public">
-                    <span>{{ question_activité_pro_public_libellé|me_or_them }}</span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="activite_pro_liberal" type="checkbox" name="activite_pro_liberal" disabled>
-                <label for="activite_pro_liberal">
-                    <span>{{ question_activité_pro_libéral_libellé|me_or_them }}</span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
-                <label for="activite_pro_sante">
-                    <span>{{ question_activité_pro_santé_libellé|me_or_them }}</span>
-                </label>
-                <div class="details">{{ question_activité_pro_santé_aide }}</div>
             </div>
         </fieldset>
         <div class="form-controls">
@@ -690,9 +647,6 @@
                     </div>
                     <div id="statut-en-attente" class="statut statut-en-attente" hidden>
                         {{ statut_en_attente }}
-                    </div>
-                    <div id="statut-foyer-fragile" class="statut statut-foyer-fragile" hidden>
-                        {{ statut_foyer_fragile }}
                     </div>
                     <div id="statut-personne-fragile" hidden>
                         <div class="statut statut-personne-fragile">
@@ -1122,27 +1076,6 @@
                     </details>
                 </div>
 
-                <div id="conseils-foyer" class="conseils" hidden>
-                    <details>
-                        <summary>
-                            <header>
-                                <h3>
-                                    Mon foyer
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-                                </h3>
-                            </header>
-                        </summary>
-                        <div id="conseils-foyer-fragile" hidden>
-                            <div class="reponse">
-                                {{ réponse_foyer_fragile }}
-                            </div>
-                            <div class="conseil">
-                                {{ conseils_foyer_fragile }}
-                            </div>
-                        </div>
-                    </details>
-                </div>
-
                 <div id="conseils-activite" class="conseils" hidden>
                     <details>
                         <summary>
@@ -1159,9 +1092,6 @@
                             </div>
                             <div id="reponse-activite-pro-antecedents" hidden>
                                 {{ réponse_antécédents }}
-                            </div>
-                            <div id="reponse-activite-pro-foyer-fragile" hidden>
-                                {{ réponse_foyer_fragile }}
                             </div>
                         </div>
                         <div id="conseils-activite-pro-arret-de-travail-isolement" hidden>
@@ -1182,14 +1112,8 @@
                                 {{ conseils_activité_pro_arrêt }}
                             </div>
                         </div>
-                        <div id="conseils-activite-pro-foyer-fragile" hidden>
-                            {{ conseils_activité_pro_foyer_fragile }}
-                        </div>
                         <div id="conseils-activite-pro-sante" hidden>
                             {{ conseils_activité_pro_santé }}
-                        </div>
-                        <div id="conseils-activite-pro-liberal" hidden>
-                            {{ conseils_activité_pro_libéral }}
                         </div>
                         <div id="conseils-activite-pro-infos" hidden>
                             {{ conseils_activité_pro_infos }}
@@ -1452,8 +1376,8 @@
     <div id="pediatrie-block" class="block">
         {{ meta_pédiatrie }}
         <div id="js-profil-full" class="form-controls" hidden>
+            <a class="button button-full-width" href="#conseils">Aller à mes conseils</a>
             <a class="premiere-question button button-outline back-button button-full-width" href="#">Modifier mes réponses</a>
-            <a class="button button-full-width" href="#conseils">Retourner à mes conseils</a>
         </div>
         <div id="js-profil-empty">
             <a class="premiere-question button button-full-width" href="#">Démarrer le questionnaire</a>
@@ -1465,8 +1389,8 @@
     <div id="conditions-utilisation-block" class="block">
         {{ meta_conditions_utilisation }}
         <div id="js-profil-full" class="form-controls" hidden>
-            <a class="premiere-question button button-outline button-full-width" href="#">Modifier mes réponses</a>
             <a class="button button-full-width" href="#conseils">Retourner à mes conseils</a>
+            <a class="premiere-question button button-outline button-full-width" href="#">Modifier mes réponses</a>
         </div>
         <div id="js-profil-empty">
             <a class="premiere-question button button-full-width" href="#">Démarrer le questionnaire</a>

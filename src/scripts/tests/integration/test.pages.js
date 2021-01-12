@@ -50,10 +50,10 @@ describe('Pages', function () {
             let titre = await page.waitForSelector('#page h2')
             assert.equal(await titre.innerText(), 'Conseils pour les enfants')
 
-            // On retrouve le bouton pour repartir vers le questionnaire.
-            let button = await page.waitForSelector('#page #js-profil-empty a')
-            assert.equal((await button.innerText()).trim(), 'Démarrer le questionnaire')
-            assert.equal(await button.getAttribute('href'), '#symptomesactuels')
+            // On retrouve le bouton pour aller vers les conseils.
+            let button = await page.waitForSelector('#page #js-profil-full a')
+            assert.equal((await button.innerText()).trim(), 'Aller à mes conseils')
+            assert.equal(await button.getAttribute('href'), '#conseils')
         }
     })
 

@@ -1,5 +1,0 @@
-<!---->Mon foyer
-
----
-
-<!---->Son foyer

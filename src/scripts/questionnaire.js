@@ -22,9 +22,7 @@ export const ORDRE = [
     'debutsymptomes',
     'depistage',
     'residence',
-    'foyer',
     'sante',
-    'activitepro',
 ]
 
 export const TRANSITIONS = {
@@ -80,23 +78,18 @@ export const TRANSITIONS = {
         previous: {
             depistage: (profil) => profil.isDepistageComplete(),
         },
-        next: { foyer: (profil) => profil.isResidenceComplete() },
-    },
-    foyer: {
-        previous: { residence: () => true },
-        next: { sante: (profil) => profil.isFoyerComplete() },
-    },
-    sante: {
-        previous: { foyer: () => true },
         next: {
-            activitepro: (profil) => profil.isSanteComplete() && profil.age >= 15,
-            pediatrie: (profil) => profil.isSanteComplete() && profil.age < 15,
+            sante: (profil) =>
+                profil.isResidenceComplete() &&
+                profil.isFoyerComplete() &&
+                profil.isActiviteProComplete(),
         },
     },
-    activitepro: {
-        previous: { sante: () => true },
+    sante: {
+        previous: { residence: () => true },
         next: {
-            conseils: (profil) => profil.isActiviteProComplete(),
+            conseils: (profil) => profil.isSanteComplete() && profil.age >= 15,
+            pediatrie: (profil) => profil.isSanteComplete() && profil.age < 15,
         },
     },
     conseils: {},
