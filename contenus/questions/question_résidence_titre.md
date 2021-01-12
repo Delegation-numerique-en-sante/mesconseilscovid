@@ -1,5 +1,5 @@
-<!---->Mon lieu de résidence
+<!---->Ma situation
 
 ---
 
-<!---->Son lieu de résidence
+<!---->Sa situation

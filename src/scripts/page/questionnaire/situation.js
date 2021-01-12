@@ -7,7 +7,7 @@ import {
 } from '../../formutils.js'
 import geolocalisation from '../../geoloc.js'
 
-export default function residence(form, app) {
+export default function situation(form, app) {
     const button = form.querySelector('input[type=submit]')
     preloadForm(form, 'departement', app.profil)
     preloadCheckboxForm(form, 'foyer_enfants', app.profil)
@@ -34,7 +34,7 @@ export default function residence(form, app) {
         app.profil.activite_pro_sante =
             event.target.elements['activite_pro_sante'].checked
         app.enregistrerProfilActuel().then(() => {
-            app.goToNextPage('residence')
+            app.goToNextPage('situation')
         })
     })
     document

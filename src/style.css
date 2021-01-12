@@ -296,7 +296,7 @@ main footer .legals {
 }
 
 #nom-form,
-#residence-form,
+#situation-form,
 #sante-form,
 #symptomes-actuels-form,
 #symptomes-passes-form,
@@ -337,8 +337,8 @@ main footer .legals {
     padding-top: 200px;
 }
 @media only screen and (min-width: 450px) {
-    #residence-form,
     #sante-form,
+    #situation-form,
     #symptomes-actuels-form,
     #symptomes-passes-form,
     #contact-a-risque-form,
@@ -379,9 +379,9 @@ main footer .legals {
 #nom-form {
     background-image: url('illustrations/nom.svg');
 }
-#residence-form,
+#situation-form,
 #conseils-vie-quotidienne header {
-    background-image: url('illustrations/residence.svg');
+    background-image: url('illustrations/situation.svg');
 }
 #conseils-activite header {
     background-image: url('illustrations/activitepro.svg');

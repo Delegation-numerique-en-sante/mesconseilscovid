@@ -14,7 +14,7 @@ import symptomesactuels from './page/questionnaire/symptomesactuels.js'
 import depistage from './page/questionnaire/depistage.js'
 import symptomespasses from './page/questionnaire/symptomespasses.js'
 import contactarisque from './page/questionnaire/contactarisque.js'
-import residence from './page/questionnaire/residence.js'
+import situation from './page/questionnaire/situation.js'
 import sante from './page/questionnaire/sante.js'
 import conseils from './page/conseils.js'
 
@@ -153,7 +153,7 @@ export function initRouter(app) {
     addQuestionnaireRoute('contactarisque', contactarisque)
     addQuestionnaireRoute('debutsymptomes', debutsymptomes)
     addQuestionnaireRoute('depistage', depistage)
-    addQuestionnaireRoute('residence', residence)
+    addQuestionnaireRoute('situation', situation)
     addQuestionnaireRoute('sante', sante)
 
     addAppRoute('conseils', conseils, beforeConseils)
@@ -190,6 +190,13 @@ export function initRouter(app) {
         },
     })
 
+    // Legacy redirects.
+    router.on(new RegExp('^(residence|foyer|activitepro)$'), function () {}, {
+        before: function (done) {
+            redirectTo('situation')
+            done(false)
+        },
+    })
     router.on(new RegExp('^(caracteristiques|antecedents)$'), function () {}, {
         before: function (done) {
             redirectTo('sante')
