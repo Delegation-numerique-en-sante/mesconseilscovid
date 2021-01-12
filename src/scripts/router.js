@@ -195,6 +195,13 @@ export function initRouter(app) {
         },
     })
 
+    router.on(new RegExp('^(caracteristiques|antecedents)$'), function () {}, {
+        before: function (done) {
+            redirectTo('sante')
+            done(false)
+        },
+    })
+
     router.notFound(function () {
         redirectTo('introduction')
     })
