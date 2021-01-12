@@ -30,7 +30,7 @@ import pytest
         ("pour\u00a0100\u00a0% des cas", "pour\u00a0100\u202f% des cas"),
     ],
 )
-def test_espaces_insécables(in_, out_):
+def test_espaces_insecables(in_, out_):
     from typographie import typographie
 
     assert typographie(in_) == out_
