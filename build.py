@@ -22,8 +22,12 @@ jinja_env = JinjaEnv(loader=FileSystemLoader(str(SRC_DIR)), undefined=StrictUnde
 
 
 class FrenchTypographyRenderer(mistune.HTMLRenderer):
+
     def text(self, text_):
         return typographie(super().text(text_))
+
+    def block_html(self, html):
+        return typographie(super().block_html(html))
 
 
 markdown = mistune.create_markdown(

@@ -48,3 +48,28 @@ def test_liste_avec_saut_de_ligne():
             """
         )
     )
+
+
+def test_block_html():
+    from build import markdown
+
+    assert (
+        markdown(
+            dedent(
+                """\
+                <!---->Mes deux points :
+
+                ---
+
+                <!---->Ses deux points :
+                """
+            )
+        )
+        == dedent(
+            """\
+            <!---->Mes deux points :
+            <hr />
+            <!---->Ses deux points :
+            """
+        )
+    )
