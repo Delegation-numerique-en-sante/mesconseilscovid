@@ -79,7 +79,7 @@ describe('Pagination', function () {
         })
     })
 
-    describe('Mes antécédents', function () {
+    describe('Mes caractéristiques', function () {
         it('redirige vers question foyer si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
@@ -88,61 +88,13 @@ describe('Pagination', function () {
                 contact_a_risque: false,
                 departement: '80',
             })
-            assert.strictEqual(questionnaire.before('antecedents', profil), 'foyer')
-        })
-        it('ok d’aller à la question antécédents si réponse à foyer', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_actuels: false,
-                depistage: false,
-                symptomes_passes: false,
-                contact_a_risque: false,
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-            })
-            assert.isUndefined(questionnaire.before('antecedents', profil))
-        })
-        it('ok d’aller à la question antécédents même si déjà répondu', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_actuels: false,
-                depistage: false,
-                symptomes_passes: false,
-                contact_a_risque: false,
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
-            })
-            assert.isUndefined(questionnaire.before('antecedents', profil))
-        })
-    })
-
-    describe('Mes caractéristiques', function () {
-        it('redirige vers question antécédents si réponse manquante', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_actuels: false,
-                depistage: false,
-                symptomes_passes: false,
-                contact_a_risque: false,
-                departement: '80',
-                foyer_enfants: false,
-                foyer_fragile: false,
-            })
             assert.strictEqual(
                 questionnaire.before('caracteristiques', profil),
-                'antecedents'
+                'foyer'
             )
         })
 
-        it('ok d’aller à la question caractéristiques si réponse à antécédents', function () {
+        it('ok d’aller à la question caractéristiques si réponse à foyer', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
                 depistage: false,
@@ -151,15 +103,6 @@ describe('Pagination', function () {
                 departement: '80',
                 foyer_enfants: false,
                 foyer_fragile: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_chronique_autre: false,
             })
             assert.isUndefined(questionnaire.before('caracteristiques', profil))
         })

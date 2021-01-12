@@ -53,8 +53,13 @@ export async function remplirQuestionnaire(page, choix) {
     )
     await remplirDepartement(page, choix.departement)
     await remplirFoyer(page, choix.enfants)
-    await remplirAntecedents(page, choix.antecedents || [])
-    await remplirCaracteristiques(page, choix.age, choix.taille, choix.poids)
+    await remplirCaracteristiques(
+        page,
+        choix.age,
+        choix.taille,
+        choix.poids,
+        choix.antecedents || []
+    )
     if (choix.age < 15) return
     await remplirActivite(page, choix.activitePro)
 }
@@ -87,37 +92,30 @@ async function remplirFoyer(page, enfants) {
     let bouton = await page.waitForSelector('#page >> text="Continuer"')
     await Promise.all([
         bouton.click(),
-        page.waitForNavigation({ url: '**/#antecedents' }),
+        page.waitForNavigation({ url: '**/#caracteristiques' }),
     ])
 }
 
-async function remplirAntecedents(page, antecedents) {
-    let bouton
+async function remplirCaracteristiques(page, age, taille, poids, antecedents) {
     let label
+    await page.fill('#page #age', age)
+    await page.fill('#page #taille', taille)
+    await page.fill('#page #poids', poids)
+    // TODO: grossesse
+
     if (antecedents.length) {
+        let primary_label = await page.waitForSelector(
+            '#page label[for="antecedent_chronique"]'
+        )
+        await primary_label.click()
         antecedents.forEach(async (antecedent) => {
             label = await page.waitForSelector(
                 `#page label[for="antecedent_${antecedent}"]`
             )
             await label.click()
         })
-        bouton = await page.waitForSelector('#page >> text=Continuer')
-    } else {
-        bouton = await page.waitForSelector(
-            '#page >> text=/Aucun de ces éléments ne correspond à .* situation/'
-        )
     }
-    await Promise.all([
-        bouton.click(),
-        page.waitForNavigation({ url: '**/#caracteristiques' }),
-    ])
-}
 
-async function remplirCaracteristiques(page, age, taille, poids) {
-    await page.fill('#page #age', age)
-    await page.fill('#page #taille', taille)
-    await page.fill('#page #poids', poids)
-    // TODO: grossesse
     let bouton = await page.waitForSelector('#page >> text="Continuer"')
     const target = age < 15 ? 'pediatrie' : 'activitepro'
     await Promise.all([

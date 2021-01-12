@@ -23,7 +23,6 @@ export const ORDRE = [
     'depistage',
     'residence',
     'foyer',
-    'antecedents',
     'caracteristiques',
     'activitepro',
 ]
@@ -85,19 +84,19 @@ export const TRANSITIONS = {
     },
     foyer: {
         previous: { residence: () => true },
-        next: { antecedents: (profil) => profil.isFoyerComplete() },
-    },
-    antecedents: {
-        previous: { foyer: () => true },
-        next: { caracteristiques: (profil) => profil.isAntecedentsComplete() },
+        next: { caracteristiques: (profil) => profil.isFoyerComplete() },
     },
     caracteristiques: {
-        previous: { antecedents: () => true },
+        previous: { foyer: () => true },
         next: {
             activitepro: (profil) =>
-                profil.isCaracteristiquesComplete() && profil.age >= 15,
+                profil.isCaracteristiquesComplete() &&
+                profil.isAntecedentsComplete() &&
+                profil.age >= 15,
             pediatrie: (profil) =>
-                profil.isCaracteristiquesComplete() && profil.age < 15,
+                profil.isCaracteristiquesComplete() &&
+                profil.isAntecedentsComplete() &&
+                profil.age < 15,
         },
     },
     activitepro: {

@@ -61,6 +61,16 @@ Médecin, infirmier, aide soignant, pharmacien, orthophoniste, brancardier, mani
 
 
 
+## [question_antecedent_chronique.md](question_antecedent_chronique.md)
+
+<!---->Je suis un traitement médical ou j’ai une maladie chronique
+
+---
+
+<!---->Cette personne suit un traitement médical ou a une maladie chronique
+
+
+
 ## [question_antécédents_cancer_libellé.md](question_antécédents_cancer_libellé.md)
 
 <!---->J’ai un <b>cancer</b> évolutif sous traitement (hors hormonothérapie)
@@ -169,16 +179,6 @@ broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, apnées d
 ---
 
 <!---->Il ou elle a une <b>maladie respiratoire</b> chronique :
-
-
-
-## [question_antécédents_titre.md](question_antécédents_titre.md)
-
-<!---->Ma santé
-
----
-
-<!---->Sa santé
 
 
 

@@ -48,7 +48,6 @@ const CACHE_FILES = [
     'timeline-arrow.svg',
     'illustrations/accueil.svg',
     'illustrations/activitepro.svg',
-    'illustrations/antecedents.svg',
     'illustrations/caracteristiques.svg',
     'illustrations/contact_medecin.svg',
     'illustrations/contactarisque.svg',

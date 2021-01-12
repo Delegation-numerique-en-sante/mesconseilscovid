@@ -300,7 +300,6 @@ main footer .legals {
 #activite-pro-form,
 #foyer-form,
 #caracteristiques-form,
-#antecedents-form,
 #symptomes-actuels-form,
 #symptomes-passes-form,
 #contact-a-risque-form,
@@ -345,7 +344,6 @@ main footer .legals {
     #activite-pro-form,
     #foyer-form,
     #caracteristiques-form,
-    #antecedents-form,
     #symptomes-actuels-form,
     #symptomes-passes-form,
     #contact-a-risque-form,
@@ -414,6 +412,7 @@ main footer .legals {
 #conseils-sante header {
     background-image: url('illustrations/contact_medecin.svg');
 }
+#suivi-medecin-form,
 #caracteristiques-form {
     background-image: url('illustrations/caracteristiques.svg');
 }
@@ -422,10 +421,6 @@ main footer .legals {
 }
 #conseils-foyer-enfants header {
     background-image: url('illustrations/pediatriegeneral.svg');
-}
-#antecedents-form,
-#suivi-medecin-form {
-    background-image: url('illustrations/antecedents.svg');
 }
 #conseils-covid header {
     background-image: url('illustrations/covid.svg');
