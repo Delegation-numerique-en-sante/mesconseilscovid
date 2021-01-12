@@ -86,7 +86,6 @@ export default class Profil {
         this.activite_pro_liberal = undefined
 
         this.foyer_enfants = undefined
-        this.foyer_fragile = undefined
 
         this.age = undefined
         this.grossesse_3e_trimestre = undefined
@@ -154,7 +153,6 @@ export default class Profil {
         this.activite_pro_liberal = data['activite_pro_liberal']
 
         this.foyer_enfants = data['foyer_enfants']
-        this.foyer_fragile = data['foyer_fragile']
 
         this.age = data['age']
         this.grossesse_3e_trimestre = data['grossesse_3e_trimestre']
@@ -265,7 +263,7 @@ export default class Profil {
         }
     }
 
-    fillTestData(depistage, symptomes, personneFragile, foyerFragile) {
+    fillTestData(depistage, symptomes, personneFragile) {
         let data = {
             symptomes_actuels: false,
             symptomes_actuels_temperature: false,
@@ -296,7 +294,6 @@ export default class Profil {
             activite_pro_sante: false,
             activite_pro_liberal: false,
             foyer_enfants: false,
-            foyer_fragile: false,
             age: '42',
             grossesse_3e_trimestre: false,
             poids: '70',
@@ -363,10 +360,6 @@ export default class Profil {
             data.age = 70
         }
 
-        if (foyerFragile) {
-            data.foyer_fragile = true
-        }
-
         return this.fillData(data)
     }
 
@@ -378,7 +371,6 @@ export default class Profil {
             activite_pro_sante: this.activite_pro_sante,
             activite_pro_liberal: this.activite_pro_liberal,
             foyer_enfants: this.foyer_enfants,
-            foyer_fragile: this.foyer_fragile,
             age: this.age,
             grossesse_3e_trimestre: this.grossesse_3e_trimestre,
             poids: this.poids,
@@ -437,7 +429,6 @@ export default class Profil {
             typeof this.activite_pro_sante === 'undefined' &&
             typeof this.activite_pro_liberal === 'undefined' &&
             typeof this.foyer_enfants === 'undefined' &&
-            typeof this.foyer_fragile === 'undefined' &&
             typeof this.age === 'undefined' &&
             typeof this.grossesse_3e_trimestre === 'undefined' &&
             typeof this.poids === 'undefined' &&

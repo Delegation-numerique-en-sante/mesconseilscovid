@@ -70,18 +70,15 @@ export default class App {
         }
         return Promise.all(promises)
     }
-    creerProfilType(depistage, symptomes, personneFragile, foyerFragile) {
+    creerProfilType(depistage, symptomes, personneFragile) {
         let nom = `${depistage} + ${symptomes}`
         if (personneFragile) {
             nom = `${nom} + personne fragile`
         }
-        if (foyerFragile) {
-            nom = `${nom} + foyer fragile`
-        }
         return this.stockage.getProfil(nom).then((profil) => {
             if (profil === null) {
                 profil = new Profil(nom)
-                profil.fillTestData(depistage, symptomes, personneFragile, foyerFragile)
+                profil.fillTestData(depistage, symptomes, personneFragile)
                 return this.stockage.enregistrer(profil)
             } else {
                 console.error(`Le profil "${nom}" existe déjà`)
