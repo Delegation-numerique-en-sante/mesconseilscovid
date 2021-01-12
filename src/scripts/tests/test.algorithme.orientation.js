@@ -623,20 +623,6 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
-        it('Une activité pro + foyer fragile affiche des conseils + pro + infos', function () {
-            var profil = new Profil('mes_infos', {
-                activite_pro: true,
-                foyer_fragile: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
-                'conseils-activite',
-                'reponse-activite-pro',
-                'conseils-activite-pro',
-                'conseils-activite-pro-infos',
-            ])
-        })
-
         it('Une activité pro avec sante affiche des conseils + sante', function () {
             var profil = new Profil('mes_infos', {
                 activite_pro: true,
