@@ -83,7 +83,6 @@ export default class Profil {
         this.activite_pro = undefined
         this.activite_pro_public = undefined
         this.activite_pro_sante = undefined
-        this.activite_pro_liberal = undefined
 
         this.foyer_enfants = undefined
 
@@ -150,7 +149,6 @@ export default class Profil {
         this.activite_pro = data['activite_pro']
         this.activite_pro_public = data['activite_pro_public']
         this.activite_pro_sante = data['activite_pro_sante']
-        this.activite_pro_liberal = data['activite_pro_liberal']
 
         this.foyer_enfants = data['foyer_enfants']
 
@@ -292,7 +290,6 @@ export default class Profil {
             activite_pro: false,
             activite_pro_public: false,
             activite_pro_sante: false,
-            activite_pro_liberal: false,
             foyer_enfants: false,
             age: '42',
             grossesse_3e_trimestre: false,
@@ -369,7 +366,6 @@ export default class Profil {
             activite_pro: this.activite_pro,
             activite_pro_public: this.activite_pro_public,
             activite_pro_sante: this.activite_pro_sante,
-            activite_pro_liberal: this.activite_pro_liberal,
             foyer_enfants: this.foyer_enfants,
             age: this.age,
             grossesse_3e_trimestre: this.grossesse_3e_trimestre,
@@ -427,7 +423,6 @@ export default class Profil {
             typeof this.activite_pro === 'undefined' &&
             typeof this.activite_pro_public === 'undefined' &&
             typeof this.activite_pro_sante === 'undefined' &&
-            typeof this.activite_pro_liberal === 'undefined' &&
             typeof this.foyer_enfants === 'undefined' &&
             typeof this.age === 'undefined' &&
             typeof this.grossesse_3e_trimestre === 'undefined' &&

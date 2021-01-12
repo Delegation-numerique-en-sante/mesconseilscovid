@@ -475,11 +475,6 @@ export default class AlgorithmeOrientation {
                 }
                 blockNames.push('conseils-activite-pro-infos')
             }
-
-            // Bloc additionnel: activité libérale.
-            if (this.profil.activite_pro_liberal) {
-                blockNames.push('conseils-activite-pro-liberal')
-            }
         }
         return blockNames
     }
