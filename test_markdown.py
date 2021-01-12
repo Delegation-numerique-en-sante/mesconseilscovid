@@ -67,9 +67,9 @@ def test_block_html():
         )
         == dedent(
             """\
-            <!---->Mes deux points :
+            <!---->Mes deux points\u00a0:
             <hr />
-            <!---->Ses deux points :
+            <!---->Ses deux points\u00a0:
             """
         )
     )
