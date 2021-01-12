@@ -1,1 +1,1 @@
-<b class="nom-antecedents"></b> (<a href="#caracteristiques">modifier</a>)
+<b class="nom-antecedents"></b> (<a href="#sante">modifier</a>)
