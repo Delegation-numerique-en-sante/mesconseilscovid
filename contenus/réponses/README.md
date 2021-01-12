@@ -36,7 +36,7 @@ Vous travaillez et/ou êtes bénévole (<a href="#activitepro">modifier</a>)
 
 ## [réponse_antécédents.md](réponse_antécédents.md)
 
-<b class="nom-antecedents"></b> (<a href="#antecedents">modifier</a>)
+<b class="nom-antecedents"></b> (<a href="#caracteristiques">modifier</a>)
 
 
 

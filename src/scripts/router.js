@@ -16,7 +16,6 @@ import symptomespasses from './page/questionnaire/symptomespasses.js'
 import contactarisque from './page/questionnaire/contactarisque.js'
 import residence from './page/questionnaire/residence.js'
 import foyer from './page/questionnaire/foyer.js'
-import antecedents from './page/questionnaire/antecedents.js'
 import caracteristiques from './page/questionnaire/caracteristiques.js'
 import activitepro from './page/questionnaire/activitepro.js'
 
@@ -159,7 +158,6 @@ export function initRouter(app) {
     addQuestionnaireRoute('depistage', depistage)
     addQuestionnaireRoute('residence', residence)
     addQuestionnaireRoute('foyer', foyer)
-    addQuestionnaireRoute('antecedents', antecedents)
     addQuestionnaireRoute('caracteristiques', caracteristiques)
     addQuestionnaireRoute('activitepro', activitepro)
 
