@@ -16,7 +16,7 @@ def build_regex(avant, apres):
 RE_ESPACE_FINE_INSECABLE = regex.compile(
     assemble_regexes(
         build_regex(r"\w?", r"[;\?!]"),  # Ponctuations doubles.
-        build_regex(r"\d", r"([ghj]|mg)(\b|$)"),  # Unités.
+        build_regex(r"\d", r"([ghj]|mg|°C)(\b|$)"),  # Unités.
         build_regex(r"\d", r"%"),  # Pourcentages.
         build_regex(r"\d", r"€"),  # Symboles monétaires.
         build_regex(r"\d", r"\d"),  # Séparateurs de milliers.

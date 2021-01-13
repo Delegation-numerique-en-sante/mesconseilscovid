@@ -28,6 +28,8 @@ import pytest
         ("à 10 000 kilomètres", "à 10\u202f000\u00a0kilomètres"),
         ("100\u00a0%", "100\u202f%"),
         ("pour\u00a0100\u00a0% des cas", "pour\u00a0100\u202f% des cas"),
+        ("Covid-19 :", "Covid-19\u00a0:"),
+        ("35,5\u00a0°C", "35,5\u202f°C"),
     ],
 )
 def test_espaces_insecables(in_, out_):
