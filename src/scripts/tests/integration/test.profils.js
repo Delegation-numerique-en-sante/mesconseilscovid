@@ -32,16 +32,14 @@ describe('Profils', function () {
             let bouton = await page.waitForSelector('#page >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomesactuels' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
         // Légende adaptée.
         {
-            let legend = await page.waitForSelector(
-                '#page #symptomes-actuels-form legend'
-            )
-            assert.equal(await legend.innerText(), '1/7 - Son état actuel')
+            let legend = await page.waitForSelector('#page #symptomes-form legend')
+            assert.equal(await legend.innerText(), '1/5 - Son état actuel')
         }
 
         // Remplir le questionnaire.

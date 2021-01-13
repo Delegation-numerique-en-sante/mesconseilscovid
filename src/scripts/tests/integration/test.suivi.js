@@ -20,7 +20,7 @@ describe('Suivi', function () {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:symptomesactuels'),
+                waitForPlausibleTrackingEvent(page, 'pageview:symptomes'),
             ])
         }
 

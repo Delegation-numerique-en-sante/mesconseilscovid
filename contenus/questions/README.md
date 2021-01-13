@@ -246,16 +246,6 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 
 
-## [question_debut_symptomes_titre.md](question_debut_symptomes_titre.md)
-
-<!---->La date de début de mes symptômes
-
----
-
-<!---->La date de début de ses symptômes
-
-
-
 ## [question_dépistage_aide.md](question_dépistage_aide.md)
 
 
@@ -509,16 +499,6 @@ Avez-vous remarqué que votre proche n’est pas comme d’habitude ces dernièr
 
 
 
-## [question_symptômes_actuels_autre_libellé.md](question_symptômes_actuels_autre_libellé.md)
-
-<!---->Je n’ai <b>aucun de ces symptômes</b>
-
----
-
-<!---->Il ou elle n’a <b>aucun de ces symptômes</b>
-
-
-
 ## [question_symptômes_actuels_diarrhée_libellé.md](question_symptômes_actuels_diarrhée_libellé.md)
 
 <!---->J’ai eu de la <b>diarrhée</b> ces dernières 24 heures (au moins 3 selles molles).
@@ -552,16 +532,6 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 ---
 
 <!---->Il ou elle a une <b>fatigue inhabituelle</b> ces derniers jours <em>et</em> cette fatigue l’oblige à se reposer plus de <b>la moitié de la journée</b>.
-
-
-
-## [question_symptômes_actuels_libellé.md](question_symptômes_actuels_libellé.md)
-
-<!---->J’ai <b>actuellement</b> un ou des signes qui évoquent la Covid comme <b>la fièvre, une toux ou des difficultés à respirer, des maux de tête ou une diminution de l’odorat et du goût</b>.
-
----
-
-<!---->Cette personne a <b>actuellement</b> un ou des signes qui évoquent la Covid <b>la fièvre, une toux ou des difficultés à respirer, des maux de tête ou une diminution de l’odorat et du goût</b>.
 
 
 
@@ -605,16 +575,6 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 
 
 
-## [question_symptômes_actuels_titre.md](question_symptômes_actuels_titre.md)
-
-<!---->Mon état actuel
-
----
-
-<!---->Son état actuel
-
-
-
 ## [question_symptômes_actuels_toux_libellé.md](question_symptômes_actuels_toux_libellé.md)
 
 <!---->Je <b>tousse</b> <em>ou</em> ma toux habituelle s’est modifiée ces derniers jours.
@@ -622,12 +582,6 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 ---
 
 <!---->Il ou elle <b>tousse</b> <em>ou</em> sa toux habituelle s’est modifiée ces derniers jours.
-
-
-
-## [question_symptômes_aide.md](question_symptômes_aide.md)
-
-*Chez les personnes de plus de 80 ans, d’autres signes font penser à la Covid : fatigue, perte de l’appétit, chutes à répétition, apparition ou aggravation de problèmes de mémoire, confusion, diarrhée, aggravation d’une autre maladie.*
 
 
 
@@ -733,22 +687,48 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 
 
-## [question_symptômes_passés_libellé.md](question_symptômes_passés_libellé.md)
+## [question_symptômes_libellé_non.md](question_symptômes_libellé_non.md)
 
-<!---->J’ai eu des <b>signes</b> (fièvre, toux ou difficultés à respirer, maux de tête, diminution de l’odorat et du goût) qui évoquent la Covid <b>dans les 7 derniers jours</b>.
-
----
-
-<!---->Cette personne a eu des <b>signes</b> (fièvre, toux ou difficultés à respirer, maux de tête, diminution de l’odorat et du goût) qui évoquent la Covid <b>dans les 7 derniers jours</b>.
+<!---->Non, <b>pas récemment</b>
 
 
 
-## [question_symptômes_passés_titre.md](question_symptômes_passés_titre.md)
+## [question_symptômes_libellé_oui.md](question_symptômes_libellé_oui.md)
 
-<!---->Mon état ces 7 derniers jours
+<!---->Oui, j’en ai <b>ajourd’hui</b>
 
 ---
 
-<!---->Son état ces 7 derniers jours
+<!---->Oui, cette personne en a <b>aujourd’hui</b>
+
+
+
+## [question_symptômes_libellé_passés.md](question_symptômes_libellé_passés.md)
+
+<!---->Non, mais <b>j’en ai eu</b> dans les 7 derniers jours
+
+---
+
+<!---->Non, mais <b>cette personne en a eu</b> dans les 7 derniers jours
+
+
+
+## [question_symptômes_titre.md](question_symptômes_titre.md)
+
+<!---->Mon état actuel
+
+---
+
+<!---->Son état actuel
+
+
+
+## [question_symptômes_titre_ouinon.md](question_symptômes_titre_ouinon.md)
+
+<!---->Avez-vous des signes de la Covid ?
+
+---
+
+<!---->Cette personne a-t-elle des signes de la Covid ?
 
 
