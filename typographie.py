@@ -9,7 +9,7 @@ def assemble_regexes(*regexes):
 
 def build_regex(avant, apres):
     # \p{} permet de reconnaître un caractère par sa catégorie Unicode
-    # "Zs" est la catégorie des espaces
+    # "Zs" est la catégorie "Separator, space".
     return rf"((?P<avant>{avant})" + r"\p{Zs}" + rf"(?P<apres>{apres}))"
 
 
@@ -36,7 +36,8 @@ RE_ESPACE_INSECABLE = regex.compile(
     assemble_regexes(
         build_regex(r"\w?", r":"),  # Deux points.
         build_regex(r"«", r"\w"),  # Guillemets en chevrons.
-        build_regex(r"[\w\?!.…]", r"»"),  # Guillemets en chevrons.
+        # "Po" est la catégorie "Punctuation, other".
+        build_regex(r"[\w\p{Po}]", r"»"),  # Guillemets en chevrons.
         build_regex(r"\d", r"\w"),  # Chiffre suivi de lettres.
     )
 )
