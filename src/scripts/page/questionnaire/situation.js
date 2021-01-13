@@ -21,6 +21,29 @@ export default function situation(form, app) {
         : 'Son département de résidence est requis'
     toggleFormButtonOnSelectFieldsRequired(form, button.value, requiredLabel)
 
+    // Essaie d’éviter la confusion liée au sélecteur natif sur iOS pour le
+    // choix manuel du département.
+    //
+    // Le problème : la valeur affichée dans le champ ne change que lorsque
+    // l’utilisateur clique sur OK, ce qui peut donner l’impression que le sélecteur
+    // ne fonctionne pas.
+    //
+    // La solution :
+    // - on efface la valeur du champ lorsque l’élément gagne le focus, de manière
+    //   à afficher le choix par défaut (« Choisir dans la liste... ») pendant
+    //   la sélection avec le contrôle natif ;
+    // - une fois la sélection effectuée, on utilise blur() pour retirer le focus
+    //   de l’élément afin que l’événement précédent soit bien déclenché si
+    //   l’utilisateur touche à nouveau le sélecteur.
+    //
+    const selectElement = form.elements['departement']
+    selectElement.addEventListener('focus', function (event) {
+        event.target.value = ''
+    })
+    selectElement.addEventListener('change', function (event) {
+        event.target.blur()
+    })
+
     // Montrer les questions secondaires en cas d’activité pro.
     const primary = form.elements['activite_pro']
     enableOrDisableSecondaryFields(form, primary)
