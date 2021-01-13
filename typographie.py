@@ -16,7 +16,7 @@ def build_regex(avant, apres):
 RE_ESPACE_FINE_INSECABLE = regex.compile(
     assemble_regexes(
         build_regex(r"\w?", r"[;\?!]"),  # Ponctuations doubles.
-        build_regex(r"\d", r"([ghj]|jours?|heures?|ans?|mg)(\b|$)"),  # Unités.
+        build_regex(r"\d", r"([ghj]|mg)(\b|$)"),  # Unités.
         build_regex(r"\d", r"%"),  # Pourcentages.
         build_regex(r"\d", r"€"),  # Symboles monétaires.
         build_regex(r"\d", r"\d"),  # Séparateurs de milliers.
@@ -37,6 +37,7 @@ RE_ESPACE_INSECABLE = regex.compile(
         build_regex(r"\w?", r":"),  # Deux points.
         build_regex(r"«", r"\w"),  # Guillemets en chevrons.
         build_regex(r"\w", r"»"),  # Guillemets en chevrons.
+        build_regex(r"\d", r"\w"),  # Chiffre suivi de lettres.
     )
 )
 
@@ -56,4 +57,4 @@ def typographie(texte):
 
     https://fr.wikipedia.org/wiki/Espace_ins%C3%A9cable#En_France
     """
-    return insere_espaces_insecables(insere_espaces_fines_insecables(texte))
+    return insere_espaces_fines_insecables(insere_espaces_insecables(texte))
