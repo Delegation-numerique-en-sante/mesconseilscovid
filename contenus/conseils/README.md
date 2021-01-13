@@ -244,7 +244,7 @@ Si vous devez **vous isoler**, nous vous conseillons de :
 * vous **laver les mains** très régulièrement ;
 * **aérer** au moins 10 minutes plusieurs fois par jour ;
 * **nettoyer** régulièrement **les surfaces** que vous touchez (poignées de porte, meubles de salle de bains, toilettes, sols, etc., avec votre produit habituel, puis avec un produit contenant de l’eau de javel ou de l’alcool à 70°, puis de rincer) ;
-* **laver vos draps et serviettes** de toilette à 60°C pendant au moins 30 minutes ;
+* **laver vos draps et serviettes** de toilette à 60 °C pendant au moins 30 minutes ;
 * privilégier des ustensiles de **ménage qui ne dispersent pas les poussières** comme une éponge ou une serpillière (l’aspirateur est à éviter) ;
 * **jeter** tout ce qui peut-être contaminé **dans un sac poubelle à part**, que vous mettrez dans un second sac poubelle une fois fermé.
 
