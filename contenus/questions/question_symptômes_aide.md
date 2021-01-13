@@ -1,1 +1,0 @@
-*Chez les personnes de plus de 80 ans, d’autres signes font penser à la Covid : fatigue, perte de l’appétit, chutes à répétition, apparition ou aggravation de problèmes de mémoire, confusion, diarrhée, aggravation d’une autre maladie.*

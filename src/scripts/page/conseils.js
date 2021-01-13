@@ -236,7 +236,7 @@ function dynamicTimelineDataInjection(element, profil) {
             contagiosite: joursAvant(2, profil.symptomes_start_date),
             debutIsolement: `${formatDate(
                 profil.symptomes_start_date
-            )} (<a href="#debutsymptomes">modifier</a>)`,
+            )} (<a href="#symptomes">modifier</a>)`,
             demain: joursApres(1, new Date()),
             finIsolement: joursApres(7, profil.symptomes_start_date),
         })

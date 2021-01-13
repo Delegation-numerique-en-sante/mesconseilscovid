@@ -48,7 +48,7 @@ describe('Plausible', function () {
 
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/#symptomesactuels' }),
+            page.waitForNavigation({ url: '**/#symptomes' }),
         ])
 
         await remplirQuestionnaire(page, {
@@ -82,10 +82,9 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
-            'Questionnaire commencé:symptomesactuels',
-            'Questionnaire commencé pour moi:symptomesactuels',
-            'pageview:symptomesactuels',
-            'pageview:symptomespasses',
+            'Questionnaire commencé:symptomes',
+            'Questionnaire commencé pour moi:symptomes',
+            'pageview:symptomes',
             'pageview:contactarisque',
             'pageview:depistage',
             'pageview:situation',
@@ -138,10 +137,9 @@ describe('Plausible', function () {
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
             'pageview:nom',
-            'Questionnaire commencé:symptomesactuels',
-            'Questionnaire commencé pour un proche:symptomesactuels',
-            'pageview:symptomesactuels',
-            'pageview:symptomespasses',
+            'Questionnaire commencé:symptomes',
+            'Questionnaire commencé pour un proche:symptomes',
+            'pageview:symptomes',
             'pageview:contactarisque',
             'pageview:depistage',
             'pageview:situation',
@@ -160,7 +158,7 @@ describe('Plausible', function () {
         let bouton = await page.waitForSelector('text="Démarrer"')
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/#symptomesactuels' }),
+            page.waitForNavigation({ url: '**/#symptomes' }),
         ])
         await remplirQuestionnaire(page, {
             symptomesActuels: [],
@@ -193,10 +191,9 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
-            'Questionnaire commencé:symptomesactuels',
-            'Questionnaire commencé pour moi:symptomesactuels',
-            'pageview:symptomesactuels',
-            'pageview:symptomespasses',
+            'Questionnaire commencé:symptomes',
+            'Questionnaire commencé pour moi:symptomes',
+            'pageview:symptomes',
             'pageview:contactarisque',
             'pageview:depistage',
             'pageview:situation',
@@ -247,10 +244,9 @@ describe('Plausible', function () {
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
             'pageview:nom',
-            'Questionnaire commencé:symptomesactuels',
-            'Questionnaire commencé pour un proche:symptomesactuels',
-            'pageview:symptomesactuels',
-            'pageview:symptomespasses',
+            'Questionnaire commencé:symptomes',
+            'Questionnaire commencé pour un proche:symptomes',
+            'pageview:symptomes',
             'pageview:contactarisque',
             'pageview:depistage',
             'pageview:situation',

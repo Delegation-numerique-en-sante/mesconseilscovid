@@ -10,16 +10,14 @@ import nouvelleversion from './page/nouvelleversion.js'
 
 import nom from './page/questionnaire/nom.js'
 
-import symptomesactuels from './page/questionnaire/symptomesactuels.js'
+import symptomes from './page/questionnaire/symptomes.js'
 import depistage from './page/questionnaire/depistage.js'
-import symptomespasses from './page/questionnaire/symptomespasses.js'
 import contactarisque from './page/questionnaire/contactarisque.js'
 import situation from './page/questionnaire/situation.js'
 import sante from './page/questionnaire/sante.js'
 import conseils from './page/conseils.js'
 
 import suiviintroduction from './page/suiviintroduction.js'
-import debutsymptomes from './page/debutsymptomes.js'
 import suivisymptomes from './page/suivisymptomes.js'
 import suivihistorique from './page/suivihistorique.js'
 
@@ -148,10 +146,8 @@ export function initRouter(app) {
 
     addAppRoute('nom', nom)
 
-    addQuestionnaireRoute('symptomesactuels', symptomesactuels)
-    addQuestionnaireRoute('symptomespasses', symptomespasses)
+    addQuestionnaireRoute('symptomes', symptomes)
     addQuestionnaireRoute('contactarisque', contactarisque)
-    addQuestionnaireRoute('debutsymptomes', debutsymptomes)
     addQuestionnaireRoute('depistage', depistage)
     addQuestionnaireRoute('situation', situation)
     addQuestionnaireRoute('sante', sante)
@@ -183,14 +179,17 @@ export function initRouter(app) {
         nouvelleversion(element, app, origine)
     })
 
-    router.on(new RegExp('^suividate$'), function () {}, {
-        before: function (done) {
-            redirectTo('debutsymptomes')
-            done(false)
-        },
-    })
-
     // Legacy redirects.
+    router.on(
+        new RegExp('^(symptomesactuels|symptomespasses|debutsymptomes)$'),
+        function () {},
+        {
+            before: function (done) {
+                redirectTo('symptomes')
+                done(false)
+            },
+        }
+    )
     router.on(new RegExp('^(residence|foyer|activitepro)$'), function () {}, {
         before: function (done) {
             redirectTo('situation')

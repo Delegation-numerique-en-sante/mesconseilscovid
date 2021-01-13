@@ -26,7 +26,7 @@ describe('Pages', function () {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomesactuels' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -80,7 +80,7 @@ describe('Pages', function () {
             // On retrouve le bouton pour repartir vers le questionnaire.
             let button = await page.waitForSelector('#page #js-profil-empty a')
             assert.equal((await button.innerText()).trim(), 'Démarrer le questionnaire')
-            assert.equal(await button.getAttribute('href'), '#symptomesactuels')
+            assert.equal(await button.getAttribute('href'), '#symptomes')
             // On retrouve le titre explicite.
             let titre = await page.waitForSelector('#page h2')
             assert.equal(await titre.innerText(), 'Conditions d’utilisation')

@@ -15,59 +15,45 @@ export function beforeSuiviHistorique(profil, questionnaire) {
 }
 
 // Représentation de la structure du questionnaire d’orientation.
-export const ORDRE = [
-    'symptomesactuels',
-    'symptomespasses',
-    'contactarisque',
-    'debutsymptomes',
-    'depistage',
-    'situation',
-    'sante',
-]
+export const ORDRE = ['symptomes', 'contactarisque', 'depistage', 'situation', 'sante']
 
 export const TRANSITIONS = {
     nom: {
         previous: { introduction: () => true },
-        next: { symptomesactuels: (profil) => profil.nom },
+        next: { symptomes: (profil) => profil.nom },
     },
-    symptomesactuels: {
+    symptomes: {
         previous: { introduction: () => true },
         next: {
-            debutsymptomes: (profil) =>
+            depistage: (profil) =>
+                (profil.isSymptomesActuelsComplete() &&
+                    profil.hasSymptomesActuelsReconnus() &&
+                    profil.hasSymptomesStartDate()) ||
+                (profil.isSymptomesPassesComplete() &&
+                    profil.symptomes_passes &&
+                    profil.hasSymptomesStartDate()),
+            contactarisque: (profil) =>
                 profil.isSymptomesActuelsComplete() &&
-                profil.hasSymptomesActuelsReconnus(),
-            symptomespasses: (profil) => profil.isSymptomesActuelsComplete(),
-        },
-    },
-    symptomespasses: {
-        previous: { symptomesactuels: () => true },
-        next: {
-            debutsymptomes: (profil) =>
-                profil.isSymptomesPassesComplete() && profil.symptomes_passes,
-            contactarisque: (profil) => profil.isSymptomesPassesComplete(),
+                !profil.hasSymptomesActuelsReconnus() &&
+                profil.isSymptomesPassesComplete() &&
+                !profil.symptomes_passes,
         },
     },
     contactarisque: {
-        previous: { symptomespasses: () => true },
+        previous: { symptomes: () => true },
         next: {
             depistage: (profil) => profil.isContactARisqueComplete(),
         },
     },
-    debutsymptomes: {
-        previous: {
-            symptomesactuels: (profil) => profil.hasSymptomesActuelsReconnus(),
-            symptomespasses: (profil) => profil.symptomes_passes,
-        },
-        next: {
-            depistage: (profil) => profil.isDebutSymptomesComplete(),
-        },
-    },
     depistage: {
         previous: {
-            debutsymptomes: (profil) =>
+            symptomes: (profil) =>
                 (profil.isSymptomesActuelsComplete() &&
-                    profil.hasSymptomesActuelsReconnus()) ||
-                (profil.isSymptomesPassesComplete() && profil.symptomes_passes),
+                    profil.hasSymptomesActuelsReconnus() &&
+                    profil.hasSymptomesStartDate()) ||
+                (profil.isSymptomesPassesComplete() &&
+                    profil.symptomes_passes &&
+                    profil.hasSymptomesStartDate()),
             contactarisque: (profil) => profil.isContactARisqueComplete(),
         },
         next: {

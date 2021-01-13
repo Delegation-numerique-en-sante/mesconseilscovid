@@ -22,7 +22,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomesactuels' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -41,10 +41,7 @@ describe('Parcours', function () {
             activitePro: true,
         })
 
-        await waitForPlausibleTrackingEvent(
-            page,
-            'Questionnaire commencé:symptomesactuels'
-        )
+        await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:symptomes')
 
         // Conseils.
         {
@@ -90,7 +87,7 @@ describe('Parcours', function () {
         }
     })
 
-    it('remplir le questionnaire avec symptômes actuels', async function () {
+    it('remplir le questionnaire avec symptômes', async function () {
         const page = this.test.page
 
         // On est redirigé vers l’introduction.
@@ -104,7 +101,7 @@ describe('Parcours', function () {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomesactuels' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -122,10 +119,7 @@ describe('Parcours', function () {
             activitePro: true,
         })
 
-        await waitForPlausibleTrackingEvent(
-            page,
-            'Questionnaire commencé:symptomesactuels'
-        )
+        await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:symptomes')
 
         // Conseils.
         {
@@ -140,7 +134,7 @@ describe('Parcours', function () {
         }
     })
 
-    it('remplir le questionnaire avec symptômes actuels (gravité majeure)', async function () {
+    it('remplir le questionnaire avec symptômes (gravité majeure)', async function () {
         const page = this.test.page
 
         // On est redirigé vers l’introduction.
@@ -154,7 +148,7 @@ describe('Parcours', function () {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomesactuels' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -189,7 +183,7 @@ describe('Parcours', function () {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomesactuels' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -226,7 +220,7 @@ describe('Parcours', function () {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomesactuels' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -273,7 +267,7 @@ describe('Parcours', function () {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomesactuels' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -323,7 +317,7 @@ describe('Parcours', function () {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomesactuels' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -371,7 +365,7 @@ describe('Parcours', function () {
             let bouton = await page.waitForSelector('text="Démarrer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomesactuels' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 

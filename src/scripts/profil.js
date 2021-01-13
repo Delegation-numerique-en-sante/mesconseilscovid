@@ -263,6 +263,17 @@ export default class Profil {
         }
     }
 
+    fillContactARisque(value) {
+        this.contact_a_risque = value
+        this.contact_a_risque_meme_lieu_de_vie = undefined
+        this.contact_a_risque_contact_direct = undefined
+        this.contact_a_risque_actes = undefined
+        this.contact_a_risque_espace_confine = undefined
+        this.contact_a_risque_meme_classe = undefined
+        this.contact_a_risque_stop_covid = undefined
+        this.contact_a_risque_autre = undefined
+    }
+
     fillTestData(depistage, symptomes, personneFragile) {
         let data = {
             symptomes_actuels: false,
@@ -695,9 +706,7 @@ export default class Profil {
         const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
         const label =
             this.hasSuiviStartDate() && this.hasHistorique() ? 'Continuer' : 'Démarrer'
-        const nextPage = this.hasSymptomesStartDate()
-            ? 'suivisymptomes'
-            : 'debutsymptomes'
+        const nextPage = this.hasSymptomesStartDate() ? 'suivisymptomes' : 'symptomes'
         const suiviButton = safeHtml`
             <a class="button button-full-width conseils-link"
                 data-set-profil="${this.nom}" href="#${nextPage}"
@@ -740,7 +749,7 @@ export default class Profil {
     renderDebutSymptomes() {
         return `<p>Début des symptômes :
             ${this.symptomes_start_date.toLocaleString()}
-            (<a href="#debutsymptomes">modifier</a>)
+            (<a href="#symptomes">modifier</a>)
         </p>`
     }
 
