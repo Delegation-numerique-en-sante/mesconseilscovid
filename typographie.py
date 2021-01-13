@@ -36,7 +36,7 @@ RE_ESPACE_INSECABLE = regex.compile(
     assemble_regexes(
         build_regex(r"\w?", r":"),  # Deux points.
         build_regex(r"«", r"\w"),  # Guillemets en chevrons.
-        build_regex(r"\w", r"»"),  # Guillemets en chevrons.
+        build_regex(r"[\w\?!.…]", r"»"),  # Guillemets en chevrons.
         build_regex(r"\d", r"\w"),  # Chiffre suivi de lettres.
     )
 )
