@@ -38,7 +38,7 @@ RE_ESPACE_INSECABLE = regex.compile(
         build_regex(r"«", r"\w"),  # Guillemets en chevrons.
         # "Po" est la catégorie "Punctuation, other".
         build_regex(r"[\w\p{Po}]", r"»"),  # Guillemets en chevrons.
-        build_regex(r"\d", r"\w"),  # Chiffre suivi de lettres.
+        build_regex(r"\d", r"(?!\d)\w"),  # Chiffre suivi de lettres.
     )
 )
 
