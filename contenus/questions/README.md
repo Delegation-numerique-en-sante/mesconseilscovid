@@ -413,11 +413,11 @@ Avez-vous remarqué que votre proche n’est pas comme d’habitude ces dernièr
 
 ## [question_suivi_symptômes_fièvre_libellé.md](question_suivi_symptômes_fièvre_libellé.md)
 
-<!---->Avez-vous une <b>température</b> supérieure ou égale à 39°C <em>et</em> qui ne diminue pas malgré la prise de paracétamol (ou Doliprane® ou Efferalgan®) ?
+<!---->Avez-vous une <b>température</b> supérieure ou égale à 39 °C <em>et</em> qui ne diminue pas malgré la prise de paracétamol (ou Doliprane® ou Efferalgan®) ?
 
 ---
 
-<!---->Est-ce que votre proche a une <b>température</b> supérieure ou égale à 39°C <em>et</em> qui ne diminue pas malgré la prise de paracétamol (ou Doliprane® ou Efferalgan®) ?
+<!---->Est-ce que votre proche a une <b>température</b> supérieure ou égale à 39 °C <em>et</em> qui ne diminue pas malgré la prise de paracétamol (ou Doliprane® ou Efferalgan®) ?
 
 
 
@@ -579,11 +579,11 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 
 ## [question_symptômes_actuels_température_libellé.md](question_symptômes_actuels_température_libellé.md)
 
-<!---->J’ai eu une température <b>inférieure à 35,5°C</b> <em>ou</em> <b>supérieure à 39°C</b> ces dernières 48 heures.
+<!---->J’ai eu une température <b>inférieure à 35,5 °C</b> <em>ou</em> <b>supérieure à 39 °C</b> ces dernières 48 heures.
 
 ---
 
-<!---->Il ou elle a eu une température <b>inférieure à 35,5°C</b> <em>ou</em> <b>supérieure à 39°C</b> ces dernières 48 heures.
+<!---->Il ou elle a eu une température <b>inférieure à 35,5 °C</b> <em>ou</em> <b>supérieure à 39 °C</b> ces dernières 48 heures.
 
 
 
@@ -609,7 +609,7 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 
 ## [question_symptômes_aide.md](question_symptômes_aide.md)
 
-*Chez les personnes de plus de 80 ans, d’autres signes font penser au Covid-19 : fatigue, perte de l’appétit, chutes à répétition, apparition ou aggravation de problèmes de mémoire, confusion, diarrhée, aggravation d’une autre maladie.*
+*Chez les personnes de plus de 80 ans, d’autres signes font penser à la Covid : fatigue, perte de l’appétit, chutes à répétition, apparition ou aggravation de problèmes de mémoire, confusion, diarrhée, aggravation d’une autre maladie.*
 
 
 
