@@ -397,84 +397,80 @@
             <legend><span class="progress"></span>{{ question_symptômes_titre|me_or_them }}</legend>
             <h3 id="symptomes-label">{{ question_symptômes_titre_ouinon|me_or_them }}</h3>
             <div role="radiogroup" aria-labelledby="symptomes-label">
-                <input id="symptomes_actuels" type="radio" name="symptomes_actuels_choice">
+                <input id="symptomes_actuels" type="radio" name="symptomes_actuels_statuts">
                 <label for="symptomes_actuels">
                     <span>
                         {{ question_symptômes_libellé_oui|me_or_them }}
                     </span>
                 </label>
-                <div id="symptomes-choix">
-                    <div class="secondary disabled">
-                        <input id="symptomes_actuels_temperature" type="checkbox" name="symptomes_actuels_temperature" disabled>
-                        <label for="symptomes_actuels_temperature">
-                            <span>{{ question_symptômes_actuels_température_libellé|me_or_them }}</span>
-                        </label>
-                    </div>
-                    <div class="secondary disabled">
-                        <input id="symptomes_actuels_temperature_inconnue" type="checkbox" name="symptomes_actuels_temperature_inconnue" disabled>
-                        <label for="symptomes_actuels_temperature_inconnue">
-                            <span>{{ question_symptômes_actuels_température_inconnue_libellé|me_or_them }}</span>
-                        </label>
-                    </div>
-                    <div class="secondary disabled">
-                        <input id="symptomes_actuels_toux" type="checkbox" name="symptomes_actuels_toux" disabled>
-                        <label for="symptomes_actuels_toux">
-                            <span>{{ question_symptômes_actuels_toux_libellé|me_or_them }}</span>
-                        </label>
-                    </div>
-                    <div class="secondary disabled">
-                        <input id="symptomes_actuels_odorat" type="checkbox" name="symptomes_actuels_odorat" disabled>
-                        <label for="symptomes_actuels_odorat">
-                            <span>{{ question_symptômes_actuels_odorat_libellé|me_or_them }}</span>
-                        </label>
-                    </div>
-                    <div class="secondary disabled">
-                        <input id="symptomes_actuels_douleurs" type="checkbox" name="symptomes_actuels_douleurs" disabled>
-                        <label for="symptomes_actuels_douleurs">
-                            <span>{{ question_symptômes_actuels_douleurs_libellé|me_or_them }}</span>
-                        </label>
-                        <div class="details">{{ question_symptômes_actuels_douleurs_aide }}</div>
-                    </div>
-                    <div class="secondary disabled">
-                        <input id="symptomes_actuels_diarrhee" type="checkbox" name="symptomes_actuels_diarrhee" disabled>
-                        <label for="symptomes_actuels_diarrhee">
-                            <span>{{ question_symptômes_actuels_diarrhée_libellé|me_or_them }}</span>
-                        </label>
-                    </div>
-                    <div class="secondary disabled">
-                        <input id="symptomes_actuels_fatigue" type="checkbox" name="symptomes_actuels_fatigue" disabled>
-                        <label for="symptomes_actuels_fatigue">
-                            <span>{{ question_symptômes_actuels_fatigue_libellé|me_or_them }}</span>
-                        </label>
-                    </div>
-                    <div class="secondary disabled">
-                        <input id="symptomes_actuels_alimentation" type="checkbox" name="symptomes_actuels_alimentation" disabled>
-                        <label for="symptomes_actuels_alimentation">
-                            <span>{{ question_symptômes_actuels_alimentation_libellé|me_or_them }}</span>
-                        </label>
-                    </div>
-                    <div class="secondary disabled">
-                        <input id="symptomes_actuels_souffle" type="checkbox" name="symptomes_actuels_souffle" disabled>
-                        <label for="symptomes_actuels_souffle">
-                            <span>{{ question_symptômes_actuels_souffle_libellé|me_or_them }}</span>
-                        </label>
-                    </div>
-                </div>
-
+                <input id="symptomes_passes" type="radio" name="symptomes_actuels_statuts">
+                <label for="symptomes_passes">
+                    <span>
+                        {{ question_symptômes_libellé_passés|me_or_them }}
+                    </span>
+                </label>
+                <input id="symptomes_non" type="radio" name="symptomes_actuels_statuts">
+                <label for="symptomes_non">
+                    <span>
+                        {{ question_symptômes_libellé_non }}
+                    </span>
+                </label>
+            </div>
+            <div id="symptomes-choix" class="checkboxgroup" hidden>
+                <h3 id="symptomes-label">{{ question_symptômes_titre_lesquels|me_or_them }}</h3>
                 <div>
-                    <input id="symptomes_passes" type="radio" name="symptomes_actuels_choice">
-                    <label for="symptomes_passes">
-                        <span>
-                            {{ question_symptômes_libellé_passés|me_or_them }}
-                        </span>
+                    <input id="symptomes_actuels_temperature" type="checkbox" name="symptomes_actuels_temperature">
+                    <label for="symptomes_actuels_temperature">
+                        <span>{{ question_symptômes_actuels_température_libellé|me_or_them }}</span>
                     </label>
                 </div>
                 <div>
-                    <input id="symptomes_non" type="radio" name="symptomes_actuels_choice">
-                    <label for="symptomes_non">
-                        <span>
-                            {{ question_symptômes_libellé_non }}
-                        </span>
+                    <input id="symptomes_actuels_temperature_inconnue" type="checkbox" name="symptomes_actuels_temperature_inconnue">
+                    <label for="symptomes_actuels_temperature_inconnue">
+                        <span>{{ question_symptômes_actuels_température_inconnue_libellé|me_or_them }}</span>
+                    </label>
+                </div>
+                <div>
+                    <input id="symptomes_actuels_toux" type="checkbox" name="symptomes_actuels_toux">
+                    <label for="symptomes_actuels_toux">
+                        <span>{{ question_symptômes_actuels_toux_libellé|me_or_them }}</span>
+                    </label>
+                </div>
+                <div>
+                    <input id="symptomes_actuels_odorat" type="checkbox" name="symptomes_actuels_odorat">
+                    <label for="symptomes_actuels_odorat">
+                        <span>{{ question_symptômes_actuels_odorat_libellé|me_or_them }}</span>
+                    </label>
+                </div>
+                <div>
+                    <input id="symptomes_actuels_douleurs" type="checkbox" name="symptomes_actuels_douleurs">
+                    <label for="symptomes_actuels_douleurs">
+                        <span>{{ question_symptômes_actuels_douleurs_libellé|me_or_them }}</span>
+                    </label>
+                    <div class="details">{{ question_symptômes_actuels_douleurs_aide }}</div>
+                </div>
+                <div>
+                    <input id="symptomes_actuels_diarrhee" type="checkbox" name="symptomes_actuels_diarrhee">
+                    <label for="symptomes_actuels_diarrhee">
+                        <span>{{ question_symptômes_actuels_diarrhée_libellé|me_or_them }}</span>
+                    </label>
+                </div>
+                <div>
+                    <input id="symptomes_actuels_fatigue" type="checkbox" name="symptomes_actuels_fatigue">
+                    <label for="symptomes_actuels_fatigue">
+                        <span>{{ question_symptômes_actuels_fatigue_libellé|me_or_them }}</span>
+                    </label>
+                </div>
+                <div>
+                    <input id="symptomes_actuels_alimentation" type="checkbox" name="symptomes_actuels_alimentation">
+                    <label for="symptomes_actuels_alimentation">
+                        <span>{{ question_symptômes_actuels_alimentation_libellé|me_or_them }}</span>
+                    </label>
+                </div>
+                <div>
+                    <input id="symptomes_actuels_souffle" type="checkbox" name="symptomes_actuels_souffle">
+                    <label for="symptomes_actuels_souffle">
+                        <span>{{ question_symptômes_actuels_souffle_libellé|me_or_them }}</span>
                     </label>
                 </div>
             </div>

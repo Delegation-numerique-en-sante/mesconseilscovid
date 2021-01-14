@@ -675,7 +675,8 @@ fieldset .row > * {
     flex-basis: 50%;
 }
 
-fieldset [role='radiogroup'] {
+fieldset [role='radiogroup'],
+fieldset .checkboxgroup {
     margin-bottom: 3rem;
 }
 
