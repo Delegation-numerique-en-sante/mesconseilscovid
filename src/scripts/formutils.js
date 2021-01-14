@@ -56,6 +56,7 @@ export function preloadCheckboxForm(form, key, profil) {
     const value = profil.getData()[key]
     if (typeof value !== 'undefined' && value) {
         form[key].checked = true
+        form[key].dispatchEvent(new Event('change'))
     }
 }
 
