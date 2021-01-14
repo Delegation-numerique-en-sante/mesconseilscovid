@@ -397,19 +397,19 @@
             <legend><span class="progress"></span>{{ question_symptômes_titre|me_or_them }}</legend>
             <h3 id="symptomes-label">{{ question_symptômes_titre_ouinon|me_or_them }}</h3>
             <div role="radiogroup" aria-labelledby="symptomes-label">
-                <input id="symptomes_actuels" type="radio" name="symptomes_actuels_statuts">
+                <input id="symptomes_actuels" type="radio" required name="symptomes_actuels_statuts">
                 <label for="symptomes_actuels">
                     <span>
                         {{ question_symptômes_libellé_oui|me_or_them }}
                     </span>
                 </label>
-                <input id="symptomes_passes" type="radio" name="symptomes_actuels_statuts">
+                <input id="symptomes_passes" type="radio" required name="symptomes_actuels_statuts">
                 <label for="symptomes_passes">
                     <span>
                         {{ question_symptômes_libellé_passés|me_or_them }}
                     </span>
                 </label>
-                <input id="symptomes_non" type="radio" name="symptomes_actuels_statuts">
+                <input id="symptomes_non" type="radio" required name="symptomes_actuels_statuts">
                 <label for="symptomes_non">
                     <span>
                         {{ question_symptômes_libellé_non }}

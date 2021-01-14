@@ -1,4 +1,4 @@
-class Form {
+export class Form {
     constructor(form) {
         this.form = form
     }
@@ -59,7 +59,7 @@ export function preloadCheckboxForm(form, key, profil) {
     }
 }
 
-function someChecked(checkboxes) {
+export function someChecked(checkboxes) {
     return checkboxes.some((checkbox) => checkbox.checked)
 }
 

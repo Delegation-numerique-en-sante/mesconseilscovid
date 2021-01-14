@@ -1,6 +1,11 @@
 import { hideElement, showElement } from '../../affichage.js'
 import { addDatePickerPolyfill } from '../../datepicker'
-import { getRadioValue, preloadCheckboxForm } from '../../formutils.js'
+import {
+    Form,
+    getRadioValue,
+    preloadCheckboxForm,
+    someChecked,
+} from '../../formutils.js'
 import { joursAvant } from '../../utils.js'
 
 export default function symptomes(form, app) {
@@ -15,6 +20,10 @@ export default function symptomes(form, app) {
             window.plausible('Questionnaire commencé pour un proche')
         }
     }
+
+    // On empêche la soumission du formulaire à l’affichage.
+    const submitButton = form.querySelector('input[type=submit]')
+    disableSubmitButton(submitButton)
 
     // Remplir le formulaire avec les données du profil.
     preloadCheckboxForm(form, 'symptomes_actuels', app.profil)
@@ -33,7 +42,6 @@ export default function symptomes(form, app) {
 
     // Selon le choix radio ça affiche le choix des symptômes et/ou
     // la saisie de la date.
-    const submitButton = form.querySelector('input[type=submit]')
     const statuts = form.elements['symptomes_actuels_statuts']
     const choixSymptomes = form.querySelector('#symptomes-choix')
     const debutSymptomes = form.querySelector('#debut-symptomes')
@@ -53,7 +61,10 @@ export default function symptomes(form, app) {
                 case 'symptomes_passes':
                     hideElement(choixSymptomes)
                     showElement(debutSymptomes)
-                    // Si symptômes passés, on n’affiche pas aujourd’hui.
+                    // Si symptômes passés, on n’affiche pas aujourd’hui et
+                    // et on décoche la case si elle était cochée pour ne pas
+                    // pouvoir soumettre le formulaire.
+                    debutSymptomesAujourdhui.checked = false
                     hideElement(debutSymptomesAujourdhui)
                     hideElement(debutSymptomesAujourdhuiLabel)
                     break
@@ -65,6 +76,12 @@ export default function symptomes(form, app) {
             // Le libellé du bouton change en fonction des choix.
             updateSubmitButton(form, submitButton)
         })
+    )
+    const checkboxes = choixSymptomes.querySelectorAll('input[type=checkbox]')
+    Array.from(checkboxes).forEach((checkbox) =>
+        checkbox.addEventListener('change', () =>
+            updateSubmitButton(form, submitButton)
+        )
     )
 
     // Les choix concernant la température sont mutuellement exclusifs.
@@ -204,13 +221,34 @@ function updateDatePicker(form, input) {
     }
 }
 
+function enableSubmitButton(submitButton) {
+    submitButton.value = 'Continuer'
+    submitButton.removeAttribute('disabled')
+}
+
+function disableSubmitButton(submitButton) {
+    submitButton.value = 'Veuillez remplir le formulaire au complet'
+    submitButton.setAttribute('disabled', '')
+}
+
+function atLeastOneCheckbox(form) {
+    const form_ = new Form(form)
+    return someChecked(form_.checkboxes)
+}
+
 function updateSubmitButton(form, submitButton) {
-    if (dateFromForm(form) || form.elements['symptomes_non'].checked) {
-        submitButton.value = 'Continuer'
-        submitButton.removeAttribute('disabled')
+    if (form.elements['symptomes_non'].checked) {
+        enableSubmitButton(submitButton)
+    } else if (form.elements['symptomes_passes'].checked && dateFromForm(form)) {
+        enableSubmitButton(submitButton)
+    } else if (
+        form.elements['symptomes_actuels'].checked &&
+        atLeastOneCheckbox(form) &&
+        dateFromForm(form)
+    ) {
+        enableSubmitButton(submitButton)
     } else {
-        submitButton.value = 'Veuillez remplir le formulaire au complet'
-        submitButton.setAttribute('disabled', '')
+        disableSubmitButton(submitButton)
     }
 }
 
