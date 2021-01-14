@@ -671,13 +671,14 @@ describe('Blocs d’informations additionnels', function () {
     })
 
     describe('Bloc vie quotidienne', function () {
-        it('Le couvre-feu à 20h est affiché par défaut', function () {
+        it('Le couvre-feu à 20h est affiché par défaut + avertissement 16 janvier', function () {
             var profil = new Profil('mes_infos', {
                 departement: '01',
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
+                'conseils-couvre-feu-18h-16janvier',
                 'conseils-couvre-feu-20h',
             ])
         })

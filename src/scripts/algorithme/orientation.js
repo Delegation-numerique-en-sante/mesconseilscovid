@@ -439,6 +439,7 @@ export default class AlgorithmeOrientation {
         } else if (this.couvreFeu18H12Janvier()) {
             blockNames.push('conseils-couvre-feu-18h-12janvier')
         } else {
+            blockNames.push('conseils-couvre-feu-18h-16janvier')
             blockNames.push('conseils-couvre-feu-20h')
         }
         return blockNames
