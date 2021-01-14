@@ -352,6 +352,18 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-vaccins-ton-tour',
             ])
         })
+
+        it('Cas sans activité pro santé > 75 ans et antécédents', function () {
+            var profil = new Profil('mes_infos', {
+                age: 80,
+                activite_pro_sante: false,
+                antecedent_cardio: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-75-ans',
+            ])
+        })
     })
 
     describe('Bloc contacts à risque', function () {})
