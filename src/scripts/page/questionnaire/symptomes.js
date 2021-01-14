@@ -1,10 +1,6 @@
 import { hideElement, showElement } from '../../affichage.js'
 import { addDatePickerPolyfill } from '../../datepicker'
-import {
-    enableOrDisableSecondaryFields,
-    getRadioValue,
-    preloadCheckboxForm,
-} from '../../formutils.js'
+import { getRadioValue, preloadCheckboxForm } from '../../formutils.js'
 import { joursAvant } from '../../utils.js'
 
 export default function symptomes(form, app) {
@@ -35,32 +31,34 @@ export default function symptomes(form, app) {
     preloadCheckboxForm(form, 'symptomes_passes', app.profil)
     prefillDateForm(form, app.profil)
 
-    // Selon le choix radio ça affiche les sous-choix et/ou la saisie
-    // de la date.
+    // Selon le choix radio ça affiche le choix des symptômes et/ou
+    // la saisie de la date.
     const submitButton = form.querySelector('input[type=submit]')
-    const choices = form.elements['symptomes_actuels_choice']
-    const primary = form.elements['symptomes_actuels']
+    const statuts = form.elements['symptomes_actuels_statuts']
+    const choixSymptomes = form.querySelector('#symptomes-choix')
     const debutSymptomes = form.querySelector('#debut-symptomes')
     const debutSymptomesAujourdhui = form.querySelector('#debut_symptomes_aujourdhui')
     const debutSymptomesAujourdhuiLabel = form.querySelector(
         'label[for="debut_symptomes_aujourdhui"]'
     )
-    Array.from(choices).forEach((choice) =>
-        choice.addEventListener('change', () => {
-            enableOrDisableSecondaryFields(form, primary)
-            switch (choice.id) {
+    Array.from(statuts).forEach((statut) =>
+        statut.addEventListener('change', () => {
+            switch (statut.id) {
                 case 'symptomes_actuels':
+                    showElement(choixSymptomes)
                     showElement(debutSymptomes)
                     showElement(debutSymptomesAujourdhui)
                     showElement(debutSymptomesAujourdhuiLabel)
                     break
                 case 'symptomes_passes':
+                    hideElement(choixSymptomes)
                     showElement(debutSymptomes)
                     // Si symptômes passés, on n’affiche pas aujourd’hui.
                     hideElement(debutSymptomesAujourdhui)
                     hideElement(debutSymptomesAujourdhuiLabel)
                     break
                 case 'symptomes_non':
+                    hideElement(choixSymptomes)
                     hideElement(debutSymptomes)
                     break
             }

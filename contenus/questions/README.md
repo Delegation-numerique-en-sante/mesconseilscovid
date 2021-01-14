@@ -723,6 +723,16 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 
 
+## [question_symptômes_titre_lesquels.md](question_symptômes_titre_lesquels.md)
+
+<!---->Quels signes avez-vous ?
+
+---
+
+<!---->Quels signes cette personne a-t-elle ?
+
+
+
 ## [question_symptômes_titre_ouinon.md](question_symptômes_titre_ouinon.md)
 
 <!---->Avez-vous des signes de la Covid ?
