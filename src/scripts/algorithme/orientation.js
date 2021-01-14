@@ -76,6 +76,10 @@ export default class AlgorithmeOrientation {
         return `${depistage}_${symptomes}`
     }
 
+    get sup75() {
+        return this.profil.age >= 75
+    }
+
     get sup65() {
         return this.profil.age >= 65
     }
@@ -408,6 +412,8 @@ export default class AlgorithmeOrientation {
             (this.sup50 || this.antecedents || this.imc > 30)
         ) {
             blockNames.push('conseils-vaccins-ton-tour')
+        } else if (this.sup75) {
+            blockNames.push('conseils-vaccins-75-ans')
         }
         return blockNames
     }
