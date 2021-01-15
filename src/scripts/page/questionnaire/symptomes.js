@@ -9,17 +9,7 @@ import {
 import { joursAvant } from '../../utils.js'
 
 export default function symptomes(form, app) {
-    // Premier démarrage du formulaire ?
-    if (typeof app.profil.questionnaire_start_date === 'undefined') {
-        app.profil.questionnaire_start_date = new Date()
-        app.enregistrerProfilActuel()
-        window.plausible('Questionnaire commencé')
-        if (app.profil.estMonProfil()) {
-            window.plausible('Questionnaire commencé pour moi')
-        } else {
-            window.plausible('Questionnaire commencé pour un proche')
-        }
-    }
+    premierDemarrageFormulaire(app)
 
     // On empêche la soumission du formulaire à l’affichage.
     const submitButton = form.querySelector('input[type=submit]')
@@ -143,6 +133,19 @@ export default function symptomes(form, app) {
             app.goToNextPage('symptomes')
         })
     })
+}
+
+function premierDemarrageFormulaire(app) {
+    if (typeof app.profil.questionnaire_start_date === 'undefined') {
+        app.profil.questionnaire_start_date = new Date()
+        app.enregistrerProfilActuel()
+        window.plausible('Questionnaire commencé')
+        if (app.profil.estMonProfil()) {
+            window.plausible('Questionnaire commencé pour moi')
+        } else {
+            window.plausible('Questionnaire commencé pour un proche')
+        }
+    }
 }
 
 function fillProfilDates(app, form) {
