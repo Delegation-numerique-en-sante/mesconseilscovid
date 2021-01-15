@@ -184,7 +184,6 @@ function prefillDateForm(form, profil, submitButton) {
             form.elements['suivi_symptomes_date'].value = 'encore_avant_hier'
             let datePicker = form.elements['suivi_symptomes_date_exacte']
             datePicker.value = profil.symptomes_start_date.toISOString().substr(0, 10)
-            datePicker.disabled = false
         }
         updateSubmitButton(form, submitButton)
     }
@@ -192,6 +191,10 @@ function prefillDateForm(form, profil, submitButton) {
 
 function setupDatePicker(form, submitButton) {
     const datePicker = form.querySelector('#debut_symptomes_exacte')
+
+    datePicker.addEventListener('click', () => {
+        form.elements['suivi_symptomes_date'].value = 'encore_avant_hier'
+    })
 
     datePicker.addEventListener('change', () => {
         datePickerChanged(form, submitButton)
@@ -218,11 +221,10 @@ function datePickerChanged(form, submitButton) {
 function updateDatePicker(form, input) {
     let datePicker = form.querySelector('#debut_symptomes_exacte')
     if (input.value === 'encore_avant_hier') {
-        datePicker.disabled = false
         datePicker.setAttribute('max', new Date().toISOString().slice(0, 10))
         datePicker.focus()
     } else {
-        datePicker.disabled = true
+        datePicker.value = ''
     }
 }
 
