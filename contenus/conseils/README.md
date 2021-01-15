@@ -98,52 +98,11 @@ Une personne ayant la Covid est **contagieuse 48 h avant** les premiers symptô
 
 
 
-## [conseils_couvre_feu_18h_10janvier.md](conseils_couvre_feu_18h_10janvier.md)
-
-<div class="conseil conseil-orange">
-
-<span class="nouveau">nouveau</span> Depuis le 10 janvier, un **couvre-feu** s’applique dans votre département de 18 h à 6 h du matin.
-
-</div>
-
-
-
-## [conseils_couvre_feu_18h_12janvier.md](conseils_couvre_feu_18h_12janvier.md)
-
-<div class="conseil conseil-orange">
-
-<span class="nouveau">nouveau</span> À partir du 12 janvier, un **couvre-feu** s’applique dans votre département de 18 h à 6 h du matin.
-
-</div>
-
-
-
-## [conseils_couvre_feu_18h_16janvier.md](conseils_couvre_feu_18h_16janvier.md)
-
-<div class="conseil conseil-orange">
-
-<span class="nouveau">nouveau</span> À partir du samedi 16 janvier, un **couvre-feu** s’appliquera dans tous les départements de 18 h à 6 h du matin.
-
-</div>
-
-
-
-## [conseils_couvre_feu_18h_2janvier.md](conseils_couvre_feu_18h_2janvier.md)
-
-<div class="conseil conseil-orange">
-
-<span class="nouveau">nouveau</span> Depuis le 2 janvier, un **couvre-feu** s’applique dans votre département de 18 h à 6 h du matin.
-
-</div>
-
-
-
-
-## [conseils_couvre_feu_20h.md](conseils_couvre_feu_20h.md)
+## [conseils_couvre_feu_18h.md](conseils_couvre_feu_18h.md)
 
 <div class="conseil conseil-jaune">
 
-Depuis le 15 décembre, un **couvre-feu** s’applique dans votre département de 20 h à 6 h du matin.
+<span class="nouveau">nouveau</span> Un **couvre-feu** s’applique dans votre département de 18 h à 6 h du matin.
 
 </div>
 
