@@ -388,8 +388,6 @@ describe('Blocs d’informations additionnels', function () {
         })
     })
 
-    describe('Bloc contacts à risque', function () {})
-
     describe('Bloc mesures barrières et le masque', function () {})
 
     describe('Bloc Covid', function () {})
