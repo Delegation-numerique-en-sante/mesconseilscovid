@@ -43,11 +43,11 @@ Médecin, infirmier, aide soignant, pharmacien, orthophoniste, brancardier, mani
 
 ## [question_antécédents_cancer_libellé.md](question_antécédents_cancer_libellé.md)
 
-<!---->J’ai un <b>cancer</b> évolutif sous traitement (hors hormonothérapie)
+<!---->J’ai un <b>cancer</b> ou une hémopathie maligne en cours de traitement (hors hormonothérapie)
 
 ---
 
-<!---->Il ou elle a un <b>cancer</b> évolutif sous traitement (hors hormonothérapie)
+<!---->Il ou elle a un <b>cancer</b> ou une hémopathie maligne en cours de traitement (hors hormonothérapie)
 
 
 
@@ -69,11 +69,11 @@ hypertension artérielle compliquée (tension trop élevée avec complications a
 
 ## [question_antécédents_chronique_autre_libellé.md](question_antécédents_chronique_autre_libellé.md)
 
-<!---->J’ai une autre maladie chronique, ou handicap, ou je prends des médicaments tous les jours
+<!---->J’ai une autre maladie chronique, ou maladie rare, ou handicap, ou je prends des médicaments tous les jours
 
 ---
 
-<!---->Il ou elle a une autre maladie chronique, ou handicap, ou prend des médicaments tous les jours
+<!---->Il ou elle a une autre maladie chronique, ou maladie rare, ou handicap, ou prend des médicaments tous les jours
 
 
 
@@ -117,12 +117,20 @@ hypertension artérielle compliquée (tension trop élevée avec complications a
 
 
 
+## [question_antécédents_greffe_libellé.md](question_antécédents_greffe_libellé.md)
+
+<!---->J’ai subi une <b>greffe</b> d’organe ou une greffe de cellules souches
+
+---
+
+<!---->Il ou elle a subi une <b>greffe</b> d’organe ou une greffe de cellules souches
+
+
+
 ## [question_antécédents_immunodépression_aide.md](question_antécédents_immunodépression_aide.md)
 
-* suite à la prise de médicaments : chimiothérapie contre le cancer, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive depuis plus de 15 jours ;
-* infection au VIH non contrôlée ou avec des CD4 inférieurs à 200/mm<sup>3</sup> ;
-* suite à une greffe ;
-* liée à une hémopathie maligne en cours de traitement (maladie du sang).
+* suite à la prise de médicaments : chimiothérapie, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive depuis plus de 15 jours ;
+* infection au VIH non contrôlée ou avec des CD4 inférieurs à 200/mm<sup>3</sup>.
 
 
 
@@ -149,6 +157,16 @@ broncho pneumopathie obstructive, asthme sévère, fibrose pulmonaire, apnées d
 ---
 
 <!---->Il ou elle a une <b>maladie respiratoire</b> chronique :
+
+
+
+## [question_antécédents_trisomie_libellé.md](question_antécédents_trisomie_libellé.md)
+
+<!---->J’ai une <b>trisomie 21</b>
+
+---
+
+<!---->Il ou elle a une <b>trisomie 21</b>
 
 
 

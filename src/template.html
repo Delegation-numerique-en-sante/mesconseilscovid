@@ -327,6 +327,14 @@
                 </label>
             </div>
             <div class="secondary disabled">
+                <input id="antecedent_greffe" type="checkbox" name="antecedent_greffe">
+                <label for="antecedent_greffe">
+                    <span>
+                        {{ question_antécédents_greffe_libellé|me_or_them }}
+                    </span>
+                </label>
+            </div>
+            <div class="secondary disabled">
                 <input id="antecedent_cancer" type="checkbox" name="antecedent_cancer">
                 <label for="antecedent_cancer">
                     <span>
@@ -356,6 +364,14 @@
                 <label for="antecedent_drepano">
                     <span>
                         {{ question_antécédents_drépanocytose_libellé|me_or_them }}
+                    </span>
+                </label>
+            </div>
+            <div class="secondary disabled">
+                <input id="antecedent_trisomie" type="checkbox" name="antecedent_trisomie">
+                <label for="antecedent_trisomie">
+                    <span>
+                        {{ question_antécédents_trisomie_libellé|me_or_them }}
                     </span>
                 </label>
             </div>

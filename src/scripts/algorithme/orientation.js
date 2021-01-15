@@ -109,10 +109,12 @@ export default class AlgorithmeOrientation {
             this.profil.antecedent_diabete ||
             this.profil.antecedent_respi ||
             this.profil.antecedent_dialyse ||
+            this.profil.antecedent_greffe ||
             this.profil.antecedent_cancer ||
             this.profil.antecedent_immunodep ||
             this.profil.antecedent_cirrhose ||
-            this.profil.antecedent_drepano
+            this.profil.antecedent_drepano ||
+            this.profil.antecedent_trisomie
         )
     }
 

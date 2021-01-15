@@ -18,10 +18,12 @@ export default function sante(form, app) {
     preloadCheckboxForm(form, 'antecedent_diabete', app.profil)
     preloadCheckboxForm(form, 'antecedent_respi', app.profil)
     preloadCheckboxForm(form, 'antecedent_dialyse', app.profil)
+    preloadCheckboxForm(form, 'antecedent_greffe', app.profil)
     preloadCheckboxForm(form, 'antecedent_cancer', app.profil)
     preloadCheckboxForm(form, 'antecedent_immunodep', app.profil)
     preloadCheckboxForm(form, 'antecedent_cirrhose', app.profil)
     preloadCheckboxForm(form, 'antecedent_drepano', app.profil)
+    preloadCheckboxForm(form, 'antecedent_trisomie', app.profil)
     preloadCheckboxForm(form, 'antecedent_chronique_autre', app.profil)
     const primary = form.elements['antecedent_chronique']
     enableOrDisableSecondaryFields(form, primary)
@@ -44,6 +46,8 @@ export default function sante(form, app) {
         app.profil.antecedent_respi = event.target.elements['antecedent_respi'].checked
         app.profil.antecedent_dialyse =
             event.target.elements['antecedent_dialyse'].checked
+        app.profil.antecedent_greffe =
+            event.target.elements['antecedent_greffe'].checked
         app.profil.antecedent_cancer =
             event.target.elements['antecedent_cancer'].checked
         app.profil.antecedent_immunodep =
@@ -52,6 +56,8 @@ export default function sante(form, app) {
             event.target.elements['antecedent_cirrhose'].checked
         app.profil.antecedent_drepano =
             event.target.elements['antecedent_drepano'].checked
+        app.profil.antecedent_trisomie =
+            event.target.elements['antecedent_trisomie'].checked
         app.profil.antecedent_chronique_autre =
             event.target.elements['antecedent_chronique_autre'].checked
         app.enregistrerProfilActuel().then(() => {
