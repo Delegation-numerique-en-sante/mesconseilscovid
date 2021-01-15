@@ -70,19 +70,7 @@ export default function symptomes(form, app) {
     )
 
     // Remplir le formulaire avec les données du profil.
-    preloadCheckboxForm(form, 'symptomes_actuels', app.profil)
-    preloadCheckboxForm(form, 'symptomes_actuels_temperature', app.profil)
-    preloadCheckboxForm(form, 'symptomes_actuels_temperature_inconnue', app.profil)
-    preloadCheckboxForm(form, 'symptomes_actuels_toux', app.profil)
-    preloadCheckboxForm(form, 'symptomes_actuels_odorat', app.profil)
-    preloadCheckboxForm(form, 'symptomes_actuels_douleurs', app.profil)
-    preloadCheckboxForm(form, 'symptomes_actuels_diarrhee', app.profil)
-    preloadCheckboxForm(form, 'symptomes_actuels_fatigue', app.profil)
-    preloadCheckboxForm(form, 'symptomes_actuels_alimentation', app.profil)
-    preloadCheckboxForm(form, 'symptomes_actuels_souffle', app.profil)
-    preloadCheckboxForm(form, 'symptomes_actuels_autre', app.profil)
-    preloadCheckboxForm(form, 'symptomes_passes', app.profil)
-    prefillDateForm(form, app.profil, submitButton)
+    prefillForm(form, app.profil, submitButton)
 
     // Les choix concernant la température sont mutuellement exclusifs.
     let tempAnormale = form.querySelector('#symptomes_actuels_temperature')
@@ -164,6 +152,22 @@ function fillProfilDates(app, form) {
     if (!app.profil.hasSuiviStartDate()) {
         app.profil.suivi_start_date = new Date()
     }
+}
+
+function prefillForm(form, profil, submitButton) {
+    preloadCheckboxForm(form, 'symptomes_actuels', profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_temperature', profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_temperature_inconnue', profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_toux', profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_odorat', profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_douleurs', profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_diarrhee', profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_fatigue', profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_alimentation', profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_souffle', profil)
+    preloadCheckboxForm(form, 'symptomes_actuels_autre', profil)
+    preloadCheckboxForm(form, 'symptomes_passes', profil)
+    prefillDateForm(form, profil, submitButton)
 }
 
 function prefillDateForm(form, profil, submitButton) {
