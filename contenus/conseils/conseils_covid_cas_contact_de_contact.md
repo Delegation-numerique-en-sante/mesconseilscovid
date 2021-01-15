@@ -1,1 +1,3 @@
-Si vous avez **passé du temps avec une personne qui est cas contact** (contact sans protection avec une personne testée positive à la Covid), demandez à cette personne de vous tenir informé·e des résultats de son test. Vous ne devrez vous isoler que si celui-ci est positif, en attendant nous vous recommandons d’appliquer les mesures barrières.
+Si vous êtes "cas contact d'un cas contact", c'est à dire que vous avez passé du temps avec une personne qui est cas contact, vous n'avez pas à vous isoler. 
+
+Demandez à cette personne de vous tenir informé·e des résultats de son test. Si son résultat est positif, vous devrez alors vous isoler. 
