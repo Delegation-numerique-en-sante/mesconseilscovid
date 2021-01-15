@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-01-15
+
+* couvre-feu avancé à 18h pour tous les départements à partir du 16 janvier
+* ajoute le lien vers santé.fr pour la vaccination des 75 ans et +
+* améliorations d’ergonomie et de typographie
+
 ## 2021-01-12
 
 * ajout d’un lien pour demander un arrêt de travail en cas d’isolement pour test
