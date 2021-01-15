@@ -1,19 +1,15 @@
 import { hideElement, showElement } from '../../affichage.js'
 import { addDatePickerPolyfill, formatDate } from '../../datepicker'
 import {
-    Form,
+    createEvent,
     getRadioValue,
     preloadCheckboxForm,
-    someChecked,
+    toggleFormButtonOnSymptomesFieldsRequired,
 } from '../../formutils.js'
 import { joursAvant } from '../../utils.js'
 
 export default function symptomes(form, app) {
     premierDemarrageFormulaire(app)
-
-    // On empêche la soumission du formulaire à l’affichage.
-    const submitButton = form.querySelector('input[type=submit]')
-    disableSubmitButton(submitButton)
 
     // Selon le choix radio ça affiche le choix des symptômes et/ou
     // la saisie de la date.
@@ -48,19 +44,14 @@ export default function symptomes(form, app) {
                     hideElement(debutSymptomes)
                     break
             }
-            // Le libellé du bouton change en fonction des choix.
-            updateSubmitButton(form, submitButton)
         })
-    )
-    const checkboxes = choixSymptomes.querySelectorAll('input[type=checkbox]')
-    Array.from(checkboxes).forEach((checkbox) =>
-        checkbox.addEventListener('change', () =>
-            updateSubmitButton(form, submitButton)
-        )
     )
 
     // Remplir le formulaire avec les données du profil.
-    prefillForm(form, app.profil, submitButton)
+    prefillForm(form, app.profil)
+
+    // Activer ou pas le bouton de validation.
+    toggleFormButtonOnSymptomesFieldsRequired(form, dateFromForm)
 
     // Les choix concernant la température sont mutuellement exclusifs.
     let tempAnormale = form.querySelector('#symptomes_actuels_temperature')
@@ -75,12 +66,12 @@ export default function symptomes(form, app) {
     Array.from(form.querySelectorAll('[name="suivi_symptomes_date"]')).forEach(
         (radio) => {
             radio.addEventListener('change', (event) =>
-                radioButtonChanged(form, event.target, submitButton)
+                radioButtonChanged(form, event.target)
             )
         }
     )
 
-    setupDatePicker(form, submitButton)
+    setupDatePicker(form)
 
     // Soumission du formulaire.
     form.addEventListener('submit', function (event) {
@@ -116,7 +107,7 @@ export default function symptomes(form, app) {
             // On renseigne les dates.
             fillProfilDates(app, form)
         } else if (symptomes_passes) {
-            app.profil.symptomes_actuels = false
+            resetSymptomesActuels(app)
             app.profil.symptomes_passes = true
 
             // On complète manuellement le formulaire pour le rendre complet.
@@ -125,8 +116,9 @@ export default function symptomes(form, app) {
             // On renseigne les dates.
             fillProfilDates(app, form)
         } else {
-            app.profil.symptomes_actuels = false
+            resetSymptomesActuels(app)
             app.profil.symptomes_passes = false
+            app.profil.symptomes_start_date = undefined
         }
 
         app.enregistrerProfilActuel().then(() => {
@@ -157,7 +149,20 @@ function fillProfilDates(app, form) {
     }
 }
 
-function prefillForm(form, profil, submitButton) {
+function resetSymptomesActuels(app) {
+    app.profil.symptomes_actuels = false
+    app.profil.symptomes_actuels_temperature = false
+    app.profil.symptomes_actuels_temperature_inconnue = false
+    app.profil.symptomes_actuels_toux = false
+    app.profil.symptomes_actuels_odorat = false
+    app.profil.symptomes_actuels_douleurs = false
+    app.profil.symptomes_actuels_diarrhee = false
+    app.profil.symptomes_actuels_fatigue = false
+    app.profil.symptomes_actuels_alimentation = false
+    app.profil.symptomes_actuels_souffle = false
+}
+
+function prefillForm(form, profil) {
     preloadCheckboxForm(form, 'symptomes_actuels', profil)
     preloadCheckboxForm(form, 'symptomes_actuels_temperature', profil)
     preloadCheckboxForm(form, 'symptomes_actuels_temperature_inconnue', profil)
@@ -170,10 +175,14 @@ function prefillForm(form, profil, submitButton) {
     preloadCheckboxForm(form, 'symptomes_actuels_souffle', profil)
     preloadCheckboxForm(form, 'symptomes_actuels_autre', profil)
     preloadCheckboxForm(form, 'symptomes_passes', profil)
-    prefillDateForm(form, profil, submitButton)
+    prefillDateForm(form, profil)
+    if (profil.symptomes_actuels === false && profil.symptomes_passes === false) {
+        form['symptomes_non'].checked = true
+        form['symptomes_non'].dispatchEvent(createEvent('change'))
+    }
 }
 
-function prefillDateForm(form, profil, submitButton) {
+function prefillDateForm(form, profil) {
     if (typeof profil.symptomes_start_date !== 'undefined') {
         if (profil.symptomes_start_date >= joursAvant(1)) {
             form.querySelector('#debut_symptomes_aujourdhui').checked = true
@@ -188,19 +197,14 @@ function prefillDateForm(form, profil, submitButton) {
             let datePicker = form.elements['suivi_symptomes_date_exacte']
             datePicker.value = formatDate(profil.symptomes_start_date)
         }
-        updateSubmitButton(form, submitButton)
     }
 }
 
-function setupDatePicker(form, submitButton) {
+function setupDatePicker(form) {
     const datePicker = form.querySelector('#debut_symptomes_exacte')
 
     datePicker.addEventListener('click', () => {
         form.querySelector('#debut_symptomes_encore_avant_hier').checked = true
-    })
-
-    datePicker.addEventListener('change', () => {
-        datePickerChanged(form, submitButton)
     })
 
     // Autorise seulement un intervalle de dates (30 derniers jours).
@@ -212,13 +216,8 @@ function setupDatePicker(form, submitButton) {
     addDatePickerPolyfill(datePicker, trenteJoursAvant, now)
 }
 
-function radioButtonChanged(form, input, submitButton) {
+function radioButtonChanged(form, input) {
     updateDatePicker(form, input)
-    updateSubmitButton(form, submitButton)
-}
-
-function datePickerChanged(form, submitButton) {
-    updateSubmitButton(form, submitButton)
 }
 
 function updateDatePicker(form, input) {
@@ -228,37 +227,6 @@ function updateDatePicker(form, input) {
         datePicker.focus()
     } else {
         datePicker.value = ''
-    }
-}
-
-function enableSubmitButton(submitButton) {
-    submitButton.value = 'Continuer'
-    submitButton.disabled = false
-}
-
-function disableSubmitButton(submitButton) {
-    submitButton.value = 'Veuillez remplir le formulaire au complet'
-    submitButton.disabled = true
-}
-
-function atLeastOneCheckbox(form) {
-    const form_ = new Form(form)
-    return someChecked(form_.checkboxes)
-}
-
-function updateSubmitButton(form, submitButton) {
-    if (form.elements['symptomes_non'].checked) {
-        enableSubmitButton(submitButton)
-    } else if (form.elements['symptomes_passes'].checked && dateFromForm(form)) {
-        enableSubmitButton(submitButton)
-    } else if (
-        form.elements['symptomes_actuels'].checked &&
-        atLeastOneCheckbox(form) &&
-        dateFromForm(form)
-    ) {
-        enableSubmitButton(submitButton)
-    } else {
-        disableSubmitButton(submitButton)
     }
 }
 
