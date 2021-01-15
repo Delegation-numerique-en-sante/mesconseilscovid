@@ -30,6 +30,32 @@ describe('Injection', function () {
         )
     })
 
+    it('Lien vaccination', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML =
+            '<a href="#conseils-departement" id="lien-vaccination">Site</a>'
+        injection.lienVaccination(element.querySelector('#lien-vaccination'), '01')
+
+        assert.strictEqual(
+            element.innerHTML,
+            '<a href="https://www.sante.fr/centres-vaccination-covid.html#dep-01" id="lien-vaccination">Site</a>'
+        )
+    })
+
+    it('Lien vaccination Corse', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML =
+            '<a href="#conseils-departement" id="lien-vaccination">Site</a>'
+        injection.lienVaccination(element.querySelector('#lien-vaccination'), '2A')
+
+        assert.strictEqual(
+            element.innerHTML,
+            '<a href="https://www.sante.fr/centres-vaccination-covid.html#dep-20" id="lien-vaccination">Site</a>'
+        )
+    })
+
     describe('Caractéristiques à risques', function () {
         it('âge', function () {
             var dom = new JSDOM(`<!DOCTYPE html><div></div>`)

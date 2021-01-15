@@ -32,6 +32,17 @@ export function lienPrefecture(element, departement) {
     element.setAttribute('href', prefectures[departement])
 }
 
+export function lienVaccination(element, departement) {
+    // Pas de distinction pour la Corse sur le site de sante.fr.
+    if (departement === '2A' || departement == '2B') {
+        departement = '20'
+    }
+    element.setAttribute(
+        'href',
+        `https://www.sante.fr/centres-vaccination-covid.html#dep-${departement}`
+    )
+}
+
 export function caracteristiquesOuAntecedentsARisques(element, algoOrientation) {
     let caracteristiques = _caracteristiquesARisques(algoOrientation)
     caracteristiques.push(..._antecedentsARisques(algoOrientation))
