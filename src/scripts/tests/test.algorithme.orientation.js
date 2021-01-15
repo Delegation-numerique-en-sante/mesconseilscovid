@@ -307,7 +307,7 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [])
         })
 
-        it('Cas activité pro santé < 50 ans et antécédents (conseils personnalisés)', function () {
+        it('Cas activité pro santé < 50 ans et antécédents', function () {
             var profil = new Profil('mes_infos', {
                 age: 42,
                 activite_pro_sante: true,
@@ -315,32 +315,34 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'conseils-vaccins-ton-tour',
+                'conseils-vaccins-activite-pro-sante',
             ])
         })
 
-        it('Cas activité pro santé > 50 ans (conseils personnalisés)', function () {
+        it('Cas activité pro santé > 50 ans', function () {
             var profil = new Profil('mes_infos', {
                 age: 52,
                 activite_pro_sante: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'conseils-vaccins-ton-tour',
+                'conseils-vaccins-activite-pro-sante',
             ])
         })
 
-        it('Cas sans activité pro santé > 50 ans et antécédents (rien)', function () {
+        it('Cas sans activité pro santé > 50 ans et antécédents', function () {
             var profil = new Profil('mes_infos', {
                 age: 52,
                 activite_pro_sante: false,
                 antecedent_cardio: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [])
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-demande-medecin',
+            ])
         })
 
-        it('Cas activité pro santé et IMC > 30 (conseils personnalisés)', function () {
+        it('Cas activité pro santé et IMC > 30', function () {
             var profil = new Profil('mes_infos', {
                 age: 42,
                 activite_pro_sante: true,
@@ -349,7 +351,7 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'conseils-vaccins-ton-tour',
+                'conseils-vaccins-activite-pro-sante',
             ])
         })
 
@@ -362,6 +364,26 @@ describe('Blocs d’informations additionnels', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
                 'conseils-vaccins-75-ans',
+            ])
+        })
+
+        it('Cas très haut risque comorbidité', function () {
+            var profil = new Profil('mes_infos', {
+                antecedent_greffe: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-tres-haut-risque',
+            ])
+        })
+
+        it('Cas moins haut risque comorbidité', function () {
+            var profil = new Profil('mes_infos', {
+                antecedent_cardio: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-demande-medecin',
             ])
         })
     })

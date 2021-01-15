@@ -629,17 +629,37 @@ Pour en savoir plus :
 
 <div class="conseil">
 
-<span class="nouveau">nouveau</span> Vous avez plus de 75 ans. Dès aujourd’hui, vous pouvez **prendre rendez-vous pour être vacciné·e** contre la Covid. Vous pouvez trouver le centre de vaccination le plus proche de chez vous et <a href="#conseils-vaccins" id="lien-vaccination">prendre rendez-vous sur santé.fr</a>.
+Vous avez plus de 75 ans, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" id="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
 
 </div>
 
 
 
-## [conseils_vaccins_ton_tour.md](conseils_vaccins_ton_tour.md)
+## [conseils_vaccins_activite_pro_sante.md](conseils_vaccins_activite_pro_sante.md)
 
 <div class="conseil">
 
 Vous êtes un·e professionnel·le de santé de plus de 50 ans ou présentant un risque de forme grave de Covid, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" id="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
+
+</div>
+
+
+
+## [conseils_vaccins_demande_medecin.md](conseils_vaccins_demande_medecin.md)
+
+<div class="conseil">
+
+Vous avec un traitement de longue durée ou une maladie chronique, **vous devez discuter de votre situation avec votre médecin** pour déterminer s’il est pertinent de vous faire vacciner dès maintenant.
+
+</div>
+
+
+
+## [conseils_vaccins_tres_haut_risque.md](conseils_vaccins_tres_haut_risque.md)
+
+<div class="conseil">
+
+Vous présentez un risque de développement d’une forme grave de Covid, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" id="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
 
 </div>
 

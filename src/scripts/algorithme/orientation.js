@@ -1,3 +1,5 @@
+import AlgorithmeVaccination from './vaccination.js'
+
 import departementsCouvreFeu18H2Janvier from '../data/departementsCouvreFeu18H2Janvier.js'
 import departementsCouvreFeu18H10Janvier from '../data/departementsCouvreFeu18H10Janvier.js'
 import departementsCouvreFeu18H12Janvier from '../data/departementsCouvreFeu18H12Janvier.js'
@@ -74,10 +76,6 @@ export default class AlgorithmeOrientation {
             symptomes = 'asymptomatique'
         }
         return `${depistage}_${symptomes}`
-    }
-
-    get sup75() {
-        return this.profil.age >= 75
     }
 
     get sup65() {
@@ -409,13 +407,17 @@ export default class AlgorithmeOrientation {
 
     vaccinBlockNamesToDisplay() {
         const blockNames = []
-        if (
-            this.profil.activite_pro_sante &&
-            (this.sup50 || this.antecedents || this.imc > 30)
-        ) {
-            blockNames.push('conseils-vaccins-ton-tour')
-        } else if (this.sup75) {
+        const algoVaccination = new AlgorithmeVaccination(this.profil, this)
+        if (algoVaccination.isProfessionnelDeSanteAgeOuComorbidite()) {
+            blockNames.push('conseils-vaccins-activite-pro-sante')
+        } else if (algoVaccination.isSup75()) {
             blockNames.push('conseils-vaccins-75-ans')
+        } else if (this.antecedents) {
+            if (algoVaccination.isTresHautRisque()) {
+                blockNames.push('conseils-vaccins-tres-haut-risque')
+            } else {
+                blockNames.push('conseils-vaccins-demande-medecin')
+            }
         }
         return blockNames
     }
