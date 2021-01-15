@@ -94,10 +94,12 @@ export default class Profil {
         this.antecedent_diabete = undefined
         this.antecedent_respi = undefined
         this.antecedent_dialyse = undefined
+        this.antecedent_greffe = undefined
         this.antecedent_cancer = undefined
         this.antecedent_immunodep = undefined
         this.antecedent_cirrhose = undefined
         this.antecedent_drepano = undefined
+        this.antecedent_trisomie = undefined
         this.antecedent_chronique_autre = undefined
 
         this.symptomes_actuels = undefined
@@ -159,10 +161,12 @@ export default class Profil {
         this.antecedent_diabete = data['antecedent_diabete']
         this.antecedent_respi = data['antecedent_respi']
         this.antecedent_dialyse = data['antecedent_dialyse']
+        this.antecedent_greffe = data['antecedent_greffe']
         this.antecedent_cancer = data['antecedent_cancer']
         this.antecedent_immunodep = data['antecedent_immunodep']
         this.antecedent_cirrhose = data['antecedent_cirrhose']
         this.antecedent_drepano = data['antecedent_drepano']
+        this.antecedent_trisomie = data['antecedent_trisomie']
         this.antecedent_chronique_autre = data['antecedent_chronique_autre']
 
         this.symptomes_actuels = data['symptomes_actuels']
@@ -296,10 +300,12 @@ export default class Profil {
             antecedent_diabete: false,
             antecedent_respi: false,
             antecedent_dialyse: false,
+            antecedent_greffe: false,
             antecedent_cancer: false,
             antecedent_immunodep: false,
             antecedent_cirrhose: false,
             antecedent_drepano: false,
+            antecedent_trisomie: false,
             antecedent_chronique_autre: false,
         }
 
@@ -371,10 +377,12 @@ export default class Profil {
             antecedent_diabete: this.antecedent_diabete,
             antecedent_respi: this.antecedent_respi,
             antecedent_dialyse: this.antecedent_dialyse,
+            antecedent_greffe: this.antecedent_greffe,
             antecedent_cancer: this.antecedent_cancer,
             antecedent_immunodep: this.antecedent_immunodep,
             antecedent_cirrhose: this.antecedent_cirrhose,
             antecedent_drepano: this.antecedent_drepano,
+            antecedent_trisomie: this.antecedent_trisomie,
             antecedent_chronique_autre: this.antecedent_chronique_autre,
             symptomes_actuels: this.symptomes_actuels,
             symptomes_actuels_temperature: this.symptomes_actuels_temperature,
@@ -427,10 +435,12 @@ export default class Profil {
             typeof this.antecedent_diabete === 'undefined' &&
             typeof this.antecedent_respi === 'undefined' &&
             typeof this.antecedent_dialyse === 'undefined' &&
+            typeof this.antecedent_greffe === 'undefined' &&
             typeof this.antecedent_cancer === 'undefined' &&
             typeof this.antecedent_immunodep === 'undefined' &&
             typeof this.antecedent_cirrhose === 'undefined' &&
             typeof this.antecedent_drepano === 'undefined' &&
+            typeof this.antecedent_trisomie === 'undefined' &&
             typeof this.antecedent_chronique_autre === 'undefined' &&
             typeof this.symptomes_actuels === 'undefined' &&
             typeof this.symptomes_passes === 'undefined' &&
@@ -445,10 +455,12 @@ export default class Profil {
             typeof this.antecedent_diabete !== 'undefined' &&
             typeof this.antecedent_respi !== 'undefined' &&
             typeof this.antecedent_dialyse !== 'undefined' &&
+            typeof this.antecedent_greffe !== 'undefined' &&
             typeof this.antecedent_cancer !== 'undefined' &&
             typeof this.antecedent_immunodep !== 'undefined' &&
             typeof this.antecedent_cirrhose !== 'undefined' &&
             typeof this.antecedent_drepano !== 'undefined' &&
+            typeof this.antecedent_trisomie !== 'undefined' &&
             typeof this.antecedent_chronique_autre !== 'undefined'
         )
     }
