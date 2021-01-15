@@ -2,6 +2,7 @@
 
 ## 2021-01-15
 
+* prise en considération des antécédents pour la vaccination
 * couvre-feu avancé à 18h pour tous les départements à partir du 16 janvier
 * ajoute le lien vers santé.fr pour la vaccination des 75 ans et +
 * améliorations d’ergonomie et de typographie
