@@ -8,22 +8,34 @@ function isDateSupported() {
     return input.value !== value
 }
 
+export function formatDate(date) {
+    if (typeof date === 'undefined') return ''
+    const day = date.getDate()
+    const month = date.getMonth() + 1
+    const year = date.getFullYear()
+    return year + '-' + pad(month) + '-' + pad(day)
+}
+
+function pad(number) {
+    if (number < 10) {
+        return '0' + number
+    }
+    return number
+}
+
 export function addDatePickerPolyfill(field, minDate, maxDate) {
     if (!isDateSupported()) {
         new Pikaday({
             field: field,
-            format: 'YYYY-M-D',
+            format: 'YYYY-MM-DD',
             toString(date) {
-                const day = date.getDate()
-                const month = date.getMonth() + 1
-                const year = date.getFullYear()
-                return `${year}-${month}-${day}`
+                return formatDate(date)
             },
             parse(dateString) {
                 const parts = dateString.split('-')
-                const day = parseInt(parts[0], 10)
+                const year = parseInt(parts[0], 10)
                 const month = parseInt(parts[1], 10) - 1
-                const year = parseInt(parts[2], 10)
+                const day = parseInt(parts[2], 10)
                 return new Date(year, month, day)
             },
             minDate: minDate,
