@@ -180,7 +180,7 @@ function prefillDateForm(form, profil, submitButton) {
             form.elements['suivi_symptomes_date'].value = 'encore_avant_hier'
             let datePicker = form.elements['suivi_symptomes_date_exacte']
             datePicker.value = profil.symptomes_start_date.toISOString().substr(0, 10)
-            datePicker.removeAttribute('disabled')
+            datePicker.disabled = false
         }
         updateSubmitButton(form, submitButton)
     }
@@ -214,22 +214,22 @@ function datePickerChanged(form, submitButton) {
 function updateDatePicker(form, input) {
     let datePicker = form.querySelector('#debut_symptomes_exacte')
     if (input.value === 'encore_avant_hier') {
-        datePicker.removeAttribute('disabled')
+        datePicker.disabled = false
         datePicker.setAttribute('max', new Date().toISOString().slice(0, 10))
         datePicker.focus()
     } else {
-        datePicker.setAttribute('disabled', '')
+        datePicker.disabled = true
     }
 }
 
 function enableSubmitButton(submitButton) {
     submitButton.value = 'Continuer'
-    submitButton.removeAttribute('disabled')
+    submitButton.disabled = false
 }
 
 function disableSubmitButton(submitButton) {
     submitButton.value = 'Veuillez remplir le formulaire au complet'
-    submitButton.setAttribute('disabled', '')
+    submitButton.disabled = true
 }
 
 function atLeastOneCheckbox(form) {
