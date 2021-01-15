@@ -79,13 +79,6 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 
 
 
-## [conseils_contact_à_risque_info.md](conseils_contact_à_risque_info.md)
-
-* [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_-_nouveau.pdf)
-* [Quelles conduites adopter et quel sera mon parcours si j’ai été en contact avec un cas Covid-19](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_personne_contact.pdf)
-
-
-
 ## [conseils_contacter_un_médecin.md](conseils_contacter_un_médecin.md)
 
 * Si vous n’arrivez pas à consulter un médecin, contactez un médecin de garde.

@@ -315,7 +315,6 @@ main footer .legals {
 #conseils-activite header,
 #conseils-tests header,
 #conseils-isolement header,
-#conseils-contact-a-risque header,
 #conseils-gestes-barrieres-masque header,
 #conseils-sante header,
 #conseils-grossesse header,
@@ -354,7 +353,6 @@ main footer .legals {
     #conseils-activite header,
     #conseils-tests header,
     #conseils-isolement header,
-    #conseils-contact-a-risque header,
     #conseils-gestes-barrieres-masque header,
     #conseils-sante header,
     #conseils-grossesse header,
@@ -394,9 +392,6 @@ main footer .legals {
 }
 #conseils-isolement header {
     background-image: url('illustrations/isolement.svg');
-}
-#conseils-contact-a-risque header {
-    background-image: url('illustrations/contactarisque.svg');
 }
 #conseils-gestes-barrieres-masque header {
     background-image: url('illustrations/gestesbarrieres.svg');
