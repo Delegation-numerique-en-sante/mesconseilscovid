@@ -56,8 +56,14 @@ export function preloadCheckboxForm(form, key, profil) {
     const value = profil.getData()[key]
     if (typeof value !== 'undefined' && value) {
         form[key].checked = true
-        form[key].dispatchEvent(new Event('change'))
+        form[key].dispatchEvent(createEvent('change'))
     }
+}
+
+function createEvent(name) {
+    const event = document.createEvent('Event')
+    event.initEvent(name, true, true)
+    return event
 }
 
 export function someChecked(checkboxes) {
@@ -279,7 +285,7 @@ export function enableOrDisableSecondaryFields(form, primary) {
         const secondary = elem.querySelector('input')
         if (secondary.checked && primaryDisabled) {
             secondary.checked = false
-            secondary.dispatchEvent(new Event('change'))
+            secondary.dispatchEvent(createEvent('change'))
         }
         secondary.disabled = primaryDisabled
         if (primaryDisabled) {

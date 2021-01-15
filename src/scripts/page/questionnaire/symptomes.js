@@ -1,5 +1,5 @@
 import { hideElement, showElement } from '../../affichage.js'
-import { addDatePickerPolyfill } from '../../datepicker'
+import { addDatePickerPolyfill, formatDate } from '../../datepicker'
 import {
     Form,
     getRadioValue,
@@ -173,17 +173,17 @@ function prefillForm(form, profil, submitButton) {
 function prefillDateForm(form, profil, submitButton) {
     if (typeof profil.symptomes_start_date !== 'undefined') {
         if (profil.symptomes_start_date >= joursAvant(1)) {
-            form.elements['suivi_symptomes_date'].value = 'aujourdhui'
+            form.querySelector('#debut_symptomes_aujourdhui').checked = true
         } else if (profil.symptomes_start_date >= joursAvant(2)) {
-            form.elements['suivi_symptomes_date'].value = 'hier'
+            form.querySelector('#debut_symptomes_hier').checked = true
         } else if (profil.symptomes_start_date >= joursAvant(3)) {
-            form.elements['suivi_symptomes_date'].value = 'avant_hier'
+            form.querySelector('#debut_symptomes_avant_hier').checked = true
         } else if (profil.symptomes_start_date >= joursAvant(4)) {
-            form.elements['suivi_symptomes_date'].value = 'avant_avant_hier'
+            form.querySelector('#debut_symptomes_avant_avant_hier').checked = true
         } else {
-            form.elements['suivi_symptomes_date'].value = 'encore_avant_hier'
+            form.querySelector('#debut_symptomes_encore_avant_hier').checked = true
             let datePicker = form.elements['suivi_symptomes_date_exacte']
-            datePicker.value = profil.symptomes_start_date.toISOString().substr(0, 10)
+            datePicker.value = formatDate(profil.symptomes_start_date)
         }
         updateSubmitButton(form, submitButton)
     }
@@ -193,7 +193,7 @@ function setupDatePicker(form, submitButton) {
     const datePicker = form.querySelector('#debut_symptomes_exacte')
 
     datePicker.addEventListener('click', () => {
-        form.elements['suivi_symptomes_date'].value = 'encore_avant_hier'
+        form.querySelector('#debut_symptomes_encore_avant_hier').checked = true
     })
 
     datePicker.addEventListener('change', () => {
