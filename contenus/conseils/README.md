@@ -589,7 +589,7 @@ Vous êtes un·e professionnel·le de santé de plus de 50 ans ou présentant u
 
 <div class="conseil">
 
-Vous avec un traitement de longue durée ou une maladie chronique, **vous devez discuter de votre situation avec votre médecin** pour déterminer s’il est pertinent de vous faire vacciner dès maintenant.
+Vous avec un traitement de longue durée ou une maladie chronique. Nous vous invitons à consulter votre médecin pour vérifier si vous avez le droit de vous faire vacciner dès maintenant.
 
 </div>
 
@@ -599,7 +599,7 @@ Vous avec un traitement de longue durée ou une maladie chronique, **vous devez 
 
 <div class="conseil">
 
-Vous présentez un risque de développement d’une forme grave de Covid, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" id="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
+Vous présentez un risque de développement d’une forme grave de Covid, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à consulter votre médecin pour obtenir une **ordonnance**, avant de <a href="#conseils-vaccins" id="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
 
 </div>
 
