@@ -450,7 +450,6 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
                 'conseils-sante-general',
-                'conseils-sante-grippe',
             ])
         })
 
@@ -462,7 +461,6 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
                 'conseils-sante-general',
-                'conseils-sante-grippe',
             ])
         })
 
@@ -474,7 +472,6 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
                 'conseils-sante-general',
-                'conseils-sante-grippe',
             ])
         })
 
@@ -486,7 +483,6 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
                 'conseils-sante-general',
-                'conseils-sante-grippe',
             ])
         })
 
@@ -499,7 +495,6 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-sante',
                 'reponse-sante-caracteristiques-a-risques',
                 'conseils-sante-personne-fragile',
-                'conseils-sante-grippe-fragile',
             ])
         })
 
@@ -514,7 +509,6 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-sante',
                 'reponse-sante-caracteristiques-a-risques',
                 'conseils-sante-personne-fragile-symptomatique',
-                'conseils-sante-grippe-fragile',
             ])
         })
 
@@ -528,7 +522,6 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-sante',
                 'reponse-sante-caracteristiques-a-risques',
                 'conseils-sante-personne-fragile',
-                'conseils-sante-grippe-fragile',
             ])
         })
 
@@ -541,7 +534,6 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-sante',
                 'reponse-sante-caracteristiques-a-risques',
                 'conseils-sante-personne-fragile',
-                'conseils-sante-grippe-fragile',
             ])
         })
 
@@ -555,7 +547,6 @@ describe('Blocs d’informations additionnels', function () {
                 'reponse-sante-antecedents',
                 'conseils-sante-personne-fragile',
                 'conseils-sante-maladie-chronique',
-                'conseils-sante-grippe-fragile',
             ])
         })
 
@@ -569,7 +560,6 @@ describe('Blocs d’informations additionnels', function () {
                 'reponse-sante-antecedents',
                 'conseils-sante-general',
                 'conseils-sante-maladie-chronique',
-                'conseils-sante-grippe',
             ])
         })
     })
