@@ -463,18 +463,6 @@ La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver 
 
 
 
-## [conseils_santé_grippe.md](conseils_santé_grippe.md)
-
-Devant le risque de complication chez les personnes malades ou fragiles, il est important de **se protéger et protéger les autres en se faisant vacciner contre la grippe**. Vous pouvez réaliser ce vaccin dès maintenant, sans prescription médicale, auprès de votre médecin ou de votre pharmacien.
-
-
-
-## [conseils_santé_grippe_fragile.md](conseils_santé_grippe_fragile.md)
-
-Devant le risque de complication **chez les personnes malades ou fragiles**, il est important de **vous faire vacciner contre la grippe** pour vous protéger et protéger les autres. Vous pouvez réaliser ce vaccin dès maintenant, sans prescription médicale, auprès de votre médecin ou de votre pharmacien.
-
-
-
 ## [conseils_santé_maladie_chronique.md](conseils_santé_maladie_chronique.md)
 
 * Maladies chroniques : [Évaluer ses risques avec l’équipe de soins et adapter son mode de vie](https://www.has-sante.fr/jcms/p_3189294/fr/covid-19-evaluer-ses-risques-avec-l-equipe-de-soins-et-adapter-son-mode-de-vie)
