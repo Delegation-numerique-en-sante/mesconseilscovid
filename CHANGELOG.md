@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-01-18
+
+* rend homogène les informations sur le couvre-feu
+* retire les conseils sur la vaccination contre la grippe
+
 ## 2021-01-15
 
 * prise en considération des antécédents pour la vaccination
