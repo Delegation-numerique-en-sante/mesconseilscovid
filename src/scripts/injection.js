@@ -1,6 +1,7 @@
 import { format } from 'timeago.js'
 
 import prefectures from './data/prefectures.js'
+import ctaiTelephones from './data/ctaiTelephones.js'
 import departements from './data/departements.js'
 
 export function nomProfil(element, app) {
@@ -30,6 +31,14 @@ export function departement(element, departement) {
 
 export function lienPrefecture(element, departement) {
     element.setAttribute('href', prefectures[departement])
+}
+
+export function CTAIContact(element, departement) {
+    const numeroTelehone = ctaiTelephones[departement]
+    if (numeroTelehone === '') return
+    element.innerHTML = ` au <a href="tel:${numeroTelehone}" style="white-space: nowrap;">${numeroTelehone
+        .match(/.{1,2}/g)
+        .join(' ')}</a>`
 }
 
 export function lienVaccination(element, departement) {
