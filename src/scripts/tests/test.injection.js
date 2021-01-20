@@ -30,6 +30,30 @@ describe('Injection', function () {
         )
     })
 
+    it('Contact CTAI', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = '<span id="ctai-contact-placeholder"></span>'
+        injection.CTAIContact(element.querySelector('#ctai-contact-placeholder'), '14')
+
+        assert.strictEqual(
+            element.innerHTML,
+            '<span id="ctai-contact-placeholder"> au <a href="tel:0231306760" style="white-space: nowrap;">02 31 30 67 60</a></span>'
+        )
+    })
+
+    it('Contact CTAI manquant', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = '<span id="ctai-contact-placeholder"></span>'
+        injection.CTAIContact(element.querySelector('#ctai-contact-placeholder'), '01')
+
+        assert.strictEqual(
+            element.innerHTML,
+            '<span id="ctai-contact-placeholder"></span>'
+        )
+    })
+
     it('Lien vaccination', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')

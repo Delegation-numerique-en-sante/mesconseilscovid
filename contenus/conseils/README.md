@@ -201,6 +201,18 @@ Le **port du masque est obligatoire** dans les **[lieux publics clos](https://so
 
 Si vous avez besoin d’être isolé en dehors de chez vous, l’Assurance Maladie vous proposera une solution adaptée.
 
+<span class="nouveau">nouveau</span> Pendant votre période d’isolement, si vous avez besoin d’aide pour :
+
+* une aide aux démarches administratives (ouverture de droits etc.) ;
+* une aide à domicile (aide-ménagère, portage de courses, de médicaments, de repas etc.) ;
+* une garde d’enfants ou de personnes vulnérables non autonomes lorsque le bénéficiaire est un aidant isolé ;
+* un accès à des services de communication électronique ;
+* ou encore un dispositif de soutien psychologique à l’isolement ;
+
+vous pouvez contacter la préfecture de votre département<span id="ctai-contact-placeholder"></span>.
+
+ℹ️ Si vous ne pouvez pas rester isolé·e chez vous, ces équipes pourront vous aider à trouver un autre logement pendant la durée de votre isolement.
+
 Si vous devez **vous isoler**, nous vous conseillons de :
 
 * vous **laver les mains** très régulièrement ;

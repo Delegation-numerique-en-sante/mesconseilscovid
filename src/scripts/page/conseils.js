@@ -166,9 +166,13 @@ export function dynamicDataInjection(element, profil, algoOrientation) {
     Array.from(element.querySelectorAll('#lien-vaccination')).forEach((link) => {
         injection.lienVaccination(link, profil.departement)
     })
-    var lienPrefecture = element.querySelector('#lien-prefecture')
+    const lienPrefecture = element.querySelector('#lien-prefecture')
     if (lienPrefecture) {
         injection.lienPrefecture(lienPrefecture, profil.departement)
+    }
+    const CTAIContactPlaceholder = element.querySelector('#ctai-contact-placeholder')
+    if (CTAIContactPlaceholder) {
+        injection.CTAIContact(CTAIContactPlaceholder, profil.departement)
     }
 
     // eslint-disable-next-line no-extra-semi
