@@ -1,4 +1,4 @@
-<!---->Oui, j’en ai <b>ajourd’hui</b>
+<!---->Oui, j’en ai <b>aujourd’hui</b>
 
 ---
 

@@ -491,21 +491,17 @@ Avez-vous remarqué que votre proche n’est pas comme d’habitude ces dernièr
 
 ## [question_symptômes_actuels_alimentation_libellé.md](question_symptômes_actuels_alimentation_libellé.md)
 
-<!---->Je suis dans l’impossibilité de m’alimenter <em>ou</em> de boire <b>depuis 24 heures ou plus</b>.
+<!---->L’impossibilité de m’alimenter <em>ou</em> de boire <b>depuis 24 heures ou plus</b>.
 
 ---
 
-<!---->Il ou elle est dans l’impossibilité de s’alimenter <em>ou</em> de boire <b>depuis 24 heures ou plus</b>.
+<!---->L’impossibilité de s’alimenter <em>ou</em> de boire <b>depuis 24 heures ou plus</b>.
 
 
 
 ## [question_symptômes_actuels_diarrhée_libellé.md](question_symptômes_actuels_diarrhée_libellé.md)
 
-<!---->J’ai eu de la <b>diarrhée</b> ces dernières 24 heures (au moins 3 selles molles).
-
----
-
-<!---->Il ou elle a eu de la <b>diarrhée</b> ces dernières 24 heures (au moins 3 selles molles).
+<!---->De la <b>diarrhée</b> (au moins 3 selles molles ces dernières 24 heures).
 
 
 
@@ -527,61 +523,53 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 
 ## [question_symptômes_actuels_fatigue_libellé.md](question_symptômes_actuels_fatigue_libellé.md)
 
-<!---->J’ai une <b>fatigue inhabituelle</b> ces derniers jours <em>et</em> cette fatigue m’oblige à me reposer plus de <b>la moitié de la journée</b>.
+<!---->Une <b>fatigue inhabituelle</b> qui m’oblige à me reposer plus de <b>la moitié de la journée</b>.
 
 ---
 
-<!---->Il ou elle a une <b>fatigue inhabituelle</b> ces derniers jours <em>et</em> cette fatigue l’oblige à se reposer plus de <b>la moitié de la journée</b>.
+<!---->Une <b>fatigue inhabituelle</b> qui l’oblige à se reposer plus de <b>la moitié de la journée</b>.
 
 
 
 ## [question_symptômes_actuels_odorat_libellé.md](question_symptômes_actuels_odorat_libellé.md)
 
-<!---->J’ai noté une <b>perte</b> ou une forte diminution de mon <b>goût</b> <em>ou</em> de mon <b>odorat</b> ces derniers jours.
+<!---->Une <b>perte</b> ou une forte diminution de mon <b>goût</b> <em>ou</em> de mon <b>odorat</b>.
 
 ---
 
-<!---->Il ou elle a noté une <b>perte</b> ou une forte diminution de son <b>goût</b> <em>ou</em> de son <b>odorat</b> ces derniers jours.
+<!---->Une <b>perte</b> ou une forte diminution de son <b>goût</b> <em>ou</em> de son <b>odorat</b>.
 
 
 
 ## [question_symptômes_actuels_souffle_libellé.md](question_symptômes_actuels_souffle_libellé.md)
 
-<!---->Depuis hier j’ai <b>du mal à respirer</b> lorsque je parle <em>ou</em> fais un petit effort.
+<!---->Du <b>mal à respirer</b> lorsque je parle <em>ou</em> fais un petit effort.
 
 ---
 
-<!---->Depuis hier il ou elle a <b>du mal à respirer</b> en parlant <em>ou</em> en faisant un petit effort.
+<!---->Du <b>mal à respirer</b> en parlant <em>ou</em> en faisant un petit effort.
 
 
 
 ## [question_symptômes_actuels_température_inconnue_libellé.md](question_symptômes_actuels_température_inconnue_libellé.md)
 
-<!----><b>Je ne sais pas</b> si j’ai eu de la fièvre ces 2 derniers jours.
+<!---->J’ai <b>peut-être</b> eu <b>de la fièvre</b> dans les 2 derniers jours.
 
 ---
 
-<!----><b>Il ou elle ne sait pas</b> si il ou elle a eu de la fièvre ces 2 derniers jours.
+<!---->Il ou elle a <b>peut-être</b> eu <b>de la fièvre</b> dans les 2 derniers jours.
 
 
 
 ## [question_symptômes_actuels_température_libellé.md](question_symptômes_actuels_température_libellé.md)
 
-<!---->J’ai eu une température <b>inférieure à 35,5 °C</b> <em>ou</em> <b>supérieure à 39 °C</b> ces dernières 48 heures.
-
----
-
-<!---->Il ou elle a eu une température <b>inférieure à 35,5 °C</b> <em>ou</em> <b>supérieure à 39 °C</b> ces dernières 48 heures.
+<!---->Une température <b>inférieure à 35,5 °C</b> ou <b>supérieure à 39 °C</b> dans les 2 derniers jours.
 
 
 
 ## [question_symptômes_actuels_toux_libellé.md](question_symptômes_actuels_toux_libellé.md)
 
-<!---->Je <b>tousse</b> <em>ou</em> ma toux habituelle s’est modifiée ces derniers jours.
-
----
-
-<!---->Il ou elle <b>tousse</b> <em>ou</em> sa toux habituelle s’est modifiée ces derniers jours.
+<!---->De la <b>toux</b>.
 
 
 
@@ -695,7 +683,7 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_libellé_oui.md](question_symptômes_libellé_oui.md)
 
-<!---->Oui, j’en ai <b>ajourd’hui</b>
+<!---->Oui, j’en ai <b>aujourd’hui</b>
 
 ---
 
