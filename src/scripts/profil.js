@@ -497,12 +497,28 @@ export default class Profil {
         )
     }
 
-    isSymptomesActuelsComplete() {
+    isSymptomesComplete() {
+        return (
+            this._isSymptomesActuelsComplete() &&
+            this._isSymptomesPassesComplete() &&
+            this._isDebutSymptomesComplete()
+        )
+    }
+
+    _isSymptomesActuelsComplete() {
         return typeof this.symptomes_actuels !== 'undefined'
     }
 
-    isSymptomesPassesComplete() {
+    _isSymptomesPassesComplete() {
         return typeof this.symptomes_passes !== 'undefined'
+    }
+
+    _isDebutSymptomesComplete() {
+        if (this.hasSymptomesActuelsReconnus() || this.symptomes_passes) {
+            return this.hasSymptomesStartDate()
+        } else {
+            return true
+        }
     }
 
     isContactARisqueComplete() {
@@ -513,23 +529,14 @@ export default class Profil {
         return typeof this.depistage !== 'undefined'
     }
 
-    isDebutSymptomesComplete() {
-        if (this.hasSymptomesActuelsReconnus() || this.symptomes_passes) {
-            return this.hasSymptomesStartDate()
-        } else {
-            return true
-        }
-    }
-
     isComplete() {
         return (
             this.isSituationComplete() &&
             this.isSanteComplete() &&
-            this.isSymptomesActuelsComplete() &&
-            this.isSymptomesPassesComplete() &&
+            this.isSymptomesComplete() &&
             this.isContactARisqueComplete() &&
             this.isDepistageComplete() &&
-            this.isDebutSymptomesComplete()
+            this._isDebutSymptomesComplete()
         )
     }
 

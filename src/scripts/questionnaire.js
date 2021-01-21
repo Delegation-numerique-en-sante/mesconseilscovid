@@ -26,16 +26,12 @@ export const TRANSITIONS = {
         previous: { introduction: () => true },
         next: {
             depistage: (profil) =>
-                (profil.isSymptomesActuelsComplete() &&
-                    profil.hasSymptomesActuelsReconnus() &&
-                    profil.hasSymptomesStartDate()) ||
-                (profil.isSymptomesPassesComplete() &&
-                    profil.symptomes_passes &&
-                    profil.hasSymptomesStartDate()),
+                profil.isSymptomesComplete() &&
+                profil.hasSymptomesStartDate() &&
+                (profil.hasSymptomesActuelsReconnus() || profil.symptomes_passes),
             contactarisque: (profil) =>
-                profil.isSymptomesActuelsComplete() &&
+                profil.isSymptomesComplete() &&
                 !profil.hasSymptomesActuelsReconnus() &&
-                profil.isSymptomesPassesComplete() &&
                 !profil.symptomes_passes,
         },
     },
@@ -48,12 +44,9 @@ export const TRANSITIONS = {
     depistage: {
         previous: {
             symptomes: (profil) =>
-                (profil.isSymptomesActuelsComplete() &&
-                    profil.hasSymptomesActuelsReconnus() &&
-                    profil.hasSymptomesStartDate()) ||
-                (profil.isSymptomesPassesComplete() &&
-                    profil.symptomes_passes &&
-                    profil.hasSymptomesStartDate()),
+                profil.isSymptomesComplete() &&
+                profil.hasSymptomesStartDate() &&
+                (profil.hasSymptomesActuelsReconnus() || profil.symptomes_passes),
             contactarisque: (profil) => profil.isContactARisqueComplete(),
         },
         next: {
