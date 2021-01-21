@@ -1,4 +1,4 @@
-class Form {
+export class Form {
     constructor(form) {
         this.form = form
     }
@@ -66,7 +66,7 @@ export function createEvent(name) {
     return event
 }
 
-function someChecked(checkboxes) {
+export function someChecked(checkboxes) {
     return checkboxes.some((checkbox) => checkbox.checked)
 }
 
@@ -294,40 +294,4 @@ export function enableOrDisableSecondaryFields(form, primary) {
             elem.classList.remove('disabled')
         }
     })
-}
-
-export function toggleFormButtonOnSymptomesFieldsRequired(formElement, dateFromForm) {
-    const form = new Form(formElement)
-    const button = form.submitButton
-    const continueLabel = 'Continuer'
-    const requiredLabel = 'Veuillez remplir le formulaire au complet'
-    const statuts = formElement.elements['symptomes_actuels_statuts']
-    const datePicker = formElement.querySelector('#debut_symptomes_exacte')
-
-    function updateSubmitButtonLabelRequired() {
-        const allFilled =
-            formElement.elements['symptomes_non'].checked ||
-            (formElement.elements['symptomes_passes'].checked &&
-                dateFromForm(formElement)) ||
-            (formElement.elements['symptomes_actuels'].checked &&
-                someChecked(form.checkboxes) &&
-                dateFromForm(formElement))
-        button.disabled = !allFilled
-        button.value = allFilled ? continueLabel : requiredLabel
-    }
-
-    updateSubmitButtonLabelRequired()
-
-    Array.from(statuts).forEach((statut) =>
-        statut.addEventListener('change', updateSubmitButtonLabelRequired)
-    )
-    form.checkboxes.forEach((checkbox) =>
-        checkbox.addEventListener('change', updateSubmitButtonLabelRequired)
-    )
-    Array.from(formElement.querySelectorAll('[name="suivi_symptomes_date"]')).forEach(
-        (radio) => {
-            radio.addEventListener('change', updateSubmitButtonLabelRequired)
-        }
-    )
-    datePicker.addEventListener('change', updateSubmitButtonLabelRequired)
 }
