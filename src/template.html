@@ -1033,7 +1033,7 @@
                     </details>
                 </div>
 
-                <div id="conseils-sante" class="conseils">
+                <div id="conseils-sante" class="conseils" hidden>
                     <details>
                         <summary>
                             <header>
@@ -1055,17 +1055,11 @@
                         <div id="conseils-sante-historique-symptomes" class="conseil" hidden>
                             <p>{{ conseils_autosuivi_historique|me_or_them }}</p>
                         </div>
-                        <div id="conseils-sante-general" hidden>
-                            {{ conseils_santé }}
-                        </div>
                         <div id="conseils-sante-personne-fragile" hidden>
                             {{ conseils_santé_personne_fragile }}
                         </div>
                         <div id="conseils-sante-personne-fragile-symptomatique" hidden>
                             {{ conseils_santé_personne_fragile_symptomatique }}
-                        </div>
-                        <div id="conseils-sante-maladie-chronique" hidden>
-                            {{ conseils_santé_maladie_chronique }}
                         </div>
                         {{ conseils_contacter_un_médecin }}
                         {{ conseils_contacts_utiles }}
