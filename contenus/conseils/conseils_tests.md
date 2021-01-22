@@ -5,7 +5,7 @@ Retrouvez le [lieu de test le plus proche](https://www.sante.fr/cf/centres-depis
 </div>
 
 * Les tests de dépistage sont **accessibles sur demande** et sans prescription médicale, sans même présenter de symptômes.
-* Les  tests antigéniques permettent d'avoir des résultats plus rapidement mais ils sont moins fiables que les tests en laboratoire. Ils sont prioritairement réservés aux personnes qui ont des signes de la Covid et doivent être réalisés **dans un délai inférieur ou égal à 4 jours** après l’apparition des symptômes.
+* Les tests antigéniques permettent d’avoir des résultats plus rapidement mais ils sont moins fiables que les tests en laboratoire. Ils sont prioritairement réservés aux personnes qui ont des signes de la Covid et doivent être réalisés **dans un délai inférieur ou égal à 4 jours** après l’apparition des symptômes.
 * Les tests de dépistage sont **intégralement pris en charge** pour tout le monde par l’assurance maladie.
 
 * Plus d’informations :
