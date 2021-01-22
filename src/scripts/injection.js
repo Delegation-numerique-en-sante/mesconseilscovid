@@ -2,6 +2,7 @@ import { format } from 'timeago.js'
 
 import prefectures from './data/prefectures.js'
 import ctaiTelephones from './data/ctaiTelephones.js'
+import ctaiCourriels from './data/ctaiCourriels.js'
 import departements from './data/departements.js'
 
 export function nomProfil(element, app) {
@@ -34,11 +35,21 @@ export function lienPrefecture(element, departement) {
 }
 
 export function CTAIContact(element, departement) {
-    const numeroTelehone = ctaiTelephones[departement]
-    if (numeroTelehone === '') return
-    element.innerHTML = ` au <a href="tel:${numeroTelehone}" style="white-space: nowrap;">${numeroTelehone
-        .match(/.{1,2}/g)
-        .join(' ')}</a>`
+    const telephone = ctaiTelephones[departement]
+    const courriel = ctaiCourriels[departement]
+    if (telephone === '' && courriel === '') return
+    const contactHTML = []
+    if (telephone) {
+        contactHTML.push(
+            ` au <a href="tel:${telephone}" style="white-space: nowrap;">${telephone
+                .match(/.{1,2}/g)
+                .join(' ')}</a>`
+        )
+    }
+    if (courriel) {
+        contactHTML.push(` à l’adresse <a href="mailto:${courriel}">${courriel}</a>`)
+    }
+    element.innerHTML = contactHTML.join(' ou ')
 }
 
 export function lienVaccination(element, departement) {
