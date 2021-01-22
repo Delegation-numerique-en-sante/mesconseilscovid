@@ -53,9 +53,6 @@ describe('Suivi', function () {
                 '#page #conseils-personnels-symptomes-actuels-sans-depistage >> text="questionnaire de suivi"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suivisymptomes')
-            // le bloc « Ma santé »
-            let bloc = await page.waitForSelector('#page #conseils-sante summary')
-            await bloc.click()
             // un bouton pour refaire le questionnaire
             bouton = await page.waitForSelector('#page >> text="Revenir à l’accueil"')
             await Promise.all([
@@ -263,9 +260,6 @@ describe('Suivi', function () {
             let bouton = await page.waitForSelector(
                 '#page #conseils-personnels-symptomes-actuels-sans-depistage >> text="questionnaire de suivi"'
             )
-            // le bloc « Ma santé »
-            let bloc = await page.waitForSelector('#page #conseils-sante summary')
-            await bloc.click()
             // un bouton pour refaire le questionnaire
             bouton = await page.waitForSelector('#page >> text="Revenir à l’accueil"')
             await Promise.all([
