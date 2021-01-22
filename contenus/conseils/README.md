@@ -130,9 +130,9 @@ Seul le **paracétamol** est recommandé. En cas de doute, demandez conseil à v
 
 ## [conseils_covid_cas_contact_de_contact.md](conseils_covid_cas_contact_de_contact.md)
 
-Si vous êtes "cas contact d'un cas contact", c'est à dire que vous avez passé du temps avec une personne qui est cas contact, vous n'avez pas à vous isoler. 
+Si vous êtes « cas contact d’un cas contact », c’est-à-dire que vous avez passé du temps avec une personne qui est cas contact, vous n’avez pas à vous isoler.
 
-Demandez à cette personne de vous tenir informé·e des résultats de son test. Si son résultat est positif, vous devrez alors vous isoler. 
+Demandez à cette personne de vous tenir informé·e des résultats de son test. Si son résultat est positif, vous devrez alors vous isoler.
 
 
 
@@ -142,7 +142,7 @@ Demandez à cette personne de vous tenir informé·e des résultats de son test.
 
 Le port du masque est obligatoire dès l’âge de 6 ans dans les écoles.
 
-Vous pouvez consultez notre page dédiée sur les [« conseils liés aux activités et à la santé des enfants »](#pediatrie)
+Vous pouvez consultez notre page dédiée sur les [« conseils liés aux activités et à la santé des enfants »](#pediatrie).
 
 </div>
 
@@ -284,7 +284,7 @@ Si vous respectez ces indications, il n’est **pas nécessaire de réaliser un 
 
 ## [conseils_personnels_antigenique_negatif_fragile.md](conseils_personnels_antigenique_negatif_fragile.md)
 
-Les tests antigéniques permettent d'avoir des résultats plus rapidement mais ils sont moins fiables que les tests en laboratoire.
+Les tests antigéniques permettent d’avoir des résultats plus rapidement mais ils sont moins fiables que les tests en laboratoire.
 
 Comme vous avez des signes de la Covid et que vous avez des risques de développer une forme sévère de la maladie, nous vous conseillons de :
 
@@ -507,7 +507,7 @@ Retrouvez le [lieu de test le plus proche](https://www.sante.fr/cf/centres-depis
 </div>
 
 * Les tests de dépistage sont **accessibles sur demande** et sans prescription médicale, sans même présenter de symptômes.
-* Les  tests antigéniques permettent d'avoir des résultats plus rapidement mais ils sont moins fiables que les tests en laboratoire. Ils sont prioritairement réservés aux personnes qui ont des signes de la Covid et doivent être réalisés **dans un délai inférieur ou égal à 4 jours** après l’apparition des symptômes.
+* Les tests antigéniques permettent d’avoir des résultats plus rapidement mais ils sont moins fiables que les tests en laboratoire. Ils sont prioritairement réservés aux personnes qui ont des signes de la Covid et doivent être réalisés **dans un délai inférieur ou égal à 4 jours** après l’apparition des symptômes.
 * Les tests de dépistage sont **intégralement pris en charge** pour tout le monde par l’assurance maladie.
 
 * Plus d’informations :
@@ -550,13 +550,13 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 
 ## [conseils_vaccins.md](conseils_vaccins.md)
 
-<span class="nouveau">nouveau</span> Le déploiement de la vaccination se fera en plusieurs phases :
+<span class="nouveau">nouveau</span> Le déploiement de la vaccination se fera en plusieurs phases :
 
-* dès maintenant :
-    * les **personnes âgées en établissements** (notamment les <abbr title="Établissement d’Hébergement pour Personnes Âgées Dépendantes">EHPAD</abbr>),
+* dès maintenant :
+    * les **personnes âgées en établissements** (notamment les <abbr title="Établissement d’Hébergement pour Personnes Âgées Dépendantes">EHPAD</abbr>) ;
     * les **professionnels de santé**, **pompiers**, **personnel des établissements** de santé et médico-sociaux, et **aides à domicile** intervenant auprès des personnes vulnérables, âgés de **plus de 50 ans** ou présentant un **risque de forme grave** de Covid ;
    * les personnes de **75 ans et plus** hors établissements ;
-   * les personnes présentant un risque de développer une forme très grave de Covid, sur **ordonnance de leur médecin** ;
+   * les personnes présentant un risque de développer une forme très grave de Covid, sur **ordonnance de leur médecin** ;
 * ensuite, entre février et mars, les personnes présentant un **facteur de risque** lié à l’âge ou une pathologie chronique, ainsi que certains professionnels de santé ;
 * enfin, à la fin du printemps, la vaccination sera **ouverte à tous**.
 

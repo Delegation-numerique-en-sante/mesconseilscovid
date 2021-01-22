@@ -1,4 +1,4 @@
-Les tests antigéniques permettent d'avoir des résultats plus rapidement mais ils sont moins fiables que les tests en laboratoire.
+Les tests antigéniques permettent d’avoir des résultats plus rapidement mais ils sont moins fiables que les tests en laboratoire.
 
 Comme vous avez des signes de la Covid et que vous avez des risques de développer une forme sévère de la maladie, nous vous conseillons de :
 
