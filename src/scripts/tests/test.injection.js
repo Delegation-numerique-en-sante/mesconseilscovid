@@ -30,15 +30,39 @@ describe('Injection', function () {
         )
     })
 
-    it('Contact CTAI', function () {
+    it('Contact CTAI téléphone + courriel', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = '<span id="ctai-contact-placeholder"></span>'
-        injection.CTAIContact(element.querySelector('#ctai-contact-placeholder'), '14')
+        injection.CTAIContact(element.querySelector('#ctai-contact-placeholder'), '03')
 
         assert.strictEqual(
             element.innerHTML,
-            '<span id="ctai-contact-placeholder"> au <a href="tel:0231306760" style="white-space: nowrap;">02 31 30 67 60</a></span>'
+            '<span id="ctai-contact-placeholder"> au <a href="tel:0470483048" style="white-space: nowrap;">04 70 48 30 48</a> ou  à l’adresse <a href="mailto:pref-ctai@allier.gouv.fr">pref-ctai@allier.gouv.fr</a></span>'
+        )
+    })
+
+    it('Contact CTAI téléphone uniquement', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = '<span id="ctai-contact-placeholder"></span>'
+        injection.CTAIContact(element.querySelector('#ctai-contact-placeholder'), '52')
+
+        assert.strictEqual(
+            element.innerHTML,
+            '<span id="ctai-contact-placeholder"> au <a href="tel:0325305252" style="white-space: nowrap;">03 25 30 52 52</a></span>'
+        )
+    })
+
+    it('Contact CTAI courriel uniquement', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML = '<span id="ctai-contact-placeholder"></span>'
+        injection.CTAIContact(element.querySelector('#ctai-contact-placeholder'), '01')
+
+        assert.strictEqual(
+            element.innerHTML,
+            '<span id="ctai-contact-placeholder"> à l’adresse <a href="mailto:pref-covid-isolement@ain.gouv.fr">pref-covid-isolement@ain.gouv.fr</a></span>'
         )
     })
 
@@ -46,7 +70,7 @@ describe('Injection', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML = '<span id="ctai-contact-placeholder"></span>'
-        injection.CTAIContact(element.querySelector('#ctai-contact-placeholder'), '01')
+        injection.CTAIContact(element.querySelector('#ctai-contact-placeholder'), '976')
 
         assert.strictEqual(
             element.innerHTML,
