@@ -11,6 +11,7 @@
 La vaccination sera **gratuite** pour tous, et ne sera pas obligatoire.
 
 Pour en savoir plus :
+* [La liste des centres de vaccination et des publics concernés](https://www.sante.fr/cf/centres-vaccination-covid.html)
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
 * Le site [vaccination-info-service](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/COVID-19) de Santé Publique France
 * Les [réponses à vos questions sur les vaccins COVID-19](https://sante.fr/vaccins-covid-19-comirnatyr-et-modernar-toutes-les-reponses-vos-questions)  Comirnaty® de Pfizer/BioNTech et Moderna®
