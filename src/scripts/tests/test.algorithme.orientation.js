@@ -444,13 +444,10 @@ describe('Blocs d’informations additionnels', function () {
     })
 
     describe('Bloc santé', function () {
-        it('Le bloc santé s’affiche par défaut', function () {
+        it('Le bloc santé ne s’affiche pas par défaut', function () {
             var profil = new Profil('mes_infos', {})
             var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
-                'conseils-sante',
-                'conseils-sante-general',
-            ])
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [])
         })
 
         it('Même avec symptômes actuels', function () {
@@ -458,10 +455,7 @@ describe('Blocs d’informations additionnels', function () {
                 symptomes_actuels: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
-                'conseils-sante',
-                'conseils-sante-general',
-            ])
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [])
         })
 
         it('Même avec symptômes passés', function () {
@@ -469,10 +463,7 @@ describe('Blocs d’informations additionnels', function () {
                 symptomes_passes: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
-                'conseils-sante',
-                'conseils-sante-general',
-            ])
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [])
         })
 
         it('Même avec contact à risque', function () {
@@ -480,10 +471,7 @@ describe('Blocs d’informations additionnels', function () {
                 contact_a_risque: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
-                'conseils-sante',
-                'conseils-sante-general',
-            ])
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [])
         })
 
         it('Risque âge', function () {
@@ -546,7 +534,6 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-sante',
                 'reponse-sante-antecedents',
                 'conseils-sante-personne-fragile',
-                'conseils-sante-maladie-chronique',
             ])
         })
 
@@ -555,12 +542,7 @@ describe('Blocs d’informations additionnels', function () {
                 antecedent_chronique_autre: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
-            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
-                'conseils-sante',
-                'reponse-sante-antecedents',
-                'conseils-sante-general',
-                'conseils-sante-maladie-chronique',
-            ])
+            assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [])
         })
     })
 

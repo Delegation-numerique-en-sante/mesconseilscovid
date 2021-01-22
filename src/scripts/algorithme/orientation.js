@@ -461,24 +461,22 @@ export default class AlgorithmeOrientation {
     }
 
     santeBlockNamesToDisplay() {
-        const blockNames = ['conseils-sante']
-        if (this.sup65 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
-            blockNames.push('reponse-sante-caracteristiques-a-risques')
-        }
-        if (this.antecedents || this.profil.antecedent_chronique_autre) {
-            blockNames.push('reponse-sante-antecedents')
-        }
+        const blockNames = []
         if (this.personneFragile) {
             if (this.profil.hasSymptomesActuelsReconnus()) {
                 blockNames.push('conseils-sante-personne-fragile-symptomatique')
             } else {
                 blockNames.push('conseils-sante-personne-fragile')
             }
-        } else {
-            blockNames.push('conseils-sante-general')
         }
-        if (this.antecedents || this.profil.antecedent_chronique_autre) {
-            blockNames.push('conseils-sante-maladie-chronique')
+        if (blockNames.length) {
+            if (this.sup65 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
+                blockNames.unshift('reponse-sante-caracteristiques-a-risques')
+            }
+            if (this.antecedents || this.profil.antecedent_chronique_autre) {
+                blockNames.unshift('reponse-sante-antecedents')
+            }
+            blockNames.unshift('conseils-sante')
         }
         return blockNames
     }
