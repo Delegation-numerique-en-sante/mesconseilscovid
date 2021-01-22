@@ -117,6 +117,7 @@ function showRelevantSuiviBlocks(element, algoSuivi) {
     if (profil.hasHistorique()) {
         blockNames.push('suivi-bloc-liens')
         blockNames.push('conseils-personnels-titre')
+        blockNames.push('conseils-sante')
         blockNames.push('conseils-sante-historique-symptomes')
 
         // eslint-disable-next-line no-extra-semi
