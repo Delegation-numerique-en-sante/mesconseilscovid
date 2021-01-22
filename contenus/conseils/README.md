@@ -122,17 +122,17 @@ Décrypter les fausses informations ? [Désintox : la parole à la science](htt
 
 ## [conseils_covid_automédication.md](conseils_covid_automédication.md)
 
-Si vous avez des symptômes évocateurs de la Covid, ne prenez pas d’**anti-inflammatoires** sans avis médical. De plus, il semblerait que les anti-inflammatoires non stéroïdiens (AINS), comme l’ibuprofène ou le kétoprofène, pourraient **aggraver** l’infection à la Covid. C’est pourquoi :
+Si vous avez des symptômes évocateurs de la Covid, ne prenez pas d’**anti-inflammatoires** (ibuprofène ou kétoprofène) sans avis médical. Les anti-inflammatoires pourraient **aggraver** l’infection à la Covid. 
 
-* seul le **paracétamol** est recommandé, à la dose de 1 g (1 000 mg) par prise (espacées au minimum de 4 h), sans dépasser un total de 3 g par jour ([en savoir plus](https://sfpt-fr.org/covid19-foire-aux-questions/1099-j-ai-de-la-fievre-quel-medicament-dois-je-prendre)) ;
-* si vous êtes déjà sous anti-inflammatoires, ou en cas de doute, demandez conseil à votre médecin ou consultez le site [covid19-medicaments.com](https://www.covid19-medicaments.com) ;
-* plus d’informations sur la prise d’anti-inflammatoires non stéroïdiens [en cas de fièvre](https://sfpt-fr.org/covid19-foire-aux-questions/1085-je-prends-ou-je-souhaite-prendre-un-anti-inflammatoire-non-steroidien-ains-pour-la-fievre-que-dois-je-faire), ou [en cas de toux ou de douleurs musculaires](https://sfpt-fr.org/covid19-foire-aux-questions/1087-j-ai-de-la-fievre-et-je-prends-ou-je-souhaite-prendre-un-anti-inflammatoire-non-steroidien-ains-pour-la-toux-ou-les-myalgies-que-dois-je-faire).
+Seul le **paracétamol** est recommandé. En cas de doute, demandez conseil à votre médecin.
 
 
 
 ## [conseils_covid_cas_contact_de_contact.md](conseils_covid_cas_contact_de_contact.md)
 
-Si vous avez **passé du temps avec une personne qui est cas contact** (contact sans protection avec une personne testée positive à la Covid), demandez à cette personne de vous tenir informé·e des résultats de son test. Vous ne devrez vous isoler que si celui-ci est positif, en attendant nous vous recommandons d’appliquer les mesures barrières.
+Si vous êtes "cas contact d'un cas contact", c'est à dire que vous avez passé du temps avec une personne qui est cas contact, vous n'avez pas à vous isoler. 
+
+Demandez à cette personne de vous tenir informé·e des résultats de son test. Si son résultat est positif, vous devrez alors vous isoler. 
 
 
 
@@ -140,9 +140,9 @@ Si vous avez **passé du temps avec une personne qui est cas contact** (contact 
 
 <div class="conseil">
 
-Depuis le vendredi 30 octobre, le port du masque est obligatoire dès l’âge de 6 ans dans les écoles.
+Le port du masque est obligatoire dès l’âge de 6 ans dans les écoles.
 
-Consultez notre page dédiée : [« Conseils liés aux activités et à la santé des enfants »](#pediatrie)
+Vous pouvez consultez notre page dédiée sur les [« conseils liés aux activités et à la santé des enfants »](#pediatrie)
 
 </div>
 
@@ -254,41 +254,42 @@ Pour plus d’informations sur l’isolement : [« J’ai les signes de la mal
 
 ## [conseils_isolement_contact_a_risque.md](conseils_isolement_contact_a_risque.md)
 
-De façon générale il est conseillé une levée de l’isolement :
+Restez isolé·e **au minimum 7 jours** après votre dernier contact avec une personne malade.
 
-* **au minimum 7 jours** après votre dernier contact avec une personne malade,
-* et après **48 heures sans fièvre ni gêne respiratoire.**
+Si des symptômes apparaissent pendant votre isolement, revenez faire un test sur [MesConseilsCovid.fr](https://mesconseilscovid.sante.gouv.fr/#introduction). 
 
 
 
 ## [conseils_isolement_depistage_positif.md](conseils_isolement_depistage_positif.md)
 
-De façon générale il est conseillé une levée de l’isolement :
+Il est conseillé une levée de l’isolement :
 
 * **au minimum 7 jours** après le résultat de votre test positif,
 * et après **48 heures sans fièvre ni gêne respiratoire.**
 
-Si vous respectez ces indications, il n’est **pas nécessaire** de réaliser un test pour sortir d’isolement : le résultat pourrait **être positif alors que vous n’êtes plus contagieux.**
+Si vous respectez ces indications, il n’est **pas nécessaire de réaliser un test pour sortir d’isolement** : le résultat pourrait être positif alors que vous n’êtes plus contagieux.
 
 
 
 ## [conseils_isolement_symptomes.md](conseils_isolement_symptomes.md)
 
-De façon générale il est conseillé une levée de l’isolement :
+Il est conseillé une levée de l’isolement :
 
 * **au minimum 7 jours** après le début de vos symptômes,
 * et après **48 heures sans fièvre ni gêne respiratoire.**
 
-Si vous respectez ces indications, il n’est **pas nécessaire** de réaliser un test pour sortir d’isolement : le résultat pourrait **être positif alors que vous n’êtes plus contagieux.**
+Si vous respectez ces indications, il n’est **pas nécessaire de réaliser un test pour sortir d’isolement** : le résultat pourrait être positif alors que vous n’êtes plus contagieux.
 
 
 
 ## [conseils_personnels_antigenique_negatif_fragile.md](conseils_personnels_antigenique_negatif_fragile.md)
 
-Vous avez des symptômes évocateurs de la Covid et vous pouvez développer une forme sévère de la maladie :
+Les tests antigéniques permettent d'avoir des résultats plus rapidement mais ils sont moins fiables que les tests en laboratoire.
 
-* **contactez votre médecin traitant** pour l’informer du résultat de votre test antigénique ;
-* faites un **test de contrôle** en laboratoire pour confirmer le résultat de votre test antigénique. Ce résultat pourrait être un *« faux négatif »*.
+Comme vous avez des signes de la Covid et que vous avez des risques de développer une forme sévère de la maladie, nous vous conseillons de :
+
+* **contacter votre médecin traitant** pour l’informer du résultat de votre test antigénique ;
+* faire un **test de contrôle** en laboratoire pour confirmer le résultat de votre test antigénique.
 
 
 
@@ -470,18 +471,6 @@ Une personne ayant eu la Covid **n’est immunisée que pour quelques semaines**
 
 
 
-## [conseils_santé.md](conseils_santé.md)
-
-La Covid n’a pas fait disparaître les autres pathologies. Afin de préserver votre santé, il vous est recommandé de consulter au moindre signe de maladie.
-
-
-
-## [conseils_santé_maladie_chronique.md](conseils_santé_maladie_chronique.md)
-
-* Maladies chroniques : [Évaluer ses risques avec l’équipe de soins et adapter son mode de vie](https://www.has-sante.fr/jcms/p_3189294/fr/covid-19-evaluer-ses-risques-avec-l-equipe-de-soins-et-adapter-son-mode-de-vie)
-
-
-
 ## [conseils_santé_personne_fragile.md](conseils_santé_personne_fragile.md)
 
 <div class="conseil">
@@ -518,13 +507,14 @@ Retrouvez le [lieu de test le plus proche](https://www.sante.fr/cf/centres-depis
 </div>
 
 * Les tests de dépistage sont **accessibles sur demande** et sans prescription médicale, sans même présenter de symptômes.
-* <span class="nouveau">nouveau</span> Les nouveaux **tests antigéniques rapides** constituent un outil supplémentaire pour réduire les chaînes de transmission virale. Ils viennent en complément des tests RT-PCR qui restent la technique de référence pour la détection de l’infection à la Covid. Ils sont prioritairement réservés aux personnes symptomatiques. Les tests doivent être réalisés **dans un délai inférieur ou égal à 4 jours** après l’apparition des symptômes. Pour plus d’informations : [Tout ce qu’il faut savoir sur les tests antigéniques](https://www.ameli.fr/paris/assure/covid-19/les-tests-de-depistage-de-la-covid-19/tout-ce-quil-faut-savoir-sur-les-tests-antigeniques-du-sras-cov-2).
-* Les tests de dépistage sont **intégralement pris en charge** par l’assurance maladie. Ces dispositions sont également applicables aux personnes qui ne sont pas assurés sociaux.
-* Depuis le 11 septembre 2020, une **stratégie de priorisation** des tests de dépistage a été mise en place. Seront testés en priorité : les personnes **ayant des symptômes**, les **cas contacts**, les **personnels soignants** ou assimilés.
+* Les  tests antigéniques permettent d'avoir des résultats plus rapidement mais ils sont moins fiables que les tests en laboratoire. Ils sont prioritairement réservés aux personnes qui ont des signes de la Covid et doivent être réalisés **dans un délai inférieur ou égal à 4 jours** après l’apparition des symptômes.
+* Les tests de dépistage sont **intégralement pris en charge** pour tout le monde par l’assurance maladie.
+
 * Plus d’informations :
     * Les prochaines étapes du parcours : [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_-_nouveau.pdf)
-    * [La stratégie de dépistage](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
     * [Dépistage : réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/depistage-les-reponses-a-vos-questions)
+    * [Tout ce qu’il faut savoir sur les tests antigéniques](https://www.ameli.fr/paris/assure/covid-19/les-tests-de-depistage-de-la-covid-19/tout-ce-quil-faut-savoir-sur-les-tests-antigeniques-du-sras-cov-2)
+    * [La stratégie de dépistage](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
 
 
 
@@ -537,11 +527,13 @@ Retrouvez le [lieu de test le plus proche](https://www.sante.fr/cf/centres-depis
 </div>
 
 * Les tests de dépistage sont **accessibles sur demande** et sans prescription médicale, sans même présenter de symptômes.
-* Les tests de dépistage sont **intégralement pris en charge** par l’assurance maladie. Ces dispositions sont également applicables aux personnes qui ne sont pas assurés sociaux.
+* Les tests de dépistage sont **intégralement pris en charge** pour tout le monde par l’assurance maladie. 
+
 * Plus d’informations :
     * Les prochaines étapes du parcours : [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_-_nouveau.pdf)
-    * [La stratégie de dépistage](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
     * [Dépistage : réponses à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/depistage-les-reponses-a-vos-questions)
+   * [La stratégie de dépistage](https://www.gouvernement.fr/info-coronavirus/tests-et-depistage)
+
 
 
 
@@ -549,8 +541,8 @@ Retrouvez le [lieu de test le plus proche](https://www.sante.fr/cf/centres-depis
 
 Les **résultats du test** de dépistage sont normalement disponibles dans les 36 heures après la réalisation du test. Ils vous seront transmis :
 
-* par le laboratoire (par téléphone, ou sur internet) ;
-* et/ou par SI-DEP (un système d’information national de suivi du dépistage Covid mis en place depuis mai 2020).
+* par téléphone, ou sur internet par le laboratoire ;
+* et/ou par courrier via SI-DEP (un système d’information national de suivi du dépistage Covid).
 
 **En cas de difficultés à obtenir vos résultats, contactez le laboratoire.**
 
@@ -563,18 +555,18 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 * dès maintenant :
     * les **personnes âgées en établissements** (notamment les <abbr title="Établissement d’Hébergement pour Personnes Âgées Dépendantes">EHPAD</abbr>),
     * les **professionnels de santé**, **pompiers**, **personnel des établissements** de santé et médico-sociaux, et **aides à domicile** intervenant auprès des personnes vulnérables, âgés de **plus de 50 ans** ou présentant un **risque de forme grave** de Covid ;
-* à partir du 18 janvier, les personnes de **75 ans et plus** hors établissements ;
+   * les personnes de **75 ans et plus** hors établissements ;
+   * les personnes présentant un risque de développer une forme très grave de Covid, sur **ordonnance de leur médecin** ;
 * ensuite, entre février et mars, les personnes présentant un **facteur de risque** lié à l’âge ou une pathologie chronique, ainsi que certains professionnels de santé ;
 * enfin, à la fin du printemps, la vaccination sera **ouverte à tous**.
 
 La vaccination sera **gratuite** pour tous, et ne sera pas obligatoire.
 
 Pour en savoir plus :
+* [La liste des centres de vaccination et des publics concernés](https://www.sante.fr/cf/centres-vaccination-covid.html)
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
 * Le site [vaccination-info-service](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/COVID-19) de Santé Publique France
 * Les [réponses à vos questions sur les vaccins COVID-19](https://sante.fr/vaccins-covid-19-comirnatyr-et-modernar-toutes-les-reponses-vos-questions)  Comirnaty® de Pfizer/BioNTech et Moderna®
-
-ℹ️ *Cette section sera mise à jour régulièrement avec les dernières informations disponibles.*
 
 
 
@@ -632,12 +624,10 @@ Pour vos **courses**, nous vous conseillons de :
 
 Pour vos **déplacements** :
 
-  * à partir du 15 décembre, les déplacements vers l’étranger sont possibles ;
+  * depuis du 15 décembre 2020, les déplacements vers l’étranger sont possibles ;
   * un test négatif de moins de 72 h est obligatoire pour entrer sur le territoire ;
   * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »).
 
 Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919">39 19</a> (appel gratuit, de 9 h à 19 h du lundi au samedi) ou le <a href="tel:17">17</a> en cas d’urgence.
-
-L’application [TousAntiCovid](https://www.gouvernement.fr/info-coronavirus/tousanticovid) vous permettra de recevoir une notification si vous avez été en contact rapproché avec une personne testée positive à la Covid.
 
 
