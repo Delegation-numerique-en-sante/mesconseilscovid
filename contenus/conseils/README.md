@@ -202,7 +202,7 @@ Le **port du masque est obligatoire** dans les **[lieux publics clos](https://so
 
 <div class="conseil">
 
-<span class="nouveau">nouveau</span> Pendant votre période d’isolement vous pouvez contacter la cellule d’appui de votre département<span id="ctai-contact-placeholder"></span> si vous avez **besoin d’aide** pour :
+<span class="nouveau">nouveau</span> Pendant votre période d’isolement vous pouvez contacter la cellule d’appui de votre département si vous avez **besoin d’aide** pour :
 
 * vos **démarches administratives** (ouverture de droits, etc.) ;
 * une **aide à domicile** (aide-ménagère, portage de courses, de médicaments, de repas, etc.) ;
