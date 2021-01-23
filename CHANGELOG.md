@@ -1,5 +1,12 @@
 # Changelog
 
+## 2021-01-23
+
+* regroupement des pages liées aux symptômes
+* mention d’une ordonnance nécessaire pour les moins de 75 ans
+* mise à jour du lien pour les centres de dépistage
+* mise à jour et simplification des conseils
+
 ## 2021-01-18
 
 * rend homogène les informations sur le couvre-feu
