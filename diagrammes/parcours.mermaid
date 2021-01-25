@@ -1,43 +1,26 @@
 graph TD
-    introduction(("Page d’accueil")) -->|pour moi| symptomesactuels
+    introduction(("Page d’accueil")) -->|pour moi| symptomes
     introduction(("Page d’accueil")) -->|pour un proche| nom
 
-    nom("Nom ?") --> symptomesactuels
+    nom("Nom ?") --> symptomes
 
-    symptomesactuels("Symptômes actuels ?")
-    symptomesactuels -->|"oui, lesquels ?"| debutsymptomes
-    symptomesactuels -->|non| symptomespasses
+    symptomes("1/5 Mon état actuel")
+    symptomes ---->|"symptômes actuels"| depistage
+    symptomes ---->|"symptômes passés"| depistage
+    symptomes -->|"pas de symptômes"| contactarisque
 
-    symptomespasses("Symptômes passés <= 7 jours ?")
-    symptomespasses -->|oui| debutsymptomes
-    symptomespasses -->|non| contactarisque
+    contactarisque("2/5 Mes contacts récents")
+    contactarisque -->|"contact à risque"| depistage
+    contactarisque -->|"ok"| depistage
 
-    debutsymptomes("Depuis quand ?")
-    debutsymptomes -->|date| depistage
+    depistage("3/5 Test Covid ?")
+    depistage --->|pas de test| situation
+    depistage --->|positif| situation
+    depistage --->|négatif| situation
+    depistage --->|en attente| situation
 
-    contactarisque("Contact à risque ?")
-    contactarisque -->|oui| depistage
-    contactarisque -->|non| depistage
+    situation("4/5 Situation") --> sante("5/5 Santé")
 
-    depistage("Test Covid ?")
-    depistage --->|pas de test| residence
-    depistage --->|positif| residence
-    depistage --->|négatif| residence
-    depistage --->|en attente| residence
+    sante --> conseils(("Conseils"))
 
-    subgraph Questions bonus
-        residence("Résidence") --> foyer("Foyer") --> antecedents("Antécédents") --> caracteristiques("Caractéristiques") --> activitepro("Activité")
-    end
-
-    activitepro --> conseils(("Conseils"))
-
-    conseils --> debutconnu
-
-    subgraph Suivi
-        debutconnu("Date de début connue")
-        debutconnu -->|oui| suivisymptomes
-        debutconnu -->|non| debutsymptomes2
-
-        debutsymptomes2("Depuis quand ?")
-        debutsymptomes2 --> suivisymptomes
-    end
+    conseils -->|"Suivi"| suivisymptomes("L’évolution de mes symptômes")
