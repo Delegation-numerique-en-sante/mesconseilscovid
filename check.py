@@ -12,6 +12,7 @@ from build import each_folder_from, each_file_from
 
 HERE = Path(__file__).parent
 SRC_DIR = HERE / "src"
+DIAGRAMMES_DIR = HERE / "diagrammes"
 CONTENUS_DIR = HERE / "contenus"
 
 
@@ -91,10 +92,10 @@ def service_worker():
 
     # Make sure the cached files exist.
     for filename in sw_filenames:
-        if not ((Path("src") / filename).exists() or (Path("static") / filename).exists()):
-            raise Exception(
-                f"Non-existent file in service-worker.js: {filename}"
-            )
+        if not (
+            (Path("src") / filename).exists() or (Path("static") / filename).exists()
+        ):
+            raise Exception(f"Non-existent file in service-worker.js: {filename}")
 
     REQUIRED_FILES = {"/", "style.css", "scripts/main.js", "favicon.ico"}
 
@@ -182,6 +183,54 @@ def orphelins():
                 continue
             if filename[: -len(".md")] not in template:
                 raise Exception(f"Reference missing for {filename}")
+
+
+@cli
+def diagrammes():
+    matrice_content = (DIAGRAMMES_DIR / "matrice-statuts-conseils.md").read_text()
+    matrice_statuts = {
+        line.strip()
+        for line in matrice_content.split("\n")
+        if line.strip().startswith("statut_")
+    }
+    matrice_conseils = {
+        line.strip()
+        for line in matrice_content.split("\n")
+        if line.strip().startswith("conseils_")
+    }
+    statuts_filenames = {
+        filename
+        for file_path, filename in each_file_from(
+            CONTENUS_DIR / "statuts", pattern="*.md", exclude=["README.md"]
+        )
+    }
+    conseils_filenames = {
+        filename
+        for file_path, filename in each_file_from(
+            CONTENUS_DIR / "conseils",
+            pattern="conseils_personnels_*.md",
+            exclude=["README.md"],
+        )
+    }
+    if matrice_statuts - statuts_filenames:
+        raise Exception(
+            f"Statut file(s) missing for: {matrice_statuts - statuts_filenames}"
+        )
+
+    if matrice_conseils - conseils_filenames:
+        raise Exception(
+            f"Conseils file(s) missing for: {matrice_conseils - conseils_filenames}"
+        )
+
+    if statuts_filenames - matrice_statuts:
+        raise Exception(
+            f"Non-existent statut from matrice: {statuts_filenames - matrice_statuts}"
+        )
+
+    if conseils_filenames - matrice_conseils:
+        raise Exception(
+            f"Non-existent conseils personnels from matrice: {conseils_filenames - matrice_conseils}"
+        )
 
 
 if __name__ == "__main__":
