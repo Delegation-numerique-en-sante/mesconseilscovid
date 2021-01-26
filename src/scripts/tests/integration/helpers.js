@@ -74,6 +74,9 @@ async function remplirSituation(page, departement, enfants, activitePro) {
     if (enfants === true) {
         // La "vraie" case à cocher est cachée, alors on clique sur le label.
         let label
+        label = await page.waitForSelector('#page label[for="foyer_autres_personnes"]')
+        await label.click()
+        // La "vraie" case à cocher est cachée, alors on clique sur le label.
         label = await page.waitForSelector('#page label[for="foyer_enfants"]')
         await label.click()
     }

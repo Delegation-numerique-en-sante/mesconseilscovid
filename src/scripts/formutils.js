@@ -279,15 +279,16 @@ export function toggleFormButtonOnSelectFieldsRequired(
     )
 }
 
-export function enableOrDisableSecondaryFields(form, primary) {
+export function enableOrDisableSecondaryFields(form, primary, secondaries) {
+    secondaries = Array.from(secondaries || form.querySelectorAll('.secondary'))
     const primaryDisabled = !primary.checked
-    ;[].forEach.call(form.querySelectorAll('.secondary'), (elem) => {
-        const secondary = elem.querySelector('input')
-        if (secondary.checked && primaryDisabled) {
-            secondary.checked = false
-            secondary.dispatchEvent(createEvent('change'))
+    secondaries.forEach((elem) => {
+        const secondaryInput = elem.querySelector('input')
+        if (secondaryInput.checked && primaryDisabled) {
+            secondaryInput.checked = false
+            secondaryInput.dispatchEvent(createEvent('change'))
         }
-        secondary.disabled = primaryDisabled
+        secondaryInput.disabled = primaryDisabled
         if (primaryDisabled) {
             elem.classList.add('disabled')
         } else {

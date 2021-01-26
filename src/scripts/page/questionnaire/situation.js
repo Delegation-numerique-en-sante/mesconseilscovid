@@ -10,6 +10,7 @@ import geolocalisation from '../../geoloc.js'
 export default function situation(form, app) {
     // Pré-remplir le formulaire avec le profil.
     preloadForm(form, 'departement', app.profil)
+    preloadCheckboxForm(form, 'foyer_autres_personnes', app.profil)
     preloadCheckboxForm(form, 'foyer_enfants', app.profil)
     preloadCheckboxForm(form, 'activite_pro', app.profil)
     preloadCheckboxForm(form, 'activite_pro_sante', app.profil)
@@ -44,11 +45,26 @@ export default function situation(form, app) {
         event.target.blur()
     })
 
+    // Montrer les questions secondaires en cas de foyer autres personnes.
+    const primary_foyer = form.elements['foyer_autres_personnes']
+    const secondaries_foyer = form.querySelectorAll(`#${primary_foyer.id} ~ .secondary`)
+    enableOrDisableSecondaryFields(form, primary_foyer, secondaries_foyer)
+    primary_foyer.addEventListener('click', () =>
+        enableOrDisableSecondaryFields(form, primary_foyer, secondaries_foyer)
+    )
+
     // Montrer les questions secondaires en cas d’activité pro.
-    const primary = form.elements['activite_pro']
-    enableOrDisableSecondaryFields(form, primary)
-    primary.addEventListener('click', () =>
-        enableOrDisableSecondaryFields(form, primary)
+    const primary_activite_pro = form.elements['activite_pro']
+    const secondaries_activite_pro = form.querySelectorAll(
+        `#${primary_activite_pro.id} ~ .secondary`
+    )
+    enableOrDisableSecondaryFields(form, primary_activite_pro, secondaries_activite_pro)
+    primary_activite_pro.addEventListener('click', () =>
+        enableOrDisableSecondaryFields(
+            form,
+            primary_activite_pro,
+            secondaries_activite_pro
+        )
     )
 
     // Bouton de géolocalisation.
@@ -66,6 +82,8 @@ export default function situation(form, app) {
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         app.profil.departement = event.target.elements['departement'].value
+        app.profil.foyer_autres_personnes =
+            event.target.elements['foyer_autres_personnes'].checked
         app.profil.foyer_enfants = event.target.elements['foyer_enfants'].checked
         app.profil.activite_pro = event.target.elements['activite_pro'].checked
         app.profil.activite_pro_sante =

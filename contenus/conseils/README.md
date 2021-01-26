@@ -197,7 +197,7 @@ Le **port du masque est obligatoire** dans les **[lieux publics clos](https://so
 
 
 
-## [conseils_isolement.md](conseils_isolement.md)
+## [conseils_isolement_autres_personnes.md](conseils_isolement_autres_personnes.md)
 
 
 <div class="conseil">
@@ -214,6 +214,12 @@ Le **port du masque est obligatoire** dans les **[lieux publics clos](https://so
 
 </div>
 
+Vous **partagez votre foyer**, nous vous conseillons de ne pas partager vos espaces ou objets avec d’autres personnes :
+
+* restez, si possible, **dans une pièce séparée**, porte fermée ;
+* **ne partagez pas votre lit** ;
+* **prenez vos repas seul**.
+
 Pendant votre **isolement**, nous vous conseillons de :
 
 * vous **laver les mains** très régulièrement ;
@@ -222,12 +228,6 @@ Pendant votre **isolement**, nous vous conseillons de :
 * **laver vos draps et serviettes** de toilette à 60 °C pendant au moins 30 minutes ;
 * privilégier des ustensiles de **ménage qui ne dispersent pas les poussières** comme une éponge ou une serpillière (l’aspirateur est à éviter) ;
 * **jeter** tout ce qui peut-être contaminé **dans un sac poubelle à part**, que vous mettrez dans un second sac poubelle une fois fermé.
-
-Si **vous ne vivez pas seul**, nous vous conseillons de ne pas partager vos espaces ou objets avec d’autres personnes :
-
-* restez, si possible, **dans une pièce séparée**, porte fermée ;
-* **ne partagez pas votre lit** ;
-* **prenez vos repas seul**.
 
 Si **vous devez partager certains espaces ou objets**, assurez-vous de :
 
@@ -240,13 +240,6 @@ Si vous devez **avoir des contacts** avec d’autres personnes :
 * **portez un masque** ;
 * tenez vous éloigné **à plus d’1 mètre** ;
 * limitez vos discussions à **moins de 15 minutes**.
-
-Si vous **vivez seul** :
-
-* demandez à vos proches (ou au magasin / à la pharmacie) **de vous livrer vos courses et médicaments** ;
-* faites déposer le colis sur votre palier pour minimiser les contacts ;
-* **donnez des nouvelles à vos proches** ;
-* si vous avez besoin de soins ou d’aide à domicile, **choisissez une seule personne pour vous aider**, qui devra se laver les mains très régulièrement et porter un masque.
 
 Pour plus d’informations sur l’isolement : [« J’ai les signes de la maladie du COVID-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_test_positif.pdf)
 
@@ -268,6 +261,46 @@ Il est conseillé une levée de l’isolement :
 * et après **48 heures sans fièvre ni gêne respiratoire.**
 
 Si vous respectez ces indications, il n’est **pas nécessaire de réaliser un test pour sortir d’isolement** : le résultat pourrait être positif alors que vous n’êtes plus contagieux.
+
+
+
+## [conseils_isolement_personne_seule.md](conseils_isolement_personne_seule.md)
+
+
+<div class="conseil">
+
+<span class="nouveau">nouveau</span> Pendant votre période d’isolement vous pouvez contacter la cellule d’appui de votre département si vous avez **besoin d’aide** pour :
+
+* vos **démarches administratives** (ouverture de droits, etc.) ;
+* une **aide à domicile** (aide-ménagère, portage de courses, de médicaments, de repas, etc.) ;
+* une **garde d’enfants** ou de personnes vulnérables non autonomes si vous êtes un aidant isolé ;
+* un accès à des services de **communication électronique** ;
+* ou encore un dispositif de **soutien psychologique** à l’isolement.
+
+ℹ️ Si vous ne pouvez pas rester isolé·e chez vous, ces équipes pourront vous aider à trouver un **autre logement** pendant la durée de votre isolement.
+
+</div>
+
+Vous **ne partagez pas votre foyer** avec d’autres personnes :
+
+* demandez à vos proches (ou au magasin / à la pharmacie) **de vous livrer vos courses et médicaments** ;
+* faites déposer le **colis sur votre palier** pour minimiser les contacts ;
+* **donnez des nouvelles à vos proches** ;
+* si vous avez besoin de soins ou d’aide à domicile, **choisissez une seule personne pour vous aider**, qui devra se laver les mains très régulièrement et porter un masque.
+
+Pendant votre **isolement**, nous vous conseillons :
+
+* **d’aérer** au moins 10 minutes plusieurs fois par jour ;
+* **de jeter** tout ce qui peut-être contaminé **dans un sac poubelle à part**, que vous mettrez dans un second sac poubelle une fois fermé.
+
+Si vous devez **avoir des contacts** avec d’autres personnes :
+
+* **portez un masque** ;
+* tenez vous éloigné **à plus d’1 mètre** ;
+* limitez vos discussions à **moins de 15 minutes** ;
+* **nettoyez** les objets et espaces partagés.
+
+Pour plus d’informations sur l’isolement : [« J’ai les signes de la maladie du COVID-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_test_positif.pdf)
 
 
 

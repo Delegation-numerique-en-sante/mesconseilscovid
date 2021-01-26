@@ -235,23 +235,29 @@
                 veuillez saisir un département dans la liste déroulante ci-dessus.
             </p>
             <div>
-                <input id="foyer_enfants" type="checkbox" name="foyer_enfants">
-                <label for="foyer_enfants">
-                    <span>{{ question_foyer_enfants_libellé|me_or_them }}</span>
+                <input id="foyer_autres_personnes" type="checkbox" name="foyer_autres_personnes">
+                <label for="foyer_autres_personnes">
+                    <span>{{ question_foyer_autres_personnes_libellé|me_or_them }}</span>
                 </label>
+                <div class="secondary disabled">
+                    <input id="foyer_enfants" type="checkbox" name="foyer_enfants" disabled>
+                    <label for="foyer_enfants">
+                        <span>{{ question_foyer_enfants_libellé|me_or_them }}</span>
+                    </label>
+                </div>
             </div>
             <div>
                 <input id="activite_pro" type="checkbox" name="activite_pro">
                 <label for="activite_pro">
                     <span>{{ question_activité_pro_libellé|me_or_them }}</span>
                 </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
-                <label for="activite_pro_sante">
-                    <span>{{ question_activité_pro_santé_libellé|me_or_them }}</span>
-                </label>
-                <div class="details">{{ question_activité_pro_santé_aide }}</div>
+                <div class="secondary disabled">
+                    <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
+                    <label for="activite_pro_sante">
+                        <span>{{ question_activité_pro_santé_libellé|me_or_them }}</span>
+                    </label>
+                    <div class="details">{{ question_activité_pro_santé_aide }}</div>
+                </div>
             </div>
         </fieldset>
         <div class="form-controls">
@@ -915,7 +921,12 @@
                         <div id="conseils-isolement-contact-a-risque" class="conseil" hidden>
                             {{ conseils_isolement_contact_a_risque }}
                         </div>
-                        {{ conseils_isolement }}
+                        <div id="conseils-isolement-personne-seule" hidden>
+                            {{ conseils_isolement_personne_seule }}
+                        </div>
+                        <div id="conseils-isolement-autres-personnes" hidden>
+                            {{ conseils_isolement_autres_personnes }}
+                        </div>
                     </details>
                 </div>
 

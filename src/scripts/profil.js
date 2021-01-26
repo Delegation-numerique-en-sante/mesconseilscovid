@@ -83,6 +83,7 @@ export default class Profil {
         this.activite_pro = undefined
         this.activite_pro_sante = undefined
 
+        this.foyer_autres_personnes = undefined
         this.foyer_enfants = undefined
 
         this.age = undefined
@@ -150,6 +151,7 @@ export default class Profil {
         this.activite_pro = data['activite_pro']
         this.activite_pro_sante = data['activite_pro_sante']
 
+        this.foyer_autres_personnes = data['foyer_autres_personnes']
         this.foyer_enfants = data['foyer_enfants']
 
         this.age = data['age']
@@ -302,6 +304,7 @@ export default class Profil {
             departement: '34',
             activite_pro: false,
             activite_pro_sante: false,
+            foyer_autres_personnes: false,
             foyer_enfants: false,
             age: '42',
             grossesse_3e_trimestre: false,
@@ -379,6 +382,7 @@ export default class Profil {
             departement: this.departement,
             activite_pro: this.activite_pro,
             activite_pro_sante: this.activite_pro_sante,
+            foyer_autres_personnes: this.foyer_autres_personnes,
             foyer_enfants: this.foyer_enfants,
             age: this.age,
             grossesse_3e_trimestre: this.grossesse_3e_trimestre,
@@ -437,6 +441,7 @@ export default class Profil {
             typeof this.departement === 'undefined' &&
             typeof this.activite_pro === 'undefined' &&
             typeof this.activite_pro_sante === 'undefined' &&
+            typeof this.foyer_autres_personnes === 'undefined' &&
             typeof this.foyer_enfants === 'undefined' &&
             typeof this.age === 'undefined' &&
             typeof this.grossesse_3e_trimestre === 'undefined' &&
@@ -492,8 +497,10 @@ export default class Profil {
     isSituationComplete() {
         return (
             typeof this.departement !== 'undefined' &&
+            typeof this.foyer_autres_personnes !== 'undefined' &&
             typeof this.foyer_enfants !== 'undefined' &&
-            typeof this.activite_pro !== 'undefined'
+            typeof this.activite_pro !== 'undefined' &&
+            typeof this.activite_pro_sante !== 'undefined'
         )
     }
 

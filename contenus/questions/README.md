@@ -326,6 +326,16 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 
 
+## [question_foyer_autres_personnes_libellé.md](question_foyer_autres_personnes_libellé.md)
+
+<!----><span class="nouveau">nouveau</span> Je partage mon foyer avec <b>d’autres personnes</b>
+
+---
+
+<!----><span class="nouveau">nouveau</span> Cette personne partage son foyer avec <b>d’autres personnes</b>
+
+
+
 ## [question_foyer_enfants_libellé.md](question_foyer_enfants_libellé.md)
 
 <!---->Je vis avec un ou des <b>enfants</b> de moins de 11 ans
