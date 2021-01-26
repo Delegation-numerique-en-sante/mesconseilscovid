@@ -20,7 +20,7 @@ pathtools==0.1.2
 pluggy==0.13.1
 py==1.10.0
 pyparsing==2.4.7
-pytest==6.2.1
+pytest==6.2.2
 regex==2020.11.13
 rfc3986==1.4.0
 six==1.15.0
