@@ -55,8 +55,10 @@ describe('Pagination', function () {
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
+                foyer_autres_personnes: false,
                 foyer_enfants: false,
                 activite_pro: false,
+                activite_pro_sante: false,
             })
             assert.isUndefined(questionnaire.before('situation', profil))
         })
@@ -79,8 +81,10 @@ describe('Pagination', function () {
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
+                foyer_autres_personnes: false,
                 foyer_enfants: false,
                 activite_pro: false,
+                activite_pro_sante: false,
             })
             assert.isUndefined(questionnaire.before('sante', profil))
         })
@@ -91,8 +95,10 @@ describe('Pagination', function () {
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
+                foyer_autres_personnes: false,
                 foyer_enfants: false,
                 activite_pro: false,
+                activite_pro_sante: false,
                 antecedent_cardio: false,
                 antecedent_diabete: false,
                 antecedent_respi: false,
@@ -211,6 +217,7 @@ describe('Pagination', function () {
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
+                foyer_autres_personnes: false,
                 foyer_enfants: false,
                 antecedent_cardio: false,
                 antecedent_diabete: false,
@@ -228,6 +235,7 @@ describe('Pagination', function () {
                 poids: 80,
                 taille: 180,
                 activite_pro: false,
+                activite_pro_sante: false,
             })
             assert.isUndefined(questionnaire.before('conseils', profil))
         })
@@ -284,6 +292,7 @@ describe('Pagination', function () {
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
+                foyer_autres_personnes: false,
                 foyer_enfants: false,
                 antecedent_cardio: false,
                 antecedent_diabete: false,
@@ -310,6 +319,7 @@ describe('Pagination', function () {
                 symptomes_passes: false,
                 contact_a_risque: false,
                 departement: '80',
+                foyer_autres_personnes: false,
                 foyer_enfants: false,
                 antecedent_cardio: false,
                 antecedent_diabete: false,
@@ -327,6 +337,7 @@ describe('Pagination', function () {
                 poids: 80,
                 taille: 180,
                 activite_pro: false,
+                activite_pro_sante: false,
             })
             assert.strictEqual(questionnaire.before('conseils', profil), 'pediatrie')
         })
@@ -338,6 +349,7 @@ describe('Pagination', function () {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
+                foyer_autres_personnes: true,
                 foyer_enfants: true,
                 age: '42',
                 grossesse_3e_trimestre: false,
@@ -382,6 +394,7 @@ describe('Pagination', function () {
             const profil = new Profil('mes_infos', {
                 departement: '34',
                 activite_pro: false,
+                foyer_autres_personnes: true,
                 foyer_enfants: true,
                 age: '42',
                 grossesse_3e_trimestre: false,
@@ -427,6 +440,7 @@ describe('Pagination', function () {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
+                foyer_autres_personnes: true,
                 foyer_enfants: true,
                 age: '42',
                 grossesse_3e_trimestre: false,
@@ -472,6 +486,7 @@ describe('Pagination', function () {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
+                foyer_autres_personnes: true,
                 foyer_enfants: true,
                 age: '42',
                 grossesse_3e_trimestre: false,
@@ -518,6 +533,7 @@ describe('Pagination', function () {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
+                foyer_autres_personnes: true,
                 foyer_enfants: true,
                 age: '42',
                 grossesse_3e_trimestre: false,
@@ -564,6 +580,7 @@ describe('Pagination', function () {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
+                foyer_autres_personnes: true,
                 foyer_enfants: true,
                 age: '42',
                 grossesse_3e_trimestre: false,
@@ -611,6 +628,7 @@ describe('Pagination', function () {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
+                foyer_autres_personnes: true,
                 foyer_enfants: true,
                 age: '42',
                 grossesse_3e_trimestre: false,
@@ -638,6 +656,7 @@ describe('Pagination', function () {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
+                foyer_autres_personnes: true,
                 foyer_enfants: true,
                 age: '42',
                 grossesse_3e_trimestre: false,
@@ -663,6 +682,7 @@ describe('Pagination', function () {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
+                foyer_autres_personnes: true,
                 foyer_enfants: true,
                 age: '42',
                 grossesse_3e_trimestre: false,
@@ -691,6 +711,7 @@ describe('Pagination', function () {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
+                foyer_autres_personnes: true,
                 foyer_enfants: true,
                 age: '42',
                 grossesse_3e_trimestre: false,
@@ -738,6 +759,7 @@ describe('Pagination', function () {
                 departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
+                foyer_autres_personnes: true,
                 foyer_enfants: true,
                 age: '42',
                 grossesse_3e_trimestre: false,

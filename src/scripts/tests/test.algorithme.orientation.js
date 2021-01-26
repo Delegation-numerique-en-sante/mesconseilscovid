@@ -189,8 +189,9 @@ describe('Blocs d’informations additionnels', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
-                'conseils-isolement-depistage-positif',
                 'conseils-isolement',
+                'conseils-isolement-depistage-positif',
+                'conseils-isolement-personne-seule',
             ])
         })
 
@@ -204,8 +205,9 @@ describe('Blocs d’informations additionnels', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
-                'conseils-isolement-contact-a-risque',
                 'conseils-isolement',
+                'conseils-isolement-contact-a-risque',
+                'conseils-isolement-personne-seule',
             ])
         })
 
@@ -218,8 +220,9 @@ describe('Blocs d’informations additionnels', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
-                'conseils-isolement-symptomes',
                 'conseils-isolement',
+                'conseils-isolement-symptomes',
+                'conseils-isolement-personne-seule',
             ])
         })
 
@@ -230,8 +233,23 @@ describe('Blocs d’informations additionnels', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
-                'conseils-isolement-symptomes',
                 'conseils-isolement',
+                'conseils-isolement-symptomes',
+                'conseils-isolement-personne-seule',
+            ])
+        })
+
+        it('Le bloc isolement s’affiche si je ne suis pas seule', function () {
+            const profil = new Profil('mes_infos', {
+                depistage: false,
+                symptomes_passes: true,
+                foyer_autres_personnes: true,
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
+                'conseils-isolement',
+                'conseils-isolement-symptomes',
+                'conseils-isolement-autres-personnes',
             ])
         })
     })

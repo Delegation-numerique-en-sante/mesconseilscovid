@@ -336,6 +336,7 @@ export default class AlgorithmeOrientation {
             (this.profil.depistageEnAttenteRecent() && this.risqueDInfection) ||
             (this.profil.sansDepistage() && this.risqueDInfection)
         ) {
+            blockNames.push('conseils-isolement')
             if (this.profil.depistagePositifRecent()) {
                 blockNames.push('conseils-isolement-depistage-positif')
             } else if (this.profil.hasContactARisqueReconnus()) {
@@ -343,7 +344,11 @@ export default class AlgorithmeOrientation {
             } else if (this.risqueDInfection) {
                 blockNames.push('conseils-isolement-symptomes')
             }
-            blockNames.push('conseils-isolement')
+            if (this.profil.foyer_autres_personnes) {
+                blockNames.push('conseils-isolement-autres-personnes')
+            } else {
+                blockNames.push('conseils-isolement-personne-seule')
+            }
         }
         return blockNames
     }
