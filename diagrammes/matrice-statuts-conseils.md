@@ -12,46 +12,223 @@
     <tbody>
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="185" bgcolor="#EEEEEE" align="center"><b>Symptômes actuels graves</b></td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFDBB6" align="center">statut_symptomatique_urgent.md<br><br>conseils_personnels_symptômes_actuels_positif_critique.md</td>
-            <td style="border: 1px solid black;" colspan="4" valign="middle" bgcolor="#FFDBB6" align="center">statut_symptomatique_urgent.md<br><br>conseils_personnels_symptômes_actuels_sans_depistage_critique.md</td>
-            </tr>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFDBB6" align="center">
+                <a href="../contenus/statuts/statut_symptomatique_urgent.md">
+                    statut_symptomatique_urgent.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_symptômes_actuels_positif_critique.md">
+                    conseils_personnels_symptômes_actuels_positif_critique.md
+                </a>
+            </td>
+            <td style="border: 1px solid black;" colspan="4" valign="middle" bgcolor="#FFDBB6" align="center">
+                <a href="../contenus/statuts/statut_symptomatique_urgent.md">
+                    statut_symptomatique_urgent.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_symptômes_actuels_sans_depistage_critique.md">
+                    conseils_personnels_symptômes_actuels_sans_depistage_critique.md
+                </a>
+            </td>
+        </tr>
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="154" bgcolor="#EEEEEE" align="center"><b>Symptômes actuels (autres)</b></td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">statut_symptomatique_positif.md<br><br>conseils_personnels_depistage_positif_symptomatique.md</td>
-            <td style="border: 1px solid black;" rowspan="2" valign="middle" bgcolor="#FFFFD7" align="center">statut_antigenique_negatif_fragile.md<br><br>conseils_personnels_antigenique_negatif_fragile.md</td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#DDE8CB" align="center">statut_symptomatique_négatif.md<br><br>-</td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">statut_symptomatique_en_attente.md<br><br>conseils_personnels_symptômes_actuels_en_attente.md</td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">statut_symptomatique_sans_test.md<br><br>conseils_personnels_symptômes_actuels_sans_depistage.md</td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_symptomatique_positif.md">
+                    statut_symptomatique_positif.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_depistage_positif_symptomatique.md">
+                    conseils_personnels_depistage_positif_symptomatique.md
+                </a>
+            </td>
+            <td style="border: 1px solid black;" rowspan="2" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_antigenique_negatif_fragile.md">
+                    statut_antigenique_negatif_fragile.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_antigenique_negatif_fragile.md">
+                    conseils_personnels_antigenique_negatif_fragile.md
+                </a>
+            </td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#DDE8CB" align="center">
+                <a href="../contenus/statuts/statut_symptomatique_négatif.md">
+                    statut_symptomatique_négatif.md
+                </a>
+                <br><br>
+                -</td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_symptomatique_en_attente.md">
+                    statut_symptomatique_en_attente.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_symptômes_actuels_en_attente.md">
+                    conseils_personnels_symptômes_actuels_en_attente.md
+                </a>
+            </td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_symptomatique_sans_test.md">
+                    statut_symptomatique_sans_test.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_symptômes_actuels_sans_depistage.md">
+                    conseils_personnels_symptômes_actuels_sans_depistage.md
+                </a>
+            </td>
         </tr>
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="224" bgcolor="#EEEEEE" align="center"><b>Symptômes passés</b></td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">statut_symptomatique_positif.md<br><br>conseils_personnels_symptômes_passés_positif.md</td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#DDE8CB" align="center">statut_personne_fragile.md<br>statut_peu_de_risques.md<br><br>-</td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">statut_symptomatique_en_attente.md<br><br>conseils_personnels_symptômes_passés_en_attente.md</td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">statut_symptomatique_sans_test.md<br><br>conseils_personnels_symptômes_passés_sans_depistage.md</td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_symptomatique_positif.md">
+                    statut_symptomatique_positif.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_symptômes_passés_positif.md">
+                    conseils_personnels_symptômes_passés_positif.md
+                </a>
+            </td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#DDE8CB" align="center">
+                <a href="../contenus/statuts/statut_personne_fragile.md">
+                    statut_personne_fragile.md
+                </a>
+                <br>
+                <a href="../contenus/statuts/statut_peu_de_risques.md">
+                    statut_peu_de_risques.md
+                </a>
+                <br><br>-</td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_symptomatique_en_attente.md">
+                    statut_symptomatique_en_attente.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_symptômes_passés_en_attente.md">
+                    conseils_personnels_symptômes_passés_en_attente.md
+                </a>
+            </td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_symptomatique_sans_test.md">
+                    statut_symptomatique_sans_test.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_symptômes_passés_sans_depistage.md">
+                    conseils_personnels_symptômes_passés_sans_depistage.md
+                </a>
+            </td>
         </tr>
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="190" bgcolor="#EEEEEE" align="center"><b>Contact à risque</b></td>
-            <td style="border: 1px solid black;" rowspan="4" valign="middle" bgcolor="#FFFFD7" align="center">statut_asymptomatique.md<br><br>conseils_personnels_depistage_positif_asymptomatique.md</td>
-            <td style="border: 1px solid black;" colspan="3" valign="middle" bgcolor="#FFFFD7" align="center">statut_contact_a_risque_avec_test.md<br><br>conseils_personnels_contact_à_risque.md</td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">statut_contact_a_risque_sans_test.md<br><br>conseils_personnels_contact_à_risque.md</td>
+            <td style="border: 1px solid black;" rowspan="4" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_asymptomatique.md">
+                    statut_asymptomatique.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_depistage_positif_asymptomatique.md">
+                    conseils_personnels_depistage_positif_asymptomatique.md
+                </a>
+            </td>
+            <td style="border: 1px solid black;" colspan="3" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_contact_a_risque_avec_test.md">
+                    statut_contact_a_risque_avec_test.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_contact_à_risque.md">
+                    conseils_personnels_contact_à_risque.md
+                </a>
+            </td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_contact_a_risque_sans_test.md">
+                    statut_contact_a_risque_sans_test.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_contact_à_risque.md">
+                    conseils_personnels_contact_à_risque.md
+                </a>
+            </td>
         </tr>
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="224" bgcolor="#EEEEEE" align="center"><b>Je vis avec un ou des malades de la Covid</b></td>
-            <td style="border: 1px solid black;" colspan="3" valign="middle" bgcolor="#FFFFD7" align="center">statut_foyer_covid_positif_avec_test.md<br><br>conseils_personnels_foyer_covid_positif_avec_test.md</td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">statut_foyer_covid_positif_sans_test.md<br><br>conseils_personnels_foyer_covid_positif_sans_test.md</td>
+            <td style="border: 1px solid black;" colspan="3" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_foyer_covid_positif_avec_test.md">
+                    statut_foyer_covid_positif_avec_test.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_foyer_covid_positif_avec_test.md">
+                    conseils_personnels_foyer_covid_positif_avec_test.md
+                </a>
+            </td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_foyer_covid_positif_sans_test.md">
+                    statut_foyer_covid_positif_sans_test.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_foyer_covid_positif_sans_test.md">
+                    conseils_personnels_foyer_covid_positif_sans_test.md
+                </a>
+            </td>
         </tr>
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="253" bgcolor="#EEEEEE" align="center"><b>Contact «&nbsp;pas vraiment à risque&nbsp;»</b></td>
-            <td style="border: 1px solid black;" colspan="2" valign="middle" bgcolor="#DDE8CB" align="center">statut_personne_fragile.md<br>statut_peu_de_risques.md<br><br>conseils_personnels_contact_à_risque_autre.md</td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#DDE8CB" align="center">statut_en_attente.md<br><br>conseils_personnels_contact_à_risque_autre.md</td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#DDE8CB" align="center">statut_personne_fragile.md<br>statut_peu_de_risques.md<br><br>conseils_personnels_contact_à_risque_autre.md</td>
+            <td style="border: 1px solid black;" colspan="2" valign="middle" bgcolor="#DDE8CB" align="center">
+                <a href="../contenus/statuts/statut_personne_fragile.md">
+                    statut_personne_fragile.md
+                </a>
+                <br>
+                <a href="../contenus/statuts/statut_peu_de_risques.md">
+                    statut_peu_de_risques.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_contact_à_risque_autre.md">
+                    conseils_personnels_contact_à_risque_autre.md
+                </a>
+            </td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#DDE8CB" align="center">
+                <a href="../contenus/statuts/statut_en_attente.md">
+                    statut_en_attente.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_contact_à_risque_autre.md">
+                    conseils_personnels_contact_à_risque_autre.md
+                </a>
+            </td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#DDE8CB" align="center">
+                <a href="../contenus/statuts/statut_personne_fragile.md">
+                    statut_personne_fragile.md
+                </a>
+                <br>
+                <a href="../contenus/statuts/statut_peu_de_risques.md">
+                    statut_peu_de_risques.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_contact_à_risque_autre.md">
+                    conseils_personnels_contact_à_risque_autre.md
+                </a>
+            </td>
         </tr>
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="249" bgcolor="#EEEEEE" align="center"><b>Rien de tout ça (asymptomatique)</b></td>
-            <td style="border: 1px solid black;" colspan="2" valign="middle" bgcolor="#DDE8CB" align="center">statut_personne_fragile.md<br>statut_peu_de_risques.md<br><br>-</td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#DDE8CB" align="center">statut_en_attente.md<br><br>-</td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#DDE8CB" align="center">statut_personne_fragile.md<br>statut_peu_de_risques.md<br><br>-</td>
+            <td style="border: 1px solid black;" colspan="2" valign="middle" bgcolor="#DDE8CB" align="center">
+                <a href="../contenus/statuts/statut_personne_fragile.md">
+                    statut_personne_fragile.md
+                </a>
+                <br>
+                <a href="../contenus/statuts/statut_peu_de_risques.md">
+                    statut_peu_de_risques.md
+                </a>
+                <br><br>-</td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#DDE8CB" align="center">
+                <a href="../contenus/statuts/statut_en_attente.md">
+                    statut_en_attente.md
+                </a>
+                <br><br>-</td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#DDE8CB" align="center">
+                <a href="../contenus/statuts/statut_personne_fragile.md">
+                    statut_personne_fragile.md
+                </a>
+                <br>
+                <a href="../contenus/statuts/statut_peu_de_risques.md">
+                    statut_peu_de_risques.md
+                </a>
+                <br><br>-</td>
         </tr>
     </tbody>
 </table>
