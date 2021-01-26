@@ -94,6 +94,12 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
 
+      - name: Check diagrammes
+        run: |
+          make check-diagrammes
+        env:
+          PYTHONUNBUFFERED: "1"
+
       - name: Check service-worker
         run: |
           make check-service-worker

@@ -13,8 +13,8 @@
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="185" bgcolor="#EEEEEE" align="center"><b>Symptômes actuels graves</b></td>
             <td style="border: 1px solid black;" valign="middle" bgcolor="#FFDBB6" align="center">
-                <a href="../contenus/statuts/statut_symptomatique_urgent.md">
-                    statut_symptomatique_urgent.md
+                <a href="../contenus/statuts/statut_positif_symptomatique_urgent.md">
+                    statut_positif_symptomatique_urgent.md
                 </a>
                 <br><br>
                 <a href="../contenus/conseils/conseils_personnels_symptômes_actuels_positif_critique.md">
@@ -148,21 +148,21 @@
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="224" bgcolor="#EEEEEE" align="center"><b>Je vis avec un ou des malades de la Covid</b></td>
             <td style="border: 1px solid black;" colspan="3" valign="middle" bgcolor="#FFFFD7" align="center">
-                <a href="../contenus/statuts/statut_foyer_covid_positif_avec_test.md">
-                    statut_foyer_covid_positif_avec_test.md
+                <a href="../contenus/statuts/statut_contact_a_risque_meme_lieu_de_vie.md">
+                    statut_contact_a_risque_meme_lieu_de_vie.md
                 </a>
                 <br><br>
-                <a href="../contenus/conseils/conseils_personnels_foyer_covid_positif_avec_test.md">
-                    conseils_personnels_foyer_covid_positif_avec_test.md
+                <a href="../contenus/conseils/conseils_personnels_contact_à_risque_meme_lieu_de_vie.md">
+                    conseils_personnels_contact_à_risque_meme_lieu_de_vie.md
                 </a>
             </td>
             <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">
-                <a href="../contenus/statuts/statut_foyer_covid_positif_sans_test.md">
-                    statut_foyer_covid_positif_sans_test.md
+                <a href="../contenus/statuts/statut_contact_a_risque_meme_lieu_de_vie_sans_depistage.md">
+                    statut_contact_a_risque_meme_lieu_de_vie_sans_depistage.md
                 </a>
                 <br><br>
-                <a href="../contenus/conseils/conseils_personnels_foyer_covid_positif_sans_test.md">
-                    conseils_personnels_foyer_covid_positif_sans_test.md
+                <a href="../contenus/conseils/conseils_personnels_contact_à_risque_meme_lieu_de_vie_sans_depistage.md">
+                    conseils_personnels_contact_à_risque_meme_lieu_de_vie_sans_depistage.md
                 </a>
             </td>
         </tr>
