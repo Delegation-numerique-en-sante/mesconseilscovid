@@ -499,6 +499,7 @@ describe('Profil', function () {
         assert.isFalse(profil.questionnaire_completed)
         assert.isUndefined(profil.questionnaire_completion_date)
     })
+
     it('Le questionnaire n’est pas commencé après réinitialisation', function () {
         var profil = new Profil('mes_infos')
         profil.questionnaire_started = true
@@ -573,5 +574,29 @@ describe('Profil', function () {
         assert.isTrue(profil.questionnaire_completed)
         assert.instanceOf(profil.questionnaire_completion_date, Date)
         assert.isFalse(profil.depistagePositifRecentAsymptomatique())
+    })
+
+    describe('Migration', function () {
+        it('Je vis avec des enfants', function () {
+            var profil = new Profil('mes_infos')
+            assert.isUndefined(profil.foyer_autres_personnes)
+            assert.isUndefined(profil.foyer_enfants)
+            profil.fillData({
+                foyer_enfants: true,
+            })
+            assert.isTrue(profil.foyer_enfants)
+            assert.isTrue(profil.foyer_autres_personnes)
+        })
+
+        it('Je ne vis pas avec des enfants', function () {
+            var profil = new Profil('mes_infos')
+            assert.isUndefined(profil.foyer_autres_personnes)
+            assert.isUndefined(profil.foyer_enfants)
+            profil.fillData({
+                foyer_enfants: false,
+            })
+            assert.isFalse(profil.foyer_enfants)
+            assert.isFalse(profil.foyer_autres_personnes)
+        })
     })
 })

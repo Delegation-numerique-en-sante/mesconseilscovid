@@ -151,7 +151,12 @@ export default class Profil {
         this.activite_pro = data['activite_pro']
         this.activite_pro_sante = data['activite_pro_sante']
 
-        this.foyer_autres_personnes = data['foyer_autres_personnes']
+        if (typeof data['foyer_autres_personnes'] !== 'undefined') {
+            this.foyer_autres_personnes = data['foyer_autres_personnes']
+        } else {
+            // Migration
+            this.foyer_autres_personnes = data['foyer_enfants']
+        }
         this.foyer_enfants = data['foyer_enfants']
 
         this.age = data['age']
