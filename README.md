@@ -12,7 +12,9 @@ https://mesconseilscovid.sante.gouv.fr/
 
 Les données saisies restent uniquement dans le navigateur et peuvent être supprimées à tout moment. La bibliothèque [localForage](https://github.com/localForage/localForage/) est utilisée pour stocker ces données *localement* et pouvoir y avoir accès à nouveau lors d’une future soumission du questionnaire.
 
-Des données d’utilisation anonymes sont envoyées vers une instance de [Plausible](https://github.com/plausible/analytics#plausible-analytics) pour mesurer les visites et améliorer les parcours utilisateurs.
+Des données d’utilisation anonymes sont envoyées vers :
+* une instance de [Plausible](https://github.com/plausible/analytics#plausible-analytics) pour mesurer les visites et améliorer les parcours utilisateurs ;
+* la plateforme stat@gouv, opérée par AT Internet, pour la mesure d’audience.
 
 ### Source des données permettant de générer les réponses
 
