@@ -6,7 +6,7 @@ https://mesconseilscovid.sante.gouv.fr/
 
 ## Données
 
-### Données personelles
+### Données personnelles
 
 **Aucune donnée n’est envoyée vers un serveur.**
 
