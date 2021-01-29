@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-01-30
+
+* précisions sur les permissions relatives aux entrées/sorties du territoire
+
 ## 2021-01-29
 
 * améliore les conseils relatifs aux foyers (communs vs. individuels)
