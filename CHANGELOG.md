@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-01-29
+
+* améliore les conseils relatifs aux foyers (communs vs. individuels)
+
 ## 2021-01-23
 
 * regroupement des pages liées aux symptômes
