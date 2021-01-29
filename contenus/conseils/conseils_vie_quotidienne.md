@@ -10,8 +10,8 @@ Pour vos **courses**, nous vous conseillons de :
 
 Pour vos **déplacements** :
 
-  * depuis du 15 décembre 2020, les déplacements vers l’étranger sont possibles ;
-  * un test négatif de moins de 72 h est obligatoire pour entrer sur le territoire ;
-  * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Pour mes déplacements » ou « Pour mes voyages à l’étranger »).
+  * <span class="nouveau">nouveau</span> à partir du dimanche 30 janvier, toute entrée en France et toute sortie du territoire à destination ou en provenance d’un pays extérieur à l’Union européenne sera interdite, sauf motif impérieux ;
+  * <span class="nouveau">nouveau</span> à partir du dimanche 30 janvier, toute entrée en France à partir d’un pays de l’Union européenne sera conditionnée à la réalisation d’un test PCR, à l’exception des travailleurs transfrontaliers, tous les déplacements en provenance et en direction des territoires ultramarins seront également soumis à la production de motifs impérieux ;
+  * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Sur mes déplacements et mes voyages »).
 
 Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919">39 19</a> (appel gratuit, de 9 h à 19 h du lundi au samedi) ou le <a href="tel:17">17</a> en cas d’urgence.
