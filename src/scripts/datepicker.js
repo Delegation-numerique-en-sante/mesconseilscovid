@@ -23,7 +23,7 @@ function pad(number) {
     return number
 }
 
-export function addDatePickerPolyfill(field, minDate, maxDate) {
+export function addDatePickerPolyfill(field, maxDate) {
     if (!isDateSupported()) {
         new Pikaday({
             field: field,
@@ -38,7 +38,6 @@ export function addDatePickerPolyfill(field, minDate, maxDate) {
                 const day = parseInt(parts[2], 10)
                 return new Date(year, month, day)
             },
-            minDate: minDate,
             maxDate: maxDate,
             firstDay: 1, // Semaine débute le lundi.
             i18n: {

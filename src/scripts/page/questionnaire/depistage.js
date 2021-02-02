@@ -5,16 +5,13 @@ import {
     preloadCheckboxForm,
     toggleFormButtonOnTextFieldsAndRadioRequired,
 } from '../../formutils.js'
-import { joursAvant } from '../../utils.js'
 
 export default function depistage(form, app) {
     const datePicker = form.querySelector('#depistage_start_date')
-    // Autorise seulement un intervalle de dates (7 derniers jours).
+    // Autorise seulement une date passée.
     const now = new Date()
     datePicker.setAttribute('max', now.toISOString().substring(0, 10))
-    const septJoursAvant = joursAvant(7)
-    datePicker.setAttribute('min', septJoursAvant.toISOString().substring(0, 10))
-    addDatePickerPolyfill(datePicker, septJoursAvant, now)
+    addDatePickerPolyfill(datePicker, now)
 
     // Remplir le formulaire avec les données du profil.
     preloadCheckboxForm(form, 'depistage', app.profil)
