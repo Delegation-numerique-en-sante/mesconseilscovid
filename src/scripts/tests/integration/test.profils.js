@@ -35,7 +35,7 @@ describe('Profils', function () {
         // Légende adaptée.
         {
             let legend = await page.waitForSelector('#page #symptomes-form legend')
-            assert.equal(await legend.innerText(), '1/5 - Son état actuel')
+            assert.equal(await legend.innerText(), 'Son état actuel')
         }
 
         // Remplir le questionnaire.

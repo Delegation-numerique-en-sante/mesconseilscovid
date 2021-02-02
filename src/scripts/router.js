@@ -106,7 +106,7 @@ export function initRouter(app) {
     }
 
     function fillNavigation(element, pageName) {
-        const progress = element.querySelector('legend .progress')
+        const progress = element.querySelector('.progress')
         if (progress) {
             progress.innerText = app.questionnaire.progress(pageName)
         }

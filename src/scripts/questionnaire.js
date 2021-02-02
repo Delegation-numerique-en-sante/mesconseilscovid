@@ -160,7 +160,20 @@ export class Questionnaire {
         const num = this.ordre.indexOf(currentPage) + 1
         if (num === 0) return ''
 
-        return `${num}/${this.total} - `
+        let message
+        const remainingSteps = this.ordre.length - num
+        switch (remainingSteps) {
+            case 0:
+                message = `C’est la dernière étape !`
+                break
+            case 1:
+                message = `Plus qu’une étape !`
+                break
+            default:
+                message = `Il vous reste ${remainingSteps} étapes.`
+        }
+
+        return message
     }
 }
 export default Questionnaire
