@@ -1,5 +1,7 @@
 ## Des conseils personnalisés pour agir contre le virus
 
+<ul id="profils-cards" class="cards"></ul>
+
 <div class="js-intro">
 
 <p class="tagline">

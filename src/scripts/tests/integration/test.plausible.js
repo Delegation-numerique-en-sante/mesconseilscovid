@@ -100,7 +100,9 @@ describe('Plausible', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/#introduction')
-        let bouton = await page.waitForSelector('.js-profil-new >> text="Démarrer"')
+        let bouton = await page.waitForSelector(
+            '.js-profil-new >> text="Faire pour un proche"'
+        )
 
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
 
@@ -209,7 +211,9 @@ describe('Plausible', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/#introduction')
-        let bouton = await page.waitForSelector('.js-profil-new >> text="Démarrer"')
+        let bouton = await page.waitForSelector(
+            '.js-profil-new >> text="Faire pour un proche"'
+        )
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
         await remplirQuestionnaire(page, {
             nom: 'Papy',
