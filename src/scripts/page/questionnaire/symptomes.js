@@ -1,5 +1,5 @@
 import { hideElement, showElement } from '../../affichage.js'
-import { addDatePickerPolyfill, formatDate } from '../../datepicker'
+import { addDatePickerPolyfill } from '../../datepicker'
 import {
     Form,
     createEvent,
@@ -196,7 +196,9 @@ function prefillDateForm(form, profil) {
         } else {
             form.querySelector('#debut_symptomes_encore_avant_hier').checked = true
             let datePicker = form.elements['suivi_symptomes_date_exacte']
-            datePicker.value = formatDate(profil.symptomes_start_date)
+            datePicker.value = profil.symptomes_start_date
+                .toISOString()
+                .substring(0, 10)
         }
     }
 }
@@ -244,13 +246,11 @@ function setupDatePicker(form) {
         form.querySelector('#debut_symptomes_encore_avant_hier').checked = true
     })
 
-    // Autorise seulement un intervalle de dates (30 derniers jours).
+    // Autorise seulement une date dans le passé.
     const now = new Date()
     datePicker.setAttribute('max', now.toISOString().substring(0, 10))
-    const trenteJoursAvant = joursAvant(30)
-    datePicker.setAttribute('min', trenteJoursAvant.toISOString().substring(0, 10))
 
-    addDatePickerPolyfill(datePicker, trenteJoursAvant, now)
+    addDatePickerPolyfill(datePicker, now)
 }
 
 function radioButtonChanged(form, input) {
