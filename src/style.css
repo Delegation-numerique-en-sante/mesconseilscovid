@@ -856,6 +856,21 @@ select {
     min-height: 36px;
 }
 
+.button-with-progress {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 2rem;
+}
+.button-with-progress .progress {
+    font-size: 0.9rem;
+    color: #484d7a;
+    padding-top: 0.2rem;
+}
+.button-with-progress .button {
+    margin-top: 0.5rem;
+}
+
 a.button:focus,
 input[type='text']:focus,
 input[type='date']:focus,
