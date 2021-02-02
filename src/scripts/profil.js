@@ -538,7 +538,13 @@ export default class Profil {
     }
 
     isDepistageComplete() {
-        return typeof this.depistage !== 'undefined'
+        if (typeof this.depistage === 'undefined') {
+            return false
+        }
+        if (this.depistage === true) {
+            return typeof this._depistage_start_date !== 'undefined'
+        }
+        return true
     }
 
     isComplete() {

@@ -19,9 +19,11 @@ export default function depistage(form, app) {
     // Remplir le formulaire avec les données du profil.
     preloadCheckboxForm(form, 'depistage', app.profil)
     if (app.profil.depistage) {
-        datePicker.value = app.profil.depistage_start_date
-            .toISOString()
-            .substring(0, 10)
+        if (typeof app.profil.depistage_start_date !== 'undefined') {
+            datePicker.value = app.profil.depistage_start_date
+                .toISOString()
+                .substring(0, 10)
+        }
 
         if (app.profil.depistage_type === 'antigenique') {
             form.querySelector('#depistage_type_antigenique').checked = true
