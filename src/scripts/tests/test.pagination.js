@@ -751,6 +751,7 @@ describe('Pagination', function () {
                 depistage: true,
                 depistage_type: 'rt-pcr',
                 depistage_resultat: 'positif',
+                _depistage_start_date: new Date().toJSON(),
             })
             assert.isUndefined(beforeSuiviSymptomes(profil, questionnaire))
         })
@@ -799,6 +800,7 @@ describe('Pagination', function () {
                 depistage: true,
                 depistage_type: 'rt-pcr',
                 depistage_resultat: 'positif',
+                _depistage_start_date: new Date().toJSON(),
             })
             assert.isUndefined(beforeSuiviHistorique(profil, questionnaire))
         })
