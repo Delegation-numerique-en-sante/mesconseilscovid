@@ -14,12 +14,6 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector('text="Démarrer"')
-            assert.equal(
-                await bouton.evaluate(
-                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
-                ),
-                'Pour moi'
-            )
             await Promise.all([
                 bouton.click(),
                 page.waitForNavigation({ url: '**/#symptomes' }),

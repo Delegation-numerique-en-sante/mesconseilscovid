@@ -14,14 +14,11 @@ export default function introduction(element, app) {
         if (noms.indexOf('mes_infos') === -1) {
             const card = container.appendChild(
                 createElementFromHTML(`
-                    <li class="profil-card card">
-                        <h3><span class="nouveau-profil">Pour moi</span></h3>
-                        <div class="form-controls">
-                            <a class="button button-full-width"
-                                data-set-profil="mes_infos"
-                                href="#${app.questionnaire.firstPage}"
-                                >Démarrer</a>
-                        </div>
+                    <li class="profil-empty">
+                        <a class="button button-full-width"
+                            data-set-profil="mes_infos"
+                            href="#${app.questionnaire.firstPage}"
+                            >Démarrer</a>
                     </li>
                 `)
             )
@@ -29,13 +26,10 @@ export default function introduction(element, app) {
         }
         container.appendChild(
             createElementFromHTML(`
-                <li class="profil-card card">
-                    <h3><span class="nouveau-profil">Pour un proche</span></h3>
-                    <div class="form-controls">
-                        <a class="button button-full-width js-profil-new"
-                            href="#nom"
-                            >Démarrer</a>
-                    </div>
+                <li class="profil-empty">
+                    <a class="button button-full-width button-outline js-profil-new"
+                        href="#nom"
+                        >Faire pour un proche</a>
                 </li>
             `)
         )

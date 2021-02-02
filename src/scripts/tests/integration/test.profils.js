@@ -13,12 +13,8 @@ describe('Profils', function () {
 
         // Page d’accueil.
         {
-            let bouton = await page.waitForSelector('.js-profil-new >> text="Démarrer"')
-            assert.equal(
-                await bouton.evaluate(
-                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
-                ),
-                'Pour un proche'
+            let bouton = await page.waitForSelector(
+                '.js-profil-new >> text="Faire pour un proche"'
             )
             await Promise.all([
                 bouton.click(),

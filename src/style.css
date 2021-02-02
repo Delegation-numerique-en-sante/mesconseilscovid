@@ -172,6 +172,10 @@ a .profil {
 .introduction-block {
     text-align: center;
 }
+.introduction-block h2 {
+    margin: 1rem auto;
+    padding-top: 1rem;
+}
 .introduction-block p {
     margin-left: auto;
     margin-right: auto;
@@ -191,9 +195,9 @@ a .profil {
 
 @media only screen and (max-width: 680px) {
     .introduction-block h2 {
-        font-size: 175%;
-        padding-top: 1rem;
-        margin-bottom: 2rem;
+        font-size: 170%;
+        padding-top: 0.5rem;
+        margin: 0.5rem auto 1.5rem;
     }
     .introduction-block .tagline {
         font-size: 125%;
@@ -211,6 +215,7 @@ a .profil {
     flex-flow: row wrap;
     justify-content: center;
     list-style-type: none;
+    align-items: center;
 }
 .block ul.cards {
     padding: 0;
@@ -239,6 +244,29 @@ a .profil {
 .break {
     flex-basis: 100%;
     height: 0;
+}
+.profil-empty {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.profil-empty a.button {
+    max-width: 18rem;
+    margin: auto;
+}
+.profil-empty a.button-outline {
+    font-weight: normal;
+}
+.cards > li {
+    margin-top: 1rem;
+}
+@media only screen and (min-width: 680px) {
+    .cards .card:first-child {
+        margin-bottom: 1rem;
+    }
+    .profil-empty {
+        width: 50%;
+    }
 }
 
 main footer .feedback-block {
