@@ -44,18 +44,17 @@ export default class AlgorithmeOrientation {
     }
 
     _situationDepistage() {
-        if (this.profil.depistage) {
-            if (
-                this.profil.depistage_type === 'antigenique' &&
-                this.profil.depistage_resultat === 'negatif' &&
-                this.personneFragile
-            ) {
-                return 'antigenique_negatif_fragile'
-            } else {
-                return this.profil.depistage_resultat
-            }
-        } else {
+        if (!this.profil.depistage || this.profil.depistageNegatifObsolete()) {
             return 'pas_teste'
+        }
+        if (
+            this.profil.depistage_type === 'antigenique' &&
+            this.profil.depistage_resultat === 'negatif' &&
+            this.personneFragile
+        ) {
+            return 'antigenique_negatif_fragile'
+        } else {
+            return this.profil.depistage_resultat
         }
     }
 
