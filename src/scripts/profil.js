@@ -1,6 +1,6 @@
 import { format } from 'timeago.js'
 
-import { joursAvant, joursApres } from './utils.js'
+import { differenceEnJours, joursAvant } from './utils.js'
 import { createElementFromHTML, safeHtml } from './affichage.js'
 import AlgorithmeSuivi from './algorithme/suivi.js'
 
@@ -615,19 +615,20 @@ export default class Profil {
         )
     }
 
-    depistageRecent() {
-        // TODISCUSS: reset depistage data if false?
-        const delta = 7
-        const now = new Date()
-        const finDeValidite = joursApres(delta, this.depistage_start_date)
-        return now <= finDeValidite
+    joursEcoulesDepuisDepistage() {
+        if (typeof this.depistage_start_date === 'undefined') {
+            return undefined
+        }
+        const res = differenceEnJours(this.depistage_start_date, new Date())
+        return res
     }
 
     depistagePositifRecent() {
         return (
             this.depistage === true &&
             this.depistage_resultat === 'positif' &&
-            this.depistageRecent()
+            typeof this.depistage_start_date !== 'undefined' &&
+            this.joursEcoulesDepuisDepistage() < 7
         )
     }
 
@@ -635,7 +636,8 @@ export default class Profil {
         return (
             this.depistage === true &&
             this.depistage_resultat === 'negatif' &&
-            this.depistageRecent()
+            typeof this.depistage_start_date !== 'undefined' &&
+            this.joursEcoulesDepuisDepistage() < 7
         )
     }
 
@@ -643,7 +645,8 @@ export default class Profil {
         return (
             this.depistage === true &&
             this.depistage_resultat === 'negatif' &&
-            !this.depistageRecent()
+            typeof this.depistage_start_date !== 'undefined' &&
+            this.joursEcoulesDepuisDepistage() >= 7
         )
     }
 
@@ -651,7 +654,8 @@ export default class Profil {
         return (
             this.depistage === true &&
             this.depistage_resultat === 'en_attente' &&
-            this.depistageRecent()
+            typeof this.depistage_start_date !== 'undefined' &&
+            this.joursEcoulesDepuisDepistage() < 7
         )
     }
 

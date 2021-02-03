@@ -18,6 +18,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 symptomes_actuels_douleurs: true,
                 depistage: true,
                 depistage_resultat: 'en_attente',
+                _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [])
@@ -28,6 +29,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 symptomes_passes: true,
                 depistage: true,
                 depistage_resultat: 'en_attente',
+                _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [])
@@ -60,6 +62,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 symptomes_actuels_douleurs: true,
                 depistage: true,
                 depistage_resultat: 'positif',
+                _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
@@ -72,6 +75,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 symptomes_passes: true,
                 depistage: true,
                 depistage_resultat: 'positif',
+                _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
@@ -87,6 +91,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 contact_a_risque_contact_direct: true,
                 depistage: true,
                 depistage_resultat: 'positif',
+                _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
@@ -100,6 +105,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 contact_a_risque_meme_lieu_de_vie: true,
                 depistage: true,
                 depistage_resultat: 'positif',
+                _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
@@ -113,6 +119,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 contact_a_risque_autre: true,
                 depistage: true,
                 depistage_resultat: 'positif',
+                _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
@@ -124,6 +131,7 @@ describe('Frise chronologique sur l’isolement', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
                 depistage_resultat: 'positif',
+                _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
@@ -139,6 +147,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 contact_a_risque_meme_lieu_de_vie: true,
                 depistage: true,
                 depistage_resultat: 'negatif',
+                _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
@@ -152,6 +161,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 contact_a_risque_meme_lieu_de_vie: true,
                 depistage: true,
                 depistage_resultat: 'en_attente',
+                _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
@@ -186,6 +196,7 @@ describe('Blocs d’informations additionnels', function () {
                 depistage: true,
                 depistage_type: 'rt-pcr',
                 depistage_resultat: 'positif',
+                _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
@@ -200,6 +211,7 @@ describe('Blocs d’informations additionnels', function () {
                 depistage: true,
                 depistage_type: 'rt-pcr',
                 depistage_resultat: 'negatif',
+                _depistage_start_date: new Date().toJSON(),
                 contact_a_risque: true,
                 contact_a_risque_meme_lieu_de_vie: true,
             })
@@ -216,6 +228,7 @@ describe('Blocs d’informations additionnels', function () {
                 depistage: true,
                 depistage_type: 'rt-pcr',
                 depistage_resultat: 'en_attente',
+                _depistage_start_date: new Date().toJSON(),
                 symptomes_passes: true,
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
@@ -268,6 +281,7 @@ describe('Blocs d’informations additionnels', function () {
                 depistage: true,
                 depistage_type: 'antigenique',
                 depistage_resultat: 'negatif',
+                _depistage_start_date: new Date().toJSON(),
                 symptomes_passes: true,
                 age: 70,
             })
@@ -282,6 +296,7 @@ describe('Blocs d’informations additionnels', function () {
                 depistage: true,
                 depistage_type: 'rt-pcr',
                 depistage_resultat: 'en_attente',
+                _depistage_start_date: new Date().toJSON(),
             })
             var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
             assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [
@@ -294,6 +309,7 @@ describe('Blocs d’informations additionnels', function () {
                 depistage: true,
                 depistage_type: 'rt-pcr',
                 depistage_resultat: 'positif',
+                _depistage_start_date: new Date().toJSON(),
             })
             var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
             assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [])
@@ -303,6 +319,7 @@ describe('Blocs d’informations additionnels', function () {
                 depistage: true,
                 depistage_type: 'rt-pcr',
                 depistage_resultat: 'negatif',
+                _depistage_start_date: new Date().toJSON(),
             })
             var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
             assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [])
@@ -681,6 +698,7 @@ describe('Blocs d’informations additionnels', function () {
                 symptomes_actuels_temperature: true,
                 depistage: true,
                 depistage_resultat: 'en_attente',
+                _depistage_start_date: new Date().toJSON(),
             })
             var algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
