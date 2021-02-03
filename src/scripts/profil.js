@@ -4,6 +4,10 @@ import { differenceEnJours, joursAvant } from './utils.js'
 import { createElementFromHTML, safeHtml } from './affichage.js'
 import AlgorithmeSuivi from './algorithme/suivi.js'
 
+const JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF = 7
+const JOURS_DE_VALIDITE_DEPISTAGE_POSITIF = 7
+const JOURS_DE_VALIDITE_DEPISTAGE_EN_ATTENTE = 7
+
 export default class Profil {
     constructor(nom, data) {
         this.nom = nom
@@ -628,7 +632,7 @@ export default class Profil {
             this.depistage === true &&
             this.depistage_resultat === 'positif' &&
             typeof this.depistage_start_date !== 'undefined' &&
-            this.joursEcoulesDepuisDepistage() < 7
+            this.joursEcoulesDepuisDepistage() < JOURS_DE_VALIDITE_DEPISTAGE_POSITIF
         )
     }
 
@@ -637,7 +641,7 @@ export default class Profil {
             this.depistage === true &&
             this.depistage_resultat === 'negatif' &&
             typeof this.depistage_start_date !== 'undefined' &&
-            this.joursEcoulesDepuisDepistage() < 7
+            this.joursEcoulesDepuisDepistage() < JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF
         )
     }
 
@@ -646,7 +650,7 @@ export default class Profil {
             this.depistage === true &&
             this.depistage_resultat === 'negatif' &&
             typeof this.depistage_start_date !== 'undefined' &&
-            this.joursEcoulesDepuisDepistage() >= 7
+            this.joursEcoulesDepuisDepistage() >= JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF
         )
     }
 
@@ -655,7 +659,7 @@ export default class Profil {
             this.depistage === true &&
             this.depistage_resultat === 'en_attente' &&
             typeof this.depistage_start_date !== 'undefined' &&
-            this.joursEcoulesDepuisDepistage() < 7
+            this.joursEcoulesDepuisDepistage() < JOURS_DE_VALIDITE_DEPISTAGE_EN_ATTENTE
         )
     }
 
