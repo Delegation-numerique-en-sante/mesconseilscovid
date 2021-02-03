@@ -88,9 +88,22 @@ header h1 a {
 header h1 a:hover {
     border: 2px solid black;
 }
+header h1 a #logo-carre {
+    width: 50px;
+    height: 50px;
+}
+header h1 a #logo-titre {
+    width: 64px;
+    height: 29px;
+}
+
 @media only screen and (min-width: 680px) {
     header h1 a {
         flex-direction: row;
+    }
+    header h1 a #logo-carre {
+        width: 75px;
+        height: 75px;
     }
     header h1 a #logo-titre {
         width: 100px;
@@ -105,10 +118,11 @@ header #js-profil-full-header {
 }
 main {
     background-color: #f9f8f6;
-    padding: 18px 0 48px 0;
+    padding: 1px 0 48px 0;
 }
 @media only screen and (min-width: 680px) {
     main {
+        padding-top: 18px;
         padding-left: 15px;
         padding-right: 15px;
     }
