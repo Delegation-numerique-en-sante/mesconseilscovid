@@ -576,6 +576,7 @@ describe('Algorithme déconfinement', function () {
                 depistage: true,
                 depistage_type: 'rt-pcr',
                 depistage_resultat: 'en_attente',
+                _depistage_start_date: new Date().toJSON(),
                 suivi: [
                     {
                         date: new Date().toJSON(),
