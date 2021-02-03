@@ -44,19 +44,19 @@ export default class AlgorithmeOrientation {
     }
 
     _situationDepistage() {
-        let depistage = 'pas_teste'
         if (this.profil.depistage) {
             if (
                 this.profil.depistage_type === 'antigenique' &&
                 this.profil.depistage_resultat === 'negatif' &&
                 this.personneFragile
             ) {
-                depistage = 'antigenique_negatif_fragile'
+                return 'antigenique_negatif_fragile'
             } else {
-                depistage = this.profil.depistage_resultat
+                return this.profil.depistage_resultat
             }
+        } else {
+            return 'pas_teste'
         }
-        return depistage
     }
 
     _situationSymptomes() {
