@@ -40,6 +40,10 @@ export default class AlgorithmeOrientation {
 
     get situation() {
         if (!this.profil.isComplete()) return ''
+        return this._situationDepistage() + '_' + this._situationSymptomes()
+    }
+
+    _situationDepistage() {
         let depistage = 'pas_teste'
         if (this.profil.depistage) {
             if (
@@ -52,6 +56,10 @@ export default class AlgorithmeOrientation {
                 depistage = this.profil.depistage_resultat
             }
         }
+        return depistage
+    }
+
+    _situationSymptomes() {
         let symptomes
         if (this.profil.hasSymptomesActuelsReconnus()) {
             symptomes = 'symptomes_actuels'
@@ -71,7 +79,7 @@ export default class AlgorithmeOrientation {
         } else {
             symptomes = 'asymptomatique'
         }
-        return `${depistage}_${symptomes}`
+        return symptomes
     }
 
     get sup65() {
