@@ -4,6 +4,7 @@ import { itParam } from 'mocha-param'
 import { createProfil } from './helpers.js'
 
 import AlgorithmeOrientation from '../algorithme/orientation.js'
+import { joursAvant } from '../utils.js'
 
 // On parcourt tous les cas possibles par colonnes.
 const matrice = [
@@ -541,6 +542,144 @@ const matrice = [
     {
         description: 'Pas testé et rien de tout ça + personne fragile',
         profil: {
+            age: 70,
+        },
+        situation: 'pas_teste_asymptomatique',
+        statut: 'personne-fragile',
+        conseils: null,
+    },
+    {
+        description: 'Test négatif obsolète et symptômes actuels graves',
+        profil: {
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: joursAvant(7),
+            symptomes_actuels: true,
+            symptomes_actuels_souffle: true,
+        },
+        situation: 'pas_teste_symptomes_actuels_graves',
+        statut: 'symptomatique-urgent',
+        conseils: 'symptomes-actuels-sans-depistage-critique',
+    },
+    {
+        description: 'Test négatif obsolète et symptômes actuels',
+        profil: {
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: joursAvant(7),
+            symptomes_actuels: true,
+            symptomes_actuels_diarrhee: true,
+        },
+        situation: 'pas_teste_symptomes_actuels',
+        statut: 'symptomatique-sans-test',
+        conseils: 'symptomes-actuels-sans-depistage',
+    },
+    {
+        description: 'Test négatif obsolète et symptômes passés',
+        profil: {
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: joursAvant(7),
+            symptomes_passes: true,
+        },
+        situation: 'pas_teste_symptomes_passes',
+        statut: 'symptomatique-sans-test',
+        conseils: 'symptomes-passes-sans-depistage',
+    },
+    {
+        description: 'Test négatif obsolète et contact à risque',
+        profil: {
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: joursAvant(7),
+            contact_a_risque: true,
+            contact_a_risque_contact_direct: true,
+        },
+        situation: 'pas_teste_contact_a_risque',
+        statut: 'contact-a-risque-sans-test',
+        conseils: 'contact-a-risque',
+    },
+    {
+        description: 'Test négatif obsolète et contact à risque même lieu de vie',
+        profil: {
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: joursAvant(7),
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie: true,
+        },
+        situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie',
+        statut: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
+        conseils: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
+    },
+    {
+        description: 'Test négatif obsolète et contact pas vraiment à risque',
+        profil: {
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: joursAvant(7),
+            contact_a_risque: true,
+            contact_a_risque_autre: true,
+        },
+        situation: 'pas_teste_contact_pas_vraiment_a_risque',
+        statut: 'peu-de-risques',
+        conseils: 'contact-a-risque-autre',
+    },
+    {
+        description:
+            'Test négatif obsolète et contact pas vraiment à risque + personne fragile',
+        profil: {
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: joursAvant(7),
+            contact_a_risque: true,
+            contact_a_risque_autre: true,
+            age: 70,
+        },
+        situation: 'pas_teste_contact_pas_vraiment_a_risque',
+        statut: 'personne-fragile',
+        conseils: 'contact-a-risque-autre',
+    },
+    {
+        description: 'Test négatif obsolète et contact pas vraiment à risque',
+        profil: {
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: joursAvant(7),
+            contact_a_risque: true,
+            contact_a_risque_autre: true,
+        },
+        situation: 'pas_teste_contact_pas_vraiment_a_risque',
+        statut: 'peu-de-risques',
+        conseils: 'contact-a-risque-autre',
+    },
+    {
+        description: 'Test négatif obsolète et rien de tout ça',
+        profil: {
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: joursAvant(7),
+        },
+        situation: 'pas_teste_asymptomatique',
+        statut: 'peu-de-risques',
+        conseils: null,
+    },
+    {
+        description: 'Test négatif obsolète et rien de tout ça + personne fragile',
+        profil: {
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: joursAvant(8),
             age: 70,
         },
         situation: 'pas_teste_asymptomatique',

@@ -639,6 +639,14 @@ export default class Profil {
         )
     }
 
+    depistageNegatifObsolete() {
+        return (
+            this.depistage === true &&
+            this.depistage_resultat === 'negatif' &&
+            !this.depistageRecent()
+        )
+    }
+
     depistageEnAttenteRecent() {
         return (
             this.depistage === true &&
