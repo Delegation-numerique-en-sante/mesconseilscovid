@@ -647,7 +647,7 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_contact_à_risque_libellé.md](question_symptômes_contact_à_risque_libellé.md)
 
-<!---->J’ai passé du temps avec une personne <b>positive</b> à la Covid, <b>sans protection*</b>, dans les <b>7&nbsp;derniers&nbsp;jours.</b>
+<!---->J’ai passé du temps avec une personne <b>positive</b> à la Covid, <b>sans protection</b>, dans les <b>7&nbsp;derniers&nbsp;jours.</b>
 
 ---
 
@@ -748,5 +748,4 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 ---
 
 <!---->Cette personne a-t-elle des signes de la Covid ?
-
 
