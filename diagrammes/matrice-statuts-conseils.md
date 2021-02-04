@@ -2,11 +2,11 @@
     <thead>
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="94" bgcolor="#DEE6EF" align="center"><b><br></b></td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>TA ou RT-PCR<br>Positif</b></td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>TA Négatif<br>(personne fragile)</b></td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>RT-PCR Négatif<br>TA Négatif<br>(non fragile)</b></td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Test antigénique ou test RT-PCR<br>positif<br>de moins de 14 jours</b></td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Test antigénique négatif<br>(personne fragile)<br>de moins de 7 jours</b></td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Test RT-PCR négatif,<br>ou test antigénique négatif<br>(personne non fragile),<br>de moins de 7 jours</b></td>
             <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>En attente</b></td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Pas testé</b></td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Pas testé<br>(ou test trop ancien)</b></td>
         </tr>
     </thead>
     <tbody>
