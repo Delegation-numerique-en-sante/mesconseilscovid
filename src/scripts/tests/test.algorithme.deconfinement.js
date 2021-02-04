@@ -565,7 +565,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.depistage_start_date = heuresAvant(1, joursAvant(7))
+            profil.depistage_start_date = heuresAvant(1, joursAvant(14))
             profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
