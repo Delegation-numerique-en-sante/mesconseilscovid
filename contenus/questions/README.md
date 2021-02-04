@@ -278,11 +278,11 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 ## [question_dépistage_libellé.md](question_dépistage_libellé.md)
 
-<!---->J’ai passé un <b>test Covid</b> (prélèvement nasal) dans les 7 derniers jours.
+<!---->J’ai passé un <b>test Covid</b> (prélèvement nasal) dans les derniers jours.
 
 ---
 
-<!---->Cette personne a passé un <b>test Covid</b> (prélèvement nasal) dans les 7 derniers jours.
+<!---->Cette personne a passé un <b>test Covid</b> (prélèvement nasal) dans les derniers jours.
 
 
 
