@@ -1,4 +1,4 @@
-<!---->J’ai passé du temps avec une personne <b>positive</b> à la Covid, <b>sans protection*</b>, dans les <b>7&nbsp;derniers&nbsp;jours.</b>
+<!---->J’ai passé du temps avec une personne <b>positive</b> à la Covid, <b>sans protection</b>, dans les <b>7&nbsp;derniers&nbsp;jours.</b>
 
 ---
 
