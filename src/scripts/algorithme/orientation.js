@@ -44,7 +44,11 @@ export default class AlgorithmeOrientation {
     }
 
     _situationDepistage() {
-        if (!this.profil.depistage || this.profil.depistageNegatifObsolete()) {
+        if (
+            !this.profil.depistage ||
+            this.profil.depistageNegatifObsolete() ||
+            this.profil.depistagePositifObsolete()
+        ) {
             return 'pas_teste'
         }
         if (

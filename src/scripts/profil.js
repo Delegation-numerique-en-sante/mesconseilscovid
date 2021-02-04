@@ -5,7 +5,7 @@ import { createElementFromHTML, safeHtml } from './affichage.js'
 import AlgorithmeSuivi from './algorithme/suivi.js'
 
 const JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF = 7
-const JOURS_DE_VALIDITE_DEPISTAGE_POSITIF = 7
+const JOURS_DE_VALIDITE_DEPISTAGE_POSITIF = 14
 const JOURS_DE_VALIDITE_DEPISTAGE_EN_ATTENTE = 7
 
 export default class Profil {
@@ -633,6 +633,15 @@ export default class Profil {
             this.depistage_resultat === 'positif' &&
             typeof this.depistage_start_date !== 'undefined' &&
             this.joursEcoulesDepuisDepistage() < JOURS_DE_VALIDITE_DEPISTAGE_POSITIF
+        )
+    }
+
+    depistagePositifObsolete() {
+        return (
+            this.depistage === true &&
+            this.depistage_resultat === 'positif' &&
+            typeof this.depistage_start_date !== 'undefined' &&
+            this.joursEcoulesDepuisDepistage() >= JOURS_DE_VALIDITE_DEPISTAGE_POSITIF
         )
     }
 
