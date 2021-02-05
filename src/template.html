@@ -112,7 +112,10 @@
 <section id="situation" hidden>
     <form id="situation-form" class="block">
         <fieldset>
-            <legend><span class="progress"></span>{{ question_résidence_titre|me_or_them }}</legend>
+            <legend>
+                <progress value="3" max="4.3">Étape 4 / 5</progress>
+                {{ question_résidence_titre|me_or_them }}
+            </legend>
             <div class="row">
                 <label for="departement">{{ question_résidence_libellé|me_or_them }}</label>
                 <div class="dpt-container">
@@ -269,7 +272,10 @@
 <section id="sante" hidden>
     <form id="sante-form" class="block">
         <fieldset>
-            <legend><span class="progress"></span>{{ question_caractéristiques_titre|me_or_them }}</legend>
+            <legend>
+                <progress value="4" max="4.3">Étape 5 / 5</progress>
+                {{ question_caractéristiques_titre|me_or_them }}
+            </legend>
             <div class="details">{{ question_caractéristiques_aide }}</div>
             <ul class="no-list-style">
                 <li class="row">
@@ -399,7 +405,11 @@
 <section id="symptomes" hidden>
     <form id="symptomes-form" class="block">
         <fieldset>
-            <legend><span class="progress"></span>{{ question_symptômes_titre|me_or_them }}</legend>
+            <legend>
+                <progress value="0.3" max="4.3">Étape 1 / 5</progress>
+
+                {{ question_symptômes_titre|me_or_them }}
+            </legend>
             <h3 id="symptomes-label">{{ question_symptômes_titre_ouinon|me_or_them }}</h3>
             <div role="radiogroup" aria-labelledby="symptomes-label">
                 <input id="symptomes_actuels" type="radio" required name="symptomes_actuels_statuts">
@@ -511,7 +521,10 @@
 <section id="depistage" hidden>
     <form id="depistage-form" class="block">
         <fieldset>
-            <legend><span class="progress"></span>{{ question_dépistage_titre|me_or_them }}</legend>
+            <legend>
+                <progress value="2" max="4.3">Étape 3 / 5</progress>
+                {{ question_dépistage_titre|me_or_them }}
+            </legend>
             <div>
                 <input id="depistage_checkbox" type="checkbox" name="depistage">
                 <label for="depistage_checkbox">
@@ -568,7 +581,10 @@
 <section id="contactarisque" hidden>
     <form id="contact-a-risque-form" class="block">
         <fieldset>
-            <legend><span class="progress"></span>{{ question_symptômes_contact_à_risque_titre|me_or_them }}</legend>
+            <legend>
+                <progress value="1" max="4.3">Étape 2 / 5</progress>
+                {{ question_symptômes_contact_à_risque_titre|me_or_them }}
+            </legend>
             <div>
                 <input id="contact_a_risque" type="checkbox" name="contact_a_risque">
                 <label for="contact_a_risque">
