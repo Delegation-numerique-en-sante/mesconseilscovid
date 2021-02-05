@@ -721,5 +721,15 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-couvre-feu-18h',
             ])
         })
+        it('À Mayotte, c’est le confinement', function () {
+            var profil = new Profil('mes_infos', {
+                departement: '976',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+                'conseils-confinement',
+            ])
+        })
     })
 })
