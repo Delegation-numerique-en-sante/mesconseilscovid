@@ -8,7 +8,7 @@ Vous **vivez seul·e** :
 Si vous devez **avoir des contacts** avec d’autres personnes :
 
 * **portez un masque** ;
-* tenez vous éloigné **à plus d’1 mètre** ;
+* tenez vous éloigné **à plus de 2 mètres** ;
 * limitez vos discussions à **moins de 15 minutes** ;
 * **nettoyez** les objets et espaces partagés.
 
