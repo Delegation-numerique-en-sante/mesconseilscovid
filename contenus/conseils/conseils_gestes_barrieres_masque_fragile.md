@@ -1,5 +1,5 @@
 * Afin d’éviter une forme grave de Covid, il vous est recommandé d’appliquer les mesures de **distanciation physique renforcée** :
-  * appliquez strictement [les mesures barrières](https://www.gouvernement.fr/sites/default/files/coronavirus_mesures_barrieres_nouveau.pdf),
+  * appliquez strictement [les mesures barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf),
   * gardez une distance de **plus de 2 mètres** avec chaque personne,
   * portez le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile,
   * **réduisez vos sorties** au strict minimum.

@@ -155,7 +155,7 @@ Vous pouvez consultez notre page dédiée sur les [« conseils liés aux activi
 ## [conseils_gestes_barrieres_masque_fragile.md](conseils_gestes_barrieres_masque_fragile.md)
 
 * Afin d’éviter une forme grave de Covid, il vous est recommandé d’appliquer les mesures de **distanciation physique renforcée** :
-  * appliquez strictement [les mesures barrières](https://www.gouvernement.fr/sites/default/files/coronavirus_mesures_barrieres_nouveau.pdf),
+  * appliquez strictement [les mesures barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf),
   * gardez une distance de **plus de 2 mètres** avec chaque personne,
   * portez le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile,
   * **réduisez vos sorties** au strict minimum.
@@ -178,7 +178,7 @@ Le **port du masque est obligatoire** dans les **[lieux publics clos](https://so
 </div>
 
 * Les mesures de **distanciation physique** :
-  * appliquer strictement [les mesures barrières](https://www.gouvernement.fr/sites/default/files/coronavirus_mesures_barrieres_nouveau.pdf),
+  * appliquer strictement [les mesures barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf),
   * garder une distance de **plus de 2 mètres** avec chaque personne.
 * Le port du **masque** :
   * [Quel est le niveau de protection entre deux personnes ?](https://www.gouvernement.fr/info-coronavirus/masques-grand-public#les_informations_essentielles)
