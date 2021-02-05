@@ -1,5 +1,15 @@
 # Changelog
 
+## 2021-02-05
+
+* augmente la distance interindividuelle de 1m à 2m
+* ajoute le reconfinement à Mayotte
+* demande la date du test si elle n’a pas été fournie précédemment
+* autorise la saisie de dates sans limite minimale
+* considère un résultat de test comme obsolète au bout de 7 jours en cas de résultat négatif, ou 14 jours en cas de résultat positif
+* clarifie le libellé de certaines questions
+* rend les boutons de la page d’accueil plus visibles sur mobile
+
 ## 2021-01-30
 
 * précisions sur les permissions relatives aux entrées/sorties du territoire
