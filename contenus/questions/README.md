@@ -601,11 +601,11 @@ Coiffeur, aide à domicile, soins d’esthétique, soins infirmiers…
 
 ## [question_symptômes_contact_à_risque_aide.md](question_symptômes_contact_à_risque_aide.md)
 
-<!---->*Le contact est considéré « sans protection » si vous étiez à moins d’1 mètre et que l’un·e de vous ne portait pas de masque.
+<!----><sup>*</sup> Le contact est considéré « sans protection » si vous étiez à moins d’1 mètre et que l’un·e de vous ne portait pas de masque.
 
 ---
 
-<!---->*Le contact est considéré « sans protection » si les personnes étaient à moins d’1 mètre et que l’une d’elles ne portait pas de masque.
+<!----><sup>*</sup> Le contact est considéré « sans protection » si les personnes étaient à moins d’1 mètre et que l’une d’elles ne portait pas de masque.
 
 
 
@@ -647,12 +647,11 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_contact_à_risque_libellé.md](question_symptômes_contact_à_risque_libellé.md)
 
-<!---->J’ai passé du temps avec une personne <b>positive</b> à la Covid, <b>sans protection</b>, dans les <b>7&nbsp;derniers&nbsp;jours.</b>
+<!---->J’ai passé du temps avec une personne <b>positive</b> à la Covid, <b>sans protection</b><sup>*</sup>, dans les <b>7&nbsp;derniers&nbsp;jours.</b>
 
 ---
 
-<!---->Il ou elle a passé du temps avec une personne <b>positive</b> à la Covid, <b>sans protection*</b>, dans les <b>7&nbsp;derniers&nbsp;jours.</b>
-
+<!---->Il ou elle a passé du temps avec une personne <b>positive</b> à la Covid, <b>sans protection</b><sup>*</sup>, dans les <b>7&nbsp;derniers&nbsp;jours.</b>
 
 
 ## [question_symptômes_contact_à_risque_même_classe_libellé.md](question_symptômes_contact_à_risque_même_classe_libellé.md)
@@ -748,4 +747,5 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 ---
 
 <!---->Cette personne a-t-elle des signes de la Covid ?
+
 
