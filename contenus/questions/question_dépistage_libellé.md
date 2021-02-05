@@ -1,5 +1,5 @@
-<!---->J’ai passé un <b>test Covid</b> (prélèvement nasal) dans les derniers jours.
+<!---->J’ai passé un <b>test Covid</b> (prélèvement nasal) dans les 2 dernières semaines.
 
 ---
 
-<!---->Cette personne a passé un <b>test Covid</b> (prélèvement nasal) dans les derniers jours.
+<!---->Cette personne a passé un <b>test Covid</b> (prélèvement nasal) dans les 2 dernières semaines.
