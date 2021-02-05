@@ -156,7 +156,7 @@ Vous pouvez consultez notre page dédiée sur les [« conseils liés aux activi
 
 * Afin d’éviter une forme grave de Covid, il vous est recommandé d’appliquer les mesures de **distanciation physique renforcée** :
   * appliquez strictement [les mesures barrières](https://www.gouvernement.fr/sites/default/files/coronavirus_mesures_barrieres_nouveau.pdf),
-  * gardez une distance de **plus d’1 mètre** avec chaque personne,
+  * gardez une distance de **plus de 2 mètres** avec chaque personne,
   * portez le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile,
   * **réduisez vos sorties** au strict minimum.
 * Le port du **masque** :
@@ -179,7 +179,7 @@ Le **port du masque est obligatoire** dans les **[lieux publics clos](https://so
 
 * Les mesures de **distanciation physique** :
   * appliquer strictement [les mesures barrières](https://www.gouvernement.fr/sites/default/files/coronavirus_mesures_barrieres_nouveau.pdf),
-  * garder une distance de **plus d’1 mètre** avec chaque personne.
+  * garder une distance de **plus de 2 mètres** avec chaque personne.
 * Le port du **masque** :
   * [Quel est le niveau de protection entre deux personnes ?](https://www.gouvernement.fr/info-coronavirus/masques-grand-public#les_informations_essentielles)
   * [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
@@ -214,7 +214,7 @@ Si **vous devez partager certains espaces ou objets**, assurez-vous de :
 Si vous devez **avoir des contacts** avec d’autres personnes :
 
 * **portez un masque** ;
-* tenez vous éloigné **à plus d’1 mètre** ;
+* tenez vous éloigné **à plus de 2 mètres** ;
 * limitez vos discussions à **moins de 15 minutes**.
 
 Pendant votre **isolement**, nous vous conseillons de :
@@ -279,7 +279,7 @@ Vous **vivez seul·e** :
 Si vous devez **avoir des contacts** avec d’autres personnes :
 
 * **portez un masque** ;
-* tenez vous éloigné **à plus d’1 mètre** ;
+* tenez vous éloigné **à plus de 2 mètres** ;
 * limitez vos discussions à **moins de 15 minutes** ;
 * **nettoyez** les objets et espaces partagés.
 

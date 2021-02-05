@@ -627,11 +627,11 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_contact_à_risque_contact_direct_libellé.md](question_symptômes_contact_à_risque_contact_direct_libellé.md)
 
-<!---->J’ai eu un contact physique ou rapproché avec cette personne, en face à face, à moins d’1 mètre (ex. conversation, repas, flirt, accolades, embrassades)
+<!---->J’ai eu un contact physique ou rapproché avec cette personne, en face à face, à moins de 2 mètres (ex. conversation, repas, flirt, accolades, embrassades)
 
 ---
 
-<!---->Il ou elle a eu un contact physique ou rapproché avec cette personne, en face à face, à moins d’1 mètre (ex. conversation, repas, flirt, accolades, embrassades)
+<!---->Il ou elle a eu un contact physique ou rapproché avec cette personne, en face à face, à moins de 2 mètres (ex. conversation, repas, flirt, accolades, embrassades)
 
 
 
