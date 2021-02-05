@@ -5,7 +5,7 @@ Le **port du masque est obligatoire** dans les **[lieux publics clos](https://so
 </div>
 
 * Les mesures de **distanciation physique** :
-  * appliquer strictement [les mesures barrières](https://www.gouvernement.fr/sites/default/files/coronavirus_mesures_barrieres_nouveau.pdf),
+  * appliquer strictement [les mesures barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf),
   * garder une distance de **plus de 2 mètres** avec chaque personne.
 * Le port du **masque** :
   * [Quel est le niveau de protection entre deux personnes ?](https://www.gouvernement.fr/info-coronavirus/masques-grand-public#les_informations_essentielles)
