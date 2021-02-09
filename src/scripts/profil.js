@@ -135,6 +135,7 @@ export default class Profil {
         this.depistage = undefined
         this.depistage_type = undefined
         this.depistage_resultat = undefined
+        this.depistage_variante = undefined
         this._depistage_start_date = undefined
 
         this.suivi_active = false
@@ -208,6 +209,7 @@ export default class Profil {
         this.depistage = data['depistage']
         this.depistage_type = data['depistage_type']
         this.depistage_resultat = data['depistage_resultat']
+        this.depistage_variante = data['depistage_variante']
         this._depistage_start_date = data['_depistage_start_date']
 
         this._suivi_start_date = data['_suivi_start_date']
@@ -310,6 +312,7 @@ export default class Profil {
             depistage: false,
             depistage_type: '',
             depistage_resultat: '',
+            depistage_variante: '',
             departement: '34',
             activite_pro: false,
             activite_pro_sante: false,
@@ -432,6 +435,7 @@ export default class Profil {
             depistage: this.depistage,
             depistage_type: this.depistage_type,
             depistage_resultat: this.depistage_resultat,
+            depistage_variante: this.depistage_variante,
             _depistage_start_date: this._depistage_start_date,
             suivi_active: this.suivi_active,
             _suivi_start_date: this._suivi_start_date,
