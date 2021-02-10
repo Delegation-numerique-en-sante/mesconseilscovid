@@ -16,6 +16,12 @@ Vous êtes **porteur de la Covid** sans symptômes, il est important de **vous i
 
 
 
+## [statut_asymptomatique_variante_d_interet.md](statut_asymptomatique_variante_d_interet.md)
+
+Vous êtes **porteur de la Covid** sans symptômes, il est important de **vous isoler** afin de ne pas contaminer d’autres personnes.
+
+
+
 ## [statut_contact_a_risque_avec_test.md](statut_contact_a_risque_avec_test.md)
 
 Restez **en isolement** et **refaites un test** 7 jours après votre dernier contact à risque.
@@ -79,6 +85,12 @@ Vous n’êtes **pas porteur** de la Covid. Contactez votre médecin généralis
 ## [statut_symptomatique_positif.md](statut_symptomatique_positif.md)
 
 Maintenez-vous **en isolement** au moins 7 jours après le début des symptômes.
+
+
+
+## [statut_symptomatique_positif_variante_d_interet.md](statut_symptomatique_positif_variante_d_interet.md)
+
+Maintenez-vous **en isolement** au moins 10 jours après le début des symptômes, puis faites un **test de contrôle**.
 
 
 

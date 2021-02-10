@@ -2,7 +2,8 @@
     <thead>
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="94" bgcolor="#DEE6EF" align="center"><b><br></b></td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Test antigénique ou test RT-PCR<br>positif<br>de moins de 14 jours</b></td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Test RT-PCR positif<br>(variante V2 ou V3)</b><br>de moins de 14 jours</td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Test antigénique ou RT-PCR positif<br>(autre variante)</b><br>de moins de 14 jours</td>
             <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Test antigénique négatif<br>(personne fragile)<br>de moins de 7 jours</b></td>
             <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Test RT-PCR négatif,<br>ou test antigénique négatif<br>(personne non fragile),<br>de moins de 7 jours</b></td>
             <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>En attente</b></td>
@@ -12,7 +13,7 @@
     <tbody>
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="185" bgcolor="#EEEEEE" align="center"><b>Symptômes actuels graves</b></td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFDBB6" align="center">
+            <td style="border: 1px solid black;" colspan="2" valign="middle" bgcolor="#FFDBB6" align="center">
                 <a href="../contenus/statuts/statut_positif_symptomatique_urgent.md">
                     statut_positif_symptomatique_urgent.md
                 </a>
@@ -33,6 +34,15 @@
         </tr>
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="154" bgcolor="#EEEEEE" align="center"><b>Symptômes actuels (autres)</b></td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_symptomatique_positif_variante_d_interet.md">
+                    statut_symptomatique_positif_variante_d_interet.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_depistage_positif_variante_d_interet_symptomatique.md">
+                    conseils_personnels_depistage_positif_variante_d_interet_symptomatique.md
+                </a>
+            </td>
             <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">
                 <a href="../contenus/statuts/statut_symptomatique_positif.md">
                     statut_symptomatique_positif.md
@@ -79,6 +89,15 @@
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="224" bgcolor="#EEEEEE" align="center"><b>Symptômes passés</b></td>
             <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_symptomatique_positif_variante_d_interet.md">
+                    statut_symptomatique_positif_variante_d_interet.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_symptômes_passés_positif_variante_d_interet.md">
+                    conseils_personnels_symptômes_passés_positif_variante_d_interet.md
+                </a>
+            </td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#FFFFD7" align="center">
                 <a href="../contenus/statuts/statut_symptomatique_positif.md">
                     statut_symptomatique_positif.md
                 </a>
@@ -117,6 +136,15 @@
         </tr>
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="190" bgcolor="#EEEEEE" align="center"><b>Contact à risque</b></td>
+            <td style="border: 1px solid black;" rowspan="4" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_asymptomatique_variante_d_interet.md">
+                    statut_asymptomatique_variante_d_interet.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_depistage_positif_variante_d_interet_asymptomatique.md">
+                    conseils_personnels_depistage_positif_variante_d_interet_asymptomatique.md
+                </a>
+            </td>
             <td style="border: 1px solid black;" rowspan="4" valign="middle" bgcolor="#FFFFD7" align="center">
                 <a href="../contenus/statuts/statut_asymptomatique.md">
                     statut_asymptomatique.md
