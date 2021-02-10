@@ -626,6 +626,7 @@ main footer .legals {
     text-align: center;
 }
 .statut-asymptomatique,
+.statut-asymptomatique-variante-d-interet,
 .statut-contact-a-risque-meme-lieu-de-vie,
 .statut-contact-a-risque-meme-lieu-de-vie-sans-depistage,
 .statut-contact-a-risque-avec-test,
@@ -633,6 +634,7 @@ main footer .legals {
 .statut-positif-symptomatique-urgent,
 .statut-symptomatique-en-attente,
 .statut-symptomatique-positif,
+.statut-symptomatique-positif-variante-d-interet,
 .statut-symptomatique-sans-test,
 .statut-symptomatique-urgent,
 .statut-antigenique-negatif-fragile,

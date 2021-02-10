@@ -403,6 +403,34 @@ Nous vous conseillons de :
 
 
 
+## [conseils_personnels_depistage_positif_variante_d_interet_asymptomatique.md](conseils_personnels_depistage_positif_variante_d_interet_asymptomatique.md)
+
+Nous vous conseillons de :
+
+1. Vous maintenir **en isolement**, au moins 10 jours à partir de la date du test.
+2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://www.sante.fr/cf/centres-depistage-covid.html) immédiatement.
+3. Après 10 jours, et en l’absence de fièvre ou de gêne respiratoire **depuis plus de 48h**, faire un **test de contrôle** en laboratoire : s’il est négatif, vous pourrez lever votre isolement.
+4. Si vous constatez l’apparition de **symptômes**, vous pouvez suivre leur évolution avec le [questionnaire de suivi](#suivisymptomes).
+5. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. Des outils, comme par exemple l’outil [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées et des lieux que vous avez fréquentés depuis le début de votre période contagieuse.
+6. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
+7. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+
+
+
+## [conseils_personnels_depistage_positif_variante_d_interet_symptomatique.md](conseils_personnels_depistage_positif_variante_d_interet_symptomatique.md)
+
+Nous vous conseillons de :
+
+1. Vous maintenir **en isolement**, au moins 10 jours à partir de la date d’apparition des symptômes, et de contacter votre médecin au moindre doute.
+3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://www.sante.fr/cf/centres-depistage-covid.html) immédiatement.
+3. Après 10 jours, et en l’absence de fièvre ou de gêne respiratoire **depuis plus de 48h**, faire un **test de contrôle** en laboratoire : s’il est négatif, vous pourrez lever votre isolement.
+4. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
+5. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
+6. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
+7. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+
+
+
 ## [conseils_personnels_symptômes_actuels_en_attente.md](conseils_personnels_symptômes_actuels_en_attente.md)
 
 Nous vous conseillons de :
@@ -479,6 +507,21 @@ Nous vous conseillons de :
 3. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 4. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+
+Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
+
+
+
+## [conseils_personnels_symptômes_passés_positif_variante_d_interet.md](conseils_personnels_symptômes_passés_positif_variante_d_interet.md)
+
+Nous vous conseillons de :
+
+1. Vous maintenir **en isolement** au moins 10 jours à partir de la date d’apparition des symptômes.
+2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://www.sante.fr/cf/centres-depistage-covid.html) immédiatement.
+3. Après 10 jours, et en l’absence de fièvre ou de gêne respiratoire **depuis plus de 48h**, faire un **test de contrôle** en laboratoire : s’il est négatif, vous pourrez lever votre isolement.
+4. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
+5. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
+6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7qvSw).
 
