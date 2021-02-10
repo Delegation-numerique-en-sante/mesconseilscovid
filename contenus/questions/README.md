@@ -344,18 +344,12 @@ Le laboratoire, votre médecin, ou l’assurance maladie, vous ont peut-être in
 
 ## [question_dépistage_variante_v1_libellé.md](question_dépistage_variante_v1_libellé.md)
 
-<!----><code>20I/501Y.V1</code> : variante dite « britannique »
+<!----><code>20I/501Y.V1</code> (« <i>britannique</i> »)
 
 
-## [question_dépistage_variante_v2_libellé.md](question_dépistage_variante_v2_libellé.md)
+## [question_dépistage_variante_v2_ou_v3_libellé.md](question_dépistage_variante_v2_ou_v3_libellé.md)
 
-<!----><code>20H/501Y.V2</code> : variante dite « sud-africaine »
-
-
-
-## [question_dépistage_variante_v3_libellé.md](question_dépistage_variante_v3_libellé.md)
-
-<!----><code>20J/501Y.V3</code> : variante dite « brésilienne »
+<!----><code>20H/501Y.V2</code> (« <i>sud-africaine</i> ») ou <code>20J/501Y.V3</code>  (« <i>brésilienne</i> »)
 
 
 

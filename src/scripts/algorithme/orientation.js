@@ -41,6 +41,7 @@ const VARIANTES_D_INTERET = {
     '20I/501Y.V1': false, // variante dite « britannique »
     '20H/501Y.V2': true, // variante dite « sud-africaine »
     '20J/501Y.V3': true, // variante dite « brésilienne »
+    '20H/501Y.V2_ou_20J/501Y.V3': true, // l’une ou l’autre
 }
 
 export default class AlgorithmeOrientation {

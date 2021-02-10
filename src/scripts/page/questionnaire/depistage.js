@@ -42,10 +42,8 @@ export default function depistage(form, app) {
             showVariante(varianteRadio)
             if (app.profil.depistage_variante === '20I/501Y.V1') {
                 form.querySelector('#depistage_variante_v1').checked = true
-            } else if (app.profil.depistage_variante === '20H/501Y.V2') {
-                form.querySelector('#depistage_variante_v2').checked = true
-            } else if (app.profil.depistage_variante === '20J/501Y.V3') {
-                form.querySelector('#depistage_variante_v3').checked = true
+            } else if (app.profil.depistage_variante === '20H/501Y.V2_ou_20J/501Y.V3') {
+                form.querySelector('#depistage_variante_v2_ou_v3').checked = true
             } else {
                 form.querySelector('#depistage_variante_autre').checked = true
             }
