@@ -326,9 +326,14 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 
 
+## [question_dépistage_variante_aide.md](question_dépistage_variante_aide.md)
+
+Le laboratoire, votre médecin, ou l’assurance maladie, vous ont peut-être indiqué la variante du virus détectée. Sinon, vous pourrez revenir compléter cette information plus tard.
+
+
 ## [question_dépistage_variante_autre_libellé.md](question_dépistage_variante_autre_libellé.md)
 
-<!---->autre variante, ou variante inconnue
+<!---->autre variante, ou variante non communiquée
 
 
 ## [question_dépistage_variante_libellé.md](question_dépistage_variante_libellé.md)
