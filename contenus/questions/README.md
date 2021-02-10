@@ -326,6 +326,34 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 
 
+## [question_dépistage_variante_autre_libellé.md](question_dépistage_variante_autre_libellé.md)
+
+<!---->autre variante, ou variante inconnue
+
+
+## [question_dépistage_variante_libellé.md](question_dépistage_variante_libellé.md)
+
+<!---->La variante détectée par le test
+
+
+
+## [question_dépistage_variante_v1_libellé.md](question_dépistage_variante_v1_libellé.md)
+
+<!----><code>20I/501Y.V1</code> : variante dite « britannique »
+
+
+## [question_dépistage_variante_v2_libellé.md](question_dépistage_variante_v2_libellé.md)
+
+<!----><code>20H/501Y.V2</code> : variante dite « sud-africaine »
+
+
+
+## [question_dépistage_variante_v3_libellé.md](question_dépistage_variante_v3_libellé.md)
+
+<!----><code>20J/501Y.V3</code> : variante dite « brésilienne »
+
+
+
 ## [question_foyer_autres_personnes_libellé.md](question_foyer_autres_personnes_libellé.md)
 
 <!---->Je partage mon foyer avec <b>d’autres personnes</b> <span class="nouveau">nouveau</span>

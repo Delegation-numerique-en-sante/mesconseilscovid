@@ -557,6 +557,22 @@
                     <label for="depistage_resultat_en_attente"><span>{{ question_dépistage_attente_libellé|me_or_them }}</span></label>
                 </div>
             </div>
+
+            <div id="depistage-variante" class="secondary disabled" hidden>
+                <div id="depistage-variante-label" class="secondary-title">
+                    {{ question_dépistage_variante_libellé }}
+                </div>
+                <div role="radiogroup" aria-labelledby="depistage-variante-label">
+                    <input id="depistage_variante_v1" type="radio" name="depistage_variante" value="20I/501Y.V1">
+                    <label for="depistage_variante_v1"><span>{{ question_dépistage_variante_v1_libellé }}</span></label>
+                    <input id="depistage_variante_v2" type="radio" name="depistage_variante" value="20H/501Y.V2">
+                    <label for="depistage_variante_v2"><span>{{ question_dépistage_variante_v2_libellé }}</span></label>
+                    <input id="depistage_variante_v3" type="radio" name="depistage_variante" value="20J/501Y.V3">
+                    <label for="depistage_variante_v3"><span>{{ question_dépistage_variante_v3_libellé }}</span></label>
+                    <input id="depistage_variante_autre" type="radio" name="depistage_variante" value="autre">
+                    <label for="depistage_variante_autre"><span>{{ question_dépistage_variante_autre_libellé|me_or_them }}</span></label>
+                </div>
+            </div>
         </fieldset>
         <div class="form-controls">
             <input type="submit" class="button" value="Continuer">
