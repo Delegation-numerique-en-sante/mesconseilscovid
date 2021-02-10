@@ -47,7 +47,8 @@ export async function remplirQuestionnaire(page, choix) {
         choix.depistage,
         choix.depistageDate,
         choix.depistageType,
-        choix.depistageResultat
+        choix.depistageResultat,
+        choix.depistageVariante
     )
     await remplirSituation(page, choix.departement, choix.enfants, choix.activitePro)
     await remplirSante(
@@ -117,7 +118,7 @@ async function remplirSante(page, age, taille, poids, antecedents) {
     ])
 }
 
-async function remplirDepistage(page, depistage, date, type, resultat) {
+async function remplirDepistage(page, depistage, date, type, resultat, variante) {
     let text
 
     if (depistage) {
@@ -135,6 +136,13 @@ async function remplirDepistage(page, depistage, date, type, resultat) {
             `#page label[for="depistage_resultat_${resultat}"]`
         )
         await resultat_label.click()
+
+        if (resultat === 'positif') {
+            let variante_label = await page.waitForSelector(
+                `#page label[for="depistage_variante_${variante}"]`
+            )
+            await variante_label.click()
+        }
 
         // Keep it at the end otherwise Safari from CI will not be able
         // to escape Pikaday and be stuck on that form.

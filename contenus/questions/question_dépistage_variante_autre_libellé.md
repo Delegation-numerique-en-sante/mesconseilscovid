@@ -1,0 +1,1 @@
+<!---->autre variante, ou variante inconnue

@@ -209,7 +209,6 @@ export function toggleFormButtonOnTextFieldsAndRadioRequired(
     const button = form.submitButton
     const textFields = form.textFields
     const checkbox = form.checkbox
-    const secondariesRequired = form.secondariesRequired
     const radios = form.radios
 
     function updateSubmitButtonLabelRequired() {
@@ -219,8 +218,11 @@ export function toggleFormButtonOnTextFieldsAndRadioRequired(
         button.value = checkbox.checked ? continueLabel : uncheckedLabel
 
         if (checkbox.checked) {
-            const hasAllRequiredRadioChecks = secondariesRequired.every((secondary) =>
-                someChecked(Array.from(secondary.querySelectorAll('input[type=radio]')))
+            const hasAllRequiredRadioChecks = form.secondariesRequired.every(
+                (secondary) =>
+                    someChecked(
+                        Array.from(secondary.querySelectorAll('input[type=radio]'))
+                    )
             )
             if (!hasAllRequiredRadioChecks || !allFilled) {
                 button.disabled = true
@@ -255,6 +257,8 @@ export function toggleFormButtonOnTextFieldsAndRadioRequired(
     }
     updateToggleOnCheckbox()
     checkbox.addEventListener('change', updateToggleOnCheckbox)
+
+    return updateSubmitButtonLabelRequired
 }
 
 export function toggleFormButtonOnSelectFieldsRequired(
