@@ -38,7 +38,10 @@ export default function depistage(form, app) {
         }
 
         const varianteRadio = form.querySelector('#depistage-variante')
-        if (app.profil.depistage_resultat === 'positif') {
+        if (
+            app.profil.depistage_type === 'rt-pcr' &&
+            app.profil.depistage_resultat === 'positif'
+        ) {
             showVariante(varianteRadio)
             if (app.profil.depistage_variante === '20I/501Y.V1') {
                 form.querySelector('#depistage_variante_v1').checked = true
@@ -72,15 +75,18 @@ export default function depistage(form, app) {
         requiredLabel
     )
 
-    // La variante n’est demandée que si le test est positif
+    // La variante n’est demandée que si le test est RT-PCR et positif
     // eslint-disable-next-line no-extra-semi
     ;[].forEach.call(
-        form.querySelectorAll('input[name="depistage_resultat"]'),
+        form.querySelectorAll(
+            'input[name="depistage_type"],input[name="depistage_resultat"]'
+        ),
         (elem) => {
             elem.addEventListener('change', function () {
-                const value = getRadioValue(form, 'depistage_resultat')
+                const type = getRadioValue(form, 'depistage_type')
+                const resultat = getRadioValue(form, 'depistage_resultat')
                 const varianteRadio = form.querySelector('#depistage-variante')
-                if (value === 'positif') {
+                if (type === 'rt-pcr' && resultat === 'positif') {
                     showVariante(varianteRadio)
                 } else {
                     hideVariante(varianteRadio)
@@ -101,7 +107,10 @@ export default function depistage(form, app) {
             )
             app.profil.depistage_type = getRadioValue(form, 'depistage_type')
             app.profil.depistage_resultat = getRadioValue(form, 'depistage_resultat')
-            if (app.profil.depistage_resultat === 'positif') {
+            if (
+                app.profil.depistage_type === 'rt-pcr' &&
+                app.profil.depistage_resultat === 'positif'
+            ) {
                 app.profil.depistage_variante = getRadioValue(
                     form,
                     'depistage_variante'
