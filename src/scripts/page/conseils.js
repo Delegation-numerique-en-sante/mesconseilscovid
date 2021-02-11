@@ -194,10 +194,10 @@ export function dynamicDataInjection(element, profil, algoOrientation) {
         injection.antecedents(elem, algoOrientation)
     })
 
-    dynamicTimelineDataInjection(element, profil)
+    dynamicTimelineDataInjection(element, profil, algoOrientation)
 }
 
-function dynamicTimelineDataInjection(element, profil) {
+function dynamicTimelineDataInjection(element, profil, algoOrientation) {
     function formatDate(date) {
         if (typeof date === 'undefined') {
             return ''
@@ -233,6 +233,12 @@ function dynamicTimelineDataInjection(element, profil) {
         fillDate('fin', `À partir du ${formatDate(dates.finIsolement)}`)
     }
 
+    function fillDuration(dureeIsolement) {
+        element.querySelector('.duree-isolement').innerText = dureeIsolement
+    }
+
+    const dureeIsolement = algoOrientation.varianteDInteret() ? 10 : 7
+
     // Frise n°1 : positif + symptômes actuels ou passés.
     if (profil.depistagePositifRecentSymptomatique()) {
         // Injecte les bonnes dates dans la frise.
@@ -243,7 +249,7 @@ function dynamicTimelineDataInjection(element, profil) {
                 profil.symptomes_start_date
             )} (<a href="#symptomes">modifier</a>)`,
             demain: joursApres(1, new Date()),
-            finIsolement: joursApres(7, profil.symptomes_start_date),
+            finIsolement: joursApres(dureeIsolement, profil.symptomes_start_date),
         })
 
         // Si les symptômes ont commencé aujourd’hui, on propose le suivi demain.
@@ -276,8 +282,9 @@ function dynamicTimelineDataInjection(element, profil) {
                 profil.depistage_start_date
             )} (<a href="#depistage">modifier</a>)`,
             demain: joursApres(1, new Date()),
-            finIsolement: joursApres(7, profil.depistage_start_date),
+            finIsolement: joursApres(dureeIsolement, profil.depistage_start_date),
         })
+        fillDuration(dureeIsolement)
     }
 }
 

@@ -71,12 +71,16 @@ export default class AlgorithmeOrientation {
         } else {
             if (
                 this.profil.depistage_resultat === 'positif' &&
-                VARIANTES_D_INTERET[this.profil.depistage_variante]
+                this.varianteDInteret()
             ) {
                 return 'positif_variante_d_interet'
             }
             return this.profil.depistage_resultat
         }
+    }
+
+    varianteDInteret() {
+        return VARIANTES_D_INTERET[this.profil.depistage_variante]
     }
 
     _situationSymptomes() {
