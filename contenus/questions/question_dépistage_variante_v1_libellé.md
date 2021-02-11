@@ -1,1 +1,1 @@
-<!----><code>20I/501Y.V1</code> (« <i>britannique</i> »)
+<!---->Variante <code>20I/501Y.V1</code> (« <i>britannique</i> »)
