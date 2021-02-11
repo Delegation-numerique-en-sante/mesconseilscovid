@@ -353,9 +353,25 @@ export default class AlgorithmeOrientation {
                 this.profil.hasSymptomesActuelsReconnus() ||
                 this.profil.symptomes_passes
             ) {
-                blockNames.push('conseils-timeline-isolement-positif-avec-symptomes')
+                if (this.varianteDInteret()) {
+                    blockNames.push(
+                        'conseils-timeline-isolement-positif-variante-avec-symptomes'
+                    )
+                } else {
+                    blockNames.push(
+                        'conseils-timeline-isolement-positif-avec-symptomes'
+                    )
+                }
             } else {
-                blockNames.push('conseils-timeline-isolement-positif-sans-symptomes')
+                if (this.varianteDInteret()) {
+                    blockNames.push(
+                        'conseils-timeline-isolement-positif-variante-sans-symptomes'
+                    )
+                } else {
+                    blockNames.push(
+                        'conseils-timeline-isolement-positif-sans-symptomes'
+                    )
+                }
             }
         } else if (
             this.profil.hasContactARisqueReconnus() &&

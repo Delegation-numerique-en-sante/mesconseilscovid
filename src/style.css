@@ -518,7 +518,7 @@ main footer .legals {
 .timeline-content {
     margin-left: 1rem;
     position: relative;
-    min-width: 245px;
+    min-width: 260px;
 }
 .timeline-content::before {
     content: '';
@@ -590,6 +590,17 @@ main footer .legals {
 .timeline-fin .timeline-content .timeline-texte {
     background: #e0fff9;
     border-color: #00ac8c;
+}
+
+.timeline-fin-positif .timeline-icon {
+    border-color: #fe6f4c;
+}
+.timeline-fin-positif .timeline-content::before {
+    background: #fe6f4c;
+}
+.timeline-fin-positif .timeline-content .timeline-texte {
+    border-color: #fe6f4c;
+    background: #ffe7e1;
 }
 
 .conseils {

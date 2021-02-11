@@ -55,8 +55,8 @@ describe('Frise chronologique sur l’isolement', function () {
         })
     })
 
-    describe('Frise dynamique n°1 : positif avec symptômes', function () {
-        it('La frise n°1 s’affiche avec symptômes actuels et dépistage positif', function () {
+    describe('Frise dynamique n°1A : positif avec symptômes', function () {
+        it('La frise n°1A s’affiche avec symptômes actuels et dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_douleurs: true,
@@ -70,7 +70,7 @@ describe('Frise chronologique sur l’isolement', function () {
             ])
         })
 
-        it('La frise n°1 s’affiche avec symptômes passés et dépistage positif', function () {
+        it('La frise n°1A s’affiche avec symptômes passés et dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_passes: true,
                 depistage: true,
@@ -84,8 +84,39 @@ describe('Frise chronologique sur l’isolement', function () {
         })
     })
 
-    describe('Frise dynamique n°2 : positif sans symptômes', function () {
-        it('La frise n°2 s’affiche avec contact à risque et dépistage positif', function () {
+    describe('Frise dynamique n°1B : positif (variante SA ou BR) avec symptômes', function () {
+        it('La frise n°1B s’affiche avec symptômes actuels et dépistage positif', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+                symptomes_actuels_douleurs: true,
+                depistage: true,
+                depistage_resultat: 'positif',
+                depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
+                _depistage_start_date: new Date().toJSON(),
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
+                'conseils-timeline-isolement-positif-variante-avec-symptomes',
+            ])
+        })
+
+        it('La frise n°1B s’affiche avec symptômes passés et dépistage positif', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_passes: true,
+                depistage: true,
+                depistage_resultat: 'positif',
+                depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
+                _depistage_start_date: new Date().toJSON(),
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
+                'conseils-timeline-isolement-positif-variante-avec-symptomes',
+            ])
+        })
+    })
+
+    describe('Frise dynamique n°2A : positif sans symptômes', function () {
+        it('La frise n°2A s’affiche avec contact à risque et dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 contact_a_risque: true,
                 contact_a_risque_contact_direct: true,
@@ -99,7 +130,7 @@ describe('Frise chronologique sur l’isolement', function () {
             ])
         })
 
-        it('La frise n°2 s’affiche avec contact à risque même lieu de vie et dépistage positif', function () {
+        it('La frise n°2A s’affiche avec contact à risque même lieu de vie et dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 contact_a_risque: true,
                 contact_a_risque_meme_lieu_de_vie: true,
@@ -113,7 +144,7 @@ describe('Frise chronologique sur l’isolement', function () {
             ])
         })
 
-        it('La frise n°2 s’affiche avec contact pas vraiment à risque et dépistage positif', function () {
+        it('La frise n°2A s’affiche avec contact pas vraiment à risque et dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 contact_a_risque: true,
                 contact_a_risque_autre: true,
@@ -127,7 +158,7 @@ describe('Frise chronologique sur l’isolement', function () {
             ])
         })
 
-        it('La frise n°2 s’affiche avec rien de tout ça et dépistage positif', function () {
+        it('La frise n°2A s’affiche avec rien de tout ça et dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
                 depistage_resultat: 'positif',
@@ -136,6 +167,66 @@ describe('Frise chronologique sur l’isolement', function () {
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-positif-sans-symptomes',
+            ])
+        })
+    })
+
+    describe('Frise dynamique n°2B : positif sans symptômes', function () {
+        it('La frise n°2B s’affiche avec contact à risque et dépistage positif', function () {
+            const profil = new Profil('mes_infos', {
+                contact_a_risque: true,
+                contact_a_risque_contact_direct: true,
+                depistage: true,
+                depistage_resultat: 'positif',
+                depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
+                _depistage_start_date: new Date().toJSON(),
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
+                'conseils-timeline-isolement-positif-variante-sans-symptomes',
+            ])
+        })
+
+        it('La frise n°2B s’affiche avec contact à risque même lieu de vie et dépistage positif', function () {
+            const profil = new Profil('mes_infos', {
+                contact_a_risque: true,
+                contact_a_risque_meme_lieu_de_vie: true,
+                depistage: true,
+                depistage_resultat: 'positif',
+                depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
+                _depistage_start_date: new Date().toJSON(),
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
+                'conseils-timeline-isolement-positif-variante-sans-symptomes',
+            ])
+        })
+
+        it('La frise n°2B s’affiche avec contact pas vraiment à risque et dépistage positif', function () {
+            const profil = new Profil('mes_infos', {
+                contact_a_risque: true,
+                contact_a_risque_autre: true,
+                depistage: true,
+                depistage_resultat: 'positif',
+                depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
+                _depistage_start_date: new Date().toJSON(),
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
+                'conseils-timeline-isolement-positif-variante-sans-symptomes',
+            ])
+        })
+
+        it('La frise n°2B s’affiche avec rien de tout ça et dépistage positif', function () {
+            const profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_resultat: 'positif',
+                depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
+                _depistage_start_date: new Date().toJSON(),
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
+                'conseils-timeline-isolement-positif-variante-sans-symptomes',
             ])
         })
     })

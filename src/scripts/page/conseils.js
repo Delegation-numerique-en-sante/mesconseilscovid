@@ -230,7 +230,9 @@ function dynamicTimelineDataInjection(element, profil, algoOrientation) {
         fillDate('isolement', dates.debutIsolement)
         fillDate('aujourdhui', `${formatDate(new Date())} (aujourd’hui)`)
         fillDate('demain', `${formatDate(dates.demain)} (demain)`)
+        fillDate('test', `${formatDate(dates.finIsolement)}`)
         fillDate('fin', `À partir du ${formatDate(dates.finIsolement)}`)
+        fillDate('fin-positif', `À partir du ${formatDate(dates.finIsolementPositif)}`)
     }
 
     function fillDuration(dureeIsolement) {
@@ -250,6 +252,10 @@ function dynamicTimelineDataInjection(element, profil, algoOrientation) {
             )} (<a href="#symptomes">modifier</a>)`,
             demain: joursApres(1, new Date()),
             finIsolement: joursApres(dureeIsolement, profil.symptomes_start_date),
+            finIsolementPositif: joursApres(
+                dureeIsolement + 7,
+                profil.symptomes_start_date
+            ),
         })
 
         // Si les symptômes ont commencé aujourd’hui, on propose le suivi demain.
@@ -283,6 +289,10 @@ function dynamicTimelineDataInjection(element, profil, algoOrientation) {
             )} (<a href="#depistage">modifier</a>)`,
             demain: joursApres(1, new Date()),
             finIsolement: joursApres(dureeIsolement, profil.depistage_start_date),
+            finIsolementPositif: joursApres(
+                dureeIsolement + 7,
+                profil.symptomes_start_date
+            ),
         })
         fillDuration(dureeIsolement)
     }
