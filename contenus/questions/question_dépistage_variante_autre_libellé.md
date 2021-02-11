@@ -1,1 +1,1 @@
-<!---->autre variante, ou variante non communiquée
+<!---->Pas de variante, ou variante non communiquée
