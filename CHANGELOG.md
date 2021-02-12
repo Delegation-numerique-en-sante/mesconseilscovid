@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-02-12
+
+* conseils spécifiques pour les variantes sud-africaine et brésilienne
+* mise à jour d’un lien sur travail-emploi.gouv.fr
+
 ## 2021-02-05
 
 * augmente la distance interindividuelle de 1m à 2m
