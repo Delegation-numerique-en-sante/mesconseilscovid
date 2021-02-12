@@ -134,8 +134,7 @@ export default function depistage(form, app) {
 function showVariante(varianteRadio) {
     showElement(varianteRadio)
     varianteRadio.classList.add('required')
-    // eslint-disable-next-line no-extra-semi
-    ;[].forEach.call(varianteRadio.querySelectorAll('input[type=radio'), (elem) => {
+    Array.from(varianteRadio.querySelectorAll('input[type=radio')).forEach((elem) => {
         elem.required = true
     })
 }
@@ -143,8 +142,7 @@ function showVariante(varianteRadio) {
 function hideVariante(varianteRadio) {
     hideElement(varianteRadio)
     varianteRadio.classList.remove('required')
-    // eslint-disable-next-line no-extra-semi
-    ;[].forEach.call(varianteRadio.querySelectorAll('input[type=radio'), (elem) => {
+    Array.from(varianteRadio.querySelectorAll('input[type=radio')).forEach((elem) => {
         elem.required = false
     })
 }
