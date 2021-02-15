@@ -1,5 +1,7 @@
 import { hideSelector, displayElementById } from './affichage'
 
+import departementsURL from 'url:../departements-1000m.geojson'
+
 var Geolocaliseur = function () {
     this.matchDepartement = function (lat, lon, departementFound, departementNotFound) {
         // Warning, in case of multiple polygons, you can have multiple matches.
@@ -29,7 +31,7 @@ var Geolocaliseur = function () {
     this.loadMap = function (callback) {
         var xhr = new XMLHttpRequest()
         xhr.overrideMimeType('application/json')
-        xhr.open('GET', require('../departements-1000m.geojson'), true)
+        xhr.open('GET', departementsURL, true)
         xhr.onload = function () {
             var jsonResponse = JSON.parse(xhr.responseText)
             callback(jsonResponse)

@@ -30,7 +30,7 @@
 
     Si vous êtes vacciné(e), en cas de contact à risque avec une personne positive à la Covid :
 
-    1. [**Faites un test antigénique dès que possible**](/tests-de-depistage.html) et informez de votre statut les personnes avec qui vous avez été en contact récemment.
+    1. [**Faites un test antigénique dès que possible**](tests-de-depistage.html) et informez de votre statut les personnes avec qui vous avez été en contact récemment.
 
     1. **Si le résultat de votre test est positif, isolez-vous pendant 10 jours.** Nous vous encourageons à [décrire votre situation particulière](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
 
@@ -40,7 +40,7 @@
 
     <div class="voir-aussi">
 
-    - Tous les détails sur la conduite à tenir : [« Je suis cas contact Covid, que faire ? »](/cas-contact-a-risque.html#schema-vaccinal-complet).
+    - Tous les détails sur la conduite à tenir : [« Je suis cas contact Covid, que faire ? »](cas-contact-a-risque.html#schema-vaccinal-complet).
 
     </div>
 
@@ -61,6 +61,6 @@
 
     Nous vous conseillons de vérifier directement auprès des autorités du pays de destination les conditions d’accès sur leur territoire (tests, quarantaine, vaccin…), en consultant  par exemple le site internet de l’ambassade ou du consulat.
 
-    Pour en savoir plus, [consultez notre page sur le pass sanitaire et les voyages](/pass-sanitaire-qr-code-voyages.html).
+    Pour en savoir plus, [consultez notre page sur le pass sanitaire et les voyages](pass-sanitaire-qr-code-voyages.html).
 
 </div>

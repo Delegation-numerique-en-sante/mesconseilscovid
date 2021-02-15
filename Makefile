@@ -18,7 +18,7 @@ install-js:  ## Install JS dependencies.
 
 clean:  ## Clean up JS related stuff.
 	rm -rf ./node_modules
-	rm -rf ./.cache
+	rm -rf ./.parcel-cache
 
 ##
 ## Run JS unit tests matching a given pattern/browser engine.

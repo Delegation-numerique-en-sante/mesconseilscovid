@@ -38,7 +38,7 @@ class RenvoiDirective(Directive):
     {render_html_summary('', typographie(titre_question), level)}
     <p>
         Voir la réponse sur notre page
-        « <a href="/{nom_page}#{id_question}">{typographie(titre_page)}</a> ».
+        « <a href="{nom_page}#{id_question}">{typographie(titre_page)}</a> ».
     </p>
 </details>
 """

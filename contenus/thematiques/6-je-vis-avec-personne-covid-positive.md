@@ -60,8 +60,8 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 
 <div class="timeline">
     <div>
-        <a href="/illustrations/isolement-foyer-malade.png">
-            <img src="/illustrations/isolement-foyer-malade.png"
+        <a href="illustrations/isolement-foyer-malade.png">
+            <img src="illustrations/isolement-foyer-malade.png"
                  alt="Frise chronologique représentant la période d’isolement">
         </a>
     </div>

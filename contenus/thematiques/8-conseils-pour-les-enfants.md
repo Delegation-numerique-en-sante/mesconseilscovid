@@ -100,7 +100,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
+    - Notre page « [Je suis cas contact Covid, que faire ?](cas-contact-a-risque.html) »
 
     - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
 
@@ -147,7 +147,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
+    - Notre page « [Je suis cas contact Covid, que faire ?](cas-contact-a-risque.html) »
 
     - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
 
@@ -200,7 +200,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     - Notre rubrique sur la [vaccination des mineurs de plus de 12 ans](#la-vaccination-contre-la-covid) ci-dessous
 
-    - Notre autre page sur le [pass sanitaire](/pass-sanitaire-qr-code-voyages.html)
+    - Notre autre page sur le [pass sanitaire](pass-sanitaire-qr-code-voyages.html)
 
     </div>
 
@@ -283,7 +283,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    * Pour plus d’informations, consultez notre page sur [les voyages et le pass sanitaire](/pass-sanitaire-qr-code-voyages.html).
+    * Pour plus d’informations, consultez notre page sur [les voyages et le pass sanitaire](pass-sanitaire-qr-code-voyages.html).
 
     </div>
 
@@ -301,7 +301,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    * Pour plus d’informations, consultez notre page sur [les voyages et le pass sanitaire](/pass-sanitaire-qr-code-voyages.html).
+    * Pour plus d’informations, consultez notre page sur [les voyages et le pass sanitaire](pass-sanitaire-qr-code-voyages.html).
 
     </div>
 
@@ -327,7 +327,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - En savoir plus sur les [types de tests de dépistage](/tests-de-depistage.html) et trouver celui adapté à la situation de votre enfant.
+    - En savoir plus sur les [types de tests de dépistage](tests-de-depistage.html) et trouver celui adapté à la situation de votre enfant.
 
     </div>
 
@@ -343,7 +343,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
 
-    - [Je vis avec une personne positive, que dois-je faire ?](/je-vis-avec-personne-covid-positive.html)
+    - [Je vis avec une personne positive, que dois-je faire ?](je-vis-avec-personne-covid-positive.html)
 
     </div>
 
@@ -435,7 +435,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    * Consultez la conduite à suivre [lorsque l’on vit avec une personne positive](/je-vis-avec-personne-covid-positive.html) (test, isolement, conseils pratiques…)
+    * Consultez la conduite à suivre [lorsque l’on vit avec une personne positive](je-vis-avec-personne-covid-positive.html) (test, isolement, conseils pratiques…)
 
     </div>
 

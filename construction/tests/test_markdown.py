@@ -408,7 +408,7 @@ class TestRenvoiDirective:
 
                     <p>
                         Voir la réponse sur notre page
-                        « <a href="/je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose">Je souhaite me faire vacciner</a> ».
+                        « <a href="je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose">Je souhaite me faire vacciner</a> ».
                     </p>
                 </details>
             """

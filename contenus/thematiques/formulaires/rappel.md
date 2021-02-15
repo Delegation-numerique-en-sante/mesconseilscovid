@@ -59,7 +59,7 @@
             <input id="{{prefixe}}_situation_moins18_radio_immunodeprimee" type="radio" required name="{{prefixe}}_situation_moins18_radio" value="immunodeprimee">
             <label for="{{prefixe}}_situation_moins18_radio_immunodeprimee">Je suis sévèrement immunodéprimé(e)</label>
             <input id="{{prefixe}}_situation_moins18_radio_comorbidite" type="radio" required name="{{prefixe}}_situation_moins18_radio" value="comorbidite">
-            <label for="{{prefixe}}_situation_moins18_radio_comorbidite"><span>J’ai une <a href="/je-veux-me-faire-vacciner.html#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid">comorbidité</a> (risque de forme grave)</span></label>
+            <label for="{{prefixe}}_situation_moins18_radio_comorbidite"><span>J’ai une <a href="je-veux-me-faire-vacciner.html#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid">comorbidité</a> (risque de forme grave)</span></label>
             <input id="{{prefixe}}_situation_moins18_radio_autre" type="radio" required name="{{prefixe}}_situation_moins18_radio" value="autre">
             <label for="{{prefixe}}_situation_moins18_radio_autre">Autre situation</label>
         </div>

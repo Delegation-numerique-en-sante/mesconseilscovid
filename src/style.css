@@ -1177,7 +1177,7 @@ input[type='submit']:disabled {
 a.button-arrow,
 input[type='submit'].button-arrow {
     padding: 12px 64px 16px 48px;
-    background-image: url('/arrow-right-white.svg');
+    background-image: url('arrow-right-white.svg');
     background-position: 95% center;
     background-repeat: no-repeat;
 }

@@ -23,7 +23,7 @@
 
     - un [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) : un test de dépistage **positif**, **PCR** ou **antigénique** de **plus de 11 jours** et **moins de 6 mois** ;
 
-    - une [attestation de vaccination complète](#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code) : qui indique que votre **schéma vaccinal est complet** (après 1 ou 2 doses [selon les cas](/je-veux-me-faire-vacciner.html#suis-je-immunise-e-apres-une-seule-dose-de-vaccin)).
+    - une [attestation de vaccination complète](#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code) : qui indique que votre **schéma vaccinal est complet** (après 1 ou 2 doses [selon les cas](je-veux-me-faire-vacciner.html#suis-je-immunise-e-apres-une-seule-dose-de-vaccin)).
 
     <div class="conseil conseil-jaune">
 
@@ -93,8 +93,8 @@
 
     <div class="voir-aussi">
 
-    - [Suis-je concerné par la dose de rappel ?](/je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
-    - [À partir de quand pourrai-je recevoir la dose de rappel ?](/je-veux-me-faire-vacciner.html#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose)
+    - [Suis-je concerné par la dose de rappel ?](je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
+    - [À partir de quand pourrai-je recevoir la dose de rappel ?](je-veux-me-faire-vacciner.html#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose)
     - [Tout savoir sur le rappel vaccinal contre la Covid-19](https://www.gouvernement.fr/tout-savoir-sur-le-rappel-vaccinal-contre-la-covid-19) (gouvernement.fr)
 
     </div>
@@ -117,7 +117,7 @@
 .. question:: Je ne peux pas me faire vacciner, comment obtenir un pass sanitaire ?
     :level: 3
 
-    En cas de **contre-indication médicale** (voir la [liste des contre-indications à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination)), vous pouvez demander à votre médecin d’établir un **certificat médical** (formulaire Cerfa n°16183*01). Il faudra envoyer le premier volet du certificat à votre **caisse d’Assurance Maladie**. Après vérifications, elle vous adressera votre **certificat de contre-indication à la vaccination** avec **QR code**, valable comme pass sanitaire en **France uniquement**.
+    En cas de **contre-indication médicale** (voir la [liste des contre-indications à la vaccination](je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination)), vous pouvez demander à votre médecin d’établir un **certificat médical** (formulaire Cerfa n°16183*01). Il faudra envoyer le premier volet du certificat à votre **caisse d’Assurance Maladie**. Après vérifications, elle vous adressera votre **certificat de contre-indication à la vaccination** avec **QR code**, valable comme pass sanitaire en **France uniquement**.
 
     Attention, si vous ne pouvez pas vous faire vacciner parce que **vous avez eu la Covid** il y a moins de **6 mois**, votre [**certificat de rétablissement**](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) (test de dépistage positif) avec **QR code** fera office de pass sanitaire.
 
@@ -182,7 +182,7 @@
 
     <div class="voir-aussi">
 
-    - Consultez notre [page de conseils pour les mineurs](/conseils-pour-les-enfants.html) pour plus d’informations sur leur vaccination et sur le protocole sanitaire dans les établissements scolaires.
+    - Consultez notre [page de conseils pour les mineurs](conseils-pour-les-enfants.html) pour plus d’informations sur leur vaccination et sur le protocole sanitaire dans les établissements scolaires.
 
     </div>
 
@@ -208,9 +208,9 @@
 
     <div class="voir-aussi">
 
-    - Consultez notre page « [Conseils pour les mineurs : vaccination et scolarité](/conseils-pour-les-enfants.html) ».
+    - Consultez notre page « [Conseils pour les mineurs : vaccination et scolarité](conseils-pour-les-enfants.html) ».
 
-    - Consultez notre page « [Je souhaite me faire vacciner, que faut-il savoir ?](/je-veux-me-faire-vacciner.html) ».
+    - Consultez notre page « [Je souhaite me faire vacciner, que faut-il savoir ?](je-veux-me-faire-vacciner.html) ».
 
     </div>
 
@@ -406,7 +406,7 @@
 
     <div class="conseil conseil-jaune">
 
-    Attention, les tests de dépistage sont **payants** (43,89 € pour les tests RT-PCR et de 22 à 45 € pour un test antigénique). Si vous êtes assuré social ou européen, ils peuvent êtres pris en charge sous [certaines conditions](/tests-de-depistage.html#les-tests-de-depistage-sont-ils-payants).
+    Attention, les tests de dépistage sont **payants** (43,89 € pour les tests RT-PCR et de 22 à 45 € pour un test antigénique). Si vous êtes assuré social ou européen, ils peuvent êtres pris en charge sous [certaines conditions](tests-de-depistage.html#les-tests-de-depistage-sont-ils-payants).
 
     </div>
 
@@ -414,7 +414,7 @@
 
     - Pour savoir où faire un test (laboratoire, pharmacie…), consultez l’[annuaire des lieux de dépistage sur sante.fr](https://www.sante.fr/cf/centres-depistage-covid.html).
 
-    - Pour en savoir plus sur les différents tests, consultez notre page « [Les tests de dépistage](/tests-de-depistage.html) »
+    - Pour en savoir plus sur les différents tests, consultez notre page « [Les tests de dépistage](tests-de-depistage.html) »
 
     </div>
 
@@ -439,7 +439,7 @@
 
     <div class="conseil conseil-jaune">
 
-    Attention, les tests de dépistage sont **payants** (43,89 € pour les tests RT-PCR et de 22 à 45 € pour un test antigénique). Si vous êtes assuré social ou européen, ils peuvent êtres pris en charge sous [certaines conditions](/tests-de-depistage.html#les-tests-de-depistage-sont-ils-payants).
+    Attention, les tests de dépistage sont **payants** (43,89 € pour les tests RT-PCR et de 22 à 45 € pour un test antigénique). Si vous êtes assuré social ou européen, ils peuvent êtres pris en charge sous [certaines conditions](tests-de-depistage.html#les-tests-de-depistage-sont-ils-payants).
 
     </div>
 
@@ -447,7 +447,7 @@
 
     - Pour savoir où faire un test (laboratoire, pharmacie…), consultez l’[annuaire des lieux de dépistage sur sante.fr](https://www.sante.fr/cf/centres-depistage-covid.html).
 
-    - Pour en savoir plus sur les différents tests, consultez notre page « [Les tests de dépistage](/tests-de-depistage.html) »
+    - Pour en savoir plus sur les différents tests, consultez notre page « [Les tests de dépistage](tests-de-depistage.html) »
 
     </div>
 

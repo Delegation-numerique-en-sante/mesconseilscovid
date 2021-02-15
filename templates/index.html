@@ -7,15 +7,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="prefetch" as="fetch" href="departements-1000m.geojson" crossorigin>
     <link rel="prefetch" as="fetch" href="version.json" crossorigin>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=693zBdXxar">
-    <link rel="apple-touch-icon" sizes="192x192" href="/android-chrome-192x192.png?v=693zBdXxar">
-    <link rel="apple-touch-icon" sizes="384x384" href="/android-chrome-384x384.png?v=693zBdXxar">
-    <link rel="apple-touch-icon" sizes="512x512" href="/android-chrome-512x512.png?v=693zBdXxar">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=693zBdXxar">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=693zBdXxar">
-    <link rel="manifest" href="/site.webmanifest?v=693zBdXxar">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=693zBdXxar" color="#000091">
-    <link rel="shortcut icon" href="/favicon.ico?v=693zBdXxar">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="384x384" href="android-chrome-384x384.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#000091">
+    <link rel="shortcut icon" href="favicon.ico">
     <meta name="apple-mobile-web-app-title" content="Conseils Covid">
     <meta name="application-name" content="Conseils Covid">
     <meta name="msapplication-TileColor" content="#000091">
@@ -23,6 +23,7 @@
     <meta name="description" content="MesConseilsCovid répond à vos questions pour savoir quoi faire dans une situation liée à la Covid.">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-config" content="browserconfig.xml">
     <meta name="msapplication-starturl" content="/">
     <meta name="referrer" content="none">
     <meta name="google-site-verification" content="sF4AByYYgWU3askK2Apg7awJVMWQbFFc-ikof-EVfgI" />
@@ -30,7 +31,7 @@
     <meta property="og:title" content="Mes Conseils Covid">
     <meta property="og:description" content="MesConseilsCovid répond à vos questions pour savoir quoi faire dans une situation liée à la Covid.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/illustrations/mesconseilscovid.png">
+    <meta property="og:image" content="illustrations/mesconseilscovid.png">
     <meta property="og:url" content="https://mesconseilscovid.sante.gouv.fr/">
     <meta property="og:locale" content="fr_FR">
 </head>
@@ -81,7 +82,7 @@
             <ul class="cards ">
                 {% for thematique in thematiques %}
                 <li class="card {{ thematique.name }}">
-                    <a class="card-header" href="{{ thematique.name }}.html">
+                    <a class="card-header" href="./{{ thematique.name }}.html">
                         <img src="{{ thematique.imgsrc }}" loading="lazy" alt=""
                              width="96" height="77">
                         <span class="card-title">{{ thematique.title }}</span>
@@ -1427,7 +1428,7 @@
                 <ul class="cards ">
                     {% for thematique in autres_thematiques %}
                     <li class="card">
-                        <a class="card-header" href="{{ thematique.name }}.html">
+                        <a class="card-header" href="./{{ thematique.name }}.html">
                             <img src="{{ thematique.imgsrc }}" loading="lazy" alt=""
                                  width="96" height="77">
                             <span class="card-title">{{ thematique.title }}</span>
@@ -1667,7 +1668,7 @@
     </div>
 </section>
 
-    <script src="scripts/main.js"></script>
+<script type="module" src="./scripts/main.js"></script>
 
 <div id="feedback-difficultes" hidden>
     {{ meta_feedback_difficultés }}
