@@ -1,11 +1,10 @@
 import { bindCalendar } from '../actions.js'
+import SuiviView from '../suivi.js'
 
 export default function suiviintroduction(element, app) {
+    const suivi = new SuiviView(app.profil)
     const container = element.querySelector('#profils-cards-suivi')
-    const card = container.insertBefore(
-        app.profil.renderCardSuivi(),
-        container.firstChild
-    )
+    const card = container.insertBefore(suivi.renderCardSuivi(), container.firstChild)
     if (app.profil.hasSuiviStartDate()) {
         bindSuppression(card.querySelector('[data-delete-suivi]'), app)
         bindCalendar(element, app.profil)
