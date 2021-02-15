@@ -1,8 +1,12 @@
 {
     "extends": "eslint:recommended",
+    "parser": "@babel/eslint-parser",
     "parserOptions": {
-        "ecmaVersion": 8
+        "ecmaVersion": 11
     },
+    "plugins": [
+        "@babel"
+    ],
     "env": {
         "node": true,
         "es6": true
