@@ -67,12 +67,6 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
 
-      - name: Check service-worker
-        run: |
-          make check-service-worker
-        env:
-          PYTHONUNBUFFERED: "1"
-
       - name: Check internal links
         run: |
           python3 build.py index thematiques

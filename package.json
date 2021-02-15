@@ -33,6 +33,7 @@
     "mocha-param": "^2.0.1",
     "nyc": "^15.1.0",
     "parcel": "^2.0.1",
+    "parcel-config-precache-manifest": "0.0.4",
     "parcel-optimizer-ogimage": "^0.1.0",
     "parcel-plugin-sw-asset-urls": "^0.1.2",
     "parcel-reporter-static-files-copy": "^1.3.0",
