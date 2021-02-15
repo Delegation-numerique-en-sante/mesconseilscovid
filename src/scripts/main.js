@@ -96,10 +96,13 @@ registerTimeAgo('fr', function (number, index) {
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
         .register(new URL('../service-worker.js', import.meta.url))
-        .then(() => {
-            // console.log('SW registration successful with scope: ', registration.scope)
+        .then((registration) => {
+            console.log(
+                'ServiceWorker registration successful with scope: ',
+                registration.scope
+            )
         })
         .catch((err) => {
-            console.log('SW registration failed: ', err)
+            console.log('ServiceWorker registration failed: ', err)
         })
 }
