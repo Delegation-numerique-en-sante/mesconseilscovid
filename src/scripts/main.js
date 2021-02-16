@@ -42,3 +42,14 @@ register('fr', function (number, index) {
         ['il y a %s ans', 'dans %s ans'],
     ][index]
 })
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('../service-worker.js')
+        .then(() => {
+            // console.log('SW registration successful with scope: ', registration.scope)
+        })
+        .catch((err) => {
+            console.log('SW registration failed: ', err)
+        })
+}
