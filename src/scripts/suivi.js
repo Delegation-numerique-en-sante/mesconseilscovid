@@ -75,143 +75,110 @@ export default class SuiviView {
     }
 
     switchSymptomeTitre(value) {
-        let titre = ''
         switch (value) {
             case 'essoufflement':
-                titre = 'Manque de souffle'
-                break
+                return 'Manque de souffle'
             case 'etatGeneral':
-                titre = 'État général'
-                break
+                return 'État général'
             case 'etatPsychologique':
-                titre = 'État psychologique'
-                break
+                return 'État psychologique'
             case 'alimentationHydratation':
-                titre = 'Absence d’alimentation ou d’hydratation'
-                break
+                return 'Absence d’alimentation ou d’hydratation'
             case 'diarrheeVomissements':
-                titre = 'Diarrhée ou vomissements'
-                break
+                return 'Diarrhée ou vomissements'
             case 'fievre':
-                titre = 'Fièvre supérieure à 39°C'
-                break
+                return 'Fièvre supérieure à 39°C'
             case 'confusion':
-                titre = 'Somnolence ou confusion'
-                break
+                return 'Somnolence ou confusion'
             case 'mauxDeTete':
-                titre = 'Maux de tête'
-                break
+                return 'Maux de tête'
             case 'toux':
-                titre = 'Toux'
-                break
+                return 'Toux'
+            default:
+                return ''
         }
-        return titre
     }
 
     switchStatut(value) {
-        let statut = ''
         switch (value) {
             case 'critique':
-                statut = 'Beaucoup moins bien'
-                break
+                return 'Beaucoup moins bien'
             case 'pire':
-                statut = 'Un peu moins bien'
-                break
+                return 'Un peu moins bien'
             case 'stable':
-                statut = 'Stable'
-                break
+                return 'Stable'
             case 'aucun':
-                statut = 'Pas ce symptôme'
-                break
+                return 'Pas ce symptôme'
             case 'mieux':
-                statut = 'Mieux'
-                break
+                return 'Mieux'
             case '':
-                statut = 'Pas de symptômes'
-                break
+                return 'Pas de symptômes'
+            default:
+                return ''
         }
-        return statut
     }
 
     switchBooleen(value) {
-        let booleen = ''
         switch (value) {
             case 'oui':
-                booleen = 'Oui'
-                break
+                return 'Oui'
             case 'non':
-                booleen = 'Non'
-                break
+                return 'Non'
             case '':
-                booleen = 'Pas de symptômes'
-                break
+                return 'Pas de symptômes'
+            default:
+                return ''
         }
-        return booleen
     }
 
     switchBooleenOptionnel(value) {
-        let booleen = ''
         switch (value) {
             case 'oui':
-                booleen = 'Oui'
-                break
+                return 'Oui'
             case 'non':
-                booleen = 'Non'
-                break
+                return 'Non'
             case '':
-                booleen = 'Pas d’information'
-                break
+                return 'Pas d’information'
+            default:
+                return ''
         }
-        return booleen
     }
 
     switchGravite(value) {
-        let gravite = ''
         switch (value) {
             case 'gravite_3':
-                gravite = 'État grave, il est recommandé d’appeler le SAMU (15)'
-                break
+                return 'État grave, il est recommandé d’appeler le SAMU (15)'
             case 'gravite_2':
-                gravite =
-                    'État préoccupant, consulter un médecin ou à défaut le SAMU (15)'
-                break
+                return 'État préoccupant, consulter un médecin ou à défaut le SAMU (15)'
             case 'gravite_1':
-                gravite = 'État à vérifier, consulter votre médecin traitant'
-                break
+                return 'État à vérifier, consulter votre médecin traitant'
             case 'gravite_0':
-                gravite = 'État correct'
-                break
+                return 'État correct'
+            default:
+                return ''
         }
-        return gravite
     }
 
     switchIcone(value) {
-        let icone = ''
         switch (value) {
             case 'critique':
             case 'oui':
             case 'gravite_3':
-                icone = 'gravite_superieure'
-                break
+                return 'gravite_superieure'
             case 'pire':
             case 'gravite_2':
-                icone = 'gravite'
-                break
+                return 'gravite'
             case 'stable':
             case 'aucun':
             case 'gravite_1':
-                icone = 'stable'
-                break
+                return 'stable'
             case 'mieux':
             case 'non':
             case 'gravite_0':
-                icone = 'ok'
-                break
+                return 'ok'
             default:
-                icone = 'interrogation'
-                break
+                return 'interrogation'
         }
-        return icone
     }
 
     renderIcone(statut) {
