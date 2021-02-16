@@ -721,6 +721,18 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 
 
+## [question_symptômes_contact_à_risque_variante_d_interet_aide.md](question_symptômes_contact_à_risque_variante_d_interet_aide.md)
+
+Si vous n’avez pas cette information, laissez cette case vide.
+
+
+
+## [question_symptômes_contact_à_risque_variante_d_interet_libellé.md](question_symptômes_contact_à_risque_variante_d_interet_libellé.md)
+
+<!---->Cette personne était contaminée par la variante <code>20H/501Y.V2</code> (« <i>sud-africaine</i> ») ou <code>20J/501Y.V3</code>  (« <i>brésilienne</i> »)
+
+
+
 ## [question_symptômes_libellé_non.md](question_symptômes_libellé_non.md)
 
 <!---->Non, <b>pas récemment</b>

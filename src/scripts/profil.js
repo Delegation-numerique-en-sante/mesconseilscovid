@@ -120,7 +120,9 @@ export default class Profil {
 
         this.contact_a_risque = undefined
         this.contact_a_risque_meme_lieu_de_vie = undefined
+        this.contact_a_risque_variante_d_interet = undefined
         this.contact_a_risque_contact_direct = undefined
+        this.contact_a_risque_variante_d_interet = undefined
         this.contact_a_risque_actes = undefined
         this.contact_a_risque_espace_confine = undefined
         this.contact_a_risque_meme_classe = undefined
@@ -196,6 +198,8 @@ export default class Profil {
         this.contact_a_risque = data['contact_a_risque']
         this.contact_a_risque_meme_lieu_de_vie =
             data['contact_a_risque_meme_lieu_de_vie']
+        this.contact_a_risque_variante_d_interet =
+            data['contact_a_risque_variante_d_interet']
         this.contact_a_risque_contact_direct = data['contact_a_risque_contact_direct']
         this.contact_a_risque_actes = data['contact_a_risque_actes']
         this.contact_a_risque_espace_confine = data['contact_a_risque_espace_confine']
@@ -276,6 +280,7 @@ export default class Profil {
     fillContactARisque(value) {
         this.contact_a_risque = value
         this.contact_a_risque_meme_lieu_de_vie = undefined
+        this.contact_a_risque_variante_d_interet = undefined
         this.contact_a_risque_contact_direct = undefined
         this.contact_a_risque_actes = undefined
         this.contact_a_risque_espace_confine = undefined
@@ -300,6 +305,7 @@ export default class Profil {
             symptomes_passes: false,
             contact_a_risque: false,
             contact_a_risque_meme_lieu_de_vie: false,
+            contact_a_risque_variante_d_interet: false,
             contact_a_risque_contact_direct: false,
             contact_a_risque_actes: false,
             contact_a_risque_espace_confine: false,
@@ -423,6 +429,8 @@ export default class Profil {
             symptomes_passes: this.symptomes_passes,
             contact_a_risque: this.contact_a_risque,
             contact_a_risque_meme_lieu_de_vie: this.contact_a_risque_meme_lieu_de_vie,
+            contact_a_risque_variante_d_interet: this
+                .contact_a_risque_variante_d_interet,
             contact_a_risque_contact_direct: this.contact_a_risque_contact_direct,
             contact_a_risque_actes: this.contact_a_risque_actes,
             contact_a_risque_espace_confine: this.contact_a_risque_espace_confine,

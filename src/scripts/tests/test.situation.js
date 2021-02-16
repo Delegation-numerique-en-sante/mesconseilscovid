@@ -594,6 +594,20 @@ const matrice = [
         conseils: 'contact-a-risque',
     },
     {
+        description: 'Négatif et contact à risque + variante d’intérêt',
+        profil: {
+            contact_a_risque: true,
+            contact_a_risque_variante_d_interet: true,
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: new Date().toJSON(),
+        },
+        situation: 'negatif_contact_a_risque_variante_d_interet',
+        statut: 'contact-a-risque-variante-d-interet-avec-test',
+        conseils: 'contact-a-risque-variante-d-interet',
+    },
+    {
         description: 'Négatif et contact à risque même lieu de vie',
         profil: {
             contact_a_risque: true,
@@ -743,6 +757,20 @@ const matrice = [
         conseils: 'contact-a-risque',
     },
     {
+        description: 'En attente et contact à risque + variante d’intérêt',
+        profil: {
+            contact_a_risque: true,
+            contact_a_risque_variante_d_interet: true,
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'en_attente',
+            _depistage_start_date: new Date().toJSON(),
+        },
+        situation: 'en_attente_contact_a_risque_variante_d_interet',
+        statut: 'contact-a-risque-variante-d-interet-avec-test',
+        conseils: 'contact-a-risque-variante-d-interet',
+    },
+    {
         description: 'En attente et contact à risque même lieu de vie',
         profil: {
             contact_a_risque: true,
@@ -824,6 +852,17 @@ const matrice = [
         situation: 'pas_teste_contact_a_risque',
         statut: 'contact-a-risque-sans-test',
         conseils: 'contact-a-risque',
+    },
+    {
+        description: 'Pas testé et contact à risque + variante d’intérêt',
+        profil: {
+            contact_a_risque: true,
+            contact_a_risque_variante_d_interet: true,
+            depistage: false,
+        },
+        situation: 'pas_teste_contact_a_risque_variante_d_interet',
+        statut: 'contact-a-risque-variante-d-interet-sans-test',
+        conseils: 'contact-a-risque-variante-d-interet',
     },
     {
         description: 'Pas testé et contact à risque même lieu de vie',

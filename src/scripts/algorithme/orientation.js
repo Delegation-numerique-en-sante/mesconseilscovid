@@ -27,6 +27,7 @@ const STATUTS = [
 const CONSEILS_PERSONNELS = [
     'antigenique-negatif-fragile',
     'contact-a-risque',
+    'contact-a-risque-variante-d-interet',
     'contact-a-risque-autre',
     'contact-a-risque-meme-lieu-de-vie',
     'contact-a-risque-meme-lieu-de-vie-sans-depistage',
@@ -110,6 +111,8 @@ export default class AlgorithmeOrientation {
         } else if (this.profil.hasContactARisqueReconnus()) {
             if (this.profil.contact_a_risque_meme_lieu_de_vie) {
                 symptomes = 'contact_a_risque_meme_lieu_de_vie'
+            } else if (this.profil.contact_a_risque_variante_d_interet) {
+                symptomes = 'contact_a_risque_variante_d_interet'
             } else {
                 symptomes = 'contact_a_risque'
             }
@@ -300,6 +303,19 @@ export default class AlgorithmeOrientation {
                 return {
                     statut: 'contact-a-risque-avec-test',
                     conseils: 'contact-a-risque',
+                }
+
+            case 'negatif_contact_a_risque_variante_d_interet':
+            case 'en_attente_contact_a_risque_variante_d_interet':
+                return {
+                    statut: 'contact-a-risque-variante-d-interet-avec-test',
+                    conseils: 'contact-a-risque-variante-d-interet',
+                }
+
+            case 'pas_teste_contact_a_risque_variante_d_interet':
+                return {
+                    statut: 'contact-a-risque-variante-d-interet-sans-test',
+                    conseils: 'contact-a-risque-variante-d-interet',
                 }
 
             case 'negatif_contact_pas_vraiment_a_risque':
