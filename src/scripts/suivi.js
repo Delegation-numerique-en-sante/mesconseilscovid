@@ -189,35 +189,21 @@ export default class SuiviView {
         let icone = ''
         switch (value) {
             case 'critique':
-                icone = 'gravite_superieure'
-                break
             case 'oui':
-                icone = 'gravite_superieure'
-                break
             case 'gravite_3':
                 icone = 'gravite_superieure'
                 break
             case 'pire':
-                icone = 'gravite'
-                break
             case 'gravite_2':
                 icone = 'gravite'
                 break
             case 'stable':
-                icone = 'stable'
-                break
             case 'aucun':
-                icone = 'stable'
-                break
             case 'gravite_1':
                 icone = 'stable'
                 break
             case 'mieux':
-                icone = 'ok'
-                break
             case 'non':
-                icone = 'ok'
-                break
             case 'gravite_0':
                 icone = 'ok'
                 break
