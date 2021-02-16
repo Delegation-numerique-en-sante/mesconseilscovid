@@ -3,6 +3,8 @@ import { createElementFromHTML, safeHtml } from './affichage.js'
 
 import AlgorithmeSuivi from './algorithme/suivi.js'
 
+import SUIVI_IMAGES from '../suivi_*.svg'
+
 export default class SuiviView {
     constructor(profil) {
         this.profil = profil
@@ -182,7 +184,7 @@ export default class SuiviView {
     }
 
     renderIcone(statut) {
-        const imgSrc = `../suivi_${this.switchIcone(statut)}.svg`
+        const imgSrc = SUIVI_IMAGES[this.switchIcone(statut)]
         return `<img src="${imgSrc}" width="40px" height="40px" />`
     }
 
