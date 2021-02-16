@@ -8,10 +8,16 @@ import 'core-js/web/url-search-params'
 import 'whatwg-fetch'
 import './polyfills/custom_event'
 
-import { register } from 'timeago.js'
+import { register as registerTimeAgo } from 'timeago.js'
+import { registerPlausible } from './plausible.js'
+import { registerATInternet } from './atinternet.js'
 
 import { bindFeedback, bindSuppressionTotale } from './actions.js'
 import App from './app.js'
+
+// Statistiques.
+registerPlausible(window)
+registerATInternet(window)
 
 var app = new App()
 window.app = app
@@ -24,7 +30,7 @@ window.app = app
     })
 })()
 
-register('fr', function (number, index) {
+registerTimeAgo('fr', function (number, index) {
     return [
         ["à l'instant", 'dans un instant'],
         ['il y a %s secondes', 'dans %s secondes'],
