@@ -221,7 +221,7 @@ export default class SuiviView {
             case 'gravite_0':
                 icone = 'ok'
                 break
-            case '':
+            default:
                 icone = 'interrogation'
                 break
         }
