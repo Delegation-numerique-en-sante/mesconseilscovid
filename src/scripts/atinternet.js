@@ -1,7 +1,5 @@
-// eslint-disable-next-line no-extra-semi
-;(function (window) {
-    'use strict'
-
+// Statistiques pour le Service d’Information du Gouvernement (ATInternet)
+export function registerATInternet(window) {
     const host = 'https://logs1412.xiti.com'
     const siteID = 614871
 
@@ -41,4 +39,4 @@
     }
 
     window.atinternet = trigger
-})(window)
+}

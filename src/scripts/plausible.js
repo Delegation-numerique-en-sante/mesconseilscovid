@@ -1,7 +1,5 @@
-// eslint-disable-next-line no-extra-semi
-;(function (window) {
-    'use strict'
-
+// Statistiques pour Mes Conseils Covid (Plausible)
+export function registerPlausible(window) {
     var location = window.location
     var document = window.document
     var plausibleHost = document.body.dataset.statsUrl
@@ -81,4 +79,4 @@
         new Image().src =
             plausibleHost + '/api/error?message=' + encodeURIComponent(e.message)
     }
-})(window)
+}
