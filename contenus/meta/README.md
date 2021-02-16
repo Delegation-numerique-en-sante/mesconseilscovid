@@ -174,6 +174,16 @@ Vos informations personnelles sont seulement stockées sur cet appareil, et ne s
 
 ### Pour finir…
 
+<div class="conseil">
+
+#### Aidez-nous à améliorer MesConseilsCovid
+
+Afin de vous apporter des conseils plus pertinents, nous organisons des tests utilisateurs individuels de 20 minutes dont l’objectif est de mieux comprendre vos attentes.
+
+Vous souhaitez participer à un test utilisateur ? Envoyez-nous simplement **OK** par e-mail à l’adresse <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a>, et nous vous recontacterons pour convenir d’un rendez-vous.
+
+</div>
+
 <div class="icon icon-information">
     <div class="feedback-component" data-feedback-transition-delay="500">
         <div class="feedback-question">
@@ -196,7 +206,7 @@ Vos informations personnelles sont seulement stockées sur cet appareil, et ne s
                     <input type="submit" class="button" value="Envoyer">
                 </div>
             </form>
-            <p>ou écrivez-nous à : <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a></p>
+            <p class="feedback-email">ou écrivez-nous à : <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a></p>
         </div>
         <div class="feedback-thankyou" hidden>
             <p>
