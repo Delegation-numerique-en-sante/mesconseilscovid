@@ -10,6 +10,12 @@ Faites un **test de contrôle en laboratoire** pour confirmer le résultat de vo
 
 
 
+## [statut_antigenique_positif.md](statut_antigenique_positif.md)
+
+Faites un **test de contrôle en laboratoire** pour confirmer le résultat de votre test antigénique.
+
+
+
 ## [statut_asymptomatique.md](statut_asymptomatique.md)
 
 Vous êtes **porteur de la Covid** sans symptômes, il est important de **vous isoler** afin de ne pas contaminer d’autres personnes.

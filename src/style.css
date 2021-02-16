@@ -649,6 +649,7 @@ main footer .legals {
 .statut-symptomatique-sans-test,
 .statut-symptomatique-urgent,
 .statut-antigenique-negatif-fragile,
+.statut-antigenique-positif,
 .suivi-gravite-3 {
     background: #ffb6a5;
     border-color: #ff6f4c;
