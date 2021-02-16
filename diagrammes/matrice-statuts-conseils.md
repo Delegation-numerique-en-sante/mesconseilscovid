@@ -3,7 +3,8 @@
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="94" bgcolor="#DEE6EF" align="center"><b><br></b></td>
             <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Test RT-PCR positif<br>(variante V2 ou V3)</b><br>de moins de 14 jours</td>
-            <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Test antigénique ou RT-PCR positif<br>(autre variante)</b><br>de moins de 14 jours</td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Test RT-PCR positif<br>(autre variante)</b><br>de moins de 14 jours</td>
+            <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Test antigénique positif</b><br>de moins de 14 jours</td>
             <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Test antigénique négatif<br>(personne fragile)<br>de moins de 7 jours</b></td>
             <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>Test RT-PCR négatif,<br>ou test antigénique négatif<br>(personne non fragile),<br>de moins de 7 jours</b></td>
             <td style="border: 1px solid black;" valign="middle" bgcolor="#EEEEEE" align="center"><b>En attente</b></td>
@@ -13,7 +14,7 @@
     <tbody>
         <tr>
             <td style="border: 1px solid black;" valign="middle" height="185" bgcolor="#EEEEEE" align="center"><b>Symptômes actuels graves</b></td>
-            <td style="border: 1px solid black;" colspan="2" valign="middle" bgcolor="#FFDBB6" align="center">
+            <td style="border: 1px solid black;" colspan="3" valign="middle" bgcolor="#FFDBB6" align="center">
                 <a href="../contenus/statuts/statut_positif_symptomatique_urgent.md">
                     statut_positif_symptomatique_urgent.md
                 </a>
@@ -50,6 +51,15 @@
                 <br><br>
                 <a href="../contenus/conseils/conseils_personnels_depistage_positif_symptomatique.md">
                     conseils_personnels_depistage_positif_symptomatique.md
+                </a>
+            </td>
+            <td style="border: 1px solid black;" rowspan="2" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_antigenique_positif.md">
+                    statut_antigenique_positif.md
+                </a>
+                <br><br>
+                <a href="../contenus/conseils/conseils_personnels_antigenique_positif.md">
+                    conseils_personnels_antigenique_positif.md
                 </a>
             </td>
             <td style="border: 1px solid black;" rowspan="2" valign="middle" bgcolor="#FFFFD7" align="center">
@@ -145,7 +155,7 @@
                     conseils_personnels_depistage_positif_variante_d_interet_asymptomatique.md
                 </a>
             </td>
-            <td style="border: 1px solid black;" rowspan="4" valign="middle" bgcolor="#FFFFD7" align="center">
+            <td style="border: 1px solid black;" rowspan="4" colspan="2" valign="middle" bgcolor="#FFFFD7" align="center">
                 <a href="../contenus/statuts/statut_asymptomatique.md">
                     statut_asymptomatique.md
                 </a>

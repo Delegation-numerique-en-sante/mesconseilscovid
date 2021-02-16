@@ -3,6 +3,7 @@ import AlgorithmeVaccination from './vaccination.js'
 // Les statuts possibles en sortie de l’algorithme.
 const STATUTS = [
     'antigenique-negatif-fragile',
+    'antigenique-positif',
     'asymptomatique',
     'asymptomatique-positif-variante-d-interet',
     'contact-a-risque-avec-test',
@@ -22,6 +23,7 @@ const STATUTS = [
 // Les blocs de conseils personnels possibles en sortie de l’algorithme.
 const CONSEILS_PERSONNELS = [
     'antigenique-negatif-fragile',
+    'antigenique-positif',
     'contact-a-risque',
     'contact-a-risque-autre',
     'depistage-positif-asymptomatique',
@@ -68,6 +70,11 @@ export default class AlgorithmeOrientation {
             this.personneFragile
         ) {
             return 'antigenique_negatif_fragile'
+        } else if (
+            this.profil.depistage_type === 'antigenique' &&
+            this.profil.depistage_resultat === 'positif'
+        ) {
+            return 'antigenique_positif'
         } else {
             if (
                 this.profil.depistage_resultat === 'positif' &&
@@ -180,6 +187,7 @@ export default class AlgorithmeOrientation {
         switch (this.situation) {
             case 'positif_symptomes_actuels_graves':
             case 'positif_variante_d_interet_symptomes_actuels_graves':
+            case 'antigenique_positif_symptomes_actuels_graves':
                 return {
                     statut: 'positif-symptomatique-urgent',
                     conseils: 'symptomes-actuels-positif-critique',
@@ -210,6 +218,8 @@ export default class AlgorithmeOrientation {
             case 'positif_contact_a_risque_meme_lieu_de_vie':
             case 'positif_contact_pas_vraiment_a_risque':
             case 'positif_asymptomatique':
+            case 'antigenique_positif_contact_a_risque':
+            case 'antigenique_positif_contact_a_risque_meme_lieu_de_vie':
                 return {
                     statut: 'asymptomatique',
                     conseils: 'depistage-positif-asymptomatique',
@@ -241,6 +251,13 @@ export default class AlgorithmeOrientation {
 
             case 'negatif_symptomes_passes':
                 return { statut: this.statutSelonFragilite(), conseils: null }
+
+            case 'antigenique_positif_symptomes_actuels':
+            case 'antigenique_positif_symptomes_passes':
+                return {
+                    statut: 'antigenique-positif',
+                    conseils: 'antigenique-positif',
+                }
 
             case 'antigenique_negatif_fragile_symptomes_actuels':
             case 'antigenique_negatif_fragile_symptomes_passes':
