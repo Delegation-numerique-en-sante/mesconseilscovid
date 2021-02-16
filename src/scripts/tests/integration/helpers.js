@@ -127,6 +127,11 @@ async function remplirDepistage(page, depistage, date, type, resultat, variante)
         )
         await checkbox_label.click()
 
+        await page.fill(
+            '#page #depistage_start_date',
+            date.toISOString().substring(0, 10)
+        )
+
         let type_label = await page.waitForSelector(
             `#page label[for="depistage_type_${type}"]`
         )
@@ -143,13 +148,6 @@ async function remplirDepistage(page, depistage, date, type, resultat, variante)
             )
             await variante_label.click()
         }
-
-        // Keep it at the end otherwise Safari from CI will not be able
-        // to escape Pikaday and be stuck on that form.
-        await page.fill(
-            '#page #depistage_start_date',
-            date.toISOString().substring(0, 10)
-        )
 
         text = '"Continuer"'
     } else {
