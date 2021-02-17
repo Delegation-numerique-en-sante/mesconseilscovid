@@ -10,6 +10,8 @@ const STATUTS = [
     'contact-a-risque-meme-lieu-de-vie',
     'contact-a-risque-meme-lieu-de-vie-sans-depistage',
     'contact-a-risque-sans-test',
+    'contact-a-risque-variante-d-interet-avec-test',
+    'contact-a-risque-variante-d-interet-sans-test',
     'en-attente',
     'personne-fragile',
     'peu-de-risques',

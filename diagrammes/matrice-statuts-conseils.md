@@ -171,7 +171,7 @@
                     conseils_personnels_depistage_positif_variante_d_interet_asymptomatique.md
                 </a>
             </td>
-            <td style="border: 1px solid black; padding: 1rem;" rowspan="5" colspan="2" valign="middle" bgcolor="#FFFFD7" align="center">
+            <td style="border: 1px solid black; padding: 1rem;" rowspan="5" valign="middle" bgcolor="#FFFFD7" align="center">
                 <a href="../contenus/statuts/statut_asymptomatique.md">
                     statut_asymptomatique.md
                 </a>
@@ -180,7 +180,7 @@
                     conseils_personnels_depistage_positif_asymptomatique.md
                 </a>
             </td>
-            <td style="border: 1px solid black; padding: 1rem;" rowspan="4" valign="middle" bgcolor="#FFFFD7" align="center">
+            <td style="border: 1px solid black; padding: 1rem;" rowspan="5" valign="middle" bgcolor="#FFFFD7" align="center">
                 <a href="../contenus/statuts/statut_asymptomatique_positif_antigenique.md">
                     statut_asymptomatique_positif_antigenique.md
                 </a>
