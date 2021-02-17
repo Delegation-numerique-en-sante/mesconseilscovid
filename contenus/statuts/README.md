@@ -53,13 +53,12 @@ Restez **en isolement** et **faites un test** 7 jours après votre dernier cont
 
 ## [statut_contact_a_risque_variante_d_interet_avec_test.md](statut_contact_a_risque_variante_d_interet_avec_test.md)
 
-Restez **en isolement** et **refaites un test** 10 jours après votre dernier contact à risque.
-
+Refaites un **test immédiatement**, restez en **isolement**, puis faites un test de contrôle après 7 jours.
 
 
 ## [statut_contact_a_risque_variante_d_interet_sans_test.md](statut_contact_a_risque_variante_d_interet_sans_test.md)
 
-Restez **en isolement**, faites un **test immédiatement** et **refaites un test** 10 jours après votre dernier contact à risque.
+Faites un **test immédiatement**, restez en **isolement**, puis faites un test de contrôle après 7 jours.
 
 
 
