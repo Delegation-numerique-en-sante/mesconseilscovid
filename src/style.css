@@ -898,7 +898,6 @@ input[type='submit'] {
     white-space: pre-wrap;
 }
 
-a.button[href=''],
 input[type='submit']:disabled {
     color: black;
     background: #ddd;
@@ -925,23 +924,22 @@ a.button-red {
     border: 1px solid #dc3545;
     color: #fff;
 }
-a.button-feedback[href=''] {
-    cursor: pointer;
+a.button-feedback {
     border-color: #000091;
     color: #000091;
 }
-a.button-feedback-positif[href=''] {
+a.button-feedback-positif {
     background: no-repeat 24px center url('feedback-positif.svg');
     padding: 12px 24px 12px 60px;
     margin-top: 0;
 }
-a.button-feedback-negatif[href=''] {
+a.button-feedback-negatif {
     background: no-repeat 65px center url('feedback-negatif.svg');
     padding: 12px 60px 12px 24px;
     margin-top: 0;
     margin-left: 1rem;
 }
-a.button-feedback-flag[href=''] {
+a.button-feedback-flag {
     background: no-repeat 24px center url('feedback-flag.svg');
     padding: 12px 24px 12px 60px;
     margin-top: 0;
