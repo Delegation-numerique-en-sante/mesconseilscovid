@@ -678,20 +678,26 @@
                 </div>
 
                 <div id="conseils-statut">
+                    <div id="statut-antigenique-negatif-fragile" class="statut statut-antigenique-negatif-fragile" hidden>
+                        {{ statut_antigenique_negatif_fragile }}
+                    </div>
                     <div id="statut-asymptomatique" class="statut statut-asymptomatique" hidden>
                         {{ statut_asymptomatique }}
                     </div>
+                    <div id="statut-asymptomatique-positif-antigenique" class="statut statut-asymptomatique-positif-antigenique" hidden>
+                        {{ statut_asymptomatique_positif_antigenique }}
+                    </div>
                     <div id="statut-asymptomatique-variante-d-interet" class="statut statut-asymptomatique-variante-d-interet" hidden>
                         {{ statut_asymptomatique_variante_d_interet }}
+                    </div>
+                    <div id="statut-contact-a-risque-avec-test" class="statut statut-contact-a-risque-avec-test" hidden>
+                        {{ statut_contact_a_risque_avec_test }}
                     </div>
                     <div id="statut-contact-a-risque-meme-lieu-de-vie" class="statut statut-contact-a-risque-meme-lieu-de-vie" hidden>
                         {{ statut_contact_a_risque_meme_lieu_de_vie }}
                     </div>
                     <div id="statut-contact-a-risque-meme-lieu-de-vie-sans-depistage" class="statut statut-contact-a-risque-meme-lieu-de-vie-sans-depistage" hidden>
                         {{ statut_contact_a_risque_meme_lieu_de_vie_sans_depistage }}
-                    </div>
-                    <div id="statut-contact-a-risque-avec-test" class="statut statut-contact-a-risque-avec-test" hidden>
-                        {{ statut_contact_a_risque_avec_test }}
                     </div>
                     <div id="statut-contact-a-risque-sans-test" class="statut statut-contact-a-risque-sans-test" hidden>
                         {{ statut_contact_a_risque_sans_test }}
@@ -713,6 +719,9 @@
                     <div id="statut-positif-symptomatique-urgent" class="statut statut-positif-symptomatique-urgent" hidden>
                         {{ statut_positif_symptomatique_urgent }}
                     </div>
+                    <div id="statut-symptomatique-antigenique-positif" class="statut statut-symptomatique-antigenique-positif" hidden>
+                        {{ statut_symptomatique_antigenique_positif }}
+                    </div>
                     <div id="statut-symptomatique-en-attente" class="statut statut-symptomatique-en-attente" hidden>
                         {{ statut_symptomatique_en_attente }}
                     </div>
@@ -730,12 +739,6 @@
                     </div>
                     <div id="statut-symptomatique-urgent" class="statut statut-symptomatique-urgent" hidden>
                         {{ statut_symptomatique_urgent }}
-                    </div>
-                    <div id="statut-antigenique-negatif-fragile" class="statut statut-antigenique-negatif-fragile" hidden>
-                        {{ statut_antigenique_negatif_fragile }}
-                    </div>
-                    <div id="statut-antigenique-positif" class="statut statut-antigenique-positif" hidden>
-                        {{ statut_antigenique_positif }}
                     </div>
                 </div>
             </div>
@@ -765,8 +768,14 @@
                         {{ reponse_depistage_sans }}
                     </div>
                 </div>
+                <div id="conseils-personnels-antigenique-negatif-fragile" class="conseil" hidden>
+                    {{ conseils_personnels_antigenique_negatif_fragile }}
+                </div>
                 <div id="conseils-personnels-contact-a-risque" class="conseil" hidden>
                     {{ conseils_personnels_contact_à_risque }}
+                </div>
+                <div id="conseils-personnels-contact-a-risque-autre" class="conseil" hidden>
+                    {{ conseils_personnels_contact_à_risque_autre }}
                 </div>
                 <div id="conseils-personnels-contact-a-risque-meme-lieu-de-vie" class="conseil" hidden>
                     {{ conseils_personnels_contact_à_risque_meme_lieu_de_vie }}
@@ -774,8 +783,11 @@
                 <div id="conseils-personnels-contact-a-risque-meme-lieu-de-vie-sans-depistage" class="conseil" hidden>
                     {{ conseils_personnels_contact_à_risque_meme_lieu_de_vie_sans_depistage }}
                 </div>
-                <div id="conseils-personnels-contact-a-risque-autre" class="conseil" hidden>
-                    {{ conseils_personnels_contact_à_risque_autre }}
+                <div id="conseils-personnels-depistage-positif-antigenique-asymptomatique" class="conseil" hidden>
+                    {{ conseils_personnels_depistage_positif_antigenique_asymptomatique }}
+                </div>
+                <div id="conseils-personnels-depistage-positif-antigenique-symptomatique" class="conseil" hidden>
+                    {{ conseils_personnels_depistage_positif_antigenique_symptomatique }}
                 </div>
                 <div id="conseils-personnels-depistage-positif-asymptomatique" class="conseil" hidden>
                     {{ conseils_personnels_depistage_positif_asymptomatique }}
@@ -807,17 +819,14 @@
                 <div id="conseils-personnels-symptomes-passes-positif" class="conseil" hidden>
                     {{ conseils_personnels_symptômes_passés_positif }}
                 </div>
+                <div id="conseils-personnels-symptomes-passes-positif-antigenique" class="conseil" hidden>
+                    {{ conseils_personnels_symptômes_passés_positif_antigenique }}
+                </div>
                 <div id="conseils-personnels-symptomes-passes-positif-variante-d-interet" class="conseil" hidden>
                     {{ conseils_personnels_symptômes_passés_positif_variante_d_interet }}
                 </div>
                 <div id="conseils-personnels-symptomes-passes-sans-depistage" class="conseil" hidden>
                     {{ conseils_personnels_symptômes_passés_sans_depistage }}
-                </div>
-                <div id="conseils-personnels-antigenique-negatif-fragile" class="conseil" hidden>
-                    {{ conseils_personnels_antigenique_negatif_fragile }}
-                </div>
-                <div id="conseils-personnels-antigenique-positif" class="conseil" hidden>
-                    {{ conseils_personnels_antigenique_positif }}
                 </div>
 
                 <div class="conseil" id="suivi-psy-2" hidden>

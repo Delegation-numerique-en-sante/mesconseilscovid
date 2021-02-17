@@ -1,0 +1,1 @@
+Maintenez-vous **en isolement**, et faites un **test en laboratoire** pour identifier une éventuelle **variante**.

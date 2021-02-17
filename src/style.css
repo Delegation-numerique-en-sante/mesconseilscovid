@@ -636,20 +636,21 @@ main footer .legals {
     border: 4px solid;
     text-align: center;
 }
+.statut-antigenique-negatif-fragile,
 .statut-asymptomatique,
+.statut-asymptomatique-positif-antigenique,
 .statut-asymptomatique-variante-d-interet,
+.statut-contact-a-risque-avec-test,
 .statut-contact-a-risque-meme-lieu-de-vie,
 .statut-contact-a-risque-meme-lieu-de-vie-sans-depistage,
-.statut-contact-a-risque-avec-test,
 .statut-contact-a-risque-sans-test,
 .statut-positif-symptomatique-urgent,
+.statut-symptomatique-antigenique-positif,
 .statut-symptomatique-en-attente,
 .statut-symptomatique-positif,
 .statut-symptomatique-positif-variante-d-interet,
 .statut-symptomatique-sans-test,
 .statut-symptomatique-urgent,
-.statut-antigenique-negatif-fragile,
-.statut-antigenique-positif,
 .suivi-gravite-3 {
     background: #ffb6a5;
     border-color: #ff6f4c;
