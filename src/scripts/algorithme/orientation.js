@@ -3,15 +3,18 @@ import AlgorithmeVaccination from './vaccination.js'
 // Les statuts possibles en sortie de l’algorithme.
 const STATUTS = [
     'antigenique-negatif-fragile',
-    'antigenique-positif',
     'asymptomatique',
-    'asymptomatique-positif-variante-d-interet',
+    'asymptomatique-positif-antigenique',
+    'asymptomatique-variante-d-interet',
     'contact-a-risque-avec-test',
+    'contact-a-risque-meme-lieu-de-vie',
+    'contact-a-risque-meme-lieu-de-vie-sans-depistage',
     'contact-a-risque-sans-test',
     'en-attente',
     'personne-fragile',
     'peu-de-risques',
     'positif-symptomatique-urgent',
+    'symptomatique-antigenique-positif',
     'symptomatique-en-attente',
     'symptomatique-negatif',
     'symptomatique-positif',
@@ -23,9 +26,12 @@ const STATUTS = [
 // Les blocs de conseils personnels possibles en sortie de l’algorithme.
 const CONSEILS_PERSONNELS = [
     'antigenique-negatif-fragile',
-    'antigenique-positif',
     'contact-a-risque',
     'contact-a-risque-autre',
+    'contact-a-risque-meme-lieu-de-vie',
+    'contact-a-risque-meme-lieu-de-vie-sans-depistage',
+    'depistage-positif-antigenique-asymptomatique',
+    'depistage-positif-antigenique-symptomatique',
     'depistage-positif-asymptomatique',
     'depistage-positif-symptomatique',
     'depistage-positif-variante-d-interet-asymptomatique',
@@ -36,6 +42,8 @@ const CONSEILS_PERSONNELS = [
     'symptomes-actuels-sans-depistage-critique',
     'symptomes-passes-en-attente',
     'symptomes-passes-positif',
+    'symptomes-passes-positif-antigenique',
+    'symptomes-passes-positif-variante-d-interet',
     'symptomes-passes-sans-depistage',
 ]
 
@@ -218,11 +226,18 @@ export default class AlgorithmeOrientation {
             case 'positif_contact_a_risque_meme_lieu_de_vie':
             case 'positif_contact_pas_vraiment_a_risque':
             case 'positif_asymptomatique':
-            case 'antigenique_positif_contact_a_risque':
-            case 'antigenique_positif_contact_a_risque_meme_lieu_de_vie':
                 return {
                     statut: 'asymptomatique',
                     conseils: 'depistage-positif-asymptomatique',
+                }
+
+            case 'antigenique_positif_contact_a_risque':
+            case 'antigenique_positif_contact_a_risque_meme_lieu_de_vie':
+            case 'antigenique_positif_contact_pas_vraiment_a_risque':
+            case 'antigenique_positif_asymptomatique':
+                return {
+                    statut: 'asymptomatique-positif-antigenique',
+                    conseils: 'depistage-positif-antigenique-asymptomatique',
                 }
 
             case 'positif_variante_d_interet_symptomes_actuels':
@@ -253,10 +268,15 @@ export default class AlgorithmeOrientation {
                 return { statut: this.statutSelonFragilite(), conseils: null }
 
             case 'antigenique_positif_symptomes_actuels':
+                return {
+                    statut: 'symptomatique-antigenique-positif',
+                    conseils: 'depistage-positif-antigenique-symptomatique',
+                }
+
             case 'antigenique_positif_symptomes_passes':
                 return {
-                    statut: 'antigenique-positif',
-                    conseils: 'antigenique-positif',
+                    statut: 'symptomatique-antigenique-positif',
+                    conseils: 'symptomes-passes-positif-antigenique',
                 }
 
             case 'antigenique_negatif_fragile_symptomes_actuels':

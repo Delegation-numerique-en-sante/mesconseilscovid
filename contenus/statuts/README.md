@@ -10,16 +10,15 @@ Faites un **test de contrôle en laboratoire** pour confirmer le résultat de vo
 
 
 
-## [statut_antigenique_positif.md](statut_antigenique_positif.md)
-
-Faites un **test de contrôle en laboratoire** pour confirmer le résultat de votre test antigénique.
-
-
-
 ## [statut_asymptomatique.md](statut_asymptomatique.md)
 
 Vous êtes **porteur de la Covid** sans symptômes, il est important de **vous isoler** afin de ne pas contaminer d’autres personnes.
 
+
+
+## [statut_asymptomatique_positif_antigenique.md](statut_asymptomatique_positif_antigenique.md)
+
+Même sans symptômes, maintenez-vous **en isolement** pour ne pas contaminer d’autres personnes, et faites un **test en laboratoire** pour identifier une éventuelle **variante**.
 
 
 ## [statut_asymptomatique_variante_d_interet.md](statut_asymptomatique_variante_d_interet.md)
@@ -74,6 +73,11 @@ Vous ne présentez pas de risque particulier face à la Covid, cependant le viru
 
 **Appelez le SAMU / 15** ou demandez à quelqu’un de le faire pour vous pour être pris en charge **rapidement**.
 
+
+
+## [statut_symptomatique_antigenique_positif.md](statut_symptomatique_antigenique_positif.md)
+
+Maintenez-vous **en isolement**, et faites un **test en laboratoire** pour identifier une éventuelle **variante**.
 
 
 ## [statut_symptomatique_en_attente.md](statut_symptomatique_en_attente.md)
