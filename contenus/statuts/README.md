@@ -18,7 +18,7 @@ Vous êtes **porteur de la Covid** sans symptômes, il est important de **vous i
 
 ## [statut_asymptomatique_positif_antigenique.md](statut_asymptomatique_positif_antigenique.md)
 
-Même sans symptômes, maintenez-vous **en isolement** pour ne pas contaminer d’autres personnes, et faites un **test en laboratoire** pour identifier une éventuelle **variante**.
+Même sans symptômes, maintenez-vous **en isolement** pour ne pas contaminer d’autres personnes, et faites un **test en laboratoire** pour identifier un éventuel **variant**.
 
 
 ## [statut_asymptomatique_variante_d_interet.md](statut_asymptomatique_variante_d_interet.md)
@@ -88,7 +88,7 @@ Vous ne présentez pas de risque particulier face à la Covid, cependant le viru
 
 ## [statut_symptomatique_antigenique_positif.md](statut_symptomatique_antigenique_positif.md)
 
-Maintenez-vous **en isolement**, et faites un **test en laboratoire** pour identifier une éventuelle **variante**.
+Maintenez-vous **en isolement**, et faites un **test en laboratoire** pour identifier un éventuel **variant**.
 
 
 ## [statut_symptomatique_en_attente.md](statut_symptomatique_en_attente.md)

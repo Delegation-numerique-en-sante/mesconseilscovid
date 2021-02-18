@@ -1,1 +1,1 @@
-<!---->Autre variante, ou variante non communiquée
+<!---->Je ne sais pas / information non communiquée

@@ -1,1 +1,1 @@
-<!---->La variante détectée par le test
+<!---->Le variant détecté par le test

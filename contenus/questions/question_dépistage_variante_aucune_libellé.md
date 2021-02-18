@@ -1,1 +1,1 @@
-<!---->Pas de variante détectée
+<!---->Pas de variant détecté
