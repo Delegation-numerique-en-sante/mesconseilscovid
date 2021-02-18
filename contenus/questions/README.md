@@ -348,9 +348,14 @@ La personne positive avec qui vous avez été en contact, ou l’assurance malad
 Le laboratoire, votre médecin, ou l’assurance maladie, vous ont peut-être indiqué la variante du virus détectée. Sinon, vous pourrez revenir compléter cette information plus tard.
 
 
+## [question_dépistage_variante_aucune_libellé.md](question_dépistage_variante_aucune_libellé.md)
+
+<!---->Pas de variante détectée
+
+
 ## [question_dépistage_variante_autre_libellé.md](question_dépistage_variante_autre_libellé.md)
 
-<!---->Pas de variante, ou variante non communiquée
+<!---->Autre variante, ou variante non communiquée
 
 
 ## [question_dépistage_variante_libellé.md](question_dépistage_variante_libellé.md)
