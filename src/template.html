@@ -608,55 +608,67 @@
                 </div>
             </div>
             <div class="secondary disabled">
-                <input id="contact_a_risque_meme_lieu_de_vie" type="checkbox" name="contact_a_risque_meme_lieu_de_vie" disabled>
-                <label for="contact_a_risque_meme_lieu_de_vie">
-                    <span>{{ question_symptômes_contact_à_risque_même_lieu_de_vie_libellé|me_or_them }}</span>
-                </label>
+                <div id="contact-a-risque-circonstances-label" class="secondary-title">
+                    {{ question_contact_a_risque_circonstances_libellé }}
+                </div>
+                <div>
+                    <input id="contact_a_risque_meme_lieu_de_vie" type="checkbox" name="contact_a_risque_meme_lieu_de_vie" disabled>
+                    <label for="contact_a_risque_meme_lieu_de_vie">
+                        <span>{{ question_symptômes_contact_à_risque_même_lieu_de_vie_libellé|me_or_them }}</span>
+                    </label>
+                </div>
+                <div>
+                    <input id="contact_a_risque_contact_direct" type="checkbox" name="contact_a_risque_contact_direct" disabled>
+                    <label for="contact_a_risque_contact_direct">
+                        <span>{{ question_symptômes_contact_à_risque_contact_direct_libellé|me_or_them }}</span>
+                    </label>
+                    <div class="details">{{ question_symptômes_contact_à_risque_contact_direct_aide }}</div>
+                </div>
+                <div>
+                    <input id="contact_a_risque_actes" type="checkbox" name="contact_a_risque_actes" disabled>
+                    <label for="contact_a_risque_actes">
+                        <span>{{ question_symptômes_contact_à_risque_actes_libellé|me_or_them }}</span>
+                    </label>
+                    <div class="details">{{ question_symptômes_contact_à_risque_actes_aide }}</div>
+                </div>
+                <div>
+                    <input id="contact_a_risque_espace_confine" type="checkbox" name="contact_a_risque_espace_confine" disabled>
+                    <label for="contact_a_risque_espace_confine">
+                        <span>{{ question_symptômes_contact_à_risque_espace_confiné_libellé|me_or_them }}</span>
+                    </label>
+                </div>
+                <div>
+                    <input id="contact_a_risque_meme_classe" type="checkbox" name="contact_a_risque_meme_classe" disabled>
+                    <label for="contact_a_risque_meme_classe">
+                        <span>{{ question_symptômes_contact_à_risque_même_classe_libellé|me_or_them }}</span>
+                    </label>
+                </div>
+                <div>
+                    <input id="contact_a_risque_stop_covid" type="checkbox" name="contact_a_risque_stop_covid" disabled>
+                    <label for="contact_a_risque_stop_covid">
+                        <span>{{ question_symptômes_contact_à_risque_stop_covid_libellé|me_or_them }}</span>
+                    </label>
+                </div>
+                <div>
+                    <input id="contact_a_risque_autre" type="checkbox" name="contact_a_risque_autre" disabled>
+                    <label for="contact_a_risque_autre">
+                        <span>{{ question_symptômes_contact_à_risque_autre_libellé|me_or_them }}</span>
+                    </label>
+                </div>
             </div>
-            <div class="secondary disabled">
-                <input id="contact_a_risque_variante_d_interet" type="checkbox" name="contact_a_risque_variante_d_interet" disabled>
-                <label for="contact_a_risque_variante_d_interet">
-                    <span>{{ question_symptômes_contact_à_risque_variante_d_interet_libellé }}</span>
-                </label>
-                <div class="details">{{ question_symptômes_contact_à_risque_variante_d_interet_aide }}</div>
-            </div>
-            <div class="secondary disabled">
-                <input id="contact_a_risque_contact_direct" type="checkbox" name="contact_a_risque_contact_direct" disabled>
-                <label for="contact_a_risque_contact_direct">
-                    <span>{{ question_symptômes_contact_à_risque_contact_direct_libellé|me_or_them }}</span>
-                </label>
-                <div class="details">{{ question_symptômes_contact_à_risque_contact_direct_aide }}</div>
-            </div>
-            <div class="secondary disabled">
-                <input id="contact_a_risque_actes" type="checkbox" name="contact_a_risque_actes" disabled>
-                <label for="contact_a_risque_actes">
-                    <span>{{ question_symptômes_contact_à_risque_actes_libellé|me_or_them }}</span>
-                </label>
-                <div class="details">{{ question_symptômes_contact_à_risque_actes_aide }}</div>
-            </div>
-            <div class="secondary disabled">
-                <input id="contact_a_risque_espace_confine" type="checkbox" name="contact_a_risque_espace_confine" disabled>
-                <label for="contact_a_risque_espace_confine">
-                    <span>{{ question_symptômes_contact_à_risque_espace_confiné_libellé|me_or_them }}</span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="contact_a_risque_meme_classe" type="checkbox" name="contact_a_risque_meme_classe" disabled>
-                <label for="contact_a_risque_meme_classe">
-                    <span>{{ question_symptômes_contact_à_risque_même_classe_libellé|me_or_them }}</span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="contact_a_risque_stop_covid" type="checkbox" name="contact_a_risque_stop_covid" disabled>
-                <label for="contact_a_risque_stop_covid">
-                    <span>{{ question_symptômes_contact_à_risque_stop_covid_libellé|me_or_them }}</span>
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="contact_a_risque_autre" type="checkbox" name="contact_a_risque_autre" disabled>
-                <label for="contact_a_risque_autre">
-                    <span>{{ question_symptômes_contact_à_risque_autre_libellé|me_or_them }}</span>
-                </label>
+            <div id="contact-a-risque-variante" class="secondary required disabled" hidden>
+                <div id="contact-a-risque-variante-label" class="secondary-title">
+                    {{ question_contact_a_risque_variante_libellé }}
+                </div>
+                <div class="details">{{ question_contact_a_risque_variante_aide }}</div>
+                <div role="radiogroup" aria-labelledby="contact-a-risque-variante-label">
+                    <input id="contact_a_risque_variante_autre" type="radio" name="contact_a_risque_variante" value="autre">
+                    <label for="contact_a_risque_variante_autre"><span>{{ question_dépistage_variante_autre_libellé|me_or_them }}</span></label>
+                    <input id="contact_a_risque_variante_v1" type="radio" name="contact_a_risque_variante" value="20I/501Y.V1">
+                    <label for="contact_a_risque_variante_v1"><span>{{ question_dépistage_variante_v1_libellé }}</span></label>
+                    <input id="contact_a_risque_variante_v2_ou_v3" type="radio" name="contact_a_risque_variante" value="20H/501Y.V2_ou_20J/501Y.V3">
+                    <label for="contact_a_risque_variante_v2_ou_v3"><span>{{ question_dépistage_variante_v2_ou_v3_libellé }}</span></label>
+                </div>
             </div>
         </fieldset>
         <div class="form-controls">
