@@ -1,1 +1,1 @@
-Même sans symptômes, maintenez-vous **en isolement** pour ne pas contaminer d’autres personnes, et faites un **test en laboratoire** pour identifier une éventuelle **variante**.
+Même sans symptômes, maintenez-vous **en isolement** pour ne pas contaminer d’autres personnes, et faites un **test en laboratoire** pour identifier un éventuel **variant**.

@@ -234,12 +234,12 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 ## [question_contact_a_risque_variante_aide.md](question_contact_a_risque_variante_aide.md)
 
-La personne positive avec qui vous avez été en contact, ou l’assurance maladie, vous a peut-être indiqué la variante du virus détectée lors de son test. Sinon, vous pourrez revenir compléter cette information plus tard.
+La personne positive avec qui vous avez été en contact, ou l’assurance maladie, vous a peut-être indiqué le variant du virus détecté lors de son test. Sinon, vous pourrez revenir compléter cette information plus tard.
 
 
 ## [question_contact_a_risque_variante_libellé.md](question_contact_a_risque_variante_libellé.md)
 
-<!---->La variante détectée chez la personne positive
+<!---->Le variant détecté chez la personne positive
 
 
 
@@ -345,34 +345,33 @@ La personne positive avec qui vous avez été en contact, ou l’assurance malad
 
 ## [question_dépistage_variante_aide.md](question_dépistage_variante_aide.md)
 
-Le laboratoire, votre médecin, ou l’assurance maladie, vous ont peut-être indiqué la variante du virus détectée. Sinon, vous pourrez revenir compléter cette information plus tard.
+Le laboratoire, votre médecin, ou l’assurance maladie, vous ont peut-être indiqué le variant du virus détecté. Sinon, vous pourrez revenir compléter cette information plus tard.
 
 
 ## [question_dépistage_variante_aucune_libellé.md](question_dépistage_variante_aucune_libellé.md)
 
-<!---->Pas de variante détectée
+<!---->Pas de variant détecté
 
 
 ## [question_dépistage_variante_autre_libellé.md](question_dépistage_variante_autre_libellé.md)
 
-<!---->Autre variante, ou variante non communiquée
+<!---->Je ne sais pas / information non communiquée
 
 
 ## [question_dépistage_variante_libellé.md](question_dépistage_variante_libellé.md)
 
-<!---->La variante détectée par le test
+<!---->Le variant détecté par le test
 
 
 
 ## [question_dépistage_variante_v1_libellé.md](question_dépistage_variante_v1_libellé.md)
 
-<!---->Variante <code>20I/501Y.V1</code> (« <i>britannique</i> »)
+<!---->Variant « anglais » (lignage <code>20I/501Y.V1</code>)
 
 
 ## [question_dépistage_variante_v2_ou_v3_libellé.md](question_dépistage_variante_v2_ou_v3_libellé.md)
 
-<!---->Variante <code>20H/501Y.V2</code> (« <i>sud-africaine</i> ») ou <code>20J/501Y.V3</code>  (« <i>brésilienne</i> »)
-
+<!---->Variant « sud-africain / brésilien » (lignage <code>20H/501Y.V2</code> ou <code>20J/501Y.V3</code> )
 
 
 ## [question_foyer_autres_personnes_libellé.md](question_foyer_autres_personnes_libellé.md)

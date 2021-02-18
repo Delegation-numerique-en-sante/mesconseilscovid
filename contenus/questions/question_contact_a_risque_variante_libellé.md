@@ -1,1 +1,1 @@
-<!---->La variante détectée chez la personne positive
+<!---->Le variant détecté chez la personne positive
