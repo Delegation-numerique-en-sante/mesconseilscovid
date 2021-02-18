@@ -618,7 +618,7 @@ const matrice = [
         },
         situation: 'negatif_contact_a_risque_variante_d_interet',
         statut: 'contact-a-risque-variante-d-interet-avec-test',
-        conseils: 'contact-a-risque-variante-d-interet',
+        conseils: 'contact-a-risque-variante-d-interet-avec-test',
     },
     {
         description: 'Négatif et contact à risque même lieu de vie',
@@ -787,7 +787,7 @@ const matrice = [
         },
         situation: 'en_attente_contact_a_risque_variante_d_interet',
         statut: 'contact-a-risque-variante-d-interet-avec-test',
-        conseils: 'contact-a-risque-variante-d-interet',
+        conseils: 'contact-a-risque-variante-d-interet-avec-test',
     },
     {
         description: 'En attente et contact à risque même lieu de vie',
@@ -885,7 +885,7 @@ const matrice = [
         },
         situation: 'pas_teste_contact_a_risque_variante_d_interet',
         statut: 'contact-a-risque-variante-d-interet-sans-test',
-        conseils: 'contact-a-risque-variante-d-interet',
+        conseils: 'contact-a-risque-variante-d-interet-sans-test',
     },
     {
         description: 'Pas testé et contact à risque même lieu de vie',

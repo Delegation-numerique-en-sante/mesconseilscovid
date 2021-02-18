@@ -315,13 +315,13 @@ export default class AlgorithmeOrientation {
             case 'en_attente_contact_a_risque_variante_d_interet':
                 return {
                     statut: 'contact-a-risque-variante-d-interet-avec-test',
-                    conseils: 'contact-a-risque-variante-d-interet',
+                    conseils: 'contact-a-risque-variante-d-interet-avec-test',
                 }
 
             case 'pas_teste_contact_a_risque_variante_d_interet':
                 return {
                     statut: 'contact-a-risque-variante-d-interet-sans-test',
-                    conseils: 'contact-a-risque-variante-d-interet',
+                    conseils: 'contact-a-risque-variante-d-interet-sans-test',
                 }
 
             case 'negatif_contact_pas_vraiment_a_risque':
