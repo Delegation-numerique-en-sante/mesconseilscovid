@@ -239,7 +239,7 @@ function dynamicTimelineDataInjection(element, profil, algoOrientation) {
         element.querySelector('.duree-isolement').innerText = dureeIsolement
     }
 
-    const dureeIsolement = algoOrientation.varianteDInteret() ? 10 : 7
+    const dureeIsolement = algoOrientation.depistageVarianteDInteret() ? 10 : 7
 
     // Frise n°1 : positif + symptômes actuels ou passés.
     if (profil.depistagePositifRecentSymptomatique()) {

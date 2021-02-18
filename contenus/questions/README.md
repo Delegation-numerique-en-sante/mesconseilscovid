@@ -226,6 +226,23 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 
 
+## [question_contact_a_risque_circonstances_libellé.md](question_contact_a_risque_circonstances_libellé.md)
+
+<!---->Les circonstances de ce contact
+
+
+
+## [question_contact_a_risque_variante_aide.md](question_contact_a_risque_variante_aide.md)
+
+La personne positive avec qui vous avez été en contact, ou l’assurance maladie, vous a peut-être indiqué la variante du virus détectée lors de son test. Sinon, vous pourrez revenir compléter cette information plus tard.
+
+
+## [question_contact_a_risque_variante_libellé.md](question_contact_a_risque_variante_libellé.md)
+
+<!---->La variante détectée chez la personne positive
+
+
+
 ## [question_debut_symptomes_aide.md](question_debut_symptomes_aide.md)
 
 <!---->Cette date est importante afin de déterminer la période d’incubation et de guérison de votre maladie.
@@ -718,18 +735,6 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 ---
 
 <!---->Ses contacts récents
-
-
-
-## [question_symptômes_contact_à_risque_variante_d_interet_aide.md](question_symptômes_contact_à_risque_variante_d_interet_aide.md)
-
-Si vous n’avez pas cette information, laissez cette case vide.
-
-
-
-## [question_symptômes_contact_à_risque_variante_d_interet_libellé.md](question_symptômes_contact_à_risque_variante_d_interet_libellé.md)
-
-<!---->Cette personne était contaminée par la variante <code>20H/501Y.V2</code> (« <i>sud-africaine</i> ») ou <code>20J/501Y.V3</code>  (« <i>brésilienne</i> »)
 
 
 

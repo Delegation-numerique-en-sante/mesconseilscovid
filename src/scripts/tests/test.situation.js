@@ -54,6 +54,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'positif',
@@ -68,6 +69,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'positif',
@@ -82,6 +84,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'positif',
@@ -166,6 +169,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'positif',
@@ -182,6 +186,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'positif',
@@ -197,6 +202,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'positif',
@@ -288,6 +294,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'positif',
@@ -304,6 +311,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'positif',
@@ -320,6 +328,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'positif',
@@ -434,6 +443,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'antigenique',
             depistage_resultat: 'positif',
@@ -448,6 +458,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'antigenique',
             depistage_resultat: 'positif',
@@ -462,6 +473,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'antigenique',
             depistage_resultat: 'positif',
@@ -584,6 +596,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'negatif',
@@ -597,7 +610,7 @@ const matrice = [
         description: 'Négatif et contact à risque + variante d’intérêt',
         profil: {
             contact_a_risque: true,
-            contact_a_risque_variante_d_interet: true,
+            contact_a_risque_variante: '20H/501Y.V2_ou_20J/501Y.V3',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'negatif',
@@ -612,6 +625,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'negatif',
@@ -626,6 +640,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'negatif',
@@ -640,6 +655,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'negatif',
@@ -655,6 +671,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'negatif',
@@ -747,6 +764,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'en_attente',
@@ -760,7 +778,8 @@ const matrice = [
         description: 'En attente et contact à risque + variante d’intérêt',
         profil: {
             contact_a_risque: true,
-            contact_a_risque_variante_d_interet: true,
+            contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: '20H/501Y.V2_ou_20J/501Y.V3',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'en_attente',
@@ -775,6 +794,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'en_attente',
@@ -789,6 +809,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
             depistage: true,
             depistage_type: 'rt-pcr',
             depistage_resultat: 'en_attente',
@@ -847,6 +868,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'autre',
             depistage: false,
         },
         situation: 'pas_teste_contact_a_risque',
@@ -857,7 +879,8 @@ const matrice = [
         description: 'Pas testé et contact à risque + variante d’intérêt',
         profil: {
             contact_a_risque: true,
-            contact_a_risque_variante_d_interet: true,
+
+            contact_a_risque_variante: '20H/501Y.V2_ou_20J/501Y.V3',
             depistage: false,
         },
         situation: 'pas_teste_contact_a_risque_variante_d_interet',
@@ -869,6 +892,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'autre',
             depistage: false,
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie',
@@ -880,6 +904,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
             depistage: false,
         },
         situation: 'pas_teste_contact_pas_vraiment_a_risque',
@@ -891,6 +916,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
             depistage: false,
             age: 70,
         },
@@ -903,6 +929,7 @@ const matrice = [
         profil: {
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
             depistage: false,
         },
         situation: 'pas_teste_contact_pas_vraiment_a_risque',
@@ -975,6 +1002,7 @@ const matrice = [
             _depistage_start_date: joursAvant(7),
             contact_a_risque: true,
             contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'autre',
         },
         situation: 'pas_teste_contact_a_risque',
         statut: 'contact-a-risque-sans-test',
@@ -989,6 +1017,7 @@ const matrice = [
             _depistage_start_date: joursAvant(7),
             contact_a_risque: true,
             contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'autre',
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie',
         statut: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
@@ -1003,6 +1032,7 @@ const matrice = [
             _depistage_start_date: joursAvant(7),
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
         },
         situation: 'pas_teste_contact_pas_vraiment_a_risque',
         statut: 'peu-de-risques',
@@ -1018,6 +1048,7 @@ const matrice = [
             _depistage_start_date: joursAvant(7),
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
             age: 70,
         },
         situation: 'pas_teste_contact_pas_vraiment_a_risque',
@@ -1033,6 +1064,7 @@ const matrice = [
             _depistage_start_date: joursAvant(7),
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
         },
         situation: 'pas_teste_contact_pas_vraiment_a_risque',
         statut: 'peu-de-risques',
@@ -1113,6 +1145,7 @@ const matrice = [
             _depistage_start_date: joursAvant(14),
             contact_a_risque: true,
             contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'autre',
         },
         situation: 'pas_teste_contact_a_risque',
         statut: 'contact-a-risque-sans-test',
@@ -1127,6 +1160,7 @@ const matrice = [
             _depistage_start_date: joursAvant(14),
             contact_a_risque: true,
             contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'autre',
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie',
         statut: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
@@ -1141,6 +1175,7 @@ const matrice = [
             _depistage_start_date: joursAvant(14),
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
         },
         situation: 'pas_teste_contact_pas_vraiment_a_risque',
         statut: 'peu-de-risques',
@@ -1156,6 +1191,7 @@ const matrice = [
             _depistage_start_date: joursAvant(14),
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
             age: 70,
         },
         situation: 'pas_teste_contact_pas_vraiment_a_risque',
@@ -1171,6 +1207,7 @@ const matrice = [
             _depistage_start_date: joursAvant(14),
             contact_a_risque: true,
             contact_a_risque_autre: true,
+            contact_a_risque_variante: 'autre',
         },
         situation: 'pas_teste_contact_pas_vraiment_a_risque',
         statut: 'peu-de-risques',

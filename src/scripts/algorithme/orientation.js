@@ -89,7 +89,7 @@ export default class AlgorithmeOrientation {
         } else {
             if (
                 this.profil.depistage_resultat === 'positif' &&
-                this.varianteDInteret()
+                this.depistageVarianteDInteret()
             ) {
                 return 'positif_variante_d_interet'
             }
@@ -97,7 +97,11 @@ export default class AlgorithmeOrientation {
         }
     }
 
-    varianteDInteret() {
+    contactARisqueVarianteDInteret() {
+        return VARIANTES_D_INTERET[this.profil.contact_a_risque_variante]
+    }
+
+    depistageVarianteDInteret() {
         return VARIANTES_D_INTERET[this.profil.depistage_variante]
     }
 
@@ -113,7 +117,7 @@ export default class AlgorithmeOrientation {
         } else if (this.profil.hasContactARisqueReconnus()) {
             if (this.profil.contact_a_risque_meme_lieu_de_vie) {
                 symptomes = 'contact_a_risque_meme_lieu_de_vie'
-            } else if (this.profil.contact_a_risque_variante_d_interet) {
+            } else if (this.contactARisqueVarianteDInteret()) {
                 symptomes = 'contact_a_risque_variante_d_interet'
             } else {
                 symptomes = 'contact_a_risque'
@@ -408,7 +412,7 @@ export default class AlgorithmeOrientation {
                 this.profil.hasSymptomesActuelsReconnus() ||
                 this.profil.symptomes_passes
             ) {
-                if (this.varianteDInteret()) {
+                if (this.depistageVarianteDInteret()) {
                     blockNames.push(
                         'conseils-timeline-isolement-positif-variante-avec-symptomes'
                     )
@@ -418,7 +422,7 @@ export default class AlgorithmeOrientation {
                     )
                 }
             } else {
-                if (this.varianteDInteret()) {
+                if (this.depistageVarianteDInteret()) {
                     blockNames.push(
                         'conseils-timeline-isolement-positif-variante-sans-symptomes'
                     )

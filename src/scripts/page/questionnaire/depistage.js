@@ -1,4 +1,3 @@
-import { hideElement, showElement } from '../../affichage.js'
 import { addDatePickerPolyfill } from '../../datepicker'
 import {
     enableOrDisableSecondaryFields,
@@ -6,6 +5,7 @@ import {
     preloadCheckboxForm,
     toggleFormButtonOnTextFieldsAndRadioRequired,
 } from '../../formutils.js'
+import { hideVariante, showVariante } from './variante.js'
 
 export default function depistage(form, app) {
     const datePicker = form.querySelector('#depistage_start_date')
@@ -128,21 +128,5 @@ export default function depistage(form, app) {
         app.enregistrerProfilActuel().then(() => {
             app.goToNextPage('depistage')
         })
-    })
-}
-
-function showVariante(varianteRadio) {
-    showElement(varianteRadio)
-    varianteRadio.classList.add('required')
-    Array.from(varianteRadio.querySelectorAll('input[type=radio')).forEach((elem) => {
-        elem.required = true
-    })
-}
-
-function hideVariante(varianteRadio) {
-    hideElement(varianteRadio)
-    varianteRadio.classList.remove('required')
-    Array.from(varianteRadio.querySelectorAll('input[type=radio')).forEach((elem) => {
-        elem.required = false
     })
 }
