@@ -195,7 +195,7 @@ describe('Pagination', function () {
                 symptomes_actuels: false,
                 symptomes_passes: false,
                 contact_a_risque: true,
-                contact_a_risque_variante: 'autre',
+                contact_a_risque_variante: 'aucune',
             })
             assert.isUndefined(questionnaire.before('depistage', profil))
         })
@@ -387,7 +387,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
-                contact_a_risque_variante: '',
+                contact_a_risque_variante: 'aucune',
                 suivi_active: true,
             })
             assert.isUndefined(beforeSuiviIntroduction(profil, questionnaire))
@@ -433,7 +433,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
-                contact_a_risque_variante: '',
+                contact_a_risque_variante: 'aucune',
                 suivi_active: true,
             })
             assert.isUndefined(beforeSuiviIntroduction(profil, questionnaire))
@@ -480,7 +480,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
-                contact_a_risque_variante: '',
+                contact_a_risque_variante: 'aucune',
                 suivi_active: true,
             })
             assert.isUndefined(beforeSuiviIntroduction(profil, questionnaire))
@@ -527,7 +527,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
-                contact_a_risque_variante: '',
+                contact_a_risque_variante: 'aucune',
                 suivi_active: true,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
@@ -575,7 +575,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
-                contact_a_risque_variante: '',
+                contact_a_risque_variante: 'aucune',
                 suivi_active: true,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
@@ -623,7 +623,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: true,
-                contact_a_risque_variante: '',
+                contact_a_risque_variante: 'aucune',
                 suivi_active: true,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
                 suivi: [{ foo: 'bar' }, { baz: 'quux' }],
@@ -755,7 +755,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: false,
-                contact_a_risque_variante: '',
+                contact_a_risque_variante: 'aucune',
                 depistage: true,
                 depistage_type: 'rt-pcr',
                 depistage_resultat: 'positif',
@@ -805,7 +805,7 @@ describe('Pagination', function () {
                 contact_a_risque_meme_classe: false,
                 contact_a_risque_stop_covid: false,
                 contact_a_risque_autre: false,
-                contact_a_risque_variante: '',
+                contact_a_risque_variante: 'aucune',
                 depistage: true,
                 depistage_type: 'rt-pcr',
                 depistage_resultat: 'positif',

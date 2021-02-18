@@ -23,13 +23,15 @@ export default function contactarisque(form, app) {
     const varianteRadio = form.querySelector('#contact-a-risque-variante')
     if (app.profil.contact_a_risque) {
         showVariante(varianteRadio)
-        if (app.profil.contact_a_risque_variante === '20I/501Y.V1') {
+        if (app.profil.contact_a_risque_variante === 'aucune') {
+            form.querySelector('#contact_a_risque_variante_aucune').checked = true
+        } else if (app.profil.contact_a_risque_variante === '20I/501Y.V1') {
             form.querySelector('#contact_a_risque_variante_v1').checked = true
         } else if (
             app.profil.contact_a_risque_variante === '20H/501Y.V2_ou_20J/501Y.V3'
         ) {
             form.querySelector('#contact_a_risque_variante_v2_ou_v3').checked = true
-        } else if (app.profil.contact_a_risque_variante === 'autre') {
+        } else {
             form.querySelector('#contact_a_risque_variante_autre').checked = true
         }
     } else {
