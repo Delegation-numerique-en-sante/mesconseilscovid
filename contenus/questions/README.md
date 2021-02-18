@@ -628,11 +628,11 @@ Coiffeur, aide à domicile, soins d’esthétique, soins infirmiers…
 
 ## [question_symptômes_contact_à_risque_aide.md](question_symptômes_contact_à_risque_aide.md)
 
-<!----><sup>*</sup> Le contact est considéré « sans protection » si vous étiez à moins d’1 mètre et que l’un·e de vous ne portait pas de masque.
+<!----><sup>*</sup> Le contact est considéré « sans protection » si vous étiez à moins de 2 mètres et que l’un·e de vous ne portait pas de masque.
 
 ---
 
-<!----><sup>*</sup> Le contact est considéré « sans protection » si les personnes étaient à moins d’1 mètre et que l’une d’elles ne portait pas de masque.
+<!----><sup>*</sup> Le contact est considéré « sans protection » si les personnes étaient à moins de 2 mètres et que l’une d’elles ne portait pas de masque.
 
 
 
