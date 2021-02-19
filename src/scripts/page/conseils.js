@@ -194,10 +194,10 @@ export function dynamicDataInjection(element, profil, algoOrientation) {
         injection.antecedents(elem, algoOrientation)
     })
 
-    dynamicTimelineDataInjection(element, profil, algoOrientation)
+    dynamicTimelineDataInjection(element, profil)
 }
 
-function dynamicTimelineDataInjection(element, profil, algoOrientation) {
+function dynamicTimelineDataInjection(element, profil) {
     function formatDate(date) {
         if (typeof date === 'undefined') {
             return ''
@@ -239,7 +239,7 @@ function dynamicTimelineDataInjection(element, profil, algoOrientation) {
         element.querySelector('.duree-isolement').innerText = dureeIsolement
     }
 
-    const dureeIsolement = algoOrientation.depistageVarianteDInteret() ? 10 : 7
+    const dureeIsolement = 10
 
     // Frise n°1 : positif + symptômes actuels ou passés.
     if (profil.depistagePositifRecentSymptomatique()) {

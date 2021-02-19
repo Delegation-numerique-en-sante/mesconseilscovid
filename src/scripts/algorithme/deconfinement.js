@@ -6,7 +6,7 @@ export default class AlgorithmeDeconfinement {
     }
 
     isQuarantaineDone() {
-        let delta = 7
+        let delta = 10
         const now = new Date()
         const finDeQuarantaine = joursApres(delta, this.profil.symptomes_start_date)
         return now > finDeQuarantaine

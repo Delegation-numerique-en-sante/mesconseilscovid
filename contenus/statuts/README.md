@@ -105,13 +105,13 @@ Vous n’êtes **pas porteur** de la Covid. Contactez votre médecin généralis
 
 ## [statut_symptomatique_positif.md](statut_symptomatique_positif.md)
 
-Maintenez-vous **en isolement** au moins 7 jours après le début des symptômes.
+Maintenez-vous **en isolement** au moins 10 jours après le début des symptômes.
 
 
 
 ## [statut_symptomatique_positif_variante_d_interet.md](statut_symptomatique_positif_variante_d_interet.md)
 
-Maintenez-vous **en isolement** au moins 10 jours après le début des symptômes, puis faites un **test de contrôle**.
+Maintenez-vous **en isolement** au moins 10 jours après le début des symptômes, puis faites un **test de contrôle**.
 
 
 
