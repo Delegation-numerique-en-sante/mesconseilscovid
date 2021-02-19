@@ -595,9 +595,6 @@
                         {{ question_symptômes_contact_à_risque_libellé|me_or_them }}
                     </span>
                 </label>
-                <div class="details">
-                    {{ question_symptômes_contact_à_risque_aide|me_or_them }}
-                </div>
             </div>
             <div class="secondary disabled">
                 <div id="contact-a-risque-circonstances-label" class="secondary-title">
@@ -639,6 +636,23 @@
                     <input id="contact_a_risque_autre" type="checkbox" name="contact_a_risque_autre" disabled>
                     <label for="contact_a_risque_autre">
                         <span>{{ question_symptômes_contact_à_risque_autre_libellé|me_or_them }}</span>
+                    </label>
+                </div>
+            </div>
+            <div class="secondary disabled">
+                <div id="contact-a-risque-protection-label" class="secondary-title">
+                    Nos protections
+                </div>
+                <div>
+                    <input id="contact_a_risque_masque_moi" type="checkbox" name="contact_a_risque_masque_moi" disabled>
+                    <label for="contact_a_risque_masque_moi">
+                        <span>Je portais un masque (sur le nez et la bouche)</span>
+                    </label>
+                </div>
+                <div>
+                    <input id="contact_a_risque_masque_autre" type="checkbox" name="contact_a_risque_masque_autre" disabled>
+                    <label for="contact_a_risque_masque_autre">
+                        <span>L’autre personne portait un masque (sur le nez et la bouche)</span>
                     </label>
                 </div>
             </div>
