@@ -1,0 +1,1 @@
+<!---->On peut lire « <b>absence</b> lignage 20I/501Y.V1 et 20H/501Y.V2 et 20J/501Y.V3 » sur les résultats du laboratoire.

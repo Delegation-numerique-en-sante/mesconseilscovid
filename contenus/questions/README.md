@@ -348,6 +348,11 @@ La personne positive avec qui vous avez été en contact, ou l’assurance malad
 Le laboratoire, votre médecin, ou l’assurance maladie, vous ont peut-être indiqué le variant du virus détecté. Sinon, vous pourrez revenir compléter cette information plus tard.
 
 
+## [question_dépistage_variante_aucune_aide.md](question_dépistage_variante_aucune_aide.md)
+
+<!---->On peut lire « <b>absence</b> lignage 20I/501Y.V1 et 20H/501Y.V2 et 20J/501Y.V3 » sur les résultats du laboratoire.
+
+
 ## [question_dépistage_variante_aucune_libellé.md](question_dépistage_variante_aucune_libellé.md)
 
 <!---->Pas de variant détecté
@@ -355,7 +360,7 @@ Le laboratoire, votre médecin, ou l’assurance maladie, vous ont peut-être in
 
 ## [question_dépistage_variante_autre_libellé.md](question_dépistage_variante_autre_libellé.md)
 
-<!---->Je ne sais pas / information non communiquée
+<!---->Je ne sais pas, ou je n’ai pas eu l’information
 
 
 ## [question_dépistage_variante_libellé.md](question_dépistage_variante_libellé.md)
@@ -364,14 +369,24 @@ Le laboratoire, votre médecin, ou l’assurance maladie, vous ont peut-être in
 
 
 
+## [question_dépistage_variante_v1_aide.md](question_dépistage_variante_v1_aide.md)
+
+<!---->On peut lire « <b>présence</b> lignage 20I/501Y.<b>V1</b> » sur les résultats du laboratoire.
+
+
 ## [question_dépistage_variante_v1_libellé.md](question_dépistage_variante_v1_libellé.md)
 
-<!---->Variant « anglais » (lignage <code>20I/501Y.V1</code>)
+<!---->Variant « anglais »
+
+
+## [question_dépistage_variante_v2_ou_v3_aide.md](question_dépistage_variante_v2_ou_v3_aide.md)
+
+<!---->On peut lire « <b>présence</b> lignage 20H/501Y.<b>V2</b> ou 20J/501Y.<b>V3</b> » sur les résultats du laboratoire.
 
 
 ## [question_dépistage_variante_v2_ou_v3_libellé.md](question_dépistage_variante_v2_ou_v3_libellé.md)
 
-<!---->Variant « sud-africain / brésilien » (lignage <code>20H/501Y.V2</code> ou <code>20J/501Y.V3</code> )
+<!---->Variant « sud-africain » ou « brésilien »
 
 
 ## [question_foyer_autres_personnes_libellé.md](question_foyer_autres_personnes_libellé.md)

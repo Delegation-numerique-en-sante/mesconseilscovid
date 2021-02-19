@@ -1,1 +1,1 @@
-<!---->Variant « anglais » (lignage <code>20I/501Y.V1</code>)
+<!---->Variant « anglais »
