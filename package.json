@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@babel/core": "^7.12.17",
-    "@babel/eslint-parser": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.17",
     "@babel/eslint-plugin": "^7.12.13",
     "@babel/preset-env": "^7.12.17",
     "@babel/register": "^7.12.13",
