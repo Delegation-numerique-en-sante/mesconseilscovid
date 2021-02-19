@@ -5,7 +5,6 @@ import 'core-js/features/promise'
 
 // Polyfills pour les API du navigateur
 import 'core-js/web/url-search-params'
-import 'whatwg-fetch'
 import './polyfills/custom_event'
 
 import { register as registerTimeAgo } from 'timeago.js'
