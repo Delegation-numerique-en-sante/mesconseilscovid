@@ -15,16 +15,16 @@ describe('Algorithme déconfinement', function () {
             assert.strictEqual(algoDeconfinement.isQuarantaineDone(), false)
         })
 
-        it('Faux s’il y a 6 jours', function () {
+        it('Faux s’il y a 9 jours', function () {
             var profil = new Profil('mes_infos')
-            profil.symptomes_start_date = joursAvant(6)
+            profil.symptomes_start_date = joursAvant(9)
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isQuarantaineDone(), false)
         })
 
-        it('Vrai s’il y a 7 jours', function () {
+        it('Vrai s’il y a 10 jours', function () {
             var profil = new Profil('mes_infos')
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isQuarantaineDone(), true)
         })
@@ -348,7 +348,7 @@ describe('Algorithme déconfinement', function () {
     })
 
     describe('Déconfinable pour tous', function () {
-        it('Vrai s’il y a 7 jours et plus de fièvre ni essoufflement', function () {
+        it('Vrai s’il y a 10 jours et plus de fièvre ni essoufflement', function () {
             var profil = new Profil('mes_infos', {
                 suivi: [
                     {
@@ -371,12 +371,12 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
         })
 
-        it('Vrai s’il y a 7 jours et plus de symptômes', function () {
+        it('Vrai s’il y a 10 jours et plus de symptômes', function () {
             var profil = new Profil('mes_infos', {
                 suivi: [
                     {
@@ -395,12 +395,12 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
         })
 
-        it('Faux s’il y a 7 jours et plus de fièvre ni essoufflement mais sans régularité', function () {
+        it('Faux s’il y a 10 jours et plus de fièvre ni essoufflement mais sans régularité', function () {
             var profil = new Profil('mes_infos', {
                 suivi: [
                     {
@@ -417,12 +417,12 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
         })
 
-        it('Faux s’il y a 6 jours et plus de fièvre ni essoufflement', function () {
+        it('Faux s’il y a 9 jours et plus de fièvre ni essoufflement', function () {
             var profil = new Profil('mes_infos', {
                 suivi: [
                     {
@@ -445,12 +445,12 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = joursAvant(6)
+            profil.symptomes_start_date = joursAvant(9)
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
         })
 
-        it('Faux s’il y a 7 jours et fièvre récente mais pas essoufflement', function () {
+        it('Faux s’il y a 10 jours et fièvre récente mais pas essoufflement', function () {
             var profil = new Profil('mes_infos', {
                 suivi: [
                     {
@@ -473,12 +473,12 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
         })
 
-        it('Faux s’il y a 7 jours et plus de fièvre mais essoufflement', function () {
+        it('Faux s’il y a 10 jours et plus de fièvre mais essoufflement', function () {
             var profil = new Profil('mes_infos', {
                 suivi: [
                     {
@@ -501,14 +501,14 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
         })
     })
 
     describe('Déconfinable et dépistage', function () {
-        it('Faux s’il y a 7 jours et plus de fièvre ni essoufflement mais dépistage positif récent', function () {
+        it('Faux s’il y a 10 jours et plus de fièvre ni essoufflement mais dépistage positif récent', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
                 depistage_type: 'rt-pcr',
@@ -534,12 +534,12 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.depistage_start_date = heuresAvant(1, joursAvant(3)) // < 7 jours.
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            profil.depistage_start_date = heuresAvant(1, joursAvant(3)) // < 10 jours.
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
         })
-        it('Vrai s’il y a 7 jours et plus de fièvre ni essoufflement et dépistage positif ancien', function () {
+        it('Vrai s’il y a 10 jours et plus de fièvre ni essoufflement et dépistage positif ancien', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
                 depistage_type: 'rt-pcr',
@@ -566,12 +566,12 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             profil.depistage_start_date = heuresAvant(1, joursAvant(14))
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
         })
 
-        it('Faux s’il y a 7 jours et plus de fièvre ni essoufflement mais dépistage en attente récent', function () {
+        it('Faux s’il y a 10 jours et plus de fièvre ni essoufflement mais dépistage en attente récent', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
                 depistage_type: 'rt-pcr',
@@ -598,12 +598,12 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.depistage_start_date = heuresAvant(1, joursAvant(3)) // < 7 jours.
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            profil.depistage_start_date = heuresAvant(1, joursAvant(3)) // < 10 jours.
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
         })
-        it('Vrai s’il y a 7 jours et plus de fièvre ni essoufflement et dépistage en attente ancien', function () {
+        it('Vrai s’il y a 10 jours et plus de fièvre ni essoufflement et dépistage en attente ancien', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
                 depistage_type: 'rt-pcr',
@@ -629,8 +629,8 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.depistage_start_date = heuresAvant(1, joursAvant(7))
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+            profil.depistage_start_date = heuresAvant(1, joursAvant(10))
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
         })
