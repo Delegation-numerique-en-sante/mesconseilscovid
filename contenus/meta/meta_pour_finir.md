@@ -4,9 +4,9 @@
 
 #### Aidez-nous à améliorer MesConseilsCovid
 
-Afin de vous apporter des conseils plus pertinents, nous organisons des tests utilisateurs individuels de 20 minutes dont l’objectif est de mieux comprendre vos attentes.
+Afin de vous apporter des conseils plus pertinents, nous organisons des entretiens utilisateurs individuels de 20 minutes dont l’objectif est de mieux comprendre vos attentes.
 
-Vous souhaitez participer à un test utilisateur ? Envoyez-nous simplement **OK** par e-mail à l’adresse <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a>, et nous vous recontacterons pour convenir d’un rendez-vous.
+Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement **OK** ou laissez nous votre numéro de téléphone par e-mail à l’adresse <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a>, et nous vous recontacterons pour convenir d’un rendez-vous.
 
 </div>
 
@@ -70,4 +70,3 @@ Vous pouvez <a class="js-impression" href="">imprimer ces conseils</a> pour **le
 Nous n’avons pas accès à vos données et vous pouvez <a href="#introduction" class="js-suppression">les **supprimer** à tout moment</a> de votre navigateur si vous êtes sur un ordinateur public ou partagé par exemple.
 
 </div>
-
