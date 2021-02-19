@@ -241,60 +241,63 @@ function dynamicTimelineDataInjection(element, profil, algoOrientation) {
 
     const dureeIsolement = algoOrientation.depistageVarianteDInteret() ? 10 : 7
 
-    // Frise n°1 : positif + symptômes actuels ou passés.
-    if (profil.depistagePositifRecentSymptomatique()) {
-        // Injecte les bonnes dates dans la frise.
-        fillDates({
-            exposition: joursAvant(14, profil.symptomes_start_date),
-            contagiosite: joursAvant(2, profil.symptomes_start_date),
-            debutIsolement: `${formatDate(
-                profil.symptomes_start_date
-            )} (<a href="#symptomes">modifier</a>)`,
-            demain: joursApres(1, new Date()),
-            finIsolement: joursApres(dureeIsolement, profil.symptomes_start_date),
-            finIsolementPositif: joursApres(
-                dureeIsolement + 7,
-                profil.symptomes_start_date
-            ),
-        })
+    // Frises d’isolement pour les personnes testées positives
+    if (profil.depistagePositifRecent()) {
+        // Frise n°1 : symptômes actuels ou passés.
+        if (profil.hasSymptomesActuelsReconnus() || profil.symptomes_passes) {
+            // Injecte les bonnes dates dans la frise.
+            fillDates({
+                exposition: joursAvant(14, profil.symptomes_start_date),
+                contagiosite: joursAvant(2, profil.symptomes_start_date),
+                debutIsolement: `${formatDate(
+                    profil.symptomes_start_date
+                )} (<a href="#symptomes">modifier</a>)`,
+                demain: joursApres(1, new Date()),
+                finIsolement: joursApres(dureeIsolement, profil.symptomes_start_date),
+                finIsolementPositif: joursApres(
+                    dureeIsolement + 7,
+                    profil.symptomes_start_date
+                ),
+            })
 
-        // Si les symptômes ont commencé aujourd’hui, on propose le suivi demain.
-        if (profil.symptomes_start_date > joursAvant(1)) {
-            hideSelector(element, '.timeline .timeline-aujourdhui')
-            showSelector(element, '.timeline .timeline-demain')
+            // Si les symptômes ont commencé aujourd’hui, on propose le suivi demain.
+            if (profil.symptomes_start_date > joursAvant(1)) {
+                hideSelector(element, '.timeline .timeline-aujourdhui')
+                showSelector(element, '.timeline .timeline-demain')
+            }
+
+            // Si on a fait le suivi aujourd’hui, on confirme et on dit de revenir demain.
+            else if (profil.suiviAujourdhui()) {
+                hideSelector(
+                    element,
+                    '.timeline .timeline-aujourdhui .timeline-texte .suivi-a-faire'
+                )
+                showSelector(
+                    element,
+                    '.timeline .timeline-aujourdhui .timeline-texte .suivi-fait'
+                )
+                showSelector(element, '.timeline .timeline-demain')
+            }
         }
 
-        // Si on a fait le suivi aujourd’hui, on confirme et on dit de revenir demain.
-        else if (profil.suiviAujourdhui()) {
-            hideSelector(
-                element,
-                '.timeline .timeline-aujourdhui .timeline-texte .suivi-a-faire'
-            )
-            showSelector(
-                element,
-                '.timeline .timeline-aujourdhui .timeline-texte .suivi-fait'
-            )
-            showSelector(element, '.timeline .timeline-demain')
+        // Frise n°2 : asymptomatique.
+        else {
+            // Injecte les bonnes dates dans la frise.
+            fillDates({
+                exposition: joursAvant(14, profil.depistage_start_date),
+                contagiosite: joursAvant(2, profil.depistage_start_date),
+                debutIsolement: `${formatDate(
+                    profil.depistage_start_date
+                )} (<a href="#depistage">modifier</a>)`,
+                demain: joursApres(1, new Date()),
+                finIsolement: joursApres(dureeIsolement, profil.depistage_start_date),
+                finIsolementPositif: joursApres(
+                    dureeIsolement + 7,
+                    profil.symptomes_start_date
+                ),
+            })
+            fillDuration(dureeIsolement)
         }
-    }
-
-    // Frise n°2 : positif + asymptomatique.
-    else if (profil.depistagePositifRecentAsymptomatique()) {
-        // Injecte les bonnes dates dans la frise.
-        fillDates({
-            exposition: joursAvant(14, profil.depistage_start_date),
-            contagiosite: joursAvant(2, profil.depistage_start_date),
-            debutIsolement: `${formatDate(
-                profil.depistage_start_date
-            )} (<a href="#depistage">modifier</a>)`,
-            demain: joursApres(1, new Date()),
-            finIsolement: joursApres(dureeIsolement, profil.depistage_start_date),
-            finIsolementPositif: joursApres(
-                dureeIsolement + 7,
-                profil.symptomes_start_date
-            ),
-        })
-        fillDuration(dureeIsolement)
     }
 }
 
