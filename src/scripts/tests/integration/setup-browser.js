@@ -5,7 +5,7 @@ let browser
 before(async function () {
     // Lance un navigateur « headless » (définir la variable
     // d’environnement PWDEBUG=1 pour afficher le navigateur)
-    browser = await playwright[process.env.npm_config_browser].launch()
+    browser = await playwright[process.env.BROWSER].launch()
 })
 
 after(async function () {

@@ -49,11 +49,11 @@ test-unit:  ## Run JS unit tests.
 
 test-integration: build  ## Run JS browser tests.
 ifdef browser
-	npm run-script --browser=$(browser) test-integration $(script_flags)
+	BROWSER=$(browser) npm run-script test-integration $(script_flags)
 else
-	npm run-script --browser=chromium test-integration $(script_flags)
-	npm run-script --browser=firefox test-integration $(script_flags)
-	npm run-script --browser=webkit test-integration $(script_flags)
+	BROWSER=chromium npm run-script test-integration $(script_flags)
+	BROWSER=firefox npm run-script test-integration $(script_flags)
+	BROWSER=webkit npm run-script test-integration $(script_flags)
 endif
 
 test-tools:
