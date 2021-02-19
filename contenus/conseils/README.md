@@ -244,7 +244,7 @@ Pour plus d’informations sur l’isolement : [« J’ai les signes de la mal
 
 ## [conseils_isolement_contact_a_risque.md](conseils_isolement_contact_a_risque.md)
 
-Restez isolé·e **au minimum 10 jours** après votre dernier contact avec une personne malade.
+Restez isolé·e **au minimum 7 jours** après votre dernier contact avec une personne malade.
 
 Si des symptômes apparaissent pendant votre isolement, revenez faire un test sur [MesConseilsCovid.fr](https://mesconseilscovid.sante.gouv.fr/#introduction). 
 
@@ -330,10 +330,10 @@ Comme vous avez des signes de la Covid et que vous avez des risques de développ
 
 Nous vous conseillons de :
 
-1. Vous maintenir **en isolement pendant 10 jours** après le dernier contact à risque.
+1. Vous maintenir **en isolement pendant 7 jours** après le dernier contact à risque.
 2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 3. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
-4. **Prévoir un test en laboratoire au 10<sup>e</sup> jour** suivant le dernier contact avec le malade, en consultant [la carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html). En tant que « Cas contact » d’une personne malade vous serez prioritaire pour faire votre test :
+4. **Prévoir un test en laboratoire au 7<sup>e</sup> jour** suivant le dernier contact avec le malade, en consultant [la carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html). En tant que « Cas contact » d’une personne malade vous serez prioritaire pour faire votre test :
     * S’il est **négatif**, vous pourrez lever votre isolement.
     * Si le test est **positif**, il faudra à nouveau 7 jours d’isolement, et surveiller l’apparition de symptômes.
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
@@ -355,7 +355,7 @@ Nous vous conseillons de :
 
 1. Vous maintenir **en isolement**.
 2. Appliquer **les mesures barrières renforcées** avec la personne malade et les autres membres de votre foyer.
-3. **Faire un test** en laboratoire 10 jours après la guérison de la personne malade :
+3. **Faire un test** en laboratoire 7 jours après la guérison de la personne malade :
     * S’il est **négatif**, vous pourrez lever votre isolement.
     * Si le test est **positif**, il faudra à nouveau 7 jours d’isolement, et surveiller l’apparition de symptômes.
 4. Si vous constatez l’apparition de **symptômes**, contactez votre médecin, et suivez leur évolution avec le [questionnaire de suivi](#suivisymptomes).
@@ -370,7 +370,7 @@ Nous vous conseillons de :
 1. Vous maintenir **en isolement**.
 2. Appliquer **les mesures barrières renforcées** avec la personne malade et les autres membres de votre foyer.
 3. Faire un **test de dépistage** en laboratoire :
-    * Si celui-ci est positif, **restez 10 jours en isolement**.
+    * Si celui-ci est positif, **restez 7 jours en isolement**.
     * Si celui-ci est négatif, **restez en isolement** et **refaites un test** 7 jours après la guérison de la personne malade.
 4. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
@@ -382,8 +382,8 @@ Nous vous conseillons de :
 Nous vous conseillons de :
 
 1. **Refaire un test RT-PCR immédiatement**, si votre dernier test date d’avant votre dernier contact à risque, pour pouvoir prévenir au plus vite les personnes avec qui vous avez été en contact. Consultez [la carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html) pour trouver un laboratoire. En tant que « cas contact » d’une personne malade, vous serez prioritaire pour faire votre test.
-2. Vous maintenir **en isolement** pendant au moins **10 jours** après le dernier contact à risque, même si le résultat du premier test est négatif.
-3. Faire un **test de contrôle** au 10<sup>e</sup> jour après le dernier contact à risque :
+2. Vous maintenir **en isolement** pendant au moins **7 jours** après le dernier contact à risque, même si le résultat du premier test est négatif.
+3. Faire un **test de contrôle** au 7<sup>e</sup> jour après le dernier contact à risque :
     * s’il est **négatif**, vous pourrez lever votre isolement ;
     * s’il est **positif**, vous devrez prolonger votre isolement pendant **7 jours**, puis vous pourrez lever votre isolement.
 4. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
@@ -397,8 +397,8 @@ Nous vous conseillons de :
 Nous vous conseillons de :
 
 1. **Faire un test RT-PCR immédiatement**, pour pouvoir prévenir au plus vite les personnes avec qui vous avez été en contact. Consultez [la carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html) pour trouver un laboratoire. En tant que « cas contact » d’une personne malade, vous serez prioritaire pour faire votre test.
-2. Vous maintenir **en isolement** pendant au moins **10 jours** après le dernier contact à risque, même si le résultat du premier test est négatif.
-3. Faire un **test de contrôle** au 10<sup>e</sup> jour :
+2. Vous maintenir **en isolement** pendant au moins **7 jours** après le dernier contact à risque, même si le résultat du premier test est négatif.
+3. Faire un **test de contrôle** au 7<sup>e</sup> jour :
     * s’il est **négatif**, vous pourrez lever votre isolement ;
     * s’il est **positif**, vous devrez prolonger votre isolement pendant **7 jours**, puis vous pourrez lever votre isolement.
 4. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
@@ -412,7 +412,7 @@ Nous vous conseillons de :
 Nous vous conseillons de :
 
 1. **Réaliser un test RT-PCR en laboratoire** en consultant [la carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html) (vous serez prioritaire), pour identifier un éventuel **variant** du virus.
-2. Vous maintenir **en isolement** pendant au moins **10 jours** à partir de la date d’apparition des symptômes, si un variant **sud-africain** ou **brésilien** est détecté, refaites un **test de contrôle** à la fin de votre isolement ;
+2. Vous maintenir **en isolement** pendant au moins **10 jours** à partir de la date d’apparition des symptômes. Si un variant **sud-africain** ou **brésilien** est détecté, faites un **test de contrôle** à l’issue des 10 jours (si celui-ci est positif, vous devrez rester en isolement 7 jours de plus).
 3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://www.sante.fr/cf/centres-depistage-covid.html).
 4. Si vous constatez l’apparition de **symptômes**, vous pouvez suivre leur évolution avec le [questionnaire de suivi](#suivisymptomes).
 5. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. Des outils, comme par exemple l’outil [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées et des lieux que vous avez fréquentés depuis le début de votre période contagieuse.
@@ -426,7 +426,7 @@ Nous vous conseillons de :
 Nous vous conseillons de :
 
 1. **Réaliser un test RT-PCR en laboratoire** en consultant [la carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html) (vous serez prioritaire), pour identifier un éventuel **variant** du virus.
-2. Vous maintenir **en isolement** pendant au moins **10 jours** à partir de la date d’apparition des symptômes, si un variant **sud-africain** ou **brésilien** est détecté, refaites un **test de contrôle** à la fin de votre isolement ;
+2. Vous maintenir **en isolement** pendant au moins **10 jours** à partir de la date d’apparition des symptômes. Si un variant **sud-africain** ou **brésilien** est détecté, faites un **test de contrôle** à l’issue des 10 jours (si celui-ci est positif, vous devrez rester en isolement 7 jours de plus).
 3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://www.sante.fr/cf/centres-depistage-covid.html).
 4. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 5. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
@@ -579,12 +579,11 @@ Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7q
 Nous vous conseillons de :
 
 1. **Réaliser un test RT-PCR en laboratoire** en consultant [la carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html) (vous serez prioritaire), pour identifier un éventuel **variant** du virus.
-2. Vous maintenir **en isolement** pendant au moins **10 jours** à partir de la date d’apparition des symptômes, si un variant **sud-africain** ou **brésilien** est détecté, refaites un **test de contrôle** à la fin de votre isolement ;
+2. Vous maintenir **en isolement** pendant au moins **10 jours** à partir de la date d’apparition des symptômes. Si un variant **sud-africain** ou **brésilien** est détecté, faites un **test de contrôle** à l’issue des 10 jours (si celui-ci est positif, vous devrez rester en isolement 7 jours de plus).
 3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://www.sante.fr/cf/centres-depistage-covid.html).
 4. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 5. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
 6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
-
 
 
 

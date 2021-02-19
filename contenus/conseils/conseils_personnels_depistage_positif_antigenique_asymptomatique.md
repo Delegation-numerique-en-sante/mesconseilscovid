@@ -1,7 +1,7 @@
 Nous vous conseillons de :
 
 1. **Réaliser un test RT-PCR en laboratoire** en consultant [la carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html) (vous serez prioritaire), pour identifier un éventuel **variant** du virus.
-2. Vous maintenir **en isolement** pendant au moins **10 jours** à partir de la date d’apparition des symptômes, si un variant **sud-africain** ou **brésilien** est détecté, refaites un **test de contrôle** à la fin de votre isolement ;
+2. Vous maintenir **en isolement** pendant au moins **10 jours** à partir de la date d’apparition des symptômes. Si un variant **sud-africain** ou **brésilien** est détecté, faites un **test de contrôle** à l’issue des 10 jours (si celui-ci est positif, vous devrez rester en isolement 7 jours de plus).
 3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à [réaliser un test](https://www.sante.fr/cf/centres-depistage-covid.html).
 4. Si vous constatez l’apparition de **symptômes**, vous pouvez suivre leur évolution avec le [questionnaire de suivi](#suivisymptomes).
 5. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. Des outils, comme par exemple l’outil [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées et des lieux que vous avez fréquentés depuis le début de votre période contagieuse.
