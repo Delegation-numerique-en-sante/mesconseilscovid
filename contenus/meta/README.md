@@ -178,9 +178,9 @@ Vos informations personnelles sont seulement stockées sur cet appareil, et ne s
 
 #### Aidez-nous à améliorer MesConseilsCovid
 
-Afin de vous apporter des conseils plus pertinents, nous organisons des tests utilisateurs individuels de 20 minutes dont l’objectif est de mieux comprendre vos attentes.
+Afin de vous apporter des conseils plus pertinents, nous organisons des entretiens utilisateurs individuels de 20 minutes dont l’objectif est de mieux comprendre vos attentes.
 
-Vous souhaitez participer à un test utilisateur ? Envoyez-nous simplement **OK** par e-mail à l’adresse <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a>, et nous vous recontacterons pour convenir d’un rendez-vous.
+Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement **OK** ou laissez nous votre numéro de téléphone par e-mail à l’adresse <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a>, et nous vous recontacterons pour convenir d’un rendez-vous.
 
 </div>
 
@@ -404,6 +404,5 @@ Ligne d’écoute pour les parents, ressources pour les parents et professionnel
 ---
 
 <!---->Un de vos proches est malade, nous lui proposons de suivre son état de santé via ce questionnaire en ligne.
-
 
 
