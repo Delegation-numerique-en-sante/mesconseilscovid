@@ -1,0 +1,1 @@
+<!---->On peut lire « <b>présence</b> lignage 20I/501Y.<b>V1</b> » sur les résultats du laboratoire.

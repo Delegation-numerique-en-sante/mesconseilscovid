@@ -1,1 +1,1 @@
-<!---->Variant « sud-africain / brésilien » (lignage <code>20H/501Y.V2</code> ou <code>20J/501Y.V3</code> )
+<!---->Variant « sud-africain » ou « brésilien »

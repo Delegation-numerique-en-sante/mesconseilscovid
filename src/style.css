@@ -782,6 +782,7 @@ fieldset .details {
     font-size: small;
     line-height: 1.75;
 }
+fieldset .secondary label ~ .details,
 fieldset label ~ .details {
     margin-left: 2.25rem;
 }

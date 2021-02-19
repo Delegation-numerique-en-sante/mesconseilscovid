@@ -1,1 +1,1 @@
-<!---->Je ne sais pas / information non communiquée
+<!---->Je ne sais pas, ou je n’ai pas eu l’information
