@@ -234,7 +234,7 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 ## [question_contact_a_risque_variante_aide.md](question_contact_a_risque_variante_aide.md)
 
-La personne positive avec qui vous avez été en contact, ou l’assurance maladie, vous a peut-être indiqué le variant du virus détecté lors de son test. Sinon, vous pourrez revenir compléter cette information plus tard.
+La personne positive avec qui vous avez été en contact, ou l’assurance maladie, vous a peut-être indiqué le variant du virus détecté lors de son test.
 
 
 ## [question_contact_a_risque_variante_libellé.md](question_contact_a_risque_variante_libellé.md)
