@@ -2,6 +2,7 @@
 
 ## 2021-02-19
 
+* passage à 10 jours d’isolement pour les cas positifs
 * conseils pour les tests antigéniques positifs
 * conseils pour les cas contacts des variants sud-africain et brésilien
 * améliore la formulation des questions sur les variants
