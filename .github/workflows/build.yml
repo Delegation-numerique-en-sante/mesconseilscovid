@@ -26,9 +26,13 @@ jobs:
       - name: Set up Playwright
         uses: microsoft/playwright-github-action@v1
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
-          make install
+          make install-python
+
+      - name: Install JS dependencies
+        run: |
+          make install-js
 
       - name: Build
         run: |
