@@ -8,7 +8,7 @@ describe('Frise chronologique sur l’isolement', function () {
     describe('Pas de frise', function () {
         it('La frise ne s’affiche pas par défaut', function () {
             const profil = new Profil('mes_infos', {})
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [])
         })
 
@@ -20,7 +20,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_resultat: 'en_attente',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [])
         })
 
@@ -31,7 +31,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_resultat: 'en_attente',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [])
         })
 
@@ -41,7 +41,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 symptomes_actuels_douleurs: true,
                 depistage: false,
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [])
         })
 
@@ -50,7 +50,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 symptomes_passes: true,
                 depistage: false,
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [])
         })
     })
@@ -64,7 +64,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_resultat: 'positif',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-positif-avec-symptomes',
             ])
@@ -77,7 +77,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_resultat: 'positif',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-positif-avec-symptomes',
             ])
@@ -94,7 +94,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-positif-avec-symptomes',
             ])
@@ -108,7 +108,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-positif-avec-symptomes',
             ])
@@ -124,7 +124,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_resultat: 'positif',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-positif-sans-symptomes',
             ])
@@ -138,7 +138,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_resultat: 'positif',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-positif-sans-symptomes',
             ])
@@ -152,7 +152,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_resultat: 'positif',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-positif-sans-symptomes',
             ])
@@ -164,7 +164,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_resultat: 'positif',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-positif-sans-symptomes',
             ])
@@ -181,7 +181,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-positif-sans-symptomes',
             ])
@@ -196,7 +196,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-positif-sans-symptomes',
             ])
@@ -211,7 +211,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-positif-sans-symptomes',
             ])
@@ -224,7 +224,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-positif-sans-symptomes',
             ])
@@ -240,7 +240,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_resultat: 'negatif',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-foyer-malade',
             ])
@@ -254,7 +254,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 depistage_resultat: 'en_attente',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-foyer-malade',
             ])
@@ -266,7 +266,7 @@ describe('Frise chronologique sur l’isolement', function () {
                 contact_a_risque_meme_lieu_de_vie: true,
                 depistage: false,
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
                 'conseils-timeline-isolement-foyer-malade',
             ])
@@ -278,7 +278,7 @@ describe('Blocs d’informations additionnels', function () {
     describe('Bloc isolement', function () {
         it('Le bloc isolement ne s’affiche pas par défaut', function () {
             const profil = new Profil('mes_infos', {})
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [])
         })
 
@@ -289,7 +289,7 @@ describe('Blocs d’informations additionnels', function () {
                 depistage_resultat: 'positif',
                 _depistage_start_date: new Date().toJSON(),
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
                 'conseils-isolement',
                 'conseils-isolement-depistage-positif',
@@ -306,7 +306,7 @@ describe('Blocs d’informations additionnels', function () {
                 contact_a_risque: true,
                 contact_a_risque_meme_lieu_de_vie: true,
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
                 'conseils-isolement',
                 'conseils-isolement-contact-a-risque',
@@ -322,7 +322,7 @@ describe('Blocs d’informations additionnels', function () {
                 _depistage_start_date: new Date().toJSON(),
                 symptomes_passes: true,
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
                 'conseils-isolement',
                 'conseils-isolement-symptomes',
@@ -335,7 +335,7 @@ describe('Blocs d’informations additionnels', function () {
                 depistage: false,
                 symptomes_passes: true,
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
                 'conseils-isolement',
                 'conseils-isolement-symptomes',
@@ -349,7 +349,7 @@ describe('Blocs d’informations additionnels', function () {
                 symptomes_passes: true,
                 foyer_autres_personnes: true,
             })
-            const algoOrientation = new AlgorithmeOrientation(profil, {})
+            const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
                 'conseils-isolement',
                 'conseils-isolement-symptomes',
@@ -361,7 +361,7 @@ describe('Blocs d’informations additionnels', function () {
     describe('Bloc tests de dépistage', function () {
         it('Cas général', function () {
             var profil = new Profil('mes_infos', {})
-            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [
                 'conseils-tests',
                 'conseils-tests-general',
@@ -376,7 +376,7 @@ describe('Blocs d’informations additionnels', function () {
                 symptomes_passes: true,
                 age: 70,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [
                 'conseils-tests',
                 'conseils-tests-rt-pcr',
@@ -389,7 +389,7 @@ describe('Blocs d’informations additionnels', function () {
                 depistage_resultat: 'en_attente',
                 _depistage_start_date: new Date().toJSON(),
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [
                 'conseils-tests',
                 'conseils-tests-resultats',
@@ -402,7 +402,7 @@ describe('Blocs d’informations additionnels', function () {
                 depistage_resultat: 'positif',
                 _depistage_start_date: new Date().toJSON(),
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [])
         })
         it('Négatif', function () {
@@ -412,7 +412,7 @@ describe('Blocs d’informations additionnels', function () {
                 depistage_resultat: 'negatif',
                 _depistage_start_date: new Date().toJSON(),
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, { '01': 9.9 })
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [])
         })
     })
@@ -521,7 +521,7 @@ describe('Blocs d’informations additionnels', function () {
     describe('Bloc grossesse', function () {
         it('Le bloc grossesse ne s’affiche pas par défaut', function () {
             var profil = new Profil('mes_infos', {})
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.grossesseBlockNamesToDisplay(), [])
         })
 
@@ -529,7 +529,7 @@ describe('Blocs d’informations additionnels', function () {
             var profil = new Profil('mes_infos', {
                 grossesse_3e_trimestre: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.grossesseBlockNamesToDisplay(), [
                 'conseils-grossesse',
             ])
@@ -540,7 +540,7 @@ describe('Blocs d’informations additionnels', function () {
                 grossesse_3e_trimestre: true,
                 symptomes_actuels: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.grossesseBlockNamesToDisplay(), [
                 'conseils-grossesse',
             ])
@@ -551,7 +551,7 @@ describe('Blocs d’informations additionnels', function () {
                 grossesse_3e_trimestre: true,
                 symptomes_passes: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.grossesseBlockNamesToDisplay(), [
                 'conseils-grossesse',
             ])
@@ -562,7 +562,7 @@ describe('Blocs d’informations additionnels', function () {
                 grossesse_3e_trimestre: true,
                 contact_a_risque: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.grossesseBlockNamesToDisplay(), [
                 'conseils-grossesse',
             ])
@@ -572,7 +572,7 @@ describe('Blocs d’informations additionnels', function () {
     describe('Bloc santé', function () {
         it('Le bloc santé ne s’affiche pas par défaut', function () {
             var profil = new Profil('mes_infos', {})
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [])
         })
 
@@ -580,7 +580,7 @@ describe('Blocs d’informations additionnels', function () {
             var profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [])
         })
 
@@ -588,7 +588,7 @@ describe('Blocs d’informations additionnels', function () {
             var profil = new Profil('mes_infos', {
                 symptomes_passes: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [])
         })
 
@@ -596,7 +596,7 @@ describe('Blocs d’informations additionnels', function () {
             var profil = new Profil('mes_infos', {
                 contact_a_risque: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [])
         })
 
@@ -604,7 +604,7 @@ describe('Blocs d’informations additionnels', function () {
             var profil = new Profil('mes_infos', {
                 age: 65,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
                 'reponse-sante-caracteristiques-a-risques',
@@ -618,7 +618,7 @@ describe('Blocs d’informations additionnels', function () {
                 symptomes_actuels_douleurs: true,
                 age: 65,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
                 'reponse-sante-caracteristiques-a-risques',
@@ -631,7 +631,7 @@ describe('Blocs d’informations additionnels', function () {
                 taille: 150,
                 poids: 100,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
                 'reponse-sante-caracteristiques-a-risques',
@@ -643,7 +643,7 @@ describe('Blocs d’informations additionnels', function () {
             var profil = new Profil('mes_infos', {
                 grossesse_3e_trimestre: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
                 'reponse-sante-caracteristiques-a-risques',
@@ -655,7 +655,7 @@ describe('Blocs d’informations additionnels', function () {
             var profil = new Profil('mes_infos', {
                 antecedent_cardio: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [
                 'conseils-sante',
                 'reponse-sante-antecedents',
@@ -667,7 +667,7 @@ describe('Blocs d’informations additionnels', function () {
             var profil = new Profil('mes_infos', {
                 antecedent_chronique_autre: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.santeBlockNamesToDisplay(), [])
         })
     })
@@ -675,7 +675,7 @@ describe('Blocs d’informations additionnels', function () {
     describe('Bloc enfants', function () {
         it('Aucun risque foyer (enfants) n’affiche rien', function () {
             var profil = new Profil('mes_infos', {})
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.enfantsBlockNamesToDisplay(), [])
         })
 
@@ -683,7 +683,7 @@ describe('Blocs d’informations additionnels', function () {
             var profil = new Profil('mes_infos', {
                 foyer_enfants: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.enfantsBlockNamesToDisplay(), [
                 'conseils-foyer-enfants',
             ])
@@ -693,7 +693,7 @@ describe('Blocs d’informations additionnels', function () {
     describe('Bloc activité pro', function () {
         it('Aucune activité pro n’affiche rien', function () {
             var profil = new Profil('mes_infos', {})
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [])
         })
 
@@ -701,7 +701,7 @@ describe('Blocs d’informations additionnels', function () {
             var profil = new Profil('mes_infos', {
                 activite_pro: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
@@ -715,7 +715,7 @@ describe('Blocs d’informations additionnels', function () {
                 activite_pro: true,
                 grossesse_3e_trimestre: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
@@ -729,7 +729,7 @@ describe('Blocs d’informations additionnels', function () {
                 activite_pro: true,
                 age: 65,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
@@ -743,7 +743,7 @@ describe('Blocs d’informations additionnels', function () {
                 activite_pro: true,
                 antecedent_cancer: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
@@ -758,7 +758,7 @@ describe('Blocs d’informations additionnels', function () {
                 activite_pro: true,
                 activite_pro_sante: true,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
@@ -773,7 +773,7 @@ describe('Blocs d’informations additionnels', function () {
                 symptomes_actuels_temperature: true,
                 depistage: false,
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',
@@ -791,7 +791,7 @@ describe('Blocs d’informations additionnels', function () {
                 depistage_resultat: 'en_attente',
                 _depistage_start_date: new Date().toJSON(),
             })
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
                 'conseils-activite',
                 'reponse-activite-pro',

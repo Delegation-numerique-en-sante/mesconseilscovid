@@ -1245,7 +1245,7 @@ describe('Situation, statut et conseils personnels selon profil', function () {
         const profil = createProfil(cas.profil)
         assert.isTrue(profil.isComplete())
 
-        const algo = new AlgorithmeOrientation(profil, {})
+        const algo = new AlgorithmeOrientation(profil)
         assert.equal(algo.situation, cas.situation)
         assert.deepEqual(algo.statutEtConseils, {
             statut: cas.statut,
