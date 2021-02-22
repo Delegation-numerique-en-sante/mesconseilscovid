@@ -241,7 +241,7 @@ describe('Parcours', function () {
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
-                'Prévoir un test en laboratoire'
+                'Si le test est négatif, restez en isolement, et faites un test'
             )
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
         }

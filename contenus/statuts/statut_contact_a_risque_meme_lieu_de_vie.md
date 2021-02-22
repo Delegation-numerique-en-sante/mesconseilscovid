@@ -1,1 +1,1 @@
-Restez **en isolement**.
+Restez **en isolement**, et refaites un test 7 jours après la guérison de la personne malade.

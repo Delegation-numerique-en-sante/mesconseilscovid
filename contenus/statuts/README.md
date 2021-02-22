@@ -35,31 +35,17 @@ Restez **en isolement** et **refaites un test** 7 jours après votre dernier co
 
 ## [statut_contact_a_risque_meme_lieu_de_vie.md](statut_contact_a_risque_meme_lieu_de_vie.md)
 
-Restez **en isolement**.
-
+Restez **en isolement**, et refaites un test 7 jours après la guérison de la personne malade.
 
 
 ## [statut_contact_a_risque_meme_lieu_de_vie_sans_depistage.md](statut_contact_a_risque_meme_lieu_de_vie_sans_depistage.md)
 
-Restez **en isolement** et **faites un test** dès que possible.
-
+Faites un **test antigénique immédiatement**, restez en **isolement**, puis  refaites un test 7 jours après la guérison de la personne malade.
 
 
 ## [statut_contact_a_risque_sans_test.md](statut_contact_a_risque_sans_test.md)
 
-Restez **en isolement** et **faites un test** 7 jours après votre dernier contact à risque.
-
-
-
-## [statut_contact_a_risque_variante_d_interet_avec_test.md](statut_contact_a_risque_variante_d_interet_avec_test.md)
-
-Refaites un **test immédiatement** (s’il date d’avant votre contact à risque), restez en **isolement**, puis faites un test de contrôle après 7 jours.
-
-
-## [statut_contact_a_risque_variante_d_interet_sans_test.md](statut_contact_a_risque_variante_d_interet_sans_test.md)
-
-Faites un **test immédiatement**, restez en **isolement**, puis faites un test de contrôle après 7 jours.
-
+Faites un **test antigénique immédiatement**, restez en **isolement**, puis refaites un test 7 jours après votre dernier contact à risque.
 
 
 ## [statut_en_attente.md](statut_en_attente.md)
