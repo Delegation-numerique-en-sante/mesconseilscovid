@@ -544,11 +544,7 @@ export default class Profil {
     }
 
     isContactARisqueComplete() {
-        return (
-            typeof this.contact_a_risque !== 'undefined' &&
-            (this.contact_a_risque === false ||
-                typeof this.contact_a_risque_variante !== 'undefined')
-        )
+        return typeof this.contact_a_risque !== 'undefined'
     }
 
     isDepistageComplete() {
