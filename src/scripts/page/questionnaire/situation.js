@@ -1,11 +1,11 @@
-import { hideSelector } from '../../affichage.js'
+import { hideSelector } from '../../affichage'
 import {
     enableOrDisableSecondaryFields,
     preloadForm,
     preloadCheckboxForm,
     toggleFormButtonOnSelectFieldsRequired,
-} from '../../formutils.js'
-import geolocalisation from '../../geoloc.js'
+} from '../../formutils'
+import geolocalisation from '../../geoloc'
 
 export default function situation(form, app) {
     // Pré-remplir le formulaire avec le profil.

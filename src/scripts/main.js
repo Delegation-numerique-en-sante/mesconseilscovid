@@ -9,8 +9,8 @@ import './polyfills/custom_event'
 
 import { register as registerTimeAgo } from 'timeago.js'
 
-import { bindFeedback, bindSuppressionTotale } from './actions.js'
-import App from './app.js'
+import { bindFeedback, bindSuppressionTotale } from './actions'
+import App from './app'
 
 var app = new App()
 window.app = app

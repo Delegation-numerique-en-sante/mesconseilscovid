@@ -4,7 +4,7 @@ import {
     getRadioValue,
     preloadCheckboxForm,
     toggleFormButtonOnTextFieldsAndRadioRequired,
-} from '../../formutils.js'
+} from '../../formutils'
 
 export default function depistage(form, app) {
     const datePicker = form.querySelector('#depistage_start_date')

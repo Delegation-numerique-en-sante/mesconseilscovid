@@ -1,9 +1,9 @@
 import { assert } from 'chai'
 
-import AlgorithmeOrientation from '../algorithme/orientation.js'
-import AlgorithmeVaccination from '../algorithme/vaccination.js'
+import AlgorithmeOrientation from '../algorithme/orientation'
+import AlgorithmeVaccination from '../algorithme/vaccination'
 
-import Profil from '../profil.js'
+import Profil from '../profil'
 
 describe('Vaccination', function () {
     it('Pas de vaccination par défaut', function () {

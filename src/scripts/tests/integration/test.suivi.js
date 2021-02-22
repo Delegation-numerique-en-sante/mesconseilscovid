@@ -3,7 +3,7 @@ import {
     remplirQuestionnaire,
     remplirSuivi,
     waitForPlausibleTrackingEvent,
-} from './helpers.js'
+} from './helpers'
 
 describe('Suivi', function () {
     it('remplir le questionnaire de suivi pour moi', async function () {

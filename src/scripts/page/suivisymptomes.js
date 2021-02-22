@@ -1,11 +1,11 @@
-import { hideElement, showElement } from '../affichage.js'
+import { hideElement, showElement } from '../affichage'
 import {
     enableOrDisableSecondaryFields,
     getRadioValue,
     toggleFormButtonOnRadioRequired,
-} from '../formutils.js'
+} from '../formutils'
 
-import AlgorithmeDeconfinement from '../algorithme/deconfinement.js'
+import AlgorithmeDeconfinement from '../algorithme/deconfinement'
 
 export default function suivisymptomes(form, app) {
     // Enregistre le démarrage du suivi si la date n’est pas renseignée

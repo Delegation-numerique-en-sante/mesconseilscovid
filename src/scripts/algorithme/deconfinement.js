@@ -1,4 +1,4 @@
-import { joursApres, joursAvant } from '../utils.js'
+import { joursApres, joursAvant } from '../utils'
 
 export default class AlgorithmeDeconfinement {
     constructor(profil) {

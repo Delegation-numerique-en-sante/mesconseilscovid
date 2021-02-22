@@ -1,4 +1,4 @@
-import { hideSelector, displayElementById } from './affichage.js'
+import { hideSelector, displayElementById } from './affichage'
 
 var Geolocaliseur = function () {
     this.matchDepartement = function (lat, lon, departementFound, departementNotFound) {

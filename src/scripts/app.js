@@ -1,13 +1,13 @@
-import Profil from './profil.js'
-import StockageLocal from './stockage.js'
-import { Questionnaire } from './questionnaire.js'
-import { joursAvant } from './utils.js'
+import Profil from './profil'
+import StockageLocal from './stockage'
+import { Questionnaire } from './questionnaire'
+import { joursAvant } from './utils'
 
-import { initRouter } from './router.js'
-import Updater from './updater.js'
+import { initRouter } from './router'
+import Updater from './updater'
 
-import { registerPlausible } from './plausible.js'
-import { registerATInternet } from './atinternet.js'
+import { registerPlausible } from './plausible'
+import { registerATInternet } from './atinternet'
 
 export default class App {
     constructor() {

@@ -1,9 +1,9 @@
 import { format } from 'timeago.js'
 
-import prefectures from './data/prefectures.js'
-import ctaiTelephones from './data/ctaiTelephones.js'
-import ctaiCourriels from './data/ctaiCourriels.js'
-import departements from './data/departements.js'
+import prefectures from './data/prefectures'
+import ctaiTelephones from './data/ctaiTelephones'
+import ctaiCourriels from './data/ctaiCourriels'
+import departements from './data/departements'
 
 export function nomProfil(element, app) {
     if (!element) return

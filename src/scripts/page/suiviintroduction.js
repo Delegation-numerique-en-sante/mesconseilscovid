@@ -1,5 +1,5 @@
-import { bindCalendar } from '../actions.js'
-import SuiviView from '../suivi.js'
+import { bindCalendar } from '../actions'
+import SuiviView from '../suivi'
 
 export default function suiviintroduction(element, app) {
     const suivi = new SuiviView(app.profil)

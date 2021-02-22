@@ -1,11 +1,11 @@
-import applyDetailsSummaryPolyfill from '../polyfills/details_polyfill.js'
+import applyDetailsSummaryPolyfill from '../polyfills/details_polyfill'
 
 import {
     bindCalendar,
     bindFeedback,
     bindImpression,
     bindSuppressionTotale,
-} from '../actions.js'
+} from '../actions'
 import {
     displayBlocks,
     displayElementById,
@@ -13,12 +13,12 @@ import {
     showElement,
     showMeOrThem,
     showSelector,
-} from '../affichage.js'
-import * as injection from '../injection.js'
-import { joursAvant, joursApres } from '../utils.js'
+} from '../affichage'
+import * as injection from '../injection'
+import { joursAvant, joursApres } from '../utils'
 
-import AlgorithmeOrientation from '../algorithme/orientation.js'
-import AlgorithmeSuivi from '../algorithme/suivi.js'
+import AlgorithmeOrientation from '../algorithme/orientation'
+import AlgorithmeSuivi from '../algorithme/suivi'
 
 export default function conseils(element, app) {
     applyDetailsSummaryPolyfill(element)

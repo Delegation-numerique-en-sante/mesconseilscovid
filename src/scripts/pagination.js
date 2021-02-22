@@ -1,4 +1,4 @@
-import { showMeOrThem } from './affichage.js'
+import { showMeOrThem } from './affichage'
 
 export function getCurrentPageName() {
     var hash = document.location.hash

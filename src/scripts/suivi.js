@@ -1,7 +1,7 @@
 import { format } from 'timeago.js'
-import { createElementFromHTML, safeHtml } from './affichage.js'
+import { createElementFromHTML, safeHtml } from './affichage'
 
-import AlgorithmeSuivi from './algorithme/suivi.js'
+import AlgorithmeSuivi from './algorithme/suivi'
 
 import SUIVI_IMAGES from '../suivi_*.svg'
 

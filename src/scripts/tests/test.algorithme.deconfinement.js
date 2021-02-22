@@ -1,9 +1,9 @@
 import { assert } from 'chai'
 
-import { joursAvant, heuresAvant } from '../utils.js'
-import AlgorithmeDeconfinement from '../algorithme/deconfinement.js'
+import { joursAvant, heuresAvant } from '../utils'
+import AlgorithmeDeconfinement from '../algorithme/deconfinement'
 
-import Profil from '../profil.js'
+import Profil from '../profil'
 
 describe('Algorithme déconfinement', function () {
     describe('Quarantaine pour tous', function () {

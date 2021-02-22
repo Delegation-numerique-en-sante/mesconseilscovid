@@ -1,5 +1,5 @@
-import Profil from '../profil.js'
-import { createElementFromHTML, hideElement, showElement } from '../affichage.js'
+import Profil from '../profil'
+import { createElementFromHTML, hideElement, showElement } from '../affichage'
 
 export default function introduction(element, app) {
     const header = document.querySelector('header section')

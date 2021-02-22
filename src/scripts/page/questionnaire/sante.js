@@ -3,8 +3,8 @@ import {
     preloadForm,
     preloadCheckboxForm,
     toggleFormButtonOnTextFieldsRequired,
-} from '../../formutils.js'
-import AlgorithmeOrientation from '../../algorithme/orientation.js'
+} from '../../formutils'
+import AlgorithmeOrientation from '../../algorithme/orientation'
 
 export default function sante(form, app) {
     const button = form.querySelector('input[type=submit]')

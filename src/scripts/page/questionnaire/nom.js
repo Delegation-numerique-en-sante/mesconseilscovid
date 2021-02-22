@@ -1,4 +1,4 @@
-import { toggleFormButtonOnTextFieldsRequired } from '../../formutils.js'
+import { toggleFormButtonOnTextFieldsRequired } from '../../formutils'
 
 export default function nom(form, app) {
     var button = form.querySelector('input[type=submit]')

@@ -1,6 +1,6 @@
-import ICS from './ics.js'
-import { hideElement, showElement } from './affichage.js'
-import { getCurrentPageName } from './pagination.js'
+import ICS from './ics'
+import { hideElement, showElement } from './affichage'
+import { getCurrentPageName } from './pagination'
 
 export function bindCalendar(element, profil) {
     const ics = new ICS(navigator.appVersion)

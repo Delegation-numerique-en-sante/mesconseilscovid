@@ -1,6 +1,6 @@
-import { getCurrentPageName } from './pagination.js'
-import { showElement } from './affichage.js'
-import { ORDRE } from './questionnaire.js'
+import { getCurrentPageName } from './pagination'
+import { showElement } from './affichage'
+import { ORDRE } from './questionnaire'
 
 export default class Updater {
     constructor(router) {

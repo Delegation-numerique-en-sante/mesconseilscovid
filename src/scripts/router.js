@@ -1,32 +1,32 @@
 import Navigo from 'navigo'
 
-import { hideElement, showElement } from './affichage.js'
-import { nomProfil } from './injection.js'
-import { getCurrentPageName, loadPage } from './pagination.js'
+import { hideElement, showElement } from './affichage'
+import { nomProfil } from './injection'
+import { getCurrentPageName, loadPage } from './pagination'
 
-import introduction from './page/introduction.js'
+import introduction from './page/introduction'
 
-import nouvelleversion from './page/nouvelleversion.js'
+import nouvelleversion from './page/nouvelleversion'
 
-import nom from './page/questionnaire/nom.js'
+import nom from './page/questionnaire/nom'
 
-import symptomes from './page/questionnaire/symptomes.js'
-import depistage from './page/questionnaire/depistage.js'
-import contactarisque from './page/questionnaire/contactarisque.js'
-import situation from './page/questionnaire/situation.js'
-import sante from './page/questionnaire/sante.js'
-import conseils from './page/conseils.js'
+import symptomes from './page/questionnaire/symptomes'
+import depistage from './page/questionnaire/depistage'
+import contactarisque from './page/questionnaire/contactarisque'
+import situation from './page/questionnaire/situation'
+import sante from './page/questionnaire/sante'
+import conseils from './page/conseils'
 
-import suiviintroduction from './page/suiviintroduction.js'
-import suivisymptomes from './page/suivisymptomes.js'
-import suivihistorique from './page/suivihistorique.js'
+import suiviintroduction from './page/suiviintroduction'
+import suivisymptomes from './page/suivisymptomes'
+import suivihistorique from './page/suivihistorique'
 
 import {
     beforeConseils,
     beforeSuiviIntroduction,
     beforeSuiviSymptomes,
     beforeSuiviHistorique,
-} from './questionnaire.js'
+} from './questionnaire'
 
 export function initRouter(app) {
     var root = null

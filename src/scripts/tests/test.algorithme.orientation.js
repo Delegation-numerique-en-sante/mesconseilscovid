@@ -1,8 +1,8 @@
 import { assert } from 'chai'
 
-import AlgorithmeOrientation from '../algorithme/orientation.js'
+import AlgorithmeOrientation from '../algorithme/orientation'
 
-import Profil from '../profil.js'
+import Profil from '../profil'
 
 describe('Frise chronologique sur l’isolement', function () {
     describe('Pas de frise', function () {
