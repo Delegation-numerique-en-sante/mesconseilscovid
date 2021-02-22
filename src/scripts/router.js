@@ -101,8 +101,8 @@ export function initRouter(app) {
     }
 
     function trackPageView(pageName) {
-        window.plausible('pageview')
-        window.atinternet(pageName)
+        app.plausible('pageview')
+        app.atinternet(pageName)
     }
 
     function fillNavigation(element, pageName) {

@@ -6,5 +6,5 @@ export default function suivihistorique(element, app) {
     const container = element.querySelector('#historique')
     container.innerHTML = '<div class="break"></div>'
     container.insertBefore(suivi.renderHistorique(), container.firstChild)
-    bindImpression(element)
+    bindImpression(element, app)
 }

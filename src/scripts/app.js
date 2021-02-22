@@ -6,12 +6,20 @@ import { joursAvant } from './utils.js'
 import { initRouter } from './router.js'
 import Updater from './updater.js'
 
+import { registerPlausible } from './plausible.js'
+import { registerATInternet } from './atinternet.js'
+
 export default class App {
     constructor() {
         this.profil = new Profil()
         this.stockage = new StockageLocal()
         this.questionnaire = new Questionnaire()
+
+        // Statistiques.
         this._plausibleTrackingEvents = []
+        this.plausible = registerPlausible(window)
+        this.atinternet = registerATInternet()
+
         this.source = new URLSearchParams(window.location.search).get('source')
     }
     init() {

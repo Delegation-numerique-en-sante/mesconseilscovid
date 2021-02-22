@@ -65,12 +65,6 @@ export function registerPlausible(window) {
     }
 
     try {
-        var queue = (window.plausible && window.plausible.q) || []
-        window.plausible = trigger
-        for (var i = 0; i < queue.length; i++) {
-            trigger.apply(this, queue[i])
-        }
-
         // Seulement pour la racine, sinon ça fait doublon.
         if (location.hash.slice(1) === '') {
             trigger('pageview')
@@ -79,4 +73,6 @@ export function registerPlausible(window) {
         new Image().src =
             plausibleHost + '/api/error?message=' + encodeURIComponent(e.message)
     }
+
+    return trigger
 }
