@@ -1,5 +1,5 @@
 // Statistiques pour le Service d’Information du Gouvernement (ATInternet)
-export function registerATInternet(window) {
+export function registerATInternet() {
     const host = 'https://logs1412.xiti.com'
     const siteID = 614871
 
@@ -38,5 +38,5 @@ export function registerATInternet(window) {
         request.send(null)
     }
 
-    window.atinternet = trigger
+    return trigger
 }

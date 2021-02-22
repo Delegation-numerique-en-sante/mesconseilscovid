@@ -8,15 +8,9 @@ import 'core-js/web/url-search-params'
 import './polyfills/custom_event'
 
 import { register as registerTimeAgo } from 'timeago.js'
-import { registerPlausible } from './plausible.js'
-import { registerATInternet } from './atinternet.js'
 
 import { bindFeedback, bindSuppressionTotale } from './actions.js'
 import App from './app.js'
-
-// Statistiques.
-registerPlausible(window)
-registerATInternet(window)
 
 var app = new App()
 window.app = app

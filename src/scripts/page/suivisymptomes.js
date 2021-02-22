@@ -67,14 +67,14 @@ export default function suivisymptomes(form, app) {
         }
         app.profil.ajouterEtat(etat)
 
-        window.plausible(`Suivi rempli`)
+        app.plausible(`Suivi rempli`)
 
         if (app.profil.suivi.length === 1) {
-            window.plausible(`Premier suivi`)
+            app.plausible(`Premier suivi`)
         } else if (app.profil.suivi.length === 2) {
-            window.plausible(`Deuxième suivi`)
+            app.plausible(`Deuxième suivi`)
         } else if (app.profil.suivi.length === 3) {
-            window.plausible(`Troisième suivi`)
+            app.plausible(`Troisième suivi`)
         }
 
         const estOui = (symptome) => symptome === 'oui'
@@ -119,7 +119,7 @@ export default function suivisymptomes(form, app) {
         if (algoDeconfinement.isDeconfinable()) {
             if (!app.profil.hasDeconfinementDate()) {
                 app.profil.deconfinement_date = new Date()
-                window.plausible(`Suivi deconfinement`)
+                app.plausible(`Suivi deconfinement`)
             }
         } else {
             app.profil.deconfinement_date = undefined

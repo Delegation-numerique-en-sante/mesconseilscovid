@@ -38,11 +38,11 @@ export default function conseils(element, app) {
     if (typeof app.profil.questionnaire_completion_date === 'undefined') {
         app.profil.questionnaire_completion_date = new Date()
         app.enregistrerProfilActuel()
-        window.plausible('Questionnaire terminé')
+        app.plausible('Questionnaire terminé')
         if (app.profil.estMonProfil()) {
-            window.plausible('Questionnaire terminé pour moi')
+            app.plausible('Questionnaire terminé pour moi')
         } else {
-            window.plausible('Questionnaire terminé pour un proche')
+            app.plausible('Questionnaire terminé pour un proche')
         }
     }
 
@@ -89,7 +89,7 @@ export default function conseils(element, app) {
 
     // Make the buttons clickable with appropriate actions.
     bindFeedback(element.querySelector('.feedback-component'), app)
-    bindImpression(element)
+    bindImpression(element, app)
     if (app.profil.hasSuiviStartDate()) {
         bindCalendar(element, app.profil)
     }

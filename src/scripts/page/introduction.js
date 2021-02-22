@@ -82,7 +82,7 @@ function _bindFunc(element, app, func) {
 function bindSuppression(element, app) {
     element.addEventListener('click', function (event) {
         event.preventDefault()
-        window.plausible('Suppression')
+        app.plausible('Suppression')
         const nom = element.dataset.deleteProfil
         const description = nom === 'mes_infos' ? 'votre profil' : `le profil de ${nom}`
         if (confirm(`Êtes-vous sûr·e de vouloir supprimer ${description} ?`)) {

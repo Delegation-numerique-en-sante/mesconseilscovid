@@ -91,7 +91,7 @@ export function bindFeedback(component, app) {
         button.addEventListener('click', (event) => {
             event.preventDefault()
             const feedback = event.target.dataset.feedback
-            window.plausible(`Avis ${feedback}`)
+            app.plausible(`Avis ${feedback}`)
             askForMoreFeedback(feedback, component)
         })
     })
@@ -103,11 +103,11 @@ export function bindFeedback(component, app) {
     })
 }
 
-export function bindImpression(element) {
+export function bindImpression(element, app) {
     const printButton = element.querySelector('.js-impression')
     printButton.addEventListener('click', (event) => {
         event.preventDefault()
-        window.plausible('Impression')
+        app.plausible('Impression')
         try {
             element.querySelectorAll('details').forEach((detail) => {
                 detail.setAttribute('open', '')
@@ -123,7 +123,7 @@ export function bindImpression(element) {
 export function bindSuppressionTotale(element, app) {
     element.addEventListener('click', (event) => {
         event.preventDefault()
-        window.plausible('Suppression totale')
+        app.plausible('Suppression totale')
         if (confirm('Êtes-vous sûr·e de vouloir supprimer tous les profils ?')) {
             app.supprimerTout().then(() => {
                 if (app.router.lastRouteResolved().url === 'introduction') {

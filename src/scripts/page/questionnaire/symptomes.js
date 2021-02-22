@@ -132,11 +132,11 @@ function premierDemarrageFormulaire(app) {
     if (typeof app.profil.questionnaire_start_date === 'undefined') {
         app.profil.questionnaire_start_date = new Date()
         app.enregistrerProfilActuel()
-        window.plausible('Questionnaire commencé')
+        app.plausible('Questionnaire commencé')
         if (app.profil.estMonProfil()) {
-            window.plausible('Questionnaire commencé pour moi')
+            app.plausible('Questionnaire commencé pour moi')
         } else {
-            window.plausible('Questionnaire commencé pour un proche')
+            app.plausible('Questionnaire commencé pour un proche')
         }
     }
 }
