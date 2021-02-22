@@ -1,1 +1,0 @@
-Refaites un **test immédiatement** (s’il date d’avant votre contact à risque), restez en **isolement**, puis faites un test de contrôle après 7 jours.

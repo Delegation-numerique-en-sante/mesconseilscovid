@@ -1,1 +1,1 @@
-Restez **en isolement** et **faites un test** 7 jours après votre dernier contact à risque.
+Faites un **test antigénique immédiatement**, restez en **isolement**, puis refaites un test 7 jours après votre dernier contact à risque.

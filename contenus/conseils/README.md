@@ -340,13 +340,15 @@ Comme vous avez des signes de la Covid et que vous avez des risques de développ
 
 Nous vous conseillons de :
 
-1. Vous maintenir **en isolement pendant 7 jours** après le dernier contact à risque.
-2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
-3. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
-4. **Prévoir un test en laboratoire au 7<sup>e</sup> jour** suivant le dernier contact avec le malade, en consultant [la carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html). En tant que « Cas contact » d’une personne malade vous serez prioritaire pour faire votre test :
-    * S’il est **négatif**, vous pourrez lever votre isolement.
-    * Si le test est **positif**, il faudra à nouveau 7 jours d’isolement, et surveiller l’apparition de symptômes.
-5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+1. Vous maintenir **en isolement**.
+2. Faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+    * Si le test est **positif**, restez **en isolement au moins 10 jours** à partir de la date du test, et renseignez le [résultat du test](#depistage) pour mettre à jour ces conseils.
+    * Si le test est **négatif**, restez **en isolement**, et faites un test **7 jours après le dernier contact à risque** ;
+        * s’il est **négatif**, vous pourrez lever votre isolement ;
+        * s’il est **positif**, restez en isolement **au moins 10 jours** à partir de la date du test, et surveillez l’apparition de symptômes.
+5. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
+6. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
+7. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 
 
@@ -365,10 +367,10 @@ Nous vous conseillons de :
 
 1. Vous maintenir **en isolement**.
 2. Appliquer **les mesures barrières renforcées** avec la personne malade et les autres membres de votre foyer.
-3. **Faire un test** en laboratoire 7 jours après la guérison de la personne malade :
-    * S’il est **négatif**, vous pourrez lever votre isolement.
-    * Si le test est **positif**, il faudra à nouveau 7 jours d’isolement, et surveiller l’apparition de symptômes.
-4. Si vous constatez l’apparition de **symptômes**, contactez votre médecin, et suivez leur évolution avec le [questionnaire de suivi](#suivisymptomes).
+3. Faire un test **7 jours après la guérison** de la personne malade :
+    * s’il est **négatif**, vous pourrez lever votre isolement ;
+    * s’il est **positif**, restez en isolement **au moins 10 jours** à partir de la date du test, et surveillez l’apparition de symptômes.
+4. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pourrez suivre leur évolution avec le [questionnaire de suivi](#suivisymptomes).
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 
@@ -378,42 +380,14 @@ Nous vous conseillons de :
 Nous vous conseillons de :
 
 1. Vous maintenir **en isolement**.
-2. Appliquer **les mesures barrières renforcées** avec la personne malade et les autres membres de votre foyer.
-3. Faire un **test de dépistage** en laboratoire :
-    * Si celui-ci est positif, **restez 7 jours en isolement**.
-    * Si celui-ci est négatif, **restez en isolement** et **refaites un test** 7 jours après la guérison de la personne malade.
-4. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
-5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
-
-
-
-## [conseils_personnels_contact_à_risque_variante_d_interet_avec_test.md](conseils_personnels_contact_à_risque_variante_d_interet_avec_test.md)
-
-Nous vous conseillons de :
-
-1. **Refaire un test RT-PCR immédiatement**, si votre dernier test date d’avant votre dernier contact à risque, pour pouvoir prévenir au plus vite les personnes avec qui vous avez été en contact. Consultez [la carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html) pour trouver un laboratoire. En tant que « cas contact » d’une personne malade, vous serez prioritaire pour faire votre test.
-2. Vous maintenir **en isolement** pendant au moins **7 jours** après le dernier contact à risque, même si le résultat du premier test est négatif.
-3. Faire un **test de contrôle** au 7<sup>e</sup> jour après le dernier contact à risque :
-    * s’il est **négatif**, vous pourrez lever votre isolement ;
-    * s’il est **positif**, vous devrez prolonger votre isolement pendant **7 jours**, puis vous pourrez lever votre isolement.
-4. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
-5. Si vous constatez l’apparition de **symptômes**, contactez votre médecin. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
-6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
-
-
-
-## [conseils_personnels_contact_à_risque_variante_d_interet_sans_test.md](conseils_personnels_contact_à_risque_variante_d_interet_sans_test.md)
-
-Nous vous conseillons de :
-
-1. **Faire un test RT-PCR immédiatement**, pour pouvoir prévenir au plus vite les personnes avec qui vous avez été en contact. Consultez [la carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html) pour trouver un laboratoire. En tant que « cas contact » d’une personne malade, vous serez prioritaire pour faire votre test.
-2. Vous maintenir **en isolement** pendant au moins **7 jours** après le dernier contact à risque, même si le résultat du premier test est négatif.
-3. Faire un **test de contrôle** au 7<sup>e</sup> jour :
-    * s’il est **négatif**, vous pourrez lever votre isolement ;
-    * s’il est **positif**, vous devrez prolonger votre isolement pendant **7 jours**, puis vous pourrez lever votre isolement.
-4. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
-5. Si vous constatez l’apparition de **symptômes**, contactez votre médecin. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
-6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+2. Faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+    * Si le test est **positif**, restez **en isolement au moins 10 jours** à partir de la date du test, et renseignez le [résultat du test](#depistage) pour mettre à jour ces conseils.
+    * Si le test est **négatif**, restez **en isolement**, et faites un test **7 jours après la guérison** de la personne malade ;
+        * s’il est **négatif**, vous pourrez lever votre isolement ;
+        * s’il est **positif**, restez en isolement **au moins 10 jours** à partir de la date du test, et surveillez l’apparition de symptômes.
+5. Appliquer **les mesures barrières renforcées** avec la personne malade et les autres membres de votre foyer.
+6. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
+7. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 
 
