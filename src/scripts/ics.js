@@ -20,7 +20,7 @@ export default class ICS {
         const dates = this.generateDates(startDate, endDate, now)
         const rruleString = this.generateRRule(rrule)
 
-        let calendarEvent = [
+        let calendarEventLines = [
             'BEGIN:VEVENT',
             'UID:' + this.calendarEvents.length + '@' + this.uidDomain,
             'CLASS:PUBLIC',
@@ -34,10 +34,10 @@ export default class ICS {
         ]
 
         if (rruleString) {
-            calendarEvent.splice(4, 0, rruleString)
+            calendarEventLines.splice(4, 0, rruleString)
         }
 
-        calendarEvent = calendarEvent.join(this.SEPARATOR)
+        let calendarEvent = calendarEventLines.join(this.SEPARATOR)
 
         this.calendarEvents.push(calendarEvent)
         return calendarEvent
