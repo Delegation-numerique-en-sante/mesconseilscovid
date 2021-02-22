@@ -550,6 +550,9 @@ export default class AlgorithmeOrientation {
         const blockNames = ['conseils-vie-quotidienne']
         if (this.profil.departement === '976') {
             blockNames.push('conseils-confinement')
+        } else if (this.profil.departement === '06') {
+            blockNames.push('conseils-couvre-feu-18h')
+            blockNames.push('conseils-confinement-week-end')
         } else {
             blockNames.push('conseils-couvre-feu-18h')
         }

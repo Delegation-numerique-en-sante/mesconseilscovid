@@ -91,6 +91,16 @@ Des **attestations permanentes** peuvent être fournies par l’employeur pour l
 
 
 
+## [conseils_confinement_week_end.md](conseils_confinement_week_end.md)
+
+<div class="conseil conseil-orange">
+
+<span class="nouveau">nouveau</span> Un **confinement** s’applique **le week-end** dans votre département. Il vous faudra [une attestation dérogatoire](https://media.interieur.gouv.fr/deplacement-covid-19/) pour justifier de vos sorties à l’extérieur de votre domicile, du **vendredi soir à 18 h** au **lundi matin à 6 h**.
+
+</div>
+
+
+
 ## [conseils_contacter_un_médecin.md](conseils_contacter_un_médecin.md)
 
 * Si vous n’arrivez pas à consulter un médecin, contactez un médecin de garde.
@@ -114,7 +124,7 @@ Une personne ayant la Covid est **contagieuse 48 h avant** les premiers symptô
 
 <div class="conseil conseil-jaune">
 
-<span class="nouveau">nouveau</span> Un **couvre-feu** s’applique dans votre département de 18 h à 6 h du matin.
+Un **couvre-feu** s’applique dans votre département de 18 h à 6 h du matin.
 
 </div>
 
@@ -778,8 +788,8 @@ Pour vos **courses**, nous vous conseillons de :
 
 Pour vos **déplacements** :
 
-  * <span class="nouveau">nouveau</span> à partir du dimanche 30 janvier, toute entrée en France et toute sortie du territoire à destination ou en provenance d’un pays extérieur à l’Union européenne sera interdite, sauf motif impérieux ;
-  * <span class="nouveau">nouveau</span> à partir du dimanche 30 janvier, toute entrée en France à partir d’un pays de l’Union européenne sera conditionnée à la réalisation d’un test PCR, à l’exception des travailleurs transfrontaliers, tous les déplacements en provenance et en direction des territoires ultramarins seront également soumis à la production de motifs impérieux ;
+  * à partir du dimanche 30 janvier, toute entrée en France et toute sortie du territoire à destination ou en provenance d’un pays extérieur à l’Union européenne sera interdite, sauf motif impérieux ;
+  * à partir du dimanche 30 janvier, toute entrée en France à partir d’un pays de l’Union européenne sera conditionnée à la réalisation d’un test PCR, à l’exception des travailleurs transfrontaliers, tous les déplacements en provenance et en direction des territoires ultramarins seront également soumis à la production de motifs impérieux ;
   * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Sur mes déplacements et mes voyages »).
 
 Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919">39 19</a> (appel gratuit, de 9 h à 19 h du lundi au samedi) ou le <a href="tel:17">17</a> en cas d’urgence.

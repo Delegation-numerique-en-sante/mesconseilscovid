@@ -822,5 +822,16 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-confinement',
             ])
         })
+        it('À Nice, c’est confinement le week-end', function () {
+            var profil = new Profil('mes_infos', {
+                departement: '06',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+                'conseils-couvre-feu-18h',
+                'conseils-confinement-week-end',
+            ])
+        })
     })
 })
