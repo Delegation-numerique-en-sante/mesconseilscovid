@@ -319,7 +319,7 @@ export default class Profil {
             activite_pro_sante: false,
             foyer_autres_personnes: false,
             foyer_enfants: false,
-            age: '42',
+            age: 42,
             grossesse_3e_trimestre: false,
             poids: '70',
             taille: '178',
