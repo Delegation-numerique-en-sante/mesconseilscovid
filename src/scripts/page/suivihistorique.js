@@ -1,5 +1,5 @@
-import { bindImpression } from '../actions.js'
-import SuiviView from '../suivi.js'
+import { bindImpression } from '../actions'
+import SuiviView from '../suivi'
 
 export default function suivihistorique(element, app) {
     const suivi = new SuiviView(app.profil)

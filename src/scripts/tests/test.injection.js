@@ -1,11 +1,11 @@
 import { assert } from 'chai'
 import { JSDOM } from 'jsdom'
 
-import AlgorithmeOrientation from '../algorithme/orientation.js'
+import AlgorithmeOrientation from '../algorithme/orientation'
 
-import * as injection from '../injection.js'
+import * as injection from '../injection'
 
-import Profil from '../profil.js'
+import Profil from '../profil'
 
 describe('Injection', function () {
     it('Départements', function () {

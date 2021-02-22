@@ -1,4 +1,4 @@
-import { hideElement, showElement } from '../../affichage.js'
+import { hideElement, showElement } from '../../affichage'
 import { addDatePickerPolyfill } from '../../datepicker'
 import {
     Form,
@@ -6,8 +6,8 @@ import {
     getRadioValue,
     preloadCheckboxForm,
     someChecked,
-} from '../../formutils.js'
-import { joursAvant } from '../../utils.js'
+} from '../../formutils'
+import { joursAvant } from '../../utils'
 
 export default function symptomes(form, app) {
     premierDemarrageFormulaire(app)

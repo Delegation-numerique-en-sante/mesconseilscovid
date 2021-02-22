@@ -1,5 +1,5 @@
 import { assert } from 'chai'
-import { remplirQuestionnaire } from './helpers.js'
+import { remplirQuestionnaire } from './helpers'
 
 describe('Pages', function () {
     it('titre de la page', async function () {

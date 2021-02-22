@@ -1,5 +1,5 @@
 import { assert } from 'chai'
-import { remplirQuestionnaire, waitForPlausibleTrackingEvent } from './helpers.js'
+import { remplirQuestionnaire, waitForPlausibleTrackingEvent } from './helpers'
 
 describe('Profils', function () {
     it('remplir le questionnaire pour un proche', async function () {

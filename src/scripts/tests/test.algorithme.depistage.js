@@ -1,8 +1,8 @@
 import { assert } from 'chai'
 
-import { joursAvant, heuresAvant } from '../utils.js'
+import { joursAvant, heuresAvant } from '../utils'
 
-import Profil from '../profil.js'
+import Profil from '../profil'
 
 describe('Algorithme dépistage', function () {
     describe('Dépistage positif récent', function () {

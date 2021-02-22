@@ -1,7 +1,7 @@
 import { assert } from 'chai'
 
-import prefectures from '../data/prefectures.js'
-import departements from '../data/departements.js'
+import prefectures from '../data/prefectures'
+import departements from '../data/departements'
 
 describe('Carte départements', function () {
     it('Il y a le bon nombre de noms', function () {

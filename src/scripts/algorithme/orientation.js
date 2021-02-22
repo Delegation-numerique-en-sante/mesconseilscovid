@@ -1,4 +1,4 @@
-import AlgorithmeVaccination from './vaccination.js'
+import AlgorithmeVaccination from './vaccination'
 
 // Les statuts possibles en sortie de l’algorithme.
 const STATUTS = [

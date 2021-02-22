@@ -3,7 +3,7 @@ import {
     remplirQuestionnaire,
     waitForPlausibleTrackingEvent,
     waitForPlausibleTrackingEvents,
-} from './helpers.js'
+} from './helpers'
 
 describe('Plausible', function () {
     it('accès à une page', async function () {

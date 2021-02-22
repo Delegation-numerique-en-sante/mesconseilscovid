@@ -1,5 +1,5 @@
-import { differenceEnJours, joursAvant } from './utils.js'
-import { createElementFromHTML, safeHtml } from './affichage.js'
+import { differenceEnJours, joursAvant } from './utils'
+import { createElementFromHTML, safeHtml } from './affichage'
 
 const JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF = 7
 const JOURS_DE_VALIDITE_DEPISTAGE_POSITIF = 14

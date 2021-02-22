@@ -1,6 +1,6 @@
 import { assert } from 'chai'
 
-import Profil from '../profil.js'
+import Profil from '../profil'
 
 describe('Profil', function () {
     it('Le nom du profil n’est pas échappé', function () {

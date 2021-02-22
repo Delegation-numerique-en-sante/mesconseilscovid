@@ -2,7 +2,7 @@ import {
     enableOrDisableSecondaryFields,
     preloadCheckboxForm,
     toggleFormButtonOnCheckAndRadiosRequired,
-} from '../../formutils.js'
+} from '../../formutils'
 
 export default function contactarisque(form, app) {
     var button = form.querySelector('input[type=submit]')
