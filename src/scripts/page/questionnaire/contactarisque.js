@@ -1,10 +1,8 @@
 import {
     enableOrDisableSecondaryFields,
-    getRadioValue,
     preloadCheckboxForm,
     toggleFormButtonOnCheckAndRadiosRequired,
 } from '../../formutils.js'
-import { hideVariante, showVariante } from './variante.js'
 
 export default function contactarisque(form, app) {
     var button = form.querySelector('input[type=submit]')
@@ -19,35 +17,11 @@ export default function contactarisque(form, app) {
     preloadCheckboxForm(form, 'contact_a_risque_stop_covid', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_autre', app.profil)
 
-    // Pré-remplit la variante
-    const varianteRadio = form.querySelector('#contact-a-risque-variante')
-    if (app.profil.contact_a_risque) {
-        showVariante(varianteRadio)
-        if (app.profil.contact_a_risque_variante === 'aucune') {
-            form.querySelector('#contact_a_risque_variante_aucune').checked = true
-        } else if (app.profil.contact_a_risque_variante === '20I/501Y.V1') {
-            form.querySelector('#contact_a_risque_variante_v1').checked = true
-        } else if (
-            app.profil.contact_a_risque_variante === '20H/501Y.V2_ou_20J/501Y.V3'
-        ) {
-            form.querySelector('#contact_a_risque_variante_v2_ou_v3').checked = true
-        } else {
-            form.querySelector('#contact_a_risque_variante_autre').checked = true
-        }
-    } else {
-        hideVariante(varianteRadio)
-    }
-
     var primary = form.elements['contact_a_risque']
     enableOrDisableSecondaryFields(form, primary)
 
     primary.addEventListener('click', function () {
         enableOrDisableSecondaryFields(form, primary)
-        if (primary.checked) {
-            showVariante(varianteRadio)
-        } else {
-            hideVariante(varianteRadio)
-        }
     })
 
     const uncheckedLabel = app.profil.estMonProfil()
@@ -76,12 +50,6 @@ export default function contactarisque(form, app) {
             event.target.elements['contact_a_risque_stop_covid'].checked
         app.profil.contact_a_risque_autre =
             event.target.elements['contact_a_risque_autre'].checked
-        if (app.profil.contact_a_risque) {
-            app.profil.contact_a_risque_variante = getRadioValue(
-                form,
-                'contact_a_risque_variante'
-            )
-        }
         app.enregistrerProfilActuel().then(() => {
             app.goToNextPage('contactarisque')
         })

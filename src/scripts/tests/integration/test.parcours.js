@@ -222,7 +222,7 @@ describe('Parcours', function () {
         await remplirQuestionnaire(page, {
             symptomesActuels: [],
             symptomesPasses: false,
-            contactARisque: ['contact_direct', 'variante_autre'],
+            contactARisque: ['contact_direct'],
             depistage: false,
             departement: '00',
             enfants: true,
