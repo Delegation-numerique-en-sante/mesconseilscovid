@@ -114,7 +114,7 @@ describe('Injection', function () {
                 age: 65,
             })
 
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             injection.caracteristiquesARisques(
                 element.querySelector('.nom-caracteristiques-a-risques'),
                 algoOrientation
@@ -135,7 +135,7 @@ describe('Injection', function () {
                 grossesse_3e_trimestre: true,
             })
 
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             injection.caracteristiquesARisques(
                 element.querySelector('.nom-caracteristiques-a-risques'),
                 algoOrientation
@@ -157,7 +157,7 @@ describe('Injection', function () {
                 grossesse_3e_trimestre: true,
             })
 
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             injection.caracteristiquesARisques(
                 element.querySelector('.nom-caracteristiques-a-risques'),
                 algoOrientation
@@ -178,7 +178,7 @@ describe('Injection', function () {
                 poids: 150,
             })
 
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             injection.caracteristiquesARisques(
                 element.querySelector('.nom-caracteristiques-a-risques'),
                 algoOrientation
@@ -200,7 +200,7 @@ describe('Injection', function () {
                 poids: 150,
             })
 
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             injection.caracteristiquesARisques(
                 element.querySelector('.nom-caracteristiques-a-risques'),
                 algoOrientation
@@ -222,7 +222,7 @@ describe('Injection', function () {
                 poids: 150,
             })
 
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             injection.caracteristiquesARisques(
                 element.querySelector('.nom-caracteristiques-a-risques'),
                 algoOrientation
@@ -244,7 +244,7 @@ describe('Injection', function () {
                 antecedent_cardio: true,
             })
 
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             injection.antecedents(
                 element.querySelector('.nom-antecedents'),
                 algoOrientation
@@ -264,7 +264,7 @@ describe('Injection', function () {
                 antecedent_chronique_autre: true,
             })
 
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             injection.antecedents(
                 element.querySelector('.nom-antecedents'),
                 algoOrientation
@@ -285,7 +285,7 @@ describe('Injection', function () {
                 antecedent_chronique_autre: true,
             })
 
-            var algoOrientation = new AlgorithmeOrientation(profil, {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
             injection.antecedents(
                 element.querySelector('.nom-antecedents'),
                 algoOrientation
