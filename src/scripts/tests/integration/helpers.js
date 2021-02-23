@@ -47,8 +47,7 @@ export async function remplirQuestionnaire(page, choix) {
         choix.depistage,
         choix.depistageDate,
         choix.depistageType,
-        choix.depistageResultat,
-        choix.depistageVariante
+        choix.depistageResultat
     )
     await remplirSituation(page, choix.departement, choix.enfants, choix.activitePro)
     await remplirSante(
@@ -118,7 +117,7 @@ async function remplirSante(page, age, taille, poids, antecedents) {
     ])
 }
 
-async function remplirDepistage(page, depistage, date, type, resultat, variante) {
+async function remplirDepistage(page, depistage, date, type, resultat) {
     let text
 
     if (depistage) {
@@ -141,13 +140,6 @@ async function remplirDepistage(page, depistage, date, type, resultat, variante)
             `#page label[for="depistage_resultat_${resultat}"]`
         )
         await resultat_label.click()
-
-        if (resultat === 'positif') {
-            let variante_label = await page.waitForSelector(
-                `#page label[for="depistage_variante_${variante}"]`
-            )
-            await variante_label.click()
-        }
 
         text = '"Continuer"'
     } else {

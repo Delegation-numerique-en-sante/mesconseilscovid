@@ -1,1 +1,0 @@
-<!---->On peut lire « <b>présence</b> lignage 20H/501Y.<b>V2</b> ou 20J/501Y.<b>V3</b> » sur les résultats du laboratoire.

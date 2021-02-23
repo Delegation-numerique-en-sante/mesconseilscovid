@@ -274,7 +274,6 @@ describe('Parcours', function () {
             depistageDate: new Date(),
             depistageType: 'rtpcr',
             depistageResultat: 'positif',
-            depistageVariante: 'autre',
             departement: '00',
             enfants: true,
             age: '42',

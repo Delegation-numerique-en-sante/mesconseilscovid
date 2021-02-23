@@ -5,7 +5,6 @@ import {
     preloadCheckboxForm,
     toggleFormButtonOnTextFieldsAndRadioRequired,
 } from '../../formutils.js'
-import { hideVariante, showVariante } from './variante.js'
 
 export default function depistage(form, app) {
     const datePicker = form.querySelector('#depistage_start_date')
@@ -36,25 +35,6 @@ export default function depistage(form, app) {
         } else if (app.profil.depistage_resultat === 'en_attente') {
             form.querySelector('#depistage_resultat_en_attente').checked = true
         }
-
-        const varianteRadio = form.querySelector('#depistage-variante')
-        if (
-            app.profil.depistage_type === 'rt-pcr' &&
-            app.profil.depistage_resultat === 'positif'
-        ) {
-            showVariante(varianteRadio)
-            if (app.profil.depistage_variante === 'aucune') {
-                form.querySelector('#depistage_variante_aucune').checked = true
-            } else if (app.profil.depistage_variante === '20I/501Y.V1') {
-                form.querySelector('#depistage_variante_v1').checked = true
-            } else if (app.profil.depistage_variante === '20H/501Y.V2_ou_20J/501Y.V3') {
-                form.querySelector('#depistage_variante_v2_ou_v3').checked = true
-            } else {
-                form.querySelector('#depistage_variante_autre').checked = true
-            }
-        } else {
-            hideVariante(varianteRadio)
-        }
     }
 
     // La première case active ou désactive les autres.
@@ -70,32 +50,11 @@ export default function depistage(form, app) {
         ? 'Je n’ai pas passé de test'
         : 'Cette personne n’a pas passé de test'
     const requiredLabel = 'Veuillez remplir le formulaire au complet'
-    const updateSubmitButton = toggleFormButtonOnTextFieldsAndRadioRequired(
+    toggleFormButtonOnTextFieldsAndRadioRequired(
         form,
         button.value,
         uncheckedLabel,
         requiredLabel
-    )
-
-    // La variante n’est demandée que si le test est RT-PCR et positif
-    // eslint-disable-next-line no-extra-semi
-    ;[].forEach.call(
-        form.querySelectorAll(
-            'input[name="depistage_type"],input[name="depistage_resultat"]'
-        ),
-        (elem) => {
-            elem.addEventListener('change', function () {
-                const type = getRadioValue(form, 'depistage_type')
-                const resultat = getRadioValue(form, 'depistage_resultat')
-                const varianteRadio = form.querySelector('#depistage-variante')
-                if (type === 'rt-pcr' && resultat === 'positif') {
-                    showVariante(varianteRadio)
-                } else {
-                    hideVariante(varianteRadio)
-                }
-                updateSubmitButton()
-            })
-        }
     )
 
     // Soumission du formulaire.
@@ -109,22 +68,10 @@ export default function depistage(form, app) {
             )
             app.profil.depistage_type = getRadioValue(form, 'depistage_type')
             app.profil.depistage_resultat = getRadioValue(form, 'depistage_resultat')
-            if (
-                app.profil.depistage_type === 'rt-pcr' &&
-                app.profil.depistage_resultat === 'positif'
-            ) {
-                app.profil.depistage_variante = getRadioValue(
-                    form,
-                    'depistage_variante'
-                )
-            } else {
-                app.profil.depistage_variante = undefined
-            }
         } else {
             app.profil.depistage_start_date = undefined
             app.profil.depistage_type = undefined
             app.profil.depistage_resultat = undefined
-            app.profil.depistage_variante = undefined
         }
 
         app.enregistrerProfilActuel().then(() => {
