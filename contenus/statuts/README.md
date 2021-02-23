@@ -29,8 +29,7 @@ Vous êtes **porteur de la Covid** sans symptômes, il est important de **vous i
 
 ## [statut_contact_a_risque_avec_test.md](statut_contact_a_risque_avec_test.md)
 
-Restez **en isolement** et **refaites un test** 7 jours après votre dernier contact à risque.
-
+Refaites un **test immédiatement** (s’il date d’avant votre contact à risque), restez en **isolement**, puis **refaites un test** 7 jours après votre dernier contact à risque.
 
 
 ## [statut_contact_a_risque_meme_lieu_de_vie.md](statut_contact_a_risque_meme_lieu_de_vie.md)

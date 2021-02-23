@@ -604,7 +604,7 @@ const matrice = [
         },
         situation: 'negatif_contact_a_risque',
         statut: 'contact-a-risque-avec-test',
-        conseils: 'contact-a-risque',
+        conseils: 'contact-a-risque-avec-test',
     },
     {
         description: 'Négatif et contact à risque + variante d’intérêt',
@@ -618,7 +618,7 @@ const matrice = [
         },
         situation: 'negatif_contact_a_risque',
         statut: 'contact-a-risque-avec-test',
-        conseils: 'contact-a-risque',
+        conseils: 'contact-a-risque-avec-test',
     },
     {
         description: 'Négatif et contact à risque même lieu de vie',
@@ -772,7 +772,7 @@ const matrice = [
         },
         situation: 'en_attente_contact_a_risque',
         statut: 'contact-a-risque-avec-test',
-        conseils: 'contact-a-risque',
+        conseils: 'contact-a-risque-avec-test',
     },
     {
         description: 'En attente et contact à risque + variante d’intérêt',
@@ -787,7 +787,7 @@ const matrice = [
         },
         situation: 'en_attente_contact_a_risque',
         statut: 'contact-a-risque-avec-test',
-        conseils: 'contact-a-risque',
+        conseils: 'contact-a-risque-avec-test',
     },
     {
         description: 'En attente et contact à risque même lieu de vie',
@@ -873,7 +873,7 @@ const matrice = [
         },
         situation: 'pas_teste_contact_a_risque',
         statut: 'contact-a-risque-sans-test',
-        conseils: 'contact-a-risque',
+        conseils: 'contact-a-risque-sans-test',
     },
     {
         description: 'Pas testé et contact à risque + variante d’intérêt',
@@ -885,7 +885,7 @@ const matrice = [
         },
         situation: 'pas_teste_contact_a_risque',
         statut: 'contact-a-risque-sans-test',
-        conseils: 'contact-a-risque',
+        conseils: 'contact-a-risque-sans-test',
     },
     {
         description: 'Pas testé et contact à risque même lieu de vie',
@@ -1006,7 +1006,7 @@ const matrice = [
         },
         situation: 'pas_teste_contact_a_risque',
         statut: 'contact-a-risque-sans-test',
-        conseils: 'contact-a-risque',
+        conseils: 'contact-a-risque-sans-test',
     },
     {
         description: 'Test négatif obsolète et contact à risque même lieu de vie',
@@ -1149,7 +1149,7 @@ const matrice = [
         },
         situation: 'pas_teste_contact_a_risque',
         statut: 'contact-a-risque-sans-test',
-        conseils: 'contact-a-risque',
+        conseils: 'contact-a-risque-sans-test',
     },
     {
         description: 'Test positif obsolète et contact à risque même lieu de vie',

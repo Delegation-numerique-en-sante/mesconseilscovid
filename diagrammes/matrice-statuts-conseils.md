@@ -194,8 +194,8 @@
                     statut_contact_a_risque_avec_test.md
                 </a>
                 <br><br>
-                <a href="../contenus/conseils/conseils_personnels_contact_à_risque.md">
-                    conseils_personnels_contact_à_risque.md
+                <a href="../contenus/conseils/conseils_personnels_contact_à_risque_avec_test.md">
+                    conseils_personnels_contact_à_risque_avec_test.md
                 </a>
             </td>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#FFFFD7" align="center">
@@ -203,8 +203,8 @@
                     statut_contact_a_risque_sans_test.md
                 </a>
                 <br><br>
-                <a href="../contenus/conseils/conseils_personnels_contact_à_risque.md">
-                    conseils_personnels_contact_à_risque.md
+                <a href="../contenus/conseils/conseils_personnels_contact_à_risque_sans_test.md">
+                    conseils_personnels_contact_à_risque_sans_test.md
                 </a>
             </td>
         </tr>
