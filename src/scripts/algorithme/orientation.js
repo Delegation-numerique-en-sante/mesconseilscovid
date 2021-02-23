@@ -5,7 +5,6 @@ const STATUTS = [
     'antigenique-negatif-fragile',
     'asymptomatique',
     'asymptomatique-positif-antigenique',
-    'asymptomatique-variante-d-interet',
     'contact-a-risque-avec-test',
     'contact-a-risque-meme-lieu-de-vie',
     'contact-a-risque-meme-lieu-de-vie-sans-depistage',
@@ -18,7 +17,6 @@ const STATUTS = [
     'symptomatique-en-attente',
     'symptomatique-negatif',
     'symptomatique-positif',
-    'symptomatique-positif-variante-d-interet',
     'symptomatique-sans-test',
     'symptomatique-urgent',
 ]
@@ -34,8 +32,6 @@ const CONSEILS_PERSONNELS = [
     'depistage-positif-antigenique-symptomatique',
     'depistage-positif-asymptomatique',
     'depistage-positif-symptomatique',
-    'depistage-positif-variante-d-interet-asymptomatique',
-    'depistage-positif-variante-d-interet-symptomatique',
     'symptomes-actuels-en-attente',
     'symptomes-actuels-positif-critique',
     'symptomes-actuels-sans-depistage',
@@ -43,16 +39,8 @@ const CONSEILS_PERSONNELS = [
     'symptomes-passes-en-attente',
     'symptomes-passes-positif',
     'symptomes-passes-positif-antigenique',
-    'symptomes-passes-positif-variante-d-interet',
     'symptomes-passes-sans-depistage',
 ]
-
-const VARIANTES_D_INTERET = {
-    '20I/501Y.V1': false, // variante dite « britannique »
-    '20H/501Y.V2': true, // variante dite « sud-africaine »
-    '20J/501Y.V3': true, // variante dite « brésilienne »
-    '20H/501Y.V2_ou_20J/501Y.V3': true, // l’une ou l’autre
-}
 
 export default class AlgorithmeOrientation {
     constructor(profil) {
@@ -84,18 +72,8 @@ export default class AlgorithmeOrientation {
         ) {
             return 'antigenique_positif'
         } else {
-            if (
-                this.profil.depistage_resultat === 'positif' &&
-                this.depistageVarianteDInteret()
-            ) {
-                return 'positif_variante_d_interet'
-            }
             return this.profil.depistage_resultat
         }
-    }
-
-    depistageVarianteDInteret() {
-        return VARIANTES_D_INTERET[this.profil.depistage_variante]
     }
 
     _situationSymptomes() {
@@ -194,7 +172,6 @@ export default class AlgorithmeOrientation {
         // Statut et conseils à afficher dans toutes les situations.
         switch (this.situation) {
             case 'positif_symptomes_actuels_graves':
-            case 'positif_variante_d_interet_symptomes_actuels_graves':
             case 'antigenique_positif_symptomes_actuels_graves':
                 return {
                     statut: 'positif-symptomatique-urgent',
@@ -238,27 +215,6 @@ export default class AlgorithmeOrientation {
                 return {
                     statut: 'asymptomatique-positif-antigenique',
                     conseils: 'depistage-positif-antigenique-asymptomatique',
-                }
-
-            case 'positif_variante_d_interet_symptomes_actuels':
-                return {
-                    statut: 'symptomatique-positif-variante-d-interet',
-                    conseils: 'depistage-positif-variante-d-interet-symptomatique',
-                }
-
-            case 'positif_variante_d_interet_symptomes_passes':
-                return {
-                    statut: 'symptomatique-positif-variante-d-interet',
-                    conseils: 'symptomes-passes-positif-variante-d-interet',
-                }
-
-            case 'positif_variante_d_interet_contact_a_risque':
-            case 'positif_variante_d_interet_contact_a_risque_meme_lieu_de_vie':
-            case 'positif_variante_d_interet_contact_pas_vraiment_a_risque':
-            case 'positif_variante_d_interet_asymptomatique':
-                return {
-                    statut: 'asymptomatique-variante-d-interet',
-                    conseils: 'depistage-positif-variante-d-interet-asymptomatique',
                 }
 
             case 'negatif_symptomes_actuels':
@@ -390,25 +346,9 @@ export default class AlgorithmeOrientation {
                 this.profil.hasSymptomesActuelsReconnus() ||
                 this.profil.symptomes_passes
             ) {
-                if (this.depistageVarianteDInteret()) {
-                    blockNames.push(
-                        'conseils-timeline-isolement-positif-variante-avec-symptomes'
-                    )
-                } else {
-                    blockNames.push(
-                        'conseils-timeline-isolement-positif-avec-symptomes'
-                    )
-                }
+                blockNames.push('conseils-timeline-isolement-positif-avec-symptomes')
             } else {
-                if (this.depistageVarianteDInteret()) {
-                    blockNames.push(
-                        'conseils-timeline-isolement-positif-variante-sans-symptomes'
-                    )
-                } else {
-                    blockNames.push(
-                        'conseils-timeline-isolement-positif-sans-symptomes'
-                    )
-                }
+                blockNames.push('conseils-timeline-isolement-positif-sans-symptomes')
             }
         } else if (
             this.profil.hasContactARisqueReconnus() &&

@@ -253,7 +253,7 @@ const matrice = [
             depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
             _depistage_start_date: new Date().toJSON(),
         },
-        situation: 'positif_variante_d_interet_symptomes_actuels_graves',
+        situation: 'positif_symptomes_actuels_graves',
         statut: 'positif-symptomatique-urgent',
         conseils: 'symptomes-actuels-positif-critique',
     },
@@ -269,9 +269,9 @@ const matrice = [
             depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
             _depistage_start_date: new Date().toJSON(),
         },
-        situation: 'positif_variante_d_interet_symptomes_actuels',
-        statut: 'symptomatique-positif-variante-d-interet',
-        conseils: 'depistage-positif-variante-d-interet-symptomatique',
+        situation: 'positif_symptomes_actuels',
+        statut: 'symptomatique-positif',
+        conseils: 'depistage-positif-symptomatique',
     },
     {
         description:
@@ -284,9 +284,9 @@ const matrice = [
             depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
             _depistage_start_date: new Date().toJSON(),
         },
-        situation: 'positif_variante_d_interet_symptomes_passes',
-        statut: 'symptomatique-positif-variante-d-interet',
-        conseils: 'symptomes-passes-positif-variante-d-interet',
+        situation: 'positif_symptomes_passes',
+        statut: 'symptomatique-positif',
+        conseils: 'symptomes-passes-positif',
     },
     {
         description:
@@ -301,9 +301,9 @@ const matrice = [
             depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
             _depistage_start_date: new Date().toJSON(),
         },
-        situation: 'positif_variante_d_interet_contact_a_risque',
-        statut: 'asymptomatique-variante-d-interet',
-        conseils: 'depistage-positif-variante-d-interet-asymptomatique',
+        situation: 'positif_contact_a_risque',
+        statut: 'asymptomatique',
+        conseils: 'depistage-positif-asymptomatique',
     },
     {
         description:
@@ -318,9 +318,9 @@ const matrice = [
             depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
             _depistage_start_date: new Date().toJSON(),
         },
-        situation: 'positif_variante_d_interet_contact_a_risque_meme_lieu_de_vie',
-        statut: 'asymptomatique-variante-d-interet',
-        conseils: 'depistage-positif-variante-d-interet-asymptomatique',
+        situation: 'positif_contact_a_risque_meme_lieu_de_vie',
+        statut: 'asymptomatique',
+        conseils: 'depistage-positif-asymptomatique',
     },
     {
         description:
@@ -335,9 +335,9 @@ const matrice = [
             depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
             _depistage_start_date: new Date().toJSON(),
         },
-        situation: 'positif_variante_d_interet_contact_pas_vraiment_a_risque',
-        statut: 'asymptomatique-variante-d-interet',
-        conseils: 'depistage-positif-variante-d-interet-asymptomatique',
+        situation: 'positif_contact_pas_vraiment_a_risque',
+        statut: 'asymptomatique',
+        conseils: 'depistage-positif-asymptomatique',
     },
     {
         description:
@@ -351,9 +351,9 @@ const matrice = [
             depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
             _depistage_start_date: new Date().toJSON(),
         },
-        situation: 'positif_variante_d_interet_asymptomatique',
-        statut: 'asymptomatique-variante-d-interet',
-        conseils: 'depistage-positif-variante-d-interet-asymptomatique',
+        situation: 'positif_asymptomatique',
+        statut: 'asymptomatique',
+        conseils: 'depistage-positif-asymptomatique',
     },
     {
         description:
@@ -365,9 +365,9 @@ const matrice = [
             depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
             _depistage_start_date: new Date().toJSON(),
         },
-        situation: 'positif_variante_d_interet_asymptomatique',
-        statut: 'asymptomatique-variante-d-interet',
-        conseils: 'depistage-positif-variante-d-interet-asymptomatique',
+        situation: 'positif_asymptomatique',
+        statut: 'asymptomatique',
+        conseils: 'depistage-positif-asymptomatique',
     },
     {
         description: 'Négatif et symptômes actuels graves',
