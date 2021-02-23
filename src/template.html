@@ -712,9 +712,6 @@
                     <div id="statut-asymptomatique-positif-antigenique" class="statut statut-asymptomatique-positif-antigenique" hidden>
                         {{ statut_asymptomatique_positif_antigenique }}
                     </div>
-                    <div id="statut-asymptomatique-variante-d-interet" class="statut statut-asymptomatique-variante-d-interet" hidden>
-                        {{ statut_asymptomatique_variante_d_interet }}
-                    </div>
                     <div id="statut-contact-a-risque-avec-test" class="statut statut-contact-a-risque-avec-test" hidden>
                         {{ statut_contact_a_risque_avec_test }}
                     </div>
@@ -755,9 +752,6 @@
                     </div>
                     <div id="statut-symptomatique-positif" class="statut statut-symptomatique-positif" hidden>
                         {{ statut_symptomatique_positif }}
-                    </div>
-                    <div id="statut-symptomatique-positif-variante-d-interet" class="statut statut-symptomatique-positif-variante-d-interet" hidden>
-                        {{ statut_symptomatique_positif_variante_d_interet }}
                     </div>
                     <div id="statut-symptomatique-sans-test" class="statut statut-symptomatique-sans-test" hidden>
                         {{ statut_symptomatique_sans_test }}
@@ -820,12 +814,6 @@
                 <div id="conseils-personnels-depistage-positif-symptomatique" class="conseil" hidden>
                     {{ conseils_personnels_depistage_positif_symptomatique }}
                 </div>
-                <div id="conseils-personnels-depistage-positif-variante-d-interet-asymptomatique" class="conseil" hidden>
-                    {{ conseils_personnels_depistage_positif_variante_d_interet_asymptomatique }}
-                </div>
-                <div id="conseils-personnels-depistage-positif-variante-d-interet-symptomatique" class="conseil" hidden>
-                    {{ conseils_personnels_depistage_positif_variante_d_interet_symptomatique }}
-                </div>
                 <div id="conseils-personnels-symptomes-actuels-en-attente" class="conseil" hidden>
                     {{ conseils_personnels_symptômes_actuels_en_attente }}
                 </div>
@@ -846,9 +834,6 @@
                 </div>
                 <div id="conseils-personnels-symptomes-passes-positif-antigenique" class="conseil" hidden>
                     {{ conseils_personnels_symptômes_passés_positif_antigenique }}
-                </div>
-                <div id="conseils-personnels-symptomes-passes-positif-variante-d-interet" class="conseil" hidden>
-                    {{ conseils_personnels_symptômes_passés_positif_variante_d_interet }}
                 </div>
                 <div id="conseils-personnels-symptomes-passes-sans-depistage" class="conseil" hidden>
                     {{ conseils_personnels_symptômes_passés_sans_depistage }}
@@ -922,83 +907,6 @@
                         </div>
                     </div>
                 </div>
-                <div id="conseils-timeline-isolement-positif-variante-avec-symptomes" hidden>
-                    <div class="timeline-container">
-                        <div class="timeline-block timeline-exposition">
-                            <div class="timeline-icon">
-                                <span role="img" aria-label="virus">🦠</span>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="timeline-date"></p>
-                                <p class="timeline-texte">Période d’incubation : le virus se propage dans votre corps pendant 2 à 14 jours.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-block timeline-contagiosite">
-                            <div class="timeline-icon">
-                                <span role="img" aria-label="visage portant un masque">😷</span>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="timeline-date"></p>
-                                <p class="timeline-texte">Début de la période contagieuse, 48h avant les premiers symptômes.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-block timeline-isolement">
-                            <div class="timeline-icon">
-                                <span role="img" aria-label="domicile">🏠</span>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="timeline-date"></p>
-                                <p class="timeline-texte">Début des symptômes et de l’isolement.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-block timeline-aujourdhui">
-                            <div class="timeline-icon"></div>
-                            <div class="timeline-content">
-                                <p class="timeline-date"></p>
-                                <p class="timeline-texte">
-                                    <span class="suivi-a-faire"><a href="#suivisymptomes">Suivez l’évolution de vos symptômes</a> pour mettre à jour votre date de sortie d’isolement.</span>
-                                    <span class="suivi-fait" hidden>L’évolution de vos symptômes depuis hier a bien été enregistrée. ✅</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="timeline-block timeline-demain" hidden>
-                            <div class="timeline-icon">
-                                <span role="img" aria-label="calendrier">📅</span>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="timeline-date">Demain</p>
-                                <p class="timeline-texte">Revenez pour <a href="#suivisymptomes">suivre l’évolution de vos symptômes</a> et mettre à jour votre date de sortie d’isolement.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-block timeline-test">
-                            <div class="timeline-icon">
-                                <span role="img" aria-label="test">👩‍🔬</span>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="timeline-date"></p>
-                                <p class="timeline-texte">Test de contrôle (si vous n’avez plus de fièvre ni de gêne respiratoire depuis plus de 48h).</p>
-                            </div>
-                        </div>
-                        <div class="timeline-block timeline-fin">
-                            <div class="timeline-icon">
-                                <span role="img" aria-label="fête">🙂</span>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="timeline-date"></p>
-                                <p class="timeline-texte">Si le test de contrôle est <b>négatif</b> : fin de la période contagieuse et de l’isolement.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-block timeline-fin-positif">
-                            <div class="timeline-icon">
-                                <span role="img" aria-label="fête">🙁</span>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="timeline-date"></p>
-                                <p class="timeline-texte">Si le test de contrôle était <b>positif</b> : fin de l’isolement après 7 jours supplémentaires.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div id="conseils-timeline-isolement-positif-sans-symptomes" hidden>
                     <div class="timeline-container">
                         <div class="timeline-block timeline-exposition">
@@ -1044,73 +952,6 @@
                             <div class="timeline-content">
                                 <p class="timeline-date"></p>
                                 <p class="timeline-texte">Fin de la période contagieuse et de l’isolement <span class="duree-isolement"></span> jours après le résultat positif du test.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="conseils-timeline-isolement-positif-variante-sans-symptomes" hidden>
-                    <div class="timeline-container">
-                        <div class="timeline-block timeline-exposition">
-                            <div class="timeline-icon">
-                                <span role="img" aria-label="virus">🦠</span>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="timeline-date"></p>
-                                <p class="timeline-texte">Période d’incubation : le virus se propage dans votre corps pendant 2 à 14 jours.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-block timeline-contagiosite">
-                            <div class="timeline-icon">
-                                <span role="img" aria-label="visage portant un masque">😷</span>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="timeline-date"></p>
-                                <p class="timeline-texte">Début de la période contagieuse, jusqu’à 7 jours avant le test.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-block timeline-isolement">
-                            <div class="timeline-icon">
-                                <span role="img" aria-label="domicile">🏠</span>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="timeline-date"></p>
-                                <p class="timeline-texte">Test positif et début de l’isolement.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-block timeline-demain">
-                            <div class="timeline-icon">
-                                <span role="img" aria-label="calendrier">📅</span>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="timeline-date">Demain</p>
-                                <p class="timeline-texte">Si des symptômes apparaissent, vous pourrez <a href="#suivisymptomes">suivre leur évolution</a>.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-block timeline-test">
-                            <div class="timeline-icon">
-                                <span role="img" aria-label="test">👩‍🔬</span>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="timeline-date"></p>
-                                <p class="timeline-texte">Test de contrôle avant la levée de l’isolement.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-block timeline-fin">
-                            <div class="timeline-icon">
-                                <span role="img" aria-label="sourire">🙂</span>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="timeline-date"></p>
-                                <p class="timeline-texte">Si le test de contrôle est <b>négatif</b> : fin de la période contagieuse et de l’isolement.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-block timeline-fin-positif">
-                            <div class="timeline-icon">
-                                <span role="img" aria-label="moue">🙁</span>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="timeline-date"></p>
-                                <p class="timeline-texte">Si le test de contrôle était <b>positif</b> : fin de l’isolement après 7 jours supplémentaires.</p>
                             </div>
                         </div>
                     </div>

@@ -2,26 +2,22 @@
     <thead>
         <tr>
             <th rowspan="3" height="94"></th>
-            <th style="border: 1px solid black; padding: 1rem;" colspan="3" valign="middle" bgcolor="#EEEEEE" align="center">Test positif<br>de moins de 14 jours</th>
+            <th style="border: 1px solid black; padding: 1rem;" colspan="2" valign="middle" bgcolor="#EEEEEE" align="center">Test positif<br>de moins de 14 jours</th>
             <th style="border: 1px solid black; padding: 1rem;" colspan="2" valign="middle" bgcolor="#EEEEEE" align="center">Test négatif<br>de moins de 7 jours</th>
-            <th style="border: 1px solid black; padding: 1rem;" rowspan="3" valign="middle" bgcolor="#EEEEEE" align="center">En attente</th>
-            <th style="border: 1px solid black; padding: 1rem;" rowspan="3" valign="middle" bgcolor="#EEEEEE" align="center">Pas testé<br>(ou test trop ancien)</th>
+            <th style="border: 1px solid black; padding: 1rem;" rowspan="2" valign="middle" bgcolor="#EEEEEE" align="center">En attente</th>
+            <th style="border: 1px solid black; padding: 1rem;" rowspan="2" valign="middle" bgcolor="#EEEEEE" align="center">Pas testé<br>(ou test trop ancien)</th>
         </tr>
         <tr>
-            <th style="border: 1px solid black; padding: 1rem;" colspan="2" valign="middle" bgcolor="#EEEEEE" align="center">Test RT-PCR</th>
-            <th style="border: 1px solid black; padding: 1rem;" rowspan="2" valign="middle" bgcolor="#EEEEEE" align="center">Test antigénique</th>
-            <th style="border: 1px solid black; padding: 1rem;" rowspan="2" valign="middle" bgcolor="#EEEEEE" align="center">Test antigénique<br>(personne fragile)</th>
-            <th style="border: 1px solid black; padding: 1rem;" rowspan="2" valign="middle" bgcolor="#EEEEEE" align="center">Autres cas</th>
-        </tr>
-        <tr>
-            <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">variante V2 ou V3</th>
-            <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">autre variante</th>
+            <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Test RT-PCR</th>
+            <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Test antigénique</th>
+            <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Test antigénique<br>(personne fragile)</th>
+            <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Autres cas</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" height="185" bgcolor="#EEEEEE" align="center"><b>Symptômes actuels graves</b></td>
-            <td style="border: 1px solid black; padding: 1rem;" colspan="3" valign="middle" bgcolor="#FFDBB6" align="center">
+            <td style="border: 1px solid black; padding: 1rem;" colspan="2" valign="middle" bgcolor="#FFDBB6" align="center">
                 <a href="../contenus/statuts/statut_positif_symptomatique_urgent.md">
                     statut_positif_symptomatique_urgent.md
                 </a>
@@ -42,15 +38,6 @@
         </tr>
         <tr>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" height="154" bgcolor="#EEEEEE" align="center"><b>Symptômes actuels (autres)</b></td>
-            <td style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#FFFFD7" align="center">
-                <a href="../contenus/statuts/statut_symptomatique_positif_variante_d_interet.md">
-                    statut_symptomatique_positif_variante_d_interet.md
-                </a>
-                <br><br>
-                <a href="../contenus/conseils/conseils_personnels_depistage_positif_variante_d_interet_symptomatique.md">
-                    conseils_personnels_depistage_positif_variante_d_interet_symptomatique.md
-                </a>
-            </td>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#FFFFD7" align="center">
                 <a href="../contenus/statuts/statut_symptomatique_positif.md">
                     statut_symptomatique_positif.md
@@ -106,15 +93,6 @@
         <tr>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" height="224" bgcolor="#EEEEEE" align="center"><b>Symptômes passés</b></td>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#FFFFD7" align="center">
-                <a href="../contenus/statuts/statut_symptomatique_positif_variante_d_interet.md">
-                    statut_symptomatique_positif_variante_d_interet.md
-                </a>
-                <br><br>
-                <a href="../contenus/conseils/conseils_personnels_symptômes_passés_positif_variante_d_interet.md">
-                    conseils_personnels_symptômes_passés_positif_variante_d_interet.md
-                </a>
-            </td>
-            <td style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#FFFFD7" align="center">
                 <a href="../contenus/statuts/statut_symptomatique_positif.md">
                     statut_symptomatique_positif.md
                 </a>
@@ -162,15 +140,6 @@
         </tr>
         <tr>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" height="190" bgcolor="#EEEEEE" align="center"><b>Contact à risque</b></td>
-            <td style="border: 1px solid black; padding: 1rem;" rowspan="4" valign="middle" bgcolor="#FFFFD7" align="center">
-                <a href="../contenus/statuts/statut_asymptomatique_variante_d_interet.md">
-                    statut_asymptomatique_variante_d_interet.md
-                </a>
-                <br><br>
-                <a href="../contenus/conseils/conseils_personnels_depistage_positif_variante_d_interet_asymptomatique.md">
-                    conseils_personnels_depistage_positif_variante_d_interet_asymptomatique.md
-                </a>
-            </td>
             <td style="border: 1px solid black; padding: 1rem;" rowspan="4" valign="middle" bgcolor="#FFFFD7" align="center">
                 <a href="../contenus/statuts/statut_asymptomatique.md">
                     statut_asymptomatique.md

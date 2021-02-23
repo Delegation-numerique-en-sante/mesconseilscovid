@@ -55,8 +55,8 @@ describe('Frise chronologique sur l’isolement', function () {
         })
     })
 
-    describe('Frise dynamique n°1A : positif avec symptômes', function () {
-        it('La frise n°1A s’affiche avec symptômes actuels et dépistage positif', function () {
+    describe('Frise dynamique n°1 : positif avec symptômes', function () {
+        it('La frise n°1 s’affiche avec symptômes actuels et dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_douleurs: true,
@@ -70,7 +70,7 @@ describe('Frise chronologique sur l’isolement', function () {
             ])
         })
 
-        it('La frise n°1A s’affiche avec symptômes passés et dépistage positif', function () {
+        it('La frise n°1 s’affiche avec symptômes passés et dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_passes: true,
                 depistage: true,
@@ -84,8 +84,8 @@ describe('Frise chronologique sur l’isolement', function () {
         })
     })
 
-    describe('Frise dynamique n°1B : positif (variante SA ou BR) avec symptômes', function () {
-        it('La frise n°1B s’affiche avec symptômes actuels et dépistage positif', function () {
+    describe('Frise dynamique n°1 : positif (variante SA ou BR) avec symptômes', function () {
+        it('La frise n°1 s’affiche avec symptômes actuels et dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_douleurs: true,
@@ -96,11 +96,11 @@ describe('Frise chronologique sur l’isolement', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-positif-variante-avec-symptomes',
+                'conseils-timeline-isolement-positif-avec-symptomes',
             ])
         })
 
-        it('La frise n°1B s’affiche avec symptômes passés et dépistage positif', function () {
+        it('La frise n°1 s’affiche avec symptômes passés et dépistage positif (variante SA ou BR)', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_passes: true,
                 depistage: true,
@@ -110,7 +110,7 @@ describe('Frise chronologique sur l’isolement', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-positif-variante-avec-symptomes',
+                'conseils-timeline-isolement-positif-avec-symptomes',
             ])
         })
     })
@@ -183,7 +183,7 @@ describe('Frise chronologique sur l’isolement', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-positif-variante-sans-symptomes',
+                'conseils-timeline-isolement-positif-sans-symptomes',
             ])
         })
 
@@ -198,7 +198,7 @@ describe('Frise chronologique sur l’isolement', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-positif-variante-sans-symptomes',
+                'conseils-timeline-isolement-positif-sans-symptomes',
             ])
         })
 
@@ -213,7 +213,7 @@ describe('Frise chronologique sur l’isolement', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-positif-variante-sans-symptomes',
+                'conseils-timeline-isolement-positif-sans-symptomes',
             ])
         })
 
@@ -226,7 +226,7 @@ describe('Frise chronologique sur l’isolement', function () {
             })
             const algoOrientation = new AlgorithmeOrientation(profil, {})
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-positif-variante-sans-symptomes',
+                'conseils-timeline-isolement-positif-sans-symptomes',
             ])
         })
     })
