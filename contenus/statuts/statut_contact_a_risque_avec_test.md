@@ -1,1 +1,1 @@
-Restez **en isolement** et **refaites un test** 7 jours après votre dernier contact à risque.
+Refaites un **test immédiatement** (s’il date d’avant votre contact à risque), restez en **isolement**, puis **refaites un test** 7 jours après votre dernier contact à risque.

@@ -237,7 +237,7 @@ describe('Parcours', function () {
         {
             // On retrouve la partie contact à risque.
             let contact_a_risque = await page.waitForSelector(
-                '#page #conseils-personnels-contact-a-risque'
+                '#page #conseils-personnels-contact-a-risque-sans-test'
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),

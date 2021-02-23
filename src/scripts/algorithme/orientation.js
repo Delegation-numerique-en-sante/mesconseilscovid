@@ -24,10 +24,11 @@ const STATUTS = [
 // Les blocs de conseils personnels possibles en sortie de l’algorithme.
 const CONSEILS_PERSONNELS = [
     'antigenique-negatif-fragile',
-    'contact-a-risque',
     'contact-a-risque-autre',
+    'contact-a-risque-avec-test',
     'contact-a-risque-meme-lieu-de-vie',
     'contact-a-risque-meme-lieu-de-vie-sans-depistage',
+    'contact-a-risque-sans-test',
     'depistage-positif-antigenique-asymptomatique',
     'depistage-positif-antigenique-symptomatique',
     'depistage-positif-asymptomatique',
@@ -255,7 +256,7 @@ export default class AlgorithmeOrientation {
             case 'en_attente_contact_a_risque':
                 return {
                     statut: 'contact-a-risque-avec-test',
-                    conseils: 'contact-a-risque',
+                    conseils: 'contact-a-risque-avec-test',
                 }
 
             case 'negatif_contact_pas_vraiment_a_risque':
@@ -302,7 +303,7 @@ export default class AlgorithmeOrientation {
             case 'pas_teste_contact_a_risque':
                 return {
                     statut: 'contact-a-risque-sans-test',
-                    conseils: 'contact-a-risque',
+                    conseils: 'contact-a-risque-sans-test',
                 }
 
             case 'pas_teste_contact_a_risque_meme_lieu_de_vie':
