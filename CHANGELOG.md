@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-02-23
+
+* harmonisation des conseils quel que soit le variant
+* confinement partiel le week-end dans les Alpes-Maritimes
+
 ## 2021-02-19
 
 * passage à 10 jours d’isolement pour les cas positifs
