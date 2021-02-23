@@ -1,1 +1,0 @@
-Le laboratoire, votre médecin, ou l’assurance maladie, vous ont peut-être indiqué le variant du virus détecté. Sinon, vous pourrez revenir compléter cette information plus tard.

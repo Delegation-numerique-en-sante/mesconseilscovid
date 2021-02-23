@@ -1,1 +1,0 @@
-<!---->Variant « anglais »

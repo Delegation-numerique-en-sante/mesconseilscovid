@@ -332,52 +332,6 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 
 
-## [question_dépistage_variante_aide.md](question_dépistage_variante_aide.md)
-
-Le laboratoire, votre médecin, ou l’assurance maladie, vous ont peut-être indiqué le variant du virus détecté. Sinon, vous pourrez revenir compléter cette information plus tard.
-
-
-## [question_dépistage_variante_aucune_aide.md](question_dépistage_variante_aucune_aide.md)
-
-<!---->On peut lire « <b>absence</b> lignage 20I/501Y.V1 et 20H/501Y.V2 et 20J/501Y.V3 » sur les résultats du laboratoire.
-
-
-## [question_dépistage_variante_aucune_libellé.md](question_dépistage_variante_aucune_libellé.md)
-
-<!---->Pas de variant détecté
-
-
-## [question_dépistage_variante_autre_libellé.md](question_dépistage_variante_autre_libellé.md)
-
-<!---->Je ne sais pas, ou je n’ai pas eu l’information
-
-
-## [question_dépistage_variante_libellé.md](question_dépistage_variante_libellé.md)
-
-<!---->Le variant détecté par le test
-
-
-
-## [question_dépistage_variante_v1_aide.md](question_dépistage_variante_v1_aide.md)
-
-<!---->On peut lire « <b>présence</b> lignage 20I/501Y.<b>V1</b> » sur les résultats du laboratoire.
-
-
-## [question_dépistage_variante_v1_libellé.md](question_dépistage_variante_v1_libellé.md)
-
-<!---->Variant « anglais »
-
-
-## [question_dépistage_variante_v2_ou_v3_aide.md](question_dépistage_variante_v2_ou_v3_aide.md)
-
-<!---->On peut lire « <b>présence</b> lignage 20H/501Y.<b>V2</b> ou 20J/501Y.<b>V3</b> » sur les résultats du laboratoire.
-
-
-## [question_dépistage_variante_v2_ou_v3_libellé.md](question_dépistage_variante_v2_ou_v3_libellé.md)
-
-<!---->Variant « sud-africain » ou « brésilien »
-
-
 ## [question_foyer_autres_personnes_libellé.md](question_foyer_autres_personnes_libellé.md)
 
 <!---->Je partage mon foyer avec <b>d’autres personnes</b> <span class="nouveau">nouveau</span>
