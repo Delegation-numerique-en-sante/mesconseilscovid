@@ -2,7 +2,7 @@
 
 * dès maintenant :
     * les **personnes âgées en établissements** (notamment les <abbr title="Établissement d’Hébergement pour Personnes Âgées Dépendantes">EHPAD</abbr>) ;
-    * les **professionnels de santé**, **pompiers**, **personnel des établissements** de santé et médico-sociaux, et **aides à domicile** intervenant auprès des personnes vulnérables, âgés de **plus de 50 ans** ou présentant un **risque de forme grave** de Covid ;
+    * les **professionnels de santé**, **pompiers**, **personnel des établissements** de santé et médico-sociaux, et **aides à domicile** intervenant auprès des personnes vulnérables ;
    * les personnes de **75 ans et plus** hors établissements ;
    * les personnes présentant un risque de développer une forme très grave de Covid, sur **ordonnance de leur médecin** ;
 * ensuite, entre février et mars, les personnes présentant un **facteur de risque** lié à l’âge ou une pathologie chronique, ainsi que certains professionnels de santé ;
