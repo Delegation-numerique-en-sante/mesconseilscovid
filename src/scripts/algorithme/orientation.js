@@ -433,7 +433,7 @@ export default class AlgorithmeOrientation {
     vaccinBlockNamesToDisplay() {
         const blockNames = []
         const algoVaccination = new AlgorithmeVaccination(this.profil, this)
-        if (algoVaccination.isProfessionnelDeSanteAgeOuComorbidite()) {
+        if (algoVaccination.isProfessionnelDeSante()) {
             blockNames.push('conseils-vaccins-activite-pro-sante')
         } else if (algoVaccination.isSup75()) {
             blockNames.push('conseils-vaccins-75-ans')
