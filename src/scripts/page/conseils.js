@@ -55,6 +55,9 @@ export default function conseils(element, app) {
         app.enregistrerProfilActuel()
     }
 
+    // Position dynamique du bloc sur les vaccins.
+    moveVaccinationBlockBasedOnIntent(element)
+
     // Display appropriate conseils.
     showRelevantBlocks(element, app.profil, algoOrientation)
 
@@ -314,4 +317,22 @@ function isMobileSafari() {
     const isWebkit = !!ua.match(/WebKit/i)
     const isChrome = !!ua.match(/CriOS/i)
     return isIOS && isWebkit && !isChrome
+}
+
+function moveVaccinationBlockBasedOnIntent(element) {
+    const params = new URLSearchParams(window.location.search)
+    const intent = params.get('intention')
+
+    let referenceSelector
+    if (intent === 'vaccination') {
+        referenceSelector = '#conseils-isolement'
+    } else {
+        referenceSelector = '#conseils-gestes-barrieres-masque'
+    }
+
+    const parentNode = element.querySelector('#conseils-blocs')
+    const newNode = element.querySelector('#conseils-vaccins')
+    const referenceNode = element.querySelector(referenceSelector)
+
+    parentNode.insertBefore(newNode, referenceNode)
 }
