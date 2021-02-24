@@ -12,17 +12,29 @@ export default function introduction(element, app) {
             hideElement(element.querySelector('.js-intro'))
         }
         if (noms.indexOf('mes_infos') === -1) {
-            const card = container.appendChild(
+            const cardClassique = container.appendChild(
                 createElementFromHTML(`
                     <li class="profil-empty">
                         <a class="button button-full-width"
                             data-set-profil="mes_infos"
                             href="#${app.questionnaire.firstPage}"
-                            >Démarrer</a>
+                            >J’ai une question sur ma santé</a>
                     </li>
                 `)
             )
-            bindCreateProfil(card.querySelector('[data-set-profil]'), app)
+            bindCreateProfil(cardClassique.querySelector('[data-set-profil]'), app)
+            const cardVaccination = container.appendChild(
+                createElementFromHTML(`
+                    <li class="profil-empty">
+                        <a class="button button-full-width"
+                            data-set-profil="mes_infos"
+                            href="#${app.questionnaire.firstPage}"
+                            >J’ai une question sur les vaccins</a>
+                    </li>
+                `)
+            )
+            bindIntention(cardVaccination.querySelector('a'))
+            bindCreateProfil(cardVaccination.querySelector('[data-set-profil]'), app)
         }
         container.appendChild(
             createElementFromHTML(`
@@ -76,6 +88,15 @@ function _bindFunc(element, app, func) {
         func(element.dataset.setProfil).then(() => {
             app.router.navigate(event.target.getAttribute('href'))
         })
+    })
+}
+
+function bindIntention(element) {
+    element.addEventListener('click', (event) => {
+        event.preventDefault()
+        const url = new URL(window.location)
+        url.searchParams.append('intention', 'vaccination')
+        window.history.pushState('', '', url.href)
     })
 }
 

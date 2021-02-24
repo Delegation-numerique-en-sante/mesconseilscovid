@@ -23,7 +23,9 @@ describe('Pages', function () {
 
         // Page d’accueil.
         {
-            let bouton = await page.waitForSelector('text="Démarrer"')
+            let bouton = await page.waitForSelector(
+                'text="J’ai une question sur ma santé"'
+            )
             await Promise.all([
                 bouton.click(),
                 page.waitForNavigation({ url: '**/#symptomes' }),

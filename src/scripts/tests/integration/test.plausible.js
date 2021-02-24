@@ -44,7 +44,7 @@ describe('Plausible', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/#introduction')
-        let bouton = await page.waitForSelector('text="Démarrer"')
+        let bouton = await page.waitForSelector('text="J’ai une question sur ma santé"')
 
         await Promise.all([
             bouton.click(),
@@ -157,7 +157,7 @@ describe('Plausible', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/#introduction')
-        let bouton = await page.waitForSelector('text="Démarrer"')
+        let bouton = await page.waitForSelector('text="J’ai une question sur ma santé"')
         await Promise.all([
             bouton.click(),
             page.waitForNavigation({ url: '**/#symptomes' }),
