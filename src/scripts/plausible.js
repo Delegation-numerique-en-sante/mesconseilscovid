@@ -31,9 +31,6 @@ export function registerPlausible(window) {
         payload.r = document.referrer || null
         payload.w = window.innerWidth
 
-        if (options && options.meta) {
-            payload.m = JSON.stringify(options.meta)
-        }
         if (options && options.props) {
             payload.p = JSON.stringify(options.props)
         }
