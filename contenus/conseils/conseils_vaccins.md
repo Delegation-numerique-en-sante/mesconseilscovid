@@ -6,9 +6,9 @@
    * les personnes de **75 ans et plus** hors établissements ;
    * les personnes présentant un risque de développer une forme très grave de Covid, sur **ordonnance de leur médecin** ;
    * les personnes entre **50 et 64 ans** qui ont un risque de développer une forme grave de Covid peuvent se faire vacciner dans un centre de vaccination ou chez leur médecin ;
-* enfin, à la fin de l'été, la vaccination sera **ouverte à tous**.
+* enfin, à la fin de l’été, la vaccination sera **ouverte à tous**.
 
-Les personnes entre 64 ans et 75 ans pourront se faire vacciner dès que l'approvisionnement en vaccins ARNm (Pfizzer et Moderna) le permettra. Nous manquons d'information sur l'usage du vaccin AstraZeneca chez les personnes de plus de 64 ans (87% des personnes ayant participé à la phase d'essai clinique de ce vaccin avaient moins de 65 ans). 
+Les personnes entre 65 ans et 75 ans pourront se faire vacciner dès que l’approvisionnement en vaccins ARNm (Pfizer et Moderna) le permettra, ou dès que les données seront suffisantes pour valider l’efficacité du vaccin AstraZeneca chez les personnes de 65 ans et plus (87% des personnes ayant participé à l’essai clinique de ce vaccin avaient moins de 65 ans).
 
 La vaccination est **gratuite** pour tous, et n’est pas obligatoire.
 
