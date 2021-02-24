@@ -5,8 +5,10 @@
     * les **professionnels de santé**, **pompiers**, **personnel des établissements** de santé et médico-sociaux, et **aides à domicile** intervenant auprès des personnes vulnérables ;
    * les personnes de **75 ans et plus** hors établissements ;
    * les personnes présentant un risque de développer une forme très grave de Covid, sur **ordonnance de leur médecin** ;
-* ensuite, entre février et mars, les personnes présentant un **facteur de risque** lié à l’âge ou une pathologie chronique, ainsi que certains professionnels de santé ;
-* enfin, à la fin du printemps, la vaccination sera **ouverte à tous**.
+   * les personnes entre **50 et 64 ans** qui ont un risque de développer une forme grave de Covid peuvent se faire vacciner dans un centre de vaccination ou chez leur médecin ;
+* enfin, à la fin de l'été, la vaccination sera **ouverte à tous**.
+
+Les personnes entre 64 ans et 75 ans pourront se faire vacciner dès que l'approvisionnement en vaccins ARNm (Pfizzer et Moderna) le permettra. Le vaccin "classique" AstraZeneca présente des risques d'effet secondaire grave chez les personnes de plus de 64 ans. 
 
 La vaccination sera **gratuite** pour tous, et ne sera pas obligatoire.
 
