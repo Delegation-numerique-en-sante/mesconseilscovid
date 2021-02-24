@@ -695,6 +695,10 @@ Pour en savoir plus :
 
 Vous avez plus de 75 ans, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" id="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
 
+Les plages de rendez-vous sont ouvertes au fur et à mesure par les centres de vaccination.
+
+Si vous n’arrivez à trouver un rendez-vous en ligne, vous pouvez appeler le centre de vaccination au numéro indiqué sur <a href="#conseils-vaccins" id="lien-vaccination">la liste des lieux de vaccination</a> et leur demander de vous inscrire sur **liste d’attente**. N’hésitez pas à vous rapprocher de votre mairie, certaines gérent également des listes d’attentes.
+
 </div>
 
 
@@ -703,7 +707,7 @@ Vous avez plus de 75 ans, **vous pouvez vous faire vacciner dès maintenant**. 
 
 <div class="conseil">
 
-Vous êtes un·e professionnel·le de santé de plus de 50 ans ou présentant un risque de forme grave de Covid, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" id="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
+Tou·tes les professionnel·les de santé, **peuvent se faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" id="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
 
 </div>
 
