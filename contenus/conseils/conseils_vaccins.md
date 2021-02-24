@@ -10,9 +10,21 @@
 
 Les personnes entre 64 ans et 75 ans pourront se faire vacciner dès que l'approvisionnement en vaccins ARNm (Pfizzer et Moderna) le permettra. Nous manquons d'information sur l'usage du vaccin AstraZeneca chez les personnes de plus de 64 ans (87% des personnes ayant participé à la phase d'essai clinique de ce vaccin avaient moins de 65 ans). 
 
-La vaccination sera **gratuite** pour tous, et ne sera pas obligatoire.
+La vaccination est **gratuite** pour tous, et n’est pas obligatoire.
+
+Les **effets secondaires** les plus fréquents des vaccins contre la Covid sont :
+
+* une douleur au point d’injection,
+* des maux de tête,
+* de la fatigue,
+* des douleurs musculaires,
+* des malaises,
+* de la fièvre modérée et des frissons.
+
+Ces effets secondaires disparaissent le plus souvent au bout de 2 à 3 jours.
 
 Pour en savoir plus :
+
 * [La liste des centres de vaccination et des publics concernés](https://www.sante.fr/cf/centres-vaccination-covid.html)
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
 * Le site [vaccination-info-service](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/COVID-19) de Santé Publique France

@@ -665,9 +665,21 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 * ensuite, entre février et mars, les personnes présentant un **facteur de risque** lié à l’âge ou une pathologie chronique, ainsi que certains professionnels de santé ;
 * enfin, à la fin du printemps, la vaccination sera **ouverte à tous**.
 
-La vaccination sera **gratuite** pour tous, et ne sera pas obligatoire.
+La vaccination est **gratuite** pour tous, et n’est pas obligatoire.
+
+Les **effets secondaires** les plus fréquents des vaccins contre la Covid sont :
+
+* une douleur au point d’injection,
+* des maux de tête,
+* de la fatigue,
+* des douleurs musculaires,
+* des malaises,
+* de la fièvre modérée et des frissons.
+
+Ces effets secondaires disparaissent le plus souvent au bout de 2 à 3 jours.
 
 Pour en savoir plus :
+
 * [La liste des centres de vaccination et des publics concernés](https://www.sante.fr/cf/centres-vaccination-covid.html)
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
 * Le site [vaccination-info-service](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/COVID-19) de Santé Publique France
