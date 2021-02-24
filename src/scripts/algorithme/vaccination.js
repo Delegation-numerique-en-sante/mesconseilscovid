@@ -8,13 +8,8 @@ export default class AlgorithmeVaccination {
         return this.profil.age >= 75
     }
 
-    isProfessionnelDeSanteAgeOuComorbidite() {
-        return (
-            this.profil.activite_pro_sante &&
-            (this.algoOrientation.sup50 ||
-                this.algoOrientation.antecedents ||
-                this.algoOrientation.imc > 30)
-        )
+    isProfessionnelDeSante() {
+        return this.profil.activite_pro_sante
     }
 
     isTresHautRisque() {
@@ -28,9 +23,7 @@ export default class AlgorithmeVaccination {
 
     isVaccinable() {
         return (
-            this.isSup75() ||
-            this.isProfessionnelDeSanteAgeOuComorbidite() ||
-            this.isTresHautRisque()
+            this.isSup75() || this.isProfessionnelDeSante() || this.isTresHautRisque()
         )
     }
 }

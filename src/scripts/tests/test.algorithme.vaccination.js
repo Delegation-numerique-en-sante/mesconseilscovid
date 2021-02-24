@@ -17,15 +17,15 @@ describe('Vaccination', function () {
         })
         const algoOrientation = new AlgorithmeOrientation(profil)
         const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
-        assert.isFalse(algoVaccination.isProfessionnelDeSanteAgeOuComorbidite())
+        assert.isFalse(algoVaccination.isProfessionnelDeSante())
         assert.isFalse(algoVaccination.isSup75())
         assert.isFalse(algoVaccination.isTresHautRisque())
         assert.isFalse(algoVaccination.isVaccinable())
     })
 
-    it('Vaccination pour les pro santé âgé·e·s', function () {
+    it('Vaccination pour les pro santé', function () {
         const profil = new Profil('mes_infos', {
-            age: 52,
+            age: 35,
             activite_pro_sante: true,
             antecedent_dialyse: false,
             antecedent_greffe: false,
@@ -34,23 +34,7 @@ describe('Vaccination', function () {
         })
         const algoOrientation = new AlgorithmeOrientation(profil)
         const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
-        assert.isTrue(algoVaccination.isProfessionnelDeSanteAgeOuComorbidite())
-        assert.isTrue(algoVaccination.isVaccinable())
-    })
-
-    it('Vaccination pour les pro santé fragiles', function () {
-        const profil = new Profil('mes_infos', {
-            age: 32,
-            activite_pro_sante: true,
-            antecedent_cardio: true,
-            antecedent_dialyse: false,
-            antecedent_greffe: false,
-            antecedent_cancer: false,
-            antecedent_trisomie: false,
-        })
-        const algoOrientation = new AlgorithmeOrientation(profil)
-        const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
-        assert.isTrue(algoVaccination.isProfessionnelDeSanteAgeOuComorbidite())
+        assert.isTrue(algoVaccination.isProfessionnelDeSante())
         assert.isTrue(algoVaccination.isVaccinable())
     })
 
