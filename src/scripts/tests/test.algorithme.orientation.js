@@ -799,5 +799,16 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-confinement-week-end',
             ])
         })
+        it('À Dunkerque, c’est confinement le week-end', function () {
+            var profil = new Profil('mes_infos', {
+                departement: '59',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+                'conseils-couvre-feu-18h',
+                'conseils-confinement-week-end',
+            ])
+        })
     })
 })
