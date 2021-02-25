@@ -99,8 +99,17 @@ describe('Plausible', function () {
     it('avis positif conseils pour une proche', async function () {
         const page = this.test.page
 
+        // On commence par remplir un profil classique pour faire apparaître
+        // le bouton qui permet de le faire pour un proche.
         await page.goto('http://localhost:8080/#introduction')
-        let bouton = await page.waitForSelector(
+        let bouton = await page.waitForSelector('text="J’ai une question sur ma santé"')
+        await Promise.all([
+            bouton.click(),
+            page.waitForNavigation({ url: '**/#symptomes' }),
+        ])
+
+        await page.goto('http://localhost:8080/#introduction')
+        bouton = await page.waitForSelector(
             '.js-profil-new >> text="Faire pour un proche"'
         )
 
@@ -137,6 +146,10 @@ describe('Plausible', function () {
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
         await waitForPlausibleTrackingEvents(page, [
+            'pageview:introduction',
+            'Questionnaire commencé:symptomes',
+            'Questionnaire commencé pour moi:symptomes',
+            'pageview:symptomes',
             'pageview:introduction',
             'pageview:nom',
             'Questionnaire commencé:symptomes',
@@ -210,8 +223,17 @@ describe('Plausible', function () {
     it('avis négatif conseils pour un proche', async function () {
         const page = this.test.page
 
+        // On commence par remplir un profil classique pour faire apparaître
+        // le bouton qui permet de le faire pour un proche.
         await page.goto('http://localhost:8080/#introduction')
-        let bouton = await page.waitForSelector(
+        let bouton = await page.waitForSelector('text="J’ai une question sur ma santé"')
+        await Promise.all([
+            bouton.click(),
+            page.waitForNavigation({ url: '**/#symptomes' }),
+        ])
+
+        await page.goto('http://localhost:8080/#introduction')
+        bouton = await page.waitForSelector(
             '.js-profil-new >> text="Faire pour un proche"'
         )
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
@@ -246,6 +268,10 @@ describe('Plausible', function () {
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
         await waitForPlausibleTrackingEvents(page, [
+            'pageview:introduction',
+            'Questionnaire commencé:symptomes',
+            'Questionnaire commencé pour moi:symptomes',
+            'pageview:symptomes',
             'pageview:introduction',
             'pageview:nom',
             'Questionnaire commencé:symptomes',
