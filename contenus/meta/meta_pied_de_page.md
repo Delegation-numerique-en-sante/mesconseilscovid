@@ -5,7 +5,7 @@
                 Des difficultés avec cette page ?
                 <span class="feedback-controls">
                     <a class="button button-outline button-feedback button-feedback-flag" data-feedback="flag" href="">Oui</a>
-                    <a class="button button-outline button-feedback-contact" href="mailto:mesconseilscovid@sante.gouv.fr">Nous contacter</a>
+                    <a class="button button-outline button-feedback-contact" href="mailto:contact@mesconseilscovid.fr">Nous contacter</a>
                 </span>
             </p>
         </div>
@@ -20,7 +20,7 @@
                     <input type="submit" class="button" value="Envoyer">
                 </div>
             </form>
-            <p>ou écrivez-nous à : <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a></p>
+            <p>ou écrivez-nous à : <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a></p>
         </div>
         <div class="feedback-thankyou" hidden>
             <p>
