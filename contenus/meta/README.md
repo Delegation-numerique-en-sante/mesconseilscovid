@@ -247,7 +247,6 @@ Nous n’avons pas accès à vos données et vous pouvez <a href="#introduction"
 
 
 
-
 ## [meta_pédiatrie.md](meta_pédiatrie.md)
 
 ## Conseils pour les enfants
@@ -404,5 +403,6 @@ Ligne d’écoute pour les parents, ressources pour les parents et professionnel
 ---
 
 <!---->Un de vos proches est malade, nous lui proposons de suivre son état de santé via ce questionnaire en ligne.
+
 
 
