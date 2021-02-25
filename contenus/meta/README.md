@@ -180,7 +180,7 @@ Vos informations personnelles sont seulement stockées sur cet appareil, et ne s
 
 Afin de vous apporter des conseils plus pertinents, nous organisons des entretiens utilisateurs individuels de 20 minutes dont l’objectif est de mieux comprendre vos attentes.
 
-Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement **OK** ou laissez nous votre numéro de téléphone par e-mail à l’adresse <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a>, et nous vous recontacterons pour convenir d’un rendez-vous.
+Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement **OK** ou laissez nous votre numéro de téléphone par e-mail à l’adresse <a href="mailto:contact@mesconseilscovid.fr">mesconseilscovid@sante.gouv.fr</a>, et nous vous recontacterons pour convenir d’un rendez-vous.
 
 </div>
 
@@ -206,7 +206,7 @@ Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement
                     <input type="submit" class="button" value="Envoyer">
                 </div>
             </form>
-            <p class="feedback-email">ou écrivez-nous à : <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a></p>
+            <p class="feedback-email">ou écrivez-nous à : <a href="mailto:contact@mesconseilscovid.fr">mesconseilscovid@sante.gouv.fr</a></p>
         </div>
         <div class="feedback-thankyou" hidden>
             <p>
