@@ -35,16 +35,17 @@ export default function introduction(element, app) {
             )
             bindIntention(cardVaccination.querySelector('a'))
             bindCreateProfil(cardVaccination.querySelector('[data-set-profil]'), app)
+        } else {
+            container.appendChild(
+                createElementFromHTML(`
+                    <li class="profil-empty">
+                        <a class="button button-full-width button-outline js-profil-new"
+                            href="#nom"
+                            >Faire pour un proche</a>
+                    </li>
+                `)
+            )
         }
-        container.appendChild(
-            createElementFromHTML(`
-                <li class="profil-empty">
-                    <a class="button button-full-width button-outline js-profil-new"
-                        href="#nom"
-                        >Faire pour un proche</a>
-                </li>
-            `)
-        )
         renderProfilCards(container, noms, app)
     })
 }
