@@ -28,12 +28,12 @@ export default function introduction(element, app) {
                     <li class="profil-empty">
                         <a class="button button-full-width"
                             data-set-profil="mes_infos"
+                            data-intention="vaccination"
                             href="#${app.questionnaire.firstPage}"
                             >J’ai une question<br> sur les vaccins</a>
                     </li>
                 `)
             )
-            bindIntention(cardVaccination.querySelector('a'))
             bindCreateProfil(cardVaccination.querySelector('[data-set-profil]'), app)
         } else {
             container.appendChild(
@@ -86,19 +86,19 @@ function bindChangeProfil(element, app) {
 function _bindFunc(element, app, func) {
     element.addEventListener('click', function (event) {
         event.preventDefault()
+        addIntentSearchParam(element)
         func(element.dataset.setProfil).then(() => {
             app.router.navigate(event.target.getAttribute('href'))
         })
     })
 }
 
-function bindIntention(element) {
-    element.addEventListener('click', (event) => {
-        event.preventDefault()
-        const url = new URL(window.location)
-        url.searchParams.append('intention', 'vaccination')
-        window.history.pushState('', '', url.href)
-    })
+function addIntentSearchParam(element) {
+    const url = new URL(window.location)
+    if (element.dataset.intention) {
+        url.searchParams.set('intention', element.dataset.intention)
+    }
+    window.history.pushState('', '', url.href)
 }
 
 function bindSuppression(element, app) {
