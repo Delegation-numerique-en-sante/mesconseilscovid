@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-02-25
+
+* harmonisation des conseils sur la vaccination
+* confinement partiel le week-end dans le Nord
+
 ## 2021-02-23
 
 * harmonisation des conseils quel que soit le variant
