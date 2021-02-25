@@ -17,25 +17,7 @@ export default class App {
 
         // Statistiques.
         this._plausibleTrackingEvents = []
-        this.plausible = (eventName) => {
-            const searchParams = new URLSearchParams(window.location.search)
-            const options = {}
-            if (searchParams.toString().length) {
-                const props = {}
-                const source = searchParams.get('source')
-                if (source) {
-                    props['source'] = source
-                }
-                const intention = searchParams.get('intention')
-                if (intention) {
-                    props['intention'] = intention
-                }
-                if (props) {
-                    options['props'] = props
-                }
-            }
-            registerPlausible(window)(eventName, options)
-        }
+        this._plausible = registerPlausible(window)
         this.atinternet = registerATInternet()
 
         this.source = new URLSearchParams(window.location.search).get('source')
@@ -162,5 +144,24 @@ export default class App {
             },
         ]
         this.enregistrerProfilActuel()
+    }
+    plausible(eventName) {
+        const searchParams = new URLSearchParams(window.location.search)
+        const options = {}
+        if (searchParams.toString().length) {
+            const props = {}
+            const source = searchParams.get('source')
+            if (source) {
+                props['source'] = source
+            }
+            const intention = searchParams.get('intention')
+            if (intention) {
+                props['intention'] = intention
+            }
+            if (props) {
+                options['props'] = props
+            }
+        }
+        return this._plausible(eventName, options)
     }
 }
