@@ -18,7 +18,7 @@ export default function introduction(element, app) {
                         <a class="button button-full-width"
                             data-set-profil="mes_infos"
                             href="#${app.questionnaire.firstPage}"
-                            >J’ai une question sur ma santé</a>
+                            >J’ai une question<br> sur ma santé</a>
                     </li>
                 `)
             )
@@ -29,7 +29,7 @@ export default function introduction(element, app) {
                         <a class="button button-full-width"
                             data-set-profil="mes_infos"
                             href="#${app.questionnaire.firstPage}"
-                            >J’ai une question sur les vaccins</a>
+                            >J’ai une question<br> sur les vaccins</a>
                     </li>
                 `)
             )
