@@ -32,7 +32,7 @@ Il renvoie vers les consignes préfectorales pour les mesures locales et les rec
 Les informations diffusées ici sont basées sur des recommandations officielles, de sources fiables. Mais il n’est pas exempt de défauts, d’erreurs ou d’omissions.
 
 N’hésitez pas à nous contacter à l’adresse
-[mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr)
+[contact@mesconseilscovid.fr](mailto:contact@mesconseilscovid.fr)
 si vous identifiez une information contraire aux connaissances médicales sur la maladie.
 
 ### Accessibilité
@@ -40,7 +40,7 @@ si vous identifiez une information contraire aux connaissances médicales sur la
 Nous tâchons de rendre ce site accessible à toutes et à tous. Nous n’avons pas encore testé le respect des normes formelles d’accessibilité du service.
 
 Si vous rencontrez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou une fonctionnalité du site, merci de nous contacter à l’adresse
-[mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr).
+[contact@mesconseilscovid.fr](mailto:contact@mesconseilscovid.fr).
 
 Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits.
 
@@ -62,7 +62,7 @@ Seules vos données de connexion au service (heure, date…) sont conservées po
 Au sein du ministère, le responsable de traitement de *mesconseilscovid.sante.gouv.fr* est la Délégation ministérielle du numérique en santé (DNS) du ministère des solidarités et de la Santé. La déléguée est directrice de publication.
 
 Vous pouvez également demander des informations ou exercer vos droits concernant la protection de vos données personnelles à l’adresse suivante
-[mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr).
+[contact@mesconseilscovid.fr](mailto:contact@mesconseilscovid.fr).
 
 Le service est hébergé par :
 

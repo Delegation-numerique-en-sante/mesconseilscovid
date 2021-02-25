@@ -40,7 +40,7 @@ Il renvoie vers les consignes préfectorales pour les mesures locales et les rec
 Les informations diffusées ici sont basées sur des recommandations officielles, de sources fiables. Mais il n’est pas exempt de défauts, d’erreurs ou d’omissions.
 
 N’hésitez pas à nous contacter à l’adresse
-[mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr)
+[contact@mesconseilscovid.fr](mailto:contact@mesconseilscovid.fr)
 si vous identifiez une information contraire aux connaissances médicales sur la maladie.
 
 ### Accessibilité
@@ -48,7 +48,7 @@ si vous identifiez une information contraire aux connaissances médicales sur la
 Nous tâchons de rendre ce site accessible à toutes et à tous. Nous n’avons pas encore testé le respect des normes formelles d’accessibilité du service.
 
 Si vous rencontrez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou une fonctionnalité du site, merci de nous contacter à l’adresse
-[mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr).
+[contact@mesconseilscovid.fr](mailto:contact@mesconseilscovid.fr).
 
 Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits.
 
@@ -70,7 +70,7 @@ Seules vos données de connexion au service (heure, date…) sont conservées po
 Au sein du ministère, le responsable de traitement de *mesconseilscovid.sante.gouv.fr* est la Délégation ministérielle du numérique en santé (DNS) du ministère des solidarités et de la Santé. La déléguée est directrice de publication.
 
 Vous pouvez également demander des informations ou exercer vos droits concernant la protection de vos données personnelles à l’adresse suivante
-[mesconseilscovid@sante.gouv.fr](mailto:mesconseilscovid@sante.gouv.fr).
+[contact@mesconseilscovid.fr](mailto:contact@mesconseilscovid.fr).
 
 Le service est hébergé par :
 
@@ -134,7 +134,7 @@ Il est recommandé de mettre à jour dès que possible en cliquant sur le bouton
                 Des difficultés avec cette page ?
                 <span class="feedback-controls">
                     <a class="button button-outline button-feedback button-feedback-flag" data-feedback="flag" href="">Oui</a>
-                    <a class="button button-outline button-feedback-contact" href="mailto:mesconseilscovid@sante.gouv.fr">Nous contacter</a>
+                    <a class="button button-outline button-feedback-contact" href="mailto:contact@mesconseilscovid.fr">Nous contacter</a>
                 </span>
             </p>
         </div>
@@ -149,7 +149,7 @@ Il est recommandé de mettre à jour dès que possible en cliquant sur le bouton
                     <input type="submit" class="button" value="Envoyer">
                 </div>
             </form>
-            <p>ou écrivez-nous à : <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a></p>
+            <p>ou écrivez-nous à : <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a></p>
         </div>
         <div class="feedback-thankyou" hidden>
             <p>
@@ -180,7 +180,7 @@ Vos informations personnelles sont seulement stockées sur cet appareil, et ne s
 
 Afin de vous apporter des conseils plus pertinents, nous organisons des entretiens utilisateurs individuels de 20 minutes dont l’objectif est de mieux comprendre vos attentes.
 
-Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement **OK** ou laissez nous votre numéro de téléphone par e-mail à l’adresse <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a>, et nous vous recontacterons pour convenir d’un rendez-vous.
+Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement **OK** ou laissez nous votre numéro de téléphone par e-mail à l’adresse <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a>, et nous vous recontacterons pour convenir d’un rendez-vous.
 
 </div>
 
@@ -206,7 +206,7 @@ Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement
                     <input type="submit" class="button" value="Envoyer">
                 </div>
             </form>
-            <p class="feedback-email">ou écrivez-nous à : <a href="mailto:mesconseilscovid@sante.gouv.fr">mesconseilscovid@sante.gouv.fr</a></p>
+            <p class="feedback-email">ou écrivez-nous à : <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a></p>
         </div>
         <div class="feedback-thankyou" hidden>
             <p>
