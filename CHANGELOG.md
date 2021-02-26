@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-02-26
+
+* changement de l’adresse de contact
+* message pour participer aux tests utilisateur·ices
+* parcours mesurant l’intérêt pour la vaccination
+
 ## 2021-02-25
 
 * harmonisation des conseils sur la vaccination
