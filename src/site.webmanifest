@@ -1,7 +1,7 @@
 {
     "name": "Mes Conseils Covid",
     "short_name": "Conseils Covid",
-    "description": "Des conseils personnalisés pour agir contre le virus",
+    "description": "Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

@@ -1,6 +1,6 @@
 # Mes Conseils Covid
 
-## Des conseils personnalisés pour agir contre le virus
+## Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé
 
 https://mesconseilscovid.sante.gouv.fr/
 
