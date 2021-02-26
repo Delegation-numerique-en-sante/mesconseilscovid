@@ -93,14 +93,14 @@ Si votre situation change, vous pouvez **mettre à jour vos réponses**, par exe
 
 ## [meta_introduction.md](meta_introduction.md)
 
-## Des conseils personnalisés pour agir contre le virus
+## Isolement, tests, vaccins…<br> tout savoir pour prendre soin de votre santé
 
 <ul id="profils-cards" class="cards"></ul>
 
 <div class="js-intro">
 
 <p class="tagline">
-Obtenez en 3 minutes des recommandations pour <b>votre santé</b> et celle de vos proches.
+Obtenez en 3 minutes des conseils personnalisés pour <b>votre santé</b> et celle de vos proches.
 </p>
 
 </div>

@@ -8,7 +8,7 @@ describe('Pages', function () {
         await page.goto('http://localhost:8080/')
         assert.equal(
             await page.title(),
-            'Mes Conseils Covid — Des conseils personnalisés pour agir contre le virus'
+            'Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
         )
     })
 
