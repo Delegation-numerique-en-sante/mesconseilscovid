@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-03-05
+
+* confinement du Pas-de-Calais le week-end
+
 ## 2021-02-26
 
 * changement de l’adresse de contact
