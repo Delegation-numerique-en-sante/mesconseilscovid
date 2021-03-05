@@ -810,5 +810,16 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-confinement-week-end',
             ])
         })
+        it('Dans le Pas-de-Calais, c’est confinement le week-end', function () {
+            var profil = new Profil('mes_infos', {
+                departement: '62',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+                'conseils-couvre-feu-18h',
+                'conseils-confinement-week-end',
+            ])
+        })
     })
 })

@@ -471,7 +471,8 @@ export default class AlgorithmeOrientation {
             blockNames.push('conseils-confinement')
         } else if (
             this.profil.departement === '06' ||
-            this.profil.departement === '59'
+            this.profil.departement === '59' ||
+            this.profil.departement === '62'
         ) {
             blockNames.push('conseils-couvre-feu-18h')
             blockNames.push('conseils-confinement-week-end')
