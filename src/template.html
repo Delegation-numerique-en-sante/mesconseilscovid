@@ -109,6 +109,59 @@
     </form>
 </section>
 
+<section id="vaccins" hidden>
+    <form id="vaccins-form" class="block">
+        <fieldset>
+            <legend>{{ question_vaccins_titre|me_or_them }}</legend>
+            <div>
+                <input id="vaccins_checkbox" type="checkbox" name="vaccins">
+                <label for="vaccins_checkbox">
+                    <span>{{ question_vaccins_libellé|me_or_them }}</span>
+                </label>
+            </div>
+
+            <div class="secondary disabled required">
+                <div id="vaccins-date-label" class="secondary-title">
+                    {{ question_vaccins_date_libellé }}
+                </div>
+                <div class="row" aria-labelledby="vaccins-date-label">
+                    <label for="vaccins_start_date">
+                    {{ question_vaccins_date_aide }}
+                    </label>
+                    <input type="date" lang="fr" id="vaccins_start_date" name="vaccins_start_date" required>
+                </div>
+                <div class="row" aria-labelledby="vaccins-date2-label">
+                    <label for="vaccins_start_date2">
+                    {{ question_vaccins_date2_aide }}
+                    </label>
+                    <input type="date" lang="fr" id="vaccins_start_date2" name="vaccins_start_date2">
+                </div>
+            </div>
+
+            <div class="secondary disabled required">
+                <div id="vaccins-type-label" class="secondary-title">
+                    {{ question_vaccins_type_libellé }}
+                </div>
+                <div role="radiogroup" aria-labelledby="vaccins-type-label">
+                    <input id="vaccins_type_comirnaty" type="radio" required name="vaccins_type" value="comirnaty">
+                    <label for="vaccins_type_comirnaty"><span>{{ question_vaccins_comirnaty_libellé }}</span></label>
+                    <input id="vaccins_type_moderna" type="radio" required name="vaccins_type" value="moderna">
+                    <label for="vaccins_type_moderna"><span>{{ question_vaccins_moderna_libellé }}</span></label>
+                    <input id="vaccins_type_astrazeneca" type="radio" required name="vaccins_type" value="astrazeneca">
+                    <label for="vaccins_type_astrazeneca"><span>{{ question_vaccins_astrazeneca_libellé }}</span></label>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <div class="button-with-progress">
+                <input type="submit" class="button" value="Continuer">
+                <span class="progress"></span>
+            </div>
+            <a href="#" class="back-button button-outline">Retour</a>
+        </div>
+    </form>
+</section>
+
 <section id="situation" hidden>
     <form id="situation-form" class="block">
         <fieldset>

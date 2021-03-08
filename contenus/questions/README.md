@@ -771,3 +771,65 @@ Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal
 <!---->Cette personne a-t-elle des signes de la Covid ?
 
 
+
+## [question_vaccins_astrazeneca_libellé.md](question_vaccins_astrazeneca_libellé.md)
+
+<!---->C’était un vaccin <b>AstraZeneca®</b>.
+
+
+
+## [question_vaccins_comirnaty_libellé.md](question_vaccins_comirnaty_libellé.md)
+
+<!---->C’était un vaccin <b>Comirnaty®</b> (Pfizer/BioNtec).
+
+
+
+## [question_vaccins_date2_aide.md](question_vaccins_date2_aide.md)
+
+<!---->La seconde injection a été réalisée le :
+
+
+
+## [question_vaccins_date_aide.md](question_vaccins_date_aide.md)
+
+<!---->La première injection a été réalisée le :
+
+
+
+## [question_vaccins_date_libellé.md](question_vaccins_date_libellé.md)
+
+<!---->Les dates de la vaccination
+
+
+
+## [question_vaccins_libellé.md](question_vaccins_libellé.md)
+
+<!---->Je me suis fait·e <b>vacciné·e</b> contre la Covid.
+
+---
+
+<!---->Cette personne a été <b>vacciné·e</b> contre la covid.
+
+
+
+## [question_vaccins_moderna_libellé.md](question_vaccins_moderna_libellé.md)
+
+<!---->C’était un vaccin <b>Moderna®</b>.
+
+
+
+## [question_vaccins_titre.md](question_vaccins_titre.md)
+
+<!---->Mes vaccins Covid
+
+---
+
+<!---->Ses vaccins Covid
+
+
+
+## [question_vaccins_type_libellé.md](question_vaccins_type_libellé.md)
+
+<!---->Le type de vaccin
+
+
