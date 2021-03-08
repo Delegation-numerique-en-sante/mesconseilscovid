@@ -18,34 +18,21 @@ export default function introduction(element, app) {
                         <a class="button button-full-width"
                             data-set-profil="mes_infos"
                             href="#${app.questionnaire.firstPage}"
-                            >J’ai une question<br> sur ma santé</a>
+                            >Faire pour moi</a>
                     </li>
                 `)
             )
             bindCreateProfil(cardClassique.querySelector('[data-set-profil]'), app)
-            const cardVaccination = container.appendChild(
-                createElementFromHTML(`
-                    <li class="profil-empty">
-                        <a class="button button-full-width"
-                            data-set-profil="mes_infos"
-                            data-intention="vaccination"
-                            href="#${app.questionnaire.firstPage}"
-                            >J’ai une question<br> sur les vaccins</a>
-                    </li>
-                `)
-            )
-            bindCreateProfil(cardVaccination.querySelector('[data-set-profil]'), app)
-        } else {
-            container.appendChild(
-                createElementFromHTML(`
-                    <li class="profil-empty">
-                        <a class="button button-full-width button-outline js-profil-new"
-                            href="#nom"
-                            >Faire pour un proche</a>
-                    </li>
-                `)
-            )
         }
+        container.appendChild(
+            createElementFromHTML(`
+                <li class="profil-empty">
+                    <a class="button button-full-width button-outline js-profil-new"
+                        href="#nom"
+                        >Faire pour un·e proche</a>
+                </li>
+            `)
+        )
         renderProfilCards(container, noms, app)
     })
 }
@@ -87,19 +74,10 @@ function bindChangeProfil(element, app) {
 function _bindFunc(element, app, func) {
     element.addEventListener('click', function (event) {
         event.preventDefault()
-        addIntentSearchParam(element)
         func(element.dataset.setProfil).then(() => {
             app.router.navigate(event.target.getAttribute('href'))
         })
     })
-}
-
-function addIntentSearchParam(element) {
-    const url = new URL(window.location)
-    if (element.dataset.intention) {
-        url.searchParams.set('intention', element.dataset.intention)
-    }
-    window.history.pushState('', '', url.href)
 }
 
 function bindSuppression(element, app) {

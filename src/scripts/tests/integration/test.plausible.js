@@ -45,9 +45,7 @@ describe('Plausible', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/#introduction')
-        let bouton = await page.waitForSelector(
-            '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
-        )
+        let bouton = await page.waitForSelector('#page.ready >> text="Faire pour moi"')
 
         await Promise.all([
             bouton.click(),
@@ -102,20 +100,9 @@ describe('Plausible', function () {
     it('avis positif conseils pour une proche', async function () {
         const page = this.test.page
 
-        // On commence par remplir un profil classique pour faire apparaître
-        // le bouton qui permet de le faire pour un proche.
         await page.goto('http://localhost:8080/#introduction')
         let bouton = await page.waitForSelector(
-            '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
-        )
-        await Promise.all([
-            bouton.click(),
-            page.waitForNavigation({ url: '**/#symptomes' }),
-        ])
-
-        await page.goto('http://localhost:8080/#introduction')
-        bouton = await page.waitForSelector(
-            '#page.ready .js-profil-new >> text="Faire pour un proche"'
+            '#page.ready .js-profil-new >> text="Faire pour un·e proche"'
         )
 
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
@@ -152,10 +139,6 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
-            'Questionnaire commencé:symptomes',
-            'Questionnaire commencé pour moi:symptomes',
-            'pageview:symptomes',
-            'pageview:introduction',
             'pageview:nom',
             'Questionnaire commencé:symptomes',
             'Questionnaire commencé pour un proche:symptomes',
@@ -175,9 +158,7 @@ describe('Plausible', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/#introduction')
-        let bouton = await page.waitForSelector(
-            '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
-        )
+        let bouton = await page.waitForSelector('#page.ready >> text="Faire pour moi"')
         await Promise.all([
             bouton.click(),
             page.waitForNavigation({ url: '**/#symptomes' }),
@@ -230,20 +211,9 @@ describe('Plausible', function () {
     it('avis négatif conseils pour un proche', async function () {
         const page = this.test.page
 
-        // On commence par remplir un profil classique pour faire apparaître
-        // le bouton qui permet de le faire pour un proche.
         await page.goto('http://localhost:8080/#introduction')
         let bouton = await page.waitForSelector(
-            '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
-        )
-        await Promise.all([
-            bouton.click(),
-            page.waitForNavigation({ url: '**/#symptomes' }),
-        ])
-
-        await page.goto('http://localhost:8080/#introduction')
-        bouton = await page.waitForSelector(
-            '#page.ready .js-profil-new >> text="Faire pour un proche"'
+            '#page.ready .js-profil-new >> text="Faire pour un·e proche"'
         )
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
         await remplirQuestionnaire(page, {
@@ -277,10 +247,6 @@ describe('Plausible', function () {
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
         await waitForPlausibleTrackingEvents(page, [
-            'pageview:introduction',
-            'Questionnaire commencé:symptomes',
-            'Questionnaire commencé pour moi:symptomes',
-            'pageview:symptomes',
             'pageview:introduction',
             'pageview:nom',
             'Questionnaire commencé:symptomes',
