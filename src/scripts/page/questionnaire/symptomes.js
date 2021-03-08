@@ -10,8 +10,6 @@ import {
 import { joursAvant } from '../../utils'
 
 export default function symptomes(form, app) {
-    premierDemarrageFormulaire(app)
-
     // Selon le choix radio ça affiche le choix des symptômes et/ou
     // la saisie de la date.
     const statuts = form.elements['symptomes_actuels_statuts']
@@ -126,19 +124,6 @@ export default function symptomes(form, app) {
             app.goToNextPage('symptomes')
         })
     })
-}
-
-function premierDemarrageFormulaire(app) {
-    if (typeof app.profil.questionnaire_start_date === 'undefined') {
-        app.profil.questionnaire_start_date = new Date()
-        app.enregistrerProfilActuel()
-        app.plausible('Questionnaire commencé')
-        if (app.profil.estMonProfil()) {
-            app.plausible('Questionnaire commencé pour moi')
-        } else {
-            app.plausible('Questionnaire commencé pour un proche')
-        }
-    }
 }
 
 function fillProfilDates(app, form) {

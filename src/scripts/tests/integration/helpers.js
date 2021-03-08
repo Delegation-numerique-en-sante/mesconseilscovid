@@ -33,6 +33,13 @@ export async function remplirQuestionnaire(page, choix) {
     if (typeof choix.nom !== 'undefined') {
         await remplirNom(page, choix.nom)
     }
+    await remplirVaccins(
+        page,
+        choix.vaccins,
+        choix.vaccinsDate,
+        choix.vaccinsDate2,
+        choix.vaccinsType
+    )
     await remplirSymptomes(
         page,
         choix.symptomesActuels,
@@ -68,10 +75,7 @@ export async function remplirQuestionnaire(page, choix) {
 async function remplirNom(page, nom) {
     await page.fill('#page.ready #name', nom)
     let bouton = await page.waitForSelector('#page.ready >> text="Continuer"')
-    await Promise.all([
-        bouton.click(),
-        page.waitForNavigation({ url: '**/#symptomes' }),
-    ])
+    await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#vaccins' })])
 }
 
 async function remplirSituation(page, departement, enfants, activitePro) {
@@ -157,6 +161,42 @@ async function remplirDepistage(page, depistage, date, type, resultat) {
     await Promise.all([
         bouton.click(),
         page.waitForNavigation({ url: `**/#situation` }),
+    ])
+}
+
+async function remplirVaccins(page, vaccins, date, date2, type) {
+    let text
+
+    if (vaccins) {
+        let checkbox_label = await page.waitForSelector(
+            '#page.ready label[for="vaccins_checkbox"]'
+        )
+        await checkbox_label.click()
+
+        await page.fill(
+            '#page.ready #vaccins_start_date',
+            date.toISOString().substring(0, 10)
+        )
+
+        await page.fill(
+            '#page.ready #vaccins_start_date2',
+            date2.toISOString().substring(0, 10)
+        )
+
+        let type_label = await page.waitForSelector(
+            `#page.ready label[for="vaccins_type_${type}"]`
+        )
+        await type_label.click()
+
+        text = '"Continuer"'
+    } else {
+        text = '/.* pas été vacciné·e/'
+    }
+
+    let bouton = await page.waitForSelector(`#page.ready >> text=${text}`)
+    await Promise.all([
+        bouton.click(),
+        page.waitForNavigation({ url: `**/#symptomes` }),
     ])
 }
 

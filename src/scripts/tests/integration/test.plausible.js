@@ -49,10 +49,11 @@ describe('Plausible', function () {
 
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/#symptomes' }),
+            page.waitForNavigation({ url: '**/#vaccins' }),
         ])
 
         await remplirQuestionnaire(page, {
+            vaccins: false,
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],
@@ -83,8 +84,9 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
-            'Questionnaire commencé:symptomes',
-            'Questionnaire commencé pour moi:symptomes',
+            'Questionnaire commencé:vaccins',
+            'Questionnaire commencé pour moi:vaccins',
+            'pageview:vaccins',
             'pageview:symptomes',
             'pageview:contactarisque',
             'pageview:depistage',
@@ -109,6 +111,7 @@ describe('Plausible', function () {
 
         await remplirQuestionnaire(page, {
             nom: 'Mamie',
+            vaccins: false,
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],
@@ -140,8 +143,9 @@ describe('Plausible', function () {
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
             'pageview:nom',
-            'Questionnaire commencé:symptomes',
-            'Questionnaire commencé pour un proche:symptomes',
+            'Questionnaire commencé:vaccins',
+            'Questionnaire commencé pour un proche:vaccins',
+            'pageview:vaccins',
             'pageview:symptomes',
             'pageview:contactarisque',
             'pageview:depistage',
@@ -161,9 +165,10 @@ describe('Plausible', function () {
         let bouton = await page.waitForSelector('#page.ready >> text="Faire pour moi"')
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/#symptomes' }),
+            page.waitForNavigation({ url: '**/#vaccins' }),
         ])
         await remplirQuestionnaire(page, {
+            vaccins: false,
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],
@@ -194,8 +199,9 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
-            'Questionnaire commencé:symptomes',
-            'Questionnaire commencé pour moi:symptomes',
+            'Questionnaire commencé:vaccins',
+            'Questionnaire commencé pour moi:vaccins',
+            'pageview:vaccins',
             'pageview:symptomes',
             'pageview:contactarisque',
             'pageview:depistage',
@@ -218,6 +224,7 @@ describe('Plausible', function () {
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
         await remplirQuestionnaire(page, {
             nom: 'Papy',
+            vaccins: false,
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],
@@ -249,8 +256,9 @@ describe('Plausible', function () {
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
             'pageview:nom',
-            'Questionnaire commencé:symptomes',
-            'Questionnaire commencé pour un proche:symptomes',
+            'Questionnaire commencé:vaccins',
+            'Questionnaire commencé pour un proche:vaccins',
+            'pageview:vaccins',
             'pageview:symptomes',
             'pageview:contactarisque',
             'pageview:depistage',
