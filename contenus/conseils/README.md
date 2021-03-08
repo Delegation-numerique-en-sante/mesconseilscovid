@@ -686,6 +686,7 @@ Pour en savoir plus :
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
 * Le site [vaccination-info-service](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/COVID-19) de Santé Publique France
 * Les [réponses à vos questions sur les vaccins COVID-19](https://sante.fr/vaccins-covid-19-comirnatyr-et-modernar-toutes-les-reponses-vos-questions)  Comirnaty® de Pfizer/BioNTech et Moderna®
+* [Vaccination chez les femmes enceintes ou allaitantes : ce qu’il faut savoir](https://www.ansm.sante.fr/Dossiers/COVID-19-Vaccins/Vaccins-autorises/(offset)/3#paragraph_189145)
 
 
 
