@@ -669,6 +669,8 @@ Les personnes entre 65 ans et 75 ans pourront se faire vacciner dès que l’app
 
 La vaccination est **gratuite** pour tous, et n’est pas obligatoire.
 
+La vaccination est à évaluer chez les **femmes enceintes** au cas par cas, il n’y a pas d’effet attendu chez le nourrisson et l’enfant allaités par une femme vaccinée.
+
 Les **effets secondaires** les plus fréquents des vaccins contre la Covid sont :
 
 * une douleur au point d’injection,
