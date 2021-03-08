@@ -11,21 +11,10 @@ describe('Profils', function () {
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // On commence par remplir un profil classique pour faire apparaître
-        // le bouton qui permet de le faire pour un proche.
-        let bouton = await page.waitForSelector(
-            '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
-        )
-        await Promise.all([
-            bouton.click(),
-            page.waitForNavigation({ url: '**/#symptomes' }),
-        ])
-
         // Page d’accueil.
-        await page.goto('http://localhost:8080/#introduction')
         {
             let bouton = await page.waitForSelector(
-                '#page.ready .js-profil-new >> text="Faire pour un proche"'
+                '#page.ready .js-profil-new >> text="Faire pour un·e proche"'
             )
             await Promise.all([
                 bouton.click(),

@@ -154,10 +154,6 @@ export default class App {
             if (source) {
                 props['source'] = source
             }
-            const intention = searchParams.get('intention')
-            if (intention) {
-                props['intention'] = intention
-            }
             if (props) {
                 options['props'] = props
             }
