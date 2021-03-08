@@ -7,7 +7,7 @@
     "@babel/core": "^7.13.8",
     "@babel/eslint-parser": "^7.13.8",
     "@babel/eslint-plugin": "^7.13.0",
-    "@babel/preset-env": "^7.13.5",
+    "@babel/preset-env": "^7.13.9",
     "@babel/register": "^7.13.8",
     "@mermaid-js/mermaid-cli": "^8.9.1",
     "chai": "^4.3.3",
