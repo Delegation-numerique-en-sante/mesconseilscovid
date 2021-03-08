@@ -1,16 +1,13 @@
-<span class="nouveau">nouveau</span> Le déploiement de la vaccination se fera en plusieurs phases :
+<span class="nouveau">nouveau</span> Le déploiement de la vaccination se fait en plusieurs phases :
 
 * dès maintenant :
-    * les **personnes âgées en établissements** (notamment les <abbr title="Établissement d’Hébergement pour Personnes Âgées Dépendantes">EHPAD</abbr>) ;
-    * les **professionnels de santé**, **pompiers**, **personnel des établissements** de santé et médico-sociaux, et **aides à domicile** intervenant auprès des personnes vulnérables ;
-   * les personnes de **75 ans et plus** hors établissements ;
-   * les personnes présentant un risque de développer une forme très grave de Covid, sur **ordonnance de leur médecin** ;
-   * les personnes entre **50 et 64 ans** qui ont un risque de développer une forme grave de Covid peuvent se faire vacciner dans un centre de vaccination ou chez leur médecin ;
-* enfin, à la fin de l’été, la vaccination sera **ouverte à tous**.
+   * les personnes de **75 ans ou plus** ;
+   * les personnes entre **50 et 74 ans** qui ont un risque de développer une forme grave de Covid (diabète, cancer, obésité, etc) ;
+   * les personnes présentant un risque de développer une forme très grave de Covid, sur **ordonnance de leur médecin** (cancer, dialyse, trisomie 21, etc) ;
+   * les **professionnels de santé** au sens large et les **sapeurs-pompiers** ;
+* enfin, à la fin de l’été, la vaccination sera **ouverte à toutes les personnes** de 18 ans et plus.
 
-Les personnes entre 65 ans et 75 ans pourront se faire vacciner dès que l’approvisionnement en vaccins ARNm (Pfizer et Moderna) le permettra, ou dès que les données seront suffisantes pour valider l’efficacité du vaccin AstraZeneca chez les personnes de 65 ans et plus (87% des personnes ayant participé à l’essai clinique de ce vaccin avaient moins de 65 ans).
-
-La vaccination est **gratuite** pour tous, et n’est pas obligatoire.
+La vaccination est **gratuite** pour tous, et n’est **pas obligatoire**.
 
 La vaccination est à évaluer chez les **femmes enceintes** au cas par cas, il n’y a pas d’effet attendu chez le nourrisson et l’enfant allaités par une femme vaccinée.
 
@@ -28,6 +25,7 @@ Ces effets secondaires disparaissent le plus souvent au bout de 2 à 3 jours.
 Pour en savoir plus :
 
 * [La liste des centres de vaccination et des publics concernés](https://www.sante.fr/cf/centres-vaccination-covid.html)
+* [Les personnes éligibles à la vaccination contre la Covid-19](https://www.gouvernement.fr/les-personnes-eligibles-a-la-vaccination-contre-la-covid-19) sur le site du gouvernement
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
 * Le site [vaccination-info-service](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/COVID-19) de Santé Publique France
 * Les [réponses à vos questions sur les vaccins COVID-19](https://sante.fr/vaccins-covid-19-comirnatyr-et-modernar-toutes-les-reponses-vos-questions)  Comirnaty® de Pfizer/BioNTech et Moderna®
