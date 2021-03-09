@@ -11,23 +11,23 @@ export default function vaccins(form, app) {
 
     // Autorise seulement une date passée.
     const now = new Date()
-    const datePicker = form.querySelector('#vaccins_start_date')
+    const datePicker = form.querySelector('#vaccins_1re_dose_date')
     datePicker.setAttribute('max', now.toISOString().substring(0, 10))
     addDatePickerPolyfill(datePicker, now)
-    const datePicker2 = form.querySelector('#vaccins_start_date2')
+    const datePicker2 = form.querySelector('#vaccins_2e_dose_date')
     datePicker2.setAttribute('max', now.toISOString().substring(0, 10))
     addDatePickerPolyfill(datePicker2, now)
 
     // Remplir le formulaire avec les données du profil.
     preloadCheckboxForm(form, 'vaccins', app.profil)
     if (app.profil.vaccins) {
-        if (typeof app.profil.vaccins_start_date !== 'undefined') {
-            datePicker.value = app.profil.vaccins_start_date
+        if (typeof app.profil.vaccins_1re_dose_date !== 'undefined') {
+            datePicker.value = app.profil.vaccins_1re_dose_date
                 .toISOString()
                 .substring(0, 10)
         }
-        if (typeof app.profil.vaccins_start_date2 !== 'undefined') {
-            datePicker2.value = app.profil.vaccins_start_date2
+        if (typeof app.profil.vaccins_2e_dose_date !== 'undefined') {
+            datePicker2.value = app.profil.vaccins_2e_dose_date
                 .toISOString()
                 .substring(0, 10)
         }
@@ -67,16 +67,16 @@ export default function vaccins(form, app) {
         const form = event.target
         app.profil.vaccins = form.elements['vaccins'].checked
         if (app.profil.vaccins) {
-            app.profil.vaccins_start_date = new Date(
-                form.elements['vaccins_start_date'].value
+            app.profil.vaccins_1re_dose_date = new Date(
+                form.elements['vaccins_1re_dose_date'].value
             )
-            app.profil.vaccins_start_date2 = new Date(
-                form.elements['vaccins_start_date2'].value
+            app.profil.vaccins_2e_dose_date = new Date(
+                form.elements['vaccins_2e_dose_date'].value
             )
             app.profil.vaccins_type = getRadioValue(form, 'vaccins_type')
         } else {
-            app.profil.vaccins_start_date = undefined
-            app.profil.vaccins_start_date2 = undefined
+            app.profil.vaccins_1re_dose_date = undefined
+            app.profil.vaccins_2e_dose_date = undefined
             app.profil.vaccins_type = undefined
         }
 

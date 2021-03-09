@@ -40,23 +40,23 @@ export default class Profil {
             typeof date !== 'undefined' ? date.toJSON() : undefined
     }
 
-    get vaccins_start_date() {
-        if (typeof this._vaccins_start_date === 'undefined') return undefined
-        return new Date(this._vaccins_start_date)
+    get vaccins_1re_dose_date() {
+        if (typeof this._vaccins_1re_dose_date === 'undefined') return undefined
+        return new Date(this._vaccins_1re_dose_date)
     }
 
-    set vaccins_start_date(date) {
-        this._vaccins_start_date =
+    set vaccins_1re_dose_date(date) {
+        this._vaccins_1re_dose_date =
             typeof date !== 'undefined' ? date.toJSON() : undefined
     }
 
-    get vaccins_start_date2() {
-        if (typeof this._vaccins_start_date2 === 'undefined') return undefined
-        return new Date(this._vaccins_start_date2)
+    get vaccins_2e_dose_date() {
+        if (typeof this._vaccins_2e_dose_date === 'undefined') return undefined
+        return new Date(this._vaccins_2e_dose_date)
     }
 
-    set vaccins_start_date2(date2) {
-        this._vaccins_start_date2 =
+    set vaccins_2e_dose_date(date2) {
+        this._vaccins_2e_dose_date =
             typeof date2 !== 'undefined' ? date2.toJSON() : undefined
     }
 
@@ -159,8 +159,8 @@ export default class Profil {
 
         this.vaccins = undefined
         this.vaccins_type = undefined
-        this._vaccins_start_date = undefined
-        this._vaccins_start_date2 = undefined
+        this._vaccins_1re_dose_date = undefined
+        this._vaccins_2e_dose_date = undefined
 
         this.suivi_active = false
         this.resetSuivi()
@@ -241,8 +241,8 @@ export default class Profil {
 
         this.vaccins = data['vaccins']
         this.vaccins_type = data['vaccins_type']
-        this._vaccins_start_date = data['_vaccins_start_date']
-        this._vaccins_start_date2 = data['_vaccins_start_date2']
+        this._vaccins_1re_dose_date = data['_vaccins_1re_dose_date']
+        this._vaccins_2e_dose_date = data['_vaccins_2e_dose_date']
 
         this._suivi_start_date = data['_suivi_start_date']
         this._symptomes_start_date = data['_symptomes_start_date']
@@ -479,8 +479,8 @@ export default class Profil {
             _depistage_start_date: this._depistage_start_date,
             vaccins: this.vaccins,
             vaccins_type: this.vaccins_type,
-            _vaccins_start_date: this._vaccins_start_date,
-            _vaccins_start_date2: this._vaccins_start_date2,
+            _vaccins_1re_dose_date: this._vaccins_1re_dose_date,
+            _vaccins_2e_dose_date: this._vaccins_2e_dose_date,
             suivi_active: this.suivi_active,
             _suivi_start_date: this._suivi_start_date,
             _symptomes_start_date: this._symptomes_start_date,
@@ -609,7 +609,7 @@ export default class Profil {
             return false
         }
         if (this.vaccins === true) {
-            return typeof this._vaccins_start_date !== 'undefined'
+            return typeof this._vaccins_1re_dose_date !== 'undefined'
         }
         return true
     }

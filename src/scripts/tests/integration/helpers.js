@@ -174,12 +174,12 @@ async function remplirVaccins(page, vaccins, date, date2, type) {
         await checkbox_label.click()
 
         await page.fill(
-            '#page.ready #vaccins_start_date',
+            '#page.ready #vaccins_1re_dose_date',
             date.toISOString().substring(0, 10)
         )
 
         await page.fill(
-            '#page.ready #vaccins_start_date2',
+            '#page.ready #vaccins_2e_dose_date',
             date2.toISOString().substring(0, 10)
         )
 
