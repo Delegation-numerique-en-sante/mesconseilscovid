@@ -1,1 +1,1 @@
-<!---->Le résultat était <strong>positif</strong>.
+<!---->Le résultat était <strong>positif</strong>

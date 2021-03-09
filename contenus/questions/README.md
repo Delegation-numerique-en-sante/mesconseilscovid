@@ -129,8 +129,8 @@ hypertension artérielle compliquée (tension trop élevée avec complications a
 
 ## [question_antécédents_immunodépression_aide.md](question_antécédents_immunodépression_aide.md)
 
-* suite à la prise de médicaments : chimiothérapie, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive depuis plus de 15 jours ;
-* infection au VIH non contrôlée ou avec des CD4 inférieurs à 200/mm<sup>3</sup>.
+* suite à la prise de médicaments : chimiothérapie, traitement immunosuppresseur, biothérapie et/ou corticothérapie à dose immunosuppressive depuis plus de 15 jours
+* infection au VIH non contrôlée ou avec des CD4 inférieurs à 200/mm<sup>3</sup>
 
 
 
@@ -259,16 +259,16 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 ## [question_dépistage_antigénique_libellé.md](question_dépistage_antigénique_libellé.md)
 
-<!---->C’était un <b>test antigénique rapide</b> (résultat en 15 à 30 minutes).
+<!---->C’était un <b>test antigénique rapide</b> (résultat en 15 à 30 minutes)
 
 
 ## [question_dépistage_attente_libellé.md](question_dépistage_attente_libellé.md)
 
-<!---->Je n’ai pas encore reçu le résultat.
+<!---->Je n’ai pas encore reçu le résultat
 
 ---
 
-<!---->Cette personne n’a pas encore reçu le résultat.
+<!---->Cette personne n’a pas encore reçu le résultat
 
 
 
@@ -284,29 +284,29 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 ## [question_dépistage_libellé.md](question_dépistage_libellé.md)
 
-<!---->J’ai passé un <b>test Covid</b> (prélèvement nasal) dans les 2 dernières semaines.
+<!---->J’ai passé un <b>test Covid</b> (prélèvement nasal) dans les 2 dernières semaines
 
 ---
 
-<!---->Cette personne a passé un <b>test Covid</b> (prélèvement nasal) dans les 2 dernières semaines.
+<!---->Cette personne a passé un <b>test Covid</b> (prélèvement nasal) dans les 2 dernières semaines
 
 
 
 ## [question_dépistage_négatif_libellé.md](question_dépistage_négatif_libellé.md)
 
-<!---->Le résultat était <strong>négatif</strong>.
+<!---->Le résultat était <strong>négatif</strong>
 
 
 
 ## [question_dépistage_positif_libellé.md](question_dépistage_positif_libellé.md)
 
-<!---->Le résultat était <strong>positif</strong>.
+<!---->Le résultat était <strong>positif</strong>
 
 
 
 ## [question_dépistage_rtpcr_libellé.md](question_dépistage_rtpcr_libellé.md)
 
-<!---->C’était un <b>test RT-PCR</b> (résultat en 24 h ou plus).
+<!---->C’était un <b>test RT-PCR</b> (résultat en 24 h ou plus)
 
 
 
@@ -447,11 +447,11 @@ Avez-vous remarqué que votre proche n’est pas comme d’habitude ces dernièr
 
 ## [question_suivi_symptômes_libellé.md](question_suivi_symptômes_libellé.md)
 
-<!---->J’ai un ou des <b>signes</b> qui peuvent évoquer la Covid <b>aujourd’hui</b>.
+<!---->J’ai un ou des <b>signes</b> qui peuvent évoquer la Covid <b>aujourd’hui</b>
 
 ---
 
-<!---->Cette personne a un ou des <b>signes</b> qui peuvent évoquer la Covid <b>aujourd’hui</b>.
+<!---->Cette personne a un ou des <b>signes</b> qui peuvent évoquer la Covid <b>aujourd’hui</b>
 
 
 
@@ -507,17 +507,17 @@ Avez-vous remarqué que votre proche n’est pas comme d’habitude ces dernièr
 
 ## [question_symptômes_actuels_alimentation_libellé.md](question_symptômes_actuels_alimentation_libellé.md)
 
-<!---->L’impossibilité de m’alimenter <em>ou</em> de boire <b>depuis 24 heures ou plus</b>.
+<!---->L’impossibilité de m’alimenter <em>ou</em> de boire <b>depuis 24 heures ou plus</b>
 
 ---
 
-<!---->L’impossibilité de s’alimenter <em>ou</em> de boire <b>depuis 24 heures ou plus</b>.
+<!---->L’impossibilité de s’alimenter <em>ou</em> de boire <b>depuis 24 heures ou plus</b>
 
 
 
 ## [question_symptômes_actuels_diarrhée_libellé.md](question_symptômes_actuels_diarrhée_libellé.md)
 
-<!---->De la <b>diarrhée</b> (au moins 3 selles molles ces dernières 24 heures).
+<!---->De la <b>diarrhée</b> (au moins 3 selles molles ces dernières 24 heures)
 
 
 
@@ -529,63 +529,63 @@ Si vous avez des maux de tête qui ne disparaissent pas après la prise de médi
 
 ## [question_symptômes_actuels_douleurs_libellé.md](question_symptômes_actuels_douleurs_libellé.md)
 
-<!---->J’ai <b>mal à la gorge</b> <em>ou</em> des <b>douleurs dans les muscles</b> <em>ou</em> des <b>courbatures</b> inhabituelles <em>ou</em> des <b>maux de tête</b> inhabituels ces derniers jours.
+<!---->J’ai <b>mal à la gorge</b> <em>ou</em> des <b>douleurs dans les muscles</b> <em>ou</em> des <b>courbatures</b> inhabituelles <em>ou</em> des <b>maux de tête</b> inhabituels ces derniers jours
 
 ---
 
-<!---->Il ou elle a <b>mal à la gorge</b> <em>ou</em> des <b>douleurs dans les muscles</b> <em>ou</em> des <b>courbatures</b> inhabituelles <em>ou</em> des <b>maux de tête</b> inhabituels ces derniers jours.
+<!---->Il ou elle a <b>mal à la gorge</b> <em>ou</em> des <b>douleurs dans les muscles</b> <em>ou</em> des <b>courbatures</b> inhabituelles <em>ou</em> des <b>maux de tête</b> inhabituels ces derniers jours
 
 
 
 ## [question_symptômes_actuels_fatigue_libellé.md](question_symptômes_actuels_fatigue_libellé.md)
 
-<!---->Une <b>fatigue inhabituelle</b> qui m’oblige à me reposer plus de <b>la moitié de la journée</b>.
+<!---->Une <b>fatigue inhabituelle</b> qui m’oblige à me reposer plus de <b>la moitié de la journée</b>
 
 ---
 
-<!---->Une <b>fatigue inhabituelle</b> qui l’oblige à se reposer plus de <b>la moitié de la journée</b>.
+<!---->Une <b>fatigue inhabituelle</b> qui l’oblige à se reposer plus de <b>la moitié de la journée</b>
 
 
 
 ## [question_symptômes_actuels_odorat_libellé.md](question_symptômes_actuels_odorat_libellé.md)
 
-<!---->Une <b>perte</b> ou une forte diminution de mon <b>goût</b> <em>ou</em> de mon <b>odorat</b>.
+<!---->Une <b>perte</b> ou une forte diminution de mon <b>goût</b> <em>ou</em> de mon <b>odorat</b>
 
 ---
 
-<!---->Une <b>perte</b> ou une forte diminution de son <b>goût</b> <em>ou</em> de son <b>odorat</b>.
+<!---->Une <b>perte</b> ou une forte diminution de son <b>goût</b> <em>ou</em> de son <b>odorat</b>
 
 
 
 ## [question_symptômes_actuels_souffle_libellé.md](question_symptômes_actuels_souffle_libellé.md)
 
-<!---->Du <b>mal à respirer</b> lorsque je parle <em>ou</em> fais un petit effort.
+<!---->Du <b>mal à respirer</b> lorsque je parle <em>ou</em> fais un petit effort
 
 ---
 
-<!---->Du <b>mal à respirer</b> en parlant <em>ou</em> en faisant un petit effort.
+<!---->Du <b>mal à respirer</b> en parlant <em>ou</em> en faisant un petit effort
 
 
 
 ## [question_symptômes_actuels_température_inconnue_libellé.md](question_symptômes_actuels_température_inconnue_libellé.md)
 
-<!---->J’ai <b>peut-être</b> eu <b>de la fièvre</b> dans les 2 derniers jours.
+<!---->J’ai <b>peut-être</b> eu <b>de la fièvre</b> dans les 2 derniers jours
 
 ---
 
-<!---->Il ou elle a <b>peut-être</b> eu <b>de la fièvre</b> dans les 2 derniers jours.
+<!---->Il ou elle a <b>peut-être</b> eu <b>de la fièvre</b> dans les 2 derniers jours
 
 
 
 ## [question_symptômes_actuels_température_libellé.md](question_symptômes_actuels_température_libellé.md)
 
-<!---->Une température <b>inférieure à 35,5 °C</b> ou <b>supérieure à 39 °C</b> dans les 2 derniers jours.
+<!---->Une température <b>inférieure à 35,5 °C</b> ou <b>supérieure à 39 °C</b> dans les 2 derniers jours
 
 
 
 ## [question_symptômes_actuels_toux_libellé.md](question_symptômes_actuels_toux_libellé.md)
 
-<!---->De la <b>toux</b>.
+<!---->De la <b>toux</b>
 
 
 

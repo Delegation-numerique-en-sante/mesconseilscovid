@@ -1,1 +1,1 @@
-<!---->De la <b>toux</b>.
+<!---->De la <b>toux</b>
