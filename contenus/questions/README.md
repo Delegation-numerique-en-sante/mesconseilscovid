@@ -774,13 +774,13 @@ Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal
 
 ## [question_vaccins_astrazeneca_libellé.md](question_vaccins_astrazeneca_libellé.md)
 
-<!---->C’était un vaccin <b>AstraZeneca®</b>.
+<!---->C’était un vaccin <b>AstraZeneca</b><sup>®</sup>.
 
 
 
 ## [question_vaccins_comirnaty_libellé.md](question_vaccins_comirnaty_libellé.md)
 
-<!---->C’était un vaccin <b>Comirnaty®</b> (Pfizer/BioNtec).
+<!---->C’était un vaccin <b>Comirnaty</b><sup>®</sup> (Pfizer/BioNTech).
 
 
 
@@ -804,17 +804,17 @@ Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal
 
 ## [question_vaccins_libellé.md](question_vaccins_libellé.md)
 
-<!---->Je me suis fait·e <b>vacciné·e</b> contre la Covid.
+<!---->J’ai été <b>vacciné·e</b> contre la Covid
 
 ---
 
-<!---->Cette personne a été <b>vacciné·e</b> contre la covid.
+<!---->Cette personne a été <b>vacciné·e</b> contre la Covid
 
 
 
 ## [question_vaccins_moderna_libellé.md](question_vaccins_moderna_libellé.md)
 
-<!---->C’était un vaccin <b>Moderna®</b>.
+<!---->C’était un vaccin <b>Moderna</b><sup>®</sup>.
 
 
 
