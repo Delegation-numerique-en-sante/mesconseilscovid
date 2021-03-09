@@ -15,8 +15,10 @@ export class Form {
         return this.qS('input[type=submit]')
     }
 
-    get textFields() {
-        return Array.from(this.qSA('input[type=text], input[type=date]'))
+    get requiredTextFields() {
+        return Array.from(
+            this.qSA('input[type=text][required], input[type=date][required]')
+        )
     }
 
     get selectFields() {
@@ -194,15 +196,15 @@ export function toggleFormButtonOnTextFieldsRequired(
 ) {
     const form = new Form(formElement)
     const button = form.submitButton
-    const textFields = form.textFields
+    const requiredTextFields = form.requiredTextFields
 
     function updateSubmitButtonLabelRequired() {
-        const allFilled = everyFilled(textFields)
+        const allFilled = everyFilled(requiredTextFields)
         button.disabled = !allFilled
         button.value = allFilled ? continueLabel : requiredLabel
     }
     updateSubmitButtonLabelRequired()
-    textFields.forEach((elem) =>
+    requiredTextFields.forEach((elem) =>
         elem.addEventListener('input', updateSubmitButtonLabelRequired)
     )
 }
@@ -215,12 +217,12 @@ export function toggleFormButtonOnTextFieldsAndRadioRequired(
 ) {
     const form = new Form(formElement)
     const button = form.submitButton
-    const textFields = form.textFields
+    const requiredTextFields = form.requiredTextFields
     const checkbox = form.checkbox
     const radios = form.radios
 
     function updateSubmitButtonLabelRequired() {
-        const allFilled = everyFilled(textFields)
+        const allFilled = everyFilled(requiredTextFields)
 
         button.disabled = false
         button.value = checkbox.checked ? continueLabel : uncheckedLabel
@@ -240,7 +242,7 @@ export function toggleFormButtonOnTextFieldsAndRadioRequired(
     }
 
     updateSubmitButtonLabelRequired()
-    textFields.forEach((elem) => {
+    requiredTextFields.forEach((elem) => {
         elem.addEventListener('input', updateSubmitButtonLabelRequired)
     })
     radios.forEach((elem) => {
@@ -258,7 +260,7 @@ export function toggleFormButtonOnTextFieldsAndRadioRequired(
                 radio.checked = false
                 radio.disabled = true
             })
-            textFields.forEach((text) => {
+            requiredTextFields.forEach((text) => {
                 text.value = ''
             })
         }

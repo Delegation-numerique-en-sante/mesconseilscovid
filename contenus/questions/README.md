@@ -786,13 +786,17 @@ Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal
 
 ## [question_vaccins_date2_aide.md](question_vaccins_date2_aide.md)
 
-<!---->La seconde injection a été réalisée le :
+<!---->Deuxième dose (si je l’ai déjà reçue) :
+
+---
+
+<!---->Deuxième dose (si elle l’a déjà reçue) :
 
 
 
 ## [question_vaccins_date_aide.md](question_vaccins_date_aide.md)
 
-<!---->La première injection a été réalisée le :
+<!---->Première dose :
 
 
 
