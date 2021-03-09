@@ -1,1 +1,1 @@
-<!---->La première injection a été réalisée le :
+<!---->Première dose :
