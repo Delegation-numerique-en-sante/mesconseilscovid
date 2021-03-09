@@ -1,15 +1,15 @@
 <span class="nouveau">nouveau</span> Le déploiement de la vaccination se fait en plusieurs phases :
 
 * dès maintenant :
-   * les personnes de **75 ans ou plus** chez leur médecin traitant, en centre de vaccination ou dans leur établissement (Ehpad, USLD, par exemple) ;
-   * les personnes entre **50 et 74 ans** qui ont un risque de développer une forme grave de Covid (diabète, cancer, obésité, etc) chez leur médecin traitant ou sur leur lieu de travail ;
-   * les personnes présentant un risque de développer une forme très grave de Covid, sur **ordonnance de leur médecin** (cancer, dialyse, trisomie 21, etc) chez leur médecin traitant ou médecin du travail ou lieu de soin ou en centre de vaccination avec une prescription médicale de leur médecin traitant ;
+   * les personnes de **75 ans ou plus** : chez leur médecin traitant, en centre de vaccination, ou dans leur établissement (Ehpad, USLD, par exemple) ;
+   * les personnes entre **50 et 74 ans** qui ont un risque de développer une forme grave de Covid (diabète, cancer, obésité, etc.) : chez leur médecin traitant, ou sur leur lieu de travail ;
+   * les personnes présentant un risque de développer une forme très grave de Covid (cancer, dialyse, trisomie 21, etc.) : chez leur médecin traitant, ou médecin du travail, ou lieu de soin, ou en centre de vaccination avec une **ordonnance de leur médecin traitant** ;
    * les **professionnels de santé** au sens large et les **sapeurs-pompiers** ;
 * à la fin de l’été, la vaccination sera **ouverte à toutes les personnes** de 18 ans et plus.
 
 La vaccination est **gratuite** pour tous, et n’est **pas obligatoire**.
 
-La vaccination est à évaluer chez les **femmes enceintes** au cas par cas, il n’y a pas d’effet attendu chez le nourrisson et l’enfant allaités par une femme vaccinée.
+La vaccination chez les **femmes enceintes** est à évaluer au cas par cas. Il n’y a pas d’effet attendu chez le nourrisson et l’enfant allaités par une femme vaccinée.
 
 Les **effets secondaires** les plus fréquents des vaccins contre la Covid sont :
 
