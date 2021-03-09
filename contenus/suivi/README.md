@@ -25,14 +25,17 @@ Nous vous recommandons de l’effectuer une à deux fois par jour (pour y penser
 
 <div class="statut statut-deconfinement">
 
-### Vous pouvez mettre fin à votre isolement
+### Vous êtes isolé·e depuis plus de 10 jours et vous n’avez pas eu de fièvre ni d’essoufflement ces dernières 48 h :<br> vous pouvez donc mettre fin à votre isolement
 
 </div>
 
-* Vous pouvez demander conseil à votre médecin et lui partager <a href="#suivihistorique">l’historique de vos symptômes</a>.
-* Poursuivez <a href="#suiviintroduction">votre suivi</a> si votre état se dégrade ces prochains jours.
-* Continuez d’appliquer les mesures barrières.
-* Retrouvez tous vos conseils personnalisés ci-dessous.
+<div class="form-controls">
+    <div class="button-full-width">
+        <a class="button button-full-width" href="#suiviintroduction"
+            >Continuer mon suivi</a>
+    </div>
+    <a class="button button-outline button-full-width" href="#suivihistorique">Consulter mon historique</a>
+</div>
 
 
 
