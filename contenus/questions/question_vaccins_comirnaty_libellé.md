@@ -1,1 +1,1 @@
-<!---->C’était un vaccin <b>Comirnaty®</b> (Pfizer/BioNtec).
+<!---->C’était un vaccin <b>Comirnaty</b><sup>®</sup> (Pfizer/BioNTech).
