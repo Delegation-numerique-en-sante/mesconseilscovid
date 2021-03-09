@@ -3,6 +3,7 @@
 ## 2021-03-09
 
 * mise à jour des conseils sur la vaccination
+* message de sortie d’isolement plus explicite
 
 ## 2021-03-05
 
