@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-03-09
+
+* mise à jour des conseils sur la vaccination
+
 ## 2021-03-05
 
 * confinement du Pas-de-Calais le week-end
