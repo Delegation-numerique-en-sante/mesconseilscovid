@@ -9,6 +9,8 @@
 
 La vaccination est **gratuite** pour tous, et n’est **pas obligatoire**.
 
+La vaccination apprend à votre corps à reconnaître le virus et à le combattre. La protection est maximale 15 jours après l’administration de la seconde dose.
+
 Si vous avez déjà eu la Covid, il est recommandé d’attendre au moins 3 mois avant de vous faire vacciner. La vaccination se fera alors par une dose unique.
 
 Les vaccins Comirnaty<sup>®</sup> (Pfizer/BioNTech) et Moderna<sup>®</sup> ne sont pas recommandés chez des personnes ayant présenté des manifestations allergiques graves, telles que des réactions anaphylactiques.
