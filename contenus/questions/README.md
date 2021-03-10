@@ -672,11 +672,11 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_contact_à_risque_même_lieu_de_vie_libellé.md](question_symptômes_contact_à_risque_même_lieu_de_vie_libellé.md)
 
-<!---->Je partage ou j’ai partagé le même lieu de vie que cette personne
+<!---->Je partage le même lieu de vie que cette personne
 
 ---
 
-<!---->Il ou elle partage ou a partagé le même lieu de vie que cette personne
+<!---->Il ou elle partage le même lieu de vie que cette personne
 
 
 
