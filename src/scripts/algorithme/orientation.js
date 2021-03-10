@@ -437,9 +437,11 @@ export default class AlgorithmeOrientation {
             blockNames.push('conseils-vaccins-activite-pro-sante')
         } else if (algoVaccination.isSup75()) {
             blockNames.push('conseils-vaccins-75-ans')
-        } else if (this.antecedents) {
+        } else if (algoVaccination.isARisque()) {
             if (algoVaccination.isTresHautRisque()) {
                 blockNames.push('conseils-vaccins-tres-haut-risque')
+            } else if (algoVaccination.isSup50()) {
+                blockNames.push('conseils-vaccins-50-ans-a-risque')
             } else {
                 blockNames.push('conseils-vaccins-demande-medecin')
             }

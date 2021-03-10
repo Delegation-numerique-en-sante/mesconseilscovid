@@ -435,6 +435,18 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
+        it('Cas < 50 ans et antécédents', function () {
+            var profil = new Profil('mes_infos', {
+                age: 49,
+                activite_pro_sante: false,
+                antecedent_cardio: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-demande-medecin',
+            ])
+        })
+
         it('Cas > 50 ans et antécédents', function () {
             var profil = new Profil('mes_infos', {
                 age: 52,
@@ -443,7 +455,7 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'conseils-vaccins-demande-medecin',
+                'conseils-vaccins-50-ans-a-risque',
             ])
         })
 

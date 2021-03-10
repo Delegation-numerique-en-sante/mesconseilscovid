@@ -696,6 +696,16 @@ Pour en savoir plus :
 
 
 
+## [conseils_vaccins_50_ans_a_risque.md](conseils_vaccins_50_ans_a_risque.md)
+
+<div class="conseil">
+
+Vous avez plus de 50 ans, et vous êtes considéré·e comme une personne ayant plus de risques de développer une forme sévère de Covid : **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à prendre rendez-vous avec votre médecin traitant.
+
+</div>
+
+
+
 ## [conseils_vaccins_75_ans.md](conseils_vaccins_75_ans.md)
 
 <div class="conseil">
