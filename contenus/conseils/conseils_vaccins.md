@@ -9,6 +9,8 @@
 
 La vaccination est **gratuite** pour tous, et n’est **pas obligatoire**.
 
+Les vaccins Comirnaty<sup>®</sup> (Pfizer/BioNTech) et Moderna<sup>®</sup> ne sont pas recommandés chez des personnes ayant présenté des manifestations allergiques graves, telles que des réactions anaphylactiques.
+
 La vaccination chez les **femmes enceintes** est à évaluer au cas par cas. Il n’y a pas d’effet attendu chez le nourrisson et l’enfant allaités par une femme vaccinée.
 
 Les **effets secondaires** les plus fréquents des vaccins contre la Covid sont :
