@@ -66,7 +66,7 @@ function toggleFormButtonOnCheckAndRadiosRequired(
 ) {
     const form = new Form(formElement)
     const button = form.submitButton
-    const primaryCheckbox = form.checkbox
+    const primaryCheckbox = form.primaryCheckbox
     const secondaryCheckboxes = form.secondaryCheckboxes
     // Warning: removes otherCheckbox from secondaryCheckboxes:
     const otherCheckbox = secondaryCheckboxes.pop()

@@ -30,6 +30,10 @@ export class Form {
         return Array.from(this.qSA('input[type=checkbox]'))
     }
 
+    get primaryCheckbox() {
+        return this.qS('input[type=checkbox].primary')
+    }
+
     get secondaryCheckboxes() {
         return Array.from(this.qSA('.secondary input[type=checkbox]'))
     }
