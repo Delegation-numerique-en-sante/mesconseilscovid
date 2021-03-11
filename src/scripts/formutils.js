@@ -3,38 +3,42 @@ export class Form {
         this.form = form
     }
 
+    qS(selector) {
+        return this.form.querySelector(selector)
+    }
+
+    qSA(selector) {
+        return this.form.querySelectorAll(selector)
+    }
+
     get submitButton() {
-        return this.form.querySelector('input[type=submit]')
+        return this.qS('input[type=submit]')
     }
 
     get textFields() {
-        return Array.from(
-            this.form.querySelectorAll('input[type=text], input[type=date]')
-        )
+        return Array.from(this.qSA('input[type=text], input[type=date]'))
     }
 
     get selectFields() {
-        return Array.from(this.form.querySelectorAll('select'))
+        return Array.from(this.qSA('select'))
     }
 
     get checkbox() {
-        return this.form.querySelector('input[type=checkbox]')
+        return this.qS('input[type=checkbox]')
     }
     get checkboxes() {
-        return Array.from(this.form.querySelectorAll('input[type=checkbox]'))
+        return Array.from(this.qSA('input[type=checkbox]'))
     }
 
     get secondaryCheckboxes() {
-        return Array.from(this.form.querySelectorAll('.secondary input[type=checkbox]'))
+        return Array.from(this.qSA('.secondary input[type=checkbox]'))
     }
 
     get radios() {
-        return Array.from(this.form.querySelectorAll('.secondary input[type=radio]'))
+        return Array.from(this.qSA('.secondary input[type=radio]'))
     }
     get secondariesRequired() {
-        return Array.from(
-            this.form.querySelectorAll('.secondary.required [role="radiogroup"]')
-        )
+        return Array.from(this.qSA('.secondary.required [role="radiogroup"]'))
     }
 }
 
