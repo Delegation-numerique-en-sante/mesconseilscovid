@@ -2,7 +2,7 @@
 
 /* Implementation of the network-or-cache pattern:
 https://serviceworke.rs/strategy-network-or-cache.html */
-const CACHE_NAME = 'network-or-cache-2021-03-09@18h'
+const CACHE_NAME = 'network-or-cache-2021-03-11'
 const CACHE_FILES = [
     '/',
     'robots.txt',

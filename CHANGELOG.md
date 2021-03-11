@@ -1,5 +1,12 @@
 # Changelog
 
+## 2021-03-11
+
+* amélioration des conseils relatifs à la vaccination
+* précisions sur le partage du lieu de vie
+* considère un résultat de test comme obsolète au bout de 30 jours en cas de résultat positif
+* sortie de la réponse relative à un contact à risque via TousAntiCovid
+
 ## 2021-03-09
 
 * mise à jour des conseils sur la vaccination
