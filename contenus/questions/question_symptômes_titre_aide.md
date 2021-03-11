@@ -1,0 +1,1 @@
+Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal de gorge, les courbatures, la diarrhée, une fatigue inhabituelle, du mal à respirer, l’impossibilité de s’alimenter ou de boire.

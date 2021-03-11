@@ -407,6 +407,7 @@
         <fieldset>
             <legend>{{ question_symptômes_titre|me_or_them }}</legend>
             <h3 id="symptomes-label">{{ question_symptômes_titre_ouinon|me_or_them }}</h3>
+            {{ question_symptômes_titre_aide }}
             <div role="radiogroup" aria-labelledby="symptomes-label">
                 <input id="symptomes_actuels" type="radio" required name="symptomes_actuels_statuts">
                 <label for="symptomes_actuels">
