@@ -736,6 +736,12 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 
 
+## [question_symptômes_titre_aide.md](question_symptômes_titre_aide.md)
+
+Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal de gorge, les courbatures, la diarrhée, une fatigue inhabituelle, du mal à respirer, l’impossibilité de s’alimenter ou de boire.
+
+
+
 ## [question_symptômes_titre_lesquels.md](question_symptômes_titre_lesquels.md)
 
 <!---->Quels signes avez-vous ?
