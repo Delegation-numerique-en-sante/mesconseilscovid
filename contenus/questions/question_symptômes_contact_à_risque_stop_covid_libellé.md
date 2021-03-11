@@ -1,5 +1,5 @@
-<!---->J’ai été informé·e du contact par l’application TousAntiCovid
+<!---->J’ai été informé·e d’un contact par l’application <b>TousAntiCovid</b>
 
 ---
 
-<!---->Il ou elle a été informé·e du contact par l’application TousAntiCovid
+<!---->Il ou elle a été informé·e d’un contact par l’application <b>TousAntiCovid</b>
