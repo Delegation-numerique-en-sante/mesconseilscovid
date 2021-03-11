@@ -257,6 +257,56 @@ describe('Parcours', function () {
         }
     })
 
+    it('remplir le questionnaire avec contact à risque TAC', async function () {
+        const page = this.test.page
+
+        // On est redirigé vers l’introduction.
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/#introduction' }),
+        ])
+
+        // Page d’accueil.
+        {
+            let bouton = await page.waitForSelector(
+                'text="J’ai une question sur ma santé"'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#symptomes' }),
+            ])
+        }
+
+        // Remplir le questionnaire.
+        await remplirQuestionnaire(page, {
+            symptomesActuels: [],
+            symptomesPasses: false,
+            contactARisque: [],
+            contactARisqueTAC: true,
+            depistage: false,
+            departement: '00',
+            enfants: true,
+            age: '42',
+            taille: '165',
+            poids: '70',
+            grossesse: false,
+            activitePro: true,
+        })
+
+        // Conseils.
+        {
+            // On retrouve la partie contact à risque.
+            let contact_a_risque = await page.waitForSelector(
+                '#page #conseils-personnels-contact-a-risque-sans-test'
+            )
+            assert.include(
+                (await contact_a_risque.innerText()).trim(),
+                'Si le test est négatif, restez en isolement, et faites un test'
+            )
+            await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
+        }
+    })
+
     it('remplir le questionnaire avec pas de symptômes et covid+ (asymptomatique)', async function () {
         const page = this.test.page
 

@@ -1,7 +1,8 @@
 import {
+    Form,
     enableOrDisableSecondaryFields,
     preloadCheckboxForm,
-    toggleFormButtonOnCheckAndRadiosRequired,
+    someChecked,
 } from '../../formutils'
 
 export default function contactarisque(form, app) {
@@ -14,8 +15,9 @@ export default function contactarisque(form, app) {
     preloadCheckboxForm(form, 'contact_a_risque_actes', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_espace_confine', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_meme_classe', app.profil)
-    preloadCheckboxForm(form, 'contact_a_risque_stop_covid', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_autre', app.profil)
+
+    preloadCheckboxForm(form, 'contact_a_risque_stop_covid', app.profil)
 
     var primary = form.elements['contact_a_risque']
     enableOrDisableSecondaryFields(form, primary)
@@ -54,4 +56,61 @@ export default function contactarisque(form, app) {
             app.goToNextPage('contactarisque')
         })
     })
+}
+
+function toggleFormButtonOnCheckAndRadiosRequired(
+    formElement,
+    continueLabel,
+    uncheckedLabel,
+    requiredLabel
+) {
+    const form = new Form(formElement)
+    const button = form.submitButton
+    const primaryCheckbox = form.checkbox
+    const secondaryCheckboxes = form.secondaryCheckboxes
+    // Warning: removes otherCheckbox from secondaryCheckboxes:
+    const otherCheckbox = secondaryCheckboxes.pop()
+    const TACCheckbox = form.form.querySelector(
+        'input[type=checkbox]#contact_a_risque_stop_covid'
+    )
+
+    function updateSubmitButtonLabelRequired() {
+        const hasSecondaryChecks =
+            someChecked(secondaryCheckboxes) || otherCheckbox.checked
+        const canContinue = !primaryCheckbox.checked || hasSecondaryChecks
+
+        if (canContinue) {
+            button.disabled = false
+            if (TACCheckbox.checked) {
+                button.value = continueLabel
+            } else {
+                button.value = primaryCheckbox.checked ? continueLabel : uncheckedLabel
+            }
+        } else {
+            button.disabled = true
+            button.value = requiredLabel
+        }
+    }
+    updateSubmitButtonLabelRequired()
+    primaryCheckbox.addEventListener('change', updateSubmitButtonLabelRequired)
+    TACCheckbox.addEventListener('change', updateSubmitButtonLabelRequired)
+    secondaryCheckboxes.forEach((elem) => {
+        elem.addEventListener('change', updateSubmitButtonLabelRequired)
+    })
+    otherCheckbox.addEventListener('change', updateSubmitButtonLabelRequired)
+
+    function updateToggleOnOther() {
+        if (otherCheckbox.checked) {
+            secondaryCheckboxes.forEach((secondaryCheckbox) => {
+                secondaryCheckbox.checked = false
+                secondaryCheckbox.disabled = true
+            })
+        } else {
+            secondaryCheckboxes.forEach((secondaryCheckbox) => {
+                secondaryCheckbox.disabled = false
+            })
+        }
+    }
+    updateToggleOnOther()
+    otherCheckbox.addEventListener('change', updateToggleOnOther)
 }

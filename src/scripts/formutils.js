@@ -132,65 +132,6 @@ export function toggleFormButtonOnCheckRequired(
     otherCheckbox.addEventListener('change', updateToggleOnOther)
 }
 
-export function toggleFormButtonOnCheckAndRadiosRequired(
-    formElement,
-    continueLabel,
-    uncheckedLabel,
-    requiredLabel
-) {
-    const form = new Form(formElement)
-    const button = form.submitButton
-    const primaryCheckbox = form.checkbox
-    const secondaryCheckboxes = form.secondaryCheckboxes
-    // Warning: removes otherCheckbox from secondaryCheckboxes:
-    const otherCheckbox = secondaryCheckboxes.pop()
-    const radios = form.radios
-
-    function updateSubmitButtonLabelRequired() {
-        const hasSecondaryChecks =
-            someChecked(secondaryCheckboxes) || otherCheckbox.checked
-        const hasSecondaryRadios = form.secondariesRequired.every((secondary) => {
-            return someChecked(
-                Array.from(secondary.querySelectorAll('input[type=radio]'))
-            )
-        })
-        const canContinue =
-            !primaryCheckbox.checked || (hasSecondaryChecks && hasSecondaryRadios)
-
-        if (canContinue) {
-            button.disabled = false
-            button.value = primaryCheckbox.checked ? continueLabel : uncheckedLabel
-        } else {
-            button.disabled = true
-            button.value = requiredLabel
-        }
-    }
-    updateSubmitButtonLabelRequired()
-    primaryCheckbox.addEventListener('change', updateSubmitButtonLabelRequired)
-    secondaryCheckboxes.forEach((elem) => {
-        elem.addEventListener('change', updateSubmitButtonLabelRequired)
-    })
-    otherCheckbox.addEventListener('change', updateSubmitButtonLabelRequired)
-    radios.forEach((elem) => {
-        elem.addEventListener('change', updateSubmitButtonLabelRequired)
-    })
-
-    function updateToggleOnOther() {
-        if (otherCheckbox.checked) {
-            secondaryCheckboxes.forEach((secondaryCheckbox) => {
-                secondaryCheckbox.checked = false
-                secondaryCheckbox.disabled = true
-            })
-        } else {
-            secondaryCheckboxes.forEach((secondaryCheckbox) => {
-                secondaryCheckbox.disabled = false
-            })
-        }
-    }
-    updateToggleOnOther()
-    otherCheckbox.addEventListener('change', updateToggleOnOther)
-}
-
 export function toggleFormButtonOnRadioRequired(
     formElement,
     continueLabel,
