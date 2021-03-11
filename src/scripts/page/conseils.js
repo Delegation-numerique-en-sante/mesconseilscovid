@@ -26,12 +26,6 @@ export default function conseils(element, app) {
     // Make sure we show profile-specific text.
     showMeOrThem(element, app.profil)
 
-    // Use custom illustration if needed.
-    var extraClass = getCustomIllustrationName(app.profil)
-    if (extraClass) {
-        element.querySelector('#conseils-block').classList.add(extraClass)
-    }
-
     var algoOrientation = new AlgorithmeOrientation(app.profil)
 
     // Première complétion du formulaire ?
@@ -97,18 +91,6 @@ export default function conseils(element, app) {
         bindCalendar(element, app.profil)
     }
     bindSuppressionTotale(element.querySelector('.js-suppression'), app)
-}
-
-function getCustomIllustrationName(profil) {
-    if (profil.symptomes_actuels) {
-        return 'symptomes-actuels'
-    }
-    if (profil.symptomes_passes) {
-        return 'symptomes-passes'
-    }
-    if (profil.contact_a_risque) {
-        return 'contact-a-risque'
-    }
 }
 
 function showRelevantSuiviBlocks(element, algoSuivi) {
