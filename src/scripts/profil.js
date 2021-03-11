@@ -2,7 +2,7 @@ import { differenceEnJours, joursAvant } from './utils'
 import { createElementFromHTML, safeHtml } from './affichage'
 
 const JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF = 7
-const JOURS_DE_VALIDITE_DEPISTAGE_POSITIF = 14
+const JOURS_DE_VALIDITE_DEPISTAGE_POSITIF = 30
 const JOURS_DE_VALIDITE_DEPISTAGE_EN_ATTENTE = 7
 
 export default class Profil {

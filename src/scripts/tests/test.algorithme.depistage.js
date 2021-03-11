@@ -16,21 +16,21 @@ describe('Algorithme dépistage', function () {
             assert.strictEqual(profil.depistagePositifRecent(), true)
         })
 
-        it('Vrai s’il y a 13 jours', function () {
+        it('Vrai s’il y a 29 jours', function () {
             var profil = new Profil('mes_infos')
             profil.depistage = true
             profil.depistage_type = 'rt-pcr'
             profil.depistage_resultat = 'positif'
-            profil.depistage_start_date = heuresAvant(1, joursAvant(13))
+            profil.depistage_start_date = heuresAvant(1, joursAvant(29))
             assert.strictEqual(profil.depistagePositifRecent(), true)
         })
 
-        it('Faux s’il y a 14 jours', function () {
+        it('Faux s’il y a 30 jours', function () {
             var profil = new Profil('mes_infos')
             profil.depistage = true
             profil.depistage_type = 'rt-pcr'
             profil.depistage_resultat = 'positif'
-            profil.depistage_start_date = heuresAvant(1, joursAvant(14))
+            profil.depistage_start_date = heuresAvant(1, joursAvant(30))
             assert.strictEqual(profil.depistagePositifRecent(), false)
         })
     })

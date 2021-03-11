@@ -52,11 +52,7 @@ export default class AlgorithmeDeconfinement {
             this.isQuarantaineDone() &&
             this.isSuiviRegulier() &&
             this.isFievreDone() &&
-            this.isEssoufflementDone() &&
-            !(
-                this.profil.depistagePositifRecent() ||
-                this.profil.depistageEnAttenteRecent()
-            )
+            this.isEssoufflementDone()
         )
     }
 }

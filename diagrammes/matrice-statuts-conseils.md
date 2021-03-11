@@ -2,7 +2,7 @@
     <thead>
         <tr>
             <th rowspan="3" height="94"></th>
-            <th style="border: 1px solid black; padding: 1rem;" colspan="2" valign="middle" bgcolor="#EEEEEE" align="center">Test positif<br>de moins de 14 jours</th>
+            <th style="border: 1px solid black; padding: 1rem;" colspan="2" valign="middle" bgcolor="#EEEEEE" align="center">Test positif<br>de moins de 30 jours</th>
             <th style="border: 1px solid black; padding: 1rem;" colspan="2" valign="middle" bgcolor="#EEEEEE" align="center">Test négatif<br>de moins de 7 jours</th>
             <th style="border: 1px solid black; padding: 1rem;" rowspan="2" valign="middle" bgcolor="#EEEEEE" align="center">En attente</th>
             <th style="border: 1px solid black; padding: 1rem;" rowspan="2" valign="middle" bgcolor="#EEEEEE" align="center">Pas testé<br>(ou test trop ancien)</th>
