@@ -40,7 +40,11 @@ export async function remplirQuestionnaire(page, choix) {
         choix.debutSymptomes
     )
     if (!choix.symptomesActuels.length && !choix.symptomesPasses) {
-        await remplirContactsARisque(page, choix.contactARisque)
+        await remplirContactsARisque(
+            page,
+            choix.contactARisque,
+            choix.contactARisqueTAC
+        )
     }
     await remplirDepistage(
         page,
@@ -203,7 +207,7 @@ async function remplirSymptomes(page, symptomesActuels, symptomesPasses, date) {
     ])
 }
 
-async function remplirContactsARisque(page, contactARisque) {
+async function remplirContactsARisque(page, contactARisque, contactARisqueTAC) {
     let text
 
     if (contactARisque.length > 0) {
@@ -217,6 +221,14 @@ async function remplirContactsARisque(page, contactARisque) {
             )
             await label.click()
         })
+        text = '"Continuer"'
+    } else if (contactARisqueTAC) {
+        // La "vraie" case à cocher est cachée, alors on clique sur le label.
+        let label = await page.waitForSelector(
+            '#page label[for="contact_a_risque_stop_covid"]'
+        )
+        await label.click()
+
         text = '"Continuer"'
     } else {
         text = '/.* pas eu de contact à risque/'

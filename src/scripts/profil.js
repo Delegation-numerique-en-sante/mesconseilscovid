@@ -544,7 +544,10 @@ export default class Profil {
     }
 
     isContactARisqueComplete() {
-        return typeof this.contact_a_risque !== 'undefined'
+        return (
+            typeof this.contact_a_risque !== 'undefined' ||
+            typeof this.contact_a_risque_stop_covid !== 'undefined'
+        )
     }
 
     isDepistageComplete() {
@@ -573,7 +576,10 @@ export default class Profil {
     }
 
     hasContactARisqueReconnus() {
-        return this.contact_a_risque && !this.contact_a_risque_autre
+        return (
+            (this.contact_a_risque && !this.contact_a_risque_autre) ||
+            this.contact_a_risque_stop_covid
+        )
     }
 
     hasSuiviStartDate() {
