@@ -70,9 +70,7 @@ function toggleFormButtonOnCheckAndRadiosRequired(
     const secondaryCheckboxes = form.secondaryCheckboxes
     // Warning: removes otherCheckbox from secondaryCheckboxes:
     const otherCheckbox = secondaryCheckboxes.pop()
-    const TACCheckbox = form.form.querySelector(
-        'input[type=checkbox]#contact_a_risque_stop_covid'
-    )
+    const TACCheckbox = form.qS('input[type=checkbox]#contact_a_risque_stop_covid')
 
     function updateSubmitButtonLabelRequired() {
         const hasSecondaryChecks =
