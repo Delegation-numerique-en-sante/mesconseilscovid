@@ -1,5 +1,5 @@
-<!---->J’ai été informé·e d’un contact par l’application <b>TousAntiCovid</b>
+<!---->J’ai reçu la notification <b>TousAntiCovid</b> suivante :<br> « Exposition à risque suite à un contact : vous êtes un contact à risque »
 
 ---
 
-<!---->Il ou elle a été informé·e d’un contact par l’application <b>TousAntiCovid</b>
+<!---->Il ou elle a reçu la notification <b>TousAntiCovid</b> suivante :<br> « Exposition à risque suite à un contact : vous êtes un contact à risque »
