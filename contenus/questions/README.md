@@ -682,11 +682,11 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_contact_à_risque_stop_covid_libellé.md](question_symptômes_contact_à_risque_stop_covid_libellé.md)
 
-<!---->J’ai été informé·e d’un contact par l’application <b>TousAntiCovid</b>
+<!---->J’ai reçu la notification <b>TousAntiCovid</b> suivante :<br> « Exposition à risque suite à un contact : vous êtes un contact à risque »
 
 ---
 
-<!---->Il ou elle a été informé·e d’un contact par l’application <b>TousAntiCovid</b>
+<!---->Il ou elle a reçu la notification <b>TousAntiCovid</b> suivante :<br> « Exposition à risque suite à un contact : vous êtes un contact à risque »
 
 
 
