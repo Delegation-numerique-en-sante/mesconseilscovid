@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-03-15
+
+* description explicite des signes de la Covid
+* intitulé de la notification TousAntiCovid
+
 ## 2021-03-11
 
 * amélioration des conseils relatifs à la vaccination
