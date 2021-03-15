@@ -118,8 +118,16 @@ jobs:
           name: mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}
           path: dist/
 
+      - name: Check for write permission (our own PRs only, not forks or dependabot)
+        id: check
+        uses: scherermichael-oss/action-has-permission@master
+        with:
+          required-permission: write
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Create deployment
-        if: ${{ github.ref != 'refs/heads/master' }}
+        if: ${{ github.ref != 'refs/heads/master' && steps.check.outputs.has-permission }}
         uses: maxkomarychev/oction-create-deployment@v0.7.1
         id: create_deployment
         with:
@@ -129,6 +137,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Send event to trigger deployment workflow
+        if: steps.check.outputs.has-permission
         run: |
           curl -XPOST https://api.github.com/repos/Delegation-numerique-en-sante/mesconseilscovid-infra/dispatches \
                -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
