@@ -800,7 +800,7 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-confinement',
             ])
         })
-        it('À Nice, c’est confinement le week-end', function () {
+        it('À Nice, c’est confinement partiel le week-end', function () {
             var profil = new Profil('mes_infos', {
                 departement: '06',
             })
@@ -808,10 +808,10 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-couvre-feu-18h',
-                'conseils-confinement-week-end',
+                'conseils-confinement-week-end-06',
             ])
         })
-        it('À Dunkerque, c’est confinement le week-end', function () {
+        it('À Dunkerque, c’est confinement partiel le week-end', function () {
             var profil = new Profil('mes_infos', {
                 departement: '59',
             })
@@ -819,7 +819,7 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-couvre-feu-18h',
-                'conseils-confinement-week-end',
+                'conseils-confinement-week-end-59',
             ])
         })
         it('Dans le Pas-de-Calais, c’est confinement le week-end', function () {

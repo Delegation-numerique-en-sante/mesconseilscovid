@@ -1143,49 +1143,51 @@ a[href*='youtube.com']::after {
     height: 20px;
 }
 
-.conseils details {
+.conseils details summary {
+    cursor: pointer;
+}
+.conseils > details {
     display: block;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     transition: box-shadow 0.3s;
     border: 1px solid lightgray;
     padding: 1rem 2rem;
 }
-.conseils details summary {
+.conseils > details > summary {
     outline: 0;
-    cursor: pointer;
     list-style: none;
 }
-.conseils details:not([open]) > :not(summary) {
+.conseils > details:not([open]) > :not(summary) {
     display: none;
 }
-.conseils details summary header {
+.conseils > details > summary header {
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
     margin: 0;
 }
-.conseils details summary svg {
+.conseils > details > summary svg {
     height: 40px;
     width: 60px;
     color: #000091;
     transition: all 0.4s;
 }
-.conseils details:hover,
-.conseils details[open] {
+.conseils > details:hover,
+.conseils > details[open] {
     outline: 0;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8);
 }
-.conseils details summary:focus h3 {
+.conseils > details > summary:focus h3 {
     outline: 0;
     box-shadow: 0 0px 8px #5002fb;
 }
-.conseils details[open] summary svg {
+.conseils > details[open] > summary svg {
     transform: rotate(450deg);
 }
-.conseils details summary::-webkit-details-marker {
+.conseils > details > summary::-webkit-details-marker {
     display: none;
 }
-.conseils details[open] summary ~ * {
+.conseils > details[open] > summary ~ * {
     animation: open 0.3s ease-in-out;
 }
 @keyframes open {
