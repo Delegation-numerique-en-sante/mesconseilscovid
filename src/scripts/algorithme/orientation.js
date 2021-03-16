@@ -471,11 +471,13 @@ export default class AlgorithmeOrientation {
         const blockNames = ['conseils-vie-quotidienne']
         if (this.profil.departement === '976') {
             blockNames.push('conseils-confinement')
-        } else if (
-            this.profil.departement === '06' ||
-            this.profil.departement === '59' ||
-            this.profil.departement === '62'
-        ) {
+        } else if (this.profil.departement === '06') {
+            blockNames.push('conseils-couvre-feu-18h')
+            blockNames.push('conseils-confinement-week-end-06')
+        } else if (this.profil.departement === '59') {
+            blockNames.push('conseils-couvre-feu-18h')
+            blockNames.push('conseils-confinement-week-end-59')
+        } else if (this.profil.departement === '62') {
             blockNames.push('conseils-couvre-feu-18h')
             blockNames.push('conseils-confinement-week-end')
         } else {
