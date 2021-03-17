@@ -24,7 +24,7 @@ describe('Pages', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                'text="J’ai une question sur ma santé"'
+                'text=/J’ai une question\\s+sur ma santé/'
             )
             await Promise.all([
                 bouton.click(),
