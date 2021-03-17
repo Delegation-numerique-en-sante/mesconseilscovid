@@ -71,6 +71,7 @@ export function addDatePickerPolyfill(field, maxDate, onUpdate) {
                 ],
                 weekdaysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
             },
+            ariaLabel: 'Utilisez les flèches pour choisir une date',
             theme: 'pika-mcc-theme',
         })
     }
