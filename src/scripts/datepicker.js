@@ -23,7 +23,7 @@ function pad(number) {
     return number
 }
 
-export function addDatePickerPolyfill(field, maxDate) {
+export function addDatePickerPolyfill(field, maxDate, onUpdate) {
     if (!isDateSupported()) {
         new Pikaday({
             field: field,
@@ -39,6 +39,9 @@ export function addDatePickerPolyfill(field, maxDate) {
                 return new Date(year, month, day)
             },
             maxDate: maxDate,
+            onSelect: onUpdate,
+            onOpen: onUpdate,
+            onClose: onUpdate,
             firstDay: 1, // Semaine débute le lundi.
             i18n: {
                 previousMonth: 'Mois précédent',

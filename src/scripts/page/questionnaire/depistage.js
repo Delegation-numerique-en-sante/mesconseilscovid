@@ -11,7 +11,6 @@ export default function depistage(form, app) {
     // Autorise seulement une date passée.
     const now = new Date()
     datePicker.setAttribute('max', now.toISOString().substring(0, 10))
-    addDatePickerPolyfill(datePicker, now)
 
     // Remplir le formulaire avec les données du profil.
     preloadCheckboxForm(form, 'depistage', app.profil)
@@ -50,12 +49,15 @@ export default function depistage(form, app) {
         ? 'Je n’ai pas passé de test'
         : 'Cette personne n’a pas passé de test'
     const requiredLabel = 'Veuillez remplir le formulaire au complet'
-    toggleFormButtonOnTextFieldsAndRadioRequired(
+
+    const updateSubmitButtonLabel = toggleFormButtonOnTextFieldsAndRadioRequired(
         form,
         button.value,
         uncheckedLabel,
         requiredLabel
     )
+
+    addDatePickerPolyfill(datePicker, now, updateSubmitButtonLabel)
 
     // Soumission du formulaire.
     form.addEventListener('submit', function (event) {
