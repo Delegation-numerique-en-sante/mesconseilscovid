@@ -44,7 +44,9 @@ describe('Plausible', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/#introduction')
-        let bouton = await page.waitForSelector('text="J’ai une question sur ma santé"')
+        let bouton = await page.waitForSelector(
+            'text=/J’ai une question\\s+sur ma santé/'
+        )
 
         await Promise.all([
             bouton.click(),
@@ -102,7 +104,9 @@ describe('Plausible', function () {
         // On commence par remplir un profil classique pour faire apparaître
         // le bouton qui permet de le faire pour un proche.
         await page.goto('http://localhost:8080/#introduction')
-        let bouton = await page.waitForSelector('text="J’ai une question sur ma santé"')
+        let bouton = await page.waitForSelector(
+            'text=/J’ai une question\\s+sur ma santé/'
+        )
         await Promise.all([
             bouton.click(),
             page.waitForNavigation({ url: '**/#symptomes' }),
@@ -170,7 +174,9 @@ describe('Plausible', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/#introduction')
-        let bouton = await page.waitForSelector('text="J’ai une question sur ma santé"')
+        let bouton = await page.waitForSelector(
+            'text=/J’ai une question\\s+sur ma santé/'
+        )
         await Promise.all([
             bouton.click(),
             page.waitForNavigation({ url: '**/#symptomes' }),
@@ -226,7 +232,9 @@ describe('Plausible', function () {
         // On commence par remplir un profil classique pour faire apparaître
         // le bouton qui permet de le faire pour un proche.
         await page.goto('http://localhost:8080/#introduction')
-        let bouton = await page.waitForSelector('text="J’ai une question sur ma santé"')
+        let bouton = await page.waitForSelector(
+            'text=/J’ai une question\\s+sur ma santé/'
+        )
         await Promise.all([
             bouton.click(),
             page.waitForNavigation({ url: '**/#symptomes' }),

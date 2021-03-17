@@ -13,7 +13,9 @@ describe('Profils', function () {
 
         // On commence par remplir un profil classique pour faire apparaître
         // le bouton qui permet de le faire pour un proche.
-        let bouton = await page.waitForSelector('text="J’ai une question sur ma santé"')
+        let bouton = await page.waitForSelector(
+            'text=/J’ai une question\\s+sur ma santé/'
+        )
         await Promise.all([
             bouton.click(),
             page.waitForNavigation({ url: '**/#symptomes' }),
