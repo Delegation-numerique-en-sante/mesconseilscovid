@@ -250,7 +250,7 @@ function setupDatePicker(form) {
     const now = new Date()
     datePicker.setAttribute('max', now.toISOString().substring(0, 10))
 
-    addDatePickerPolyfill(datePicker, now)
+    addDatePickerPolyfill(datePicker, now, null)
 }
 
 function radioButtonChanged(form, input) {
