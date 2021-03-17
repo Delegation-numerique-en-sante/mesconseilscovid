@@ -109,7 +109,7 @@ export function bindImpression(element, app) {
         event.preventDefault()
         app.plausible('Impression')
         try {
-            element.querySelectorAll('details').forEach((detail) => {
+            Array.from(element.querySelectorAll('details')).forEach((detail) => {
                 detail.setAttribute('open', '')
             })
             window.print()

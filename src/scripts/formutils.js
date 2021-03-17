@@ -295,7 +295,7 @@ export function enableOrDisableSecondaryFields(form, primary, secondaries) {
     secondaries = Array.from(secondaries || form.querySelectorAll('.secondary'))
     const primaryDisabled = !primary.checked
     secondaries.forEach((elem) => {
-        const secondaryInputs = elem.querySelectorAll('input')
+        const secondaryInputs = Array.from(elem.querySelectorAll('input'))
         secondaryInputs.forEach((secondaryInput) => {
             if (secondaryInput.checked && primaryDisabled) {
                 secondaryInput.checked = false
