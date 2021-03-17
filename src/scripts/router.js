@@ -121,8 +121,7 @@ export function initRouter(app) {
             }
         }
 
-        // eslint-disable-next-line no-extra-semi
-        ;[].forEach.call(element.querySelectorAll('.premiere-question'), (lien) => {
+        Array.from(element.querySelectorAll('.premiere-question')).forEach((lien) => {
             lien.setAttribute('href', `#${app.questionnaire.firstPage}`)
         })
     }

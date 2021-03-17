@@ -1,9 +1,6 @@
 export function showMeOrThem(element, profil) {
-    // eslint-disable-next-line no-extra-semi
-    ;[].forEach.call(
-        element.querySelectorAll('.me'),
-        profil.estMonProfil() ? showMe : showThem
-    )
+    const func = profil.estMonProfil() ? showMe : showThem
+    Array.from(element.querySelectorAll('.me')).forEach(func)
 }
 
 function showMe(meElement) {
@@ -27,13 +24,11 @@ export function showElement(element) {
 }
 
 export function hideSelector(element, selector) {
-    // eslint-disable-next-line no-extra-semi
-    ;[].forEach.call(element.querySelectorAll(selector), hideElement)
+    Array.from(element.querySelectorAll(selector)).forEach(hideElement)
 }
 
 export function showSelector(element, selector) {
-    // eslint-disable-next-line no-extra-semi
-    ;[].forEach.call(element.querySelectorAll(selector), showElement)
+    Array.from(element.querySelectorAll(selector)).forEach(showElement)
 }
 
 export function displayElementById(element, id) {

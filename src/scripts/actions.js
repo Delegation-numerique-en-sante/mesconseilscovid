@@ -36,8 +36,7 @@ export function bindCalendar(element, profil) {
 
     const calendar = ics.generateCalendar()
 
-    // eslint-disable-next-line no-extra-semi
-    ;[].forEach.call(element.querySelectorAll('.js-calendar'), (calendarButton) => {
+    Array.from(element.querySelectorAll('.js-calendar')).forEach((calendarButton) => {
         const href =
             'data:text/x-vCalendar;charset=utf-8,' + encodeURIComponent(calendar)
         calendarButton.setAttribute('href', href)
@@ -86,8 +85,7 @@ export function bindFeedback(component, app) {
             })
         })
     }
-    // eslint-disable-next-line no-extra-semi
-    ;[].forEach.call(component.querySelectorAll('.button-feedback'), (button) => {
+    Array.from(component.querySelectorAll('.button-feedback')).forEach((button) => {
         button.addEventListener('click', (event) => {
             event.preventDefault()
             const feedback = event.target.dataset.feedback

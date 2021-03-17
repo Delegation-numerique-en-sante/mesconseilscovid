@@ -65,10 +65,11 @@ function renderProfilCards(container, noms, app) {
                 conseilsLink.setAttribute('href', '#conseils')
             }
 
-            const profilLinks = card.querySelectorAll('[data-set-profil]')
-            ;[].forEach.call(profilLinks, (profilLink) => {
-                bindChangeProfil(profilLink, app)
-            })
+            Array.from(card.querySelectorAll('[data-set-profil]')).forEach(
+                (profilLink) => {
+                    bindChangeProfil(profilLink, app)
+                }
+            )
 
             bindSuppression(card.querySelector('[data-delete-profil]'), app)
         })
