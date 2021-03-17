@@ -105,13 +105,11 @@ function showRelevantSuiviBlocks(element, algoSuivi) {
         blockNames.push('conseils-sante')
         blockNames.push('conseils-sante-historique-symptomes')
 
-        // eslint-disable-next-line no-extra-semi
-        ;[].forEach.call(element.querySelectorAll('.suivi-repetition'), (elem) => {
+        Array.from(element.querySelectorAll('.suivi-repetition')).forEach((elem) => {
             injection.suiviRepetition(elem, profil)
         })
 
-        // eslint-disable-next-line no-extra-semi
-        ;[].forEach.call(element.querySelectorAll('.suivi-derniere-fois'), (elem) => {
+        Array.from(element.querySelectorAll('.suivi-derniere-fois')).forEach((elem) => {
             injection.suiviDerniereFois(elem, profil)
         })
     }
@@ -161,21 +159,19 @@ export function dynamicDataInjection(element, profil, algoOrientation) {
         injection.CTAIContact(CTAIContactPlaceholder, profil.departement)
     }
 
-    // eslint-disable-next-line no-extra-semi
-    ;[].forEach.call(
-        element.querySelectorAll('.nom-caracteristiques-a-risques'),
+    Array.from(element.querySelectorAll('.nom-caracteristiques-a-risques')).forEach(
         (elem) => {
             injection.caracteristiquesARisques(elem, algoOrientation)
         }
     )
 
-    // eslint-disable-next-line no-extra-semi
-    ;[].forEach.call(element.querySelectorAll('.reponse-personne-fragile'), (elem) => {
-        injection.caracteristiquesOuAntecedentsARisques(elem, algoOrientation)
-    })
+    Array.from(element.querySelectorAll('.reponse-personne-fragile')).forEach(
+        (elem) => {
+            injection.caracteristiquesOuAntecedentsARisques(elem, algoOrientation)
+        }
+    )
 
-    // eslint-disable-next-line no-extra-semi
-    ;[].forEach.call(element.querySelectorAll('.nom-antecedents'), (elem) => {
+    Array.from(element.querySelectorAll('.nom-antecedents')).forEach((elem) => {
         injection.antecedents(elem, algoOrientation)
     })
 
@@ -200,9 +196,10 @@ function dynamicTimelineDataInjection(element, profil) {
     }
 
     function fillDate(part, content) {
-        // eslint-disable-next-line no-extra-semi
-        ;[].forEach.call(
-            element.querySelectorAll(`.timeline .timeline-${part} .timeline-date`),
+        Array.from(
+            element.querySelectorAll(
+                `.timeline .timeline-${part} .tim).forEach(ine-date`
+            ),
             (elem) => {
                 elem.innerHTML = titleCase(content)
             }

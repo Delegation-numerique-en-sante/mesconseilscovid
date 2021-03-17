@@ -23,8 +23,7 @@ export default function applyDetailsSummaryPolyfill(element) {
         return
     }
     // Click handler for `<summary>` tags
-    // eslint-disable-next-line no-extra-semi
-    ;[].forEach.call(element.querySelectorAll('details summary'), (summary) => {
+    Array.from(element.querySelectorAll('details summary')).forEach((summary) => {
         summary.addEventListener('click', (event) => {
             event.preventDefault()
             let details = event.target
