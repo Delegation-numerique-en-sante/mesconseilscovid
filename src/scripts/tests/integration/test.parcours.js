@@ -14,7 +14,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                'text=/J’ai une question\\s+sur ma santé/'
+                '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
             )
             await Promise.all([
                 bouton.click(),
@@ -42,17 +42,19 @@ describe('Parcours', function () {
         // Conseils.
         {
             // On rend la localisation visible.
-            await page.click('#page #conseils-vie-quotidienne h3')
+            await page.click('#page.ready #conseils-vie-quotidienne h3')
 
             // On retrouve le département de résidence.
-            let residence = await page.waitForSelector('#page #nom-departement')
+            let residence = await page.waitForSelector('#page.ready #nom-departement')
             assert.equal(await residence.innerText(), 'Somme')
 
             // On rend l’activité visible.
-            await page.click('#page #conseils-activite h3')
+            await page.click('#page.ready #conseils-activite h3')
 
             // On retrouve l’activité.
-            let activite = await page.waitForSelector('#page #reponse-activite-pro')
+            let activite = await page.waitForSelector(
+                '#page.ready #reponse-activite-pro'
+            )
             assert.equal(
                 (await activite.innerText()).trim(),
                 'Vous travaillez et/ou êtes bénévole (modifier)'
@@ -62,7 +64,7 @@ describe('Parcours', function () {
 
             // On retourne à l'intro.
             let bouton = await page.waitForSelector(
-                '#page >> text="Revenir à l’accueil"'
+                '#page.ready >> text="Revenir à l’accueil"'
             )
             await Promise.all([
                 bouton.click(),
@@ -73,7 +75,9 @@ describe('Parcours', function () {
         // Introduction.
         {
             // La page comporte maintenant un lien direct vers mes conseils.
-            let bouton = await page.waitForSelector('#page >> text="Voir mes conseils"')
+            let bouton = await page.waitForSelector(
+                '#page.ready >> text="Voir mes conseils"'
+            )
             assert.equal(
                 await bouton.evaluate(
                     (e) => e.parentElement.parentElement.querySelector('h3').innerText
@@ -95,7 +99,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                'text=/J’ai une question\\s+sur ma santé/'
+                '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
             )
             await Promise.all([
                 bouton.click(),
@@ -122,10 +126,10 @@ describe('Parcours', function () {
         // Conseils.
         {
             // On rend la localisation visible.
-            await page.click('#page #conseils-vie-quotidienne h3')
+            await page.click('#page.ready #conseils-vie-quotidienne h3')
 
             // On retrouve le département de résidence.
-            let residence = await page.waitForSelector('#page #nom-departement')
+            let residence = await page.waitForSelector('#page.ready #nom-departement')
             assert.equal(await residence.innerText(), 'Somme')
 
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
@@ -144,7 +148,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                'text=/J’ai une question\\s+sur ma santé/'
+                '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
             )
             await Promise.all([
                 bouton.click(),
@@ -181,7 +185,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                'text=/J’ai une question\\s+sur ma santé/'
+                '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
             )
             await Promise.all([
                 bouton.click(),
@@ -220,7 +224,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                'text=/J’ai une question\\s+sur ma santé/'
+                '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
             )
             await Promise.all([
                 bouton.click(),
@@ -247,7 +251,7 @@ describe('Parcours', function () {
         {
             // On retrouve la partie contact à risque.
             let contact_a_risque = await page.waitForSelector(
-                '#page #conseils-personnels-contact-a-risque-sans-test'
+                '#page.ready #conseils-personnels-contact-a-risque-sans-test'
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
@@ -269,7 +273,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                'text=/J’ai une question\\s+sur ma santé/'
+                '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
             )
             await Promise.all([
                 bouton.click(),
@@ -297,7 +301,7 @@ describe('Parcours', function () {
         {
             // On retrouve la partie contact à risque.
             let contact_a_risque = await page.waitForSelector(
-                '#page #conseils-personnels-contact-a-risque-sans-test'
+                '#page.ready #conseils-personnels-contact-a-risque-sans-test'
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
@@ -319,7 +323,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                'text=/J’ai une question\\s+sur ma santé/'
+                '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
             )
             await Promise.all([
                 bouton.click(),
@@ -349,7 +353,7 @@ describe('Parcours', function () {
         {
             // On retrouve la partie contact à risque.
             let contact_a_risque = await page.waitForSelector(
-                '#page #statut-asymptomatique'
+                '#page.ready #statut-asymptomatique'
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
@@ -371,7 +375,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                'text=/J’ai une question\\s+sur ma santé/'
+                '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
             )
             await Promise.all([
                 bouton.click(),
@@ -400,7 +404,7 @@ describe('Parcours', function () {
         // Conseils.
         {
             // On retrouve le statut.
-            let statut = await page.waitForSelector('#page #statut-en-attente')
+            let statut = await page.waitForSelector('#page.ready #statut-en-attente')
             assert.include(
                 (await statut.innerText()).trim(),
                 'Continuez à appliquer les mesures barrières en attendant les résultats de votre test'
@@ -421,7 +425,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                'text=/J’ai une question\\s+sur ma santé/'
+                '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
             )
             await Promise.all([
                 bouton.click(),

@@ -18,7 +18,7 @@ describe('Suivi', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                'text=/J’ai une question\\s+sur ma santé/'
+                '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
             )
             await Promise.all([
                 bouton.click(),
@@ -44,7 +44,7 @@ describe('Suivi', function () {
         {
             // la phrase de gravité 0
             let statut = await page.waitForSelector(
-                '#page #statut-symptomatique-sans-test'
+                '#page.ready #statut-symptomatique-sans-test'
             )
             assert.equal(
                 (await statut.innerText()).trim(),
@@ -52,11 +52,13 @@ describe('Suivi', function () {
             )
             // un bouton vers le suivi des symptômes
             let bouton = await page.waitForSelector(
-                '#page #conseils-personnels-symptomes-actuels-sans-depistage >> text="questionnaire de suivi"'
+                '#page.ready #conseils-personnels-symptomes-actuels-sans-depistage >> text="questionnaire de suivi"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suivisymptomes')
             // un bouton pour refaire le questionnaire
-            bouton = await page.waitForSelector('#page >> text="Revenir à l’accueil"')
+            bouton = await page.waitForSelector(
+                '#page.ready >> text="Revenir à l’accueil"'
+            )
             await Promise.all([
                 bouton.click(),
                 waitForPlausibleTrackingEvent(page, 'pageview:introduction'),
@@ -65,7 +67,9 @@ describe('Suivi', function () {
 
         // Page d’accueil.
         {
-            let bouton = await page.waitForSelector('text="Démarrer mon suivi"')
+            let bouton = await page.waitForSelector(
+                '#page.ready >> text="Démarrer mon suivi"'
+            )
             await Promise.all([
                 bouton.click(),
                 waitForPlausibleTrackingEvent(page, 'pageview:suiviintroduction'),
@@ -74,7 +78,9 @@ describe('Suivi', function () {
 
         // Page d’introduction du suivi.
         {
-            let bouton = await page.waitForSelector('text="Démarrer mon suivi"')
+            let bouton = await page.waitForSelector(
+                '#page.ready >> text="Démarrer mon suivi"'
+            )
             await Promise.all([
                 bouton.click(),
                 waitForPlausibleTrackingEvent(page, 'pageview:suivisymptomes'),
@@ -93,7 +99,7 @@ describe('Suivi', function () {
                 toux: 'non',
             })
 
-            let bouton = await page.waitForSelector('#page >> text="Continuer"')
+            let bouton = await page.waitForSelector('#page.ready >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
                 waitForPlausibleTrackingEvent(page, 'pageview:conseils'),
@@ -103,21 +109,23 @@ describe('Suivi', function () {
         // La page de Conseils doit contenir :
         {
             // la phrase de gravité 0
-            let gravite = await page.waitForSelector('#page #suivi-gravite-0')
+            let gravite = await page.waitForSelector('#page.ready #suivi-gravite-0')
             assert.equal(
                 (await gravite.innerText()).trim(),
                 'Continuez à suivre l’évolution de vos symptômes pendant votre isolement.'
             )
             // le bloc « Ma santé »
-            let bloc = await page.waitForSelector('#page #conseils-sante summary')
+            let bloc = await page.waitForSelector('#page.ready #conseils-sante summary')
             await bloc.click()
             // un bouton vers l’historique du suivi
             let bouton = await page.waitForSelector(
-                '#page #conseils-sante >> text="l’historique de vos symptômes"'
+                '#page.ready #conseils-sante >> text="l’historique de vos symptômes"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             // un bouton pour refaire le questionnaire
-            bouton = await page.waitForSelector('#page >> text="Revenir à l’accueil"')
+            bouton = await page.waitForSelector(
+                '#page.ready >> text="Revenir à l’accueil"'
+            )
             await Promise.all([
                 bouton.click(),
                 waitForPlausibleTrackingEvent(page, 'pageview:introduction'),
@@ -127,7 +135,7 @@ describe('Suivi', function () {
         // La page d’Introduction contient maintenant un lien vers mon suivi.
         {
             let bouton = await page.waitForSelector(
-                '#page >> text="Continuer mon suivi"'
+                '#page.ready >> text="Continuer mon suivi"'
             )
             assert.equal(
                 await bouton.evaluate(
@@ -144,10 +152,10 @@ describe('Suivi', function () {
         // La page d’introduction du suivi comporte un lien direct
         // vers mes symptômes car on a déjà renseigné la date de début.
         {
-            await page.waitForSelector('#page h2 >> text="Suivi de la maladie"')
+            await page.waitForSelector('#page.ready h2 >> text="Suivi de la maladie"')
 
             let bouton = await page.waitForSelector(
-                '#page >> text="Continuer mon suivi"'
+                '#page.ready >> text="Continuer mon suivi"'
             )
             assert.equal(
                 await bouton.evaluate(
@@ -173,7 +181,7 @@ describe('Suivi', function () {
                 toux: 'non',
             })
 
-            let bouton = await page.waitForSelector('#page >> text="Continuer"')
+            let bouton = await page.waitForSelector('#page.ready >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
                 waitForPlausibleTrackingEvent(page, 'pageview:conseils'),
@@ -183,17 +191,17 @@ describe('Suivi', function () {
         // La page de Conseils doit contenir :
         {
             // la phrase de gravité 3
-            let gravite = await page.waitForSelector('#page #suivi-gravite-3')
+            let gravite = await page.waitForSelector('#page.ready #suivi-gravite-3')
             assert.equal(
                 (await gravite.innerText()).trim(),
                 'Contactez le 15 ou demandez à un votre proche de le faire pour vous immédiatement.'
             )
             // le bloc « Ma santé »
-            let bloc = await page.waitForSelector('#page #conseils-sante summary')
+            let bloc = await page.waitForSelector('#page.ready #conseils-sante summary')
             await bloc.click()
             // un bouton vers l’historique du suivi
             let bouton = await page.waitForSelector(
-                '#page #conseils-sante >> text="l’historique de vos symptômes"'
+                '#page.ready #conseils-sante >> text="l’historique de vos symptômes"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             await Promise.all([
@@ -204,7 +212,7 @@ describe('Suivi', function () {
 
         // La page de suivi d'historique.
         {
-            let bilanTitle = await page.waitForSelector('#page #historique h3')
+            let bilanTitle = await page.waitForSelector('#page.ready #historique h3')
             assert.equal(await bilanTitle.innerText(), 'Bilan de votre situation')
         }
     })
@@ -221,7 +229,7 @@ describe('Suivi', function () {
         // On commence par remplir un profil classique pour faire apparaître
         // le bouton qui permet de le faire pour un proche.
         let bouton = await page.waitForSelector(
-            'text=/J’ai une question\\s+sur ma santé/'
+            '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
         )
         await Promise.all([
             bouton.click(),
@@ -232,7 +240,7 @@ describe('Suivi', function () {
         await page.goto('http://localhost:8080/#introduction')
         {
             let bouton = await page.waitForSelector(
-                '.js-profil-new >> text="Faire pour un proche"'
+                '#page.ready .js-profil-new >> text="Faire pour un proche"'
             )
             await Promise.all([
                 bouton.click(),
@@ -259,7 +267,7 @@ describe('Suivi', function () {
         {
             // le statut
             let statut = await page.waitForSelector(
-                '#page #statut-symptomatique-sans-test'
+                '#page.ready #statut-symptomatique-sans-test'
             )
             assert.equal(
                 (await statut.innerText()).trim(),
@@ -267,10 +275,12 @@ describe('Suivi', function () {
             )
             // un bouton vers le suivi des symptômes
             let bouton = await page.waitForSelector(
-                '#page #conseils-personnels-symptomes-actuels-sans-depistage >> text="questionnaire de suivi"'
+                '#page.ready #conseils-personnels-symptomes-actuels-sans-depistage >> text="questionnaire de suivi"'
             )
             // un bouton pour refaire le questionnaire
-            bouton = await page.waitForSelector('#page >> text="Revenir à l’accueil"')
+            bouton = await page.waitForSelector(
+                '#page.ready >> text="Revenir à l’accueil"'
+            )
             await Promise.all([
                 bouton.click(),
                 waitForPlausibleTrackingEvent(page, 'pageview:introduction'),
@@ -279,7 +289,9 @@ describe('Suivi', function () {
 
         // Page d’accueil.
         {
-            let bouton = await page.waitForSelector('text="Démarrer son suivi"')
+            let bouton = await page.waitForSelector(
+                '#page.ready >> text="Démarrer son suivi"'
+            )
             assert.equal(
                 await bouton.evaluate(
                     (e) => e.parentElement.parentElement.querySelector('h3').innerText
@@ -294,7 +306,9 @@ describe('Suivi', function () {
 
         // Page d’introduction du suivi.
         {
-            let bouton = await page.waitForSelector('text="Démarrer son suivi"')
+            let bouton = await page.waitForSelector(
+                '#page.ready >> text="Démarrer son suivi"'
+            )
             assert.equal(
                 await bouton.evaluate(
                     (e) => e.parentElement.parentElement.querySelector('h3').innerText
@@ -320,7 +334,7 @@ describe('Suivi', function () {
                 confusion: 'non',
             })
 
-            let bouton = await page.waitForSelector('#page >> text="Continuer"')
+            let bouton = await page.waitForSelector('#page.ready >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
                 waitForPlausibleTrackingEvent(page, 'pageview:conseils'),
@@ -330,17 +344,17 @@ describe('Suivi', function () {
         // La page de Conseils doit contenir :
         {
             // la phrase de gravité 3
-            let gravite = await page.waitForSelector('#page #suivi-gravite-3')
+            let gravite = await page.waitForSelector('#page.ready #suivi-gravite-3')
             assert.equal(
                 (await gravite.innerText()).trim(),
                 'Contactez le 15 ou demandez à un votre proche de le faire pour vous immédiatement.'
             )
             // le bloc « Ma santé »
-            let bloc = await page.waitForSelector('#page #conseils-sante summary')
+            let bloc = await page.waitForSelector('#page.ready #conseils-sante summary')
             await bloc.click()
             // un bouton vers l’historique du suivi
             let bouton = await page.waitForSelector(
-                '#page #conseils-sante >> text="l’historique des symptômes"'
+                '#page.ready #conseils-sante >> text="l’historique des symptômes"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             await Promise.all([
@@ -351,7 +365,7 @@ describe('Suivi', function () {
 
         // La page de suivi d'historique.
         {
-            let bilanTitle = await page.waitForSelector('#page #historique h3')
+            let bilanTitle = await page.waitForSelector('#page.ready #historique h3')
             assert.equal(await bilanTitle.innerText(), 'Bilan de votre situation')
         }
     })
