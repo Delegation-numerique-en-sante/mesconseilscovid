@@ -780,14 +780,14 @@ describe('Blocs d’informations additionnels', function () {
     })
 
     describe('Bloc vie quotidienne', function () {
-        it('Le couvre-feu à 18h est affiché par défaut', function () {
+        it('Le couvre-feu à 19h est affiché par défaut', function () {
             var profil = new Profil('mes_infos', {
                 departement: '01',
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-couvre-feu-18h',
+                'conseils-couvre-feu-19h',
             ])
         })
         it('À Mayotte, c’est le confinement', function () {
@@ -807,7 +807,7 @@ describe('Blocs d’informations additionnels', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-couvre-feu-18h',
+                'conseils-couvre-feu-19h',
                 'conseils-confinement-week-end-06',
             ])
         })
@@ -818,7 +818,7 @@ describe('Blocs d’informations additionnels', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-couvre-feu-18h',
+                'conseils-couvre-feu-19h',
                 'conseils-confinement-week-end-59',
             ])
         })
@@ -829,7 +829,7 @@ describe('Blocs d’informations additionnels', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-couvre-feu-18h',
+                'conseils-couvre-feu-19h',
                 'conseils-confinement-week-end',
             ])
         })
