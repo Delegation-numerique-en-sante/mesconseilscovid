@@ -70,7 +70,7 @@ async function remplirNom(page, nom) {
     let bouton = await page.waitForSelector('#page.ready >> text="Continuer"')
     await Promise.all([
         bouton.click(),
-        page.waitForNavigation({ url: '**/#symptomes' }),
+        page.waitForNavigation({ url: '**/*#symptomes' }),
     ])
 }
 
@@ -93,7 +93,7 @@ async function remplirSituation(page, departement, enfants, activitePro) {
         await label.click()
     }
     let bouton = await page.waitForSelector('#page.ready >> text="Continuer"')
-    await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#sante' })])
+    await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/*#sante' })])
 }
 
 async function remplirSante(page, age, taille, poids, antecedents) {
@@ -120,7 +120,7 @@ async function remplirSante(page, age, taille, poids, antecedents) {
     const target = age < 15 ? 'pediatrie' : 'conseils'
     await Promise.all([
         bouton.click(),
-        page.waitForNavigation({ url: `**/#${target}` }),
+        page.waitForNavigation({ url: `**/*#${target}` }),
     ])
 }
 
@@ -156,7 +156,7 @@ async function remplirDepistage(page, depistage, date, type, resultat) {
     let bouton = await page.waitForSelector(`#page.ready >> text=${text}`)
     await Promise.all([
         bouton.click(),
-        page.waitForNavigation({ url: `**/#situation` }),
+        page.waitForNavigation({ url: `**/*#situation` }),
     ])
 }
 
@@ -212,7 +212,7 @@ async function remplirSymptomes(page, symptomesActuels, symptomesPasses, date) {
     let bouton = await page.waitForSelector(`#page.ready >> text=${text}`)
     await Promise.all([
         bouton.click(),
-        page.waitForNavigation({ url: `**/#${nextPage}` }),
+        page.waitForNavigation({ url: `**/*#${nextPage}` }),
     ])
 }
 
@@ -261,7 +261,7 @@ async function remplirContactsARisque(
     let bouton = await page.waitForSelector(`#page.ready >> text=${text}`)
     await Promise.all([
         bouton.click(),
-        page.waitForNavigation({ url: `**/#depistage` }),
+        page.waitForNavigation({ url: `**/*#depistage` }),
     ])
 }
 
