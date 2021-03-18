@@ -80,6 +80,9 @@ export function initRouter(app) {
                 fillNavigation(element, pageName)
                 viewFunc(element)
                 trackPageView(pageName)
+                const page = element.parentElement
+                page.classList.remove('loading')
+                page.classList.add('ready')
             },
             {
                 before: function (done) {

@@ -10,6 +10,8 @@ export function loadPage(pageName, app) {
     var page = document.querySelector('section#page')
     var section = document.querySelector('#' + pageName)
     var clone = section.cloneNode(true)
+    page.classList.remove('ready')
+    page.classList.add('loading')
     page.innerHTML = '' // Flush the current content.
     var element = page.insertAdjacentElement('afterbegin', clone.firstElementChild)
     showMeOrThem(element, app.profil)

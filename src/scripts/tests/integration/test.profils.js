@@ -14,7 +14,7 @@ describe('Profils', function () {
         // On commence par remplir un profil classique pour faire apparaître
         // le bouton qui permet de le faire pour un proche.
         let bouton = await page.waitForSelector(
-            'text=/J’ai une question\\s+sur ma santé/'
+            '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
         )
         await Promise.all([
             bouton.click(),
@@ -25,7 +25,7 @@ describe('Profils', function () {
         await page.goto('http://localhost:8080/#introduction')
         {
             let bouton = await page.waitForSelector(
-                '.js-profil-new >> text="Faire pour un proche"'
+                '#page.ready .js-profil-new >> text="Faire pour un proche"'
             )
             await Promise.all([
                 bouton.click(),
@@ -35,8 +35,8 @@ describe('Profils', function () {
 
         // Saisie nom.
         {
-            await page.fill('#page #name', 'Mamie')
-            let bouton = await page.waitForSelector('#page >> text="Continuer"')
+            await page.fill('#page.ready #name', 'Mamie')
+            let bouton = await page.waitForSelector('#page.ready >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
                 page.waitForNavigation({ url: '**/#symptomes' }),
@@ -45,7 +45,9 @@ describe('Profils', function () {
 
         // Légende adaptée.
         {
-            let legend = await page.waitForSelector('#page #symptomes-form legend')
+            let legend = await page.waitForSelector(
+                '#page.ready #symptomes-form legend'
+            )
             assert.equal(await legend.innerText(), 'Son état actuel')
         }
 
@@ -67,21 +69,23 @@ describe('Profils', function () {
         // Conseils.
         {
             // On retrouve le titre explicite.
-            let titre = await page.waitForSelector('#page #conseils-block-titre')
+            let titre = await page.waitForSelector('#page.ready #conseils-block-titre')
             assert.equal(await titre.innerText(), 'Conseils pour « Mamie »') // &nbsp; autour du nom
 
             // On rend la localisation visible.
-            await page.click('#page #conseils-vie-quotidienne h3')
+            await page.click('#page.ready #conseils-vie-quotidienne h3')
 
             // On retrouve le département de résidence.
-            let residence = await page.waitForSelector('#page #nom-departement')
+            let residence = await page.waitForSelector('#page.ready #nom-departement')
             assert.equal(await residence.innerText(), 'Somme')
 
             // On rend l’activité visible.
-            await page.click('#page #conseils-activite h3')
+            await page.click('#page.ready #conseils-activite h3')
 
             // On retrouve l’activité.
-            let activite = await page.waitForSelector('#page #reponse-activite-pro')
+            let activite = await page.waitForSelector(
+                '#page.ready #reponse-activite-pro'
+            )
             assert.equal(
                 (await activite.innerText()).trim(),
                 'Vous travaillez et/ou êtes bénévole (modifier)'
@@ -90,7 +94,7 @@ describe('Profils', function () {
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
 
             let bouton = await page.waitForSelector(
-                '#page >> text="Revenir à l’accueil"'
+                '#page.ready >> text="Revenir à l’accueil"'
             )
             await Promise.all([
                 bouton.click(),
@@ -101,7 +105,9 @@ describe('Profils', function () {
         // Introduction.
         {
             // La page comporte maintenant un lien direct vers ses conseils.
-            let bouton = await page.waitForSelector('#page >> text="Voir ses conseils"')
+            let bouton = await page.waitForSelector(
+                '#page.ready >> text="Voir ses conseils"'
+            )
             assert.equal(
                 await bouton.evaluate(
                     (e) => e.parentElement.parentElement.querySelector('h3').innerText

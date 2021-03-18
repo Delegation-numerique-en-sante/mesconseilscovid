@@ -22,6 +22,7 @@ describe('Plausible', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/#introduction')
+        await page.waitForSelector('#page.ready')
         assert.equal(
             await page.title(),
             'Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
@@ -45,7 +46,7 @@ describe('Plausible', function () {
 
         await page.goto('http://localhost:8080/#introduction')
         let bouton = await page.waitForSelector(
-            'text=/J’ai une question\\s+sur ma santé/'
+            '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
         )
 
         await Promise.all([
@@ -69,15 +70,15 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvent(page, 'pageview:conseils')
 
-        bouton = await page.waitForSelector('#page .button-feedback-positif')
+        bouton = await page.waitForSelector('#page.ready .button-feedback-positif')
 
         await Promise.all([
             bouton.click(),
-            page.waitForSelector('#page .feedback-component .feedback-form'),
+            page.waitForSelector('#page.ready .feedback-component .feedback-form'),
         ])
 
         const form = await page.waitForSelector(
-            '#page .feedback-component .feedback-form'
+            '#page.ready .feedback-component .feedback-form'
         )
 
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
@@ -105,7 +106,7 @@ describe('Plausible', function () {
         // le bouton qui permet de le faire pour un proche.
         await page.goto('http://localhost:8080/#introduction')
         let bouton = await page.waitForSelector(
-            'text=/J’ai une question\\s+sur ma santé/'
+            '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
         )
         await Promise.all([
             bouton.click(),
@@ -114,7 +115,7 @@ describe('Plausible', function () {
 
         await page.goto('http://localhost:8080/#introduction')
         bouton = await page.waitForSelector(
-            '.js-profil-new >> text="Faire pour un proche"'
+            '#page.ready .js-profil-new >> text="Faire pour un proche"'
         )
 
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
@@ -136,15 +137,15 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvent(page, 'pageview:conseils')
 
-        bouton = await page.waitForSelector('#page .button-feedback-positif')
+        bouton = await page.waitForSelector('#page.ready .button-feedback-positif')
 
         await Promise.all([
             bouton.click(),
-            page.waitForSelector('#page .feedback-component .feedback-form'),
+            page.waitForSelector('#page.ready .feedback-component .feedback-form'),
         ])
 
         const form = await page.waitForSelector(
-            '#page .feedback-component .feedback-form'
+            '#page.ready .feedback-component .feedback-form'
         )
 
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
@@ -175,7 +176,7 @@ describe('Plausible', function () {
 
         await page.goto('http://localhost:8080/#introduction')
         let bouton = await page.waitForSelector(
-            'text=/J’ai une question\\s+sur ma santé/'
+            '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
         )
         await Promise.all([
             bouton.click(),
@@ -197,15 +198,15 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvent(page, 'pageview:conseils')
 
-        bouton = await page.waitForSelector('#page .button-feedback-negatif')
+        bouton = await page.waitForSelector('#page.ready .button-feedback-negatif')
 
         await Promise.all([
             bouton.click(),
-            page.waitForSelector('#page .feedback-component .feedback-form'),
+            page.waitForSelector('#page.ready .feedback-component .feedback-form'),
         ])
 
         const form = await page.waitForSelector(
-            '#page .feedback-component .feedback-form'
+            '#page.ready .feedback-component .feedback-form'
         )
 
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
@@ -233,7 +234,7 @@ describe('Plausible', function () {
         // le bouton qui permet de le faire pour un proche.
         await page.goto('http://localhost:8080/#introduction')
         let bouton = await page.waitForSelector(
-            'text=/J’ai une question\\s+sur ma santé/'
+            '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
         )
         await Promise.all([
             bouton.click(),
@@ -242,7 +243,7 @@ describe('Plausible', function () {
 
         await page.goto('http://localhost:8080/#introduction')
         bouton = await page.waitForSelector(
-            '.js-profil-new >> text="Faire pour un proche"'
+            '#page.ready .js-profil-new >> text="Faire pour un proche"'
         )
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
         await remplirQuestionnaire(page, {
@@ -262,15 +263,15 @@ describe('Plausible', function () {
 
         await waitForPlausibleTrackingEvent(page, 'pageview:conseils')
 
-        bouton = await page.waitForSelector('#page .button-feedback-negatif')
+        bouton = await page.waitForSelector('#page.ready .button-feedback-negatif')
 
         await Promise.all([
             bouton.click(),
-            page.waitForSelector('#page .feedback-component .feedback-form'),
+            page.waitForSelector('#page.ready .feedback-component .feedback-form'),
         ])
 
         const form = await page.waitForSelector(
-            '#page .feedback-component .feedback-form'
+            '#page.ready .feedback-component .feedback-form'
         )
 
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')

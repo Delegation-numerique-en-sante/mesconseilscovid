@@ -24,7 +24,7 @@ describe('Pages', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                'text=/J’ai une question\\s+sur ma santé/'
+                '#page.ready >> text=/J’ai une question\\s+sur ma santé/'
             )
             await Promise.all([
                 bouton.click(),
@@ -49,11 +49,11 @@ describe('Pages', function () {
         // Pédiatrie.
         {
             // On retrouve le titre explicite.
-            let titre = await page.waitForSelector('#page h2')
+            let titre = await page.waitForSelector('#page.ready h2')
             assert.equal(await titre.innerText(), 'Conseils pour les enfants')
 
             // On retrouve le bouton pour aller vers les conseils.
-            let button = await page.waitForSelector('#page #js-profil-full a')
+            let button = await page.waitForSelector('#page.ready #js-profil-full a')
             assert.equal((await button.innerText()).trim(), 'Aller à mes conseils')
             assert.equal(await button.getAttribute('href'), '#conseils')
         }
@@ -67,6 +67,7 @@ describe('Pages', function () {
             page.goto('http://localhost:8080/'),
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
+        await page.waitForSelector('#page.ready')
 
         // On va vers la page de CGU.
         {
@@ -80,11 +81,11 @@ describe('Pages', function () {
         // Conditions d’utilisation.
         {
             // On retrouve le bouton pour repartir vers le questionnaire.
-            let button = await page.waitForSelector('#page #js-profil-empty a')
+            let button = await page.waitForSelector('#page.ready #js-profil-empty a')
             assert.equal((await button.innerText()).trim(), 'Démarrer le questionnaire')
             assert.equal(await button.getAttribute('href'), '#symptomes')
             // On retrouve le titre explicite.
-            let titre = await page.waitForSelector('#page h2')
+            let titre = await page.waitForSelector('#page.ready h2')
             assert.equal(await titre.innerText(), 'Conditions d’utilisation')
         }
     })
