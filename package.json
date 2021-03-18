@@ -34,10 +34,10 @@
     "timeago.js": "4.0.2"
   },
   "scripts": {
-    "test": "mocha --require @babel/register src/scripts/tests/",
+    "test": "mocha --color --require @babel/register src/scripts/tests/",
     "test:coverage": "nyc npm run test",
-    "test-integration": "mocha --require @babel/register --bail --timeout 15000 src/scripts/tests/integration/",
-    "lint": "eslint src/scripts/ src/service-worker.js",
+    "test-integration": "mocha --color --require @babel/register --bail --timeout 15000 src/scripts/tests/integration/",
+    "lint": "eslint --color src/scripts/ src/service-worker.js",
     "prebuild": "rm -rf dist",
     "build": "parcel build src/index.html --detailed-report 20 --experimental-scope-hoisting",
     "build-dev": "parcel src/index.html --log-level 3 --open"
