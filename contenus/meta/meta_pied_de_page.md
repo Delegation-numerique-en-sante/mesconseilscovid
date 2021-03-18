@@ -5,7 +5,7 @@
                 Des difficultés avec cette page ?
                 <span class="feedback-controls">
                     <a class="button button-outline button-feedback button-feedback-flag" data-feedback="flag" href="">Oui</a>
-                    <a class="button button-outline button-feedback-contact" href="mailto:contact@mesconseilscovid.fr">Nous contacter</a>
+                    <a class="button button-outline button-feedback-contact js-feedback-contact" href="mailto:contact@mesconseilscovid.fr">Nous contacter</a>
                 </span>
             </p>
         </div>
