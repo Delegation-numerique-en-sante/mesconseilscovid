@@ -51,34 +51,22 @@ jobs:
           make test-tools
 
       - name: Run browser tests (webkit)
-        uses: nick-invision/retry@v2
-        with:
-          max_attempts: 3
-          retry_on: error
-          timeout_minutes: 3
-          command: npm run-script test-integration
+        run: |
+          npm run-script test-integration
         env:
           BROWSER: "webkit"
           DEBUG: "pw:api"
 
       - name: Run browser tests (chromium)
-        uses: nick-invision/retry@v2
-        with:
-          max_attempts: 3
-          retry_on: error
-          timeout_minutes: 3
-          command: npm run-script test-integration
+        run: |
+          npm run-script test-integration
         env:
           BROWSER: "chromium"
           DEBUG: "pw:api"
 
       - name: Run browser tests (firefox)
-        uses: nick-invision/retry@v2
-        with:
-          max_attempts: 3
-          retry_on: error
-          timeout_minutes: 3
-          command: npm run-script test-integration
+        run: |
+          npm run-script test-integration
         env:
           BROWSER: "firefox"
           DEBUG: "pw:api"
