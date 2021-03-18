@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-03-17
+
+* correctifs pour Internet Explorer
+
 ## 2021-03-15
 
 * description explicite des signes de la Covid
