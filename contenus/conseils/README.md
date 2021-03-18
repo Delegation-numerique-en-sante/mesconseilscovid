@@ -276,11 +276,11 @@ Une personne ayant la Covid est **contagieuse 48 h avant** les premiers symptô
 
 
 
-## [conseils_couvre_feu_18h.md](conseils_couvre_feu_18h.md)
+## [conseils_couvre_feu_19h.md](conseils_couvre_feu_19h.md)
 
 <div class="conseil conseil-jaune">
 
-Un **couvre-feu** s’applique dans votre département de 18 h à 6 h du matin.
+Un **couvre-feu** s’applique dans votre département de 19 h à 6 h du matin.
 
 </div>
 
