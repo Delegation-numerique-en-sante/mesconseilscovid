@@ -1,6 +1,7 @@
 import playwright from 'playwright'
 
 let browser
+let context
 
 before(async function () {
     // Lance un navigateur « headless » (définir la variable
@@ -14,9 +15,13 @@ after(async function () {
 
 beforeEach(async function () {
     // Chaque test tourne dans un nouvel onglet.
-    this.currentTest.page = await browser.newPage()
+    context = await browser.newContext({
+        locale: 'fr-FR',
+        timezoneId: 'Europe/Paris',
+    })
+    this.currentTest.page = await context.newPage()
 })
 
 afterEach(async function () {
-    await this.currentTest.page.close()
+    await context.close()
 })
