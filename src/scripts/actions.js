@@ -101,6 +101,12 @@ export function bindFeedback(component, app) {
     })
 }
 
+export function bindFeedbackContact(emailButton, app) {
+    emailButton.addEventListener('click', () => {
+        app.plausible('Contact')
+    })
+}
+
 export function bindImpression(element, app) {
     const printButton = element.querySelector('.js-impression')
     printButton.addEventListener('click', (event) => {

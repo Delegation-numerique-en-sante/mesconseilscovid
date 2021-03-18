@@ -10,7 +10,7 @@ import './polyfills/custom_event'
 
 import { register as registerTimeAgo } from 'timeago.js'
 
-import { bindFeedback, bindSuppressionTotale } from './actions'
+import { bindFeedback, bindFeedbackContact, bindSuppressionTotale } from './actions'
 import App from './app'
 
 var app = new App()
@@ -20,6 +20,7 @@ window.app = app
         app.router.resolve()
         app.updater.checkForUpdatesEvery(10) // Minutes.
         bindFeedback(document.querySelector('footer .feedback-component'), app)
+        bindFeedbackContact(document.querySelector('footer .js-feedback-contact'), app)
         bindSuppressionTotale(document.querySelector('footer .js-suppression'), app)
     })
 })()
