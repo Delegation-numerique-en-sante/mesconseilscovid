@@ -4,6 +4,8 @@
 
 * mise à jour d’un lien sur ansm.sante.fr (nouveau site)
 * liste les communes confinées le week-end (06 et 59)
+* retrait du parcours mesurant l’intérêt pour la vaccination
+* mesure de la page originelle de la prise de contact
 
 ## 2021-03-17
 
