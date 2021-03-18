@@ -197,13 +197,10 @@ function dynamicTimelineDataInjection(element, profil) {
 
     function fillDate(part, content) {
         Array.from(
-            element.querySelectorAll(
-                `.timeline .timeline-${part} .tim).forEach(ine-date`
-            ),
-            (elem) => {
-                elem.innerHTML = titleCase(content)
-            }
-        )
+            element.querySelectorAll(`.timeline .timeline-${part} .timeline-date`)
+        ).forEach((elem) => {
+            elem.innerHTML = titleCase(content)
+        })
     }
 
     function fillDates(dates) {
