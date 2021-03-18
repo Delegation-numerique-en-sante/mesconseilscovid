@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-03-18
+
+* mise à jour d’un lien sur ansm.sante.fr (nouveau site)
+* liste les communes confinées le week-end (06 et 59)
+
 ## 2021-03-17
 
 * correctifs pour Internet Explorer
