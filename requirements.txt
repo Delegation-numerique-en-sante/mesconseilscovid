@@ -21,7 +21,7 @@ pluggy==0.13.1
 py==1.10.0
 pyparsing==2.4.7
 pytest==6.2.2
-regex==2020.11.13
+regex==2021.3.17
 rfc3986==1.4.0
 six==1.15.0
 sniffio==1.2.0
