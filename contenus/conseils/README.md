@@ -125,6 +125,17 @@ Une personne ayant la Covid est **contagieuse 48 h avant** les premiers symptô
 
 
 
+## [conseils_couvre_feu_974.md](conseils_couvre_feu_974.md)
+
+<div class="conseil conseil-jaune">
+
+Un **couvre-feu** s’applique à La Réunion de 18 h à 6 h du matin.
+
+</div>
+
+
+
+
 ## [conseils_covid.md](conseils_covid.md)
 
 Pour toutes vos questions sur la Covid, vous pouvez :
