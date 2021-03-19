@@ -125,6 +125,17 @@ Une personne ayant la Covid est **contagieuse 48 h avant** les premiers symptô
 
 
 
+## [conseils_couvre_feu_971.md](conseils_couvre_feu_971.md)
+
+<div class="conseil conseil-jaune">
+
+Un **couvre-feu** s’applique en Guadeloupe de 22 h à 6 h du matin.
+
+</div>
+
+
+
+
 ## [conseils_couvre_feu_974.md](conseils_couvre_feu_974.md)
 
 <div class="conseil conseil-jaune">
