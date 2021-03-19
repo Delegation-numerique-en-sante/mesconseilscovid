@@ -800,6 +800,16 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-couvre-feu-19h',
             ])
         })
+        it('À La Réunion, c’est un couvre-feu adapté', function () {
+            var profil = new Profil('mes_infos', {
+                departement: '974',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+                'conseils-couvre-feu-974',
+            ])
+        })
         it('À Paris, c’est le confinement', function () {
             var profil = new Profil('mes_infos', {
                 departement: '75',

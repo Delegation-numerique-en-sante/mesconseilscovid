@@ -469,7 +469,12 @@ export default class AlgorithmeOrientation {
     }
 
     vieQuotidienneBlockNamesToDisplay() {
-        const blockNames = ['conseils-vie-quotidienne', 'conseils-couvre-feu-19h']
+        const blockNames = ['conseils-vie-quotidienne']
+        if (this.profil.departement === '974') {
+            blockNames.push('conseils-couvre-feu-974')
+        } else {
+            blockNames.push('conseils-couvre-feu-19h')
+        }
         if (confinement[this.profil.departement]) {
             blockNames.push('conseils-confinement')
         }
