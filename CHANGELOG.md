@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-03-19
+
+* ajout du confinement pour 16 départements
+* passage du couvre-feu à 19 h
+* prise en compte des spécificités du couvre-feu des DROM
+
 ## 2021-03-18
 
 * mise à jour d’un lien sur ansm.sante.fr (nouveau site)
