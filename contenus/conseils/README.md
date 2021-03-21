@@ -83,7 +83,7 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 
 <div class="conseil conseil-orange">
 
-<span class="nouveau">nouveau</span> Un **confinement** s’applique actuellement dans votre département. Il vous faut [une attestation dérogatoire](https://media.interieur.gouv.fr/deplacement-covid-19/) pour justifier de vos sorties à l’extérieur de votre domicile.
+<span class="nouveau">nouveau</span> Un **confinement** s’applique actuellement dans votre département. Il vous faut [une attestation dérogatoire](https://media.interieur.gouv.fr/attestation-deplacement-derogatoire-covid-19/) pour justifier de vos sorties à l’extérieur de votre domicile.
 
 </div>
 
