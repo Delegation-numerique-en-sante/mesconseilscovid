@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-03-22
+
+* mise à jour des informations sur les mesures renforcées
+* ajout du lien vers la nouvelle attestation dérogatoire
+
 ## 2021-03-19
 
 * ajout du confinement pour 16 départements
