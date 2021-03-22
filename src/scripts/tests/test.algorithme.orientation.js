@@ -837,7 +837,6 @@ describe('Blocs d’informations additionnels', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-couvre-feu-19h',
                 'conseils-confinement',
             ])
         })
@@ -848,7 +847,6 @@ describe('Blocs d’informations additionnels', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-couvre-feu-19h',
                 'conseils-confinement',
             ])
         })
