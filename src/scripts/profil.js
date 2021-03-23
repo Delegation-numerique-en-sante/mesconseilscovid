@@ -125,6 +125,7 @@ export default class Profil {
         this.contact_a_risque_espace_confine = undefined
         this.contact_a_risque_meme_classe = undefined
         this.contact_a_risque_stop_covid = undefined
+        this.contact_a_risque_assurance_maladie = undefined
         this.contact_a_risque_autre = undefined
         this.contact_a_risque_variante = undefined
 
@@ -202,6 +203,8 @@ export default class Profil {
         this.contact_a_risque_espace_confine = data['contact_a_risque_espace_confine']
         this.contact_a_risque_meme_classe = data['contact_a_risque_meme_classe']
         this.contact_a_risque_stop_covid = data['contact_a_risque_stop_covid']
+        this.contact_a_risque_assurance_maladie =
+            data['contact_a_risque_assurance_maladie']
         this.contact_a_risque_autre = data['contact_a_risque_autre']
         this.contact_a_risque_variante = data['contact_a_risque_variante']
 
@@ -283,6 +286,7 @@ export default class Profil {
         this.contact_a_risque_espace_confine = undefined
         this.contact_a_risque_meme_classe = undefined
         this.contact_a_risque_stop_covid = undefined
+        this.contact_a_risque_assurance_maladie = undefined
         this.contact_a_risque_autre = undefined
         this.contact_a_risque_variante = undefined
     }
@@ -308,6 +312,7 @@ export default class Profil {
             contact_a_risque_espace_confine: false,
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
+            contact_a_risque_assurance_maladie: false,
             contact_a_risque_autre: false,
             contact_a_risque_variante: 'aucune',
             depistage: false,
@@ -432,6 +437,7 @@ export default class Profil {
             contact_a_risque_espace_confine: this.contact_a_risque_espace_confine,
             contact_a_risque_meme_classe: this.contact_a_risque_meme_classe,
             contact_a_risque_stop_covid: this.contact_a_risque_stop_covid,
+            contact_a_risque_assurance_maladie: this.contact_a_risque_assurance_maladie,
             contact_a_risque_autre: this.contact_a_risque_autre,
             contact_a_risque_variante: this.contact_a_risque_variante,
             depistage: this.depistage,
@@ -546,7 +552,8 @@ export default class Profil {
     isContactARisqueComplete() {
         return (
             typeof this.contact_a_risque !== 'undefined' ||
-            typeof this.contact_a_risque_stop_covid !== 'undefined'
+            typeof this.contact_a_risque_stop_covid !== 'undefined' ||
+            typeof this.contact_a_risque_assurance_maladie !== 'undefined'
         )
     }
 
@@ -578,7 +585,8 @@ export default class Profil {
     hasContactARisqueReconnus() {
         return (
             (this.contact_a_risque && !this.contact_a_risque_autre) ||
-            this.contact_a_risque_stop_covid
+            this.contact_a_risque_stop_covid ||
+            this.contact_a_risque_assurance_maladie
         )
     }
 

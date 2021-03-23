@@ -18,6 +18,7 @@ export default function contactarisque(form, app) {
     preloadCheckboxForm(form, 'contact_a_risque_autre', app.profil)
 
     preloadCheckboxForm(form, 'contact_a_risque_stop_covid', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_assurance_maladie', app.profil)
 
     var primary = form.elements['contact_a_risque']
     enableOrDisableSecondaryFields(form, primary)
@@ -50,6 +51,8 @@ export default function contactarisque(form, app) {
             event.target.elements['contact_a_risque_meme_classe'].checked
         app.profil.contact_a_risque_stop_covid =
             event.target.elements['contact_a_risque_stop_covid'].checked
+        app.profil.contact_a_risque_assurance_maladie =
+            event.target.elements['contact_a_risque_assurance_maladie'].checked
         app.profil.contact_a_risque_autre =
             event.target.elements['contact_a_risque_autre'].checked
         app.enregistrerProfilActuel().then(() => {
@@ -71,6 +74,9 @@ function toggleFormButtonOnCheckAndRadiosRequired(
     // Warning: removes otherCheckbox from secondaryCheckboxes:
     const otherCheckbox = secondaryCheckboxes.pop()
     const TACCheckbox = form.qS('input[type=checkbox]#contact_a_risque_stop_covid')
+    const AMCheckbox = form.qS(
+        'input[type=checkbox]#contact_a_risque_assurance_maladie'
+    )
 
     function updateSubmitButtonLabelRequired() {
         const hasSecondaryChecks =
@@ -79,7 +85,7 @@ function toggleFormButtonOnCheckAndRadiosRequired(
 
         if (canContinue) {
             button.disabled = false
-            if (TACCheckbox.checked) {
+            if (TACCheckbox.checked || AMCheckbox.checked) {
                 button.value = continueLabel
             } else {
                 button.value = primaryCheckbox.checked ? continueLabel : uncheckedLabel
@@ -92,6 +98,7 @@ function toggleFormButtonOnCheckAndRadiosRequired(
     updateSubmitButtonLabelRequired()
     primaryCheckbox.addEventListener('change', updateSubmitButtonLabelRequired)
     TACCheckbox.addEventListener('change', updateSubmitButtonLabelRequired)
+    AMCheckbox.addEventListener('change', updateSubmitButtonLabelRequired)
     secondaryCheckboxes.forEach((elem) => {
         elem.addEventListener('change', updateSubmitButtonLabelRequired)
     })
