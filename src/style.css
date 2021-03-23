@@ -789,19 +789,22 @@ fieldset ul.details {
 }
 
 .dpt-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-basis: 100% !important;
+}
+.dpt-container #geolocalisation {
+    padding-left: 1.5rem;
+    background: #000091 no-repeat url('map-marker2.svg') 8% center;
+    border: none;
+    color: white;
+    width: 100%;
+    max-width: 20rem;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    margin-top: 0;
 }
 .dpt-container select {
-    flex-grow: 1;
-}
-.dpt-container div {
-    margin-left: 0.5rem;
-}
-.dpt-container img {
-    display: block;
-    width: 1.75rem;
+    width: 100%;
+    max-width: 20rem;
 }
 
 .form-controls {
@@ -868,6 +871,7 @@ select {
 }
 
 a.button:focus,
+button.button:focus,
 input[type='text']:focus,
 input[type='date']:focus,
 input[type='submit']:focus,
@@ -877,6 +881,7 @@ select:focus {
 }
 
 a.button,
+button.button,
 input[type='submit'] {
     text-align: center;
     border-radius: 5px;
@@ -906,6 +911,7 @@ input[type='submit']:disabled {
     margin: 0 auto;
     display: block;
 }
+button.button-outline,
 a.button-outline {
     background-color: white;
     border: 1px solid #000091;
@@ -1197,14 +1203,6 @@ a[href*='youtube.com']::after {
     100% {
         opacity: 1;
     }
-}
-
-a#geolocalisation {
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    background-image: url('map-marker2.svg');
-    background-size: contain;
 }
 
 .reponse {
