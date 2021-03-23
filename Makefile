@@ -30,7 +30,7 @@ clean:  ## Clean up JS related stuff.
 ##    make test-integration browser=webkit grep=suivi
 ##    make test browser=webkit
 
-test: test-unit test-integration tets-tools test-feedback
+test: test-unit test-integration test-tools test-feedback
 
 ifdef grep
 script_flags = -- --grep $(grep)

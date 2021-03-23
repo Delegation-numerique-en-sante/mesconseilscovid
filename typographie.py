@@ -1,6 +1,7 @@
-import unicodedata
-
 import regex  # pour le support de "\p{}"
+
+ESPACE_INSECABLE = "&nbsp;"
+ESPACE_FINE_INSECABLE = "&#8239;"
 
 
 def assemble_regexes(*regexes):
@@ -10,7 +11,11 @@ def assemble_regexes(*regexes):
 def build_regex(avant, apres):
     # \p{} permet de reconnaître un caractère par sa catégorie Unicode
     # "Zs" est la catégorie "Separator, space".
-    return rf"((?P<avant>{avant})" + r"\p{Zs}" + rf"(?P<apres>{apres}))"
+    return (
+        rf"((?P<avant>{avant})"
+        + rf"(\p{{Zs}}|{ESPACE_INSECABLE})"
+        + rf"(?P<apres>{apres}))"
+    )
 
 
 RE_ESPACE_FINE_INSECABLE = regex.compile(
@@ -22,8 +27,6 @@ RE_ESPACE_FINE_INSECABLE = regex.compile(
         build_regex(r"\d", r"\d"),  # Séparateurs de milliers.
     )
 )
-
-ESPACE_FINE_INSECABLE = unicodedata.lookup("NARROW NO-BREAK SPACE")
 
 
 def insere_espaces_fines_insecables(texte):
@@ -41,9 +44,6 @@ RE_ESPACE_INSECABLE = regex.compile(
         build_regex(r"\d", r"(?!\d)\w"),  # Chiffre suivi de lettres.
     )
 )
-
-
-ESPACE_INSECABLE = unicodedata.lookup("NO-BREAK SPACE")
 
 
 def insere_espaces_insecables(texte):
