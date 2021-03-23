@@ -583,6 +583,12 @@
         <fieldset>
             <legend>{{ question_symptômes_contact_à_risque_titre|me_or_them }}</legend>
             <div>
+                <input id="contact_a_risque_assurance_maladie" type="checkbox" name="contact_a_risque_assurance_maladie">
+                <label for="contact_a_risque_assurance_maladie">
+                    <span>{{ question_symptômes_contact_à_risque_assurance_maladie_libellé|me_or_them }}</span>
+                </label>
+            </div>
+            <div>
                 <input id="contact_a_risque_stop_covid" type="checkbox" name="contact_a_risque_stop_covid">
                 <label for="contact_a_risque_stop_covid">
                     <span>{{ question_symptômes_contact_à_risque_stop_covid_libellé|me_or_them }}</span>
