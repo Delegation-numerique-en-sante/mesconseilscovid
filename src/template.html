@@ -116,6 +116,12 @@
             <div class="row">
                 <label for="departement">{{ question_résidence_libellé|me_or_them }}</label>
                 <div class="dpt-container">
+                    <div>
+                        <button id="geolocalisation" class="button"
+                            title="En utilisant la géolocalisation de votre navigateur"
+                            >Trouver automatiquement</button>
+                        <br> ou choisir dans la liste :
+                    </div>
                     <select id="departement" required>
                         <option value="" selected disabled>Choisir dans la liste…</option>
                         <option value="01">01 - Ain</option>
@@ -224,9 +230,6 @@
                         <option value="978">978 - Saint-Martin</option>
                         <option value="00">Autre</option>
                     </select>
-                    <div>
-                        <a href="#" id="geolocalisation" title="Géolocalisation"></a>
-                    </div>
                 </div>
             </div>
             <p id="error-geolocalisation" class="message message-error" hidden>
