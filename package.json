@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "14.16.x",
+    "node": ">=14.16.x <15",
     "npm": "6.x"
   },
   "devDependencies": {
