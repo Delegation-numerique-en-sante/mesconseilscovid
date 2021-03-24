@@ -28,18 +28,21 @@ describe('Profils', function () {
             let bouton = await page.waitForSelector('#page.ready >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#historique' }),
             ])
         }
 
         // Légende adaptée.
         {
-            let legend = await page.waitForSelector('#page.ready #vaccins-form legend')
-            assert.equal(await legend.innerText(), 'Ses vaccins Covid')
+            let legend = await page.waitForSelector(
+                '#page.ready #historique-form legend'
+            )
+            assert.equal(await legend.innerText(), 'Son historique Covid')
         }
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
+            covidsPasses: false,
             vaccins: false,
             symptomesActuels: [],
             symptomesPasses: false,

@@ -18,12 +18,13 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#historique' }),
             ])
         }
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
+            covidsPasses: false,
             vaccins: false,
             symptomesActuels: [],
             symptomesPasses: false,
@@ -38,7 +39,7 @@ describe('Parcours', function () {
             activitePro: true,
         })
 
-        await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:vaccins')
+        await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:historique')
 
         // Conseils.
         {
@@ -104,12 +105,13 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#historique' }),
             ])
         }
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
+            covidsPasses: false,
             vaccins: false,
             symptomesActuels: ['temperature'],
             debutSymptomes: 'aujourdhui',
@@ -123,7 +125,7 @@ describe('Parcours', function () {
             activitePro: true,
         })
 
-        await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:vaccins')
+        await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:historique')
 
         // Conseils.
         {
@@ -154,12 +156,13 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#historique' }),
             ])
         }
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
+            covidsPasses: false,
             vaccins: false,
             symptomesActuels: ['souffle'],
             debutSymptomes: 'aujourdhui',
@@ -192,12 +195,13 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#historique' }),
             ])
         }
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
+            covidsPasses: false,
             vaccins: false,
             symptomesActuels: [],
             symptomesPasses: true,
@@ -232,12 +236,13 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#historique' }),
             ])
         }
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
+            covidsPasses: false,
             vaccins: false,
             symptomesActuels: [],
             symptomesPasses: false,
@@ -282,7 +287,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomes' }),
+                page.waitForNavigation({ url: '**/#historique' }),
             ])
         }
 
@@ -332,7 +337,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomes' }),
+                page.waitForNavigation({ url: '**/#historique' }),
             ])
         }
 
@@ -382,12 +387,13 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#historique' }),
             ])
         }
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
+            covidsPasses: false,
             vaccins: false,
             symptomesActuels: [],
             symptomesPasses: false,
@@ -435,12 +441,13 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#historique' }),
             ])
         }
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
+            covidsPasses: false,
             vaccins: false,
             symptomesActuels: [],
             symptomesPasses: false,
@@ -486,12 +493,13 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#historique' }),
             ])
         }
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
+            covidsPasses: false,
             vaccins: false,
             symptomesActuels: [],
             symptomesPasses: false,

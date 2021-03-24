@@ -10,7 +10,7 @@ import nouvelleversion from './page/nouvelleversion'
 
 import nom from './page/questionnaire/nom'
 
-import vaccins from './page/questionnaire/vaccins'
+import historique from './page/questionnaire/historique'
 import symptomes from './page/questionnaire/symptomes'
 import depistage from './page/questionnaire/depistage'
 import contactarisque from './page/questionnaire/contactarisque'
@@ -149,7 +149,7 @@ export function initRouter(app) {
 
     addAppRoute('nom', nom)
 
-    addQuestionnaireRoute('vaccins', vaccins)
+    addQuestionnaireRoute('historique', historique)
     addQuestionnaireRoute('symptomes', symptomes)
     addQuestionnaireRoute('contactarisque', contactarisque)
     addQuestionnaireRoute('depistage', depistage)

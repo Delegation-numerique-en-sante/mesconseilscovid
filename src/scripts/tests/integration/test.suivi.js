@@ -22,12 +22,13 @@ describe('Suivi', function () {
             )
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:vaccins'),
+                waitForPlausibleTrackingEvent(page, 'pageview:historique'),
             ])
         }
 
         // Remplir le questionnaire avec symptômes actuels.
         await remplirQuestionnaire(page, {
+            covidsPasses: false,
             vaccins: false,
             symptomesActuels: ['temperature'],
             debutSymptomes: 'aujourdhui',
@@ -241,6 +242,7 @@ describe('Suivi', function () {
         // Remplir le questionnaire avec symptômes actuels.
         await remplirQuestionnaire(page, {
             nom: 'Mamie',
+            covidsPasses: false,
             vaccins: false,
             symptomesActuels: ['temperature'],
             debutSymptomes: 'aujourdhui',

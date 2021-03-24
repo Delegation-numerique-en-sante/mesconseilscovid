@@ -352,6 +352,76 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 
 
+## [question_historique_covid_date2_aide.md](question_historique_covid_date2_aide.md)
+
+<!---->La seconde fois (si pertinent) :
+
+
+
+## [question_historique_covid_date_aide.md](question_historique_covid_date_aide.md)
+
+<!---->La première fois :
+
+
+
+## [question_historique_covid_date_libellé.md](question_historique_covid_date_libellé.md)
+
+<!---->Les dates de la Covid
+
+
+
+## [question_historique_covid_libellé.md](question_historique_covid_libellé.md)
+
+<!---->J’ai eu la Covid <b>ces 6 derniers mois</b>
+
+---
+
+<!---->Cette personne a eu la Covid <b>ces 6 derniers mois</b>
+
+
+
+## [question_historique_titre.md](question_historique_titre.md)
+
+<!---->Mon historique Covid
+
+---
+
+<!---->Son historique Covid
+
+
+
+## [question_historique_vaccins_date2_aide.md](question_historique_vaccins_date2_aide.md)
+
+<!---->Deuxième dose (si je l’ai déjà reçue) :
+
+---
+
+<!---->Deuxième dose (si elle l’a déjà reçue) :
+
+
+
+## [question_historique_vaccins_date_aide.md](question_historique_vaccins_date_aide.md)
+
+<!---->Première dose :
+
+
+
+## [question_historique_vaccins_date_libellé.md](question_historique_vaccins_date_libellé.md)
+
+<!---->Les dates de la vaccination
+
+
+
+## [question_historique_vaccins_libellé.md](question_historique_vaccins_libellé.md)
+
+<!---->J’ai été <b>vacciné·e</b> contre la Covid
+
+---
+
+<!---->Cette personne a été <b>vacciné·e</b> contre la Covid
+
+
+
 ## [question_nom_aide.md](question_nom_aide.md)
 
 Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proches pour lesquels vous remplissez le questionnaire.
@@ -769,47 +839,5 @@ Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal
 ---
 
 <!---->Cette personne a-t-elle des signes de la Covid ?
-
-
-
-## [question_vaccins_date2_aide.md](question_vaccins_date2_aide.md)
-
-<!---->Deuxième dose (si je l’ai déjà reçue) :
-
----
-
-<!---->Deuxième dose (si elle l’a déjà reçue) :
-
-
-
-## [question_vaccins_date_aide.md](question_vaccins_date_aide.md)
-
-<!---->Première dose :
-
-
-
-## [question_vaccins_date_libellé.md](question_vaccins_date_libellé.md)
-
-<!---->Les dates de la vaccination
-
-
-
-## [question_vaccins_libellé.md](question_vaccins_libellé.md)
-
-<!---->J’ai été <b>vacciné·e</b> contre la Covid
-
----
-
-<!---->Cette personne a été <b>vacciné·e</b> contre la Covid
-
-
-
-## [question_vaccins_titre.md](question_vaccins_titre.md)
-
-<!---->Mes vaccins Covid
-
----
-
-<!---->Ses vaccins Covid
 
 

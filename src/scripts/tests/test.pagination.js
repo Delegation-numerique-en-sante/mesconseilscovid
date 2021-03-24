@@ -13,30 +13,35 @@ import Profil from '../profil'
 const questionnaire = new Questionnaire()
 
 describe('Pagination', function () {
-    describe('Mes vaccins', function () {
-        it('ok d’aller aux vaccins en tout temps', function () {
+    describe('Mon historique', function () {
+        it('ok d’aller à l’historique en tout temps', function () {
             const profil = new Profil('mes_infos', {})
-            assert.isUndefined(questionnaire.before('vaccins', profil))
+            assert.isUndefined(questionnaire.before('historique', profil))
         })
-        it('ok d’aller aux vaccins même si déjà répondu', function () {
+        it('ok d’aller à l’historique même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
             })
-            assert.isUndefined(questionnaire.before('vaccins', profil))
+            assert.isUndefined(questionnaire.before('historique', profil))
         })
     })
 
     describe('Mes symptômes', function () {
-        it('redirige vers question vaccins si réponse manquante', function () {
+        it('redirige vers question historique si réponse manquante', function () {
             const profil = new Profil('mes_infos', {})
-            assert.strictEqual(questionnaire.before('symptomes', profil), 'vaccins')
+            assert.strictEqual(questionnaire.before('symptomes', profil), 'historique')
         })
-        it('ok d’aller aux symptômes si réponse aux vaccins', function () {
-            const profil = new Profil('mes_infos', { vaccins: false })
+        it('ok d’aller aux symptômes si réponse à l’historique', function () {
+            const profil = new Profil('mes_infos', {
+                covids_passes: false,
+                vaccins: false,
+            })
             assert.isUndefined(questionnaire.before('symptomes', profil))
         })
         it('ok d’aller aux symptômes même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: true,
                 symptomes_passes: false,
@@ -48,6 +53,7 @@ describe('Pagination', function () {
     describe('Ma situation', function () {
         it('redirige vers question contact à risque si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 depistage: false,
@@ -60,6 +66,7 @@ describe('Pagination', function () {
         })
         it('ok d’aller à la question situation si réponse à contact à risque', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 depistage: false,
@@ -70,6 +77,7 @@ describe('Pagination', function () {
         })
         it('ok d’aller à la question situation même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 depistage: false,
@@ -88,6 +96,7 @@ describe('Pagination', function () {
     describe('Ma santé', function () {
         it('redirige vers question situation si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 depistage: false,
@@ -98,6 +107,7 @@ describe('Pagination', function () {
         })
         it('ok d’aller à la question sante si réponse à situation', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 depistage: false,
@@ -113,6 +123,7 @@ describe('Pagination', function () {
         })
         it('ok d’aller à la question santé même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 depistage: false,
@@ -146,6 +157,7 @@ describe('Pagination', function () {
     describe('Mes contacts à risque', function () {
         it('redirige vers question symptômes si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
             })
@@ -156,6 +168,7 @@ describe('Pagination', function () {
         })
         it('ok d’aller à la question contact à risque si réponse négative à symptômes actuels et symptômes passés', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -164,6 +177,7 @@ describe('Pagination', function () {
         })
         it('ok d’aller à la question contact à risque si réponse négative à symptômes passés et positive mais autre à symptômes actuels', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: true,
                 symptomes_actuels_autre: true,
@@ -173,6 +187,7 @@ describe('Pagination', function () {
         })
         it('ok d’aller à la question contact à risque même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -182,6 +197,7 @@ describe('Pagination', function () {
         })
         it('redirige vers symptômes si réponse positive à symptômes passés', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_passes: true,
@@ -196,6 +212,7 @@ describe('Pagination', function () {
     describe('Mon dépistage', function () {
         it('redirige vers question contact à risque si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -207,6 +224,7 @@ describe('Pagination', function () {
         })
         it('redirige vers symptômes si réponse positive à symptômes actuels', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: true,
                 symptomes_actuels_autre: false,
@@ -215,6 +233,7 @@ describe('Pagination', function () {
         })
         it('ok d’aller à la question dépistage si réponse contact à risque négative', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -224,6 +243,7 @@ describe('Pagination', function () {
         })
         it('ok d’aller à la question dépistage si réponse contact à risque positive', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -234,6 +254,7 @@ describe('Pagination', function () {
         })
         it('ok d’aller à la question dépistage même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -248,6 +269,7 @@ describe('Pagination', function () {
         it('ok d’aller aux conseils si toutes les réponses', function () {
             const profil = new Profil('mes_infos', {
                 depistage: false,
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -277,6 +299,7 @@ describe('Pagination', function () {
         })
         it('redirige vers symptômes si symptômes actuels et réponses manquantes', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: true,
             })
@@ -284,6 +307,7 @@ describe('Pagination', function () {
         })
         it('redirige vers symptômes si symptômes passés et réponses manquantes', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_passes: true,
@@ -292,6 +316,7 @@ describe('Pagination', function () {
         })
         it('redirige vers question contact à risque si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -303,6 +328,7 @@ describe('Pagination', function () {
         })
         it('redirige vers question symptômes si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
             })
@@ -310,6 +336,7 @@ describe('Pagination', function () {
         })
         it('redirige vers question symptômes si symptômes actuels autres', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: true,
                 symptomes_actuels_autre: true,
@@ -318,10 +345,11 @@ describe('Pagination', function () {
         })
         it('redirige vers question vaccins si réponse manquante', function () {
             const profil = new Profil('mes_infos', {})
-            assert.strictEqual(questionnaire.before('conseils', profil), 'vaccins')
+            assert.strictEqual(questionnaire.before('conseils', profil), 'historique')
         })
         it('redirige vers question symptômes si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
             })
@@ -330,6 +358,7 @@ describe('Pagination', function () {
         it('redirige vers question situation si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
                 depistage: false,
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -358,6 +387,7 @@ describe('Pagination', function () {
         it('redirige vers pediatrie si age < 15', function () {
             const profil = new Profil('mes_infos', {
                 depistage: false,
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
@@ -410,6 +440,7 @@ describe('Pagination', function () {
                 antecedent_drepano: false,
                 antecedent_trisomie: false,
                 antecedent_chronique_autre: false,
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_actuels_temperature: false,
@@ -458,6 +489,7 @@ describe('Pagination', function () {
                 antecedent_drepano: false,
                 antecedent_trisomie: false,
                 antecedent_chronique_autre: false,
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_actuels_temperature: false,
@@ -507,6 +539,7 @@ describe('Pagination', function () {
                 antecedent_drepano: false,
                 antecedent_trisomie: false,
                 antecedent_chronique_autre: false,
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_actuels_temperature: false,
@@ -556,6 +589,7 @@ describe('Pagination', function () {
                 antecedent_drepano: false,
                 antecedent_trisomie: false,
                 antecedent_chronique_autre: false,
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: true,
                 symptomes_actuels_temperature: true,
@@ -606,6 +640,7 @@ describe('Pagination', function () {
                 antecedent_drepano: false,
                 antecedent_trisomie: false,
                 antecedent_chronique_autre: false,
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_actuels_temperature: false,
@@ -656,6 +691,7 @@ describe('Pagination', function () {
                 antecedent_drepano: false,
                 antecedent_trisomie: false,
                 antecedent_chronique_autre: false,
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_actuels_temperature: false,
@@ -710,7 +746,7 @@ describe('Pagination', function () {
             })
             assert.strictEqual(
                 beforeSuiviIntroduction(profil, questionnaire),
-                'vaccins'
+                'historique'
             )
         })
         it('redirige suivi symptômes vers algo orientation si profil non complet', function () {
@@ -737,7 +773,10 @@ describe('Pagination', function () {
                 antecedent_chronique_autre: false,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
-            assert.strictEqual(beforeSuiviSymptomes(profil, questionnaire), 'vaccins')
+            assert.strictEqual(
+                beforeSuiviSymptomes(profil, questionnaire),
+                'historique'
+            )
         })
         it('redirige suivi historique vers algo orientation si profil non complet', function () {
             const profil = new Profil('mes_infos', {
@@ -763,7 +802,10 @@ describe('Pagination', function () {
                 antecedent_chronique_autre: false,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
-            assert.strictEqual(beforeSuiviHistorique(profil, questionnaire), 'vaccins')
+            assert.strictEqual(
+                beforeSuiviHistorique(profil, questionnaire),
+                'historique'
+            )
         })
         it('ok d’aller au suivi symptômes sans date de début symptômes ni symptômes (asymptomatique)', function () {
             const profil = new Profil('mes_infos', {
@@ -787,6 +829,7 @@ describe('Pagination', function () {
                 antecedent_drepano: false,
                 antecedent_trisomie: false,
                 antecedent_chronique_autre: false,
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_actuels_temperature: false,
@@ -839,6 +882,7 @@ describe('Pagination', function () {
                 antecedent_drepano: false,
                 antecedent_trisomie: false,
                 antecedent_chronique_autre: false,
+                covids_passes: false,
                 vaccins: false,
                 symptomes_actuels: false,
                 symptomes_actuels_temperature: false,
