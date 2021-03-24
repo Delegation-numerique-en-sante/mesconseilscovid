@@ -621,7 +621,7 @@ Coiffeur, aide à domicile, soins d’esthétique, soins infirmiers…
 
 ---
 
-<!---->L’<b>Assurance Maladie</b> a informé cette personne qu’elle est « cas contact »
+<!---->Il ou elle a été informé·e par l’<b>Assurance Maladie</b> qu’il ou elle est « cas contact »
 
 
 
@@ -769,4 +769,5 @@ Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal
 ---
 
 <!---->Cette personne a-t-elle des signes de la Covid ?
+
 
