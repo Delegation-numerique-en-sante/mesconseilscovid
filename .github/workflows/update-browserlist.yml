@@ -1,0 +1,29 @@
+name: Mettre à jour la base de données de browserslist
+
+on:
+  schedule:
+    - cron: '* 55 * * *'
+
+jobs:
+  update-browserslist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Node v14
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Update browserslist database
+        run: |
+          npx browserslist@latest --update-db
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: Met à jour la base de données de browserslist
+          commit-message: Met à jour la base de données de browserslist
+          branch: update-browserslist
+          delete-branch: true
