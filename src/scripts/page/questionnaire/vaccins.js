@@ -1,7 +1,6 @@
 import { addDatePickerPolyfill } from '../../datepicker'
 import {
     enableOrDisableSecondaryFields,
-    getRadioValue,
     preloadCheckboxForm,
     toggleFormButtonOnTextFieldsAndRadioRequired,
 } from '../../formutils'
@@ -30,14 +29,6 @@ export default function vaccins(form, app) {
             datePicker2.value = app.profil.vaccins_2e_dose_date
                 .toISOString()
                 .substring(0, 10)
-        }
-
-        if (app.profil.vaccins_type === 'comirnaty') {
-            form.querySelector('#vaccins_type_comirnaty').checked = true
-        } else if (app.profil.vaccins_type === 'moderna') {
-            form.querySelector('#vaccins_type_moderna').checked = true
-        } else if (app.profil.vaccins_type === 'astrazeneca') {
-            form.querySelector('#vaccins_type_astrazeneca').checked = true
         }
     }
 
@@ -73,11 +64,9 @@ export default function vaccins(form, app) {
             app.profil.vaccins_2e_dose_date = new Date(
                 form.elements['vaccins_2e_dose_date'].value
             )
-            app.profil.vaccins_type = getRadioValue(form, 'vaccins_type')
         } else {
             app.profil.vaccins_1re_dose_date = undefined
             app.profil.vaccins_2e_dose_date = undefined
-            app.profil.vaccins_type = undefined
         }
 
         app.enregistrerProfilActuel().then(() => {

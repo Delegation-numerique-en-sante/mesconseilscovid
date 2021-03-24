@@ -158,7 +158,6 @@ export default class Profil {
         this._depistage_start_date = undefined
 
         this.vaccins = undefined
-        this.vaccins_type = undefined
         this._vaccins_1re_dose_date = undefined
         this._vaccins_2e_dose_date = undefined
 
@@ -240,7 +239,6 @@ export default class Profil {
         this._depistage_start_date = data['_depistage_start_date']
 
         this.vaccins = data['vaccins']
-        this.vaccins_type = data['vaccins_type']
         this._vaccins_1re_dose_date = data['_vaccins_1re_dose_date']
         this._vaccins_2e_dose_date = data['_vaccins_2e_dose_date']
 
@@ -350,7 +348,6 @@ export default class Profil {
             depistage_resultat: '',
             depistage_variante: 'aucune',
             vaccins: false,
-            vaccins_type: '',
             departement: '34',
             activite_pro: false,
             activite_pro_sante: false,
@@ -478,7 +475,6 @@ export default class Profil {
             depistage_variante: this.depistage_variante,
             _depistage_start_date: this._depistage_start_date,
             vaccins: this.vaccins,
-            vaccins_type: this.vaccins_type,
             _vaccins_1re_dose_date: this._vaccins_1re_dose_date,
             _vaccins_2e_dose_date: this._vaccins_2e_dose_date,
             suivi_active: this.suivi_active,
