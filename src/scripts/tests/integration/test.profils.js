@@ -18,7 +18,7 @@ describe('Profils', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/?intention=proche#nom' }),
+                page.waitForNavigation({ url: '**/#nom' }),
             ])
         }
 
@@ -28,7 +28,7 @@ describe('Profils', function () {
             let bouton = await page.waitForSelector('#page.ready >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/?intention=proche#symptomes' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -87,7 +87,7 @@ describe('Profils', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/*#introduction' }),
+                page.waitForNavigation({ url: '**/#introduction' }),
             ])
         }
 

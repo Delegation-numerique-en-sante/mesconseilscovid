@@ -148,19 +148,18 @@ export default class App {
     plausible(eventName) {
         const searchParams = new URLSearchParams(window.location.search)
         const options = {}
+        const props = {}
+        if (typeof this.profil.nom !== 'undefined') {
+            props['profil'] = this.profil.estMonProfil() ? 'moi' : 'proche'
+        }
         if (searchParams.toString().length) {
-            const props = {}
             const source = searchParams.get('source')
             if (source) {
                 props['source'] = source
             }
-            const intention = searchParams.get('intention')
-            if (intention) {
-                props['intention'] = intention
-            }
-            if (props) {
-                options['props'] = props
-            }
+        }
+        if (Object.keys(props).length > 0) {
+            options['props'] = props
         }
         return this._plausible(eventName, options)
     }

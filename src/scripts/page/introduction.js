@@ -17,7 +17,6 @@ export default function introduction(element, app) {
                     <li class="profil-empty">
                         <a class="button button-full-width"
                             data-set-profil="mes_infos"
-                            data-intention="moi"
                             href="#${app.questionnaire.firstPage}"
                             >Faire pour moi</a>
                     </li>
@@ -25,17 +24,15 @@ export default function introduction(element, app) {
             )
             bindCreateProfil(cardClassique.querySelector('[data-set-profil]'), app)
         }
-        const cardNewProche = container.appendChild(
+        container.appendChild(
             createElementFromHTML(`
                 <li class="profil-empty">
                     <a class="button button-full-width button-outline js-profil-new"
-                        data-intention="proche"
                         href="#nom"
                         >Faire pour un·e proche</a>
                 </li>
             `)
         )
-        bindNewProfil(cardNewProche.querySelector('.js-profil-new'))
         renderProfilCards(container, noms, app)
     })
 }
@@ -77,25 +74,10 @@ function bindChangeProfil(element, app) {
 function _bindFunc(element, app, func) {
     element.addEventListener('click', function (event) {
         event.preventDefault()
-        addIntentSearchParam(element)
         func(element.dataset.setProfil).then(() => {
             app.router.navigate(event.target.getAttribute('href'))
         })
     })
-}
-
-function bindNewProfil(element) {
-    element.addEventListener('click', () => {
-        addIntentSearchParam(element)
-    })
-}
-
-function addIntentSearchParam(element) {
-    const url = new URL(window.location)
-    if (element.dataset.intention) {
-        url.searchParams.set('intention', element.dataset.intention)
-    }
-    window.history.pushState('', '', url.href)
 }
 
 function bindSuppression(element, app) {
