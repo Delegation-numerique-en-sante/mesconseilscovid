@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-03-24
+
+* ajout du choix cas contact explicite via l’Assurance Maladie
+* ajout d’un lien pour la demande d’arrêt de travail
+* rend le bouton de géolocalisation plus explicite
+
 ## 2021-03-22
 
 * mise à jour des informations sur les mesures renforcées
