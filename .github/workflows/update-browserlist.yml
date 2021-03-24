@@ -2,7 +2,7 @@ name: Mettre à jour la base de données de browserslist
 
 on:
   schedule:
-    - cron: '* 55 * * *'
+    - cron: '58 * * * *'
 
 jobs:
   update-browserslist:
