@@ -33,13 +33,7 @@ export async function remplirQuestionnaire(page, choix) {
     if (typeof choix.nom !== 'undefined') {
         await remplirNom(page, choix.nom)
     }
-    await remplirVaccins(
-        page,
-        choix.vaccins,
-        choix.vaccinsDate,
-        choix.vaccinsDate2,
-        choix.vaccinsType
-    )
+    await remplirVaccins(page, choix.vaccins, choix.vaccinsDate, choix.vaccinsDate2)
     await remplirSymptomes(
         page,
         choix.symptomesActuels,
@@ -164,7 +158,7 @@ async function remplirDepistage(page, depistage, date, type, resultat) {
     ])
 }
 
-async function remplirVaccins(page, vaccins, date, date2, type) {
+async function remplirVaccins(page, vaccins, date, date2) {
     let text
 
     if (vaccins) {
@@ -182,11 +176,6 @@ async function remplirVaccins(page, vaccins, date, date2, type) {
             '#page.ready #vaccins_2e_dose_date',
             date2.toISOString().substring(0, 10)
         )
-
-        let type_label = await page.waitForSelector(
-            `#page.ready label[for="vaccins_type_${type}"]`
-        )
-        await type_label.click()
 
         text = '"Continuer"'
     } else {
