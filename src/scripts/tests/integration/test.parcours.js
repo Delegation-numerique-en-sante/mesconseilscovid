@@ -18,7 +18,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/?intention=moi#symptomes' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -68,7 +68,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/*#introduction' }),
+                page.waitForNavigation({ url: '**/#introduction' }),
             ])
         }
 
@@ -103,7 +103,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/*#symptomes' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -152,7 +152,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/*#symptomes' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -189,7 +189,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/*#symptomes' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -228,7 +228,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/*#symptomes' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -277,7 +277,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/*#symptomes' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -327,7 +327,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/*#symptomes' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -379,7 +379,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/*#symptomes' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -429,7 +429,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/*#symptomes' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 

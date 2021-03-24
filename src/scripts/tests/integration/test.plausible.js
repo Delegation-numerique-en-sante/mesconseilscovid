@@ -49,7 +49,7 @@ describe('Plausible', function () {
 
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/*#symptomes' }),
+            page.waitForNavigation({ url: '**/#symptomes' }),
         ])
 
         await remplirQuestionnaire(page, {
@@ -105,7 +105,7 @@ describe('Plausible', function () {
             '#page.ready .js-profil-new >> text="Faire pour un·e proche"'
         )
 
-        await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/*#nom' })])
+        await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
 
         await remplirQuestionnaire(page, {
             nom: 'Mamie',
@@ -161,7 +161,7 @@ describe('Plausible', function () {
         let bouton = await page.waitForSelector('#page.ready >> text="Faire pour moi"')
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/*#symptomes' }),
+            page.waitForNavigation({ url: '**/#symptomes' }),
         ])
         await remplirQuestionnaire(page, {
             symptomesActuels: [],
@@ -215,7 +215,7 @@ describe('Plausible', function () {
         let bouton = await page.waitForSelector(
             '#page.ready .js-profil-new >> text="Faire pour un·e proche"'
         )
-        await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/*#nom' })])
+        await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
         await remplirQuestionnaire(page, {
             nom: 'Papy',
             symptomesActuels: [],

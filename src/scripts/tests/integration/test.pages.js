@@ -28,7 +28,7 @@ describe('Pages', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/*#symptomes' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -74,7 +74,7 @@ describe('Pages', function () {
             let bouton = await page.waitForSelector('text="Conditions d’utilisation"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/*#conditionsutilisation' }),
+                page.waitForNavigation({ url: '**/#conditionsutilisation' }),
             ])
         }
 
