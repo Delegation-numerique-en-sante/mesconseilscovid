@@ -772,18 +772,6 @@ Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal
 
 
 
-## [question_vaccins_astrazeneca_libellé.md](question_vaccins_astrazeneca_libellé.md)
-
-<!---->C’était un vaccin <b>AstraZeneca</b><sup>®</sup>.
-
-
-
-## [question_vaccins_comirnaty_libellé.md](question_vaccins_comirnaty_libellé.md)
-
-<!---->C’était un vaccin <b>Comirnaty</b><sup>®</sup> (Pfizer/BioNTech).
-
-
-
 ## [question_vaccins_date2_aide.md](question_vaccins_date2_aide.md)
 
 <!---->Deuxième dose (si je l’ai déjà reçue) :
@@ -816,12 +804,6 @@ Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal
 
 
 
-## [question_vaccins_moderna_libellé.md](question_vaccins_moderna_libellé.md)
-
-<!---->C’était un vaccin <b>Moderna</b><sup>®</sup>.
-
-
-
 ## [question_vaccins_titre.md](question_vaccins_titre.md)
 
 <!---->Mes vaccins Covid
@@ -829,11 +811,5 @@ Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal
 ---
 
 <!---->Ses vaccins Covid
-
-
-
-## [question_vaccins_type_libellé.md](question_vaccins_type_libellé.md)
-
-<!---->Le type de vaccin
 
 
