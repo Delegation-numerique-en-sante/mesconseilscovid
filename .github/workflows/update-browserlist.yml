@@ -2,7 +2,7 @@ name: Mettre à jour la base de données de browserslist
 
 on:
   schedule:
-    - cron: '45 * * * *'
+    - cron: '0 16 * * 1'
 
 jobs:
   update-browserslist:
@@ -23,7 +23,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          title: Met à jour la base de données de browserslist
-          commit-message: Met à jour la base de données de browserslist
+          title: "Tech: met à jour la base de données de browserslist"
+          commit-message: "Tech: met à jour la base de données de browserslist"
           branch: update-browserslist
           delete-branch: true
