@@ -704,7 +704,9 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 
 La vaccination est **gratuite** pour tous, et n’est **pas obligatoire**.
 
-La vaccination apprend à votre corps à reconnaître le virus et à le combattre. La protection est maximale 15 jours après l’administration de la seconde dose.
+La vaccination apprend à votre corps à reconnaître le virus et à le combattre. Les vaccins sont conçus pour éviter les symptômes et les formes graves de la maladie mais **ils n’empêchent pas la contamination**. La protection est maximale 15 jours après l’administration de la seconde dose.
+
+Les résultats des tests sur les vaccins ne permettent pas d’affirmer qu’une personne vaccinée ne peut plus transmettre le virus. Même vacciné, il faut continuer à respecter les gestes barrières (distanciation et port du masque) et les mesures de prévention (test, isolement) notamment pour protéger les personnes qui ne sont pas encore vaccinées. Après avoir été vacciné·e, **si vous avez des symptômes qui évoquent la Covid, il faut s’isoler et faire un test**.
 
 Si vous avez déjà eu la Covid, il est recommandé d’attendre au moins 3 mois avant de vous faire vacciner. La vaccination se fera alors par une dose unique.
 
