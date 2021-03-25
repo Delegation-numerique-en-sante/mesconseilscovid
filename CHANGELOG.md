@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-03-25
+
+* ajout de conseils généraux sur la vaccination
+
 ## 2021-03-24
 
 * ajout du choix cas contact explicite via l’Assurance Maladie
