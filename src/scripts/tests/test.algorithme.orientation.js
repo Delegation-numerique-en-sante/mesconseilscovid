@@ -850,6 +850,36 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-confinement',
             ])
         })
+        it('Dans l’Aube, c’est le confinement', function () {
+            var profil = new Profil('mes_infos', {
+                departement: '10',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+                'conseils-confinement',
+            ])
+        })
+        it('Dans la Nièvre, c’est le confinement', function () {
+            var profil = new Profil('mes_infos', {
+                departement: '58',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+                'conseils-confinement',
+            ])
+        })
+        it('Dans le Rhône, c’est le confinement', function () {
+            var profil = new Profil('mes_infos', {
+                departement: '69',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+                'conseils-confinement',
+            ])
+        })
         it('À département inconnu, c’est pas le confinement', function () {
             var profil = new Profil('mes_infos', {
                 departement: '00',
