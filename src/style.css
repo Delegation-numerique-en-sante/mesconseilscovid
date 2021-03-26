@@ -1190,6 +1190,7 @@ a[href*='youtube.com']::after {
 .conseils > details[open] > summary svg {
     transform: rotate(450deg);
 }
+.conseils > details > summary::marker,
 .conseils > details > summary::-webkit-details-marker {
     display: none;
 }
