@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-03-26
+
+* mesures renforcées dans 3 nouveaux départements
+
 ## 2021-03-25
 
 * ajout de conseils généraux sur la vaccination
