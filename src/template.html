@@ -109,59 +109,34 @@
     </form>
 </section>
 
-<section id="historique" hidden>
-    <form id="historique-form" class="block">
+<section id="vaccins" hidden>
+    <form id="vaccins-form" class="block">
         <fieldset>
-            <legend>{{ question_historique_titre|me_or_them }}</legend>
-
-            <div>
-                <input id="covid_checkbox" type="checkbox" name="covids_passes">
-                <label for="covid_checkbox">
-                    <span>{{ question_historique_covid_libellé|me_or_them }}</span>
-                </label>
-                <div class="secondary disabled required">
-                    <div id="covid-date-label" class="secondary-title">
-                        {{ question_historique_covid_date_libellé }}
-                    </div>
-                    <div class="row" aria-labelledby="covid-date-label">
-                        <label for="covid_1re_date">
-                        {{ question_historique_covid_date_aide }}
-                        </label>
-                        <input type="date" lang="fr" id="covid_1re_date" name="covid_1re_date" required>
-                    </div>
-                    <div class="row" aria-labelledby="covid-date2-label">
-                        <label for="covid_2e_date">
-                        {{ question_historique_covid_date2_aide }}
-                        </label>
-                        <input type="date" lang="fr" id="covid_2e_date" name="covid_2e_date">
-                    </div>
-                </div>
-            </div>
-
+            <legend>{{ question_vaccins_titre|me_or_them }}</legend>
             <div>
                 <input id="vaccins_checkbox" type="checkbox" name="vaccins">
                 <label for="vaccins_checkbox">
-                    <span>{{ question_historique_vaccins_libellé|me_or_them }}</span>
+                    <span>{{ question_vaccins_libellé|me_or_them }}</span>
                 </label>
-                <div class="secondary disabled required">
-                    <div id="vaccins-date-label" class="secondary-title">
-                        {{ question_historique_vaccins_date_libellé }}
-                    </div>
-                    <div class="row" aria-labelledby="vaccins-date-label">
-                        <label for="vaccins_1re_dose_date">
-                        {{ question_historique_vaccins_date_aide }}
-                        </label>
-                        <input type="date" lang="fr" id="vaccins_1re_dose_date" name="vaccins_1re_dose_date" required>
-                    </div>
-                    <div class="row" aria-labelledby="vaccins-date2-label">
-                        <label for="vaccins_2e_dose_date">
-                        {{ question_historique_vaccins_date2_aide|me_or_them }}
-                        </label>
-                        <input type="date" lang="fr" id="vaccins_2e_dose_date" name="vaccins_2e_dose_date">
-                    </div>
-                </div>
             </div>
 
+            <div class="secondary disabled required">
+                <div id="vaccins-date-label" class="secondary-title">
+                    {{ question_vaccins_date_libellé }}
+                </div>
+                <div class="row" aria-labelledby="vaccins-date-label">
+                    <label for="vaccins_1re_dose_date">
+                    {{ question_vaccins_date_aide }}
+                    </label>
+                    <input type="date" lang="fr" id="vaccins_1re_dose_date" name="vaccins_1re_dose_date" required>
+                </div>
+                <div class="row" aria-labelledby="vaccins-date2-label">
+                    <label for="vaccins_2e_dose_date">
+                    {{ question_vaccins_date2_aide|me_or_them }}
+                    </label>
+                    <input type="date" lang="fr" id="vaccins_2e_dose_date" name="vaccins_2e_dose_date">
+                </div>
+            </div>
         </fieldset>
         <div class="form-controls">
             <div class="button-with-progress">

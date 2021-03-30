@@ -33,15 +33,7 @@ export async function remplirQuestionnaire(page, choix) {
     if (typeof choix.nom !== 'undefined') {
         await remplirNom(page, choix.nom)
     }
-    await remplirHistorique(
-        page,
-        choix.covidsPasses,
-        choix.covidDate,
-        choix.covidDate2,
-        choix.vaccins,
-        choix.vaccinsDate,
-        choix.vaccinsDate2
-    )
+    await remplirVaccins(page, choix.vaccins, choix.vaccinsDate, choix.vaccinsDate2)
     await remplirSymptomes(
         page,
         choix.symptomesActuels,
@@ -77,10 +69,7 @@ export async function remplirQuestionnaire(page, choix) {
 async function remplirNom(page, nom) {
     await page.fill('#page.ready #name', nom)
     let bouton = await page.waitForSelector('#page.ready >> text="Continuer"')
-    await Promise.all([
-        bouton.click(),
-        page.waitForNavigation({ url: '**/#historique' }),
-    ])
+    await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#vaccins' })])
 }
 
 async function remplirSituation(page, departement, enfants, activitePro) {
@@ -169,35 +158,10 @@ async function remplirDepistage(page, depistage, date, type, resultat) {
     ])
 }
 
-async function remplirHistorique(
-    page,
-    covidsPasses,
-    covidDate,
-    covidDate2,
-    vaccins,
-    vaccinsDate,
-    vaccinsDate2
-) {
+async function remplirVaccins(page, vaccins, date, date2) {
     let text
 
-    if (covidsPasses) {
-        let checkbox_label = await page.waitForSelector(
-            '#page label[for="covid_checkbox"]'
-        )
-        await checkbox_label.click()
-
-        await page.fill(
-            '#page #covid_1re_date',
-            covidDate.toISOString().substring(0, 10)
-        )
-
-        await page.fill(
-            '#page #covid_2e_date',
-            covidDate2.toISOString().substring(0, 10)
-        )
-
-        text = '"Continuer"'
-    } else if (vaccins) {
+    if (vaccins) {
         let checkbox_label = await page.waitForSelector(
             '#page.ready label[for="vaccins_checkbox"]'
         )
@@ -205,17 +169,17 @@ async function remplirHistorique(
 
         await page.fill(
             '#page.ready #vaccins_1re_dose_date',
-            vaccinsDate.toISOString().substring(0, 10)
+            date.toISOString().substring(0, 10)
         )
 
         await page.fill(
             '#page.ready #vaccins_2e_dose_date',
-            vaccinsDate2.toISOString().substring(0, 10)
+            date2.toISOString().substring(0, 10)
         )
 
         text = '"Continuer"'
     } else {
-        text = '/.* pas d’historique Covid/'
+        text = '/.* pas été vacciné·e/'
     }
 
     let bouton = await page.waitForSelector(`#page.ready >> text=${text}`)
