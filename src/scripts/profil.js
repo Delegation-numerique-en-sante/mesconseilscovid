@@ -653,6 +653,23 @@ export default class Profil {
         )
     }
 
+    _hasCovidPlus(months) {
+        if (this.covid_passee) {
+            const difference = differenceEnJours(this.covid_passee_date, new Date())
+            return difference > months * 30 // jours (approximation).
+        } else {
+            return false
+        }
+    }
+
+    hasCovidPlus3Mois() {
+        return this._hasCovidPlus(3)
+    }
+
+    hasCovidPlus6Mois() {
+        return this._hasCovidPlus(6)
+    }
+
     hasSymptomesActuelsReconnus() {
         return this.symptomes_actuels && !this.symptomes_actuels_autre
     }

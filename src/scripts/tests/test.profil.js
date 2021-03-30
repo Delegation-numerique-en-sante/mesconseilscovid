@@ -1,6 +1,7 @@
 import { assert } from 'chai'
 
 import Profil from '../profil'
+import { joursAvant } from '../utils'
 
 describe('Profil', function () {
     it('Le nom du profil n’est pas échappé', function () {
@@ -658,5 +659,36 @@ describe('Profil', function () {
             assert.isFalse(profil.foyer_enfants)
             assert.isFalse(profil.foyer_autres_personnes)
         })
+    })
+
+    it('On sait identifier les profils qui ont une Covid de plus de 6 mois', function () {
+        const profil = new Profil('mes_infos')
+        const date = joursAvant(200)
+        profil.covid_passee = true
+        profil.covid_passee_date = date
+        assert.strictEqual(profil.hasCovidPlus6Mois(), true)
+        assert.strictEqual(profil.hasCovidPlus3Mois(), true)
+    })
+    it('On sait identifier les profils qui ont une Covid de plus de 3 mois', function () {
+        const profil = new Profil('mes_infos')
+        const date = joursAvant(100)
+        profil.covid_passee = true
+        profil.covid_passee_date = date
+        assert.strictEqual(profil.hasCovidPlus6Mois(), false)
+        assert.strictEqual(profil.hasCovidPlus3Mois(), true)
+    })
+    it('On sait identifier les profils qui ont une Covid de moins de 3 mois', function () {
+        const profil = new Profil('mes_infos')
+        const date = joursAvant(80)
+        profil.covid_passee = true
+        profil.covid_passee_date = date
+        assert.strictEqual(profil.hasCovidPlus6Mois(), false)
+        assert.strictEqual(profil.hasCovidPlus3Mois(), false)
+    })
+    it('On sait identifier les profils qui n’ont pas eu la Covid', function () {
+        const profil = new Profil('mes_infos')
+        profil.covid_passee = false
+        assert.strictEqual(profil.hasCovidPlus6Mois(), false)
+        assert.strictEqual(profil.hasCovidPlus3Mois(), false)
     })
 })
