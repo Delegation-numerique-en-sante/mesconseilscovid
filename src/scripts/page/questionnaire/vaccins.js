@@ -61,9 +61,13 @@ export default function vaccins(form, app) {
             app.profil.vaccins_1re_dose_date = new Date(
                 form.elements['vaccins_1re_dose_date'].value
             )
-            app.profil.vaccins_2e_dose_date = new Date(
-                form.elements['vaccins_2e_dose_date'].value
-            )
+            if (form.elements['vaccins_2e_dose_date'].value) {
+                app.profil.vaccins_2e_dose_date = new Date(
+                    form.elements['vaccins_2e_dose_date'].value
+                )
+            } else {
+                app.profil.vaccins_2e_dose_date = undefined
+            }
         } else {
             app.profil.vaccins_1re_dose_date = undefined
             app.profil.vaccins_2e_dose_date = undefined

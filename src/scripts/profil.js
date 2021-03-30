@@ -60,6 +60,16 @@ export default class Profil {
             typeof date2 !== 'undefined' ? date2.toJSON() : undefined
     }
 
+    get covid_passee_date() {
+        if (typeof this._covid_passee_date === 'undefined') return undefined
+        return new Date(this._covid_passee_date)
+    }
+
+    set covid_passee_date(date) {
+        this._covid_passee_date =
+            typeof date !== 'undefined' ? date.toJSON() : undefined
+    }
+
     get deconfinement_date() {
         if (typeof this._deconfinement_date === 'undefined') return undefined
         return new Date(this._deconfinement_date)
@@ -161,6 +171,9 @@ export default class Profil {
         this._vaccins_1re_dose_date = undefined
         this._vaccins_2e_dose_date = undefined
 
+        this.covid_passee = undefined
+        this._covid_passee_date = undefined
+
         this.suivi_active = false
         this.resetSuivi()
 
@@ -241,6 +254,9 @@ export default class Profil {
         this.vaccins = data['vaccins']
         this._vaccins_1re_dose_date = data['_vaccins_1re_dose_date']
         this._vaccins_2e_dose_date = data['_vaccins_2e_dose_date']
+
+        this.covid_passee = data['covid_passee']
+        this._covid_passee_date = data['_covid_passee_date']
 
         this._suivi_start_date = data['_suivi_start_date']
         this._symptomes_start_date = data['_symptomes_start_date']
@@ -348,6 +364,7 @@ export default class Profil {
             depistage_resultat: '',
             depistage_variante: 'aucune',
             vaccins: false,
+            covid_passee: false,
             departement: '34',
             activite_pro: false,
             activite_pro_sante: false,
@@ -477,6 +494,8 @@ export default class Profil {
             vaccins: this.vaccins,
             _vaccins_1re_dose_date: this._vaccins_1re_dose_date,
             _vaccins_2e_dose_date: this._vaccins_2e_dose_date,
+            covid_passee: this.covid_passee,
+            _covid_passee_date: this._covid_passee_date,
             suivi_active: this.suivi_active,
             _suivi_start_date: this._suivi_start_date,
             _symptomes_start_date: this._symptomes_start_date,
@@ -515,7 +534,8 @@ export default class Profil {
             typeof this.symptomes_passes === 'undefined' &&
             typeof this.contact_a_risque === 'undefined' &&
             typeof this.depistage == 'undefined' &&
-            typeof this.vaccins == 'undefined'
+            typeof this.vaccins == 'undefined' &&
+            typeof this.covid_passee == 'undefined'
         )
     }
 
@@ -610,6 +630,16 @@ export default class Profil {
         return true
     }
 
+    isHistoriqueComplete() {
+        if (typeof this.covid_passee === 'undefined') {
+            return false
+        }
+        if (this.covid_passee === true) {
+            return typeof this._covid_passee_date !== 'undefined'
+        }
+        return true
+    }
+
     isComplete() {
         return (
             this.isSituationComplete() &&
@@ -618,6 +648,7 @@ export default class Profil {
             this.isContactARisqueComplete() &&
             this.isDepistageComplete() &&
             this.isVaccinsComplete() &&
+            this.isHistoriqueComplete() &&
             this._isDebutSymptomesComplete()
         )
     }

@@ -352,6 +352,38 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 
 
+## [question_historique_covid_passee_date_aide.md](question_historique_covid_passee_date_aide.md)
+
+<!---->Cette date peut être approximative
+
+
+
+## [question_historique_covid_passee_date_libellé.md](question_historique_covid_passee_date_libellé.md)
+
+<!---->La date de la dernière Covid
+
+
+
+## [question_historique_covid_passee_libellé.md](question_historique_covid_passee_libellé.md)
+
+<!---->J’ai déjà eu la <b>Covid</b>
+
+---
+
+<!---->Cette personne a déjà eu la <b>Covid</b>
+
+
+
+## [question_historique_titre.md](question_historique_titre.md)
+
+<!---->Mon expérience avec la Covid
+
+---
+
+<!---->Son expérience avec la Covid
+
+
+
 ## [question_nom_aide.md](question_nom_aide.md)
 
 Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proches pour lesquels vous remplissez le questionnaire.
