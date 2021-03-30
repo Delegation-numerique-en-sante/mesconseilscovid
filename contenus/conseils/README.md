@@ -712,7 +712,7 @@ Si vous avez déjà eu la Covid, il est recommandé d’attendre au moins 3 mois
 
 Les vaccins Comirnaty<sup>®</sup> (Pfizer/BioNTech) et Moderna<sup>®</sup> ne sont pas recommandés chez des personnes ayant présenté des manifestations allergiques graves, telles que des réactions anaphylactiques.
 
-La vaccination chez les **femmes enceintes** est à évaluer au cas par cas. Il n’y a pas d’effet attendu chez le nourrisson et l’enfant allaités par une femme vaccinée.
+La vaccination chez les **femmes enceintes** est à évaluer au cas par cas. Il n’y a pas d’effet attendu chez le nourrisson et l’enfant allaités par une femme vaccinée. Les vaccins à ARNm Comirnaty<sup>®</sup> (Pfizer/BioNTech) et Moderna<sup>®</sup> sont à privilégier pour les femmes enceintes.
 
 Les **effets secondaires** les plus fréquents des vaccins contre la Covid sont :
 
