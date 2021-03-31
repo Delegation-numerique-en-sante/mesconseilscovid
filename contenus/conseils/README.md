@@ -100,7 +100,7 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 
 Il est possible de vous déplacer dans un rayon de **10 km** autour de votre domicile entre 6 h et 19 h, muni d’un simple **justificatif de domicile**.
 
-Pour tout déplacement pendant le couvre-feu, ou au delà de 10 km, une [attestation dérogatoire](https://media.interieur.gouv.fr/attestation-deplacement-derogatoire-covid-19/) et la justification du motif du déplacement sont obligatoires.
+Pour tout déplacement pendant le couvre-feu, ou au-delà de 10 km, ou dans un autre département, une [attestation dérogatoire](https://media.interieur.gouv.fr/attestation-deplacement-derogatoire-covid-19/) et la justification du motif du déplacement sont obligatoires.
 
 La pratique de sports et d’activités **en extérieur** est autorisée sans limite de durée, en respectant les horaires du couvre-feu et en évitant les rassemblements (6 personnes maximum).
 
