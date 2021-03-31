@@ -777,6 +777,21 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-activite-pro-infos',
             ])
         })
+
+        it('Une activité pro avec alerte TAC affiche infos téléprocédure arrêt de travail', function () {
+            var profil = new Profil('mes_infos', {
+                activite_pro: true,
+                contact_a_risque_stop_covid: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.activiteProBlockNamesToDisplay(), [
+                'conseils-activite',
+                'reponse-activite-pro',
+                'conseils-activite-pro-arret-de-travail-tac',
+                'conseils-activite-pro',
+                'conseils-activite-pro-infos',
+            ])
+        })
     })
 
     describe('Bloc vie quotidienne', function () {
