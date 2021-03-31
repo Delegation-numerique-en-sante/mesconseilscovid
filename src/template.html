@@ -119,24 +119,6 @@
                     <span>{{ question_vaccins_libellé|me_or_them }}</span>
                 </label>
             </div>
-
-            <div class="secondary disabled required">
-                <div id="vaccins-date-label" class="secondary-title">
-                    {{ question_vaccins_date_libellé }}
-                </div>
-                <div class="row" aria-labelledby="vaccins-date-label">
-                    <label for="vaccins_1re_dose_date">
-                    {{ question_vaccins_date_aide }}
-                    </label>
-                    <input type="date" lang="fr" id="vaccins_1re_dose_date" name="vaccins_1re_dose_date" required>
-                </div>
-                <div class="row" aria-labelledby="vaccins-date2-label">
-                    <label for="vaccins_2e_dose_date">
-                    {{ question_vaccins_date2_aide|me_or_them }}
-                    </label>
-                    <input type="date" lang="fr" id="vaccins_2e_dose_date" name="vaccins_2e_dose_date">
-                </div>
-            </div>
         </fieldset>
         <div class="form-controls">
             <div class="button-with-progress">
@@ -1067,7 +1049,12 @@
                         <div id="conseils-vaccins-demande-medecin" hidden>
                             {{ conseils_vaccins_demande_medecin }}
                         </div>
-                        {{ conseils_vaccins }}
+                        <div id="conseils-vaccins-pas-encore-vaccine" hidden>
+                            {{ conseils_vaccins_pas_encore_vaccine }}
+                        </div>
+                        <div id="conseils-vaccins-deja-vaccine" hidden>
+                            {{ conseils_vaccins_deja_vaccine }}
+                        </div>
                     </details>
                 </div>
 

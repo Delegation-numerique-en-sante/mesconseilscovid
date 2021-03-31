@@ -1,5 +1,5 @@
-<!---->Mes vaccins Covid
+<!---->Ma vaccination
 
 ---
 
-<!---->Ses vaccins Covid
+<!---->Sa vaccination

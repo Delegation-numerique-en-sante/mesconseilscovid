@@ -282,7 +282,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomes' }),
+                page.waitForNavigation({ url: '**/#vaccins' }),
             ])
         }
 
@@ -332,7 +332,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#symptomes' }),
+                page.waitForNavigation({ url: '**/#vaccins' }),
             ])
         }
 
