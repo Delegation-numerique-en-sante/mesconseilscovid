@@ -421,7 +421,7 @@ Nous vous conseillons de :
 
 ## [conseils_personnels_contact_à_risque_meme_lieu_de_vie_sans_depistage.md](conseils_personnels_contact_à_risque_meme_lieu_de_vie_sans_depistage.md)
 
-Nous vous conseillons de :
+Même si vous avez été vacciné‚ nous vous conseillons de :
 
 1. Vous maintenir **en isolement**.
 2. Faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
@@ -437,7 +437,7 @@ Nous vous conseillons de :
 
 ## [conseils_personnels_contact_à_risque_sans_test.md](conseils_personnels_contact_à_risque_sans_test.md)
 
-Nous vous conseillons de :
+Même si vous avez été vacciné‚ nous vous conseillons de :
 
 1. Vous maintenir **en isolement**.
 2. Faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
@@ -538,7 +538,7 @@ Nous vous conseillons de **préciser au 15** :
 
 ## [conseils_personnels_symptômes_actuels_sans_depistage.md](conseils_personnels_symptômes_actuels_sans_depistage.md)
 
-Nous vous conseillons de :
+Même si vous avez été vacciné‚ nous vous conseillons de :
 
 1. **Contacter votre médecin généraliste**.
 2. **Réaliser un test** en consultant [la carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html) (vous serez prioritaire). Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test antigénique rapide ou un test en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test en laboratoire est conseillé.

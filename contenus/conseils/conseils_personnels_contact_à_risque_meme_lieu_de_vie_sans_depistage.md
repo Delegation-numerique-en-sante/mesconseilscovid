@@ -1,4 +1,4 @@
-Nous vous conseillons de :
+Même si vous avez été vacciné‚ nous vous conseillons de :
 
 1. Vous maintenir **en isolement**.
 2. Faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
