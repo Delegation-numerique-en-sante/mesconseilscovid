@@ -30,6 +30,11 @@
 Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir **vous isoler** en attendant le résultat du test.
 
 
+## [conseils_activité_pro_arrêt_de_travail_tac.md](conseils_activité_pro_arrêt_de_travail_tac.md)
+
+Si vous ne pouvez pas **télétravailler**, vous pouvez demander un arrêt de travail d’une durée maximale de 9 jours. Pour initier cette démarche, cliquez sur le lien fourni dans l’alerte dans votre application **TousAntiCovid**. (Pour plus de détails sur cette démarche, vous pouvez vous rendre sur le [site Ameli](https://declare.ameli.fr/tousanticovid/conditions)).
+
+
 ## [conseils_activité_pro_infos.md](conseils_activité_pro_infos.md)
 
 * [L’espace dédié pour les professionnels](https://www.gouvernement.fr/info-coronavirus/espace-pour-les-professionnels) sur le site du gouvernement.

@@ -502,6 +502,11 @@ export default class AlgorithmeOrientation {
                 blockNames.push('conseils-activite-pro-arret-de-travail-isolement')
             }
 
+            // Infos téléprocédure pour arrêt de travail via lien dans l’alerte TAC
+            if (this.profil.contact_a_risque_stop_covid) {
+                blockNames.push('conseils-activite-pro-arret-de-travail-tac')
+            }
+
             // Professionnel de santé ?
             if (this.profil.activite_pro_sante) {
                 blockNames.push('conseils-activite-pro-sante')
