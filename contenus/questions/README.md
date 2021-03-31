@@ -772,28 +772,6 @@ Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal
 
 
 
-## [question_vaccins_date2_aide.md](question_vaccins_date2_aide.md)
-
-<!---->Deuxième dose (si je l’ai déjà reçue) :
-
----
-
-<!---->Deuxième dose (si elle l’a déjà reçue) :
-
-
-
-## [question_vaccins_date_aide.md](question_vaccins_date_aide.md)
-
-<!---->Première dose :
-
-
-
-## [question_vaccins_date_libellé.md](question_vaccins_date_libellé.md)
-
-<!---->Les dates de la vaccination
-
-
-
 ## [question_vaccins_libellé.md](question_vaccins_libellé.md)
 
 <!---->J’ai été <b>vacciné·e</b> contre la Covid
@@ -806,10 +784,10 @@ Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal
 
 ## [question_vaccins_titre.md](question_vaccins_titre.md)
 
-<!---->Mes vaccins Covid
+<!---->Ma vaccination
 
 ---
 
-<!---->Ses vaccins Covid
+<!---->Sa vaccination
 
 

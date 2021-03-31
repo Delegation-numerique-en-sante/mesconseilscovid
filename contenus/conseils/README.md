@@ -706,7 +706,78 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 
 
 
-## [conseils_vaccins.md](conseils_vaccins.md)
+## [conseils_vaccins_50_ans_a_risque.md](conseils_vaccins_50_ans_a_risque.md)
+
+<div class="conseil">
+
+Vous avez plus de 50 ans, et vous êtes considéré·e comme une personne ayant plus de risques de développer une forme sévère de Covid : **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à prendre rendez-vous avec votre médecin traitant.
+
+</div>
+
+
+
+## [conseils_vaccins_75_ans.md](conseils_vaccins_75_ans.md)
+
+<div class="conseil">
+
+Vous avez plus de 75 ans, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" id="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
+
+Les plages de rendez-vous sont ouvertes au fur et à mesure par les centres de vaccination.
+
+Si vous n’arrivez à trouver un rendez-vous en ligne, vous pouvez appeler le centre de vaccination au numéro indiqué sur <a href="#conseils-vaccins" id="lien-vaccination">la liste des lieux de vaccination</a> et leur demander de vous inscrire sur **liste d’attente**. N’hésitez pas à vous rapprocher de votre mairie, certaines gérent également des listes d’attentes.
+
+</div>
+
+
+
+## [conseils_vaccins_activite_pro_sante.md](conseils_vaccins_activite_pro_sante.md)
+
+<div class="conseil">
+
+Tou·tes les professionnel·les de santé, **peuvent se faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" id="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
+
+</div>
+
+
+
+## [conseils_vaccins_deja_vaccine.md](conseils_vaccins_deja_vaccine.md)
+
+<span class="nouveau">nouveau</span> La vaccination apprend à votre corps à reconnaître le virus et à le combattre. Les vaccins sont conçus pour éviter les symptômes et les formes graves de la maladie mais **ils n’empêchent pas la contamination**. La protection est maximale 15 jours après l’administration de la seconde dose.
+
+Les résultats des tests sur les vaccins ne permettent pas d’affirmer qu’une personne vaccinée ne peut plus transmettre le virus. **Même vacciné·e**, il faut continuer à respecter les gestes barrières (distanciation et port du masque) et les mesures de prévention (test, isolement) notamment pour protéger les personnes qui ne sont pas encore vaccinées. Après avoir été vacciné·e, **si vous avez des symptômes qui évoquent la Covid, il faut vous isoler et faire un test**.
+
+Les **effets secondaires** les plus fréquents des vaccins contre la Covid sont :
+
+* une douleur au point d’injection,
+* des maux de tête,
+* de la fatigue,
+* des douleurs musculaires,
+* des malaises,
+* de la fièvre modérée et des frissons.
+
+Ces effets secondaires disparaissent le plus souvent au bout de 2 à 3 jours.
+
+L’Agence nationale de la sécurité du médicament suit toutes les semaines les effets secondaires déclarés. **Si vous ressentez des effets secondaires**, déclarez-les sur le [site dédié au signalement](https://signalement.social-sante.gouv.fr).
+
+Pour en savoir plus :
+
+* [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
+* Le site [vaccination-info-service](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/COVID-19) de Santé Publique France
+* Les [réponses à vos questions sur les vaccins COVID-19](https://sante.fr/vaccins-covid-19-comirnatyr-et-modernar-toutes-les-reponses-vos-questions)  Comirnaty® de Pfizer/BioNTech et Moderna®
+
+
+
+## [conseils_vaccins_demande_medecin.md](conseils_vaccins_demande_medecin.md)
+
+<div class="conseil">
+
+Vous avec un traitement de longue durée ou une maladie chronique. Nous vous invitons à consulter votre médecin pour vérifier si vous avez le droit de vous faire vacciner dès maintenant.
+
+</div>
+
+
+
+## [conseils_vaccins_pas_encore_vaccine.md](conseils_vaccins_pas_encore_vaccine.md)
 
 <span class="nouveau">nouveau</span> Le déploiement de la vaccination se fait en plusieurs phases :
 
@@ -750,50 +821,6 @@ Pour en savoir plus :
 * Le site [vaccination-info-service](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/COVID-19) de Santé Publique France
 * Les [réponses à vos questions sur les vaccins COVID-19](https://sante.fr/vaccins-covid-19-comirnatyr-et-modernar-toutes-les-reponses-vos-questions)  Comirnaty® de Pfizer/BioNTech et Moderna®
 * [Vaccination chez les femmes enceintes ou allaitantes : ce qu’il faut savoir](https://ansm.sante.fr/dossiers-thematiques/covid-19-vaccins/covid-19-vaccins-et-femmes-enceintes)
-
-
-
-## [conseils_vaccins_50_ans_a_risque.md](conseils_vaccins_50_ans_a_risque.md)
-
-<div class="conseil">
-
-Vous avez plus de 50 ans, et vous êtes considéré·e comme une personne ayant plus de risques de développer une forme sévère de Covid : **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à prendre rendez-vous avec votre médecin traitant.
-
-</div>
-
-
-
-## [conseils_vaccins_75_ans.md](conseils_vaccins_75_ans.md)
-
-<div class="conseil">
-
-Vous avez plus de 75 ans, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" id="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
-
-Les plages de rendez-vous sont ouvertes au fur et à mesure par les centres de vaccination.
-
-Si vous n’arrivez à trouver un rendez-vous en ligne, vous pouvez appeler le centre de vaccination au numéro indiqué sur <a href="#conseils-vaccins" id="lien-vaccination">la liste des lieux de vaccination</a> et leur demander de vous inscrire sur **liste d’attente**. N’hésitez pas à vous rapprocher de votre mairie, certaines gérent également des listes d’attentes.
-
-</div>
-
-
-
-## [conseils_vaccins_activite_pro_sante.md](conseils_vaccins_activite_pro_sante.md)
-
-<div class="conseil">
-
-Tou·tes les professionnel·les de santé, **peuvent se faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" id="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
-
-</div>
-
-
-
-## [conseils_vaccins_demande_medecin.md](conseils_vaccins_demande_medecin.md)
-
-<div class="conseil">
-
-Vous avec un traitement de longue durée ou une maladie chronique. Nous vous invitons à consulter votre médecin pour vérifier si vous avez le droit de vous faire vacciner dès maintenant.
-
-</div>
 
 
 

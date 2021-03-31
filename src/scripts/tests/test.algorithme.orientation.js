@@ -418,10 +418,20 @@ describe('Blocs d’informations additionnels', function () {
     })
 
     describe('Bloc vaccins', function () {
-        it('Cas général (rien)', function () {
+        it('Cas général (pas encore vacciné)', function () {
             var profil = new Profil('mes_infos', {})
             var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [])
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-pas-encore-vaccine',
+            ])
+        })
+
+        it('Cas général (déjà vacciné)', function () {
+            var profil = new Profil('mes_infos', { vaccins: true })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-deja-vaccine',
+            ])
         })
 
         it('Cas activité pro santé', function () {
@@ -431,6 +441,7 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-activite-pro-sante',
             ])
         })
@@ -443,6 +454,7 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-demande-medecin',
             ])
         })
@@ -455,6 +467,7 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-50-ans-a-risque',
             ])
         })
@@ -467,6 +480,7 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-75-ans',
             ])
         })
@@ -477,6 +491,7 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-tres-haut-risque',
             ])
         })
@@ -487,6 +502,7 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-demande-medecin',
             ])
         })
