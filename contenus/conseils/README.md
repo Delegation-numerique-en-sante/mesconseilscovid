@@ -143,6 +143,17 @@ Un **couvre-feu** s’applique en Guadeloupe de 22 h à 6 h du matin.
 
 
 
+## [conseils_couvre_feu_972.md](conseils_couvre_feu_972.md)
+
+<div class="conseil conseil-jaune">
+
+Un **couvre-feu** s’applique en Martinique de 22 h à 5 h du matin. À partir du jeudi 1<sup>er</sup> avril, il sera avancé à 19h.
+
+</div>
+
+
+
+
 ## [conseils_couvre_feu_973.md](conseils_couvre_feu_973.md)
 
 <div class="conseil conseil-jaune">
