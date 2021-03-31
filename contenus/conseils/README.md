@@ -147,7 +147,7 @@ Un **couvre-feu** s’applique en Guadeloupe de 22 h à 6 h du matin.
 
 <div class="conseil conseil-jaune">
 
-Un **couvre-feu** s’applique en Martinique de 22 h à 5 h du matin. À partir du jeudi 1<sup>er</sup> avril, il sera avancé à 19h.
+Un **couvre-feu** s’applique en Martinique de 22 h à 5 h du matin. À partir du jeudi 1<sup>er</sup> avril, il sera avancé à 19 h.
 
 </div>
 
@@ -820,5 +820,4 @@ Pour vos **déplacements** :
   * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Sur mes déplacements et mes voyages »).
 
 Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919">39 19</a> (appel gratuit, de 9 h à 19 h du lundi au samedi) ou le <a href="tel:17">17</a> en cas d’urgence.
-
 
