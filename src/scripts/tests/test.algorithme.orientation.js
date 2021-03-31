@@ -820,6 +820,16 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-couvre-feu-971',
             ])
         })
+        it('En Martinique, c’est un couvre-feu adapté', function () {
+            var profil = new Profil('mes_infos', {
+                departement: '972',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+                'conseils-couvre-feu-972',
+            ])
+        })
         it('En Guyane, c’est un couvre-feu adapté', function () {
             var profil = new Profil('mes_infos', {
                 departement: '973',

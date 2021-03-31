@@ -474,6 +474,8 @@ export default class AlgorithmeOrientation {
             blockNames.push('conseils-confinement')
         } else if (this.profil.departement === '971') {
             blockNames.push('conseils-couvre-feu-971')
+        } else if (this.profil.departement === '972') {
+            blockNames.push('conseils-couvre-feu-972')
         } else if (this.profil.departement === '973') {
             blockNames.push('conseils-couvre-feu-973')
         } else if (this.profil.departement === '974') {
