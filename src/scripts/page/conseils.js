@@ -123,7 +123,7 @@ export function showRelevantBlocks(element, profil, algoOrientation) {
     blockNames = blockNames.concat(algoOrientation.depistageBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.vaccinBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.gestesBarriereBlockNamesToDisplay())
-    blockNames = blockNames.concat(algoOrientation.educationBlockNamesToDisplay())
+    blockNames = blockNames.concat(algoOrientation.scolariteBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.vieQuotidienneBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.activiteProBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.grossesseBlockNamesToDisplay())
