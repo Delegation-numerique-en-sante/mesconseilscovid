@@ -675,6 +675,8 @@ Une personne ayant eu la Covid **n’est immunisée que pour quelques semaines**
 
 Par ailleurs, un **dispositif d’accueil des enfants des personnels prioritaires** sera organisé dès la semaine du 5 avril en lien avec l’Éducation nationale et les collectivités locales.
 
+Le droit au dispositif de **chômage partiel** pour les parents dans l’obligation de rester à domicile pour garder leurs enfants est réactivé.
+
 
 
 ## [conseils_tests.md](conseils_tests.md)
