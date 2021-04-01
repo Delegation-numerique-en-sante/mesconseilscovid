@@ -473,6 +473,11 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
+    educationBlockNamesToDisplay() {
+        const blockNames = ['conseils-education']
+        return blockNames
+    }
+
     vieQuotidienneBlockNamesToDisplay() {
         const blockNames = ['conseils-vie-quotidienne']
         if (confinement[this.profil.departement]) {
