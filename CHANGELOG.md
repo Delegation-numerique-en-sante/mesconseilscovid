@@ -1,5 +1,14 @@
 # Changelog
 
+## 2021-04-01
+
+* ajout de conseils généraux sur les études et la scolarité
+* ajout d’une question sur la vaccination
+* mise à jour du calendrier de vaccination
+* ajout des règles particulières du couvre-feu en Martinique
+* ajout des infos sur la téléprocédure d’arrêt de travail via TousAntiCovid
+* mise à jour des recommandations vaccinales pour les femmes enceintes
+
 ## 2021-03-26
 
 * mesures renforcées dans 3 nouveaux départements
