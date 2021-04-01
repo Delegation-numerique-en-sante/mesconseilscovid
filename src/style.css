@@ -355,6 +355,7 @@ main footer .legals {
     background-size: 40%;
 }
 
+#conseils-education header,
 #conseils-vie-quotidienne header,
 #conseils-activite header,
 #conseils-tests header,
@@ -388,6 +389,7 @@ main footer .legals {
         background-size: 30%;
     }
 
+    #conseils-education header,
     #conseils-vie-quotidienne header,
     #conseils-activite header,
     #conseils-tests header,
@@ -454,6 +456,7 @@ main footer .legals {
 #conseils-pediatrie-general header {
     background-image: url('illustrations/pediatriegeneral.svg');
 }
+#conseils-education header,
 #conseils-pediatrie-ecole header {
     background-image: url('illustrations/pediatrieecole.svg');
 }

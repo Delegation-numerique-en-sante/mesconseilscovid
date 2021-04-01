@@ -794,6 +794,16 @@ describe('Blocs d’informations additionnels', function () {
         })
     })
 
+    describe('Bloc éducation', function () {
+        it('Les conseils sont affichés par défaut', function () {
+            var profil = new Profil('mes_infos', {})
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.educationBlockNamesToDisplay(), [
+                'conseils-education',
+            ])
+        })
+    })
+
     describe('Bloc vie quotidienne', function () {
         it('Le couvre-feu à 19h est affiché par défaut', function () {
             var profil = new Profil('mes_infos', {
