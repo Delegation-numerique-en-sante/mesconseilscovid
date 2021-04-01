@@ -6,7 +6,7 @@
 
 **Concernant les écoles**, le calendrier des classes est adapté pour préserver l’apprentissage :
 
-* semaine du 5 avril : semaine de cours à la maison, pour tous les écoliers de la maternelle au lycée ;
+* semaine du 5 avril : semaine de cours à la maison, pour tous les élèves de la maternelle au lycée ;
 * semaine du 12 avril : début des vacances de printemps pour 2 semaines, dans toute la France, quelle que soit la zone académique ;
 * semaine du 26 avril : rentrée scolaire, avec retour en présentiel pour les maternelles/primaires et cours à distance pour les collèges/lycées ;
 * semaine du 3 mai : retour en classe pour les collèges/lycées avec des jauges de présence adaptées.
@@ -15,4 +15,4 @@
 
 Par ailleurs, un **dispositif d’accueil des enfants des personnels prioritaires** sera organisé dès la semaine du 5 avril en lien avec l’Éducation nationale et les collectivités locales.
 
-Le droit au dispositif de **chômage partiel** pour les parents dans l’obligation de rester à domicile pour garder leurs enfants est réactivé.
+Le **chômage partiel** peut être réactivé pour les parents dans l’obligation de rester à domicile pour garder leurs enfants.
