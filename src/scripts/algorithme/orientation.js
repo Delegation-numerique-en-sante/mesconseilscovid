@@ -468,8 +468,8 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
-    educationBlockNamesToDisplay() {
-        const blockNames = ['conseils-education']
+    scolariteBlockNamesToDisplay() {
+        const blockNames = ['conseils-scolarite']
         return blockNames
     }
 
