@@ -673,6 +673,8 @@ Une personne ayant eu la Covid **n’est immunisée que pour quelques semaines**
 
 **Concernant les universités**, elles continuent de fonctionner selon les protocoles en vigueur, soit la possibilité pour chaque étudiant de se rendre à l’université 1 jour par semaine.
 
+Par ailleurs, un **dispositif d’accueil des enfants des personnels prioritaires** sera organisé dès la semaine du 5 avril en lien avec l’Éducation nationale et les collectivités locales.
+
 
 
 ## [conseils_tests.md](conseils_tests.md)
