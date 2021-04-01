@@ -12,3 +12,5 @@
 * semaine du 3 mai : retour en classe pour les collèges/lycées avec des jauges de présence adaptées.
 
 **Concernant les universités**, elles continuent de fonctionner selon les protocoles en vigueur, soit la possibilité pour chaque étudiant de se rendre à l’université 1 jour par semaine.
+
+Par ailleurs, un **dispositif d’accueil des enfants des personnels prioritaires** sera organisé dès la semaine du 5 avril en lien avec l’Éducation nationale et les collectivités locales.
