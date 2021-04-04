@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-04-03
+
+* mesures renforcées pour tout la France métropolitaine
+
 ## 2021-04-01
 
 * ajout de conseils généraux sur les études et la scolarité
