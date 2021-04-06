@@ -139,19 +139,27 @@
                 <label for="covid_passee_checkbox">
                     <span>{{ question_historique_covid_passee_libellé|me_or_them }}</span>
                 </label>
+                <div class="secondary disabled required">
+                    <div id="covid-passee-label" class="secondary-title">
+                        {{ question_historique_covid_passee_date_libellé|me_or_them }}
+                    </div>
+                    <div role="radiogroup" aria-labelledby="covid-passee-label">
+                        <input id="covid_passee_date_6_mois" type="radio" required name="covid_passee_date" value="6">
+                        <label for="covid_passee_date_6_mois"><span>{{ question_historique_covid_passee_6_mois_libellé }}</span></label>
+                        <input id="covid_passee_date_5_mois" type="radio" required name="covid_passee_date" value="5">
+                        <label for="covid_passee_date_5_mois"><span>{{ question_historique_covid_passee_5_mois_libellé }}</span></label>
+                        <input id="covid_passee_date_4_mois" type="radio" required name="covid_passee_date" value="4">
+                        <label for="covid_passee_date_4_mois"><span>{{ question_historique_covid_passee_4_mois_libellé }}</span></label>
+                        <input id="covid_passee_date_3_mois" type="radio" required name="covid_passee_date" value="3">
+                        <label for="covid_passee_date_3_mois"><span>{{ question_historique_covid_passee_3_mois_libellé }}</span></label>
+                        <input id="covid_passee_date_2_mois" type="radio" required name="covid_passee_date" value="2">
+                        <label for="covid_passee_date_2_mois"><span>{{ question_historique_covid_passee_2_mois_libellé }}</span></label>
+                        <input id="covid_passee_date_1_mois" type="radio" required name="covid_passee_date" value="1">
+                        <label for="covid_passee_date_1_mois"><span>{{ question_historique_covid_passee_1_mois_libellé }}</span></label>
+                    </div>
+                </div>
             </div>
 
-            <div class="secondary disabled required">
-                <div id="covid_passee-date-label" class="secondary-title">
-                    {{ question_historique_covid_passee_date_libellé }}
-                </div>
-                <div class="row" aria-labelledby="covid_passee-date-label">
-                    <label for="covid_passee_date">
-                    {{ question_historique_covid_passee_date_aide }}
-                    </label>
-                    <input type="date" lang="fr" id="covid_passee_date" name="covid_passee_date" required>
-                </div>
-            </div>
         </fieldset>
         <div class="form-controls">
             <div class="button-with-progress">
