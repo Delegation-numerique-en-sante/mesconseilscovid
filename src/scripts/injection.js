@@ -5,6 +5,8 @@ import ctaiTelephones from './data/ctaiTelephones'
 import ctaiCourriels from './data/ctaiCourriels'
 import departements from './data/departements'
 
+import { slugify } from './utils'
+
 export function nomProfil(element, app) {
     if (!element) return
     element.textContent = app.profil.affichageNom()
@@ -52,14 +54,41 @@ export function CTAIContact(element, departement) {
     element.innerHTML = contactHTML.join(' ou ')
 }
 
-export function lienVaccination(element, departement) {
-    // Pas de distinction pour la Corse sur le site de sante.fr.
-    if (departement === '2A' || departement == '2B') {
-        departement = '20'
+export function lienDepistage(element, departement) {
+    if (departement === '00' /* Autre. */) {
+        element.setAttribute(
+            'href',
+            'https://www.sante.fr/cf/centres-depistage-covid.html'
+        )
+        return
     }
     element.setAttribute(
         'href',
-        `https://www.sante.fr/centres-vaccination-covid.html#dep-${departement}`
+        `https://www.sante.fr/cf/centres-depistage-covid/departement-${departement}.html`
+    )
+}
+
+export function lienVaccination(element, departement) {
+    if (departement === '00' /* Autre. */) {
+        element.setAttribute(
+            'href',
+            'https://www.sante.fr/cf/centres-vaccination-covid.html'
+        )
+        return
+    }
+    const departementName = departements[departement]
+    const departementSlug = slugify(departementName)
+    // Subtile façon de nommer les codes des départements de la Corse
+    // sur le site de sante.fr.
+    if (departement === '2A') {
+        departement = '20A'
+    }
+    if (departement == '2B') {
+        departement = '20B'
+    }
+    element.setAttribute(
+        'href',
+        `https://www.sante.fr/cf/centres-vaccination-covid/departement-${departement}-${departementSlug}.html`
     )
 }
 

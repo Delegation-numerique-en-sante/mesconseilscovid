@@ -82,12 +82,25 @@ describe('Injection', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML =
-            '<a href="#conseils-departement" id="lien-vaccination">Site</a>'
-        injection.lienVaccination(element.querySelector('#lien-vaccination'), '01')
+            '<a href="#conseils-departement" class="lien-vaccination">Site</a>'
+        injection.lienVaccination(element.querySelector('.lien-vaccination'), '01')
 
         assert.strictEqual(
             element.innerHTML,
-            '<a href="https://www.sante.fr/centres-vaccination-covid.html#dep-01" id="lien-vaccination">Site</a>'
+            '<a href="https://www.sante.fr/cf/centres-vaccination-covid/departement-01-ain.html" class="lien-vaccination">Site</a>'
+        )
+    })
+
+    it("Lien vaccination Côtes-d'Armor", function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML =
+            '<a href="#conseils-departement" class="lien-vaccination">Site</a>'
+        injection.lienVaccination(element.querySelector('.lien-vaccination'), '22')
+
+        assert.strictEqual(
+            element.innerHTML,
+            `<a href="https://www.sante.fr/cf/centres-vaccination-covid/departement-22-cotes-d'armor.html" class="lien-vaccination">Site</a>`
         )
     })
 
@@ -95,12 +108,64 @@ describe('Injection', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
         element.innerHTML =
-            '<a href="#conseils-departement" id="lien-vaccination">Site</a>'
-        injection.lienVaccination(element.querySelector('#lien-vaccination'), '2A')
+            '<a href="#conseils-departement" class="lien-vaccination">Site</a>'
+        injection.lienVaccination(element.querySelector('.lien-vaccination'), '2A')
 
         assert.strictEqual(
             element.innerHTML,
-            '<a href="https://www.sante.fr/centres-vaccination-covid.html#dep-20" id="lien-vaccination">Site</a>'
+            '<a href="https://www.sante.fr/cf/centres-vaccination-covid/departement-20A-corse-du-sud.html" class="lien-vaccination">Site</a>'
+        )
+    })
+
+    it('Lien vaccination Autre', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML =
+            '<a href="#conseils-departement" class="lien-vaccination">Site</a>'
+        injection.lienVaccination(element.querySelector('.lien-vaccination'), '00')
+
+        assert.strictEqual(
+            element.innerHTML,
+            '<a href="https://www.sante.fr/cf/centres-vaccination-covid.html" class="lien-vaccination">Site</a>'
+        )
+    })
+
+    it('Lien depistage', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML =
+            '<a href="#conseils-departement" class="lien-depistage">Site</a>'
+        injection.lienDepistage(element.querySelector('.lien-depistage'), '01')
+
+        assert.strictEqual(
+            element.innerHTML,
+            '<a href="https://www.sante.fr/cf/centres-depistage-covid/departement-01.html" class="lien-depistage">Site</a>'
+        )
+    })
+
+    it('Lien depistage Corse', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML =
+            '<a href="#conseils-departement" class="lien-depistage">Site</a>'
+        injection.lienDepistage(element.querySelector('.lien-depistage'), '2A')
+
+        assert.strictEqual(
+            element.innerHTML,
+            '<a href="https://www.sante.fr/cf/centres-depistage-covid/departement-2A.html" class="lien-depistage">Site</a>'
+        )
+    })
+
+    it('Lien depistage Autre', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML =
+            '<a href="#conseils-departement" class="lien-depistage">Site</a>'
+        injection.lienDepistage(element.querySelector('.lien-depistage'), '00')
+
+        assert.strictEqual(
+            element.innerHTML,
+            '<a href="https://www.sante.fr/cf/centres-depistage-covid.html" class="lien-depistage">Site</a>'
         )
     })
 
