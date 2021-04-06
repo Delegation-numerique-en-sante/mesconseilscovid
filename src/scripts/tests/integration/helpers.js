@@ -34,6 +34,7 @@ export async function remplirQuestionnaire(page, choix) {
         await remplirNom(page, choix.nom)
     }
     await remplirVaccins(page, choix.vaccins)
+    await remplirHistorique(page, choix.covid_passee, choix.covidPasseeDate)
     await remplirSymptomes(
         page,
         choix.symptomesActuels,
@@ -170,6 +171,32 @@ async function remplirVaccins(page, vaccins) {
         text = '"Continuer"'
     } else {
         text = '/.* pas été vacciné·e/'
+    }
+
+    let bouton = await page.waitForSelector(`#page.ready >> text=${text}`)
+    await Promise.all([
+        bouton.click(),
+        page.waitForNavigation({ url: `**/#historique` }),
+    ])
+}
+
+async function remplirHistorique(page, covid_passee, date) {
+    let text
+
+    if (covid_passee) {
+        let checkbox_label = await page.waitForSelector(
+            '#page.ready label[for="covid_passee_checkbox"]'
+        )
+        await checkbox_label.click()
+
+        await page.fill(
+            '#page.ready #covid_passee_date',
+            date.toISOString().substring(0, 10)
+        )
+
+        text = '"Continuer"'
+    } else {
+        text = '/.* jamais eu la Covid/'
     }
 
     let bouton = await page.waitForSelector(`#page.ready >> text=${text}`)

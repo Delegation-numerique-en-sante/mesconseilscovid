@@ -40,6 +40,16 @@ export default class Profil {
             typeof date !== 'undefined' ? date.toJSON() : undefined
     }
 
+    get covid_passee_date() {
+        if (typeof this._covid_passee_date === 'undefined') return undefined
+        return new Date(this._covid_passee_date)
+    }
+
+    set covid_passee_date(date) {
+        this._covid_passee_date =
+            typeof date !== 'undefined' ? date.toJSON() : undefined
+    }
+
     get deconfinement_date() {
         if (typeof this._deconfinement_date === 'undefined') return undefined
         return new Date(this._deconfinement_date)
@@ -139,6 +149,9 @@ export default class Profil {
 
         this.vaccins = undefined
 
+        this.covid_passee = undefined
+        this._covid_passee_date = undefined
+
         this.suivi_active = false
         this.resetSuivi()
 
@@ -217,6 +230,9 @@ export default class Profil {
         this._depistage_start_date = data['_depistage_start_date']
 
         this.vaccins = data['vaccins']
+
+        this.covid_passee = data['covid_passee']
+        this._covid_passee_date = data['_covid_passee_date']
 
         this._suivi_start_date = data['_suivi_start_date']
         this._symptomes_start_date = data['_symptomes_start_date']
@@ -324,6 +340,7 @@ export default class Profil {
             depistage_resultat: '',
             depistage_variante: 'aucune',
             vaccins: false,
+            covid_passee: false,
             departement: '34',
             activite_pro: false,
             activite_pro_sante: false,
@@ -451,6 +468,8 @@ export default class Profil {
             depistage_variante: this.depistage_variante,
             _depistage_start_date: this._depistage_start_date,
             vaccins: this.vaccins,
+            covid_passee: this.covid_passee,
+            _covid_passee_date: this._covid_passee_date,
             suivi_active: this.suivi_active,
             _suivi_start_date: this._suivi_start_date,
             _symptomes_start_date: this._symptomes_start_date,
@@ -489,7 +508,8 @@ export default class Profil {
             typeof this.symptomes_passes === 'undefined' &&
             typeof this.contact_a_risque === 'undefined' &&
             typeof this.depistage == 'undefined' &&
-            typeof this.vaccins == 'undefined'
+            typeof this.vaccins == 'undefined' &&
+            typeof this.covid_passee == 'undefined'
         )
     }
 
@@ -578,6 +598,16 @@ export default class Profil {
         return typeof this.vaccins !== 'undefined'
     }
 
+    isHistoriqueComplete() {
+        if (typeof this.covid_passee === 'undefined') {
+            return false
+        }
+        if (this.covid_passee === true) {
+            return typeof this._covid_passee_date !== 'undefined'
+        }
+        return true
+    }
+
     isComplete() {
         return (
             this.isSituationComplete() &&
@@ -586,8 +616,26 @@ export default class Profil {
             this.isContactARisqueComplete() &&
             this.isDepistageComplete() &&
             this.isVaccinsComplete() &&
+            this.isHistoriqueComplete() &&
             this._isDebutSymptomesComplete()
         )
+    }
+
+    _hasCovidPlus(months) {
+        if (this.covid_passee) {
+            const difference = differenceEnJours(this.covid_passee_date, new Date())
+            return difference > months * 30 // jours (approximation).
+        } else {
+            return false
+        }
+    }
+
+    hasCovidPlus3Mois() {
+        return this._hasCovidPlus(3)
+    }
+
+    hasCovidPlus6Mois() {
+        return this._hasCovidPlus(6)
     }
 
     hasSymptomesActuelsReconnus() {

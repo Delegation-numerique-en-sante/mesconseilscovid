@@ -130,6 +130,39 @@
     </form>
 </section>
 
+<section id="historique" hidden>
+    <form id="historique-form" class="block">
+        <fieldset>
+            <legend>{{ question_historique_titre|me_or_them }}</legend>
+            <div>
+                <input id="covid_passee_checkbox" type="checkbox" name="covid_passee">
+                <label for="covid_passee_checkbox">
+                    <span>{{ question_historique_covid_passee_libellé|me_or_them }}</span>
+                </label>
+            </div>
+
+            <div class="secondary disabled required">
+                <div id="covid_passee-date-label" class="secondary-title">
+                    {{ question_historique_covid_passee_date_libellé }}
+                </div>
+                <div class="row" aria-labelledby="covid_passee-date-label">
+                    <label for="covid_passee_date">
+                    {{ question_historique_covid_passee_date_aide }}
+                    </label>
+                    <input type="date" lang="fr" id="covid_passee_date" name="covid_passee_date" required>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <div class="button-with-progress">
+                <input type="submit" class="button" value="Continuer">
+                <span class="progress"></span>
+            </div>
+            <a href="#" class="back-button button-outline">Retour</a>
+        </div>
+    </form>
+</section>
+
 <section id="situation" hidden>
     <form id="situation-form" class="block">
         <fieldset>

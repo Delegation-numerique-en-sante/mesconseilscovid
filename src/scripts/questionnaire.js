@@ -17,6 +17,7 @@ export function beforeSuiviHistorique(profil, questionnaire) {
 // Représentation de la structure du questionnaire d’orientation.
 export const ORDRE = [
     'vaccins',
+    'historique',
     'symptomes',
     'contactarisque',
     'depistage',
@@ -32,11 +33,17 @@ export const TRANSITIONS = {
     vaccins: {
         previous: { introduction: () => true },
         next: {
-            symptomes: (profil) => profil.isVaccinsComplete(),
+            historique: (profil) => profil.isVaccinsComplete(),
+        },
+    },
+    historique: {
+        previous: { vaccins: () => true },
+        next: {
+            symptomes: (profil) => profil.isHistoriqueComplete(),
         },
     },
     symptomes: {
-        previous: { vaccins: () => true },
+        previous: { historique: () => true },
         next: {
             depistage: (profil) =>
                 profil.isSymptomesComplete() &&
