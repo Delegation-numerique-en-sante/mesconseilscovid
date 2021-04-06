@@ -34,7 +34,7 @@ export async function remplirQuestionnaire(page, choix) {
         await remplirNom(page, choix.nom)
     }
     await remplirVaccins(page, choix.vaccins)
-    await remplirHistorique(page, choix.covid_passee, choix.covidPasseeDate)
+    await remplirHistorique(page, choix.covid_passee, choix.nbMois)
     await remplirSymptomes(
         page,
         choix.symptomesActuels,
@@ -180,7 +180,7 @@ async function remplirVaccins(page, vaccins) {
     ])
 }
 
-async function remplirHistorique(page, covid_passee, date) {
+async function remplirHistorique(page, covid_passee, nbMois) {
     let text
 
     if (covid_passee) {
@@ -189,10 +189,10 @@ async function remplirHistorique(page, covid_passee, date) {
         )
         await checkbox_label.click()
 
-        await page.fill(
-            '#page.ready #covid_passee_date',
-            date.toISOString().substring(0, 10)
+        let label = await page.waitForSelector(
+            `#page.ready label[for="covid_passee_date_${nbMois}_mois"]`
         )
+        await label.click()
 
         text = '"Continuer"'
     } else {

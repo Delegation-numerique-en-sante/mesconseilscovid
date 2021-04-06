@@ -352,15 +352,49 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 
 
-## [question_historique_covid_passee_date_aide.md](question_historique_covid_passee_date_aide.md)
+## [question_historique_covid_passee_1_mois_libellé.md](question_historique_covid_passee_1_mois_libellé.md)
 
- <!---->Cette date peut être approximative
+<!---->Il y a 1 mois ou moins
+
+
+
+## [question_historique_covid_passee_2_mois_libellé.md](question_historique_covid_passee_2_mois_libellé.md)
+
+<!---->Il y a 2 mois
+
+
+
+## [question_historique_covid_passee_3_mois_libellé.md](question_historique_covid_passee_3_mois_libellé.md)
+
+<!---->Il y a 3 mois
+
+
+
+## [question_historique_covid_passee_4_mois_libellé.md](question_historique_covid_passee_4_mois_libellé.md)
+
+<!---->Il y a 4 mois
+
+
+
+## [question_historique_covid_passee_5_mois_libellé.md](question_historique_covid_passee_5_mois_libellé.md)
+
+<!---->Il y a 5 mois
+
+
+
+## [question_historique_covid_passee_6_mois_libellé.md](question_historique_covid_passee_6_mois_libellé.md)
+
+<!---->Il y a 6 mois ou plus
 
 
 
 ## [question_historique_covid_passee_date_libellé.md](question_historique_covid_passee_date_libellé.md)
 
-<!---->La date de la dernière Covid
+<!---->La date de ma dernière Covid
+
+---
+
+<!---->La date de sa dernière Covid
 
 
 
