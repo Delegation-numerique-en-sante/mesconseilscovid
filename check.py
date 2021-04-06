@@ -39,10 +39,20 @@ class LinkExtractor(HTMLParser):
 
 @cli
 def links(timeout: int = 10, delay: float = 0.1):
+    dynamically_generated_links_via_injection = {
+        "https://www.sante.fr/cf/centres-vaccination-covid/departement-22-cotes-d'armor.html",
+        "https://www.sante.fr/cf/centres-vaccination-covid/departement-20A-corse-du-sud.html",
+        "https://www.sante.fr/cf/centres-vaccination-covid/departement-01-ain.html",
+        "https://www.sante.fr/cf/centres-vaccination-covid.html",
+        "https://www.sante.fr/cf/centres-depistage-covid/departement-01.html",
+        "https://www.sante.fr/cf/centres-depistage-covid/departement-2A.html",
+        "https://www.sante.fr/cf/centres-depistage-covid.html",
+    }
     parser = LinkExtractor()
     content = (SRC_DIR / "index.html").read_text()
     parser.feed(content)
-    for link in sorted(parser.links):
+    links = parser.links.union(dynamically_generated_links_via_injection)
+    for link in sorted(links):
         print(link)
         with httpx.stream(
             "GET",

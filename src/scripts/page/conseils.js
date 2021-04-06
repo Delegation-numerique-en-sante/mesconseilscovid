@@ -145,8 +145,11 @@ export function dynamicDataInjection(element, profil, algoOrientation) {
     injection.dateConseils(element.querySelector('#conseils-block-date'))
 
     injection.departement(element.querySelector('#nom-departement'), profil.departement)
-    Array.from(element.querySelectorAll('#lien-vaccination')).forEach((link) => {
+    Array.from(element.querySelectorAll('.lien-vaccination')).forEach((link) => {
         injection.lienVaccination(link, profil.departement)
+    })
+    Array.from(element.querySelectorAll('.lien-depistage')).forEach((link) => {
+        injection.lienDepistage(link, profil.departement)
     })
     const lienPrefecture = element.querySelector('#lien-prefecture')
     if (lienPrefecture) {
