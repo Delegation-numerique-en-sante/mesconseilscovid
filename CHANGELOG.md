@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-04-06
+
+* correction et dynamisation des liens pour le dépistage et la vaccination
+* mise à jour des informations de vaccination pour les femmes enceintes
+
 ## 2021-04-03
 
 * mesures renforcées pour tout la France métropolitaine
