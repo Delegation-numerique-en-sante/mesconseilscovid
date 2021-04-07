@@ -36,7 +36,7 @@ export default function historique(form, app) {
         const suffix = i === 6 ? ' ou avant' : ''
         label_x_mois.innerHTML = `${
             label_x_mois.innerHTML
-        } (${month} ${il_y_a_x_mois.getFullYear()}${suffix})`
+        } (en <strong>${month}</strong> ${il_y_a_x_mois.getFullYear()}${suffix})`
     })
 
     // Le libellé du bouton change en fonction des choix.
