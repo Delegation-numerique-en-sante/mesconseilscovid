@@ -28,6 +28,30 @@ Vous n’avez pas réalisé de test ces 7 derniers jours (<a href="#depistage">
 
 
 
+## [reponse_historique_3_6_mois.md](reponse_historique_3_6_mois.md)
+
+Vous avez eu la Covid <b>il y a plus de 3 mois et moins de 6 mois</b> (<a href="#historique">modifier</a>)
+
+
+
+## [reponse_historique_3_mois_moins.md](reponse_historique_3_mois_moins.md)
+
+Vous avez eu la Covid <b>il y a moins de 3 mois</b> (<a href="#historique">modifier</a>)
+
+
+
+## [reponse_historique_6_mois_plus.md](reponse_historique_6_mois_plus.md)
+
+Vous avez eu la Covid <b>il y a plus de 6 mois</b> (<a href="#historique">modifier</a>)
+
+
+
+## [reponse_historique_sans.md](reponse_historique_sans.md)
+
+Vous n’avez <b>jamais</b> eu la Covid (<a href="#historique">modifier</a>)
+
+
+
 ## [reponse_vaccins_deja_vaccine.md](reponse_vaccins_deja_vaccine.md)
 
 Vous avez <b>déjà</b> été vacciné·e (<a href="#vaccins">modifier</a>)
