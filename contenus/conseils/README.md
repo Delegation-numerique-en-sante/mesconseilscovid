@@ -729,11 +729,41 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 
 
 
+## [conseils_vaccins_3_6_mois.md](conseils_vaccins_3_6_mois.md)
+
+<div class="conseil conseil-jaune">
+
+Vous avez eu la Covid il y a plus de 3 mois et moins de 6 mois, **vous pouvez vous faire vacciner**, toutefois il est recommandé d’attendre 6 mois pour une efficacité optimale. Nous vous invitons à vous rapprocher de votre médecin pour prendre cette décision.
+
+</div>
+
+
+
+## [conseils_vaccins_3_mois_moins.md](conseils_vaccins_3_mois_moins.md)
+
+<div class="conseil conseil-orange">
+
+Vous avez eu la Covid il y a moins de 3 mois, **vous ne devez pas vous faire vacciner**. Le délai requis est au minimum de 3 mois, toutefois il est recommandé d’attendre 6 mois pour une efficacité optimale.
+
+</div>
+
+
+
 ## [conseils_vaccins_50_ans_a_risque.md](conseils_vaccins_50_ans_a_risque.md)
 
 <div class="conseil">
 
 Vous avez plus de 50 ans, et vous êtes considéré·e comme une personne ayant plus de risques de développer une forme sévère de Covid : **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à prendre rendez-vous avec votre médecin traitant.
+
+</div>
+
+
+
+## [conseils_vaccins_6_mois_plus.md](conseils_vaccins_6_mois_plus.md)
+
+<div class="conseil">
+
+Vous avez eu la Covid il y a plus de 6 mois, **vous pouvez vous faire vacciner**, une seule dose est requise dans ce cas.
 
 </div>
 
@@ -818,8 +848,6 @@ Une stratégie de vaccination spécifique sera mise en place pour les publics pa
 La vaccination apprend à votre corps à reconnaître le virus et à le combattre. Les vaccins sont conçus pour éviter les symptômes et les formes graves de la maladie mais **ils n’empêchent pas la contamination**. La protection est maximale 15 jours après l’administration de la seconde dose.
 
 Les résultats des tests sur les vaccins ne permettent pas d’affirmer qu’une personne vaccinée ne peut plus transmettre le virus. Même vacciné, il faut continuer à respecter les gestes barrières (distanciation et port du masque) et les mesures de prévention (test, isolement) notamment pour protéger les personnes qui ne sont pas encore vaccinées. Après avoir été vacciné·e, **si vous avez des symptômes qui évoquent la Covid, il faut vous isoler et faire un test**.
-
-Si vous avez déjà eu la Covid, il est recommandé d’attendre au moins 3 mois avant de vous faire vacciner. La vaccination se fera alors par une dose unique.
 
 Les vaccins Comirnaty<sup>®</sup> (Pfizer/BioNTech) et Moderna<sup>®</sup> ne sont pas recommandés chez des personnes ayant présenté des manifestations allergiques graves, telles que des réactions anaphylactiques.
 

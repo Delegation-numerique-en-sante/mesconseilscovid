@@ -433,25 +433,50 @@ export default class AlgorithmeOrientation {
 
     vaccinBlockNamesToDisplay() {
         const blockNames = []
-        const algoVaccination = new AlgorithmeVaccination(this.profil, this)
+        function displayConseilsPersonnels(profil, algoOrientation) {
+            const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
+            if (algoVaccination.isProfessionnelDeSante()) {
+                blockNames.push('conseils-vaccins-activite-pro-sante')
+            } else if (algoVaccination.isSup75()) {
+                blockNames.push('conseils-vaccins-75-ans')
+            } else if (algoVaccination.isARisque()) {
+                if (algoVaccination.isTresHautRisque()) {
+                    blockNames.push('conseils-vaccins-tres-haut-risque')
+                } else if (algoVaccination.isSup50()) {
+                    blockNames.push('conseils-vaccins-50-ans-a-risque')
+                } else {
+                    blockNames.push('conseils-vaccins-demande-medecin')
+                }
+            }
+        }
         if (this.profil.vaccins) {
             blockNames.push('reponse-vaccins-deja-vaccine')
             blockNames.push('conseils-vaccins-deja-vaccine')
         } else {
             blockNames.push('reponse-vaccins-pas-encore-vaccine')
             blockNames.push('conseils-vaccins-pas-encore-vaccine')
-        }
-        if (algoVaccination.isProfessionnelDeSante()) {
-            blockNames.push('conseils-vaccins-activite-pro-sante')
-        } else if (algoVaccination.isSup75()) {
-            blockNames.push('conseils-vaccins-75-ans')
-        } else if (algoVaccination.isARisque()) {
-            if (algoVaccination.isTresHautRisque()) {
-                blockNames.push('conseils-vaccins-tres-haut-risque')
-            } else if (algoVaccination.isSup50()) {
-                blockNames.push('conseils-vaccins-50-ans-a-risque')
+            if (this.profil.covid_passee) {
+                if (this.profil.hasCovidPlus6Mois()) {
+                    blockNames.push('reponse-historique-6-mois-plus')
+                } else if (this.profil.hasCovidPlus3Mois()) {
+                    blockNames.push('reponse-historique-3-6-mois')
+                } else {
+                    blockNames.push('reponse-historique-3-mois-moins')
+                }
             } else {
-                blockNames.push('conseils-vaccins-demande-medecin')
+                blockNames.push('reponse-historique-sans')
+            }
+            if (this.profil.covid_passee) {
+                if (this.profil.hasCovidPlus6Mois()) {
+                    blockNames.push('conseils-vaccins-6-mois-plus')
+                    displayConseilsPersonnels(this.profil, this)
+                } else if (this.profil.hasCovidPlus3Mois()) {
+                    blockNames.push('conseils-vaccins-3-6-mois')
+                } else {
+                    blockNames.push('conseils-vaccins-3-mois-moins')
+                }
+            } else {
+                displayConseilsPersonnels(this.profil, this)
             }
         }
         return blockNames

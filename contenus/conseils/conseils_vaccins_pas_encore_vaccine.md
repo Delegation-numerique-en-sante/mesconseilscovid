@@ -15,8 +15,6 @@ La vaccination apprend à votre corps à reconnaître le virus et à le combattr
 
 Les résultats des tests sur les vaccins ne permettent pas d’affirmer qu’une personne vaccinée ne peut plus transmettre le virus. Même vacciné, il faut continuer à respecter les gestes barrières (distanciation et port du masque) et les mesures de prévention (test, isolement) notamment pour protéger les personnes qui ne sont pas encore vaccinées. Après avoir été vacciné·e, **si vous avez des symptômes qui évoquent la Covid, il faut vous isoler et faire un test**.
 
-Si vous avez déjà eu la Covid, il est recommandé d’attendre au moins 3 mois avant de vous faire vacciner. La vaccination se fera alors par une dose unique.
-
 Les vaccins Comirnaty<sup>®</sup> (Pfizer/BioNTech) et Moderna<sup>®</sup> ne sont pas recommandés chez des personnes ayant présenté des manifestations allergiques graves, telles que des réactions anaphylactiques.
 
 Les **femmes enceintes** peuvent se faire vacciner à partir du 2<sup>e</sup> trimestre de grossesse. Les vaccins à ARNm Comirnaty<sup>®</sup> (Pfizer/BioNTech) et Moderna<sup>®</sup> sont à privilégier pour les femmes enceintes. Il n’y a pas d’effet attendu chez le nourrisson et l’enfant allaités par une femme vaccinée.
