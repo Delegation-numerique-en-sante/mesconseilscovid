@@ -15,6 +15,22 @@ Ces effets secondaires disparaissent le plus souvent au bout de 2 à 3 jours.
 
 L’Agence nationale de la sécurité du médicament suit toutes les semaines les effets secondaires déclarés. **Si vous ressentez des effets secondaires**, déclarez-les sur le [site dédié au signalement](https://signalement.social-sante.gouv.fr).
 
+<div class="conseil conseil-jaune">
+
+Si vous avez été vacciné·e avec le vaccin Vaxzevria<sup>®</sup> (**AstraZeneca**) et que vous présentez les symptômes suivants :
+
+* essoufflement ;
+* douleurs thoraciques ;
+* gonflement des jambes ;
+* douleurs abdominales persistantes ;
+* maux de tête importants ou persistants ;
+* vision floue ;
+* ecchymoses au-delà du site de vaccination ;
+
+vous devez **consulter immédiatement un médecin**.
+
+</div>
+
 Pour en savoir plus :
 
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
