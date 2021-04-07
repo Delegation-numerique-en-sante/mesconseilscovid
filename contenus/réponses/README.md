@@ -28,6 +28,18 @@ Vous n’avez pas réalisé de test ces 7 derniers jours (<a href="#depistage">
 
 
 
+## [reponse_vaccins_deja_vaccine.md](reponse_vaccins_deja_vaccine.md)
+
+Vous avez <b>déjà</b> été vacciné·e (<a href="#vaccins">modifier</a>)
+
+
+
+## [reponse_vaccins_pas_encore_vaccine.md](reponse_vaccins_pas_encore_vaccine.md)
+
+Vous n’avez <b>pas encore</b> été vacciné·e (<a href="#vaccins">modifier</a>)
+
+
+
 ## [réponse_activité_pro.md](réponse_activité_pro.md)
 
 Vous travaillez et/ou êtes bénévole (<a href="#situation">modifier</a>)
