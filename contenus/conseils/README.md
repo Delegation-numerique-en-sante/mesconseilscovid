@@ -784,15 +784,15 @@ L’Agence nationale de la sécurité du médicament suit toutes les semaines le
 
 <div class="conseil conseil-jaune">
 
-Si vous avez été vacciné·e avec le vaccin Vaxzevria<sup>®</sup> (**AstraZeneca**) et que vous présentez les symptômes suivants :
+Si vous avez été vacciné·e avec le vaccin Vaxzevria<sup>®</sup> (**AstraZeneca**) et que vous présentez des symptômes tels que :
 
-* essoufflement ;
-* douleurs thoraciques ;
-* gonflement des jambes ;
-* douleurs abdominales persistantes ;
-* maux de tête importants ou persistants ;
-* vision floue ;
-* ecchymoses au-delà du site de vaccination ;
+* essoufflement,
+* douleurs thoraciques,
+* gonflement des jambes,
+* douleurs abdominales persistantes,
+* maux de tête importants ou persistants,
+* vision floue,
+* ecchymoses au-delà du site de vaccination,
 
 vous devez **consulter immédiatement un médecin**.
 
