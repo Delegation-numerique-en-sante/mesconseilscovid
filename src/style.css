@@ -214,7 +214,7 @@ a .profil {
         margin: 0.5rem auto 1.5rem;
     }
     .introduction-block .tagline {
-        font-size: 125%;
+        font-size: 120%;
     }
     .introduction-block .form-controls {
         margin-bottom: 0;
@@ -334,8 +334,11 @@ main footer .legals {
 }
 
 .tagline {
-    font-size: x-large;
-    padding-bottom: 45%;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+.tagline-image {
+    padding-bottom: 40%;
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: 50%;
@@ -454,7 +457,7 @@ main footer .legals {
 #conseils-covid header {
     background-image: url('illustrations/covid.svg');
 }
-.tagline {
+.tagline-image {
     background-image: url('illustrations/accueil.svg');
 }
 #conseils-pediatrie-general header {
