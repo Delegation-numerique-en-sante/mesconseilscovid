@@ -267,6 +267,10 @@ a .profil {
 .profil-empty a.button {
     max-width: 18rem;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 6rem;
 }
 .profil-empty a.button-outline {
     font-weight: normal;

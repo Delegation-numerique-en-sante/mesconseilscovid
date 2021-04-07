@@ -1,11 +1,15 @@
-## Isolement, tests, vaccins…<br> tout savoir pour prendre soin de votre santé
+## Isolement, tests, vaccins, contact à risque…
 
-<ul id="profils-cards" class="cards"></ul>
 
 <div class="js-intro">
 
 <p class="tagline">
-Obtenez en 3 minutes des conseils personnalisés pour <b>votre santé</b> et celle de vos proches.
+
+Obtenir en 3 minutes des conseils personnalisés<br>
+pour <b>ma santé</b> et celle de mes proches.
+
 </p>
 
 </div>
+
+<ul id="profils-cards" class="cards"></ul>
