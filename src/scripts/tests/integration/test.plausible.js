@@ -45,7 +45,9 @@ describe('Plausible', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/#introduction')
-        let bouton = await page.waitForSelector('#page.ready >> text="Faire pour moi"')
+        let bouton = await page.waitForSelector(
+            '#page.ready >> text="Des conseils pour moi"'
+        )
 
         await Promise.all([
             bouton.click(),
@@ -104,7 +106,7 @@ describe('Plausible', function () {
 
         await page.goto('http://localhost:8080/#introduction')
         let bouton = await page.waitForSelector(
-            '#page.ready .js-profil-new >> text="Faire pour un·e proche"'
+            '#page.ready .js-profil-new >> text="Des conseils pour un·e proche"'
         )
 
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
@@ -162,7 +164,9 @@ describe('Plausible', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/#introduction')
-        let bouton = await page.waitForSelector('#page.ready >> text="Faire pour moi"')
+        let bouton = await page.waitForSelector(
+            '#page.ready >> text="Des conseils pour moi"'
+        )
         await Promise.all([
             bouton.click(),
             page.waitForNavigation({ url: '**/#vaccins' }),
@@ -219,7 +223,7 @@ describe('Plausible', function () {
 
         await page.goto('http://localhost:8080/#introduction')
         let bouton = await page.waitForSelector(
-            '#page.ready .js-profil-new >> text="Faire pour un·e proche"'
+            '#page.ready .js-profil-new >> text="Des conseils pour un·e proche"'
         )
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
         await remplirQuestionnaire(page, {

@@ -18,7 +18,7 @@ export default function introduction(element, app) {
                         <a class="button button-full-width"
                             data-set-profil="mes_infos"
                             href="#${app.questionnaire.firstPage}"
-                            >Faire pour moi</a>
+                            >Des conseils pour moi</a>
                     </li>
                 `)
             )
@@ -29,7 +29,7 @@ export default function introduction(element, app) {
                 <li class="profil-empty">
                     <a class="button button-full-width button-outline js-profil-new"
                         href="#nom"
-                        >Faire pour un·e proche</a>
+                        >Des conseils pour un·e proche</a>
                 </li>
             `)
         )
