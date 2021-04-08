@@ -772,13 +772,19 @@ Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal
 
 
 
+## [question_vaccins_aide.md](question_vaccins_aide.md)
+
+Une personne vaccinée a été au bout de son processus de vaccination (1 ou 2 doses selon les cas).
+
+
+
 ## [question_vaccins_libellé.md](question_vaccins_libellé.md)
 
-<!---->J’ai été <b>vacciné·e</b> contre la Covid
+<!---->J’ai été complètement <b>vacciné·e</b> contre la Covid
 
 ---
 
-<!---->Cette personne a été <b>vacciné·e</b> contre la Covid
+<!---->Cette personne a été complètement <b>vacciné·e</b> contre la Covid
 
 
 
