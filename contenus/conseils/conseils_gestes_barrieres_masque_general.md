@@ -8,7 +8,6 @@ Le **port du masque est obligatoire** dans les **[lieux publics clos](https://so
   * appliquer strictement [les mesures barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf),
   * garder une distance de **plus de 2 mètres** avec chaque personne.
 * Le port du **masque** :
-  * [Quel est le niveau de protection entre deux personnes ?](https://www.gouvernement.fr/info-coronavirus/masques-grand-public#les_informations_essentielles)
   * [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
   * [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
   * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)

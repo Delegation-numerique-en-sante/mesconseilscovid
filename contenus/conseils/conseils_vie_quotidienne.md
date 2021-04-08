@@ -12,6 +12,6 @@ Pour vos **déplacements** :
 
   * depuis le 30 janvier, toute entrée en France et toute sortie du territoire à destination ou en provenance d’un pays extérieur à l’Union européenne est interdite, sauf motif impérieux ;
   * depuis le 30 janvier, toute entrée en France à partir d’un pays de l’Union européenne est conditionnée à la réalisation d’un test PCR, à l’exception des travailleurs transfrontaliers ; tous les déplacements en provenance et en direction des territoires ultramarins sont également soumis à la production de motifs impérieux ;
-  * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus#questions__reponses) (choisir la thématique « Sur mes déplacements et mes voyages »).
+  * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus/questions-reponses) (choisir la section « Frontières / outre-mer / Dispositifs »).
 
 Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919">39 19</a> (appel gratuit, de 9 h à 19 h du lundi au samedi) ou le <a href="tel:17">17</a> en cas d’urgence.
