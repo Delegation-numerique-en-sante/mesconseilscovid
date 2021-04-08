@@ -1,12 +1,17 @@
-* Afin d’éviter une forme grave de Covid, il vous est recommandé d’appliquer les mesures de **distanciation physique renforcée** :
-  * appliquez strictement [les mesures barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf),
-  * gardez une distance de **plus de 2 mètres** avec chaque personne,
-  * portez le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile,
-  * **réduisez vos sorties** au strict minimum.
-* Le port du **masque** :
-  * contactez votre médecin généraliste afin de discuter avec lui de l’intérêt, en plus du port des masques grand public, d’une **prescription de masques chirurgicaux**
-  * [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
-  * [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
-  * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf)
-* L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_covid-19_aeration-ventilation-climatisation-chauffage_28_10_2020.pdf)
-* Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_grand_public.pdf)
+Afin d’éviter une forme grave de Covid, il vous est recommandé d’appliquer les mesures de **distanciation physique renforcée** :
+
+* appliquez strictement [les mesures barrières](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_gestes_barriere.pdf),
+* gardez une distance de **plus de 2 mètres** avec chaque personne,
+* portez le **masque en permanence** à l’extérieur de chez vous et à l’intérieur si vous recevez des personnes étrangères à votre domicile,
+* **réduisez vos sorties** au strict minimum.
+
+Le port du **masque** :
+
+* Face aux nouveaux variants, il est conseillé de porter un **masque** chirurgical ou en tissu **de catégorie 1**. Il offre un niveau de protection (filtration de plus de 90%) plus important que le masque de catégorie 2 (niveau de filtration inférieur à 90%). La catégorie est indiquée sur l’emballage.
+* Vous pouvez obtenir la **prise en charge** des masques chirurgicaux sur présentation d’une prescription médicale de votre médecin.
+* Pour être efficace, le masque doit recouvrir **le nez et la bouche**.
+* [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/bien_utiliser_son_masque-a3.pdf)
+
+L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_covid-19_aeration-ventilation-climatisation-chauffage_28_10_2020.pdf)
+
+Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://www.ameli.fr/sites/default/files/Documents/683638/document/spf-limiter-transmission-virus-covid19.pdf)

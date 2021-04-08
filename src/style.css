@@ -1145,7 +1145,7 @@ a[href*='youtube.com']::after {
 .conseils
     a[href$='www-gouvernement-fr-sites-default-files-coronavirus_mesures_barrieres_nouveau.pdf']::before,
 .conseils
-    a[href$='solidarites-sante-gouv-fr-IMG-pdf-affiche_masque_mode_d_emploi.pdf']::before {
+    a[href$='solidarites-sante-gouv-fr-IMG-pdf-bien_utiliser_son_masque-a3.pdf']::before {
     background: no-repeat bottom left url('icone_infographie.svg');
     content: '';
     display: inline-flex;
