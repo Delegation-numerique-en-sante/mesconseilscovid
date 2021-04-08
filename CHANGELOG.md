@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-04-08
+
+* ajout d’une question relative à une précédente Covid
+* ajout des effets secondaires du vaccin AstraZeneca à surveiller
+
 ## 2021-04-06
 
 * correction et dynamisation des liens pour le dépistage et la vaccination
