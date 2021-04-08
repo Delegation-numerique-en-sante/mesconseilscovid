@@ -263,7 +263,7 @@ Le port du masque est recommandé **à partir de l’âge de 6 ans.**
 
 Pour plus d’informations sur **le port du masque,** vous pouvez consulter :
 
-* [l’infographie explicative](https://solidarites-sante.gouv.fr/IMG/pdf/affiche_masque_mode_d_emploi.pdf) du ministère des solidarités et de la santé.
+* [l’infographie explicative](https://solidarites-sante.gouv.fr/IMG/pdf/bien_utiliser_son_masque-a3.pdf) du ministère des solidarités et de la santé.
 * La vidéo [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw).
 * La vidéo [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE).
 
