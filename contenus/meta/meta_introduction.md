@@ -7,7 +7,3 @@
 pour <b>ma santé</b> et celle de mes proches.</p>
 
 </div>
-
-<ul id="profils-cards" class="cards"></ul>
-
-<div class="tagline-image"></div>
