@@ -49,10 +49,10 @@
                     <span class="visually-hidden">Mes Conseils Covid</span>
                 </a>
             </h1>
-            <div id="js-profil-full-header" hidden>
+            <div id="js-profil-full-header" class="js-profil-full" hidden>
                 <b class="profil" id="nom-profil-header"></b>
             </div>
-            <div id="js-profil-empty-header"></div>
+            <div id="js-profil-empty-header" class="js-profil-empty"></div>
         </section>
     </header>
     <main>
@@ -1540,11 +1540,11 @@
 <section id="pediatrie" hidden>
     <div id="pediatrie-block" class="block">
         {{ meta_pédiatrie }}
-        <div id="js-profil-full-pediatrie" class="form-controls" hidden>
+        <div class="js-profil-full form-controls" hidden>
             <a class="button button-full-width" href="#conseils">Aller à mes conseils</a>
             <a class="premiere-question button button-outline back-button button-full-width" href="#">Modifier mes réponses</a>
         </div>
-        <div id="js-profil-empty-pediatrie">
+        <div class="js-profil-empty">
             <a class="premiere-question button button-full-width" href="#">Démarrer le questionnaire</a>
         </div>
     </div>
@@ -1553,11 +1553,11 @@
 <section id="conditionsutilisation" hidden>
     <div id="conditions-utilisation-block" class="block">
         {{ meta_conditions_utilisation }}
-        <div id="js-profil-full-conditions-utilisation" class="form-controls" hidden>
+        <div class="js-profil-full form-controls" hidden>
             <a class="button button-full-width" href="#conseils">Retourner à mes conseils</a>
             <a class="premiere-question button button-outline button-full-width" href="#">Modifier mes réponses</a>
         </div>
-        <div id="js-profil-empty-conditions-utilisation">
+        <div class="js-profil-empty">
             <a class="premiere-question button button-full-width" href="#">Démarrer le questionnaire</a>
         </div>
     </div>
