@@ -44,11 +44,11 @@ export function initRouter(app) {
         before: function (done) {
             var header = document.querySelector('header section')
             if (typeof app.profil.nom === 'undefined') {
-                showElement(header.querySelector('#js-profil-empty-header'))
-                hideElement(header.querySelector('#js-profil-full-header'))
+                showElement(header.querySelector('.js-profil-empty'))
+                hideElement(header.querySelector('.js-profil-full'))
             } else {
-                showElement(header.querySelector('#js-profil-full-header'))
-                hideElement(header.querySelector('#js-profil-empty-header'))
+                showElement(header.querySelector('.js-profil-full'))
+                hideElement(header.querySelector('.js-profil-empty'))
                 nomProfil(header.querySelector('#nom-profil-header'), app)
             }
             done()
@@ -165,17 +165,15 @@ export function initRouter(app) {
 
     addRoute('pediatrie', function (element) {
         if (app.profil.isComplete()) {
-            showElement(element.querySelector('#js-profil-full-pediatrie'))
-            hideElement(element.querySelector('#js-profil-empty-pediatrie'))
+            showElement(element.querySelector('.js-profil-full'))
+            hideElement(element.querySelector('.js-profil-empty'))
         }
     })
 
     addRoute('conditionsutilisation', function (element) {
         if (app.profil.isComplete()) {
-            showElement(element.querySelector('#js-profil-full-conditions-utilisation'))
-            hideElement(
-                element.querySelector('#js-profil-empty-conditions-utilisation')
-            )
+            showElement(element.querySelector('.js-profil-full'))
+            hideElement(element.querySelector('.js-profil-empty'))
         }
     })
 

@@ -3,8 +3,8 @@ import { createElementFromHTML, hideElement, showElement } from '../affichage'
 
 export default function introduction(element, app) {
     const header = document.querySelector('header section')
-    showElement(header.querySelector('#js-profil-empty-header'))
-    hideElement(header.querySelector('#js-profil-full-header'))
+    showElement(header.querySelector('.js-profil-empty'))
+    hideElement(header.querySelector('.js-profil-full'))
 
     const container = element.querySelector('#profils-cards')
     app.stockage.getProfils().then((noms) => {
