@@ -213,7 +213,9 @@ describe('Suivi', function () {
 
         // La page de suivi d'historique.
         {
-            let bilanTitle = await page.waitForSelector('#page.ready #historique h3')
+            let bilanTitle = await page.waitForSelector(
+                '#page.ready #suivi-historique-content h3'
+            )
             assert.equal(await bilanTitle.innerText(), 'Bilan de votre situation')
         }
     })
@@ -356,7 +358,9 @@ describe('Suivi', function () {
 
         // La page de suivi d'historique.
         {
-            let bilanTitle = await page.waitForSelector('#page.ready #historique h3')
+            let bilanTitle = await page.waitForSelector(
+                '#page.ready #suivi-historique-content h3'
+            )
             assert.equal(await bilanTitle.innerText(), 'Bilan de votre situation')
         }
     })
