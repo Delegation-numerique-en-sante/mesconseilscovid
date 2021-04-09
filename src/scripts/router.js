@@ -165,15 +165,17 @@ export function initRouter(app) {
 
     addRoute('pediatrie', function (element) {
         if (app.profil.isComplete()) {
-            showElement(element.querySelector('#js-profil-full'))
-            hideElement(element.querySelector('#js-profil-empty'))
+            showElement(element.querySelector('#js-profil-full-pediatrie'))
+            hideElement(element.querySelector('#js-profil-empty-pediatrie'))
         }
     })
 
     addRoute('conditionsutilisation', function (element) {
         if (app.profil.isComplete()) {
-            showElement(element.querySelector('#js-profil-full'))
-            hideElement(element.querySelector('#js-profil-empty'))
+            showElement(element.querySelector('#js-profil-full-conditions-utilisation'))
+            hideElement(
+                element.querySelector('#js-profil-empty-conditions-utilisation')
+            )
         }
     })
 

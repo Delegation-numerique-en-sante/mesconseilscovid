@@ -54,7 +54,9 @@ describe('Pages', function () {
             assert.equal(await titre.innerText(), 'Conseils pour les enfants')
 
             // On retrouve le bouton pour aller vers les conseils.
-            let button = await page.waitForSelector('#page.ready #js-profil-full a')
+            let button = await page.waitForSelector(
+                '#page.ready #js-profil-full-pediatrie a'
+            )
             assert.equal((await button.innerText()).trim(), 'Aller à mes conseils')
             assert.equal(await button.getAttribute('href'), '#conseils')
         }
@@ -82,7 +84,9 @@ describe('Pages', function () {
         // Conditions d’utilisation.
         {
             // On retrouve le bouton pour repartir vers le questionnaire.
-            let button = await page.waitForSelector('#page.ready #js-profil-empty a')
+            let button = await page.waitForSelector(
+                '#page.ready #js-profil-empty-conditions-utilisation a'
+            )
             assert.equal((await button.innerText()).trim(), 'Démarrer le questionnaire')
             assert.equal(await button.getAttribute('href'), '#vaccins')
             // On retrouve le titre explicite.
