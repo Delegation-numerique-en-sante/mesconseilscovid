@@ -1,5 +1,5 @@
 attrs==20.3.0
-autoroutes==0.3.4
+autoroutes==0.3.5
 biscuits==0.3.0
 dataclasses-json==0.3.8
 gunicorn==20.1.0
