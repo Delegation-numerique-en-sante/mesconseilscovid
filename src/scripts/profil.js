@@ -820,7 +820,7 @@ export default class Profil {
             safeHtml`
             <a data-set-profil="${this.nom}" href="#${questionnaire.firstPage}"
                 >Modifier ${possessifPluriel} réponses</a>
-            <a data-delete-profil="${this.nom}" href=""
+            <a data-delete-profil="${this.nom}" href="" role="button"
                 >Supprimer ${possessifMasculinSingulier} profil</a>
             `
         )

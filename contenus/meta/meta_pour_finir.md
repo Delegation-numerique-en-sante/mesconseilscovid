@@ -16,8 +16,8 @@ Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement
             <p>
                 Ces conseils vous ont été utiles ?
                 <span class="feedback-controls">
-                <a class="button button-outline button-feedback button-feedback-positif" data-feedback="positif" href="">Oui</a>
-                <a class="button button-outline button-feedback button-feedback-negatif" data-feedback="negatif" href="">Non</a>
+                <a class="button button-outline button-feedback button-feedback-positif" data-feedback="positif" href="" role="button">Oui</a>
+                <a class="button button-outline button-feedback button-feedback-negatif" data-feedback="negatif" href="" role="button">Non</a>
                 </span>
             </p>
         </div>
@@ -62,11 +62,11 @@ N’hésitez pas à mettre cette page en favori pour **y revenir plus tard**. Pa
 </div>
 <div class="icon icon-impression">
 
-Vous pouvez <a class="js-impression" href="">imprimer ces conseils</a> pour **les garder avec vous** ou les **envoyer à vos proches**.
+Vous pouvez <a class="js-impression" href="" role="button">imprimer ces conseils</a> pour **les garder avec vous** ou les **envoyer à vos proches**.
 
 </div>
 <div class="icon icon-suppression">
 
-Nous n’avons pas accès à vos données et vous pouvez <a href="#introduction" class="js-suppression">les **supprimer** à tout moment</a> de votre navigateur si vous êtes sur un ordinateur public ou partagé par exemple.
+Nous n’avons pas accès à vos données et vous pouvez <a href="" class="js-suppression" role="button">les **supprimer** à tout moment</a> de votre navigateur si vous êtes sur un ordinateur public ou partagé par exemple.
 
 </div>
