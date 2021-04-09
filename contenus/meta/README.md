@@ -131,7 +131,7 @@ Il est recommandé de mettre à jour dès que possible en cliquant sur le bouton
             <p>
                 Des difficultés avec cette page ?
                 <span class="feedback-controls">
-                    <a class="button button-outline button-feedback button-feedback-flag" data-feedback="flag" href="">Oui</a>
+                    <a class="button button-outline button-feedback button-feedback-flag" data-feedback="flag" href="" role="button">Oui</a>
                     <a class="button button-outline button-feedback-contact js-feedback-contact" href="mailto:contact@mesconseilscovid.fr">Nous contacter</a>
                 </span>
             </p>
@@ -160,7 +160,7 @@ Il est recommandé de mettre à jour dès que possible en cliquant sur le bouton
 <div class="legals">
 
 Vos informations personnelles sont seulement stockées sur cet appareil, et ne sont pas partagées.  
-À tout moment, vous pouvez <a class="js-suppression" href="">supprimer l’intégralité de ces données</a>.  
+À tout moment, vous pouvez <a class="js-suppression" href="" role="button">supprimer l’intégralité de ces données</a>.  
 [Conditions d’utilisation](#conditionsutilisation) - [Code source](https://github.com/Delegation-numerique-en-sante/mesconseilscovid)
 <span class="js-latest-update"></span>
 
@@ -188,8 +188,8 @@ Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement
             <p>
                 Ces conseils vous ont été utiles ?
                 <span class="feedback-controls">
-                <a class="button button-outline button-feedback button-feedback-positif" data-feedback="positif" href="">Oui</a>
-                <a class="button button-outline button-feedback button-feedback-negatif" data-feedback="negatif" href="">Non</a>
+                <a class="button button-outline button-feedback button-feedback-positif" data-feedback="positif" href="" role="button">Oui</a>
+                <a class="button button-outline button-feedback button-feedback-negatif" data-feedback="negatif" href="" role="button">Non</a>
                 </span>
             </p>
         </div>
@@ -234,12 +234,12 @@ N’hésitez pas à mettre cette page en favori pour **y revenir plus tard**. Pa
 </div>
 <div class="icon icon-impression">
 
-Vous pouvez <a class="js-impression" href="">imprimer ces conseils</a> pour **les garder avec vous** ou les **envoyer à vos proches**.
+Vous pouvez <a class="js-impression" href="" role="button">imprimer ces conseils</a> pour **les garder avec vous** ou les **envoyer à vos proches**.
 
 </div>
 <div class="icon icon-suppression">
 
-Nous n’avons pas accès à vos données et vous pouvez <a href="#introduction" class="js-suppression">les **supprimer** à tout moment</a> de votre navigateur si vous êtes sur un ordinateur public ou partagé par exemple.
+Nous n’avons pas accès à vos données et vous pouvez <a href="" class="js-suppression" role="button">les **supprimer** à tout moment</a> de votre navigateur si vous êtes sur un ordinateur public ou partagé par exemple.
 
 </div>
 

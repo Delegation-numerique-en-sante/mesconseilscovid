@@ -33,7 +33,7 @@ export default class SuiviView {
         let deleteLink = ''
         if (this.profil.hasSuiviStartDate()) {
             deleteLink = safeHtml`
-                <a data-delete-suivi="${this.profil.nom}" href=""
+                <a data-delete-suivi="${this.profil.nom}" href="" role="button"
                     >Supprimer ${possessifMasculinSingulier} suivi</a>
             `
         }
