@@ -7,6 +7,8 @@ export default function introduction(element, app) {
     hideElement(header.querySelector('.js-profil-full'))
 
     const container = element.querySelector('#profils-cards')
+    if (!container) return // Sortie rapide pour les pages satellites.
+
     app.stockage.getProfils().then((noms) => {
         if (noms.length) {
             hideElement(element.querySelector('.js-intro'))

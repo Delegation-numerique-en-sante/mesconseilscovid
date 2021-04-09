@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=693zBdXxar">
+    <link rel="apple-touch-icon" sizes="192x192" href="/android-chrome-192x192.png?v=693zBdXxar">
+    <link rel="apple-touch-icon" sizes="384x384" href="/android-chrome-384x384.png?v=693zBdXxar">
+    <link rel="apple-touch-icon" sizes="512x512" href="/android-chrome-512x512.png?v=693zBdXxar">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=693zBdXxar">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=693zBdXxar">
+    <link rel="manifest" href="/site.webmanifest?v=693zBdXxar">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=693zBdXxar" color="#000091">
+    <link rel="shortcut icon" href="/favicon.ico?v=693zBdXxar">
+    <meta name="apple-mobile-web-app-title" content="Conseils Covid">
+    <meta name="application-name" content="Conseils Covid">
+    <meta name="msapplication-TileColor" content="#000091">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Vaccination, cas contact, symptômes ou test PCR, il n’est pas évident de savoir quoi faire. Obtenez des conseils personnalisés et à jour sur la Covid en France.">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="referrer" content="none">
+    <meta property="og:title" content="Mes Conseils Covid">
+    <meta property="og:description" content="Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/illustrations/mesconseilscovid.png">
+    <meta property="og:url" content="https://mesconseilscovid.sante.gouv.fr/">
+    <meta property="og:locale" content="fr_FR">
+</head>
+<body>
+    <header>
+        <section>
+            <img id="marianne" src="marianne.png"
+                alt="Logo du Ministère des Solidarités et de la Santé"
+                width="100" height="78">
+            <h1>
+                <a id="logo" href="" title="Aller à l’accueil">
+                    <img id="logo-carre" src="logo-carre.png"
+                        alt="Logo Mes Conseils Covid (partie carrée)"
+                        width="75" height="75"
+                    ><img id="logo-titre" src="logo-titre.png"
+                        alt="Logo Mes Conseils Covid (partie titre)"
+                        width="75" height="34">
+                    <span class="visually-hidden">Mes Conseils Covid</span>
+                </a>
+            </h1>
+            <div id="js-profil-full-header" class="js-profil-full" hidden>
+                <b class="profil" id="nom-profil-header"></b>
+            </div>
+            <div id="js-profil-empty-header" class="js-profil-empty"></div>
+        </section>
+    </header>
+    <main>
+        <section id="page" class="satellite">
+            <section id="introduction">
+                <div>
+                    <div id="conseils-block" class="block">
+                        <h1 id="conseils-block-titre">{{ page_cas_contact_a_risque_titre }}</h1>
+                        <div id="conseils-personnels" class="conseils">
+                            {{ page_cas_contact_a_risque_contenu }}
+                        </div>
+                        <div id="et-ensuite">
+                            <div class="conseils">
+                                {{ page_cas_contact_a_risque_cta }}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+        <footer>
+            {{ meta_pied_de_page }}
+        </footer>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

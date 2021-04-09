@@ -18,8 +18,11 @@ from typographie import typographie
 HERE = Path(__file__).parent
 SRC_DIR = HERE / "src"
 CONTENUS_DIR = HERE / "contenus"
+TEMPLATES_DIR = HERE / "templates"
 
-jinja_env = JinjaEnv(loader=FileSystemLoader(str(SRC_DIR)), undefined=StrictUndefined)
+jinja_env = JinjaEnv(
+    loader=FileSystemLoader(str(TEMPLATES_DIR)), undefined=StrictUndefined
+)
 
 
 class FrenchTypographyMixin:
@@ -70,6 +73,7 @@ markdown = mistune.create_markdown(
 @cli
 def all():
     index()
+    satellites()
     readmes()
 
 
@@ -77,9 +81,17 @@ def all():
 def index():
     """Build the index with contents from markdown dedicated folder."""
     responses = build_responses(CONTENUS_DIR)
-    content = render_template("template.html", **responses)
+    content = render_template("index.html", **responses)
     content = cache_external_pdfs(content)
     (SRC_DIR / "index.html").write_text(content)
+
+
+@cli
+def satellites():
+    """Build the pages with contents from markdown dedicated folder."""
+    pages = build_responses(CONTENUS_DIR)
+    content = render_template("cas-contact-a-risque.html", **pages)
+    (SRC_DIR / "cas-contact-a-risque.html").write_text(content)
 
 
 def build_responses(source_dir):

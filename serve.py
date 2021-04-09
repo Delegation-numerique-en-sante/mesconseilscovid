@@ -19,7 +19,7 @@ WATCHED_PATHS = [
     "src/scripts/**/*.js",
     "src/scripts/*.js",
     "src/style.css",
-    "src/template.html",
+    "templates/*.html",
     "static/version.json",
 ]
 

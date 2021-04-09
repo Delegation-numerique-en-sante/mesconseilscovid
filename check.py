@@ -14,6 +14,7 @@ HERE = Path(__file__).parent
 SRC_DIR = HERE / "src"
 DIAGRAMMES_DIR = HERE / "diagrammes"
 CONTENUS_DIR = HERE / "contenus"
+TEMPLATES_DIR = HERE / "templates"
 
 
 class LinkExtractor(HTMLParser):
@@ -118,8 +119,8 @@ def service_worker():
         "logo.png",
         "logo-favicon.png",
         "service-worker.js",
-        "template.html",
         "version.json",
+        "cas-contact-a-risque.html",
     }
 
     sw_filenames |= KNOWN_EXCLUDED_FILES
@@ -184,8 +185,8 @@ def service_worker():
 
 @cli
 def orphelins():
-    template = (SRC_DIR / "template.html").read_text()
-    for folder in each_folder_from(CONTENUS_DIR, exclude=["nouveaux_contenus"]):
+    template = (TEMPLATES_DIR / "index.html").read_text()
+    for folder in each_folder_from(CONTENUS_DIR, exclude=["pages"]):
         for file_path, filename in each_file_from(
             folder, pattern="*.md", exclude=["README.md"]
         ):
