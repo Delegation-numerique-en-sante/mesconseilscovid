@@ -352,6 +352,8 @@ main footer .legals {
 }
 
 #nom-form,
+#vaccins-form,
+#historique-form,
 #situation-form,
 #sante-form,
 #symptomes-form,
@@ -388,6 +390,8 @@ main footer .legals {
     padding-top: 200px;
 }
 @media only screen and (min-width: 450px) {
+    #vaccins-form,
+    #historique-form,
     #sante-form,
     #situation-form,
     #symptomes-form,
@@ -457,6 +461,7 @@ main footer .legals {
 #conseils-foyer-enfants header {
     background-image: url('illustrations/pediatriegeneral.svg');
 }
+#historique-form,
 #conseils-covid header {
     background-image: url('illustrations/covid.svg');
 }
@@ -485,6 +490,7 @@ main footer .legals {
 #depistage-form {
     background-image: url('illustrations/depistage.svg');
 }
+#vaccins-form,
 #conseils-vaccins header {
     background-image: url('illustrations/vaccins.svg');
 }
