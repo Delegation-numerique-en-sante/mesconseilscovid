@@ -3,15 +3,12 @@ name: Construire le site
 on: push
 
 jobs:
-  build:
-    name: Build & checks
+  checks:
+    name: Checks
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
-      - name: Inject slug/short variables
-        uses: rlespinasse/github-slug-action@v3.x
 
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
@@ -30,10 +27,6 @@ jobs:
       - name: Install JS dependencies
         run: |
           make install-js
-
-      - name: Build
-        run: |
-          make build
 
       - name: Run linter
         run: |
@@ -70,6 +63,38 @@ jobs:
           make check-service-worker
         env:
           PYTHONUNBUFFERED: "1"
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Inject slug/short variables
+        uses: rlespinasse/github-slug-action@v3.x
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Set up Node v14
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install Python dependencies
+        run: |
+          make install-python
+
+      - name: Install JS dependencies
+        run: |
+          make install-js
+
+      - name: Build
+        run: |
+          make build
 
       - uses: actions/upload-artifact@v2
         with:
@@ -188,6 +213,7 @@ jobs:
     name: Trigger deployment
     runs-on: ubuntu-latest
     needs:
+      - checks
       - browser-tests-chromium
       - browser-tests-firefox
       - browser-tests-webkit
