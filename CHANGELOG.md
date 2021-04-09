@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-04-09
+
+* mise à jour des contenus relatifs aux mesures barrières
+* améliorations relatives à l’accessibilité du site
+
 ## 2021-04-08
 
 * ajout d’une question relative à une précédente Covid
