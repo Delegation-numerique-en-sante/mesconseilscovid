@@ -1310,6 +1310,10 @@ a[href*='youtube.com']::after {
     display: none;
 }
 
+.satellite #conseils-block #conseils-block-titre {
+    margin-bottom: 3rem;
+}
+
 @media print {
     a {
         text-decoration: none;
