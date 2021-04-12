@@ -116,12 +116,16 @@
     <form id="vaccins-form" class="block">
         <fieldset>
             <legend>{{ question_vaccins_titre|me_or_them }}</legend>
-            <div>
-                <input id="vaccins_checkbox" type="checkbox" name="vaccins">
-                <label for="vaccins_checkbox">
-                    <span>{{ question_vaccins_libellé|me_or_them }}</span>
-                </label>
-                <div class="details">{{ question_vaccins_aide }}</div>
+            <div id="vaccins-label" class="secondary-title">
+                {{ question_vaccins_libellé|me_or_them }}
+            </div>
+            <div role="radiogroup" aria-labelledby="vaccins-label">
+                <input id="vaccins_radio_pas_encore" type="radio" required name="vaccins_radio" value="pas_encore">
+                <label for="vaccins_radio_pas_encore"><span>{{ question_vaccins_pas_encore_libellé|me_or_them }}</span></label>
+                <input id="vaccins_radio_en_cours" type="radio" required name="vaccins_radio" value="en_cours">
+                <label for="vaccins_radio_en_cours"><span>{{ question_vaccins_en_cours_libellé|me_or_them }}</span></label>
+                <input id="vaccins_radio_completement" type="radio" required name="vaccins_radio" value="completement">
+                <label for="vaccins_radio_completement"><span>{{ question_vaccins_completement_libellé|me_or_them }}</span></label>
             </div>
         </fieldset>
         <div class="form-controls">

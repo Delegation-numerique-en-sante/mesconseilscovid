@@ -2,7 +2,7 @@ import { hideElement, showElement } from '../affichage'
 import {
     enableOrDisableSecondaryFields,
     getRadioValue,
-    toggleFormButtonOnRadioRequired,
+    toggleFormButtonOnCheckboxAndRadioRequired,
 } from '../formutils'
 
 import AlgorithmeDeconfinement from '../algorithme/deconfinement'
@@ -37,7 +37,12 @@ export default function suivisymptomes(form, app) {
         ? 'Cette personne n’a pas de symptômes aujourd’hui'
         : 'Je n’ai pas eu de symptômes aujourd’hui'
     const requiredLabel = 'Veuillez remplir le formulaire au complet'
-    toggleFormButtonOnRadioRequired(form, button.value, uncheckedLabel, requiredLabel)
+    toggleFormButtonOnCheckboxAndRadioRequired(
+        form,
+        button.value,
+        uncheckedLabel,
+        requiredLabel
+    )
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         const form = event.target

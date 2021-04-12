@@ -838,19 +838,43 @@ Les principaux signes sont la fièvre, la toux, la perte du goût/odorat, le mal
 
 
 
-## [question_vaccins_aide.md](question_vaccins_aide.md)
+## [question_vaccins_completement_libellé.md](question_vaccins_completement_libellé.md)
 
-Une personne vaccinée a été au bout de son processus de vaccination (1 ou 2 doses selon les cas).
+<!---->J’ai été <b>complètement vacciné·e</b>
+
+---
+
+<!---->Cette personne a été <b>complètement vaccinée</b>
+
+
+
+## [question_vaccins_en_cours_libellé.md](question_vaccins_en_cours_libellé.md)
+
+<!---->Je suis <b>en cours de vaccination</b>
+
+---
+
+<!---->Cette personne est <b>en cours de vaccination</b>
 
 
 
 ## [question_vaccins_libellé.md](question_vaccins_libellé.md)
 
-<!---->J’ai été complètement <b>vacciné·e</b> contre la Covid
+<!---->Mon statut actuel de vaccination contre la Covid :
 
 ---
 
-<!---->Cette personne a été complètement <b>vacciné·e</b> contre la Covid
+<!---->Son statut actuel de vaccination contre la Covid :
+
+
+
+## [question_vaccins_pas_encore_libellé.md](question_vaccins_pas_encore_libellé.md)
+
+<!---->Je ne suis <b>pas encore vacciné·e</b>
+
+---
+
+<!---->Cette personne n’est <b>pas encore vaccinée</b>
 
 
 
