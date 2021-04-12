@@ -11,11 +11,15 @@
 
 Une stratégie de vaccination spécifique sera mise en place pour les publics particuliers (dont enseignants). La vaccination est **gratuite** pour tous, et n’est **pas obligatoire**.
 
-La vaccination apprend à votre corps à reconnaître le virus et à le combattre. Les vaccins sont conçus pour éviter les symptômes et les formes graves de la maladie mais **ils n’empêchent pas la contamination**. La protection est maximale 15 jours après l’administration de la seconde dose.
+La vaccination apprend à votre corps à reconnaître le virus et à le combattre mais **elle n’empêche pas de le contracter ou de le transmettre**.
 
-Les résultats des tests sur les vaccins ne permettent pas d’affirmer qu’une personne vaccinée ne peut plus transmettre le virus. Même vacciné, il faut continuer à respecter les gestes barrières (distanciation et port du masque) et les mesures de prévention (test, isolement) notamment pour protéger les personnes qui ne sont pas encore vaccinées. Après avoir été vacciné·e, **si vous avez des symptômes qui évoquent la Covid, il faut vous isoler et faire un test**.
+**Même vacciné·e**, il faut continuer à respecter les gestes barrières (distanciation et port du masque) et les mesures de prévention (test, isolement) notamment pour protéger les personnes qui ne sont pas encore vaccinées.
 
-Les vaccins Comirnaty<sup>®</sup> (Pfizer/BioNTech) et Moderna<sup>®</sup> ne sont pas recommandés chez des personnes ayant présenté des manifestations allergiques graves, telles que des réactions anaphylactiques.
+La protection est maximale 15 jours après l’administration de la seconde dose.
+
+Si vous avez des **symptômes** alors que vous êtes vacciné·e, il faut **vous isoler et faire un test**.
+
+Les vaccins Comirnaty<sup>®</sup> (Pfizer/BioNTech) et Moderna<sup>®</sup> ne sont pas recommandés chez des personnes ayant présenté des **manifestations allergiques graves**, telles que des réactions anaphylactiques.
 
 Les **femmes enceintes** peuvent se faire vacciner à partir du 2<sup>e</sup> trimestre de grossesse. Les vaccins à ARNm Comirnaty<sup>®</sup> (Pfizer/BioNTech) et Moderna<sup>®</sup> sont à privilégier pour les femmes enceintes. Il n’y a pas d’effet attendu chez le nourrisson et l’enfant allaités par une femme vaccinée.
 
