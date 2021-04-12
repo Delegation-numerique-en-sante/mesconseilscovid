@@ -1,32 +1,26 @@
-import {
-    preloadCheckboxForm,
-    toggleFormButtonOnTextFieldsAndRadioRequired,
-} from '../../formutils'
+import { createEvent, toggleFormButtonOnRadioRequired } from '../../formutils'
 
 export default function vaccins(form, app) {
     premierDemarrageFormulaire(app)
 
     // Remplir le formulaire avec les données du profil.
-    preloadCheckboxForm(form, 'vaccins', app.profil)
+    if (app.profil.vaccins) {
+        form['vaccins_radio'].value = 'completement'
+        // L’indice n’est pas significatif, on veut que l’évènement soit
+        // envoyé pour n’importe laquelle des options.
+        form['vaccins_radio'][0].dispatchEvent(createEvent('change'))
+    }
 
     // Le libellé du bouton change en fonction des choix.
-    var button = form.querySelector('input[type=submit]')
-    const uncheckedLabel = app.profil.estMonProfil()
-        ? 'Je n’ai pas été vacciné·e'
-        : 'Cette personne n’a pas été vacciné·e'
+    const button = form.querySelector('input[type=submit]')
     const requiredLabel = 'Veuillez remplir le formulaire au complet'
-    toggleFormButtonOnTextFieldsAndRadioRequired(
-        form,
-        button.value,
-        uncheckedLabel,
-        requiredLabel
-    )
+    toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
 
     // Soumission du formulaire.
-    form.addEventListener('submit', function (event) {
+    form.addEventListener('submit', (event) => {
         event.preventDefault()
         const form = event.target
-        app.profil.vaccins = form.elements['vaccins'].checked
+        app.profil.vaccins = form.elements['vaccins_radio'].value === 'completement'
 
         app.enregistrerProfilActuel().then(() => {
             app.goToNextPage('vaccins')

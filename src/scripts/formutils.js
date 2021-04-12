@@ -145,6 +145,29 @@ export function toggleFormButtonOnCheckRequired(
 export function toggleFormButtonOnRadioRequired(
     formElement,
     continueLabel,
+    requiredLabel
+) {
+    const form = new Form(formElement)
+    const button = form.submitButton
+    const radios = Array.from(form.qSA('input[type=radio]'))
+
+    function updateSubmitButtonLabelRequired() {
+        button.disabled = false
+        button.value = continueLabel
+        if (!someChecked(radios)) {
+            button.disabled = true
+            button.value = requiredLabel
+        }
+    }
+    updateSubmitButtonLabelRequired()
+    radios.forEach((elem) =>
+        elem.addEventListener('change', updateSubmitButtonLabelRequired)
+    )
+}
+
+export function toggleFormButtonOnCheckboxAndRadioRequired(
+    formElement,
+    continueLabel,
     uncheckedLabel,
     requiredLabel
 ) {
