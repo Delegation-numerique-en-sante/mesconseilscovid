@@ -69,7 +69,8 @@ export default class AlgorithmeOrientation {
         ) {
             return 'antigenique_negatif_fragile'
         } else if (
-            this.profil.depistage_type === 'antigenique' &&
+            (this.profil.depistage_type === 'antigenique' ||
+                this.profil.depistage_type === 'antigenique_autotest') &&
             this.profil.depistage_resultat === 'positif'
         ) {
             return 'antigenique_positif'

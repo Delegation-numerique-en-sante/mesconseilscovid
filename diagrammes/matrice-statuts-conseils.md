@@ -9,7 +9,7 @@
         </tr>
         <tr>
             <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Test RT-PCR</th>
-            <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Test antigénique</th>
+            <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Test antigénique ou autotest</th>
             <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Test antigénique<br>(personne fragile)</th>
             <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Autres cas</th>
         </tr>

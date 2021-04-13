@@ -694,7 +694,7 @@ Retrouvez le <a href="#conseils-depistage" class="lien-depistage">lieu de test l
 
 * Les tests de dépistage sont **gratuits pour tous et accessibles** sans prescription médicale, sans même présenter de symptômes.
 * Les **tests antigéniques** réalisés en pharmacie permettent d’avoir des résultats plus rapidement mais ils sont moins fiables que les tests PCR en laboratoire.
-* <span class="nouveau">nouveau</span> À partir du 12 avril, des **auto-tests** seront disponibles en pharmacie. Ils sont moins fiables que les tests PCR et antigéniques. En cas d’auto-test positif, le résultat doit être **confirmé** par un test PCR en laboratoire.
+* <span class="nouveau">nouveau</span> Depuis le 12 avril, des **auto-tests** sont disponibles en pharmacie. Ils sont moins fiables que les tests PCR et antigéniques. En cas d’auto-test positif, le résultat doit être **confirmé** par un test PCR en laboratoire.
 
 * Plus d’informations :
     * Les prochaines étapes du parcours : [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_-_nouveau.pdf)

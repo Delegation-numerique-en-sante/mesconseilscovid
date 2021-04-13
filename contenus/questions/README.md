@@ -257,6 +257,12 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 
 
+## [question_dépistage_antigenique_autotest_libellé.md](question_dépistage_antigenique_autotest_libellé.md)
+
+<!---->C’était un <b>auto-test</b> (vendu en pharmacie)
+
+
+
 ## [question_dépistage_antigénique_libellé.md](question_dépistage_antigénique_libellé.md)
 
 <!---->C’était un <b>test antigénique rapide</b> (résultat en 15 à 30 minutes)
