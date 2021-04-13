@@ -25,6 +25,8 @@ export default function depistage(form, app) {
             form.querySelector('#depistage_type_antigenique').checked = true
         } else if (app.profil.depistage_type === 'rt-pcr') {
             form.querySelector('#depistage_type_rtpcr').checked = true
+        } else if (app.profil.depistage_type === 'antigenique_autotest') {
+            form.querySelector('#depistage_type_antigenique_autotest').checked = true
         }
 
         if (app.profil.depistage_resultat === 'positif') {
