@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-04-14
+
+* mise à jour des contenus relatifs aux vaccins
+* possibilité de déclarer une situation en cours de vaccination
+* ajout du choix relatif à l’auto-test dans le formulaire
+
 ## 2021-04-09
 
 * mise à jour des contenus relatifs aux mesures barrières
