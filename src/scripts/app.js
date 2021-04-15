@@ -20,7 +20,8 @@ export default class App {
         this._plausible = registerPlausible(window)
         this.atinternet = registerATInternet()
 
-        this.source = new URLSearchParams(window.location.search).get('source')
+        const searchParams = new URLSearchParams(window.location.search)
+        this.source = searchParams.get('source') || searchParams.get('utm_source')
     }
     init() {
         this.router = initRouter(this)
@@ -153,7 +154,7 @@ export default class App {
             props['profil'] = this.profil.estMonProfil() ? 'moi' : 'proche'
         }
         if (searchParams.toString().length) {
-            const source = searchParams.get('source')
+            const source = searchParams.get('source') || searchParams.get('utm_source')
             if (source) {
                 props['source'] = source
             }
