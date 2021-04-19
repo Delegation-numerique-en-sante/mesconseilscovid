@@ -523,9 +523,9 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
-        it('Cas > 75 ans et antécédents', function () {
+        it('Cas > 60 ans et antécédents', function () {
             var profil = new Profil('mes_infos', {
-                age: 80,
+                age: 64,
                 activite_pro_sante: false,
                 antecedent_cardio: true,
             })
@@ -534,7 +534,7 @@ describe('Blocs d’informations additionnels', function () {
                 'reponse-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-pas-encore-vaccine',
                 'reponse-historique-sans',
-                'conseils-vaccins-75-ans',
+                'conseils-vaccins-60-ans',
             ])
         })
 
