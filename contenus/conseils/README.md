@@ -764,25 +764,25 @@ Vous avez plus de 50 ans, et vous êtes considéré·e comme une personne ayant
 
 
 
-## [conseils_vaccins_6_mois_plus.md](conseils_vaccins_6_mois_plus.md)
+## [conseils_vaccins_60_ans.md](conseils_vaccins_60_ans.md)
 
 <div class="conseil">
 
-Vous avez eu la Covid il y a plus de 6 mois, **vous pouvez vous faire vacciner**, une seule dose est requise dans ce cas.
+Vous avez plus de 60 ans, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" class="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
+
+Les plages de rendez-vous sont ouvertes au fur et à mesure par les centres de vaccination.
+
+Si vous n’arrivez à trouver un rendez-vous en ligne, vous pouvez appeler le centre de vaccination au numéro indiqué sur <a href="#conseils-vaccins" class="lien-vaccination">la liste des lieux de vaccination</a> et leur demander de vous inscrire sur **liste d’attente**. N’hésitez pas à vous rapprocher de votre mairie, certaines gérent également des listes d’attentes.
 
 </div>
 
 
 
-## [conseils_vaccins_75_ans.md](conseils_vaccins_75_ans.md)
+## [conseils_vaccins_6_mois_plus.md](conseils_vaccins_6_mois_plus.md)
 
 <div class="conseil">
 
-Vous avez plus de 75 ans, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" class="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
-
-Les plages de rendez-vous sont ouvertes au fur et à mesure par les centres de vaccination.
-
-Si vous n’arrivez à trouver un rendez-vous en ligne, vous pouvez appeler le centre de vaccination au numéro indiqué sur <a href="#conseils-vaccins" class="lien-vaccination">la liste des lieux de vaccination</a> et leur demander de vous inscrire sur **liste d’attente**. N’hésitez pas à vous rapprocher de votre mairie, certaines gérent également des listes d’attentes.
+Vous avez eu la Covid il y a plus de 6 mois, **vous pouvez vous faire vacciner**, une seule dose est requise dans ce cas.
 
 </div>
 
@@ -860,11 +860,10 @@ Vous avec un traitement de longue durée ou une maladie chronique. Nous vous inv
 <span class="nouveau">nouveau</span> Le déploiement de la vaccination se fait en plusieurs phases :
 
 * dès maintenant :
-   * les personnes de **70 ans ou plus** : chez leur médecin traitant, en centre de vaccination, ou dans leur établissement (Ehpad, USLD, par exemple) ;
-   * les personnes entre **50 et 69 ans** qui ont [un risque](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/article/la-strategie-vaccinale-et-la-liste-des-publics-prioritaires#liste-comor) de développer une forme grave de Covid (diabète, cancer, obésité, etc.) : chez leur médecin traitant, ou sur leur lieu de travail ;
+   * les personnes de **60 ans ou plus** : chez leur médecin traitant, en centre de vaccination, ou dans leur établissement (Ehpad, USLD, par exemple) ;
+   * les personnes entre **50 et 59 ans** qui ont [un risque](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/article/la-strategie-vaccinale-et-la-liste-des-publics-prioritaires#liste-comor) de développer une forme grave de Covid (diabète, cancer, obésité, etc.) : chez leur médecin traitant, ou sur leur lieu de travail ;
    * les personnes présentant un risque de développer une forme très grave de Covid (cancer, dialyse, trisomie 21, etc.) : chez leur médecin traitant, ou médecin du travail, ou lieu de soin, ou en centre de vaccination avec une **ordonnance de leur médecin traitant** ;
    * les **professionnels de santé** au sens large et les **sapeurs-pompiers** ;
-* à partir du 16 avril : les personnes de **plus de 60 ans** ;
 * à partir du 15 mai : les personnes de **plus de 50 ans** ;
 * mi-juin, la vaccination sera **ouverte à toutes les personnes** de 18 ans et plus.
 
