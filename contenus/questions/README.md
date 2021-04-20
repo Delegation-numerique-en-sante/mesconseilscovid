@@ -784,27 +784,27 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_libellé_non.md](question_symptômes_libellé_non.md)
 
-<!---->Non, <b>pas récemment</b>
+<!----><b>Pas récemment</b>
 
 
 
 ## [question_symptômes_libellé_oui.md](question_symptômes_libellé_oui.md)
 
-<!---->Oui, j’en ai <b>aujourd’hui</b>
+<!---->J’en ai <b>aujourd’hui</b>
 
 ---
 
-<!---->Oui, cette personne en a <b>aujourd’hui</b>
+<!---->Cette personne en a <b>aujourd’hui</b>
 
 
 
 ## [question_symptômes_libellé_passés.md](question_symptômes_libellé_passés.md)
 
-<!---->Non, mais <b>j’en ai eu</b> dans les 7 derniers jours
+<!----><b>J’en ai eu</b> dans les 7 derniers jours
 
 ---
 
-<!---->Non, mais <b>cette personne en a eu</b> dans les 7 derniers jours
+<!----><b>Cette personne en a eu</b> dans les 7 derniers jours
 
 
 
