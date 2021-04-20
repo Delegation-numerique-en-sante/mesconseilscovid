@@ -133,6 +133,7 @@ export default class Profil {
         this.contact_a_risque_contact_direct = undefined
         this.contact_a_risque_actes = undefined
         this.contact_a_risque_espace_confine = undefined
+        this.contact_a_risque_tousse_eternue = undefined
         this.contact_a_risque_meme_classe = undefined
         this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_assurance_maladie = undefined
@@ -216,6 +217,7 @@ export default class Profil {
         this.contact_a_risque_contact_direct = data['contact_a_risque_contact_direct']
         this.contact_a_risque_actes = data['contact_a_risque_actes']
         this.contact_a_risque_espace_confine = data['contact_a_risque_espace_confine']
+        this.contact_a_risque_tousse_eternue = data['contact_a_risque_tousse_eternue']
         this.contact_a_risque_meme_classe = data['contact_a_risque_meme_classe']
         this.contact_a_risque_stop_covid = data['contact_a_risque_stop_covid']
         this.contact_a_risque_assurance_maladie =
@@ -304,6 +306,7 @@ export default class Profil {
         this.contact_a_risque_contact_direct = undefined
         this.contact_a_risque_actes = undefined
         this.contact_a_risque_espace_confine = undefined
+        this.contact_a_risque_tousse_eternue = undefined
         this.contact_a_risque_meme_classe = undefined
         this.contact_a_risque_stop_covid = undefined
         this.contact_a_risque_assurance_maladie = undefined
@@ -330,6 +333,7 @@ export default class Profil {
             contact_a_risque_contact_direct: false,
             contact_a_risque_actes: false,
             contact_a_risque_espace_confine: false,
+            contact_a_risque_tousse_eternue: false,
             contact_a_risque_meme_classe: false,
             contact_a_risque_stop_covid: false,
             contact_a_risque_assurance_maladie: false,
@@ -457,6 +461,7 @@ export default class Profil {
             contact_a_risque_contact_direct: this.contact_a_risque_contact_direct,
             contact_a_risque_actes: this.contact_a_risque_actes,
             contact_a_risque_espace_confine: this.contact_a_risque_espace_confine,
+            contact_a_risque_tousse_eternue: this.contact_a_risque_tousse_eternue,
             contact_a_risque_meme_classe: this.contact_a_risque_meme_classe,
             contact_a_risque_stop_covid: this.contact_a_risque_stop_covid,
             contact_a_risque_assurance_maladie: this.contact_a_risque_assurance_maladie,

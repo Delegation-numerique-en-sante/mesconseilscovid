@@ -14,6 +14,7 @@ export default function contactarisque(form, app) {
     preloadCheckboxForm(form, 'contact_a_risque_contact_direct', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_actes', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_espace_confine', app.profil)
+    preloadCheckboxForm(form, 'contact_a_risque_tousse_eternue', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_meme_classe', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_autre', app.profil)
 
@@ -47,6 +48,8 @@ export default function contactarisque(form, app) {
             event.target.elements['contact_a_risque_actes'].checked
         app.profil.contact_a_risque_espace_confine =
             event.target.elements['contact_a_risque_espace_confine'].checked
+        app.profil.contact_a_risque_tousse_eternue =
+            event.target.elements['contact_a_risque_tousse_eternue'].checked
         app.profil.contact_a_risque_meme_classe =
             event.target.elements['contact_a_risque_meme_classe'].checked
         app.profil.contact_a_risque_stop_covid =

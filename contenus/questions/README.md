@@ -725,11 +725,11 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_contact_à_risque_espace_confiné_libellé.md](question_symptômes_contact_à_risque_espace_confiné_libellé.md)
 
-<!---->J’ai été dans un petit espace (lieu de vie, bureau ou salle de réunion, véhicule personnel…) pendant au moins 15 minutes avec cette personne, ou je suis resté face à elle lorsqu’elle a toussé ou éternué
+<!---->J’ai été dans un petit espace (lieu de vie, bureau, salle de réunion, véhicule personnel…) pendant au moins 15 minutes avec cette personne
 
 ---
 
-<!---->Il ou elle a été dans un petit espace (lieu de vie, bureau ou salle de réunion, véhicule personnel…) pendant au moins 15 minutes avec cette personne, ou est resté face à elle lorsqu’elle a toussé ou éternué
+<!---->Il ou elle a été dans un petit espace (lieu de vie, bureau, salle de réunion, véhicule personnel…) pendant au moins 15 minutes avec cette personne
 
 
 
@@ -779,6 +779,16 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 ---
 
 <!---->Ses contacts récents
+
+
+
+## [question_symptômes_contact_à_risque_toussé_éternué_libellé.md](question_symptômes_contact_à_risque_toussé_éternué_libellé.md)
+
+<!---->Je suis resté·e face à elle lorsqu’elle a toussé ou éternué
+
+---
+
+<!---->Il ou elle est resté·e face à elle lorsqu’elle a toussé ou éternué
 
 
 
