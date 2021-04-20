@@ -1,5 +1,5 @@
-<!---->Oui, j’en ai <b>aujourd’hui</b>
+<!---->J’en ai <b>aujourd’hui</b>
 
 ---
 
-<!---->Oui, cette personne en a <b>aujourd’hui</b>
+<!---->Cette personne en a <b>aujourd’hui</b>

@@ -1,5 +1,5 @@
-<!---->Non, mais <b>j’en ai eu</b> dans les 7 derniers jours
+<!----><b>J’en ai eu</b> dans les 7 derniers jours
 
 ---
 
-<!---->Non, mais <b>cette personne en a eu</b> dans les 7 derniers jours
+<!----><b>Cette personne en a eu</b> dans les 7 derniers jours
