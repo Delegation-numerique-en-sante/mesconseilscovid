@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-04-20
+
+* mise à jour du calendrier de vaccination
+* clarification des réponses à certaines questions
+
 ## 2021-04-14
 
 * mise à jour des contenus relatifs aux vaccins
