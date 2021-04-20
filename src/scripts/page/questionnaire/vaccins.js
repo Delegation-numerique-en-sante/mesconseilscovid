@@ -5,7 +5,7 @@ export default function vaccins(form, app) {
 
     // Remplir le formulaire avec les données du profil.
     if (app.profil.vaccins) {
-        form['vaccins_radio'].value = 'completement'
+        form.querySelector('#vaccins_radio_completement').checked = true
         // L’indice n’est pas significatif, on veut que l’évènement soit
         // envoyé pour n’importe laquelle des options.
         form['vaccins_radio'][0].dispatchEvent(createEvent('change'))
