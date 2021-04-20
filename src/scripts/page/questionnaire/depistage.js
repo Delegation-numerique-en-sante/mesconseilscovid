@@ -1,3 +1,4 @@
+import { hideElement, showElement } from '../../affichage'
 import { addDatePickerPolyfill } from '../../datepicker'
 import {
     enableOrDisableSecondaryFields,
@@ -44,6 +45,28 @@ export default function depistage(form, app) {
     primary.addEventListener('click', function () {
         enableOrDisableSecondaryFields(form, primary)
     })
+
+    // On ne propose "en attente" que pour les tests RT-PCR.
+    const enAttente = form.querySelector('#depistage_resultat_en_attente')
+    const enAttenteLabel = form.querySelector(
+        'label[for="depistage_resultat_en_attente"]'
+    )
+    function afficherOuCacherEnAttente() {
+        if (getRadioValue(form, 'depistage_type') == 'rt-pcr') {
+            showElement(enAttente)
+            showElement(enAttenteLabel)
+        } else {
+            enAttente.checked = false
+            hideElement(enAttente)
+            hideElement(enAttenteLabel)
+        }
+    }
+    afficherOuCacherEnAttente()
+    Array.from(form.querySelectorAll('input[name="depistage_type"]')).forEach(
+        (elem) => {
+            elem.addEventListener('change', afficherOuCacherEnAttente)
+        }
+    )
 
     // Le libellé du bouton change en fonction des choix.
     var button = form.querySelector('input[type=submit]')
