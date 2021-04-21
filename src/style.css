@@ -1313,6 +1313,13 @@ a[href*='youtube.com']::after {
 .satellite #conseils-block #conseils-block-titre {
     margin-bottom: 3rem;
 }
+.satellite #conseils-block h2 {
+    padding-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+.satellite .form-controls a.button {
+    margin-top: 0.5rem;
+}
 
 @media print {
     a {
