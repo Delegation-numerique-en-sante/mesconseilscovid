@@ -1,11 +1,15 @@
-import { createEvent, toggleFormButtonOnRadioRequired } from '../../formutils'
+import {
+    createEvent,
+    getRadioValue,
+    toggleFormButtonOnRadioRequired,
+} from '../../formutils'
 
 export default function vaccins(form, app) {
     premierDemarrageFormulaire(app)
 
     // Remplir le formulaire avec les données du profil.
-    if (app.profil.vaccins) {
-        form.querySelector('#vaccins_radio_completement').checked = true
+    if (typeof app.profil.vaccins !== 'undefined') {
+        form.querySelector('#vaccins_radio_' + app.profil.vaccins).checked = true
         // L’indice n’est pas significatif, on veut que l’évènement soit
         // envoyé pour n’importe laquelle des options.
         form['vaccins_radio'][0].dispatchEvent(createEvent('change'))
@@ -20,7 +24,7 @@ export default function vaccins(form, app) {
     form.addEventListener('submit', (event) => {
         event.preventDefault()
         const form = event.target
-        app.profil.vaccins = form.elements['vaccins_radio'].value === 'completement'
+        app.profil.vaccins = getRadioValue(form, 'vaccins_radio')
 
         app.enregistrerProfilActuel().then(() => {
             app.goToNextPage('vaccins')

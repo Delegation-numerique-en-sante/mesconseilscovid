@@ -160,26 +160,12 @@ async function remplirDepistage(page, depistage, date, type, resultat) {
 }
 
 async function remplirVaccins(page, vaccins) {
-    let text
-    let radio_label
+    let radio_label = await page.waitForSelector(
+        `#page.ready label[for="vaccins_radio_${vaccins}"]`
+    )
+    await radio_label.click()
 
-    if (vaccins) {
-        radio_label = await page.waitForSelector(
-            '#page.ready label[for="vaccins_radio_completement"]'
-        )
-        await radio_label.click()
-
-        text = '"Continuer"'
-    } else {
-        radio_label = await page.waitForSelector(
-            '#page.ready label[for="vaccins_radio_pas_encore"]'
-        )
-        await radio_label.click()
-
-        text = '"Continuer"'
-    }
-
-    let bouton = await page.waitForSelector(`#page.ready >> text=${text}`)
+    let bouton = await page.waitForSelector(`#page.ready >> text="Continuer"`)
     await Promise.all([
         bouton.click(),
         page.waitForNavigation({ url: `**/#historique` }),

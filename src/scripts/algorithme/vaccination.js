@@ -40,6 +40,10 @@ export default class AlgorithmeVaccination {
         )
     }
 
+    isCompletementVaccine() {
+        return this.profil.vaccins === 'completement'
+    }
+
     isVaccinable() {
         return (
             this.isSup60() ||

@@ -24,7 +24,7 @@ describe('Parcours', function () {
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
-            vaccins: false,
+            vaccins: 'pas_encore',
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],
@@ -110,7 +110,7 @@ describe('Parcours', function () {
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
-            vaccins: false,
+            vaccins: 'pas_encore',
             symptomesActuels: ['temperature'],
             debutSymptomes: 'aujourdhui',
             depistage: false,
@@ -160,7 +160,7 @@ describe('Parcours', function () {
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
-            vaccins: false,
+            vaccins: 'pas_encore',
             symptomesActuels: ['souffle'],
             debutSymptomes: 'aujourdhui',
             depistage: false,
@@ -198,7 +198,7 @@ describe('Parcours', function () {
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
-            vaccins: false,
+            vaccins: 'pas_encore',
             symptomesActuels: [],
             symptomesPasses: true,
             debutSymptomes: 'hier',
@@ -238,7 +238,7 @@ describe('Parcours', function () {
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
-            vaccins: false,
+            vaccins: 'pas_encore',
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: ['contact_direct'],
@@ -288,6 +288,7 @@ describe('Parcours', function () {
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
+            vaccins: 'pas_encore',
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],
@@ -338,6 +339,7 @@ describe('Parcours', function () {
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
+            vaccins: 'pas_encore',
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],
@@ -388,7 +390,7 @@ describe('Parcours', function () {
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
-            vaccins: false,
+            vaccins: 'pas_encore',
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],
@@ -441,7 +443,7 @@ describe('Parcours', function () {
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
-            vaccins: false,
+            vaccins: 'pas_encore',
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],
@@ -492,7 +494,7 @@ describe('Parcours', function () {
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
-            vaccins: false,
+            vaccins: 'pas_encore',
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],

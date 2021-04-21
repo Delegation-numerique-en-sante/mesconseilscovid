@@ -52,13 +52,19 @@ Vous n’avez <b>jamais</b> eu la Covid (<a href="#historique">modifier</a>)
 
 
 
-## [reponse_vaccins_deja_vaccine.md](reponse_vaccins_deja_vaccine.md)
+## [reponse_vaccins_completement.md](reponse_vaccins_completement.md)
 
-Vous avez <b>déjà</b> été vacciné·e (<a href="#vaccins">modifier</a>)
+Vous avez <b>déjà</b> été complètement vacciné·e (<a href="#vaccins">modifier</a>)
 
 
 
-## [reponse_vaccins_pas_encore_vaccine.md](reponse_vaccins_pas_encore_vaccine.md)
+## [reponse_vaccins_en_cours.md](reponse_vaccins_en_cours.md)
+
+Vous avez <b>déjà</b> été partiellement vacciné·e (<a href="#vaccins">modifier</a>)
+
+
+
+## [reponse_vaccins_pas_encore.md](reponse_vaccins_pas_encore.md)
 
 Vous n’avez <b>pas encore</b> été vacciné·e (<a href="#vaccins">modifier</a>)
 

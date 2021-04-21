@@ -422,9 +422,9 @@ describe('Blocs d’informations additionnels', function () {
             var profil = new Profil('mes_infos', {})
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'reponse-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-pas-encore-vaccine',
+                'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
+                'conseils-vaccins-pas-encore-vaccine',
             ])
         })
 
@@ -435,9 +435,9 @@ describe('Blocs d’informations additionnels', function () {
             profil.covid_passee_date = joursAvant(30 * 7)
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'reponse-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-pas-encore-vaccine',
+                'reponse-vaccins-pas-encore',
                 'reponse-historique-6-mois-plus',
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-6-mois-plus',
             ])
         })
@@ -449,9 +449,9 @@ describe('Blocs d’informations additionnels', function () {
             profil.covid_passee_date = joursAvant(30 * 4)
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'reponse-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-pas-encore-vaccine',
+                'reponse-vaccins-pas-encore',
                 'reponse-historique-3-6-mois',
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-3-6-mois',
             ])
         })
@@ -463,18 +463,18 @@ describe('Blocs d’informations additionnels', function () {
             profil.covid_passee_date = joursAvant(30 * 2)
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'reponse-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-pas-encore-vaccine',
+                'reponse-vaccins-pas-encore',
                 'reponse-historique-3-mois-moins',
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-3-mois-moins',
             ])
         })
 
         it('Cas général (déjà vacciné)', function () {
-            var profil = new Profil('mes_infos', { vaccins: true })
+            var profil = new Profil('mes_infos', { vaccins: 'completement' })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'reponse-vaccins-deja-vaccine',
+                'reponse-vaccins-completement',
                 'conseils-vaccins-deja-vaccine',
             ])
         })
@@ -486,9 +486,9 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'reponse-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-pas-encore-vaccine',
+                'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-activite-pro-sante',
             ])
         })
@@ -501,9 +501,9 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'reponse-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-pas-encore-vaccine',
+                'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-demande-medecin',
             ])
         })
@@ -516,9 +516,9 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'reponse-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-pas-encore-vaccine',
+                'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-50-ans-a-risque',
             ])
         })
@@ -531,9 +531,9 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'reponse-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-pas-encore-vaccine',
+                'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-60-ans',
             ])
         })
@@ -544,9 +544,9 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'reponse-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-pas-encore-vaccine',
+                'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-tres-haut-risque',
             ])
         })
@@ -557,9 +557,9 @@ describe('Blocs d’informations additionnels', function () {
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'reponse-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-pas-encore-vaccine',
+                'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
+                'conseils-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-demande-medecin',
             ])
         })
