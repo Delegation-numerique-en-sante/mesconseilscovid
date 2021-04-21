@@ -3,7 +3,7 @@
 
 <div class="js-intro">
 
-<p class="tagline">Obtenir en 3 minutes des conseils personnalisés<br>
-pour <b>ma santé</b> et celle de mes proches.</p>
+<p class="tagline">Obtenez en 3 minutes des conseils simples
+et à jour<br>pour savoir quoi faire face à la Covid.</p>
 
 </div>
