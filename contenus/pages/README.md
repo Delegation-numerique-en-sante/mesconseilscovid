@@ -51,7 +51,7 @@ Faire un test **antigénique en pharmacie immédiatement** (voir la [carte des l
 * Je suis cas contact de cas contact, qu’est-ce que ça veut dire ?
 * J’ai un rendez-vous pour me faire vacciner, puis-je y aller ?
 
-### <small>Nous vous invitons à compléter notre formulaire anonyme pour avoir des conseils personnalisés sur la Covid en moins de 3 minutes :</small>
+### <small>Répondez à quelques questions pour savoir quoi faire si vous êtes cas contact :</small>
 
 <div class="form-controls">
     <div class="button-full-width">
