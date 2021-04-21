@@ -98,7 +98,7 @@ Si votre situation change, vous pouvez **mettre à jour vos réponses**, par exe
 
 <div class="js-intro">
 
-<p class="tagline">Obtenez en 3 minutes des conseils simples
+<p class="tagline">Obtenez en 3 minutes des réponses claires
 et à jour<br>pour savoir quoi faire face à la Covid.</p>
 
 </div>
