@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import fnmatch
 import os
+import re
 from html.parser import HTMLParser
 from http import HTTPStatus
 from pathlib import Path
@@ -21,8 +22,7 @@ CONTENUS_DIR = HERE / "contenus"
 jinja_env = JinjaEnv(loader=FileSystemLoader(str(SRC_DIR)), undefined=StrictUndefined)
 
 
-class FrenchTypographyRenderer(mistune.HTMLRenderer):
-
+class FrenchTypographyMixin:
     def text(self, text_):
         return typographie(super().text(text_))
 
@@ -30,8 +30,33 @@ class FrenchTypographyRenderer(mistune.HTMLRenderer):
         return typographie(super().block_html(html))
 
 
+class CSSMixin:
+    RE_CLASS = re.compile(
+        r"""^
+                (?P<before>.*?)
+                (?:\s*\{\.(?P<class>[\w\-]+?)\}\s*)
+                (?P<after>.*)
+                $
+            """,
+        re.MULTILINE | re.VERBOSE,
+    )
+
+    def list_item(self, text, level):
+        mo = self.RE_CLASS.match(text)
+        if mo is not None:
+            class_ = mo.group("class")
+            text = " ".join(filter(None, [mo.group("before"), mo.group("after")]))
+            return f'<li class="{class_}">{text}</li>\n'
+        return super().list_item(text, level)
+
+
+class CustomHTMLRenderer(FrenchTypographyMixin, CSSMixin, mistune.HTMLRenderer):
+    pass
+
+
 markdown = mistune.create_markdown(
-    escape=False, renderer=FrenchTypographyRenderer(escape=False)
+    escape=False,
+    renderer=CustomHTMLRenderer(escape=False),
 )
 
 
