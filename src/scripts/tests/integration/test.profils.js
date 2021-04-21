@@ -40,7 +40,7 @@ describe('Profils', function () {
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
-            vaccins: false,
+            vaccins: 'pas_encore',
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],

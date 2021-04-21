@@ -55,7 +55,7 @@ describe('Plausible', function () {
         ])
 
         await remplirQuestionnaire(page, {
-            vaccins: false,
+            vaccins: 'pas_encore',
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],
@@ -114,7 +114,7 @@ describe('Plausible', function () {
 
         await remplirQuestionnaire(page, {
             nom: 'Mamie',
-            vaccins: false,
+            vaccins: 'pas_encore',
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],
@@ -174,7 +174,7 @@ describe('Plausible', function () {
             page.waitForNavigation({ url: '**/#vaccins' }),
         ])
         await remplirQuestionnaire(page, {
-            vaccins: false,
+            vaccins: 'pas_encore',
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],
@@ -231,7 +231,7 @@ describe('Plausible', function () {
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
         await remplirQuestionnaire(page, {
             nom: 'Papy',
-            vaccins: false,
+            vaccins: 'pas_encore',
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],

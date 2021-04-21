@@ -231,7 +231,11 @@ export default class Profil {
         this.depistage_variante = data['depistage_variante']
         this._depistage_start_date = data['_depistage_start_date']
 
-        this.vaccins = data['vaccins']
+        if (typeof data['vaccins'] === 'boolean') {
+            this.vaccins = data['vaccins'] ? 'completement' : 'pas_encore'
+        } else {
+            this.vaccins = data['vaccins']
+        }
 
         this.covid_passee = data['covid_passee']
         this._covid_passee_date = data['_covid_passee_date']
@@ -343,7 +347,7 @@ export default class Profil {
             depistage_type: '',
             depistage_resultat: '',
             depistage_variante: 'aucune',
-            vaccins: false,
+            vaccins: 'pas_encore',
             covid_passee: false,
             departement: '34',
             activite_pro: false,

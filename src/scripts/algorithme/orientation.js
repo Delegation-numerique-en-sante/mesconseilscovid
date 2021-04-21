@@ -433,29 +433,19 @@ export default class AlgorithmeOrientation {
     }
 
     vaccinBlockNamesToDisplay() {
-        const blockNames = []
-        function displayConseilsPersonnels(profil, algoOrientation) {
-            const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
-            if (algoVaccination.isProfessionnelDeSante()) {
-                blockNames.push('conseils-vaccins-activite-pro-sante')
-            } else if (algoVaccination.isSup60()) {
-                blockNames.push('conseils-vaccins-60-ans')
-            } else if (algoVaccination.isARisque()) {
-                if (algoVaccination.isTresHautRisque()) {
-                    blockNames.push('conseils-vaccins-tres-haut-risque')
-                } else if (algoVaccination.isSup50()) {
-                    blockNames.push('conseils-vaccins-50-ans-a-risque')
-                } else {
-                    blockNames.push('conseils-vaccins-demande-medecin')
-                }
-            }
-        }
-        if (this.profil.vaccins) {
-            blockNames.push('reponse-vaccins-deja-vaccine')
-            blockNames.push('conseils-vaccins-deja-vaccine')
+        let blockNames = []
+
+        // Rappel de la réponse sur la vaccination.
+        if (this.profil.vaccins === 'completement') {
+            blockNames.push('reponse-vaccins-completement')
+        } else if (this.profil.vaccins === 'en_cours') {
+            blockNames.push('reponse-vaccins-en-cours')
         } else {
-            blockNames.push('reponse-vaccins-pas-encore-vaccine')
-            blockNames.push('conseils-vaccins-pas-encore-vaccine')
+            blockNames.push('reponse-vaccins-pas-encore')
+        }
+
+        // Rappel de la réponse sur la Covid passée.
+        if (this.profil.vaccins !== 'completement') {
             if (this.profil.covid_passee) {
                 if (this.profil.hasCovidPlus6Mois()) {
                     blockNames.push('reponse-historique-6-mois-plus')
@@ -467,20 +457,48 @@ export default class AlgorithmeOrientation {
             } else {
                 blockNames.push('reponse-historique-sans')
             }
+        }
+
+        // Conseils personnalisés.
+        const algoVaccination = new AlgorithmeVaccination(this.profil, this)
+
+        if (algoVaccination.isCompletementVaccine()) {
+            blockNames.push('conseils-vaccins-deja-vaccine')
+        } else {
+            blockNames.push('conseils-vaccins-pas-encore-vaccine')
             if (this.profil.covid_passee) {
                 if (this.profil.hasCovidPlus6Mois()) {
                     blockNames.push('conseils-vaccins-6-mois-plus')
-                    displayConseilsPersonnels(this.profil, this)
+                    blockNames = blockNames.concat(
+                        this._conseilsVaccins(algoVaccination)
+                    )
                 } else if (this.profil.hasCovidPlus3Mois()) {
                     blockNames.push('conseils-vaccins-3-6-mois')
                 } else {
                     blockNames.push('conseils-vaccins-3-mois-moins')
                 }
             } else {
-                displayConseilsPersonnels(this.profil, this)
+                blockNames = blockNames.concat(this._conseilsVaccins(algoVaccination))
             }
         }
         return blockNames
+    }
+
+    _conseilsVaccins(algoVaccination) {
+        if (algoVaccination.isProfessionnelDeSante()) {
+            return ['conseils-vaccins-activite-pro-sante']
+        } else if (algoVaccination.isSup60()) {
+            return ['conseils-vaccins-60-ans']
+        } else if (algoVaccination.isARisque()) {
+            if (algoVaccination.isTresHautRisque()) {
+                return ['conseils-vaccins-tres-haut-risque']
+            } else if (algoVaccination.isSup50()) {
+                return ['conseils-vaccins-50-ans-a-risque']
+            } else {
+                return ['conseils-vaccins-demande-medecin']
+            }
+        }
+        return []
     }
 
     gestesBarriereBlockNamesToDisplay() {

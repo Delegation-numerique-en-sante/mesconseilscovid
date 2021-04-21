@@ -29,7 +29,7 @@ export function createProfil({
     depistage_resultat = '',
     depistage_variante = undefined,
     _depistage_start_date = undefined,
-    vaccins = false,
+    vaccins = 'pas_encore',
     covid_passee = false,
     _covid_passee_date = undefined,
     departement = '34',

@@ -34,7 +34,7 @@ describe('Pages', function () {
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
-            vaccins: false,
+            vaccins: 'pas_encore',
             depistage: false,
             symptomesActuels: [],
             symptomesPasses: false,
