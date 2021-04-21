@@ -68,6 +68,17 @@ export default function conseils(element, app) {
         hideSelector(element, '#conseils-statut')
     }
 
+    // Éléments conditionnés à une activité professionnelle.
+    const activitePro = app.profil.activite_pro || app.profil.activite_pro_sante
+    if (!activitePro) {
+        hideSelector(element, '.seulement-si-activite-pro')
+    }
+
+    // Éléments conditionnés à un foyer partagé.
+    if (!app.profil.foyer_autres_personnes) {
+        hideSelector(element, '.seulement-si-foyer')
+    }
+
     // Dynamic data injections.
     dynamicDataInjection(element, app.profil, algoOrientation)
 

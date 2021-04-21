@@ -409,7 +409,7 @@ Nous vous conseillons de :
     * Si le test est **négatif**, restez **en isolement**, et faites un test **7 jours après le dernier contact à risque** ;
         * s’il est **négatif**, vous pourrez lever votre isolement ;
         * s’il est **positif**, restez en isolement **au moins 10 jours** à partir de la date du test, et surveillez l’apparition de symptômes.
-5. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
+5. {.seulement-si-foyer} Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 6. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
 7. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
@@ -455,7 +455,7 @@ Même si vous avez été vacciné‚ nous vous conseillons de :
     * Si le test est **négatif**, restez **en isolement**, et faites un test **7 jours après le dernier contact à risque** ;
         * s’il est **négatif**, vous pourrez lever votre isolement ;
         * s’il est **positif**, restez en isolement **au moins 10 jours** à partir de la date du test, et surveillez l’apparition de symptômes.
-5. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
+5. {.seulement-si-foyer} Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 6. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
 7. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
@@ -467,9 +467,9 @@ Nous vous conseillons de :
 
 1. **Réaliser un test RT-PCR en laboratoire** en consultant la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a> (vous serez prioritaire), pour confirmer le résultat et identifier un éventuel **variant** du virus.
 2. Vous maintenir **en isolement** pendant au moins **10 jours** à partir de la date d’apparition des symptômes. Jusqu’au résultat du test RT-PCR :
-    * Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous en attendant le résultat.
+    * {.seulement-si-activite-pro} Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous en attendant le résultat.
     * Si le résultat est **négatif**, vous pourrez mettre fin à votre isolement.
-3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à <a href="#conseils-depistage" class="lien-depistage">réaliser un test</a>.
+3. {.seulement-si-foyer} Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à <a href="#conseils-depistage" class="lien-depistage">réaliser un test</a>.
 4. Si vous constatez l’apparition de **symptômes**, vous pouvez suivre leur évolution avec le [questionnaire de suivi](#suivisymptomes).
 5. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. Des outils, comme par exemple l’outil [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées et des lieux que vous avez fréquentés depuis le début de votre période contagieuse.
 6. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
@@ -483,9 +483,9 @@ Nous vous conseillons de :
 
 1. **Réaliser un test RT-PCR en laboratoire** en consultant la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a> (vous serez prioritaire), pour confirmer le résultat et identifier un éventuel **variant** du virus.
 2. Vous maintenir **en isolement** pendant au moins **10 jours** à partir de la date d’apparition des symptômes. Jusqu’au résultat du test RT-PCR :
-    * Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous en attendant le résultat.
+    * {.seulement-si-activite-pro} Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous en attendant le résultat.
     * Si le résultat est **négatif**, vous pourrez mettre fin à votre isolement.
-3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à <a href="#conseils-depistage" class="lien-depistage">réaliser un test</a>.
+3. {.seulement-si-foyer} Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à <a href="#conseils-depistage" class="lien-depistage">réaliser un test</a>.
 4. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 5. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 6. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
@@ -497,12 +497,13 @@ Nous vous conseillons de :
 
 Nous vous conseillons de :
 
-1. Vous maintenir **en isolement**, au moins 10 jours à partir de la date du test. Vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous.
-2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à <a href="#conseils-depistage" class="lien-depistage">réaliser un test</a>.
-3. Si vous constatez l’apparition de **symptômes**, vous pouvez suivre leur évolution avec le [questionnaire de suivi](#suivisymptomes).
-4. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. Des outils, comme par exemple l’outil [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées et des lieux que vous avez fréquentés depuis le début de votre période contagieuse.
-5. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
-6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+1. Vous maintenir **en isolement**, au moins 10 jours à partir de la date du test.
+2. {.seulement-si-activite-pro} Vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous.
+3. {.seulement-si-foyer} Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à <a href="#conseils-depistage" class="lien-depistage">réaliser un test</a>.
+4. Si vous constatez l’apparition de **symptômes**, vous pouvez suivre leur évolution avec le [questionnaire de suivi](#suivisymptomes).
+5. Contacter vos proches et les personnes que vous avez croisés dernièrement pour **limiter la chaîne de transmission**. Des outils, comme par exemple l’outil [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées et des lieux que vous avez fréquentés depuis le début de votre période contagieuse.
+6. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
+7. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 
 
@@ -510,12 +511,13 @@ Nous vous conseillons de :
 
 Nous vous conseillons de :
 
-1. Vous maintenir **en isolement**, au moins 10 jours à partir de la date d’apparition des symptômes, et de contacter votre médecin au moindre doute. Vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous.
-2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à <a href="#conseils-depistage" class="lien-depistage">réaliser un test</a>.
-3. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
-4. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
-5. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
-6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
+1. Vous maintenir **en isolement**, au moins 10 jours à partir de la date d’apparition des symptômes, et de contacter votre médecin au moindre doute.
+2. {.seulement-si-activite-pro} Vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous.
+3. {.seulement-si-foyer} Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à <a href="#conseils-depistage" class="lien-depistage">réaliser un test</a>.
+4. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
+5. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
+6. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
+7. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
 
 
@@ -525,9 +527,9 @@ Nous vous conseillons de :
 
 1. **Contacter votre médecin généraliste** pour lui parler de vos symptômes.
 2. Vous maintenir **en isolement** jusqu’au résultat du test :
-    * Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous en attendant le résultat.
+    * {.seulement-si-activite-pro} Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous en attendant le résultat.
     * Si le résultat est **négatif**, vous pourrez mettre fin à votre isolement.
-3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
+3. {.seulement-si-foyer} Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 4. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 5. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 6. Revenir sur Mes Conseils Covid **quand vous aurez reçu vos résultats** afin d’avoir les conseils adaptés à votre nouvelle situation !
@@ -553,9 +555,9 @@ Même si vous avez été vacciné‚ nous vous conseillons de :
 1. **Contacter votre médecin généraliste**.
 2. **Réaliser un test** en consultant la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a> (vous serez prioritaire). Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test antigénique rapide ou un test en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test en laboratoire est conseillé.
 3. Vous maintenir **en isolement** jusqu’au résultat du test :
-    * Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous en attendant le résultat.
+    * {.seulement-si-activite-pro} Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous en attendant le résultat.
     * Si le résultat est **négatif**, vous pourrez mettre fin à votre isolement.
-4. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
+4. {.seulement-si-foyer} Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 5. Suivre vos **symptômes** 1 à 2 fois par jour avec le [questionnaire de suivi](#suivisymptomes) (pour y penser, ajoutez un rappel sur votre téléphone ou dans <a href="" class="js-calendar" download="rappel-covid19.ics">votre calendrier</a>).
 6. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 7. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
@@ -578,7 +580,7 @@ Nous vous conseillons de **préciser au 15** :
 Nous vous conseillons de :
 
 1. Vous maintenir **en isolement** jusqu’au résultat du test.
-2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
+2. {.seulement-si-foyer} Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 3. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 4. Revenir sur Mes Conseils Covid **quand vous aurez reçu vos résultats** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
@@ -591,7 +593,7 @@ Retrouvez tous les conseils en [vidéo](https://www.youtube.com/watch?v=sckUau7q
 Nous vous conseillons de :
 
 1. Vous maintenir **en isolement** au moins 10 jours à partir de la date d’apparition des symptômes.
-2. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à <a href="#conseils-depistage" class="lien-depistage">réaliser un test</a>.
+2. {.seulement-si-foyer} Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à <a href="#conseils-depistage" class="lien-depistage">réaliser un test</a>.
 3. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 4. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
@@ -606,7 +608,7 @@ Nous vous conseillons de :
 
 1. **Réaliser un test RT-PCR en laboratoire** en consultant la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a> (vous serez prioritaire), pour confirmer le résultat et identifier un éventuel **variant** du virus.
 2. Vous maintenir **en isolement** pendant au moins **10 jours** à partir de la date d’apparition des symptômes.
-3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à <a href="#conseils-depistage" class="lien-depistage">réaliser un test</a>.
+3. {.seulement-si-foyer} Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à <a href="#conseils-depistage" class="lien-depistage">réaliser un test</a>.
 4. Pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 5. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
 6. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
@@ -620,7 +622,7 @@ Nous vous conseillons de :
 
 1. **Réaliser un test** en consultant la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a>. Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test antigénique rapide ou un test en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test en laboratoire est conseillé.
 2. Vous maintenir **en isolement** jusqu’au résultat du test. Si le résultat est négatif, vous pourrez mettre fin à votre isolement.
-3. Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
+3. {.seulement-si-foyer} Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
 4. Si le test est positif, pour **limiter la chaîne de transmission**, contacter vos proches et les personnes que vous avez croisés dernièrement, depuis **48 h avant les premiers symptômes** jusqu’à maintenant. Des outils, comme [BriserLaChaine.org](https://www.briserlachaine.org/statut) de l’ONG BAYES, peuvent vous aider à vous souvenir de toutes les personnes que vous avez croisées.
 5. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
 
