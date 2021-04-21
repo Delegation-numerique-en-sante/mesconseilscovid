@@ -68,16 +68,7 @@ export default function conseils(element, app) {
         hideSelector(element, '#conseils-statut')
     }
 
-    // Éléments conditionnés à une activité professionnelle.
-    const activitePro = app.profil.activite_pro || app.profil.activite_pro_sante
-    if (!activitePro) {
-        hideSelector(element, '.seulement-si-activite-pro')
-    }
-
-    // Éléments conditionnés à un foyer partagé.
-    if (!app.profil.foyer_autres_personnes) {
-        hideSelector(element, '.seulement-si-foyer')
-    }
+    cacherElementsConditionnels(element, app.profil)
 
     // Dynamic data injections.
     dynamicDataInjection(element, app.profil, algoOrientation)
@@ -99,6 +90,19 @@ export default function conseils(element, app) {
         bindCalendar(element, app.profil)
     }
     bindSuppressionTotale(element.querySelector('.js-suppression'), app)
+}
+
+export function cacherElementsConditionnels(element, profil) {
+    // Éléments conditionnés à une activité professionnelle.
+    const activitePro = profil.activite_pro || profil.activite_pro_sante
+    if (!activitePro) {
+        hideSelector(element, '.seulement-si-activite-pro')
+    }
+
+    // Éléments conditionnés à un foyer partagé.
+    if (!profil.foyer_autres_personnes) {
+        hideSelector(element, '.seulement-si-foyer')
+    }
 }
 
 function showRelevantSuiviBlocks(element, algoSuivi) {
