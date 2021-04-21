@@ -31,13 +31,20 @@ class FrenchTypographyMixin:
 
 
 class CSSMixin:
+    """Possibilité d’ajouter une classe CSS sur une ligne de liste.
+
+    Par exemple :
+
+    * {.maClasse} item classique de la liste en markdown
+    """
+
     RE_CLASS = re.compile(
         r"""^
-                (?P<before>.*?)
-                (?:\s*\{\.(?P<class>[\w\-]+?)\}\s*)
-                (?P<after>.*)
-                $
-            """,
+            (?P<before>.*?)
+            (?:\s*\{\.(?P<class>[\w\-]+?)\}\s*)
+            (?P<after>.*)
+            $
+        """,
         re.MULTILINE | re.VERBOSE,
     )
 
