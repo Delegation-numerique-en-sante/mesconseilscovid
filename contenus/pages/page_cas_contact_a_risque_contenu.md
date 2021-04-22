@@ -33,7 +33,7 @@ Faire un test **antigénique en pharmacie immédiatement** (voir la [carte des l
 
 </div>
 
-Si vous partagez votre **foyer** et que votre test est **positif**, les autres membres de votre foyer sont considérés comme **cas contact**, et doivent :
+Si votre test est **positif**, les autres membres de votre foyer sont considérés comme **cas contact**, et doivent :
 
 * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**) ;
 * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html))
