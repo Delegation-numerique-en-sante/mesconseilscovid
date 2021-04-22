@@ -6,7 +6,9 @@
 ## 1. Vous isoler
 
 <div class="conseil">
+
 Restez isolé·e **au minimum 7 jours** après votre dernier contact à risque.
+
 </div>
 
 Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir **vous isoler** en attendant le résultat du test.

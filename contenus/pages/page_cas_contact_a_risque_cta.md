@@ -1,4 +1,4 @@
-## Et la suite ?
+## Vous avez encore des questions ?
 
 * J’ai déjà fait un test, que faire ?
 * Comment gérer mon isolement ?
@@ -7,10 +7,7 @@
 * Je suis cas contact de cas contact, qu’est-ce que ça veut dire ?
 * J’ai un rendez-vous pour me faire vacciner, puis-je y aller ?
 
-### <small>Répondez à quelques questions pour savoir quoi faire si vous êtes cas contact :</small>
-
-<div class="form-controls">
-    <div class="button-full-width">
-        <a class="button button-full-width" href="/#conseils">Je veux des conseils personnalisés&nbsp;Covid</a>
-    </div>
-</div>
+<section class="cta">
+    <h3>Obtenez des conseils adaptés à votre situation (cas contact) en quelques clics</h3>
+    <a class="button" href="/#conseils">Je veux des conseils personnalisés</a>
+</section>
