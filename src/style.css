@@ -1317,8 +1317,20 @@ a[href*='youtube.com']::after {
     padding-top: 1rem;
     margin-bottom: 1.5rem;
 }
-.satellite .form-controls a.button {
-    margin-top: 0.5rem;
+.satellite .cta {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+.satellite .cta h3 {
+    max-width: 40rem;
+    margin: 3rem auto;
+}
+.satellite .cta a.button {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 0;
+    padding: 12px 48px 16px 48px;
 }
 
 @media print {
