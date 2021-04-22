@@ -3,17 +3,10 @@
 
 <big>Voici ce que nous vous conseillons de faire :</big>
 
-## 1. S’isoler
+## 1. Vous isoler
 
 <div class="conseil">
-
-Il est conseillé de rester en isolement :
-
-* **au minimum 10 jours** après le début de vos symptômes,
-* et après **48 heures sans fièvre ni gêne respiratoire.**
-
-Si vous respectez ces indications, il n’est pas nécessaire de réaliser un test Covid pour sortir d’isolement : le résultat pourrait être positif alors que vous n’êtes plus contagieux.
-
+Restez isolé·e **au minimum 7 jours** après votre dernier contact à risque.
 </div>
 
 Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir **vous isoler** en attendant le résultat du test.
@@ -33,7 +26,7 @@ Faire un test **antigénique en pharmacie immédiatement** (voir la [carte des l
 
 </div>
 
-Si votre test est **positif**, les autres membres de votre foyer sont considérés comme **cas contact**, et doivent :
+Si votre test est **positif**, les autres membres de votre foyer seront considérés comme **cas contact**, et devront :
 
 * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**) ;
 * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html))

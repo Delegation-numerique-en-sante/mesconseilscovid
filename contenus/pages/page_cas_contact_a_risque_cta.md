@@ -1,6 +1,7 @@
 ## Et la suite ?
 
 * J’ai déjà fait un test, que faire ?
+* Comment gérer mon isolement ?
 * J’ai une maladie grave, quelles spécificités ?
 * J’ai des symptômes de la Covid, quelles sont les recommandations ?
 * Je suis cas contact de cas contact, qu’est-ce que ça veut dire ?
