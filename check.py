@@ -113,7 +113,7 @@ def service_worker():
     KNOWN_EXCLUDED_FILES = {
         "browserconfig.xml",
         "illustrations/mesconseilscovid.png",
-        "illustrations/isolement-sans-symptomes.png",
+        "illustrations/solidarites-sante-gouv-fr-infog-vaccins-particuliers.png",
         "illustrations/isolement-foyer-malade.png",
         "index.html",
         "logo.png",
