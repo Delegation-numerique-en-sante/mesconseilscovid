@@ -1,5 +1,13 @@
 # Changelog
 
+## 2021-04-22
+
+* ne propose « en attente du résultat » que pour les tests PCR
+* adapte la liste de choses à faire (« conseils personnels »)
+  à ce qu’on sait de la situation professionnelle et familiale
+* stocke le détail de la réponse à la question vaccination
+* ajout d’une « page satellite » de contenu « contact à risque »
+
 ## 2021-04-20
 
 * mise à jour du calendrier de vaccination
