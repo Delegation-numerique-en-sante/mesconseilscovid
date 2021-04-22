@@ -121,6 +121,7 @@ def service_worker():
         "service-worker.js",
         "version.json",
         "cas-contact-a-risque.html",
+        "sitemap.xml",
     }
 
     sw_filenames |= KNOWN_EXCLUDED_FILES
