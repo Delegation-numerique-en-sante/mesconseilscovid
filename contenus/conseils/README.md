@@ -673,16 +673,13 @@ Une personne ayant eu la Covid **n’est immunisée que pour quelques semaines**
 
 **Concernant les écoles**, le calendrier des classes est adapté pour préserver l’apprentissage :
 
-* semaine du 5 avril : semaine de cours à la maison, pour tous les élèves de la maternelle au lycée ;
 * semaine du 12 avril : début des vacances de printemps pour 2 semaines, dans toute la France, quelle que soit la zone académique ;
-* semaine du 26 avril : rentrée scolaire, avec retour en présentiel pour les maternelles/primaires et cours à distance pour les collèges/lycées ;
+* semaine du 26 avril : rentrée scolaire, avec retour en présentiel pour les crèches/maternelles/primaires et cours à distance pour les collèges/lycées ;
 * semaine du 3 mai : retour en classe pour les collèges/lycées avec des jauges de présence adaptées.
 
-**Concernant les universités**, elles continuent de fonctionner selon les protocoles en vigueur, soit la possibilité pour chaque étudiant de se rendre à l’université 1 jour par semaine.
+**Concernant les universités**, elles continuent de fonctionner selon les protocoles en vigueur, soit la possibilité pour chaque étudiant de se rendre à l’université 1 jour par semaine. Les concours et examens prévus jusqu'au 3 mai seront maintenus et leur organisation sera adaptée. Ceux qui ne pourront pas se faire en distanciel devront être reportés autant que possible au mois de mai.
 
-Par ailleurs, un **dispositif d’accueil des enfants des personnels prioritaires** sera organisé dès la semaine du 5 avril en lien avec l’Éducation nationale et les collectivités locales.
-
-Le **chômage partiel** peut être réactivé pour les parents dans l’obligation de rester à domicile pour garder leurs enfants.
+**Concernant les assistantes maternelles**, elles sont autorisées à poursuivre leur activité mais il est fortement recommandé aux parents de ne pas y recourir et de garder eux-mêmes leurs enfants lorsque cela est possible.
 
 
 
@@ -929,9 +926,19 @@ Pour vos **courses**, nous vous conseillons de :
 
 Pour vos **déplacements** :
 
-  * depuis le 30 janvier, toute entrée en France et toute sortie du territoire à destination ou en provenance d’un pays extérieur à l’Union européenne est interdite, sauf motif impérieux ;
-  * depuis le 30 janvier, toute entrée en France à partir d’un pays de l’Union européenne est conditionnée à la réalisation d’un test PCR, à l’exception des travailleurs transfrontaliers ; tous les déplacements en provenance et en direction des territoires ultramarins sont également soumis à la production de motifs impérieux ;
+  * toute entrée en France et toute sortie du territoire à destination ou en provenance d’un pays extérieur à l’Union européenne est interdite, sauf motif impérieux ;
+  * toute entrée en France à partir d’un pays de l’Union européenne est conditionnée à la réalisation d’un test PCR, à l’exception des travailleurs transfrontaliers ; tous les déplacements en provenance et en direction des territoires ultramarins sont également soumis à la production de motifs impérieux ;
   * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus/questions-reponses) (choisir la section « Frontières / outre-mer / Dispositifs »).
+
+Les conditions d’entrée sur le territoire pour les **voyageurs en provenance des pays les plus à risque** (Brésil, Argentine, Chili, Afrique du sud, Inde) sont les suivantes :
+
+  * Tous les vols depuis le Brésil sont suspendus.
+  * À partir de samedi 24 avril 2021 au matin, des **restrictions renforcées** sont mises en place pour ces cinq pays :
+    * Restriction des motifs impérieux.
+    * Avant embarquement, renforcement du dispositif de test avec présentation d’un test PCR négatif de moins de 36h.
+    * À l’arrivée en France, réalisation d’un test antigénique systématique.
+    * Mise en quarantaine stricte pendant 10 jours à l’arrivée sur arrêté préfectoral, avec restrictions des horaires de sortie (10h-12h).
+  * Pour plus d’informations : [Je pars à l’étranger](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/)
 
 Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919">39 19</a> (appel gratuit, de 9 h à 19 h du lundi au samedi) ou le <a href="tel:17">17</a> en cas d’urgence.
 
