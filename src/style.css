@@ -495,7 +495,8 @@ main footer .legals {
     background-image: url('illustrations/vaccins.svg');
 }
 
-.timeline img {
+.timeline img,
+.illustration img {
     width: 100%;
 }
 
