@@ -29,5 +29,5 @@ toml==0.10.2
 tornado==6.1
 tox==3.23.0
 virtualenv==20.4.4
-watchdog==2.0.2
+watchdog==2.0.3
 zipp==3.4.1
