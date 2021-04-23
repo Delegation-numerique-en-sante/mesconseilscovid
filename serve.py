@@ -11,14 +11,14 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from ssl import wrap_socket
 
-from livereload.server import LogFormatter, Server, shell
+from livereload.server import LogFormatter, Server
 from watchdog.observers import Observer
 from watchdog.tricks import ShellCommandTrick
 
 import build
 
-
-BUNDLER_COMMAND = "parcel watch src/*.html"
+PARCEL_CLI = "./node_modules/.bin/parcel"
+BUNDLER_COMMAND = f"{PARCEL_CLI} watch src/*.html"
 
 ROOT_DIR = "dist/"
 
