@@ -18,7 +18,7 @@ describe('Vaccination', function () {
         const algoOrientation = new AlgorithmeOrientation(profil)
         const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
         assert.isFalse(algoVaccination.isProfessionnelDeSante())
-        assert.isFalse(algoVaccination.isSup60())
+        assert.isFalse(algoVaccination.isSup55())
         assert.isFalse(algoVaccination.isTresHautRisque())
         assert.isFalse(algoVaccination.isVaccinable())
     })
@@ -38,9 +38,9 @@ describe('Vaccination', function () {
         assert.isTrue(algoVaccination.isVaccinable())
     })
 
-    it('Vaccination pour les plus de 60 ans', function () {
+    it('Vaccination pour les plus de 55 ans', function () {
         const profil = new Profil('mes_infos', {
-            age: 64,
+            age: 56,
             activite_pro_sante: false,
             antecedent_dialyse: false,
             antecedent_greffe: false,
@@ -49,7 +49,7 @@ describe('Vaccination', function () {
         })
         const algoOrientation = new AlgorithmeOrientation(profil)
         const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
-        assert.isTrue(algoVaccination.isSup60())
+        assert.isTrue(algoVaccination.isSup55())
         assert.isTrue(algoVaccination.isVaccinable())
     })
 
