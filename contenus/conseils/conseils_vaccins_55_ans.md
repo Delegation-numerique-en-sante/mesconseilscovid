@@ -1,6 +1,6 @@
 <div class="conseil">
 
-Vous avez plus de 60 ans, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" class="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
+Vous avez plus de 55 ans, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" class="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
 
 Les plages de rendez-vous sont ouvertes au fur et à mesure par les centres de vaccination.
 

@@ -487,8 +487,8 @@ export default class AlgorithmeOrientation {
     _conseilsVaccins(algoVaccination) {
         if (algoVaccination.isProfessionnelDeSante()) {
             return ['conseils-vaccins-activite-pro-sante']
-        } else if (algoVaccination.isSup60()) {
-            return ['conseils-vaccins-60-ans']
+        } else if (algoVaccination.isSup55()) {
+            return ['conseils-vaccins-55-ans']
         } else if (algoVaccination.isARisque()) {
             if (algoVaccination.isTresHautRisque()) {
                 return ['conseils-vaccins-tres-haut-risque']
