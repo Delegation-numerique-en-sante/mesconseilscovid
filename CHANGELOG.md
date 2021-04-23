@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-04-23
+
+* mise à jour suite à la conférence de presse du gouvernement
+* mise à jour des informations sur la vaccination
+
 ## 2021-04-22
 
 * ne propose « en attente du résultat » que pour les tests PCR
