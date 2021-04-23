@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import fnmatch
+import logging
 import os
 import re
 from html.parser import HTMLParser
@@ -14,6 +15,8 @@ from jinja2 import FileSystemLoader, StrictUndefined
 from minicli import cli, run, wrap
 
 from typographie import typographie
+
+LOGGER = logging.getLogger(__name__)
 
 HERE = Path(__file__).parent
 SRC_DIR = HERE / "src"
@@ -190,9 +193,9 @@ def url_to_filename(url: str) -> str:
 
 def download_file_if_needed(url, local_path, timeout):
     if local_path.exists():
-        print(f"SKIP: {url} exists in {local_path}")
+        LOGGER.info(f"SKIP: {url} exists in {local_path}")
     else:
-        print(f"FETCH: {url} to {local_path}")
+        LOGGER.info(f"FETCH: {url} to {local_path}")
         _download_file(url, local_path, timeout)
 
 
