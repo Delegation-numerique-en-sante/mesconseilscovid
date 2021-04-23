@@ -27,7 +27,7 @@
     "st": "^2.0.0"
   },
   "dependencies": {
-    "core-js": "3.10.2",
+    "core-js": "3.11.0",
     "localforage": "1.7.3",
     "navigo": "7.1.2",
     "pikaday": "^1.8.2",
