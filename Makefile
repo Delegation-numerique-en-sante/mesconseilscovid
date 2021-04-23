@@ -3,12 +3,6 @@
 key.pem:  ## Generate certificates to be able to run `https` on `localhost`.
 	openssl req -nodes -newkey rsa:2048 -x509  -days 365 -keyout key.pem -out cert.pem -subj "/C=FR/CN=localhost"
 
-serve: build  ## Local HTTP server with auto rebuild (with LiveReload).
-	python3 serve.py --watch
-
-serve-ssl: key.pem build  ## Local HTTPS server with auto rebuild (without LiveReload).
-	python3 serve.py --watch --ssl
-
 install: install-python install-js
 
 install-python:  ## Install Python dependencies.
@@ -90,15 +84,16 @@ build:  ## Build all files (markdown + statics).
 	python3 build.py all
 	npm run-script build
 
-generate:  ## Auto-regenerate the `.html` files from `templates` + contenus.
-	find . -type f \( -iname "*.md" ! -iname "README.md" ! -iname "CHANGELOG.md" -o -iname "templates/index.html" -iname "templates/cas-contact-a-risque.html" ! -iname "CHANGELOG.md" \) -not -path "./node_modules/*" -not -path "./venv/*" | entr -r python3 build.py index satellites
-
 prefectures:  ## Generate data related to prefectures.
 	python prefectures.py generate
 	make pretty
 
-dev:  ## Auto-rebuild and serve the static website with Parcel.
-	npm run-script build-dev
+dev: build  ## Local HTTP server with auto rebuild (with LiveReload).
+	python3 serve.py --watch --open
+
+dev-ssl: key.pem build  ## Local HTTPS server with auto rebuild (without LiveReload).
+	python3 serve.py --watch --open --ssl
+
 
 pre-commit: pretty lint test-unit build check-versions check-orphelins check-diagrammes check-service-worker  ## Interesting prior to commit/push.
 

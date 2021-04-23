@@ -3,27 +3,33 @@ Start local development server
 """
 import argparse
 import logging
+import shlex
+import subprocess
+import webbrowser
 from contextlib import suppress
 from http.server import HTTPServer, SimpleHTTPRequestHandler
+from pathlib import Path
 from ssl import wrap_socket
 
 from livereload.server import LogFormatter, Server, shell
 from watchdog.observers import Observer
 from watchdog.tricks import ShellCommandTrick
 
+import build
+
+
+BUNDLER_COMMAND = "parcel watch src/*.html"
 
 ROOT_DIR = "dist/"
 
-WATCHED_PATHS = [
+PATHS_TO_WATCH_FOR_BUILD = [
     "contenus/**/[!README]*.md",
-    "src/scripts/**/*.js",
-    "src/scripts/*.js",
-    "src/style.css",
+    "static/*",
     "templates/*.html",
-    "static/version.json",
 ]
-
-COMMAND = "make build"
+PATHS_TO_WATCH_FOR_RELOAD = [
+    "dist/*",
+]
 
 
 def parse_args():
@@ -33,8 +39,33 @@ def parse_args():
     parser.add_argument("--ssl", action="store_true")
     parser.add_argument("--ssl-cert", default="cert.pem")
     parser.add_argument("--ssl-key", default="key.pem")
+    parser.add_argument("--open", action="store_true")
     parser.add_argument("--watch", action="store_true")
     return parser.parse_args()
+
+
+def build_html():
+    build.index()
+    build.satellites()
+
+
+def serve(address, port, open_, watch, ssl, ssl_cert, ssl_key):
+    if ssl:
+        return serve_https(
+            address=args.address,
+            port=args.port or 8443,
+            open_=args.open,
+            watch=args.watch,
+            ssl_cert=args.ssl_cert,
+            ssl_key=args.ssl_key,
+        )
+    else:
+        return serve_http(
+            address=args.address,
+            port=args.port or 5500,
+            open_=args.open,
+            watch=args.watch,
+        )
 
 
 class CustomServer(Server):
@@ -57,56 +88,72 @@ class CustomServer(Server):
             return super().format(record)
 
 
-def serve(address, port, watch):
+def serve_http(address, port, open_, watch):
     server = CustomServer()
     if watch:
-        for path in WATCHED_PATHS:
-            server.watch(path, shell(COMMAND))
-    server.serve(host=address, port=port, root=ROOT_DIR)
+        for path in PATHS_TO_WATCH_FOR_BUILD:
+            server.watch(path, build_html, delay=5)
+        for path in PATHS_TO_WATCH_FOR_RELOAD:
+            server.watch(path)
+    server.serve(
+        host=address,
+        port=port,
+        root=ROOT_DIR,
+        open_url_delay=0.1 if open_ else False,
+    )
 
 
-def serve_ssl(address, port, ssl_cert, ssl_key, watch):
+def serve_https(address, port, open_, watch, ssl_cert, ssl_key):
     class MyHTTPRequestHandler(SimpleHTTPRequestHandler):
         def __init__(self, *args, **kwargs):
             super().__init__(*args, directory=ROOT_DIR, **kwargs)
 
+        def log_request(self, *args, **kwargs):
+            pass
+
     class MyFileSystemEventHandler(ShellCommandTrick):
         def __init__(self):
             super().__init__(
-                shell_command=COMMAND,
-                patterns=WATCHED_PATHS,
+                shell_command="python3 build.py index satellites",
                 wait_for_process=True,
                 drop_during_process=True,
             )
 
         def on_any_event(self, event):
-            print(event)
-            super().on_any_event(event)
+            if event.event_type == "modified" and not event.is_directory:
+                super().on_any_event(event)
 
     if watch:
         observer = Observer()
         handler = MyFileSystemEventHandler()
-        for path in ["src", "contenus"]:
-            observer.schedule(handler, path, recursive=True)
+        for pattern in PATHS_TO_WATCH_FOR_BUILD:
+            directory = Path(pattern).parts[0]
+            observer.schedule(handler, directory, recursive=True)
         observer.start()
 
+    url = f"https://{address}:{port}/"
+    print(f"Listening on {url}")
+
+    if open_:
+        webbrowser.open(url)
+
+    logging.getLogger()
     httpd = HTTPServer((address, port), MyHTTPRequestHandler)
     httpd.socket = wrap_socket(
         httpd.socket, certfile=ssl_cert, keyfile=ssl_key, server_side=True
     )
-    print(f"Listening on https://{address}:{port}/")
     httpd.serve_forever()
 
 
 if __name__ == "__main__":
     args = parse_args()
-    if args.ssl:
-        serve_ssl(
-            address=args.address,
-            port=args.port or 8443,
-            watch=args.watch,
-            ssl_cert=args.ssl_cert,
-            ssl_key=args.ssl_key,
-        )
-    else:
-        serve(address=args.address, port=args.port or 5500, watch=args.watch)
+    bundler = subprocess.Popen(shlex.split(BUNDLER_COMMAND))
+    serve(
+        address=args.address,
+        port=args.port,
+        open_=args.open,
+        watch=args.watch,
+        ssl=args.ssl,
+        ssl_cert=args.ssl_cert,
+        ssl_key=args.ssl_key,
+    )

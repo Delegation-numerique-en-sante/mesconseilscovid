@@ -19,6 +19,7 @@ packaging==20.9
 pathtools==0.1.2
 pluggy==0.13.1
 py==1.10.0
+pyinotify==0.9.6
 pyparsing==2.4.7
 pytest==6.2.3
 regex==2021.4.4
