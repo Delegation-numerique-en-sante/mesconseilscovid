@@ -45,7 +45,7 @@ Ce serveur reconstruit automatiquement le site en cas de modification des fichie
 Pour lancer ce serveur local sur [http://0.0.0.0:5500/](http://0.0.0.0:5500/) :
 
 ```
-$ make serve
+$ make dev
 ```
 
 ### Lancer un serveur local en HTTPS
@@ -55,22 +55,25 @@ Activer HTTPS permet de tester la géolocalisation, mais ne permet plus d’util
 Pour lancer ce serveur local sur [https://0.0.0.0:8443/](https://0.0.0.0:8443/) :
 
 ```
-$ make serve-ssl
+$ make dev-ssl
 ```
-
-### Alternative plus réactive
-
-Pour que les modifications de contenus/code soient plus rapidement prise en compte (développement actif) :
-
-1. installer [entr](http://eradman.com/entrproject/)
-2. lancer `make generate` dans un shell (re-génération de l’`index.html`)
-3. lancer `make dev` dans un autre shell (re-génération des fichiers statiques)
-
 
 ### Lancer les tests
 
-Pour lancer les tests unitaires sous Node avec [Mocha](https://mochajs.org/) :
+Pour lancer tous les tests :
 
 ```
 $ make test
+```
+
+Pour lancer seulement les tests unitaires sous Node avec [Mocha](https://mochajs.org/) :
+
+```
+$ make test-unit
+```
+
+Pour lancer seulement les tests d’intégration (exécution de scénarios avec des vrais navigateurs web) avec [Playwright](https://playwright.dev/) :
+
+```
+$ make test-integration
 ```
