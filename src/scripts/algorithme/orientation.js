@@ -34,6 +34,7 @@ const CONSEILS_PERSONNELS = [
     'depistage-positif-antigenique-symptomatique',
     'depistage-positif-asymptomatique',
     'depistage-positif-symptomatique',
+    'peu-de-risques',
     'symptomes-actuels-en-attente',
     'symptomes-actuels-positif-critique',
     'symptomes-actuels-sans-depistage',
@@ -224,7 +225,10 @@ export default class AlgorithmeOrientation {
                 return { statut: 'symptomatique-negatif', conseils: null }
 
             case 'negatif_symptomes_passes':
-                return { statut: this.statutSelonFragilite(), conseils: null }
+                return {
+                    statut: this.statutSelonFragilite(),
+                    conseils: 'peu-de-risques',
+                }
 
             case 'antigenique_positif_symptomes_actuels':
                 return {
@@ -270,7 +274,10 @@ export default class AlgorithmeOrientation {
 
             case 'negatif_asymptomatique':
             case 'antigenique_negatif_fragile_asymptomatique':
-                return { statut: this.statutSelonFragilite(), conseils: null }
+                return {
+                    statut: this.statutSelonFragilite(),
+                    conseils: 'peu-de-risques',
+                }
 
             case 'en_attente_symptomes_actuels':
                 return {
@@ -321,7 +328,10 @@ export default class AlgorithmeOrientation {
                 }
 
             case 'pas_teste_asymptomatique':
-                return { statut: this.statutSelonFragilite(), conseils: null }
+                return {
+                    statut: this.statutSelonFragilite(),
+                    conseils: 'peu-de-risques',
+                }
 
             default:
                 console.error('situation inconnue', this.situation)

@@ -589,7 +589,7 @@ const matrice = [
         },
         situation: 'negatif_symptomes_passes',
         statut: 'peu-de-risques',
-        conseils: null,
+        conseils: 'peu-de-risques',
     },
     {
         description: 'Négatif antigénique et symptômes passés',
@@ -602,7 +602,7 @@ const matrice = [
         },
         situation: 'negatif_symptomes_passes',
         statut: 'peu-de-risques',
-        conseils: null,
+        conseils: 'peu-de-risques',
     },
     {
         description: 'Négatif et symptômes passés + personne fragile',
@@ -616,7 +616,7 @@ const matrice = [
         },
         situation: 'negatif_symptomes_passes',
         statut: 'personne-fragile',
-        conseils: null,
+        conseils: 'peu-de-risques',
     },
     {
         description: 'Négatif antigénique et symptômes passés + personne fragile',
@@ -643,7 +643,7 @@ const matrice = [
         },
         situation: 'negatif_symptomes_passes',
         statut: 'peu-de-risques',
-        conseils: null,
+        conseils: 'peu-de-risques',
     },
     {
         description: 'Négatif et contact à risque',
@@ -745,7 +745,7 @@ const matrice = [
         },
         situation: 'negatif_asymptomatique',
         statut: 'peu-de-risques',
-        conseils: null,
+        conseils: 'peu-de-risques',
     },
     {
         description: 'Négatif et rien de tout ça + personne fragile',
@@ -758,7 +758,7 @@ const matrice = [
         },
         situation: 'negatif_asymptomatique',
         statut: 'personne-fragile',
-        conseils: null,
+        conseils: 'peu-de-risques',
     },
     {
         description: 'Négatif et rien de tout ça + foyer fragile',
@@ -770,7 +770,7 @@ const matrice = [
         },
         situation: 'negatif_asymptomatique',
         statut: 'peu-de-risques',
-        conseils: null,
+        conseils: 'peu-de-risques',
     },
     {
         description: 'En attente et symptômes actuels graves',
@@ -995,7 +995,7 @@ const matrice = [
         profil: {},
         situation: 'pas_teste_asymptomatique',
         statut: 'peu-de-risques',
-        conseils: null,
+        conseils: 'peu-de-risques',
     },
     {
         description: 'Pas testé et rien de tout ça + personne fragile',
@@ -1004,7 +1004,7 @@ const matrice = [
         },
         situation: 'pas_teste_asymptomatique',
         statut: 'personne-fragile',
-        conseils: null,
+        conseils: 'peu-de-risques',
     },
     {
         description: 'Test négatif obsolète et symptômes actuels graves',
@@ -1134,7 +1134,7 @@ const matrice = [
         },
         situation: 'pas_teste_asymptomatique',
         statut: 'peu-de-risques',
-        conseils: null,
+        conseils: 'peu-de-risques',
     },
     {
         description: 'Test négatif obsolète et rien de tout ça + personne fragile',
@@ -1147,7 +1147,7 @@ const matrice = [
         },
         situation: 'pas_teste_asymptomatique',
         statut: 'personne-fragile',
-        conseils: null,
+        conseils: 'peu-de-risques',
     },
     {
         description: 'Test positif obsolète et symptômes actuels graves',
@@ -1277,7 +1277,7 @@ const matrice = [
         },
         situation: 'pas_teste_asymptomatique',
         statut: 'peu-de-risques',
-        conseils: null,
+        conseils: 'peu-de-risques',
     },
     {
         description: 'Test positif obsolète et rien de tout ça + personne fragile',
@@ -1290,7 +1290,7 @@ const matrice = [
         },
         situation: 'pas_teste_asymptomatique',
         statut: 'personne-fragile',
-        conseils: null,
+        conseils: 'peu-de-risques',
     },
 ]
 
