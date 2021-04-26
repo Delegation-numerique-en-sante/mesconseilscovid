@@ -134,8 +134,8 @@ def service_worker():
 
     # Compare the list to static files.
     static_file_names = {
-        filename
-        for file_path, filename in each_file_from(
+        path.name
+        for path in each_file_from(
             HERE / "static", exclude=[".DS_Store"]
         )
     }
@@ -146,8 +146,8 @@ def service_worker():
 
     # Compare the list to font files.
     fonts_file_names = {
-        f"fonts/{filename}"
-        for file_path, filename in each_file_from(
+        f"fonts/{path.name}"
+        for path in each_file_from(
             SRC_DIR / "fonts", pattern="*.woff2", exclude=[".DS_Store"]
         )
     }
@@ -158,8 +158,8 @@ def service_worker():
 
     # Compare the list to illustration files.
     illustrations_file_names = {
-        f"illustrations/{filename}"
-        for file_path, filename in each_file_from(
+        f"illustrations/{path.name}"
+        for path in each_file_from(
             SRC_DIR / "illustrations",
             exclude=[".DS_Store"],
         )
@@ -171,8 +171,8 @@ def service_worker():
 
     # Compare the list to src files.
     src_file_names = {
-        filename
-        for file_path, filename in each_file_from(
+        path.name
+        for path in each_file_from(
             SRC_DIR,
             pattern="*.*",
             exclude=[".DS_Store"],
@@ -188,13 +188,13 @@ def service_worker():
 def orphelins():
     template = (TEMPLATES_DIR / "index.html").read_text()
     for folder in each_folder_from(CONTENUS_DIR, exclude=["pages"]):
-        for file_path, filename in each_file_from(
+        for path in each_file_from(
             folder, pattern="*.md", exclude=["README.md"]
         ):
-            if filename.startswith("meta_") or filename.startswith("config_"):
+            if path.name.startswith("meta_") or path.name.startswith("config_"):
                 continue
-            if filename[: -len(".md")] not in template:
-                raise Exception(f"Reference missing for {filename}")
+            if path.name[: -len(".md")] not in template:
+                raise Exception(f"Reference missing for {path.name}")
 
 
 @cli
@@ -211,14 +211,14 @@ def diagrammes():
         if line.strip().startswith("conseils_")
     }
     statuts_filenames = {
-        filename
-        for file_path, filename in each_file_from(
+        path.name
+        for path in each_file_from(
             CONTENUS_DIR / "statuts", pattern="*.md", exclude=["README.md"]
         )
     }
     conseils_filenames = {
-        filename
-        for file_path, filename in each_file_from(
+        path.name
+        for path in each_file_from(
             CONTENUS_DIR / "conseils",
             pattern="conseils_personnels_*.md",
             exclude=["README.md"],

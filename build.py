@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-import fnmatch
 import logging
-import os
 import re
 from html.parser import HTMLParser
 from http import HTTPStatus
@@ -101,9 +99,9 @@ def build_responses(source_dir):
     """Extract and convert markdown from a `source_dir` directory into a dict."""
     responses = {}
     for folder in each_folder_from(source_dir):
-        for file_path, filename in each_file_from(folder, pattern="*.md"):
-            html_content = render_markdown_file(file_path)
-            responses[filename[: -len(".md")]] = html_content
+        for path in each_file_from(folder, pattern="*.md"):
+            html_content = render_markdown_file(path)
+            responses[path.name[: -len(".md")]] = html_content
 
     return responses
 
@@ -115,21 +113,25 @@ def render_markdown_file(file_path):
     return html_content.replace("<!---->", "")
 
 
+def _each_path_from(source_dir, pattern="*", exclude=None):
+    for path in sorted(Path(source_dir).glob(pattern)):
+        if exclude is not None and path.name in exclude:
+            continue
+        yield path
+
+
 def each_folder_from(source_dir, exclude=None):
     """Walk across the `source_dir` and return the folder paths."""
-    for direntry in os.scandir(source_dir):
-        if direntry.is_dir():
-            if exclude is not None and direntry.name in exclude:
-                continue
-            yield direntry
+    for path in _each_path_from(source_dir, exclude=exclude):
+        if path.is_dir():
+            yield path
 
 
 def each_file_from(source_dir, pattern="*", exclude=None):
     """Walk across the `source_dir` and return the md file paths."""
-    for filename in fnmatch.filter(sorted(os.listdir(source_dir)), pattern):
-        if exclude is not None and filename in exclude:
-            continue
-        yield os.path.join(source_dir, filename), filename
+    for path in _each_path_from(source_dir, pattern=pattern, exclude=exclude):
+        if path.is_file():
+            yield path
 
 
 def render_template(src, **context):
@@ -230,17 +232,15 @@ def readmes():
 il ne doit pas être édité !*
 
 """
-        for file_path, filename in each_file_from(folder):
-            if filename in ("README.md", ".DS_Store"):
-                continue
-            file_content = open(file_path).read()
+        for path in each_file_from(folder, exclude=("README.md", ".DS_Store")):
+            file_content = path.read_text()
             folder_content += f"""
-## [{filename}]({filename})
+## [{path.name}]({path.name})
 
 {file_content}
 
 """
-        (Path(folder.path) / "README.md").open("w").write(folder_content)
+        (folder / "README.md").open("w").write(folder_content)
 
 
 @wrap
