@@ -118,7 +118,10 @@
                 <a href="../contenus/statuts/statut_peu_de_risques.md">
                     statut_peu_de_risques.md
                 </a>
-                <br><br>-</td>
+                <br><br><a href="../contenus/conseils/conseils_personnels_peu_de_risques.md">
+                    conseils_personnels_peu_de_risques.md
+                </a>
+            </td>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#FFFFD7" align="center">
                 <a href="../contenus/statuts/statut_symptomatique_en_attente.md">
                     statut_symptomatique_en_attente.md
@@ -246,7 +249,10 @@
                 <a href="../contenus/statuts/statut_peu_de_risques.md">
                     statut_peu_de_risques.md
                 </a>
-                <br><br>-</td>
+                <br><br><a href="../contenus/conseils/conseils_personnels_peu_de_risques.md">
+                    conseils_personnels_peu_de_risques.md
+                </a>
+            </td>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#DDE8CB" align="center">
                 <a href="../contenus/statuts/statut_en_attente.md">
                     statut_en_attente.md
@@ -260,7 +266,10 @@
                 <a href="../contenus/statuts/statut_peu_de_risques.md">
                     statut_peu_de_risques.md
                 </a>
-                <br><br>-</td>
+                <br><br><a href="../contenus/conseils/conseils_personnels_peu_de_risques.md">
+                    conseils_personnels_peu_de_risques.md
+                </a>
+            </td>
         </tr>
     </tbody>
 </table>
