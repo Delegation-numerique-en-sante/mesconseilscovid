@@ -121,6 +121,7 @@ def service_worker():
         "service-worker.js",
         "version.json",
         "cas-contact-a-risque.html",
+        "je-suis-vaccine.html",
         "sitemap.xml",
     }
 
@@ -134,10 +135,7 @@ def service_worker():
 
     # Compare the list to static files.
     static_file_names = {
-        path.name
-        for path in each_file_from(
-            HERE / "static", exclude=[".DS_Store"]
-        )
+        path.name for path in each_file_from(HERE / "static", exclude=[".DS_Store"])
     }
     if not static_file_names.issubset(sw_filenames):
         raise Exception(
@@ -188,9 +186,7 @@ def service_worker():
 def orphelins():
     template = (TEMPLATES_DIR / "index.html").read_text()
     for folder in each_folder_from(CONTENUS_DIR, exclude=["pages"]):
-        for path in each_file_from(
-            folder, pattern="*.md", exclude=["README.md"]
-        ):
+        for path in each_file_from(folder, pattern="*.md", exclude=["README.md"]):
             if path.name.startswith("meta_") or path.name.startswith("config_"):
                 continue
             if path.name[: -len(".md")] not in template:
