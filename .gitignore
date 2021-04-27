@@ -9,7 +9,6 @@ __pycache__
 
 feedback/paper_key
 dist/
-src/index.html
-src/cas-contact-a-risque.html
+src/*.html
 src/pdfs/*
 contenus/zoverride

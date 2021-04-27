@@ -93,6 +93,8 @@ def satellites():
     pages = build_responses(CONTENUS_DIR)
     content = render_template("cas-contact-a-risque.html", **pages)
     (SRC_DIR / "cas-contact-a-risque.html").write_text(content)
+    content = render_template("je-suis-vaccine.html", **pages)
+    (SRC_DIR / "je-suis-vaccine.html").write_text(content)
 
 
 def build_responses(source_dir):
