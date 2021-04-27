@@ -264,34 +264,29 @@ Récapitulatif : [Je limite la transmission du virus en adoptant la bonne condu
 
 ## [conseils_isolement_autres_personnes.md](conseils_isolement_autres_personnes.md)
 
-Vous **vivez avec d’autres personnes**, nous vous conseillons de ne pas partager vos espaces ou objets avec elles :
+#### Vous vivez avec d’autres personnes
 
 * restez, si possible, **dans une pièce séparée**, porte fermée ;
 * **ne partagez pas votre lit** ;
 * **ne partagez pas vos objets quotidiens** (serviettes de toilette, savon, couverts, assiettes, téléphone,…) ;
 * **prenez vos repas seul**.
 
-Si **vous devez partager certains espaces ou objets**, assurez-vous de :
 
-* **nettoyer régulièrement** les objets et espaces partagés ;
-* que chacun se **lave les mains** avant et après utilisation.
+#### Assainir votre logement
 
-Si vous devez **avoir des contacts** avec d’autres personnes :
-
-* **portez un masque** ;
-* tenez vous éloigné **à plus de 2 mètres** ;
-* limitez vos discussions à **moins de 15 minutes**.
-
-Pendant votre **isolement**, nous vous conseillons de :
-
-* vous **laver les mains** très régulièrement ;
 * **aérer** au moins 10 minutes plusieurs fois par jour ;
-* **nettoyer** régulièrement **les surfaces** que vous touchez (poignées de porte, meubles de salle de bains, toilettes, sols, etc., avec votre produit habituel, puis avec un produit contenant de l’eau de javel ou de l’alcool à 70°, puis de rincer) ;
+* **nettoyer** systématiquement **les surfaces** que vous touchez (poignées de porte, meubles de salle de bains, toilettes, sols, etc., avec votre produit habituel, puis avec un produit contenant de l’eau de javel ou de l’alcool à 70°, puis de rincer) ;
 * **laver vos draps et serviettes** de toilette à 60 °C pendant au moins 30 minutes ;
 * privilégier des ustensiles de **ménage qui ne dispersent pas les poussières** comme une éponge ou une serpillière (l’aspirateur est à éviter) ;
 * **jeter** tout ce qui peut être contaminé **dans un sac poubelle à part**, que vous mettrez dans un second sac poubelle une fois fermé.
 
-Pour plus d’informations sur l’isolement : [« J’ai les signes de la maladie du COVID-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_test_positif.pdf)
+
+#### Si vous devez avoir des contacts ou partager des objets
+
+* que chacun se **lave les mains** avant et après utilisation ;
+* **portez un masque** ;
+* tenez vous éloigné **à plus de 2 mètres** ;
+* limitez vos discussions à **moins de 15 minutes**.
 
 
 
@@ -305,19 +300,13 @@ Si des symptômes apparaissent pendant votre isolement, revenez faire un test su
 
 ## [conseils_isolement_ctai.md](conseils_isolement_ctai.md)
 
-<div class="conseil">
+#### Aide à l’isolement
 
-<span class="nouveau">nouveau</span> Pendant votre période d’isolement vous pouvez contacter la cellule d’appui de votre département si vous avez **besoin d’aide** pour :
+Pendant votre période d’isolement, si vous avez **besoin d’aide** pour vos démarches administratives, une aide à domicile, une garde d’enfants ou encore un dispositif de soutien psychologique, vous pouvez contacter l’Assurance Maladie de votre département au 36 46. Un infirmier ou une infirmière pourra venir à votre domicile pour tester les membres de votre foyer.
 
-* vos **démarches administratives** (ouverture de droits, etc.) ;
-* une **aide à domicile** (aide-ménagère, portage de courses, de médicaments, de repas, etc.) ;
-* une **garde d’enfants** ou de personnes vulnérables non autonomes si vous êtes un aidant isolé ;
-* un accès à des services de **communication électronique** ;
-* ou encore un dispositif de **soutien psychologique** à l’isolement.
+ℹ️ Si vous ne pouvez pas rester isolé·e chez vous, l’Assurance Maladie pourra vous aider à trouver un autre logement pendant la durée de votre isolement.
 
-ℹ️ Si vous ne pouvez pas rester isolé·e chez vous, ces équipes pourront vous aider à trouver un **autre logement** pendant la durée de votre isolement.
-
-</div>
+Pour plus d’informations sur l’isolement : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://www.ameli.fr/sites/default/files/Documents/683638/document/spf-limiter-transmission-virus-covid19.pdf)
 
 
 
@@ -334,26 +323,27 @@ Si vous respectez ces indications, il n’est **pas nécessaire de réaliser un 
 
 ## [conseils_isolement_personne_seule.md](conseils_isolement_personne_seule.md)
 
-Vous **vivez seul·e** :
+#### Vous vivez seul·e
 
 * demandez à vos proches (ou au magasin / à la pharmacie) **de vous livrer vos courses et médicaments** ;
 * faites déposer le **colis sur votre palier** pour minimiser les contacts ;
 * **donnez des nouvelles à vos proches** ;
 * si vous avez besoin de soins ou d’aide à domicile, **choisissez une seule personne pour vous aider**, qui devra se laver les mains très régulièrement et porter un masque.
 
-Si vous devez **avoir des contacts** avec d’autres personnes :
 
+#### Assainir votre logement
+
+* **aérer** au moins 10 minutes plusieurs fois par jour ;
+* **jeter** tout ce qui peut être contaminé **dans un sac poubelle à part**, que vous mettrez dans un second sac poubelle une fois fermé.
+
+
+#### Si vous devez avoir des contacts ou partager des objets
+
+* que chacun se **lave les mains** avant et après utilisation ;
 * **portez un masque** ;
 * tenez vous éloigné **à plus de 2 mètres** ;
-* limitez vos discussions à **moins de 15 minutes** ;
-* **nettoyez** les objets et espaces partagés.
+* limitez vos discussions à **moins de 15 minutes**.
 
-Pendant votre **isolement**, nous vous conseillons :
-
-* **d’aérer** au moins 10 minutes plusieurs fois par jour ;
-* **de jeter** tout ce qui peut être contaminé **dans un sac poubelle à part**, que vous mettrez dans un second sac poubelle une fois fermé.
-
-Pour plus d’informations sur l’isolement : [« J’ai les signes de la maladie du COVID-19 »](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_test_positif.pdf)
 
 
 
