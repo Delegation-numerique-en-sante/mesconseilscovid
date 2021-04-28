@@ -9,7 +9,7 @@ La vaccination prémunit contre les formes graves et symptomatiques de la maladi
 
 ## Est-ce que je dois m’isoler si je suis « cas contact » ?
 
-Même vacciné·e, en cas de contact à risque avec une personne positive à la Covid, vous êtes considéré comme étant « [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#introduction) »: il faut **vous faire tester et vous isoler** immédiatement.
+Même vacciné·e, en cas de contact à risque avec une personne positive à la Covid, vous êtes considéré·e comme étant « [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#introduction) » : il faut **vous faire tester et vous isoler** immédiatement.
 
 ## Est-ce que la vaccination rend malade et contagieux ?
 
