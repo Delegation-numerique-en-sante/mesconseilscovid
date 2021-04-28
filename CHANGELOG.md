@@ -1,5 +1,13 @@
 # Changelog
 
+## 2021-04-28
+
+* complète les consignes pour un éventuel cas contact
+* mise à jour des contenus du bloc sur les tests
+* informations complémentaires sur les autotests
+* mise à jour des contenus des blocs enfants et scolarité
+* réajustement des conseils sur l’auto-médication
+
 ## 2021-04-23
 
 * mise à jour suite à la conférence de presse du gouvernement
