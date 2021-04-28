@@ -7,5 +7,8 @@ Même si vous avez été vacciné‚ nous vous conseillons de :
         * s’il est **négatif**, vous pourrez lever votre isolement ;
         * s’il est **positif**, restez en isolement **au moins 10 jours** à partir de la date du test, et surveillez l’apparition de symptômes.
 5. Appliquer **les mesures barrières renforcées** avec la personne malade et les autres membres de votre foyer.
-6. Si vous constatez l’apparition de **symptômes**, contactez votre médecin et faites vous tester. Vous pouvez suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
+6. Si vous constatez l’apparition de **symptômes** :
+    * Contacter votre médecin et **faire un test**.
+    * Ne pas prendre d’**anti-inflammatoires** (ibuprofène ou kétoprofène) sans avis médical. Les anti-inflammatoires pourraient **aggraver** l’infection à la Covid. Seul le **paracétamol** est recommandé. En cas de doute, demandez conseil à votre médecin.
+    * Suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
 7. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
