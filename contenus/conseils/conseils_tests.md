@@ -9,7 +9,7 @@ Retrouvez le <a href="#conseils-depistage" class="lien-depistage">lieu de test l
 * <span class="nouveau">nouveau</span> Des **autotests** sont disponibles en pharmacie, pour les personnes sans symptômes et qui ne sont pas personnes contacts :
     * faire un autotest régulièrement (1 à 2 fois par semaine) permet de savoir si on est porteur ou non de la Covid ;
     * en cas de symptômes, ou de contact avec une personne testée positive à la Covid, il faut faire un test RT-PCR ou antigénique ;
-    * un résultat positif devra être confirmé par un test PCR en laboratoire.
+    * un résultat positif à un autotest devra être confirmé par un test PCR en laboratoire.
 
 * Plus d’informations :
     * Les prochaines étapes du parcours : [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_-_nouveau.pdf)
