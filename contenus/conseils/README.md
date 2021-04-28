@@ -211,24 +211,6 @@ Vous pouvez consultez notre page dédiée sur les [« conseils liés aux activi
 * Les consultations de vos enfants comportant des **vaccins** obligatoires (2, 4, 5, 11, 12 et 16-18 mois notamment) doivent être **maintenues.**
 
 
-#### Études et scolarité
-
-<div class="conseil conseil-jaune">
-
-<span class="nouveau">nouveau</span> Fermeture des crèches, écoles, collèges, lycées pendant 3 semaines depuis le 5 avril 2021.
-
-</div>
-
-**Concernant les écoles**, le calendrier des classes est adapté pour préserver l’apprentissage :
-
-* semaine du 26 avril : rentrée scolaire, avec retour en présentiel pour les crèches/maternelles/primaires et cours à distance pour les collèges/lycées ;
-* semaine du 3 mai : retour en classe pour les collèges/lycées avec des jauges de présence adaptées.
-
-**Concernant les universités**, elles continuent de fonctionner selon les protocoles en vigueur, soit la possibilité pour chaque étudiant de se rendre à l’université 1 jour par semaine. Les concours et examens prévus jusqu’au 3 mai seront maintenus et leur organisation sera adaptée. Ceux qui ne pourront pas se faire en distanciel devront être reportés autant que possible au mois de mai.
-
-**Concernant les assistantes maternelles**, elles sont autorisées à poursuivre leur activité mais il est fortement recommandé aux parents de ne pas y recourir et de garder eux-mêmes leurs enfants lorsque cela est possible.
-
-
 
 ## [conseils_gestes_barrieres_masque_fragile.md](conseils_gestes_barrieres_masque_fragile.md)
 
@@ -675,6 +657,25 @@ Une personne ayant eu la Covid **n’est immunisée que pour quelques semaines**
 </div>
 
 * [Personnes à risques : Réponse à vos questions](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/tout-savoir-sur-la-covid-19/article/personnes-a-risques-reponses-a-vos-questions)
+
+
+
+## [conseils_scolarite.md](conseils_scolarite.md)
+
+<div class="conseil conseil-jaune">
+
+<span class="nouveau">nouveau</span> Fermeture des crèches, écoles, collèges, lycées pendant 3 semaines depuis le 5 avril 2021.
+
+</div>
+
+**Concernant les écoles**, le calendrier des classes est adapté pour préserver l’apprentissage :
+
+* semaine du 26 avril : rentrée scolaire, avec retour en présentiel pour les crèches/maternelles/primaires et cours à distance pour les collèges/lycées ;
+* semaine du 3 mai : retour en classe pour les collèges/lycées avec des jauges de présence adaptées.
+
+**Concernant les universités**, elles continuent de fonctionner selon les protocoles en vigueur, soit la possibilité pour chaque étudiant de se rendre à l’université 1 jour par semaine. Les concours et examens prévus jusqu’au 3 mai seront maintenus et leur organisation sera adaptée. Ceux qui ne pourront pas se faire en distanciel devront être reportés autant que possible au mois de mai.
+
+**Concernant les assistantes maternelles**, elles sont autorisées à poursuivre leur activité mais il est fortement recommandé aux parents de ne pas y recourir et de garder eux-mêmes leurs enfants lorsque cela est possible.
 
 
 
