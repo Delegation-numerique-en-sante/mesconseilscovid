@@ -259,7 +259,7 @@ Si vous avez un doute sur vos réponses, revenez plus tard sur cette page pour l
 
 ## [question_dépistage_antigenique_autotest_libellé.md](question_dépistage_antigenique_autotest_libellé.md)
 
-<!---->C’était un <b>auto-test</b> (vendu en pharmacie)
+<!---->C’était un <b>autotest</b> (vendu en pharmacie)
 
 
 
