@@ -21,4 +21,4 @@ Le virus contenu dans les vaccins est rendu **inopérant** et ne vous rend pas m
 
 ## Est-ce que je peux voyager ?
 
-Un **pass sanitaire** (ou certificat de vaccination) devrait être disponible à partir de la mi-juin dans l’application TousAntiCovid. Pour le moment, les restrictions de déplacements (internationaux, inter-régionaux) s’appliquent même aux personnes vaccinées.
+Un **pass sanitaire** (ou certificat de vaccination sous forme de QR code) devrait être disponible à partir de la mi-juin dans l’application TousAntiCovid. Pour le moment, les restrictions de déplacements (internationaux, inter-régionaux) s’appliquent même aux personnes vaccinées.
