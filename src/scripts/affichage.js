@@ -31,6 +31,14 @@ export function showSelector(element, selector) {
     Array.from(element.querySelectorAll(selector)).forEach(showElement)
 }
 
+export function showOnlyIf(element, selector, condition) {
+    if (condition) {
+        // on laisse les blocs affichés
+    } else {
+        hideSelector(element, selector)
+    }
+}
+
 export function displayElementById(element, id) {
     var block = element.querySelector('#' + id)
     if (!block) return
