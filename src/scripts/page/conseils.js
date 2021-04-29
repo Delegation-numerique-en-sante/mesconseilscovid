@@ -12,6 +12,7 @@ import {
     hideSelector,
     showElement,
     showMeOrThem,
+    showOnlyIf,
     showSelector,
 } from '../affichage'
 import * as injection from '../injection'
@@ -95,14 +96,25 @@ export default function conseils(element, app) {
 export function cacherElementsConditionnels(element, profil) {
     // Éléments conditionnés à une activité professionnelle.
     const activitePro = profil.activite_pro || profil.activite_pro_sante
-    if (!activitePro) {
-        hideSelector(element, '.seulement-si-activite-pro')
-    }
+    showOnlyIf(element, '.seulement-si-activite-pro', activitePro)
+
+    // Éléments conditionnés à une activité professionnelle ET autotest
+    const autotest = profil.depistage_type === 'antigenique_autotest'
+    showOnlyIf(
+        element,
+        '.seulement-si-activite-pro-et-autotest',
+        activitePro && autotest
+    )
+
+    // Éléments conditionnés à une activité professionnelle ET PAS autotest
+    showOnlyIf(
+        element,
+        '.seulement-si-activite-pro-et-pas-autotest',
+        activitePro && !autotest
+    )
 
     // Éléments conditionnés à un foyer partagé.
-    if (!profil.foyer_autres_personnes) {
-        hideSelector(element, '.seulement-si-foyer')
-    }
+    showOnlyIf(element, '.seulement-si-foyer', profil.foyer_autres_personnes)
 }
 
 function showRelevantSuiviBlocks(element, algoSuivi) {
