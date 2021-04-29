@@ -4,7 +4,7 @@ Nous vous conseillons de :
 1. Vous maintenir **en isolement** pendant au moins **10 jours** à partir de la date d’apparition des symptômes. Jusqu’au résultat du test RT-PCR :
     * {.seulement-si-activite-pro} Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous en attendant le résultat.
     * Si le résultat est **négatif**, vous pourrez mettre fin à votre isolement.
-1. {.seulement-si-foyer} Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer, et les inviter à <a href="#conseils-depistage" class="lien-depistage">réaliser un test</a>.
+1. {.seulement-si-foyer} Mettre en place des **mesures d’hygiène renforcée** dans votre foyer pour protéger vos proches (voir la section **Isolement** plus bas).
 1. Si vous constatez l’apparition de **symptômes** :
     * Contacter votre médecin et **faire un test**.
     * Ne pas prendre d’**anti-inflammatoires** (ibuprofène ou kétoprofène) sans avis médical. Les anti-inflammatoires pourraient **aggraver** l’infection à la Covid. Seul le **paracétamol** est recommandé. En cas de doute, demandez conseil à votre médecin.
