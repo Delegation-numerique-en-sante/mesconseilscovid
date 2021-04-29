@@ -1318,7 +1318,8 @@ a[href*='youtube.com']::after {
 }
 .satellite #conseils-block h2 {
     padding-top: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
+    font-size: 175%;
 }
 .satellite .cta {
     text-align: center;
