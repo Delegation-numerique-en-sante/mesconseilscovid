@@ -80,7 +80,7 @@ La vaccination prémunit contre les formes graves et symptomatiques de la maladi
 
 ## Est-ce que je dois m’isoler si je suis « cas contact » ?
 
-Même vacciné·e, en cas de contact à risque avec une personne positive à la Covid, vous êtes considéré comme étant « [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#introduction) »: il faut **vous faire tester et vous isoler** immédiatement.
+Même vacciné·e, en cas de contact à risque avec une personne positive à la Covid, vous êtes considéré·e comme étant « [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#introduction) » : il faut **vous faire tester et vous isoler** immédiatement.
 
 ## Est-ce que la vaccination rend malade et contagieux ?
 
@@ -92,7 +92,7 @@ Le virus contenu dans les vaccins est rendu **inopérant** et ne vous rend pas m
 
 ## Est-ce que je peux voyager ?
 
-Un **pass sanitaire** (ou certificat de vaccination) devrait être disponible à partir de la mi-juin dans l’application TousAntiCovid. Pour le moment, les restrictions de déplacements (internationaux, inter-régionaux) s’appliquent même aux personnes vaccinées.
+Un **pass sanitaire** (ou certificat de vaccination sous forme de QR code) devrait être disponible à partir de la mi-juin dans l’application TousAntiCovid. Pour le moment, les restrictions de déplacements (internationaux, inter-régionaux) s’appliquent même aux personnes vaccinées.
 
 
 
@@ -104,7 +104,7 @@ Un **pass sanitaire** (ou certificat de vaccination) devrait être disponible à
 * J’ai des effets secondaires prolongés, qui contacter ?
 
 <section class="cta">
-    <h3>Obtenez des conseils adaptés à votre situation (vacciné·e) en quelques clics</h3>
+    <h3>Obtenez des conseils adaptés à votre situation en quelques clics</h3>
     <a class="button" href="/#conseils">Je veux des conseils personnalisés</a>
 </section>
 
