@@ -4,6 +4,6 @@
 * J’ai des effets secondaires prolongés, qui contacter ?
 
 <section class="cta">
-    <h3>Obtenez des conseils adaptés à votre situation (vacciné·e) en quelques clics</h3>
+    <h3>Obtenez des conseils adaptés à votre situation en quelques clics</h3>
     <a class="button" href="/#conseils">Je veux des conseils personnalisés</a>
 </section>
