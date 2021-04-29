@@ -6,7 +6,7 @@ Nous vous conseillons de :
     * Si le test est **négatif**, restez **en isolement**, et faites un test **7 jours après le dernier contact à risque** ;
         * s’il est **négatif**, vous pourrez lever votre isolement ;
         * s’il est **positif**, restez en isolement **au moins 10 jours** à partir de la date du test, et surveillez l’apparition de symptômes.
-1. {.seulement-si-foyer} Appliquer **les mesures barrières renforcées** avec les autres membres de votre foyer.
+1. {.seulement-si-foyer} Mettre en place des **mesures d’hygiène renforcée** dans votre foyer pour protéger vos proches (voir la section **Isolement** plus bas).
 1. {.seulement-si-foyer} Les autres **membres de votre foyer** sont « cas contact d’un cas contact », et n’ont pas à s’isoler. Si le résultat de votre test est positif, ils deviendront alors **cas contact** et devront s’isoler et faire un test.
 1. Si vous constatez l’apparition de **symptômes** :
     * Contacter votre médecin et **vous faire tester**.

@@ -6,7 +6,7 @@ Même si vous avez été vacciné‚ nous vous conseillons de :
     * Si le test est **négatif**, restez **en isolement**, et faites un test **7 jours après la guérison** de la personne malade ;
         * s’il est **négatif**, vous pourrez lever votre isolement ;
         * s’il est **positif**, restez en isolement **au moins 10 jours** à partir de la date du test, et surveillez l’apparition de symptômes.
-1. Appliquer **les mesures barrières renforcées** avec la personne malade et les autres membres de votre foyer.
+1. Mettre en place des **mesures d’hygiène renforcée** dans votre foyer (voir la section **Isolement** plus bas).
 1. Si vous constatez l’apparition de **symptômes** :
     * Contacter votre médecin et **faire un test**.
     * Ne pas prendre d’**anti-inflammatoires** (ibuprofène ou kétoprofène) sans avis médical. Les anti-inflammatoires pourraient **aggraver** l’infection à la Covid. Seul le **paracétamol** est recommandé. En cas de doute, demandez conseil à votre médecin.
