@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-04-30
+
+* conseils plus détaillés pour les personnes de mon foyer si je suis positif
+* mise à jour du calendrier et de l’infographie de vaccination
+* correctifs pour Internet Explorer
+
 ## 2021-04-28
 
 * complète les consignes pour un éventuel cas contact
