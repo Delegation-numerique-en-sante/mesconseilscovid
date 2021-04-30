@@ -1334,7 +1334,10 @@ a[href*='youtube.com']::after {
     display: inline-block;
     font-size: 20px;
     margin-top: 0;
-    padding: 12px 48px 16px 48px;
+    padding: 12px 64px 16px 48px;
+    background-image: url('arrow-right-white.svg');
+    background-position: 95% center;
+    background-repeat: no-repeat;
 }
 
 @media print {
