@@ -12,9 +12,8 @@ export default function historique(form, app) {
     preloadCheckboxForm(form, 'covid_passee', app.profil)
     if (typeof app.profil.covid_passee_date !== 'undefined') {
         const difference = differenceEnJours(app.profil.covid_passee_date, new Date())
-        const toSelect = form.querySelector(
-            `input#covid_passee_date_${difference / JOUR_PAR_MOIS}_mois`
-        )
+        const nbMois = Math.min(Math.round(difference / JOUR_PAR_MOIS), 6)
+        const toSelect = form.querySelector(`input#covid_passee_date_${nbMois}_mois`)
         toSelect.checked = true
         toSelect.dispatchEvent(createEvent('change'))
     }
