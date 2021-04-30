@@ -129,7 +129,7 @@ Le virus contenu dans les vaccins est rendu **inopérant** et ne vous rend pas m
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-Un **pass sanitaire** (ou certificat de vaccination sous forme de QR code) devrait être disponible à partir de la mi-juin dans l’application TousAntiCovid. Pour le moment, les restrictions de déplacements (internationaux, inter-régionaux) s’appliquent même aux personnes vaccinées.
+Un **certificat de vaccination** (ou pass sanitaire sous forme de QR code) sera bientôt disponible dans l’application TousAntiCovid et en format papier. Jusqu’au 3 mai, les restrictions de déplacements (internationaux, inter-régionaux) s’appliquent même aux personnes vaccinées.
 
 </div>
 </div>
