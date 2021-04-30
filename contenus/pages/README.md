@@ -105,7 +105,7 @@ Même vacciné·e, en cas de contact à risque avec une personne positive à la 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-Le virus contenu dans les vaccins est rendu **inopérant** et ne vous rend pas malade de la Covid. Vous pouvez cependant ressentir des effets secondaires (fièvre, fatigue…), mais vous n’êtes pas contagieux.
+**Non**, il n’y a pas de virus actif dans les vaccins. Vous pouvez ressentir des effets secondaires (fièvre, fatigue…) suite à la vaccination, mais vous n’êtes **ni malade, ni contagieux**.
 
 </div>
 </div>
