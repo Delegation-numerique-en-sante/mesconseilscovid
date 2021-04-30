@@ -1,19 +1,28 @@
+import dayjs from 'dayjs'
+import 'dayjs/locale/fr'
+import localeData from 'dayjs/plugin/localeData'
+
 import {
     createEvent,
     enableOrDisableSecondaryFields,
     preloadCheckboxForm,
     toggleFormButtonOnTextFieldsAndRadioRequired,
 } from '../../formutils'
-import { differenceEnJours, joursAvant } from '../../utils'
+
+dayjs.locale('fr')
+dayjs.extend(localeData)
 
 export default function historique(form, app) {
-    const JOUR_PAR_MOIS = 30 // Approximation acceptable.
+    const now = dayjs()
+
     // Remplir le formulaire avec les données du profil.
     preloadCheckboxForm(form, 'covid_passee', app.profil)
     if (typeof app.profil.covid_passee_date !== 'undefined') {
-        const difference = differenceEnJours(app.profil.covid_passee_date, new Date())
-        const nbMois = Math.min(Math.round(difference / JOUR_PAR_MOIS), 6)
-        const toSelect = form.querySelector(`input#covid_passee_date_${nbMois}_mois`)
+        const covidPasseeDate = dayjs(app.profil.covid_passee_date)
+        const monthsAgo = now.diff(covidPasseeDate, 'month')
+        const toSelect = form.querySelector(
+            `input#covid_passee_date_${Math.min(6, monthsAgo)}_mois`
+        )
         toSelect.checked = true
         toSelect.dispatchEvent(createEvent('change'))
     }
@@ -27,15 +36,16 @@ export default function historique(form, app) {
 
     // On enrichit les choix dynamiquement avec les mois concernés.
     ;[2, 3, 4, 5, 6].forEach((i) => {
-        const il_y_a_x_mois = joursAvant(JOUR_PAR_MOIS * i)
-        const month = il_y_a_x_mois.toLocaleString('fr-FR', { month: 'long' })
+        const il_y_a_x_mois = now.subtract(i, 'month')
         const label_x_mois = form.querySelector(
             `label[for="covid_passee_date_${i}_mois"] span`
         )
         const suffix = i === 6 ? ' ou avant' : ''
         label_x_mois.innerHTML = `${
             label_x_mois.innerHTML
-        } (en <strong>${month}</strong> ${il_y_a_x_mois.getFullYear()}${suffix})`
+        } (en <strong>${il_y_a_x_mois.format(
+            'MMMM'
+        )}</strong> ${il_y_a_x_mois.year()}${suffix})`
     })
 
     // Le libellé du bouton change en fonction des choix.
@@ -58,7 +68,7 @@ export default function historique(form, app) {
         app.profil.covid_passee = form.elements['covid_passee'].checked
         if (app.profil.covid_passee) {
             const nbMonths = Number(form.elements['covid_passee_date'].value)
-            app.profil.covid_passee_date = joursAvant(nbMonths * 30)
+            app.profil.covid_passee_date = now.subtract(nbMonths, 'month')
         } else {
             app.profil.covid_passee_date = undefined
         }
