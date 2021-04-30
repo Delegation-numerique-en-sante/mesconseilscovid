@@ -28,6 +28,10 @@ import pytest
         ("à 10 000 kilomètres", "à 10&#8239;000&nbsp;kilomètres"),
         ("100&nbsp;%", "100&#8239;%"),
         ("pour&nbsp;100&nbsp;% des cas", "pour&nbsp;100&#8239;% des cas"),
+        (
+            '<h2 itemprop="name">Est-ce que je peux voyager&nbsp;?</h2>',
+            '<h2 itemprop="name">Est-ce que je peux voyager&#8239;?</h2>',
+        ),
         ("Covid-19 :", "Covid-19&nbsp;:"),
         ("35,5&nbsp;°C", "35,5&#8239;°C"),
         (
