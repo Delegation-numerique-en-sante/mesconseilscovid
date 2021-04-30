@@ -96,7 +96,7 @@ Votre lieu de résidence actuel : <b id="nom-departement"></b> (<a href="#situat
 
 ## [réponse_foyer_enfants.md](réponse_foyer_enfants.md)
 
-Vous vivez avec un ou des enfants de moins de 11 ans (<a href="#situation">modifier</a>)
+Vous vivez avec un ou des enfants (<a href="#situation">modifier</a>)
 
 
 
