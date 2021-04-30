@@ -1138,6 +1138,10 @@ a[href$='.pdf']::after {
 a[href*='youtube.com']::after {
     content: ' (vidéo Youtube)';
 }
+a.no-type::after {
+    content: '';
+}
+
 /* L’ordre est important, l’icône d’infographie écrase celle de fiche. */
 .conseils a[href="https://www.has-sante.fr/jcms/p_3185131/fr/accompagner-les-enfants-et-les-adolescents-dont-ceux-vivant-avec-une-maladie-chronique-lors-de-la-levee-du-confinement"]::before,
 .conseils a[href*="solidarites-sante-gouv-fr-IMG-pdf-"]::before,
@@ -1169,6 +1173,9 @@ a[href*='youtube.com']::after {
     align-items: center;
     width: 25px;
     height: 20px;
+}
+.conseils a.no-icon::before {
+    background: none;
 }
 
 .conseils details summary {
