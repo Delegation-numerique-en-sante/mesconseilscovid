@@ -905,13 +905,12 @@ Vous avec un traitement de longue durée ou une maladie chronique. Nous vous inv
 * <mark>à partir du **15 mai**</mark> : toutes les personnes de **50 ans et plus** ;
 * <mark>à partir du **15 juin**</mark> : toutes les personnes de **18 ans et plus**.
 
-<!-- 30/04/2021 : pas encore mise à jour -->
-<!--div class="illustration">
-    <a href="https://solidarites-sante.gouv.fr/local/adapt-img/1024/20x/IMG/png/infog_vaccins_particuliers.png">
+<div class="illustration">
+    <a href="https://solidarites-sante.gouv.fr/IMG/pdf/infog_vaccins_particuliers.pdf" class="no-icon no-type">
         <img src="illustrations/solidarites-sante-gouv-fr-infog-vaccins-particuliers.png"
              alt="Tableau illustrant la vaccination pour le grand public.">
     </a>
-</div-->
+</div>
 
 La vaccination est **gratuite** pour tous, et n’est **pas obligatoire**.
 
