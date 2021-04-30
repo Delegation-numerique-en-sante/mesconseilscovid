@@ -23,6 +23,7 @@ const CACHE_FILES = [
     'favicon-32x32.png',
     'marianne.png',
     'arrow-left.svg',
+    'arrow-right-white.svg',
     'ei-share-apple.svg',
     'map-marker2.svg',
     'printer.svg',
