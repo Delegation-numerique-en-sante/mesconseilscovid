@@ -873,20 +873,24 @@ Vous avec un traitement de longue durée ou une maladie chronique. Nous vous inv
 
 <span class="nouveau">nouveau</span> Le déploiement de la vaccination se fait en plusieurs phases :
 
-* dès maintenant :
+* <u>dès maintenant</u> :
    * les personnes de **55 ans ou plus** : chez leur médecin traitant, en centre de vaccination, en pharmacie, ou dans leur établissement (Ehpad, USLD, par exemple) ;
    * les personnes entre **50 et 54 ans** qui ont [un risque](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/article/la-strategie-vaccinale-et-la-liste-des-publics-prioritaires#liste-comor) de développer une **forme grave** de Covid (diabète, cancer, obésité, etc.) : chez leur médecin traitant, ou sur leur lieu de travail ;
    * les personnes de **plus de 18 ans** présentant un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) : chez leur médecin traitant, ou médecin du travail, ou lieu de soin, ou en centre de vaccination avec une **ordonnance de leur médecin traitant** ;
    * les **professionnels de santé** au sens large et les **sapeurs-pompiers** ;
-* à partir du 15 mai : les personnes de **plus de 50 ans** ;
-* mi-juin, la vaccination sera **ouverte à toutes les personnes** de 18 ans et plus.
+   * les personnes qui vivent auprès d’une personne **sévèrement immunodéprimée** ;
+   * les personnes au **second trimestre** de leur grossesse.
+* <u>à partir du 1<sup>er</sup> mai</u> :  les personnes de plus de 18 ans **en surcharge pondérale** (IMC > 30), ou à risque de développer une **forme grave** ;
+* <u>à partir du 15 mai</u> : toutes les personnes de **50 ans et plus** ;
+* <u>à partir du 15 juin</u> : toutes les personnes de **18 ans et plus**.
 
-<div class="illustration">
+<!-- 30/04/2021 : pas encore mise à jour -->
+<!--div class="illustration">
     <a href="https://solidarites-sante.gouv.fr/local/adapt-img/1024/20x/IMG/png/infog_vaccins_particuliers.png">
         <img src="illustrations/solidarites-sante-gouv-fr-infog-vaccins-particuliers.png"
              alt="Tableau illustrant la vaccination pour le grand public.">
     </a>
-</div>
+</div-->
 
 La vaccination est **gratuite** pour tous, et n’est **pas obligatoire**.
 
