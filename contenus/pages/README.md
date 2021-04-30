@@ -76,7 +76,7 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">Pourquoi continuer à porter le masque ?</h2>
+<h2 itemprop="name">Pourquoi continuer à porter le masque quand on est vacciné·e ?</h2>
 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
@@ -88,7 +88,7 @@ La vaccination prémunit contre les formes graves et symptomatiques de la maladi
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">Est-ce que je dois m’isoler si je suis « cas contact » ?</h2>
+<h2 itemprop="name">Est-ce que je dois m’isoler si je suis « cas contact »  et vacciné·e ?</h2>
 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
@@ -124,7 +124,7 @@ Même vacciné·e, en cas de contact à risque avec une personne positive à la 
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">Est-ce que je peux voyager ?</h2>
+<h2 itemprop="name">Est-ce que je peux voyager une fois vacciné·e ?</h2>
 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
