@@ -29,7 +29,7 @@ export default function historique(form, app) {
     // On enrichit les choix dynamiquement avec les mois concernés.
     ;[2, 3, 4, 5, 6].forEach((i) => {
         const il_y_a_x_mois = joursAvant(JOUR_PAR_MOIS * i)
-        const month = il_y_a_x_mois.toLocaleString('default', { month: 'long' })
+        const month = il_y_a_x_mois.toLocaleString('fr-FR', { month: 'long' })
         const label_x_mois = form.querySelector(
             `label[for="covid_passee_date_${i}_mois"] span`
         )
