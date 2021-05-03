@@ -47,6 +47,7 @@ def parse_args():
 def build_html():
     build.index()
     build.thematiques()
+    build.sitemap()
 
 
 def serve(address, port, open_, watch, ssl, ssl_cert, ssl_key):
@@ -114,7 +115,7 @@ def serve_https(address, port, open_, watch, ssl_cert, ssl_key):
     class MyFileSystemEventHandler(ShellCommandTrick):
         def __init__(self):
             super().__init__(
-                shell_command="python3 build.py index thematiques",
+                shell_command="python3 build.py index thematiques sitemap",
                 wait_for_process=True,
                 drop_during_process=True,
             )

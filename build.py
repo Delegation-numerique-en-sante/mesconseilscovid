@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import logging
 import re
+from datetime import date
 from html.parser import HTMLParser
 from http import HTTPStatus
 from pathlib import Path
@@ -19,6 +20,7 @@ LOGGER = logging.getLogger(__name__)
 HERE = Path(__file__).parent
 SRC_DIR = HERE / "src"
 CONTENUS_DIR = HERE / "contenus"
+STATIC_DIR = HERE / "static"
 TEMPLATES_DIR = HERE / "templates"
 
 jinja_env = JinjaEnv(
@@ -75,6 +77,7 @@ markdown = mistune.create_markdown(
 def all():
     index()
     thematiques()
+    sitemap()
     readmes()
 
 
@@ -105,6 +108,21 @@ def thematiques():
             },
         )
         (SRC_DIR / f"{path.stem}.html").write_text(content)
+
+
+@cli
+def sitemap():
+    """Build the sitemap for index + themes pages."""
+    stems = [
+        path.stem
+        for path in each_file_from(
+            CONTENUS_DIR / "pages", exclude=("README.md", ".DS_Store")
+        )
+    ]
+    content = render_template(
+        "sitemap.html", page_names=stems, lastmod_date=date.today()
+    )
+    (STATIC_DIR / "sitemap.xml").write_text(content)
 
 
 def extract_title(html_content):

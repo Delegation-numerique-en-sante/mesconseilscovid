@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://mesconseilscovid.sante.gouv.fr/</loc>
+        <lastmod>{{ lastmod_date }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    {% for page_name in page_names -%}
+    <url>
+        <loc>https://mesconseilscovid.sante.gouv.fr/{{ page_name}}.html</loc>
+        <lastmod>{{ lastmod_date }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    {% endfor %}
+</urlset>
