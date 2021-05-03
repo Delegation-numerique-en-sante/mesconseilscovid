@@ -1,3 +1,6 @@
+# Je suis cas contact Covid, que faire ?
+
+<div id="conseils-personnels" class="conseils">
 
 <big>Vous avez passé du temps avec une personne <b>positive à la Covid</b> ? Vous avez été contacté·e par l’<b>Assurance Maladie</b> ? Vous avez reçu une notification « Exposition à risque » de l’application <b>TousAntiCovid</b> ?</big>
 
@@ -32,3 +35,19 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 
 * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**) ;
 * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+
+## Vous avez encore des questions ?
+
+* J’ai déjà fait un **test**, que faire ?
+* Comment gérer mon **isolement** ?
+* J’ai une **maladie grave**, quelles spécificités ?
+* J’ai des **symptômes** de la Covid, quelles sont les recommandations ?
+* Je suis **cas contact de cas contact**, qu’est-ce que ça veut dire ?
+* J’ai un rendez-vous pour me faire **vacciner**, puis-je y aller ?
+
+<section class="cta">
+    <h3>Obtenez des conseils adaptés à votre situation (cas contact) en quelques clics</h3>
+    <a class="button" href="/#conseils">Je veux des conseils personnalisés</a>
+</section>
+
+</div>
