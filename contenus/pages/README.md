@@ -129,7 +129,7 @@ Même vacciné·e, en cas de contact à risque avec une personne positive à la 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-Un **certificat de vaccination** (ou pass sanitaire sous forme de QR code) sera bientôt disponible dans l’application TousAntiCovid et en format papier. Jusqu’au 3 mai, les restrictions de déplacements (internationaux, inter-régionaux) s’appliquent même aux personnes vaccinées.
+Pour voyager, certains pays pourront demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** (ou pass sanitaire) au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionel de santé qui vous a vacciné. Si elle ne comporte pas de QR code, vous pourrez en obtenir un à partir de la mi-mai. 
 
 </div>
 </div>
