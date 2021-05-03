@@ -4,8 +4,11 @@
 *Ce fichier est généré automatiquement pour pouvoir accéder rapidement aux contenus,il ne doit pas être édité !*
 
 
-## [page_cas_contact_a_risque_contenu.md](page_cas_contact_a_risque_contenu.md)
+## [page_cas_contact_a_risque.md](page_cas_contact_a_risque.md)
 
+# Je suis cas contact Covid, que faire ?
+
+<div id="conseils-personnels" class="conseils">
 
 <big>Vous avez passé du temps avec une personne <b>positive à la Covid</b> ? Vous avez été contacté·e par l’<b>Assurance Maladie</b> ? Vous avez reçu une notification « Exposition à risque » de l’application <b>TousAntiCovid</b> ?</big>
 
@@ -41,10 +44,6 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**) ;
 * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
-
-
-## [page_cas_contact_a_risque_cta.md](page_cas_contact_a_risque_cta.md)
-
 ## Vous avez encore des questions ?
 
 * J’ai déjà fait un **test**, que faire ?
@@ -59,16 +58,15 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
     <a class="button" href="/#conseils">Je veux des conseils personnalisés</a>
 </section>
 
-
-
-## [page_cas_contact_a_risque_titre.md](page_cas_contact_a_risque_titre.md)
-
-<!---->Je suis cas contact Covid, que faire ?
+</div>
 
 
 
-## [page_je_suis_vaccine_contenu.md](page_je_suis_vaccine_contenu.md)
+## [page_je_suis_vaccine.md](page_je_suis_vaccine.md)
 
+# Je suis vacciné·e contre la Covid
+
+<div id="conseils-personnels" class="conseils">
 
 <big>Vous êtes vacciné·e contre la Covid et vous vous posez des questions sur le masque, l’isolement, les contacts à risque (cas contact), la contagion (immunité), ou encore le certificat de vaccination (pass sanitaire) ?</big>
 
@@ -135,10 +133,6 @@ Pour voyager, certains pays pourront demander une preuve de vaccination. Pour at
 </div>
 </div>
 
-
-
-## [page_je_suis_vaccine_cta.md](page_je_suis_vaccine_cta.md)
-
 ## Vous avez encore des questions ?
 
 * J’ai des symptômes de la Covid, quelles sont les recommandations ?
@@ -149,10 +143,6 @@ Pour voyager, certains pays pourront demander une preuve de vaccination. Pour at
     <a class="button" href="/#conseils">Je veux des conseils personnalisés</a>
 </section>
 
-
-
-## [page_je_suis_vaccine_titre.md](page_je_suis_vaccine_titre.md)
-
-<!---->Je suis vacciné·e contre la Covid
+</div>
 
 

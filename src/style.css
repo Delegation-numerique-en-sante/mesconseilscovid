@@ -1320,7 +1320,7 @@ a.no-type::after {
     display: none;
 }
 
-.satellite #conseils-block #conseils-block-titre {
+.satellite #conseils-block h1 {
     margin-bottom: 3rem;
 }
 .satellite #conseils-block h2 {
