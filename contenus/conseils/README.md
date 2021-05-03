@@ -700,20 +700,19 @@ Une personne ayant eu la Covid **n’est immunisée que pour quelques semaines**
 
 ## [conseils_scolarite.md](conseils_scolarite.md)
 
-<div class="conseil conseil-jaune">
+<div class="conseil conseil-vert">
 
-<span class="nouveau">nouveau</span> Fermeture des crèches, écoles, collèges, lycées pendant 3 semaines depuis le 5 avril 2021.
+<span class="nouveau">nouveau</span> Depuis le 3 mai, mise en place d’une enseignement hybride pour les lycéens avec mise en place de **demi-jauges** à l’échelle de chaque lycée.
 
 </div>
 
-**Concernant les écoles**, le calendrier des classes est adapté pour préserver l’apprentissage :
+**Concernant l’enseignement supérieur** et les examens :
 
-* semaine du 26 avril : rentrée scolaire, avec retour en présentiel pour les crèches/maternelles/primaires et cours à distance pour les collèges/lycées ;
-* semaine du 3 mai : retour en classe pour les collèges/lycées avec des jauges de présence adaptées.
-
-**Concernant les universités**, elles continuent de fonctionner selon les protocoles en vigueur, soit la possibilité pour chaque étudiant de se rendre à l’université 1 jour par semaine. Les concours et examens prévus jusqu’au 3 mai seront maintenus et leur organisation sera adaptée. Ceux qui ne pourront pas se faire en distanciel devront être reportés autant que possible au mois de mai.
-
-**Concernant les assistantes maternelles**, elles sont autorisées à poursuivre leur activité mais il est fortement recommandé aux parents de ne pas y recourir et de garder eux-mêmes leurs enfants lorsque cela est possible.
+* les épreuves sont maintenues pour le brevet et le baccalauréat ;
+* pour les élèves de BTS et des Cours préparatoires aux grandes écoles (CPGE) en lycée, la reprise des cours se fait dans les mêmes conditions que les lycéens ;
+* CPGE : les concours ont lieu en présentiel ;
+* session de rattrapage possible pour les élèves de BTS ;
+* les examens et partiels auront lieu en présentiel en mai et en juin, les concours sont maintenus sans changement.
 
 
 
