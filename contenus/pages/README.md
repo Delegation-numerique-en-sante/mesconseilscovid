@@ -4,7 +4,7 @@
 *Ce fichier est généré automatiquement pour pouvoir accéder rapidement aux contenus,il ne doit pas être édité !*
 
 
-## [page_cas_contact_a_risque.md](page_cas_contact_a_risque.md)
+## [cas-contact-a-risque.md](cas-contact-a-risque.md)
 
 # Je suis cas contact Covid, que faire ?
 
@@ -62,7 +62,7 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 
 
 
-## [page_je_suis_vaccine.md](page_je_suis_vaccine.md)
+## [je-suis-vaccine.md](je-suis-vaccine.md)
 
 # Je suis vacciné·e contre la Covid
 
