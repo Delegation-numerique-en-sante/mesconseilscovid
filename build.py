@@ -136,7 +136,7 @@ def build_responses(source_dir):
     for folder in each_folder_from(source_dir):
         for path in each_file_from(folder, pattern="*.md"):
             html_content = render_markdown_file(path)
-            responses[path.name[: -len(".md")]] = html_content
+            responses[path.stem] = html_content
 
     return responses
 
