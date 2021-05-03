@@ -74,7 +74,7 @@ markdown = mistune.create_markdown(
 @cli
 def all():
     index()
-    satellites()
+    thematiques()
     readmes()
 
 
@@ -88,13 +88,28 @@ def index():
 
 
 @cli
-def satellites():
+def thematiques():
     """Build the pages with contents from markdown dedicated folder."""
-    pages = build_responses(CONTENUS_DIR)
-    content = render_template("cas-contact-a-risque.html", **pages)
-    (SRC_DIR / "cas-contact-a-risque.html").write_text(content)
-    content = render_template("je-suis-vaccine.html", **pages)
-    (SRC_DIR / "je-suis-vaccine.html").write_text(content)
+    responses = build_responses(CONTENUS_DIR)
+    for path in each_file_from(
+        CONTENUS_DIR / "pages", exclude=("README.md", ".DS_Store")
+    ):
+        html_content = render_markdown_file(path)
+        title = extract_title(html_content)
+        content = render_template(
+            "thematique.html",
+            **{
+                "title": title,
+                "content": html_content,
+                "meta_pied_de_page": responses["meta_pied_de_page"],
+            },
+        )
+        (SRC_DIR / f"{path.stem}.html").write_text(content)
+
+
+def extract_title(html_content):
+    html_title, _ = html_content.split("</h1>", 1)
+    return html_title.split("<h1>", 1)[1]
 
 
 def build_responses(source_dir):
