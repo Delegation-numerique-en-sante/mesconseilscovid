@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-05-03
+
+* précisions sur le certificat de vaccination
+* retrait de la limitation de déplacement à 10 km
+
 ## 2021-04-30
 
 * conseils plus détaillés pour les personnes de mon foyer si je suis positif
