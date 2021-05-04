@@ -262,12 +262,14 @@ a .profil {
 #profils-cards {
     padding-top: 1rem;
 }
-.profil-empty {
+.profil-empty,
+.profil-thematique {
     width: 100%;
     font-size: 1.2rem;
     font-weight: bold;
 }
-.profil-empty a.button {
+.profil-empty a.button,
+.profil-thematique a.button {
     max-width: 18rem;
     margin: auto;
     display: flex;
@@ -275,8 +277,16 @@ a .profil {
     flex-direction: column;
     min-height: 5rem;
 }
-.profil-empty a.button-outline {
+.profil-empty a.button-outline,
+.profil-thematique a.button-outline {
     font-weight: normal;
+}
+.profil-thematique a.button {
+    padding-top: 10rem;
+    background-image: var(--bg-thematique-image);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: 65% 65%;
 }
 .cards > li {
     margin-top: 1rem;
@@ -287,7 +297,8 @@ a .profil {
     .cards .card:first-child {
         margin-bottom: 1rem;
     }
-    .profil-empty {
+    .profil-empty,
+    .profil-thematique {
         width: 50%;
     }
 }
@@ -1324,6 +1335,10 @@ a.no-type::after {
     margin-bottom: 1.2rem;
     font-size: 175%;
 }
+.satellite .illustration {
+    max-width: 15rem;
+}
+
 .satellite .cta {
     text-align: center;
     margin-top: 4rem;

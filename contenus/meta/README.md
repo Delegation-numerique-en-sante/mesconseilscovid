@@ -93,7 +93,7 @@ Si votre situation change, vous pouvez **mettre à jour vos réponses**, par exe
 
 ## [meta_introduction.md](meta_introduction.md)
 
-## Isolement, tests, vaccins, contact à risque…
+## D’autres questions ?
 
 
 <div class="js-intro">

@@ -85,6 +85,20 @@
 
 <section id="introduction" hidden>
     <div id="introduction-block" class="block introduction-block">
+        <h2>Isolement, tests, vaccins, contact à risque…</h2>
+        <p class="tagline">
+            Mes Conseils Covid donne des réponses simples, fiables et à jour pour savoir quoi faire dans une situation liée à la Covid.
+        </p>
+        <ul class="cards">
+            {% for thematique in thematiques %}
+                <li class="profil-thematique">
+                    <a href="{{ thematique.name }}.html"
+                        class="button button-outline"
+                        style="--bg-thematique-image: url('{{ thematique.imgsrc }}');"
+                        >{{ thematique.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
         {{ meta_introduction }}
         <ul id="profils-cards" class="cards"></ul>
         <div class="tagline-image"></div>
