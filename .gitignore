@@ -11,4 +11,5 @@ feedback/paper_key
 dist/
 src/*.html
 src/pdfs/*
+static/sitemap.xml
 contenus/zoverride
