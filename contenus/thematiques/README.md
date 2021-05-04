@@ -1,5 +1,5 @@
 
-# Pages
+# Thematiques
 
 *Ce fichier est généré automatiquement pour pouvoir accéder rapidement aux contenus,il ne doit pas être édité !*
 
