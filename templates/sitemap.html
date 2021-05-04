@@ -6,9 +6,9 @@
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
-    {% for page_name in page_names -%}
+    {% for thematique_name in thematique_names -%}
     <url>
-        <loc>https://mesconseilscovid.sante.gouv.fr/{{ page_name}}.html</loc>
+        <loc>https://mesconseilscovid.sante.gouv.fr/{{ thematique_name }}.html</loc>
         <lastmod>{{ lastmod_date }}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>

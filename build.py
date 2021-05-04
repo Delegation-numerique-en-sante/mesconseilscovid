@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import logging
 import re
+from dataclasses import dataclass
 from datetime import date
 from html.parser import HTMLParser
 from http import HTTPStatus
@@ -132,39 +133,51 @@ def index():
     (SRC_DIR / "index.html").write_text(content)
 
 
+@dataclass
+class Thematique:
+    path: Path
+    title: str
+    content: str
+
+    @property
+    def name(self):
+        return self.path.stem
+
+
 @cli
 def thematiques():
     """Build the pages with contents from markdown dedicated folder."""
     responses = build_responses(CONTENUS_DIR)
-    for path in each_file_from(
-        CONTENUS_DIR / "pages", exclude=("README.md", ".DS_Store")
-    ):
-        html_content = str(render_markdown_file(path))
-        title = extract_title(html_content)
+    for thematique in get_thematiques():
         content = render_template(
             "thematique.html",
             **{
-                "title": title,
-                "content": html_content,
+                "thematique": thematique,
                 "meta_pied_de_page": responses["meta_pied_de_page"],
             },
         )
-        (SRC_DIR / f"{path.stem}.html").write_text(content)
+        (SRC_DIR / f"{thematique.name}.html").write_text(content)
 
 
 @cli
 def sitemap():
     """Build the sitemap for index + themes pages."""
-    stems = [
-        path.stem
-        for path in each_file_from(
-            CONTENUS_DIR / "pages", exclude=("README.md", ".DS_Store")
-        )
-    ]
+    thematique_names = [thematique.name for thematique in get_thematiques()]
     content = render_template(
-        "sitemap.html", page_names=stems, lastmod_date=date.today()
+        "sitemap.html", thematique_names=thematique_names, lastmod_date=date.today()
     )
     (STATIC_DIR / "sitemap.xml").write_text(content)
+
+
+def get_thematiques():
+    thematiques = []
+    for path in each_file_from(
+        CONTENUS_DIR / "pages", exclude=("README.md", ".DS_Store")
+    ):
+        html_content = str(render_markdown_file(path))
+        title = extract_title(html_content)
+        thematiques.append(Thematique(path=path, title=title, content=html_content))
+    return thematiques
 
 
 def extract_title(html_content):
