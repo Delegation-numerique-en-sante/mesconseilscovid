@@ -185,7 +185,7 @@ def service_worker():
 @cli
 def orphelins():
     template = (TEMPLATES_DIR / "index.html").read_text()
-    for folder in each_folder_from(CONTENUS_DIR, exclude=["pages"]):
+    for folder in each_folder_from(CONTENUS_DIR, exclude=["thematiques"]):
         for path in each_file_from(folder, pattern="*.md", exclude=["README.md"]):
             if path.name.startswith("meta_") or path.name.startswith("config_"):
                 continue

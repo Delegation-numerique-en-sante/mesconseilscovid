@@ -146,7 +146,7 @@ class Thematique:
 
 @cli
 def thematiques():
-    """Build the pages with contents from markdown dedicated folder."""
+    """Build the theme pages with contents from thematiques folder."""
     responses = build_responses(CONTENUS_DIR)
     for thematique in get_thematiques():
         content = render_template(
@@ -172,7 +172,7 @@ def sitemap():
 def get_thematiques():
     thematiques = []
     for path in each_file_from(
-        CONTENUS_DIR / "pages", exclude=("README.md", ".DS_Store")
+        CONTENUS_DIR / "thematiques", exclude=("README.md", ".DS_Store")
     ):
         html_content = str(render_markdown_file(path))
         title = extract_title(html_content)
