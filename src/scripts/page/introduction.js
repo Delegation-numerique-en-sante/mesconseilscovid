@@ -6,15 +6,23 @@ export default function introduction(element, app) {
     showElement(header.querySelector('.js-profil-empty'))
     hideElement(header.querySelector('.js-profil-full'))
 
-    const container = element.querySelector('#profils-cards')
-    if (!container) return // Sortie rapide pour les pages thématiques.
+    const emptyContainer = element.querySelector('#profils-cards-empty')
+    if (!emptyContainer) return // Sortie rapide pour les pages thématiques.
+
+    const fullContainer = element.querySelector('#profils-cards-full')
+    const fullContainerList = fullContainer.querySelector('ul.cards')
 
     app.stockage.getProfils().then((noms) => {
         if (noms.length) {
-            hideElement(element.querySelector('.js-intro'))
+            hideElement(emptyContainer)
+            showElement(fullContainer)
+        } else {
+            hideElement(fullContainer)
+            showElement(emptyContainer)
         }
+        bindCreateProfil(emptyContainer.querySelector('[data-set-profil]'), app)
         if (noms.indexOf('mes_infos') === -1) {
-            const cardClassique = container.appendChild(
+            const cardClassique = fullContainerList.appendChild(
                 createElementFromHTML(`
                     <li class="profil-empty">
                         <a class="button button-full-width"
@@ -26,7 +34,7 @@ export default function introduction(element, app) {
             )
             bindCreateProfil(cardClassique.querySelector('[data-set-profil]'), app)
         }
-        container.appendChild(
+        fullContainerList.appendChild(
             createElementFromHTML(`
                 <li class="profil-empty">
                     <a class="button button-full-width button-outline js-profil-new"
@@ -35,7 +43,7 @@ export default function introduction(element, app) {
                 </li>
             `)
         )
-        renderProfilCards(container, noms, app)
+        renderProfilCards(fullContainerList, noms, app)
     })
 }
 
