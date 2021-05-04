@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-05-04
+
+* mise à jour des conseils relatifs à la scolarité
+* reformulations sur certains libellés de questions
+
 ## 2021-05-03
 
 * précisions sur le certificat de vaccination
