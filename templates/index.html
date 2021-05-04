@@ -94,8 +94,7 @@
                 <li class="profil-thematique">
                     <a href="{{ thematique.name }}.html"
                         class="button button-outline"
-                        style="--bg-thematique-image: url('{{ thematique.imgsrc }}');"
-                        >{{ thematique.title }}</a>
+                        ><img src="{{ thematique.imgsrc }}">{{ thematique.title }}</a>
                 </li>
             {% endfor %}
         </ul>
