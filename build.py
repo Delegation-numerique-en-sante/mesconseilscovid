@@ -128,6 +128,7 @@ def all():
 def index():
     """Build the index with contents from markdown dedicated folder."""
     responses = build_responses(CONTENUS_DIR)
+    responses["thematiques"] = get_thematiques()
     content = render_template("index.html", **responses)
     content = cache_external_pdfs(content)
     (SRC_DIR / "index.html").write_text(content)
@@ -138,6 +139,7 @@ class Thematique:
     path: Path
     title: str
     content: str
+    imgsrc: str
 
     @property
     def name(self):
@@ -176,13 +178,21 @@ def get_thematiques():
     ):
         html_content = str(render_markdown_file(path))
         title = extract_title(html_content)
-        thematiques.append(Thematique(path=path, title=title, content=html_content))
+        image = extract_image(html_content)
+        thematiques.append(
+            Thematique(path=path, title=title, content=html_content, imgsrc=image)
+        )
     return thematiques
 
 
 def extract_title(html_content):
     html_title, _ = html_content.split("</h1>", 1)
     return html_title.split("<h1>", 1)[1]
+
+
+def extract_image(html_content):
+    _, from_src = html_content.split('<img src="', 1)
+    return from_src.split('"', 1)[0]
 
 
 def build_responses(source_dir):

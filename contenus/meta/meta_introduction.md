@@ -1,4 +1,4 @@
-## Isolement, tests, vaccins, contact à risque…
+## D’autres questions ?
 
 
 <div class="js-intro">

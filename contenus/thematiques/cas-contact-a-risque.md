@@ -1,5 +1,9 @@
 # Je suis cas contact Covid, que faire ?
 
+<div class="illustration">
+    <img src="illustrations/contactarisque.svg" alt="">
+</div>
+
 <div id="conseils-personnels" class="conseils">
 
 <big>Vous avez passé du temps avec une personne <b>positive à la Covid</b> ? Vous avez été contacté·e par l’<b>Assurance Maladie</b> ? Vous avez reçu une notification « Exposition à risque » de l’application <b>TousAntiCovid</b> ?</big>
