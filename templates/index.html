@@ -85,6 +85,10 @@
 
 <section id="introduction" hidden>
     <div id="introduction-block" class="block introduction-block">
+        <div id="profils-cards-full" hidden>
+            <h2>Vos profils</h2>
+            <ul class="cards"></ul>
+        </div>
         <h2>Isolement, tests, vaccins, contact à risque…</h2>
         <p class="tagline">
             Mes Conseils Covid donne des réponses simples, fiables et à jour pour savoir quoi faire dans une situation liée à la Covid.
@@ -98,9 +102,23 @@
                 </li>
             {% endfor %}
         </ul>
-        {{ meta_introduction }}
-        <ul id="profils-cards" class="cards"></ul>
-        <div class="tagline-image"></div>
+        <div id="profils-cards-empty">
+            {{ meta_introduction }}
+            <ul class="cards">
+                <li class="profil-empty">
+                    <a class="button button-full-width"
+                        data-set-profil="mes_infos"
+                        href="#vaccins"
+                        >Des conseils pour moi</a>
+                </li>
+                <li class="profil-empty">
+                    <a class="button button-full-width button-outline js-profil-new"
+                        href="#nom"
+                        >Des conseils pour un·e proche</a>
+                </li>
+            </ul>
+            <div class="tagline-image"></div>
+        </div>
 
         <p>Vos informations personnelles sont seulement stockées sur cet appareil et ne sont pas partagées.</p>
 

@@ -18,7 +18,7 @@ describe('Suivi', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                '#page.ready >> text="Des conseils pour moi"'
+                '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -232,7 +232,7 @@ describe('Suivi', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                '#page.ready .js-profil-new >> text="Des conseils pour un·e proche"'
+                '#page.ready #profils-cards-empty .js-profil-new >> text="Des conseils pour un·e proche"'
             )
             await Promise.all([
                 bouton.click(),

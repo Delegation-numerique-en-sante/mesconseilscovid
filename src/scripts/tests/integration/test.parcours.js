@@ -14,7 +14,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                '#page.ready >> text="Des conseils pour moi"'
+                '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -100,7 +100,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                '#page.ready >> text="Des conseils pour moi"'
+                '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -150,7 +150,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                '#page.ready >> text="Des conseils pour moi"'
+                '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -188,7 +188,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                '#page.ready >> text="Des conseils pour moi"'
+                '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -228,7 +228,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                '#page.ready >> text="Des conseils pour moi"'
+                '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -278,7 +278,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                '#page.ready >> text="Des conseils pour moi"'
+                '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -329,7 +329,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                '#page.ready >> text="Des conseils pour moi"'
+                '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -380,7 +380,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                '#page.ready >> text="Des conseils pour moi"'
+                '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -433,7 +433,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                '#page.ready >> text="Des conseils pour moi"'
+                '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -484,7 +484,7 @@ describe('Parcours', function () {
         // Page d’accueil.
         {
             let bouton = await page.waitForSelector(
-                '#page.ready >> text="Des conseils pour moi"'
+                '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
             )
             await Promise.all([
                 bouton.click(),
