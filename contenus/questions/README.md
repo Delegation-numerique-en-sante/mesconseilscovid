@@ -794,7 +794,7 @@ Des personnes croisées à l’extérieur de chez moi un court instant ne sont p
 
 ## [question_symptômes_libellé_non.md](question_symptômes_libellé_non.md)
 
-<!----><b>Pas récemment</b>
+<!----><b>Non, ou pas récemment</b>
 
 
 
