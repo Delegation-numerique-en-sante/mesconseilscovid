@@ -702,17 +702,16 @@ Une personne ayant eu la Covid **n’est immunisée que pour quelques semaines**
 
 <div class="conseil conseil-vert">
 
-<span class="nouveau">nouveau</span> Depuis le 3 mai, mise en place d’une enseignement hybride pour les lycéens avec mise en place de **demi-jauges** à l’échelle de chaque lycée.
+<span class="nouveau">nouveau</span> Depuis le 3 mai, mise en place d’une enseignement hybride pour les lycéens (y compris classes prépa et BTS), avec mise en place de **demi-jauges** à l’échelle de chaque lycée.
 
 </div>
 
-**Concernant l’enseignement supérieur** et les examens :
+Concernant les **concours et les examens** :
 
-* les épreuves sont maintenues pour le brevet et le baccalauréat ;
-* pour les élèves de BTS et des Cours préparatoires aux grandes écoles (CPGE) en lycée, la reprise des cours se fait dans les mêmes conditions que les lycéens ;
-* CPGE : les concours ont lieu en présentiel ;
-* session de rattrapage possible pour les élèves de BTS ;
-* les examens et partiels auront lieu en présentiel en mai et en juin, les concours sont maintenus sans changement.
+* les épreuves sont maintenues pour le **brevet**, le **bac général** (épreuve de philosophie et grand oral) et les **bac pro** ;
+* pour les **classes prépa** (CPGE), les concours auront lieu en présentiel ;
+* pour les **BTS** : maintien des épreuves terminales de juin, avec la part de stage et de contrôle continu, et une session exceptionnelle de rattrapage en juillet ;
+* pour tout le reste du supérieur, maintien des examens avec des sessions de rattrapage pour les élèves malades.
 
 
 
