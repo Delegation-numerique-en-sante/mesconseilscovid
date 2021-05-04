@@ -1,1 +1,1 @@
-<!----><b>Pas récemment</b>
+<!----><b>Non, ou pas récemment</b>
