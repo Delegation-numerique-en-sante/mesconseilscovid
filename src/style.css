@@ -281,13 +281,6 @@ a .profil {
 .profil-thematique a.button-outline {
     font-weight: normal;
 }
-.profil-thematique a.button {
-    padding-top: 10rem;
-    background-image: var(--bg-thematique-image);
-    background-position: center 0;
-    background-repeat: no-repeat;
-    background-size: 65% 65%;
-}
 .cards > li {
     margin-top: 1rem;
     display: flex;
