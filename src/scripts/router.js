@@ -58,7 +58,7 @@ export function initRouter(app) {
             var pageName = getCurrentPageName()
             document.dispatchEvent(new CustomEvent('pageChanged', { detail: pageName }))
             // Focus on the main header element (A11Y: keyboard navigation)
-            document.querySelector('#main-header').focus()
+            document.querySelector('[role="banner"]').focus()
         },
     })
 
