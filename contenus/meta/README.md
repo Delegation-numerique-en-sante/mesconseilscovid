@@ -139,8 +139,8 @@ Il est recommandé de mettre à jour dès que possible en cliquant sur le bouton
         <div class="feedback-form" hidden>
             <form>
                 <fieldset>
-                    <p>Merci de nous avoir signalé vos difficultés avec cette page. Pouvez-vous nous en dire plus, afin que nous puissions l’améliorer ?</p>
-                    <label for="message_pied_de_page" class="visually-hidden">Message :</label>
+                    <p>Merci de nous avoir signalé vos difficultés avec cette page.</p>
+                    <label for="message_pied_de_page">Pouvez-vous nous en dire plus, afin que nous puissions l’améliorer ?</label>
                     <textarea id="message_pied_de_page" name="message" rows="9" cols="20" required></textarea>
                 </fieldset>
                 <div class="form-controls">
@@ -196,8 +196,8 @@ Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement
         <div class="feedback-form" hidden>
             <form>
                 <fieldset>
-                    <p>Merci pour votre retour. Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?</p>
-                    <label for="message_conseils" class="visually-hidden">Message :</label>
+                    <p>Merci pour votre retour.</p>
+                    <label for="message_conseils">Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?</label>
                     <textarea id="message_conseils" name="message" rows="9" cols="20" required></textarea>
                 </fieldset>
                 <div class="form-controls">
