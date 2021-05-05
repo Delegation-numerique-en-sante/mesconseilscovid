@@ -39,7 +39,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     overflow: inherit;
-    min-width: 360px;
+    min-width: 320px;
 }
 a {
     color: #000091;
@@ -114,7 +114,6 @@ header h1 a #logo-titre {
 header #js-profil-empty-header,
 header #js-profil-full-header {
     min-width: 100px; /* Matches Marianne size. */
-    margin-left: 10px;
 }
 main {
     background-color: #f9f8f6;
@@ -854,7 +853,7 @@ fieldset ul.details {
 }
 
 .feedback-controls {
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
     margin: 0 1rem;
     padding-top: 1rem;
