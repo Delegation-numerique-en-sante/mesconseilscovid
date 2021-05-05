@@ -21,7 +21,7 @@ pluggy==0.13.1
 py==1.10.0
 pyinotify==0.9.6; platform_system == 'Linux'
 pyparsing==2.4.7
-pytest==6.2.3
+pytest==6.2.4
 regex==2021.4.4
 rfc3986==1.4.0
 six==1.15.0
