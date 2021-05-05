@@ -56,7 +56,7 @@
             <div id="js-profil-empty-header" class="js-profil-empty"></div>
         </section>
     </header>
-    <main>
+    <main role="main">
         <section id="update-banner" hidden>
             <div class="block">
                 <div>{{ meta_nouvelle_version_disponible_bannière }}</div>
@@ -78,10 +78,10 @@
                 </noscript>
             </div>
         </section>
-        <footer>
-            {{ meta_pied_de_page }}
-        </footer>
     </main>
+    <footer role="contentinfo">
+        {{ meta_pied_de_page }}
+    </footer>
 
 <section id="introduction" hidden>
     <div id="introduction-block" class="block introduction-block">

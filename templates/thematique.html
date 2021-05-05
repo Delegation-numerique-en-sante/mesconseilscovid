@@ -31,7 +31,7 @@
     <meta property="og:locale" content="fr_FR">
 </head>
 <body>
-    <header>
+    <header role="banner">
         <section>
             <img id="marianne" src="marianne.png"
                 alt="Ministère des Solidarités et de la Santé"
@@ -53,7 +53,7 @@
             <div id="js-profil-empty-header" class="js-profil-empty"></div>
         </section>
     </header>
-    <main>
+    <main role="main">
         <section id="page" class="satellite">
             <section id="introduction">
                 <div>
@@ -63,10 +63,10 @@
                 </div>
             </section>
         </section>
-        <footer>
-            {{ meta_pied_de_page }}
-        </footer>
     </main>
+    <footer role="contentinfo">
+        {{ meta_pied_de_page }}
+    </footer>
     <script src="scripts/main.js"></script>
 </body>
 </html>
