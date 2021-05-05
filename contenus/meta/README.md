@@ -144,7 +144,7 @@ Il est recommandé de mettre à jour dès que possible en cliquant sur le bouton
                     <textarea id="message_pied_de_page" name="message" rows="9" cols="20" required></textarea>
                 </fieldset>
                 <div class="form-controls">
-                    <input type="submit" class="button" value="Envoyer">
+                    <input type="submit" class="button" value="Envoyer mes remarques">
                 </div>
             </form>
             <p>ou écrivez-nous à : <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a></p>
@@ -200,7 +200,7 @@ Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement
                     <textarea id="message_conseils" name="message" rows="9" cols="20" required></textarea>
                 </fieldset>
                 <div class="form-controls">
-                    <input type="submit" class="button" value="Envoyer">
+                    <input type="submit" class="button" value="Envoyer mes remarques">
                 </div>
             </form>
             <p class="feedback-email">ou écrivez-nous à : <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a></p>
