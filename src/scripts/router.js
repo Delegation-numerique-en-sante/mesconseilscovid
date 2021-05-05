@@ -57,6 +57,8 @@ export function initRouter(app) {
             // Global hook to send a custom event on each page change.
             var pageName = getCurrentPageName()
             document.dispatchEvent(new CustomEvent('pageChanged', { detail: pageName }))
+            // Focus on the main header element (A11Y: keyboard navigation)
+            document.querySelector('#main-header').focus()
         },
     })
 
