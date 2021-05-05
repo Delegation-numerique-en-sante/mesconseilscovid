@@ -483,7 +483,7 @@ Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proche
 
 ## [question_suivi_symptômes_confusion_libellé.md](question_suivi_symptômes_confusion_libellé.md)
 
-Avez-vous remarqué que votre proche n’est pas comme d’habitude ces dernières heures : forte **fatigue** ou **confusion** ?
+<!---->Avez-vous remarqué que votre proche n’est pas comme d’habitude ces dernières heures : forte **fatigue** ou **confusion** ?
 
 
 
