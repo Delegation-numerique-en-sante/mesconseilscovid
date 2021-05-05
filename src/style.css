@@ -368,26 +368,26 @@ main footer .legals {
     background-size: 40%;
 }
 
-#conseils-scolarite header,
-#conseils-vie-quotidienne header,
-#conseils-activite header,
-#conseils-tests header,
-#conseils-isolement header,
-#conseils-gestes-barrieres-masque header,
-#conseils-sante header,
-#conseils-grossesse header,
-#conseils-foyer-enfants header,
-#conseils-covid header,
-#conseils-pediatrie-general header,
-#conseils-pediatrie-ecole header,
-#conseils-pediatrie-medical header,
-#conseils-vaccins header {
+#conseils-scolarite summary,
+#conseils-vie-quotidienne summary,
+#conseils-activite summary,
+#conseils-tests summary,
+#conseils-isolement summary,
+#conseils-gestes-barrieres-masque summary,
+#conseils-sante summary,
+#conseils-grossesse summary,
+#conseils-foyer-enfants summary,
+#conseils-covid summary,
+#conseils-pediatrie-general summary,
+#conseils-pediatrie-ecole summary,
+#conseils-pediatrie-medical summary,
+#conseils-vaccins summary {
     background-position: center 1rem;
     background-repeat: no-repeat;
     background-size: 35%;
     padding: 90px 0 0 0;
 }
-#conseils-pediatrie-general header {
+#conseils-pediatrie-general summary {
     padding-top: 200px;
 }
 @media only screen and (min-width: 450px) {
@@ -404,25 +404,25 @@ main footer .legals {
         background-size: 30%;
     }
 
-    #conseils-scolarite header,
-    #conseils-vie-quotidienne header,
-    #conseils-activite header,
-    #conseils-tests header,
-    #conseils-isolement header,
-    #conseils-gestes-barrieres-masque header,
-    #conseils-sante header,
-    #conseils-grossesse header,
-    #conseils-foyer-enfants header,
-    #conseils-covid header,
-    #conseils-pediatrie-general header,
-    #conseils-pediatrie-ecole header,
-    #conseils-pediatrie-medical header,
-    #conseils-vaccins header {
+    #conseils-scolarite summary,
+    #conseils-vie-quotidienne summary,
+    #conseils-activite summary,
+    #conseils-tests summary,
+    #conseils-isolement summary,
+    #conseils-gestes-barrieres-masque summary,
+    #conseils-sante summary,
+    #conseils-grossesse summary,
+    #conseils-foyer-enfants summary,
+    #conseils-covid summary,
+    #conseils-pediatrie-general summary,
+    #conseils-pediatrie-ecole summary,
+    #conseils-pediatrie-medical summary,
+    #conseils-vaccins summary {
         background-size: 15%;
         background-position: center left;
         padding: 0 0 0 8rem;
     }
-    #conseils-pediatrie-general header {
+    #conseils-pediatrie-general summary {
         padding-top: 400px;
     }
 }
@@ -431,52 +431,52 @@ main footer .legals {
     background-image: url('illustrations/nom.svg');
 }
 #situation-form,
-#conseils-vie-quotidienne header {
+#conseils-vie-quotidienne summary {
     background-image: url('illustrations/situation.svg');
 }
-#conseils-activite header {
+#conseils-activite summary {
     background-image: url('illustrations/activitepro.svg');
 }
-#conseils-foyer header {
+#conseils-foyer summary {
     background-image: url('illustrations/foyer.svg');
 }
-#conseils-tests header {
+#conseils-tests summary {
     background-image: url('illustrations/depistage.svg');
 }
-#conseils-isolement header {
+#conseils-isolement summary {
     background-image: url('illustrations/isolement.svg');
 }
-#conseils-gestes-barrieres-masque header {
+#conseils-gestes-barrieres-masque summary {
     background-image: url('illustrations/gestesbarrieres.svg');
 }
-#conseils-sante header {
+#conseils-sante summary {
     background-image: url('illustrations/contact_medecin.svg');
 }
 #suivi-medecin-form,
 #sante-form {
     background-image: url('illustrations/sante.svg');
 }
-#conseils-grossesse header {
+#conseils-grossesse summary {
     background-image: url('illustrations/grossesse.svg');
 }
-#conseils-foyer-enfants header {
+#conseils-foyer-enfants summary {
     background-image: url('illustrations/pediatriegeneral.svg');
 }
 #historique-form,
-#conseils-covid header {
+#conseils-covid summary {
     background-image: url('illustrations/covid.svg');
 }
 .tagline-image {
     background-image: url('illustrations/accueil.svg');
 }
-#conseils-pediatrie-general header {
+#conseils-pediatrie-general summary {
     background-image: url('illustrations/pediatriegeneral.svg');
 }
-#conseils-scolarite header,
-#conseils-pediatrie-ecole header {
+#conseils-scolarite summary,
+#conseils-pediatrie-ecole summary {
     background-image: url('illustrations/pediatrieecole.svg');
 }
-#conseils-pediatrie-medical header {
+#conseils-pediatrie-medical summary {
     background-image: url('illustrations/pediatriemedical.svg');
 }
 #suivi-symptomes-form {
@@ -492,7 +492,7 @@ main footer .legals {
     background-image: url('illustrations/depistage.svg');
 }
 #vaccins-form,
-#conseils-vaccins header {
+#conseils-vaccins summary {
     background-image: url('illustrations/vaccins.svg');
 }
 
@@ -1192,12 +1192,6 @@ a.no-type::after {
 .conseils > details:not([open]) > :not(summary) {
     display: none;
 }
-.conseils > details > summary header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    margin: 0;
-}
 .conseils > details > summary svg {
     height: 40px;
     width: 60px;
@@ -1352,7 +1346,7 @@ a.no-type::after {
         display: block;
     }
 
-    #conseils-blocs .conseils header {
+    #conseils-blocs .conseils summary {
         padding-top: 0;
         background-image: none;
     }
