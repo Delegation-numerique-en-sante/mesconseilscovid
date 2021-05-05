@@ -41,5 +41,5 @@ Pour en savoir plus :
 * [La stratégie vaccinale et la liste des publics prioritaires](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/publics-prioritaires-vaccin-covid-19)
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
 * Le site [vaccination-info-service](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/COVID-19) de Santé Publique France
-* Les [réponses à vos questions sur les vaccins COVID-19](https://sante.fr/vaccins-covid-19-comirnatyr-et-modernar-toutes-les-reponses-vos-questions)  Comirnaty® de Pfizer/BioNTech et Moderna®
+* Les [réponses à vos questions sur les vaccins](https://www.sante.fr/vaccins-coronavirus-covid-19-toutes-les-reponses-vos-questions)
 * [Vaccination chez les femmes enceintes ou allaitantes : ce qu’il faut savoir](https://ansm.sante.fr/dossiers-thematiques/covid-19-vaccins/covid-19-vaccins-et-femmes-enceintes)
