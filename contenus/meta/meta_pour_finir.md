@@ -24,7 +24,7 @@ Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement
         <div class="feedback-form" hidden>
             <form>
                 <fieldset>
-                    <p>Merci pour votre retour.</p>
+                    <p role="status">Merci pour votre retour.</p>
                     <label for="message_conseils">Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?</label>
                     <textarea id="message_conseils" name="message" rows="9" cols="20" required></textarea>
                 </fieldset>
@@ -35,7 +35,7 @@ Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement
             <p class="feedback-email">ou écrivez-nous à : <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a></p>
         </div>
         <div class="feedback-thankyou" hidden>
-            <p>
+            <p role="status">
                 Merci beaucoup pour votre message qui nous aidera à améliorer les conseils. <br/>
                 Faites connaître Mes Conseils Covid en partageant ce lien (votre situation personnelle ne sera pas transmise) :
             </p>

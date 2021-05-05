@@ -12,7 +12,7 @@
         <div class="feedback-form" hidden>
             <form>
                 <fieldset>
-                    <p>Merci de nous avoir signalé vos difficultés avec cette page.</p>
+                    <p role="status">Merci de nous avoir signalé vos difficultés avec cette page.</p>
                     <label for="message_pied_de_page">Pouvez-vous nous en dire plus, afin que nous puissions l’améliorer ?</label>
                     <textarea id="message_pied_de_page" name="message" rows="9" cols="20" required></textarea>
                 </fieldset>
@@ -23,7 +23,7 @@
             <p>ou écrivez-nous à : <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a></p>
         </div>
         <div class="feedback-thankyou" hidden>
-            <p>
+            <p role="status">
                 Merci beaucoup pour votre message qui nous aidera à améliorer le site.
             </p>
         </div>
