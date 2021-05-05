@@ -898,6 +898,11 @@ input[type='submit']:focus,
 select:focus {
     outline: none;
     box-shadow: 0 0 10px 0 #5002fb;
+    border: 2px solid black;
+}
+a.button:not(.button-outline):focus,
+input[type='submit']:focus {
+    border-color: white;
 }
 
 a.button,
@@ -908,6 +913,7 @@ input[type='submit'] {
     margin-top: 2rem;
     padding: 12px 24px;
     text-decoration: none;
+    border: 2px solid #000091;
     background-color: #000091;
     color: #ffffff;
     transform: translate(-0.1em, -0.1em);
@@ -918,7 +924,7 @@ input[type='submit'] {
 input[type='submit']:disabled {
     color: black;
     background: #ddd;
-    border-color: black;
+    border-color: #ddd;
     cursor: not-allowed;
 }
 
