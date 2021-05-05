@@ -879,17 +879,15 @@ select {
 
 .button-with-progress {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
-    margin-top: 2rem;
 }
 .button-with-progress .progress {
     font-size: 0.9rem;
     color: #484d7a;
-    padding-top: 0.2rem;
 }
 .button-with-progress .button {
-    margin-top: 0.5rem;
+    margin-top: 0;
 }
 
 a.button:focus,
