@@ -1255,13 +1255,10 @@ a.no-type::after {
     font-variant: small-caps;
 }
 
-.message {
-    border: 1px solid;
+[role='alert'] {
+    border: 1px solid #ff6f4c;
     padding: 1rem;
-}
-.message-error {
     background-color: #ffb6a5;
-    border-color: #ff6f4c;
 }
 
 #pour-finir .icon {
