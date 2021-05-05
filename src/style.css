@@ -31,7 +31,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #f9f8f6;
     color: #25252b;
     margin: 0;
     padding: 0;
@@ -53,16 +53,17 @@ a:active {
 }
 
 section,
-main footer {
+footer {
     max-width: 60rem;
     margin: 0 auto;
 }
-main footer {
-    padding: 0 1rem;
+footer {
+    padding: 0 0 1rem 0;
 }
 
 header {
     margin: 0 15px;
+    background: white;
 }
 header section {
     display: flex;
@@ -117,7 +118,7 @@ header #js-profil-full-header {
 }
 main {
     background-color: #f9f8f6;
-    padding: 1px 0 48px 0;
+    padding: 1px 0 10px 0;
 }
 @media only screen and (min-width: 680px) {
     main {
@@ -291,7 +292,7 @@ a .profil {
     }
 }
 
-main footer .feedback-block {
+footer .feedback-block {
     text-align: center;
     padding: 0.5rem;
 }
@@ -332,7 +333,7 @@ main footer .feedback-block {
     }
 }
 
-main footer .legals {
+footer .legals {
     font-size: 0.8rem;
     text-align: center;
 }
