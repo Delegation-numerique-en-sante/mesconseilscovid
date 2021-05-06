@@ -7,7 +7,7 @@
    * les **professionnels de santé** au sens large et les **sapeurs-pompiers** ;
    * les personnes qui vivent auprès d’une personne **sévèrement immunodéprimée** ;
    * les personnes au **second trimestre** de leur grossesse.
-* <mark>à partir du **15 mai**</mark> : toutes les personnes de **50 ans et plus** ;
+* <mark>à partir du **10 mai**</mark> : toutes les personnes de **50 ans et plus** (prise de rendez-vous dès le 7 mai) ;
 * <mark>à partir du **15 juin**</mark> : toutes les personnes de **18 ans et plus**.
 
 <div class="illustration">
