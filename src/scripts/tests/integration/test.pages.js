@@ -13,7 +13,7 @@ describe('Pages', function () {
 
         assert.equal(
             await page.title(),
-            'Introduction — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
+            'Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
         )
     })
 

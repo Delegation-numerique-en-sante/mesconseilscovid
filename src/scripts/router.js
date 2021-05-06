@@ -171,7 +171,7 @@ export function initRouter(app) {
         }
     }
 
-    addAppRoute('introduction', introduction, undefined, 'Introduction')
+    addAppRoute('introduction', introduction, undefined, '') // accueil : pas de titre
 
     addAppRoute('nom', nom)
 
