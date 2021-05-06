@@ -37,7 +37,7 @@ describe('Pages', function () {
             ])
             assert.equal(
                 await page.title(),
-                'Vaccins — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
+                'Ma vaccination — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
             )
         }
 
@@ -63,7 +63,7 @@ describe('Pages', function () {
             assert.equal(await titre.innerText(), 'Conseils pour les enfants')
             assert.equal(
                 await page.title(),
-                'Pediatrie — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
+                'Conseils pour les enfants — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
             )
 
             // On retrouve le bouton pour aller vers les conseils.

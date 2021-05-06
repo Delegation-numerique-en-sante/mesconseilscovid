@@ -64,29 +64,29 @@ export function initRouter(app) {
         },
     })
 
-    function addQuestionnaireRoute(pageName, view) {
+    function addQuestionnaireRoute(pageName, view, pageTitle) {
         function beforeFunc(profil) {
             if (typeof profil.nom === 'undefined') {
                 profil.resetData('mes_infos')
             }
             return app.questionnaire.before(pageName, profil)
         }
-        addAppRoute(pageName, view, beforeFunc)
+        addAppRoute(pageName, view, beforeFunc, pageTitle)
     }
 
-    function addAppRoute(pageName, view, before) {
+    function addAppRoute(pageName, view, before, pageTitle) {
         function viewFunc(element) {
             view(element, app)
         }
-        addRoute(pageName, viewFunc, before)
+        addRoute(pageName, viewFunc, before, pageTitle)
     }
 
-    function addRoute(pageName, viewFunc, beforeFunc) {
+    function addRoute(pageName, viewFunc, beforeFunc, pageTitle) {
         router.on(
             new RegExp('^' + pageName + '$'),
             function () {
                 var element = loadPage(pageName, app)
-                updateTitle(pageName)
+                updateTitle(element, pageName, pageTitle)
                 fillNavigation(element, pageName)
                 viewFunc(element)
                 trackPageView(pageName)
@@ -119,9 +119,20 @@ export function initRouter(app) {
     }
 
     // A11Y: mise à jour du titre dynamiquement.
-    function updateTitle(pageName) {
-        const pageTitle = titleCase(pageName)
-        document.title = `${pageTitle} — ${initialTitle}`
+    function updateTitle(element, pageName, pageTitle) {
+        let titlePrefix = pageTitle
+        if (typeof pageTitle === 'undefined') {
+            const titleElem = element.querySelector(
+                '#conseils-block-titre, form fieldset legend, h2'
+            )
+            if (titleElem) {
+                titlePrefix = titleElem.innerText
+            } else {
+                titlePrefix = titleCase(pageName)
+            }
+        }
+        const separator = titlePrefix ? ' — ' : ''
+        document.title = titlePrefix + separator + initialTitle
     }
 
     function fillNavigation(element, pageName) {
@@ -160,7 +171,7 @@ export function initRouter(app) {
         }
     }
 
-    addAppRoute('introduction', introduction)
+    addAppRoute('introduction', introduction, undefined, 'Introduction')
 
     addAppRoute('nom', nom)
 
