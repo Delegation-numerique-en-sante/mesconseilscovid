@@ -9,6 +9,6 @@ py==1.10.0
 pyparsing==2.4.7
 pytest==6.2.4
 pytest-asyncio==0.15.1
-six==1.15.0
+six==1.16.0
 toml==0.10.2
 zipp==3.4.1

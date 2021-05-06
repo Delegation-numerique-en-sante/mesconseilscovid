@@ -24,7 +24,7 @@ pyparsing==2.4.7
 pytest==6.2.4
 regex==2021.4.4
 rfc3986==1.4.0
-six==1.15.0
+six==1.16.0
 sniffio==1.2.0
 toml==0.10.2
 tornado==6.1
