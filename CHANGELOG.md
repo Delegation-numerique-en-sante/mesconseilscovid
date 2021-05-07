@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-05-07
+
+* mise à jour du calendrier et de l’infographie de vaccination
+* mise à jour de liens
+
 ## 2021-05-04
 
 * mise à jour des conseils relatifs à la scolarité
