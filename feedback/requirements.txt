@@ -1,4 +1,4 @@
-attrs==20.3.0
+attrs==21.1.0
 autoroutes==0.3.5
 biscuits==0.3.0
 dataclasses-json==0.5.3
