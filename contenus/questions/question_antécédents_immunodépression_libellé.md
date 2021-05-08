@@ -1,5 +1,5 @@
-<!---->J’ai une <b>immunodépression</b> (réduction des défenses du corps contre les infections) :
+J’ai une **immunodépression** (réduction des défenses du corps contre les infections) :
 
 ---
 
-<!---->Il ou elle a une <b>immunodépression</b> (réduction des défenses du corps contre les infections) :
+Il ou elle a une **immunodépression** (réduction des défenses du corps contre les infections) :

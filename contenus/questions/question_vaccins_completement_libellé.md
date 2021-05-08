@@ -1,5 +1,5 @@
-<!---->J’ai été <b>complètement vacciné·e</b>
+J’ai été **complètement vacciné·e**
 
 ---
 
-<!---->Cette personne a été <b>complètement vaccinée</b>
+Cette personne a été **complètement vaccinée**

@@ -1,1 +1,1 @@
-<!---->Le résultat du test
+Le résultat du test

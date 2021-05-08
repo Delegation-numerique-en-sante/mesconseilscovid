@@ -1,1 +1,1 @@
-<!---->Le test a été réalisé le :
+Le test a été réalisé le :

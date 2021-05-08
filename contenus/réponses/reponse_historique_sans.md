@@ -1,1 +1,1 @@
-Vous n’avez <b>jamais</b> eu la Covid (<a href="#historique">modifier</a>)
+Vous n’avez **jamais** eu la Covid (<a href="#historique">modifier</a>)

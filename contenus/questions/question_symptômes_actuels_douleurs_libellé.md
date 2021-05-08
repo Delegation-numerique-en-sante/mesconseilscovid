@@ -1,5 +1,5 @@
-<!---->J’ai <b>mal à la gorge</b> <em>ou</em> des <b>douleurs dans les muscles</b> <em>ou</em> des <b>courbatures</b> inhabituelles <em>ou</em> des <b>maux de tête</b> inhabituels ces derniers jours
+J’ai **mal à la gorge** *ou* des **douleurs dans les muscles** *ou* des **courbatures** inhabituelles *ou* des **maux de tête** inhabituels ces derniers jours
 
 ---
 
-<!---->Il ou elle a <b>mal à la gorge</b> <em>ou</em> des <b>douleurs dans les muscles</b> <em>ou</em> des <b>courbatures</b> inhabituelles <em>ou</em> des <b>maux de tête</b> inhabituels ces derniers jours
+Il ou elle a **mal à la gorge** *ou* des **douleurs dans les muscles** *ou* des **courbatures** inhabituelles *ou* des **maux de tête** inhabituels ces derniers jours

@@ -1,5 +1,5 @@
-<!---->Je n’ai <b>pas encore été vacciné·e</b>
+Je n’ai **pas encore été vacciné·e**
 
 ---
 
-<!---->Cette personne n’a <b>pas encore été vaccinée</b>
+Cette personne n’a **pas encore été vaccinée**

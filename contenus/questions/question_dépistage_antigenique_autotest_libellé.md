@@ -1,1 +1,1 @@
-<!---->C’était un <b>autotest</b> (vendu en pharmacie)
+C’était un **autotest** (vendu en pharmacie)

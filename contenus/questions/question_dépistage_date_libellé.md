@@ -1,1 +1,1 @@
-<!---->La date du prélèvement
+La date du prélèvement

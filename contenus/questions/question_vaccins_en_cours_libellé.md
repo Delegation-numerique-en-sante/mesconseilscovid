@@ -1,5 +1,5 @@
-<!---->Je suis <b>en cours de vaccination</b>
+Je suis **en cours de vaccination**
 
 ---
 
-<!---->Cette personne est <b>en cours de vaccination</b>
+Cette personne est **en cours de vaccination**

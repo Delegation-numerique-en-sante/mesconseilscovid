@@ -6,6 +6,6 @@
 
 ## [config_stats_url.md](config_stats_url.md)
 
-<!---->https://stats.mesconseilscovid.fr
+https://stats.mesconseilscovid.fr
 
 
