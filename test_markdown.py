@@ -98,3 +98,106 @@ def test_block_html():
             """
         )
     )
+
+
+class TestMarkdownContentBlock:
+    def test_render_block(self):
+        from build import MarkdownContent, markdown
+
+        m = MarkdownContent("Hello **world**", markdown)
+        assert m.render_block() == "<p>Hello <strong>world</strong></p>\n"
+
+    def test_stringify(self):
+        from build import MarkdownContent, markdown
+
+        m = MarkdownContent("Hello **world**", markdown)
+        assert str(m) == m.render_block()
+
+    def test_render_block_with_comment(self):
+        from build import MarkdownContent, markdown
+
+        m = MarkdownContent("<!---->Hello <strong>world</strong>", markdown)
+        assert m.render_block() == "Hello <strong>world</strong>\n"
+
+    def test_split(self):
+        from build import MarkdownContent, markdown
+
+        m = MarkdownContent("Moi\n\n---\n\nCette personne", markdown)
+        me, them = m.split()
+
+        assert isinstance(me, MarkdownContent)
+        assert me.text == "Moi"
+
+        assert isinstance(them, MarkdownContent)
+        assert them.text == "Cette personne"
+
+    def test_me_or_them_filter(self):
+        from build import MarkdownContent, markdown, me_or_them_filter
+
+        m = MarkdownContent("Moi\n\n---\n\nCette personne", markdown)
+        assert me_or_them_filter(m) == (
+            '<div class="me visible"><p>Moi</p></div>'
+            '<div class="them" hidden><p>Cette personne</p></div>'
+        )
+
+    def test_me_or_them_filter_with_comment(self):
+        from build import MarkdownContent, markdown, me_or_them_filter
+
+        m = MarkdownContent("<!---->Moi\n\n---\n\n<!---->Cette personne", markdown)
+        assert me_or_them_filter(m) == (
+            '<div class="me visible">Moi</div>'
+            '<div class="them" hidden>Cette personne</div>'
+        )
+
+
+class TestMarkdownContentInline:
+    def test_inline_filter(self):
+        from build import (
+            MarkdownContent,
+            MarkdownInlineContent,
+            markdown,
+            inline_filter,
+        )
+
+        m = MarkdownContent("Hello **world**", markdown)
+        i = inline_filter(m)
+        assert isinstance(i, MarkdownInlineContent)
+
+    def test_render_inline(self):
+        from build import MarkdownInlineContent, markdown
+
+        m = MarkdownInlineContent("Hello **world**\n", markdown)
+        assert m.render_inline() == "Hello <strong>world</strong>"
+
+    def test_stringify(self):
+        from build import MarkdownInlineContent, markdown
+
+        m = MarkdownInlineContent("Hello **world**", markdown)
+        assert str(m) == m.render_inline()
+
+    def test_render_inline_with_comment(self):
+        from build import MarkdownInlineContent, markdown
+
+        m = MarkdownInlineContent("<!---->Hello **world**", markdown)
+        assert m.render_inline() == "Hello <strong>world</strong>"
+
+    def test_split(self):
+        from build import MarkdownInlineContent, markdown
+
+        m = MarkdownInlineContent("Moi\n\n---\n\nCette personne", markdown)
+        me, them = m.split()
+
+        assert isinstance(me, MarkdownInlineContent)
+        assert me.text == "Moi"
+
+        assert isinstance(them, MarkdownInlineContent)
+        assert them.text == "Cette personne"
+
+    def test_me_or_them_filter(self):
+        from build import MarkdownInlineContent, markdown, me_or_them_filter
+
+        m = MarkdownInlineContent("Moi\n\n---\n\nCette **personne**", markdown)
+        assert me_or_them_filter(m) == (
+            '<span class="me visible">Moi</span>'
+            '<span class="them" hidden>Cette <strong>personne</strong></span>'
+        )

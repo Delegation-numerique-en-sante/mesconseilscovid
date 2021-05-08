@@ -1,5 +1,5 @@
-<!---->Mes premiers <b>signes</b> de la maladie sont apparus :
+Mes premiers **signes** de la maladie sont apparus :
 
 ---
 
-<!---->Ses premiers <b>signes</b> de la maladie sont apparus :
+Ses premiers **signes** de la maladie sont apparus :

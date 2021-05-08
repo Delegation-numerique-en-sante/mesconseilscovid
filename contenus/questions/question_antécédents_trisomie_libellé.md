@@ -1,5 +1,5 @@
-<!---->J’ai une <b>trisomie 21</b>
+J’ai une **trisomie 21**
 
 ---
 
-<!---->Il ou elle a une <b>trisomie 21</b>
+Il ou elle a une **trisomie 21**

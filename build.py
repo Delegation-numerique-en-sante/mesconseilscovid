@@ -68,9 +68,52 @@ class CustomHTMLRenderer(FrenchTypographyMixin, CSSMixin, mistune.HTMLRenderer):
 
 
 markdown = mistune.create_markdown(
-    escape=False,
     renderer=CustomHTMLRenderer(escape=False),
 )
+
+
+class MarkdownContent:
+    """Block content."""
+
+    def __init__(self, text, markdown):
+        self.text = text
+        self.markdown = markdown
+
+    def __str__(self):
+        return self.render_block()
+
+    def render_block(self):
+        return self.markdown(self.text).replace('<!---->', '')
+
+    def split(self, separator="\n---\n"):
+        return [
+            self.__class__(text.strip(), self.markdown)
+            for text in self.text.split(separator)
+        ]
+
+    def render_me(self, tag="div"):
+        return f'<{tag} class="me visible">{str(self).strip()}</{tag}>'
+
+    def render_them(self, tag="div"):
+        return f'<{tag} class="them" hidden>{str(self).strip()}</{tag}>'
+
+
+
+class MarkdownInlineContent(MarkdownContent):
+    """Inline content."""
+
+    def __str__(self):
+        return self.render_inline()
+
+    def render_inline(self):
+        text = self.text.replace('<!---->', '')
+        return self.markdown.inline(text, {}).strip()
+
+    def render_me(self):
+        return super().render_me(tag="span")
+
+    def render_them(self):
+        return super().render_them(tag="span")
 
 
 @cli
@@ -97,7 +140,7 @@ def thematiques():
     for path in each_file_from(
         CONTENUS_DIR / "pages", exclude=("README.md", ".DS_Store")
     ):
-        html_content = render_markdown_file(path)
+        html_content = str(render_markdown_file(path))
         title = extract_title(html_content)
         content = render_template(
             "thematique.html",
@@ -142,10 +185,7 @@ def build_responses(source_dir):
 
 
 def render_markdown_file(file_path):
-    html_content = markdown.read(file_path)
-    # Remove empty comments set to hack markdown rendering
-    # when we do not want paragraphs.
-    return html_content.replace("<!---->", "")
+    return MarkdownContent(file_path.read_text(), markdown)
 
 
 def _each_path_from(source_dir, pattern="*", exclude=None):
@@ -170,17 +210,22 @@ def each_file_from(source_dir, pattern="*", exclude=None):
 
 
 def render_template(src, **context):
-    jinja_env.filters["me_or_them"] = me_or_them
+    jinja_env.filters["me_or_them"] = me_or_them_filter
+    jinja_env.filters["inline"] = inline_filter
     template = jinja_env.get_template(src)
     return template.render(**context)
 
 
-def me_or_them(value):
-    separator = "<hr />"
-    if separator in value:
-        me, them = (part.strip() for part in value.split(separator))
-        value = f'<span class="me visible">{me}</span><span class="them" hidden>{them}</span>'
-    return value
+def me_or_them_filter(value):
+    assert isinstance(value, MarkdownContent)
+    me, them = value.split()
+    return me.render_me() + them.render_them()
+
+
+def inline_filter(value):
+    """Convert block content (default) to inline content."""
+    assert isinstance(value, MarkdownContent)
+    return MarkdownInlineContent(value.text, value.markdown)
 
 
 def cache_external_pdfs(content: str, timeout: int = 10) -> str:

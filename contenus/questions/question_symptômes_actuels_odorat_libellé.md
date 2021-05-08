@@ -1,5 +1,5 @@
-<!---->Une <b>perte</b> ou une forte diminution de mon <b>goût</b> <em>ou</em> de mon <b>odorat</b>
+Une **perte** ou une forte diminution de mon **goût** *ou* de mon **odorat**
 
 ---
 
-<!---->Une <b>perte</b> ou une forte diminution de son <b>goût</b> <em>ou</em> de son <b>odorat</b>
+Une **perte** ou une forte diminution de son **goût** *ou* de son **odorat**

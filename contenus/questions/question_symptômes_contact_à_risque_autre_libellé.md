@@ -1,5 +1,5 @@
-<!---->Je n’étais dans <b>aucune de ces situations</b>
+Je n’étais dans **aucune de ces situations**
 
 ---
 
-<!---->Il ou elle n’était dans <b>aucune de ces situations</b>
+Il ou elle n’était dans **aucune de ces situations**

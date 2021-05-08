@@ -1,1 +1,1 @@
-Vous êtes considéré·e « à risque » car <span class="reponse-personne-fragile"></span>. Cela signifie que si vous attrapez la Covid, vous <b>risquez des complications</b> qui nécessiteraient une hospitalisation.
+Vous êtes considéré·e « à risque » car <span class="reponse-personne-fragile"></span>. Cela signifie que si vous attrapez la Covid, vous **risquez des complications** qui nécessiteraient une hospitalisation.

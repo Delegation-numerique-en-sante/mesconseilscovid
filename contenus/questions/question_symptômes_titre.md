@@ -1,5 +1,5 @@
-<!---->Mon état actuel
+Mon état actuel
 
 ---
 
-<!---->Son état actuel
+Son état actuel
