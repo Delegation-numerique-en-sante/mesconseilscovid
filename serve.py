@@ -24,7 +24,7 @@ ROOT_DIR = "dist/"
 
 PATHS_TO_WATCH_FOR_BUILD = [
     "contenus/**/[!README]*.md",
-    "static/*",
+    # "static/*",
     "templates/*.html",
 ]
 PATHS_TO_WATCH_FOR_RELOAD = [

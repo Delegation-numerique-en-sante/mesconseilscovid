@@ -1,5 +1,5 @@
-<!---->Mes contacts récents
+Mes contacts récents
 
 ---
 
-<!---->Ses contacts récents
+Ses contacts récents

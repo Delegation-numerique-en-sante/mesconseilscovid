@@ -1,1 +1,1 @@
-<!---->https://stats.mesconseilscovid.fr
+https://stats.mesconseilscovid.fr

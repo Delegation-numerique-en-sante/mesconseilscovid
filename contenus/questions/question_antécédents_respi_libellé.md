@@ -1,5 +1,5 @@
-<!---->J’ai une <b>maladie respiratoire</b> chronique :
+J’ai une **maladie respiratoire** chronique :
 
 ---
 
-<!---->Il ou elle a une <b>maladie respiratoire</b> chronique :
+Il ou elle a une **maladie respiratoire** chronique :

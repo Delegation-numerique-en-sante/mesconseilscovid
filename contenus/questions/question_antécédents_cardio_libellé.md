@@ -1,5 +1,5 @@
-<!---->J’ai des antécédents de <b>maladie cardiovasculaire</b> (maladie du cœur ou des artères) :
+J’ai des antécédents de **maladie cardiovasculaire** (maladie du cœur ou des artères) :
 
 ---
 
-<!---->Il ou elle a des antécédents de <b>maladie cardiovasculaire</b> (maladie du cœur ou des artères) :
+Il ou elle a des antécédents de **maladie cardiovasculaire** (maladie du cœur ou des artères) :

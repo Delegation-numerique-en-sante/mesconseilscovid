@@ -1,1 +1,1 @@
-<!---->Le type de test
+Le type de test
