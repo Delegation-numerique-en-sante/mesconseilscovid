@@ -6,7 +6,7 @@ Les dossiers listés ci-dessus contiennent l’intégralité des contenus du sit
 
 ### Questions
 
-Les fichiers dans le dossier [`questions/`](questions/) correspondent aux titres, libellés et aides relatifs aux question. Vous devez maintenir les caractères `<!---->` au début du fichier s’ils existent.
+Les fichiers dans le dossier [`questions/`](questions/) correspondent aux titres, libellés et aides relatifs aux question.
 
 Afin de pouvoir effectuer le formulaire pour soi-même et/ou pour un proche, les différentes versions du texte sont dupliqués et séparés par `---`, il faut conserver cette séparation.
 

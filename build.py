@@ -83,7 +83,7 @@ class MarkdownContent:
         return self.render_block()
 
     def render_block(self):
-        return self.markdown(self.text).replace('<!---->', '')
+        return self.markdown(self.text)
 
     def split(self, separator="\n---\n"):
         return [
@@ -106,8 +106,7 @@ class MarkdownInlineContent(MarkdownContent):
         return self.render_inline()
 
     def render_inline(self):
-        text = self.text.replace('<!---->', '')
-        return self.markdown.inline(text, {}).strip()
+        return self.markdown.inline(self.text, {}).strip()
 
     def render_me(self):
         return super().render_me(tag="span")
