@@ -817,22 +817,24 @@ export default class Profil {
                     >Voir ${possessifPluriel} conseils</a>
             `
         } else {
-            var label = this.isEmpty() ? 'Démarrer' : 'Continuer'
+            const label = this.isEmpty() ? 'Démarrer' : 'Continuer'
             mainButton = safeHtml`
                 <a class="button button-full-width conseils-link"
                     data-set-profil="${this.nom}" href="#${questionnaire.firstPage}"
-                    >${label}</a>
+                    >${label} ${possessifMasculinSingulier} questionnaire</a>
             `
         }
-        return (
-            mainButton +
-            safeHtml`
-            <a data-set-profil="${this.nom}" href="#${questionnaire.firstPage}"
-                >Modifier ${possessifPluriel} réponses</a>
+        const continueButton = this.isEmpty()
+            ? ''
+            : safeHtml`
+        <a data-set-profil="${this.nom}" href="#${questionnaire.firstPage}"
+            >Modifier ${possessifPluriel} réponses</a>
+        `
+        const deleteButton = safeHtml`
             <a data-delete-profil="${this.nom}" href="" role="button"
                 >Supprimer ${possessifMasculinSingulier} profil</a>
             `
-        )
+        return mainButton + continueButton + deleteButton
     }
 
     renderCard(questionnaire) {
