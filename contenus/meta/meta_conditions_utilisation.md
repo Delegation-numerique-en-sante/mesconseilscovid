@@ -1,6 +1,8 @@
-## Conditions d’utilisation
+# Conditions d’utilisation
 
-### À propos
+<div id="conseils-personnels" class="conseils">
+
+## À propos
 
 *mesconseilscovid.sante.gouv.fr* est un service de prévention et de conseil personnalisé pour se protéger et protéger les autres face au virus.
 
@@ -17,7 +19,7 @@ Ils sont mis à jour au fur et à mesure de l’évolution de la connaissance du
 Ce service est utile en amont du parcours de soin. L’information fournie ne se substitue pas aux conseils d’un médecin. Dans certains cas, nous vous conseillerons d’ailleurs de consulter votre médecin.
 
 
-### Source de l’information
+## Source de l’information
 
 Le service s’appuie sur des informations officielles issues :
 
@@ -35,7 +37,7 @@ N’hésitez pas à nous contacter à l’adresse
 [contact@mesconseilscovid.fr](mailto:contact@mesconseilscovid.fr)
 si vous identifiez une information contraire aux connaissances médicales sur la maladie.
 
-### Accessibilité
+## Accessibilité
 
 Nous tâchons de rendre ce site accessible à toutes et à tous. Nous n’avons pas encore testé le respect des normes formelles d’accessibilité du service.
 
@@ -47,7 +49,7 @@ Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de
 Pour en savoir plus sur la politique d’accessibilité numérique de l’État :
 [Référentiel général d'amélioration de l'accessibilité V4](https://www.numerique.gouv.fr/publications/rgaa-accessibilite/).
 
-### Responsabilités et protection des données à caractère personnel
+## Responsabilités et protection des données à caractère personnel
 
 Le service s’appuie sur les données que vous déclarez pour personnaliser les conseils fournis. Il s’agit par exemple de données concernant votre état de santé ou votre lieu de résidence.
 
@@ -70,3 +72,5 @@ OVH
 2, rue Kellermann  
 59100 Roubaix  
 [OVH - Données personnelles](https://www.ovh.com/fr/protection-donnees-personnelles/)
+
+</div>
