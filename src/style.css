@@ -856,9 +856,10 @@ fieldset ul.details {
 .feedback-controls {
     display: flex;
     justify-content: space-around;
-    margin: 0 1rem;
+    margin: 0 auto;
     padding-top: 1rem;
     align-items: center;
+    max-width: 25rem;
 }
 
 input[type='text'],
