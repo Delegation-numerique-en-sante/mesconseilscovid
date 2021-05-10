@@ -1327,28 +1327,28 @@ a.no-type::after {
     display: none;
 }
 
-.satellite #conseils-block h1 {
+.thematique #conseils-block h1 {
     margin-bottom: 3rem;
 }
-.satellite #conseils-block h2 {
+.thematique #conseils-block h2 {
     padding-top: 1rem;
     margin-bottom: 1.2rem;
     font-size: 175%;
 }
-.satellite .illustration {
+.thematique .illustration {
     max-width: 15rem;
 }
 
-.satellite .cta {
+.thematique .cta {
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 8rem;
 }
-.satellite .cta h3 {
+.thematique .cta h3 {
     max-width: 40rem;
     margin: 3rem auto;
 }
-.satellite .cta a.button {
+.thematique .cta a.button {
     display: inline-block;
     font-size: 20px;
     margin-top: 0;
