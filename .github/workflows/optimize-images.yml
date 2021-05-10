@@ -14,7 +14,7 @@ jobs:
 
       - name: Install PNG optimization tool
         run: |
-          apt install --yes optipng
+          apt install --yes zopfli
 
       - name: Optimize images
         run: |
@@ -25,7 +25,7 @@ jobs:
         with:
           title: Optimisation des images
           body: |
-            Optimisation des images avec `optipng`.
-          commit-message: Optimisation des images
+            Optimisation des images avec `zopflipng`.
+          commit-message: Optimisation des images avec zopflipng
           branch: optimize-images
           delete-branch: true

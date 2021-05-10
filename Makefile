@@ -81,7 +81,7 @@ pretty:  ## Run PrettierJS.
 	./node_modules/.bin/prettier src/*.js src/**/*.js src/**/**/*.js src/**/**/**/*.js src/style.css --write
 
 optimize-images:
-	find src static -type f -iname "*.png" -print0 | xargs -I {} -0 optipng -preserve "{}"
+	find diagrammes src static -type f -iname "*.png" -print0 | xargs -I {} -0 zopflipng -y "{}" "{}"
 
 build:  ## Build all files (markdown + statics).
 	python3 build.py all
