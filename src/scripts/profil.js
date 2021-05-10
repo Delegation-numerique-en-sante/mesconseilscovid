@@ -449,8 +449,8 @@ export default class Profil {
             antecedent_chronique_autre: this.antecedent_chronique_autre,
             symptomes_actuels: this.symptomes_actuels,
             symptomes_actuels_temperature: this.symptomes_actuels_temperature,
-            symptomes_actuels_temperature_inconnue: this
-                .symptomes_actuels_temperature_inconnue,
+            symptomes_actuels_temperature_inconnue:
+                this.symptomes_actuels_temperature_inconnue,
             symptomes_actuels_toux: this.symptomes_actuels_toux,
             symptomes_actuels_odorat: this.symptomes_actuels_odorat,
             symptomes_actuels_douleurs: this.symptomes_actuels_douleurs,
