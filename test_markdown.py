@@ -113,12 +113,6 @@ class TestMarkdownContentBlock:
         m = MarkdownContent("Hello **world**", markdown)
         assert str(m) == m.render_block()
 
-    def test_render_block_with_comment(self):
-        from build import MarkdownContent, markdown
-
-        m = MarkdownContent("<!---->Hello <strong>world</strong>", markdown)
-        assert m.render_block() == "Hello <strong>world</strong>\n"
-
     def test_split(self):
         from build import MarkdownContent, markdown
 
@@ -138,15 +132,6 @@ class TestMarkdownContentBlock:
         assert me_or_them_filter(m) == (
             '<div class="me visible"><p>Moi</p></div>'
             '<div class="them" hidden><p>Cette personne</p></div>'
-        )
-
-    def test_me_or_them_filter_with_comment(self):
-        from build import MarkdownContent, markdown, me_or_them_filter
-
-        m = MarkdownContent("<!---->Moi\n\n---\n\n<!---->Cette personne", markdown)
-        assert me_or_them_filter(m) == (
-            '<div class="me visible">Moi</div>'
-            '<div class="them" hidden>Cette personne</div>'
         )
 
 
@@ -174,12 +159,6 @@ class TestMarkdownContentInline:
 
         m = MarkdownInlineContent("Hello **world**", markdown)
         assert str(m) == m.render_inline()
-
-    def test_render_inline_with_comment(self):
-        from build import MarkdownInlineContent, markdown
-
-        m = MarkdownInlineContent("<!---->Hello **world**", markdown)
-        assert m.render_inline() == "Hello <strong>world</strong>"
 
     def test_split(self):
         from build import MarkdownInlineContent, markdown
