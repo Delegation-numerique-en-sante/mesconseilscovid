@@ -175,9 +175,23 @@ export class Questionnaire {
         console.debug(`no ${direction} reachable page for ${currentPage}`)
     }
 
-    // Détermine la progression dans le questionnaire (p. ex. « 2/8»)
-    progress(currentPage) {
-        const num = this.ordre.indexOf(currentPage) + 1
+    numeroEtape(pageName, profil) {
+        return this._previousPages(pageName, profil).length
+    }
+
+    _previousPages(pageName, profil) {
+        let result = []
+        pageName = this.previousPage(pageName, profil)
+        while (pageName) {
+            result.push(pageName)
+            pageName = this.previousPage(pageName, profil)
+        }
+        return result
+    }
+
+    // Détermine la progression dans le questionnaire (p. ex. « 2/8 »)
+    etapesRestantes(pageName) {
+        const num = this.ordre.indexOf(pageName) + 1
         if (num === 0) return ''
 
         let message

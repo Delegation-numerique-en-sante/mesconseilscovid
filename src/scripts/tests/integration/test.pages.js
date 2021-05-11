@@ -26,7 +26,7 @@ describe('Pages', function () {
             page.waitForNavigation({ url: '**/#introduction' }),
         ])
 
-        // Page d’accueil.
+        // On clique sur "Des conseils pour moi".
         {
             let bouton = await page.waitForSelector(
                 '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
@@ -37,7 +37,7 @@ describe('Pages', function () {
             ])
             assert.equal(
                 await page.title(),
-                'Ma vaccination — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
+                'Ma vaccination (étape 1) — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
             )
         }
 
