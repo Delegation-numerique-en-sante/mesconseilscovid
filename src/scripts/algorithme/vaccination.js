@@ -4,10 +4,6 @@ export default class AlgorithmeVaccination {
         this.algoOrientation = algoOrientation
     }
 
-    isSup55() {
-        return this.profil.age >= 55
-    }
-
     isSup50() {
         return this.profil.age >= 50
     }
@@ -51,7 +47,7 @@ export default class AlgorithmeVaccination {
 
     isVaccinable() {
         return (
-            this.isSup55() ||
+            this.isSup50() ||
             this.isProfessionnelDeSante() ||
             this.isTresHautRisque() ||
             (this.isSup18() && this.isARisque())
