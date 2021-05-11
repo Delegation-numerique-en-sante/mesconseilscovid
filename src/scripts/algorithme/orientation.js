@@ -502,8 +502,8 @@ export default class AlgorithmeOrientation {
         } else if (algoVaccination.isARisque()) {
             if (algoVaccination.isTresHautRisque()) {
                 return ['conseils-vaccins-tres-haut-risque']
-            } else if (algoVaccination.isSup50()) {
-                return ['conseils-vaccins-50-ans-a-risque']
+            } else if (algoVaccination.isSup18()) {
+                return ['conseils-vaccins-a-risque']
             } else {
                 return ['conseils-vaccins-demande-medecin']
             }
