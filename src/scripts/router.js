@@ -61,8 +61,6 @@ export function initRouter(app) {
             document.dispatchEvent(new CustomEvent('pageChanged', { detail: pageName }))
             // Focus on the main header element (A11Y: keyboard navigation)
             document.querySelector('[role="banner"]').focus()
-            // A11Y: mise à jour du titre dynamiquement.
-            document.title = `${titleCase(pageName)} — ${initialTitle}`
         },
     })
 
@@ -88,6 +86,7 @@ export function initRouter(app) {
             new RegExp('^' + pageName + '$'),
             function () {
                 var element = loadPage(pageName, app)
+                updateTitle(pageName)
                 fillNavigation(element, pageName)
                 viewFunc(element)
                 trackPageView(pageName)
@@ -117,6 +116,12 @@ export function initRouter(app) {
     function trackPageView(pageName) {
         app.plausible('pageview')
         app.atinternet(pageName)
+    }
+
+    // A11Y: mise à jour du titre dynamiquement.
+    function updateTitle(pageName) {
+        const pageTitle = titleCase(pageName)
+        document.title = `${pageTitle} — ${initialTitle}`
     }
 
     function fillNavigation(element, pageName) {
