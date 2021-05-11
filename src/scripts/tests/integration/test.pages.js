@@ -5,10 +5,15 @@ describe('Pages', function () {
     it('titre de la page', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/')
+        // On est redirigé vers l’introduction.
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/#introduction' }),
+        ])
+
         assert.equal(
             await page.title(),
-            'Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
+            'Introduction — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
         )
     })
 
@@ -30,6 +35,10 @@ describe('Pages', function () {
                 bouton.click(),
                 page.waitForNavigation({ url: '**/#vaccins' }),
             ])
+            assert.equal(
+                await page.title(),
+                'Vaccins — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
+            )
         }
 
         // Remplir le questionnaire.
@@ -52,6 +61,10 @@ describe('Pages', function () {
             // On retrouve le titre explicite.
             let titre = await page.waitForSelector('#page.ready h2')
             assert.equal(await titre.innerText(), 'Conseils pour les enfants')
+            assert.equal(
+                await page.title(),
+                'Pediatrie — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
+            )
 
             // On retrouve le bouton pour aller vers les conseils.
             let button = await page.waitForSelector('#page.ready .js-profil-full a')

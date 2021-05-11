@@ -42,3 +42,7 @@ export function slugify(string) {
         .replace(/^-+/, '') // Trim - from start of text
         .replace(/-+$/, '') // Trim - from end of text
 }
+
+export function titleCase(text) {
+    return text.charAt(0).toUpperCase() + text.slice(1)
+}

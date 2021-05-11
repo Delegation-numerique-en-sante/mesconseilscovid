@@ -5,7 +5,7 @@ import ctaiTelephones from './data/ctaiTelephones'
 import ctaiCourriels from './data/ctaiCourriels'
 import departements from './data/departements'
 
-import { slugify } from './utils'
+import { slugify, titleCase } from './utils'
 
 export function nomProfil(element, app) {
     if (!element) return
@@ -139,7 +139,7 @@ export function antecedents(element, algoOrientation) {
     let antecedents = _antecedentsARisques(algoOrientation)
     if (antecedents) {
         var content = formatListe(antecedents)
-        element.textContent = content.charAt(0).toUpperCase() + content.slice(1) + '.'
+        element.textContent = titleCase(content) + '.'
     }
 }
 

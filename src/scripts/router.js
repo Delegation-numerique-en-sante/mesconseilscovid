@@ -3,6 +3,7 @@ import Navigo from 'navigo'
 import { hideElement, showElement } from './affichage'
 import { nomProfil } from './injection'
 import { getCurrentPageName, loadPage } from './pagination'
+import { titleCase } from './utils'
 
 import introduction from './page/introduction'
 
@@ -34,6 +35,7 @@ export function initRouter(app) {
     var root = null
     var useHash = true
     var router = new Navigo(root, useHash)
+    const initialTitle = document.title
 
     // Workaround unwanted behaviour in Navigo.
     if (router.root.slice(-1) !== '/') {
@@ -59,6 +61,8 @@ export function initRouter(app) {
             document.dispatchEvent(new CustomEvent('pageChanged', { detail: pageName }))
             // Focus on the main header element (A11Y: keyboard navigation)
             document.querySelector('[role="banner"]').focus()
+            // A11Y: mise à jour du titre dynamiquement.
+            document.title = `${titleCase(pageName)} — ${initialTitle}`
         },
     })
 
