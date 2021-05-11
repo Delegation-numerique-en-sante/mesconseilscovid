@@ -281,6 +281,13 @@ a .profil {
 .profil-thematique a.button-outline {
     font-weight: normal;
 }
+.profil-thematique button.button {
+    font-size: 20px;
+}
+.profil-thematique img {
+    max-width: 6rem;
+    margin: 0 auto;
+}
 .cards > li {
     margin-top: 1rem;
     display: flex;
@@ -293,6 +300,9 @@ a .profil {
     .profil-empty,
     .profil-thematique {
         width: 50%;
+    }
+    .profil-thematique img {
+        max-width: 10rem;
     }
 }
 

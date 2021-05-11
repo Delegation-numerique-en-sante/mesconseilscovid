@@ -98,7 +98,8 @@
                 <li class="profil-thematique">
                     <a href="{{ thematique.name }}.html"
                         class="button button-outline"
-                        ><img src="{{ thematique.imgsrc }}">{{ thematique.title }}</a>
+                        title="{{ thematique.title }}"
+                        ><img src="{{ thematique.imgsrc }}" alt=""><button class="button">{{ thematique.title }}</button></a>
                 </li>
             {% endfor %}
         </ul>
