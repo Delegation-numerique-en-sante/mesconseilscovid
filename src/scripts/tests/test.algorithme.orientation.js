@@ -493,9 +493,9 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
-        it('Cas < 50 ans et antécédents', function () {
+        it('Cas < 18 ans et antécédents', function () {
             var profil = new Profil('mes_infos', {
-                age: 49,
+                age: 17,
                 activite_pro_sante: false,
                 antecedent_cardio: true,
             })
@@ -508,9 +508,9 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
-        it('Cas > 50 ans et antécédents', function () {
+        it('Cas ≥ 18 ans et antécédents', function () {
             var profil = new Profil('mes_infos', {
-                age: 52,
+                age: 18,
                 activite_pro_sante: false,
                 antecedent_cardio: true,
             })
@@ -519,7 +519,7 @@ describe('Blocs d’informations additionnels', function () {
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
                 'conseils-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-50-ans-a-risque',
+                'conseils-vaccins-a-risque',
             ])
         })
 

@@ -12,6 +12,10 @@ export default class AlgorithmeVaccination {
         return this.profil.age >= 50
     }
 
+    isSup18() {
+        return this.profil.age >= 18
+    }
+
     isProfessionnelDeSante() {
         return this.profil.activite_pro_sante
     }
@@ -49,7 +53,7 @@ export default class AlgorithmeVaccination {
             this.isSup55() ||
             this.isProfessionnelDeSante() ||
             this.isTresHautRisque() ||
-            (this.isSup50() && this.isARisque())
+            (this.isSup18() && this.isARisque())
         )
     }
 }

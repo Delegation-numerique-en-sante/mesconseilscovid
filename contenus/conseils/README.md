@@ -789,16 +789,6 @@ Vous avez eu la Covid il y a moins de 3 mois, **vous ne devez pas vous faire va
 
 
 
-## [conseils_vaccins_50_ans_a_risque.md](conseils_vaccins_50_ans_a_risque.md)
-
-<div class="conseil">
-
-Vous avez plus de 50 ans, et vous êtes considéré·e comme une personne ayant plus de risques de développer une forme sévère de Covid : **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à prendre rendez-vous avec votre médecin traitant.
-
-</div>
-
-
-
 ## [conseils_vaccins_55_ans.md](conseils_vaccins_55_ans.md)
 
 <div class="conseil">
@@ -818,6 +808,16 @@ Si vous n’arrivez pas à trouver un rendez-vous en ligne, vous pouvez appeler 
 <div class="conseil">
 
 Vous avez eu la Covid il y a plus de 6 mois, **vous pouvez vous faire vacciner**, une seule dose est requise dans ce cas.
+
+</div>
+
+
+
+## [conseils_vaccins_a_risque.md](conseils_vaccins_a_risque.md)
+
+<div class="conseil">
+
+Vous avez plus de 18 ans, et vous êtes considéré·e comme une personne ayant plus de risques de développer une forme sévère de Covid : **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à prendre rendez-vous avec votre médecin traitant.
 
 </div>
 
