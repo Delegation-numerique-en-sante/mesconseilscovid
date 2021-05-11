@@ -68,7 +68,7 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 
 ## [je-suis-vaccine.md](je-suis-vaccine.md)
 
-# Je suis vacciné·e contre la Covid
+# Je suis vacciné·e, que faut-il savoir ?
 
 <div class="illustration">
     <img src="illustrations/vaccins.svg" alt="">
