@@ -64,6 +64,9 @@ export function initRouter(app) {
 
     function addQuestionnaireRoute(pageName, view) {
         function beforeFunc(profil) {
+            if (typeof profil.nom === 'undefined') {
+                profil.resetData('mes_infos')
+            }
             return app.questionnaire.before(pageName, profil)
         }
         addAppRoute(pageName, view, beforeFunc)
