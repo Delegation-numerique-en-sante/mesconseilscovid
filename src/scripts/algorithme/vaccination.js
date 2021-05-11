@@ -31,7 +31,8 @@ export default class AlgorithmeVaccination {
             this.profil.antecedent_immunodep ||
             this.profil.antecedent_cirrhose ||
             this.profil.antecedent_drepano ||
-            this.profil.antecedent_trisomie
+            this.profil.antecedent_trisomie ||
+            this.algoOrientation.imc >= 30
         )
     }
 
