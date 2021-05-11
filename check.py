@@ -122,6 +122,7 @@ def service_worker():
         "version.json",
         "cas-contact-a-risque.html",
         "je-suis-vaccine.html",
+        "je-veux-me-faire-vacciner.html",
         "sitemap.xml",
     }
 
