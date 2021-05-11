@@ -123,6 +123,7 @@ def service_worker():
         "cas-contact-a-risque.html",
         "je-suis-vaccine.html",
         "je-veux-me-faire-vacciner.html",
+        "je-vis-avec-personne-covid-positive.html",
         "sitemap.xml",
     }
 
