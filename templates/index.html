@@ -502,7 +502,7 @@
                 </label>
                 <input id="symptomes_non" type="radio" required name="symptomes_actuels_statuts">
                 <label for="symptomes_non">
-                    {{ question_symptômes_libellé_non|inline }}
+                    <span>{{ question_symptômes_libellé_non|inline }}</span>
                 </label>
             </div>
             <div id="symptomes-choix" class="checkboxgroup" hidden>
@@ -510,7 +510,7 @@
                 <div>
                     <input id="symptomes_actuels_temperature" type="checkbox" name="symptomes_actuels_temperature">
                     <label for="symptomes_actuels_temperature">
-                        {{ question_symptômes_actuels_température_libellé|inline }}
+                        <span>{{ question_symptômes_actuels_température_libellé|inline }}</span>
                     </label>
                 </div>
                 <div>
@@ -522,7 +522,7 @@
                 <div>
                     <input id="symptomes_actuels_toux" type="checkbox" name="symptomes_actuels_toux">
                     <label for="symptomes_actuels_toux">
-                        {{ question_symptômes_actuels_toux_libellé|inline }}
+                        <span>{{ question_symptômes_actuels_toux_libellé|inline }}</span>
                     </label>
                 </div>
                 <div>
@@ -541,7 +541,7 @@
                 <div>
                     <input id="symptomes_actuels_diarrhee" type="checkbox" name="symptomes_actuels_diarrhee">
                     <label for="symptomes_actuels_diarrhee">
-                        {{ question_symptômes_actuels_diarrhée_libellé|inline }}
+                        <span>{{ question_symptômes_actuels_diarrhée_libellé|inline }}</span>
                     </label>
                 </div>
                 <div>
@@ -613,7 +613,7 @@
                 </div>
                 <div class="row" aria-labelledby="depistage-date-label">
                     <label for="depistage_start_date">
-                    {{ question_dépistage_date_aide|inline }}
+                        <span>{{ question_dépistage_date_aide|inline }}</span>
                     </label>
                     <input type="date" lang="fr" id="depistage_start_date" name="depistage_start_date" required>
                 </div>
@@ -625,11 +625,17 @@
                 </div>
                 <div role="radiogroup" aria-labelledby="depistage-type-label">
                     <input id="depistage_type_rtpcr" type="radio" required name="depistage_type" value="rt-pcr">
-                    <label for="depistage_type_rtpcr">{{ question_dépistage_rtpcr_libellé|inline }}</label>
+                    <label for="depistage_type_rtpcr">
+                        <span>{{ question_dépistage_rtpcr_libellé|inline }}</span>
+                    </label>
                     <input id="depistage_type_antigenique" type="radio" required name="depistage_type" value="antigenique">
-                    <label for="depistage_type_antigenique">{{ question_dépistage_antigénique_libellé|inline }}</label>
+                    <label for="depistage_type_antigenique">
+                        <span>{{ question_dépistage_antigénique_libellé|inline }}</span>
+                    </label>
                     <input id="depistage_type_antigenique_autotest" type="radio" required name="depistage_type" value="antigenique_autotest">
-                    <label for="depistage_type_antigenique_autotest">{{ question_dépistage_antigenique_autotest_libellé|inline }}</label>
+                    <label for="depistage_type_antigenique_autotest">
+                        <span>{{ question_dépistage_antigenique_autotest_libellé|inline }}</span>
+                    </label>
                 </div>
             </div>
 
@@ -639,9 +645,13 @@
                 </div>
                 <div role="radiogroup" aria-labelledby="depistage-resultat-label">
                     <input id="depistage_resultat_positif" type="radio" required name="depistage_resultat" value="positif">
-                    <label for="depistage_resultat_positif">{{ question_dépistage_positif_libellé|inline }}</label>
+                    <label for="depistage_resultat_positif">
+                        <span>{{ question_dépistage_positif_libellé|inline }}</span>
+                    </label>
                     <input id="depistage_resultat_negatif" type="radio" required name="depistage_resultat" value="negatif">
-                    <label for="depistage_resultat_negatif">{{ question_dépistage_négatif_libellé|inline }}</label>
+                    <label for="depistage_resultat_negatif">
+                        <span>{{ question_dépistage_négatif_libellé|inline }}</span>
+                    </label>
                     <input id="depistage_resultat_en_attente" type="radio" required name="depistage_resultat" value="en_attente">
                     <label for="depistage_resultat_en_attente">{{ question_dépistage_attente_libellé|inline|me_or_them }}</label>
                 </div>
