@@ -123,7 +123,6 @@ export class Questionnaire {
         let steps = [step]
         while (step) {
             if (step === page) {
-                console.debug('success!')
                 return
             }
 
@@ -131,14 +130,11 @@ export class Questionnaire {
             if (!nextStep) break
             if (steps.indexOf(nextStep) > -1) break // avoid loops
 
-            console.debug(`next step: ${nextStep}`)
             step = nextStep
             steps.push(step)
         }
-        console.debug(`could not reach ${page} via steps:`, steps)
 
         const lastReachablePage = steps[steps.length - 1]
-        console.debug(`redirecting to ${lastReachablePage}`)
         return lastReachablePage
     }
 
@@ -165,14 +161,10 @@ export class Questionnaire {
         Object.keys(question[direction]).forEach((dest) => {
             const predicate = question[direction][dest]
             if (predicate(profil)) {
-                console.debug(`matched predicate for ${dest}:`, predicate)
                 if (!result) result = dest
-            } else {
-                console.debug(`did not match predicate for ${dest}:`, predicate)
             }
         })
         if (result) return result
-        console.debug(`no ${direction} reachable page for ${currentPage}`)
     }
 
     numeroEtape(pageName, profil) {
