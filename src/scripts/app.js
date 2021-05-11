@@ -30,7 +30,9 @@ export default class App {
     }
     chargerProfilActuel() {
         return this.stockage.getProfilActuel().then((nom) => {
-            return this.chargerProfil(nom)
+            if (nom !== null) {
+                return this.chargerProfil(nom)
+            }
         })
     }
     enregistrerProfilActuel() {
