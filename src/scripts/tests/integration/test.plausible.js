@@ -10,9 +10,10 @@ describe('Plausible', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/#introduction')
+        await page.waitForSelector('#page.ready')
         assert.equal(
             await page.title(),
-            'Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
+            'Introduction — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
         )
 
         await waitForPlausibleTrackingEvents(page, ['pageview:introduction'])
@@ -23,10 +24,6 @@ describe('Plausible', function () {
 
         await page.goto('http://localhost:8080/#introduction')
         await page.waitForSelector('#page.ready')
-        assert.equal(
-            await page.title(),
-            'Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
-        )
         const bouton = await page.waitForSelector('.feedback-component >> text="Oui"')
         await bouton.click()
         const form = await page.waitForSelector('.feedback-component .feedback-form')

@@ -16,7 +16,7 @@ import {
     showSelector,
 } from '../affichage'
 import * as injection from '../injection'
-import { joursAvant, joursApres } from '../utils'
+import { joursAvant, joursApres, titleCase } from '../utils'
 
 import AlgorithmeOrientation from '../algorithme/orientation'
 import AlgorithmeSuivi from '../algorithme/suivi'
@@ -217,10 +217,6 @@ function dynamicTimelineDataInjection(element, profil) {
             day: 'numeric',
         }
         return date.toLocaleDateString('fr-FR', options)
-    }
-
-    function titleCase(text) {
-        return text.charAt(0).toUpperCase() + text.slice(1)
     }
 
     function fillDate(part, content) {
