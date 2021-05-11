@@ -1371,6 +1371,12 @@ a.no-type::after {
     margin-bottom: 1.2rem;
     font-size: 175%;
 }
+.thematique #conseils-block h3 {
+    padding-top: 1rem;
+    margin-bottom: 1.2rem;
+    font-size: 150%;
+    color: black;
+}
 .thematique .illustration {
     max-width: 8rem;
 }
