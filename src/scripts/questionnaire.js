@@ -142,18 +142,18 @@ export class Questionnaire {
     // données jusqu’ici. Les pages suivantes potentielles sont listées de
     // manière ordonnée. La page choisie est la première dont le prédicat
     // est vérifié.
-    nextPage(currentPage, profil) {
-        return this.findNeighbor('next', currentPage, profil)
+    nextPage(pageName, profil) {
+        return this.findNeighbor('next', pageName, profil)
     }
 
     // Détermine la page précédente du questionnaire, pour pouvoir inclure
     // un lien « Retour » à chaque étape.
-    previousPage(currentPage, profil) {
-        return this.findNeighbor('previous', currentPage, profil)
+    previousPage(pageName, profil) {
+        return this.findNeighbor('previous', pageName, profil)
     }
 
-    findNeighbor(direction, currentPage, profil) {
-        const question = this.transitions[currentPage]
+    findNeighbor(direction, pageName, profil) {
+        const question = this.transitions[pageName]
         if (typeof question === 'undefined') return
         if (typeof question[direction] === 'undefined') return
 
