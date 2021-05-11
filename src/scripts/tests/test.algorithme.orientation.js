@@ -534,7 +534,7 @@ describe('Blocs d’informations additionnels', function () {
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
                 'conseils-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-55-ans',
+                'conseils-vaccins-50-ans',
             ])
         })
 

@@ -789,11 +789,11 @@ Vous avez eu la Covid il y a moins de 3 mois, **vous ne devez pas vous faire va
 
 
 
-## [conseils_vaccins_55_ans.md](conseils_vaccins_55_ans.md)
+## [conseils_vaccins_50_ans.md](conseils_vaccins_50_ans.md)
 
 <div class="conseil">
 
-Vous avez plus de 55 ans, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" class="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
+Vous avez plus de 50 ans, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" class="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
 
 Les plages de rendez-vous sont ouvertes au fur et à mesure par les centres de vaccination.
 
@@ -884,13 +884,12 @@ Vous avec un traitement de longue durée ou une maladie chronique. Nous vous inv
 <span class="nouveau">nouveau</span> Le déploiement de la vaccination se fait en plusieurs phases :
 
 * <mark>dès maintenant</mark> :
-   * les personnes de **55 ans et plus** : chez leur médecin traitant, en centre de vaccination, en pharmacie, ou dans leur établissement (Ehpad, USLD, par exemple) ;
+   * les personnes de **50 ans et plus** : chez leur médecin traitant, en centre de vaccination, en pharmacie, ou dans leur établissement (Ehpad, USLD, par exemple) ;
    * les personnes de **18 ans et plus** qui sont **en surcharge pondérale** (IMC > 30), ou qui ont [un risque](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/publics-prioritaires-vaccin-covid-19#liste-comor) de développer une **forme grave** de Covid (diabète, cancer, etc.) : en centre de vaccination, ou sur leur lieu de soin ;
    * les personnes de **16 et 17 ans** présentant un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) : en centre de vaccination avec une **ordonnance de leur médecin traitant**, ou sur leur lieu de soin ;
    * les **professionnels de santé** au sens large et les **sapeurs-pompiers** ;
    * les personnes qui vivent auprès d’une personne **sévèrement immunodéprimée** ;
    * les personnes au **second trimestre** de leur grossesse.
-* <mark>à partir du **10 mai**</mark> : toutes les personnes de **50 ans et plus** (prise de rendez-vous dès le 7 mai) ;
 * <mark>à partir du **12 mai**</mark> : toutes les personnes de **18 ans et plus**, la veille pour le lendemain, lorsqu’il reste des doses de vaccin non utilisées ;
 * <mark>à partir du **15 juin**</mark> : toutes les personnes de **18 ans et plus**.
 
