@@ -86,7 +86,8 @@ export function initRouter(app) {
             new RegExp('^' + pageName + '$'),
             function () {
                 var element = loadPage(pageName, app)
-                updateTitle(element, pageName, pageTitle)
+                updateTitle(element, pageName, pageTitle, app.profil)
+                fillProgress(element, pageName)
                 fillNavigation(element, pageName)
                 viewFunc(element)
                 trackPageView(pageName)
@@ -119,7 +120,7 @@ export function initRouter(app) {
     }
 
     // A11Y: mise à jour du titre dynamiquement.
-    function updateTitle(element, pageName, pageTitle) {
+    function updateTitle(element, pageName, pageTitle, profil) {
         let titlePrefix = pageTitle
         if (typeof pageTitle === 'undefined') {
             const titleElem = element.querySelector(
@@ -132,15 +133,19 @@ export function initRouter(app) {
             }
         }
         const separator = titlePrefix ? ' — ' : ''
-        document.title = titlePrefix + separator + initialTitle
+        const numeroEtape = app.questionnaire.numeroEtape(pageName, profil)
+        const etape = numeroEtape ? ` (étape ${numeroEtape})` : ''
+        document.title = titlePrefix + etape + separator + initialTitle
+    }
+
+    function fillProgress(element, pageName) {
+        const progress = element.querySelector('.progress')
+        if (progress) {
+            progress.innerText = app.questionnaire.etapesRestantes(pageName)
+        }
     }
 
     function fillNavigation(element, pageName) {
-        const progress = element.querySelector('.progress')
-        if (progress) {
-            progress.innerText = app.questionnaire.progress(pageName)
-        }
-
         const boutonRetour = element.querySelector(
             'form .back-button, .form-controls .back-button'
         )

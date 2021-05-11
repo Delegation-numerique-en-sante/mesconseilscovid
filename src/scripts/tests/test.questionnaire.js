@@ -12,7 +12,55 @@ import Profil from '../profil'
 
 const questionnaire = new Questionnaire()
 
-describe('Pagination', function () {
+describe('Numéros d’étapes', function () {
+    describe('Mes vaccins', function () {
+        it('Toujours étape 1', function () {
+            const profil = new Profil('mes_infos', {})
+            assert.deepEqual(questionnaire._previousPages('vaccins', profil), [
+                'introduction',
+            ])
+            assert.strictEqual(questionnaire.numeroEtape('vaccins', profil), 1)
+        })
+    })
+    describe('Mon dépistage', function () {
+        it('Étape 4 si symptômes', function () {
+            const profil = new Profil('mes_infos', {
+                vaccins: 'pas_encore',
+                covid_passee: false,
+                symptomes_actuels: true,
+                symptomes_actuels_temperature: true,
+                _symptomes_start_date: '2020-07-09T14:03:41.000Z',
+                symptomes_passes: false,
+            })
+            assert.deepEqual(questionnaire._previousPages('depistage', profil), [
+                'symptomes',
+                'historique',
+                'vaccins',
+                'introduction',
+            ])
+            assert.strictEqual(questionnaire.numeroEtape('depistage', profil), 4)
+        })
+        it('Étape 5 si pas de symptômes', function () {
+            const profil = new Profil('mes_infos', {
+                vaccins: 'pas_encore',
+                covid_passee: false,
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+            })
+            assert.deepEqual(questionnaire._previousPages('depistage', profil), [
+                'contactarisque',
+                'symptomes',
+                'historique',
+                'vaccins',
+                'introduction',
+            ])
+            assert.strictEqual(questionnaire.numeroEtape('depistage', profil), 5)
+        })
+    })
+})
+
+describe('Préconditions', function () {
     describe('Mes vaccins', function () {
         it('ok d’aller aux vaccins en tout temps', function () {
             const profil = new Profil('mes_infos', {})
