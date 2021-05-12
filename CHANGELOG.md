@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-05-12
+
+* ajout de liens vers les pages thématiques
+* mise à jour des informations sur la vaccination
+* améliorations relatives à l’accessibilité du site
+
 ## 2021-05-07
 
 * mise à jour du calendrier et de l’infographie de vaccination
