@@ -174,16 +174,15 @@ Pour voyager, certains pays pourront demander une preuve de vaccination. Pour at
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-<mark>Dès maintenant</mark> :
+* <mark>dès maintenant</mark> :
+   * les personnes de **50 ans et plus** ;
+   * les personnes de **18 ans et plus** qui sont **en surcharge pondérale** (IMC > 30), ou qui ont [un risque](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/publics-prioritaires-vaccin-covid-19#liste-comor) de développer une **forme grave** de Covid (diabète, cancer, etc.) ;
+   * les personnes de **16 et 17 ans** présentant un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) ;
+   * les personnes au **second trimestre** de leur grossesse ;
+   * les personnes qui vivent auprès d’une personne **sévèrement immunodéprimée.
+* <mark>à partir du **15 juin**</mark> : toutes les personnes de **18 ans et plus**.
 
-* les personnes de **50 ans et plus** : chez leur médecin traitant, en centre de vaccination, en pharmacie, ou dans leur établissement (Ehpad, USLD, par exemple) ;
-* les personnes de **18 ans et plus** qui sont **en surcharge pondérale** (IMC > 30), ou qui ont [un risque](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/publics-prioritaires-vaccin-covid-19#liste-comor) de développer une **forme grave** de Covid (diabète, cancer, etc.) : en centre de vaccination, ou sur leur lieu de soin ;
-* les personnes de **16 et 17 ans** présentant un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) : en centre de vaccination avec une **ordonnance de leur médecin traitant**, ou sur leur lieu de soin ;
-* les **professionnels de santé** au sens large et les **sapeurs-pompiers** ;
-* les personnes qui vivent auprès d’une personne **sévèrement immunodéprimée** ;
-* les personnes au **second trimestre** de leur grossesse.
-
-Pour prendre rendez-vous dans un lieu de vaccination, consultez [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou appelez le 0 800 009 110.
+Pour prendre rendez-vous dans un lieu de vaccination, consultez [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou appelez le <a href="tel:0800009110">0 800 009 110</a>.
 
 </div>
 </div>
@@ -211,10 +210,10 @@ Les schémas de vaccination des vaccins Moderna, Comirnaty (Pfizer) et AstraZene
 
 Il existe des exceptions :
 
-* une personne qui a eu la Covid il y a moins de 6 mois, ne nécéssite qu’une seule dose de vaccin au lieu des 2 pour être vaccinée.
+* une personne qui a eu la Covid il y a moins de 6 mois, ne nécessite qu’une seule dose de vaccin au lieu des 2 pour être vaccinée.
 * une personne fortement immunodéprimée recevra 3 doses de vaccins pour être vaccinée.
 
-Le vaccin Janssen ne nécéssite qu’une seule dose.
+Le vaccin Janssen ne nécessite qu’une seule dose.
 
 </div>
 </div>
