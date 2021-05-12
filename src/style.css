@@ -62,7 +62,8 @@ footer {
 }
 
 header {
-    margin: 0 15px;
+    margin: 0;
+    padding: 0 15px;
     background: white;
 }
 header:focus {
@@ -75,7 +76,6 @@ header section {
 }
 header img#marianne {
     width: 100px;
-    margin-right: 10px;
 }
 header h1 {
     text-align: center;
