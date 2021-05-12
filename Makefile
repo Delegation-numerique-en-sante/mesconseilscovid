@@ -101,7 +101,7 @@ dev-ssl: key.pem build  ## Local HTTPS server with auto rebuild (without LiveRel
 pre-commit: pretty lint test-unit build check-versions check-orphelins check-diagrammes check-service-worker  ## Interesting prior to commit/push.
 
 release:
-	echo "{\"version\": \"$$(date --iso-8601)\"}" >version.json
+	echo "{\"version\": \"$$(date --iso-8601)\"}" >static/version.json
 	sed -i "s/'network-or-cache-.*'/'network-or-cache-$$(date --iso-8601)'/" src/service-worker.js
 	sed -i "2 a ## $$(date --iso-8601)\n\n* ...\n" CHANGELOG.md
 
