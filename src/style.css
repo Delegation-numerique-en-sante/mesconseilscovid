@@ -241,11 +241,9 @@ a .profil {
 .card {
     border: thin solid #ccc;
     border-radius: 0.5rem;
-    flex-basis: 18em;
     flex-grow: 0;
     flex-shrink: 0;
     width: 100%;
-    margin: 1rem;
     padding: 1rem 2rem;
 }
 .card h3 {
@@ -282,6 +280,8 @@ a .profil {
     margin-top: 1rem;
     display: flex;
     flex-direction: column; /* IE11 bug fix */
+    flex-basis: 288px;
+    margin: 1rem;
 }
 .block .thematiques .cards {
     margin: 0;
@@ -299,6 +299,7 @@ a .profil {
     flex-direction: column;
     font-size: 1.2rem;
     transform: translate(0, 0);
+    transition: all 100ms ease-in;
 }
 .thematiques a:hover {
     transform: translate(0.1em, 0.1em);
@@ -874,7 +875,7 @@ fieldset ul.details {
     background-repeat: no-repeat;
     border: none;
     padding: 10px 24px 9px 40px;
-    transform: translate(-0.1em, -0.1em);
+    transform: translate(0px, 0px);
     transition: all 100ms ease-in;
     align-self: flex-start;
     text-decoration: underline;
@@ -948,7 +949,7 @@ input[type='submit'] {
     border: 2px solid #000091;
     background-color: #000091;
     color: #ffffff;
-    transform: translate(-0.1em, -0.1em);
+    transform: translate(0px, 0px);
     transition: all 100ms ease-in;
     white-space: pre-wrap;
 }
@@ -1162,7 +1163,7 @@ input[type='radio']:disabled + label::before {
 .button:hover,
 .back-button:hover {
     cursor: pointer;
-    transform: translate(0px, 0px);
+    transform: translate(0.1em, 0.1em);
 }
 
 [hidden] {
