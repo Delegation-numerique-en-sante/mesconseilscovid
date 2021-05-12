@@ -69,12 +69,17 @@ export function lienDepistage(element, departement) {
 }
 
 export function lienVaccination(element, departement) {
-    if (departement === '00' /* Autre. */) {
-        element.setAttribute(
-            'href',
-            'https://www.sante.fr/cf/centres-vaccination-covid.html'
-        )
-        return
+    element.setAttribute('href', _lienVaccination(departement))
+}
+
+export function _lienVaccination(departement) {
+    if (
+        departement === '975' ||
+        departement === '977' ||
+        departement === '978' ||
+        departement === '00' /* Autre. */
+    ) {
+        return 'https://www.sante.fr/cf/centres-vaccination-covid.html'
     }
     const departementName = departements[departement]
     const departementSlug = slugify(departementName)
@@ -86,10 +91,7 @@ export function lienVaccination(element, departement) {
     if (departement == '2B') {
         departement = '20B'
     }
-    element.setAttribute(
-        'href',
-        `https://www.sante.fr/cf/centres-vaccination-covid/departement-${departement}-${departementSlug}.html`
-    )
+    return `https://www.sante.fr/cf/centres-vaccination-covid/departement-${departement}-${departementSlug}.html`
 }
 
 export function caracteristiquesOuAntecedentsARisques(element, algoOrientation) {

@@ -117,6 +117,19 @@ describe('Injection', function () {
         )
     })
 
+    it('Lien vaccination Saint-Pierre-et-Miquelon', function () {
+        var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
+        var element = dom.window.document.querySelector('div')
+        element.innerHTML =
+            '<a href="#conseils-departement" class="lien-vaccination">Site</a>'
+        injection.lienVaccination(element.querySelector('.lien-vaccination'), '975')
+
+        assert.strictEqual(
+            element.innerHTML,
+            '<a href="https://www.sante.fr/cf/centres-vaccination-covid.html" class="lien-vaccination">Site</a>'
+        )
+    })
+
     it('Lien vaccination Autre', function () {
         var dom = new JSDOM(`<!DOCTYPE html><div></div>`)
         var element = dom.window.document.querySelector('div')
