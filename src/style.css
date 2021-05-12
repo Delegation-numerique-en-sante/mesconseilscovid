@@ -262,17 +262,12 @@ a .profil {
     flex-basis: 100%;
     height: 0;
 }
-#profils-cards {
-    padding-top: 1rem;
-}
-.profil-empty,
-.profil-thematique {
+.profil-empty {
     width: 100%;
     font-size: 1.2rem;
     font-weight: bold;
 }
-.profil-empty a.button,
-.profil-thematique a.button {
+.profil-empty a.button {
     max-width: 18rem;
     margin: auto;
     display: flex;
@@ -280,31 +275,50 @@ a .profil {
     flex-direction: column;
     min-height: 5rem;
 }
-.profil-empty a.button-outline,
-.profil-thematique a.button-outline {
+.profil-empty a.button-outline {
     font-weight: normal;
-}
-.profil-thematique button.button {
-    font-size: 20px;
-}
-.profil-thematique img {
-    max-width: 6rem;
-    margin: 0 auto;
 }
 .cards > li {
     margin-top: 1rem;
     display: flex;
     flex-direction: column; /* IE11 bug fix */
 }
+.block .thematiques .cards {
+    margin-right: -24px;
+}
+.thematiques .cards > li {
+    display: block;
+    padding: 0;
+    margin-right: 24px;
+    max-width: 320px;
+}
+.thematiques a {
+    margin: 0;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    transform: translate(-0.1em, -0.1em);
+}
+.thematiques a:hover {
+    transform: translate(0, 0);
+}
+.thematiques img {
+    max-width: 6rem;
+    margin: 0 auto;
+}
+.thematiques .card-title {
+    padding: 0.5rem 0 0 0;
+}
 @media only screen and (min-width: 680px) {
     .cards .card:first-child {
         margin-bottom: 1rem;
     }
     .profil-empty,
-    .profil-thematique {
+    .thematique {
         width: 50%;
     }
-    .profil-thematique img {
+    .thematique img {
         max-width: 10rem;
     }
 }
