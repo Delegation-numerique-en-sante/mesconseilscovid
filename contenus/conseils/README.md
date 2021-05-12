@@ -881,7 +881,7 @@ Vous avec un traitement de longue durée ou une maladie chronique. Nous vous inv
 
 ## [conseils_vaccins_pas_encore_vaccine.md](conseils_vaccins_pas_encore_vaccine.md)
 
-<span class="nouveau">nouveau</span> Le déploiement de la vaccination se fait en plusieurs phases :
+Le déploiement de la vaccination se fait en plusieurs phases :
 
 * <mark>dès maintenant</mark> :
    * les personnes de **50 ans et plus** : chez leur médecin traitant, en centre de vaccination, en pharmacie, ou dans leur établissement (Ehpad, USLD, par exemple) ;
@@ -890,8 +890,9 @@ Vous avec un traitement de longue durée ou une maladie chronique. Nous vous inv
    * les **professionnels de santé** au sens large et les **sapeurs-pompiers** ;
    * les personnes qui vivent auprès d’une personne **sévèrement immunodéprimée** ;
    * les personnes au **second trimestre** de leur grossesse.
-* <mark>à partir du **12 mai**</mark> : toutes les personnes de **18 ans et plus**, la veille pour le lendemain, lorsqu’il reste des doses de vaccin non utilisées ;
 * <mark>à partir du **15 juin**</mark> : toutes les personnes de **18 ans et plus**.
+
+<span class="nouveau">nouveau</span> <mark>Créneaux de **dernière minute**</mark> : les personnes de 18 ans et plus, ne présentant pas de risque de forme grave, peuvent prendre rendez-vous **de la veille pour le lendemain**. Ils ne sont pas prioritaires.
 
 <div class="illustration">
     <a href="https://solidarites-sante.gouv.fr/IMG/pdf/infog_vaccins_particuliers.pdf" class="no-icon no-type">
