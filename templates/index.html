@@ -93,16 +93,18 @@
         <p class="tagline">
             MesConseilsCovid répond à vos questions pour savoir quoi faire dans une situation liée à la Covid. Consultez nos pages thématiques :
         </p>
-        <ul class="cards">
-            {% for thematique in thematiques %}
-                <li class="profil-thematique">
-                    <a href="{{ thematique.name }}.html"
-                        class="button button-outline"
-                        title="{{ thematique.title }}"
-                        ><img src="{{ thematique.imgsrc }}" alt=""><button class="button">{{ thematique.title }}</button></a>
+        <div class="thematiques">
+            <ul class="cards ">
+                {% for thematique in thematiques %}
+                <li>
+                    <a class="card" href="{{ thematique.name }}.html">
+                        <img src="{{ thematique.imgsrc }}" alt="">
+                        <span class="card-title">{{ thematique.title }}</span>
+                    </a>
                 </li>
-            {% endfor %}
-        </ul>
+                {% endfor %}
+            </ul>
+        </div>
         <div id="profils-cards-empty">
             {{ meta_introduction }}
             <ul class="cards">
