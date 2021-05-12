@@ -889,7 +889,7 @@ Vous avec un traitement de longue durée ou une maladie chronique. Nous vous inv
 
 <div class="conseil">
 
-Pour trouver le **lieu de vaccination** le plus proche, consultez [la liste sur sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou appelez le <a href="tel:0800009110">0 800 009 110</a>.
+Pour trouver le **lieu de vaccination** le plus proche, consultez <a href="#conseils-vaccins" class="lien-vaccination">la liste sur sante.fr</a> ou appelez le <a href="tel:0800009110">0 800 009 110</a>.
 
 </div>
 
