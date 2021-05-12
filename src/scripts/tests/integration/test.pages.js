@@ -59,7 +59,7 @@ describe('Pages', function () {
         // Pédiatrie.
         {
             // On retrouve le titre explicite.
-            let titre = await page.waitForSelector('#page.ready h2')
+            let titre = await page.waitForSelector('#page.ready h1')
             assert.equal(await titre.innerText(), 'Conseils pour les enfants')
             assert.equal(
                 await page.title(),
