@@ -881,7 +881,7 @@ Vous avec un traitement de longue durée ou une maladie chronique. Nous vous inv
 
 ## [conseils_vaccins_pas_encore_vaccine.md](conseils_vaccins_pas_encore_vaccine.md)
 
-### Où se faire vacciner ?
+#### Où se faire vacciner ?
 
 * Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech* ou *Moderna*.
 
@@ -894,7 +894,7 @@ Trouvez les <a href="#conseils-vaccins" class="lien-vaccination">lieux de vaccin
 </div>
 
 
-### Quand se faire vacciner ?
+#### Quand se faire vacciner ?
 
 Le déploiement de la vaccination se fait en plusieurs phases :
 
@@ -920,7 +920,7 @@ Pour en savoir plus :
     </a>
 </div>
 
-### Que faut-il savoir ?
+#### Que faut-il savoir ?
 
 La vaccination est **gratuite** pour tous, et n’est **pas obligatoire**.
 
@@ -938,7 +938,7 @@ Les **femmes enceintes** peuvent se faire vacciner à partir du 2<sup>e</sup> tr
 
 Les **effets secondaires** les plus fréquents des vaccins contre la Covid sont : une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des malaises, de la fièvre modérée et des frissons. Ces effets secondaires disparaissent le plus souvent au bout de 2 à 3 jours.
 
-Pour en savoir plus :
+#### Pour en savoir plus
 
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
 * Le site [vaccination-info-service](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/COVID-19) de Santé Publique France

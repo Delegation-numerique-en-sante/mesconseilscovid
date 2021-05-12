@@ -644,7 +644,8 @@ footer .legals {
 .conseils h4 {
     margin-top: 3rem;
     margin-bottom: 1rem;
-    font-size: 125%;
+    font-size: 150%;
+    border-bottom: 1px solid #25252b;
 }
 
 #conseils-suivi-ou-statut {
