@@ -1,15 +1,34 @@
+### Où se faire vacciner ?
+
+* Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech* ou *Moderna*.
+
+* Chez son **médecin traitant**, en cabinet infirmier, ou en pharmacie, avec un vaccin *AstraZeneca* ou *Janssen* (pour les personnes de **55 ans et plus**).
+
+<div class="conseil">
+
+Pour trouver le **lieu de vaccination** le plus proche, consultez [la liste sur sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou appelez le <a href="tel:0800009110">0 800 009 110</a>.
+
+</div>
+
+
+### Quand se faire vacciner ?
+
 Le déploiement de la vaccination se fait en plusieurs phases :
 
 * <mark>dès maintenant</mark> :
-   * les personnes de **50 ans et plus** : chez leur médecin traitant, en centre de vaccination, en pharmacie, ou dans leur établissement (Ehpad, USLD, par exemple) ;
-   * les personnes de **18 ans et plus** qui sont **en surcharge pondérale** (IMC > 30), ou qui ont [un risque](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/publics-prioritaires-vaccin-covid-19#liste-comor) de développer une **forme grave** de Covid (diabète, cancer, etc.) : en centre de vaccination, ou sur leur lieu de soin ;
-   * les personnes de **16 et 17 ans** présentant un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) : en centre de vaccination avec une **ordonnance de leur médecin traitant**, ou sur leur lieu de soin ;
-   * les **professionnels de santé** au sens large et les **sapeurs-pompiers** ;
-   * les personnes qui vivent auprès d’une personne **sévèrement immunodéprimée** ;
-   * les personnes au **second trimestre** de leur grossesse.
+   * les personnes de **50 ans et plus** ;
+   * les personnes de **18 ans et plus** qui sont **en surcharge pondérale** (IMC > 30), ou qui ont [un risque](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/publics-prioritaires-vaccin-covid-19#liste-comor) de développer une **forme grave** de Covid (diabète, cancer, etc.) ;
+   * les personnes de **16 et 17 ans** présentant un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) ;
+   * les personnes au **second trimestre** de leur grossesse ;
+   * les personnes qui vivent auprès d’une personne **sévèrement immunodéprimée.
 * <mark>à partir du **15 juin**</mark> : toutes les personnes de **18 ans et plus**.
 
 <span class="nouveau">nouveau</span> <mark>Créneaux de **dernière minute**</mark> : les personnes de 18 ans et plus, ne présentant pas de risque de forme grave, peuvent prendre rendez-vous **de la veille pour le lendemain**. Ils ne sont pas prioritaires.
+
+Pour en savoir plus :
+
+* [Les personnes éligibles à la vaccination contre la Covid-19](https://www.gouvernement.fr/les-personnes-eligibles-a-la-vaccination-contre-la-covid-19) sur le site du gouvernement
+* [La stratégie vaccinale et la liste des publics prioritaires](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/publics-prioritaires-vaccin-covid-19)
 
 <div class="illustration">
     <a href="https://solidarites-sante.gouv.fr/IMG/pdf/infog_vaccins_particuliers.pdf" class="no-icon no-type">
@@ -17,6 +36,8 @@ Le déploiement de la vaccination se fait en plusieurs phases :
              alt="Tableau illustrant la vaccination pour le grand public.">
     </a>
 </div>
+
+### Que faut-il savoir ?
 
 La vaccination est **gratuite** pour tous, et n’est **pas obligatoire**.
 
@@ -36,9 +57,6 @@ Les **effets secondaires** les plus fréquents des vaccins contre la Covid sont�
 
 Pour en savoir plus :
 
-* [La liste des centres de vaccination et des publics concernés](https://www.sante.fr/cf/centres-vaccination-covid.html)
-* [Les personnes éligibles à la vaccination contre la Covid-19](https://www.gouvernement.fr/les-personnes-eligibles-a-la-vaccination-contre-la-covid-19) sur le site du gouvernement
-* [La stratégie vaccinale et la liste des publics prioritaires](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/publics-prioritaires-vaccin-covid-19)
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
 * Le site [vaccination-info-service](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/COVID-19) de Santé Publique France
 * Les [réponses à vos questions sur les vaccins](https://www.sante.fr/vaccins-coronavirus-covid-19-toutes-les-reponses-vos-questions)
