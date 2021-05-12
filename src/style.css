@@ -315,12 +315,8 @@ a .profil {
     .cards .card:first-child {
         margin-bottom: 1rem;
     }
-    .profil-empty,
-    .thematique {
+    .profil-empty {
         width: 50%;
-    }
-    .thematique img {
-        max-width: 10rem;
     }
 }
 
@@ -1358,7 +1354,12 @@ a.no-type::after {
     font-size: 175%;
 }
 .thematique .illustration {
-    max-width: 15rem;
+    max-width: 8rem;
+}
+@media only screen and (min-width: 680px) {
+    .thematique .illustration {
+        max-width: 12rem;
+    }
 }
 
 .thematique .cta {
