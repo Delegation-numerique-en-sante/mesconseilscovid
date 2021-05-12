@@ -284,12 +284,12 @@ a .profil {
     flex-direction: column; /* IE11 bug fix */
 }
 .block .thematiques .cards {
-    margin-right: -24px;
+    margin: 0;
 }
 .thematiques .cards > li {
     display: block;
     padding: 0;
-    margin-right: 24px;
+    margin: 0 12px 1rem 12px;
     max-width: 320px;
 }
 .thematiques a {
@@ -298,10 +298,10 @@ a .profil {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
-    transform: translate(-0.1em, -0.1em);
+    transform: translate(0, 0);
 }
 .thematiques a:hover {
-    transform: translate(0, 0);
+    transform: translate(0.1em, 0.1em);
 }
 .thematiques img {
     max-width: 6rem;
