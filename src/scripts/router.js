@@ -124,7 +124,7 @@ export function initRouter(app) {
         let titlePrefix = pageTitle
         if (typeof pageTitle === 'undefined') {
             const titleElem = element.querySelector(
-                '#conseils-block-titre, form fieldset legend, h2'
+                'h1, #conseils-block-titre, form fieldset legend, h2'
             )
             if (titleElem) {
                 titlePrefix = titleElem.innerText
