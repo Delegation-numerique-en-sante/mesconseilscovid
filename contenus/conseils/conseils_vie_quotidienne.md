@@ -24,7 +24,7 @@ Les conditions d’entrée sur le territoire pour les **voyageurs en provenance 
     * Mise en quarantaine stricte pendant 10 jours à l’arrivée sur arrêté préfectoral, avec restrictions des horaires de sortie (10h-12h).
   * Pour plus d’informations : [Je pars à l’étranger](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/)
 
-**Le "pass sanitaire"**: 
+**Le « pass sanitaire »**: 
 
 Un "pass sanitaire" sera disponible à partir de juin en format papier ou numérique sur votre application TousAntiCovid (rubrique "mon carnet"). Les documents faisant office de "pass sanitaire" sont, au choix  : 
 - la preuve de vaccination complète (certificat de vaccination)
