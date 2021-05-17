@@ -1,4 +1,3 @@
-import confinement from '../data/confinement'
 import AlgorithmeVaccination from './vaccination'
 
 // Les statuts possibles en sortie de l’algorithme.
@@ -536,9 +535,7 @@ export default class AlgorithmeOrientation {
 
     vieQuotidienneBlockNamesToDisplay() {
         const blockNames = ['conseils-vie-quotidienne']
-        if (confinement[this.profil.departement]) {
-            blockNames.push('conseils-confinement')
-        } else if (this.profil.departement === '971') {
+        if (this.profil.departement === '971') {
             blockNames.push('conseils-couvre-feu-971')
         } else if (this.profil.departement === '972') {
             blockNames.push('conseils-couvre-feu-972')
@@ -547,7 +544,7 @@ export default class AlgorithmeOrientation {
         } else if (this.profil.departement === '974') {
             blockNames.push('conseils-couvre-feu-974')
         } else {
-            blockNames.push('conseils-couvre-feu-19h')
+            blockNames.push('conseils-couvre-feu-21h')
         }
         return blockNames
     }

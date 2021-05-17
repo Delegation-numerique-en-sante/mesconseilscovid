@@ -85,18 +85,6 @@ Nous vous conseillons de <a href="#suiviintroduction">renseigner son questionnai
 
 
 
-## [conseils_confinement.md](conseils_confinement.md)
-
-
-
-<span class="nouveau">nouveau</span> Un **couvre-feu** s’applique dans votre département de **19 h** à **6 h** du matin.
-
-Pour tout déplacement pendant le couvre-feu, une [attestation dérogatoire](https://media.interieur.gouv.fr/attestation-deplacement-derogatoire-covid-19/) et la justification du motif du déplacement sont obligatoires.
-
-La pratique de sports et d’activités **en extérieur** est autorisée sans limite de durée, en respectant les horaires du couvre-feu et en évitant les rassemblements (6 personnes maximum).
-
-
-
 ## [conseils_contacter_un_médecin.md](conseils_contacter_un_médecin.md)
 
 * Si vous n’arrivez pas à consulter un médecin, contactez un médecin de garde.
@@ -116,15 +104,17 @@ Une personne ayant la Covid est **contagieuse 48 h avant** les premiers symptô
 
 
 
-## [conseils_couvre_feu_19h.md](conseils_couvre_feu_19h.md)
+## [conseils_couvre_feu_21h.md](conseils_couvre_feu_21h.md)
 
 <div class="conseil conseil-jaune">
 
-<span class="nouveau">nouveau</span> Un **couvre-feu** s’applique dans votre département de **19 h** à **6 h** du matin.
+<span class="nouveau">nouveau</span> Un **couvre-feu** s’applique dans votre département de **21 h** à **6 h** du matin.
 
 </div>
 
 Pour tout déplacement pendant le couvre-feu, une [attestation dérogatoire](https://media.interieur.gouv.fr/attestation-deplacement-derogatoire-covid-19/) et la justification du motif du déplacement sont obligatoires.
+
+Pour [connaître l’ensemble des réouvertures au 19 mai](https://www.gouvernement.fr/covid-19-ce-qui-change-au-19-mai-2021).
 
 
 

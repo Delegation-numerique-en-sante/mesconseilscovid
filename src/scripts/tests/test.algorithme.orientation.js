@@ -878,14 +878,14 @@ describe('Blocs d’informations additionnels', function () {
     })
 
     describe('Bloc vie quotidienne', function () {
-        it('Le confinement est affiché par défaut', function () {
+        it('Le couvre-feu 21h est affiché par défaut', function () {
             var profil = new Profil('mes_infos', {
                 departement: '01',
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-confinement',
+                'conseils-couvre-feu-21h',
             ])
         })
         it('À Mayotte, c’est plus le confinement', function () {
@@ -895,7 +895,7 @@ describe('Blocs d’informations additionnels', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-couvre-feu-19h',
+                'conseils-couvre-feu-21h',
             ])
         })
         it('À La Réunion, c’est un couvre-feu adapté', function () {
@@ -938,14 +938,14 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-couvre-feu-973',
             ])
         })
-        it('À département inconnu, c’est pas le confinement', function () {
+        it('À département inconnu, c’est le couvre-feu 21h', function () {
             var profil = new Profil('mes_infos', {
                 departement: '00',
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-couvre-feu-19h',
+                'conseils-couvre-feu-21h',
             ])
         })
     })
