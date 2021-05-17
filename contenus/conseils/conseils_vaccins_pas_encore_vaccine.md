@@ -33,6 +33,7 @@ Pour en savoir plus :
 <div class="illustration">
     <a href="https://solidarites-sante.gouv.fr/IMG/pdf/infog_vaccins_particuliers.pdf" class="no-icon no-type">
         <img src="illustrations/solidarites-sante-gouv-fr-infog-vaccins-particuliers.png"
+             loading="lazy"
              alt="Tableau illustrant la vaccination pour le grand public.">
     </a>
 </div>

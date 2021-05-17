@@ -98,7 +98,7 @@
                 {% for thematique in thematiques %}
                 <li>
                     <a class="card" href="{{ thematique.name }}.html">
-                        <img src="{{ thematique.imgsrc }}" alt="">
+                        <img src="{{ thematique.imgsrc }}" loading="lazy" alt="">
                         <span class="card-title">{{ thematique.title }}</span>
                     </a>
                 </li>
@@ -849,6 +849,7 @@
                 <div id="conseils-timeline-isolement-foyer-malade" hidden>
                     <a href="illustrations/isolement-foyer-malade.png">
                         <img src="illustrations/isolement-foyer-malade.png"
+                             loading="lazy"
                              alt="Frise chronologique représentant la période d’isolement">
                     </a>
                 </div>

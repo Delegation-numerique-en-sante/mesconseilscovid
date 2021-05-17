@@ -217,7 +217,7 @@ Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement
 </div>
 <div class="icon icon-favori browser-mobile-safari" hidden>
 
-Vous pouvez **installer l’application sur votre téléphone** : pour cela, touchez l’icône <img src="ei-share-apple.svg" class="ios-share-button" alt="Partager">, puis sélectionnez « Sur l’écran d’accueil » dans la liste.
+Vous pouvez **installer l’application sur votre téléphone** : pour cela, touchez l’icône <img src="ei-share-apple.svg" loading="lazy" class="ios-share-button" alt="Partager">, puis sélectionnez « Sur l’écran d’accueil » dans la liste.
 
 </div>
 <div class="icon icon-favori favori browser-other" hidden>
