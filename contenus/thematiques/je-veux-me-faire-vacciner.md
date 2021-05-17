@@ -20,7 +20,7 @@
    * les personnes de **18 ans et plus** qui sont **en surcharge pondérale** (IMC > 30), ou qui ont [un risque](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/publics-prioritaires-vaccin-covid-19#liste-comor) de développer une **forme grave** de Covid (diabète, cancer, etc.) ;
    * les personnes de **16 et 17 ans** présentant un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) ;
    * les personnes au **second trimestre** de leur grossesse ;
-   * les personnes qui vivent auprès d’une personne **sévèrement immunodéprimée.
+   * les personnes qui vivent auprès d’une personne **sévèrement immunodéprimée**.
 * <mark>à partir du **15 juin**</mark> : toutes les personnes de **18 ans et plus**.
 
 Pour prendre rendez-vous dans un lieu de vaccination, consultez [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou appelez le <a href="tel:0800009110">0 800 009 110</a>.
