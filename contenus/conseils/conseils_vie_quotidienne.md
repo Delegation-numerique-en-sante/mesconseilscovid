@@ -26,15 +26,15 @@ Les conditions d’entrée sur le territoire pour les **voyageurs en provenance 
 
 **Le « pass sanitaire »**: 
 
-Un "pass sanitaire" sera disponible à partir de juin en format papier ou numérique sur votre application TousAntiCovid (rubrique "mon carnet"). Les documents faisant office de "pass sanitaire" sont, au choix  : 
+Un « pass sanitaire » sera disponible à partir de juin en format papier ou numérique sur votre application TousAntiCovid (rubrique « Mon carnet »). Les documents faisant office de « pass sanitaire » sont, au choix :
 - la preuve de vaccination complète (certificat de vaccination)
 - un test PCR négatif récent 
 - un test PCR positif de plus de 15 jours et moins de 6 mois (certificat de rétablissement)
 Ce pass sanitaire devra être présenté pour : 
-- participer à des évènements rassemblant plus de 1000 personnes;
-- voyager dans les pays de l'Union Européenne (date de mise en application non déterminée)
-L'accès aux lieux nécéssaires à la vie quotidienne (restaurants, service public, grandes surfaces...) ne sera pas soumis à la présentation de ce pass sanitaire. 
+- participer à des évènements rassemblant plus de 1 000 personnes
+- voyager dans les pays de l’Union Européenne (date de mise en application non déterminée)
+L'accès aux lieux nécessaires à la vie quotidienne (restaurants, service public, grandes surfaces...) ne sera **pas** soumis à la présentation de ce « pass sanitaire ».
 
-Pour plus d'informations, consultez [la page dédiée](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions). 
+Pour plus d’informations, consultez [la page dédiée](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions). 
 
 Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919">39 19</a> (appel gratuit, de 9 h à 19 h du lundi au samedi) ou le <a href="tel:17">17</a> en cas d’urgence.
