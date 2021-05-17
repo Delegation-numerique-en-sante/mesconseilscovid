@@ -26,14 +26,15 @@ Les conditions d’entrée sur le territoire pour les **voyageurs en provenance 
 
 **Le « pass sanitaire »**: 
 
-Un « pass sanitaire » sera disponible à partir de juin en format papier ou numérique sur votre application TousAntiCovid (rubrique « Mon carnet »). Les documents faisant office de « pass sanitaire » sont, au choix :
-- la preuve de vaccination complète (certificat de vaccination)
-- un test PCR négatif récent 
-- un test PCR positif de plus de 15 jours et moins de 6 mois (certificat de rétablissement)
+Un « pass sanitaire » sera disponible à partir de juin en format papier ou numérique sur votre application TousAntiCovid (rubrique « Mon carnet »). Les documents faisant office de « pass sanitaire » seront, au choix :
+- la preuve de vaccination complète (certificat de vaccination) ;
+- un test PCR négatif récent ;
+- un test PCR positif de plus de 15 jours et moins de 6 mois (certificat de rétablissement).
 
-Ce pass sanitaire devra être présenté pour : 
-- participer à des évènements rassemblant plus de 1 000 personnes
-- voyager dans les pays de l’Union Européenne (date de mise en application non déterminée)
+Ce « pass sanitaire » devra être présenté pour :
+- participer à des évènements rassemblant plus de 1 000 personnes ;
+- voyager dans les pays de l’Union Européenne (date de mise en application non déterminée).
+
 L'accès aux lieux nécessaires à la vie quotidienne (restaurants, service public, grandes surfaces...) ne sera **pas** soumis à la présentation de ce « pass sanitaire ».
 
 Pour plus d’informations, consultez [la page dédiée](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions). 
