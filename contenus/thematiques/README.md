@@ -302,13 +302,13 @@ Le vaccin Janssen ne nécessite qu’une seule dose.
 
 <big>Votre conjoint⸱e, enfant, colocataire… est positif à la Covid et vous ne présentez pas de symptômes ? MesConseilsCovid vous accompagne pour savoir quelle conduite à tenir lorsqu’on est cas contact d’une personne qui partage le même lieu de vie.</big>
 
-## 1. Faire un test
+## 1. Faites un test et isolez-vous
 
 <div class="conseil">
 
 Même si vous ne présentez pas de symptômes, il faut vous faire tester immédiatement en laboratoire ou en pharmacie :
 
-* Si le test est **positif : isolez-vous**. Vous pourrez lever l’isolement dès le 10<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48h.
+* Si le test est **positif** : isolez-vous pendant au moins **10 jours**. Vous pourrez lever l’isolement dès le 10<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48h.
 * Si le test est **négatif**, vous devez vous isoler au moins 7 jours de plus que la personne positive.
 
 
@@ -316,16 +316,14 @@ Même si vous ne présentez pas de symptômes, il faut vous faire tester immédi
 
 Si vous ne pouvez pas télétravailler, l’Assurance maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr).
 
-## 2. Refaire un test
+## 2. Refaites un test
 
 <div class="conseil">
 
 Si des symptômes ne se déclarent pas entre-temps, **faites vous tester à nouveau** 7 jours après la guérison ou la sortie de l’isolement de la personne positive.
 
 * Si ce test est **négatif**, alors vous pouvez lever votre isolement.
-* Si ce test est **positif**, alors restez isolé·e encore 10 jours au moins.
-
-Vous pourrez lever votre isolement dès le 10e jour, si vous ne ressentez plus de fièvre depuis au moins 48h.
+* Si ce test est **positif**, alors restez isolé·e encore 10 jours au moins. Vous pourrez lever l’isolement dès le 10<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48h.
 
 </div>
 
@@ -341,27 +339,27 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 </div>
 
 
-## Comment cohabiter avec une personne positive à la covid ?
+## Comment cohabiter avec une personne positive à la Covid ?
 
 <big>Pour éviter d’être contaminé⸱e par une personne qui vit sous le même toit, il faut respecter autant que possible une certaine discipline, lorsque cela est possible :</big>
 
 ### Ne pas partager l’espace
 
-* invitez la à restez, si possible, dans une pièce séparée, porte fermée ;
+* invitez la à rester, si possible, dans une pièce séparée, porte fermée ;
 * ne partagez pas votre lit ;
-* ne partagez pas vos objets quotidiens (serviettes de toilette, savon, couverts, assiettes, téléphone,…) ;
+* ne partagez pas vos objets quotidiens (serviettes de toilette, savon, couverts, assiettes, téléphone, …) ;
 * ne prenez pas vos repas avec elle.
 
 
 ### Assainir votre logement
 
-* aérer au moins 10 minutes plusieurs fois par jour ;
-* privilégier des ustensiles de ménage qui ne dispersent pas les poussières comme une éponge ou une serpillière (l’aspirateur est à éviter) ;
+* aérez au moins 10 minutes plusieurs fois par jour ;
+* privilégiez des ustensiles de ménage qui ne dispersent pas les poussières comme une éponge ou une serpillière (l’aspirateur est à éviter) ;
 
-* invitez la personne à :
-  - nettoyer systématiquement les surfaces qu'elle touche (poignées de porte, meubles de salle de bains, toilettes, sols, etc., avec votre produit habituel, puis avec un produit contenant de l’eau de javel ou de l’alcool à 70°, puis de rincer) ;
+* invitez la personne positive à :
+  - nettoyer systématiquement les surfaces qu’elle touche (poignées de porte, meubles de salle de bains, toilettes, sols, etc., avec votre produit habituel, puis avec un produit contenant de l’eau de javel ou de l’alcool à 70°, puis rincer) ;
   - laver ses draps et serviettes de toilette à 60 °C pendant au moins 30 minutes ;
-  - jeter tout ce qui peut être contaminé dans un sac poubelle à part, qu'elle  mettra dans un second sac poubelle une fois fermé.
+  - jeter tout ce qui peut être contaminé dans un sac poubelle à part, qu’elle mettra dans un second sac poubelle une fois fermé.
 
 ### Si vous devez avoir des contacts ou partager des objets
 
