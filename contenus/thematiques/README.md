@@ -169,7 +169,7 @@ Pour voyager, certains pays pourront demander une preuve de vaccination. Pour at
 
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">Qui peut se faire vacciner et comment prendre rendez-vous ?</h2>
+<h2 itemprop="name">Qui peut se faire vacciner ?</h2>
 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
@@ -181,6 +181,16 @@ Pour voyager, certains pays pourront demander une preuve de vaccination. Pour at
    * les personnes au **second trimestre** de leur grossesse ;
    * les personnes qui vivent auprès d’une personne **sévèrement immunodéprimée**.
 * <mark>à partir du **15 juin**</mark> : toutes les personnes de **18 ans et plus**.
+
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+<h2 itemprop="name">Comment prendre rendez-vous pour me faire vacciner ?</h2>
+
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
 
 Pour prendre rendez-vous dans un lieu de vaccination, consultez [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou appelez le <a href="tel:0800009110">0 800 009 110</a>.
 
