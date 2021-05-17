@@ -143,7 +143,7 @@ Un **couvre-feu** s’applique en Martinique de 19 h à 5 h du matin.
 
 <div class="conseil conseil-jaune">
 
-Un **couvre-feu** s’applique en Guyane de 23 h à 6 h du matin.
+Un **couvre-feu** s’applique en Guyane de 19 h à 5 h du lundi au vendredi et du samedi 19 h au lundi 5 h.
 
 </div>
 
