@@ -161,6 +161,18 @@ Un **couvre-feu** s’applique à La Réunion de 18 h à 6 h du matin.
 
 
 
+## [conseils_couvre_feu_976.md](conseils_couvre_feu_976.md)
+
+<div class="conseil conseil-jaune">
+
+Un **couvre-feu** s’applique à Mayotte de 20 h à 5 h du matin.
+
+</div>
+
+Les rassemblements, réunions ou activités à un titre autre que professionnel sur la voie publique ou dans un lieu public, mettant en présence de manière simultanée plus de 10 personnes, sont interdits.
+
+
+
 ## [conseils_covid.md](conseils_covid.md)
 
 #### La maladie Covid

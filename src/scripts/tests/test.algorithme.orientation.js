@@ -888,14 +888,14 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-couvre-feu-21h',
             ])
         })
-        it('À Mayotte, c’est plus le confinement', function () {
+        it('À Mayotte, c’est un couvre-feu adapté', function () {
             var profil = new Profil('mes_infos', {
                 departement: '976',
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-couvre-feu-21h',
+                'conseils-couvre-feu-976',
             ])
         })
         it('À La Réunion, c’est un couvre-feu adapté', function () {
