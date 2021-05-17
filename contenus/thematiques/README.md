@@ -191,12 +191,30 @@ Sinon, si vous avez **18 ans ou plus**, et que vous n’avez **pas de risque de 
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
+<h2 itemprop="name">Où me faire vacciner ?</h2>
+
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+
+* Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech* ou *Moderna*.
+
+* Chez votre **médecin traitant**, en cabinet infirmier, ou en pharmacie, avec un vaccin *AstraZeneca* ou *Janssen* (si vous avez **55 ans ou plus**).
+
+Trouvez les lieux de vaccination proches de chez vous sur le site [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou en appelant le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h).
+
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
 <h2 itemprop="name">Comment prendre rendez-vous pour me faire vacciner ?</h2>
 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-Pour prendre rendez-vous dans un lieu de vaccination, consultez [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou appelez le <a href="tel:0800009110">0 800 009 110</a>.
+Les centres de vaccination proposent une prise de rendez-vous par internet (via une des trois plateformes Doctolib, Keldoc ou Maiia) ou par téléphone.
+
+Pour savoir comment prendre rendez-vous dans les lieux de vaccination proches de chez vous, consultez [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou appelez le numéro vert <a href="tel:0800009110">0 800 009 110</a> pour être accompagné dans votre prise de rendez-vous.
 
 </div>
 </div>
