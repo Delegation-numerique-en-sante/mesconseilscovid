@@ -969,11 +969,11 @@ Pour vos **courses**, nous vous conseillons de :
   * réaliser vos courses lors des périodes les moins fréquentées ;
   * suivre [les conseils de l’ANSES](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses).
 
-Pour vos **déplacements** :
+Pour vos **déplacements**internationaux :
 
   * toute entrée en France et toute sortie du territoire à destination ou en provenance d’un pays extérieur à l’Union européenne est interdite, sauf motif impérieux ;
   * toute entrée en France à partir d’un pays de l’Union européenne est conditionnée à la réalisation d’un test PCR, à l’exception des travailleurs transfrontaliers ; tous les déplacements en provenance et en direction des territoires ultramarins sont également soumis à la production de motifs impérieux ;
-  * pour plus d’informations sur [vos déplacements ou voyages](https://www.gouvernement.fr/info-coronavirus/questions-reponses) (choisir la section « Frontières / outre-mer / Dispositifs »).
+  * pour plus d’informations sur [vos déplacements ou voyages](https://www.interieur.gouv.fr/Actualites/Infos-pratiques/Attestation-de-deplacement-et-de-voyage) (choisir la section correspondant à votre situation).
 
 Les conditions d’entrée sur le territoire pour les **voyageurs en provenance des pays les plus à risque** (Brésil, Argentine, Chili, Afrique du sud, Inde) sont les suivantes :
 
