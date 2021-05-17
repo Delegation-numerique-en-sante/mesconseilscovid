@@ -126,6 +126,7 @@ Un **couvre-feu** s’applique en Guadeloupe de 22 h à 6 h du matin.
 
 </div>
 
+Retrouvez les règles en vigueur actuellement [sur le site de la préfecture](https://www.guadeloupe.gouv.fr/Politiques-publiques/Risques-naturels-technologiques-et-sanitaires/Securite-sanitaire/Informations-coronavirus/La-lutte-contre-la-circulation-active-du-virus-de-la-Covid-19-en-Guadeloupe).
 
 
 
@@ -137,6 +138,8 @@ Un **couvre-feu** s’applique en Martinique de 19 h à 5 h du matin.
 
 </div>
 
+Retrouvez les règles en vigueur actuellement [sur le site de la préfecture](https://www.martinique.gouv.fr/Politiques-publiques/Environnement-sante-publique/Sante/Informations-COVID-19/La-Martinique-face-au-COVID-19-mesures-attestations-recommandations).
+
 
 
 ## [conseils_couvre_feu_973.md](conseils_couvre_feu_973.md)
@@ -147,6 +150,7 @@ Un **couvre-feu** s’applique en Guyane de 19 h à 5 h du lundi au vendredi e
 
 </div>
 
+Retrouvez les règles en vigueur actuellement [sur le site de la préfecture](https://www.guyane.gouv.fr/Politiques-publiques/COVID-19-Informations-arretes-declarations).
 
 
 
@@ -171,6 +175,8 @@ Un **couvre-feu** s’applique à Mayotte de 20 h à 5 h du matin.
 </div>
 
 Les rassemblements, réunions ou activités à un titre autre que professionnel sur la voie publique ou dans un lieu public, mettant en présence de manière simultanée plus de 10 personnes, sont interdits.
+
+Retrouvez les règles en vigueur actuellement [sur le site de la préfecture](https://www.mayotte.gouv.fr/Politiques-publiques/Sante/CORONAVIRUS-COVID-19).
 
 
 

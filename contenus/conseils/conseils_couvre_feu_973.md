@@ -4,3 +4,4 @@ Un **couvre-feu** s’applique en Guyane de 19 h à 5 h du lundi au vendredi e
 
 </div>
 
+Retrouvez les règles en vigueur actuellement [sur le site de la préfecture](https://www.guyane.gouv.fr/Politiques-publiques/COVID-19-Informations-arretes-declarations).
