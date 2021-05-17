@@ -30,6 +30,7 @@ Un « pass sanitaire » sera disponible à partir de juin en format papier ou 
 - la preuve de vaccination complète (certificat de vaccination)
 - un test PCR négatif récent 
 - un test PCR positif de plus de 15 jours et moins de 6 mois (certificat de rétablissement)
+
 Ce pass sanitaire devra être présenté pour : 
 - participer à des évènements rassemblant plus de 1 000 personnes
 - voyager dans les pays de l’Union Européenne (date de mise en application non déterminée)
