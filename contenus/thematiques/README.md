@@ -160,7 +160,7 @@ Pour voyager, certains pays pourront demander une preuve de vaccination. Pour at
 # Je souhaite me faire vacciner, que faut-il savoir ?
 
 <div class="illustration">
-    <img src="illustrations/vaccins.svg" alt="">
+    <img src="illustrations/symptomespasses.svg" alt="">
 </div>
 
 <div id="conseils-personnels" class="conseils">
