@@ -10,18 +10,22 @@
 
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">Qui peut se faire vacciner ?</h2>
+<h2 itemprop="name">Quand pourrai-je me faire vacciner ?</h2>
 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-* <mark>dès maintenant</mark> :
-   * les personnes de **50 ans et plus** ;
-   * les personnes de **18 ans et plus** qui sont **en surcharge pondérale** (IMC > 30), ou qui ont [un risque](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/publics-prioritaires-vaccin-covid-19#liste-comor) de développer une **forme grave** de Covid (diabète, cancer, etc.) ;
-   * les personnes de **16 et 17 ans** présentant un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) ;
-   * les personnes au **second trimestre** de leur grossesse ;
-   * les personnes qui vivent auprès d’une personne **sévèrement immunodéprimée**.
-* <mark>à partir du **15 juin**</mark> : toutes les personnes de **18 ans et plus**.
+Vous pouvez vous faire vacciner <mark>dès maintenant</mark> :
+   * si vous avez **50 ans ou plus** ;
+   * si vous avez **18 ans ou plus** et que vous êtes **en surcharge pondérale** (IMC > 30), ou que vous avez [un risque](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/publics-prioritaires-vaccin-covid-19#liste-comor) de développer une **forme grave** de Covid (diabète, cancer, etc.) ;
+   * si vous avez **16 ou 17 ans** et que vous avez un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) ;
+   * si vous êtes au **second trimestre** de votre grossesse ;
+   * si vous vivez auprès d’une personne **sévèrement immunodéprimée**.
+
+Sinon, si vous avez **18 ans ou plus**, et que vous n’avez **pas de risque de forme grave** :
+
+  * vous pourrez vous faire vacciner <mark>à partir du **15 juin**</mark> ;
+  * vous pouvez aussi prendre rendez-vous **de la veille pour le lendemain**, lorsqu’il reste des <mark>créneaux de **dernière minute**</mark>, mais vous ne serez pas prioritaire.
 
 </div>
 </div>
