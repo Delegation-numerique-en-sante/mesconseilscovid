@@ -157,12 +157,17 @@ a .profil {
     max-width: 48rem;
     margin: auto;
 }
-.block > h1 {
+h1 {
     color: #000091;
     font-size: 250%;
     text-align: center;
     padding-top: 2rem;
     margin-bottom: 3rem;
+}
+legend h1 {
+    padding-top: 0;
+    margin-bottom: 1rem;
+    font-size: 175%;
 }
 .block h2 {
     color: #000091;
@@ -741,11 +746,6 @@ fieldset {
     border: none;
     margin: 0 0 1rem 0;
     padding: 0;
-}
-fieldset legend {
-    color: #000091;
-    font-size: 150%;
-    margin: 1rem 0 0.5rem 0;
 }
 fieldset .secondary .secondary-title {
     font-size: 120%;

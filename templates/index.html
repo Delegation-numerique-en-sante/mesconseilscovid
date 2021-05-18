@@ -131,7 +131,7 @@
 <section id="nom" hidden>
     <form id="nom-form" class="block">
         <fieldset>
-            <legend>{{ question_nom_titre|inline }}</legend>
+            <legend><h1>{{ question_nom_titre|inline }}</h1></legend>
             <div id="aria-nom-details" class="details">{{ question_nom_aide }}</div>
             <ul class="no-list-style">
                 <li class="row">
@@ -150,7 +150,7 @@
 <section id="vaccins" hidden>
     <form id="vaccins-form" class="block">
         <fieldset>
-            <legend>{{ question_vaccins_titre|inline|me_or_them }}</legend>
+            <legend><h1>{{ question_vaccins_titre|inline|me_or_them }}</h1></legend>
             <div id="vaccins-label" class="secondary-title">
                 {{ question_vaccins_libellé|me_or_them }}
             </div>
@@ -176,7 +176,7 @@
 <section id="historique" hidden>
     <form id="historique-form" class="block">
         <fieldset>
-            <legend>{{ question_historique_titre|inline|me_or_them }}</legend>
+            <legend><h1>{{ question_historique_titre|inline|me_or_them }}</h1></legend>
             <div>
                 <input id="covid_passee_checkbox" type="checkbox" name="covid_passee">
                 <label for="covid_passee_checkbox">
@@ -217,7 +217,7 @@
 <section id="situation" hidden>
     <form id="situation-form" class="block">
         <fieldset>
-            <legend>{{ question_résidence_titre|inline|me_or_them }}</legend>
+            <legend><h1>{{ question_résidence_titre|inline|me_or_them }}</h1></legend>
             <div class="row">
                 <label for="departement">{{ question_résidence_libellé|inline|me_or_them }}</label>
                 <div class="dpt-container">
@@ -380,7 +380,7 @@
 <section id="sante" hidden>
     <form id="sante-form" class="block">
         <fieldset>
-            <legend>{{ question_caractéristiques_titre|inline|me_or_them }}</legend>
+            <legend><h1>{{ question_caractéristiques_titre|inline|me_or_them }}</h1></legend>
             <div class="details">{{ question_caractéristiques_aide }}</div>
             <ul class="no-list-style">
                 <li class="row">
@@ -491,7 +491,7 @@
 <section id="symptomes" hidden>
     <form id="symptomes-form" class="block">
         <fieldset>
-            <legend>{{ question_symptômes_titre|inline|me_or_them }}</legend>
+            <legend><h1>{{ question_symptômes_titre|inline|me_or_them }}</h1></legend>
             <h3 id="symptomes-label">{{ question_symptômes_titre_ouinon|inline|me_or_them }}</h3>
             {{ question_symptômes_titre_aide }}
             <div role="radiogroup" aria-labelledby="symptomes-label">
@@ -601,7 +601,7 @@
 <section id="depistage" hidden>
     <form id="depistage-form" class="block">
         <fieldset>
-            <legend>{{ question_dépistage_titre|inline|me_or_them }}</legend>
+            <legend><h1>{{ question_dépistage_titre|inline|me_or_them }}</h1></legend>
             <div>
                 <input id="depistage_checkbox" type="checkbox" name="depistage">
                 <label for="depistage_checkbox">
@@ -673,7 +673,7 @@
 <section id="contactarisque" hidden>
     <form id="contact-a-risque-form" class="block">
         <fieldset>
-            <legend>{{ question_symptômes_contact_à_risque_titre|inline|me_or_them }}</legend>
+            <legend><h1>{{ question_symptômes_contact_à_risque_titre|inline|me_or_them }}</h1></legend>
             <div>
                 <input id="contact_a_risque_assurance_maladie" type="checkbox" name="contact_a_risque_assurance_maladie">
                 <label for="contact_a_risque_assurance_maladie">
@@ -1392,7 +1392,7 @@
 <section id="suivisymptomes" hidden>
     <form id="suivi-symptomes-form" class="block">
         <fieldset>
-            <legend>{{ question_suivi_symptômes_titre|inline|me_or_them }}</legend>
+            <legend><h1>{{ question_suivi_symptômes_titre|inline|me_or_them }}</h1></legend>
             <div class="details">{{ question_suivi_symptômes_aide|me_or_them }}</div>
             <div id="suivi-symptomes-aujourdhui">
                 <input id="suivi_symptomes" type="checkbox" name="suivi_symptomes">

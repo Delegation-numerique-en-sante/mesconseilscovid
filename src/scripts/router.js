@@ -123,9 +123,7 @@ export function initRouter(app) {
     function updateTitle(element, pageName, pageTitle, profil) {
         let titlePrefix = pageTitle
         if (typeof pageTitle === 'undefined') {
-            const titleElem = element.querySelector(
-                'h1, #conseils-block-titre, form fieldset legend, h2'
-            )
+            const titleElem = element.querySelector('h1, #conseils-block-titre, h2')
             if (titleElem) {
                 titlePrefix = titleElem.innerText
             } else {
