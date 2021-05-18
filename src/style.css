@@ -669,7 +669,8 @@ footer .legals {
     margin-top: 3rem;
     margin-bottom: 1rem;
     font-size: 150%;
-    border-bottom: 1px solid #25252b;
+    color: black;
+    border-bottom: 1px solid black;
 }
 
 #conseils-suivi-ou-statut {
