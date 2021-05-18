@@ -153,7 +153,7 @@ describe('Suivi', function () {
         // La page d’introduction du suivi comporte un lien direct
         // vers mes symptômes car on a déjà renseigné la date de début.
         {
-            await page.waitForSelector('#page.ready h2 >> text="Suivi de la maladie"')
+            await page.waitForSelector('#page.ready h1 >> text="Suivi de la maladie"')
 
             let bouton = await page.waitForSelector(
                 '#page.ready >> text="Continuer mon suivi"'
@@ -214,7 +214,7 @@ describe('Suivi', function () {
         // La page de suivi d'historique.
         {
             let bilanTitle = await page.waitForSelector(
-                '#page.ready #suivi-historique-content h3'
+                '#page.ready #suivi-historique-content h2'
             )
             assert.equal(await bilanTitle.innerText(), 'Bilan de votre situation')
         }
@@ -359,7 +359,7 @@ describe('Suivi', function () {
         // La page de suivi d'historique.
         {
             let bilanTitle = await page.waitForSelector(
-                '#page.ready #suivi-historique-content h3'
+                '#page.ready #suivi-historique-content h2'
             )
             assert.equal(await bilanTitle.innerText(), 'Bilan de votre situation')
         }

@@ -1332,19 +1332,29 @@ a.no-type::after {
     margin-top: 1.5rem;
 }
 
-#historique h3 {
-    margin-top: 5rem;
+#suivi-historique-block h1 {
+    margin-bottom: 3rem;
 }
-#historique table {
+#suivi-historique-block caption h2,
+#suivi-historique-block h2 {
+    font-size: 175%;
+    padding-top: 1rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+#suivi-historique-block h3 {
+    text-align: left;
+}
+#suivi-historique-block table {
     width: 100%;
     text-align: center;
     border-collapse: collapse;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
-#historique table thead td {
+#suivi-historique-block table thead td {
     font-weight: bold;
 }
-#historique table td {
+#suivi-historique-block table td {
     border: 1px solid black;
     padding: 0.5rem;
 }
