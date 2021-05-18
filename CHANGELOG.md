@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-05-18
+
+* ajout d’infos sur le « pass sanitaire »
+* mise à jour des infos sur les déplacements internationaux
+
 ## 2021-05-12
 
 * ajout de liens vers les pages thématiques
