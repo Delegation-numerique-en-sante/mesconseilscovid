@@ -34,7 +34,9 @@ describe('Profils', function () {
 
         // Légende adaptée.
         {
-            let legend = await page.waitForSelector('#page.ready #vaccins-form legend')
+            let legend = await page.waitForSelector(
+                '#page.ready #vaccins-form legend h1'
+            )
             assert.equal(await legend.innerText(), 'Sa vaccination')
         }
 
