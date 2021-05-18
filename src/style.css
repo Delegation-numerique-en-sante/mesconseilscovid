@@ -590,6 +590,7 @@ footer .legals {
     font-size: 90%;
     padding-bottom: 0.2rem;
     font-weight: bold;
+    margin: 0;
 }
 .timeline-content .timeline-texte {
     border-left: 2px solid #000091;
