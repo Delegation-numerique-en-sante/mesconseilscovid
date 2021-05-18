@@ -2,6 +2,7 @@ import { format } from 'timeago.js'
 import { createElementFromHTML, safeHtml } from './affichage'
 
 import AlgorithmeSuivi from './algorithme/suivi'
+import { titleCase } from './utils'
 
 import SUIVI_IMAGES from '../suivi_*.svg'
 
@@ -61,13 +62,15 @@ export default class SuiviView {
 
     renderDebutSymptomes() {
         return `<p>Début des symptômes :
-            ${this.profil.symptomes_start_date.toLocaleString()}
+            ${this.renderDate(this.profil.symptomes_start_date)}
             (<a href="#symptomes">modifier</a>)
         </p>`
     }
 
     renderDebutSuivi() {
-        return `<p>Début du suivi : ${this.profil.suivi_start_date.toLocaleString()}</p>`
+        return `<p>Début du suivi : ${this.renderDate(
+            this.profil.suivi_start_date
+        )}</p>`
     }
 
     suiviParSymptome(symptome) {
@@ -183,118 +186,112 @@ export default class SuiviView {
         }
     }
 
+    renderDate(date) {
+        const options = { weekday: 'long', month: 'long', day: 'numeric' }
+        return titleCase(new Date(date).toLocaleString('fr-FR', options))
+    }
+
     renderIcone(statut) {
-        const imgSrc = SUIVI_IMAGES[this.switchIcone(statut)]
-        return `<img src="${imgSrc}" width="40px" height="40px" />`
+        const icone = this.switchIcone(statut)
+        const imgSrc = SUIVI_IMAGES[icone]
+        return `<img src="${imgSrc}" width="40px" height="40px"
+                     alt="${titleCase(icone)}" title="${titleCase(icone)}" />`
     }
 
     renderSymptomeStatutTableCell(etat) {
         return `<tr>
-            <td>${new Date(etat.date).toLocaleString()}</td>
+            <td>${this.renderDate(etat.date)}</td>
             <td>${this.renderIcone(etat.statut)}</td>
             <td>${this.switchStatut(etat.statut)}</td>
         </tr>`
     }
 
-    renderSymptomeStatutTable(data) {
-        const header = `<thead><tr><td>Date</td><td colspan="2">Statut</td></tr></thead>`
+    renderSymptomeStatut(symptome, data) {
+        const caption = `<caption><h3>${this.switchSymptomeTitre(
+            symptome
+        )}</h3></caption>`
+        const header = `<thead><tr><td>Date</td><td>Statut</td><td>Réponse</td></tr></thead>`
         const body = `<tbody>
             ${data.map((etat) => this.renderSymptomeStatutTableCell(etat)).join('\n')}
         </tbody>`
         return `<table>
+            ${caption}
             ${header}
             ${body}
         </table>`
     }
 
-    renderSymptomeStatut(symptome, data) {
-        const title = `<h3>${this.switchSymptomeTitre(symptome)}</h3>`
-        return `${title}
-            ${this.renderSymptomeStatutTable(data)}
-        `
-    }
-
     renderSymptomeBooleenTableCell(etat) {
         return `<tr>
-            <td>${new Date(etat.date).toLocaleString()}</td>
+            <td>${this.renderDate(etat.date)}</td>
             <td>${this.renderIcone(etat.statut)}</td>
             <td>${this.switchBooleen(etat.statut)}</td>
         </tr>`
     }
 
-    renderSymptomeBooleenTable(data) {
+    renderSymptomeBooleen(symptome, data) {
+        const caption = `<caption><h3>${this.switchSymptomeTitre(
+            symptome
+        )}</h3></caption>`
         const header = `<thead><tr><td>Date</td><td colspan="2">Statut</td></tr></thead>`
         const body = `<tbody>
             ${data.map((etat) => this.renderSymptomeBooleenTableCell(etat)).join('\n')}
         </tbody>`
         return `<table>
+            ${caption}
             ${header}
             ${body}
         </table>`
     }
 
-    renderSymptomeBooleen(symptome, data) {
-        const title = `<h3>${this.switchSymptomeTitre(symptome)}</h3>`
-        return `${title}
-            ${this.renderSymptomeBooleenTable(data)}
-        `
-    }
-
     renderSymptomeBooleenOptionnelTableCell(etat) {
         return `<tr>
-            <td>${new Date(etat.date).toLocaleString()}</td>
+            <td>${this.renderDate(etat.date)}</td>
             <td>${this.renderIcone(etat.statut)}</td>
             <td>${this.switchBooleenOptionnel(etat.statut)}</td>
         </tr>`
     }
 
-    renderSymptomeBooleenOptionnelTable(data) {
-        const header = `<thead><tr><td>Date</td><td colspan="2">Statut</td></tr></thead>`
+    renderSymptomeBooleenOptionnel(symptome, data) {
+        const caption = `<caption><h3>${this.switchSymptomeTitre(
+            symptome
+        )}</h3></caption>`
+        const header = `<thead><tr><td>Date</td><td>Statut</td><td>Réponse</td></tr></thead>`
         const body = `<tbody>
             ${data
                 .map((etat) => this.renderSymptomeBooleenOptionnelTableCell(etat))
                 .join('\n')}
         </tbody>`
         return `<table>
+            ${caption}
             ${header}
             ${body}
         </table>`
-    }
-
-    renderSymptomeBooleenOptionnel(symptome, data) {
-        const title = `<h3>${this.switchSymptomeTitre(symptome)}</h3>`
-        return `${title}
-            ${this.renderSymptomeBooleenOptionnelTable(data)}
-        `
     }
 
     renderGraviteTableCell(etat, algoSuivi) {
         const gravite = `gravite_${algoSuivi.calculGravite(etat)}`
         return `<tr>
-            <td>${new Date(etat.date).toLocaleString()}</td>
+            <td>${this.renderDate(etat.date)}</td>
             <td>${this.renderIcone(gravite)}</td>
             <td>${this.switchGravite(gravite)}</td>
         </tr>`
     }
 
-    renderGraviteTable(data, algoSuivi) {
+    renderGravite() {
+        const algoSuivi = new AlgorithmeSuivi(this.profil)
+        const caption = `<caption><h2>Bilan de votre situation</h2></caption>`
         const header = `<thead><tr><td>Date</td><td colspan="2">Statut</td></tr></thead>`
         const body = `<tbody>
-            ${data
+            ${this.profil.suivi
                 .map((etat) => this.renderGraviteTableCell(etat, algoSuivi))
                 .join('\n')}
         </tbody>`
         return `<table>
+            ${caption}
             ${header}
             ${body}
         </table>`
-    }
-
-    renderGravite() {
-        const algoSuivi = new AlgorithmeSuivi(this.profil)
-        return `<h3>Bilan de votre situation</h3>
-            ${this.renderGraviteTable(this.profil.suivi, algoSuivi)}
-        `
     }
 
     renderHistorique() {
@@ -313,6 +310,7 @@ export default class SuiviView {
                 ${this.renderDebutSymptomes()}
                 ${this.renderDebutSuivi()}
                 ${this.renderGravite()}
+                <h2>Détail de vos symptômes</h2>
                 ${symptomesStatuts
                     .map((symptome) =>
                         this.renderSymptomeStatut(
