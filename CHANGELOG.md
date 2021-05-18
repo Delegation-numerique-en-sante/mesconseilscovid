@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-05-19
+
+* mise à jour des horaires de confinement
+
 ## 2021-05-18
 
 * ajout d’infos sur le « pass sanitaire »
