@@ -2,6 +2,8 @@
 
 ## 2021-05-20
 
+* ajout de deux pages thématiques (vaccination, foyer positif)
+* améliorations relatives à l’accessibilité du site
 * correctif : cliquer dans une page thématique amenait à une 404
 
 ## 2021-05-19
