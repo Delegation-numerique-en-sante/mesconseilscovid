@@ -7,10 +7,6 @@ export default function introduction(element, app) {
     hideElement(header.querySelector('.js-profil-full'))
 
     const emptyContainer = element.querySelector('#profils-cards-empty')
-    if (!emptyContainer) {
-        pageThematique(element, app)
-        return // Sortie rapide pour les pages thématiques.
-    }
 
     const fullContainer = element.querySelector('#profils-cards-full')
     const fullContainerList = fullContainer.querySelector('ul.cards')
@@ -48,18 +44,6 @@ export default function introduction(element, app) {
         )
         renderProfilCards(fullContainerList, noms, app)
     })
-}
-
-function pageThematique(element, app) {
-    const button = element.querySelector('.cta a.button')
-    if (button) {
-        button.addEventListener('click', function (event) {
-            event.preventDefault()
-            app.creerProfil('mes_infos').then(() => {
-                window.location = event.target.getAttribute('href')
-            })
-        })
-    }
 }
 
 function renderProfilCards(container, noms, app) {
