@@ -90,7 +90,7 @@ export function initRouter(app) {
                 fillProgress(element, pageName)
                 fillNavigation(element, pageName)
                 viewFunc(element)
-                trackPageView(pageName)
+                app.trackPageView(pageName)
                 const page = element.parentElement
                 page.classList.remove('loading')
                 page.classList.add('ready')
@@ -112,11 +112,6 @@ export function initRouter(app) {
                 },
             }
         )
-    }
-
-    function trackPageView(pageName) {
-        app.plausible('pageview')
-        app.atinternet(pageName)
     }
 
     // A11Y: mise à jour du titre dynamiquement.
