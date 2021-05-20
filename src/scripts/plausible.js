@@ -15,10 +15,25 @@ export function registerPlausible(window) {
             location.protocol +
             '//' +
             location.hostname +
-            location.pathname +
-            location.hash.slice(1) +
-            location.search
+            getLocationPathName() +
+            location.search +
+            getLocationHash()
         )
+    }
+
+    // Modifie les URLs de la Single Page App ("/#foo" -> "/foo")
+    // pour faciliter l’exploitation par Plausible
+    function getLocationPathName() {
+        if (location.pathname === '/') {
+            return '/' + location.hash.slice(1)
+        }
+        return location.pathname
+    }
+    function getLocationHash() {
+        if (location.pathname === '/') {
+            return ''
+        }
+        return location.hash
     }
 
     function trigger(eventName, options) {

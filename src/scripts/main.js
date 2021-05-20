@@ -11,23 +11,40 @@ import './polyfills/custom_event'
 import { register as registerTimeAgo } from 'timeago.js'
 
 import { bindFeedback, bindFeedbackContact, bindSuppressionTotale } from './actions'
+import { estPageThematique, pageThematique } from './page/thematique'
 import App from './app'
 
 var app = new App()
 window.app = app
 ;(function () {
+    if (estPageThematique()) {
+        pageThematique(app)
+    } else {
+        pageQuestionnaire(app)
+        activeLesMisesAJourAuto(app)
+    }
+    initLiensPiedDePage(app)
+})()
+
+function pageQuestionnaire(app) {
     app.init().then(() => {
         // Seulement pour la racine, sinon ça fait doublon.
         if (location.hash.slice(1) === '') {
             app.trackPageView(document.location.pathname)
         }
         app.router.resolve()
-        app.updater.checkForUpdatesEvery(10) // Minutes.
-        bindFeedback(document.querySelector('footer .feedback-component'), app)
-        bindFeedbackContact(document.querySelector('footer .js-feedback-contact'), app)
-        bindSuppressionTotale(document.querySelector('footer .js-suppression'), app)
     })
-})()
+}
+
+function activeLesMisesAJourAuto(app) {
+    app.updater.checkForUpdatesEvery(10) // Minutes.
+}
+
+function initLiensPiedDePage(app) {
+    bindFeedback(document.querySelector('footer .feedback-component'), app)
+    bindFeedbackContact(document.querySelector('footer .js-feedback-contact'), app)
+    bindSuppressionTotale(document.querySelector('footer .js-suppression'), app)
+}
 
 registerTimeAgo('fr', function (number, index) {
     return [

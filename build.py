@@ -155,6 +155,7 @@ def thematiques():
             "thematique.html",
             **{
                 "thematique": thematique,
+                "config_stats_url": responses["config_stats_url"],
                 "meta_pied_de_page": responses["meta_pied_de_page"],
             },
         )
