@@ -4,6 +4,7 @@
 
 * ajout de deux pages thématiques (vaccination, foyer positif)
 * améliorations relatives à l’accessibilité du site
+* mise à jour de la date de vaccination pour toutes les personnes majeures
 * correctif : cliquer dans une page thématique amenait à une 404
 
 ## 2021-05-19
