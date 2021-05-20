@@ -903,7 +903,7 @@ Le déploiement de la vaccination se fait en plusieurs phases :
    * les personnes de **16 et 17 ans** présentant un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) ;
    * les personnes au **second trimestre** de leur grossesse ;
    * les personnes qui vivent auprès d’une personne **sévèrement immunodéprimée.
-* <mark>à partir du **15 juin**</mark> : toutes les personnes de **18 ans et plus**.
+* <mark>à partir du **31 mai**</mark> : toutes les personnes de **18 ans et plus**.
 
 <span class="nouveau">nouveau</span> <mark>Créneaux de **dernière minute**</mark> : les personnes de 18 ans et plus, ne présentant pas de risque de forme grave, peuvent prendre rendez-vous **de la veille pour le lendemain**. Ils ne sont pas prioritaires.
 
