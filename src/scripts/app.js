@@ -148,6 +148,10 @@ export default class App {
         ]
         this.enregistrerProfilActuel()
     }
+    trackPageView(pageName) {
+        this.plausible('pageview')
+        this.atinternet(pageName)
+    }
     plausible(eventName) {
         const searchParams = new URLSearchParams(window.location.search)
         const options = {}
