@@ -183,7 +183,7 @@ Vous pouvez vous faire vacciner <mark>dès maintenant</mark> :
 
 Sinon, si vous avez **18 ans ou plus**, et que vous n’avez **pas de risque de forme grave** :
 
-  * vous pourrez vous faire vacciner <mark>à partir du **15 juin**</mark> ;
+  * vous pourrez vous faire vacciner <mark>à partir du **31 mai**</mark> ;
   * vous pouvez aussi prendre rendez-vous **de la veille pour le lendemain**, lorsqu’il reste des <mark>créneaux de **dernière minute**</mark>, mais vous ne serez pas prioritaire.
 
 </div>
