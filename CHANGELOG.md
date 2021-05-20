@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-05-20
+
+* correctif : cliquer dans une page thématique amenait à une 404
+
 ## 2021-05-19
 
 * mise à jour des horaires de confinement
