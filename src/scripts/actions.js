@@ -1,6 +1,7 @@
 import ICS from './ics'
 import { hideElement, showElement } from './affichage'
 import { getCurrentPageName } from './pagination'
+import { estPageThematique } from './page/thematique'
 
 export function bindCalendar(element, profil) {
     const ics = new ICS(navigator.appVersion)
@@ -69,10 +70,13 @@ export function bindFeedback(component, app) {
                 if (app.source == 'TousAntiCovid') {
                     message += ' #TAC'
                 }
+                const page = estPageThematique()
+                    ? document.location.pathname.slice(1)
+                    : getCurrentPageName()
                 const payload = {
                     kind: feedback,
                     message: message,
-                    page: getCurrentPageName(),
+                    page: page,
                 }
                 const request = new XMLHttpRequest()
                 request.open('POST', feedbackHost + '/feedback', true)
