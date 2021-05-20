@@ -168,6 +168,13 @@ export default class App {
         if (Object.keys(props).length > 0) {
             options['props'] = props
         }
-        return this._plausible(eventName, options)
+        try {
+            return this._plausible(eventName, options)
+        } catch (e) {
+            new Image().src =
+                document.body.dataset.statsUrl +
+                '/api/error?message=' +
+                encodeURIComponent(e.message)
+        }
     }
 }

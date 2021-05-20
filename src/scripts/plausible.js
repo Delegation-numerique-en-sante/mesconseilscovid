@@ -61,15 +61,5 @@ export function registerPlausible(window) {
         }
     }
 
-    try {
-        // Seulement pour la racine, sinon ça fait doublon.
-        if (location.hash.slice(1) === '') {
-            trigger('pageview')
-        }
-    } catch (e) {
-        new Image().src =
-            plausibleHost + '/api/error?message=' + encodeURIComponent(e.message)
-    }
-
     return trigger
 }

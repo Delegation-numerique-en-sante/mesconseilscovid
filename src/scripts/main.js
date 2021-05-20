@@ -17,6 +17,10 @@ var app = new App()
 window.app = app
 ;(function () {
     app.init().then(() => {
+        // Seulement pour la racine, sinon ça fait doublon.
+        if (location.hash.slice(1) === '') {
+            app.trackPageView(document.location.pathname)
+        }
         app.router.resolve()
         app.updater.checkForUpdatesEvery(10) // Minutes.
         bindFeedback(document.querySelector('footer .feedback-component'), app)
