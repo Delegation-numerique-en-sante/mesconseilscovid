@@ -53,7 +53,7 @@ export default function introduction(element, app) {
 function pageThematique(element, app) {
     const button = element.querySelector('.cta a.button')
     if (button) {
-        element.addEventListener('click', function (event) {
+        button.addEventListener('click', function (event) {
             event.preventDefault()
             app.creerProfil('mes_infos').then(() => {
                 window.location = event.target.getAttribute('href')
