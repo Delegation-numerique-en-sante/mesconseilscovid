@@ -24,7 +24,7 @@
     "parcel-plugin-sw-asset-urls": "^0.1.2",
     "playwright": "^1.11.1",
     "prettier": "^2.3.0",
-    "st": "^2.0.0"
+    "st": "^3.0.0"
   },
   "dependencies": {
     "core-js": "3.12.1",
