@@ -935,7 +935,7 @@ input[type='date']:focus,
 input[type='submit']:focus,
 select:focus {
     outline: none;
-    border: 3px solid #0aa2a3;
+    border: 3px solid #9a9aff;
 }
 
 a.button,
@@ -1133,7 +1133,7 @@ input[type='checkbox']:checked + label::after {
 }
 input[type='checkbox']:focus + label::before,
 input[type='radio']:focus + label::before {
-    border: 3px solid #0aa2a3;
+    border: 3px solid #9a9aff;
 }
 
 input[type='checkbox'],
@@ -1244,7 +1244,7 @@ a.no-type::after {
 }
 .conseils > details > summary:focus h3 {
     outline: 0;
-    border: 3px solid #0aa2a3;
+    border: 3px solid #9a9aff;
 }
 .conseils > details[open] > summary svg {
     transform: rotate(450deg);
