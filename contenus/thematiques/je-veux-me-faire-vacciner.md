@@ -84,7 +84,7 @@ Les schémas de vaccination des vaccins Moderna, Comirnaty (Pfizer) et AstraZene
 Il existe des exceptions :
 
 * une personne qui a eu la Covid il y a moins de 6 mois, ne nécessite qu’une seule dose de vaccin au lieu des 2 pour être vaccinée.
-* une personne fortement immunodéprimée recevra une troisième dose de vaccin, 4 semaines après la deuxième, pour être vaccinée. Si vous êtes concerné par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L'assurance maladie prendra directement contact avec les personnes concernées et dont elle a connaissance pour organiser ce rendez-vous. Pour plus d'informations à ce sujet, consultez [cette page dédiée](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
+* une personne fortement immunodéprimée recevra une troisième dose de vaccin, 4 semaines après la deuxième, pour augmenter ses chances de protection. Si vous êtes concerné·e par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
 
 Le vaccin Janssen ne nécessite qu’une seule dose.
 
