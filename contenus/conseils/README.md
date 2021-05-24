@@ -122,7 +122,7 @@ Pour [connaître l’ensemble des réouvertures au 19 mai](https://www.gouverne
 
 <div class="conseil conseil-jaune">
 
-Un **couvre-feu** s’applique en Guadeloupe de 22 h à 6 h du matin.
+Un **couvre-feu** s’applique en Guadeloupe de 19 h à 5 h du matin.
 
 </div>
 
