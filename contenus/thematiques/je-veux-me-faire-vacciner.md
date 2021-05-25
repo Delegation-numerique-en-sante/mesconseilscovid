@@ -99,7 +99,7 @@ Le vaccin Janssen ne nécessite qu’une seule dose.
 <div itemprop="text">
 
 **Oui.** Si vous avez eu la Covid : une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum 3 mois après la maladie, idéalement 6 mois pour une efficacité maximale.
-Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un délai de 6 mois et pas avant 3 mois après l’infection.
+Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un délai de 3 à 6 mois après l’infection.
 
 </div>
 </div>
