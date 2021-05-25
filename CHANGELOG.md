@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-05-25
+
+* précisions sur la vaccination lorsqu’on a été contaminé
+* précisions sur les voyages
+* améliorations relatives à l’accessibilité du site
+
 ## 2021-05-20
 
 * ajout de deux pages thématiques (vaccination, foyer positif)
