@@ -135,7 +135,9 @@ Même vacciné·e, en cas de contact à risque avec une personne positive à la 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-Pour voyager, certains pays pourront demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** (ou pass sanitaire) au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionel de santé qui vous a vacciné. Si elle ne comporte pas de QR code, vous pourrez en obtenir un à partir de la mi-mai. 
+Pour voyager, certains pays pourront notamment demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** (ou pass sanitaire) au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionel de santé qui vous a vacciné. Si elle ne comporte pas de QR code, vous pourrez bientôt en obtenir un via un téléservice de l’Assurance
+Maladie. En attendant, un test négatif récent vous permettra de voyager. Pour en savoir plus sur le pass sanitaire, rendez-vous sur [cette page dédiée](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions). 
+Nous vous conseillons de vérifier directement auprès des autorités du pays de destination les conditions d’accès sur leur territoire (tests, quarantaine, vaccin…), en consultant  par exemple le site internet de l’ambassade ou du consulat. 
 
 </div>
 </div>
@@ -243,7 +245,7 @@ Les schémas de vaccination des vaccins Moderna, Comirnaty (Pfizer) et AstraZene
 Il existe des exceptions :
 
 * une personne qui a eu la Covid il y a moins de 6 mois, ne nécessite qu’une seule dose de vaccin au lieu des 2 pour être vaccinée.
-* une personne fortement immunodéprimée recevra 3 doses de vaccins pour être vaccinée.
+* une personne fortement immunodéprimée recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné·e par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
 
 Le vaccin Janssen ne nécessite qu’une seule dose.
 
@@ -252,12 +254,13 @@ Le vaccin Janssen ne nécessite qu’une seule dose.
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">J’ai déjà eu la Covid, dois-je me faire vacciner ?</h2>
+<h2 itemprop="name">J’ai déjà eu la Covid, dois-je me faire vacciner (1<sup>re</sup> ou 2<sup>e</sup> dose) ?</h2>
 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
 **Oui.** Si vous avez eu la Covid : une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum 3 mois après la maladie, idéalement 6 mois pour une efficacité maximale.
+Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un délai de 3 à 6 mois après l’infection.
 
 </div>
 </div>
