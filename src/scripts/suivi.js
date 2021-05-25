@@ -210,7 +210,13 @@ export default class SuiviView {
         const caption = `<caption><h3>${this.switchSymptomeTitre(
             symptome
         )}</h3></caption>`
-        const header = `<thead><tr><td>Date</td><td>Statut</td><td>Réponse</td></tr></thead>`
+        const header = `<thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Statut</th>
+                <th scope="col">Réponse</th>
+            </tr>
+        </thead>`
         const body = `<tbody>
             ${data.map((etat) => this.renderSymptomeStatutTableCell(etat)).join('\n')}
         </tbody>`
@@ -233,7 +239,13 @@ export default class SuiviView {
         const caption = `<caption><h3>${this.switchSymptomeTitre(
             symptome
         )}</h3></caption>`
-        const header = `<thead><tr><td>Date</td><td colspan="2">Statut</td></tr></thead>`
+        const header = `<thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Statut</th>
+                <th scope="col">Réponse</th>
+            </tr>
+        </thead>`
         const body = `<tbody>
             ${data.map((etat) => this.renderSymptomeBooleenTableCell(etat)).join('\n')}
         </tbody>`
@@ -256,7 +268,13 @@ export default class SuiviView {
         const caption = `<caption><h3>${this.switchSymptomeTitre(
             symptome
         )}</h3></caption>`
-        const header = `<thead><tr><td>Date</td><td>Statut</td><td>Réponse</td></tr></thead>`
+        const header = `<thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Statut</th>
+                <th scope="col">Réponse</th>
+            </tr>
+        </thead>`
         const body = `<tbody>
             ${data
                 .map((etat) => this.renderSymptomeBooleenOptionnelTableCell(etat))
@@ -281,7 +299,12 @@ export default class SuiviView {
     renderGravite() {
         const algoSuivi = new AlgorithmeSuivi(this.profil)
         const caption = `<caption><h2>Bilan de votre situation</h2></caption>`
-        const header = `<thead><tr><td>Date</td><td colspan="2">Statut</td></tr></thead>`
+        const header = `<thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col" colspan="2">Statut</th>
+            </tr>
+        </thead>`
         const body = `<tbody>
             ${this.profil.suivi
                 .map((etat) => this.renderGraviteTableCell(etat, algoSuivi))
