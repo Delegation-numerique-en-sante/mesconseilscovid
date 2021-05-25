@@ -93,7 +93,7 @@ Le vaccin Janssen ne nécessite qu’une seule dose.
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">J’ai déjà eu la Covid, dois-je me faire vacciner (1ere ou 2e dose) ?</h2>
+<h2 itemprop="name">J’ai déjà eu la Covid, dois-je me faire vacciner (1<sup>re</sup> ou 2<sup>e</sup> dose) ?</h2>
 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
