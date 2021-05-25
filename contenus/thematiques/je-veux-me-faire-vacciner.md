@@ -98,7 +98,7 @@ Le vaccin Janssen ne nécessite qu’une seule dose.
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
     
- **Non.** Si vous êtes [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html) ou avez été alerté·e d'un contact à risque par l'application TousAntiCovid, vous ne devez pas vous faire vacciner. Il faut d'abord vous assurer que vous n'avez pas été contaminé en faisant un test 7 jours après votre dernier contact à risque. Si ce test de dépistage est négatif, alors vous pourrez vous faire vacciner. 
+ **Non.** Si vous êtes [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html) ou avez été alerté·e d’un contact à risque par l’application TousAntiCovid, **vous ne devez pas vous faire vacciner**. Il faut d’abord vous assurer que vous n’avez pas été contaminé·e en faisant un test 7 jours après votre dernier contact à risque. Si ce test de dépistage est négatif, alors vous pourrez vous faire vacciner.
     
 </div>
 </div>
