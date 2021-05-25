@@ -29,6 +29,6 @@ sniffio==1.2.0
 toml==0.10.2
 tornado==6.1
 tox==3.23.1
-virtualenv==20.4.6
+virtualenv==20.4.7
 watchdog==2.1.2
 zipp==3.4.1
