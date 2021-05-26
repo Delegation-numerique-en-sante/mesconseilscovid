@@ -24,6 +24,7 @@ window.app = app
         activeLesMisesAJourAuto(app)
     }
     initLiensPiedDePage(app)
+    initLiensRoleButton()
 })()
 
 function pageQuestionnaire(app) {
@@ -44,6 +45,24 @@ function initLiensPiedDePage(app) {
     bindFeedback(document.querySelector('footer .feedback-component'), app)
     bindFeedbackContact(document.querySelector('footer .js-feedback-contact'), app)
     bindSuppressionTotale(document.querySelector('footer .js-suppression'), app)
+}
+
+function initLiensRoleButton() {
+    document.addEventListener('keydown', (event) => {
+        // A11Y: lorsque le focus est sur un lien avec un role="button"
+        // on veut que la touche espace ait le même comportement que sur
+        // un <button> classique : que ça soumette l’action, d’où le clic.
+        if (event.code === 'Space') {
+            if (
+                document.activeElement.hasAttribute('role') &&
+                document.activeElement.getAttribute('role') === 'button'
+            ) {
+                event.preventDefault()
+                event.stopPropagation()
+                event.target.click()
+            }
+        }
+    })
 }
 
 registerTimeAgo('fr', function (number, index) {
