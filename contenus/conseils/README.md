@@ -114,8 +114,6 @@ Une personne ayant la Covid est **contagieuse 48 h avant** les premiers symptô
 
 Pour tout déplacement pendant le couvre-feu, une [attestation dérogatoire](https://media.interieur.gouv.fr/attestation-deplacement-derogatoire-covid-19/) et la justification du motif du déplacement sont obligatoires.
 
-Pour [connaître l’ensemble des réouvertures au 19 mai](https://www.gouvernement.fr/covid-19-ce-qui-change-au-19-mai-2021).
-
 
 
 ## [conseils_couvre_feu_971.md](conseils_couvre_feu_971.md)
@@ -963,6 +961,8 @@ Pour plus d’informations, vous pouvez consulter :
 
 * [la page dédiée du site du gouvernement](https://www.gouvernement.fr/info-coronavirus/confinement) ;
 * les règles spécifiques de votre **département** sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
+
+Qu’est-ce qui change le 19 mai, le 9 juin et le 30 juin ? Consultez le détail des [modalités et du calendrier des réouvertures](https://www.gouvernement.fr/les-modalites-et-le-calendrier-des-reouvertures).
 
 Pour vos **courses**, nous vous conseillons de :
 
