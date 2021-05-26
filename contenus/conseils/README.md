@@ -975,15 +975,15 @@ Pour vos **déplacements** internationaux :
   * toute entrée en France à partir d’un pays de l’Union européenne est conditionnée à la réalisation d’un test PCR, à l’exception des travailleurs transfrontaliers ; tous les déplacements en provenance et en direction des territoires ultramarins sont également soumis à la production de motifs impérieux ;
   * pour plus d’informations sur [vos déplacements ou voyages](https://www.interieur.gouv.fr/Actualites/Infos-pratiques/Attestation-de-deplacement-et-de-voyage) (choisir la section correspondant à votre situation).
 
-Les conditions d’entrée sur le territoire pour les **voyageurs en provenance des pays les plus à risque** (Brésil, Argentine, Chili, Afrique du sud, Inde) sont les suivantes :
+Les conditions d’entrée sur le territoire pour les **voyageurs en provenance des pays les plus à risque** (Afrique du Sud, Argentine, Bahreïn, Bangladesh, Brésil, Chili, Colombie, Costa Rica, Émirats arabes unis, Inde, Népal, Pakistan, Qatar, Sri Lanka, Turquie, Uruguay) sont les suivantes :
 
   * Tous les vols depuis le Brésil sont suspendus.
-  * Depuis le 24 avril, des **restrictions renforcées** ont été mises en place pour ces cinq pays :
+  * Des **restrictions renforcées** ont été mises en place pour ces pays :
     * Restriction des motifs impérieux.
     * Avant embarquement, renforcement du dispositif de test avec présentation d’un test PCR négatif de moins de 36 h.
     * À l’arrivée en France, réalisation d’un test antigénique systématique.
     * Mise en quarantaine stricte pendant 10 jours à l’arrivée sur arrêté préfectoral, avec restrictions des horaires de sortie (10 h-12 h).
-  * Pour plus d’informations : [Je pars à l’étranger](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/)
+  * Plus d’informations sont disponibles [sur diplomatie.gouv.fr](https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/informations-pratiques/article/coronavirus-covid-19).
 
 **Le « pass sanitaire »** :
 
