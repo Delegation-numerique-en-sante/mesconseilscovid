@@ -548,6 +548,8 @@ export default class AlgorithmeOrientation {
         } else {
             blockNames.push('conseils-couvre-feu-21h')
         }
+        blockNames.push('conseils-deplacements')
+        blockNames.push('conseils-pass-sanitaire')
         return blockNames
     }
 

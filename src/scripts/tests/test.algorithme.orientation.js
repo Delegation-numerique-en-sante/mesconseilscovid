@@ -886,6 +886,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-couvre-feu-21h',
+                'conseils-deplacements',
+                'conseils-pass-sanitaire',
             ])
         })
         it('À Mayotte, c’est un couvre-feu adapté', function () {
@@ -896,6 +898,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-couvre-feu-976',
+                'conseils-deplacements',
+                'conseils-pass-sanitaire',
             ])
         })
         it('À La Réunion, c’est un couvre-feu adapté', function () {
@@ -906,6 +910,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-couvre-feu-974',
+                'conseils-deplacements',
+                'conseils-pass-sanitaire',
             ])
         })
         it('En Guadeloupe, c’est un couvre-feu adapté', function () {
@@ -916,6 +922,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-couvre-feu-971',
+                'conseils-deplacements',
+                'conseils-pass-sanitaire',
             ])
         })
         it('En Martinique, c’est un couvre-feu adapté', function () {
@@ -926,6 +934,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-couvre-feu-972',
+                'conseils-deplacements',
+                'conseils-pass-sanitaire',
             ])
         })
         it('En Guyane, c’est un couvre-feu adapté', function () {
@@ -936,6 +946,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-couvre-feu-973',
+                'conseils-deplacements',
+                'conseils-pass-sanitaire',
             ])
         })
         it('À département inconnu, c’est le couvre-feu 21h', function () {
@@ -946,6 +958,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
                 'conseils-couvre-feu-21h',
+                'conseils-deplacements',
+                'conseils-pass-sanitaire',
             ])
         })
     })

@@ -63,7 +63,7 @@ describe('Profils', function () {
             assert.equal(await titre.innerText(), 'Conseils pour « Mamie »') // &nbsp; autour du nom
 
             // On rend la localisation visible.
-            await page.click('#page.ready #conseils-vie-quotidienne h3')
+            await page.click('#page.ready #conseils-deplacements h3')
 
             // On retrouve le département de résidence.
             let residence = await page.waitForSelector('#page.ready #nom-departement')
