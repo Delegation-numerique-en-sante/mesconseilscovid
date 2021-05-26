@@ -66,9 +66,6 @@ header {
     padding: 0 15px;
     background: white;
 }
-header:focus {
-    outline: 1px dotted gray;
-}
 header section {
     display: flex;
     align-items: center;
@@ -974,16 +971,6 @@ select {
     margin-top: 0;
 }
 
-a.button:focus,
-button.button:focus,
-input[type='text']:focus,
-input[type='date']:focus,
-input[type='submit']:focus,
-select:focus {
-    outline: none;
-    border: 3px solid #9a9aff;
-}
-
 a.button,
 button.button,
 input[type='submit'] {
@@ -1179,7 +1166,7 @@ input[type='checkbox']:checked + label::after {
 }
 input[type='checkbox']:focus + label::before,
 input[type='radio']:focus + label::before {
-    border: 3px solid #9a9aff;
+    border: 3px solid black;
 }
 
 input[type='checkbox'],
@@ -1271,7 +1258,6 @@ a.no-type::after {
     padding: 1rem 2rem;
 }
 .conseils > details > summary {
-    outline: 0;
     list-style: none;
 }
 .conseils > details:not([open]) > :not(summary) {
@@ -1284,12 +1270,7 @@ a.no-type::after {
 }
 .conseils > details:hover,
 .conseils > details[open] {
-    outline: 0;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8);
-}
-.conseils > details > summary:focus h3 {
-    outline: 0;
-    border: 3px solid #9a9aff;
 }
 .conseils > details[open] > summary svg {
     transform: rotate(450deg);
