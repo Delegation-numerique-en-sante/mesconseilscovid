@@ -1,6 +1,6 @@
 Pour plus d’informations, vous pouvez consulter :
 
-* [la page dédiée du site du gouvernement](https://www.gouvernement.fr/info-coronavirus/confinement) ;
+* [la page dédiée au couvre-feu sur le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/couvre-feu) ;
 * les règles spécifiques de votre **département** sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
 
 Qu’est-ce qui change le 19 mai, le 9 juin et le 30 juin ? Consultez le détail des [modalités et du calendrier des réouvertures](https://www.gouvernement.fr/les-modalites-et-le-calendrier-des-reouvertures).
