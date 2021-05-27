@@ -124,7 +124,31 @@ Même vacciné·e, en cas de contact à risque avec une personne positive à la 
 <div itemprop="text">
 
 **La vaccination ne rend pas malade.** Si vous avez réalisé un test PCR et qu’il est positif, il est probable que vous ayez été contaminé avant la vaccination (entre les deux doses ou juste après la 2<sup>e</sup> dose), ou avant que la protection soit maximale.
+    
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
+<h2 itemprop="name">J’ai perdu ou je n’ai pas reçu d'attestation de vaccination, comment faire ?</h2>
+
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+    
+Grâce à votre numéro de sécurité sociale, vous pouvez télécharger un nouveau certificat de vaccination sur le téléservice de l’Assurance maladie : [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
+    
+ </div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+<h2 itemprop="name">Mon certificat de vaccination ne comporte pas de QR code, comment faire ?</h2>
+
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+
+ Vous pouvez télécharger un nouveau certificat depuis [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/). 
+ 
 </div>
 </div>
 </div>
@@ -135,7 +159,9 @@ Même vacciné·e, en cas de contact à risque avec une personne positive à la 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-Pour voyager, certains pays pourront notamment demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** (ou pass sanitaire) au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionel de santé qui vous a vacciné. Si elle ne comportait pas de QR code, vous pouvez télécharger un nouveau certificat depuis [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/). En attendant, un test négatif récent vous permettra de voyager. Pour en savoir plus sur le pass sanitaire, rendez-vous sur [cette page dédiée](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions).
+Pour voyager, certains pays pourront notamment demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** (ou pass sanitaire) au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionel de santé qui vous a vacciné. 
+
+En attendant la mise en application de ce dispositif, un test négatif récent vous permettra de voyager. Pour en savoir plus sur le **pass sanitaire**, rendez-vous sur [cette page dédiée](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions).
 
 Nous vous conseillons de vérifier directement auprès des autorités du pays de destination les conditions d’accès sur leur territoire (tests, quarantaine, vaccin…), en consultant  par exemple le site internet de l’ambassade ou du consulat. 
 
