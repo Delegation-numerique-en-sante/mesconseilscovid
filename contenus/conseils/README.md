@@ -104,6 +104,15 @@ Une personne ayant la Covid est **contagieuse 48 h avant** les premiers symptô
 
 
 
+## [conseils_couvre_feu.md](conseils_couvre_feu.md)
+
+Pour plus d’informations, vous pouvez consulter :
+
+* [la page dédiée au couvre-feu sur le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/couvre-feu) ;
+* les règles spécifiques de votre **département** sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
+
+
+
 ## [conseils_couvre_feu_21h.md](conseils_couvre_feu_21h.md)
 
 <div class="conseil conseil-jaune">
@@ -200,11 +209,6 @@ Décrypter les fausses informations ? [Désintox : la parole à la science](htt
 
 
 ## [conseils_deplacements.md](conseils_deplacements.md)
-
-Pour plus d’informations, vous pouvez consulter :
-
-* [la page dédiée au couvre-feu sur le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/couvre-feu) ;
-* les règles spécifiques de votre **département** sur <a href="#conseils-departement" id="lien-prefecture">le site de votre préfecture</a>.
 
 #### À l’international
 
