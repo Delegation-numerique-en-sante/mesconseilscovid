@@ -15,7 +15,7 @@ function boutonBasculeVersMonProfil(app) {
             app.creerProfil('mes_infos').then(() => {
                 window.location = event.target.getAttribute('href')
             })
-            app.plausible('Questionnaire commencé par thématique')
+            app.plausible('Je veux des conseils personnalisés')
         })
     }
 }
