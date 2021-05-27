@@ -396,9 +396,11 @@ Si vous respectez ces indications, il n’est **pas nécessaire de réaliser un 
 
 ## [conseils_pass_sanitaire.md](conseils_pass_sanitaire.md)
 
-Un « pass sanitaire » sera disponible à partir du 9 juin en format papier ou numérique sur votre application TousAntiCovid (rubrique « Mon carnet »). Les documents faisant office de « pass sanitaire » seront, au choix :
+Un « pass sanitaire » sera disponible à partir du 9 juin en format papier ou numérique sur votre application TousAntiCovid (rubrique « Mon carnet »).
 
-  * la preuve de vaccination complète (certificat de vaccination) ;
+Les documents faisant office de « pass sanitaire » seront, au choix :
+
+  * la preuve de vaccination complète (certificat remis lors de votre vaccination, ou téléchargeable depuis [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/)) ;
   * un test PCR ou antigénique négatif de moins de 72 heures ;
   * un test PCR ou antigénique positif de plus de 15 jours et de moins de 2 mois (certificat de rétablissement).
 
