@@ -120,11 +120,6 @@ def service_worker():
         "logo-favicon.png",
         "service-worker.js",
         "version.json",
-        "cas-contact-a-risque.html",
-        "je-suis-vaccine.html",
-        "je-veux-me-faire-vacciner.html",
-        "je-vis-avec-personne-covid-positive.html",
-        "pass-sanitaire-qr-code-voyages.html",
         "sitemap.xml",
     }
 
