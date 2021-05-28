@@ -124,6 +124,7 @@ def service_worker():
         "je-suis-vaccine.html",
         "je-veux-me-faire-vacciner.html",
         "je-vis-avec-personne-covid-positive.html",
+        "pass-sanitaire-qr-code-voyages.html",
         "sitemap.xml",
     }
 

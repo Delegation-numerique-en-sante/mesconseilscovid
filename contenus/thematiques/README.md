@@ -445,7 +445,7 @@ Si votre logement ne permet pas d’isoler la personne positive (adulte) du rest
 
 <big>Pass sanitaire, certificat de vaccination, voyage, QR code… MesConseilsCovid vous propose une synthèse des informations importantes. Vacciné⸱e ou non, ces informations peuvent vous intéresser.</big>
 
-## Le Pass sanitaire
+## Le Pass sanitaire (en France) ou <span lang="en">“Digital Covid Certificate”</span> (en Union européenne).
 
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
@@ -454,7 +454,7 @@ Si votre logement ne permet pas d’isoler la personne positive (adulte) du rest
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-C’est une preuve de **non-contamination ou d’immunité** à la Covid présentée sous forme de QR code (code barre). 
+C’est une preuve de **non-contamination ou d’immunité** à la Covid présentée sous forme de QR code (code barre). Au niveau européen, le Pass sanitaire est intitulé <span lang="en">“Digital Covid Certificate”</span>.
 
 </div>
 </div>
@@ -467,8 +467,24 @@ C’est une preuve de **non-contamination ou d’immunité** à la Covid présen
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-Il permettra d’authentifier les informations que vous présenterez lors d’un contrôle.
-Ce dispositif est en construction, son application n’est pas encore généralisée.
+Il permet d’authentifier votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) que vous présentez lors d’un contrôle.
+
+* En France : il est obligatoire pour participer à des évènements rassemblant plus de 1000 personnes (festivals, conférences, salons,…).
+* En Union européenne : il facilitera les voyages entre les pays membres.
+
+</div>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+<h3 itemprop="name">Le « Pass sanitaire » ou le <span lang="en">“Digital Covid Certificate”</span> sont-ils déjà en application ?</h3>
+
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+ 
+En France, le « Pass sanitaire » sera en application à partir du 3 juin. 
+L’utilisation du « Pass sanitaire » en Union européenne, sous le nom <span lang="en">“Digital Covid Certificate”</span> débutera à partir de juillet.
 
 </div>
 </div>
