@@ -458,7 +458,7 @@ Si votre logement ne permet pas d’isoler la personne positive (adulte) du rest
 
 ## [pass-sanitaire-qr-code-voyages.md](pass-sanitaire-qr-code-voyages.md)
 
-# Pass Sanitaire, QR Code, voyages, que faut-il retenir ?
+# Pass sanitaire, QR code, voyages, que faut-il retenir ?
 
 <div class="illustration">
     <img src="illustrations/pass_sanitaire.svg" alt="">
@@ -477,7 +477,7 @@ Si votre logement ne permet pas d’isoler la personne positive (adulte) du rest
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-C’est une preuve de **non-contamination ou d’immunité** à la Covid présentée sous forme de QR code (code barre). Au niveau européen, le Pass sanitaire est intitulé <span lang="en">“Digital Covid Certificate”</span>.
+C’est une preuve de **non-contamination ou d’immunité** à la Covid présentée sous forme de QR code (code-barres). Au niveau européen, le Pass sanitaire est intitulé <span lang="en">“Digital Covid Certificate”</span>.
 
 </div>
 </div>
@@ -490,9 +490,9 @@ C’est une preuve de **non-contamination ou d’immunité** à la Covid présen
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-Il permet d’authentifier votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) que vous présentez lors d’un contrôle.
+Il permet d’authentifier les informations sur votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) lors d’un contrôle.
 
-* En France : il est obligatoire pour participer à des évènements rassemblant plus de 1000 personnes (festivals, conférences, salons,…).
+* En France : il est obligatoire pour participer à des évènements rassemblant plus de 1000 personnes (festivals, conférences, salons…).
 * En Union européenne : il facilitera les voyages entre les pays membres.
 
 </div>
@@ -564,7 +564,7 @@ Un QR code est un code-barre facile à lire par un téléphone mobile (<span lan
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-**Non.** Vous pourrez à terme présenter votre « Pass sanitaire » sous la forme que vous préférez :
+**Non.** Vous pourrez à terme présenter votre « Pass sanitaire » (et plus tard votre <span lang="en">“Digital Covid Certificate”</span>) sous la forme que vous préférez :
 
 - **au format papier** : en présentant votre justificatif sur lequel figure un QR code**.
 - **dans l’application TousAntiCovid** : en numérisant votre justificatif grâce au QR code, dans la rubrique carnet. Pour le moment, ce format n’est pas encore disponible pour les voyages internationaux.
