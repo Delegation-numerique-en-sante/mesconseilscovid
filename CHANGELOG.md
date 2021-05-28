@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-05-28
+
+* ajout d’une page thématique relative au Pass sanitaire
+* mise à jour des conseils (couvre-feu, vaccination, déplacements)
+* améliorations relatives à l’accessibilité du site
+
 ## 2021-05-25
 
 * précisions sur la vaccination lorsqu’on a été contaminé
