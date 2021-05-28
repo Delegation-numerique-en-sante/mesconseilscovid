@@ -124,6 +124,18 @@ Même vacciné·e, en cas de contact à risque avec une personne positive à la 
 <div itemprop="text">
 
 **La vaccination ne rend pas malade.** Si vous avez réalisé un test PCR et qu’il est positif, il est probable que vous ayez été contaminé avant la vaccination (entre les deux doses ou juste après la 2<sup>e</sup> dose), ou avant que la protection soit maximale.
+
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+<h2 itemprop="name">J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?</h2>
+
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+
+Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un **délai de 3 à 6 mois** après l’infection.
     
 </div>
 </div>
@@ -292,13 +304,24 @@ Le vaccin Janssen ne nécessite qu’une seule dose.
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">J’ai déjà eu la Covid, dois-je me faire vacciner (1<sup>re</sup> ou 2<sup>e</sup> dose) ?</h2>
+<h2 itemprop="name">J’ai déjà eu la Covid, dois-je me faire vacciner (1<sup>re</sup> dose) ?</h2>
 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
 **Oui.** Si vous avez eu la Covid : une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum 3 mois après la maladie, idéalement 6 mois pour une efficacité maximale.
-Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un délai de 3 à 6 mois après l’infection.
+    
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+<h2 itemprop="name">J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?</h2>
+
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+
+Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un **délai de 3 à 6 mois** après l’infection.
 
 </div>
 </div>
