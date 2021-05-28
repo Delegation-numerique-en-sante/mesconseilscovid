@@ -8,7 +8,7 @@
 
 <big>Pass sanitaire, certificat de vaccination, voyage, QR code… MesConseilsCovid vous propose une synthèse des informations importantes. Vacciné⸱e ou non, ces informations peuvent vous intéresser.</big>
 
-## Le Pass sanitaire (en France) ou Digital Covid Certificate (en Union-Européenne).
+## Le Pass sanitaire (en France) ou <span lang="en">“Digital Covid Certificate”</span> (en Union européenne).
 
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
@@ -17,7 +17,7 @@
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-C’est une preuve de **non-contamination ou d’immunité** à la Covid présentée sous forme de QR code (code barre). Au niveau européen, le Pass sanitaire est intitulé Digital Covid Certificate.
+C’est une preuve de **non-contamination ou d’immunité** à la Covid présentée sous forme de QR code (code barre). Au niveau européen, le Pass sanitaire est intitulé <span lang="en">“Digital Covid Certificate”</span>.
 
 </div>
 </div>
@@ -30,10 +30,10 @@ C’est une preuve de **non-contamination ou d’immunité** à la Covid présen
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-Il permet d’authentifier votre statut par rapport à la Covid-19 (immunisé, vacciné, non-contaminé) que vous présentez lors d’un contrôle.
+Il permet d’authentifier votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) que vous présentez lors d’un contrôle.
 
-* En France: il est obligatoire pour participer à des évènements rassemblant plus de 1000 personnes (festivals, conférences, salons...).
-* En Union-Européenne: il facilitera les voyages entre les pays membres.
+* En France : il est obligatoire pour participer à des évènements rassemblant plus de 1000 personnes (festivals, conférences, salons,…).
+* En Union européenne : il facilitera les voyages entre les pays membres.
 
 </div>
 </div>
