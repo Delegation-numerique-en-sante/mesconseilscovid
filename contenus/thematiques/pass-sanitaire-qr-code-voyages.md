@@ -8,7 +8,7 @@
 
 <big>Pass sanitaire, certificat de vaccination, voyage, QR code… MesConseilsCovid vous propose une synthèse des informations importantes. Vacciné⸱e ou non, ces informations peuvent vous intéresser.</big>
 
-## Le Pass sanitaire (en France) ou Digital Green Certificate (en Union-Européenne).
+## Le Pass sanitaire (en France) ou Digital Covid Certificate (en Union-Européenne).
 
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
@@ -17,7 +17,7 @@
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-C’est une preuve de **non-contamination ou d’immunité** à la Covid présentée sous forme de QR code (code barre). Au niveau européen, le Pass sanitaire est intitulé Digital Green Certificate
+C’est une preuve de **non-contamination ou d’immunité** à la Covid présentée sous forme de QR code (code barre). Au niveau européen, le Pass sanitaire est intitulé Digital Covid Certificate.
 
 </div>
 </div>
