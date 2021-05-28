@@ -445,7 +445,7 @@ Si votre logement ne permet pas d’isoler la personne positive (adulte) du rest
 
 <big>Pass sanitaire, certificat de vaccination, voyage, QR code… MesConseilsCovid vous propose une synthèse des informations importantes. Vacciné⸱e ou non, ces informations peuvent vous intéresser.</big>
 
-## Le Pass sanitaire (en France) ou <span lang="en">“Digital Covid Certificate”</span> (en Union européenne).
+## Le Pass sanitaire (en France) ou <span lang="en">“Digital Covid Certificate”</span> (en Union européenne)
 
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
@@ -483,8 +483,9 @@ Il permet d’authentifier votre statut par rapport à la Covid (immunisé, vacc
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
  
-En France, le « Pass sanitaire » sera en application à partir du 3 juin. 
-L’utilisation du « Pass sanitaire » en Union européenne, sous le nom <span lang="en">“Digital Covid Certificate”</span> débutera à partir de juillet.
+**En France**, le « Pass sanitaire » sera en application à partir du **3 juin**.
+
+L’utilisation du « Pass sanitaire » en **Union européenne**, sous le nom <span lang="en">“Digital Covid Certificate”</span> débutera **à partir de juillet**.
 
 </div>
 </div>
@@ -505,6 +506,11 @@ L’utilisation du « Pass sanitaire » en Union européenne, sous le nom <spa
 
 **Attention**, en fonction de chaque situation un justificatif précis pourra vous être demandé. Vérifiez bien quel justificatif vous concerne.
 
+Pour savoir comment importer (scanner) votre QR code dans TousAntiCovid :
+
+- [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-vaccination-TJLG8dT8fs/Steps/347514) si c’est un certificat de vaccination.
+- [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-test-siCsOIDGCZ/Steps/320836) si c’est un test de dépistage antigénique ou RT-PCR.
+
 </div>
 </div>
 </div>
@@ -516,9 +522,13 @@ L’utilisation du « Pass sanitaire » en Union européenne, sous le nom <spa
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-Un QR code est un code-barre facile à lire par un téléphone mobile (smartphone). Il contient des informations (statut vaccinal, nom, prénom, résultat du test de dépistage, etc.). Voici à quoi cela ressemble :
+Un QR code est un code-barre facile à lire par un téléphone mobile (<span lang="en">smartphone</span>). Il contient des informations (statut vaccinal, nom, prénom, résultat du test de dépistage, etc.). Voici à quoi cela ressemble :
 
-TODO
+<div class="illustration">
+    <img src="exemple_qr_code_vers_tousanticovid.png"
+        loading="lazy"
+        alt="Exemple de QR code pointant vers TousAntiCovid.">
+</div>
 
 </div>
 </div>
@@ -526,7 +536,7 @@ TODO
 
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h3 itemprop="name">Est-ce que je dois obligatoirement avoir un smartphone pour utiliser le « Pass sanitaire » ?</h3>
+<h3 itemprop="name">Est-ce que je dois obligatoirement avoir un <span lang="en">smartphone</span> pour utiliser le « Pass sanitaire » ou <span lang="en">“Digital Covid Certificate”</span> ?</h3>
 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
@@ -570,26 +580,6 @@ Grâce à votre numéro de sécurité sociale, vous pouvez télécharger une **n
 </div>
 </div>
 
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-<h3 itemprop="name">Quelles sont les dates importantes pour le « Pass sanitaire » ?</h3>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
-Dates clés concernant le dispositif « Pass sanitaire » (sous réserve de changement) :
-
-- 9 juin : application prévue du « Pass sanitaire » sur le territoire français ;
-- à partir de début juillet : utilisation du « Pass sanitaire » pour les déplacements au sein de l’Union-Européenne. 
-
-Pour plus d’informations : 
-- La [page dédiée](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions) du Gouvernement. 
-
-</div>
-</div>
-</div>
-
-
 
 ## Les voyages
 
@@ -600,7 +590,7 @@ Pour plus d’informations :
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-**Le dispositif pass sanitaire (QR code) n’est pas encore en application.** Il le sera mis en place au sein de l’Union-Européenne à partir de juillet. 
+**Le dispositif <span lang="en">“Digital Covid Certificate”</span> (QR code) n’est pas encore en application.** Il sera mis en place au sein de l’Union européenne à partir de juillet. 
 
 En attendant, **nous vous recommandons vivement de vous renseigner auprès des autorités de votre pays de destination pour en connaître les conditions d’accès.** Vous trouverez ces informations, sur le site internet de son ambassade ou en téléphonant directement. 
 
@@ -617,7 +607,7 @@ En attendant, **nous vous recommandons vivement de vous renseigner auprès des a
 
 **Non.** La plupart des pays exigent la présentation d’un test RT-PCR négatif récent (72 h), même pour les personnes vaccinées. 
 
-**Attention**, pour le moment la version numérisée grâce au QR code (dans TousAntiCovid) n’est pas disponible pour les voyages internationaux. 
+**Attention**, pour les voyages au sein de l’Union européenne, un <span lang="en">“Digital Covid Certificate”</span> ne sera disponible qu’à partir de juillet.
 
 </div>
 </div>
@@ -632,7 +622,7 @@ En attendant, **nous vous recommandons vivement de vous renseigner auprès des a
 
 La plupart des pays exigent la présentation d’un **test RT-PCR négatif récent (72 h)**. Nous vous conseillons de vous renseigner auprès des autorités de votre pays de destination.
 
-**Attention**, pour le moment la version numérisée grâce au QR code (dans TousAntiCovid) n’est pas disponible pour les voyages internationaux.
+**Attention**, pour les voyages au sein de l’Union européenne, un <span lang="en">“Digital Covid Certificate”</span> ne sera disponible qu’à partir de juillet.
 
 </div>
 </div>
@@ -646,7 +636,7 @@ La plupart des pays exigent la présentation d’un **test RT-PCR négatif réce
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-**Non.** Vacciné⸱e ou non, les voyages vers la plupart des destinations hors Union-Européeenne, à partir de la France métropolitaine, sont soumis à la présentation d’un **motif impérieux**. 
+**Non.** Vacciné⸱e ou non, les voyages vers la plupart des destinations hors Union européeenne, à partir de la France métropolitaine, sont soumis à la présentation d’un **motif impérieux**.
 
 Des mesures sanitaires (test RT-PCR, quarantaine, etc.) plus ou moins contraignantes continuent d’être appliquées pour tous les déplacements internationaux, **à l’aller et au retour** en France métropolitaine. 
 
@@ -664,9 +654,9 @@ Pour savoir quelles mesures s’appliquent à votre situation, rendez vous sur [
 <div itemprop="text">
 
 
-La Corse : un test PCR négatif de moins de 72 h est exigé pour tout voyage vers la Corse, pour en savoir plus, rendez-vous sur le [site de l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-test-pcr-obligatoire-pour-se-rendre-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans votre application TousAntiCovid.
+**Pour la Corse** : un test PCR négatif de moins de 72 h est exigé pour tout voyage vers la Corse, pour en savoir plus, rendez-vous sur le [site de l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-test-pcr-obligatoire-pour-se-rendre-en-corse). Notez que pour cette destination, **vous pouvez présenter votre test sous format numérique** dans votre application TousAntiCovid.
 
-Outre-mer : [consultez ici](https://www.gouvernement.fr/info-coronavirus/outre-mer) la liste des mesures en vigueur selon votre destination.
+**Pour l’Outre-mer** : [consultez ici](https://www.gouvernement.fr/info-coronavirus/outre-mer) la liste des mesures en vigueur selon votre destination.
 
 </div>
 </div>
@@ -675,8 +665,10 @@ Outre-mer : [consultez ici](https://www.gouvernement.fr/info-coronavirus/outre-
 
 ## Vous avez encore des questions ?
 
-* J’ai des symptômes de la Covid, quelles sont les recommandations ?
-* J’ai des effets secondaires prolongés, qui contacter ?
+Consulter nos pages thématiques :
+
+* [Je souhaite me faire vacciner, que faut-il savoir ?](/je-veux-me-faire-vacciner.html)
+* [Je suis vacciné·e, que faut-il savoir ?](/je-suis-vaccine.html)
 
 <section class="cta">
     <h3>Obtenez des conseils adaptés à votre situation en quelques clics</h3>

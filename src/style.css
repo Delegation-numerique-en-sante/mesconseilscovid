@@ -1380,6 +1380,7 @@ a.no-type::after {
     margin-bottom: 1.2rem;
     font-size: 150%;
     color: black;
+    display: block;
 }
 .thematique .illustration {
     max-width: 8rem;
