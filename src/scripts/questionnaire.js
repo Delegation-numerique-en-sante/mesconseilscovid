@@ -1,5 +1,5 @@
 export function beforeConseils(profil, questionnaire) {
-    if (!profil.isComplete()) return questionnaire.checkPathTo('conseils', profil)
+    if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
 }
 
 export function beforeSuiviIntroduction(profil, questionnaire) {

@@ -1,9 +1,7 @@
 import { showMeOrThem } from './affichage'
 
 export function getCurrentPageName() {
-    var hash = document.location.hash
-    var fragment = hash ? hash.slice(1) : ''
-    return fragment.split('?')[0]
+    return document.location.pathname.slice(1)
 }
 
 export function loadPage(pageName, app) {

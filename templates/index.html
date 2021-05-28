@@ -40,7 +40,7 @@
             <img id="marianne" src="marianne.png"
                 alt="Ministère des Solidarités et de la Santé"
                 width="100" height="78">
-            <a id="logo" href="" title="Aller à l’accueil">
+            <a id="logo" href="/introduction" data-navigo title="Aller à l’accueil">
                 <img id="logo-carre" src="logo-carre.png"
                     alt=""
                     width="75" height="75"
@@ -112,12 +112,14 @@
                 <li class="profil-empty">
                     <a class="button button-full-width"
                         data-set-profil="mes_infos"
-                        href="#vaccins"
+                        href="/vaccins"
+                        data-navigo
                         >Des conseils pour moi</a>
                 </li>
                 <li class="profil-empty">
                     <a class="button button-full-width button-outline js-profil-new"
-                        href="#nom"
+                        href="/nom"
+                        data-navigo
                         >Des conseils pour un·e proche</a>
                 </li>
             </ul>
@@ -974,7 +976,7 @@
                             <div class="timeline-content">
                                 <h3 class="timeline-date"></h3>
                                 <p class="timeline-texte">
-                                    <span class="suivi-a-faire"><a href="#suivisymptomes">Suivez l’évolution de vos symptômes</a> pour mettre à jour votre date de sortie d’isolement.</span>
+                                    <span class="suivi-a-faire"><a href="/suivisymptomes" data-navigo>Suivez l’évolution de vos symptômes</a> pour mettre à jour votre date de sortie d’isolement.</span>
                                     <span class="suivi-fait" hidden>L’évolution de vos symptômes depuis hier a bien été enregistrée. <span aria-hidden="true">✅</span></span>
                                 </p>
                             </div>
@@ -985,7 +987,7 @@
                             </div>
                             <div class="timeline-content">
                                 <p class="timeline-date">Demain</p>
-                                <p class="timeline-texte">Revenez pour <a href="#suivisymptomes">suivre l’évolution de vos symptômes</a> et mettre à jour votre date de sortie d’isolement.</p>
+                                <p class="timeline-texte">Revenez pour <a href="/suivisymptomes" data-navigo>suivre l’évolution de vos symptômes</a> et mettre à jour votre date de sortie d’isolement.</p>
                             </div>
                         </div>
                         <div class="timeline-block timeline-fin">
@@ -1035,7 +1037,7 @@
                             </div>
                             <div class="timeline-content">
                                 <p class="timeline-date">Demain</p>
-                                <p class="timeline-texte">Si des symptômes apparaissent, vous pourrez <a href="#suivisymptomes">suivre leur évolution</a>.</p>
+                                <p class="timeline-texte">Si des symptômes apparaissent, vous pourrez <a href="/suivisymptomes" data-navigo>suivre leur évolution</a>.</p>
                             </div>
                         </div>
                         <div class="timeline-block timeline-fin">
@@ -1392,7 +1394,7 @@
                 {{ meta_et_ensuite }}
                 <div class="form-controls">
                     <div class="button-full-width">
-                        <a class="button button-outline button-full-width" href="#suiviintroduction">Démarrer mon suivi</a>
+                        <a class="button button-outline button-full-width" href="/suiviintroduction" data-navigo>Démarrer mon suivi</a>
                     </div>
                     <a class="premiere-question button back-button button-outline button-full-width" href="#">Modifier mes réponses</a>
                 </div>
@@ -1403,7 +1405,7 @@
             <div class="conseils">
                 {{ meta_pour_finir }}
                 <div class="button-full-width">
-                    <a class="button button-outline button-full-width" href="#introduction">Revenir à l’accueil</a>
+                    <a class="button button-outline button-full-width" href="/introduction" data-navigo>Revenir à l’accueil</a>
                 </div>
             </div>
         </div>
@@ -1577,7 +1579,7 @@
     <div id="pediatrie-block" class="block">
         {{ meta_pédiatrie }}
         <div class="js-profil-full form-controls" hidden>
-            <a class="button button-full-width" href="#conseils">Aller à mes conseils</a>
+            <a class="button button-full-width" href="/conseils" data-navigo>Aller à mes conseils</a>
             <a class="premiere-question button button-outline back-button button-full-width" href="#">Modifier mes réponses</a>
         </div>
         <div class="js-profil-empty">
@@ -1590,7 +1592,7 @@
     <div id="conditions-utilisation-block" class="block">
         {{ meta_conditions_utilisation }}
         <div class="js-profil-full form-controls" hidden>
-            <a class="button button-full-width" href="#conseils">Retourner à mes conseils</a>
+            <a class="button button-full-width" href="/conseils" data-navigo>Retourner à mes conseils</a>
             <a class="premiere-question button button-outline button-full-width" href="#">Modifier mes réponses</a>
         </div>
         <div class="js-profil-empty">

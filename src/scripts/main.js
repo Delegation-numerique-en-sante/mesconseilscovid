@@ -29,8 +29,8 @@ window.app = app
 function pageQuestionnaire(app) {
     app.init().then(() => {
         // Seulement pour la racine, sinon ça fait doublon.
-        if (location.hash.slice(1) === '') {
-            app.trackPageView(document.location.pathname)
+        if (location.pathname === '/') {
+            app.trackPageView('')
         }
         app.router.resolve()
     })

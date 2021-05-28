@@ -29,7 +29,7 @@ La vaccination prémunit contre les formes graves et symptomatiques de la maladi
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-Même vacciné·e, en cas de contact à risque avec une personne positive à la Covid, vous êtes considéré·e comme étant « [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#introduction) » : il faut **vous faire tester et vous isoler** immédiatement.
+Même vacciné·e, en cas de contact à risque avec une personne positive à la Covid, vous êtes considéré·e comme étant « [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html/introduction) » : il faut **vous faire tester et vous isoler** immédiatement.
 
 </div>
 </div>
@@ -118,7 +118,7 @@ Nous vous conseillons de vérifier directement auprès des autorités du pays de
 
 <section class="cta">
     <h3>Obtenez des conseils adaptés à votre situation en quelques clics</h3>
-    <a class="button" href="/#conseils">Je veux des conseils personnalisés</a>
+    <a class="button" href="/conseils">Je veux des conseils personnalisés</a>
 </section>
 
 </div>

@@ -6,7 +6,7 @@ import { estPageThematique } from './page/thematique'
 export function bindCalendar(element, profil) {
     const ics = new ICS(navigator.appVersion)
     const duration = 1 // heures bloquées sur le calendrier.
-    const urlSuivi = 'https://mesconseilscovid.sante.gouv.fr/#suiviintroduction'
+    const urlSuivi = 'https://mesconseilscovid.sante.gouv.fr/suiviintroduction'
 
     // Définition de l'évènement de début des symptômes (pas de récurrence).
     if (profil.hasSymptomesStartDate()) {
@@ -94,7 +94,7 @@ export function bindFeedback(component, app) {
         button.addEventListener('click', (event) => {
             event.preventDefault()
             const feedback = event.target.dataset.feedback
-            app.plausible(`Avis ${feedback}`)
+            app.trackEvent(`Avis ${feedback}`)
             askForMoreFeedback(feedback, component)
         })
     })
@@ -108,7 +108,7 @@ export function bindFeedback(component, app) {
 
 export function bindFeedbackContact(emailButton, app) {
     emailButton.addEventListener('click', () => {
-        app.plausible('Contact')
+        app.trackEvent('Contact')
     })
 }
 
@@ -116,7 +116,7 @@ export function bindImpression(element, app) {
     const printButton = element.querySelector('.js-impression')
     printButton.addEventListener('click', (event) => {
         event.preventDefault()
-        app.plausible('Impression')
+        app.trackEvent('Impression')
         try {
             Array.from(element.querySelectorAll('details')).forEach((detail) => {
                 detail.setAttribute('open', '')
@@ -132,10 +132,10 @@ export function bindImpression(element, app) {
 export function bindSuppressionTotale(element, app) {
     element.addEventListener('click', (event) => {
         event.preventDefault()
-        app.plausible('Suppression totale')
+        app.trackEvent('Suppression totale')
         if (confirm('Êtes-vous sûr·e de vouloir supprimer tous les profils ?')) {
             app.supprimerTout().then(() => {
-                if (app.router.lastRouteResolved().url === 'introduction') {
+                if (app.router.getCurrentLocation().url === 'introduction') {
                     window.location.reload(true)
                 } else {
                     app.router.navigate('introduction')

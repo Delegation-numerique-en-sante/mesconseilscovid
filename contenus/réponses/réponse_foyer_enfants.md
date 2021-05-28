@@ -1,1 +1,1 @@
-Vous vivez avec un ou des enfants (<a href="#situation">modifier</a>)
+Vous vivez avec un ou des enfants (<a href="/situation" data-navigo>modifier</a>)

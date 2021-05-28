@@ -89,9 +89,9 @@ OVH
 
 ### Et ensuite ?
 
-En cas d’apparition de signes évoquant la Covid (fièvre…), vous pourrez suivre ici l’[évolution de votre état de santé](#suiviintroduction).
+En cas d’apparition de signes évoquant la Covid (fièvre…), vous pourrez suivre ici l’[évolution de votre état de santé](/suiviintroduction).
 
-Si votre situation change, vous pouvez **mettre à jour vos réponses**, par exemple si vous [passez un test](#depistage) ou si vous avez eu un [contact à risque](#contactarisque). Nous vous proposerons des conseils adaptés à **votre nouvelle situation**.
+Si votre situation change, vous pouvez **mettre à jour vos réponses**, par exemple si vous [passez un test](/depistage) ou si vous avez eu un [contact à risque](#contactarisque). Nous vous proposerons des conseils adaptés à **votre nouvelle situation**.
 
 
 
@@ -159,7 +159,7 @@ Il est recommandé de mettre à jour dès que possible en cliquant sur le bouton
 
 Vos informations personnelles sont seulement stockées sur cet appareil, et ne sont pas partagées.  
 À tout moment, vous pouvez <a class="js-suppression" href="" role="button">supprimer l’intégralité de ces données</a>.  
-[Conditions d’utilisation](#conditionsutilisation) - [Code source](https://github.com/Delegation-numerique-en-sante/mesconseilscovid) - Accessibilité : partiellement conforme<span class="js-latest-update"></span>.
+<a href="/conditionsutilisation" data-navigo>Conditions d’utilisation</a> - [Code source](https://github.com/Delegation-numerique-en-sante/mesconseilscovid) - Accessibilité : partiellement conforme<span class="js-latest-update"></span>.
 
 </div>
 

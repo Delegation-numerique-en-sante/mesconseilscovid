@@ -15,7 +15,7 @@ function boutonBasculeVersMonProfil(app) {
             app.creerProfil('mes_infos').then(() => {
                 window.location = event.target.getAttribute('href')
             })
-            app.plausible('Je veux des conseils personnalisés')
+            app.trackEvent('Je veux des conseils personnalisés')
         })
     }
 }

@@ -23,12 +23,14 @@ export default class SuiviView {
             : 'symptomes'
         const suiviButton = safeHtml`
             <a class="button button-full-width conseils-link"
-                data-set-profil="${this.profil.nom}" href="#${nextPage}"
+                data-set-profil="${this.profil.nom}"
+                href="/${nextPage}" data-navigo
                 >${label} ${possessifMasculinSingulier} suivi</a>
         `
         const conseilsButton = safeHtml`
             <a class="button button-outline button-full-width conseils-link"
-                data-set-profil="${this.profil.nom}" href="#conseils"
+                data-set-profil="${this.profil.nom}"
+                href="/conseils" data-navigo
                 >Voir ${possessifPluriel} conseils</a>
         `
         let deleteLink = ''
@@ -63,7 +65,7 @@ export default class SuiviView {
     renderDebutSymptomes() {
         return `<p>Début des symptômes :
             ${this.renderDate(this.profil.symptomes_start_date)}
-            (<a href="#symptomes">modifier</a>)
+            (<a href="/symptomes" data-navigo>modifier</a>)
         </p>`
     }
 

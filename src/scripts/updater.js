@@ -126,7 +126,7 @@ export default class Updater {
 
     setupRefreshButton(button, pageName) {
         button.innerText = 'Mettre à jour'
-        button.setAttribute('href', '#' + (pageName || 'introduction'))
+        button.setAttribute('href', '/' + (pageName || 'introduction'))
         button.addEventListener('click', this.onClickRefreshButton.bind(this))
     }
 

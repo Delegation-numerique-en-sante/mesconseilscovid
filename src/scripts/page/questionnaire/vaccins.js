@@ -4,6 +4,8 @@ import {
     toggleFormButtonOnRadioRequired,
 } from '../../formutils'
 
+const pageName = 'vaccins'
+
 export default function vaccins(form, app) {
     premierDemarrageFormulaire(app)
 
@@ -36,11 +38,11 @@ function premierDemarrageFormulaire(app) {
     if (typeof app.profil.questionnaire_start_date === 'undefined') {
         app.profil.questionnaire_start_date = new Date()
         app.enregistrerProfilActuel()
-        app.plausible('Questionnaire commencé')
+        app.trackEvent('Questionnaire commencé', pageName)
         if (app.profil.estMonProfil()) {
-            app.plausible('Questionnaire commencé pour moi')
+            app.trackEvent('Questionnaire commencé pour moi', pageName)
         } else {
-            app.plausible('Questionnaire commencé pour un proche')
+            app.trackEvent('Questionnaire commencé pour un proche', pageName)
         }
     }
 }

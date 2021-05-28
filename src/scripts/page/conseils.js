@@ -21,34 +21,20 @@ import { joursAvant, joursApres, titleCase } from '../utils'
 import AlgorithmeOrientation from '../algorithme/orientation'
 import AlgorithmeSuivi from '../algorithme/suivi'
 
+const pageName = 'conseils'
+
 export default function conseils(element, app) {
+    const algoOrientation = new AlgorithmeOrientation(app.profil)
+    initDOM(element, app, algoOrientation)
+    enregistreCompletionFormulaire(app)
+    activeAutoSuivi(app, algoOrientation)
+}
+
+function initDOM(element, app, algoOrientation) {
     applyDetailsSummaryPolyfill(element)
 
     // Make sure we show profile-specific text.
     showMeOrThem(element, app.profil)
-
-    var algoOrientation = new AlgorithmeOrientation(app.profil)
-
-    // Première complétion du formulaire ?
-    if (typeof app.profil.questionnaire_completion_date === 'undefined') {
-        app.profil.questionnaire_completion_date = new Date()
-        app.enregistrerProfilActuel()
-        app.plausible('Questionnaire terminé')
-        if (app.profil.estMonProfil()) {
-            app.plausible('Questionnaire terminé pour moi')
-        } else {
-            app.plausible('Questionnaire terminé pour un proche')
-        }
-    }
-
-    // Activer / désactiver l’auto-suivi pour ce profil ?
-    if (algoOrientation.recommandeAutoSuivi() && !app.profil.suivi_active) {
-        app.profil.suivi_active = true
-        app.enregistrerProfilActuel()
-    } else if (app.profil.suivi_active && !app.profil.hasSuiviStartDate()) {
-        app.profil.suivi_active = false
-        app.enregistrerProfilActuel()
-    }
 
     // Display appropriate conseils.
     showRelevantBlocks(element, app.profil, algoOrientation)
@@ -91,6 +77,31 @@ export default function conseils(element, app) {
         bindCalendar(element, app.profil)
     }
     bindSuppressionTotale(element.querySelector('.js-suppression'), app)
+}
+
+// Première complétion du formulaire ?
+function enregistreCompletionFormulaire(app) {
+    if (typeof app.profil.questionnaire_completion_date === 'undefined') {
+        app.profil.questionnaire_completion_date = new Date()
+        app.enregistrerProfilActuel()
+        app.trackEvent('Questionnaire terminé', pageName)
+        if (app.profil.estMonProfil()) {
+            app.trackEvent('Questionnaire terminé pour moi', pageName)
+        } else {
+            app.trackEvent('Questionnaire terminé pour un proche', pageName)
+        }
+    }
+}
+
+// Activer / désactiver l’auto-suivi pour ce profil ?
+function activeAutoSuivi(app, algoOrientation) {
+    if (algoOrientation.recommandeAutoSuivi() && !app.profil.suivi_active) {
+        app.profil.suivi_active = true
+        app.enregistrerProfilActuel()
+    } else if (app.profil.suivi_active && !app.profil.hasSuiviStartDate()) {
+        app.profil.suivi_active = false
+        app.enregistrerProfilActuel()
+    }
 }
 
 export function cacherElementsConditionnels(element, profil) {
@@ -254,7 +265,7 @@ function dynamicTimelineDataInjection(element, profil) {
                 contagiosite: joursAvant(2, profil.symptomes_start_date),
                 debutIsolement: `${formatDate(
                     profil.symptomes_start_date
-                )} (<a href="#symptomes">modifier</a>)`,
+                )} (<a href="/symptomes" data-navigo>modifier</a>)`,
                 demain: joursApres(1, new Date()),
                 finIsolement: joursApres(dureeIsolement, profil.symptomes_start_date),
                 finIsolementPositif: joursApres(
@@ -291,7 +302,7 @@ function dynamicTimelineDataInjection(element, profil) {
                 contagiosite: joursAvant(2, profil.depistage_start_date),
                 debutIsolement: `${formatDate(
                     profil.depistage_start_date
-                )} (<a href="#depistage">modifier</a>)`,
+                )} (<a href="/depistage" data-navigo>modifier</a>)`,
                 demain: joursApres(1, new Date()),
                 finIsolement: joursApres(dureeIsolement, profil.depistage_start_date),
                 finIsolementPositif: joursApres(

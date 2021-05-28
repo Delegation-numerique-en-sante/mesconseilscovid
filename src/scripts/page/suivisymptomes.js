@@ -7,6 +7,8 @@ import {
 
 import AlgorithmeDeconfinement from '../algorithme/deconfinement'
 
+const pageName = 'suivisymptomes'
+
 export default function suivisymptomes(form, app) {
     // Enregistre le démarrage du suivi si la date n’est pas renseignée
     // (elle a pu être mise à zéro en cas d’effacement du suivi).
@@ -72,14 +74,14 @@ export default function suivisymptomes(form, app) {
         }
         app.profil.ajouterEtat(etat)
 
-        app.plausible(`Suivi rempli`)
+        app.trackEvent('Suivi rempli', pageName)
 
         if (app.profil.suivi.length === 1) {
-            app.plausible(`Premier suivi`)
+            app.trackEvent('Premier suivi', pageName)
         } else if (app.profil.suivi.length === 2) {
-            app.plausible(`Deuxième suivi`)
+            app.trackEvent('Deuxième suivi', pageName)
         } else if (app.profil.suivi.length === 3) {
-            app.plausible(`Troisième suivi`)
+            app.trackEvent('Troisième suivi', pageName)
         }
 
         const estOui = (symptome) => symptome === 'oui'
@@ -124,7 +126,7 @@ export default function suivisymptomes(form, app) {
         if (algoDeconfinement.isDeconfinable()) {
             if (!app.profil.hasDeconfinementDate()) {
                 app.profil.deconfinement_date = new Date()
-                app.plausible(`Suivi deconfinement`)
+                app.trackEvent('Suivi deconfinement', pageName)
             }
         } else {
             app.profil.deconfinement_date = undefined

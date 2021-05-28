@@ -148,23 +148,26 @@ export default class App {
         ]
         this.enregistrerProfilActuel()
     }
+    trackEvent(eventName, pageName) {
+        this.plausible(eventName, pageName)
+    }
     trackPageView(pageName) {
-        this.plausible('pageview')
+        this.plausible('pageview', pageName)
         this.atinternet(pageName)
     }
-    plausible(eventName) {
-        const searchParams = new URLSearchParams(window.location.search)
-        const options = {}
+    plausible(eventName, pageName) {
         const props = {}
         if (typeof this.profil.nom !== 'undefined') {
             props['profil'] = this.profil.estMonProfil() ? 'moi' : 'proche'
         }
+        const searchParams = new URLSearchParams(window.location.search)
         if (searchParams.toString().length) {
             const source = searchParams.get('source') || searchParams.get('utm_source')
             if (source) {
                 props['source'] = source
             }
         }
+        const options = { pageName: pageName }
         if (Object.keys(props).length > 0) {
             options['props'] = props
         }

@@ -11,7 +11,8 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from ssl import wrap_socket
 
-from livereload.server import LogFormatter, Server
+import tornado.web
+from livereload.server import LiveScriptContainer, LogFormatter, Server
 from watchdog.observers import Observer
 from watchdog.tricks import ShellCommandTrick
 
@@ -73,6 +74,23 @@ class CustomServer(Server):
     """
     Custom server with logger that decodes bytes in logs
     """
+
+    def __init__(self, app=None, watcher=None):
+        super().__init__(app=app, watcher=watcher)
+        self.SFH = self.SPAHandler
+
+    class SPAHandler(tornado.web.StaticFileHandler):
+        """
+        Sert le fichier index.html au lieu d’une 404 pour la Single-Page App
+        """
+        def validate_absolute_path(self, root, absolute_path):
+            try:
+                return super().validate_absolute_path(root, absolute_path)
+            except tornado.web.HTTPError as exc:
+                if exc.status_code == 404 and self.default_filename is not None:
+                    absolute_path = self.get_absolute_path(self.root, self.default_filename)
+                    return super().validate_absolute_path(root, absolute_path)
+                raise exc
 
     def _setup_logging(self):
         super()._setup_logging()

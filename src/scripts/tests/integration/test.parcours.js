@@ -8,7 +8,7 @@ describe('Parcours', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
 
         // Page d’accueil.
@@ -18,7 +18,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/vaccins' }),
             ])
         }
 
@@ -69,7 +69,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#introduction' }),
+                page.waitForNavigation({ url: '**/introduction' }),
             ])
         }
 
@@ -94,7 +94,7 @@ describe('Parcours', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
 
         // Page d’accueil.
@@ -104,7 +104,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/vaccins' }),
             ])
         }
 
@@ -144,7 +144,7 @@ describe('Parcours', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
 
         // Page d’accueil.
@@ -154,7 +154,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/vaccins' }),
             ])
         }
 
@@ -182,7 +182,7 @@ describe('Parcours', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
 
         // Page d’accueil.
@@ -192,7 +192,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/vaccins' }),
             ])
         }
 
@@ -222,7 +222,7 @@ describe('Parcours', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
 
         // Page d’accueil.
@@ -232,7 +232,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/vaccins' }),
             ])
         }
 
@@ -272,7 +272,7 @@ describe('Parcours', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
 
         // Page d’accueil.
@@ -282,7 +282,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/vaccins' }),
             ])
         }
 
@@ -323,7 +323,7 @@ describe('Parcours', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
 
         // Page d’accueil.
@@ -333,7 +333,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/vaccins' }),
             ])
         }
 
@@ -374,7 +374,7 @@ describe('Parcours', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
 
         // Page d’accueil.
@@ -384,7 +384,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/vaccins' }),
             ])
         }
 
@@ -427,7 +427,7 @@ describe('Parcours', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
 
         // Page d’accueil.
@@ -437,7 +437,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/vaccins' }),
             ])
         }
 
@@ -478,7 +478,7 @@ describe('Parcours', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
 
         // Page d’accueil.
@@ -488,7 +488,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/vaccins' }),
             ])
         }
 

@@ -8,7 +8,7 @@ describe('Profils', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
 
         // Page d’accueil.
@@ -18,7 +18,7 @@ describe('Profils', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#nom' }),
+                page.waitForNavigation({ url: '**/nom' }),
             ])
         }
 
@@ -28,7 +28,7 @@ describe('Profils', function () {
             let bouton = await page.waitForSelector('#page.ready >> text="Continuer"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/vaccins' }),
             ])
         }
 
@@ -88,7 +88,7 @@ describe('Profils', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#introduction' }),
+                page.waitForNavigation({ url: '**/introduction' }),
             ])
         }
 

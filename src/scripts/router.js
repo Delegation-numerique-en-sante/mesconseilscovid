@@ -32,16 +32,8 @@ import {
 } from './questionnaire'
 
 export function initRouter(app) {
-    var root = null
-    var useHash = true
-    var router = new Navigo(root, useHash)
+    var router = new Navigo('/')
     const initialTitle = document.title
-
-    // Workaround unwanted behaviour in Navigo.
-    if (router.root.slice(-1) !== '/') {
-        router.root = router.root + '/'
-    }
-
     router.hooks({
         before: function (done) {
             var header = document.querySelector('header section')
@@ -71,17 +63,17 @@ export function initRouter(app) {
             }
             return app.questionnaire.before(pageName, profil)
         }
-        addAppRoute(pageName, view, beforeFunc, pageTitle)
+        addAppRoute(pageName, view, beforeFunc, undefined, pageTitle)
     }
 
-    function addAppRoute(pageName, view, before, pageTitle) {
+    function addAppRoute(pageName, view, before, after, pageTitle) {
         function viewFunc(element) {
             view(element, app)
         }
-        addRoute(pageName, viewFunc, before, pageTitle)
+        addRoute(pageName, viewFunc, before, after, pageTitle)
     }
 
-    function addRoute(pageName, viewFunc, beforeFunc, pageTitle) {
+    function addRoute(pageName, viewFunc, beforeFunc, afterFunc, pageTitle) {
         router.on(
             new RegExp('^' + pageName + '$'),
             function () {
@@ -90,7 +82,6 @@ export function initRouter(app) {
                 fillProgress(element, pageName)
                 fillNavigation(element, pageName)
                 viewFunc(element)
-                app.trackPageView(pageName)
                 const page = element.parentElement
                 page.classList.remove('loading')
                 page.classList.add('ready')
@@ -108,6 +99,12 @@ export function initRouter(app) {
                         done(false)
                     } else {
                         done()
+                    }
+                },
+                after: function (match) {
+                    app.trackPageView(pageName)
+                    if (typeof afterFunc !== 'undefined') {
+                        afterFunc(match)
                     }
                 },
             }
@@ -145,12 +142,12 @@ export function initRouter(app) {
         if (boutonRetour) {
             const previousPage = app.questionnaire.previousPage(pageName, app.profil)
             if (previousPage) {
-                boutonRetour.setAttribute('href', `#${previousPage}`)
+                boutonRetour.setAttribute('href', `/${previousPage}`)
             }
         }
 
         Array.from(element.querySelectorAll('.premiere-question')).forEach((lien) => {
-            lien.setAttribute('href', `#${app.questionnaire.firstPage}`)
+            lien.setAttribute('href', `/${app.questionnaire.firstPage}`)
         })
     }
 
@@ -162,14 +159,14 @@ export function initRouter(app) {
         ) {
             // Replace current page with target page in the browser history
             // so that we don’t break the back button.
-            window.history.replaceState({}, '', `#${target}`)
+            window.history.replaceState({}, '', `/${target}`)
             router.resolve()
         } else {
             router.navigate(target)
         }
     }
 
-    addAppRoute('introduction', introduction, undefined, '') // accueil : pas de titre
+    addAppRoute('introduction', introduction, undefined, undefined, '') // accueil : pas de titre
 
     addAppRoute('nom', nom)
 
@@ -201,7 +198,7 @@ export function initRouter(app) {
     })
 
     addRoute('nouvelleversiondisponible', function (element) {
-        const route = router.lastRouteResolved()
+        const route = router.getCurrentLocation()
         const urlParams = new URLSearchParams(route.query)
         const origine = urlParams.get('origine')
 
@@ -233,7 +230,13 @@ export function initRouter(app) {
     })
 
     router.notFound(function () {
-        redirectTo('introduction')
+        const hash = document.location.hash
+        const fragment = hash ? hash.slice(1) : ''
+        if (window.location.pathname === '/' && fragment && router.match(fragment)) {
+            redirectTo(fragment)
+        } else {
+            redirectTo('introduction')
+        }
     })
 
     return router

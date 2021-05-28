@@ -6,103 +6,103 @@
 
 ## [reponse_depistage_en_attente.md](reponse_depistage_en_attente.md)
 
-Vous avez réalisé un test ces 7 derniers jours et vous êtes en attente de résultats (<a href="#depistage">modifier</a>)
+Vous avez réalisé un test ces 7 derniers jours et vous êtes en attente de résultats (<a href="/depistage" data-navigo>modifier</a>)
 
 
 
 ## [reponse_depistage_negatif.md](reponse_depistage_negatif.md)
 
-Vous avez réalisé un test ces 7 derniers jours et il est négatif (<a href="#depistage">modifier</a>)
+Vous avez réalisé un test ces 7 derniers jours et il est négatif (<a href="/depistage" data-navigo>modifier</a>)
 
 
 
 ## [reponse_depistage_positif.md](reponse_depistage_positif.md)
 
-Vous avez réalisé un test ces 14 derniers jours et il est positif (<a href="#depistage">modifier</a>)
+Vous avez réalisé un test ces 14 derniers jours et il est positif (<a href="/depistage" data-navigo>modifier</a>)
 
 
 
 ## [reponse_depistage_sans.md](reponse_depistage_sans.md)
 
-Vous n’avez pas réalisé de test ces 7 derniers jours (<a href="#depistage">modifier</a>)
+Vous n’avez pas réalisé de test ces 7 derniers jours (<a href="/depistage" data-navigo>modifier</a>)
 
 
 
 ## [reponse_historique_3_6_mois.md](reponse_historique_3_6_mois.md)
 
-Vous avez eu la Covid **il y a plus de 3 mois et moins de 6 mois** (<a href="#historique">modifier</a>)
+Vous avez eu la Covid **il y a plus de 3 mois et moins de 6 mois** (<a href="/historique" data-navigo>modifier</a>)
 
 
 
 ## [reponse_historique_3_mois_moins.md](reponse_historique_3_mois_moins.md)
 
-Vous avez eu la Covid **il y a moins de 3 mois** (<a href="#historique">modifier</a>)
+Vous avez eu la Covid **il y a moins de 3 mois** (<a href="/historique" data-navigo>modifier</a>)
 
 
 
 ## [reponse_historique_6_mois_plus.md](reponse_historique_6_mois_plus.md)
 
-Vous avez eu la Covid **il y a plus de 6 mois** (<a href="#historique">modifier</a>)
+Vous avez eu la Covid **il y a plus de 6 mois** (<a href="/historique" data-navigo>modifier</a>)
 
 
 
 ## [reponse_historique_sans.md](reponse_historique_sans.md)
 
-Vous n’avez **jamais** eu la Covid (<a href="#historique">modifier</a>)
+Vous n’avez **jamais** eu la Covid (<a href="/historique" data-navigo>modifier</a>)
 
 
 
 ## [reponse_vaccins_completement.md](reponse_vaccins_completement.md)
 
-Vous avez **déjà** été complètement vacciné·e (<a href="#vaccins">modifier</a>)
+Vous avez **déjà** été complètement vacciné·e (<a href="/vaccins" data-navigo>modifier</a>)
 
 
 
 ## [reponse_vaccins_en_cours.md](reponse_vaccins_en_cours.md)
 
-Vous avez **déjà** été partiellement vacciné·e (<a href="#vaccins">modifier</a>)
+Vous avez **déjà** été partiellement vacciné·e (<a href="/vaccins" data-navigo>modifier</a>)
 
 
 
 ## [reponse_vaccins_pas_encore.md](reponse_vaccins_pas_encore.md)
 
-Vous n’avez **pas encore** été vacciné·e (<a href="#vaccins">modifier</a>)
+Vous n’avez **pas encore** été vacciné·e (<a href="/vaccins" data-navigo>modifier</a>)
 
 
 
 ## [réponse_activité_pro.md](réponse_activité_pro.md)
 
-Vous travaillez et/ou êtes bénévole (<a href="#situation">modifier</a>)
+Vous travaillez et/ou êtes bénévole (<a href="/situation" data-navigo>modifier</a>)
 
 
 
 ## [réponse_antécédents.md](réponse_antécédents.md)
 
-<strong class="nom-antecedents"></strong> (<a href="#sante">modifier</a>)
+<strong class="nom-antecedents"></strong> (<a href="/sante" data-navigo>modifier</a>)
 
 
 
 ## [réponse_caractéristiques_à_risques.md](réponse_caractéristiques_à_risques.md)
 
-Vous présentez une ou des caractéristiques à risque : <strong class="nom-caracteristiques-a-risques"></strong> (<a href="#sante">modifier</a>)
+Vous présentez une ou des caractéristiques à risque : <strong class="nom-caracteristiques-a-risques"></strong> (<a href="/sante" data-navigo>modifier</a>)
 
 
 
 ## [réponse_département.md](réponse_département.md)
 
-Votre lieu de résidence actuel : <strong id="nom-departement"></strong> (<a href="#situation">modifier</a>)
+Votre lieu de résidence actuel : <strong id="nom-departement"></strong> (<a href="/situation" data-navigo>modifier</a>)
 
 
 
 ## [réponse_foyer_enfants.md](réponse_foyer_enfants.md)
 
-Vous vivez avec un ou des enfants (<a href="#situation">modifier</a>)
+Vous vivez avec un ou des enfants (<a href="/situation" data-navigo>modifier</a>)
 
 
 
 ## [réponse_grossesse.md](réponse_grossesse.md)
 
-Vous êtes enceinte au 3e trimestre de votre grossesse (<a href="#sante">modifier</a>)
+Vous êtes enceinte au 3e trimestre de votre grossesse (<a href="/sante" data-navigo>modifier</a>)
 
 
 ## [réponse_personne_fragile.md](réponse_personne_fragile.md)
