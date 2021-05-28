@@ -71,6 +71,7 @@ check-diagrammes:  # Check that all files from diagrammes/matrice exist.
 	python3 check.py diagrammes
 
 check-service-worker:  # Check that all files in use are listed in service-worker.js.
+	python3 build.py thematiques
 	python3 check.py service_worker
 
 lint:  ## Run ESLint + check code style.
