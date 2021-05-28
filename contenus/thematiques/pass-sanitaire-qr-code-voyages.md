@@ -41,13 +41,13 @@ Il permet d’authentifier votre statut par rapport à la Covid (immunisé, vacc
 
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h3 itemprop="name"> Le « Pass sanitaire » ou le « Digital Covid Certificate » sont-ils déjà en application ?</h3>
+<h3 itemprop="name">Le « Pass sanitaire » ou le <span lang="en">“Digital Covid Certificate”</span> sont-ils déjà en application ?</h3>
 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
  
-En France, le « Pass sanitaire » est en application depuis le 3 juin. 
-L'utilisation du « Pass sanitaire » en Union-Européenne, sous le nom « Digital Covid Certificate » débutera à partir de juillet.
+En France, le « Pass sanitaire » sera en application à partir du 3 juin. 
+L’utilisation du « Pass sanitaire » en Union européenne, sous le nom <span lang="en">“Digital Covid Certificate”</span> débutera à partir de juillet.
 
 </div>
 </div>
