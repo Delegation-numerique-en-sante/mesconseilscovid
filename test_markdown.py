@@ -100,6 +100,16 @@ def test_block_html():
     )
 
 
+class TestMarkdownLinks:
+    def test_http(self):
+        from build import markdown
+        assert markdown("[foo](http://bar)") == '<p><a href="http://bar">foo</a></p>\n'
+
+    def test_internal(self):
+        from build import markdown
+        assert markdown("[foo](vaccins)") == '<p><a href="vaccins" data-navigo>foo</a></p>\n'
+
+
 class TestMarkdownContentBlock:
     def test_render_block(self):
         from build import MarkdownContent, markdown
