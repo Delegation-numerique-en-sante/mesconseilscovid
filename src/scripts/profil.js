@@ -828,7 +828,8 @@ export default class Profil {
                         : 'Démarrer'
                 mainButton += safeHtml`
                     <a class="button suivi-link"
-                        data-set-profil="${this.nom}" href="#suiviintroduction"
+                        data-set-profil="${this.nom}"
+                        href="suiviintroduction" data-navigo
                         >${verbe} ${possessifMasculinSingulier} suivi</a>
                 `
             }
@@ -836,21 +837,24 @@ export default class Profil {
                 this.estMonProfil() && !this.suivi_active ? '' : 'button-outline'
             mainButton += safeHtml`
                 <a class="button ${outlined} conseils-link"
-                    data-set-profil="${this.nom}" href="#conseils"
+                    data-set-profil="${this.nom}"
+                    href="conseils" data-navigo
                     >Voir ${possessifPluriel} conseils</a>
             `
         } else {
             const label = this.isEmpty() ? 'Démarrer' : 'Continuer'
             mainButton = safeHtml`
                 <a class="button button-full-width conseils-link"
-                    data-set-profil="${this.nom}" href="#${questionnaire.firstPage}"
+                    data-set-profil="${this.nom}"
+                    href="${questionnaire.firstPage}" data-navigo
                     >${label} ${possessifMasculinSingulier} questionnaire</a>
             `
         }
         const continueButton = this.isEmpty()
             ? ''
             : safeHtml`
-        <a data-set-profil="${this.nom}" href="#${questionnaire.firstPage}"
+        <a data-set-profil="${this.nom}"
+           href="${questionnaire.firstPage}" data-navigo
             >Modifier ${possessifPluriel} réponses</a>
         `
         const deleteButton = safeHtml`

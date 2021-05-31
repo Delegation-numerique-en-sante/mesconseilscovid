@@ -12,7 +12,7 @@ describe('Suivi', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
 
         // Page d’accueil.
@@ -55,7 +55,7 @@ describe('Suivi', function () {
             let bouton = await page.waitForSelector(
                 '#page.ready #conseils-personnels-symptomes-actuels-sans-depistage >> text="questionnaire de suivi"'
             )
-            assert.equal(await bouton.getAttribute('href'), '#suivisymptomes')
+            assert.equal(await bouton.getAttribute('href'), 'suivisymptomes')
             // un bouton pour refaire le questionnaire
             bouton = await page.waitForSelector(
                 '#page.ready >> text="Revenir à l’accueil"'
@@ -122,7 +122,7 @@ describe('Suivi', function () {
             let bouton = await page.waitForSelector(
                 '#page.ready #conseils-sante >> text="l’historique de vos symptômes"'
             )
-            assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
+            assert.equal(await bouton.getAttribute('href'), 'suivihistorique')
             // un bouton pour refaire le questionnaire
             bouton = await page.waitForSelector(
                 '#page.ready >> text="Revenir à l’accueil"'
@@ -204,7 +204,7 @@ describe('Suivi', function () {
             let bouton = await page.waitForSelector(
                 '#page.ready #conseils-sante >> text="l’historique de vos symptômes"'
             )
-            assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
+            assert.equal(await bouton.getAttribute('href'), 'suivihistorique')
             await Promise.all([
                 bouton.click(),
                 waitForPlausibleTrackingEvent(page, 'pageview:suivihistorique'),
@@ -225,8 +225,8 @@ describe('Suivi', function () {
 
         // On est redirigé vers l’introduction.
         await Promise.all([
-            page.goto('http://localhost:8080/#'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
 
         // Page d’accueil.
@@ -349,7 +349,7 @@ describe('Suivi', function () {
             let bouton = await page.waitForSelector(
                 '#page.ready #conseils-sante >> text="l’historique des symptômes"'
             )
-            assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
+            assert.equal(await bouton.getAttribute('href'), 'suivihistorique')
             await Promise.all([
                 bouton.click(),
                 waitForPlausibleTrackingEvent(page, 'pageview:suivihistorique'),

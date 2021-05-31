@@ -57,7 +57,7 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 
 <section class="cta">
     <h3>Obtenez des conseils adaptés à votre situation (cas contact) en quelques clics</h3>
-    <a class="button" href="/#conseils">Je veux des conseils personnalisés</a>
+    <a class="button" href="/conseils">Je veux des conseils personnalisés</a>
 </section>
 
 </div>

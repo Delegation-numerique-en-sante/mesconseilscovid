@@ -18,7 +18,7 @@
 
 .. question:: Est-ce que je dois m’isoler si je suis « cas contact »  et vacciné(e) ?
 
-    Même vacciné(e), en cas de contact à risque avec une personne positive à la Covid, vous êtes considéré(e) comme étant « [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#introduction) » : il faut **vous faire tester et vous isoler** immédiatement.
+    Même vacciné(e), en cas de contact à risque avec une personne positive à la Covid, vous êtes considéré(e) comme étant « [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html) » : il faut **vous faire tester et vous isoler** immédiatement.
 
 
 .. question:: Est-ce que la vaccination rend malade et contagieux ?
@@ -67,7 +67,7 @@
 
 <section class="cta">
     <h3>Obtenez des conseils adaptés à votre situation en quelques clics</h3>
-    <a class="button" href="/#conseils">Je veux des conseils personnalisés</a>
+    <a class="button" href="/conseils">Je veux des conseils personnalisés</a>
 </section>
 
 </div>

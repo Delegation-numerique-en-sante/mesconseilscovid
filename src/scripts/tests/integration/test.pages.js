@@ -7,7 +7,7 @@ describe('Pages', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
 
         assert.equal(
@@ -38,7 +38,7 @@ describe('Pages', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/introduction' }),
         ])
         await page.waitForSelector('#page.ready')
 
@@ -47,7 +47,7 @@ describe('Pages', function () {
             let bouton = await page.waitForSelector('text="Conditions d’utilisation"')
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#conditionsutilisation' }),
+                page.waitForNavigation({ url: '**/conditionsutilisation' }),
             ])
         }
 
@@ -56,7 +56,7 @@ describe('Pages', function () {
             // On retrouve le bouton pour repartir vers le questionnaire.
             let button = await page.waitForSelector('#page.ready .js-profil-empty a')
             assert.equal((await button.innerText()).trim(), 'Démarrer le questionnaire')
-            assert.equal(await button.getAttribute('href'), '#vaccins')
+            assert.equal(await button.getAttribute('href'), 'vaccins')
             // On retrouve le titre explicite.
             let titre = await page.waitForSelector('#page.ready h1')
             assert.equal(await titre.innerText(), 'Conditions d’utilisation')

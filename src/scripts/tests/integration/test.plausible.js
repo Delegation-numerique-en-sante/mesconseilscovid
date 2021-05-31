@@ -9,27 +9,36 @@ describe('Plausible', function () {
     it('accès à une page', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/#introduction')
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/introduction' }),
+        ])
         await page.waitForSelector('#page.ready')
         assert.equal(
             await page.title(),
             'Mes Conseils Covid — Isolement, tests, vaccins, attestations, contact à risque…'
         )
 
-        await waitForPlausibleTrackingEvents(page, ['pageview:introduction'])
+        await waitForPlausibleTrackingEvents(page, [
+            'pageview:',
+            'pageview:introduction',
+        ])
     })
 
     it('drapeau sur une page', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/#introduction')
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/introduction' }),
+        ])
         let bouton = await page.waitForSelector(
             '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
         )
 
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/#vaccins' }),
+            page.waitForNavigation({ url: '**/vaccins' }),
         ])
 
         await page.waitForSelector('#page.ready')
@@ -44,6 +53,7 @@ describe('Plausible', function () {
         )
 
         await waitForPlausibleTrackingEvents(page, [
+            'pageview:',
             'pageview:introduction',
             'Questionnaire commencé:vaccins',
             'Questionnaire commencé pour moi:vaccins',
@@ -55,14 +65,17 @@ describe('Plausible', function () {
     it('avis positif conseils', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/#introduction')
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/introduction' }),
+        ])
         let bouton = await page.waitForSelector(
             '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
         )
 
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/#vaccins' }),
+            page.waitForNavigation({ url: '**/vaccins' }),
         ])
 
         await remplirQuestionnaire(page, {
@@ -96,6 +109,7 @@ describe('Plausible', function () {
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
         await waitForPlausibleTrackingEvents(page, [
+            'pageview:',
             'pageview:introduction',
             'Questionnaire commencé:vaccins',
             'Questionnaire commencé pour moi:vaccins',
@@ -116,12 +130,15 @@ describe('Plausible', function () {
     it('avis positif conseils pour une proche', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/#introduction')
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/introduction' }),
+        ])
         let bouton = await page.waitForSelector(
             '#page.ready #profils-cards-empty .js-profil-new >> text="Des conseils pour un ou une proche"'
         )
 
-        await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
+        await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/nom' })])
 
         await remplirQuestionnaire(page, {
             nom: 'Mamie',
@@ -155,6 +172,7 @@ describe('Plausible', function () {
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
         await waitForPlausibleTrackingEvents(page, [
+            'pageview:',
             'pageview:introduction',
             'pageview:nom',
             'Questionnaire commencé:vaccins',
@@ -176,13 +194,16 @@ describe('Plausible', function () {
     it('avis négatif conseils', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/#introduction')
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/introduction' }),
+        ])
         let bouton = await page.waitForSelector(
             '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
         )
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/#vaccins' }),
+            page.waitForNavigation({ url: '**/vaccins' }),
         ])
         await remplirQuestionnaire(page, {
             vaccins: 'pas_encore',
@@ -215,6 +236,7 @@ describe('Plausible', function () {
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
         await waitForPlausibleTrackingEvents(page, [
+            'pageview:',
             'pageview:introduction',
             'Questionnaire commencé:vaccins',
             'Questionnaire commencé pour moi:vaccins',
@@ -235,11 +257,14 @@ describe('Plausible', function () {
     it('avis négatif conseils pour un proche', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/#introduction')
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/introduction' }),
+        ])
         let bouton = await page.waitForSelector(
             '#page.ready #profils-cards-empty .js-profil-new >> text="Des conseils pour un ou une proche"'
         )
-        await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
+        await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/nom' })])
         await remplirQuestionnaire(page, {
             nom: 'Papy',
             vaccins: 'pas_encore',
@@ -272,6 +297,7 @@ describe('Plausible', function () {
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
         await waitForPlausibleTrackingEvents(page, [
+            'pageview:',
             'pageview:introduction',
             'pageview:nom',
             'Questionnaire commencé:vaccins',
@@ -293,13 +319,16 @@ describe('Plausible', function () {
     it('avis partager conseils', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/#introduction')
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/introduction' }),
+        ])
         let bouton = await page.waitForSelector(
             '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
         )
         await Promise.all([
             bouton.click(),
-            page.waitForNavigation({ url: '**/#vaccins' }),
+            page.waitForNavigation({ url: '**/vaccins' }),
         ])
         await remplirQuestionnaire(page, {
             vaccins: 'pas_encore',
@@ -335,6 +364,7 @@ describe('Plausible', function () {
         )
 
         await waitForPlausibleTrackingEvents(page, [
+            'pageview:',
             'pageview:introduction',
             'Questionnaire commencé:vaccins',
             'Questionnaire commencé pour moi:vaccins',

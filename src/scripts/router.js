@@ -6,9 +6,7 @@ import { nomProfil } from './injection'
 import { titleCase } from './utils'
 
 export function getCurrentPageName() {
-    const hash = document.location.hash
-    const fragment = hash ? hash.slice(1) : ''
-    return fragment.split('?')[0]
+    return document.location.pathname.slice(1)
 }
 
 export class Router {
@@ -23,16 +21,9 @@ export class Router {
     }
 
     initNavigo() {
-        const root = null
-        const useHash = true
-        const navigo = new Navigo(root, useHash)
-
-        // Workaround unwanted behaviour in Navigo.
-        if (navigo.root.slice(-1) !== '/') {
-            navigo.root = navigo.root + '/'
-        }
-
-        return navigo
+        const root = '/'
+        const useHash = false
+        return new Navigo(root, useHash)
     }
 
     resolve() {
@@ -106,13 +97,14 @@ export class Router {
 
     addRoute(pageName, viewFunc, beforeFunc, pageTitle) {
         this.navigo.on(
-            new RegExp('^' + pageName + '$'),
+            new RegExp('/' + pageName),
             () => {
                 const page = this.loadPage(pageName, this.app)
                 this.updateTitle(page, pageName, pageTitle, this.app.profil)
                 this.fillProgress(page, pageName)
                 this.fillNavigation(page, pageName)
                 viewFunc(page)
+                this.navigo.updatePageLinks()
                 this.app.trackPageView(pageName)
                 page.classList.remove('loading')
                 page.classList.add('ready')
@@ -191,12 +183,12 @@ export class Router {
                 this.app.profil
             )
             if (previousPage) {
-                boutonRetour.setAttribute('href', `#${previousPage}`)
+                boutonRetour.setAttribute('href', previousPage)
             }
         }
 
         Array.from(page.querySelectorAll('.premiere-question')).forEach((lien) => {
-            lien.setAttribute('href', `#${this.app.questionnaire.firstPage}`)
+            lien.setAttribute('href', this.app.questionnaire.firstPage)
         })
     }
 
@@ -233,8 +225,19 @@ export class Router {
 
         // Par défaut on retourne à la page d’accueil.
         this.navigo.notFound(() => {
-            this.redirectTo('introduction')
+            const hash = document.location.hash
+            const fragment = hash ? hash.slice(1) : ''
+            if (window.location.pathname === '/' && fragment && this.exists(fragment)) {
+                this.redirectTo(fragment)
+            } else {
+                this.redirectTo('introduction')
+            }
         })
+    }
+
+    exists(pageName) {
+        const target = '/' + pageName
+        return this.navigo.helpers.match(target, this.navigo._routes)
     }
 
     redirectTo(target) {
@@ -245,7 +248,8 @@ export class Router {
         ) {
             // Replace current page with target page in the browser history
             // so that we don’t break the back button.
-            window.history.replaceState({}, '', `#${target}`)
+            const destination = '/' + target + window.location.search
+            window.history.replaceState({}, '', destination)
             this.navigo.resolve()
         } else {
             this.navigo.navigate(target)

@@ -40,7 +40,7 @@
             <img id="marianne" src="marianne.png"
                 alt="Ministère des Solidarités et de la Santé"
                 width="100" height="78">
-            <a id="logo" href="" title="Aller à l’accueil">
+            <a id="logo" href="introduction" data-navigo title="Aller à l’accueil">
                 <img id="logo-carre" src="logo-carre.png"
                     alt=""
                     width="75" height="75"
@@ -129,12 +129,14 @@
                 <li class="profil-empty">
                     <a class="button button-full-width"
                         data-set-profil="mes_infos"
-                        href="#vaccins"
+                        href="vaccins"
+                        data-navigo
                         >Des conseils pour moi</a>
                 </li>
                 <li class="profil-empty">
                     <a class="button button-full-width button-outline js-profil-new"
-                        href="#nom"
+                        href="nom"
+                        data-navigo
                         >Des conseils pour un ou une proche</a>
                 </li>
             </ul>
@@ -161,7 +163,7 @@
             </fieldset>
             <div class="form-controls">
                 <input type="submit" class="button" value="Continuer">
-                <a href="#" class="back-button button-outline">Retour</a>
+                <a href="#" class="back-button button-outline" data-navigo>Retour</a>
             </div>
         </form>
         <div class="feedback-difficultes"></div>
@@ -187,7 +189,7 @@
                     <p id="aria-description-progress-vaccins" class="progress"></p>
                     <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-vaccins">
                 </div>
-                <a href="#" class="back-button button-outline">Retour</a>
+                <a href="#" class="back-button button-outline" data-navigo>Retour</a>
             </div>
         </form>
         <div class="feedback-difficultes"></div>
@@ -233,7 +235,7 @@
                     <p id="aria-description-progress-historique" class="progress"></p>
                     <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-historique">
                 </div>
-                <a href="#" class="back-button button-outline">Retour</a>
+                <a href="#" class="back-button button-outline" data-navigo>Retour</a>
             </div>
         </form>
         <div class="feedback-difficultes"></div>
@@ -399,7 +401,7 @@
                     <p id="aria-description-progress-situation" class="progress"></p>
                     <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-situation">
                 </div>
-                <a href="#" class="back-button button-outline">Retour</a>
+                <a href="#" class="back-button button-outline" data-navigo>Retour</a>
             </div>
         </form>
         <div class="feedback-difficultes"></div>
@@ -513,7 +515,7 @@
                     <p id="aria-description-progress-sante" class="progress"></p>
                     <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-sante">
                 </div>
-                <a href="#" class="back-button button-outline">Retour</a>
+                <a href="#" class="back-button button-outline" data-navigo>Retour</a>
             </div>
         </form>
         <div class="feedback-difficultes"></div>
@@ -630,7 +632,7 @@
                     <p id="aria-description-progress-symptomes" class="progress"></p>
                     <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-symptomes">
                 </div>
-                <a href="#" class="back-button button-outline">Retour</a>
+                <a href="#" class="back-button button-outline" data-navigo>Retour</a>
             </div>
         </form>
         <div class="feedback-difficultes"></div>
@@ -711,7 +713,7 @@
                     <p id="aria-description-progress-depistage" class="progress"></p>
                     <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-depistage">
                 </div>
-                <a href="#" class="back-button button-outline">Retour</a>
+                <a href="#" class="back-button button-outline" data-navigo>Retour</a>
             </div>
         </form>
         <div class="feedback-difficultes"></div>
@@ -801,7 +803,7 @@
                     <p id="aria-description-progress-contactarisque" class="progress"></p>
                     <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-contactarisque">
                 </div>
-                <a href="#" class="back-button button-outline">Retour</a>
+                <a href="#" class="back-button button-outline" data-navigo>Retour</a>
             </div>
         </form>
         <div class="feedback-difficultes"></div>
@@ -903,8 +905,8 @@
 
             <div class="timeline">
                 <div id="conseils-timeline-isolement-foyer-malade" hidden>
-                    <a href="illustrations/isolement-foyer-malade.png">
-                        <img src="illustrations/isolement-foyer-malade.png"
+                    <a href="/illustrations/isolement-foyer-malade.png">
+                        <img src="/illustrations/isolement-foyer-malade.png"
                              loading="lazy"
                              alt="Frise chronologique représentant la période d’isolement">
                     </a>
@@ -1035,7 +1037,7 @@
                             <div class="timeline-content">
                                 <h3 class="timeline-date"></h3>
                                 <p class="timeline-texte">
-                                    <span class="suivi-a-faire"><a href="#suivisymptomes">Suivez l’évolution de vos symptômes</a> pour mettre à jour votre date de sortie d’isolement.</span>
+                                    <span class="suivi-a-faire"><a href="suivisymptomes" data-navigo>Suivez l’évolution de vos symptômes</a> pour mettre à jour votre date de sortie d’isolement.</span>
                                     <span class="suivi-fait" hidden>L’évolution de vos symptômes depuis hier a bien été enregistrée. <span aria-hidden="true">✅</span></span>
                                 </p>
                             </div>
@@ -1046,7 +1048,7 @@
                             </div>
                             <div class="timeline-content">
                                 <p class="timeline-date">Demain</p>
-                                <p class="timeline-texte">Revenez pour <a href="#suivisymptomes">suivre l’évolution de vos symptômes</a> et mettre à jour votre date de sortie d’isolement.</p>
+                                <p class="timeline-texte">Revenez pour <a href="suivisymptomes" data-navigo>suivre l’évolution de vos symptômes</a> et mettre à jour votre date de sortie d’isolement.</p>
                             </div>
                         </div>
                         <div class="timeline-block timeline-fin">
@@ -1096,7 +1098,7 @@
                             </div>
                             <div class="timeline-content">
                                 <p class="timeline-date">Demain</p>
-                                <p class="timeline-texte">Si des symptômes apparaissent, vous pourrez <a href="#suivisymptomes">suivre leur évolution</a>.</p>
+                                <p class="timeline-texte">Si des symptômes apparaissent, vous pourrez <a href="suivisymptomes" data-navigo>suivre leur évolution</a>.</p>
                             </div>
                         </div>
                         <div class="timeline-block timeline-fin">
@@ -1455,9 +1457,9 @@
                 {{ meta_et_ensuite }}
                 <div class="form-controls">
                     <div class="button-full-width">
-                        <a class="button button-outline button-full-width" href="#suiviintroduction">Démarrer mon suivi</a>
+                        <a class="button button-outline button-full-width" href="suiviintroduction" data-navigo>Démarrer mon suivi</a>
                     </div>
-                    <a class="premiere-question button back-button button-outline button-full-width" href="#">Modifier mes réponses</a>
+                    <a class="premiere-question button back-button button-outline button-full-width" href="#" data-navigo>Modifier mes réponses</a>
                 </div>
             </div>
         </div>
@@ -1466,7 +1468,7 @@
             <div class="conseils">
                 {{ meta_pour_finir }}
                 <div class="button-full-width">
-                    <a class="button button-outline button-full-width" href="#introduction">Revenir à l’accueil</a>
+                    <a class="button button-outline button-full-width" href="introduction" data-navigo>Revenir à l’accueil</a>
                 </div>
             </div>
         </div>
@@ -1639,7 +1641,7 @@
             </fieldset>
             <div class="form-controls">
                 <input type="submit" class="button" value="Continuer">
-                <a href="#" class="back-button button-outline">Retour</a>
+                <a href="#" class="back-button button-outline" data-navigo>Retour</a>
             </div>
         </form>
         <div class="feedback-difficultes"></div>
@@ -1652,7 +1654,7 @@
         <div id="suivi-historique-content"></div>
         <div class="form-controls">
             <a class="button button-full-width js-impression" href="" role="button">Imprimer ce suivi</a>
-            <a href="#" class="back-button button-outline">Retour</a>
+            <a href="#" class="back-button button-outline" data-navigo>Retour</a>
         </div>
     </div>
 </section>
@@ -1661,11 +1663,11 @@
     <div id="conditions-utilisation-block" class="block">
         {{ meta_conditions_utilisation }}
         <div class="js-profil-full form-controls" hidden>
-            <a class="button button-full-width" href="#conseils">Retourner à mes conseils</a>
-            <a class="premiere-question button button-outline button-full-width" href="#">Modifier mes réponses</a>
+            <a class="button button-full-width" href="conseils" data-navigo>Retourner à mes conseils</a>
+            <a class="premiere-question button button-outline button-full-width" href="#" data-navigo>Modifier mes réponses</a>
         </div>
         <div class="js-profil-empty">
-            <a class="premiere-question button button-full-width" href="#">Démarrer le questionnaire</a>
+            <a class="premiere-question button button-full-width" href="#" data-navigo>Démarrer le questionnaire</a>
         </div>
     </div>
 </section>
