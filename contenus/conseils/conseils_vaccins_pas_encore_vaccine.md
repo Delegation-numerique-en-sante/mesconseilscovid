@@ -16,14 +16,9 @@ Trouvez les <a href="#conseils-vaccins" class="lien-vaccination">lieux de vaccin
 Le déploiement de la vaccination se fait en plusieurs phases :
 
 * <mark>dès maintenant</mark> :
-   * les personnes de **50 ans et plus** ;
-   * les personnes de **18 ans et plus** qui sont **en surcharge pondérale** (IMC > 30), ou qui ont [un risque](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/publics-prioritaires-vaccin-covid-19#liste-comor) de développer une **forme grave** de Covid (diabète, cancer, etc.) ;
+   * les personnes de **18 ans et plus** sans conditions.
    * les personnes de **16 et 17 ans** présentant un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) ;
    * les personnes au **second trimestre** de leur grossesse ;
-   * les personnes qui vivent auprès d’une personne **sévèrement immunodéprimée.
-* <mark>à partir du **31 mai**</mark> : toutes les personnes de **18 ans et plus**.
-
-<span class="nouveau">nouveau</span> <mark>Créneaux de **dernière minute**</mark> : les personnes de 18 ans et plus, ne présentant pas de risque de forme grave, peuvent prendre rendez-vous **de la veille pour le lendemain**. Ils ne sont pas prioritaires.
 
 Pour en savoir plus :
 
