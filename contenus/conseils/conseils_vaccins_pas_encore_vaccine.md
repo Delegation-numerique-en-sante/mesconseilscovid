@@ -13,12 +13,11 @@ Trouvez les <a href="#conseils-vaccins" class="lien-vaccination">lieux de vaccin
 
 #### Quand se faire vacciner ?
 
-Le déploiement de la vaccination se fait en plusieurs phases :
+Vous pouvez vous faire vacciner **dès maintenant** :
 
-* <mark>dès maintenant</mark> :
-   * les personnes de **18 ans et plus** sans conditions.
-   * les personnes de **16 et 17 ans** présentant un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) ;
-   * les personnes au **second trimestre** de leur grossesse ;
+* si vous avez **18 ans et plus**, sans conditions ;
+* si vous avez entre **16 et 17 ans** et présentez un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) ;
+* si vous êtes au **second trimestre** de votre grossesse.
 
 Pour en savoir plus :
 

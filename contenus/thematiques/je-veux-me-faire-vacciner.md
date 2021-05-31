@@ -15,17 +15,11 @@
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-Vous pouvez vous faire vacciner <mark>dès maintenant</mark> :
-   * si vous avez **50 ans ou plus** ;
-   * si vous avez **18 ans ou plus** et que vous êtes **en surcharge pondérale** (IMC > 30), ou que vous avez [un risque](https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/publics-prioritaires-vaccin-covid-19#liste-comor) de développer une **forme grave** de Covid (diabète, cancer, etc.) ;
-   * si vous avez **16 ou 17 ans** et que vous avez un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) ;
-   * si vous êtes au **second trimestre** de votre grossesse ;
-   * si vous vivez auprès d’une personne **sévèrement immunodéprimée**.
+Vous pouvez vous faire vacciner **dès maintenant** :
 
-Sinon, si vous avez **18 ans ou plus**, et que vous n’avez **pas de risque de forme grave** :
-
-  * vous pourrez vous faire vacciner <mark>à partir du **31 mai**</mark> ;
-  * vous pouvez aussi prendre rendez-vous **de la veille pour le lendemain**, lorsqu’il reste des <mark>créneaux de **dernière minute**</mark>, mais vous ne serez pas prioritaire.
+* si vous avez **18 ans et plus**, sans conditions ;
+* si vous avez entre **16 et 17 ans** et présentez un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) ;
+* si vous êtes au **second trimestre** de votre grossesse.
 
 </div>
 </div>
