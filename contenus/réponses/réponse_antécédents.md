@@ -1,1 +1,1 @@
-<strong class="nom-antecedents"></strong> (<a href="sante" data-navigo>modifier</a>)
+<strong class="nom-antecedents"></strong> ([modifier](sante))

@@ -65,7 +65,21 @@ class CSSMixin:
         return super().list_item(text, level)
 
 
-class CustomHTMLRenderer(FrenchTypographyMixin, CSSMixin, mistune.HTMLRenderer):
+class NavigoMixin:
+    """
+    Add data-navigo attribute to internal links
+    """
+
+    def link(self, link, text=None, title=None):
+        if link.startswith(("http", "mailto")):
+            return super().link(link, text=text, title=title)
+        s = '<a href="' + self._safe_url(link) + '"'
+        if title:
+            s += ' title="' + mistune.escape_html(title) + '"'
+        return s + ' data-navigo>' + (text or link) + '</a>'
+
+
+class CustomHTMLRenderer(FrenchTypographyMixin, CSSMixin, NavigoMixin, mistune.HTMLRenderer):
     pass
 
 

@@ -67,21 +67,21 @@ Vous êtes disponible et vous souhaitez vous porter volontaire ? Inscrivez-vous
 
 ## [conseils_autosuivi_historique.md](conseils_autosuivi_historique.md)
 
-À tout moment, vous pouvez consulter <a href="suivihistorique" data-navigo>l’historique de vos symptômes</a>, par exemple pour **les partager avec votre médecin**.
+À tout moment, vous pouvez consulter [l’historique de vos symptômes](suivihistorique), par exemple pour **les partager avec votre médecin**.
 
 ---
 
-À tout moment, vous pouvez consulter <a href="suivihistorique" data-navigo>l’historique des symptômes</a> de votre proche, par exemple pour **les partager avec son médecin**.
+À tout moment, vous pouvez consulter [l’historique des symptômes](suivihistorique) de votre proche, par exemple pour **les partager avec son médecin**.
 
 
 
 ## [conseils_autosuivi_régularité.md](conseils_autosuivi_régularité.md)
 
-Nous vous conseillons de <a href="suiviintroduction" data-navigo>renseigner le questionnaire</a> **1 à 2 fois par jour**. Pour vous en souvenir, mettez un rappel sur votre téléphone ou <a href="" class="js-calendar" download="rappel-covid19.ics">ajoutez un évènement récurrent à votre calendrier</a>.
+Nous vous conseillons de [renseigner le questionnaire](suiviintroduction) **1 à 2 fois par jour**. Pour vous en souvenir, mettez un rappel sur votre téléphone ou <a href="" class="js-calendar" download="rappel-covid19.ics">ajoutez un évènement récurrent à votre calendrier</a>.
 
 ---
 
-Nous vous conseillons de <a href="suiviintroduction" data-navigo>renseigner son questionnaire</a> **1 à 2 fois par jour**. Pour vous en souvenir, mettez un rappel sur votre téléphone ou <a href="" class="js-calendar" download="rappel-covid19.ics">ajoutez un évènement récurrent à votre calendrier</a>.
+Nous vous conseillons de [renseigner son questionnaire](suiviintroduction) **1 à 2 fois par jour**. Pour vous en souvenir, mettez un rappel sur votre téléphone ou <a href="" class="js-calendar" download="rappel-covid19.ics">ajoutez un évènement récurrent à votre calendrier</a>.
 
 
 
