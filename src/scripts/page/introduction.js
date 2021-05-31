@@ -26,7 +26,7 @@ export default function introduction(element, app) {
                     <li class="profil-empty">
                         <a class="button button-full-width"
                             data-set-profil="mes_infos"
-                            href="#${app.questionnaire.firstPage}"
+                            href="${app.questionnaire.firstPage}" data-navigo
                             >Des conseils pour moi</a>
                     </li>
                 `)
@@ -37,7 +37,7 @@ export default function introduction(element, app) {
             createElementFromHTML(`
                 <li class="profil-empty">
                     <a class="button button-full-width button-outline js-profil-new"
-                        href="#nom"
+                        href="nom" data-navigo
                         >Des conseils pour un·e proche</a>
                 </li>
             `)
@@ -58,7 +58,7 @@ function renderProfilCards(container, noms, app) {
 
             const conseilsLink = card.querySelector('.conseils-link')
             if (conseilsLink) {
-                conseilsLink.setAttribute('href', '#conseils')
+                conseilsLink.setAttribute('href', 'conseils')
             }
 
             Array.from(card.querySelectorAll('[data-set-profil]')).forEach(

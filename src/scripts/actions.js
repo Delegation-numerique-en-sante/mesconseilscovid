@@ -6,7 +6,7 @@ import { estPageThematique } from './page/thematique'
 export function bindCalendar(element, profil) {
     const ics = new ICS(navigator.appVersion)
     const duration = 1 // heures bloquées sur le calendrier.
-    const urlSuivi = 'https://mesconseilscovid.sante.gouv.fr/#suiviintroduction'
+    const urlSuivi = 'https://mesconseilscovid.sante.gouv.fr/suiviintroduction'
 
     // Définition de l'évènement de début des symptômes (pas de récurrence).
     if (profil.hasSymptomesStartDate()) {
