@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-05-31
+
+* mise à jour des conseils relatifs à la vaccination
+* mise à jour des conseils relatifs au Pass sanitaire
+* mise à jour des conseils relatifs aux voyages
+
 ## 2021-05-28
 
 * ajout d’une page thématique relative au Pass sanitaire
