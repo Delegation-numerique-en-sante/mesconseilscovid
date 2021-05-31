@@ -16,4 +16,6 @@ Les conditions d’entrée sur le territoire pour les **voyageurs en provenance 
     * Avant embarquement, renforcement du dispositif de test avec présentation d’un test PCR négatif de moins de 36 h.
     * À l’arrivée en France, réalisation d’un test antigénique systématique.
     * Mise en quarantaine stricte pendant 10 jours à l’arrivée sur arrêté préfectoral, avec restrictions des horaires de sortie (10 h-12 h).
-  * Plus d’informations sont disponibles [sur diplomatie.gouv.fr](https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/informations-pratiques/article/coronavirus-covid-19).
+  * Plus d’informations sont disponibles : 
+    * [sur diplomatie.gouv.fr](https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/informations-pratiques/article/coronavirus-covid-19).
+    * sur notre page thématique : [Pass sanitaire, QR code, voyages, que faut-il retenir ?](https://mesconseilscovid.sante.gouv.fr/pass-sanitaire-qr-code-voyages.html).
