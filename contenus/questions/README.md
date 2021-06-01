@@ -873,16 +873,6 @@ Cette personne est **en cours de vaccination**
 
 
 
-## [question_vaccins_libellé.md](question_vaccins_libellé.md)
-
-Mon statut actuel de vaccination contre la Covid :
-
----
-
-Son statut actuel de vaccination contre la Covid :
-
-
-
 ## [question_vaccins_pas_encore_libellé.md](question_vaccins_pas_encore_libellé.md)
 
 Je n’ai **pas encore été vacciné·e**
@@ -895,10 +885,10 @@ Cette personne n’a **pas encore été vaccinée**
 
 ## [question_vaccins_titre.md](question_vaccins_titre.md)
 
-Ma vaccination
+Mon statut actuel de vaccination contre la Covid
 
 ---
 
-Sa vaccination
+Son statut actuel de vaccination contre la Covid
 
 

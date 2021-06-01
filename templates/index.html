@@ -151,10 +151,7 @@
 <section id="vaccins" hidden>
     <form id="vaccins-form" class="block">
         <fieldset>
-            <legend><h1>{{ question_vaccins_titre|inline|me_or_them }}</h1></legend>
-            <div id="vaccins-label" class="secondary-title">
-                {{ question_vaccins_libellé|me_or_them }}
-            </div>
+            <legend><h1 id="vaccins-label">{{ question_vaccins_titre|inline|me_or_them }}</h1></legend>
             <div role="radiogroup" aria-labelledby="vaccins-label">
                 <input id="vaccins_radio_pas_encore" type="radio" required name="vaccins_radio" value="pas_encore">
                 <label for="vaccins_radio_pas_encore">{{ question_vaccins_pas_encore_libellé|inline|me_or_them }}</label>

@@ -37,7 +37,10 @@ describe('Profils', function () {
             let legend = await page.waitForSelector(
                 '#page.ready #vaccins-form legend h1'
             )
-            assert.equal(await legend.innerText(), 'Sa vaccination')
+            assert.equal(
+                await legend.innerText(),
+                'Son statut actuel de vaccination contre la Covid'
+            )
         }
 
         // Remplir le questionnaire.
