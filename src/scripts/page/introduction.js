@@ -19,7 +19,7 @@ export default function introduction(element, app) {
             hideElement(fullContainer)
             showElement(emptyContainer)
         }
-        bindCreateProfil(emptyContainer.querySelector('[data-set-profil]'), app)
+        bindSetProfil(emptyContainer.querySelector('[data-set-profil]'), app)
         if (noms.indexOf('mes_infos') === -1) {
             const cardClassique = fullContainerList.appendChild(
                 createElementFromHTML(`
@@ -31,7 +31,7 @@ export default function introduction(element, app) {
                     </li>
                 `)
             )
-            bindCreateProfil(cardClassique.querySelector('[data-set-profil]'), app)
+            bindSetProfil(cardClassique.querySelector('[data-set-profil]'), app)
         }
         fullContainerList.appendChild(
             createElementFromHTML(`
@@ -63,7 +63,7 @@ function renderProfilCards(container, noms, app) {
 
             Array.from(card.querySelectorAll('[data-set-profil]')).forEach(
                 (profilLink) => {
-                    bindChangeProfil(profilLink, app)
+                    bindSetProfil(profilLink, app)
                 }
             )
 
@@ -72,11 +72,7 @@ function renderProfilCards(container, noms, app) {
     })
 }
 
-function bindCreateProfil(element, app) {
-    return _bindFunc(element, app, app.creerProfil.bind(app))
-}
-
-function bindChangeProfil(element, app) {
+function bindSetProfil(element, app) {
     return _bindFunc(element, app, app.basculerVersProfil.bind(app))
 }
 

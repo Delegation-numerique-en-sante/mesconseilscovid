@@ -13,7 +13,7 @@ function boutonBasculeVersMonProfil(app) {
         button.addEventListener('click', function (event) {
             event.preventDefault()
             app.plausible('Je veux des conseils personnalisés')
-            app.creerProfil('mes_infos').then(() => {
+            app.basculerVersProfil('mes_infos').then(() => {
                 window.location = event.target.getAttribute('href')
             })
         })

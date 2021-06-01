@@ -98,7 +98,13 @@ export default class App {
     }
     basculerVersProfil(nom) {
         return this.stockage.setProfilActuel(nom).then(() => {
-            return this.chargerProfil(nom)
+            return this.stockage.getProfil(nom).then((profil) => {
+                if (profil) {
+                    return this.chargerProfil(nom)
+                } else {
+                    return this.creerProfil(nom)
+                }
+            })
         })
     }
     chargerProfil(nom) {
