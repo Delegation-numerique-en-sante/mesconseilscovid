@@ -6,7 +6,7 @@
 
 <div class="conseil">
 
-Trouvez les <a href="#conseils-vaccins" class="lien-vaccination">lieux de vaccination proches de chez vous</a> ou appelez le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h) pour un accompagnement à la prise de rendez-vous.
+Trouvez les <a href="#conseils-vaccins" class="lien-vaccination">lieux de vaccination proches de chez vous</a> ou appelez le numéro vert <a href="tel:0800009110;phone-context=+33">0 800 009 110</a> (7j/7, de 6h à 22h) pour un accompagnement à la prise de rendez-vous.
 
 </div>
 

@@ -94,7 +94,7 @@ Nous vous conseillons de <a href="#suiviintroduction">renseigner son questionnai
 
 ## [conseils_contacts_utiles.md](conseils_contacts_utiles.md)
 
-La situation actuelle peut être difficile à vivre. Si vous le souhaitez, vous pouvez contacter le <a href="tel:0800190000">0800 19 00 00</a> pour une écoute et un soutien psychologique (appel gratuit, tous les jours de 9 h à 21 h).
+La situation actuelle peut être difficile à vivre. Si vous le souhaitez, vous pouvez contacter le <a href="tel:0800190000;phone-context=+33">0800 19 00 00</a> pour une écoute et un soutien psychologique (appel gratuit, tous les jours de 9 h à 21 h).
 
 
 
@@ -202,7 +202,7 @@ Certaines personnes continuent de ressentir des symptômes au-delà de 4 semain
 * [Association de patients et de chercheurs « TousPartenairesCovid »](https://touspartenairescovid.org/)
 
 
-Pour toutes vos questions sur la Covid, vous pouvez appeler le numéro vert [0 800 130 000](tel:+33800130000) (24 h/24 et 7 j/7).
+Pour toutes vos questions sur la Covid, vous pouvez appeler le numéro vert [0 800 130 000](tel:0800130000;phone-context=+33) (24 h/24 et 7 j/7).
 
 Décrypter les fausses informations ? [Désintox : la parole à la science](https://recherchecovid.enseignementsup-recherche.gouv.fr/desintox-la-parole-la-science).
 
@@ -943,7 +943,7 @@ Vous avec un traitement de longue durée ou une maladie chronique. Nous vous inv
 
 <div class="conseil">
 
-Trouvez les <a href="#conseils-vaccins" class="lien-vaccination">lieux de vaccination proches de chez vous</a> ou appelez le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h) pour un accompagnement à la prise de rendez-vous.
+Trouvez les <a href="#conseils-vaccins" class="lien-vaccination">lieux de vaccination proches de chez vous</a> ou appelez le numéro vert <a href="tel:0800009110;phone-context=+33">0 800 009 110</a> (7j/7, de 6h à 22h) pour un accompagnement à la prise de rendez-vous.
 
 </div>
 
@@ -1016,6 +1016,6 @@ Pour vos **courses**, nous vous conseillons de :
   * réaliser vos courses lors des périodes les moins fréquentées ;
   * suivre [les conseils de l’ANSES](https://www.anses.fr/fr/content/coronavirus-alimentation-courses-nettoyage-les-recommandations-de-l%E2%80%99anses).
 
-Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919">39 19</a> (appel gratuit, de 9 h à 19 h du lundi au samedi) ou le <a href="tel:17">17</a> en cas d’urgence.
+Si vous êtes victime ou témoin de **violences conjugales**, vous pouvez contacter le <a href="tel:3919;phone-context=+33">39 19</a> (appel gratuit, de 9 h à 19 h du lundi au samedi) ou le <a href="tel:17;phone-context=+33">17</a> en cas d’urgence.
 
 

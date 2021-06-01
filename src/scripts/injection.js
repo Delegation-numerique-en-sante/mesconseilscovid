@@ -43,7 +43,7 @@ export function CTAIContact(element, departement) {
     const contactHTML = []
     if (telephone) {
         contactHTML.push(
-            ` au <a href="tel:${telephone}" style="white-space: nowrap;">${telephone
+            ` au <a href="tel:${telephone};phone-context=+33" style="white-space: nowrap;">${telephone
                 .match(/.{1,2}/g)
                 .join(' ')}</a>`
         )

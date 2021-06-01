@@ -38,7 +38,7 @@ describe('Injection', function () {
 
         assert.strictEqual(
             element.innerHTML,
-            '<span id="ctai-contact-placeholder"> au <a href="tel:0470483048" style="white-space: nowrap;">04 70 48 30 48</a> ou  à l’adresse <a href="mailto:pref-ctai@allier.gouv.fr">pref-ctai@allier.gouv.fr</a></span>'
+            '<span id="ctai-contact-placeholder"> au <a href="tel:0470483048;phone-context=+33" style="white-space: nowrap;">04 70 48 30 48</a> ou  à l’adresse <a href="mailto:pref-ctai@allier.gouv.fr">pref-ctai@allier.gouv.fr</a></span>'
         )
     })
 
@@ -50,7 +50,7 @@ describe('Injection', function () {
 
         assert.strictEqual(
             element.innerHTML,
-            '<span id="ctai-contact-placeholder"> au <a href="tel:0325305252" style="white-space: nowrap;">03 25 30 52 52</a></span>'
+            '<span id="ctai-contact-placeholder"> au <a href="tel:0325305252;phone-context=+33" style="white-space: nowrap;">03 25 30 52 52</a></span>'
         )
     })
 
