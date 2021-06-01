@@ -1,5 +1,5 @@
-Ma vaccination
+Mon statut actuel de vaccination contre la Covid
 
 ---
 
-Sa vaccination
+Son statut actuel de vaccination contre la Covid
