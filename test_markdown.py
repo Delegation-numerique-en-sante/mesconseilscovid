@@ -212,6 +212,19 @@ class TestMarkdownLinks:
 
         assert markdown("[foo](http://bar)") == '<p><a href="http://bar">foo</a></p>\n'
 
+    def test_https(self):
+        from build import markdown
+
+        assert markdown("[foo](https://bar)") == '<p><a href="https://bar">foo</a></p>\n'
+
+    def test_absolute(self):
+        from build import markdown
+
+        assert (
+            markdown("[foo](/vaccins)")
+            == '<p><a href="/vaccins">foo</a></p>\n'
+        )
+
     def test_internal(self):
         from build import markdown
 

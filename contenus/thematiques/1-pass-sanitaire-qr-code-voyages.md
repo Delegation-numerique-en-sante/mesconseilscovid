@@ -365,8 +365,8 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
 Consulter nos pages thématiques :
 
-* [Je souhaite me faire vacciner, que faut-il savoir ?](je-veux-me-faire-vacciner.html)
-* [Je suis vacciné(e), que faut-il savoir ?](je-suis-vaccine.html)
+* [Je souhaite me faire vacciner, que faut-il savoir ?](/je-veux-me-faire-vacciner.html)
+* [Je suis vacciné(e), que faut-il savoir ?](/je-suis-vaccine.html)
 
 <section class="cta">
     <h3>Obtenez des conseils adaptés à votre situation en quelques clics</h3>
