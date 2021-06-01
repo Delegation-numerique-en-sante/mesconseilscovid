@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-06-01
+
+* corrections de problèmes techniques
+
 ## 2021-05-31
 
 * mise à jour des conseils relatifs à la vaccination
