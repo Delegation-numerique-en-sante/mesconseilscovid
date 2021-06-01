@@ -426,13 +426,13 @@ Son expérience avec la Covid
 
 ## [question_nom_aide.md](question_nom_aide.md)
 
-Cet identifiant (nom, pseudonyme, autre) vous permet de différencier les proches pour lesquels vous remplissez le questionnaire.
+Cet identifiant vous permet de différencier les proches pour lesquels vous remplissez le questionnaire.
 
 
 
 ## [question_nom_libellé.md](question_nom_libellé.md)
 
-Nom
+Nom (pseudonyme, autre)
 
 
 
