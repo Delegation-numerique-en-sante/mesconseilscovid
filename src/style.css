@@ -421,7 +421,7 @@ footer .legals {
     background-position: center 1rem;
     background-repeat: no-repeat;
     background-size: 35%;
-    padding: 90px 0 0 0;
+    padding: 60px 0 0 0;
 }
 #conseils-pediatrie-general summary {
     padding-top: 200px;
@@ -459,6 +459,17 @@ footer .legals {
         background-size: 15%;
         background-position: center left;
         padding: 0 0 0 8rem;
+    }
+    #conseils-tests summary,
+    #conseils-scolarite summary,
+    #conseils-deplacements summary {
+        background-size: 13%;
+    }
+    #conseils-gestes-barrieres-masque summary,
+    #conseils-sante summary,
+    #conseils-vie-quotidienne summary,
+    #conseils-pass-sanitaire summary {
+        background-size: 10%;
     }
     #conseils-pediatrie-general summary {
         padding-top: 400px;
