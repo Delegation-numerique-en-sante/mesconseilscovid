@@ -73,13 +73,9 @@ function renderProfilCards(container, noms, app) {
 }
 
 function bindSetProfil(element, app) {
-    return _bindFunc(element, app, app.basculerVersProfil.bind(app))
-}
-
-function _bindFunc(element, app, func) {
     element.addEventListener('click', function (event) {
         event.preventDefault()
-        func(element.dataset.setProfil).then(() => {
+        app.basculerVersProfil(element.dataset.setProfil).then(() => {
             app.router.navigate(event.target.getAttribute('href'))
         })
     })
