@@ -178,11 +178,29 @@ class TestQuestionDirective:
 class TestMarkdownLinks:
     def test_http(self):
         from build import markdown
+
         assert markdown("[foo](http://bar)") == '<p><a href="http://bar">foo</a></p>\n'
 
     def test_internal(self):
         from build import markdown
-        assert markdown("[foo](vaccins)") == '<p><a href="vaccins" data-navigo>foo</a></p>\n'
+
+        assert (
+            markdown("[foo](vaccins)")
+            == '<p><a href="vaccins" data-navigo>foo</a></p>\n'
+        )
+
+    def test_mailto(self):
+        from build import markdown
+
+        assert (
+            markdown("[foo](mailto:foo@example.com)")
+            == '<p><a href="mailto:foo@example.com">foo</a></p>\n'
+        )
+
+    def test_tel(self):
+        from build import markdown
+
+        assert markdown("[foo](tel:17)") == '<p><a href="tel:17">foo</a></p>\n'
 
 
 class TestMarkdownContentBlock:

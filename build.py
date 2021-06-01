@@ -71,15 +71,17 @@ class NavigoMixin:
     """
 
     def link(self, link, text=None, title=None):
-        if link.startswith(("http", "mailto")):
+        if link.startswith(("http", "mailto", "tel")):
             return super().link(link, text=text, title=title)
         s = '<a href="' + self._safe_url(link) + '"'
         if title:
             s += ' title="' + mistune.escape_html(title) + '"'
-        return s + ' data-navigo>' + (text or link) + '</a>'
+        return s + " data-navigo>" + (text or link) + "</a>"
 
 
-class CustomHTMLRenderer(FrenchTypographyMixin, CSSMixin, NavigoMixin, mistune.HTMLRenderer):
+class CustomHTMLRenderer(
+    FrenchTypographyMixin, CSSMixin, NavigoMixin, mistune.HTMLRenderer
+):
     pass
 
 
@@ -144,7 +146,6 @@ class MarkdownContent:
 
     def render_them(self, tag="div"):
         return f'<{tag} class="them" hidden>{str(self).strip()}</{tag}>'
-
 
 
 class MarkdownInlineContent(MarkdownContent):
