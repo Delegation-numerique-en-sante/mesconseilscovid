@@ -71,7 +71,7 @@ class NavigoMixin:
     """
 
     def link(self, link, text=None, title=None):
-        if link.startswith(("http", "mailto", "tel")):
+        if link.startswith(("http:", "https:", "mailto:", "tel:", "/")):
             return super().link(link, text=text, title=title)
         s = '<a href="' + self._safe_url(link) + '"'
         if title:
