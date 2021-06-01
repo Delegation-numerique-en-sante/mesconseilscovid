@@ -12,10 +12,10 @@ function boutonBasculeVersMonProfil(app) {
     if (button) {
         button.addEventListener('click', function (event) {
             event.preventDefault()
+            app.plausible('Je veux des conseils personnalisés')
             app.creerProfil('mes_infos').then(() => {
                 window.location = event.target.getAttribute('href')
             })
-            app.plausible('Je veux des conseils personnalisés')
         })
     }
 }
