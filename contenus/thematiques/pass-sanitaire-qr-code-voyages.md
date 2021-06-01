@@ -106,7 +106,7 @@ Un QR code est un code-barres 2D facile à lire par un téléphone mobile (<span
 
 **Non.** Vous pourrez à terme présenter votre « Pass sanitaire » (et plus tard votre « <span lang="en">Digital Covid Certificate</span> ») sous la forme que vous préférez :
 
-- **au format papier** : en présentant votre justificatif sur lequel figure un QR code**.
+- **au format papier** : en présentant votre justificatif sur lequel figure un QR code.
 - **au format numérique** : en présentant une photo ou un scan de votre justificatif muni d’un QR code.
 - **dans l’application TousAntiCovid** : en numérisant votre justificatif grâce au QR code, dans la rubrique Carnet. Pour le moment, ce format n’est pas encore disponible pour les voyages internationaux.
 
