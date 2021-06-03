@@ -689,11 +689,11 @@ Il ou elle a fait ou reçu des actes d’hygiène ou de soins
 
 ## [question_symptômes_contact_à_risque_assurance_maladie_libellé.md](question_symptômes_contact_à_risque_assurance_maladie_libellé.md)
 
-J’ai été informé·e par l’**Assurance Maladie** que je suis « cas contact »
+Je viens d’être informé·e par l’**Assurance Maladie** que je suis « cas contact »
 
 ---
 
-Il ou elle a été informé·e par l’**Assurance Maladie** qu’il ou elle est « cas contact »
+Il ou elle vient d’être informé·e par l’**Assurance Maladie** qu’il ou elle est « cas contact »
 
 
 
@@ -764,11 +764,11 @@ Il ou elle partage le même lieu de vie que cette personne
 
 ## [question_symptômes_contact_à_risque_stop_covid_libellé.md](question_symptômes_contact_à_risque_stop_covid_libellé.md)
 
-J’ai reçu la notification **TousAntiCovid** suivante :<br> « Exposition à risque suite à un contact : vous êtes un contact à risque »
+Je viens de recevoir la notification **TousAntiCovid** suivante :<br> « Exposition à risque suite à un contact : vous êtes un contact à risque »
 
 ---
 
-Il ou elle a reçu la notification **TousAntiCovid** suivante :<br> « Exposition à risque suite à un contact : vous êtes un contact à risque »
+Il ou elle vient de recevoir la notification **TousAntiCovid** suivante :<br> « Exposition à risque suite à un contact : vous êtes un contact à risque »
 
 
 
