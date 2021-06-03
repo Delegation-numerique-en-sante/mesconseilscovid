@@ -61,6 +61,30 @@ Pour savoir comment prendre rendez-vous dans les lieux de vaccination proches de
 </div>
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
+<h2 itemprop="name">Pourrai-je recevoir la 2<sup>e</sup> dose sur mon lieu de vacances ?</h2>
+
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+
+Pour éviter de surcharger les centres de vaccination des régions touristiques, il est préférable de recevoir la 2<sup>e</sup> dose dans le même centre de vaccination que la 1<sup>re</sup>.
+
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
+<h2 itemprop="name">Que faire si mon rendez-vous pour la 2<sup>e</sup> dose tombe pendant mes vacances ?</h2>
+
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+
+La 2<sup>e</sup> injection est habituellement fixée 7 semaines après la 1<sup>re</sup>. Il est prévu de permettre de la décaler, pour qu’elle puisse avoir lieu entre 6 et 8 semaines après la 1<sup>re</sup> (soit une période de battement de deux semaines autour de la date normale).
+
+</div>
+</div>
+</div>
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+
 <h2 itemprop="name">Quels sont les effets secondaires des vaccins contre la Covid ?</h2>
 
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
@@ -126,7 +150,6 @@ Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection
 </div>
 </div>
 </div>
-
 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
 <h2 itemprop="name">Est-ce que je peux attraper la Covid si je suis vacciné·e ?</h2>
