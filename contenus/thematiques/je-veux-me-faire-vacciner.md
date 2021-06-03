@@ -15,11 +15,14 @@
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
+<span class="nouveau">nouveau</span> Les personnes de 12 à 18 ans pourront se faire vacciner dès le 15 juin.
+
 Vous pouvez vous faire vacciner **dès maintenant** :
 
 * si vous avez **18 ans et plus**, sans conditions ;
-* si vous avez entre **16 et 17 ans** et présentez un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) ;
-* si vous êtes au **second trimestre** de votre grossesse.
+* si vous avez entre **16 et 17 ans** et présentez un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.), ou si vous vivez sous le même toit qu’une personne immunodéprimée (dialysée, ayant reçu une transplantation d’organe ou de moelle osseuse, traitée par des médicaments immunosuppresseurs forts), ou que vous lui apportez une aide quotidienne ;
+* si vous êtes **enceinte**, à partir du second trimestre de votre grossesse.
+
 
 </div>
 </div>
