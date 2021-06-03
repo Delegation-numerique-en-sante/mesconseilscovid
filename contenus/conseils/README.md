@@ -937,9 +937,11 @@ Vous avec un traitement de longue durée ou une maladie chronique. Nous vous inv
 
 #### Où se faire vacciner ?
 
-* Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech* ou *Moderna*.
+* Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech*.
 
-* Chez son **médecin traitant**, en cabinet infirmier, ou en pharmacie, avec un vaccin *AstraZeneca* ou *Janssen* (pour les personnes de **55 ans et plus**).
+* Chez son **médecin traitant**, en cabinet infirmier, ou en pharmacie :
+    * avec un vaccin *Moderna*,
+    * avec un vaccin *AstraZeneca* ou *Janssen* (si vous avez **55 ans ou plus**).
 
 <div class="conseil">
 
