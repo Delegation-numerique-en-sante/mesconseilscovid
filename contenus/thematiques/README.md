@@ -233,9 +233,11 @@ Vous pouvez vous faire vacciner **dès maintenant** :
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-* Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech* ou *Moderna*.
+* Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech*.
 
-* Chez votre **médecin traitant**, en cabinet infirmier, ou en pharmacie, avec un vaccin *AstraZeneca* ou *Janssen* (si vous avez **55 ans ou plus**).
+* Chez votre **médecin traitant**, en cabinet infirmier, ou en pharmacie :
+    * avec un vaccin *Moderna*,
+    * avec un vaccin *AstraZeneca* ou *Janssen* (si vous avez **55 ans ou plus**).
 
 Trouvez les lieux de vaccination proches de chez vous sur le site [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou en appelant le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h).
 
