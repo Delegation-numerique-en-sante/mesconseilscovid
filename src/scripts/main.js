@@ -52,7 +52,7 @@ function initLiensRoleButton() {
         // A11Y: lorsque le focus est sur un lien avec un role="button"
         // on veut que la touche espace ait le même comportement que sur
         // un <button> classique : que ça soumette l’action, d’où le clic.
-        if (event.code === 'Space') {
+        if (event.key === ' ' || event.key === 'Spacebar') {
             if (
                 document.activeElement.hasAttribute('role') &&
                 document.activeElement.getAttribute('role') === 'button'
