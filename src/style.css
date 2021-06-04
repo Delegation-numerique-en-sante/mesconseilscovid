@@ -242,6 +242,7 @@ legend h1 {
 .block ul.cards {
     padding: 0;
     margin: auto;
+    max-width: none;
 }
 .card {
     border: thin solid #ccc;
@@ -289,7 +290,7 @@ legend h1 {
     margin: 1rem;
 }
 .block .thematiques .cards {
-    margin: 0;
+    margin: 0 auto;
 }
 .thematiques .cards > li {
     display: block;
