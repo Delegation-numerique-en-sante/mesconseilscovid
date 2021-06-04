@@ -77,9 +77,11 @@ class QuestionDirective(Directive):
     """
     def parse(self, block, m, state):
         question = m.group('value')
+        options = self.parse_options(m)
+        level = int(dict(options).get('level')) if options else 2
         text = self.parse_text(m)
         children = block.parse(text, state, block.rules)
-        return {'type': 'question', 'children': children, 'params': (question,)}
+        return {'type': 'question', 'children': children, 'params': (question, level)}
 
     def __call__(self, md):
         self.register_directive(md, 'question')
@@ -87,9 +89,9 @@ class QuestionDirective(Directive):
             md.renderer.register('question', render_html_question)
 
 
-def render_html_question(text, question):
+def render_html_question(text, question, level):
     return f"""<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-<h2 itemprop="name">{question}</h2>
+<h{level} itemprop="name">{question}</h{level}>
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 {text}</div>
