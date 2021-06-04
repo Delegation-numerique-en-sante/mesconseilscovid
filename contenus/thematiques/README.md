@@ -74,7 +74,7 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
     <img src="illustrations/vaccins.svg" alt="">
 </div>
 
-<div id="conseils-personnels" class="conseils">
+<div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
 
 <big>Vous êtes vacciné·e contre la Covid et vous vous posez des questions sur le masque, l’isolement, les contacts à risque (cas contact), la contagion (immunité), ou encore le certificat de vaccination (pass sanitaire) ?</big>
 
@@ -147,7 +147,7 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
     <img src="illustrations/symptomespasses.svg" alt="">
 </div>
 
-<div id="conseils-personnels" class="conseils">
+<div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
 
 <big>Vous souhaitez vous faire vacciner contre la Covid ? Voici des réponses à quelques questions courantes sur l’immunité, les effets secondaires et vos antécédents avec la Covid :</big>
 
@@ -351,7 +351,7 @@ Si votre logement ne permet pas d’isoler la personne positive (adulte) du rest
     <img src="illustrations/pass_sanitaire.svg" alt="">
 </div>
 
-<div id="conseils-personnels" class="conseils">
+<div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
 
 <big>Pass sanitaire, certificat de vaccination, voyage, QR code… MesConseilsCovid vous propose une synthèse des informations importantes. Vacciné⸱e ou non, ces informations peuvent vous intéresser.</big>
 

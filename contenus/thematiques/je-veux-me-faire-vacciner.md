@@ -4,7 +4,7 @@
     <img src="illustrations/symptomespasses.svg" alt="">
 </div>
 
-<div id="conseils-personnels" class="conseils">
+<div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
 
 <big>Vous souhaitez vous faire vacciner contre la Covid ? Voici des réponses à quelques questions courantes sur l’immunité, les effets secondaires et vos antécédents avec la Covid :</big>
 

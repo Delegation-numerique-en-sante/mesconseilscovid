@@ -4,7 +4,7 @@
     <img src="illustrations/pass_sanitaire.svg" alt="">
 </div>
 
-<div id="conseils-personnels" class="conseils">
+<div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
 
 <big>Pass sanitaire, certificat de vaccination, voyage, QR code… MesConseilsCovid vous propose une synthèse des informations importantes. Vacciné⸱e ou non, ces informations peuvent vous intéresser.</big>
 
