@@ -13,6 +13,7 @@ import mistune
 from jinja2 import Environment as JinjaEnv
 from jinja2 import FileSystemLoader, StrictUndefined
 from minicli import cli, run, wrap
+from mistune.directives import Directive
 
 from typographie import typographie
 
@@ -68,8 +69,38 @@ class CustomHTMLRenderer(FrenchTypographyMixin, CSSMixin, mistune.HTMLRenderer):
     pass
 
 
+class QuestionDirective(Directive):
+    """
+    Balisage FAQ pour les questions réponses
+
+    https://developers.google.com/search/docs/data-types/faqpage?hl=fr
+    """
+    def parse(self, block, m, state):
+        question = m.group('value')
+        text = self.parse_text(m)
+        children = block.parse(text, state, block.rules)
+        return {'type': 'question', 'children': children, 'params': (question,)}
+
+    def __call__(self, md):
+        self.register_directive(md, 'question')
+        if md.renderer.NAME == 'html':
+            md.renderer.register('question', render_html_question)
+
+
+def render_html_question(text, question):
+    return f"""<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h2 itemprop="name">{question}</h2>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+{text}</div>
+</div>
+</div>
+"""
+
+
 markdown = mistune.create_markdown(
     renderer=CustomHTMLRenderer(escape=False),
+    plugins=[QuestionDirective()],
 )
 
 

@@ -100,6 +100,42 @@ def test_block_html():
     )
 
 
+def test_question_directive():
+    from build import markdown
+
+    assert (
+        markdown(
+            dedent(
+                """\
+                .. question:: Quand pourrai-je me faire vacciner ?
+
+                    Vous pouvez vous faire vacciner **dès maintenant** :
+
+                    * si vous avez **18 ans et plus**, sans conditions ;
+                    * si vous avez entre **16 et 17 ans** et présentez un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.) ;
+                    * si vous êtes au **second trimestre** de votre grossesse.
+                """
+            )
+        )
+        == dedent(
+            """\
+            <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h2 itemprop="name">Quand pourrai-je me faire vacciner ?</h2>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div itemprop="text">
+            <p>Vous pouvez vous faire vacciner <strong>dès maintenant</strong>&nbsp;:</p>
+            <ul>
+            <li>si vous avez <strong>18&nbsp;ans et plus</strong>, sans conditions&#8239;;</li>
+            <li>si vous avez entre <strong>16&nbsp;et 17&nbsp;ans</strong> et présentez un risque de développer une <strong>forme très grave</strong> de Covid (cancer, dialyse, trisomie 21, etc.)&#8239;;</li>
+            <li>si vous êtes au <strong>second trimestre</strong> de votre grossesse.</li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            """
+        )
+    )
+
 class TestMarkdownContentBlock:
     def test_render_block(self):
         from build import MarkdownContent, markdown
