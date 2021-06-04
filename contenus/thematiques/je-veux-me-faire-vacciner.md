@@ -78,7 +78,7 @@ Pour éviter de surcharger les centres de vaccination des régions touristiques,
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 
-La 2<sup>e</sup> injection est habituellement fixée 7 semaines après la 1<sup>re</sup>. Il est prévu de permettre de la décaler, pour qu’elle puisse avoir lieu entre 6 et 8 semaines après la 1<sup>re</sup> (soit une période de battement de deux semaines autour de la date normale).
+Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée 6 semaines après la première. Il est prévu de permettre de la décaler jusqu’à 2 semaines, pour qu’elle puisse avoir lieu entre 6 et 8 semaines après la première.
 
 </div>
 </div>
