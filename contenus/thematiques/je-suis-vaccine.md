@@ -4,7 +4,7 @@
     <img src="illustrations/vaccins.svg" alt="">
 </div>
 
-<div id="conseils-personnels" class="conseils">
+<div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
 
 <big>Vous êtes vacciné·e contre la Covid et vous vous posez des questions sur le masque, l’isolement, les contacts à risque (cas contact), la contagion (immunité), ou encore le certificat de vaccination (pass sanitaire) ?</big>
 
