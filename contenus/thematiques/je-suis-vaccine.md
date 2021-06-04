@@ -10,106 +10,50 @@
 
 <big>Voici les réponses à vos questions :</big>
 
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">Pourquoi continuer à porter le masque quand on est vacciné·e ?</h2>
+.. question:: Pourquoi continuer à porter le masque quand on est vacciné·e ?
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+    La vaccination prémunit contre les formes graves et symptomatiques de la maladie, mais **elle n’empêche ni de la contracter ni de la transmettre**. Vous pouvez être malade, sans le savoir. Même vacciné, il faut continuer à porter le masque et à respecter les gestes barrières pour protéger ceux qui ne le sont pas.
 
-La vaccination prémunit contre les formes graves et symptomatiques de la maladie, mais **elle n’empêche ni de la contracter ni de la transmettre**. Vous pouvez être malade, sans le savoir. Même vacciné, il faut continuer à porter le masque et à respecter les gestes barrières pour protéger ceux qui ne le sont pas.
 
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+.. question:: Est-ce que je dois m’isoler si je suis « cas contact »  et vacciné·e ?
 
-<h2 itemprop="name">Est-ce que je dois m’isoler si je suis « cas contact »  et vacciné·e ?</h2>
+    Même vacciné·e, en cas de contact à risque avec une personne positive à la Covid, vous êtes considéré·e comme étant « [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#introduction) » : il faut **vous faire tester et vous isoler** immédiatement.
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
 
-Même vacciné·e, en cas de contact à risque avec une personne positive à la Covid, vous êtes considéré·e comme étant « [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#introduction) » : il faut **vous faire tester et vous isoler** immédiatement.
+.. question:: Est-ce que la vaccination rend malade et contagieux ?
 
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    **Non**, il n’y a pas de virus actif dans les vaccins. Vous pouvez ressentir des effets secondaires (fièvre, fatigue…) suite à la vaccination, mais vous n’êtes **ni malade, ni contagieux**.
 
-<h2 itemprop="name">Est-ce que la vaccination rend malade et contagieux ?</h2>
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+.. question:: Mon test PCR est positif, est-ce que c’est un effet du vaccin ?
 
-**Non**, il n’y a pas de virus actif dans les vaccins. Vous pouvez ressentir des effets secondaires (fièvre, fatigue…) suite à la vaccination, mais vous n’êtes **ni malade, ni contagieux**.
+    **La vaccination ne rend pas malade.** Si vous avez réalisé un test PCR et qu’il est positif, il est probable que vous ayez été contaminé avant la vaccination (entre les deux doses ou juste après la 2<sup>e</sup> dose), ou avant que la protection soit maximale.
 
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">Mon test PCR est positif, est-ce que c’est un effet du vaccin ?</h2>
+.. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+    Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un **délai de 3 à 6 mois** après l’infection.
 
-**La vaccination ne rend pas malade.** Si vous avez réalisé un test PCR et qu’il est positif, il est probable que vous ayez été contaminé avant la vaccination (entre les deux doses ou juste après la 2<sup>e</sup> dose), ou avant que la protection soit maximale.
 
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+.. question:: J’ai perdu ou je n’ai pas reçu d'attestation de vaccination, comment faire ?
 
-<h2 itemprop="name">J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?</h2>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
-Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un **délai de 3 à 6 mois** après l’infection.
+    Grâce à votre numéro de sécurité sociale, vous pouvez télécharger un nouveau certificat de vaccination sur le téléservice de l’Assurance maladie : [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
     
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">J’ai perdu ou je n’ai pas reçu d'attestation de vaccination, comment faire ?</h2>
+ .. question:: Mon certificat de vaccination ne comporte pas de QR code, comment faire ?
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-    
-Grâce à votre numéro de sécurité sociale, vous pouvez télécharger un nouveau certificat de vaccination sur le téléservice de l’Assurance maladie : [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
-    
- </div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-<h2 itemprop="name">Mon certificat de vaccination ne comporte pas de QR code, comment faire ?</h2>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
- Vous pouvez télécharger un nouveau certificat depuis [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/). 
+     Vous pouvez télécharger un nouveau certificat depuis [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
  
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">Est-ce que je peux voyager une fois vacciné·e ?</h2>
+.. question:: Est-ce que je peux voyager une fois vacciné·e ?
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+    Pour voyager, certains pays pourront notamment demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** (ou pass sanitaire) au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionel de santé qui vous a vacciné.
 
-Pour voyager, certains pays pourront notamment demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** (ou pass sanitaire) au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionel de santé qui vous a vacciné. 
+    En attendant la mise en application de ce dispositif, un test négatif récent vous permettra de voyager. Pour en savoir plus sur le **pass sanitaire**, rendez-vous sur [cette page dédiée](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions).
 
-En attendant la mise en application de ce dispositif, un test négatif récent vous permettra de voyager. Pour en savoir plus sur le **pass sanitaire**, rendez-vous sur [cette page dédiée](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions).
+    Nous vous conseillons de vérifier directement auprès des autorités du pays de destination les conditions d’accès sur leur territoire (tests, quarantaine, vaccin…), en consultant  par exemple le site internet de l’ambassade ou du consulat.
 
-Nous vous conseillons de vérifier directement auprès des autorités du pays de destination les conditions d’accès sur leur territoire (tests, quarantaine, vaccin…), en consultant  par exemple le site internet de l’ambassade ou du consulat. 
-
-</div>
-</div>
-</div>
 
 ## Vous avez encore des questions ?
 

@@ -80,106 +80,50 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 
 <big>Voici les réponses à vos questions :</big>
 
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">Pourquoi continuer à porter le masque quand on est vacciné·e ?</h2>
+.. question:: Pourquoi continuer à porter le masque quand on est vacciné·e ?
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+    La vaccination prémunit contre les formes graves et symptomatiques de la maladie, mais **elle n’empêche ni de la contracter ni de la transmettre**. Vous pouvez être malade, sans le savoir. Même vacciné, il faut continuer à porter le masque et à respecter les gestes barrières pour protéger ceux qui ne le sont pas.
 
-La vaccination prémunit contre les formes graves et symptomatiques de la maladie, mais **elle n’empêche ni de la contracter ni de la transmettre**. Vous pouvez être malade, sans le savoir. Même vacciné, il faut continuer à porter le masque et à respecter les gestes barrières pour protéger ceux qui ne le sont pas.
 
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+.. question:: Est-ce que je dois m’isoler si je suis « cas contact »  et vacciné·e ?
 
-<h2 itemprop="name">Est-ce que je dois m’isoler si je suis « cas contact »  et vacciné·e ?</h2>
+    Même vacciné·e, en cas de contact à risque avec une personne positive à la Covid, vous êtes considéré·e comme étant « [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#introduction) » : il faut **vous faire tester et vous isoler** immédiatement.
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
 
-Même vacciné·e, en cas de contact à risque avec une personne positive à la Covid, vous êtes considéré·e comme étant « [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#introduction) » : il faut **vous faire tester et vous isoler** immédiatement.
+.. question:: Est-ce que la vaccination rend malade et contagieux ?
 
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    **Non**, il n’y a pas de virus actif dans les vaccins. Vous pouvez ressentir des effets secondaires (fièvre, fatigue…) suite à la vaccination, mais vous n’êtes **ni malade, ni contagieux**.
 
-<h2 itemprop="name">Est-ce que la vaccination rend malade et contagieux ?</h2>
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+.. question:: Mon test PCR est positif, est-ce que c’est un effet du vaccin ?
 
-**Non**, il n’y a pas de virus actif dans les vaccins. Vous pouvez ressentir des effets secondaires (fièvre, fatigue…) suite à la vaccination, mais vous n’êtes **ni malade, ni contagieux**.
+    **La vaccination ne rend pas malade.** Si vous avez réalisé un test PCR et qu’il est positif, il est probable que vous ayez été contaminé avant la vaccination (entre les deux doses ou juste après la 2<sup>e</sup> dose), ou avant que la protection soit maximale.
 
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">Mon test PCR est positif, est-ce que c’est un effet du vaccin ?</h2>
+.. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+    Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un **délai de 3 à 6 mois** après l’infection.
 
-**La vaccination ne rend pas malade.** Si vous avez réalisé un test PCR et qu’il est positif, il est probable que vous ayez été contaminé avant la vaccination (entre les deux doses ou juste après la 2<sup>e</sup> dose), ou avant que la protection soit maximale.
 
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+.. question:: J’ai perdu ou je n’ai pas reçu d'attestation de vaccination, comment faire ?
 
-<h2 itemprop="name">J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?</h2>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
-Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un **délai de 3 à 6 mois** après l’infection.
+    Grâce à votre numéro de sécurité sociale, vous pouvez télécharger un nouveau certificat de vaccination sur le téléservice de l’Assurance maladie : [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
     
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">J’ai perdu ou je n’ai pas reçu d'attestation de vaccination, comment faire ?</h2>
+ .. question:: Mon certificat de vaccination ne comporte pas de QR code, comment faire ?
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-    
-Grâce à votre numéro de sécurité sociale, vous pouvez télécharger un nouveau certificat de vaccination sur le téléservice de l’Assurance maladie : [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
-    
- </div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-<h2 itemprop="name">Mon certificat de vaccination ne comporte pas de QR code, comment faire ?</h2>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
- Vous pouvez télécharger un nouveau certificat depuis [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/). 
+     Vous pouvez télécharger un nouveau certificat depuis [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
  
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">Est-ce que je peux voyager une fois vacciné·e ?</h2>
+.. question:: Est-ce que je peux voyager une fois vacciné·e ?
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+    Pour voyager, certains pays pourront notamment demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** (ou pass sanitaire) au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionel de santé qui vous a vacciné.
 
-Pour voyager, certains pays pourront notamment demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** (ou pass sanitaire) au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionel de santé qui vous a vacciné. 
+    En attendant la mise en application de ce dispositif, un test négatif récent vous permettra de voyager. Pour en savoir plus sur le **pass sanitaire**, rendez-vous sur [cette page dédiée](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions).
 
-En attendant la mise en application de ce dispositif, un test négatif récent vous permettra de voyager. Pour en savoir plus sur le **pass sanitaire**, rendez-vous sur [cette page dédiée](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions).
+    Nous vous conseillons de vérifier directement auprès des autorités du pays de destination les conditions d’accès sur leur territoire (tests, quarantaine, vaccin…), en consultant  par exemple le site internet de l’ambassade ou du consulat.
 
-Nous vous conseillons de vérifier directement auprès des autorités du pays de destination les conditions d’accès sur leur territoire (tests, quarantaine, vaccin…), en consultant  par exemple le site internet de l’ambassade ou du consulat. 
-
-</div>
-</div>
-</div>
 
 ## Vous avez encore des questions ?
 
@@ -207,160 +151,81 @@ Nous vous conseillons de vérifier directement auprès des autorités du pays de
 
 <big>Vous souhaitez vous faire vacciner contre la Covid ? Voici des réponses à quelques questions courantes sur l’immunité, les effets secondaires et vos antécédents avec la Covid :</big>
 
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+.. question:: Quand pourrai-je me faire vacciner ?
 
-<h2 itemprop="name">Quand pourrai-je me faire vacciner ?</h2>
+    <span class="nouveau">nouveau</span> Les personnes de 12 à 18 ans pourront se faire vacciner dès le 15 juin.
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+    Vous pouvez vous faire vacciner **dès maintenant** :
 
-<span class="nouveau">nouveau</span> Les personnes de 12 à 18 ans pourront se faire vacciner dès le 15 juin.
-
-Vous pouvez vous faire vacciner **dès maintenant** :
-
-* si vous avez **18 ans et plus**, sans conditions ;
-* si vous avez entre **16 et 17 ans** et présentez un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.), ou si vous vivez sous le même toit qu’une personne immunodéprimée (dialysée, ayant reçu une transplantation d’organe ou de moelle osseuse, traitée par des médicaments immunosuppresseurs forts), ou que vous lui apportez une aide quotidienne ;
-* si vous êtes **enceinte**, à partir du second trimestre de votre grossesse.
+    * si vous avez **18 ans et plus**, sans conditions ;
+    * si vous avez entre **16 et 17 ans** et présentez un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.), ou si vous vivez sous le même toit qu’une personne immunodéprimée (dialysée, ayant reçu une transplantation d’organe ou de moelle osseuse, traitée par des médicaments immunosuppresseurs forts), ou que vous lui apportez une aide quotidienne ;
+    * si vous êtes **enceinte**, à partir du second trimestre de votre grossesse.
 
 
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+.. question:: Où me faire vacciner ?
 
-<h2 itemprop="name">Où me faire vacciner ?</h2>
+    * Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech*.
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+    * Chez votre **médecin traitant**, en cabinet infirmier, ou en pharmacie :
+        * avec un vaccin *Moderna*,
+        * avec un vaccin *AstraZeneca* ou *Janssen* (si vous avez **55 ans ou plus**).
 
-* Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech*.
+    Trouvez les lieux de vaccination proches de chez vous sur le site [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou en appelant le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h).
 
-* Chez votre **médecin traitant**, en cabinet infirmier, ou en pharmacie :
-    * avec un vaccin *Moderna*,
-    * avec un vaccin *AstraZeneca* ou *Janssen* (si vous avez **55 ans ou plus**).
 
-Trouvez les lieux de vaccination proches de chez vous sur le site [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou en appelant le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h).
+.. question:: Comment prendre rendez-vous pour me faire vacciner ?
 
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    Les centres de vaccination proposent une prise de rendez-vous par internet (via une des trois plateformes Doctolib, Keldoc ou Maiia) ou par téléphone.
 
-<h2 itemprop="name">Comment prendre rendez-vous pour me faire vacciner ?</h2>
+    Pour savoir comment prendre rendez-vous dans les lieux de vaccination proches de chez vous, consultez [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou appelez le numéro vert <a href="tel:0800009110">0 800 009 110</a> pour être accompagné dans votre prise de rendez-vous.
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
 
-Les centres de vaccination proposent une prise de rendez-vous par internet (via une des trois plateformes Doctolib, Keldoc ou Maiia) ou par téléphone.
+.. question:: Pourrai-je recevoir la 2<sup>e</sup> dose sur mon lieu de vacances ?
 
-Pour savoir comment prendre rendez-vous dans les lieux de vaccination proches de chez vous, consultez [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou appelez le numéro vert <a href="tel:0800009110">0 800 009 110</a> pour être accompagné dans votre prise de rendez-vous.
+    Pour éviter de surcharger les centres de vaccination des régions touristiques, il est préférable de recevoir la 2<sup>e</sup> dose dans le même centre de vaccination que la 1<sup>re</sup>.
 
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">Pourrai-je recevoir la 2<sup>e</sup> dose sur mon lieu de vacances ?</h2>
+.. question:: Que faire si mon rendez-vous pour la 2<sup>e</sup> dose tombe pendant mes vacances ?
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+    Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée 6 semaines après la première. Il est prévu de permettre de la décaler jusqu’à 2 semaines, pour qu’elle puisse avoir lieu entre 6 et 8 semaines après la première.
 
-Pour éviter de surcharger les centres de vaccination des régions touristiques, il est préférable de recevoir la 2<sup>e</sup> dose dans le même centre de vaccination que la 1<sup>re</sup>.
 
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+.. question:: Quels sont les effets secondaires des vaccins contre la Covid ?
 
-<h2 itemprop="name">Que faire si mon rendez-vous pour la 2<sup>e</sup> dose tombe pendant mes vacances ?</h2>
+    Comme tout médicament, **vous pourrez ressentir des effets secondaires**. Les plus fréquents sont : une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des malaises, de la fièvre modérée et des frissons. Ils disparaissent le plus souvent au bout de 2 à 3 jours. Si vos symptômes vous inquiètent, contactez votre médecin traitant ou le 15 en cas d’urgence.
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
 
-Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée 6 semaines après la première. Il est prévu de permettre de la décaler jusqu’à 2 semaines, pour qu’elle puisse avoir lieu entre 6 et 8 semaines après la première.
+.. question:: Suis-je immunisé·e après une seule dose de vaccin ?
 
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    Les schémas de vaccination des vaccins Moderna, Comirnaty (Pfizer) et AstraZeneca prévoient l’injection de **2 doses pour une vaccination efficace**. Sans le rappel vaccinal (2<sup>e</sup> dose), votre vaccination n’est pas complète.
 
-<h2 itemprop="name">Quels sont les effets secondaires des vaccins contre la Covid ?</h2>
+    Il existe des exceptions :
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+    * une personne qui a eu la Covid il y a moins de 6 mois, ne nécessite qu’une seule dose de vaccin au lieu des 2 pour être vaccinée.
+    * une personne fortement immunodéprimée recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné·e par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
 
-Comme tout médicament, **vous pourrez ressentir des effets secondaires**. Les plus fréquents sont : une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des malaises, de la fièvre modérée et des frissons. Ils disparaissent le plus souvent au bout de 2 à 3 jours. Si vos symptômes vous inquiètent, contactez votre médecin traitant ou le 15 en cas d’urgence.
+    Le vaccin Janssen ne nécessite qu’une seule dose.
 
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">Suis-je immunisé·e après une seule dose de vaccin ?</h2>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
-Les schémas de vaccination des vaccins Moderna, Comirnaty (Pfizer) et AstraZeneca prévoient l’injection de **2 doses pour une vaccination efficace**. Sans le rappel vaccinal (2<sup>e</sup> dose), votre vaccination n’est pas complète.
-
-Il existe des exceptions :
-
-* une personne qui a eu la Covid il y a moins de 6 mois, ne nécessite qu’une seule dose de vaccin au lieu des 2 pour être vaccinée.
-* une personne fortement immunodéprimée recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné·e par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
-
-Le vaccin Janssen ne nécessite qu’une seule dose.
-
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-<h2 itemprop="name">Je suis cas contact, puis-je me faire vacciner (1<sup>re</sup> ou 2<sup>e</sup> dose) ?</h2>
+.. question:: Je suis cas contact, puis-je me faire vacciner (1<sup>re</sup> ou 2<sup>e</sup> dose) ?
  
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+     **Non.** Si vous êtes [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html) ou avez été alerté·e d’un contact à risque par l’application TousAntiCovid, **vous ne devez pas vous faire vacciner**. Il faut d’abord vous assurer que vous n’avez pas été contaminé·e en faisant un test 7 jours après votre dernier contact à risque. Si ce test de dépistage est négatif, alors vous pourrez vous faire vacciner.
     
- **Non.** Si vous êtes [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html) ou avez été alerté·e d’un contact à risque par l’application TousAntiCovid, **vous ne devez pas vous faire vacciner**. Il faut d’abord vous assurer que vous n’avez pas été contaminé·e en faisant un test 7 jours après votre dernier contact à risque. Si ce test de dépistage est négatif, alors vous pourrez vous faire vacciner.
+
+.. question:: J’ai déjà eu la Covid, dois-je me faire vacciner (1<sup>re</sup> dose) ?
+
+    **Oui.** Si vous avez eu la Covid : une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum 3 mois après la maladie, idéalement 6 mois pour une efficacité maximale.
     
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">J’ai déjà eu la Covid, dois-je me faire vacciner (1<sup>re</sup> dose) ?</h2>
+.. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+    Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un **délai de 3 à 6 mois** après l’infection.
 
-**Oui.** Si vous avez eu la Covid : une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum 3 mois après la maladie, idéalement 6 mois pour une efficacité maximale.
-    
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 
-<h2 itemprop="name">J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?</h2>
+.. question:: Est-ce que je peux attraper la Covid si je suis vacciné·e ?
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+    **Oui.** La vaccination vous protège contre les formes graves de la maladie, mais elle n’empêche pas d’attraper la Covid ni de la transmettre à vos proches. C’est pourquoi, même vacciné·e, il faut continuer à porter le masque, respecter les gestes barrières et la prévention (test et isolement si vous ressentez des symptômes ou si vous êtes cas contact…).
 
-Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un **délai de 3 à 6 mois** après l’infection.
-
-</div>
-</div>
-</div>
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-<h2 itemprop="name">Est-ce que je peux attraper la Covid si je suis vacciné·e ?</h2>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
-**Oui.** La vaccination vous protège contre les formes graves de la maladie, mais elle n’empêche pas d’attraper la Covid ni de la transmettre à vos proches. C’est pourquoi, même vacciné·e, il faut continuer à porter le masque, respecter les gestes barrières et la prévention (test et isolement si vous ressentez des symptômes ou si vous êtes cas contact…).
-
-</div>
-</div>
-</div>
 
 ## Vous avez encore des questions ?
 
@@ -492,218 +357,123 @@ Si votre logement ne permet pas d’isoler la personne positive (adulte) du rest
 
 ## Le « Pass sanitaire » (en France) ou « <span lang="en">Digital Covid Certificate</span> » (dans l’Union européenne)
 
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+.. question:: Qu’est-ce que le « Pass sanitaire » ?
+    :level: 3
 
-<h3 itemprop="name">Qu’est-ce que le « Pass sanitaire » ?</h3>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
-C’est une preuve de **non-contamination** ou d’**immunité** à la Covid, présentée sous forme d’un code à scanner (2D-DOC ou QR code). Au niveau européen, le Pass sanitaire est intitulé « <span lang="en">Digital Covid Certificate</span> ».
-
-</div>
-</div>
-</div>
-
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-<h3 itemprop="name">À quoi sert le « Pass sanitaire » ?</h3>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
-Il permet d’authentifier les informations sur votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) lors d’un contrôle.
-
-* En France : il est obligatoire pour participer à des évènements rassemblant plus de 1 000 personnes (festivals, conférences, salons…).
-* Dans l’Union européenne : il facilitera les voyages entre les pays membres.
-
-</div>
-</div>
-</div>
-
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-<h3 itemprop="name">Le « Pass sanitaire » ou le « <span lang="en">Digital Covid Certificate</span> » sont-ils déjà en application ?</h3>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
- 
-**En France**, le « Pass sanitaire » sera en application à partir du **3 juin**.
-
-L’utilisation du « Pass sanitaire » en **Union européenne**, sous le nom « <span lang="en">Digital Covid Certificate</span> » débutera **à partir de juillet**.
-
-</div>
-</div>
-</div>
-
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-<h3 itemprop="name">Quels justificatifs pourront constituer un « Pass sanitaire » ?</h3>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
-À terme, **3 types de justificatifs** pourront constituer le « Pass sanitaire » grâce à un QR code intégré : 
-
-- **Non-contamination** : le résultat négatif d’un test RT-PCR ou antigénique de moins de 48 heures.
-- **Certificat de rétablissement** : le résultat positif d’un test RT-PCR ou antigénique de plus de 15 jours et de moins de 2 mois.
-- **Certificat de vaccination** : une attestation de vaccination complète (c’est-à-dire que vous avez reçu toutes les doses nécessaires).
-
-**Attention**, en fonction de chaque situation un justificatif précis pourra vous être demandé. Vérifiez bien quel justificatif vous concerne.
-
-Pour savoir comment importer (scanner) votre QR code dans l’application TousAntiCovid :
-
-- [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-vaccination-TJLG8dT8fs/Steps/347514) si c’est un certificat de vaccination.
-- [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-test-siCsOIDGCZ/Steps/320836) si c’est un test de dépistage antigénique ou RT-PCR.
-
-</div>
-</div>
-</div>
-
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-<h3 itemprop="name">Qu’est-ce qu’un QR code ?</h3>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
-Un QR code est un code-barres 2D facile à lire par un téléphone mobile (<span lang="en">smartphone</span>). Il contient des informations (statut vaccinal, nom, prénom, résultat du test de dépistage, etc.). Voici à quoi cela ressemble :
-
-<div class="illustration">
-    <img src="exemple_qr_code_vers_tousanticovid.png"
-        loading="lazy"
-        alt="Exemple de QR code pointant vers TousAntiCovid.">
-</div>
-
-</div>
-</div>
-</div>
-
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-<h3 itemprop="name">Est-ce que je dois obligatoirement avoir un <span lang="en">smartphone</span> pour utiliser le « Pass sanitaire » ou « <span lang="en">Digital Covid Certificate</span> » ?</h3>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
-**Non.** Vous pourrez à terme présenter votre « Pass sanitaire » (et plus tard votre « <span lang="en">Digital Covid Certificate</span> ») sous la forme que vous préférez :
-
-- **au format papier** : en présentant votre justificatif sur lequel figure un QR code.
-- **au format numérique** : en présentant une photo ou un scan de votre justificatif muni d’un QR code.
-- **dans l’application TousAntiCovid** : en numérisant votre justificatif grâce au QR code, dans la rubrique Carnet. Pour le moment, ce format n’est pas encore disponible pour les voyages internationaux.
-
-</div>
-</div>
-</div>
+    C’est une preuve de **non-contamination** ou d’**immunité** à la Covid, présentée sous forme d’un code à scanner (2D-DOC ou QR code). Au niveau européen, le Pass sanitaire est intitulé « <span lang="en">Digital Covid Certificate</span> ».
 
 
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+.. question:: À quoi sert le « Pass sanitaire » ?
+    :level: 3
 
-<h3 itemprop="name">Je n’ai pas de QR code sur mon certificat de vaccination, comment faire ?</h3>
+    Il permet d’authentifier les informations sur votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) lors d’un contrôle.
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+    * En France : il est obligatoire pour participer à des évènements rassemblant plus de 1 000 personnes (festivals, conférences, salons…).
+    * Dans l’Union européenne : il facilitera les voyages entre les pays membres.
 
-Si vous n’avez pas de QR code sur votre certificat de vaccination, car vous avez été vacciné⸱e avant la mise en place de ces nouvelles mesures, vous pouvez en obtenir un sur le téléservice [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/) de l’Assurance maladie. 
 
-</div>
-</div>
-</div>
+.. question:: Le « Pass sanitaire » ou le « <span lang="en">Digital Covid Certificate</span> » sont-ils déjà en application ?
+    :level: 3
 
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    **En France**, le « Pass sanitaire » sera en application à partir du **3 juin**.
 
-<h3 itemprop="name">J’ai perdu, ou jamais reçu, mon attestation de vaccination, comment la retrouver ?</h3>
+    L’utilisation du « Pass sanitaire » en **Union européenne**, sous le nom « <span lang="en">Digital Covid Certificate</span> » débutera **à partir de juillet**.
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
 
-Grâce à votre numéro de sécurité sociale, vous pouvez télécharger une **nouvelle attestation de vaccination** sur le téléservice [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/) de l’Assurance maladie.
+.. question:: Quels justificatifs pourront constituer un « Pass sanitaire » ?
+    :level: 3
 
-</div>
-</div>
-</div>
+    À terme, **3 types de justificatifs** pourront constituer le « Pass sanitaire » grâce à un QR code intégré :
+
+    - **Non-contamination** : le résultat négatif d’un test RT-PCR ou antigénique de moins de 48 heures.
+    - **Certificat de rétablissement** : le résultat positif d’un test RT-PCR ou antigénique de plus de 15 jours et de moins de 2 mois.
+    - **Certificat de vaccination** : une attestation de vaccination complète (c’est-à-dire que vous avez reçu toutes les doses nécessaires).
+
+    **Attention**, en fonction de chaque situation un justificatif précis pourra vous être demandé. Vérifiez bien quel justificatif vous concerne.
+
+    Pour savoir comment importer (scanner) votre QR code dans l’application TousAntiCovid :
+
+    - [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-vaccination-TJLG8dT8fs/Steps/347514) si c’est un certificat de vaccination.
+    - [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-test-siCsOIDGCZ/Steps/320836) si c’est un test de dépistage antigénique ou RT-PCR.
+
+
+.. question:: Qu’est-ce qu’un QR code ?
+    :level: 3
+
+    Un QR code est un code-barres 2D facile à lire par un téléphone mobile (<span lang="en">smartphone</span>). Il contient des informations (statut vaccinal, nom, prénom, résultat du test de dépistage, etc.). Voici à quoi cela ressemble :
+
+    <div class="illustration">
+        <img src="exemple_qr_code_vers_tousanticovid.png"
+            loading="lazy"
+            alt="Exemple de QR code pointant vers TousAntiCovid.">
+    </div>
+
+
+.. question:: Est-ce que je dois obligatoirement avoir un <span lang="en">smartphone</span> pour utiliser le « Pass sanitaire » ou « <span lang="en">Digital Covid Certificate</span> » ?
+    :level: 3
+
+    **Non.** Vous pourrez à terme présenter votre « Pass sanitaire » (et plus tard votre « <span lang="en">Digital Covid Certificate</span> ») sous la forme que vous préférez :
+
+    - **au format papier** : en présentant votre justificatif sur lequel figure un QR code.
+    - **au format numérique** : en présentant une photo ou un scan de votre justificatif muni d’un QR code.
+    - **dans l’application TousAntiCovid** : en numérisant votre justificatif grâce au QR code, dans la rubrique Carnet. Pour le moment, ce format n’est pas encore disponible pour les voyages internationaux.
+
+
+.. question:: Je n’ai pas de QR code sur mon certificat de vaccination, comment faire ?
+    :level: 3
+
+    Si vous n’avez pas de QR code sur votre certificat de vaccination, car vous avez été vacciné⸱e avant la mise en place de ces nouvelles mesures, vous pouvez en obtenir un sur le téléservice [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/) de l’Assurance maladie.
+
+
+.. question:: J’ai perdu, ou jamais reçu, mon attestation de vaccination, comment la retrouver ?
+    :level: 3
+
+    Grâce à votre numéro de sécurité sociale, vous pouvez télécharger une **nouvelle attestation de vaccination** sur le téléservice [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/) de l’Assurance maladie.
+
 
 
 ## Les voyages
 
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+.. question:: Je pars en voyage, quel justificatif fournir ?
+    :level: 3
 
-<h3 itemprop="name">Je pars en voyage, quel justificatif fournir ?</h3>
+    **Le dispositif « <span lang="en">Digital Covid Certificate</span> » (QR code) n’est pas encore en application.** Il sera mis en place au sein de l’Union européenne à partir de juillet.
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
-**Le dispositif « <span lang="en">Digital Covid Certificate</span> » (QR code) n’est pas encore en application.** Il sera mis en place au sein de l’Union européenne à partir de juillet. 
-
-En attendant, **nous vous recommandons vivement de vous renseigner auprès des autorités de votre pays de destination pour en connaître les conditions d’accès.** Vous trouverez ces informations, sur le site internet de son ambassade ou en téléphonant directement. 
-
-</div>
-</div>
-</div>
-
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-<h3 itemprop="name">Je suis vacciné⸱e, est-ce que mon certificat de vaccination suffit pour voyager ?</h3>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
-**Non.** La plupart des pays exigent la présentation d’un test RT-PCR négatif récent (moins de 48 ou 72 h), même pour les personnes vaccinées. 
-
-**Attention**, pour les voyages au sein de l’Union européenne, un « <span lang="en">Digital Covid Certificate</span> » ne sera disponible qu’à partir de juillet.
-
-</div>
-</div>
-</div>
-
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-<h3 itemprop="name">Je ne suis pas (totalement) vacciné⸱e, quel justificatif présenter pour voyager ?</h3>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
-La plupart des pays exigent la présentation d’un **test RT-PCR négatif récent** (moins de 48 ou 72 h). Nous vous conseillons de vous renseigner auprès des autorités de votre pays de destination.
-
-**Attention**, pour les voyages au sein de l’Union européenne, un « <span lang="en">Digital Covid Certificate</span> » ne sera disponible qu’à partir de juillet.
-
-</div>
-</div>
-</div>
+    En attendant, **nous vous recommandons vivement de vous renseigner auprès des autorités de votre pays de destination pour en connaître les conditions d’accès.** Vous trouverez ces informations, sur le site internet de son ambassade ou en téléphonant directement.
 
 
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+.. question:: Je suis vacciné⸱e, est-ce que mon certificat de vaccination suffit pour voyager ?
+    :level: 3
 
-<h3 itemprop="name">Puis-je voyager vers n’importe quelle destination ?</h3>
+    **Non.** La plupart des pays exigent la présentation d’un test RT-PCR négatif récent (moins de 48 ou 72 h), même pour les personnes vaccinées.
 
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-
-**Non.** Vacciné⸱e ou non, les voyages vers la plupart des destinations hors Union européeenne, à partir de la France métropolitaine, sont soumis à la présentation d’un **motif impérieux**.
-
-Des mesures sanitaires (test RT-PCR, quarantaine, etc.) plus ou moins contraignantes continuent d’être appliquées pour tous les déplacements internationaux, **à l’aller et au retour** en France métropolitaine. 
-
-Pour savoir quelles mesures s’appliquent à votre situation, rendez vous sur [le site du Ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage) et séléctionnez la rubrique correspondante. 
-
-</div>
-</div>
-</div>
-
-<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-
-<h3 itemprop="name">Je pars en Corse ou vers les destinations d’Outre-mer</h3>
-
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
+    **Attention**, pour les voyages au sein de l’Union européenne, un « <span lang="en">Digital Covid Certificate</span> » ne sera disponible qu’à partir de juillet.
 
 
-**Pour la Corse** : un test PCR négatif de moins de 72 h est exigé pour tout voyage vers la Corse, pour en savoir plus, rendez-vous sur le [site de l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-test-pcr-obligatoire-pour-se-rendre-en-corse). Notez que pour cette destination, **vous pouvez présenter votre test sous format numérique** dans votre application TousAntiCovid.
+.. question:: Je ne suis pas (totalement) vacciné⸱e, quel justificatif présenter pour voyager ?
+    :level: 3
 
-**Pour l’Outre-mer** : un test PCR négatif de moins de 72 h est exigé pour tout voyage vers l’Outre-mer. Consultez le détail des [mesures en vigueur](https://www.gouvernement.fr/info-coronavirus/outre-mer) selon votre destination.
+    La plupart des pays exigent la présentation d’un **test RT-PCR négatif récent** (moins de 48 ou 72 h). Nous vous conseillons de vous renseigner auprès des autorités de votre pays de destination.
 
-</div>
-</div>
-</div>
+    **Attention**, pour les voyages au sein de l’Union européenne, un « <span lang="en">Digital Covid Certificate</span> » ne sera disponible qu’à partir de juillet.
+
+
+.. question:: Puis-je voyager vers n’importe quelle destination ?
+    :level: 3
+
+    **Non.** Vacciné⸱e ou non, les voyages vers la plupart des destinations hors Union européeenne, à partir de la France métropolitaine, sont soumis à la présentation d’un **motif impérieux**.
+
+    Des mesures sanitaires (test RT-PCR, quarantaine, etc.) plus ou moins contraignantes continuent d’être appliquées pour tous les déplacements internationaux, **à l’aller et au retour** en France métropolitaine.
+
+    Pour savoir quelles mesures s’appliquent à votre situation, rendez vous sur [le site du Ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage) et séléctionnez la rubrique correspondante.
+
+
+.. question:: Je pars en Corse ou vers les destinations d’Outre-mer
+    :level: 3
+
+    **Pour la Corse** : un test PCR négatif de moins de 72 h est exigé pour tout voyage vers la Corse, pour en savoir plus, rendez-vous sur le [site de l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-test-pcr-obligatoire-pour-se-rendre-en-corse). Notez que pour cette destination, **vous pouvez présenter votre test sous format numérique** dans votre application TousAntiCovid.
+
+    **Pour l’Outre-mer** : un test PCR négatif de moins de 72 h est exigé pour tout voyage vers l’Outre-mer. Consultez le détail des [mesures en vigueur](https://www.gouvernement.fr/info-coronavirus/outre-mer) selon votre destination.
 
 
 ## Vous avez encore des questions ?
