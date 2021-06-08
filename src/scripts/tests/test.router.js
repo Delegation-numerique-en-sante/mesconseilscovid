@@ -37,11 +37,7 @@ const fakeHTML = `<!DOCTYPE html>
       </section>
     </main>
     <section id="introduction" hidden>
-        <div id="introduction-block" class="block introduction-block">
-            <div id="profils-cards-full" hidden>
-                <ul class="cards"></ul>
-            </div>
-        </div>
+        <p>Hello</p>
     </section>
 </body>
 `
@@ -49,6 +45,7 @@ const fakeHTML = `<!DOCTYPE html>
 describe('Routeur', function () {
     beforeEach(function () {
         this.router = new Router(new FakeApp())
+        this.router.addAppRoute('introduction', () => {})
     })
 
     afterEach(function () {
@@ -58,7 +55,7 @@ describe('Routeur', function () {
         this.router = null
     })
 
-    it('Redirige vers la page introduction', function () {
+    it('La racine redirige vers la page introduction', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/',
         })
@@ -67,7 +64,16 @@ describe('Routeur', function () {
         assert.strictEqual(window.location.toString(), 'https://test/#introduction')
     })
 
-    it('Conserve la source', function () {
+    it('Une page inconnue redirige vers la page introduction', function () {
+        require('jsdom-global')(fakeHTML, {
+            url: 'https://test/#inconnue',
+        })
+        assert.strictEqual(window.location.toString(), 'https://test/#inconnue')
+        this.router.resolve()
+        assert.strictEqual(window.location.toString(), 'https://test/#introduction')
+    })
+
+    it('La redirection conserve la source', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/?source=foo',
         })
@@ -76,6 +82,18 @@ describe('Routeur', function () {
         assert.strictEqual(
             window.location.toString(),
             'https://test/?source=foo#introduction'
+        )
+    })
+
+    it('Le contenu de la page cible est chargé', function () {
+        require('jsdom-global')(fakeHTML, {
+            url: 'https://test/#introduction',
+        })
+        assert.strictEqual(document.querySelector('#page').innerHTML.trim(), '')
+        this.router.resolve()
+        assert.strictEqual(
+            document.querySelector('#page').innerHTML.trim(),
+            '<p>Hello</p>'
         )
     })
 

@@ -5,32 +5,6 @@ import { nomProfil } from './injection'
 import { getCurrentPageName, loadPage } from './pagination'
 import { titleCase } from './utils'
 
-import introduction from './page/introduction'
-
-import nouvelleversion from './page/nouvelleversion'
-
-import nom from './page/questionnaire/nom'
-
-import vaccins from './page/questionnaire/vaccins'
-import historique from './page/questionnaire/historique'
-import symptomes from './page/questionnaire/symptomes'
-import depistage from './page/questionnaire/depistage'
-import contactarisque from './page/questionnaire/contactarisque'
-import situation from './page/questionnaire/situation'
-import sante from './page/questionnaire/sante'
-import conseils from './page/conseils'
-
-import suiviintroduction from './page/suiviintroduction'
-import suivisymptomes from './page/suivisymptomes'
-import suivihistorique from './page/suivihistorique'
-
-import {
-    beforeConseils,
-    beforeSuiviIntroduction,
-    beforeSuiviSymptomes,
-    beforeSuiviHistorique,
-} from './questionnaire'
-
 export class Router {
     constructor(app) {
         this.app = app
@@ -39,7 +13,6 @@ export class Router {
         this.navigo = this.initNavigo()
 
         this.setupGlobalHooks()
-        this.setupRoutes()
         this.setupRedirects()
     }
 
@@ -100,51 +73,6 @@ export class Router {
     focusMainHeaderElement() {
         // A11Y: keyboard navigation
         document.querySelector('[role="banner"]').focus()
-    }
-
-    setupRoutes() {
-        this.addAppRoute('introduction', introduction, undefined, '') // accueil : pas de titre
-
-        this.addAppRoute('nom', nom)
-
-        this.addQuestionnaireRoute('vaccins', vaccins)
-        this.addQuestionnaireRoute('historique', historique)
-        this.addQuestionnaireRoute('symptomes', symptomes)
-        this.addQuestionnaireRoute('contactarisque', contactarisque)
-        this.addQuestionnaireRoute('depistage', depistage)
-        this.addQuestionnaireRoute('situation', situation)
-        this.addQuestionnaireRoute('sante', sante)
-
-        this.addAppRoute('conseils', conseils, beforeConseils)
-        this.addAppRoute(
-            'suiviintroduction',
-            suiviintroduction,
-            beforeSuiviIntroduction
-        )
-        this.addAppRoute('suivisymptomes', suivisymptomes, beforeSuiviSymptomes)
-        this.addAppRoute('suivihistorique', suivihistorique, beforeSuiviHistorique)
-
-        this.addRoute('pediatrie', (element) => {
-            if (this.app.profil.isComplete()) {
-                showElement(element.querySelector('.js-profil-full'))
-                hideElement(element.querySelector('.js-profil-empty'))
-            }
-        })
-
-        this.addRoute('conditionsutilisation', (element) => {
-            if (this.app.profil.isComplete()) {
-                showElement(element.querySelector('.js-profil-full'))
-                hideElement(element.querySelector('.js-profil-empty'))
-            }
-        })
-
-        this.addRoute('nouvelleversiondisponible', (element) => {
-            const route = this.navigo.lastRouteResolved()
-            const urlParams = new URLSearchParams(route.query)
-            const origine = urlParams.get('origine')
-
-            nouvelleversion(element, this.app, origine)
-        })
     }
 
     addQuestionnaireRoute(pageName, view, pageTitle) {

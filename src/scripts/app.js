@@ -1,10 +1,37 @@
 import Profil from './profil'
 import StockageLocal from './stockage'
+import { hideElement, showElement } from './affichage'
 import { Questionnaire } from './questionnaire'
 import { joursAvant } from './utils'
 
 import { Router } from './router'
 import Updater from './updater'
+
+import introduction from './page/introduction'
+
+import nouvelleversion from './page/nouvelleversion'
+
+import nom from './page/questionnaire/nom'
+
+import vaccins from './page/questionnaire/vaccins'
+import historique from './page/questionnaire/historique'
+import symptomes from './page/questionnaire/symptomes'
+import depistage from './page/questionnaire/depistage'
+import contactarisque from './page/questionnaire/contactarisque'
+import situation from './page/questionnaire/situation'
+import sante from './page/questionnaire/sante'
+import conseils from './page/conseils'
+
+import suiviintroduction from './page/suiviintroduction'
+import suivisymptomes from './page/suivisymptomes'
+import suivihistorique from './page/suivihistorique'
+
+import {
+    beforeConseils,
+    beforeSuiviIntroduction,
+    beforeSuiviSymptomes,
+    beforeSuiviHistorique,
+} from './questionnaire'
 
 import { registerPlausible } from './plausible'
 import { registerATInternet } from './atinternet'
@@ -28,6 +55,54 @@ export default class App {
         this.router = new Router(this)
         this.updater = new Updater(this.router)
         return this.chargerProfilActuel()
+    }
+    setupRoutes() {
+        this.router.addAppRoute('introduction', introduction, undefined, '') // accueil : pas de titre
+
+        this.router.addAppRoute('nom', nom)
+
+        this.router.addQuestionnaireRoute('vaccins', vaccins)
+        this.router.addQuestionnaireRoute('historique', historique)
+        this.router.addQuestionnaireRoute('symptomes', symptomes)
+        this.router.addQuestionnaireRoute('contactarisque', contactarisque)
+        this.router.addQuestionnaireRoute('depistage', depistage)
+        this.router.addQuestionnaireRoute('situation', situation)
+        this.router.addQuestionnaireRoute('sante', sante)
+
+        this.router.addAppRoute('conseils', conseils, beforeConseils)
+        this.router.addAppRoute(
+            'suiviintroduction',
+            suiviintroduction,
+            beforeSuiviIntroduction
+        )
+        this.router.addAppRoute('suivisymptomes', suivisymptomes, beforeSuiviSymptomes)
+        this.router.addAppRoute(
+            'suivihistorique',
+            suivihistorique,
+            beforeSuiviHistorique
+        )
+
+        this.router.addRoute('pediatrie', (element) => {
+            if (this.profil.isComplete()) {
+                showElement(element.querySelector('.js-profil-full'))
+                hideElement(element.querySelector('.js-profil-empty'))
+            }
+        })
+
+        this.router.addRoute('conditionsutilisation', (element) => {
+            if (this.profil.isComplete()) {
+                showElement(element.querySelector('.js-profil-full'))
+                hideElement(element.querySelector('.js-profil-empty'))
+            }
+        })
+
+        this.router.addRoute('nouvelleversiondisponible', (element) => {
+            const route = this.router.lastRouteResolved()
+            const urlParams = new URLSearchParams(route.query)
+            const origine = urlParams.get('origine')
+
+            nouvelleversion(element, this, origine)
+        })
     }
     chargerProfilActuel() {
         return this.stockage.getProfilActuel().then((nom) => {
