@@ -33,34 +33,14 @@ import {
 
 class Router {
     constructor(app) {
+        this.app = app
+
         const navigo = this.initNavigo()
         this.navigo = navigo
 
         const initialTitle = document.title
 
-        this.navigo.hooks({
-            before: (done) => {
-                var header = document.querySelector('header section')
-                if (typeof app.profil.nom === 'undefined') {
-                    showElement(header.querySelector('.js-profil-empty'))
-                    hideElement(header.querySelector('.js-profil-full'))
-                } else {
-                    showElement(header.querySelector('.js-profil-full'))
-                    hideElement(header.querySelector('.js-profil-empty'))
-                    nomProfil(header.querySelector('#nom-profil-header'), app)
-                }
-                done()
-            },
-            after: () => {
-                // Global hook to send a custom event on each page change.
-                var pageName = getCurrentPageName()
-                document.dispatchEvent(
-                    new CustomEvent('pageChanged', { detail: pageName })
-                )
-                // Focus on the main header element (A11Y: keyboard navigation)
-                document.querySelector('[role="banner"]').focus()
-            },
-        })
+        this.setupGlobalHooks()
 
         function addQuestionnaireRoute(pageName, view, pageTitle) {
             const beforeFunc = (profil) => {
@@ -251,6 +231,40 @@ class Router {
         }
 
         return navigo
+    }
+
+    setupGlobalHooks() {
+        this.navigo.hooks({
+            before: this.beforeGlobalHook.bind(this),
+            after: this.afterGlobalHook.bind(this),
+        })
+    }
+
+    beforeGlobalHook(done) {
+        var header = document.querySelector('header section')
+        if (typeof this.app.profil.nom === 'undefined') {
+            showElement(header.querySelector('.js-profil-empty'))
+            hideElement(header.querySelector('.js-profil-full'))
+        } else {
+            showElement(header.querySelector('.js-profil-full'))
+            hideElement(header.querySelector('.js-profil-empty'))
+            nomProfil(header.querySelector('#nom-profil-header'), this.app)
+        }
+        done()
+    }
+
+    afterGlobalHook() {
+        this.sendPageChangeEvent()
+    }
+
+    sendPageChangeEvent() {
+        const pageName = getCurrentPageName()
+        document.dispatchEvent(new CustomEvent('pageChanged', { detail: pageName }))
+    }
+
+    focusMainHeaderElement() {
+        // A11Y: keyboard navigation
+        document.querySelector('[role="banner"]').focus()
     }
 }
 
