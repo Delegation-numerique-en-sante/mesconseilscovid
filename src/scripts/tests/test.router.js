@@ -2,7 +2,7 @@ import { assert } from 'chai'
 
 import 'jsdom-global/register' // à importer avant le code applicatif
 
-import { initRouter } from '../router'
+import { Router } from '../router'
 import Profil from '../profil'
 import { Questionnaire } from '../questionnaire'
 
@@ -48,12 +48,12 @@ const fakeHTML = `<!DOCTYPE html>
 
 describe('Routeur', function () {
     beforeEach(function () {
-        this.router = initRouter(new FakeApp())
+        this.router = new Router(new FakeApp())
     })
 
     afterEach(function () {
         if (this.router) {
-            this.router.destroy()
+            this.router.navigo.destroy() // sinon les tests restent en suspens
         }
         this.router = null
     })

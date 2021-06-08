@@ -3,7 +3,7 @@ import StockageLocal from './stockage'
 import { Questionnaire } from './questionnaire'
 import { joursAvant } from './utils'
 
-import { initRouter } from './router'
+import { Router } from './router'
 import Updater from './updater'
 
 import { registerPlausible } from './plausible'
@@ -25,7 +25,7 @@ export default class App {
         this.source = searchParams.get('source') || searchParams.get('utm_source')
     }
     init() {
-        this.router = initRouter(this)
+        this.router = new Router(this)
         this.updater = new Updater(this.router)
         return this.chargerProfilActuel()
     }
