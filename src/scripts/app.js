@@ -10,10 +10,11 @@ import { registerPlausible } from './plausible'
 import { registerATInternet } from './atinternet'
 
 export default class App {
-    constructor() {
+    constructor(suiviImages) {
         this.profil = new Profil()
         this.stockage = new StockageLocal()
         this.questionnaire = new Questionnaire()
+        this.suiviImages = suiviImages
 
         // Statistiques.
         this._plausibleTrackingEvents = []

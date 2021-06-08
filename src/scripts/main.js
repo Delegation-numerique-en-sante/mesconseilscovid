@@ -8,13 +8,15 @@ import 'core-js/web/url'
 import 'core-js/web/url-search-params'
 import './polyfills/custom_event'
 
+import SUIVI_IMAGES from '../suivi_*.svg'
+
 import { register as registerTimeAgo } from 'timeago.js'
 
 import { bindFeedback, bindFeedbackContact, bindSuppressionTotale } from './actions'
 import { estPageThematique, pageThematique } from './page/thematique'
 import App from './app'
 
-var app = new App()
+var app = new App(SUIVI_IMAGES)
 window.app = app
 ;(function () {
     if (estPageThematique()) {
