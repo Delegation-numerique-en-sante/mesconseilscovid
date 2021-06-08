@@ -10,8 +10,9 @@ export function getCurrentPageName() {
 }
 
 export class Router {
-    constructor(app) {
+    constructor(app, window) {
         this.app = app
+        this.window = window
         this.initialTitle = document.title
 
         this.navigo = this.initNavigo()
@@ -227,7 +228,11 @@ export class Router {
         this.navigo.notFound(() => {
             const hash = document.location.hash
             const fragment = hash ? hash.slice(1) : ''
-            if (window.location.pathname === '/' && fragment && this.exists(fragment)) {
+            if (
+                this.window.location.pathname === '/' &&
+                fragment &&
+                this.exists(fragment)
+            ) {
                 this.redirectTo(fragment)
             } else {
                 this.redirectTo('introduction')
@@ -242,14 +247,14 @@ export class Router {
 
     redirectTo(target) {
         if (
-            typeof window !== 'undefined' &&
-            window.history &&
-            window.history.replaceState
+            typeof this.window !== 'undefined' &&
+            this.window.history &&
+            this.window.history.replaceState
         ) {
             // Replace current page with target page in the browser history
             // so that we don’t break the back button.
-            const destination = '/' + target + window.location.search
-            window.history.replaceState({}, '', destination)
+            const destination = '/' + target + this.window.location.search
+            this.window.history.replaceState({}, '', destination)
             this.navigo.resolve()
         } else {
             this.navigo.navigate(target)

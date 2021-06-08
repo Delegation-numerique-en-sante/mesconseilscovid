@@ -52,7 +52,7 @@ export default class App {
         this.source = searchParams.get('source') || searchParams.get('utm_source')
     }
     init() {
-        this.router = new Router(this)
+        this.router = new Router(this, window)
         this.updater = new Updater(this.router)
         return this.chargerProfilActuel()
     }
