@@ -58,7 +58,7 @@ describe('Routeur', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/',
         })
-        this.router = new Router(new FakeApp())
+        this.router = new Router(new FakeApp(), window)
         this.router.addAppRoute('introduction', () => {})
         assert.strictEqual(window.location.toString(), 'https://test/')
 
@@ -71,7 +71,7 @@ describe('Routeur', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/inconnue',
         })
-        this.router = new Router(new FakeApp())
+        this.router = new Router(new FakeApp(), window)
         this.router.addAppRoute('introduction', () => {})
         assert.strictEqual(window.location.toString(), 'https://test/inconnue')
 
@@ -84,7 +84,7 @@ describe('Routeur', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/?source=foo',
         })
-        this.router = new Router(new FakeApp())
+        this.router = new Router(new FakeApp(), window)
         this.router.addAppRoute('introduction', () => {})
         assert.strictEqual(window.location.toString(), 'https://test/?source=foo')
 
@@ -100,7 +100,7 @@ describe('Routeur', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/hello',
         })
-        this.router = new Router(new FakeApp())
+        this.router = new Router(new FakeApp(), window)
         this.router.addAppRoute('hello', (element) => {
             element.querySelector('.name').innerHTML = 'world'
         })
@@ -118,7 +118,7 @@ describe('Routeur', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/#conseils',
         })
-        this.router = new Router(new FakeApp())
+        this.router = new Router(new FakeApp(), window)
         this.router.addAppRoute('introduction', () => {})
         this.router.addAppRoute('conseils', () => {})
         assert.strictEqual(window.location.toString(), 'https://test/#conseils')
@@ -132,7 +132,7 @@ describe('Routeur', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/?source=foo#conseils',
         })
-        this.router = new Router(new FakeApp())
+        this.router = new Router(new FakeApp(), window)
         this.router.addAppRoute('introduction', () => {})
         this.router.addAppRoute('conseils', () => {})
         assert.strictEqual(
@@ -152,7 +152,7 @@ describe('Routeur', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/#inconnue',
         })
-        this.router = new Router(new FakeApp())
+        this.router = new Router(new FakeApp(), window)
         this.router.addAppRoute('introduction', () => {})
         assert.strictEqual(window.location.toString(), 'https://test/#inconnue')
 
@@ -165,7 +165,7 @@ describe('Routeur', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/introduction#conseils',
         })
-        this.router = new Router(new FakeApp())
+        this.router = new Router(new FakeApp(), window)
         this.router.addAppRoute('introduction', () => {})
         this.router.addAppRoute('conseils', () => {})
         assert.strictEqual(
