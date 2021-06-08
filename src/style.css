@@ -1186,7 +1186,6 @@ input[type='radio']:disabled + label::before {
 
 .button:hover,
 .back-button:hover {
-    cursor: pointer;
     transform: translate(0.1em, 0.1em);
 }
 
@@ -1239,9 +1238,6 @@ a.no-type::after {
     background: none;
 }
 
-.conseils details summary {
-    cursor: pointer;
-}
 .conseils > details {
     display: block;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
