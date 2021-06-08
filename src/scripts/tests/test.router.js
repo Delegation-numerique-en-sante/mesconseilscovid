@@ -1,7 +1,5 @@
 import { assert } from 'chai'
 
-import 'jsdom-global/register' // à importer avant le code applicatif
-
 import { Router } from '../router'
 import Profil from '../profil'
 import { Questionnaire } from '../questionnaire'
@@ -37,17 +35,15 @@ const fakeHTML = `<!DOCTYPE html>
       </section>
     </main>
     <section id="introduction" hidden>
-        <p>Hello</p>
+        <div></div>
+    </section>
+    <section id="hello" hidden>
+        <p>Hello, <span class="name"></span></p>
     </section>
 </body>
 `
 
 describe('Routeur', function () {
-    beforeEach(function () {
-        this.router = new Router(new FakeApp())
-        this.router.addAppRoute('introduction', () => {})
-    })
-
     afterEach(function () {
         if (this.router) {
             this.router.navigo.destroy() // sinon les tests restent en suspens
@@ -59,8 +55,12 @@ describe('Routeur', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/',
         })
+        this.router = new Router(new FakeApp())
+        this.router.addAppRoute('introduction', () => {})
         assert.strictEqual(window.location.toString(), 'https://test/')
+
         this.router.resolve()
+
         assert.strictEqual(window.location.toString(), 'https://test/#introduction')
     })
 
@@ -68,8 +68,12 @@ describe('Routeur', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/#inconnue',
         })
+        this.router = new Router(new FakeApp())
+        this.router.addAppRoute('introduction', () => {})
         assert.strictEqual(window.location.toString(), 'https://test/#inconnue')
+
         this.router.resolve()
+
         assert.strictEqual(window.location.toString(), 'https://test/#introduction')
     })
 
@@ -77,8 +81,12 @@ describe('Routeur', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/?source=foo',
         })
+        this.router = new Router(new FakeApp())
+        this.router.addAppRoute('introduction', () => {})
         assert.strictEqual(window.location.toString(), 'https://test/?source=foo')
+
         this.router.resolve()
+
         assert.strictEqual(
             window.location.toString(),
             'https://test/?source=foo#introduction'
@@ -87,13 +95,19 @@ describe('Routeur', function () {
 
     it('Le contenu de la page cible est chargé', function () {
         require('jsdom-global')(fakeHTML, {
-            url: 'https://test/#introduction',
+            url: 'https://test/#hello',
+        })
+        this.router = new Router(new FakeApp())
+        this.router.addAppRoute('hello', (element) => {
+            element.querySelector('.name').innerHTML = 'world'
         })
         assert.strictEqual(document.querySelector('#page').innerHTML.trim(), '')
+
         this.router.resolve()
+
         assert.strictEqual(
             document.querySelector('#page').innerHTML.trim(),
-            '<p>Hello</p>'
+            '<p>Hello, <span class="name">world</span></p>'
         )
     })
 
