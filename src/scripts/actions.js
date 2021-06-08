@@ -1,6 +1,6 @@
 import ICS from './ics'
 import { hideElement, showElement } from './affichage'
-import { getCurrentPageName } from './pagination'
+import { getCurrentPageName } from './router'
 import { estPageThematique } from './page/thematique'
 
 export function bindCalendar(element, profil) {

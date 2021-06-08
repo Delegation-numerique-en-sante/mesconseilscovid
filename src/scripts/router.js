@@ -2,8 +2,14 @@ import Navigo from 'navigo'
 
 import { hideElement, showElement } from './affichage'
 import { nomProfil } from './injection'
-import { getCurrentPageName, loadPage } from './pagination'
+import { loadPage } from './pagination'
 import { titleCase } from './utils'
+
+export function getCurrentPageName() {
+    const hash = document.location.hash
+    const fragment = hash ? hash.slice(1) : ''
+    return fragment.split('?')[0]
+}
 
 export class Router {
     constructor(app) {
