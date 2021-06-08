@@ -1,4 +1,4 @@
-import { getCurrentPageName } from './pagination'
+import { getCurrentPageName } from './router'
 import { showElement } from './affichage'
 import { ORDRE } from './questionnaire'
 
