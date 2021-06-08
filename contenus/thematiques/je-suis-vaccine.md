@@ -41,6 +41,12 @@
     Grâce à votre numéro de sécurité sociale, vous pouvez télécharger un nouveau certificat de vaccination sur le téléservice de l’Assurance maladie : [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
     
 
+    
+ .. question:: J’ai eu la Covid avant d'avoir ma première et unique injection, mais mon attestation indique que ma vaccination est "en cours" au lieu d'être terminée. Que faire ?
+    
+    Vous pouvez vous rendre chez un professionnel de santé (médecin, sage-femme, infirmier) muni de vos preuve de vaccination et de première contamination. Il pourra clôturer votre cycle de vaccination dans le logiciel.
+    
+    
  .. question:: Mon certificat de vaccination ne comporte pas de QR code, comment faire ?
 
      Vous pouvez télécharger un nouveau certificat depuis [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
