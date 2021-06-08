@@ -39,49 +39,7 @@ class Router {
         this.navigo = this.initNavigo()
 
         this.setupGlobalHooks()
-
-        this.addAppRoute('introduction', introduction, undefined, '') // accueil : pas de titre
-
-        this.addAppRoute('nom', nom)
-
-        this.addQuestionnaireRoute('vaccins', vaccins)
-        this.addQuestionnaireRoute('historique', historique)
-        this.addQuestionnaireRoute('symptomes', symptomes)
-        this.addQuestionnaireRoute('contactarisque', contactarisque)
-        this.addQuestionnaireRoute('depistage', depistage)
-        this.addQuestionnaireRoute('situation', situation)
-        this.addQuestionnaireRoute('sante', sante)
-
-        this.addAppRoute('conseils', conseils, beforeConseils)
-        this.addAppRoute(
-            'suiviintroduction',
-            suiviintroduction,
-            beforeSuiviIntroduction
-        )
-        this.addAppRoute('suivisymptomes', suivisymptomes, beforeSuiviSymptomes)
-        this.addAppRoute('suivihistorique', suivihistorique, beforeSuiviHistorique)
-
-        this.addRoute('pediatrie', (element) => {
-            if (app.profil.isComplete()) {
-                showElement(element.querySelector('.js-profil-full'))
-                hideElement(element.querySelector('.js-profil-empty'))
-            }
-        })
-
-        this.addRoute('conditionsutilisation', (element) => {
-            if (app.profil.isComplete()) {
-                showElement(element.querySelector('.js-profil-full'))
-                hideElement(element.querySelector('.js-profil-empty'))
-            }
-        })
-
-        this.addRoute('nouvelleversiondisponible', (element) => {
-            const route = this.navigo.lastRouteResolved()
-            const urlParams = new URLSearchParams(route.query)
-            const origine = urlParams.get('origine')
-
-            nouvelleversion(element, app, origine)
-        })
+        this.setupRoutes()
 
         // Legacy redirects.
         this.navigo.on(
@@ -157,6 +115,51 @@ class Router {
     focusMainHeaderElement() {
         // A11Y: keyboard navigation
         document.querySelector('[role="banner"]').focus()
+    }
+
+    setupRoutes() {
+        this.addAppRoute('introduction', introduction, undefined, '') // accueil : pas de titre
+
+        this.addAppRoute('nom', nom)
+
+        this.addQuestionnaireRoute('vaccins', vaccins)
+        this.addQuestionnaireRoute('historique', historique)
+        this.addQuestionnaireRoute('symptomes', symptomes)
+        this.addQuestionnaireRoute('contactarisque', contactarisque)
+        this.addQuestionnaireRoute('depistage', depistage)
+        this.addQuestionnaireRoute('situation', situation)
+        this.addQuestionnaireRoute('sante', sante)
+
+        this.addAppRoute('conseils', conseils, beforeConseils)
+        this.addAppRoute(
+            'suiviintroduction',
+            suiviintroduction,
+            beforeSuiviIntroduction
+        )
+        this.addAppRoute('suivisymptomes', suivisymptomes, beforeSuiviSymptomes)
+        this.addAppRoute('suivihistorique', suivihistorique, beforeSuiviHistorique)
+
+        this.addRoute('pediatrie', (element) => {
+            if (this.app.profil.isComplete()) {
+                showElement(element.querySelector('.js-profil-full'))
+                hideElement(element.querySelector('.js-profil-empty'))
+            }
+        })
+
+        this.addRoute('conditionsutilisation', (element) => {
+            if (this.app.profil.isComplete()) {
+                showElement(element.querySelector('.js-profil-full'))
+                hideElement(element.querySelector('.js-profil-empty'))
+            }
+        })
+
+        this.addRoute('nouvelleversiondisponible', (element) => {
+            const route = this.navigo.lastRouteResolved()
+            const urlParams = new URLSearchParams(route.query)
+            const origine = urlParams.get('origine')
+
+            nouvelleversion(element, this.app, origine)
+        })
     }
 
     addQuestionnaireRoute(pageName, view, pageTitle) {
