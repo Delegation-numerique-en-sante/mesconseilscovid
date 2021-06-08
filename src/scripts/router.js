@@ -31,7 +31,7 @@ import {
     beforeSuiviHistorique,
 } from './questionnaire'
 
-class Router {
+export class Router {
     constructor(app) {
         this.app = app
         this.initialTitle = document.title
@@ -54,6 +54,18 @@ class Router {
         }
 
         return navigo
+    }
+
+    resolve() {
+        return this.navigo.resolve()
+    }
+
+    lastRouteResolved() {
+        return this.navigo.lastRouteResolved()
+    }
+
+    navigate(target) {
+        return this.navigo.navigate(target)
     }
 
     setupGlobalHooks() {
@@ -273,8 +285,4 @@ class Router {
             this.navigo.navigate(target)
         }
     }
-}
-
-export function initRouter(app) {
-    return new Router(app).navigo
 }
