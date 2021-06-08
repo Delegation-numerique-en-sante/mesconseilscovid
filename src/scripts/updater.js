@@ -19,7 +19,7 @@ export default class Updater {
             return
         }
 
-        const pageName = getCurrentPageName()
+        const pageName = getCurrentPageName(document)
         if (pageName === 'nouvelleversiondisponible') {
             return
         }
@@ -94,7 +94,7 @@ export default class Updater {
     }
 
     notifyUser() {
-        const pageName = getCurrentPageName()
+        const pageName = getCurrentPageName(document)
         if (this.onInteractivePage(pageName)) {
             this.notifyUserWithoutInterrupting(pageName)
         } else {
