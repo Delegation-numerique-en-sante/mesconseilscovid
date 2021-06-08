@@ -1,5 +1,8 @@
 import { assert } from 'chai'
 
+import 'jsdom-global/register' // à importer avant le code applicatif
+
+import { initRouter } from '../router'
 import Profil from '../profil'
 import { Questionnaire } from '../questionnaire'
 
@@ -45,10 +48,6 @@ const fakeHTML = `<!DOCTYPE html>
 
 describe('Routeur', function () {
     beforeEach(function () {
-        this.cleanupJSDOMGlobals = require('jsdom-global')(fakeHTML, {
-            url: 'https://test/',
-        })
-        const initRouter = require('../router').initRouter
         this.router = new initRouter(new FakeApp())
     })
 
@@ -57,12 +56,31 @@ describe('Routeur', function () {
             this.router.destroy()
         }
         this.router = null
-        this.cleanupJSDOMGlobals()
     })
 
     it('Redirige vers la page introduction', function () {
+        require('jsdom-global')(fakeHTML, {
+            url: 'https://test/',
+        })
         assert.strictEqual(window.location.toString(), 'https://test/')
         this.router.resolve()
         assert.strictEqual(window.location.toString(), 'https://test/#introduction')
+    })
+
+    it('Conserve la source', function () {
+        require('jsdom-global')(fakeHTML, {
+            url: 'https://test/?source=foo',
+        })
+        assert.strictEqual(window.location.toString(), 'https://test/?source=foo')
+        this.router.resolve()
+        assert.strictEqual(
+            window.location.toString(),
+            'https://test/?source=foo#introduction'
+        )
+    })
+
+    after(function () {
+        const cleanup = require('jsdom-global')()
+        cleanup()
     })
 })
