@@ -4,7 +4,7 @@ import { hideElement, showElement, showMeOrThem } from './affichage'
 import { nomProfil } from './injection'
 import { titleCase } from './utils'
 
-export function getCurrentPageName() {
+export function getCurrentPageName(document) {
     return document.location.pathname.slice(1)
 }
 
@@ -64,7 +64,7 @@ export class Router {
     }
 
     sendPageChangeEvent() {
-        const pageName = getCurrentPageName()
+        const pageName = getCurrentPageName(document)
         document.dispatchEvent(new CustomEvent('pageChanged', { detail: pageName }))
     }
 
