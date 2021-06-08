@@ -35,6 +35,7 @@ function pageQuestionnaire(app) {
         if (location.hash.slice(1) === '') {
             app.trackPageView(document.location.pathname)
         }
+        app.setupRoutes()
         app.router.resolve()
     })
 }
