@@ -34,156 +34,48 @@ import {
 class Router {
     constructor(app) {
         this.app = app
+        this.initialTitle = document.title
 
-        const navigo = this.initNavigo()
-        this.navigo = navigo
-
-        const initialTitle = document.title
+        this.navigo = this.initNavigo()
 
         this.setupGlobalHooks()
 
-        function addQuestionnaireRoute(pageName, view, pageTitle) {
-            const beforeFunc = (profil) => {
-                if (typeof profil.nom === 'undefined') {
-                    profil.resetData('mes_infos')
-                }
-                return app.questionnaire.before(pageName, profil)
-            }
-            addAppRoute(pageName, view, beforeFunc, pageTitle)
-        }
+        this.addAppRoute('introduction', introduction, undefined, '') // accueil : pas de titre
 
-        function addAppRoute(pageName, view, before, pageTitle) {
-            const viewFunc = (element) => {
-                view(element, app)
-            }
-            addRoute(pageName, viewFunc, before, pageTitle)
-        }
+        this.addAppRoute('nom', nom)
 
-        function addRoute(pageName, viewFunc, beforeFunc, pageTitle) {
-            navigo.on(
-                new RegExp('^' + pageName + '$'),
-                () => {
-                    var element = loadPage(pageName, app)
-                    updateTitle(element, pageName, pageTitle, app.profil)
-                    fillProgress(element, pageName)
-                    fillNavigation(element, pageName)
-                    viewFunc(element)
-                    app.trackPageView(pageName)
-                    const page = element.parentElement
-                    page.classList.remove('loading')
-                    page.classList.add('ready')
-                },
-                {
-                    before: (done) => {
-                        if (typeof beforeFunc === 'undefined') {
-                            done()
-                            return
-                        }
+        this.addQuestionnaireRoute('vaccins', vaccins)
+        this.addQuestionnaireRoute('historique', historique)
+        this.addQuestionnaireRoute('symptomes', symptomes)
+        this.addQuestionnaireRoute('contactarisque', contactarisque)
+        this.addQuestionnaireRoute('depistage', depistage)
+        this.addQuestionnaireRoute('situation', situation)
+        this.addQuestionnaireRoute('sante', sante)
 
-                        const target = beforeFunc(app.profil, app.questionnaire)
-                        if (target && target !== pageName) {
-                            redirectTo(target)
-                            done(false)
-                        } else {
-                            done()
-                        }
-                    },
-                }
-            )
-        }
+        this.addAppRoute('conseils', conseils, beforeConseils)
+        this.addAppRoute(
+            'suiviintroduction',
+            suiviintroduction,
+            beforeSuiviIntroduction
+        )
+        this.addAppRoute('suivisymptomes', suivisymptomes, beforeSuiviSymptomes)
+        this.addAppRoute('suivihistorique', suivihistorique, beforeSuiviHistorique)
 
-        // A11Y: mise à jour du titre dynamiquement.
-        function updateTitle(element, pageName, pageTitle, profil) {
-            let titlePrefix = pageTitle
-            if (typeof pageTitle === 'undefined') {
-                const titleElem = element.querySelector('h1, #conseils-block-titre, h2')
-                if (titleElem) {
-                    titlePrefix = titleElem.innerText
-                } else {
-                    titlePrefix = titleCase(pageName)
-                }
-            }
-            const separator = titlePrefix ? ' — ' : ''
-            const numeroEtape = app.questionnaire.numeroEtape(pageName, profil)
-            const etape = numeroEtape ? ` (étape ${numeroEtape})` : ''
-            document.title = titlePrefix + etape + separator + initialTitle
-        }
-
-        function fillProgress(element, pageName) {
-            const progress = element.querySelector('.progress')
-            if (progress) {
-                progress.innerText = app.questionnaire.etapesRestantes(pageName)
-            }
-        }
-
-        function fillNavigation(element, pageName) {
-            const boutonRetour = element.querySelector(
-                'form .back-button, .form-controls .back-button'
-            )
-            if (boutonRetour) {
-                const previousPage = app.questionnaire.previousPage(
-                    pageName,
-                    app.profil
-                )
-                if (previousPage) {
-                    boutonRetour.setAttribute('href', `#${previousPage}`)
-                }
-            }
-
-            Array.from(element.querySelectorAll('.premiere-question')).forEach(
-                (lien) => {
-                    lien.setAttribute('href', `#${app.questionnaire.firstPage}`)
-                }
-            )
-        }
-
-        function redirectTo(target) {
-            if (
-                typeof window !== 'undefined' &&
-                window.history &&
-                window.history.replaceState
-            ) {
-                // Replace current page with target page in the browser history
-                // so that we don’t break the back button.
-                window.history.replaceState({}, '', `#${target}`)
-                navigo.resolve()
-            } else {
-                navigo.navigate(target)
-            }
-        }
-
-        addAppRoute('introduction', introduction, undefined, '') // accueil : pas de titre
-
-        addAppRoute('nom', nom)
-
-        addQuestionnaireRoute('vaccins', vaccins)
-        addQuestionnaireRoute('historique', historique)
-        addQuestionnaireRoute('symptomes', symptomes)
-        addQuestionnaireRoute('contactarisque', contactarisque)
-        addQuestionnaireRoute('depistage', depistage)
-        addQuestionnaireRoute('situation', situation)
-        addQuestionnaireRoute('sante', sante)
-
-        addAppRoute('conseils', conseils, beforeConseils)
-        addAppRoute('suiviintroduction', suiviintroduction, beforeSuiviIntroduction)
-        addAppRoute('suivisymptomes', suivisymptomes, beforeSuiviSymptomes)
-        addAppRoute('suivihistorique', suivihistorique, beforeSuiviHistorique)
-
-        addRoute('pediatrie', (element) => {
+        this.addRoute('pediatrie', (element) => {
             if (app.profil.isComplete()) {
                 showElement(element.querySelector('.js-profil-full'))
                 hideElement(element.querySelector('.js-profil-empty'))
             }
         })
 
-        addRoute('conditionsutilisation', (element) => {
+        this.addRoute('conditionsutilisation', (element) => {
             if (app.profil.isComplete()) {
                 showElement(element.querySelector('.js-profil-full'))
                 hideElement(element.querySelector('.js-profil-empty'))
             }
         })
 
-        addRoute('nouvelleversiondisponible', (element) => {
+        this.addRoute('nouvelleversiondisponible', (element) => {
             const route = this.navigo.lastRouteResolved()
             const urlParams = new URLSearchParams(route.query)
             const origine = urlParams.get('origine')
@@ -197,26 +89,26 @@ class Router {
             () => {},
             {
                 before: (done) => {
-                    redirectTo('symptomes')
+                    this.redirectTo('symptomes')
                     done(false)
                 },
             }
         )
         this.navigo.on(new RegExp('^(residence|foyer|activitepro)$'), () => {}, {
             before: (done) => {
-                redirectTo('situation')
+                this.redirectTo('situation')
                 done(false)
             },
         })
         this.navigo.on(new RegExp('^(caracteristiques|antecedents)$'), () => {}, {
             before: (done) => {
-                redirectTo('sante')
+                this.redirectTo('sante')
                 done(false)
             },
         })
 
         this.navigo.notFound(() => {
-            redirectTo('introduction')
+            this.redirectTo('introduction')
         })
     }
 
@@ -265,6 +157,114 @@ class Router {
     focusMainHeaderElement() {
         // A11Y: keyboard navigation
         document.querySelector('[role="banner"]').focus()
+    }
+
+    addQuestionnaireRoute(pageName, view, pageTitle) {
+        const beforeFunc = (profil) => {
+            if (typeof profil.nom === 'undefined') {
+                profil.resetData('mes_infos')
+            }
+            return this.app.questionnaire.before(pageName, profil)
+        }
+        this.addAppRoute(pageName, view, beforeFunc, pageTitle)
+    }
+
+    addAppRoute(pageName, view, before, pageTitle) {
+        const viewFunc = (element) => {
+            view(element, this.app)
+        }
+        this.addRoute(pageName, viewFunc, before, pageTitle)
+    }
+
+    addRoute(pageName, viewFunc, beforeFunc, pageTitle) {
+        this.navigo.on(
+            new RegExp('^' + pageName + '$'),
+            () => {
+                var element = loadPage(pageName, this.app)
+                this.updateTitle(element, pageName, pageTitle, this.app.profil)
+                this.fillProgress(element, pageName)
+                this.fillNavigation(element, pageName)
+                viewFunc(element)
+                this.app.trackPageView(pageName)
+                const page = element.parentElement
+                page.classList.remove('loading')
+                page.classList.add('ready')
+            },
+            {
+                before: (done) => {
+                    if (typeof beforeFunc === 'undefined') {
+                        done()
+                        return
+                    }
+
+                    const target = beforeFunc(this.app.profil, this.app.questionnaire)
+                    if (target && target !== pageName) {
+                        this.redirectTo(target)
+                        done(false)
+                    } else {
+                        done()
+                    }
+                },
+            }
+        )
+    }
+
+    // A11Y: mise à jour du titre dynamiquement.
+    updateTitle(element, pageName, pageTitle, profil) {
+        let titlePrefix = pageTitle
+        if (typeof pageTitle === 'undefined') {
+            const titleElem = element.querySelector('h1, #conseils-block-titre, h2')
+            if (titleElem) {
+                titlePrefix = titleElem.innerText
+            } else {
+                titlePrefix = titleCase(pageName)
+            }
+        }
+        const separator = titlePrefix ? ' — ' : ''
+        const numeroEtape = this.app.questionnaire.numeroEtape(pageName, profil)
+        const etape = numeroEtape ? ` (étape ${numeroEtape})` : ''
+        document.title = titlePrefix + etape + separator + this.initialTitle
+    }
+
+    fillProgress(element, pageName) {
+        const progress = element.querySelector('.progress')
+        if (progress) {
+            progress.innerText = this.app.questionnaire.etapesRestantes(pageName)
+        }
+    }
+
+    fillNavigation(element, pageName) {
+        const boutonRetour = element.querySelector(
+            'form .back-button, .form-controls .back-button'
+        )
+        if (boutonRetour) {
+            const previousPage = this.app.questionnaire.previousPage(
+                pageName,
+                this.app.profil
+            )
+            if (previousPage) {
+                boutonRetour.setAttribute('href', `#${previousPage}`)
+            }
+        }
+
+        Array.from(element.querySelectorAll('.premiere-question')).forEach((lien) => {
+            lien.setAttribute('href', `#${this.app.questionnaire.firstPage}`)
+        })
+    }
+
+    redirectTo(target) {
+        if (
+            typeof window !== 'undefined' &&
+            window.history &&
+            window.history.replaceState
+        ) {
+            // Replace current page with target page in the browser history
+            // so that we don’t break the back button.
+            window.history.replaceState({}, '', `#${target}`)
+            this.navigo.resolve()
+        } else {
+            this.navigo.navigate(target)
+        }
     }
 }
 
