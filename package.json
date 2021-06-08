@@ -29,6 +29,7 @@
   "dependencies": {
     "core-js": "3.14.0",
     "dayjs": "^1.10.5",
+    "jsdom-global": "^3.0.2",
     "localforage": "1.7.3",
     "navigo": "7.1.2",
     "pikaday": "^1.8.2",
