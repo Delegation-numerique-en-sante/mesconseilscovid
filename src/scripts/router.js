@@ -1,8 +1,7 @@
 import Navigo from 'navigo'
 
-import { hideElement, showElement } from './affichage'
+import { hideElement, showElement, showMeOrThem } from './affichage'
 import { nomProfil } from './injection'
-import { loadPage } from './pagination'
 import { titleCase } from './utils'
 
 export function getCurrentPageName() {
@@ -102,7 +101,7 @@ export class Router {
         this.navigo.on(
             new RegExp('^' + pageName + '$'),
             () => {
-                var element = loadPage(pageName, this.app)
+                var element = this.loadPage(pageName, this.app)
                 this.updateTitle(element, pageName, pageTitle, this.app.profil)
                 this.fillProgress(element, pageName)
                 this.fillNavigation(element, pageName)
@@ -129,6 +128,33 @@ export class Router {
                 },
             }
         )
+    }
+
+    loadPage(pageName) {
+        const page = document.querySelector('section#page')
+        const section = document.querySelector('#' + pageName)
+        const clone = section.cloneNode(true)
+        page.classList.remove('ready')
+        page.classList.add('loading')
+        page.innerHTML = '' // Flush the current content.
+        const element = page.insertAdjacentElement(
+            'afterbegin',
+            clone.firstElementChild
+        )
+        showMeOrThem(element, this.app.profil)
+        this.scrollToTopOfPage()
+        return element
+    }
+
+    scrollToTopOfPage() {
+        if (typeof document.documentElement.scrollTo === 'function') {
+            document.documentElement.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            })
+        } else {
+            document.documentElement.scrollTop = 0
+        }
     }
 
     // A11Y: mise à jour du titre dynamiquement.
