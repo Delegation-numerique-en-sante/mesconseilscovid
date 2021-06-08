@@ -4,11 +4,10 @@ import { createElementFromHTML, safeHtml } from './affichage'
 import AlgorithmeSuivi from './algorithme/suivi'
 import { titleCase } from './utils'
 
-import SUIVI_IMAGES from '../suivi_*.svg'
-
 export default class SuiviView {
-    constructor(profil) {
+    constructor(profil, suiviImages) {
         this.profil = profil
+        this.suiviImages = suiviImages
     }
 
     renderButtonSuivi() {
@@ -193,7 +192,7 @@ export default class SuiviView {
 
     renderIcone(statut) {
         const icone = this.switchIcone(statut)
-        const imgSrc = SUIVI_IMAGES[icone]
+        const imgSrc = this.suiviImages[icone]
         return `<img src="${imgSrc}" width="40px" height="40px"
                      alt="${titleCase(icone)}" title="${titleCase(icone)}" />`
     }
