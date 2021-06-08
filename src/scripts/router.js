@@ -33,17 +33,10 @@ import {
 
 class Router {
     constructor(app) {
-        const root = null
-        const useHash = true
-        const navigo = new Navigo(root, useHash)
+        const navigo = this.initNavigo()
         this.navigo = navigo
 
         const initialTitle = document.title
-
-        // Workaround unwanted behaviour in Navigo.
-        if (this.navigo.root.slice(-1) !== '/') {
-            this.navigo.root = this.navigo.root + '/'
-        }
 
         this.navigo.hooks({
             before: (done) => {
@@ -245,6 +238,19 @@ class Router {
         this.navigo.notFound(() => {
             redirectTo('introduction')
         })
+    }
+
+    initNavigo() {
+        const root = null
+        const useHash = true
+        const navigo = new Navigo(root, useHash)
+
+        // Workaround unwanted behaviour in Navigo.
+        if (navigo.root.slice(-1) !== '/') {
+            navigo.root = navigo.root + '/'
+        }
+
+        return navigo
     }
 }
 
