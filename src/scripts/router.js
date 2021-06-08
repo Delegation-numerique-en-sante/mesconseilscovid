@@ -40,34 +40,7 @@ class Router {
 
         this.setupGlobalHooks()
         this.setupRoutes()
-
-        // Legacy redirects.
-        this.navigo.on(
-            new RegExp('^(symptomesactuels|symptomespasses|debutsymptomes)$'),
-            () => {},
-            {
-                before: (done) => {
-                    this.redirectTo('symptomes')
-                    done(false)
-                },
-            }
-        )
-        this.navigo.on(new RegExp('^(residence|foyer|activitepro)$'), () => {}, {
-            before: (done) => {
-                this.redirectTo('situation')
-                done(false)
-            },
-        })
-        this.navigo.on(new RegExp('^(caracteristiques|antecedents)$'), () => {}, {
-            before: (done) => {
-                this.redirectTo('sante')
-                done(false)
-            },
-        })
-
-        this.navigo.notFound(() => {
-            this.redirectTo('introduction')
-        })
+        this.setupRedirects()
     }
 
     initNavigo() {
@@ -252,6 +225,37 @@ class Router {
 
         Array.from(element.querySelectorAll('.premiere-question')).forEach((lien) => {
             lien.setAttribute('href', `#${this.app.questionnaire.firstPage}`)
+        })
+    }
+
+    setupRedirects() {
+        // Compatibilité avec les anciens noms de pages.
+        this.navigo.on(
+            new RegExp('^(symptomesactuels|symptomespasses|debutsymptomes)$'),
+            () => {},
+            {
+                before: (done) => {
+                    this.redirectTo('symptomes')
+                    done(false)
+                },
+            }
+        )
+        this.navigo.on(new RegExp('^(residence|foyer|activitepro)$'), () => {}, {
+            before: (done) => {
+                this.redirectTo('situation')
+                done(false)
+            },
+        })
+        this.navigo.on(new RegExp('^(caracteristiques|antecedents)$'), () => {}, {
+            before: (done) => {
+                this.redirectTo('sante')
+                done(false)
+            },
+        })
+
+        // Par défaut on retourne à la page d’accueil.
+        this.navigo.notFound(() => {
+            this.redirectTo('introduction')
         })
     }
 
