@@ -106,10 +106,15 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
     Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un **délai de 3 à 6 mois** après l’infection.
 
 
-.. question:: J’ai perdu ou je n’ai pas reçu d'attestation de vaccination, comment faire ?
+.. question:: J’ai perdu ou je n’ai pas reçu d’attestation de vaccination, comment faire ?
 
     Grâce à votre numéro de sécurité sociale, vous pouvez télécharger un nouveau certificat de vaccination sur le téléservice de l’Assurance maladie : [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
+
+
+ .. question:: J’ai eu la Covid avant d’avoir ma première et unique injection, mais mon attestation indique que ma vaccination est « en cours » au lieu d’être terminée. Que faire ?
     
+    Vous pouvez vous rendre chez un professionnel de santé (médecin, sage-femme, infirmier) muni de vos preuves de vaccination et de première contamination. Il pourra clôturer votre cycle de vaccination dans le logiciel.
+
 
  .. question:: Mon certificat de vaccination ne comporte pas de QR code, comment faire ?
 
