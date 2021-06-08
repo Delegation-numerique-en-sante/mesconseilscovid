@@ -48,7 +48,7 @@ const fakeHTML = `<!DOCTYPE html>
 
 describe('Routeur', function () {
     beforeEach(function () {
-        this.router = new initRouter(new FakeApp())
+        this.router = initRouter(new FakeApp())
     })
 
     afterEach(function () {
