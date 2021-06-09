@@ -449,37 +449,6 @@ describe('Préconditions', function () {
             })
             assert.strictEqual(questionnaire.before('conseils', profil), 'situation')
         })
-        it('redirige vers pediatrie si age < 15', function () {
-            const profil = new Profil('mes_infos', {
-                depistage: false,
-                vaccins: 'pas_encore',
-                covid_passee: false,
-                symptomes_actuels: false,
-                symptomes_passes: false,
-                contact_a_risque: false,
-                departement: '80',
-                foyer_autres_personnes: false,
-                foyer_enfants: false,
-                antecedent_cardio: false,
-                antecedent_diabete: false,
-                antecedent_respi: false,
-                antecedent_dialyse: false,
-                antecedent_greffe: false,
-                antecedent_cancer: false,
-                antecedent_immunodep: false,
-                antecedent_cirrhose: false,
-                antecedent_drepano: false,
-                antecedent_trisomie: false,
-                antecedent_chronique_autre: false,
-                age: 12,
-                grossesse_3e_trimestre: false,
-                poids: 80,
-                taille: 180,
-                activite_pro: false,
-                activite_pro_sante: false,
-            })
-            assert.strictEqual(questionnaire.before('conseils', profil), 'pediatrie')
-        })
     })
 
     describe('Suivi', function () {

@@ -47,6 +47,11 @@ Continuez à appliquer les **mesures barrières** en attendant les résultats de
 
 
 
+## [statut_moins_de_15_ans.md](statut_moins_de_15_ans.md)
+
+Nous ne pouvons pas donner de conseils personnalisés aux **moins de 15 ans**.
+
+
 ## [statut_personne_fragile.md](statut_personne_fragile.md)
 
 Vous êtes considéré·e comme une personne ayant plus de risques de développer une **forme sévère** de Covid, nous vous invitons à être **particulièrement vigilant·e**.

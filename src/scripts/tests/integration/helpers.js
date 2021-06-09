@@ -116,11 +116,7 @@ async function remplirSante(page, age, taille, poids, antecedents) {
     }
 
     let bouton = await page.waitForSelector('#page.ready >> text="Terminer"')
-    const target = age < 15 ? 'pediatrie' : 'conseils'
-    await Promise.all([
-        bouton.click(),
-        page.waitForNavigation({ url: `**/#${target}` }),
-    ])
+    await Promise.all([bouton.click(), page.waitForNavigation({ url: `**/#conseils` })])
 }
 
 async function remplirDepistage(page, depistage, date, type, resultat) {

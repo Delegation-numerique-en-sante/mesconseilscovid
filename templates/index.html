@@ -798,6 +798,9 @@
                 </div>
 
                 <div id="conseils-statut">
+                    <div id="statut-moins-de-15-ans" class="statut" hidden>
+                        {{ statut_moins_de_15_ans }}
+                    </div>
                     <div id="statut-antigenique-negatif-fragile" class="statut statut-antigenique-negatif-fragile" hidden>
                         {{ statut_antigenique_negatif_fragile }}
                     </div>
@@ -864,6 +867,12 @@
                              loading="lazy"
                              alt="Frise chronologique représentant la période d’isolement">
                     </a>
+                </div>
+            </div>
+
+            <div id="conseils-moins-de-15-ans" class="conseils" hidden>
+                <div class="conseil">
+                    {{ conseils_moins_de_15_ans }}
                 </div>
             </div>
 
@@ -1398,7 +1407,7 @@
             </div>
         </div>
 
-        <div id="et-ensuite" class="block">
+        <div id="et-ensuite" class="block" hidden>
             <div class="conseils">
                 {{ meta_et_ensuite }}
                 <div class="form-controls">
@@ -1598,19 +1607,6 @@
         <div class="form-controls">
             <a class="button button-full-width js-impression" href="" role="button">Imprimer ce suivi</a>
             <a href="#" class="back-button button-outline">Retour</a>
-        </div>
-    </div>
-</section>
-
-<section id="pediatrie" hidden>
-    <div id="pediatrie-block" class="block">
-        {{ meta_pédiatrie }}
-        <div class="js-profil-full form-controls" hidden>
-            <a class="button button-full-width" href="#conseils">Aller à mes conseils</a>
-            <a class="premiere-question button button-outline back-button button-full-width" href="#">Modifier mes réponses</a>
-        </div>
-        <div class="js-profil-empty">
-            <a class="premiere-question button button-full-width" href="#">Démarrer le questionnaire</a>
         </div>
     </div>
 </section>

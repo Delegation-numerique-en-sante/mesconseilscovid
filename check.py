@@ -209,6 +209,7 @@ def diagrammes():
         for path in each_file_from(
             CONTENUS_DIR / "statuts", pattern="*.md", exclude=["README.md"]
         )
+        if path.name != 'statut_moins_de_15_ans.md'
     }
     conseils_filenames = {
         path.name

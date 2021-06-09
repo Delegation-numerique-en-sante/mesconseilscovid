@@ -82,13 +82,6 @@ export default class App {
             beforeSuiviHistorique
         )
 
-        this.router.addRoute('pediatrie', (element) => {
-            if (this.profil.isComplete()) {
-                showElement(element.querySelector('.js-profil-full'))
-                hideElement(element.querySelector('.js-profil-empty'))
-            }
-        })
-
         this.router.addRoute('conditionsutilisation', (element) => {
             if (this.profil.isComplete()) {
                 showElement(element.querySelector('.js-profil-full'))

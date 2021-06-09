@@ -402,6 +402,15 @@ Si vous respectez ces indications, il n’est **pas nécessaire de réaliser un 
 
 
 
+## [conseils_moins_de_15_ans.md](conseils_moins_de_15_ans.md)
+
+* Nous sommes désolés ! Les **recommandations médicales** que nous utilisons ont été prévues seulement pour les personnes âgées de 15 ans et plus.
+
+* Nous vous invitons à consulter les **informations personnalisées** ci-dessous, ainsi que notre page dédiée aux [conseils pour les enfants](/conseils-pour-les-enfants.html) qui regroupe vos questions fréquentes.
+
+* En cas de question médicale, nous vous invitons à contacter votre **médecin traitant**, ou à appeler le <a href="tel:15">15</a> en cas d’urgence.
+
+
 ## [conseils_pass_sanitaire.md](conseils_pass_sanitaire.md)
 
 Un « pass sanitaire » également appelé <span lang="en">“Digital Covid Certificate”</span> en Union européenne, est disponible en format papier ou numérique sur votre application TousAntiCovid (rubrique « Mon carnet »).
