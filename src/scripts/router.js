@@ -12,7 +12,9 @@ export class Router {
     constructor(app, window) {
         this.app = app
         this.window = window
-        this.initialTitle = document.title
+        this.document = window.document
+
+        this.initialTitle = this.document.title
 
         this.navigo = this.initNavigo()
 
@@ -46,7 +48,7 @@ export class Router {
     }
 
     beforeGlobalHook(done) {
-        var header = document.querySelector('header section')
+        var header = this.document.querySelector('header section')
         if (typeof this.app.profil.nom === 'undefined') {
             showElement(header.querySelector('.js-profil-empty'))
             hideElement(header.querySelector('.js-profil-full'))
@@ -64,13 +66,15 @@ export class Router {
     }
 
     sendPageChangeEvent() {
-        const pageName = getCurrentPageName(document)
-        document.dispatchEvent(new CustomEvent('pageChanged', { detail: pageName }))
+        const pageName = getCurrentPageName(this.document)
+        this.document.dispatchEvent(
+            new this.window.CustomEvent('pageChanged', { detail: pageName })
+        )
     }
 
     focusMainHeaderElement() {
         // A11Y: keyboard navigation
-        document.querySelector('[role="banner"]').focus()
+        this.document.querySelector('[role="banner"]').focus()
     }
 
     addQuestionnaireRoute(pageName, view, pageTitle) {
@@ -125,8 +129,8 @@ export class Router {
     }
 
     loadPage(pageName) {
-        const page = document.querySelector('section#page')
-        const section = document.querySelector('#' + pageName)
+        const page = this.document.querySelector('section#page')
+        const section = this.document.querySelector('#' + pageName)
         const clone = section.cloneNode(true)
         page.classList.remove('ready')
         page.classList.add('loading')
@@ -141,13 +145,13 @@ export class Router {
     }
 
     scrollToTopOfPage() {
-        if (typeof document.documentElement.scrollTo === 'function') {
-            document.documentElement.scrollTo({
+        if (typeof this.document.documentElement.scrollTo === 'function') {
+            this.document.documentElement.scrollTo({
                 top: 0,
                 behavior: 'smooth',
             })
         } else {
-            document.documentElement.scrollTop = 0
+            this.document.documentElement.scrollTop = 0
         }
     }
 
@@ -165,7 +169,7 @@ export class Router {
         const separator = titlePrefix ? ' — ' : ''
         const numeroEtape = this.app.questionnaire.numeroEtape(pageName, profil)
         const etape = numeroEtape ? ` (étape ${numeroEtape})` : ''
-        document.title = titlePrefix + etape + separator + this.initialTitle
+        this.document.title = titlePrefix + etape + separator + this.initialTitle
     }
 
     fillProgress(element, pageName) {
@@ -221,7 +225,7 @@ export class Router {
 
         // Par défaut on retourne à la page d’accueil.
         this.navigo.notFound(() => {
-            const hash = document.location.hash
+            const hash = this.document.location.hash
             const fragment = hash ? hash.slice(1) : ''
             if (
                 this.window.location.pathname === '/' &&
