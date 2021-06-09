@@ -123,6 +123,16 @@ Il est recommandé de mettre à jour dès que possible en cliquant sur le bouton
 
 ## [meta_pied_de_page.md](meta_pied_de_page.md)
 
+<div id="entretiens-utilisateurs" class="conseil">
+
+#### Aidez-nous à améliorer MesConseilsCovid
+
+Afin de vous apporter des conseils plus pertinents, nous organisons des entretiens utilisateurs individuels de 20 minutes dont l’objectif est de mieux comprendre vos attentes.
+
+Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement **OK** ou laissez nous votre numéro de téléphone par e-mail à l’adresse <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a>, et nous vous recontacterons pour convenir d’un rendez-vous.
+
+</div>
+
 <div class="feedback-block">
     <div class="feedback-component" data-feedback-transition-delay="500">
         <div class="feedback-question">
@@ -168,16 +178,6 @@ Vos informations personnelles sont seulement stockées sur cet appareil, et ne s
 ## [meta_pour_finir.md](meta_pour_finir.md)
 
 ### Pour finir…
-
-<div class="conseil">
-
-#### Aidez-nous à améliorer MesConseilsCovid
-
-Afin de vous apporter des conseils plus pertinents, nous organisons des entretiens utilisateurs individuels de 20 minutes dont l’objectif est de mieux comprendre vos attentes.
-
-Vous souhaitez participer à un entretien utilisateur ? Envoyez-nous simplement **OK** ou laissez nous votre numéro de téléphone par e-mail à l’adresse <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a>, et nous vous recontacterons pour convenir d’un rendez-vous.
-
-</div>
 
 <div class="icon icon-information">
     <div class="feedback-component" data-feedback-transition-delay="500">
