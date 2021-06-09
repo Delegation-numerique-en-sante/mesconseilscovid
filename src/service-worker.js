@@ -9,6 +9,7 @@ const CACHE_FILES = [
     'style.css',
     'scripts/main.js',
     'cas-contact-a-risque.html',
+    'conseils-pour-les-enfants.html',
     'je-suis-vaccine.html',
     'je-veux-me-faire-vacciner.html',
     'je-vis-avec-personne-covid-positive.html',

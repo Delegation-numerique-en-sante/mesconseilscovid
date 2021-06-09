@@ -60,16 +60,14 @@ describe('Pages', function () {
         {
             // On retrouve le titre explicite.
             let titre = await page.waitForSelector('#page.ready h1')
-            assert.equal(await titre.innerText(), 'Conseils pour les enfants')
-            assert.equal(
-                await page.title(),
-                'Conseils pour les enfants — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
-            )
+            assert.equal(await titre.innerText(), 'Mes conseils')
 
-            // On retrouve le bouton pour aller vers les conseils.
-            let button = await page.waitForSelector('#page.ready .js-profil-full a')
-            assert.equal((await button.innerText()).trim(), 'Aller à mes conseils')
-            assert.equal(await button.getAttribute('href'), '#conseils')
+            // Désolé, pas de conseils.
+            let statut = await page.waitForSelector('#page.ready #conseils-statut')
+            assert.equal(
+                (await statut.innerText()).trim(),
+                'Nous ne pouvons pas donner de conseils personnalisés aux moins de 15 ans.'
+            )
         }
     })
 
