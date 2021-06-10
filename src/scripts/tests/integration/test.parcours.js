@@ -510,4 +510,87 @@ describe('Parcours', function () {
 
         await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
     })
+
+    it('remplir le questionnaire avec age < 15 ans', async function () {
+        const page = this.test.page
+
+        // On est redirigé vers l’introduction.
+        await Promise.all([
+            page.goto('http://localhost:8080/'),
+            page.waitForNavigation({ url: '**/#introduction' }),
+        ])
+
+        // On clique sur "Des conseils pour moi".
+        {
+            let bouton = await page.waitForSelector(
+                '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#vaccins' }),
+            ])
+            assert.equal(
+                await page.title(),
+                'Mon statut actuel de vaccination contre la Covid (étape 1) — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
+            )
+        }
+
+        // Remplir le questionnaire.
+        await remplirQuestionnaire(page, {
+            vaccins: 'pas_encore',
+            symptomesActuels: ['temperature'],
+            debutSymptomes: 'aujourdhui',
+            depistage: false,
+            departement: '80',
+            age: '14',
+            taille: '165',
+            poids: '70',
+            grossesse: false,
+        })
+
+        // Page conseils.
+        {
+            // On retrouve le titre explicite.
+            let titre = await page.waitForSelector('#page.ready h1')
+            assert.equal(await titre.innerText(), 'Mes conseils')
+
+            // Désolé, pas de conseils.
+            let statut = await page.waitForSelector('#page.ready #conseils-statut')
+            assert.equal(
+                (await statut.innerText()).trim(),
+                'Nous ne pouvons pas donner de conseils personnalisés aux moins de 15 ans.'
+            )
+
+            // Le bloc « Isolement » est caché.
+            assert.isTrue(await page.isHidden('#page.ready #conseils-isolement'))
+
+            // On n’a pas démarré automatiquement de suivi.
+            assert.isUndefined(
+                await page.evaluate(() => window.app.profil.suivi_start_date)
+            )
+
+            // Le bouton « Démarrer mon suivi » est caché.
+            assert.isTrue(
+                await page.isHidden('#page.ready >> text="Démarrer mon suivi"')
+            )
+
+            // On peut revenir à l’accueil.
+            let bouton = await page.waitForSelector(
+                '#page.ready >> text="Revenir à l’accueil"'
+            )
+            await Promise.all([
+                bouton.click(),
+                waitForPlausibleTrackingEvent(page, 'pageview:introduction'),
+            ])
+        }
+
+        // Page d’accueil.
+        {
+            // Il y a un bouton « Voir mes conseils ».
+            await page.waitForSelector('#page.ready >> text="Voir mes conseils"')
+
+            // Il n’y a PAS de bouton « Démarrer mon suivi ».
+            assert.isNull(await page.$('#page.ready >> text="Démarrer mon suivi"'))
+        }
+    })
 })

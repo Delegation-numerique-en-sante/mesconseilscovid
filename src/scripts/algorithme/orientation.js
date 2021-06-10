@@ -345,6 +345,7 @@ export default class AlgorithmeOrientation {
 
     recommandeAutoSuivi() {
         return (
+            this.profil.age >= 15 &&
             this.profil.hasSymptomesActuelsReconnus() &&
             !this.profil.depistagePositifRecentAsymptomatique() &&
             !this.profil.depistageNegatifRecentSymptomatique()

@@ -1,5 +1,4 @@
 import { assert } from 'chai'
-import { remplirQuestionnaire } from './helpers'
 
 describe('Pages', function () {
     it('titre de la page', async function () {
@@ -15,60 +14,6 @@ describe('Pages', function () {
             await page.title(),
             'Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
         )
-    })
-
-    it('remplir le questionnaire avec pédiatrie', async function () {
-        const page = this.test.page
-
-        // On est redirigé vers l’introduction.
-        await Promise.all([
-            page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
-        ])
-
-        // On clique sur "Des conseils pour moi".
-        {
-            let bouton = await page.waitForSelector(
-                '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
-            )
-            await Promise.all([
-                bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
-            ])
-            assert.equal(
-                await page.title(),
-                'Mon statut actuel de vaccination contre la Covid (étape 1) — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
-            )
-        }
-
-        // Remplir le questionnaire.
-        await remplirQuestionnaire(page, {
-            vaccins: 'pas_encore',
-            depistage: false,
-            symptomesActuels: [],
-            symptomesPasses: false,
-            contactARisque: [],
-            departement: '80',
-            enfants: true,
-            age: '12',
-            taille: '165',
-            poids: '70',
-            grossesse: false,
-        })
-
-        // Pédiatrie.
-        {
-            // On retrouve le titre explicite.
-            let titre = await page.waitForSelector('#page.ready h1')
-            assert.equal(await titre.innerText(), 'Mes conseils')
-
-            // Désolé, pas de conseils.
-            let statut = await page.waitForSelector('#page.ready #conseils-statut')
-            assert.equal(
-                (await statut.innerText()).trim(),
-                'Nous ne pouvons pas donner de conseils personnalisés aux moins de 15 ans.'
-            )
-        }
     })
 
     it('on peut accéder aux CGU depuis l’accueil', async function () {
