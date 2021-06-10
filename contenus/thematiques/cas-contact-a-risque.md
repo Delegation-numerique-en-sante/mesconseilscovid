@@ -40,10 +40,11 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**) ;
 * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
+<div class="conseil conseil-jaune">
+
+**L'Assurance maladie peut vous contacter par SMS** pour vous informer que vous êtes cas contact ou positif et vous inviter à vous isoler. Les SMS peuvent prendre la forme d'un échange guidé, mais **l'Assurance maladie ne vous demandera pas de partager des informations personnelles telles que : numéro de sécurité sociale, numéro de carte bancaire, mot de  passe...** Face à la recrudescence des fraudes, restez vigilants. Pour plus d'information à ce sujet, rendez-vous sur le [site de l'Assurance maladie](https://www.ameli.fr/hauts-de-seine/assure/droits-demarches/principes/attention-appels-courriels-frauduleux).
+
 </div>
-    
-***Attention***  
-**L'Assurance maladie peut vous contacter par SMS** pour vous informer que vous êtes cas contact ou positif et vous inviter à vous isoler. Les SMS peuvent prendre la forme d'un échange guidé, mais **l'Assurance maladie ne vous demandera pas de partager des informations personnelles telles que : numéro de sécurité sociale, numéro de carte bancaire, mot de  passe...** Face à la recrudescence des fraudes, restez vigilants. Pour plus d'information à ce sujet, rendez-vous sur le [site de l'Assurance maladie](https://www.ameli.fr/hauts-de-seine/assure/droits-demarches/principes/attention-appels-courriels-frauduleux).  
 
 ## Vous avez encore des questions ?
 
