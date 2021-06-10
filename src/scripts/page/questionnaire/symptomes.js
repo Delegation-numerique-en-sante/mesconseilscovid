@@ -8,6 +8,7 @@ import {
     someChecked,
 } from '../../formutils'
 import { joursAvant } from '../../utils'
+import AlgorithmeOrientation from '../../algorithme/orientation'
 
 export default function symptomes(form, app) {
     // Selon le choix radio ça affiche le choix des symptômes et/ou
@@ -130,7 +131,8 @@ function fillProfilDates(app, form) {
     app.profil.symptomes_start_date = dateFromForm(form)
 
     // Enregistre le démarrage du suivi.
-    if (!app.profil.hasSuiviStartDate()) {
+    var algoOrientation = new AlgorithmeOrientation(app.profil)
+    if (algoOrientation.recommandeAutoSuivi() && !app.profil.hasSuiviStartDate()) {
         app.profil.suivi_start_date = new Date()
     }
 }
