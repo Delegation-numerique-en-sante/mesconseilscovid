@@ -38,7 +38,8 @@
   "scripts": {
     "test": "mocha --color --require @babel/register src/scripts/tests/",
     "test:coverage": "nyc npm run test",
-    "test-integration": "mocha --color --require @babel/register --retries=5 --bail --timeout 15000 src/scripts/tests/integration/",
+    "test-integration": "mocha --color --require @babel/register --bail src/scripts/tests/integration/",
+    "test-integration:ci": "mocha --color --require @babel/register --bail --retries=5 --timeout 15000 src/scripts/tests/integration/",
     "lint": "eslint --color src/scripts/ src/service-worker.js",
     "prebuild": "rm -rf dist",
     "build": "parcel build src/*.html --detailed-report 20 --experimental-scope-hoisting",

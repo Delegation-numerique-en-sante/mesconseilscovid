@@ -132,7 +132,7 @@ jobs:
 
       - name: Run browser tests (chromium)
         run: |
-          npm run-script test-integration
+          npm run-script test-integration:ci
         env:
           BROWSER: "chromium"
           DEBUG: "pw:api"
@@ -168,7 +168,7 @@ jobs:
 
       - name: Run browser tests (firefox)
         run: |
-          npm run-script test-integration
+          npm run-script test-integration:ci
         env:
           BROWSER: "firefox"
           DEBUG: "pw:api"
@@ -204,7 +204,7 @@ jobs:
 
       - name: Run browser tests (webkit)
         run: |
-          npm run-script test-integration
+          npm run-script test-integration:ci
         env:
           BROWSER: "webkit"
           DEBUG: "pw:api"
