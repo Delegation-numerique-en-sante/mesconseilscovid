@@ -4,7 +4,7 @@
 
 * mise à jour des infos sur la vaccination et le pass sanitaire
 * clarification de la question « cas contact »
-* avertissement relatuf aux SMS frauduleux
+* avertissement relatif aux SMS frauduleux
 * améliorations d’accessibilité
 * compatibilité IE11
 
