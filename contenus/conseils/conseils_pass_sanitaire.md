@@ -1,15 +1,19 @@
-Un « pass sanitaire » également appelé <span lang="en">“Digital Covid Certificate”</span> en Union européenne, sera disponible en format papier ou numérique sur votre application TousAntiCovid (rubrique « Mon carnet »).
+Un « pass sanitaire » également appelé <span lang="en">“Digital Covid Certificate”</span> en Union européenne, est disponible en format papier ou numérique sur votre application TousAntiCovid (rubrique « Mon carnet »).
 
-Les documents faisant office de « pass sanitaire » seront, au choix :
+Les documents faisant office de « pass sanitaire » sont, au choix :
 
-  * la preuve de vaccination complète (certificat remis lors de votre vaccination, ou téléchargeable depuis [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/)) ;
-  * un test PCR ou antigénique négatif de moins de 72 heures ;
-  * un test PCR ou antigénique positif de plus de 15 jours et de moins de 2 mois (certificat de rétablissement).
+  * la preuve de vaccination complète ;
+  * un test PCR ou antigénique négatif de moins de 72 heures pour le contrôle aux frontières ou 48h pour la participation à des évènements en France;
+  * un test PCR ou antigénique positif de plus de 15 jours et de moins de 6 mois (certificat de rétablissement).
 
-En France, à partir du 3 juin, ce « pass sanitaire » devra être présenté pour participer à des évènements rassemblant plus de 1 000 personnes.
+En France, depuis le 9 juin, le pass sanitaire « activités » doit être présenté pour participer à des évènements rassemblant plus de 1 000 personnes.
  
-L’accès aux lieux nécessaires à la vie quotidienne (restaurants, service public, grandes surfaces…) ne sera **pas** soumis à la présentation de ce « pass sanitaire ».
+L’accès aux lieux nécessaires à la vie quotidienne (restaurants, service public, grandes surfaces…) ne sont **pas** soumis à la présentation de ce pass sanitaire « activités ».
 
-En Union européenne, lorsqu’il entrera en application à partir de juillet, ce « pass sanitaire » permettra de faciliter les voyages entre les pays membres. 
+En Union européenne, lorsqu’il entrera en application à partir de juillet, le pass sanitaire « frontières » permettra de faciliter les voyages entre les pays membres. 
+
+Pour télécharger un nouveau certificat (avec QR code) : 
+* de vaccination complète, rendez-vous sur [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/)
+* de résultat de dépistage, rendez-vous sur le [portail SI-DEP](https://si-dep.gouv.fr/cyberlab/patientviewer.jsp)
  
 Pour plus d’informations, consultez : [la page dédiée du gouvernement](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions).
