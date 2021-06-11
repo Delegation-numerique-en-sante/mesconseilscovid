@@ -6,7 +6,9 @@ import {
 } from '../../formutils'
 import AlgorithmeOrientation from '../../algorithme/orientation'
 
-export default function sante(form, app) {
+export default function sante(element, app) {
+    const form = element.querySelector('form')
+
     const button = form.querySelector('input[type=submit]')
     preloadForm(form, 'age', app.profil)
     preloadForm(form, 'taille', app.profil)

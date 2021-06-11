@@ -12,7 +12,9 @@ import {
 dayjs.locale('fr')
 dayjs.extend(localeData)
 
-export default function historique(form, app) {
+export default function historique(element, app) {
+    const form = element.querySelector('form')
+
     const now = dayjs()
 
     // Remplir le formulaire avec les données du profil.

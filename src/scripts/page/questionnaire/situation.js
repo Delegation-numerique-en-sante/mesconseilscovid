@@ -7,7 +7,9 @@ import {
 } from '../../formutils'
 import geolocalisation from '../../geoloc'
 
-export default function situation(form, app) {
+export default function situation(element, app) {
+    const form = element.querySelector('form')
+
     // Pré-remplir le formulaire avec le profil.
     preloadForm(form, 'departement', app.profil)
     preloadCheckboxForm(form, 'foyer_autres_personnes', app.profil)

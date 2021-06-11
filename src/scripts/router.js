@@ -1,5 +1,6 @@
 import Navigo from 'navigo'
 
+import { bindFeedback } from './actions'
 import { hideElement, showElement, showMeOrThem } from './affichage'
 import { nomProfil } from './injection'
 import { titleCase } from './utils'
@@ -88,7 +89,11 @@ export class Router {
             }
             return this.app.questionnaire.before(pageName, profil)
         }
-        this.addAppRoute(pageName, view, beforeFunc, pageTitle)
+        const viewFunc = (page, app) => {
+            view(page, app)
+            bindFeedback(page.querySelector('.feedback-component'), app)
+        }
+        this.addAppRoute(pageName, viewFunc, beforeFunc, pageTitle)
     }
 
     addAppRoute(pageName, view, before, pageTitle) {
