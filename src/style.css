@@ -53,7 +53,7 @@ a:active {
 }
 
 section,
-footer {
+footer > * {
     max-width: 60rem;
     margin: 0 auto;
 }
@@ -126,6 +126,9 @@ main {
 @media only screen and (min-width: 680px) {
     main {
         padding-top: 18px;
+    }
+    main,
+    footer {
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -939,18 +942,24 @@ fieldset ul.details {
 .feedback-block {
     background-color: #ffd;
     margin: 2rem auto 2rem auto;
-    padding: 0.25rem 2rem;
+    padding: 1.5rem 2rem;
     text-align: center;
+}
+.feedback-block p {
+    margin: 0 0 1rem 0;
 }
 .feedback-block a {
     color: #484d7a;
 }
 .feedback-block .feedback-controls {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0 auto;
     padding: 0;
     align-items: center;
+}
+.feedback-block .feedback-controls > * {
+    margin: 0 1rem;
 }
 
 input[type='text'],
