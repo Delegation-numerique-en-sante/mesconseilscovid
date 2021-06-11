@@ -101,13 +101,12 @@ export class Router {
         this.navigo.on(
             new RegExp('^' + pageName + '$'),
             () => {
-                var element = this.loadPage(pageName, this.app)
-                this.updateTitle(element, pageName, pageTitle, this.app.profil)
-                this.fillProgress(element, pageName)
-                this.fillNavigation(element, pageName)
-                viewFunc(element)
+                const page = this.loadPage(pageName, this.app)
+                this.updateTitle(page, pageName, pageTitle, this.app.profil)
+                this.fillProgress(page, pageName)
+                this.fillNavigation(page, pageName)
+                viewFunc(page)
                 this.app.trackPageView(pageName)
-                const page = element.parentElement
                 page.classList.remove('loading')
                 page.classList.add('ready')
             },
@@ -137,13 +136,12 @@ export class Router {
         page.classList.remove('ready')
         page.classList.add('loading')
         page.innerHTML = '' // Flush the current content.
-        const element = page.insertAdjacentElement(
-            'afterbegin',
-            clone.firstElementChild
-        )
-        showMeOrThem(element, this.app.profil)
+        while (clone.firstElementChild) {
+            page.insertAdjacentElement('beforeend', clone.firstElementChild)
+        }
+        showMeOrThem(page, this.app.profil)
         this.scrollToTopOfPage()
-        return element
+        return page
     }
 
     scrollToTopOfPage() {
@@ -158,10 +156,10 @@ export class Router {
     }
 
     // A11Y: mise à jour du titre dynamiquement.
-    updateTitle(element, pageName, pageTitle, profil) {
+    updateTitle(page, pageName, pageTitle, profil) {
         let titlePrefix = pageTitle
         if (typeof pageTitle === 'undefined') {
-            const titleElem = element.querySelector('h1, #conseils-block-titre, h2')
+            const titleElem = page.querySelector('h1, #conseils-block-titre, h2')
             if (titleElem) {
                 titlePrefix = titleElem.innerText
             } else {
@@ -174,15 +172,15 @@ export class Router {
         document.title = titlePrefix + etape + separator + this.initialTitle
     }
 
-    fillProgress(element, pageName) {
-        const progress = element.querySelector('.progress')
+    fillProgress(page, pageName) {
+        const progress = page.querySelector('.progress')
         if (progress) {
             progress.innerText = this.app.questionnaire.etapesRestantes(pageName)
         }
     }
 
-    fillNavigation(element, pageName) {
-        const boutonRetour = element.querySelector(
+    fillNavigation(page, pageName) {
+        const boutonRetour = page.querySelector(
             'form .back-button, .form-controls .back-button'
         )
         if (boutonRetour) {
@@ -195,7 +193,7 @@ export class Router {
             }
         }
 
-        Array.from(element.querySelectorAll('.premiere-question')).forEach((lien) => {
+        Array.from(page.querySelectorAll('.premiere-question')).forEach((lien) => {
             lien.setAttribute('href', `#${this.app.questionnaire.firstPage}`)
         })
     }

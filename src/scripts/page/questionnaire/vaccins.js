@@ -4,7 +4,9 @@ import {
     toggleFormButtonOnRadioRequired,
 } from '../../formutils'
 
-export default function vaccins(form, app) {
+export default function vaccins(page, app) {
+    const form = page.querySelector('form')
+
     premierDemarrageFormulaire(app)
 
     // Remplir le formulaire avec les données du profil.

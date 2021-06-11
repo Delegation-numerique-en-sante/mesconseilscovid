@@ -21,7 +21,9 @@ import { joursAvant, joursApres, titleCase } from '../utils'
 import AlgorithmeOrientation from '../algorithme/orientation'
 import AlgorithmeSuivi from '../algorithme/suivi'
 
-export default function conseils(element, app) {
+export default function conseils(page, app) {
+    const element = page
+
     applyDetailsSummaryPolyfill(element)
 
     // Make sure we show profile-specific text.

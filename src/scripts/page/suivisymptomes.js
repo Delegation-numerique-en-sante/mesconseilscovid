@@ -7,7 +7,9 @@ import {
 
 import AlgorithmeDeconfinement from '../algorithme/deconfinement'
 
-export default function suivisymptomes(form, app) {
+export default function suivisymptomes(page, app) {
+    const form = page.querySelector('form')
+
     // Enregistre le démarrage du suivi si la date n’est pas renseignée
     // (elle a pu être mise à zéro en cas d’effacement du suivi).
     if (!app.profil.hasSuiviStartDate()) {

@@ -9,7 +9,9 @@ import {
 } from '../../formutils'
 import { joursAvant } from '../../utils'
 
-export default function symptomes(form, app) {
+export default function symptomes(page, app) {
+    const form = page.querySelector('form')
+
     // Selon le choix radio ça affiche le choix des symptômes et/ou
     // la saisie de la date.
     const statuts = form.elements['symptomes_actuels_statuts']

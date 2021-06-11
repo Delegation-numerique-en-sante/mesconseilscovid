@@ -1,7 +1,9 @@
 import Profil from '../profil'
 import { createElementFromHTML, hideElement, showElement } from '../affichage'
 
-export default function introduction(element, app) {
+export default function introduction(page, app) {
+    const element = page
+
     const header = document.querySelector('header section')
     showElement(header.querySelector('.js-profil-empty'))
     hideElement(header.querySelector('.js-profil-full'))
