@@ -110,6 +110,10 @@ export default class AlgorithmeOrientation {
         return this.profil.age >= 50
     }
 
+    get sup15() {
+        return this.profil.age >= 15
+    }
+
     get imc() {
         const taille_en_metres = this.profil.taille / 100
         return this.profil.poids / (taille_en_metres * taille_en_metres)
@@ -345,7 +349,7 @@ export default class AlgorithmeOrientation {
 
     recommandeAutoSuivi() {
         return (
-            this.profil.age >= 15 &&
+            this.sup15 &&
             this.profil.hasSymptomesActuelsReconnus() &&
             !this.profil.depistagePositifRecentAsymptomatique() &&
             !this.profil.depistageNegatifRecentSymptomatique()
@@ -625,7 +629,12 @@ export default class AlgorithmeOrientation {
 
     enfantsBlockNamesToDisplay() {
         const blockNames = []
-        if (this.profil.foyer_enfants) {
+        if (this.profil.foyer_enfants || !this.sup15) {
+            if (this.profil.foyer_enfants) {
+                blockNames.push('reponse-foyer-enfants')
+            } else {
+                blockNames.push('reponse-enfants-inf-15')
+            }
             blockNames.push('conseils-foyer-enfants')
         }
         return blockNames

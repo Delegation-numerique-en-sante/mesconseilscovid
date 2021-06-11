@@ -94,6 +94,12 @@ Votre lieu de résidence actuel : <strong id="nom-departement"></strong> (<a hre
 
 
 
+## [réponse_enfants_inf_15.md](réponse_enfants_inf_15.md)
+
+Vous avez moins de 15 ans (<a href="#sante">modifier</a>)
+
+
+
 ## [réponse_foyer_enfants.md](réponse_foyer_enfants.md)
 
 Vous vivez avec un ou des enfants (<a href="#situation">modifier</a>)
