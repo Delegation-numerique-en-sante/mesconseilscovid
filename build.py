@@ -75,23 +75,24 @@ class QuestionDirective(Directive):
 
     https://developers.google.com/search/docs/data-types/faqpage?hl=fr
     """
+
     def parse(self, block, m, state):
-        question = m.group('value')
+        question = m.group("value")
         options = self.parse_options(m)
-        level = int(dict(options).get('level')) if options else 2
+        level = int(dict(options).get("level")) if options else 2
         text = self.parse_text(m)
         children = block.parse(text, state, block.rules)
-        return {'type': 'question', 'children': children, 'params': (question, level)}
+        return {"type": "question", "children": children, "params": (question, level)}
 
     def __call__(self, md):
-        self.register_directive(md, 'question')
-        if md.renderer.NAME == 'html':
-            md.renderer.register('question', render_html_question)
+        self.register_directive(md, "question")
+        if md.renderer.NAME == "html":
+            md.renderer.register("question", render_html_question)
 
 
 def render_html_question(text, question, level):
     return f"""<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-<h{level} itemprop="name">{question}</h{level}>
+<h{level} itemprop="name">{typographie(question)}</h{level}>
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 {text}</div>
@@ -130,7 +131,6 @@ class MarkdownContent:
 
     def render_them(self, tag="div"):
         return f'<{tag} class="them" hidden>{str(self).strip()}</{tag}>'
-
 
 
 class MarkdownInlineContent(MarkdownContent):

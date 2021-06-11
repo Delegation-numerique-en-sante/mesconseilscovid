@@ -121,7 +121,7 @@ class TestQuestionDirective:
             == dedent(
                 """\
                 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <h2 itemprop="name">Quand pourrai-je me faire vacciner ?</h2>
+                <h2 itemprop="name">Quand pourrai-je me faire vacciner&#8239;?</h2>
                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
                 <p>Vous pouvez vous faire vacciner <strong>dès maintenant</strong>&nbsp;:</p>
@@ -158,7 +158,7 @@ class TestQuestionDirective:
             == dedent(
                 """\
                 <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <h3 itemprop="name">Quand pourrai-je me faire vacciner ?</h3>
+                <h3 itemprop="name">Quand pourrai-je me faire vacciner&#8239;?</h3>
                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
                 <p>Vous pouvez vous faire vacciner <strong>dès maintenant</strong>&nbsp;:</p>
