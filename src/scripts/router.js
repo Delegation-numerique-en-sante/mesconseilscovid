@@ -68,6 +68,7 @@ export class Router {
 
     afterGlobalHook() {
         this.sendPageChangeEvent()
+        this.focusMainHeaderElement()
     }
 
     sendPageChangeEvent() {
