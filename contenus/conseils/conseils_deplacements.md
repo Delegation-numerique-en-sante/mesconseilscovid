@@ -3,8 +3,8 @@
 L’entrée en France et toute sortie du territoire à destination ou en provenance d’un pays de l’espace européen, ou d’un pays classé vert (Australie, Corée du Sud, Israël, Japon, Liban, Nouvelle-Zélande, Singapour) est permise sans présentation d’un motif impérieux pour les personnes vaccinées comme non vaccinées.  
 
 Toute entrée en France est conditionnée à la réalisation d’un test PCR ou antigénique de moins de 48h ou 72h (selon les pays), à l’exception des :
-* travailleurs transfrontaliers
-* personnes vaccinées en provenance d'un pays classé vert ;
+* travailleurs transfrontaliers ;
+* personnes vaccinées en provenance d’un pays classé vert.
 
 Les déplacements en provenance et en direction de [certains territoires ultramarins](https://www.gouvernement.fr/info-coronavirus/outre-mer) sont également soumis à la production de motifs impérieux. 
 
