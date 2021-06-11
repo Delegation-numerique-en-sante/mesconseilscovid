@@ -225,6 +225,12 @@ export class Router {
                 done(false)
             },
         })
+        this.navigo.on('pediatrie', () => {}, {
+            before: function (done) {
+                window.location.replace('conseils-pour-les-enfants.html')
+                done(false)
+            },
+        })
 
         // Par défaut on retourne à la page d’accueil.
         this.navigo.notFound(() => {
