@@ -1,6 +1,6 @@
 <div class="conseil conseil-jaune">
 
-<span class="nouveau">nouveau</span> Un **couvre-feu** s’applique dans votre département de **21 h** à **6 h** du matin.
+<span class="nouveau">nouveau</span> Un **couvre-feu** s’applique dans votre département de **23 h** à **6 h** du matin.
 
 </div>
 
