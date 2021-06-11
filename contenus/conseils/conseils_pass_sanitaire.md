@@ -3,7 +3,7 @@ Un « pass sanitaire » également appelé <span lang="en">“Digital Covid Ce
 Les documents faisant office de « pass sanitaire » sont, au choix :
 
   * la preuve de vaccination complète ;
-  * un test PCR ou antigénique négatif de moins de 72 heures pour le contrôle aux frontières ou 48h pour la participation à des évènements en France;
+  * un test PCR ou antigénique négatif de moins de 72 heures pour le contrôle aux frontières ou 48h pour la participation à des évènements en France ;
   * un test PCR ou antigénique positif de plus de 15 jours et de moins de 6 mois (certificat de rétablissement).
 
 En France, depuis le 9 juin, le pass sanitaire « activités » doit être présenté pour participer à des évènements rassemblant plus de 1 000 personnes.
