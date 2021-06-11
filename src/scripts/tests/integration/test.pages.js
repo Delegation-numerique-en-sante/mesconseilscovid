@@ -16,6 +16,22 @@ describe('Pages', function () {
         )
     })
 
+    it('redirige l’ancienne page de pédiatrie vers sa page thématique', async function () {
+        const page = this.test.page
+
+        await Promise.all([
+            page.goto('http://localhost:8080/#pediatrie'),
+            page.waitForNavigation({
+                url: 'http://localhost:8080/conseils-pour-les-enfants.html',
+            }),
+        ])
+
+        assert.equal(
+            await page.title(),
+            'Conseils pour les enfants — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
+        )
+    })
+
     it('on peut accéder aux CGU depuis l’accueil', async function () {
         const page = this.test.page
 
