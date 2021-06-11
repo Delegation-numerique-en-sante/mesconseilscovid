@@ -224,6 +224,8 @@ def thematiques():
             **{
                 "thematique": thematique,
                 "config_stats_url": responses["config_stats_url"],
+                "meta_entretiens_utilisateurs": responses["meta_entretiens_utilisateurs"],
+                "meta_feedback_difficultés": responses["meta_feedback_difficultés"],
                 "meta_pied_de_page": responses["meta_pied_de_page"],
             },
         )
