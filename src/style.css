@@ -936,13 +936,21 @@ fieldset ul.details {
     width: 100%;
 }
 
-.feedback-controls {
+.feedback-block {
+    background-color: #ffd;
+    margin: 2rem auto 2rem auto;
+    padding: 0.25rem 2rem;
+    text-align: center;
+}
+.feedback-block a {
+    color: #484d7a;
+}
+.feedback-block .feedback-controls {
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
-    padding-top: 1rem;
+    padding: 0;
     align-items: center;
-    max-width: 25rem;
 }
 
 input[type='text'],

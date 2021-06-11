@@ -23,18 +23,32 @@ describe('Plausible', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/#introduction')
+        let bouton = await page.waitForSelector(
+            '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
+        )
+
+        await Promise.all([
+            bouton.click(),
+            page.waitForNavigation({ url: '**/#vaccins' }),
+        ])
+
         await page.waitForSelector('#page.ready')
-        const bouton = await page.waitForSelector('.feedback-component >> text="Oui"')
-        await bouton.click()
+        const drapeau = await page.waitForSelector(
+            '.feedback-component >> text="Des difficultés pour répondre à cette question ?"'
+        )
+        await drapeau.click()
         const form = await page.waitForSelector('.feedback-component .feedback-form')
         assert.include(
             await form.innerHTML(),
-            'Merci de nous avoir signalé vos difficultés avec cette page.'
+            'Merci de nous avoir signalé vos difficultés pour répondre à cette question.'
         )
 
         await waitForPlausibleTrackingEvents(page, [
             'pageview:introduction',
-            'Avis flag:introduction',
+            'Questionnaire commencé:vaccins',
+            'Questionnaire commencé pour moi:vaccins',
+            'pageview:vaccins',
+            'Avis flag:vaccins',
         ])
     })
 

@@ -96,7 +96,6 @@
     </main>
     <footer role="contentinfo">
         {{ meta_entretiens_utilisateurs }}
-        {{ meta_feedback_difficultés }}
         {{ meta_pied_de_page }}
     </footer>
 
@@ -148,641 +147,665 @@
 </section>
 
 <section id="nom" hidden>
-    <form id="nom-form" class="block">
-        <fieldset>
-            <legend><h1>{{ question_nom_titre|inline }}</h1></legend>
-            <div id="aria-nom-details" class="details">{{ question_nom_aide }}</div>
-            <ul class="no-list-style">
-                <li class="row">
-                    <label for="name">{{ question_nom_libellé|inline }}</label>
-                    <input id="name" type="text" aria-describedby="aria-nom-details" required>
-                </li>
-            </ul>
-        </fieldset>
-        <div class="form-controls">
-            <input type="submit" class="button" value="Continuer">
-            <a href="#" class="back-button button-outline">Retour</a>
-        </div>
-    </form>
+    <div class="block">
+        <form id="nom-form">
+            <fieldset>
+                <legend><h1>{{ question_nom_titre|inline }}</h1></legend>
+                <div id="aria-nom-details" class="details">{{ question_nom_aide }}</div>
+                <ul class="no-list-style">
+                    <li class="row">
+                        <label for="name">{{ question_nom_libellé|inline }}</label>
+                        <input id="name" type="text" aria-describedby="aria-nom-details" required>
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="form-controls">
+                <input type="submit" class="button" value="Continuer">
+                <a href="#" class="back-button button-outline">Retour</a>
+            </div>
+        </form>
+        {{ meta_feedback_difficultés }}
+    </div>
 </section>
 
 <section id="vaccins" hidden>
-    <form id="vaccins-form" class="block">
-        <fieldset>
-            <legend><h1 id="vaccins-label">{{ question_vaccins_titre|inline|me_or_them }}</h1></legend>
-            <div role="radiogroup" aria-labelledby="vaccins-label">
-                <input id="vaccins_radio_pas_encore" type="radio" required name="vaccins_radio" value="pas_encore">
-                <label for="vaccins_radio_pas_encore">{{ question_vaccins_pas_encore_libellé|inline|me_or_them }}</label>
-                <input id="vaccins_radio_en_cours" type="radio" required name="vaccins_radio" value="en_cours">
-                <label for="vaccins_radio_en_cours">{{ question_vaccins_en_cours_libellé|inline|me_or_them }}</label>
-                <input id="vaccins_radio_completement" type="radio" required name="vaccins_radio" value="completement">
-                <label for="vaccins_radio_completement">{{ question_vaccins_completement_libellé|inline|me_or_them }}</label>
+    <div class="block">
+        <form id="vaccins-form">
+            <fieldset>
+                <legend><h1 id="vaccins-label">{{ question_vaccins_titre|inline|me_or_them }}</h1></legend>
+                <div role="radiogroup" aria-labelledby="vaccins-label">
+                    <input id="vaccins_radio_pas_encore" type="radio" required name="vaccins_radio" value="pas_encore">
+                    <label for="vaccins_radio_pas_encore">{{ question_vaccins_pas_encore_libellé|inline|me_or_them }}</label>
+                    <input id="vaccins_radio_en_cours" type="radio" required name="vaccins_radio" value="en_cours">
+                    <label for="vaccins_radio_en_cours">{{ question_vaccins_en_cours_libellé|inline|me_or_them }}</label>
+                    <input id="vaccins_radio_completement" type="radio" required name="vaccins_radio" value="completement">
+                    <label for="vaccins_radio_completement">{{ question_vaccins_completement_libellé|inline|me_or_them }}</label>
+                </div>
+            </fieldset>
+            <div class="form-controls">
+                <div class="button-with-progress">
+                    <p id="aria-description-progress-vaccins" class="progress"></p>
+                    <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-vaccins">
+                </div>
+                <a href="#" class="back-button button-outline">Retour</a>
             </div>
-        </fieldset>
-        <div class="form-controls">
-            <div class="button-with-progress">
-                <p id="aria-description-progress-vaccins" class="progress"></p>
-                <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-vaccins">
-            </div>
-            <a href="#" class="back-button button-outline">Retour</a>
-        </div>
-    </form>
+        </form>
+        {{ meta_feedback_difficultés }}
+    </div>
 </section>
 
 <section id="historique" hidden>
-    <form id="historique-form" class="block">
-        <fieldset>
-            <legend><h1>{{ question_historique_titre|inline|me_or_them }}</h1></legend>
-            <div>
-                <input id="covid_passee_checkbox" type="checkbox" name="covid_passee">
-                <label for="covid_passee_checkbox">
-                    {{ question_historique_covid_passee_libellé|inline|me_or_them }}
-                </label>
-                <div class="secondary disabled required">
-                    <fieldset>
-                        <legend id="covid-passee-label" class="secondary-title">
-                            {{ question_historique_covid_passee_date_libellé|inline|me_or_them }}
-                        </legend>
-                        <div role="radiogroup" aria-labelledby="covid-passee-label">
-                            <input id="covid_passee_date_6_mois" type="radio" required name="covid_passee_date" value="6">
-                            <label for="covid_passee_date_6_mois"><span>{{ question_historique_covid_passee_6_mois_libellé|inline }}</span></label>
-                            <input id="covid_passee_date_5_mois" type="radio" required name="covid_passee_date" value="5">
-                            <label for="covid_passee_date_5_mois"><span>{{ question_historique_covid_passee_5_mois_libellé|inline }}</span></label>
-                            <input id="covid_passee_date_4_mois" type="radio" required name="covid_passee_date" value="4">
-                            <label for="covid_passee_date_4_mois"><span>{{ question_historique_covid_passee_4_mois_libellé|inline }}</span></label>
-                            <input id="covid_passee_date_3_mois" type="radio" required name="covid_passee_date" value="3">
-                            <label for="covid_passee_date_3_mois"><span>{{ question_historique_covid_passee_3_mois_libellé|inline }}</span></label>
-                            <input id="covid_passee_date_2_mois" type="radio" required name="covid_passee_date" value="2">
-                            <label for="covid_passee_date_2_mois"><span>{{ question_historique_covid_passee_2_mois_libellé|inline }}</span></label>
-                            <input id="covid_passee_date_1_mois" type="radio" required name="covid_passee_date" value="1">
-                            <label for="covid_passee_date_1_mois"><span>{{ question_historique_covid_passee_1_mois_libellé|inline }}</span></label>
-                        </div>
-                    </fieldset>
+    <div class="block">
+        <form id="historique-form">
+            <fieldset>
+                <legend><h1>{{ question_historique_titre|inline|me_or_them }}</h1></legend>
+                <div>
+                    <input id="covid_passee_checkbox" type="checkbox" name="covid_passee">
+                    <label for="covid_passee_checkbox">
+                        {{ question_historique_covid_passee_libellé|inline|me_or_them }}
+                    </label>
+                    <div class="secondary disabled required">
+                        <fieldset>
+                            <legend id="covid-passee-label" class="secondary-title">
+                                {{ question_historique_covid_passee_date_libellé|inline|me_or_them }}
+                            </legend>
+                            <div role="radiogroup" aria-labelledby="covid-passee-label">
+                                <input id="covid_passee_date_6_mois" type="radio" required name="covid_passee_date" value="6">
+                                <label for="covid_passee_date_6_mois"><span>{{ question_historique_covid_passee_6_mois_libellé|inline }}</span></label>
+                                <input id="covid_passee_date_5_mois" type="radio" required name="covid_passee_date" value="5">
+                                <label for="covid_passee_date_5_mois"><span>{{ question_historique_covid_passee_5_mois_libellé|inline }}</span></label>
+                                <input id="covid_passee_date_4_mois" type="radio" required name="covid_passee_date" value="4">
+                                <label for="covid_passee_date_4_mois"><span>{{ question_historique_covid_passee_4_mois_libellé|inline }}</span></label>
+                                <input id="covid_passee_date_3_mois" type="radio" required name="covid_passee_date" value="3">
+                                <label for="covid_passee_date_3_mois"><span>{{ question_historique_covid_passee_3_mois_libellé|inline }}</span></label>
+                                <input id="covid_passee_date_2_mois" type="radio" required name="covid_passee_date" value="2">
+                                <label for="covid_passee_date_2_mois"><span>{{ question_historique_covid_passee_2_mois_libellé|inline }}</span></label>
+                                <input id="covid_passee_date_1_mois" type="radio" required name="covid_passee_date" value="1">
+                                <label for="covid_passee_date_1_mois"><span>{{ question_historique_covid_passee_1_mois_libellé|inline }}</span></label>
+                            </div>
+                        </fieldset>
+                    </div>
                 </div>
-            </div>
 
-        </fieldset>
-        <div class="form-controls">
-            <div class="button-with-progress">
-                <p id="aria-description-progress-historique" class="progress"></p>
-                <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-historique">
+            </fieldset>
+            <div class="form-controls">
+                <div class="button-with-progress">
+                    <p id="aria-description-progress-historique" class="progress"></p>
+                    <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-historique">
+                </div>
+                <a href="#" class="back-button button-outline">Retour</a>
             </div>
-            <a href="#" class="back-button button-outline">Retour</a>
-        </div>
-    </form>
+        </form>
+        {{ meta_feedback_difficultés }}
+    </div>
 </section>
 
 <section id="situation" hidden>
-    <form id="situation-form" class="block">
-        <fieldset>
-            <legend><h1>{{ question_résidence_titre|inline|me_or_them }}</h1></legend>
-            <div class="row">
-                <label for="departement">{{ question_résidence_libellé|inline|me_or_them }}</label>
-                <div class="dpt-container">
-                    <div>
-                        <button id="geolocalisation" class="button"
-                            title="En utilisant la géolocalisation de votre navigateur"
-                            >Trouver automatiquement</button>
-                        <br> ou choisir dans la liste :
+    <div class="block">
+        <form id="situation-form">
+            <fieldset>
+                <legend><h1>{{ question_résidence_titre|inline|me_or_them }}</h1></legend>
+                <div class="row">
+                    <label for="departement">{{ question_résidence_libellé|inline|me_or_them }}</label>
+                    <div class="dpt-container">
+                        <div>
+                            <button id="geolocalisation" class="button"
+                                title="En utilisant la géolocalisation de votre navigateur"
+                                >Trouver automatiquement</button>
+                            <br> ou choisir dans la liste :
+                        </div>
+                        <select id="departement" required>
+                            <option value="" selected disabled>Choisir dans la liste…</option>
+                            <option value="01">01 - Ain</option>
+                            <option value="02">02 - Aisne</option>
+                            <option value="03">03 - Allier</option>
+                            <option value="04">04 - Alpes-de-Haute-Provence</option>
+                            <option value="05">05 - Hautes-Alpes</option>
+                            <option value="06">06 - Alpes-Maritimes</option>
+                            <option value="07">07 - Ardèche</option>
+                            <option value="08">08 - Ardennes</option>
+                            <option value="09">09 - Ariège</option>
+                            <option value="10">10 - Aube</option>
+                            <option value="11">11 - Aude</option>
+                            <option value="12">12 - Aveyron</option>
+                            <option value="13">13 - Bouches-du-Rhône</option>
+                            <option value="14">14 - Calvados</option>
+                            <option value="15">15 - Cantal</option>
+                            <option value="16">16 - Charente</option>
+                            <option value="17">17 - Charente-Maritime</option>
+                            <option value="18">18 - Cher</option>
+                            <option value="19">19 - Corrèze</option>
+                            <option value="2A">2A - Corse-du-sud</option>
+                            <option value="2B">2B - Haute-corse</option>
+                            <option value="21">21 - Côte-d’or</option>
+                            <option value="22">22 - Côtes-d’armor</option>
+                            <option value="23">23 - Creuse</option>
+                            <option value="24">24 - Dordogne</option>
+                            <option value="25">25 - Doubs</option>
+                            <option value="26">26 - Drôme</option>
+                            <option value="27">27 - Eure</option>
+                            <option value="28">28 - Eure-et-Loir</option>
+                            <option value="29">29 - Finistère</option>
+                            <option value="30">30 - Gard</option>
+                            <option value="31">31 - Haute-Garonne</option>
+                            <option value="32">32 - Gers</option>
+                            <option value="33">33 - Gironde</option>
+                            <option value="34">34 - Hérault</option>
+                            <option value="35">35 - Ille-et-Vilaine</option>
+                            <option value="36">36 - Indre</option>
+                            <option value="37">37 - Indre-et-Loire</option>
+                            <option value="38">38 - Isère</option>
+                            <option value="39">39 - Jura</option>
+                            <option value="40">40 - Landes</option>
+                            <option value="41">41 - Loir-et-Cher</option>
+                            <option value="42">42 - Loire</option>
+                            <option value="43">43 - Haute-Loire</option>
+                            <option value="44">44 - Loire-Atlantique</option>
+                            <option value="45">45 - Loiret</option>
+                            <option value="46">46 - Lot</option>
+                            <option value="47">47 - Lot-et-Garonne</option>
+                            <option value="48">48 - Lozère</option>
+                            <option value="49">49 - Maine-et-Loire</option>
+                            <option value="50">50 - Manche</option>
+                            <option value="51">51 - Marne</option>
+                            <option value="52">52 - Haute-Marne</option>
+                            <option value="53">53 - Mayenne</option>
+                            <option value="54">54 - Meurthe-et-Moselle</option>
+                            <option value="55">55 - Meuse</option>
+                            <option value="56">56 - Morbihan</option>
+                            <option value="57">57 - Moselle</option>
+                            <option value="58">58 - Nièvre</option>
+                            <option value="59">59 - Nord</option>
+                            <option value="60">60 - Oise</option>
+                            <option value="61">61 - Orne</option>
+                            <option value="62">62 - Pas-de-Calais</option>
+                            <option value="63">63 - Puy-de-Dôme</option>
+                            <option value="64">64 - Pyrénées-Atlantiques</option>
+                            <option value="65">65 - Hautes-Pyrénées</option>
+                            <option value="66">66 - Pyrénées-Orientales</option>
+                            <option value="67">67 - Bas-Rhin</option>
+                            <option value="68">68 - Haut-Rhin</option>
+                            <option value="69">69 - Rhône</option>
+                            <option value="70">70 - Haute-Saône</option>
+                            <option value="71">71 - Saône-et-Loire</option>
+                            <option value="72">72 - Sarthe</option>
+                            <option value="73">73 - Savoie</option>
+                            <option value="74">74 - Haute-Savoie</option>
+                            <option value="75">75 - Paris</option>
+                            <option value="76">76 - Seine-Maritime</option>
+                            <option value="77">77 - Seine-et-Marne</option>
+                            <option value="78">78 - Yvelines</option>
+                            <option value="79">79 - Deux-Sèvres</option>
+                            <option value="80">80 - Somme</option>
+                            <option value="81">81 - Tarn</option>
+                            <option value="82">82 - Tarn-et-Garonne</option>
+                            <option value="83">83 - Var</option>
+                            <option value="84">84 - Vaucluse</option>
+                            <option value="85">85 - Vendée</option>
+                            <option value="86">86 - Vienne</option>
+                            <option value="87">87 - Haute-Vienne</option>
+                            <option value="88">88 - Vosges</option>
+                            <option value="89">89 - Yonne</option>
+                            <option value="90">90 - Territoire de Belfort</option>
+                            <option value="91">91 - Essonne</option>
+                            <option value="92">92 - Hauts-de-Seine</option>
+                            <option value="93">93 - Seine-Saint-Denis</option>
+                            <option value="94">94 - Val-de-Marne</option>
+                            <option value="95">95 - Val-d’oise</option>
+                            <option value="971">971 - Guadeloupe</option>
+                            <option value="972">972 - Martinique</option>
+                            <option value="973">973 - Guyane</option>
+                            <option value="974">974 - Réunion</option>
+                            <option value="975">975 - Saint-Pierre-et-Miquelon</option>
+                            <option value="976">976 - Mayotte</option>
+                            <option value="977">977 - Saint-Barthélemy</option>
+                            <option value="978">978 - Saint-Martin</option>
+                            <option value="00">Autre</option>
+                        </select>
                     </div>
-                    <select id="departement" required>
-                        <option value="" selected disabled>Choisir dans la liste…</option>
-                        <option value="01">01 - Ain</option>
-                        <option value="02">02 - Aisne</option>
-                        <option value="03">03 - Allier</option>
-                        <option value="04">04 - Alpes-de-Haute-Provence</option>
-                        <option value="05">05 - Hautes-Alpes</option>
-                        <option value="06">06 - Alpes-Maritimes</option>
-                        <option value="07">07 - Ardèche</option>
-                        <option value="08">08 - Ardennes</option>
-                        <option value="09">09 - Ariège</option>
-                        <option value="10">10 - Aube</option>
-                        <option value="11">11 - Aude</option>
-                        <option value="12">12 - Aveyron</option>
-                        <option value="13">13 - Bouches-du-Rhône</option>
-                        <option value="14">14 - Calvados</option>
-                        <option value="15">15 - Cantal</option>
-                        <option value="16">16 - Charente</option>
-                        <option value="17">17 - Charente-Maritime</option>
-                        <option value="18">18 - Cher</option>
-                        <option value="19">19 - Corrèze</option>
-                        <option value="2A">2A - Corse-du-sud</option>
-                        <option value="2B">2B - Haute-corse</option>
-                        <option value="21">21 - Côte-d’or</option>
-                        <option value="22">22 - Côtes-d’armor</option>
-                        <option value="23">23 - Creuse</option>
-                        <option value="24">24 - Dordogne</option>
-                        <option value="25">25 - Doubs</option>
-                        <option value="26">26 - Drôme</option>
-                        <option value="27">27 - Eure</option>
-                        <option value="28">28 - Eure-et-Loir</option>
-                        <option value="29">29 - Finistère</option>
-                        <option value="30">30 - Gard</option>
-                        <option value="31">31 - Haute-Garonne</option>
-                        <option value="32">32 - Gers</option>
-                        <option value="33">33 - Gironde</option>
-                        <option value="34">34 - Hérault</option>
-                        <option value="35">35 - Ille-et-Vilaine</option>
-                        <option value="36">36 - Indre</option>
-                        <option value="37">37 - Indre-et-Loire</option>
-                        <option value="38">38 - Isère</option>
-                        <option value="39">39 - Jura</option>
-                        <option value="40">40 - Landes</option>
-                        <option value="41">41 - Loir-et-Cher</option>
-                        <option value="42">42 - Loire</option>
-                        <option value="43">43 - Haute-Loire</option>
-                        <option value="44">44 - Loire-Atlantique</option>
-                        <option value="45">45 - Loiret</option>
-                        <option value="46">46 - Lot</option>
-                        <option value="47">47 - Lot-et-Garonne</option>
-                        <option value="48">48 - Lozère</option>
-                        <option value="49">49 - Maine-et-Loire</option>
-                        <option value="50">50 - Manche</option>
-                        <option value="51">51 - Marne</option>
-                        <option value="52">52 - Haute-Marne</option>
-                        <option value="53">53 - Mayenne</option>
-                        <option value="54">54 - Meurthe-et-Moselle</option>
-                        <option value="55">55 - Meuse</option>
-                        <option value="56">56 - Morbihan</option>
-                        <option value="57">57 - Moselle</option>
-                        <option value="58">58 - Nièvre</option>
-                        <option value="59">59 - Nord</option>
-                        <option value="60">60 - Oise</option>
-                        <option value="61">61 - Orne</option>
-                        <option value="62">62 - Pas-de-Calais</option>
-                        <option value="63">63 - Puy-de-Dôme</option>
-                        <option value="64">64 - Pyrénées-Atlantiques</option>
-                        <option value="65">65 - Hautes-Pyrénées</option>
-                        <option value="66">66 - Pyrénées-Orientales</option>
-                        <option value="67">67 - Bas-Rhin</option>
-                        <option value="68">68 - Haut-Rhin</option>
-                        <option value="69">69 - Rhône</option>
-                        <option value="70">70 - Haute-Saône</option>
-                        <option value="71">71 - Saône-et-Loire</option>
-                        <option value="72">72 - Sarthe</option>
-                        <option value="73">73 - Savoie</option>
-                        <option value="74">74 - Haute-Savoie</option>
-                        <option value="75">75 - Paris</option>
-                        <option value="76">76 - Seine-Maritime</option>
-                        <option value="77">77 - Seine-et-Marne</option>
-                        <option value="78">78 - Yvelines</option>
-                        <option value="79">79 - Deux-Sèvres</option>
-                        <option value="80">80 - Somme</option>
-                        <option value="81">81 - Tarn</option>
-                        <option value="82">82 - Tarn-et-Garonne</option>
-                        <option value="83">83 - Var</option>
-                        <option value="84">84 - Vaucluse</option>
-                        <option value="85">85 - Vendée</option>
-                        <option value="86">86 - Vienne</option>
-                        <option value="87">87 - Haute-Vienne</option>
-                        <option value="88">88 - Vosges</option>
-                        <option value="89">89 - Yonne</option>
-                        <option value="90">90 - Territoire de Belfort</option>
-                        <option value="91">91 - Essonne</option>
-                        <option value="92">92 - Hauts-de-Seine</option>
-                        <option value="93">93 - Seine-Saint-Denis</option>
-                        <option value="94">94 - Val-de-Marne</option>
-                        <option value="95">95 - Val-d’oise</option>
-                        <option value="971">971 - Guadeloupe</option>
-                        <option value="972">972 - Martinique</option>
-                        <option value="973">973 - Guyane</option>
-                        <option value="974">974 - Réunion</option>
-                        <option value="975">975 - Saint-Pierre-et-Miquelon</option>
-                        <option value="976">976 - Mayotte</option>
-                        <option value="977">977 - Saint-Barthélemy</option>
-                        <option value="978">978 - Saint-Martin</option>
-                        <option value="00">Autre</option>
-                    </select>
                 </div>
-            </div>
-            <p id="error-geolocalisation" role="alert" hidden>
-                Nous n’avons pas réussi à déterminer votre position automatiquement,
-                veuillez saisir un département dans la liste déroulante ci-dessus.
-            </p>
-            <div>
-                <input id="foyer_autres_personnes" type="checkbox" name="foyer_autres_personnes">
-                <label for="foyer_autres_personnes">
-                    {{ question_foyer_autres_personnes_libellé|inline|me_or_them }}
-                </label>
-                <div class="secondary disabled">
-                    <input id="foyer_enfants" type="checkbox" name="foyer_enfants" disabled>
-                    <label for="foyer_enfants">
-                        {{ question_foyer_enfants_libellé|inline|me_or_them }}
+                <p id="error-geolocalisation" role="alert" hidden>
+                    Nous n’avons pas réussi à déterminer votre position automatiquement,
+                    veuillez saisir un département dans la liste déroulante ci-dessus.
+                </p>
+                <div>
+                    <input id="foyer_autres_personnes" type="checkbox" name="foyer_autres_personnes">
+                    <label for="foyer_autres_personnes">
+                        {{ question_foyer_autres_personnes_libellé|inline|me_or_them }}
                     </label>
+                    <div class="secondary disabled">
+                        <input id="foyer_enfants" type="checkbox" name="foyer_enfants" disabled>
+                        <label for="foyer_enfants">
+                            {{ question_foyer_enfants_libellé|inline|me_or_them }}
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <input id="activite_pro" type="checkbox" name="activite_pro">
-                <label for="activite_pro">
-                    {{ question_activité_pro_libellé|inline|me_or_them }}
-                </label>
-                <div class="secondary disabled">
-                    <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
-                    <label for="activite_pro_sante">
-                        {{ question_activité_pro_santé_libellé|inline|me_or_them }}
+                <div>
+                    <input id="activite_pro" type="checkbox" name="activite_pro">
+                    <label for="activite_pro">
+                        {{ question_activité_pro_libellé|inline|me_or_them }}
                     </label>
-                    <div class="details">{{ question_activité_pro_santé_aide }}</div>
+                    <div class="secondary disabled">
+                        <input id="activite_pro_sante" type="checkbox" name="activite_pro_sante" disabled>
+                        <label for="activite_pro_sante">
+                            {{ question_activité_pro_santé_libellé|inline|me_or_them }}
+                        </label>
+                        <div class="details">{{ question_activité_pro_santé_aide }}</div>
+                    </div>
                 </div>
+            </fieldset>
+            <div class="form-controls">
+                <div class="button-with-progress">
+                    <p id="aria-description-progress-situation" class="progress"></p>
+                    <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-situation">
+                </div>
+                <a href="#" class="back-button button-outline">Retour</a>
             </div>
-        </fieldset>
-        <div class="form-controls">
-            <div class="button-with-progress">
-                <p id="aria-description-progress-situation" class="progress"></p>
-                <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-situation">
-            </div>
-            <a href="#" class="back-button button-outline">Retour</a>
-        </div>
-    </form>
+        </form>
+        {{ meta_feedback_difficultés }}
+    </div>
 </section>
 
 <section id="sante" hidden>
-    <form id="sante-form" class="block">
-        <fieldset>
-            <legend><h1>{{ question_caractéristiques_titre|inline|me_or_them }}</h1></legend>
-            <div class="details">{{ question_caractéristiques_aide }}</div>
-            <ul class="no-list-style">
-                <li class="row">
-                    <label for="age">{{ question_caractéristiques_âge_libellé|inline|me_or_them }}</label>
-                    <input id="age" type="text" inputmode="numeric" pattern="[0-9,. ]+" required>
-                </li>
-                <li class="row">
-                    <label for="taille">{{ question_caractéristiques_taille_libellé|inline|me_or_them }}</label>
-                    <input id="taille" type="text" inputmode="numeric" pattern="[0-9,. ]+" required>
-                </li>
-                <li class="row">
-                    <label for="poids">{{ question_caractéristiques_poids_libellé|inline|me_or_them }}</label>
-                    <input id="poids" type="text" inputmode="numeric" pattern="[0-9,. ]+" required>
-                </li>
-            </ul>
-            <div class="field">
-                <input id="grossesse_3e_trimestre" type="checkbox" name="grossesse_3e_trimestre">
-                <label for="grossesse_3e_trimestre">
-                    {{ question_caractéristiques_grossesse_libellé|inline|me_or_them }}
-                </label>
+    <div class="block">
+        <form id="sante-form">
+            <fieldset>
+                <legend><h1>{{ question_caractéristiques_titre|inline|me_or_them }}</h1></legend>
+                <div class="details">{{ question_caractéristiques_aide }}</div>
+                <ul class="no-list-style">
+                    <li class="row">
+                        <label for="age">{{ question_caractéristiques_âge_libellé|inline|me_or_them }}</label>
+                        <input id="age" type="text" inputmode="numeric" pattern="[0-9,. ]+" required>
+                    </li>
+                    <li class="row">
+                        <label for="taille">{{ question_caractéristiques_taille_libellé|inline|me_or_them }}</label>
+                        <input id="taille" type="text" inputmode="numeric" pattern="[0-9,. ]+" required>
+                    </li>
+                    <li class="row">
+                        <label for="poids">{{ question_caractéristiques_poids_libellé|inline|me_or_them }}</label>
+                        <input id="poids" type="text" inputmode="numeric" pattern="[0-9,. ]+" required>
+                    </li>
+                </ul>
+                <div class="field">
+                    <input id="grossesse_3e_trimestre" type="checkbox" name="grossesse_3e_trimestre">
+                    <label for="grossesse_3e_trimestre">
+                        {{ question_caractéristiques_grossesse_libellé|inline|me_or_them }}
+                    </label>
+                </div>
+                <div>
+                    <input id="antecedent_chronique" type="checkbox" name="antecedent_chronique">
+                    <label for="antecedent_chronique">
+                        {{ question_antecedent_chronique|inline|me_or_them }}
+                    </label>
+                </div>
+                <div class="secondary disabled">
+                    <input id="antecedent_cardio" type="checkbox" name="antecedent_cardio">
+                    <label for="antecedent_cardio">
+                        {{ question_antécédents_cardio_libellé|inline|me_or_them }}
+                    </label>
+                    <div class="details">{{ question_antécédents_cardio_aide }}</div>
+                </div>
+                <div class="secondary disabled">
+                    <input id="antecedent_diabete" type="checkbox" name="antecedent_diabete">
+                    <label for="antecedent_diabete">
+                        {{ question_antécédents_diabète_libellé|inline|me_or_them }}
+                    </label>
+                </div>
+                <div class="secondary disabled">
+                    <input id="antecedent_respi" type="checkbox" name="antecedent_respi">
+                    <label for="antecedent_respi">
+                        {{ question_antécédents_respi_libellé|inline|me_or_them }}
+                    </label>
+                    <div class="details">{{ question_antécédents_respi_aide }}</div>
+                </div>
+                <div class="secondary disabled">
+                    <input id="antecedent_dialyse" type="checkbox" name="antecedent_dialyse">
+                    <label for="antecedent_dialyse">
+                        {{ question_antécédents_dialyse_libellé|inline|me_or_them }}
+                    </label>
+                </div>
+                <div class="secondary disabled">
+                    <input id="antecedent_greffe" type="checkbox" name="antecedent_greffe">
+                    <label for="antecedent_greffe">
+                        {{ question_antécédents_greffe_libellé|inline|me_or_them }}
+                    </label>
+                </div>
+                <div class="secondary disabled">
+                    <input id="antecedent_cancer" type="checkbox" name="antecedent_cancer">
+                    <label for="antecedent_cancer">
+                        {{ question_antécédents_cancer_libellé|inline|me_or_them }}
+                    </label>
+                </div>
+                <div class="secondary disabled">
+                    <input id="antecedent_immunodep" type="checkbox" name="antecedent_immunodep">
+                    <label for="antecedent_immunodep">
+                        {{ question_antécédents_immunodépression_libellé|inline|me_or_them }}
+                    </label>
+                    <div class="details">{{ question_antécédents_immunodépression_aide }}</div>
+                </div>
+                <div class="secondary disabled">
+                    <input id="antecedent_cirrhose" type="checkbox" name="antecedent_cirrhose">
+                    <label for="antecedent_cirrhose">
+                        {{ question_antécédents_cirrhose_libellé|inline|me_or_them }}
+                    </label>
+                </div>
+                <div class="secondary disabled">
+                    <input id="antecedent_drepano" type="checkbox" name="antecedent_drepano">
+                    <label for="antecedent_drepano">
+                        {{ question_antécédents_drépanocytose_libellé|inline|me_or_them }}
+                    </label>
+                </div>
+                <div class="secondary disabled">
+                    <input id="antecedent_trisomie" type="checkbox" name="antecedent_trisomie">
+                    <label for="antecedent_trisomie">
+                        {{ question_antécédents_trisomie_libellé|inline|me_or_them }}
+                    </label>
+                </div>
+                <div class="secondary disabled">
+                    <input id="antecedent_chronique_autre" type="checkbox" name="antecedent_chronique_autre">
+                    <label for="antecedent_chronique_autre">
+                        {{ question_antécédents_chronique_autre_libellé|inline|me_or_them }}
+                    </label>
+                </div>
+            </fieldset>
+            <div class="form-controls">
+                <div class="button-with-progress">
+                    <p id="aria-description-progress-sante" class="progress"></p>
+                    <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-sante">
+                </div>
+                <a href="#" class="back-button button-outline">Retour</a>
             </div>
-            <div>
-                <input id="antecedent_chronique" type="checkbox" name="antecedent_chronique">
-                <label for="antecedent_chronique">
-                    {{ question_antecedent_chronique|inline|me_or_them }}
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="antecedent_cardio" type="checkbox" name="antecedent_cardio">
-                <label for="antecedent_cardio">
-                    {{ question_antécédents_cardio_libellé|inline|me_or_them }}
-                </label>
-                <div class="details">{{ question_antécédents_cardio_aide }}</div>
-            </div>
-            <div class="secondary disabled">
-                <input id="antecedent_diabete" type="checkbox" name="antecedent_diabete">
-                <label for="antecedent_diabete">
-                    {{ question_antécédents_diabète_libellé|inline|me_or_them }}
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="antecedent_respi" type="checkbox" name="antecedent_respi">
-                <label for="antecedent_respi">
-                    {{ question_antécédents_respi_libellé|inline|me_or_them }}
-                </label>
-                <div class="details">{{ question_antécédents_respi_aide }}</div>
-            </div>
-            <div class="secondary disabled">
-                <input id="antecedent_dialyse" type="checkbox" name="antecedent_dialyse">
-                <label for="antecedent_dialyse">
-                    {{ question_antécédents_dialyse_libellé|inline|me_or_them }}
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="antecedent_greffe" type="checkbox" name="antecedent_greffe">
-                <label for="antecedent_greffe">
-                    {{ question_antécédents_greffe_libellé|inline|me_or_them }}
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="antecedent_cancer" type="checkbox" name="antecedent_cancer">
-                <label for="antecedent_cancer">
-                    {{ question_antécédents_cancer_libellé|inline|me_or_them }}
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="antecedent_immunodep" type="checkbox" name="antecedent_immunodep">
-                <label for="antecedent_immunodep">
-                    {{ question_antécédents_immunodépression_libellé|inline|me_or_them }}
-                </label>
-                <div class="details">{{ question_antécédents_immunodépression_aide }}</div>
-            </div>
-            <div class="secondary disabled">
-                <input id="antecedent_cirrhose" type="checkbox" name="antecedent_cirrhose">
-                <label for="antecedent_cirrhose">
-                    {{ question_antécédents_cirrhose_libellé|inline|me_or_them }}
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="antecedent_drepano" type="checkbox" name="antecedent_drepano">
-                <label for="antecedent_drepano">
-                    {{ question_antécédents_drépanocytose_libellé|inline|me_or_them }}
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="antecedent_trisomie" type="checkbox" name="antecedent_trisomie">
-                <label for="antecedent_trisomie">
-                    {{ question_antécédents_trisomie_libellé|inline|me_or_them }}
-                </label>
-            </div>
-            <div class="secondary disabled">
-                <input id="antecedent_chronique_autre" type="checkbox" name="antecedent_chronique_autre">
-                <label for="antecedent_chronique_autre">
-                    {{ question_antécédents_chronique_autre_libellé|inline|me_or_them }}
-                </label>
-            </div>
-        </fieldset>
-        <div class="form-controls">
-            <div class="button-with-progress">
-                <p id="aria-description-progress-sante" class="progress"></p>
-                <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-sante">
-            </div>
-            <a href="#" class="back-button button-outline">Retour</a>
-        </div>
-    </form>
+        </form>
+        {{ meta_feedback_difficultés }}
+    </div>
 </section>
 
 <section id="symptomes" hidden>
-    <form id="symptomes-form" class="block">
-        <fieldset>
-            <legend><h1>{{ question_symptômes_titre|inline|me_or_them }}</h1></legend>
-            <h2 id="symptomes-label">{{ question_symptômes_titre_ouinon|inline|me_or_them }}</h2>
-            {{ question_symptômes_titre_aide }}
-            <div role="radiogroup" aria-labelledby="symptomes-label">
-                <input id="symptomes_actuels" type="radio" required name="symptomes_actuels_statuts">
-                <label for="symptomes_actuels">
-                    {{ question_symptômes_libellé_oui|inline|me_or_them }}
-                </label>
-                <input id="symptomes_passes" type="radio" required name="symptomes_actuels_statuts">
-                <label for="symptomes_passes">
-                    {{ question_symptômes_libellé_passés|inline|me_or_them }}
-                </label>
-                <input id="symptomes_non" type="radio" required name="symptomes_actuels_statuts">
-                <label for="symptomes_non">
-                    <span>{{ question_symptômes_libellé_non|inline }}</span>
-                </label>
+    <div class="block">
+        <form id="symptomes-form">
+            <fieldset>
+                <legend><h1>{{ question_symptômes_titre|inline|me_or_them }}</h1></legend>
+                <h2 id="symptomes-label">{{ question_symptômes_titre_ouinon|inline|me_or_them }}</h2>
+                {{ question_symptômes_titre_aide }}
+                <div role="radiogroup" aria-labelledby="symptomes-label">
+                    <input id="symptomes_actuels" type="radio" required name="symptomes_actuels_statuts">
+                    <label for="symptomes_actuels">
+                        {{ question_symptômes_libellé_oui|inline|me_or_them }}
+                    </label>
+                    <input id="symptomes_passes" type="radio" required name="symptomes_actuels_statuts">
+                    <label for="symptomes_passes">
+                        {{ question_symptômes_libellé_passés|inline|me_or_them }}
+                    </label>
+                    <input id="symptomes_non" type="radio" required name="symptomes_actuels_statuts">
+                    <label for="symptomes_non">
+                        <span>{{ question_symptômes_libellé_non|inline }}</span>
+                    </label>
+                </div>
+                <div id="symptomes-choix" class="checkboxgroup" hidden>
+                    <fieldset>
+                        <legend><h3>{{ question_symptômes_titre_lesquels|inline|me_or_them }}</h3></legend>
+                        <div>
+                            <input id="symptomes_actuels_temperature" type="checkbox" name="symptomes_actuels_temperature">
+                            <label for="symptomes_actuels_temperature">
+                                <span>{{ question_symptômes_actuels_température_libellé|inline }}</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input id="symptomes_actuels_temperature_inconnue" type="checkbox" name="symptomes_actuels_temperature_inconnue">
+                            <label for="symptomes_actuels_temperature_inconnue">
+                                {{ question_symptômes_actuels_température_inconnue_libellé|inline|me_or_them }}
+                            </label>
+                        </div>
+                        <div>
+                            <input id="symptomes_actuels_toux" type="checkbox" name="symptomes_actuels_toux">
+                            <label for="symptomes_actuels_toux">
+                                <span>{{ question_symptômes_actuels_toux_libellé|inline }}</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input id="symptomes_actuels_odorat" type="checkbox" name="symptomes_actuels_odorat">
+                            <label for="symptomes_actuels_odorat">
+                                {{ question_symptômes_actuels_odorat_libellé|inline|me_or_them }}
+                            </label>
+                        </div>
+                        <div>
+                            <input id="symptomes_actuels_douleurs" type="checkbox" name="symptomes_actuels_douleurs">
+                            <label for="symptomes_actuels_douleurs">
+                                {{ question_symptômes_actuels_douleurs_libellé|inline|me_or_them }}
+                            </label>
+                            <div class="details">{{ question_symptômes_actuels_douleurs_aide }}</div>
+                        </div>
+                        <div>
+                            <input id="symptomes_actuels_diarrhee" type="checkbox" name="symptomes_actuels_diarrhee">
+                            <label for="symptomes_actuels_diarrhee">
+                                <span>{{ question_symptômes_actuels_diarrhée_libellé|inline }}</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input id="symptomes_actuels_fatigue" type="checkbox" name="symptomes_actuels_fatigue">
+                            <label for="symptomes_actuels_fatigue">
+                                {{ question_symptômes_actuels_fatigue_libellé|inline|me_or_them }}
+                            </label>
+                        </div>
+                        <div>
+                            <input id="symptomes_actuels_alimentation" type="checkbox" name="symptomes_actuels_alimentation">
+                            <label for="symptomes_actuels_alimentation">
+                                {{ question_symptômes_actuels_alimentation_libellé|inline|me_or_them }}
+                            </label>
+                        </div>
+                        <div>
+                            <input id="symptomes_actuels_souffle" type="checkbox" name="symptomes_actuels_souffle">
+                            <label for="symptomes_actuels_souffle">
+                                {{ question_symptômes_actuels_souffle_libellé|inline|me_or_them }}
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div id="debut-symptomes" hidden>
+                    <fieldset>
+                        <legend><h3 id="debut-symptomes-date-label">
+                            {{ question_debut_symptomes_libellé|inline|me_or_them }}
+                        </h3></legend>
+                        <div role="radiogroup" aria-labelledby="debut-symptomes-date-label">
+                            <input id="debut_symptomes_aujourdhui" type="radio" name="suivi_symptomes_date" value="aujourdhui">
+                            <label for="debut_symptomes_aujourdhui">Aujourd’hui</label>
+                            <input id="debut_symptomes_hier" type="radio" name="suivi_symptomes_date" value="hier">
+                            <label for="debut_symptomes_hier">Hier</label>
+                            <input id="debut_symptomes_avant_hier" type="radio" name="suivi_symptomes_date" value="avant_hier">
+                            <label for="debut_symptomes_avant_hier">Avant-hier</label>
+                            <input id="debut_symptomes_avant_avant_hier" type="radio" name="suivi_symptomes_date" value="avant_avant_hier">
+                            <label for="debut_symptomes_avant_avant_hier">Il y a 3 jours</label>
+                            <input id="debut_symptomes_encore_avant_hier" type="radio" name="suivi_symptomes_date" value="encore_avant_hier">
+                            <label for="debut_symptomes_encore_avant_hier">
+                                Encore avant :
+                                <input type="date" lang="fr" id="debut_symptomes_exacte" name="suivi_symptomes_date_exacte">
+                            </label>
+                        </div>
+                        <div class="details">{{ question_debut_symptomes_aide|me_or_them }}</div>
+                    </fieldset>
+                </div>
+            </fieldset>
+            <div class="form-controls">
+                <div class="button-with-progress">
+                    <p id="aria-description-progress-symptomes" class="progress"></p>
+                    <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-symptomes">
+                </div>
+                <a href="#" class="back-button button-outline">Retour</a>
             </div>
-            <div id="symptomes-choix" class="checkboxgroup" hidden>
-                <fieldset>
-                    <legend><h3>{{ question_symptômes_titre_lesquels|inline|me_or_them }}</h3></legend>
-                    <div>
-                        <input id="symptomes_actuels_temperature" type="checkbox" name="symptomes_actuels_temperature">
-                        <label for="symptomes_actuels_temperature">
-                            <span>{{ question_symptômes_actuels_température_libellé|inline }}</span>
-                        </label>
-                    </div>
-                    <div>
-                        <input id="symptomes_actuels_temperature_inconnue" type="checkbox" name="symptomes_actuels_temperature_inconnue">
-                        <label for="symptomes_actuels_temperature_inconnue">
-                            {{ question_symptômes_actuels_température_inconnue_libellé|inline|me_or_them }}
-                        </label>
-                    </div>
-                    <div>
-                        <input id="symptomes_actuels_toux" type="checkbox" name="symptomes_actuels_toux">
-                        <label for="symptomes_actuels_toux">
-                            <span>{{ question_symptômes_actuels_toux_libellé|inline }}</span>
-                        </label>
-                    </div>
-                    <div>
-                        <input id="symptomes_actuels_odorat" type="checkbox" name="symptomes_actuels_odorat">
-                        <label for="symptomes_actuels_odorat">
-                            {{ question_symptômes_actuels_odorat_libellé|inline|me_or_them }}
-                        </label>
-                    </div>
-                    <div>
-                        <input id="symptomes_actuels_douleurs" type="checkbox" name="symptomes_actuels_douleurs">
-                        <label for="symptomes_actuels_douleurs">
-                            {{ question_symptômes_actuels_douleurs_libellé|inline|me_or_them }}
-                        </label>
-                        <div class="details">{{ question_symptômes_actuels_douleurs_aide }}</div>
-                    </div>
-                    <div>
-                        <input id="symptomes_actuels_diarrhee" type="checkbox" name="symptomes_actuels_diarrhee">
-                        <label for="symptomes_actuels_diarrhee">
-                            <span>{{ question_symptômes_actuels_diarrhée_libellé|inline }}</span>
-                        </label>
-                    </div>
-                    <div>
-                        <input id="symptomes_actuels_fatigue" type="checkbox" name="symptomes_actuels_fatigue">
-                        <label for="symptomes_actuels_fatigue">
-                            {{ question_symptômes_actuels_fatigue_libellé|inline|me_or_them }}
-                        </label>
-                    </div>
-                    <div>
-                        <input id="symptomes_actuels_alimentation" type="checkbox" name="symptomes_actuels_alimentation">
-                        <label for="symptomes_actuels_alimentation">
-                            {{ question_symptômes_actuels_alimentation_libellé|inline|me_or_them }}
-                        </label>
-                    </div>
-                    <div>
-                        <input id="symptomes_actuels_souffle" type="checkbox" name="symptomes_actuels_souffle">
-                        <label for="symptomes_actuels_souffle">
-                            {{ question_symptômes_actuels_souffle_libellé|inline|me_or_them }}
-                        </label>
-                    </div>
-                </fieldset>
-            </div>
-            <div id="debut-symptomes" hidden>
-                <fieldset>
-                    <legend><h3 id="debut-symptomes-date-label">
-                        {{ question_debut_symptomes_libellé|inline|me_or_them }}
-                    </h3></legend>
-                    <div role="radiogroup" aria-labelledby="debut-symptomes-date-label">
-                        <input id="debut_symptomes_aujourdhui" type="radio" name="suivi_symptomes_date" value="aujourdhui">
-                        <label for="debut_symptomes_aujourdhui">Aujourd’hui</label>
-                        <input id="debut_symptomes_hier" type="radio" name="suivi_symptomes_date" value="hier">
-                        <label for="debut_symptomes_hier">Hier</label>
-                        <input id="debut_symptomes_avant_hier" type="radio" name="suivi_symptomes_date" value="avant_hier">
-                        <label for="debut_symptomes_avant_hier">Avant-hier</label>
-                        <input id="debut_symptomes_avant_avant_hier" type="radio" name="suivi_symptomes_date" value="avant_avant_hier">
-                        <label for="debut_symptomes_avant_avant_hier">Il y a 3 jours</label>
-                        <input id="debut_symptomes_encore_avant_hier" type="radio" name="suivi_symptomes_date" value="encore_avant_hier">
-                        <label for="debut_symptomes_encore_avant_hier">
-                            Encore avant :
-                            <input type="date" lang="fr" id="debut_symptomes_exacte" name="suivi_symptomes_date_exacte">
-                        </label>
-                    </div>
-                    <div class="details">{{ question_debut_symptomes_aide|me_or_them }}</div>
-                </fieldset>
-            </div>
-        </fieldset>
-        <div class="form-controls">
-            <div class="button-with-progress">
-                <p id="aria-description-progress-symptomes" class="progress"></p>
-                <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-symptomes">
-            </div>
-            <a href="#" class="back-button button-outline">Retour</a>
-        </div>
-    </form>
+        </form>
+        {{ meta_feedback_difficultés }}
+    </div>
 </section>
 
 <section id="depistage" hidden>
-    <form id="depistage-form" class="block">
-        <fieldset>
-            <legend><h1>{{ question_dépistage_titre|inline|me_or_them }}</h1></legend>
-            <div>
-                <input id="depistage_checkbox" type="checkbox" name="depistage">
-                <label for="depistage_checkbox">
-                    {{ question_dépistage_libellé|inline|me_or_them }}
-                </label>
-                <div class="details">{{ question_dépistage_aide }}</div>
-            </div>
+    <div class="block">
+        <form id="depistage-form">
+            <fieldset>
+                <legend><h1>{{ question_dépistage_titre|inline|me_or_them }}</h1></legend>
+                <div>
+                    <input id="depistage_checkbox" type="checkbox" name="depistage">
+                    <label for="depistage_checkbox">
+                        {{ question_dépistage_libellé|inline|me_or_them }}
+                    </label>
+                    <div class="details">{{ question_dépistage_aide }}</div>
+                </div>
 
-            <div class="secondary disabled required">
-                <fieldset>
-                    <legend id="depistage-date-label" class="secondary-title">
-                        {{ question_dépistage_date_libellé|inline }}
-                    </legend>
-                    <div class="row" aria-labelledby="depistage-date-label">
-                        <label for="depistage_start_date">
-                            <span>{{ question_dépistage_date_aide|inline }}</span>
-                        </label>
-                        <input type="date" lang="fr" id="depistage_start_date" name="depistage_start_date" required>
-                    </div>
-                </fieldset>
-            </div>
+                <div class="secondary disabled required">
+                    <fieldset>
+                        <legend id="depistage-date-label" class="secondary-title">
+                            {{ question_dépistage_date_libellé|inline }}
+                        </legend>
+                        <div class="row" aria-labelledby="depistage-date-label">
+                            <label for="depistage_start_date">
+                                <span>{{ question_dépistage_date_aide|inline }}</span>
+                            </label>
+                            <input type="date" lang="fr" id="depistage_start_date" name="depistage_start_date" required>
+                        </div>
+                    </fieldset>
+                </div>
 
-            <div class="secondary disabled required">
-                <fieldset>
-                    <legend id="depistage-type-label" class="secondary-title">
-                        {{ question_dépistage_type_libellé|inline }}
-                    </legend>
-                    <div role="radiogroup" aria-labelledby="depistage-type-label">
-                        <input id="depistage_type_rtpcr" type="radio" required name="depistage_type" value="rt-pcr">
-                        <label for="depistage_type_rtpcr">
-                            <span>{{ question_dépistage_rtpcr_libellé|inline }}</span>
-                        </label>
-                        <input id="depistage_type_antigenique" type="radio" required name="depistage_type" value="antigenique">
-                        <label for="depistage_type_antigenique">
-                            <span>{{ question_dépistage_antigénique_libellé|inline }}</span>
-                        </label>
-                        <input id="depistage_type_antigenique_autotest" type="radio" required name="depistage_type" value="antigenique_autotest">
-                        <label for="depistage_type_antigenique_autotest">
-                            <span>{{ question_dépistage_antigenique_autotest_libellé|inline }}</span>
-                        </label>
-                    </div>
-                </fieldset>
-            </div>
+                <div class="secondary disabled required">
+                    <fieldset>
+                        <legend id="depistage-type-label" class="secondary-title">
+                            {{ question_dépistage_type_libellé|inline }}
+                        </legend>
+                        <div role="radiogroup" aria-labelledby="depistage-type-label">
+                            <input id="depistage_type_rtpcr" type="radio" required name="depistage_type" value="rt-pcr">
+                            <label for="depistage_type_rtpcr">
+                                <span>{{ question_dépistage_rtpcr_libellé|inline }}</span>
+                            </label>
+                            <input id="depistage_type_antigenique" type="radio" required name="depistage_type" value="antigenique">
+                            <label for="depistage_type_antigenique">
+                                <span>{{ question_dépistage_antigénique_libellé|inline }}</span>
+                            </label>
+                            <input id="depistage_type_antigenique_autotest" type="radio" required name="depistage_type" value="antigenique_autotest">
+                            <label for="depistage_type_antigenique_autotest">
+                                <span>{{ question_dépistage_antigenique_autotest_libellé|inline }}</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
 
-            <div class="secondary disabled required">
-                <fieldset>
-                    <legend id="depistage-resultat-label" class="secondary-title">
-                        {{ question_dépistage_résultat_libellé|inline }}
-                    </legend>
-                    <div role="radiogroup" aria-labelledby="depistage-resultat-label">
-                        <input id="depistage_resultat_positif" type="radio" required name="depistage_resultat" value="positif">
-                        <label for="depistage_resultat_positif">
-                            <span>{{ question_dépistage_positif_libellé|inline }}</span>
-                        </label>
-                        <input id="depistage_resultat_negatif" type="radio" required name="depistage_resultat" value="negatif">
-                        <label for="depistage_resultat_negatif">
-                            <span>{{ question_dépistage_négatif_libellé|inline }}</span>
-                        </label>
-                        <input id="depistage_resultat_en_attente" type="radio" required name="depistage_resultat" value="en_attente">
-                        <label for="depistage_resultat_en_attente">{{ question_dépistage_attente_libellé|inline|me_or_them }}</label>
-                    </div>
-                </fieldset>
+                <div class="secondary disabled required">
+                    <fieldset>
+                        <legend id="depistage-resultat-label" class="secondary-title">
+                            {{ question_dépistage_résultat_libellé|inline }}
+                        </legend>
+                        <div role="radiogroup" aria-labelledby="depistage-resultat-label">
+                            <input id="depistage_resultat_positif" type="radio" required name="depistage_resultat" value="positif">
+                            <label for="depistage_resultat_positif">
+                                <span>{{ question_dépistage_positif_libellé|inline }}</span>
+                            </label>
+                            <input id="depistage_resultat_negatif" type="radio" required name="depistage_resultat" value="negatif">
+                            <label for="depistage_resultat_negatif">
+                                <span>{{ question_dépistage_négatif_libellé|inline }}</span>
+                            </label>
+                            <input id="depistage_resultat_en_attente" type="radio" required name="depistage_resultat" value="en_attente">
+                            <label for="depistage_resultat_en_attente">{{ question_dépistage_attente_libellé|inline|me_or_them }}</label>
+                        </div>
+                    </fieldset>
+                </div>
+            </fieldset>
+            <div class="form-controls">
+                <div class="button-with-progress">
+                    <p id="aria-description-progress-depistage" class="progress"></p>
+                    <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-depistage">
+                </div>
+                <a href="#" class="back-button button-outline">Retour</a>
             </div>
-        </fieldset>
-        <div class="form-controls">
-            <div class="button-with-progress">
-                <p id="aria-description-progress-depistage" class="progress"></p>
-                <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-depistage">
-            </div>
-            <a href="#" class="back-button button-outline">Retour</a>
-        </div>
-    </form>
+        </form>
+        {{ meta_feedback_difficultés }}
+    </div>
 </section>
 
 <section id="contactarisque" hidden>
-    <form id="contact-a-risque-form" class="block">
-        <fieldset>
-            <legend><h1>{{ question_symptômes_contact_à_risque_titre|inline|me_or_them }}</h1></legend>
-            <div>
-                <input id="contact_a_risque_assurance_maladie" type="checkbox" name="contact_a_risque_assurance_maladie">
-                <label for="contact_a_risque_assurance_maladie">
-                    {{ question_symptômes_contact_à_risque_assurance_maladie_libellé|inline|me_or_them }}
-                </label>
-            </div>
-            <div>
-                <input id="contact_a_risque_stop_covid" type="checkbox" name="contact_a_risque_stop_covid">
-                <label for="contact_a_risque_stop_covid">
-                    {{ question_symptômes_contact_à_risque_stop_covid_libellé|inline|me_or_them }}
-                </label>
-            </div>
-            <div>
-                <input id="contact_a_risque" type="checkbox" name="contact_a_risque" class="primary">
-                <label for="contact_a_risque">
-                    {{ question_symptômes_contact_à_risque_libellé|inline|me_or_them }}
-                </label>
-                <div class="details">
-                    {{ question_symptômes_contact_à_risque_aide|me_or_them }}
+    <div class="block">
+        <form id="contact-a-risque-form">
+            <fieldset>
+                <legend><h1>{{ question_symptômes_contact_à_risque_titre|inline|me_or_them }}</h1></legend>
+                <div>
+                    <input id="contact_a_risque_assurance_maladie" type="checkbox" name="contact_a_risque_assurance_maladie">
+                    <label for="contact_a_risque_assurance_maladie">
+                        {{ question_symptômes_contact_à_risque_assurance_maladie_libellé|inline|me_or_them }}
+                    </label>
                 </div>
+                <div>
+                    <input id="contact_a_risque_stop_covid" type="checkbox" name="contact_a_risque_stop_covid">
+                    <label for="contact_a_risque_stop_covid">
+                        {{ question_symptômes_contact_à_risque_stop_covid_libellé|inline|me_or_them }}
+                    </label>
+                </div>
+                <div>
+                    <input id="contact_a_risque" type="checkbox" name="contact_a_risque" class="primary">
+                    <label for="contact_a_risque">
+                        {{ question_symptômes_contact_à_risque_libellé|inline|me_or_them }}
+                    </label>
+                    <div class="details">
+                        {{ question_symptômes_contact_à_risque_aide|me_or_them }}
+                    </div>
+                </div>
+                <div class="secondary disabled">
+                    <fieldset>
+                        <legend id="contact-a-risque-circonstances-label" class="secondary-title">
+                            {{ question_contact_a_risque_circonstances_libellé|inline }}
+                        </legend>
+                        <div>
+                            <input id="contact_a_risque_meme_lieu_de_vie" type="checkbox" name="contact_a_risque_meme_lieu_de_vie" disabled>
+                            <label for="contact_a_risque_meme_lieu_de_vie">
+                                {{ question_symptômes_contact_à_risque_même_lieu_de_vie_libellé|inline|me_or_them }}
+                            </label>
+                        </div>
+                        <div>
+                            <input id="contact_a_risque_contact_direct" type="checkbox" name="contact_a_risque_contact_direct" disabled>
+                            <label for="contact_a_risque_contact_direct">
+                                {{ question_symptômes_contact_à_risque_contact_direct_libellé|inline|me_or_them }}
+                            </label>
+                            <div class="details">{{ question_symptômes_contact_à_risque_contact_direct_aide }}</div>
+                        </div>
+                        <div>
+                            <input id="contact_a_risque_actes" type="checkbox" name="contact_a_risque_actes" disabled>
+                            <label for="contact_a_risque_actes">
+                                {{ question_symptômes_contact_à_risque_actes_libellé|inline|me_or_them }}
+                            </label>
+                            <div class="details">{{ question_symptômes_contact_à_risque_actes_aide }}</div>
+                        </div>
+                        <div>
+                            <input id="contact_a_risque_espace_confine" type="checkbox" name="contact_a_risque_espace_confine" disabled>
+                            <label for="contact_a_risque_espace_confine">
+                                {{ question_symptômes_contact_à_risque_espace_confiné_libellé|inline|me_or_them }}
+                            </label>
+                        </div>
+                        <div>
+                            <input id="contact_a_risque_tousse_eternue" type="checkbox" name="contact_a_risque_tousse_eternue" disabled>
+                            <label for="contact_a_risque_tousse_eternue">
+                                {{ question_symptômes_contact_à_risque_toussé_éternué_libellé|inline|me_or_them }}
+                            </label>
+                        </div>
+                        <div>
+                            <input id="contact_a_risque_meme_classe" type="checkbox" name="contact_a_risque_meme_classe" disabled>
+                            <label for="contact_a_risque_meme_classe">
+                                {{ question_symptômes_contact_à_risque_même_classe_libellé|inline|me_or_them }}
+                            </label>
+                        </div>
+                        <div>
+                            <input id="contact_a_risque_autre" type="checkbox" name="contact_a_risque_autre" disabled>
+                            <label for="contact_a_risque_autre">
+                                {{ question_symptômes_contact_à_risque_autre_libellé|inline|me_or_them }}
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+            </fieldset>
+            <div class="form-controls">
+                <div class="button-with-progress">
+                    <p id="aria-description-progress-contactarisque" class="progress"></p>
+                    <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-contactarisque">
+                </div>
+                <a href="#" class="back-button button-outline">Retour</a>
             </div>
-            <div class="secondary disabled">
-                <fieldset>
-                    <legend id="contact-a-risque-circonstances-label" class="secondary-title">
-                        {{ question_contact_a_risque_circonstances_libellé|inline }}
-                    </legend>
-                    <div>
-                        <input id="contact_a_risque_meme_lieu_de_vie" type="checkbox" name="contact_a_risque_meme_lieu_de_vie" disabled>
-                        <label for="contact_a_risque_meme_lieu_de_vie">
-                            {{ question_symptômes_contact_à_risque_même_lieu_de_vie_libellé|inline|me_or_them }}
-                        </label>
-                    </div>
-                    <div>
-                        <input id="contact_a_risque_contact_direct" type="checkbox" name="contact_a_risque_contact_direct" disabled>
-                        <label for="contact_a_risque_contact_direct">
-                            {{ question_symptômes_contact_à_risque_contact_direct_libellé|inline|me_or_them }}
-                        </label>
-                        <div class="details">{{ question_symptômes_contact_à_risque_contact_direct_aide }}</div>
-                    </div>
-                    <div>
-                        <input id="contact_a_risque_actes" type="checkbox" name="contact_a_risque_actes" disabled>
-                        <label for="contact_a_risque_actes">
-                            {{ question_symptômes_contact_à_risque_actes_libellé|inline|me_or_them }}
-                        </label>
-                        <div class="details">{{ question_symptômes_contact_à_risque_actes_aide }}</div>
-                    </div>
-                    <div>
-                        <input id="contact_a_risque_espace_confine" type="checkbox" name="contact_a_risque_espace_confine" disabled>
-                        <label for="contact_a_risque_espace_confine">
-                            {{ question_symptômes_contact_à_risque_espace_confiné_libellé|inline|me_or_them }}
-                        </label>
-                    </div>
-                    <div>
-                        <input id="contact_a_risque_tousse_eternue" type="checkbox" name="contact_a_risque_tousse_eternue" disabled>
-                        <label for="contact_a_risque_tousse_eternue">
-                            {{ question_symptômes_contact_à_risque_toussé_éternué_libellé|inline|me_or_them }}
-                        </label>
-                    </div>
-                    <div>
-                        <input id="contact_a_risque_meme_classe" type="checkbox" name="contact_a_risque_meme_classe" disabled>
-                        <label for="contact_a_risque_meme_classe">
-                            {{ question_symptômes_contact_à_risque_même_classe_libellé|inline|me_or_them }}
-                        </label>
-                    </div>
-                    <div>
-                        <input id="contact_a_risque_autre" type="checkbox" name="contact_a_risque_autre" disabled>
-                        <label for="contact_a_risque_autre">
-                            {{ question_symptômes_contact_à_risque_autre_libellé|inline|me_or_them }}
-                        </label>
-                    </div>
-                </fieldset>
-            </div>
-        </fieldset>
-        <div class="form-controls">
-            <div class="button-with-progress">
-                <p id="aria-description-progress-contactarisque" class="progress"></p>
-                <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-contactarisque">
-            </div>
-            <a href="#" class="back-button button-outline">Retour</a>
-        </div>
-    </form>
+        </form>
+        {{ meta_feedback_difficultés }}
+    </div>
 </section>
 
 <section id="conseils" hidden>
@@ -1457,163 +1480,166 @@
 </section>
 
 <section id="suivisymptomes" hidden>
-    <form id="suivi-symptomes-form" class="block">
-        <fieldset>
-            <legend><h1>{{ question_suivi_symptômes_titre|inline|me_or_them }}</h1></legend>
-            <div class="details">{{ question_suivi_symptômes_aide|me_or_them }}</div>
-            <div id="suivi-symptomes-aujourdhui">
-                <input id="suivi_symptomes" type="checkbox" name="suivi_symptomes">
-                <label for="suivi_symptomes">
-                    {{ question_suivi_symptômes_libellé|inline|me_or_them }}
-                </label>
-            </div>
+    <div class="block">
+        <form id="suivi-symptomes-form">
+            <fieldset>
+                <legend><h1>{{ question_suivi_symptômes_titre|inline|me_or_them }}</h1></legend>
+                <div class="details">{{ question_suivi_symptômes_aide|me_or_them }}</div>
+                <div id="suivi-symptomes-aujourdhui">
+                    <input id="suivi_symptomes" type="checkbox" name="suivi_symptomes">
+                    <label for="suivi_symptomes">
+                        {{ question_suivi_symptômes_libellé|inline|me_or_them }}
+                    </label>
+                </div>
 
-            <div class="secondary disabled required">
-                <fieldset>
-                    <legend id="suivi-symptomes-essoufflement-label">
-                        {{ question_suivi_symptômes_essoufflement_libellé|inline|me_or_them }}
-                    </legend>
-                    <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-essoufflement-label">
-                        <input id="suivi_symptomes_essoufflement_mieux" type="radio" required name="suivi_symptomes_essoufflement" value="mieux">
-                        <label for="suivi_symptomes_essoufflement_mieux">Mieux</label>
-                        <input id="suivi_symptomes_essoufflement_stable" type="radio" name="suivi_symptomes_essoufflement" value="stable">
-                        <label for="suivi_symptomes_essoufflement_stable">Stable</label>
-                        <input id="suivi_symptomes_essoufflement_pire" type="radio" name="suivi_symptomes_essoufflement" value="pire">
-                        <label for="suivi_symptomes_essoufflement_pire">Un peu moins bien</label>
-                        <input id="suivi_symptomes_essoufflement_critique" type="radio" name="suivi_symptomes_essoufflement" value="critique">
-                        <label for="suivi_symptomes_essoufflement_critique">Beaucoup moins bien</label>
-                        <input id="suivi_symptomes_essoufflement_aucun" type="radio" name="suivi_symptomes_essoufflement" value="aucun">
-                        <label for="suivi_symptomes_essoufflement_aucun">
-                            <span class="me visible">Je n’ai pas de manque de souffle</span><span class="them" hidden>Il/elle n’a pas de manque de souffle</span>
-                        </label>
-                    </div>
-                </fieldset>
-            </div>
+                <div class="secondary disabled required">
+                    <fieldset>
+                        <legend id="suivi-symptomes-essoufflement-label">
+                            {{ question_suivi_symptômes_essoufflement_libellé|inline|me_or_them }}
+                        </legend>
+                        <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-essoufflement-label">
+                            <input id="suivi_symptomes_essoufflement_mieux" type="radio" required name="suivi_symptomes_essoufflement" value="mieux">
+                            <label for="suivi_symptomes_essoufflement_mieux">Mieux</label>
+                            <input id="suivi_symptomes_essoufflement_stable" type="radio" name="suivi_symptomes_essoufflement" value="stable">
+                            <label for="suivi_symptomes_essoufflement_stable">Stable</label>
+                            <input id="suivi_symptomes_essoufflement_pire" type="radio" name="suivi_symptomes_essoufflement" value="pire">
+                            <label for="suivi_symptomes_essoufflement_pire">Un peu moins bien</label>
+                            <input id="suivi_symptomes_essoufflement_critique" type="radio" name="suivi_symptomes_essoufflement" value="critique">
+                            <label for="suivi_symptomes_essoufflement_critique">Beaucoup moins bien</label>
+                            <input id="suivi_symptomes_essoufflement_aucun" type="radio" name="suivi_symptomes_essoufflement" value="aucun">
+                            <label for="suivi_symptomes_essoufflement_aucun">
+                                <span class="me visible">Je n’ai pas de manque de souffle</span><span class="them" hidden>Il/elle n’a pas de manque de souffle</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
 
-            <div class="secondary disabled required">
-                <fieldset>
-                    <legend id="suivi-symptomes-etat-general-label">
-                        {{ question_suivi_symptômes_état_général_libellé|inline|me_or_them }}
-                    </legend>
-                    <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-etat-general-label">
-                        <input id="suivi_symptomes_etat_general_mieux" type="radio" required name="suivi_symptomes_etat_general" value="mieux">
-                        <label for="suivi_symptomes_etat_general_mieux">Mieux</label>
-                        <input id="suivi_symptomes_etat_general_stable" type="radio" name="suivi_symptomes_etat_general" value="stable">
-                        <label for="suivi_symptomes_etat_general_stable">Stable</label>
-                        <input id="suivi_symptomes_etat_general_pire" type="radio" name="suivi_symptomes_etat_general" value="pire">
-                        <label for="suivi_symptomes_etat_general_pire">Un peu moins bien</label>
-                        <input id="suivi_symptomes_etat_general_critique" type="radio" name="suivi_symptomes_etat_general" value="critique">
-                        <label for="suivi_symptomes_etat_general_critique">Beaucoup moins bien</label>
-                    </div>
-                </fieldset>
-            </div>
+                <div class="secondary disabled required">
+                    <fieldset>
+                        <legend id="suivi-symptomes-etat-general-label">
+                            {{ question_suivi_symptômes_état_général_libellé|inline|me_or_them }}
+                        </legend>
+                        <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-etat-general-label">
+                            <input id="suivi_symptomes_etat_general_mieux" type="radio" required name="suivi_symptomes_etat_general" value="mieux">
+                            <label for="suivi_symptomes_etat_general_mieux">Mieux</label>
+                            <input id="suivi_symptomes_etat_general_stable" type="radio" name="suivi_symptomes_etat_general" value="stable">
+                            <label for="suivi_symptomes_etat_general_stable">Stable</label>
+                            <input id="suivi_symptomes_etat_general_pire" type="radio" name="suivi_symptomes_etat_general" value="pire">
+                            <label for="suivi_symptomes_etat_general_pire">Un peu moins bien</label>
+                            <input id="suivi_symptomes_etat_general_critique" type="radio" name="suivi_symptomes_etat_general" value="critique">
+                            <label for="suivi_symptomes_etat_general_critique">Beaucoup moins bien</label>
+                        </div>
+                    </fieldset>
+                </div>
 
-            <div class="secondary disabled required them-only">
-                <fieldset>
-                    <legend id="suivi-symptomes-confusion-label">
-                        {{ question_suivi_symptômes_confusion_libellé|inline }}
-                    </legend>
-                    <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-confusion-label">
-                        <input id="suivi_symptomes_confusion_oui" type="radio" name="suivi_symptomes_confusion" value="oui">
-                        <label for="suivi_symptomes_confusion_oui">Oui</label>
-                        <input id="suivi_symptomes_confusion_non" type="radio" name="suivi_symptomes_confusion" value="non">
-                        <label for="suivi_symptomes_confusion_non">Non</label>
-                    </div>
-                </fieldset>
-            </div>
+                <div class="secondary disabled required them-only">
+                    <fieldset>
+                        <legend id="suivi-symptomes-confusion-label">
+                            {{ question_suivi_symptômes_confusion_libellé|inline }}
+                        </legend>
+                        <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-confusion-label">
+                            <input id="suivi_symptomes_confusion_oui" type="radio" name="suivi_symptomes_confusion" value="oui">
+                            <label for="suivi_symptomes_confusion_oui">Oui</label>
+                            <input id="suivi_symptomes_confusion_non" type="radio" name="suivi_symptomes_confusion" value="non">
+                            <label for="suivi_symptomes_confusion_non">Non</label>
+                        </div>
+                    </fieldset>
+                </div>
 
-            <div class="secondary disabled required">
-                <fieldset>
-                    <legend id="suivi-symptomes-alimentation-hydratation-label">
-                        {{ question_suivi_symptômes_alimentation_hydratation_libellé|inline|me_or_them }}
-                    </legend>
-                    <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-alimentation-hydratation-label">
-                        <input id="suivi_symptomes_alimentation_hydratation_oui" type="radio" required name="suivi_symptomes_alimentation_hydratation" value="oui">
-                        <label for="suivi_symptomes_alimentation_hydratation_oui">Oui</label>
-                        <input id="suivi_symptomes_alimentation_hydratation_non" type="radio" name="suivi_symptomes_alimentation_hydratation" value="non">
-                        <label for="suivi_symptomes_alimentation_hydratation_non">Non</label>
-                    </div>
-                </fieldset>
-            </div>
+                <div class="secondary disabled required">
+                    <fieldset>
+                        <legend id="suivi-symptomes-alimentation-hydratation-label">
+                            {{ question_suivi_symptômes_alimentation_hydratation_libellé|inline|me_or_them }}
+                        </legend>
+                        <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-alimentation-hydratation-label">
+                            <input id="suivi_symptomes_alimentation_hydratation_oui" type="radio" required name="suivi_symptomes_alimentation_hydratation" value="oui">
+                            <label for="suivi_symptomes_alimentation_hydratation_oui">Oui</label>
+                            <input id="suivi_symptomes_alimentation_hydratation_non" type="radio" name="suivi_symptomes_alimentation_hydratation" value="non">
+                            <label for="suivi_symptomes_alimentation_hydratation_non">Non</label>
+                        </div>
+                    </fieldset>
+                </div>
 
-            <div class="secondary disabled required">
-                <fieldset>
-                    <legend id="suivi-symptomes-etat-psychologique-label">
-                        {{ question_suivi_symptômes_état_psychologique_libellé|inline|me_or_them }}
-                    </legend>
-                    <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-etat-psychologique-label">
-                        <input id="suivi_symptomes_etat_psychologique_mieux" type="radio" required name="suivi_symptomes_etat_psychologique" value="mieux">
-                        <label for="suivi_symptomes_etat_psychologique_mieux">Mieux</label>
-                        <input id="suivi_symptomes_etat_psychologique_stable" type="radio" name="suivi_symptomes_etat_psychologique" value="stable">
-                        <label for="suivi_symptomes_etat_psychologique_stable">Stable</label>
-                        <input id="suivi_symptomes_etat_psychologique_critique" type="radio" name="suivi_symptomes_etat_psychologique" value="critique">
-                        <label for="suivi_symptomes_etat_psychologique_critique">Beaucoup moins bien</label>
-                    </div>
-                </fieldset>
-            </div>
+                <div class="secondary disabled required">
+                    <fieldset>
+                        <legend id="suivi-symptomes-etat-psychologique-label">
+                            {{ question_suivi_symptômes_état_psychologique_libellé|inline|me_or_them }}
+                        </legend>
+                        <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-etat-psychologique-label">
+                            <input id="suivi_symptomes_etat_psychologique_mieux" type="radio" required name="suivi_symptomes_etat_psychologique" value="mieux">
+                            <label for="suivi_symptomes_etat_psychologique_mieux">Mieux</label>
+                            <input id="suivi_symptomes_etat_psychologique_stable" type="radio" name="suivi_symptomes_etat_psychologique" value="stable">
+                            <label for="suivi_symptomes_etat_psychologique_stable">Stable</label>
+                            <input id="suivi_symptomes_etat_psychologique_critique" type="radio" name="suivi_symptomes_etat_psychologique" value="critique">
+                            <label for="suivi_symptomes_etat_psychologique_critique">Beaucoup moins bien</label>
+                        </div>
+                    </fieldset>
+                </div>
 
-            <div class="secondary disabled required">
-                <fieldset>
-                    <legend id="suivi-symptomes-fievre-label">
-                        {{ question_suivi_symptômes_fièvre_libellé|inline|me_or_them }}
-                    </legend>
-                    <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-fievre-label">
-                        <input id="suivi_symptomes_fievre_oui" type="radio" required name="suivi_symptomes_fievre" value="oui">
-                        <label for="suivi_symptomes_fievre_oui">Oui</label>
-                        <input id="suivi_symptomes_fievre_non" type="radio" name="suivi_symptomes_fievre" value="non">
-                        <label for="suivi_symptomes_fievre_non">Non</label>
-                    </div>
-                </fieldset>
-            </div>
+                <div class="secondary disabled required">
+                    <fieldset>
+                        <legend id="suivi-symptomes-fievre-label">
+                            {{ question_suivi_symptômes_fièvre_libellé|inline|me_or_them }}
+                        </legend>
+                        <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-fievre-label">
+                            <input id="suivi_symptomes_fievre_oui" type="radio" required name="suivi_symptomes_fievre" value="oui">
+                            <label for="suivi_symptomes_fievre_oui">Oui</label>
+                            <input id="suivi_symptomes_fievre_non" type="radio" name="suivi_symptomes_fievre" value="non">
+                            <label for="suivi_symptomes_fievre_non">Non</label>
+                        </div>
+                    </fieldset>
+                </div>
 
-            <div class="secondary disabled required">
-                <fieldset>
-                    <legend id="suivi-symptomes-diarrhee-vomissements-label">
-                        {{ question_suivi_symptômes_diarrhée_vomissements_libellé|inline|me_or_them }}
-                    </legend>
-                    <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-diarrhee-vomissements-label">
-                        <input id="suivi_symptomes_diarrhee_vomissements_oui" type="radio" required name="suivi_symptomes_diarrhee_vomissements" value="oui">
-                        <label for="suivi_symptomes_diarrhee_vomissements_oui">Oui</label>
-                        <input id="suivi_symptomes_diarrhee_vomissements_non" type="radio" name="suivi_symptomes_diarrhee_vomissements" value="non">
-                        <label for="suivi_symptomes_diarrhee_vomissements_non">Non</label>
-                    </div>
-                </fieldset>
-            </div>
+                <div class="secondary disabled required">
+                    <fieldset>
+                        <legend id="suivi-symptomes-diarrhee-vomissements-label">
+                            {{ question_suivi_symptômes_diarrhée_vomissements_libellé|inline|me_or_them }}
+                        </legend>
+                        <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-diarrhee-vomissements-label">
+                            <input id="suivi_symptomes_diarrhee_vomissements_oui" type="radio" required name="suivi_symptomes_diarrhee_vomissements" value="oui">
+                            <label for="suivi_symptomes_diarrhee_vomissements_oui">Oui</label>
+                            <input id="suivi_symptomes_diarrhee_vomissements_non" type="radio" name="suivi_symptomes_diarrhee_vomissements" value="non">
+                            <label for="suivi_symptomes_diarrhee_vomissements_non">Non</label>
+                        </div>
+                    </fieldset>
+                </div>
 
-            <div class="secondary disabled">
-                <fieldset>
-                    <legend id="suivi-symptomes-toux-label">
-                        {{ question_suivi_symptômes_toux_libellé|inline|me_or_them }}
-                    </legend>
-                    <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-toux-label">
-                        <input id="suivi_symptomes_toux_oui" type="radio" name="suivi_symptomes_toux" value="oui">
-                        <label for="suivi_symptomes_toux_oui">Oui</label>
-                        <input id="suivi_symptomes_toux_non" type="radio" name="suivi_symptomes_toux" value="non">
-                        <label for="suivi_symptomes_toux_non">Non</label>
-                    </div>
-                </fieldset>
-            </div>
+                <div class="secondary disabled">
+                    <fieldset>
+                        <legend id="suivi-symptomes-toux-label">
+                            {{ question_suivi_symptômes_toux_libellé|inline|me_or_them }}
+                        </legend>
+                        <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-toux-label">
+                            <input id="suivi_symptomes_toux_oui" type="radio" name="suivi_symptomes_toux" value="oui">
+                            <label for="suivi_symptomes_toux_oui">Oui</label>
+                            <input id="suivi_symptomes_toux_non" type="radio" name="suivi_symptomes_toux" value="non">
+                            <label for="suivi_symptomes_toux_non">Non</label>
+                        </div>
+                    </fieldset>
+                </div>
 
-            <div class="secondary disabled">
-                <fieldset>
-                    <legend id="suivi-symptomes-maux-de-tete-label">
-                        {{ question_suivi_symptômes_maux_de_tête_libellé|inline|me_or_them }}
-                    </legend>
-                    <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-maux-de-tete-label">
-                        <input id="suivi_symptomes_maux_de_tete_oui" type="radio" name="suivi_symptomes_maux_de_tete" value="oui">
-                        <label for="suivi_symptomes_maux_de_tete_oui">Oui</label>
-                        <input id="suivi_symptomes_maux_de_tete_non" type="radio" name="suivi_symptomes_maux_de_tete" value="non">
-                        <label for="suivi_symptomes_maux_de_tete_non">Non</label>
-                    </div>
-                </fieldset>
-            </div>
+                <div class="secondary disabled">
+                    <fieldset>
+                        <legend id="suivi-symptomes-maux-de-tete-label">
+                            {{ question_suivi_symptômes_maux_de_tête_libellé|inline|me_or_them }}
+                        </legend>
+                        <div role="radiogroup" class="indented" aria-labelledby="suivi-symptomes-maux-de-tete-label">
+                            <input id="suivi_symptomes_maux_de_tete_oui" type="radio" name="suivi_symptomes_maux_de_tete" value="oui">
+                            <label for="suivi_symptomes_maux_de_tete_oui">Oui</label>
+                            <input id="suivi_symptomes_maux_de_tete_non" type="radio" name="suivi_symptomes_maux_de_tete" value="non">
+                            <label for="suivi_symptomes_maux_de_tete_non">Non</label>
+                        </div>
+                    </fieldset>
+                </div>
 
-        </fieldset>
-        <div class="form-controls">
-            <input type="submit" class="button" value="Continuer">
-            <a href="#" class="back-button button-outline">Retour</a>
-        </div>
-    </form>
+            </fieldset>
+            <div class="form-controls">
+                <input type="submit" class="button" value="Continuer">
+                <a href="#" class="back-button button-outline">Retour</a>
+            </div>
+        </form>
+        {{ meta_feedback_difficultés }}
+    </div>
 </section>
 
 <section id="suivihistorique" hidden>
