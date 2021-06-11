@@ -1,9 +1,12 @@
+import { bindFeedback } from '../actions'
+
 export function estPageThematique() {
     return document.body.classList.contains('page-thematique')
 }
 
 export function pageThematique(app) {
     app.trackPageView(document.location.pathname)
+    bindFeedback(document.querySelector('.feedback-component'), app)
     boutonBasculeVersMonProfil(app)
     ouvreDetailsSiFragment()
 }
