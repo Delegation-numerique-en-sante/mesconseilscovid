@@ -212,22 +212,26 @@ Décrypter les fausses informations ? [Désintox : la parole à la science](htt
 
 #### À l’international
 
-Toute entrée en France et toute sortie du territoire à destination ou en provenance d’un pays extérieur à l’Union européenne est interdite, sauf motif impérieux.
+L’entrée en France et toute sortie du territoire à destination ou en provenance d’un pays de l’espace européen, ou d’un pays classé vert (Australie, Corée du Sud, Israël, Japon, Liban, Nouvelle-Zélande, Singapour) est permise sans présentation d’un motif impérieux pour les personnes vaccinées comme non vaccinées.  
 
-Toute entrée en France à partir d’un pays de l’Union européenne est conditionnée à la réalisation d’un test PCR, à l’exception des travailleurs transfrontaliers ; tous les déplacements en provenance et en direction des territoires ultramarins sont également soumis à la production de motifs impérieux.
+Toute entrée en France est conditionnée à la réalisation d’un test PCR ou antigénique de moins de 48h ou 72h (selon les pays), à l’exception des :
+* travailleurs transfrontaliers ;
+* personnes vaccinées en provenance d’un pays classé vert.
 
-Pour plus d’informations sur [vos déplacements ou voyages](https://www.interieur.gouv.fr/Actualites/Infos-pratiques/Attestation-de-deplacement-et-de-voyage) (choisir la section correspondant à votre situation).
+Les déplacements en provenance et en direction de [certains territoires ultramarins](https://www.gouvernement.fr/info-coronavirus/outre-mer) sont également soumis à la production de motifs impérieux. 
 
-#### Pays à risque
+Pour plus d’informations sur [vos déplacements ou voyages](https://www.interieur.gouv.fr/Actualites/Infos-pratiques/Attestation-de-deplacement-et-de-voyage) selon les catégories verte, orange et rouge (choisir la section correspondant à votre situation).
 
-Les conditions d’entrée sur le territoire pour les **voyageurs en provenance des pays les plus à risque** (Afrique du Sud, Argentine, Bahreïn, Bangladesh, Brésil, Chili, Colombie, Costa Rica, Émirats arabes unis, Inde, Népal, Pakistan, Qatar, Sri Lanka, Turquie, Uruguay) et du **Royaume-Uni** ont été renforcées.   
+#### Pays à risque classés rouge
+
+Les conditions d’entrée sur le territoire pour les **voyageurs en provenance des pays les plus à risque** classés rouge (Afrique du Sud, Argentine, Bahreïn, Bangladesh, Brésil, Chili, Colombie, Costa Rica, Émirats arabes unis, Inde, Népal, Pakistan, Qatar, Sri Lanka, Turquie, Uruguay) ont été renforcées.   
   
 Nous vous conseillons de consulter [le site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage) et séléctionner la rubrique correspondant à votre situation pour connaître les mesures qui s’appliquent.
 
 Les mesures peuvent notamment impliquer : 
 
 * Restriction des motifs impérieux.
-* Avant embarquement, renforcement du dispositif de test avec présentation d’un test PCR négatif de moins de 36 h. 
+* Avant embarquement, renforcement du dispositif de test avec présentation d’un test PCR ou antigénique négatif de moins de 48h.  
 * À l’arrivée en France, réalisation d’un test antigénique systématique.
 * Mise en quarantaine stricte pendant 10 jours à l’arrivée sur arrêté préfectoral, avec restrictions des horaires de sortie (10 h-12 h).
 * Plus d’informations sont disponibles : 
@@ -400,19 +404,23 @@ Si vous respectez ces indications, il n’est **pas nécessaire de réaliser un 
 
 ## [conseils_pass_sanitaire.md](conseils_pass_sanitaire.md)
 
-Un « pass sanitaire » également appelé <span lang="en">“Digital Covid Certificate”</span> en Union européenne, sera disponible en format papier ou numérique sur votre application TousAntiCovid (rubrique « Mon carnet »).
+Un « pass sanitaire » également appelé <span lang="en">“Digital Covid Certificate”</span> en Union européenne, est disponible en format papier ou numérique sur votre application TousAntiCovid (rubrique « Mon carnet »).
 
-Les documents faisant office de « pass sanitaire » seront, au choix :
+Les documents faisant office de « pass sanitaire » sont, au choix :
 
-  * la preuve de vaccination complète (certificat remis lors de votre vaccination, ou téléchargeable depuis [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/)) ;
-  * un test PCR ou antigénique négatif de moins de 72 heures ;
-  * un test PCR ou antigénique positif de plus de 15 jours et de moins de 2 mois (certificat de rétablissement).
+  * la preuve de vaccination complète ;
+  * un test PCR ou antigénique négatif de moins de 72 heures pour le contrôle aux frontières ou 48h pour la participation à des évènements en France ;
+  * un test PCR ou antigénique positif de plus de 15 jours et de moins de 6 mois (certificat de rétablissement).
 
-En France, à partir du 3 juin, ce « pass sanitaire » devra être présenté pour participer à des évènements rassemblant plus de 1 000 personnes.
+En France, depuis le 9 juin, le pass sanitaire « activités » doit être présenté pour participer à des évènements rassemblant plus de 1 000 personnes.
  
-L’accès aux lieux nécessaires à la vie quotidienne (restaurants, service public, grandes surfaces…) ne sera **pas** soumis à la présentation de ce « pass sanitaire ».
+L’accès aux lieux nécessaires à la vie quotidienne (restaurants, service public, grandes surfaces…) n’est **pas** soumis à la présentation de ce pass sanitaire « activités ».
 
-En Union européenne, lorsqu’il entrera en application à partir de juillet, ce « pass sanitaire » permettra de faciliter les voyages entre les pays membres. 
+En Union européenne, lorsqu’il entrera en application à partir de juillet, le pass sanitaire « frontières » permettra de faciliter les voyages entre les pays membres. 
+
+Pour télécharger un nouveau certificat (avec QR code) : 
+* de vaccination complète, rendez-vous sur [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/)
+* de résultat de dépistage, rendez-vous sur le [portail SI-DEP](https://si-dep.gouv.fr/cyberlab/patientviewer.jsp)
  
 Pour plus d’informations, consultez : [la page dédiée du gouvernement](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions).
 
