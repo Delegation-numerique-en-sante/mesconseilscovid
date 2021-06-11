@@ -313,8 +313,8 @@ class PDFLinkExtractor(HTMLParser):
     def handle_starttag(self, tag, attrs):
         if tag == "a":
             attrs = dict(attrs)
-            url = attrs["href"]
-            if url.startswith("http") and url.endswith(".pdf"):
+            url = attrs.get("href")
+            if url and url.startswith("http") and url.endswith(".pdf"):
                 self.pdf_links.add(url)
 
 
