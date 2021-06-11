@@ -8,7 +8,7 @@ Les documents faisant office de « pass sanitaire » sont, au choix :
 
 En France, depuis le 9 juin, le pass sanitaire « activités » doit être présenté pour participer à des évènements rassemblant plus de 1 000 personnes.
  
-L’accès aux lieux nécessaires à la vie quotidienne (restaurants, service public, grandes surfaces…) ne sont **pas** soumis à la présentation de ce pass sanitaire « activités ».
+L’accès aux lieux nécessaires à la vie quotidienne (restaurants, service public, grandes surfaces…) n’est **pas** soumis à la présentation de ce pass sanitaire « activités ».
 
 En Union européenne, lorsqu’il entrera en application à partir de juillet, le pass sanitaire « frontières » permettra de faciliter les voyages entre les pays membres. 
 
