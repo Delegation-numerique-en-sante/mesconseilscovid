@@ -15,12 +15,10 @@ Trouvez les <a href="#conseils-vaccins" class="lien-vaccination">lieux de vaccin
 
 #### Quand se faire vacciner ?
 
-<span class="nouveau">nouveau</span> Les personnes de 12 à 18 ans pourront se faire vacciner dès le 15 juin.
-
 Vous pouvez vous faire vacciner **dès maintenant** :
 
 * si vous avez **18 ans et plus**, sans conditions ;
-* si vous avez entre **16 et 17 ans** et présentez un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.), ou si vous vivez sous le même toit qu’une personne immunodéprimée (dialysée, ayant reçu une transplantation d’organe ou de moelle osseuse, traitée par des médicaments immunosuppresseurs forts), ou que vous lui apportez une aide quotidienne ;
+* <span class="nouveau">nouveau</span> si vous avez entre **12 et 17 ans**, un [formulaire d’autorisation](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) doit être rempli pour attester du consentement des parents, la **carte vitale du parent** accompagnant est requise, même pour les enfants de plus de 16 ans disposant de leur propre carte vitale ;
 * si vous êtes **enceinte**, à partir du second trimestre de votre grossesse.
 
 Pour en savoir plus :
