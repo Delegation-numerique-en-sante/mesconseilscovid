@@ -15,6 +15,7 @@ def build_regex(avant, apres):
         rf"((?P<avant>{avant})"
         + rf"(\p{{Zs}}|{ESPACE_INSECABLE})"
         + rf"(?P<apres>{apres}))"
+        + r"(?!(.(?!<svg))*<\/svg>)"
     )
 
 
