@@ -82,6 +82,12 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 
 <div id="conseils-pediatrie-general" class="conseils">
 
+<div class="conseil">
+
+<span class="nouveau">nouveau</span> Depuis le 15 juin 2021, **la vaccination est ouverte aux enfants de 12 ans et plus.** Le rendez-vous doit être pris en centre de vaccination, avec le vaccin PfizerBioNTech. Un [formulaire d’autorisation](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) doit être rempli pour attester du consentement des parents, il peut être rempli sur place. La **carte vitale du parent** accompagnant est requise, même pour les enfants de plus de 16 ans disposant de leur propre carte vitale.
+
+</div>
+    
 ## Questions générales
 
 .. question:: À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
