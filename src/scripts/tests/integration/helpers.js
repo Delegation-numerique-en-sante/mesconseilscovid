@@ -327,7 +327,7 @@ export async function remplirSuivi(page, symptomes) {
     )
     await label.click()
 
-    // Question seulement posée quand on remplit pour un·e proche.
+    // Question seulement posée quand on remplit pour un ou une proche.
     if (symptomes.confusion) {
         label = await page.waitForSelector(
             `#page.ready label[for="suivi_symptomes_confusion_${symptomes.confusion}"]`

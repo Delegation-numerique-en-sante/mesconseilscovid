@@ -104,7 +104,7 @@ describe('Plausible', function () {
 
         await page.goto('http://localhost:8080/#introduction')
         let bouton = await page.waitForSelector(
-            '#page.ready #profils-cards-empty .js-profil-new >> text="Des conseils pour un·e proche"'
+            '#page.ready #profils-cards-empty .js-profil-new >> text="Des conseils pour un ou une proche"'
         )
 
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
@@ -223,7 +223,7 @@ describe('Plausible', function () {
 
         await page.goto('http://localhost:8080/#introduction')
         let bouton = await page.waitForSelector(
-            '#page.ready #profils-cards-empty .js-profil-new >> text="Des conseils pour un·e proche"'
+            '#page.ready #profils-cards-empty .js-profil-new >> text="Des conseils pour un ou une proche"'
         )
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
         await remplirQuestionnaire(page, {

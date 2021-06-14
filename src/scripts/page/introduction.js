@@ -38,7 +38,7 @@ export default function introduction(element, app) {
                 <li class="profil-empty">
                     <a class="button button-full-width button-outline js-profil-new"
                         href="#nom"
-                        >Des conseils pour un·e proche</a>
+                        >Des conseils pour un ou une proche</a>
                 </li>
             `)
         )

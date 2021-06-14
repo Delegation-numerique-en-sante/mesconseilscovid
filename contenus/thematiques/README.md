@@ -248,7 +248,7 @@ Ligne d’écoute pour les parents, ressources pour les parents et professionnel
 
 ## [je-suis-vaccine.md](je-suis-vaccine.md)
 
-# Je suis vacciné·e, que faut-il savoir ?
+# Je suis vacciné(e), que faut-il savoir ?
 
 <div class="illustration">
     <img src="illustrations/vaccins.svg" alt="">
@@ -256,19 +256,19 @@ Ligne d’écoute pour les parents, ressources pour les parents et professionnel
 
 <div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
 
-<big>Vous êtes vacciné·e contre la Covid et vous vous posez des questions sur le masque, l’isolement, les contacts à risque (cas contact), la contagion (immunité), ou encore le certificat de vaccination (pass sanitaire) ?</big>
+<big>Vous êtes vacciné(e) contre la Covid et vous vous posez des questions sur le masque, l’isolement, les contacts à risque (cas contact), la contagion (immunité), ou encore le certificat de vaccination (pass sanitaire) ?</big>
 
 <big>Voici les réponses à vos questions :</big>
 
 
-.. question:: Pourquoi continuer à porter le masque quand on est vacciné·e ?
+.. question:: Pourquoi continuer à porter le masque quand on est vacciné(e) ?
 
     La vaccination prémunit contre les formes graves et symptomatiques de la maladie, mais **elle n’empêche ni de la contracter ni de la transmettre**. Vous pouvez être malade, sans le savoir. Même vacciné, il faut continuer à porter le masque et à respecter les gestes barrières pour protéger ceux qui ne le sont pas.
 
 
-.. question:: Est-ce que je dois m’isoler si je suis « cas contact »  et vacciné·e ?
+.. question:: Est-ce que je dois m’isoler si je suis « cas contact »  et vacciné(e) ?
 
-    Même vacciné·e, en cas de contact à risque avec une personne positive à la Covid, vous êtes considéré·e comme étant « [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#introduction) » : il faut **vous faire tester et vous isoler** immédiatement.
+    Même vacciné(e), en cas de contact à risque avec une personne positive à la Covid, vous êtes considéré(e) comme étant « [cas contact](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#introduction) » : il faut **vous faire tester et vous isoler** immédiatement.
 
 
 .. question:: Est-ce que la vaccination rend malade et contagieux ?
@@ -301,7 +301,7 @@ Ligne d’écoute pour les parents, ressources pour les parents et professionnel
      Vous pouvez télécharger un nouveau certificat depuis [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
  
 
-.. question:: Est-ce que je peux voyager une fois vacciné·e ?
+.. question:: Est-ce que je peux voyager une fois vacciné(e) ?
 
     Pour voyager, certains pays pourront notamment demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** (ou pass sanitaire) au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionel de santé qui vous a vacciné.
 
