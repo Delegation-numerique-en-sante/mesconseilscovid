@@ -13,6 +13,12 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://mesconseilscovid.sante.gouv.fr/conseils-pour-les-enfants.html</loc>
+        <lastmod>2021-06-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>https://mesconseilscovid.sante.gouv.fr/je-suis-vaccine.html</loc>
         <lastmod>2021-06-14</lastmod>
         <changefreq>weekly</changefreq>
