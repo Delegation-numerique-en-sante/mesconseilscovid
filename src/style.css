@@ -679,7 +679,7 @@ footer .legals {
 .conseils {
     margin-bottom: 3rem;
 }
-.conseils h3,
+.conseils summary h3,
 #historique h3 {
     display: flex;
     justify-content: space-between;
@@ -1260,7 +1260,6 @@ a.no-type::after {
 .conseils > details > summary svg {
     height: 40px;
     width: 60px;
-    color: #000091;
     transition: all 0.4s;
 }
 .conseils > details:hover,
@@ -1396,7 +1395,6 @@ a.no-type::after {
     margin-bottom: 1.2rem;
     font-size: 150%;
     color: black;
-    display: block;
 }
 .thematique .illustration {
     max-width: 8rem;
