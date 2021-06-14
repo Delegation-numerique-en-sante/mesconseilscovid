@@ -292,11 +292,14 @@ legend h1 {
 .block .thematiques .cards {
     margin: 0 auto;
 }
+.thematiques {
+    max-width: 58rem;
+}
 .thematiques .cards > li {
     display: block;
     padding: 0;
     margin: 0 12px 1rem 12px;
-    max-width: 320px;
+    max-width: 285px;
 }
 .thematiques a {
     margin: 0;
@@ -306,6 +309,8 @@ legend h1 {
     font-size: 1.2rem;
     transform: translate(0, 0);
     transition: all 100ms ease-in;
+    min-height: 13rem;
+    justify-content: center;
 }
 .thematiques a:hover {
     transform: translate(0.1em, 0.1em);
