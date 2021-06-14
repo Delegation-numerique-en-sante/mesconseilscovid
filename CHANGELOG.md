@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-06-15
+
+* ouverture de la vaccination pour les plus de 12 ans
+* meilleur affichage des pages thématiques sur l’accueil
+
 ## 2021-06-14
 
 * mise à jour de l’horaire du couvre-feu
