@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-06-14
+
+* mise à jour de l’horaire du couvre-feu
+* mise à jour des infos sur les déplacements et le pass sanitaire
+* transforme la page de conseils pour les enfants en page thématique
+
 ## 2021-06-10
 
 * mise à jour des infos sur la vaccination et le pass sanitaire
