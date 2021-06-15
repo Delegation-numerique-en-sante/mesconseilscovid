@@ -1,11 +1,6 @@
 import applyDetailsSummaryPolyfill from '../polyfills/details_polyfill'
 
-import {
-    bindCalendar,
-    bindFeedback,
-    bindImpression,
-    bindSuppressionTotale,
-} from '../actions'
+import { bindCalendar, bindImpression, bindSuppressionTotale } from '../actions'
 import {
     displayBlocks,
     displayElementById,
@@ -15,6 +10,7 @@ import {
     showOnlyIf,
     showSelector,
 } from '../affichage'
+import { bindFeedback } from '../feedback'
 import * as injection from '../injection'
 import { joursAvant, joursApres, titleCase } from '../utils'
 

@@ -1,7 +1,7 @@
 import Navigo from 'navigo'
 
-import { bindFeedback } from './actions'
 import { hideElement, showElement, showMeOrThem } from './affichage'
+import { bindFeedback } from './feedback'
 import { nomProfil } from './injection'
 import { titleCase } from './utils'
 

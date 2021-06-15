@@ -12,10 +12,8 @@ import SUIVI_IMAGES from '../suivi_*.svg'
 
 import { register as registerTimeAgo } from 'timeago.js'
 
-import {
-    // bindFeedbackContact,
-    bindSuppressionTotale,
-} from './actions'
+import { bindSuppressionTotale } from './actions'
+// import { bindFeedbackContact } from './feedback'
 import { estPageThematique, pageThematique } from './page/thematique'
 import App from './app'
 

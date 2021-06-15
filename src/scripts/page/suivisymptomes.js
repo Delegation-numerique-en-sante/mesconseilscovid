@@ -1,5 +1,5 @@
-import { bindFeedback } from '../actions'
 import { hideElement, showElement } from '../affichage'
+import { bindFeedback } from '../feedback'
 import {
     enableOrDisableSecondaryFields,
     getRadioValue,
