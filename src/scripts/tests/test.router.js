@@ -39,6 +39,7 @@ const fakeHTML = `<!DOCTYPE html>
     </section>
     <section id="hello" hidden>
         <p>Hello, <span class="name"></span></p>
+        <p>Deuxième élément</p>
     </section>
 </body>
 `
@@ -107,7 +108,7 @@ describe('Routeur', function () {
 
         assert.strictEqual(
             document.querySelector('#page').innerHTML.trim(),
-            '<p>Hello, <span class="name">world</span></p>'
+            '<p>Hello, <span class="name">world</span></p><p>Deuxième élément</p>'
         )
     })
 

@@ -1,14 +1,9 @@
-import { hideElement, showElement } from './affichage'
+import { cloneElementInto, hideElement, showElement } from './affichage'
 import { getCurrentPageName } from './router'
 import { estPageThematique } from './page/thematique'
 
 export function injectFeedbackDifficultes(targetElement) {
-    const sourceElement = document.querySelector('#feedback-difficultes')
-    const clone = sourceElement.cloneNode(true)
-    targetElement.innerHTML = ''
-    while (clone.firstElementChild) {
-        targetElement.insertAdjacentElement('beforeend', clone.firstElementChild)
-    }
+    cloneElementInto(document.querySelector('#feedback-difficultes'), targetElement)
 }
 
 export function bindFeedback(component, app) {

@@ -57,6 +57,14 @@ export function createElementFromHTML(htmlString) {
     return div.firstElementChild
 }
 
+export function cloneElementInto(sourceElement, targetElement) {
+    const clone = sourceElement.cloneNode(true)
+    targetElement.innerHTML = ''
+    while (clone.firstElementChild) {
+        targetElement.insertAdjacentElement('beforeend', clone.firstElementChild)
+    }
+}
+
 export function escapeHtml(str) {
     return str
         .replace(/&/g, '&amp;')

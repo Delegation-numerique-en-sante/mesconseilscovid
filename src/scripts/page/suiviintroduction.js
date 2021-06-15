@@ -1,7 +1,8 @@
 import { bindCalendar } from '../actions'
 import SuiviView from '../suivi'
 
-export default function suiviintroduction(element, app) {
+export default function suiviintroduction(page, app) {
+    const element = page
     const suivi = new SuiviView(app.profil, app.suiviImages)
     const container = element.querySelector('#profils-cards-suivi')
     const card = container.insertBefore(suivi.renderCardSuivi(), container.firstChild)
