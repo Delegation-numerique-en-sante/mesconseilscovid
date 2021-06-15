@@ -606,7 +606,7 @@ L’usage du **Pass sanitaire au niveau      européen sera effectif à partir d
 .. question:: Le « Pass sanitaire » est-il déjà en application pour les voyages dans l’Espace européen ?
     :level: 4
 
-    **Non.** Le « Pass sanitaire » dénommé « <span lang="en">Digital Covid Certificate</span> » au niveau européen devrait rentrer en application à partir de juillet. Il permettra de faciliter les voyages entre les pays membres.
+    **Non.** Le « Pass sanitaire frontières », ou encore « <span lang="en">Digital Covid Certificate</span> » au niveau européen, devrait rentrer en application à partir de juillet. Il permettra de faciliter les voyages entre les pays membres.
 
     En attendant, vérifiez les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
@@ -785,5 +785,4 @@ Consulter nos pages thématiques :
 </section>
 
 </div>
-
 
