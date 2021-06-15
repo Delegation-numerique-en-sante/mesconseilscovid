@@ -60,10 +60,23 @@ export function bindFeedback(component, app) {
             askForMoreFeedback(feedback, component)
         })
     })
+    const partagerButton = component.querySelector('.button-partager')
+    if (partagerButton) {
+        partagerButton.addEventListener('click', (event) => {
+            event.preventDefault()
+            app.plausible('Partager')
+            const transitionDelay = component.dataset.feedbackTransitionDelay
+            opacityTransition(component, transitionDelay, (component) => {
+                hideElement(component.querySelector('.feedback-question'))
+                showElement(component.querySelector('.feedback-partager'))
+            })
+        })
+    }
     document.addEventListener('pageChanged', () => {
         // Display the question again if the user navigates to another page.
         hideElement(component.querySelector('.feedback-form'))
         hideElement(component.querySelector('.feedback-thankyou'))
+        hideElement(component.querySelector('.feedback-partager'))
         showElement(component.querySelector('.feedback-question'))
     })
 }
