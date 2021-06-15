@@ -840,6 +840,26 @@ Les **résultats du test** de dépistage sont normalement disponibles dans les 3
 
 
 
+## [conseils_vaccins_12_ans.md](conseils_vaccins_12_ans.md)
+
+<div class="conseil">
+
+Vous avez entre 12 et 17 ans, **vous pouvez vous faire vacciner dès maintenant** avec l’autorisation de vos parents, ou de votre tuteur légal. Nous vous invitons à <a href="#conseils-vaccins" class="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
+
+</div>
+
+
+
+## [conseils_vaccins_18_ans.md](conseils_vaccins_18_ans.md)
+
+<div class="conseil">
+
+Vous avez plus de 18 ans, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" class="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
+
+</div>
+
+
+
 ## [conseils_vaccins_3_6_mois.md](conseils_vaccins_3_6_mois.md)
 
 <div class="conseil conseil-jaune">
@@ -860,20 +880,6 @@ Vous avez eu la Covid il y a moins de 3 mois, **vous ne devez pas vous faire va
 
 
 
-## [conseils_vaccins_50_ans.md](conseils_vaccins_50_ans.md)
-
-<div class="conseil">
-
-Vous avez plus de 50 ans, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" class="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
-
-Les plages de rendez-vous sont ouvertes au fur et à mesure par les centres de vaccination.
-
-Si vous n’arrivez pas à trouver un rendez-vous en ligne, vous pouvez appeler le centre de vaccination au numéro indiqué sur <a href="#conseils-vaccins" class="lien-vaccination">la liste des lieux de vaccination</a> et leur demander de vous inscrire sur **liste d’attente**. N’hésitez pas à vous rapprocher de votre mairie, certaines gèrent également des listes d’attente.
-
-</div>
-
-
-
 ## [conseils_vaccins_6_mois_plus.md](conseils_vaccins_6_mois_plus.md)
 
 <div class="conseil">
@@ -888,17 +894,7 @@ Vous avez eu la Covid il y a plus de 6 mois, **vous pouvez vous faire vacciner*
 
 <div class="conseil">
 
-Vous avez plus de 18 ans, et vous êtes considéré·e comme une personne ayant plus de risques de développer une forme sévère de Covid : **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à prendre rendez-vous avec votre médecin traitant.
-
-</div>
-
-
-
-## [conseils_vaccins_activite_pro_sante.md](conseils_vaccins_activite_pro_sante.md)
-
-<div class="conseil">
-
-Tou·tes les professionnel·les de santé, **peuvent se faire vacciner dès maintenant**. Nous vous invitons à <a href="#conseils-vaccins" class="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
+Vous êtes considéré·e comme une personne ayant plus de risques de développer une forme sévère de Covid. Nous vous invitons à <a href="#conseils-vaccins" class="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
 
 </div>
 
@@ -937,16 +933,6 @@ Pour en savoir plus :
 * [Le point sur les vaccins](https://www.gouvernement.fr/info-coronavirus/vaccins) sur le site du gouvernement
 * Le site [vaccination-info-service](https://vaccination-info-service.fr/Les-maladies-et-leurs-vaccins/COVID-19) de Santé Publique France
 * Les [réponses à vos questions sur les vaccins](https://www.sante.fr/vaccins-coronavirus-covid-19-toutes-les-reponses-vos-questions)
-
-
-
-## [conseils_vaccins_demande_medecin.md](conseils_vaccins_demande_medecin.md)
-
-<div class="conseil">
-
-Vous avec un traitement de longue durée ou une maladie chronique. Nous vous invitons à consulter votre médecin pour vérifier si vous avez le droit de vous faire vacciner dès maintenant.
-
-</div>
 
 
 
@@ -1020,7 +1006,7 @@ Les **effets secondaires** les plus fréquents des vaccins contre la Covid sont�
 
 <div class="conseil">
 
-Vous présentez un risque de développement d’une forme grave de Covid, **vous pouvez vous faire vacciner dès maintenant**. Nous vous invitons à consulter votre médecin pour obtenir une **ordonnance**, avant de <a href="#conseils-vaccins" class="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
+Vous êtes considéré·e comme une personne ayant un très haut risque de développer une forme grave de Covid. Nous vous invitons à <a href="#conseils-vaccins" class="lien-vaccination">prendre rendez-vous dans le centre de vaccination le plus proche</a>.
 
 </div>
 

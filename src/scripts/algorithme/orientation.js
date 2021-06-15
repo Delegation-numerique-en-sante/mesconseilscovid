@@ -499,20 +499,18 @@ export default class AlgorithmeOrientation {
     }
 
     _conseilsVaccins(algoVaccination) {
-        if (algoVaccination.isProfessionnelDeSante()) {
-            return ['conseils-vaccins-activite-pro-sante']
-        } else if (algoVaccination.isSup50()) {
-            return ['conseils-vaccins-50-ans']
-        } else if (algoVaccination.isARisque()) {
-            if (algoVaccination.isTresHautRisque()) {
-                return ['conseils-vaccins-tres-haut-risque']
-            } else if (algoVaccination.isSup18()) {
-                return ['conseils-vaccins-a-risque']
-            } else {
-                return ['conseils-vaccins-demande-medecin']
-            }
+        let blockNames = []
+        if (algoVaccination.isSup18()) {
+            blockNames.push('conseils-vaccins-18-ans')
+        } else if (algoVaccination.isSup12()) {
+            blockNames.push('conseils-vaccins-12-ans')
         }
-        return []
+        if (algoVaccination.isTresHautRisque()) {
+            blockNames.push('conseils-vaccins-tres-haut-risque')
+        } else if (algoVaccination.isARisque()) {
+            blockNames.push('conseils-vaccins-a-risque')
+        }
+        return blockNames
     }
 
     gestesBarriereBlockNamesToDisplay() {
