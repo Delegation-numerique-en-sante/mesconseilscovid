@@ -9,10 +9,9 @@ describe('Suivi', function () {
     it('remplir le questionnaire de suivi pour moi', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.
@@ -62,11 +61,11 @@ describe('Suivi', function () {
             )
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:introduction'),
+                waitForPlausibleTrackingEvent(page, 'pageview:'),
             ])
         }
 
-        // Page d’accueil.
+        // Page d’introduction du suivi.
         {
             let bouton = await page.waitForSelector(
                 '#page.ready >> text="Démarrer mon suivi"'
@@ -129,11 +128,11 @@ describe('Suivi', function () {
             )
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:introduction'),
+                waitForPlausibleTrackingEvent(page, 'pageview:'),
             ])
         }
 
-        // La page d’Introduction contient maintenant un lien vers mon suivi.
+        // La page d’accueil contient maintenant un lien vers mon suivi.
         {
             let bouton = await page.waitForSelector(
                 '#page.ready >> text="Continuer mon suivi"'
@@ -223,10 +222,9 @@ describe('Suivi', function () {
     it('remplir le questionnaire de suivi pour un proche', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.
@@ -276,7 +274,7 @@ describe('Suivi', function () {
             )
             await Promise.all([
                 bouton.click(),
-                waitForPlausibleTrackingEvent(page, 'pageview:introduction'),
+                waitForPlausibleTrackingEvent(page, 'pageview:'),
             ])
         }
 

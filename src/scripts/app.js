@@ -57,17 +57,7 @@ export default class App {
         return this.chargerProfilActuel()
     }
     setupRoutes() {
-        this.router.addAppRoute('introduction', introduction, undefined, '') // accueil : pas de titre
-
         this.router.addAppRoute('nom', nom)
-
-        this.router.addQuestionnaireRoute('vaccins', vaccins)
-        this.router.addQuestionnaireRoute('historique', historique)
-        this.router.addQuestionnaireRoute('symptomes', symptomes)
-        this.router.addQuestionnaireRoute('contactarisque', contactarisque)
-        this.router.addQuestionnaireRoute('depistage', depistage)
-        this.router.addQuestionnaireRoute('situation', situation)
-        this.router.addQuestionnaireRoute('sante', sante)
 
         this.router.addAppRoute('conseils', conseils, beforeConseils)
         this.router.addAppRoute(
@@ -81,6 +71,16 @@ export default class App {
             suivihistorique,
             beforeSuiviHistorique
         )
+
+        // Garder la définition de `symptomes` sous celle de `suivisymptomes`,
+        // la RegExp de navigo ne matche que la fin de la chaîne.
+        this.router.addQuestionnaireRoute('vaccins', vaccins)
+        this.router.addQuestionnaireRoute('historique', historique)
+        this.router.addQuestionnaireRoute('contactarisque', contactarisque)
+        this.router.addQuestionnaireRoute('depistage', depistage)
+        this.router.addQuestionnaireRoute('situation', situation)
+        this.router.addQuestionnaireRoute('sante', sante)
+        this.router.addQuestionnaireRoute('symptomes', symptomes)
 
         this.router.addRoute('pediatrie', (element) => {
             if (this.profil.isComplete()) {
@@ -103,6 +103,7 @@ export default class App {
 
             nouvelleversion(element, this, origine)
         })
+        this.router.addAppRoute('', introduction, undefined, '') // accueil : pas de titre
     }
     chargerProfilActuel() {
         return this.stockage.getProfilActuel().then((nom) => {

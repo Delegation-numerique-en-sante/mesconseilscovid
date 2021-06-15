@@ -5,10 +5,9 @@ describe('Parcours', function () {
     it('remplir le questionnaire sans symptômes ni dépistage', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.
@@ -63,17 +62,14 @@ describe('Parcours', function () {
 
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
 
-            // On retourne à l'intro.
+            // On retourne à l'accueil.
             let bouton = await page.waitForSelector(
                 '#page.ready >> text="Revenir à l’accueil"'
             )
-            await Promise.all([
-                bouton.click(),
-                page.waitForNavigation({ url: '**/introduction' }),
-            ])
+            await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/' })])
         }
 
-        // Introduction.
+        // Accueil.
         {
             // La page comporte maintenant un lien direct vers mes conseils.
             let bouton = await page.waitForSelector(
@@ -91,10 +87,9 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec symptômes', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.
@@ -141,10 +136,9 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec symptômes (gravité majeure)', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.
@@ -179,10 +173,9 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec symptômes passés', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.
@@ -219,10 +212,9 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec contact à risque', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.
@@ -269,10 +261,9 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec contact à risque TAC', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.
@@ -320,10 +311,9 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec contact à risque AM', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.
@@ -371,10 +361,9 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec pas de symptômes et covid+ (asymptomatique)', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.
@@ -424,10 +413,9 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec pas de symptômes et covid? (attente)', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.
@@ -475,10 +463,9 @@ describe('Parcours', function () {
     it('remplir le questionnaire avec département autre', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.

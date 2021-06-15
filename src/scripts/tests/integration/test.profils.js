@@ -5,10 +5,9 @@ describe('Profils', function () {
     it('remplir le questionnaire pour un proche', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.
@@ -89,13 +88,10 @@ describe('Profils', function () {
             let bouton = await page.waitForSelector(
                 '#page.ready >> text="Revenir à l’accueil"'
             )
-            await Promise.all([
-                bouton.click(),
-                page.waitForNavigation({ url: '**/introduction' }),
-            ])
+            await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/' })])
         }
 
-        // Introduction.
+        // Accueil.
         {
             // La page comporte maintenant un lien direct vers ses conseils.
             let bouton = await page.waitForSelector(

@@ -54,46 +54,43 @@ describe('Routeur', function () {
         this.router = null
     })
 
-    it('La racine redirige vers la page introduction', function () {
+    it('La page d’intro est redirigée vers la racine', function () {
         require('jsdom-global')(fakeHTML, {
-            url: 'https://test/',
+            url: 'https://test/introduction',
         })
         this.router = new Router(new FakeApp(), window)
-        this.router.addAppRoute('introduction', () => {})
-        assert.strictEqual(window.location.toString(), 'https://test/')
+        assert.strictEqual(window.location.toString(), 'https://test/introduction')
 
         this.router.resolve()
 
-        assert.strictEqual(window.location.toString(), 'https://test/introduction')
+        assert.strictEqual(window.location.toString(), 'https://test/')
     })
 
-    it('Une page inconnue redirige vers la page introduction', function () {
+    it('Une page inconnue redirige vers la racine', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/inconnue',
         })
         this.router = new Router(new FakeApp(), window)
-        this.router.addAppRoute('introduction', () => {})
         assert.strictEqual(window.location.toString(), 'https://test/inconnue')
 
         this.router.resolve()
 
-        assert.strictEqual(window.location.toString(), 'https://test/introduction')
+        assert.strictEqual(window.location.toString(), 'https://test/')
     })
 
     it('La redirection conserve la source', function () {
         require('jsdom-global')(fakeHTML, {
-            url: 'https://test/?source=foo',
+            url: 'https://test/introduction?source=foo',
         })
         this.router = new Router(new FakeApp(), window)
-        this.router.addAppRoute('introduction', () => {})
-        assert.strictEqual(window.location.toString(), 'https://test/?source=foo')
-
-        this.router.resolve()
-
         assert.strictEqual(
             window.location.toString(),
             'https://test/introduction?source=foo'
         )
+
+        this.router.resolve()
+
+        assert.strictEqual(window.location.toString(), 'https://test/?source=foo')
     })
 
     it('Le contenu de la page cible est chargé', function () {
@@ -158,7 +155,7 @@ describe('Routeur', function () {
 
         this.router.resolve()
 
-        assert.strictEqual(window.location.toString(), 'https://test/introduction')
+        assert.strictEqual(window.location.toString(), 'https://test/')
     })
 
     it('On ne redirige pas si ce n’est pas à la racine', function () {
@@ -166,8 +163,6 @@ describe('Routeur', function () {
             url: 'https://test/introduction#conseils',
         })
         this.router = new Router(new FakeApp(), window)
-        this.router.addAppRoute('introduction', () => {})
-        this.router.addAppRoute('conseils', () => {})
         assert.strictEqual(
             window.location.toString(),
             'https://test/introduction#conseils'
@@ -175,10 +170,7 @@ describe('Routeur', function () {
 
         this.router.resolve()
 
-        assert.strictEqual(
-            window.location.toString(),
-            'https://test/introduction#conseils'
-        )
+        assert.strictEqual(window.location.toString(), 'https://test/')
     })
 
     after(function () {

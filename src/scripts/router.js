@@ -96,8 +96,9 @@ export class Router {
 
     addRoute(pageName, viewFunc, beforeFunc, pageTitle) {
         this.navigo.on(
-            new RegExp('/' + pageName),
+            new RegExp(`/?${pageName}$`),
             () => {
+                pageName = pageName || 'introduction'
                 var element = this.loadPage(pageName, this.app)
                 this.updateTitle(element, pageName, pageTitle, this.app.profil)
                 this.fillProgress(element, pageName)
@@ -222,6 +223,12 @@ export class Router {
                 done(false)
             },
         })
+        this.navigo.on(new RegExp('^introduction$'), () => {}, {
+            before: (done) => {
+                this.redirectTo('')
+                done(false)
+            },
+        })
 
         // Par défaut on retourne à la page d’accueil.
         this.navigo.notFound(() => {
@@ -234,7 +241,7 @@ export class Router {
             ) {
                 this.redirectTo(fragment)
             } else {
-                this.redirectTo('introduction')
+                this.redirectTo('')
             }
         })
     }

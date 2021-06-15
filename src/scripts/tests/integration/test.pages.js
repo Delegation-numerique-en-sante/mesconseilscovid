@@ -5,10 +5,9 @@ describe('Pages', function () {
     it('titre de la page', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         assert.equal(
@@ -20,10 +19,9 @@ describe('Pages', function () {
     it('remplir le questionnaire avec pédiatrie', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // On clique sur "Des conseils pour moi".
@@ -76,12 +74,10 @@ describe('Pages', function () {
     it('on peut accéder aux CGU depuis l’accueil', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
-        await page.waitForSelector('#page.ready')
 
         // On va vers la page de CGU.
         {
