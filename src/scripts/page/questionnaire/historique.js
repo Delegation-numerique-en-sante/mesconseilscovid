@@ -12,8 +12,8 @@ import {
 dayjs.locale('fr')
 dayjs.extend(localeData)
 
-export default function historique(element, app) {
-    const form = element.querySelector('form')
+export default function historique(page, app) {
+    const form = page.querySelector('form')
 
     const now = dayjs()
 

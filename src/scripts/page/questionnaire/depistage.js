@@ -7,8 +7,8 @@ import {
     toggleFormButtonOnTextFieldsAndRadioRequired,
 } from '../../formutils'
 
-export default function depistage(element, app) {
-    const form = element.querySelector('form')
+export default function depistage(page, app) {
+    const form = page.querySelector('form')
 
     const datePicker = form.querySelector('#depistage_start_date')
     // Autorise seulement une date passée.
