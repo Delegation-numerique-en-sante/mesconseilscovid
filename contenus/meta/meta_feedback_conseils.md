@@ -4,6 +4,7 @@
         <div class="feedback-controls">
             <a class="button button-outline button-feedback button-feedback-positif" data-feedback="positif" href="" role="button">Oui</a>
             <a class="button button-outline button-feedback button-feedback-negatif" data-feedback="negatif" href="" role="button">Non</a>
+            <a class="button button-outline button-partager button-feedback-partager" href="" role="button">Partager</a>
         </div>
     </div>
     <div class="feedback-form" hidden>
@@ -21,7 +22,11 @@
     </div>
     <div class="feedback-thankyou" hidden>
         <p role="status">
-            Merci beaucoup pour votre message qui nous aidera à améliorer les conseils. <br/>
+            Merci beaucoup pour votre message qui nous aidera à améliorer les conseils.
+        </p>
+    </div>
+    <div class="feedback-partager" hidden>
+        <p role="status">
             Faites connaître Mes Conseils Covid en partageant ce lien (votre situation personnelle ne sera pas transmise) :
         </p>
         <ul>

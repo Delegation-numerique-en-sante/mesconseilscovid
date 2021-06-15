@@ -289,4 +289,66 @@ describe('Plausible', function () {
             'Avis negatif:conseils',
         ])
     })
+
+    it('avis partager conseils', async function () {
+        const page = this.test.page
+
+        await page.goto('http://localhost:8080/#introduction')
+        let bouton = await page.waitForSelector(
+            '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
+        )
+        await Promise.all([
+            bouton.click(),
+            page.waitForNavigation({ url: '**/#vaccins' }),
+        ])
+        await remplirQuestionnaire(page, {
+            vaccins: 'pas_encore',
+            symptomesActuels: [],
+            symptomesPasses: false,
+            contactARisque: [],
+            depistage: false,
+            departement: '80',
+            activitePro: true,
+            enfants: true,
+            age: '42',
+            taille: '165',
+            poids: '70',
+            grossesse: false,
+        })
+
+        await waitForPlausibleTrackingEvent(page, 'pageview:conseils')
+
+        bouton = await page.waitForSelector('#page.ready .button-feedback-partager')
+
+        await Promise.all([
+            bouton.click(),
+            page.waitForSelector('#page.ready .feedback-component .feedback-partager'),
+        ])
+
+        const partager = await page.waitForSelector(
+            '#page.ready .feedback-component .feedback-partager'
+        )
+
+        assert.include(
+            await partager.innerHTML(),
+            'Faites connaître Mes Conseils Covid en partageant ce lien'
+        )
+
+        await waitForPlausibleTrackingEvents(page, [
+            'pageview:introduction',
+            'Questionnaire commencé:vaccins',
+            'Questionnaire commencé pour moi:vaccins',
+            'pageview:vaccins',
+            'pageview:historique',
+            'pageview:symptomes',
+            'pageview:contactarisque',
+            'pageview:depistage',
+            'pageview:situation',
+            'pageview:sante',
+            'Questionnaire terminé:conseils',
+            'Questionnaire terminé pour moi:conseils',
+            'pageview:conseils',
+            'Partager:conseils',
+        ])
+    })
 })
