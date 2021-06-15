@@ -44,7 +44,7 @@
 
 .. question:: Que faire si mon rendez-vous pour la 2<sup>e</sup> dose tombe pendant mes vacances ?
 
-    Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée 6 semaines après la première. Il est prévu de permettre de la décaler jusqu’à 2 semaines, pour qu’elle puisse avoir lieu entre 6 et 8 semaines après la première.
+    Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée 42 jours (soit 6 semaines) après la première. Il est prévu de permettre de la décaler pour qu’elle puisse avoir lieu entre 21 et 49 jours (soit 3 à 7 semaines) après la première.
 
 
 .. question:: Quels sont les effets secondaires des vaccins contre la Covid ?
