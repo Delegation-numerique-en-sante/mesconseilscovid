@@ -3,7 +3,7 @@
 * Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech*.
 
 * Chez son **médecin traitant**, en cabinet infirmier, ou en pharmacie :
-    * avec un vaccin *Moderna*,
+    * avec un vaccin *Moderna* (si vous avez **18 ans ou plus**),
     * avec un vaccin *AstraZeneca* ou *Janssen* (si vous avez **55 ans ou plus**).
 
 <div class="conseil">
