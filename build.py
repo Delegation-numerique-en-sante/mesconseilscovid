@@ -101,9 +101,36 @@ def render_html_question(text, question, level):
 """
 
 
+class SummaryDirective(Directive):
+    """
+    Balisage <summary> pour les sections repliables
+    """
+
+    def parse(self, block, m, state):
+        title = m.group("value")
+        text = self.parse_text(m)
+        children = block.parse(text, state, block.rules)
+        return {"type": "summary", "children": children, "params": (title, )}
+
+    def __call__(self, md):
+        self.register_directive(md, "summary")
+        if md.renderer.NAME == "html":
+            md.renderer.register("summary", render_html_summary)
+
+
+def render_html_summary(text, title):
+    return f"""<summary>
+    <h3>
+        {title}
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+    </h3>
+</summary>
+"""
+
+
 markdown = mistune.create_markdown(
     renderer=CustomHTMLRenderer(escape=False),
-    plugins=[QuestionDirective()],
+    plugins=[QuestionDirective(), SummaryDirective()],
 )
 
 
