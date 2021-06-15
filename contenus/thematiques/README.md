@@ -544,7 +544,7 @@ Si votre logement ne permet pas d’isoler la personne positive (adulte) du rest
 
 <div class="conseil">
 
-L’usage du **Pass sanitaire au niveau      européen sera effectif à partir de juillet.** En attendant, consultez nos pages personnalisées afin de connaître la marche à suivre pour partir en voyage selon votre situation.
+L’usage du **Pass sanitaire au niveau européen sera effectif à partir de juillet.** En attendant, consultez nos pages personnalisées afin de connaître la marche à suivre pour partir en voyage selon votre situation.
 
 </div>
 
@@ -621,7 +621,7 @@ L’usage du **Pass sanitaire au niveau      européen sera effectif à partir d
 .. question:: Je suis en cours de vaccination, comment obtenir un « Pass sanitaire » ou un justificatif me permettant de voyager ?
     :level: 4
 
-    Si vous êtes en cours de vaccination (1 dose sur 2 doses prévues), c’est-à-dire que vous n’avez pas finalisé votre schémal vaccinal, vous ne pourrez pas faire valoir cette vaccination pour voyager. Vous devrez présenter un test PCR ou antigénique récent (réalisé dans les 48h ou 72h) sur lequel figure un QR code. Ce justificatif fera office de « Pass sanitaire ».
+    Si vous êtes en cours de vaccination (1 dose sur 2 doses prévues), c’est-à-dire que vous n’avez pas finalisé votre schéma vaccinal, vous ne pourrez pas faire valoir cette vaccination pour voyager. Vous devrez présenter un test PCR ou antigénique récent (réalisé dans les 48h ou 72h) sur lequel figure un QR code. Ce justificatif fera office de « Pass sanitaire ».
 
 .. question:: Sous quelle forme présenter ce justificatif ou ce « Pass sanitaire » lors d’un voyage ?
     :level: 4
