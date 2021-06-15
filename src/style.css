@@ -1387,6 +1387,10 @@ a.no-type::after {
     display: none;
 }
 
+.thematique #conseils-block .conseils {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 .thematique #conseils-block h1 {
     margin-bottom: 3rem;
 }
@@ -1400,6 +1404,16 @@ a.no-type::after {
     margin-bottom: 1.2rem;
     font-size: 150%;
     color: black;
+}
+.thematique #conseils-block summary h3 {
+    margin: 0;
+    color: #000091;
+}
+.thematique #conseils-block h4 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 125%;
+    border-bottom: none;
 }
 .thematique .illustration {
     max-width: 8rem;
