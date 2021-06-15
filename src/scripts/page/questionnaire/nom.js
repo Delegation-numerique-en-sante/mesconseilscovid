@@ -1,7 +1,7 @@
 import { toggleFormButtonOnTextFieldsRequired } from '../../formutils'
 
-export default function nom(element, app) {
-    const form = element.querySelector('form')
+export default function nom(page, app) {
+    const form = page.querySelector('form')
     var button = form.querySelector('input[type=submit]')
     const requiredLabel = 'Cette information est requise'
     toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)

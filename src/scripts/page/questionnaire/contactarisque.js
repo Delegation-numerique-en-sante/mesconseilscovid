@@ -5,8 +5,8 @@ import {
     someChecked,
 } from '../../formutils'
 
-export default function contactarisque(element, app) {
-    const form = element.querySelector('form')
+export default function contactarisque(page, app) {
+    const form = page.querySelector('form')
 
     var button = form.querySelector('input[type=submit]')
 

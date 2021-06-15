@@ -4,8 +4,8 @@ import {
     toggleFormButtonOnRadioRequired,
 } from '../../formutils'
 
-export default function vaccins(element, app) {
-    const form = element.querySelector('form')
+export default function vaccins(page, app) {
+    const form = page.querySelector('form')
 
     premierDemarrageFormulaire(app)
 

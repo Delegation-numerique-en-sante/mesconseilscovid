@@ -1,5 +1,5 @@
 import { hideElement, showElement } from '../affichage'
-import { bindFeedback } from '../feedback'
+import { bindFeedback, injectFeedbackDifficultes } from '../feedback'
 import {
     enableOrDisableSecondaryFields,
     getRadioValue,
@@ -8,10 +8,11 @@ import {
 
 import AlgorithmeDeconfinement from '../algorithme/deconfinement'
 
-export default function suivisymptomes(element, app) {
-    const form = element.querySelector('form')
+export default function suivisymptomes(page, app) {
+    const form = page.querySelector('form')
 
-    bindFeedback(element.querySelector('.feedback-component'), app)
+    injectFeedbackDifficultes(page.querySelector('.feedback-difficultes'))
+    bindFeedback(page.querySelector('.feedback-component'), app)
 
     // Enregistre le démarrage du suivi si la date n’est pas renseignée
     // (elle a pu être mise à zéro en cas d’effacement du suivi).

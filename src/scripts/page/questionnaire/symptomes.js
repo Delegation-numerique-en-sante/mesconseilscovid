@@ -10,8 +10,8 @@ import {
 import { joursAvant } from '../../utils'
 import AlgorithmeOrientation from '../../algorithme/orientation'
 
-export default function symptomes(element, app) {
-    const form = element.querySelector('form')
+export default function symptomes(page, app) {
+    const form = page.querySelector('form')
 
     // Selon le choix radio ça affiche le choix des symptômes et/ou
     // la saisie de la date.
