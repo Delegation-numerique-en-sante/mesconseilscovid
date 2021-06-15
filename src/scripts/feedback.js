@@ -2,6 +2,15 @@ import { hideElement, showElement } from './affichage'
 import { getCurrentPageName } from './router'
 import { estPageThematique } from './page/thematique'
 
+export function injectFeedbackDifficultes(targetElement) {
+    const sourceElement = document.querySelector('#feedback-difficultes')
+    const clone = sourceElement.cloneNode(true)
+    targetElement.innerHTML = ''
+    while (clone.firstElementChild) {
+        targetElement.insertAdjacentElement('beforeend', clone.firstElementChild)
+    }
+}
+
 export function bindFeedback(component, app) {
     function opacityTransition(component, delay, callback) {
         component.style.transition = `opacity ${delay / 1000}s`
