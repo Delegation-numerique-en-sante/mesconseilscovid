@@ -14,6 +14,7 @@ function showThem(themElement) {
 }
 
 export function hideElement(element) {
+    if (!element) return
     element.setAttribute('hidden', '')
     element.classList.remove('visible')
 }
