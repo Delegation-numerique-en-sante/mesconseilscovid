@@ -6,54 +6,7 @@ import AlgorithmeVaccination from '../algorithme/vaccination'
 import Profil from '../profil'
 
 describe('Vaccination', function () {
-    it('Pas de vaccination par défaut', function () {
-        const profil = new Profil('mes_infos', {
-            age: 35,
-            activite_pro_sante: false,
-            antecedent_dialyse: false,
-            antecedent_greffe: false,
-            antecedent_cancer: false,
-            antecedent_trisomie: false,
-        })
-        const algoOrientation = new AlgorithmeOrientation(profil)
-        const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
-        assert.isFalse(algoVaccination.isProfessionnelDeSante())
-        assert.isFalse(algoVaccination.isSup50())
-        assert.isFalse(algoVaccination.isTresHautRisque())
-        assert.isFalse(algoVaccination.isVaccinable())
-    })
-
-    it('Vaccination pour les pro santé', function () {
-        const profil = new Profil('mes_infos', {
-            age: 35,
-            activite_pro_sante: true,
-            antecedent_dialyse: false,
-            antecedent_greffe: false,
-            antecedent_cancer: false,
-            antecedent_trisomie: false,
-        })
-        const algoOrientation = new AlgorithmeOrientation(profil)
-        const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
-        assert.isTrue(algoVaccination.isProfessionnelDeSante())
-        assert.isTrue(algoVaccination.isVaccinable())
-    })
-
-    it('Vaccination pour les plus de 50 ans', function () {
-        const profil = new Profil('mes_infos', {
-            age: 50,
-            activite_pro_sante: false,
-            antecedent_dialyse: false,
-            antecedent_greffe: false,
-            antecedent_cancer: false,
-            antecedent_trisomie: false,
-        })
-        const algoOrientation = new AlgorithmeOrientation(profil)
-        const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
-        assert.isTrue(algoVaccination.isSup50())
-        assert.isTrue(algoVaccination.isVaccinable())
-    })
-
-    it('Vaccination pour les plus de 18 ans avec comorbidité', function () {
+    it('Vaccination pour les plus de 18 ans', function () {
         const profil = new Profil('mes_infos', {
             age: 18,
             activite_pro_sante: false,
@@ -61,31 +14,16 @@ describe('Vaccination', function () {
             antecedent_greffe: false,
             antecedent_cancer: false,
             antecedent_trisomie: false,
-            antecedent_diabete: true,
         })
         const algoOrientation = new AlgorithmeOrientation(profil)
         const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
         assert.isTrue(algoVaccination.isSup18())
-        assert.isTrue(algoVaccination.isARisque())
         assert.isTrue(algoVaccination.isVaccinable())
     })
 
-    it('Vaccination pour les plus de 18 ans avec surcharge pondérale', function () {
+    it('Vaccination pour les 12 à 18 ans', function () {
         const profil = new Profil('mes_infos', {
-            age: 18,
-            taille: 150,
-            poids: 100,
-        })
-        const algoOrientation = new AlgorithmeOrientation(profil)
-        const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
-        assert.isTrue(algoVaccination.isSup18())
-        assert.isTrue(algoVaccination.isARisque())
-        assert.isTrue(algoVaccination.isVaccinable())
-    })
-
-    it('Vaccination pour les très haut risque', function () {
-        const profil = new Profil('mes_infos', {
-            age: 26,
+            age: 16,
             activite_pro_sante: false,
             antecedent_dialyse: false,
             antecedent_greffe: false,
@@ -94,7 +32,7 @@ describe('Vaccination', function () {
         })
         const algoOrientation = new AlgorithmeOrientation(profil)
         const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
-        assert.isTrue(algoVaccination.isTresHautRisque())
+        assert.isTrue(algoVaccination.isSup12())
         assert.isTrue(algoVaccination.isVaccinable())
     })
 })

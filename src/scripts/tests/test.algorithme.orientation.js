@@ -479,24 +479,22 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
-        it('Cas activité pro santé', function () {
+        it('Cas 12 à 18 ans', function () {
             var profil = new Profil('mes_infos', {
-                age: 42,
-                activite_pro_sante: true,
+                age: 12,
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
                 'conseils-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-activite-pro-sante',
+                'conseils-vaccins-12-ans',
             ])
         })
 
-        it('Cas < 18 ans et antécédents', function () {
+        it('Cas 12 à 18 ans à risque (comorbidité)', function () {
             var profil = new Profil('mes_infos', {
-                age: 17,
-                activite_pro_sante: false,
+                age: 12,
                 antecedent_cardio: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
@@ -504,29 +502,27 @@ describe('Blocs d’informations additionnels', function () {
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
                 'conseils-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-demande-medecin',
-            ])
-        })
-
-        it('Cas ≥ 18 ans et antécédents', function () {
-            var profil = new Profil('mes_infos', {
-                age: 18,
-                activite_pro_sante: false,
-                antecedent_cardio: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'reponse-vaccins-pas-encore',
-                'reponse-historique-sans',
-                'conseils-vaccins-pas-encore-vaccine',
+                'conseils-vaccins-12-ans',
                 'conseils-vaccins-a-risque',
             ])
         })
 
-        it('Cas > 55 ans et antécédents', function () {
+        it('Cas ≥ 18 ans', function () {
             var profil = new Profil('mes_infos', {
-                age: 56,
-                activite_pro_sante: false,
+                age: 18,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'reponse-vaccins-pas-encore',
+                'reponse-historique-sans',
+                'conseils-vaccins-pas-encore-vaccine',
+                'conseils-vaccins-18-ans',
+            ])
+        })
+
+        it('Cas ≥ 18 ans à risque (comorbidité)', function () {
+            var profil = new Profil('mes_infos', {
+                age: 18,
                 antecedent_cardio: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
@@ -534,12 +530,14 @@ describe('Blocs d’informations additionnels', function () {
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
                 'conseils-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-50-ans',
+                'conseils-vaccins-18-ans',
+                'conseils-vaccins-a-risque',
             ])
         })
 
-        it('Cas très haut risque comorbidité', function () {
+        it('Cas ≥ 18 ans très haut risque', function () {
             var profil = new Profil('mes_infos', {
+                age: 18,
                 antecedent_greffe: true,
             })
             var algoOrientation = new AlgorithmeOrientation(profil)
@@ -547,20 +545,8 @@ describe('Blocs d’informations additionnels', function () {
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
                 'conseils-vaccins-pas-encore-vaccine',
+                'conseils-vaccins-18-ans',
                 'conseils-vaccins-tres-haut-risque',
-            ])
-        })
-
-        it('Cas moins haut risque comorbidité', function () {
-            var profil = new Profil('mes_infos', {
-                antecedent_cardio: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
-                'reponse-vaccins-pas-encore',
-                'reponse-historique-sans',
-                'conseils-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-demande-medecin',
             ])
         })
     })
