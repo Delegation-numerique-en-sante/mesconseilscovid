@@ -550,12 +550,8 @@ L’usage du **Pass sanitaire au niveau      européen sera effectif à partir d
 
 <div class="conseils">
 <details>
-<summary>
-    <h3>
-        Je ne suis pas vacciné(e) et je souhaite voyager
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-    </h3>
-</summary>
+
+.. summary:: Je ne suis pas vacciné(e) et je souhaite voyager
 
 .. question:: Je ne suis pas vacciné(e), puis-je partir en voyage ?
     :level: 4
@@ -583,12 +579,8 @@ L’usage du **Pass sanitaire au niveau      européen sera effectif à partir d
 
 <div class="conseils">
 <details>
-<summary>
-    <h3>
-        Je suis vacciné(e) et je prévois de partir en voyage
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-    </h3>
-</summary>
+
+.. summary:: Je suis vacciné(e) et je prévois de partir en voyage
 
 .. question:: Je suis vacciné(e), comment obtenir le Pass sanitaire ?
     :level: 4
@@ -616,12 +608,8 @@ L’usage du **Pass sanitaire au niveau      européen sera effectif à partir d
 
 <div class="conseils">
 <details>
-<summary>
-    <h3>
-        Je suis en cours de vaccination
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-    </h3>
-</summary>
+
+.. summary:: Je suis en cours de vaccination
 
 .. question:: Je suis en cours de vaccination, puis-je partir en voyage ?
     :level: 4
@@ -779,4 +767,5 @@ Consulter nos pages thématiques :
 </section>
 
 </div>
+
 
