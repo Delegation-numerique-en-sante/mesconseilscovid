@@ -1,4 +1,4 @@
-import { bindFeedback } from '../actions'
+import { bindFeedback } from '../feedback'
 
 export function estPageThematique() {
     return document.body.classList.contains('page-thematique')
