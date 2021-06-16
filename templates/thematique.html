@@ -67,5 +67,16 @@
         {{ meta_pied_de_page }}
     </footer>
     <script src="scripts/main.js"></script>
+    <script type="text/javascript">
+        ;(() => {
+            const currentAnchor = document.location.hash ? document.location.hash.slice(1) : ''
+            if (currentAnchor.startsWith('anchor-')) {
+                target = document.querySelector(`#${currentAnchor}`)
+                if (!target) return
+                if (target.parentElement.tagName === 'DETAILS')
+                    target.parentElement.setAttribute('open', '')
+            }
+        })()
+    </script>
 </body>
 </html>

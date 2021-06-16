@@ -195,7 +195,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 
     **Pour l’Outre-mer** : les conditions de voyages diffèrent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
-.. question:: Je suis en cours de vaccination et **je pars** bientôt en voyage vers un pays de l’Espace européen. Quel justificatif présenter ?
+.. question:: Je suis en cours de vaccination et je pars bientôt en voyage vers un pays de l’Espace européen. Quel justificatif présenter ?
     :level: 4
 
     **Cela dépend de votre destination.** 
