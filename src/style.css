@@ -289,6 +289,9 @@ legend h1 {
     flex-basis: 288px;
     margin: 1rem;
 }
+.page-thematique :target {
+    background: #ffd;
+}
 .block .thematiques .cards {
     margin: 0 auto;
 }
