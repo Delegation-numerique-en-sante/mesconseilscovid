@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import hashlib
 import logging
 import re
 from dataclasses import dataclass
@@ -91,8 +92,12 @@ class QuestionDirective(Directive):
 
 
 def render_html_question(text, question, level):
-    return f"""<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-<h{level} itemprop="name">{typographie(question)}</h{level}>
+    question_id = f"anchor-{hashlib.md5(question.encode('utf-8')).hexdigest()}"
+    return f"""<div id="{question_id}" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h{level} itemprop="name">
+    {typographie(question)}
+    <a href="#{question_id}" title="Lien vers cette question" aria-hidden="true">#</a>
+</h{level}>
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 {text}</div>
@@ -110,7 +115,7 @@ class SummaryDirective(Directive):
         title = m.group("value")
         text = self.parse_text(m)
         children = block.parse(text, state, block.rules)
-        return {"type": "summary", "children": children, "params": (title, )}
+        return {"type": "summary", "children": children, "params": (title,)}
 
     def __call__(self, md):
         self.register_directive(md, "summary")

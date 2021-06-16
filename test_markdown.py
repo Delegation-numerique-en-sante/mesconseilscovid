@@ -120,8 +120,11 @@ class TestQuestionDirective:
             )
             == dedent(
                 """\
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <h2 itemprop="name">Quand pourrai-je me faire vacciner&#8239;?</h2>
+                <div id="anchor-895e68ef0c65708db92240af997c14b8" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h2 itemprop="name">
+                    Quand pourrai-je me faire vacciner&#8239;?
+                    <a href="#anchor-895e68ef0c65708db92240af997c14b8" title="Lien vers cette question" aria-hidden="true">#</a>
+                </h2>
                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
                 <p>Vous pouvez vous faire vacciner <strong>dès maintenant</strong>&nbsp;:</p>
@@ -157,8 +160,11 @@ class TestQuestionDirective:
             )
             == dedent(
                 """\
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                <h3 itemprop="name">Quand pourrai-je me faire vacciner&#8239;?</h3>
+                <div id="anchor-895e68ef0c65708db92240af997c14b8" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 itemprop="name">
+                    Quand pourrai-je me faire vacciner&#8239;?
+                    <a href="#anchor-895e68ef0c65708db92240af997c14b8" title="Lien vers cette question" aria-hidden="true">#</a>
+                </h3>
                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
                 <p>Vous pouvez vous faire vacciner <strong>dès maintenant</strong>&nbsp;:</p>
