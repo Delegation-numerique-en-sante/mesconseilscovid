@@ -297,6 +297,13 @@ legend h1 {
     top: 0;
     background: white;
 }
+.page-thematique [itemprop='url'] {
+    text-decoration: none;
+    color: #25252b;
+}
+.page-thematique details [itemprop='mainEntity'] {
+    scroll-margin-top: 6rem;
+}
 .block .thematiques .cards {
     margin: 0 auto;
 }
