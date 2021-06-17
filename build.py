@@ -92,11 +92,11 @@ class QuestionDirective(Directive):
 
 
 def render_html_question(text, question, level):
-    question_id = f"anchor-{hashlib.md5(question.encode('utf-8')).hexdigest()}"
+    question_id = f"anchor-{hashlib.md5(question.encode('utf-8') + text.encode('utf-8')).hexdigest()}"
     return f"""<div id="{question_id}" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 <h{level} itemprop="name">
     {typographie(question)}
-    <a href="#{question_id}" title="Lien vers cette question" aria-hidden="true">#</a>
+    <a href="#{question_id}" itemprop="url" title="Lien vers cette question" aria-hidden="true">#</a>
 </h{level}>
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
