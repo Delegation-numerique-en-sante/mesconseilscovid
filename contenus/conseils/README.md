@@ -117,7 +117,7 @@ Pour plus d’informations, vous pouvez consulter :
 
 <div class="conseil conseil-jaune">
 
-<span class="nouveau">nouveau</span> Un **couvre-feu** s’applique dans votre département de **23 h** à **6 h** du matin.
+<span class="nouveau">nouveau</span> Un **couvre-feu** s’applique dans votre département de **23 h** à **6 h** du matin jusqu’au dimanche 20 juin.
 
 </div>
 
@@ -129,7 +129,7 @@ Pour tout déplacement pendant le couvre-feu, une [attestation dérogatoire](htt
 
 <div class="conseil conseil-jaune">
 
-Un **couvre-feu** s’applique en Guadeloupe de 19 h à 5 h du matin.
+Un **couvre-feu** s’applique en Guadeloupe de 23 h à 5 h du matin.
 
 </div>
 
@@ -139,7 +139,7 @@ Un **couvre-feu** s’applique en Guadeloupe de 19 h à 5 h du matin.
 
 <div class="conseil conseil-jaune">
 
-Un **couvre-feu** s’applique en Martinique de 19 h à 5 h du matin.
+Un **couvre-feu** s’applique en Martinique de 23 h à 5 h du matin.
 
 </div>
 
