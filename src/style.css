@@ -292,6 +292,11 @@ legend h1 {
 .page-thematique :target {
     background: #ffd;
 }
+.page-thematique .conseils > details > summary {
+    position: sticky;
+    top: 0;
+    background: white;
+}
 .block .thematiques .cards {
     margin: 0 auto;
 }
