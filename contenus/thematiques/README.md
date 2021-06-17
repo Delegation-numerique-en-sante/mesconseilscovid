@@ -544,7 +544,7 @@ Si votre logement ne permet pas d’isoler la personne positive (adulte) du rest
 
 <div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
 
-<big>Pass sanitaire, certificat de vaccination, voyage, QR code… MesConseilsCovid vous propose une synthèse des informations importantes. Vacciné⸱e ou non, ces informations peuvent vous intéresser.</big>
+<big>Pass sanitaire, certificat de vaccination, attestations, voyages, QR code… MesConseilsCovid vous propose une synthèse des informations importantes. Vacciné⸱e ou non, ces informations peuvent vous intéresser.</big>
 
 ## Le « Pass sanitaire » (en France) ou « <span lang="en">Digital Covid Certificate</span> » (dans l’Union européenne)
 
