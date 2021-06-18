@@ -251,7 +251,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
     :level: 4
 
     **Cela dépend du résultat de votre dernier test de dépistage.** 
-    En effet, pour le moment, la plupart des pays exigent la présentation d’un test de dépistage PCR négatif récent (de moins de 48h ou 72h). À partir de juillet, vous pourrez présenter un test de dépistage positif de plus de 15 jours et moins de 6 mois pour voyager.
+    En effet, pour le moment, la plupart des pays exigent la présentation d’un test de dépistage PCR négatif récent (de moins de 48 h ou 72 h). À partir de juillet, vous pourrez présenter un test de dépistage positif de plus de 15 jours et moins de 6 mois pour voyager.
     
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
