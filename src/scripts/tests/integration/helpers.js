@@ -25,7 +25,7 @@ export async function waitForPlausibleTrackingEvents(page, names) {
             { timeout: 2000 }
         )
     } catch (e) {
-        assert.deepEqual(names, await getPlausibleTrackingEvents(page))
+        assert.deepEqual(await getPlausibleTrackingEvents(page), names)
     }
 }
 

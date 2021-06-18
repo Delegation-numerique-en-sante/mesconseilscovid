@@ -6,23 +6,19 @@ import {
 } from './helpers'
 
 describe('Plausible', function () {
-    it('accès à une page', async function () {
+    it('accès à la page d’accueil', async function () {
         const page = this.test.page
 
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
-        await page.waitForSelector('#page.ready')
+
         assert.equal(
             await page.title(),
             'Mes Conseils Covid — Isolement, tests, vaccins, attestations, contact à risque…'
         )
-
-        await waitForPlausibleTrackingEvents(page, [
-            'pageview:',
-            'pageview:introduction',
-        ])
+        await waitForPlausibleTrackingEvents(page, ['pageview:introduction'])
     })
 
     it('drapeau sur une page', async function () {
@@ -30,7 +26,7 @@ describe('Plausible', function () {
 
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
         let bouton = await page.waitForSelector(
             '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
@@ -53,7 +49,6 @@ describe('Plausible', function () {
         )
 
         await waitForPlausibleTrackingEvents(page, [
-            'pageview:',
             'pageview:introduction',
             'Questionnaire commencé:vaccins',
             'Questionnaire commencé pour moi:vaccins',
@@ -67,7 +62,7 @@ describe('Plausible', function () {
 
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
         let bouton = await page.waitForSelector(
             '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
@@ -109,7 +104,6 @@ describe('Plausible', function () {
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
         await waitForPlausibleTrackingEvents(page, [
-            'pageview:',
             'pageview:introduction',
             'Questionnaire commencé:vaccins',
             'Questionnaire commencé pour moi:vaccins',
@@ -132,7 +126,7 @@ describe('Plausible', function () {
 
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
         let bouton = await page.waitForSelector(
             '#page.ready #profils-cards-empty .js-profil-new >> text="Des conseils pour un ou une proche"'
@@ -172,7 +166,6 @@ describe('Plausible', function () {
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
         await waitForPlausibleTrackingEvents(page, [
-            'pageview:',
             'pageview:introduction',
             'pageview:nom',
             'Questionnaire commencé:vaccins',
@@ -196,7 +189,7 @@ describe('Plausible', function () {
 
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
         let bouton = await page.waitForSelector(
             '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
@@ -236,7 +229,6 @@ describe('Plausible', function () {
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
         await waitForPlausibleTrackingEvents(page, [
-            'pageview:',
             'pageview:introduction',
             'Questionnaire commencé:vaccins',
             'Questionnaire commencé pour moi:vaccins',
@@ -259,7 +251,7 @@ describe('Plausible', function () {
 
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
         let bouton = await page.waitForSelector(
             '#page.ready #profils-cards-empty .js-profil-new >> text="Des conseils pour un ou une proche"'
@@ -297,7 +289,6 @@ describe('Plausible', function () {
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
         await waitForPlausibleTrackingEvents(page, [
-            'pageview:',
             'pageview:introduction',
             'pageview:nom',
             'Questionnaire commencé:vaccins',
@@ -321,7 +312,7 @@ describe('Plausible', function () {
 
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
         let bouton = await page.waitForSelector(
             '#page.ready #profils-cards-empty >> text="Des conseils pour moi"'
@@ -364,7 +355,6 @@ describe('Plausible', function () {
         )
 
         await waitForPlausibleTrackingEvents(page, [
-            'pageview:',
             'pageview:introduction',
             'Questionnaire commencé:vaccins',
             'Questionnaire commencé pour moi:vaccins',

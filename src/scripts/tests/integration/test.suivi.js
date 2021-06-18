@@ -12,7 +12,7 @@ describe('Suivi', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.
@@ -226,7 +226,7 @@ describe('Suivi', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         // Page d’accueil.

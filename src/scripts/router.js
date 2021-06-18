@@ -9,7 +9,7 @@ export function getCurrentPageName(document) {
     return document.location.pathname.slice(1)
 }
 
-export const CHEMIN_ACCUEIL = 'introduction'
+export const CHEMIN_ACCUEIL = ''
 
 export class Router {
     constructor(app, window) {
@@ -226,7 +226,8 @@ export class Router {
     }
 
     exists(pageName) {
-        return this.navigo.match(pageName)
+        const target = pageName !== 'introduction' ? pageName : ''
+        return this.navigo.match(target)
     }
 
     redirectTo(target) {

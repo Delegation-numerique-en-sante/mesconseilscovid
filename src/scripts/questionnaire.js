@@ -27,11 +27,11 @@ export const ORDRE = [
 
 export const TRANSITIONS = {
     nom: {
-        previous: { introduction: () => true },
+        previous: { '': () => true },
         next: { symptomes: (profil) => profil.nom },
     },
     vaccins: {
-        previous: { introduction: () => true },
+        previous: { '': () => true },
         next: {
             historique: (profil) => profil.isVaccinsComplete(),
         },

@@ -57,7 +57,10 @@ export default class App {
         return this.chargerProfilActuel()
     }
     setupRoutes() {
-        this.router.addAppRoute('introduction', introduction, { pageTitle: '' })
+        this.router.addAppRoute('introduction', introduction, {
+            route: '',
+            pageTitle: '',
+        })
 
         this.router.addAppRoute('nom', nom)
 

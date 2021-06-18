@@ -7,7 +7,7 @@ describe('Pages', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
 
         assert.equal(
@@ -38,9 +38,8 @@ describe('Pages', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/introduction' }),
+            page.waitForSelector('#page.ready'),
         ])
-        await page.waitForSelector('#page.ready')
 
         // On va vers la page de CGU.
         {
