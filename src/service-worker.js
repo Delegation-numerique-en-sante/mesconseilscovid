@@ -14,6 +14,7 @@ const CACHE_FILES = [
     'je-veux-me-faire-vacciner.html',
     'je-vis-avec-personne-covid-positive.html',
     'pass-sanitaire-qr-code-voyages.html',
+    'tests-de-depistage.html',
     'fonts/marianne-regular-webfont.woff2',
     'fonts/marianne-bold-webfont.woff2',
     'site.webmanifest',
