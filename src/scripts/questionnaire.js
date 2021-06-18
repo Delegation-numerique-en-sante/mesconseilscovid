@@ -120,13 +120,13 @@ export class Questionnaire {
     checkPathTo(page, profil) {
         let step = this.firstPage
         let steps = [step]
-        while (step) {
+        while (typeof step !== 'undefined') {
             if (step === page) {
                 return
             }
 
             const nextStep = this.nextPage(step, profil)
-            if (!nextStep) break
+            if (typeof nextStep === 'undefined') break
             if (steps.indexOf(nextStep) > -1) break // avoid loops
 
             step = nextStep
@@ -156,14 +156,14 @@ export class Questionnaire {
         if (typeof question === 'undefined') return
         if (typeof question[direction] === 'undefined') return
 
-        let result
+        let firstMatch
         Object.keys(question[direction]).forEach((dest) => {
             const predicate = question[direction][dest]
             if (predicate(profil)) {
-                if (!result) result = dest
+                if (!firstMatch) firstMatch = dest
             }
         })
-        if (result) return result
+        return firstMatch
     }
 
     numeroEtape(pageName, profil) {
@@ -173,7 +173,7 @@ export class Questionnaire {
     _previousPages(pageName, profil) {
         let result = []
         pageName = this.previousPage(pageName, profil)
-        while (pageName) {
+        while (typeof pageName !== 'undefined') {
             result.push(pageName)
             pageName = this.previousPage(pageName, profil)
         }
