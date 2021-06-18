@@ -44,6 +44,12 @@ const fakeHTML = `<!DOCTYPE html>
         <p>Hello, <span class="name"></span></p>
         <p>Deuxième élément</p>
     </section>
+    <section id="suivi" hidden>
+        <p>Suivi</p>
+    </section>
+    <section id="suiviintroduction" hidden>
+        <p>Suivi introduction</p>
+    </section>
 </body>
 `
 
@@ -53,6 +59,26 @@ describe('Routeur', function () {
             this.router.navigo.destroy() // sinon les tests restent en suspens
         }
         this.router = null
+    })
+
+    describe('Matching', function () {
+        it('On ne matche pas une route préfixe déclarée plus tôt', function () {
+            require('jsdom-global')(fakeHTML, {
+                url: 'https://test/suiviintroduction',
+            })
+            this.router = new Router(new FakeApp(), window)
+            this.router.addAppRoute('introduction', () => {})
+            this.router.addAppRoute('suivi', () => {})
+            this.router.addAppRoute('suiviintroduction', () => {})
+            assert.strictEqual(document.querySelector('#page').innerHTML.trim(), '')
+
+            this.router.resolve()
+
+            assert.strictEqual(
+                document.querySelector('#page').innerHTML.trim(),
+                '<p>Suivi introduction</p>'
+            )
+        })
     })
 
     describe('Redirections', function () {

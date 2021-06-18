@@ -102,7 +102,7 @@ export class Router {
 
     addRoute(pageName, viewFunc, beforeFunc, pageTitle) {
         this.navigo.on(
-            new RegExp('/' + pageName),
+            new RegExp('/' + pageName + '$'),
             () => {
                 const page = this.loadPage(pageName, this.app)
                 this.updateTitle(page, pageName, pageTitle, this.app.profil)
