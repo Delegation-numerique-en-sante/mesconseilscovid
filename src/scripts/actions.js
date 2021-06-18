@@ -1,4 +1,5 @@
 import ICS from './ics'
+import { CHEMIN_ACCUEIL } from './router'
 
 export function bindCalendar(element, profil) {
     const ics = new ICS(navigator.appVersion)
@@ -65,8 +66,8 @@ export function bindSuppressionTotale(element, app) {
         if (confirm('Êtes-vous sûr·e de vouloir supprimer tous les profils ?')) {
             app.supprimerTout().then(() => {
                 if (app.router) {
-                    if (app.router.lastRouteResolved().url !== 'introduction') {
-                        app.router.navigate('introduction')
+                    if (app.router.lastRouteResolved().url !== CHEMIN_ACCUEIL) {
+                        app.router.navigate(CHEMIN_ACCUEIL)
                     } else {
                         window.location.reload(true)
                     }
