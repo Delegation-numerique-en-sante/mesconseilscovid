@@ -313,7 +313,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
     - **Certificat de rétablissement** : le résultat positif d’un test RT-PCR ou antigénique de plus de 15 jours et de moins de 6 mois.
     - **Certificat de vaccination** : une attestation de vaccination complète, c’est-à-dire que vous avez reçu toutes les doses nécessaires depuis au moins 2 semaines (Pfizer, Moderna, AstraZeneca) ou 4 semaines (Janssen). 
 
-    **Attention**, en fonction de chaque situation (voyage, évènement...) un justificatif précis pourra vous être demandé. Vérifiez bien quel justificatif vous concerne.
+    **Attention**, en fonction de chaque situation (voyage, évènement…) un justificatif précis pourra vous être demandé. Vérifiez bien quel justificatif vous concerne.
 
 
 .. question:: Est-ce que je dois obligatoirement avoir un <span lang="en">smartphone</span> pour utiliser le « Pass sanitaire » ?
