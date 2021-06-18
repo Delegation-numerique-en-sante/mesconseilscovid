@@ -1,4 +1,4 @@
-import { getCurrentPageName } from './router'
+import { CHEMIN_ACCUEIL, getCurrentPageName } from './router'
 import { showElement } from './affichage'
 import { ORDRE } from './questionnaire'
 
@@ -126,7 +126,7 @@ export default class Updater {
 
     setupRefreshButton(button, pageName) {
         button.innerText = 'Mettre à jour'
-        button.setAttribute('href', pageName || 'introduction')
+        button.setAttribute('href', pageName || CHEMIN_ACCUEIL)
         button.addEventListener('click', this.onClickRefreshButton.bind(this))
     }
 
