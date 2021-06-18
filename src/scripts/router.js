@@ -11,6 +11,8 @@ export function getCurrentPageName() {
     return fragment.split('?')[0]
 }
 
+export const CHEMIN_ACCUEIL = 'introduction'
+
 export class Router {
     constructor(app) {
         this.app = app
@@ -211,7 +213,7 @@ export class Router {
     setupNotFound() {
         // Par défaut on retourne à la page d’accueil.
         this.navigo.notFound(() => {
-            this.redirectTo('introduction')
+            this.redirectTo(CHEMIN_ACCUEIL)
         })
     }
 
