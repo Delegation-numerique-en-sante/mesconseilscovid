@@ -546,7 +546,7 @@ Si votre logement ne permet pas d’isoler la personne positive (adulte) du rest
 
 <big>Pass sanitaire, certificat de vaccination, attestations, voyages, QR code… MesConseilsCovid vous propose une synthèse des informations importantes. Vacciné⸱e ou non, ces informations peuvent vous intéresser.</big>
 
-## Je souhaite voyager, comment faire ?
+## Je souhaite voyager, quel justificatif fournir ?
 
 <div class="conseil">
 
@@ -879,18 +879,6 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
             loading="lazy"
             alt="Exemple de QR code pointant vers TousAntiCovid.">
     </div>
-
-.. question:: Je pars en voyage, quel justificatif fournir ?
-    :level: 3
-
-    Selon votre situation personnelle et votre destination, le justificatif servant de  « Pass sanitaire » sera différent. Vous pouvez obtenir une réponses personnalisée en séléctionnant la situation qui vous correspond : 
-      
-    * Je ne suis pas vacciné(e)
-    * Je suis en cours de vaccination
-    * Je suis vacciné(e)
-    * Je suis guéri(e) de la Covid depuis plus de 15 jours et moins de 6 mois
-
-    En attendant la généralisation du  « Pass sanitaire frontières » en Union européenne à partir de juillet, **nous vous recommandons vivement de vous renseigner auprès des autorités de votre pays de destination pour en connaître les conditions d’accès.** Vous trouverez ces informations, sur le site internet de son ambassade ou en téléphonant directement.
 
 ## Vous avez encore des questions ?
 
