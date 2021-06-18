@@ -180,7 +180,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: Comment obtenir un « Pass sanitaire » ou un justificatif me permettant de voyager ?
     :level: 4
 
-    Si vous êtes en cours de vaccination, c’est-à-dire que vous n’avez pas reçu toutes les doses prévues, ou que le délai depuis votre dernière dose est trop court (moins de 2 semaines pour Pfizer, Moderna et AstraZeneca ; moins de 4 semaines pour Janssen), vous ne pourrez pas faire valoir cette vaccination pour voyager. Vous devrez présenter un test PCR ou antigénique récent (réalisé dans les 48 h ou 72 h) sur lequel figure un QR code. Ce justificatif fera office de « Pass sanitaire frontières ».
+    Si vous êtes en cours de vaccination (1 dose sur 2 doses prévues), c’est-à-dire que vous n’avez pas finalisé votre schéma vaccinal, vous ne pourrez pas faire valoir cette vaccination pour voyager. Vous devrez présenter un test PCR ou antigénique récent (réalisé dans les 48 h ou 72 h) sur lequel figure un QR code. Ce justificatif fera office de « Pass sanitaire ».
 
 .. question:: Sous quelle forme présenter ce justificatif ou ce « Pass sanitaire » lors d’un voyage ?
     :level: 4
@@ -199,7 +199,9 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: Je pars bientôt en voyage vers un pays de l’Espace européen. Quel justificatif présenter ?
     :level: 4
 
-    **Cela dépend de votre destination.** La plupart des pays exigent **la présentation d’un test RT-PCR négatif récent (réalisé il y a moins de 48 h ou 72 h).**
+    **Cela dépend de votre destination.** Tant que le « Pass sanitaire frontières » ne sera pas entré en vigueur, vous ne pourrez pas automatiquement faire valoir votre vaccination pour voyager au sein de l’Union européenne.
+
+    La plupart des pays exigent **la présentation d’un test RT-PCR négatif récent (réalisé il y a moins de 48 h ou 72 h).**
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
     Il n’est pas nécéssaire de justifier d’un motif impérieux pour sortir de France métropolitaine vers un pays de l’Espace européen.
@@ -234,7 +236,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
         - respecter une quarantaine obligatoire de 10 jours.
 
     * D’un [pays classé **orange**](https://www.gouvernement.fr/info-coronavirus/deplacements) (tous les pays, hors pays définis tels que « verts » et « rouges ») : 
-        - à l’embarquement, vous devez présenter un test PCR ou antigénique négatif récent (datant de moins de 48 h ou 72 h) ;
+        - à l’embarquement, vous devez présenter un test PCR ou antigénique négatif récent (moins de 48 h ou 72 h) ;
         - respecter un auto-isolement de 7 jours à votre retour en France.
 
 </details>
@@ -248,57 +250,35 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: Puis-je partir en voyage ?
     :level: 4
 
-    **Cela dépend du résultat de votre dernier test de dépistage.** 
-    En effet, pour le moment, la plupart des pays exigent la présentation d’un test de dépistage PCR négatif récent (de moins de 48 h ou 72 h). À partir de juillet, vous pourrez présenter un test de dépistage positif de plus de 15 jours et moins de 6 mois pour voyager.
+    Pour le moment, la plupart des pays exigent la présentation d’un test de dépistage négatif récent.
     
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
-.. question:: Comment obtenir un « Pass sanitaire » pour voyager ?
+.. question:: Comment obtenir un « Pass sanitaire » ?
     :level: 4
 
-    Pour le moment, vous devrez présenter un test de dépistage PCR négatif récent (de moins de 48 h ou 72 h) comportant un QR code.
+    Si votre test positif antigénique ou PCR date de plus de 15 jours et de moins de 6 mois, alors il fait office de « certificat de rétablissement » reconnu comme « Pass sanitaire ».
 
-    À partir de juillet, votre test de dépistage positif de plus de deux semaines et moins de 6 mois fera office de « certificat de rétablissement » ou « Pass sanitaire frontières » valable pour voyager au sein de l’Union européenne.  
-    Si votre test de dépistage ne comporte pas de QR code, vous ne pourrez pas l’utiliser comme « Pass sanitaire frontières ». Vous pouvez télécharger un nouveau certificat de dépistage, comportant un QR code en vous connectant sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). 
-        
-.. question:: Puis-je me déplacer dans l’Espace européen ?
+    Attention cependant, ce Pass sanitaire n’est reconnu que pour son utilisation en France et pas encore pour les voyages à l’étranger.
+
+.. question:: Puis-je me déplacer en Union européenne ?
     :level: 4
 
-    **Oui, si votre test de dépistage est redevenu négatif.** 
     Le certificat de rétablissement, c’est-à-dire un test de dépistage positif de plus de 15 jours et moins de 6 mois, sera généralisé à partir de juillet en Union européenne.
 
-    En attendant, assurez-vous de vérifier les conditions d’entrée dans votre pays de destination. Pour cela, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).  
-    
-    Il n’est pas nécéssaire de justifier d’un motif impérieux pour sortir de France métropolitaine vers un pays de l’Espace européen.
+    En attendant, assurez-vous de vérifier les conditions d’entrée dans votre pays de destination. Pour cela, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 .. question:: Est-ce que je peux partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
-    
-    **Oui, si votre test de dépistage est actuellement négatif.**
-    
-    **Pour la Corse** : La présentation d’un test PCR ou antigénique négatif de moins de 72 h est exigée pour toute personne non vacciné(e). Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
 
-    **Pour l’Outre-mer** : la présentation d'un test de dépistage PCR ou antigénique négatif de moins de 72 h est obligatoire lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
+    **Pour la Corse** : un test PCR ou antigénique négatif de moins de 72 h est exigé. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
 
-.. question:: Je voyage vers une destination extérieure à l’Espace européen. Quel justificatif présenter ?
-    :level: 4
-
-    Pour le moment, la plupart des pays exigent la présentation d’un test RT-PCR négatif récent (réalisé dans les 48 h ou 72 h). Si votre test de dépistage est encore positif (malgré votre guérison), il se peut que vous ne puissiez pas partir en voyage.
-
-    Pour connaître les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
-
-    Pour connaître les conditions de sortie de la France métropolitaine vers un pays extérieur à l’Espace européen, rendez vous sur le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
-
-    Par ailleurs, le voyage vers la plupart des destinations hors Espace européen, à partir de la France métropolitaine, est soumis à la présentation d’un **motif impérieux**.
-
-    Pour vérifier à quelle catégorie, verte, orange ou rouge appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements).
-
-
+    **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un test PCR négatif de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
 </details>
 </div>
 
-## Le « Pass sanitaire » en France ou « <span lang="en">Digital Covid Certificate</span> » dans l’Union européenne
+## Le « Pass sanitaire » en France et dans l’Union européenne
 
 .. question:: Qu’est-ce que le « Pass sanitaire » ?
     :level: 3
@@ -331,9 +311,9 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 
     - **Non-contamination** : le résultat négatif d’un test RT-PCR ou antigénique réalisé il y a moins de 48 h pour l’usage en France et 72 h pour le contrôle aux frontières.
     - **Certificat de rétablissement** : le résultat positif d’un test RT-PCR ou antigénique de plus de 15 jours et de moins de 6 mois.
-    - **Certificat de vaccination** : une attestation de vaccination complète (c’est-à-dire que vous avez reçu toutes les doses nécessaires).
+    - **Certificat de vaccination** : une attestation de vaccination complète, c’est-à-dire que vous avez reçu toutes les doses nécessaires depuis au moins 2 semaines (Pfizer, Moderna, AstraZeneca) ou 4 semaines (Janssen). 
 
-    **Attention**, en fonction de chaque situation un justificatif précis pourra vous être demandé. Vérifiez bien quel justificatif vous concerne.
+    **Attention**, en fonction de chaque situation (voyage, évènement...) un justificatif précis pourra vous être demandé. Vérifiez bien quel justificatif vous concerne.
 
 
 .. question:: Est-ce que je dois obligatoirement avoir un <span lang="en">smartphone</span> pour utiliser le « Pass sanitaire » ?
@@ -365,7 +345,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: Je pars en voyage, quel justificatif fournir ?
     :level: 3
 
-    Selon votre situation et votre destination, le justificatif servant de  « Pass sanitaire » sera différent. Vous pouvez obtenir une réponses personnalisée en séléctionnant la situation qui vous correspond : 
+    Selon votre situation personnelle et votre destination, le justificatif servant de  « Pass sanitaire » sera différent. Vous pouvez obtenir une réponses personnalisée en séléctionnant la situation qui vous correspond : 
       
     * Je ne suis pas vacciné(e)
     * Je suis en cours de vaccination
