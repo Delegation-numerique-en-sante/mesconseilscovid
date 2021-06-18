@@ -26,21 +26,19 @@ export class Router {
     }
 
     initNavigo() {
-        const root = '/'
-        const useHash = false
-        return new Navigo(root, useHash)
+        return new Navigo('/')
     }
 
-    resolve() {
-        return this.navigo.resolve()
+    resolve(path, options) {
+        return this.navigo.resolve(path, options)
     }
 
-    lastRouteResolved() {
-        return this.navigo.lastRouteResolved()
+    getCurrentLocation() {
+        return this.navigo.getCurrentLocation()
     }
 
-    navigate(target) {
-        return this.navigo.navigate(target)
+    navigate(target, options) {
+        return this.navigo.navigate(target, options)
     }
 
     setupGlobalHooks() {
@@ -120,18 +118,18 @@ export class Router {
         if (options && typeof options.route !== 'undefined') {
             route = options.route
         } else {
-            route = new RegExp('/' + pageName + '$')
+            route = '/' + pageName
         }
         const beforeFunc = options && options.beforeFunc
         const pageTitle = options && options.pageTitle
         this.navigo.on(
             route,
-            () => {
+            ({ params }) => {
                 const page = this.loadPage(pageName, this.app)
                 this.updateTitle(page, pageName, pageTitle, this.app.profil)
                 this.fillProgress(page, pageName)
                 this.fillNavigation(page, pageName)
-                viewFunc(page)
+                viewFunc(page, params)
                 this.navigo.updatePageLinks()
                 this.app.trackPageView(pageName)
                 page.classList.remove('loading')
@@ -228,8 +226,7 @@ export class Router {
     }
 
     exists(pageName) {
-        const target = '/' + pageName
-        return this.navigo.helpers.match(target, this.navigo._routes)
+        return this.navigo.match(pageName)
     }
 
     redirectTo(target) {

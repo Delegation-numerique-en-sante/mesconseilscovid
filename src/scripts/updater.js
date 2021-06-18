@@ -131,16 +131,17 @@ export default class Updater {
     }
 
     onClickRefreshButton(event) {
-        console.debug('Updater.onClickRefreshButton()')
         event.preventDefault()
 
         let button = event.target
 
         // Change the URL without triggering the router.
-        this.router.pause()
-        console.log(window.location)
-        window.location = button.href
-        console.log(window.location)
+        this.router.navigate(button.getAttribute('href'), {
+            historyAPIMethod: 'replaceState',
+            updateBrowserURL: true,
+            callHandler: false,
+            callHooks: false,
+        })
 
         // User feedback as it may take more than a few milliseconds.
         button.innerText = 'Mise à jour en cours...'

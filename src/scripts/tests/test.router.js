@@ -35,7 +35,7 @@ const fakeHTML = `<!DOCTYPE html>
       </section>
     </main>
     <section id="introduction" hidden>
-        <div></div>
+        <div>Accueil</div>
     </section>
     <section id="conseils" hidden>
         <div></div>
@@ -210,6 +210,21 @@ describe('Routeur', function () {
             assert.strictEqual(
                 document.querySelector('#page').innerHTML.trim(),
                 '<p>Hello, <span class="name">world</span></p><p>Deuxième élément</p>'
+            )
+        })
+        it('Le contenu de la page d’accueil est chargé', function () {
+            require('jsdom-global')(fakeHTML, {
+                url: 'http://test/',
+            })
+            this.router = new Router(new FakeApp(), window)
+            this.router.addAppRoute('introduction', () => {})
+            assert.strictEqual(document.querySelector('#page').innerHTML.trim(), '')
+
+            this.router.resolve()
+
+            assert.strictEqual(
+                document.querySelector('#page').innerHTML.trim(),
+                '<div>Accueil</div>'
             )
         })
     })

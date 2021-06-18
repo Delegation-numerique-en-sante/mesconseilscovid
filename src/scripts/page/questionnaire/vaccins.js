@@ -38,11 +38,11 @@ function premierDemarrageFormulaire(app) {
     if (typeof app.profil.questionnaire_start_date === 'undefined') {
         app.profil.questionnaire_start_date = new Date()
         app.enregistrerProfilActuel()
-        app.plausible('Questionnaire commencé')
+        app.plausible('Questionnaire commencé', 'vaccins')
         if (app.profil.estMonProfil()) {
-            app.plausible('Questionnaire commencé pour moi')
+            app.plausible('Questionnaire commencé pour moi', 'vaccins')
         } else {
-            app.plausible('Questionnaire commencé pour un proche')
+            app.plausible('Questionnaire commencé pour un proche', 'vaccins')
         }
     }
 }

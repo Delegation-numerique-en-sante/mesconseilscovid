@@ -4,7 +4,7 @@ import { hideElement, showElement } from './affichage'
 import { Questionnaire } from './questionnaire'
 import { joursAvant } from './utils'
 
-import { Router } from './router'
+import { CHEMIN_ACCUEIL, Router } from './router'
 import Updater from './updater'
 
 import introduction from './page/introduction'
@@ -87,11 +87,8 @@ export default class App {
             }
         })
 
-        this.router.addRoute('nouvelleversiondisponible', (element) => {
-            const route = this.router.lastRouteResolved()
-            const urlParams = new URLSearchParams(route.query)
-            const origine = urlParams.get('origine')
-
+        this.router.addRoute('nouvelleversiondisponible', (element, params) => {
+            const origine = (params && params.origine) || CHEMIN_ACCUEIL
             nouvelleversion(element, this, origine)
         })
     }
@@ -257,7 +254,7 @@ export default class App {
         this.enregistrerProfilActuel()
     }
     trackPageView(pageName) {
-        this.plausible('pageview')
+        this.plausible('pageview', pageName)
         this.atinternet(pageName)
     }
     plausible(eventName, pageName, props = {}) {

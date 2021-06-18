@@ -31,11 +31,11 @@ export default function conseils(page, app) {
     if (typeof app.profil.questionnaire_completion_date === 'undefined') {
         app.profil.questionnaire_completion_date = new Date()
         app.enregistrerProfilActuel()
-        app.plausible('Questionnaire terminé')
+        app.plausible('Questionnaire terminé', 'conseils')
         if (app.profil.estMonProfil()) {
-            app.plausible('Questionnaire terminé pour moi')
+            app.plausible('Questionnaire terminé pour moi', 'conseils')
         } else {
-            app.plausible('Questionnaire terminé pour un proche')
+            app.plausible('Questionnaire terminé pour un proche', 'conseils')
         }
     }
 

@@ -66,7 +66,7 @@ export function bindSuppressionTotale(element, app) {
         if (confirm('Êtes-vous sûr·e de vouloir supprimer tous les profils ?')) {
             app.supprimerTout().then(() => {
                 if (app.router) {
-                    if (app.router.lastRouteResolved().url !== CHEMIN_ACCUEIL) {
+                    if (app.router.getCurrentLocation().url !== CHEMIN_ACCUEIL) {
                         app.router.navigate(CHEMIN_ACCUEIL)
                     } else {
                         window.location.reload(true)
