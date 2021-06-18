@@ -24,6 +24,10 @@ export function registerPlausible(window) {
         payload.r = document.referrer || null
         payload.w = window.innerWidth
 
+        if (options && options.pageName) {
+            payload.u = `/${options.pageName}`
+        }
+
         if (options && options.props) {
             payload.p = JSON.stringify(options.props)
         }
@@ -35,7 +39,7 @@ export function registerPlausible(window) {
             location.protocol === 'file:'
         ) {
             ignore('running locally')
-            const pageName = location.pathname.slice(1)
+            const pageName = (options && options.pageName) || location.pathname.slice(1)
             window.app._plausibleTrackingEvents.push(`${payload.n}:${pageName}`)
             console.debug('[Plausible]', payload)
             return
