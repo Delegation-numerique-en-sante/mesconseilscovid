@@ -582,9 +582,9 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
-    **Pour la Corse** : vous devez présenter un test PCR négatif réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
+    **Pour la Corse** : vous devez présenter un test PCR négatif réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
 
-    **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un test PCR négatif de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
+    **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un test PCR négatif de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
 .. question:: Je pars bientôt en voyage vers un pays de l’Espace européen. Quel justificatif présenter ?
     :level: 4
@@ -674,7 +674,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 
     Vous devrez présenter votre attestation de vaccination ou « Pass sanitaire » lors de l’embarquement sur votre vol retour.
 
-.. question:: Je voyage vers une destination extérieure à l’Espace européen. Ma preuve de vaccination est-elle suffisante ? 
+.. question:: Je voyage vers une destination extérieure à l’Espace européen. Ma preuve de vaccination est-elle suffisante ? 
     :level: 4
 
     Pour connaître les conditions de sortie de la France métropolitaine vers un pays extérieur à l’Espace européen, rendez vous sur le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
@@ -718,7 +718,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: Comment obtenir un « Pass sanitaire » ou un justificatif me permettant de voyager ?
     :level: 4
 
-    Si vous êtes en cours de vaccination (1 dose sur 2 doses prévues), c’est-à-dire que vous n’avez pas finalisé votre schéma vaccinal, vous ne pourrez pas faire valoir cette vaccination pour voyager. Vous devrez présenter un test PCR ou antigénique récent (réalisé dans les 48 h ou 72 h) sur lequel figure un QR code. Ce justificatif fera office de « Pass sanitaire ».
+    Si vous êtes en cours de vaccination (1 dose sur 2 doses prévues), c’est-à-dire que vous n’avez pas finalisé votre schéma vaccinal, vous ne pourrez pas faire valoir cette vaccination pour voyager. Vous devrez présenter un test PCR ou antigénique récent (réalisé dans les 48 h ou 72 h) sur lequel figure un QR code. Ce justificatif fera office de « Pass sanitaire ».
 
 .. question:: Sous quelle forme présenter ce justificatif ou ce « Pass sanitaire » lors d’un voyage ?
     :level: 4
@@ -809,14 +809,14 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: Est-ce que je peux partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
-    **Pour la Corse** : un test PCR ou antigénique négatif de moins de 72 h est exigé. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
+    **Pour la Corse** : un test PCR ou antigénique négatif de moins de 72 h est exigé. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
 
-    **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un test PCR négatif de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
+    **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un test PCR négatif de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
 </details>
 </div>
 
-## Le « Pass sanitaire » en France ou « <span lang="en">Digital Covid Certificate</span> » dans l’Union européenne
+## Le « Pass sanitaire » en France et dans l’Union européenne
 
 .. question:: Qu’est-ce que le « Pass sanitaire » ?
     :level: 3
@@ -834,7 +834,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
     * Dans l’Union européenne, le « Pass sanitaire frontières » facilitera, à partir de juillet, les voyages entre les pays membres.
 
 
-.. question:: Le « Pass sanitaire activités » ou le « Pass sanitaire frontières » sont-ils déjà en application ?
+.. question:: Le « Pass sanitaire activités » ou le « Pass sanitaire frontières » sont-ils déjà en application ?
     :level: 3
 
     **En France**, le « Pass sanitaire activités » est en application depuis le **9 juin**.
@@ -849,9 +849,9 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 
     - **Non-contamination** : le résultat négatif d’un test RT-PCR ou antigénique réalisé il y a moins de 48 h pour l’usage en France et 72 h pour le contrôle aux frontières.
     - **Certificat de rétablissement** : le résultat positif d’un test RT-PCR ou antigénique de plus de 15 jours et de moins de 6 mois.
-    - **Certificat de vaccination** : une attestation de vaccination complète (c’est-à-dire que vous avez reçu toutes les doses nécessaires).
+    - **Certificat de vaccination** : une attestation de vaccination complète, c’est-à-dire que vous avez reçu toutes les doses nécessaires depuis au moins 2 semaines (Pfizer, Moderna, AstraZeneca) ou 4 semaines (Janssen). 
 
-    **Attention**, en fonction de chaque situation un justificatif précis pourra vous être demandé. Vérifiez bien quel justificatif vous concerne.
+    **Attention**, en fonction de chaque situation (voyage, évènement…) un justificatif précis pourra vous être demandé. Vérifiez bien quel justificatif vous concerne.
 
 
 .. question:: Est-ce que je dois obligatoirement avoir un <span lang="en">smartphone</span> pour utiliser le « Pass sanitaire » ?
@@ -883,7 +883,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: Je pars en voyage, quel justificatif fournir ?
     :level: 3
 
-    Selon votre situation et votre destination, le justificatif servant de  « Pass sanitaire » sera différent. Vous pouvez obtenir une réponses personnalisée en séléctionnant la situation qui vous correspond : 
+    Selon votre situation personnelle et votre destination, le justificatif servant de  « Pass sanitaire » sera différent. Vous pouvez obtenir une réponses personnalisée en séléctionnant la situation qui vous correspond : 
       
     * Je ne suis pas vacciné(e)
     * Je suis en cours de vaccination

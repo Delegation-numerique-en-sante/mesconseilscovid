@@ -44,9 +44,9 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
-    **Pour la Corse** : vous devez présenter un test PCR négatif réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
+    **Pour la Corse** : vous devez présenter un test PCR négatif réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
 
-    **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un test PCR négatif de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
+    **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un test PCR négatif de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
 .. question:: Je pars bientôt en voyage vers un pays de l’Espace européen. Quel justificatif présenter ?
     :level: 4
@@ -136,7 +136,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 
     Vous devrez présenter votre attestation de vaccination ou « Pass sanitaire » lors de l’embarquement sur votre vol retour.
 
-.. question:: Je voyage vers une destination extérieure à l’Espace européen. Ma preuve de vaccination est-elle suffisante ? 
+.. question:: Je voyage vers une destination extérieure à l’Espace européen. Ma preuve de vaccination est-elle suffisante ? 
     :level: 4
 
     Pour connaître les conditions de sortie de la France métropolitaine vers un pays extérieur à l’Espace européen, rendez vous sur le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
@@ -271,9 +271,9 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: Est-ce que je peux partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
-    **Pour la Corse** : un test PCR ou antigénique négatif de moins de 72 h est exigé. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
+    **Pour la Corse** : un test PCR ou antigénique négatif de moins de 72 h est exigé. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
 
-    **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un test PCR négatif de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
+    **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un test PCR négatif de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
 </details>
 </div>
@@ -296,7 +296,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
     * Dans l’Union européenne, le « Pass sanitaire frontières » facilitera, à partir de juillet, les voyages entre les pays membres.
 
 
-.. question:: Le « Pass sanitaire activités » ou le « Pass sanitaire frontières » sont-ils déjà en application ?
+.. question:: Le « Pass sanitaire activités » ou le « Pass sanitaire frontières » sont-ils déjà en application ?
     :level: 3
 
     **En France**, le « Pass sanitaire activités » est en application depuis le **9 juin**.
