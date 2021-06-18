@@ -278,22 +278,22 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
     
     **Oui, si votre test de dépistage est actuellement négatif.**
     
-    **Pour la Corse** : La présentation d'un test PCR ou antigénique négatif de moins de 72 h est exigée pour toute personne non vacciné(e). Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
+    **Pour la Corse** : La présentation d’un test PCR ou antigénique négatif de moins de 72 h est exigée pour toute personne non vacciné(e). Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
 
-    **Pour l’Outre-mer** : la présentation d'un test de dépistage PCR ou antigénique négatif de moins de 72h est obligatoire lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
-    
-.. question:: Je voyage vers une destination extérieure à l’Espace européen. Quel justificatif présenter ? 
+    **Pour l’Outre-mer** : la présentation d'un test de dépistage PCR ou antigénique négatif de moins de 72 h est obligatoire lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
+
+.. question:: Je voyage vers une destination extérieure à l’Espace européen. Quel justificatif présenter ?
     :level: 4
-    
-    Pour le moment, la plupart des pays exigent la présentation d’un test RT-PCR négatif récent (réalisé dans les 48 h ou 72 h). Si votre test de dépistage est encore positif (malgré votre guérison), il se peut que vous ne puissiez pas partir en voyage. 
-    
+
+    Pour le moment, la plupart des pays exigent la présentation d’un test RT-PCR négatif récent (réalisé dans les 48 h ou 72 h). Si votre test de dépistage est encore positif (malgré votre guérison), il se peut que vous ne puissiez pas partir en voyage.
+
     Pour connaître les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
-    
+
     Pour connaître les conditions de sortie de la France métropolitaine vers un pays extérieur à l’Espace européen, rendez vous sur le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
-    Par ailleurs, le voyage vers la plupart des destinations hors Espace européen, à partir de la France métropolitaine, est soumis à la présentation d’un **motif impérieux**. 
+    Par ailleurs, le voyage vers la plupart des destinations hors Espace européen, à partir de la France métropolitaine, est soumis à la présentation d’un **motif impérieux**.
 
-    Pour vérifier à quelle catégorie, verte, orange ou rouge appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements). 
+    Pour vérifier à quelle catégorie, verte, orange ou rouge appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements).
 
 
 
