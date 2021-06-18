@@ -49,6 +49,19 @@ export class Router {
     }
 
     beforeGlobalHook(done) {
+        // Rétro-compatibilité : si on est à la racine et que le fragment
+        // correspond à une page, alors on y va
+        const hash = this.document.location.hash
+        const fragment = hash ? hash.slice(1) : ''
+        if (
+            this.window.location.pathname === '/' &&
+            fragment &&
+            this.exists(fragment)
+        ) {
+            this.redirectTo(fragment)
+            return done(false)
+        }
+
         var header = this.document.querySelector('header section')
         if (typeof this.app.profil.nom === 'undefined') {
             showElement(header.querySelector('.js-profil-empty'))
@@ -206,20 +219,9 @@ export class Router {
     }
 
     setupNotFound() {
-        // Si on est à la racine et que le fragment correspond à une page, on y va,
-        // sinon par défaut on retourne à la page d’accueil.
+        // Par défaut on retourne à la page d’accueil.
         this.navigo.notFound(() => {
-            const hash = this.document.location.hash
-            const fragment = hash ? hash.slice(1) : ''
-            if (
-                this.window.location.pathname === '/' &&
-                fragment &&
-                this.exists(fragment)
-            ) {
-                this.redirectTo(fragment)
-            } else {
-                this.redirectTo('introduction')
-            }
+            this.redirectTo('introduction')
         })
     }
 
