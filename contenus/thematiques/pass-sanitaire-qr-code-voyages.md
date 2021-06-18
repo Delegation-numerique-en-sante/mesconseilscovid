@@ -260,7 +260,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 
     Pour le moment, vous devrez présenter un test de dépistage PCR négatif récent (de moins de 48h ou 72h) comportant un QR code.
 
-    A partir de juillet, votre test de dépistage positif de plus de deux semaines et moins de 6 mois fera office de « certificat de rétablissement » ou « Pass sanitaire frontières » valable pour voyager au sein de l'Union européenne.  
+    À partir de juillet, votre test de dépistage positif de plus de deux semaines et moins de 6 mois fera office de « certificat de rétablissement » ou « Pass sanitaire frontières » valable pour voyager au sein de l’Union européenne.  
     Si votre test de dépistage ne comporte pas de QR code, vous ne pourrez pas l'utiliser comme « Pass sanitaire frontières ». Vous pouvez télécharger un nouveau certificat de dépistage, comportant un QR code en vous connectant sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). 
         
 .. question:: Puis-je me déplacer dans l'Espace européen ?
