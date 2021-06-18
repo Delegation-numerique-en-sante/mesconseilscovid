@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-06-18
+
+* mise à jour de la page thématique Pass sanitaire
+* mise à jour des horaires de couvre-feu
+* mise à jour de l’algorithme relatif à la vaccination
+
 ## 2021-06-15
 
 * ouverture de la vaccination pour les plus de 12 ans
