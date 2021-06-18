@@ -5,6 +5,17 @@ export function estPageThematique() {
 export function pageThematique(app) {
     app.trackPageView(document.location.pathname)
     boutonBasculeVersMonProfil(app)
+    ouvreDetailsSiFragment()
+}
+
+function ouvreDetailsSiFragment() {
+    const currentAnchor = document.location.hash ? document.location.hash.slice(1) : ''
+    if (currentAnchor.startsWith('anchor-')) {
+        const target = document.querySelector(`#${currentAnchor}`)
+        if (!target) return
+        if (target.parentElement.tagName === 'DETAILS')
+            target.parentElement.setAttribute('open', '')
+    }
 }
 
 function boutonBasculeVersMonProfil(app) {
