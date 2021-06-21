@@ -186,7 +186,6 @@ def all():
     index()
     thematiques()
     sitemap()
-    readmes()
 
 
 @cli
@@ -239,9 +238,7 @@ def sitemap():
 
 def get_thematiques():
     thematiques = []
-    for path in each_file_from(
-        CONTENUS_DIR / "thematiques", exclude=("README.md", ".DS_Store")
-    ):
+    for path in each_file_from(CONTENUS_DIR / "thematiques", exclude=(".DS_Store",)):
         html_content = str(render_markdown_file(path))
         title = extract_title(html_content)
         image = extract_image(html_content)
@@ -387,28 +384,6 @@ def _save_binary_response(file_path: Path, response: "httpx.Response"):
     with open(file_path, "wb") as download_file:
         for chunk in response.iter_bytes():
             download_file.write(chunk)
-
-
-@cli
-def readmes():
-    """Build the readmes with all content from markdown files in it."""
-    for folder in each_folder_from(CONTENUS_DIR):
-        folder_content = f"""
-# {folder.name.title()}
-
-*Ce fichier est généré automatiquement pour pouvoir accéder rapidement aux contenus,\
-il ne doit pas être édité !*
-
-"""
-        for path in each_file_from(folder, exclude=("README.md", ".DS_Store")):
-            file_content = path.read_text()
-            folder_content += f"""
-## [{path.name}]({path.name})
-
-{file_content}
-
-"""
-        (folder / "README.md").open("w").write(folder_content)
 
 
 @wrap
