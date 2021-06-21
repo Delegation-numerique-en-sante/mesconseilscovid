@@ -184,7 +184,7 @@ def service_worker():
 def orphelins():
     template = (TEMPLATES_DIR / "index.html").read_text()
     for folder in each_folder_from(CONTENUS_DIR, exclude=["thematiques"]):
-        for path in each_file_from(folder, pattern="*.md", exclude=["README.md"]):
+        for path in each_file_from(folder, pattern="*.md"):
             if path.name.startswith("meta_") or path.name.startswith("config_"):
                 continue
             if path.name[: -len(".md")] not in template:
@@ -206,17 +206,13 @@ def diagrammes():
     }
     statuts_filenames = {
         path.name
-        for path in each_file_from(
-            CONTENUS_DIR / "statuts", pattern="*.md", exclude=["README.md"]
-        )
-        if path.name != 'statut_moins_de_15_ans.md'
+        for path in each_file_from(CONTENUS_DIR / "statuts", pattern="*.md")
+        if path.name != "statut_moins_de_15_ans.md"
     }
     conseils_filenames = {
         path.name
         for path in each_file_from(
-            CONTENUS_DIR / "conseils",
-            pattern="conseils_personnels_*.md",
-            exclude=["README.md"],
+            CONTENUS_DIR / "conseils", pattern="conseils_personnels_*.md"
         )
     }
     if matrice_statuts - statuts_filenames:

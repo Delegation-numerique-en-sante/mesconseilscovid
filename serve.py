@@ -23,7 +23,6 @@ BUNDLER_COMMAND = f"{PARCEL_CLI} watch src/*.html"
 ROOT_DIR = "dist/"
 
 PATHS_TO_WATCH_FOR_BUILD = [
-    "contenus/**/[!README]*.md",
     "static/[!sitemap.xml]*",
     "templates/*.html",
 ]
