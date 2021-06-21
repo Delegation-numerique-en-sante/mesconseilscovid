@@ -9,6 +9,7 @@ export function pageThematique(app) {
     bindFeedback(document.querySelector('.feedback-component'), app)
     boutonBasculeVersMonProfil(app)
     ouvreDetailsSiFragment()
+    partagePageEnCours()
 }
 
 function ouvreDetailsSiFragment() {
@@ -32,4 +33,16 @@ function boutonBasculeVersMonProfil(app) {
             })
         })
     }
+}
+
+function partagePageEnCours() {
+    const partageLinks = document.querySelectorAll('.feedback-partager a')
+    partageLinks.forEach((partageLink) => {
+        let href = partageLink.href
+        href = href.replace(
+            'https%3A%2F%2Fmesconseilscovid.sante.gouv.fr%2F',
+            encodeURIComponent(document.URL)
+        )
+        partageLink.href = href
+    })
 }
