@@ -6,70 +6,76 @@
 
 <div id="conseils-pediatrie-general" class="conseils">
 
+## La vaccination des mineurs âgés de plus de 12 ans
 
-    
-    ## La vaccination des mineurs âgés de plus de 12 ans
 <div class="conseil">
 
-<span class="nouveau">nouveau</span> Depuis le 15 juin 2021,**la vaccination est ouverte aux enfants de 12 ans et plus**, sans conditions médicale. 
+<span class="nouveau">nouveau</span> Depuis le 15 juin 2021, **la vaccination est ouverte aux enfants de 12 ans et plus**, sans condition médicale. 
+
+</div>
     
-.. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
+.. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
     :level: 3
     
-    **Oui.**Le consentement des parents est obligatoire pour vacciner un adolescent qui ne présente pas de comorbidités. Une **autorisation parentale** de vaccination doit être remplie par les deux parents. Vous pouvez la télécharger en cliquant [ici](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) et sera également mise à votre disposition dans le centre de vaccination.  
-    Si l’adolescent présente une comorbidité le mettant à risque de forme grave de Covid-19, le consentement de l’un des deux parents (ou tuteur) est suffisant.
+    **Oui.** Le consentement des parents est obligatoire pour vacciner un adolescent qui ne présente pas de comorbidités. Une **autorisation parentale** de vaccination doit être remplie par les deux parents. Vous pouvez la télécharger en [cliquant ici](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf). Elle sera également mise à votre disposition dans le centre de vaccination.  
+    Si l’adolescent présente une comorbidité le mettant à risque de forme grave de Covid, le consentement de l’un des deux parents (ou tuteur) est suffisant.
  
     
-.. question:: Le mineur doit-il donner son accord ?
+.. question:: Le mineur doit-il donner son accord ?
     :level: 3
     
     **Oui.** Au cours de l’entretien préalable à la vaccination, le professionnel de santé donnera à l’adolescent toutes les informations de façon claire et adaptée. Il recueillera ensuite son consentement oral pour le vacciner.
  
     
-.. question:: Où faire vacciner un mineur et avec quel vaccin ?
+.. question:: Où faire vacciner un mineur et avec quel vaccin ?
     :level: 3
     
-    Les adolescent(e)s âgé(e)s de 12 ans et plus sont vacciné(e)s avec le vaccin Pfizer-BioNTech en centre de vaccination, ou directement dans les établissements d’accueil spécifiques (strucutres d’accueil pour les enfants handicapés; maisons à caractère social…).  
-    Pour trouver un centre de vaccination, rendez-vous sur www.sante.fr .
+    Les adolescent(e)s âgé(e)s de 12 ans et plus sont vacciné(e)s avec le **vaccin Pfizer-BioNTech** en centre de vaccination, ou directement dans les établissements d’accueil spécifiques (structures d’accueil pour les enfants handicapés ; maisons à caractère social,…).
+
+    Pour trouver un centre de vaccination, rendez-vous sur [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html).
   
     
-.. question:: Les mineurs reçoivent-ils le même nombre de doses que les adultes ?
+.. question:: Les mineurs reçoivent-ils le même nombre de doses que les adultes ?
     :level: 3
     
-    Oui. Comme les adultes, les mineurs reçoivent :  
-    * une seule dose, s’ils ont déjà été contaminés à la Covid-19.
-    * deux doses, s’ils n’ont pas été contaminés par la covid-19 dans les mois précédents la vaccination.
+    **Oui.** Comme pour les adultes, les mineurs reçoivent :
+
+    * une seule dose, s’ils ont déjà été contaminés à la Covid.
+    * deux doses, s’ils n’ont pas été contaminés par la Covid dans les mois précédant la vaccination.
 
 
-.. question:: Quels justificatifs apporter le jour du rendez-vous de vaccination ?
+.. question:: Quels justificatifs apporter le jour du rendez-vous de vaccination ?
     :level: 3  
     
     * L’autorisation parentale de vaccination signée par les deux parents.
     * La carte vitale de l’adolescent (si disponible) et celle du parent qui l’accompagne.
-    * La preuve de contamination antérieure, si le mineur a déjà été contaminé par la Covid-19. Cette preuve peut-être un ancien test positif, ou une sérologie (prise de sang) indiquant la présence d’anticorps.
+    * La preuve de contamination antérieure, si le mineur a déjà été contaminé par la Covid. Cette preuve peut-être un ancien test positif, ou une sérologie (prise de sang) indiquant la présence d’anticorps.
     
     
-.. question:: Comment obtenir une **attestation de vaccination** (valable comme « Pass sanitaire » ) pour un mineur ?
+.. question:: Comment obtenir une attestation de vaccination (valable comme « Pass sanitaire » ) pour un mineur ?
     :level: 3
    
-    Suite à la vaccination, le professionnel de santé lui remettra une **attestation de vaccination** comportant un QR code.  
-    Cette attestation pourra être importée dans l’application TousAntiCovid rubrique « carnet » : sur le smartphone de l’adolescent ou de ses parents.
+    Suite à la vaccination, le professionnel de santé lui remettra une **attestation de vaccination** comportant un QR code.
+
+    Cette attestation pourra être importée dans l’application TousAntiCovid rubrique « carnet » : sur le smartphone de l’adolescent ou de ses parents.
     
     
-.. question:: La vaccination des mineurs sera obligatoire pour obtenir le « Pass sanitaire »  ?
+.. question:: La vaccination des mineurs sera obligatoire pour obtenir le « Pass sanitaire » ?
     :level: 3
     
-    Non. Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « Pass sanitaire » utilisable en France et bientôt pour les voyages en Union européenne :
-    * l'attestation de vaccination complète (toutes les doses et respect du délai de 14 jours après la dernière dose);
-    * un test RT-PCR ou antigénique négatif récent;
-    * un test de dépistage positif de plus de 15 jours et moins de 6 mois.  
-    Par ailleurs, le ou la mineur(e) non-vacciné(e) accompagnant ses parents vaccinés lors d’un voyage bénéficiera des mêmes facilités qu’eux. Par exemple, un mineur non-vaccin(é) pourra accompagner ses parents vaccinés lors d’un voyage dans un [pays classé orange](https://www.gouvernement.fr/voyager-depuis-et-vers-l-etranger-mode-d-emploi) sans justifier d'un motif impérieux pour s’y rendre.  
+    **Non.** Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « Pass sanitaire » utilisable en France et bientôt pour les voyages en Union européenne :
+
+    * l’attestation de vaccination complète (toutes les doses et respect du délai de 14 jours après la dernière dose) ;
+    * un test RT-PCR ou antigénique négatif récent ;
+    * un test de dépistage positif de plus de 15 jours et moins de 6 mois.
+    
+    Par ailleurs, le ou la mineur(e) non-vacciné(e) accompagnant ses parents vaccinés lors d’un voyage bénéficiera des mêmes facilités qu’eux. Par exemple, un mineur non-vaccin(é) pourra accompagner ses parents vaccinés lors d’un voyage dans un [pays classé orange](https://www.gouvernement.fr/voyager-depuis-et-vers-l-etranger-mode-d-emploi) sans justifier d’un motif impérieux pour s’y rendre.  
       
     Pour plus d’informations sur les voyages et le pass sanitaire en général, consultez notre [page thématique](https://mesconseilscovid.sante.gouv.fr/pass-sanitaire-qr-code-voyages.html).
+
+
     
-</div>
-    
-## Questions générales pour les mineurs de moins de 15 ans
+## Questions générales pour les mineurs de moins de 15 ans
 
 .. question:: À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
     :level: 3
