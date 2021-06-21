@@ -912,46 +912,38 @@ Consulter nos pages thématiques :
 
 ## Je me trouve dans la situation suivante :
 
+<div class="conseil">
+
+Quel que soit le test requis par votre situation, [cliquez ici pour trouver un lieu de dépistage](https://www.sante.fr/cf/centres-depistage-covid.html) au plus proche de vous.
+
+</div>
+
 .. question:: Je ne suis pas cas contact, je n’ai pas de symptômes, mais je veux savoir si j’ai la Covid
     :level: 3
 
     Le test **RT-PCR naso-pharyngé** est indiqué dans votre cas.
-    [Cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html) pour trouver un lieu de dépistage 
 
-.. question:: J’ai des symptômes de la Covid depuis moins de 4 jours
+.. question:: J’ai des symptômes de la Covid
     :level: 3
 
-    Les tests **antigénique** ou **RT-PCR naso-pharyngé** sont indiqués dans votre cas.
-    [Cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html) pour trouver un lieu de dépistage 
-
-.. question:: J’ai des symptômes de la Covid depuis plus de 4 jours
-    :level: 3
-
-    Le test **RT-PCR naso-pharyngé** est indiqué dans votre cas.
-    [Cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html) pour trouver un lieu de dépistage 
+    * Depuis **moins** de 4 jours : les tests **antigénique** ou **RT-PCR naso-pharyngé** sont indiqués dans votre cas.
+    * Depuis **plus** de 4 jours : le test **RT-PCR naso-pharyngé** est indiqué dans votre cas.
 
 .. question:: Je m’apprête à rendre visite à des personnes vulnérables, je n’ai pas de symptômes et je ne suis pas cas contact
     :level: 3
 
     Les tests **antigénique** ou **RT-PCR naso-pharyngé** sont indiqués dans votre cas.
-    [Cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html) pour trouver un lieu de dépistage 
 
-.. question:: Je viens d’apprendre que je suis cas contact
+.. question:: Je suis cas contact
     :level: 3
 
-    Le test **antigénique** est indiqué dans votre cas.
-    [Cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html) pour trouver un lieu de dépistage 
-
-.. question:: Je veux réaliser mon test de contrôle 7 jours après mon contact à risque
-    :level: 3
-
-    Les tests **antigénique** ou **RT-PCR naso-pharyngé** sont indiqués dans votre cas.
-    [Cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html) pour trouver un lieu de dépistage 
+    * Je viens de l’apprendre : le test **antigénique** est indiqué dans votre cas.
+    * Je dois réaliser mon test de contrôle 7 jours après mon contact à risque : les tests **antigénique** ou **RT-PCR naso-pharyngé** sont indiqués dans votre cas.
 
 .. question:: Je travaille régulièrement avec des personnes fragiles (aide à domicile, professionnel de santé, …) je n’ai pas de symptômes et je ne suis pas cas contact
     :level: 3
 
-    Il est recommandé de vous tester régulièrement avec les auto-test vendus en pharmacie (non remboursés).
+    Il est recommandé de vous tester régulièrement avec les **auto-tests** vendus en pharmacie (non remboursés).
 
 .. question:: Le résultat de mon auto-test est positif et je dois confirmer ce résultat
     :level: 3
@@ -962,7 +954,7 @@ Consulter nos pages thématiques :
     :level: 3
 
     Le test **RT-PCR salivaire** est indiqué dans votre cas.
-    [Cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html) pour trouver un lieu de dépistage 
+
 
 ## Quels sont différents tests de dépistage de la Covid-19 ?
 
