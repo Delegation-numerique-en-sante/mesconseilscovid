@@ -39,9 +39,11 @@ function partagePageEnCours() {
     const partageLinks = document.querySelectorAll('.feedback-partager a')
     partageLinks.forEach((partageLink) => {
         let href = partageLink.href
+        let url = new URL(document.URL)
+        url.searchParams.set('source', 'partage-thematique')
         href = href.replace(
             'https%3A%2F%2Fmesconseilscovid.sante.gouv.fr%2F',
-            encodeURIComponent(document.URL)
+            encodeURIComponent(url)
         )
         partageLink.href = href
     })
