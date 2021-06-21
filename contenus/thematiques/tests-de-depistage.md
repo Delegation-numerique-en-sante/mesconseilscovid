@@ -66,8 +66,13 @@
 
 ## Quels sont différents tests de dépistage de la Covid-19 ?
 
+<div class="conseils">
+<details>
+
+.. summary:: Test RT-PCR naso-pharyngé
+
 .. question:: Le test RT-PCR naso-pharyngé (prélèvement nasal)
-    :level: 3
+    :level: 4
 
     Le test RT-PCR naso-pharyngé est le test de dépistage de la Covid-19 de référence. 
     Un écouvillon (long coton-tige) est inséré dans les deux narines pour réaliser un prélèvement.
@@ -80,8 +85,16 @@
 
     Trouvez un lieu de test en cliquant [ici](https://www.sante.fr/cf/centres-depistage-covid.html)
 
+</details>
+</div>
+
+<div class="conseils">
+<details>
+
+.. summary:: Test antigénique naso-pharyngé
+
 .. question:: Le test antigénique naso-pharyngé (prélèvement nasal)
-    :level: 3
+    :level: 4
 
     Le test antigénique permet d’avoir le résultat plus rapidement, mais il est moins fiable que les tests réalisés en laboratoire. C’est pourquoi, il n’est pas recommandé pour le dépistage des personnes qui ne présentent pas de symptômes (sauf en cas de contact à risque). 
 
@@ -91,6 +104,14 @@
     Ce type de test est réalisé par un professionnel de santé, notamment en pharmacie.  
 
     Pour trouver un lieu de dépistage [cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html).  
+
+</details>
+</div>
+
+<div class="conseils">
+<details>
+
+.. summary:: Test PCR salivaire
 
 .. question:: Le test PCR salivaire (prélèvement buccal)
     :level: 3
@@ -104,6 +125,14 @@
 
     Pour trouver un lieu de dépistage [cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html).  
 
+</details>
+</div>
+
+<div class="conseils">
+<details>
+
+.. summary:: Auto-tests
+
 .. question::  Les auto-tests 
     :level: 3
 
@@ -116,6 +145,8 @@
 
     Ce type de test est utile à condition de le pratiquer régulièrement (plusieurs fois par semaines). Il s’adresse principalement aux personnes qui sont en contact régulier avec le public ou avec des personnes vulnérables. 
 
+</details>
+</div>
 
 ## Vous avez encore des questions ?
 
