@@ -48,6 +48,7 @@ export function bindFeedback(component, app) {
                 opacityTransition(component, transitionDelay, (component) => {
                     hideElement(component.querySelector('.feedback-form'))
                     showElement(component.querySelector('.feedback-thankyou'))
+                    showElement(component.querySelector('.feedback-partager'))
                 })
             })
         })

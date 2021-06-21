@@ -36,6 +36,9 @@
             <li>
                 <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmesconseilscovid.sante.gouv.fr%2F&via=conseilscovid&text=Mes%20Conseils%20Covid%20%3A%20Des%20conseils%20personnels%20pour%20agir%20contre%20le%20virus&hashtags=covid" class="button button-outline button-feedback-social-twitter" target="_blank" rel="noopener noreferrer">sur Twitter</a>
             </li>
+            <li>
+                <a href="fb-messenger://share/?link=https%3A%2F%2Fmesconseilscovid.sante.gouv.fr%2F&app_id=199122945319221" class="button button-outline button-feedback-social-messenger" target="_blank" rel="noopener noreferrer">sur Messenger</a>
+            </li>
         </ul>
     </div>
 </div>
