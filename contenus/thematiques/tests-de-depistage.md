@@ -44,7 +44,7 @@
     :level: 3
 
     Il est recommandé de vous tester régulièrement avec les **autotests** vendus en pharmacie. Les professionnels exerçant à domicile auprès de personnes vulnérables peuvent obtenir la prise en charge de 10 auto-tests par mois en présentant leur carte professionnelle au pharmacien.
-    
+
 
 .. question:: Le résultat de mon auto-test est positif et je dois confirmer ce résultat
     :level: 3
@@ -67,7 +67,7 @@
 .. question:: Le test RT-PCR nasopharyngé (prélèvement nasal)
     :level: 4
 
-    Le test RT-PCR nasopharyngé est le test de dépistage de la Covid-19 de référence. 
+    Le test RT-PCR nasopharyngé est le test de dépistage de la Covid-19 de référence.
     Un écouvillon (long coton-tige) est inséré dans les deux narines pour réaliser un prélèvement.
     Le résultat est habituellement disponible en 24 h.
 
@@ -89,14 +89,14 @@
 .. question:: Le test antigénique nasopharyngé (prélèvement nasal)
     :level: 4
 
-    Le test antigénique permet d’avoir le résultat plus rapidement, mais il est moins fiable que les tests réalisés en laboratoire. C’est pourquoi, il n’est pas recommandé pour le dépistage des personnes qui ne présentent pas de symptômes (sauf en cas de contact à risque). 
+    Le test antigénique permet d’avoir le résultat plus rapidement, mais il est moins fiable que les tests réalisés en laboratoire. C’est pourquoi, il n’est pas recommandé pour le dépistage des personnes qui ne présentent pas de symptômes (sauf en cas de contact à risque).
 
 .. question:: Où faire un test antigénique nasopharyngé (prélèvement nasal) ?
     :level: 4
 
-    Ce type de test est réalisé par un professionnel de santé, notamment en pharmacie.  
+    Ce type de test est réalisé par un professionnel de santé, notamment en pharmacie.
 
-    Pour trouver un lieu de dépistage [cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html).  
+    Pour trouver un lieu de dépistage [cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html).
 
 </details>
 </div>
@@ -109,14 +109,14 @@
 .. question:: Le test RT-PCR salivaire (prélèvement buccal)
     :level: 3
 
-    Ce test est réalisé grâce au prélèvement de la salive, avec un écouvillon (long coton-tige) ou sans (par crachat). Moins contraignant que les tests nasopharyngés, il est recommandé **lorsque le prélèvement nasal est compliqué ou impossible** (très jeunes enfants, déviation de la cloison nasale, troubles psychiatriques…). 
+    Ce test est réalisé grâce au prélèvement de la salive, avec un écouvillon (long coton-tige) ou sans (par crachat). Moins contraignant que les tests nasopharyngés, il est recommandé **lorsque le prélèvement nasal est compliqué ou impossible** (très jeunes enfants, déviation de la cloison nasale, troubles psychiatriques…).
 
 .. question:: Où faire un test PCR salivaire ?
     :level: 4
 
-    Ce type de test est réalisé par des professionnels de santé en laboratoire, à domicile ou lors de campagnes de dépistage (écoles…).  
+    Ce type de test est réalisé par des professionnels de santé en laboratoire, à domicile ou lors de campagnes de dépistage (écoles…).
 
-    Pour trouver un lieu de dépistage [cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html).  
+    Pour trouver un lieu de dépistage [cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html).
 
 </details>
 </div>
@@ -126,17 +126,17 @@
 
 .. summary:: Autotests
 
-.. question::  Les autotests 
+.. question::  Les autotests
     :level: 3
 
-    Des autotests sont disponibles en pharmacie. Ce test est un prélèvement nasal à réaliser chez soi. Ils ne sont pas pris en charge par l’Assurance maladie sauf dans le cas des professionnels exerçant auprès de personnes vulnérables (âgées, handicapées…) et dans la limite de 10 par mois.   
+    Des autotests sont disponibles en pharmacie. Ce test est un prélèvement nasal à réaliser chez soi. Ils ne sont pas pris en charge par l’Assurance maladie sauf dans le cas des professionnels exerçant auprès de personnes vulnérables (âgées, handicapées…) et dans la limite de 10 par mois.
 
     Il ne faut pas y avoir recours lorsque :
 
-    - on a des symptômes 
+    - on a des symptômes
     - on a eu un contact à risque récent (cas contact).
 
-    Ce type de test est utile à condition de le pratiquer régulièrement (plusieurs fois par semaines). 
+    Ce type de test est utile à condition de le pratiquer régulièrement (plusieurs fois par semaines).
 
 </details>
 </div>
