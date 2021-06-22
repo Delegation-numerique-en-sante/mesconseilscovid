@@ -1,1 +1,0 @@
-Les rassemblements, réunions ou activités à un titre autre que professionnel sur la voie publique ou dans un lieu public, mettant en présence de manière simultanée plus de 10 personnes, sont interdits.

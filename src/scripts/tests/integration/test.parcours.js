@@ -42,13 +42,6 @@ describe('Parcours', function () {
 
         // Conseils.
         {
-            // On rend la localisation visible.
-            await page.click('#page.ready #conseils-deplacements h3')
-
-            // On retrouve le département de résidence.
-            let residence = await page.waitForSelector('#page.ready #nom-departement')
-            assert.equal(await residence.innerText(), 'Somme')
-
             // On rend l’activité visible.
             await page.click('#page.ready #conseils-activite h3')
 
@@ -125,17 +118,7 @@ describe('Parcours', function () {
 
         await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:vaccins')
 
-        // Conseils.
-        {
-            // On rend la localisation visible.
-            await page.click('#page.ready #conseils-deplacements h3')
-
-            // On retrouve le département de résidence.
-            let residence = await page.waitForSelector('#page.ready #nom-departement')
-            assert.equal(await residence.innerText(), 'Somme')
-
-            await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
-        }
+        await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
     })
 
     it('remplir le questionnaire avec symptômes (gravité majeure)', async function () {

@@ -539,17 +539,17 @@ export default class AlgorithmeOrientation {
     vieQuotidienneBlockNamesToDisplay() {
         const blockNames = ['conseils-vie-quotidienne']
         if (this.profil.departement === '971') {
+            blockNames.push('conseils-couvre-feu')
             blockNames.push('conseils-couvre-feu-971')
         } else if (this.profil.departement === '972') {
+            blockNames.push('conseils-couvre-feu')
             blockNames.push('conseils-couvre-feu-972')
         } else if (this.profil.departement === '973') {
+            blockNames.push('conseils-couvre-feu')
             blockNames.push('conseils-couvre-feu-973')
         } else if (this.profil.departement === '974') {
+            blockNames.push('conseils-couvre-feu')
             blockNames.push('conseils-couvre-feu-974')
-        } else if (this.profil.departement === '976') {
-            blockNames.push('conseils-couvre-feu-976')
-        } else {
-            blockNames.push('conseils-couvre-feu-21h')
         }
         blockNames.push('conseils-deplacements')
         blockNames.push('conseils-pass-sanitaire')
