@@ -17,20 +17,20 @@
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
     :level: 3
     
-    **Oui.** Le consentement des parents est obligatoire pour vacciner un adolescent qui ne présente pas de comorbidités. Une **autorisation parentale** de vaccination doit être remplie par les deux parents. Vous pouvez la télécharger en [cliquant ici](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf). Elle sera également mise à votre disposition dans le centre de vaccination.  
+    **Oui.** Le consentement des parents ou du tuteur est obligatoire pour vacciner un adolescent qui ne présente pas de comorbidités. Une **autorisation parentale** de vaccination doit être remplie par les deux parents ou par le tuteur. Vous pouvez la télécharger en [cliquant ici](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf). Elle sera également mise à votre disposition dans le centre de vaccination.  
     Si l’adolescent présente une comorbidité le mettant à risque de forme grave de Covid, le consentement de l’un des deux parents (ou tuteur) est suffisant.
  
     
 .. question:: Le mineur doit-il donner son accord ?
     :level: 3
     
-    **Oui.** Au cours de l’entretien préalable à la vaccination, le professionnel de santé donnera à l’adolescent toutes les informations de façon claire et adaptée. Il recueillera ensuite son consentement oral pour le vacciner.
+    **Oui.** Au cours de l’entretien préalable à la vaccination, le professionnel de santé donnera à l’adolescent(e) toutes les informations de façon claire et adaptée. Il recueillera ensuite son consentement oral avant de procéder à l’injection.
  
     
 .. question:: Où faire vacciner un mineur et avec quel vaccin ?
     :level: 3
     
-    Les adolescent(e)s âgé(e)s de 12 ans et plus sont vacciné(e)s avec le **vaccin Pfizer-BioNTech** en centre de vaccination, ou directement dans les établissements d’accueil spécifiques (structures d’accueil pour les enfants handicapés ; maisons à caractère social,…).
+    Les adolescent(e)s âgé(e)s de 12 ans et plus sont vacciné(e)s avec le **vaccin Pfizer-BioNTech** en centre de vaccination, ou directement dans les établissements d’accueil spécifiques (structures d’accueil pour les enfants handicapés, maisons à caractère social…).
 
     Pour trouver un centre de vaccination, rendez-vous sur [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html).
   
@@ -47,7 +47,7 @@
 .. question:: Quels justificatifs apporter le jour du rendez-vous de vaccination ?
     :level: 3  
     
-    * L’autorisation parentale de vaccination signée par les deux parents.
+    * L’autorisation parentale de vaccination signée par les deux parents ou par le tuteur.
     * La carte vitale de l’adolescent (si disponible) et celle du parent qui l’accompagne.
     * La preuve de contamination antérieure, si le mineur a déjà été contaminé par la Covid. Cette preuve peut-être un ancien test positif, ou une sérologie (prise de sang) indiquant la présence d’anticorps.
     
@@ -57,10 +57,10 @@
    
     Suite à la vaccination, le professionnel de santé lui remettra une **attestation de vaccination** comportant un QR code.
 
-    Cette attestation pourra être importée dans l’application TousAntiCovid rubrique « carnet » : sur le smartphone de l’adolescent ou de ses parents.
+    Cette attestation pourra être importée dans l’application TousAntiCovid rubrique « carnet », sur le smartphone de l’adolescent ou de ses parents.
     
     
-.. question:: La vaccination des mineurs sera obligatoire pour obtenir le « Pass sanitaire » ?
+.. question:: La vaccination des mineurs sera-t-elle obligatoire pour obtenir le « Pass sanitaire » ?
     :level: 3
     
     **Non.** Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « Pass sanitaire » utilisable en France et bientôt pour les voyages en Union européenne :
