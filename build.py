@@ -25,6 +25,7 @@ SRC_DIR = HERE / "src"
 CONTENUS_DIR = HERE / "contenus"
 STATIC_DIR = HERE / "static"
 TEMPLATES_DIR = HERE / "templates"
+NB_OF_INDEX_THEMATIQUES = 6
 
 jinja_env = JinjaEnv(
     loader=FileSystemLoader(str(TEMPLATES_DIR)), undefined=StrictUndefined
@@ -192,7 +193,7 @@ def all():
 def index():
     """Build the index with contents from markdown dedicated folder."""
     responses = build_responses(CONTENUS_DIR)
-    responses["thematiques"] = get_thematiques()
+    responses["thematiques"] = get_thematiques()[:NB_OF_INDEX_THEMATIQUES]
     content = render_template("index.html", **responses)
     content = cache_external_pdfs(content)
     (SRC_DIR / "index.html").write_text(content)
@@ -207,7 +208,10 @@ class Thematique:
 
     @property
     def name(self):
-        return self.path.stem
+        stem = self.path.stem
+        if stem[0].isdigit():
+            return stem[2:]
+        return stem
 
 
 @cli
