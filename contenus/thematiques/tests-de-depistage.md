@@ -51,10 +51,10 @@
 
     Vous devez confirmer ce résultat avec un test **RT-PCR nasopharyngé** et rester en isolement le temps d’obtenir cette confirmation.
 
-.. question:: Je souhaite me faire dépister mais les prélèvements nasopharyngés sont impossibles dans mon cas (enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…)
+.. question:: Je souhaite me faire dépister mais les prélèvements nasopharyngés sont impossibles dans mon cas
     :level: 3
 
-    Le test **RT-PCR salivaire** est indiqué dans votre cas.
+    Le test **RT-PCR salivaire** est indiqué dans ces cas : enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…
 
 
 ## Quels sont les différents tests de dépistage de la Covid-19 ?
@@ -76,7 +76,7 @@
 
     Ce test est réalisé exclusivement par un professionnel de santé en laboratoire ou dans un centre de dépistage.
 
-    Trouvez un lieu de test en cliquant [ici](https://www.sante.fr/cf/centres-depistage-covid.html)
+    [Cliquez ici pour trouver un lieu de dépistage](https://www.sante.fr/cf/centres-depistage-covid.html) près de chez vous.
 
 </details>
 </div>
@@ -96,7 +96,7 @@
 
     Ce type de test est réalisé par un professionnel de santé, notamment en pharmacie.
 
-    Pour trouver un lieu de dépistage [cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html).
+    [Cliquez ici pour trouver un lieu de dépistage](https://www.sante.fr/cf/centres-depistage-covid.html) près de chez vous.
 
 </details>
 </div>
@@ -116,7 +116,7 @@
 
     Ce type de test est réalisé par des professionnels de santé en laboratoire, à domicile ou lors de campagnes de dépistage (écoles…).
 
-    Pour trouver un lieu de dépistage [cliquez ici](https://www.sante.fr/cf/centres-depistage-covid.html).
+    [Cliquez ici pour trouver un lieu de dépistage](https://www.sante.fr/cf/centres-depistage-covid.html) près de chez vous.
 
 </details>
 </div>
