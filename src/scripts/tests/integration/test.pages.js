@@ -12,7 +12,7 @@ describe('Pages', function () {
 
         assert.equal(
             await page.title(),
-            'Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
+            'Mes Conseils Covid — Isolement, tests, vaccins, contact à risque…'
         )
     })
 
@@ -28,7 +28,7 @@ describe('Pages', function () {
 
         assert.equal(
             await page.title(),
-            'Conseils pour les mineurs — Mes Conseils Covid — Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé'
+            'Conseils pour les mineurs — Mes Conseils Covid — Isolement, tests, vaccins, contact à risque…'
         )
     })
 
