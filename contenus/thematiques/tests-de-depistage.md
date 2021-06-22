@@ -136,7 +136,7 @@
     - on a des symptômes
     - on a eu un contact à risque récent (cas contact).
 
-    Ce type de test est utile à condition de le pratiquer régulièrement (plusieurs fois par semaines).
+    Ce type de test est utile à condition de le pratiquer régulièrement (plusieurs fois par semaine).
 
 </details>
 </div>
