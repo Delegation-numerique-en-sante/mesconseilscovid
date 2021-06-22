@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-06-22
+
+* mise à jour relative au couvre-feu
+* mise à jour de la page thématique dédiée aux mineurs
+
 ## 2021-06-18
 
 * mise à jour de la page thématique Pass sanitaire
