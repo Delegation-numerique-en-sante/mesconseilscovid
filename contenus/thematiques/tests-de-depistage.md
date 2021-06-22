@@ -51,7 +51,7 @@
 
     Vous devez confirmer ce résultat avec un test **RT-PCR nasopharyngé** et rester en isolement le temps d’obtenir cette confirmation.
 
-.. question:: Je souhaite me faire dépister mais les prélèvements naspharyngés sont impossibles dans mon cas (enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…)
+.. question:: Je souhaite me faire dépister mais les prélèvements nasopharyngés sont impossibles dans mon cas (enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…)
     :level: 3
 
     Le test **RT-PCR salivaire** est indiqué dans votre cas.
