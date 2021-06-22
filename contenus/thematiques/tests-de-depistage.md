@@ -7,8 +7,8 @@
 <div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
 
 <big>Les tests de dépistage réalisés par un professionnel de santé sont gratuits pour tous, sans condition de sécurité sociale ni de prescription médicale.</big>
-    
-    <div class="conseil">
+
+<div class="conseil">
 
 [Cliquez ici pour trouver un lieu de dépistage](https://www.sante.fr/cf/centres-depistage-covid.html) au plus proche de vous.
 
@@ -146,7 +146,7 @@
 * [Pass sanitaire, QR code, voyages, que faut-il retenir ?](/pass-sanitaire-qr-code-voyages.html)
 * [Je souhaite me faire vacciner, que faut-il savoir ?](/je-veux-me-faire-vacciner.html)
 * [Je suis vacciné(e), que faut-il savoir ?](/je-suis-vaccine.html)
-* [Je suis cas contact], que faire ?](/cas-contact-a-risque.html)
+* [Je suis cas contact, que faire ?](/cas-contact-a-risque.html)
 <section class="cta">
     <h3>Obtenez des conseils adaptés à votre situation en quelques clics</h3>
     <a class="button" href="/#conseils">Je veux des conseils personnalisés</a>
