@@ -292,7 +292,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 
     Il permet d’authentifier les informations sur votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) lors d’un contrôle.
 
-    * En France, le « Pass sanitaire activités »  est obligatoire pour participer à des évènements rassemblant plus de 1 000 personnes (festivals, conférences, salons…).
+    * En France, le « Pass sanitaire activités »  est obligatoire pour participer à des évènements rassemblant plus de 1 000 personnes (festivals, conférences, salons…) ou pour accéder à certains lieux, comme les boites de nuit (à partir du 9 juillet).
     * Dans l’Union européenne, le « Pass sanitaire frontières » facilitera, à partir de juillet, les voyages entre les pays membres.
 
 
