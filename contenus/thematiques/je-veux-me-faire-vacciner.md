@@ -10,12 +10,12 @@
 
 .. question:: Quand pourrai-je me faire vacciner ?
 
-    <span class="nouveau">nouveau</span> Les personnes de 12 à 18 ans pourront se faire vacciner dès le 15 juin.
+    <span class="nouveau">nouveau</span> Les mineurs âgés de plus de 12 ans peuvent se faire vacciner depuis le 15 juin.
 
     Vous pouvez vous faire vacciner **dès maintenant** :
 
-    * si vous avez **18 ans et plus**, sans conditions ;
-    * si vous avez entre **16 et 17 ans** et présentez un risque de développer une **forme très grave** de Covid (cancer, dialyse, trisomie 21, etc.), ou si vous vivez sous le même toit qu’une personne immunodéprimée (dialysée, ayant reçu une transplantation d’organe ou de moelle osseuse, traitée par des médicaments immunosuppresseurs forts), ou que vous lui apportez une aide quotidienne ;
+    * si vous avez entre **12 ans et 17 ans**, sans conditions mais avec une [**autorisation parentale**](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf);
+    * si vous avez plus de 18 ans, sans conditions;
     * si vous êtes **enceinte**, à partir du second trimestre de votre grossesse.
 
 
@@ -44,7 +44,7 @@
 
 .. question:: Que faire si mon rendez-vous pour la 2<sup>e</sup> dose tombe pendant mes vacances ?
 
-    Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée 42 jours (soit 6 semaines) après la première. Il est prévu de permettre de la décaler pour qu’elle puisse avoir lieu entre 21 et 49 jours (soit 3 à 7 semaines) après la première.
+    Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée 42 jours (soit 6 semaines) après la première. Exceptionnellement, durant la période estivale, la deuxième dose pourra avoir lieu entre 21 et 49 jours (soit 3 à 7 semaines) après la première, afin de permettre à chacun de compléter sa vaccination avant ou après ses vacances d'été.
 
 
 .. question:: Quels sont les effets secondaires des vaccins contre la Covid ?
@@ -58,7 +58,7 @@
 
     Il existe des exceptions :
 
-    * une personne qui a eu la Covid il y a moins de 6 mois, ne nécessite qu’une seule dose de vaccin au lieu des 2 pour être vaccinée.
+    * une personne qui a eu la Covid, ne nécessite qu’une seule dose de vaccin au lieu des 2 pour être vaccinée.
     * une personne fortement immunodéprimée recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné·e par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
 
     Le vaccin Janssen ne nécessite qu’une seule dose.
@@ -71,9 +71,14 @@
 
 .. question:: J’ai déjà eu la Covid, dois-je me faire vacciner (1<sup>re</sup> dose) ?
 
-    **Oui.** Si vous avez eu la Covid : une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum 3 mois après la maladie, idéalement 6 mois pour une efficacité maximale.
+    **Oui.** Si vous avez eu la Covid : une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum **2 mois après la maladie**, idéalement 6 mois pour une efficacité maximale.
     
-
+    
+.. question:: J’ai déjà eu la Covid, comment le prouver pour ne recevoir qu'une seule dose ?  
+    
+    Lors de votre rendez-vous de vaccination, vous pourrez présenter : un test de dépistage positif réalisé il y a 2 mois ou plus ou un test sérologique (prise de sang qui recherche des anticorps) positif.
+    
+    
 .. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?
 
     Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un **délai de 3 à 6 mois** après l’infection.
