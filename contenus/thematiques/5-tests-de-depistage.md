@@ -18,10 +18,12 @@
 
 ## Je me trouve dans la situation suivante :
 
-.. question:: Je ne suis pas cas contact, je n’ai pas de symptômes, mais je veux savoir si j’ai la Covid
+.. question:: Je ne suis pas cas contact, je n’ai pas de symptômes et…
     :level: 3
 
-    Le test **RT-PCR nasopharyngé** est indiqué dans votre cas.
+    * je veux savoir si j’ai la Covid : le test **RT-PCR nasopharyngé** est indiqué dans votre cas ;
+    * je m’apprête à rendre visite à des personnes vulnérables : les tests **antigénique** ou **RT-PCR nasopharyngé** sont indiqués dans votre cas ;
+    * je travaille régulièrement avec des personnes fragiles : il est recommandé de vous tester régulièrement avec les **autotests** vendus en pharmacie (les professionnels exerçant à domicile auprès de personnes vulnérables peuvent obtenir la prise en charge de 10 auto-tests par mois en présentant leur carte professionnelle au pharmacien).
 
 .. question:: J’ai des symptômes de la Covid
     :level: 3
@@ -29,22 +31,11 @@
     * Depuis **moins** de 4 jours : les tests **antigénique** ou **RT-PCR nasopharyngé** sont indiqués dans votre cas.
     * Depuis **plus** de 4 jours : le test **RT-PCR nasopharyngé** est indiqué dans votre cas.
 
-.. question:: Je m’apprête à rendre visite à des personnes vulnérables, je n’ai pas de symptômes et je ne suis pas cas contact
-    :level: 3
-
-    Les tests **antigénique** ou **RT-PCR nasopharyngé** sont indiqués dans votre cas.
-
 .. question:: Je suis cas contact
     :level: 3
 
     * Je viens de l’apprendre : le test **antigénique** est indiqué dans votre cas.
     * Je dois réaliser mon test de contrôle 7 jours après mon contact à risque : les tests **antigénique** ou **RT-PCR nasopharyngé** sont indiqués dans votre cas.
-
-.. question:: Je travaille régulièrement avec des personnes fragiles (aide à domicile, professionnel de santé…) je n’ai pas de symptômes et je ne suis pas cas contact
-    :level: 3
-
-    Il est recommandé de vous tester régulièrement avec les **autotests** vendus en pharmacie. Les professionnels exerçant à domicile auprès de personnes vulnérables peuvent obtenir la prise en charge de 10 auto-tests par mois en présentant leur carte professionnelle au pharmacien.
-
 
 .. question:: Le résultat de mon auto-test est positif et je dois confirmer ce résultat
     :level: 3
