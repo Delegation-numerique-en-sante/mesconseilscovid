@@ -1,6 +1,6 @@
 #### À l’international
 
-L’entrée en France et toute sortie du territoire à destination ou en provenance d’un pays de l’espace européen, ou d’un pays classé vert (Australie, Corée du Sud, Israël, Japon, Liban, Nouvelle-Zélande, Singapour) est permise sans présentation d’un motif impérieux pour les personnes vaccinées comme non vaccinées.  
+L’entrée en France et toute sortie du territoire à destination ou en provenance d’un pays de l’espace européen, ou d’un pays classé vert (Espace européen, Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan et Vanuatu) est permise sans présentation d’un motif impérieux pour les personnes vaccinées comme non vaccinées.  
 
 Toute entrée en France est conditionnée à la réalisation d’un test PCR ou antigénique de moins de 48h ou 72h (selon les pays), à l’exception des :
 * travailleurs transfrontaliers ;
@@ -12,7 +12,7 @@ Pour plus d’informations sur [vos déplacements ou voyages](https://www.interi
 
 #### Pays à risque classés rouge
 
-Les conditions d’entrée sur le territoire pour les **voyageurs en provenance des pays les plus à risque** classés rouge (Afrique du Sud, Argentine, Bahreïn, Bangladesh, Brésil, Chili, Colombie, Costa Rica, Émirats arabes unis, Inde, Népal, Pakistan, Qatar, Sri Lanka, Turquie, Uruguay) ont été renforcées.   
+Les conditions d’entrée sur le territoire pour les **voyageurs en provenance des pays les plus à risque** classés rouge (Afghanistan, Afrique du Sud, Argentine, Bahreïn, Bangladesh, Bolivie, Brésil, Chili, Colombie, Costa-Rica, Inde, Maldives, Namibie, Népal, Pakistan, Paraguay, Russie, Seychelles, Sri Lanka, Suriname et Uruguay) ont été renforcées.   
   
 Nous vous conseillons de consulter [le site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage) et séléctionner la rubrique correspondant à votre situation pour connaître les mesures qui s’appliquent.
 
