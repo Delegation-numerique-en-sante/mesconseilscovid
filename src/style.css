@@ -1082,14 +1082,14 @@ a.button-feedback-social-facebook {
     margin-top: 0;
     margin-left: 1rem;
 }
-a.button-feedback-social-twitter {
-    background: no-repeat 24px center url('feedback-social-twitter.svg');
+a.button-feedback-social-messenger {
+    background: no-repeat 24px center url('feedback-social-messenger.svg');
     padding: 12px 24px 12px 60px;
     margin-top: 0;
     margin-left: 1rem;
 }
-a.button-feedback-social-messenger {
-    background: no-repeat 24px center url('feedback-social-messenger.svg');
+a.button-feedback-social-whatsapp {
+    background: no-repeat 24px center url('feedback-social-whatsapp.svg');
     padding: 12px 24px 12px 60px;
     margin-top: 0;
     margin-left: 1rem;
