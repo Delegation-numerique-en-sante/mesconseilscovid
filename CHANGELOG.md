@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-06-24
+
+* mise à jour des pays rouges/verts
+* ajout d’une page thématique sur les types de tests
+* mise à jour des détails pour la vaccination
+
 ## 2021-06-22
 
 * mise à jour relative au couvre-feu
