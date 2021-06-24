@@ -10,12 +10,12 @@
 
 .. question:: Quand pourrai-je me faire vacciner ?
 
-    <span class="nouveau">nouveau</span> Les mineurs âgés de plus de 12 ans peuvent se faire vacciner depuis le 15 juin.
+    <span class="nouveau">nouveau</span> Les mineurs âgés de plus de 12 ans peuvent se faire vacciner.
 
     Vous pouvez vous faire vacciner **dès maintenant** :
 
-    * si vous avez entre **12 ans et 17 ans**, sans conditions mais avec une [**autorisation parentale**](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf);
-    * si vous avez plus de 18 ans, sans conditions;
+    * si vous avez entre **12 ans et 17 ans**, sans conditions mais avec une [**autorisation parentale**](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) ;
+    * si vous avez plus de 18 ans, sans conditions ;
     * si vous êtes **enceinte**, à partir du second trimestre de votre grossesse.
 
 
@@ -44,7 +44,7 @@
 
 .. question:: Que faire si mon rendez-vous pour la 2<sup>e</sup> dose tombe pendant mes vacances ?
 
-    Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée 42 jours (soit 6 semaines) après la première. Exceptionnellement, durant la période estivale, la deuxième dose pourra avoir lieu entre 21 et 49 jours (soit 3 à 7 semaines) après la première, afin de permettre à chacun de compléter sa vaccination avant ou après ses vacances d'été.
+    Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée 42 jours (soit 6 semaines) après la première. Exceptionnellement, durant la période estivale, l’injection de la deuxième dose pourra avoir lieue entre 21 et 49 jours (soit 3 à 7 semaines) après la première, afin de permettre à chacun(e) de compléter sa vaccination avant ou après ses vacances d’été.
 
 
 .. question:: Quels sont les effets secondaires des vaccins contre la Covid ?
@@ -71,12 +71,12 @@
 
 .. question:: J’ai déjà eu la Covid, dois-je me faire vacciner (1<sup>re</sup> dose) ?
 
-    **Oui.** Si vous avez eu la Covid : une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum **2 mois après la maladie**, idéalement 6 mois pour une efficacité maximale.
+    **Oui.** Si vous avez eu la Covid : une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum **2 mois après la maladie**, idéalement 6 mois pour une efficacité maximale.
     
     
-.. question:: J’ai déjà eu la Covid, comment le prouver pour ne recevoir qu'une seule dose ?  
+.. question:: J’ai déjà eu la Covid, comment le prouver pour ne recevoir qu’une seule dose ?  
     
-    Lors de votre rendez-vous de vaccination, vous pourrez présenter : un test de dépistage positif réalisé il y a 2 mois ou plus ou un test sérologique (prise de sang qui recherche des anticorps) positif.
+    Lors de votre rendez-vous de vaccination, vous pourrez présenter un test de **dépistage positif** réalisé il y a 2 mois *ou* plus ou un **test sérologique** (prise de sang qui recherche des anticorps) positif.
     
     
 .. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?
