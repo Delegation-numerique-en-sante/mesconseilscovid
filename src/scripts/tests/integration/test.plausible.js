@@ -13,7 +13,7 @@ describe('Plausible', function () {
         await page.waitForSelector('#page.ready')
         assert.equal(
             await page.title(),
-            'Mes Conseils Covid — Isolement, tests, vaccins, contact à risque…'
+            'Mes Conseils Covid — Isolement, tests, vaccins, attestations, contact à risque…'
         )
 
         await waitForPlausibleTrackingEvents(page, ['pageview:introduction'])
