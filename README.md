@@ -1,6 +1,6 @@
 # Mes Conseils Covid
 
-## Isolement, tests, vaccins… tout savoir pour prendre soin de votre santé
+## Isolement, tests, vaccins, attestations, contact à risque…
 
 https://mesconseilscovid.sante.gouv.fr/
 

@@ -514,7 +514,7 @@ describe('Parcours', function () {
             ])
             assert.equal(
                 await page.title(),
-                'Mon statut actuel de vaccination contre la Covid (étape 1) — Mes Conseils Covid — Isolement, tests, vaccins, contact à risque…'
+                'Mon statut actuel de vaccination contre la Covid (étape 1) — Mes Conseils Covid — Isolement, tests, vaccins, attestations, contact à risque…'
             )
         }
 
