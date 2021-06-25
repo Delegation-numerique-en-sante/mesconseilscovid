@@ -463,10 +463,10 @@ export default class AlgorithmeOrientation {
             if (this.profil.covid_passee) {
                 if (this.profil.hasCovidPlus6Mois()) {
                     blockNames.push('reponse-historique-6-mois-plus')
-                } else if (this.profil.hasCovidPlus3Mois()) {
-                    blockNames.push('reponse-historique-3-6-mois')
+                } else if (this.profil.hasCovidPlus2Mois()) {
+                    blockNames.push('reponse-historique-2-6-mois')
                 } else {
-                    blockNames.push('reponse-historique-3-mois-moins')
+                    blockNames.push('reponse-historique-2-mois-moins')
                 }
             } else {
                 blockNames.push('reponse-historique-sans')
@@ -486,10 +486,10 @@ export default class AlgorithmeOrientation {
                     blockNames = blockNames.concat(
                         this._conseilsVaccins(algoVaccination)
                     )
-                } else if (this.profil.hasCovidPlus3Mois()) {
-                    blockNames.push('conseils-vaccins-3-6-mois')
+                } else if (this.profil.hasCovidPlus2Mois()) {
+                    blockNames.push('conseils-vaccins-2-6-mois')
                 } else {
-                    blockNames.push('conseils-vaccins-3-mois-moins')
+                    blockNames.push('conseils-vaccins-2-mois-moins')
                 }
             } else {
                 blockNames = blockNames.concat(this._conseilsVaccins(algoVaccination))

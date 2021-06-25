@@ -661,28 +661,28 @@ describe('Profil', function () {
         profil.covid_passee = true
         profil.covid_passee_date = date
         assert.strictEqual(profil.hasCovidPlus6Mois(), true)
-        assert.strictEqual(profil.hasCovidPlus3Mois(), true)
+        assert.strictEqual(profil.hasCovidPlus2Mois(), true)
     })
-    it('On sait identifier les profils qui ont une Covid de plus de 3 mois', function () {
+    it('On sait identifier les profils qui ont une Covid de plus de 2 mois', function () {
         const profil = new Profil('mes_infos')
-        const date = joursAvant(100)
+        const date = joursAvant(70)
         profil.covid_passee = true
         profil.covid_passee_date = date
         assert.strictEqual(profil.hasCovidPlus6Mois(), false)
-        assert.strictEqual(profil.hasCovidPlus3Mois(), true)
+        assert.strictEqual(profil.hasCovidPlus2Mois(), true)
     })
-    it('On sait identifier les profils qui ont une Covid de moins de 3 mois', function () {
+    it('On sait identifier les profils qui ont une Covid de moins de 2 mois', function () {
         const profil = new Profil('mes_infos')
-        const date = joursAvant(80)
+        const date = joursAvant(50)
         profil.covid_passee = true
         profil.covid_passee_date = date
         assert.strictEqual(profil.hasCovidPlus6Mois(), false)
-        assert.strictEqual(profil.hasCovidPlus3Mois(), false)
+        assert.strictEqual(profil.hasCovidPlus2Mois(), false)
     })
     it('On sait identifier les profils qui n’ont pas eu la Covid', function () {
         const profil = new Profil('mes_infos')
         profil.covid_passee = false
         assert.strictEqual(profil.hasCovidPlus6Mois(), false)
-        assert.strictEqual(profil.hasCovidPlus3Mois(), false)
+        assert.strictEqual(profil.hasCovidPlus2Mois(), false)
     })
 })

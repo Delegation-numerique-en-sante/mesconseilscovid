@@ -639,8 +639,8 @@ export default class Profil {
         }
     }
 
-    hasCovidPlus3Mois() {
-        return this._hasCovidPlus(3)
+    hasCovidPlus2Mois() {
+        return this._hasCovidPlus(2)
     }
 
     hasCovidPlus6Mois() {
