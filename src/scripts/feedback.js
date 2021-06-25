@@ -65,11 +65,19 @@ export function bindFeedback(component, app) {
     if (partagerButton) {
         partagerButton.addEventListener('click', (event) => {
             event.preventDefault()
-            app.plausible('Partager')
+            app.plausible('Menu Partager')
             const transitionDelay = component.dataset.feedbackTransitionDelay
             opacityTransition(component, transitionDelay, (component) => {
                 hideElement(component.querySelector('.feedback-question'))
                 showElement(component.querySelector('.feedback-partager'))
+                const partagerLinks = component.querySelectorAll('.feedback-partager a')
+                partagerLinks.forEach((partagerLink) => {
+                    partagerLink.addEventListener('click', () => {
+                        app.plausible('Partage avec…', {
+                            service: partagerLink.dataset.service,
+                        })
+                    })
+                })
             })
         })
     }
