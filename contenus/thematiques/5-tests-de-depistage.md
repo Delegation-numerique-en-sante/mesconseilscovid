@@ -45,10 +45,10 @@
 .. question:: Je souhaite me faire dépister mais les prélèvements nasopharyngés sont impossibles dans mon cas
     :level: 3
 
-    Le test **RT-PCR salivaire** est indiqué dans ces cas : enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…
+    Le test **RT-PCR salivaire** est indiqué dans ces cas : enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…
 
 
-## Quels sont les différents tests de dépistage de la Covid-19 ?
+## Quels sont les différents tests de dépistage de la Covid-19 ?
 
 <div class="conseils">
 <details>
@@ -117,7 +117,7 @@
 
 .. summary:: Autotests
 
-.. question::  Les autotests
+.. question:: Les autotests
     :level: 3
 
     Des autotests sont disponibles en pharmacie. Ce test est un prélèvement nasal à réaliser chez soi. Ils ne sont pas pris en charge par l’Assurance maladie sauf dans le cas des professionnels exerçant auprès de personnes vulnérables (âgées, handicapées…) et dans la limite de 10 par mois.
