@@ -1,6 +1,6 @@
 #### À l’international
 
-L’entrée en France, et toute sortie du territoire, à destination ou en provenance des pays « verts », est permise sans présentation d’un motif impérieux pour les personnes vaccinées comme non vaccinées. Il s’agit des pays de l’espace européen, auxquels s’ajoutent l'Albanie, l'Arabie Saoudite, l’Australie, la Bosnie, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu.
+L’entrée en France, et toute sortie du territoire, à destination ou en provenance des pays « verts », est permise sans présentation d’un motif impérieux pour les personnes vaccinées comme non vaccinées. Il s’agit des pays de l’espace européen, auxquels s’ajoutent l’Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu.
 
 Toute entrée en France est conditionnée à la réalisation d’un test PCR ou antigénique de moins de 48 h ou 72 h (selon les pays), à l’exception des :
 * travailleurs transfrontaliers ;
