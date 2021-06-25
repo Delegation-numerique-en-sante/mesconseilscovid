@@ -14,7 +14,7 @@ export function pageThematique(app) {
 
 function ouvreDetailsSiFragment() {
     const currentAnchor = document.location.hash ? document.location.hash.slice(1) : ''
-    if (currentAnchor.startsWith('anchor-')) {
+    if (currentAnchor.substring(0, 7) === 'anchor-') {
         const target = document.querySelector(`#${currentAnchor}`)
         if (!target) return
         if (target.parentElement.tagName === 'DETAILS')
@@ -37,7 +37,7 @@ function boutonBasculeVersMonProfil(app) {
 
 function partagePageEnCours() {
     const partageLinks = document.querySelectorAll('.feedback-partager a')
-    partageLinks.forEach((partageLink) => {
+    Array.from(partageLinks).forEach((partageLink) => {
         let href = partageLink.href
         let url = new URL(document.URL)
         url.searchParams.set('source', 'partage-thematique')
