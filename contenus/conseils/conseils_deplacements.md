@@ -1,8 +1,8 @@
 #### À l’international
 
-L’entrée en France et toute sortie du territoire à destination ou en provenance d’un pays de l’espace européen, ou d’un pays classé vert (Espace européen, Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan et Vanuatu) est permise sans présentation d’un motif impérieux pour les personnes vaccinées comme non vaccinées.  
+L’entrée en France et toute sortie du territoire à destination ou en provenance d’un pays classé vert (Espace européen, Albanie, Arabie Saoudite, Australie, Bosnie, Canada, Corée du Sud, États-Unis, Hong-Kong, Israël, Japon, Kosovo, Liban, Macédoine du Nord, Monténégro, Nouvelle-Zélande, Serbie, Singapour, Taïwan et Vanuatu) est permise sans présentation d’un motif impérieux pour les personnes vaccinées comme non vaccinées.  
 
-Toute entrée en France est conditionnée à la réalisation d’un test PCR ou antigénique de moins de 48h ou 72h (selon les pays), à l’exception des :
+Toute entrée en France est conditionnée à la réalisation d’un test PCR ou antigénique de moins de 48 h ou 72 h (selon les pays), à l’exception des :
 * travailleurs transfrontaliers ;
 * personnes vaccinées en provenance d’un pays classé vert.
 
@@ -19,9 +19,10 @@ Nous vous conseillons de consulter [le site du ministère de l’Intérieur](htt
 Les mesures peuvent notamment impliquer : 
 
 * Restriction des motifs impérieux.
-* Avant embarquement, renforcement du dispositif de test avec présentation d’un test PCR ou antigénique négatif de moins de 48h.  
-* À l’arrivée en France, réalisation d’un test antigénique systématique.
-* Mise en quarantaine stricte pendant 10 jours à l’arrivée sur arrêté préfectoral, avec restrictions des horaires de sortie (10 h-12 h).
-* Plus d’informations sont disponibles : 
+* Avant embarquement, renforcement du dispositif de test avec présentation d’un test PCR ou antigénique négatif de moins de 48 h.
+* À l’arrivée en France :
+    * réalisation d’un test antigénique systématique ;
+    * mise en quarantaine stricte pendant 10 jours à l’arrivée sur arrêté préfectoral, avec restrictions des horaires de sortie (10 h-12 h).
+* Plus d’informations sont disponibles :
   * [sur diplomatie.gouv.fr](https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/informations-pratiques/article/coronavirus-covid-19).
-  * sur notre page thématique : [Pass sanitaire, QR code, voyages, que faut-il retenir ?](https://mesconseilscovid.sante.gouv.fr/pass-sanitaire-qr-code-voyages.html).
+  * sur notre page thématique : [Pass sanitaire, QR code, voyages, que faut-il retenir ?](https://mesconseilscovid.sante.gouv.fr/pass-sanitaire-qr-code-voyages.html).
