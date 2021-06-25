@@ -71,7 +71,7 @@ export function bindFeedback(component, app) {
                 hideElement(component.querySelector('.feedback-question'))
                 showElement(component.querySelector('.feedback-partager'))
                 const partagerLinks = component.querySelectorAll('.feedback-partager a')
-                partagerLinks.forEach((partagerLink) => {
+                Array.from(partagerLinks).forEach((partagerLink) => {
                     partagerLink.addEventListener('click', () => {
                         app.plausible('Partage avec…', {
                             service: partagerLink.dataset.service,
