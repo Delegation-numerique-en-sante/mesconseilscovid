@@ -44,7 +44,7 @@
 
 .. question:: Que faire si mon rendez-vous pour la 2<sup>e</sup> dose tombe pendant mes vacances ?
 
-    Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée 42 jours (soit 6 semaines) après la première. Exceptionnellement, durant la période estivale, l’injection de la deuxième dose pourra avoir lieu entre 21 et 49 jours (soit 3 à 7 semaines) après la première, afin de permettre à chacun(e) de compléter sa vaccination avant ou après ses vacances d’été.
+    Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée entre 39 et 42 jours (soit 6 semaines) après la première. Exceptionnellement, durant la période estivale, l’injection de la deuxième dose pourra avoir lieu entre 21 et 49 jours (soit 3 à 7 semaines) après la première, afin de permettre à chacun(e) de compléter sa vaccination avant ou après ses vacances d’été.
 
 
 .. question:: Quels sont les effets secondaires des vaccins contre la Covid ?
@@ -59,7 +59,7 @@
     Il existe des exceptions :
 
     * une personne qui a déjà eu la Covid n’aura besoin que d’une seule dose de vaccin pour être complètement vaccinée ;
-    * une personne fortement immunodéprimée recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné(e) par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
+    * une personne fortement immunodéprimée recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné(e) par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
 
     Le vaccin Janssen ne nécessite qu’une seule dose.
 
