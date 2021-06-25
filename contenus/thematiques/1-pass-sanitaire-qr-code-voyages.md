@@ -228,7 +228,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 
     Les mesures sont plus ou moins contraignantes selon le pays d’où vous revenez :
 
-    * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements) (pays de l’espace européen, auxquels s’ajoutent l’Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu.) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h.
+    * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements) (pays de l’espace européen, auxquels s’ajoutent l’Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h.
 
     * D’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements) (Afghanistan, Afrique du Sud, Argentine, Bahreïn, Bangladesh, Bolivie, Brésil, Chili, Colombie, Costa-Rica, Inde, Maldives, Namibie, Népal, Pakistan, Paraguay, Russie, Seychelles, Sri Lanka, Suriname et Uruguay), vous devez :
         - à l’embarquement, présenter un test PCR ou antigénique négatif réalisé il y a moins de 48 h ;
