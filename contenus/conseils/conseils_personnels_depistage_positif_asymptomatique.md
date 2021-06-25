@@ -5,7 +5,7 @@ Nous vous conseillons de :
 1. {.seulement-si-foyer} Mettre en place des **mesures d’hygiène renforcée** dans votre foyer pour protéger vos proches (voir la section **Isolement** plus bas).
 1. {.seulement-si-foyer} Les autres membres de votre foyer sont considérés comme **cas contact**, et doivent :
     - se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**) ;
-    - faire un **test antigénique immédiatement** (voir la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a>) : si leur test est **positif**, ils devront rester **en isolement au moins 10 jours** à partir de la date du test ; si leur test est **négatif**, ils devront refaire un test 7 jours après votre guérison (voir l’<a href="illustrations/isolement-foyer-malade.png">infographie détaillée</a>).
+    - faire un **test antigénique immédiatement** (voir la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a>) : si leur test est **positif**, ils devront rester **en isolement au moins 10 jours** à partir de la date du test ; si leur test est **négatif**, ils devront refaire un test 7 jours après votre guérison (voir l’<a href="illustrations/isolement-foyer-malade.png">infographie détaillée</a>).
 1. Si vous constatez l’apparition de **symptômes** :
     * Contacter votre médecin et **faire un test**.
     * Ne pas prendre d’**anti-inflammatoires** (ibuprofène ou kétoprofène) sans avis médical. Les anti-inflammatoires pourraient **aggraver** l’infection à la Covid. Seul le **paracétamol** est recommandé. En cas de doute, demandez conseil à votre médecin.

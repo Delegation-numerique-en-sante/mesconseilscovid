@@ -1,4 +1,4 @@
-Qu’est-ce qui change le 19 mai, le 9 juin et le 30 juin ? Consultez le détail des [modalités et du calendrier des réouvertures](https://www.gouvernement.fr/les-modalites-et-le-calendrier-des-reouvertures).
+Qu’est-ce qui change le 19 mai, le 9 juin et le 30 juin ? Consultez le détail des [modalités et du calendrier des réouvertures](https://www.gouvernement.fr/les-modalites-et-le-calendrier-des-reouvertures).
 
 Pour vos **courses**, nous vous conseillons de :
 
