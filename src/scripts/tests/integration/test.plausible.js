@@ -348,7 +348,7 @@ describe('Plausible', function () {
             'Questionnaire terminé:conseils',
             'Questionnaire terminé pour moi:conseils',
             'pageview:conseils',
-            'Partager:conseils',
+            'Menu Partager:conseils',
         ])
     })
 })
