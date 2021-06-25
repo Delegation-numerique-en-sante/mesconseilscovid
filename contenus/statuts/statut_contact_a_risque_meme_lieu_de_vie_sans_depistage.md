@@ -1,1 +1,1 @@
-Faites un **test antigénique immédiatement**, restez en **isolement**, puis  refaites un test 7 jours après la guérison de la personne malade.
+Faites un **test antigénique immédiatement**, restez en **isolement**, puis  refaites un test 7 jours après la guérison de la personne malade.

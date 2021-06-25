@@ -5,7 +5,7 @@ Retrouvez le <a href="#conseils-depistage" class="lien-depistage">lieu de test l
 </div>
 
 * Les tests de dépistage sont **accessibles sur demande** et sans prescription médicale, sans même présenter de symptômes.
-* Les tests de dépistage sont **intégralement pris en charge** pour tout le monde par l’assurance maladie. 
+* Les tests de dépistage sont **intégralement pris en charge** pour tout le monde par l’assurance maladie.
 
 * Plus d’informations :
     * Les prochaines étapes du parcours : [Isolement, test : que faire ?](https://www.gouvernement.fr/sites/default/files/arbre_decisionnel_covid_-_nouveau.pdf)

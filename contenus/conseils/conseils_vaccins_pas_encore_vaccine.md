@@ -3,8 +3,8 @@
 * Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech*.
 
 * Chez son **médecin traitant**, en cabinet infirmier, ou en pharmacie :
-    * avec un vaccin *Moderna* (si vous avez **18 ans ou plus**),
-    * avec un vaccin *AstraZeneca* ou *Janssen* (si vous avez **55 ans ou plus**).
+    * avec un vaccin *Moderna* (si vous avez **18 ans ou plus**),
+    * avec un vaccin *AstraZeneca* ou *Janssen* (si vous avez **55 ans ou plus**).
 
 <div class="conseil">
 
@@ -17,7 +17,7 @@ Trouvez les <a href="#conseils-vaccins" class="lien-vaccination">lieux de vaccin
 
 Vous pouvez vous faire vacciner **dès maintenant** :
 
-* si vous avez **18 ans et plus**, sans conditions ;
+* si vous avez **18 ans et plus**, sans conditions ;
 * <span class="nouveau">nouveau</span> si vous avez entre **12 et 17 ans**, un [formulaire d’autorisation](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) doit être rempli pour attester du consentement des parents ou du tuteur légal, la **carte vitale** du parent ou tuteur accompagnant est requise, même pour les enfants de plus de 16 ans disposant de leur propre carte vitale ;
 * si vous êtes **enceinte**, à partir du second trimestre de votre grossesse.
 

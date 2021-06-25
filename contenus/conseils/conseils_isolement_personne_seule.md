@@ -16,6 +16,6 @@
 
 * que chacun se **lave les mains** avant et après utilisation ;
 * **portez un masque** ;
-* tenez vous éloigné **à plus de 2 mètres** ;
+* tenez-vous éloigné **à plus de 2 mètres** ;
 * limitez vos discussions à **moins de 15 minutes**.
 
