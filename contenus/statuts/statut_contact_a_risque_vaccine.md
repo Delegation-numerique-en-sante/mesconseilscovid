@@ -1,0 +1,1 @@
+Il n’est pas nécessaire de vous isoler ou de faire un test.
