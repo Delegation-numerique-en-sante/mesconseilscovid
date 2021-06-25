@@ -442,7 +442,7 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
-        it('Cas général (pas encore vacciné, avec historique 3-6 mois)', function () {
+        it('Cas général (pas encore vacciné, avec historique 2-6 mois)', function () {
             var profil = new Profil('mes_infos', {
                 covid_passee: true,
             })
@@ -450,23 +450,23 @@ describe('Blocs d’informations additionnels', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
                 'reponse-vaccins-pas-encore',
-                'reponse-historique-3-6-mois',
+                'reponse-historique-2-6-mois',
                 'conseils-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-3-6-mois',
+                'conseils-vaccins-2-6-mois',
             ])
         })
 
-        it('Cas général (pas encore vacciné, avec historique 3 mois -)', function () {
+        it('Cas général (pas encore vacciné, avec historique 2 mois -)', function () {
             var profil = new Profil('mes_infos', {
                 covid_passee: true,
             })
-            profil.covid_passee_date = joursAvant(30 * 2)
+            profil.covid_passee_date = joursAvant(30 * 1)
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
                 'reponse-vaccins-pas-encore',
-                'reponse-historique-3-mois-moins',
+                'reponse-historique-2-mois-moins',
                 'conseils-vaccins-pas-encore-vaccine',
-                'conseils-vaccins-3-mois-moins',
+                'conseils-vaccins-2-mois-moins',
             ])
         })
 
