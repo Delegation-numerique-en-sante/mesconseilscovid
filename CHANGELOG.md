@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-06-25
+
+* réduit le délai minimal de vaccination après l’infection
+
 ## 2021-06-24
 
 * mise à jour des pays rouges/verts
