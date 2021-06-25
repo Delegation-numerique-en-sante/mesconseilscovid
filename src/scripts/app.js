@@ -227,10 +227,9 @@ export default class App {
         this.plausible('pageview')
         this.atinternet(pageName)
     }
-    plausible(eventName) {
+    plausible(eventName, props = {}) {
         const searchParams = new URLSearchParams(window.location.search)
         const options = {}
-        const props = {}
         if (typeof this.profil.nom !== 'undefined') {
             props['profil'] = this.profil.estMonProfil() ? 'moi' : 'proche'
         }
