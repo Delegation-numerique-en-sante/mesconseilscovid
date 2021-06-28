@@ -5,33 +5,42 @@ import { joursAvant, heuresAvant } from '../utils'
 import Profil from '../profil'
 
 describe('Algorithme dépistage', function () {
-    describe('Dépistage positif récent', function () {
-        it('Vrai si aujourd’hui', function () {
+    describe('Prise en compte d’un test positif', function () {
+        it('Valable s’il date d’aujourd’hui', function () {
             var profil = new Profil('mes_infos')
             const today = new Date()
+
             profil.depistage = true
             profil.depistage_type = 'rt-pcr'
             profil.depistage_resultat = 'positif'
             profil.depistage_start_date = today
-            assert.strictEqual(profil.depistagePositifRecent(), true)
+
+            assert.isTrue(profil.depistagePositifRecent())
+            assert.isFalse(profil.depistagePositifObsolete())
         })
 
-        it('Vrai s’il y a 29 jours', function () {
+        it('Valable s’il date d’il y a 29 jours', function () {
             var profil = new Profil('mes_infos')
+
             profil.depistage = true
             profil.depistage_type = 'rt-pcr'
             profil.depistage_resultat = 'positif'
             profil.depistage_start_date = heuresAvant(1, joursAvant(29))
-            assert.strictEqual(profil.depistagePositifRecent(), true)
+
+            assert.isTrue(profil.depistagePositifRecent())
+            assert.isFalse(profil.depistagePositifObsolete())
         })
 
-        it('Faux s’il y a 30 jours', function () {
+        it('Obsolète s’il date d’il y a  30 jours', function () {
             var profil = new Profil('mes_infos')
+
             profil.depistage = true
             profil.depistage_type = 'rt-pcr'
             profil.depistage_resultat = 'positif'
             profil.depistage_start_date = heuresAvant(1, joursAvant(30))
-            assert.strictEqual(profil.depistagePositifRecent(), false)
+
+            assert.isFalse(profil.depistagePositifRecent())
+            assert.isTrue(profil.depistagePositifObsolete())
         })
     })
 
@@ -111,33 +120,39 @@ describe('Algorithme dépistage', function () {
         })
     })
 
-    describe('Dépistage en attente récent', function () {
-        it('Vrai si aujourd’hui', function () {
+    describe('Prise en compte d’un test en attente de résultat', function () {
+        it('Valable s’il date d’aujourd’hui', function () {
             var profil = new Profil('mes_infos')
             const today = new Date()
+
             profil.depistage = true
             profil.depistage_type = 'rt-pcr'
             profil.depistage_resultat = 'en_attente'
             profil.depistage_start_date = today
-            assert.strictEqual(profil.depistageEnAttenteRecent(), true)
+
+            assert.isTrue(profil.depistageEnAttenteRecent())
         })
 
-        it('Vrai s’il y a 6 jours', function () {
+        it('Valable s’il date d’il y a 6 jours', function () {
             var profil = new Profil('mes_infos')
+
             profil.depistage = true
             profil.depistage_type = 'rt-pcr'
             profil.depistage_resultat = 'en_attente'
             profil.depistage_start_date = heuresAvant(1, joursAvant(6))
-            assert.strictEqual(profil.depistageEnAttenteRecent(), true)
+
+            assert.isTrue(profil.depistageEnAttenteRecent())
         })
 
-        it('Faux s’il y a 7 jours', function () {
+        it('Obsolète s’il date d’il y a 7 jours', function () {
             var profil = new Profil('mes_infos')
+
             profil.depistage = true
             profil.depistage_type = 'rt-pcr'
             profil.depistage_resultat = 'en_attente'
             profil.depistage_start_date = heuresAvant(1, joursAvant(7))
-            assert.strictEqual(profil.depistageEnAttenteRecent(), false)
+
+            assert.isFalse(profil.depistageEnAttenteRecent())
         })
     })
 })
