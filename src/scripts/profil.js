@@ -736,28 +736,24 @@ export default class Profil {
 
     // On considère un résultat négatif comme valable s’il est assez récent.
     depistageNegatifRecent() {
-        const depistageNegatif =
-            this.depistage === true &&
-            this.depistage_resultat === 'negatif' &&
-            typeof this.depistage_start_date !== 'undefined'
-
-        const tropAncien =
-            this.joursEcoulesDepuisDepistage() >= JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF
-
-        return depistageNegatif && !tropAncien
+        return this._depistageNegatif() && !this._depistageNegatifTropAncien()
     }
 
     // On considère un résultat négatif comme obsolète s’il est trop ancien.
     depistageNegatifObsolete() {
-        const depistageNegatif =
+        return this._depistageNegatif() && this._depistageNegatifTropAncien()
+    }
+
+    _depistageNegatif() {
+        return (
             this.depistage === true &&
             this.depistage_resultat === 'negatif' &&
             typeof this.depistage_start_date !== 'undefined'
+        )
+    }
 
-        const tropAncien =
-            this.joursEcoulesDepuisDepistage() >= JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF
-
-        return depistageNegatif && tropAncien
+    _depistageNegatifTropAncien() {
+        return this.joursEcoulesDepuisDepistage() >= JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF
     }
 
     depistageEnAttenteRecent() {
