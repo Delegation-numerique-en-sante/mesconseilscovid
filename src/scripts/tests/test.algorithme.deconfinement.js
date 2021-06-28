@@ -12,21 +12,21 @@ describe('Algorithme déconfinement', function () {
             const today = new Date()
             profil.symptomes_start_date = today
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isQuarantaineDone(), false)
+            assert.isFalse(algoDeconfinement.isQuarantaineDone())
         })
 
         it('Faux s’il y a 9 jours', function () {
             var profil = new Profil('mes_infos')
             profil.symptomes_start_date = joursAvant(9)
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isQuarantaineDone(), false)
+            assert.isFalse(algoDeconfinement.isQuarantaineDone())
         })
 
         it('Vrai s’il y a 10 jours', function () {
             var profil = new Profil('mes_infos')
             profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isQuarantaineDone(), true)
+            assert.isTrue(algoDeconfinement.isQuarantaineDone())
         })
     })
 
@@ -43,7 +43,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isSuiviRegulier(), true)
+            assert.isTrue(algoDeconfinement.isSuiviRegulier())
         })
 
         it('Faux si une entrée ces dernières 24h seulement', function () {
@@ -55,7 +55,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isSuiviRegulier(), false)
+            assert.isFalse(algoDeconfinement.isSuiviRegulier())
         })
 
         it('Faux si deux entrées ces dernières 24h seulement', function () {
@@ -70,7 +70,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isSuiviRegulier(), false)
+            assert.isFalse(algoDeconfinement.isSuiviRegulier())
         })
 
         it('Faux si une entrée ces dernières 48h seulement', function () {
@@ -82,7 +82,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isSuiviRegulier(), false)
+            assert.isFalse(algoDeconfinement.isSuiviRegulier())
         })
 
         it('Faux si deux entrées ces dernières 48h seulement', function () {
@@ -97,7 +97,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isSuiviRegulier(), false)
+            assert.isFalse(algoDeconfinement.isSuiviRegulier())
         })
     })
 
@@ -113,7 +113,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isFievreDone(), true)
+            assert.isTrue(algoDeconfinement.isFievreDone())
         })
 
         it('Vrai si suivi récent sans symptômes', function () {
@@ -126,7 +126,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isFievreDone(), true)
+            assert.isTrue(algoDeconfinement.isFievreDone())
         })
 
         it('Faux si suivi récent avec fièvre', function () {
@@ -140,7 +140,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isFievreDone(), false)
+            assert.isFalse(algoDeconfinement.isFievreDone())
         })
 
         it('Vrai si suivi > 48h sans fièvre', function () {
@@ -154,7 +154,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isFievreDone(), true)
+            assert.isTrue(algoDeconfinement.isFievreDone())
         })
 
         it('Vrai si suivi > 48h avec fièvre', function () {
@@ -168,7 +168,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isFievreDone(), true)
+            assert.isTrue(algoDeconfinement.isFievreDone())
         })
 
         it('Faux si suivi récent avec fièvre + > 48h avec fièvre', function () {
@@ -187,7 +187,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isFievreDone(), false)
+            assert.isFalse(algoDeconfinement.isFievreDone())
         })
 
         it('Vrai si suivi récent sans fièvre + > 48h avec fièvre', function () {
@@ -206,7 +206,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isFievreDone(), true)
+            assert.isTrue(algoDeconfinement.isFievreDone())
         })
     })
 
@@ -222,7 +222,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
+            assert.isTrue(algoDeconfinement.isEssoufflementDone())
         })
 
         it('Vrai si suivi récent sans essoufflement (stable)', function () {
@@ -236,7 +236,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
+            assert.isTrue(algoDeconfinement.isEssoufflementDone())
         })
 
         it('Vrai si suivi récent sans essoufflement (aucun)', function () {
@@ -250,7 +250,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
+            assert.isTrue(algoDeconfinement.isEssoufflementDone())
         })
 
         it('Vrai si suivi récent sans symptômes', function () {
@@ -263,7 +263,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
+            assert.isTrue(algoDeconfinement.isEssoufflementDone())
         })
 
         it('Faux si suivi récent avec essoufflement', function () {
@@ -277,7 +277,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isEssoufflementDone(), false)
+            assert.isFalse(algoDeconfinement.isEssoufflementDone())
         })
 
         it('Vrai si suivi > 48h sans essoufflement', function () {
@@ -291,7 +291,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
+            assert.isTrue(algoDeconfinement.isEssoufflementDone())
         })
 
         it('Vrai si suivi > 48h avec essoufflement', function () {
@@ -305,7 +305,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
+            assert.isTrue(algoDeconfinement.isEssoufflementDone())
         })
 
         it('Faux si suivi récent avec essoufflement + > 48h avec essoufflement', function () {
@@ -324,7 +324,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isEssoufflementDone(), false)
+            assert.isFalse(algoDeconfinement.isEssoufflementDone())
         })
 
         it('Vrai si suivi récent sans essoufflement + > 48h avec essoufflement', function () {
@@ -343,7 +343,7 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isEssoufflementDone(), true)
+            assert.isTrue(algoDeconfinement.isEssoufflementDone())
         })
     })
 
@@ -373,7 +373,7 @@ describe('Algorithme déconfinement', function () {
             })
             profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
+            assert.isTrue(algoDeconfinement.isDeconfinable())
         })
 
         it('Vrai s’il y a 10 jours et plus de symptômes', function () {
@@ -397,7 +397,7 @@ describe('Algorithme déconfinement', function () {
             })
             profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isDeconfinable(), true)
+            assert.isTrue(algoDeconfinement.isDeconfinable())
         })
 
         it('Faux s’il y a 10 jours et plus de fièvre ni essoufflement mais sans régularité', function () {
@@ -419,7 +419,7 @@ describe('Algorithme déconfinement', function () {
             })
             profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
+            assert.isFalse(algoDeconfinement.isDeconfinable())
         })
 
         it('Faux s’il y a 9 jours et plus de fièvre ni essoufflement', function () {
@@ -447,7 +447,7 @@ describe('Algorithme déconfinement', function () {
             })
             profil.symptomes_start_date = joursAvant(9)
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
+            assert.isFalse(algoDeconfinement.isDeconfinable())
         })
 
         it('Faux s’il y a 10 jours et fièvre récente mais pas essoufflement', function () {
@@ -475,7 +475,7 @@ describe('Algorithme déconfinement', function () {
             })
             profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
+            assert.isFalse(algoDeconfinement.isDeconfinable())
         })
 
         it('Faux s’il y a 10 jours et plus de fièvre mais essoufflement', function () {
@@ -503,7 +503,7 @@ describe('Algorithme déconfinement', function () {
             })
             profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
-            assert.strictEqual(algoDeconfinement.isDeconfinable(), false)
+            assert.isFalse(algoDeconfinement.isDeconfinable())
         })
     })
 })
