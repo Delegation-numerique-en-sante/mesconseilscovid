@@ -734,14 +734,26 @@ export default class Profil {
         )
     }
 
-    // On considère un résultat négatif comme valable s’il est assez récent.
+    // On considère un résultat négatif comme valable s’il est assez récent
+    // et qu’il ne date pas d’avant le début d’éventuels symptômes.
     depistageNegatifRecent() {
-        return this._depistageNegatif() && !this._depistageNegatifTropAncien()
+        return (
+            this._depistageNegatif() &&
+            !(
+                this._depistageNegatifTropAncien() ||
+                this._depistageNegatifAvantDebutDesSymptomes()
+            )
+        )
     }
 
-    // On considère un résultat négatif comme obsolète s’il est trop ancien.
+    // On considère un résultat négatif comme obsolète s’il est trop ancien
+    // ou s’il date d’avant le début d’éventuels symptômes.
     depistageNegatifObsolete() {
-        return this._depistageNegatif() && this._depistageNegatifTropAncien()
+        return (
+            this._depistageNegatif() &&
+            (this._depistageNegatifTropAncien() ||
+                this._depistageNegatifAvantDebutDesSymptomes())
+        )
     }
 
     _depistageNegatif() {
@@ -754,6 +766,13 @@ export default class Profil {
 
     _depistageNegatifTropAncien() {
         return this.joursEcoulesDepuisDepistage() >= JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF
+    }
+
+    _depistageNegatifAvantDebutDesSymptomes() {
+        return (
+            this.hasSymptomesActuelsReconnus() &&
+            this.depistage_start_date < this.symptomes_start_date
+        )
     }
 
     depistageEnAttenteRecent() {
