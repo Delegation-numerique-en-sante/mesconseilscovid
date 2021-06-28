@@ -35,33 +35,79 @@ describe('Algorithme dépistage', function () {
         })
     })
 
-    describe('Dépistage négatif récent', function () {
-        it('Vrai si aujourd’hui', function () {
+    describe('Prise en compte d’un test négatif', function () {
+        it('Valable s’il date d’aujourd’hui et pas de symptômes', function () {
             var profil = new Profil('mes_infos')
             const today = new Date()
+
             profil.depistage = true
             profil.depistage_type = 'rt-pcr'
             profil.depistage_resultat = 'negatif'
             profil.depistage_start_date = today
-            assert.strictEqual(profil.depistageNegatifRecent(), true)
+
+            assert.isFalse(profil.hasSymptomesActuelsReconnus())
+            assert.isTrue(profil.depistageNegatifRecent())
+            assert.isFalse(profil.depistageNegatifObsolete())
         })
 
-        it('Vrai s’il y a 6 jours', function () {
+        it('Valable s’il date d’il y a 6 jours et pas de symptômes', function () {
             var profil = new Profil('mes_infos')
+
             profil.depistage = true
             profil.depistage_type = 'rt-pcr'
             profil.depistage_resultat = 'negatif'
             profil.depistage_start_date = heuresAvant(1, joursAvant(6))
-            assert.strictEqual(profil.depistageNegatifRecent(), true)
+
+            assert.isFalse(profil.hasSymptomesActuelsReconnus())
+            assert.isTrue(profil.depistageNegatifRecent())
+            assert.isFalse(profil.depistageNegatifObsolete())
         })
 
-        it('Faux s’il y a 7 jours', function () {
+        it('Valable s’il date d’il y a 6 jours et symptômes plus anciens', function () {
             var profil = new Profil('mes_infos')
+
+            profil.depistage = true
+            profil.depistage_type = 'rt-pcr'
+            profil.depistage_resultat = 'negatif'
+            profil.depistage_start_date = heuresAvant(1, joursAvant(6))
+
+            profil.symptomes_actuels = true
+            profil.symptomes_actuels_temperature = true
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(7))
+
+            assert.isTrue(profil.hasSymptomesActuelsReconnus())
+            assert.isTrue(profil.depistageNegatifRecent())
+            assert.isFalse(profil.depistageNegatifObsolete())
+        })
+
+        it('Obsolète s’il date d’il y a 6 jours et symptômes plus récents', function () {
+            var profil = new Profil('mes_infos')
+
+            profil.depistage = true
+            profil.depistage_type = 'rt-pcr'
+            profil.depistage_resultat = 'negatif'
+            profil.depistage_start_date = heuresAvant(1, joursAvant(6))
+
+            profil.symptomes_actuels = true
+            profil.symptomes_actuels_temperature = true
+            profil.symptomes_start_date = heuresAvant(1, joursAvant(5))
+
+            assert.isTrue(profil.hasSymptomesActuelsReconnus())
+            assert.isFalse(profil.depistageNegatifRecent())
+            assert.isTrue(profil.depistageNegatifObsolete())
+        })
+
+        it('Obsolète s’il date d’il y a 7 jours', function () {
+            var profil = new Profil('mes_infos')
+
             profil.depistage = true
             profil.depistage_type = 'rt-pcr'
             profil.depistage_resultat = 'negatif'
             profil.depistage_start_date = heuresAvant(1, joursAvant(7))
-            assert.strictEqual(profil.depistageNegatifRecent(), false)
+
+            assert.isFalse(profil.hasSymptomesActuelsReconnus())
+            assert.isFalse(profil.depistageNegatifRecent())
+            assert.isTrue(profil.depistageNegatifObsolete())
         })
     })
 
