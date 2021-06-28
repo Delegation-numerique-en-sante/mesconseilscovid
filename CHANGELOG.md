@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-06-28
+
+* considère un test négatif comme obsolète s’il date d’avant les symptômes actuels
+
 ## 2021-06-25
 
 * réduit le délai minimal de vaccination après l’infection
