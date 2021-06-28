@@ -648,7 +648,7 @@ export default class Profil {
     }
 
     hasSymptomesActuelsReconnus() {
-        return !!(this.symptomes_actuels && !this.symptomes_actuels_autre)
+        return Boolean(this.symptomes_actuels && !this.symptomes_actuels_autre)
     }
 
     hasContactARisqueReconnus() {
