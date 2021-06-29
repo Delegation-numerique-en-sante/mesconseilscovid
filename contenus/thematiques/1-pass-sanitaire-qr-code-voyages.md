@@ -269,10 +269,10 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 
     En attendant, assurez-vous de vérifier les conditions d’entrée dans votre pays de destination. Pour cela, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
     
-.. question:: <span class="visually-hidden"> Mon test de dépistage (positif ou négatif) ne comporte pas de QR code, comment l'intégrer dans TousAntiCovid ?
+.. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Mon test de dépistage (positif ou négatif) ne comporte pas de QR code, comment l’intégrer dans TousAntiCovid ?
     :level: 4
     
-    Pour télécharger le certificat de dépistage comportant un QR code, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). Vous pourrez alors le présenter aux frontières lors de vos voyages dans l'Union européenne (à partir de juillet) et l'importer dans votre application TousAntiCovid.
+    Pour télécharger le certificat de dépistage comportant un QR code, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). Vous pourrez le présenter aux frontières lors de vos voyages dans l’Union européenne (à partir de juillet) et l’importer dans votre application TousAntiCovid.
     
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Est-ce que je peux partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
