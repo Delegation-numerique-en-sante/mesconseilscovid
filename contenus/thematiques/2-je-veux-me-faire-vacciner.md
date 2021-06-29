@@ -76,7 +76,7 @@
 
 .. question:: J’ai déjà eu la Covid, comment le prouver et ne recevoir qu’une seule dose ?
 
-    Lors de votre rendez-vous de vaccination, vous pourrez présenter soit un test de **dépistage positif** réalisé il y a 2 mois ou plus, soit un **test sérologique** (prise de sang qui recherche des anticorps) positif. Certains centres de vaccination proposent de faire un test sérologique rapide ou **TROD** lors du rendez-vous de première injection. Si ce test est positif, alors vous ne recevez qu'une seule dose de vaccin. Bientôt, les TROD seront disponibles dans tous les centres de vaccination. 
+    Lors de votre rendez-vous de vaccination, vous pourrez présenter soit un test de **dépistage positif** réalisé il y a 2 mois ou plus, soit un **test sérologique** (prise de sang qui recherche des anticorps) positif. Certains centres de vaccination proposent de faire un test sérologique rapide ou **TROD** lors du rendez-vous de première injection. Si ce test est positif, alors vous ne recevrez qu’une seule dose de vaccin. Bientôt, ces TROD seront disponibles dans tous les centres de vaccination. 
 
 
 .. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?
