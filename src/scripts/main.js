@@ -13,7 +13,6 @@ import SUIVI_IMAGES from '../suivi_*.svg'
 import { register as registerTimeAgo } from 'timeago.js'
 
 import { bindSuppressionTotale } from './actions'
-// import { bindFeedbackContact } from './feedback'
 import { estPageThematique, pageThematique } from './page/thematique'
 import App from './app'
 
@@ -46,7 +45,6 @@ function activeLesMisesAJourAuto(app) {
 }
 
 function initLiensPiedDePage(app) {
-    // bindFeedbackContact(document.querySelector('footer .js-feedback-contact'), app)
     bindSuppressionTotale(document.querySelector('footer .js-suppression'), app)
 }
 

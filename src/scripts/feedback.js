@@ -89,9 +89,3 @@ export function bindFeedback(component, app) {
         showElement(component.querySelector('.feedback-question'))
     })
 }
-
-export function bindFeedbackContact(emailButton, app) {
-    emailButton.addEventListener('click', () => {
-        app.plausible('Contact')
-    })
-}
