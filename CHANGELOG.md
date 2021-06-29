@@ -1,5 +1,12 @@
 # Changelog
 
+## 2021-06-29
+
+* mention des tests sérologiques rapides (TROD)
+* ajout d’un lien SIDEP pour récupérer son certificat de dépistage
+* rend plus visible le bloc de feedback (+ ajout aux pages thématiques)
+* ajout de boutons de partage par Messenger et WhatsApp
+
 ## 2021-06-28
 
 * considère un test négatif comme obsolète s’il date d’avant les symptômes actuels
