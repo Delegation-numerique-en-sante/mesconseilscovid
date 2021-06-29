@@ -3,6 +3,7 @@ cert.pem
 node_modules/
 .cache
 .nyc_output
+.parcel-cache
 __pycache__
 .tox
 *.egg-info

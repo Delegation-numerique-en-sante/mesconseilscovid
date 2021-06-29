@@ -58,12 +58,6 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
 
-      - name: Check service-worker
-        run: |
-          make check-service-worker
-        env:
-          PYTHONUNBUFFERED: "1"
-
   build:
     name: Build
     runs-on: ubuntu-latest

@@ -8,7 +8,13 @@ import 'core-js/web/url'
 import 'core-js/web/url-search-params'
 import './polyfills/custom_event'
 
-import SUIVI_IMAGES from '../suivi_*.svg'
+const SUIVI_IMAGES = {
+    gravite_superieure: require('url:../suivi_gravite_superieure.svg'),
+    gravite: require('url:../suivi_gravite.svg'),
+    interrogation: require('url:../suivi_interrogation.svg'),
+    ok: require('url:../suivi_ok.svg'),
+    stable: require('url:../suivi_stable.svg'),
+}
 
 import { register as registerTimeAgo } from 'timeago.js'
 
@@ -89,11 +95,14 @@ registerTimeAgo('fr', function (number, index) {
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-        .register('../service-worker.js')
-        .then(() => {
-            // console.log('SW registration successful with scope: ', registration.scope)
+        .register(new URL('../service-worker.js', import.meta.url))
+        .then((registration) => {
+            console.log(
+                'ServiceWorker registration successful with scope: ',
+                registration.scope
+            )
         })
         .catch((err) => {
-            console.log('SW registration failed: ', err)
+            console.log('ServiceWorker registration failed: ', err)
         })
 }

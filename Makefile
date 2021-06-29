@@ -70,10 +70,6 @@ check-orphelins:  # Check that all markdown files are in use in template.
 check-diagrammes:  # Check that all files from diagrammes/matrice exist.
 	python3 check.py diagrammes
 
-check-service-worker:  # Check that all files in use are listed in service-worker.js.
-	python3 build.py thematiques
-	python3 check.py service_worker
-
 lint:  ## Run ESLint + check code style.
 	npm run-script lint
 	./node_modules/.bin/prettier src/*.js src/**/*.js src/**/**/*.js src/**/**/**/*.js src/style.css --check
@@ -99,7 +95,7 @@ dev-ssl: key.pem build  ## Local HTTPS server with auto rebuild (without LiveRel
 	python3 serve.py --watch --open --ssl
 
 
-pre-commit: pretty lint test-unit build check-versions check-orphelins check-diagrammes check-service-worker  ## Interesting prior to commit/push.
+pre-commit: pretty lint test-unit build check-versions check-orphelins check-diagrammes  ## Interesting prior to commit/push.
 
 release:
 	echo "{\"version\": \"$$(date --iso-8601)\"}" >static/version.json
