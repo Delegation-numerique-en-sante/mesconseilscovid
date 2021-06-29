@@ -257,7 +257,8 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Comment obtenir un « Pass sanitaire » ?
     :level: 4
 
-    Si votre test positif antigénique ou PCR date de plus de 15 jours et de moins de 6 mois, alors il fait office de « certificat de rétablissement » reconnu comme « Pass sanitaire ».
+    Si votre test positif antigénique ou PCR date de plus de 15 jours et de moins de 6 mois, alors il fait office de « certificat de rétablissement » reconnu comme « Pass sanitaire ».  
+    Pour télécharger le certificat de dépistage comportant un QR Code, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
 
     Attention cependant, ce Pass sanitaire n’est reconnu que pour son utilisation en France et pas encore pour les voyages à l’étranger.
 
@@ -267,7 +268,12 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
     Le certificat de rétablissement, c’est-à-dire un test de dépistage positif de plus de 15 jours et moins de 6 mois, sera généralisé à partir de juillet en Union européenne.
 
     En attendant, assurez-vous de vérifier les conditions d’entrée dans votre pays de destination. Pour cela, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
-
+    
+.. question:: <span class="visually-hidden"> Mon test de dépistage (positif ou négatif) ne comporte pas de QR code, comment l'intégrer dans TousAntiCovid ?
+    :level: 4
+    
+    Pour télécharger le certificat de dépistage comportant un QR code, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). Vous pourrez alors le présenter aux frontières lors de vos voyages dans l'Union européenne (à partir de juillet) et l'importer dans votre application TousAntiCovid.
+    
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Est-ce que je peux partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
