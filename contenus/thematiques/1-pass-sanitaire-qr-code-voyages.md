@@ -95,36 +95,53 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 <details>
 
 .. summary:: Je suis vacciné(e) et je prévois de partir en voyage
-
-.. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Comment obtenir le Pass sanitaire européen ?
+    
+.. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Comment obtenir le « Pass sanitaire européen » ?
     :level: 4
 
-    Si vous êtes vacciné(e), votre attestation de vaccination complète (toutes les doses) sur laquelle figure un QR code constitue votre « Pass sanitaire ».
-
-    Attention, en fonction de votre destination de voyage d’autres documents pourront vous être demandés. Les conditions de voyages sont plus ou moins contraignantes selon les pays de destination. Assurez-vous de vérifier quelles conditions s’appliquent avant de partir.
+    **Cela dépend de votre pays de destination.** Pour certaines destinations, votre attestation de vaccination complète sur laquelle figure un QR code aux normes européennes fait office de « Pass sanitaire européen ». Pour d'autres, seul un test de dépistage négatif, comportant un QR code aux normes européennes est considéré comme « Pass sanitaire européen ». Assurez-vous de vérifier quelles conditions s’appliquent avant de partir. 
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
-.. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Le « Pass sanitaire » est-il déjà en application pour les voyages dans l’Espace européen ?
+.. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> comment savoir si ma vaccination est complète ?
+    :level: 4
+   
+    Votre vaccination est considérée comme terminée si :
+    
+    * vous avez reçu toutes les doses de vaccins que vous deviez recevoir (1, 2 ou 3 doses selon votre situation).
+    * vous avez reçu votre dernère dose de Pfizer, Moderna ou AstraZeneca il y a plus de 14 jours; et plus de 28 jours s'il s'agit du vaccin Janssen. 
+    
+.. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Le « Pass sanitaire européen » est-il déjà en application pour les voyages dans l’Espace européen ?
     :level: 4
 
-    **Non.** Le « Pass sanitaire frontières », ou encore « <span lang="en">Digital Covid Certificate</span> » au niveau européen, devrait rentrer en application à partir de juillet. Il permettra de faciliter les voyages entre les pays membres.
+    **Oui.** Le « Pass sanitaire européen », ou encore « <span lang="en">Digital Covid Certificate</span> » est entré en application le 1er juillet. Il permettra de faciliter les voyages entre les pays membres.
+    Attention, le « Pass sanitaire européen » n'harmonise pas les critères d'accès dans les pays membres. Chaque pays peut exiger un type de justificatif différent : test de dépistage RT-PCR ou antigénique, attestation de vaccination...
+    Pour vérifiez les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
+    
+.. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Comment obtenir une attestation de vaccination avec un QR code à importer dans TousAntiCovid ? 
+    :level: 4
 
-    En attendant, vérifiez les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
-
+    Pour télécharger une attestation de vaccination complète avec un QR code aux normes européennes, rendez-vous sur le [téléservice de l'Assurance maladie](https://attestation-vaccin.ameli.fr/).
+    
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Ma preuve de vaccination est-elle suffisante pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
-    **Oui pour la Corse** : une preuve de vaccination complète est exigée. Vous pouvez la présenter dans votre carnet TousAntiCovid. Vous êtes considéré(e) comme étant complètement vacciné(e) 14 jours après votre dernière dose de vaccin Pfizer, Moderna ou AstraZeneca et 28 jours après l’injection du vaccin Janssen. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
+    **Oui pour la Corse** : une preuve de vaccination complète est exigée. Vous pouvez la présenter dans votre carnet TousAntiCovid. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
 
     Pour l’Outre-mer : les conditions de voyages diffèrent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Je pars en voyage vers un pays de l’Espace européen. Ma preuve de vaccination est-elle suffisante ?
     :level: 4
 
-    **Cela dépend de votre destination.** Tant que le « Pass sanitaire frontières » ne sera pas entré en vigueur, vous ne pourrez pas automatiquement faire valoir votre vaccination pour voyager au sein de l’Union européenne.
+    **Cela dépend de votre destination.** Le « Pass sanitaire européen » permet de facilliter le contrôle des justificatifs (vaccination, tests de dépistage) lors des voyages au sein de l'Espace européen, mais il n'harmonise pas les conditions d'entrées dans les pays membres. Vous ne pourrez donc pas faire automatiquement valoir votre vaccination pour voyager au sein de l’Union européenne.
 
-    La plupart des pays exigent encore la présentation d’un test RT-PCR négatif récent (réalisé dans les 48 h ou 72 h), même pour les personnes vaccinées.
+    Certains pays exigent encore la présentation d’un test RT-PCR ou antigénique négatif récent (réalisé dans les 48 h ou 72 h), même pour les personnes vaccinées. Attention, le délai de validité des tests de dépistage varie selon les pays, et tous n'acceptent pas les tests antigéniques. 
+
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
+    
+.. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Je dois présenter un test de dépistage négatif avec un QR code pour voyager, comment faire ?
+    :level: 4
+    
+    Lorsque vous faites un test, vous recevez un mail ou un SMS pour télécharger le certificat de dépistage sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). C’est sur ce document que vous trouverez le QR code à présenter lors de votre voyage. Le document comporte aussi le QR Code à intégrer dans TousAntiCovid.
 
 .. question:: Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
     :level: 4
