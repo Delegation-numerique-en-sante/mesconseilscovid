@@ -744,7 +744,9 @@ footer .legals {
 .statut-asymptomatique-positif-antigenique,
 .statut-contact-a-risque-avec-test,
 .statut-contact-a-risque-meme-lieu-de-vie,
+.statut-contact-a-risque-meme-lieu-de-vie-vaccine,
 .statut-contact-a-risque-meme-lieu-de-vie-sans-depistage,
+.statut-contact-a-risque-meme-lieu-de-vie-sans-depistage-vaccine,
 .statut-contact-a-risque-sans-test,
 .statut-positif-symptomatique-urgent,
 .statut-symptomatique-antigenique-positif,
@@ -770,7 +772,8 @@ footer .legals {
 .statut-en-attente,
 .statut-peu-de-risques,
 .suivi-gravite-0,
-.statut-deconfinement {
+.statut-deconfinement,
+.statut-contact-a-risque-vaccine {
     background: #7fd5c5;
     border-color: #00ac8c;
 }
