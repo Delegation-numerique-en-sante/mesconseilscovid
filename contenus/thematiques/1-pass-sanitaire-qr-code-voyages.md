@@ -262,25 +262,25 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Puis-je partir en voyage ?
     :level: 4
 
-    Pour le moment, la plupart des pays exigent la présentation d’un test de dépistage négatif récent (48h ou 72h selon la destination).
+    Pour le moment, la plupart des pays exigent la présentation d’un test de dépistage négatif récent (48 h ou 72 h selon la destination).
 
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Comment obtenir un « Pass sanitaire européen » ?
     :level: 4
 
-    Si votre test positif antigénique ou PCR date de plus de 15 jours et de moins de 6 mois et qu'il comporte un QR code aux normes européennes, alors il fait office de « certificat de rétablissement » reconnu comme « Pass sanitaire » en France et dans l'Espace européen. Cependant, certains pays européens peuvent continuer à exiger un test de dépistage (RT-PCR ou antigénique) négatif récent (48h ou 72h). 
-    Pour télécharger le certificat de dépistage comportant un QR Code aux normes européennes, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
+    Si votre test positif antigénique ou PCR date de plus de 15 jours et de moins de 6 mois et qu’il comporte un QR code aux normes européennes, alors il fait office de « certificat de rétablissement » reconnu comme « Pass sanitaire » en France et dans l’Espace européen. Cependant, certains pays européens peuvent continuer à exiger un test de dépistage (RT-PCR ou antigénique) négatif récent (48 h ou 72 h). 
+    Pour télécharger le certificat de dépistage comportant un QR code aux normes européennes, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
 
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Puis-je me déplacer en Union européenne ?
     :level: 4
 
-    Oui. Assurez-vous de vérifier quel justificatif fait office de « Pass sanitaire européen » pour votre pays de destination, en vous rendant sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/). Selon votre destination, un certificat de rétablissement ou un test de dépistage négatif récent pourra vous être demandé.
+    **Oui.** Assurez-vous de vérifier quel justificatif fait office de « Pass sanitaire européen » pour votre pays de destination, en vous rendant sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/). Selon votre destination, un certificat de rétablissement ou un test de dépistage négatif récent pourra vous être demandé.
     
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Mon test de dépistage (positif ou négatif) ne comporte pas de QR code, comment l’intégrer dans TousAntiCovid ?
     :level: 4
     
-    Si votre test a été réalisé il y a moins de 3 mois, vous pouvez télécharger un certificat de dépistage comportant un QR code aux normes européennes sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). Vous pourrez le présenter aux frontières lors de vos voyages dans l’Espace européen et l’importer dans votre application TousAntiCovid.
+    Si votre test a été réalisé il y a moins de 3 mois, vous pouvez télécharger un certificat de dépistage comportant un QR code aux normes européennes sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). Vous pourrez le présenter aux frontières lors de vos voyages dans l’Espace européen et l’importer dans votre application TousAntiCovid.
     
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Est-ce que je peux partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
