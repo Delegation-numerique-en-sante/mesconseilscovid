@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-06-30
+
+* entrée en vigueur du « Pass sanitaire européen »
+* tient compte du statut de vaccination pour l’orientation contact à risque
+
 ## 2021-06-29
 
 * mention des tests sérologiques rapides (TROD)
