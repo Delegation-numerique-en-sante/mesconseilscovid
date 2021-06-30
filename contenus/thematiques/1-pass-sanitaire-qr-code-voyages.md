@@ -183,33 +183,33 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 
 .. summary:: Je suis en cours de vaccination
 
-    Vous êtes considéré "en cours de vaccination" si vous n'avez reçu qu'une partie des doses de vaccins que vous devez recevoir **ou** si le délai post-injection du vaccin n'est pas encore écoulé (14 jours après la dernière injection de Pfizer, Moderna et AstraZeneca ; 28 jours après l'injection de Janssen). 
+    Vous êtes considéré(e) comme étant « en cours de vaccination » si vous n’avez reçu qu’une partie des doses de vaccins que vous devez recevoir **ou** si le délai post-injection du vaccin n’est pas encore écoulé (14 jours après la dernière injection du vaccin Pfizer, Moderna et AstraZeneca ; 28 jours après l’injection du vaccin Janssen). 
  
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Puis-je partir en voyage ?
     :level: 4
 
     **Oui**, mais les conditions de voyages sont plus ou moins contraignantes selon les pays de destination. Assurez-vous de vérifier quelles conditions s’appliquent avant de partir.
 
-    Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/)(https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
+    Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
-.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Comment obtenir un « Pass sanitaire européen » ou un justificatif me permettant de voyager dans l'Espace européen ?
+.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Comment obtenir un « Pass sanitaire européen » ou un justificatif me permettant de voyager dans l’Espace européen ?
     :level: 4
 
     Si vous êtes en cours de vaccination (1 dose reçue sur 2 doses prévues, ou 2<sup>e</sup> dose reçue depuis moins de 2 semaines), c’est-à-dire que vous n’avez pas finalisé votre cycle vaccinal, il est probable que vous ne puissiez pas faire valoir cette vaccination pour voyager vers toutes les destinations.
     
-    Dans la plupart des cas, vous devrez présenter un test PCR ou antigénique récent (réalisé dans les 48 h ou 72 h) sur lequel figure un QR code aux normes européennes. Ce justificatif fera office de « Pass sanitaire européen ».
+    Dans la plupart des cas, vous devrez présenter un test PCR ou antigénique récent (réalisé dans les 48 h ou 72 h) sur lequel figure un QR code aux normes européennes. Ce justificatif fera office de « Pass sanitaire européen ».
     
-    Attention, tous les pays n'acceptent pas les tests antigéniques. Par ailleurs, la durée de validité du résultat varie selon les destinations de 48h à 72h. Nous vous conseillons de vérifier les critères d'accès à votre pays de destination avant de partir, en vous rendant sur [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
+    Attention, tous les pays n’acceptent pas les tests antigéniques. Par ailleurs, la durée de validité du résultat varie selon les destinations de 48 h à 72 h. Nous vous conseillons de vérifier les critères d’accès à votre pays de destination avant de partir, en vous rendant sur [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
     
-.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Sous quelle forme présenter ce justificatif ou ce « Pass sanitaire européen » lors d’un voyage ?
+.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Sous quelle forme présenter ce justificatif ou ce « Pass sanitaire européen » lors d’un voyage ?
     :level: 4
 
-    Depuis le 1er juillet, le format intégré dans le carnet de l’application TousAntiCovid est reconnu dans l’Espace européen. Mais, vous pouvez également le présenter en format papier lors d'un contrôle. 
+    Depuis le 1<sup>er</sup> juillet, le format intégré dans le carnet de l’application TousAntiCovid est reconnu dans l’Espace européen. Vous pouvez également le présenter en format papier lors d’un contrôle. 
     
-.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Mon test de dépistage ne comporte pas de QR code, comment faire ?
+.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Mon test de dépistage ne comporte pas de QR code, comment faire ?
     :level: 4
 
-    Lorsque vous faites un test auprès d'un professionnel de santé, vous recevez un mail ou un SMS pour télécharger le certificat de dépistage sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). C’est sur ce document que vous trouverez le QR code à présenter lors de votre voyage ainsi que le QR Code à intégrer dans TousAntiCovid.
+    Lorsque vous faites un test auprès d’un professionnel de santé, vous recevez un mail ou un SMS pour télécharger le certificat de dépistage sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). C’est sur ce document que vous trouverez le QR code à présenter lors de votre voyage ainsi que le QR code à intégrer dans TousAntiCovid.
 
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
