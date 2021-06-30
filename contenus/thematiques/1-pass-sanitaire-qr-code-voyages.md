@@ -26,7 +26,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Puis-je partir en voyage ?
     :level: 4
 
-    Oui, mais les conditions de voyages sont plus ou moins contraignantes selon les pays de destination. Assurez-vous de vérifier quelles conditions s’appliquent avant de partir.
+    **Oui**, mais les conditions de voyages sont plus ou moins contraignantes selon les pays de destination. Assurez-vous de vérifier quelles conditions s’appliquent avant de partir.
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Sous quelle forme présenter le « Pass sanitaire européen » lors d’un voyage ?
@@ -34,7 +34,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Pour voyager, il vous suffit de présenter le résultat de votre test négatif, au format papier ou numérique. Il faut que le document comporte un QR Code qui garantit son authenticité.
 
- .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
+.. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
     **Pour la Corse** : vous devez présenter un test PCR négatif réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). 
@@ -50,7 +50,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Il n’est plus nécéssaire de justifier d’un motif impérieux pour sortir de France métropolitaine vers un pays de l’Espace européen.
     
- .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Mon test de dépistage ne comporte pas de QR code, comment faire ?
+.. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Mon test de dépistage ne comporte pas de QR code, comment faire ?
     :level: 4
 
     Lorsque vous faites un test auprès d’un professionnel de santé, vous recevez un mail ou un SMS pour télécharger le certificat de dépistage sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). C’est sur ce document que vous trouverez le QR code à présenter lors de votre voyage ainsi que le QR Code à intégrer dans TousAntiCovid.
@@ -130,7 +130,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     **Oui pour la Corse** : une preuve de vaccination complète est exigée. Vous pouvez la présenter dans votre carnet TousAntiCovid. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
 
-    Pour l’Outre-mer : les conditions de voyages diffèrent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
+    **Pour l’Outre-mer** : les conditions de voyages diffèrent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Je pars en voyage vers un pays de l’Espace européen. Ma preuve de vaccination est-elle suffisante ?
     :level: 4
