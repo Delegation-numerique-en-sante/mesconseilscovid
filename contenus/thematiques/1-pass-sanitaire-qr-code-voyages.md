@@ -99,7 +99,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Comment obtenir le « Pass sanitaire européen » ?
     :level: 4
 
-    **Cela dépend de votre pays de destination.** Pour certaines destinations, votre attestation de vaccination complète sur laquelle figure un QR code aux normes européennes fait office de « Pass sanitaire européen ». Pour d’autres, seul un test de dépistage négatif, comportant un QR code aux normes européennes est considéré comme « Pass sanitaire européen ». Assurez-vous de vérifier quelles conditions s’appliquent avant de partir. 
+    **Cela dépend de votre pays de destination.** Pour certaines destinations, votre attestation de vaccination complète sur laquelle figure un QR code aux normes européennes fait office de « Pass sanitaire européen ». Pour d’autres, seul un test de dépistage négatif, comportant un QR code aux normes européennes est considéré comme « Pass sanitaire européen ». Assurez-vous de vérifier quelles conditions s’appliquent avant de partir. 
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Comment savoir si ma vaccination est complète ?
@@ -300,51 +300,54 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
     C’est une preuve de **non-contamination** ou d’**immunité** à la Covid, présentée sous forme d’un code à scanner (2D-DOC ou QR code).
     Dans son utilisation en France, on parle de « Pass sanitaire activités ». Dans son utilisation lors des voyages au sein de l’Union européenne, on parle de « Pass sanitaire frontières ».
 
-
 .. question:: À quoi sert le « Pass sanitaire » ?
     :level: 3
 
     Il permet d’authentifier les informations sur votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) lors d’un contrôle.
 
     * En France, le « Pass sanitaire activités »  est obligatoire pour participer à des évènements rassemblant plus de 1 000 personnes (festivals, conférences, salons…) ou pour accéder à certains lieux (comme les boîtes de nuit, à partir du 9 juillet).
-    * Dans l’Union européenne, le « Pass sanitaire frontières » facilitera, à partir de juillet, les voyages entre les pays membres.
+    * Dans l’Espace européen, le « Pass sanitaire européen » (ou encore « Digital Covid Certificate » en anglais)  facilite, depuis le 1er juillet, les voyages entre les pays membres. 
 
 
-.. question:: Le « Pass sanitaire activités » ou le « Pass sanitaire frontières » sont-ils déjà en application ?
+.. question:: Le « Pass sanitaire activités » ou le « Pass sanitaire européen » sont-ils déjà en application ?
     :level: 3
 
     **En France**, le « Pass sanitaire activités » est en application depuis le **9 juin**.
 
-    L’utilisation du « Pass sanitaire frontières » en **Union européenne**, débutera **à partir de juillet**.
+    **Dans l'Espace européen**, le « Pass sanitaire européen » (ou « Digital Covid Certificate ») est progressivement mis en application **à partir de juillet**.
 
 
-.. question:: Quels justificatifs peuvent constituer un « Pass sanitaire » (activités et frontières) ?
+.. question:: Quels justificatifs peuvent constituer un « Pass sanitaire » (en France et dans l'Espace européen) ?
     :level: 3
 
-    **3 types de justificatifs** peuvent constituer un « Pass sanitaire » grâce à un QR code intégré :
+    **3 types de justificatifs** peuvent constituer un « Pass sanitaire » grâce à un QR code intégré reconnu dans tout l'Espace européen :
 
     - **Non-contamination** : le résultat négatif d’un test RT-PCR ou antigénique réalisé il y a moins de 48 h pour l’usage en France et 72 h pour le contrôle aux frontières.
     - **Certificat de rétablissement** : le résultat positif d’un test RT-PCR ou antigénique de plus de 15 jours et de moins de 6 mois.
     - **Certificat de vaccination** : une attestation de vaccination complète, c’est-à-dire que vous avez reçu toutes les doses nécessaires depuis au moins 2 semaines (Pfizer, Moderna, AstraZeneca) ou 4 semaines (Janssen).
 
-    **Attention**, en fonction de chaque situation (voyage, évènement…) un justificatif précis pourra vous être demandé. Vérifiez bien quel justificatif vous concerne.
+    **Attention**, en fonction de chaque situation (voyage, évènement…) un justificatif précis pourra vous être demandé. Assurez-vous de bien vérifier quel justificatif vous concerne auprès des organisateurs de l'évènement ou sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 
 .. question:: Est-ce que je dois obligatoirement avoir un <span lang="en">smartphone</span> pour utiliser le « Pass sanitaire » ?
     :level: 3
 
-    **Non.** Vous pourrez à terme présenter votre « Pass sanitaire » sous la forme que vous préférez :
+    **Non.** Vous pouvez présenter votre « Pass sanitaire » sous la forme que vous préférez :
 
     - **au format papier** : en présentant votre justificatif sur lequel figure un QR code ;
     - **au format numérique** : en présentant une photo ou un scan de votre justificatif muni d’un QR code ;
-    - **dans l’application TousAntiCovid** : en numérisant votre justificatif grâce au QR code, dans la rubrique Carnet. Pour le moment, ce format n’est pas encore disponible pour les voyages internationaux.
+    - **dans l’application TousAntiCovid** : en numérisant votre justificatif grâce au QR code, dans la rubrique Carnet. 
 
     Pour savoir comment importer (scanner) votre QR code dans l’application TousAntiCovid :
 
     - [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-vaccination-TJLG8dT8fs/Steps/347514) si c’est un certificat de vaccination.
     - [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-test-siCsOIDGCZ/Steps/320836) si c’est un test de dépistage antigénique ou RT-PCR.
 
+.. question:: Est-ce que je peux importer le « Pass sanitaire » de mes enfants, ou de mon (ma) conjoint(e) dans mon application TousAntiCovid ?
+    :level: 3
 
+    Oui. Vous pouvez importer les justificatifs (attestation de vaccination ou test de dépistage) de vos proches dans la rubrique carnet de votre application TousAntiCovid, à condition qu'ils comportent un QR code. 
+    
 .. question:: Qu’est-ce qu’un QR code ?
     :level: 3
 
