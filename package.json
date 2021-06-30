@@ -27,7 +27,7 @@
     "st": "^3.0.0"
   },
   "dependencies": {
-    "core-js": "3.15.1",
+    "core-js": "3.15.2",
     "dayjs": "^1.10.5",
     "jsdom-global": "^3.0.2",
     "localforage": "1.7.3",
