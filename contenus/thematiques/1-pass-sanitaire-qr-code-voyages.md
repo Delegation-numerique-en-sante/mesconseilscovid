@@ -1,4 +1,4 @@
-# Pass sanitaire, QR code, voyages, que faut-il retenir ?
+# Voyage et Pass sanitaire, que faut-il savoir ?
 
 <div class="illustration">
     <img src="illustrations/pass_sanitaire.svg" alt="">
@@ -6,16 +6,17 @@
 
 <div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
 
-<big>Pass sanitaire, certificat de vaccination, attestations, voyages, QR code… MesConseilsCovid vous propose une synthèse des informations importantes. Vacciné(e) ou non, ces informations peuvent vous intéresser.</big>
+<big>Pass sanitaire européen, certificat de vaccination, attestations, QR code… MesConseilsCovid vous propose une synthèse des informations importantes.</big>
 
-## Je souhaite voyager, quel justificatif fournir ?
+## Comment faire pour partir en voyage à l'étranger ?
 
 <div class="conseil">
 
-L’usage du **Pass sanitaire au niveau européen sera effectif à partir de juillet.** En attendant, consultez nos pages personnalisées afin de connaître la marche à suivre pour partir en voyage selon votre situation.
+L'usage du **pass sanitaire européen est généralisé depuis début juillet.** Les voyages vers les destinations hors espace européen sont soumises à conditions (tests, justificatifs, quarantaines...).
 
 </div>
-
+Pour obtenir réponse à votre question, cliquez sur la situation qui vous correspond le mieux : 
+    
 <div class="conseils">
 <details>
 
@@ -181,7 +182,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 <div class="conseils">
 <details>
 
-.. summary:: Je suis en cours de vaccination
+.. summary:: Je suis en cours de vaccination (je n'ai pas reçu toutes mes doses)
 
     Vous êtes considéré(e) comme étant « en cours de vaccination » si vous n’avez reçu qu’une partie des doses de vaccins que vous devez recevoir **ou** si le délai post-injection du vaccin n’est pas encore écoulé (14 jours après la dernière injection du vaccin Pfizer, Moderna et AstraZeneca ; 28 jours après l’injection du vaccin Janssen). 
  
