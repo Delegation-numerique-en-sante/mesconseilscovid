@@ -183,24 +183,33 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 
 .. summary:: Je suis en cours de vaccination
 
+    Vous êtes considéré "en cours de vaccination" si vous n'avez reçu qu'une partie des doses de vaccins que vous devez recevoir **ou** si le délai post-injection du vaccin n'est pas encore écoulé (14 jours après la dernière injection de Pfizer, Moderna et AstraZeneca ; 28 jours après l'injection de Janssen). 
+ 
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Puis-je partir en voyage ?
     :level: 4
 
     **Oui**, mais les conditions de voyages sont plus ou moins contraignantes selon les pays de destination. Assurez-vous de vérifier quelles conditions s’appliquent avant de partir.
 
-    Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
+    Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/)(https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
-.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Comment obtenir un « Pass sanitaire » ou un justificatif me permettant de voyager ?
+.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Comment obtenir un « Pass sanitaire européen » ou un justificatif me permettant de voyager dans l'Espace européen ?
     :level: 4
 
-    Si vous êtes en cours de vaccination (1 dose reçue sur 2 doses prévues, ou 2<sup>e</sup> dose reçue depuis moins de 2 semaines), c’est-à-dire que vous n’avez pas finalisé votre schéma vaccinal, vous ne pourrez pas faire valoir cette vaccination pour voyager. Vous devrez présenter un test PCR ou antigénique récent (réalisé dans les 48 h ou 72 h) sur lequel figure un QR code. Ce justificatif fera office de « Pass sanitaire ».
-
-.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Sous quelle forme présenter ce justificatif ou ce « Pass sanitaire » lors d’un voyage ?
+    Si vous êtes en cours de vaccination (1 dose reçue sur 2 doses prévues, ou 2<sup>e</sup> dose reçue depuis moins de 2 semaines), c’est-à-dire que vous n’avez pas finalisé votre cycle vaccinal, il est probable que vous ne puissiez pas faire valoir cette vaccination pour voyager vers toutes les destinations.
+    
+    Dans la plupart des cas, vous devrez présenter un test PCR ou antigénique récent (réalisé dans les 48 h ou 72 h) sur lequel figure un QR code aux normes européennes. Ce justificatif fera office de « Pass sanitaire européen ».
+    
+    Attention, tous les pays n'acceptent pas les tests antigéniques. Par ailleurs, la durée de validité du résultat varie selon les destinations de 48h à 72h. Nous vous conseillons de vérifier les critères d'accès à votre pays de destination avant de partir, en vous rendant sur [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
+    
+.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Sous quelle forme présenter ce justificatif ou ce « Pass sanitaire européen » lors d’un voyage ?
     :level: 4
 
-    Pour le moment, le format intégré dans le carnet de l’application TousAntiCovid n’est pas reconnu au niveau international ni dans l’Union européenne. Il le sera à partir de juillet.
+    Depuis le 1er juillet, le format intégré dans le carnet de l’application TousAntiCovid est reconnu dans l’Espace européen. Mais, vous pouvez également le présenter en format papier lors d'un contrôle. 
+    
+.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Mon test de dépistage ne comporte pas de QR code, comment faire ?
+    :level: 4
 
-    En attendant, il faut présenter votre test négatif au format papier ou numérique, en prenant bien soin qu’il comporte un QR code.
+    Lorsque vous faites un test auprès d'un professionnel de santé, vous recevez un mail ou un SMS pour télécharger le certificat de dépistage sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). C’est sur ce document que vous trouverez le QR code à présenter lors de votre voyage ainsi que le QR Code à intégrer dans TousAntiCovid.
 
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
@@ -208,16 +217,6 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
     **Pour la Corse** : un test PCR négatif réalisé il y a moins de 72 h est exigé. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
 
     **Pour l’Outre-mer** : les conditions de voyages diffèrent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
-
-.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Je pars bientôt en voyage vers un pays de l’Espace européen. Quel justificatif présenter ?
-    :level: 4
-
-    **Cela dépend de votre destination.** Tant que le « Pass sanitaire frontières » ne sera pas entré en vigueur, vous ne pourrez pas automatiquement faire valoir votre vaccination pour voyager au sein de l’Union européenne.
-
-    La plupart des pays exigent **la présentation d’un test RT-PCR négatif récent (réalisé il y a moins de 48 h ou 72 h).**
-    Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
-
-    Il n’est pas nécéssaire de justifier d’un motif impérieux pour sortir de France métropolitaine vers un pays de l’Espace européen.
 
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
     :level: 4
