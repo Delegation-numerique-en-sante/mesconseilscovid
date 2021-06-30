@@ -1,4 +1,4 @@
-# Pass sanitaire, QR code, voyages, que faut-il retenir ?
+# Pass sanitaire, QR code, voyages, que faut-il retenir ?
 
 <div class="illustration">
     <img src="illustrations/pass_sanitaire.svg" alt="">
@@ -6,7 +6,7 @@
 
 <div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
 
-<big>Pass sanitaire, certificat de vaccination, attestations, voyages, QR code… MesConseilsCovid vous propose une synthèse des informations importantes. Vacciné(e) ou non, ces informations peuvent vous intéresser.</big>
+<big>Pass sanitaire, certificat de vaccination, attestations, voyages, QR code… MesConseilsCovid vous propose une synthèse des informations importantes. Vacciné(e) ou non, ces informations peuvent vous intéresser.</big>
 
 ## Je souhaite voyager, quel justificatif fournir ?
 
@@ -30,7 +30,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Sous quelle forme présenter le « Pass sanitaire européen » lors d’un voyage ?
     :level: 4
 
-    Pour voyager, il vous suffit de présenter le résultat de votre test négatif, au format papier ou numérique. Il faut que le document comporte un QR Code qui garantit son authenticité.
+    Pour voyager, il vous suffit de présenter le résultat de votre test négatif, au format papier ou numérique. Il faut que le document comporte un QR Code qui garantit son authenticité.
 
  .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
@@ -42,16 +42,16 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Je pars bientôt en voyage vers un pays de l’Espace européen. Comment obtenir un « Pass sanitaire européen » ?
     :level: 4
 
-    Si vous n’êtes pas vacciné(e), un test de dépistage négatif sur lequel figure un QR code aux normes européennes fera office de « Pass sanitaire européen ». 
+    Si vous n’êtes pas vacciné(e), un test de dépistage négatif sur lequel figure un QR code aux normes européennes fera office de « Pass sanitaire européen ». 
 
-    Attention, tous les pays n'acceptent pas les tests antigéniques. Par ailleurs, la durée de validité du résultat du test varie selon les destinations de 48h à 72h. Nous vous conseillons de vérifier les critères d'accès à votre pays de destination avant de partir, sur le site du [ministère de l'Europe et des Affaires étrangèeres](https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/).  
+    Attention, tous les pays n’acceptent pas les tests antigéniques. Par ailleurs, la durée de validité du résultat du test varie selon les destinations de 48 h à 72 h. Nous vous conseillons de vérifier les critères d’accès à votre pays de destination avant de partir, sur le site du [ministère de l’Europe et des Affaires étrangères](https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/).  
 
     Il n’est plus nécéssaire de justifier d’un motif impérieux pour sortir de France métropolitaine vers un pays de l’Espace européen.
     
- .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Mon test de dépistage ne comporte pas de QR code, comment faire ?
+ .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Mon test de dépistage ne comporte pas de QR code, comment faire ?
     :level: 4
 
-    Lorsque vous faites un test auprès d'un professionnel de santé, vous recevez un mail ou un SMS pour télécharger le certificat de dépistage sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). C’est sur ce document que vous trouverez le QR code à présenter lors de votre voyage ainsi que le QR Code à intégrer dans TousAntiCovid.
+    Lorsque vous faites un test auprès d’un professionnel de santé, vous recevez un mail ou un SMS pour télécharger le certificat de dépistage sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). C’est sur ce document que vous trouverez le QR code à présenter lors de votre voyage ainsi que le QR Code à intégrer dans TousAntiCovid.
 
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
     :level: 4
@@ -99,7 +99,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Comment obtenir le Pass sanitaire européen ?
     :level: 4
 
-    Si vous êtes vacciné(e), votre attestation de vaccination complète (toutes les doses) sur laquelle figure un QR code constitue votre « Pass sanitaire ».
+    Si vous êtes vacciné(e), votre attestation de vaccination complète (toutes les doses) sur laquelle figure un QR code constitue votre « Pass sanitaire ».
 
     Attention, en fonction de votre destination de voyage d’autres documents pourront vous être demandés. Les conditions de voyages sont plus ou moins contraignantes selon les pays de destination. Assurez-vous de vérifier quelles conditions s’appliquent avant de partir.
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
@@ -175,14 +175,14 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Comment obtenir un « Pass sanitaire » ou un justificatif me permettant de voyager ?
     :level: 4
 
-    Si vous êtes en cours de vaccination (1 dose reçue sur 2 doses prévues, ou 2<sup>e</sup> dose reçue depuis moins de 2 semaines), c’est-à-dire que vous n’avez pas finalisé votre schéma vaccinal, vous ne pourrez pas faire valoir cette vaccination pour voyager. Vous devrez présenter un test PCR ou antigénique récent (réalisé dans les 48 h ou 72 h) sur lequel figure un QR code. Ce justificatif fera office de « Pass sanitaire ».
+    Si vous êtes en cours de vaccination (1 dose reçue sur 2 doses prévues, ou 2<sup>e</sup> dose reçue depuis moins de 2 semaines), c’est-à-dire que vous n’avez pas finalisé votre schéma vaccinal, vous ne pourrez pas faire valoir cette vaccination pour voyager. Vous devrez présenter un test PCR ou antigénique récent (réalisé dans les 48 h ou 72 h) sur lequel figure un QR code. Ce justificatif fera office de « Pass sanitaire ».
 
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Sous quelle forme présenter ce justificatif ou ce « Pass sanitaire » lors d’un voyage ?
     :level: 4
 
     Pour le moment, le format intégré dans le carnet de l’application TousAntiCovid n’est pas reconnu au niveau international ni dans l’Union européenne. Il le sera à partir de juillet.
 
-    En attendant, il faut présenter votre test négatif au format papier ou numérique, en prenant bien soin qu’il comporte un QR code.
+    En attendant, il faut présenter votre test négatif au format papier ou numérique, en prenant bien soin qu’il comporte un QR code.
 
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
@@ -253,7 +253,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
     :level: 4
 
     Si votre test positif antigénique ou PCR date de plus de 15 jours et de moins de 6 mois, alors il fait office de « certificat de rétablissement » reconnu comme « Pass sanitaire ».  
-    Pour télécharger le certificat de dépistage comportant un QR Code, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
+    Pour télécharger le certificat de dépistage comportant un QR Code, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
 
     Attention cependant, ce Pass sanitaire n’est reconnu que pour son utilisation en France et pas encore pour les voyages à l’étranger.
 
@@ -264,10 +264,10 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 
     En attendant, assurez-vous de vérifier les conditions d’entrée dans votre pays de destination. Pour cela, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
     
-.. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Mon test de dépistage (positif ou négatif) ne comporte pas de QR code, comment l’intégrer dans TousAntiCovid ?
+.. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Mon test de dépistage (positif ou négatif) ne comporte pas de QR code, comment l’intégrer dans TousAntiCovid ?
     :level: 4
     
-    Pour télécharger le certificat de dépistage comportant un QR code, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). Vous pourrez le présenter aux frontières lors de vos voyages dans l’Union européenne (à partir de juillet) et l’importer dans votre application TousAntiCovid.
+    Pour télécharger le certificat de dépistage comportant un QR code, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). Vous pourrez le présenter aux frontières lors de vos voyages dans l’Union européenne (à partir de juillet) et l’importer dans votre application TousAntiCovid.
     
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Est-ce que je peux partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
@@ -284,7 +284,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: Qu’est-ce que le « Pass sanitaire » ?
     :level: 3
 
-    C’est une preuve de **non-contamination** ou d’**immunité** à la Covid, présentée sous forme d’un code à scanner (2D-DOC ou QR code).
+    C’est une preuve de **non-contamination** ou d’**immunité** à la Covid, présentée sous forme d’un code à scanner (2D-DOC ou QR code).
     Dans son utilisation en France, on parle de « Pass sanitaire activités ». Dans son utilisation lors des voyages au sein de l’Union européenne, on parle de « Pass sanitaire frontières ».
 
 
@@ -308,7 +308,7 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 .. question:: Quels justificatifs peuvent constituer un « Pass sanitaire » (activités et frontières) ?
     :level: 3
 
-    **3 types de justificatifs** peuvent constituer un « Pass sanitaire » grâce à un QR code intégré :
+    **3 types de justificatifs** peuvent constituer un « Pass sanitaire » grâce à un QR code intégré :
 
     - **Non-contamination** : le résultat négatif d’un test RT-PCR ou antigénique réalisé il y a moins de 48 h pour l’usage en France et 72 h pour le contrôle aux frontières.
     - **Certificat de rétablissement** : le résultat positif d’un test RT-PCR ou antigénique de plus de 15 jours et de moins de 6 mois.
@@ -322,25 +322,25 @@ L’usage du **Pass sanitaire au niveau européen sera effectif à partir de jui
 
     **Non.** Vous pourrez à terme présenter votre « Pass sanitaire » sous la forme que vous préférez :
 
-    - **au format papier** : en présentant votre justificatif sur lequel figure un QR code ;
-    - **au format numérique** : en présentant une photo ou un scan de votre justificatif muni d’un QR code ;
-    - **dans l’application TousAntiCovid** : en numérisant votre justificatif grâce au QR code, dans la rubrique Carnet. Pour le moment, ce format n’est pas encore disponible pour les voyages internationaux.
+    - **au format papier** : en présentant votre justificatif sur lequel figure un QR code ;
+    - **au format numérique** : en présentant une photo ou un scan de votre justificatif muni d’un QR code ;
+    - **dans l’application TousAntiCovid** : en numérisant votre justificatif grâce au QR code, dans la rubrique Carnet. Pour le moment, ce format n’est pas encore disponible pour les voyages internationaux.
 
-    Pour savoir comment importer (scanner) votre QR code dans l’application TousAntiCovid :
+    Pour savoir comment importer (scanner) votre QR code dans l’application TousAntiCovid :
 
     - [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-vaccination-TJLG8dT8fs/Steps/347514) si c’est un certificat de vaccination.
     - [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-test-siCsOIDGCZ/Steps/320836) si c’est un test de dépistage antigénique ou RT-PCR.
 
 
-.. question:: Qu’est-ce qu’un QR code ?
+.. question:: Qu’est-ce qu’un QR code ?
     :level: 3
 
-    Un QR code est un code-barres 2D facile à lire par un téléphone mobile (<span lang="en">smartphone</span>). Il contient des informations (statut vaccinal, nom, prénom, résultat du test de dépistage, etc.). Voici à quoi cela ressemble :
+    Un QR code est un code-barres 2D facile à lire par un téléphone mobile (<span lang="en">smartphone</span>). Il contient des informations (statut vaccinal, nom, prénom, résultat du test de dépistage, etc.). Voici à quoi cela ressemble :
 
     <div class="illustration">
         <img src="exemple_qr_code_vers_tousanticovid.png"
             loading="lazy"
-            alt="Exemple de QR code pointant vers TousAntiCovid.">
+            alt="Exemple de QR code pointant vers TousAntiCovid.">
     </div>
 
 ## Vous avez encore des questions ?
