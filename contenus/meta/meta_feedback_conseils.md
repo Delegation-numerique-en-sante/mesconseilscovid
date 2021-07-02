@@ -5,6 +5,7 @@
             <a class="button button-outline button-feedback button-feedback-positif" data-feedback="positif" href="" role="button">Oui</a>
             <a class="button button-outline button-feedback button-feedback-negatif" data-feedback="negatif" href="" role="button">Non</a>
             <a class="button button-outline button-partager button-feedback-partager" href="" role="button">Partager</a>
+            <a class="button button-outline button-imprimer button-feedback-imprimer js-impression" href="" role="button">Imprimer</a>
         </div>
     </div>
     <div class="feedback-form" hidden>
