@@ -1530,6 +1530,7 @@ a.no-type::after {
 
     .block > h2,
     .conseils summary svg,
+    .reponse .modifier,
     .form-controls,
     #pour-finir,
     footer {
