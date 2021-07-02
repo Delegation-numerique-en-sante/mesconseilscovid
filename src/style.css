@@ -1494,8 +1494,8 @@ a.no-type::after {
         color: #000091;
         text-decoration: none;
     }
-    a[href^='http']:after {
-        content: ' ( ' attr(href) ' ) ';
+    a[href^='http']::after {
+        content: ' <' attr(href) '>';
     }
     #conseils-block-date {
         display: block;
