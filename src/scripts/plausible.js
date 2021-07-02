@@ -11,29 +11,7 @@ export function registerPlausible(window) {
     }
 
     function getUrl() {
-        return (
-            location.protocol +
-            '//' +
-            location.hostname +
-            getLocationPathName() +
-            location.search +
-            getLocationHash()
-        )
-    }
-
-    // Modifie les URLs de la Single Page App ("/#foo" -> "/foo")
-    // pour faciliter l’exploitation par Plausible
-    function getLocationPathName() {
-        if (location.pathname === '/') {
-            return '/' + location.hash.slice(1)
-        }
-        return location.pathname
-    }
-    function getLocationHash() {
-        if (location.pathname === '/') {
-            return ''
-        }
-        return location.hash
+        return location.toString()
     }
 
     function trigger(eventName, options) {
@@ -46,6 +24,10 @@ export function registerPlausible(window) {
         payload.r = document.referrer || null
         payload.w = window.innerWidth
 
+        if (options && options.pageName) {
+            payload.u = `/${options.pageName}`
+        }
+
         if (options && options.props) {
             payload.p = JSON.stringify(options.props)
         }
@@ -57,9 +39,8 @@ export function registerPlausible(window) {
             location.protocol === 'file:'
         ) {
             ignore('running locally')
-            window.app._plausibleTrackingEvents.push(
-                `${payload.n}:${location.hash.slice(1)}`
-            )
+            const pageName = (options && options.pageName) || location.pathname.slice(1)
+            window.app._plausibleTrackingEvents.push(`${payload.n}:${pageName}`)
             console.debug('[Plausible]', payload)
             return
         }

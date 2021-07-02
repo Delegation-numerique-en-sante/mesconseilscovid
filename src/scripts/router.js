@@ -5,46 +5,40 @@ import { bindFeedback, injectFeedbackDifficultes } from './feedback'
 import { nomProfil } from './injection'
 import { titleCase } from './utils'
 
-export function getCurrentPageName() {
-    const hash = document.location.hash
-    const fragment = hash ? hash.slice(1) : ''
-    return fragment.split('?')[0]
+export function getCurrentPageName(document) {
+    return document.location.pathname.slice(1)
 }
 
+export const CHEMIN_ACCUEIL = ''
+
 export class Router {
-    constructor(app) {
+    constructor(app, window) {
         this.app = app
-        this.initialTitle = document.title
+        this.window = window
+        this.document = window.document
+
+        this.initialTitle = this.document.title
 
         this.navigo = this.initNavigo()
 
         this.setupGlobalHooks()
-        this.setupRedirects()
+        this.setupNotFound()
     }
 
     initNavigo() {
-        const root = null
-        const useHash = true
-        const navigo = new Navigo(root, useHash)
-
-        // Workaround unwanted behaviour in Navigo.
-        if (navigo.root.slice(-1) !== '/') {
-            navigo.root = navigo.root + '/'
-        }
-
-        return navigo
+        return new Navigo('/')
     }
 
-    resolve() {
-        return this.navigo.resolve()
+    resolve(path, options) {
+        return this.navigo.resolve(path, options)
     }
 
-    lastRouteResolved() {
-        return this.navigo.lastRouteResolved()
+    getCurrentLocation() {
+        return this.navigo.getCurrentLocation()
     }
 
-    navigate(target) {
-        return this.navigo.navigate(target)
+    navigate(target, options) {
+        return this.navigo.navigate(target, options)
     }
 
     setupGlobalHooks() {
@@ -55,7 +49,20 @@ export class Router {
     }
 
     beforeGlobalHook(done) {
-        var header = document.querySelector('header section')
+        // Rétro-compatibilité : si on est à la racine et que le fragment
+        // correspond à une page, alors on y va
+        const hash = this.document.location.hash
+        const fragment = hash ? hash.slice(1) : ''
+        if (
+            this.window.location.pathname === '/' &&
+            fragment &&
+            this.exists(fragment)
+        ) {
+            this.redirectTo(fragment)
+            return done(false)
+        }
+
+        var header = this.document.querySelector('header section')
         if (typeof this.app.profil.nom === 'undefined') {
             showElement(header.querySelector('.js-profil-empty'))
             hideElement(header.querySelector('.js-profil-full'))
@@ -73,16 +80,18 @@ export class Router {
     }
 
     sendPageChangeEvent() {
-        const pageName = getCurrentPageName()
-        document.dispatchEvent(new CustomEvent('pageChanged', { detail: pageName }))
+        const pageName = getCurrentPageName(this.document)
+        this.document.dispatchEvent(
+            new this.window.CustomEvent('pageChanged', { detail: pageName })
+        )
     }
 
     focusMainHeaderElement() {
         // A11Y: keyboard navigation
-        document.querySelector('[role="banner"]').focus()
+        this.document.querySelector('[role="banner"]').focus()
     }
 
-    addQuestionnaireRoute(pageName, view, pageTitle) {
+    addQuestionnaireRoute(pageName, view, options) {
         const beforeFunc = (profil) => {
             if (typeof profil.nom === 'undefined') {
                 profil.resetData('mes_infos')
@@ -94,25 +103,34 @@ export class Router {
             injectFeedbackDifficultes(page.querySelector('.feedback-difficultes'))
             bindFeedback(page.querySelector('.feedback-component'), app)
         }
-        this.addAppRoute(pageName, viewFunc, beforeFunc, pageTitle)
+        this.addAppRoute(pageName, viewFunc, { ...options, beforeFunc })
     }
 
-    addAppRoute(pageName, view, before, pageTitle) {
+    addAppRoute(pageName, view, options) {
         const viewFunc = (element) => {
             view(element, this.app)
         }
-        this.addRoute(pageName, viewFunc, before, pageTitle)
+        this.addRoute(pageName, viewFunc, options)
     }
 
-    addRoute(pageName, viewFunc, beforeFunc, pageTitle) {
+    addRoute(pageName, viewFunc, options) {
+        let route
+        if (options && typeof options.route !== 'undefined') {
+            route = options.route
+        } else {
+            route = '/' + pageName
+        }
+        const beforeFunc = options && options.beforeFunc
+        const pageTitle = options && options.pageTitle
         this.navigo.on(
-            new RegExp('^' + pageName + '$'),
-            () => {
+            route,
+            ({ params }) => {
                 const page = this.loadPage(pageName, this.app)
                 this.updateTitle(page, pageName, pageTitle, this.app.profil)
                 this.fillProgress(page, pageName)
                 this.fillNavigation(page, pageName)
-                viewFunc(page)
+                viewFunc(page, params)
+                this.navigo.updatePageLinks()
                 this.app.trackPageView(pageName)
                 page.classList.remove('loading')
                 page.classList.add('ready')
@@ -137,23 +155,23 @@ export class Router {
     }
 
     loadPage(pageName) {
-        const page = document.querySelector('section#page')
+        const page = this.document.querySelector('section#page')
         page.classList.remove('ready')
         page.classList.add('loading')
-        cloneElementInto(document.querySelector('#' + pageName), page)
+        cloneElementInto(this.document.querySelector('#' + pageName), page)
         showMeOrThem(page, this.app.profil)
         this.scrollToTopOfPage()
         return page
     }
 
     scrollToTopOfPage() {
-        if (typeof document.documentElement.scrollTo === 'function') {
-            document.documentElement.scrollTo({
+        if (typeof this.document.documentElement.scrollTo === 'function') {
+            this.document.documentElement.scrollTo({
                 top: 0,
                 behavior: 'smooth',
             })
         } else {
-            document.documentElement.scrollTop = 0
+            this.document.documentElement.scrollTop = 0
         }
     }
 
@@ -171,7 +189,7 @@ export class Router {
         const separator = titlePrefix ? ' — ' : ''
         const numeroEtape = this.app.questionnaire.numeroEtape(pageName, profil)
         const etape = numeroEtape ? ` (étape ${numeroEtape})` : ''
-        document.title = titlePrefix + etape + separator + this.initialTitle
+        this.document.title = titlePrefix + etape + separator + this.initialTitle
     }
 
     fillProgress(page, pageName) {
@@ -191,61 +209,37 @@ export class Router {
                 this.app.profil
             )
             if (previousPage) {
-                boutonRetour.setAttribute('href', `#${previousPage}`)
+                boutonRetour.setAttribute('href', previousPage)
             }
         }
 
         Array.from(page.querySelectorAll('.premiere-question')).forEach((lien) => {
-            lien.setAttribute('href', `#${this.app.questionnaire.firstPage}`)
+            lien.setAttribute('href', this.app.questionnaire.firstPage)
         })
     }
 
-    setupRedirects() {
-        // Compatibilité avec les anciens noms de pages.
-        this.navigo.on(
-            new RegExp('^(symptomesactuels|symptomespasses|debutsymptomes)$'),
-            () => {},
-            {
-                before: (done) => {
-                    this.redirectTo('symptomes')
-                    done(false)
-                },
-            }
-        )
-        this.navigo.on(new RegExp('^(residence|foyer|activitepro)$'), () => {}, {
-            before: (done) => {
-                this.redirectTo('situation')
-                done(false)
-            },
-        })
-        this.navigo.on(new RegExp('^(caracteristiques|antecedents)$'), () => {}, {
-            before: (done) => {
-                this.redirectTo('sante')
-                done(false)
-            },
-        })
-        this.navigo.on('pediatrie', () => {}, {
-            before: function (done) {
-                window.location.replace('conseils-pour-les-enfants.html')
-                done(false)
-            },
-        })
-
+    setupNotFound() {
         // Par défaut on retourne à la page d’accueil.
         this.navigo.notFound(() => {
-            this.redirectTo('introduction')
+            this.redirectTo(CHEMIN_ACCUEIL)
         })
+    }
+
+    exists(pageName) {
+        const target = pageName !== 'introduction' ? pageName : ''
+        return this.navigo.match(target)
     }
 
     redirectTo(target) {
         if (
-            typeof window !== 'undefined' &&
-            window.history &&
-            window.history.replaceState
+            typeof this.window !== 'undefined' &&
+            this.window.history &&
+            this.window.history.replaceState
         ) {
             // Replace current page with target page in the browser history
             // so that we don’t break the back button.
-            window.history.replaceState({}, '', `#${target}`)
+            const destination = '/' + target + this.window.location.search
+            this.window.history.replaceState({}, '', destination)
             this.navigo.resolve()
         } else {
             this.navigo.navigate(target)

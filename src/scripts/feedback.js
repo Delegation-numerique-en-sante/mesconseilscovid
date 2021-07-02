@@ -34,7 +34,7 @@ export function bindFeedback(component, app) {
                 }
                 const page = estPageThematique()
                     ? document.location.pathname.slice(1)
-                    : getCurrentPageName()
+                    : getCurrentPageName(document)
                 const payload = {
                     kind: feedback,
                     message: message,

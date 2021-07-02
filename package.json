@@ -31,7 +31,7 @@
     "dayjs": "^1.10.5",
     "jsdom-global": "^3.0.2",
     "localforage": "1.7.3",
-    "navigo": "7.1.2",
+    "navigo": "^8.11.1",
     "pikaday": "^1.8.2",
     "timeago.js": "4.0.2"
   },

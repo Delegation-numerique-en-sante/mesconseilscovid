@@ -11,7 +11,7 @@ describe('ICS', function () {
         const rrule = undefined
         ics.addEvent(
             'Début symptômes Covid-19',
-            'Vous pouvez faire votre suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/#suiviintroduction',
+            'Vous pouvez faire votre suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/suiviintroduction',
             startDate,
             duration,
             rrule,
@@ -26,7 +26,7 @@ VERSION:2.0
 BEGIN:VEVENT
 UID:0@default
 CLASS:PUBLIC
-DESCRIPTION:Vous pouvez faire votre suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/#suiviintroduction
+DESCRIPTION:Vous pouvez faire votre suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/suiviintroduction
 DTSTAMP;VALUE=DATE-TIME:20200803T120000
 DTSTART;VALUE=DATE-TIME:20200803T120000
 DTEND;VALUE=DATE-TIME:20200803T130000
@@ -49,7 +49,7 @@ END:VCALENDAR`
         }
         ics.addEvent(
             'Suivi Covid-19',
-            'Aller faire mon suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/#suiviintroduction',
+            'Aller faire mon suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/suiviintroduction',
             startDate,
             duration,
             rrule,
@@ -64,7 +64,7 @@ VERSION:2.0
 BEGIN:VEVENT
 UID:0@default
 CLASS:PUBLIC
-DESCRIPTION:Aller faire mon suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/#suiviintroduction
+DESCRIPTION:Aller faire mon suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/suiviintroduction
 RRULE:FREQ=DAILY;INTERVAL=1;COUNT=15
 DTSTAMP;VALUE=DATE-TIME:20200803T120000
 DTSTART;VALUE=DATE-TIME:20200803T120000
@@ -84,7 +84,7 @@ END:VCALENDAR`
         let rrule = undefined
         ics.addEvent(
             'Début symptômes Covid-19',
-            'Vous pouvez faire votre suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/#suiviintroduction',
+            'Vous pouvez faire votre suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/suiviintroduction',
             startDate,
             duration,
             rrule,
@@ -97,7 +97,7 @@ END:VCALENDAR`
         }
         ics.addEvent(
             'Suivi Covid-19',
-            'Aller faire mon suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/#suiviintroduction',
+            'Aller faire mon suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/suiviintroduction',
             startDate,
             duration,
             rrule,
@@ -112,7 +112,7 @@ VERSION:2.0
 BEGIN:VEVENT
 UID:0@default
 CLASS:PUBLIC
-DESCRIPTION:Vous pouvez faire votre suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/#suiviintroduction
+DESCRIPTION:Vous pouvez faire votre suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/suiviintroduction
 DTSTAMP;VALUE=DATE-TIME:20200803T120000
 DTSTART;VALUE=DATE-TIME:20200803T120000
 DTEND;VALUE=DATE-TIME:20200803T130000
@@ -122,7 +122,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:1@default
 CLASS:PUBLIC
-DESCRIPTION:Aller faire mon suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/#suiviintroduction
+DESCRIPTION:Aller faire mon suivi quotidien sur https://mesconseilscovid.sante.gouv.fr/suiviintroduction
 RRULE:FREQ=DAILY;INTERVAL=1;COUNT=15
 DTSTAMP;VALUE=DATE-TIME:20200803T120000
 DTSTART;VALUE=DATE-TIME:20200803T120000

@@ -16,9 +16,7 @@ describe('Numéros d’étapes', function () {
     describe('Mes vaccins', function () {
         it('Toujours étape 1', function () {
             const profil = new Profil('mes_infos', {})
-            assert.deepEqual(questionnaire._previousPages('vaccins', profil), [
-                'introduction',
-            ])
+            assert.deepEqual(questionnaire._previousPages('vaccins', profil), [''])
             assert.strictEqual(questionnaire.numeroEtape('vaccins', profil), 1)
         })
     })
@@ -36,7 +34,7 @@ describe('Numéros d’étapes', function () {
                 'symptomes',
                 'historique',
                 'vaccins',
-                'introduction',
+                '',
             ])
             assert.strictEqual(questionnaire.numeroEtape('depistage', profil), 4)
         })
@@ -53,7 +51,7 @@ describe('Numéros d’étapes', function () {
                 'symptomes',
                 'historique',
                 'vaccins',
-                'introduction',
+                '',
             ])
             assert.strictEqual(questionnaire.numeroEtape('depistage', profil), 5)
         })

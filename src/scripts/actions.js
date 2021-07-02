@@ -1,9 +1,10 @@
 import ICS from './ics'
+import { CHEMIN_ACCUEIL } from './router'
 
 export function bindCalendar(element, profil) {
     const ics = new ICS(navigator.appVersion)
     const duration = 1 // heures bloquées sur le calendrier.
-    const urlSuivi = 'https://mesconseilscovid.sante.gouv.fr/#suiviintroduction'
+    const urlSuivi = 'https://mesconseilscovid.sante.gouv.fr/suiviintroduction'
 
     // Définition de l'évènement de début des symptômes (pas de récurrence).
     if (profil.hasSymptomesStartDate()) {
@@ -65,8 +66,8 @@ export function bindSuppressionTotale(element, app) {
         if (confirm('Êtes-vous sûr·e de vouloir supprimer tous les profils ?')) {
             app.supprimerTout().then(() => {
                 if (app.router) {
-                    if (app.router.lastRouteResolved().url !== 'introduction') {
-                        app.router.navigate('introduction')
+                    if (app.router.getCurrentLocation().url !== CHEMIN_ACCUEIL) {
+                        app.router.navigate(CHEMIN_ACCUEIL)
                     } else {
                         window.location.reload(true)
                     }

@@ -206,6 +206,47 @@ class TestSummaryDirective:
         )
 
 
+class TestMarkdownLinks:
+    def test_http(self):
+        from build import markdown
+
+        assert markdown("[foo](http://bar)") == '<p><a href="http://bar">foo</a></p>\n'
+
+    def test_https(self):
+        from build import markdown
+
+        assert markdown("[foo](https://bar)") == '<p><a href="https://bar">foo</a></p>\n'
+
+    def test_absolute(self):
+        from build import markdown
+
+        assert (
+            markdown("[foo](/vaccins)")
+            == '<p><a href="/vaccins">foo</a></p>\n'
+        )
+
+    def test_internal(self):
+        from build import markdown
+
+        assert (
+            markdown("[foo](vaccins)")
+            == '<p><a href="vaccins" data-navigo>foo</a></p>\n'
+        )
+
+    def test_mailto(self):
+        from build import markdown
+
+        assert (
+            markdown("[foo](mailto:foo@example.com)")
+            == '<p><a href="mailto:foo@example.com">foo</a></p>\n'
+        )
+
+    def test_tel(self):
+        from build import markdown
+
+        assert markdown("[foo](tel:17)") == '<p><a href="tel:17">foo</a></p>\n'
+
+
 class TestMarkdownContentBlock:
     def test_render_block(self):
         from build import MarkdownContent, markdown

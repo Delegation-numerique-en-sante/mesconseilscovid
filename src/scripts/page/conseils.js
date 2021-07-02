@@ -31,11 +31,11 @@ export default function conseils(page, app) {
     if (typeof app.profil.questionnaire_completion_date === 'undefined') {
         app.profil.questionnaire_completion_date = new Date()
         app.enregistrerProfilActuel()
-        app.plausible('Questionnaire terminé')
+        app.plausible('Questionnaire terminé', 'conseils')
         if (app.profil.estMonProfil()) {
-            app.plausible('Questionnaire terminé pour moi')
+            app.plausible('Questionnaire terminé pour moi', 'conseils')
         } else {
-            app.plausible('Questionnaire terminé pour un proche')
+            app.plausible('Questionnaire terminé pour un proche', 'conseils')
         }
     }
 
@@ -259,7 +259,7 @@ function dynamicTimelineDataInjection(element, profil) {
                 contagiosite: joursAvant(2, profil.symptomes_start_date),
                 debutIsolement: `${formatDate(
                     profil.symptomes_start_date
-                )} (<a href="#symptomes">modifier</a>)`,
+                )} (<a href="symptomes" data-navigo>modifier</a>)`,
                 demain: joursApres(1, new Date()),
                 finIsolement: joursApres(dureeIsolement, profil.symptomes_start_date),
                 finIsolementPositif: joursApres(
@@ -296,7 +296,7 @@ function dynamicTimelineDataInjection(element, profil) {
                 contagiosite: joursAvant(2, profil.depistage_start_date),
                 debutIsolement: `${formatDate(
                     profil.depistage_start_date
-                )} (<a href="#depistage">modifier</a>)`,
+                )} (<a href="depistage" data-navigo>modifier</a>)`,
                 demain: joursApres(1, new Date()),
                 finIsolement: joursApres(dureeIsolement, profil.depistage_start_date),
                 finIsolementPositif: joursApres(

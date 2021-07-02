@@ -1,4 +1,4 @@
-import { getCurrentPageName } from './router'
+import { CHEMIN_ACCUEIL, getCurrentPageName } from './router'
 import { showElement } from './affichage'
 import { ORDRE } from './questionnaire'
 
@@ -19,7 +19,7 @@ export default class Updater {
             return
         }
 
-        const pageName = getCurrentPageName()
+        const pageName = getCurrentPageName(document)
         if (pageName === 'nouvelleversiondisponible') {
             return
         }
@@ -94,7 +94,7 @@ export default class Updater {
     }
 
     notifyUser() {
-        const pageName = getCurrentPageName()
+        const pageName = getCurrentPageName(document)
         if (this.onInteractivePage(pageName)) {
             this.notifyUserWithoutInterrupting(pageName)
         } else {
@@ -126,21 +126,22 @@ export default class Updater {
 
     setupRefreshButton(button, pageName) {
         button.innerText = 'Mettre à jour'
-        button.setAttribute('href', '#' + (pageName || 'introduction'))
+        button.setAttribute('href', pageName || CHEMIN_ACCUEIL)
         button.addEventListener('click', this.onClickRefreshButton.bind(this))
     }
 
     onClickRefreshButton(event) {
-        console.debug('Updater.onClickRefreshButton()')
         event.preventDefault()
 
         let button = event.target
 
         // Change the URL without triggering the router.
-        this.router.pause()
-        console.log(window.location)
-        window.location = button.href
-        console.log(window.location)
+        this.router.navigate(button.getAttribute('href'), {
+            historyAPIMethod: 'replaceState',
+            updateBrowserURL: true,
+            callHandler: false,
+            callHooks: false,
+        })
 
         // User feedback as it may take more than a few milliseconds.
         button.innerText = 'Mise à jour en cours...'

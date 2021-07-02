@@ -4,7 +4,7 @@ import { hideElement, showElement } from './affichage'
 import { Questionnaire } from './questionnaire'
 import { joursAvant } from './utils'
 
-import { Router } from './router'
+import { CHEMIN_ACCUEIL, Router } from './router'
 import Updater from './updater'
 
 import introduction from './page/introduction'
@@ -52,12 +52,15 @@ export default class App {
         this.source = searchParams.get('source') || searchParams.get('utm_source')
     }
     init() {
-        this.router = new Router(this)
+        this.router = new Router(this, window)
         this.updater = new Updater(this.router)
         return this.chargerProfilActuel()
     }
     setupRoutes() {
-        this.router.addAppRoute('introduction', introduction, undefined, '') // accueil : pas de titre
+        this.router.addAppRoute('introduction', introduction, {
+            route: '',
+            pageTitle: '',
+        })
 
         this.router.addAppRoute('nom', nom)
 
@@ -69,18 +72,16 @@ export default class App {
         this.router.addQuestionnaireRoute('situation', situation)
         this.router.addQuestionnaireRoute('sante', sante)
 
-        this.router.addAppRoute('conseils', conseils, beforeConseils)
-        this.router.addAppRoute(
-            'suiviintroduction',
-            suiviintroduction,
-            beforeSuiviIntroduction
-        )
-        this.router.addAppRoute('suivisymptomes', suivisymptomes, beforeSuiviSymptomes)
-        this.router.addAppRoute(
-            'suivihistorique',
-            suivihistorique,
-            beforeSuiviHistorique
-        )
+        this.router.addAppRoute('conseils', conseils, { beforeFunc: beforeConseils })
+        this.router.addAppRoute('suiviintroduction', suiviintroduction, {
+            beforeFunc: beforeSuiviIntroduction,
+        })
+        this.router.addAppRoute('suivisymptomes', suivisymptomes, {
+            beforeFunc: beforeSuiviSymptomes,
+        })
+        this.router.addAppRoute('suivihistorique', suivihistorique, {
+            beforeFunc: beforeSuiviHistorique,
+        })
 
         this.router.addRoute('conditionsutilisation', (element) => {
             if (this.profil.isComplete()) {
@@ -89,12 +90,44 @@ export default class App {
             }
         })
 
-        this.router.addRoute('nouvelleversiondisponible', (element) => {
-            const route = this.router.lastRouteResolved()
-            const urlParams = new URLSearchParams(route.query)
-            const origine = urlParams.get('origine')
-
+        this.router.addRoute('nouvelleversiondisponible', (element, params) => {
+            const origine = (params && params.origine) || CHEMIN_ACCUEIL
             nouvelleversion(element, this, origine)
+        })
+    }
+    setupRedirects() {
+        // Compatibilité avec les anciens noms de pages.
+        this.router.navigo.on(
+            new RegExp('^(symptomesactuels|symptomespasses|debutsymptomes)$'),
+            () => {},
+            {
+                before: (done) => {
+                    this.redirectTo('symptomes')
+                    done(false)
+                },
+            }
+        )
+        this.router.navigo.on(new RegExp('^(residence|foyer|activitepro)$'), () => {}, {
+            before: (done) => {
+                this.redirectTo('situation')
+                done(false)
+            },
+        })
+        this.router.navigo.on(
+            new RegExp('^(caracteristiques|antecedents)$'),
+            () => {},
+            {
+                before: (done) => {
+                    this.redirectTo('sante')
+                    done(false)
+                },
+            }
+        )
+        this.router.navigo.on('pediatrie', () => {}, {
+            before: function (done) {
+                window.location.replace('conseils-pour-les-enfants.html')
+                done(false)
+            },
         })
     }
     chargerProfilActuel() {
@@ -224,12 +257,12 @@ export default class App {
         this.enregistrerProfilActuel()
     }
     trackPageView(pageName) {
-        this.plausible('pageview')
+        this.plausible('pageview', pageName)
         this.atinternet(pageName)
     }
-    plausible(eventName, props = {}) {
+    plausible(eventName, pageName, props = {}) {
         const searchParams = new URLSearchParams(window.location.search)
-        const options = {}
+        const options = { pageName }
         if (typeof this.profil.nom !== 'undefined') {
             props['profil'] = this.profil.estMonProfil() ? 'moi' : 'proche'
         }
