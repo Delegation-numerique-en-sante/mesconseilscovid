@@ -50,7 +50,7 @@ export function bindImpression(element, app) {
             Array.from(element.querySelectorAll('details')).forEach((detail) => {
                 detail.setAttribute('open', '')
             })
-            window.print()
+            window.setTimeout(() => window.print(), 400) // attend la fin de l’animation
         } catch (e) {
             console.error(e)
             alert('Cette fonctionnalité n’est pas présente sur votre appareil')
