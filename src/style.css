@@ -776,7 +776,9 @@ footer .legals {
 .conseil {
     background: #d5dbef;
     padding: 0.1rem 1rem;
-    border-left: 5px solid #000091;
+    border-color: #000091;
+    border-left-style: solid;
+    border-left-width: 5px;
     margin-bottom: 1.5rem;
 }
 .conseil-orange {
@@ -1548,6 +1550,14 @@ a.no-type::after {
     .statut,
     .conseil {
         background-color: white;
+    }
+    .conseil {
+        border-top-width: 2px;
+        border-right-width: 2px;
+        border-bottom-width: 2px;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
     }
 
     .block > h2,
