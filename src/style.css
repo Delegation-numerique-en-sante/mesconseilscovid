@@ -1500,6 +1500,15 @@ a.no-type::after {
     a[href^='/pdfs/']::after {
         content: ' <' attr(data-original-link) '>';
     }
+    .conseils a[href^="https://www.has-sante.fr/"]::before,
+    .conseils a[href*="youtube.com"]::before,
+    .conseils a[href*="fiche"]::before,
+    .conseils a[href^='/pdfs/']::before {
+        background: none;
+        width: 0px;
+        height: 0px;
+    }
+
     #conseils-block-date {
         display: block;
     }
