@@ -1521,6 +1521,11 @@ a.no-type::after {
     .block * {
         font-size: 14px;
     }
+    .block p,
+    .block ul {
+        max-width: 100%;
+    }
+
     .statut {
         padding: 0;
         margin: 0 0 14px 0;
