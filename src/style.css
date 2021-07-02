@@ -1532,6 +1532,8 @@ a.no-type::after {
     .conseils summary svg,
     .reponse .modifier,
     .form-controls,
+    .feedback-block,
+    #et-ensuite,
     #pour-finir,
     footer {
         display: none;
