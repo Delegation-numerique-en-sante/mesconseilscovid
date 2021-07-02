@@ -1488,7 +1488,10 @@ a.no-type::after {
 }
 
 @media print {
-    a {
+    a,
+    a:link,
+    a:visited {
+        color: #000091;
         text-decoration: none;
     }
     a[href^='http']:after {
