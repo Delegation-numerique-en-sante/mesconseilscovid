@@ -224,7 +224,9 @@ def thematiques():
             **{
                 "thematique": thematique,
                 "config_stats_url": responses["config_stats_url"],
-                "meta_entretiens_utilisateurs": responses["meta_entretiens_utilisateurs"],
+                "meta_entretiens_utilisateurs": responses[
+                    "meta_entretiens_utilisateurs"
+                ],
                 "meta_feedback_conseils": responses["meta_feedback_conseils"],
                 "meta_pied_de_page": responses["meta_pied_de_page"],
             },
@@ -330,7 +332,9 @@ def cache_external_pdfs(content: str, timeout: int = 10) -> str:
             local_path=SRC_DIR / "pdfs" / filename,
             timeout=timeout,
         )
-        content = content.replace(url, f"pdfs/{filename}")
+        content = content.replace(
+            f'href="{url}"', f'href="pdfs/{filename}" data-original-link="{url}"'
+        )
     return content
 
 
