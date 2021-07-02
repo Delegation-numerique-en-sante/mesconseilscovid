@@ -1497,6 +1497,9 @@ a.no-type::after {
     a[href^='http']::after {
         content: ' <' attr(href) '>';
     }
+    a[href^='/pdfs/']::after {
+        content: ' <' attr(data-original-link) '>';
+    }
     #conseils-block-date {
         display: block;
     }
