@@ -1496,9 +1496,11 @@ a.no-type::after {
     }
     a[href^='http']::after {
         content: ' <' attr(href) '>';
+        font-weight: normal;
     }
     a[href^='/pdfs/']::after {
         content: ' <' attr(data-original-link) '>';
+        font-weight: normal;
     }
     .conseils a[href^="https://www.has-sante.fr/"]::before,
     .conseils a[href*="youtube.com"]::before,
