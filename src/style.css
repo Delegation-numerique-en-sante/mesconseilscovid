@@ -1498,9 +1498,16 @@ a.no-type::after {
         display: block;
     }
 
+    #conseils-blocs .conseils details {
+        box-shadow: none !important;
+    }
+
     #conseils-blocs .conseils summary {
         padding-top: 0;
         background-image: none;
+    }
+    #conseils-blocs .conseils summary h3 {
+        padding: 0;
     }
 
     .block {
@@ -1522,6 +1529,7 @@ a.no-type::after {
     }
 
     .block > h2,
+    .conseils summary svg,
     .form-controls,
     #pour-finir,
     footer {
