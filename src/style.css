@@ -1067,6 +1067,11 @@ a.button-feedback-partager {
     padding: 12px 24px 12px 60px;
     margin-top: 0;
 }
+a.button-feedback-imprimer {
+    background: no-repeat 24px center url('printer.svg');
+    padding: 12px 24px 12px 60px;
+    margin-top: 0;
+}
 a.button-feedback-flag {
     background: no-repeat 24px center url('feedback-flag.svg');
     padding: 12px 24px 12px 60px;
@@ -1546,7 +1551,7 @@ a.no-type::after {
         padding: 0;
         margin: 0 0 14px 0;
     }
-    .conseils {
+    .conseils:not([itemscope]) {
         page-break-before: always;
     }
     main,
@@ -1568,9 +1573,12 @@ a.no-type::after {
     .reponse .modifier,
     .form-controls,
     .feedback-block,
+    .illustration,
+    .cta,
     #et-ensuite,
     #pour-finir,
-    footer {
+    footer,
+    [aria-hidden='true'] {
         display: none;
     }
 }

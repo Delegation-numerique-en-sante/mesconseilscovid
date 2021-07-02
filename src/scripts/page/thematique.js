@@ -1,3 +1,4 @@
+import { bindImpression } from '../actions'
 import { bindFeedback } from '../feedback'
 
 export function estPageThematique() {
@@ -7,6 +8,7 @@ export function estPageThematique() {
 export function pageThematique(app) {
     app.trackPageView(document.location.pathname)
     bindFeedback(document.querySelector('.feedback-component'), app)
+    bindImpression(document, app)
     boutonBasculeVersMonProfil(app)
     ouvreDetailsSiFragment()
     partagePageEnCours()
