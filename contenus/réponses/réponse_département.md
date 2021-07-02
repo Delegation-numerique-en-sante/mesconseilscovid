@@ -1,1 +1,1 @@
-Votre lieu de résidence actuel : <strong id="nom-departement"></strong> (<a href="#situation">modifier</a>)
+Votre lieu de résidence actuel : <strong id="nom-departement"></strong> <span class="modifier">(<a href="#situation">modifier</a>)</span>
