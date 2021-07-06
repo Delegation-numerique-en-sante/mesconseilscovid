@@ -5,13 +5,16 @@
 </div>
 
 <div id="conseils-pediatrie-general" class="conseils">
+    
+<span class="nouveau">nouveau</span> Le forfait « 100% Psy enfant Ado  » est opérationnel. Il donne accès à 10 séances de soutien psychologique, sans avances de frais, pour les mineurs en souffrance psychique du fait de la situation sanitaire. Pour obtenir toutes les informations nécéssaires, consultez [le site internet dédidé au dispositif](https://www.psyenfantado.sante.gouv.fr/). 
+
 
 ## La vaccination des mineurs âgés de plus de 12 ans
 
 <div class="conseil">
 
 <span class="nouveau">nouveau</span> Depuis le 15 juin 2021, **la vaccination est ouverte aux enfants de 12 ans et plus**, sans condition médicale.
-
+    
 </div>
 
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
@@ -72,7 +75,6 @@
     Par ailleurs, le ou la mineur(e) non-vacciné(e) accompagnant ses parents vaccinés lors d’un voyage bénéficiera des mêmes facilités qu’eux. Par exemple, un mineur non-vaccin(é) pourra accompagner ses parents vaccinés lors d’un voyage dans un [pays classé orange](https://www.gouvernement.fr/voyager-depuis-et-vers-l-etranger-mode-d-emploi) sans justifier d’un motif impérieux pour s’y rendre.
 
     Pour plus d’informations sur les voyages et le pass sanitaire en général, consultez notre [page thématique](https://mesconseilscovid.sante.gouv.fr/pass-sanitaire-qr-code-voyages.html).
-
 
 
 ## Questions générales pour les mineurs de moins de 15 ans
