@@ -58,11 +58,11 @@ describe('Routeur', function () {
         })
         this.router = new Router(new FakeApp())
         this.router.addAppRoute('introduction', () => {})
-        assert.strictEqual(window.location.toString(), 'https://test/')
+        assert.strictEqual(window.location.href, 'https://test/')
 
         this.router.resolve()
 
-        assert.strictEqual(window.location.toString(), 'https://test/#introduction')
+        assert.strictEqual(window.location.href, 'https://test/#introduction')
     })
 
     it('Une page inconnue redirige vers la page introduction', function () {
@@ -71,11 +71,11 @@ describe('Routeur', function () {
         })
         this.router = new Router(new FakeApp())
         this.router.addAppRoute('introduction', () => {})
-        assert.strictEqual(window.location.toString(), 'https://test/#inconnue')
+        assert.strictEqual(window.location.href, 'https://test/#inconnue')
 
         this.router.resolve()
 
-        assert.strictEqual(window.location.toString(), 'https://test/#introduction')
+        assert.strictEqual(window.location.href, 'https://test/#introduction')
     })
 
     it('La redirection conserve la source', function () {
@@ -84,12 +84,12 @@ describe('Routeur', function () {
         })
         this.router = new Router(new FakeApp())
         this.router.addAppRoute('introduction', () => {})
-        assert.strictEqual(window.location.toString(), 'https://test/?source=foo')
+        assert.strictEqual(window.location.href, 'https://test/?source=foo')
 
         this.router.resolve()
 
         assert.strictEqual(
-            window.location.toString(),
+            window.location.href,
             'https://test/?source=foo#introduction'
         )
     })
