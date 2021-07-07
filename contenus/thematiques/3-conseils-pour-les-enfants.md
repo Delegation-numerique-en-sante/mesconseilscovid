@@ -5,16 +5,18 @@
 </div>
 
 <div id="conseils-pediatrie-general" class="conseils">
-    
-<span class="nouveau">nouveau</span> Le forfait « 100% Psy enfant Ado  » est opérationnel. Il donne accès à 10 séances de soutien psychologique, sans avances de frais, pour les mineurs en souffrance psychique du fait de la situation sanitaire. Pour obtenir toutes les informations nécéssaires, consultez [le site internet dédidé au dispositif](https://www.psyenfantado.sante.gouv.fr/). 
 
+<div class="conseil">
+
+<span class="nouveau">nouveau</span> Le forfait « 100% Psy Enfant Ado » est opérationnel. Il donne accès à 10 séances de soutien psychologique, sans avance de frais, pour les mineurs en souffrance psychique du fait de la situation sanitaire. Pour obtenir toutes les informations nécessaires, consultez [le site internet dédié au dispositif](https://www.psyenfantado.sante.gouv.fr/).
+
+</div>
 
 ## La vaccination des mineurs âgés de plus de 12 ans
 
 <div class="conseil">
 
-<span class="nouveau">nouveau</span> Depuis le 15 juin 2021, **la vaccination est ouverte aux enfants de 12 ans et plus**, sans condition médicale.
-    
+Depuis le 15 juin 2021, **la vaccination est ouverte aux enfants de 12 ans et plus**, sans condition médicale.
 </div>
 
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
