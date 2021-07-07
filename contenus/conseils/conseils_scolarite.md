@@ -1,9 +1,3 @@
-<div class="conseil conseil-vert">
-
-<span class="nouveau">nouveau</span> Depuis le 3 mai, mise en place d’une enseignement hybride pour les lycéens (y compris classes prépa et BTS), avec mise en place de **demi-jauges** à l’échelle de chaque lycée.
-
-</div>
-
 Concernant les **concours et les examens** :
 
 * les épreuves sont maintenues pour le **brevet**, le **bac général** (épreuve de philosophie et grand oral) et les **bac pro** ;
