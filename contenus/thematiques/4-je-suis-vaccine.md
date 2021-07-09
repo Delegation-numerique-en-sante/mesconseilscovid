@@ -13,9 +13,11 @@
 
 .. question:: Pourquoi continuer à porter le masque quand on est vacciné(e) ?
 
-    La vaccination prémunit la personne vacciné(e) contre les formes graves et symptomatiques de la maladie. Vacciné(e), vous pouvez contracter une forme bénigne de la maladie, et vous pouvez continuer à la transmettre (même si votre contagiosité est diminuée).  
+    Les vaccins contre la Covid vous protègent contre la maladie en réduisant le risque de l’attraper et de faire une forme grave. Ces vaccins sont très efficaces, mais **aucun vaccin ne protège à 100 %**, et cette efficacité peut varier selon les personnes.
 
-    **Le port du masque sert donc principalement à protéger les personnes qui ne sont pas encore vacciné(e)s et limiter la propagation du virus.**
+    Même quand on est vacciné, **il reste un risque d’attraper la Covid** si on est exposé au virus (même si la maladie sera le plus souvent moins grave), et de le transmettre par la suite (même si votre contagiosité sera elle aussi diminuée).
+
+    Tant que la majorité de la population n’est pas vaccinée, et que le virus continue à circuler, le port du masque (comme la distance physique, le lavage des mains, et l’aération des espaces clos) reste donc essentiel **pour vous protéger et pour protéger les autres**, en particulier les personnes les plus fragiles.
 
 
 .. question:: Est-ce que je dois m’isoler si je suis « cas contact »  et vacciné(e) ?
