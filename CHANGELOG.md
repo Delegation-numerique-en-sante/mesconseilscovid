@@ -1,5 +1,13 @@
 # Changelog
 
+## 2021-07-09
+
+* ajoute des infos sur le dispositif « Psy Enfant Ado »
+* reformule la réponse sur le port du masque quand on est vacciné
+* meilleure mise en page lors de l’impression
+* bouton d’impression sur les pages thématiques
+* mise à jour d’un lien
+
 ## 2021-06-30
 
 * entrée en vigueur du « Pass sanitaire européen »
