@@ -1,4 +1,4 @@
-Les mesures de restrictions ont été levées sur la quasi-totalité du territoire.
+Les mesures de restriction ont été levées sur la quasi-totalité du territoire.
 
 Le **variant Delta** du Covid-19 est plus contagieux que les précédentes mutations du virus. Nous vous conseillons de rester vigilant.
 
