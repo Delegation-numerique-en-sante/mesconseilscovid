@@ -35,26 +35,6 @@
     <meta property="og:locale" content="fr_FR">
 </head>
 <body data-stats-url="{{ config_stats_url|inline }}">
-    <header role="banner" tabindex="-1">
-        <section>
-            <img id="marianne" src="marianne.png"
-                alt="Ministère des Solidarités et de la Santé"
-                width="100" height="78">
-            <a id="logo" href="" title="Aller à l’accueil">
-                <img id="logo-carre" src="logo-carre.png"
-                    alt=""
-                    width="75" height="75"
-                ><img id="logo-titre" src="logo-titre.png"
-                    alt="Mes Conseils Covid - retour à l’accueil"
-                    width="75" height="34">
-                <span class="visually-hidden">Mes Conseils Covid</span>
-            </a>
-            <div id="js-profil-full-header" class="js-profil-full" hidden>
-                <b class="profil" id="nom-profil-header"></b>
-            </div>
-            <div id="js-profil-empty-header" class="js-profil-empty"></div>
-        </section>
-    </header>
     <main role="main">
         <section id="update-banner" hidden>
             <div class="block">
@@ -66,10 +46,6 @@
         </section>
         <section id="page">
             <div class="block introduction-block">
-                <h1>Isolement, tests, vaccins, attestations, contact à risque…</h1>
-                <p class="tagline">
-                    MesConseilsCovid répond à vos questions pour savoir quoi faire dans une situation liée à la Covid.
-                </p>
                 <div class="thematiques">
                     <ul class="cards ">
                         {% for thematique in thematiques %}
@@ -83,7 +59,6 @@
                         {% endfor %}
                     </ul>
                 </div>
-                <div class="tagline-image"></div>
                 <noscript>
                     <h2>Ce site a besoin de JavaScript pour fonctionner.</h2>
                     <p>
@@ -138,7 +113,7 @@
                         >Des conseils pour un ou une proche</a>
                 </li>
             </ul>
-            <div class="tagline-image"></div>
+        
         </div>
 
         <p>Vos informations personnelles sont seulement stockées sur cet appareil et ne sont pas partagées.</p>
