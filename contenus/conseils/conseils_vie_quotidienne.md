@@ -1,4 +1,7 @@
-Qu’est-ce qui change le 19 mai, le 9 juin et le 30 juin ? Consultez le détail des [modalités et du calendrier des réouvertures](https://www.gouvernement.fr/les-modalites-et-le-calendrier-des-reouvertures).
+Les mesures de restrictions ont été levées sur la quasi-totalité du territoire.
+
+Le **variant Delta** du Covid-19 est plus contagieux que les précédantes mutations du virus. Nous vous conseillons de rester vigilant.
+La [vaccination](https://mesconseilscovid.sante.gouv.fr/je-veux-me-faire-vacciner.html) et les gestes barrières, notamment le port du masque (lors de forte affluence ou en intérieur) sont les mesures les plus efficaces pour empêcher une nouvelle vague épidémique.
 
 Pour vos **courses**, nous vous conseillons de :
 
