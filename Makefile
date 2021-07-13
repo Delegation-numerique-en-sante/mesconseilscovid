@@ -24,37 +24,6 @@ clean:  ## Clean up JS related stuff.
 ##    make test-integration browser=webkit grep=suivi
 ##    make test browser=webkit
 
-test: test-unit test-integration test-tools test-feedback
-
-ifdef grep
-script_flags = -- --grep $(grep)
-else
-script_flags =
-endif
-
-ifdef cover
-	coverage = :coverage
-else
-	coverage =
-endif
-
-test-unit:  ## Run JS unit tests.
-	npm run-script test$(coverage) $(script_flags)
-
-test-integration: build  ## Run JS browser tests.
-ifdef browser
-	BROWSER=$(browser) npm run-script test-integration $(script_flags)
-else
-	BROWSER=chromium npm run-script test-integration $(script_flags)
-	BROWSER=firefox npm run-script test-integration $(script_flags)
-	BROWSER=webkit npm run-script test-integration $(script_flags)
-endif
-
-test-tools:
-	pytest test_*.py
-
-test-feedback:
-	tox -c feedback/tox.ini
 
 check: check-links check-versions check-orphelins check-diagrammes check-service-worker
 
