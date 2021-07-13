@@ -313,6 +313,10 @@ legend h1 {
 .thematiques {
     max-width: 58rem;
 }
+.thematiques h2 {
+    text-align: center;
+    padding-top: 1.5rem;
+}
 .thematiques .cards > li {
     display: block;
     padding: 0;

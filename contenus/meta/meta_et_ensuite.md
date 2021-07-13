@@ -1,4 +1,4 @@
-### Et ensuite ?
+## Et ensuite ?
 
 En cas d’apparition de signes évoquant la Covid (fièvre…), vous pourrez suivre ici l’[évolution de votre état de santé](#suiviintroduction).
 

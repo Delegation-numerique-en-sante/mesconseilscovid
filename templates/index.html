@@ -108,7 +108,7 @@
         <div id="profils-cards-full" hidden>
             <h2>Vos profils</h2>
             <ul class="cards"></ul>
-            <h2>Thématiques populaires</h2>
+            <h2>Pages populaires</h2>
         </div>
         <div class="thematiques">
             <ul class="cards ">
@@ -1434,6 +1434,23 @@
                         {{ conseils_vie_quotidienne }}
                     </details>
                 </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="thematiques">
+                <h1>Pages populaires</h1>
+                <ul class="cards ">
+                    {% for thematique in thematiques %}
+                    <li>
+                        <a class="card" href="{{ thematique.name }}.html">
+                            <img src="{{ thematique.imgsrc }}" loading="lazy" alt=""
+                                 width="96" height="76.8">
+                            <span class="card-title">{{ thematique.title }}</span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
 
