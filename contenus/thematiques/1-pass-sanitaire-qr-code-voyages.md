@@ -308,7 +308,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     Il permet d’authentifier les informations sur votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) lors d’un contrôle.
 
     * En France, le « Pass sanitaire activités »  est actuellement obligatoire pour participer à des évènements rassemblant plus de 1 000 personnes (festivals, conférences, salons…) ou pour accéder à certains lieux (comme les boîtes de nuit). 
-      A partir du 21 juillet, il sera exigé pour accéder aux lieux de loisirs et de culture rassemblant plus de 50 personnes.
+      A partir du 21 juillet, il sera exigé, à partir de 12 ans, pour accéder aux lieux de loisirs et de culture rassemblant plus de 50 personnes.
       Début août, son usage sera étendu aux cafés, restaurants, centres commerciaux, établissements médicaux, moyens de transports colelctifs pour les longs trajets (trains, cars et avions).
     * Dans l’Espace européen, le « Pass sanitaire européen » (ou encore « <span lang="en">Digital Covid Certificate</span> » en anglais) facilite, depuis le 1<sup>er</sup> juillet, les voyages entre les pays membres. 
 
