@@ -91,3 +91,29 @@ describe('Vaccination', function () {
         })
     })
 })
+
+describe('Vaccination obligatoire', function () {
+    it('Vaccination obligatoire pour les professionnels de santé', function () {
+        const profil = new Profil('mes_infos', {
+            age: 42,
+            activite_pro: true,
+            activite_pro_sante: true,
+        })
+        const algoOrientation = new AlgorithmeOrientation(profil)
+        const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
+        assert.isTrue(algoVaccination.isVaccinationPossible())
+        assert.isTrue(algoVaccination.isVaccinationObligatoire())
+    })
+
+    it('Vaccination non obligatoire pour les autres', function () {
+        const profil = new Profil('mes_infos', {
+            age: 42,
+            activite_pro: true,
+            activite_pro_sante: false,
+        })
+        const algoOrientation = new AlgorithmeOrientation(profil)
+        const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
+        assert.isTrue(algoVaccination.isVaccinationPossible())
+        assert.isFalse(algoVaccination.isVaccinationObligatoire())
+    })
+})

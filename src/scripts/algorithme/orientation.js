@@ -489,6 +489,9 @@ export default class AlgorithmeOrientation {
                     blockNames.push('conseils-vaccins-2-mois-moins')
                 }
             }
+            if (algoVaccination.isVaccinationObligatoire()) {
+                blockNames = blockNames.concat('conseils-vaccins-obligation-pro-sante')
+            }
             if (algoVaccination.isVaccinationPossible()) {
                 blockNames = blockNames.concat(this._conseilsVaccins(algoVaccination))
             }
