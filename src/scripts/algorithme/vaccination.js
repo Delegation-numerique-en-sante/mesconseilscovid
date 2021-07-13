@@ -41,7 +41,7 @@ export default class AlgorithmeVaccination {
         return this.profil.vaccins === 'completement'
     }
 
-    isVaccinable() {
+    isVaccinationPossible() {
         return this.isSup12()
     }
 }
