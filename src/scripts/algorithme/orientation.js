@@ -532,11 +532,6 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
-    scolariteBlockNamesToDisplay() {
-        const blockNames = ['conseils-scolarite']
-        return blockNames
-    }
-
     vieQuotidienneBlockNamesToDisplay() {
         const blockNames = ['conseils-vie-quotidienne']
         if (this.profil.departement === '971') {

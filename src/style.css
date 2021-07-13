@@ -426,7 +426,6 @@ footer .legals {
     background-size: 40%;
 }
 
-#conseils-scolarite summary,
 #conseils-vie-quotidienne summary,
 #conseils-deplacements summary,
 #conseils-pass-sanitaire summary,
@@ -464,7 +463,6 @@ footer .legals {
         background-size: 30%;
     }
 
-    #conseils-scolarite summary,
     #conseils-vie-quotidienne summary,
     #conseils-deplacements summary,
     #conseils-pass-sanitaire summary,
@@ -485,7 +483,6 @@ footer .legals {
         padding: 0 0 0 8rem;
     }
     #conseils-tests summary,
-    #conseils-scolarite summary,
     #conseils-deplacements summary {
         background-size: 13%;
     }
@@ -551,7 +548,6 @@ footer .legals {
 #conseils-pediatrie-general summary {
     background-image: url('illustrations/pediatriegeneral.svg');
 }
-#conseils-scolarite summary,
 #conseils-pediatrie-ecole summary {
     background-image: url('illustrations/pediatrieecole.svg');
 }
