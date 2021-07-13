@@ -106,12 +106,16 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Comment savoir si ma vaccination est complète ?
     :level: 4
-
-    Votre vaccination est considérée comme étant terminée si :
-
+   
+    En Europe, votre vaccination est considérée comme étant terminée si :
+    
     * vous avez reçu toutes les doses de vaccins que vous deviez recevoir (1, 2 ou 3 doses selon votre situation) ou ;
     * vous avez reçu votre dernière dose du vaccin Pfizer, Moderna ou AstraZeneca il y a plus de 14 jours ou ;
     * vous avez reçu votre dose de vaccin Janssen il y a plus de 28 jours.
+    
+    En dehors de l'Espace européen : 
+    
+    Dans certains pays extérieurs à l'espace européen, la vaccination n'est considérée comme complète, qu'après 2 doses de vaccin (sauf Janssen), et ce, même si une personne a déjà été contaminée par la Covid-19. Si vous n'avez reçu qu'une seule dose suite à une première infection à la Covid-19, nous vous encourageons à vous renseigner auprès des autorités de votre pays de destination afin de connaître leurs attentes en matière de schéma vaccinal.  
 
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Le « Pass sanitaire européen » est-il déjà en application pour les voyages dans l’Espace européen ?
     :level: 4
