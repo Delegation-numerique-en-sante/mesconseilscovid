@@ -341,7 +341,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     **Non.** Vous pouvez présenter votre « Pass sanitaire » sous la forme que vous préférez :
 
-    - **au format papier** : en présentant votre justificatif sur lequel figure un QR code ;
+    - **au format papier** : en présentant votre justificatif (original ou photocopie) sur lequel figure un QR code ;
     - **au format numérique** : en présentant une photo ou un scan de votre justificatif muni d’un QR code ;
     - **dans l’application TousAntiCovid** : en numérisant votre justificatif grâce au QR code, dans la rubrique Carnet.
 
