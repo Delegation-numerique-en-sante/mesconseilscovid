@@ -483,15 +483,13 @@ export default class AlgorithmeOrientation {
             if (this.profil.covid_passee) {
                 if (this.profil.hasCovidPlus6Mois()) {
                     blockNames.push('conseils-vaccins-6-mois-plus')
-                    blockNames = blockNames.concat(
-                        this._conseilsVaccins(algoVaccination)
-                    )
                 } else if (this.profil.hasCovidPlus2Mois()) {
                     blockNames.push('conseils-vaccins-2-6-mois')
                 } else {
                     blockNames.push('conseils-vaccins-2-mois-moins')
                 }
-            } else {
+            }
+            if (algoVaccination.isVaccinationPossible()) {
                 blockNames = blockNames.concat(this._conseilsVaccins(algoVaccination))
             }
         }
