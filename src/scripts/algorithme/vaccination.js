@@ -42,6 +42,9 @@ export default class AlgorithmeVaccination {
     }
 
     isVaccinationPossible() {
-        return this.isSup12()
+        return (
+            this.isSup12() &&
+            (!this.profil.covid_passee || this.profil.hasCovidPlus2Mois())
+        )
     }
 }
