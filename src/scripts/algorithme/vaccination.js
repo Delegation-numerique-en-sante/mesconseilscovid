@@ -47,4 +47,8 @@ export default class AlgorithmeVaccination {
             (!this.profil.covid_passee || this.profil.hasCovidPlus2Mois())
         )
     }
+
+    isVaccinationObligatoire() {
+        return this.profil.activite_pro && this.profil.activite_pro_sante
+    }
 }

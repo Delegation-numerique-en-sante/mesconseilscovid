@@ -520,6 +520,22 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
+        it('Cas ≥ 18 ans (professionnel de santé)', function () {
+            var profil = new Profil('mes_infos', {
+                age: 18,
+                activite_pro: true,
+                activite_pro_sante: true,
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'reponse-vaccins-pas-encore',
+                'reponse-historique-sans',
+                'conseils-vaccins-pas-encore-vaccine',
+                'conseils-vaccins-obligation-pro-sante',
+                'conseils-vaccins-18-ans',
+            ])
+        })
+
         it('Cas ≥ 18 ans à risque (comorbidité)', function () {
             var profil = new Profil('mes_infos', {
                 age: 18,
