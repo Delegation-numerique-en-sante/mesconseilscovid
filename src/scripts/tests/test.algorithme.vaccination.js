@@ -6,7 +6,7 @@ import AlgorithmeVaccination from '../algorithme/vaccination'
 import Profil from '../profil'
 
 describe('Vaccination', function () {
-    it('Vaccination pour les plus de 18 ans', function () {
+    it('Vaccination possible pour les plus de 18 ans', function () {
         const profil = new Profil('mes_infos', {
             age: 18,
             activite_pro_sante: false,
@@ -18,10 +18,10 @@ describe('Vaccination', function () {
         const algoOrientation = new AlgorithmeOrientation(profil)
         const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
         assert.isTrue(algoVaccination.isSup18())
-        assert.isTrue(algoVaccination.isVaccinable())
+        assert.isTrue(algoVaccination.isVaccinationPossible())
     })
 
-    it('Vaccination pour les 12 à 18 ans', function () {
+    it('Vaccination possible pour les 12 à 18 ans', function () {
         const profil = new Profil('mes_infos', {
             age: 16,
             activite_pro_sante: false,
@@ -33,6 +33,6 @@ describe('Vaccination', function () {
         const algoOrientation = new AlgorithmeOrientation(profil)
         const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
         assert.isTrue(algoVaccination.isSup12())
-        assert.isTrue(algoVaccination.isVaccinable())
+        assert.isTrue(algoVaccination.isVaccinationPossible())
     })
 })
