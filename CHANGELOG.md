@@ -1,5 +1,14 @@
 # Changelog
 
+## 2021-07-13
+
+* mise à jour relative au télétravail
+* mention du variant Delta
+* ajout d’un statut de vaccination obligatoire pour les soignant·es
+* précisions sur le Pass sanitaire
+* différence de schéma vaccinal complet entre Europe et reste du monde
+* mise à jour de la liste des pays rouges
+
 ## 2021-07-09
 
 * ajoute des infos sur le dispositif « Psy Enfant Ado »
