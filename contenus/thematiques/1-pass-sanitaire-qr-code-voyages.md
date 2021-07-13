@@ -307,7 +307,9 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Il permet d’authentifier les informations sur votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) lors d’un contrôle.
 
-    * En France, le « Pass sanitaire activités »  est obligatoire pour participer à des évènements rassemblant plus de 1 000 personnes (festivals, conférences, salons…) ou pour accéder à certains lieux (comme les boîtes de nuit, à partir du 9 juillet).
+    * En France, le « Pass sanitaire activités »  est actuellement obligatoire pour participer à des évènements rassemblant plus de 1 000 personnes (festivals, conférences, salons…) ou pour accéder à certains lieux (comme les boîtes de nuit). 
+      A partir du 21 juillet, il sera exigé pour accéder aux lieux de loisirs et de culture rassemblant plus de 50 personnes.
+      Début août, son usage sera étendu aux cafés, restaurants, centres commerciaux, établissements médicaux, moyens de transports colelctifs pour les longs trajets (trains, cars et avions).
     * Dans l’Espace européen, le « Pass sanitaire européen » (ou encore « <span lang="en">Digital Covid Certificate</span> » en anglais) facilite, depuis le 1<sup>er</sup> juillet, les voyages entre les pays membres. 
 
 
@@ -315,7 +317,6 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     :level: 3
 
     **En France**, le « Pass sanitaire activités » est en application depuis le **9 juin**.
-
     **Dans l’Espace européen**, le « Pass sanitaire européen » (ou « <span lang="en">Digital Covid Certificate</span> ») est progressivement mis en application **à partir de juillet**.
 
 
@@ -328,7 +329,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     - **Certificat de rétablissement** : le résultat positif d’un test RT-PCR ou antigénique de plus de 15 jours et de moins de 6 mois.
     - **Certificat de vaccination** : une attestation de vaccination complète, c’est-à-dire que vous avez reçu toutes les doses nécessaires depuis au moins 2 semaines (Pfizer, Moderna, AstraZeneca) ou 4 semaines (Janssen).
 
-    **Attention**, en fonction de chaque situation (voyage, évènement…) un justificatif précis pourra vous être demandé. Assurez-vous de bien vérifier quel justificatif vous concerne auprès des organisateurs de l’évènement ou sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
+    **Attention**, tous les pays n'acceptent pas tous les justificatifs et en fonction de chaque situation (voyage, évènement…) un justificatif précis pourra vous être demandé. Assurez-vous de bien vérifier quel justificatif vous concerne auprès des organisateurs de l’évènement ou sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 
 .. question:: Est-ce que je dois obligatoirement avoir un <span lang="en">smartphone</span> pour utiliser le « Pass sanitaire » ?
