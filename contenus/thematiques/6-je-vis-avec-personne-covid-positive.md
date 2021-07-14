@@ -80,18 +80,4 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 Si votre logement ne permet pas d’isoler la personne positive (adulte) du reste des résidents, l’Assurance Maladie pourra l’aider à trouver un autre logement pour la durée de son isolement.
 
 
-## Vous avez encore des questions ?
-
-* J’ai déjà fait un **test**, que faire ?
-* Comment gérer mon **isolement** ?
-* J’ai une **maladie grave**, quelles spécificités ?
-* J’ai des **symptômes** de la Covid, quelles sont les recommandations ?
-* Je suis **cas contact de cas contact**, qu’est-ce que ça veut dire ?
-* J’ai un rendez-vous pour me faire **vacciner**, puis-je y aller ?
-
-<section class="cta">
-    <h3>Obtenez des conseils adaptés à votre situation en quelques clics</h3>
-    <a class="button" href="/#conseils">Je veux des conseils personnalisés</a>
-</section>
-
 </div>

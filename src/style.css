@@ -315,7 +315,7 @@ legend h1 {
 }
 .thematiques h2 {
     text-align: center;
-    padding-top: 1.5rem;
+    padding-top: 0;
 }
 .thematiques .cards > li {
     display: block;
@@ -1477,17 +1477,18 @@ a.no-type::after {
 
 .thematique .cta {
     text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 8rem;
+    margin: 2rem auto;
 }
 .thematique .cta h3 {
+    font-size: 150%;
+    color: black;
     max-width: 40rem;
-    margin: 3rem auto;
+    margin: 0 auto 2rem auto;
 }
 .thematique .cta a.button {
     display: inline-block;
     font-size: 20px;
-    margin-top: 0;
+    margin: 0 auto 1rem auto;
     padding: 12px 64px 16px 48px;
     background-image: url('arrow-right-white.svg');
     background-position: 95% center;

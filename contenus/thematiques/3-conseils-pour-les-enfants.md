@@ -234,9 +234,4 @@ Depuis le 15 juin 2021, **la vaccination est ouverte aux enfants de 12 ans et
 
 Ligne d’écoute pour les parents, ressources pour les parents et professionnels : [Enfance & Covid](https://eduensemble.org/enfance-covid/).
 
-<section class="cta">
-    <h3>Obtenez des conseils adaptés à votre situation en quelques clics</h3>
-    <a class="button" href="/#conseils">Je veux des conseils personnalisés</a>
-</section>
-
 </div>
