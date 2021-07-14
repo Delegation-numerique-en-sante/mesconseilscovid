@@ -23,6 +23,13 @@ BUNDLER_COMMAND = f"{PARCEL_CLI} watch src/*.html"
 ROOT_DIR = "dist/"
 
 PATHS_TO_WATCH_FOR_BUILD = [
+    "contenus/conseils/*.md",
+    "contenus/meta/*.md",
+    "contenus/questions/*.md",
+    "contenus/réponses/*.md",
+    "contenus/statuts/*.md",
+    "contenus/suivi/*.md",
+    "contenus/thematiques/*.md",
     "static/[!sitemap.xml]*",
     "templates/*.html",
 ]
@@ -92,7 +99,7 @@ def serve_http(address, port, open_, watch):
     server = CustomServer()
     if watch:
         for path in PATHS_TO_WATCH_FOR_BUILD:
-            server.watch(path, build_html, delay=5)
+            server.watch(path, build_html)
         for path in PATHS_TO_WATCH_FOR_RELOAD:
             server.watch(path)
     server.serve(
