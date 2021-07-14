@@ -1,5 +1,6 @@
 import Profil from '../profil'
 import { createElementFromHTML, hideElement, showElement } from '../affichage'
+import { navigueVersUneThematique } from './thematique'
 
 export default function introduction(page, app) {
     const element = page
@@ -46,6 +47,7 @@ export default function introduction(page, app) {
         )
         renderProfilCards(fullContainerList, noms, app)
     })
+    navigueVersUneThematique(app, 'Navigue vers une thématique depuis l’accueil')
 }
 
 function renderProfilCards(container, noms, app) {

@@ -1,5 +1,9 @@
 import { assert } from 'chai'
-import { remplirQuestionnaire, waitForPlausibleTrackingEvent } from './helpers'
+import {
+    remplirQuestionnaire,
+    recordConsoleMessages,
+    waitForPlausibleTrackingEvent,
+} from './helpers'
 
 describe('Parcours', function () {
     it('remplir le questionnaire sans symptômes ni dépistage', async function () {
@@ -78,6 +82,36 @@ describe('Parcours', function () {
                 ),
                 'Moi'
             )
+        }
+
+        // On retourne aux conseils.
+        {
+            let bouton = await page.waitForSelector(
+                '#page.ready >> text="Voir mes conseils"'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#conseils' }),
+            ])
+        }
+
+        // On peut aller vers une thématique depuis les conseils.
+        {
+            let messages = recordConsoleMessages(page)
+            await page.click(
+                '#page.ready .thematiques a >> text="Voyage et Pass sanitaire, que faut-il savoir ?"'
+            )
+
+            assert.lengthOf(messages, 2)
+            assert.include(messages[0], {
+                n: 'pageview',
+                u: 'http://localhost/conseils',
+            })
+            assert.include(messages[1], {
+                n: 'Navigue vers une thématique depuis les conseils',
+                p: '{"chemin":"/conseils → /pass-sanitaire-qr-code-voyages.html","profil":"moi"}',
+                u: 'http://localhost/conseils',
+            })
         }
     })
 

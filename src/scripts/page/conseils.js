@@ -1,5 +1,6 @@
 import applyDetailsSummaryPolyfill from '../polyfills/details_polyfill'
 
+import { navigueVersUneThematique } from './thematique'
 import { bindCalendar, bindImpression, bindSuppressionTotale } from '../actions'
 import {
     displayBlocks,
@@ -89,6 +90,7 @@ export default function conseils(page, app) {
         bindCalendar(element, app.profil)
     }
     bindSuppressionTotale(element.querySelector('.js-suppression'), app)
+    navigueVersUneThematique(app, 'Navigue vers une thématique depuis les conseils')
 }
 
 export function cacherElementsConditionnels(element, profil) {

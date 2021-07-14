@@ -1,4 +1,5 @@
 import { assert } from 'chai'
+import { recordConsoleMessages, waitForPlausibleTrackingEvent } from './helpers'
 
 describe('Pages', function () {
     it('titre de la page', async function () {
@@ -14,6 +15,39 @@ describe('Pages', function () {
             await page.title(),
             'Mes Conseils Covid — Isolement, tests, vaccins, attestations, contact à risque…'
         )
+    })
+
+    it('on va vers une page thématique', async function () {
+        const page = this.test.page
+
+        let messages = recordConsoleMessages(page)
+        await page.goto('http://localhost:8080/')
+        await page.click(
+            '.thematiques a >> text="Voyage et Pass sanitaire, que faut-il savoir ?"'
+        )
+        await waitForPlausibleTrackingEvent(
+            page,
+            'pageview:pass-sanitaire-qr-code-voyages.html'
+        )
+
+        assert.lengthOf(messages, 4)
+        assert.include(messages[0], {
+            n: 'pageview',
+            u: 'http://localhost/',
+        })
+        assert.include(messages[1], {
+            n: 'pageview',
+            u: 'http://localhost/introduction',
+        })
+        assert.include(messages[2], {
+            n: 'Navigue vers une thématique depuis l’accueil',
+            p: '{"chemin":"/introduction → /pass-sanitaire-qr-code-voyages.html"}',
+            u: 'http://localhost/introduction',
+        })
+        assert.include(messages[3], {
+            n: 'pageview',
+            u: 'http://localhost/pass-sanitaire-qr-code-voyages.html',
+        })
     })
 
     it('redirige l’ancienne page de pédiatrie vers sa page thématique', async function () {

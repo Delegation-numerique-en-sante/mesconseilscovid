@@ -21,14 +21,6 @@ export function registerPlausible(window) {
         )
     }
 
-    // Modifie les URLs de la Single Page App ("/#foo" -> "/foo")
-    // pour faciliter l’exploitation par Plausible
-    function getLocationPathName() {
-        if (location.pathname === '/') {
-            return '/' + location.hash.slice(1)
-        }
-        return location.pathname
-    }
     function getLocationHash() {
         if (location.pathname === '/') {
             return ''
@@ -77,4 +69,13 @@ export function registerPlausible(window) {
     }
 
     return trigger
+}
+
+// Modifie les URLs de la Single Page App ("/#foo" -> "/foo")
+// pour faciliter l’exploitation par Plausible
+export function getLocationPathName() {
+    if (location.pathname === '/') {
+        return '/' + location.hash.slice(1)
+    }
+    return location.pathname
 }
