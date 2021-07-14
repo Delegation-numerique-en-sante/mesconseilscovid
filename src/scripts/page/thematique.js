@@ -1,5 +1,6 @@
 import { bindImpression } from '../actions'
 import { bindFeedback } from '../feedback'
+import { getLocationPathName } from '../plausible'
 
 export function estPageThematique() {
     return document.body.classList.contains('page-thematique')
@@ -12,7 +13,24 @@ export function pageThematique(app) {
     boutonBasculeVersMonProfil(app)
     ouvreDetailsSiFragment()
     partagePageEnCours()
-    navigueVersUneAutreThematique(app)
+    navigueVersUneThematique(
+        app,
+        'Navigue vers une thématique depuis une autre thématique'
+    )
+}
+
+export function navigueVersUneThematique(app, goal) {
+    const thematiquesLinks = document.querySelectorAll('.thematiques a')
+    Array.from(thematiquesLinks).forEach((thematiquesLink) => {
+        const href = thematiquesLink.getAttribute('href')
+        thematiquesLink.addEventListener('click', (event) => {
+            event.preventDefault()
+            app.plausible(goal, {
+                chemin: `${getLocationPathName()} → ${href}`,
+            })
+            window.location = href
+        })
+    })
 }
 
 function ouvreDetailsSiFragment() {
@@ -49,17 +67,5 @@ function partagePageEnCours() {
             encodeURIComponent(url)
         )
         partageLink.href = href
-    })
-}
-
-function navigueVersUneAutreThematique(app) {
-    const thematiquesLinks = document.querySelectorAll('.thematiques a')
-    Array.from(thematiquesLinks).forEach((thematiquesLink) => {
-        const href = thematiquesLink.getAttribute('href')
-        thematiquesLink.addEventListener('click', (event) => {
-            event.preventDefault()
-            app.plausible('Navigue vers une autre thématique', { cible: href })
-            window.location = href
-        })
     })
 }

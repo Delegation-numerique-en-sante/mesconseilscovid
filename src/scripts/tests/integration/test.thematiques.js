@@ -32,8 +32,8 @@ describe('Thématiques', function () {
             u: 'http://localhost/conseils-pour-les-enfants.html',
         })
         assert.include(messages[1], {
-            n: 'Navigue vers une autre thématique',
-            p: '{"cible":"/pass-sanitaire-qr-code-voyages.html"}',
+            n: 'Navigue vers une thématique depuis une autre thématique',
+            p: '{"chemin":"/conseils-pour-les-enfants.html → /pass-sanitaire-qr-code-voyages.html"}',
             u: 'http://localhost/conseils-pour-les-enfants.html',
         })
         assert.include(messages[2], {
