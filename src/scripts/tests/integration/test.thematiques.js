@@ -29,7 +29,6 @@ describe('Thématiques', function () {
         assert.lengthOf(messages, 3)
         assert.include(messages[0], {
             n: 'pageview',
-            r: null,
             u: 'http://localhost/conseils-pour-les-enfants.html',
         })
         assert.include(messages[1], {
@@ -39,8 +38,25 @@ describe('Thématiques', function () {
         })
         assert.include(messages[2], {
             n: 'pageview',
-            r: 'http://localhost:8080/conseils-pour-les-enfants.html',
             u: 'http://localhost/pass-sanitaire-qr-code-voyages.html',
+        })
+    })
+
+    it('je veux des conseils personnalisés', async function () {
+        const page = this.test.page
+
+        let messages = recordConsoleMessages(page)
+        await page.goto('http://localhost:8080/conseils-pour-les-enfants.html')
+        await page.click('.cta a >> text="Je veux des conseils personnalisés"')
+
+        assert.lengthOf(messages, 2)
+        assert.include(messages[0], {
+            n: 'pageview',
+            u: 'http://localhost/conseils-pour-les-enfants.html',
+        })
+        assert.include(messages[1], {
+            n: 'Je veux des conseils personnalisés',
+            u: 'http://localhost/conseils-pour-les-enfants.html',
         })
     })
 })
