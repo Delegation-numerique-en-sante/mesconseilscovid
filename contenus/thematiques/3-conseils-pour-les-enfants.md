@@ -71,8 +71,8 @@ Depuis le 15 juin 2021, **la vaccination est ouverte aux enfants de 12 ans et
     **Non.** Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « Pass sanitaire » utilisable en France et bientôt pour les voyages en Union européenne :
 
     * l’attestation de vaccination complète (toutes les doses et respect du délai de 14 jours après la dernière dose) ;
-    * un test RT-PCR ou antigénique négatif récent ;
-    * un test de dépistage positif de plus de 15 jours et moins de 6 mois.
+    * un test PCR ou antigénique négatif récent ;
+    * un test PCR positif de plus de 11 jours et moins de 6 mois.
 
     Par ailleurs, le ou la mineur(e) non-vacciné(e) accompagnant ses parents vaccinés lors d’un voyage bénéficiera des mêmes facilités qu’eux. Par exemple, un mineur non-vaccin(é) pourra accompagner ses parents vaccinés lors d’un voyage dans un [pays classé orange](https://www.gouvernement.fr/voyager-depuis-et-vers-l-etranger-mode-d-emploi) sans justifier d’un motif impérieux pour s’y rendre.
 
