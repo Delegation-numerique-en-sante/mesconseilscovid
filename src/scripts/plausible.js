@@ -58,9 +58,9 @@ export function registerPlausible(window) {
         ) {
             ignore('running locally')
             window.app._plausibleTrackingEvents.push(
-                `${payload.n}:${location.hash.slice(1)}`
+                `${payload.n}:${getLocationPathName().slice(1)}`
             )
-            console.debug('[Plausible]', payload)
+            console.debug('[Plausible]', JSON.stringify(payload))
             return
         }
         var request = new XMLHttpRequest()

@@ -1,5 +1,16 @@
 import { assert } from 'chai'
 
+export function recordConsoleMessages(page, messages = []) {
+    page.on('console', async (msg) => {
+        const text = msg.text()
+        if (text.startsWith('[Plausible] {')) {
+            const payload = JSON.parse(text.slice('[Plausible] '.length))
+            messages.push(payload)
+        }
+    })
+    return messages
+}
+
 export async function getPlausibleTrackingEvents(page) {
     return await page.evaluate(() => window.app._plausibleTrackingEvents)
 }
