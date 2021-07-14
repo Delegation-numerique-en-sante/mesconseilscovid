@@ -66,9 +66,9 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Pour connaître les conditions de sortie de la France métropolitaine vers un pays extérieur à l’Espace européen, rendez-vous sur le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
-    Par ailleurs, les voyages vers la plupart des destinations extérieures à l’Espace européen sont soumis à la présentation d’un **motif impérieux**.
+    Par ailleurs, le voyage vers la plupart des destinations hors Espace européen, à partir de la France métropolitaine, est soumis à la présentation d’un **motif impérieux**.
 
-    Pour vérifier à quelle catégorie, verte, orange ou rouge appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements).
+    Pour vérifier à quelle catégorie (verte, orange ou rouge) appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements).
 
     La plupart des pays exigent la présentation d’un test RT-PCR négatif récent (réalisé il y a moins de 48 h ou 72 h). Pour connaître les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
@@ -160,7 +160,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Par ailleurs, le voyage vers la plupart des destinations hors Espace européen, à partir de la France métropolitaine, est soumis à la présentation d’un **motif impérieux**.
 
-    Pour vérifier à quelle catégorie, verte, orange ou rouge appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements).
+    Pour vérifier à quelle catégorie (verte, orange ou rouge) appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements).
 
     La plupart des pays exigent la présentation d’un test RT-PCR négatif récent (réalisé dans les 48 h ou 72 h). Pour connaître les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
@@ -233,7 +233,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Pour connaître les conditions de sortie de la France métropolitaine vers un pays extérieur à l’Espace européen, rendez-vous sur le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
-    Par ailleurs, le voyage vers la plupart des destinations extérieure à l’Espace européen*, sont soumises à la présentation d’un **motif impérieux**.
+    Par ailleurs, le voyage vers la plupart des destinations hors Espace européen, à partir de la France métropolitaine, est soumis à la présentation d’un **motif impérieux**.
 
     Pour vérifier à quelle catégorie (verte, orange ou rouge) appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements).
 
