@@ -218,12 +218,14 @@ class Thematique:
 def thematiques():
     """Build the theme pages with contents from thematiques folder."""
     responses = build_responses(CONTENUS_DIR)
-    for thematique in get_thematiques():
+    thematiques = get_thematiques()
+    for thematique in thematiques:
+        autres_thematiques = [t for t in thematiques if t != thematique]
         content = render_template(
             "thematique.html",
             **{
                 "thematique": thematique,
-                "thematiques": get_thematiques()[:NB_OF_DISPLAYED_THEMATIQUES],
+                "thematiques": autres_thematiques[:NB_OF_DISPLAYED_THEMATIQUES],
                 "config_stats_url": responses["config_stats_url"],
                 "meta_entretiens_utilisateurs": responses[
                     "meta_entretiens_utilisateurs"
