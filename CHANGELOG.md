@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-07-15
+
+* mise à jour de la doctrine pour le Pass sanitaire (1 semaine de délai)
+* ajout des thématiques populaires en pied de page
+* mise à jour des informations de couvre-feu pour les DROM
+
 ## 2021-07-13
 
 * mise à jour relative au télétravail
