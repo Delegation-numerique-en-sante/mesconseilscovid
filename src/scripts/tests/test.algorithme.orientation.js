@@ -891,7 +891,8 @@ describe('Blocs d’informations additionnels', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-deplacements',
+                'conseils-couvre-feu',
+                'conseils-couvre-feu-leve',
             ])
         })
         it('Pas de couvre-feu à Mayotte', function () {
@@ -901,7 +902,8 @@ describe('Blocs d’informations additionnels', function () {
             var algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
                 'conseils-vie-quotidienne',
-                'conseils-deplacements',
+                'conseils-couvre-feu',
+                'conseils-couvre-feu-leve',
             ])
         })
         it('À La Réunion, c’est un couvre-feu adapté', function () {
@@ -913,7 +915,6 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-vie-quotidienne',
                 'conseils-couvre-feu',
                 'conseils-couvre-feu-974',
-                'conseils-deplacements',
             ])
         })
         it('En Guadeloupe, c’est un couvre-feu adapté', function () {
@@ -925,7 +926,6 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-vie-quotidienne',
                 'conseils-couvre-feu',
                 'conseils-couvre-feu-971',
-                'conseils-deplacements',
             ])
         })
         it('En Martinique, c’est un couvre-feu adapté', function () {
@@ -937,7 +937,6 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-vie-quotidienne',
                 'conseils-couvre-feu',
                 'conseils-couvre-feu-972',
-                'conseils-deplacements',
             ])
         })
         it('En Guyane, c’est un couvre-feu adapté', function () {
@@ -949,7 +948,6 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-vie-quotidienne',
                 'conseils-couvre-feu',
                 'conseils-couvre-feu-973',
-                'conseils-deplacements',
             ])
         })
     })
