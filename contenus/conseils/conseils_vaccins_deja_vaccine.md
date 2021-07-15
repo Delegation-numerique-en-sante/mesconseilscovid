@@ -1,4 +1,4 @@
-<span class="nouveau">nouveau</span> La vaccination apprend à votre corps à reconnaître le virus et à le combattre mais **elle n’empêche pas de le contracter ou de le transmettre**.
+La vaccination apprend à votre corps à reconnaître le virus et à le combattre mais **elle n’empêche pas de le contracter ou de le transmettre**.
 
 **Même vacciné·e**, il faut continuer à respecter les gestes barrières (distanciation et port du masque) et les mesures de prévention (test, isolement) notamment pour protéger les personnes qui ne sont pas encore vaccinées.
 
