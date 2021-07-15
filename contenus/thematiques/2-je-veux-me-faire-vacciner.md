@@ -10,7 +10,7 @@
 
 .. question:: Quand pourrai-je me faire vacciner ?
 
-    <span class="nouveau">nouveau</span> Les mineurs âgés de plus de 12 ans peuvent se faire vacciner.
+    Les mineurs âgés de plus de 12 ans peuvent se faire vacciner.
 
     Vous pouvez vous faire vacciner **dès maintenant** :
 
