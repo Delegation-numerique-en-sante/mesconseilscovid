@@ -12,6 +12,6 @@ Le port du **masque** :
 * Pour être efficace, le masque doit recouvrir **le nez et la bouche**.
 * [Tout ce qu’il faut savoir sur le masque](https://solidarites-sante.gouv.fr/IMG/pdf/bien_utiliser_son_masque-a3.pdf)
 
-L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_covid-19_aeration-ventilation-climatisation-chauffage_28_10_2020.pdf)
+L’**aération** régulière [des pièces et espaces clos](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_covid-19-_aeration-ventilation-climatisation-chauffage_juil_21.pdf)
 
 Récapitulatif : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://www.ameli.fr/sites/default/files/Documents/683638/document/spf-limiter-transmission-virus-covid19.pdf)
