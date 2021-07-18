@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-07-18
+
+* mise à jour de la liste des pays rouges et verts
+* mise à jour du lien vers la fiche sur l’aération et la ventilation
+
 ## 2021-07-15
 
 * mise à jour de la doctrine pour le Pass sanitaire (1 semaine de délai)
