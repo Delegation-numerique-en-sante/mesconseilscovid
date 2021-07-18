@@ -77,9 +77,9 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Les mesures sont plus ou moins contraignantes selon le pays d’où vous revenez :
 
-    * d’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements) (pays de l’espace européen, auxquels s’ajoutent l’Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h.
+    * d’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements) (pays de l’espace européen, auxquels s’ajoutent l’Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, Brunei, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h.
 
-    * d’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements) (Afghanistan, Afrique du Sud, Argentine, Bahreïn, Bangladesh, Bolivie, Brésil, Chili, Colombie, Costa-Rica, Inde, Maldives, Namibie, Népal, Oman, Pakistan, Paraguay, République Démocratique du Congo, Russie, Seychelles, Sri Lanka, Suriname, Uruguay et la Zambie), vous devez :
+    * d’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements) (Afghanistan, Afrique du Sud, Argentine, Bangladesh, Bolivie, Brésil, Chili, Colombie, Costa Rica, Cuba, Inde, Indonésie, Maldives, Mozambique, Namibie, Népal, Oman, Pakistan, Paraguay, République démocratique du Congo, Russie, Seychelles, Sri Lanka, Suriname, Tunisie, Uruguay et Zambie), vous devez :
 
         - à l’embarquement, présenter un test PCR ou antigénique négatif réalisé il y a moins de 48 h ;
         - à l’arrivée, vous soumettre à un test antigénique ;
@@ -169,9 +169,9 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Les mesures sont plus ou moins contraignantes selon le pays d’où vous revenez :
 
-    * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements) (Espace européen, Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan et Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter votre attestation de vaccination à l’embarquement sur votre vol retour.
+    * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements) (pays de l’espace européen, auxquels s’ajoutent l’Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, Brunei, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter votre attestation de vaccination à l’embarquement sur votre vol retour.
 
-    * D’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements) (Afghanistan, Afrique du Sud, Argentine, Bahreïn, Bangladesh, Bolivie, Brésil, Chili, Colombie, Costa-Rica, Inde, Maldives, Namibie, Népal, Pakistan, Paraguay, Russie, Seychelles, Sri Lanka, Suriname et Uruguay), vous devez :
+    * D’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements) (Afghanistan, Afrique du Sud, Argentine, Bangladesh, Bolivie, Brésil, Chili, Colombie, Costa Rica, Cuba, Inde, Indonésie, Maldives, Mozambique, Namibie, Népal, Oman, Pakistan, Paraguay, République démocratique du Congo, Russie, Seychelles, Sri Lanka, Suriname, Tunisie, Uruguay et Zambie), vous devez :
         - à l’embarquement, présenter un test PCR ou antigénique négatif réalisé il y a moins de 48 h ;
         - à l’arrivée, vous soumettre à un test antigénique ;
         - respecter un auto-isolement de 7 jours.
@@ -244,9 +244,9 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Les mesures sont plus ou moins contraignantes selon le pays d’où vous revenez :
 
-    * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements) (pays de l’espace européen, auxquels s’ajoutent l’Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h.
+    * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements) (pays de l’espace européen, auxquels s’ajoutent l’Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, Brunei, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h.
 
-    * D’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements) (Afghanistan, Afrique du Sud, Argentine, Bahreïn, Bangladesh, Bolivie, Brésil, Chili, Colombie, Costa-Rica, Inde, Maldives, Namibie, Népal, Pakistan, Paraguay, Russie, Seychelles, Sri Lanka, Suriname et Uruguay), vous devez :
+    * D’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements) (Afghanistan, Afrique du Sud, Argentine, Bangladesh, Bolivie, Brésil, Chili, Colombie, Costa Rica, Cuba, Inde, Indonésie, Maldives, Mozambique, Namibie, Népal, Oman, Pakistan, Paraguay, République démocratique du Congo, Russie, Seychelles, Sri Lanka, Suriname, Tunisie, Uruguay et Zambie), vous devez :
         - à l’embarquement, présenter un test PCR ou antigénique négatif réalisé il y a moins de 48 h ;
         - à l’arrivée, vous soumettre à un test antigénique ;
         - respecter une quarantaine obligatoire de 10 jours à votre retour en France.
