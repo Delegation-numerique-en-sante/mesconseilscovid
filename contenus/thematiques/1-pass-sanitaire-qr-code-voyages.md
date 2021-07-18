@@ -68,7 +68,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Par ailleurs, le voyage vers la plupart des destinations hors Espace européen, à partir de la France métropolitaine, est soumis à la présentation d’un **motif impérieux**.
 
-    Pour vérifier à quelle catégorie (verte, orange ou rouge) appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements).
+    Pour vérifier à quelle catégorie (verte, orange ou rouge) appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements#informations).
 
     La plupart des pays exigent la présentation d’un test RT-PCR négatif récent (réalisé il y a moins de 48 h ou 72 h). Pour connaître les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
@@ -77,15 +77,15 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Les mesures sont plus ou moins contraignantes selon le pays d’où vous revenez :
 
-    * d’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements) (pays de l’espace européen, auxquels s’ajoutent l’Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, Brunei, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h.
+    * d’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (pays de l’espace européen, auxquels s’ajoutent l’Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, Brunei, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h.
 
-    * d’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements) (Afghanistan, Afrique du Sud, Argentine, Bangladesh, Bolivie, Brésil, Chili, Colombie, Costa Rica, Cuba, Inde, Indonésie, Maldives, Mozambique, Namibie, Népal, Oman, Pakistan, Paraguay, République démocratique du Congo, Russie, Seychelles, Sri Lanka, Suriname, Tunisie, Uruguay et Zambie), vous devez :
+    * d’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (Afghanistan, Afrique du Sud, Argentine, Bangladesh, Bolivie, Brésil, Chili, Colombie, Costa Rica, Cuba, Inde, Indonésie, Maldives, Mozambique, Namibie, Népal, Oman, Pakistan, Paraguay, République démocratique du Congo, Russie, Seychelles, Sri Lanka, Suriname, Tunisie, Uruguay et Zambie), vous devez :
 
         - à l’embarquement, présenter un test PCR ou antigénique négatif réalisé il y a moins de 48 h ;
         - à l’arrivée, vous soumettre à un test antigénique ;
         - respecter une quarantaine obligatoire de 10 jours à votre retour en France.
 
-    * d’un [pays classé **orange**](https://www.gouvernement.fr/info-coronavirus/deplacements) (tous les pays, hors pays définis tels que « verts » et « rouges ») :
+    * d’un [pays classé **orange**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (tous les pays, hors pays définis tels que « verts » et « rouges ») :
 
         - à l’embarquement, vous devez présenter un test PCR ou antigénique négatif récent (moins de 48 h ou 72 h) ;
         - respecter un auto-isolement de 7 jours à votre retour en France.
@@ -160,7 +160,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Par ailleurs, le voyage vers la plupart des destinations hors Espace européen, à partir de la France métropolitaine, est soumis à la présentation d’un **motif impérieux**.
 
-    Pour vérifier à quelle catégorie (verte, orange ou rouge) appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements).
+    Pour vérifier à quelle catégorie (verte, orange ou rouge) appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements#informations).
 
     La plupart des pays exigent la présentation d’un test RT-PCR négatif récent (réalisé dans les 48 h ou 72 h). Pour connaître les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
@@ -169,14 +169,14 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Les mesures sont plus ou moins contraignantes selon le pays d’où vous revenez :
 
-    * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements) (pays de l’espace européen, auxquels s’ajoutent l’Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, Brunei, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter votre attestation de vaccination à l’embarquement sur votre vol retour.
+    * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (pays de l’espace européen, auxquels s’ajoutent l’Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, Brunei, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter votre attestation de vaccination à l’embarquement sur votre vol retour.
 
-    * D’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements) (Afghanistan, Afrique du Sud, Argentine, Bangladesh, Bolivie, Brésil, Chili, Colombie, Costa Rica, Cuba, Inde, Indonésie, Maldives, Mozambique, Namibie, Népal, Oman, Pakistan, Paraguay, République démocratique du Congo, Russie, Seychelles, Sri Lanka, Suriname, Tunisie, Uruguay et Zambie), vous devez :
+    * D’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (Afghanistan, Afrique du Sud, Argentine, Bangladesh, Bolivie, Brésil, Chili, Colombie, Costa Rica, Cuba, Inde, Indonésie, Maldives, Mozambique, Namibie, Népal, Oman, Pakistan, Paraguay, République démocratique du Congo, Russie, Seychelles, Sri Lanka, Suriname, Tunisie, Uruguay et Zambie), vous devez :
         - à l’embarquement, présenter un test PCR ou antigénique négatif réalisé il y a moins de 48 h ;
         - à l’arrivée, vous soumettre à un test antigénique ;
         - respecter un auto-isolement de 7 jours.
 
-    * D’un [pays classé **orange**](https://www.gouvernement.fr/info-coronavirus/deplacements) (tous les pays, hors pays définis tels que « verts » et « rouges ») : à l’embarquement, vous devez présenter un test PCR négatif de moins de 72 h ou antigénique négatif de moins de 48 h.
+    * D’un [pays classé **orange**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (tous les pays, hors pays définis tels que « verts » et « rouges ») : à l’embarquement, vous devez présenter un test PCR négatif de moins de 72 h ou antigénique négatif de moins de 48 h.
 
 
 </details>
@@ -235,7 +235,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Par ailleurs, le voyage vers la plupart des destinations hors Espace européen, à partir de la France métropolitaine, est soumis à la présentation d’un **motif impérieux**.
 
-    Pour vérifier à quelle catégorie (verte, orange ou rouge) appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements).
+    Pour vérifier à quelle catégorie (verte, orange ou rouge) appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements#informations).
 
     La plupart des pays exigent la présentation d’un test RT-PCR négatif récent (réalisé il y a moins de 48 h ou 72 h). Pour connaître les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
@@ -244,14 +244,14 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Les mesures sont plus ou moins contraignantes selon le pays d’où vous revenez :
 
-    * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements) (pays de l’espace européen, auxquels s’ajoutent l’Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, Brunei, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h.
+    * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (pays de l’espace européen, auxquels s’ajoutent l’Albanie, l’Arabie Saoudite, l’Australie, la Bosnie, Brunei, le Canada, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h.
 
-    * D’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements) (Afghanistan, Afrique du Sud, Argentine, Bangladesh, Bolivie, Brésil, Chili, Colombie, Costa Rica, Cuba, Inde, Indonésie, Maldives, Mozambique, Namibie, Népal, Oman, Pakistan, Paraguay, République démocratique du Congo, Russie, Seychelles, Sri Lanka, Suriname, Tunisie, Uruguay et Zambie), vous devez :
+    * D’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (Afghanistan, Afrique du Sud, Argentine, Bangladesh, Bolivie, Brésil, Chili, Colombie, Costa Rica, Cuba, Inde, Indonésie, Maldives, Mozambique, Namibie, Népal, Oman, Pakistan, Paraguay, République démocratique du Congo, Russie, Seychelles, Sri Lanka, Suriname, Tunisie, Uruguay et Zambie), vous devez :
         - à l’embarquement, présenter un test PCR ou antigénique négatif réalisé il y a moins de 48 h ;
         - à l’arrivée, vous soumettre à un test antigénique ;
         - respecter une quarantaine obligatoire de 10 jours à votre retour en France.
 
-    * D’un [pays classé **orange**](https://www.gouvernement.fr/info-coronavirus/deplacements) (tous les pays, hors pays définis tels que « verts » et « rouges ») :
+    * D’un [pays classé **orange**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (tous les pays, hors pays définis tels que « verts » et « rouges ») :
         - à l’embarquement, vous devez présenter un test PCR ou antigénique négatif récent (moins de 48 h ou 72 h) ;
         - respecter un auto-isolement de 7 jours à votre retour en France.
 
