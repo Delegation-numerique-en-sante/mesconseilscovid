@@ -304,16 +304,20 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     C’est une preuve de **non-contamination** ou d’**immunité** à la Covid, présentée sous forme d’un code à scanner (2D-DOC ou QR code).
     Dans son utilisation en France, on parle de « Pass sanitaire activités ». Dans son utilisation lors des voyages au sein de l’Union européenne, on parle de « Pass sanitaire frontières ».
 
-.. question:: À quoi sert le « Pass sanitaire » ?
+.. question:: À quoi sert le « Pass sanitaire » et est-il obligatoire ?
     :level: 3
 
     Il permet d’authentifier les informations sur votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) lors d’un contrôle.
 
     * En France, le « **Pass sanitaire activités** »  est actuellement obligatoire pour participer à des évènements rassemblant plus de 1 000 personnes (festivals, conférences, salons…) ou pour accéder à certains lieux (comme les boîtes de nuit).
 
-      **À partir du 21 juillet**, il sera exigé, à partir de 12 ans, pour accéder aux lieux de loisirs et de culture rassemblant plus de 50 personnes.
+      **À partir du 21 juillet**, il sera exigé, pour accéder aux lieux de loisirs et de culture rassemblant plus de 50 personnes.
 
-      **Début août**, son usage sera étendu aux cafés, restaurants, centres commerciaux, établissements médicaux, moyens de transports collectifs pour les longs trajets (trains, cars et avions).
+      **Début août**, son usage sera étendu aux cafés, restaurants, grands centres commerciaux, établissements médico-sociaux, hôpitaux, maisons de retraites, moyens de transports collectifs pour les longs trajets (trains, cars et avions).
+    
+    Pour certaines catégories de personnes, l'obligation du pass sanitaire est repoussée au 30 août :
+    * Les enfants de 12 à 17 ans.
+    * Les salariés des établissements recevants du publics (dont restaurants) dans le cadre de leur activité afin de leur permettre de continuer à travailler en parallèle de leur processus de vaccination.
 
     * Dans l’Espace européen, le « **Pass sanitaire européen** » (ou encore « <span lang="en">Digital Covid Certificate</span> » en anglais) facilite, depuis le 1<sup>er</sup> juillet, les voyages entre les pays membres.
 
