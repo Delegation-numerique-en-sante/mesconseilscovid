@@ -55,10 +55,13 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Lorsque vous faites un test auprès d’un professionnel de santé, vous recevez un mail ou un SMS pour télécharger le certificat de dépistage sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). C’est sur ce document que vous trouverez le QR code à présenter lors de votre voyage ainsi que le QR Code à intégrer dans TousAntiCovid.
 
-.. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
+.. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
     :level: 4
 
     À l’embarquement sur votre vol retour vers la France, vous devrez présenter un test antigénique ou PCR négatif réalisé dans les 72 h précédant votre vol.
+    
+    <span class="nouveau">nouveau</span> Depuis le 17 juillet, les voyageurs non-vacciné(e)s en provenance des pays européens suivants : Chypre, Espagne, Grèce, Pays-Bas, Portugal, doivent présenter **un test PCR négatif réalisé dans les 24h** avant l'embarquement sur leur vol vers la France.
+    
     Pour plus de détails, consultez le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Je pars bientôt en voyage dans un pays extérieur à l’Espace européen. Quel justificatif présenter ?
@@ -205,7 +208,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Attention, tous les pays n’acceptent pas les tests antigéniques. Par ailleurs, la durée de validité du résultat varie selon les destinations de 48 h à 72 h. Nous vous conseillons de vérifier les critères d’accès à votre pays de destination avant de partir, en vous rendant sur [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
-.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Sous quelle forme présenter ce justificatif ou ce « Pass sanitaire européen » lors d’un voyage ?
+.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> sous quelle forme présenter ce justificatif ou ce « Pass sanitaire européen » lors d’un voyage ?
     :level: 4
 
     Depuis le 1<sup>er</sup> juillet, le format intégré dans le carnet de l’application TousAntiCovid est reconnu dans l’Espace européen. Vous pouvez également le présenter en format papier lors d’un contrôle.
@@ -215,7 +218,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Lorsque vous faites un test auprès d’un professionnel de santé, vous recevez un mail ou un SMS pour télécharger le certificat de dépistage sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). C’est sur ce document que vous trouverez le QR code à présenter lors de votre voyage ainsi que le QR code à intégrer dans TousAntiCovid.
 
-.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
+.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
     **Pour la Corse** : un test PCR négatif réalisé il y a moins de 72 h est exigé. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
@@ -226,6 +229,9 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     :level: 4
 
     À l’embarquement sur votre vol retour vers la France, vous devrez présenter un test antigénique ou PCR négatif réalisé dans les 72 h précédant votre vol.
+    
+    <span class="nouveau">nouveau</span> Depuis le 17 juillet, les voyageurs non-vacciné(e)s en provenance des pays européens suivants : Chypre, Espagne, Grèce, Pays-Bas, Portugal, doivent présenter **un test PCR négatif réalisé dans les 24h** avant l'embarquement sur leur vol vers la France.
+    
     Pour plus de détails, consultez le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Je pars bientôt en voyage dans un pays extérieur à l’Espace européen. Quel justificatif présenter ?
@@ -276,10 +282,19 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     Si votre test positif PCR date de plus de 11 jours et de moins de 6 mois et qu’il comporte un QR code aux normes européennes, alors il fait office de « certificat de rétablissement » reconnu comme « Pass sanitaire » en France et dans l’Espace européen. Cependant, certains pays européens peuvent continuer à exiger un test de dépistage (RT-PCR ou antigénique) négatif récent (48 h ou 72 h).
     Pour télécharger le certificat de dépistage comportant un QR code aux normes européennes, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
 
-.. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Puis-je me déplacer en Union européenne ?
+.. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Puis-je me déplacer dans l'Espace européen ?
     :level: 4
 
     **Oui.** Assurez-vous de vérifier quel justificatif fait office de « Pass sanitaire européen » pour votre pays de destination, en vous rendant sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/). Selon votre destination, un certificat de rétablissement ou un test de dépistage négatif récent pourra vous être demandé.
+    
+.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
+    :level: 4
+
+    À l’embarquement sur votre vol retour vers la France, vous devrez présenter un test antigénique ou PCR négatif réalisé dans les 72 h précédant votre vol.
+    
+    <span class="nouveau">nouveau</span> Depuis le 17 juillet, les voyageurs non-vacciné(e)s en provenance des pays européens suivants : Chypre, Espagne, Grèce, Pays-Bas, Portugal, doivent présenter **un test PCR négatif réalisé dans les 24h** avant l'embarquement sur leur vol vers la France.
+    
+    Pour plus de détails, consultez le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Mon test de dépistage (positif ou négatif) ne comporte pas de QR code, comment l’intégrer dans TousAntiCovid ?
     :level: 4
