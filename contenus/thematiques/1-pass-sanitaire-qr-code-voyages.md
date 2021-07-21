@@ -55,7 +55,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Lorsque vous faites un test auprès d’un professionnel de santé, vous recevez un mail ou un SMS pour télécharger le certificat de dépistage sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). C’est sur ce document que vous trouverez le QR code à présenter lors de votre voyage ainsi que le QR Code à intégrer dans TousAntiCovid.
 
-.. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
+.. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
     :level: 4
 
     À l’embarquement sur votre vol retour vers la France, vous devrez présenter un test antigénique ou PCR négatif réalisé dans les 72 h précédant votre vol.
@@ -208,7 +208,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Attention, tous les pays n’acceptent pas les tests antigéniques. Par ailleurs, la durée de validité du résultat varie selon les destinations de 48 h à 72 h. Nous vous conseillons de vérifier les critères d’accès à votre pays de destination avant de partir, en vous rendant sur [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
-.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> sous quelle forme présenter ce justificatif ou ce « Pass sanitaire européen » lors d’un voyage ?
+.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Sous quelle forme présenter ce justificatif ou ce « Pass sanitaire européen » lors d’un voyage ?
     :level: 4
 
     Depuis le 1<sup>er</sup> juillet, le format intégré dans le carnet de l’application TousAntiCovid est reconnu dans l’Espace européen. Vous pouvez également le présenter en format papier lors d’un contrôle.
@@ -218,7 +218,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Lorsque vous faites un test auprès d’un professionnel de santé, vous recevez un mail ou un SMS pour télécharger le certificat de dépistage sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). C’est sur ce document que vous trouverez le QR code à présenter lors de votre voyage ainsi que le QR code à intégrer dans TousAntiCovid.
 
-.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
+.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
     **Pour la Corse** : un test PCR négatif réalisé il y a moins de 72 h est exigé. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
