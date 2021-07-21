@@ -39,8 +39,9 @@
 
 .. question:: Pourrai-je recevoir la 2<sup>e</sup> dose sur mon lieu de vacances ?
 
-    Oui. Il suffit pour cela de prendre rendez-vous pour la deuxième injection dans le centre de vaccination de votre lieu de vacances. Dans ce cas, veillez à annuler le rendez-vous que vous aviez pris dans le centre de vaccination de votre lieu de résidence habituelle. 
-   
+    **Oui.** Il suffit pour cela de prendre rendez-vous pour la deuxième injection dans le centre de vaccination de votre lieu de vacances. Dans ce cas, veillez à annuler le rendez-vous que vous aviez pris dans le centre de vaccination de votre lieu de résidence habituel. 
+
+
 .. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose ?
 
     Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée entre 39 et 42 jours (soit 6 semaines) après la première. Exceptionnellement, durant la période estivale, l’injection de la deuxième dose pourra avoir lieu entre 21 et 49 jours (soit 3 à 7 semaines) après la première, afin de permettre à chacun(e) de compléter sa vaccination avant ou après ses vacances d’été.
