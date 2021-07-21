@@ -282,7 +282,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     Si votre test positif PCR date de plus de 11 jours et de moins de 6 mois et qu’il comporte un QR code aux normes européennes, alors il fait office de « certificat de rétablissement » reconnu comme « Pass sanitaire » en France et dans l’Espace européen. Cependant, certains pays européens peuvent continuer à exiger un test de dépistage (RT-PCR ou antigénique) négatif récent (48 h ou 72 h).
     Pour télécharger le certificat de dépistage comportant un QR code aux normes européennes, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
     
-    Attention, un test sérologique (prise de sang) positif ne fait pas office de pass sanitaire.
+    Attention, un test sérologique (prise de sang) positif ne fait pas office de Pass sanitaire.
 
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Puis-je me déplacer dans l’Espace européen ?
     :level: 4
@@ -354,7 +354,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     **3 types de justificatifs** peuvent constituer un « Pass sanitaire » grâce à un QR code intégré reconnu dans tout l’Espace européen :
 
     - **Non-contamination** : le résultat négatif d’un test RT-PCR ou antigénique réalisé il y a moins de 48 h pour l’usage en France et 72 h pour le contrôle aux frontières.
-    - **Certificat de rétablissement** : le résultat positif d’un test RT-PCR de plus de 11 jours et de moins de 6 mois. Le test sérologique (prise de sang) positif n'est pas un justificatif valable pour le pass sanitaire.
+    - **Certificat de rétablissement** : le résultat positif d’un test RT-PCR de plus de 11 jours et de moins de 6 mois. Attention, le test sérologique (prise de sang) positif n’est pas un justificatif valable pour le Pass sanitaire.
     - **Certificat de vaccination** : une attestation de vaccination complète, c’est-à-dire que vous avez reçu toutes les doses nécessaires depuis au moins 2 semaines (Pfizer, Moderna, AstraZeneca) ou 4 semaines (Janssen).
 
     <span class="nouveau">nouveau</span> Pour une utilisation en France, le délai d’attente après la 2<sup>e</sup> dose est réduit à 1 semaine pour les vaccins Pfizer, Moderna et AstraZeneca.
