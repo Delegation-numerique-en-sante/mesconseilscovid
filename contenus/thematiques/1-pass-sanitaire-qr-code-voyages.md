@@ -60,7 +60,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     À l’embarquement sur votre vol retour vers la France, vous devrez présenter un test antigénique ou PCR négatif réalisé dans les 72 h précédant votre vol.
     
-    <span class="nouveau">nouveau</span> Depuis le 17 juillet, les voyageurs non-vacciné(e)s en provenance des pays européens suivants : Chypre, Espagne, Grèce, Pays-Bas, Portugal, doivent présenter **un test PCR négatif réalisé dans les 24h** avant l'embarquement sur leur vol vers la France.
+    <span class="nouveau">nouveau</span> Depuis le 17 juillet, les voyageurs et voyageuses non-vaccinés en provenance des pays européens suivants : Chypre, Espagne, Grèce, Pays-Bas et Portugal doivent présenter **un test PCR négatif réalisé dans les 24 h** avant l’embarquement sur leur vol vers la France.
     
     Pour plus de détails, consultez le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
@@ -230,7 +230,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     À l’embarquement sur votre vol retour vers la France, vous devrez présenter un test antigénique ou PCR négatif réalisé dans les 72 h précédant votre vol.
     
-    <span class="nouveau">nouveau</span> Depuis le 17 juillet, les voyageurs non-vacciné(e)s en provenance des pays européens suivants : Chypre, Espagne, Grèce, Pays-Bas, Portugal, doivent présenter **un test PCR négatif réalisé dans les 24h** avant l'embarquement sur leur vol vers la France.
+    <span class="nouveau">nouveau</span> Depuis le 17 juillet, les voyageurs et voyageuses non-vaccinés en provenance des pays européens suivants : Chypre, Espagne, Grèce, Pays-Bas et Portugal doivent présenter **un test PCR négatif réalisé dans les 24 h** avant l’embarquement sur leur vol vers la France.
     
     Pour plus de détails, consultez le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
@@ -282,17 +282,17 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     Si votre test positif PCR date de plus de 11 jours et de moins de 6 mois et qu’il comporte un QR code aux normes européennes, alors il fait office de « certificat de rétablissement » reconnu comme « Pass sanitaire » en France et dans l’Espace européen. Cependant, certains pays européens peuvent continuer à exiger un test de dépistage (RT-PCR ou antigénique) négatif récent (48 h ou 72 h).
     Pour télécharger le certificat de dépistage comportant un QR code aux normes européennes, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
 
-.. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Puis-je me déplacer dans l'Espace européen ?
+.. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Puis-je me déplacer dans l’Espace européen ?
     :level: 4
 
     **Oui.** Assurez-vous de vérifier quel justificatif fait office de « Pass sanitaire européen » pour votre pays de destination, en vous rendant sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/). Selon votre destination, un certificat de rétablissement ou un test de dépistage négatif récent pourra vous être demandé.
     
-.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
+.. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
     :level: 4
 
     À l’embarquement sur votre vol retour vers la France, vous devrez présenter un test antigénique ou PCR négatif réalisé dans les 72 h précédant votre vol.
     
-    <span class="nouveau">nouveau</span> Depuis le 17 juillet, les voyageurs non-vacciné(e)s en provenance des pays européens suivants : Chypre, Espagne, Grèce, Pays-Bas, Portugal, doivent présenter **un test PCR négatif réalisé dans les 24h** avant l'embarquement sur leur vol vers la France.
+    <span class="nouveau">nouveau</span> Depuis le 17 juillet, les voyageurs et voyageuses non-vaccinés en provenance des pays européens suivants : Chypre, Espagne, Grèce, Pays-Bas et Portugal doivent présenter **un test PCR négatif réalisé dans les 24 h** avant l’embarquement sur leur vol vers la France.
     
     Pour plus de détails, consultez le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
