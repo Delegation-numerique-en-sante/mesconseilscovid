@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-07-21
+
+* mise à jour de la doctrine sur le Pass sanitaire
+
 ## 2021-07-18
 
 * mise à jour de la liste des pays rouges et verts
