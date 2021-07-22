@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-07-22
+
+* mise à jour de la doctrine sur les tests payants
+
 ## 2021-07-21
 
 * mise à jour de la doctrine sur le Pass sanitaire
