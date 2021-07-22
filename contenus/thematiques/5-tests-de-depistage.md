@@ -6,7 +6,10 @@
 
 <div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
 
-<big>Les tests de dépistage réalisés par un professionnel de santé sont gratuits pour tous, sans condition de sécurité sociale ni de prescription médicale.</big>
+<big> Depuis le 7 juillet, les tests de dépistage réalisés par un professionnel de santé sont gratuits, sans condition de prescription médicale pour : les résidents en France, les français qui résident habituellement à l'étranger et les européens qui disposent d'une carte européenne d'assurance maladie.  
+    
+  Les touristes non européens peuvent bénéficier de la gratuité sur présentation d'une prescription médicale ou s'ils ont été identifiés cas contact par l'Assurance maladie, sur présentation d'un justificatif (SMS, courriel).En dehors de ces cas de figure, les prix des tests sont fixés à **49,89 euros** (RT-PCR) et **25 euros** (test antigénique rapide).</big> 
+
 
 <div class="conseil">
 
