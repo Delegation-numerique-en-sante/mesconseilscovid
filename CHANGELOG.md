@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-07-23
+
+* prise en considération des cas contact vaccinés
+
 ## 2021-07-22
 
 * mise à jour de la doctrine sur les tests payants
