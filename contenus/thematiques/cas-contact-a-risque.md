@@ -7,6 +7,10 @@
 <div id="conseils-personnels" class="conseils">
 
 <big>Vous avez passé du temps avec une personne <b>positive à la Covid</b> ? Vous avez été contacté·e par l’<b>Assurance Maladie</b> ? Vous avez reçu une notification « Exposition à risque » de l’application <b>TousAntiCovid</b> ?</big>
+    
+    (nouveau) Les personnes vacciné(e)s avec un schéma vaccinal complet (toutes les doses nécéssaires) n'ont plus l'obligation de s'isoler après un contact à risque.
+    
+## Vous êtes cas contact et vous n'êtes pas vacciné(e) (schéma vaccinal incomplet)
 
 <big>Voici ce que nous vous conseillons de faire :</big>
 
@@ -39,6 +43,30 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 
 * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**) ;
 * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+    
+## Vous êtes cas contact et vacciné(e) (schéma vaccinal complet)
+
+## 1. Faire un test
+
+<div class="conseil">
+
+Faire un **test antigénique** en pharmacie **immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+
+* Si le test est **positif**, restez en **isolement au moins 10 jours** à partir de la date du test. Pas besoin de faire un test de contrôle pour sortir de l'isolement.
+
+* Si le test est **négatif** :
+    * portez le masque à l'intérieur et à l'extérieur, même dans les lieux qui ne l'exigent plus (restaurant, musées...)
+    * évitez de rencontrer des personnes vulnérables ou fragiles
+    * surveillez votre état : température, symptômes...
+    
+## 2. Faire un test de contrôle
+    
+ Si votre premier test était négatif :  
+ * faire un test de contrôle 7 jours après le dernier contact à risque : 
+    * s’il est **négatif**, vous pourrez retirer le masque dans les lieux où il n'est plus obligatoire et reprendre prudemment votre vie sociale
+    * s’il est **positif**, restez en isolement au moins 10 jours à partir de la date du test, et surveillez l’apparition de symptômes. Pas besoin de faire un test de contrôle pour sortir de l'isolement.
+
+ 
 
 <div class="conseil conseil-jaune">
 
