@@ -51,7 +51,7 @@ Faire un **test antigénique** en pharmacie **immédiatement** (voir la [carte d
     * s’il est **positif**, restez en isolement au moins 10 jours à partir de la date du test, et surveillez l’apparition de symptômes.
 
 
-Si votre test est **positif**, les autres membres de votre foyer seront considérés comme **cas contact**, et devront :
+Si votre test est **positif**, les autres membres de votre foyer seront considérés comme **cas contact**, et devront :
 
 * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**) ;
 * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
@@ -91,6 +91,11 @@ Si votre premier test était **négatif**, faire un test de contrôle 7 jours a
 
 * s’il est **négatif**, vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale ;
 * s’il est **positif**, restez en isolement au moins 10 jours à partir de la date du test, et surveillez l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
+
+Si votre test est **positif**, les autres membres de votre foyer seront considérés comme **cas contact**, et devront, selon leur situation personnelle (schéma vaccinal complet ou non) :
+
+* se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**) ;
+* faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
 </details>
 </div>
