@@ -16,10 +16,12 @@
 
 </div>
 
+## Vous êtes cas contact et…
+
 <div class="conseils">
 <details>
 
-.. summary:: Vous êtes cas contact et vous n’êtes pas vacciné(e) (schéma vaccinal incomplet)
+.. summary:: vous n’êtes pas vacciné(e) (schéma vaccinal incomplet)
 
 <p><big>Voici ce que nous vous conseillons de faire :</big></p>
 
@@ -60,7 +62,7 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 <div class="conseils">
 <details>
 
-.. summary:: Vous êtes cas contact et vacciné(e) (schéma vaccinal complet)
+.. summary:: vous êtes vacciné(e) (schéma vaccinal complet)
 
 <p><big>Voici ce que nous vous conseillons de faire :</big></p>
 
