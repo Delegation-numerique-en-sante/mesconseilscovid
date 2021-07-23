@@ -777,6 +777,10 @@ footer .legals {
     background: #7fd5c5;
     border-color: #00ac8c;
 }
+.statut-bleu {
+    background: #d5dbef;
+    border-color: #000091;
+}
 
 .conseil {
     background: #d5dbef;
@@ -929,7 +933,7 @@ fieldset ul.details {
     align-items: center;
     margin-bottom: 2rem;
 }
-.form-controls .back-button {
+.back-button {
     margin-top: 2rem;
     background-image: url('arrow-left.svg');
     background-position: 10px center;
@@ -1040,6 +1044,13 @@ input[type='submit']:disabled {
     width: 100%;
     margin: 0 auto;
     display: block;
+}
+.button-arrow,
+a.button-arrow {
+    padding: 12px 64px 16px 48px;
+    background-image: url('/arrow-right-white.svg');
+    background-position: 95% center;
+    background-repeat: no-repeat;
 }
 button.button-outline,
 a.button-outline {
@@ -1461,9 +1472,43 @@ a.no-type::after {
     font-size: 150%;
     color: black;
 }
+.thematique #conseils-block form {
+    border: 2px solid #d5dbef;
+    padding: 0 1rem;
+}
+.thematique #conseils-block form .back-button {
+    display: inline-block;
+    margin: 0.5rem 0 0 0;
+    background-position: 0px center;
+    padding: 10px 24px 9px 26px;
+}
+
+.thematique #conseils-block form fieldset [role='radiogroup'] {
+    margin-bottom: 0;
+}
+.thematique #conseils-block form p {
+    margin: 0 0 0.5rem 0;
+}
+.thematique #conseils-block form .form-controls {
+    flex-direction: column;
+    align-items: center;
+}
+.thematique #conseils-block form h3,
 .thematique #conseils-block summary h3 {
     margin: 0;
     color: #000091;
+}
+.thematique #conseils-block form h3 {
+    color: #000;
+}
+.thematique #conseils-block form .back-button + fieldset legend h3 {
+    padding-top: 0;
+}
+.thematique #conseils-block .statut {
+    margin-bottom: 3rem;
+}
+.thematique #conseils-block .statut ul {
+    text-align: left;
 }
 .thematique #conseils-block h4 {
     margin-top: 3rem;
@@ -1494,10 +1539,6 @@ a.no-type::after {
     display: inline-block;
     font-size: 20px;
     margin: 0 auto 1rem auto;
-    padding: 12px 64px 16px 48px;
-    background-image: url('arrow-right-white.svg');
-    background-position: 95% center;
-    background-repeat: no-repeat;
 }
 
 @media print {
