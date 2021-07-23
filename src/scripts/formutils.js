@@ -55,6 +55,12 @@ export function getRadioValue(form, key) {
     }
 }
 
+export function uncheckAllRadio(element) {
+    Array.from(element.querySelectorAll('[type="radio"]'), (radioButton) => {
+        radioButton.checked = false
+    })
+}
+
 export function preloadForm(form, key, profil) {
     const value = profil.getData()[key]
     if (typeof value !== 'undefined' && value !== '') {
@@ -150,6 +156,8 @@ export function toggleFormButtonOnRadioRequired(
     const form = new Form(formElement)
     const button = form.submitButton
     const radios = Array.from(form.qSA('input[type=radio]'))
+    continueLabel = button.dataset.initialValue || continueLabel
+    button.dataset.initialValue = continueLabel
 
     function updateSubmitButtonLabelRequired() {
         button.disabled = false

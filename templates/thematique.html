@@ -30,7 +30,7 @@
     <meta property="og:url" content="https://mesconseilscovid.sante.gouv.fr/">
     <meta property="og:locale" content="fr_FR">
 </head>
-<body class="page-thematique" data-stats-url="{{ config_stats_url|inline }}">
+<body class="page-thematique" data-thematique-name="{{ thematique.name }}" data-stats-url="{{ config_stats_url|inline }}">
     <header role="banner">
         <section>
             <img id="marianne" src="marianne.png"
@@ -81,7 +81,7 @@
                     <div class="block">
                         <div class="cta">
                             <h3>Obtenez des conseils adaptés à votre situation en quelques clics</h3>
-                            <a class="button" href="/#conseils">Je veux des conseils personnalisés</a>
+                            <a class="button button-arrow" href="/#conseils">Je veux des conseils personnalisés</a>
                         </div>
                     </div>
                 </div>

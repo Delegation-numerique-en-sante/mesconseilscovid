@@ -20,39 +20,122 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
 
 </div>
 
-<p><big>À chaque situation, son test. Voici un guide pour vous accompagner :</big></p>
+## Quel test dois-je faire ?
 
-## Je me trouve dans la situation suivante :
+<form id="tests-de-depistage-symptomes-form">
+    <fieldset>
+        <legend><h3 id="tests-de-depistage-symptomes-label">J’ai des symptômes qui peuvent évoquer la Covid :</h3></legend>
+        <div role="radiogroup" aria-labelledby="tests-de-depistage-symptomes-label">
+            <input id="tests_de_depistage_symptomes_radio_oui" type="radio" required name="tests_de_depistage_symptomes_radio" value="oui">
+            <label for="tests_de_depistage_symptomes_radio_oui">Oui</label>
+            <input id="tests_de_depistage_symptomes_radio_non" type="radio" required name="tests_de_depistage_symptomes_radio" value="non">
+            <label for="tests_de_depistage_symptomes_radio_non">Non</label>
+        </div>
+    </fieldset>
+    <div class="form-controls">
+        <div class="button-with-progress">
+            <p id="aria-description-progress-tests-de-depistage" class="progress">Il vous reste moins de 3 étapes</p>
+            <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-tests-de-depistage">
+        </div>
+    </div>
+</form>
 
-.. question:: Je ne suis pas cas contact, je n’ai pas de symptômes et…
-    :level: 3
+<form id="tests-de-depistage-depuis-quand-form" hidden>
+    <a href="#" data-precedent="symptomes" class="back-button">Retour</a>
+    <fieldset id="tests-de-depistage-depuis-quand">
+        <legend><h3 id="tests-de-depistage-depuis-quand-label">Vous avez des symptômes depuis :</h3></legend>
+        <div role="radiogroup" aria-labelledby="tests-de-depistage-depuis-quand-label">
+            <input id="tests_de_depistage_depuis_quand_radio_moins_4_jours" type="radio" required name="tests_de_depistage_depuis_quand_radio" value="moins-4-jours">
+            <label for="tests_de_depistage_depuis_quand_radio_moins_4_jours">Moins de 4 jours</label>
+            <input id="tests_de_depistage_depuis_quand_radio_plus_4_jours" type="radio" required name="tests_de_depistage_depuis_quand_radio" value="plus-4-jours">
+            <label for="tests_de_depistage_depuis_quand_radio_plus_4_jours">Plus de 4 jours</label>
+        </div>
+    </fieldset>
+    <div class="form-controls">
+        <div class="button-with-progress">
+            <p id="aria-description-progress-tests-de-depistage" class="progress">Plus qu’une étape !</p>
+            <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-tests-de-depistage">
+        </div>
+    </div>
+</form>
 
-    * je veux savoir si j’ai la Covid : le test **RT-PCR nasopharyngé** est indiqué dans votre cas ;
-    * je m’apprête à rendre visite à des personnes vulnérables : les tests **antigénique** ou **RT-PCR nasopharyngé** sont indiqués dans votre cas ;
-    * je travaille régulièrement avec des personnes fragiles : il est recommandé de vous tester régulièrement avec les **autotests** vendus en pharmacie (les professionnels exerçant à domicile auprès de personnes vulnérables peuvent obtenir la prise en charge de 10 auto-tests par mois en présentant leur carte professionnelle au pharmacien).
+<form id="tests-de-depistage-cas-contact-form" hidden>
+    <a href="#" data-precedent="symptomes" class="back-button">Retour</a>
+    <fieldset id="tests-de-depistage-cas-contact">
+        <legend><h3 id="tests-de-depistage-cas-contact-label">Je n’ai pas de symptômes mais je suis cas contact :</h3></legend>
+        <div role="radiogroup" aria-labelledby="tests-de-depistage-cas-contact-label">
+            <input id="tests_de_depistage_cas_contact_radio_oui" type="radio" required name="tests_de_depistage_cas_contact_radio" value="oui">
+            <label for="tests_de_depistage_cas_contact_radio_oui">Oui</label>
+            <input id="tests_de_depistage_cas_contact_radio_non" type="radio" required name="tests_de_depistage_cas_contact_radio" value="non">
+            <label for="tests_de_depistage_cas_contact_radio_non">Non</label>
+        </div>
+    </fieldset>
+    <div class="form-controls">
+        <div class="button-with-progress">
+            <p id="aria-description-progress-tests-de-depistage" class="progress">Il vous reste moins de 2 étapes</p>
+            <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-tests-de-depistage">
+        </div>
+    </div>
+</form>
 
-.. question:: J’ai des symptômes de la Covid
-    :level: 3
+<form id="tests-de-depistage-auto-test-form" hidden>
+    <a href="#" data-precedent="cas-contact" class="back-button">Retour</a>
+    <fieldset id="tests-de-depistage-auto-test">
+        <legend><h3 id="tests-de-depistage-auto-test-label">Je n’ai pas de symptômes, je ne suis pas cas contact mais j’ai fait un auto-test et il est :</h3></legend>
+        <div role="radiogroup" aria-labelledby="tests-de-depistage-auto-test-label">
+            <input id="tests_de_depistage_auto_test_radio_oui" type="radio" required name="tests_de_depistage_auto_test_radio" value="oui">
+            <label for="tests_de_depistage_auto_test_radio_oui">Positif</label>
+            <input id="tests_de_depistage_auto_test_radio_non" type="radio" required name="tests_de_depistage_auto_test_radio" value="non">
+            <label for="tests_de_depistage_auto_test_radio_non">Négatif</label>
+        </div>
+    </fieldset>
+    <div class="form-controls">
+        <div class="button-with-progress">
+            <p id="aria-description-progress-tests-de-depistage" class="progress">Plus qu’une étape !</p>
+            <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-tests-de-depistage">
+        </div>
+    </div>
+</form>
 
-    * Depuis **moins** de 4 jours : les tests **antigénique** ou **RT-PCR nasopharyngé** sont indiqués dans votre cas.
-    * Depuis **plus** de 4 jours : le test **RT-PCR nasopharyngé** est indiqué dans votre cas.
+<div id="tests-de-depistage-symptomes-moins-4-jours-reponse" class="statut statut-bleu" hidden>
 
-.. question:: Je suis cas contact
-    :level: 3
+Vous avez des symptômes qui peuvent évoquer la Covid depuis moins de 4 jours, nous vous recommandons de faire un test **antigénique** ou **RT-PCR nasopharyngé**.
 
-    * Je viens de l’apprendre : le test **antigénique** est indiqué dans votre cas.
-    * Je dois réaliser mon test de contrôle 7 jours après mon contact à risque : les tests **antigénique** ou **RT-PCR nasopharyngé** sont indiqués dans votre cas.
+</div>
 
-.. question:: Le résultat de mon auto-test est positif et je dois confirmer ce résultat
-    :level: 3
+<div id="tests-de-depistage-symptomes-plus-4-jours-reponse" class="statut statut-bleu" hidden>
 
-    Vous devez confirmer ce résultat avec un test **RT-PCR nasopharyngé** et rester en isolement le temps d’obtenir cette confirmation.
+Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, nous vous recommandons de faire un **test RT-PCR nasopharyngé**.
 
-.. question:: Je souhaite me faire dépister mais les prélèvements nasopharyngés sont impossibles dans mon cas
-    :level: 3
+</div>
 
-    Le test **RT-PCR salivaire** est indiqué dans ces cas : enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…
+<div id="tests-de-depistage-pas-symptomes-cas-contact-oui-reponse" class="statut statut-bleu" hidden>
 
+Vous n’avez pas de symptômes qui peuvent évoquer la Covid mais vous êtes cas contact, nous vous recommandons de faire un **test antigénique** si vous venez de l’apprendre.
+
+Pour un test de contrôle (7 jours après votre contact à risque ), les tests **antigénique** ou **RT-PCR nasopharyngé** sont indiqués.
+
+</div>
+
+<div id="tests-de-depistage-pas-symptomes-pas-cas-contact-auto-test-oui-reponse" class="statut statut-bleu" hidden>
+
+Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pas cas contact mais votre auto-test est positif. Vous devez confirmer ce résultat avec un test **RT-PCR nasopharyngé** et rester en isolement le temps d’obtenir cette confirmation.
+
+</div>
+
+<div id="tests-de-depistage-pas-symptomes-pas-cas-contact-auto-test-non-reponse" class="statut statut-bleu" hidden>
+
+Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pas cas contact et votre auto-test est négatif :
+
+* Si vous souhaitez obtenir un [Pass sanitaire](/pass-sanitaire-qr-code-voyages.html), un test négatif **RT-PCR nasopharyngé** ou **antigénique** réalisé il y a moins de 48 h pour l’usage en France et 72 h pour le contrôle aux frontières est nécessaire.
+* Si vous rendez visite à des personnes vulnérables, un test **antigénique** ou **RT-PCR nasopharyngé** est indiqué.
+* Si vous travaillez régulièrement avec des personnes fragiles, il est recommandé de vous tester régulièrement avec les **autotests** vendus en pharmacie (les professionnels exerçant à domicile auprès de personnes vulnérables peuvent obtenir la prise en charge de 10 auto-tests par mois en présentant leur carte professionnelle au pharmacien).
+
+</div>
+
+<p id="tests-de-depistage-refaire" hidden>
+<a href="#" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
+</p>
 
 ## Quels sont les différents tests de dépistage de la Covid-19 ?
 
@@ -137,5 +220,10 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
 
 </details>
 </div>
+
+.. question:: Je souhaite me faire dépister mais les prélèvements nasopharyngés sont impossibles dans mon cas
+    :level: 3
+
+    Le test **RT-PCR salivaire** est indiqué dans ces cas : enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…
 
 </div>
