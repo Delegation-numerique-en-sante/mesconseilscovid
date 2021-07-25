@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-07-25
+
+* corrige une incohérence dans les conseils pour les personnes cas contact et vaccinée, merci @Aymerik DIEBOLD (voir issue #1356)
+
 ## 2021-07-23
 
 * prise en considération des cas contact vaccinés
