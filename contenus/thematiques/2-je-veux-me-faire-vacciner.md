@@ -81,7 +81,10 @@
 
 .. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?
 
-    Si vous avez été testé positif à la Covid après la 1<sup>re</sup> injection de vaccin, alors vous devez quand même recevoir la deuxième dose, dans un **délai de 3 à 6 mois** après l’infection.
+    Cela dépend :
+    
+    * si vous avez été testé positif à la Covid dans les 15 jours suivants votre 1<sup>re</sup> injection, alors vous devez quand même recevoir  la 2<sup>e</sup>, dans un **délai de 2 à 6 mois** après la contamination.
+    * si vous avez été testé positif à la Covid après le 15<sup>e</sup> jour suivant votre 1<sup>re</sup> injection, alors vous n'avez pas besoin de recevoir une 2<sup>e</sup>. Votre contamination a le même effet bénéfique que la dose de rappel. 
 
 
 .. question:: Est-ce que je peux attraper la Covid si je suis vacciné(e) ?
