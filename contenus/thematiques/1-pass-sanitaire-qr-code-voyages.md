@@ -332,7 +332,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
       **Début août**, son usage sera étendu aux cafés, restaurants, grands centres commerciaux, établissements médico-sociaux, hôpitaux, maisons de retraites, moyens de transports collectifs pour les longs trajets (trains, cars et avions).
     
-      Pour certaines catégories de personnes, l’obligation du pass sanitaire est repoussée au 30 août :
+      Pour certaines catégories de personnes, l’obligation du pass sanitaire est repoussée au 30 août (cette date est actuellement débattue par les instances parlementaires) :
 
       * Les enfants de 12 à 17 ans.
       * Les salarié(e)s des établissements recevants du publics (dont restaurants) dans le cadre de leur activité afin de leur permettre de continuer à travailler en parallèle de leur processus de vaccination.
