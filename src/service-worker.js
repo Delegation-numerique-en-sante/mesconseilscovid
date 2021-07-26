@@ -10,6 +10,7 @@ const CACHE_FILES = [
     'scripts/main.js',
     'cas-contact-a-risque.html',
     'conseils-pour-les-enfants.html',
+    'j-ai-des-symptomes-covid.html',
     'je-suis-vaccine.html',
     'je-veux-me-faire-vacciner.html',
     'je-vis-avec-personne-covid-positive.html',

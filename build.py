@@ -25,7 +25,7 @@ SRC_DIR = HERE / "src"
 CONTENUS_DIR = HERE / "contenus"
 STATIC_DIR = HERE / "static"
 TEMPLATES_DIR = HERE / "templates"
-NB_OF_DISPLAYED_THEMATIQUES = 6
+NB_OF_DISPLAYED_THEMATIQUES = 9
 
 jinja_env = JinjaEnv(
     loader=FileSystemLoader(str(TEMPLATES_DIR)), undefined=StrictUndefined
