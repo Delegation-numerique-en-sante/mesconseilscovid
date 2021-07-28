@@ -1538,6 +1538,9 @@ a.no-type::after {
     font-size: 20px;
     margin: 0 auto 1rem auto;
 }
+.thematique .cta a.button.button-outline {
+    background-image: url('arrow-right-blue.svg');
+}
 
 @media print {
     a,

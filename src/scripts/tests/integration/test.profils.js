@@ -5,16 +5,13 @@ describe('Profils', function () {
     it('remplir le questionnaire pour un proche', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
-        await Promise.all([
-            page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
-        ])
+        // On va vers la page des symptômes.
+        await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
-        // Page d’accueil.
+        // On clique sur le bouton pour un ou une proche.
         {
             let bouton = await page.waitForSelector(
-                '#page.ready #profils-cards-empty .js-profil-new >> text="Des conseils pour un ou une proche"'
+                'a.button >> text="Des conseils pour un ou une proche"'
             )
             await Promise.all([
                 bouton.click(),

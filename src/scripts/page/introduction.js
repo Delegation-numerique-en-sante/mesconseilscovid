@@ -9,20 +9,15 @@ export default function introduction(page, app) {
     showElement(header.querySelector('.js-profil-empty'))
     hideElement(header.querySelector('.js-profil-full'))
 
-    const emptyContainer = element.querySelector('#profils-cards-empty')
-
     const fullContainer = element.querySelector('#profils-cards-full')
     const fullContainerList = fullContainer.querySelector('ul.cards')
 
     app.stockage.getProfils().then((noms) => {
         if (noms.length) {
-            hideElement(emptyContainer)
             showElement(fullContainer)
         } else {
             hideElement(fullContainer)
-            showElement(emptyContainer)
         }
-        bindSetProfil(emptyContainer.querySelector('[data-set-profil]'), app)
         if (noms.indexOf('mes_infos') === -1) {
             const cardClassique = fullContainerList.appendChild(
                 createElementFromHTML(`
@@ -39,7 +34,7 @@ export default function introduction(page, app) {
         fullContainerList.appendChild(
             createElementFromHTML(`
                 <li class="profil-empty">
-                    <a class="button button-full-width button-outline js-profil-new"
+                    <a class="button button-full-width button-outline"
                         href="#nom"
                         >Des conseils pour un ou une proche</a>
                 </li>

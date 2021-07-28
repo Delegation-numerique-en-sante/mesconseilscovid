@@ -185,7 +185,7 @@ describe('Tests', function () {
         )
         assert.equal(await formLegend.innerText(), 'Vous avez des symptômes depuis :')
 
-        // On clic sur le bouton retour.
+        // On clique sur le bouton retour.
         const bouton = await page.waitForSelector(
             '#tests-de-depistage-depuis-quand-form >> text="Retour"'
         )
@@ -210,7 +210,7 @@ describe('Tests', function () {
         await remplirSymptomes(page, 'oui')
         await remplirDepuisQuand(page, 'moins_4_jours')
 
-        // On clic sur le bouton pour recommencer.
+        // On clique sur le bouton pour recommencer.
         const bouton = await page.waitForSelector(
             '#tests-de-depistage-refaire >> text="Recommencer le questionnaire"'
         )
