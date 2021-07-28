@@ -13,7 +13,13 @@
 ## Obtenez des conseils adaptés à votre situation en quelques clics :
 
 <div class="cta">
-    <a class="button" href="/#conseils">Je veux des conseils personnalisés</a>
+    <a class="button button-arrow" 
+        href="/#vaccins"
+        data-set-profil="mes_infos"
+        >Je veux des conseils personnalisés pour moi</a>
+    <a class="button button-outline button-arrow" 
+        href="/#nom"
+        >Des conseils pour un ou une proche</a>
 </div>
 
 </div>

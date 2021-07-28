@@ -16,7 +16,11 @@ export function pageThematique(app) {
     app.trackPageView(document.location.pathname)
     bindFeedback(document.querySelector('.feedback-component'), app)
     bindImpression(document, app)
-    boutonBasculeVersMonProfil(app)
+    Array.from(document.querySelectorAll('.cta [data-set-profil]')).forEach(
+        (lienVersProfil) => {
+            boutonBasculeVersMonProfil(lienVersProfil, app)
+        }
+    )
     ouvreDetailsSiFragment()
     partagePageEnCours()
     // À discuter : est-ce que l’on veut du générique ?
@@ -53,17 +57,14 @@ function ouvreDetailsSiFragment() {
     }
 }
 
-function boutonBasculeVersMonProfil(app) {
-    const button = document.querySelector('.cta a.button')
-    if (button) {
-        button.addEventListener('click', function (event) {
-            event.preventDefault()
-            app.plausible('Je veux des conseils personnalisés')
-            app.basculerVersProfil('mes_infos').then(() => {
-                window.location = event.target.getAttribute('href')
-            })
+function boutonBasculeVersMonProfil(lienVersProfil, app) {
+    lienVersProfil.addEventListener('click', (event) => {
+        event.preventDefault()
+        app.plausible('Je veux des conseils personnalisés')
+        app.basculerVersProfil(lienVersProfil.dataset.setProfil).then(() => {
+            window.location = event.target.getAttribute('href')
         })
-    }
+    })
 }
 
 function partagePageEnCours() {
