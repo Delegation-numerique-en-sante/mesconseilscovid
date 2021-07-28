@@ -1,4 +1,4 @@
-# Voyage et Pass sanitaire, que faut-il savoir ?
+# Pass sanitaire, QR code et voyages, que faut-il savoir ?
 
 <div class="illustration">
     <img src="illustrations/pass_sanitaire.svg" alt="">
