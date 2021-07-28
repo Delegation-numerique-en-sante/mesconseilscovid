@@ -1473,6 +1473,7 @@ a.no-type::after {
 .thematique #conseils-block form {
     border: 2px solid #d5dbef;
     padding: 0 1rem;
+    margin-bottom: 1.5rem;
 }
 .thematique #conseils-block form .back-button {
     display: inline-block;

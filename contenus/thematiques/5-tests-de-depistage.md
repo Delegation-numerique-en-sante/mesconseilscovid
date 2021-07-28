@@ -133,7 +133,7 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pa
 
 </div>
 
-<p id="tests-de-depistage-refaire" hidden>
+<p id="tests-de-depistage-refaire" data-initial-form="symptomes" hidden>
 <a href="#" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
 </p>
 

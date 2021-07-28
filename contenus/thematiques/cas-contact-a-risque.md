@@ -16,14 +16,28 @@
 
 </div>
 
-## Vous êtes cas contact et…
+<form id="contact-a-risque-vaccine-form">
+    <fieldset>
+        <legend><h2 id="contact-a-risque-vaccine-label">Je suis cas contact et :</h2></legend>
+        <div role="radiogroup" aria-labelledby="contact-a-risque-vaccine-label">
+            <input id="contact_a_risque_vaccine_radio_vaccine" type="radio" required name="contact_a_risque_vaccine_radio" value="vaccine">
+            <label for="contact_a_risque_vaccine_radio_vaccine">Je suis complètement vacciné(e)</label>
+            <input id="contact_a_risque_vaccine_radio_pas_vaccine" type="radio" required name="contact_a_risque_vaccine_radio" value="pas-vaccine">
+            <label for="contact_a_risque_vaccine_radio_pas_vaccine">Je ne suis pas complètement vacciné(e)</label>
+        </div>
+    </fieldset>
+    <div class="form-controls">
+        <div class="button-with-progress">
+            <p id="aria-description-progress-contact-a-risque" class="progress visually-hidden">C’est la seule question</p>
+            <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-contact-a-risque">
+        </div>
+    </div>
+</form>
 
-<div class="conseils">
-<details>
 
-.. summary:: vous n’êtes pas vacciné(e) (schéma vaccinal incomplet)
+<div id="contact-a-risque-pas-vaccine-reponse" class="conseils" hidden>
 
-<p><big>Voici ce que nous vous conseillons de faire :</big></p>
+## Vous n’êtes pas complètement vacciné(e), voici ce que nous vous conseillons de faire :
 
 ### 1. Vous isoler
 
@@ -56,15 +70,11 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**) ;
 * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
-</details>
 </div>
 
-<div class="conseils">
-<details>
+<div id="contact-a-risque-vaccine-reponse" class="conseils" hidden>
 
-.. summary:: vous êtes vacciné(e) (schéma vaccinal complet)
-
-<p><big>Voici ce que nous vous conseillons de faire :</big></p>
+## Vous êtes complètement vacciné(e), voici ce que nous vous conseillons de faire :
 
 ### 1. Faire un test
 
@@ -97,8 +107,11 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**) ;
 * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
-</details>
 </div>
+
+<p id="contact-a-risque-refaire" data-initial-form="vaccine" hidden>
+<a href="#" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
+</p>
 
 <div class="conseil conseil-jaune">
 

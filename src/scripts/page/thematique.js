@@ -19,10 +19,12 @@ export function pageThematique(app) {
     boutonBasculeVersMonProfil(app)
     ouvreDetailsSiFragment()
     partagePageEnCours()
-    // À discuter : est-ce que l’on veut du générique ?
-    if (document.body.dataset.thematiqueName === 'tests-de-depistage') {
-        dynamiseLeChoixDuTest()
+    const correspondance = {
+        'tests-de-depistage': dynamiseLeChoixDuTest,
+        'cas-contact-a-risque': dynamiseLeCasContactVaccineOuPas,
     }
+    const dynamise = correspondance[document.body.dataset.thematiqueName]
+    if (dynamise) dynamise()
     navigueVersUneThematique(
         app,
         'Navigue vers une thématique depuis une autre thématique'
@@ -85,43 +87,47 @@ function dynamiseLeChoixDuTest() {
     gereSymptomes(form)
 }
 
-function transitionneVersFormulaire(nom) {
-    const form = document.querySelector(`#tests-de-depistage-${nom}-form`)
+function transitionneVersFormulaire(thematique, nom) {
+    const form = document.querySelector(`#${thematique}-${nom}-form`)
     showElement(form)
-    gereBoutonRetour(form)
+    gereBoutonRetour(thematique, form)
     const correspondance = {
         'symptomes': gereSymptomes,
         'depuis-quand': gereDepuisQuand,
         'cas-contact': gereCasContact,
         'auto-test': gereAutoTest,
+        'vaccine': gereContactARisque,
     }
     correspondance[nom](form)
 }
 
-function gereBoutonRetour(form) {
+function gereBoutonRetour(thematique, form) {
     const boutonRetour = form.querySelector('.back-button')
     if (!boutonRetour) return
     boutonRetour.addEventListener('click', (event) => {
         event.preventDefault()
         const precedent = boutonRetour.dataset.precedent
         hideElement(form)
-        transitionneVersFormulaire(precedent)
+        transitionneVersFormulaire(thematique, precedent)
     })
 }
 
-function afficheReponse(nom) {
-    const reponse = document.querySelector(`#tests-de-depistage-${nom}-reponse`)
+function afficheReponse(thematique, nom) {
+    const reponse = document.querySelector(`#${thematique}-${nom}-reponse`)
     showElement(reponse)
-    gereBoutonRefaire()
+    setTimeout(() => {
+        reponse.scrollIntoView({ behavior: 'smooth' })
+    }, 100)
+    gereBoutonRefaire(thematique)
 }
 
-function gereBoutonRefaire() {
-    const boutonRefaire = document.querySelector('#tests-de-depistage-refaire')
+function gereBoutonRefaire(thematique) {
+    const boutonRefaire = document.querySelector(`#${thematique}-refaire`)
     showElement(boutonRefaire)
     boutonRefaire.addEventListener('click', (event) => {
         event.preventDefault()
         hideElement(boutonRefaire)
-        hideSelector(document, '.statut')
+        hideSelector(document, 'div[id$="-reponse"]')
         uncheckAllRadio(document)
         Array.from(
             document.querySelectorAll('[data-initial-value]'),
@@ -130,7 +136,7 @@ function gereBoutonRefaire() {
                 inputWithInitial.removeAttribute('data-initial-value')
             }
         )
-        transitionneVersFormulaire('symptomes')
+        transitionneVersFormulaire(thematique, boutonRefaire.dataset.initialForm)
     })
 }
 
@@ -143,9 +149,9 @@ function gereSymptomes(form) {
         const value = getRadioValue(form, 'tests_de_depistage_symptomes_radio')
         hideElement(form)
         if (value === 'oui') {
-            transitionneVersFormulaire('depuis-quand')
+            transitionneVersFormulaire('tests-de-depistage', 'depuis-quand')
         } else if (value === 'non') {
-            transitionneVersFormulaire('cas-contact')
+            transitionneVersFormulaire('tests-de-depistage', 'cas-contact')
         }
     })
 }
@@ -158,7 +164,7 @@ function gereDepuisQuand(form) {
         event.preventDefault()
         const value = getRadioValue(form, 'tests_de_depistage_depuis_quand_radio')
         hideElement(form)
-        afficheReponse(`symptomes-${value}`)
+        afficheReponse('tests-de-depistage', `symptomes-${value}`)
     })
 }
 
@@ -171,9 +177,9 @@ function gereCasContact(form) {
         const value = getRadioValue(form, 'tests_de_depistage_cas_contact_radio')
         hideElement(form)
         if (value === 'oui') {
-            afficheReponse(`pas-symptomes-cas-contact-${value}`)
+            afficheReponse('tests-de-depistage', `pas-symptomes-cas-contact-${value}`)
         } else if (value === 'non') {
-            transitionneVersFormulaire('auto-test')
+            transitionneVersFormulaire('tests-de-depistage', 'auto-test')
         }
     })
 }
@@ -186,6 +192,26 @@ function gereAutoTest(form) {
         event.preventDefault()
         const value = getRadioValue(form, 'tests_de_depistage_auto_test_radio')
         hideElement(form)
-        afficheReponse(`pas-symptomes-pas-cas-contact-auto-test-${value}`)
+        afficheReponse(
+            'tests-de-depistage',
+            `pas-symptomes-pas-cas-contact-auto-test-${value}`
+        )
+    })
+}
+
+function dynamiseLeCasContactVaccineOuPas() {
+    const form = document.querySelector('#contact-a-risque-vaccine-form')
+    gereContactARisque(form)
+}
+
+function gereContactARisque(form) {
+    const button = form.querySelector('input[type=submit]')
+    const requiredLabel = 'Cette information est requise'
+    toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
+    form.addEventListener('submit', (event) => {
+        event.preventDefault()
+        const value = getRadioValue(form, 'contact_a_risque_vaccine_radio')
+        hideElement(form)
+        afficheReponse('contact-a-risque', value)
     })
 }
