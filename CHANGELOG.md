@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-07-28
+
+* précisions sur la vaccination si Covid entre les deux doses
+* ajout d’un formulaire dédié à la sélection du test approprié à la situation
+
 ## 2021-07-25
 
 * corrige une incohérence dans les conseils pour les personnes cas contact et vaccinée, merci @Aymerik DIEBOLD (voir issue #1356)
