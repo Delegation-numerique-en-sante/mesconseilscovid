@@ -99,7 +99,7 @@ describe('Parcours', function () {
         {
             let messages = recordConsoleMessages(page)
             await page.click(
-                '#page.ready .thematiques a >> text="Voyage et Pass sanitaire, que faut-il savoir ?"'
+                '#page.ready .thematiques a >> text="Pass sanitaire, QR code et voyages, que faut-il savoir ?"'
             )
 
             assert.lengthOf(messages, 2)
