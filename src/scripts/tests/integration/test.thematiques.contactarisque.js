@@ -1,22 +1,16 @@
 import { assert } from 'chai'
+import { recuperationReponse } from './helpers.thematiques'
 
 async function remplirVaccination(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#contact-a-risque-vaccine-form label[for="contact_a_risque_vaccine_radio_${reponse}"]`
+        `#cas-contact-a-risque-vaccine-form label[for="cas_contact_a_risque_vaccine_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#contact-a-risque-vaccine-form >> text="Terminer"'
+        '#cas-contact-a-risque-vaccine-form >> text="Terminer"'
     )
     await bouton.click()
-}
-
-async function recuperationReponse(page, reponse) {
-    const contenuReponse = await page.waitForSelector(
-        `#contact-a-risque-${reponse}-reponse`
-    )
-    return (await contenuReponse.innerText()).trim()
 }
 
 describe('ContactARisque', function () {
@@ -39,7 +33,7 @@ describe('ContactARisque', function () {
         await remplirVaccination(page, 'vaccine')
         // On recommande de faire un test.
         assert.include(
-            await recuperationReponse(page, 'vaccine'),
+            await recuperationReponse(page, 'cas-contact-a-risque', 'vaccine'),
             'Faire un test antigénique en pharmacie immédiatement'
         )
     })
@@ -52,7 +46,7 @@ describe('ContactARisque', function () {
         await remplirVaccination(page, 'pas_vaccine')
         // On recommande l’isolement.
         assert.include(
-            await recuperationReponse(page, 'pas-vaccine'),
+            await recuperationReponse(page, 'cas-contact-a-risque', 'pas-vaccine'),
             'Restez isolé·e au minimum 7 jours après votre dernier contact à risque.'
         )
     })
@@ -67,13 +61,13 @@ describe('ContactARisque', function () {
 
         // On clic sur le bouton pour recommencer.
         const bouton = await page.waitForSelector(
-            '#contact-a-risque-refaire >> text="Recommencer le questionnaire"'
+            '#cas-contact-a-risque-refaire >> text="Recommencer le questionnaire"'
         )
         await bouton.click()
 
         // On est revenu au formulaire initial (vaccination).
         const formLegend = await page.waitForSelector(
-            '#contact-a-risque-vaccine-form legend'
+            '#cas-contact-a-risque-vaccine-form legend'
         )
         assert.equal((await formLegend.innerText()).trim(), 'Je suis cas contact et :')
     })

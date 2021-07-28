@@ -16,26 +16,26 @@
 
 </div>
 
-<form id="contact-a-risque-vaccine-form">
+<form id="cas-contact-a-risque-vaccine-form">
     <fieldset>
-        <legend><h2 id="contact-a-risque-vaccine-label">Je suis cas contact et :</h2></legend>
-        <div role="radiogroup" aria-labelledby="contact-a-risque-vaccine-label">
-            <input id="contact_a_risque_vaccine_radio_vaccine" type="radio" required name="contact_a_risque_vaccine_radio" value="vaccine">
-            <label for="contact_a_risque_vaccine_radio_vaccine">Je suis complètement vacciné(e)</label>
-            <input id="contact_a_risque_vaccine_radio_pas_vaccine" type="radio" required name="contact_a_risque_vaccine_radio" value="pas-vaccine">
-            <label for="contact_a_risque_vaccine_radio_pas_vaccine">Je ne suis pas complètement vacciné(e)</label>
+        <legend><h2 id="cas-contact-a-risque-vaccine-label">Je suis cas contact et :</h2></legend>
+        <div role="radiogroup" aria-labelledby="cas-contact-a-risque-vaccine-label">
+            <input id="cas_contact_a_risque_vaccine_radio_vaccine" type="radio" required name="cas_contact_a_risque_vaccine_radio" value="vaccine">
+            <label for="cas_contact_a_risque_vaccine_radio_vaccine">Je suis complètement vacciné(e)</label>
+            <input id="cas_contact_a_risque_vaccine_radio_pas_vaccine" type="radio" required name="cas_contact_a_risque_vaccine_radio" value="pas-vaccine">
+            <label for="cas_contact_a_risque_vaccine_radio_pas_vaccine">Je ne suis pas complètement vacciné(e)</label>
         </div>
     </fieldset>
     <div class="form-controls">
         <div class="button-with-progress">
-            <p id="aria-description-progress-contact-a-risque" class="progress visually-hidden">C’est la seule question</p>
-            <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-contact-a-risque">
+            <p id="aria-description-progress-cas-contact-a-risque" class="progress visually-hidden">C’est la seule question</p>
+            <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-cas-contact-a-risque">
         </div>
     </div>
 </form>
 
 
-<div id="contact-a-risque-pas-vaccine-reponse" class="conseils" hidden>
+<div id="cas-contact-a-risque-pas-vaccine-reponse" class="conseils" hidden>
 
 ## Vous n’êtes pas complètement vacciné(e), voici ce que nous vous conseillons de faire :
 
@@ -72,7 +72,7 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 
 </div>
 
-<div id="contact-a-risque-vaccine-reponse" class="conseils" hidden>
+<div id="cas-contact-a-risque-vaccine-reponse" class="conseils" hidden>
 
 ## Vous êtes complètement vacciné(e), voici ce que nous vous conseillons de faire :
 
@@ -109,7 +109,7 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 
 </div>
 
-<p id="contact-a-risque-refaire" data-initial-form="vaccine" hidden>
+<p id="cas-contact-a-risque-refaire" data-initial-form="vaccine" hidden>
 <a href="#" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
 </p>
 

@@ -1,4 +1,5 @@
 import { assert } from 'chai'
+import { recuperationReponse } from './helpers.thematiques'
 
 async function remplirSymptomes(page, reponse) {
     const checkbox_label = await page.waitForSelector(
@@ -48,11 +49,6 @@ async function remplirAutoTest(page, reponse) {
     await bouton.click()
 }
 
-async function recuperationStatut(page, statut) {
-    const reponse = await page.waitForSelector(`#tests-de-depistage-${statut}-reponse`)
-    return (await reponse.innerText()).trim()
-}
-
 describe('Tests', function () {
     it('titre de la page', async function () {
         const page = this.test.page
@@ -76,7 +72,11 @@ describe('Tests', function () {
         await remplirDepuisQuand(page, 'moins_4_jours')
         // On propose un test RT-PCR ou antigénique.
         assert.include(
-            await recuperationStatut(page, 'symptomes-moins-4-jours'),
+            await recuperationReponse(
+                page,
+                'tests-de-depistage',
+                'symptomes-moins-4-jours'
+            ),
             'faire un test antigénique ou RT-PCR nasopharyngé.'
         )
     })
@@ -92,7 +92,11 @@ describe('Tests', function () {
         await remplirDepuisQuand(page, 'plus_4_jours')
         // On propose un test RT-PCR.
         assert.include(
-            await recuperationStatut(page, 'symptomes-plus-4-jours'),
+            await recuperationReponse(
+                page,
+                'tests-de-depistage',
+                'symptomes-plus-4-jours'
+            ),
             'faire un test RT-PCR nasopharyngé.'
         )
     })
@@ -108,7 +112,11 @@ describe('Tests', function () {
         await remplirCasContact(page, 'oui')
         // On propose un test antigénique immédiat.
         assert.include(
-            await recuperationStatut(page, 'pas-symptomes-cas-contact-oui'),
+            await recuperationReponse(
+                page,
+                'tests-de-depistage',
+                'pas-symptomes-cas-contact-oui'
+            ),
             'faire un test antigénique si vous venez de l’apprendre.'
         )
     })
@@ -126,8 +134,9 @@ describe('Tests', function () {
         await remplirAutoTest(page, 'oui')
         // On propose un test RT-PCR + isolement.
         assert.include(
-            await recuperationStatut(
+            await recuperationReponse(
                 page,
+                'tests-de-depistage',
                 'pas-symptomes-pas-cas-contact-auto-test-oui'
             ),
             'un test RT-PCR nasopharyngé et rester en isolement'
@@ -145,8 +154,9 @@ describe('Tests', function () {
         await remplirCasContact(page, 'non')
         // Sans autotest.
         await remplirAutoTest(page, 'non')
-        const statut = await recuperationStatut(
+        const statut = await recuperationReponse(
             page,
+            'tests-de-depistage',
             'pas-symptomes-pas-cas-contact-auto-test-non'
         )
         // On propose un test RT-PCR ou antigénique pour le Pass sanitaire.
