@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-07-30
+
+* mise à jour de la liste des pays verts et rouges
+* mise à jour relative aux couvre-feux et confinements dans les DROM
+
 ## 2021-07-28
 
 * précisions sur la vaccination si Covid entre les deux doses
