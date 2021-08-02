@@ -27,6 +27,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     :level: 4
 
     **Oui**, mais les conditions de voyages sont plus ou moins contraignantes selon les pays de destination. Assurez-vous de vérifier quelles conditions s’appliquent avant de partir.
+
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Sous quelle forme présenter le « Pass sanitaire européen » lors d’un voyage ?
@@ -58,10 +59,8 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
     :level: 4
 
-    À l’embarquement sur votre vol retour vers la France, vous devrez présenter un test antigénique ou PCR négatif réalisé dans les 72 h précédant votre vol.
-    
-    <span class="nouveau">nouveau</span> Depuis le 17 juillet, les voyageurs et voyageuses non-vaccinés en provenance des pays européens suivants : Chypre, Espagne, Grèce, Pays-Bas et Portugal doivent présenter **un test PCR négatif réalisé dans les 24 h** avant l’embarquement sur leur vol vers la France.
-    
+    À l’embarquement sur votre vol retour vers la France, vous devrez présenter un test antigénique ou PCR négatif réalisé dans les 72 h précédant votre vol  (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
+
     Pour plus de détails, consultez le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Je pars bientôt en voyage dans un pays extérieur à l’Espace européen. Quel justificatif présenter ?
@@ -80,7 +79,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Les mesures sont plus ou moins contraignantes selon le pays d’où vous revenez :
 
-    * d’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (États membres de l’Union européenne ainsi que Andorre, l’Islande, le Liechtenstein, Monaco, la Norvège, Saint-Marin, la Suisse et le Vatican ; s’y ajoutent l’Albanie, l’Australie, l’Arabie Saoudite, le Bahreïn, la Bosnie, Brunei, le Canada, la Corée du Sud, les États-Unis, la Jordanie, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, l’Ukraine, l’Union des Comores et Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h.
+    * d’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (États membres de l’Union européenne ainsi que Andorre, l’Islande, le Liechtenstein, Monaco, la Norvège, Saint-Marin, la Suisse et le Vatican ; s’y ajoutent l’Albanie, l’Australie, l’Arabie Saoudite, le Bahreïn, la Bosnie, Brunei, le Canada, la Corée du Sud, les États-Unis, la Jordanie, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, l’Ukraine, l’Union des Comores et Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
 
     * d’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (Afghanistan, Afrique du Sud, Argentine, Bangladesh, Brésil, Colombie, Costa-Rica, Cuba, Indonésie, Maldives, Mozambique, Namibie, Népal, Oman, Pakistan, République démocratique du Congo, Russie, Seychelles, Suriname et Tunisie), vous devez :
 
@@ -228,10 +227,8 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
     :level: 4
 
-    À l’embarquement sur votre vol retour vers la France, vous devrez présenter un test antigénique ou PCR négatif réalisé dans les 72 h précédant votre vol.
-    
-    <span class="nouveau">nouveau</span> Depuis le 17 juillet, les voyageurs et voyageuses non-vaccinés en provenance des pays européens suivants : Chypre, Espagne, Grèce, Pays-Bas et Portugal doivent présenter **un test PCR négatif réalisé dans les 24 h** avant l’embarquement sur leur vol vers la France.
-    
+    À l’embarquement sur votre vol retour vers la France, vous devrez présenter un test antigénique ou PCR négatif réalisé dans les 72 h précédant votre vol (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
+
     Pour plus de détails, consultez le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Je pars bientôt en voyage dans un pays extérieur à l’Espace européen. Quel justificatif présenter ?
@@ -250,7 +247,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Les mesures sont plus ou moins contraignantes selon le pays d’où vous revenez :
 
-    * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (États membres de l’Union européenne ainsi que Andorre, l’Islande, le Liechtenstein, Monaco, la Norvège, Saint-Marin, la Suisse et le Vatican ; s’y ajoutent l’Albanie, l’Australie, l’Arabie Saoudite, le Bahreïn, la Bosnie, Brunei, le Canada, la Corée du Sud, les États-Unis, la Jordanie, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, l’Ukraine, l’Union des Comores et Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h.
+    * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (États membres de l’Union européenne ainsi que Andorre, l’Islande, le Liechtenstein, Monaco, la Norvège, Saint-Marin, la Suisse et le Vatican ; s’y ajoutent l’Albanie, l’Australie, l’Arabie Saoudite, le Bahreïn, la Bosnie, Brunei, le Canada, la Corée du Sud, les États-Unis, la Jordanie, Hong-Kong, Israël, le Japon, le Kosovo, le Liban, la Macédoine du Nord, le Monténégro, la Nouvelle-Zélande, la Serbie, Singapour, Taïwan, l’Ukraine, l’Union des Comores et Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
 
     * D’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (Afghanistan, Afrique du Sud, Argentine, Bangladesh, Brésil, Colombie, Costa-Rica, Cuba, Indonésie, Maldives, Mozambique, Namibie, Népal, Oman, Pakistan, République démocratique du Congo, Russie, Seychelles, Suriname et Tunisie), vous devez :
         - à l’embarquement, présenter un test PCR ou antigénique négatif réalisé il y a moins de 48 h ;
@@ -281,21 +278,19 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Si votre test positif PCR date de plus de 11 jours et de moins de 6 mois et qu’il comporte un QR code aux normes européennes, alors il fait office de « certificat de rétablissement » reconnu comme « Pass sanitaire » en France et dans l’Espace européen. Cependant, certains pays européens peuvent continuer à exiger un test de dépistage (RT-PCR ou antigénique) négatif récent (48 h ou 72 h).
     Pour télécharger le certificat de dépistage comportant un QR code aux normes européennes, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
-    
+
     Attention, un test sérologique (prise de sang) positif ne fait pas office de Pass sanitaire.
 
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Puis-je me déplacer dans l’Espace européen ?
     :level: 4
 
     **Oui.** Assurez-vous de vérifier quel justificatif fait office de « Pass sanitaire européen » pour votre pays de destination, en vous rendant sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/). Selon votre destination, un certificat de rétablissement ou un test de dépistage négatif récent pourra vous être demandé.
-    
+
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
     :level: 4
 
-    À l’embarquement sur votre vol retour vers la France, vous devrez présenter un test antigénique ou PCR négatif réalisé dans les 72 h précédant votre vol.
-    
-    <span class="nouveau">nouveau</span> Depuis le 17 juillet, les voyageurs et voyageuses non-vaccinés en provenance des pays européens suivants : Chypre, Espagne, Grèce, Pays-Bas et Portugal doivent présenter **un test PCR négatif réalisé dans les 24 h** avant l’embarquement sur leur vol vers la France.
-    
+    À l’embarquement sur votre vol retour vers la France, vous devrez présenter un test antigénique ou PCR négatif réalisé dans les 72 h précédant votre vol (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
+
     Pour plus de détails, consultez le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Mon test de dépistage (positif ou négatif) ne comporte pas de QR code, comment l’intégrer dans TousAntiCovid ?
@@ -331,7 +326,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
       <span class="nouveau">nouveau</span> **Depuis le 21 juillet**, il est exigé pour accéder aux lieux de loisirs et de culture rassemblant plus de 50 personnes.
 
       **Début août**, son usage sera étendu aux cafés, restaurants, grands centres commerciaux, établissements médico-sociaux, hôpitaux, maisons de retraites, moyens de transports collectifs pour les longs trajets (trains, cars et avions).
-    
+
       Pour certaines catégories de personnes, l’obligation du pass sanitaire est repoussée au 30 août (cette date est actuellement débattue par les instances parlementaires) :
 
       * Les enfants de 12 à 17 ans.
