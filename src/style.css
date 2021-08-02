@@ -785,22 +785,20 @@ footer .legals {
 .conseil {
     background: #d5dbef;
     padding: 0.1rem 1rem;
-    border-color: #000091;
-    border-left-style: solid;
-    border-left-width: 5px;
+    border-left: 5px solid #000091;
     margin-bottom: 1.5rem;
 }
 .conseil-orange {
     background-color: #ffb6a5;
-    border-color: #ff6f4c;
+    border-color: #ff6f4c !important;
 }
 .conseil-jaune {
     background: #fde7a0;
-    border-color: #fdcf41;
+    border-color: #fdcf41 !important;
 }
 .conseil-vert {
     background-color: #7fd5c5;
-    border-color: #00ac8c;
+    border-color: #00ac8c !important;
 }
 
 fieldset {
