@@ -220,7 +220,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
-    **Pour la Corse** : un test RT-PCR négatif réalisé il y a moins de 72 h est exigé. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse). Notez que pour cette destination, vous pouvez présenter votre test sous format numérique dans le carnet de l’application TousAntiCovid.
+    **Pour la Corse** : vous devez présenter un test RT-PCR négatif réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
 
     **Pour l’Outre-mer** : les conditions de voyages diffèrent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
@@ -301,7 +301,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Est-ce que je peux partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
-    **Pour la Corse** : un test RT-PCR ou antigénique négatif de moins de 72 h est exigé. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
+    **Pour la Corse** : vous devez présenter un test RT-PCR négatif réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
 
     **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un test RT-PCR négatif de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
