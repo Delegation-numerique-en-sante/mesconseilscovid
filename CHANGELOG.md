@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-08-02
+
+* mise à jour des conseils pour les voyages
+* mise à jour de la liste des pays verts et rouges
+
 ## 2021-07-30
 
 * mise à jour de la liste des pays verts et rouges
