@@ -13,3 +13,5 @@ src/*.html
 src/pdfs/*
 static/sitemap.xml
 contenus/zoverride
+jargon.dic
+jargon.dic.in
