@@ -12,7 +12,7 @@
 
 <div class="conseil">
 
-<span class="nouveau">nouveau</span> Les personnes vacciné(e)s avec un schéma vaccinal complet (toutes les doses nécessaires) n’ont plus l’obligation de s’isoler après un contact à risque.
+<span class="nouveau">nouveau</span> Les personnes **complètement vacciné(e)s** (ayant reçu toutes les doses nécessaires) n’ont plus l’obligation de s’isoler après un contact à risque, lorsque leur test de dépistage est négatif.
 
 </div>
 
