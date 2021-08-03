@@ -74,7 +74,7 @@ Depuis le 15 juin 2021, **la vaccination est ouverte aux enfants de 12 ans et
     * un test PCR ou antigénique négatif récent ;
     * un test PCR positif de plus de 11 jours et moins de 6 mois.
 
-    Par ailleurs, le ou la mineur(e) non-vacciné(e) accompagnant ses parents vaccinés lors d’un voyage bénéficiera des mêmes facilités qu’eux. Par exemple, un mineur non-vaccin(é) pourra accompagner ses parents vaccinés lors d’un voyage dans un [pays classé orange](https://www.gouvernement.fr/voyager-depuis-et-vers-l-etranger-mode-d-emploi) sans justifier d’un motif impérieux pour s’y rendre.
+    Par ailleurs, le ou la mineur(e) non-vacciné(e) accompagnant ses parents vaccinés lors d’un voyage bénéficiera des mêmes facilités qu’eux. Par exemple, un(e) mineur(e) non-vacciné(e) pourra accompagner ses parents vaccinés lors d’un voyage dans un [pays classé orange](https://www.gouvernement.fr/voyager-depuis-et-vers-l-etranger-mode-d-emploi) sans justifier d’un motif impérieux pour s’y rendre.
 
     Pour plus d’informations sur les voyages et le pass sanitaire en général, consultez notre [page thématique](https://mesconseilscovid.sante.gouv.fr/pass-sanitaire-qr-code-voyages.html).
 
@@ -194,7 +194,7 @@ Depuis le 15 juin 2021, **la vaccination est ouverte aux enfants de 12 ans et
  
 
 
-.. question:: Mon enfant de 2 ans a de la diarrhée depuis 2 jours et a vomi plusieurs fois hier ; il devient fébrile et commence à tousser. On m’a parlé de gastroentérite mais il n’y a pas d’autres cas dans la famille ou à la crèche.  Peut-il s’agir de la Covid ?
+.. question:: Mon enfant de 2 ans a de la diarrhée depuis 2 jours et a vomi plusieurs fois hier ; il devient fébrile et commence à tousser. On m’a parlé de gastro-entérite mais il n’y a pas d’autres cas dans la famille ou à la crèche.  Peut-il s’agir de la Covid ?
     :level: 3
 
     Bien que la Covid soit très rare à cet âge, il est prudent de consulter un médecin qui fera pratiquer un test car les troubles digestifs persistants peuvent être dûs au coronavirus. Cette infection est de toute façon le plus souvent bénigne, les enfants ont beaucoup moins de risque d’avoir des formes graves et d’être hospitalisés que les adultes.
