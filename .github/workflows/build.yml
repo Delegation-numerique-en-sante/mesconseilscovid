@@ -64,6 +64,11 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
 
+      - name: Check spelling
+        run: |
+          sudo apt-get install hunspell hunspell-fr
+          make check-spelling
+
   build:
     name: Build
     runs-on: ubuntu-latest
