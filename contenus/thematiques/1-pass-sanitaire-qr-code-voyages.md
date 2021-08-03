@@ -38,7 +38,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
-    **Pour la Corse** : vous devez présenter un test RT-PCR négatif réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
+    **Pour la Corse** : vous devez présenter un test RT-PCR négatif réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
 
     **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un test RT-PCR négatif de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
@@ -49,7 +49,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Attention, tous les pays n’acceptent pas les tests antigéniques. Par ailleurs, la durée de validité du résultat du test varie selon les destinations de 48 h à 72 h. Nous vous conseillons de vérifier les critères d’accès à votre pays de destination avant de partir, sur le site du [ministère de l’Europe et des Affaires étrangères](https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/).
 
-    Il n’est plus nécéssaire de justifier d’un motif impérieux pour sortir de France métropolitaine vers un pays de l’Espace européen.
+    Il n’est plus nécessaire de justifier d’un motif impérieux pour sortir de France métropolitaine vers un pays de l’Espace européen.
 
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Mon test de dépistage ne comporte pas de QR code, comment faire ?
     :level: 4
@@ -139,7 +139,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Je pars en voyage vers un pays de l’Espace européen. Ma preuve de vaccination est-elle suffisante ?
     :level: 4
 
-    **Cela dépend de votre destination.** Le « Pass sanitaire européen » permet de facilliter le contrôle des justificatifs (vaccination, tests de dépistage) lors des voyages au sein de l’Espace européen, mais il n’harmonise pas les conditions d’entrées dans les pays membres. Vous ne pourrez donc pas faire automatiquement valoir votre vaccination pour voyager au sein de l’Union européenne.
+    **Cela dépend de votre destination.** Le « Pass sanitaire européen » permet de faciliter le contrôle des justificatifs (vaccination, tests de dépistage) lors des voyages au sein de l’Espace européen, mais il n’harmonise pas les conditions d’entrées dans les pays membres. Vous ne pourrez donc pas faire automatiquement valoir votre vaccination pour voyager au sein de l’Union européenne.
 
     Certains pays exigent encore la présentation d’un test RT-PCR ou antigénique négatif récent (réalisé dans les 48 h ou 72 h), même pour les personnes vaccinées. Attention, le délai de validité des tests de dépistage varie selon les pays, et tous n’acceptent pas les tests antigéniques.
 
@@ -220,7 +220,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
-    **Pour la Corse** : vous devez présenter un test RT-PCR négatif réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
+    **Pour la Corse** : vous devez présenter un test RT-PCR négatif réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
 
     **Pour l’Outre-mer** : les conditions de voyages diffèrent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
@@ -301,7 +301,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Est-ce que je peux partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
-    **Pour la Corse** : vous devez présenter un test RT-PCR négatif réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de [l’ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
+    **Pour la Corse** : vous devez présenter un test RT-PCR négatif réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
 
     **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un test RT-PCR négatif de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
