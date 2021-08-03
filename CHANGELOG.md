@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-08-03
+
+* mise à jour du confinement en Guadeloupe
+
 ## 2021-08-02
 
 * mise à jour des conseils pour les voyages
