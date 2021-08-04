@@ -59,7 +59,6 @@ const CACHE_FILES = [
     'icone_infographie.svg',
     'timeline-arrow.svg',
     'exemple_qr_code_vers_tousanticovid.png',
-    'illustrations/accueil.svg',
     'illustrations/activitepro.svg',
     'illustrations/contact_medecin.svg',
     'illustrations/contactarisque.svg',

@@ -28,7 +28,7 @@ export default class SuiviView {
         const conseilsButton = safeHtml`
             <a class="button button-outline button-full-width conseils-link"
                 data-set-profil="${this.profil.nom}" href="#conseils"
-                >Voir ${possessifPluriel} conseils</a>
+                >Retrouver ${possessifPluriel} conseils</a>
         `
         let deleteLink = ''
         if (this.profil.hasSuiviStartDate()) {

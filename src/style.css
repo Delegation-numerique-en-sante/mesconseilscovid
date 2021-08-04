@@ -269,22 +269,6 @@ legend h1 {
     flex-basis: 100%;
     height: 0;
 }
-.profil-empty {
-    width: 100%;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-.profil-empty a.button {
-    max-width: 18rem;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 5rem;
-}
-.profil-empty a.button-outline {
-    font-weight: normal;
-}
 .cards > li {
     margin-top: 1rem;
     display: flex;
@@ -326,7 +310,24 @@ legend h1 {
     margin: 0 12px 1rem 12px;
     max-width: 285px;
 }
-.thematiques a {
+.thematiques .cards > li.highlighted {
+    order: -1;
+}
+@media only screen and (min-width: 658px) {
+    .thematiques .cards > li.highlighted {
+        width: calc((2 * 285px) + 24px);
+        min-width: calc((2 * 285px) + 24px);
+        max-width: calc((2 * 285px) + 24px);
+    }
+}
+@media only screen and (min-width: 998px) {
+    .thematiques .cards > li.highlighted {
+        width: calc(100% - 24px);
+        min-width: calc(100% - 24px);
+        max-width: calc(100% - 24px);
+    }
+}
+.thematiques a.card-header {
     margin: 0;
     padding: 1rem 1.5rem;
     display: flex;
@@ -337,7 +338,7 @@ legend h1 {
     min-height: 13rem;
     justify-content: center;
 }
-.thematiques a:hover {
+.thematiques a.card-header:hover {
     transform: translate(0.1em, 0.1em);
 }
 .thematiques img {
@@ -347,12 +348,17 @@ legend h1 {
 .thematiques .card-title {
     padding: 0.5rem 0 0 0;
 }
+.thematiques .card-actions {
+    padding: 0 2rem;
+    margin: 0 auto 2rem auto;
+    max-width: 24rem;
+}
+.thematiques .card-actions .button {
+    margin-top: 0;
+}
 @media only screen and (min-width: 680px) {
     .cards .card:first-child {
         margin-bottom: 1rem;
-    }
-    .profil-empty {
-        width: 50%;
     }
 }
 
@@ -405,12 +411,6 @@ footer .legals {
 .introduction-block .tagline {
     font-size: 1.3rem;
     margin-bottom: 3rem;
-}
-.tagline-image {
-    padding-bottom: 40%;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: 50%;
 }
 
 .tagline-suivi {
@@ -548,9 +548,6 @@ footer .legals {
 #historique-form,
 #conseils-covid summary {
     background-image: url('illustrations/covid.svg');
-}
-.tagline-image {
-    background-image: url('illustrations/accueil.svg');
 }
 #conseils-pediatrie-general summary {
     background-image: url('illustrations/pediatriegeneral.svg');

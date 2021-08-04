@@ -9,65 +9,51 @@ export default function introduction(page, app) {
     showElement(header.querySelector('.js-profil-empty'))
     hideElement(header.querySelector('.js-profil-full'))
 
-    const fullContainer = element.querySelector('#profils-cards-full')
-    const fullContainerList = fullContainer.querySelector('ul.cards')
-
     app.stockage.getProfils().then((noms) => {
-        if (noms.length) {
-            showElement(fullContainer)
-        } else {
-            hideElement(fullContainer)
-        }
-        if (noms.indexOf('mes_infos') === -1) {
-            const cardClassique = fullContainerList.appendChild(
-                createElementFromHTML(`
-                    <li class="profil-empty">
-                        <a class="button button-full-width"
-                            data-set-profil="mes_infos"
-                            href="#${app.questionnaire.firstPage}"
-                            >Des conseils pour moi</a>
-                    </li>
-                `)
-            )
-            bindSetProfil(cardClassique.querySelector('[data-set-profil]'), app)
-        }
-        fullContainerList.appendChild(
-            createElementFromHTML(`
-                <li class="profil-empty">
-                    <a class="button button-full-width button-outline"
-                        href="#nom"
-                        >Des conseils pour un ou une proche</a>
-                </li>
-            `)
+        const card = element.querySelector(
+            '.thematiques .cards .j-ai-des-symptomes-covid'
         )
-        renderProfilCards(fullContainerList, noms, app)
+        renderActionsIfNeeded(card, 'mes_infos', app).then((actions) => {
+            if (noms.indexOf('mes_infos') !== -1) {
+                card.classList.add('highlighted')
+                showElement(actions)
+            } else {
+                card.classList.remove('highlighted')
+                hideElement(actions)
+            }
+        })
     })
+
     navigueVersUneThematique(app, 'Navigue vers une thématique depuis l’accueil')
 }
 
-function renderProfilCards(container, noms, app) {
-    const lastCard = container.firstChild
-    noms.forEach((nom) => {
-        const profil = new Profil(nom)
-        app.stockage.charger(profil).then((profil) => {
-            const card = container.insertBefore(
-                profil.renderCard(app.questionnaire),
-                lastCard
+function renderActionsIfNeeded(card, nom, app) {
+    const profil = new Profil(nom)
+    return app.stockage.charger(profil).then((profil) => {
+        let actions = card.querySelector('.card-actions')
+        if (!actions) {
+            actions = card.appendChild(
+                createElementFromHTML(
+                    `<div class="card-actions">${profil.renderButtons(
+                        app.questionnaire
+                    )}</div>`
+                )
             )
 
-            const conseilsLink = card.querySelector('.conseils-link')
+            const conseilsLink = actions.querySelector('.conseils-link')
             if (conseilsLink) {
                 conseilsLink.setAttribute('href', '#conseils')
             }
 
-            Array.from(card.querySelectorAll('[data-set-profil]')).forEach(
+            Array.from(actions.querySelectorAll('[data-set-profil]')).forEach(
                 (profilLink) => {
                     bindSetProfil(profilLink, app)
                 }
             )
 
-            bindSuppression(card.querySelector('[data-delete-profil]'), app)
-        })
+            bindSuppression(actions.querySelector('[data-delete-profil]'), app)
+        }
+        return actions
     })
 }
 

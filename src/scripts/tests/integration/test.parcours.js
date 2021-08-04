@@ -67,24 +67,10 @@ describe('Parcours', function () {
             ])
         }
 
-        // Introduction.
-        {
-            // La page comporte maintenant un lien direct vers mes conseils.
-            let bouton = await page.waitForSelector(
-                '#page.ready >> text="Voir mes conseils"'
-            )
-            assert.equal(
-                await bouton.evaluate(
-                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
-                ),
-                'Moi'
-            )
-        }
-
-        // On retourne aux conseils.
+        // La page comporte maintenant un lien direct vers mes conseils.
         {
             let bouton = await page.waitForSelector(
-                '#page.ready >> text="Voir mes conseils"'
+                '#page.ready >> text="Retrouver mes conseils"'
             )
             await Promise.all([
                 bouton.click(),
@@ -95,11 +81,17 @@ describe('Parcours', function () {
         // On peut aller vers une thématique depuis les conseils.
         {
             let messages = recordConsoleMessages(page)
-            await page.click(
-                '#page.ready .thematiques a >> text="Pass sanitaire, QR code et voyages, que faut-il savoir ?"'
-            )
 
-            assert.lengthOf(messages, 2)
+            await Promise.all([
+                page.click(
+                    '#page.ready .thematiques a >> text="Pass sanitaire, QR code et voyages, que faut-il savoir ?"'
+                ),
+                page.waitForNavigation({
+                    url: '**/pass-sanitaire-qr-code-voyages.html',
+                }),
+            ])
+
+            assert.lengthOf(messages, 3)
             assert.include(messages[0], {
                 n: 'pageview',
                 u: 'http://localhost/conseils',
@@ -108,6 +100,10 @@ describe('Parcours', function () {
                 n: 'Navigue vers une thématique depuis les conseils',
                 p: '{"chemin":"/conseils → /pass-sanitaire-qr-code-voyages.html","profil":"moi"}',
                 u: 'http://localhost/conseils',
+            })
+            assert.include(messages[2], {
+                n: 'pageview',
+                u: 'http://localhost/pass-sanitaire-qr-code-voyages.html',
             })
         }
     })
@@ -571,8 +567,8 @@ describe('Parcours', function () {
 
         // Page d’accueil.
         {
-            // Il y a un bouton « Voir mes conseils ».
-            await page.waitForSelector('#page.ready >> text="Voir mes conseils"')
+            // Il y a un lien direct vers mes conseils.
+            await page.waitForSelector('#page.ready >> text="Retrouver mes conseils"')
 
             // Il n’y a PAS de bouton « Démarrer mon suivi ».
             assert.isNull(await page.$('#page.ready >> text="Démarrer mon suivi"'))

@@ -18,15 +18,21 @@ describe('Thématiques', function () {
 
         let messages = recordConsoleMessages(page)
         await page.goto('http://localhost:8080/conseils-pour-les-enfants.html')
-        await page.click(
-            '.thematiques a >> text="Pass sanitaire, QR code et voyages, que faut-il savoir ?"'
-        )
+
+        await Promise.all([
+            page.click(
+                '.thematiques a >> text="Pass sanitaire, QR code et voyages, que faut-il savoir ?"'
+            ),
+            page.waitForNavigation({
+                url: '**/pass-sanitaire-qr-code-voyages.html',
+            }),
+        ])
+
         await waitForPlausibleTrackingEvent(
             page,
             'pageview:pass-sanitaire-qr-code-voyages.html'
-        )
-
-        assert.lengthOf(messages, 3)
+        ),
+            assert.lengthOf(messages, 3)
         assert.include(messages[0], {
             n: 'pageview',
             u: 'http://localhost/conseils-pour-les-enfants.html',
@@ -47,7 +53,12 @@ describe('Thématiques', function () {
 
         let messages = recordConsoleMessages(page)
         await page.goto('http://localhost:8080/conseils-pour-les-enfants.html')
-        await page.click('.cta a >> text="Je veux des conseils personnalisés"')
+        await Promise.all([
+            page.click('.cta a >> text="Je veux des conseils personnalisés"'),
+            page.waitForNavigation({
+                url: '**/#vaccins',
+            }),
+        ])
 
         assert.lengthOf(messages, 2)
         assert.include(messages[0], {

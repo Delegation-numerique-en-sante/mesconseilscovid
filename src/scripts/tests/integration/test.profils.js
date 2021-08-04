@@ -86,17 +86,17 @@ describe('Profils', function () {
         }
 
         // Introduction.
-        {
-            // La page comporte maintenant un lien direct vers ses conseils.
-            let bouton = await page.waitForSelector(
-                '#page.ready >> text="Voir ses conseils"'
-            )
-            assert.equal(
-                await bouton.evaluate(
-                    (e) => e.parentElement.parentElement.querySelector('h3').innerText
-                ),
-                'Mamie'
-            )
-        }
+        // {
+        //     // La page comporte maintenant un lien direct vers ses conseils.
+        //     let bouton = await page.waitForSelector(
+        //         '#page.ready >> text="Voir ses conseils"'
+        //     )
+        //     assert.equal(
+        //         await bouton.evaluate(
+        //             (e) => e.parentElement.parentElement.querySelector('h3').innerText
+        //         ),
+        //         'Mamie'
+        //     )
+        // }
     })
 })
