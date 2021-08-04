@@ -101,6 +101,11 @@ jobs:
         run: |
           make build
 
+      - name: Get Run ID for upload job
+        id: upload_run_id
+        run: |
+          echo "::set-output name=RUN_ID::${{ github.run_id }}"
+
       - uses: actions/upload-artifact@v2
         with:
           name: mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}
@@ -251,7 +256,7 @@ jobs:
                -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
                -H "Accept: application/vnd.github.everest-preview+json" \
                -H "Content-Type: application/json" \
-               --data '{"event_type": "deploy", "client_payload": {"repo": "${{ github.repository }}", "commit": "${{ github.sha }}", "ref": "${{ github.ref }}", "slug": "${{ env.GITHUB_REF_SLUG_URL }}", "artifact": "mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}", "deployment_id": "${{ steps.create_deployment.outputs.id }}"}}'
+               --data '{"event_type": "deploy", "client_payload": {"repo": "${{ github.repository }}", "commit": "${{ github.sha }}", "ref": "${{ github.ref }}", "slug": "${{ env.GITHUB_REF_SLUG_URL }}", "run_id": "${{ github.run_id }}", "artifact": "mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}", "deployment_id": "${{ steps.create_deployment.outputs.id }}"}}'
 
   check-links:
     name: Check links
