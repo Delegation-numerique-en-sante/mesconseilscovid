@@ -513,6 +513,7 @@ describe('Parcours', function () {
                 bouton.click(),
                 page.waitForNavigation({ url: '**/#vaccins' }),
             ])
+            await page.waitForSelector('#page.ready')
             assert.equal(
                 await page.title(),
                 'Mon statut actuel de vaccination contre la Covid (étape 1) — Mes Conseils Covid — Isolement, tests, vaccins, attestations, contact à risque…'
