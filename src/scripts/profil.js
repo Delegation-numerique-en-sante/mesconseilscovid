@@ -837,7 +837,7 @@ export default class Profil {
             mainButton += safeHtml`
                 <a class="button ${outlined} conseils-link"
                     data-set-profil="${this.nom}" href="#conseils"
-                    >Voir ${possessifPluriel} conseils</a>
+                    >Retrouver ${possessifPluriel} conseils</a>
             `
         } else {
             const label = this.isEmpty() ? 'Démarrer' : 'Continuer'
@@ -855,7 +855,7 @@ export default class Profil {
         `
         const deleteButton = safeHtml`
             <a data-delete-profil="${this.nom}" href="" role="button"
-                >Supprimer ${possessifMasculinSingulier} profil</a>
+                >Supprimer ${possessifPluriel} réponses</a>
             `
         return mainButton + continueButton + deleteButton
     }

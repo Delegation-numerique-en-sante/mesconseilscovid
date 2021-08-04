@@ -73,8 +73,8 @@
                 <div class="thematiques">
                     <ul class="cards ">
                         {% for thematique in thematiques %}
-                        <li>
-                            <a class="card" href="{{ thematique.name }}.html">
+                        <li class="card {{ thematique.name }}">
+                            <a class="card-header" href="{{ thematique.name }}.html">
                                 <img src="{{ thematique.imgsrc }}" loading="lazy" alt=""
                                      width="96" height="76.8">
                                 <span class="card-title">{{ thematique.title }}</span>
@@ -83,7 +83,6 @@
                         {% endfor %}
                     </ul>
                 </div>
-                <div class="tagline-image"></div>
                 <noscript>
                     <h2>Ce site a besoin de JavaScript pour fonctionner.</h2>
                     <p>
@@ -105,16 +104,11 @@
         <p class="tagline">
             MesConseilsCovid répond à vos questions pour savoir quoi faire dans une situation liée à la Covid.
         </p>
-        <div id="profils-cards-full" hidden>
-            <h2>Vos profils</h2>
-            <ul class="cards"></ul>
-            <h2>Pages populaires</h2>
-        </div>
         <div class="thematiques">
             <ul class="cards ">
                 {% for thematique in thematiques %}
-                <li>
-                    <a class="card" href="{{ thematique.name }}.html">
+                <li class="card {{ thematique.name }}">
+                    <a class="card-header" href="{{ thematique.name }}.html">
                         <img src="{{ thematique.imgsrc }}" loading="lazy" alt=""
                              width="96" height="76.8">
                         <span class="card-title">{{ thematique.title }}</span>
@@ -1421,8 +1415,8 @@
                 <h1>Questions fréquentes</h1>
                 <ul class="cards ">
                     {% for thematique in autres_thematiques %}
-                    <li>
-                        <a class="card" href="{{ thematique.name }}.html">
+                    <li class="card">
+                        <a class="card-header" href="{{ thematique.name }}.html">
                             <img src="{{ thematique.imgsrc }}" loading="lazy" alt=""
                                  width="96" height="76.8">
                             <span class="card-title">{{ thematique.title }}</span>
