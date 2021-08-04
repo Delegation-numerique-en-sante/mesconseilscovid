@@ -198,8 +198,8 @@ legend h1 {
     text-align: center;
 }
 .introduction-block h2 {
-    margin: 1rem auto;
-    padding-top: 1rem;
+    margin: 2rem auto;
+    padding-top: 0;
 }
 .introduction-block p {
     margin-left: auto;
@@ -244,7 +244,7 @@ legend h1 {
 }
 .block ul.cards {
     padding: 0;
-    margin: auto;
+    margin: -1rem auto 0 auto;
     max-width: none;
 }
 .card {
@@ -313,6 +313,7 @@ legend h1 {
 .thematiques {
     max-width: 58rem;
     text-align: center;
+    margin-top: 1rem;
 }
 .thematiques h1,
 .thematiques h2 {
@@ -401,7 +402,7 @@ footer .legals {
     text-align: center;
 }
 
-.tagline {
+.introduction-block .tagline {
     font-size: 1.3rem;
     margin-bottom: 3rem;
 }
