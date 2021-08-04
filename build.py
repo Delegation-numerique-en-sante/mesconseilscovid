@@ -193,7 +193,15 @@ def all():
 def index():
     """Build the index with contents from markdown dedicated folder."""
     responses = build_responses(CONTENUS_DIR)
-    responses["thematiques"] = get_thematiques()[:NB_OF_DISPLAYED_THEMATIQUES]
+
+    thematiques = get_thematiques()[:NB_OF_DISPLAYED_THEMATIQUES]
+    responses["thematiques"] = thematiques
+    responses["autres_thematiques"] = [
+        thematique
+        for thematique in thematiques
+        if thematique.name != "j-ai-des-symptomes-covid"
+    ]
+
     content = render_template("index.html", **responses)
     content = cache_external_pdfs(content)
     (SRC_DIR / "index.html").write_text(content)
