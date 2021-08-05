@@ -353,6 +353,23 @@ legend h1 {
     margin: 0 auto 2rem auto;
     max-width: 24rem;
 }
+.thematiques .card-actions .actions-profil:first-of-type .prev,
+.thematiques .card-actions .actions-profil:last-of-type .next {
+    visibility: hidden;
+}
+.thematiques .card-actions nav {
+    margin-bottom: 1rem;
+}
+.thematiques .card-actions nav .nom {
+    font-weight: bold;
+}
+.thematiques .card-actions nav a {
+    text-decoration: none;
+    padding: 0 0.75rem;
+}
+.thematiques .card-actions nav > * {
+    display: inline;
+}
 .thematiques .card-actions .button {
     margin-top: 0;
 }
@@ -1534,7 +1551,7 @@ a.no-type::after {
 .thematique .cta a.button {
     display: inline-block;
     font-size: 20px;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 2rem auto;
 }
 .thematique .cta a.button.button-outline {
     background-image: url('arrow-right-blue.svg');

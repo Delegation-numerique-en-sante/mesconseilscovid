@@ -1,5 +1,10 @@
 import Profil from '../profil'
-import { createElementFromHTML, hideElement, showElement } from '../affichage'
+import {
+    createElementFromHTML,
+    hideElement,
+    showElement,
+    showSelector,
+} from '../affichage'
 import { navigueVersUneThematique } from './thematique'
 
 export default function introduction(page, app) {
@@ -9,51 +14,90 @@ export default function introduction(page, app) {
     showElement(header.querySelector('.js-profil-empty'))
     hideElement(header.querySelector('.js-profil-full'))
 
+    const card = element.querySelector('.thematiques .cards .j-ai-des-symptomes-covid')
     app.stockage.getProfils().then((noms) => {
-        const card = element.querySelector(
-            '.thematiques .cards .j-ai-des-symptomes-covid'
-        )
-        renderActionsIfNeeded(card, 'mes_infos', app).then((actions) => {
-            if (noms.indexOf('mes_infos') !== -1) {
+        if (noms.length > 0) {
+            updateCardActions(card, noms, app).then(() => {
                 card.classList.add('highlighted')
-                showElement(actions)
-            } else {
-                card.classList.remove('highlighted')
-                hideElement(actions)
-            }
-        })
+                app.stockage.getProfilActuel().then((nom) => {
+                    const index = noms.indexOf(nom || 'mes_infos') + 1
+                    showSelector(card, `.actions-profil:nth-of-type(${index})`)
+                })
+                if (noms.length > 1 || noms[0] !== 'mes_infos') {
+                    Array.from(card.querySelectorAll('nav')).forEach(showElement)
+                }
+            })
+        }
     })
 
     navigueVersUneThematique(app, 'Navigue vers une thématique depuis l’accueil')
 }
 
-function renderActionsIfNeeded(card, nom, app) {
-    const profil = new Profil(nom)
-    return app.stockage.charger(profil).then((profil) => {
-        let actions = card.querySelector('.card-actions')
-        if (!actions) {
-            actions = card.appendChild(
-                createElementFromHTML(
-                    `<div class="card-actions">${profil.renderButtons(
-                        app.questionnaire
-                    )}</div>`
-                )
-            )
+function updateCardActions(card, noms, app) {
+    const container = card.querySelector('.card-actions')
+    return Promise.all(
+        noms.map((nom) => {
+            const profil = new Profil(nom)
+            return app.stockage.charger(profil).then((profil) => {
+                return renderProfilActions(profil, app)
+            })
+        })
+    ).then((actions) => {
+        Array.from(actions).forEach((element) => {
+            container.appendChild(element)
+            bindProfilActions(element, app)
+        })
+    })
+}
 
-            const conseilsLink = actions.querySelector('.conseils-link')
-            if (conseilsLink) {
-                conseilsLink.setAttribute('href', '#conseils')
-            }
+function renderProfilActions(profil, app) {
+    return createElementFromHTML(
+        `<div class="actions-profil" hidden>
+            <nav hidden>
+                <a href="#" class="prev">◀</a><span class="nom">${profil.affichageNom()}</span><a href="#" class="next">▶</a>
+            </nav>
+            ${profil.renderButtons(app.questionnaire)}
+        </div>`
+    )
+}
 
-            Array.from(actions.querySelectorAll('[data-set-profil]')).forEach(
-                (profilLink) => {
-                    bindSetProfil(profilLink, app)
-                }
-            )
+function bindProfilActions(element, app) {
+    bindProfilPrecedent(element.querySelector('nav .prev'))
+    bindProfilSuivant(element.querySelector('nav .next'))
 
-            bindSuppression(actions.querySelector('[data-delete-profil]'), app)
+    const conseilsLink = element.querySelector('.conseils-link')
+    if (conseilsLink) {
+        conseilsLink.setAttribute('href', '#conseils')
+    }
+
+    Array.from(element.querySelectorAll('[data-set-profil]')).forEach((profilLink) => {
+        bindSetProfil(profilLink, app)
+    })
+
+    bindSuppression(element.querySelector('[data-delete-profil]'), app)
+}
+
+function bindProfilPrecedent(element) {
+    element.addEventListener('click', function (event) {
+        event.preventDefault()
+        const profilActuel = element.parentElement.parentElement
+        const profilPrecedent = profilActuel.previousSibling
+        if (profilPrecedent) {
+            hideElement(profilActuel)
+            showElement(profilPrecedent)
         }
-        return actions
+    })
+}
+
+function bindProfilSuivant(element) {
+    element.addEventListener('click', function (event) {
+        event.preventDefault()
+        const profilActuel = element.parentElement.parentElement
+        const profilSuivant = profilActuel.nextSibling
+        if (profilSuivant) {
+            hideElement(profilActuel)
+            showElement(profilSuivant)
+        }
     })
 }
 
@@ -71,7 +115,8 @@ function bindSuppression(element, app) {
         event.preventDefault()
         app.plausible('Suppression')
         const nom = element.dataset.deleteProfil
-        const description = nom === 'mes_infos' ? 'votre profil' : `le profil de ${nom}`
+        const description =
+            nom === 'mes_infos' ? 'vos réponses' : `les réponses de ${nom}`
         if (confirm(`Êtes-vous sûr·e de vouloir supprimer ${description} ?`)) {
             app.supprimerProfil(nom).then(() => {
                 app.chargerProfilActuel().then(() => {
