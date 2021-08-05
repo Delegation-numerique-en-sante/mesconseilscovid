@@ -325,12 +325,11 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
       **Depuis le 21 juillet**, il est exigé pour accéder aux lieux de loisirs et de culture rassemblant plus de 50 personnes.
 
-      <span class="nouveau">nouveau</span> **Début août**, son usage sera étendu aux cafés, restaurants, grands centres commerciaux, établissements médico-sociaux, hôpitaux, maisons de retraites, moyens de transports collectifs pour les longs trajets (trains, cars et avions).
+      <span class="nouveau">nouveau</span> **À partir du 9 août**, son usage sera étendu aux cafés, restaurants, grands centres commerciaux, établissements médico-sociaux, hôpitaux, maisons de retraites, moyens de transports collectifs pour les longs trajets (trains, cars et avions).
 
-      Pour certaines catégories de personnes, l’obligation du pass sanitaire sera repoussée au 30 août (cette date est actuellement débattue par les instances parlementaires) :
+      Pour les salarié(e)s des établissements recevant du public (dont les restaurants), le pass sanitaire ne sera demandé qu’à partir du **30 août 2021**.
 
-      * Les enfants de 12 à 17 ans.
-      * Les salarié(e)s des établissements recevant du public (dont restaurants) dans le cadre de leur activité afin de leur permettre de continuer à travailler en parallèle de leur processus de vaccination.
+      Pour les mineurs de 12 à 17 ans, le pass sanitaire ne sera demandé qu’à partir du **30 septembre 2021**.
 
     * Dans l’Espace européen, le « **Pass sanitaire européen** » (ou encore « <span lang="en">Digital Covid Certificate</span> » en anglais) facilite, depuis le 1<sup>er</sup> juillet, les voyages entre les pays membres.
 
