@@ -15,7 +15,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="Je veux des conseils personnalisés pour moi"'
+                'a.button >> text="C’est moi qui ai des symptômes"'
             )
             await Promise.all([
                 bouton.click(),
@@ -117,7 +117,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="Je veux des conseils personnalisés pour moi"'
+                'a.button >> text="C’est moi qui ai des symptômes"'
             )
             await Promise.all([
                 bouton.click(),
@@ -154,7 +154,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="Je veux des conseils personnalisés pour moi"'
+                'a.button >> text="C’est moi qui ai des symptômes"'
             )
             await Promise.all([
                 bouton.click(),
@@ -189,7 +189,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="Je veux des conseils personnalisés pour moi"'
+                'a.button >> text="C’est moi qui ai des symptômes"'
             )
             await Promise.all([
                 bouton.click(),
@@ -226,7 +226,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="Je veux des conseils personnalisés pour moi"'
+                'a.button >> text="C’est moi qui ai des symptômes"'
             )
             await Promise.all([
                 bouton.click(),
@@ -273,7 +273,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="Je veux des conseils personnalisés pour moi"'
+                'a.button >> text="C’est moi qui ai des symptômes"'
             )
             await Promise.all([
                 bouton.click(),
@@ -321,7 +321,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="Je veux des conseils personnalisés pour moi"'
+                'a.button >> text="C’est moi qui ai des symptômes"'
             )
             await Promise.all([
                 bouton.click(),
@@ -369,7 +369,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="Je veux des conseils personnalisés pour moi"'
+                'a.button >> text="C’est moi qui ai des symptômes"'
             )
             await Promise.all([
                 bouton.click(),
@@ -419,7 +419,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="Je veux des conseils personnalisés pour moi"'
+                'a.button >> text="C’est moi qui ai des symptômes"'
             )
             await Promise.all([
                 bouton.click(),
@@ -467,7 +467,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="Je veux des conseils personnalisés pour moi"'
+                'a.button >> text="C’est moi qui ai des symptômes"'
             )
             await Promise.all([
                 bouton.click(),
@@ -503,7 +503,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="Je veux des conseils personnalisés pour moi"'
+                'a.button >> text="C’est moi qui ai des symptômes"'
             )
             await Promise.all([
                 bouton.click(),

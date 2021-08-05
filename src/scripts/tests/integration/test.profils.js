@@ -11,7 +11,7 @@ describe('Profils', function () {
         // On clique sur le bouton pour un ou une proche.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="Des conseils pour un ou une proche"'
+                'a.button >> text="C’est un(e) proche qui a des symptômes"'
             )
             await Promise.all([
                 bouton.click(),
