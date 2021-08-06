@@ -47,27 +47,4 @@ describe('Thématiques', function () {
             u: 'http://localhost/pass-sanitaire-qr-code-voyages.html',
         })
     })
-
-    it('je veux des conseils personnalisés', async function () {
-        const page = this.test.page
-
-        let messages = recordConsoleMessages(page)
-        await page.goto('http://localhost:8080/conseils-pour-les-enfants.html')
-        await Promise.all([
-            page.click('.cta a >> text="Je veux des conseils personnalisés"'),
-            page.waitForNavigation({
-                url: '**/#vaccins',
-            }),
-        ])
-
-        assert.lengthOf(messages, 2)
-        assert.include(messages[0], {
-            n: 'pageview',
-            u: 'http://localhost/conseils-pour-les-enfants.html',
-        })
-        assert.include(messages[1], {
-            n: 'Je veux des conseils personnalisés',
-            u: 'http://localhost/conseils-pour-les-enfants.html',
-        })
-    })
 })
