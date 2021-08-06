@@ -7,19 +7,19 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html</loc>
+        <lastmod>2021-08-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://mesconseilscovid.sante.gouv.fr/j-ai-des-symptomes-covid.html</loc>
+        <lastmod>2021-08-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>https://mesconseilscovid.sante.gouv.fr/pass-sanitaire-qr-code-voyages.html</loc>
-        <lastmod>2021-08-06</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://mesconseilscovid.sante.gouv.fr/je-veux-me-faire-vacciner.html</loc>
-        <lastmod>2021-08-06</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://mesconseilscovid.sante.gouv.fr/conseils-pour-les-enfants.html</loc>
         <lastmod>2021-08-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -31,7 +31,7 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://mesconseilscovid.sante.gouv.fr/tests-de-depistage.html</loc>
+        <loc>https://mesconseilscovid.sante.gouv.fr/je-veux-me-faire-vacciner.html</loc>
         <lastmod>2021-08-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -43,7 +43,13 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html</loc>
+        <loc>https://mesconseilscovid.sante.gouv.fr/tests-de-depistage.html</loc>
+        <lastmod>2021-08-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://mesconseilscovid.sante.gouv.fr/conseils-pour-les-enfants.html</loc>
         <lastmod>2021-08-06</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
