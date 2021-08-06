@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-08-06
+
+* mise à jour du calendrier d’application du pass sanitaire
+* fusion du questionnaire dans une nouvelle page « J’ai des symptômes »
+
 ## 2021-08-03
 
 * mise à jour du confinement en Guadeloupe
