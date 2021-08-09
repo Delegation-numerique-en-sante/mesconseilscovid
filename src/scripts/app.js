@@ -251,4 +251,16 @@ export default class App {
                 encodeURIComponent(e.message)
         }
     }
+    premierDemarrageFormulaire() {
+        if (typeof this.profil.questionnaire_start_date === 'undefined') {
+            this.profil.questionnaire_start_date = new Date()
+            this.enregistrerProfilActuel()
+            this.plausible('Questionnaire commencé')
+            if (this.profil.estMonProfil()) {
+                this.plausible('Questionnaire commencé pour moi')
+            } else {
+                this.plausible('Questionnaire commencé pour un proche')
+            }
+        }
+    }
 }

@@ -7,7 +7,7 @@ import {
 export default function vaccins(page, app) {
     const form = page.querySelector('form')
 
-    premierDemarrageFormulaire(app)
+    app.premierDemarrageFormulaire()
 
     // Remplir le formulaire avec les données du profil.
     if (typeof app.profil.vaccins !== 'undefined') {
@@ -32,17 +32,4 @@ export default function vaccins(page, app) {
             app.goToNextPage('vaccins')
         })
     })
-}
-
-function premierDemarrageFormulaire(app) {
-    if (typeof app.profil.questionnaire_start_date === 'undefined') {
-        app.profil.questionnaire_start_date = new Date()
-        app.enregistrerProfilActuel()
-        app.plausible('Questionnaire commencé')
-        if (app.profil.estMonProfil()) {
-            app.plausible('Questionnaire commencé pour moi')
-        } else {
-            app.plausible('Questionnaire commencé pour un proche')
-        }
-    }
 }
