@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-08-09
+
+* mise à jour du délai de validité d’un test pour le Pass sanitaire
+* inversion des pages du questionnaire pour améliorer sa pertinence
+
 ## 2021-08-06
 
 * mise à jour du calendrier d’application du pass sanitaire
