@@ -1,5 +1,5 @@
-J’ai déjà eu la **Covid**
+J’ai déjà eu la **Covid** par le passé
 
 ---
 
-Cette personne a déjà eu la **Covid**
+Cette personne a déjà eu la **Covid** par le passé
