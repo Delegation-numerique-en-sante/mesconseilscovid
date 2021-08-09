@@ -347,7 +347,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     **3 types de justificatifs** peuvent constituer un « Pass sanitaire » grâce à un QR code intégré reconnu dans tout l’Espace européen :
 
-    - **Non-contamination** : le résultat négatif d’un test RT-PCR ou antigénique réalisé il y a moins de 48 h pour l’usage en France et 72 h pour le contrôle aux frontières.
+    - **Non-contamination** : le résultat négatif d’un test RT-PCR ou antigénique réalisé il y a moins de 72 h.
     - **Certificat de rétablissement** : le résultat positif d’un test RT-PCR de plus de 11 jours et de moins de 6 mois. Attention, le test sérologique (prise de sang) positif n’est pas un justificatif valable pour le Pass sanitaire.
     - **Certificat de vaccination** : une attestation de vaccination complète, c’est-à-dire que vous avez reçu toutes les doses nécessaires depuis au moins 2 semaines (Pfizer, Moderna, AstraZeneca) ou 4 semaines (Janssen).
 
