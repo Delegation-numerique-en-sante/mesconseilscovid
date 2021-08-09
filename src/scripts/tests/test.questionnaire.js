@@ -13,17 +13,17 @@ import Profil from '../profil'
 const questionnaire = new Questionnaire()
 
 describe('Numéros d’étapes', function () {
-    describe('Mes vaccins', function () {
+    describe('Mes symptômes', function () {
         it('Toujours étape 1', function () {
             const profil = new Profil('mes_infos', {})
-            assert.deepEqual(questionnaire._previousPages('vaccins', profil), [
+            assert.deepEqual(questionnaire._previousPages('symptomes', profil), [
                 'introduction',
             ])
-            assert.strictEqual(questionnaire.numeroEtape('vaccins', profil), 1)
+            assert.strictEqual(questionnaire.numeroEtape('symptomes', profil), 1)
         })
     })
     describe('Mon dépistage', function () {
-        it('Étape 4 si symptômes', function () {
+        it('Étape 2 si symptômes', function () {
             const profil = new Profil('mes_infos', {
                 vaccins: 'pas_encore',
                 covid_passee: false,
@@ -34,13 +34,11 @@ describe('Numéros d’étapes', function () {
             })
             assert.deepEqual(questionnaire._previousPages('depistage', profil), [
                 'symptomes',
-                'historique',
-                'vaccins',
                 'introduction',
             ])
-            assert.strictEqual(questionnaire.numeroEtape('depistage', profil), 4)
+            assert.strictEqual(questionnaire.numeroEtape('depistage', profil), 2)
         })
-        it('Étape 5 si pas de symptômes', function () {
+        it('Étape 3 si pas de symptômes', function () {
             const profil = new Profil('mes_infos', {
                 vaccins: 'pas_encore',
                 covid_passee: false,
@@ -51,103 +49,221 @@ describe('Numéros d’étapes', function () {
             assert.deepEqual(questionnaire._previousPages('depistage', profil), [
                 'contactarisque',
                 'symptomes',
-                'historique',
-                'vaccins',
                 'introduction',
             ])
-            assert.strictEqual(questionnaire.numeroEtape('depistage', profil), 5)
+            assert.strictEqual(questionnaire.numeroEtape('depistage', profil), 3)
         })
     })
 })
 
 describe('Préconditions', function () {
-    describe('Mes vaccins', function () {
-        it('ok d’aller aux vaccins en tout temps', function () {
-            const profil = new Profil('mes_infos', {})
-            assert.isUndefined(questionnaire.before('vaccins', profil))
-        })
-        it('ok d’aller aux vaccins même si déjà répondu', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-            })
-            assert.isUndefined(questionnaire.before('vaccins', profil))
-        })
-    })
-
-    describe('Mon historique', function () {
-        it('redirige vers question vaccins si réponse manquante', function () {
-            const profil = new Profil('mes_infos', {})
-            assert.strictEqual(questionnaire.before('historique', profil), 'vaccins')
-        })
-        it('ok d’aller à l’historique si réponse aux vaccins', function () {
-            const profil = new Profil('mes_infos', { vaccins: 'pas_encore' })
-            assert.isUndefined(questionnaire.before('historique', profil))
-        })
-        it('ok d’aller à l’historique même si déjà répondu', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-            })
-            assert.isUndefined(questionnaire.before('historique', profil))
-        })
-    })
-
     describe('Mes symptômes', function () {
-        it('redirige vers question historique si réponse manquante', function () {
-            const profil = new Profil('mes_infos', { vaccins: 'pas_encore' })
-            assert.strictEqual(questionnaire.before('symptomes', profil), 'historique')
-        })
-        it('ok d’aller aux symptômes si réponse à l’historique', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-            })
+        it('ok d’aller aux symptômes en tout temps', function () {
+            const profil = new Profil('mes_infos', {})
             assert.isUndefined(questionnaire.before('symptomes', profil))
         })
         it('ok d’aller aux symptômes même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-                symptomes_actuels: true,
+                symptomes_actuels: false,
                 symptomes_passes: false,
             })
             assert.isUndefined(questionnaire.before('symptomes', profil))
         })
     })
 
-    describe('Ma situation', function () {
-        it('redirige vers question contact à risque si réponse manquante', function () {
+    describe('Mes contacts à risque', function () {
+        it('redirige vers question symptômes si réponse manquante', function () {
+            const profil = new Profil('mes_infos', {})
+            assert.strictEqual(
+                questionnaire.before('contactarisque', profil),
+                'symptomes'
+            )
+        })
+        it('ok d’aller à la question contact à risque si réponse négative à symptômes actuels et symptômes passés', function () {
             const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
                 symptomes_actuels: false,
-                depistage: false,
+                symptomes_passes: false,
+            })
+            assert.isUndefined(questionnaire.before('contactarisque', profil))
+        })
+        it('ok d’aller à la question contact à risque si réponse négative à symptômes passés et positive mais autre à symptômes actuels', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+                symptomes_actuels_autre: true,
+                symptomes_passes: false,
+            })
+            assert.isUndefined(questionnaire.before('contactarisque', profil))
+        })
+        it('ok d’aller à la question contact à risque même si déjà répondu', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+            })
+            assert.isUndefined(questionnaire.before('contactarisque', profil))
+        })
+        it('redirige vers symptômes si réponse positive à symptômes actuels', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
                 symptomes_passes: false,
             })
             assert.strictEqual(
-                questionnaire.before('situation', profil),
+                questionnaire.before('contactarisque', profil),
+                'symptomes'
+            )
+        })
+        it('redirige vers symptômes si réponse positive à symptômes passés', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: true,
+            })
+            assert.strictEqual(
+                questionnaire.before('contactarisque', profil),
+                'symptomes'
+            )
+        })
+    })
+
+    describe('Mon dépistage', function () {
+        it('redirige vers question contact à risque si pas de symptômes et réponse manquante', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+            })
+            assert.strictEqual(
+                questionnaire.before('depistage', profil),
                 'contactarisque'
             )
         })
-        it('ok d’aller à la question situation si réponse à contact à risque', function () {
+        it('ok d’aller à la question dépistage si symptômes actuels et réponse contact à risque manquante', function () {
             const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
+                symptomes_actuels: true,
+                symptomes_actuels_autre: false,
+                symptomes_passes: false,
+                _symptomes_start_date: '2020-07-09T14:03:41.000Z',
+            })
+            assert.isUndefined(questionnaire.before('depistage', profil))
+        })
+        it('ok d’aller à la question dépistage si réponse contact à risque négative', function () {
+            const profil = new Profil('mes_infos', {
                 symptomes_actuels: false,
-                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
+            })
+            assert.isUndefined(questionnaire.before('depistage', profil))
+        })
+        it('ok d’aller à la question dépistage si réponse contact à risque positive', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: true,
+            })
+            assert.isUndefined(questionnaire.before('depistage', profil))
+        })
+        it('ok d’aller à la question dépistage même si déjà répondu', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+                depistage: false,
+            })
+            assert.isUndefined(questionnaire.before('depistage', profil))
+        })
+    })
+
+    describe('Mon historique', function () {
+        it('redirige vers question dépistage si réponse manquante', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+            })
+            assert.strictEqual(questionnaire.before('historique', profil), 'depistage')
+        })
+        it('ok d’aller à l’historique si réponse au dépistage', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+                depistage: false,
+            })
+            assert.isUndefined(questionnaire.before('historique', profil))
+        })
+        it('ok d’aller à l’historique même si déjà répondu', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+                depistage: false,
+                covid_passee: false,
+            })
+            assert.isUndefined(questionnaire.before('historique', profil))
+        })
+    })
+
+    describe('Mes vaccins', function () {
+        it('redirige vers question historique si réponse manquante', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+                depistage: false,
+            })
+            assert.strictEqual(questionnaire.before('vaccins', profil), 'historique')
+        })
+        it('ok d’aller aux vaccins si réponse à l’historique', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+                depistage: false,
+                covid_passee: false,
+            })
+            assert.isUndefined(questionnaire.before('vaccins', profil))
+        })
+        it('ok d’aller aux vaccins même si déjà répondu', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+                depistage: false,
+                covid_passee: false,
+                vaccins: 'pas_encore',
+            })
+            assert.isUndefined(questionnaire.before('vaccins', profil))
+        })
+    })
+
+    describe('Ma situation', function () {
+        it('redirige vers question vaccins si réponse manquante', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+                depistage: false,
+                covid_passee: false,
+            })
+            assert.strictEqual(questionnaire.before('situation', profil), 'vaccins')
+        })
+        it('ok d’aller à la question situation si réponse à vaccins', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+                symptomes_passes: false,
+                contact_a_risque: false,
+                depistage: false,
+                covid_passee: false,
+                vaccins: 'pas_encore',
             })
             assert.isUndefined(questionnaire.before('situation', profil))
         })
         it('ok d’aller à la question situation même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
                 symptomes_actuels: false,
-                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
+                depistage: false,
+                covid_passee: false,
+                vaccins: 'pas_encore',
                 departement: '80',
                 foyer_autres_personnes: false,
                 foyer_enfants: false,
@@ -161,23 +277,23 @@ describe('Préconditions', function () {
     describe('Ma santé', function () {
         it('redirige vers question situation si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
                 symptomes_actuels: false,
-                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
+                depistage: false,
+                covid_passee: false,
+                vaccins: 'pas_encore',
             })
             assert.strictEqual(questionnaire.before('sante', profil), 'situation')
         })
         it('ok d’aller à la question sante si réponse à situation', function () {
             const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
                 symptomes_actuels: false,
-                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
+                depistage: false,
+                covid_passee: false,
+                vaccins: 'pas_encore',
                 departement: '80',
                 foyer_autres_personnes: false,
                 foyer_enfants: false,
@@ -188,12 +304,12 @@ describe('Préconditions', function () {
         })
         it('ok d’aller à la question santé même si déjà répondu', function () {
             const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
                 symptomes_actuels: false,
-                depistage: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
+                depistage: false,
+                covid_passee: false,
+                vaccins: 'pas_encore',
                 departement: '80',
                 foyer_autres_personnes: false,
                 foyer_enfants: false,
@@ -219,126 +335,15 @@ describe('Préconditions', function () {
         })
     })
 
-    describe('Mes contacts à risque', function () {
-        it('redirige vers question symptômes si réponse manquante', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-                symptomes_actuels: false,
-            })
-            assert.strictEqual(
-                questionnaire.before('contactarisque', profil),
-                'symptomes'
-            )
-        })
-        it('ok d’aller à la question contact à risque si réponse négative à symptômes actuels et symptômes passés', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-                symptomes_actuels: false,
-                symptomes_passes: false,
-            })
-            assert.isUndefined(questionnaire.before('contactarisque', profil))
-        })
-        it('ok d’aller à la question contact à risque si réponse négative à symptômes passés et positive mais autre à symptômes actuels', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-                symptomes_actuels: true,
-                symptomes_actuels_autre: true,
-                symptomes_passes: false,
-            })
-            assert.isUndefined(questionnaire.before('contactarisque', profil))
-        })
-        it('ok d’aller à la question contact à risque même si déjà répondu', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-                symptomes_actuels: false,
-                symptomes_passes: false,
-                contact_a_risque: false,
-            })
-            assert.isUndefined(questionnaire.before('contactarisque', profil))
-        })
-        it('redirige vers symptômes si réponse positive à symptômes passés', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-                symptomes_actuels: false,
-                symptomes_passes: true,
-            })
-            assert.strictEqual(
-                questionnaire.before('contactarisque', profil),
-                'symptomes'
-            )
-        })
-    })
-
-    describe('Mon dépistage', function () {
-        it('redirige vers question contact à risque si réponse manquante', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-                symptomes_actuels: false,
-                symptomes_passes: false,
-            })
-            assert.strictEqual(
-                questionnaire.before('depistage', profil),
-                'contactarisque'
-            )
-        })
-        it('redirige vers symptômes si réponse positive à symptômes actuels', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-                symptomes_actuels: true,
-                symptomes_actuels_autre: false,
-            })
-            assert.strictEqual(questionnaire.before('depistage', profil), 'symptomes')
-        })
-        it('ok d’aller à la question dépistage si réponse contact à risque négative', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-                symptomes_actuels: false,
-                symptomes_passes: false,
-                contact_a_risque: false,
-            })
-            assert.isUndefined(questionnaire.before('depistage', profil))
-        })
-        it('ok d’aller à la question dépistage si réponse contact à risque positive', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-                symptomes_actuels: false,
-                symptomes_passes: false,
-                contact_a_risque: true,
-                contact_a_risque_variante: 'aucune',
-            })
-            assert.isUndefined(questionnaire.before('depistage', profil))
-        })
-        it('ok d’aller à la question dépistage même si déjà répondu', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-                symptomes_actuels: false,
-                symptomes_passes: false,
-                contact_a_risque: false,
-                depistage: false,
-            })
-            assert.isUndefined(questionnaire.before('depistage', profil))
-        })
-    })
-
     describe('Mes conseils', function () {
         it('ok d’aller aux conseils si toutes les réponses', function () {
             const profil = new Profil('mes_infos', {
-                depistage: false,
-                vaccins: 'pas_encore',
-                covid_passee: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
+                depistage: false,
+                covid_passee: false,
+                vaccins: 'pas_encore',
                 departement: '80',
                 foyer_autres_personnes: false,
                 foyer_enfants: false,
@@ -362,18 +367,27 @@ describe('Préconditions', function () {
             })
             assert.isUndefined(questionnaire.before('conseils', profil))
         })
+        it('redirige vers question symptômes si réponse manquante', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: false,
+            })
+            assert.strictEqual(questionnaire.before('conseils', profil), 'symptomes')
+        })
+        it('redirige vers question symptômes si symptômes actuels autres', function () {
+            const profil = new Profil('mes_infos', {
+                symptomes_actuels: true,
+                symptomes_actuels_autre: true,
+            })
+            assert.strictEqual(questionnaire.before('conseils', profil), 'symptomes')
+        })
         it('redirige vers symptômes si symptômes actuels et réponses manquantes', function () {
             const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
                 symptomes_actuels: true,
             })
             assert.strictEqual(questionnaire.before('conseils', profil), 'symptomes')
         })
         it('redirige vers symptômes si symptômes passés et réponses manquantes', function () {
             const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
                 symptomes_actuels: false,
                 symptomes_passes: true,
             })
@@ -381,8 +395,6 @@ describe('Préconditions', function () {
         })
         it('redirige vers question contact à risque si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
             })
@@ -391,43 +403,24 @@ describe('Préconditions', function () {
                 'contactarisque'
             )
         })
-        it('redirige vers question symptômes si réponse manquante', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-                symptomes_actuels: false,
-            })
-            assert.strictEqual(questionnaire.before('conseils', profil), 'symptomes')
-        })
-        it('redirige vers question symptômes si symptômes actuels autres', function () {
-            const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
-                covid_passee: false,
-                symptomes_actuels: true,
-                symptomes_actuels_autre: true,
-            })
-            assert.strictEqual(questionnaire.before('conseils', profil), 'symptomes')
-        })
         it('redirige vers question vaccins si réponse manquante', function () {
-            const profil = new Profil('mes_infos', {})
-            assert.strictEqual(questionnaire.before('conseils', profil), 'vaccins')
-        })
-        it('redirige vers question symptômes si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
-                vaccins: 'pas_encore',
+                contact_a_risque: false,
                 covid_passee: false,
+                depistage: false,
                 symptomes_actuels: false,
+                symptomes_passes: false,
             })
-            assert.strictEqual(questionnaire.before('conseils', profil), 'symptomes')
+            assert.strictEqual(questionnaire.before('conseils', profil), 'vaccins')
         })
         it('redirige vers question situation si réponse manquante', function () {
             const profil = new Profil('mes_infos', {
-                depistage: false,
-                vaccins: 'pas_encore',
-                covid_passee: false,
                 symptomes_actuels: false,
                 symptomes_passes: false,
                 contact_a_risque: false,
+                depistage: false,
+                covid_passee: false,
+                vaccins: 'pas_encore',
                 departement: '80',
                 foyer_autres_personnes: false,
                 foyer_enfants: false,
@@ -786,7 +779,7 @@ describe('Préconditions', function () {
             })
             assert.strictEqual(
                 beforeSuiviIntroduction(profil, questionnaire),
-                'vaccins'
+                'symptomes'
             )
         })
         it('redirige suivi symptômes vers algo orientation si profil non complet', function () {
@@ -813,7 +806,7 @@ describe('Préconditions', function () {
                 antecedent_chronique_autre: false,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
-            assert.strictEqual(beforeSuiviSymptomes(profil, questionnaire), 'vaccins')
+            assert.strictEqual(beforeSuiviSymptomes(profil, questionnaire), 'symptomes')
         })
         it('redirige suivi historique vers algo orientation si profil non complet', function () {
             const profil = new Profil('mes_infos', {
@@ -839,7 +832,10 @@ describe('Préconditions', function () {
                 antecedent_chronique_autre: false,
                 _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             })
-            assert.strictEqual(beforeSuiviHistorique(profil, questionnaire), 'vaccins')
+            assert.strictEqual(
+                beforeSuiviHistorique(profil, questionnaire),
+                'symptomes'
+            )
         })
         it('ok d’aller au suivi symptômes sans date de début symptômes ni symptômes (asymptomatique)', function () {
             const profil = new Profil('mes_infos', {

@@ -19,27 +19,27 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
         // Remplir le questionnaire.
         await remplirQuestionnaire(page, {
-            vaccins: 'pas_encore',
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: [],
             depistage: false,
+            vaccins: 'pas_encore',
             departement: '80',
             enfants: true,
+            activitePro: true,
             age: '42',
             taille: '165',
             poids: '70',
             grossesse: false,
-            activitePro: true,
         })
 
-        await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:vaccins')
+        await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:symptomes')
 
         // Conseils.
         {
@@ -121,7 +121,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -140,7 +140,7 @@ describe('Parcours', function () {
             activitePro: true,
         })
 
-        await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:vaccins')
+        await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:symptomes')
 
         await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
     })
@@ -158,7 +158,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -193,7 +193,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -230,7 +230,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -277,7 +277,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -325,7 +325,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -373,7 +373,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -423,7 +423,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -471,7 +471,7 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
@@ -507,12 +507,12 @@ describe('Parcours', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
             await page.waitForSelector('#page.ready')
             assert.equal(
                 await page.title(),
-                'Mon statut actuel de vaccination contre la Covid (étape 1) — Mes Conseils Covid — Isolement, tests, vaccins, attestations, contact à risque…'
+                'Mon état actuel (étape 1) — Mes Conseils Covid — Isolement, tests, vaccins, attestations, contact à risque…'
             )
         }
 

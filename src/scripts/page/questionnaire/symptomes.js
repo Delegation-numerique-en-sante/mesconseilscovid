@@ -13,6 +13,8 @@ import AlgorithmeOrientation from '../../algorithme/orientation'
 export default function symptomes(page, app) {
     const form = page.querySelector('form')
 
+    app.premierDemarrageFormulaire()
+
     // Selon le choix radio ça affiche le choix des symptômes et/ou
     // la saisie de la date.
     const statuts = form.elements['symptomes_actuels_statuts']

@@ -44,8 +44,6 @@ export async function remplirQuestionnaire(page, choix) {
     if (typeof choix.nom !== 'undefined') {
         await remplirNom(page, choix.nom)
     }
-    await remplirVaccins(page, choix.vaccins)
-    await remplirHistorique(page, choix.covid_passee, choix.nbMois)
     await remplirSymptomes(
         page,
         choix.symptomesActuels,
@@ -67,6 +65,8 @@ export async function remplirQuestionnaire(page, choix) {
         choix.depistageType,
         choix.depistageResultat
     )
+    await remplirHistorique(page, choix.covid_passee, choix.nbMois)
+    await remplirVaccins(page, choix.vaccins)
     await remplirSituation(page, choix.departement, choix.enfants, choix.activitePro)
     await remplirSante(
         page,
@@ -81,7 +81,10 @@ export async function remplirQuestionnaire(page, choix) {
 async function remplirNom(page, nom) {
     await page.fill('#page.ready #name', nom)
     let bouton = await page.waitForSelector('#page.ready >> text="Continuer"')
-    await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#vaccins' })])
+    await Promise.all([
+        bouton.click(),
+        page.waitForNavigation({ url: '**/#symptomes' }),
+    ])
 }
 
 async function remplirSituation(page, departement, enfants, activitePro) {
@@ -162,7 +165,7 @@ async function remplirDepistage(page, depistage, date, type, resultat) {
     let bouton = await page.waitForSelector(`#page.ready >> text=${text}`)
     await Promise.all([
         bouton.click(),
-        page.waitForNavigation({ url: `**/#situation` }),
+        page.waitForNavigation({ url: `**/#historique` }),
     ])
 }
 
@@ -175,7 +178,7 @@ async function remplirVaccins(page, vaccins) {
     let bouton = await page.waitForSelector(`#page.ready >> text="Continuer"`)
     await Promise.all([
         bouton.click(),
-        page.waitForNavigation({ url: `**/#historique` }),
+        page.waitForNavigation({ url: `**/#situation` }),
     ])
 }
 
@@ -199,10 +202,7 @@ async function remplirHistorique(page, covid_passee, nbMois) {
     }
 
     let bouton = await page.waitForSelector(`#page.ready >> text=${text}`)
-    await Promise.all([
-        bouton.click(),
-        page.waitForNavigation({ url: `**/#symptomes` }),
-    ])
+    await Promise.all([bouton.click(), page.waitForNavigation({ url: `**/#vaccins` })])
 }
 
 async function remplirSymptomes(page, symptomesActuels, symptomesPasses, date) {

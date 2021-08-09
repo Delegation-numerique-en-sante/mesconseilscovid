@@ -19,7 +19,7 @@ describe('Suivi', function () {
             )
             await Promise.all([
                 bouton.click(),
-                page.waitForNavigation({ url: '**/#vaccins' }),
+                page.waitForNavigation({ url: '**/#symptomes' }),
             ])
         }
 
