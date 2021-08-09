@@ -16,11 +16,11 @@ export function beforeSuiviHistorique(profil, questionnaire) {
 
 // Représentation de la structure du questionnaire d’orientation.
 export const ORDRE = [
-    'vaccins',
-    'historique',
     'symptomes',
     'contactarisque',
     'depistage',
+    'historique',
+    'vaccins',
     'situation',
     'sante',
 ]
@@ -30,20 +30,8 @@ export const TRANSITIONS = {
         previous: { introduction: () => true },
         next: { symptomes: (profil) => profil.nom },
     },
-    vaccins: {
-        previous: { introduction: () => true },
-        next: {
-            historique: (profil) => profil.isVaccinsComplete(),
-        },
-    },
-    historique: {
-        previous: { vaccins: () => true },
-        next: {
-            symptomes: (profil) => profil.isHistoriqueComplete(),
-        },
-    },
     symptomes: {
-        previous: { historique: () => true },
+        previous: { introduction: () => true },
         next: {
             depistage: (profil) =>
                 profil.isSymptomesComplete() &&
@@ -70,12 +58,24 @@ export const TRANSITIONS = {
             contactarisque: (profil) => profil.isContactARisqueComplete(),
         },
         next: {
-            situation: (profil) => profil.isDepistageComplete(),
+            historique: (profil) => profil.isDepistageComplete(),
+        },
+    },
+    historique: {
+        previous: { depistage: () => true },
+        next: {
+            vaccins: (profil) => profil.isHistoriqueComplete(),
+        },
+    },
+    vaccins: {
+        previous: { historique: () => true },
+        next: {
+            situation: (profil) => profil.isVaccinsComplete(),
         },
     },
     situation: {
         previous: {
-            depistage: (profil) => profil.isDepistageComplete(),
+            vaccins: () => true,
         },
         next: {
             sante: (profil) => profil.isSituationComplete(),

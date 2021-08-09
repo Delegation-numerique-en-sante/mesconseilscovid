@@ -7,8 +7,6 @@ import {
 export default function vaccins(page, app) {
     const form = page.querySelector('form')
 
-    app.premierDemarrageFormulaire()
-
     // Remplir le formulaire avec les données du profil.
     if (typeof app.profil.vaccins !== 'undefined') {
         form.querySelector('#vaccins_radio_' + app.profil.vaccins).checked = true
