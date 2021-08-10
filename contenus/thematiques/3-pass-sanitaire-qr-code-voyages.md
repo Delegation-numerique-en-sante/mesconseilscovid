@@ -6,7 +6,7 @@
 
 <div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
 
-<big>Pass sanitaire européen, certificat de vaccination, attestations, QR code… MesConseilsCovid vous propose une synthèse des informations importantes.</big>
+<p class="big">Pass sanitaire européen, certificat de vaccination, attestations, QR code… MesConseilsCovid vous propose une synthèse des informations importantes.</p>
 
 ## Comment faire pour partir en voyage à l’étranger ?
 

@@ -6,9 +6,9 @@
 
 <div id="conseils-personnels" class="conseils">
 
-<big>Votre conjoint⸱e, enfant, colocataire… est positif à la Covid et vous ne présentez pas de symptômes ? MesConseilsCovid vous accompagne pour savoir quelle conduite à tenir lorsqu’on est cas contact d’une personne qui partage le même lieu de vie.</big>
+<p class="big">Votre conjoint⸱e, enfant, colocataire… est positif à la Covid et vous ne présentez pas de symptômes ? MesConseilsCovid vous accompagne pour savoir quelle conduite à tenir lorsqu’on est cas contact d’une personne qui partage le même lieu de vie.</p>
 
-<big>Voici ce que nous vous conseillons de faire :</big>
+<p class="big">Voici ce que nous vous conseillons de faire :</p>
 
 ## 1. Faites un test et isolez-vous
 
@@ -49,7 +49,7 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 
 ## Comment cohabiter avec une personne positive à la Covid ?
 
-<big>Pour éviter d’être contaminé⸱e par une personne qui vit sous le même toit, il faut respecter autant que possible une certaine discipline, lorsque cela est possible :</big>
+<p class="big">Pour éviter d’être contaminé⸱e par une personne qui vit sous le même toit, il faut respecter autant que possible une certaine discipline, lorsque cela est possible :</p>
 
 ### Ne pas partager l’espace
 

@@ -6,9 +6,7 @@
 
 <div id="conseils-personnels" class="conseils">
 
-<p>
-<big>Vous avez passé du temps avec une personne <b>positive à la Covid</b> ? Vous avez été contacté·e par l’<b>Assurance Maladie</b> ? Vous avez reçu une notification « Exposition à risque » de l’application <b>TousAntiCovid</b> ?</big>
-</p>
+<p class="big">Vous avez passé du temps avec une personne <b>positive à la Covid</b> ? Vous avez été contacté·e par l’<b>Assurance Maladie</b> ? Vous avez reçu une notification « Exposition à risque » de l’application <b>TousAntiCovid</b> ?</p>
 
 <div class="conseil">
 
@@ -23,7 +21,7 @@
 
 .. summary:: vous n’êtes pas vacciné(e) (schéma vaccinal incomplet)
 
-<p><big>Voici ce que nous vous conseillons de faire :</big></p>
+<p class="big">Voici ce que nous vous conseillons de faire :</p>
 
 ### 1. Vous isoler
 
@@ -64,7 +62,7 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 
 .. summary:: vous êtes vacciné(e) (schéma vaccinal complet)
 
-<p><big>Voici ce que nous vous conseillons de faire :</big></p>
+<p class="big">Voici ce que nous vous conseillons de faire :</p>
 
 ### 1. Faire un test
 
