@@ -6,9 +6,7 @@
 
 <div id="conseils-personnels" class="conseils">
 
-<p>
-<big>Vous avez de la <strong>fièvre</strong> ? Une <strong>fatigue</strong> intense ? Des difficulés à <strong>respirer</strong> ? Vous avez peut-être la Covid. Nous vous invitons à faire notre <strong>questionnaire personnalisé rapide</strong> pour obtenir des réponses à votre situation particulière :</big>
-</p>
+<p class="big">Vous avez de la <strong>fièvre</strong> ? Une <strong>fatigue</strong> intense ? Des difficulés à <strong>respirer</strong> ? Vous avez peut-être la Covid. Nous vous invitons à faire notre <strong>questionnaire personnalisé rapide</strong> pour obtenir des réponses à votre situation particulière :</p>
 
 ## Obtenez des conseils adaptés à votre situation en quelques clics
 

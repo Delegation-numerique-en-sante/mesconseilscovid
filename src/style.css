@@ -183,6 +183,9 @@ legend h1 {
     margin: 1rem 0;
     max-width: 80ch;
 }
+.block p.big {
+    font-size: 1.2rem;
+}
 .block ul {
     padding-left: 2rem;
     margin-bottom: 2rem;

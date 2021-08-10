@@ -6,7 +6,7 @@
 
 <div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
 
-<big>Vous souhaitez vous faire vacciner contre la Covid ? Voici des réponses à quelques questions courantes sur l’immunité, les effets secondaires et vos antécédents avec la Covid :</big>
+<p class="big">Vous souhaitez vous faire vacciner contre la Covid ? Voici des réponses à quelques questions courantes sur l’immunité, les effets secondaires et vos antécédents avec la Covid :</p>
 
 .. question:: Quand pourrai-je me faire vacciner ?
 
