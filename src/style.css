@@ -310,18 +310,18 @@ legend h1 {
     margin: 0 12px 1rem 12px;
     max-width: 285px;
 }
-.thematiques .cards > li.highlighted {
+.thematiques .cards > li.hero {
     order: -1;
 }
 @media only screen and (min-width: 658px) {
-    .thematiques .cards > li.highlighted {
+    .thematiques .cards > li.hero {
         width: calc((2 * 285px) + 24px);
         min-width: calc((2 * 285px) + 24px);
         max-width: calc((2 * 285px) + 24px);
     }
 }
 @media only screen and (min-width: 998px) {
-    .thematiques .cards > li.highlighted {
+    .thematiques .cards > li.hero {
         width: calc(100% - 24px);
         min-width: calc(100% - 24px);
         max-width: calc(100% - 24px);
@@ -350,25 +350,18 @@ legend h1 {
 }
 .thematiques .card-actions {
     padding: 0 2rem;
-    margin: 0 auto 2rem auto;
-    max-width: 24rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.thematiques .card-actions .actions-profil:first-of-type .prev,
-.thematiques .card-actions .actions-profil:last-of-type .next {
-    visibility: hidden;
+.thematiques .actions-profil {
+    margin: 0 1rem 3rem;
+    max-width: 230px;
 }
-.thematiques .card-actions nav {
-    margin-bottom: 1rem;
-}
-.thematiques .card-actions nav .nom {
+.thematiques .card-actions .nom {
     font-weight: bold;
-}
-.thematiques .card-actions nav a {
-    text-decoration: none;
-    padding: 0 0.75rem;
-}
-.thematiques .card-actions nav > * {
-    display: inline;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 .thematiques .card-actions .button {
     margin-top: 0;

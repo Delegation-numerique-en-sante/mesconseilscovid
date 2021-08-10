@@ -841,8 +841,10 @@ export default class Profil {
             `
         } else {
             const label = this.isEmpty() ? 'Démarrer' : 'Continuer'
+            const outlined =
+                this.estMonProfil() && !this.suivi_active ? '' : 'button-outline'
             mainButton = safeHtml`
-                <a class="button button-full-width conseils-link"
+                <a class="button ${outlined} button-full-width conseils-link"
                     data-set-profil="${this.nom}" href="#${questionnaire.firstPage}"
                     >${label} ${possessifMasculinSingulier} questionnaire</a>
             `
