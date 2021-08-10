@@ -3,7 +3,7 @@ import {
     createElementFromHTML,
     hideElement,
     showElement,
-    showSelector,
+    hideSelector,
 } from '../affichage'
 import { navigueVersUneThematique } from './thematique'
 
@@ -14,23 +14,23 @@ export default function introduction(page, app) {
     showElement(header.querySelector('.js-profil-empty'))
     hideElement(header.querySelector('.js-profil-full'))
 
+    metEnAvantCarteSymptomes(element, app)
+    navigueVersUneThematique(app, 'Navigue vers une thématique depuis l’accueil')
+}
+
+function metEnAvantCarteSymptomes(element, app) {
     const card = element.querySelector('.thematiques .cards .j-ai-des-symptomes-covid')
     app.stockage.getProfils().then((noms) => {
         if (noms.length > 0) {
             updateCardActions(card, noms, app).then(() => {
-                card.classList.add('highlighted')
-                app.stockage.getProfilActuel().then((nom) => {
-                    const index = noms.indexOf(nom || 'mes_infos') + 1
-                    showSelector(card, `.actions-profil:nth-of-type(${index})`)
-                })
-                if (noms.length > 1 || noms[0] !== 'mes_infos') {
-                    Array.from(card.querySelectorAll('nav')).forEach(showElement)
+                card.classList.add('hero')
+                // On cache le nom si ce n’est que mon profil.
+                if (noms.length === 1 && noms[0] === 'mes_infos') {
+                    hideSelector(card, '.nom')
                 }
             })
         }
     })
-
-    navigueVersUneThematique(app, 'Navigue vers une thématique depuis l’accueil')
 }
 
 function updateCardActions(card, noms, app) {
@@ -52,19 +52,14 @@ function updateCardActions(card, noms, app) {
 
 function renderProfilActions(profil, app) {
     return createElementFromHTML(
-        `<div class="actions-profil" hidden>
-            <nav hidden>
-                <a href="#" class="prev">◀</a><span class="nom">${profil.affichageNom()}</span><a href="#" class="next">▶</a>
-            </nav>
+        `<div class="actions-profil">
+            <p class="nom">${profil.affichageNom()}</p>
             ${profil.renderButtons(app.questionnaire)}
         </div>`
     )
 }
 
 function bindProfilActions(element, app) {
-    bindProfilPrecedent(element.querySelector('nav .prev'))
-    bindProfilSuivant(element.querySelector('nav .next'))
-
     const conseilsLink = element.querySelector('.conseils-link')
     if (conseilsLink) {
         conseilsLink.setAttribute('href', '#conseils')
@@ -75,30 +70,6 @@ function bindProfilActions(element, app) {
     })
 
     bindSuppression(element.querySelector('[data-delete-profil]'), app)
-}
-
-function bindProfilPrecedent(element) {
-    element.addEventListener('click', function (event) {
-        event.preventDefault()
-        const profilActuel = element.parentElement.parentElement
-        const profilPrecedent = profilActuel.previousSibling
-        if (profilPrecedent) {
-            hideElement(profilActuel)
-            showElement(profilPrecedent)
-        }
-    })
-}
-
-function bindProfilSuivant(element) {
-    element.addEventListener('click', function (event) {
-        event.preventDefault()
-        const profilActuel = element.parentElement.parentElement
-        const profilSuivant = profilActuel.nextSibling
-        if (profilSuivant) {
-            hideElement(profilActuel)
-            showElement(profilSuivant)
-        }
-    })
 }
 
 function bindSetProfil(element, app) {
