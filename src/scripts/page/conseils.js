@@ -41,12 +41,16 @@ export default function conseils(page, app) {
     }
 
     // Activer / désactiver l’auto-suivi pour ce profil ?
-    if (algoOrientation.recommandeAutoSuivi() && !app.profil.suivi_active) {
-        app.profil.suivi_active = true
-        app.enregistrerProfilActuel()
-    } else if (app.profil.suivi_active && !app.profil.hasSuiviStartDate()) {
-        app.profil.suivi_active = false
-        app.enregistrerProfilActuel()
+    if (algoOrientation.recommandeAutoSuivi()) {
+        if (!app.profil.suivi_active) {
+            app.profil.suivi_active = true
+            app.enregistrerProfilActuel()
+        }
+    } else {
+        if (app.profil.suivi_active && !app.profil.hasSuiviStartDate()) {
+            app.profil.suivi_active = false
+            app.enregistrerProfilActuel()
+        }
     }
 
     // Display appropriate conseils.
