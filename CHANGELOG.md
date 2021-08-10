@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-08-10
+
+* meilleur rendu des multiples profils en page d’accueil
+* mise à jour relative aux couvre-feux et confinements dans les DROM
+* mise à jour de la liste des pays verts et rouges
+
 ## 2021-08-09
 
 * mise à jour du délai de validité d’un test pour le Pass sanitaire
