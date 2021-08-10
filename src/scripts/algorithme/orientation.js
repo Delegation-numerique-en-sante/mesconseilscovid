@@ -590,6 +590,12 @@ export default class AlgorithmeOrientation {
         } else if (this.profil.departement === '974') {
             blockNames.push('conseils-couvre-feu')
             blockNames.push('conseils-couvre-feu-974')
+        } else if (this.profil.departement === '977') {
+            blockNames.push('conseils-couvre-feu')
+            blockNames.push('conseils-couvre-feu-977')
+        } else if (this.profil.departement === '978') {
+            blockNames.push('conseils-couvre-feu')
+            blockNames.push('conseils-couvre-feu-978')
         } else {
             blockNames.push('conseils-couvre-feu')
             blockNames.push('conseils-couvre-feu-leve')

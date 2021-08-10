@@ -950,5 +950,27 @@ describe('Blocs d’informations additionnels', function () {
                 'conseils-couvre-feu-973',
             ])
         })
+        it('À Saint-Barth, c’est un couvre-feu', function () {
+            var profil = new Profil('mes_infos', {
+                departement: '977',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+                'conseils-couvre-feu',
+                'conseils-couvre-feu-977',
+            ])
+        })
+        it('À Saint-Martin, c’est un couvre-feu', function () {
+            var profil = new Profil('mes_infos', {
+                departement: '978',
+            })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vieQuotidienneBlockNamesToDisplay(), [
+                'conseils-vie-quotidienne',
+                'conseils-couvre-feu',
+                'conseils-couvre-feu-978',
+            ])
+        })
     })
 })
