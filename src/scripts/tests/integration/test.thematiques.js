@@ -9,7 +9,7 @@ describe('Thématiques', function () {
 
         assert.equal(
             await page.title(),
-            'Conseils pour les mineurs — Mes Conseils Covid — Isolement, tests, vaccins, attestations, contact à risque…'
+            'Conseils pour les mineurs : vaccination et rentrée — Mes Conseils Covid — Isolement, tests, vaccins, attestations, contact à risque…'
         )
     })
 

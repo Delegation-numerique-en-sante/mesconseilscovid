@@ -1,4 +1,4 @@
-# Conseils pour les mineurs
+# Conseils pour les mineurs : vaccination et rentrée
 
 <div class="illustration">
     <img src="illustrations/pediatriegeneral.svg" alt="">
@@ -16,7 +16,8 @@
 
 <div class="conseil">
 
-Depuis le 15 juin 2021, **la vaccination est ouverte aux enfants de 12 ans et plus**, sans condition médicale.
+**La vaccination est ouverte aux enfants de 12 ans et plus**, sans condition médicale.
+
 </div>
 
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
@@ -77,6 +78,47 @@ Depuis le 15 juin 2021, **la vaccination est ouverte aux enfants de 12 ans et
     Par ailleurs, le ou la mineur(e) non-vacciné(e) accompagnant ses parents vaccinés lors d’un voyage bénéficiera des mêmes facilités qu’eux. Par exemple, un(e) mineur(e) non-vacciné(e) pourra accompagner ses parents vaccinés lors d’un voyage dans un [pays classé orange](https://www.gouvernement.fr/voyager-depuis-et-vers-l-etranger-mode-d-emploi) sans justifier d’un motif impérieux pour s’y rendre.
 
     Pour plus d’informations sur les voyages et le pass sanitaire en général, consultez notre [page thématique](https://mesconseilscovid.sante.gouv.fr/pass-sanitaire-qr-code-voyages.html).
+
+
+## Rentrée scolaire 2021-2022
+
+<div class="conseil">
+
+Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfants et les **mesures prévues** pour le déroulement de la nouvelle année scolaire **à l’école, au collège et au lycée**.
+
+</div>
+
+.. question:: Est-ce que la classe de mon enfant sera ouverte en septembre ?
+    :level: 3
+
+    Pour les élèves en **école primaire** ainsi que ceux des classes de **6<sup>e</sup> et 5<sup>e</sup>**, un accueil en **présentiel** sera assuré.
+
+    Pour les élèves de **4<sup>e</sup>, de 3<sup>e</sup> et de lycée**, un accueil en **présentiel** est privilégié. Un enseignement **hybride** pourra être mis en place si la situation sanitaire l’exige. Les classes pourront être ouvertes ou partiellement ouvertes en fonction de la sévérité de l’épidémie à l’échelle nationale ou locale.
+
+.. question:: Que se passe-t-il si un élève est positif dans la classe de mon enfant ?
+    :level: 3
+
+    Dans les écoles, la règle de la **fermeture de la classe pour une durée de 7 jours dès le premier cas positif** continuera à s’appliquer.
+
+    Dans les collèges et les lycées, un protocole de **contact-tracing** sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif et évincer les élèves non vaccinés durant 7 jours.
+
+.. question:: Est-ce que mon enfant devra porter le masque ?
+    :level: 3
+
+    Le **port du masque est obligatoire** dans les espaces clos. Il pourra être également requis en extérieur selon le niveau de sévérité de l’épidémie. Pour les élèves des écoles maternelles, le port du masque est proscrit.
+
+    Le masque doit assurer une filtration supérieure à 90 % (masque « grand public » ou masque chirurgical par exemple). **Les parents doivent fournir des masques à leurs enfants.** Le ministère dote chaque école, collège et lycée en masques « grand public » afin qu’ils puissent être fournis aux élèves qui n’en disposeraient pas.
+
+.. question:: Quels sont mes responsabilités en tant que parent face à l’épidémie ?
+    :level: 3
+
+    Vous ne devez pas mettre votre enfant à l’école, au collège ou au lycée :
+
+    * en cas de **fièvre** (38 °C ou plus) ou en cas d’apparition de **symptômes** évoquant la Covid chez votre enfant ou un membre de son foyer ;
+    * si votre enfant ou un membre de son foyer a été **testé positif** ;
+    * si votre enfant ou un membre de son foyer a été identifié comme **contact à risque**.
+
+    Dans chacun de ces cas, vous êtes tenus d’en informer l’établissement.
 
 
 ## Questions générales pour les mineurs de moins de 15 ans
