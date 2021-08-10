@@ -25,14 +25,20 @@
     Si vous êtes vacciné(e), en cas de contact à risque avec une personne positive à la Covid : il faut **vous faire tester** immédiatement et informer de votre statut les personnes avec qui vous avez été en contact 48 h avant votre dernier contact à risque. Vous n’avez pas besoin de vous isoler mais il est recommandé de respecter les mesures barrières avec toutes les personnes de votre entourage pendant une semaine.
 
 
-.. question:: Est-ce que la vaccination rend malade et contagieux ?
+.. question:: Je suis vacciné(e), est-ce que je peux être positif ou positive à la Covid ?
 
-    **Non**, il n’y a pas de virus actif dans les vaccins. Vous pouvez ressentir des effets secondaires (fièvre, fatigue…) suite à la vaccination, mais vous n’êtes **ni malade, ni contagieux**.
+    **Oui.** Même quand on est vacciné(e), **il reste un risque d’attraper la Covid** si on est exposé au virus (même si la maladie sera le plus souvent moins grave), et de le transmettre par la suite (même si votre contagiosité sera elle aussi diminuée).
+
+    Les vaccins contre la Covid vous protègent contre la maladie en réduisant le risque de l’attraper et de faire une forme grave. Ces vaccins sont très efficaces, mais **aucun vaccin ne protège à 100 %** et cette efficacité peut varier selon les personnes.
+
+    **Si votre test est positif**, nous vous encourageons à vous isoler et à [décrire votre situation](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
 
 
-.. question:: Mon test PCR est positif, est-ce que c’est un effet du vaccin ?
+.. question:: Est-ce que la vaccination rend malade, contagieux ou positif ?
+    
+    **Non, la vaccination ne rend en aucun cas positif**, il n’y a pas de virus actif dans les vaccins. Vous pouvez ressentir des effets secondaires (fièvre, fatigue…) suite à la vaccination, mais vous n’êtes **ni malade, ni contagieux**.
 
-    **La vaccination ne rend pas malade.** Si vous avez réalisé un test PCR et qu’il est positif, il est probable que vous ayez été contaminé avant la vaccination (entre les deux doses ou juste après la 2<sup>e</sup> dose), ou avant que la protection soit maximale.
+    Si vous avez réalisé un [test de dépistage](/tests-de-depistage.html) et qu’il est **positif**, il est probable que vous ayez été contaminé(e). Nous vous encourageons à vous isoler et à [décrire votre situation](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
 
 
 .. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?
@@ -65,6 +71,5 @@
     En attendant la mise en application de ce dispositif, un test négatif récent vous permettra de voyager. Pour en savoir plus sur le **pass sanitaire**, rendez-vous sur [cette page dédiée](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions).
 
     Nous vous conseillons de vérifier directement auprès des autorités du pays de destination les conditions d’accès sur leur territoire (tests, quarantaine, vaccin…), en consultant  par exemple le site internet de l’ambassade ou du consulat.
-
 
 </div>
