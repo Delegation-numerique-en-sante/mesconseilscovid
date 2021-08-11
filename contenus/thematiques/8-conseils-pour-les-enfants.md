@@ -120,6 +120,11 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
     Dans chacun de ces cas, vous êtes tenus d’en informer l’établissement.
 
+.. question:: Quels sont les autres mesures prévues dans les établissements scolaires face à la crise sanitaire ?
+    :level: 3
+
+    Pour plus de détails sur les mesures prévues, vous pouvez consulter la page « [Année scolaire 2021-2022 : protocole sanitaire et mesures de fonctionnement](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) » sur le site du ministère de l’Éducation nationale.
+
 
 ## Questions générales pour les mineurs de moins de 15 ans
 
