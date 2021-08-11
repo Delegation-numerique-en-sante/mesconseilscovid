@@ -308,6 +308,30 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 </details>
 </div>
 
+## <span class="nouveau">nouveau</span> Le « Pass sanitaire » est-il nécessaire pour me déplacer en France ?
+
+.. question:: Quels trains nécessitent d’avoir un « Pass sanitaire » ?
+    :level: 3
+
+    Depuis le 9 août, un « Pass sanitaire » est requis pour accéder aux **TGV, aux trains Intercités et aux trains de nuit** (sauf les TER et trains de la région parisienne).
+
+    Le port du masque reste obligatoire.
+
+.. question:: Quels bus et cars nécessitent d’avoir un « Pass sanitaire » ?
+    :level: 3
+
+    Depuis le 9 août, un « Pass sanitaire » est requis pour les **trajets inter-régionaux en bus et car**.
+
+    Le port du masque reste obligatoire.
+
+.. question:: Quels avions nécessitent d’avoir un « Pass sanitaire » ?
+    :level: 3
+
+    Depuis le 9 août, un « Pass sanitaire » est requis pour tous les **vols intérieurs en avion**.
+
+    Le port du masque reste obligatoire.
+
+
 ## Le « Pass sanitaire » en France et dans l’Espace européen (Union européenne, Liechtenstein, Suisse, Islande, Norvège, Monaco, Andorre)
 
 .. question:: Qu’est-ce que le « Pass sanitaire » ?
@@ -321,25 +345,23 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Il permet d’authentifier les informations sur votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) lors d’un contrôle.
 
-    * En France, le « **Pass sanitaire activités** »  est actuellement obligatoire pour participer à des évènements rassemblant plus de 1 000 personnes (festivals, conférences, salons…) ou pour accéder à certains lieux (comme les boîtes de nuit).
+    * En France, le « **Pass sanitaire activités** »  est actuellement obligatoire pour participer à des évènements rassemblant plus de 1 000 personnes (festivals, conférences, salons…) ou pour accéder à certains lieux (comme les boîtes de nuit), il est exigé pour accéder aux lieux de loisirs et de culture rassemblant plus de 50 personnes.
 
-      **Depuis le 21 juillet**, il est exigé pour accéder aux lieux de loisirs et de culture rassemblant plus de 50 personnes.
-
-      <span class="nouveau">nouveau</span> **À partir du 9 août**, son usage sera étendu aux cafés, restaurants, grands centres commerciaux, établissements médico-sociaux, hôpitaux, maisons de retraites, moyens de transports collectifs pour les longs trajets (trains, cars et avions).
+      <span class="nouveau">nouveau</span> Son usage est étendu aux cafés, restaurants, grands centres commerciaux, établissements médico-sociaux, hôpitaux, maisons de retraites, moyens de transports collectifs pour les longs trajets (trains, cars et avions).
 
       Pour les salarié(e)s des établissements recevant du public (dont les restaurants), le pass sanitaire ne sera demandé qu’à partir du **30 août 2021**.
 
       Pour les mineurs de 12 à 17 ans, le pass sanitaire ne sera demandé qu’à partir du **30 septembre 2021**.
 
-    * Dans l’Espace européen, le « **Pass sanitaire européen** » (ou encore « <span lang="en">Digital Covid Certificate</span> » en anglais) facilite, depuis le 1<sup>er</sup> juillet, les voyages entre les pays membres.
+    * Dans l’Espace européen, le « **Pass sanitaire européen** » (ou encore « <span lang="en">Digital Covid Certificate</span> » en anglais) facilite les voyages entre les pays membres.
 
 
 .. question:: Le « Pass sanitaire activités » ou le « Pass sanitaire européen » sont-ils déjà en application ?
     :level: 3
 
-    * En France, le « **Pass sanitaire activités** » est en application depuis le **9 juin**.
+    * En France, le « **Pass sanitaire activités** » est en application **depuis juin**.
 
-    * Dans l’Espace européen, le « **Pass sanitaire européen** » (ou <span lang="en">*Digital Covid Certificate*</span>) est progressivement mis en application **à partir de juillet**.
+    * Dans l’Espace européen, le « **Pass sanitaire européen** » (ou <span lang="en">*Digital Covid Certificate*</span>) est progressivement mis en application **depuis juillet**.
 
 
 .. question:: Quels justificatifs peuvent constituer un « Pass sanitaire » (en France et dans l’Espace européen) ?
