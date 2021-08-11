@@ -107,7 +107,7 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
     Le **port du masque est obligatoire** dans les espaces clos. Il pourra être également requis en extérieur selon le niveau de sévérité de l’épidémie. Pour les élèves des écoles maternelles, le port du masque est proscrit.
 
-    Le masque doit assurer une filtration supérieure à 90 % (masque « grand public » ou masque chirurgical par exemple). **Les parents doivent fournir des masques à leurs enfants.** Le ministère dote chaque école, collège et lycée en masques « grand public » afin qu’ils puissent être fournis aux élèves qui n’en disposeraient pas.
+    **Les parents doivent fournir des masques à leurs enfants.** Le masque doit assurer une filtration supérieure à 90 % (masque « grand public » ou masque chirurgical par exemple). Le ministère dote chaque école, collège et lycée en masques « grand public » afin qu’ils puissent être fournis aux élèves qui n’en disposeraient pas.
 
 .. question:: Quels sont mes responsabilités en tant que parent face à l’épidémie ?
     :level: 3
