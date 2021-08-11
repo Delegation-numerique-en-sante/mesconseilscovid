@@ -1473,6 +1473,7 @@ a.no-type::after {
 .thematique #conseils-block h2 {
     padding-top: 1rem;
     margin-bottom: 1.2rem;
+    margin-top: 4rem;
     font-size: 175%;
 }
 .thematique #conseils-block h3 {
