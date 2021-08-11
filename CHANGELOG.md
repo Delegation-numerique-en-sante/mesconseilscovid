@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-08-11
+
+* ajout de questions-réponses relatives à la rentrée
+* ajout d’une question pour les vacciné(e)s positifs
+* ajout d’une section dédiée aux déplacements en France
+
 ## 2021-08-10
 
 * meilleur rendu des multiples profils en page d’accueil
