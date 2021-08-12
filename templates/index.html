@@ -147,7 +147,7 @@
 <section id="vaccins" hidden>
     <div class="block">
         <form id="vaccins-form">
-            <fieldset>
+            <fieldset class="required">
                 <legend><h1 id="vaccins-label">{{ question_vaccins_titre|inline|me_or_them }}</h1></legend>
                 <div role="radiogroup" aria-labelledby="vaccins-label">
                     <input id="vaccins_radio_pas_encore" type="radio" required name="vaccins_radio" value="pas_encore">
@@ -221,9 +221,9 @@
         <form id="situation-form">
             <fieldset>
                 <legend><h1>{{ question_résidence_titre|inline|me_or_them }}</h1></legend>
-                <div class="row">
-                    <label for="departement">{{ question_résidence_libellé|inline|me_or_them }}</label>
-                    <div class="dpt-container">
+                <div class="row required">
+                    <label for="departement" class="secondary-title">{{ question_résidence_libellé|inline|me_or_them }}</label>
+                    <div class="secondary dpt-container">
                         <div>
                             <button id="geolocalisation" class="button"
                                 title="En utilisant la géolocalisation de votre navigateur"
@@ -389,15 +389,15 @@
                 <legend><h1>{{ question_caractéristiques_titre|inline|me_or_them }}</h1></legend>
                 <div class="details">{{ question_caractéristiques_aide }}</div>
                 <ul class="no-list-style">
-                    <li class="row">
+                    <li class="row required">
                         <label for="age">{{ question_caractéristiques_âge_libellé|inline|me_or_them }}</label>
                         <input id="age" type="text" inputmode="numeric" pattern="[0-9,. ]+" required>
                     </li>
-                    <li class="row">
+                    <li class="row required">
                         <label for="taille">{{ question_caractéristiques_taille_libellé|inline|me_or_them }}</label>
                         <input id="taille" type="text" inputmode="numeric" pattern="[0-9,. ]+" required>
                     </li>
-                    <li class="row">
+                    <li class="row required">
                         <label for="poids">{{ question_caractéristiques_poids_libellé|inline|me_or_them }}</label>
                         <input id="poids" type="text" inputmode="numeric" pattern="[0-9,. ]+" required>
                     </li>
@@ -501,25 +501,27 @@
         <form id="symptomes-form">
             <fieldset>
                 <legend><h1>{{ question_symptômes_titre|inline|me_or_them }}</h1></legend>
-                <h2 id="symptomes-label">{{ question_symptômes_titre_ouinon|inline|me_or_them }}</h2>
-                {{ question_symptômes_titre_aide }}
-                <div role="radiogroup" aria-labelledby="symptomes-label">
-                    <input id="symptomes_actuels" type="radio" required name="symptomes_actuels_statuts">
-                    <label for="symptomes_actuels">
-                        {{ question_symptômes_libellé_oui|inline|me_or_them }}
-                    </label>
-                    <input id="symptomes_passes" type="radio" required name="symptomes_actuels_statuts">
-                    <label for="symptomes_passes">
-                        {{ question_symptômes_libellé_passés|inline|me_or_them }}
-                    </label>
-                    <input id="symptomes_non" type="radio" required name="symptomes_actuels_statuts">
-                    <label for="symptomes_non">
-                        <span>{{ question_symptômes_libellé_non|inline }}</span>
-                    </label>
+                <div class="required">
+                    <legend><h2 id="symptomes-label">{{ question_symptômes_titre_ouinon|inline|me_or_them }}</h2></legend>
+                    {{ question_symptômes_titre_aide }}
+                    <div role="radiogroup" aria-labelledby="symptomes-label">
+                        <input id="symptomes_actuels" type="radio" required name="symptomes_actuels_statuts">
+                        <label for="symptomes_actuels">
+                            {{ question_symptômes_libellé_oui|inline|me_or_them }}
+                        </label>
+                        <input id="symptomes_passes" type="radio" required name="symptomes_actuels_statuts">
+                        <label for="symptomes_passes">
+                            {{ question_symptômes_libellé_passés|inline|me_or_them }}
+                        </label>
+                        <input id="symptomes_non" type="radio" required name="symptomes_actuels_statuts">
+                        <label for="symptomes_non">
+                            <span>{{ question_symptômes_libellé_non|inline }}</span>
+                        </label>
+                    </div>
                 </div>
-                <div id="symptomes-choix" class="checkboxgroup" hidden>
+                <div id="symptomes-choix" class="checkboxgroup required" hidden>
                     <fieldset>
-                        <legend><h3>{{ question_symptômes_titre_lesquels|inline|me_or_them }}</h3></legend>
+                        <legend><h2>{{ question_symptômes_titre_lesquels|inline|me_or_them }}</h2></legend>
                         <div>
                             <input id="symptomes_actuels_temperature" type="checkbox" name="symptomes_actuels_temperature">
                             <label for="symptomes_actuels_temperature">
@@ -577,11 +579,11 @@
                         </div>
                     </fieldset>
                 </div>
-                <div id="debut-symptomes" hidden>
+                <div id="debut-symptomes" class="required" hidden>
                     <fieldset>
-                        <legend><h3 id="debut-symptomes-date-label">
+                        <legend><h2 id="debut-symptomes-date-label">
                             {{ question_debut_symptomes_libellé|inline|me_or_them }}
-                        </h3></legend>
+                        </h2></legend>
                         <div role="radiogroup" aria-labelledby="debut-symptomes-date-label">
                             <input id="debut_symptomes_aujourdhui" type="radio" name="suivi_symptomes_date" value="aujourdhui">
                             <label for="debut_symptomes_aujourdhui">Aujourd’hui</label>

@@ -817,7 +817,7 @@ fieldset {
     margin: 0 0 1rem 0;
     padding: 0;
 }
-fieldset .secondary .secondary-title {
+fieldset .secondary-title {
     font-size: 120%;
     margin: 2rem 0 0.5rem 0;
     color: #000091;
@@ -873,6 +873,14 @@ fieldset .secondary > p {
 }
 fieldset .secondary:first-child > p {
     margin-top: 2rem;
+}
+
+form .required legend::after,
+form .required > label::after {
+    content: ' (réponse requise)';
+    color: #555;
+    font-size: smaller;
+    font-style: italic;
 }
 
 fieldset .secondary label[for='depistage_date'] {
