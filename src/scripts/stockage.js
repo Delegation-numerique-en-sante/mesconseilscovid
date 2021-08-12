@@ -25,9 +25,13 @@ export default class StockageLocal {
                 return noms.filter((nom) => nom != 'profil')
             })
             .then((noms) => {
-                return noms.sort((a) => {
+                return noms.sort((a, b) => {
                     // Make sure we return my profile first.
-                    return a !== 'mes_infos'
+                    if (a === 'mes_infos') return -1
+                    else if (b === 'mes_infos') return 1
+                    else if (a < b) return -1
+                    else if (b > a) return 1
+                    else return 0
                 })
             })
     }
