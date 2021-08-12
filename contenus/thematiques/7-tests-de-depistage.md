@@ -10,8 +10,8 @@ Depuis le 7 juillet, les tests de dépistage réalisés par un professionnel de 
 
 * les **résidents en France** ;
 * les français qui résident habituellement à l’étranger ;
-* les européens qui disposent d’une carte européenne d’assurance maladie.  
-    
+* les européens qui disposent d’une carte européenne d’assurance maladie.
+
 Les touristes non européens peuvent bénéficier de la gratuité sur présentation d’une prescription médicale ou s’ils ont été identifiés cas contact par l’Assurance maladie, sur présentation d’un justificatif (SMS, courriel). En dehors de ces cas de figure, les prix des tests sont fixés à **49,89 euros** (RT-PCR) et **25 euros** (test antigénique rapide).
 
 <div class="conseil">
@@ -23,7 +23,7 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
 ## Quel test dois-je faire ?
 
 <form id="tests-de-depistage-symptomes-form">
-    <fieldset>
+    <fieldset class="required">
         <legend><h3 id="tests-de-depistage-symptomes-label">J’ai des symptômes qui peuvent évoquer la Covid :</h3></legend>
         <div role="radiogroup" aria-labelledby="tests-de-depistage-symptomes-label">
             <input id="tests_de_depistage_symptomes_radio_oui" type="radio" required name="tests_de_depistage_symptomes_radio" value="oui">
@@ -42,7 +42,7 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
 
 <form id="tests-de-depistage-depuis-quand-form" hidden>
     <a href="#" data-precedent="symptomes" class="back-button">Retour</a>
-    <fieldset id="tests-de-depistage-depuis-quand">
+    <fieldset class="required" id="tests-de-depistage-depuis-quand">
         <legend><h3 id="tests-de-depistage-depuis-quand-label">Vous avez des symptômes depuis :</h3></legend>
         <div role="radiogroup" aria-labelledby="tests-de-depistage-depuis-quand-label">
             <input id="tests_de_depistage_depuis_quand_radio_moins_4_jours" type="radio" required name="tests_de_depistage_depuis_quand_radio" value="moins-4-jours">
@@ -61,7 +61,7 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
 
 <form id="tests-de-depistage-cas-contact-form" hidden>
     <a href="#" data-precedent="symptomes" class="back-button">Retour</a>
-    <fieldset id="tests-de-depistage-cas-contact">
+    <fieldset class="required" id="tests-de-depistage-cas-contact">
         <legend><h3 id="tests-de-depistage-cas-contact-label">Je n’ai pas de symptômes mais je suis cas contact :</h3></legend>
         <div role="radiogroup" aria-labelledby="tests-de-depistage-cas-contact-label">
             <input id="tests_de_depistage_cas_contact_radio_oui" type="radio" required name="tests_de_depistage_cas_contact_radio" value="oui">
