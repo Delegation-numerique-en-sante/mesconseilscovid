@@ -827,24 +827,20 @@ export default class Profil {
                         ? 'Continuer'
                         : 'Démarrer'
                 mainButton += safeHtml`
-                    <a class="button suivi-link"
+                    <a class="button button-outline suivi-link"
                         data-set-profil="${this.nom}" href="#suiviintroduction"
                         >${verbe} ${possessifMasculinSingulier} suivi</a>
                 `
             }
-            const outlined =
-                this.estMonProfil() && !this.suivi_active ? '' : 'button-outline'
             mainButton += safeHtml`
-                <a class="button ${outlined} conseils-link"
+                <a class="button button-outline conseils-link"
                     data-set-profil="${this.nom}" href="#conseils"
                     >Retrouver ${possessifPluriel} conseils</a>
             `
         } else {
             const label = this.isEmpty() ? 'Démarrer' : 'Continuer'
-            const outlined =
-                this.estMonProfil() && !this.suivi_active ? '' : 'button-outline'
             mainButton = safeHtml`
-                <a class="button ${outlined} button-full-width conseils-link"
+                <a class="button button-outline button-full-width conseils-link"
                     data-set-profil="${this.nom}" href="#${questionnaire.firstPage}"
                     >${label} ${possessifMasculinSingulier} questionnaire</a>
             `

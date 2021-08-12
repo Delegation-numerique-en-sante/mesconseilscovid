@@ -23,7 +23,14 @@ function metEnAvantCarteSymptomes(element, app) {
     app.stockage.getProfils().then((noms) => {
         if (noms.length > 0) {
             updateCardActions(card, noms, app).then(() => {
+                // On remonte la carte au dessus des autres
                 card.classList.add('hero')
+
+                // On met en avant le premier bouton du premier profil
+                // (ce sera toujours "Moi" si ce profil existe)
+                const boutonPrincipal = card.querySelector('.actions-profil a')
+                boutonPrincipal.classList.remove('button-outline')
+
                 // On cache le nom si ce n’est que mon profil.
                 if (noms.length === 1 && noms[0] === 'mes_infos') {
                     hideSelector(card, '.nom')
