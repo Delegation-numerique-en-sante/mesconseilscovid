@@ -109,10 +109,10 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
     **Les parents doivent fournir des masques à leurs enfants.** Le masque doit assurer une filtration supérieure à 90 % (masque « grand public » ou masque chirurgical par exemple). Le ministère dote chaque école, collège et lycée en masques « grand public » afin qu’ils puissent être fournis aux élèves qui n’en disposeraient pas.
 
-.. question:: Quels sont mes responsabilités en tant que parent face à l’épidémie ?
+.. question:: Dans quels cas mon enfant doit-il rester à la maison ?
     :level: 3
 
-    Vous ne devez pas mettre votre enfant à l’école, au collège ou au lycée :
+    Vous ne devez pas envoyer votre enfant à l’école, au collège ou au lycée :
 
     * en cas de **fièvre** (38 °C ou plus) ou en cas d’apparition de **symptômes** évoquant la Covid chez votre enfant ou un membre de son foyer ;
     * si votre enfant ou un membre de son foyer a été **testé positif** ;
