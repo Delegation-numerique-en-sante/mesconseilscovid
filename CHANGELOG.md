@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-08-13
+
+* mise à jour des informations sur la vaccination des mineurs
+* mise à jour relative au confinement en Guadeloupe
+
 ## 2021-08-11
 
 * ajout de questions-réponses relatives à la rentrée
