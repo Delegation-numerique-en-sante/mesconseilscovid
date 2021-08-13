@@ -98,7 +98,7 @@ export default {
     '971': 'Guadeloupe',
     '972': 'Martinique',
     '973': 'Guyane',
-    '974': 'Réunion',
+    '974': 'La Réunion',
     '975': 'Saint-Pierre-et-Miquelon',
     '976': 'Mayotte',
     '977': 'Saint-Barthélemy',
