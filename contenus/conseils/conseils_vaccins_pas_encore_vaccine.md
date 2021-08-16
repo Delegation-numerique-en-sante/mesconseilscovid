@@ -13,13 +13,13 @@ Trouvez les <a href="#conseils-vaccins" class="lien-vaccination">lieux de vaccin
 </div>
 
 
-#### Quand se faire vacciner ?
+#### Qui peut se faire vacciner ?
 
-Vous pouvez vous faire vacciner **dès maintenant** :
+Vous pouvez vous faire vacciner :
 
 * si vous avez **18 ans et plus**, sans conditions ;
 * si vous avez entre **12 et 17 ans**, un [formulaire d’autorisation](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) doit être rempli pour attester du consentement des parents ou du tuteur légal, la **carte vitale** du parent ou tuteur accompagnant est requise, même pour les enfants de plus de 16 ans disposant de leur propre carte vitale ;
-* si vous êtes **enceinte**, à partir du second trimestre de votre grossesse.
+* si vous êtes **enceinte**, dès le premier trimestre de votre grossesse.
 
 Pour en savoir plus :
 
@@ -49,7 +49,7 @@ Si vous avez des **symptômes** alors que vous êtes vacciné·e, il faut **vous
 
 Les vaccins Comirnaty<sup>®</sup> (Pfizer/BioNTech) et Moderna<sup>®</sup> ne sont pas recommandés chez des personnes ayant présenté des **manifestations allergiques graves**, telles que des réactions anaphylactiques.
 
-Les **femmes enceintes** peuvent se faire vacciner à partir du 2<sup>e</sup> trimestre de grossesse. Les vaccins à ARNm Comirnaty<sup>®</sup> (Pfizer/BioNTech) et Moderna<sup>®</sup> sont à privilégier pour les femmes enceintes. Il n’y a pas d’effet attendu chez le nourrisson et l’enfant allaités par une femme vaccinée.
+Les **femmes enceintes** peuvent se faire vacciner dès le 1<sup>er</sup> trimestre de grossesse. Les vaccins à ARNm Comirnaty<sup>®</sup> (Pfizer/BioNTech) et Moderna<sup>®</sup> sont à privilégier pour les femmes enceintes. Il n’y a pas d’effet attendu chez le nourrisson et l’enfant allaités par une femme vaccinée.
 
 Les **effets secondaires** les plus fréquents des vaccins contre la Covid sont : une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des malaises, de la fièvre modérée et des frissons. Ces effets secondaires disparaissent le plus souvent au bout de 2 à 3 jours.
 
