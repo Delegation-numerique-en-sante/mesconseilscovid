@@ -376,8 +376,15 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     <span class="nouveau">nouveau</span> Pour une utilisation en France, le délai d’attente après la 2<sup>e</sup> dose est réduit à 1 semaine pour les vaccins Pfizer, Moderna et AstraZeneca.
 
     **Attention**, tous les pays n’acceptent pas tous les justificatifs et en fonction de chaque situation (voyage, évènement…) un justificatif précis pourra vous être demandé. Assurez-vous de bien vérifier quel justificatif vous concerne auprès des organisateurs de l’évènement ou sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
+    
+.. question:: Je suis français(e) ou ayant-droit de ressortissant(e) français(e) vacciné(e) à l'étranger (hors UE). Comment obtenir un « Pass sanitaire » valable en France et en Europe ?
+    :level: 3    
 
-
+    Si vous (ou votre conjoint(e) ou enfant) avez été vacciné(e) en dehors de l'UE avec l'un des vaccins    reconnus par l'Agence Européenne du Médicament (Pfizer, Moderna, AstraZeneca, Janssen), alors vous         pouvez faire une demande de QR code valable en France et dans l'espace européen. 
+    **[Rendez-vous sur cette page dédiée](https://www.service-public.fr/particuliers/actualites/A15083)** pour être guidé dans cette démarche.
+    
+    En attendant de recevoir ce QR code, vous pouvez effectuer un test de dépistage (gratuit) dont le résultat négatif fera office de pass sanitaire pendant 72h. 
+    
 .. question:: Est-ce que je dois obligatoirement avoir un <span lang="en">smartphone</span> pour utiliser le « Pass sanitaire » ?
     :level: 3
 
