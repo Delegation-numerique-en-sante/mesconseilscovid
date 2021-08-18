@@ -376,7 +376,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     <span class="nouveau">nouveau</span> Pour une utilisation en France, le délai d’attente après la 2<sup>e</sup> dose est réduit à 1 semaine pour les vaccins Pfizer, Moderna et AstraZeneca.
 
     **Attention**, tous les pays n’acceptent pas tous les justificatifs et en fonction de chaque situation (voyage, évènement…) un justificatif précis pourra vous être demandé. Assurez-vous de bien vérifier quel justificatif vous concerne auprès des organisateurs de l’évènement ou sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
-    
+
 .. question:: Je suis français(e) ou ayant-droit de ressortissant(e) français(e) vacciné(e) à l’étranger (hors UE). Comment obtenir un « Pass sanitaire » valable en France et en Europe ?
     :level: 3    
 
@@ -384,7 +384,16 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     [Rendez-vous sur cette page de service-public.fr](https://www.service-public.fr/particuliers/actualites/A15083) pour être guidé(e) dans cette démarche.
     
     En attendant de recevoir ce QR code, vous pouvez effectuer un test de dépistage (gratuit). Son résultat négatif fera office de « Pass sanitaire » pendant 72 h. 
+
+.. question:: Je suis touriste (non européen) vacciné(e) à l'étranger (hors UE). Comment obtenir un « Pass sanitaire » ?
+    :level: 3
     
+    Si vous êtes âgé(e)s de plus de 18 ans, de nationalité extra-européenne et que vous avez été vacciné(e) avec l'un des vaccins reconnus par l'Agence européenne du médicament (Pfizer, Moderna, AstraZeneca, Janssen) vous pouvez obtenir un pass sanitaire (QR code). 
+    
+    Pour savoir comment faire la demande, [rendez-vous sur cette page dédiée](https://www.service-public.fr/particuliers/actualites/A15093). 
+    
+    En attendant, si vous le souhaitez, le résultat négatif d'un test de dépistage datant d'il y a moins de 72h fera office de pass sanitaire. Attention, les tests de dépistages sont **payants**. Pour trouver un lieu de dépistage (pharmacie ou laboratoire) [consultez cet annuaire](https://www.sante.fr/cf/centres-depistage-covid.html).
+
 .. question:: Est-ce que je dois obligatoirement avoir un <span lang="en">smartphone</span> pour utiliser le « Pass sanitaire » ?
     :level: 3
 
