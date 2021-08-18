@@ -13,6 +13,14 @@ describe('Thématiques', function () {
         )
     })
 
+    it('version dans le footer', async function () {
+        const page = this.test.page
+
+        await page.goto('http://localhost:8080/conseils-pour-les-enfants.html')
+        const footer = await page.waitForSelector('footer')
+        assert.include(await footer.innerText(), '- Mise à jour le ')
+    })
+
     it('on va vers une autre page thématique', async function () {
         const page = this.test.page
 

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import hashlib
+import json
 import logging
 import re
 from dataclasses import dataclass
@@ -226,6 +227,11 @@ class Thematique:
 def thematiques():
     """Build the theme pages with contents from thematiques folder."""
     responses = build_responses(CONTENUS_DIR)
+    version = get_version()
+    meta_pied_de_page = str(responses["meta_pied_de_page"]).replace(
+        '<span class="js-latest-update"></span>',
+        f" - Mise à jour le {version.strftime('%d-%m-%Y')}",
+    )
     thematiques = get_thematiques()
     for thematique in thematiques:
         autres_thematiques = [t for t in thematiques if t != thematique]
@@ -239,10 +245,19 @@ def thematiques():
                     "meta_entretiens_utilisateurs"
                 ],
                 "meta_feedback_conseils": responses["meta_feedback_conseils"],
-                "meta_pied_de_page": responses["meta_pied_de_page"],
+                "meta_pied_de_page": meta_pied_de_page,
             },
         )
         (SRC_DIR / f"{thematique.name}.html").write_text(content)
+
+
+def get_version() -> date:
+    content = open(HERE / "static" / "version.json").read()
+    data = json.loads(content)
+    # We might have a version with more characters than a date
+    # if multiple releases are required within the same day.
+    version = data["version"][:10]
+    return date(*(int(item) for item in version.split("-")))
 
 
 @cli
