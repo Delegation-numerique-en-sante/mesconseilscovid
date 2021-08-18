@@ -385,14 +385,12 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     
     En attendant de recevoir ce QR code, vous pouvez effectuer un test de dépistage (gratuit). Son résultat négatif fera office de « Pass sanitaire » pendant 72 h. 
 
-.. question:: Je suis touriste (non européen) vacciné(e) à l'étranger (hors UE). Comment obtenir un « Pass sanitaire » ?
+.. question:: Je suis touriste (non européen) vacciné(e) à l’étranger (hors UE). Comment obtenir un « Pass sanitaire » ?
     :level: 3
     
-    Si vous êtes âgé(e)s de plus de 18 ans, de nationalité extra-européenne et que vous avez été vacciné(e) avec l'un des vaccins reconnus par l'Agence européenne du médicament (Pfizer, Moderna, AstraZeneca, Janssen) vous pouvez obtenir un pass sanitaire (QR code). 
+    Si vous êtes âgé(e) de plus de 18 ans, de nationalité extra-européenne et que vous avez été vacciné(e) avec l’un des vaccins reconnus par l’Agence européenne du médicament (Pfizer, Moderna, AstraZeneca, Janssen) vous pouvez obtenir un « Pass sanitaire » (QR code). Pour savoir comment faire la demande, [rendez-vous sur cette page de service-public.fr](https://www.service-public.fr/particuliers/actualites/A15093). 
     
-    Pour savoir comment faire la demande, [rendez-vous sur cette page dédiée](https://www.service-public.fr/particuliers/actualites/A15093). 
-    
-    En attendant, si vous le souhaitez, le résultat négatif d'un test de dépistage datant d'il y a moins de 72h fera office de pass sanitaire. Attention, les tests de dépistages sont **payants**. Pour trouver un lieu de dépistage (pharmacie ou laboratoire) [consultez cet annuaire](https://www.sante.fr/cf/centres-depistage-covid.html).
+    En attendant, si vous le souhaitez, le résultat négatif d’un test de dépistage de moins de 72 h fera office de « Pass sanitaire ». Attention, les tests de dépistages sont **payants** dans votre situation. Pour trouver un lieu de dépistage (pharmacie ou laboratoire), [consultez cet annuaire sur sante.fr](https://www.sante.fr/cf/centres-depistage-covid.html).
 
 .. question:: Est-ce que je dois obligatoirement avoir un <span lang="en">smartphone</span> pour utiliser le « Pass sanitaire » ?
     :level: 3
