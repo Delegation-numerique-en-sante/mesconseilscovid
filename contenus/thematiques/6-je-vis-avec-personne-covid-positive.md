@@ -8,9 +8,26 @@
 
 <p class="big">Votre conjoint⸱e, enfant, colocataire… est positif à la Covid et vous ne présentez pas de symptômes ? MesConseilsCovid vous accompagne pour savoir quelle conduite à tenir lorsqu’on est cas contact d’une personne qui partage le même lieu de vie.</p>
 
+## Vous vivez avec une personne positive à la Covid et…
+
+<div class="conseils">
+<details>
+
+.. summary:: vous n’êtes pas vacciné(e) (schéma vaccinal incomplet)
+
+<div class="conseil conseil-jaune">
+
+Vous êtes concerné(e) si :
+
+* vous n’avez pas reçu(e) toutes les doses nécéssaires (1, 2 ou 3 doses) ;
+* vous avez reçu(e) votre dernière dose depuis moins de 7 jours (Pfizer, Moderna, AstraZeneca) ou moins de 28 jours (Janssen) ;
+* vous souffrez d’une forte immunodépression qui réduit l’efficacité du vaccin.
+
+</div>
+    
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
-## 1. Faites un test et isolez-vous
+### 1. Faites un test et isolez-vous
 
 <div class="conseil">
 
@@ -24,7 +41,7 @@ Même si vous ne présentez pas de symptômes, il faut vous faire tester immédi
 
 Si vous ne pouvez pas télétravailler, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr).
 
-## 2. Refaites un test
+### 2. Faites un test de contrôle
 
 <div class="conseil">
 
@@ -44,6 +61,56 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
                  alt="Frise chronologique représentant la période d’isolement">
         </a>
     </div>
+</div>
+
+</details>
+</div>
+
+<div class="conseils">
+<details>
+
+.. summary:: vous êtes vacciné(e) (schéma vaccinal complet)
+
+<div class="conseil conseil-jaune">
+
+Vous êtes concerné(e) si :
+
+* vous avez reçu(e) toutes les doses nécéssaires (1, 2 ou 3 doses) ;
+* vous avez reçu(e) la dernière dose prévue depuis plus de 7 jours (Pfizer, Moderna, AstraZeneca) ou plus de 28 jours (Janssen)  ;
+* vous ne souffrez pas d’immunodépression. 
+
+</div>
+
+<p class="big">Voici ce que nous vous conseillons de faire :</p>
+
+### 1. Faites un test et isolez-vous
+
+<div class="conseil">
+
+Même si vous ne présentez pas de symptômes, il faut vous faire tester immédiatement en laboratoire ou en pharmacie :
+
+* Si le test est **positif** : isolez-vous pendant au moins **10 jours**. Vous pourrez lever l’isolement dès le 10<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48 h.
+* Si le test est **négatif**, il ne faut pas vous isoler mais restez prudent(e) :
+    * portez le masque à l’intérieur et à l’extérieur, même dans les lieux qui ne l’exigent plus (restaurant, musées…) ;
+    * évitez de rencontrer des personnes vulnérables ou fragiles ;
+    * surveillez votre état : température, symptômes…
+
+</div>
+
+Si vous ne pouvez pas télétravailler, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr).
+
+### 2. Faites un test de contrôle
+
+<div class="conseil">
+
+Si votre premier test était **négatif**, vous devez faire un test de contrôle **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes).
+
+</div>
+
+* s’il est **négatif**, vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale ;
+* s’il est **positif**, il faut vous isoler au moins 10 jours à partir de la date du test, et surveillez l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
+
+</details>
 </div>
 
 
