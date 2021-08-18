@@ -21,10 +21,15 @@
 
 .. summary:: vous n’êtes pas vacciné(e) (schéma vaccinal incomplet)
 
-Vous êtes concerné si  :
-* vous n'avez pas reçu toutes les doses nécéssaires (1, 2 ou 3 doses)
-* vous avez reçu votre dernière dose depuis moins de 7 jours (Pfizer, Moderna, AstraZeneca) ou moins de 28 jours (Janssen) 
-* vous souffrez d'une forte immunodépression qui réduit l'efficacité du vaccin
+<div class="conseil conseil-jaune">
+
+Vous êtes concerné(e) si :
+
+* vous n’avez pas reçu(e) toutes les doses nécéssaires (1, 2 ou 3 doses) ;
+* vous avez reçu(e) votre dernière dose depuis moins de 7 jours (Pfizer, Moderna, AstraZeneca) ou moins de 28 jours (Janssen) ;
+* vous souffrez d’une forte immunodépression qui réduit l’efficacité du vaccin.
+
+</div>
     
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
@@ -67,10 +72,15 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 
 .. summary:: vous êtes vacciné(e) (schéma vaccinal complet)
 
-Vous êtes concerné si  :
-* vous avez reçu toutes les doses nécéssaires (1, 2 ou 3 doses)
-* vous avez reçu la dernière dose prévue depuis plus de 7 jours (Pfizer, Moderna, AstraZeneca) ou plus de 28 jours (Janssen) 
-* vous ne souffrez pas d'immunodépression. 
+<div class="conseil conseil-jaune">
+
+Vous êtes concerné(e) si :
+
+* vous avez reçu(e) toutes les doses nécéssaires (1, 2 ou 3 doses) ;
+* vous avez reçu(e) la dernière dose prévue depuis plus de 7 jours (Pfizer, Moderna, AstraZeneca) ou plus de 28 jours (Janssen)  ;
+* vous ne souffrez pas d’immunodépression. 
+
+</div>
 
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
@@ -84,7 +94,7 @@ Faire un **test antigénique** en pharmacie **immédiatement** (voir la [carte d
 
 * Si le test est **positif**, restez en **isolement au moins 10 jours** à partir de la date du test. Pas besoin de faire un test de contrôle pour sortir de l’isolement.
 
-* Si le test est **négatif** , il ne faut pas vous isoler mais restez prudent :
+* Si le test est **négatif**, il ne faut pas vous isoler mais restez prudent(e) :
     * portez le masque à l’intérieur et à l’extérieur, même dans les lieux qui ne l’exigent plus (restaurant, musées…) ;
     * évitez de rencontrer des personnes vulnérables ou fragiles ;
     * surveillez votre état : température, symptômes…
