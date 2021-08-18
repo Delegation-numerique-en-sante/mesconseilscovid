@@ -1,5 +1,12 @@
 # Changelog
 
+## 2021-08-18
+
+* précision sur la vaccination et le premier trimestre de grossesse
+* explicite la notion de schéma vaccinal complet ou non
+* ajout d’une question sur le Pass sanitaire et les expatrié(e)s
+* ajout d’une question sur le Pass sanitaire et les touristes étrangers
+
 ## 2021-08-13
 
 * mise à jour des informations sur la vaccination des mineurs
