@@ -15,7 +15,7 @@ Trouvez les <a href="#conseils-vaccins" class="lien-vaccination">lieux de vaccin
 
 #### Qui peut se faire vacciner ?
 
-Vous pouvez vous faire vacciner :
+Vous pouvez vous faire vacciner :
 
 * si vous avez **18 ans et plus**, sans conditions ;
 * si vous avez entre **12 et 17 ans**, un [formulaire d’autorisation](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) doit être rempli pour attester du consentement des parents ou du tuteur légal, la **carte vitale** du parent ou tuteur accompagnant est requise, même pour les enfants de plus de 16 ans disposant de leur propre carte vitale ;
