@@ -33,36 +33,38 @@ Vous êtes concerné(e) si :
     
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
-### 1. Vous isoler
+### 1. Faire un test et vous isoler
 
 <div class="conseil">
 
-Restez isolé·e **au minimum 7 jours** après votre dernier contact à risque.
-
-</div>
-
-Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir vous isoler en attendant le résultat du test.
-
-### 2. Faire un test
-
-<div class="conseil">
-
-Faire un **test antigénique** en pharmacie **immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+Faites un **test antigénique** en pharmacie **immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) et **restez isolé(e)**.
 
 </div>
 
 * Si le test est **positif**, restez en **isolement au moins 10 jours** à partir de la date du test.
 
-* Si le test est **négatif**, restez **en isolement**, et **refaites un test 7 jours après** le dernier contact à risque :
+* Si le test est **négatif**, restez **en isolement** et effectuez un test de contrôle (voir ci-dessous).
 
-    * s’il est **négatif**, vous pourrez lever votre isolement ;
-    * s’il est **positif**, restez en isolement au moins 10 jours à partir de la date du test, et surveillez l’apparition de symptômes.
-
+Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir vous isoler en attendant le résultat du test.
 
 Si votre test est **positif**, les autres membres de votre foyer seront considérés comme **cas contact**, et devront :
 
 * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**) ;
 * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+
+### 2. Faire un test de contrôle
+
+<div class="conseil">
+
+Si votre premier test était **négatif**, vous devez faire un test de contrôle :
+
+* **7 jours après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e).
+* **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple).
+
+</div>
+
+* s’il est **négatif**, vous pourrez lever votre isolement ;
+* s’il est **positif**, restez en isolement au moins 10 jours à partir de la date du test, et surveillez l’apparition de symptômes.
 
 </details>
 </div>
@@ -98,22 +100,26 @@ Faire un **test antigénique** en pharmacie **immédiatement** (voir la [carte d
     * portez le masque à l’intérieur et à l’extérieur, même dans les lieux qui ne l’exigent plus (restaurant, musées…) ;
     * évitez de rencontrer des personnes vulnérables ou fragiles ;
     * surveillez votre état : température, symptômes…
-    
-### 2. Faire un test de contrôle
-
-<div class="conseil">
-
-Si votre premier test était **négatif**, faire un test de contrôle 7 jours après le dernier contact à risque.
-
-</div>
-
-* s’il est **négatif**, vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale ;
-* s’il est **positif**, restez en isolement au moins 10 jours à partir de la date du test, et surveillez l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
 
 Si votre test est **positif**, les autres membres de votre foyer seront considérés comme **cas contact**, et devront, selon leur situation personnelle (schéma vaccinal complet ou non) :
 
 * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**) ;
 * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+
+
+### 2. Faire un test de contrôle
+
+<div class="conseil">
+
+Si votre premier test était **négatif**, vous devez faire un test de contrôle :
+
+* **7 jours après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e).
+* **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple).
+
+</div>
+
+* s’il est **négatif**, vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale ;
+* s’il est **positif**, il faut vous isoler au moins 10 jours à partir de la date du test, et surveillez l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
 
 </details>
 </div>
