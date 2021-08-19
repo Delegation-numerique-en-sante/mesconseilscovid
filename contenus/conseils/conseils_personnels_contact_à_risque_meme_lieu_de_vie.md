@@ -1,6 +1,6 @@
 Nous vous conseillons de :
 
-1. Vous maintenir **en isolement**.
+1. Vous maintenir **en isolement** (sauf si vous êtes guéri(e) de la Covid depuis moins de 2 mois).
 1. Mettre en place des **mesures d’hygiène renforcée** dans votre foyer (voir la section **Isolement** plus bas).
 1. Faire un test **7 jours après la guérison** de la personne malade :
     * s’il est **négatif**, vous pourrez lever votre isolement ;

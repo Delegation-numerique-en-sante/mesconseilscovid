@@ -1,6 +1,6 @@
 Même si vous avez été vacciné‚ nous vous conseillons de :
 
-1. Vous maintenir **en isolement**.
+1. Vous maintenir **en isolement** (sauf si vous êtes guéri(e) de la Covid depuis moins de 2 mois).
 1. Faire un **test antigénique immédiatement** (voir la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a>).
     * Si le test est **positif**, restez **en isolement au moins 10 jours** à partir de la date du test, et renseignez le [résultat du test](#depistage) pour mettre à jour ces conseils.
     * Si le test est **négatif**, restez **en isolement**, et faites un test **7 jours après le dernier contact à risque** ;
