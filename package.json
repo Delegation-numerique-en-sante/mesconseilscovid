@@ -30,7 +30,7 @@
     "core-js": "3.16.2",
     "dayjs": "^1.10.6",
     "jsdom-global": "^3.0.2",
-    "localforage": "1.7.3",
+    "localforage": "1.10.0",
     "navigo": "7.1.2",
     "pikaday": "^1.8.2",
     "timeago.js": "4.0.2"
