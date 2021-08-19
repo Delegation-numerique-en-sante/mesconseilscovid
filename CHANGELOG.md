@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-08-19
+
+* mise à jour des pays classés rouges
+* mise à jour relative aux voyages
+
 ## 2021-08-18
 
 * précision sur la vaccination et le premier trimestre de grossesse
