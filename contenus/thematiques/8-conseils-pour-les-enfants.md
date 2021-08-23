@@ -119,11 +119,12 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
     Vous ne devez pas envoyer votre enfant à l’école, au collège ou au lycée :
 
-    * en cas de **fièvre** (38 °C ou plus) ou en cas d’apparition de **symptômes** évoquant la Covid chez votre enfant ou un membre de son foyer ;
+    * en cas de **fièvre** (38 °C ou plus)
+    * en cas d’apparition de **symptômes** évoquant la Covid chez votre enfant ou un membre de son foyer ;
     * si votre enfant ou un membre de son foyer a été **testé positif** ;
     * si votre enfant ou un membre de son foyer a été identifié comme **contact à risque**.
 
-    Dans chacun de ces cas, vous êtes tenus d’en informer l’établissement.
+    Dans chacun de ces cas, vous êtes tenus d’en informer l’établissement **au plus tôt**, afin que les mesures appropriées soient rapidement mises en place.
 
 .. question:: Quels sont les autres mesures prévues dans les établissements scolaires face à la crise sanitaire ?
     :level: 3
@@ -154,6 +155,15 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
     Attention à ne pas laisser le produit à portée des jeunes enfants car il existe un risque de projection dans les yeux et d’ingestion accidentelle.
 
+    
+.. question:: Comment préparer mon enfant à subir un test de dépistage nasopharyngé (prélèvement nasal) ?
+    :level: 3
+    
+    L'enjeu est de rassurer votre enfant mais également d'éviter qu'il ne contamine les autres ou qu'il soit contaminé à l'occasion de ce test.
+    Décrivez-lui l'environnement dans lequel le test sera réalisé, les vêtements de protection des professionnels de santé et le déroulement du test (le coton-tige dans le nez). Vous pouvez par exemple lui faire répéter les gestes (lever la tête, respirer par la bouche...) sous forme de jeu à la maison.
+
+    Pendant le test, assurez-vous qu'il porte bien son masque sur la bouche et n'hésitez pas à rester à ses côtés.
+    Si vous emmenez un doudou ou un objet familier, veillez à ce qu'il n'entre pas en contact avec des surfaces qui peuvent être contaminées. Sinon, lavez-le ou laissez le en quarantaine durant 7 jours.
 
 .. question:: Quel sont les précautions pour emmener mon enfant au parc de jeux collectifs (jeux, bacs à sable, points d’eau, etc.) ?
     :level: 3
@@ -275,7 +285,7 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 .. question:: Le collège m’a informé qu’une camarade de classe de ma fille a été testée positive à la Covid, après avoir été contaminée par son père. Cette enfant a un peu de fièvre mais ne tousse pas. Dois-je faire pratiquer un test à ma fille qui n’a aucun symptôme ?
     :level: 3
 
-    **NON**, s’il s’agit d’un seul cas dans la classe et si votre fille n’a pas eu de contact très proche sans masque avec sa camarade (par exemple en mangeant à sa table à la cantine) ; elle peut aller normalement au collège.
+    **NON**, si votre fille n’a pas eu de contact très proche sans masque avec sa camarade (par exemple en mangeant à sa table à la cantine). Le processus de contact-tracing de l'établissement identifiera les élèves qui ont eu un contact à risque avec l'élève positive et qui devront : s'isoler (si non vacciné(e)) et/ou se faire tester. 
 
     Si votre fille présente à son tour dans les jours qui viennent de la fièvre ou de la toux, il faudra la garder à domicile et la faire tester. Le dépistage systématique de l’ensemble de la classe n’est justifié que si le professeur ou 3 enfants sont infectés.
 </div>
