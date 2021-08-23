@@ -161,7 +161,7 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
     L’enjeu est de rassurer votre enfant mais également d’éviter qu’il ne contamine les autres ou qu’il soit contaminé à l’occasion de ce test.
 
-    Décrivez-lui l’environnement dans lequel le test sera réalisé, les vêtements de protection des professionnels de santé et le déroulement du test (le coton-tige dans le nez). Vous pouvez par exemple lui faire répéter les gestes (lever la tête, respirer par la bouche...) sous forme de jeu à la maison.
+    Décrivez-lui l’environnement dans lequel le test sera réalisé, les vêtements de protection des professionnels de santé et le déroulement du test (le coton-tige dans le nez). Vous pouvez par exemple lui faire répéter les gestes (lever la tête, respirer par la bouche…) sous forme de jeu à la maison.
 
     Pendant le test, assurez-vous qu’il porte bien son masque sur la bouche et n’hésitez pas à rester à ses côtés.
 
