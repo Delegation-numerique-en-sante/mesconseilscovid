@@ -105,7 +105,7 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
     Dans les écoles, la règle de la **fermeture de la classe pour une durée de 7 jours dès le premier cas positif** continuera à s’appliquer.
 
-    Dans les collèges et les lycées, un protocole de **contact-tracing** sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif et évincer les élèves non vaccinés durant 7 jours.
+    Dans les collèges et les lycées, un protocole de **contact-tracing** sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves « cas contact » devront poursuivre leurs apprentissages à distance pendant 7 jours, sauf s’ils sont vaccinés.
 
 .. question:: Est-ce que mon enfant devra porter le masque ?
     :level: 3
