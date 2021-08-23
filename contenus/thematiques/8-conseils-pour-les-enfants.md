@@ -255,41 +255,7 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
     Il est primordial de maintenir l’ensemble des vaccinations de vos enfants.
 
     Les consultations pour vaccination ne doivent pas être reportées et les retards de vaccinations doivent être rattrapés.
- 
 
-
-.. question:: Mon enfant de 2 ans a de la diarrhée depuis 2 jours et a vomi plusieurs fois hier ; il devient fébrile et commence à tousser. On m’a parlé de gastro-entérite mais il n’y a pas d’autres cas dans la famille ou à la crèche.  Peut-il s’agir de la Covid ?
-    :level: 3
-
-    Bien que la Covid soit très rare à cet âge, il est prudent de consulter un médecin qui fera pratiquer un test car les troubles digestifs persistants peuvent être dûs au coronavirus. Cette infection est de toute façon le plus souvent bénigne, les enfants ont beaucoup moins de risque d’avoir des formes graves et d’être hospitalisés que les adultes.
-
-
-.. question:: Mon enfant a moins de 6 ans et a le nez qui coule et une toux grasse mais n’a pas de fièvre, dois-je le sortir de l’école maternelle ?
-    :level: 3
-
-    **NON**, sauf s’il a été en contact avec un adulte ou un autre enfant dont l’infection à coronavirus a été prouvée ; il n’y a pas non plus de nécessité de lui faire un test. Il faudra s’assurer de la disparition des symptômes ou au moins de leur amélioration au bout de 3 jours.
-
-
-.. question:: Mon mari (père de l’enfant ci-dessus) est obèse et diabétique, dois-je prendre des précautions particulières ?
-    :level: 3
-
-    **OUI**, dans ce contexte particulier et bien que la Covid soit rare à cet âge, il faut s’assurer que votre mari ne risque pas d’être contaminé par sa fille ou son fils et donc pratiquer un test à votre enfant.
-
-    En attendant le résultat, il faut « isoler » le papa lorsque que votre enfant est au domicile et c’est vous qui devez l’amener à l’école et vous en occuper.
-
-
-.. question:: Mon enfant a plus de 6 ans et a eu mal à la gorge et de la fièvre, je l’ai gardé à la maison. Le médecin traitant a fait un test rapide avec un écouvillon sur les amygdales et a diagnostiqué une angine à streptocoque motivant un traitement antibiotique. Que dois je faire pour l’école ?
-    :level: 3
-
-    Ne lui donnez pas d’anti inflammatoires et seulement du paracétamol en plus de l’antibiotique. Il peut retourner à l’école après 2 jours de traitement à condition qu’il n’ait plus de fièvre. Par contre si les symptômes ne s’améliorent pas ou s’il apparaît une gêne respiratoire, il faut consulter à nouveau et faire pratiquer un test Covid.
-
-
-.. question:: Le collège m’a informé qu’une camarade de classe de ma fille a été testée positive à la Covid, après avoir été contaminée par son père. Cette enfant a un peu de fièvre mais ne tousse pas. Dois-je faire pratiquer un test à ma fille qui n’a aucun symptôme ?
-    :level: 3
-
-    **NON**, si votre fille n’a pas eu de contact très proche sans masque avec sa camarade (par exemple en mangeant à sa table à la cantine). Le processus de *contact tracing* de l’établissement identifiera les élèves qui ont eu un contact à risque avec l’élève positive et qui devront : s’isoler (si non vacciné(e)) et/ou se faire tester.
-
-    Si votre fille présente à son tour dans les jours qui viennent de la fièvre ou de la toux, il faudra la garder à domicile et la faire tester. Le dépistage systématique de l’ensemble de la classe n’est justifié que si le professeur ou 3 enfants sont infectés.
 </div>
 
 <div class="conseils">
