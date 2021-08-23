@@ -96,9 +96,9 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 .. question:: Est-ce que la classe de mon enfant sera ouverte en septembre ?
     :level: 3
 
-    Pour les élèves en **école primaire** ainsi que ceux des classes de **6<sup>e</sup> et 5<sup>e</sup>**, un accueil en **présentiel** sera assuré.
+    **Oui.** Les cours seront assurés en présentiel pour tous les élèves, de la maternelle au lycée.
 
-    Pour les élèves de **4<sup>e</sup>, de 3<sup>e</sup> et de lycée**, un accueil en **présentiel** est privilégié. Un enseignement **hybride** pourra être mis en place si la situation sanitaire l’exige. Les classes pourront être ouvertes ou partiellement ouvertes en fonction de la sévérité de l’épidémie à l’échelle nationale ou locale.
+    Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) prévoit 4 niveaux selon la situation sanitaire, et c’est le **niveau 2** qui s’appliquera à la rentrée. Ce niveau pourra être abaissé ou relevé en fonction de la sévérité de l’épidémie à l’échelle nationale ou locale.
 
 .. question:: Que se passe-t-il si un élève est positif dans la classe de mon enfant ?
     :level: 3
