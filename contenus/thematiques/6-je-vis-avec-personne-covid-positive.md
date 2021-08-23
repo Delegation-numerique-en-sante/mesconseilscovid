@@ -19,7 +19,7 @@
 
 Vous êtes concerné(e) si :
 
-* vous n’avez pas reçu(e) toutes les doses nécéssaires (1, 2 ou 3 doses) ;
+* vous n’avez pas reçu(e) toutes les doses nécessaires (1 ou 2 doses) ;
 * vous avez reçu(e) votre dernière dose depuis moins de 7 jours (Pfizer, Moderna, AstraZeneca) ou moins de 28 jours (Janssen) ;
 * vous souffrez d’une forte immunodépression qui réduit l’efficacité du vaccin.
 
@@ -75,7 +75,7 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 
 Vous êtes concerné(e) si :
 
-* vous avez reçu(e) toutes les doses nécéssaires (1, 2 ou 3 doses) ;
+* vous avez reçu(e) toutes les doses nécessaires (1 ou 2 doses) ;
 * vous avez reçu(e) la dernière dose prévue depuis plus de 7 jours (Pfizer, Moderna, AstraZeneca) ou plus de 28 jours (Janssen)  ;
 * vous ne souffrez pas d’immunodépression. 
 
@@ -83,7 +83,7 @@ Vous êtes concerné(e) si :
 
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
-### 1. Faites un test et isolez-vous
+### 1. Faites un test
 
 <div class="conseil">
 
@@ -107,8 +107,16 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 
 </div>
 
-* s’il est **négatif**, vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale ;
-* s’il est **positif**, il faut vous isoler au moins 10 jours à partir de la date du test, et surveillez l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
+Si le résultat de ce test de contrôle est :
+
+* **négatif** : vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale ;
+* **positif** : il faut vous isoler au moins 10 jours à partir de la date du test, et surveiller l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
+
+<div class="conseil conseil-jaune">
+
+Attention, si vous ressentez des **symptômes** avant la date prévue de votre test de contrôle (17<sup>e</sup> jour), il faut vous faire tester immédiatement et vous isoler en attendant le résultat.
+
+</div>
 
 </details>
 </div>
