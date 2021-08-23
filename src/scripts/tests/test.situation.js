@@ -817,6 +817,36 @@ const matrice = [
         conseils: 'contact-a-risque-vaccine',
     },
     {
+        description: 'Pas testé et contact à risque (guérison < 2 mois)',
+        profil: {
+            vaccins: 'pas_encore',
+            covid_passee: true,
+            _covid_passee_date: joursAvant(55),
+            contact_a_risque: true,
+            contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'aucune',
+            depistage: false,
+        },
+        situation: 'pas_teste_contact_pas_vraiment_a_risque',
+        statut: 'peu-de-risques',
+        conseils: 'contact-a-risque-autre',
+    },
+    {
+        description: 'Pas testé et contact à risque (guérison > 2 mois)',
+        profil: {
+            vaccins: 'pas_encore',
+            covid_passee: true,
+            _covid_passee_date: joursAvant(65),
+            contact_a_risque: true,
+            contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'aucune',
+            depistage: false,
+        },
+        situation: 'pas_teste_contact_a_risque',
+        statut: 'contact-a-risque-sans-test',
+        conseils: 'contact-a-risque-sans-test',
+    },
+    {
         description: 'Pas testé et contact à risque (pas complètement vacciné)',
         profil: {
             vaccins: 'pas_encore',

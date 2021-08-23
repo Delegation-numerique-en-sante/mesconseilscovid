@@ -106,6 +106,8 @@ export default class AlgorithmeOrientation {
             } else {
                 if (completementVaccine) {
                     symptomes = 'contact_a_risque_vaccine'
+                } else if (this.guerisonRecente()) {
+                    symptomes = 'contact_pas_vraiment_a_risque'
                 } else {
                     symptomes = 'contact_a_risque'
                 }
@@ -116,6 +118,10 @@ export default class AlgorithmeOrientation {
             symptomes = 'asymptomatique'
         }
         return symptomes
+    }
+
+    guerisonRecente() {
+        return this.profil.covid_passee && this.profil.joursDepuisCovidPassee() < 60
     }
 
     get sup65() {

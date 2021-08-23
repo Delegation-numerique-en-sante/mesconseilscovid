@@ -630,13 +630,12 @@ export default class Profil {
         )
     }
 
+    joursDepuisCovidPassee() {
+        return differenceEnJours(this.covid_passee_date, new Date())
+    }
+
     _hasCovidPlus(months) {
-        if (this.covid_passee) {
-            const difference = differenceEnJours(this.covid_passee_date, new Date())
-            return difference > months * 30 // jours (approximation).
-        } else {
-            return false
-        }
+        return this.covid_passee && this.joursDepuisCovidPassee() > months * 30 // approximation
     }
 
     hasCovidPlus2Mois() {
