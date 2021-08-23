@@ -238,7 +238,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2" style="border: 1px solid black; padding: 1rem;" valign="middle" height="253" bgcolor="#EEEEEE" align="center"><b>Contact «&nbsp;pas vraiment à risque&nbsp;»</b></td>
+            <td colspan="2" style="border: 1px solid black; padding: 1rem;" valign="middle" height="253" bgcolor="#EEEEEE" align="center"><b>Contact «&nbsp;pas vraiment à risque&nbsp;»</b> (notamment guérison < 2 mois)</td>
             <td style="border: 1px solid black; padding: 1rem;" colspan="2" valign="middle" bgcolor="#DDE8CB" align="center">
                 <a href="../contenus/statuts/statut_personne_fragile.md">
                     statut_personne_fragile.md
