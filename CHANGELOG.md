@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-08-23
+
+* mise à jour des conseils pour les enfants, notamment relatifs à la rentrée
+* prise en compte du cas particulier des vacciné·e·s et du test de contrôle à J+17
+* correctif pour les personnes contact à risque contaminées dans les 2 derniers mois
+
 ## 2021-08-19
 
 * mise à jour des pays classés rouges
