@@ -63,8 +63,10 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 
 </div>
 
-* s’il est **négatif**, vous pourrez lever votre isolement ;
-* s’il est **positif**, restez en isolement au moins 10 jours à partir de la date du test, et surveillez l’apparition de symptômes.
+Si le résultat de ce test de contrôle est :
+
+* **négatif** : vous pourrez lever votre isolement ;
+* **positif** : restez en isolement au moins 10 jours à partir de la date du test, et surveillez l’apparition de symptômes.
 
 </details>
 </div>
@@ -118,8 +120,16 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 
 </div>
 
-* s’il est **négatif**, vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale ;
-* s’il est **positif**, il faut vous isoler au moins 10 jours à partir de la date du test, et surveillez l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
+Si le résultat de ce test de contrôle est :
+
+* **négatif** : vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale ;
+* **positif** : il faut vous isoler au moins 10 jours à partir de la date du test, et surveiller l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
+
+<div class="conseil conseil-jaune">
+
+Attention, si vous ressentez des **symptômes** avant la date prévue de votre test de contrôle (17<sup>e</sup> jour), il faut vous faire tester immédiatement et vous isoler en attendant le résultat.
+
+</div>
 
 </details>
 </div>
