@@ -25,7 +25,7 @@
 
 Vous êtes concerné(e) si :
 
-* vous n’avez pas reçu(e) toutes les doses nécéssaires (1, 2 ou 3 doses) ;
+* vous n’avez pas reçu(e) toutes les doses nécéssaires (1 ou 2 doses) ;
 * vous avez reçu(e) votre dernière dose depuis moins de 7 jours (Pfizer, Moderna, AstraZeneca) ou moins de 28 jours (Janssen) ;
 * vous souffrez d’une forte immunodépression qui réduit l’efficacité du vaccin.
 
@@ -76,7 +76,7 @@ Si votre test est **positif**, les autres membres de votre foyer seront considé
 
 Vous êtes concerné(e) si :
 
-* vous avez reçu(e) toutes les doses nécéssaires (1, 2 ou 3 doses) ;
+* vous avez reçu(e) toutes les doses nécéssaires (1 ou 2 doses) ;
 * vous avez reçu(e) la dernière dose prévue depuis plus de 7 jours (Pfizer, Moderna, AstraZeneca) ou plus de 28 jours (Janssen)  ;
 * vous ne souffrez pas d’immunodépression. 
 
