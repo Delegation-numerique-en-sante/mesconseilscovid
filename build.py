@@ -212,7 +212,8 @@ def index():
 class Thematique:
     path: Path
     title: str
-    content: str
+    body: str
+    header: str
     imgsrc: str
 
     @property
@@ -276,8 +277,16 @@ def get_thematiques():
         html_content = str(render_markdown_file(path))
         title = extract_title(html_content)
         image = extract_image(html_content)
+        header = extract_header(html_content)
+        body = extract_body(html_content)
         thematiques.append(
-            Thematique(path=path, title=title, content=html_content, imgsrc=image)
+            Thematique(
+                path=path,
+                title=title,
+                header=header,
+                body=body,
+                imgsrc=image,
+            )
         )
     return thematiques
 
@@ -290,6 +299,15 @@ def extract_title(html_content):
 def extract_image(html_content):
     _, from_src = html_content.split('<img src="', 1)
     return from_src.split('"', 1)[0]
+
+
+def extract_header(html_content):
+    html_header, _ = html_content.split("</header>", 1)
+    return html_header.split("<header>", 1)[1]
+
+
+def extract_body(html_content):
+    return html_content.split("</header>", 1)[1]
 
 
 def build_responses(source_dir):

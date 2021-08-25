@@ -1,12 +1,12 @@
 # Pass sanitaire, QR code et voyages, que faut-il savoir ?
 
-<div class="illustration">
-    <img src="illustrations/pass_sanitaire.svg" alt="">
-</div>
+<img src="illustrations/pass_sanitaire.svg">
 
-<div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
+<header>
+    <p class="big">Pass sanitaire européen, certificat de vaccination, attestations, QR code… MesConseilsCovid vous propose une synthèse des informations importantes.</p>
+</header>
 
-<p class="big">Pass sanitaire européen, certificat de vaccination, attestations, QR code… MesConseilsCovid vous propose une synthèse des informations importantes.</p>
+<div itemscope itemtype="https://schema.org/FAQPage">
 
 ## Comment faire pour partir en voyage à l’étranger ?
 

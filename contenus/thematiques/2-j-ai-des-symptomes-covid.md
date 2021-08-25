@@ -1,12 +1,10 @@
 # J’ai des symptômes de la Covid, que faire ?
 
-<div class="illustration">
-    <img src="illustrations/symptomesactuels.svg" alt="">
-</div>
+<img src="illustrations/symptomesactuels.svg">
 
-<div id="conseils-personnels" class="conseils">
-
-<p class="big">Vous avez de la <strong>fièvre</strong> ? Une <strong>fatigue</strong> intense ? Des difficulés à <strong>respirer</strong> ? Vous avez peut-être la Covid. Nous vous invitons à faire notre <strong>questionnaire personnalisé rapide</strong> pour obtenir des réponses à votre situation particulière :</p>
+<header>
+    <p class="big">Vous avez de la <strong>fièvre</strong> ? Une <strong>fatigue</strong> intense ? Des difficulés à <strong>respirer</strong> ? Vous avez peut-être la Covid. Nous vous invitons à faire notre <strong>questionnaire personnalisé rapide</strong> pour obtenir des réponses à votre situation particulière :</p>
+</header>
 
 ## Obtenez des conseils adaptés à votre situation en quelques clics
 
@@ -18,6 +16,4 @@
     <a class="button button-outline button-arrow"
         href="/#nom"
         >C’est un(e) proche qui a des symptômes</a>
-</div>
-
 </div>

@@ -1,12 +1,10 @@
 # Je vis avec une personne positive à la Covid, que dois-je faire ?
 
-<div class="illustration">
-    <img src="illustrations/foyer.svg" alt="">
-</div>
+<img src="illustrations/foyer.svg">
 
-<div id="conseils-personnels" class="conseils">
-
-<p class="big">Votre conjoint⸱e, enfant, colocataire… est positif à la Covid et vous ne présentez pas de symptômes ? MesConseilsCovid vous accompagne pour savoir quelle conduite à tenir lorsqu’on est cas contact d’une personne qui partage le même lieu de vie.</p>
+<header>
+    <p class="big">Votre conjoint⸱e, enfant, colocataire… est positif à la Covid et vous ne présentez pas de symptômes ? MesConseilsCovid vous accompagne pour savoir quelle conduite à tenir lorsqu’on est cas contact d’une personne qui partage le même lieu de vie.</p>
+</header>
 
 ## Vous vivez avec une personne positive à la Covid et…
 
@@ -149,6 +147,3 @@ Attention, si vous ressentez des **symptômes** avant la date prévue de votre t
 ### Avoir recours à l’aide à l’isolement
 
 Si votre logement ne permet pas d’isoler la personne positive (adulte) du reste des résidents, l’Assurance Maladie pourra l’aider à trouver un autre logement pour la durée de son isolement.
-
-
-</div>

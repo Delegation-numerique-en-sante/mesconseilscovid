@@ -1,12 +1,12 @@
 # Je souhaite me faire vacciner, que faut-il savoir ?
 
-<div class="illustration">
-    <img src="illustrations/symptomespasses.svg" alt="">
-</div>
+<img src="illustrations/symptomespasses.svg">
 
-<div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
+<header>
+    <p class="big">Vous souhaitez vous faire vacciner contre la Covid ? Voici des réponses à quelques questions courantes sur l’immunité, les effets secondaires et vos antécédents avec la Covid :</p>
+</header>
 
-<p class="big">Vous souhaitez vous faire vacciner contre la Covid ? Voici des réponses à quelques questions courantes sur l’immunité, les effets secondaires et vos antécédents avec la Covid :</p>
+<div itemscope itemtype="https://schema.org/FAQPage">
 
 .. question:: Quand pourrai-je me faire vacciner ?
 
