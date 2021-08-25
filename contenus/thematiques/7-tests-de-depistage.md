@@ -46,9 +46,9 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
         <legend><h3 id="tests-de-depistage-depuis-quand-label">Vous avez des symptômes depuis :</h3></legend>
         <div role="radiogroup" aria-labelledby="tests-de-depistage-depuis-quand-label">
             <input id="tests_de_depistage_depuis_quand_radio_moins_4_jours" type="radio" required name="tests_de_depistage_depuis_quand_radio" value="moins-4-jours">
-            <label for="tests_de_depistage_depuis_quand_radio_moins_4_jours">Moins de 4 jours</label>
+            <label for="tests_de_depistage_depuis_quand_radio_moins_4_jours">4 jours ou moins</label>
             <input id="tests_de_depistage_depuis_quand_radio_plus_4_jours" type="radio" required name="tests_de_depistage_depuis_quand_radio" value="plus-4-jours">
-            <label for="tests_de_depistage_depuis_quand_radio_plus_4_jours">Plus de 4 jours</label>
+            <label for="tests_de_depistage_depuis_quand_radio_plus_4_jours">5 jours ou plus</label>
         </div>
     </fieldset>
     <div class="form-controls">
