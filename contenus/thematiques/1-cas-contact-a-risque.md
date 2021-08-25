@@ -16,7 +16,6 @@
 
 ## Vous êtes cas contact et…
 
-<div class="conseils">
 <details>
 
 .. summary:: vous n’êtes pas vacciné(e) (schéma vaccinal incomplet)
@@ -69,9 +68,7 @@ Si le résultat de ce test de contrôle est :
 * **positif** : restez en isolement au moins 10 jours à partir de la date du test, et surveillez l’apparition de symptômes.
 
 </details>
-</div>
 
-<div class="conseils">
 <details>
 
 .. summary:: vous êtes vacciné(e) (schéma vaccinal complet)
@@ -132,7 +129,6 @@ Attention, si vous ressentez des **symptômes** avant la date prévue de votre t
 </div>
 
 </details>
-</div>
 
 <div class="conseil conseil-jaune">
 

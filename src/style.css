@@ -282,7 +282,7 @@ legend h1 {
 .page-thematique :target {
     background: #ffd;
 }
-.page-thematique .conseils > details > summary {
+.page-thematique .conseils details > summary {
     position: sticky;
     top: 0;
     background: white;
@@ -1332,42 +1332,44 @@ a.no-type::after {
 .conseils details summary {
     cursor: pointer;
 }
-.conseils > details {
+.conseils details {
     display: block;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     transition: box-shadow 0.3s;
     border: 1px solid lightgray;
     padding: 1rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
-.conseils > details > summary {
+.conseils details > summary {
     outline: 0;
     list-style: none;
 }
-.conseils > details:not([open]) > :not(summary) {
+.conseils details:not([open]) > :not(summary) {
     display: none;
 }
-.conseils > details > summary svg {
+.conseils details > summary svg {
     height: 40px;
     width: 60px;
     transition: all 0.4s;
 }
-.conseils > details:hover,
-.conseils > details[open] {
+.conseils details:hover,
+.conseils details[open] {
     outline: 0;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8);
 }
-.conseils > details > summary:focus h3 {
+.conseils details > summary:focus h3 {
     outline: 0;
     border: 3px solid #9a9aff;
 }
-.conseils > details[open] > summary svg {
+.conseils details[open] > summary svg {
     transform: rotate(450deg);
 }
-.conseils > details > summary::marker,
-.conseils > details > summary::-webkit-details-marker {
+.conseils details > summary::marker,
+.conseils details > summary::-webkit-details-marker {
     display: none;
 }
-.conseils > details[open] > summary ~ * {
+.conseils details[open] > summary ~ * {
     animation: open 0.3s ease-in-out;
 }
 @keyframes open {

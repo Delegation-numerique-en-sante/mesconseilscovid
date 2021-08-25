@@ -18,7 +18,6 @@ L’usage du **« Pass sanitaire européen » est généralisé depuis début 
 
 Pour obtenir une réponse à votre question, cliquez sur la situation qui vous correspond le mieux :
 
-<div class="conseils">
 <details>
 
 .. summary:: Je ne suis pas vacciné(e) et je souhaite voyager
@@ -93,9 +92,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
         - respecter un auto-isolement de 7 jours à votre retour en France.
 
 </details>
-</div>
 
-<div class="conseils">
 <details>
 
 .. summary:: Je suis vacciné(e) et je prévois de partir en voyage
@@ -182,9 +179,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
 
 </details>
-</div>
 
-<div class="conseils">
 <details>
 
 .. summary:: Je suis en cours de vaccination (je n’ai pas reçu toutes mes doses)
@@ -259,9 +254,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
         - respecter un auto-isolement de 7 jours à votre retour en France.
 
 </details>
-</div>
 
-<div class="conseils">
 <details>
 
 .. summary:: Je suis guéri(e) de la Covid depuis plus de 11 jours et moins de 6 mois
@@ -306,7 +299,6 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un test RT-PCR négatif de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
 </details>
-</div>
 
 ## <span class="nouveau">nouveau</span> Le « Pass sanitaire » est-il nécessaire pour me déplacer en France ?
 

@@ -10,7 +10,6 @@
 
 ## Vous vivez avec une personne positive à la Covid et…
 
-<div class="conseils">
 <details>
 
 .. summary:: vous n’êtes pas vacciné(e) (schéma vaccinal incomplet)
@@ -64,9 +63,7 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 </div>
 
 </details>
-</div>
 
-<div class="conseils">
 <details>
 
 .. summary:: vous êtes vacciné(e) (schéma vaccinal complet)
@@ -119,7 +116,6 @@ Attention, si vous ressentez des **symptômes** avant la date prévue de votre t
 </div>
 
 </details>
-</div>
 
 
 ## Comment cohabiter avec une personne positive à la Covid ?
