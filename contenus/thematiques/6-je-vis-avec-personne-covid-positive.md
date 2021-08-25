@@ -23,7 +23,7 @@ Vous êtes concerné(e) si :
 * vous souffrez d’une forte immunodépression qui réduit l’efficacité du vaccin.
 
 </div>
-    
+
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
 ### 1. Faites un test et isolez-vous
@@ -74,7 +74,7 @@ Vous êtes concerné(e) si :
 
 * vous avez reçu(e) toutes les doses nécessaires (1 ou 2 doses) ;
 * vous avez reçu(e) la dernière dose prévue depuis plus de 7 jours (Pfizer, Moderna, AstraZeneca) ou plus de 28 jours (Janssen)  ;
-* vous ne souffrez pas d’immunodépression. 
+* vous ne souffrez pas d’immunodépression.
 
 </div>
 

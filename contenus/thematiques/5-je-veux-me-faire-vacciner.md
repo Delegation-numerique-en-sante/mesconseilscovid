@@ -39,7 +39,7 @@
 
 .. question:: Pourrai-je recevoir la 2<sup>e</sup> dose sur mon lieu de vacances ?
 
-    **Oui.** Il suffit pour cela de prendre rendez-vous pour la deuxième injection dans le centre de vaccination de votre lieu de vacances. Dans ce cas, veillez à annuler le rendez-vous que vous aviez pris dans le centre de vaccination de votre lieu de résidence habituel. 
+    **Oui.** Il suffit pour cela de prendre rendez-vous pour la deuxième injection dans le centre de vaccination de votre lieu de vacances. Dans ce cas, veillez à annuler le rendez-vous que vous aviez pris dans le centre de vaccination de votre lieu de résidence habituel.
 
 
 .. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose ?
@@ -76,7 +76,7 @@
 
 .. question:: J’ai déjà eu la Covid, comment le prouver et ne recevoir qu’une seule dose ?
 
-    Lors de votre rendez-vous de vaccination, vous pourrez présenter soit un test de **dépistage positif** réalisé il y a 2 mois ou plus, soit un **test sérologique** (prise de sang qui recherche des anticorps) positif. Certains centres de vaccination proposent de faire un test sérologique rapide ou **TROD** lors du rendez-vous de première injection. Si ce test est positif, alors vous ne recevrez qu’une seule dose de vaccin. Bientôt, ces TROD seront disponibles dans tous les centres de vaccination. 
+    Lors de votre rendez-vous de vaccination, vous pourrez présenter soit un test de **dépistage positif** réalisé il y a 2 mois ou plus, soit un **test sérologique** (prise de sang qui recherche des anticorps) positif. Certains centres de vaccination proposent de faire un test sérologique rapide ou **TROD** lors du rendez-vous de première injection. Si ce test est positif, alors vous ne recevrez qu’une seule dose de vaccin. Bientôt, ces TROD seront disponibles dans tous les centres de vaccination.
 
 
 .. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?
@@ -84,7 +84,7 @@
     Cela dépend :
 
     * si vous avez été testé(e) positif ou positive à la Covid dans les 15 jours suivants votre 1<sup>re</sup> injection, alors vous devez quand même recevoir la 2<sup>e</sup> dose dans un **délai de 2 à 6 mois** après la contamination.
-    * si vous avez été testé(e) positif ou positive à la Covid après le 15<sup>e</sup> jour suivant votre 1<sup>re</sup> injection, alors vous n’avez pas besoin de recevoir une 2<sup>e</sup> dose. Votre contamination a le même effet protecteur que la dose de rappel. 
+    * si vous avez été testé(e) positif ou positive à la Covid après le 15<sup>e</sup> jour suivant votre 1<sup>re</sup> injection, alors vous n’avez pas besoin de recevoir une 2<sup>e</sup> dose. Votre contamination a le même effet protecteur que la dose de rappel.
 
 
 .. question:: Est-ce que je peux attraper la Covid si je suis vacciné(e) ?
