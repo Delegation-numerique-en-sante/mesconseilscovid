@@ -62,6 +62,9 @@
                             <img src="{{ thematique.imgsrc }}" alt="">
                         </div>
                         <div class="conseils">
+                            <div class="date-mise-a-jour">
+                                Dernière mise à jour : le <time datetime="{{ thematique.last_modified.isoformat(timespec='minutes') }}">{{ thematique.last_modified.strftime('%d/%m/%Y') }}</time>.
+                            </div>
                             {{ thematique.header }}
                             {{ thematique.body }}
                         </div>
