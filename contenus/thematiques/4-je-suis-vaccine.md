@@ -11,6 +11,18 @@
 <p class="big">Voici les réponses à vos questions :</p>
 
 
+.. question:: Devrai-je recevoir une troisième dose ?
+
+    Avec le temps, l’efficacité de la protection du vaccin contre l’infection peut diminuer, en particulier face au variant Delta. Pour « booster » cette protection, la HAS recommande un **rappel vaccinal** pour :
+
+    * les personnes de **65 ans et plus**,
+    * les personnes avec des **comorbidités** augmentant le risque de formes graves de Covid.
+
+    L’injection de cette dose de rappel devra avoir lieu après un délai d’**au moins 6 mois**.
+
+    Cette campagne de rappel pourra avoir lieu en même temps que celle contre la **grippe saisonnière**.
+
+
 .. question:: Pourquoi continuer à porter le masque quand on est vacciné(e) ?
 
     Les vaccins contre la Covid vous protègent contre la maladie en réduisant le risque de l’attraper et de faire une forme grave. Ces vaccins sont très efficaces, mais **aucun vaccin ne protège à 100 %**, et cette efficacité peut varier selon les personnes.
