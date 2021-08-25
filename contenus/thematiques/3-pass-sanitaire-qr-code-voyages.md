@@ -370,18 +370,18 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     **Attention**, tous les pays n’acceptent pas tous les justificatifs et en fonction de chaque situation (voyage, évènement…) un justificatif précis pourra vous être demandé. Assurez-vous de bien vérifier quel justificatif vous concerne auprès des organisateurs de l’évènement ou sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 .. question:: Je suis français(e) ou ayant-droit de ressortissant(e) français(e) vacciné(e) à l’étranger (hors UE). Comment obtenir un « Pass sanitaire » valable en France et en Europe ?
-    :level: 3    
+    :level: 3
 
-    Si vous (ou votre conjoint(e) ou enfant) avez été vacciné(e) en dehors de l’UE avec l’un des vaccins reconnus par l’Agence Européenne du Médicament (Pfizer, Moderna, AstraZeneca, Janssen), alors vous pouvez **faire une demande de QR code** valable en France et dans l’espace européen. 
+    Si vous (ou votre conjoint(e) ou enfant) avez été vacciné(e) en dehors de l’UE avec l’un des vaccins reconnus par l’Agence Européenne du Médicament (Pfizer, Moderna, AstraZeneca, Janssen), alors vous pouvez **faire une demande de QR code** valable en France et dans l’espace européen.
     [Rendez-vous sur cette page de service-public.fr](https://www.service-public.fr/particuliers/actualites/A15083) pour être guidé(e) dans cette démarche.
-    
-    En attendant de recevoir ce QR code, vous pouvez effectuer un test de dépistage (gratuit). Son résultat négatif fera office de « Pass sanitaire » pendant 72 h. 
+
+    En attendant de recevoir ce QR code, vous pouvez effectuer un test de dépistage (gratuit). Son résultat négatif fera office de « Pass sanitaire » pendant 72 h.
 
 .. question:: Je suis touriste (non européen) vacciné(e) à l’étranger (hors UE). Comment obtenir un « Pass sanitaire » ?
     :level: 3
-    
-    Si vous êtes âgé(e) de plus de 18 ans, de nationalité extra-européenne et que vous avez été vacciné(e) avec l’un des vaccins reconnus par l’Agence européenne du médicament (Pfizer, Moderna, AstraZeneca, Janssen) vous pouvez obtenir un « Pass sanitaire » (QR code). Pour savoir comment faire la demande, [rendez-vous sur cette page de service-public.fr](https://www.service-public.fr/particuliers/actualites/A15093). 
-    
+
+    Si vous êtes âgé(e) de plus de 18 ans, de nationalité extra-européenne et que vous avez été vacciné(e) avec l’un des vaccins reconnus par l’Agence européenne du médicament (Pfizer, Moderna, AstraZeneca, Janssen) vous pouvez obtenir un « Pass sanitaire » (QR code). Pour savoir comment faire la demande, [rendez-vous sur cette page de service-public.fr](https://www.service-public.fr/particuliers/actualites/A15093).
+
     En attendant, si vous le souhaitez, le résultat négatif d’un test de dépistage de moins de 72 h fera office de « Pass sanitaire ». Attention, les tests de dépistages sont **payants** dans votre situation. Pour trouver un lieu de dépistage (pharmacie ou laboratoire), [consultez cet annuaire sur sante.fr](https://www.sante.fr/cf/centres-depistage-covid.html).
 
 .. question:: Est-ce que je dois obligatoirement avoir un <span lang="en">smartphone</span> pour utiliser le « Pass sanitaire » ?

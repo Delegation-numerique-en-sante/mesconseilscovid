@@ -52,7 +52,7 @@
 
 
 .. question:: Est-ce que la vaccination rend malade, contagieux ou positif ?
-    
+
     **Non, la vaccination ne rend en aucun cas positif**, il n’y a pas de virus actif dans les vaccins. Vous pouvez ressentir des effets secondaires (fièvre, fatigue…) suite à la vaccination, mais vous n’êtes **ni malade, ni contagieux**.
 
     Si vous avez réalisé un [test de dépistage](/tests-de-depistage.html) et qu’il est **positif**, il est probable que vous ayez été contaminé(e). Nous vous encourageons à vous isoler et à [décrire votre situation](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
@@ -63,7 +63,7 @@
     Cela dépend :
 
     * si vous avez été testé(e) positif ou positive à la Covid dans les 15 jours suivants votre 1<sup>re</sup> injection, alors vous devez quand même recevoir la 2<sup>e</sup> dose dans un **délai de 2 à 6 mois** après la contamination.
-    * si vous avez été testé(e) positif ou positive à la Covid après le 15<sup>e</sup> jour suivant votre 1<sup>re</sup> injection, alors vous n’avez pas besoin de recevoir une 2<sup>e</sup> dose. Votre contamination a le même effet protecteur que la dose de rappel. 
+    * si vous avez été testé(e) positif ou positive à la Covid après le 15<sup>e</sup> jour suivant votre 1<sup>re</sup> injection, alors vous n’avez pas besoin de recevoir une 2<sup>e</sup> dose. Votre contamination a le même effet protecteur que la dose de rappel.
 
 
 .. question:: J’ai perdu ou je n’ai pas reçu d’attestation de vaccination, comment faire ?
