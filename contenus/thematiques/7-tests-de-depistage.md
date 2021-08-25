@@ -139,7 +139,6 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pa
 
 ## Quels sont les différents tests de dépistage de la Covid-19 ?
 
-<div class="conseils">
 <details>
 
 .. summary:: Test RT-PCR nasopharyngé
@@ -159,9 +158,7 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pa
     [Cliquez ici pour trouver un lieu de dépistage](https://www.sante.fr/cf/centres-depistage-covid.html) près de chez vous.
 
 </details>
-</div>
 
-<div class="conseils">
 <details>
 
 .. summary:: Test antigénique nasopharyngé
@@ -179,9 +176,7 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pa
     [Cliquez ici pour trouver un lieu de dépistage](https://www.sante.fr/cf/centres-depistage-covid.html) près de chez vous.
 
 </details>
-</div>
 
-<div class="conseils">
 <details>
 
 .. summary:: Test RT-PCR salivaire
@@ -199,9 +194,7 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pa
     [Cliquez ici pour trouver un lieu de dépistage](https://www.sante.fr/cf/centres-depistage-covid.html) près de chez vous.
 
 </details>
-</div>
 
-<div class="conseils">
 <details>
 
 .. summary:: Autotests
@@ -219,7 +212,6 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pa
     Ce type de test est utile à condition de le pratiquer régulièrement (plusieurs fois par semaine).
 
 </details>
-</div>
 
 .. question:: Je souhaite me faire dépister mais les prélèvements nasopharyngés sont impossibles dans mon cas
     :level: 3
