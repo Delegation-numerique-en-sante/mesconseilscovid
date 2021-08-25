@@ -1,12 +1,10 @@
 # Je suis cas contact Covid, que faire ?
 
-<div class="illustration">
-    <img src="illustrations/contactarisque.svg" alt="">
-</div>
+<img src="illustrations/contactarisque.svg">
 
-<div id="conseils-personnels" class="conseils">
-
-<p class="big">Vous avez passé du temps avec une personne <b>positive à la Covid</b> ? Vous avez été contacté·e par l’<b>Assurance Maladie</b> ? Vous avez reçu une notification « Exposition à risque » de l’application <b>TousAntiCovid</b> ?</p>
+<header>
+    <p class="big">Vous avez passé du temps avec une personne <b>positive à la Covid</b> ? Vous avez été contacté·e par l’<b>Assurance Maladie</b> ? Vous avez reçu une notification « Exposition à risque » de l’application <b>TousAntiCovid</b> ?</p>
+</header>
 
 <div class="conseil">
 
@@ -133,7 +131,5 @@ Attention, si vous ressentez des **symptômes** avant la date prévue de votre t
 <div class="conseil conseil-jaune">
 
 **L’Assurance maladie peut vous contacter par SMS** pour vous informer que vous êtes cas contact ou positif et vous inviter à vous isoler. Les SMS peuvent prendre la forme d’un échange guidé, mais **l’Assurance maladie ne vous demandera pas de partager des informations personnelles telles que : numéro de sécurité sociale, numéro de carte bancaire, mot de  passe...** Face à la recrudescence des fraudes, restez vigilants. Pour plus d’information à ce sujet, rendez-vous sur le [site de l’Assurance maladie](https://www.ameli.fr/hauts-de-seine/assure/droits-demarches/principes/attention-appels-courriels-frauduleux).
-
-</div>
 
 </div>

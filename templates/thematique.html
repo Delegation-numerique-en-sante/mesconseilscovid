@@ -57,7 +57,14 @@
             <section id="introduction">
                 <div>
                     <div id="conseils-block" class="block">
-                        {{ thematique.content }}
+                        <h1>{{ thematique.title }}</h1>
+                        <div class="illustration">
+                            <img src="{{ thematique.imgsrc }}" alt="">
+                        </div>
+                        <div class="conseils">
+                            {{ thematique.header }}
+                            {{ thematique.body }}
+                        </div>
                     </div>
                     <div class="feedback-block">
                         {{ meta_feedback_conseils }}

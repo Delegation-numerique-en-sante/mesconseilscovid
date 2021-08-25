@@ -1,10 +1,10 @@
 # Conseils pour les mineurs : vaccination et rentrée
 
-<div class="illustration">
-    <img src="illustrations/pediatriegeneral.svg" alt="">
-</div>
+<img src="illustrations/pediatriegeneral.svg">
 
-<div id="conseils-pediatrie-general" class="conseils">
+<header></header>
+
+<div id="conseils-pediatrie-general">
 
 <div class="conseil">
 
@@ -190,7 +190,7 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
 </div>
 
-<div id="conseils-pediatrie-ecole" class="conseils">
+<div id="conseils-pediatrie-ecole">
 
 ## Questions relatives à la crèche / école
 
@@ -215,7 +215,7 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
 </div>
 
-<div id="conseils-pediatrie-medical" class="conseils">
+<div id="conseils-pediatrie-medical">
 
 ## Questions médicales
 
@@ -258,10 +258,6 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
 </div>
 
-<div class="conseils">
-
 ## Vous avez encore des questions ?
 
 Ligne d’écoute pour les parents, ressources pour les parents et professionnels : [Enfance & Covid](https://eduensemble.org/enfance-covid/).
-
-</div>

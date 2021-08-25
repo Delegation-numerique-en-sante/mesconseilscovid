@@ -1,10 +1,10 @@
 # Les tests de dépistage ?
 
-<div class="illustration">
-    <img src="illustrations/sante.svg" alt="">
-</div>
+<img src="illustrations/sante.svg">
 
-<div id="conseils-personnels" class="conseils" itemscope itemtype="https://schema.org/FAQPage">
+<header></header>
+
+<div itemscope itemtype="https://schema.org/FAQPage">
 
 Depuis le 7 juillet, les tests de dépistage réalisés par un professionnel de santé sont **gratuits**, sans condition de prescription médicale, pour :
 
