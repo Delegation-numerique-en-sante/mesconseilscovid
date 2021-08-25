@@ -4,7 +4,7 @@ import json
 import logging
 import re
 from dataclasses import dataclass
-from datetime import date
+from datetime import date, datetime
 from html.parser import HTMLParser
 from http import HTTPStatus
 from pathlib import Path
@@ -215,6 +215,7 @@ class Thematique:
     body: str
     header: str
     imgsrc: str
+    last_modified: datetime
 
     @property
     def name(self):
@@ -286,6 +287,7 @@ def get_thematiques():
                 header=header,
                 body=body,
                 imgsrc=image,
+                last_modified=datetime.fromtimestamp(path.stat().st_mtime),
             )
         )
     return thematiques

@@ -1564,6 +1564,11 @@ a.no-type::after {
     background-image: url('arrow-right-blue.svg');
 }
 
+.thematique .date-mise-a-jour {
+    font-style: italic;
+    margin: 2rem 0 1rem 0;
+}
+
 @media print {
     a,
     a:link,
