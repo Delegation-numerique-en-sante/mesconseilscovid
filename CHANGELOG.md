@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-08-25
+
+* ajout d’informations sur la 3e dose (rappel vaccinal)
+* clarifie le questionnaire sur les tests de dépistage
+* affiche la date de dernière mise à jour de chaque page thématique
+
 ## 2021-08-23
 
 * mise à jour des conseils pour les enfants, notamment relatifs à la rentrée
