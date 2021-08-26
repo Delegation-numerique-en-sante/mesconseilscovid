@@ -45,6 +45,8 @@
 
     Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée entre 39 et 42 jours (soit 6 semaines) après la première. Exceptionnellement, durant la période estivale, l’injection de la deuxième dose pourra avoir lieu entre 21 et 49 jours (soit 3 à 7 semaines) après la première, afin de permettre à chacun(e) de compléter sa vaccination avant ou après ses vacances d’été.
 
+    Dans le cas d’une 2<sup>e</sup> dose de vaccin ARNm (Pfizer-BioNTech ou Moderna) après une première dose de vaccin **Janssen**, le délai à respecter est d’au moins 4 semaines.
+
 
 .. question:: Quels sont les effets secondaires des vaccins contre la Covid ?
 
@@ -53,14 +55,14 @@
 
 .. question:: Suis-je immunisé(e) après une seule dose de vaccin ?
 
-    Les schémas de vaccination des vaccins Moderna, Comirnaty (Pfizer) et AstraZeneca prévoient l’injection de **2 doses pour une vaccination efficace**. Sans le rappel vaccinal (2<sup>e</sup> dose), votre vaccination n’est pas complète.
+    Les schémas de vaccination des vaccins Moderna, Comirnaty (Pfizer-BioNTech) et AstraZeneca prévoient l’injection de **2 doses pour une vaccination efficace**. Sans le rappel vaccinal (2<sup>e</sup> dose), votre vaccination n’est pas complète.
 
     Il existe des exceptions :
 
     * une personne qui a déjà eu la Covid n’aura besoin que d’une seule dose de vaccin pour être complètement vaccinée ;
     * une personne fortement immunodéprimée recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné(e) par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
 
-    Le vaccin Janssen ne nécessite qu’une seule dose.
+    Le vaccin **Janssen** ne prévoyait au départ qu’une seule dose. Toutefois, pour une protection plus efficace, la HAS recommande maintenant une deuxième dose avec un vaccin à ARNm (Pfizer-BioNTech ou Moderna), à partir de 4 semaines après la première injection.
 
 
 .. question:: Je suis cas contact, puis-je me faire vacciner (1<sup>re</sup> ou 2<sup>e</sup> dose) ?
