@@ -10,13 +10,12 @@
 
 .. question:: Quand pourrai-je me faire vacciner ?
 
-    Les mineurs âgés de plus de 12 ans peuvent se faire vacciner.
+    La vaccination est possible **dès maintenant** pour :
 
-    Vous pouvez vous faire vacciner **dès maintenant** :
+    * toutes les personnes de **18 ans et plus** ;
+    * les personnes mineures **à partir de 12 ans** : tous les détails sur notre [page dédiée aux enfants](/conseils-pour-les-enfants.html).
 
-    * si vous avez entre **12 ans et 17 ans**, sans conditions mais avec une [**autorisation parentale**](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) ;
-    * si vous avez plus de 18 ans, sans conditions ;
-    * si vous êtes **enceinte**, à partir du second trimestre de votre grossesse.
+    Si vous êtes **enceinte**, la vaccination est possible à partir du second trimestre de votre grossesse.
 
 
 .. question:: Où me faire vacciner ?
