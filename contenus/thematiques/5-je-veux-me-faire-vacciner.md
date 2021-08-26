@@ -59,10 +59,10 @@
 
     Il existe des exceptions :
 
-    * une personne qui a déjà eu la Covid n’aura besoin que d’une seule dose de vaccin pour être complètement vaccinée ;
-    * une personne fortement immunodéprimée recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné(e) par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
+    * **une personne qui a déjà eu la Covid** n’aura besoin que d’une seule dose de vaccin pour être complètement vaccinée ;
+    * **une personne fortement immunodéprimée** recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné(e) par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
 
-    Le vaccin **Janssen** ne prévoyait au départ qu’une seule dose. Toutefois, pour une protection plus efficace, la Haute Autorité de Santé (HAS) recommande maintenant une deuxième dose avec un vaccin à ARNm (Pfizer-BioNTech ou Moderna), à partir de 4 semaines après la première injection.
+    **Le vaccin Janssen** ne prévoyait au départ qu’une seule dose. Toutefois, pour une protection plus efficace, la Haute Autorité de Santé (HAS) recommande maintenant une deuxième dose avec un vaccin à ARNm (Pfizer-BioNTech ou Moderna), à partir de 4 semaines après la première injection.
 
 
 .. question:: Je suis cas contact, puis-je me faire vacciner (1<sup>re</sup> ou 2<sup>e</sup> dose) ?
