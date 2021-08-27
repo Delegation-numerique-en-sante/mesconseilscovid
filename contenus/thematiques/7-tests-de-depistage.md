@@ -6,7 +6,7 @@
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
-Depuis le 7 juillet, les tests de dépistage réalisés par un professionnel de santé sont **gratuits**, sans condition de prescription médicale, pour :
+Les tests de dépistage réalisés par un professionnel de santé sont **gratuits**, sans condition de prescription médicale, pour :
 
 * les **résidents en France** ;
 * les français qui résident habituellement à l’étranger ;
@@ -99,13 +99,13 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
 
 <div id="tests-de-depistage-symptomes-moins-4-jours-reponse" class="statut statut-bleu" hidden>
 
-Vous avez des symptômes qui peuvent évoquer la Covid depuis moins de 4 jours, nous vous recommandons de faire un test **antigénique** ou **RT-PCR nasopharyngé**.
+Vous avez des symptômes qui peuvent évoquer la Covid depuis moins de 4 jours, nous vous recommandons de faire un test **antigénique** ou **RT-PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](https://mesconseilscovid.sante.gouv.fr/j-ai-des-symptomes-covid.html).  
 
 </div>
 
 <div id="tests-de-depistage-symptomes-plus-4-jours-reponse" class="statut statut-bleu" hidden>
 
-Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, nous vous recommandons de faire un **test RT-PCR nasopharyngé**.
+Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, nous vous recommandons de faire un **test RT-PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](https://mesconseilscovid.sante.gouv.fr/j-ai-des-symptomes-covid.html).
 
 </div>
 
@@ -113,7 +113,7 @@ Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, 
 
 Vous n’avez pas de symptômes qui peuvent évoquer la Covid mais vous êtes cas contact, nous vous recommandons de faire un **test antigénique** si vous venez de l’apprendre.
 
-Pour un test de contrôle (7 jours après votre contact à risque ), les tests **antigénique** ou **RT-PCR nasopharyngé** sont indiqués.
+Pour un test de contrôle (7 jours après votre contact à risque ), les tests **antigénique** ou **RT-PCR nasopharyngé** sont indiqués.  Consultez notre page thématique [« Je suis cas contact Covid, que faire ? »](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html).
 
 </div>
 
