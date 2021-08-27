@@ -43,6 +43,7 @@ body {
 }
 a {
     color: #000091;
+    text-underline-offset: 3px;
 }
 a:visited {
     color: #3c4167;
