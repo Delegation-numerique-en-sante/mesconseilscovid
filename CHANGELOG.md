@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-08-28
+
+* ajout d’informations sur la 2e dose après Janssen
+* précisions relatives à la vaccination
+* explicite la disponibilité du certificat sur SI-DEP
+
 ## 2021-08-25
 
 * ajout d’informations sur la 3e dose (rappel vaccinal)
