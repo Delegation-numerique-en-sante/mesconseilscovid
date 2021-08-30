@@ -104,6 +104,12 @@ def render_html_question(text, question, level):
 <div itemprop="text">
 {text}</div>
 </div>
+<div class="question-feedback">
+    <legend>Avez-vous trouvé cette réponse utile ?</legend>
+    <button class="">🙁</button>
+    <button class="">😐</button>
+    <button class="">🙂</button>
+</div>
 </div>
 """
 
