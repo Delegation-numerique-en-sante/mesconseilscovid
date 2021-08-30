@@ -99,7 +99,7 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
 
 <div id="tests-de-depistage-symptomes-moins-4-jours-reponse" class="statut statut-bleu" hidden>
 
-Vous avez des symptômes qui peuvent évoquer la Covid depuis moins de 4 jours, nous vous recommandons de faire un test **antigénique** ou **RT-PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](https://mesconseilscovid.sante.gouv.fr/j-ai-des-symptomes-covid.html).  
+Vous avez des symptômes qui peuvent évoquer la Covid depuis moins de 4 jours, nous vous recommandons de faire un test **antigénique** ou **RT-PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](https://mesconseilscovid.sante.gouv.fr/j-ai-des-symptomes-covid.html).
 
 </div>
 
