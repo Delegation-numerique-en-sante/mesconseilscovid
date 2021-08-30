@@ -1522,6 +1522,9 @@ a.no-type::after {
 .thematique #conseils-block form h3 {
     color: #000;
 }
+.thematique #conseils-block form h3 + p {
+    margin: 0.75rem 0;
+}
 .thematique #conseils-block form .back-button + fieldset legend h3 {
     padding-top: 0;
 }

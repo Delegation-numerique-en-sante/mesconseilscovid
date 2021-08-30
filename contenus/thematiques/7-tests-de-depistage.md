@@ -20,9 +20,26 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
 
 </div>
 
-## Quel test dois-je faire ?
 
-<form id="tests-de-depistage-symptomes-form">
+## Quel est le test adapté à ma situation ?
+
+<form id="tests-de-depistage-demarrage-form">
+    <fieldset>
+        <legend>
+            <h3 id="tests-de-depistage-symptomes-label">Faites le test !</h3>
+            <p>En quelques clics, découvrez quel test de dépistage est le plus adapté à votre situation (pass sanitaire, symptômes, cas contact…).</p>
+        </legend>
+    </fieldset>
+    <div class="form-controls">
+        <div class="button-with-progress">
+            <p></p>
+            <input type="submit" class="button button-arrow" value=" C’est parti !   ">
+        </div>
+    </div>
+</form>
+
+<form id="tests-de-depistage-symptomes-form" hidden>
+    <a href="#" data-precedent="demarrage" class="back-button">Retour</a>
     <fieldset class="required">
         <legend><h3 id="tests-de-depistage-symptomes-label">Avez-vous des symptômes qui peuvent évoquer la Covid ?</h3></legend>
         <div role="radiogroup" aria-labelledby="tests-de-depistage-symptomes-label">

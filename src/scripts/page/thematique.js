@@ -82,8 +82,8 @@ function partagePageEnCours() {
 }
 
 function dynamiseLeChoixDuTest() {
-    const form = document.querySelector('#tests-de-depistage-symptomes-form')
-    gereSymptomes(form)
+    const form = document.querySelector('#tests-de-depistage-demarrage-form')
+    gereDemarrage(form)
 }
 
 function transitionneVersFormulaire(nom) {
@@ -91,6 +91,7 @@ function transitionneVersFormulaire(nom) {
     showElement(form)
     gereBoutonRetour(form)
     const correspondance = {
+        'demarrage': gereDemarrage,
         'symptomes': gereSymptomes,
         'depuis-quand': gereDepuisQuand,
         'cas-contact': gereCasContact,
@@ -131,6 +132,14 @@ function gereBoutonRefaire() {
                 inputWithInitial.removeAttribute('data-initial-value')
             }
         )
+        transitionneVersFormulaire('symptomes')
+    })
+}
+
+function gereDemarrage(form) {
+    form.addEventListener('submit', (event) => {
+        event.preventDefault()
+        hideElement(form)
         transitionneVersFormulaire('symptomes')
     })
 }

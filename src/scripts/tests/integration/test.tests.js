@@ -1,5 +1,12 @@
 import { assert } from 'chai'
 
+async function cEstParti(page) {
+    const bouton = await page.waitForSelector(
+        '#tests-de-depistage-demarrage-form >> text="C’est parti !"'
+    )
+    await bouton.click()
+}
+
 async function remplirSymptomes(page, reponse) {
     const checkbox_label = await page.waitForSelector(
         `#tests-de-depistage-symptomes-form label[for="tests_de_depistage_symptomes_radio_${reponse}"]`
@@ -70,6 +77,8 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
+        await cEstParti(page)
+
         // Avec des symptômes.
         await remplirSymptomes(page, 'oui')
         // De moins de 4 jours.
@@ -85,6 +94,8 @@ describe('Tests', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
+
+        await cEstParti(page)
 
         // Avec des symptômes.
         await remplirSymptomes(page, 'oui')
@@ -102,6 +113,8 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
+        await cEstParti(page)
+
         // Sans symptômes.
         await remplirSymptomes(page, 'non')
         // Avec cas contact.
@@ -117,6 +130,8 @@ describe('Tests', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
+
+        await cEstParti(page)
 
         // Sans symptômes.
         await remplirSymptomes(page, 'non')
@@ -138,6 +153,8 @@ describe('Tests', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
+
+        await cEstParti(page)
 
         // Sans symptômes.
         await remplirSymptomes(page, 'non')
@@ -167,6 +184,8 @@ describe('Tests', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
+
+        await cEstParti(page)
 
         // Formulaire initial (symptômes).
         let formLegend = await page.waitForSelector(
@@ -208,6 +227,8 @@ describe('Tests', function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
+
+        await cEstParti(page)
 
         // On remplit un formulaire jusqu’à l’affichage du statut.
         await remplirSymptomes(page, 'oui')
