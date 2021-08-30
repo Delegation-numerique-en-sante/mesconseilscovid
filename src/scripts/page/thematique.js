@@ -1,6 +1,6 @@
 import { bindImpression } from '../actions'
 import { hideElement, hideSelector, showElement } from '../affichage'
-import { bindFeedback } from '../feedback'
+import { bindFeedback, opacityTransition } from '../feedback'
 import {
     getRadioValue,
     toggleFormButtonOnRadioRequired,
@@ -23,6 +23,7 @@ export function pageThematique(app) {
     )
     ouvreDetailsSiFragment()
     partagePageEnCours()
+    feedbackPageEnCours(app)
     // À discuter : est-ce que l’on veut du générique ?
     if (document.body.dataset.thematiqueName === 'tests-de-depistage') {
         dynamiseLeChoixDuTest()
@@ -78,6 +79,34 @@ function partagePageEnCours() {
             encodeURIComponent(url)
         )
         partageLink.href = href
+    })
+}
+
+function feedbackPageEnCours(app) {
+    const feedbackQuestionsForms = document.querySelectorAll('form.question-feedback')
+    Array.from(feedbackQuestionsForms).forEach((feedbackQuestionForm) => {
+        const title = feedbackQuestionForm.parentNode.querySelector('h2')
+        const question = title.innerText.substring(
+            0,
+            title.innerText.length - ' #'.length
+        )
+        feedbackQuestionForm.addEventListener('submit', (event) => {
+            event.preventDefault()
+            const choix = event.submitter.dataset.value
+            app.plausible('Avis par question', {
+                reponse: `${question} : ${choix}`,
+            })
+            const reponse = event.submitter.value
+            opacityTransition(feedbackQuestionForm, 500, (feedbackQuestionForm) => {
+                feedbackQuestionForm.style.color = '#000'
+                const legend = feedbackQuestionForm.querySelector('legend')
+                legend.innerHTML = `${legend.innerText} ${reponse}`
+                const div = document.createElement('div')
+                const merci = document.createTextNode('Merci pour votre avis !')
+                div.appendChild(merci)
+                feedbackQuestionForm.querySelector('div').replaceWith(div)
+            })
+        })
     })
 }
 

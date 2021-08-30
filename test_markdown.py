@@ -135,12 +135,14 @@ class TestQuestionDirective:
                 </ul>
                 </div>
                 </div>
-                <div class="question-feedback">
+                <form class="question-feedback">
                     <legend>Avez-vous trouvé cette réponse utile ?</legend>
-                    <button class="">🙁</button>
-                    <button class="">😐</button>
-                    <button class="">🙂</button>
-                </div>
+                    <div>
+                        <input type="submit" class="button-outline" data-value="oui" value="🙂 Oui" />
+                        <input type="submit" class="button-outline" data-value="bof" value="😐 Bof" />
+                        <input type="submit" class="button-outline" data-value="non" value="🙁 Non" />
+                    </div>
+                </form>
                 </div>
                 """
             )
@@ -181,12 +183,14 @@ class TestQuestionDirective:
                 </ul>
                 </div>
                 </div>
-                <div class="question-feedback">
+                <form class="question-feedback">
                     <legend>Avez-vous trouvé cette réponse utile ?</legend>
-                    <button class="">🙁</button>
-                    <button class="">😐</button>
-                    <button class="">🙂</button>
-                </div>
+                    <div>
+                        <input type="submit" class="button-outline" data-value="oui" value="🙂 Oui" />
+                        <input type="submit" class="button-outline" data-value="bof" value="😐 Bof" />
+                        <input type="submit" class="button-outline" data-value="non" value="🙁 Non" />
+                    </div>
+                </form>
                 </div>
                 """
             )
