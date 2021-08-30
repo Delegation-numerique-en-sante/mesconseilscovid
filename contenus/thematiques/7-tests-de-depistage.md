@@ -166,7 +166,7 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pa
 .. question:: Le test antigénique nasopharyngé (prélèvement nasal)
     :level: 4
 
-    Le test antigénique permet d’avoir le résultat plus rapidement, mais il est moins fiable que les tests réalisés en laboratoire. C’est pourquoi, il n’est pas recommandé pour le dépistage des personnes qui ne présentent pas de symptômes (sauf en cas de contact à risque).
+    Le test antigénique permet d’avoir le résultat plus rapidement, mais il est moins fiable que les tests réalisés en laboratoire.
 
 .. question:: Où faire un test antigénique nasopharyngé (prélèvement nasal) ?
     :level: 4
