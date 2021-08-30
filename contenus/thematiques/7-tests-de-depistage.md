@@ -24,7 +24,7 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
 
 <form id="tests-de-depistage-symptomes-form">
     <fieldset class="required">
-        <legend><h3 id="tests-de-depistage-symptomes-label">J’ai des symptômes qui peuvent évoquer la Covid :</h3></legend>
+        <legend><h3 id="tests-de-depistage-symptomes-label">Avez-vous des symptômes qui peuvent évoquer la Covid ?</h3></legend>
         <div role="radiogroup" aria-labelledby="tests-de-depistage-symptomes-label">
             <input id="tests_de_depistage_symptomes_radio_oui" type="radio" required name="tests_de_depistage_symptomes_radio" value="oui">
             <label for="tests_de_depistage_symptomes_radio_oui">Oui</label>
@@ -43,12 +43,12 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
 <form id="tests-de-depistage-depuis-quand-form" hidden>
     <a href="#" data-precedent="symptomes" class="back-button">Retour</a>
     <fieldset class="required" id="tests-de-depistage-depuis-quand">
-        <legend><h3 id="tests-de-depistage-depuis-quand-label">Vous avez des symptômes depuis :</h3></legend>
+        <legend><h3 id="tests-de-depistage-depuis-quand-label">Depuis quand avez-vous des symptômes ?</h3></legend>
         <div role="radiogroup" aria-labelledby="tests-de-depistage-depuis-quand-label">
             <input id="tests_de_depistage_depuis_quand_radio_moins_4_jours" type="radio" required name="tests_de_depistage_depuis_quand_radio" value="moins-4-jours">
-            <label for="tests_de_depistage_depuis_quand_radio_moins_4_jours">4 jours ou moins</label>
+            <label for="tests_de_depistage_depuis_quand_radio_moins_4_jours">depuis 4 jours ou moins</label>
             <input id="tests_de_depistage_depuis_quand_radio_plus_4_jours" type="radio" required name="tests_de_depistage_depuis_quand_radio" value="plus-4-jours">
-            <label for="tests_de_depistage_depuis_quand_radio_plus_4_jours">5 jours ou plus</label>
+            <label for="tests_de_depistage_depuis_quand_radio_plus_4_jours">depuis 5 jours ou plus</label>
         </div>
     </fieldset>
     <div class="form-controls">
@@ -62,7 +62,7 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
 <form id="tests-de-depistage-cas-contact-form" hidden>
     <a href="#" data-precedent="symptomes" class="back-button">Retour</a>
     <fieldset class="required" id="tests-de-depistage-cas-contact">
-        <legend><h3 id="tests-de-depistage-cas-contact-label">Je n’ai pas de symptômes mais je suis cas contact :</h3></legend>
+        <legend><h3 id="tests-de-depistage-cas-contact-label">Êtes-vous cas contact ?</h3></legend>
         <div role="radiogroup" aria-labelledby="tests-de-depistage-cas-contact-label">
             <input id="tests_de_depistage_cas_contact_radio_oui" type="radio" required name="tests_de_depistage_cas_contact_radio" value="oui">
             <label for="tests_de_depistage_cas_contact_radio_oui">Oui</label>
