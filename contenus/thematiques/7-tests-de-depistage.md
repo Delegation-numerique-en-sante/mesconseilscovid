@@ -81,12 +81,12 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
 <form id="tests-de-depistage-auto-test-form" hidden>
     <a href="#" data-precedent="cas-contact" class="back-button">Retour</a>
     <fieldset id="tests-de-depistage-auto-test">
-        <legend><h3 id="tests-de-depistage-auto-test-label">Je n’ai pas de symptômes, je ne suis pas cas contact mais j’ai fait un auto-test et il est :</h3></legend>
+        <legend><h3 id="tests-de-depistage-auto-test-label">Je veux faire un test pour...</h3></legend>
         <div role="radiogroup" aria-labelledby="tests-de-depistage-auto-test-label">
             <input id="tests_de_depistage_auto_test_radio_oui" type="radio" required name="tests_de_depistage_auto_test_radio" value="oui">
-            <label for="tests_de_depistage_auto_test_radio_oui">Positif</label>
+            <label for="tests_de_depistage_auto_test_radio_oui">confirmer un autotest positif</label>
             <input id="tests_de_depistage_auto_test_radio_non" type="radio" required name="tests_de_depistage_auto_test_radio" value="non">
-            <label for="tests_de_depistage_auto_test_radio_non">Négatif</label>
+            <label for="tests_de_depistage_auto_test_radio_non">autre cas : pass sanitaire, visite à une personne vulnérable, etc.</label>
         </div>
     </fieldset>
     <div class="form-controls">
@@ -125,7 +125,7 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pa
 
 <div id="tests-de-depistage-pas-symptomes-pas-cas-contact-auto-test-non-reponse" class="statut statut-bleu" hidden>
 
-Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pas cas contact et votre auto-test est négatif :
+Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pas cas contact et :
 
 * Si vous souhaitez obtenir un [Pass sanitaire](/pass-sanitaire-qr-code-voyages.html), un test négatif **RT-PCR nasopharyngé** ou **antigénique** réalisé il y a moins de 48 h pour l’usage en France et 72 h pour le contrôle aux frontières est nécessaire.
 * Si vous rendez visite à des personnes vulnérables, un test **antigénique** ou **RT-PCR nasopharyngé** est indiqué.
