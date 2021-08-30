@@ -38,7 +38,7 @@ export default {
     '36': 'https://www.indre.gouv.fr/Politiques-publiques/Securite-et-protection-de-la-population/COVID-19',
     '37': 'https://www.indre-et-loire.gouv.fr/Actualites/COVID-19-Deconfinement-phase-2',
     '38': 'http://www.isere.gouv.fr/Actualites/Actualite-des-particuliers/Actualites-COVID-de-RENTREE-2020',
-    '39': 'http://www.isere.gouv.fr/Politiques-publiques/Risques/Risques-sanitaires/Covid-19',
+    '39': 'https://www.jura.gouv.fr/Politiques-publiques/Sante/COVID-19/COVID-19-Toutes-les-informations-utiles-liees-a-l-epidemie',
     '40': 'http://www.landes.gouv.fr/covid-19-point-sur-la-situation-dans-les-landes-r887.html',
     '41': 'https://www.loir-et-cher.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-en-Loir-et-Cher',
     '42': 'http://www.loire.gouv.fr/covid-19-point-de-situation-dans-la-loire-r1747.html',
