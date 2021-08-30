@@ -5,17 +5,16 @@ import { estPageThematique } from './page/thematique'
 export function injectFeedbackDifficultes(targetElement) {
     cloneElementInto(document.querySelector('#feedback-difficultes'), targetElement)
 }
+export function opacityTransition(component, delay, callback) {
+    component.style.transition = `opacity ${delay / 1000}s`
+    component.style.opacity = '0'
+    window.setTimeout(() => {
+        component.style.opacity = '1'
+        callback(component)
+    }, delay)
+}
 
 export function bindFeedback(component, app) {
-    function opacityTransition(component, delay, callback) {
-        component.style.transition = `opacity ${delay / 1000}s`
-        component.style.opacity = '0'
-        window.setTimeout(() => {
-            component.style.opacity = '1'
-            callback(component)
-        }, delay)
-    }
-
     function askForMoreFeedback(feedback, component) {
         const transitionDelay = component.dataset.feedbackTransitionDelay
 

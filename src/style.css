@@ -1070,6 +1070,7 @@ a.button-arrow {
     background-position: 95% center;
     background-repeat: no-repeat;
 }
+input.button-outline,
 button.button-outline,
 a.button-outline {
     background-color: white;
@@ -1137,28 +1138,24 @@ a.button-feedback-social-whatsapp {
 }
 
 .question-feedback {
-    color: #777;
+    color: #777676;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
 }
 .question-feedback legend {
     margin-right: 0.5rem;
     font-size: 14px;
 }
-.question-feedback button {
-    border: none;
-    background: none;
-    filter: grayscale(66%);
-    display: inline-block;
-    font-size: 16px;
-    width: 28px;
-    height: 24px;
+.question-feedback div {
+    display: flex;
+    justify-content: space-around;
+    width: 111%;
 }
-.question-feedback button:hover {
-    filter: grayscale(0%);
-    cursor: pointer;
-    font-size: larger;
+.question-feedback input[type='submit'] {
+    margin: 0.5rem;
 }
 
 @media only screen and (min-width: 680px) {
