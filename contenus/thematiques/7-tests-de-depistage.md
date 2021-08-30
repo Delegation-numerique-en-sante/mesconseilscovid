@@ -9,8 +9,8 @@
 <form id="tests-de-depistage-demarrage-form">
     <fieldset>
         <legend>
-            <h3 id="tests-de-depistage-symptomes-label">Faites le test !</h3>
-            <p>En quelques clics, découvrez quel test de dépistage est le plus adapté à votre situation (pass sanitaire, symptômes, cas contact…).</p>
+            <h3 id="tests-de-depistage-symptomes-label">Pass sanitaire, symptômes, cas contact ?</h3>
+            <p>En quelques clics, découvrez quel test de dépistage est le plus adapté à votre situation.</p>
         </legend>
     </fieldset>
     <div class="form-controls">
