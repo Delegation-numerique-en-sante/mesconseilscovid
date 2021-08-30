@@ -34,7 +34,7 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
     </fieldset>
     <div class="form-controls">
         <div class="button-with-progress">
-            <p id="aria-description-progress-tests-de-depistage" class="progress">Il vous reste moins de 3 étapes</p>
+            <p id="aria-description-progress-tests-de-depistage" class="progress">Il vous reste moins de 2 étapes</p>
             <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-tests-de-depistage">
         </div>
     </div>
@@ -53,7 +53,7 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
     </fieldset>
     <div class="form-controls">
         <div class="button-with-progress">
-            <p id="aria-description-progress-tests-de-depistage" class="progress">Plus qu’une étape !</p>
+            <p id="aria-description-progress-tests-de-depistage" class="progress">C’est la dernière étape !</p>
             <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-tests-de-depistage">
         </div>
     </div>
@@ -72,7 +72,7 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
     </fieldset>
     <div class="form-controls">
         <div class="button-with-progress">
-            <p id="aria-description-progress-tests-de-depistage" class="progress">Il vous reste moins de 2 étapes</p>
+            <p id="aria-description-progress-tests-de-depistage" class="progress">Plus qu’une étape</p>
             <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-tests-de-depistage">
         </div>
     </div>
@@ -91,7 +91,7 @@ Les touristes non européens peuvent bénéficier de la gratuité sur présentat
     </fieldset>
     <div class="form-controls">
         <div class="button-with-progress">
-            <p id="aria-description-progress-tests-de-depistage" class="progress">Plus qu’une étape !</p>
+            <p id="aria-description-progress-tests-de-depistage" class="progress">C’est la dernière étape !</p>
             <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-tests-de-depistage">
         </div>
     </div>
