@@ -62,7 +62,14 @@ app = FeedbackApp()
 @app.route("/feedback")
 class FeedbackView:
 
-    KIND_EMOJI = {"flag": ":golf:", "positif": ":+1:", "negatif": ":-1:"}
+    KIND_EMOJI = {
+        "flag": ":golf:",
+        "positif": ":+1:",
+        "negatif": ":-1:",
+        "oui": ":slightly_smiling_face:",
+        "bof": ":neutral_face:",
+        "non": ":slightly_frowning_face:",
+    }
 
     async def on_post(self, request, response):
         payload = request.json
@@ -73,11 +80,17 @@ class FeedbackView:
         except KeyError:
             raise HttpError(HTTPStatus.BAD_REQUEST)
 
-        message = f"{self.KIND_EMOJI[kind]} ({page}): {message}"
+        # Facultatif: question (pages thématiques)
+        question = payload.get("question")
+        if question:
+            page += f" → {question}"
 
+        # Facultatif: navigateur
         user_agent = request.headers.get("USER-AGENT")
         if user_agent:
             message += f" [envoyé depuis {parse(user_agent)}]"
+
+        message = f"{self.KIND_EMOJI.get(kind, ':question:')} ({page}): {message}"
 
         if request.host.startswith("127.0.0.1"):
             print(message)
