@@ -1137,25 +1137,29 @@ a.button-feedback-social-whatsapp {
     margin-left: 1rem;
 }
 
-.question-feedback {
-    color: #777676;
+.thematique #conseils-block form.question-feedback {
+    color: #656565;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     margin-top: 2rem;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    font-size: 14px;
 }
 .question-feedback legend {
-    margin-right: 0.5rem;
-    font-size: 14px;
+    margin: 0.25rem 0;
 }
 .question-feedback div {
     display: flex;
     justify-content: space-around;
-    width: 111%;
+    width: 100%;
+    max-width: 20rem;
 }
 .question-feedback input[type='submit'] {
-    margin: 0.5rem;
+    font-size: 13px;
+    margin: 0.25rem;
 }
 
 @media only screen and (min-width: 680px) {
