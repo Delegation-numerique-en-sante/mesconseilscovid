@@ -98,18 +98,64 @@ function feedbackPageEnCours(app) {
             })
             const reponse = event.submitter.value
             opacityTransition(feedbackQuestionForm, 500, (feedbackQuestionForm) => {
-                feedbackQuestionForm.style.color = '#656565'
-                const legend = feedbackQuestionForm.querySelector('legend')
-                legend.innerHTML = `
-                    <p>${legend.innerText}</p>
-                    <p>${reponse}</p>
-                    Merci pour votre avis !
-                    `
-                const oldChild = feedbackQuestionForm.querySelector('div')
-                feedbackQuestionForm.removeChild(oldChild)
+                switch (choix) {
+                    case 'non':
+                    case 'bof':
+                        demandeRemarques(feedbackQuestionForm, choix, question, reponse)
+                        break
+                    case 'oui':
+                        afficheRemerciements(feedbackQuestionForm, choix, reponse)
+                        break
+                }
             })
         })
     })
+}
+
+function demandeRemarques(feedbackQuestionForm, choix, question, reponse) {
+    const formulaire = document.createElement('form')
+    formulaire.classList.add('feedback-form', 'question-feedback')
+    formulaire.innerHTML = `
+        <fieldset>
+            <p role="status">Merci pour votre retour.</p>
+            <label for="message_conseils">Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?</label>
+            <textarea id="message_conseils" name="message" rows="9" cols="20" required></textarea>
+        </fieldset>
+        <div class="form-controls">
+            <input type="submit" class="button" value="Envoyer mes remarques">
+        </div>
+    `
+    feedbackQuestionForm.parentNode.replaceChild(formulaire, feedbackQuestionForm)
+    formulaire.addEventListener('submit', (event) => {
+        event.preventDefault()
+        const feedbackHost = document.body.dataset.statsUrl
+        let message = event.target.elements.message.value
+        const page = document.location.pathname.slice(1)
+        const payload = {
+            kind: choix,
+            message: message,
+            page: page,
+            question: question,
+        }
+        const request = new XMLHttpRequest()
+        request.open('POST', feedbackHost + '/feedback', true)
+        request.setRequestHeader('Content-Type', 'application/json')
+        request.send(JSON.stringify(payload))
+
+        afficheRemerciements(formulaire, choix, reponse)
+    })
+}
+
+function afficheRemerciements(feedbackQuestionForm, choix, reponse) {
+    const remerciements = document.createElement('div')
+    remerciements.style.color = '#656565'
+    remerciements.style.textAlign = 'center'
+    remerciements.style.border = '2px solid #d5dbef'
+    remerciements.innerHTML = `
+        <p>Votre réponse : ${reponse}</p>
+        <p>Merci pour votre avis !</p>
+        `
+    feedbackQuestionForm.parentNode.replaceChild(remerciements, feedbackQuestionForm)
 }
 
 function dynamiseLeChoixDuTest() {
