@@ -136,12 +136,14 @@ class TestQuestionDirective:
                 </div>
                 </div>
                 <form class="question-feedback">
-                    <legend>Avez-vous trouvé cette réponse utile ?</legend>
-                    <div>
-                        <input type="submit" class="button-outline" data-value="oui" value="🙂 Oui" />
-                        <input type="submit" class="button-outline" data-value="bof" value="😐 Bof" />
-                        <input type="submit" class="button-outline" data-value="non" value="🙁 Non" />
-                    </div>
+                    <fieldset>
+                        <legend>Avez-vous trouvé cette réponse utile ?</legend>
+                        <div>
+                            <input type="submit" class="button-outline" data-value="oui" value="🙂 Oui" />
+                            <input type="submit" class="button-outline" data-value="bof" value="😐 Bof" />
+                            <input type="submit" class="button-outline" data-value="non" value="🙁 Non" />
+                        </div>
+                    </fieldset>
                 </form>
                 </div>
                 """
@@ -184,12 +186,14 @@ class TestQuestionDirective:
                 </div>
                 </div>
                 <form class="question-feedback">
-                    <legend>Avez-vous trouvé cette réponse utile ?</legend>
-                    <div>
-                        <input type="submit" class="button-outline" data-value="oui" value="🙂 Oui" />
-                        <input type="submit" class="button-outline" data-value="bof" value="😐 Bof" />
-                        <input type="submit" class="button-outline" data-value="non" value="🙁 Non" />
-                    </div>
+                    <fieldset>
+                        <legend>Avez-vous trouvé cette réponse utile ?</legend>
+                        <div>
+                            <input type="submit" class="button-outline" data-value="oui" value="🙂 Oui" />
+                            <input type="submit" class="button-outline" data-value="bof" value="😐 Bof" />
+                            <input type="submit" class="button-outline" data-value="non" value="🙁 Non" />
+                        </div>
+                    </fieldset>
                 </form>
                 </div>
                 """
