@@ -40,6 +40,10 @@ jobs:
         run: |
           make test-tools
 
+      - name: Run feedback tests
+        run: |
+          make test-feedback
+
       - name: Check versions
         run: |
           make check-versions

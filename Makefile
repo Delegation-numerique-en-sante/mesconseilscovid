@@ -54,7 +54,7 @@ test-tools:
 	pytest test_*.py
 
 test-feedback:
-	tox -c feedback/tox.ini
+	tox -e py38 -c feedback/tox.ini
 
 check: check-links check-versions check-orphelins check-diagrammes check-service-worker
 
