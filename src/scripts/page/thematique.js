@@ -98,14 +98,15 @@ function feedbackPageEnCours(app) {
             })
             const reponse = event.submitter.value
             opacityTransition(feedbackQuestionForm, 500, (feedbackQuestionForm) => {
-                feedbackQuestionForm.style.color = '#000'
+                feedbackQuestionForm.style.color = '#656565'
                 const legend = feedbackQuestionForm.querySelector('legend')
-                legend.innerHTML = `${legend.innerText} ${reponse}`
+                legend.innerHTML = `
+                    <p>${legend.innerText}</p>
+                    <p>${reponse}</p>
+                    Merci pour votre avis !
+                    `
                 const oldChild = feedbackQuestionForm.querySelector('div')
-                const newChild = document.createElement('div')
-                const merci = document.createTextNode('Merci pour votre avis !')
-                newChild.appendChild(merci)
-                feedbackQuestionForm.replaceChild(newChild, oldChild)
+                feedbackQuestionForm.removeChild(oldChild)
             })
         })
     })
