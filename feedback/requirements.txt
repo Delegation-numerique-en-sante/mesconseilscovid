@@ -1,9 +1,9 @@
 attrs==21.2.0
 autoroutes==0.3.5
 biscuits==0.3.0
-dataclasses-json==0.5.5
+dataclasses-json==0.3.2
 gunicorn==20.1.0
-httptools==0.3.0
+httptools==0.2.0
 importlib-metadata==3.1.0
 iniconfig==1.1.1
 marshmallow==3.13.0
@@ -26,5 +26,5 @@ typing-extensions==3.10.0.2
 typing-inspect==0.7.1
 ua-parser==0.10.0
 user-agents==2.2.0
-websockets==9.1
+websockets==8.1
 zipp==3.5.0
