@@ -101,10 +101,11 @@ function feedbackPageEnCours(app) {
                 feedbackQuestionForm.style.color = '#000'
                 const legend = feedbackQuestionForm.querySelector('legend')
                 legend.innerHTML = `${legend.innerText} ${reponse}`
-                const div = document.createElement('div')
+                const oldChild = feedbackQuestionForm.querySelector('div')
+                const newChild = document.createElement('div')
                 const merci = document.createTextNode('Merci pour votre avis !')
-                div.appendChild(merci)
-                feedbackQuestionForm.querySelector('div').replaceWith(div)
+                newChild.appendChild(merci)
+                feedbackQuestionForm.replaceChild(newChild, oldChild)
             })
         })
     })
