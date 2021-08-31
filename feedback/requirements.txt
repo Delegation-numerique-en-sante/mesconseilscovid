@@ -22,7 +22,7 @@ roll==0.13.0
 six==1.16.0
 stringcase==1.2.0
 toml==0.10.2
-typing-extensions==3.10.0.1
+typing-extensions==3.10.0.2
 typing-inspect==0.7.1
 ua-parser==0.10.0
 user-agents==2.2.0
