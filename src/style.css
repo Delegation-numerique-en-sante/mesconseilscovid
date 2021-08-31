@@ -284,6 +284,10 @@ legend h1 {
     background: #ffd;
 }
 .page-thematique .conseils details > summary {
+    display: flex;
+    flex-direction: column;
+}
+.page-thematique .conseils details > summary h3 {
     position: sticky;
     top: 0;
     background: white;
