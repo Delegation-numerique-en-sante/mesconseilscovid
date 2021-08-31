@@ -22,7 +22,11 @@ def app(monkeypatch):
 async def test_post_feedback_without_user_agent(client, app):
     resp = await client.post(
         "/feedback",
-        {"kind": "flag", "message": "J’ai rien compris", "page": "introduction",},
+        {
+            "kind": "flag",
+            "message": "J’ai rien compris",
+            "page": "introduction",
+        },
     )
     assert resp.status == HTTPStatus.ACCEPTED
     assert json.loads(resp.body) == {
@@ -36,7 +40,11 @@ async def test_post_feedback_without_user_agent(client, app):
 async def test_post_feedback_with_user_agent(client, app):
     resp = await client.post(
         "/feedback",
-        {"kind": "flag", "message": "J’ai rien compris", "page": "introduction",},
+        {
+            "kind": "flag",
+            "message": "J’ai rien compris",
+            "page": "introduction",
+        },
         headers={
             "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B179 Safari/7534.48.3",
         },
@@ -48,6 +56,29 @@ async def test_post_feedback_with_user_agent(client, app):
     app.bot.chat.send.assert_called_once_with(
         "abcd1234",
         ":golf: (introduction): J’ai rien compris [envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1]",
+    )
+
+
+async def test_post_question_feedback(client, app):
+    resp = await client.post(
+        "/feedback",
+        {
+            "kind": "bof",
+            "message": "Bla bla",
+            "page": "cas-contact-a-risque.html",
+            "question": "Dois-je m’isoler ?",
+        },
+        headers={
+            "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B179 Safari/7534.48.3",
+        },
+    )
+    assert resp.status == HTTPStatus.ACCEPTED
+    assert json.loads(resp.body) == {
+        "message": ":neutral_face: (cas-contact-a-risque.html → Dois-je m’isoler ?): Bla bla [envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1]"
+    }
+    app.bot.chat.send.assert_called_once_with(
+        "abcd1234",
+        ":neutral_face: (cas-contact-a-risque.html → Dois-je m’isoler ?): Bla bla [envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1]",
     )
 
 
