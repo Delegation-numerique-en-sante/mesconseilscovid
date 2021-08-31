@@ -85,7 +85,7 @@ function partagePageEnCours() {
 function feedbackPageEnCours(app) {
     const feedbackQuestionsForms = document.querySelectorAll('form.question-feedback')
     Array.from(feedbackQuestionsForms).forEach((feedbackQuestionForm) => {
-        const title = feedbackQuestionForm.parentNode.querySelector('h2')
+        const title = feedbackQuestionForm.parentNode.querySelector('[itemprop="name"]')
         const question = title.innerText.substring(
             0,
             title.innerText.length - ' #'.length
