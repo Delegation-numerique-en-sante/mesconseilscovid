@@ -4,7 +4,7 @@ iniconfig==1.1.1
 mock==4.0.3
 more-itertools==8.8.0
 packaging==21.0
-pluggy==0.13.1
+pluggy==1.0.0
 py==1.10.0
 pyparsing==2.4.7
 pytest==6.2.5
