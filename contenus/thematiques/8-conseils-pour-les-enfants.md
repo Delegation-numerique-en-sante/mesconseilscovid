@@ -131,20 +131,25 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
     Pour plus de détails sur les mesures prévues, vous pouvez consulter la page « [Année scolaire 2021-2022 : protocole sanitaire et mesures de fonctionnement](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) » sur le site du ministère de l’Éducation nationale.
 
-    
-.. question:: Je ne peux pas télétravailler, comment faire garder mon enfant qui ne peut pas aller à l'école à cause du Covid-19 ?
+.. question:: Je ne peux pas télétravailler, comment faire garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?
     :level: 3
+
+    Si vous êtes dans l’une de ces situations :
+
+    * votre enfant, quel que soit son âge, souffre d’un **handicap** qui le rend vulnérable et l’oblige à s’isoler ;
+
+    * votre enfant de **moins de 16 ans** ne peut pas aller à la crèche, à l’école ou au collège pour l’une des raisons suivantes : 
     
-    Si votre enfant de **moins de 16 ans** ne peut pas aller à la crèche, à l''école ou au collège pour l'une des raisons suivantes : 
+        * sa **classe est fermée** pour raison sanitaire,
+        * il ou elle est déclaré(e) comme étant **cas contact**,
+        * il ou elle est **positif(ve)** à la Covid.
     
-    * sa **classe est fermée** pour raison sanitaire;
-    * il est déclaré comme **cas contact**;
-    * il est **positif** à la Covid-19;
-    ou
-    * quelque-soit son âge, il souffre d'un **handicap**, qui le rend vulnérable et l'oblige à s'isoler.
-    
-    Alors, vous ou votre conjoint(e) pouvez demander à votre employeur de vous placer en **chômage partiel**. Ou bien, **si cela est impossible**, vous pouvez faire une déclaration de maintien à domicile [sur le site de l'Assurance maladie](https://declare.ameli.fr/) ou [de la MSA](https://declare.msa.fr/z84coronaij/ria/#/accueil) pour obtenir un **arrêt maladie**.
-    
+    Alors vous ou votre conjoint(e) pouvez :
+
+    * demander à votre employeur de vous placer en **chômage partiel** ;
+    * ou bien, *si cela est impossible*, faire une **déclaration de maintien à domicile** [sur le site de l’Assurance maladie](https://declare.ameli.fr/) ou [de la MSA](https://declare.msa.fr/z84coronaij/ria/#/accueil) pour obtenir un **arrêt maladie**.
+
+
 ## Questions générales pour les mineurs de moins de 15 ans
 
 .. question:: À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
