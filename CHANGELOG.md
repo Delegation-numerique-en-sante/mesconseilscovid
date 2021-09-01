@@ -1,5 +1,13 @@
 # Changelog
 
+## 2021-09-01
+
+* recueil d’un avis par question de page thématique
+* amélioration du formulaire pour choisir son test
+* mise à jour de la doctrine pour le Pass sanitaire activités
+* ajout d’une question relative à la garde d’enfants
+* mise à jour relative aux couvre-feux et confinements dans les DROM
+
 ## 2021-08-28
 
 * ajout d’informations sur la 2e dose après Janssen
