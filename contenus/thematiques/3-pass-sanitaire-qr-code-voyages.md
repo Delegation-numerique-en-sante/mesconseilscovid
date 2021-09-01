@@ -341,7 +341,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Il permet d’authentifier les informations sur votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) lors d’un contrôle.
 
-    * En France, le « **Pass sanitaire activités** »  est **obligatoire pour accéder à certains lieux** dont : les restaurants et cafés; les lieux de loisir et de culture (cinémas, musées); les festivals, conférences et salons; les grands centres commerciaux (sur décision préfectorale); les établissements médico-sociaux (sauf urgences), hôpitaux et maisons de retraites; les moyens de transports collectifs pour les longs trajets (trains et car interregioniaux, TGV, avions). [Cliquez ici](https://www.gouvernement.fr/info-coronavirus/pass-sanitaire) pour consulter la liste complète des lieux concernés par cette obligation.
+    * En France, le « **Pass sanitaire activités** »  est **obligatoire pour accéder à certains lieux** dont : les restaurants et cafés ; les lieux de loisir et de culture (cinémas, musées) ; les festivals, conférences et salons ; les grands centres commerciaux (sur décision préfectorale) ; les établissements médico-sociaux (sauf urgences), hôpitaux et maisons de retraites ; les moyens de transports collectifs pour les longs trajets (trains et car interregionaux, TGV, avions). Consultez la [liste complète sur gouvernement.fr](https://www.gouvernement.fr/info-coronavirus/pass-sanitaire).
 
       Pour les **salarié(e)s des établissements recevant du public** (dont les restaurants), le pass sanitaire est exigé depuis le **30 août 2021**.
 
