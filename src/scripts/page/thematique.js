@@ -90,13 +90,21 @@ function feedbackPageEnCours(app) {
             0,
             title.innerText.length - ' #'.length
         )
+        const submitButtons =
+            feedbackQuestionForm.querySelectorAll('input[type="submit"]')
+        // Manual event.submitter (unsupported by Safari & IE).
+        Array.from(submitButtons).forEach((submitButton) => {
+            submitButton.addEventListener('click', (event) => {
+                feedbackQuestionForm.submitter = event.target
+            })
+        })
         feedbackQuestionForm.addEventListener('submit', (event) => {
             event.preventDefault()
-            const choix = event.submitter.dataset.value
+            const choix = event.target.submitter.dataset.value
             app.plausible('Avis par question', {
                 reponse: `${question} : ${choix}`,
             })
-            const reponse = event.submitter.value
+            const reponse = event.target.submitter.value
             opacityTransition(feedbackQuestionForm, 500, (feedbackQuestionForm) => {
                 switch (choix) {
                     case 'non':
