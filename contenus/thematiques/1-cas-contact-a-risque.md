@@ -3,7 +3,7 @@
 <img src="illustrations/contactarisque.svg">
 
 <header>
-    <p class="big">Vous avez passé du temps avec une personne <b>positive à la Covid</b> ? Vous avez été contacté·e par l’<b>Assurance Maladie</b> ? Vous avez reçu une notification « Exposition à risque » de l’application <b>TousAntiCovid</b> ?</p>
+    <p class="big">Vous avez passé du temps avec une personne <b>positive à la Covid</b> ? Vous avez été contacté(e) par l’<b>Assurance Maladie</b> ? Vous avez reçu une notification « Exposition à risque » de l’application <b>TousAntiCovid</b> ?</p>
 </header>
 
 <div class="conseil">
@@ -22,8 +22,8 @@
 
 Vous êtes concerné(e) si :
 
-* vous n’avez pas reçu(e) toutes les doses nécéssaires (1 ou 2 doses) ;
-* vous avez reçu(e) votre dernière dose depuis moins de 7 jours (Pfizer, Moderna, AstraZeneca) ou moins de 28 jours (Janssen) ;
+* vous n’avez pas reçu toutes les doses nécessaires (1 ou 2 doses) ;
+* vous avez reçu votre dernière dose depuis moins de 7 jours (Pfizer, Moderna, AstraZeneca) ou moins de 28 jours (Janssen) ;
 * vous souffrez d’une forte immunodépression qui réduit l’efficacité du vaccin.
 
 </div>
@@ -75,8 +75,8 @@ Si le résultat de ce test de contrôle est :
 
 Vous êtes concerné(e) si :
 
-* vous avez reçu(e) toutes les doses nécéssaires (1 ou 2 doses) ;
-* vous avez reçu(e) la dernière dose prévue depuis plus de 7 jours (Pfizer, Moderna, AstraZeneca) ou plus de 28 jours (Janssen)  ;
+* vous avez reçu toutes les doses nécessaires (1 ou 2 doses) ;
+* vous avez reçu la dernière dose prévue depuis plus de 7 jours (Pfizer, Moderna, AstraZeneca) ou plus de 28 jours (Janssen) ;
 * vous ne souffrez pas d’immunodépression.
 
 </div>
