@@ -341,13 +341,11 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Il permet d’authentifier les informations sur votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) lors d’un contrôle.
 
-    * En France, le « **Pass sanitaire activités** »  est actuellement obligatoire pour participer à des évènements rassemblant plus de 1 000 personnes (festivals, conférences, salons…) ou pour accéder à certains lieux (comme les boîtes de nuit), il est exigé pour accéder aux lieux de loisirs et de culture rassemblant plus de 50 personnes.
+    * En France, le « **Pass sanitaire activités** »  est **obligatoire pour accéder à certains lieux** dont : les restaurants et cafés; les lieux de loisir et de culture (cinémas, musées); les festivals, conférences et salons; les grands centres commerciaux (sur décision préfectorale); les établissements médico-sociaux (sauf urgences), hôpitaux et maisons de retraites; les moyens de transports collectifs pour les longs trajets (trains et car interregioniaux, TGV, avions). [Cliquez ici](https://www.gouvernement.fr/info-coronavirus/pass-sanitaire) pour consulter la liste complète des lieux concernés par cette obligation.
 
-      <span class="nouveau">nouveau</span> Son usage est étendu aux cafés, restaurants, grands centres commerciaux, établissements médico-sociaux, hôpitaux, maisons de retraites, moyens de transports collectifs pour les longs trajets (trains, cars et avions).
+      Pour les **salarié(e)s des établissements recevant du public** (dont les restaurants), le pass sanitaire est exigé depuis le **30 août 2021**.
 
-      Pour les salarié(e)s des établissements recevant du public (dont les restaurants), le pass sanitaire ne sera demandé qu’à partir du **30 août 2021**.
-
-      Pour les mineurs de 12 à 17 ans, le pass sanitaire ne sera demandé qu’à partir du **30 septembre 2021**.
+      Pour **les mineurs de 12 à 17 ans**, le pass sanitaire ne sera demandé qu’à partir du **30 septembre 2021**.
 
     * Dans l’Espace européen, le « **Pass sanitaire européen** » (ou encore « <span lang="en">Digital Covid Certificate</span> » en anglais) facilite les voyages entre les pays membres.
 
