@@ -63,7 +63,7 @@
     * La preuve de contamination antérieure, si le mineur a déjà été contaminé par la Covid. Cette preuve peut-être un ancien test positif, ou une sérologie (prise de sang) indiquant la présence d’anticorps.
 
 
-.. question:: Comment obtenir une attestation de vaccination (valable comme « Pass sanitaire » ) pour un mineur ?
+.. question:: Comment obtenir une attestation de vaccination (valable comme « pass sanitaire » ) pour un mineur ?
     :level: 3
 
     Suite à la vaccination, le professionnel de santé lui remettra une **attestation de vaccination** comportant un QR code.
@@ -71,10 +71,10 @@
     Cette attestation pourra être importée dans l’application TousAntiCovid rubrique « carnet », sur le smartphone de l’adolescent(e) ou de ses parents.
 
 
-.. question:: La vaccination des mineurs sera-t-elle obligatoire pour obtenir le « Pass sanitaire » ?
+.. question:: La vaccination des mineurs sera-t-elle obligatoire pour obtenir le « pass sanitaire » ?
     :level: 3
 
-    **Non.** Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « Pass sanitaire » utilisable en France et pour les voyages en Union européenne :
+    **Non.** Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « pass sanitaire » utilisable en France et pour les voyages en Union européenne :
 
     * l’attestation de vaccination complète (toutes les doses et respect du délai de 7 jours après la dernière dose) ;
     * un test PCR ou antigénique négatif de moins de 72 h ;

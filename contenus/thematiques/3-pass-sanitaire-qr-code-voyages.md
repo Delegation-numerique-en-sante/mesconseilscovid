@@ -12,7 +12,7 @@
 
 <div class="conseil">
 
-L’usage du **« Pass sanitaire européen » est généralisé depuis début juillet.** Les voyages vers les destinations hors espace européen sont soumises à conditions (tests, justificatifs, quarantaine…).
+L’usage du **« pass sanitaire européen » est généralisé depuis début juillet.** Les voyages vers les destinations hors espace européen sont soumises à conditions (tests, justificatifs, quarantaine…).
 
 </div>
 
@@ -29,7 +29,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
-.. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Sous quelle forme présenter le « Pass sanitaire européen » lors d’un voyage ?
+.. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Sous quelle forme présenter le « pass sanitaire européen » lors d’un voyage ?
     :level: 4
 
     Pour voyager, il vous suffit de présenter le résultat de votre test négatif, au format papier ou numérique. Il faut que le document comporte un QR Code qui garantit son authenticité.
@@ -41,10 +41,10 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un test RT-PCR négatif de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
-.. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Je pars bientôt en voyage vers un pays de l’Espace européen. Comment obtenir un « Pass sanitaire européen » ?
+.. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Je pars bientôt en voyage vers un pays de l’Espace européen. Comment obtenir un « pass sanitaire européen » ?
     :level: 4
 
-    Si vous n’êtes pas vacciné(e), un test de dépistage négatif sur lequel figure un QR code aux normes européennes fera office de « Pass sanitaire européen ».
+    Si vous n’êtes pas vacciné(e), un test de dépistage négatif sur lequel figure un QR code aux normes européennes fera office de « pass sanitaire européen ».
 
     Attention, tous les pays n’acceptent pas les tests antigéniques. Par ailleurs, la durée de validité du résultat du test varie selon les destinations de 48 h à 72 h. Nous vous conseillons de vérifier les critères d’accès à votre pays de destination avant de partir, sur le site du [ministère de l’Europe et des Affaires étrangères](https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/).
 
@@ -97,10 +97,10 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
 .. summary:: Je suis vacciné(e) et je prévois de partir en voyage
 
-.. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Comment obtenir le « Pass sanitaire européen » ?
+.. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Comment obtenir le « pass sanitaire européen » ?
     :level: 4
 
-    **Cela dépend de votre pays de destination.** Pour certaines destinations, votre attestation de vaccination complète sur laquelle figure un QR code aux normes européennes fait office de « Pass sanitaire européen ». Pour d’autres, seul un test de dépistage négatif, comportant un QR code aux normes européennes est considéré comme « Pass sanitaire européen ». Assurez-vous de vérifier quelles conditions s’appliquent avant de partir.
+    **Cela dépend de votre pays de destination.** Pour certaines destinations, votre attestation de vaccination complète sur laquelle figure un QR code aux normes européennes fait office de « pass sanitaire européen ». Pour d’autres, seul un test de dépistage négatif, comportant un QR code aux normes européennes est considéré comme « pass sanitaire européen ». Assurez-vous de vérifier quelles conditions s’appliquent avant de partir.
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Comment savoir si ma vaccination est complète ?
@@ -114,11 +114,11 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     **En dehors de l’Espace européen**, la vaccination n’est considérée comme étant complète qu’après 2 doses de vaccin (sauf Janssen), et ce, même si une personne a déjà été contaminée par la Covid-19. Si vous n’avez reçu qu’une seule dose suite à une première infection à la Covid-19, nous vous encourageons à vous renseigner auprès des autorités de votre pays de destination afin de connaître leurs attentes en matière de schéma vaccinal.
 
-.. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Le « Pass sanitaire européen » est-il déjà en application pour les voyages dans l’Espace européen ?
+.. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Le « pass sanitaire européen » est-il déjà en application pour les voyages dans l’Espace européen ?
     :level: 4
 
-    **Oui.** Le « Pass sanitaire européen », ou encore « <span lang="en">Digital Covid Certificate</span> » est entré en application le 1<sup>er</sup> juillet. Il permet de faciliter les voyages entre les pays membres.
-    Attention, le « Pass sanitaire européen » n’harmonise pas les critères d’accès dans les pays membres. Chaque pays peut exiger un type de justificatif différent : test de dépistage RT-PCR ou antigénique, attestation de vaccination…
+    **Oui.** Le « pass sanitaire européen », ou encore « <span lang="en">Digital Covid Certificate</span> » est entré en application le 1<sup>er</sup> juillet. Il permet de faciliter les voyages entre les pays membres.
+    Attention, le « pass sanitaire européen » n’harmonise pas les critères d’accès dans les pays membres. Chaque pays peut exiger un type de justificatif différent : test de dépistage RT-PCR ou antigénique, attestation de vaccination…
     Pour vérifiez les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Comment obtenir une attestation de vaccination avec un QR code à importer dans TousAntiCovid ?
@@ -136,7 +136,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Je pars en voyage vers un pays de l’Espace européen. Ma preuve de vaccination est-elle suffisante ?
     :level: 4
 
-    **Cela dépend de votre destination.** Le « Pass sanitaire européen » permet de faciliter le contrôle des justificatifs (vaccination, tests de dépistage) lors des voyages au sein de l’Espace européen, mais il n’harmonise pas les conditions d’entrées dans les pays membres. Vous ne pourrez donc pas faire automatiquement valoir votre vaccination pour voyager au sein de l’Union européenne.
+    **Cela dépend de votre destination.** Le « pass sanitaire européen » permet de faciliter le contrôle des justificatifs (vaccination, tests de dépistage) lors des voyages au sein de l’Espace européen, mais il n’harmonise pas les conditions d’entrées dans les pays membres. Vous ne pourrez donc pas faire automatiquement valoir votre vaccination pour voyager au sein de l’Union européenne.
 
     Certains pays exigent encore la présentation d’un test RT-PCR ou antigénique négatif récent (réalisé dans les 48 h ou 72 h), même pour les personnes vaccinées. Attention, le délai de validité des tests de dépistage varie selon les pays, et tous n’acceptent pas les tests antigéniques.
 
@@ -150,7 +150,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
     :level: 4
 
-    Vous devrez présenter votre attestation de vaccination ou « Pass sanitaire » lors de l’embarquement sur votre vol retour.
+    Vous devrez présenter votre attestation de vaccination ou « pass sanitaire » lors de l’embarquement sur votre vol retour.
 
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Je voyage vers une destination extérieure à l’Espace européen. Ma preuve de vaccination est-elle suffisante ?
     :level: 4
@@ -193,16 +193,16 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
-.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Comment obtenir un « Pass sanitaire européen » ou un justificatif me permettant de voyager dans l’Espace européen ?
+.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Comment obtenir un « pass sanitaire européen » ou un justificatif me permettant de voyager dans l’Espace européen ?
     :level: 4
 
     Si vous êtes en cours de vaccination (1 dose reçue sur 2 doses prévues, ou 2<sup>e</sup> dose reçue depuis moins de 2 semaines), c’est-à-dire que vous n’avez pas finalisé votre cycle vaccinal, il est probable que vous ne puissiez pas faire valoir cette vaccination pour voyager vers toutes les destinations.
 
-    Dans la plupart des cas, vous devrez présenter un test RT-PCR ou antigénique récent (réalisé dans les 48 h ou 72 h) sur lequel figure un QR code aux normes européennes. Ce justificatif fera office de « Pass sanitaire européen ».
+    Dans la plupart des cas, vous devrez présenter un test RT-PCR ou antigénique récent (réalisé dans les 48 h ou 72 h) sur lequel figure un QR code aux normes européennes. Ce justificatif fera office de « pass sanitaire européen ».
 
     Attention, tous les pays n’acceptent pas les tests antigéniques. Par ailleurs, la durée de validité du résultat varie selon les destinations de 48 h à 72 h. Nous vous conseillons de vérifier les critères d’accès à votre pays de destination avant de partir, en vous rendant sur [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
-.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Sous quelle forme présenter ce justificatif ou ce « Pass sanitaire européen » lors d’un voyage ?
+.. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Sous quelle forme présenter ce justificatif ou ce « pass sanitaire européen » lors d’un voyage ?
     :level: 4
 
     Depuis le 1<sup>er</sup> juillet, le format intégré dans le carnet de l’application TousAntiCovid est reconnu dans l’Espace européen. Vous pouvez également le présenter en format papier lors d’un contrôle.
@@ -266,18 +266,18 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
-.. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Comment obtenir un « Pass sanitaire européen » ?
+.. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Comment obtenir un « pass sanitaire européen » ?
     :level: 4
 
-    Si votre test positif RT-PCR date de plus de 11 jours et de moins de 6 mois et qu’il comporte un QR code aux normes européennes, alors il fait office de « certificat de rétablissement » reconnu comme « Pass sanitaire » en France et dans l’Espace européen. Cependant, certains pays européens peuvent continuer à exiger un test de dépistage (RT-PCR ou antigénique) négatif récent (48 h ou 72 h).
+    Si votre test positif RT-PCR date de plus de 11 jours et de moins de 6 mois et qu’il comporte un QR code aux normes européennes, alors il fait office de « certificat de rétablissement » reconnu comme « pass sanitaire » en France et dans l’Espace européen. Cependant, certains pays européens peuvent continuer à exiger un test de dépistage (RT-PCR ou antigénique) négatif récent (48 h ou 72 h).
     Pour télécharger le certificat de dépistage comportant un QR code aux normes européennes, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
 
-    Attention, un test sérologique (prise de sang) positif ne fait pas office de Pass sanitaire.
+    Attention, un test sérologique (prise de sang) positif ne fait pas office de « pass sanitaire ».
 
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Puis-je me déplacer dans l’Espace européen ?
     :level: 4
 
-    **Oui.** Assurez-vous de vérifier quel justificatif fait office de « Pass sanitaire européen » pour votre pays de destination, en vous rendant sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/). Selon votre destination, un certificat de rétablissement ou un test de dépistage négatif récent pourra vous être demandé.
+    **Oui.** Assurez-vous de vérifier quel justificatif fait office de « pass sanitaire européen » pour votre pays de destination, en vous rendant sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/). Selon votre destination, un certificat de rétablissement ou un test de dépistage négatif récent pourra vous être demandé.
 
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
     :level: 4
@@ -289,9 +289,9 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Mon test de dépistage (positif ou négatif) ne comporte pas de QR code, comment l’intégrer dans TousAntiCovid ?
     :level: 4
 
-    Si votre certificat de dépistage ne comporte pas de QR code, vous ne pourrez pas l’intégrer dans l’application TousAntiCovid, ni le faire valoir comme Pass sanitaire.
-    
-    Si vous avez été **testé positif après le 10 mai 2021**, votre certificat de dépistage comportant un QR code aux normes européennes reste disponible pendant **6 mois** sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). 
+    Si votre certificat de dépistage ne comporte pas de QR code, vous ne pourrez pas l’intégrer dans l’application TousAntiCovid, ni le faire valoir comme « pass sanitaire ».
+
+    Si vous avez été **testé positif après le 10 mai 2021**, votre certificat de dépistage comportant un QR code aux normes européennes reste disponible pendant **6 mois** sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
 
     Si vous avez été **testé positif entre le 10 mars et le 10 mai 2021**, vous pouvez demander au laboratoire de saisir un nouveau certificat de dépistage avec QR code, qui sera mis à votre disposition sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). 
 
@@ -304,92 +304,92 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
 </details>
 
-## <span class="nouveau">nouveau</span> Le « Pass sanitaire » est-il nécessaire pour me déplacer en France ?
+## <span class="nouveau">nouveau</span> Le « pass sanitaire » est-il nécessaire pour me déplacer en France ?
 
-.. question:: Quels trains nécessitent d’avoir un « Pass sanitaire » ?
+.. question:: Quels trains nécessitent d’avoir un « pass sanitaire » ?
     :level: 3
 
-    Depuis le 9 août, un « Pass sanitaire » est requis pour accéder aux **TGV, aux trains Intercités et aux trains de nuit** (sauf les TER et trains de la région parisienne).
+    Depuis le 9 août, un « pass sanitaire » est requis pour accéder aux **TGV, aux trains Intercités et aux trains de nuit** (sauf les TER et trains de la région parisienne).
 
     Le port du masque reste obligatoire.
 
-.. question:: Quels bus et cars nécessitent d’avoir un « Pass sanitaire » ?
+.. question:: Quels bus et cars nécessitent d’avoir un « pass sanitaire » ?
     :level: 3
 
-    Depuis le 9 août, un « Pass sanitaire » est requis pour les **trajets inter-régionaux en bus et car**.
+    Depuis le 9 août, un « pass sanitaire » est requis pour les **trajets inter-régionaux en bus et car**.
 
     Le port du masque reste obligatoire.
 
-.. question:: Quels avions nécessitent d’avoir un « Pass sanitaire » ?
+.. question:: Quels avions nécessitent d’avoir un « pass sanitaire » ?
     :level: 3
 
-    Depuis le 9 août, un « Pass sanitaire » est requis pour tous les **vols intérieurs en avion**.
+    Depuis le 9 août, un « pass sanitaire » est requis pour tous les **vols intérieurs en avion**.
 
     Le port du masque reste obligatoire.
 
 
-## Le « Pass sanitaire » en France et dans l’Espace européen (Union européenne, Liechtenstein, Suisse, Islande, Norvège, Monaco, Andorre)
+## Le « pass sanitaire » en France et dans l’Espace européen (Union européenne, Liechtenstein, Suisse, Islande, Norvège, Monaco, Andorre)
 
-.. question:: Qu’est-ce que le « Pass sanitaire » ?
+.. question:: Qu’est-ce que le « pass sanitaire » ?
     :level: 3
 
     C’est une preuve de **non-contamination** ou d’**immunité** à la Covid, présentée sous forme d’un code à scanner (2D-DOC ou QR code).
-    Dans son utilisation en France, on parle de « Pass sanitaire activités ». Dans son utilisation lors des voyages au sein de l’Union européenne, on parle de « Pass sanitaire frontières ».
+    Dans son utilisation en France, on parle de « pass sanitaire activités ». Dans son utilisation lors des voyages au sein de l’Union européenne, on parle de « pass sanitaire frontières ».
 
-.. question:: À quoi sert le « Pass sanitaire » et est-il obligatoire ?
+.. question:: À quoi sert le « pass sanitaire » et est-il obligatoire ?
     :level: 3
 
     Il permet d’authentifier les informations sur votre statut par rapport à la Covid (immunisé, vacciné, non-contaminé) lors d’un contrôle.
 
-    * En France, le « **Pass sanitaire activités** »  est **obligatoire pour accéder à certains lieux** dont : les restaurants et cafés ; les lieux de loisir et de culture (cinémas, musées) ; les festivals, conférences et salons ; les grands centres commerciaux (sur décision préfectorale) ; les établissements médico-sociaux (sauf urgences), hôpitaux et maisons de retraites ; les moyens de transports collectifs pour les longs trajets (trains et car interregionaux, TGV, avions). Consultez la [liste complète sur gouvernement.fr](https://www.gouvernement.fr/info-coronavirus/pass-sanitaire).
+    * En France, le « **pass sanitaire activités** »  est **obligatoire pour accéder à certains lieux** dont : les restaurants et cafés ; les lieux de loisir et de culture (cinémas, musées) ; les festivals, conférences et salons ; les grands centres commerciaux (sur décision préfectorale) ; les établissements médico-sociaux (sauf urgences), hôpitaux et maisons de retraites ; les moyens de transports collectifs pour les longs trajets (trains et car interregionaux, TGV, avions). Consultez la [liste complète sur gouvernement.fr](https://www.gouvernement.fr/info-coronavirus/pass-sanitaire).
 
-      Pour les **salarié(e)s des établissements recevant du public** (dont les restaurants), le pass sanitaire est exigé depuis le **30 août 2021**.
+      Pour les **salarié(e)s des établissements recevant du public** (dont les restaurants), le « pass sanitaire » est exigé depuis le **30 août 2021**.
 
-      Pour **les mineurs de 12 à 17 ans**, le pass sanitaire ne sera demandé qu’à partir du **30 septembre 2021**.
+      Pour **les mineurs de 12 à 17 ans**, le « pass sanitaire » ne sera demandé qu’à partir du **30 septembre 2021**.
 
-    * Dans l’Espace européen, le « **Pass sanitaire européen** » (ou encore « <span lang="en">Digital Covid Certificate</span> » en anglais) facilite les voyages entre les pays membres.
+    * Dans l’Espace européen, le « **pass sanitaire européen** » (ou encore « <span lang="en">Digital Covid Certificate</span> » en anglais) facilite les voyages entre les pays membres.
 
 
-.. question:: Le « Pass sanitaire activités » ou le « Pass sanitaire européen » sont-ils déjà en application ?
+.. question:: Le « pass sanitaire activités » ou le « pass sanitaire européen » sont-ils déjà en application ?
     :level: 3
 
-    * En France, le « **Pass sanitaire activités** » est en application **depuis juin**.
+    * En France, le « **pass sanitaire activités** » est en application **depuis juin**.
 
-    * Dans l’Espace européen, le « **Pass sanitaire européen** » (ou <span lang="en">*Digital Covid Certificate*</span>) est progressivement mis en application **depuis juillet**.
+    * Dans l’Espace européen, le « **pass sanitaire européen** » (ou <span lang="en">*Digital Covid Certificate*</span>) est progressivement mis en application **depuis juillet**.
 
 
-.. question:: Quels justificatifs peuvent constituer un « Pass sanitaire » (en France et dans l’Espace européen) ?
+.. question:: Quels justificatifs peuvent constituer un « pass sanitaire » (en France et dans l’Espace européen) ?
     :level: 3
 
-    **3 types de justificatifs** peuvent constituer un « Pass sanitaire » grâce à un QR code intégré reconnu dans tout l’Espace européen :
+    **3 types de justificatifs** peuvent constituer un « pass sanitaire » grâce à un QR code intégré reconnu dans tout l’Espace européen :
 
     - **Non-contamination** : le résultat négatif d’un test RT-PCR ou antigénique réalisé il y a moins de 72 h.
-    - **Certificat de rétablissement** : le résultat positif d’un test RT-PCR de plus de 11 jours et de moins de 6 mois. Attention, le test sérologique (prise de sang) positif n’est pas un justificatif valable pour le Pass sanitaire.
+    - **Certificat de rétablissement** : le résultat positif d’un test RT-PCR de plus de 11 jours et de moins de 6 mois. Attention, le test sérologique (prise de sang) positif n’est pas un justificatif valable pour le « pass sanitaire ».
     - **Certificat de vaccination** : une attestation de vaccination complète, c’est-à-dire que vous avez reçu toutes les doses nécessaires depuis au moins 2 semaines (Pfizer, Moderna, AstraZeneca) ou 4 semaines (Janssen).
 
     <span class="nouveau">nouveau</span> Pour une utilisation en France, le délai d’attente après la 2<sup>e</sup> dose est réduit à 1 semaine pour les vaccins Pfizer, Moderna et AstraZeneca.
 
     **Attention**, tous les pays n’acceptent pas tous les justificatifs et en fonction de chaque situation (voyage, évènement…) un justificatif précis pourra vous être demandé. Assurez-vous de bien vérifier quel justificatif vous concerne auprès des organisateurs de l’évènement ou sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
-.. question:: Je suis français(e) ou ayant-droit de ressortissant(e) français(e) vacciné(e) à l’étranger (hors UE). Comment obtenir un « Pass sanitaire » valable en France et en Europe ?
+.. question:: Je suis français(e) ou ayant-droit de ressortissant(e) français(e) vacciné(e) à l’étranger (hors UE). Comment obtenir un « pass sanitaire » valable en France et en Europe ?
     :level: 3
 
     Si vous (ou votre conjoint(e) ou enfant) avez été vacciné(e) en dehors de l’UE avec l’un des vaccins reconnus par l’Agence Européenne du Médicament (Pfizer, Moderna, AstraZeneca, Janssen), alors vous pouvez **faire une demande de QR code** valable en France et dans l’espace européen.
     [Rendez-vous sur cette page de service-public.fr](https://www.service-public.fr/particuliers/actualites/A15083) pour être guidé(e) dans cette démarche.
 
-    En attendant de recevoir ce QR code, vous pouvez effectuer un test de dépistage (gratuit). Son résultat négatif fera office de « Pass sanitaire » pendant 72 h.
+    En attendant de recevoir ce QR code, vous pouvez effectuer un test de dépistage (gratuit). Son résultat négatif fera office de « pass sanitaire » pendant 72 h.
 
-.. question:: Je suis touriste (non européen) vacciné(e) à l’étranger (hors UE). Comment obtenir un « Pass sanitaire » ?
+.. question:: Je suis touriste (non européen) vacciné(e) à l’étranger (hors UE). Comment obtenir un « pass sanitaire » ?
     :level: 3
 
-    Si vous êtes âgé(e) de plus de 18 ans, de nationalité extra-européenne et que vous avez été vacciné(e) avec l’un des vaccins reconnus par l’Agence européenne du médicament (Pfizer, Moderna, AstraZeneca, Janssen) vous pouvez obtenir un « Pass sanitaire » (QR code). Pour savoir comment faire la demande, [rendez-vous sur cette page de service-public.fr](https://www.service-public.fr/particuliers/actualites/A15093).
+    Si vous êtes âgé(e) de plus de 18 ans, de nationalité extra-européenne et que vous avez été vacciné(e) avec l’un des vaccins reconnus par l’Agence européenne du médicament (Pfizer, Moderna, AstraZeneca, Janssen) vous pouvez obtenir un « pass sanitaire » (QR code). Pour savoir comment faire la demande, [rendez-vous sur cette page de service-public.fr](https://www.service-public.fr/particuliers/actualites/A15093).
 
-    En attendant, si vous le souhaitez, le résultat négatif d’un test de dépistage de moins de 72 h fera office de « Pass sanitaire ». Attention, les tests de dépistages sont **payants** dans votre situation. Pour trouver un lieu de dépistage (pharmacie ou laboratoire), [consultez cet annuaire sur sante.fr](https://www.sante.fr/cf/centres-depistage-covid.html).
+    En attendant, si vous le souhaitez, le résultat négatif d’un test de dépistage de moins de 72 h fera office de « pass sanitaire ». Attention, les tests de dépistages sont **payants** dans votre situation. Pour trouver un lieu de dépistage (pharmacie ou laboratoire), [consultez cet annuaire sur sante.fr](https://www.sante.fr/cf/centres-depistage-covid.html).
 
-.. question:: Est-ce que je dois obligatoirement avoir un <span lang="en">smartphone</span> pour utiliser le « Pass sanitaire » ?
+.. question:: Est-ce que je dois obligatoirement avoir un <span lang="en">smartphone</span> pour utiliser le « pass sanitaire » ?
     :level: 3
 
-    **Non.** Vous pouvez présenter votre « Pass sanitaire » sous la forme que vous préférez :
+    **Non.** Vous pouvez présenter votre « pass sanitaire » sous la forme que vous préférez :
 
     - **au format papier** : en présentant votre justificatif (original ou photocopie) sur lequel figure un QR code ;
     - **au format numérique** : en présentant une photo ou un scan de votre justificatif muni d’un QR code ;
@@ -400,7 +400,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     - [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-vaccination-TJLG8dT8fs/Steps/347514) si c’est un certificat de vaccination.
     - [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-test-siCsOIDGCZ/Steps/320836) si c’est un test de dépistage antigénique ou RT-PCR.
 
-.. question:: Est-ce que je peux importer le « Pass sanitaire » de mes enfants, ou de mon (ma) conjoint(e) dans mon application TousAntiCovid ?
+.. question:: Est-ce que je peux importer le « pass sanitaire » de mes enfants, ou de mon (ma) conjoint(e) dans mon application TousAntiCovid ?
     :level: 3
 
     **Oui.** Vous pouvez importer les justificatifs (attestation de vaccination ou test de dépistage) de vos proches dans la rubrique carnet de votre application TousAntiCovid, à condition qu’ils comportent un QR code.
