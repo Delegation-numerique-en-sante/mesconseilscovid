@@ -17,6 +17,14 @@
 
     Si vous êtes **enceinte**, la vaccination est possible à partir du second trimestre de votre grossesse.
 
+    <div class="conseil">
+
+    Pour les informations relatives au **rappel vaccinal**, dit *troisième dose*, voir :
+
+    * [Quand devrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?](/je-suis-vaccine.html#anchor-a27f14fdf1a02d2e4c470f787d2e6720)
+
+    </div>
+
 
 .. question:: Où me faire vacciner ?
 
