@@ -96,8 +96,8 @@
 
     Pour voyager, certains pays pourront notamment demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** (ou « pass sanitaire ») au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, valable dans l’espace Européen, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionnel de santé qui vous a vacciné.
 
-    Pour en savoir plus sur le **pass sanitaire**, rendez-vous sur [cette page dédiée de gouvernement.fr](https://www.gouvernement.fr/pass-sanitaire-toutes-les-reponses-a-vos-questions).
-
     Nous vous conseillons de vérifier directement auprès des autorités du pays de destination les conditions d’accès sur leur territoire (tests, quarantaine, vaccin…), en consultant  par exemple le site internet de l’ambassade ou du consulat.
+
+    Pour en savoir plus, [consultez notre page sur le pass sanitaire et les voyages](/pass-sanitaire-qr-code-voyages.html#je-suis-vaccine).
 
 </div>
