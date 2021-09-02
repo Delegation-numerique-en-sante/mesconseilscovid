@@ -18,20 +18,20 @@
     * les personnes avec des **comorbidités** augmentant le risque de formes graves de Covid,
     * les personnes **sévèrement immunodéprimées**,
     * les personnes vaccinées avec le **vaccin Janssen**.
-    
-    Le **rappel est réalisé avec un vaccin à ARN messager (Pfizer ou Moderna)**, quel que soit le type de vaccin utilisé précédemment. 
+
+    Le **rappel est réalisé avec un vaccin à ARN messager (Pfizer ou Moderna)**, quel que soit le type de vaccin utilisé précédemment.
 
 .. question:: Quand devrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
 
-    Les personnes concernées par ce rappel devront attendre un délai d’**au moins 6 mois**, sauf : 
+    Les personnes concernées par ce rappel devront attendre un délai d’**au moins 6 mois**, sauf :
 
-    * les personnes sévèrement **immunodéprimées**, qui peuvent recevoir leur **4<sup>e</sup> dose à partir de 3 mois** après leur 3<sup>e</sup> dose ; 
+    * les personnes sévèrement **immunodéprimées**, qui peuvent recevoir leur **4<sup>e</sup> dose à partir de 3 mois** après leur 3<sup>e</sup> dose ;
     * les personnes vaccciné(e)s avec le vaccin **Janssen** qui peuvent recevoir leur **2<sup>e</sup> dose à partir de 4 semaines** après la première dose.
-   
+
     Lorsque les délais le permettent, ce rappel pourra avoir lieu en même temps que celui contre la **grippe saisonnière**.
-    
+
     La vaccination se déroule en **centre de vaccination** ou chez un **professionnel de santé** (médecin, pharmacien, infirmier…).
- 
+
 .. question:: Pourquoi continuer à porter le masque quand on est vacciné(e) ?
 
     Les vaccins contre la Covid vous protègent contre la maladie en réduisant le risque de l’attraper et de faire une forme grave. Ces vaccins sont très efficaces, mais **aucun vaccin ne protège à 100 %**, et cette efficacité peut varier selon les personnes.

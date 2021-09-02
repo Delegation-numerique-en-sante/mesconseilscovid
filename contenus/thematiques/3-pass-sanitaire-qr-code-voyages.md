@@ -293,7 +293,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Si vous avez été **testé positif après le 10 mai 2021**, votre certificat de dépistage comportant un QR code aux normes européennes reste disponible pendant **6 mois** sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
 
-    Si vous avez été **testé positif entre le 10 mars et le 10 mai 2021**, vous pouvez demander au laboratoire de saisir un nouveau certificat de dépistage avec QR code, qui sera mis à votre disposition sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). 
+    Si vous avez été **testé positif entre le 10 mars et le 10 mai 2021**, vous pouvez demander au laboratoire de saisir un nouveau certificat de dépistage avec QR code, qui sera mis à votre disposition sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
 
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Est-ce que je peux partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
