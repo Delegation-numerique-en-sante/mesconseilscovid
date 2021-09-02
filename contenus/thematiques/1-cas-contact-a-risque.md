@@ -11,8 +11,11 @@
 <span class="nouveau">nouveau</span> Les personnes **complètement vacciné(e)s** (ayant reçu toutes les doses nécessaires) n’ont plus l’obligation de s’isoler après un contact à risque, lorsque leur test de dépistage est négatif.
 
 </div>
+<div class="conseil conseil-jaune">
 
 Si vous êtes cas contact d’une **personne de votre foyer**, rendez-vous sur notre page spécialisée [**« Je vis avec une personne positive à la Covid, que dois-je faire ? »**](https://mesconseilscovid.sante.gouv.fr/je-vis-avec-personne-covid-positive.html).
+
+</div>
 
 
 ## Vous êtes cas contact et…
