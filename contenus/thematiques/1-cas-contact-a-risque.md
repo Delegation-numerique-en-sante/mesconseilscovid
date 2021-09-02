@@ -12,6 +12,9 @@
 
 </div>
 
+Si vous êtes cas contact d'une **personne de votre foyer**, rendez-vous sur notre page spécialisée [**« Je vis avec une personne positive à la Covid, que dois-je faire ? »**](https://mesconseilscovid.sante.gouv.fr/je-vis-avec-personne-covid-positive.html).
+
+
 ## Vous êtes cas contact et…
 
 <details id="schema-vaccinal-incomplet">
@@ -42,7 +45,7 @@ Faites un **test antigénique** en pharmacie **immédiatement** (voir la [carte 
 
 * Si le test est **négatif**, restez **en isolement** et effectuez un test de contrôle (voir ci-dessous).
 
-Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir vous isoler en attendant le résultat du test.
+Si vous ne pouvez pas **télétravailler**, vous pouvez [**demander un arrêt de travail**](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir vous isoler en attendant le résultat du test.
 
 Si votre test est **positif**, les autres membres de votre foyer seront considérés comme **cas contact**, et devront :
 
