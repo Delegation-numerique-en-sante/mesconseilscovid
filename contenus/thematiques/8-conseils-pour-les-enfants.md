@@ -138,12 +138,12 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
     * votre enfant, quel que soit son âge, souffre d’un **handicap** qui le rend vulnérable et l’oblige à s’isoler ;
 
-    * votre enfant de **moins de 16 ans** ne peut pas aller à la crèche, à l’école ou au collège pour l’une des raisons suivantes : 
-    
+    * votre enfant de **moins de 16 ans** ne peut pas aller à la crèche, à l’école ou au collège pour l’une des raisons suivantes :
+
         * sa **classe est fermée** pour raison sanitaire,
         * il ou elle est déclaré(e) comme étant **cas contact**,
         * il ou elle est **positif(ve)** à la Covid.
-    
+
     Alors vous ou votre conjoint(e) pouvez :
 
     * demander à votre employeur de vous placer en **chômage partiel** ;
