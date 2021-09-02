@@ -129,8 +129,8 @@ Attention, si vous ressentez des **symptômes** avant la date prévue de votre t
 
 </details>
 
-<div class="conseil conseil-jaune">
+<div class="conseil">
 
-**L’Assurance maladie peut vous contacter par SMS** pour vous informer que vous êtes cas contact ou positif et vous inviter à vous isoler. Les SMS peuvent prendre la forme d’un échange guidé, mais **l’Assurance maladie ne vous demandera pas de partager des informations personnelles telles que : numéro de sécurité sociale, numéro de carte bancaire, mot de  passe...** Face à la recrudescence des fraudes, restez vigilants. Pour plus d’information à ce sujet, rendez-vous sur le [site de l’Assurance maladie](https://www.ameli.fr/hauts-de-seine/assure/droits-demarches/principes/attention-appels-courriels-frauduleux).
+**Attention aux tentatives de fraude par SMS !** L’Assurance maladie peut vous contacter par SMS pour vous informer que vous êtes cas contact ou positif et vous inviter à vous isoler. Ces SMS peuvent prendre la forme d’un échange guidé, mais l’Assurance maladie ne vous demandera pas de partager des **informations personnelles** telles que numéro de sécurité sociale, numéro de carte bancaire, mot de passe… [Plus d’informations sur ameli.fr](https://www.ameli.fr/hauts-de-seine/assure/droits-demarches/principes/attention-appels-courriels-frauduleux).
 
 </div>
