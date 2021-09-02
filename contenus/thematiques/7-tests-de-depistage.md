@@ -141,21 +141,21 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid et vous n’êtes 
 
 .. question:: Où puis-je faire un test de dépistage Covid-19 ?
 
-<div class="conseil">
+    <div class="conseil">
 
-[Cliquez ici pour trouver un lieu de dépistage](https://www.sante.fr/cf/centres-depistage-covid.html) au plus proche de vous.
+    [Cliquez ici pour trouver un lieu de dépistage](https://www.sante.fr/cf/centres-depistage-covid.html) au plus proche de vous.
 
-</div>
+    </div>
 
 .. question:: Les tests de dépistage sont-ils payants ?
 
-Les tests de dépistage réalisés par un professionnel de santé sont **gratuits**, sans condition de prescription médicale, pour :
+    Les tests de dépistage réalisés par un professionnel de santé sont **gratuits**, sans condition de prescription médicale, pour :
 
-* les **résidents en France** ;
-* les français qui résident habituellement à l’étranger ;
-* les européens qui disposent d’une carte européenne d’assurance maladie.
+    * les **résidents en France** ;
+    * les français qui résident habituellement à l’étranger ;
+    * les européens qui disposent d’une carte européenne d’assurance maladie.
 
-Les touristes non européens peuvent bénéficier de la gratuité sur présentation d’une prescription médicale ou s’ils ont été identifiés cas contact par l’Assurance maladie, sur présentation d’un justificatif (SMS, courriel). En dehors de ces cas de figure, les prix des tests sont fixés à **49,89 euros** (RT-PCR) et **25 euros** (test antigénique rapide).
+    Les touristes non européens peuvent bénéficier de la gratuité sur présentation d’une prescription médicale ou s’ils ont été identifiés cas contact par l’Assurance maladie, sur présentation d’un justificatif (SMS, courriel). En dehors de ces cas de figure, les prix des tests sont fixés à **49,89 euros** (RT-PCR) et **25 euros** (test antigénique rapide).
 
 
 ## Quels sont les différents tests de dépistage de la Covid-19 ?
