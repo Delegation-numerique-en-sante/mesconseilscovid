@@ -85,6 +85,10 @@ class QuestionDirective(Directive):
         level = int(dict(options).get("level")) if options else 2
         text = self.parse_text(m)
         children = block.parse(text, state, block.rules)
+        if not children:
+            raise ValueError(
+                f"Question sans réponse : indentation manquante ?\n« {question} »"
+            )
         return {"type": "question", "children": children, "params": (question, level)}
 
     def __call__(self, md):
