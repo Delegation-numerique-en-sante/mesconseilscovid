@@ -82,7 +82,7 @@
 
     Par ailleurs, le ou la mineur(e) non-vacciné(e) accompagnant ses parents vaccinés lors d’un voyage bénéficiera des mêmes facilités qu’eux. Par exemple, un(e) mineur(e) non-vacciné(e) pourra accompagner ses parents vaccinés lors d’un voyage dans un [pays classé orange](https://www.gouvernement.fr/voyager-depuis-et-vers-l-etranger-mode-d-emploi) sans justifier d’un motif impérieux pour s’y rendre.
 
-    Pour plus d’informations sur les voyages et le pass sanitaire en général, consultez notre [page thématique](https://mesconseilscovid.sante.gouv.fr/pass-sanitaire-qr-code-voyages.html).
+    Pour plus d’informations sur les voyages et le pass sanitaire en général, consultez notre [page thématique](/pass-sanitaire-qr-code-voyages.html).
 
 
 ## Rentrée scolaire 2021-2022
