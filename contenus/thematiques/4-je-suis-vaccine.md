@@ -50,8 +50,8 @@
         * **7 jours après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e).
         * **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple).
     1. **Si le résultat de votre test est positif, isolez-vous pendant 10 jours.** Nous vous encourageons à [décrire votre situation particulière](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
-    
-    Pour plus d'informations sur la conduite à tenir, [**consultez notre page « Je suis cas contact Covid, que faire ? »**](/cas-contact-a-risque.html).
+
+    Pour plus d'informations sur la conduite à tenir, [**consultez notre page « Je suis cas contact Covid, que faire ? »**](/cas-contact-a-risque.html#schema-vaccinal-complet).
 
 .. question:: Je suis vacciné(e), est-ce que je peux être positif ou positive à la Covid ?
 

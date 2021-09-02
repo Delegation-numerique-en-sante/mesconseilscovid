@@ -50,11 +50,14 @@ export function navigueVersUneThematique(app, goal) {
 
 function ouvreDetailsSiFragment() {
     const currentAnchor = document.location.hash ? document.location.hash.slice(1) : ''
-    if (currentAnchor.substring(0, 7) === 'anchor-') {
-        const target = document.querySelector(`#${currentAnchor}`)
-        if (!target) return
-        if (target.parentElement.tagName === 'DETAILS')
-            target.parentElement.setAttribute('open', '')
+    if (currentAnchor) {
+        let elem = document.querySelector(`#${currentAnchor}`)
+        while (elem) {
+            if (elem.tagName.toLowerCase() === 'details') {
+                elem.setAttribute('open', '')
+            }
+            elem = elem.parentElement
+        }
     }
 }
 

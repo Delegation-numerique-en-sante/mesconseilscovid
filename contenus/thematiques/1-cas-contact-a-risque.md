@@ -14,7 +14,7 @@
 
 ## Vous êtes cas contact et…
 
-<details>
+<details id="schema-vaccinal-incomplet">
 
 .. summary:: vous n’êtes pas vacciné(e) (schéma vaccinal incomplet)
 
@@ -67,7 +67,7 @@ Si le résultat de ce test de contrôle est :
 
 </details>
 
-<details>
+<details id="schema-vaccinal-complet">
 
 .. summary:: vous êtes vacciné(e) (schéma vaccinal complet)
 

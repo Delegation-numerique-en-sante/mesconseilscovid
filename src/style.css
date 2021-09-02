@@ -280,7 +280,8 @@ legend h1 {
     flex-basis: 288px;
     margin: 1rem;
 }
-.page-thematique :target {
+.page-thematique :target,
+.page-thematique .conseils :target summary {
     background: #ffd;
 }
 .page-thematique .conseils details > summary {
