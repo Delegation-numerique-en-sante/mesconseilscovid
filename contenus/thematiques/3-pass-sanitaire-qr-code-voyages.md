@@ -269,10 +269,14 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Comment obtenir un « pass sanitaire européen » ?
     :level: 4
 
-    Si votre test positif RT-PCR date de plus de 11 jours et de moins de 6 mois et qu’il comporte un QR code aux normes européennes, alors il fait office de « certificat de rétablissement » reconnu comme « pass sanitaire » en France et dans l’Espace européen. Cependant, certains pays européens peuvent continuer à exiger un test de dépistage (RT-PCR ou antigénique) négatif récent (48 h ou 72 h).
+    Si votre **test RT-PCR positif** date de plus de 11 jours et de moins de 6 mois et qu’il comporte un QR code aux normes européennes, alors il fait office de **« certificat de rétablissement »** reconnu comme « pass sanitaire » en France et dans l’Espace européen. Cependant, certains pays européens peuvent continuer à exiger un test de dépistage (RT-PCR ou antigénique) négatif récent (48 h ou 72 h).
     Pour télécharger le certificat de dépistage comportant un QR code aux normes européennes, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
 
-    Attention, un test sérologique (prise de sang) positif ne fait pas office de « pass sanitaire ».
+    <div class="conseil conseil-jaune">
+
+    Un **test sérologique** (prise de sang) ne comporte pas de QR code, et ne peut pas faire office de « pass sanitaire ».
+
+    </div>
 
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Puis-je me déplacer dans l’Espace européen ?
     :level: 4
@@ -364,12 +368,20 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     **3 types de justificatifs** peuvent constituer un « pass sanitaire » grâce à un QR code intégré reconnu dans tout l’Espace européen :
 
     - **Non-contamination** : le résultat négatif d’un test RT-PCR ou antigénique réalisé il y a moins de 72 h.
-    - **Certificat de rétablissement** : le résultat positif d’un test RT-PCR de plus de 11 jours et de moins de 6 mois. Attention, le test sérologique (prise de sang) positif n’est pas un justificatif valable pour le « pass sanitaire ».
-    - **Certificat de vaccination** : une attestation de vaccination complète, c’est-à-dire que vous avez reçu toutes les doses nécessaires depuis au moins 2 semaines (Pfizer, Moderna, AstraZeneca) ou 4 semaines (Janssen).
+    - **Certificat de rétablissement** : le résultat positif d’un test RT-PCR de plus de 11 jours et de moins de 6 mois.
+    - **Certificat de vaccination** : une attestation de vaccination complète, c’est-à-dire que vous avez reçu toutes les doses nécessaires depuis au moins 2 semaines (Pfizer, Moderna, AstraZeneca) ou 4 semaines (Janssen). Pour une utilisation en France, le délai d’attente après la 2<sup>e</sup> dose est réduit à 1 semaine pour les vaccins Pfizer, Moderna et AstraZeneca.
 
-    <span class="nouveau">nouveau</span> Pour une utilisation en France, le délai d’attente après la 2<sup>e</sup> dose est réduit à 1 semaine pour les vaccins Pfizer, Moderna et AstraZeneca.
+    <div class="conseil conseil-jaune">
+
+    Un **test sérologique** (prise de sang) ne comporte pas de QR code, et ne peut pas faire office de « pass sanitaire ».
+
+    </div>
+
+    <div class="conseil">
 
     **Attention**, tous les pays n’acceptent pas tous les justificatifs et en fonction de chaque situation (voyage, évènement…) un justificatif précis pourra vous être demandé. Assurez-vous de bien vérifier quel justificatif vous concerne auprès des organisateurs de l’évènement ou sur le site [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
+
+    </div>
 
 .. question:: Je suis français(e) ou ayant-droit de ressortissant(e) français(e) vacciné(e) à l’étranger (hors UE). Comment obtenir un « pass sanitaire » valable en France et en Europe ?
     :level: 3
