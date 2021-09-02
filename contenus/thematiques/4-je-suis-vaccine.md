@@ -12,7 +12,7 @@
 
 .. question:: Devrai-je recevoir une dose de rappel, dite 3<sup>e</sup> dose ?
 
-    Avec le temps, l’efficacité de la protection du vaccin contre l’infection peut diminuer, en particulier face au variant Delta. Pour « booster » cette protection, la Haute autorité de santé (HAS) recommande un **rappel vaccinal** avec une 2<sup>e</sup>, 3<sup>e</sup> dose ou 4<sup>e</sup> selon les cas, pour :
+    Avec le temps, l’efficacité de la protection du vaccin contre l’infection peut diminuer, en particulier face au variant Delta. Pour « booster » cette protection, la Haute autorité de santé (HAS) recommande un **rappel vaccinal** avec une 2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas, pour :
 
     * les personnes de **65 ans et plus**,
     * les personnes avec des **comorbidités** augmentant le risque de formes graves de Covid,
