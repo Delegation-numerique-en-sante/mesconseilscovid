@@ -1152,7 +1152,7 @@ a.button-feedback-social-whatsapp {
     font-size: 14px;
 }
 .question-feedback legend {
-    margin: 0.25rem 0;
+    margin: 0.25rem auto;
 }
 .question-feedback div {
     display: flex;
