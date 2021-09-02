@@ -18,7 +18,7 @@ L’usage du **« pass sanitaire européen » est généralisé depuis début 
 
 Pour obtenir une réponse à votre question, cliquez sur la situation qui vous correspond le mieux :
 
-<details>
+<details id="je-ne-suis-pas-vaccine">
 
 .. summary:: Je ne suis pas vacciné(e) et je souhaite voyager
 
@@ -93,7 +93,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
 </details>
 
-<details>
+<details id="je-suis-vaccine">
 
 .. summary:: Je suis vacciné(e) et je prévois de partir en voyage
 
@@ -180,7 +180,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
 </details>
 
-<details>
+<details id="je-suis-en-cours-de-vaccination">
 
 .. summary:: Je suis en cours de vaccination (je n’ai pas reçu toutes mes doses)
 
@@ -255,7 +255,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
 </details>
 
-<details>
+<details id="je-suis-gueri-de-la-covid">
 
 .. summary:: Je suis guéri(e) de la Covid depuis plus de 11 jours et moins de 6 mois
 
