@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-09-02
+
+* précisions sur la 3e dose
+* ajout de liens internes et cohérence générale
+
 ## 2021-09-01
 
 * recueil d’un avis par question de page thématique
