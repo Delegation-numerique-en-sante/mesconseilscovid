@@ -9,7 +9,7 @@
 <form id="tests-de-depistage-demarrage-form">
     <fieldset>
         <legend>
-            <h3 id="tests-de-depistage-symptomes-label">Pass sanitaire, symptômes, cas contact ?</h3>
+            <h3>Pass sanitaire, symptômes, cas contact ?</h3>
             <p>En quelques clics, découvrez quel test de dépistage est le plus adapté à votre situation.</p>
         </legend>
     </fieldset>
@@ -34,8 +34,8 @@
     </fieldset>
     <div class="form-controls">
         <div class="button-with-progress">
-            <p id="aria-description-progress-tests-de-depistage" class="progress">Il vous reste moins de 2 étapes</p>
-            <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-tests-de-depistage">
+            <p id="aria-description-progress-tests-de-depistage-symptomes" class="progress">Il vous reste moins de 2 étapes</p>
+            <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-tests-de-depistage-symptomes">
         </div>
     </div>
 </form>
@@ -53,8 +53,8 @@
     </fieldset>
     <div class="form-controls">
         <div class="button-with-progress">
-            <p id="aria-description-progress-tests-de-depistage" class="progress">C’est la dernière étape !</p>
-            <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-tests-de-depistage">
+            <p id="aria-description-progress-tests-de-depistage-depuis-quand" class="progress">C’est la dernière étape !</p>
+            <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-tests-de-depistage-depuis-quand">
         </div>
     </div>
 </form>
@@ -72,8 +72,8 @@
     </fieldset>
     <div class="form-controls">
         <div class="button-with-progress">
-            <p id="aria-description-progress-tests-de-depistage" class="progress">Plus qu’une étape</p>
-            <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-tests-de-depistage">
+            <p id="aria-description-progress-tests-de-depistage-cas-contact" class="progress">Plus qu’une étape</p>
+            <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-tests-de-depistage-cas-contact">
         </div>
     </div>
 </form>
@@ -91,8 +91,8 @@
     </fieldset>
     <div class="form-controls">
         <div class="button-with-progress">
-            <p id="aria-description-progress-tests-de-depistage" class="progress">C’est la dernière étape !</p>
-            <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-tests-de-depistage">
+            <p id="aria-description-progress-tests-de-depistage-auto-test" class="progress">C’est la dernière étape !</p>
+            <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-tests-de-depistage-auto-test">
         </div>
     </div>
 </form>
