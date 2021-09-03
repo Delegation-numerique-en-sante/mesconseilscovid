@@ -1162,6 +1162,7 @@ a.button-feedback-social-whatsapp {
 
 .thematique #conseils-block form.question-feedback {
     color: #656565;
+    background-color: #fff;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -1170,6 +1171,12 @@ a.button-feedback-social-whatsapp {
     padding: 0.5rem 0.5rem;
     text-align: center;
     font-size: 95%;
+}
+@media only screen and (max-width: 320px) {
+    .thematique #conseils-block details form.question-feedback {
+        margin-left: -1.2rem;
+        margin-right: -1.2rem;
+    }
 }
 .question-feedback legend {
     margin: 0.25rem auto;
