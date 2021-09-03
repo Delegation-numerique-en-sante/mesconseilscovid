@@ -16,6 +16,7 @@ from jinja2 import Environment as JinjaEnv
 from jinja2 import FileSystemLoader, StrictUndefined
 from minicli import cli, run, wrap
 from mistune.directives import Directive
+from slugify import slugify
 
 from typographie import typographie
 
@@ -98,7 +99,9 @@ class QuestionDirective(Directive):
 
 
 def render_html_question(text, question, level):
-    question_id = f"anchor-{hashlib.md5(question.encode('utf-8') + text.encode('utf-8')).hexdigest()}"
+    question_id = slugify(
+        question, stopwords=["span", "class", "visually", "hidden", "sup"]
+    )
     return f"""<div id="{question_id}" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 <h{level} itemprop="name">
     {typographie(question)}

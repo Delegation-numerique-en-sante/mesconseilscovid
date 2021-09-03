@@ -22,6 +22,7 @@ py==1.10.0
 pyinotify==0.9.6; platform_system == 'Linux'
 pyparsing==2.4.7
 pytest==6.2.5
+python-slugify==5.0.2
 regex==2021.8.28
 rfc3986==1.5.0
 six==1.16.0
