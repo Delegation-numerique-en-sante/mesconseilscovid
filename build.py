@@ -110,7 +110,7 @@ def render_html_question(text, question, level):
 </div>
 <form class="question-feedback">
     <fieldset>
-        <legend>Avez-vous trouvé cette réponse utile ?</legend>
+        <legend>Avez-vous trouvé cette réponse utile&#8239;?</legend>
         <div>
             <input type="submit" class="button-outline" data-value="non" value="🙁 Non" />
             <input type="submit" class="button-outline" data-value="bof" value="😐 Bof" />
