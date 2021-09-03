@@ -41,6 +41,11 @@ body {
     overflow: inherit;
     min-width: 320px;
 }
+@media only screen and (max-width: 680px) {
+    body {
+        font-size: 0.9rem;
+    }
+}
 a {
     color: #000091;
     text-underline-offset: 3px;
@@ -185,7 +190,7 @@ legend h1 {
     max-width: 80ch;
 }
 .block p.big {
-    font-size: 1.2rem;
+    font-size: 110%;
 }
 .block ul {
     padding-left: 2rem;
@@ -196,6 +201,14 @@ legend h1 {
 }
 .block li {
     margin-bottom: 1rem;
+}
+@media only screen and (max-width: 680px) {
+    .block h2 {
+        font-size: 150%;
+    }
+    .block ul {
+        padding-left: 1rem;
+    }
 }
 
 .introduction-block {
@@ -210,6 +223,10 @@ legend h1 {
     margin-right: auto;
     max-width: 60ch;
 }
+.introduction-block .tagline {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
 #suivi-introduction-block h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -223,13 +240,13 @@ legend h1 {
 }
 
 @media only screen and (max-width: 680px) {
-    .introduction-block h2 {
-        font-size: 170%;
+    h1 {
+        font-size: 160%;
         padding-top: 0.5rem;
         margin: 0.5rem auto 1.5rem;
     }
     .introduction-block .tagline {
-        font-size: 120%;
+        font-size: 1.1rem;
     }
     .introduction-block .form-controls {
         margin-bottom: 0;
@@ -288,6 +305,7 @@ legend h1 {
     position: sticky;
     top: 0;
     background: white;
+    z-index: 10; /* Ensure it remains on top of other elements. */
 }
 .page-thematique [itemprop='url'] {
     text-decoration: none;
@@ -337,7 +355,7 @@ legend h1 {
     padding: 1rem 1.5rem;
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 120%;
     transform: translate(0, 0);
     transition: all 100ms ease-in;
     min-height: 13rem;
@@ -365,11 +383,17 @@ legend h1 {
 }
 .thematiques .card-actions .nom {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 130%;
     margin-bottom: 1rem;
 }
 .thematiques .card-actions .button {
     margin-top: 0;
+}
+@media only screen and (max-width: 680px) {
+    .thematiques a.card-header {
+        font-size: 110%;
+        padding: 0.5rem;
+    }
 }
 @media only screen and (min-width: 680px) {
     .cards .card:first-child {
@@ -383,7 +407,7 @@ footer .feedback-block {
 }
 
 .feedback-form textarea {
-    font-size: 1.3rem;
+    font-size: 130%;
     display: block;
     margin: 1rem auto 0;
     width: 100%;
@@ -419,13 +443,8 @@ footer .feedback-block {
 }
 
 footer .legals {
-    font-size: 0.8rem;
+    font-size: 80%;
     text-align: center;
-}
-
-.introduction-block .tagline {
-    font-size: 1.3rem;
-    margin-bottom: 3rem;
 }
 
 .tagline-suivi {
@@ -747,7 +766,7 @@ footer .legals {
 }
 
 .statut {
-    font-size: 1.2rem;
+    font-size: 120%;
     padding: 0.5rem 1rem;
     border: 4px solid;
     text-align: center;
@@ -1018,7 +1037,7 @@ select {
     text-align: center;
 }
 .button-with-progress .progress {
-    font-size: 0.9rem;
+    font-size: 90%;
     color: #484d7a;
 }
 .button-with-progress .button {
@@ -1150,7 +1169,7 @@ a.button-feedback-social-whatsapp {
     margin-top: 2rem;
     padding: 0.5rem 0.5rem;
     text-align: center;
-    font-size: 14px;
+    font-size: 95%;
 }
 .question-feedback legend {
     margin: 0.25rem auto;
@@ -1162,7 +1181,7 @@ a.button-feedback-social-whatsapp {
     max-width: 20rem;
 }
 .question-feedback input[type='submit'] {
-    font-size: 13px;
+    font-size: 95%;
     margin: 0.25rem;
 }
 
@@ -1414,7 +1433,7 @@ a.no-type::after {
 
 .reponse {
     color: #494e77;
-    font-size: 0.8rem;
+    font-size: 80%;
     margin-bottom: 1rem;
 }
 .block .reponse p {
@@ -1425,7 +1444,7 @@ a.no-type::after {
     border: #000091 solid 1px;
     border-radius: 20px;
     padding: 1px 6px;
-    font-size: 0.8em;
+    font-size: 80%;
     margin-right: 0.4em;
     background: #000091;
     color: #fff;
@@ -1523,6 +1542,15 @@ a.no-type::after {
     font-size: 150%;
     color: black;
 }
+@media only screen and (max-width: 680px) {
+    .thematique #conseils-block h2 {
+        font-size: 125%;
+    }
+    .thematique #conseils-block h3 {
+        font-size: 120%;
+    }
+}
+
 .thematique #conseils-block form {
     border: 2px solid #d5dbef;
     padding: 0 1rem;
@@ -1591,7 +1619,7 @@ a.no-type::after {
 }
 .thematique .cta a.button {
     display: inline-block;
-    font-size: 20px;
+    font-size: 110%;
     margin: 0 auto 2rem auto;
 }
 .thematique .cta a.button.button-outline {
@@ -1649,7 +1677,7 @@ a.no-type::after {
         padding: 0;
     }
     .block * {
-        font-size: 14px;
+        font-size: 90%;
     }
     .block p,
     .block ul {
