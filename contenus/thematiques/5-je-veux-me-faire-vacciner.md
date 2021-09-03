@@ -21,7 +21,7 @@
 
     Pour les informations relatives au **rappel vaccinal**, dit *troisième dose*, voir :
 
-    * [Quand devrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?](/je-suis-vaccine.html#anchor-a27f14fdf1a02d2e4c470f787d2e6720)
+    * [Quand devrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?](/je-suis-vaccine.html#quand-devrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose)
 
     </div>
 
