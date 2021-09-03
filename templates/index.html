@@ -502,22 +502,24 @@
             <fieldset>
                 <legend><h1>{{ question_symptômes_titre|inline|me_or_them }}</h1></legend>
                 <div class="required">
-                    <legend><h2 id="symptomes-label">{{ question_symptômes_titre_ouinon|inline|me_or_them }}</h2></legend>
-                    {{ question_symptômes_titre_aide }}
-                    <div role="radiogroup" aria-labelledby="symptomes-label">
-                        <input id="symptomes_actuels" type="radio" required name="symptomes_actuels_statuts">
-                        <label for="symptomes_actuels">
-                            {{ question_symptômes_libellé_oui|inline|me_or_them }}
-                        </label>
-                        <input id="symptomes_passes" type="radio" required name="symptomes_actuels_statuts">
-                        <label for="symptomes_passes">
-                            {{ question_symptômes_libellé_passés|inline|me_or_them }}
-                        </label>
-                        <input id="symptomes_non" type="radio" required name="symptomes_actuels_statuts">
-                        <label for="symptomes_non">
-                            <span>{{ question_symptômes_libellé_non|inline }}</span>
-                        </label>
-                    </div>
+                    <fieldset>
+                        <legend><h2 id="symptomes-label">{{ question_symptômes_titre_ouinon|inline|me_or_them }}</h2></legend>
+                        {{ question_symptômes_titre_aide }}
+                        <div role="radiogroup" aria-labelledby="symptomes-label">
+                            <input id="symptomes_actuels" type="radio" required name="symptomes_actuels_statuts">
+                            <label for="symptomes_actuels">
+                                {{ question_symptômes_libellé_oui|inline|me_or_them }}
+                            </label>
+                            <input id="symptomes_passes" type="radio" required name="symptomes_actuels_statuts">
+                            <label for="symptomes_passes">
+                                {{ question_symptômes_libellé_passés|inline|me_or_them }}
+                            </label>
+                            <input id="symptomes_non" type="radio" required name="symptomes_actuels_statuts">
+                            <label for="symptomes_non">
+                                <span>{{ question_symptômes_libellé_non|inline }}</span>
+                            </label>
+                        </div>
+                    </fieldset>
                 </div>
                 <div id="symptomes-choix" class="checkboxgroup required" hidden>
                     <fieldset>
