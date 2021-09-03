@@ -1,6 +1,6 @@
 # Conditions d’utilisation
 
-<div id="conseils-personnels" class="conseils">
+<div class="conseils">
 
 ## À propos
 
