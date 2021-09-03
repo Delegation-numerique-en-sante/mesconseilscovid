@@ -10,7 +10,7 @@
     <fieldset>
         <legend>
             <h3>Pass sanitaire, symptômes, cas contact ?</h3>
-            <p>En quelques clics, découvrez quel test de dépistage est le plus adapté à votre situation.</p>
+            En quelques clics, découvrez quel test de dépistage est le plus adapté à votre situation.
         </legend>
     </fieldset>
     <div class="form-controls">
