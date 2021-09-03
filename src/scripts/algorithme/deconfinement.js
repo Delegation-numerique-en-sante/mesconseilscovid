@@ -1,4 +1,4 @@
-import { joursApres, joursAvant } from '../utils'
+import { differenceEnJours, joursAvant } from '../utils'
 
 export default class AlgorithmeDeconfinement {
     constructor(profil) {
@@ -6,10 +6,7 @@ export default class AlgorithmeDeconfinement {
     }
 
     isQuarantaineDone() {
-        let delta = 10
-        const now = new Date()
-        const finDeQuarantaine = joursApres(delta, this.profil.symptomes_start_date)
-        return now > finDeQuarantaine
+        return differenceEnJours(this.profil.symptomes_start_date, new Date()) >= 10
     }
 
     isSuiviRegulier() {

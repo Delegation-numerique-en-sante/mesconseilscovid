@@ -1,6 +1,6 @@
 import { assert } from 'chai'
 
-import { joursAvant, heuresAvant } from '../utils'
+import { joursAvant } from '../utils'
 import AlgorithmeDeconfinement from '../algorithme/deconfinement'
 
 import Profil from '../profil'
@@ -24,7 +24,7 @@ describe('Algorithme déconfinement', function () {
 
         it('Vrai s’il y a 10 jours', function () {
             var profil = new Profil('mes_infos')
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
+            profil.symptomes_start_date = joursAvant(10)
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.isTrue(algoDeconfinement.isQuarantaineDone())
         })
@@ -371,7 +371,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
+            profil.symptomes_start_date = joursAvant(10)
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.isTrue(algoDeconfinement.isDeconfinable())
         })
@@ -395,7 +395,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
+            profil.symptomes_start_date = joursAvant(10)
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.isTrue(algoDeconfinement.isDeconfinable())
         })
@@ -417,7 +417,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
+            profil.symptomes_start_date = joursAvant(10)
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.isFalse(algoDeconfinement.isDeconfinable())
         })
@@ -473,7 +473,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
+            profil.symptomes_start_date = joursAvant(10)
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.isFalse(algoDeconfinement.isDeconfinable())
         })
@@ -501,7 +501,7 @@ describe('Algorithme déconfinement', function () {
                     },
                 ],
             })
-            profil.symptomes_start_date = heuresAvant(1, joursAvant(10))
+            profil.symptomes_start_date = joursAvant(10)
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.isFalse(algoDeconfinement.isDeconfinable())
         })
