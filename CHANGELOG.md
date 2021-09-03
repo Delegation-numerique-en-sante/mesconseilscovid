@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-09-03
+
+* améliorations pour la navigation sur petits écrans
+
 ## 2021-09-02
 
 * précisions sur la 3e dose
