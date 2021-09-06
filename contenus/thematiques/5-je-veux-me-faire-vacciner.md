@@ -62,6 +62,22 @@
     Dans le cas d’une 2<sup>e</sup> dose de vaccin ARNm (Pfizer-BioNTech ou Moderna) après une première dose de vaccin **Janssen**, le délai à respecter est d’au moins 4 semaines.
 
 
+.. question:: Y a-t-il des contre-indications à la vaccination ?
+
+    Les contre-indications à la vaccination sont les suivantes :
+
+    * **allergie à un composant** du vaccin (notamment polyéthylène-glycols) ;
+    * **réaction anaphylactique** de grade 2 ou plus à une première injection du vaccin ;
+    * vaccins *Janssen* et *Astrazeneca* uniquement : épisodes de **syndrome de fuite capillaire** (maladie très rare) ;
+    * pour les adolescent(e)s : syndrome inflammatoire multisystémique pédiatrique (**PIMS**) post-Covid ;
+    * recommandation établie après concertation médicale pluridisciplinaire de ne pas effectuer la seconde dose de vaccin suite à la survenue d’un **effet indésirable** d’intensité sévère ou grave attribué à la première dose de vaccin (par exemple : la survenue de myocardite, de syndrome de Guillain-Barré…).
+
+    Il y a également deux contre-indications temporaires :
+
+    * traitement par **anticorps monoclonaux** anti-SARS-CoV-2 ;
+    * **myocardites** ou **péricardites** survenues antérieurement à la vaccination et toujours évolutives.
+
+
 .. question:: Quels sont les effets secondaires des vaccins contre la Covid ?
 
     Comme tout médicament, **vous pourrez ressentir des effets secondaires**. Les plus fréquents sont : une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des malaises, de la fièvre modérée et des frissons. Ils disparaissent le plus souvent au bout de 2 à 3 jours. Si vos symptômes vous inquiètent, contactez votre médecin traitant ou le 15 en cas d’urgence.
