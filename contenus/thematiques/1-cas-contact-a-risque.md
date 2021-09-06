@@ -61,7 +61,7 @@ Si vous ne pouvez pas **télétravailler**, vous pouvez [**demander un arrêt de
     * restez en **isolement au moins 10 jours** à partir de la date du test ;
     * surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
     * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
-        * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**),
+        * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
         * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
     * après 10 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un test de contrôle ne sera pas nécessaire).
 
@@ -88,7 +88,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
     * après 10 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un nouveau test de contrôle ne sera pas nécessaire) ;
     * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
 
-        * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**) ;
+        * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**) ;
         * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
 </details>
@@ -136,7 +136,7 @@ Faire un **test antigénique** en pharmacie **immédiatement** (voir la [carte d
     * restez en **isolement au moins 10 jours** à partir de la date du test ;
     * surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
     * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
-        * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**),
+        * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
         * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
     * après 10 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un test de contrôle ne sera pas nécessaire).
 
@@ -161,7 +161,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
     * surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
     * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
 
-        * se maintenir **en isolement** eux aussi (les enfants ne doivent pas aller à l’**école**),
+        * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
         * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
     * **après 10 jours**, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un nouveau test de contrôle ne sera pas nécessaire).
 
