@@ -370,7 +370,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Depuis le 9 août, un « pass sanitaire » est requis pour tous les **vols intérieurs** en avion.
 
-    Le port du masque reste obligatoire.
+    Le **port du masque** reste obligatoire.
 
 
 ## Le « pass sanitaire » en France et dans l’Espace européen (Union européenne, Liechtenstein, Suisse, Islande, Norvège, Monaco, Andorre)
@@ -409,9 +409,9 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     **3 types de justificatifs** peuvent constituer un « pass sanitaire » grâce à un **QR code** intégré reconnu dans tout l’Espace européen :
 
-    - **Non-contamination** : le résultat *négatif* d’un **test RT-PCR ou antigénique** réalisé il y a moins de 72 h.
-    - **Certificat de rétablissement** : le résultat *positif* d’un **test RT-PCR** de plus de 11 jours et de moins de 6 mois.
-    - **Certificat de vaccination** : une attestation de **vaccination complète**, c’est-à-dire que vous avez reçu toutes les doses nécessaires depuis au moins 2 semaines (Pfizer, Moderna, AstraZeneca) ou 4 semaines (Janssen). Pour une utilisation en France, le délai d’attente après la 2<sup>e</sup> dose est réduit à **1 semaine** pour les vaccins Pfizer, Moderna et AstraZeneca.
+    - **non-contamination** : le résultat *négatif* d’un **test RT-PCR ou antigénique** réalisé il y a moins de 72 h ;
+    - **certificat de rétablissement** : le résultat *positif* d’un **test RT-PCR** de plus de 11 jours et de moins de 6 mois ;
+    - **certificat de vaccination** : une attestation de **vaccination complète**, c’est-à-dire que vous avez reçu toutes les doses nécessaires depuis au moins **2 semaines** (*Pfizer*, *Moderna*, *AstraZeneca*) ou 4 semaines (*Janssen*) ; pour une utilisation en **France**, le délai d’attente après la 2<sup>e</sup> dose est réduit à **1 semaine** pour les vaccins *Pfizer*, *Moderna* et *AstraZeneca*.
 
     **Note :** en cas de [contre-indication à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-la-vaccination), il est possible de demander à son médecin un **certificat médical** qui fera office de passe sanitaire.
 
