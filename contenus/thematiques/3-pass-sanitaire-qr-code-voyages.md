@@ -413,6 +413,8 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     - **Certificat de rétablissement** : le résultat *positif* d’un **test RT-PCR** de plus de 11 jours et de moins de 6 mois.
     - **Certificat de vaccination** : une attestation de **vaccination complète**, c’est-à-dire que vous avez reçu toutes les doses nécessaires depuis au moins 2 semaines (Pfizer, Moderna, AstraZeneca) ou 4 semaines (Janssen). Pour une utilisation en France, le délai d’attente après la 2<sup>e</sup> dose est réduit à **1 semaine** pour les vaccins Pfizer, Moderna et AstraZeneca.
 
+    **Note :** en cas de [contre-indication à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-la-vaccination), il est possible de demander à son médecin un **certificat médical** qui fera office de passe sanitaire.
+
     <div class="conseil conseil-jaune">
 
     Un **test sérologique** (prise de sang) ne comporte pas de QR code, et ne peut pas faire office de « pass sanitaire ».
