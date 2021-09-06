@@ -8,7 +8,7 @@
 
 <div class="conseil">
 
-<span class="nouveau">nouveau</span> Le forfait « 100% Psy Enfant Ado » est opérationnel. Il donne accès à 10 séances de soutien psychologique, sans avance de frais, pour les mineurs en souffrance psychique du fait de la situation sanitaire. Pour obtenir toutes les informations nécessaires, consultez [le site internet dédié au dispositif](https://www.psyenfantado.sante.gouv.fr/).
+Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **soutien psychologique**, sans avance de frais, pour les mineurs en souffrance psychique du fait de la situation sanitaire. Pour obtenir toutes les informations nécessaires, consultez [le site internet dédié au dispositif](https://www.psyenfantado.sante.gouv.fr/).
 
 </div>
 
@@ -23,15 +23,17 @@
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
     :level: 3
 
-    Pour les mineurs âgés de **16 à 17 ans**, aucune autorisation n’est requise.
+    Pour les mineurs âgés de **16 à 17 ans**, aucune autorisation parentale n’est requise.
 
     Pour les mineurs âgés de **12 à 15 ans**, le consentement d’un parent ou tuteur est obligatoire. Un formulaire d’autorisation peut être [téléchargé à l’avance](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) et sera également disponible dans le centre de vaccination.
+
+    Le jour de la vaccination, l’adolescent(e) **peut venir accompagné(e)** de l’un de ses parents (ou titulaires de l’autorité parentale), mais ce n’est pas obligatoire.
 
 
 .. question:: Le mineur doit-il donner son accord ?
     :level: 3
 
-    **Oui.** Au cours de l’entretien préalable à la vaccination, le professionnel de santé donnera à l’adolescent(e) toutes les informations de façon claire et adaptée. Il recueillera ensuite son consentement oral avant de procéder à l’injection.
+    **Oui.** Au cours de l’entretien préalable à la vaccination, le professionnel de santé donnera à l’adolescent(e) toutes les informations de façon claire et adaptée. Il recueillera ensuite son **consentement oral** avant de procéder à l’injection.
 
 
 .. question:: Où faire vacciner un mineur et avec quel vaccin ?
@@ -51,22 +53,24 @@
 
     **Oui.** Comme pour les adultes, les mineurs reçoivent :
 
-    * une seule dose, s’ils ont déjà été contaminés à la Covid.
-    * deux doses, s’ils n’ont pas été contaminés par la Covid dans les mois précédant la vaccination.
+    * **une seule dose**, s’ils ont déjà été contaminés à la Covid (dans ce cas, il faut attendre **au minimum 2 mois** après le test positif avant de se faire vacciner) ;
+    * **deux doses**, s’ils n’ont pas été contaminés par la Covid dans les mois précédant la vaccination.
 
 
 .. question:: Quels justificatifs apporter le jour du rendez-vous de vaccination ?
     :level: 3
 
-    * Si l’adolescent(e) a moins de 16 ans, [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par un des deux parents ou par le tuteur.
-    * La carte vitale de l’adolescent(e) (si disponible) et celle du parent qui l’accompagne.
-    * La preuve de contamination antérieure, si le mineur a déjà été contaminé par la Covid. Cette preuve peut-être un ancien test positif, ou une sérologie (prise de sang) indiquant la présence d’anticorps.
+    * Si l’adolescent(e) a **moins de 16 ans**, [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par un des deux parents ou par le tuteur.
+    * La **carte vitale** de l’adolescent(e) (si disponible), et **celle d’un parent** (ou une [attestation de droits](https://www.ameli.fr/paris/assure/adresses-et-contacts/lobtention-dun-document/obtenir-une-attestation/obtenir-une-attestation-de-droits) mentionnant le numéro de sécurité sociale d’un parent).
+    * La preuve de contamination antérieure, si le mineur a déjà été contaminé par la Covid. Cette preuve peut-être un ancien **test positif** (RT-PCR ou antigénique), ou une **sérologie** (prise de sang) indiquant la présence d’anticorps. Il faut respecter un délai de **2 mois minimum** après ce test positif avant de se faire vacciner.
 
 
-.. question:: Comment obtenir une attestation de vaccination (valable comme « pass sanitaire » ) pour un mineur ?
+.. question:: Comment obtenir une attestation de vaccination (valable comme « pass sanitaire ») pour un mineur ?
     :level: 3
 
     Suite à la vaccination, le professionnel de santé lui remettra une **attestation de vaccination** comportant un QR code.
+
+    Elle sera valable comme « pass sanitaire » en France **7 jours après la dernière dose** (dose unique en cas de contamination antérieure, ou 2<sup>e</sup> dose dans les autres cas). Pour les voyages à l’international, le délai est de 14 jours.
 
     Cette attestation pourra être importée dans l’application TousAntiCovid rubrique « carnet », sur le smartphone de l’adolescent(e) ou de ses parents.
 
@@ -76,13 +80,13 @@
 
     **Non.** Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « pass sanitaire » utilisable en France et pour les voyages en Union européenne :
 
-    * l’attestation de vaccination complète (toutes les doses et respect du délai de 7 jours après la dernière dose) ;
-    * un test PCR ou antigénique négatif de moins de 72 h ;
-    * un test PCR positif de plus de 11 jours et moins de 6 mois.
+    * l’**attestation de vaccination complète** (toutes les doses et respect du délai de 7 jours après la dernière dose en France, ou 14 jours pour voyager à l’étranger) ;
+    * un **test PCR ou antigénique négatif** de moins de 72 h ;
+    * un **test PCR positif** de plus de 11 jours et moins de 6 mois.
 
     Par ailleurs, le ou la mineur(e) non-vacciné(e) accompagnant ses parents vaccinés lors d’un voyage bénéficiera des mêmes facilités qu’eux. Par exemple, un(e) mineur(e) non-vacciné(e) pourra accompagner ses parents vaccinés lors d’un voyage dans un [pays classé orange](https://www.gouvernement.fr/voyager-depuis-et-vers-l-etranger-mode-d-emploi) sans justifier d’un motif impérieux pour s’y rendre.
 
-    Pour plus d’informations sur les voyages et le pass sanitaire en général, consultez notre [page thématique](/pass-sanitaire-qr-code-voyages.html).
+    Pour plus d’informations, consultez notre page sur [les voyages et le pass sanitaire](/pass-sanitaire-qr-code-voyages.html).
 
 
 ## Rentrée scolaire 2021-2022
@@ -105,7 +109,7 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
     Dans les écoles, la règle de la **fermeture de la classe pour une durée de 7 jours dès le premier cas positif** continuera à s’appliquer.
 
-    Dans les collèges et les lycées, un protocole de **contact-tracing** sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves « cas contact » devront poursuivre leurs apprentissages à distance pendant 7 jours, sauf s’ils sont vaccinés.
+    Dans les collèges et les lycées, un protocole de **contact-tracing** sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves « cas contact » devront poursuivre leurs apprentissages à distance pendant 7 jours, sauf s’ils sont vaccinés.
 
 .. question:: Est-ce que mon enfant devra porter le masque ?
     :level: 3
@@ -177,13 +181,13 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 .. question:: Comment préparer mon enfant à subir un test de dépistage nasopharyngé (prélèvement nasal) ?
     :level: 3
 
-    L’enjeu est de rassurer votre enfant mais également d’éviter qu’il ne contamine les autres ou qu’il soit contaminé à l’occasion de ce test.
+    L’enjeu est de **rassurer votre enfant** mais également d’éviter qu’il ne contamine les autres ou qu’il soit contaminé à l’occasion de ce test.
 
-    Décrivez-lui l’environnement dans lequel le test sera réalisé, les vêtements de protection des professionnels de santé et le déroulement du test (le coton-tige dans le nez). Vous pouvez par exemple lui faire répéter les gestes (lever la tête, respirer par la bouche…) sous forme de jeu à la maison.
+    Décrivez-lui l’environnement dans lequel le test sera réalisé, les vêtements de protection des professionnels de santé et le déroulement du test (le coton-tige dans le nez). Vous pouvez par exemple lui faire **répéter les gestes** (lever la tête, respirer par la bouche…) sous forme de jeu à la maison.
 
-    Pendant le test, assurez-vous qu’il porte bien son masque sur la bouche et n’hésitez pas à rester à ses côtés.
+    Pendant le test, assurez-vous qu’il porte bien son **masque sur la bouche** et n’hésitez pas à rester à ses côtés.
 
-    Si vous emmenez un doudou ou un objet familier, veillez à ce qu’il n’entre pas en contact avec des surfaces qui peuvent être contaminées. Sinon, lavez-le ou laissez le en quarantaine durant 7 jours.
+    Si vous emmenez un **doudou** ou un objet familier, veillez à ce qu’il n’entre pas en contact avec des surfaces qui peuvent être contaminées. Sinon, lavez-le ou laissez le en quarantaine durant 7 jours.
 
 .. question:: Quel sont les précautions pour emmener mon enfant au parc de jeux collectifs (jeux, bacs à sable, points d’eau, etc.) ?
     :level: 3
@@ -192,10 +196,10 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
     Dans les autres cas, **vous pouvez** emmener votre(vos) enfant(s) dans les parcs et les aires de jeux collectifs sous réserve des précautions suivantes :
 
-    * **Lui laver les mains** à l’eau et au savon avant de quitter le domicile et en rentrant
-    * Respecter dans la mesure du possible une **distanciation physique** avec les autres personnes
-    * **Éviter de partager les jouets** individuels entre les enfants
-    * En cas de contact rapproché avec un enfant présentant des symptômes apparents (rhume et/ou toux), faire un lavage des mains à l’eau et au savon ou sinon au gel hydro-alcoolique
+    * lui **laver les mains** à l’eau et au savon avant de quitter le domicile et en rentrant ;
+    * respecter dans la mesure du possible une **distanciation physique** avec les autres personnes ;
+    * **éviter de partager les jouets** individuels entre les enfants ;
+    * en cas de contact rapproché avec un enfant présentant des **symptômes apparents** (rhume et/ou toux), faire un lavage des mains à l’eau et au savon ou sinon au gel hydro-alcoolique.
 
 
 .. question:: Les enfants en bas âge peuvent-ils être portés par des personnes extérieures au foyer, par exemple les grands-parents ?
@@ -203,8 +207,8 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
     **Oui,** si ces personnes ne sont pas malades et en appliquant **les mesures de prévention** suivantes :
 
-    * Bien se laver les mains à l’eau et au savon **avant** de s’occuper de l’enfant, mais aussi **après**
-    * Port du masque pour les adolescent(e)s et adultes
+    * bien **se laver les mains** à l’eau et au savon *avant* de s’occuper de l’enfant, mais aussi *après*,
+    * port du **masque** pour les adolescent(e)s et adultes.
 
 </div>
 
@@ -242,9 +246,9 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
     Il vous est conseillé :
 
-    * De maintenir **l’enfant à la maison**.
-    * De contacter par téléphone un médecin (pédiatre si possible) ou le 15 : Il est déconseillé de se rendre spontanément chez le médecin traitant ou aux urgences sans contact téléphonique préalable.
-    * D’appliquer les **mesures barrières**.
+    * de maintenir **l’enfant à la maison** ;
+    * de contacter par téléphone un **médecin** (pédiatre si possible) ou le 15 : il est déconseillé de se rendre spontanément chez le médecin traitant ou aux urgences sans contact téléphonique préalable ;
+    * d’appliquer les **mesures barrières**.
 
     Le retour de l’enfant en collectivité ne pourra être envisagé qu’après avis d’un médecin.
 
