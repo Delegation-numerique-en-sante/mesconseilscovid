@@ -3,10 +3,34 @@
 <img src="illustrations/symptomespasses.svg">
 
 <header>
-    <p class="big">Vous souhaitez vous faire vacciner contre la Covid ? Voici des réponses à quelques questions courantes sur l’immunité, les effets secondaires et vos antécédents avec la Covid :</p>
+    <p class="big">Vous souhaitez vous faire vacciner contre la Covid ? Voici des réponses à quelques questions courantes sur l’immunité, les effets secondaires et vos antécédents avec la Covid.</p>
 </header>
 
 <div itemscope itemtype="https://schema.org/FAQPage">
+
+.. question:: Devrai-je recevoir une dose de rappel, dite 3<sup>e</sup> dose ?
+
+    Avec le temps, l’efficacité de la protection du vaccin contre l’infection peut diminuer, en particulier face au variant Delta. Pour « booster » cette protection, la Haute autorité de santé (HAS) recommande un **rappel vaccinal** avec une 2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas, pour :
+
+    * les personnes de **65 ans et plus**,
+    * les personnes avec des **comorbidités** augmentant le risque de formes graves de Covid,
+    * les personnes **sévèrement immunodéprimées**,
+    * les personnes vaccinées avec le **vaccin Janssen**.
+
+    Le **rappel est réalisé avec un vaccin à ARN messager (Pfizer ou Moderna)**, quel que soit le type de vaccin utilisé précédemment.
+
+
+.. question:: Quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
+
+    Les personnes concernées par ce rappel devront attendre un délai d’**au moins 6 mois**, sauf :
+
+    * les personnes sévèrement **immunodéprimées**, qui peuvent recevoir leur **4<sup>e</sup> dose à partir de 3 mois** après leur 3<sup>e</sup> dose ;
+    * les personnes vaccciné(e)s avec le vaccin **Janssen** qui peuvent recevoir leur **2<sup>e</sup> dose à partir de 4 semaines** après la première dose.
+
+    Lorsque les délais le permettent, ce rappel pourra avoir lieu en même temps que celui contre la **grippe saisonnière**.
+
+    La vaccination se déroule en **centre de vaccination** ou chez un **professionnel de santé** (médecin, pharmacien, infirmier…).
+
 
 .. question:: Quand pourrai-je me faire vacciner ?
 
@@ -16,14 +40,6 @@
     * les personnes mineures **à partir de 12 ans** : tous les détails sur notre [page dédiée aux enfants](/conseils-pour-les-enfants.html).
 
     Si vous êtes **enceinte**, la vaccination est possible à partir du second trimestre de votre grossesse.
-
-    <div class="conseil">
-
-    Pour les informations relatives au **rappel vaccinal**, dit *troisième dose*, voir :
-
-    * [Quand devrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?](/je-suis-vaccine.html#quand-devrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose)
-
-    </div>
 
 
 .. question:: Où me faire vacciner ?

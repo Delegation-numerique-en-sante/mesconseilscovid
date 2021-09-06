@@ -3,34 +3,21 @@
 <img src="illustrations/vaccins.svg">
 
 <header>
-    <p class="big">Vous êtes vacciné(e) contre la Covid et vous vous posez des questions sur le masque, l’isolement, les contacts à risque (cas contact), la contagion (immunité), ou encore le certificat de vaccination (pass sanitaire) ?</p>
+    <p class="big">Vous êtes vacciné(e) contre la Covid et vous vous posez des questions sur le masque, l’isolement, les contacts à risque (cas contact), la contagion (immunité), ou encore le certificat de vaccination (pass sanitaire) ? Voici les réponses à vos questions.</p>
 </header>
 
+
+## Devrai-je recevoir une dose de rappel, dite 3<sup>e</sup> dose ?
+
+Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#devrai-je-recevoir-une-dose-de-rappel-dite-3-e-dose) »
+
+
+## Quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
+
+Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) »
+
+
 <div itemscope itemtype="https://schema.org/FAQPage">
-
-<p class="big">Voici les réponses à vos questions :</p>
-
-.. question:: Devrai-je recevoir une dose de rappel, dite 3<sup>e</sup> dose ?
-
-    Avec le temps, l’efficacité de la protection du vaccin contre l’infection peut diminuer, en particulier face au variant Delta. Pour « booster » cette protection, la Haute autorité de santé (HAS) recommande un **rappel vaccinal** avec une 2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas, pour :
-
-    * les personnes de **65 ans et plus**,
-    * les personnes avec des **comorbidités** augmentant le risque de formes graves de Covid,
-    * les personnes **sévèrement immunodéprimées**,
-    * les personnes vaccinées avec le **vaccin Janssen**.
-
-    Le **rappel est réalisé avec un vaccin à ARN messager (Pfizer ou Moderna)**, quel que soit le type de vaccin utilisé précédemment.
-
-.. question:: Quand devrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
-
-    Les personnes concernées par ce rappel devront attendre un délai d’**au moins 6 mois**, sauf :
-
-    * les personnes sévèrement **immunodéprimées**, qui peuvent recevoir leur **4<sup>e</sup> dose à partir de 3 mois** après leur 3<sup>e</sup> dose ;
-    * les personnes vaccciné(e)s avec le vaccin **Janssen** qui peuvent recevoir leur **2<sup>e</sup> dose à partir de 4 semaines** après la première dose.
-
-    Lorsque les délais le permettent, ce rappel pourra avoir lieu en même temps que celui contre la **grippe saisonnière**.
-
-    La vaccination se déroule en **centre de vaccination** ou chez un **professionnel de santé** (médecin, pharmacien, infirmier…).
 
 .. question:: Pourquoi continuer à porter le masque quand on est vacciné(e) ?
 
