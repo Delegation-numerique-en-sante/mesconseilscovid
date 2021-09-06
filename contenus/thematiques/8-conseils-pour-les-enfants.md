@@ -54,7 +54,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     **Oui.** Comme pour les adultes, les mineurs reçoivent :
 
     * **une seule dose**, s’ils ont déjà été contaminés à la Covid (dans ce cas, il faut attendre **au minimum 2 mois** après le test positif avant de se faire vacciner) ;
-    * **deux doses**, s’ils n’ont pas été contaminés par la Covid dans les mois précédant la vaccination.
+    * **deux doses**, s’ils n’ont pas déjà été contaminés par la Covid.
 
 
 .. question:: Quels justificatifs apporter le jour du rendez-vous de vaccination ?
