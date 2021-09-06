@@ -202,13 +202,13 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
     * en cas de contact rapproché avec un enfant présentant des **symptômes apparents** (rhume et/ou toux), faire un lavage des mains à l’eau et au savon ou sinon au gel hydro-alcoolique.
 
 
-.. question:: Les enfants en bas âge peuvent-ils être portés par des personnes extérieures au foyer, par exemple les grands-parents ?
+.. question:: Les enfants peuvent-ils être gardés par des personnes extérieures au foyer, par exemple les grands-parents ?
     :level: 3
 
-    **Oui,** si ces personnes ne sont pas malades et en appliquant **les mesures de prévention** suivantes :
+    **Oui,** si ces personnes et l’enfant ne sont pas malades, et en appliquant les **mesures de prévention** suivantes :
 
-    * bien **se laver les mains** à l’eau et au savon *avant* de s’occuper de l’enfant, mais aussi *après*,
-    * port du **masque** pour les adolescent(e)s et adultes.
+    * respecter les **gestes barrières** : se laver régulièrement les mains à l’eau et au savon *avant* de s’occuper de l’enfant, mais aussi *après* ;
+    * porter le **masque** lors d’un contact rapproché (enfant dans les bras…).
 
 </div>
 
