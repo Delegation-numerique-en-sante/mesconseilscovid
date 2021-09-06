@@ -100,7 +100,9 @@ class QuestionDirective(Directive):
 
 def render_html_question(text, question, level):
     question_id = slugify(
-        question, stopwords=["span", "class", "visually", "hidden", "sup"]
+        question,
+        stopwords=["span", "class", "visually", "hidden", "sup"],
+        replacements=[("’", "'")],
     )
     return f"""<div id="{question_id}" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 <h{level} itemprop="name">
