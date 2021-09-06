@@ -32,16 +32,6 @@
     La vaccination se déroule en **centre de vaccination** ou chez un **professionnel de santé** (médecin, pharmacien, infirmier…).
 
 
-.. question:: Quand pourrai-je me faire vacciner ?
-
-    La vaccination est possible **dès maintenant** pour :
-
-    * toutes les personnes de **18 ans et plus** ;
-    * les personnes mineures **à partir de 12 ans** : tous les détails sur notre [page dédiée aux enfants](/conseils-pour-les-enfants.html).
-
-    Si vous êtes **enceinte**, la vaccination est possible à partir du second trimestre de votre grossesse.
-
-
 .. question:: Où me faire vacciner ?
 
     * Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech*.
