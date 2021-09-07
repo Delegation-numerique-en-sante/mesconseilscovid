@@ -25,7 +25,7 @@ Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-fair
 
     Même quand on est vacciné, **il reste un risque d’attraper la Covid** si on est exposé au virus (même si la maladie sera le plus souvent moins grave), et de le transmettre par la suite (même si votre contagiosité sera elle aussi diminuée).
 
-    Tant que la majorité de la population n’est pas vaccinée, et que le virus continue à circuler, le port du masque (comme la distance physique, le lavage des mains, et l’aération des espaces clos) reste donc essentiel **pour vous protéger et pour protéger les autres**, en particulier les personnes les plus fragiles.
+    Face au variant Delta qui est plus contagieux, le port du masque (comme la distance physique, le lavage des mains, et l’aération des espaces clos) reste donc essentiel **pour vous protéger et pour protéger les autres**, en particulier les personnes les plus fragiles.
 
 
 .. question:: Est-ce que je dois m’isoler si je suis « cas contact »  et vacciné(e) ?
