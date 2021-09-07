@@ -55,7 +55,7 @@ class ClassMixin:
     RE_CLASS = re.compile(
         r"""^
             (?P<before>.*?)
-            (?:\s*\{\.(?P<class>[\w\-]+?)\}\s*)
+            (?:\s*\{\.(?P<class>[\w\- ]+?)\}\s*)
             (?P<after>.*)
             $
         """,

@@ -60,6 +60,7 @@ def test_elements_de_liste_avec_classe():
                 - {.classe-au-debut} a
                 - b {.classe-a-la-fin}
                 - foo {.classe-au-milieu} bar
+                - {.foo bar baz} plusieurs classes
                 """
             )
         )
@@ -69,6 +70,7 @@ def test_elements_de_liste_avec_classe():
             <li class="classe-au-debut">a</li>
             <li class="classe-a-la-fin">b</li>
             <li class="classe-au-milieu">foo bar</li>
+            <li class="foo bar baz">plusieurs classes</li>
             </ul>
             """
         )
@@ -87,6 +89,8 @@ def test_paragraphes_avec_classe():
                 b {.classe-a-la-fin}
 
                 foo {.classe-au-milieu} bar
+
+                {.foo bar baz} plusieurs classes
                 """
             )
         )
@@ -95,6 +99,7 @@ def test_paragraphes_avec_classe():
             <p class="classe-au-debut">a</p>
             <p class="classe-a-la-fin">b</p>
             <p class="classe-au-milieu">foo bar</p>
+            <p class="foo bar baz">plusieurs classes</p>
             """
         )
     )
