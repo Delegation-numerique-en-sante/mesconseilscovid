@@ -61,7 +61,7 @@
 
     Pour le vaccin AstraZeneca, l’intervalle recommandé entre la 1<sup>re</sup> et la 2<sup>e</sup> dose est de 9 à 12 semaines.
 
-    Dans le cas d’une 2<sup>e</sup> dose de vaccin ARNm (Pfizer-BioNTech ou Moderna) après une première dose de vaccin **Janssen**, le délai à respecter est d’au moins 4 semaines.
+    Dans le cas d’une 2<sup>e</sup> dose de vaccin ARNm (Pfizer-BioNTech ou Moderna) après une première dose de vaccin **Janssen** ou **AstraZeneca**, le délai à respecter est d’au moins 4 semaines.
 
 
 .. question:: Y a-t-il des contre-indications à la vaccination ?
