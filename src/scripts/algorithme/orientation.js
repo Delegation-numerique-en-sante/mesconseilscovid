@@ -399,7 +399,6 @@ export default class AlgorithmeOrientation {
 
     recommandeAutoSuivi() {
         return (
-            this.sup15 &&
             this.profil.hasSymptomesActuelsReconnus() &&
             !this.profil.depistagePositifRecentAsymptomatique() &&
             !this.profil.depistageNegatifRecentSymptomatique()

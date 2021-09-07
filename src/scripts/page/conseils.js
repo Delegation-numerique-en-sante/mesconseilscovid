@@ -161,18 +161,13 @@ function showRelevantSuiviBlocks(element, algoSuivi) {
 
 export function showRelevantBlocks(element, profil, algoOrientation) {
     var blockNames = []
-    if (profil.age >= 15) {
-        blockNames = blockNames.concat(statutBlockNamesToDisplay(algoOrientation))
-        blockNames = blockNames.concat(algoOrientation.timelineBlockNamesToDisplay())
-        blockNames = blockNames.concat(
-            algoOrientation.conseilsPersonnelsBlockNamesToDisplay()
-        )
-        blockNames = blockNames.concat(algoOrientation.isolementBlockNamesToDisplay())
-        blockNames.push('et-ensuite')
-    } else {
-        blockNames.push('statut-moins-de-15-ans')
-        blockNames.push('conseils-moins-de-15-ans')
-    }
+    blockNames = blockNames.concat(statutBlockNamesToDisplay(algoOrientation))
+    blockNames = blockNames.concat(algoOrientation.timelineBlockNamesToDisplay())
+    blockNames = blockNames.concat(
+        algoOrientation.conseilsPersonnelsBlockNamesToDisplay()
+    )
+    blockNames = blockNames.concat(algoOrientation.isolementBlockNamesToDisplay())
+    blockNames.push('et-ensuite')
     blockNames = blockNames.concat(algoOrientation.depistageBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.vaccinBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.gestesBarriereBlockNamesToDisplay())
