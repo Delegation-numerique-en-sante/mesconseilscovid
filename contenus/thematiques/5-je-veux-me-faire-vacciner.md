@@ -120,7 +120,13 @@
 
 .. question:: Est-ce que je peux attraper la Covid si je suis vacciné(e) ?
 
-    **Oui.** La vaccination vous protège contre les formes graves de la maladie, mais elle n’empêche pas d’attraper la Covid ni de la transmettre à vos proches. C’est pourquoi, même vacciné(e), il faut continuer à porter le masque, respecter les gestes barrières et la prévention (test et isolement si vous ressentez des symptômes ou si vous êtes cas contact…).
+    La vaccination protège très efficacement contre les **formes graves** de la maladie, et réduit donc le risque d’hospitalisation et de décès.
+
+    Elle protège aussi contre les formes symptomatiques (à plus de 90 % pour les vaccins Pfizer-BioNTech et Moderna après 2 doses) et asymptomatiques (de l’ordre de 80 à 90 %, et au minimum à 50 %, après 2 doses de vaccin à ARNm).
+
+    Même si vous êtes jeune et en bonne santé, la vaccination réduit le risque d’infection et donc de transmission du virus à vos proches.
+
+    Cependant, les vaccins ne sont jamais efficaces à 100 %, et il reste donc possible d’attraper la Covid et de la transmettre. C’est pourquoi, même vacciné(e), il faut continuer à porter le masque, respecter les gestes barrières et les mesures de prévention (test et isolement si vous ressentez des symptômes ou si vous êtes cas contact).
 
 
 </div>
