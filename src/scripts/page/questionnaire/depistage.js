@@ -48,7 +48,7 @@ export default function depistage(page, app) {
         enableOrDisableSecondaryFields(form, primary)
     })
 
-    // On ne propose "en attente" que pour les tests RT-PCR.
+    // On ne propose "en attente" que pour les tests PCR.
     const enAttente = form.querySelector('#depistage_resultat_en_attente')
     const enAttenteLabel = form.querySelector(
         'label[for="depistage_resultat_en_attente"]'

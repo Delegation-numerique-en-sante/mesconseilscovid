@@ -39,9 +39,9 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
-    **Pour la Corse** : vous devez présenter un **test RT-PCR négatif** réalisé il y a moins de 72 h *ou* un **test antigénique négatif** réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
+    **Pour la Corse** : vous devez présenter un **test PCR négatif** réalisé il y a moins de 72 h *ou* un **test antigénique négatif** réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
 
-    **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un **test RT-PCR négatif** de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
+    **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un **test PCR négatif** de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
 
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Je pars bientôt en voyage vers un pays de l’Espace européen. Comment obtenir un « pass sanitaire européen » ?
@@ -65,7 +65,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
     :level: 4
 
-    À l’embarquement sur votre vol retour vers la France, vous devrez présenter un **test antigénique ou RT-PCR négatif** réalisé dans les 72 h précédant votre vol  (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
+    À l’embarquement sur votre vol retour vers la France, vous devrez présenter un **test antigénique ou PCR négatif** réalisé dans les 72 h précédant votre vol  (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
 
     Pour plus de détails, consultez le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
@@ -79,7 +79,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Pour vérifier à quelle catégorie (**verte**, **orange** ou **rouge**) appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements#informations).
 
-    La plupart des pays exigent la présentation d’un **test RT-PCR négatif** récent (réalisé il y a moins de 48 h ou 72 h). Pour connaître les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
+    La plupart des pays exigent la présentation d’un **test PCR négatif** récent (réalisé il y a moins de 48 h ou 72 h). Pour connaître les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 
 .. question:: <span class="visually-hidden">Je ne suis pas vacciné(e) :</span> Je rentre de voyage d’un pays extérieur à l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
@@ -87,17 +87,17 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Les mesures sont plus ou moins contraignantes selon le pays d’où vous revenez :
 
-    * d’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (États membres de l’Union européenne ainsi que Andorre, l’Islande, le Liechtenstein, Monaco, la Norvège, Saint-Marin, la Suisse et le Vatican ; s’y ajoutent l’Arabie Saoudite, l’Australie, le Bahreïn, Brunei, le Canada, le Chili, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, la Jordanie, le Liban,  la Nouvelle-Zélande, Singapour, Taïwan, Ukraine, Union des Comores, l’Uruguay et Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou RT-PCR négatif de moins de 72 h (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
+    * d’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (États membres de l’Union européenne ainsi que Andorre, l’Islande, le Liechtenstein, Monaco, la Norvège, Saint-Marin, la Suisse et le Vatican ; s’y ajoutent l’Arabie Saoudite, l’Australie, le Bahreïn, Brunei, le Canada, le Chili, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, la Jordanie, le Liban,  la Nouvelle-Zélande, Singapour, Taïwan, Ukraine, Union des Comores, l’Uruguay et Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
 
     * d’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (Afghanistan, Afrique du Sud, Algérie, Argentine, Bangladesh, Brésil, Colombie, Costa-Rica, Cuba, Géorgie, Indonésie, Iran, Maldives, Maroc, Mozambique, Namibie, Népal, Oman, Pakistan, République Démocratique du Congo, Russie, Seychelles, Suriname, Tunisie et Turquie), vous devez :
 
-        - à l’embarquement, présenter un **test RT-PCR ou antigénique négatif** réalisé il y a moins de 48 h ;
+        - à l’embarquement, présenter un **test PCR ou antigénique négatif** réalisé il y a moins de 48 h ;
         - à l’arrivée, vous soumettre à un **test antigénique** ;
         - respecter une **quarantaine obligatoire de 10 jours** à votre retour en France.
 
     * d’un [pays classé **orange**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (tous les pays, hors pays définis tels que « verts » et « rouges ») :
 
-        - à l’embarquement, vous devez présenter un **test RT-PCR ou antigénique négatif** récent (moins de 48 h ou 72 h) ;
+        - à l’embarquement, vous devez présenter un **test PCR ou antigénique négatif** récent (moins de 48 h ou 72 h) ;
         - respecter un **auto-isolement de 7 jours** à votre retour en France.
 
 </details>
@@ -134,7 +134,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     :level: 4
 
     **Oui.** Le « pass sanitaire européen », ou encore « <span lang="en">Digital Covid Certificate</span> » est entré en application le 1<sup>er</sup> juillet. Il permet de faciliter les voyages entre les pays membres.
-    Attention, le « pass sanitaire européen » n’harmonise pas les critères d’accès dans les pays membres. Chaque pays peut exiger un type de justificatif différent : test de dépistage RT-PCR ou antigénique, attestation de vaccination…
+    Attention, le « pass sanitaire européen » n’harmonise pas les critères d’accès dans les pays membres. Chaque pays peut exiger un type de justificatif différent : test de dépistage PCR ou antigénique, attestation de vaccination…
     Pour vérifiez les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 
@@ -157,7 +157,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     **Cela dépend de votre destination.** Le « pass sanitaire européen » permet de faciliter le contrôle des justificatifs (vaccination, tests de dépistage) lors des voyages au sein de l’Espace européen, mais il n’harmonise pas les conditions d’entrées dans les pays membres. Vous ne pourrez donc pas faire automatiquement valoir votre vaccination pour voyager au sein de l’Union européenne.
 
-    Certains pays exigent encore la présentation d’un **test RT-PCR ou antigénique négatif** récent (réalisé dans les 48 h ou 72 h), même pour les personnes vaccinées. Attention, le délai de validité des tests de dépistage varie selon les pays, et tous n’acceptent pas les tests antigéniques.
+    Certains pays exigent encore la présentation d’un **test PCR ou antigénique négatif** récent (réalisé dans les 48 h ou 72 h), même pour les personnes vaccinées. Attention, le délai de validité des tests de dépistage varie selon les pays, et tous n’acceptent pas les tests antigéniques.
 
     Pour vérifier les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
@@ -183,7 +183,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Pour vérifier à quelle catégorie (**verte**, **orange** ou **rouge**) appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements#informations).
 
-    La plupart des pays exigent la présentation d’un **test RT-PCR négatif** récent (réalisé dans les 48 h ou 72 h). Pour connaître les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
+    La plupart des pays exigent la présentation d’un **test PCR négatif** récent (réalisé dans les 48 h ou 72 h). Pour connaître les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 
 .. question:: <span class="visually-hidden">Je suis vacciné(e) :</span> Je reviens d’une destination extérieure à l’Espace européen. Quelles mesures s’appliquent à mon retour ?
@@ -194,11 +194,11 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (États membres de l’Union européenne ainsi que Andorre, l’Islande, le Liechtenstein, Monaco, la Norvège, Saint-Marin, la Suisse et le Vatican ; s’y ajoutent l’Arabie Saoudite, l’Australie, le Bahreïn, Brunei, le Canada, le Chili, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, la Jordanie, le Liban,  la Nouvelle-Zélande, Singapour, Taïwan, Ukraine, Union des Comores, l’Uruguay et Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter votre attestation de vaccination à l’embarquement sur votre vol retour.
 
     * D’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (Afghanistan, Afrique du Sud, Algérie, Argentine, Bangladesh, Brésil, Colombie, Costa-Rica, Cuba, Géorgie, Indonésie, Iran, Maldives, Maroc, Mozambique, Namibie, Népal, Oman, Pakistan, République Démocratique du Congo, Russie, Seychelles, Suriname, Tunisie et Turquie), vous devez :
-        - à l’embarquement, présenter un **test RT-PCR ou antigénique négatif** réalisé il y a moins de 48 h ;
+        - à l’embarquement, présenter un **test PCR ou antigénique négatif** réalisé il y a moins de 48 h ;
         - à l’arrivée, vous soumettre à un **test antigénique** ;
         - respecter un **auto-isolement de 7 jours**.
 
-    * D’un [pays classé **orange**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (tous les pays, hors pays définis tels que « verts » et « rouges ») : à l’embarquement, vous devez présenter un **test RT-PCR négatif** de moins de 72 h ou **test antigénique négatif** de moins de 48 h.
+    * D’un [pays classé **orange**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (tous les pays, hors pays définis tels que « verts » et « rouges ») : à l’embarquement, vous devez présenter un **test PCR négatif** de moins de 72 h ou **test antigénique négatif** de moins de 48 h.
 
 </details>
 
@@ -222,7 +222,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Si vous êtes en cours de vaccination (1 dose reçue sur 2 doses prévues, ou 2<sup>e</sup> dose reçue depuis moins de 2 semaines), c’est-à-dire que vous n’avez pas finalisé votre cycle vaccinal, il est probable que vous ne puissiez pas faire valoir cette vaccination pour voyager vers toutes les destinations.
 
-    Dans la plupart des cas, vous devrez présenter un **test RT-PCR ou antigénique négatif** récent (réalisé dans les 48 h ou 72 h) sur lequel figure un QR code aux normes européennes. Ce justificatif fera office de « pass sanitaire européen ».
+    Dans la plupart des cas, vous devrez présenter un **test PCR ou antigénique négatif** récent (réalisé dans les 48 h ou 72 h) sur lequel figure un QR code aux normes européennes. Ce justificatif fera office de « pass sanitaire européen ».
 
     Attention, tous les pays n’acceptent pas les **tests antigéniques**. Par ailleurs, la durée de validité du résultat varie selon les destinations de 48 h à 72 h. Nous vous conseillons de vérifier les critères d’accès à votre pays de destination avant de partir, en vous rendant sur [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
@@ -242,7 +242,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Quel justificatif présenter pour partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
-    **Pour la Corse** : vous devez présenter un **test RT-PCR négatif** réalisé il y a moins de 72 h *ou* un **test antigénique négatif** réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
+    **Pour la Corse** : vous devez présenter un **test PCR négatif** réalisé il y a moins de 72 h *ou* un **test antigénique négatif** réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
 
     **Pour l’Outre-mer** : les conditions de voyages diffèrent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
@@ -250,7 +250,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
     :level: 4
 
-    À l’embarquement sur votre vol retour vers la France, vous devrez présenter un **test antigénique ou RT-PCR négatif** réalisé dans les 72 h précédant votre vol (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
+    À l’embarquement sur votre vol retour vers la France, vous devrez présenter un **test antigénique ou PCR négatif** réalisé dans les 72 h précédant votre vol (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
 
     Pour plus de détails, consultez le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
@@ -264,7 +264,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Pour vérifier à quelle catégorie (**verte**, **orange** ou **rouge**) appartient votre pays de destination, rendez-vous sur [le site du gouvernement](https://www.gouvernement.fr/info-coronavirus/deplacements#informations).
 
-    La plupart des pays exigent la présentation d’un **test RT-PCR négatif** récent (réalisé il y a moins de 48 h ou 72 h). Pour connaître les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
+    La plupart des pays exigent la présentation d’un **test PCR négatif** récent (réalisé il y a moins de 48 h ou 72 h). Pour connaître les conditions d’entrée dans votre pays de destination, vous pouvez consulter le site internet de son ambassade et/ou celui de [France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 
 .. question:: <span class="visually-hidden">Je suis en cours de vaccination :</span> Je rentre de voyage d’un pays extérieur à l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
@@ -272,15 +272,15 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     Les mesures sont plus ou moins contraignantes selon le pays d’où vous revenez :
 
-    * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (États membres de l’Union européenne ainsi que Andorre, l’Islande, le Liechtenstein, Monaco, la Norvège, Saint-Marin, la Suisse et le Vatican ; s’y ajoutent l’Arabie Saoudite, l’Australie, le Bahreïn, Brunei, le Canada, le Chili, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, la Jordanie, le Liban,  la Nouvelle-Zélande, Singapour, Taïwan, Ukraine, Union des Comores, l’Uruguay et Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou RT-PCR négatif de moins de 72 h (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
+    * D’un [pays classé **vert**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (États membres de l’Union européenne ainsi que Andorre, l’Islande, le Liechtenstein, Monaco, la Norvège, Saint-Marin, la Suisse et le Vatican ; s’y ajoutent l’Arabie Saoudite, l’Australie, le Bahreïn, Brunei, le Canada, le Chili, la Corée du Sud, les États-Unis, Hong-Kong, Israël, le Japon, la Jordanie, le Liban,  la Nouvelle-Zélande, Singapour, Taïwan, Ukraine, Union des Comores, l’Uruguay et Vanuatu) : vous n’aurez pas à respecter une quarantaine à votre retour mais vous devez présenter un test antigénique ou PCR négatif de moins de 72 h (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
 
     * D’un [pays classé **rouge**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (Afghanistan, Afrique du Sud, Algérie, Argentine, Bangladesh, Brésil, Colombie, Costa-Rica, Cuba, Géorgie, Indonésie, Iran, Maldives, Maroc, Mozambique, Namibie, Népal, Oman, Pakistan, République Démocratique du Congo, Russie, Seychelles, Suriname, Tunisie et Turquie), vous devez :
-        - à l’embarquement, présenter un **test RT-PCR ou antigénique négatif** réalisé il y a moins de 48 h ;
+        - à l’embarquement, présenter un **test PCR ou antigénique négatif** réalisé il y a moins de 48 h ;
         - à l’arrivée, vous soumettre à un **test antigénique** ;
         - respecter une **quarantaine obligatoire de 10 jours** à votre retour en France.
 
     * D’un [pays classé **orange**](https://www.gouvernement.fr/info-coronavirus/deplacements#informations) (tous les pays, hors pays définis tels que « verts » et « rouges ») :
-        - à l’embarquement, vous devez présenter un **test RT-PCR ou antigénique négatif** récent (moins de 48 h ou 72 h) ;
+        - à l’embarquement, vous devez présenter un **test PCR ou antigénique négatif** récent (moins de 48 h ou 72 h) ;
         - respecter un **auto-isolement de 7 jours** à votre retour en France.
 
 </details>
@@ -301,9 +301,9 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Comment obtenir un « pass sanitaire européen » ?
     :level: 4
 
-    Si votre **test RT-PCR positif** date de plus de 11 jours et de moins de 6 mois et qu’il comporte un QR code aux normes européennes, alors il fait office de **« certificat de rétablissement »** reconnu comme « pass sanitaire » en France et dans l’Espace européen.
+    Si votre **test PCR positif** date de plus de 11 jours et de moins de 6 mois et qu’il comporte un QR code aux normes européennes, alors il fait office de **« certificat de rétablissement »** reconnu comme « pass sanitaire » en France et dans l’Espace européen.
 
-    Cependant, certains pays européens peuvent continuer à exiger un **test de dépistage négatif** (RT-PCR ou antigénique) récent (48 h ou 72 h).
+    Cependant, certains pays européens peuvent continuer à exiger un **test de dépistage négatif** (PCR ou antigénique) récent (48 h ou 72 h).
 
     Pour télécharger le **certificat de dépistage** comportant un QR code aux normes européennes, rendez-vous sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
 
@@ -323,7 +323,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Je rentre d’un pays de l’Espace européen. Quelles mesures s’appliquent à mon retour en France métropolitaine ?
     :level: 4
 
-    À l’embarquement sur votre vol retour vers la France, vous devrez présenter un **test antigénique ou RT-PCR négatif** réalisé dans les 72 h précédant votre vol (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
+    À l’embarquement sur votre vol retour vers la France, vous devrez présenter un **test antigénique ou PCR négatif** réalisé dans les 72 h précédant votre vol (moins de 24 h pour les pays sous surveillance : Chypre, Espagne, Grèce, Malte, Pays-Bas, Portugal).
 
     Pour plus de détails, consultez le [site du ministère de l’Intérieur](https://www.interieur.gouv.fr/Actualites/L-actu-du-Ministere/Attestation-de-deplacement-et-de-voyage#from8).
 
@@ -341,9 +341,9 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 .. question:: <span class="visually-hidden">Je suis guéri(e) de la Covid :</span> Est-ce que je peux partir en Corse ou vers les destinations d’Outre-mer ?
     :level: 4
 
-    **Pour la Corse** : vous devez présenter un **test RT-PCR négatif** réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
+    **Pour la Corse** : vous devez présenter un **test PCR négatif** réalisé il y a moins de 72 h **ou** un test antigénique négatif réalisé il y a moins de 48 h. Pour en savoir plus, rendez-vous sur le site de l’[ARS de Corse](https://www.corse.ars.sante.fr/covid19-pass-sanitaire-obligatoire-pour-venir-en-corse).
 
-    **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un **test RT-PCR négatif** de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
+    **Pour l’Outre-mer** : toutes les destinations d’Outre-mer exigent la présentation d’un **test PCR négatif** de moins de 72 h lors de l’embarquement. D’autres conditions de voyages plus ou moins contraignantes s’ajoutent selon la destination. Nous vous invitons à consulter [cette page](https://www.gouvernement.fr/info-coronavirus/outre-mer) pour en obtenir le détail.
 
 </details>
 
@@ -409,8 +409,8 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
     **3 types de justificatifs** peuvent constituer un « pass sanitaire » grâce à un **QR code** intégré reconnu dans tout l’Espace européen :
 
-    - **non-contamination** : le résultat *négatif* d’un **test RT-PCR ou antigénique** réalisé il y a moins de 72 h ;
-    - **certificat de rétablissement** : le résultat *positif* d’un **test RT-PCR** de plus de 11 jours et de moins de 6 mois ;
+    - **non-contamination** : le résultat *négatif* d’un **test PCR ou antigénique** réalisé il y a moins de 72 h ;
+    - **certificat de rétablissement** : le résultat *positif* d’un **test PCR** de plus de 11 jours et de moins de 6 mois ;
     - **certificat de vaccination** : une attestation de **vaccination complète**, c’est-à-dire que vous avez reçu toutes les doses nécessaires depuis au moins **2 semaines** (*Pfizer*, *Moderna*, *AstraZeneca*) ou 4 semaines (*Janssen*) ; pour une utilisation en **France**, le délai d’attente après la 2<sup>e</sup> dose est réduit à **1 semaine** pour les vaccins *Pfizer*, *Moderna* et *AstraZeneca*.
 
     **Note :** en cas de [contre-indication à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-la-vaccination), il est possible de demander à son médecin un **certificat médical** qui fera office de passe sanitaire.
@@ -457,7 +457,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
     Pour savoir comment importer (scanner) votre QR code dans l’application TousAntiCovid :
 
     - [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-vaccination-TJLG8dT8fs/Steps/347514) si c’est un certificat de vaccination.
-    - [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-test-siCsOIDGCZ/Steps/320836) si c’est un test de dépistage antigénique ou RT-PCR.
+    - [Cliquez ici](https://tousanticovid.stonly.com/kb/guide/fr/importer-son-certificat-de-test-siCsOIDGCZ/Steps/320836) si c’est un test de dépistage antigénique ou PCR.
 
 
 .. question:: Est-ce que je peux importer le « pass sanitaire » de mes enfants, ou de mon (ma) conjoint(e) dans mon application TousAntiCovid ?

@@ -83,10 +83,10 @@ describe('Tests', function () {
         await remplirSymptomes(page, 'oui')
         // De moins de 4 jours.
         await remplirDepuisQuand(page, 'moins_4_jours')
-        // On propose un test RT-PCR ou antigénique.
+        // On propose un test PCR ou antigénique.
         assert.include(
             await recuperationStatut(page, 'symptomes-moins-4-jours'),
-            'faire un test antigénique ou RT-PCR nasopharyngé.'
+            'faire un test antigénique ou PCR nasopharyngé.'
         )
     })
 
@@ -101,10 +101,10 @@ describe('Tests', function () {
         await remplirSymptomes(page, 'oui')
         // De plus de 4 jours.
         await remplirDepuisQuand(page, 'plus_4_jours')
-        // On propose un test RT-PCR.
+        // On propose un test PCR.
         assert.include(
             await recuperationStatut(page, 'symptomes-plus-4-jours'),
-            'faire un test RT-PCR nasopharyngé.'
+            'faire un test PCR nasopharyngé.'
         )
     })
 
@@ -139,13 +139,13 @@ describe('Tests', function () {
         await remplirCasContact(page, 'non')
         // Avec autotest.
         await remplirAutoTest(page, 'oui')
-        // On propose un test RT-PCR + isolement.
+        // On propose un test PCR + isolement.
         assert.include(
             await recuperationStatut(
                 page,
                 'pas-symptomes-pas-cas-contact-auto-test-oui'
             ),
-            'un test RT-PCR nasopharyngé et rester en isolement'
+            'un test PCR nasopharyngé et rester en isolement'
         )
     })
 
@@ -169,12 +169,12 @@ describe('Tests', function () {
         // On propose différents tests pour le pass sanitaire.
         assert.include(
             statut,
-            'un test négatif RT-PCR nasopharyngé, antigénique ou autotest supervisé'
+            'un test négatif PCR nasopharyngé, antigénique ou autotest supervisé'
         )
-        // On propose un test RT-PCR ou antigénique pour visiter des personnes vulnérables.
+        // On propose un test PCR ou antigénique pour visiter des personnes vulnérables.
         assert.include(
             statut,
-            'personnes vulnérables, un test antigénique ou RT-PCR nasopharyngé'
+            'personnes vulnérables, un test antigénique ou PCR nasopharyngé'
         )
         // On propose les autotests pour les personnes au contact de personnes fragiles.
         assert.include(statut, 'vous tester régulièrement avec les autotests')
