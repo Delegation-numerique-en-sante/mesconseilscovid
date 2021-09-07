@@ -11,6 +11,7 @@ from time import perf_counter
 
 import httpx
 import mistune
+import pytz
 from jinja2 import Environment as JinjaEnv
 from jinja2 import FileSystemLoader, StrictUndefined
 from minicli import cli, run, wrap
@@ -27,6 +28,8 @@ CONTENUS_DIR = HERE / "contenus"
 STATIC_DIR = HERE / "static"
 TEMPLATES_DIR = HERE / "templates"
 NB_OF_DISPLAYED_THEMATIQUES = 9
+
+PARIS_TIMEZONE = pytz.timezone('Europe/Paris')
 
 jinja_env = JinjaEnv(
     loader=FileSystemLoader(str(TEMPLATES_DIR)), undefined=StrictUndefined
@@ -305,10 +308,14 @@ def get_thematiques():
                 header=header,
                 body=body,
                 imgsrc=image,
-                last_modified=datetime.fromtimestamp(path.stat().st_mtime),
+                last_modified=last_modified_time(path),
             )
         )
     return thematiques
+
+
+def last_modified_time(path):
+    return PARIS_TIMEZONE.localize(datetime.fromtimestamp(path.stat().st_mtime))
 
 
 def extract_title(html_content):
