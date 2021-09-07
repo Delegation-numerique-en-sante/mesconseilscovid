@@ -108,7 +108,7 @@ describe('Parcours', function () {
         }
     })
 
-    it('remplir le questionnaire avec symptômes', async function () {
+    it('remplir le questionnaire avec symptômes (non vacciné)', async function () {
         const page = this.test.page
 
         // On va vers la page des symptômes.
@@ -139,6 +139,61 @@ describe('Parcours', function () {
             grossesse: false,
             activitePro: true,
         })
+
+        // Le statut correspond au cas où je ne suis pas encore complètement vacciné.
+        let statut = await page.waitForSelector(
+            '#page.ready #statut-symptomatique-sans-test'
+        )
+        assert.include(
+            (await statut.innerText()).trim(),
+            'Vous êtes peut-être porteur de la Covid. Restez isolé le temps de faire un test.'
+        )
+
+        await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:symptomes')
+
+        await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
+    })
+
+    it('remplir le questionnaire avec symptômes (vacciné)', async function () {
+        const page = this.test.page
+
+        // On va vers la page des symptômes.
+        await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
+
+        // On clique sur le bouton pour des conseils pour moi.
+        {
+            let bouton = await page.waitForSelector(
+                'a.button >> text="J’ai des symptômes ou mon test est positif"'
+            )
+            await Promise.all([
+                bouton.click(),
+                page.waitForNavigation({ url: '**/#symptomes' }),
+            ])
+        }
+
+        // Remplir le questionnaire.
+        await remplirQuestionnaire(page, {
+            vaccins: 'completement',
+            symptomesActuels: ['temperature'],
+            debutSymptomes: 'aujourdhui',
+            depistage: false,
+            departement: '80',
+            enfants: true,
+            age: '42',
+            taille: '165',
+            poids: '70',
+            grossesse: false,
+            activitePro: true,
+        })
+
+        // Le statut correspond au cas où je suis complètement vacciné.
+        let statut = await page.waitForSelector(
+            '#page.ready #statut-symptomatique-sans-test'
+        )
+        assert.include(
+            (await statut.innerText()).trim(),
+            'Restez isolé le temps de faire un test.\n\nBien que vous soyez vacciné(e), le risque de contamination ne peut pas être complètement écarté, en particulier face au variant Delta.'
+        )
 
         await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:symptomes')
 
