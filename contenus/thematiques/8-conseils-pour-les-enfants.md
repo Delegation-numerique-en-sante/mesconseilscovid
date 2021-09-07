@@ -154,7 +154,7 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
     * ou bien, *si cela est impossible*, faire une **déclaration de maintien à domicile** [sur le site de l’Assurance maladie](https://declare.ameli.fr/) ou [de la MSA](https://declare.msa.fr/z84coronaij/ria/#/accueil) pour obtenir un **arrêt maladie**.
 
 
-## Questions générales pour les mineurs de moins de 15 ans
+## Questions générales sur les enfants et la Covid
 
 .. question:: À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
     :level: 3
@@ -188,6 +188,7 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
     Pendant le test, assurez-vous qu’il porte bien son **masque sur la bouche** et n’hésitez pas à rester à ses côtés.
 
     Si vous emmenez un **doudou** ou un objet familier, veillez à ce qu’il n’entre pas en contact avec des surfaces qui peuvent être contaminées. Sinon, lavez-le ou laissez le en quarantaine durant 7 jours.
+
 
 .. question:: Quel sont les précautions pour emmener mon enfant au parc de jeux collectifs (jeux, bacs à sable, points d’eau, etc.) ?
     :level: 3
