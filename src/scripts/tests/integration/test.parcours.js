@@ -535,24 +535,24 @@ describe('Parcours', function () {
             let titre = await page.waitForSelector('#page.ready h1')
             assert.equal(await titre.innerText(), 'Mes conseils')
 
-            // Désolé, pas de conseils.
+            // On a bien des conseils.
             let statut = await page.waitForSelector('#page.ready #conseils-statut')
             assert.equal(
                 (await statut.innerText()).trim(),
-                'Nous ne pouvons pas donner de conseils personnalisés aux moins de 15 ans.'
+                'Vous êtes peut-être porteur de la Covid. Restez isolé le temps de faire un test.'
             )
 
-            // Le bloc « Isolement » est caché.
-            assert.isTrue(await page.isHidden('#page.ready #conseils-isolement'))
+            // Le bloc « Isolement » est bien visible.
+            assert.isTrue(await page.isVisible('#page.ready #conseils-isolement'))
 
-            // On n’a pas démarré automatiquement de suivi.
-            assert.isUndefined(
+            // On a démarré automatiquement de suivi.
+            assert.isDefined(
                 await page.evaluate(() => window.app.profil.suivi_start_date)
             )
 
-            // Le bouton « Démarrer mon suivi » est caché.
+            // Le bouton « Démarrer mon suivi » est visible.
             assert.isTrue(
-                await page.isHidden('#page.ready >> text="Démarrer mon suivi"')
+                await page.isVisible('#page.ready >> text="Démarrer mon suivi"')
             )
 
             // On peut revenir à l’accueil.
@@ -570,8 +570,8 @@ describe('Parcours', function () {
             // Il y a un lien direct vers mes conseils.
             await page.waitForSelector('#page.ready >> text="Retrouver mes conseils"')
 
-            // Il n’y a PAS de bouton « Démarrer mon suivi ».
-            assert.isNull(await page.$('#page.ready >> text="Démarrer mon suivi"'))
+            // Il y a un bouton « Démarrer mon suivi ».
+            await page.waitForSelector('#page.ready >> text="Démarrer mon suivi"')
         }
     })
 })
