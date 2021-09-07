@@ -61,20 +61,17 @@ class ClassMixin:
     )
 
     def paragraph(self, text):
-        mo = self.RE_CLASS.match(text)
-        if mo is not None:
-            class_ = mo.group("class")
-            text = " ".join(filter(None, [mo.group("before"), mo.group("after")]))
-            return f'<p class="{class_}">{text}</p>\n'
-        return super().paragraph(text)
+        return self._element_with_classes("p", text) or super().paragraph(text)
 
     def list_item(self, text, level):
+        return self._element_with_classes("li", text) or super().list_item(text, level)
+
+    def _element_with_classes(self, name, text):
         mo = self.RE_CLASS.match(text)
         if mo is not None:
             class_ = mo.group("class")
-            text = " ".join(filter(None, [mo.group("before"), mo.group("after")]))
-            return f'<li class="{class_}">{text}</li>\n'
-        return super().list_item(text, level)
+            content = " ".join(filter(None, [mo.group("before"), mo.group("after")]))
+            return f'<{name} class="{class_}">{content}</{name}>\n'
 
 
 class CustomHTMLRenderer(FrenchTypographyMixin, ClassMixin, mistune.HTMLRenderer):

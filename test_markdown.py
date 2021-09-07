@@ -91,6 +91,8 @@ def test_paragraphes_avec_classe():
                 foo {.classe-au-milieu} bar
 
                 {.foo bar baz} plusieurs classes
+
+                pas de classes
                 """
             )
         )
@@ -100,6 +102,7 @@ def test_paragraphes_avec_classe():
             <p class="classe-a-la-fin">b</p>
             <p class="classe-au-milieu">foo bar</p>
             <p class="foo bar baz">plusieurs classes</p>
+            <p>pas de classes</p>
             """
         )
     )
