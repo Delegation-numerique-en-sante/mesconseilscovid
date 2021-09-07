@@ -1,4 +1,4 @@
-Même si vous avez été vacciné‚ nous vous conseillons de :
+Nous vous conseillons de :
 
 1. **Contacter votre médecin généraliste**.
 1. **Réaliser un test** en consultant la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a> (vous serez prioritaire). Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test antigénique rapide ou un test en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test en laboratoire est conseillé.

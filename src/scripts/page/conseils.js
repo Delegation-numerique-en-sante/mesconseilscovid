@@ -17,6 +17,7 @@ import { joursAvant, joursApres, titleCase } from '../utils'
 
 import AlgorithmeOrientation from '../algorithme/orientation'
 import AlgorithmeSuivi from '../algorithme/suivi'
+import AlgorithmeVaccination from '../algorithme/vaccination'
 
 export default function conseils(page, app) {
     const element = page
@@ -119,6 +120,20 @@ export function cacherElementsConditionnels(element, profil) {
 
     // Éléments conditionnés à un foyer partagé.
     showOnlyIf(element, '.seulement-si-foyer', profil.foyer_autres_personnes)
+
+    // Éléments conditionnés à la vaccination.
+    const algoOrientation = new AlgorithmeOrientation(profil)
+    const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
+    showOnlyIf(
+        element,
+        '.seulement-si-vaccine',
+        algoVaccination.isCompletementVaccine()
+    )
+    showOnlyIf(
+        element,
+        '.seulement-si-non-vaccine',
+        !algoVaccination.isCompletementVaccine()
+    )
 }
 
 function showRelevantSuiviBlocks(element, algoSuivi) {
