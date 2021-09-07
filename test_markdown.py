@@ -50,7 +50,7 @@ def test_liste_avec_saut_de_ligne():
     )
 
 
-def test_liste_avec_classes():
+def test_elements_de_liste_avec_classe():
     from build import markdown
 
     assert (
@@ -70,6 +70,31 @@ def test_liste_avec_classes():
             <li class="classe-a-la-fin">b</li>
             <li class="classe-au-milieu">foo bar</li>
             </ul>
+            """
+        )
+    )
+
+
+def test_paragraphes_avec_classe():
+    from build import markdown
+
+    assert (
+        markdown(
+            dedent(
+                """\
+                {.classe-au-debut} a
+
+                b {.classe-a-la-fin}
+
+                foo {.classe-au-milieu} bar
+                """
+            )
+        )
+        == dedent(
+            """\
+            <p class="classe-au-debut">a</p>
+            <p class="classe-a-la-fin">b</p>
+            <p class="classe-au-milieu">foo bar</p>
             """
         )
     )

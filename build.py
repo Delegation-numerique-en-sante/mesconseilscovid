@@ -44,8 +44,8 @@ class FrenchTypographyMixin:
         return typographie(super().block_html(html))
 
 
-class CSSMixin:
-    """Possibilité d’ajouter une classe CSS sur une ligne de liste.
+class ClassMixin:
+    """Possibilité d’ajouter une classe CSS sur un paragraphe ou un élément de liste.
 
     Par exemple :
 
@@ -62,6 +62,14 @@ class CSSMixin:
         re.MULTILINE | re.VERBOSE,
     )
 
+    def paragraph(self, text):
+        mo = self.RE_CLASS.match(text)
+        if mo is not None:
+            class_ = mo.group("class")
+            text = " ".join(filter(None, [mo.group("before"), mo.group("after")]))
+            return f'<p class="{class_}">{text}</p>\n'
+        return super().paragraph(text)
+
     def list_item(self, text, level):
         mo = self.RE_CLASS.match(text)
         if mo is not None:
@@ -71,7 +79,7 @@ class CSSMixin:
         return super().list_item(text, level)
 
 
-class CustomHTMLRenderer(FrenchTypographyMixin, CSSMixin, mistune.HTMLRenderer):
+class CustomHTMLRenderer(FrenchTypographyMixin, ClassMixin, mistune.HTMLRenderer):
     pass
 
 
