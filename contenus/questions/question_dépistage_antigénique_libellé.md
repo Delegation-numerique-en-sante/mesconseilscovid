@@ -1,1 +1,1 @@
-C’était un **test antigénique rapide** (résultat en 15 à 30 minutes)
+C’était un **test antigénique** (résultat en 15 à 30 minutes)
