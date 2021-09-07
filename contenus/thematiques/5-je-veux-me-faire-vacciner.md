@@ -59,7 +59,8 @@
 
     Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée entre 39 et 42 jours (soit 6 semaines) après la première. Exceptionnellement, durant la période estivale, l’injection de la deuxième dose pourra avoir lieu entre 21 et 49 jours (soit 3 à 7 semaines) après la première, afin de permettre à chacun(e) de compléter sa vaccination avant ou après ses vacances d’été.
 
-    Dans le cas d’une 2<sup>e</sup> dose de vaccin ARNm (Pfizer-BioNTech ou Moderna) après une première dose de vaccin **Janssen**, le délai à respecter est d’au moins 4 semaines.
+    Dans le cas d’une 2<sup>e</sup> dose de vaccin ARNm (Pfizer-BioNTech ou Moderna) après une première dose de vaccin **AstraZeneca** ou **Janssen**, le délai à respecter est d'au moins 4 semaines.
+   
 
 
 .. question:: Y a-t-il des contre-indications à la vaccination ?
