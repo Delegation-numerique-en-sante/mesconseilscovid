@@ -1,6 +1,6 @@
 Nous vous conseillons de :
 
-1. **Réaliser un test RT-PCR en laboratoire** en consultant la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a> (vous serez prioritaire), pour confirmer le résultat et identifier un éventuel **variant** du virus.
+1. **Réaliser un test PCR en laboratoire** en consultant la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a> (vous serez prioritaire), pour confirmer le résultat et identifier un éventuel **variant** du virus.
 1. Vous maintenir **en isolement** pendant au moins **10 jours** à partir de la date du test antigénique.
 1. {.seulement-si-activite-pro-et-autotest} Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous en attendant le résultat du test PCR.
 1. {.seulement-si-activite-pro-et-pas-autotest} Vous allez être contacté par l’Assurance maladie ; si vous ne pouvez pas **télétravailler**, elle pourra vous prescrire un **arrêt de travail** couvrant toute votre période d’isolement.

@@ -99,13 +99,13 @@
 
 <div id="tests-de-depistage-symptomes-moins-4-jours-reponse" class="statut statut-bleu" hidden>
 
-Vous avez des symptômes qui peuvent évoquer la Covid depuis moins de 4 jours, nous vous recommandons de faire un test **antigénique** ou **RT-PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](/j-ai-des-symptomes-covid.html).
+Vous avez des symptômes qui peuvent évoquer la Covid depuis moins de 4 jours, nous vous recommandons de faire un test **antigénique** ou **PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](/j-ai-des-symptomes-covid.html).
 
 </div>
 
 <div id="tests-de-depistage-symptomes-plus-4-jours-reponse" class="statut statut-bleu" hidden>
 
-Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, nous vous recommandons de faire un **test RT-PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](/j-ai-des-symptomes-covid.html).
+Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, nous vous recommandons de faire un **test PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](/j-ai-des-symptomes-covid.html).
 
 </div>
 
@@ -113,13 +113,13 @@ Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, 
 
 Vous n’avez pas de symptômes qui peuvent évoquer la Covid mais vous êtes cas contact, nous vous recommandons de faire un **test antigénique** si vous venez de l’apprendre.
 
-Pour un test de contrôle (7 jours après votre contact à risque ), les tests **antigénique** ou **RT-PCR nasopharyngé** sont indiqués.  Consultez notre page thématique [« Je suis cas contact Covid, que faire ? »](/cas-contact-a-risque.html).
+Pour un test de contrôle (7 jours après votre contact à risque ), les tests **antigénique** ou **PCR nasopharyngé** sont indiqués.  Consultez notre page thématique [« Je suis cas contact Covid, que faire ? »](/cas-contact-a-risque.html).
 
 </div>
 
 <div id="tests-de-depistage-pas-symptomes-pas-cas-contact-auto-test-oui-reponse" class="statut statut-bleu" hidden>
 
-Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pas cas contact mais votre auto-test est positif. Vous devez confirmer ce résultat avec un test **RT-PCR nasopharyngé** et rester en isolement le temps d’obtenir cette confirmation.
+Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pas cas contact mais votre auto-test est positif. Vous devez confirmer ce résultat avec un test **PCR nasopharyngé** et rester en isolement le temps d’obtenir cette confirmation.
 
 </div>
 
@@ -127,8 +127,8 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pa
 
 Vous n’avez pas de symptômes qui peuvent évoquer la Covid et vous n’êtes pas cas contact :
 
-* Si vous souhaitez obtenir un « [pass sanitaire](/pass-sanitaire-qr-code-voyages.html) », un test négatif **RT-PCR nasopharyngé**, **antigénique** ou **autotest supervisé** par un professionnel de santé réalisé il y a moins de **72 h ou 48 h** (selon les cas) est nécessaire.
-* Si vous rendez visite à des personnes vulnérables, un test **antigénique** ou **RT-PCR nasopharyngé** est indiqué.
+* Si vous souhaitez obtenir un « [pass sanitaire](/pass-sanitaire-qr-code-voyages.html) », un test négatif **PCR nasopharyngé**, **antigénique** ou **autotest supervisé** par un professionnel de santé réalisé il y a moins de **72 h ou 48 h** (selon les cas) est nécessaire.
+* Si vous rendez visite à des personnes vulnérables, un test **antigénique** ou **PCR nasopharyngé** est indiqué.
 * Si vous travaillez régulièrement avec des personnes fragiles, il est recommandé de vous tester régulièrement avec les **autotests** vendus en pharmacie (les professionnels exerçant à domicile auprès de personnes vulnérables peuvent obtenir la prise en charge de 10 auto-tests par mois en présentant leur carte professionnelle au pharmacien).
 
 </div>
@@ -155,23 +155,23 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid et vous n’êtes 
     * les français qui résident habituellement à l’étranger ;
     * les européens qui disposent d’une carte européenne d’assurance maladie.
 
-    Les touristes non européens peuvent bénéficier de la gratuité sur présentation d’une prescription médicale ou s’ils ont été identifiés cas contact par l’Assurance maladie, sur présentation d’un justificatif (SMS, courriel). En dehors de ces cas de figure, les prix des tests sont fixés à **49,89 euros** (RT-PCR) et **25 euros** (test antigénique rapide).
+    Les touristes non européens peuvent bénéficier de la gratuité sur présentation d’une prescription médicale ou s’ils ont été identifiés cas contact par l’Assurance maladie, sur présentation d’un justificatif (SMS, courriel). En dehors de ces cas de figure, les prix des tests sont fixés à **49,89 euros** (PCR) et **25 euros** (test antigénique).
 
 
 ## Quels sont les différents tests de dépistage de la Covid-19 ?
 
 <details>
 
-.. summary:: Test RT-PCR nasopharyngé
+.. summary:: Test PCR nasopharyngé
 
-.. question:: Le test RT-PCR nasopharyngé (prélèvement nasal)
+.. question:: Le test PCR nasopharyngé (prélèvement nasal)
     :level: 4
 
-    Le test RT-PCR nasopharyngé est le test de dépistage de la Covid-19 de référence.
+    Le test PCR nasopharyngé est le test de dépistage de la Covid-19 de référence.
     Un écouvillon (long coton-tige) est inséré dans les deux narines pour réaliser un prélèvement.
     Le résultat est habituellement disponible en 24 h.
 
-.. question:: Où faire un test RT-PCR nasopharyngé ?
+.. question:: Où faire un test PCR nasopharyngé ?
     :level: 4
 
     Ce test est réalisé exclusivement par un professionnel de santé en laboratoire ou dans un centre de dépistage.
@@ -200,9 +200,9 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid et vous n’êtes 
 
 <details>
 
-.. summary:: Test RT-PCR salivaire
+.. summary:: Test PCR salivaire
 
-.. question:: Le test RT-PCR salivaire (prélèvement buccal)
+.. question:: Le test PCR salivaire (prélèvement buccal)
     :level: 3
 
     Ce test est réalisé grâce au prélèvement de la salive, avec un écouvillon (long coton-tige) ou sans (par crachat). Moins contraignant que les tests nasopharyngés, il est recommandé **lorsque le prélèvement nasal est compliqué ou impossible** (très jeunes enfants, déviation de la cloison nasale, troubles psychiatriques…).
@@ -239,6 +239,6 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid et vous n’êtes 
 .. question:: Je souhaite me faire dépister mais les prélèvements nasopharyngés sont impossibles dans mon cas
     :level: 3
 
-    Le test **RT-PCR salivaire** est indiqué dans ces cas : enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…
+    Le test **PCR salivaire** est indiqué dans ces cas : enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…
 
 </div>

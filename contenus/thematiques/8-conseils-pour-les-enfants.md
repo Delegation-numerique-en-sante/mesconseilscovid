@@ -62,7 +62,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * Si l’adolescent(e) a **moins de 16 ans**, [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par un des deux parents ou par le tuteur.
     * La **carte vitale** de l’adolescent(e) (si disponible), et **celle d’un parent** (ou une [attestation de droits](https://www.ameli.fr/paris/assure/adresses-et-contacts/lobtention-dun-document/obtenir-une-attestation/obtenir-une-attestation-de-droits) mentionnant le numéro de sécurité sociale d’un parent).
-    * La preuve de contamination antérieure, si le mineur a déjà été contaminé par la Covid. Cette preuve peut-être un ancien **test positif** (RT-PCR ou antigénique), ou une **sérologie** (prise de sang) indiquant la présence d’anticorps. Il faut respecter un délai de **2 mois minimum** après ce test positif avant de se faire vacciner.
+    * La preuve de contamination antérieure, si le mineur a déjà été contaminé par la Covid. Cette preuve peut-être un ancien **test positif** (PCR ou antigénique), ou une **sérologie** (prise de sang) indiquant la présence d’anticorps. Il faut respecter un délai de **2 mois minimum** après ce test positif avant de se faire vacciner.
 
 
 .. question:: Comment obtenir une attestation de vaccination (valable comme « pass sanitaire ») pour un mineur ?
