@@ -1,5 +1,12 @@
 # Changelog
 
+## 2021-09-07
+
+* précise la marche à suivre en cas de contact à risque
+* ajoute les contre-indications à la vaccination
+* complète les conseils sur la vaccination des mineurs
+* rend les liens vers les questions plus lisibles
+
 ## 2021-09-03
 
 * améliorations pour la navigation sur petits écrans
