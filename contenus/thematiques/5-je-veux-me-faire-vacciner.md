@@ -22,7 +22,7 @@
 
 .. question:: Quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
 
-    Les [personnes concernées](#Devrai-je-recevoir-une-dose-de-rappel,-dite-3<sup>e</sup>-dose-?) par ce rappel devront attendre un délai d’**au moins 6 mois**, sauf :
+    Les personnes concernées par ce rappel ([voir ci-dessus](#devrai-je-recevoir-une-dose-de-rappel-dite-3-e-dose)) devront attendre un délai d’**au moins 6 mois**, sauf :
 
     * les personnes sévèrement **immunodéprimées**, qui peuvent recevoir leur **4<sup>e</sup> dose à partir de 3 mois** après leur 3<sup>e</sup> dose ;
     * les personnes vaccciné(e)s avec le vaccin **Janssen** qui peuvent recevoir leur **2<sup>e</sup> dose à partir de 4 semaines** après la première dose.
