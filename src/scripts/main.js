@@ -13,7 +13,7 @@ import SUIVI_IMAGES from '../suivi_*.svg'
 import { register as registerTimeAgo } from 'timeago.js'
 
 import { bindSuppressionTotale } from './actions'
-import { estPageThematique, pageThematique } from './page/thematique'
+import { estPageThematique, pageThematique } from './page/thematiques/main'
 import App from './app'
 
 var app = new App(SUIVI_IMAGES)

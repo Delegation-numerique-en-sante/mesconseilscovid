@@ -1,12 +1,12 @@
-import { bindImpression } from '../actions'
-import { hideElement, hideSelector, showElement } from '../affichage'
-import { bindFeedback, opacityTransition } from '../feedback'
+import { bindImpression } from '../../actions'
+import { hideElement, hideSelector, showElement } from '../../affichage'
+import { bindFeedback, opacityTransition } from '../../feedback'
 import {
     getRadioValue,
     toggleFormButtonOnRadioRequired,
     uncheckAllRadio,
-} from '../formutils'
-import { getLocationPathName } from '../plausible'
+} from '../../formutils'
+import { getLocationPathName } from '../../plausible'
 
 export function estPageThematique() {
     return document.body.classList.contains('page-thematique')

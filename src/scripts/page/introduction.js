@@ -5,7 +5,7 @@ import {
     showElement,
     hideSelector,
 } from '../affichage'
-import { navigueVersUneThematique } from './thematique'
+import { navigueVersUneThematique } from './thematiques/main'
 
 export default function introduction(page, app) {
     const element = page

@@ -1,6 +1,6 @@
 import applyDetailsSummaryPolyfill from '../polyfills/details_polyfill'
 
-import { navigueVersUneThematique } from './thematique'
+import { navigueVersUneThematique } from './thematiques/main'
 import { bindCalendar, bindImpression, bindSuppressionTotale } from '../actions'
 import {
     displayBlocks,
