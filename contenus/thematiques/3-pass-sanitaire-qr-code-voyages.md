@@ -23,11 +23,11 @@
 
     - une [attestation de vaccination complète](#comment-obtenir-une-attestation-de-vaccination-avec-un-qr-code) : qui indique que votre **schéma vaccinal est complet**. > [TODO : renvoyer vers la page « Je suis vacciné » avec une définition]
 
-    Ces documents sont valables **à condition qu’ils comportent un QR code.**
-
+    
     <div class="conseil conseil-jaune">
-
-    Les **tests sérologiques** et les **autotests** qui ne sont **pas** réalisés par des professionnels de santé ne sont pas des pass sanitaires.
+    
+    * Ces documents sont valables **à condition qu’ils comportent un QR code.**
+    * Les **tests sérologiques** et les **autotests** qui ne sont **pas** réalisés par des professionnels de santé ne sont pas des pass sanitaires.
 
     </div>
 
@@ -256,7 +256,7 @@
 .. question:: Je ne peux pas me faire vacciner, comment obtenir un pass sanitaire ?
     :level: 3
 
-    Les personnes qui souffrent de certaines **pathologies** >[LIEN VERS LA LISTE sur page thématique] et qui ne peuvent pas se faire vacciner contre la Covid  peuvent présenter un **certificat médical** établi par leur médecin traitant. **Ce certificat fera office de pass sanitaire.**
+    Les personnes qui souffrent de [certaines **pathologies**](https://mesconseilscovid.sante.gouv.fr/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination) et qui **ne peuvent pas se faire vacciner** contre la Covid  peuvent présenter un **certificat médical** établi par leur médecin traitant. **Ce certificat fera office de pass sanitaire.**
 
 
 .. question:: Où le pass sanitaire est-il obligatoire ?
@@ -267,38 +267,40 @@
     Il est notamment **obligatoire** pour accéder :
     - aux lieux de loisir et de culture : **cinéma, musées, théâtres, parc d’attraction…** ;
     - aux lieux de convivialité :  **restaurants**, **bars** et **cafés** (même en terrasse) ;
-    - aux établissements médicaux-sociaux : **hôpitaux, EHPAD…** Pour les soins programmés, les accompagnateurs et les visiteurs. **Les urgences ne sont pas concernées** par le pass sanitaire.
-    - à certains grands centres commerciaux.
+    - aux établissements médicaux-sociaux : **hôpitaux, EHPAD…** Pour les soins programmés, les accompagnateurs et les visiteurs. **Les urgences ne sont pas concernées** par le pass sanitaire;
+    - à certains grands centres commerciaux;
     - aux **séminaires professionnels** de plus de 50 personnes organisés en dehors des locaux de l’entreprise.
 
     <div class="exemple">
 
-    Par exemple, une personne non vaccinée devra présenter un test de dépistage négatif ou un certificat de rétablissement pour aller à sa consultation médicale non urgente dans un hôpital.
+    Par exemple, une personne non vaccinée devra présenter un test de dépistage négatif de moins de 72 h réalisé par un professionnel de santé ou un certificat de rétablissement pour aller à sa consultation médicale non urgente dans un hôpital.
 
     </div>
-
+    
+    Le pass sanitaire n’est **pas obligatoire pour accéder aux établissements d’enseignement** (écoles, collèges, lycées, universités…).
+    
     <div class="voir-aussi">
 
     Consultez la [liste détaillée des lieux concernés par l’obligation du pass sanitaire](https://www.gouvernement.fr/ou-le-pass-sanitaire-est-il-obligatoire).
 
     </div>
 
-    Le pass sanitaire n’est **pas obligatoire pour accéder aux établissements d’enseignement** (écoles, collèges, lycées, universités…).
+    
 
 
 .. question:: Dans quels moyens de transport (avion, car, train…) le pass sanitaire s’applique t-il ?
     :level: 3
 
     Le pass sanitaire est **obligatoire** pour accéder aux moyens de **transport longue distance** en France, à savoir : **trains intercités**, **TGV**, **avions** et **car inter-régionaux**.
+    Les **transports public** (bus, métro…) **ne sont pas concernés** par cette obligation.
 
     <div class="exemple">
 
-    Par exemple, une personne non vaccinée devra présenter le QR code d’un test de dépistage négatif (PCR, antigénique ou autotest) réalisé par un professionnel de santé de moins de 72 h pour voyager en car de Bordeaux à Toulouse.
+    Par exemple, une personne non vaccinée devra présenter un test de dépistage négatif de moins de 72 h réalisé par un professionnel de santé ou un certificat de rétablissement pour voyager en car de Bordeaux à Toulouse.
 
     </div>
 
-    Les **transports public** (bus, métro…) **ne sont pas concernés** par cette obligation.
-
+    
 
 .. question:: Qui est concerné par le pass sanitaire ?
     :level: 3
@@ -338,6 +340,7 @@
 
     <div class="voir-aussi">
 
+    [Consultez la foire aux question dédiée à la mise en place du pass sanitaire dans le milieu professionne sur le site du ministère du Travail](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/article/obligation-de-vaccination-ou-de-detenir-un-pass-sanitaire-pour-certaines#54)
     [Consultez l’article 12 de la loi relative à la gestion de la crise sanitaire qui liste les professions concernées par l’obligation vaccinale.](https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000043909691)
 
     </div>
@@ -350,7 +353,7 @@
 
     <div class="voir-aussi">
 
-    [Consultez notre page de conseils pour les mineurs](https://mesconseilscovid.sante.gouv.fr/conseils-pour-les-enfants.html) >[ANCRE VERS PARTIE RENTREE SCOLAIRE ?] pour plus d’information sur le protocole Covid-19 dans les établissements scolaires.
+    [Consultez notre page de conseils pour les mineurs](https://mesconseilscovid.sante.gouv.fr/conseils-pour-les-enfants.html)pour plus d’information sur le protocole Covid-19 dans les établissements scolaires et la vaccination des enfants.
 
     </div>
 
@@ -367,27 +370,34 @@
     - une **attestation de vaccination complète**, soit 14 jours (*Pfizer*, *Moderna*, *AstraZeneca*) ou 28 jours (Janssen) après la dernière dose nécéssaire.
 
     **Attention votre preuve sanitaire n’est peut-être pas suffisante pour vous rendre dans votre pays de destination.**
+    
+    <div class="conseil conseil-jaune">
+    
+    * Ces documents sont valables **à condition qu’ils comportent un QR code.**
+    * Les **tests sérologiques** et les **autotests** ne sont **pas des pass sanitaires.**
+    * Assurez vous de **vérifier quelle preuve sanitaire est exigée** par votre pays de destination.
 
+    </div>
 
-.. question:: Est-ce que ma vaccination suffit pour voyager en Europe ?
+.. question:: Est-ce que ma vaccination suffit pour voyager à l'étranger ?
     :level: 3
 
     **Cela dépend** de votre pays de destination. **Une preuve de vaccination**, même complète, **ne suffit pas toujours**.
 
-    Avant de partir en voyage en Europe, nous vous conseillons de vérifier les **conditions d’accès à votre pays de destination sur [le portail France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).**
+    Avant de partir en voyage, **même dans l'espace européen,** nous vous conseillons de vérifier les **conditions d’accès à votre pays de destination sur [le portail France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).**
 
     **Le pass sanitaire n’a pas harmonisé les exigences des pays européens** : chacun est libre d’exiger une preuve sanitaire (vaccination ou test de dépistage).
 
 
-.. question:: Est-ce que mon certificat de rétablissement suffit pour voyager en Europe ?
+.. question:: Est-ce que mon certificat de rétablissement suffit pour voyager à l'étranger ?
     :level: 3
 
     **Cela dépend** de votre pays de destination. **Le pass sanitaire n’a pas harmonisé les exigences des pays européen** : chacun est libre d’exiger une preuve sanitaire (vaccination ou test de dépistage).
 
-    Avant de partir en voyage en Europe, nous vous conseillons de vérifier les **conditions d’accès à votre pays de destination sur [le portail France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).**
+    Avant de partir en voyage, **même dans l'espace européen,** nous vous conseillons de vérifier les **conditions d’accès à votre pays de destination sur [le portail France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).**
 
 
-.. question:: À quoi sert le pass sanitaire en Europe ?
+.. question:: À quoi sert le pass sanitaire dans l'espace européen ?
     :level: 3
 
     Le pass sanitaire **facilite les contrôles des preuves sanitaires** aux frontières entre les pays européens : une attestation vaccinale ou un test de dépistage français peuvent être lus et authentifiés par l’administration de n’importe quel pays de l’espace européen, **mais chaque pays reste libre d’exiger une attestation de vaccination OU un test de dépistage OU un certificat de rétablissement.**
@@ -400,18 +410,18 @@
 
     Lors de votre rendez-vous de vaccination, le professionnel de santé vous remet **une attestation de vaccination avec un QR code**.
 
-    Il existe 2 autres moyens d’obtenir une attestation de vaccination complète avec un QR code aux normes européennes:
+    Il existe **2 autres moyens** d’obtenir une attestation de vaccination complète avec un QR code aux normes européennes:
 
-    * munissez vous de votre **numéro de sécurité sociale** (si vous en avez un) et rendez-vous sur le [téléservice de l’Assurance maladie](https://attestation-vaccin.ameli.fr/).
-    * rendez-vous **chez un professionnel de santé** (médecin, pharmacien, infirmier, sage-femme…), avez votre **carte vitale** (si vous en avez une) afin qu’il vous en édite une nouvelle.
+    * le **télécharger** à partir du [**téléservice de l’Assurance maladie**](https://attestation-vaccin.ameli.fr/) à l'aide de votre **numéro de sécurité sociale** (si vous en avez un) ;
+    * se rendre chez **chez un professionnel de santé** (médecin, pharmacien, infirmier, sage-femme…), muni de votre **carte vitale** (si vous en avez une) afin qu’il vous en édite une nouvelle.
 
-    Si vous avez reçu toutes les doses nécéssaires, mais que votre **attestation indique que votre vaccination est incomplète**, rendez-vous chez un **professionnel de santé** afin qu’il mette à jour votre attestation.
+    Si vous avez reçu toutes les doses nécéssaires, mais que votre **attestation indique que votre vaccination est incomplète**, rendez-vous chez un **professionnel de santé** afin qu’il la mette à jour.
 
 
 .. question:: Comment obtenir un certificat de dépistage avec QR code ?
     :level: 3
 
-    Suite à un test **PCR** ou **antigénique** chez un professionnel de santé, ou un **autotest réalisé sous la supervision d’un professionel de santé**, un courriel (*e-mail*) ou un SMS vous est adressé pour vous inviter à **télécharger** le certificat de dépistage avec QR code sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
+    Suite à un test **PCR**, **antigénique** ou un **autotest réalisé sous la supervision d’un professionel de santé**, un courriel (*e-mail*) ou un SMS vous est adressé pour vous inviter à **télécharger le certificat de dépistage** avec QR code sur le [**portail SI-DEP**](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
 
     Nous vous conseillons de **le télécharger immédiatement** afin de pouvoir y accéder à chaque fois que nécéssaire.
 
@@ -421,18 +431,30 @@
 
     Si vous avez eu la Covid il y a **plus de 11 jours**, alors votre test de dépistage (PCR ou antigénique) positif devient votre **certificat de rétablissement** pour une **durée de 6 mois** depuis la date du test.
 
-    Ce certificat de dépistage est disponible au téléchargement sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp) pendant une durée de 6 mois.
+    Vous pouvez le **télécharger** sur le [**portail SI-DEP**](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).**Nous vous conseillons de le faire **immédiatement** pour le conserver aussi longtemps que nécéssaire.
+
+        <div class="conseil conseil-jaune">
 
     Attention, dans certaines situation, le **certificat de rétablissement** n’est **pas disponible** au téléchargement :
     - si vous aviez fait votre test positif **entre le 10 mars et le 10 mai 2021**, alors vous devrez demander au laboratoire où le test a été effectué qu’il saisisse le dossier dans SI-DEP pour générer le certificat ;
     - si vous avez eu un résultat de dépistage **négatif** après votre test de dépistage positif (SI-DEP ne conserve que le dernier test réalisé).
 
+    </div>
 
 .. question:: Je rencontre des difficultés techniques sur le portail SI-DEP, que faire ?
     :level: 3
 
     Nous vous conseillons de consulter la [foire au questions du portail SI-DEP](https://sidep.gouv.fr/cyberlab/Customer/FAQ_FR.pdf)
 
+.. question:: Comment intégrer mon certificat de rétablissement, test de dépistage ou attestation de vaccination dans mon application TousAntiCovid ?
+    :level: 3
+    
+    [Cliquez ici pour consultez la page d'aide de l'application TousAntiCovid.](https://tousanticovid.stonly.com/kb/fr/mon-carnet-51371)
+    
+.. question:: Je n'ai pas l'application TousAntiCovid, comment présenter mon pass sanitaire ?
+    :level: 3
+    
+    Vous pouvez présenter votre pass sanitaire (attestation de vaccination, certificat de rétablissement ou de dépistage) au **format papier ou numérique (PDF)** sans passer par l'application TousAntiCovid. 
 
 .. question:: Je suis touriste, étudiant étranger ou français vacciné à l’étranger (hors UE), comment obtenir un QR code valable en France ?
     :level: 3
@@ -445,7 +467,12 @@
 
     En attendant, si vous le souhaitez, un **test de dépistage négatif de moins de 72 h** fera office de pass sanitaire.
 
-    Attention, les tests de dépistages sont gratuits pour les assurés sociaux français ou européens mais **payants** pour les personnes qui ne bénéficient pas de cette couverture sociale.
+    <div class="conseil conseil-jaune">
+    
+    Attention, les tests de dépistages sont gratuits pour les assurés sociaux français ou européens mais **payants** pour les personnes qui ne bénéficient pas de cette couverture sociale..
+
+    </div>
+    
 
     <div class="voir-aussi">
 
