@@ -1,6 +1,6 @@
 import { cloneElementInto, hideElement, showElement } from './affichage'
 import { getCurrentPageName } from './router'
-import { estPageThematique } from './page/thematique'
+import { estPageThematique } from './page/thematiques/main'
 
 export function injectFeedbackDifficultes(targetElement) {
     cloneElementInto(document.querySelector('#feedback-difficultes'), targetElement)
