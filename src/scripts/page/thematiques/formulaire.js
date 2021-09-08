@@ -48,6 +48,7 @@ export class Formulaire {
             hideElement(boutonRefaire)
             hideSelector(document, '.statut')
             uncheckAllRadio(document)
+            // On fait un reset des intitulés de boutons.
             Array.from(
                 document.querySelectorAll('[data-initial-value]'),
                 (inputWithInitial) => {
@@ -55,7 +56,8 @@ export class Formulaire {
                     inputWithInitial.removeAttribute('data-initial-value')
                 }
             )
-            this.transitionneVersEtape('symptomes')
+            const nomPremierFormulaire = Object.keys(this.GESTIONNAIRES)[1]
+            this.transitionneVersEtape(nomPremierFormulaire)
         })
     }
 }
