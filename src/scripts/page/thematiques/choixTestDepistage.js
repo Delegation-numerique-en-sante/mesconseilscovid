@@ -5,6 +5,14 @@ import {
     uncheckAllRadio,
 } from '../../formutils'
 
+const GESTIONNAIRES = {
+    'demarrage': gereDemarrage,
+    'symptomes': gereSymptomes,
+    'depuis-quand': gereDepuisQuand,
+    'cas-contact': gereCasContact,
+    'auto-test': gereAutoTest,
+}
+
 export function dynamiseLeChoixDuTest() {
     const form = document.querySelector('#tests-de-depistage-demarrage-form')
     gereDemarrage(form)
@@ -14,14 +22,8 @@ function transitionneVersFormulaire(nom) {
     const form = document.querySelector(`#tests-de-depistage-${nom}-form`)
     showElement(form)
     gereBoutonRetour(form)
-    const correspondance = {
-        'demarrage': gereDemarrage,
-        'symptomes': gereSymptomes,
-        'depuis-quand': gereDepuisQuand,
-        'cas-contact': gereCasContact,
-        'auto-test': gereAutoTest,
-    }
-    correspondance[nom](form)
+    const gestionnaire = GESTIONNAIRES[nom]
+    gestionnaire(form)
 }
 
 function gereBoutonRetour(form) {
