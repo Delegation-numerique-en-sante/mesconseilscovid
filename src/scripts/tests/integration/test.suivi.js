@@ -46,7 +46,7 @@ describe('Suivi', function () {
             )
             assert.equal(
                 (await statut.innerText()).trim(),
-                'Vous êtes peut-être porteur de la Covid. Restez isolé le temps de faire un test.'
+                'Vous êtes peut-être porteur(se) de la Covid. Restez isolé(e) le temps de faire un test.'
             )
             // un bouton vers le suivi des symptômes
             let bouton = await page.waitForSelector(
@@ -252,7 +252,7 @@ describe('Suivi', function () {
             )
             assert.equal(
                 (await statut.innerText()).trim(),
-                'Vous êtes peut-être porteur de la Covid. Restez isolé le temps de faire un test.'
+                'Vous êtes peut-être porteur(se) de la Covid. Restez isolé(e) le temps de faire un test.'
             )
             // un bouton vers le suivi des symptômes
             let bouton = await page.waitForSelector(

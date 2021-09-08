@@ -146,7 +146,7 @@ describe('Parcours', function () {
         )
         assert.include(
             (await statut.innerText()).trim(),
-            'Vous êtes peut-être porteur de la Covid. Restez isolé le temps de faire un test.'
+            'Vous êtes peut-être porteur(se) de la Covid. Restez isolé(e) le temps de faire un test.'
         )
 
         await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:symptomes')
@@ -192,7 +192,7 @@ describe('Parcours', function () {
         )
         assert.include(
             (await statut.innerText()).trim(),
-            'Restez isolé le temps de faire un test.\n\nBien que vous soyez vacciné(e), le risque de contamination ne peut pas être complètement écarté, en particulier face au variant Delta.'
+            'Restez isolé(e) le temps de faire un test.\n\nBien que vous soyez vacciné(e), le risque de contamination ne peut pas être complètement écarté, en particulier face au variant Delta.'
         )
 
         await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:symptomes')
