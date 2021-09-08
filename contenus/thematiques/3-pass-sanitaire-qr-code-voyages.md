@@ -74,28 +74,28 @@
         </fieldset>
         <div class="form-controls">
             <div class="button-with-progress">
-                <p id="aria-description-progress-pass-sanitaire-vaccination" class="progress">Il vous reste moins de 2 étapes</p>
+                <p id="aria-description-progress-pass-sanitaire-vaccination" class="progress">Il vous reste moins de 3 étapes</p>
                 <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-vaccination">
             </div>
         </div>
     </form>
 
     <form id="pass-sanitaire-date-1re-dose-janssen-form" hidden>
-        <a href="#" data-precedent="vaccination" class="back-button">Retour</a>
+        <a href="#" data-precedent="type-vaccin" class="back-button">Retour</a>
         <fieldset class="required">
             <legend><h3 id="pass-sanitaire-date-1re-dose-janssen-label">À quelle date avez-vous reçu cette dose ?</h3></legend>
-            <input type="date" lang="fr" name="pass_sanitaire_date_1re_dose_janssen" required>
+            <input type="date" lang="fr" id="pass_sanitaire_date_1re_dose_janssen" name="pass_sanitaire_date_1re_dose_janssen" required>
         </fieldset>
         <div class="form-controls">
             <div class="button-with-progress">
-                <p id="aria-description-progress-pass-sanitaire-date-1re-dose-janssen" class="progress">Il vous reste moins de 2 étapes</p>
-                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-date-1re-dose-janssen">
+                <p id="aria-description-progress-pass-sanitaire-date-1re-dose-janssen" class="progress">C’est la dernière étape !</p>
+                <input type="submit" class="button button-arrow" value="Terminer" aria-describedby="aria-description-progress-pass-sanitaire-date-1re-dose-janssen">
             </div>
         </div>
     </form>
 
     <form id="pass-sanitaire-date-1re-dose-autres-form" hidden>
-        <a href="#" data-precedent="vaccination" class="back-button">Retour</a>
+        <a href="#" data-precedent="guerison-avant-1re-dose" class="back-button">Retour</a>
         <fieldset class="required">
             <legend><h3 id="pass-sanitaire-date-1re-dose-autres-label">Quand avez-vous reçu cette dose ?</h3></legend>
             <div role="radiogroup" aria-labelledby="pass-sanitaire-date-1re-dose-autres-label">
@@ -107,8 +107,8 @@
         </fieldset>
         <div class="form-controls">
             <div class="button-with-progress">
-                <p id="aria-description-progress-pass-sanitaire-date-1re-dose-autres" class="progress">Il vous reste moins de 2 étapes</p>
-                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-date-1re-dose-autres">
+                <p id="aria-description-progress-pass-sanitaire-date-1re-dose-autres" class="progress">C’est la dernière étape !</p>
+                <input type="submit" class="button button-arrow" value="Terminer" aria-describedby="aria-description-progress-pass-sanitaire-date-1re-dose-autres">
             </div>
         </div>
     </form>
@@ -126,14 +126,14 @@
         </fieldset>
         <div class="form-controls">
             <div class="button-with-progress">
-                <p id="aria-description-progress-pass-sanitaire-date-2e-dose" class="progress">Il vous reste moins de 2 étapes</p>
-                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-date-2e-dose">
+                <p id="aria-description-progress-pass-sanitaire-date-2e-dose" class="progress">C’est la dernière étape !</p>
+                <input type="submit" class="button button-arrow" value="Terminer" aria-describedby="aria-description-progress-pass-sanitaire-date-2e-dose">
             </div>
         </div>
     </form>
 
     <form id="pass-sanitaire-type-vaccin-form" hidden>
-        <a href="#" data-precedent="demarrage" class="back-button">Retour</a>
+        <a href="#" data-precedent="vaccination" class="back-button">Retour</a>
         <fieldset class="required">
             <legend><h3 id="pass-sanitaire-type-vaccin-label">Quel vaccin avez-vous reçu ?</h3></legend>
             <div role="radiogroup" aria-labelledby="pass-sanitaire-type-vaccin-label">
@@ -156,7 +156,7 @@
     </form>
 
     <form id="pass-sanitaire-guerison-avant-1re-dose-form" hidden>
-        <a href="#" data-precedent="demarrage" class="back-button">Retour</a>
+        <a href="#" data-precedent="type-vaccin" class="back-button">Retour</a>
         <fieldset class="required">
             <legend><h3 id="pass-sanitaire-guerison-avant-1re-dose-label">Aviez-vous eu la Covid avant cette dose de vaccin ?</h3></legend>
             <div role="radiogroup" aria-labelledby="pass-sanitaire-guerison-avant-1re-dose-label">
@@ -168,14 +168,14 @@
         </fieldset>
         <div class="form-controls">
             <div class="button-with-progress">
-                <p id="aria-description-progress-pass-sanitaire-guerison-avant-1re-dose" class="progress">Il vous reste moins de 2 étapes</p>
+                <p id="aria-description-progress-pass-sanitaire-guerison-avant-1re-dose" class="progress">Plus qu’une étape</p>
                 <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-guerison-avant-1re-dose">
             </div>
         </div>
     </form>
 
     <form id="pass-sanitaire-guerison-avant-1re-dose-autres-form" hidden>
-        <a href="#" data-precedent="demarrage" class="back-button">Retour</a>
+        <a href="#" data-precedent="type-vaccin" class="back-button">Retour</a>
         <fieldset class="required">
             <legend><h3 id="pass-sanitaire-guerison-avant-1re-dose-autres-label">Aviez-vous eu la Covid avant cette dose de vaccin ?</h3></legend>
             <div role="radiogroup" aria-labelledby="pass-sanitaire-guerison-avant-1re-dose-autres-label">
@@ -194,7 +194,7 @@
     </form>
 
     <form id="pass-sanitaire-depistage-positif-form" hidden>
-        <a href="#" data-precedent="demarrage" class="back-button">Retour</a>
+        <a href="#" data-precedent="vaccination" class="back-button">Retour</a>
         <fieldset class="required">
             <legend><h3 id="pass-sanitaire-depistage-positif-label">Avez-vous déjà été positif à un test PCR ou antigénique ?</h3></legend>
             <div role="radiogroup" aria-labelledby="pass-sanitaire-depistage-positif-label">
@@ -213,7 +213,7 @@
     </form>
 
     <form id="pass-sanitaire-date-derniere-covid-form" hidden>
-        <a href="#" data-precedent="vaccination" class="back-button">Retour</a>
+        <a href="#" data-precedent="depistage-positif" class="back-button">Retour</a>
         <fieldset class="required">
             <legend><h3 id="pass-sanitaire-date-derniere-covid-label">De quand date ce test positif ?</h3></legend>
             <div role="radiogroup" aria-labelledby="pass-sanitaire-date-derniere-covid-label">
@@ -225,8 +225,8 @@
         </fieldset>
         <div class="form-controls">
             <div class="button-with-progress">
-                <p id="aria-description-progress-pass-sanitaire-date-derniere-covid" class="progress">Il vous reste moins de 2 étapes</p>
-                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-date-derniere-covid">
+                <p id="aria-description-progress-pass-sanitaire-date-derniere-covid" class="progress">C’est la dernière étape !</p>
+                <input type="submit" class="button button-arrow" value="Terminer" aria-describedby="aria-description-progress-pass-sanitaire-date-derniere-covid">
             </div>
         </div>
     </form>
@@ -307,7 +307,7 @@
 
     </div>
 
-    <p id="tests-de-depistage-refaire" hidden>
+    <p id="pass-sanitaire-refaire" hidden>
     <a href="#" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
     </p>
 
