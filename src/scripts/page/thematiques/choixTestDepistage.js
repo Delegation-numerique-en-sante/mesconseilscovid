@@ -5,6 +5,8 @@ import {
     uncheckAllRadio,
 } from '../../formutils'
 
+const FORMULAIRE = 'tests-de-depistage'
+
 const GESTIONNAIRES = {
     'demarrage': gereDemarrage,
     'symptomes': gereSymptomes,
@@ -14,12 +16,12 @@ const GESTIONNAIRES = {
 }
 
 export function dynamiseLeChoixDuTest() {
-    const form = document.querySelector('#tests-de-depistage-demarrage-form')
+    const form = document.querySelector(`#${FORMULAIRE}-demarrage-form`)
     gereDemarrage(form)
 }
 
 function transitionneVersFormulaire(nom) {
-    const form = document.querySelector(`#tests-de-depistage-${nom}-form`)
+    const form = document.querySelector(`#${FORMULAIRE}-${nom}-form`)
     showElement(form)
     gereBoutonRetour(form)
     const gestionnaire = GESTIONNAIRES[nom]
@@ -38,13 +40,13 @@ function gereBoutonRetour(form) {
 }
 
 function afficheReponse(nom) {
-    const reponse = document.querySelector(`#tests-de-depistage-${nom}-reponse`)
+    const reponse = document.querySelector(`#${FORMULAIRE}-${nom}-reponse`)
     showElement(reponse)
     gereBoutonRefaire()
 }
 
 function gereBoutonRefaire() {
-    const boutonRefaire = document.querySelector('#tests-de-depistage-refaire')
+    const boutonRefaire = document.querySelector(`#${FORMULAIRE}-refaire`)
     showElement(boutonRefaire)
     boutonRefaire.addEventListener('click', (event) => {
         event.preventDefault()
