@@ -20,11 +20,11 @@ export function dynamiseLeChoixDuTest() {
     gereDemarrage(form)
 }
 
-function transitionneVersFormulaire(nom) {
-    const form = document.querySelector(`#${FORMULAIRE}-${nom}-form`)
+function transitionneVersEtape(etape) {
+    const form = document.querySelector(`#${FORMULAIRE}-${etape}-form`)
     showElement(form)
     gereBoutonRetour(form)
-    const gestionnaire = GESTIONNAIRES[nom]
+    const gestionnaire = GESTIONNAIRES[etape]
     gestionnaire(form)
 }
 
@@ -33,14 +33,14 @@ function gereBoutonRetour(form) {
     if (!boutonRetour) return
     boutonRetour.addEventListener('click', (event) => {
         event.preventDefault()
-        const precedent = boutonRetour.dataset.precedent
+        const etapePrecedente = boutonRetour.dataset.precedent
         hideElement(form)
-        transitionneVersFormulaire(precedent)
+        transitionneVersEtape(etapePrecedente)
     })
 }
 
-function afficheReponse(nom) {
-    const reponse = document.querySelector(`#${FORMULAIRE}-${nom}-reponse`)
+function afficheReponse(etape) {
+    const reponse = document.querySelector(`#${FORMULAIRE}-${etape}-reponse`)
     showElement(reponse)
     gereBoutonRefaire()
 }
@@ -60,7 +60,7 @@ function gereBoutonRefaire() {
                 inputWithInitial.removeAttribute('data-initial-value')
             }
         )
-        transitionneVersFormulaire('symptomes')
+        transitionneVersEtape('symptomes')
     })
 }
 
@@ -68,7 +68,7 @@ function gereDemarrage(form) {
     form.addEventListener('submit', (event) => {
         event.preventDefault()
         hideElement(form)
-        transitionneVersFormulaire('symptomes')
+        transitionneVersEtape('symptomes')
     })
 }
 
@@ -81,9 +81,9 @@ function gereSymptomes(form) {
         const value = getRadioValue(form, 'tests_de_depistage_symptomes_radio')
         hideElement(form)
         if (value === 'oui') {
-            transitionneVersFormulaire('depuis-quand')
+            transitionneVersEtape('depuis-quand')
         } else if (value === 'non') {
-            transitionneVersFormulaire('cas-contact')
+            transitionneVersEtape('cas-contact')
         }
     })
 }
@@ -111,7 +111,7 @@ function gereCasContact(form) {
         if (value === 'oui') {
             afficheReponse(`pas-symptomes-cas-contact-${value}`)
         } else if (value === 'non') {
-            transitionneVersFormulaire('auto-test')
+            transitionneVersEtape('auto-test')
         }
     })
 }
