@@ -2,6 +2,7 @@ import { bindImpression } from '../../actions'
 import { bindFeedback, opacityTransition } from '../../feedback'
 import { getLocationPathName } from '../../plausible'
 import { dynamiseLeChoixDuTest } from './choixTestDepistage'
+import { dynamiseLeChoixDuPass } from './choixPassSanitaire'
 
 export function estPageThematique() {
     return document.body.classList.contains('page-thematique')
@@ -19,10 +20,16 @@ export function pageThematique(app) {
     ouvreDetailsSiFragment()
     partagePageEnCours()
     feedbackPageEnCours(app)
+
     // À discuter : est-ce que l’on veut du générique ?
     if (document.body.dataset.thematiqueName === 'tests-de-depistage') {
         dynamiseLeChoixDuTest()
+    } else if (
+        document.body.dataset.thematiqueName === 'pass-sanitaire-qr-code-voyages'
+    ) {
+        dynamiseLeChoixDuPass()
     }
+
     navigueVersUneThematique(
         app,
         'Navigue vers une thématique depuis une autre thématique'

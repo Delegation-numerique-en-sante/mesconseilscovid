@@ -1579,17 +1579,22 @@ a.no-type::after {
     align-items: center;
 }
 .thematique #conseils-block form h3,
-.thematique #conseils-block summary h3 {
+.thematique #conseils-block summary h3,
+.thematique #conseils-block form h4,
+.thematique #conseils-block summary h4 {
     margin: 0;
-    color: #000091;
+    padding-top: 1rem;
 }
-.thematique #conseils-block form h3 {
+.thematique #conseils-block form h3,
+.thematique #conseils-block form h4 {
     color: #000;
 }
+.thematique #conseils-block form h4 + p,
 .thematique #conseils-block form h3 + p {
     margin: 0.75rem 0;
 }
-.thematique #conseils-block form .back-button + fieldset legend h3 {
+.thematique #conseils-block form .back-button + fieldset legend h3,
+.thematique #conseils-block form .back-button + fieldset legend h4 {
     padding-top: 0;
 }
 .thematique #conseils-block .statut {
