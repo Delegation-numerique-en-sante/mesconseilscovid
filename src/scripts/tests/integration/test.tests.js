@@ -166,10 +166,10 @@ describe('Tests', function () {
             page,
             'pas-symptomes-pas-cas-contact-auto-test-non'
         )
-        // On propose un test RT-PCR ou antigénique pour le Pass sanitaire.
+        // On propose différents tests pour le pass sanitaire.
         assert.include(
             statut,
-            'un test négatif RT-PCR nasopharyngé ou antigénique réalisé il y a moins de 48 h'
+            'un test négatif RT-PCR nasopharyngé, antigénique ou autotest supervisé'
         )
         // On propose un test RT-PCR ou antigénique pour visiter des personnes vulnérables.
         assert.include(
