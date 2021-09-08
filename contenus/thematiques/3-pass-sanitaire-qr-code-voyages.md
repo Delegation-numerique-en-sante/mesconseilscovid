@@ -39,18 +39,206 @@
     </div>
 
 
-.. question:: Quel pass sanitaire dois-je présenter ?
+.. question:: Quel pass sanitaire utiliser en France ?
     :level: 3
 
     En fonction de votre situation, quel justificatif vous faut-il pour avoir un pass sanitaire valable en France ?
 
-    *si vous partez à l’étranger, consultez notre rubrique dédiée (Lien vers rubrique).
+    <form id="pass-sanitaire-demarrage-form">
+        <fieldset>
+            <legend>
+                <h4>Test de dépistage négatif, positif ou attestation de vaccination ?</h4>
+                En quelques clics, vérifiez quel type de pass sanitaire est le plus adapté à votre situation.
+            </legend>
+        </fieldset>
+        <div class="form-controls">
+            <div class="button-with-progress">
+                <p></p>
+                <input type="submit" class="button button-arrow" value=" C’est parti !   ">
+            </div>
+        </div>
+    </form>
 
-    **questionnaire ici**
+    <form id="pass-sanitaire-vaccination-form" hidden>
+        <a href="#" data-precedent="demarrage" class="back-button">Retour</a>
+        <fieldset class="required">
+            <legend><h3 id="pass-sanitaire-vaccination-label">Avez-vous reçu des doses de vaccin ?</h3></legend>
+            <div role="radiogroup" aria-labelledby="pass-sanitaire-vaccination-label">
+                <input id="pass_sanitaire_vaccination_radio_une_dose" type="radio" required name="pass_sanitaire_vaccination_radio" value="1">
+                <label for="pass_sanitaire_vaccination_radio_une_dose">1 dose</label>
+                <input id="pass_sanitaire_vaccination_radio_deux_doses" type="radio" required name="pass_sanitaire_vaccination_radio" value="2">
+                <label for="pass_sanitaire_vaccination_radio_deux_doses">2 doses (ou plus)</label>
+                <input id="pass_sanitaire_vaccination_radio_aucune_dose" type="radio" required name="pass_sanitaire_vaccination_radio" value="0">
+                <label for="pass_sanitaire_vaccination_radio_aucune_dose">Aucune dose</label>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <div class="button-with-progress">
+                <p id="aria-description-progress-pass-sanitaire-vaccination" class="progress">Il vous reste moins de 2 étapes</p>
+                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-vaccination">
+            </div>
+        </div>
+    </form>
 
-    Un test de dépistage négatif, positif ou une attestation de vaccination. **Vérifiez en quelques clics quel pass sanitaire est le plus adapté à votre situation :**
+    <form id="pass-sanitaire-date-1re-dose-form" hidden>
+        <a href="#" data-precedent="vaccination" class="back-button">Retour</a>
+        <fieldset class="required">
+            <legend><h3 id="pass-sanitaire-date-1re-dose-label">À quelle date avez-vous reçu cette dose ?</h3></legend>
+        </fieldset>
+        <div class="form-controls">
+            <div class="button-with-progress">
+                <p id="aria-description-progress-pass-sanitaire-date-1re-dose" class="progress">Il vous reste moins de 2 étapes</p>
+                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-date-1re-dose">
+            </div>
+        </div>
+    </form>
 
-    > C’est parti !
+    <form id="pass-sanitaire-date-2e-dose-form" hidden>
+        <a href="#" data-precedent="vaccination" class="back-button">Retour</a>
+        <fieldset class="required">
+            <legend><h3 id="pass-sanitaire-date-2e-dose-label">À quelle date avez-vous reçu la deuxième dose ?</h3></legend>
+        </fieldset>
+        <div class="form-controls">
+            <div class="button-with-progress">
+                <p id="aria-description-progress-pass-sanitaire-date-2e-dose" class="progress">Il vous reste moins de 2 étapes</p>
+                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-date-2e-dose">
+            </div>
+        </div>
+    </form>
+
+    <form id="pass-sanitaire-type-vaccin-form" hidden>
+        <a href="#" data-precedent="demarrage" class="back-button">Retour</a>
+        <fieldset class="required">
+            <legend><h3 id="pass-sanitaire-type-vaccin-label">Quel vaccin avez-vous reçu ?</h3></legend>
+            <div role="radiogroup" aria-labelledby="pass-sanitaire-type-vaccin-label">
+                <input id="pass_sanitaire_type_vaccin_radio_pfizer" type="radio" required name="pass_sanitaire_type_vaccin_radio" value="pfizer">
+                <label for="pass_sanitaire_type_vaccin_radio_pfizer">Pfizer-BioNTech (<i>Cominarty<sup>®</sup></i>)</label>
+                <input id="pass_sanitaire_type_vaccin_radio_moderna" type="radio" required name="pass_sanitaire_type_vaccin_radio" value="moderna">
+                <label for="pass_sanitaire_type_vaccin_radio_moderna">Moderna (<i>Spikevax<sup>®</sup></i>)</label>
+                <input id="pass_sanitaire_type_vaccin_radio_astrazeneca" type="radio" required name="pass_sanitaire_type_vaccin_radio" value="astrazeneca">
+                <label for="pass_sanitaire_type_vaccin_radio_astrazeneca">AstraZeneca (<i>Vaxzevria<sup>®</sup></i>)</label>
+                <input id="pass_sanitaire_type_vaccin_radio_janssen" type="radio" required name="pass_sanitaire_type_vaccin_radio" value="janssen">
+                <label for="pass_sanitaire_type_vaccin_radio_janssen">Janssen</label>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <div class="button-with-progress">
+                <p id="aria-description-progress-pass-sanitaire-type-vaccin" class="progress">Il vous reste moins de 2 étapes</p>
+                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-type-vaccin">
+            </div>
+        </div>
+    </form>
+
+    <form id="pass-sanitaire-guerison-avant-1re-dose-form" hidden>
+        <a href="#" data-precedent="demarrage" class="back-button">Retour</a>
+        <fieldset class="required">
+            <legend><h3 id="pass-sanitaire-guerison-avant-1re-dose-label">Aviez-vous eu la Covid avant cette dose de vaccin ?</h3></legend>
+            <div role="radiogroup" aria-labelledby="pass-sanitaire-guerison-avant-1re-dose-label">
+                <input id="pass_sanitaire_guerison_avant_1re_dose_radio_oui" type="radio" required name="pass_sanitaire_guerison_avant_1re_dose_radio" value="oui">
+                <label for="pass_sanitaire_guerison_avant_1re_dose_radio_oui">Oui</label>
+                <input id="pass_sanitaire_guerison_avant_1re_dose_radio_non" type="radio" required name="pass_sanitaire_guerison_avant_1re_dose_radio" value="non">
+                <label for="pass_sanitaire_guerison_avant_1re_dose_radio_non">Non</label>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <div class="button-with-progress">
+                <p id="aria-description-progress-pass-sanitaire-guerison-avant-1re-dose" class="progress">Il vous reste moins de 2 étapes</p>
+                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-guerison-avant-1re-dose">
+            </div>
+        </div>
+    </form>
+
+    <form id="pass-sanitaire-depistage-positif-form" hidden>
+        <a href="#" data-precedent="demarrage" class="back-button">Retour</a>
+        <fieldset class="required">
+            <legend><h3 id="pass-sanitaire-depistage-positif-label">Avez-vous déjà été positif à un test PCR ou antigénique ?</h3></legend>
+            <div role="radiogroup" aria-labelledby="pass-sanitaire-depistage-positif-label">
+                <input id="pass_sanitaire_depistage_positif_radio_oui" type="radio" required name="pass_sanitaire_depistage_positif_radio" value="oui">
+                <label for="pass_sanitaire_depistage_positif_radio_oui">Oui</label>
+                <input id="pass_sanitaire_depistage_positif_radio_non" type="radio" required name="pass_sanitaire_depistage_positif_radio" value="non">
+                <label for="pass_sanitaire_depistage_positif_radio_non">Non</label>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <div class="button-with-progress">
+                <p id="aria-description-progress-pass-sanitaire-depistage-positif" class="progress">Il vous reste moins de 2 étapes</p>
+                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-depistage-positif">
+            </div>
+        </div>
+    </form>
+
+    <form id="pass-sanitaire-date-derniere-covid-form" hidden>
+        <a href="#" data-precedent="vaccination" class="back-button">Retour</a>
+        <fieldset class="required">
+            <legend><h3 id="pass-sanitaire-date-derniere-covid-label">De quand date ce test positif ?</h3></legend>
+            <div role="radiogroup" aria-labelledby="pass-sanitaire-date-derniere-covid-label">
+                <input id="pass_sanitaire_date_derniere_covid_radio_moins_de_6_mois" type="radio" required name="pass_sanitaire_date_derniere_covid_radio" value="moins_de_6_mois">
+                <label for="pass_sanitaire_date_derniere_covid_radio_moins_de_6_mois">Moins de 6  mois</label>
+                <input id="pass_sanitaire_date_derniere_covid_radio_plus_de_6_mois" type="radio" required name="pass_sanitaire_date_derniere_covid_radio" value="plus_de_6_mois">
+                <label for="pass_sanitaire_date_derniere_covid_radio_plus_de_6_mois">Plus de 6 mois</label>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <div class="button-with-progress">
+                <p id="aria-description-progress-pass-sanitaire-date-derniere-covid" class="progress">Il vous reste moins de 2 étapes</p>
+                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-date-derniere-covid">
+            </div>
+        </div>
+    </form>
+
+    <div id="pass-sanitaire-vaccination-incomplete-reponse" class="statut statut-bleu" hidden>
+
+    Votre schéma vaccinal est **incomplet** tant que vous n’avez pas reçu la dose de rappel (2<sup>e</sup> dose). Vous ne pourrez donc pas le faire valoir comme pass sanitaire pour l’instant.
+
+    En attendant, un **test de dépistage négatif** (test PCR, antigénique, ou autotest supervisé par un professionnel) datant de **moins de 72 h** fera office de pass sanitaire.
+
+    *Attention : pour voyager vers la Corse ou l’Outre-mer, un test négatif datant de moins de 48 h sera demandé.*
+
+    </div>
+
+    <div id="pass-sanitaire-non-vaccine-reponse" class="statut statut-bleu" hidden>
+
+    Vous avez **2 possibilités** pour obtenir un pass sanitaire :
+
+    1. aller vous faire **vacciner** : l’attestation de vaccination fera office de pass sanitaire **7 jours après la 2<sup>e</sup> dose** ;
+
+    2. passer un **test de dépistage** (test PCR, antigénique, ou autotest supervisé par un professionnel) : le résultat **négatif** fera office de pass sanitaire pendant **72 h**.
+
+    *Attention : pour voyager vers la Corse ou l’Outre-mer, un test négatif datant de moins de 48 h sera demandé.*
+
+    </div>
+
+    <div id="pass-sanitaire-test-positif-moins-de-6-mois-reponse" class="statut statut-bleu" hidden>
+
+    Vous avez **3 possibilités** pour obtenir un pass sanitaire :
+
+    1. présenter votre **test de dépistage positif** (aussi appelé *certificat de rétablissement*), datant de plus de **11 jours** et de moins de **6 mois**, et comportant un QRcode ;
+
+    2. aller vous faire **vacciner** (comme vous avez déjà eu la Covid, une seule dose sera nécessaire, mais il est recommandé d’attendre 2 mois minimum, idéalement 6 mois, après la guérison) : l’attestation de vaccination fera office de pass sanitaire **7 jours après cette dose unique** ;
+
+    3. passer un **test de dépistage** (test PCR, antigénique, ou autotest supervisé par un professionnel) : le résultat **négatif** fera office de pass sanitaire pendant **72 h**.
+
+    *Attention : pour voyager vers la Corse ou l’Outre-mer, un test négatif datant de moins de 48 h sera demandé.*
+
+    </div>
+
+    <div id="pass-sanitaire-test-positif-plus-de-6-mois-reponse" class="statut statut-bleu" hidden>
+
+    Vous avez **2 possibilités** pour obtenir un pass sanitaire :
+
+    1. aller vous faire **vacciner** (comme vous avez déjà eu la Covid, une seule dose sera nécessaire) : l’attestation de vaccination fera office de pass sanitaire **7 jours après cette dose unique** ;
+
+    2. passer un **test de dépistage** (test PCR, antigénique, ou autotest supervisé par un professionnel) : le résultat **négatif** fera office de pass sanitaire pendant **72 h**.
+
+    *Attention : pour voyager vers la Corse ou l’Outre-mer, un test négatif datant de moins de 48 h sera demandé.*
+
+    </div>
+
+    <div class="voir-aussi">
+
+    * Si vous partez à l’étranger, consultez notre rubrique dédiée (Lien vers rubrique).
+
+    </div>
 
 
 .. question:: Est-ce que je dois être vacciné pour avoir un pass sanitaire ?
