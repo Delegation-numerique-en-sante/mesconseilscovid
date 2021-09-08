@@ -64,10 +64,10 @@
         <fieldset class="required">
             <legend><h3 id="pass-sanitaire-vaccination-label">Avez-vous reçu des doses de vaccin ?</h3></legend>
             <div role="radiogroup" aria-labelledby="pass-sanitaire-vaccination-label">
-                <input id="pass_sanitaire_vaccination_radio_une_dose" type="radio" required name="pass_sanitaire_vaccination_radio" value="1">
-                <label for="pass_sanitaire_vaccination_radio_une_dose">1 dose</label>
                 <input id="pass_sanitaire_vaccination_radio_deux_doses" type="radio" required name="pass_sanitaire_vaccination_radio" value="2">
                 <label for="pass_sanitaire_vaccination_radio_deux_doses">2 doses (ou plus)</label>
+                <input id="pass_sanitaire_vaccination_radio_une_dose" type="radio" required name="pass_sanitaire_vaccination_radio" value="1">
+                <label for="pass_sanitaire_vaccination_radio_une_dose">1 dose</label>
                 <input id="pass_sanitaire_vaccination_radio_aucune_dose" type="radio" required name="pass_sanitaire_vaccination_radio" value="0">
                 <label for="pass_sanitaire_vaccination_radio_aucune_dose">Aucune dose</label>
             </div>
@@ -80,15 +80,35 @@
         </div>
     </form>
 
-    <form id="pass-sanitaire-date-1re-dose-form" hidden>
+    <form id="pass-sanitaire-date-1re-dose-janssen-form" hidden>
         <a href="#" data-precedent="vaccination" class="back-button">Retour</a>
         <fieldset class="required">
-            <legend><h3 id="pass-sanitaire-date-1re-dose-label">À quelle date avez-vous reçu cette dose ?</h3></legend>
+            <legend><h3 id="pass-sanitaire-date-1re-dose-janssen-label">À quelle date avez-vous reçu cette dose ?</h3></legend>
+            <input type="date" lang="fr" name="pass_sanitaire_date_1re_dose_janssen" required>
         </fieldset>
         <div class="form-controls">
             <div class="button-with-progress">
-                <p id="aria-description-progress-pass-sanitaire-date-1re-dose" class="progress">Il vous reste moins de 2 étapes</p>
-                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-date-1re-dose">
+                <p id="aria-description-progress-pass-sanitaire-date-1re-dose-janssen" class="progress">Il vous reste moins de 2 étapes</p>
+                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-date-1re-dose-janssen">
+            </div>
+        </div>
+    </form>
+
+    <form id="pass-sanitaire-date-1re-dose-autres-form" hidden>
+        <a href="#" data-precedent="vaccination" class="back-button">Retour</a>
+        <fieldset class="required">
+            <legend><h3 id="pass-sanitaire-date-1re-dose-autres-label">Quand avez-vous reçu cette dose ?</h3></legend>
+            <div role="radiogroup" aria-labelledby="pass-sanitaire-date-1re-dose-autres-label">
+                <input id="pass_sanitaire_date_1re_dose_autres_radio_moins_de_7_jours" type="radio" required name="pass_sanitaire_date_1re_dose_autres_radio" value="moins_de_7_jours">
+                <label for="pass_sanitaire_date_1re_dose_autres_radio_moins_de_7_jours">il y a moins de 7 jours</label>
+                <input id="pass_sanitaire_date_1re_dose_autres_radio_7_jours_ou_plus" type="radio" required name="pass_sanitaire_date_1re_dose_autres_radio" value="7_jours_ou_plus">
+                <label for="pass_sanitaire_date_1re_dose_autres_radio_7_jours_ou_plus">il y a 7 jours ou plus</label>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <div class="button-with-progress">
+                <p id="aria-description-progress-pass-sanitaire-date-1re-dose-autres" class="progress">Il vous reste moins de 2 étapes</p>
+                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-date-1re-dose-autres">
             </div>
         </div>
     </form>
@@ -96,7 +116,13 @@
     <form id="pass-sanitaire-date-2e-dose-form" hidden>
         <a href="#" data-precedent="vaccination" class="back-button">Retour</a>
         <fieldset class="required">
-            <legend><h3 id="pass-sanitaire-date-2e-dose-label">À quelle date avez-vous reçu la deuxième dose ?</h3></legend>
+            <legend><h3 id="pass-sanitaire-date-2e-dose-label">Quand avez-vous reçu la deuxième dose ?</h3></legend>
+            <div role="radiogroup" aria-labelledby="pass-sanitaire-date-2e-dose-label">
+                <input id="pass_sanitaire_date_2e_dose_radio_moins_de_7_jours" type="radio" required name="pass_sanitaire_date_2e_dose_radio" value="moins_de_7_jours">
+                <label for="pass_sanitaire_date_2e_dose_radio_moins_de_7_jours">il y a moins de 7 jours</label>
+                <input id="pass_sanitaire_date_2e_dose_radio_7_jours_ou_plus" type="radio" required name="pass_sanitaire_date_2e_dose_radio" value="7_jours_ou_plus">
+                <label for="pass_sanitaire_date_2e_dose_radio_7_jours_ou_plus">il y a 7 jours ou plus</label>
+            </div>
         </fieldset>
         <div class="form-controls">
             <div class="button-with-progress">
@@ -148,6 +174,25 @@
         </div>
     </form>
 
+    <form id="pass-sanitaire-guerison-avant-1re-dose-autres-form" hidden>
+        <a href="#" data-precedent="demarrage" class="back-button">Retour</a>
+        <fieldset class="required">
+            <legend><h3 id="pass-sanitaire-guerison-avant-1re-dose-autres-label">Aviez-vous eu la Covid avant cette dose de vaccin ?</h3></legend>
+            <div role="radiogroup" aria-labelledby="pass-sanitaire-guerison-avant-1re-dose-autres-label">
+                <input id="pass_sanitaire_guerison_avant_1re_dose_autres_radio_oui" type="radio" required name="pass_sanitaire_guerison_avant_1re_dose_autres_radio" value="oui">
+                <label for="pass_sanitaire_guerison_avant_1re_dose_autres_radio_oui">Oui</label>
+                <input id="pass_sanitaire_guerison_avant_1re_dose_autres_radio_non" type="radio" required name="pass_sanitaire_guerison_avant_1re_dose_autres_radio" value="non">
+                <label for="pass_sanitaire_guerison_avant_1re_dose_autres_radio_non">Non</label>
+            </div>
+        </fieldset>
+        <div class="form-controls">
+            <div class="button-with-progress">
+                <p id="aria-description-progress-pass-sanitaire-guerison-avant-1re-dose-autres" class="progress">Il vous reste moins de 2 étapes</p>
+                <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-pass-sanitaire-guerison-avant-1re-dose-autres">
+            </div>
+        </div>
+    </form>
+
     <form id="pass-sanitaire-depistage-positif-form" hidden>
         <a href="#" data-precedent="demarrage" class="back-button">Retour</a>
         <fieldset class="required">
@@ -186,6 +231,38 @@
         </div>
     </form>
 
+    <div id="pass-sanitaire-vaccination-complete-reponse" class="statut statut-bleu" hidden>
+
+    Félicitations, votre schéma vaccinal est **complet** ! 🎉
+
+    Votre **attestation de vaccination**, munie d’un QR code, fait office de pass sanitaire.
+
+    [Comment obtenir mon attestation de vaccination ?](#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code)
+
+    *Note : même si vous êtes éligible à une dose de rappel (dite 3<sup>e</sup> dose), votre pass sanitaire reste valide.*
+
+    </div>
+
+    <div id="pass-sanitaire-vaccination-delai-7-jours-reponse" class="statut statut-bleu" hidden>
+
+    Vous devez **attendre 7 jours** après votre injection pour que votre schéma vaccinal soit complet. Vous ne pourrez donc pas faire valoir votre attestation de vaccination comme pass sanitaire pour l’instant.
+
+    En attendant, vous pouvez présenter soit un **test de dépistage négatif** de **moins de 72 h**, soit un **test de dépistage positif** de plus de **11 jours** et de moins de **6 mois**.
+
+    *Attention : pour voyager vers la Corse ou l’Outre-mer, un test négatif datant de moins de 48 h sera demandé.*
+
+    </div>
+
+    <div id="pass-sanitaire-vaccination-delai-28-jours-reponse" class="statut statut-bleu" hidden>
+
+    Vous devez **attendre 28 jours** (4 semaines) après votre injection pour que votre schéma vaccinal soit complet. Vous ne pourrez donc pas faire valoir votre attestation de vaccination comme pass sanitaire pour l’instant.
+
+    En attendant, un **test de dépistage négatif** (test PCR, antigénique, ou autotest supervisé par un professionnel) datant de **moins de 72 h** fera office de pass sanitaire.
+
+    *Attention : pour voyager vers la Corse ou l’Outre-mer, un test négatif datant de moins de 48 h sera demandé.*
+
+    </div>
+
     <div id="pass-sanitaire-vaccination-incomplete-reponse" class="statut statut-bleu" hidden>
 
     Votre schéma vaccinal est **incomplet** tant que vous n’avez pas reçu la dose de rappel (2<sup>e</sup> dose). Vous ne pourrez donc pas le faire valoir comme pass sanitaire pour l’instant.
@@ -200,11 +277,10 @@
 
     Vous avez **2 possibilités** pour obtenir un pass sanitaire :
 
-    1. aller vous faire **vacciner** : l’attestation de vaccination fera office de pass sanitaire **7 jours après la 2<sup>e</sup> dose** ;
+    1. présenter un **test de dépistage négatif** (test PCR, antigénique, ou autotest supervisé par un professionnel) de moins de **72 h** (*pour voyager vers la Corse ou l’Outre-mer, il devra dater de moins de 48 h*) ;
 
-    2. passer un **test de dépistage** (test PCR, antigénique, ou autotest supervisé par un professionnel) : le résultat **négatif** fera office de pass sanitaire pendant **72 h**.
+    2. vous faire **vacciner** : l’attestation de vaccination fera office de pass sanitaire **7 jours après la 2<sup>e</sup> dose**.
 
-    *Attention : pour voyager vers la Corse ou l’Outre-mer, un test négatif datant de moins de 48 h sera demandé.*
 
     </div>
 
@@ -212,13 +288,11 @@
 
     Vous avez **3 possibilités** pour obtenir un pass sanitaire :
 
-    1. présenter votre **test de dépistage positif** (aussi appelé *certificat de rétablissement*), datant de plus de **11 jours** et de moins de **6 mois**, et comportant un QRcode ;
+    1. présenter votre **test de dépistage positif** (aussi appelé *certificat de rétablissement*), datant de plus de **11 jours** et de moins de **6 mois**, et comportant un QR code ;
 
-    2. aller vous faire **vacciner** (comme vous avez déjà eu la Covid, une seule dose sera nécessaire, mais il est recommandé d’attendre 2 mois minimum, idéalement 6 mois, après la guérison) : l’attestation de vaccination fera office de pass sanitaire **7 jours après cette dose unique** ;
+    2. présenter un **test de dépistage négatif** de moins de **72 h** (*pour voyager vers la Corse ou l’Outre-mer, il devra dater de moins de 48 h*) ;
 
-    3. passer un **test de dépistage** (test PCR, antigénique, ou autotest supervisé par un professionnel) : le résultat **négatif** fera office de pass sanitaire pendant **72 h**.
-
-    *Attention : pour voyager vers la Corse ou l’Outre-mer, un test négatif datant de moins de 48 h sera demandé.*
+    3. vous faire **vacciner** (comme vous avez déjà eu la Covid, **une seule dose** sera nécessaire, mais il est recommandé d’attendre 2 mois minimum après la guérison, idéalement jusqu’à 6 mois) : l’attestation de vaccination fera office de pass sanitaire **7 jours** après cette dose.
 
     </div>
 
@@ -226,13 +300,16 @@
 
     Vous avez **2 possibilités** pour obtenir un pass sanitaire :
 
-    1. aller vous faire **vacciner** (comme vous avez déjà eu la Covid, une seule dose sera nécessaire) : l’attestation de vaccination fera office de pass sanitaire **7 jours après cette dose unique** ;
+    1. présenter un **test de dépistage négatif** de moins de **72 h** (*pour voyager vers la Corse ou l’Outre-mer, il devra dater de moins de 48 h*) ;
 
-    2. passer un **test de dépistage** (test PCR, antigénique, ou autotest supervisé par un professionnel) : le résultat **négatif** fera office de pass sanitaire pendant **72 h**.
+    2. vous faire **vacciner** (comme vous avez déjà eu la Covid, **une seule dose** sera nécessaire) : l’attestation de vaccination fera office de pass sanitaire **7 jours** après cette dose.
 
-    *Attention : pour voyager vers la Corse ou l’Outre-mer, un test négatif datant de moins de 48 h sera demandé.*
 
     </div>
+
+    <p id="tests-de-depistage-refaire" hidden>
+    <a href="#" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
+    </p>
 
     <div class="voir-aussi">
 

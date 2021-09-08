@@ -1,6 +1,11 @@
 import { hideElement } from '../../affichage'
-import { getRadioValue, toggleFormButtonOnRadioRequired } from '../../formutils'
+import {
+    getRadioValue,
+    toggleFormButtonOnRadioRequired,
+    toggleFormButtonOnTextFieldsRequired,
+} from '../../formutils'
 import { Formulaire } from './formulaire'
+import { differenceEnJours } from '../../utils'
 
 export function dynamiseLeChoixDuPass() {
     const formulaire = new FormulairePassSanitaire()
@@ -39,8 +44,63 @@ class FormulairePassSanitaire extends Formulaire {
                 }
             })
         },
-        'date-1re-dose': () => {}, // TODO
-        'date-2e-dose': () => {}, // TODO
+        'date-1re-dose-janssen': (form) => {
+            const button = form.querySelector('input[type=submit]')
+            const requiredLabel = 'Cette information est requise'
+            toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)
+            form.addEventListener('submit', (event) => {
+                event.preventDefault()
+                const datePicker = form.elements['pass_sanitaire_date_1re_dose_janssen']
+                if (datePicker.value !== '') {
+                    hideElement(form)
+                    const aujourdhui = new Date()
+                    const date2eDose = new Date(datePicker.value)
+                    const delai = differenceEnJours(date2eDose, aujourdhui)
+                    if (delai >= 28) {
+                        this.afficheReponse('vaccination-complete')
+                    } else {
+                        this.afficheReponse('vaccination-delai-28-jours')
+                    }
+                }
+            })
+        },
+        'date-1re-dose-autres': (form) => {
+            const button = form.querySelector('input[type=submit]')
+            const requiredLabel = 'Cette information est requise'
+            toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
+            form.addEventListener('submit', (event) => {
+                event.preventDefault()
+                hideElement(form)
+                const value = getRadioValue(
+                    form,
+                    'pass_sanitaire_date_1re_dose_autres_radio'
+                )
+                if (value === '7_jours_ou_plus') {
+                    this.afficheReponse('vaccination-complete')
+                } else if (value === 'moins_de_7_jours') {
+                    this.afficheReponse('vaccination-delai-7-jours')
+                } else {
+                    console.error(`valeur inattendue: ${value}`)
+                }
+            })
+        },
+        'date-2e-dose': (form) => {
+            const button = form.querySelector('input[type=submit]')
+            const requiredLabel = 'Cette information est requise'
+            toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
+            form.addEventListener('submit', (event) => {
+                event.preventDefault()
+                hideElement(form)
+                const value = getRadioValue(form, 'pass_sanitaire_date_2e_dose_radio')
+                if (value === '7_jours_ou_plus') {
+                    this.afficheReponse('vaccination-complete')
+                } else if (value === 'moins_de_7_jours') {
+                    this.afficheReponse('vaccination-delai-7-jours')
+                } else {
+                    console.error(`valeur inattendue: ${value}`)
+                }
+            })
+        },
         'type-vaccin': (form) => {
             const button = form.querySelector('input[type=submit]')
             const requiredLabel = 'Cette information est requise'
@@ -56,7 +116,7 @@ class FormulairePassSanitaire extends Formulaire {
                 ) {
                     this.transitionneVersEtape('guerison-avant-1re-dose')
                 } else if (value === 'janssen') {
-                    this.transitionneVersEtape('date-1re-dose')
+                    this.transitionneVersEtape('date-1re-dose-janssen')
                 } else {
                     console.error(`valeur inattendue: ${value}`)
                 }
@@ -74,7 +134,7 @@ class FormulairePassSanitaire extends Formulaire {
                 )
                 hideElement(form)
                 if (value === 'oui') {
-                    // TODO
+                    this.transitionneVersEtape('date-1re-dose-autres')
                 } else if (value === 'non') {
                     this.afficheReponse('vaccination-incomplete')
                 } else {
