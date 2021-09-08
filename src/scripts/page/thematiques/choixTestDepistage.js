@@ -6,7 +6,7 @@ import {
 } from '../../formutils'
 
 export function dynamiseLeChoixDuTest() {
-    const formulaire = new Formulaire('tests-de-depistage')
+    const formulaire = new FormulaireTestDepistage()
     formulaire.demarre()
 }
 
@@ -66,6 +66,12 @@ class Formulaire {
             )
             this.transitionneVersEtape('symptomes')
         })
+    }
+}
+
+class FormulaireTestDepistage extends Formulaire {
+    constructor() {
+        super('tests-de-depistage')
     }
 
     GESTIONNAIRES = {
