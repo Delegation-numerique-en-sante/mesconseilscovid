@@ -127,7 +127,7 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pa
 
 Vous n’avez pas de symptômes qui peuvent évoquer la Covid et vous n’êtes pas cas contact :
 
-* Si vous souhaitez obtenir un « [pass sanitaire](/pass-sanitaire-qr-code-voyages.html) », un test négatif **RT-PCR nasopharyngé**, **antigénique** ou **auto-test supervisé** par un professionnel de santé réalisé il y a moins de **72 h ou 48 h** (selon les cas) est nécessaire.
+* Si vous souhaitez obtenir un « [pass sanitaire](/pass-sanitaire-qr-code-voyages.html) », un test négatif **RT-PCR nasopharyngé**, **antigénique** ou **autotest supervisé** par un professionnel de santé réalisé il y a moins de **72 h ou 48 h** (selon les cas) est nécessaire.
 * Si vous rendez visite à des personnes vulnérables, un test **antigénique** ou **RT-PCR nasopharyngé** est indiqué.
 * Si vous travaillez régulièrement avec des personnes fragiles, il est recommandé de vous tester régulièrement avec les **autotests** vendus en pharmacie (les professionnels exerçant à domicile auprès de personnes vulnérables peuvent obtenir la prise en charge de 10 auto-tests par mois en présentant leur carte professionnelle au pharmacien).
 
@@ -232,7 +232,7 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid et vous n’êtes 
 
     Ce type de test est utile à condition de le pratiquer régulièrement (plusieurs fois par semaine).
     
-    Pour obtenir un pass sanitaire, l'auto-test doit être réalisé sous la supervision d'un professionnel de santé.
+    Pour obtenir un pass sanitaire, l'autotest doit être réalisé sous la supervision d'un professionnel de santé.
 
 </details>
 
