@@ -594,7 +594,7 @@ describe('Parcours', function () {
             let statut = await page.waitForSelector('#page.ready #conseils-statut')
             assert.equal(
                 (await statut.innerText()).trim(),
-                'Vous êtes peut-être porteur de la Covid. Restez isolé le temps de faire un test.'
+                'Vous êtes peut-être porteur(se) de la Covid. Restez isolé(e) le temps de faire un test.'
             )
 
             // Le bloc « Isolement » est bien visible.
