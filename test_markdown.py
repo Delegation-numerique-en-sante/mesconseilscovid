@@ -61,6 +61,7 @@ def test_elements_de_liste_avec_classe():
                 - b {.classe-a-la-fin}
                 - foo {.classe-au-milieu} bar
                 - {.foo bar baz} plusieurs classes
+                - pas de classe
                 """
             )
         )
@@ -71,6 +72,7 @@ def test_elements_de_liste_avec_classe():
             <li class="classe-a-la-fin">b</li>
             <li class="classe-au-milieu">foo bar</li>
             <li class="foo bar baz">plusieurs classes</li>
+            <li>pas de classe</li>
             </ul>
             """
         )
