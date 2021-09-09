@@ -385,7 +385,7 @@
 
     Toutes les personnes âgées de **18 ans et plus**.
 
-    Il sera étendu aux mineurs de **12 à 17 ans** à partir du **30 septembre 2021**.
+    Il sera étendu aux mineurs de plus de **12 ans et 2 mois** à partir du **30 septembre 2021**.
 
     <div class="voir-aussi">
 
