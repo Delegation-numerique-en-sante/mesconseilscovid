@@ -90,7 +90,11 @@
 
 .. question:: Quels sont les effets secondaires des vaccins contre la Covid ?
 
-    Comme tout médicament, **vous pourrez ressentir des effets secondaires**. Les plus fréquents sont : une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des malaises, de la fièvre modérée et des frissons. Ils disparaissent le plus souvent au bout de 2 à 3 jours. Si vos symptômes vous inquiètent, contactez votre médecin traitant ou le 15 en cas d’urgence.
+    Comme avec toute substance active, **vous pourrez ressentir des effets indésirables**. Les plus fréquents sont : une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des nausées, de la fièvre modérée et des frissons.
+
+    Si cela arrive, c’est une réaction normale, qui est dûe à l’activation du système immunitaire par le vaccin. Ces effets secondaires sont d’ailleurs plus fréquents après la 2<sup>e</sup> dose, car la réaction immunitaire est alors plus forte.
+
+    Ils disparaissent le plus souvent au bout d’1 à 2 jours. Si vos symptômes vous inquiètent, contactez votre médecin traitant, ou le 15 en cas d’urgence.
 
 
 .. question:: Suis-je immunisé(e) après une seule dose de vaccin ?
