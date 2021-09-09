@@ -1613,6 +1613,24 @@ a.no-type::after {
     }
 }
 
+.thematique .voir-aussi {
+    font-size: 0.8125rem;
+    border: 1px solid #d5dbef;
+    border-left-width: 5px;
+    margin: 1rem 0 1.5rem 0;
+    padding: 1.25rem 2rem 1.5rem 1.25rem;
+}
+.thematique .voir-aussi ul,
+.thematique .voir-aussi li:last-of-type {
+    margin: 0;
+}
+.thematique .voir-aussi p:first-of-type {
+    margin-top: 0;
+}
+.thematique .voir-aussi p:last-of-type {
+    margin-bottom: 0;
+}
+
 .thematique .cta {
     text-align: center;
     margin: 2rem auto;

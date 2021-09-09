@@ -68,16 +68,24 @@
 
     Les contre-indications à la vaccination sont les suivantes :
 
-    * **allergie à un composant** du vaccin (notamment polyéthylène-glycols) ;
+    * **allergie à un composant** du vaccin, notamment au polyéthylène glycol (PEG) ;
+
+        <div class="voir-aussi">
+
+        → consulter la composition du vaccin [Pfizer-BioNTech](https://www.mesvaccins.net/web/vaccines/658-comirnaty-pfizer-biontech#vaccin_composition), [Moderna](https://www.mesvaccins.net/web/vaccines/656-spikevax-covid-19-vaccine-moderna#vaccin_composition), [AstraZeneca](https://www.mesvaccins.net/web/vaccines/650-vaxzevria-covid-19-vaccine-astrazeneca#vaccin_composition) ou [Janssen](https://www.mesvaccins.net/web/vaccines/666-covid-19-vaccine-janssen#vaccin_composition)
+
+        </div>
+
     * **réaction anaphylactique** de grade 2 ou plus à une première injection du vaccin ;
-    * vaccins *Janssen* et *Astrazeneca* uniquement : épisodes de **syndrome de fuite capillaire** (maladie très rare) ;
-    * pour les adolescent(e)s : syndrome inflammatoire multisystémique pédiatrique (**PIMS**) post-Covid ;
-    * recommandation établie après concertation médicale pluridisciplinaire de ne pas effectuer la seconde dose de vaccin suite à la survenue d’un **effet indésirable** d’intensité sévère ou grave attribué à la première dose de vaccin (par exemple : la survenue de myocardite, de syndrome de Guillain-Barré…).
+    * vaccins *Janssen* et *AstraZeneca* uniquement : épisodes de **syndrome de fuite capillaire** (maladie très rare) ;
+    * pour les adolescent(e)s : antécédent de syndrome inflammatoire multisystémique pédiatrique (**PIMS**) après une infection à la Covid ;
+    * recommandation établie après concertation médicale pluridisciplinaire de ne pas effectuer la seconde dose de vaccin, suite à la survenue d’un **effet indésirable** d’intensité sévère ou grave, attribué à la première dose de vaccin (par exemple : la survenue d’une myocardite, ou du syndrome de Guillain-Barré).
 
     Il y a également deux contre-indications temporaires :
 
     * traitement par **anticorps monoclonaux** anti-SARS-CoV-2 ;
-    * **myocardites** ou **péricardites** survenues antérieurement à la vaccination et toujours évolutives.
+    * **myocardites** ou **péricardites** survenues avant la vaccination et toujours évolutives.
+
 
 
 .. question:: Quels sont les effets secondaires des vaccins contre la Covid ?
