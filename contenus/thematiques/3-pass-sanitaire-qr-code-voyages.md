@@ -391,7 +391,7 @@ Pour obtenir une réponse à votre question, cliquez sur la situation qui vous c
 
       Pour les **salarié(e)s des établissements recevant du public** (dont les restaurants), le « pass sanitaire » est exigé depuis le **30 août 2021**.
 
-      Pour **les mineurs de 12 à 17 ans**, le « pass sanitaire » ne sera demandé qu’à partir du **30 septembre 2021**.
+      Il sera étendu aux mineurs de plus de **12 ans et 2 mois** à partir du **30 septembre 2021**.
 
     * Dans l’Espace européen, le « **pass sanitaire européen** » (ou encore « <span lang="en">Digital Covid Certificate</span> » en anglais) facilite les voyages entre les pays membres.
 
