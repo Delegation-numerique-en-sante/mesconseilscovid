@@ -13,7 +13,7 @@
 .. question:: Qu’est-ce que le pass sanitaire ?
     :level: 3
 
-    C’est une **preuve** de non-contamination, de vaccination ou d’immunité à la Covid, présentée sous forme d’un code à scanner (2D-DOC ou **QR code**).
+    C’est une **preuve** de non-contamination, de vaccination ou d’immunité à la Covid, présentée sous forme d’un code à scanner (**QR code**).
 
     En France, le pass sanitaire est, **selon votre situation** :
 
