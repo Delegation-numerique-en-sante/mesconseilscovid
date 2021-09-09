@@ -190,7 +190,7 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
     Si vous emmenez un **doudou** ou un objet familier, veillez à ce qu’il n’entre pas en contact avec des surfaces qui peuvent être contaminées. Sinon, lavez-le ou laissez le en quarantaine durant 7 jours.
 
 
-.. question:: Quel sont les précautions pour emmener mon enfant au parc de jeux collectifs (jeux, bacs à sable, points d’eau, etc.) ?
+.. question:: Quelles sont les précautions pour emmener mon enfant au parc de jeux collectifs (jeux, bacs à sable, points d’eau, etc.) ?
     :level: 3
 
     Il est déconseillé d’emmener votre(vos) enfant(s) dans les parcs et les aires de jeux collectifs si l’un des membres du foyer a été diagnostiqué positif à la Covid dans les deux semaines précédentes, ou si le(s) enfant(s) présentent des symptômes de la Covid.
