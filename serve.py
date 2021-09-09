@@ -106,7 +106,7 @@ def serve_http(address, port, open_, watch):
         host=address,
         port=port,
         root=ROOT_DIR,
-        open_url_delay=0.1 if open_ else False,
+        open_url_delay=0.1 if open_ else None,
     )
 
 
