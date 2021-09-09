@@ -6,6 +6,7 @@ from dataclasses import dataclass
 from datetime import date, datetime
 from html.parser import HTMLParser
 from http import HTTPStatus
+from io import StringIO
 from pathlib import Path
 from time import perf_counter
 
@@ -34,6 +35,27 @@ PARIS_TIMEZONE = pytz.timezone("Europe/Paris")
 jinja_env = JinjaEnv(
     loader=FileSystemLoader(str(TEMPLATES_DIR)), undefined=StrictUndefined
 )
+
+
+class MLStripper(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.reset()
+        self.strict = False
+        self.convert_charrefs = True
+        self.text = StringIO()
+
+    def handle_data(self, d):
+        self.text.write(d)
+
+    def get_data(self):
+        return self.text.getvalue()
+
+
+def strip_tags(html):
+    s = MLStripper()
+    s.feed(html)
+    return s.get_data()
 
 
 class FrenchTypographyMixin:
@@ -249,6 +271,10 @@ class Thematique:
         if stem[0].isdigit():
             return stem[2:]
         return stem
+
+    @property
+    def headerstr(self):
+        return strip_tags(self.header).strip()
 
 
 @cli

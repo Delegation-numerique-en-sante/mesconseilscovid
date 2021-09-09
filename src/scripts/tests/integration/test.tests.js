@@ -68,7 +68,7 @@ describe('Tests', function () {
 
         assert.equal(
             await page.title(),
-            'Les tests de dépistage ? — Mes Conseils Covid — Isolement, tests, vaccins, attestations, contact à risque…'
+            'Les tests de dépistage ? — Mes Conseils Covid'
         )
     })
 
