@@ -29,7 +29,7 @@ STATIC_DIR = HERE / "static"
 TEMPLATES_DIR = HERE / "templates"
 NB_OF_DISPLAYED_THEMATIQUES = 9
 
-PARIS_TIMEZONE = pytz.timezone('Europe/Paris')
+PARIS_TIMEZONE = pytz.timezone("Europe/Paris")
 
 jinja_env = JinjaEnv(
     loader=FileSystemLoader(str(TEMPLATES_DIR)), undefined=StrictUndefined
@@ -291,9 +291,8 @@ def get_version() -> date:
 @cli
 def sitemap():
     """Build the sitemap for index + themes pages."""
-    thematique_names = [thematique.name for thematique in get_thematiques()]
     content = render_template(
-        "sitemap.html", thematique_names=thematique_names, lastmod_date=date.today()
+        "sitemap.html", thematiques=get_thematiques(), lastmod_date=date.today()
     )
     (STATIC_DIR / "sitemap.xml").write_text(content)
 
