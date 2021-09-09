@@ -21,12 +21,17 @@
 
     - un [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) : un test de dépistage **positif**, **PCR** ou **antigénique** de  **plus de 11 jours** qui sera **valable 6 mois** ;
 
-    - une [attestation de vaccination complète](#comment-obtenir-une-attestation-de-vaccination-avec-un-qr-code) : qui indique que votre **schéma vaccinal est complet**. > [TODO : renvoyer vers la page « Je suis vacciné » avec une définition]
+    - une [attestation de vaccination complète](#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code) : qui indique que votre **schéma vaccinal est complet** (après 1 ou 2 doses [selon les cas](/je-veux-me-faire-vacciner.html#suis-je-immunise-e-apres-une-seule-dose-de-vaccin)).
 
     <div class="conseil conseil-jaune">
 
-    * Ces documents sont valables **à condition qu’ils comportent un QR code.**
-    * Les **tests sérologiques** et les **autotests** qui ne sont **pas** réalisés par des professionnels de santé ne sont pas des pass sanitaires.
+    Ces documents sont valables **à condition qu’ils comportent un QR code.**
+
+    </div>
+
+    <div class="conseil conseil-jaune">
+
+    Les **tests sérologiques** et les **autotests non supervisés** par un professionnel de santé ne sont **pas** des pass sanitaires.
 
     </div>
 
