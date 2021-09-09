@@ -43,7 +43,7 @@
     </div>
 
 
-.. question:: Quel pass sanitaire utiliser en France ?
+.. question:: Quel justificatif utiliser comme pass sanitaire en France ?
     :level: 3
 
     En fonction de votre situation, quel justificatif vous faut-il pour avoir un pass sanitaire valable en France ?
@@ -317,7 +317,7 @@
 
     <div class="voir-aussi">
 
-    * Si vous partez à l’étranger, consultez notre rubrique dédiée (Lien vers rubrique).
+    * Si vous partez à l’étranger, consultez notre rubrique « [Les voyages à l’étranger](#les-voyages-a-l-etranger) ».
 
     </div>
 
@@ -326,6 +326,10 @@
     :level: 3
 
     **Non.** La vaccination n’est pas la seule façon d’obtenir un pass sanitaire.
+
+    Si vous n’êtes pas encore complètement vacciné, vous pouvez présenter soit un **test de dépistage négatif** de **moins de 72 h**, soit un **test de dépistage positif** de plus de **11 jours** et de moins de **6 mois**.
+
+    Si vous ne [pouvez-pas vous faire vacciner](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-sanitaire) (en raison d’une contre-indication médicale), vous pouvez présenter le **certificat médical** établi par votre médecin.
 
     <div class="voir-aussi">
 
@@ -337,7 +341,7 @@
 .. question:: Je ne peux pas me faire vacciner, comment obtenir un pass sanitaire ?
     :level: 3
 
-    Les personnes qui souffrent de [certaines **pathologies**](https://mesconseilscovid.sante.gouv.fr/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination) et qui **ne peuvent pas se faire vacciner** contre la Covid  peuvent présenter un **certificat médical** établi par leur médecin traitant. **Ce certificat fera office de pass sanitaire.**
+    En cas de [contre-indication à la vaccination](https://mesconseilscovid.sante.gouv.fr/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination), vous pouvez demander à votre médecin de vous établir un **certificat médical**, qui fera office de **pass sanitaire**.
 
 
 .. question:: Où le pass sanitaire est-il obligatoire ?
@@ -348,17 +352,17 @@
     Il est notamment **obligatoire** pour accéder :
     - aux lieux de loisir et de culture : **cinéma, musées, théâtres, parc d’attraction…** ;
     - aux lieux de convivialité :  **restaurants**, **bars** et **cafés** (même en terrasse) ;
-    - aux établissements médicaux-sociaux : **hôpitaux, EHPAD…** Pour les soins programmés, les accompagnateurs et les visiteurs. **Les urgences ne sont pas concernées** par le pass sanitaire;
-    - à certains grands centres commerciaux;
+    - aux établissements médicaux-sociaux (**hôpitaux, EHPAD…**), pour les soins programmés, les accompagnateurs et visiteurs, mais **pas pour les urgences** ;
+    - à certains grands centres commerciaux ;
     - aux **séminaires professionnels** de plus de 50 personnes organisés en dehors des locaux de l’entreprise.
 
     <div class="exemple">
 
-    Par exemple, une personne non vaccinée devra présenter un test de dépistage négatif de moins de 72 h réalisé par un professionnel de santé ou un certificat de rétablissement pour aller à sa consultation médicale non urgente dans un hôpital.
+    Par exemple, une personne non vaccinée qui doit se rendre à sa consultation médicale non urgente dans un hôpital devra présenter soit un test de dépistage négatif de moins de 72 h réalisé par un professionnel de santé, soit un certificat de rétablissement.
 
     </div>
 
-    Le pass sanitaire n’est **pas obligatoire pour accéder aux établissements d’enseignement** (écoles, collèges, lycées, universités…).
+    Le pass sanitaire n’est **pas obligatoire** pour accéder aux **établissements d’enseignement** (écoles, collèges, lycées, universités…).
 
     <div class="voir-aussi">
 
@@ -370,8 +374,9 @@
 .. question:: Dans quels moyens de transport (avion, car, train…) le pass sanitaire s’applique t-il ?
     :level: 3
 
-    Le pass sanitaire est **obligatoire** pour accéder aux moyens de **transport longue distance** en France, à savoir : **trains intercités**, **TGV**, **avions** et **car inter-régionaux**.
-    Les **transports public** (bus, métro…) **ne sont pas concernés** par cette obligation.
+    Le pass sanitaire est **obligatoire** pour accéder aux moyens de transport **longue distance** en France : **avions**, **trains** (TGV, Intercités, Ouigo), et **cars inter-régionaux**.
+
+    Les **trains régionaux** (TER) et les **transports urbains** (bus, métros, RER, trains de banlieue…) ne sont **pas concernés** par cette obligation.
 
     <div class="exemple">
 
@@ -431,12 +436,12 @@
 
     <div class="voir-aussi">
 
-    [Consultez notre page de conseils pour les mineurs](https://mesconseilscovid.sante.gouv.fr/conseils-pour-les-enfants.html)pour plus d’information sur le protocole Covid-19 dans les établissements scolaires et la vaccination des enfants.
+    [Consultez notre page de conseils pour les mineurs](https://mesconseilscovid.sante.gouv.fr/conseils-pour-les-enfants.html) pour plus d’information sur le protocole Covid-19 dans les établissements scolaires et la vaccination des enfants.
 
     </div>
 
 
-## Les voyages à l’étranger
+<h2 id="les-voyages-a-l-etranger">Les voyages à l’étranger</h2>
 
 .. question:: Est-ce que le pass sanitaire européen est différent du pass sanitaire français ?
     :level: 3
