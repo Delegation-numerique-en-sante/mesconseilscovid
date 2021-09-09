@@ -20,22 +20,24 @@ import build
 PARCEL_CLI = "./node_modules/.bin/parcel"
 BUNDLER_COMMAND = f"{PARCEL_CLI} watch src/*.html"
 
+LIVERELOAD_DELAY = 0.2
+
 ROOT_DIR = "dist/"
 
-PATHS_TO_WATCH_FOR_BUILD = [
+PATHS_TO_WATCH_FOR_THEMATIQUES = (
+    "contenus/meta/*.md",
+    "contenus/thematiques/*.md",
+    "templates/thematique.html",
+)
+PATHS_TO_WATCH_FOR_INDEX = (
     "contenus/conseils/*.md",
     "contenus/meta/*.md",
     "contenus/questions/*.md",
     "contenus/réponses/*.md",
     "contenus/statuts/*.md",
     "contenus/suivi/*.md",
-    "contenus/thematiques/*.md",
-    "static/[!sitemap.xml]*",
-    "templates/*.html",
-]
-PATHS_TO_WATCH_FOR_RELOAD = [
-    "dist/*",
-]
+    "templates/index.html",
+)
 
 
 def parse_args():
@@ -48,12 +50,6 @@ def parse_args():
     parser.add_argument("--open", action="store_true")
     parser.add_argument("--watch", action="store_true")
     return parser.parse_args()
-
-
-def build_html():
-    build.index()
-    build.thematiques()
-    build.sitemap()
 
 
 def serve(address, port, open_, watch, ssl, ssl_cert, ssl_key):
@@ -98,10 +94,10 @@ class CustomServer(Server):
 def serve_http(address, port, open_, watch):
     server = CustomServer()
     if watch:
-        for path in PATHS_TO_WATCH_FOR_BUILD:
-            server.watch(path, build_html)
-        for path in PATHS_TO_WATCH_FOR_RELOAD:
-            server.watch(path)
+        for path in PATHS_TO_WATCH_FOR_THEMATIQUES:
+            server.watch(path, build.thematiques, delay=LIVERELOAD_DELAY)
+        for path in PATHS_TO_WATCH_FOR_INDEX:
+            server.watch(path, build.index, delay=LIVERELOAD_DELAY)
     server.serve(
         host=address,
         port=port,
@@ -118,10 +114,22 @@ def serve_https(address, port, open_, watch, ssl_cert, ssl_key):
         def log_request(self, *args, **kwargs):
             pass
 
-    class MyFileSystemEventHandler(ShellCommandTrick):
+    class BuildThematiquesEventHandler(ShellCommandTrick):
         def __init__(self):
             super().__init__(
-                shell_command="python3 build.py index thematiques sitemap",
+                shell_command="python3 build.py thematiques",
+                wait_for_process=True,
+                drop_during_process=True,
+            )
+
+        def on_any_event(self, event):
+            if event.event_type == "modified" and not event.is_directory:
+                super().on_any_event(event)
+
+    class BuildIndexEventHandler(ShellCommandTrick):
+        def __init__(self):
+            super().__init__(
+                shell_command="python3 build.py index",
                 wait_for_process=True,
                 drop_during_process=True,
             )
@@ -132,10 +140,17 @@ def serve_https(address, port, open_, watch, ssl_cert, ssl_key):
 
     if watch:
         observer = Observer()
-        handler = MyFileSystemEventHandler()
-        for pattern in PATHS_TO_WATCH_FOR_BUILD:
+
+        thematiques_handler = BuildThematiquesEventHandler()
+        for pattern in PATHS_TO_WATCH_FOR_THEMATIQUES:
             directory = Path(pattern).parts[0]
-            observer.schedule(handler, directory, recursive=True)
+            observer.schedule(thematiques_handler, directory, recursive=True)
+
+        index_handler = BuildIndexEventHandler()
+        for pattern in PATHS_TO_WATCH_FOR_THEMATIQUES:
+            directory = Path(pattern).parts[0]
+            observer.schedule(index_handler, directory, recursive=True)
+
         observer.start()
 
     url = f"https://{address}:{port}/"
