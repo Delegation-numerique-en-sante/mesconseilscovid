@@ -48,6 +48,12 @@
 
     En fonction de votre situation, quel justificatif vous faut-il pour avoir un pass sanitaire valable en France ?
 
+    <div class="voir-aussi">
+
+    - Si vous partez à l’étranger, consultez notre rubrique « [Les voyages à l’étranger](#les-voyages-a-l-etranger) ».
+
+    </div>
+
     <form id="pass-sanitaire-demarrage-form">
         <fieldset>
             <legend>
@@ -315,11 +321,6 @@
     <a href="#" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
     </p>
 
-    <div class="voir-aussi">
-
-    * Si vous partez à l’étranger, consultez notre rubrique « [Les voyages à l’étranger](#les-voyages-a-l-etranger) ».
-
-    </div>
 
 
 .. question:: Est-ce que je dois être vacciné pour avoir un pass sanitaire ?
@@ -394,9 +395,9 @@
 
     <div class="voir-aussi">
 
-    - Consultez notre page « [Conseils pour les enfants mineurs et leur vaccination](https://mesconseilscovid.sante.gouv.fr/conseils-pour-les-enfants.html) ».
+    - Consultez notre page « [Conseils pour les mineurs : vaccination et rentrée](https://mesconseilscovid.sante.gouv.fr/conseils-pour-les-enfants.html) ».
 
-    - Consultez notre page « [Je veux me faire vacciner](https://mesconseilscovid.sante.gouv.fr/je-veux-me-faire-vacciner.html) ».
+    - Consultez notre page « [Je souhaite me faire vacciner, que faut-il savoir ?](https://mesconseilscovid.sante.gouv.fr/je-veux-me-faire-vacciner.html) ».
 
     </div>
 
@@ -406,25 +407,26 @@
 
     Cela dépend de votre **secteur d’activité**.
 
-    Vous devez présenter un pass sanitaire valide à votre employeur, **si vous travaillez dans un lieu où il est exigé des clients ou des usagers** (restaurant, cinéma, parc d’attraction…) et que vous êtes en **contact avec le public.**
+    Vous devez présenter un pass sanitaire valide à votre employeur si vous travaillez dans un lieu où il est **exigé des clients ou des usagers** (restaurant, cinéma, parc d’attraction…) et que vous êtes en **contact avec le public.**
 
     <div class="exemple">
 
-    Par exemple, un chef cuisinier ne participant pas au service du restaurant et travaillant dans une cuisine fermée, non accessible au public n’est pas dans l’obligation de présenter un pass sanitaire.
+    Par exemple, un chef cuisinier ne participant pas au service du restaurant et travaillant dans une cuisine fermée, non accessible au public, n’est pas dans l’obligation de présenter un pass sanitaire.
 
-    En revanche, si la cuisine est ouverte ou s’il participe au service, alors il devra présenter à son employeur : un test de dépistage négatif toutes les 72 h **OU** un certificat de rétablissement de plus de 11 jours et moins de 6 mois **OU** une attestation de vaccination complète.
+    En revanche, si la cuisine est ouverte ou s’il participe au service, alors il devra présenter à son employeur : un test de dépistage négatif toutes les 72 h **ou** un certificat de rétablissement de plus de 11 jours et moins de 6 mois **ou** une attestation de vaccination complète.
 
     </div>
 
-    **Les professions qui sont soumises à l’obligation vaccinale** à compter du **15 septembre** doivent présenter un pass sanitaire à leur employeur. Il s’agit notamment des :
-    - personnels des établissements de santé (administratifs…)
-    - professionnels de santé dont étudiants en santé
-    - professions du médico-social (pompiers, aide à domicile…)
+    Les **professionnels soumis à l’obligation vaccinale** devront présenter un pass sanitaire à leur employeur à compter du **15 septembre** :
+    - professionnels de santé (y compris étudiants en santé) ;
+    - personnels des établissements de santé : administratifs… ;
+    - professionnels du secteur médico-social : pompiers, aides à domicile…
 
     <div class="voir-aussi">
 
-    [Consultez la foire aux question dédiée à la mise en place du pass sanitaire dans le milieu professionne sur le site du ministère du Travail](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/article/obligation-de-vaccination-ou-de-detenir-un-pass-sanitaire-pour-certaines#54)
-    [Consultez l’article 12 de la loi relative à la gestion de la crise sanitaire qui liste les professions concernées par l’obligation vaccinale.](https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000043909691)
+    - Consultez la foire aux questions sur la [mise en place du pass sanitaire dans le milieu professionnel](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/article/obligation-de-vaccination-ou-de-detenir-un-pass-sanitaire-pour-certaines) sur le site du ministère du Travail.
+
+    - Consultez l’[article 12 de la loi du 5 août 2021 relative à la gestion de la crise sanitaire](https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000043909691) qui liste les professions concernées par l’obligation vaccinale.
 
     </div>
 
@@ -432,11 +434,11 @@
 .. question:: Est-ce que le pass sanitaire est obligatoire pour accéder aux établissements d’enseignement ?
     :level: 3
 
-    **Non.** Le pass sanitaire n’est pas obligatoire dans les établissements d’enseignement, écoles, collèges, lycées ou universités.
+    **Non,** le pass sanitaire n’est **pas obligatoire** dans les établissements d’enseignement, écoles, collèges, lycées ou universités.
 
     <div class="voir-aussi">
 
-    [Consultez notre page de conseils pour les mineurs](https://mesconseilscovid.sante.gouv.fr/conseils-pour-les-enfants.html) pour plus d’information sur le protocole Covid-19 dans les établissements scolaires et la vaccination des enfants.
+    - [Consultez notre page de conseils pour les mineurs](https://mesconseilscovid.sante.gouv.fr/conseils-pour-les-enfants.html) pour plus d’information sur le protocole Covid-19 dans les établissements scolaires et la vaccination des enfants.
 
     </div>
 

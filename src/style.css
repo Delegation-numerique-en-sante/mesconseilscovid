@@ -1557,9 +1557,13 @@ a.no-type::after {
     }
 }
 
-.thematique #conseils-block form {
+.thematique #conseils-block form.question-feedback {
     border: 2px solid #d5dbef;
     padding: 0 1rem;
+}
+.thematique #conseils-block form:not(.question-feedback) {
+    background-color: #f8f8f8;
+    padding: 1rem 2rem 0.1rem 2rem;
 }
 .thematique #conseils-block form .back-button {
     display: inline-block;
@@ -1577,6 +1581,8 @@ a.no-type::after {
 .thematique #conseils-block form .form-controls {
     flex-direction: column;
     align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1.75rem;
 }
 .thematique #conseils-block form h3,
 .thematique #conseils-block summary h3,
@@ -1598,7 +1604,7 @@ a.no-type::after {
     padding-top: 0;
 }
 .thematique #conseils-block .statut {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 .thematique #conseils-block .statut ul {
     text-align: left;
@@ -1626,11 +1632,15 @@ a.no-type::after {
 }
 
 .thematique .voir-aussi {
-    font-size: 0.8125rem;
-    border: 1px solid #d5dbef;
-    border-left-width: 5px;
+    border-left: 8px solid #d5dbef;
     margin: 1rem 0 1.5rem 0;
     padding: 1.25rem 2rem 1.5rem 1.25rem;
+}
+.thematique .voir-aussi ul {
+    list-style-type: '👉  ';
+    padding-left: 1.5rem;
+}
+.thematique .voir-aussi li {
 }
 .thematique .voir-aussi ul,
 .thematique .voir-aussi li:last-of-type {
