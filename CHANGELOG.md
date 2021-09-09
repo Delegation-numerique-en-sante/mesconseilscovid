@@ -1,5 +1,12 @@
 # Changelog
 
+## 2021-09-09
+
+* ajoute des infos sur l’efficacité des vaccins
+* précise le délai entre les doses pour AstraZeneca
+* n’exclut plus les moins de 15 ans du questionnaire
+* prend mieux en compte la vaccination dans le questionnaire
+
 ## 2021-09-07
 
 * précise la marche à suivre en cas de contact à risque
