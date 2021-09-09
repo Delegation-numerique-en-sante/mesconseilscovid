@@ -23,9 +23,8 @@
 
     - une [attestation de vaccination complète](#comment-obtenir-une-attestation-de-vaccination-avec-un-qr-code) : qui indique que votre **schéma vaccinal est complet**. > [TODO : renvoyer vers la page « Je suis vacciné » avec une définition]
 
-    
     <div class="conseil conseil-jaune">
-    
+
     * Ces documents sont valables **à condition qu’ils comportent un QR code.**
     * Les **tests sérologiques** et les **autotests** qui ne sont **pas** réalisés par des professionnels de santé ne sont pas des pass sanitaires.
 
@@ -353,16 +352,14 @@
     Par exemple, une personne non vaccinée devra présenter un test de dépistage négatif de moins de 72 h réalisé par un professionnel de santé ou un certificat de rétablissement pour aller à sa consultation médicale non urgente dans un hôpital.
 
     </div>
-    
+
     Le pass sanitaire n’est **pas obligatoire pour accéder aux établissements d’enseignement** (écoles, collèges, lycées, universités…).
-    
+
     <div class="voir-aussi">
 
     Consultez la [liste détaillée des lieux concernés par l’obligation du pass sanitaire](https://www.gouvernement.fr/ou-le-pass-sanitaire-est-il-obligatoire).
 
     </div>
-
-    
 
 
 .. question:: Dans quels moyens de transport (avion, car, train…) le pass sanitaire s’applique t-il ?
@@ -377,7 +374,6 @@
 
     </div>
 
-    
 
 .. question:: Qui est concerné par le pass sanitaire ?
     :level: 3
@@ -447,14 +443,15 @@
     - une **attestation de vaccination complète**, soit 14 jours (*Pfizer*, *Moderna*, *AstraZeneca*) ou 28 jours (Janssen) après la dernière dose nécéssaire.
 
     **Attention votre preuve sanitaire n’est peut-être pas suffisante pour vous rendre dans votre pays de destination.**
-    
+
     <div class="conseil conseil-jaune">
-    
+
     * Ces documents sont valables **à condition qu’ils comportent un QR code.**
     * Les **tests sérologiques** et les **autotests** ne sont **pas des pass sanitaires.**
     * Assurez vous de **vérifier quelle preuve sanitaire est exigée** par votre pays de destination.
 
     </div>
+
 
 .. question:: Est-ce que ma vaccination suffit pour voyager à l'étranger ?
     :level: 3
@@ -510,7 +507,7 @@
 
     Vous pouvez le **télécharger** sur le [**portail SI-DEP**](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).**Nous vous conseillons de le faire **immédiatement** pour le conserver aussi longtemps que nécéssaire.
 
-        <div class="conseil conseil-jaune">
+    <div class="conseil conseil-jaune">
 
     Attention, dans certaines situation, le **certificat de rétablissement** n’est **pas disponible** au téléchargement :
     - si vous aviez fait votre test positif **entre le 10 mars et le 10 mai 2021**, alors vous devrez demander au laboratoire où le test a été effectué qu’il saisisse le dossier dans SI-DEP pour générer le certificat ;
@@ -518,20 +515,24 @@
 
     </div>
 
+
 .. question:: Je rencontre des difficultés techniques sur le portail SI-DEP, que faire ?
     :level: 3
 
     Nous vous conseillons de consulter la [foire au questions du portail SI-DEP](https://sidep.gouv.fr/cyberlab/Customer/FAQ_FR.pdf)
 
+
 .. question:: Comment intégrer mon certificat de rétablissement, test de dépistage ou attestation de vaccination dans mon application TousAntiCovid ?
     :level: 3
-    
+
     [Cliquez ici pour consultez la page d'aide de l'application TousAntiCovid.](https://tousanticovid.stonly.com/kb/fr/mon-carnet-51371)
-    
+
+
 .. question:: Je n'ai pas l'application TousAntiCovid, comment présenter mon pass sanitaire ?
     :level: 3
-    
-    Vous pouvez présenter votre pass sanitaire (attestation de vaccination, certificat de rétablissement ou de dépistage) au **format papier ou numérique (PDF)** sans passer par l'application TousAntiCovid. 
+
+    Vous pouvez présenter votre pass sanitaire (attestation de vaccination, certificat de rétablissement ou de dépistage) au **format papier ou numérique (PDF)** sans passer par l'application TousAntiCovid.
+
 
 .. question:: Je suis touriste, étudiant étranger ou français vacciné à l’étranger (hors UE), comment obtenir un QR code valable en France ?
     :level: 3
@@ -545,11 +546,10 @@
     En attendant, si vous le souhaitez, un **test de dépistage négatif de moins de 72 h** fera office de pass sanitaire.
 
     <div class="conseil conseil-jaune">
-    
+
     Attention, les tests de dépistages sont gratuits pour les assurés sociaux français ou européens mais **payants** pour les personnes qui ne bénéficient pas de cette couverture sociale..
 
     </div>
-    
 
     <div class="voir-aussi">
 
