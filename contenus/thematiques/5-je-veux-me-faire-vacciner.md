@@ -82,7 +82,7 @@
 
 .. question:: Quels sont les effets secondaires des vaccins contre la Covid ?
 
-    Comme avec toute substance active, **vous pourrez ressentir des effets indésirables**. Les plus fréquents sont : une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des nausées, de la fièvre modérée et des frissons.
+    Les vaccins sont des médicaments. Ils peuvent avoir des **effets indésirables**. Les plus fréquents sont : une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des nausées, de la fièvre modérée et des frissons.
 
     Si cela arrive, c’est une réaction normale, qui est dûe à l’activation du système immunitaire par le vaccin. Ces effets secondaires sont d’ailleurs plus fréquents après la 2<sup>e</sup> dose, car la réaction immunitaire est alors plus forte.
 
