@@ -137,11 +137,11 @@
             <legend><h3 id="pass-sanitaire-type-vaccin-label">Quel vaccin avez-vous reçu ?</h3></legend>
             <div role="radiogroup" aria-labelledby="pass-sanitaire-type-vaccin-label">
                 <input id="pass_sanitaire_type_vaccin_radio_pfizer" type="radio" required name="pass_sanitaire_type_vaccin_radio" value="pfizer">
-                <label for="pass_sanitaire_type_vaccin_radio_pfizer">Pfizer-BioNTech (<i>Cominarty<sup>®</sup></i>)</label>
+                <label for="pass_sanitaire_type_vaccin_radio_pfizer">Pfizer-BioNTech (<i>Cominarty</i><sup>®</sup>)</label>
                 <input id="pass_sanitaire_type_vaccin_radio_moderna" type="radio" required name="pass_sanitaire_type_vaccin_radio" value="moderna">
-                <label for="pass_sanitaire_type_vaccin_radio_moderna">Moderna (<i>Spikevax<sup>®</sup></i>)</label>
+                <label for="pass_sanitaire_type_vaccin_radio_moderna">Moderna (<i>Spikevax</i><sup>®</sup>)</label>
                 <input id="pass_sanitaire_type_vaccin_radio_astrazeneca" type="radio" required name="pass_sanitaire_type_vaccin_radio" value="astrazeneca">
-                <label for="pass_sanitaire_type_vaccin_radio_astrazeneca">AstraZeneca (<i>Vaxzevria<sup>®</sup></i>)</label>
+                <label for="pass_sanitaire_type_vaccin_radio_astrazeneca">AstraZeneca (<i>Vaxzevria</i><sup>®</sup>)</label>
                 <input id="pass_sanitaire_type_vaccin_radio_janssen" type="radio" required name="pass_sanitaire_type_vaccin_radio" value="janssen">
                 <label for="pass_sanitaire_type_vaccin_radio_janssen">Janssen</label>
             </div>
