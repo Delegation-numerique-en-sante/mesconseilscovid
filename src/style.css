@@ -1086,7 +1086,8 @@ input[type='submit']:disabled {
     display: block;
 }
 .button-arrow,
-a.button-arrow {
+a.button-arrow,
+input[type='submit'].button-arrow {
     padding: 12px 64px 16px 48px;
     background-image: url('/arrow-right-white.svg');
     background-position: 95% center;
