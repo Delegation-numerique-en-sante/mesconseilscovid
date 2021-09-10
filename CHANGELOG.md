@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-09-10
+
+* ré-agencement de la page sur le pass sanitaire
+* précisions sur les vaccins et leurs effets indésirables
+
 ## 2021-09-09
 
 * ajoute des infos sur l’efficacité des vaccins
