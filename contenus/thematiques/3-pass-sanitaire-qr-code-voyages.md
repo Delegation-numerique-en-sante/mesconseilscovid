@@ -573,7 +573,7 @@
 
     - Pour savoir où faire un test (laboratoire, pharmacie…), consultez l’[annuaire des lieux de dépistage sur sante.fr](https://www.sante.fr/cf/centres-depistage-covid.html).
 
-    - Pour en savoir plus sur les différents tests, consultez notre page« [Les tests de dépistage](/tests-de-depistage.html) »
+    - Pour en savoir plus sur les différents tests, consultez notre page « [Les tests de dépistage](/tests-de-depistage.html) »
 
     </div>
 

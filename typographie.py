@@ -39,9 +39,8 @@ def insere_espaces_fines_insecables(texte):
 RE_ESPACE_INSECABLE = regex.compile(
     assemble_regexes(
         build_regex(r"\w?", r":"),  # Deux points.
-        build_regex(r"«", r"\w"),  # Guillemets en chevrons.
-        # "Po" est la catégorie "Punctuation, other".
-        build_regex(r"[\w\p{Po}]", r"»"),  # Guillemets en chevrons.
+        build_regex(r"«", r""),  # Guillemets en chevrons.
+        build_regex(r"", r"»"),  # Guillemets en chevrons.
         build_regex(
             rf"\b(\d|{ESPACE_FINE_INSECABLE})+", r"(?!\d)\w"
         ),  # Nombre suivi de lettres.
