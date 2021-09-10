@@ -12,6 +12,10 @@ import pytest
         ("non ?", "non&#8239;?"),
         ("infos :", "infos&nbsp;:"),
         ("entre « guillemets »", "entre «&nbsp;guillemets&nbsp;»"),
+        (
+            'entre « <a href="">guillemets avec lien</a> »',
+            'entre «&nbsp;<a href="">guillemets avec lien</a>&nbsp;»',
+        ),
         ("18 h", "18&#8239;h"),
         ("24 heures", "24&nbsp;heures"),
         ("24&nbsp;heures", "24&nbsp;heures"),
