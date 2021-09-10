@@ -117,7 +117,7 @@ describe('Pass sanitaire', function () {
 
         assert.equal(
             await page.title(),
-            'Pass sanitaire, QR code et voyages, que faut-il savoir ? — Mes Conseils Covid — Isolement, tests, vaccins, attestations, contact à risque…'
+            'Pass sanitaire, QR code et voyages, que faut-il savoir ? — Mes Conseils Covid'
         )
     })
 
