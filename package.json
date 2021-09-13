@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "core-js": "3.17.3",
-    "dayjs": "^1.10.6",
+    "dayjs": "^1.10.7",
     "jsdom-global": "^3.0.2",
     "localforage": "1.7.3",
     "navigo": "7.1.2",
