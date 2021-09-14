@@ -22,6 +22,8 @@
 
 .. question:: Quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
 
+    La campagne de rappels a commencé le **1<sup>er</sup> septembre 2021**.
+
     Le **délai recommandé** par la Haute autorité de santé (HAS) pour un **rappel vaccinal** (2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas), est le suivant :
 
     * pour les personnes de **65 ans et plus** ou avec des **comorbidités** augmentant le risque de formes graves (*3<sup>e</sup> dose*) : au moins **6 mois** après la dernière injection de vaccin ;
