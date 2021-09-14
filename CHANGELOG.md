@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-09-14
+
+* mise à jour des infos sur le rappel vaccinal (dit 3e dose)
+
 ## 2021-09-10
 
 * ré-agencement de la page sur le pass sanitaire
