@@ -22,14 +22,17 @@
 
 .. question:: Quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
 
-    Les personnes concernées par ce rappel ([voir ci-dessus](#devrai-je-recevoir-une-dose-de-rappel-dite-3-e-dose)) devront attendre un délai d’**au moins 6 mois**, sauf :
+    Le **délai recommandé** par la Haute autorité de santé (HAS) pour un **rappel vaccinal** (2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas), est le suivant :
 
-    * les personnes sévèrement **immunodéprimées**, qui peuvent recevoir leur **4<sup>e</sup> dose à partir de 3 mois** après leur 3<sup>e</sup> dose ;
-    * les personnes vaccciné(e)s avec le vaccin **Janssen** qui peuvent recevoir leur **2<sup>e</sup> dose à partir de 4 semaines** après la première dose.
+    * pour les personnes de **65 ans et plus** ou avec des **comorbidités** augmentant le risque de formes graves (*3<sup>e</sup> dose*) : au moins **6 mois** après la dernière injection de vaccin ;
+
+    * pour les personnes vaccciné(e)s avec le vaccin **Janssen** (*2<sup>e</sup> dose*) : au moins **4 semaines** après l’injection ;
+
+    * pour les personnes sévèrement **immunodéprimées** (*4<sup>e</sup> dose*) : au moins **3 mois** après la dernière injection de vaccin.
+
+    **Dès maintenant**, et si ce délai est respecté, vous pouvez prendre rendez-vous chez un **professionnel de santé** (médecin, pharmacien, infirmier…) ou dans un **centre de vaccination** (*voir ci-dessous*).
 
     Lorsque les délais le permettent, ce rappel pourra avoir lieu en même temps que celui contre la **grippe saisonnière**.
-
-    La vaccination se déroule en **centre de vaccination** ou chez un **professionnel de santé** (médecin, pharmacien, infirmier…).
 
 
 .. question:: Où me faire vacciner ?
