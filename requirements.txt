@@ -11,7 +11,7 @@ idna==3.2
 importlib-metadata==1.7.0
 iniconfig==1.1.1
 Jinja2==3.0.1
-livereload==2.6.3
+git+https://github.com/ronnix/python-livereload.git@5bab70d80462f0a7424a2b0b85145fcaa7a645a5#egg=livereload
 MarkupSafe==2.0.1
 minicli==0.5.0
 mistune==2.0.0rc1
