@@ -40,8 +40,6 @@
 
     **Dès maintenant**, et si ce délai est respecté, vous pouvez prendre rendez-vous chez un **professionnel de santé** (médecin, pharmacien, infirmier…) ou dans un **centre de vaccination** (*voir ci-dessous*).
 
-    Lorsque les délais le permettent, ce rappel pourra avoir lieu en même temps que celui contre la **grippe saisonnière**.
-
 
 .. question:: Où me faire vacciner ?
 
