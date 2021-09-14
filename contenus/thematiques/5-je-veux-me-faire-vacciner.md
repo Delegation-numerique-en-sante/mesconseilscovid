@@ -17,6 +17,12 @@
     * les personnes **sévèrement immunodéprimées**,
     * les personnes vaccinées avec le **vaccin Janssen**.
 
+    <div class="conseil conseil-jaune">
+
+    Si vous avez eu la Covid **après votre dernière dose**, alors vous n’êtes **pas éligible** à ce rappel.
+
+    </div>
+
     Le rappel est réalisé avec un **vaccin à ARN messager (Pfizer ou Moderna)**, quel que soit le type de vaccin utilisé précédemment. En particulier, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné initialement avec le vaccin *Moderna*, et inversement.
 
 
