@@ -276,6 +276,10 @@ class Thematique:
     def headerstr(self):
         return strip_tags(self.header).strip()
 
+    @property
+    def imgsrcpng(self):
+        return self.imgsrc.replace(".svg", ".png")
+
 
 @cli
 def thematiques():
