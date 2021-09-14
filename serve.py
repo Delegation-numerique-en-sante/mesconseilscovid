@@ -10,6 +10,8 @@ from contextlib import suppress
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from ssl import wrap_socket
+from tempfile import NamedTemporaryFile
+from threading import Thread
 
 from livereload.server import LogFormatter, Server
 from watchdog.observers import Observer
@@ -20,7 +22,7 @@ import build
 PARCEL_CLI = "./node_modules/.bin/parcel"
 BUNDLER_COMMAND = f"{PARCEL_CLI} watch --no-hmr src/*.html"
 
-LIVERELOAD_DELAY = 0.2
+LIVERELOAD_DELAY = 0.1
 
 ROOT_DIR = "dist/"
 
@@ -52,7 +54,7 @@ def parse_args():
     return parser.parse_args()
 
 
-def serve(address, port, open_, watch, ssl, ssl_cert, ssl_key):
+def serve(address, port, open_, watch, ssl, ssl_cert, ssl_key, bundler_watch_filename):
     if ssl:
         return serve_https(
             address=args.address,
@@ -68,6 +70,7 @@ def serve(address, port, open_, watch, ssl, ssl_cert, ssl_key):
             port=args.port or 5500,
             open_=args.open,
             watch=args.watch,
+            bundler_watch_filename=bundler_watch_filename,
         )
 
 
@@ -91,13 +94,14 @@ class CustomServer(Server):
             return super().format(record)
 
 
-def serve_http(address, port, open_, watch):
+def serve_http(address, port, open_, watch, bundler_watch_filename):
     server = CustomServer()
     if watch:
         for path in PATHS_TO_WATCH_FOR_THEMATIQUES:
-            server.watch(path, build.thematiques, delay=LIVERELOAD_DELAY)
+            server.watch(path, build.thematiques, delay="forever")
         for path in PATHS_TO_WATCH_FOR_INDEX:
-            server.watch(path, build.index, delay=LIVERELOAD_DELAY)
+            server.watch(path, build.index, delay="forever")
+    server.watch(bundler_watch_filename, delay=LIVERELOAD_DELAY)
     server.serve(
         host=address,
         port=port,
@@ -167,15 +171,40 @@ def serve_https(address, port, open_, watch, ssl_cert, ssl_key):
     httpd.serve_forever()
 
 
+class BundlerThread(Thread):
+    def __init__(self, watch_file):
+        super().__init__()
+        self.watch_file = watch_file
+        self.daemon = True
+
+    def run(self):
+        proc = subprocess.Popen(shlex.split(BUNDLER_COMMAND), stdout=subprocess.PIPE)
+        while True:
+            for line_bytes in proc.stdout:
+                line = line_bytes.decode("utf-8")
+                print(line)
+                if line.startswith("✨  Built in"):
+                    self.trigger_livereload()
+
+    def trigger_livereload(self):
+        self.watch_file.truncate(0)
+
+
 if __name__ == "__main__":
     args = parse_args()
-    bundler = subprocess.Popen(shlex.split(BUNDLER_COMMAND))
-    serve(
-        address=args.address,
-        port=args.port,
-        open_=args.open,
-        watch=args.watch,
-        ssl=args.ssl,
-        ssl_cert=args.ssl_cert,
-        ssl_key=args.ssl_key,
-    )
+
+    with NamedTemporaryFile(delete=True) as bundler_watch_file:
+
+        bundler_thread = BundlerThread(watch_file=bundler_watch_file)
+        bundler_thread.start()
+
+        serve(
+            address=args.address,
+            port=args.port,
+            open_=args.open,
+            watch=args.watch,
+            ssl=args.ssl,
+            ssl_cert=args.ssl_cert,
+            ssl_key=args.ssl_key,
+            bundler_watch_filename=bundler_watch_file.name,
+        )
