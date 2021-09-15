@@ -2,13 +2,19 @@ from collections import Counter
 from datetime import date, timedelta
 from itertools import groupby
 from operator import itemgetter
-
+from pathlib import Path
 import argparse
 import os
 
 from more_itertools import collapse
 
 import httpx
+from jinja2 import Environment as JinjaEnv
+from jinja2 import FileSystemLoader, StrictUndefined
+
+HERE = Path(__file__).parent
+
+jinja_env = JinjaEnv(loader=FileSystemLoader(str(HERE)), undefined=StrictUndefined)
 
 
 def main():
@@ -41,8 +47,21 @@ def main():
     # On trie selon le critère choisi.
     stats_du_jour = trier(stats_du_jour, critere=args.trier_par)
 
+    for question, reponses_jour in stats_du_jour.items():
+        reponses_veille = stats_de_la_veille.get(question)
+        if reponses_veille is None:
+            continue
+        reponses_jour["oui_veille"] = reponses_veille.get("oui")
+        reponses_jour["bof_veille"] = reponses_veille.get("bof")
+        reponses_jour["non_veille"] = reponses_veille.get("non")
+
     # On affiche les résultats (TSV).
-    affiche_tableau(stats_du_jour, stats_de_la_veille)
+    # affiche_tableau(stats_du_jour, stats_de_la_veille)
+
+    # On génère la page HTML.
+    template = jinja_env.get_template("template.html")
+    content = template.render(**{"stats_du_jour": stats_du_jour})
+    (HERE / "index.html").write_text(content)
 
 
 def filtrer(stats, reponses_min):
