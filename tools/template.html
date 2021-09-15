@@ -1,0 +1,86 @@
+<!doctype html><!-- This is a valid HTML5 document. -->
+<!-- Screen readers, SEO, extensions and so on. -->
+<html lang="fr">
+<!-- Has to be within the first 1024 bytes, hence before the <title>
+  See: https://www.w3.org/TR/2012/CR-html5-20121217/document-metadata.html#charset -->
+<meta charset="utf-8">
+<!-- Why no `X-UA-Compatible` meta: https://stackoverflow.com/a/6771584 -->
+<!-- The viewport meta is quite crowded and we are responsible for that.
+  See: https://codepen.io/tigt/post/meta-viewport-for-2015 -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Required to make a valid HTML5 document. -->
+<title>Satisfaction</title>
+
+<body>
+  <canvas id="satisfaction-chart"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="text/javascript">
+    const labels = [
+      {%- for label in stats_du_jour.keys() %}
+        '{{ label }}',
+        '{{ label }} (la veille)',
+      {%- endfor %}
+    ]
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: '🙂',
+        backgroundColor: 'rgb(0, 166, 3)',
+        borderColor: 'rgb(0, 166, 3)',
+        data: [
+          {%- for reponse in stats_du_jour.values() %}
+            '{{ reponse.get("oui", 0) }}',
+            '{{ reponse.get("oui_veille", 0) }}',
+          {%- endfor %}
+        ],
+      },{
+        label: '😐',
+        backgroundColor: 'rgb(255, 167, 0)',
+        borderColor: 'rgb(255, 167, 0)',
+        data: [
+          {%- for reponse in stats_du_jour.values() %}
+            '{{ reponse.get("bof", 0) }}',
+            '{{ reponse.get("bof_veille", 0) }}',
+          {%- endfor %}
+        ],
+      },{
+        label: '🙁',
+        backgroundColor: 'rgb(255, 0, 0)',
+        borderColor: 'rgb(255, 0, 0)',
+        data: [
+          {%- for reponse in stats_du_jour.values() %}
+            '{{ reponse.get("non", 0) }}',
+            '{{ reponse.get("non_veille", 0) }}',
+          {%- endfor %}
+        ],
+      }]
+    }
+    const config = {
+      type: 'bar',
+      data: data,
+      options: {
+        indexAxis: 'y',
+        plugins: {
+          title: {
+            display: true,
+            text: 'Satisfaction des questions populaires en nombre d’occurences'
+          },
+        },
+        responsive: true,
+        scales: {
+          x: {
+            stacked: true,
+          },
+          y: {
+            stacked: true
+          }
+        }
+      }
+    }
+    const satisfactionChart = new Chart(
+      document.getElementById('satisfaction-chart'),
+      config
+    )
+  </script>
+</body>
+</html>
