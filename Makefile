@@ -52,6 +52,7 @@ endif
 
 test-tools:
 	pytest test_*.py
+	PYTHONPATH=tools pytest tools/
 
 test-feedback:
 	tox -e py38 -c feedback/tox.ini
