@@ -7,7 +7,7 @@ import argparse
 import os
 
 from more_itertools import collapse
-import requests
+import httpx
 
 
 def main():
@@ -155,7 +155,7 @@ class PlausibleAPI:
         self.site_id = site_id
 
     def breakdown_for_day(self, date, property, name):
-        resp = requests.get(
+        resp = httpx.get(
             f"https://{self.host}/api/v1/stats/breakdown",
             params={
                 "site_id": self.site_id,
