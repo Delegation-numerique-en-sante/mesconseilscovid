@@ -7,6 +7,7 @@ import argparse
 import os
 
 from more_itertools import collapse
+
 import httpx
 
 
@@ -21,25 +22,35 @@ def main():
 
     feedback = FeedbackQuestions(plausible_api=api)
 
-    # Retours de la veille (ou du jour choisi).
-    date_string = args.date
-    if date_string == "yesterday":
-        date_string = date.today() - timedelta(days=1)
-
-    stats = feedback.stats_du_jour(date=date_string)
+    # Retours du jour choisi (hier par défaut).
+    le_jour = args.date
+    if le_jour == "yesterday":
+        le_jour = date.today() - timedelta(days=1)
+    stats_du_jour = feedback.stats_du_jour(date=le_jour)
 
     # On filtre avec un nombre de réponses minimales.
-    stats = {
-        question: reponses
-        for question, reponses in stats.items()
-        if reponses.total() >= args.reponses_min
-    }
+    stats_du_jour = filtrer(stats_du_jour, args.reponses_min)
+
+    # Comparer avec les stats du jour précédent.
+    la_veille = le_jour - timedelta(days=1)
+    stats_de_la_veille = feedback.stats_du_jour(date=la_veille)
+
+    # On évite de calculer des variations non significatives.
+    stats_de_la_veille = filtrer(stats_de_la_veille, args.reponses_min)
 
     # On trie selon le critère choisi.
-    stats = trier(stats, critere=args.trier_par)
+    stats_du_jour = trier(stats_du_jour, critere=args.trier_par)
 
     # On affiche les résultats (TSV).
-    affiche_tableau(stats)
+    affiche_tableau(stats_du_jour, stats_de_la_veille)
+
+
+def filtrer(stats, reponses_min):
+    return {
+        question: reponses
+        for question, reponses in stats.items()
+        if reponses.total() >= reponses_min
+    }
 
 
 def trier(stats, critere):
@@ -57,7 +68,7 @@ def trier(stats, critere):
     return dict(sorted(stats.items(), key=sort_key, reverse=True))
 
 
-def affiche_tableau(stats, sep="\t"):
+def affiche_tableau(stats, stats_de_reference, sep="\t"):
     print(
         "Question",
         "Nombre de retours",
@@ -66,6 +77,7 @@ def affiche_tableau(stats, sep="\t"):
         "🙁",
         "😐 + 🙁",
         "Taux de satisfaction",
+        "Évolution",
         sep=sep,
     )
     for question, reponses in stats.items():
@@ -77,6 +89,7 @@ def affiche_tableau(stats, sep="\t"):
             reponses.get("non", 0),
             reponses.nombre_d_insatisfaits(),
             f"{reponses.pourcentage_de_satisfaits():.0f} %",
+            reponses.variation(stats_de_reference.get(question)),
             sep=sep,
         )
 
@@ -146,6 +159,21 @@ class Reponses(Counter):
 
     def total(self):
         return sum(self.values())
+
+    def variation(self, reference):
+        if reference is None:
+            return ""
+
+        satisfaction = self.pourcentage_de_satisfaits()
+        precedemment = reference.pourcentage_de_satisfaits()
+        variation = satisfaction - precedemment
+
+        if variation >= 5:
+            return f"{variation:>+3.0f} ↗"
+        elif variation <= -5:
+            return f"{variation:>+3.0f} ↘"
+        else:
+            return f"{variation:>+3.0f} ➡"
 
 
 class PlausibleAPI:
