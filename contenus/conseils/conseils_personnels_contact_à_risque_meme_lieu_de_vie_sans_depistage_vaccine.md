@@ -1,6 +1,6 @@
 Nous vous conseillons de :
 
-1. Faire un **test antigénique immédiatement** (voir la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a>).
+1. Faire un **test antigénique dès que possible** (voir la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a>).
     * Si le test est **positif**, restez **en isolement au moins 10 jours** à partir de la date du test, et renseignez le [résultat du test](#depistage) pour mettre à jour ces conseils.
     * Si le test est **négatif**, comme vous êtes complètement vacciné(e), il ne sera pas nécessaire de vous isoler.
 1. Respecter les **mesures barrières** au sein de votre foyer ;
