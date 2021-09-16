@@ -32,6 +32,8 @@ def main():
     le_jour = args.date
     if le_jour == "yesterday":
         le_jour = date.today() - timedelta(days=1)
+    else:
+        le_jour = date.fromisoformat(args.date)
     stats_du_jour = feedback.stats_du_jour(date=le_jour)
 
     # On filtre avec un nombre de réponses minimales.
