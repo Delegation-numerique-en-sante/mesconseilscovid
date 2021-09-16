@@ -148,10 +148,14 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
         * il ou elle est déclaré(e) comme étant **cas contact**,
         * il ou elle est **positif(ve)** à la Covid.
 
-    Alors vous ou votre conjoint(e) pouvez :
+    Alors, vous ou votre conjoint(e) pouvez obtenir un **arrêt de travail** afin de garder votre enfant, **même si vous êtes vacciné(e)**.
 
-    * demander à votre employeur de vous placer en **chômage partiel** ;
-    * ou bien, *si cela est impossible*, faire une **déclaration de maintien à domicile** [sur le site de l’Assurance maladie](https://declare.ameli.fr/) ou [de la MSA](https://declare.msa.fr/z84coronaij/ria/#/accueil) pour obtenir un **arrêt maladie**.
+    Pour cela, vous devrez fournir à l’employeur :
+
+    * soit un **justificatif de fermeture** de la classe ou de l’établissement, soit un document de l’Assurance Maladie attestant que votre enfant est  **cas contact** et fait l’objet d’une mesure d’isolement ;
+    * une **attestation sur l’honneur** précisant que vous êtes le seul des 2 parents à bénéficier d’un arrêt de travail pour les jours concernés.
+
+    C’est l’employeur qui procèdera alors à la déclaration d’**activité partielle** auprès de l’Assurance maladie.
 
 
 ## Questions générales sur les enfants et la Covid
