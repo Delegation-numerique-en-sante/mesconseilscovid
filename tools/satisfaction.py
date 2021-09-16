@@ -55,13 +55,11 @@ def main():
         reponses_jour["bof_veille"] = reponses_veille.get("bof")
         reponses_jour["non_veille"] = reponses_veille.get("non")
 
-    # On affiche les résultats (TSV).
-    # affiche_tableau(stats_du_jour, stats_de_la_veille)
-
-    # On génère la page HTML.
-    template = jinja_env.get_template("template.html")
-    content = template.render(**{"stats_du_jour": stats_du_jour})
-    (HERE / "index.html").write_text(content)
+    # Produit un tableau ou une page web.
+    if args.format == "tsv":
+        sortie_format_tsv(stats_du_jour, stats_de_la_veille)
+    elif args.format == "html":
+        sortie_format_html(stats_du_jour, output_path=(HERE / "index.html"))
 
 
 def filtrer(stats, reponses_min):
@@ -87,7 +85,7 @@ def trier(stats, critere):
     return dict(sorted(stats.items(), key=sort_key, reverse=True))
 
 
-def affiche_tableau(stats, stats_de_reference, sep="\t"):
+def sortie_format_tsv(stats, stats_de_reference, sep="\t"):
     print(
         "Question",
         "Nombre de retours",
@@ -113,6 +111,12 @@ def affiche_tableau(stats, stats_de_reference, sep="\t"):
         )
 
 
+def sortie_format_html(stats, output_path):
+    template = jinja_env.get_template("template.html")
+    content = template.render(**{"stats_du_jour": stats})
+    output_path.write_text(content)
+
+
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--host", default="stats.mesconseilscovid.fr")
@@ -130,6 +134,11 @@ def parse_args():
             "satisfaits",  # nombre de personnes satisfaites
             "insatisfaits",  # nombre de personnes insatisfaites
         ],
+    )
+    parser.add_argument(
+        "--format",
+        default="html",
+        choices=["html", "tsv"],
     )
     return parser.parse_args()
 
