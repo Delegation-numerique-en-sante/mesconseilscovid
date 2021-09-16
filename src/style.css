@@ -1655,22 +1655,23 @@ a.no-type::after {
     margin-bottom: 0;
 }
 
-.thematique .cta {
+.cta {
     text-align: center;
     margin: 2rem auto;
+    display: flex;
+    flex-flow: column nowrap;
 }
-.thematique .cta h3 {
-    font-size: 150%;
-    color: black;
-    max-width: 40rem;
-    margin: 0 auto 2rem auto;
+.cta h2 {
+    font-size: 175%;
+    margin: 0;
+    padding: 0;
 }
-.thematique .cta a.button {
+.cta a.button {
     display: inline-block;
     font-size: 110%;
-    margin: 0 auto 2rem auto;
+    margin: 1rem auto 1rem auto;
 }
-.thematique .cta a.button.button-outline {
+.cta a.button.button-outline {
     background-image: url('arrow-right-blue.svg');
 }
 
