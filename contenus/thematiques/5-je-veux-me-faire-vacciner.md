@@ -12,7 +12,7 @@
 
     Avec le temps, l’efficacité de la protection du vaccin contre l’infection peut diminuer, en particulier face au variant Delta. Pour « booster » cette protection, la Haute autorité de santé (HAS) recommande un **rappel vaccinal** avec une 2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas, pour :
 
-    * les résidents des <abbr title="Établissement d’Hébergement pour Personnes Âgées Dépendantes">**EHPAD**</abbr> et <abbr title="Unités de Soins de Longue Durée">**USLD**</abbr>,
+    * les résident(e)s des <abbr title="Établissement d’Hébergement pour Personnes Âgées Dépendantes">**EHPAD**</abbr> et <abbr title="Unités de Soins de Longue Durée">**USLD**</abbr>,
     * les personnes de **65 ans et plus**,
     * les personnes avec des **comorbidités** augmentant le risque de formes graves de Covid,
     * les personnes **sévèrement immunodéprimées**,
