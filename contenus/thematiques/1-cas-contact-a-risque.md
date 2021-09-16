@@ -35,7 +35,7 @@ Vous êtes concerné(e) si :
 
 <div class="conseil">
 
-Faites un **test antigénique** en pharmacie **immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) et **restez isolé(e)**.
+Faites un **test antigénique** en pharmacie **dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) et **restez isolé(e)**.
 
 </div>
 
@@ -50,7 +50,7 @@ Si vous ne pouvez pas **télétravailler**, vous pouvez [**demander un arrêt de
     * vous êtes peut-être en phase d’**incubation** de la maladie ;
     * restez **en isolement 7 jours**, puis effectuez un **test de contrôle** (voir ci-dessous) ;
     * en cas de **fièvre** ou de **symptômes** avant la date prévue de votre test de contrôle :
-        * faites-vous tester immédiatement, et restez isolé(e) en attendant le résultat,
+        * faites-vous tester dès que possible, et restez isolé(e) en attendant le résultat,
         * contactez un médecin ou le 15 en cas de difficultés respiratoires.
 
 
@@ -62,7 +62,7 @@ Si vous ne pouvez pas **télétravailler**, vous pouvez [**demander un arrêt de
     * surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
     * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
         * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
-        * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
+        * faire un **test antigénique dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
     * après 10 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un test de contrôle ne sera pas nécessaire).
 
 
@@ -74,7 +74,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 
 * **7 jours après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e) ;
 * **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple) ;
-* **immédiatement** en cas d’apparititon de symptômes évocateurs de la Covid.
+* **dès que possible** en cas d’apparititon de symptômes évocateurs de la Covid.
 
 </div>
 
@@ -89,7 +89,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
     * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
 
         * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**) ;
-        * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+        * faire un **test antigénique dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
 </details>
 
@@ -113,7 +113,7 @@ Vous êtes concerné(e) si :
 
 <div class="conseil">
 
-Faire un **test antigénique** en pharmacie **immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+Faire un **test antigénique** en pharmacie **dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
 </div>
 
@@ -126,7 +126,7 @@ Faire un **test antigénique** en pharmacie **immédiatement** (voir la [carte d
         * portez le masque à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigent plus (restaurant, musées…),
         * évitez de rencontrer des personnes vulnérables ou fragiles ;
     * en cas de **fièvre** ou de **symptômes** avant la date prévue de votre test de contrôle :
-        * faites-vous tester immédiatement, et restez isolé(e) en attendant le résultat,
+        * faites-vous tester dès que possible, et restez isolé(e) en attendant le résultat,
         * contactez un médecin ou le 15 en cas de difficultés respiratoires.
 
 
@@ -137,7 +137,7 @@ Faire un **test antigénique** en pharmacie **immédiatement** (voir la [carte d
     * surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
     * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
         * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
-        * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
+        * faire un **test antigénique dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
     * après 10 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un test de contrôle ne sera pas nécessaire).
 
 
@@ -149,7 +149,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 
 * **7 jours après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e) ;
 * **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple) ;
-* **immédiatement** en cas d’apparititon de symptômes évocateurs de la Covid.
+* **dès que possible** en cas d’apparititon de symptômes évocateurs de la Covid.
 </div>
 
 * Si le **test de contrôle** est **négatif** :
@@ -162,7 +162,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
     * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
 
         * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
-        * faire un **test antigénique immédiatement** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
+        * faire un **test antigénique dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
     * **après 10 jours**, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un nouveau test de contrôle ne sera pas nécessaire).
 
 

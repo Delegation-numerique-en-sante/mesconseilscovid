@@ -28,7 +28,7 @@ Vous êtes concerné(e) si :
 
 <div class="conseil">
 
-Même si vous ne présentez pas de symptômes, il faut vous faire tester immédiatement en laboratoire ou en pharmacie :
+Même si vous ne présentez pas de symptômes, il faut vous faire tester dès que possible en laboratoire ou en pharmacie :
 
 * Si le test est **positif** : isolez-vous pendant au moins **10 jours**. Vous pourrez lever l’isolement dès le 10<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48 h.
 * Si le test est **négatif**, vous devez vous isoler au moins 7 jours de plus que la personne positive.
@@ -82,7 +82,7 @@ Vous êtes concerné(e) si :
 
 <div class="conseil">
 
-Même si vous ne présentez pas de symptômes, il faut vous faire tester immédiatement en laboratoire ou en pharmacie :
+Même si vous ne présentez pas de symptômes, il faut vous faire tester dès que possible en laboratoire ou en pharmacie :
 
 * Si le test est **positif** : isolez-vous pendant au moins **10 jours**. Vous pourrez lever l’isolement dès le 10<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48 h.
 * Si le test est **négatif**, il ne faut pas vous isoler mais restez prudent(e) :
@@ -109,7 +109,7 @@ Si le résultat de ce test de contrôle est :
 
 <div class="conseil conseil-jaune">
 
-Attention, si vous ressentez des **symptômes** avant la date prévue de votre test de contrôle (17<sup>e</sup> jour), il faut vous faire tester immédiatement et vous isoler en attendant le résultat.
+Attention, si vous ressentez des **symptômes** avant la date prévue de votre test de contrôle (17<sup>e</sup> jour), il faut vous faire tester dès que possible et vous isoler en attendant le résultat.
 
 </div>
 

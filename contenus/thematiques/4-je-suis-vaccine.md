@@ -32,7 +32,7 @@ Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-fair
 
     Si vous êtes vacciné(e), en cas de contact à risque avec une personne positive à la Covid, il faut :
 
-    1. [**Vous faire tester immédiatement**](/tests-de-depistage.html) et informer de votre statut les personnes avec qui vous avez été en contact récemment.
+    1. [**Vous faire tester dès que possible**](/tests-de-depistage.html) et informer de votre statut les personnes avec qui vous avez été en contact récemment.
     1. **Si le résultat de votre test est négatif, vous n’avez pas besoin de vous isoler** mais il est recommandé de respecter les mesures barrières avec toutes les personnes de votre entourage pendant une semaine. Vous devrez ensuite faire un test de contrôle :
         * **7 jours après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e).
         * **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple).
