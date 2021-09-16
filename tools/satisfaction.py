@@ -46,15 +46,16 @@ def main():
     la_veille = le_jour - timedelta(days=1)
     stats_de_la_veille = feedback.stats_du_jour(date=la_veille)
 
-    # On évite de calculer des variations non significatives.
-    stats_de_la_veille = filtrer(stats_de_la_veille, args.reponses_min)
-
     # On trie selon le critère choisi.
     stats_du_jour = trier(stats_du_jour, critere=args.trier_par)
 
     # Produit un tableau ou une page web.
     if args.format == "tsv":
+        # On évite de calculer des variations non significatives.
+        stats_de_reference = filtrer(stats_de_la_veille, args.reponses_min)
+
         sortie_format_tsv(stats_du_jour, stats_de_la_veille)
+
     elif args.format == "html":
         libelle_le_jour = le_jour.strftime("%A %-d/%-m/%Y").capitalize()
         libelle_la_veille = la_veille.strftime("%A %-d/%-m/%Y").capitalize()
