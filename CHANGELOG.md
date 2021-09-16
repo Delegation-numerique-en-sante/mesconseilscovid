@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-09-16
+
+* ajoute explicitement les EHPAD et USLD pour le rappel vaccinal
+* précise la démarche pour arrêt de travail en cas d’enfant cas contact
+* précisions et clarifications diverses
+
 ## 2021-09-14
 
 * mise à jour des infos sur le rappel vaccinal (dit 3e dose)
