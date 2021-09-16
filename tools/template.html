@@ -71,6 +71,24 @@
             display: true,
             text: '{{ titre }}'
           },
+          tooltip: {
+            callbacks: {
+              title: function(items) {
+                return items[0].dataset.stack
+              },
+              label: function(context) {
+                const n = context.parsed.x
+
+                const datasets = context.chart.data.datasets.filter((dataset)=> dataset.stack === context.dataset.stack);
+                const values = datasets.map((dataset) => parseFloat(dataset.data[context.dataIndex]))
+                const somme = values.reduce((a, b) => a + b)
+
+                const pourcentage = (n / somme * 100.0).toFixed(0)
+
+                return `${n} personnes (${pourcentage}%) ${context.dataset.label}`;
+              },
+            }
+          },
         },
         responsive: true,
         scales: {
