@@ -177,7 +177,7 @@ class Reponses(Counter):
         return self.nombre_d_insatisfaits() * 100.0 / self.total()
 
     def total(self):
-        return sum(self.values())
+        return self.nombre_de_satisfaits() + self.nombre_d_insatisfaits()
 
     def variation(self, reference):
         if reference is None:
