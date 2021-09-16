@@ -1,6 +1,22 @@
 from datetime import date
 
 
+def test_moyenne_quotidienne():
+    from satisfaction import FeedbackQuestions
+
+    data = [
+        ("Est-ce que je dois m’isoler\u202f?", "oui", 76),
+        ("Est-ce que je dois m’isoler\u202f?", "bof", 22),
+        ("Est-ce que je dois m’isoler\u202f?", "non", 10),
+    ]
+    results = FeedbackQuestions._moyenne_quotidienne(data, 7)
+    assert list(results) == [
+        ("Est-ce que je dois m’isoler\u202f?", "oui", 10.9),
+        ("Est-ce que je dois m’isoler\u202f?", "bof", 3.1),
+        ("Est-ce que je dois m’isoler\u202f?", "non", 1.4),
+    ]
+
+
 def test_separe_question_et_reponse():
     from satisfaction import FeedbackQuestions
 
