@@ -52,7 +52,7 @@ def main():
         sortie_format_tsv(stats_du_jour, stats_de_la_veille)
     elif args.format == "html":
         sortie_format_html(
-            titre=titre_du_graphique(args.trier_par),
+            titre=titre_du_graphique(args.reponses_min, args.trier_par),
             periodes={
                 "Hier": stats_du_jour,
                 "Avant-hier": stats_de_la_veille,
@@ -84,8 +84,8 @@ def trier(stats, critere):
     return dict(sorted(stats.items(), key=sort_key, reverse=True))
 
 
-def titre_du_graphique(critere):
-    titre = "Questions populaires"
+def titre_du_graphique(nb_min, critere):
+    titre = f"Questions populaires (n≥{nb_min})"
     if critere == "popularité":
         titre += " triées par nombre total de réponses"
     elif critere == "satisfaction":
