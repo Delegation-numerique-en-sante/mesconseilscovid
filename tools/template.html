@@ -9,7 +9,7 @@
   See: https://codepen.io/tigt/post/meta-viewport-for-2015 -->
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- Required to make a valid HTML5 document. -->
-<title>Satisfaction</title>
+<title>{{ titre }} — {{ sous_titre }}</title>
 
 <body>
   <canvas id="satisfaction-chart"></canvas>
@@ -69,7 +69,21 @@
           },
           title: {
             display: true,
-            text: '{{ titre }}'
+            text: '{{ titre }}',
+            font: {
+              weight: 'bold',
+              size: 16,
+            },
+          },
+          subtitle: {
+            display: true,
+            text: '{{ sous_titre }}',
+            font: {
+              weight: 'bold',
+            },
+            padding: {
+              bottom: 12,
+            }
           },
           tooltip: {
             callbacks: {
