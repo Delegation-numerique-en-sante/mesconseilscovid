@@ -33,7 +33,7 @@ def main():
 
     # Retours du jour choisi (hier par défaut).
     le_jour = args.date
-    if le_jour == "yesterday":
+    if le_jour == "hier":
         le_jour = date.today() - timedelta(days=1)
     else:
         le_jour = date.fromisoformat(args.date)
@@ -151,7 +151,7 @@ def parse_args():
     parser.add_argument("--host", default="stats.mesconseilscovid.fr")
     parser.add_argument("--site-id", default="mesconseilscovid.sante.gouv.fr")
     parser.add_argument("--token", default=None)
-    parser.add_argument("--date", default="yesterday", help="YYYY-MM-DD")
+    parser.add_argument("--date", default="hier", help="YYYY-MM-DD (par défaut: hier)")
     parser.add_argument("--reponses-min", type=int, default=10)
     parser.add_argument(
         "--trier-par",
