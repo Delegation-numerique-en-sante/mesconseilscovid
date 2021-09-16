@@ -17,6 +17,11 @@ Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-fair
 Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) »
 
 
+## Je suis vacciné(e), est-ce que je peux être positif ou positive à la Covid ?
+
+Voir la réponse sur notre page « [J’ai des symptômes de la Covid ou mon test est positif, que faire ?](/j-ai-des-symptomes-covid.html#je-suis-vaccine-e-est-ce-que-je-peux-etre-positif-ou-positive-a-la-covid) »
+
+
 <div itemscope itemtype="https://schema.org/FAQPage">
 
 .. question:: Pourquoi continuer à porter le masque quand on est vacciné(e) ?
@@ -39,14 +44,6 @@ Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-fair
     1. **Si le résultat de votre test est positif, isolez-vous pendant 10 jours.** Nous vous encourageons à [décrire votre situation particulière](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
 
     Pour plus d’informations sur la conduite à tenir, [**consultez notre page « Je suis cas contact Covid, que faire ? »**](/cas-contact-a-risque.html#schema-vaccinal-complet).
-
-.. question:: Je suis vacciné(e), est-ce que je peux être positif ou positive à la Covid ?
-
-    **Oui.** Même quand on est vacciné(e), **il reste un risque d’attraper la Covid** si on est exposé au virus (même si la maladie sera le plus souvent moins grave), et de le transmettre par la suite (même si votre contagiosité sera elle aussi diminuée).
-
-    Les vaccins contre la Covid vous protègent contre la maladie en réduisant le risque de l’attraper et de faire une forme grave. Ces vaccins sont très efficaces, mais **aucun vaccin ne protège à 100 %** et cette efficacité peut varier selon les personnes.
-
-    **Si votre test est positif**, nous vous encourageons à vous isoler et à [décrire votre situation](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
 
 
 .. question:: Est-ce que la vaccination rend malade, contagieux ou positif ?
