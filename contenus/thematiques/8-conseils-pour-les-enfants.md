@@ -1,4 +1,4 @@
-# Conseils pour les mineurs : vaccination et rentrée
+# Conseils pour les mineurs : vaccination et scolarité
 
 <img src="illustrations/pediatriegeneral.svg">
 
@@ -11,6 +11,117 @@
 Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **soutien psychologique**, sans avance de frais, pour les mineurs en souffrance psychique du fait de la situation sanitaire. Pour obtenir toutes les informations nécessaires, consultez [le site internet dédié au dispositif](https://www.psyenfantado.sante.gouv.fr/).
 
 </div>
+
+## La scolarité et l’épidémie de Covid
+
+.. question:: Est-ce que mon enfant a besoin du pass sanitaire pour aller à l’école ?
+    :level: 3
+
+    **Non.** Le pass sanitaire n’est **pas obligatoire** dans les établissements d’enseignement, écoles, collèges ou lycées.
+
+
+    <div class="voir-aussi">
+
+    - [Notre page d’information sur le pass sanitaire](/pass-sanitaire-qr-code-voyages.html)
+    - [Notre rubrique sur la vaccination des mineurs](#vaccination)
+
+    </div>
+
+.. question:: Que se passe-t-il si un élève est positif dans la classe de mon enfant ?
+    :level: 3
+
+    Dans **les écoles**, la règle de la **fermeture** de la classe pour une durée de 7 jours dès le premier cas positif continue de s’appliquer.
+
+    Dans **les collèges et les lycées**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves **« cas contact »** devront poursuivre leurs apprentissages à distance pendant **7 jours, sauf s’ils sont vaccinés**.
+
+.. question:: Que se passe-t-il si mon enfant est cas contact ?
+    :level: 3
+
+    Si votre enfant est « cas contact », il devra poursuivre son apprentissage **à distance pendant 7 jours, sauf s’il ou elle est vacciné(e)**.
+
+    En parallèle, il faut :
+
+    1. le faire **tester dès que possible** avec un test antigénique.
+
+        * Si le test est **négatif**, il devra tout de même rester **isolé** pendant **7 jours**.
+
+        * En cas de fièvre ou de **symptômes** avant le 7<sup>e</sup> jour, il faut :
+            - le faire **tester à nouveau**
+            - contacter un médecin ou le **15** en cas de difficultés respiratoires.
+
+        * Si le test est **positif** :
+            - votre enfant a contracté la covid et il est **contagieux** ;
+            - il doit rester en isolement au moins **10 jours** à partir de la date du test ;
+            - surveillez l’apparition de **symptômes** et contacter un médecin ou le 15 en cas de difficultés respiratoires ;
+            - les autres membres du **foyer** sont **cas contacts** et devront :
+                * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
+                * faire un **test antigénique** dès que possible
+
+    2. Faire un test de contrôle<br><br>Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** avant de retourner à l’école :
+
+        - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
+        - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle (partage de foyer par exemple).
+
+    <div class="voir-aussi">
+
+    - Pour savoir ce qu’il faut faire lorsqu’on est cas contact, [consultez notre page dédiée.](/cas-contact-a-risque.html)
+
+    </div>
+
+.. question:: Quelles sont les autres mesures prévues dans les établissements scolaires face à la crise sanitaire ?
+    :level: 3
+
+    Pour plus de détails sur les mesures prévues, vous pouvez consulter la page « [Année scolaire 2021-2022 : protocole sanitaire et mesures de fonctionnement](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) » sur le site du ministère de l’Éducation nationale.
+
+.. question:: Dans quels cas mon enfant doit-il rester à la maison ?
+    :level: 3
+
+    Vous ne devez pas envoyer votre enfant à l’école, au collège ou au lycée :
+
+    * en cas de **fièvre** (38 °C ou plus) ;
+    * en cas d’apparition de **symptômes** évoquant la Covid chez votre enfant ou un membre de son foyer ;
+    * si votre enfant ou un membre de son foyer a été **testé positif** ;
+    * si votre enfant ou un membre de son foyer a été identifié comme **contact à risque**.
+
+    Dans chacun de ces cas, vous êtes tenus d’en informer l’établissement **au plus tôt**, afin que les mesures appropriées soient rapidement mises en place.
+
+.. question:: Est-ce que mon enfant devra porter le masque ?
+    :level: 3
+
+    Le **port du masque est obligatoire** dans les espaces clos. Il pourra être également requis en extérieur selon le niveau de sévérité de l’épidémie. Pour les élèves des écoles maternelles, le port du masque est proscrit.
+
+    **Les parents doivent fournir des masques à leurs enfants.** Le masque doit assurer une filtration supérieure à 90 % (masque « grand public » ou masque chirurgical par exemple). Le ministère dote chaque école, collège et lycée en masques « grand public » afin qu’ils puissent être fournis aux élèves qui n’en disposeraient pas.
+
+
+<div id="conseils-pediatrie-ecole">
+
+## Les mesures à la crèche
+
+.. question:: Est-il recommandé de mettre mon enfant à la crèche en l’absence de distanciation physique possible ?
+    :level: 3
+
+    Oui **le retour en crèche est recommandé** car le port du masque par les adultes remplace efficacement la distanciation physique. Par ailleurs, la limitation du nombre d’enfants et l’application des mesures barrières réduit considérablement le risque de contamination chez les enfants et les professionnels de la petite enfance.
+
+
+.. question:: Que se passe-t-il si mon enfant est cas contact ?
+    :level: 3
+
+    Les enfants de moins de 3 ans ne doivent **pas aller à la crèche** s’ils sont cas contact.
+
+    <div class="voir-aussi">
+
+    - [Comment faire pour garder mon enfant en isolement (cas contact/positif) ?](#je-ne-peux-pas-teletravailler-comment-faire-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+
+    </div>
+
+.. question:: Quel est l’impact psychologique pour un bébé d’être gardé en crèche par du personnel masqué ?
+    :level: 3
+
+    Le port du masque et les mesures barrières ne perturbent pas les interactions, qui restent possibles par le regard, la parole et même les gestes. Les enfants n’étant pas masqués, leurs interactions sont très bénéfiques.
+
+</div>
+
+<div id="vaccination">
 
 ## La vaccination des mineurs âgés de plus de 12 ans
 
@@ -88,77 +199,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Pour plus d’informations, consultez notre page sur [les voyages et le pass sanitaire](/pass-sanitaire-qr-code-voyages.html).
 
-
-## Rentrée scolaire 2021-2022
-
-<div class="conseil">
-
-Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfants et les **mesures prévues** pour le déroulement de la nouvelle année scolaire **à l’école, au collège et au lycée**.
-
 </div>
 
-.. question:: Est-ce que la classe de mon enfant sera ouverte en septembre ?
-    :level: 3
-
-    **Oui.** Les cours seront assurés en présentiel pour tous les élèves, de la maternelle au lycée.
-
-    Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) prévoit 4 niveaux selon la situation sanitaire, et c’est le **niveau 2** qui s’appliquera à la rentrée. Ce niveau pourra être abaissé ou relevé en fonction de la sévérité de l’épidémie à l’échelle nationale ou locale.
-
-.. question:: Que se passe-t-il si un élève est positif dans la classe de mon enfant ?
-    :level: 3
-
-    Dans les écoles, la règle de la **fermeture de la classe pour une durée de 7 jours dès le premier cas positif** continuera à s’appliquer.
-
-    Dans les collèges et les lycées, un protocole de **contact-tracing** sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves « cas contact » devront poursuivre leurs apprentissages à distance pendant 7 jours, sauf s’ils sont vaccinés.
-
-.. question:: Est-ce que mon enfant devra porter le masque ?
-    :level: 3
-
-    Le **port du masque est obligatoire** dans les espaces clos. Il pourra être également requis en extérieur selon le niveau de sévérité de l’épidémie. Pour les élèves des écoles maternelles, le port du masque est proscrit.
-
-    **Les parents doivent fournir des masques à leurs enfants.** Le masque doit assurer une filtration supérieure à 90 % (masque « grand public » ou masque chirurgical par exemple). Le ministère dote chaque école, collège et lycée en masques « grand public » afin qu’ils puissent être fournis aux élèves qui n’en disposeraient pas.
-
-.. question:: Dans quels cas mon enfant doit-il rester à la maison ?
-    :level: 3
-
-    Vous ne devez pas envoyer votre enfant à l’école, au collège ou au lycée :
-
-    * en cas de **fièvre** (38 °C ou plus) ;
-    * en cas d’apparition de **symptômes** évoquant la Covid chez votre enfant ou un membre de son foyer ;
-    * si votre enfant ou un membre de son foyer a été **testé positif** ;
-    * si votre enfant ou un membre de son foyer a été identifié comme **contact à risque**.
-
-    Dans chacun de ces cas, vous êtes tenus d’en informer l’établissement **au plus tôt**, afin que les mesures appropriées soient rapidement mises en place.
-
-.. question:: Quelles sont les autres mesures prévues dans les établissements scolaires face à la crise sanitaire ?
-    :level: 3
-
-    Pour plus de détails sur les mesures prévues, vous pouvez consulter la page « [Année scolaire 2021-2022 : protocole sanitaire et mesures de fonctionnement](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) » sur le site du ministère de l’Éducation nationale.
-
-.. question:: Je ne peux pas télétravailler, comment faire garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?
-    :level: 3
-
-    Si vous êtes dans l’une de ces situations :
-
-    * votre enfant, quel que soit son âge, souffre d’un **handicap** qui le rend vulnérable et l’oblige à s’isoler ;
-
-    * votre enfant de **moins de 16 ans** ne peut pas aller à la crèche, à l’école ou au collège pour l’une des raisons suivantes :
-
-        * sa **classe est fermée** pour raison sanitaire,
-        * il ou elle est déclaré(e) comme étant **cas contact**,
-        * il ou elle est **positif(ve)** à la Covid.
-
-    Alors, vous ou votre conjoint(e) pouvez obtenir un **arrêt de travail** afin de garder votre enfant, **même si vous êtes vacciné(e)**.
-
-    Pour cela, vous devrez fournir à l’employeur :
-
-    * soit un **justificatif de fermeture** de la classe ou de l’établissement, soit un document de l’Assurance Maladie attestant que votre enfant est  **cas contact** et fait l’objet d’une mesure d’isolement ;
-    * une **attestation sur l’honneur** précisant que vous êtes le seul des 2 parents à bénéficier d’un arrêt de travail pour les jours concernés.
-
-    C’est l’employeur qui procèdera alors à la déclaration d’**activité partielle** auprès de l’Assurance Maladie.
-
-
-## Questions générales sur les enfants et la Covid
+## Les précautions sanitaires
 
 .. question:: À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
     :level: 3
@@ -180,18 +223,6 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
     Il doit être appliqué sur peau saine en se frottant les mains jusqu’à ce qu’elles soient sèches.
 
     Attention à ne pas laisser le produit à portée des jeunes enfants car il existe un risque de projection dans les yeux et d’ingestion accidentelle.
-
-
-.. question:: Comment préparer mon enfant à subir un test de dépistage nasopharyngé (prélèvement nasal) ?
-    :level: 3
-
-    L’enjeu est de **rassurer votre enfant** mais également d’éviter qu’il ne contamine les autres ou qu’il soit contaminé à l’occasion de ce test.
-
-    Décrivez-lui l’environnement dans lequel le test sera réalisé, les vêtements de protection des professionnels de santé et le déroulement du test (le coton-tige dans le nez). Vous pouvez par exemple lui faire **répéter les gestes** (lever la tête, respirer par la bouche…) sous forme de jeu à la maison.
-
-    Pendant le test, assurez-vous qu’il porte bien son **masque sur la bouche** et n’hésitez pas à rester à ses côtés.
-
-    Si vous emmenez un **doudou** ou un objet familier, veillez à ce qu’il n’entre pas en contact avec des surfaces qui peuvent être contaminées. Sinon, lavez-le ou laissez le en quarantaine durant 7 jours.
 
 
 .. question:: Quelles sont les précautions pour emmener mon enfant au parc de jeux collectifs (jeux, bacs à sable, points d’eau, etc.) ?
@@ -217,34 +248,9 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
 
 </div>
 
-<div id="conseils-pediatrie-ecole">
-
-## Questions relatives à la crèche / école
-
-.. question:: Est-il recommandé de mettre mon enfant à la crèche en l’absence de distanciation physique possible ?
-    :level: 3
-
-    Oui **le retour en crèche est recommandé** car le port du masque par les adultes remplace efficacement la distanciation physique. Par ailleurs, la limitation du nombre d’enfants et l’application des mesures barrières réduit considérablement le risque de contamination chez les enfants et les professionnels de la petite enfance.
-
-
-.. question:: Mon enfant peut-il garder son doudou ou sa tétine à la crèche ? Comment faut-il en prendre soin ?
-    :level: 3
-
-    Il est important pour votre enfant de ne pas perdre ses repères. **Garder son doudou ou sa tétine est essentiel et n’empêche pas un retour à la crèche.**
-
-    Il faut privilégier des objets en plastique ou tissu et les dupliquer lorsque c’est possible (un pour la maison, un pour la crèche à laisser dans le sac/casier personnel de l’enfant). Pour les doudous, un lavage régulier en machine à 60° est recommandé.
-
-
-.. question:: Quel est l’impact psychologique pour un bébé d’être gardé en crèche par du personnel masqué ?
-    :level: 3
-
-    Le port du masque et les mesures barrières ne perturbent pas les interactions, qui restent possibles par le regard, la parole et même les gestes. Les enfants n’étant pas masqués, leurs interactions sont très bénéfiques.
-
-</div>
-
 <div id="conseils-pediatrie-medical">
 
-## Questions médicales
+## Questions médicales et dépistage
 
 .. question:: Que faire si mon enfant est malade ?
     :level: 3
@@ -270,20 +276,79 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
     Seuls quelques enfants suivis pour des pathologies rares et graves et en situation de grande vulnérabilité en lien avec leur pathologie ou leurs traitements nécessitent des précautions particulières voire du maintien des soins, des activités éducatives, d’une scolarité à domicile.
 
 
-.. question::  La sérologie Covid fonctionne-t-elle également pour les enfants ?
-    :level: 3
-
-    Oui, comme chez l’adulte la sérologie indique un contact avec le virus. Cependant, la prescription d’une sérologie Covid et son interprétation doivent être faites par un médecin.
-
-
 .. question:: Étant donné la situation, dois/puis-je décaler le prochain vaccin de mon enfant ?
     :level: 3
 
-    Il est primordial de maintenir l’ensemble des vaccinations de vos enfants.
+    Il est primordial de **maintenir l’ensemble des vaccinations** de vos enfants.
 
     Les consultations pour vaccination ne doivent pas être reportées et les retards de vaccinations doivent être rattrapés.
 
+
+.. question:: Les tests sont-ils dangereux pour les enfants ?
+    :level: 3
+
+    Les tests ne présentent **aucun danger pour les enfants**. Les tests salivaires sont déployés dans les écoles pour le confort des enfants, car le prélèvement nasopharyngé peut parfois se révéler difficile ou impossible à réaliser chez les plus jeunes.
+
+.. question::  La sérologie Covid fonctionne-t-elle également pour les enfants ?
+    :level: 3
+
+    **Oui**, comme chez l’adulte la sérologie indique un contact avec le virus. Cependant, la prescription d’une sérologie Covid et son interprétation doivent être faites par un médecin.
+
+.. question:: Comment préparer mon enfant à subir un test de dépistage nasopharyngé (prélèvement nasal) ?
+    :level: 3
+
+    L’enjeu est de **rassurer votre enfant** mais également d’éviter qu’il ne contamine les autres ou qu’il soit contaminé à l’occasion de ce test.
+
+    Décrivez-lui l’environnement dans lequel le test sera réalisé, les vêtements de protection des professionnels de santé et le déroulement du test (le coton-tige dans le nez). Vous pouvez par exemple lui faire **répéter les gestes** (lever la tête, respirer par la bouche…) sous forme de jeu à la maison.
+
+    Pendant le test, assurez-vous qu’il porte bien son **masque sur la bouche** et n’hésitez pas à rester à ses côtés.
+
+    Si vous emmenez un **doudou** ou un objet familier, veillez à ce qu’il n’entre pas en contact avec des surfaces qui peuvent être contaminées. Sinon, lavez-le ou laissez le en quarantaine durant 7 jours.
+
 </div>
+
+
+## Question pour les parents
+
+.. question:: Parent positif à la Covid : comment faire garder mes enfants qui sont cas contacts / comment m’isoler de mes enfants ?
+    :level: 3
+
+    Voir notre page dédiée : [Je vis avec une personne positive à la Covid, que dois-je faire ?](/je-vis-avec-personne-covid-positive.html)
+
+.. question:: Je ne peux pas télétravailler, comment faire garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?
+    :level: 3
+
+    Si vous êtes dans l’une de ces situations :
+
+    * votre enfant, quel que soit son âge, souffre d’un **handicap** qui le rend vulnérable et l’oblige à s’isoler ;
+
+    * votre enfant de **moins de 16 ans** ne peut pas aller à la crèche, à l’école ou au collège pour l’une des raisons suivantes :
+
+        * sa **classe est fermée** pour raison sanitaire,
+        * il ou elle est déclaré(e) comme étant **cas contact**,
+        * il ou elle est **positif(ve)** à la Covid.
+
+    Alors, vous ou votre conjoint(e) pouvez obtenir un **arrêt de travail** afin de garder votre enfant, **même si vous êtes vacciné(e)**.
+
+    Pour cela, vous devrez fournir à l’employeur :
+
+    * soit un **justificatif de fermeture** de la classe ou de l’établissement, soit un document de l’Assurance Maladie attestant que votre enfant est  **cas contact** et fait l’objet d’une mesure d’isolement ;
+    * une **attestation sur l’honneur** précisant que vous êtes le seul des 2 parents à bénéficier d’un arrêt de travail pour les jours concernés.
+
+    C’est l’employeur qui procèdera alors à la déclaration d’**activité partielle** auprès de l’Assurance Maladie.
+
+
+.. question:: Un de mes enfants a été signalé comme cas contact, qu’elles sont les recommendations pour mes autres enfants ?
+    :level: 3
+
+    Le cas contact d’un cas contact n’est pas cas contact : si un enfant est isolé parce que cas contact, son frère ou sa soeur continue d’aller à l’école
+
+.. question:: Comment gérer la garde alternée et cas contact / cas positif ?
+    :level: 3
+
+    - Eviter de mettre en contact l’enfant avec des personnes vulnérables ou avec des personnes présentant des risques de contagion à la Covid ;
+    - Si l’enfant est malade ou fragile, laisser l’enfant au domicile d’un des parents à plus long terme pendant cette période.
+
 
 ## Vous avez encore des questions ?
 
