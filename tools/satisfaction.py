@@ -42,9 +42,11 @@ def main():
     # On filtre avec un nombre de réponses minimales.
     stats_du_jour = filtrer(stats_du_jour, args.reponses_min)
 
-    # Comparer avec les stats du jour précédent.
-    la_veille = le_jour - timedelta(days=1)
-    stats_de_la_veille = feedback.stats_du_jour(date=la_veille)
+    # Comparer avec les stats moyennes de la période de référence.
+    stats_de_reference = feedback.stats_moyennes(
+        start=le_jour - timedelta(days=args.jours_precedents),
+        end=le_jour - timedelta(days=1),
+    )
 
     # On trie selon le critère choisi.
     stats_du_jour = trier(stats_du_jour, critere=args.trier_par)
@@ -52,19 +54,25 @@ def main():
     # Produit un tableau ou une page web.
     if args.format == "tsv":
         # On évite de calculer des variations non significatives.
-        stats_de_reference = filtrer(stats_de_la_veille, args.reponses_min)
+        stats_de_reference = filtrer(stats_de_reference, args.reponses_min)
 
-        sortie_format_tsv(stats_du_jour, stats_de_la_veille)
+        sortie_format_tsv(stats_du_jour, stats_de_reference)
 
     elif args.format == "html":
         libelle_le_jour = le_jour.strftime("%A %-d/%-m/%Y").capitalize()
-        libelle_la_veille = la_veille.strftime("%A %-d/%-m/%Y").capitalize()
+
+        if args.jours_precedents == 1:
+            la_veille = le_jour - timedelta(days=1)
+            libelle_reference = la_veille.strftime("%A %-d/%-m/%Y").capitalize()
+        else:
+            libelle_reference = f"Moyenne des {args.jours_precedents} jours précédents"
+
         sortie_format_html(
             titre=titre_du_graphique(args.reponses_min, args.trier_par),
-            sous_titre=f"{libelle_le_jour} vs. {libelle_la_veille}",
+            sous_titre=f"{libelle_le_jour} vs. {libelle_reference}",
             periodes={
                 libelle_le_jour: stats_du_jour,
-                libelle_la_veille: stats_de_la_veille,
+                libelle_reference: stats_de_reference,
             },
             output_path=(HERE / "index.html"),
         )
@@ -153,7 +161,14 @@ def parse_args():
     parser.add_argument("--site-id", default="mesconseilscovid.sante.gouv.fr")
     parser.add_argument("--token", default=None)
     parser.add_argument("--date", default="hier", help="YYYY-MM-DD (par défaut: hier)")
-    parser.add_argument("--reponses-min", type=int, default=10)
+    parser.add_argument(
+        "--jours-precedents",
+        metavar="N",
+        type=int,
+        default=1,
+        help="comparer avec la moyenne des N jours précédents",
+    )
+    parser.add_argument("--reponses-min", metavar="N", type=int, default=10)
     parser.add_argument(
         "--trier-par",
         default="popularité",
@@ -183,6 +198,25 @@ class FeedbackQuestions:
         )
         return self._regroupe_par_question(
             self._separe_question_et_reponse(response["results"]), dict_class=Reponses
+        )
+
+    def stats_moyennes(self, start, end):
+        response = self.plausible_api.breakdown_for_period(
+            start=start, end=end, property="reponse", name="Avis par question"
+        )
+        nb_jours = (end - start).days + 1
+        return self._regroupe_par_question(
+            self._moyenne_quotidienne(
+                self._separe_question_et_reponse(response["results"]), nb_jours
+            ),
+            dict_class=Reponses,
+        )
+
+    @staticmethod
+    def _moyenne_quotidienne(results, nb_jours):
+        return (
+            (question, reponse, round(nombre / nb_jours, 1))
+            for question, reponse, nombre in results
         )
 
     @staticmethod
@@ -247,6 +281,20 @@ class PlausibleAPI:
                 "site_id": self.site_id,
                 "period": "day",
                 "date": date.isoformat(),
+                "property": f"event:props:{property}",
+                "names": f"event:name=={name}",
+            },
+            headers={"Authorization": f"Bearer {self.token}"},
+        )
+        return resp.json()
+
+    def breakdown_for_period(self, start, end, property, name):
+        resp = httpx.get(
+            f"https://{self.host}/api/v1/stats/breakdown",
+            params={
+                "site_id": self.site_id,
+                "period": "custom",
+                "date": start.isoformat() + "," + end.isoformat(),
                 "property": f"event:props:{property}",
                 "names": f"event:name=={name}",
             },
