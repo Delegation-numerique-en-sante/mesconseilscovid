@@ -399,7 +399,7 @@
 
     <div class="voir-aussi">
 
-    - Consultez notre page « [Conseils pour les mineurs : vaccination et rentrée](/conseils-pour-les-enfants.html) ».
+    - Consultez notre page « [Conseils pour les mineurs : vaccination et scolarité](/conseils-pour-les-enfants.html) ».
 
     - Consultez notre page « [Je souhaite me faire vacciner, que faut-il savoir ?](/je-veux-me-faire-vacciner.html) ».
 
