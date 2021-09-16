@@ -4,6 +4,7 @@ from itertools import groupby
 from operator import itemgetter
 from pathlib import Path
 import argparse
+import locale
 import os
 
 from more_itertools import collapse
@@ -18,6 +19,8 @@ jinja_env = JinjaEnv(loader=FileSystemLoader(str(HERE)), undefined=StrictUndefin
 
 
 def main():
+    locale.setlocale(locale.LC_ALL, "")
+
     args = parse_args()
 
     api = PlausibleAPI(
@@ -53,11 +56,14 @@ def main():
     if args.format == "tsv":
         sortie_format_tsv(stats_du_jour, stats_de_la_veille)
     elif args.format == "html":
+        libelle_le_jour = le_jour.strftime("%A %-d/%-m/%Y").capitalize()
+        libelle_la_veille = la_veille.strftime("%A %-d/%-m/%Y").capitalize()
         sortie_format_html(
             titre=titre_du_graphique(args.reponses_min, args.trier_par),
+            sous_titre=f"{libelle_le_jour} vs. {libelle_la_veille}",
             periodes={
-                "Hier": stats_du_jour,
-                "Avant-hier": stats_de_la_veille,
+                libelle_le_jour: stats_du_jour,
+                libelle_la_veille: stats_de_la_veille,
             },
             output_path=(HERE / "index.html"),
         )
@@ -127,11 +133,12 @@ def sortie_format_tsv(stats, stats_de_reference, sep="\t"):
         )
 
 
-def sortie_format_html(titre, periodes, output_path):
+def sortie_format_html(titre, sous_titre, periodes, output_path):
     template = jinja_env.get_template("template.html")
     content = template.render(
         **{
             "titre": titre,
+            "sous_titre": sous_titre,
             "periodes": periodes,
             "labels": list(periodes.values())[0].keys(),
         }
