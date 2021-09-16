@@ -5,6 +5,7 @@
 * ajoute explicitement les EHPAD et USLD pour le rappel vaccinal
 * précise la démarche pour arrêt de travail en cas d’enfant cas contact
 * précisions et clarifications diverses
+* remet un lien vers le questionnaire sur la page d’accueil
 
 ## 2021-09-14
 
