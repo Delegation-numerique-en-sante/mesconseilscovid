@@ -155,7 +155,7 @@ Voici les choses à savoir concernant la rentrée scolaire 2021-2022 de vos enfa
     * soit un **justificatif de fermeture** de la classe ou de l’établissement, soit un document de l’Assurance Maladie attestant que votre enfant est  **cas contact** et fait l’objet d’une mesure d’isolement ;
     * une **attestation sur l’honneur** précisant que vous êtes le seul des 2 parents à bénéficier d’un arrêt de travail pour les jours concernés.
 
-    C’est l’employeur qui procèdera alors à la déclaration d’**activité partielle** auprès de l’Assurance maladie.
+    C’est l’employeur qui procèdera alors à la déclaration d’**activité partielle** auprès de l’Assurance Maladie.
 
 
 ## Questions générales sur les enfants et la Covid
