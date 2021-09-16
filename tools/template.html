@@ -16,44 +16,47 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script type="text/javascript">
     const labels = [
-      {%- for label in stats_du_jour.keys() %}
+      {%- for label in labels %}
         '{{ label }}',
-        '{{ label }} (la veille)',
       {%- endfor %}
     ]
     const data = {
       labels: labels,
-      datasets: [{
-        label: '🙂',
-        backgroundColor: 'rgb(0, 166, 3)',
-        borderColor: 'rgb(0, 166, 3)',
-        data: [
-          {%- for reponse in stats_du_jour.values() %}
-            '{{ reponse.get("oui", 0) }}',
-            '{{ reponse.get("oui_veille", 0) }}',
-          {%- endfor %}
-        ],
-      },{
-        label: '😐',
-        backgroundColor: 'rgb(255, 167, 0)',
-        borderColor: 'rgb(255, 167, 0)',
-        data: [
-          {%- for reponse in stats_du_jour.values() %}
-            '{{ reponse.get("bof", 0) }}',
-            '{{ reponse.get("bof_veille", 0) }}',
-          {%- endfor %}
-        ],
-      },{
-        label: '🙁',
-        backgroundColor: 'rgb(255, 0, 0)',
-        borderColor: 'rgb(255, 0, 0)',
-        data: [
-          {%- for reponse in stats_du_jour.values() %}
-            '{{ reponse.get("non", 0) }}',
-            '{{ reponse.get("non_veille", 0) }}',
-          {%- endfor %}
-        ],
-      }]
+      datasets: [
+      {% for periode, stats in periodes.items() %}
+        {
+          label: '🙂',
+          backgroundColor: 'rgb(0, 166, 3)',
+          borderColor: 'rgb(0, 166, 3)',
+          data: [
+            {%- for label in labels %}
+              '{{ stats[label].get("oui", 0) }}',
+            {%- endfor %}
+          ],
+          stack: '{{ periode }}',
+        },{
+          label: '😐',
+          backgroundColor: 'rgb(255, 167, 0)',
+          borderColor: 'rgb(255, 167, 0)',
+          data: [
+            {%- for label in labels %}
+              '{{ stats[label].get("bof", 0) }}',
+            {%- endfor %}
+          ],
+          stack: '{{ periode }}',
+        },{
+          label: '🙁',
+          backgroundColor: 'rgb(255, 0, 0)',
+          borderColor: 'rgb(255, 0, 0)',
+          data: [
+            {%- for label in labels %}
+              '{{ stats[label].get("non", 0) }}',
+            {%- endfor %}
+          ],
+          stack: '{{ periode }}',
+        },
+      {%- endfor %}
+      ]
     }
     const config = {
       type: 'bar',
@@ -61,9 +64,12 @@
       options: {
         indexAxis: 'y',
         plugins: {
+          legend: {
+            display: false,
+          },
           title: {
             display: true,
-            text: 'Satisfaction des questions populaires en nombre d’occurences'
+            text: '{{ titre }}'
           },
         },
         responsive: true,

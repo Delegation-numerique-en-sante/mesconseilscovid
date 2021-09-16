@@ -47,19 +47,18 @@ def main():
     # On trie selon le critère choisi.
     stats_du_jour = trier(stats_du_jour, critere=args.trier_par)
 
-    for question, reponses_jour in stats_du_jour.items():
-        reponses_veille = stats_de_la_veille.get(question)
-        if reponses_veille is None:
-            continue
-        reponses_jour["oui_veille"] = reponses_veille.get("oui")
-        reponses_jour["bof_veille"] = reponses_veille.get("bof")
-        reponses_jour["non_veille"] = reponses_veille.get("non")
-
     # Produit un tableau ou une page web.
     if args.format == "tsv":
         sortie_format_tsv(stats_du_jour, stats_de_la_veille)
     elif args.format == "html":
-        sortie_format_html(stats_du_jour, output_path=(HERE / "index.html"))
+        sortie_format_html(
+            titre="Satisfaction des questions populaires en nombre d’occurences",
+            periodes={
+                "Hier": stats_du_jour,
+                "Avant-hier": stats_de_la_veille,
+            },
+            output_path=(HERE / "index.html"),
+        )
 
 
 def filtrer(stats, reponses_min):
@@ -111,9 +110,15 @@ def sortie_format_tsv(stats, stats_de_reference, sep="\t"):
         )
 
 
-def sortie_format_html(stats, output_path):
+def sortie_format_html(titre, periodes, output_path):
     template = jinja_env.get_template("template.html")
-    content = template.render(**{"stats_du_jour": stats})
+    content = template.render(
+        **{
+            "titre": titre,
+            "periodes": periodes,
+            "labels": list(periodes.values())[0].keys(),
+        }
+    )
     output_path.write_text(content)
 
 
