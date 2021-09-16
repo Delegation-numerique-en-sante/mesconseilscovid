@@ -52,7 +52,7 @@ def main():
         sortie_format_tsv(stats_du_jour, stats_de_la_veille)
     elif args.format == "html":
         sortie_format_html(
-            titre="Satisfaction des questions populaires en nombre d’occurences",
+            titre=titre_du_graphique(args.trier_par),
             periodes={
                 "Hier": stats_du_jour,
                 "Avant-hier": stats_de_la_veille,
@@ -82,6 +82,21 @@ def trier(stats, critere):
         sort_key = lambda t: t[1].nombre_d_insatisfaits()
 
     return dict(sorted(stats.items(), key=sort_key, reverse=True))
+
+
+def titre_du_graphique(critere):
+    titre = "Questions populaires"
+    if critere == "popularité":
+        titre += " triées par nombre total de réponses"
+    elif critere == "satisfaction":
+        titre += " triées par taux de satisfaction"
+    elif critere == "insatisfaction":
+        titre += " triées par taux d’insatisfaction"
+    elif critere == "satisfaits":
+        titre += " triées par nombre de personnes satisfaites"
+    elif critere == "insatisfaits":
+        titre += " triées par nombre de personnes insatisfaites"
+    return titre
 
 
 def sortie_format_tsv(stats, stats_de_reference, sep="\t"):
