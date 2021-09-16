@@ -25,7 +25,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Pour les mineurs âgés de **16 à 17 ans**, aucune autorisation parentale n’est requise.
 
-    Pour les mineurs âgés de **12 à 15 ans**, le consentement d’un parent ou tuteur est obligatoire. Un formulaire d’autorisation peut être [téléchargé à l’avance](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) et sera également disponible dans le centre de vaccination.
+    Pour les mineurs âgés de **12 à 15 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Un formulaire d’autorisation peut être [téléchargé à l’avance](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) et sera également disponible dans le centre de vaccination.
 
     Le jour de la vaccination, l’adolescent(e) **peut venir accompagné(e)** de l’un de ses parents (ou titulaires de l’autorité parentale), mais ce n’est pas obligatoire.
 
