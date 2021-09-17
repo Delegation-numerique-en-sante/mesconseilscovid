@@ -6,7 +6,7 @@ Vous avez passé du temps avec quelqu’un de positif, mais comme vous êtes **c
         * portez le masque à l’intérieur et à l’extérieur, même dans les lieux qui ne l’exigent plus (restaurant, musées…) ;
         * évitez de rencontrer des personnes vulnérables ou fragiles ;
         * surveillez votre état : température, symptômes…
-1. Si votre premier test était **négatif**, faire un test de contrôle 7 jours après le dernier contact à risque :
+1. Si votre premier test était **négatif**, faire un test de contrôle (PCR ou antigénique) 7 jours après le dernier contact à risque :
     * s’il est **négatif**, vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale ;
     * s’il est **positif**, restez en isolement au moins 10 jours à partir de la date du test, et surveillez l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
 1. {.seulement-si-foyer} Les autres **membres de votre foyer** sont « cas contact d’un cas contact », et n’ont pas à s’isoler. Si le résultat de votre test est positif, ils deviendront alors **cas contact** et devront s’isoler (si non vaccinés) et faire un test.

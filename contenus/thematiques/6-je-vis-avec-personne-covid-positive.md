@@ -42,7 +42,7 @@ Si vous ne pouvez pas télétravailler, l’Assurance Maladie pourra vous prescr
 
 <div class="conseil">
 
-Si des symptômes ne se déclarent pas entre-temps, **faites-vous tester à nouveau** 7 jours après la guérison ou la sortie de l’isolement de la personne positive.
+Si des symptômes ne se déclarent pas entre-temps, **faites-vous tester à nouveau** (test PCR ou antigénique) 7 jours après la guérison ou la sortie de l’isolement de la personne positive.
 
 * Si ce test est **négatif**, alors vous pouvez lever votre isolement.
 * Si ce test est **positif**, alors restez isolé·e encore 10 jours au moins. Vous pourrez lever l’isolement dès le 10<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48 h.
@@ -98,7 +98,7 @@ Si vous ne pouvez pas télétravailler, l’Assurance Maladie pourra vous prescr
 
 <div class="conseil">
 
-Si votre premier test était **négatif**, vous devez faire un test de contrôle **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes).
+Si votre premier test était **négatif**, vous devez faire un test de contrôle (PCR ou antigénique) **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes).
 
 </div>
 
