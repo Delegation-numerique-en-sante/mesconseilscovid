@@ -75,6 +75,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
+    - [Je ne peux pas télétravailler, comment faire garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-comment-faire-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+
     - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
 
     - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
@@ -129,6 +131,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
+    - [Je ne peux pas télétravailler, comment faire garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-comment-faire-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+
     - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
 
     </div>
@@ -147,6 +151,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     Dans chacun de ces cas, vous êtes tenus d’en informer l’établissement **au plus tôt**, afin que les mesures appropriées soient rapidement mises en place.
 
     <div class="voir-aussi">
+
+    - [Je ne peux pas télétravailler, comment faire garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-comment-faire-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
 
     - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
 
@@ -167,8 +173,6 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-
-
 <div id="conseils-pediatrie-ecole">
 
 ## Les mesures à la crèche
@@ -186,7 +190,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - [Comment faire pour garder mon enfant en isolement (cas contact/positif) ?](#je-ne-peux-pas-teletravailler-comment-faire-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+    - [Je ne peux pas télétravailler, comment faire garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-comment-faire-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
 
     </div>
 
@@ -197,6 +201,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     Le port du masque et les mesures barrières ne perturbent pas les interactions, qui restent possibles par le regard, la parole et même les gestes. Les enfants n’étant pas masqués, leurs interactions sont très bénéfiques.
 
 </div>
+
+
 
 <div id="vaccination">
 
@@ -278,6 +284,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 </div>
 
+
+
 ## Les précautions sanitaires
 
 .. question:: À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
@@ -324,6 +332,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * porter le **masque** lors d’un contact rapproché (enfant dans les bras…).
 
 </div>
+
+
 
 <div id="conseils-pediatrie-medical">
 
