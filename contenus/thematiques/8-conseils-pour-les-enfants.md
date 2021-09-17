@@ -445,11 +445,16 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     C’est l’employeur qui procèdera alors à la déclaration d’**activité partielle** auprès de l’Assurance Maladie.
 
 
-.. question:: Comment gérer la garde alternée et cas contact / cas positif ?
+.. question:: Comment gérer la garde alternée en période de Covid ?
     :level: 3
 
-    - Eviter de mettre en contact l’enfant avec des personnes vulnérables ou avec des personnes présentant des risques de contagion à la Covid ;
-    - Si l’enfant est malade ou fragile, laisser l’enfant au domicile d’un des parents à plus long terme pendant cette période.
+    * La loi ne prévoit de règles spécifiques. Il revient donc aux parents de faire preuve de **bon sens** pour protéger l’**équilibre** et la **santé** de leurs enfants.
+
+    * Il est possible d’**adapter** à l’amiable le **planning de garde** (en prévoyant par exemple un rattrapage) pour éviter de **propager la maladie** d’un foyer à l’autre, notamment dans les situations suivantes :
+       - lorsque l’enfant doit **rester isolé** parce qu’il est **positif** ou **cas contact** (dans le cas où il n’est pas vacciné) ;
+       - lorsque l’une **personne du foyer** est **malade**.
+
+    * Soyez particulièrement **vigilants** lorsque le foyer comporte des **personnes vulnérables** (personnes âgées, immunodéprimées, non vaccinées, ou à risque de forme grave de Covid).
 
 
 ## Vous avez encore des questions ?
