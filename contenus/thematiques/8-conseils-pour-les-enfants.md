@@ -22,8 +22,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - [Notre page d’information sur le pass sanitaire](/pass-sanitaire-qr-code-voyages.html)
-    - [Notre rubrique sur la vaccination des mineurs](#vaccination)
+    - Notre rubrique « [La vaccination des mineurs de plus de 12 ans](#vaccination) » ci-dessous
+
+    - Notre page « [Pass sanitaire, QR code et voyages](/pass-sanitaire-qr-code-voyages.html) »
 
     </div>
 
@@ -34,6 +35,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     Dans **les écoles**, la règle de la **fermeture** de la classe pour une durée de 7 jours dès le premier cas positif continue de s’appliquer.
 
     Dans **les collèges et les lycées**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves **« cas contact »** devront poursuivre leurs apprentissages à distance pendant **7 jours, sauf s’ils sont vaccinés** (*voir ci-dessous*).
+
+    <div class="voir-aussi">
+
+    - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
+
+    </div>
 
 
 .. question:: Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?
@@ -68,7 +75,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - Pour plus de détails, consultez notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
+    - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
+
+    - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
 
     </div>
 
@@ -106,7 +115,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - Pour plus de détails, consultez notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
+    - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
+
+    - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
 
     </div>
 
@@ -114,7 +125,13 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Si un de mes enfants est cas contact, que se passe-t-il pour mes autres enfants ?
     :level: 3
 
-    Si un de vos enfants est identifié comme **cas contact**, alors ses frères ou ses sœurs **ne pourront pas aller à l’école** non plus, et vous devrez en informer l’établissement (*voir ci-dessous*).
+    Si un de vos enfants est identifié comme **cas contact**, alors ses frères ou ses sœurs **ne pourront pas aller à l’école** non plus, et vous devrez en informer l’établissement (*voir question suivante*).
+
+    <div class="voir-aussi">
+
+    - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
+
+    </div>
 
 
 .. question:: Dans quels cas mon enfant doit-il rester à la maison ?
@@ -129,11 +146,11 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Dans chacun de ces cas, vous êtes tenus d’en informer l’établissement **au plus tôt**, afin que les mesures appropriées soient rapidement mises en place.
 
+    <div class="voir-aussi">
 
-.. question:: Quelles sont les autres mesures prévues dans les établissements scolaires face à la crise sanitaire ?
-    :level: 3
+    - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
 
-    Pour plus de détails sur les mesures prévues, vous pouvez consulter la page « [Année scolaire 2021-2022 : protocole sanitaire et mesures de fonctionnement](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) » sur le site du ministère de l’Éducation nationale.
+    </div>
 
 
 .. question:: Est-ce que mon enfant devra porter le masque ?
@@ -142,6 +159,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     Le **port du masque est obligatoire** dans les espaces clos. Il pourra être également requis en extérieur selon le niveau de sévérité de l’épidémie. Pour les élèves des écoles maternelles, le port du masque est proscrit.
 
     **Les parents doivent fournir des masques à leurs enfants.** Le masque doit assurer une filtration supérieure à 90 % (masque « grand public » ou masque chirurgical par exemple). Le ministère dote chaque école, collège et lycée en masques « grand public » afin qu’ils puissent être fournis aux élèves qui n’en disposeraient pas.
+
+    <div class="voir-aussi">
+
+    - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
+
+    </div>
+
+
 
 
 <div id="conseils-pediatrie-ecole">
@@ -175,7 +200,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 <div id="vaccination">
 
-## La vaccination des mineurs âgés de plus de 12 ans
+## La vaccination des mineurs de plus de 12 ans
 
 <div class="conseil">
 
