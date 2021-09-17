@@ -27,12 +27,13 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     </div>
 
+
 .. question:: Que se passe-t-il si un élève est positif dans la classe de mon enfant ?
     :level: 3
 
     Dans **les écoles**, la règle de la **fermeture** de la classe pour une durée de 7 jours dès le premier cas positif continue de s’appliquer.
 
-    Dans **les collèges et les lycées**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves **« cas contact »** devront poursuivre leurs apprentissages à distance pendant **7 jours, sauf s’ils sont vaccinés**.
+    Dans **les collèges et les lycées**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves **« cas contact »** devront poursuivre leurs apprentissages à distance pendant **7 jours, sauf s’ils sont vaccinés** (*voir ci-dessous*).
 
 .. question:: Que se passe-t-il si mon enfant est cas contact ?
     :level: 3
