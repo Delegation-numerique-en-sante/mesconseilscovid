@@ -35,44 +35,49 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Dans **les collèges et les lycées**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves **« cas contact »** devront poursuivre leurs apprentissages à distance pendant **7 jours, sauf s’ils sont vaccinés** (*voir ci-dessous*).
 
-.. question:: Que se passe-t-il si mon enfant est cas contact ?
+
+.. question:: Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?
     :level: 3
 
-    Si votre enfant est « cas contact », il devra poursuivre son apprentissage **à distance pendant 7 jours, sauf s’il ou elle est vacciné(e)**.
+    #### 1. Isolement
 
-    En parallèle, il faut :
+    Si votre enfant est « **cas contact** » et n’est **pas vacciné(e)**, il devra rester **isolé** pendant **7 jours**, et poursuivre ses apprentissages **à distance**.
 
-    1. le faire **tester dès que possible** avec un test antigénique.
+    #### 2. Test de dépistage
 
-        * Si le test est **négatif**, il devra tout de même rester **isolé** pendant **7 jours**.
+    Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
-        * En cas de fièvre ou de **symptômes** avant le 7<sup>e</sup> jour, il faut :
-            - le faire **tester à nouveau**
-            - contacter un médecin ou le **15** en cas de difficultés respiratoires.
+    * Si le test est **négatif** :
+        * il devra quand même rester **isolé** pendant **7 jours** ;
+        * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
 
-        * Si le test est **positif** :
-            - votre enfant a contracté la covid et il est **contagieux** ;
-            - il doit rester en isolement au moins **10 jours** à partir de la date du test ;
-            - surveillez l’apparition de **symptômes** et contacter un médecin ou le 15 en cas de difficultés respiratoires ;
-            - les autres membres du **foyer** sont **cas contacts** et devront :
-                * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
-                * faire un **test antigénique** dès que possible
+    * Si le test est **positif** :
+        - votre enfant a contracté la Covid et il est **contagieux** ;
+        - il doit rester en isolement au moins **10 jours** à partir de la date du test ;
+        - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
+        - les autres membres du **foyer** sont **cas contacts** et devront :
+            * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
+            * faire un **test antigénique** dès que possible.
 
-    2. Faire un test de contrôle<br><br>Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** avant de retourner à l’école :
+    #### 3. Test de contrôle
 
-        - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
-        - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle (partage de foyer par exemple).
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) avant de retourner à l’école :
+
+    - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
+    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle (partage de foyer par exemple).
 
     <div class="voir-aussi">
 
-    - Pour savoir ce qu’il faut faire lorsqu’on est cas contact, [consultez notre page dédiée.](/cas-contact-a-risque.html)
+    - Pour plus de détails, consultez notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
 
     </div>
+
 
 .. question:: Quelles sont les autres mesures prévues dans les établissements scolaires face à la crise sanitaire ?
     :level: 3
 
     Pour plus de détails sur les mesures prévues, vous pouvez consulter la page « [Année scolaire 2021-2022 : protocole sanitaire et mesures de fonctionnement](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) » sur le site du ministère de l’Éducation nationale.
+
 
 .. question:: Dans quels cas mon enfant doit-il rester à la maison ?
     :level: 3
@@ -85,6 +90,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * si votre enfant ou un membre de son foyer a été identifié comme **contact à risque**.
 
     Dans chacun de ces cas, vous êtes tenus d’en informer l’établissement **au plus tôt**, afin que les mesures appropriées soient rapidement mises en place.
+
 
 .. question:: Est-ce que mon enfant devra porter le masque ?
     :level: 3
@@ -114,6 +120,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     - [Comment faire pour garder mon enfant en isolement (cas contact/positif) ?](#je-ne-peux-pas-teletravailler-comment-faire-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
 
     </div>
+
 
 .. question:: Quel est l’impact psychologique pour un bébé d’être gardé en crèche par du personnel masqué ?
     :level: 3
@@ -290,10 +297,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Les tests ne présentent **aucun danger pour les enfants**. Les tests salivaires sont déployés dans les écoles pour le confort des enfants, car le prélèvement nasopharyngé peut parfois se révéler difficile ou impossible à réaliser chez les plus jeunes.
 
+
 .. question::  La sérologie Covid fonctionne-t-elle également pour les enfants ?
     :level: 3
 
     **Oui**, comme chez l’adulte la sérologie indique un contact avec le virus. Cependant, la prescription d’une sérologie Covid et son interprétation doivent être faites par un médecin.
+
 
 .. question:: Comment préparer mon enfant à subir un test de dépistage nasopharyngé (prélèvement nasal) ?
     :level: 3
@@ -315,6 +324,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     :level: 3
 
     Voir notre page dédiée : [Je vis avec une personne positive à la Covid, que dois-je faire ?](/je-vis-avec-personne-covid-positive.html)
+
 
 .. question:: Je ne peux pas télétravailler, comment faire garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?
     :level: 3
@@ -343,6 +353,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     :level: 3
 
     Le cas contact d’un cas contact n’est pas cas contact : si un enfant est isolé parce que cas contact, son frère ou sa soeur continue d’aller à l’école
+
 
 .. question:: Comment gérer la garde alternée et cas contact / cas positif ?
     :level: 3
