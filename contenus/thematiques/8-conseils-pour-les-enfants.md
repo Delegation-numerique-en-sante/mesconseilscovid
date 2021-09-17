@@ -73,6 +73,44 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
+.. question:: Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?
+    :level: 3
+
+    #### 1. Pas d’isolement
+
+    Si votre enfant est « **cas contact** » et qu’il est **vacciné(e)**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école.
+
+    #### 2. Test de dépistage
+
+    Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+
+    * Si le test est **négatif** :
+        * il devra faire un **test de contrôle** ;
+        * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
+        * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
+
+    * Si le test est **positif** :
+        - votre enfant a contracté la Covid et il est **contagieux** ;
+        - il doit rester en isolement au moins **10 jours** à partir de la date du test ;
+        - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
+        - les autres membres du **foyer** sont **cas contacts** et devront :
+            * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
+            * faire un **test antigénique** dès que possible.
+
+    #### 3. Test de contrôle
+
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) :
+
+    - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
+    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle (partage de foyer par exemple).
+
+    <div class="voir-aussi">
+
+    - Pour plus de détails, consultez notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
+
+    </div>
+
+
 .. question:: Quelles sont les autres mesures prévues dans les établissements scolaires face à la crise sanitaire ?
     :level: 3
 
