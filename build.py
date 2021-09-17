@@ -146,9 +146,9 @@ def render_html_question(text, question, level):
     <fieldset>
         <legend>Avez-vous trouvé cette réponse utile&#8239;?</legend>
         <div>
-            <input type="submit" class="button-outline" data-value="non" value="🙁 Non" />
-            <input type="submit" class="button-outline" data-value="bof" value="😐 Bof" />
-            <input type="submit" class="button-outline" data-value="oui" value="🙂 Oui" />
+            <input type="submit" class="button-invisible" data-value="non" value="🙁  Non" />
+            <input type="submit" class="button-invisible" data-value="bof" value="😐  Bof" />
+            <input type="submit" class="button-invisible" data-value="oui" value="🙂  Oui" />
         </div>
     </fieldset>
 </form>

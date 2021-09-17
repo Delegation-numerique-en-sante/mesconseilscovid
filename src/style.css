@@ -1100,6 +1100,11 @@ a.button-outline {
     border: 1px solid #000091;
     color: #000091;
 }
+input.button-invisible {
+    background-color: white;
+    border: none;
+    color: #000;
+}
 a.button-red {
     background-color: #dc3545;
     border: 1px solid #dc3545;
@@ -1189,8 +1194,9 @@ a.button-feedback-social-whatsapp {
     max-width: 20rem;
 }
 .question-feedback input[type='submit'] {
-    font-size: 95%;
+    font-size: 120%;
     margin: 0.25rem;
+    padding: 12px 12px;
 }
 
 @media only screen and (min-width: 680px) {
