@@ -75,7 +75,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - [Je ne peux pas télétravailler, comment faire garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-comment-faire-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
 
     - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
 
@@ -131,7 +131,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - [Je ne peux pas télétravailler, comment faire garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-comment-faire-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
 
     - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
 
@@ -152,7 +152,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - [Je ne peux pas télétravailler, comment faire garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-comment-faire-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
 
     - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
 
@@ -190,7 +190,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - [Je ne peux pas télétravailler, comment faire garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-comment-faire-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
 
     </div>
 
@@ -405,7 +405,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     Voir notre page dédiée : [Je vis avec une personne positive à la Covid, que dois-je faire ?](/je-vis-avec-personne-covid-positive.html)
 
 
-.. question:: Je ne peux pas télétravailler, comment faire garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?
+.. question:: Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?
     :level: 3
 
     Si vous êtes dans l’une de ces situations :
