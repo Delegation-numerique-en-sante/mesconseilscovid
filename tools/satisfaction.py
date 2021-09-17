@@ -74,7 +74,7 @@ def main():
                 libelle_le_jour: stats_du_jour,
                 libelle_reference: stats_de_reference,
             },
-            output_path=(HERE / "index.html"),
+            output_path=(HERE / "build" / "index.html"),
         )
 
 
@@ -152,6 +152,8 @@ def sortie_format_html(titre, sous_titre, periodes, output_path):
             "labels": list(periodes.values())[0].keys(),
         }
     )
+    if not output_path.parent.exists():
+        output_path.parent.mkdir(parents=True)
     output_path.write_text(content)
 
 
