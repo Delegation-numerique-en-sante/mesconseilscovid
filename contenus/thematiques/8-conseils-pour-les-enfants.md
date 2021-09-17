@@ -214,12 +214,6 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 ## La vaccination des mineurs de plus de 12 ans
 
-<div class="conseil">
-
-**La vaccination est ouverte aux enfants de 12 ans et plus**.
-
-</div>
-
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
     :level: 3
 
