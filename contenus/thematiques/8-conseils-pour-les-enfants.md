@@ -114,15 +114,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Si un de mes enfants est cas contact, que se passe-t-il pour mes autres enfants ?
     :level: 3
 
-    Le « **cas contact d’un cas contact** » n’est pas un cas contact. Si un de vos enfants doit s’isoler parce qu’il est identifié comme cas contact, alors ses frères ou ses sœurs peuvent continuer d’aller à l’école.
-
-    Par contre, si cet enfant est **testé positif** à la Covid, alors ses frères et sœurs deviendront à leur tour cas contacts et devront s’isoler.
-
-
-.. question:: Quelles sont les autres mesures prévues dans les établissements scolaires face à la crise sanitaire ?
-    :level: 3
-
-    Pour plus de détails sur les mesures prévues, vous pouvez consulter la page « [Année scolaire 2021-2022 : protocole sanitaire et mesures de fonctionnement](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) » sur le site du ministère de l’Éducation nationale.
+    Si un de vos enfants est identifié comme **cas contact**, alors ses frères ou ses sœurs **ne pourront pas aller à l’école** non plus, et vous devrez en informer l’établissement (*voir ci-dessous*).
 
 
 .. question:: Dans quels cas mon enfant doit-il rester à la maison ?
@@ -136,6 +128,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * si votre enfant ou un membre de son foyer a été identifié comme **contact à risque**.
 
     Dans chacun de ces cas, vous êtes tenus d’en informer l’établissement **au plus tôt**, afin que les mesures appropriées soient rapidement mises en place.
+
+
+.. question:: Quelles sont les autres mesures prévues dans les établissements scolaires face à la crise sanitaire ?
+    :level: 3
+
+    Pour plus de détails sur les mesures prévues, vous pouvez consulter la page « [Année scolaire 2021-2022 : protocole sanitaire et mesures de fonctionnement](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) » sur le site du ministère de l’Éducation nationale.
 
 
 .. question:: Est-ce que mon enfant devra porter le masque ?
