@@ -111,6 +111,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
+.. question:: Si un de mes enfants est cas contact, que se passe-t-il pour mes autres enfants ?
+    :level: 3
+
+    Le « **cas contact d’un cas contact** » n’est pas un cas contact. Si un de vos enfants doit s’isoler parce qu’il est identifié comme cas contact, alors ses frères ou ses sœurs peuvent continuer d’aller à l’école.
+
+    Par contre, si cet enfant est **testé positif** à la Covid, alors ses frères et sœurs deviendront à leur tour cas contacts et devront s’isoler.
+
+
 .. question:: Quelles sont les autres mesures prévues dans les établissements scolaires face à la crise sanitaire ?
     :level: 3
 
@@ -385,12 +393,6 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * une **attestation sur l’honneur** précisant que vous êtes le seul des 2 parents à bénéficier d’un arrêt de travail pour les jours concernés.
 
     C’est l’employeur qui procèdera alors à la déclaration d’**activité partielle** auprès de l’Assurance Maladie.
-
-
-.. question:: Un de mes enfants a été signalé comme cas contact, qu’elles sont les recommendations pour mes autres enfants ?
-    :level: 3
-
-    Le cas contact d’un cas contact n’est pas cas contact : si un enfant est isolé parce que cas contact, son frère ou sa soeur continue d’aller à l’école
 
 
 .. question:: Comment gérer la garde alternée et cas contact / cas positif ?
