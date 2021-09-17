@@ -70,7 +70,7 @@ Si vous ne pouvez pas **télétravailler**, vous pouvez [**demander un arrêt de
 
 <div class="conseil">
 
-Si votre premier test était **négatif**, vous devez faire un test de contrôle :
+Si votre premier test était **négatif**, vous devez faire un test de contrôle (PCR ou antigénique) :
 
 * **7 jours après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e) ;
 * **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple) ;
@@ -145,7 +145,7 @@ Faire un **test antigénique** en pharmacie **dès que possible** (voir la [cart
 
 <div class="conseil">
 
-Si votre premier test était **négatif**, vous devez faire un test de contrôle :
+Si votre premier test était **négatif**, vous devez faire un test de contrôle (PCR ou antigénique) :
 
 * **7 jours après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e) ;
 * **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple) ;
