@@ -1193,14 +1193,23 @@ a.button-feedback-social-whatsapp {
     width: 100%;
     max-width: 20rem;
 }
-.question-feedback input[type='submit'] {
-    font-size: 120%;
+.question-feedback label {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
     margin: 0.25rem;
     padding: 12px 12px;
     border: 3px solid transparent;
 }
-.question-feedback input[type='submit']:active,
-.question-feedback input[type='submit']:hover {
+.question-feedback input[type='submit'] {
+    font-size: 150%;
+    margin: 0;
+    padding: 0 0.6rem;
+}
+.question-feedback label:active,
+.question-feedback label:hover {
     color: #000091;
     transform: translate(1px, 1px);
 }
