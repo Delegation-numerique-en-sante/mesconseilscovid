@@ -12,7 +12,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 </div>
 
-## La scolarité et l’épidémie de Covid
+## Mesures sanitaires à l’école, au collège et au lycée
 
 .. question:: Est-ce que mon enfant a besoin du pass sanitaire pour aller à l’école ?
     :level: 3
@@ -410,7 +410,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 </div>
 
 
-## Question pour les parents
+## Organisation familiale et garde des enfants
 
 .. question:: Que doivent faire mes enfants si je suis positif à la Covid ?
     :level: 3
