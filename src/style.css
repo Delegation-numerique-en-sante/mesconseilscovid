@@ -1197,6 +1197,12 @@ a.button-feedback-social-whatsapp {
     font-size: 120%;
     margin: 0.25rem;
     padding: 12px 12px;
+    border: 3px solid transparent;
+}
+.question-feedback input[type='submit']:active,
+.question-feedback input[type='submit']:hover {
+    color: #000091;
+    transform: translate(1px, 1px);
 }
 
 @media only screen and (min-width: 680px) {
