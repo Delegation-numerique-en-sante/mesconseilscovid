@@ -1182,16 +1182,18 @@ a.button-feedback-social-whatsapp {
     .thematique #conseils-block details form.question-feedback {
         margin-left: -1.2rem;
         margin-right: -1.2rem;
+        padding: 0;
     }
 }
 .question-feedback legend {
-    margin: 0.25rem auto;
+    margin: 0.75rem auto 0 auto;
 }
 .question-feedback div {
     display: flex;
     justify-content: space-around;
     width: 100%;
     max-width: 20rem;
+    margin: 0;
 }
 .question-feedback label {
     display: flex;
@@ -1199,8 +1201,8 @@ a.button-feedback-social-whatsapp {
     justify-content: center;
     align-items: center;
     font-size: 100%;
-    margin: 0.25rem;
-    padding: 12px 12px;
+    margin: 0;
+    padding: 0.5rem;
     border: 3px solid transparent;
 }
 .question-feedback input[type='submit'] {
@@ -1583,6 +1585,11 @@ a.no-type::after {
 .thematique #conseils-block form.question-feedback {
     border: 2px solid #d5dbef;
     padding: 0 1rem;
+}
+@media only screen and (max-width: 320px) {
+    .thematique #conseils-block form.question-feedback {
+        padding: 0;
+    }
 }
 .thematique #conseils-block form:not(.question-feedback) {
     background-color: #f8f8f8;
