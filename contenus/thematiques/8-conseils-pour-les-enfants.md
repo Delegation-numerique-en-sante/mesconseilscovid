@@ -192,37 +192,6 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-<div id="conseils-pediatrie-ecole">
-
-## Les mesures à la crèche
-
-.. question:: Est-il recommandé de mettre mon enfant à la crèche en l’absence de distanciation physique possible ?
-    :level: 3
-
-    Oui **le retour en crèche est recommandé** car le port du masque par les adultes remplace efficacement la distanciation physique. Par ailleurs, la limitation du nombre d’enfants et l’application des mesures barrières réduit considérablement le risque de contamination chez les enfants et les professionnels de la petite enfance.
-
-
-.. question:: Que se passe-t-il si mon enfant est cas contact ?
-    :level: 3
-
-    Les enfants de moins de 3 ans ne doivent **pas aller à la crèche** s’ils sont cas contact.
-
-    <div class="voir-aussi">
-
-    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
-
-    </div>
-
-
-.. question:: Quel est l’impact psychologique pour un bébé d’être gardé en crèche par du personnel masqué ?
-    :level: 3
-
-    Le port du masque et les mesures barrières ne perturbent pas les interactions, qui restent possibles par le regard, la parole et même les gestes. Les enfants n’étant pas masqués, leurs interactions sont très bénéfiques.
-
-</div>
-
-
-
 <div id="vaccination">
 
 ## La vaccination des mineurs de plus de 12 ans
@@ -298,8 +267,19 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 </div>
 
 
+## Enfants en bas âge
 
-## Les précautions sanitaires
+.. question:: Mon enfant peut-il aller à la crèche s’il est cas contact ?
+    :level: 3
+
+    **Non**, les enfants ne doivent **pas aller à la crèche** s’ils sont cas contact. Si nécessaire, vous pouvez obtenir un **arrêt de travail** pour le garder à la maison.
+
+    <div class="voir-aussi">
+
+    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+
+    </div>
+
 
 .. question:: À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
     :level: 3
@@ -334,17 +314,6 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * respecter dans la mesure du possible une **distanciation physique** avec les autres personnes ;
     * **éviter de partager les jouets** individuels entre les enfants ;
     * en cas de contact rapproché avec un enfant présentant des **symptômes apparents** (rhume et/ou toux), faire un lavage des mains à l’eau et au savon ou sinon au gel hydro-alcoolique.
-
-
-.. question:: Les enfants peuvent-ils être gardés par des personnes extérieures au foyer, par exemple les grands-parents ?
-    :level: 3
-
-    **Oui,** si ces personnes et l’enfant ne sont pas malades, et en appliquant les **mesures de prévention** suivantes :
-
-    * respecter les **gestes barrières** : se laver régulièrement les mains à l’eau et au savon *avant* de s’occuper de l’enfant, mais aussi *après* ;
-    * porter le **masque** lors d’un contact rapproché (enfant dans les bras…).
-
-</div>
 
 
 
@@ -456,6 +425,15 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * une **attestation sur l’honneur** précisant que vous êtes le seul des 2 parents à bénéficier d’un arrêt de travail pour les jours concernés.
 
     C’est l’employeur qui procèdera alors à la déclaration d’**activité partielle** auprès de l’Assurance Maladie.
+
+
+.. question:: Les enfants peuvent-ils être gardés par des personnes extérieures au foyer, par exemple les grands-parents ?
+    :level: 3
+
+    **Oui,** si ces personnes et l’enfant ne sont pas malades, et en appliquant les **mesures de prévention** suivantes :
+
+    * respecter les **gestes barrières** : se laver régulièrement les mains à l’eau et au savon *avant* de s’occuper de l’enfant, mais aussi *après* ;
+    * porter le **masque** lors d’un contact rapproché (enfant dans les bras…).
 
 
 .. question:: Comment gérer la garde alternée en période de Covid ?
