@@ -174,9 +174,9 @@ class TestQuestionDirective:
                     <fieldset>
                         <legend>Avez-vous trouvé cette réponse utile&#8239;?</legend>
                         <div>
-                            <input type="submit" class="button-invisible" data-value="non" value="🙁  Non" />
-                            <input type="submit" class="button-invisible" data-value="bof" value="😐  Bof" />
-                            <input type="submit" class="button-invisible" data-value="oui" value="🙂  Oui" />
+                            <label><input type="submit" class="button-invisible" data-value="non" value="🙁">Non</label>
+                            <label><input type="submit" class="button-invisible" data-value="bof" value="😐">Bof</label>
+                            <label><input type="submit" class="button-invisible" data-value="oui" value="🙂">Oui</label>
                         </div>
                     </fieldset>
                 </form>
@@ -224,9 +224,9 @@ class TestQuestionDirective:
                     <fieldset>
                         <legend>Avez-vous trouvé cette réponse utile&#8239;?</legend>
                         <div>
-                            <input type="submit" class="button-invisible" data-value="non" value="🙁  Non" />
-                            <input type="submit" class="button-invisible" data-value="bof" value="😐  Bof" />
-                            <input type="submit" class="button-invisible" data-value="oui" value="🙂  Oui" />
+                            <label><input type="submit" class="button-invisible" data-value="non" value="🙁">Non</label>
+                            <label><input type="submit" class="button-invisible" data-value="bof" value="😐">Bof</label>
+                            <label><input type="submit" class="button-invisible" data-value="oui" value="🙂">Oui</label>
                         </div>
                     </fieldset>
                 </form>
