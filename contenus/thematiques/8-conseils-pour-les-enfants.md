@@ -399,10 +399,27 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 ## Question pour les parents
 
-.. question:: Parent positif à la Covid : comment faire garder mes enfants qui sont cas contacts / comment m’isoler de mes enfants ?
+.. question:: Que doivent faire mes enfants si je suis positif à la Covid ?
     :level: 3
 
-    Voir notre page dédiée : [Je vis avec une personne positive à la Covid, que dois-je faire ?](/je-vis-avec-personne-covid-positive.html)
+    Si vous êtes positif à la Covid, alors vos enfants sont **cas contact** :
+
+    * s’ils sont **vaccinés**, ou qu’ils ont déjà eu la Covid il y a moins de 2 mois, alors ils n’ont pas besoin de s’isoler et peuvent continuer à aller à l’école ;
+
+    * s’ils ne sont **pas vaccinés**, et qu’ils n’ont pas déjà eu la Covid dans les 2 derniers mois, ils doivent **rester isolés** eux aussi, et ne **doivent pas aller à l’école**.
+
+    Dans tous les cas, ils devront faire un **test antigénique** dès que possible :
+
+    * si ce test est **positif**, ils devront s’isoler pendant 10 jours ;
+    * si ce test est **négatif** :
+        * ils devront faire un second test **17 jours** après le début de vos symptômes (ou votre test positif) avant de pouvoir retourner à l’école ;
+        * s’ils ont eux-mêmes des **symptômes** (fièvre, etc.) avant la date du second test, alors ils devront s’isoler et faire un test sans attendre.
+
+    <div class="voir-aussi">
+
+    * Consultez la conduite à suivre lorsque l’[on vit avec une personne positive](/je-vis-avec-personne-covid-positive.html) (test, isolement, conseils pratiques…)
+
+    </div>
 
 
 .. question:: Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?
