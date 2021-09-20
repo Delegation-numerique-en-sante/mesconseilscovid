@@ -50,6 +50,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?
     :level: 3
 
+    <div class="conseil conseil-jaune">
+
+    Si votre enfant est **vacciné**, voir [la question suivante](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine).
+
+    </div>
+
     #### 1. Isolement
 
     Si votre enfant est « **cas contact** » et n’est **pas vacciné(e)**, il devra rester **isolé** pendant **7 jours**, et poursuivre ses apprentissages **à distance**.
@@ -90,6 +96,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 .. question:: Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?
     :level: 3
+
+    <div class="conseil conseil-jaune">
+
+    Si votre enfant n’est **pas vacciné**, voir [la question précédente](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine).
+
+    </div>
 
     #### 1. Pas d’isolement
 
