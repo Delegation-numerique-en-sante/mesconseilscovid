@@ -143,7 +143,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Si un de mes enfants est cas contact, que se passe-t-il pour mes autres enfants ?
     :level: 3
 
-    Si un de vos enfants est identifié comme **cas contact**, alors ses frères ou ses sœurs **ne pourront pas aller à l’école** non plus, et vous devrez en informer l’établissement (*voir question suivante*).
+    Le « **cas contact d’un cas contact** » n’est pas un cas contact. Si l’un de vos enfants doit s’isoler, parce qu’il est identifié comme cas contact et qu’il n’est pas vacciné, alors ses frères ou ses sœurs peuvent continuer d’aller à l’école.
+
+    Par contre, si cet enfant est **testé positif** à la Covid, alors ses frères et sœurs deviendront à leur tour cas contacts. S’ils ne sont pas vaccinés, ils devront eux aussi s’isoler et ne devront pas aller à l’école.
 
     <div class="voir-aussi">
 
@@ -161,12 +163,11 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Vous ne devez pas envoyer votre enfant à l’école, au collège ou au lycée :
 
-    * en cas de **fièvre** (38 °C ou plus) ;
-    * en cas d’apparition de **symptômes** évoquant la Covid chez votre enfant ou un membre de son foyer ;
-    * si votre enfant ou un membre de son foyer a été **testé positif** ;
-    * si votre enfant ou un membre de son foyer a été identifié comme **contact à risque**.
+    * s’il a été **testé positif** à la Covid ;
+    * s’il a de la **fièvre** (38 °C ou plus) **ou des symptômes évoquant la Covid**, et ce même s’il est vacciné ou s’il a déjà eu la Covid il y a moins de 2 mois ;
+    * s’il a été identifié comme **cas contact**, ou qu’un membre de son foyer a été **testé positif**, et que votre enfant n’est **pas vacciné** et n’a pas déjà eu la Covid dans les 2 derniers mois.
 
-    Dans chacun de ces cas, vous êtes tenus d’en informer l’établissement **au plus tôt**, afin que les mesures appropriées soient rapidement mises en place.
+    Dans chacun de ces cas, vous devez **informer l’établissement au plus tôt**, afin que les mesures appropriées soient rapidement mises en place.
 
     <div class="voir-aussi">
 
