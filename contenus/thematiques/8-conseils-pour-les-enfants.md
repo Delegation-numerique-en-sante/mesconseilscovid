@@ -34,7 +34,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Dans **les écoles**, la règle de la **fermeture** de la classe pour une durée de 7 jours dès le premier cas positif continue de s’appliquer.
 
-    Dans **les collèges et les lycées**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves **« cas contact »** devront poursuivre leurs apprentissages à distance pendant **7 jours, sauf s’ils sont vaccinés** (*voir ci-dessous*).
+    Dans **les collèges et les lycées**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves **« cas contact »** devront poursuivre leurs apprentissages à distance pendant **7 jours**, sauf s’ils sont vaccinés ou s’ils ont déjà eu la Covid il y a moins de 2 mois (*voir ci-dessous*).
 
     <div class="voir-aussi">
 
@@ -52,13 +52,15 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="conseil conseil-jaune">
 
-    Si votre enfant est **vacciné**, voir [la question suivante](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-est-vaccine).
+    * Si votre enfant est **vacciné**, voir [la question suivante](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-est-vaccine).
+
+    * Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
 
     </div>
 
     #### 1. Isolement
 
-    Si votre enfant est « **cas contact** » d’une personne **hors du foyer** et qu’il n’est **pas vacciné(e)**, il devra rester **isolé** pendant **7 jours**. Il ne devra **pas aller à l’école** et suivra ses apprentissages à distance.
+    Si votre enfant est « **cas contact** » d’une personne **hors du foyer**, qu’il n’est **pas vacciné** et qu’il n’a pas déjà eu la Covid dans les 2 derniers mois, alors il devra rester **isolé** pendant **7 jours**. Il ne devra **pas aller à l’école** et suivra ses apprentissages à distance.
 
     #### 2. Test de dépistage
 
@@ -72,7 +74,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
         - votre enfant a contracté la Covid et il est **contagieux** ;
         - il doit rester en isolement au moins **10 jours** à partir de la date du test ;
         - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
-        - les autres membres du **foyer** sont **cas contacts** et devront :
+        - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
             * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
             * faire un **test antigénique** dès que possible.
 
@@ -99,7 +101,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="conseil conseil-jaune">
 
-    Si votre enfant n’est **pas vacciné**, voir [la question précédente](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-n-est-pas-vaccine).
+    * Si votre enfant n’est **pas vacciné**, voir [la question précédente](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-n-est-pas-vaccine).
+
+    * Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
 
     </div>
 
@@ -120,7 +124,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
         - votre enfant a contracté la Covid et il est **contagieux** ;
         - il doit rester en isolement au moins **10 jours** à partir de la date du test ;
         - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
-        - les autres membres du **foyer** sont **cas contacts** et devront :
+        - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
             * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
             * faire un **test antigénique** dès que possible.
 
@@ -145,7 +149,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Le « **cas contact d’un cas contact** » n’est pas un cas contact. Si l’un de vos enfants doit s’isoler, parce qu’il est identifié comme cas contact et qu’il n’est pas vacciné, alors ses frères ou ses sœurs peuvent continuer d’aller à l’école.
 
-    Par contre, si cet enfant est **testé positif** à la Covid, alors ses frères et sœurs deviendront à leur tour cas contacts. S’ils ne sont pas vaccinés, ils devront eux aussi s’isoler et ne devront pas aller à l’école.
+    Par contre, si cet enfant est **testé positif** à la Covid, alors ses frères et sœurs deviendront à leur tour **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois). S’ils ne sont **pas vaccinés**, ils devront eux aussi s’isoler et ne devront pas aller à l’école.
 
     <div class="voir-aussi">
 
@@ -384,13 +388,13 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Que doivent faire mes enfants si je suis positif à la Covid ?
     :level: 3
 
-    Si vous êtes positif à la Covid, alors vos enfants sont **cas contact** :
+    Si vous êtes positif à la Covid, alors vos enfants sont **cas contact** (sauf s’ils ont eux-mêmes déjà eu la Covid dans les 2 derniers mois) :
 
-    * s’ils sont **vaccinés**, ou qu’ils ont déjà eu la Covid il y a moins de 2 mois, alors ils n’ont pas besoin de s’isoler et peuvent continuer à aller à l’école ;
+    * s’ils sont **vaccinés**, alors ils n’ont pas besoin de s’isoler et peuvent continuer à aller à l’école ;
 
-    * s’ils ne sont **pas vaccinés**, et qu’ils n’ont pas déjà eu la Covid dans les 2 derniers mois, ils doivent **rester isolés** eux aussi, et ne **doivent pas aller à l’école**.
+    * s’ils ne sont **pas vaccinés**, ils doivent **rester isolés** eux aussi, et ne **doivent pas aller à l’école**.
 
-    Dans tous les cas, ils devront faire un **test antigénique** dès que possible :
+    Dans les deux cas, ils devront faire un **test antigénique** dès que possible :
 
     * si ce test est **positif**, ils devront s’isoler pendant 10 jours ;
     * si ce test est **négatif** :
