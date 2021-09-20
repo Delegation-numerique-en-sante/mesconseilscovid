@@ -47,18 +47,18 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?
+.. question:: Que se passe-t-il si mon enfant est cas contact d’une personne hors du foyer et qu’il n’est pas vacciné ?
     :level: 3
 
     <div class="conseil conseil-jaune">
 
-    Si votre enfant est **vacciné**, voir [la question suivante](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine).
+    Si votre enfant est **vacciné**, voir [la question suivante](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-est-vaccine).
 
     </div>
 
     #### 1. Isolement
 
-    Si votre enfant est « **cas contact** » et n’est **pas vacciné(e)**, il devra rester **isolé** pendant **7 jours**, et poursuivre ses apprentissages **à distance**.
+    Si votre enfant est « **cas contact** » d’une personne **hors du foyer** et qu’il n’est **pas vacciné(e)**, il devra rester **isolé** pendant **7 jours**. Il ne devra **pas aller à l’école** et suivra ses apprentissages à distance.
 
     #### 2. Test de dépistage
 
@@ -94,18 +94,18 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?
+.. question:: Que se passe-t-il si mon enfant est cas contact d’une personne hors du foyer et qu’il est vacciné ?
     :level: 3
 
     <div class="conseil conseil-jaune">
 
-    Si votre enfant n’est **pas vacciné**, voir [la question précédente](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine).
+    Si votre enfant n’est **pas vacciné**, voir [la question précédente](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-n-est-pas-vaccine).
 
     </div>
 
     #### 1. Pas d’isolement
 
-    Si votre enfant est « **cas contact** » et qu’il est **vacciné(e)**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école.
+    Si votre enfant est « **cas contact** » d’une personne **hors du foyer** et qu’il est **vacciné(e)**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école.
 
     #### 2. Test de dépistage
 
