@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-09-21
+
+* mise à jour des conseils pour les mineurs
+* amélioration des boutons de feedback sur les questions
+
 ## 2021-09-16
 
 * ajoute explicitement les EHPAD et USLD pour le rappel vaccinal
