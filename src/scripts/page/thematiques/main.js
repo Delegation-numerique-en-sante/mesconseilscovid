@@ -127,7 +127,7 @@ function feedbackPageEnCours(app) {
 
 function demandeRemarques(feedbackQuestionForm, choix, question, reponse) {
     const formulaire = document.createElement('form')
-    formulaire.classList.add('feedback-form', 'question-feedback')
+    formulaire.classList.add('feedback-form')
     formulaire.innerHTML = `
         <fieldset>
             <p role="status">Merci pour votre retour.</p>

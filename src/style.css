@@ -1165,7 +1165,8 @@ a.button-feedback-social-whatsapp {
     margin-left: 1rem;
 }
 
-.thematique #conseils-block form.question-feedback {
+.thematique #conseils-block form.question-feedback,
+.thematique #conseils-block form.feedback-form {
     color: #656565;
     background-color: #fff;
     display: flex;
@@ -1174,19 +1175,21 @@ a.button-feedback-social-whatsapp {
     flex-direction: column;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    padding: 0.5rem 0.5rem;
+    padding: 0.75rem 0.5rem 0 0.5rem !important;
     text-align: center;
     font-size: 95%;
 }
 @media only screen and (max-width: 320px) {
-    .thematique #conseils-block details form.question-feedback {
+    .thematique #conseils-block details form.question-feedback,
+    .thematique #conseils-block form.feedback-form {
         margin-left: -1.2rem;
         margin-right: -1.2rem;
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 .question-feedback legend {
-    margin: 0.75rem auto 0 auto;
+    margin: 0 auto;
 }
 .question-feedback div {
     display: flex;
@@ -1200,20 +1203,24 @@ a.button-feedback-social-whatsapp {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    font-size: 100%;
     margin: 0;
     padding: 0.5rem;
-    border: 3px solid transparent;
 }
 .question-feedback input[type='submit'] {
+    width: 44px;
+    height: 44px;
     font-size: 150%;
     margin: 0;
-    padding: 0 0.6rem;
+    padding: 0 4px;
+    border: 3px solid transparent;
 }
 .question-feedback label:active,
 .question-feedback label:hover {
-    color: #000091;
-    transform: translate(1px, 1px);
+    color: #252565;
+}
+.question-feedback label:active input[type='submit'],
+.question-feedback label:hover input[type='submit'] {
+    font-size: 175%;
 }
 
 @media only screen and (min-width: 680px) {
@@ -1582,16 +1589,18 @@ a.no-type::after {
     }
 }
 
-.thematique #conseils-block form.question-feedback {
+.thematique #conseils-block form.question-feedback,
+.thematique #conseils-block form.feedback-form {
     border: 2px solid #d5dbef;
     padding: 0 1rem;
 }
 @media only screen and (max-width: 320px) {
-    .thematique #conseils-block form.question-feedback {
+    .thematique #conseils-block form.question-feedback,
+    .thematique #conseils-block form.feedback-form {
         padding: 0;
     }
 }
-.thematique #conseils-block form:not(.question-feedback) {
+.thematique #conseils-block form:not(.question-feedback):not(.feedback-form) {
     background-color: #f8f8f8;
     padding: 1rem 2rem 0.1rem 2rem;
 }
