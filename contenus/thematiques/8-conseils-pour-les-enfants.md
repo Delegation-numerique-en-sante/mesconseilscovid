@@ -38,21 +38,21 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-est-vaccine)
+    - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine)
 
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-n-est-pas-vaccine)
+    - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
 
     - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
 
     </div>
 
 
-.. question:: Que se passe-t-il si mon enfant est cas contact (d’une personne hors du foyer) et qu’il est vacciné ?
+.. question:: Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?
     :level: 3
 
     <div class="conseil conseil-jaune">
 
-    * Si votre enfant n’est **pas vacciné**, voir [la question suivante](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-n-est-pas-vaccine).
+    * Si votre enfant n’est **pas vacciné**, voir [la question suivante](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine).
 
     * Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
 
@@ -60,7 +60,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 1. Pas d’isolement
 
-    Si votre enfant est « **cas contact** » d’une personne **hors du foyer** et qu’il est **vacciné(e)**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école.
+    Si votre enfant est « **cas contact** » et qu’il est **vacciné**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école.
 
     #### 2. Test de dépistage
 
@@ -95,12 +95,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: Que se passe-t-il si mon enfant est cas contact (d’une personne hors du foyer) et qu’il n’est pas vacciné ?
+.. question:: Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?
     :level: 3
 
     <div class="conseil conseil-jaune">
 
-    * Si votre enfant est **vacciné**, voir [la question précédente](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-est-vaccine).
+    * Si votre enfant est **vacciné**, voir [la question précédente](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine).
 
     * Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
 
@@ -108,7 +108,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 1. Isolement
 
-    Si votre enfant est « **cas contact** » d’une personne **hors du foyer**, qu’il n’est **pas vacciné** et qu’il n’a pas déjà eu la Covid dans les 2 derniers mois, alors il devra rester **isolé** pendant **7 jours**. Il ne devra **pas aller à l’école** et suivra ses apprentissages à distance.
+    Si votre enfant est « **cas contact** », qu’il n’est **pas vacciné** et qu’il n’a pas déjà eu la Covid dans les 2 derniers mois, alors il devra rester **isolé** pendant **7 jours**. Il ne devra **pas aller à l’école** et suivra ses apprentissages à distance.
 
     #### 2. Test de dépistage
 
@@ -155,9 +155,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     - [Dans quels cas mon enfant doit-il rester à la maison ?](#dans-quels-cas-mon-enfant-doit-il-rester-a-la-maison)
 
-    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+    - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine)
 
-    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
+    - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
 
     </div>
 
@@ -342,7 +342,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Quelles sont les précautions pour emmener mon enfant au parc de jeux collectifs (jeux, bacs à sable, points d’eau, etc.) ?
     :level: 3
 
-    Il est déconseillé d’emmener votre enfant dans les parcs et les aires de jeux collectifs s'il a été en contact avec une personne positive dans les deux semaines précédentes, ou s'il présente des symptômes de la Covid.
+    Il est déconseillé d’emmener votre enfant dans les parcs et les aires de jeux collectifs s’il a été en contact avec une personne positive dans les deux semaines précédentes, ou s’il présente des symptômes de la Covid.
 
     Dans les autres cas, **vous pouvez** emmener votre(vos) enfant(s) dans les parcs et les aires de jeux collectifs sous réserve des précautions suivantes :
 
@@ -485,7 +485,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * Il est possible d’**adapter** à l’amiable le **planning de garde** (en prévoyant par exemple un rattrapage) pour éviter de **propager la maladie** d’un foyer à l’autre, notamment dans les situations suivantes :
        - lorsque l’enfant doit **rester isolé** parce qu’il est **positif** ou **cas contact** (dans le cas où il n’est pas vacciné) ;
-       - lorsqu'une **personne du foyer** est **malade**.
+       - lorsqu’une **personne du foyer** est **malade**.
 
     * Soyez particulièrement **vigilants** lorsque le foyer comporte des **personnes vulnérables** (personnes âgées, immunodéprimées, non vaccinées, ou à risque de forme grave de Covid).
 
