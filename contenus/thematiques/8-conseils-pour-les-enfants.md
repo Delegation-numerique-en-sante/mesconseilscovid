@@ -17,91 +17,42 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Est-ce que mon enfant a besoin du pass sanitaire pour aller à l’école ?
     :level: 3
 
-    **Non.** Le pass sanitaire n’est **pas obligatoire** dans les établissements d’enseignement, écoles, collèges ou lycées.
+    **Non.** Le pass sanitaire n’est **pas obligatoire** pour accéder aux établissements d’enseignement, écoles, collèges ou lycées.
 
 
     <div class="voir-aussi">
 
-    - Notre rubrique « [La vaccination des mineurs de plus de 12 ans](#vaccination) » ci-dessous
+    - Notre rubrique sur la [vaccination des mineurs de plus de 12 ans](#vaccination) ci-dessous
 
-    - Notre page « [Pass sanitaire, QR code et voyages](/pass-sanitaire-qr-code-voyages.html) »
+    - Notre autre page sur le [pass sanitaire](/pass-sanitaire-qr-code-voyages.html)
 
     </div>
 
 
-.. question:: Que se passe-t-il si un élève est positif dans la classe de mon enfant ?
+.. question:: Que se passe-t-il si un élève est testé positif dans la classe de mon enfant ?
     :level: 3
 
-    Dans **les écoles**, la règle de la **fermeture** de la classe pour une durée de 7 jours dès le premier cas positif continue de s’appliquer.
+    Dans **les écoles**, la règle qui s’applique est la **fermeture de la classe** pour une durée de **7 jours** dès le premier cas positif confirmé.
 
-    Dans **les collèges et les lycées**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves **« cas contact »** devront poursuivre leurs apprentissages à distance pendant **7 jours**, sauf s’ils sont vaccinés ou s’ils ont déjà eu la Covid il y a moins de 2 mois (*voir ci-dessous*).
-
-    <div class="voir-aussi">
-
-    - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
-
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
-
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine)
-
-    </div>
-
-
-.. question:: Que se passe-t-il si mon enfant est cas contact d’une personne hors du foyer et qu’il n’est pas vacciné ?
-    :level: 3
-
-    <div class="conseil conseil-jaune">
-
-    * Si votre enfant est **vacciné**, voir [la question suivante](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-est-vaccine).
-
-    * Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
-
-    </div>
-
-    #### 1. Isolement
-
-    Si votre enfant est « **cas contact** » d’une personne **hors du foyer**, qu’il n’est **pas vacciné** et qu’il n’a pas déjà eu la Covid dans les 2 derniers mois, alors il devra rester **isolé** pendant **7 jours**. Il ne devra **pas aller à l’école** et suivra ses apprentissages à distance.
-
-    #### 2. Test de dépistage
-
-    Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
-
-    * Si le test est **négatif** :
-        * il devra quand même rester **isolé** pendant **7 jours** ;
-        * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
-
-    * Si le test est **positif** :
-        - votre enfant a contracté la Covid et il est **contagieux** ;
-        - il doit rester en isolement au moins **10 jours** à partir de la date du test ;
-        - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
-        - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
-            * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
-            * faire un **test antigénique** dès que possible.
-
-    #### 3. Test de contrôle
-
-    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) avant de retourner à l’école :
-
-    - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
-    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle (partage de foyer par exemple).
+    Dans **les collèges et les lycées**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves **« cas contact »** devront s’isoler, et donc poursuivre leurs apprentissages **à distance**, pendant une durée de **7 jours**, sauf s’ils sont **vaccinés** ou s’ils ont **déjà eu la Covid** il y a moins de 2 mois (*voir ci-dessous*).
 
     <div class="voir-aussi">
 
-    - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
+    - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-est-vaccine)
 
-    - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
+    - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-n-est-pas-vaccine)
 
-    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
 
     </div>
 
 
-.. question:: Que se passe-t-il si mon enfant est cas contact d’une personne hors du foyer et qu’il est vacciné ?
+.. question:: Que se passe-t-il si mon enfant est cas contact (d’une personne hors du foyer) et qu’il est vacciné ?
     :level: 3
 
     <div class="conseil conseil-jaune">
 
-    * Si votre enfant n’est **pas vacciné**, voir [la question précédente](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-n-est-pas-vaccine).
+    * Si votre enfant n’est **pas vacciné**, voir [la question suivante](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-n-est-pas-vaccine).
 
     * Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
 
@@ -137,9 +88,58 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
+    - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
+
+    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
+
+    </div>
+
+
+.. question:: Que se passe-t-il si mon enfant est cas contact (d’une personne hors du foyer) et qu’il n’est pas vacciné ?
+    :level: 3
+
+    <div class="conseil conseil-jaune">
+
+    * Si votre enfant est **vacciné**, voir [la question précédente](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-d-une-personne-hors-du-foyer-et-qu-il-est-vaccine).
+
+    * Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
+
+    </div>
+
+    #### 1. Isolement
+
+    Si votre enfant est « **cas contact** » d’une personne **hors du foyer**, qu’il n’est **pas vacciné** et qu’il n’a pas déjà eu la Covid dans les 2 derniers mois, alors il devra rester **isolé** pendant **7 jours**. Il ne devra **pas aller à l’école** et suivra ses apprentissages à distance.
+
+    #### 2. Test de dépistage
+
+    Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+
+    * Si le test est **négatif** :
+        * il devra quand même rester **isolé** pendant **7 jours** ;
+        * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
+
+    * Si le test est **positif** :
+        - votre enfant a contracté la Covid et il est **contagieux** ;
+        - il doit rester en isolement au moins **10 jours** à partir de la date du test ;
+        - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
+        - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
+            * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
+            * faire un **test antigénique** dès que possible.
+
+    #### 3. Test de contrôle
+
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) avant de retourner à l’école :
+
+    - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
+    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle (partage de foyer par exemple).
+
+    <div class="voir-aussi">
 
     - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
+
+    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+
+    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
 
     </div>
 
@@ -147,17 +147,17 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Si un de mes enfants est cas contact, que se passe-t-il pour mes autres enfants ?
     :level: 3
 
-    Le « **cas contact d’un cas contact** » n’est pas un cas contact. Si l’un de vos enfants doit s’isoler, parce qu’il est identifié comme cas contact et qu’il n’est pas vacciné, alors ses frères ou ses sœurs peuvent continuer d’aller à l’école.
+    Le « **cas contact d’un cas contact** » n’est pas un cas contact. Si l’un de vos enfants doit s’isoler, parce qu’il est identifié comme **cas contact** et qu’il n’est **pas vacciné** (et qu’il n’a pas déjà eu la Covid dans les 2 derniers mois), alors ses frères et sœurs peuvent continuer à **aller à l’école**.
 
-    Par contre, si cet enfant est **testé positif** à la Covid, alors ses frères et sœurs deviendront à leur tour **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois). S’ils ne sont **pas vaccinés**, ils devront eux aussi s’isoler et ne devront pas aller à l’école.
+    Par contre, si votre enfant est **testé positif** à la Covid, alors ses frères et sœurs deviendront à leur tour **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois). S’ils ne sont **pas vaccinés**, ils devront eux aussi s’isoler et ne devront pas aller à l’école.
 
     <div class="voir-aussi">
-
-    - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
 
     - [Dans quels cas mon enfant doit-il rester à la maison ?](#dans-quels-cas-mon-enfant-doit-il-rester-a-la-maison)
 
     - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+
+    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
 
     </div>
 
@@ -175,7 +175,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
+    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
 
     - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
 
@@ -185,13 +185,15 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Est-ce que mon enfant devra porter le masque ?
     :level: 3
 
-    Le **port du masque est obligatoire** dans les espaces clos. Il pourra être également requis en extérieur selon le niveau de sévérité de l’épidémie. Pour les élèves des écoles maternelles, le port du masque est proscrit.
+    Le **port du masque est obligatoire** dans les espaces clos. Il pourra être également requis en extérieur selon le niveau de sévérité de l’épidémie (*niveau 3 / orange ou plus*).
+
+    Pour les élèves des **écoles maternelles**, le port du masque est proscrit.
 
     **Les parents doivent fournir des masques à leurs enfants.** Le masque doit assurer une filtration supérieure à 90 % (masque « grand public » ou masque chirurgical par exemple). Le ministère dote chaque école, collège et lycée en masques « grand public » afin qu’ils puissent être fournis aux élèves qui n’en disposeraient pas.
 
     <div class="voir-aussi">
 
-    - Le détail du [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) sur le site du ministère de l’Éducation nationale
+    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
 
     </div>
 
@@ -209,6 +211,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Le jour de la vaccination, l’adolescent(e) **peut venir accompagné(e)** de l’un de ses parents (ou titulaires de l’autorité parentale), mais ce n’est pas obligatoire.
 
+    <div class="voir-aussi">
+
+    * [Quels justificatifs apporter le jour du rendez-vous de vaccination ?](#quels-justificatifs-apporter-le-jour-du-rendez-vous-de-vaccination)
+
+    </div>
+
 
 .. question:: Le mineur doit-il donner son accord ?
     :level: 3
@@ -225,7 +233,11 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * chez votre **médecin traitant**, en cabinet infirmier, ou en pharmacie avec un vaccin *Moderna*.
 
-    Trouvez les lieux de vaccination proches de chez vous sur le site [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou en appelant le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h).
+    <div class="voir-aussi">
+
+    * Trouvez les lieux de vaccination proches de chez vous sur le site [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou en appelant le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h).
+
+    </div>
 
 
 .. question:: Les mineurs reçoivent-ils le même nombre de doses que les adultes ?
@@ -235,6 +247,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * **une seule dose**, s’ils ont déjà été contaminés à la Covid (dans ce cas, il faut attendre **au minimum 2 mois** après le test positif avant de se faire vacciner) ;
     * **deux doses**, s’ils n’ont pas déjà été contaminés par la Covid.
+
+    <div class="voir-aussi">
+
+    * [Quels justificatifs apporter le jour du rendez-vous de vaccination ?](#quels-justificatifs-apporter-le-jour-du-rendez-vous-de-vaccination)
+
+    </div>
 
 
 .. question:: Quels justificatifs apporter le jour du rendez-vous de vaccination ?
@@ -248,11 +266,17 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Comment obtenir une attestation de vaccination (valable comme « pass sanitaire ») pour un mineur ?
     :level: 3
 
-    Suite à la vaccination, le professionnel de santé lui remettra une **attestation de vaccination** comportant un QR code.
+    Suite à la vaccination, le professionnel de santé lui remettra une **attestation de vaccination** (sur papier) comportant un QR code.
 
     Elle sera valable comme « pass sanitaire » en France **7 jours après la dernière dose** (dose unique en cas de contamination antérieure, ou 2<sup>e</sup> dose dans les autres cas). Pour les voyages à l’international, le délai est de 14 jours.
 
     Cette attestation pourra être importée dans l’application TousAntiCovid rubrique « carnet », sur le smartphone de l’adolescent(e) ou de ses parents.
+
+    <div class="voir-aussi">
+
+    * Pour plus d’informations, consultez notre page sur [les voyages et le pass sanitaire](/pass-sanitaire-qr-code-voyages.html).
+
+    </div>
 
 
 .. question:: La vaccination des mineurs sera-t-elle obligatoire pour obtenir le « pass sanitaire » ?
@@ -266,7 +290,11 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Par ailleurs, le ou la mineur(e) non-vacciné(e) accompagnant ses parents vaccinés lors d’un voyage bénéficiera des mêmes facilités qu’eux. Par exemple, un(e) mineur(e) non-vacciné(e) pourra accompagner ses parents vaccinés lors d’un voyage dans un [pays classé orange](https://www.gouvernement.fr/voyager-depuis-et-vers-l-etranger-mode-d-emploi) sans justifier d’un motif impérieux pour s’y rendre.
 
-    Pour plus d’informations, consultez notre page sur [les voyages et le pass sanitaire](/pass-sanitaire-qr-code-voyages.html).
+    <div class="voir-aussi">
+
+    * Pour plus d’informations, consultez notre page sur [les voyages et le pass sanitaire](/pass-sanitaire-qr-code-voyages.html).
+
+    </div>
 
 </div>
 
@@ -290,11 +318,15 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Le port du masque est recommandé **à partir de l’âge de 6 ans.**
 
-    Pour plus d’informations sur **le port du masque,** vous pouvez consulter :
+    Pour plus d’informations sur **le port du masque,** vous pouvez consulter les ressources ci-dessous :
 
-    * [l’infographie explicative](https://solidarites-sante.gouv.fr/IMG/pdf/bien_utiliser_son_masque-a3.pdf) du ministère des solidarités et de la santé.
-    * La vidéo [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw).
-    * La vidéo [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE).
+    <div class="voir-aussi">
+
+    * l’infographie « [Bien utiliser son masque](https://solidarites-sante.gouv.fr/IMG/pdf/bien_utiliser_son_masque-a3.pdf) » du ministère des solidarités et de la santé
+    * la vidéo [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
+    * la vidéo [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
+
+    </div>
 
 
 .. question:: À partir de quel âge peut-on mettre du gel hydro-alcoolique sur les mains d’un enfant ?
@@ -403,7 +435,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    * Consultez la conduite à suivre lorsque l’[on vit avec une personne positive](/je-vis-avec-personne-covid-positive.html) (test, isolement, conseils pratiques…)
+    * Consultez la conduite à suivre [lorsque l’on vit avec une personne positive](/je-vis-avec-personne-covid-positive.html) (test, isolement, conseils pratiques…)
 
     </div>
 
@@ -429,6 +461,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * une **attestation sur l’honneur** précisant que vous êtes le seul des 2 parents à bénéficier d’un arrêt de travail pour les jours concernés.
 
     C’est l’employeur qui procèdera alors à la déclaration d’**activité partielle** auprès de l’Assurance Maladie.
+
+    <div class="voir-aussi">
+
+    * Les [démarches et conditions pour obtenir un arrêt de travail](https://www.ameli.fr/somme/assure/covid-19/dispositifs-dindemnisation/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) sur le site ameli.fr
+
+    </div>
 
 
 .. question:: Les enfants peuvent-ils être gardés par des personnes extérieures au foyer, par exemple les grands-parents ?
