@@ -84,7 +84,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) :
 
     - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
-    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle (partage de foyer par exemple).
+    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle.
 
     <div class="voir-aussi">
 
@@ -131,7 +131,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) avant de retourner à l’école :
 
     - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
-    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle (partage de foyer par exemple).
+    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle.
 
     <div class="voir-aussi">
 
@@ -229,7 +229,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Les adolescent(e)s âgé(e)s de 12 ans et plus peuvent-être vacciné(e)s :
 
-    * dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech* ;
+    * dans un **centre de vaccination** et dans certains **établissements scolaires,** avec un vaccin *Pfizer-BioNTech* ;
 
     * chez votre **médecin traitant**, en cabinet infirmier, ou en pharmacie avec un vaccin *Moderna*.
 
@@ -342,7 +342,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Quelles sont les précautions pour emmener mon enfant au parc de jeux collectifs (jeux, bacs à sable, points d’eau, etc.) ?
     :level: 3
 
-    Il est déconseillé d’emmener votre(vos) enfant(s) dans les parcs et les aires de jeux collectifs si l’un des membres du foyer a été diagnostiqué positif à la Covid dans les deux semaines précédentes, ou si le(s) enfant(s) présentent des symptômes de la Covid.
+    Il est déconseillé d’emmener votre enfant dans les parcs et les aires de jeux collectifs s'il a été en contact avec une personne positive dans les deux semaines précédentes, ou s'il présente des symptômes de la Covid.
 
     Dans les autres cas, **vous pouvez** emmener votre(vos) enfant(s) dans les parcs et les aires de jeux collectifs sous réserve des précautions suivantes :
 
@@ -392,7 +392,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Les tests sont-ils dangereux pour les enfants ?
     :level: 3
 
-    Les tests ne présentent **aucun danger pour les enfants**. Les tests salivaires sont déployés dans les écoles pour le confort des enfants, car le prélèvement nasopharyngé peut parfois se révéler difficile ou impossible à réaliser chez les plus jeunes.
+    Les tests ne présentent **aucun danger pour les enfants**. Les tests salivaires sont proposés pour le confort des enfants, car le prélèvement nasal peut parfois être difficile à réaliser chez les plus jeunes.
 
 
 .. question::  La sérologie Covid fonctionne-t-elle également pour les enfants ?
@@ -485,7 +485,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * Il est possible d’**adapter** à l’amiable le **planning de garde** (en prévoyant par exemple un rattrapage) pour éviter de **propager la maladie** d’un foyer à l’autre, notamment dans les situations suivantes :
        - lorsque l’enfant doit **rester isolé** parce qu’il est **positif** ou **cas contact** (dans le cas où il n’est pas vacciné) ;
-       - lorsque l’une **personne du foyer** est **malade**.
+       - lorsqu'une **personne du foyer** est **malade**.
 
     * Soyez particulièrement **vigilants** lorsque le foyer comporte des **personnes vulnérables** (personnes âgées, immunodéprimées, non vaccinées, ou à risque de forme grave de Covid).
 
