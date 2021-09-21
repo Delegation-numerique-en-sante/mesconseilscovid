@@ -22,11 +22,10 @@ export function pageThematique(app) {
     feedbackPageEnCours(app)
 
     // À discuter : est-ce que l’on veut du générique ?
-    if (document.body.dataset.thematiqueName === 'tests-de-depistage') {
+    const thematiqueName = document.body.dataset.thematiqueName
+    if (thematiqueName === 'tests-de-depistage') {
         dynamiseLeChoixDuTest()
-    } else if (
-        document.body.dataset.thematiqueName === 'pass-sanitaire-qr-code-voyages'
-    ) {
+    } else if (thematiqueName === 'pass-sanitaire-qr-code-voyages') {
         dynamiseLeChoixDuPass()
     }
 
