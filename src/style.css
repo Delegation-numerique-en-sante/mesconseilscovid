@@ -488,7 +488,8 @@ footer .legals {
     padding: 60px 0 0 0;
 }
 #conseils-pediatrie-general summary {
-    padding-top: 200px;
+    padding-top: 0px;
+    background-size: 0;
 }
 @media only screen and (min-width: 450px) {
     #vaccins-form,
@@ -533,9 +534,6 @@ footer .legals {
     #conseils-pass-sanitaire summary {
         background-size: 10%;
     }
-    #conseils-pediatrie-general summary {
-        padding-top: 400px;
-    }
 }
 
 #nom-form {
@@ -569,10 +567,6 @@ footer .legals {
 #conseils-sante summary {
     background-image: url('illustrations/contact_medecin.svg');
 }
-#suivi-medecin-form,
-#sante-form {
-    background-image: url('illustrations/sante.svg');
-}
 #conseils-grossesse summary {
     background-image: url('illustrations/grossesse.svg');
 }
@@ -585,6 +579,11 @@ footer .legals {
 }
 #conseils-pediatrie-general summary {
     background-image: url('illustrations/pediatriegeneral.svg');
+}
+#suivi-medecin-form,
+#sante-form,
+#conseils-enfants-precautions summary {
+    background-image: url('illustrations/sante.svg');
 }
 #conseils-pediatrie-ecole summary {
     background-image: url('illustrations/pediatrieecole.svg');
@@ -601,7 +600,8 @@ footer .legals {
 #contact-a-risque-form {
     background-image: url('illustrations/contactarisque.svg');
 }
-#depistage-form {
+#depistage-form,
+#conseils-parents summary {
     background-image: url('illustrations/depistage.svg');
 }
 #vaccins-form,
@@ -1584,6 +1584,9 @@ a.no-type::after {
 .thematique #conseils-block h2:first-of-type {
     margin-top: 1rem;
 }
+.thematique #conseils-block summary h2 {
+    margin-top: 0;
+}
 .thematique #conseils-block h3 {
     padding-top: 1rem;
     margin-bottom: 1.2rem;
@@ -1700,6 +1703,22 @@ a.no-type::after {
 }
 .thematique .voir-aussi p:last-of-type {
     margin-bottom: 0;
+}
+.thematique span.tag {
+    background-color: #d5dbef;
+    color: #000;
+    border: 1px solid #d5dbef;
+    align-items: center;
+    border-radius: 0.25rem;
+    display: inline-flex;
+    font-size: 58%;
+    line-height: 1.5;
+    min-height: 1.5rem;
+    padding: 0 0.5rem;
+    white-space: nowrap;
+    margin-right: 0.25rem;
+    text-decoration: none;
+    font-weight: normal;
 }
 
 .cta {

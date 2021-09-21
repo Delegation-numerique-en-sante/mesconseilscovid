@@ -12,7 +12,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 </div>
 
-## Mesures sanitaires à l’école, au collège et au lycée
+<details id="conseils-pediatrie-ecole">
+
+<summary><h2>Mesures sanitaires à l’école, au collège et au lycée<br> <span class="tag">4 à 11 ans</span> <span class="tag">12 à 18 ans</span></h2></summary>
 
 .. question:: Est-ce que mon enfant a besoin du pass sanitaire pour aller à l’école ?
     :level: 3
@@ -197,10 +199,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     </div>
 
+</details>
 
-<div id="vaccination">
 
-## La vaccination des mineurs de plus de 12 ans
+<details id="conseils-vaccins">
+
+<summary><h2>La vaccination contre la Covid<br> <span class="tag">12 à 18 ans</span></h2></summary>
 
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
     :level: 3
@@ -296,10 +300,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     </div>
 
-</div>
+</details>
 
 
-## Enfants en bas âge
+<details id="conseils-enfants-bas-age">
+
+<summary><h2>Enfants en bas âge<br> <span class="tag">3 ans et moins</span></h2></summary>
 
 .. question:: Mon enfant peut-il aller à la crèche s’il est cas contact ?
     :level: 3
@@ -362,10 +368,20 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * en cas de contact rapproché avec un enfant présentant des **symptômes apparents** (rhume et/ou toux), faire un lavage des mains à l’eau et au savon ou sinon au gel hydro-alcoolique.
 
 
+.. question:: Les enfants peuvent-ils être gardés par des personnes extérieures au foyer, par exemple les grands-parents ?
+    :level: 3
 
-<div id="conseils-pediatrie-medical">
+    **Oui,** si ces personnes et l’enfant ne sont pas malades, et en appliquant les **mesures de prévention** suivantes :
 
-## Questions médicales et dépistage
+    * respecter les **gestes barrières** : se laver régulièrement les mains à l’eau et au savon *avant* de s’occuper de l’enfant, mais aussi *après* ;
+    * porter le **masque** lors d’un contact rapproché (enfant dans les bras…).
+
+</details>
+
+
+<details id="conseils-pediatrie-medical">
+
+<summary><h2>Questions médicales et dépistage<br> <span class="tag">3 ans et moins</span> <span class="tag">4 à 11 ans</span> <span class="tag">12 à 18 ans</span></h2></summary>
 
 .. question:: Que faire si mon enfant est malade ?
     :level: 3
@@ -422,10 +438,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Si vous emmenez un **doudou** ou un objet familier, veillez à ce qu’il n’entre pas en contact avec des surfaces qui peuvent être contaminées. Sinon, lavez-le ou laissez le en quarantaine durant 7 jours.
 
-</div>
+</details>
 
 
-## Organisation familiale et garde des enfants
+<details id="conseils-parents">
+
+<summary><h2>Organisation familiale et garde des enfants<br> <span class="tag">3 ans et moins</span> <span class="tag">4 à 11 ans</span> <span class="tag">12 à 18 ans</span></h2></summary>
 
 .. question:: Que doivent faire mes enfants si je suis positif à la Covid ?
     :level: 3
@@ -496,6 +514,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * Soyez particulièrement **vigilants** lorsque le foyer comporte des **personnes vulnérables** (personnes âgées, immunodéprimées, non vaccinées, ou à risque de forme grave de Covid).
 
+</details>
+
+</div>
 
 ## Vous avez encore des questions ?
 
