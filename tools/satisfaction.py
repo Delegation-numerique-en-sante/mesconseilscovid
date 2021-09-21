@@ -159,18 +159,38 @@ def sortie_format_html(titre, sous_titre, periodes, output_path):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--host", default="stats.mesconseilscovid.fr")
-    parser.add_argument("--site-id", default="mesconseilscovid.sante.gouv.fr")
-    parser.add_argument("--token", default=None)
-    parser.add_argument("--date", default="hier", help="YYYY-MM-DD (par défaut: hier)")
+    parser.add_argument(
+        "--host",
+        default="stats.mesconseilscovid.fr",
+        help="serveur Plausible (par défaut: stats.mesconseilscovid.fr)",
+    )
+    parser.add_argument(
+        "--site-id",
+        default="mesconseilscovid.sante.gouv.fr",
+        help="site (par défaut: mesconseilscovid.sante.gouv.fr)",
+    )
+    parser.add_argument(
+        "--token", default=None, help="jeton d’authentification Plausible"
+    )
+    parser.add_argument(
+        "--date",
+        default="hier",
+        help="date à regarder, au format YYYY-MM-DD (par défaut: hier)",
+    )
     parser.add_argument(
         "--jours-precedents",
         metavar="N",
         type=int,
         default=1,
-        help="comparer avec la moyenne des N jours précédents",
+        help="comparer avec la moyenne des N jours précédents (par défaut: 1)",
     )
-    parser.add_argument("--reponses-min", metavar="N", type=int, default=10)
+    parser.add_argument(
+        "--reponses-min",
+        metavar="N",
+        type=int,
+        default=10,
+        help="nombre minimum de réponses (par défaut: 10)",
+    )
     parser.add_argument(
         "--trier-par",
         default="popularité",
@@ -181,11 +201,13 @@ def parse_args():
             "satisfaits",  # nombre de personnes satisfaites
             "insatisfaits",  # nombre de personnes insatisfaites
         ],
+        help="critère de tri (par défaut: popularité)",
     )
     parser.add_argument(
         "--format",
         default="html",
         choices=["html", "tsv"],
+        help="format de sortie (par défaut: html)",
     )
     return parser.parse_args()
 
