@@ -10,6 +10,37 @@
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
+.. question:: Quels sont les symptômes de la Covid ?
+
+    <div class="conseil conseil-jaune">
+
+    Vous pouvez être infecté, mais ne présenter **aucun symptôme**. Cependant, vous êtes quand même **contagieux** et vous risquez de **transmettre le virus** à d’autres personnes.
+
+    </div>
+
+    Les symptômes de la Covid **peuvent varier** d’une personne à l’autre, notamment en fonction de l’âge.
+
+    Les signes **les plus fréquents** sont les suivants :
+
+    - de la **fièvre** (38°C ou plus), une sensation de fièvre (frissons…) ;
+    - l’apparition d’une **toux** ou l’aggravation d’une toux existante ;
+    - une **fatigue** inhabituelle.
+
+    Les signes suivants sont **moins fréquents** :
+
+    - des **maux de tête** ;
+    - des **maux de gorge** ;
+    - des **douleurs musculaires** ou **courbatures** ;
+    - des **maux de ventre**, de la **diarrhée** ou des **vomissements** ;
+    - une perte de l’**odorat**  et du **goût** (sans que le nez ne soit bouché).
+
+    Dans les formes **les plus graves**, on peut observer :
+    - un **essoufflement** ou des **difficultés à respirer** ;
+    - une sensation d’**oppression** ou une douleur au niveau de la **poitrine**.
+
+    Pour une **personne âgée**, l’entourage peut constater une altération brutale de l’état général, l’apparition ou l’aggravation des capacités mentales, un état de confusion, des chutes répétées, une aggravation rapide d’une maladie déjà connue.
+
+
 .. question:: Je suis vacciné(e), est-ce que je peux être positif ou positive à la Covid ?
 
     **Oui.** Même quand on est vacciné(e), **il reste un risque d’attraper la Covid** si on est exposé au virus (même si la maladie sera le plus souvent moins grave), et de le transmettre par la suite (même si votre contagiosité sera elle aussi diminuée).
