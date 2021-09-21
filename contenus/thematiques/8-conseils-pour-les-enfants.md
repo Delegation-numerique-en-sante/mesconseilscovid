@@ -12,7 +12,41 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 </div>
 
-## Mesures sanitaires à l’école, au collège et au lycée
+<form id="filtres-enfants-form">
+    <fieldset>
+        <legend>
+            Obtenez une information plus personnalisée en sélectionnant la tranche d’âge de votre ou vos enfant(s) :
+        </legend>
+        <div class="checkboxes">
+            <div>
+                <input id="trois-ans-moins" type="checkbox" name="trois-ans-moins">
+                <label for="trois-ans-moins">
+                    <span>3 ans et moins</span>
+                </label>
+            </div>
+            <div>
+                <input id="quatre-onze-ans" type="checkbox" name="quatre-onze-ans">
+                <label for="quatre-onze-ans">
+                    <span>4 à 11 ans</span>
+                </label>
+            </div>
+            <div>
+                <input id="douze-dix-huit-ans" type="checkbox" name="douze-dix-huit-ans">
+                <label for="douze-dix-huit-ans">
+                    <span>12 à 18 ans</span>
+                </label>
+            </div>
+        </div>
+    </fieldset>
+    <div class="form-controls">
+        <input type="submit" class="button" value="Filtrer">
+    </div>
+</form>
+
+
+<div data-filter="true" data-filters="quatre-onze-ans douze-dix-huit-ans">
+
+## Mesures sanitaires à l’école, au collège et au lycée<br> <span class="tag">4 à 11 ans</span> <span class="tag">12 à 18 ans</span> <a class="filters" href="#filtres-enfants-form">Personnaliser</a>
 
 .. question:: Est-ce que mon enfant a besoin du pass sanitaire pour aller à l’école ?
     :level: 3
@@ -197,10 +231,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     </div>
 
+</div>
 
-<div id="vaccination">
 
-## La vaccination des mineurs de plus de 12 ans
+<div id="vaccination" data-filter="true" data-filters="douze-dix-huit-ans">
+
+## La vaccination contre la Covid<br> <span class="tag">12 à 18 ans</span> <a class="filters" href="#filtres-enfants-form">Personnaliser</a>
 
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
     :level: 3
@@ -299,7 +335,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 </div>
 
 
-## Enfants en bas âge
+<div data-filter="true" data-filters="trois-ans-moins">
+
+## Enfants en bas âge<br> <span class="tag">3 ans et moins</span> <a class="filters" href="#filtres-enfants-form">Personnaliser</a>
 
 .. question:: Mon enfant peut-il aller à la crèche s’il est cas contact ?
     :level: 3
@@ -351,11 +389,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * **éviter de partager les jouets** individuels entre les enfants ;
     * en cas de contact rapproché avec un enfant présentant des **symptômes apparents** (rhume et/ou toux), faire un lavage des mains à l’eau et au savon ou sinon au gel hydro-alcoolique.
 
+</div>
 
 
-<div id="conseils-pediatrie-medical">
+<div id="conseils-pediatrie-medical" data-filter="true" data-filters="trois-ans-moins quatre-onze-ans douze-dix-huit-ans">
 
-## Questions médicales et dépistage
+## Questions médicales et dépistage<br> <span class="tag">3 ans et moins</span> <span class="tag">4 à 11 ans</span> <span class="tag">12 à 18 ans</span> <a class="filters" href="#filtres-enfants-form">Personnaliser</a>
 
 .. question:: Que faire si mon enfant est malade ?
     :level: 3
@@ -415,7 +454,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 </div>
 
 
-## Organisation familiale et garde des enfants
+<div id="conseils-organisation-familiale" data-filter="true" data-filters="trois-ans-moins quatre-onze-ans douze-dix-huit-ans">
+
+## Organisation familiale et garde des enfants<br> <span class="tag">3 ans et moins</span> <span class="tag">4 à 11 ans</span> <span class="tag">12 à 18 ans</span> <a class="filters" href="#filtres-enfants-form">Personnaliser</a>
 
 .. question:: Que doivent faire mes enfants si je suis positif à la Covid ?
     :level: 3
@@ -488,6 +529,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
        - lorsqu’une **personne du foyer** est **malade**.
 
     * Soyez particulièrement **vigilants** lorsque le foyer comporte des **personnes vulnérables** (personnes âgées, immunodéprimées, non vaccinées, ou à risque de forme grave de Covid).
+
+</div>
 
 
 ## Vous avez encore des questions ?

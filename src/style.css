@@ -1691,6 +1691,38 @@ a.no-type::after {
 .thematique .voir-aussi p:last-of-type {
     margin-bottom: 0;
 }
+.thematique span.tag {
+    background-color: #d5dbef;
+    color: #000;
+    border: 1px solid #d5dbef;
+    align-items: center;
+    border-radius: 0.25rem;
+    display: inline-flex;
+    font-size: 58%;
+    line-height: 1.5;
+    min-height: 1.5rem;
+    padding: 0 0.5rem;
+    white-space: nowrap;
+    margin-right: 0.25rem;
+    text-decoration: none;
+    font-weight: normal;
+}
+.thematique h2 a.filters {
+    font-size: 58%;
+}
+
+.thematique #filtres-enfants-form .checkboxes {
+    display: flex;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 680px) {
+    .thematique #filtres-enfants-form .checkboxes {
+        flex-direction: column;
+    }
+}
+.thematique #filtres-enfants-form .checkboxes div {
+    max-width: 10rem;
+}
 
 .cta {
     text-align: center;
