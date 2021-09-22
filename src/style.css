@@ -1593,6 +1593,12 @@ a.no-type::after {
 }
 .thematique #conseils-block summary h2 {
     margin-top: 0;
+    width: 100%;
+}
+.thematique .conseils details > summary svg {
+    float: right;
+    height: 30px;
+    width: 30px;
 }
 .thematique #conseils-block h3 {
     padding-top: 1rem;
