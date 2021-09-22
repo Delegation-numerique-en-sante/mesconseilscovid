@@ -203,6 +203,9 @@ legend h1 {
     margin-bottom: 1rem;
 }
 @media only screen and (max-width: 680px) {
+    .block {
+        padding: 0.5rem;
+    }
     .block h2 {
         font-size: 150%;
     }
@@ -1186,13 +1189,12 @@ a.button-feedback-social-whatsapp {
     text-align: center;
     font-size: 95%;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 350px) {
     .thematique #conseils-block details form.question-feedback,
     .thematique #conseils-block form.feedback-form {
-        margin-left: -1.2rem;
-        margin-right: -1.2rem;
         padding-left: 0;
         padding-right: 0;
+        font-size: 85%;
     }
 }
 .question-feedback legend {
@@ -1435,6 +1437,11 @@ a.no-type::after {
     padding: 1rem 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+@media only screen and (max-width: 680px) {
+    .conseils details {
+        padding: 1rem;
+    }
 }
 .conseils details > summary {
     outline: 0;
