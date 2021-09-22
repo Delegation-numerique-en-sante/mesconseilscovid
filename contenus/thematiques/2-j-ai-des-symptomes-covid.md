@@ -14,11 +14,11 @@
 
     <div class="conseil conseil-jaune">
 
-    Vous pouvez être infecté, mais ne présenter **aucun symptôme**. Cependant, vous êtes quand même **contagieux** et vous risquez de **transmettre le virus** à d’autres personnes.
+    Vous pouvez être contaminé, mais ne présenter **aucun symptôme**, notamment les premiers jours (période d’incubation). Même sans symptômes, vous pouvez être **contagieux** et risquez de **transmettre le virus** à d’autres personnes.
 
     </div>
 
-    Les symptômes de la Covid **peuvent varier** d’une personne à l’autre, notamment en fonction de l’âge.
+    Les symptômes de la Covid **peuvent être différents** d’une personne à l’autre, notamment en fonction de leur âge.
 
     Les signes **les plus fréquents** sont les suivants :
 
