@@ -2,7 +2,7 @@ appdirs==1.4.4
 attrs==21.2.0
 certifi==2021.5.30
 chardet==4.0.0
-distlib==0.3.2
+distlib==0.3.3
 filelock==3.0.12
 h11==0.12.0
 httpcore==0.13.7
