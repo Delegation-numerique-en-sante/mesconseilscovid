@@ -14,7 +14,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 <details id="conseils-pediatrie-ecole">
 
-<summary><h2>Mesures sanitaires à l’école, au collège et au lycée<br> <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span></h2></summary>
+<summary>
+    <h2>
+        Mesures sanitaires à l’école, au collège et au lycée
+        <br>
+        <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+    </h2>
+</summary>
 
 .. question:: Est-ce que mon enfant a besoin du pass sanitaire pour aller à l’école ?
     :level: 3
@@ -204,7 +211,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 <details id="conseils-vaccins">
 
-<summary><h2>La vaccination contre la Covid<br> <span class="tag tag-12-18">12 à 18 ans</span></h2></summary>
+<summary>
+    <h2>
+        La vaccination contre la Covid
+        <br>
+        <span class="tag tag-12-18">12 à 18 ans</span>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+    </h2>
+</summary>
 
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
     :level: 3
@@ -305,7 +319,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 <details id="conseils-pediatrie-medical">
 
-<summary><h2>Questions médicales et dépistage<br> <span class="tag tag-0-3">3 ans et moins</span> <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span></h2></summary>
+<summary>
+    <h2>
+        Questions médicales et dépistage
+        <br>
+        <span class="tag tag-0-3">3 ans et moins</span> <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+    </h2>
+</summary>
 
 .. question:: Que faire si mon enfant est malade ?
     :level: 3
@@ -367,7 +388,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 <details id="conseils-parents">
 
-<summary><h2>Organisation familiale et garde des enfants<br> <span class="tag tag-0-3">3 ans et moins</span> <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span></h2></summary>
+<summary>
+    <h2>
+        Organisation familiale et garde des enfants
+        <br>
+        <span class="tag tag-0-3">3 ans et moins</span> <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+    </h2>
+</summary>
 
 .. question:: Que doivent faire mes enfants si je suis positif à la Covid ?
     :level: 3
@@ -443,7 +471,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 <details id="conseils-enfants-bas-age">
 
-<summary><h2>Enfants en bas âge<br> <span class="tag tag-0-3">3 ans et moins</span></h2></summary>
+<summary>
+    <h2>
+        Enfants en bas âge
+        <br>
+        <span class="tag tag-0-3">3 ans et moins</span>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+    </h2>
+</summary>
 
 .. question:: Mon enfant peut-il aller à la crèche s’il est cas contact ?
     :level: 3
