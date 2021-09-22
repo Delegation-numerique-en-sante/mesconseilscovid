@@ -303,82 +303,6 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 </details>
 
 
-<details id="conseils-enfants-bas-age">
-
-<summary><h2>Enfants en bas âge<br> <span class="tag">3 ans et moins</span></h2></summary>
-
-.. question:: Mon enfant peut-il aller à la crèche s’il est cas contact ?
-    :level: 3
-
-    **Non**, les enfants ne doivent **pas aller à la crèche** s’ils sont cas contact. Si nécessaire, vous pouvez obtenir un **arrêt de travail** pour le garder à la maison.
-
-    <div class="voir-aussi">
-
-    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
-
-    </div>
-
-
-.. question:: Puis-je continuer à allaiter mon enfant si je ressens des symptômes ou si je suis positive à la Covid ?
-    :level: 3
-
-    **Oui.** Le virus ne se transmet pas par le lait maternel, vous pouvez donc continuer à allaiter même en étant positive à la Covid. Cependant, il faut respecter certaines **précautions** pour ne pas transmettre le virus à votre enfant autrement :
-    * **lavez-vous les mains** avec du savon ou du gel hydroalcoolique avant de toucher le nourrisson ;
-    * portez un **masque** dès que vous êtes en présence de votre nourrisson et particulièrement pendant l’allaitement ;
-    * **désinfectez** systématiquement les surfaces et objets que vous avez touché et qui pourraient entrer en contact avec le nourrisson (table à langer, tétine…) ;
-    * utilisez des mouchoirs à usage unique.
-
-
-.. question:: À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
-    :level: 3
-
-    Le port du masque est recommandé **à partir de l’âge de 6 ans.**
-
-    Pour plus d’informations sur **le port du masque,** vous pouvez consulter les ressources ci-dessous :
-
-    <div class="voir-aussi">
-
-    * l’infographie « [Bien utiliser son masque](https://solidarites-sante.gouv.fr/IMG/pdf/bien_utiliser_son_masque-a3.pdf) » du ministère des solidarités et de la santé
-    * la vidéo [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
-    * la vidéo [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
-
-    </div>
-
-
-.. question:: À partir de quel âge peut-on mettre du gel hydro-alcoolique sur les mains d’un enfant ?
-    :level: 3
-
-    Il peut être utilisé **à tout âge,** cependant il est préférable de donner **la priorité au lavage des mains** à l’eau et au savon.
-
-    Il doit être appliqué sur peau saine en se frottant les mains jusqu’à ce qu’elles soient sèches.
-
-    Attention à ne pas laisser le produit à portée des jeunes enfants car il existe un risque de projection dans les yeux et d’ingestion accidentelle.
-
-
-.. question:: Quelles sont les précautions pour emmener mon enfant au parc de jeux collectifs (jeux, bacs à sable, points d’eau, etc.) ?
-    :level: 3
-
-    Il est déconseillé d’emmener votre enfant dans les parcs et les aires de jeux collectifs s’il a été en contact avec une personne positive dans les deux semaines précédentes, ou s’il présente des symptômes de la Covid.
-
-    Dans les autres cas, **vous pouvez** emmener votre(vos) enfant(s) dans les parcs et les aires de jeux collectifs sous réserve des précautions suivantes :
-
-    * lui **laver les mains** à l’eau et au savon avant de quitter le domicile et en rentrant ;
-    * respecter dans la mesure du possible une **distanciation physique** avec les autres personnes ;
-    * **éviter de partager les jouets** individuels entre les enfants ;
-    * en cas de contact rapproché avec un enfant présentant des **symptômes apparents** (rhume et/ou toux), faire un lavage des mains à l’eau et au savon ou sinon au gel hydro-alcoolique.
-
-
-.. question:: Les enfants peuvent-ils être gardés par des personnes extérieures au foyer, par exemple les grands-parents ?
-    :level: 3
-
-    **Oui,** si ces personnes et l’enfant ne sont pas malades, et en appliquant les **mesures de prévention** suivantes :
-
-    * respecter les **gestes barrières** : se laver régulièrement les mains à l’eau et au savon *avant* de s’occuper de l’enfant, mais aussi *après* ;
-    * porter le **masque** lors d’un contact rapproché (enfant dans les bras…).
-
-</details>
-
-
 <details id="conseils-pediatrie-medical">
 
 <summary><h2>Questions médicales et dépistage<br> <span class="tag">3 ans et moins</span> <span class="tag">4 à 11 ans</span> <span class="tag">12 à 18 ans</span></h2></summary>
@@ -515,6 +439,83 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * Soyez particulièrement **vigilants** lorsque le foyer comporte des **personnes vulnérables** (personnes âgées, immunodéprimées, non vaccinées, ou à risque de forme grave de Covid).
 
 </details>
+
+
+<details id="conseils-enfants-bas-age">
+
+<summary><h2>Enfants en bas âge<br> <span class="tag">3 ans et moins</span></h2></summary>
+
+.. question:: Mon enfant peut-il aller à la crèche s’il est cas contact ?
+    :level: 3
+
+    **Non**, les enfants ne doivent **pas aller à la crèche** s’ils sont cas contact. Si nécessaire, vous pouvez obtenir un **arrêt de travail** pour le garder à la maison.
+
+    <div class="voir-aussi">
+
+    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+
+    </div>
+
+
+.. question:: Puis-je continuer à allaiter mon enfant si je ressens des symptômes ou si je suis positive à la Covid ?
+    :level: 3
+
+    **Oui.** Le virus ne se transmet pas par le lait maternel, vous pouvez donc continuer à allaiter même en étant positive à la Covid. Cependant, il faut respecter certaines **précautions** pour ne pas transmettre le virus à votre enfant autrement :
+    * **lavez-vous les mains** avec du savon ou du gel hydroalcoolique avant de toucher le nourrisson ;
+    * portez un **masque** dès que vous êtes en présence de votre nourrisson et particulièrement pendant l’allaitement ;
+    * **désinfectez** systématiquement les surfaces et objets que vous avez touché et qui pourraient entrer en contact avec le nourrisson (table à langer, tétine…) ;
+    * utilisez des mouchoirs à usage unique.
+
+
+.. question:: À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
+    :level: 3
+
+    Le port du masque est recommandé **à partir de l’âge de 6 ans.**
+
+    Pour plus d’informations sur **le port du masque,** vous pouvez consulter les ressources ci-dessous :
+
+    <div class="voir-aussi">
+
+    * l’infographie « [Bien utiliser son masque](https://solidarites-sante.gouv.fr/IMG/pdf/bien_utiliser_son_masque-a3.pdf) » du ministère des solidarités et de la santé
+    * la vidéo [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
+    * la vidéo [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
+
+    </div>
+
+
+.. question:: À partir de quel âge peut-on mettre du gel hydro-alcoolique sur les mains d’un enfant ?
+    :level: 3
+
+    Il peut être utilisé **à tout âge,** cependant il est préférable de donner **la priorité au lavage des mains** à l’eau et au savon.
+
+    Il doit être appliqué sur peau saine en se frottant les mains jusqu’à ce qu’elles soient sèches.
+
+    Attention à ne pas laisser le produit à portée des jeunes enfants car il existe un risque de projection dans les yeux et d’ingestion accidentelle.
+
+
+.. question:: Quelles sont les précautions pour emmener mon enfant au parc de jeux collectifs (jeux, bacs à sable, points d’eau, etc.) ?
+    :level: 3
+
+    Il est déconseillé d’emmener votre enfant dans les parcs et les aires de jeux collectifs s’il a été en contact avec une personne positive dans les deux semaines précédentes, ou s’il présente des symptômes de la Covid.
+
+    Dans les autres cas, **vous pouvez** emmener votre(vos) enfant(s) dans les parcs et les aires de jeux collectifs sous réserve des précautions suivantes :
+
+    * lui **laver les mains** à l’eau et au savon avant de quitter le domicile et en rentrant ;
+    * respecter dans la mesure du possible une **distanciation physique** avec les autres personnes ;
+    * **éviter de partager les jouets** individuels entre les enfants ;
+    * en cas de contact rapproché avec un enfant présentant des **symptômes apparents** (rhume et/ou toux), faire un lavage des mains à l’eau et au savon ou sinon au gel hydro-alcoolique.
+
+
+.. question:: Les enfants peuvent-ils être gardés par des personnes extérieures au foyer, par exemple les grands-parents ?
+    :level: 3
+
+    **Oui,** si ces personnes et l’enfant ne sont pas malades, et en appliquant les **mesures de prévention** suivantes :
+
+    * respecter les **gestes barrières** : se laver régulièrement les mains à l’eau et au savon *avant* de s’occuper de l’enfant, mais aussi *après* ;
+    * porter le **masque** lors d’un contact rapproché (enfant dans les bras…).
+
+</details>
+
 
 </div>
 
