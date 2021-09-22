@@ -18,6 +18,7 @@ export function pageThematique(app) {
         }
     )
     ouvreDetailsSiFragment()
+    scrolleAuSummary()
     partagePageEnCours()
     feedbackPageEnCours(app)
 
@@ -60,6 +61,26 @@ function ouvreDetailsSiFragment() {
             elem = elem.parentElement
         }
     }
+}
+
+function getAnimationBehavior() {
+    const isReduced =
+        window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+        window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true
+    return isReduced ? 'auto' : 'smooth'
+}
+
+function scrolleAuSummary() {
+    const summaries = document.querySelectorAll('summary')
+    Array.from(summaries).forEach((summary) => {
+        summary.addEventListener('click', (event) => {
+            // Even with an event, we need to wait for the next few
+            // ticks to be able to scroll to the collapsed element.
+            setTimeout(() => {
+                event.target.scrollIntoView({ behavior: getAnimationBehavior() })
+            }, 100)
+        })
+    })
 }
 
 function boutonBasculeVersMonProfil(lienVersProfil, app) {
