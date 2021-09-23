@@ -15,7 +15,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="J’ai des symptômes ou mon test est positif"'
+                'a.button >> text="Je réponds pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -117,7 +117,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="J’ai des symptômes ou mon test est positif"'
+                'a.button >> text="Je réponds pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -163,7 +163,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="J’ai des symptômes ou mon test est positif"'
+                'a.button >> text="Je réponds pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -209,7 +209,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="J’ai des symptômes ou mon test est positif"'
+                'a.button >> text="Je réponds pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -244,7 +244,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="J’ai des symptômes ou mon test est positif"'
+                'a.button >> text="Je réponds pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -281,7 +281,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="J’ai des symptômes ou mon test est positif"'
+                'a.button >> text="Je réponds pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -328,7 +328,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="J’ai des symptômes ou mon test est positif"'
+                'a.button >> text="Je réponds pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -376,7 +376,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="J’ai des symptômes ou mon test est positif"'
+                'a.button >> text="Je réponds pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -424,7 +424,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="J’ai des symptômes ou mon test est positif"'
+                'a.button >> text="Je réponds pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -474,7 +474,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="J’ai des symptômes ou mon test est positif"'
+                'a.button >> text="Je réponds pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -522,7 +522,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="J’ai des symptômes ou mon test est positif"'
+                'a.button >> text="Je réponds pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -558,7 +558,7 @@ describe('Parcours', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="J’ai des symptômes ou mon test est positif"'
+                'a.button >> text="Je réponds pour moi"'
             )
             await Promise.all([
                 bouton.click(),
