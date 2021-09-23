@@ -2,13 +2,19 @@
 
 ### Quelles sont les obligations de mon employeur face à l'épidémie de Covid-19 ? 
 
-Votre employeur doit limiter le risque de transmission du virus parmis les employés, il doit par exemple :
-* mettre en place des mesures de prévention : nettoyage régulier des surfaces; jauge...
-* informer les employés des mesures sanitaires obligatoire et les faire respecter (port du masque, distanciation physique,pass sanitaire...). 
+Votre employeur doit **limiter** autant que possible les risques d'exposition de ses employés au virus. Par exemple, il doit :
+* faire **respecter** les mesures recommandées par les autorités sanitaires, comme les **gestes barrières** (port du masque, distanciation physique...) et fournir des masques, à sa charge;
+* mettre en place des **mesures de prévention,** comme le nettoyage régulier des surfaces ou une jauge, en **concertation** avec les **représentants du personnel** ou la **médecine du travail.**
+* mettre à disposition des **moyens de protection,** comme le savon, le gel hydro-alcoolique les plexi-glass...
+* empêcher l'épidémie de se propager en, isolant une personne symptômatique et encourageant ceux qui ont eu des contacts à risques avec une personne positive ou symptômatique à s'isoler et se faire tester.
+
+Consultez le guide : [Covid-19 : conseils et bonnes pratiques pour l'employeur](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_employeur_30_juin_vok.pdf)
+Lire aussi notre réponse ci-dessous : [Quels aménagements peuvent être mis en place pour limiter la transmission du virus sur le lieu de travail ?](#Quels-aménagements-peuvent-être-mis-en-place-pour-limiter-la-transmission-du-virus-sur-le-lieu-de-travail-?)
 
 ### En tant que salarié(e), qu'est-ce que je dois faire pour limiter la transmission du virus au travail ? 
 
-Une [étude de l'institut Pasteur](https://hal-pasteur.archives-ouvertes.fr/pasteur-03155847/document) a démontré qu'environ **15%** des contaminations à la Covid-19 ont lieu dans le milieu professionnel, or, d'après la loi, le salarié est **responsable** de sa propre **protection** et de celle des personnes qui l'entourent.
+Selon une [étude de l'institut Pasteur](https://hal-pasteur.archives-ouvertes.fr/pasteur-03155847/document), environ **15%** des **contaminations** à la Covid-19 ont lieu dans le **milieu professionnel**. 
+La loi indique que le salarié est **responsable** de sa propre **protection** et de celle des personnes qui l'entourent dans la mesure de ses possibilités (formations, moyens...).
 
 Nous vous encourageons à :
 * respecter les **gestes barrières :** le port du masque, la distanciation physique;
@@ -31,6 +37,9 @@ N'hésitez pas à contacter le **service de renseignements en droit du travail**
 
 ### Mon employeur peut-il me licencier à cause de mon arrêt maladie ? 
 **Non.** Un employeur n'a pas le droit de licencier un salarié en raison de son état de santé (art. L. 1132–1 du code du travail). Le salarié licencié pour cette raison pourra saisir les prud'hommes pour licenciement abusif.
+
+### Mon employeur peut-il exiger un certificat attestant de mon rétablissement de la Covid avant mon retour au travail ?
+**Non.** Si vous avez eu la Covid et que vous avez respecté la durée de votre isolement (10 jours au moins après le début de vos symptômes ou de votre test positif et que vous ne présentez plus de fièvre), alors vous pouvez retourner au travail sans présenter de certificat ou de nouveau test de dépistage.
 
 ### Quels sont les recours face à un employeur qui ne fait pas respecter les mesures de protection anti-Covid-19 ? 
 
@@ -112,3 +121,9 @@ Vous pouvez également consulter :
 
 ### Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?
 [Consulter la réponse sur notre page dédiée aux conseils pour les mineurs](https://mesconseilscovid.sante.gouv.fr/conseils-pour-les-enfants.html#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+
+### Peut-on organiser des moments de convivialité ?
+Les moments de convivialité (pot de bienvenue, pot de départ...) peuvent être organisés dans le respect des **gestes barrières**. Il est fortement conseillé de : 
+* se réunir en éxtérieur ou dans un lieu ventilé ou aéré
+* porter un masque et respecter la distance physique, même en extérieur;
+* proscrire les embrassades
