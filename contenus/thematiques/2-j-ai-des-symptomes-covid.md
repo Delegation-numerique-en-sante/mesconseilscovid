@@ -2,14 +2,23 @@
 
 <img src="illustrations/symptomesactuels.svg">
 
-<header>
-    <p class="big">
-        Vous avez des <strong>symptômes</strong> qui vous inquiètent ? Vous avez de la <strong>fièvre</strong> ? Une <strong>fatigue</strong> intense ? Des difficulés à <strong>respirer</strong> ? Une <strong>toux</strong> persistante ? Votre test est <strong>positif</strong> ?
-    </p>
-</header>
+Vous vous demandez ce qu'il faut faire en cas de test de dépistage **positif** ou de **symptômes** qui évoquent la Covid-19 ? **Répondez** à quelques questions pour obtenir des **réponses personnalisées** pour vous, ou pour un proche.
+<div class="cta">
+    <a class="button button-arrow"
+        href="/#vaccins"
+        data-set-profil="mes_infos"
+        >Je réponds pour moi</a>
+    <a class="button button-outline button-arrow"
+        href="/#nom"
+        >Je réponds pour un proche</a>
+</div>
+
+[Quels sont les symptômes de la Covid ?](#quels-sont-les-symptomes-de-la-covid-?)  
+[Je suis vacciné(e), est-ce que je peux être positif ou positive à la Covid ?](#je-suis-vacciné(e)-est-ce-que-je-peux-être-positif-à-la-covid-?)
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
+    
 .. question:: Quels sont les symptômes de la Covid ?
 
     <div class="conseil conseil-jaune">
@@ -47,19 +56,9 @@
 
     Les vaccins contre la Covid vous protègent contre la maladie en réduisant le risque de l’attraper et de faire une forme grave. Ces vaccins sont très efficaces, mais **aucun vaccin ne protège à 100 %** et cette efficacité peut varier selon les personnes.
 
-    **Si votre test est positif**, nous vous encourageons à vous isoler et à [décrire votre situation](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
+    **Si votre test est positif**, nous vous encourageons à vous isoler et à [faire notre questionnaire rapide](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
 
 </div>
 
 
-## Obtenez des conseils adaptés à votre situation en quelques clics
 
-<div class="cta">
-    <a class="button button-arrow"
-        href="/#vaccins"
-        data-set-profil="mes_infos"
-        >J’ai des symptômes ou mon test est positif</a>
-    <a class="button button-outline button-arrow"
-        href="/#nom"
-        >Ça concerne un(e) proche</a>
-</div>
