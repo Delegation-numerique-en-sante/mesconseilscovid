@@ -16,18 +16,29 @@ Lire aussi notre réponse ci-dessous : [Quels aménagements peuvent être mis en
 Selon une [étude de l'institut Pasteur](https://hal-pasteur.archives-ouvertes.fr/pasteur-03155847/document), environ **15%** des **contaminations** à la Covid-19 ont lieu dans le **milieu professionnel**. 
 La loi indique que le salarié est **responsable** de sa propre **protection** et de celle des personnes qui l'entourent dans la mesure de ses possibilités (formations, moyens...).
 
-Nous vous encourageons à :
+Vous devez donc :
 * respecter les **gestes barrières :** le port du masque, la distanciation physique;
 * vous **isoler** :
-    * dès que vous ressentez des [**symptômes** évocateurs de la Covid](LIEN);
-    * si vous êtes alerté d'un **contact à risque** et que vous n'êtes pas vacciné et que vous n'avez pas eu la Covid dans les deux mois précédents
-    * si vous êtes **positif** à la Covid-19;
-* informer votre employeur et les collègues avec qui vous avez été en contact rapproché, si vous êtes positif à la covid.
+   * si vous avez été testé **positif** à la Covid-19, même si vous êtes vacciné(e);
+   * dès que vous ressentez des [**symptômes** évocateurs de la Covid](LIEN) et en attendant le résultat de votre test de dépistage;
+    * si vous êtes alerté d'un **contact à risque** sauf si vous êtes vacciné ou que vous avez eu la Covid dans les deux mois précédents.
 
+Dans tous les cas, vous serez indemnisé sans jour de carence.  
+
+CONSEIL
+Si vous êtes positif à la Covid, nous vous encourageons à **prévenir** votre **employeur**, le **médecin du travail** et vos **collègues**, afin de limiter la progression de l'épidémie dans l'entreprise.
+
+Consulter le guide : [Covid-19 conseils et bonnes pratiques pour les salariés](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salarie_30_juin_vok.pdf)
 Ces autres pages peuvent vous intéresser : 
 - [J'ai des symptômes ou mon test est positif, que faire ?](https://mesconseilscovid.sante.gouv.fr/j-ai-des-symptomes-covid.html).
 - [Je suis cas contact, que faire ?](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html).
 - [Je vis avec une personne positive à la Covid-19, que dois-je faire ?](https://mesconseilscovid.sante.gouv.fr/je-vis-avec-personne-covid-positive.html).
+
+
+### Je suis vacciné ou asymptômatique mais mon test de dépistage est positif. Puis-je aller au travail ?
+**Non.** 
+Même si elles sont moins contagieuses, les personnes vacciné(e)s ou asymptomatiques doivent s'isoler au moins 10 jours depuis la date de leur test de dépistage positif. 
+Si vous ne pouvez pas télétravailler, l'Assurance maladie vous fournira un arrêt de travail sans délai de carence.
 
 ### Mon employeur peut-il refuser mon arrêt de travail ou mon certificat d'isolement ? 
 **Non.** Votre arrêt maladie ou votre certificat d'isolement ne peut pas être refusé par votre employeur.
@@ -37,6 +48,10 @@ N'hésitez pas à contacter le **service de renseignements en droit du travail**
 
 ### Mon employeur peut-il me licencier à cause de mon arrêt maladie ? 
 **Non.** Un employeur n'a pas le droit de licencier un salarié en raison de son état de santé (art. L. 1132–1 du code du travail). Le salarié licencié pour cette raison pourra saisir les prud'hommes pour licenciement abusif.
+
+CONSEIL
+N'hésitez pas à contacter le **service de renseignements en droit du travail** pour obtenir **anonynement** et **gratuitement** des conseils personnalisés sur votre situation au **0 806 000 126**.
+
 
 ### Mon employeur peut-il exiger un certificat attestant de mon rétablissement de la Covid avant mon retour au travail ?
 **Non.** Si vous avez eu la Covid et que vous avez respecté la durée de votre isolement (10 jours au moins après le début de vos symptômes ou de votre test positif et que vous ne présentez plus de fièvre), alors vous pouvez retourner au travail sans présenter de certificat ou de nouveau test de dépistage.
