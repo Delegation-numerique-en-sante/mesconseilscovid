@@ -35,7 +35,7 @@ Ces autres pages peuvent vous intéresser :
 - [Je vis avec une personne positive à la Covid-19, que dois-je faire ?](https://mesconseilscovid.sante.gouv.fr/je-vis-avec-personne-covid-positive.html).
 
 
-### Je suis vacciné ou asymptômatique mais mon test de dépistage est positif. Puis-je aller au travail ?
+### Je suis vacciné ou asymptomatique mais mon test de dépistage est positif. Puis-je aller au travail ?
 **Non.** 
 Même si elles sont moins contagieuses, les personnes vacciné(e)s ou asymptomatiques doivent s'isoler au moins 10 jours depuis la date de leur test de dépistage positif. 
 Si vous ne pouvez pas télétravailler, l'Assurance maladie vous fournira un arrêt de travail sans délai de carence.
