@@ -2,23 +2,32 @@
 
 <img src="illustrations/symptomesactuels.svg">
 
-Vous vous demandez ce qu'il faut faire en cas de test de dépistage **positif** ou de **symptômes** qui évoquent la Covid-19 ? **Répondez** à quelques questions pour obtenir des **réponses personnalisées** pour vous, ou pour un proche.
-<div class="cta">
-    <a class="button button-arrow"
-        href="/#vaccins"
-        data-set-profil="mes_infos"
-        >Je réponds pour moi</a>
-    <a class="button button-outline button-arrow"
-        href="/#nom"
-        >Je réponds pour un proche</a>
-</div>
-
-[Quels sont les symptômes de la Covid ?](#quels-sont-les-symptomes-de-la-covid-?)  
-[Je suis vacciné(e), est-ce que je peux être positif ou positive à la Covid ?](#je-suis-vacciné(e)-est-ce-que-je-peux-être-positif-à-la-covid-?)
+<header></header>
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
-    
+.. question:: Que faire si j’ai des symptômes et/ou que je suis positif ?
+    :feedback: remove
+
+    <form>
+        <fieldset>
+            <legend>
+                <p>
+                    Répondez à quelques questions sur votre <strong>situation actuelle</strong> pour obtenir des <strong>réponses personnalisées</strong> :</p>
+            </legend>
+        </fieldset>
+        <div class="cta">
+            <a class="button button-arrow"
+                href="/#vaccins"
+                data-set-profil="mes_infos"
+                >Je réponds pour moi</a>
+            <a class="button button-outline button-arrow"
+                href="/#nom"
+                >Je réponds pour un proche</a>
+        </div>
+    </form>
+
+
 .. question:: Quels sont les symptômes de la Covid ?
 
     <div class="conseil conseil-jaune">
