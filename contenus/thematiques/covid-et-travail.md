@@ -11,17 +11,26 @@ Votre employeur doit **limiter** autant que possible les risques d'exposition de
 Consultez le guide : [Covid-19 : conseils et bonnes pratiques pour l'employeur](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_employeur_30_juin_vok.pdf)
 Lire aussi notre réponse ci-dessous : [Quels aménagements peuvent être mis en place pour limiter la transmission du virus sur le lieu de travail ?](#Quels-aménagements-peuvent-être-mis-en-place-pour-limiter-la-transmission-du-virus-sur-le-lieu-de-travail-?)
 
+### En tant que salarié, que faire si je constate des manquements dans les mesures de prévention face à l'épidémie de Covid-19 ?
+
+Vous pouvez alerter : 
+* les représentants du personnel (CSE)
+* le service de santé au travail (médecin du travail)
+* l'inspection du travail au **0 806 000 126** (service **gratuit** et **anonyme**)
+
+Si votre employeur n'applique pas les recommandations des autorités sanitaire, et que vous estimez que ces manquements vous font courir un **danger grave et imminent,** alors vous pouvez quitter votre poste en faisant valoir votre **droit de retrait.**
+
 ### En tant que salarié(e), qu'est-ce que je dois faire pour limiter la transmission du virus au travail ? 
 
 Selon une [étude de l'institut Pasteur](https://hal-pasteur.archives-ouvertes.fr/pasteur-03155847/document), environ **15%** des **contaminations** à la Covid-19 ont lieu dans le **milieu professionnel**. 
 La loi indique que le salarié est **responsable** de sa propre **protection** et de celle des personnes qui l'entourent dans la mesure de ses possibilités (formations, moyens...).
 
 Vous devez donc :
-* respecter les **gestes barrières :** le port du masque, la distanciation physique;
+* respecter les **gestes barrières :** le port du masque, la distanciation physique, même si vous êtes vacciné(e);
 * vous **isoler** :
-   * si vous avez été testé **positif** à la Covid-19, même si vous êtes vacciné(e);
-   * dès que vous ressentez des [**symptômes** évocateurs de la Covid](LIEN) et en attendant le résultat de votre test de dépistage;
-    * si vous êtes alerté d'un **contact à risque** sauf si vous êtes vacciné ou que vous avez eu la Covid dans les deux mois précédents.
+   * si vous avez été testé **positif** à la Covid-19, ou dès que vous ressentez des [**symptômes** évocateurs de la Covid](LIEN) et en attendant le résultat de votre test de dépistage, même si vous êtes vacciné(e)
+   * si vous êtes alerté d'un **contact à risque** sauf si vous êtes vacciné ou que vous avez eu la Covid dans les deux mois précédents.
+  
 
 Dans tous les cas, vous serez indemnisé sans jour de carence.  
 
@@ -73,21 +82,27 @@ N'hésitez pas à contacter le **service de renseignements en droit du travail**
 
 ## Quels aménagements peuvent être mis en place pour limiter la transmission du virus sur le lieu de travail ?
 
-* Revoir l'organisation : 
-    * étaler les horaires d'arrivées et de départ pour limiter les risques d'affluence et de croisements du personnel; 
-    * limiter la concentration de personne dans les locaux pour permettre la distanciation physique (1 mètre);
-    * favoriser le télétravail et les réunions à distance.;
-    * Banir le travail en open flex (bureau nomade) et attribuer une place fixe à chaque employé.
+L'employeur doit proposer des mesures pour limiter les risques de propagation du virus dans son entreprise, et les salariés doivent agir à leur niveau, pour se protéger et protéger ceux qui les entourent. 
+
+Voici quelques exemples de pratiques qui peuvent être mises en place :
+
+* Limiter le brassage de personnes : 
+    * étaler les horaires d'arrivées et de départ pour limiter l'affluence et les croisements; 
+    * limiter le nombre de personnes présentes dans les locaux pour faciliter la distanciation physique en instaurant une jauge;
+    * décider d'un nombre de jours télétravaillés par semaine et privilégier les réunions à distance;
+    * attribuer une place fixe à chaque employé (suspendre l'*open flex* ou bureau nomade);
+    * éviter d'aller au restaurant d'entreprise aux heures d'affluence et dejeuner seul ou avec les membres de mon équipe pour éviter de multiplier les contacts.
+  
 
 * Informer les employés : 
-    * sur les mesures barrières : le masque ; la distanciation ; l'isolement dès les premiers symptômes;
-    * sur la possibilité de se faire vacciner sur le lieu de travail ou pendant les horaires de travail.
+    * sur l'efficacité des mesures barrières : le masque ; la distanciation ; l'isolement dès les premiers symptômes;
+    * sur la possibilité de se faire vacciner pendant les heures de travail, dans l'entreprise ou ailleurs (centre de vaccination, pharmacie, médecin...).
 
 * (Faire) respecter les règles sanitaires : 
-    * le port du masque dans les lieux clos partagés (pas dans les bureaux individuels et personnels);
+    * porter le masque dans les lieux clos partagés mais pas dans les bureaux individuels et personnels;
     * aérer et ventiler les espaces le plus souvent possible - tout le temps, si possible; 
     * mettre à disposition du gel hydroalcoolique;
-    * nettoyer et désinfecter a minima quotidiennemennt les espaces partagés. 
+    * nettoyer et désinfecter régulièrement les espaces partagés. 
     
 
 ### Quel dispositif est prévu pour les personnes particulièrement vulnérables à la covid-19 et qui ne peuvent pas télétravailler ? 
@@ -110,7 +125,7 @@ Depuis le **21 septembre,** vous pouvez bénéficier d'un régime d'**activité 
 
 N'hésitez pas à demander plus de renseignements à votre **médecin traitant** ou au **médecin du travail.** Il pourra vous fournir ou renouveller votre **certificat d'isolement.** 
 
-> [cliquez ici pour consulter l'avis du HSCP et la liste complète des pathologies concernées.](file:///C:/Users/Dunia/AppData/Local/Temp/hcspa20201029_coacdelalidefaderidefogr.pdf)
+> [cliquez ici pour consulter l'avis du HSCP et la liste des pathologies concernées.](https://www.hcsp.fr/explore.cgi/avisrapportsdomaine?clefr=942)
 
 
 ### Comment obtenir un arrêt maladie pour une situation liée à la Covid-19 ?
