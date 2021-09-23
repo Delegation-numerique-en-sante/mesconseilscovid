@@ -112,14 +112,23 @@ class QuestionDirective(Directive):
     def parse(self, block, m, state):
         question = m.group("value")
         options = self.parse_options(m)
-        level = int(dict(options).get("level")) if options else 2
+        if options:
+            level = int(dict(options).get("level", 2))
+            feedback = dict(options).get("feedback", "keep")
+        else:
+            level = 2
+            feedback = "keep"
         text = self.parse_text(m)
         children = block.parse(text, state, block.rules)
         if not children:
             raise ValueError(
                 f"Question sans réponse : indentation manquante ?\n« {question} »"
             )
-        return {"type": "question", "children": children, "params": (question, level)}
+        return {
+            "type": "question",
+            "children": children,
+            "params": (question, level, feedback),
+        }
 
     def __call__(self, md):
         self.register_directive(md, "question")
@@ -127,22 +136,14 @@ class QuestionDirective(Directive):
             md.renderer.register("question", render_html_question)
 
 
-def render_html_question(text, question, level):
+def render_html_question(text, question, level, feedback):
     question_id = slugify(
         question,
         stopwords=["span", "class", "visually", "hidden", "sup"],
         replacements=[("’", "'")],
     )
-    return f"""<div id="{question_id}" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-<h{level} itemprop="name">
-    {typographie(question)}
-    <a href="#{question_id}" itemprop="url" title="Lien vers cette question" aria-hidden="true">#</a>
-</h{level}>
-<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-<div itemprop="text">
-{text}</div>
-</div>
-<form class="question-feedback">
+    feedback_html = (
+        """<form class="question-feedback">
     <fieldset>
         <legend>Avez-vous trouvé cette réponse utile&#8239;?</legend>
         <div>
@@ -151,7 +152,19 @@ def render_html_question(text, question, level):
             <label><input type="submit" class="button-invisible" data-value="oui" value="🙂">Oui</label>
         </div>
     </fieldset>
-</form>
+</form>"""
+        if feedback == "keep"
+        else ""
+    )
+    return f"""<div id="{question_id}" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h{level} itemprop="name">
+    {typographie(question)} <a href="#{question_id}" itemprop="url" title="Lien vers cette question" aria-hidden="true">#</a>
+</h{level}>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<div itemprop="text">
+{text}</div>
+</div>
+{feedback_html}
 </div>
 """
 

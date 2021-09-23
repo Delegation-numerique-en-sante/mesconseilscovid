@@ -157,8 +157,7 @@ class TestQuestionDirective:
                 """\
                 <div id="quand-pourrai-je-me-faire-vacciner" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <h2 itemprop="name">
-                    Quand pourrai-je me faire vacciner&#8239;?
-                    <a href="#quand-pourrai-je-me-faire-vacciner" itemprop="url" title="Lien vers cette question" aria-hidden="true">#</a>
+                    Quand pourrai-je me faire vacciner&#8239;? <a href="#quand-pourrai-je-me-faire-vacciner" itemprop="url" title="Lien vers cette question" aria-hidden="true">#</a>
                 </h2>
                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
@@ -207,8 +206,7 @@ class TestQuestionDirective:
                 """\
                 <div id="quand-pourrai-je-me-faire-vacciner" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <h3 itemprop="name">
-                    Quand pourrai-je me faire vacciner&#8239;?
-                    <a href="#quand-pourrai-je-me-faire-vacciner" itemprop="url" title="Lien vers cette question" aria-hidden="true">#</a>
+                    Quand pourrai-je me faire vacciner&#8239;? <a href="#quand-pourrai-je-me-faire-vacciner" itemprop="url" title="Lien vers cette question" aria-hidden="true">#</a>
                 </h3>
                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
