@@ -15,7 +15,7 @@ describe('Suivi', function () {
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="J’ai des symptômes ou mon test est positif"'
+                'a.button >> text="Je réponds pour moi"'
             )
             await Promise.all([
                 bouton.click(),
@@ -220,7 +220,7 @@ describe('Suivi', function () {
         // On clique sur le bouton pour un ou une proche.
         {
             let bouton = await page.waitForSelector(
-                'a.button >> text="Ça concerne un(e) proche"'
+                'a.button >> text="Je réponds pour un proche"'
             )
             await Promise.all([
                 bouton.click(),

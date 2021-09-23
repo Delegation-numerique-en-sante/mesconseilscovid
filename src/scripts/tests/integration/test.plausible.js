@@ -27,7 +27,7 @@ describe('Plausible', function () {
 
         // On clique sur le bouton pour avoir des conseils.
         const bouton = await page.waitForSelector(
-            'a.button >> text="J’ai des symptômes ou mon test est positif"'
+            'a.button >> text="Je réponds pour moi"'
         )
 
         await Promise.all([
@@ -62,7 +62,7 @@ describe('Plausible', function () {
 
         // On clique sur le bouton pour avoir des conseils.
         let bouton = await page.waitForSelector(
-            'a.button >> text="J’ai des symptômes ou mon test est positif"'
+            'a.button >> text="Je réponds pour moi"'
         )
 
         await Promise.all([
@@ -125,7 +125,7 @@ describe('Plausible', function () {
 
         // On clique sur le bouton pour un ou une proche.
         let bouton = await page.waitForSelector(
-            'a.button >> text="Ça concerne un(e) proche"'
+            'a.button >> text="Je réponds pour un proche"'
         )
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
 
@@ -186,7 +186,7 @@ describe('Plausible', function () {
 
         // On clique sur le bouton pour avoir des conseils.
         let bouton = await page.waitForSelector(
-            'a.button >> text="J’ai des symptômes ou mon test est positif"'
+            'a.button >> text="Je réponds pour moi"'
         )
         await Promise.all([
             bouton.click(),
@@ -247,7 +247,7 @@ describe('Plausible', function () {
 
         // On clique sur le bouton pour un ou une proche.
         let bouton = await page.waitForSelector(
-            'a.button >> text="Ça concerne un(e) proche"'
+            'a.button >> text="Je réponds pour un proche"'
         )
         await Promise.all([bouton.click(), page.waitForNavigation({ url: '**/#nom' })])
         await remplirQuestionnaire(page, {
@@ -307,7 +307,7 @@ describe('Plausible', function () {
 
         // On clique sur le bouton pour avoir des conseils.
         let bouton = await page.waitForSelector(
-            'a.button >> text="J’ai des symptômes ou mon test est positif"'
+            'a.button >> text="Je réponds pour moi"'
         )
         await Promise.all([
             bouton.click(),
