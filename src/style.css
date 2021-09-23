@@ -1093,6 +1093,13 @@ input[type='submit'].button-arrow {
     background-position: 95% center;
     background-repeat: no-repeat;
 }
+@media only screen and (max-width: 680px) {
+    .button-arrow,
+    a.button-arrow,
+    input[type='submit'].button-arrow {
+        padding: 6px 36px 8px 24px;
+    }
+}
 input.button-outline,
 button.button-outline,
 a.button-outline {
@@ -1573,6 +1580,9 @@ a.no-type::after {
     margin-bottom: 1.2rem;
     margin-top: 4rem;
     font-size: 175%;
+}
+.thematique #conseils-block h2:first-of-type {
+    margin-top: 1rem;
 }
 .thematique #conseils-block h3 {
     padding-top: 1rem;
