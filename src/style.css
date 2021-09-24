@@ -477,7 +477,6 @@ footer .legals {
 #conseils-sante summary,
 #conseils-grossesse summary,
 #conseils-foyer-enfants summary,
-#conseils-covid summary,
 #conseils-pediatrie-general summary,
 #conseils-pediatrie-ecole summary,
 #conseils-pediatrie-medical summary,
@@ -514,7 +513,6 @@ footer .legals {
     #conseils-sante summary,
     #conseils-grossesse summary,
     #conseils-foyer-enfants summary,
-    #conseils-covid summary,
     #conseils-pediatrie-general summary,
     #conseils-pediatrie-ecole summary,
     #conseils-pediatrie-medical summary,
@@ -579,8 +577,7 @@ footer .legals {
 #conseils-foyer-enfants summary {
     background-image: url('illustrations/pediatriegeneral.svg');
 }
-#historique-form,
-#conseils-covid summary {
+#historique-form {
     background-image: url('illustrations/covid.svg');
 }
 #conseils-pediatrie-general summary {
