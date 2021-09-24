@@ -9,17 +9,22 @@
 
 ## Devrai-je recevoir une dose de rappel, dite 3<sup>e</sup> dose ?
 
-Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#devrai-je-recevoir-une-dose-de-rappel-dite-3-e-dose) »
+Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#devrai-je-recevoir-une-dose-de-rappel-dite-3-e-dose) ».
 
 
 ## Quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
 
-Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) »
+Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) ».
 
 
 ## Je suis vacciné(e), est-ce que je peux être positif ou positive à la Covid ?
 
-Voir la réponse sur notre page « [J’ai des symptômes de la Covid ou mon test est positif, que faire ?](/j-ai-des-symptomes-covid.html#je-suis-vaccine-e-est-ce-que-je-peux-etre-positif-ou-positive-a-la-covid) »
+Voir la réponse sur notre page « [J’ai des symptômes de la Covid ou mon test est positif, que faire ?](/j-ai-des-symptomes-covid.html#je-suis-vaccine-e-est-ce-que-je-peux-etre-positif-ou-positive-a-la-covid) ».
+
+
+## Est-ce que la vaccination rend malade, contagieux ou positif ?
+
+Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#est-ce-que-la-vaccination-rend-malade-contagieux-ou-positif) ».
 
 
 <div itemscope itemtype="https://schema.org/FAQPage">
@@ -51,11 +56,6 @@ Voir la réponse sur notre page « [J’ai des symptômes de la Covid ou mon te
 
     </div>
 
-
-
-.. question:: Est-ce que la vaccination rend malade, contagieux ou positif ?
-
-    Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#est-ce-que-la-vaccination-rend-malade,-contagieux-ou-positif-?)
 
 .. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?
 
