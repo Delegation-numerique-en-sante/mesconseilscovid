@@ -106,7 +106,12 @@
 
     Ils disparaissent le plus souvent au bout d’1 à 2 jours. Si vos symptômes vous inquiètent, contactez votre médecin traitant, ou le 15 en cas d’urgence.
 
+.. question:: Est-ce que la vaccination rend malade, contagieux ou positif ?
 
+    **Non, la vaccination ne rend en aucun cas positif**, il n’y a pas de virus actif dans les vaccins. Vous pouvez ressentir des effets secondaires (fièvre, fatigue…) suite à la vaccination, mais vous n’êtes **ni malade, ni contagieux**.
+
+    Si vous avez réalisé un [test de dépistage](/tests-de-depistage.html) et qu’il est **positif**, il est probable que vous ayez été contaminé(e). Nous vous encourageons à vous isoler et à [décrire votre situation](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
+    
 .. question:: Suis-je immunisé(e) après une seule dose de vaccin ?
 
     Les schémas de vaccination des vaccins Moderna, Comirnaty (Pfizer-BioNTech) et AstraZeneca prévoient l’injection de **2 doses pour une vaccination efficace**. Sans le rappel vaccinal (2<sup>e</sup> dose), votre vaccination n’est pas complète.
