@@ -57,7 +57,16 @@
 
     </div>
 
+.. question:: Je suis enceinte, puis-je me faire vacciner (1<sup>re</sup> et 2<sup>e</sup> dose) ?
+    
+    **Oui,* d'autant que la grossesse vous expose à des formes plus sévères de la Covid-19. Il n'y a pas de contre-indication à la vaccination des femmes enceintes et vous pouvez vous faire vacciner avec un vaccin à ARN messager (Pfizer, Moderna) **dès le premier trimestre de grossesse.** 
+    
+    L'**obligation vaccinale** requise pour certaines professions (santé; médico-social; restauration...) n'est pas exigée des femmes enceintes avant le **2e trimestre de grossesse.**
+    
+  .. question:: J'allaite mon enfant, puis-je me faire vacciner (1<sup>re</sup> et 2<sup>e</sup> dose) ?
 
+    **Oui**. Les études scientifiques ont démontrés que les vaccins à ARN messager (Pfizer et Moderna) ne présentent pas de risque pour les enfants allaités. Vous pouvez donc continuer à le faire, même après votre vaccination. 
+    
 .. question:: Où me faire vacciner ?
 
     * Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech* : pour la vaccination initiale (dès **12 ans**) ou pour le rappel.
