@@ -475,7 +475,6 @@ footer .legals {
 #conseils-isolement summary,
 #conseils-gestes-barrieres-masque summary,
 #conseils-sante summary,
-#conseils-grossesse summary,
 #conseils-foyer-enfants summary,
 #conseils-covid summary,
 #conseils-pediatrie-general summary,
@@ -512,7 +511,6 @@ footer .legals {
     #conseils-isolement summary,
     #conseils-gestes-barrieres-masque summary,
     #conseils-sante summary,
-    #conseils-grossesse summary,
     #conseils-foyer-enfants summary,
     #conseils-covid summary,
     #conseils-pediatrie-general summary,
@@ -572,9 +570,6 @@ footer .legals {
 #suivi-medecin-form,
 #sante-form {
     background-image: url('illustrations/sante.svg');
-}
-#conseils-grossesse summary {
-    background-image: url('illustrations/grossesse.svg');
 }
 #conseils-foyer-enfants summary {
     background-image: url('illustrations/pediatriegeneral.svg');

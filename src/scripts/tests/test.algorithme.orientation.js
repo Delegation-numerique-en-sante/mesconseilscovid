@@ -571,57 +571,6 @@ describe('Blocs d’informations additionnels', function () {
 
     describe('Bloc Covid', function () {})
 
-    describe('Bloc grossesse', function () {
-        it('Le bloc grossesse ne s’affiche pas par défaut', function () {
-            var profil = new Profil('mes_infos', {})
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.grossesseBlockNamesToDisplay(), [])
-        })
-
-        it('Grossesse 3e trimestre', function () {
-            var profil = new Profil('mes_infos', {
-                grossesse_3e_trimestre: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.grossesseBlockNamesToDisplay(), [
-                'conseils-grossesse',
-            ])
-        })
-
-        it('Même avec symptômes actuels', function () {
-            var profil = new Profil('mes_infos', {
-                grossesse_3e_trimestre: true,
-                symptomes_actuels: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.grossesseBlockNamesToDisplay(), [
-                'conseils-grossesse',
-            ])
-        })
-
-        it('Même avec symptômes passés', function () {
-            var profil = new Profil('mes_infos', {
-                grossesse_3e_trimestre: true,
-                symptomes_passes: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.grossesseBlockNamesToDisplay(), [
-                'conseils-grossesse',
-            ])
-        })
-
-        it('Même avec contact à risque', function () {
-            var profil = new Profil('mes_infos', {
-                grossesse_3e_trimestre: true,
-                contact_a_risque: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.grossesseBlockNamesToDisplay(), [
-                'conseils-grossesse',
-            ])
-        })
-    })
-
     describe('Bloc santé', function () {
         it('Le bloc santé ne s’affiche pas par défaut', function () {
             var profil = new Profil('mes_infos', {})

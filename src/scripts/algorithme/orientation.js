@@ -648,14 +648,6 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
-    grossesseBlockNamesToDisplay() {
-        const blockNames = []
-        if (this.profil.grossesse_3e_trimestre) {
-            blockNames.push('conseils-grossesse')
-        }
-        return blockNames
-    }
-
     santeBlockNamesToDisplay() {
         const blockNames = []
         if (this.personneFragile) {
