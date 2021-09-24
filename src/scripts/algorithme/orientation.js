@@ -676,17 +676,4 @@ export default class AlgorithmeOrientation {
         }
         return blockNames
     }
-
-    enfantsBlockNamesToDisplay() {
-        const blockNames = []
-        if (this.profil.foyer_enfants || !this.sup15) {
-            if (this.profil.foyer_enfants) {
-                blockNames.push('reponse-foyer-enfants')
-            } else {
-                blockNames.push('reponse-enfants-inf-15')
-            }
-            blockNames.push('conseils-foyer-enfants')
-        }
-        return blockNames
-    }
 }

@@ -476,7 +476,6 @@ footer .legals {
 #conseils-gestes-barrieres-masque summary,
 #conseils-sante summary,
 #conseils-grossesse summary,
-#conseils-foyer-enfants summary,
 #conseils-covid summary,
 #conseils-pediatrie-general summary,
 #conseils-pediatrie-ecole summary,
@@ -513,7 +512,6 @@ footer .legals {
     #conseils-gestes-barrieres-masque summary,
     #conseils-sante summary,
     #conseils-grossesse summary,
-    #conseils-foyer-enfants summary,
     #conseils-covid summary,
     #conseils-pediatrie-general summary,
     #conseils-pediatrie-ecole summary,
@@ -575,9 +573,6 @@ footer .legals {
 }
 #conseils-grossesse summary {
     background-image: url('illustrations/grossesse.svg');
-}
-#conseils-foyer-enfants summary {
-    background-image: url('illustrations/pediatriegeneral.svg');
 }
 #historique-form,
 #conseils-covid summary {

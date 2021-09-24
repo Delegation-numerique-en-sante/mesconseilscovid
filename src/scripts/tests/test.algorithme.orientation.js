@@ -725,38 +725,6 @@ describe('Blocs d’informations additionnels', function () {
         })
     })
 
-    describe('Bloc enfants', function () {
-        it('Aucun risque foyer (enfants) n’affiche rien', function () {
-            var profil = new Profil('mes_infos', {
-                age: 20,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.enfantsBlockNamesToDisplay(), [])
-        })
-
-        it('Risque foyer (enfant)', function () {
-            var profil = new Profil('mes_infos', {
-                foyer_enfants: true,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.enfantsBlockNamesToDisplay(), [
-                'reponse-foyer-enfants',
-                'conseils-foyer-enfants',
-            ])
-        })
-
-        it('Pour un enfant de moins de 15 ans', function () {
-            var profil = new Profil('mes_infos', {
-                age: 14,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.enfantsBlockNamesToDisplay(), [
-                'reponse-enfants-inf-15',
-                'conseils-foyer-enfants',
-            ])
-        })
-    })
-
     describe('Bloc activité pro', function () {
         it('Aucune activité pro n’affiche rien', function () {
             var profil = new Profil('mes_infos', {})
