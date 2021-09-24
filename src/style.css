@@ -473,7 +473,6 @@ footer .legals {
 #conseils-activite summary,
 #conseils-tests summary,
 #conseils-isolement summary,
-#conseils-gestes-barrieres-masque summary,
 #conseils-sante summary,
 #conseils-grossesse summary,
 #conseils-foyer-enfants summary,
@@ -510,7 +509,6 @@ footer .legals {
     #conseils-activite summary,
     #conseils-tests summary,
     #conseils-isolement summary,
-    #conseils-gestes-barrieres-masque summary,
     #conseils-sante summary,
     #conseils-grossesse summary,
     #conseils-foyer-enfants summary,
@@ -527,7 +525,6 @@ footer .legals {
     #conseils-deplacements summary {
         background-size: 13%;
     }
-    #conseils-gestes-barrieres-masque summary,
     #conseils-sante summary,
     #conseils-vie-quotidienne summary,
     #conseils-pass-sanitaire summary {
@@ -562,9 +559,6 @@ footer .legals {
 }
 #conseils-isolement summary {
     background-image: url('illustrations/isolement.svg');
-}
-#conseils-gestes-barrieres-masque summary {
-    background-image: url('illustrations/gestesbarrieres.svg');
 }
 #conseils-sante summary {
     background-image: url('illustrations/contact_medecin.svg');
