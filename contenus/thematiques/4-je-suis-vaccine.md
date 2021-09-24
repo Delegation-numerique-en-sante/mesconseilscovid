@@ -67,7 +67,9 @@ Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-fair
 
 .. question:: J’ai perdu ou je n’ai pas reçu d’attestation de vaccination, comment faire ?
 
-    Grâce à votre numéro de sécurité sociale, vous pouvez télécharger un nouveau certificat de vaccination sur le téléservice de l’Assurance maladie : [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
+    Grâce à votre numéro de sécurité sociale, vous pouvez **télécharger** un nouveau certificat de vaccination sur le téléservice de l’Assurance Maladie : [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
+
+    Un **professionnel de santé** (médecin, pharmacien, infirmier, sage-femme…) peut vous délivrer une attestation certifiée sur présentation de votre **carte vitale**.
 
 
 .. question:: J’ai eu la Covid avant d’avoir ma première et unique injection, mais mon attestation indique que ma vaccination est « en cours » au lieu d’être terminée. Que faire ?
