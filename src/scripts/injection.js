@@ -29,6 +29,7 @@ export function dateConseils(element) {
 }
 
 export function departement(element, departement) {
+    if (!element) return
     element.textContent = departements[departement] || 'Inconnu'
 }
 

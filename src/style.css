@@ -467,7 +467,6 @@ footer .legals {
     background-size: 40%;
 }
 
-#conseils-vie-quotidienne summary,
 #conseils-deplacements summary,
 #conseils-pass-sanitaire summary,
 #conseils-activite summary,
@@ -504,7 +503,6 @@ footer .legals {
         background-size: 30%;
     }
 
-    #conseils-vie-quotidienne summary,
     #conseils-deplacements summary,
     #conseils-pass-sanitaire summary,
     #conseils-activite summary,
@@ -529,7 +527,6 @@ footer .legals {
     }
     #conseils-gestes-barrieres-masque summary,
     #conseils-sante summary,
-    #conseils-vie-quotidienne summary,
     #conseils-pass-sanitaire summary {
         background-size: 10%;
     }
@@ -541,8 +538,7 @@ footer .legals {
 #nom-form {
     background-image: url('illustrations/nom.svg');
 }
-#situation-form,
-#conseils-vie-quotidienne summary {
+#situation-form {
     background-image: url('illustrations/situation.svg');
 }
 #conseils-deplacements summary {
