@@ -608,46 +608,6 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
-    activiteProBlockNamesToDisplay() {
-        const blockNames = []
-        if (this.profil.activite_pro || this.profil.activite_pro_sante) {
-            blockNames.push('conseils-activite')
-            blockNames.push('reponse-activite-pro')
-
-            // Arrêt de travail pour isolement pendant le test?
-            const arretPourIsolement =
-                this.profil.hasSymptomesActuelsReconnus() &&
-                (!this.profil.depistage ||
-                    (this.profil.depistage &&
-                        this.profil.depistage_resultat == 'en_attente'))
-            if (arretPourIsolement) {
-                blockNames.push('conseils-activite-pro-arret-de-travail-isolement')
-            }
-
-            // Infos téléprocédure pour arrêt de travail via lien dans l’alerte TAC
-            if (this.profil.contact_a_risque_stop_covid) {
-                blockNames.push('conseils-activite-pro-arret-de-travail-tac')
-            }
-
-            // Professionnel de santé ?
-            if (this.profil.activite_pro_sante) {
-                blockNames.push('conseils-activite-pro-sante')
-            }
-
-            // Autres professionnels.
-            else {
-                if (this.antecedents) {
-                    blockNames.push('reponse-activite-pro-antecedents')
-                    blockNames.push('conseils-activite-pro-arret')
-                } else if (!arretPourIsolement) {
-                    blockNames.push('conseils-activite-pro')
-                }
-                blockNames.push('conseils-activite-pro-infos')
-            }
-        }
-        return blockNames
-    }
-
     grossesseBlockNamesToDisplay() {
         const blockNames = []
         if (this.profil.grossesse_3e_trimestre) {

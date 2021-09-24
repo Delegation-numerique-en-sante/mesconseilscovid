@@ -43,16 +43,13 @@ describe('Parcours', function () {
 
         // Conseils.
         {
-            // On rend l’activité visible.
-            await page.click('#page.ready #conseils-activite h3')
-
-            // On retrouve l’activité.
-            let activite = await page.waitForSelector(
-                '#page.ready #reponse-activite-pro'
+            // On retrouve le statut.
+            let statut = await page.waitForSelector(
+                '#page.ready #statut-peu-de-risques'
             )
             assert.equal(
-                (await activite.innerText()).trim(),
-                'Vous travaillez et/ou êtes bénévole (modifier)'
+                (await statut.innerText()).trim(),
+                'Vous ne présentez pas de risque particulier face à la Covid, cependant le virus circule toujours, les mesures barrières s’imposent.'
             )
 
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')

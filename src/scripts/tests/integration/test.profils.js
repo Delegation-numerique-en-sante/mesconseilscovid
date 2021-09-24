@@ -59,18 +59,6 @@ describe('Profils', function () {
             let titre = await page.waitForSelector('#page.ready #conseils-block-titre')
             assert.equal(await titre.innerText(), 'Conseils pour « Mamie »') // &nbsp; autour du nom
 
-            // On rend l’activité visible.
-            await page.click('#page.ready #conseils-activite h3')
-
-            // On retrouve l’activité.
-            let activite = await page.waitForSelector(
-                '#page.ready #reponse-activite-pro'
-            )
-            assert.equal(
-                (await activite.innerText()).trim(),
-                'Vous travaillez et/ou êtes bénévole (modifier)'
-            )
-
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
 
             let bouton = await page.waitForSelector(

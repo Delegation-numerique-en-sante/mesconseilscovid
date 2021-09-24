@@ -470,7 +470,6 @@ footer .legals {
 #conseils-vie-quotidienne summary,
 #conseils-deplacements summary,
 #conseils-pass-sanitaire summary,
-#conseils-activite summary,
 #conseils-tests summary,
 #conseils-isolement summary,
 #conseils-gestes-barrieres-masque summary,
@@ -507,7 +506,6 @@ footer .legals {
     #conseils-vie-quotidienne summary,
     #conseils-deplacements summary,
     #conseils-pass-sanitaire summary,
-    #conseils-activite summary,
     #conseils-tests summary,
     #conseils-isolement summary,
     #conseils-gestes-barrieres-masque summary,
@@ -550,9 +548,6 @@ footer .legals {
 }
 #conseils-pass-sanitaire summary {
     background-image: url('illustrations/pass_sanitaire.svg');
-}
-#conseils-activite summary {
-    background-image: url('illustrations/activitepro.svg');
 }
 #conseils-foyer summary {
     background-image: url('illustrations/foyer.svg');

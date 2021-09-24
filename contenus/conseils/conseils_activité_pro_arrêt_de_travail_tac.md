@@ -1,1 +1,0 @@
-Si vous ne pouvez pas **télétravailler**, vous pouvez demander un arrêt de travail d’une durée maximale de 9 jours. Pour initier cette démarche, cliquez sur le lien fourni dans l’alerte dans votre application **TousAntiCovid**. (Pour plus de détails sur cette démarche, vous pouvez vous rendre sur le [site Ameli](https://declare.ameli.fr/tousanticovid/conditions)).
