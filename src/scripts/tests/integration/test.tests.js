@@ -68,7 +68,7 @@ describe('Tests', function () {
 
         assert.equal(
             await page.title(),
-            'Les tests de dépistage ? — Mes Conseils Covid'
+            'Je souhaite faire un test de dépistage — Mes Conseils Covid'
         )
     })
 
