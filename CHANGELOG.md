@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-09-24
+
+* ajout d’une question sur les symptômes possibles
+* ajout d’une question sur l’allaitement
+* mise à jour relative aux couvre-feux et confinements dans les DROM
+
 ## 2021-09-21
 
 * mise à jour des conseils pour les mineurs
