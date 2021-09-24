@@ -168,7 +168,6 @@ export function showRelevantBlocks(element, profil, algoOrientation) {
     )
     blockNames = blockNames.concat(algoOrientation.isolementBlockNamesToDisplay())
     blockNames.push('et-ensuite')
-    blockNames = blockNames.concat(algoOrientation.depistageBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.vaccinBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.gestesBarriereBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.vieQuotidienneBlockNamesToDisplay())

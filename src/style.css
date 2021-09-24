@@ -471,7 +471,6 @@ footer .legals {
 #conseils-deplacements summary,
 #conseils-pass-sanitaire summary,
 #conseils-activite summary,
-#conseils-tests summary,
 #conseils-isolement summary,
 #conseils-gestes-barrieres-masque summary,
 #conseils-sante summary,
@@ -508,7 +507,6 @@ footer .legals {
     #conseils-deplacements summary,
     #conseils-pass-sanitaire summary,
     #conseils-activite summary,
-    #conseils-tests summary,
     #conseils-isolement summary,
     #conseils-gestes-barrieres-masque summary,
     #conseils-sante summary,
@@ -523,7 +521,6 @@ footer .legals {
         background-position: center left;
         padding: 0 0 0 8rem;
     }
-    #conseils-tests summary,
     #conseils-deplacements summary {
         background-size: 13%;
     }
@@ -556,9 +553,6 @@ footer .legals {
 }
 #conseils-foyer summary {
     background-image: url('illustrations/foyer.svg');
-}
-#conseils-tests summary {
-    background-image: url('illustrations/depistage.svg');
 }
 #conseils-isolement summary {
     background-image: url('illustrations/isolement.svg');

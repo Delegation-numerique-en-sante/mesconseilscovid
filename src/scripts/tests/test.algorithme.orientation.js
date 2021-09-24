@@ -358,65 +358,6 @@ describe('Blocs d’informations additionnels', function () {
         })
     })
 
-    describe('Bloc tests de dépistage', function () {
-        it('Cas général', function () {
-            var profil = new Profil('mes_infos', {})
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [
-                'conseils-tests',
-                'conseils-tests-general',
-            ])
-        })
-        it('Cas particulier antigénique faux négatif', function () {
-            var profil = new Profil('mes_infos', {
-                depistage: true,
-                depistage_type: 'antigenique',
-                depistage_resultat: 'negatif',
-                _depistage_start_date: new Date().toJSON(),
-                symptomes_passes: true,
-                age: 70,
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [
-                'conseils-tests',
-                'conseils-tests-rt-pcr',
-            ])
-        })
-        it('En attente de résultat', function () {
-            var profil = new Profil('mes_infos', {
-                depistage: true,
-                depistage_type: 'rt-pcr',
-                depistage_resultat: 'en_attente',
-                _depistage_start_date: new Date().toJSON(),
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [
-                'conseils-tests',
-                'conseils-tests-resultats',
-            ])
-        })
-        it('Positif', function () {
-            var profil = new Profil('mes_infos', {
-                depistage: true,
-                depistage_type: 'rt-pcr',
-                depistage_resultat: 'positif',
-                _depistage_start_date: new Date().toJSON(),
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [])
-        })
-        it('Négatif', function () {
-            var profil = new Profil('mes_infos', {
-                depistage: true,
-                depistage_type: 'rt-pcr',
-                depistage_resultat: 'negatif',
-                _depistage_start_date: new Date().toJSON(),
-            })
-            var algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.depistageBlockNamesToDisplay(), [])
-        })
-    })
-
     describe('Bloc vaccins', function () {
         it('Cas général (pas encore vacciné, sans historique)', function () {
             var profil = new Profil('mes_infos', {})

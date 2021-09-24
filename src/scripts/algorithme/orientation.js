@@ -466,35 +466,6 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
-    depistageBlockNamesToDisplay() {
-        const blockNames = []
-        if (
-            this.profil.depistagePositifRecent() ||
-            this.profil.depistageNegatifRecent()
-        ) {
-            // rien
-        } else {
-            blockNames.push('conseils-tests')
-            if (this.profil.depistageEnAttenteRecent()) {
-                blockNames.push('conseils-tests-resultats')
-            } else {
-                blockNames.push('conseils-tests-general')
-            }
-        }
-        // Cas très particulier antigénique faux négatif.
-        if (
-            this.profil.depistageNegatifRecent() &&
-            typeof this.profil.depistage_type !== 'undefined' &&
-            this.profil.depistage_type === 'antigenique' &&
-            this.personneFragile &&
-            (this.profil.hasSymptomesActuelsReconnus() || this.profil.symptomes_passes)
-        ) {
-            blockNames.push('conseils-tests')
-            blockNames.push('conseils-tests-rt-pcr')
-        }
-        return blockNames
-    }
-
     vaccinBlockNamesToDisplay() {
         let blockNames = []
 
