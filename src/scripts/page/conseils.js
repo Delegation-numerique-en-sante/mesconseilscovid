@@ -145,8 +145,6 @@ function showRelevantSuiviBlocks(element, algoSuivi) {
     if (profil.hasHistorique()) {
         blockNames.push('suivi-bloc-liens')
         blockNames.push('conseils-personnels-titre')
-        blockNames.push('conseils-sante')
-        blockNames.push('conseils-sante-historique-symptomes')
 
         Array.from(element.querySelectorAll('.suivi-repetition')).forEach((elem) => {
             injection.suiviRepetition(elem, profil)
@@ -174,7 +172,6 @@ export function showRelevantBlocks(element, profil, algoOrientation) {
     blockNames = blockNames.concat(algoOrientation.vieQuotidienneBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.activiteProBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.grossesseBlockNamesToDisplay())
-    blockNames = blockNames.concat(algoOrientation.santeBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.enfantsBlockNamesToDisplay())
     displayBlocks(element, blockNames)
 }

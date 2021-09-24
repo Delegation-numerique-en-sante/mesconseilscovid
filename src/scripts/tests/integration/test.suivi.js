@@ -112,16 +112,8 @@ describe('Suivi', function () {
                 (await gravite.innerText()).trim(),
                 'Continuez à suivre l’évolution de vos symptômes pendant votre isolement.'
             )
-            // le bloc « Ma santé »
-            let bloc = await page.waitForSelector('#page.ready #conseils-sante summary')
-            await bloc.click()
-            // un bouton vers l’historique du suivi
-            let bouton = await page.waitForSelector(
-                '#page.ready #conseils-sante >> text="l’historique de vos symptômes"'
-            )
-            assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             // un bouton pour refaire le questionnaire
-            bouton = await page.waitForSelector(
+            let bouton = await page.waitForSelector(
                 '#page.ready >> text="Revenir à l’accueil"'
             )
             await Promise.all([
@@ -188,12 +180,9 @@ describe('Suivi', function () {
                 (await gravite.innerText()).trim(),
                 'Contactez le 15 ou demandez à un votre proche de le faire pour vous immédiatement.'
             )
-            // le bloc « Ma santé »
-            let bloc = await page.waitForSelector('#page.ready #conseils-sante summary')
-            await bloc.click()
             // un bouton vers l’historique du suivi
             let bouton = await page.waitForSelector(
-                '#page.ready #conseils-sante >> text="l’historique de vos symptômes"'
+                '#page.ready #suivi-bloc-liens >> text="Consulter mon historique"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             await Promise.all([
@@ -330,12 +319,9 @@ describe('Suivi', function () {
                 (await gravite.innerText()).trim(),
                 'Contactez le 15 ou demandez à un votre proche de le faire pour vous immédiatement.'
             )
-            // le bloc « Ma santé »
-            let bloc = await page.waitForSelector('#page.ready #conseils-sante summary')
-            await bloc.click()
             // un bouton vers l’historique du suivi
             let bouton = await page.waitForSelector(
-                '#page.ready #conseils-sante >> text="l’historique des symptômes"'
+                '#page.ready #suivi-bloc-liens >> text="Consulter mon historique"'
             )
             assert.equal(await bouton.getAttribute('href'), '#suivihistorique')
             await Promise.all([

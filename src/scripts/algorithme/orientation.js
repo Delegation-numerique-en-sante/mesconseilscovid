@@ -656,27 +656,6 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
-    santeBlockNamesToDisplay() {
-        const blockNames = []
-        if (this.personneFragile) {
-            if (this.profil.hasSymptomesActuelsReconnus()) {
-                blockNames.push('conseils-sante-personne-fragile-symptomatique')
-            } else {
-                blockNames.push('conseils-sante-personne-fragile')
-            }
-        }
-        if (blockNames.length) {
-            if (this.sup65 || this.profil.grossesse_3e_trimestre || this.imc > 30) {
-                blockNames.unshift('reponse-sante-caracteristiques-a-risques')
-            }
-            if (this.antecedents || this.profil.antecedent_chronique_autre) {
-                blockNames.unshift('reponse-sante-antecedents')
-            }
-            blockNames.unshift('conseils-sante')
-        }
-        return blockNames
-    }
-
     enfantsBlockNamesToDisplay() {
         const blockNames = []
         if (this.profil.foyer_enfants || !this.sup15) {
