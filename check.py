@@ -131,7 +131,6 @@ def service_worker():
         "illustrations/pediatrieecole.png",
         "illustrations/sante.png",
         "illustrations/situation.png",
-        "illustrations/solidarites-sante-gouv-fr-infog-vaccins-particuliers.png",
         "illustrations/symptomesactuels.png",
         "illustrations/symptomespasses.png",
         "illustrations/vaccins.png",

@@ -480,8 +480,7 @@ footer .legals {
 #conseils-covid summary,
 #conseils-pediatrie-general summary,
 #conseils-pediatrie-ecole summary,
-#conseils-pediatrie-medical summary,
-#conseils-vaccins summary {
+#conseils-pediatrie-medical summary {
     background-position: center 1rem;
     background-repeat: no-repeat;
     background-size: 35%;
@@ -517,8 +516,7 @@ footer .legals {
     #conseils-covid summary,
     #conseils-pediatrie-general summary,
     #conseils-pediatrie-ecole summary,
-    #conseils-pediatrie-medical summary,
-    #conseils-vaccins summary {
+    #conseils-pediatrie-medical summary {
         background-size: 15%;
         background-position: center left;
         padding: 0 0 0 8rem;
@@ -604,8 +602,7 @@ footer .legals {
 #depistage-form {
     background-image: url('illustrations/depistage.svg');
 }
-#vaccins-form,
-#conseils-vaccins summary {
+#vaccins-form {
     background-image: url('illustrations/vaccins.svg');
 }
 
