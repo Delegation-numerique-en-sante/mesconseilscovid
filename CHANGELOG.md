@@ -1,5 +1,12 @@
 # Changelog
 
+## 2021-09-27
+
+* précisions sur la vaccination et la dose de rappel
+* corrections sur la vaccination des mineurs
+* ajout de la liste des facteurs de risque de formes graves
+* précisions sur la reconnaissance des vaccins effectués à l’étranger
+
 ## 2021-09-24
 
 * ajout d’une question sur les symptômes possibles
