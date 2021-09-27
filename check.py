@@ -21,6 +21,7 @@ class LinkExtractor(HTMLParser):
     def reset(self):
         HTMLParser.reset(self)
         self.external_links = set()
+        self.internal_links = set()
 
     def handle_starttag(self, tag, attrs):
         if tag == "a":
@@ -37,6 +38,10 @@ class LinkExtractor(HTMLParser):
                 ):
                     return
                 self.external_links.add(url)
+            elif url.startswith(("/", "#")):
+                if url in ("/", "#") or url.startswith(("/#", "/illustrations/")):
+                    return
+                self.internal_links.add(url)
 
 
 @cli
@@ -71,6 +76,63 @@ def external_links(timeout: int = 10, delay: float = 0.1):
             if response.status_code != HTTPStatus.OK:
                 raise Exception(f"{external_link} is broken! ({response.status_code})")
         time.sleep(delay)  # avoid being throttled
+
+
+@cli
+def internal_links():
+    internal_contents = {}
+    internal_links = {}
+    internal_pages = []
+    for path in each_file_from(SRC_DIR, pattern="*.html"):
+        parser = LinkExtractor()
+        content = path.read_text()
+        internal_contents[path.name] = content
+        parser.feed(content)
+        internal_links[path.name] = parser.internal_links
+        internal_pages.append(path.name)
+
+    exceptions = ["#conseils-departement", "#conseils-depistage"]
+
+    for path, path_internal_links in internal_links.items():
+        for internal_link in path_internal_links:
+            # Check cross pages references.
+            if internal_link.startswith("/"):
+                if "#" in internal_link:
+                    path_name, anchor = internal_link.split("#", 1)
+                else:
+                    path_name = internal_link
+                    anchor = None
+                # Check missing pages.
+                if path_name[1:] not in internal_pages:
+                    raise Exception(
+                        (
+                            f"{path_name} referenced in {path} but "
+                            f"does not exist in {internal_pages}."
+                        )
+                    )
+                # Check missing anchors.
+                if anchor is not None:
+                    if f'id="{anchor}"' not in internal_contents[path_name[1:]]:
+                        raise Exception(
+                            (
+                                f"{internal_link} referenced in {path} but "
+                                f"does not exist in content."
+                            )
+                        )
+            # Check anchors on the same page.
+            elif internal_link.startswith("#"):
+                if (
+                    internal_link not in exceptions
+                    and f'id="{internal_link[1:]}"' not in internal_contents[path]
+                ):
+                    raise Exception(
+                        (
+                            f"{internal_link} referenced in {path} but "
+                            f"does not exist on that page."
+                        )
+                    )
+            else:
+                raise Exception(f"What is that link?! {internal_link}")
 
 
 @cli
