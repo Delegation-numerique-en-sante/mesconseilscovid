@@ -573,7 +573,7 @@
 
     #### Pour obtenir un QR code (pass sanitaire)
 
-    L’administration a mis en place des **démarches en ligne** permettant de demander à **convertir votre certificat de vaccination étranger** en passe sanitaire francais :
+    L’administration a mis en place des **démarches en ligne** permettant de demander à **convertir votre certificat de vaccination étranger** en pass sanitaire francais :
 
     * si vous êtes **français** ou ayant droit de français, âgé de plus de 18 ans, [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-francais-de-l-etranger) ;
 
