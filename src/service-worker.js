@@ -17,6 +17,7 @@ const CACHE_FILES = [
     'je-vis-avec-personne-covid-positive.html',
     'pass-sanitaire-qr-code-voyages.html',
     'covid-et-travail.html',
+    'covid-in-france.html',
     'tests-de-depistage.html',
     'fonts/marianne-regular-webfont.woff2',
     'fonts/marianne-bold-webfont.woff2',
