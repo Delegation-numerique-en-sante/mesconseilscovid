@@ -26,7 +26,7 @@
 
     </div>
 
-    Le rappel est réalisé avec un **vaccin à ARN messager (Pfizer ou Moderna)**, quel que soit le type de vaccin utilisé précédemment. En particulier, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné initialement avec le vaccin *Moderna*, et inversement.
+    Le rappel est réalisé avec un **vaccin à ARN messager (Pfizer ou Moderna)**, quel que soit le type de vaccin utilisé précédemment. Par exemple, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné initialement avec le vaccin *Moderna* ou *AstraZeneca*.
 
 
 .. question:: Quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
