@@ -26,6 +26,13 @@
 
     Le rappel est réalisé avec un **vaccin à ARN messager (Pfizer ou Moderna)**, quel que soit le type de vaccin utilisé précédemment. En particulier, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné initialement avec le vaccin *Moderna*, et inversement.
 
+    <div class="voir-aussi">
+
+    - [Quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?](#quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose)
+    - [Où me faire vacciner ?](#ou-me-faire-vacciner)
+
+    </div>
+
 
 .. question:: Quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
 
@@ -40,6 +47,13 @@
     * pour les personnes sévèrement **immunodéprimées** (*4<sup>e</sup> dose*) : au moins **3 mois** après la dernière injection de vaccin.
 
     **Dès maintenant**, et si ce délai est respecté, vous pouvez prendre rendez-vous chez un **professionnel de santé** (médecin, pharmacien, infirmier…) ou dans un **centre de vaccination** (*voir ci-dessous*).
+
+    <div class="voir-aussi">
+
+    - [Devrai-je recevoir une dose de rappel, dite 3<sup>e</sup> dose ?](#devrai-je-recevoir-une-dose-de-rappel-dite-3-e-dose)
+    - [Où me faire vacciner ?](#ou-me-faire-vacciner)
+
+    </div>
 
 
 .. question:: Où me faire vacciner ?
@@ -82,7 +96,7 @@
 
         <div class="voir-aussi">
 
-        → consulter la composition du vaccin [Pfizer-BioNTech](https://www.mesvaccins.net/web/vaccines/658-comirnaty-pfizer-biontech#vaccin_composition), [Moderna](https://www.mesvaccins.net/web/vaccines/656-spikevax-covid-19-vaccine-moderna#vaccin_composition), [AstraZeneca](https://www.mesvaccins.net/web/vaccines/650-vaxzevria-covid-19-vaccine-astrazeneca#vaccin_composition) ou [Janssen](https://www.mesvaccins.net/web/vaccines/666-covid-19-vaccine-janssen#vaccin_composition)
+        - consulter la composition du vaccin [Pfizer-BioNTech](https://www.mesvaccins.net/web/vaccines/658-comirnaty-pfizer-biontech#vaccin_composition), [Moderna](https://www.mesvaccins.net/web/vaccines/656-spikevax-covid-19-vaccine-moderna#vaccin_composition), [AstraZeneca](https://www.mesvaccins.net/web/vaccines/650-vaxzevria-covid-19-vaccine-astrazeneca#vaccin_composition) ou [Janssen](https://www.mesvaccins.net/web/vaccines/666-covid-19-vaccine-janssen#vaccin_composition)
 
         </div>
 
