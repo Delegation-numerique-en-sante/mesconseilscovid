@@ -4,7 +4,7 @@
 
 <header></header>
 
-<div id="conseils-pediatrie-general">
+<div id="conseils-pediatrie-general" itemscope itemtype="https://schema.org/FAQPage">
 
 <div class="conseil">
 
