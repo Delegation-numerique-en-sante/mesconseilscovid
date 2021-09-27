@@ -60,7 +60,7 @@
 
 .. question:: Comment prendre rendez-vous pour me faire vacciner ?
 
-    Les centres de vaccination proposent une prise de rendez-vous **par internet** (via une des trois plateformes Doctolib, Keldoc ou Maiia) ou **par téléphone**.
+    Les centres de vaccination proposent une prise de rendez-vous **par internet** (via une des trois plateformes [**Doctolib**](www.doctolib.fr), [**Keldoc**](https://www.keldoc.com/) ou [**Maiia**](https://www.maiia.com/) ou **par téléphone**.
 
     <div class="voir-aussi">
 
