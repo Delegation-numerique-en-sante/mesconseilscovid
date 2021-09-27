@@ -430,17 +430,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Que doivent faire mes enfants si je suis positif à la Covid ?
     :level: 3
 
-    Si vous êtes positif à la Covid, alors vos enfants sont **cas contact** (sauf s’ils ont eux-mêmes déjà eu la Covid dans les 2 derniers mois) :
+    Si vous êtes positif à la Covid, alors vos enfants sont **cas contact** (sauf s’ils ont eux-mêmes déjà eu la Covid dans les 2 derniers mois).
 
-    * s’ils sont **vaccinés**, alors ils n’ont pas besoin de s’isoler et peuvent continuer à aller à l’école ;
+    Qu’ils soient **vaccinés ou non**, vos enfants doivent faire un **test antigénique dès que possible**.
 
-    * s’ils ne sont **pas vaccinés**, ils doivent **rester isolés** eux aussi, et ne **doivent pas aller à l’école**.
-
-    Dans les deux cas, ils devront faire un **test antigénique** dès que possible :
-
-    * si ce test est **positif**, ils devront s’isoler pendant 10 jours ;
-    * si ce test est **négatif** :
-        * ils devront faire un second test **17 jours** après le début de vos symptômes (ou votre test positif) ;
+    * si leur test est **positif**, ils devront s’isoler pendant 10 jours ;
+    * si leur test est **négatif** :
+        * s’ils ne sont **pas vaccinés**, ils devront **rester isolés** eux aussi, et ne **devront pas aller à l’école** (par contre, s’ils sont **vaccinés**, ils n’auront pas besoin de s’isoler et pourront continuer à aller à l’école) ;
+        * ils devront faire un second test **17 jours** après le début de vos symptômes (ou après la date de votre propre test positif) ;
         * s’ils ont eux-mêmes des **symptômes** (fièvre, etc.) avant la date du second test, alors ils devront s’isoler et faire un test sans attendre.
 
     <div class="voir-aussi">
