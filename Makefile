@@ -61,6 +61,9 @@ check: check-external-links check-versions check-orphelins check-diagrammes chec
 check-external-links:  # Check that links to external pages are still valid.
 	python3 check.py external_links --timeout 40 --delay 0.3
 
+check-internal-links:  # Check that links to internal pages are still valid.
+	python3 check.py internal_links
+
 check-versions:  # Check that current version matches service-worker one.
 	python3 check.py versions
 
@@ -122,7 +125,7 @@ release:
 prod: clean install lint pretty test check  ## Make sure everything is clean prior to deploy.
 	# Note: `test` dependency will actually generate the `build`.
 
-.PHONY: serve serve-ssl install install-python install-js clean test test-unit test-integration test-feedback check-external-links check-versions check-documentation check-service-worker check-spelling optimize-images build build-html build-sitemap generate dev pre-commit release prod help
+.PHONY: serve serve-ssl install install-python install-js clean test test-unit test-integration test-feedback check-external-links check-internal-links check-versions check-documentation check-service-worker check-spelling optimize-images build build-html build-sitemap generate dev pre-commit release prod help
 
 help:  ## Display this help.
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
