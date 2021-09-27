@@ -88,7 +88,7 @@
 
 .. question:: Quelles sont les facteurs de risque de formes graves de Covid ?
 
-    L’**âge** est le principal facteur de risque de développer une **forme grave** de Covid, c’est à dire pouvant conduire à une hospitalisation, voire à un décès.
+    L’**âge** est le principal facteur de risque de développer une **forme grave** de Covid, c’est-à-dire pouvant conduire à une hospitalisation, voire à un décès.
 
     Les **comorbidités** (autres maladies) suivantes jouent aussi un rôle significatif :
 
@@ -100,11 +100,11 @@
 
     * pathologies à **haut risque** de décès :
         * diabète de type 1 et de type 2,
-        * obésité (IMC > 30 kg/m2),
+        * obésité (IMC > 30 kg/m<sup>2</sup>),
         * cancer (en particulier si récent et/ou en progression et/ou sous chimiothérapie),
-        * BPCO (bronchopneumopathie chronique obstructive) et insuffisance respiratoire ;
+        * BPCO (bronchopneumopathie chronique obstructive) et insuffisance respiratoire,
         * insuffisance cardiaque,
-        * hypertension artérielle compliquée.
+        * hypertension artérielle compliquée,
         * maladie hépatique chronique (en particulier cirrhose),
         * troubles psychiatriques,
         * démence,
