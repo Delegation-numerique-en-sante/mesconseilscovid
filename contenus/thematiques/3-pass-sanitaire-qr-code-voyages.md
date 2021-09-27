@@ -36,7 +36,7 @@
     <div class="voir-aussi">
 
     - [Comment faire pour obtenir une attestation de vaccination, certificat de rétablissement ou de dépistage avec un QR Code ?](#obtenir-son-justificatif-avec-qr-code)
-    - [Je suis touriste, étudiant étranger ou français vacciné à l’étranger (hors UE), comment obtenir un QR code valable en France ?](#je-suis-touriste-etudiant-etranger-ou-francais-vaccine-a-l-etranger-hors-ue-comment-obtenir-un-qr-code-valable-en-france)
+    - [J’ai été vacciné à l’étranger avec un vaccin reconnu en France, comment obtenir un QR code valable en France ?](#j-ai-ete-vaccine-a-l-etranger-avec-un-vaccin-reconnu-en-france-comment-obtenir-un-qr-code-valable-en-france)
 
     </div>
 
@@ -338,8 +338,6 @@
 
     En cas de **contre-indication médicale** (voir la [liste des contre-indications à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination)), vous pouvez demander à votre médecin de vous faire un **certificat médical**, qui fera office de **pass sanitaire**.
 
-    En cas de **contre-indication médicale** (voir la [liste des contre-indications à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination)), vous pouvez demander à votre médecin de vous faire un **certificat médical**, qui fera office de **pass sanitaire**.
-
 
 .. question:: Où le pass sanitaire est-il obligatoire ?
     :level: 3
@@ -554,31 +552,36 @@
     Vous pouvez présenter votre pass sanitaire (attestation de vaccination, certificat de rétablissement ou de dépistage) au **format papier ou numérique (PDF)** sans passer par l’application TousAntiCovid.
 
 
-.. question:: Je suis touriste, étudiant étranger ou français vacciné à l’étranger (hors UE) avec un vaccin reconnu par l'Agence européenne du médicament (ou équivalent), comment obtenir un QR code valable en France ?
+.. question:: J’ai été vacciné à l’étranger avec un vaccin reconnu en France, comment obtenir un QR code valable en France ?
     :level: 3
 
-    Les vaccins reconnus par l'Agence européenne du médicament sont : Pfizer, Moderna, AstraZeneca et Janssen.
-    Les vaccins Covishield, R-Covi et Fiocruz sont considérés équivalents à AstraZeneca.
-    
-    1. justifier d'une vaccination complète : 
-    
-    * Si vous avez reçu **2 doses** de vaccin à l'étranger, alors votre vaccination est considérée comme **complète.**
-    
-    * Si vous n'avez reçu qu'**une seule dose** de vaccin à l'étranger, vous devrez recevoir une **2<sup>e</sup>** injection de vaccin à **ARNm** (Pfizer ou Moderna) pour valider votre vaccination en France. 
-    
-    2. faire la demande de QR code (pass sanitaire)
-   
+    #### Vaccins reconnus en France
+
+    Les vaccins reconnus par l’Agence européenne du médicament sont : **Pfizer**, **Moderna**, **AstraZeneca** et **Janssen**.
+
+    Les vaccins **Covishield**, **R-Covi** et **Fiocruz** sont considérés équivalents à AstraZeneca.
+
+
+    #### Pour justifier d’une vaccination complète
+
+    * Si vous avez reçu **2 doses** de vaccin à l’étranger, alors votre vaccination est considérée comme **complète**.
+
+    * Si vous n’avez reçu qu’**une seule dose** de vaccin à l’étranger, vous devrez recevoir une **2<sup>e</sup>** injection de vaccin à **ARNm** (*Pfizer* ou *Moderna*) pour valider votre vaccination en France.
+
+
+    #### Pour obtenir un QR code (pass sanitaire)
+
     * Si vous êtes **français ou ayant droit de français** âgé de plus de 18 ans, [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-francais-de-l-etranger).
 
     * Si vous êtes **étudiant étranger** inscrit dans un établissement d’enseignement supérieur français pour la rentrée 2021-2022 et que vous possédez un visa d’études, [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etudiants).
 
-    * Si vous êtes **touriste** âgé(e) de plus de 18 ans, de nationalité extra-européenne [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etrangers).
+    * Si vous êtes **touriste** âgé(e) de plus de 18 ans et de nationalité extra-européenne [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etrangers).
 
     En attendant, un **test de dépistage négatif de moins de 72 h** pourra faire office de pass sanitaire.
 
     <div class="conseil conseil-jaune">
 
-    Attention, les tests de dépistages sont gratuits pour les assurés sociaux français ou européens mais **payants** pour les personnes qui ne bénéficient pas de cette couverture sociale.
+    Attention, les tests de dépistage sont gratuits pour les assurés sociaux français ou européens mais **payants** pour les personnes qui ne bénéficient pas de cette couverture sociale.
 
     </div>
 
@@ -592,24 +595,27 @@
 
 </div>
 
- .. question:: Je suis vacciné(e) à l'étranger avec un vaccin non-reconnu par l'Agence européenne du médicament (Sinovac, Sinopharm). Comment faire valoir ma vaccination en France et obtenir un pass sanitaire ?
+
+.. question:: J’ai été vacciné à l’étranger avec un vaccin non reconnu en France (Sinovac, Sinopharm), comment faire valoir ma vaccination en France et obtenir un pass sanitaire ?
     :level: 3
-    
-    Les vaccins **Sinopharm et Sinovac** sont reconnus par l'Organisation mondiale de la santé (OMS) mais pas par l'Agence européenne du médicament. Pour faire valoir votre vaccination en France et obtenir un pass sanitaire il faut : 
-    
-    * recevoir **2 doses** de vaccins à ARNm (**Pfizer** ou **Moderna**), si vous avez reçu une dose de Sinopharm ou Sinovac.
-    
-    * recevoir **1 dose** de vaccins à ARNm (**Pfizer** ou **Moderna**), si vous avez reçu 2 doses de Sinopharm ou Sinovac. 
-    
-    Dans les 2 cas, l'injection doit se faire au moins **4 semaine** après la dernière injection de Sinopharm ou Sinovac.
-    
-    La vaccination sera considérée comme complète **7 jours** après votre dernière injection de vaccin à ARNm.
+
+    Les vaccins **Sinopharm et Sinovac** sont reconnus par l’Organisation mondiale de la santé (OMS) mais pas par l’Agence européenne du médicament.
+
+    Pour faire valoir votre vaccination en France et obtenir un pass sanitaire il faut :
+
+    * recevoir **2 doses** de vaccin à ARNm (**Pfizer** ou **Moderna**), si vous avez reçu une dose de Sinopharm ou Sinovac ;
+
+    * recevoir **1 dose** de vaccin à ARNm (**Pfizer** ou **Moderna**), si vous avez reçu 2 doses de Sinopharm ou Sinovac.
+
+    Dans les 2 cas, l’injection doit se faire au moins **4 semaines** après la dernière injection de Sinopharm ou Sinovac.
+
+    La vaccination sera considérée comme complète **7 jours** après votre dernière injection de vaccin à ARNm, et le **QR code** de l’attestation de vaccination sera alors valable comme **pass sanitaire**.
 
     En attendant, un **test de dépistage négatif de moins de 72 h** pourra faire office de pass sanitaire.
 
     <div class="conseil conseil-jaune">
 
-    Attention, les tests de dépistages sont gratuits pour les assurés sociaux français ou européens mais **payants** pour les personnes qui ne bénéficient pas de cette couverture sociale.
+    Attention, les tests de dépistage sont gratuits pour les assurés sociaux français ou européens mais **payants** pour les personnes qui ne bénéficient pas de cette couverture sociale.
 
     </div>
 
