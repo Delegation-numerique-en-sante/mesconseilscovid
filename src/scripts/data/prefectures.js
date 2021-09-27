@@ -44,7 +44,7 @@ export default {
     '42': 'http://www.loire.gouv.fr/covid-19-point-de-situation-dans-la-loire-r1747.html',
     '43': 'http://www.haute-loire.gouv.fr/',
     '44': 'https://www.loire-atlantique.gouv.fr/Actualites/COVID-19-Point-sur-la-situation-en-Loire-Atlantique',
-    '45': 'https://www.loiret.gouv.fr/Actualites/COVID-19-La-situation-dans-le-Loiret',
+    '45': 'https://www.loiret.gouv.fr/Actualites/Covid-19/Les-mesures-sanitaires/COVID-19',
     '46': 'http://www.lot.gouv.fr/covid-19-point-sur-la-situation-dans-le-lot-r4332.html',
     '47': 'http://www.lot-et-garonne.gouv.fr/coronavirus-covid-19-toutes-les-informations-r876.html',
     '48': 'http://www.lozere.gouv.fr/Actualites/COVID-19-Point-de-situation-en-Lozere',
