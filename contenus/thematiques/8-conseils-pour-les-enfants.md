@@ -312,15 +312,16 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     </div>
 
+
 .. question:: Puis-je continuer à allaiter mon enfant si je ressens des symptômes ou si je suis positive à la Covid ?
     :level: 3
-    
+
     **Oui.** Le virus ne se transmet pas par le lait maternel, vous pouvez donc continuer à allaiter même en étant positive à la Covid. Cependant, il faut respecter certaines **précautions** pour ne pas transmettre le virus à votre enfant autrement :
     * **lavez-vous les mains** avec du savon ou du gel hydroalcoolique avant de toucher le nourrisson ;
     * portez un **masque** dès que vous êtes en présence de votre nourrisson et particulièrement pendant l’allaitement ;
     * **désinfectez** systématiquement les surfaces et objets que vous avez touché et qui pourraient entrer en contact avec le nourrisson (table à langer, tétine…) ;
     * utilisez des mouchoirs à usage unique.
-    
+
 
 .. question:: À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
     :level: 3
@@ -439,7 +440,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * si ce test est **positif**, ils devront s’isoler pendant 10 jours ;
     * si ce test est **négatif** :
-        * ils devront faire un second test **17 jours** après le début de vos symptômes (ou votre test positif) avant de pouvoir retourner à l’école ;
+        * ils devront faire un second test **17 jours** après le début de vos symptômes (ou votre test positif) ;
         * s’ils ont eux-mêmes des **symptômes** (fièvre, etc.) avant la date du second test, alors ils devront s’isoler et faire un test sans attendre.
 
     <div class="voir-aussi">
