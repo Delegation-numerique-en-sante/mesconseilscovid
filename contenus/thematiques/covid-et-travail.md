@@ -88,7 +88,7 @@ Obtenez les **réponses** à vos questions sur le **droit du travail** sur le [*
 
 ### Quels sont les recours face à un employeur qui ne fait pas respecter les mesures de protection anti-Covid-19 ? 
 
-Si votre employeur **ne respecte pas** les recommandations des autorit"s sanitaires, et notamment s'il : 
+Si votre employeur **ne respecte pas** les recommandations des autorités sanitaires, et notamment s'il : 
 * n'isole pas les personnes positives ou symptomatiques;
 * ne fait pas respecter les gestes barrières...
 
@@ -115,10 +115,10 @@ Voici quelques exemples de pratiques qui peuvent être mises en place :
     * limiter le nombre de personnes présentes dans les locaux pour faciliter la **distanciation physique** en instaurant une **jauge**;
     * décider d'un nombre de **jours télétravaillés** par semaine et privilégier les réunions à distance;
     * attribuer une **place fixe** à chaque employé (suspendre l'*open flex* ou bureau nomade);
-    * éviter d'aller au **restaurant d'entreprise** aux heures d'affluence et dejeuner **seul** ou avec les membres de **mon équipe** pour éviter de multiplier les contacts.
+    * éviter d'aller au **restaurant d'entreprise** aux heures d'affluence et déjeuner **seul** ou avec les membres de **mon équipe** pour éviter de multiplier les contacts.
   
 * Informer les employés : 
-    * sur l'efficacité des **mesures barrières :* le masque ; la distanciation ; l'isolement dès les premiers symptômes;
+    * sur l'efficacité des **mesures barrières** : le masque ; la distanciation ; l'isolement dès les premiers symptômes ;
     * sur la possibilité de se faire **vacciner** pendant les heures de travail, dans l'entreprise ou ailleurs (centre de vaccination, pharmacie, médecin...).
 
 * (Faire) respecter les règles sanitaires : 
