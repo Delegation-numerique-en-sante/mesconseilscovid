@@ -54,9 +54,9 @@
 
     <div class="voir-aussi">
 
-    - [Trouver un lieu de vaccination Covid-19](https://www.sante.fr/cf/centres-vaccination-covid.html) : site officiel (santé.fr)
-    - [ViteMaDose](https://vitemadose.covidtracker.fr/) : trouvez facilement un créneau près de chez vous
-    - Par téléphone : en appelant le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h)
+    - Consultez [l’annuaire des lieux de vaccination Covid-19](https://www.sante.fr/cf/centres-vaccination-covid.html) sur le site officiel (santé.fr)
+    - Trouvez rapidement un créneau près de chez vous sur [ViteMaDose](https://vitemadose.covidtracker.fr/)
+    - Prenez rendez-vous par téléphone : en appelant le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h)
 
     </div>
 
@@ -67,9 +67,9 @@
 
     <div class="voir-aussi">
 
-    - [Trouver un lieu de vaccination Covid-19](https://www.sante.fr/cf/centres-vaccination-covid.html) : site officiel (santé.fr)
-    - [ViteMaDose](https://vitemadose.covidtracker.fr/) : trouvez facilement un créneau près de chez vous
-    - Par téléphone : en appelant le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h)
+    - Consultez [l’annuaire des lieux de vaccination Covid-19](https://www.sante.fr/cf/centres-vaccination-covid.html) sur le site officiel (santé.fr)
+    - Trouvez rapidement un créneau près de chez vous sur [ViteMaDose](https://vitemadose.covidtracker.fr/)
+    - Prenez rendez-vous par téléphone : en appelant le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h)
 
     </div>
 
