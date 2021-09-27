@@ -20,7 +20,9 @@
 
     <div class="conseil conseil-jaune">
 
-    Si vous avez eu la Covid **après votre dernière dose**, alors vous n’êtes **pas éligible** à ce rappel.
+    - Une dose de rappel n’est actuellement **pas prévue** pour le reste de la population.
+
+    - Si vous avez eu la Covid **après votre dernière dose**, vous n’êtes **pas éligible** à ce rappel.
 
     </div>
 
