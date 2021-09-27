@@ -293,8 +293,8 @@ jobs:
         run: |
           python3 build.py index
 
-      - name: Check links
+      - name: Check external links
         run: |
-          make check-links
+          make check-external-links
         env:
           PYTHONUNBUFFERED: "1"
