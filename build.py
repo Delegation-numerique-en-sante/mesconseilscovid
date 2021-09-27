@@ -282,7 +282,7 @@ class Thematique:
     def name(self):
         stem = self.path.stem
         if stem[0].isdigit():
-            return stem[2:]
+            return stem.split("-", 1)[1]
         return stem
 
     @property
