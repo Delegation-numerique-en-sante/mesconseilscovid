@@ -20,7 +20,7 @@ TEMPLATES_DIR = HERE / "templates"
 class LinkExtractor(HTMLParser):
     def reset(self):
         HTMLParser.reset(self)
-        self.links = set()
+        self.external_links = set()
 
     def handle_starttag(self, tag, attrs):
         if tag == "a":
@@ -30,17 +30,19 @@ class LinkExtractor(HTMLParser):
                 if url.startswith(
                     (
                         "https://www.facebook.com/",
+                        "https://www.youtube.com/",
                         "https://twitter.com/",
                         "https://github.com/",
                     )
                 ):
                     return
-                self.links.add(url)
+                self.external_links.add(url)
 
 
 @cli
-def links(timeout: int = 10, delay: float = 0.1):
-    dynamically_generated_links_via_injection = {
+def external_links(timeout: int = 10, delay: float = 0.1):
+    # Dynamically generated links via injection.
+    external_links = {
         "https://www.sante.fr/cf/centres-vaccination-covid/departement-22-cotes-d'armor.html",
         "https://www.sante.fr/cf/centres-vaccination-covid/departement-20A-corse-du-sud.html",
         "https://www.sante.fr/cf/centres-vaccination-covid/departement-01-ain.html",
@@ -49,15 +51,17 @@ def links(timeout: int = 10, delay: float = 0.1):
         "https://www.sante.fr/cf/centres-depistage-covid/departement-2A.html",
         "https://www.sante.fr/cf/centres-depistage-covid.html",
     }
-    parser = LinkExtractor()
-    content = (SRC_DIR / "index.html").read_text()
-    parser.feed(content)
-    links = parser.links.union(dynamically_generated_links_via_injection)
-    for link in sorted(links):
-        print(link)
+    for path in each_file_from(SRC_DIR, pattern="*.html"):
+        parser = LinkExtractor()
+        content = path.read_text()
+        parser.feed(content)
+        external_links = external_links.union(parser.external_links)
+
+    for external_link in sorted(external_links):
+        print(external_link)
         with httpx.stream(
             "GET",
-            link,
+            external_link,
             timeout=timeout,
             verify=False,  # ignore SSL certificate validation errors
         ) as response:
@@ -65,7 +69,7 @@ def links(timeout: int = 10, delay: float = 0.1):
                 print("Warning: we’re being throttled, skipping link (429)")
                 continue
             if response.status_code != HTTPStatus.OK:
-                raise Exception(f"{link} is broken! ({response.status_code})")
+                raise Exception(f"{external_link} is broken! ({response.status_code})")
         time.sleep(delay)  # avoid being throttled
 
 

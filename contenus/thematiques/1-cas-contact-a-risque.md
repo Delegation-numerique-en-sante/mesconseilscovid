@@ -8,7 +8,7 @@
 
 <div class="conseil conseil-jaune">
 
-Si vous êtes cas contact d’une **personne de votre foyer**, rendez-vous sur notre page spécialisée [**« Je vis avec une personne positive à la Covid, que dois-je faire ? »**](https://mesconseilscovid.sante.gouv.fr/je-vis-avec-personne-covid-positive.html).
+Si vous êtes cas contact d’une **personne de votre foyer**, rendez-vous sur notre page spécialisée [**« Je vis avec une personne positive à la Covid, que dois-je faire ? »**](/je-vis-avec-personne-covid-positive.html).
 
 </div>
 

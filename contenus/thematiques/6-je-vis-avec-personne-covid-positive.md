@@ -36,7 +36,7 @@ Même si vous ne présentez pas de symptômes, il faut vous faire tester dès qu
 
 </div>
 
-Si vous ne pouvez pas télétravailler, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr).
+Si vous ne pouvez pas télétravailler, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr/).
 
 ### 2. Faites un test de contrôle
 
@@ -92,7 +92,7 @@ Même si vous ne présentez pas de symptômes, il faut vous faire tester dès qu
 
 </div>
 
-Si vous ne pouvez pas télétravailler, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr).
+Si vous ne pouvez pas télétravailler, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr/).
 
 ### 2. Faites un test de contrôle
 
