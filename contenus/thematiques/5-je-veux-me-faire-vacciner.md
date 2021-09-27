@@ -14,7 +14,7 @@
 
     * les résident(e)s des <abbr title="Établissement d’Hébergement pour Personnes Âgées Dépendantes">**EHPAD**</abbr> et <abbr title="Unités de Soins de Longue Durée">**USLD**</abbr>,
     * les personnes de **65 ans et plus**,
-    * les personnes avec des **comorbidités** augmentant le risque de formes graves de Covid,
+    * les personnes avec des **comorbidités** (voir [la liste ci-dessous](#quelles-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves de Covid,
     * les personnes **sévèrement immunodéprimées**,
     * les personnes vaccinées avec le **vaccin Janssen**.
 
@@ -84,6 +84,33 @@
     - Par téléphone : en appelant le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h)
 
     </div>
+
+
+.. question:: Quelles sont les facteurs de risque de formes graves de Covid ?
+
+    L’**âge** est le principal facteur de risque de développer une **forme grave** de Covid, c’est à dire pouvant conduire à une hospitalisation, voire à un décès.
+
+    Les **comorbidités** (autres maladies) suivantes jouent aussi un rôle significatif :
+
+    * pathologies à **très haut risque** de décès :
+        * trisomie 21 (surtout à partir de l’âge de 40 ans),
+        * transplantation d’organe solide ou de cellules souches hématopoïétiques,
+        * insuffisance rénale chronique (avec dialyse),
+        * certaines maladies rares (consulter [la liste](https://solidarites-sante.gouv.fr/IMG/pdf/liste_maladies_rares_cosv_fmr-2.pdf) sur le site du ministère de la santé) ;
+
+    * pathologies à **haut risque** de décès :
+        * diabète de type 1 et de type 2,
+        * obésité (IMC > 30 kg/m2),
+        * cancer (en particulier si récent et/ou en progression et/ou sous chimiothérapie),
+        * BPCO (bronchopneumopathie chronique obstructive) et insuffisance respiratoire ;
+        * insuffisance cardiaque,
+        * hypertension artérielle compliquée.
+        * maladie hépatique chronique (en particulier cirrhose),
+        * troubles psychiatriques,
+        * démence,
+        * antécédent d’accident vasculaire cérébral.
+
+    La **grossesse** est également un facteur de risque de développer des formes graves.
 
 
 .. question:: Pourrai-je recevoir la 2<sup>e</sup> dose sur mon lieu de vacances ?
