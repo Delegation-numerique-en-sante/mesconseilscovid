@@ -571,11 +571,13 @@
 
     #### Pour obtenir un QR code (pass sanitaire)
 
-    * Si vous êtes **français ou ayant droit de français** âgé de plus de 18 ans, [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-francais-de-l-etranger).
+    L’administration a mis en place des **démarches en ligne** permettant de demander à **convertir votre certificat de vaccination étranger** en passe sanitaire francais :
 
-    * Si vous êtes **étudiant étranger** inscrit dans un établissement d’enseignement supérieur français pour la rentrée 2021-2022 et que vous possédez un visa d’études, [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etudiants).
+    * si vous êtes **français** ou ayant droit de français, âgé de plus de 18 ans, [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-francais-de-l-etranger) ;
 
-    * Si vous êtes **touriste** âgé(e) de plus de 18 ans et de nationalité extra-européenne [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etrangers).
+    * si vous êtes **étudiant étranger** inscrit dans un établissement d’enseignement supérieur français pour la rentrée 2021-2022 et que vous possédez un visa d’études, [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etudiants) ;
+
+    * si vous êtes **touriste** de nationalité extra-européenne, âgé de plus de 18 ans, [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etrangers).
 
     En attendant, un **test de dépistage négatif de moins de 72 h** pourra faire office de pass sanitaire.
 
