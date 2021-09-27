@@ -555,6 +555,8 @@
 .. question:: J’ai été vacciné à l’étranger avec un vaccin reconnu en France, comment obtenir un QR code valable en France ?
     :level: 3
 
+    Pour que votre vaccination soit reconnue comme pass sanitaire en France il faut : être complètement vacciné(e) avec un vaccin reconnu en France (ou équivalent) et obtenir un QR code.
+    
     #### Vaccins reconnus en France
 
     Les vaccins reconnus par l’Agence européenne du médicament sont : **Pfizer**, **Moderna**, **AstraZeneca** et **Janssen**.
