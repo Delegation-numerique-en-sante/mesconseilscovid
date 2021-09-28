@@ -31,7 +31,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - Notre rubrique sur la [vaccination des mineurs de plus de 12 ans](#vaccination) ci-dessous
+    - Notre rubrique sur la [vaccination des mineurs de plus de 12 ans](#conseils-vaccins) ci-dessous
 
     - Notre autre page sur le [pass sanitaire](/pass-sanitaire-qr-code-voyages.html)
 
