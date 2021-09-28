@@ -55,7 +55,7 @@ def external_links(timeout: int = 10, delay: float = 0.1):
         parser = LinkExtractor()
         content = path.read_text()
         parser.feed(content)
-        external_links = external_links.union(parser.external_links)
+        external_links |= parser.external_links
 
     for external_link in sorted(external_links):
         print(external_link)
