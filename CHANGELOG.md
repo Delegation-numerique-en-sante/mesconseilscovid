@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-09-28
+
+* précisions sur la vaccination, la grossesse et l’allaitement
+* catégorisation des contenus pour mineurs par âge
+
 ## 2021-09-27
 
 * précisions sur la vaccination et la dose de rappel
