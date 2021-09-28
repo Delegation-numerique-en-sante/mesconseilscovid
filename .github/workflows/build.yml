@@ -293,14 +293,14 @@ jobs:
         run: |
           python3 build.py index thematiques
 
-      - name: Check external links
-        run: |
-          make check-external-links
-        env:
-          PYTHONUNBUFFERED: "1"
-
       - name: Check internal links
         run: |
           make check-internal-links
+        env:
+          PYTHONUNBUFFERED: "1"
+
+      - name: Check external links
+        run: |
+          make check-external-links
         env:
           PYTHONUNBUFFERED: "1"
