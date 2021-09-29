@@ -224,8 +224,15 @@ export default class App {
         this.enregistrerProfilActuel()
     }
     trackPageView(pageName) {
-        this.plausible('pageview')
+        this.plausible('pageview', {
+            lang: this._preferedLanguages(),
+        })
         this.atinternet(pageName)
+    }
+    _preferedLanguages() {
+        // cf. https://stackoverflow.com/a/25603630
+        // eslint-disable-next-line compat/compat
+        return navigator.languages || [navigator.language || navigator.userLanguage]
     }
     plausible(eventName, props = {}) {
         const searchParams = new URLSearchParams(window.location.search)
