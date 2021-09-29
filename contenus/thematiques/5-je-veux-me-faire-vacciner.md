@@ -14,7 +14,7 @@
 
     * les résident(e)s des <abbr title="Établissement d’Hébergement pour Personnes Âgées Dépendantes">**EHPAD**</abbr> et <abbr title="Unités de Soins de Longue Durée">**USLD**</abbr>,
     * les personnes de **65 ans et plus**,
-    * les personnes avec des **comorbidités** (voir [la liste ci-dessous](#quelles-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves de Covid,
+    * les personnes avec des **comorbidités** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves de Covid,
     * les personnes **sévèrement immunodéprimées**,
     * les personnes vaccinées avec le **vaccin Janssen**.
 
