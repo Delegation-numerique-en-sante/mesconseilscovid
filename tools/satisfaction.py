@@ -218,7 +218,7 @@ class FeedbackQuestions:
 
     def stats_du_jour(self, date):
         response = self.plausible_api.breakdown_for_day(
-            date=date, property="reponse", name="Avis par question"
+            date=date, property="event:props:reponse", event_name="Avis par question"
         )
         return self._regroupe_par_question(
             self._separe_question_et_reponse(response["results"]), dict_class=Reponses
@@ -226,7 +226,7 @@ class FeedbackQuestions:
 
     def stats_moyennes(self, start, end):
         response = self.plausible_api.breakdown_for_period(
-            start=start, end=end, property="reponse", name="Avis par question"
+            start=start, end=end, property="event:props:reponse", event_name="Avis par question"
         )
         nb_jours = (end - start).days + 1
         return self._regroupe_par_question(
@@ -298,29 +298,29 @@ class PlausibleAPI:
         self.token = token
         self.site_id = site_id
 
-    def breakdown_for_day(self, date, property, name):
+    def breakdown_for_day(self, date, property, event_name):
         resp = httpx.get(
             f"https://{self.host}/api/v1/stats/breakdown",
             params={
                 "site_id": self.site_id,
                 "period": "day",
                 "date": date.isoformat(),
-                "property": f"event:props:{property}",
-                "names": f"event:name=={name}",
+                "property": property,
+                "names": f"event:name=={event_name}",
             },
             headers={"Authorization": f"Bearer {self.token}"},
         )
         return resp.json()
 
-    def breakdown_for_period(self, start, end, property, name):
+    def breakdown_for_period(self, start, end, property, event_name):
         resp = httpx.get(
             f"https://{self.host}/api/v1/stats/breakdown",
             params={
                 "site_id": self.site_id,
                 "period": "custom",
                 "date": start.isoformat() + "," + end.isoformat(),
-                "property": f"event:props:{property}",
-                "names": f"event:name=={name}",
+                "property": property,
+                "names": f"event:name=={event_name}",
             },
             headers={"Authorization": f"Bearer {self.token}"},
         )
