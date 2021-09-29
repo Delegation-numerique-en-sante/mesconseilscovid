@@ -409,6 +409,10 @@ footer .feedback-block {
     padding: 0.5rem;
 }
 
+.feedback-form fieldset {
+    width: 100%;
+}
+
 .feedback-form textarea {
     font-size: 130%;
     display: block;
@@ -1185,7 +1189,7 @@ a.button-feedback-social-whatsapp {
     flex-direction: column;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    padding: 0.75rem 0.5rem 0 0.5rem !important;
+    padding: 0.75rem 1rem 0 1rem !important;
     text-align: center;
     font-size: 95%;
 }

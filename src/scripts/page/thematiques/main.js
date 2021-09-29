@@ -131,27 +131,23 @@ function feedbackPageEnCours(app) {
             })
             const reponse = event.target.submitter.value
             opacityTransition(feedbackQuestionForm, 500, (feedbackQuestionForm) => {
-                switch (choix) {
-                    case 'non':
-                    case 'bof':
-                        demandeRemarques(feedbackQuestionForm, choix, question, reponse)
-                        break
-                    case 'oui':
-                        afficheRemerciements(feedbackQuestionForm, choix, reponse)
-                        break
-                }
+                let label =
+                    choix === 'oui'
+                        ? 'Avez-vous des remarques ou des suggestions pour améliorer ces conseils ?'
+                        : 'Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?'
+                demandeRemarques(feedbackQuestionForm, choix, question, reponse, label)
             })
         })
     })
 }
 
-function demandeRemarques(feedbackQuestionForm, choix, question, reponse) {
+function demandeRemarques(feedbackQuestionForm, choix, question, reponse, label) {
     const formulaire = document.createElement('form')
     formulaire.classList.add('feedback-form')
     formulaire.innerHTML = `
         <fieldset>
             <p role="status">Merci pour votre retour.</p>
-            <label for="message_conseils">Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?</label>
+            <label for="message_conseils">${label}</label>
             <textarea id="message_conseils" name="message" rows="9" cols="20" required></textarea>
         </fieldset>
         <div class="form-controls">
