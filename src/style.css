@@ -302,7 +302,15 @@ legend h1 {
 }
 .page-thematique :target,
 .page-thematique .conseils :target summary {
-    background: #ffd;
+    animation: target-fade 2s 1;
+}
+@keyframes target-fade {
+    0% {
+        background-color: rgba(255, 255, 221);
+    }
+    100% {
+        background-color: rgba(255, 255, 255);
+    }
 }
 .page-thematique .conseils details > summary {
     position: sticky;
