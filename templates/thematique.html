@@ -27,7 +27,7 @@
     <meta property="og:description" content="{{ thematique.headerstr or 'Vaccination, pass sanitaire, QR code ou test PCR, il n’est pas évident de comprendre quoi faire. MesConseilsCovid répond à vos questions pour savoir quoi faire dans une situation liée à la Covid.' }}">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ thematique.imgsrcpng }}">
-    <meta property="og:url" content="https://mesconseilscovid.sante.gouv.fr/">
+    <meta property="og:url" content="https://mesconseilscovid.sante.gouv.fr/{{ thematique.name }}.html">
     <meta property="og:locale" content="fr_FR">
 </head>
 <body class="page-thematique" data-thematique-name="{{ thematique.name }}" data-stats-url="{{ config_stats_url|inline }}">
