@@ -338,7 +338,7 @@
 
     En cas de **contre-indication médicale** (voir la [liste des contre-indications à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination)), vous pouvez demander à votre médecin de vous faire un **certificat médical**, qui fera office de **pass sanitaire**.
     
-    Attention, si vous ne pouvez pas vous faire vacciner parce que **vous avez eu la Covid** il y a moins de **6 mois,** votre [**certificat de rétablissement**](#comment-obtenir-un-certificat-de-rétablissement-avec-QR-code-?) (test de dépistage positif) avec **QR code** fera office de pass sanitaire. 
+    Attention, si vous ne pouvez pas vous faire vacciner parce que **vous avez eu la Covid** il y a moins de **6 mois**, votre [**certificat de rétablissement**](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) (test de dépistage positif) avec **QR code** fera office de pass sanitaire.
 
 
 .. question:: Où le pass sanitaire est-il obligatoire ?
