@@ -12,7 +12,6 @@ Si vous êtes cas contact d’une **personne de votre foyer**, rendez-vous sur n
 
 </div>
 
-
 ## Vous êtes cas contact et…
 
 <details id="schema-vaccinal-incomplet">
@@ -90,7 +89,13 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 
         * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**) ;
         * faire un **test antigénique dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+    
+<div class="conseil">
+    
+**Si vous êtes cas contact, vous ne devez pas vous faire vacciner.** Il faut attendre le résultat de votre test de contrôle. S'il est négatif, alors vous pourrez vous faire vacciner.
 
+</div>
+    
 </details>
 
 <details id="schema-vaccinal-complet">
@@ -164,8 +169,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
         * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
         * faire un **test antigénique dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
     * **après 10 jours**, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un nouveau test de contrôle ne sera pas nécessaire).
-
-
+    
 </details>
 
 <div class="conseil">
