@@ -393,10 +393,8 @@
 .. question:: Qui est concerné par le pass sanitaire ?
     :level: 3
 
-    Toutes les personnes âgées de **18 ans et plus**.
-
-    Il sera étendu aux mineurs de plus de **12 ans et 2 mois** à partir du **30 septembre 2021**.
-
+    Toutes les personnes âgées de plus de **12 ans et 2 mois**.
+    
     <div class="voir-aussi">
 
     - Consultez notre page « [Conseils pour les mineurs : vaccination et scolarité](/conseils-pour-les-enfants.html) ».
