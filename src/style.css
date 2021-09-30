@@ -1780,7 +1780,7 @@ a.no-type::after {
 .voir-aussi {
     border-left: 8px solid #d5dbef;
     margin: 1rem 0 1.5rem 0;
-    padding: 1.25rem 2rem 1.5rem 1.25rem;
+    padding: 1.25rem 2rem 0.5rem 1.25rem;
 }
 .voir-aussi ul {
     list-style-type: '👉  ';
@@ -1788,8 +1788,7 @@ a.no-type::after {
 }
 .voir-aussi li {
 }
-.voir-aussi ul,
-.voir-aussi li:last-of-type {
+.voir-aussi ul {
     margin: 0;
 }
 .voir-aussi p:first-of-type {
