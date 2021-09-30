@@ -528,6 +528,9 @@ export default class AlgorithmeOrientation {
         if (algoVaccination.isCompletementVaccine()) {
             blockNames.push('questions-vaccins-deja-vaccine')
         } else {
+            if (this.profil.grossesse_3e_trimestre) {
+                blockNames.push('questions-vaccins-grossesse')
+            }
             blockNames.push('questions-vaccins-pas-encore-vaccine')
             if (this.profil.covid_passee) {
                 if (this.profil.hasCovidPlus6Mois()) {
