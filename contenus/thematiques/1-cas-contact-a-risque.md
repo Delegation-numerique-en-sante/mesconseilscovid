@@ -182,10 +182,3 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
         * faire un **test antigénique dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
 </details>
-
-
-<div class="conseil">
-
-**Attention aux tentatives de fraude par SMS !** L’Assurance maladie peut vous contacter par SMS pour vous informer que vous êtes cas contact ou positif et vous inviter à vous isoler. Ces SMS peuvent prendre la forme d’un échange guidé, mais l’Assurance maladie ne vous demandera pas de partager des **informations personnelles** telles que numéro de sécurité sociale, numéro de carte bancaire, mot de passe… [Plus d’informations sur ameli.fr](https://www.ameli.fr/hauts-de-seine/assure/droits-demarches/principes/attention-appels-courriels-frauduleux).
-
-</div>
