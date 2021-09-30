@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-09-30
+
+* recueil des avis positifs
+* réorganisation de la page cas contact
+* améliorations mineures
+
 ## 2021-09-28
 
 * précisions sur la vaccination, la grossesse et l’allaitement
