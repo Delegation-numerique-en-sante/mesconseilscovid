@@ -474,6 +474,17 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
+        it('Cas général (partiellement vacciné)', function () {
+            var profil = new Profil('mes_infos', { vaccins: 'en_cours' })
+            var algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
+                'reponse-vaccins-en-cours',
+                'reponse-historique-sans',
+                'questions-vaccins',
+                'questions-vaccins-partiellement-vaccine',
+            ])
+        })
+
         it('Cas général (déjà vacciné)', function () {
             var profil = new Profil('mes_infos', { vaccins: 'completement' })
             var algoOrientation = new AlgorithmeOrientation(profil)

@@ -531,21 +531,29 @@ export default class AlgorithmeOrientation {
             if (this.profil.grossesse_3e_trimestre) {
                 blockNames.push('questions-vaccins-grossesse')
             }
-            blockNames.push('questions-vaccins-pas-encore-vaccine')
-            if (this.profil.covid_passee) {
-                if (this.profil.hasCovidPlus6Mois()) {
-                    blockNames.push('conseils-vaccins-6-mois-plus')
-                } else if (this.profil.hasCovidPlus2Mois()) {
-                    blockNames.push('conseils-vaccins-2-6-mois')
-                } else {
-                    blockNames.push('conseils-vaccins-2-mois-moins')
+            if (algoVaccination.isPartiellementVaccine()) {
+                blockNames.push('questions-vaccins-partiellement-vaccine')
+            } else {
+                blockNames.push('questions-vaccins-pas-encore-vaccine')
+                if (this.profil.covid_passee) {
+                    if (this.profil.hasCovidPlus6Mois()) {
+                        blockNames.push('conseils-vaccins-6-mois-plus')
+                    } else if (this.profil.hasCovidPlus2Mois()) {
+                        blockNames.push('conseils-vaccins-2-6-mois')
+                    } else {
+                        blockNames.push('conseils-vaccins-2-mois-moins')
+                    }
                 }
-            }
-            if (algoVaccination.isVaccinationObligatoire()) {
-                blockNames = blockNames.concat('conseils-vaccins-obligation-pro-sante')
-            }
-            if (algoVaccination.isVaccinationPossible()) {
-                blockNames = blockNames.concat(this._conseilsVaccins(algoVaccination))
+                if (algoVaccination.isVaccinationObligatoire()) {
+                    blockNames = blockNames.concat(
+                        'conseils-vaccins-obligation-pro-sante'
+                    )
+                }
+                if (algoVaccination.isVaccinationPossible()) {
+                    blockNames = blockNames.concat(
+                        this._conseilsVaccins(algoVaccination)
+                    )
+                }
             }
         }
         return blockNames

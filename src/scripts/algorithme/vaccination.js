@@ -41,6 +41,10 @@ export default class AlgorithmeVaccination {
         return this.profil.vaccins === 'completement'
     }
 
+    isPartiellementVaccine() {
+        return this.profil.vaccins === 'en_cours'
+    }
+
     isVaccinationPossible() {
         return (
             this.isSup12() &&
