@@ -800,6 +800,7 @@ footer .legals {
     border: 4px solid;
     text-align: center;
 }
+.statut-rouge,
 .statut-antigenique-negatif-fragile,
 .statut-asymptomatique,
 .statut-asymptomatique-positif-antigenique,
@@ -819,16 +820,19 @@ footer .legals {
     background: #ffb6a5;
     border-color: #ff6f4c;
 }
+.statut-orange,
 .statut-personne-fragile,
 .suivi-gravite-2 {
     background: #ffcc9f;
     border-color: #ff9940;
 }
+.statut-jaune,
 .statut-symptomatique-negatif,
 .suivi-gravite-1 {
     background: #fde7a0;
     border-color: #fdcf41;
 }
+.statut-vert,
 .statut-en-attente,
 .statut-peu-de-risques,
 .suivi-gravite-0,
@@ -1793,6 +1797,16 @@ a.no-type::after {
 .thematique .date-mise-a-jour {
     font-style: italic;
     margin: 2rem 0 1rem 0;
+}
+
+[data-thematique-name='conseils-pour-les-enfants']
+    #masque-obligatoire-form
+    fieldset
+    .secondary {
+    text-align: center;
+}
+[data-thematique-name='conseils-pour-les-enfants'] #masque-obligatoire-refaire {
+    margin-bottom: 3rem;
 }
 
 @media print {
