@@ -312,11 +312,25 @@ legend h1 {
         background-color: rgba(255, 255, 255);
     }
 }
+.page-thematique .conseils details {
+    position: relative;
+}
 .page-thematique .conseils details > summary {
+    display: flex;
+    flex-direction: column;
     position: sticky;
     top: 0;
     background: white;
     z-index: 10; /* Ensure it remains on top of other elements. */
+}
+.page-thematique .conseils details .explications {
+    margin: 0.75rem;
+    background: #eff3ff;
+    padding: 0.5rem 1rem;
+    border-left: 4px solid #a5baff;
+}
+.page-thematique .conseils details[open] .explications {
+    display: none;
 }
 .page-thematique [itemprop='url'] {
     text-decoration: none;
