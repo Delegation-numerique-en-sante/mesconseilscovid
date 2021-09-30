@@ -6,9 +6,18 @@
     <p class="big">Vous avez passé du temps avec une personne <b>positive à la Covid</b> ? Vous avez été contacté(e) par l’<b>Assurance Maladie</b> ? Vous avez reçu une notification « Exposition à risque » de l’application <b>TousAntiCovid</b> ?</p>
 </header>
 
+<div class="voir-aussi">
+
+- [Je suis cas contact d’une personne de mon foyer, que faire ?](/je-vis-avec-personne-covid-positive.html)
+
+- [Je suis cas contact, puis-je me faire vacciner ?](/je-veux-me-faire-vacciner.html#je-suis-cas-contact-puis-je-me-faire-vacciner-1-re-ou-2-e-dose)
+
+</div>
+
+
 <div class="conseil conseil-jaune">
 
-Si vous êtes cas contact d’une **personne de votre foyer**, rendez-vous sur notre page spécialisée [**« Je vis avec une personne positive à la Covid, que dois-je faire ? »**](/je-vis-avec-personne-covid-positive.html).
+Si vous avez **déjà eu la Covid** il y a **moins de 2 mois**, alors vous n’êtes **pas considéré** comme cas contact.
 
 </div>
 
