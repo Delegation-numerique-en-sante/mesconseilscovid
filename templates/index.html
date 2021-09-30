@@ -1116,6 +1116,21 @@
 
             <div id="conseils-blocs">
                 <h2 class="visually-hidden">Nos recommandations :</h2>
+
+                <div id="questions-recommandees" class="conseils">
+                    <div id="questions-vaccins" hidden>
+                        <h4>Les vaccins</h4>
+                        <div class="reponse">
+                            <div id="reponse-vaccins-completement" hidden>
+                                {{ reponse_vaccins_completement }}
+                            </div>
+                        </div>
+                        <div id="questions-vaccins-deja-vaccine" hidden>
+                            {{ questions_vaccins_deja_vaccine }}
+                        </div>
+                    </div>
+                </div>
+
                 <div id="conseils-isolement" class="conseils" hidden>
                     <details>
                         <summary>
@@ -1143,7 +1158,7 @@
                     </details>
                 </div>
 
-                <div id="conseils-vaccins" class="conseils">
+                <div id="conseils-vaccins" class="conseils" hidden>
                     <details>
                         <summary>
                             <h3>
@@ -1157,9 +1172,6 @@
                             </div>
                             <div id="reponse-vaccins-en-cours" hidden>
                                 {{ reponse_vaccins_en_cours }}
-                            </div>
-                            <div id="reponse-vaccins-completement" hidden>
-                                {{ reponse_vaccins_completement }}
                             </div>
                             <div id="reponse-historique-sans" hidden>
                                 {{ reponse_historique_sans }}
@@ -1200,9 +1212,6 @@
                         </div>
                         <div id="conseils-vaccins-pas-encore-vaccine" hidden>
                             {{ conseils_vaccins_pas_encore_vaccine }}
-                        </div>
-                        <div id="conseils-vaccins-deja-vaccine" hidden>
-                            {{ conseils_vaccins_deja_vaccine }}
                         </div>
                     </details>
                 </div>
