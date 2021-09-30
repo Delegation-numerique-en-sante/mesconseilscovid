@@ -533,6 +533,9 @@ export default class AlgorithmeOrientation {
             }
             if (algoVaccination.isPartiellementVaccine()) {
                 blockNames.push('questions-vaccins-partiellement-vaccine')
+                if (this.profil.covid_passee) {
+                    blockNames.push('questions-vaccins-partiellement-vaccine-covid')
+                }
             } else {
                 blockNames.push('questions-vaccins-pas-encore-vaccine')
                 if (this.profil.covid_passee) {
