@@ -130,7 +130,7 @@
 
     Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée entre 39 et 42 jours (soit 6 semaines) après la première. Pour accélerer la campagne de vaccination face au variant Delta, le délai entre les deux doses à été réduit. L’injection de la deuxième dose pourra avoir lieu **entre 21 et 49 jours** (soit 3 à 7 semaines) après la première.
 
-    La Haute autorité de santé recommande de recevoir une 2<sup>e</sup> dose de vaccin ARNm (Pfizer-BioNTech ou Moderna) après une première dose de vaccin **AstraZeneca**, en respecant un délai d’au moins 4 semaines.
+    La Haute autorité de santé recommande de recevoir une 2<sup>e</sup> dose de vaccin ARNm (Pfizer-BioNTech ou Moderna) après une première dose de vaccin **AstraZeneca**, en respectant un délai d’au moins 4 semaines.
 
 
 .. question:: Y a-t-il des contre-indications à la vaccination ?
