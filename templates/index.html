@@ -1121,9 +1121,56 @@
                     <div id="questions-vaccins" hidden>
                         <h4>Les vaccins</h4>
                         <div class="reponse">
+                            <div id="reponse-vaccins-pas-encore" hidden>
+                                {{ reponse_vaccins_pas_encore }}
+                            </div>
+                            <div id="reponse-vaccins-en-cours" hidden>
+                                {{ reponse_vaccins_en_cours }}
+                            </div>
                             <div id="reponse-vaccins-completement" hidden>
                                 {{ reponse_vaccins_completement }}
                             </div>
+                            <div id="reponse-historique-sans" hidden>
+                                {{ reponse_historique_sans }}
+                            </div>
+                            <div id="reponse-historique-6-mois-plus" hidden>
+                                {{ reponse_historique_6_mois_plus }}
+                            </div>
+                            <div id="reponse-historique-2-6-mois" hidden>
+                                {{ reponse_historique_2_6_mois }}
+                            </div>
+                            <div id="reponse-historique-2-mois-moins" hidden>
+                                {{ reponse_historique_2_mois_moins }}
+                            </div>
+                        </div>
+                        <div id="conseils-vaccins">
+                            <div id="conseils-vaccins-2-mois-moins" hidden>
+                                {{ conseils_vaccins_2_mois_moins }}
+                            </div>
+                            <div id="conseils-vaccins-2-6-mois" hidden>
+                                {{ conseils_vaccins_2_6_mois }}
+                            </div>
+                            <div id="conseils-vaccins-6-mois-plus" hidden>
+                                {{ conseils_vaccins_6_mois_plus }}
+                            </div>
+                            <div id="conseils-vaccins-12-ans" hidden>
+                                {{ conseils_vaccins_12_ans }}
+                            </div>
+                            <div id="conseils-vaccins-18-ans" hidden>
+                                {{ conseils_vaccins_18_ans }}
+                            </div>
+                            <div id="conseils-vaccins-a-risque" hidden>
+                                {{ conseils_vaccins_a_risque }}
+                            </div>
+                            <div id="conseils-vaccins-tres-haut-risque" hidden>
+                                {{ conseils_vaccins_tres_haut_risque }}
+                            </div>
+                            <div id="conseils-vaccins-obligation-pro-sante" hidden>
+                                {{ conseils_vaccins_obligation_pro_sante }}
+                            </div>
+                        </div>
+                        <div id="questions-vaccins-pas-encore-vaccine" hidden>
+                            {{ questions_vaccins_pas_encore_vaccine }}
                         </div>
                         <div id="questions-vaccins-deja-vaccine" hidden>
                             {{ questions_vaccins_deja_vaccine }}
@@ -1155,64 +1202,6 @@
                             {{ conseils_isolement_autres_personnes }}
                         </div>
                         {{ conseils_isolement_ctai }}
-                    </details>
-                </div>
-
-                <div id="conseils-vaccins" class="conseils" hidden>
-                    <details>
-                        <summary>
-                            <h3>
-                                Les vaccins
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
-                            </h3>
-                        </summary>
-                        <div class="reponse">
-                            <div id="reponse-vaccins-pas-encore" hidden>
-                                {{ reponse_vaccins_pas_encore }}
-                            </div>
-                            <div id="reponse-vaccins-en-cours" hidden>
-                                {{ reponse_vaccins_en_cours }}
-                            </div>
-                            <div id="reponse-historique-sans" hidden>
-                                {{ reponse_historique_sans }}
-                            </div>
-                            <div id="reponse-historique-6-mois-plus" hidden>
-                                {{ reponse_historique_6_mois_plus }}
-                            </div>
-                            <div id="reponse-historique-2-6-mois" hidden>
-                                {{ reponse_historique_2_6_mois }}
-                            </div>
-                            <div id="reponse-historique-2-mois-moins" hidden>
-                                {{ reponse_historique_2_mois_moins }}
-                            </div>
-                        </div>
-                        <div id="conseils-vaccins-2-mois-moins" hidden>
-                            {{ conseils_vaccins_2_mois_moins }}
-                        </div>
-                        <div id="conseils-vaccins-2-6-mois" hidden>
-                            {{ conseils_vaccins_2_6_mois }}
-                        </div>
-                        <div id="conseils-vaccins-6-mois-plus" hidden>
-                            {{ conseils_vaccins_6_mois_plus }}
-                        </div>
-                        <div id="conseils-vaccins-12-ans" hidden>
-                            {{ conseils_vaccins_12_ans }}
-                        </div>
-                        <div id="conseils-vaccins-18-ans" hidden>
-                            {{ conseils_vaccins_18_ans }}
-                        </div>
-                        <div id="conseils-vaccins-a-risque" hidden>
-                            {{ conseils_vaccins_a_risque }}
-                        </div>
-                        <div id="conseils-vaccins-tres-haut-risque" hidden>
-                            {{ conseils_vaccins_tres_haut_risque }}
-                        </div>
-                        <div id="conseils-vaccins-obligation-pro-sante" hidden>
-                            {{ conseils_vaccins_obligation_pro_sante }}
-                        </div>
-                        <div id="conseils-vaccins-pas-encore-vaccine" hidden>
-                            {{ conseils_vaccins_pas_encore_vaccine }}
-                        </div>
                     </details>
                 </div>
 

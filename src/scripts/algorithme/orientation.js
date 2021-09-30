@@ -524,12 +524,11 @@ export default class AlgorithmeOrientation {
         // Conseils personnalisés.
         const algoVaccination = new AlgorithmeVaccination(this.profil, this)
 
+        blockNames.push('questions-vaccins')
         if (algoVaccination.isCompletementVaccine()) {
-            blockNames.push('questions-vaccins')
             blockNames.push('questions-vaccins-deja-vaccine')
         } else {
-            blockNames.push('conseils-vaccins')
-            blockNames.push('conseils-vaccins-pas-encore-vaccine')
+            blockNames.push('questions-vaccins-pas-encore-vaccine')
             if (this.profil.covid_passee) {
                 if (this.profil.hasCovidPlus6Mois()) {
                     blockNames.push('conseils-vaccins-6-mois-plus')

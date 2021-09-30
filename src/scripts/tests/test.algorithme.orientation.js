@@ -424,8 +424,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
-                'conseils-vaccins',
-                'conseils-vaccins-pas-encore-vaccine',
+                'questions-vaccins',
+                'questions-vaccins-pas-encore-vaccine',
             ])
         })
 
@@ -438,8 +438,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-6-mois-plus',
-                'conseils-vaccins',
-                'conseils-vaccins-pas-encore-vaccine',
+                'questions-vaccins',
+                'questions-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-6-mois-plus',
             ])
         })
@@ -453,8 +453,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-2-6-mois',
-                'conseils-vaccins',
-                'conseils-vaccins-pas-encore-vaccine',
+                'questions-vaccins',
+                'questions-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-2-6-mois',
             ])
         })
@@ -468,8 +468,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-2-mois-moins',
-                'conseils-vaccins',
-                'conseils-vaccins-pas-encore-vaccine',
+                'questions-vaccins',
+                'questions-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-2-mois-moins',
             ])
         })
@@ -492,8 +492,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
-                'conseils-vaccins',
-                'conseils-vaccins-pas-encore-vaccine',
+                'questions-vaccins',
+                'questions-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-12-ans',
             ])
         })
@@ -507,8 +507,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
-                'conseils-vaccins',
-                'conseils-vaccins-pas-encore-vaccine',
+                'questions-vaccins',
+                'questions-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-12-ans',
                 'conseils-vaccins-a-risque',
             ])
@@ -522,8 +522,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
-                'conseils-vaccins',
-                'conseils-vaccins-pas-encore-vaccine',
+                'questions-vaccins',
+                'questions-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-18-ans',
             ])
         })
@@ -538,8 +538,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
-                'conseils-vaccins',
-                'conseils-vaccins-pas-encore-vaccine',
+                'questions-vaccins',
+                'questions-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-obligation-pro-sante',
                 'conseils-vaccins-18-ans',
             ])
@@ -554,8 +554,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
-                'conseils-vaccins',
-                'conseils-vaccins-pas-encore-vaccine',
+                'questions-vaccins',
+                'questions-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-18-ans',
                 'conseils-vaccins-a-risque',
             ])
@@ -570,8 +570,8 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.vaccinBlockNamesToDisplay(), [
                 'reponse-vaccins-pas-encore',
                 'reponse-historique-sans',
-                'conseils-vaccins',
-                'conseils-vaccins-pas-encore-vaccine',
+                'questions-vaccins',
+                'questions-vaccins-pas-encore-vaccine',
                 'conseils-vaccins-18-ans',
                 'conseils-vaccins-tres-haut-risque',
             ])
