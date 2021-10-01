@@ -28,21 +28,26 @@ La loi indique que le salarié est **responsable** de sa propre **protection** e
 Vous devez donc :
 * respecter les **gestes barrières :** le port du masque, la distanciation physique, même si vous êtes vacciné(e);
 * vous **isoler** :
-   * si vous avez été testé **positif** à la Covid-19, ou dès que vous ressentez des [**symptômes** évocateurs de la Covid](LIEN) et en attendant le résultat de votre test de dépistage, même si vous êtes vacciné(e)
+   * si vous avez été testé **positif** à la Covid-19, ou dès que vous ressentez des [**symptômes** évocateurs de la Covid](https://mesconseilscovid.sante.gouv.fr/j-ai-des-symptomes-covid.html#quels-sont-les-symptomes-de-la-covid) et en attendant le résultat de votre test de dépistage, même si vous êtes vacciné(e)
    * si vous êtes alerté d'un **contact à risque** sauf si vous êtes vacciné ou que vous avez eu la Covid dans les deux mois précédents.
   
 
 Dans tous les cas, vous serez indemnisé sans jour de carence.  
 
-CONSEIL
-Si vous êtes positif à la Covid, nous vous encourageons à **prévenir** votre **employeur**, le **médecin du travail** et vos **collègues**, afin de limiter la progression de l'épidémie dans l'entreprise.
+  <div class="conseil conseil-jaune">
 
-Consulter le guide : [Covid-19 conseils et bonnes pratiques pour les salariés](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salarie_30_juin_vok.pdf)
-Ces autres pages peuvent vous intéresser : 
-- [J'ai des symptômes ou mon test est positif, que faire ?](https://mesconseilscovid.sante.gouv.fr/j-ai-des-symptomes-covid.html).
-- [Je suis cas contact, que faire ?](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html).
-- [Je vis avec une personne positive à la Covid-19, que dois-je faire ?](https://mesconseilscovid.sante.gouv.fr/je-vis-avec-personne-covid-positive.html).
+   Si vous êtes positif à la Covid, nous vous encourageons à **prévenir** votre **employeur**, le **médecin du travail** et vos **collègues**, afin de limiter la progression de l'épidémie dans l'entreprise.
 
+  </div>
+
+  <div class="voir-aussi">
+  
+  - Le guide [Covid-19 conseils et bonnes pratiques pour les salariés](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salarie_30_juin_vok.pdf)
+  - [J'ai des symptômes ou mon test est positif, que faire ?](https://mesconseilscovid.sante.gouv.fr/j-ai-des-symptomes-covid.html).
+  - [Je suis cas contact, que faire ?](https://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html).
+  - [Je vis avec une personne positive à la Covid-19, que dois-je faire ?](https://mesconseilscovid.sante.gouv.fr/je-vis-avec-personne-covid-positive.html).
+  
+  </div>
 
 ### Je suis vacciné ou asymptomatique mais mon test de dépistage est positif. Puis-je aller au travail ?
 **Non.** 
@@ -52,15 +57,20 @@ Si vous ne pouvez pas télétravailler, l'Assurance maladie vous fournira un arr
 ### Mon employeur peut-il refuser mon arrêt de travail ou mon certificat d'isolement ? 
 **Non.** Votre arrêt maladie ou votre certificat d'isolement ne peut pas être refusé par votre employeur.
 
-CONSEIL
-N'hésitez pas à contacter le **service de renseignements en droit du travail** pour obtenir **anonynement** et **gratuitement** des conseils personnalisés sur votre situation au **0 806 000 126**.
-
+    <div class="conseil conseil-jaune">
+    
+    N'hésitez pas à contacter le **service de renseignements en droit du travail** pour obtenir **anonynement** et **gratuitement** des conseils personnalisés sur votre situation au **0 806 000 126**.
+    
+    </div>
+    
 ### Mon employeur peut-il me licencier à cause de mon arrêt maladie ? 
 **Non.** Un employeur n'a pas le droit de licencier un salarié en raison de son état de santé (art. L. 1132–1 du code du travail). Le salarié licencié pour cette raison pourra saisir les prud'hommes pour licenciement abusif.
 
-CONSEIL
+    <div class="conseil conseil-jaune">
+    
 N'hésitez pas à contacter le **service de renseignements en droit du travail** pour obtenir **anonynement** et **gratuitement** des conseils personnalisés sur votre situation au **0 806 000 126**.
 
+    </div>
 
 ### Mon employeur peut-il exiger un certificat attestant de mon rétablissement de la Covid avant mon retour au travail ?
 **Non.** Si vous avez eu la Covid et que vous avez respecté la durée de votre isolement (10 jours au moins après le début de vos symptômes ou de votre test positif et que vous ne présentez plus de fièvre), alors vous pouvez retourner au travail sans présenter de certificat ou de nouveau test de dépistage.
@@ -77,9 +87,12 @@ Ou qu'il vous fait subir des pressions, notamment en :
 
 Nous vous conseillons d'**alerter** les **représentants du personnel** de votre entreprise (**CSE**...). Vous pouvez également saisir **anonymement l'inspection du travail.**  Votre employeur ne saura pas qui l'a signalé. 
 
-CONSEIL
-N'hésitez pas à contacter le **service de renseignements en droit du travail** pour obtenir **anonynement** des conseils personnalisés sur votre situation et vos droits, au **0 806 000 126** (Service gratuit + prix d’un appel)
+    <div class="conseil conseil-jaune">
+    
+    N'hésitez pas à contacter le **service de renseignements en droit du travail** pour obtenir **anonynement** des conseils personnalisés sur votre situation et vos droits, au **0 806 000 126** (Service gratuit + prix d’un appel)
 
+    </div>
+    
 ## Quels aménagements peuvent être mis en place pour limiter la transmission du virus sur le lieu de travail ?
 
 L'employeur doit proposer des mesures pour limiter les risques de propagation du virus dans son entreprise, et les salariés doivent agir à leur niveau, pour se protéger et protéger ceux qui les entourent. 
@@ -125,8 +138,11 @@ Depuis le **21 septembre,** vous pouvez bénéficier d'un régime d'**activité 
 
 N'hésitez pas à demander plus de renseignements à votre **médecin traitant** ou au **médecin du travail.** Il pourra vous fournir ou renouveller votre **certificat d'isolement.** 
 
-> [cliquez ici pour consulter l'avis du HSCP et la liste des pathologies concernées.](https://www.hcsp.fr/explore.cgi/avisrapportsdomaine?clefr=942)
-
+    <div class="voir-aussi">
+    
+    [cliquez ici pour consulter l'avis du HSCP et la liste des pathologies concernées.](https://www.hcsp.fr/explore.cgi/avisrapportsdomaine?clefr=942)
+    
+    </div>
 
 ### Comment obtenir un arrêt maladie pour une situation liée à la Covid-19 ?
 
@@ -139,8 +155,11 @@ En revanche, si vous avez été testé positif à la Covid-19, l'Assurance malad
 
 Oui. Cette absence est considérée comme un temps de travail effectif. Elle n'entraine pas la diminution de la rémunération et ne peut pas être récupérée par votre employeur.
 
+    <div class="voir-aussi">
+    
 Consultez notre page [Je souhaite me faire vacciner](https://mesconseilscovid.sante.gouv.fr/je-veux-me-faire-vacciner.html).
 
+    </div>
 
 ### En tant que salarié(e), ai-je le droit de m’absenter pour acompagner mon enfant mineur ou un majeur protégé à son rendez-vous de vaccination contre la Covid-19 ?
 
