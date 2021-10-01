@@ -6,21 +6,38 @@
 
 
 <div itemscope itemtype="https://schema.org/FAQPage">
+    
+# La Covid-19
+
+Les coronavirus sont une famille de virus, qui provoquent des maladies allant d’un simple rhume (certains virus saisonniers sont des coronavirus) à des pathologies plus sévères.
+
+.. question:: Comment se transmet la Covid-19 ?
+    
+    Le coronavirus responsable de la maladie Covid-19 se transmet de plusieurs façons :
+    * par les gouttelettes ou les aérosols, qu’on émet par la **bouche** et le **nez** quand on **tousse,** qu’on éternue ou qu’on **parle ;**
+    * par les **mains** en touchant une surface contaminées par les gouttelettes.
+    
+    Les **mesures** les plus efficaces pour **se protéger** de la Covid-19 sont les **gestes barrières** (lavage de mains et port du masque) et la distanciation physique.
+
+.. question:: Peut-on attraper la Covid-19 plusieurs fois ?
+
+    Oui. Les personnes qui ont été contaminées par la Covid-19 développent une **immunité** de plusieurs mois.Mais, sa **durée** est **variable** et incertaine surtout face aux nouveaux **variants plus contagieux** du virus (Alpha, Bêta, Gamma, Delta...). Même si vous avez été contaminé par la Covid-19, il faut continuer à respecter les gestes barrières.
+
+# J’ai des symptômes persistants (Covid long)
+
 
 .. question:: J’ai eu la Covid et je ressens encore des symptômes, est-ce que je suis encore malade ?
 
     Il est fréquent de continuer à ressentir certains symptômes isolés, comme la fatigue modérée ou la perte de goût et de l’odorat dans les semaines qui suivent la guérison de l’infection. Cela ne veut pas dire que vous êtes encore malade ou contagieux(se).
 
-    Si vous avez eu la covid et vous continuer à ressentir des symptômes (fatigue…) alors que votre médecin, et le test de dépistage vous indiquent que vous êtes guéri(e), alors vous souffrez peut-être du Covid long, une situation qui concerne beaucoup de personnes.
-
+Si les symptômes persistent au-delà de 4 semaines, on parle alors de **« Covid long ».** Les autorités sanitaires sont en train d’organiser la prise en charge de ces formes de la maladie. Si vous êtes concerné, prenez contact en priorité avec votre médecin traitant ou un médecin généraliste, quels que soient les symptômes persistants que vous ressentez.
 
 .. question:: Qu’est-ce que le Covid long ?
 
     Le Covid long fait référence à l’expérience vécue par certaines personnes qui ont été contaminées par la Covid-19 et qui continuent à ressentir des symptômes au-delà de 4 semaines après l’infection.
 
     On parle alors de symptômes prolongés ou persistants de la Covid-19.
-
-
+    
 .. question:: Qui peut être touché par le Covid long ?
 
     N’importe quelle personne, jeune ou âgée, en bonne santé ou fragile peut être concernée par le Covid long. Il n’y a pas non plus de lien de cause à effet entre la sévérité de l’infection et la persistance des symptômes.
