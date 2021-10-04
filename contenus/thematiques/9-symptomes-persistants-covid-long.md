@@ -21,7 +21,7 @@ Les coronavirus sont une famille de virus, qui provoquent des maladies allant d�
 
 .. question:: Peut-on attraper la Covid-19 plusieurs fois ?
 
-    Oui. Les personnes qui ont été contaminées par la Covid-19 développent une **immunité** de plusieurs mois.Mais, sa **durée** est **variable** et incertaine surtout face aux nouveaux **variants plus contagieux** du virus (Alpha, Bêta, Gamma, Delta...). Même si vous avez été contaminé par la Covid-19, il faut continuer à respecter les gestes barrières.
+    Oui. Les personnes qui ont été contaminées par la Covid-19 développent une **immunité** de plusieurs mois. Mais, sa **durée** est **variable** et incertaine surtout face aux nouveaux **variants plus contagieux** du virus (Alpha, Bêta, Gamma, Delta...). Même si vous avez été contaminé par la Covid-19, il faut continuer à respecter les gestes barrières.
 
 # J’ai des symptômes persistants (Covid long)
 
