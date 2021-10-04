@@ -8,7 +8,7 @@
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
-.. question:: Devrai-je recevoir une dose de rappel, dite 3<sup>e</sup> dose ?
+.. question:: Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
 
     Avec le temps, l’efficacité de la protection du vaccin contre l’infection peut diminuer, en particulier face au variant Delta. Pour « booster » cette protection, la Haute autorité de santé (HAS) recommande un **rappel vaccinal** avec une 2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas, pour :
 
