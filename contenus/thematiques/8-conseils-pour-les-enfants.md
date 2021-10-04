@@ -23,13 +23,15 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </h2>
 </summary>
 
-.. question:: Est-ce que mon enfant devra porter le masque ?
+.. question:: Est-ce que mon enfant doit porter le masque ?
     :level: 3
+
+    Le port du masque est **obligatoire** au **collège** et au **lycée**. En **primaire**, le port du masque dépend du taux d’incidence du virus dans le **département** où se situe l’établissement scolaire.
 
     <form id="masque-obligatoire-form">
         <fieldset>
             <legend>
-                Le port du masque est requis <strong>en fonction du département</strong> de l’établissement scolaire :
+                <strong>Je vérifie</strong> si le port du masque est obligatoire dans l’établissement scolaire de mon enfant :
             </legend>
             <div class="secondary">
                 <select id="departement" required>
@@ -156,13 +158,13 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div id="js-masque-obligatoire" class="statut statut-rouge" hidden>
 
-    Le masque est **obligatoire** dans ce département à l’école, au collège ou au lycée.
+    Dans ce département, le masque est **obligatoire** à l’école primaire.
 
     </div>
 
     <div id="js-masque-non-obligatoire" class="statut statut-vert" hidden>
 
-    Le masque **n’est pas obligatoire** dans ce département à l’école, au collège ou au lycée.
+    Dans ce département, le masque **n’est pas obligatoire** à l’école primaire.
 
     </div>
 
@@ -170,7 +172,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
         <a href="#" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
     </p>
 
-    Pour les élèves des **écoles maternelles**, le port du masque est proscrit.
+    Pour les élèves des **écoles maternelles**, le port du masque est proscrit quel que soit le département.
 
     **Les parents doivent fournir des masques à leurs enfants.** Le masque doit assurer une filtration supérieure à 90 % (masque « grand public » ou masque chirurgical par exemple). Le ministère dote chaque école, collège et lycée en masques « grand public » afin qu’ils puissent être fournis aux élèves qui n’en disposeraient pas.
 
