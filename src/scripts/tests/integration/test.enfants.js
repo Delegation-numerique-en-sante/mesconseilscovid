@@ -40,7 +40,7 @@ describe('Enfants', function () {
 
         assert.include(
             await recuperationReponse(page, 'obligatoire'),
-            'Le masque est obligatoire dans ce département à l’école, au collège ou au lycée.'
+            'Dans ce département, le masque est obligatoire à l’école primaire.'
         )
     })
 
@@ -58,7 +58,7 @@ describe('Enfants', function () {
 
         assert.include(
             await recuperationReponse(page, 'non-obligatoire'),
-            'Le masque n’est pas obligatoire dans ce département à l’école, au collège ou au lycée.'
+            'Dans ce département, le masque n’est pas obligatoire à l’école primaire.'
         )
     })
 })
