@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-10-04
+
+* choix du département pour le masque en écoles primaires
+
 ## 2021-09-30
 
 * recueil des avis positifs
