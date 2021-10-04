@@ -65,17 +65,18 @@ Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-fair
     * si vous avez été testé(e) positif ou positive à la Covid après le 15<sup>e</sup> jour suivant votre 1<sup>re</sup> injection, alors vous n’avez pas besoin de recevoir une 2<sup>e</sup> dose. Votre contamination a le même effet protecteur que la dose de rappel.
 
 
-.. question:: J’ai perdu ou je n’ai pas reçu d’attestation de vaccination, comment faire ?
+## J’ai perdu ou je n’ai pas reçu d’attestation de vaccination, comment faire ?
     
-    Voir la réponse sur [notre page sur le Pass sanitaire](/pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code)
+Voir la réponse sur notre page « [Comment obtenir une attestation de vaccination complète avec un QR code ?](/pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code) ».
 
-.. question:: J’ai eu la Covid avant d’avoir ma première et unique injection, mais mon attestation indique que ma vaccination est « en cours » au lieu d’être terminée. Que faire ?
+## J’ai eu la Covid avant d’avoir ma première et unique injection, mais mon attestation indique que ma vaccination est « en cours » au lieu d’être terminée. Que faire ?
 
-    Voir la réponse sur [notre page sur le Pass sanitaire](/pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code)
+Voir la réponse sur notre page « [Comment obtenir une attestation de vaccination complète avec un QR code ?](/pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code) ».
 
-.. question:: Mon certificat de vaccination ne comporte pas de QR code, comment faire ?
+## Mon certificat de vaccination ne comporte pas de QR code, comment faire ?
     
-    Voir la réponse sur [notre page sur le Pass sanitaire](/pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code)
+Voir la réponse sur notre page « [Comment obtenir une attestation de vaccination complète avec un QR code ?](/pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code) ».
+
 
 .. question:: Est-ce que je peux voyager une fois vacciné(e) ?
 
