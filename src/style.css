@@ -1621,14 +1621,18 @@ a.no-type::after {
 .thematique #conseils-block h2:first-of-type {
     margin-top: 1rem;
 }
-.thematique #conseils-block summary h2 {
+.thematique #conseils-block summary h2,
+.thematique #conseils-block summary h2:first-of-type {
     margin-top: 0;
     width: 100%;
 }
 .thematique .conseils details > summary svg {
     float: right;
-    height: 30px;
+    height: 40px;
     width: 30px;
+}
+.thematique .conseils details > summary h2 svg {
+    height: 43px;
 }
 .thematique #conseils-block h3 {
     padding-top: 1rem;

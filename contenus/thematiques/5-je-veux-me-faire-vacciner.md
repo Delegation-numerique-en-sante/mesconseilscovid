@@ -8,7 +8,16 @@
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
+<details>
+    <summary>
+        <h2>
+            En savoir plus sur la dose de rappel dite 3<sup>e</sup> dose
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+        </h2>
+    </summary>
+
 .. question:: Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
+    :level: 3
 
     Avec le temps, l’efficacité de la protection du vaccin contre l’infection peut diminuer, en particulier face au variant Delta. Pour « booster » cette protection, la Haute autorité de santé (HAS) recommande un **rappel vaccinal** avec une 2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas, pour :
 
@@ -37,6 +46,7 @@
 
 
 .. question:: Quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
+    :level: 3
 
     La campagne de rappels a commencé le **1<sup>er</sup> septembre 2021**.
 
@@ -57,20 +67,19 @@
 
     </div>
 
-
-.. question:: Je suis enceinte, puis-je me faire vacciner (1<sup>re</sup> et 2<sup>e</sup> dose) ?
-
-    **Oui,** d’autant que la grossesse vous expose à des formes plus sévères de la Covid. Il n’y a pas de contre-indication à la vaccination des femmes enceintes et vous pouvez vous faire vacciner avec un vaccin à ARN messager (Pfizer, Moderna) **dès le premier trimestre de grossesse**.
-
-    L’**obligation vaccinale** requise pour certaines professions (santé, médico-social, restauration…) n’est pas exigée des femmes enceintes avant le **2<sup>e</sup> trimestre de grossesse**.
+</details>
 
 
-.. question:: J’allaite mon enfant, puis-je me faire vacciner (1<sup>re</sup> et 2<sup>e</sup> dose) ?
-
-    **Oui**. La Haute Autorité de santé estime que, sur la base des mécanismes biologiques (dégradation rapide des ARNm), il n’y a **pas d’effet attendu** chez le nourrisson et l’enfant allaité par une femme vaccinée. Vous pouvez donc continuer à allaiter même après votre vaccination.
-
+<details>
+    <summary>
+        <h2>
+            En savoir plus sur la 1<sup>re</sup> et la 2<sup>e</sup> dose
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+        </h2>
+    </summary>
 
 .. question:: Où me faire vacciner ?
+    :level: 3
 
     * Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech* : pour la vaccination initiale (dès **12 ans**) ou pour le rappel.
 
@@ -88,6 +97,7 @@
 
 
 .. question:: Comment prendre rendez-vous pour me faire vacciner ?
+    :level: 3
 
     Les centres de vaccination proposent une prise de rendez-vous **par internet** (via une des trois plateformes [Doctolib](https://www.doctolib.fr/), [Keldoc](https://www.keldoc.com/) ou [Maiia](https://www.maiia.com/)) ou **par téléphone**.
 
@@ -100,7 +110,111 @@
     </div>
 
 
+.. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose ?
+    :level: 3
+
+    Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée entre 39 et 42 jours (soit 6 semaines) après la première. Pour accélerer la campagne de vaccination face au variant Delta, le délai entre les deux doses à été réduit. L’injection de la deuxième dose pourra avoir lieu **entre 21 et 49 jours** (soit 3 à 7 semaines) après la première.
+
+    La Haute autorité de santé recommande de recevoir une 2<sup>e</sup> dose de vaccin ARNm (Pfizer-BioNTech ou Moderna) après une première dose de vaccin **AstraZeneca**, en respectant un délai d’au moins 4 semaines.
+
+
+.. question:: Y a-t-il des contre-indications à la vaccination ?
+    :level: 3
+
+    Les contre-indications à la vaccination sont les suivantes :
+
+    * **allergie à un composant** du vaccin, notamment au polyéthylène glycol (PEG) ;
+
+        <div class="voir-aussi">
+
+        - consulter la composition du vaccin [Pfizer-BioNTech](https://www.mesvaccins.net/web/vaccines/658-comirnaty-pfizer-biontech#vaccin_composition), [Moderna](https://www.mesvaccins.net/web/vaccines/656-spikevax-covid-19-vaccine-moderna#vaccin_composition), [AstraZeneca](https://www.mesvaccins.net/web/vaccines/650-vaxzevria-covid-19-vaccine-astrazeneca#vaccin_composition) ou [Janssen](https://www.mesvaccins.net/web/vaccines/666-covid-19-vaccine-janssen#vaccin_composition)
+
+        </div>
+
+    * **réaction anaphylactique** de grade 2 ou plus à une première injection du vaccin ;
+    * vaccins *Janssen* et *AstraZeneca* uniquement : épisodes de **syndrome de fuite capillaire** (maladie très rare) ;
+    * pour les adolescent(e)s : antécédent de syndrome inflammatoire multisystémique pédiatrique (**PIMS**) après une infection à la Covid ;
+    * recommandation établie après concertation médicale pluridisciplinaire de ne pas effectuer la seconde dose de vaccin, suite à la survenue d’un **effet indésirable** d’intensité sévère ou grave, attribué à la première dose de vaccin (par exemple : la survenue d’une myocardite, ou du syndrome de Guillain-Barré).
+
+    Il y a également deux contre-indications temporaires :
+
+    * traitement par **anticorps monoclonaux** anti-SARS-CoV-2 ;
+    * **myocardites** ou **péricardites** survenues avant la vaccination et toujours évolutives.
+
+
+.. question:: Je suis cas contact, puis-je me faire vacciner (1<sup>re</sup> ou 2<sup>e</sup> dose) ?
+    :level: 3
+
+     **Non.** Si vous êtes [cas contact](/cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, **vous ne devez pas vous faire vacciner**. Il faut d’abord vous assurer que vous n’avez pas été contaminé(e) en faisant un test 7 jours après votre dernier contact à risque. Si ce test de dépistage est négatif, alors vous pourrez vous faire vacciner.
+
+
+.. question:: J’ai déjà eu la Covid, dois-je me faire vacciner (1<sup>re</sup> dose) ?
+    :level: 3
+
+    **Oui.** Si vous avez eu la Covid, une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum **2 mois après la maladie**, idéalement 6 mois pour une efficacité maximale.
+
+
+.. question:: J’ai déjà eu la Covid, comment le prouver et ne recevoir qu’une seule dose ?
+    :level: 3
+
+    Lors de votre rendez-vous de vaccination, vous pourrez présenter soit un test de **dépistage positif** réalisé il y a 2 mois ou plus, soit un **test sérologique** (prise de sang qui recherche des anticorps) positif. Certains centres de vaccination proposent de faire un test sérologique rapide ou **TROD** lors du rendez-vous de première injection. Si ce test est positif, alors vous ne recevrez qu’une seule dose de vaccin. Bientôt, ces TROD seront disponibles dans tous les centres de vaccination.
+
+
+.. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?
+    :level: 3
+
+    Cela dépend :
+
+    * si vous avez été testé(e) positif ou positive à la Covid dans les 15 jours suivants votre 1<sup>re</sup> injection, alors vous devez quand même recevoir la 2<sup>e</sup> dose dans un **délai de 2 à 6 mois** après la contamination.
+    * si vous avez été testé(e) positif ou positive à la Covid après le 15<sup>e</sup> jour suivant votre 1<sup>re</sup> injection, alors vous n’avez pas besoin de recevoir une 2<sup>e</sup> dose. Votre contamination a le même effet protecteur que la dose de rappel.
+
+</details>
+
+<details>
+    <summary>
+        <h2>
+            En savoir plus sur les effets de la vaccination
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+        </h2>
+    </summary>
+
+.. question:: Suis-je immunisé(e) après une seule dose de vaccin ?
+    :level: 3
+
+    Les schémas de vaccination des vaccins Moderna, Comirnaty (Pfizer-BioNTech) et AstraZeneca prévoient l’injection de **2 doses pour une vaccination efficace**. Sans le rappel vaccinal (2<sup>e</sup> dose), votre vaccination n’est pas complète.
+
+    Il existe des exceptions :
+
+    * **une personne qui a déjà eu la Covid** n’aura besoin que d’une seule dose de vaccin pour être complètement vaccinée ;
+    * **une personne fortement immunodéprimée** recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné(e) par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
+
+    **Le vaccin Janssen** ne prévoyait au départ qu’une seule dose. Toutefois, pour une protection plus efficace, la Haute Autorité de Santé (HAS) recommande maintenant une deuxième dose avec un vaccin à ARNm (Pfizer-BioNTech ou Moderna), à partir de 4 semaines après la première injection.
+
+.. question:: Est-ce que je peux attraper la Covid si je suis vacciné(e) ?
+    :level: 3
+
+    La vaccination protège très efficacement contre les **formes graves** de la maladie, et réduit donc le risque d’hospitalisation et de décès.
+
+    Elle **protège** aussi contre les **formes symptomatiques** (à plus de **90 %** pour les vaccins Pfizer-BioNTech et Moderna après 2 doses) et asymptomatiques (de l’ordre de **80 à 90 %**, et au minimum à **50 %**, après 2 doses de vaccin à ARNm).
+
+    Même si vous êtes jeune et en bonne santé, la vaccination réduit le risque d’infection et donc de transmission du virus à vos proches.
+
+    Cependant, les vaccins ne sont **jamais efficaces à 100 %**, et il reste donc possible d’attraper la Covid et de la transmettre. C’est pourquoi, même vacciné(e), il faut continuer à porter le **masque**, respecter les **gestes barrières** et les mesures de **prévention** (test et isolement si vous ressentez des symptômes ou si vous êtes cas contact).
+
+    Si vous ressentez des symptômes ou si vous êtes positif(ve) à la Covid, [obtenez en quelques clics des conseils sur la conduite à tenir](/j-ai-des-symptomes-covid.html).
+
+.. question:: Quels sont les effets secondaires des vaccins contre la Covid ?
+    :level: 3
+
+    Les vaccins sont des médicaments. Ils peuvent avoir des **effets indésirables**. Les plus fréquents sont : une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des nausées, de la fièvre modérée et des frissons.
+
+    Si cela arrive, c’est une réaction normale, qui est dûe à l’activation du système immunitaire par le vaccin. Ces effets secondaires sont d’ailleurs plus fréquents après la 2<sup>e</sup> dose, car la réaction immunitaire est alors plus forte.
+
+    Ils disparaissent le plus souvent au bout d’1 à 2 jours. Si vos symptômes vous inquiètent, contactez votre médecin traitant, ou le 15 en cas d’urgence.
+
+
 .. question:: Quels sont les facteurs de risque de formes graves de Covid ?
+    :level: 3
 
     L’**âge** est le principal facteur de risque de développer une **forme grave** de Covid, c’est-à-dire pouvant conduire à une hospitalisation, voire à un décès.
 
@@ -126,97 +240,38 @@
 
     La **grossesse** est également un facteur de risque de développer des formes graves.
 
-.. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose ?
-
-    Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée entre 39 et 42 jours (soit 6 semaines) après la première. Pour accélerer la campagne de vaccination face au variant Delta, le délai entre les deux doses à été réduit. L’injection de la deuxième dose pourra avoir lieu **entre 21 et 49 jours** (soit 3 à 7 semaines) après la première.
-
-    La Haute autorité de santé recommande de recevoir une 2<sup>e</sup> dose de vaccin ARNm (Pfizer-BioNTech ou Moderna) après une première dose de vaccin **AstraZeneca**, en respectant un délai d’au moins 4 semaines.
-
-
-.. question:: Y a-t-il des contre-indications à la vaccination ?
-
-    Les contre-indications à la vaccination sont les suivantes :
-
-    * **allergie à un composant** du vaccin, notamment au polyéthylène glycol (PEG) ;
-
-        <div class="voir-aussi">
-
-        - consulter la composition du vaccin [Pfizer-BioNTech](https://www.mesvaccins.net/web/vaccines/658-comirnaty-pfizer-biontech#vaccin_composition), [Moderna](https://www.mesvaccins.net/web/vaccines/656-spikevax-covid-19-vaccine-moderna#vaccin_composition), [AstraZeneca](https://www.mesvaccins.net/web/vaccines/650-vaxzevria-covid-19-vaccine-astrazeneca#vaccin_composition) ou [Janssen](https://www.mesvaccins.net/web/vaccines/666-covid-19-vaccine-janssen#vaccin_composition)
-
-        </div>
-
-    * **réaction anaphylactique** de grade 2 ou plus à une première injection du vaccin ;
-    * vaccins *Janssen* et *AstraZeneca* uniquement : épisodes de **syndrome de fuite capillaire** (maladie très rare) ;
-    * pour les adolescent(e)s : antécédent de syndrome inflammatoire multisystémique pédiatrique (**PIMS**) après une infection à la Covid ;
-    * recommandation établie après concertation médicale pluridisciplinaire de ne pas effectuer la seconde dose de vaccin, suite à la survenue d’un **effet indésirable** d’intensité sévère ou grave, attribué à la première dose de vaccin (par exemple : la survenue d’une myocardite, ou du syndrome de Guillain-Barré).
-
-    Il y a également deux contre-indications temporaires :
-
-    * traitement par **anticorps monoclonaux** anti-SARS-CoV-2 ;
-    * **myocardites** ou **péricardites** survenues avant la vaccination et toujours évolutives.
-
-
-
-.. question:: Quels sont les effets secondaires des vaccins contre la Covid ?
-
-    Les vaccins sont des médicaments. Ils peuvent avoir des **effets indésirables**. Les plus fréquents sont : une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des nausées, de la fièvre modérée et des frissons.
-
-    Si cela arrive, c’est une réaction normale, qui est dûe à l’activation du système immunitaire par le vaccin. Ces effets secondaires sont d’ailleurs plus fréquents après la 2<sup>e</sup> dose, car la réaction immunitaire est alors plus forte.
-
-    Ils disparaissent le plus souvent au bout d’1 à 2 jours. Si vos symptômes vous inquiètent, contactez votre médecin traitant, ou le 15 en cas d’urgence.
 
 .. question:: Est-ce que la vaccination rend malade, contagieux ou positif ?
+    :level: 3
 
     **Non, la vaccination ne rend en aucun cas positif**, il n’y a pas de virus actif dans les vaccins. Vous pouvez ressentir des effets secondaires (fièvre, fatigue…) suite à la vaccination, mais vous n’êtes **ni malade, ni contagieux**.
 
     Si vous avez réalisé un [test de dépistage](/tests-de-depistage.html) et qu’il est **positif**, il est probable que vous ayez été contaminé(e). Nous vous encourageons à vous isoler et à [décrire votre situation](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
-    
-.. question:: Suis-je immunisé(e) après une seule dose de vaccin ?
 
-    Les schémas de vaccination des vaccins Moderna, Comirnaty (Pfizer-BioNTech) et AstraZeneca prévoient l’injection de **2 doses pour une vaccination efficace**. Sans le rappel vaccinal (2<sup>e</sup> dose), votre vaccination n’est pas complète.
-
-    Il existe des exceptions :
-
-    * **une personne qui a déjà eu la Covid** n’aura besoin que d’une seule dose de vaccin pour être complètement vaccinée ;
-    * **une personne fortement immunodéprimée** recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné(e) par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
-
-    **Le vaccin Janssen** ne prévoyait au départ qu’une seule dose. Toutefois, pour une protection plus efficace, la Haute Autorité de Santé (HAS) recommande maintenant une deuxième dose avec un vaccin à ARNm (Pfizer-BioNTech ou Moderna), à partir de 4 semaines après la première injection.
+</details>
 
 
-.. question:: Je suis cas contact, puis-je me faire vacciner (1<sup>re</sup> ou 2<sup>e</sup> dose) ?
+<details>
+    <summary>
+        <h2>
+            Vaccination, grossesse et allaitement
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+        </h2>
+    </summary>
 
-     **Non.** Si vous êtes [cas contact](/cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, **vous ne devez pas vous faire vacciner**. Il faut d’abord vous assurer que vous n’avez pas été contaminé(e) en faisant un test 7 jours après votre dernier contact à risque. Si ce test de dépistage est négatif, alors vous pourrez vous faire vacciner.
+.. question:: Je suis enceinte, puis-je me faire vacciner (1<sup>re</sup> et 2<sup>e</sup> dose) ?
+    :level: 3
 
+    **Oui,** d’autant que la grossesse vous expose à des formes plus sévères de la Covid. Il n’y a pas de contre-indication à la vaccination des femmes enceintes et vous pouvez vous faire vacciner avec un vaccin à ARN messager (Pfizer, Moderna) **dès le premier trimestre de grossesse**.
 
-.. question:: J’ai déjà eu la Covid, dois-je me faire vacciner (1<sup>re</sup> dose) ?
-
-    **Oui.** Si vous avez eu la Covid, une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum **2 mois après la maladie**, idéalement 6 mois pour une efficacité maximale.
-
-
-.. question:: J’ai déjà eu la Covid, comment le prouver et ne recevoir qu’une seule dose ?
-
-    Lors de votre rendez-vous de vaccination, vous pourrez présenter soit un test de **dépistage positif** réalisé il y a 2 mois ou plus, soit un **test sérologique** (prise de sang qui recherche des anticorps) positif. Certains centres de vaccination proposent de faire un test sérologique rapide ou **TROD** lors du rendez-vous de première injection. Si ce test est positif, alors vous ne recevrez qu’une seule dose de vaccin. Bientôt, ces TROD seront disponibles dans tous les centres de vaccination.
-
-
-.. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?
-
-    Cela dépend :
-
-    * si vous avez été testé(e) positif ou positive à la Covid dans les 15 jours suivants votre 1<sup>re</sup> injection, alors vous devez quand même recevoir la 2<sup>e</sup> dose dans un **délai de 2 à 6 mois** après la contamination.
-    * si vous avez été testé(e) positif ou positive à la Covid après le 15<sup>e</sup> jour suivant votre 1<sup>re</sup> injection, alors vous n’avez pas besoin de recevoir une 2<sup>e</sup> dose. Votre contamination a le même effet protecteur que la dose de rappel.
+    L’**obligation vaccinale** requise pour certaines professions (santé, médico-social, restauration…) n’est pas exigée des femmes enceintes avant le **2<sup>e</sup> trimestre de grossesse**.
 
 
-.. question:: Est-ce que je peux attraper la Covid si je suis vacciné(e) ?
+.. question:: J’allaite mon enfant, puis-je me faire vacciner (1<sup>re</sup> et 2<sup>e</sup> dose) ?
+    :level: 3
 
-    La vaccination protège très efficacement contre les **formes graves** de la maladie, et réduit donc le risque d’hospitalisation et de décès.
+    **Oui**. La Haute Autorité de santé estime que, sur la base des mécanismes biologiques (dégradation rapide des ARNm), il n’y a **pas d’effet attendu** chez le nourrisson et l’enfant allaité par une femme vaccinée. Vous pouvez donc continuer à allaiter même après votre vaccination.
 
-    Elle **protège** aussi contre les **formes symptomatiques** (à plus de **90 %** pour les vaccins Pfizer-BioNTech et Moderna après 2 doses) et asymptomatiques (de l’ordre de **80 à 90 %**, et au minimum à **50 %**, après 2 doses de vaccin à ARNm).
-
-    Même si vous êtes jeune et en bonne santé, la vaccination réduit le risque d’infection et donc de transmission du virus à vos proches.
-
-    Cependant, les vaccins ne sont **jamais efficaces à 100 %**, et il reste donc possible d’attraper la Covid et de la transmettre. C’est pourquoi, même vacciné(e), il faut continuer à porter le **masque**, respecter les **gestes barrières** et les mesures de **prévention** (test et isolement si vous ressentez des symptômes ou si vous êtes cas contact).
-
-    Si vous ressentez des symptômes ou si vous êtes positif(ve) à la Covid, [obtenez en quelques clics des conseils sur la conduite à tenir](/j-ai-des-symptomes-covid.html).
-
+</details>
 
 </div>
