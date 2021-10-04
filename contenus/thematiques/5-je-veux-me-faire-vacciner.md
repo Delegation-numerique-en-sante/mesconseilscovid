@@ -52,7 +52,7 @@
 
     <div class="voir-aussi">
 
-    - [Devrai-je recevoir une dose de rappel, dite 3<sup>e</sup> dose ?](#devrai-je-recevoir-une-dose-de-rappel-dite-3-e-dose)
+    - [Devrai-je recevoir une dose de rappel, dite 3<sup>e</sup> dose ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
     - [Où me faire vacciner ?](#ou-me-faire-vacciner)
 
     </div>

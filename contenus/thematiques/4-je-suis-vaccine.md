@@ -9,7 +9,7 @@
 
 ## Devrai-je recevoir une dose de rappel, dite 3<sup>e</sup> dose ?
 
-Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#devrai-je-recevoir-une-dose-de-rappel-dite-3-e-dose) ».
+Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) ».
 
 
 ## Quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
