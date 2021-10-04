@@ -8,7 +8,13 @@
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
-## L’usage du pass sanitaire en France
+<details>
+    <summary>
+        <h2>
+            L’usage du pass sanitaire en France
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+        </h2>
+    </summary>
 
 .. question:: Qu’est-ce que le pass sanitaire ?
     :level: 3
@@ -434,8 +440,15 @@
 
     </div>
 
+</details>
 
-<h2 id="les-voyages-a-l-etranger">Les voyages à l’étranger</h2>
+<details>
+    <summary>
+        <h2 id="les-voyages-a-l-etranger">
+            Les voyages à l’étranger
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+        </h2>
+    </summary>
 
 .. question:: Est-ce que le pass sanitaire européen est différent du pass sanitaire français ?
     :level: 3
@@ -484,8 +497,15 @@
 
     </div>
 
+</details>
 
-<h2 id="obtenir-son-justificatif-avec-qr-code">Obtenir son justificatif avec QR code</h2>
+<details>
+    <summary>
+        <h2 id="obtenir-son-justificatif-avec-qr-code">
+            Obtenir son justificatif avec QR code
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+        </h2>
+    </summary>
 
 .. question:: Comment obtenir une attestation de vaccination complète avec un QR code ?
     :level: 3
@@ -597,8 +617,6 @@
 
     </div>
 
-</div>
-
 
 .. question:: J’ai été vacciné à l’étranger avec un vaccin non reconnu en France (Sinovac, Sinopharm), comment faire valoir ma vaccination en France et obtenir un pass sanitaire ?
     :level: 3
@@ -631,4 +649,5 @@
 
     </div>
 
+</details>
 </div>
