@@ -66,21 +66,16 @@ Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-fair
 
 
 .. question:: J’ai perdu ou je n’ai pas reçu d’attestation de vaccination, comment faire ?
-
-    Grâce à votre numéro de sécurité sociale, vous pouvez **télécharger** un nouveau certificat de vaccination sur le téléservice de l’Assurance Maladie : [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
-
-    Un **professionnel de santé** (médecin, pharmacien, infirmier, sage-femme…) peut vous délivrer une attestation certifiée sur présentation de votre **carte vitale**.
-
+    
+    Voir la réponse sur [notre page sur le Pass sanitaire](/pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code)
 
 .. question:: J’ai eu la Covid avant d’avoir ma première et unique injection, mais mon attestation indique que ma vaccination est « en cours » au lieu d’être terminée. Que faire ?
 
-    Vous pouvez vous rendre chez un professionnel de santé (médecin, sage-femme, infirmier) muni de vos preuves de vaccination et de première contamination. Il pourra clôturer votre cycle de vaccination dans le logiciel.
-
+    Voir la réponse sur [notre page sur le Pass sanitaire](/pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code)
 
 .. question:: Mon certificat de vaccination ne comporte pas de QR code, comment faire ?
-
-     Vous pouvez télécharger un nouveau certificat depuis [attestation-vaccin.ameli.fr](https://attestation-vaccin.ameli.fr/).
-
+    
+    Voir la réponse sur [notre page sur le Pass sanitaire](/pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code)
 
 .. question:: Est-ce que je peux voyager une fois vacciné(e) ?
 
