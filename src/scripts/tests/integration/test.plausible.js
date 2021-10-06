@@ -25,6 +25,11 @@ describe('Plausible', function () {
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
+        const summary = await page.waitForSelector(
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+        )
+        await summary.click()
+
         // On clique sur le bouton pour avoir des conseils.
         const bouton = await page.waitForSelector(
             'a.button >> text="Je réponds pour moi"'
@@ -59,6 +64,11 @@ describe('Plausible', function () {
 
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
+
+        const summary = await page.waitForSelector(
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+        )
+        await summary.click()
 
         // On clique sur le bouton pour avoir des conseils.
         let bouton = await page.waitForSelector(
@@ -123,6 +133,11 @@ describe('Plausible', function () {
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
+        const summary = await page.waitForSelector(
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+        )
+        await summary.click()
+
         // On clique sur le bouton pour un ou une proche.
         let bouton = await page.waitForSelector(
             'a.button >> text="Je réponds pour un proche"'
@@ -183,6 +198,11 @@ describe('Plausible', function () {
 
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
+
+        const summary = await page.waitForSelector(
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+        )
+        await summary.click()
 
         // On clique sur le bouton pour avoir des conseils.
         let bouton = await page.waitForSelector(
@@ -245,6 +265,11 @@ describe('Plausible', function () {
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
+        const summary = await page.waitForSelector(
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+        )
+        await summary.click()
+
         // On clique sur le bouton pour un ou une proche.
         let bouton = await page.waitForSelector(
             'a.button >> text="Je réponds pour un proche"'
@@ -304,6 +329,11 @@ describe('Plausible', function () {
 
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
+
+        const summary = await page.waitForSelector(
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+        )
+        await summary.click()
 
         // On clique sur le bouton pour avoir des conseils.
         let bouton = await page.waitForSelector(
