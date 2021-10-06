@@ -35,6 +35,10 @@ describe('Enfants', function () {
             'text="Mesures sanitaires à l’école, au collège et au lycée"'
         )
         summary.click()
+        const subSummary = await page.waitForSelector(
+            'text="Est-ce que mon enfant doit porter le masque ?"'
+        )
+        subSummary.click()
 
         await remplirDepartement(page, '01')
 
@@ -53,6 +57,10 @@ describe('Enfants', function () {
             'text="Mesures sanitaires à l’école, au collège et au lycée"'
         )
         summary.click()
+        const subSummary = await page.waitForSelector(
+            'text="Est-ce que mon enfant doit porter le masque ?"'
+        )
+        subSummary.click()
 
         await remplirDepartement(page, '02')
 
