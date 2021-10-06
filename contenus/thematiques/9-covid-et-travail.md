@@ -25,7 +25,7 @@
 
 .. question:: En tant que salarié(e), que faire si je constate des manquements dans les mesures de prévention face à l’épidémie de Covid ?
 
- Si votre employeur **ne respecte pas** les recommandations des autorités sanitaires, et notamment s’il :
+    Si votre employeur **ne respecte pas** les recommandations des autorités sanitaires, et notamment s’il :
 
     * n’isole pas les personnes positives ou symptomatiques ;
     * ne fait pas respecter les gestes barrières…
@@ -33,9 +33,10 @@
     Ou qu’il vous fait subir des **pressions**, notamment :
 
     * pour vous empêcher de vous faire tester contre la Covid ;
-    * travailler pendant votre arrêt de travail.   
-    
+    * travailler pendant votre arrêt de travail.
+
     Vous pouvez alerter :
+
     * les **représentants du personnel** (<abbr title="Comité social et économique">CSE</abbr>) ;
     * le service de **santé au travail** (médecine du travail) ;
     * l’**inspection du travail** au <a href="tel:0806000126">0 806 000 126</a> (service **gratuit** et **anonyme**).
