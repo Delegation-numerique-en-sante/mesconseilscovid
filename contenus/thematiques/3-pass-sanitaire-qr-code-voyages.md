@@ -8,7 +8,7 @@
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
-## L’usage du pass sanitaire en France
+<h2 id="l-usage-du-pass-sanitaire-en-france">L’usage du pass sanitaire en France</h2>
 
 .. question:: Qu’est-ce que le pass sanitaire ?
     :level: 3

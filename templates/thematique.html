@@ -52,6 +52,17 @@
             <div id="js-profil-empty-header" class="js-profil-empty"></div>
         </section>
     </header>
+    {% macro sommaire(items) %}
+        <ul>
+        {% for item in items %}
+            <li><a href="#{{ item.slug }}">{{ item.title }}</a>
+            {% if item.children %}
+                {{ sommaire(item.children) }}
+            {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+    {% endmacro %}
     <main role="main">
         <section id="page" class="thematique">
             <section id="introduction">
@@ -66,6 +77,10 @@
                                 Dernière mise à jour : le <time datetime="{{ thematique.last_modified.isoformat(timespec='minutes') }}">{{ thematique.last_modified.strftime('%d/%m/%Y') }}</time>.
                             </div>
                             {{ thematique.header }}
+                            <aside class="sommaire">
+                                <div><b>Sommaire</b></div>
+                                {{ sommaire(thematique.structure()) }}
+                            </aside>
                             {{ thematique.body }}
                         </div>
                     </div>

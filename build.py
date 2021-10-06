@@ -9,10 +9,12 @@ from http import HTTPStatus
 from io import StringIO
 from pathlib import Path
 from time import perf_counter
+from typing import List
 
 import httpx
 import mistune
 import pytz
+from bs4 import BeautifulSoup
 from jinja2 import Environment as JinjaEnv
 from jinja2 import FileSystemLoader, StrictUndefined
 from minicli import cli, run, wrap
@@ -270,6 +272,14 @@ def index():
 
 
 @dataclass
+class Item:
+    level: int
+    slug: str
+    title: str
+    children: List["Item"]
+
+
+@dataclass
 class Thematique:
     path: Path
     title: str
@@ -292,6 +302,43 @@ class Thematique:
     @property
     def imgsrcpng(self):
         return self.imgsrc.replace(".svg", ".png")
+
+    def structure(self):
+        def _build_tree(items, level):
+            siblings = []
+            while items:
+                next_item = items[0]
+                if next_item.level == level:
+                    item = items.pop(0)
+                    children, items = _build_tree(items, level + 1)
+                    item.children = children
+                    siblings.append(item)
+                elif next_item.level > level:
+                    pass
+                elif next_item.level < level:
+                    break
+            return siblings, items
+
+        def build_tree(items):
+            tree, rest = _build_tree(items, items[0].level if items else None)
+            assert rest == []
+            return tree
+
+        def make_items(elements):
+            return [
+                Item(
+                    level=int(element.name[1:]),
+                    title=element.text,
+                    slug=element.get("id", ""),
+                    children=[],
+                )
+                for element in elements
+            ]
+
+        soup = BeautifulSoup(self.body, features="html.parser")
+        elements = soup.find_all(["h2"])
+        items = make_items(elements)
+        return build_tree(items)
 
 
 @cli
@@ -366,8 +413,10 @@ def last_modified_time(path):
 
 
 def extract_title(html_content):
-    html_title, _ = html_content.split("</h1>", 1)
-    return html_title.split("<h1>", 1)[1]
+    mo = re.match(r"<h1.*?>(.*?)</h1>", html_content)
+    if mo is None:
+        raise RuntimeError("Could not find H1 tag")
+    return mo.group(1)
 
 
 def extract_image(html_content):

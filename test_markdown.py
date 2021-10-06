@@ -339,3 +339,36 @@ class TestMarkdownContentInline:
             '<span class="me visible">Moi</span>'
             '<span class="them" hidden>Cette <strong>personne</strong></span>'
         )
+
+
+def _build_tree(items, level):
+    siblings = []
+    while items:
+        next_item = items[0]
+        if next_item == level:
+            item = items.pop(0)
+            children, items = _build_tree(items, level+1)
+            siblings.append((item, children))
+        elif next_item > level:
+            raise RuntimeError("should not happen")
+        elif next_item < level:
+            break
+    return siblings, items
+
+
+def build_tree(items, level=1):
+    tree, rest = _build_tree(items, level)
+    assert rest == []
+    return tree
+
+
+import pytest
+@pytest.mark.parametrize("input_,output_", [
+    ([], []),
+    ([1], [(1, [])]),
+    ([1, 1], [(1, []), (1, [])]),
+    ([1, 2], [(1, [(2, [])])]),
+    ([1, 2, 3, 3, 2, 3], [(1, [(2, [(3, []), (3, [])]), (2, [(3, [])])])])
+])
+def test_heading_hierarchy(input_,output_):
+    assert build_tree(input_) == output_
