@@ -1,6 +1,11 @@
 import { assert } from 'chai'
 
 async function cEstParti(page) {
+    const summary = await page.waitForSelector(
+        'text="Quel est le test adapté à ma situation ?"'
+    )
+    await summary.click()
+
     const bouton = await page.waitForSelector(
         '#tests-de-depistage-demarrage-form >> text="C’est parti !"'
     )
