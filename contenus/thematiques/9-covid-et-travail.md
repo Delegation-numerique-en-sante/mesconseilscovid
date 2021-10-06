@@ -25,12 +25,22 @@
 
 .. question:: En tant que salarié(e), que faire si je constate des manquements dans les mesures de prévention face à l’épidémie de Covid ?
 
+ Si votre employeur **ne respecte pas** les recommandations des autorités sanitaires, et notamment s’il :
+
+    * n’isole pas les personnes positives ou symptomatiques ;
+    * ne fait pas respecter les gestes barrières…
+
+    Ou qu’il vous fait subir des **pressions**, notamment :
+
+    * pour vous empêcher de vous faire tester contre la Covid ;
+    * travailler pendant votre arrêt de travail.   
+    
     Vous pouvez alerter :
     * les **représentants du personnel** (<abbr title="Comité social et économique">CSE</abbr>) ;
     * le service de **santé au travail** (médecine du travail) ;
     * l’**inspection du travail** au <a href="tel:0806000126">0 806 000 126</a> (service **gratuit** et **anonyme**).
 
-    Si votre employeur n’**applique pas** les **recommandations** des autorités sanitaires, et que vous estimez que ces manquements vous font courir un **danger grave et imminent,** alors vous pouvez quitter votre poste en faisant valoir votre **droit de retrait**.
+    Si votre employeur n’**applique pas** les **recommandations** des autorités sanitaires et que vous estimez que ces manquements vous font courir un **danger grave et imminent,** alors vous pouvez quitter votre poste en faisant valoir votre **droit de retrait**.
 
 
 .. question:: En tant que salarié(e), qu’est-ce que je dois faire pour limiter la transmission du virus au travail ?
@@ -114,22 +124,6 @@
 .. question:: Mon employeur peut-il exiger un certificat attestant de mon rétablissement de la Covid avant mon retour au travail ?
 
     **Non.** Si vous avez eu la Covid et que vous avez respecté la durée de votre isolement (10 jours au moins après le début de vos symptômes ou de votre test positif et que vous ne présentez plus de fièvre), alors vous pouvez retourner au travail sans présenter de certificat ou de nouveau test de dépistage.
-
-
-.. question:: Quels sont les recours face à un employeur qui ne fait pas respecter les mesures de protection anti-Covid ?
-
-    Si votre employeur **ne respecte pas** les recommandations des autorités sanitaires, et notamment s’il :
-
-    * n’isole pas les personnes positives ou symptomatiques ;
-    * ne fait pas respecter les gestes barrières…
-
-    Ou qu’il vous fait subir des **pressions**, notamment :
-
-    * pour vous empêcher de vous faire tester contre la Covid ;
-    * travailler pendant votre arrêt de travail.
-
-    Nous vous conseillons d’**alerter** les **représentants du personnel** de votre entreprise (**<abbr title="Comité social et économique">CSE</abbr>**). Vous pouvez également saisir **anonymement** l’inspection du travail au <a href="tel:0806000126">0 806 000 126</a> (service gratuit + prix d’un appel). Votre employeur ne saura pas qui l’a signalé.
-
 
 .. question:: Quels aménagements peuvent être mis en place pour limiter la transmission du virus sur le lieu de travail ?
 
