@@ -76,11 +76,12 @@ function getAnimationBehavior() {
 function scrolleAuSummary() {
     const summaries = document.querySelectorAll('summary')
     Array.from(summaries).forEach((summary) => {
-        summary.addEventListener('click', (event) => {
+        summary.addEventListener('click', () => {
+            const detailsElement = summary.parentElement
             // Even with an event, we need to wait for the next few
             // ticks to be able to scroll to the collapsed element.
             setTimeout(() => {
-                event.target.scrollIntoView({ behavior: getAnimationBehavior() })
+                detailsElement.scrollIntoView({ behavior: getAnimationBehavior() })
             }, 100)
         })
     })
