@@ -4,9 +4,24 @@
 
 <header></header>
 
+<nav class="sommaire">
+    <h2>Sommaire</h2>
+    <ul>
+        <li>
+            <a href="#responsabilites-et-prevention">Responsabilités et prévention</a>
+        </li>
+        <li>
+            <a href="#arret-de-travail">Arrêt de travail lié à la Covid</a>
+        </li>
+        <li>
+            <a href="#absence-pour-vaccination">Absence pour vaccination</a>
+        </li>
+    </ul>
+</nav>
+
 <div itemscope itemtype="https://schema.org/FAQPage">
 
-<h2 id="prevention">Responsabilités et prévention</h2>
+<h2 id="responsabilites-et-prevention">Responsabilités et prévention</h2>
 
 .. question:: En tant que salarié(e), qu’est-ce que je dois faire pour limiter la transmission du virus au travail ?
     :level: 3
