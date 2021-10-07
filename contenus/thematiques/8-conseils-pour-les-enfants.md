@@ -23,6 +23,158 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </h2>
 </summary>
 
+.. question:: Dans quels cas mon enfant doit-il rester à la maison ?
+    :level: 3
+
+    Vous ne devez pas envoyer votre enfant à l’école, au collège ou au lycée :
+
+    * s’il a été **testé positif** à la Covid ;
+    * s’il a de la **fièvre** (38 °C ou plus) **ou des symptômes évoquant la Covid**, et ce même s’il est vacciné ou s’il a déjà eu la Covid il y a moins de 2 mois ;
+    * s’il a été identifié comme **cas contact**, ou qu’un membre de son foyer a été **testé positif**, et que votre enfant n’est **pas vacciné** et n’a pas déjà eu la Covid dans les 2 derniers mois.
+
+    Dans chacun de ces cas, vous devez **informer l’établissement au plus tôt**, afin que les mesures appropriées soient rapidement mises en place.
+
+    <div class="voir-aussi">
+
+    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
+
+    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+
+    </div>
+    
+.. question:: Que se passe-t-il si un élève est testé positif dans la classe de mon enfant ?
+    :level: 3
+
+    Dans **les écoles**, la règle qui s’applique est la **fermeture de la classe** pour une durée de **7 jours** dès le premier cas positif confirmé.
+
+    Dans **les collèges et les lycées**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves **« cas contact »** devront s’isoler, et donc poursuivre leurs apprentissages **à distance**, pendant une durée de **7 jours**, sauf s’ils sont **vaccinés** ou s’ils ont **déjà eu la Covid** il y a moins de 2 mois (*voir ci-dessous*).
+
+    <div class="voir-aussi">
+
+    - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine)
+
+    - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
+
+    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
+
+    </div>
+
+
+.. question:: Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?
+    :level: 3
+
+    <div class="conseil conseil-jaune">
+
+    * Si votre enfant n’est **pas vacciné**, voir [la question suivante](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine).
+
+    * Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
+
+    </div>
+
+    #### 1. Pas d’isolement
+
+    Si votre enfant est « **cas contact** » et qu’il est **vacciné**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école.
+
+    #### 2. Test de dépistage
+
+    Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+
+    * Si le test est **négatif** :
+        * il devra faire un **test de contrôle** ;
+        * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
+        * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
+
+    * Si le test est **positif** :
+        - votre enfant a contracté la Covid et il est **contagieux** ;
+        - il doit rester en isolement au moins **10 jours** à partir de la date du test ;
+        - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
+        - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
+            * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
+            * faire un **test antigénique** dès que possible.
+
+    #### 3. Test de contrôle
+
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) :
+
+    - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
+    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle.
+
+    <div class="voir-aussi">
+
+    - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
+
+    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
+
+    </div>
+
+
+.. question:: Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?
+    :level: 3
+
+    <div class="conseil conseil-jaune">
+
+    * Si votre enfant est **vacciné**, voir [la question précédente](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine).
+
+    * Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
+
+    </div>
+
+    #### 1. Isolement
+
+    Si votre enfant est « **cas contact** », qu’il n’est **pas vacciné** et qu’il n’a pas déjà eu la Covid dans les 2 derniers mois, alors il devra rester **isolé** pendant **7 jours**. Il ne devra **pas aller à l’école** et suivra ses apprentissages à distance.
+
+    #### 2. Test de dépistage
+
+    Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+
+    * Si le test est **négatif** :
+        * il devra quand même rester **isolé** pendant **7 jours** ;
+        * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
+
+    * Si le test est **positif** :
+        - votre enfant a contracté la Covid et il est **contagieux** ;
+        - il doit rester en isolement au moins **10 jours** à partir de la date du test ;
+        - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
+        - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
+            * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
+            * faire un **test antigénique** dès que possible.
+
+    #### 3. Test de contrôle
+
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) avant de retourner à l’école :
+
+    - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
+    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle.
+
+    <div class="voir-aussi">
+
+    - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
+
+    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
+
+    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
+
+    </div>
+
+
+.. question:: Si un de mes enfants est cas contact, que se passe-t-il pour mes autres enfants ?
+    :level: 3
+
+    Le « **cas contact d’un cas contact** » n’est pas un cas contact. Si l’un de vos enfants doit s’isoler, parce qu’il est identifié comme **cas contact** et qu’il n’est **pas vacciné** (et qu’il n’a pas déjà eu la Covid dans les 2 derniers mois), alors ses frères et sœurs peuvent continuer à **aller à l’école**.
+
+    Par contre, si votre enfant est **testé positif** à la Covid, alors ses frères et sœurs deviendront à leur tour **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois). S’ils ne sont **pas vaccinés**, ils devront eux aussi s’isoler et ne devront pas aller à l’école.
+
+    <div class="voir-aussi">
+
+    - [Dans quels cas mon enfant doit-il rester à la maison ?](#dans-quels-cas-mon-enfant-doit-il-rester-a-la-maison)
+
+    - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine)
+
+    - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
+
+    </div>
+    
+    
 .. question:: Est-ce que mon enfant doit porter le masque ?
     :level: 3
 
@@ -198,157 +350,6 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: Que se passe-t-il si un élève est testé positif dans la classe de mon enfant ?
-    :level: 3
-
-    Dans **les écoles**, la règle qui s’applique est la **fermeture de la classe** pour une durée de **7 jours** dès le premier cas positif confirmé.
-
-    Dans **les collèges et les lycées**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves **« cas contact »** devront s’isoler, et donc poursuivre leurs apprentissages **à distance**, pendant une durée de **7 jours**, sauf s’ils sont **vaccinés** ou s’ils ont **déjà eu la Covid** il y a moins de 2 mois (*voir ci-dessous*).
-
-    <div class="voir-aussi">
-
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine)
-
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
-
-    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
-
-    </div>
-
-
-.. question:: Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?
-    :level: 3
-
-    <div class="conseil conseil-jaune">
-
-    * Si votre enfant n’est **pas vacciné**, voir [la question suivante](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine).
-
-    * Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
-
-    </div>
-
-    #### 1. Pas d’isolement
-
-    Si votre enfant est « **cas contact** » et qu’il est **vacciné**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école.
-
-    #### 2. Test de dépistage
-
-    Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
-
-    * Si le test est **négatif** :
-        * il devra faire un **test de contrôle** ;
-        * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
-        * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
-
-    * Si le test est **positif** :
-        - votre enfant a contracté la Covid et il est **contagieux** ;
-        - il doit rester en isolement au moins **10 jours** à partir de la date du test ;
-        - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
-        - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
-            * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
-            * faire un **test antigénique** dès que possible.
-
-    #### 3. Test de contrôle
-
-    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) :
-
-    - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
-    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle.
-
-    <div class="voir-aussi">
-
-    - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
-
-    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
-
-    </div>
-
-
-.. question:: Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?
-    :level: 3
-
-    <div class="conseil conseil-jaune">
-
-    * Si votre enfant est **vacciné**, voir [la question précédente](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine).
-
-    * Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
-
-    </div>
-
-    #### 1. Isolement
-
-    Si votre enfant est « **cas contact** », qu’il n’est **pas vacciné** et qu’il n’a pas déjà eu la Covid dans les 2 derniers mois, alors il devra rester **isolé** pendant **7 jours**. Il ne devra **pas aller à l’école** et suivra ses apprentissages à distance.
-
-    #### 2. Test de dépistage
-
-    Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
-
-    * Si le test est **négatif** :
-        * il devra quand même rester **isolé** pendant **7 jours** ;
-        * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
-
-    * Si le test est **positif** :
-        - votre enfant a contracté la Covid et il est **contagieux** ;
-        - il doit rester en isolement au moins **10 jours** à partir de la date du test ;
-        - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
-        - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
-            * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
-            * faire un **test antigénique** dès que possible.
-
-    #### 3. Test de contrôle
-
-    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) avant de retourner à l’école :
-
-    - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
-    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle.
-
-    <div class="voir-aussi">
-
-    - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
-
-    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
-
-    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
-
-    </div>
-
-
-.. question:: Si un de mes enfants est cas contact, que se passe-t-il pour mes autres enfants ?
-    :level: 3
-
-    Le « **cas contact d’un cas contact** » n’est pas un cas contact. Si l’un de vos enfants doit s’isoler, parce qu’il est identifié comme **cas contact** et qu’il n’est **pas vacciné** (et qu’il n’a pas déjà eu la Covid dans les 2 derniers mois), alors ses frères et sœurs peuvent continuer à **aller à l’école**.
-
-    Par contre, si votre enfant est **testé positif** à la Covid, alors ses frères et sœurs deviendront à leur tour **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois). S’ils ne sont **pas vaccinés**, ils devront eux aussi s’isoler et ne devront pas aller à l’école.
-
-    <div class="voir-aussi">
-
-    - [Dans quels cas mon enfant doit-il rester à la maison ?](#dans-quels-cas-mon-enfant-doit-il-rester-a-la-maison)
-
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine)
-
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
-
-    </div>
-
-
-.. question:: Dans quels cas mon enfant doit-il rester à la maison ?
-    :level: 3
-
-    Vous ne devez pas envoyer votre enfant à l’école, au collège ou au lycée :
-
-    * s’il a été **testé positif** à la Covid ;
-    * s’il a de la **fièvre** (38 °C ou plus) **ou des symptômes évoquant la Covid**, et ce même s’il est vacciné ou s’il a déjà eu la Covid il y a moins de 2 mois ;
-    * s’il a été identifié comme **cas contact**, ou qu’un membre de son foyer a été **testé positif**, et que votre enfant n’est **pas vacciné** et n’a pas déjà eu la Covid dans les 2 derniers mois.
-
-    Dans chacun de ces cas, vous devez **informer l’établissement au plus tôt**, afin que les mesures appropriées soient rapidement mises en place.
-
-    <div class="voir-aussi">
-
-    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
-
-    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
-
-    </div>
 
 </details>
 
