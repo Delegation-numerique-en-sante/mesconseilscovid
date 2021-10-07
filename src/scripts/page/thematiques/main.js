@@ -60,6 +60,7 @@ function ouvreDetailsSiFragment() {
         while (elem) {
             if (elem.tagName.toLowerCase() === 'details') {
                 elem.setAttribute('open', '')
+                break
             }
             elem = elem.parentElement
         }
