@@ -312,6 +312,10 @@ legend h1 {
         background-color: rgba(255, 255, 255);
     }
 }
+.page-thematique #conseils-block .sommaire h2 {
+    font-size: 120%;
+    color: #25252b;
+}
 .page-thematique .conseils details {
     position: relative;
 }
