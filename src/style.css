@@ -1697,6 +1697,10 @@ a.no-type::after {
     padding-top: 1rem;
     font-size: 1rem;
 }
+.thematique #conseils-block summary h4 {
+    padding-top: 0.4rem;
+    color: #000091;
+}
 .thematique #conseils-block form h3,
 .thematique #conseils-block form h4 {
     color: #000;
