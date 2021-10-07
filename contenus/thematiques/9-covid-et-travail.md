@@ -1,6 +1,6 @@
 # Covid et travail
 
-<img src="illustrations/activitepro.svg">
+<img src="illustrations/travail.svg">
 
 <header></header>
 

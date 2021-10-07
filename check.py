@@ -200,6 +200,7 @@ def service_worker():
         "illustrations/solidarites-sante-gouv-fr-infog-vaccins-particuliers.png",
         "illustrations/symptomesactuels.png",
         "illustrations/symptomespasses.png",
+        "illustrations/travail.png",
         "illustrations/vaccins.png",
         "index.html",
         "logo.png",
