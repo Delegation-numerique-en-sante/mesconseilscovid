@@ -8,7 +8,7 @@
 
 ## Vous vivez avec une personne positive à la Covid et…
 
-<details>
+<details id="personne-positive-schema-vaccinal-incomplet">
 
 .. summary:: vous n’êtes pas vacciné(e) (schéma vaccinal incomplet)
 
@@ -62,7 +62,7 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 
 </details>
 
-<details>
+<details id="personne-positive-schema-vaccinal-complet">
 
 .. summary:: vous êtes vacciné(e) (schéma vaccinal complet)
 
