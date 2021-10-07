@@ -148,6 +148,7 @@
 
     </div>
 
+
 .. question:: Les tests de dépistage sont-ils payants ?
 
     Les tests de dépistage réalisés par un professionnel de santé sont **gratuits**, sans condition de prescription médicale, pour :
@@ -159,13 +160,16 @@
     Les touristes non européens peuvent bénéficier de la gratuité sur présentation d’une prescription médicale ou s’ils ont été identifiés cas contact par l’Assurance maladie, sur présentation d’un justificatif (SMS, courriel). En dehors de ces cas de figure, les prix des tests sont fixés à **49,89 euros** (PCR) et **25 euros** (test antigénique).
 
 
+.. question:: Je souhaite me faire dépister mais les prélèvements nasopharyngés sont impossibles dans mon cas
+
+    Le test **PCR salivaire** est indiqué dans ces cas : enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…
+
+
 ## Quels sont les différents tests de dépistage de la Covid-19 ?
 
-<details>
+### 1. Test PCR nasopharyngé (prélèvement nasal)
 
-.. summary:: Test PCR nasopharyngé
-
-.. question:: Le test PCR nasopharyngé (prélèvement nasal)
+.. question:: Qu’est-ce qu’un test PCR nasopharyngé ?
     :level: 4
 
     Le test PCR nasopharyngé est le test de dépistage de la Covid-19 de référence.
@@ -179,32 +183,26 @@
 
     [Cliquez ici pour trouver un lieu de dépistage](https://www.sante.fr/cf/centres-depistage-covid.html) près de chez vous.
 
-</details>
 
-<details>
+### 2. Test antigénique nasopharyngé (prélèvement nasal)
 
-.. summary:: Test antigénique nasopharyngé
-
-.. question:: Le test antigénique nasopharyngé (prélèvement nasal)
+.. question:: Qu’est-ce qu’un test antigénique nasopharyngé ?
     :level: 4
 
     Le test antigénique permet d’avoir le résultat plus rapidement, mais il est moins fiable que les tests réalisés en laboratoire.
 
-.. question:: Où faire un test antigénique nasopharyngé (prélèvement nasal) ?
+.. question:: Où faire un test antigénique nasopharyngé ?
     :level: 4
 
     Ce type de test est réalisé par un professionnel de santé, notamment en pharmacie.
 
     [Cliquez ici pour trouver un lieu de dépistage](https://www.sante.fr/cf/centres-depistage-covid.html) près de chez vous.
 
-</details>
 
-<details>
+### 3. Test PCR salivaire (prélèvement buccal)
 
-.. summary:: Test PCR salivaire
-
-.. question:: Le test PCR salivaire (prélèvement buccal)
-    :level: 3
+.. question:: Qu’est-ce qu’un test PCR salivaire ?
+    :level: 4
 
     Ce test est réalisé grâce au prélèvement de la salive, avec un écouvillon (long coton-tige) ou sans (par crachat). Moins contraignant que les tests nasopharyngés, il est recommandé **lorsque le prélèvement nasal est compliqué ou impossible** (très jeunes enfants, déviation de la cloison nasale, troubles psychiatriques…).
 
@@ -215,14 +213,11 @@
 
     [Cliquez ici pour trouver un lieu de dépistage](https://www.sante.fr/cf/centres-depistage-covid.html) près de chez vous.
 
-</details>
 
-<details>
+### 4. Autotests
 
-.. summary:: Autotests
-
-.. question:: Les autotests
-    :level: 3
+.. question:: Qu’est-ce qu’un autotest ?
+    :level: 4
 
     Des autotests sont disponibles en pharmacie. Ce test est un prélèvement nasal à réaliser chez soi. Ils ne sont pas pris en charge par l’Assurance maladie sauf dans le cas des professionnels exerçant auprès de personnes vulnérables (âgées, handicapées…) et dans la limite de 10 par mois.
 
@@ -232,14 +227,7 @@
     - on a eu un contact à risque récent (cas contact).
 
     Ce type de test est utile à condition de le pratiquer régulièrement (plusieurs fois par semaine).
-    
+
     Pour obtenir un pass sanitaire, l'autotest doit être réalisé sous la supervision d'un professionnel de santé.
-
-</details>
-
-.. question:: Je souhaite me faire dépister mais les prélèvements nasopharyngés sont impossibles dans mon cas
-    :level: 3
-
-    Le test **PCR salivaire** est indiqué dans ces cas : enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…
 
 </div>
