@@ -4,7 +4,7 @@
 
 <header></header>
 
-Depuis le 1er septembre 2021, le télétravail n'est plus obligatoire. MesConseilsCovid accompagne votre retour au bureau en répondant à vos questions sur les **recommandations** pour vous protéger et protéger les autres, ainsi que vos **droits** (**arrêt de travail...**) et **responsabilités** dans le contexte d'épidémie de Covid-19.
+Depuis le 1<sup>er</sup> septembre 2021, le télétravail n’est plus obligatoire. MesConseilsCovid accompagne votre retour au bureau en répondant à vos questions sur les **recommandations** pour vous protéger et protéger les autres, ainsi que vos **droits** (**arrêt de travail…**) et **responsabilités** dans le contexte d’épidémie de Covid-19.
 
 <nav class="sommaire">
     <h2>Sommaire</h2>
@@ -34,7 +34,7 @@ Depuis le 1er septembre 2021, le télétravail n'est plus obligatoire. MesConsei
 
     Vous devez donc :
 
-    * respecter les **gestes barrières :** le port du masque, la distanciation physique, même si vous êtes vacciné(e) ;
+    * respecter les **gestes barrières** : le port du masque, la distanciation physique, même si vous êtes vacciné(e) ;
     * vous **isoler** :
        * si vous avez été testé **positif** à la Covid, ou dès que vous ressentez des [symptômes évocateurs de la Covid](https://mesconseilscovid.sante.gouv.fr/j-ai-des-symptomes-covid.html#quels-sont-les-symptomes-de-la-covid) et en attendant le résultat de votre test de dépistage, **même si vous êtes vacciné(e)**,
        * si vous êtes alerté d’un **contact à risque**, **sauf** si vous êtes **vacciné** ou que vous avez eu la Covid dans les deux mois précédents.
@@ -67,7 +67,7 @@ Depuis le 1er septembre 2021, le télétravail n'est plus obligatoire. MesConsei
 
     Même si la vaccination diminue votre contagiosité, il faut **vous isoler au moins 10 jours** depuis la date de votre test de dépistage positif (ou de début de vos symptômes) pour ne pas risquer de transmettre le virus à vos collègues.
 
-    Si vous ne pouvez pas télétravailler, l’**Assurance maladie** vous contactera et vous fournira un **arrêt de travail** sans délai de carence.
+    Si vous ne pouvez pas télétravailler, l’**Assurance Maladie** vous contactera et vous fournira un **arrêt de travail** sans délai de carence.
 
     <div class="voir-aussi">
 
@@ -86,15 +86,15 @@ Depuis le 1er septembre 2021, le télétravail n'est plus obligatoire. MesConsei
     Voici quelques exemples de pratiques qui peuvent être mises en place :
 
     * Limiter le brassage de personnes :
-        * étaler les horaires d’arrivées et de départ pour **limiter l’affluence** et les croisements ;
+        * étaler les horaires d’arrivées et de départs pour **limiter l’affluence** et les croisements ;
         * limiter le nombre de personnes présentes dans les locaux pour faciliter la **distanciation physique** en instaurant une **jauge** ;
         * décider d’un nombre de **jours télétravaillés** par semaine et privilégier les réunions à distance ;
         * attribuer une **place fixe** à chaque employé (suspendre l’*open flex* ou bureau nomade) ;
-        * éviter d’aller au **restaurant d’entreprise** aux heures d’affluence et déjeuner **seul** ou avec les membres de **mon équipe** pour éviter de multiplier les contacts.
+        * éviter d’aller au **restaurant d’entreprise** aux heures d’affluence et déjeuner **seul(e)** ou avec les membres de **mon équipe** pour éviter de multiplier les contacts.
 
-    * Informer les employés :
+    * Informer les employé(e)s :
 
-        * sur l’efficacité des **mesures barrières** : le masque ; la distanciation, l’isolement dès les premiers symptômes,
+        * sur l’efficacité des **mesures barrières** : le masque, la distanciation, l’isolement dès les premiers symptômes,
         * sur la possibilité de se faire **vacciner** pendant les heures de travail, dans l’entreprise ou ailleurs (centre de vaccination, pharmacie, médecin…).
 
     * (Faire) respecter les règles sanitaires :
@@ -108,7 +108,7 @@ Depuis le 1er septembre 2021, le télétravail n'est plus obligatoire. MesConsei
 .. question:: Quelles sont les obligations de mon employeur face à l’épidémie de Covid ?
     :level: 3
 
-    Votre employeur doit **limiter** autant que possible **les risques d’exposition** de ses employés au virus. Par exemple, il doit :
+    Votre employeur doit **limiter** autant que possible **les risques d’exposition** de ses employé(e)s au virus. Par exemple, il doit :
 
     * **faire respecter** les mesures recommandées par les autorités sanitaires, comme les **gestes barrières** (port du masque, distanciation physique…) ;
     * encourager les salarié(e)s à s’**isoler** et se faire **tester** lorsqu’ils ont eu un contact à risque ;
