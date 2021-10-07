@@ -84,8 +84,21 @@ function scrolleAuSummary() {
             setTimeout(() => {
                 detailsElement.scrollIntoView({ behavior: getAnimationBehavior() })
             }, 100)
+            creeUnLienPermanentDansLHistorique(detailsElement)
         })
     })
+}
+
+function creeUnLienPermanentDansLHistorique(detailsElement) {
+    // On ajoute l’ancre dans l’URL en cours.
+    if (
+        detailsElement.id &&
+        typeof window !== 'undefined' &&
+        window.history &&
+        window.history.replaceState
+    ) {
+        window.history.replaceState({}, '', `#${detailsElement.id}`)
+    }
 }
 
 function boutonBasculeVersMonProfil(lienVersProfil, app) {
