@@ -249,7 +249,7 @@ Depuis le 1<sup>er</sup> septembre 2021, le télétravail n’est plus obligatoi
     </div>
 
 
-.. question:: En tant que salarié(e), puis-je m’absenter pour acompagner mon enfant mineur ou un majeur protégé à son rendez-vous de vaccination contre la Covid ?
+.. question:: En tant que salarié(e), puis-je m’absenter pour acompagner mon enfant mineur ou un majeur protégé (tutelle, curatelle, etc) à son rendez-vous de vaccination contre la Covid ?
     :level: 3
 
     **Oui.** Votre employeur pourra vous demander le justificatif de rendez-vous vaccinal.
