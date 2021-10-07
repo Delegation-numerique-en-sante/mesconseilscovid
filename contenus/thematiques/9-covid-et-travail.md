@@ -4,6 +4,8 @@
 
 <header></header>
 
+Depuis le 1er septembre 2021, le télétravail n'est plus obligatoire. MesConseilsCovid accompagne votre retour au bureau en répondant à vos questions sur les **recommandations** pour vous protéger et protéger les autres, ainsi que vos **droits** (**arrêt de travail...**) et **responsabilités** dans le contexte d'épidémie de Covid-19.
+
 <nav class="sommaire">
     <h2>Sommaire</h2>
     <ul>
