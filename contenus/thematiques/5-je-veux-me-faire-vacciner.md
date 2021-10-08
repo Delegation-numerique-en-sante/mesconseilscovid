@@ -16,7 +16,7 @@
     * les personnes de **65 ans et plus**,
     * les personnes avec des **comorbidités** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves de Covid,
     * les personnes **sévèrement immunodéprimées** et les personnes de plus de 18 ans de leur **entourage**,
-    * les **professionnels** des secteurs de la santé, du médico-social et du transport sanitaire,
+    * les **professionnels** et **bénévoles** des secteurs de la santé, du médico-social et du transport sanitaire,
     * les personnes vaccinées avec le **vaccin Janssen**.
 
     <div class="conseil conseil-jaune">
