@@ -169,6 +169,45 @@ def render_html_question(text, question, level, feedback):
 """
 
 
+class RenvoiDirective(Directive):
+    def __init__(self, questions_index=None):
+        self.questions_index = questions_index or {}
+
+    def parse(self, block, m, state):
+        ref = m.group("value")
+        nom_page, id_question = ref.split("#")
+        nom_page = nom_page.lstrip("/")
+        page = self.questions_index[nom_page]
+        titre_page = page["titre"]
+        titre_question = page["questions"][id_question]["titre"]
+
+        options = self.parse_options(m)
+        if options:
+            level = int(dict(options).get("level", 2))
+        else:
+            level = 2
+        return {
+            "type": "renvoi",
+            "children": [],
+            "params": (nom_page, titre_page, id_question, titre_question, level),
+        }
+
+    def __call__(self, md):
+        self.register_directive(md, "renvoi")
+        if md.renderer.NAME == "html":
+            md.renderer.register("renvoi", self.render_html)
+
+    @staticmethod
+    def render_html(text, nom_page, titre_page, id_question, titre_question, level):
+        return f"""<div id="{id_question}">
+    <h{level}>
+        <span>{typographie(titre_question)}</span> <a href="#{id_question}" title="Lien vers cette question" aria-hidden="true">#</a>
+    </h{level}>
+    <p>Voir la réponse sur notre page « [{typographie(titre_page)}](/{nom_page}#{id_question}) ».
+</div>
+"""
+
+
 class SummaryDirective(Directive):
     """
     Balisage <summary> pour les sections repliables
@@ -196,10 +235,14 @@ def render_html_summary(text, title):
 """
 
 
-def create_markdown_parser():
+def create_markdown_parser(questions_index=None):
     return mistune.create_markdown(
         renderer=CustomHTMLRenderer(escape=False),
-        plugins=[QuestionDirective(), SummaryDirective()],
+        plugins=[
+            QuestionDirective(),
+            RenvoiDirective(questions_index=questions_index),
+            SummaryDirective(),
+        ],
     )
 
 
