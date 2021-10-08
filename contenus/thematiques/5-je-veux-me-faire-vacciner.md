@@ -15,7 +15,8 @@
     * les résident(e)s des <abbr title="Établissement d’Hébergement pour Personnes Âgées Dépendantes">**EHPAD**</abbr> et <abbr title="Unités de Soins de Longue Durée">**USLD**</abbr>,
     * les personnes de **65 ans et plus**,
     * les personnes avec des **comorbidités** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves de Covid,
-    * les personnes **sévèrement immunodéprimées**,
+    * les personnes **sévèrement immunodéprimées** et les personnes de plus de 18 ans de leur **entourage**,
+    * les **professionnels** des secteurs de la santé, du médico-social et du transport sanitaire,
     * les personnes vaccinées avec le **vaccin Janssen**.
 
     <div class="conseil conseil-jaune">
@@ -42,13 +43,13 @@
 
     Le **délai recommandé** par la Haute autorité de santé (HAS) pour un **rappel vaccinal** (2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas), est le suivant :
 
-    * pour les personnes de **65 ans et plus** ou avec des **comorbidités** augmentant le risque de formes graves (*3<sup>e</sup> dose*) : au moins **6 mois** après la dernière injection de vaccin ;
-
     * pour les personnes vaccciné(e)s avec le vaccin **Janssen** (*2<sup>e</sup> dose*) : au moins **4 semaines** après l’injection ;
 
     * pour les personnes sévèrement **immunodéprimées** (*4<sup>e</sup> dose*) : au moins **3 mois** après la dernière injection de vaccin.
 
-    **Dès maintenant**, et si ce délai est respecté, vous pouvez prendre rendez-vous chez un **professionnel de santé** (médecin, pharmacien, infirmier…) ou dans un **centre de vaccination** (*voir ci-dessous*).
+    * dans les **autres cas**, notamment les personnes de **65 ans et plus** ou avec des **comorbidités** augmentant le risque de formes graves (*3<sup>e</sup> dose*) : au moins **6 mois** après la dernière injection de vaccin ;
+
+    **Dès maintenant**, et si ce délai est respecté, vous pouvez prendre rendez-vous chez un **professionnel de santé** (médecin, pharmacien, infirmier…) ou dans un **centre de vaccination** (*voir plus bas*).
 
     <div class="voir-aussi">
 
