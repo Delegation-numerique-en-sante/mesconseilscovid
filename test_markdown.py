@@ -229,6 +229,44 @@ class TestQuestionDirective:
         )
 
 
+class TestRenvoiDirective:
+    def test_renvoi(self):
+        from build import create_markdown_parser
+
+        markdown = create_markdown_parser(
+            questions_index={
+                "je-veux-me-faire-vacciner.html": {
+                    "titre": "Je souhaite me faire vacciner",
+                    "questions": {
+                        "suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose": {
+                            "titre": "Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose&#8239;?",
+                        }
+                    },
+                }
+            }
+        )
+        assert (
+            markdown(
+                dedent(
+                    """\
+                    .. renvoi:: /je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
+                        :level: 3
+                    """
+                )
+            )
+            == dedent(
+                """\
+                <div id="suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose">
+                    <h3>
+                        <span>Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose&#8239;?</span> <a href="#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose" title="Lien vers cette question" aria-hidden="true">#</a>
+                    </h3>
+                    <p>Voir la réponse sur notre page « [Je souhaite me faire vacciner](/je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) ».
+                </div>
+            """
+            )
+        )
+
+
 class TestSummaryDirective:
     def test_summary(self, markdown):
         assert (
