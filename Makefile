@@ -78,7 +78,7 @@ check-orphelins:  # Check that all markdown files are in use in template.
 check-diagrammes:  # Check that all files from diagrammes/matrice exist.
 	python3 check.py diagrammes
 
-check-service-worker: $(HTML)  # Check that all files in use are listed in service-worker.js.
+check-service-worker: src/index.html $(firstword $(THEMATIQUES))  # Check that all files in use are listed in service-worker.js.
 	python3 check.py service_worker
 
 check-spelling: $(HTML) jargon.dic
@@ -102,7 +102,7 @@ optimize-images:
 
 build: dist/index.html
 
-dist/index.html: src/index.html $(THEMATIQUES) static/sitemap.xml
+dist/index.html: src/index.html $(firstword $(THEMATIQUES)) static/sitemap.xml
 	npm run-script build
 
 # Construire l’index (page d’accueil + questionnaire)
