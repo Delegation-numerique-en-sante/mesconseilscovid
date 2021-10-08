@@ -14,7 +14,7 @@
             <a href="#responsabilites-et-prevention">Responsabilités et prévention</a>
         </li>
         <li>
-            <a href="#arret-de-travail">Arrêt de travail lié à la Covid</a>
+            <a href="#arret-de-travail-lie-a-la-covid">Arrêt de travail lié à la Covid</a>
         </li>
         <li>
             <a href="#absence-pour-vaccination">Absence pour vaccination</a>
@@ -24,7 +24,7 @@
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
-<h2 id="responsabilites-et-prevention">Responsabilités et prévention</h2>
+## Responsabilités et prévention
 
 .. question:: En tant que salarié(e), qu’est-ce que je dois faire pour limiter la transmission du virus au travail ?
     :level: 3
@@ -154,7 +154,7 @@
     * proscrire les embrassades.
 
 
-<h2 id="arret-de-travail">Arrêt de travail lié à la Covid</h2>
+## Arrêt de travail lié à la Covid
 
 .. question:: Comment obtenir un arrêt maladie pour une situation liée à la Covid ?
     :level: 3
@@ -234,7 +234,7 @@
     </div>
 
 
-<h2 id="absence-pour-vaccination">Absence pour vaccination</h2>
+## Absence pour vaccination
 
 .. question:: En tant que salarié, puis-je m’absenter pour aller à mon rendez-vous de vaccination contre la Covid ?
     :level: 3

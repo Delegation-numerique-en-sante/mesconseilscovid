@@ -98,7 +98,24 @@ class ClassMixin:
             return f'<{name} class="{class_}">{content}</{name}>\n'
 
 
-class CustomHTMLRenderer(FrenchTypographyMixin, ClassMixin, mistune.HTMLRenderer):
+class H2AnchorsRendererMixin:
+    """Custom renderer for H2 titles with anchors."""
+
+    def heading(self, text, level):
+        if level == 2:
+            slug = slugify(
+                text,
+                stopwords=["span", "class", "visually", "hidden", "sup"],
+                replacements=[("’", "'")],
+            )
+            return f'<h2 id="{slug}">{text}</h2>'
+        else:
+            return super().heading(text, level)
+
+
+class CustomHTMLRenderer(
+    FrenchTypographyMixin, ClassMixin, H2AnchorsRendererMixin, mistune.HTMLRenderer
+):
     pass
 
 
