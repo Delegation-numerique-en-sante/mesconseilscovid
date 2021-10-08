@@ -4,7 +4,8 @@
 
 <header></header>
 
-Depuis le 1<sup>er</sup> septembre 2021, le télétravail n’est plus obligatoire. MesConseilsCovid accompagne votre retour au bureau en répondant à vos questions sur les **recommandations** pour vous protéger et protéger les autres, ainsi que vos **droits** (**arrêt de travail…**) et **responsabilités** dans le contexte d’épidémie de Covid-19.
+Selon une [étude de l’institut Pasteur](https://www.pasteur.fr/fr/espace-presse/documents-presse/etude-comcor-lieux-contamination-au-sars-cov-2-ou-francais-s-infectent-ils) sur les lieux de transmission de la Covid, environ **29%** des **contaminations** hors-foyer ont lieu dans le milieu professionnel.
+MesConseilsCovid accompagne votre retour au bureau en répondant à vos questions sur vos **droits** (**arrêt de travail…**) et **responsabilités** dans le contexte d’épidémie de Covid-19, ainsi que sur les bonnes pratiques à mettre en oeuvre pour **prévenir** la propagation du virus sur votre **lieu de travail.**
 
 <nav class="sommaire">
     <h2>Sommaire</h2>
@@ -27,8 +28,6 @@ Depuis le 1<sup>er</sup> septembre 2021, le télétravail n’est plus obligatoi
 
 .. question:: En tant que salarié(e), qu’est-ce que je dois faire pour limiter la transmission du virus au travail ?
     :level: 3
-
-    Selon une [étude de l’institut Pasteur](https://hal-pasteur.archives-ouvertes.fr/pasteur-03155847/document), environ **15%** des **contaminations** à la Covid ont lieu dans le **milieu professionnel**.
 
     Le salarié est **responsable** de sa propre **protection** et de celle des personnes qui l’entourent dans la mesure de ses possibilités (formations, moyens…).
 
