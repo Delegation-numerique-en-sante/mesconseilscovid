@@ -136,12 +136,17 @@ class QuestionDirective(Directive):
             md.renderer.register("question", render_html_question)
 
 
-def render_html_question(text, question, level, feedback):
-    question_id = slugify(
-        question,
+
+def slugify_title(title):
+    return slugify(
+        title,
         stopwords=["span", "class", "visually", "hidden", "sup"],
         replacements=[("’", "'")],
     )
+
+
+def render_html_question(text, question, level, feedback):
+    question_id = slugify_title(question)
     feedback_html = (
         """<form class="question-feedback">
     <fieldset>
