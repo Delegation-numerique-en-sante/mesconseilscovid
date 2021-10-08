@@ -2,10 +2,10 @@
 
 <img src="illustrations/travail.svg">
 
-<header></header>
-
-Selon une [étude de l’institut Pasteur](https://www.pasteur.fr/fr/espace-presse/documents-presse/etude-comcor-lieux-contamination-au-sars-cov-2-ou-francais-s-infectent-ils) sur les lieux de transmission de la Covid, environ **29%** des **contaminations** hors-foyer ont lieu dans le milieu professionnel.
-MesConseilsCovid accompagne votre retour au bureau en répondant à vos questions sur vos **droits** (**arrêt de travail…**) et **responsabilités** dans le contexte d’épidémie de Covid-19, ainsi que sur les bonnes pratiques à mettre en oeuvre pour **prévenir** la propagation du virus sur votre **lieu de travail.**
+<header>
+    <p class="big">Selon une <a href="https://www.pasteur.fr/fr/espace-presse/documents-presse/etude-comcor-lieux-contamination-au-sars-cov-2-ou-francais-s-infectent-ils">étude de l’institut Pasteur</a> sur les lieux de transmission de la Covid, environ <strong>29%</strong> des contaminations hors-foyer ont lieu dans le milieu professionnel.</p>
+    <p class="big">MesConseilsCovid accompagne votre retour au bureau en répondant à vos questions sur <strong>vos droits</strong> (arrêt de travail…) et <strong>vos responsabilités</strong> dans le contexte d’épidémie de Covid, ainsi que sur les bonnes pratiques à mettre en œuvre pour <strong>prévenir</strong> la propagation du virus sur votre <strong>lieu de travail</strong>.</p>
+</header>
 
 <nav class="sommaire">
     <h2>Sommaire</h2>
