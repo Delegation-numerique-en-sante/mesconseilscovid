@@ -1,14 +1,6 @@
 .DEFAULT_GOAL:=help
 
-THEMATIQUES = \
-	src/cas-contact-a-risque.html \
-	src/conseils-pour-les-enfants.html \
-	src/j-ai-des-symptomes-covid.html \
-	src/je-suis-vaccine.html \
-	src/je-veux-me-faire-vacciner.html \
-	src/je-vis-avec-personne-covid-positive.html \
-	src/pass-sanitaire-qr-code-voyages.html \
-	src/tests-de-depistage.html \
+THEMATIQUES = $(foreach file,$(subst contenus/thematiques/,,$(subst .md,.html,$(wildcard contenus/thematiques/*.md))),$(addprefix src/,$(shell echo $(file) | sed 's/^[0-9]\+-//')))
 
 HTML = src/index.html $(THEMATIQUES)
 
