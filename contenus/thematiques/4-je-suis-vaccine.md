@@ -6,28 +6,13 @@
     <p class="big">Vous êtes vacciné(e) contre la Covid et vous vous posez des questions sur le masque, l’isolement, les contacts à risque (cas contact), la contagion (immunité), ou encore le certificat de vaccination (pass sanitaire) ? Voici les réponses à vos questions.</p>
 </header>
 
-
 .. renvoi:: je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
 
+.. renvoi:: je-veux-me-faire-vacciner.html#quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose
 
-## Devrai-je recevoir une dose de rappel, dite 3<sup>e</sup> dose ?
+.. renvoi:: j-ai-des-symptomes-covid.html#je-suis-vaccine-e-est-ce-que-je-peux-etre-positif-ou-positive-a-la-covid
 
-Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) ».
-
-
-## Quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
-
-Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) ».
-
-
-## Je suis vacciné(e), est-ce que je peux être positif ou positive à la Covid ?
-
-Voir la réponse sur notre page « [J’ai des symptômes de la Covid ou mon test est positif, que faire ?](/j-ai-des-symptomes-covid.html#je-suis-vaccine-e-est-ce-que-je-peux-etre-positif-ou-positive-a-la-covid) ».
-
-
-## Est-ce que la vaccination rend malade, contagieux ou positif ?
-
-Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#est-ce-que-la-vaccination-rend-malade-contagieux-ou-positif) ».
+.. renvoi:: je-veux-me-faire-vacciner.html#est-ce-que-la-vaccination-rend-malade-contagieux-ou-positif
 
 
 <div itemscope itemtype="https://schema.org/FAQPage">
@@ -68,18 +53,7 @@ Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-fair
     * si vous avez été testé(e) positif ou positive à la Covid après le 15<sup>e</sup> jour suivant votre 1<sup>re</sup> injection, alors vous n’avez pas besoin de recevoir une 2<sup>e</sup> dose. Votre contamination a le même effet protecteur que la dose de rappel.
 
 
-## J’ai perdu ou je n’ai pas reçu d’attestation de vaccination, comment faire ?
-    
-Voir la réponse sur notre page « [Comment obtenir une attestation de vaccination complète avec un QR code ?](/pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code) ».
-
-## J’ai eu la Covid avant d’avoir ma première et unique injection, mais mon attestation indique que ma vaccination est « en cours » au lieu d’être terminée. Que faire ?
-
-Voir la réponse sur notre page « [Comment obtenir une attestation de vaccination complète avec un QR code ?](/pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code) ».
-
-## Mon certificat de vaccination ne comporte pas de QR code, comment faire ?
-    
-Voir la réponse sur notre page « [Comment obtenir une attestation de vaccination complète avec un QR code ?](/pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code) ».
-
+.. renvoi:: pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code
 
 .. question:: Est-ce que je peux voyager une fois vacciné(e) ?
 

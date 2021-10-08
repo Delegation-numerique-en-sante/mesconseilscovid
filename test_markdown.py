@@ -258,9 +258,12 @@ class TestRenvoiDirective:
                 """\
                 <div id="suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose">
                     <h3>
-                        <span>Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose&#8239;?</span> <a href="#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose" title="Lien vers cette question" aria-hidden="true">#</a>
+                        <span>Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose&#8239;?</span>
                     </h3>
-                    <p>Voir la réponse sur notre page « [Je souhaite me faire vacciner](/je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) ».
+                    <p>
+                        Voir la réponse sur notre page
+                        « <a href="/je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose">Je souhaite me faire vacciner</a> ».
+                    </p>
                 </div>
             """
             )
