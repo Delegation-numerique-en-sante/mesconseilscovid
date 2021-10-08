@@ -217,9 +217,12 @@ class RenvoiDirective(Directive):
     def render_html(text, nom_page, titre_page, id_question, titre_question, level):
         return f"""<div id="{id_question}">
     <h{level}>
-        <span>{typographie(titre_question)}</span> <a href="#{id_question}" title="Lien vers cette question" aria-hidden="true">#</a>
+        <span>{typographie(titre_question)}</span>
     </h{level}>
-    <p>Voir la réponse sur notre page « [{typographie(titre_page)}](/{nom_page}#{id_question}) ».
+    <p>
+        Voir la réponse sur notre page
+        « <a href="/{nom_page}#{id_question}">{typographie(titre_page)}</a> ».
+    </p>
 </div>
 """
 
