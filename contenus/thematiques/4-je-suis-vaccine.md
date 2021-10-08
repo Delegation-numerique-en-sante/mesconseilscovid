@@ -7,6 +7,9 @@
 </header>
 
 
+.. renvoi:: je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
+
+
 ## Devrai-je recevoir une dose de rappel, dite 3<sup>e</sup> dose ?
 
 Voir la réponse sur notre page « [Je veux me faire vacciner](/je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) ».
