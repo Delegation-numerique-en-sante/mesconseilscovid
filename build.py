@@ -134,7 +134,18 @@ class QuestionDirective(Directive):
         self.register_directive(md, "question")
         if md.renderer.NAME == "html":
             md.renderer.register("question", render_html_question)
+        else:
+            md.renderer.register("question", self.render_ast)
 
+    @staticmethod
+    def render_ast(text, question, level, feedback):
+        return {
+            "type": "question",
+            "titre": question,
+            "level": level,
+            "feedback": feedback,
+            "text": text,
+        }
 
 
 def slugify_title(title):
@@ -241,13 +252,15 @@ def render_html_summary(text, title):
 
 
 def create_markdown_parser(questions_index=None):
+    plugins = [
+        QuestionDirective(),
+        SummaryDirective(),
+    ]
+    if questions_index is not None:
+        plugins.append(RenvoiDirective(questions_index=questions_index))
     return mistune.create_markdown(
         renderer=CustomHTMLRenderer(escape=False),
-        plugins=[
-            QuestionDirective(),
-            RenvoiDirective(questions_index=questions_index),
-            SummaryDirective(),
-        ],
+        plugins=plugins,
     )
 
 
@@ -347,7 +360,8 @@ class Thematique:
 @cli
 def thematiques():
     """Build the theme pages with contents from thematiques folder."""
-    markdown_parser = create_markdown_parser()
+    questions_index = build_questions_index()
+    markdown_parser = create_markdown_parser(questions_index=questions_index)
     responses = build_responses(CONTENUS_DIR, markdown_parser)
     version = get_version()
     meta_pied_de_page = str(responses["meta_pied_de_page"]).replace(
@@ -413,6 +427,35 @@ def get_thematiques(markdown_parser):
             )
         )
     return thematiques
+
+
+def build_questions_index():
+    html_parser = create_markdown_parser()
+    return {
+        page.name + ".html": {"titre": page.title, "questions": extract_questions(page)}
+        for page in get_thematiques(html_parser)
+    }
+
+
+def extract_questions(page):
+    ast_parser = mistune.create_markdown(
+        renderer=mistune.AstRenderer(), plugins=[QuestionDirective()]
+    )
+    tree = ast_parser.read(page.path)
+
+    def _extract_questions(tree):
+        if isinstance(tree, list):
+            for node in tree:
+                if node["type"] == "question":
+                    yield node
+                else:
+                    if "children" in node:
+                        yield from _extract_questions(node["children"])
+
+    return {
+        slugify_title(node["titre"]): {"titre": node["titre"]}
+        for node in _extract_questions(tree)
+    }
 
 
 def last_modified_time(path):
