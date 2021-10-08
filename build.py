@@ -196,10 +196,14 @@ def render_html_summary(text, title):
 """
 
 
-markdown = mistune.create_markdown(
-    renderer=CustomHTMLRenderer(escape=False),
-    plugins=[QuestionDirective(), SummaryDirective()],
-)
+def create_markdown_parser():
+    return mistune.create_markdown(
+        renderer=CustomHTMLRenderer(escape=False),
+        plugins=[QuestionDirective(), SummaryDirective()],
+    )
+
+
+markdown = create_markdown_parser()
 
 
 class MarkdownContent:
