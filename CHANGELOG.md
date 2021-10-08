@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-10-08
+
+* met à jour les recommandations sur le rappel vaccinal
+* met à jour le port du masque au primaire
+* met à jour le lien vers le guide conseils pour les salariés
+
 ## 2021-10-04
 
 * choix du département pour le masque en écoles primaires
