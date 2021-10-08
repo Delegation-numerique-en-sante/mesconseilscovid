@@ -1,9 +1,16 @@
 from textwrap import dedent
 
+import pytest
 
-def test_liste_sans_saut_de_ligne():
-    from build import markdown
 
+@pytest.fixture
+def markdown():
+    from build import create_markdown_parser
+
+    return create_markdown_parser()
+
+
+def test_liste_sans_saut_de_ligne(markdown):
     assert (
         markdown(
             dedent(
@@ -24,9 +31,7 @@ def test_liste_sans_saut_de_ligne():
     )
 
 
-def test_liste_avec_saut_de_ligne():
-    from build import markdown
-
+def test_liste_avec_saut_de_ligne(markdown):
     assert (
         markdown(
             dedent(
@@ -50,9 +55,7 @@ def test_liste_avec_saut_de_ligne():
     )
 
 
-def test_elements_de_liste_avec_classe():
-    from build import markdown
-
+def test_elements_de_liste_avec_classe(markdown):
     assert (
         markdown(
             dedent(
@@ -79,9 +82,7 @@ def test_elements_de_liste_avec_classe():
     )
 
 
-def test_paragraphes_avec_classe():
-    from build import markdown
-
+def test_paragraphes_avec_classe(markdown):
     assert (
         markdown(
             dedent(
@@ -110,9 +111,7 @@ def test_paragraphes_avec_classe():
     )
 
 
-def test_block_html():
-    from build import markdown
-
+def test_block_html(markdown):
     assert (
         markdown(
             dedent(
@@ -136,9 +135,7 @@ def test_block_html():
 
 
 class TestQuestionDirective:
-    def test_default_heading_level(self):
-        from build import markdown
-
+    def test_default_heading_level(self, markdown):
         assert (
             markdown(
                 dedent(
@@ -184,9 +181,7 @@ class TestQuestionDirective:
             )
         )
 
-    def test_specific_heading_level(self):
-        from build import markdown
-
+    def test_specific_heading_level(self, markdown):
         assert (
             markdown(
                 dedent(
@@ -235,9 +230,7 @@ class TestQuestionDirective:
 
 
 class TestSummaryDirective:
-    def test_summary(self):
-        from build import markdown
-
+    def test_summary(self, markdown):
         assert (
             markdown(
                 dedent(
@@ -260,20 +253,20 @@ class TestSummaryDirective:
 
 
 class TestMarkdownContentBlock:
-    def test_render_block(self):
-        from build import MarkdownContent, markdown
+    def test_render_block(self, markdown):
+        from build import MarkdownContent
 
         m = MarkdownContent("Hello **world**", markdown)
         assert m.render_block() == "<p>Hello <strong>world</strong></p>\n"
 
-    def test_stringify(self):
-        from build import MarkdownContent, markdown
+    def test_stringify(self, markdown):
+        from build import MarkdownContent
 
         m = MarkdownContent("Hello **world**", markdown)
         assert str(m) == m.render_block()
 
-    def test_split(self):
-        from build import MarkdownContent, markdown
+    def test_split(self, markdown):
+        from build import MarkdownContent
 
         m = MarkdownContent("Moi\n\n---\n\nCette personne", markdown)
         me, them = m.split()
@@ -284,8 +277,8 @@ class TestMarkdownContentBlock:
         assert isinstance(them, MarkdownContent)
         assert them.text == "Cette personne"
 
-    def test_me_or_them_filter(self):
-        from build import MarkdownContent, markdown, me_or_them_filter
+    def test_me_or_them_filter(self, markdown):
+        from build import MarkdownContent, me_or_them_filter
 
         m = MarkdownContent("Moi\n\n---\n\nCette personne", markdown)
         assert me_or_them_filter(m) == (
@@ -295,11 +288,10 @@ class TestMarkdownContentBlock:
 
 
 class TestMarkdownContentInline:
-    def test_inline_filter(self):
+    def test_inline_filter(self, markdown):
         from build import (
             MarkdownContent,
             MarkdownInlineContent,
-            markdown,
             inline_filter,
         )
 
@@ -307,20 +299,20 @@ class TestMarkdownContentInline:
         i = inline_filter(m)
         assert isinstance(i, MarkdownInlineContent)
 
-    def test_render_inline(self):
-        from build import MarkdownInlineContent, markdown
+    def test_render_inline(self, markdown):
+        from build import MarkdownInlineContent
 
         m = MarkdownInlineContent("Hello **world**\n", markdown)
         assert m.render_inline() == "Hello <strong>world</strong>"
 
-    def test_stringify(self):
-        from build import MarkdownInlineContent, markdown
+    def test_stringify(self, markdown):
+        from build import MarkdownInlineContent
 
         m = MarkdownInlineContent("Hello **world**", markdown)
         assert str(m) == m.render_inline()
 
-    def test_split(self):
-        from build import MarkdownInlineContent, markdown
+    def test_split(self, markdown):
+        from build import MarkdownInlineContent
 
         m = MarkdownInlineContent("Moi\n\n---\n\nCette personne", markdown)
         me, them = m.split()
@@ -331,8 +323,8 @@ class TestMarkdownContentInline:
         assert isinstance(them, MarkdownInlineContent)
         assert them.text == "Cette personne"
 
-    def test_me_or_them_filter(self):
-        from build import MarkdownInlineContent, markdown, me_or_them_filter
+    def test_me_or_them_filter(self, markdown):
+        from build import MarkdownInlineContent, me_or_them_filter
 
         m = MarkdownInlineContent("Moi\n\n---\n\nCette **personne**", markdown)
         assert me_or_them_filter(m) == (

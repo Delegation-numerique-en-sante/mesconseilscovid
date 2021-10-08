@@ -203,9 +203,6 @@ def create_markdown_parser():
     )
 
 
-markdown = create_markdown_parser()
-
-
 class MarkdownContent:
     """Block content."""
 
@@ -258,9 +255,10 @@ def all():
 @cli
 def index():
     """Build the index with contents from markdown dedicated folder."""
-    responses = build_responses(CONTENUS_DIR)
+    markdown_parser = create_markdown_parser()
+    responses = build_responses(CONTENUS_DIR, markdown_parser)
 
-    thematiques = get_thematiques()[:NB_OF_DISPLAYED_THEMATIQUES]
+    thematiques = get_thematiques(markdown_parser)[:NB_OF_DISPLAYED_THEMATIQUES]
     responses["thematiques"] = thematiques
     responses["autres_thematiques"] = [
         thematique
@@ -301,13 +299,14 @@ class Thematique:
 @cli
 def thematiques():
     """Build the theme pages with contents from thematiques folder."""
-    responses = build_responses(CONTENUS_DIR)
+    markdown_parser = create_markdown_parser()
+    responses = build_responses(CONTENUS_DIR, markdown_parser)
     version = get_version()
     meta_pied_de_page = str(responses["meta_pied_de_page"]).replace(
         '<span class="js-latest-update"></span>',
         f" - Mise à jour le {version.strftime('%d-%m-%Y')}",
     )
-    thematiques = get_thematiques()
+    thematiques = get_thematiques(markdown_parser)
     for thematique in thematiques:
         autres_thematiques = [t for t in thematiques if t != thematique]
         content = render_template(
@@ -338,16 +337,19 @@ def get_version() -> date:
 @cli
 def sitemap():
     """Build the sitemap for index + themes pages."""
+    markdown_parser = create_markdown_parser()
     content = render_template(
-        "sitemap.html", thematiques=get_thematiques(), lastmod_date=date.today()
+        "sitemap.html",
+        thematiques=get_thematiques(markdown_parser),
+        lastmod_date=date.today(),
     )
     (STATIC_DIR / "sitemap.xml").write_text(content)
 
 
-def get_thematiques():
+def get_thematiques(markdown_parser):
     thematiques = []
     for path in each_file_from(CONTENUS_DIR / "thematiques", exclude=(".DS_Store",)):
-        html_content = str(render_markdown_file(path))
+        html_content = str(render_markdown_file(path, markdown_parser))
         title = extract_title(html_content)
         image = extract_image(html_content)
         header = extract_header(html_content)
@@ -388,19 +390,19 @@ def extract_body(html_content):
     return html_content.split("</header>", 1)[1]
 
 
-def build_responses(source_dir):
+def build_responses(source_dir, markdown_parser):
     """Extract and convert markdown from a `source_dir` directory into a dict."""
     responses = {}
     for folder in each_folder_from(source_dir):
         for path in each_file_from(folder, pattern="*.md"):
-            html_content = render_markdown_file(path)
+            html_content = render_markdown_file(path, markdown_parser)
             responses[path.stem] = html_content
 
     return responses
 
 
-def render_markdown_file(file_path):
-    return MarkdownContent(file_path.read_text(), markdown)
+def render_markdown_file(file_path, markdown_parser):
+    return MarkdownContent(file_path.read_text(), markdown_parser)
 
 
 def _each_path_from(source_dir, pattern="*", exclude=None):
