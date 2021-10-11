@@ -161,7 +161,7 @@
 
     **En dehors de ces cas**, les tests seront payants (**43,89 €** pour un test PCR, et de **22 à 45 €** pour un test antigénique).
 
-    Pour faire face à la situation épidémique en **Guadeloupe**, en **Guyane**, en **Martinique** et à **Mayotte**, les tests de dépistage restent pris en charge par l'Assurance maladie jusqu'à nouvel ordre.
+    Pour faire face à la situation épidémique en **Guadeloupe**, en **Guyane**, en **Martinique** et à **Mayotte**, les tests de dépistage restent pris en charge par l’Assurance maladie jusqu’à nouvel ordre.
 
 ## Quels sont les différents tests de dépistage de la Covid-19 ?
 
