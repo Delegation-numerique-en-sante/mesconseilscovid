@@ -7,21 +7,21 @@ Vous êtes guéri de la Covid-19 depuis plusieurs semaines et pourtant vous ress
 
 <div itemscope itemtype="https://schema.org/FAQPage">
  
-.. question:: J’ai eu la Covid et je ressens encore des symptômes, est-ce que je suis encore malade ?
+.. question:: J’ai eu la Covid et je ressens encore des symptômes, suis-je encore malade ?
 
     Il est fréquent de continuer à ressentir certains symptômes isolés, comme la fatigue modérée ou la perte de goût et de l’odorat dans les semaines qui suivent la guérison de l’infection. Cela ne veut pas dire que vous êtes encore malade ou contagieux(se) et généralement ces symptômes disparaissent dans les semaines qui suivent la guérison.
 
 Si les symptômes persistent **au-delà de 4 semaines,** on parle alors de **« Covid long ».** Les autorités sanitaires sont en train d’organiser la prise en charge de ces formes de la maladie. Si vous êtes concerné, prenez contact en priorité avec votre **médecin traitant** ou un médecin généraliste, quels que soient les symptômes persistants que vous ressentez.
     
-.. question:: Qui contacter en cas de symptômes persistants ?
+.. question:: Qui dois-je contacter en cas de symptômes persistants ?
 
     Votre premier contact est votre **médecin généraliste.** Il pourra vous proposer des soins adaptés ou **vous référer** à un spécialiste si nécéssaire.
     
 .. question:: Qu’est-ce que le Covid long ?
 
-    Le Covid long fait référence à l’expérience vécue par certaines personnes qui ont été contaminées par la Covid et qui continuent à ressentir des **symptômes** au-delà de **4 semaines** après leur contamination par la Covid-19. On parle alors de symptômes prolongés ou persistants de la Covid.
+    On parle de Covid long lorsque certaines certaines personnes qui ont été contaminées par la Covid, continuent à ressentir des **symptômes** au-delà de **4 semaines** après leur contamination. Le Covid long fait donc référence à des **symptômes prolongés** ou **persistants** de la Covid.
     
-.. question:: Quels sont les symptômes du Covid long ?
+.. question:: Quels sont les symptômes associés au Covid long ?
 
     Il n’y a pas de symptômes typiques du Covid long. Ils peuvent être multiples, cycliques (disparaître et se déclarer à nouveau) et plus ou moins invalidants. Nous vous conseillons d’en parler à votre médecin traitant.
 
@@ -59,7 +59,7 @@ Si les symptômes persistent **au-delà de 4 semaines,** on parle alors de **«
 
     Nous vous conseillons d’en parler rapidement à votre **médecin traitant** afin qu’il vous recommande le parcours de soins adapté à votre situation.
 
-.. question:: Je suis déprimé(e), angoissé(e), j’ai besoin de soutien psychologique, qui puis-je contacter ?
+.. question:: Je suis déprimé(e), angoissé(e) et j’ai besoin de soutien psychologique, qui puis-je contacter ?
 
     La dépression, l’angoisse, les insomnies sont fréquentes chez les personnes qui ont été contaminées par la Covid.
 
