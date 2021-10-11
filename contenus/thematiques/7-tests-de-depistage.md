@@ -129,7 +129,7 @@
 
     Vous n’avez pas de symptômes qui peuvent évoquer la Covid et vous n’êtes pas cas contact :
 
-    * Si vous souhaitez obtenir un « [pass sanitaire](/pass-sanitaire-qr-code-voyages.html) », un test négatif **PCR nasopharyngé**, **antigénique** ou **autotest supervisé** par un professionnel de santé réalisé il y a moins de **72 h ou 48 h** (selon les cas) est nécessaire.
+    * Si vous souhaitez obtenir un « [pass sanitaire](/pass-sanitaire-qr-code-voyages.html) », un test négatif **PCR nasopharyngé** ou **antigénique** réalisé il y a moins de **72 h ou 48 h** (selon les cas) est nécessaire.
     * Si vous rendez visite à des personnes vulnérables, un test **antigénique** ou **PCR nasopharyngé** est indiqué.
     * Si vous travaillez régulièrement avec des personnes fragiles, il est recommandé de vous tester régulièrement avec les **autotests** vendus en pharmacie (les professionnels exerçant à domicile auprès de personnes vulnérables peuvent obtenir la prise en charge de 10 auto-tests par mois en présentant leur carte professionnelle au pharmacien).
 
@@ -228,6 +228,12 @@
 .. question:: Les autotests
     :level: 3
 
+    <div class="conseil conseil-jaune">
+
+    À compter du **15 octobre 2021**, un autotest réalisé sous la supervision d’un professionnel de santé ne pourra plus tenir lieu de pass sanitaire.
+
+    </div>
+
     Des autotests sont disponibles en pharmacie. Ce test est un prélèvement nasal à réaliser chez soi. Ils ne sont pas pris en charge par l’Assurance maladie sauf dans le cas des professionnels exerçant auprès de personnes vulnérables (âgées, handicapées…) et dans la limite de 10 par mois.
 
     Il ne faut pas y avoir recours lorsque :
@@ -236,8 +242,7 @@
     - on a eu un contact à risque récent (cas contact).
 
     Ce type de test est utile à condition de le pratiquer régulièrement (plusieurs fois par semaine).
-    
-    Pour obtenir un pass sanitaire, l'autotest doit être réalisé sous la supervision d'un professionnel de santé.
+
 
 </details>
 
