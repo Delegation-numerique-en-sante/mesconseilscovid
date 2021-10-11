@@ -167,10 +167,7 @@ describe('Tests', function () {
             'pas-symptomes-pas-cas-contact-auto-test-non'
         )
         // On propose différents tests pour le pass sanitaire.
-        assert.include(
-            statut,
-            'un test négatif PCR nasopharyngé, antigénique ou autotest supervisé'
-        )
+        assert.include(statut, 'un test négatif PCR nasopharyngé ou antigénique')
         // On propose un test PCR ou antigénique pour visiter des personnes vulnérables.
         assert.include(
             statut,

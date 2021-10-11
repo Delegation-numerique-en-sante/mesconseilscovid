@@ -448,7 +448,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     **Non.** Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « pass sanitaire » utilisable en France et pour les voyages en Union européenne :
 
     * l’**attestation de vaccination complète** (toutes les doses et respect du délai de 7 jours après la dernière dose en France, ou 14 jours pour voyager à l’étranger) ;
-    * un **test PCR ou antigénique négatif**, ou un **auto-test négatif** réalisé sous la supervision d’un professionnel de santé, de moins de 72 h (ou 48 h pour les voyages en Corse et DOM-TOM) ;
+    * un **test PCR ou antigénique négatif** de moins de 72 h (ou 48 h pour les voyages en Corse et DOM-TOM) ;
     * un **test PCR positif** de plus de 11 jours et moins de 6 mois.
 
     Par ailleurs, le ou la mineur(e) non-vacciné(e) accompagnant ses parents vaccinés lors d’un voyage bénéficiera des mêmes facilités qu’eux. Par exemple, un(e) mineur(e) non-vacciné(e) pourra accompagner ses parents vaccinés lors d’un voyage dans un [pays classé orange](https://www.gouvernement.fr/voyager-depuis-et-vers-l-etranger-mode-d-emploi) sans justifier d’un motif impérieux pour s’y rendre.
