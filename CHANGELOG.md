@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-10-11
+
+* tests payants dans certains cas à partir du 15/10
+* fin des autotests supervisés pour le pass sanitaire au 15/10
+
 ## 2021-10-08
 
 * met à jour les recommandations sur le rappel vaccinal
