@@ -440,7 +440,7 @@
 .. question:: Est-ce que le pass sanitaire européen est différent du pass sanitaire français ?
     :level: 3
 
-    Le pass sanitaire européen regroupe les mêmes 3 **preuves sanitaires** que le pass sanitaire français à quelques détails près :
+    Les mêmes 3 **preuves sanitaires** qui font office de pass sanitaire français peuvent aussi servir de **pass sanitaire européen**, à quelques détails près :
 
     - un **test de dépistage négatif** : **test PCR** de moins de **72 h** ou **test antigénique** de moins de **48 h** ;
     - un **test de dépistage positif** : **test PCR** ou **test antigénique** daté de **plus de 11 jours** et moins de **6 mois**, appelé [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) ;
