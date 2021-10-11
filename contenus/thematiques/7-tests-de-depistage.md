@@ -150,13 +150,16 @@
 
 .. question:: Les tests de dépistage sont-ils payants ?
 
-    Les tests de dépistage réalisés par un professionnel de santé sont **gratuits**, sans condition de prescription médicale, pour :
+    À partir du **15 octobre 2021**, les tests de dépistage ne seront pris en charge par l’Assurance maladie que dans les cas suivants (sur présentation d’un justificatif) :
 
-    * les **résidents en France** ;
-    * les français qui résident habituellement à l’étranger ;
-    * les européens qui disposent d’une carte européenne d’assurance maladie.
+    * personnes ayant un **schéma vaccinal complet** ou une **contre-indication** à la vaccination ;
+    * personnes ayant un **certificat de rétablissement** de moins de 6 mois ;
+    * personnes présentant une **prescription médicale** ;
+    * personnes **mineures** ;
+    * personnes identifiées comme **cas contact** par l’Assurance maladie (*en cas de notification de l’application TousAntiCovid, vous devrez contacter l’Assurance maladie par téléphone pour obtenir une attestation de prise en charge*) ;
+    * personnes concernées par des campagnes de **dépistage collectif**, organisées par les Agences régionales de santé ou au sein des établissements de l’Éducation nationale par exemple.
 
-    Les touristes non européens peuvent bénéficier de la gratuité sur présentation d’une prescription médicale ou s’ils ont été identifiés cas contact par l’Assurance maladie, sur présentation d’un justificatif (SMS, courriel). En dehors de ces cas de figure, les prix des tests sont fixés à **49,89 euros** (PCR) et **25 euros** (test antigénique).
+    **En dehors de ces cas**, les tests seront payants (**43,89 €** pour un test PCR, et de **22 à 45 €** pour un test antigénique).
 
 
 ## Quels sont les différents tests de dépistage de la Covid-19 ?
