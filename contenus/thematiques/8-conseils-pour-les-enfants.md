@@ -3,7 +3,7 @@
 <img src="illustrations/pediatriegeneral.svg">
 
 <header>
-    <p class="big">Pour vous parents, l’épidémie de Covid a apporté son lot de nouvelles questions et préoccupations concernant votre enfant : cas contact, test de dépistage, vaccination, classe fermée… MesConseilsCovid y répond et vous informe sur les dernières mesures appliquées dans le milieu scolaire et la conduite à tenir selon la situation et l'âge de votre enfant.</p>
+    <p class="big">Pour vous parents, l’épidémie de Covid a apporté son lot de nouvelles questions et préoccupations concernant votre enfant : cas contact, test de dépistage, vaccination, classe fermée… MesConseilsCovid y répond et vous informe sur les dernières mesures appliquées dans le milieu scolaire et la conduite à tenir selon la situation et l’âge de votre enfant.</p>
 </header>
 <div id="conseils-pediatrie-general" itemscope itemtype="https://schema.org/FAQPage">
 
@@ -488,8 +488,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Que faire si mon enfant est positif à la Covid ?
     :level: 3
     
-    Si votre enfant a été testé **positif** à la Covid, il doit rester **isolé** au moins **10 jours** à partir de la date du début de ses symptômes, ou du test positif s'il est asymptomatique.
-    Les autres membres du foyer, sont considérés comme **cas contact** et doivent s'isoler s'ils ne sont pas vaccinés.
+    Si votre enfant a été testé **positif** à la Covid, il doit rester **isolé** au moins **10 jours** à partir de la date du début de ses symptômes, ou du test positif s’il est asymptomatique.
+    Les autres membres du foyer sont considérés comme **cas contact** et doivent s’isoler s’ils ne sont pas vaccinés.
     
     <div class="voir-aussi">
 
@@ -497,29 +497,29 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
      
-    - [Je vis avec une personne positive, que dois-je faire ?](/je-vis-avec-personne-covid-positive.html)
+    - [Je vis avec une personne positive, que dois-je faire ?](/je-vis-avec-personne-covid-positive.html)
     
     </div>
 
 .. question:: Quels sont les symptômes de la Covid chez les enfants ?
     :level: 3    
     
-    Les enfants ont généralement des **symptômes légers** et peu spécifiques : 
+    Les enfants ont généralement des **symptômes légers** et peu spécifiques :
     
-    * rhume
-    * toux
-    * maux de gorge
-    * fièvre (38° et plus)
-    * symptômes gastro-intestinaux (diahrrée, nausées, vomissement...)
-    * perte d'appétit
-    * fatigue
+    * rhume ;
+    * toux ;
+    * maux de gorge ;
+    * fièvre (38 °C et plus) ;
+    * symptômes gastro-intestinaux (diahrrée, nausées, vomissement…) ;
+    * perte d’appétit ;
+    * fatigue.
     
-    Si votre enfant est malade, il ne doit pas aller à l'école. Il est préférable de **téléphonez à votre médecin traitant** au lieu de vous déplacer spontanément à son cabinet. 
+    Si votre enfant est malade, il ne doit pas aller à l’école. Il est préférable de **téléphoner à votre médecin traitant** au lieu de vous déplacer spontanément à son cabinet.
     
     <div class="voir-aussi">
 
-    * [Les tests de dépistages sont-ils dangereux pour les enfants ?](#les-tests-sont-ils-dangereux-pour-les-enfants-?)
-    * [Comment préparer mon enfant à subir un test de dépistage ?](#comment-préparer-mon-enfant-à-subir-un-test-de-dépistage-nasopharyngé-(prélèvement-nasal)-?)
+    - [Les tests de dépistage sont-ils dangereux pour les enfants ?](#les-tests-sont-ils-dangereux-pour-les-enfants)
+    - [Comment préparer mon enfant à subir un test de dépistage ?](#comment-preparer-mon-enfant-a-subir-un-test-de-depistage-nasopharynge-prelevement-nasal)
 
     </div>
     
