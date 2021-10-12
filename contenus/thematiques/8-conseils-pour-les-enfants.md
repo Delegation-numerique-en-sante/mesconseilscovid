@@ -2,9 +2,9 @@
 
 <img src="illustrations/pediatriegeneral.svg">
 
-<header></header>
-
-Pour vous parents, l’épidémie de Covid a apporté son lot de nouvelles questions et préoccupations concernant votre enfant : cas contact, test de dépistage, vaccination, classe fermée… MesConseilsCovid y répond et vous informe sur les dernières mesures appliquées dans le milieu scolaire et la conduite à tenir selon la situation et l'âge de votre enfant.
+<header>
+    <p class="big">Pour vous parents, l’épidémie de Covid a apporté son lot de nouvelles questions et préoccupations concernant votre enfant : cas contact, test de dépistage, vaccination, classe fermée… MesConseilsCovid y répond et vous informe sur les dernières mesures appliquées dans le milieu scolaire et la conduite à tenir selon la situation et l'âge de votre enfant.</p>
+</header>
 <div id="conseils-pediatrie-general" itemscope itemtype="https://schema.org/FAQPage">
 
 <div class="conseil">
