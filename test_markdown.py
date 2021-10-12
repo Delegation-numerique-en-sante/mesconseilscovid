@@ -156,9 +156,7 @@ class TestQuestionDirective:
                 <summary>
                     <h2>
                         <span itemprop="name">Quand pourrai-je me faire vacciner&#8239;?</span>
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
-                        </svg>
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
                     </h2>
                 </summary>
 
@@ -209,9 +207,7 @@ class TestQuestionDirective:
                 <summary>
                     <h3>
                         <span itemprop="name">Quand pourrai-je me faire vacciner&#8239;?</span>
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
-                        </svg>
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
                     </h3>
                 </summary>
 
@@ -272,9 +268,7 @@ class TestRenvoiDirective:
                     <summary>
                     <h3>
                         <span>Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose&#8239;?</span>
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
-                        </svg>
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
                     </h3>
                 </summary>
 

@@ -1504,7 +1504,7 @@ a.no-type::after {
     border: 3px solid #9a9aff;
 }
 .conseils details[open] > summary svg {
-    transform: rotate(450deg);
+    transform: rotate(540deg);
 }
 .conseils details > summary::marker,
 .conseils details > summary::-webkit-details-marker {
