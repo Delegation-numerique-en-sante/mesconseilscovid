@@ -5,7 +5,7 @@
 <header>
     <p class="big">Pour vous parents, l’épidémie de Covid a apporté son lot de nouvelles questions et préoccupations concernant votre enfant : cas contact, test de dépistage, vaccination, classe fermée… MesConseilsCovid y répond et vous informe sur les dernières mesures appliquées dans le milieu scolaire et la conduite à tenir selon la situation et l'âge de votre enfant.</p>
 </header>
-<div id="conseils-pediatrie-general" itemscope itemtype="https://schema.org/FAQPage">
+<div itemscope itemtype="https://schema.org/FAQPage">
 
 <div class="conseil">
 
@@ -13,16 +13,11 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 </div>
 
-<details id="conseils-pediatrie-ecole">
-
-<summary>
-    <h2>
-        Mesures sanitaires à l’école, au collège et au lycée
-        <br>
-        <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span>
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-    </h2>
-</summary>
+<h2>
+    Mesures sanitaires à l’école, au collège et au lycée
+    <br>
+    <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span>
+</h2>
 
 .. question:: Dans quels cas mon enfant doit-il rester à la maison ?
     :level: 3
@@ -352,19 +347,11 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 
 
-</details>
-
-
-<details id="conseils-vaccins">
-
-<summary>
-    <h2>
-        La vaccination contre la Covid
-        <br>
-        <span class="tag tag-12-18">12 à 18 ans</span>
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-    </h2>
-</summary>
+<h2 id="conseils-vaccins">
+    La vaccination contre la Covid
+    <br>
+    <span class="tag tag-12-18">12 à 18 ans</span>
+</h2>
 
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
     :level: 3
@@ -460,19 +447,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     </div>
 
-</details>
 
-
-<details id="conseils-pediatrie-medical">
-
-<summary>
-    <h2>
-        Questions médicales et dépistage
-        <br>
-        <span class="tag tag-0-3">3 ans et moins</span> <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span>
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-    </h2>
-</summary>
+<h2>
+    Questions médicales et dépistage
+    <br>
+    <span class="tag tag-0-3">3 ans et moins</span> <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span>
+</h2>
 
 .. question:: Que faire si mon enfant est malade ?
     :level: 3
@@ -529,19 +509,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Si vous emmenez un **doudou** ou un objet familier, veillez à ce qu’il n’entre pas en contact avec des surfaces qui peuvent être contaminées. Sinon, lavez-le ou laissez le en quarantaine durant 7 jours.
 
-</details>
 
-
-<details id="conseils-parents">
-
-<summary>
-    <h2>
-        Organisation familiale et garde des enfants
-        <br>
-        <span class="tag tag-0-3">3 ans et moins</span> <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span>
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-    </h2>
-</summary>
+<h2>
+    Organisation familiale et garde des enfants
+    <br>
+    <span class="tag tag-0-3">3 ans et moins</span> <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span>
+</h2>
 
 .. question:: Que doivent faire mes enfants si je suis positif à la Covid ?
     :level: 3
@@ -612,19 +585,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * Soyez particulièrement **vigilants** lorsque le foyer comporte des **personnes vulnérables** (personnes âgées, immunodéprimées, non vaccinées, ou à risque de forme grave de Covid).
 
-</details>
 
-
-<details id="conseils-enfants-bas-age">
-
-<summary>
-    <h2>
-        Enfants en bas âge
-        <br>
-        <span class="tag tag-0-3">3 ans et moins</span>
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-    </h2>
-</summary>
+<h2>
+    Enfants en bas âge
+    <br>
+    <span class="tag tag-0-3">3 ans et moins</span>
+</h2>
 
 .. question:: Mon enfant peut-il aller à la crèche s’il est cas contact ?
     :level: 3
@@ -694,9 +660,6 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * respecter les **gestes barrières** : se laver régulièrement les mains à l’eau et au savon *avant* de s’occuper de l’enfant, mais aussi *après* ;
     * porter le **masque** lors d’un contact rapproché (enfant dans les bras…).
-
-</details>
-
 
 </div>
 
