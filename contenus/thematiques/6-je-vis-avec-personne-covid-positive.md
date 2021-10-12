@@ -10,17 +10,22 @@
 
 <details id="personne-positive-schema-vaccinal-incomplet">
 
-.. summary:: vous n’êtes pas vacciné(e) (schéma vaccinal incomplet)
+<summary>
 
-<div class="conseil conseil-jaune">
+<h3>
+    vous n’êtes pas complètement vacciné(e) :
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+</h3>
 
-Vous êtes concerné(e) si :
+<div class="explications">
 
-* vous n’avez pas reçu(e) toutes les doses nécessaires (1 ou 2 doses) ;
-* vous avez reçu(e) votre dernière dose depuis moins de 7 jours (Pfizer, Moderna, AstraZeneca) ou moins de 28 jours (Janssen) ;
-* vous souffrez d’une forte immunodépression qui réduit l’efficacité du vaccin.
+* vous n’avez **pas encore** reçu les doses nécessaires (1 ou 2 doses) ;
+* **ou** vous avez reçu votre dernière dose depuis **moins de 7 jours** (*Pfizer, Moderna, AstraZeneca*) ou moins de 28 jours (*Janssen*) ;
+* **ou** vous souffrez d’une **forte immunodépression** qui réduit l’efficacité du vaccin.
 
 </div>
+
+</summary>
 
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
@@ -64,17 +69,22 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 
 <details id="personne-positive-schema-vaccinal-complet">
 
-.. summary:: vous êtes vacciné(e) (schéma vaccinal complet)
+<summary>
 
-<div class="conseil conseil-jaune">
+<h3>
+    vous êtes complètement vacciné(e) :
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+</h3>
 
-Vous êtes concerné(e) si :
+<div class="explications">
 
-* vous avez reçu(e) toutes les doses nécessaires (1 ou 2 doses) ;
-* vous avez reçu(e) la dernière dose prévue depuis plus de 7 jours (Pfizer, Moderna, AstraZeneca) ou plus de 28 jours (Janssen)  ;
-* vous ne souffrez pas d’immunodépression.
+* vous avez reçu **toutes les doses** nécessaires (1 ou 2 doses) ;
+* **et** vous avez reçu la dernière dose prévue depuis **plus de 7 jours** (*Pfizer*, *Moderna*, *AstraZeneca*) ou plus de 28 jours (*Janssen*) ;
+* **et** vous ne souffrez pas d’immunodépression.
 
 </div>
+
+</summary>
 
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
