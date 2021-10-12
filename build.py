@@ -29,6 +29,11 @@ CONTENUS_DIR = HERE / "contenus"
 STATIC_DIR = HERE / "static"
 TEMPLATES_DIR = HERE / "templates"
 NB_OF_DISPLAYED_THEMATIQUES = 9
+CHEVRON_SVG = (
+    '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">'
+    '<path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>'
+    "</svg>"
+)
 
 PARIS_TIMEZONE = pytz.timezone("Europe/Paris")
 
@@ -175,7 +180,7 @@ def render_html_question(text, question, level, feedback):
     return f"""<details id="{question_id}" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 <summary><h{level}>
     <span itemprop="name">{typographie(question)}</span>
-    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+    {CHEVRON_SVG}
 </h{level}></summary>
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
@@ -216,15 +221,16 @@ class RenvoiDirective(Directive):
 
     @staticmethod
     def render_html(text, nom_page, titre_page, id_question, titre_question, level):
-        return f"""<div id="{id_question}">
-    <h{level}>
+        return f"""<details id="{id_question}">
+    <summary><h{level}>
         <span>{typographie(titre_question)}</span>
-    </h{level}>
+        {CHEVRON_SVG}
+    </h{level}></summary>
     <p>
         Voir la réponse sur notre page
         « <a href="/{nom_page}#{id_question}">{typographie(titre_page)}</a> ».
     </p>
-</div>
+</details>
 """
 
 
@@ -249,7 +255,7 @@ def render_html_summary(text, title):
     return f"""<summary>
     <h3>
         {title}
-        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+        {CHEVRON_SVG}
     </h3>
 </summary>
 """

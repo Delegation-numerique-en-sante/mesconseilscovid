@@ -258,15 +258,16 @@ class TestRenvoiDirective:
             )
             == dedent(
                 """\
-                <div id="suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose">
-                    <h3>
+                <details id="suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose">
+                    <summary><h3>
                         <span>Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose&#8239;?</span>
-                    </h3>
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                    </h3></summary>
                     <p>
                         Voir la réponse sur notre page
                         « <a href="/je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose">Je souhaite me faire vacciner</a> ».
                     </p>
-                </div>
+                </details>
             """
             )
         )
