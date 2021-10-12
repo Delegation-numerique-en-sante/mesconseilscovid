@@ -106,15 +106,15 @@ dist/index.html: src/index.html $(THEMATIQUES) static/sitemap.xml
 	npm run-script build
 
 # Construire l’index (page d’accueil + questionnaire)
-src/index.html: templates/index.html contenus/config/*.md contenus/conseils/*.md contenus/meta/*.md contenus/questions/*.md contenus/réponses/*.md contenus/statuts/*.md contenus/suivi/*.md contenus/thematiques/*.md
+src/index.html: build.py templates/index.html contenus/config/*.md contenus/conseils/*.md contenus/meta/*.md contenus/questions/*.md contenus/réponses/*.md contenus/statuts/*.md contenus/suivi/*.md contenus/thematiques/*.md
 	python3 build.py index
 
 # Construire les pages thématiques
-$(THEMATIQUES): templates/thematique.html contenus/thematiques/*.md
+$(THEMATIQUES): build.py templates/thematique.html contenus/thematiques/*.md
 	python3 build.py thematiques
 
 # Construire la carte du site (pour les robots)
-static/sitemap.xml: templates/sitemap.html contenus/thematiques/*.md
+static/sitemap.xml: build.py templates/sitemap.html contenus/thematiques/*.md
 	python3 build.py sitemap
 
 prefectures:  ## Generate data related to prefectures.
