@@ -383,6 +383,19 @@ class Thematique:
     imgsrc: str
     last_modified: datetime
 
+    def __repr__(self):
+        return f"Thematique {self.id}: {self.name}"
+
+    def __lt__(self, other):
+        return self.id < other.id
+
+    @property
+    def id(self):
+        stem = self.path.stem
+        if stem[0].isdigit():
+            return int(stem.split("-", 1)[0])
+        return stem
+
     @property
     def name(self):
         stem = self.path.stem
@@ -468,7 +481,7 @@ def get_thematiques(markdown_parser):
                 last_modified=last_modified_time(path),
             )
         )
-    return thematiques
+    return sorted(thematiques)
 
 
 def build_questions_index():
