@@ -26,7 +26,7 @@
 
 <h2 id="responsabilites-et-prevention">Responsabilités et prévention</h2>
 
-.. question:: En tant que salarié(e), qu’est-ce que je dois faire pour limiter la transmission du virus au travail ?
+.. question:: En tant que salarié(e), qu’est-ce que je dois faire pour limiter la transmission du virus sur mon lieu de travail ?
     :level: 3
 
     Le salarié est **responsable** de sa propre **protection** et de celle des personnes qui l’entourent dans la mesure de ses possibilités (formations, moyens…).
