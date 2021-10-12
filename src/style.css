@@ -620,8 +620,7 @@ footer .legals {
     background-image: url('illustrations/pediatriegeneral.svg');
 }
 #suivi-medecin-form,
-#sante-form,
-#conseils-enfants-precautions summary {
+#sante-form {
     background-image: url('illustrations/sante.svg');
 }
 #conseils-pediatrie-ecole summary {
@@ -639,8 +638,7 @@ footer .legals {
 #contact-a-risque-form {
     background-image: url('illustrations/contactarisque.svg');
 }
-#depistage-form,
-#conseils-parents summary {
+#depistage-form {
     background-image: url('illustrations/depistage.svg');
 }
 #vaccins-form,
@@ -1626,7 +1624,7 @@ a.no-type::after {
 .thematique #conseils-block h2 {
     padding-top: 1rem;
     margin-bottom: 1.2rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
     font-size: 175%;
 }
 .thematique .conseils details > summary svg {

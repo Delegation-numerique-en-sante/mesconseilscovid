@@ -32,13 +32,9 @@ describe('Enfants', function () {
         await page.goto('http://localhost:8080/conseils-pour-les-enfants.html')
 
         const summary = await page.waitForSelector(
-            'text="Mesures sanitaires à l’école, au collège et au lycée"'
-        )
-        summary.click()
-        const subSummary = await page.waitForSelector(
             'text="Est-ce que mon enfant doit porter le masque ?"'
         )
-        subSummary.click()
+        summary.click()
 
         await remplirDepartement(page, '01')
 
@@ -54,13 +50,9 @@ describe('Enfants', function () {
         await page.goto('http://localhost:8080/conseils-pour-les-enfants.html')
 
         const summary = await page.waitForSelector(
-            'text="Mesures sanitaires à l’école, au collège et au lycée"'
-        )
-        summary.click()
-        const subSummary = await page.waitForSelector(
             'text="Est-ce que mon enfant doit porter le masque ?"'
         )
-        subSummary.click()
+        summary.click()
 
         await remplirDepartement(page, '02')
 
@@ -76,7 +68,7 @@ describe('Enfants', function () {
         await page.goto('http://localhost:8080/conseils-pour-les-enfants.html')
 
         const summary = await page.waitForSelector(
-            'text="Mesures sanitaires à l’école, au collège et au lycée"'
+            'text="Est-ce que mon enfant doit porter le masque ?"'
         )
         summary.click()
 
