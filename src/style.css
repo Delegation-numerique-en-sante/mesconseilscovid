@@ -1494,6 +1494,7 @@ a.no-type::after {
     height: 40px;
     width: 60px;
     transition: all 0.4s;
+    flex-shrink: 0;
 }
 .conseils details:hover,
 .conseils details[open] {
@@ -1631,6 +1632,7 @@ a.no-type::after {
     float: right;
     height: 30px;
     width: 30px;
+    flex-shrink: 0;
 }
 .thematique #conseils-block h3 {
     padding-top: 1rem;
