@@ -223,23 +223,6 @@ class RenvoiDirective(Directive):
 """
 
 
-class SummaryDirective(Directive):
-    """
-    Balisage <summary> pour les sections repliables
-    """
-
-    def parse(self, block, m, state):
-        title = m.group("value")
-        text = self.parse_text(m)
-        children = block.parse(text, state, block.rules)
-        return {"type": "summary", "children": children, "params": (title,)}
-
-    def __call__(self, md):
-        self.register_directive(md, "summary")
-        if md.renderer.NAME == "html":
-            md.renderer.register("summary", render_html_summary)
-
-
 def render_html_summary(text, title, level=3, extra_span=""):
     return f"""<summary>
     <h{level}>
@@ -255,7 +238,6 @@ def render_html_summary(text, title, level=3, extra_span=""):
 def create_markdown_parser(questions_index=None):
     plugins = [
         QuestionDirective(),
-        SummaryDirective(),
     ]
     if questions_index is not None:
         plugins.append(RenvoiDirective(questions_index=questions_index))
