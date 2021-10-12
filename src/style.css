@@ -158,7 +158,6 @@ a .profil {
 
 .block {
     background-color: #ffffff;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     padding: 1rem;
     margin: 1rem 0;
 }
@@ -319,9 +318,12 @@ legend h1 {
 .page-thematique .conseils details {
     position: relative;
     margin-top: 0;
-    margin-bottom: 0;
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 5px;
+}
+.page-thematique .conseils details[open] {
+    padding-bottom: 1rem;
 }
 .page-thematique .conseils details > summary {
     display: flex;
@@ -773,13 +775,18 @@ footer .legals {
 .conseils {
     margin-bottom: 3rem;
 }
+.conseils summary h2,
 .conseils summary h3,
 #historique h3 {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
+    flex-grow: 1;
+}
+.conseils summary h3,
+#historique h3 {
     color: #000091;
     font-size: 175%;
-    flex-grow: 1;
     border-radius: 0.35rem;
     margin: 1rem 0;
 }
@@ -1221,8 +1228,7 @@ a.button-feedback-social-whatsapp {
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin: 2rem 0 0 0;
     padding: 0.75rem 1rem 0 1rem !important;
     text-align: center;
     font-size: 95%;
@@ -1469,8 +1475,6 @@ a.no-type::after {
 }
 .conseils details {
     display: block;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.3s;
     border: 1px solid lightgray;
     padding: 1rem 2rem;
     margin-top: 2rem;
@@ -1496,7 +1500,6 @@ a.no-type::after {
 .conseils details:hover,
 .conseils details[open] {
     outline: 0;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8);
 }
 .conseils details > summary:focus h3 {
     outline: 0;
@@ -1626,10 +1629,6 @@ a.no-type::after {
     margin-top: 4rem;
     font-size: 175%;
 }
-.thematique #conseils-block summary h2 {
-    margin-top: 0;
-    width: 100%;
-}
 .thematique .conseils details > summary svg {
     float: right;
     height: 30px;
@@ -1686,8 +1685,9 @@ a.no-type::after {
 }
 .thematique #conseils-block summary h2 {
     margin: 0;
+    width: 100%;
     font-size: 1.2rem;
-    padding-bottom: 1rem;
+    padding: 0.5rem 0;
 }
 .thematique #conseils-block form h3,
 .thematique #conseils-block summary h3,
