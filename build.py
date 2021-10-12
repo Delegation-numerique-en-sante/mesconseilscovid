@@ -29,11 +29,6 @@ CONTENUS_DIR = HERE / "contenus"
 STATIC_DIR = HERE / "static"
 TEMPLATES_DIR = HERE / "templates"
 NB_OF_DISPLAYED_THEMATIQUES = 9
-CHEVRON_SVG = (
-    '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">'
-    '<path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>'
-    "</svg>"
-)
 
 PARIS_TIMEZONE = pytz.timezone("Europe/Paris")
 
@@ -178,10 +173,7 @@ def render_html_question(text, question, level, feedback):
         else ""
     )
     return f"""<details id="{question_id}" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-<summary><h{level}>
-    <span itemprop="name">{typographie(question)}</span>
-    {CHEVRON_SVG}
-</h{level}></summary>
+{render_html_summary('', typographie(question), level, extra_span=' itemprop="name"')}
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
 {text}</div>
@@ -222,10 +214,7 @@ class RenvoiDirective(Directive):
     @staticmethod
     def render_html(text, nom_page, titre_page, id_question, titre_question, level):
         return f"""<details id="{id_question}">
-    <summary><h{level}>
-        <span>{typographie(titre_question)}</span>
-        {CHEVRON_SVG}
-    </h{level}></summary>
+    {render_html_summary('', typographie(titre_question), level)}
     <p>
         Voir la réponse sur notre page
         « <a href="/{nom_page}#{id_question}">{typographie(titre_page)}</a> ».
@@ -251,12 +240,14 @@ class SummaryDirective(Directive):
             md.renderer.register("summary", render_html_summary)
 
 
-def render_html_summary(text, title):
+def render_html_summary(text, title, level=3, extra_span=""):
     return f"""<summary>
-    <h3>
-        {title}
-        {CHEVRON_SVG}
-    </h3>
+    <h{level}>
+        <span{extra_span}>{title}</span>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
+        </svg>
+    </h{level}>
 </summary>
 """
 
