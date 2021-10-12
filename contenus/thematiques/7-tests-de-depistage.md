@@ -2,10 +2,9 @@
 
 <img src="illustrations/sante.svg">
 
-<header></header>
-
-    Vous devez faire un test de dépistage mais vous ne connaissez pas la **différence** entre un test **PCR,** test **antigénique** ou **autotest** ? Vous avez des symptômes, êtes cas contact ou souhaitez simplement obtenir un pass sanitaire mais vous ne savez pas quel type de test est **adapté** à votre **situation ?** MesConseilsCovid vous aide à choisir.
-
+<header>
+    <p class="big">Vous devez faire un test de dépistage mais vous ne connaissez pas la **différence** entre un test **PCR,** test **antigénique** ou **autotest** ? Vous avez des symptômes, vous êtes cas contact ou vous souhaitez simplement obtenir un pass sanitaire, mais vous ne savez pas quel type de test est **adapté à votre situation** ? MesConseilsCovid vous aide à choisir.</p>
+</header>
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
