@@ -42,7 +42,7 @@ Si vous avez **déjà eu la Covid** il y a **moins de 2 mois**, alors vous n’�
 
 </summary>
 
-### 1. Faites un test
+#### 1. Faites un test
 
 <div class="conseil">
 
@@ -74,7 +74,7 @@ Faites un **test antigénique** en pharmacie **dès que possible** (voir la [car
     * après 10 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un test de contrôle ne sera pas nécessaire).
 
 
-### 2. Faites un test de contrôle
+#### 2. Faites un test de contrôle
 
 <div class="conseil">
 
@@ -120,7 +120,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 
 </summary>
 
-### 1. Faites un test et isolez-vous
+#### 1. Faites un test et isolez-vous
 
 <div class="conseil">
 
@@ -155,7 +155,7 @@ Si vous ne pouvez pas **télétravailler**, vous pouvez [**demander un arrêt de
     * après 10 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un test de contrôle ne sera pas nécessaire).
 
 
-### 2. Faites un test de contrôle
+#### 2. Faites un test de contrôle
 
 <div class="conseil">
 

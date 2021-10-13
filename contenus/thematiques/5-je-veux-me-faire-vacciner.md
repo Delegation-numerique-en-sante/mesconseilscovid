@@ -6,6 +6,9 @@
     <p class="big">Vous souhaitez vous faire vacciner contre la Covid ? Voici des réponses à quelques questions courantes sur l’immunité, les effets secondaires et vos antécédents avec la Covid.</p>
 </header>
 
+.. toc:: Sommaire
+    :depth: 2
+
 <div itemscope itemtype="https://schema.org/FAQPage">
 
 ## En savoir plus sur la dose de rappel dite 3<sup>e</sup> dose

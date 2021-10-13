@@ -6,6 +6,9 @@
     <p class="big">Votre conjoint⸱e, enfant, colocataire… est positif à la Covid et vous ne présentez pas de symptômes ? MesConseilsCovid vous accompagne pour savoir quelle conduite à tenir lorsqu’on est cas contact d’une personne qui partage le même lieu de vie.</p>
 </header>
 
+.. toc:: Sommaire
+    :depth: 3
+
 ## Vous vivez avec une personne positive à la Covid et…
 
 <details id="personne-positive-schema-vaccinal-incomplet">
@@ -29,7 +32,7 @@
 
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
-### 1. Faites un test et isolez-vous
+#### 1. Faites un test et isolez-vous
 
 <div class="conseil">
 
@@ -43,7 +46,7 @@ Même si vous ne présentez pas de symptômes, il faut vous faire tester dès qu
 
 Si vous ne pouvez pas télétravailler, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr/).
 
-### 2. Faites un test de contrôle
+#### 2. Faites un test de contrôle
 
 <div class="conseil">
 
@@ -88,7 +91,7 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
-### 1. Faites un test
+#### 1. Faites un test
 
 <div class="conseil">
 
@@ -104,7 +107,7 @@ Même si vous ne présentez pas de symptômes, il faut vous faire tester dès qu
 
 Si vous ne pouvez pas télétravailler, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr/).
 
-### 2. Faites un test de contrôle
+#### 2. Faites un test de contrôle
 
 <div class="conseil">
 

@@ -6,6 +6,9 @@
     <p class="big">Vous devez faire un test de dépistage mais vous ne connaissez pas la <strong>différence</strong> entre un test <strong>PCR</strong>, test <strong>antigénique</strong> ou <strong>autotest</strong> ? Vous avez des symptômes, vous êtes cas contact ou vous souhaitez simplement obtenir un pass sanitaire, mais vous ne savez pas quel type de test est <strong>adapté à votre situation</strong> ? MesConseilsCovid vous aide à choisir.</p>
 </header>
 
+.. toc:: Sommaire
+    :depth: 3
+
 <div itemscope itemtype="https://schema.org/FAQPage">
 
 .. question:: Quel est le test adapté à ma situation ?
