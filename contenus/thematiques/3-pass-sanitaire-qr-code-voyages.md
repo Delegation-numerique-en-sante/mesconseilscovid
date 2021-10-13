@@ -6,6 +6,10 @@
     <p class="big">Pass sanitaire européen, certificat de vaccination, attestations, QR code… MesConseilsCovid vous propose une synthèse des informations importantes.</p>
 </header>
 
+.. toc:: Sommaire
+    :depth: 2
+
+
 <div itemscope itemtype="https://schema.org/FAQPage">
 
 ## L’usage du pass sanitaire en France
@@ -433,7 +437,7 @@
     </div>
 
 
-<h2 id="les-voyages-a-l-etranger">Les voyages à l’étranger</h2>
+## Les voyages à l’étranger
 
 .. question:: Est-ce que le pass sanitaire européen est différent du pass sanitaire français ?
     :level: 3
@@ -483,7 +487,7 @@
     </div>
 
 
-<h2 id="obtenir-son-justificatif-avec-qr-code">Obtenir son justificatif avec QR code</h2>
+## Obtenir son justificatif avec QR code
 
 .. question:: Comment obtenir une attestation de vaccination complète avec un QR code ?
     :level: 3

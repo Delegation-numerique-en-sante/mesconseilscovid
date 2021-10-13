@@ -7,24 +7,12 @@
     <p class="big">MesConseilsCovid accompagne votre retour au bureau en répondant à vos questions sur <strong>vos droits</strong> (arrêt de travail…) et <strong>vos responsabilités</strong> dans le contexte d’épidémie de Covid, ainsi que sur les bonnes pratiques à mettre en œuvre pour <strong>prévenir</strong> la propagation du virus sur votre <strong>lieu de travail</strong>.</p>
 </header>
 
-<nav class="sommaire">
-    <h2>Sommaire</h2>
-    <ul>
-        <li>
-            <a href="#responsabilites-et-prevention">Responsabilités et prévention</a>
-        </li>
-        <li>
-            <a href="#arret-de-travail">Arrêt de travail lié à la Covid</a>
-        </li>
-        <li>
-            <a href="#absence-pour-vaccination">Absence pour vaccination</a>
-        </li>
-    </ul>
-</nav>
+.. toc:: Sommaire
+    :depth: 2
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
-<h2 id="responsabilites-et-prevention">Responsabilités et prévention</h2>
+## Responsabilités et prévention
 
 .. question:: En tant que salarié(e), qu’est-ce que je dois faire pour limiter la transmission du virus sur mon lieu de travail ?
     :level: 3
@@ -154,7 +142,7 @@
     * proscrire les embrassades.
 
 
-<h2 id="arret-de-travail">Arrêt de travail lié à la Covid</h2>
+## Arrêt de travail lié à la Covid
 
 .. question:: Comment obtenir un arrêt maladie pour une situation liée à la Covid ?
     :level: 3
@@ -234,7 +222,7 @@
     </div>
 
 
-<h2 id="absence-pour-vaccination">Absence pour vaccination</h2>
+## Absence pour vaccination
 
 .. question:: En tant que salarié, puis-je m’absenter pour aller à mon rendez-vous de vaccination contre la Covid ?
     :level: 3
