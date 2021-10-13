@@ -16,9 +16,10 @@ import pytz
 from jinja2 import Environment as JinjaEnv
 from jinja2 import FileSystemLoader, StrictUndefined
 from minicli import cli, run, wrap
-from mistune.directives import Directive, DirectiveToc as MistuneDirectiveToc
+from mistune.directives import Directive
 from slugify import slugify
 
+from mistune_toc import DirectiveToc
 from typographie import typographie
 
 LOGGER = logging.getLogger(__name__)
@@ -231,146 +232,6 @@ def render_html_summary(text, title, level=3, extra_span=""):
     </h{level}>
 </summary>
 """
-
-
-class DirectiveToc(MistuneDirectiveToc):
-    def __init__(self, depth=2):
-        self.depth = depth
-
-    def register_plugin(self, md):
-        md.block.tokenize_heading = record_toc_heading
-        md.before_parse_hooks.append(self.reset_toc_state)
-        md.before_render_hooks.append(md_toc_hook)
-
-        if md.renderer.NAME == "html":
-            md.renderer.register("theading", render_html_theading)
-
-    def __call__(self, md):
-        self.register_directive(md, "toc")
-        self.register_plugin(md)
-
-        if md.renderer.NAME == "html":
-            md.renderer.register("toc", render_html_toc)
-
-
-def record_toc_heading(text, level, state):
-    # we will use this method to replace tokenize_heading
-    tid = slugify_title(text)
-    state["toc_headings"].append((tid, text, level))
-    return {"type": "theading", "text": text, "params": (level, tid)}
-
-
-def md_toc_hook(md, tokens, state):
-    headings = state.get("toc_headings")
-    if not headings:
-        return tokens
-
-    # add TOC items into the given location
-    default_depth = state.get("toc_depth", 3)
-    headings = list(_cleanup_headings_text(md.inline, headings, state))
-    for tok in tokens:
-        if tok["type"] == "toc":
-            params = tok["params"]
-            depth = params[1] or default_depth
-            items = [d for d in headings if d[2] <= depth]
-            tok["raw"] = items
-    return tokens
-
-
-def render_html_toc(items, title, depth):
-    html = '<nav class="sommaire">\n'
-    if title:
-        html += "<h2>" + title + "</h2>\n"
-
-    return html + render_toc_ul(items) + "</nav>\n"
-
-
-def render_toc_ul(toc):
-    """Render a <ul> table of content HTML. The param "toc" should
-    be formatted into this structure::
-        [
-          (toc_id, text, level),
-        ]
-    For example::
-        [
-          ('toc-intro', 'Introduction', 1),
-          ('toc-install', 'Install', 2),
-          ('toc-upgrade', 'Upgrade', 2),
-          ('toc-license', 'License', 1),
-        ]
-    """
-    if not toc:
-        return ""
-
-    s = "<ul>\n"
-    levels = []
-    for k, text, level in toc:
-        # On ne veut pas le titre de la page.
-        if level == 1:
-            continue
-        item = '<a href="#{}">{}</a>'.format(k, text)
-        if not levels:
-            s += "<li>" + item
-            levels.append(level)
-        elif level == levels[-1]:
-            s += "</li>\n<li>" + item
-        elif level > levels[-1]:
-            s += "\n<ul>\n<li>" + item
-            levels.append(level)
-        else:
-            last_level = levels.pop()
-            while levels:
-                last_level = levels.pop()
-                if level == last_level:
-                    s += "</li>\n</ul>\n</li>\n<li>" + item
-                    levels.append(level)
-                    break
-                elif level > last_level:
-                    s += "</li>\n<li>" + item
-                    levels.append(last_level)
-                    levels.append(level)
-                    break
-                else:
-                    s += "</li>\n</ul>\n"
-            else:
-                levels.append(level)
-                s += "</li>\n<li>" + item
-
-    while len(levels) > 1:
-        s += "</li>\n</ul>\n"
-        levels.pop()
-
-    return s + "</li>\n</ul>\n"
-
-
-def render_html_theading(text, level, tid):
-    # On ne veut pas d’id dans le titre.
-    if level == 1:
-        return f"<h1>{text}</h1>\n"
-    tag = "h" + str(level)
-    return "<" + tag + ' id="' + tid + '">' + text + "</" + tag + ">\n"
-
-
-def _cleanup_headings_text(inline, items, state):
-    for item in items:
-        text = item[1]
-        tokens = inline._scan(text, state, inline.rules)
-        text = "".join(_inline_token_text(tok) for tok in tokens)
-        yield item[0], text, item[2]
-
-
-def _inline_token_text(token):
-    tok_type = token[0]
-    if tok_type == "inline_html":
-        return ""
-
-    if len(token) == 2:
-        return token[1]
-
-    if tok_type in {"image", "link"}:
-        return token[2]
-
-    return ""
 
 
 def create_markdown_parser(questions_index=None):
