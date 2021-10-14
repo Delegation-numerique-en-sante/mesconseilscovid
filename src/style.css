@@ -314,6 +314,24 @@ legend h1 {
 .page-thematique #conseils-block .sommaire h2 {
     font-size: 120%;
     color: #25252b;
+    margin-top: 0;
+}
+@media only screen and (max-width: 658px) {
+    .page-thematique #conseils-block .sommaire span.tag {
+        width: 4.5rem;
+        justify-content: center;
+        margin-bottom: 3px;
+    }
+}
+.page-thematique #conseils-block .sommaire .tags {
+    margin-left: 0.5rem;
+}
+.page-thematique #conseils-block .sommaire span.tag {
+    font-size: 66%;
+    line-height: 1;
+    padding: 3px 10px;
+    min-height: auto;
+    border-radius: 0.66rem;
 }
 .page-thematique .conseils details {
     position: relative;
@@ -1773,26 +1791,29 @@ a.no-type::after {
     color: #000;
     border: 1px solid #d5dbef;
     align-items: center;
-    border-radius: 0.25rem;
+    border-radius: 1rem;
     display: inline-flex;
     font-size: 58%;
     line-height: 1.5;
     min-height: 1.5rem;
-    padding: 0 0.5rem;
+    padding: 3px 14px;
     white-space: nowrap;
     margin-right: 0.25rem;
     text-decoration: none;
     font-weight: normal;
 }
 
-.thematique span.tag-0-3 {
+.thematique span.tag-0-a-3-ans {
     background-color: #e2d4f8;
+    border-color: #e2d4f8;
 }
-.thematique span.tag-4-11 {
+.thematique span.tag-4-a-11-ans {
     background-color: #c4dbfd;
+    border-color: #c4dbfd;
 }
-.thematique span.tag-12-18 {
+.thematique span.tag-12-a-18-ans {
     background-color: #b5e6eb;
+    border-color: #b5e6eb;
 }
 
 .cta {

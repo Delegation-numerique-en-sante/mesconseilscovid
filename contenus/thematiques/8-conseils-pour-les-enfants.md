@@ -17,11 +17,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 </div>
 
-<h2>
-    Mesures sanitaires à l’école, au collège et au lycée
-    <br>
-    <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span>
-</h2>
+.. section:: Mesures sanitaires à l’école, au collège et au lycée
+    :tags: 4 à 11 ans, 12 à 18 ans
 
 .. question:: Dans quels cas mon enfant doit-il rester à la maison ?
     :level: 3
@@ -343,7 +340,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - Notre rubrique sur la [vaccination des mineurs de plus de 12 ans](#conseils-vaccins) ci-dessous
+    - Notre rubrique sur la [vaccination des mineurs de plus de 12 ans](#la-vaccination-contre-la-covid) ci-dessous
 
     - Notre autre page sur le [pass sanitaire](/pass-sanitaire-qr-code-voyages.html)
 
@@ -351,11 +348,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 
 
-<h2 id="conseils-vaccins">
-    La vaccination contre la Covid
-    <br>
-    <span class="tag tag-12-18">12 à 18 ans</span>
-</h2>
+.. section:: La vaccination contre la Covid
+    :tags: 12 à 18 ans
 
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
     :level: 3
@@ -452,11 +446,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-<h2>
-    Questions médicales et dépistage
-    <br>
-    <span class="tag tag-0-3">3 ans et moins</span> <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span>
-</h2>
+.. section:: Questions médicales et dépistage
+    :tags: 0 à 3 ans, 4 à 11 ans, 12 à 18 ans
 
 .. question:: Que faire si mon enfant est malade ?
     :level: 3
@@ -514,11 +505,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     Si vous emmenez un **doudou** ou un objet familier, veillez à ce qu’il n’entre pas en contact avec des surfaces qui peuvent être contaminées. Sinon, lavez-le ou laissez le en quarantaine durant 7 jours.
 
 
-<h2>
-    Organisation familiale et garde des enfants
-    <br>
-    <span class="tag tag-0-3">3 ans et moins</span> <span class="tag tag-4-11">4 à 11 ans</span> <span class="tag tag-12-18">12 à 18 ans</span>
-</h2>
+.. section:: Organisation familiale et garde des enfants
+    :tags: 0 à 3 ans, 4 à 11 ans, 12 à 18 ans
 
 .. question:: Que doivent faire mes enfants si je suis positif à la Covid ?
     :level: 3
@@ -590,11 +578,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * Soyez particulièrement **vigilants** lorsque le foyer comporte des **personnes vulnérables** (personnes âgées, immunodéprimées, non vaccinées, ou à risque de forme grave de Covid).
 
 
-<h2>
-    Enfants en bas âge
-    <br>
-    <span class="tag tag-0-3">3 ans et moins</span>
-</h2>
+.. section:: Enfants en bas âge
+    :tags: 0 à 3 ans
 
 .. question:: Mon enfant peut-il aller à la crèche s’il est cas contact ?
     :level: 3
@@ -667,6 +652,6 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 </div>
 
-## Vous avez encore des questions ?
+#### Vous avez encore des questions ?
 
 Ligne d’écoute pour les parents, ressources pour les parents et professionnels : [Enfance & Covid](https://eduensemble.org/enfance-covid/).
