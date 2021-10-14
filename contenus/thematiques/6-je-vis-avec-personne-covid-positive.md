@@ -129,7 +129,7 @@ Attention, si vous ressentez des **symptômes** avant la date prévue de votre t
 
 ## Comment cohabiter avec une personne positive à la Covid ?
 
-<p class="big">Pour éviter d’être contaminé⸱e par une personne qui vit sous le même toit, il faut respecter autant que possible une certaine discipline, lorsque cela est possible :</p>
+<p class="big">Pour éviter d’être contaminé⸱e par une personne qui vit sous le même toit, il faut essayer de respecter une certaine discipline, lorsque cela est possible :</p>
 
 ### Ne pas partager l’espace
 
