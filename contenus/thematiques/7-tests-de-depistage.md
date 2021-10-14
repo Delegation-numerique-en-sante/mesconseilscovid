@@ -11,7 +11,10 @@
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
+## Questions essentielles
+
 .. question:: Quel est le test adapté à ma situation ?
+    :level: 3
 
     <form id="tests-de-depistage-demarrage-form">
         <fieldset>
@@ -146,6 +149,7 @@
 
 
 .. question:: Où puis-je faire un test de dépistage Covid-19 ?
+    :level: 3
 
     <div class="conseil">
 
@@ -155,6 +159,7 @@
 
 
 .. question:: Les tests de dépistage sont-ils payants ?
+    :level: 3
 
     À partir du **15 octobre 2021**, les tests de dépistage ne seront pris en charge par l’Assurance maladie que dans les cas suivants (sur présentation d’un justificatif) :
 
@@ -170,11 +175,12 @@
     Pour faire face à la situation épidémique en **Guadeloupe**, en **Guyane**, en **Martinique** et à **Mayotte**, les tests de dépistage restent pris en charge par l’Assurance maladie jusqu’à nouvel ordre.
 
 .. question:: Je souhaite me faire dépister mais les prélèvements nasopharyngés sont impossibles dans mon cas
+    :level: 3
 
     Le test **PCR salivaire** est indiqué dans ces cas : enfant en bas âge, personnes présentant des troubles psychiatriques, déviation de la cloison nasale…
 
 
-## Quels sont les différents tests de dépistage de la Covid-19 ?
+## Informations sur les différents types de tests
 
 ### 1. Test PCR nasopharyngé (prélèvement nasal)
 
