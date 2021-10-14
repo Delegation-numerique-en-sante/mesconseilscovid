@@ -15,10 +15,9 @@
 
 <summary>
 
-<h3>
-    vous n’êtes pas complètement vacciné(e) :
-    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
-</h3>
+.. section:: … vous n’êtes pas complètement vacciné(e)
+    :level: 3
+    :folded: true
 
 <div class="explications">
 
@@ -74,10 +73,9 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 
 <summary>
 
-<h3>
-    vous êtes complètement vacciné(e) :
-    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
-</h3>
+.. section:: … vous êtes complètement vacciné(e)
+    :level: 3
+    :folded: true
 
 <div class="explications">
 

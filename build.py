@@ -126,13 +126,14 @@ class SectionDirective(Directive):
             tags = [tag.strip() for tag in options["tags"].split(",")]
         else:
             tags = []
+        folded = options.get("folded") == "true"
         children = block.parse(self.parse_text(m), state, block.rules)
         if children:
             raise ValueError(
                 f"Section avec des enfants : indentation en trop ?\n« {text} »"
             )
         state["toc_headings"].append((tid, text, level, tags))
-        return {"type": "theading", "text": text, "params": (level, tid, tags)}
+        return {"type": "theading", "text": text, "params": (level, tid, tags, folded)}
 
 
 class QuestionDirective(Directive):
