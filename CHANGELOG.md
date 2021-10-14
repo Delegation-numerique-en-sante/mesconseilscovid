@@ -1,9 +1,18 @@
 # Changelog
 
+## 2021-10-14
+
+* ajout d’une mention sur la vaccination conjointe avec la grippe
+* ajout d’un sommaire de navigation
+* repliement des questions par défaut
+* ajout de questions-réponses relatives au Pass sanitaire
+* ajout de questions-réponses pour les enfants
+
 ## 2021-10-11
 
 * tests payants dans certains cas à partir du 15/10
 * fin des autotests supervisés pour le pass sanitaire au 15/10
+* ajout d’une page thématique sur le travail
 
 ## 2021-10-08
 
