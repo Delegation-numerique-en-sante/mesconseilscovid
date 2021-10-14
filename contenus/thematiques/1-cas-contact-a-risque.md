@@ -15,14 +15,13 @@
 </div>
 
 
+## Que faire selon votre situation ?
+
 <div class="conseil conseil-jaune">
 
 Si vous avez **déjà eu la Covid** il y a **moins de 2 mois**, alors vous n’êtes **pas considéré** comme cas contact.
 
 </div>
-
-
-## Que faire selon votre situation ?
 
 <details id="schema-vaccinal-complet">
 
