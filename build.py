@@ -576,6 +576,7 @@ def _download_file(url, local_path, timeout):
     with httpx.stream(
         "GET",
         url,
+        follow_redirects=True,
         timeout=timeout,
         verify=False,  # ignore SSL certificate validation errors
     ) as response:

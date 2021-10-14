@@ -67,13 +67,12 @@ def external_links(timeout: int = 10, delay: float = 0.1):
         with httpx.stream(
             "GET",
             external_link,
+            follow_redirects=True,
             timeout=timeout,
             verify=False,  # ignore SSL certificate validation errors
         ) as response:
             if response.status_code == HTTPStatus.TOO_MANY_REQUESTS:
                 print("Warning: we’re being throttled, skipping link (429)")
-                continue
-            if response.status_code == HTTPStatus.FOUND and external_link == "https://signalement.social-sante.gouv.fr/":
                 continue
             if response.status_code != HTTPStatus.OK:
                 raise Exception(f"{external_link} is broken! ({response.status_code})")
