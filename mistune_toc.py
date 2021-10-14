@@ -61,8 +61,9 @@ def record_toc_heading(text, level, state):
         stopwords=["span", "class", "visually", "hidden", "sup"],
         replacements=[("’", "'")],
     )
-    state["toc_headings"].append((tid, text, level))
-    return {"type": "theading", "text": text, "params": (level, tid)}
+    tags = []
+    state["toc_headings"].append((tid, text, level, tags))
+    return {"type": "theading", "text": text, "params": (level, tid, tags)}
 
 
 def md_toc_hook(md, tokens, state):
@@ -108,13 +109,26 @@ def render_html_toc(items, title, depth):
     return html + render_toc_ul(items) + "</nav>\n"
 
 
-def render_html_theading(text, level, tid):
+def render_html_theading(text, level, tid, tags):
     # On ne veut pas d’id dans le titre.
     if level == 1:
         return f"<h1>{text}</h1>\n"
 
+    if tags:
+        text += " " + render_html_tags(tags)
+
     tag = "h" + str(level)
     return "<" + tag + ' id="' + tid + '">' + text + "</" + tag + ">\n"
+
+
+def render_html_tags(tags):
+    return (
+        '<span class="tags">'
+        + "".join(
+            f'\n  <span class="tag tag-{slugify(tag)}">{tag}</span>' for tag in tags
+        )
+        + "\n</span>"
+    )
 
 
 def extract_toc_items(md, s):
@@ -143,16 +157,16 @@ def render_toc_ul(toc):
     be formatted into this structure::
 
         [
-          (toc_id, text, level),
+          (toc_id, text, level, tags),
         ]
 
     For example::
 
         [
-          ('toc-intro', 'Introduction', 1),
-          ('toc-install', 'Install', 2),
-          ('toc-upgrade', 'Upgrade', 2),
-          ('toc-license', 'License', 1),
+          ('toc-intro', 'Introduction', 1, []),
+          ('toc-install', 'Install', 2, []),
+          ('toc-upgrade', 'Upgrade', 2, []),
+          ('toc-license', 'License', 1, []),
         ]
     """
     if not toc:
@@ -160,12 +174,14 @@ def render_toc_ul(toc):
 
     s = "<ul>\n"
     levels = []
-    for k, text, level in toc:
+    for k, text, level, tags in toc:
         # On ne veut pas le titre de la page.
         if level == 1:
             continue
 
         item = '<a href="#{}">{}</a>'.format(k, text)
+        if tags:
+            item += " " + render_html_tags(tags)
         if not levels:
             s += "<li>" + item
             levels.append(level)
@@ -205,7 +221,7 @@ def _cleanup_headings_text(inline, items, state):
         text = item[1]
         tokens = inline._scan(text, state, inline.rules)
         text = "".join(_inline_token_text(tok) for tok in tokens)
-        yield item[0], text, item[2]
+        yield item[0], text, item[2], item[3]
 
 
 def _inline_token_text(token):

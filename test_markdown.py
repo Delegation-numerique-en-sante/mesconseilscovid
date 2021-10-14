@@ -134,6 +134,78 @@ def test_block_html(markdown):
     )
 
 
+class TestSectionDirective:
+    def test_cas_de_base(self, markdown):
+        assert (
+            markdown(
+                dedent(
+                    """\
+                    .. section:: La vaccination
+                    """
+                )
+            )
+            == dedent(
+                """\
+                <h2 id="la-vaccination">La vaccination</h2>
+                """
+            )
+        )
+
+    def test_niveau_specifique(self, markdown):
+        assert (
+            markdown(
+                dedent(
+                    """\
+                    .. section:: La vaccination
+                        :level: 3
+                    """
+                )
+            )
+            == dedent(
+                """\
+                <h3 id="la-vaccination">La vaccination</h3>
+                """
+            )
+        )
+
+    def test_slug_specifique(self, markdown):
+        assert (
+            markdown(
+                dedent(
+                    """\
+                    .. section:: La vaccination
+                        :slug: vaccination
+                    """
+                )
+            )
+            == dedent(
+                """\
+                <h2 id="vaccination">La vaccination</h2>
+                """
+            )
+        )
+
+    def test_tags(self, markdown):
+        assert (
+            markdown(
+                dedent(
+                    """\
+                    .. section:: La vaccination
+                        :tags: Foo, Bar
+                    """
+                )
+            )
+            == dedent(
+                """\
+                <h2 id="la-vaccination">La vaccination <span class="tags">
+                  <span class="tag tag-foo">Foo</span>
+                  <span class="tag tag-bar">Bar</span>
+                </span></h2>
+                """
+            )
+        )
+
+
 class TestQuestionDirective:
     def test_default_heading_level(self, markdown):
         assert (
