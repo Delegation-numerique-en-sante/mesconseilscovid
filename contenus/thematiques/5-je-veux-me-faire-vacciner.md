@@ -11,7 +11,7 @@
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
-## En savoir plus sur la dose de rappel dite 3<sup>e</sup> dose
+## Le rappel vaccinal (dit « 3<sup>e</sup> dose »)
 
 .. question:: Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
@@ -37,26 +37,24 @@
 
     <div class="voir-aussi">
 
-    - [Quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?](#quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose)
+    - [Quel délai respecter avant la dose de rappel, dite 3<sup>e</sup> dose ?](#quel-delai-respecter-avant-la-dose-de-rappel-dite-3-e-dose)
     - [Où me faire vacciner ?](#ou-me-faire-vacciner)
 
     </div>
 
 
-.. question:: Quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
+.. question:: Quel délai respecter avant la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
-
-    La campagne de rappels a commencé le **1<sup>er</sup> septembre 2021**.
 
     Le **délai recommandé** par la Haute autorité de santé (HAS) pour un **rappel vaccinal** (2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas), est le suivant :
 
     * pour les personnes vaccciné(e)s avec le vaccin **Janssen** (*2<sup>e</sup> dose*) : au moins **4 semaines** après l’injection ;
 
-    * pour les personnes sévèrement **immunodéprimées** (*4<sup>e</sup> dose*) : au moins **3 mois** après la dernière injection de vaccin.
+    * pour les personnes sévèrement **immunodéprimées** (*4<sup>e</sup> dose*) : au moins **3 mois** après la dernière injection de vaccin ;
 
-    * dans les **autres cas**, notamment les personnes de **65 ans et plus** ou avec des **comorbidités** augmentant le risque de formes graves (*3<sup>e</sup> dose*) : au moins **6 mois** après la dernière injection de vaccin ;
+    * dans les **autres cas**, notamment les personnes de **65 ans et plus** ou avec des **comorbidités** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves (*3<sup>e</sup> dose*) : au moins **6 mois** après la dernière injection de vaccin.
 
-    **Dès maintenant**, et si ce délai est respecté, vous pouvez prendre rendez-vous chez un **professionnel de santé** (médecin, pharmacien, infirmier…) ou dans un **centre de vaccination** (*voir plus bas*).
+    Si ce délai est respecté, vous pouvez prendre rendez-vous **dès maintenant** chez un **professionnel de santé** (médecin, pharmacien, infirmier…) ou dans un **centre de vaccination** (*voir plus bas*).
 
     <div class="voir-aussi">
 
@@ -66,19 +64,33 @@
     </div>
 
 
-.. question:: Puis-je me faire vacciner contre la grippe saisonnière et la Covid en même temps ?
+.. question:: Quels sont les facteurs de risque de formes graves de Covid ?
     :level: 3
 
-    **Oui**. Il est possible de réaliser le rappel du vaccin contre la Covid en même temps que le vaccin contre la grippe.
+    L’**âge** est le principal facteur de risque de développer une **forme grave** de Covid, c’est-à-dire pouvant conduire à une hospitalisation, voire à un décès.
 
-    La campagne annuelle de vaccination contre la grippe débutera le **26 octobre 2021**. À partir de cette date, si vous êtes éligible au rappel vaccinal contre la Covid et que vous êtes prioritaire pour le vaccin contre la grippe, vous pourrez recevoir les deux vaccins en même temps.
+    Les **comorbidités** (autres maladies) suivantes jouent aussi un rôle significatif :
 
-    En ville, cela sera possible dans les **pharmacies** qui vaccinent avec les deux vaccins, et dans les cabinets médicaux ou infirmiers.
+    * pathologies à **très haut risque** de décès :
+        * trisomie 21 (surtout à partir de l’âge de 40 ans),
+        * transplantation d’organe solide ou de cellules souches hématopoïétiques,
+        * insuffisance rénale chronique (avec dialyse),
+        * certaines maladies rares (consulter [la liste](https://solidarites-sante.gouv.fr/IMG/pdf/liste_maladies_rares_cosv_fmr-2.pdf) sur le site du ministère de la santé) ;
 
-    Vous pourrez aussi acheter votre vaccin anti-grippe en pharmacie et venir avec au **centre de vaccination** le jour de votre rendez-vous de rappel vaccinal contre la Covid.
+    * pathologies à **haut risque** de décès :
+        * diabète de type 1 et de type 2,
+        * obésité (IMC > 30 kg/m<sup>2</sup>),
+        * cancer (en particulier si récent et/ou en progression et/ou sous chimiothérapie),
+        * BPCO (bronchopneumopathie chronique obstructive) et insuffisance respiratoire,
+        * insuffisance cardiaque,
+        * hypertension artérielle compliquée,
+        * maladie hépatique chronique (en particulier cirrhose),
+        * troubles psychiatriques,
+        * démence,
+        * antécédent d’accident vasculaire cérébral.
 
+    La **grossesse** est également un facteur de risque de développer des formes graves.
 
-## En savoir plus sur la 1<sup>re</sup> et la 2<sup>e</sup> dose
 
 .. question:: Où me faire vacciner ?
     :level: 3
@@ -112,6 +124,19 @@
     </div>
 
 
+.. question:: Puis-je me faire vacciner contre la grippe saisonnière et la Covid en même temps ?
+    :level: 3
+
+    **Oui**. Il est possible de réaliser le rappel du vaccin contre la Covid en même temps que le vaccin contre la grippe.
+
+    La campagne annuelle de vaccination contre la grippe débutera le **26 octobre 2021**. À partir de cette date, si vous êtes éligible au rappel vaccinal contre la Covid et que vous êtes prioritaire pour le vaccin contre la grippe, vous pourrez recevoir les deux vaccins en même temps.
+
+    En ville, cela sera possible dans les **pharmacies** qui vaccinent avec les deux vaccins, et dans les cabinets médicaux ou infirmiers.
+
+    Vous pourrez aussi acheter votre vaccin anti-grippe en pharmacie et venir avec au **centre de vaccination** le jour de votre rendez-vous de rappel vaccinal contre la Covid.
+
+
+## La vaccination initiale (1<sup>re</sup> et 2<sup>e</sup> dose)
 
 .. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose ?
     :level: 3
@@ -172,7 +197,7 @@
     * si vous avez été testé(e) positif ou positive à la Covid après le 15<sup>e</sup> jour suivant votre 1<sup>re</sup> injection, alors vous n’avez pas besoin de recevoir une 2<sup>e</sup> dose. Votre contamination a le même effet protecteur que la dose de rappel.
 
 
-## En savoir plus sur les effets de la vaccination
+## Les effets de la vaccination
 
 .. question:: Suis-je immunisé(e) après une seule dose de vaccin ?
     :level: 3
@@ -208,33 +233,6 @@
 
     Ils disparaissent le plus souvent au bout d’1 à 2 jours. Si vos symptômes vous inquiètent, contactez votre médecin traitant, ou le 15 en cas d’urgence.
 
-.. question:: Quels sont les facteurs de risque de formes graves de Covid ?
-    :level: 3
-
-    L’**âge** est le principal facteur de risque de développer une **forme grave** de Covid, c’est-à-dire pouvant conduire à une hospitalisation, voire à un décès.
-
-    Les **comorbidités** (autres maladies) suivantes jouent aussi un rôle significatif :
-
-    * pathologies à **très haut risque** de décès :
-        * trisomie 21 (surtout à partir de l’âge de 40 ans),
-        * transplantation d’organe solide ou de cellules souches hématopoïétiques,
-        * insuffisance rénale chronique (avec dialyse),
-        * certaines maladies rares (consulter [la liste](https://solidarites-sante.gouv.fr/IMG/pdf/liste_maladies_rares_cosv_fmr-2.pdf) sur le site du ministère de la santé) ;
-
-    * pathologies à **haut risque** de décès :
-        * diabète de type 1 et de type 2,
-        * obésité (IMC > 30 kg/m<sup>2</sup>),
-        * cancer (en particulier si récent et/ou en progression et/ou sous chimiothérapie),
-        * BPCO (bronchopneumopathie chronique obstructive) et insuffisance respiratoire,
-        * insuffisance cardiaque,
-        * hypertension artérielle compliquée,
-        * maladie hépatique chronique (en particulier cirrhose),
-        * troubles psychiatriques,
-        * démence,
-        * antécédent d’accident vasculaire cérébral.
-
-    La **grossesse** est également un facteur de risque de développer des formes graves.
-
 .. question:: Est-ce que la vaccination rend malade, contagieux ou positif ?
     :level: 3
 
@@ -245,7 +243,7 @@
 
 ## Vaccination, grossesse et allaitement
 
-.. question:: Je suis enceinte, puis-je me faire vacciner (1<sup>re</sup> et 2<sup>e</sup> dose) ?
+.. question:: Je suis enceinte, puis-je me faire vacciner ?
     :level: 3
 
     **Oui,** d’autant que la grossesse vous expose à des formes plus sévères de la Covid. Il n’y a pas de contre-indication à la vaccination des femmes enceintes et vous pouvez vous faire vacciner avec un vaccin à ARN messager (Pfizer, Moderna) **dès le premier trimestre de grossesse**.
@@ -253,7 +251,7 @@
     L’**obligation vaccinale** requise pour certaines professions (santé, médico-social, restauration…) n’est pas exigée des femmes enceintes avant le **2<sup>e</sup> trimestre de grossesse**.
 
 
-.. question:: J’allaite mon enfant, puis-je me faire vacciner (1<sup>re</sup> et 2<sup>e</sup> dose) ?
+.. question:: J’allaite mon enfant, puis-je me faire vacciner ?
     :level: 3
 
     **Oui**. La Haute Autorité de santé estime que, sur la base des mécanismes biologiques (dégradation rapide des ARNm), il n’y a **pas d’effet attendu** chez le nourrisson et l’enfant allaité par une femme vaccinée. Vous pouvez donc continuer à allaiter même après votre vaccination.
