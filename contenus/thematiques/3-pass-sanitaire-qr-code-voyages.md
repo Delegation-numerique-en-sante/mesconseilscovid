@@ -334,7 +334,11 @@
 
     </div>
 
-
+.. question:: Est-ce que la dose de rappel, dite 3e dose, est obligatoire pour le pass sanitaire ?
+    :level: 3
+    
+    **Non.** Votre pass sanitaire reste valable même si vous n'avez pas reçu de 3<sup>e</sup> dose (ou dose de rappel).
+    
 .. question:: Je ne peux pas me faire vacciner, comment obtenir un pass sanitaire ?
     :level: 3
 
