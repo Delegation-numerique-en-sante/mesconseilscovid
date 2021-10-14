@@ -136,6 +136,12 @@
     Vous pourrez aussi acheter votre vaccin anti-grippe en pharmacie et venir avec au **centre de vaccination** le jour de votre rendez-vous de rappel vaccinal contre la Covid.
 
 
+.. question:: Est-ce que la dose de rappel, dite 3<sup>e</sup> dose, est obligatoire pour le pass sanitaire ?
+    :level: 3
+
+    **Non.** Votre pass sanitaire reste valable même si vous n’avez pas encore reçu de 3<sup>e</sup> dose (ou dose de rappel).
+
+
 ## La vaccination initiale (1<sup>re</sup> et 2<sup>e</sup> dose)
 
 .. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose ?
