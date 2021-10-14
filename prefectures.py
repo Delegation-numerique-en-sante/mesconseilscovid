@@ -13,7 +13,7 @@ DATA_URL = "https://www.data.gouv.fr/fr/datasets/r/0b245875-b964-4c26-9765-c0e74
 
 def retrieve_data(url):
     try:
-        response = httpx.get(url)
+        response = httpx.get(url, follow_redirects=True)
         response.raise_for_status()
     except httpx.RequestError as exc:
         print(f"An error occured while requesting {exc.request.url!r}.")
