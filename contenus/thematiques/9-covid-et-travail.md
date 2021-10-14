@@ -48,7 +48,7 @@
 
     <div class="voir-aussi">
 
-    - Consulter le guide : [Covid-19 conseils et bonnes pratiques pour les salariés](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_salarie_30_juin_vok.pdf)
+    - Consulter le guide : [Covid-19 conseils et bonnes pratiques pour les salariés](https://travail-emploi.gouv.fr/IMG/pdf/051021_fiches_covid_salariev7ok.pdf)
 
     - [J’ai des symptômes ou mon test est positif, que faire ?](/j-ai-des-symptomes-covid.html)
 
@@ -116,7 +116,7 @@
 
     <div class="voir-aussi">
 
-    * Consultez le guide : [Covid : conseils et bonnes pratiques pour l’employeur](https://travail-emploi.gouv.fr/IMG/pdf/guide_covid_employeur_30_juin_vok.pdf)
+    * Consultez le guide : [Covid : conseils et bonnes pratiques pour l’employeur](https://travail-emploi.gouv.fr/IMG/pdf/051021_fiches_covid_employeurv7ok.pdf)
     * Lire aussi notre réponse ci-dessous : [Quels aménagements peuvent être mis en place pour limiter la transmission du virus sur le lieu de travail ?](#quels-amenagements-peuvent-etre-mis-en-place-pour-limiter-la-transmission-du-virus-sur-le-lieu-de-travail)
 
     </div>
