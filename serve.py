@@ -27,11 +27,14 @@ LIVERELOAD_DELAY = 0.1
 ROOT_DIR = "dist/"
 
 PATHS_TO_WATCH_FOR_THEMATIQUES = (
+    "build.py",
+    "mistune_toc.py",
     "contenus/meta/*.md",
     "contenus/thematiques/*.md",
     "templates/thematique.html",
 )
 PATHS_TO_WATCH_FOR_INDEX = (
+    "build.py",
     "contenus/conseils/*.md",
     "contenus/meta/*.md",
     "contenus/questions/*.md",
