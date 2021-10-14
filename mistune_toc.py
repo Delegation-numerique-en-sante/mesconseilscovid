@@ -62,8 +62,9 @@ def record_toc_heading(text, level, state):
         replacements=[("’", "'")],
     )
     tags = []
+    folded = False
     state["toc_headings"].append((tid, text, level, tags))
-    return {"type": "theading", "text": text, "params": (level, tid, tags)}
+    return {"type": "theading", "text": text, "params": (level, tid, tags, folded)}
 
 
 def md_toc_hook(md, tokens, state):
@@ -109,13 +110,16 @@ def render_html_toc(items, title, depth):
     return html + render_toc_ul(items) + "</nav>\n"
 
 
-def render_html_theading(text, level, tid, tags):
+def render_html_theading(text, level, tid, tags, folded):
     # On ne veut pas d’id dans le titre.
     if level == 1:
         return f"<h1>{text}</h1>\n"
 
     if tags:
         text += " " + render_html_tags(tags)
+
+    if folded:
+        text += '\n    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>\n'
 
     tag = "h" + str(level)
     return "<" + tag + ' id="' + tid + '">' + text + "</" + tag + ">\n"

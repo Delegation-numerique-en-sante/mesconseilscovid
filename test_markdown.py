@@ -205,6 +205,26 @@ class TestSectionDirective:
             )
         )
 
+    def test_folded(self, markdown):
+        assert (
+            markdown(
+                dedent(
+                    """\
+                    .. section:: La vaccination
+                        :level: 3
+                        :folded: true
+                    """
+                )
+            )
+            == dedent(
+                """\
+                <h3 id="la-vaccination">La vaccination
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
+                </h3>
+                """
+            )
+        )
+
 
 class TestQuestionDirective:
     def test_default_heading_level(self, markdown):
