@@ -1471,6 +1471,9 @@ a.no-type::after {
 .conseils details summary {
     cursor: pointer;
 }
+.conseils details:hover {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+}
 .conseils details {
     display: block;
     border: 1px solid lightgray;
