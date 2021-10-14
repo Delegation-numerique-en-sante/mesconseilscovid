@@ -41,7 +41,11 @@
     - [J’ai été vacciné à l’étranger avec un vaccin reconnu en France, comment obtenir un QR code valable en France ?](#j-ai-ete-vaccine-a-l-etranger-avec-un-vaccin-reconnu-en-france-comment-obtenir-un-qr-code-valable-en-france)
 
     </div>
-
+    
+.. question:: Jusqu'à quand l'usage du pass sanitaire est-il prévu ?
+    :level: 3
+    
+   Pour l'instant, l'utilisation du pass sanitaire est prévue jusqu'au **15 novembre 2021,** mais, le gouvernement souhaite avoir la possibilité de prolonger cette obligation jusqu'en **juillet 2022** si la situation épidémique le demande. Cette prolongation n'est pas encore actée, elle sera examinée par l'Assemblée nationale les 19 et 20 octobre 2021.
 
 .. question:: Quel justificatif utiliser comme pass sanitaire en France ?
     :level: 3
