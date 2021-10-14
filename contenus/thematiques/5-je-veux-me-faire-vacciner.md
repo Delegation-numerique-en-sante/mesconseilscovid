@@ -95,11 +95,19 @@
 .. question:: Où me faire vacciner ?
     :level: 3
 
-    * Dans un **centre de vaccination**, avec un vaccin *Pfizer-BioNTech* : pour la vaccination initiale (dès **12 ans**) ou pour le rappel.
+    Quel que soit le vaccin, vous pouvez vous faire vacciner :
 
-    * Chez votre **médecin traitant**, en cabinet infirmier, ou en pharmacie :
-        * avec un vaccin *Moderna* : pour la vaccination initiale (dès **12 ans**) ou pour le rappel,
-        * avec un vaccin *AstraZeneca* ou *Janssen* : uniquement pour la vaccination initiale des personnes de **55 ans et plus** (le rappel se faisant seulement avec un vaccin *Pfizer* ou *Moderna*).
+    * dans votre **établissement** ;
+    * chez votre **médecin traitant** (généraliste ou spécialiste) ;
+    * par votre **médecin du travail** ;
+    * à la **pharmacie** ;
+    * dans un **cabinet infirmier** ou **sage-femme**.
+
+    De plus, s’il s’agit d’un vaccin *Pfizer-BioNTech* ou *Moderna*, vous pouvez **aussi** vous faire vacciner :
+
+    * chez votre **chirurgien-dentiste** ;
+    * dans un **laboratoire de biologie médicale** ;
+    * en **centre de vaccination**.
 
     <div class="voir-aussi">
 
