@@ -334,16 +334,18 @@
 
     </div>
 
-.. question:: Est-ce que la dose de rappel, dite 3e dose, est obligatoire pour le pass sanitaire ?
+
+.. question:: Est-ce que la dose de rappel, dite 3<sup>e</sup> dose, est obligatoire pour le pass sanitaire ?
     :level: 3
-    
-    **Non.** Votre pass sanitaire reste valable même si vous n'avez pas reçu de 3<sup>e</sup> dose (ou dose de rappel).
-    
+
+    **Non.** Votre pass sanitaire reste valable même si vous n’avez pas encore reçu de 3<sup>e</sup> dose (ou dose de rappel).
+
+
 .. question:: Je ne peux pas me faire vacciner, comment obtenir un pass sanitaire ?
     :level: 3
 
     En cas de **contre-indication médicale** (voir la [liste des contre-indications à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination)), vous pouvez demander à votre médecin de vous faire un **certificat médical**, qui fera office de **pass sanitaire**.
-    
+
     Attention, si vous ne pouvez pas vous faire vacciner parce que **vous avez eu la Covid** il y a moins de **6 mois**, votre [**certificat de rétablissement**](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) (test de dépistage positif) avec **QR code** fera office de pass sanitaire.
 
 
@@ -402,7 +404,7 @@
     :level: 3
 
     Toutes les personnes âgées de plus de **12 ans et 2 mois**.
-    
+
     <div class="voir-aussi">
 
     - Consultez notre page « [Conseils pour les mineurs : vaccination et scolarité](/conseils-pour-les-enfants.html) ».
@@ -562,7 +564,7 @@
     :level: 3
 
     Pour que votre vaccination soit reconnue comme pass sanitaire en France il faut : être complètement vacciné(e) avec un vaccin reconnu en France (ou équivalent) et obtenir un QR code.
-    
+
     #### Vaccins reconnus en France
 
     Les vaccins reconnus par l’Agence européenne du médicament sont : **Pfizer**, **Moderna**, **AstraZeneca** et **Janssen**.
