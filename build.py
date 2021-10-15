@@ -172,7 +172,7 @@ class QuestionDirective(Directive):
     def __call__(self, md):
         self.register_directive(md, "question")
         if md.renderer.NAME == "html":
-            md.renderer.register("question", render_html_question)
+            md.renderer.register("question", self.render_html)
         else:
             md.renderer.register("question", self.render_ast)
 
@@ -186,11 +186,11 @@ class QuestionDirective(Directive):
             "text": text,
         }
 
-
-def render_html_question(text, question, level, feedback):
-    question_id = slugify_title(question)
-    feedback_html = (
-        """<form class="question-feedback">
+    @staticmethod
+    def render_html(text, question, level, feedback):
+        question_id = slugify_title(question)
+        feedback_html = (
+            """<form class="question-feedback">
     <fieldset>
         <legend>Avez-vous trouvé cette réponse utile&#8239;?</legend>
         <div>
@@ -200,10 +200,10 @@ def render_html_question(text, question, level, feedback):
         </div>
     </fieldset>
 </form>"""
-        if feedback == "keep"
-        else ""
-    )
-    return f"""<details id="{question_id}" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            if feedback == "keep"
+            else ""
+        )
+        return f"""<details id="{question_id}" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 {render_html_summary('', typographie(question), level, extra_span=' itemprop="name"')}
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
