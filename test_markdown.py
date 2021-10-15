@@ -374,6 +374,69 @@ class TestRenvoiDirective:
         )
 
 
+class TestInjectionDirective:
+    def test_injection(self):
+        from build import create_markdown_parser
+
+        markdown = create_markdown_parser(
+            questions_index={
+                "je-veux-me-faire-vacciner.html": {
+                    "titre": "Je souhaite me faire vacciner",
+                    "questions": {
+                        "suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose": {
+                            "titre": "Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose&#8239;?",
+                            "details": dedent(
+                                """\
+                                <details id="suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose">
+                                    <summary>
+                                        <h3>
+                                            <span>Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose&#8239;?</span>
+                                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
+                                        </h3>
+                                    </summary>
+                                    <p>
+                                        Avec le temps, l’efficacité de la protection du vaccin contre l’infection
+                                        peut diminuer, en particulier face au variant Delta.
+                                        Pour « booster » cette protection, la Haute autorité de santé (HAS)
+                                        recommande un **rappel vaccinal** avec une 2<sup>e</sup>, 3<sup>e</sup>
+                                        ou 4<sup>e</sup> dose selon les cas, pour :
+                                    </p>
+                                </details>"""
+                            ),
+                        }
+                    },
+                }
+            }
+        )
+        assert (
+            markdown(
+                dedent(
+                    """\
+                    .. injection:: /je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
+                    """
+                )
+            )
+            == dedent(
+                """\
+                <details id="suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose">
+                    <summary>
+                        <h3>
+                            <span>Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose&#8239;?</span>
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
+                        </h3>
+                    </summary>
+                    <p>
+                        Avec le temps, l’efficacité de la protection du vaccin contre l’infection
+                        peut diminuer, en particulier face au variant Delta.
+                        Pour « booster » cette protection, la Haute autorité de santé (HAS)
+                        recommande un **rappel vaccinal** avec une 2<sup>e</sup>, 3<sup>e</sup>
+                        ou 4<sup>e</sup> dose selon les cas, pour :
+                    </p>
+                </details>"""
+            )
+        )
+
+
 class TestMarkdownContentBlock:
     def test_render_block(self, markdown):
         from build import MarkdownContent

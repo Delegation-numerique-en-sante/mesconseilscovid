@@ -17,6 +17,7 @@ from jinja2 import Environment as JinjaEnv
 from jinja2 import FileSystemLoader, StrictUndefined
 from minicli import cli, run, wrap
 from mistune.directives import Directive
+from selectolax.parser import HTMLParser as SelectolaxHTMLParser
 from slugify import slugify
 
 from mistune_toc import DirectiveToc
@@ -257,6 +258,33 @@ class RenvoiDirective(Directive):
 """
 
 
+class InjectionDirective(Directive):
+    def __init__(self, questions_index=None):
+        self.questions_index = questions_index or {}
+
+    def parse(self, block, m, state):
+        ref = m.group("value")
+        nom_page, id_question = ref.split("#")
+        nom_page = nom_page.lstrip("/")
+        page = self.questions_index[nom_page]
+        details_question = page["questions"][id_question]["details"]
+
+        return {
+            "type": "injection",
+            "children": [],
+            "params": (details_question,),
+        }
+
+    def __call__(self, md):
+        self.register_directive(md, "injection")
+        if md.renderer.NAME == "html":
+            md.renderer.register("injection", self.render_html)
+
+    @staticmethod
+    def render_html(text, details_question):
+        return details_question
+
+
 def render_html_summary(text, title, level=3, extra_span=""):
     return f"""<summary>
     <h{level}>
@@ -275,6 +303,7 @@ def create_markdown_parser(questions_index=None):
     ]
     if questions_index is not None:
         plugins.append(RenvoiDirective(questions_index=questions_index))
+        plugins.append(InjectionDirective(questions_index=questions_index))
     return mistune.create_markdown(
         renderer=CustomHTMLRenderer(escape=False),
         plugins=plugins,
@@ -458,7 +487,11 @@ def extract_questions(page):
     ast_parser = mistune.create_markdown(
         renderer=mistune.AstRenderer(), plugins=[QuestionDirective()]
     )
-    tree = ast_parser.read(page.path)
+    ast_tree = ast_parser.read(page.path)
+
+    html_parser = create_markdown_parser()
+    html = html_parser.read(page.path)
+    html_tree = SelectolaxHTMLParser(html)
 
     def _extract_questions(tree):
         if isinstance(tree, list):
@@ -469,10 +502,14 @@ def extract_questions(page):
                     if "children" in node:
                         yield from _extract_questions(node["children"])
 
-    return {
-        slugify_title(node["titre"]): {"titre": node["titre"]}
-        for node in _extract_questions(tree)
-    }
+    questions = {}
+    for node in _extract_questions(ast_tree):
+        slug = slugify_title(node["titre"])
+        questions[slug] = {
+            "titre": node["titre"],
+            "details": html_tree.css_first(f"#{slug}").html,
+        }
+    return questions
 
 
 def last_modified_time(path):
