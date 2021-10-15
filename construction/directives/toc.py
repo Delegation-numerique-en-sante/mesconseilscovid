@@ -72,7 +72,6 @@ def md_toc_hook(md, tokens, state):
 
     # add TOC items into the given location
     default_depth = state.get("toc_depth", 3)
-    headings = list(_cleanup_headings_text(md.inline, headings, state))
     for tok in tokens:
         if tok["type"] == "toc":
             params = tok["params"]
@@ -151,7 +150,7 @@ def extract_toc_items(md, s):
     headings = state.get("toc_headings")
     if not headings:
         return []
-    return list(_cleanup_headings_text(md.inline, headings, state))
+    return headings
 
 
 def render_toc_ul(toc):
@@ -216,14 +215,6 @@ def render_toc_ul(toc):
         levels.pop()
 
     return s + "</li>\n</ul>\n"
-
-
-def _cleanup_headings_text(inline, items, state):
-    for item in items:
-        text = item[1]
-        tokens = inline._scan(text, state, inline.rules)
-        text = "".join(_inline_token_text(tok) for tok in tokens)
-        yield item[0], text, item[2], item[3]
 
 
 def _inline_token_text(token):
