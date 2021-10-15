@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-10-15
+
+* multiples améliorations mineures de contenus
+
 ## 2021-10-14
 
 * ajout d’une mention sur la vaccination conjointe avec la grippe
