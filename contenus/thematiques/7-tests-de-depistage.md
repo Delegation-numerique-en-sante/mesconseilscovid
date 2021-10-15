@@ -165,7 +165,7 @@
 
     * personnes ayant un **schéma vaccinal complet** ou une **contre-indication** à la vaccination ;
     * personnes ayant un **certificat de rétablissement** de moins de 6 mois ;
-    * personnes présentant une **prescription médicale** ;
+    * personnes présentant une **prescription médicale** de moins de 48h et non renouvelable ;
     * personnes **mineures** ;
     * personnes identifiées comme **cas contact** par l’Assurance maladie (*en cas de notification de l’application TousAntiCovid, vous devrez contacter l’Assurance maladie par téléphone pour obtenir une attestation de prise en charge*) ;
     * personnes concernées par des campagnes de **dépistage collectif**, organisées par les Agences régionales de santé ou au sein des établissements de l’Éducation nationale par exemple.
