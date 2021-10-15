@@ -264,10 +264,26 @@
 
     L’**obligation vaccinale** requise pour certaines professions (santé, médico-social, restauration…) n’est pas exigée des femmes enceintes avant le **2<sup>e</sup> trimestre de grossesse**.
 
+    <div class="voir-aussi">
+
+    - [Vaccins contre la Covid 19 — Grossesse et allaitement](https://lecrat.fr/spip.php?page=article&id_article=1123) sur le site du <abbr title="Centre de Référence sur les Agents Tératogènes">CRAT</abbr>
+
+    </div>
+
 
 .. question:: J’allaite mon enfant, puis-je me faire vacciner ?
     :level: 3
 
     **Oui**. La Haute Autorité de santé estime que, sur la base des mécanismes biologiques (dégradation rapide des ARNm), il n’y a **pas d’effet attendu** chez le nourrisson et l’enfant allaité par une femme vaccinée. Vous pouvez donc continuer à allaiter même après votre vaccination.
+
+    Le <abbr title="Centre de Référence sur les Agents Tératogènes">CRAT</abbr> (le centre de référence sur ces questions) indique qu’à ce jour aucun événement particulier n’a été observé chez les enfants allaités d’environ 4 000 femmes vaccinées par un vaccin à ARNm contre la Covid.
+
+    <div class="voir-aussi">
+
+    - [Vaccins contre la Covid 19 — Grossesse et allaitement](https://lecrat.fr/spip.php?page=article&id_article=1123) sur le site du <abbr title="Centre de Référence sur les Agents Tératogènes">CRAT</abbr>
+
+    - [Covid-19 et allaitement](https://www.who.int/fr/news-room/q-a-detail/coronavirus-disease-covid-19-breastfeeding) sur le site de l’<abbr title="Organisation mondiale de la santé">OMS</abbr>
+
+    </div>
 
 </div>
