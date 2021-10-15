@@ -104,6 +104,14 @@ class CustomHTMLRenderer(FrenchTypographyMixin, ClassMixin, mistune.HTMLRenderer
     pass
 
 
+def slugify_title(title):
+    return slugify(
+        title,
+        stopwords=["span", "class", "visually", "hidden", "sup"],
+        replacements=[("’", "'")],
+    )
+
+
 class SectionDirective(Directive):
     def __call__(self, md):
         self.register_directive(md, "section")
@@ -114,11 +122,7 @@ class SectionDirective(Directive):
         if options and "slug" in options:
             tid = options["slug"]
         else:
-            tid = slugify(
-                text,
-                stopwords=["span", "class", "visually", "hidden", "sup"],
-                replacements=[("’", "'")],
-            )
+            tid = slugify_title(text)
         if options and "level" in options:
             level = int(options["level"])
         else:
@@ -181,14 +185,6 @@ class QuestionDirective(Directive):
             "feedback": feedback,
             "text": text,
         }
-
-
-def slugify_title(title):
-    return slugify(
-        title,
-        stopwords=["span", "class", "visually", "hidden", "sup"],
-        replacements=[("’", "'")],
-    )
 
 
 def render_html_question(text, question, level, feedback):
