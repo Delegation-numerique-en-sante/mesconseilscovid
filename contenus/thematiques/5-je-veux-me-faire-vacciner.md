@@ -52,7 +52,7 @@
 
     * pour les personnes sévèrement **immunodéprimées** (*4<sup>e</sup> dose*) : au moins **3 mois** après la dernière injection de vaccin ;
 
-    * dans les **autres cas**, notamment les personnes de **65 ans et plus** ou avec des **comorbidités** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves (*3<sup>e</sup> dose*) : au moins **6 mois** après la dernière injection de vaccin.
+    * dans **tous les autres cas**, notamment les personnes de **65 ans et plus** ou avec des **comorbidités** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves ou les **professionnels** et **bénévoles** des secteurs de la santé (*3<sup>e</sup> dose*) : au moins **6 mois** après la dernière injection de vaccin.
 
     Si ce délai est respecté, vous pouvez prendre rendez-vous **dès maintenant** chez un **professionnel de santé** (médecin, pharmacien, infirmier…) ou dans un **centre de vaccination** (*voir plus bas*).
 
