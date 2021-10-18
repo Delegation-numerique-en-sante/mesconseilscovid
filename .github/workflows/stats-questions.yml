@@ -1,0 +1,27 @@
+name: Mettre à jour les stats toutes les heures
+
+on:
+  schedule:
+    - cron: '* 50 * * *'
+
+jobs:
+  update-questions-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install Python dependencies
+        run: |
+          make install-python
+
+      - name: Run script
+        run: |
+          python3 tools/satisfaction.py --trier-par=insatisfaction --jours-precedents=7
+        with:
+          PLAUSIBLE_TOKEN: ${{ secrets.PLAUSIBLE_TOKEN }}
