@@ -19,6 +19,7 @@ export function pageThematique(app) {
         }
     )
     ouvreDetailsSiFragment()
+    window.addEventListener('hashchange', ouvreDetailsSiFragment)
     scrolleAuSummary()
     partagePageEnCours()
     feedbackPageEnCours(app)
