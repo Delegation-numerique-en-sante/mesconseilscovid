@@ -460,6 +460,17 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Le retour de l’enfant en collectivité ne pourra être envisagé qu’après avis d’un médecin.
 
+.. question:: Où faire tester mon enfant ?
+    :level: 3
+    
+    [Cliquez ici pour trouver un lieu de dépistage près de chez vous](https://www.sante.fr/cf/centres-depistage-covid.html)
+    
+    <div class="voir-aussi">
+        
+     - [En savoir plus] sur les types de tests de dépistage et trouver celui adapté à la situation de votre enfant(/tests-de-depistage.html)
+     
+    </div>
+    
 .. question:: Que faire si mon enfant est positif à la Covid ?
     :level: 3
     
@@ -493,31 +504,18 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     
     <div class="voir-aussi">
 
+    - [Où faire tester mon enfant ?](#où-faire-tester-mon-enfant-?)
     - [Les tests de dépistage sont-ils dangereux pour les enfants ?](#les-tests-sont-ils-dangereux-pour-les-enfants)
     - [Comment préparer mon enfant à subir un test de dépistage ?](#comment-preparer-mon-enfant-a-subir-un-test-de-depistage-nasopharynge-prelevement-nasal)
+    - [Les tests sont-ils payants ou soumis à la présentation d'une prescription médicale ?](les-tests-sont-ils-payants-ou-soumis-à-la-présentation-d'une-prescription-médicale-(ordonnance)-pour-les-mineurs-?)
 
     </div>
+
+.. question:: Les tests sont-ils payants ou soumis à la présentation d'une prescription médicale (ordonnance) pour les mineurs ?
+    :level: 3
     
-.. question:: Mon enfant est atteint d’une maladie chronique, quelles sont les précautions supplémentaires à prendre ?
-    :level: 3
-
-    Même chez l’enfant atteint d’une pathologie chronique, l’infection à la Covid est généralement bénigne.
-
-    Il faut favoriser le retour dans leur établissement scolaire de tous les enfants ayant une pathologie chronique, car cela est bénéfique pour leur santé, leur bien-être et leur avenir. La poursuite d’une scolarisation à domicile ne peut concerner que quelques cas particuliers, sur avis du médecin référent.
-
-    Pour plus d’informations, vous pouvez consulter la fiche de la HAS suivante : [HAS, Accompagner les enfants et les adolescents dont ceux vivant avec une maladie chronique lors de la levée du confinement, 20 mai 2020](https://www.has-sante.fr/jcms/p_3185131/fr/accompagner-les-enfants-et-les-adolescents-dont-ceux-vivant-avec-une-maladie-chronique-lors-de-la-levee-du-confinement).
-
-    Seuls quelques enfants suivis pour des pathologies rares et graves et en situation de grande vulnérabilité en lien avec leur pathologie ou leurs traitements nécessitent des précautions particulières voire du maintien des soins, des activités éducatives, d’une scolarité à domicile.
-
-
-.. question:: Étant donné la situation, dois/puis-je décaler le prochain vaccin de mon enfant ?
-    :level: 3
-
-    Il est primordial de **maintenir l’ensemble des vaccinations** de vos enfants.
-
-    Les consultations pour vaccination ne doivent pas être reportées et les retards de vaccinations doivent être rattrapés.
-
-
+    Non. Pour les mineurs, les tests de dépistages sont gratuits (sauf les autotest) et réalisés sans prescription médicale (ordonnance).
+    
 .. question:: Les tests sont-ils dangereux pour les enfants ?
     :level: 3
 
@@ -529,7 +527,6 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     **Oui**, comme chez l’adulte la sérologie indique un contact avec le virus. Cependant, la prescription d’une sérologie Covid et son interprétation doivent être faites par un médecin.
 
-
 .. question:: Comment préparer mon enfant à subir un test de dépistage nasopharyngé (prélèvement nasal) ?
     :level: 3
 
@@ -540,6 +537,24 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     Pendant le test, assurez-vous qu’il porte bien son **masque sur la bouche** et n’hésitez pas à rester à ses côtés.
 
     Si vous emmenez un **doudou** ou un objet familier, veillez à ce qu’il n’entre pas en contact avec des surfaces qui peuvent être contaminées. Sinon, lavez-le ou laissez le en quarantaine durant 7 jours.
+
+.. question:: Mon enfant est atteint d’une maladie chronique, quelles sont les précautions supplémentaires à prendre ?
+    :level: 3
+
+    Même chez l’enfant atteint d’une pathologie chronique, l’infection à la Covid est généralement bénigne.
+
+    Il faut favoriser le retour dans leur établissement scolaire de tous les enfants ayant une pathologie chronique, car cela est bénéfique pour leur santé, leur bien-être et leur avenir. La poursuite d’une scolarisation à domicile ne peut concerner que quelques cas particuliers, sur avis du médecin référent.
+
+    Pour plus d’informations, vous pouvez consulter la fiche de la HAS suivante : [HAS, Accompagner les enfants et les adolescents dont ceux vivant avec une maladie chronique lors de la levée du confinement, 20 mai 2020](https://www.has-sante.fr/jcms/p_3185131/fr/accompagner-les-enfants-et-les-adolescents-dont-ceux-vivant-avec-une-maladie-chronique-lors-de-la-levee-du-confinement).
+
+    Seuls quelques enfants suivis pour des pathologies rares et graves et en situation de grande vulnérabilité en lien avec leur pathologie ou leurs traitements nécessitent des précautions particulières voire du maintien des soins, des activités éducatives, d’une scolarité à domicile.
+
+.. question:: Étant donné la situation, dois/puis-je décaler le prochain vaccin de mon enfant ?
+    :level: 3
+
+    Il est primordial de **maintenir l’ensemble des vaccinations** de vos enfants.
+
+    Les consultations pour vaccination ne doivent pas être reportées et les retards de vaccinations doivent être rattrapés.
 
 
 .. section:: Organisation familiale et garde des enfants
