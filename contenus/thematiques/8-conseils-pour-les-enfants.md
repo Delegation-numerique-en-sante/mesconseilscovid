@@ -460,14 +460,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Le retour de l’enfant en collectivité ne pourra être envisagé qu’après avis d’un médecin.
 
-.. question:: Où faire tester mon enfant ?
+.. question:: Où faire tester mon enfant ?
     :level: 3
     
-    [Cliquez ici pour trouver un lieu de dépistage près de chez vous](https://www.sante.fr/cf/centres-depistage-covid.html)
+    [Cliquez ici pour trouver un lieu de dépistage près de chez vous](https://www.sante.fr/cf/centres-depistage-covid.html) sur le site sante.fr.
     
     <div class="voir-aussi">
         
-     - [En savoir plus] sur les types de tests de dépistage et trouver celui adapté à la situation de votre enfant(/tests-de-depistage.html)
+    - En savoir plus sur les [types de tests de dépistage](/tests-de-depistage.html) et trouver celui adapté à la situation de votre enfant.
      
     </div>
     
@@ -504,17 +504,17 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     
     <div class="voir-aussi">
 
-    - [Où faire tester mon enfant ?](#où-faire-tester-mon-enfant-?)
+    - [Où faire tester mon enfant ?](#ou-faire-tester-mon-enfant)
     - [Les tests de dépistage sont-ils dangereux pour les enfants ?](#les-tests-sont-ils-dangereux-pour-les-enfants)
     - [Comment préparer mon enfant à subir un test de dépistage ?](#comment-preparer-mon-enfant-a-subir-un-test-de-depistage-nasopharynge-prelevement-nasal)
-    - [Les tests sont-ils payants ou soumis à la présentation d'une prescription médicale ?](les-tests-sont-ils-payants-ou-soumis-à-la-présentation-d'une-prescription-médicale-(ordonnance)-pour-les-mineurs-?)
+    - [Les tests sont-ils payants ou soumis à la présentation d’une prescription médicale ?](#les-tests-sont-ils-payants-ou-soumis-a-la-presentation-d-une-prescription-medicale-ordonnance-pour-les-mineurs)
 
     </div>
 
-.. question:: Les tests sont-ils payants ou soumis à la présentation d'une prescription médicale (ordonnance) pour les mineurs ?
+.. question:: Les tests sont-ils payants ou soumis à la présentation d’une prescription médicale (ordonnance) pour les mineurs ?
     :level: 3
     
-    Non. Pour les mineurs, les tests de dépistages sont gratuits (sauf les autotest) et réalisés sans prescription médicale (ordonnance).
+    **Non.** Pour les mineurs, les tests de dépistages sont gratuits (sauf les autotest) et réalisés sans prescription médicale (ordonnance).
     
 .. question:: Les tests sont-ils dangereux pour les enfants ?
     :level: 3
