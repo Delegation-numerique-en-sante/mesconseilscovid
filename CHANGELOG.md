@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-10-19
+
+* ajout d’une question pour les tests et les enfants
+* ajout d’une question sur la vaccination et le télétravail pour les cas contact
+
 ## 2021-10-15
 
 * multiples améliorations mineures de contenus
