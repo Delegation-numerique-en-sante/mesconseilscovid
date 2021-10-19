@@ -63,19 +63,21 @@
     - Voir la rubrique « Arrêt de travail » ci-dessous
 
     </div>
-    
-.. question:: Je vacciné(e) et cas contact, que faire si je ne peux pas télétravailler ? 
+
+.. question:: Je vacciné(e) et cas contact, que faire si je ne peux pas télétravailler ?
     :level: 3
-    
-    Si vous êtes vacciné(e), vous n'avez pas l'obligation de vous isoler après un contact à risque mais vous devez **limiter vos intéractions sociales.** 
-    En effet, même si les risques sont fortement réduits par la vaccination, vous pouvez être contaminé et transmettre le virus aux autres. Alors, si vous ne pouvez pas **télétravailler,** il faudra autant que possible rester vigilant(e) pour ne pas propager le covid sur votre lieu de travail : 
-    
-    * respectez les gestes barrières, notamment le **port du masque** en toutes circonstances;
-    * maintenez une **distance physique**, vous pouvez par exemple travaillez dans un **bureau individuel** et privilégier les contacts téléphoniques, en visio-conférence ou par courriel;
-    * **déjeunez seul(e)** pour ne pas retirer votre masque en présence de vos collègues;
-    * lavez vous régulièrement les mains et **désinfectez** les surfaces et les objets que vous avez touché (poignée; bureau; souris...)
-    
-    
+
+    Si vous êtes vacciné(e), vous n’avez pas l’obligation de vous isoler après un contact à risque, mais vous devez **limiter vos interactions sociales**.
+    En effet, même si les risques sont fortement réduits par la vaccination, vous pouvez être contaminé et transmettre le virus aux autres.
+
+    Alors, si vous ne pouvez pas **télétravailler**, il faudra autant que possible rester vigilant(e) pour ne pas propager la Covid sur votre lieu de travail :
+
+    * respectez les gestes barrières, notamment le **port du masque** en toutes circonstances ;
+    * maintenez une **distance physique** : vous pouvez par exemple travailler dans un **bureau individuel** et privilégier les contacts téléphoniques, en visio-conférence ou par courriel ;
+    * **déjeunez seul(e)** pour ne pas retirer votre masque en présence de vos collègues ;
+    * lavez vous régulièrement les mains et **désinfectez** les surfaces et les objets que vous avez touchés (poignées, bureau, souris…).
+
+
 .. question:: Quels aménagements peuvent être mis en place pour limiter la transmission du virus sur le lieu de travail ?
     :level: 3
 
