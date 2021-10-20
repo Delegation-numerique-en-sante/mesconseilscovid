@@ -12,7 +12,7 @@
 
 .. renvoi:: j-ai-des-symptomes-covid.html#je-suis-vaccine-e-est-ce-que-je-peux-etre-positif-ou-positive-a-la-covid
 
-.. renvoi:: je-veux-me-faire-vacciner.html#est-ce-que-la-vaccination-rend-malade-contagieux-ou-positif
+.. renvoi:: je-veux-me-faire-vacciner.html#est-ce-que-la-vaccination-rend-positif-a-la-covid
 
 
 <div itemscope itemtype="https://schema.org/FAQPage">
