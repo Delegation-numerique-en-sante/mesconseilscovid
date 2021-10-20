@@ -4,7 +4,7 @@ import AlgorithmeVaccination from './vaccination'
 const STATUTS = [
     'antigenique-negatif-fragile',
     'asymptomatique',
-    'asymptomatique-positif-antigenique',
+    'asymptomatique-positif-autotest',
     'contact-a-risque-avec-test',
     'contact-a-risque-meme-lieu-de-vie',
     'contact-a-risque-meme-lieu-de-vie-sans-depistage',
@@ -16,7 +16,7 @@ const STATUTS = [
     'personne-fragile',
     'peu-de-risques',
     'positif-symptomatique-urgent',
-    'symptomatique-antigenique-positif',
+    'symptomatique-autotest-positif',
     'symptomatique-en-attente',
     'symptomatique-negatif',
     'symptomatique-positif',
@@ -35,8 +35,8 @@ const CONSEILS_PERSONNELS = [
     'contact-a-risque-meme-lieu-de-vie-vaccine',
     'contact-a-risque-sans-test',
     'contact-a-risque-vaccine',
-    'depistage-positif-antigenique-asymptomatique',
-    'depistage-positif-antigenique-symptomatique',
+    'depistage-positif-autotest-asymptomatique',
+    'depistage-positif-autotest-symptomatique',
     'depistage-positif-asymptomatique',
     'depistage-positif-symptomatique',
     'peu-de-risques',
@@ -46,7 +46,7 @@ const CONSEILS_PERSONNELS = [
     'symptomes-actuels-sans-depistage-critique',
     'symptomes-passes-en-attente',
     'symptomes-passes-positif',
-    'symptomes-passes-positif-antigenique',
+    'symptomes-passes-positif-autotest',
     'symptomes-passes-sans-depistage',
 ]
 
@@ -75,11 +75,10 @@ export default class AlgorithmeOrientation {
         ) {
             return 'antigenique_negatif_fragile'
         } else if (
-            (this.profil.depistage_type === 'antigenique' ||
-                this.profil.depistage_type === 'antigenique_autotest') &&
+            this.profil.depistage_type === 'antigenique_autotest' &&
             this.profil.depistage_resultat === 'positif'
         ) {
-            return 'antigenique_positif'
+            return 'autotest_positif'
         } else {
             return this.profil.depistage_resultat
         }
@@ -201,7 +200,7 @@ export default class AlgorithmeOrientation {
         // Statut et conseils à afficher dans toutes les situations.
         switch (this.situation) {
             case 'positif_symptomes_actuels_graves':
-            case 'antigenique_positif_symptomes_actuels_graves':
+            case 'autotest_positif_symptomes_actuels_graves':
                 return {
                     statut: 'positif-symptomatique-urgent',
                     conseils: 'symptomes-actuels-positif-critique',
@@ -239,15 +238,15 @@ export default class AlgorithmeOrientation {
                     conseils: 'depistage-positif-asymptomatique',
                 }
 
-            case 'antigenique_positif_contact_a_risque':
-            case 'antigenique_positif_contact_a_risque_meme_lieu_de_vie':
-            case 'antigenique_positif_contact_a_risque_meme_lieu_de_vie_vaccine':
-            case 'antigenique_positif_contact_a_risque_vaccine':
-            case 'antigenique_positif_contact_pas_vraiment_a_risque':
-            case 'antigenique_positif_asymptomatique':
+            case 'autotest_positif_contact_a_risque':
+            case 'autotest_positif_contact_a_risque_meme_lieu_de_vie':
+            case 'autotest_positif_contact_a_risque_meme_lieu_de_vie_vaccine':
+            case 'autotest_positif_contact_a_risque_vaccine':
+            case 'autotest_positif_contact_pas_vraiment_a_risque':
+            case 'autotest_positif_asymptomatique':
                 return {
-                    statut: 'asymptomatique-positif-antigenique',
-                    conseils: 'depistage-positif-antigenique-asymptomatique',
+                    statut: 'asymptomatique-positif-autotest',
+                    conseils: 'depistage-positif-autotest-asymptomatique',
                 }
 
             case 'negatif_symptomes_actuels':
@@ -259,16 +258,16 @@ export default class AlgorithmeOrientation {
                     conseils: 'peu-de-risques',
                 }
 
-            case 'antigenique_positif_symptomes_actuels':
+            case 'autotest_positif_symptomes_actuels':
                 return {
-                    statut: 'symptomatique-antigenique-positif',
-                    conseils: 'depistage-positif-antigenique-symptomatique',
+                    statut: 'symptomatique-autotest-positif',
+                    conseils: 'depistage-positif-autotest-symptomatique',
                 }
 
-            case 'antigenique_positif_symptomes_passes':
+            case 'autotest_positif_symptomes_passes':
                 return {
-                    statut: 'symptomatique-antigenique-positif',
-                    conseils: 'symptomes-passes-positif-antigenique',
+                    statut: 'symptomatique-autotest-positif',
+                    conseils: 'symptomes-passes-positif-autotest',
                 }
 
             case 'antigenique_negatif_fragile_symptomes_actuels':

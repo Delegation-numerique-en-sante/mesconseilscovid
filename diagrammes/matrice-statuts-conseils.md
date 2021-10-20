@@ -9,8 +9,8 @@
             <th style="border: 1px solid black; padding: 1rem;" rowspan="2" valign="middle" bgcolor="#EEEEEE" align="center">Pas testé<br>(ou test trop ancien)</th>
         </tr>
         <tr>
-            <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Test PCR</th>
-            <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Test antigénique ou autotest</th>
+            <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Test PCR ou antigénique</th>
+            <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Autotest</th>
             <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Test antigénique<br>(personne fragile)</th>
             <th style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#EEEEEE" align="center">Autres cas</th>
         </tr>
@@ -49,12 +49,12 @@
                 </a>
             </td>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#FFFFD7" align="center">
-                <a href="../contenus/statuts/statut_symptomatique_antigenique_positif.md">
-                    statut_symptomatique_antigenique_positif.md
+                <a href="../contenus/statuts/statut_symptomatique_autotest_positif.md">
+                    statut_symptomatique_autotest_positif.md
                 </a>
                 <br><br>
-                <a href="../contenus/conseils/conseils_personnels_depistage_positif_antigenique_symptomatique.md">
-                    conseils_personnels_depistage_positif_antigenique_symptomatique.md
+                <a href="../contenus/conseils/conseils_personnels_depistage_positif_autotest_symptomatique.md">
+                    conseils_personnels_depistage_positif_autotest_symptomatique.md
                 </a>
             </td>
             <td style="border: 1px solid black; padding: 1rem;" rowspan="2" valign="middle" bgcolor="#FFFFD7" align="center">
@@ -103,12 +103,12 @@
                 </a>
             </td>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#FFFFD7" align="center">
-                <a href="../contenus/statuts/statut_symptomatique_antigenique_positif.md">
-                    statut_symptomatique_antigenique_positif.md
+                <a href="../contenus/statuts/statut_symptomatique_autotest_positif.md">
+                    statut_symptomatique_autotest_positif.md
                 </a>
                 <br><br>
-                <a href="../contenus/conseils/conseils_personnels_symptômes_passés_positif_antigenique.md">
-                    conseils_personnels_symptômes_passés_positif_antigenique.md
+                <a href="../contenus/conseils/conseils_personnels_symptômes_passés_positif_autotest.md">
+                    conseils_personnels_symptômes_passés_positif_autotest.md
                 </a>
             </td>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#DDE8CB" align="center">
@@ -155,12 +155,12 @@
                 </a>
             </td>
             <td style="border: 1px solid black; padding: 1rem;" rowspan="6" valign="middle" bgcolor="#FFFFD7" align="center">
-                <a href="../contenus/statuts/statut_asymptomatique_positif_antigenique.md">
-                    statut_asymptomatique_positif_antigenique.md
+                <a href="../contenus/statuts/statut_asymptomatique_positif_autotest.md">
+                    statut_asymptomatique_positif_autotest.md
                 </a>
                 <br><br>
-                <a href="../contenus/conseils/conseils_personnels_depistage_positif_antigenique_asymptomatique.md">
-                    conseils_personnels_depistage_positif_antigenique_asymptomatique.md
+                <a href="../contenus/conseils/conseils_personnels_depistage_positif_autotest_asymptomatique.md">
+                    conseils_personnels_depistage_positif_autotest_asymptomatique.md
                 </a>
             </td>
             <td style="border: 1px solid black; padding: 1rem;" colspan="4" valign="middle" bgcolor="#FFFFD7" align="center">

@@ -1,1 +1,0 @@
-Maintenez-vous **en isolement**, et faites un **test PCR en laboratoire** pour identifier un éventuel **variant**.
