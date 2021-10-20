@@ -33,7 +33,9 @@
 
     </div>
 
-    Le rappel est réalisé avec le **vaccin à ARN messager Pfizer**, quel que soit le type de vaccin utilisé précédemment. Par exemple, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné initialement avec le vaccin *Moderna* ou *AstraZeneca*. L'utilisation du vaccin Moderna pour la 3<sup>e</sup> dose est en attente de validation par l'Agence européeenne du médicament (EMA).
+    Le rappel est actuellement réalisé avec le **vaccin Pfizer** uniquement. Il pourra également être réalisé avec un vaccin *Moderna* « demi-dose » après validation par l’EMA (agence européenne du médicament) attendue autour du 25 octobre.
+
+    Le vaccin utilisé pour le rappel n’a **pas besoin d’être le même** que celui utilisé pour la vaccination initiale. Par exemple, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné initialement avec le vaccin *Moderna* ou *AstraZeneca*.
 
     <div class="voir-aussi">
 
