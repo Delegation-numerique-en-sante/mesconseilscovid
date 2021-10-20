@@ -132,7 +132,14 @@
     - Prenez rendez-vous par téléphone : en appelant le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h)
 
     </div>
-
+    
+.. question:: J'ai des difficultés à me déplacer, comment me faire vacciner à domicile ?
+    :level: 3
+    
+    Les **infirmiers,** **sage-femmes** et **médecins généralistes** son habilités à vacciner contre la covid à domicile, avec **tous les vaccins** disponibles actuellement, et adaptés à votre situation.
+    
+    Les infirmiers ne sont pas autorisés à vacciner les femmes enceintes ou les personnes présentant un trouble de l'hémostase.
+        
 
 .. question:: Puis-je me faire vacciner contre la grippe saisonnière et la Covid en même temps ?
     :level: 3
