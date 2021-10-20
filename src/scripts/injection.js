@@ -55,17 +55,14 @@ export function CTAIContact(element, departement) {
 }
 
 export function lienDepistage(element, departement) {
+    element.setAttribute('href', _lienDepistage(departement))
+}
+
+export function _lienDepistage(departement) {
     if (departement === '00' /* Autre. */) {
-        element.setAttribute(
-            'href',
-            'https://www.sante.fr/cf/centres-depistage-covid.html'
-        )
-        return
+        return 'https://www.sante.fr/cf/centres-depistage-covid.html'
     }
-    element.setAttribute(
-        'href',
-        `https://www.sante.fr/cf/centres-depistage-covid/departement-${departement}.html`
-    )
+    return `https://www.sante.fr/cf/centres-depistage-covid/departement-${departement}.html`
 }
 
 export function lienVaccination(element, departement) {
