@@ -152,7 +152,7 @@ describe('Injection', function () {
 
         assert.strictEqual(
             element.innerHTML,
-            '<a href="https://www.sante.fr/cf/centres-depistage-covid/departement-01.html" class="lien-depistage">Site</a>'
+            '<a href="https://www.sante.fr/cf/centres-depistage-covid/departement-01-ain.html" class="lien-depistage">Site</a>'
         )
     })
 
@@ -165,7 +165,7 @@ describe('Injection', function () {
 
         assert.strictEqual(
             element.innerHTML,
-            '<a href="https://www.sante.fr/cf/centres-depistage-covid/departement-2A.html" class="lien-depistage">Site</a>'
+            '<a href="https://www.sante.fr/cf/centres-depistage-covid/departement-20A-corse-du-sud.html" class="lien-depistage">Site</a>'
         )
     })
 
