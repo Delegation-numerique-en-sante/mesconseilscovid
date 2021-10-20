@@ -249,6 +249,4 @@
 
     Ce type de test est utile à condition de le pratiquer régulièrement (plusieurs fois par semaine).
 
-    Pour obtenir un pass sanitaire, l'autotest doit être réalisé sous la supervision d'un professionnel de santé.
-
 </div>
