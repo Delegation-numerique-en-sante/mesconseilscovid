@@ -133,12 +133,12 @@
 
     </div>
     
-.. question:: J'ai des difficultés à me déplacer, comment me faire vacciner à domicile ?
+.. question:: J’ai des difficultés à me déplacer, puis-je me faire vacciner à domicile ?
     :level: 3
     
-    Les **infirmiers,** **sage-femmes** et **médecins généralistes** son habilités à vacciner contre la covid à domicile, avec **tous les vaccins** disponibles actuellement, et adaptés à votre situation.
+    Les **infirmiers**, **sage-femmes** et **médecins généralistes** son habilités à vacciner contre la Covid à domicile, avec **tous les vaccins** disponibles et adaptés à votre situation.
     
-    Les infirmiers ne sont pas autorisés à vacciner les femmes enceintes ou les personnes présentant un trouble de l'hémostase.
+    Les infirmiers ne sont pas autorisés à vacciner les femmes enceintes ou les personnes présentant un trouble de l’hémostase.
         
 
 .. question:: Puis-je me faire vacciner contre la grippe saisonnière et la Covid en même temps ?
