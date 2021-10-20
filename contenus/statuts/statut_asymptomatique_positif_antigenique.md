@@ -1,1 +1,0 @@
-Même sans symptômes, maintenez-vous **en isolement** pour ne pas contaminer d’autres personnes, et faites un **test PCR en laboratoire** pour identifier un éventuel **variant**.

@@ -1,0 +1,1 @@
+Maintenez-vous **en isolement**, et faites un **test PCR en laboratoire** pour confirmer le résultat.
