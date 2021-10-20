@@ -33,7 +33,7 @@
 
     </div>
 
-    Le rappel est réalisé avec un **vaccin à ARN messager (Pfizer ou Moderna)**, quel que soit le type de vaccin utilisé précédemment. Par exemple, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné initialement avec le vaccin *Moderna* ou *AstraZeneca*.
+    Le rappel est réalisé avec le **vaccin à ARN messager Pfizer**, quel que soit le type de vaccin utilisé précédemment. Par exemple, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné initialement avec le vaccin *Moderna* ou *AstraZeneca*. L'utilisation du vaccin Moderna pour la 3<sup>e</sup> dose est en attente de validation par l'Agence européeenne du médicament (EMA).
 
     <div class="voir-aussi">
 
@@ -103,7 +103,7 @@
     * à la **pharmacie** ;
     * dans un **cabinet infirmier** ou **sage-femme**.
 
-    De plus, s’il s’agit d’un vaccin *Pfizer-BioNTech* ou *Moderna*, vous pouvez **aussi** vous faire vacciner :
+    De plus, s’il s’agit d’un vaccin *Pfizer-BioNTech*, vous pouvez **aussi** vous faire vacciner :
 
     * chez votre **chirurgien-dentiste** ;
     * dans un **laboratoire de biologie médicale** ;
