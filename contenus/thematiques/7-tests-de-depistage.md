@@ -219,7 +219,7 @@
 .. question:: Qu’est-ce qu’un test PCR salivaire ?
     :level: 4
 
-    Ce test est réalisé grâce au prélèvement de la salive, avec un écouvillon (long coton-tige) ou sans (par crachat). Moins contraignant que les tests nasopharyngés, il est recommandé **lorsque le prélèvement nasal est compliqué ou impossible** (très jeunes enfants, déviation de la cloison nasale, troubles psychiatriques…). Évaluée à 85%, sa fiabilité est inférieure (3 % à 11 %) à celle d’un test PCR nasopharyngé.
+    Ce test est réalisé grâce au prélèvement de la salive, avec un écouvillon (long coton-tige) ou sans (par crachat). Moins contraignant que les tests nasopharyngés, il est recommandé **lorsque le prélèvement nasal est compliqué ou impossible** (très jeunes enfants, déviation de la cloison nasale, troubles psychiatriques…). Évaluée à 85 %, sa fiabilité est inférieure (3 % à 11 %) à celle d’un test PCR nasopharyngé.
 
 .. question:: Où faire un test PCR salivaire ?
     :level: 4
