@@ -132,14 +132,14 @@
     - Prenez rendez-vous par téléphone : en appelant le numéro vert <a href="tel:0800009110">0 800 009 110</a> (7j/7, de 6h à 22h)
 
     </div>
-    
+
 .. question:: J’ai des difficultés à me déplacer, puis-je me faire vacciner à domicile ?
     :level: 3
-    
+
     Les **infirmiers**, **sage-femmes** et **médecins généralistes** son habilités à vacciner contre la Covid à domicile, avec **tous les vaccins** disponibles et adaptés à votre situation.
-    
+
     Les infirmiers ne sont pas autorisés à vacciner les femmes enceintes ou les personnes présentant un trouble de l’hémostase.
-        
+
 
 .. question:: Puis-je me faire vacciner contre la grippe saisonnière et la Covid en même temps ?
     :level: 3
@@ -231,6 +231,7 @@
 
     **Le vaccin Janssen** ne prévoyait au départ qu’une seule dose. Toutefois, pour une protection plus efficace, la Haute Autorité de Santé (HAS) recommande maintenant une deuxième dose avec un vaccin à ARNm (Pfizer-BioNTech ou Moderna), à partir de 4 semaines après la première injection.
 
+
 .. question:: Est-ce que je peux attraper la Covid si je suis vacciné(e) ?
     :level: 3
 
@@ -244,14 +245,18 @@
 
     Si vous ressentez des symptômes ou si vous êtes positif(ve) à la Covid, [obtenez en quelques clics des conseils sur la conduite à tenir](/j-ai-des-symptomes-covid.html).
 
+
 .. question:: Quels sont les effets secondaires des vaccins contre la Covid ?
     :level: 3
 
-    Les vaccins sont des médicaments. Ils peuvent avoir des **effets indésirables**. Les plus fréquents sont : une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des nausées, de la fièvre modérée et des frissons.
+    Les vaccins sont des médicaments, ils peuvent avoir des **effets indésirables**.
 
-    Si cela arrive, c’est une réaction normale, qui est dûe à l’activation du système immunitaire par le vaccin. Ces effets secondaires sont d’ailleurs plus fréquents après la 2<sup>e</sup> dose, car la réaction immunitaire est alors plus forte.
+    Les **plus fréquents** sont une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des nausées, de la fièvre modérée et des frissons.
 
-    Ils disparaissent le plus souvent au bout d’1 à 2 jours. Si vos symptômes vous inquiètent, contactez votre médecin traitant, ou le 15 en cas d’urgence.
+    Si cela arrive, c’est une **réaction normale**, qui est dûe à l’activation du système immunitaire par le vaccin. Ces effets secondaires sont d’ailleurs plus fréquents après la 2<sup>e</sup> dose, car la réaction immunitaire est alors plus forte. Ils disparaissent le plus souvent au bout d’1 à 2 jours (parfois plus). Si vos symptômes vous inquiètent, contactez votre médecin traitant, ou le 15 en cas d’urgence.
+
+    De très rares cas de **myocardite** et de **péricardite** ont été observés après la vaccination avec le vaccin **Moderna** (*Spikevax*). L’Agence européenne du médicament (EMA) indique que ces cas sont survenus principalement dans les 14 jours suivant la vaccination, plus souvent après la seconde dose et chez des hommes jeunes, et que les données suggèrent une évolution favorable avec du repos ou avec un traitement. Consultez immédiatement un médecin en cas de douleur thoracique (aiguë et persistante), d’essoufflement ou de palpitations après la vaccination.
+
 
 .. question:: Est-ce que la vaccination rend positif à la covid ?
     :level: 3
@@ -259,6 +264,7 @@
     **Non, la vaccination ne rend en aucun cas positif**, il n’y a pas de virus actif dans les vaccins. Vous pouvez ressentir des effets secondaires (fièvre, fatigue…) suite à la vaccination, mais vous n’êtes **pas contagieux**.
 
     Si vous avez réalisé un [test de dépistage](/tests-de-depistage.html) après votre vaccination et qu’il est **positif**, cela n'est pas dû au vaccin. Cela signifie que vous avez été contaminé(e) avant ou après votre injection. Nous vous encourageons à vous isoler et à [décrire votre situation](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
+
 
 ## Vaccination, grossesse et allaitement
 
