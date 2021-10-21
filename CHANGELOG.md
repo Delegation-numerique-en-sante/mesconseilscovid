@@ -1,5 +1,13 @@
 # Changelog
 
+## 2021-10-21
+
+* suspension temporaire du vaccin Moderna pour le rappel
+* ajout d’infos sur la vaccination à domicile
+* ne demande plus de confirmer un test antigénique positif
+* multiples améliorations mineures des contenus
+* compatibilité IE11
+
 ## 2021-10-19
 
 * ajout d’une question pour les tests et les enfants
