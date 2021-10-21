@@ -1236,6 +1236,15 @@ a.button-feedback-social-whatsapp {
     margin-left: 1rem;
 }
 
+.thematique #conseils-block details form.question-feedback,
+.thematique #conseils-block details form.feedback-form {
+    display: none;
+}
+.thematique #conseils-block details[open] form.question-feedback,
+.thematique #conseils-block details[open] form.feedback-form {
+    display: flex;
+}
+
 .thematique #conseils-block form.question-feedback,
 .thematique #conseils-block form.feedback-form {
     color: #656565;
