@@ -253,7 +253,7 @@
 
     Les **plus fréquents** sont une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des nausées, de la fièvre modérée et des frissons.
 
-    Si cela arrive, c’est une **réaction normale**, qui est dûe à l’activation du système immunitaire par le vaccin. Ces effets secondaires sont d’ailleurs plus fréquents après la 2<sup>e</sup> dose, car la réaction immunitaire est alors plus forte. Ils disparaissent le plus souvent au bout d’1 à 2 jours (parfois plus). Si vos symptômes vous inquiètent, contactez votre médecin traitant, ou le 15 en cas d’urgence.
+    Si cela arrive, c’est une **réaction normale**, qui est dûe à l’activation du système immunitaire par le vaccin. Ces effets secondaires sont plus fréquents après la 2<sup>e</sup> dose, car la réaction immunitaire est alors plus forte. Ils disparaissent le plus souvent au bout d’1 à 2 jours (parfois plus). Si vos symptômes vous inquiètent, contactez votre médecin traitant, ou le 15 en cas d’urgence.
 
     De très rares cas de **myocardite** et de **péricardite** ont été observés après la vaccination avec le vaccin **Moderna** (*Spikevax*). L’Agence européenne du médicament (EMA) indique que ces cas sont survenus principalement dans les 14 jours suivant la vaccination, plus souvent après la seconde dose et chez des hommes jeunes, et que les données suggèrent une évolution favorable avec du repos ou avec un traitement. Consultez immédiatement un médecin en cas de douleur thoracique (aiguë et persistante), d’essoufflement ou de palpitations après la vaccination.
 
