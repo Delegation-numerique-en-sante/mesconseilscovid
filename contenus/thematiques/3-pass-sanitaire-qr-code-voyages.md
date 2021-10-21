@@ -46,7 +46,7 @@
 .. question:: Jusqu’à quand l’usage du pass sanitaire est-il prévu ?
     :level: 3
 
-   Pour l’instant, l’utilisation du pass sanitaire est prévue jusqu’au **15 novembre 2021**, mais le gouvernement souhaite avoir la possibilité de prolonger cette obligation jusqu’en **juillet 2022** si la situation épidémique le demande. Cette prolongation n’est pas encore actée, elle sera examinée par l’Assemblée nationale les 19 et 20 octobre 2021.
+   Pour l’instant, l’utilisation du pass sanitaire est prévue jusqu’au **15 novembre 2021**, mais le gouvernement souhaite avoir la possibilité de prolonger cette obligation jusqu’au **31 juillet 2022** si la situation épidémique le demande. Cette possibilité de prolongation a été votée par l’Assemblée nationale, et sera examinée par le Sénat le 28 octobre 2021.
 
 
 .. question:: Quel justificatif utiliser comme pass sanitaire en France ?
