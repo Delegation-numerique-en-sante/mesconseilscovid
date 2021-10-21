@@ -10,4 +10,3 @@ Nous vous conseillons de :
     * Contacter votre médecin et **faire un test**.
     * Ne pas prendre d’**anti-inflammatoires** (ibuprofène ou kétoprofène) sans avis médical. Les anti-inflammatoires pourraient **aggraver** l’infection à la Covid. Seul le **paracétamol** est recommandé. En cas de doute, demandez conseil à votre médecin.
     * Suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
-1. Si vous avez installé l’application TousAntiCovid sur votre smartphone, vous pouvez y scanner le **QR code** présent sur vos résultats dans la section « Me déclarer ».
