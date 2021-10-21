@@ -11,4 +11,3 @@ Nous vous conseillons de :
     * Contacter votre médecin et **faire un test**.
     * Ne pas prendre d’**anti-inflammatoires** (ibuprofène ou kétoprofène) sans avis médical. Les anti-inflammatoires pourraient **aggraver** l’infection à la Covid. Seul le **paracétamol** est recommandé. En cas de doute, demandez conseil à votre médecin.
     * Suivre l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
-1. Revenir sur Mes Conseils Covid **si votre situation change** afin d’avoir les conseils adaptés à votre nouvelle situation !
