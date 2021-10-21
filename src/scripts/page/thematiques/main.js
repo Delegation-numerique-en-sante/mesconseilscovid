@@ -1,3 +1,5 @@
+import applyDetailsSummaryPolyfill from '../../polyfills/details_polyfill'
+
 import { bindImpression } from '../../actions'
 import { bindFeedback, opacityTransition } from '../../feedback'
 import { getLocationPathName } from '../../plausible'
@@ -18,6 +20,7 @@ export function pageThematique(app) {
             boutonBasculeVersMonProfil(lienVersProfil, app)
         }
     )
+    applyDetailsSummaryPolyfill(document)
     ouvreDetailsSiFragment()
     window.addEventListener('hashchange', ouvreDetailsSiFragment)
     scrolleAuSummary()
