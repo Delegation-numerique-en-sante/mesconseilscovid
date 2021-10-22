@@ -515,8 +515,8 @@
 
     Il existe **2 autres moyens** d’obtenir une attestation de vaccination complète avec un QR code aux normes européennes :
 
-    * le **télécharger** à partir du [téléservice de l’Assurance maladie](https://attestation-vaccin.ameli.fr/) à l’aide de votre **numéro de sécurité sociale** (si vous en avez un) ;
-    * se rendre chez chez un **professionnel de santé** (médecin, pharmacien, infirmier, sage-femme…), muni de votre **carte vitale** (si vous en avez une) afin qu’il vous en édite une nouvelle.
+    * la **télécharger** à partir du [téléservice de l’Assurance maladie](https://attestation-vaccin.ameli.fr/) à l’aide de votre **numéro de sécurité sociale** (si vous en avez un) ;
+    * se rendre chez un **professionnel de santé** (médecin, pharmacien, infirmier, sage-femme…), muni de votre **carte vitale** (si vous en avez une) afin qu’il vous en édite une nouvelle.
 
     <div class="conseil conseil-jaune">
 
