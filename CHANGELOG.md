@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-10-22
+
+* corrections mineures et lien cassé
+
 ## 2021-10-21
 
 * suspension temporaire du vaccin Moderna pour le rappel
