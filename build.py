@@ -358,7 +358,8 @@ def all():
 @cli
 def index():
     """Build the index with contents from markdown dedicated folder."""
-    markdown_parser = create_markdown_parser()
+    questions_index = build_questions_index()
+    markdown_parser = create_markdown_parser(questions_index=questions_index)
     responses = build_responses(CONTENUS_DIR, markdown_parser)
 
     thematiques = get_thematiques(markdown_parser)[:NB_OF_DISPLAYED_THEMATIQUES]
@@ -501,9 +502,15 @@ def extract_questions(page):
     questions = {}
     for node in _extract_questions(ast_tree):
         slug = slugify_title(node["titre"])
+        details = html_tree.css_first(f"#{slug}").html
+        # On uniformise le niveau de titres à h3.
+        details = details.replace("<h2", "<h3").replace("</h2>", "</h3>")
+        details = details.replace("<h4", "<h3").replace("</h4>", "</h3>")
+        # On remplace les liens relatifs à la volée.
+        details = details.replace('href="#', f'href="/{page.name}.html#')
         questions[slug] = {
             "titre": node["titre"],
-            "details": html_tree.css_first(f"#{slug}").html,
+            "details": details,
         }
     return questions
 

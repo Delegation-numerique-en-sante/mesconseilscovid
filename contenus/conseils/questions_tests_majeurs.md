@@ -1,1 +1,1 @@
-- [Les tests de dépistage sont-ils payants ?](/tests-de-depistage.html#les-tests-de-depistage-sont-ils-payants)
+.. injection:: tests-de-depistage.html#les-tests-de-depistage-sont-ils-payants

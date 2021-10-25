@@ -1115,15 +1115,15 @@
             </div>
 
             <div id="conseils-blocs">
-                <h2 class="visually-hidden">Nos recommandations :</h2>
-
                 <div id="questions-recommandees" class="conseils">
                     <div id="questions-tests" hidden>
-                        <h4>Les tests de dépistage</h4>
+                        <h2 class="subtitle">Les tests de dépistage</h2>
                         <div class="voir-aussi">
                             <ul>
                                 <li><a href="#conseils-depistage" class="lien-depistage">Trouver un lieu de test dans mon département</a></li>
                             </ul>
+                        </div>
+                        <div class="questions-reponses">
                             <div id="questions-tests-majeurs" hidden>
                                 {{ questions_tests_majeurs }}
                             </div>
@@ -1139,7 +1139,7 @@
                         </div>
                     </div>
                     <div id="questions-vaccins" hidden>
-                        <h4>Les vaccins</h4>
+                        <h2 class="subtitle">Les vaccins</h2>
                         <div class="reponse">
                             <div id="reponse-vaccins-pas-encore" hidden>
                                 {{ reponse_vaccins_pas_encore }}
@@ -1189,7 +1189,7 @@
                                 {{ conseils_vaccins_obligation_pro_sante }}
                             </div>
                         </div>
-                        <div class="voir-aussi">
+                        <div class="questions-reponses">
                             <div id="questions-vaccins-grossesse" hidden>
                                 {{ questions_vaccins_grossesse }}
                             </div>
