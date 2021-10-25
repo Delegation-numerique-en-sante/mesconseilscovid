@@ -146,7 +146,7 @@
 
     **Oui**. Il est possible de réaliser le rappel du vaccin contre la Covid en même temps que le vaccin contre la grippe.
 
-    La campagne annuelle de vaccination contre la grippe débutera le **26 octobre 2021**. À partir de cette date, si vous êtes éligible au rappel vaccinal contre la Covid et que vous êtes prioritaire pour le vaccin contre la grippe, vous pourrez recevoir les deux vaccins en même temps.
+    La campagne annuelle de vaccination contre la grippe se déroule du **22 octobre 2021** au 31 janvier 2022. Si vous êtes éligible au rappel vaccinal contre la Covid et que vous êtes prioritaire pour le vaccin contre la grippe, vous pourrez recevoir les deux vaccins en même temps.
 
     En ville, cela sera possible dans les **pharmacies** qui vaccinent avec les deux vaccins, et dans les cabinets médicaux ou infirmiers.
 
