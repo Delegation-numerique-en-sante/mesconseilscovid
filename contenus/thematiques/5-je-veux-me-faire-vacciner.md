@@ -100,7 +100,7 @@
 .. question:: Quel est le vaccin administré pour la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
 
-    Le rappel est actuellement réalisé avec le **vaccin Pfizer** uniquement. Il pourra également être réalisé avec un vaccin *Moderna* « demi-dose » après validation par l’EMA (agence européenne du médicament) attendue autour du 30 octobre.
+    Le rappel est actuellement réalisé avec le **vaccin Pfizer** uniquement. Il pourra également être réalisé avec un vaccin *Moderna* « demi-dose » en cas de validation de la part de la Haute Autorité de la Santé.
 
     Le vaccin utilisé pour le rappel n’a **pas besoin d’être le même** que celui utilisé pour la vaccination initiale. Par exemple, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné(e) initialement avec le vaccin *Moderna* ou *AstraZeneca*.
 
