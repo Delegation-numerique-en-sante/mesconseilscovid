@@ -1,3 +1,4 @@
+import { differenceEnJours } from '../utils'
 import AlgorithmeVaccination from './vaccination'
 
 // Les statuts possibles en sortie de l’algorithme.
@@ -467,29 +468,42 @@ export default class AlgorithmeOrientation {
 
     depistageBlockNamesToDisplay() {
         const blockNames = []
-        if (
-            this.profil.depistagePositifRecent() ||
-            this.profil.depistageNegatifRecent()
-        ) {
-            // rien
-        } else {
-            blockNames.push('conseils-tests')
-            if (this.profil.depistageEnAttenteRecent()) {
-                blockNames.push('conseils-tests-resultats')
+        const situationDepistage = this._situationDepistage()
+        const pasTeste = situationDepistage === 'pas_teste'
+        const testARefaire =
+            situationDepistage === 'antigenique_negatif_fragile' ||
+            situationDepistage === 'antigenique_positif'
+        const situationSymptomes = this._situationSymptomes()
+        const symptomes =
+            situationSymptomes === 'symptomes_actuels' ||
+            situationSymptomes === 'symptomes_actuels_graves' ||
+            situationSymptomes === 'symptomes_passes'
+        const contactARisque = this.profil.hasContactARisqueReconnus()
+        const recommandeDepistage =
+            testARefaire || (pasTeste && (symptomes || contactARisque))
+        if (recommandeDepistage) {
+            blockNames.push('questions-tests')
+            if (this.profil.age < 18) {
+                blockNames.push('questions-tests-mineurs')
             } else {
-                blockNames.push('conseils-tests-general')
+                blockNames.push('questions-tests-majeurs')
             }
-        }
-        // Cas très particulier antigénique faux négatif.
-        if (
-            this.profil.depistageNegatifRecent() &&
-            typeof this.profil.depistage_type !== 'undefined' &&
-            this.profil.depistage_type === 'antigenique' &&
-            this.personneFragile &&
-            (this.profil.hasSymptomesActuelsReconnus() || this.profil.symptomes_passes)
-        ) {
-            blockNames.push('conseils-tests')
-            blockNames.push('conseils-tests-rt-pcr')
+            if (
+                this.profil.depistage_type === 'antigenique' ||
+                this.profil.depistage_type === 'antigenique_autotest'
+            ) {
+                blockNames.push('questions-tests-rt-pcr')
+            } else if (symptomes) {
+                blockNames.push('questions-tests-rt-pcr')
+                if (
+                    typeof this.profil.symptomes_start_date !== 'undefined' &&
+                    differenceEnJours(this.profil.symptomes_start_date, new Date()) <= 4
+                ) {
+                    blockNames.push('questions-tests-antigeniques')
+                }
+            } else if (contactARisque) {
+                blockNames.push('questions-tests-antigeniques')
+            }
         }
         return blockNames
     }

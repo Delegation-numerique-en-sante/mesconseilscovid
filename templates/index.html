@@ -1118,6 +1118,26 @@
                 <h2 class="visually-hidden">Nos recommandations :</h2>
 
                 <div id="questions-recommandees" class="conseils">
+                    <div id="questions-tests" hidden>
+                        <h4>Les tests de dépistage</h4>
+                        <div class="voir-aussi">
+                            <ul>
+                                <li><a href="#conseils-depistage" class="lien-depistage">Trouver un lieu de test dans mon département</a></li>
+                            </ul>
+                            <div id="questions-tests-majeurs" hidden>
+                                {{ questions_tests_majeurs }}
+                            </div>
+                            <div id="questions-tests-mineurs" hidden>
+                                {{ questions_tests_mineurs }}
+                            </div>
+                            <div id="questions-tests-rt-pcr" hidden>
+                                {{ questions_tests_rt_pcr }}
+                            </div>
+                            <div id="questions-tests-antigeniques" hidden>
+                                {{ questions_tests_antigeniques }}
+                            </div>
+                        </div>
+                    </div>
                     <div id="questions-vaccins" hidden>
                         <h4>Les vaccins</h4>
                         <div class="reponse">
@@ -1213,26 +1233,6 @@
                             {{ conseils_isolement_autres_personnes }}
                         </div>
                         {{ conseils_isolement_ctai }}
-                    </details>
-                </div>
-
-                <div id="conseils-tests" class="conseils" hidden>
-                    <details>
-                        <summary>
-                            <h3>
-                                Les tests de dépistage
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
-                            </h3>
-                        </summary>
-                        <div id="conseils-tests-resultats" hidden>
-                            {{ conseils_tests_résultats }}
-                        </div>
-                        <div id="conseils-tests-rt-pcr" hidden>
-                            {{ conseils_tests_rt_pcr }}
-                        </div>
-                        <div id="conseils-tests-general" hidden>
-                            {{ conseils_tests }}
-                        </div>
                     </details>
                 </div>
 

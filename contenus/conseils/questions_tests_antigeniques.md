@@ -1,0 +1,1 @@
+- [Qu’est-ce qu’un test antigénique nasopharyngé ?](/tests-de-depistage.html#qu-est-ce-qu-un-test-antigenique-nasopharynge)
