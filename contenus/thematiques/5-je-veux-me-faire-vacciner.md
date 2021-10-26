@@ -33,10 +33,7 @@
 
     </div>
 
-    Le rappel est actuellement réalisé avec le **vaccin Pfizer** uniquement. Il pourra également être réalisé avec un vaccin *Moderna* « demi-dose » après validation par l’EMA (agence européenne du médicament) attendue autour du 25 octobre.
-
-    Le vaccin utilisé pour le rappel n’a **pas besoin d’être le même** que celui utilisé pour la vaccination initiale. Par exemple, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné initialement avec le vaccin *Moderna* ou *AstraZeneca*.
-
+    
     <div class="voir-aussi">
 
     - [Quel délai respecter avant la dose de rappel, dite 3<sup>e</sup> dose ?](#quel-delai-respecter-avant-la-dose-de-rappel-dite-3-e-dose)
@@ -44,6 +41,13 @@
 
     </div>
 
+.. question:: Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
+    :level: 3
+    
+    Oui. Même si elle est communément appelée 3<sup>e</sup> dose, cette dose de rappel concerne également les personnes qui ont finalisé leur schéma vaccinal initial (primo-vaccination) avec 1 seule dose : soit parce qu'elles ont été vaccinées avec le vaccin Janssen, soit parce qu'elles ont eu la Covid avant leur première injection de vaccin.
+    
+    La campagne de rappel s'ouvre progressivement. Pour connaître la liste des publics éligibles aujourd'hui, [consultez notre réponse ci-dessus](#suis-je-concerné-par-la-dose-de-rappel,-dite-3<sup>e</sup>-dose-?)
+Pour connaître le délai à respecter avant la dose de rappel voir plus bas.
 
 .. question:: Quel délai respecter avant la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
@@ -54,7 +58,7 @@
 
     * pour les personnes sévèrement **immunodéprimées** (*4<sup>e</sup> dose*) : au moins **3 mois** après la dernière injection de vaccin ;
 
-    * dans **tous les autres cas**, notamment les personnes de **65 ans et plus** ou avec des **comorbidités** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves ou les **professionnels** et **bénévoles** des secteurs de la santé (*3<sup>e</sup> dose*) : au moins **6 mois** après la dernière injection de vaccin.
+    * pour les personnes de **65 ans et plus** ou avec des **comorbidités** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves ou les **professionnels** et **bénévoles** des secteurs de la santé (*3<sup>e</sup> dose*) : au moins **6 mois** après la dernière injection de vaccin.
 
     Si ce délai est respecté, vous pouvez prendre rendez-vous **dès maintenant** chez un **professionnel de santé** (médecin, pharmacien, infirmier…) ou dans un **centre de vaccination** (*voir plus bas*).
 
@@ -64,7 +68,6 @@
     - [Où me faire vacciner ?](#ou-me-faire-vacciner)
 
     </div>
-
 
 .. question:: Quels sont les facteurs de risque de formes graves de Covid ?
     :level: 3
@@ -93,6 +96,12 @@
 
     La **grossesse** est également un facteur de risque de développer des formes graves.
 
+.. question:: Quel est le vaccin administré pour la dose de rappel, dite 3<sup>e</sup> dose ?
+    :level: 3
+
+    Le rappel est actuellement réalisé avec le **vaccin Pfizer** uniquement. Il pourra également être réalisé avec un vaccin *Moderna* « demi-dose » après validation par l’EMA (agence européenne du médicament) attendue autour du 25 octobre.
+
+    Le vaccin utilisé pour le rappel n’a **pas besoin d’être le même** que celui utilisé pour la vaccination initiale. Par exemple, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné initialement avec le vaccin *Moderna* ou *AstraZeneca*.
 
 .. question:: Où me faire vacciner ?
     :level: 3
@@ -156,9 +165,9 @@
 .. injection:: pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire
 
 
-## La vaccination initiale (1<sup>re</sup> et 2<sup>e</sup> dose)
+## La vaccination initiale (schéma vaccinal à 1 ou 2 doses)
 
-.. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose ?
+.. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose lors de la vaccination initiale (primo-vaccination) ?
     :level: 3
 
     Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée entre 39 et 42 jours (soit 6 semaines) après la première. Pour accélerer la campagne de vaccination face au variant Delta, le délai entre les deux doses à été réduit. L’injection de la deuxième dose pourra avoir lieu **entre 21 et 49 jours** (soit 3 à 7 semaines) après la première.
@@ -190,7 +199,7 @@
     * **myocardites** ou **péricardites** survenues avant la vaccination et toujours évolutives.
 
 
-.. question:: Je suis cas contact, puis-je me faire vacciner (1<sup>re</sup> ou 2<sup>e</sup> dose) ?
+.. question:: Je suis cas contact, puis-je me faire vacciner ?
     :level: 3
 
      **Non.** Si vous êtes [cas contact](/cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, **vous ne devez pas vous faire vacciner**. Il faut d’abord vous assurer que vous n’avez pas été contaminé(e) en faisant un test 7 jours après votre dernier contact à risque. Si ce test de dépistage est négatif, alors vous pourrez vous faire vacciner.
@@ -202,13 +211,13 @@
     **Oui.** Si vous avez eu la Covid, une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum **2 mois après la maladie**, idéalement 6 mois pour une efficacité maximale.
 
 
-.. question:: J’ai déjà eu la Covid, comment le prouver et ne recevoir qu’une seule dose ?
+.. question:: J’ai déjà eu la Covid, comment le prouver et ne recevoir qu’une seule dose pour compléter mon schéma vaccinal initial ?
     :level: 3
 
     Lors de votre rendez-vous de vaccination, vous pourrez présenter soit un test de **dépistage positif** réalisé il y a 2 mois ou plus, soit un **test sérologique** (prise de sang qui recherche des anticorps) positif. Certains centres de vaccination proposent de faire un test sérologique rapide ou **TROD** lors du rendez-vous de première injection. Si ce test est positif, alors vous ne recevrez qu’une seule dose de vaccin. Bientôt, ces TROD seront disponibles dans tous les centres de vaccination.
 
 
-.. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> ?
+.. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> pour compléter mon schéma vaccinal initial ?
     :level: 3
 
     Cela dépend :
