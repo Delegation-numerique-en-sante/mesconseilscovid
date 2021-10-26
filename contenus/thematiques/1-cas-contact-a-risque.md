@@ -10,7 +10,7 @@
 
 - [Je suis cas contact d’une personne de mon foyer, que faire ?](/je-vis-avec-personne-covid-positive.html)
 
-- [Je suis cas contact, puis-je me faire vacciner ?](/je-veux-me-faire-vacciner.html#je-suis-cas-contact-puis-je-me-faire-vacciner-1-re-ou-2-e-dose)
+- [Je suis cas contact, puis-je me faire vacciner ?](/je-veux-me-faire-vacciner.html#je-suis-cas-contact-puis-je-me-faire-vacciner)
 
 </div>
 
