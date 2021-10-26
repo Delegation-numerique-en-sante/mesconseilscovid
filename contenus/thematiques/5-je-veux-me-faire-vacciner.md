@@ -44,10 +44,11 @@
 .. question:: Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
     
-    Oui. Même si elle est communément appelée 3<sup>e</sup> dose, cette dose de rappel concerne également les personnes qui ont finalisé leur schéma vaccinal initial (primo-vaccination) avec 1 seule dose : soit parce qu'elles ont été vaccinées avec le vaccin Janssen, soit parce qu'elles ont eu la Covid avant leur première injection de vaccin.
+    **Oui.** Même si elle est communément appelée 3<sup>e</sup> dose, cette dose de rappel concerne également les personnes qui ont finalisé leur schéma vaccinal initial (primo-vaccination) avec 1 seule dose : soit parce qu’elles ont été vaccinées avec le vaccin Janssen, soit parce qu’elles ont eu la Covid avant leur première injection de vaccin.
     
-    La campagne de rappel s'ouvre progressivement. Pour connaître la liste des publics éligibles aujourd'hui, [consultez notre réponse ci-dessus](#suis-je-concerné-par-la-dose-de-rappel,-dite-3<sup>e</sup>-dose-?)
-Pour connaître le délai à respecter avant la dose de rappel voir plus bas.
+    La campagne de rappel s’ouvre progressivement. Pour connaître la liste des publics éligibles aujourd’hui, [consultez notre réponse ci-dessus](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose).
+
+    Pour connaître le délai à respecter avant la dose de rappel [voir ci-dessous](#quel-delai-respecter-avant-la-dose-de-rappel-dite-3-e-dose).
 
 .. question:: Quel délai respecter avant la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
@@ -60,7 +61,7 @@ Pour connaître le délai à respecter avant la dose de rappel voir plus bas.
 
     * pour les personnes de **65 ans et plus** ou avec des **comorbidités** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves ou les **professionnels** et **bénévoles** des secteurs de la santé (*3<sup>e</sup> dose*) : au moins **6 mois** après la dernière injection de vaccin.
 
-    Si ce délai est respecté, vous pouvez prendre rendez-vous **dès maintenant** chez un **professionnel de santé** (médecin, pharmacien, infirmier…) ou dans un **centre de vaccination** (*voir plus bas*).
+    Si ce délai est respecté, vous pouvez prendre rendez-vous **dès maintenant** chez un **professionnel de santé** (médecin, pharmacien, infirmier…) ou dans un **centre de vaccination**.
 
     <div class="voir-aussi">
 
@@ -99,9 +100,9 @@ Pour connaître le délai à respecter avant la dose de rappel voir plus bas.
 .. question:: Quel est le vaccin administré pour la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
 
-    Le rappel est actuellement réalisé avec le **vaccin Pfizer** uniquement. Il pourra également être réalisé avec un vaccin *Moderna* « demi-dose » après validation par l’EMA (agence européenne du médicament) attendue autour du 25 octobre.
+    Le rappel est actuellement réalisé avec le **vaccin Pfizer** uniquement. Il pourra également être réalisé avec un vaccin *Moderna* « demi-dose » après validation par l’EMA (agence européenne du médicament) attendue autour du 30 octobre.
 
-    Le vaccin utilisé pour le rappel n’a **pas besoin d’être le même** que celui utilisé pour la vaccination initiale. Par exemple, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné initialement avec le vaccin *Moderna* ou *AstraZeneca*.
+    Le vaccin utilisé pour le rappel n’a **pas besoin d’être le même** que celui utilisé pour la vaccination initiale. Par exemple, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné(e) initialement avec le vaccin *Moderna* ou *AstraZeneca*.
 
 .. question:: Où me faire vacciner ?
     :level: 3
@@ -165,9 +166,9 @@ Pour connaître le délai à respecter avant la dose de rappel voir plus bas.
 .. injection:: pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire
 
 
-## La vaccination initiale (schéma vaccinal à 1 ou 2 doses)
+## La vaccination initiale (schéma vaccinal à 1 ou 2 doses)
 
-.. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose lors de la vaccination initiale (primo-vaccination) ?
+.. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose lors de la vaccination initiale (primo-vaccination) ?
     :level: 3
 
     Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée entre 39 et 42 jours (soit 6 semaines) après la première. Pour accélerer la campagne de vaccination face au variant Delta, le délai entre les deux doses à été réduit. L’injection de la deuxième dose pourra avoir lieu **entre 21 et 49 jours** (soit 3 à 7 semaines) après la première.
@@ -272,7 +273,7 @@ Pour connaître le délai à respecter avant la dose de rappel voir plus bas.
 
     **Non, la vaccination ne rend en aucun cas positif**, il n’y a pas de virus actif dans les vaccins. Vous pouvez ressentir des effets secondaires (fièvre, fatigue…) suite à la vaccination, mais vous n’êtes **pas contagieux**.
 
-    Si vous avez réalisé un [test de dépistage](/tests-de-depistage.html) après votre vaccination et qu’il est **positif**, cela n'est pas dû au vaccin. Cela signifie que vous avez été contaminé(e) avant ou après votre injection. Nous vous encourageons à vous isoler et à [décrire votre situation](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
+    Si vous avez réalisé un [test de dépistage](/tests-de-depistage.html) après votre vaccination et qu’il est **positif**, cela n’est pas dû au vaccin. Cela signifie que vous avez été contaminé(e) avant ou après votre injection. Nous vous encourageons à vous isoler et à [décrire votre situation](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
 
 
 ## Vaccination, grossesse et allaitement
