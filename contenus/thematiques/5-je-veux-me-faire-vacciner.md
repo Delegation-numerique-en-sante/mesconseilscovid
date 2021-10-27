@@ -31,6 +31,8 @@
 
     - Si vous avez eu la Covid **après votre dernière dose**, vous n’êtes **pas éligible** à ce rappel.
 
+    - Ce rappel est valable quel que soit le vaccin initialement reçu.
+
     </div>
 
     
