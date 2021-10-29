@@ -354,10 +354,11 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
  .. question:: Pourquoi vacciner mon enfant s'il n'est pas à risque de forme grave du covid ? 
     :level: 3   
 
-    La vaccination des jeunes présente plusieurs avantages pour eux, mais aussi pour la société dans son ensemble : 
-    * limiter les risques de formes graves et de covid long : il est vrai que les jeunes ont le plus souvent des formes bégnines du  covid, mais ils peuvent parfois développer des cas plus sévères ou même souffrir de symptômes persistants (covid long). 
-    * protéger les personnes vulnérables ou âgées : en se vaccinant, les jeunes peuvent encore être contaminés, mais ils sont moins contagieux.
-    * lutter contre le virus et sortir de la pandémie :  en se vaccinant, les jeunes limitent la transmission du covid parmis la population générale.  Ils **freinent son développement et ses mutations**.
+    Il est vrai que les jeunes présentent le plus souvent des formes bégnines du covid, mais ils peuvent parfois développer des cas plus sévères ou souffrir de symptômes persistants (covid long). Le vaccin permet alors de limiter efficacement ces risques.
+    
+    En se vaccinant, les jeunes participent aussi à l'effort collectif de santé publique : 
+    * ils sont moins contagieux et risquent moins de contaminer les personnes vulnérables ou âgées qui les entourent, comme leurs grands-parents.
+    * ils ne font plus circuler le covid au sein de la population générale. Cela  **freine son développement et ses mutations**.
     
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
     :level: 3
