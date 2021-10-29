@@ -332,7 +332,7 @@
 
     Si vous n’êtes pas encore complètement vacciné, vous pouvez présenter soit un **test de dépistage négatif** de **moins de 72 h**, soit un **test de dépistage positif** de plus de **11 jours** et de moins de **6 mois**.
 
-    Si vous ne [pouvez-pas vous faire vacciner](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-sanitaire) (en raison d’une **contre-indication médicale**), vous pouvez présenter le **certificat médical** établi par votre médecin.
+    Si vous ne [pouvez-pas vous faire vacciner](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-sanitaire) (en raison d’une **contre-indication médicale**), vous pouvez faire une demande de pass sanitaire auprès de l'Assurance maladie, sur la base du **certificat médical** (formulaire) établi par votre médecin.
 
     <div class="voir-aussi">
 
@@ -357,7 +357,7 @@
 .. question:: Je ne peux pas me faire vacciner, comment obtenir un pass sanitaire ?
     :level: 3
 
-    En cas de **contre-indication médicale** (voir la [liste des contre-indications à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination)), vous pouvez demander à votre médecin de vous faire un **certificat médical**, qui fera office de **pass sanitaire**.
+    En cas de **contre-indication médicale** (voir la [liste des contre-indications à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination)), vous pouvez demander à votre médecin d'établir un **certificat médical** (formulaire Cerfa dédié).Il faudra envoyer le premier volet du certificat à votre **caisse d'assurance maladie.** Après vérifications, elle vous adressera votre **certificat de contre-indication à la vaccination** avec **QR code,** valable comme pass sanitaire en **France uniquement.** 
 
     Attention, si vous ne pouvez pas vous faire vacciner parce que **vous avez eu la Covid** il y a moins de **6 mois**, votre [**certificat de rétablissement**](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) (test de dépistage positif) avec **QR code** fera office de pass sanitaire.
 
