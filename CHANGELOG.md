@@ -1,5 +1,12 @@
 # Changelog
 
+## 2021-10-29
+
+* précisions sur la campagne vaccinale pour la grippe
+* précisions sur la signification du schéma vaccinal complet
+* mise à jour de la date de prolongement éventuelle du Pass sanitaire
+* détails pour obtenir un Pass sanitaire à partir d’un certificat médical de contre-indication
+
 ## 2021-10-22
 
 * corrections mineures et lien cassé
