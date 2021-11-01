@@ -16,7 +16,7 @@ MarkupSafe==2.0.1
 minicli==0.5.0
 mistune==2.0.0rc1
 more-itertools==8.10.0
-packaging==21.0
+packaging==21.2
 pathtools==0.1.2
 pluggy==1.0.0
 py==1.10.0
