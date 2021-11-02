@@ -16,14 +16,14 @@
 .. question:: Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
 
-    Avec le temps, l’efficacité de la protection du vaccin contre l’infection peut diminuer, en particulier face au variant Delta. Pour « booster » cette protection, la Haute autorité de santé (HAS) recommande une **injection supplémentaire** (2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas) de ***Pfizer,** quelque soit le vaccin reçu initialement **(Moderna, Pfizer, AstraZeneca ou Janssen)** pour :
+    Avec le temps, l’efficacité de la protection du vaccin contre l’infection peut diminuer, en particulier face au variant Delta. Pour « booster » cette protection, la Haute autorité de santé (HAS) recommande une **injection supplémentaire** (2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas) du vaccin **Pfizer**, quel que soit le vaccin reçu initialement **(Moderna, Pfizer, AstraZeneca ou Janssen)** pour :
 
     * les résident(e)s des <abbr title="Établissement d’Hébergement pour Personnes Âgées Dépendantes">**EHPAD**</abbr> et <abbr title="Unités de Soins de Longue Durée">**USLD**</abbr>,
     * les personnes de **65 ans et plus**,
     * les personnes avec des **comorbidités** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves de Covid,
     * les personnes **sévèrement immunodéprimées** et les personnes de plus de 18 ans de leur **entourage**,
     * les **professionnels** et **bénévoles** des secteurs de la santé, du médico-social et du transport sanitaire,
-    * les personnes âgées **d'au moins 18 ans** vaccinées avec le **vaccin Janssen**.
+    * les personnes âgées **d’au moins 18 ans** vaccinées avec le **vaccin Janssen**.
 
     <div class="conseil conseil-jaune">
 
