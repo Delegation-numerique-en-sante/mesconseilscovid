@@ -10,4 +10,7 @@ setup(
     packages=["mesconseilscovid_feedback"],
     python_requires=">=3.7",
     install_requires=["roll", "pykeybasebot", "user-agents"],
+    extras_require={
+        "prod": ["gunicorn"],
+    },
 )
