@@ -351,15 +351,16 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. section:: La vaccination contre la Covid
     :tags: 12 à 18 ans
 
- .. question:: Pourquoi vacciner mon enfant s'il n'est pas à risque de forme grave du covid ? 
+ .. question:: Pourquoi vacciner mon enfant s'il n’est pas à risque de forme grave du Covid ? 
     :level: 3   
 
-    Il est vrai que les jeunes présentent le plus souvent des formes bégnines du covid, mais ils peuvent parfois développer des cas plus sévères ou souffrir de symptômes persistants (covid long). Le vaccin permet alors de limiter efficacement ces risques.
+    Il est vrai que les jeunes présentent le plus souvent des formes bégnines de Covid, mais ils peuvent parfois développer des cas plus sévères ou souffrir de symptômes persistants (Covid long). Le vaccin permet alors de limiter efficacement ces risques.
     
-    En se vaccinant, les jeunes participent aussi à l'effort collectif de santé publique : 
-    * ils sont moins contagieux et risquent moins de contaminer les personnes vulnérables ou âgées qui les entourent, comme leurs grands-parents.
-    * ils ne font plus circuler le covid au sein de la population générale. Cela  **freine son développement et ses mutations**.
-    
+    En se vaccinant, les jeunes participent aussi à l’effort collectif de santé publique :
+
+    * ils sont moins contagieux et risquent donc moins de contaminer les personnes vulnérables ou âgées qui les entourent, comme leurs grands-parents ;
+    * ils ne font plus circuler la Covid au sein de la population générale : cela **freine son développement et ses mutations**.
+
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
     :level: 3
 
