@@ -1,0 +1,14 @@
+httpx
+jinja2
+git+https://github.com/ronnix/python-livereload.git@5bab70d80462f0a7424a2b0b85145fcaa7a645a5#egg=livereload
+minicli
+mistune>=2.0.0rc1
+more-itertools
+pyinotify==0.9.6; platform_system == 'Linux'
+pytest
+python-slugify
+pytz
+regex
+selectolax
+tox
+watchdog
