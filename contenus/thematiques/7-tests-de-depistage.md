@@ -234,12 +234,6 @@
 .. question:: Qu’est-ce qu’un autotest ?
     :level: 4
 
-    <div class="conseil conseil-jaune">
-
-    À compter du **15 octobre 2021**, un autotest réalisé sous la supervision d’un professionnel de santé ne pourra plus tenir lieu de pass sanitaire.
-
-    </div>
-
     Des autotests sont disponibles en pharmacie. Ce test est un prélèvement nasal à réaliser chez soi. Ils ne sont pas pris en charge par l’Assurance maladie sauf dans le cas des professionnels exerçant auprès de personnes vulnérables (âgées, handicapées…) et dans la limite de 10 par mois.
 
     Il ne faut pas y avoir recours lorsque :
@@ -248,5 +242,7 @@
     - on a eu un contact à risque récent (cas contact).
 
     Ce type de test est utile à condition de le pratiquer régulièrement (plusieurs fois par semaine).
+    
+    Pour être valable comme **pass sanitaire,** l'autotest doit être réalisé sous la **supervision d'un professionnel de santé.**
 
 </div>
