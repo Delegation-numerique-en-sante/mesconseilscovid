@@ -19,7 +19,7 @@
 
     En France, le pass sanitaire peut être, **selon votre situation** :
 
-    - un [test de dépistage négatif](#comment-obtenir-un-certificat-de-depistage-avec-qr-code) : **test PCR** ou **test antigénique** datant de moins de **72 h** (**sauf** pour les voyages en **Corse** et **Dom-Tom** : le test antigénique est valable **48 h**) ;
+    - un [test de dépistage négatif](#comment-obtenir-un-certificat-de-depistage-avec-qr-code) : **test PCR** ou **test antigénique** ou **autotest supervisé** par un **professionnel de santé,** datant de moins de **72 h** (**sauf** pour les voyages en **Corse** et **Dom-Tom** : les autotests ne sont pas acceptés et le test antigénique est valable **48 h**) ;
 
     - un [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) : un test de dépistage **positif**, **PCR** ou **antigénique** de **plus de 11 jours** et **moins de 6 mois** ;
 
@@ -28,8 +28,6 @@
     <div class="conseil conseil-jaune">
 
     - Ces documents sont valables **à condition qu’ils comportent un QR code**.
-
-    - À compter du **15 octobre 2021**, un **autotest** réalisé sous la supervision d’un professionnel de santé ne pourra **plus** tenir lieu de pass sanitaire.
 
     - Les **tests sérologiques** ne sont **pas** des pass sanitaires.
 
@@ -264,9 +262,9 @@
 
     Vous devez **attendre 28 jours** (4 semaines) après votre injection pour que votre schéma vaccinal soit complet. Vous ne pourrez donc pas faire valoir votre attestation de vaccination comme pass sanitaire pour l’instant.
 
-    En attendant, un **test de dépistage négatif** (test PCR ou antigénique) datant de **moins de 72 h** fera office de pass sanitaire.
+    En attendant, un **test de dépistage négatif** (test PCR, antigénique ou autotest supervisé par un professionnel de santé) datant de **moins de 72 h** fera office de pass sanitaire.
 
-    *Attention : pour voyager vers la Corse ou l’Outre-mer, un test négatif datant de moins de 48 h sera demandé.*
+    *Attention : pour voyager vers la Corse ou l’Outre-mer, les autotests ne seront pas acceptés et le test antigénique négatif devra dater de moins de 48 h.*
 
     </div>
 
@@ -274,9 +272,9 @@
 
     Votre schéma vaccinal est **incomplet** tant que vous n’avez pas reçu la dose de rappel (2<sup>e</sup> dose). Vous ne pourrez donc pas le faire valoir comme pass sanitaire pour l’instant.
 
-    En attendant, un **test de dépistage négatif** (test PCR ou antigénique) datant de **moins de 72 h** fera office de pass sanitaire.
+    En attendant, un **test de dépistage négatif** (test PCR, antigénique ou autotest supervisé par un professionnel de santé) datant de **moins de 72 h** fera office de pass sanitaire.
 
-    *Attention : pour voyager vers la Corse ou l’Outre-mer, un test négatif datant de moins de 48 h sera demandé.*
+    *Attention : pour voyager vers la Corse ou l’Outre-mer, les autotests ne seront pas acceptés et le test antigénique devra dater de moins de 48 h.*
 
     </div>
 
@@ -284,7 +282,7 @@
 
     Vous avez **2 possibilités** pour obtenir un pass sanitaire :
 
-    1. présenter un **test de dépistage négatif** (test PCR ou antigénique) de moins de **72 h** (*pour voyager vers la Corse ou l’Outre-mer, il devra dater de moins de 48 h*) ;
+    1. présenter un **test de dépistage négatif** (test PCR, antigénique ou autotest supervisé par un professionnel de santé) de moins de **72 h** (*pour voyager vers la Corse ou l’Outre-mer, mes autotests ne seront pas acceptés et le test antigénique devra dater de moins de 48 h.*) ;
 
     2. vous faire **vacciner** : l’attestation de vaccination fera office de pass sanitaire **7 jours après la 2<sup>e</sup> dose**.
 
@@ -297,7 +295,7 @@
 
     1. présenter votre **test de dépistage positif** (aussi appelé *certificat de rétablissement*), datant de plus de **11 jours** et de moins de **6 mois**, et comportant un QR code ;
 
-    2. présenter un **test de dépistage négatif** de moins de **72 h** (*pour voyager vers la Corse ou l’Outre-mer, il devra dater de moins de 48 h*) ;
+    2. présenter un **test de dépistage négatif** de moins de **72 h** (*pour voyager vers la Corse ou l’Outre-mer, es autotests ne seront pas acceptés et le test antigénique devra dater de moins de 48 h.*) ;
 
     3. vous faire **vacciner** (comme vous avez déjà eu la Covid, **une seule dose** sera nécessaire, mais il est recommandé d’attendre 2 mois minimum après la guérison, idéalement jusqu’à 6 mois) : l’attestation de vaccination fera office de pass sanitaire **7 jours** après cette dose.
 
@@ -307,7 +305,7 @@
 
     Vous avez **2 possibilités** pour obtenir un pass sanitaire :
 
-    1. présenter un **test de dépistage négatif** de moins de **72 h** (*pour voyager vers la Corse ou l’Outre-mer, il devra dater de moins de 48 h*) ;
+    1. présenter un **test de dépistage négatif** de moins de **72 h** (*pour voyager vers la Corse ou l’Outre-mer, es autotests ne seront pas acceptés et le test antigénique devra dater de moins de 48 h.*) ;
 
     2. vous faire **vacciner** (comme vous avez déjà eu la Covid, **une seule dose** sera nécessaire) : l’attestation de vaccination fera office de pass sanitaire **7 jours** après cette dose.
 
@@ -528,7 +526,7 @@
 .. question:: Comment obtenir un certificat de dépistage avec QR code ?
     :level: 3
 
-    Suite à un test **PCR** ou **antigénique**, un courriel (*e-mail*) ou un SMS vous est adressé pour vous inviter à **télécharger le certificat de dépistage** avec QR code sur le [**portail SI-DEP**](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
+    Suite à un test de dépistage, un courriel (*e-mail*) ou un SMS vous est adressé pour vous inviter à **télécharger le certificat de dépistage** avec QR code sur le [**portail SI-DEP**](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
 
     Nous vous conseillons de **le télécharger immédiatement** pour le conserver aussi longtemps que nécessaire.
 
