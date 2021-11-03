@@ -33,7 +33,7 @@
 
     </div>
 
-    
+
     <div class="voir-aussi">
 
     - [Quel délai respecter avant la dose de rappel, dite 3<sup>e</sup> dose ?](#quel-delai-respecter-avant-la-dose-de-rappel-dite-3-e-dose)
@@ -43,9 +43,9 @@
 
 .. question:: Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
-    
-    **Oui.** Même si elle est communément appelée 3<sup>e</sup> dose, cette dose de rappel concerne également les personnes qui ont finalisé leur schéma vaccinal initial (primo-vaccination) avec 1 seule dose : soit parce qu’elles ont été vaccinées avec le vaccin Janssen, soit parce qu’elles ont eu la Covid avant leur première injection de vaccin.
-    
+
+    **Oui**. Même si elle est communément appelée 3<sup>e</sup> dose, cette dose de rappel concerne également les personnes qui ont finalisé leur schéma vaccinal initial (primo-vaccination) avec 1 seule dose : soit parce qu’elles ont été vaccinées avec le vaccin Janssen, soit parce qu’elles ont eu la Covid avant leur première injection de vaccin.
+
     La campagne de rappel s’ouvre progressivement. Pour connaître la liste des publics éligibles aujourd’hui, [consultez notre réponse ci-dessus](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose).
 
     Pour connaître le délai à respecter avant la dose de rappel [voir ci-dessous](#quel-delai-respecter-avant-la-dose-de-rappel-dite-3-e-dose).
@@ -203,13 +203,13 @@
 .. question:: Je suis cas contact, puis-je me faire vacciner ?
     :level: 3
 
-     **Non.** Si vous êtes [cas contact](/cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, **vous ne devez pas vous faire vacciner**. Il faut d’abord vous assurer que vous n’avez pas été contaminé(e) en faisant un test 7 jours après votre dernier contact à risque. Si ce test de dépistage est négatif, alors vous pourrez vous faire vacciner.
+     **Non**. Si vous êtes [cas contact](/cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, **vous ne devez pas vous faire vacciner**. Il faut d’abord vous assurer que vous n’avez pas été contaminé(e) en faisant un test 7 jours après votre dernier contact à risque. Si ce test de dépistage est négatif, alors vous pourrez vous faire vacciner.
 
 
 .. question:: J’ai déjà eu la Covid, dois-je me faire vacciner (1<sup>re</sup> dose) ?
     :level: 3
 
-    **Oui.** Si vous avez eu la Covid, une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum **2 mois après la maladie**, idéalement 6 mois pour une efficacité maximale.
+    **Oui**. Si vous avez eu la Covid, une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum **2 mois après la maladie**, idéalement 6 mois pour une efficacité maximale.
 
 
 .. question:: J’ai déjà eu la Covid, comment le prouver et ne recevoir qu’une seule dose pour compléter mon schéma vaccinal initial ?
@@ -281,7 +281,7 @@
 .. question:: Je suis enceinte, puis-je me faire vacciner ?
     :level: 3
 
-    **Oui,** d’autant que la grossesse vous expose à des formes plus sévères de la Covid. Il n’y a pas de contre-indication à la vaccination des femmes enceintes et vous pouvez vous faire vacciner avec un vaccin à ARN messager (Pfizer, Moderna) **dès le premier trimestre de grossesse**.
+    **Oui**, d’autant que la grossesse vous expose à des formes plus sévères de la Covid. Il n’y a pas de contre-indication à la vaccination des femmes enceintes et vous pouvez vous faire vacciner avec un vaccin à ARN messager (Pfizer, Moderna) **dès le premier trimestre de grossesse**.
 
     L’**obligation vaccinale** requise pour certaines professions (santé, médico-social, restauration…) n’est pas exigée des femmes enceintes avant le **2<sup>e</sup> trimestre de grossesse**.
 

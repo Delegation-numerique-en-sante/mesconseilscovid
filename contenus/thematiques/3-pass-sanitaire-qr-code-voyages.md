@@ -19,7 +19,7 @@
 
     En France, le pass sanitaire peut être, **selon votre situation** :
 
-    - un [test de dépistage négatif](#comment-obtenir-un-certificat-de-depistage-avec-qr-code) : **test PCR** ou **test antigénique** ou **autotest supervisé** par un **professionnel de santé,** datant de moins de **72 h** (**sauf** pour les voyages en **Corse** et **Dom-Tom** : les autotests ne sont pas acceptés et le test antigénique est valable **48 h**) ;
+    - un [test de dépistage négatif](#comment-obtenir-un-certificat-de-depistage-avec-qr-code) : **test PCR** ou **test antigénique** ou **autotest supervisé** par un **professionnel de santé**, datant de moins de **72 h** (**sauf** pour les voyages en **Corse** et **Dom-Tom** : les autotests ne sont pas acceptés et le test antigénique est valable **48 h**) ;
 
     - un [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) : un test de dépistage **positif**, **PCR** ou **antigénique** de **plus de 11 jours** et **moins de 6 mois** ;
 
@@ -326,7 +326,7 @@
 .. question:: Est-ce que je dois être vacciné pour avoir un pass sanitaire ?
     :level: 3
 
-    **Non.** La vaccination n’est pas la seule façon d’obtenir un pass sanitaire.
+    **Non**. La vaccination n’est pas la seule façon d’obtenir un pass sanitaire.
 
     Si vous n’êtes pas encore complètement vacciné, vous pouvez présenter soit un **test de dépistage négatif** de **moins de 72 h**, soit un **test de dépistage positif** de plus de **11 jours** et de moins de **6 mois**.
 
@@ -342,7 +342,7 @@
 .. question:: Est-ce que la dose de rappel, dite 3<sup>e</sup> dose, est obligatoire pour le pass sanitaire ?
     :level: 3
 
-    **Non.** Votre pass sanitaire **reste valable**, même si vous êtes éligible à une dose de rappel (dite 3<sup>e</sup> dose) et que vous ne l’avez pas encore reçue.
+    **Non**. Votre pass sanitaire **reste valable**, même si vous êtes éligible à une dose de rappel (dite 3<sup>e</sup> dose) et que vous ne l’avez pas encore reçue.
 
     <div class="voir-aussi">
 
@@ -430,7 +430,7 @@
 
     Cela dépend de votre **secteur d’activité**.
 
-    Vous devez présenter un pass sanitaire valide à votre employeur si vous travaillez dans un lieu où il est **exigé des clients ou des usagers** (restaurant, cinéma, parc d’attraction…) et que vous êtes en **contact avec le public.**
+    Vous devez présenter un pass sanitaire valide à votre employeur si vous travaillez dans un lieu où il est **exigé des clients ou des usagers** (restaurant, cinéma, parc d’attraction…) et que vous êtes **en contact avec le public**.
 
     <div class="exemple">
 

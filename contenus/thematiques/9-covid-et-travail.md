@@ -112,7 +112,7 @@
 
     * **faire respecter** les mesures recommandées par les autorités sanitaires, comme les **gestes barrières** (port du masque, distanciation physique…) ;
     * encourager les salarié(e)s à s’**isoler** et se faire **tester** lorsqu’ils ont eu un contact à risque ;
-    * mettre en place des **mesures de prévention,** (nettoyage régulier des surfaces, jauge, télétravail…) en concertation avec les **représentants du personnel** (<abbr title="Comité social et économique">CSE</abbr>) ou la **médecine du travail** ;
+    * mettre en place des **mesures de prévention** (nettoyage régulier des surfaces, jauge, télétravail…) en concertation avec les **représentants du personnel** (<abbr title="Comité social et économique">CSE</abbr>) ou la **médecine du travail** ;
     * mettre à disposition des **moyens de protection** (savon, gel hydro-alcoolique, masques…).
 
     <div class="voir-aussi">
@@ -142,7 +142,7 @@
     * le service de **santé au travail** (médecine du travail) ;
     * l’**inspection du travail** au <a href="tel:0806000126">0 806 000 126</a> (service **gratuit** et **anonyme**).
 
-    Si votre employeur n’**applique pas** les **recommandations** des autorités sanitaires et que vous estimez que ces manquements vous font courir un **danger grave et imminent,** alors vous pouvez quitter votre poste en faisant valoir votre **droit de retrait**.
+    Si votre employeur **n’applique pas les recommandations** des autorités sanitaires et que vous estimez que ces manquements vous font courir un **danger grave et imminent**, alors vous pouvez quitter votre poste en faisant valoir votre **droit de retrait**.
 
 
 .. question:: Peut-on organiser des moments de convivialité ?
@@ -151,7 +151,7 @@
     Les moments de convivialité (pot de bienvenue, pot de départ…) peuvent être organisés dans le respect des **gestes barrières**. Il est fortement conseillé de :
 
     * se réunir **en extérieur** ou dans un lieu ventilé ou aéré ;
-    * porter un **masque** et respecter la **distance physique,** même en extérieur ;
+    * porter un **masque** et respecter la **distance physique**, même en extérieur ;
     * proscrire les embrassades.
 
 
@@ -160,7 +160,7 @@
 .. question:: Comment obtenir un arrêt maladie pour une situation liée à la Covid ?
     :level: 3
 
-    - Si vous êtes **cas contact** et que vous n’êtes **pas vacciné,** et que vous n’avez pas eu la Covid dans les 2 deniers mois, alors vous devez vous isoler. Vous pouvez demander un arrêt de travail sans délai de carence sur le site [declare.ameli.fr](https://declare.ameli.fr/).
+    - Si vous êtes **cas contact** et que vous n’êtes **pas vacciné**, et que vous n’avez pas eu la Covid dans les 2 deniers mois, alors vous devez vous isoler. Vous pouvez demander un arrêt de travail sans délai de carence sur le site [declare.ameli.fr](https://declare.ameli.fr/).
 
     - En revanche, si vous avez été **testé positif à la Covid, l’Assurance Maladie vous contactera** pour vous fournir un arrêt de travail.
 
@@ -168,7 +168,7 @@
 .. question:: Mon employeur peut-il refuser mon arrêt de travail ou mon certificat d’isolement ?
     :level: 3
 
-    **Non.** Votre arrêt maladie ou votre certificat d’isolement ne peut pas être refusé par votre employeur.
+    **Non**. Votre arrêt maladie ou votre certificat d’isolement ne peut pas être refusé par votre employeur.
 
     <div class="conseil conseil-jaune">
 
@@ -180,7 +180,7 @@
 .. question:: Mon employeur peut-il me licencier à cause de mon arrêt maladie ?
     :level: 3
 
-    **Non.** Un employeur n’a pas le droit de licencier un salarié en raison de son état de santé (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042026716/">art. L. 1132–1 du Code du travail</a>). Le salarié licencié pour cette raison pourra saisir les prud’hommes pour licenciement abusif.
+    **Non**. Un employeur n’a pas le droit de licencier un salarié en raison de son état de santé (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042026716/">art. L. 1132–1 du Code du travail</a>). Le salarié licencié pour cette raison pourra saisir les prud’hommes pour licenciement abusif.
 
     <div class="conseil conseil-jaune">
 
@@ -198,7 +198,7 @@
 .. question:: Mon employeur peut-il exiger un certificat attestant de mon rétablissement de la Covid avant mon retour au travail ?
     :level: 3
 
-    **Non.** Si vous avez eu la Covid et que vous avez respecté la durée de votre isolement (10 jours au moins après le début de vos symptômes ou de votre test positif et que vous ne présentez plus de fièvre), alors vous pouvez retourner au travail sans présenter de certificat ou de nouveau test de dépistage.
+    **Non**. Si vous avez eu la Covid et que vous avez respecté la durée de votre isolement (10 jours au moins après le début de vos symptômes ou de votre test positif et que vous ne présentez plus de fièvre), alors vous pouvez retourner au travail sans présenter de certificat ou de nouveau test de dépistage.
 
 
 .. question:: Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?
@@ -210,7 +210,7 @@
 .. question:: Quel dispositif est prévu pour les personnes particulièrement vulnérables à la Covid et qui ne peuvent pas télétravailler ?
     :level: 3
 
-    Depuis le **21 septembre 2021**, vous pouvez bénéficier d’un régime d’**activité partielle** et d’une **indemnisation,** si vous êtes dans l’une de ces situations :
+    Depuis le **21 septembre 2021**, vous pouvez bénéficier d’un régime d’**activité partielle** et d’une **indemnisation** si vous êtes dans l’une de ces situations :
 
     1. votre poste vous met au **contact de personnes malades** (services hospitaliers…) **et** vous souffrez d’une des **pathologies** listées dans [l’avis du Haut conseil de la santé publique](https://www.hcsp.fr/explore.cgi/avisrapportsdomaine?clefr=942) qui vous rend particulièrement **vulnérable** à la Covid, comme par exemple :
         * les pathologies cardio-vasculaires et pathologies respiratoires chroniques (dont l’asthme sévère),
@@ -240,7 +240,7 @@
 .. question:: En tant que salarié, puis-je m’absenter pour aller à mon rendez-vous de vaccination contre la Covid ?
     :level: 3
 
-    **Oui.** Cette absence est considérée comme un temps de **travail effectif.** Elle n’entraîne pas la diminution de la rémunération et ne peut pas être récupérée par votre employeur.
+    **Oui**. Cette absence est considérée comme un temps de **travail effectif**. Elle n’entraîne pas la diminution de la rémunération et ne peut pas être récupérée par votre employeur.
 
     <div class="voir-aussi">
 
@@ -252,7 +252,7 @@
 .. question:: En tant que salarié(e), puis-je m’absenter pour acompagner mon enfant mineur ou un majeur protégé (tutelle, curatelle, etc) à son rendez-vous de vaccination contre la Covid ?
     :level: 3
 
-    **Oui.** Votre employeur pourra vous demander le justificatif de rendez-vous vaccinal.
+    **Oui**. Votre employeur pourra vous demander le justificatif de rendez-vous vaccinal.
 
     <div class="voir-aussi">
 
