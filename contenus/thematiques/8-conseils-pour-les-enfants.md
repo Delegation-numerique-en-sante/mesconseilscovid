@@ -38,7 +38,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
 
     </div>
-    
+
 .. question:: Que se passe-t-il si un élève est testé positif dans la classe de mon enfant ?
     :level: 3
 
@@ -170,8 +170,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
 
     </div>
-    
-    
+
+
 .. question:: Est-ce que mon enfant doit porter le masque ?
     :level: 3
 
@@ -335,7 +335,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Est-ce que mon enfant a besoin du pass sanitaire pour aller à l’école ?
     :level: 3
 
-    **Non.** Le pass sanitaire n’est **pas obligatoire** pour accéder aux établissements d’enseignement, écoles, collèges ou lycées.
+    **Non**. Le pass sanitaire n’est **pas obligatoire** pour accéder aux établissements d’enseignement, écoles, collèges ou lycées.
 
 
     <div class="voir-aussi">
@@ -370,7 +370,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Le mineur doit-il donner son accord ?
     :level: 3
 
-    **Oui.** Au cours de l’entretien préalable à la vaccination, le professionnel de santé donnera à l’adolescent(e) toutes les informations de façon claire et adaptée. Il recueillera ensuite son **consentement oral** avant de procéder à l’injection.
+    **Oui**. Au cours de l’entretien préalable à la vaccination, le professionnel de santé donnera à l’adolescent(e) toutes les informations de façon claire et adaptée. Il recueillera ensuite son **consentement oral** avant de procéder à l’injection.
 
 
 .. question:: Où faire vacciner un mineur et avec quel vaccin ?
@@ -378,7 +378,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Les adolescent(e)s âgé(e)s de 12 ans et plus peuvent-être vacciné(e)s :
 
-    * dans un **centre de vaccination** et dans certains **établissements scolaires,** avec un vaccin *Pfizer-BioNTech* ;
+    * dans un **centre de vaccination** et dans certains **établissements scolaires**, avec un vaccin *Pfizer-BioNTech* ;
 
     * chez votre **médecin traitant**, en cabinet infirmier, ou en pharmacie avec un vaccin *Moderna*.
 
@@ -392,7 +392,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Les mineurs reçoivent-ils le même nombre de doses que les adultes ?
     :level: 3
 
-    **Oui.** Comme pour les adultes, les mineurs reçoivent :
+    **Oui**. Comme pour les adultes, les mineurs reçoivent :
 
     * **une seule dose**, s’ils ont déjà été contaminés à la Covid (dans ce cas, il faut attendre **au minimum 2 mois** après le test positif avant de se faire vacciner) ;
     * **deux doses**, s’ils n’ont pas déjà été contaminés par la Covid.
@@ -431,10 +431,10 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: La vaccination des mineurs sera-t-elle obligatoire pour obtenir le « pass sanitaire » ?
     :level: 3
 
-    **Non.** Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « pass sanitaire » utilisable en France et pour les voyages en Union européenne :
+    **Non**. Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « pass sanitaire » utilisable en France et pour les voyages en Union européenne :
 
     * l’**attestation de vaccination complète** (toutes les doses et respect du délai de 7 jours après la dernière dose en France, ou 14 jours pour voyager à l’étranger) ;
-    * un **test PCR ou antigénique négatif**, ou un **auto-test négatif** réalisé sous la supervision d’un professionnel de santé, de moins de 72 h (ou 48 h pour les voyages en Corse et DOM-TOM) ;
+    * un **test PCR ou antigénique négatif**, ou un **autotest négatif** réalisé sous la supervision d’un professionnel de santé, de moins de 72 h (ou 48 h pour les voyages en Corse et DOM-TOM) ;
     * un **test PCR positif** de plus de 11 jours et moins de 6 mois.
 
     Par ailleurs, le ou la mineur(e) non-vacciné(e) accompagnant ses parents vaccinés lors d’un voyage bénéficiera des mêmes facilités qu’eux. Par exemple, un(e) mineur(e) non-vacciné(e) pourra accompagner ses parents vaccinés lors d’un voyage dans un [pays classé orange](https://www.gouvernement.fr/voyager-depuis-et-vers-l-etranger-mode-d-emploi) sans justifier d’un motif impérieux pour s’y rendre.
@@ -462,36 +462,36 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 .. question:: Où faire tester mon enfant ?
     :level: 3
-    
+
     [Cliquez ici pour trouver un lieu de dépistage près de chez vous](https://www.sante.fr/cf/centres-depistage-covid.html) sur le site sante.fr.
-    
+
     <div class="voir-aussi">
-        
+
     - En savoir plus sur les [types de tests de dépistage](/tests-de-depistage.html) et trouver celui adapté à la situation de votre enfant.
-     
+
     </div>
-    
+
 .. question:: Que faire si mon enfant est positif à la Covid ?
     :level: 3
-    
+
     Si votre enfant a été testé **positif** à la Covid, il doit rester **isolé** au moins **10 jours** à partir de la date du début de ses symptômes, ou du test positif s’il est asymptomatique.
     Les autres membres du foyer sont considérés comme **cas contact** et doivent s’isoler s’ils ne sont pas vaccinés.
-    
+
     <div class="voir-aussi">
 
     - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine)
 
     - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
-     
+
     - [Je vis avec une personne positive, que dois-je faire ?](/je-vis-avec-personne-covid-positive.html)
-    
+
     </div>
 
 .. question:: Quels sont les symptômes de la Covid chez les enfants ?
-    :level: 3    
-    
+    :level: 3
+
     Les enfants ont généralement des **symptômes légers** et peu spécifiques :
-    
+
     * rhume ;
     * toux ;
     * maux de gorge ;
@@ -499,9 +499,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * symptômes gastro-intestinaux (diahrrée, nausées, vomissement…) ;
     * perte d’appétit ;
     * fatigue.
-    
+
     Si votre enfant est malade, il ne doit pas aller à l’école. Il est préférable de **téléphoner à votre médecin traitant** au lieu de vous déplacer spontanément à son cabinet.
-    
+
     <div class="voir-aussi">
 
     - [Où faire tester mon enfant ?](#ou-faire-tester-mon-enfant)
@@ -513,9 +513,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 .. question:: Les tests sont-ils payants ou soumis à la présentation d’une prescription médicale (ordonnance) pour les mineurs ?
     :level: 3
-    
-    **Non.** Pour les mineurs, les tests de dépistages sont gratuits (sauf les autotest) et réalisés sans prescription médicale (ordonnance).
-    
+
+    **Non**. Pour les mineurs, les tests de dépistages sont gratuits (sauf les autotest) et réalisés sans prescription médicale (ordonnance).
+
 .. question:: Les tests sont-ils dangereux pour les enfants ?
     :level: 3
 
@@ -612,7 +612,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Les enfants peuvent-ils être gardés par des personnes extérieures au foyer, par exemple les grands-parents ?
     :level: 3
 
-    **Oui,** si ces personnes et l’enfant ne sont pas malades, et en appliquant les **mesures de prévention** suivantes :
+    **Oui**, si ces personnes et l’enfant ne sont pas malades, et en appliquant les **mesures de prévention** suivantes :
 
     * respecter les **gestes barrières** : se laver régulièrement les mains à l’eau et au savon *avant* de s’occuper de l’enfant, mais aussi *après* ;
     * porter le **masque** lors d’un contact rapproché (enfant dans les bras…).
@@ -648,7 +648,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Puis-je continuer à allaiter mon enfant si je ressens des symptômes ou si je suis positive à la Covid ?
     :level: 3
 
-    **Oui.** Le virus ne se transmet pas par le lait maternel, vous pouvez donc continuer à allaiter même en étant positive à la Covid. Cependant, il faut respecter certaines **précautions** pour ne pas transmettre le virus à votre enfant autrement :
+    **Oui**. Le virus ne se transmet pas par le lait maternel, vous pouvez donc continuer à allaiter même en étant positive à la Covid. Cependant, il faut respecter certaines **précautions** pour ne pas transmettre le virus à votre enfant autrement :
     * **lavez-vous les mains** avec du savon ou du gel hydroalcoolique avant de toucher le nourrisson ;
     * portez un **masque** dès que vous êtes en présence de votre nourrisson et particulièrement pendant l’allaitement ;
     * **désinfectez** systématiquement les surfaces et objets que vous avez touché et qui pourraient entrer en contact avec le nourrisson (table à langer, tétine…) ;
@@ -658,9 +658,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
     :level: 3
 
-    Le port du masque est recommandé **à partir de l’âge de 6 ans.**
+    Le port du masque est recommandé **à partir de l’âge de 6 ans**.
 
-    Pour plus d’informations sur **le port du masque,** vous pouvez consulter les ressources ci-dessous :
+    Pour plus d’informations sur **le port du masque**, vous pouvez consulter les ressources ci-dessous :
 
     <div class="voir-aussi">
 
@@ -674,7 +674,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: À partir de quel âge peut-on mettre du gel hydro-alcoolique sur les mains d’un enfant ?
     :level: 3
 
-    Il peut être utilisé **à tout âge,** cependant il est préférable de donner **la priorité au lavage des mains** à l’eau et au savon.
+    Il peut être utilisé **à tout âge**, cependant il est préférable de donner **la priorité au lavage des mains** à l’eau et au savon.
 
     Il doit être appliqué sur peau saine en se frottant les mains jusqu’à ce qu’elles soient sèches.
 
@@ -697,7 +697,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Les enfants peuvent-ils être gardés par des personnes extérieures au foyer, par exemple les grands-parents ?
     :level: 3
 
-    **Oui,** si ces personnes et l’enfant ne sont pas malades, et en appliquant les **mesures de prévention** suivantes :
+    **Oui**, si ces personnes et l’enfant ne sont pas malades, et en appliquant les **mesures de prévention** suivantes :
 
     * respecter les **gestes barrières** : se laver régulièrement les mains à l’eau et au savon *avant* de s’occuper de l’enfant, mais aussi *après* ;
     * porter le **masque** lors d’un contact rapproché (enfant dans les bras…).
