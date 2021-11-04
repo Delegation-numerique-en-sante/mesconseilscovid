@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-11-04
+
+* retour des autotests supervisés pour le pass sanitaire
+* supprime lien cassé vers la téléprocédure pour les touristes étrangers
+* multiples améliorations mineures de contenus
+
 ## 2021-10-29
 
 * précisions sur la campagne vaccinale pour la grippe
