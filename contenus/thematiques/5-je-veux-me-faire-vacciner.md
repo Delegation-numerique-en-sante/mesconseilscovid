@@ -107,19 +107,13 @@
 .. question:: Où me faire vacciner ?
     :level: 3
 
-    Quel que soit le vaccin, vous pouvez vous faire vacciner :
+    Vous pouvez vous faire vacciner :
 
-    * dans votre **établissement** ;
-    * chez votre **médecin traitant** (généraliste ou spécialiste) ;
-    * par votre **médecin du travail** ;
-    * à la **pharmacie** ;
-    * dans un **cabinet infirmier** ou **sage-femme**.
-
-    De plus, s’il s’agit d’un vaccin *Pfizer-BioNTech*, vous pouvez **aussi** vous faire vacciner :
-
-    * chez votre **chirurgien-dentiste** ;
-    * dans un **laboratoire de biologie médicale** ;
-    * en **centre de vaccination**.
+    - dans un **centre de vaccination** ;
+    - chez un **professionnel de santé** :
+        * dans une **pharmacie**,
+        * chez un **médecin**, un **chirurgien-dentiste**, un **infirmier** ou une **sage-femme**,
+        * dans un **laboratoire** de biologie médicale.
 
     <div class="voir-aussi">
 
