@@ -203,7 +203,18 @@
 .. question:: Je suis cas contact, puis-je me faire vacciner ?
     :level: 3
 
-     **Non**. Si vous êtes [cas contact](/cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, **vous ne devez pas vous faire vacciner**. Il faut d’abord vous assurer que vous n’avez pas été contaminé(e) en faisant un test 7 jours après votre dernier contact à risque. Si ce test de dépistage est négatif, alors vous pourrez vous faire vacciner.
+    **Non**. Si vous êtes [cas contact](/cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, vous devez **attendre avant de vous faire vacciner**.
+
+    Il faut d’abord vous assurer que vous n’avez pas été contaminé(e) en faisant un test **7 jours** après votre dernier contact à risque. Si ce test de dépistage est **négatif**, alors vous pourrez vous faire vacciner.
+
+    Dans le cas où vous vivez avec la personne malade, votre test de contrôle est à faire **17 jours** après le test positif ou le début des symptômes de cette personne.
+
+    <div class="voir-aussi">
+
+    - [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html)
+    - [Je suis cas contact d’une personne de mon foyer, que faire ?](/je-vis-avec-personne-covid-positive.html)
+
+    </div>
 
 
 .. question:: J’ai déjà eu la Covid, dois-je me faire vacciner (1<sup>re</sup> dose) ?
