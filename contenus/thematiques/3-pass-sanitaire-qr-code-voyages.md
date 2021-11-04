@@ -598,7 +598,7 @@
 
     * si vous êtes **étudiant étranger** inscrit dans un établissement d’enseignement supérieur français pour la rentrée 2021-2022 et que vous possédez un visa d’études, [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etudiants) ;
 
-    * si vous êtes **touriste** de nationalité extra-européenne, âgé de plus de 18 ans, [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etrangers).
+    * si vous êtes **touriste** de nationalité extra-européenne, âgé de plus de 18 ans, nous vous invitons à vous renseigner en écrivant à l'adresse suivante : help.covid-pass@diplomatie.gouv.fr.
 
     En attendant, un **test de dépistage négatif de moins de 72 h** pourra faire office de pass sanitaire.
 
