@@ -44,7 +44,25 @@ describe('Enfants', function () {
         )
     })
 
-    it('département sans masque au 4 octobre', async function () {
+    it('département avec masque au 8 novembre', async function () {
+        const page = this.test.page
+
+        await page.goto('http://localhost:8080/conseils-pour-les-enfants.html')
+
+        const summary = await page.waitForSelector(
+            'text="Est-ce que mon enfant doit porter le masque ?"'
+        )
+        summary.click()
+
+        await remplirDepartement(page, '05')
+
+        assert.include(
+            await recuperationReponse(page, 'obligatoire'),
+            'Dans ce département, le masque est obligatoire à l’école primaire.'
+        )
+    })
+
+    it('département sans masque', async function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/conseils-pour-les-enfants.html')
@@ -62,7 +80,7 @@ describe('Enfants', function () {
         )
     })
 
-    it('département sans masque au 11 octobre', async function () {
+    it('département sans masque au 8 novembre', async function () {
         const page = this.test.page
 
         await page.goto('http://localhost:8080/conseils-pour-les-enfants.html')
@@ -72,7 +90,7 @@ describe('Enfants', function () {
         )
         summary.click()
 
-        await remplirDepartement(page, '35')
+        await remplirDepartement(page, '16')
 
         assert.include(
             await recuperationReponse(page, 'non-obligatoire'),
