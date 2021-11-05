@@ -382,6 +382,7 @@ class Thematique:
     header: str
     imgsrc: str
     last_modified: datetime
+    lang: str
 
     def __repr__(self):
         return f"Thematique {self.id}: {self.name}"
@@ -471,6 +472,7 @@ def get_thematiques(markdown_parser):
         image = extract_image(html_content)
         header = extract_header(html_content)
         body = extract_body(html_content)
+        lang = "en" if title == "Covid in France as a foreigner" else "fr"
         thematiques.append(
             Thematique(
                 path=path,
@@ -479,6 +481,7 @@ def get_thematiques(markdown_parser):
                 body=body,
                 imgsrc=image,
                 last_modified=last_modified_time(path),
+                lang=lang,
             )
         )
     return sorted(thematiques)
