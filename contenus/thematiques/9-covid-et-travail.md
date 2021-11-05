@@ -224,7 +224,7 @@
         * suite à une transplantation d’organe ou de cellules souches hématopoïétiques,
         * vous êtes sous chimiothérapie lymphopéniante,
         * vous êtes traité(e) par des médicaments immunosuppresseurs forts,
-        * vous subissez des dyalises chroniques.
+        * vous subissez des dialyses chroniques.
 
     N’hésitez pas à demander plus de renseignements à votre **médecin traitant** ou au **médecin du travail**. Il pourra vous fournir ou renouveler votre **certificat d’isolement**.
 
@@ -249,7 +249,7 @@
     </div>
 
 
-.. question:: En tant que salarié(e), puis-je m’absenter pour acompagner mon enfant mineur ou un majeur protégé (tutelle, curatelle, etc) à son rendez-vous de vaccination contre la Covid ?
+.. question:: En tant que salarié(e), puis-je m’absenter pour accompagner mon enfant mineur ou un majeur protégé (tutelle, curatelle, etc) à son rendez-vous de vaccination contre la Covid ?
     :level: 3
 
     **Oui**. Votre employeur pourra vous demander le justificatif de rendez-vous vaccinal.

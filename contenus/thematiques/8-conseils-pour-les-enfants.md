@@ -496,7 +496,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * toux ;
     * maux de gorge ;
     * fièvre (38 °C et plus) ;
-    * symptômes gastro-intestinaux (diahrrée, nausées, vomissement…) ;
+    * symptômes gastro-intestinaux (diarrhée, nausées, vomissement…) ;
     * perte d’appétit ;
     * fatigue.
 
@@ -600,7 +600,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * soit un **justificatif de fermeture** de la classe ou de l’établissement, soit un document de l’Assurance Maladie attestant que votre enfant est  **cas contact** et fait l’objet d’une mesure d’isolement ;
     * une **attestation sur l’honneur** précisant que vous êtes le seul des 2 parents à bénéficier d’un arrêt de travail pour les jours concernés.
 
-    C’est l’employeur qui procèdera alors à la déclaration d’**activité partielle** auprès de l’Assurance Maladie.
+    C’est l’employeur qui procédera alors à la déclaration d’**activité partielle** auprès de l’Assurance Maladie.
 
     <div class="voir-aussi">
 

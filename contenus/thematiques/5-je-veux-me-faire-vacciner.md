@@ -55,7 +55,7 @@
 
     Le **délai recommandé** par la Haute autorité de santé (HAS) pour un **rappel vaccinal** (2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas), est le suivant :
 
-    * pour les personnes vaccciné(e)s avec le vaccin **Janssen** (*2<sup>e</sup> dose*) : au moins **4 semaines** après l’injection ;
+    * pour les personnes vacciné(e)s avec le vaccin **Janssen** (*2<sup>e</sup> dose*) : au moins **4 semaines** après l’injection ;
 
     * pour les personnes sévèrement **immunodéprimées** (*4<sup>e</sup> dose*) : au moins **3 mois** après la dernière injection de vaccin ;
 
@@ -165,7 +165,7 @@
 .. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose lors de la vaccination initiale (primo-vaccination) ?
     :level: 3
 
-    Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée entre 39 et 42 jours (soit 6 semaines) après la première. Pour accélerer la campagne de vaccination face au variant Delta, le délai entre les deux doses à été réduit. L’injection de la deuxième dose pourra avoir lieu **entre 21 et 49 jours** (soit 3 à 7 semaines) après la première.
+    Pour les vaccins Pfizer-BioNTech et Moderna, la 2<sup>e</sup> injection est habituellement programmée entre 39 et 42 jours (soit 6 semaines) après la première. Pour accélérer la campagne de vaccination face au variant Delta, le délai entre les deux doses à été réduit. L’injection de la deuxième dose pourra avoir lieu **entre 21 et 49 jours** (soit 3 à 7 semaines) après la première.
 
     La Haute autorité de santé recommande de recevoir une 2<sup>e</sup> dose de vaccin ARNm (Pfizer-BioNTech ou Moderna) après une première dose de vaccin **AstraZeneca**, en respectant un délai d’au moins 4 semaines.
 
@@ -268,12 +268,12 @@
 
     Les **plus fréquents** sont une douleur au point d’injection, des maux de tête, de la fatigue, des douleurs musculaires, des nausées, de la fièvre modérée et des frissons.
 
-    Si cela arrive, c’est une **réaction normale**, qui est dûe à l’activation du système immunitaire par le vaccin. Ces effets secondaires sont plus fréquents après la 2<sup>e</sup> dose, car la réaction immunitaire est alors plus forte. Ils disparaissent le plus souvent au bout d’1 à 2 jours (parfois plus). Si vos symptômes vous inquiètent, contactez votre médecin traitant, ou le 15 en cas d’urgence.
+    Si cela arrive, c’est une **réaction normale**, qui est due à l’activation du système immunitaire par le vaccin. Ces effets secondaires sont plus fréquents après la 2<sup>e</sup> dose, car la réaction immunitaire est alors plus forte. Ils disparaissent le plus souvent au bout d’1 à 2 jours (parfois plus). Si vos symptômes vous inquiètent, contactez votre médecin traitant, ou le 15 en cas d’urgence.
 
     De très rares cas de **myocardite** et de **péricardite** ont été observés après la vaccination avec le vaccin **Moderna** (*Spikevax*). L’Agence européenne du médicament (EMA) indique que ces cas sont survenus principalement dans les 14 jours suivant la vaccination, plus souvent après la seconde dose et chez des hommes jeunes, et que les données suggèrent une évolution favorable avec du repos ou avec un traitement. Consultez immédiatement un médecin en cas de douleur thoracique (aiguë et persistante), d’essoufflement ou de palpitations après la vaccination.
 
 
-.. question:: Est-ce que la vaccination rend positif à la covid ?
+.. question:: Est-ce que la vaccination rend positif à la Covid ?
     :level: 3
 
     **Non, la vaccination ne rend en aucun cas positif**, il n’y a pas de virus actif dans les vaccins. Vous pouvez ressentir des effets secondaires (fièvre, fatigue…) suite à la vaccination, mais vous n’êtes **pas contagieux**.

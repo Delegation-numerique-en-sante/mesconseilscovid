@@ -87,7 +87,7 @@
 
     <div class="conseil conseil-jaune">
 
-    Pour échanger avec d’autres personnes touchées par le Covid long, vous pouvez rejoindre des associations de patients, comme l’association [AprèsJ20](https://www.apresj20.fr/).
+    Pour échanger avec d’autres personnes touchées par le Covid long, vous pouvez rejoindre des associations de patients, comme l’association [ApresJ20](https://www.apresj20.fr/).
 
     </div>
 

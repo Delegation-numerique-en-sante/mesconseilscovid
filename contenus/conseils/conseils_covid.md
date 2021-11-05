@@ -17,7 +17,7 @@ Peu d’informations sont aujourd’hui disponibles sur l’immunité suite à u
 Certaines personnes continuent de ressentir des symptômes au-delà de 4 semaines après leur contamination. Ce phénomène est aussi appelé « Covid long ». Les autorités sanitaires sont en train d’organiser la prise en charge de ces formes de la maladie. Si vous êtes concerné, prenez contact en priorité avec votre médecin traitant ou un médecin généraliste, quels que soient les symptômes persistants que vous ressentez.
 
 * [Information sur les symptômes prolongés](https://solidarites-sante.gouv.fr/soins-et-maladies/maladies/maladies-infectieuses/coronavirus/etat-des-lieux-et-actualites/article/symptomes-prolonges-de-covid-19-orienter-et-informer)
-* [Association de patients « Aprèsj20 »](https://www.apresj20.fr/)
+* [Association de patients « ApresJ20 »](https://www.apresj20.fr/)
 * [Association de patients et de chercheurs « TousPartenairesCovid »](https://touspartenairescovid.org/)
 
 
