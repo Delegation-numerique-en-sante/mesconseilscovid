@@ -143,7 +143,7 @@
             <legend><h3 id="pass-sanitaire-type-vaccin-label">Quel vaccin avez-vous reçu ?</h3></legend>
             <div role="radiogroup" aria-labelledby="pass-sanitaire-type-vaccin-label">
                 <input id="pass_sanitaire_type_vaccin_radio_pfizer" type="radio" required name="pass_sanitaire_type_vaccin_radio" value="pfizer">
-                <label for="pass_sanitaire_type_vaccin_radio_pfizer">Pfizer-BioNTech (<i>Cominarty</i><sup>®</sup>)</label>
+                <label for="pass_sanitaire_type_vaccin_radio_pfizer">Pfizer-BioNTech (<i>Comirnaty</i><sup>®</sup>)</label>
                 <input id="pass_sanitaire_type_vaccin_radio_moderna" type="radio" required name="pass_sanitaire_type_vaccin_radio" value="moderna">
                 <label for="pass_sanitaire_type_vaccin_radio_moderna">Moderna (<i>Spikevax</i><sup>®</sup>)</label>
                 <input id="pass_sanitaire_type_vaccin_radio_astrazeneca" type="radio" required name="pass_sanitaire_type_vaccin_radio" value="astrazeneca">
@@ -592,7 +592,7 @@
 
     #### Pour obtenir un QR code (pass sanitaire)
 
-    L’administration a mis en place des **démarches en ligne** permettant de demander à **convertir votre certificat de vaccination étranger** en pass sanitaire francais :
+    L’administration a mis en place des **démarches en ligne** permettant de demander à **convertir votre certificat de vaccination étranger** en pass sanitaire français :
 
     * si vous êtes **français** ou ayant droit de français, âgé de plus de 18 ans, [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-francais-de-l-etranger) ;
 

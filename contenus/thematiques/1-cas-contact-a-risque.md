@@ -82,7 +82,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 
 * **7 jours après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e) ;
 * **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple) ;
-* **dès que possible** en cas d’apparititon de symptômes évocateurs de la Covid.
+* **dès que possible** en cas d’apparition de symptômes évocateurs de la Covid.
 </div>
 
 * Si le **test de contrôle** est **négatif** :
@@ -163,7 +163,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 
 * **7 jours après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e) ;
 * **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple) ;
-* **dès que possible** en cas d’apparititon de symptômes évocateurs de la Covid.
+* **dès que possible** en cas d’apparition de symptômes évocateurs de la Covid.
 
 </div>
 
