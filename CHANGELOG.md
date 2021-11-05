@@ -5,6 +5,7 @@
 * ajout d’une page sur les symptômes persistants (Covid long)
 * ajout d’une page généraliste en anglais
 * mise à jour de la date de prolongement du Pass sanitaire
+* mise à jour des départements qui doivent porter le masque en primaire
 
 ## 2021-11-04
 
