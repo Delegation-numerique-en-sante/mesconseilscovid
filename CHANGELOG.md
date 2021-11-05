@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-11-05
+
+* ajout d’une page sur les symptômes persistants (Covid long)
+* ajout d’une page généraliste en anglais
+* mise à jour de la date de prolongement du Pass sanitaire
+
 ## 2021-11-04
 
 * retour des autotests supervisés pour le pass sanitaire
