@@ -112,7 +112,7 @@
 
     - si vous avez **30 ans ou moins**, la Haute autorité de santé (HAS) recommande de privilégier le vaccin **Pfizer** lorsque c’est possible (en l’attente de plus de données sur le risque de myocardite avec le vaccin *Moderna* chez les personnes plus jeunes) ;
 
-    - si vous avez **plus de 30 ans**, le vaccin **Moderna** pourra par contre être privilégié, car son efficacité vaccinale paraît un peu meilleure.
+    - si vous avez **plus de 30 ans**, et en particulier si vous êtes à risque de forme grave, le vaccin **Moderna** pourra par contre être privilégié, car plusieurs études récentes semblent montrer une efficacité vaccinale légèrement supérieure.
 
     Le vaccin utilisé pour le rappel n’a **pas besoin d’être le même** que celui utilisé pour la vaccination initiale. Par exemple, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné(e) initialement avec le vaccin *Moderna*, *AstraZeneca* ou *Janssen*.
 
