@@ -229,6 +229,18 @@ legend h1 {
     font-size: 1.3rem;
     margin-bottom: 3rem;
 }
+.introduction-block .actualites {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+.introduction-block .actualites ul {
+    list-style: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.introduction-block .actualites time {
+    font-weight: bold;
+}
 #suivi-introduction-block h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;
