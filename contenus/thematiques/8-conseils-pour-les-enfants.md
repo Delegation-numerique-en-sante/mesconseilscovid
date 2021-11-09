@@ -380,7 +380,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * dans un **centre de vaccination** et dans certains **établissements scolaires**, avec un vaccin *Pfizer-BioNTech* ;
 
-    * chez votre **médecin traitant**, en cabinet infirmier, ou en pharmacie avec un vaccin *Moderna*.
+    * chez votre **médecin traitant**, en cabinet infirmier, ou en pharmacie avec un vaccin *Pfizer-BioNTech* ou *Moderna*.
+
+    La Haute autorité de santé (HAS) recommande de privilégier le vaccin **Pfizer** lorsque c’est possible (en raison d’un risque accru de myocardite avec le vaccin *Moderna* chez les personnes de moins de 30 ans).
 
     <div class="voir-aussi">
 

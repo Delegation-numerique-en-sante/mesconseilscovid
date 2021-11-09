@@ -16,7 +16,7 @@
 .. question:: Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
 
-    Avec le temps, l’efficacité de la protection du vaccin contre l’infection peut diminuer, en particulier face au variant Delta. Pour « booster » cette protection, la Haute autorité de santé (HAS) recommande une **injection supplémentaire** (2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas) du vaccin **Pfizer**, quel que soit le vaccin reçu initialement **(Moderna, Pfizer, AstraZeneca ou Janssen)** pour :
+    Avec le temps, l’efficacité de la protection du vaccin contre l’infection peut diminuer, en particulier face au variant Delta. Pour « booster » cette protection, la Haute autorité de santé (HAS) recommande une **injection supplémentaire** (2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas) du vaccin pour :
 
     * les résident(e)s des <abbr title="Établissement d’Hébergement pour Personnes Âgées Dépendantes">**EHPAD**</abbr> et <abbr title="Unités de Soins de Longue Durée">**USLD**</abbr>,
     * les personnes de **65 ans et plus**,
@@ -25,7 +25,10 @@
     * les **professionnels** et **bénévoles** des secteurs de la santé, du médico-social et du transport sanitaire,
     * les personnes vaccinées avec le **vaccin Janssen**.
 
+
     <div class="conseil conseil-jaune">
+
+    - Quel que soit le vaccin que vous avez reçu initialement (*Pfizer*, *Moderna*, *AstraZeneca* ou *Janssen*), la dose de rappel se fera **uniquement avec un vaccin à ARN messager** (*Pfizer* ou *Moderna* selon votre situation).
 
     - Une dose de rappel n’est actuellement **pas prévue** pour le reste de la population.
 
@@ -36,10 +39,12 @@
 
     <div class="voir-aussi">
 
-    - [Quel délai respecter avant la dose de rappel, dite 3<sup>e</sup> dose ?](#quel-delai-respecter-avant-la-dose-de-rappel-dite-3-e-dose)
+    - [Quel délai respecter avant la dose de rappel ?](#quel-delai-respecter-avant-la-dose-de-rappel-dite-3-e-dose)
+    - [Quel est le vaccin administré pour la dose de rappel ?](#quel-est-le-vaccin-administre-pour-la-dose-de-rappel-dite-3-e-dose)
     - [Où me faire vacciner ?](#ou-me-faire-vacciner)
 
     </div>
+
 
 .. question:: Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
@@ -49,6 +54,7 @@
     La campagne de rappel s’ouvre progressivement. Pour connaître la liste des publics éligibles aujourd’hui, [consultez notre réponse ci-dessus](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose).
 
     Pour connaître le délai à respecter avant la dose de rappel [voir ci-dessous](#quel-delai-respecter-avant-la-dose-de-rappel-dite-3-e-dose).
+
 
 .. question:: Quel délai respecter avant la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
@@ -69,6 +75,7 @@
     - [Où me faire vacciner ?](#ou-me-faire-vacciner)
 
     </div>
+
 
 .. question:: Quels sont les facteurs de risque de formes graves de Covid ?
     :level: 3
@@ -97,12 +104,18 @@
 
     La **grossesse** est également un facteur de risque de développer des formes graves.
 
+
 .. question:: Quel est le vaccin administré pour la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
 
-    Le rappel est actuellement réalisé avec le **vaccin Pfizer** uniquement. Il pourra également être réalisé avec un vaccin *Moderna* « demi-dose » en cas de validation de la part de la Haute Autorité de la Santé.
+    Le rappel est actuellement réalisé avec un **vaccin à ARN messager uniquement**, c’est-à-dire *Pfizer* ou *Moderna* (demi-dose de 50 µg) :
 
-    Le vaccin utilisé pour le rappel n’a **pas besoin d’être le même** que celui utilisé pour la vaccination initiale. Par exemple, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné(e) initialement avec le vaccin *Moderna* ou *AstraZeneca*.
+    - si vous avez **30 ans ou moins**, la Haute autorité de santé (HAS) recommande de privilégier le vaccin **Pfizer** lorsque c’est possible (en l’attente de plus de données sur le risque de myocardite avec le vaccin *Moderna* chez les personnes plus jeunes) ;
+
+    - si vous avez **plus de 30 ans**, le vaccin **Moderna** pourra par contre être privilégié, car son efficacité vaccinale paraît un peu meilleure.
+
+    Le vaccin utilisé pour le rappel n’a **pas besoin d’être le même** que celui utilisé pour la vaccination initiale. Par exemple, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné(e) initialement avec le vaccin *Moderna*, *AstraZeneca* ou *Janssen*.
+
 
 .. question:: Où me faire vacciner ?
     :level: 3
@@ -270,7 +283,13 @@
 
     Si cela arrive, c’est une **réaction normale**, qui est due à l’activation du système immunitaire par le vaccin. Ces effets secondaires sont plus fréquents après la 2<sup>e</sup> dose, car la réaction immunitaire est alors plus forte. Ils disparaissent le plus souvent au bout d’1 à 2 jours (parfois plus). Si vos symptômes vous inquiètent, contactez votre médecin traitant, ou le 15 en cas d’urgence.
 
-    De très rares cas de **myocardite** et de **péricardite** ont été observés après la vaccination avec le vaccin **Moderna** (*Spikevax*). L’Agence européenne du médicament (EMA) indique que ces cas sont survenus principalement dans les 14 jours suivant la vaccination, plus souvent après la seconde dose et chez des hommes jeunes, et que les données suggèrent une évolution favorable avec du repos ou avec un traitement. Consultez immédiatement un médecin en cas de douleur thoracique (aiguë et persistante), d’essoufflement ou de palpitations après la vaccination.
+    De très rares cas de **myocardite** et de **péricardite** ont été observés après la vaccination avec le vaccin **Moderna** (*Spikevax*). La Haute autorité de santé (HAS) indique que ces cas sont survenus généralement **dans les 7 jours** suivant la vaccination, et qu’ils sont plus fréquents chez les **hommes**, chez les personnes de **moins de 30 ans**, et après la <strong>2<sup>e</sup> dose</strong>. Les données suggèrent une **évolution favorable** avec du repos ou avec un traitement.
+
+    <div class="conseil conseil-jaune">
+
+    Consultez immédiatement un **médecin** en cas de **douleur thoracique** aiguë et persistante, d’**essoufflement** ou de **palpitations** après la vaccination.
+
+    </div>
 
 
 .. question:: Est-ce que la vaccination rend positif à la Covid ?
@@ -286,7 +305,9 @@
 .. question:: Je suis enceinte, puis-je me faire vacciner ?
     :level: 3
 
-    **Oui**, d’autant que la grossesse vous expose à des formes plus sévères de la Covid. Il n’y a pas de contre-indication à la vaccination des femmes enceintes et vous pouvez vous faire vacciner avec un vaccin à ARN messager (Pfizer, Moderna) **dès le premier trimestre de grossesse**.
+    **Oui**, d’autant que la grossesse vous expose à des formes plus sévères de la Covid. Il n’y a pas de contre-indication à la vaccination des femmes enceintes et vous pouvez vous faire vacciner avec un vaccin à ARN messager (*Pfizer*, *Moderna*) **dès le premier trimestre de grossesse**.
+
+    Si vous êtes agée de **moins de 30 ans**, la Haute autorité de santé (HAS) recommande de privilégier le vaccin **Pfizer** lorsque c’est possible (en raison d’un risque accru de myocardite avec le vaccin *Moderna* chez les personnes les plus jeunes).
 
     L’**obligation vaccinale** requise pour certaines professions (santé, médico-social, restauration…) n’est pas exigée des femmes enceintes avant le **2<sup>e</sup> trimestre de grossesse**.
 
