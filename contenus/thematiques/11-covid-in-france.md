@@ -21,11 +21,20 @@
    You should also tell your close contacts that they may have been exposed to the virus and they should get tested immediately.
 
 
-.. question:: As a foreigner, tourist or student, vaccinated outside the European Union, how can I obtain a French health pass (<i>pass sanitaire</i>)?
+.. question:: As a tourist, vaccinated outside the European Union, how can I obtain a French health pass (<i>pass sanitaire</i>)?
 
-   * Foreign **students** studying in France can [request the conversion](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etudiants?locale=en) of their vaccine certificate.
+   **Non-european nationals** visiting France can convert their extra-european vaccination certificate at a **pharmacy**. You will need to present your **passport** and your existing **vaccination certificate** in paper format. The pharmacy can charge you up to **36 euros** for this procedure.
 
-   * Non-european **tourists** visiting France should send an e-mail to <a href="mailto:help.covid-pass@diplomatie.gouv.fr">help.covid-pass@diplomatie.gouv.fr</a> for assistance.
+   <div class="voir-aussi">
+
+   - [How to obtain a health pass in case of vaccination abroad?](https://www.sante.fr/how-to-obtain-a-french-health-pass) (santé.fr)
+
+   </div>
+
+
+.. question:: As a student, vaccinated outside the European Union, how can I obtain a French health pass (<i>pass sanitaire</i>)?
+
+   Foreign **students** studying in France can [request the conversion](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etudiants?locale=en) of their vaccination certificate.
 
    While your request is being processed, a **negative PCR or antigenic test result** will be your temporary health pass (valid for 72h). To find out where to get tested, please click on [this link](https://www.sante.fr/cf/centres-depistage-covid.html) (in French).
 
