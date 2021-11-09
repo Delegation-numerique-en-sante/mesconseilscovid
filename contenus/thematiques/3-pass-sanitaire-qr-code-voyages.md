@@ -574,7 +574,7 @@
 .. question:: J’ai été vacciné à l’étranger avec un vaccin reconnu en France, comment obtenir un QR code valable en France ?
     :level: 3
 
-    Pour que votre vaccination soit reconnue comme pass sanitaire en France il faut : être complètement vacciné(e) avec un vaccin reconnu en France (ou équivalent) et obtenir un QR code.
+    Pour que votre vaccination soit reconnue comme pass sanitaire en France il faut être complètement vacciné(e) avec un vaccin **reconnu en France** (ou équivalent) et obtenir un **QR code**.
 
     #### Vaccins reconnus en France
 
@@ -589,18 +589,28 @@
 
     * Si vous n’avez reçu qu’**une seule dose** de vaccin à l’étranger, vous devrez recevoir une **2<sup>e</sup>** injection de vaccin à **ARNm** (*Pfizer* ou *Moderna*) pour valider votre vaccination en France.
 
+    #### Obtenir un QR code : ressortissants non-européens
 
-    #### Pour obtenir un QR code (pass sanitaire)
+    Si vous êtes **touriste** de nationalité extra-européenne, vous pouvez vous rendre dans une **pharmacie** pour obtenir un pass sanitaire. Le pharmacien vérifiera la validité de votre certificat de vaccination, et vous fournira un justificatif muni d’un QR code. Ce service pourra vous être facturé jusqu’à **36 €**.
 
-    L’administration a mis en place des **démarches en ligne** permettant de demander à **convertir votre certificat de vaccination étranger** en pass sanitaire français :
+    <div class="voir-aussi">
 
-    * si vous êtes **français** ou ayant droit de français, âgé de plus de 18 ans, [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-francais-de-l-etranger) ;
+    - [Obtenir un passe sanitaire en cas de vaccination à l’étranger](https://www.sante.fr/obtenir-un-passe-sanitaire-en-cas-de-vaccination-letranger)
 
-    * si vous êtes **étudiant étranger** inscrit dans un établissement d’enseignement supérieur français pour la rentrée 2021-2022 et que vous possédez un visa d’études, [rendez-vous sur cette démarche en ligne](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etudiants) ;
+    </div>
 
-    * si vous êtes **touriste** de nationalité extra-européenne, âgé de plus de 18 ans, nous vous invitons à vous renseigner en écrivant à l’adresse suivante : <a href="mailto:help.covid-pass@diplomatie.gouv.fr">help.covid-pass@diplomatie.gouv.fr</a>.
+    #### Obtenir un QR code : français vaccinés à l’étranger
+
+    Si vous êtes **français** ou ayant droit de français, âgé de plus de 18 ans, l’administration a mis en place une démarche en ligne pour demander la [conversion votre certificat de vaccination étranger](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-francais-de-l-etranger) en pass sanitaire français.
+
+    #### Obtenir un QR code : étudiants étrangers
+
+    Si vous êtes **étudiant étranger** inscrit dans un établissement d’enseignement supérieur français pour la rentrée 2021-2022 et que vous possédez un visa d’études, l’administration a mis en place une démarche en ligne pour demander la [conversion votre certificat de vaccination étranger](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etudiants) en pass sanitaire français.
 
     En attendant, un **test de dépistage négatif de moins de 72 h** pourra faire office de pass sanitaire.
+
+
+
 
     <div class="conseil conseil-jaune">
 
