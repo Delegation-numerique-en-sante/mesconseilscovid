@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-11-09
+
+* la HAS recommande de privilégier le vaccin Pfizer pour les moins de 30 ans
+* les touristes extra-européens pourront convertir leur certificat de vaccination en pharmacie pour obtenir un pass sanitaire
+
 ## 2021-11-05
 
 * ajout d’une page sur les symptômes persistants (Covid long)
