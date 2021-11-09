@@ -87,7 +87,8 @@
 
     <div class="conseil conseil-jaune">
 
-    Pour échanger avec d’autres personnes touchées par le Covid long, vous pouvez rejoindre des associations de patients, comme l’association [ApresJ20](https://www.apresj20.fr/).
+    * Pour échanger avec d’autres personnes touchées par le Covid long, vous pouvez rejoindre des associations de patients, comme l’association [ApresJ20](https://www.apresj20.fr/).
+    * Si vous êtes étudiant, le programme **Santé Psy Étudiant** vous permet de bénéficier de la prise en charge de **6 consultations** chez un **psychologue** partenaire. Consultez toutes les informations sur [le site internet du dispositif](https://santepsy.etudiant.gouv.fr/).
 
     </div>
 
