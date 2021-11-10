@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-11-10
+
+* conditionnement du pass sanitaire à la dose de rappel au 15/12
+* extension de la campagne de rappel aux plus de 50 ans début décembre
+* passage au niveau 2 à l’école primaire au 15/11
+
 ## 2021-11-09
 
 * la HAS recommande de privilégier le vaccin Pfizer pour les moins de 30 ans
