@@ -342,9 +342,13 @@
 .. question:: Est-ce que la dose de rappel, dite 3<sup>e</sup> dose, est obligatoire pour le pass sanitaire ?
     :level: 3
 
-    À partir du **15 décembre**, si vous avez plus de **65 ans** et que votre dernière dose date de plus de **6 mois et 5 semaines**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal (dit 3<sup>e</sup> dose).
+    - À partir du **15 décembre**, si vous avez plus de **65 ans** et que votre dernière dose date de plus de **6 mois et 5 semaines**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal (dit 3<sup>e</sup> dose).
 
-    <i>Par exemple : si vous avez reçu votre 2<sup>e</sup> dose le 17 juillet 2021, vous serez éligible à la dose de rappel dès le 17 janvier 2022. Sans cette dose de rappel, vous ne pourrez plus utiliser votre pass sanitaire à partir du 21 février 2022.</i>
+      <i>Par exemple : si vous avez reçu votre 2<sup>e</sup> dose le 17 juillet 2021, vous serez éligible à la dose de rappel dès le 17 janvier 2022. Sans cette dose de rappel, vous ne pourrez plus utiliser votre pass sanitaire à partir du 21 février 2022.</i>
+
+    - Si vous avez **moins de 65 ans**, et que vous êtes éligible au rappel vaccinal en raison d’une comorbidité, de votre profession, alors vous n’êtes **pas concerné** par cette désactivation du pass sanitaire.
+
+    - Quele que soit votre âge, si vous avez reçu le **vaccin Janssen**, alors vous devrez recevoir une dose de rappel pour prolonger la validité de votre pass sanitaire après le **15 décembre**.
 
     <div class="voir-aussi">
 
