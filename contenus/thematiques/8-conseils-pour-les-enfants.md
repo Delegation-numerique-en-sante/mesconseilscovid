@@ -177,6 +177,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Le port du masque est **obligatoire** au **collège** et au **lycée**. En **primaire**, le port du masque dépend du taux d’incidence du virus dans le **département** où se situe l’établissement scolaire.
 
+    <div class="conseil conseil-jaune">
+
+    À partir du **lundi 15 novembre**, le protocole sanitaire passera au **niveau 2** dans tous les départements. Le port du masque sera donc à nouveau **obligatoire** en intérieur pour les enfants à l’école primaire.
+
+    </div>
+
     <form id="masque-obligatoire-form">
         <fieldset>
             <legend>
