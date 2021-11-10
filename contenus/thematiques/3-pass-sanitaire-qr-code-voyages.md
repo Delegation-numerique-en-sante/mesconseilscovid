@@ -344,7 +344,7 @@
 
     À partir du **15 décembre**, si vous avez plus de **65 ans** et que votre dernière dose date de plus de **6 mois et 5 semaines**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal (dit 3<sup>e</sup> dose).
 
-    <i>Par exemple : si vous avez reçu votre 2<sup>e</sup> dose le 17 juillet 2021, vous serez éligible à la dose de rappel dès le 17 décembre 2021. Sans cette dose de rappel, vous ne pourrez plus utiliser votre pass sanitaire à partir du 21 janvier 2022.</i>
+    <i>Par exemple : si vous avez reçu votre 2<sup>e</sup> dose le 17 juillet 2021, vous serez éligible à la dose de rappel dès le 17 janvier 2022. Sans cette dose de rappel, vous ne pourrez plus utiliser votre pass sanitaire à partir du 21 février 2022.</i>
 
     <div class="voir-aussi">
 
