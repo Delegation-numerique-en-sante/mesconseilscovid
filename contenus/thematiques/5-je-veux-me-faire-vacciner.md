@@ -75,6 +75,9 @@
     </div>
 
 
+.. injection:: pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire
+
+
 .. question:: Quels sont les facteurs de risque de formes graves de Covid ?
     :level: 3
 
@@ -166,9 +169,6 @@
     En ville, cela sera possible dans les **pharmacies** qui vaccinent avec les deux vaccins, et dans les cabinets médicaux ou infirmiers.
 
     Vous pourrez aussi acheter votre vaccin anti-grippe en pharmacie et venir avec au **centre de vaccination** le jour de votre rendez-vous de rappel vaccinal contre la Covid.
-
-
-.. injection:: pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire
 
 
 ## La vaccination initiale (schéma vaccinal à 1 ou 2 doses)
