@@ -342,7 +342,9 @@
 .. question:: Est-ce que la dose de rappel, dite 3<sup>e</sup> dose, est obligatoire pour le pass sanitaire ?
     :level: 3
 
-    Si vous avez **plus de 65 ans,** la dose de rappel (3<sup>e</sup> dose) sera **obligatoire** à partir du **15 décembre** pour continuer à utiliser votre pass sanitaire .
+    À partir du **15 décembre**, si vous avez plus de **65 ans** et que votre dernière dose date de plus de **6 mois et 5 semaines**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal (dit 3<sup>e</sup> dose).
+
+    <i>Par exemple : si vous avez reçu votre 2<sup>e</sup> dose le 17 juillet 2021, vous serez éligible à la dose de rappel dès le 17 décembre 2021. Sans cette dose de rappel, vous ne pourrez plus utiliser votre pass sanitaire à partir du 21 janvier 2022.</i>
 
     <div class="voir-aussi">
 
