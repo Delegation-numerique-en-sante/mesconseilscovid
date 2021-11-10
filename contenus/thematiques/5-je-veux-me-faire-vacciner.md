@@ -162,7 +162,7 @@
 .. question:: Puis-je me faire vacciner contre la grippe saisonnière et la Covid en même temps ?
     :level: 3
 
-    **Oui**. Il est possible de réaliser le rappel du vaccin contre la Covid en même temps que le vaccin contre la grippe.
+    **Oui**. Il est possible de réaliser le rappel du vaccin contre la Covid en même temps que le vaccin contre la grippe, mais il est aussi possible d’espacer les deux injections.
 
     La campagne annuelle de vaccination contre la grippe se déroule du **22 octobre 2021** au 31 janvier 2022. Si vous êtes éligible au rappel vaccinal contre la Covid et que vous êtes prioritaire pour le vaccin contre la grippe, vous pourrez recevoir les deux vaccins en même temps.
 
