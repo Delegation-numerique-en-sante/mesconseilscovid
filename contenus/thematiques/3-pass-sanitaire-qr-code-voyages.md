@@ -346,9 +346,11 @@
 
       <i>Par exemple : si vous avez reçu votre 2<sup>e</sup> dose le 17 juillet 2021, vous serez éligible à la dose de rappel dès le 17 janvier 2022. Sans cette dose de rappel, vous ne pourrez plus utiliser votre pass sanitaire à partir du 21 février 2022.</i>
 
+    - Quel que soit votre âge, si vous avez reçu le **vaccin Janssen**, alors vous devrez recevoir une dose de rappel pour prolonger la validité de votre pass sanitaire après le **15 décembre**.
+    
     - Si vous avez **moins de 65 ans**, et que vous êtes éligible au rappel vaccinal en raison d’une comorbidité, de votre profession, alors vous n’êtes **pas concerné** par cette désactivation du pass sanitaire.
 
-    - Quele que soit votre âge, si vous avez reçu le **vaccin Janssen**, alors vous devrez recevoir une dose de rappel pour prolonger la validité de votre pass sanitaire après le **15 décembre**.
+
 
     <div class="voir-aussi">
 
