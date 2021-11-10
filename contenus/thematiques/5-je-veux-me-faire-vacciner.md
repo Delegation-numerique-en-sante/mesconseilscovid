@@ -19,7 +19,7 @@
     Avec le temps, l’efficacité de la protection du vaccin contre l’infection peut diminuer, en particulier face au variant Delta. Pour « booster » cette protection, la Haute autorité de santé (HAS) recommande une **injection supplémentaire** (2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas) du vaccin pour :
 
     * les résident(e)s des <abbr title="Établissement d’Hébergement pour Personnes Âgées Dépendantes">**EHPAD**</abbr> et <abbr title="Unités de Soins de Longue Durée">**USLD**</abbr>,
-    * les personnes de **65 ans et plus**,
+    * les personnes de **65 ans et plus** (<i>50 ans et plus à partir de début décembre</i>),
     * les personnes avec des **comorbidités** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves de Covid,
     * les personnes **sévèrement immunodéprimées** et les personnes de plus de 18 ans de leur **entourage**,
     * les **professionnels** et **bénévoles** des secteurs de la santé, du médico-social et du transport sanitaire,
@@ -29,8 +29,6 @@
     <div class="conseil conseil-jaune">
 
     - Quel que soit le vaccin que vous avez reçu initialement (*Pfizer*, *Moderna*, *AstraZeneca* ou *Janssen*), la dose de rappel se fera **uniquement avec un vaccin à ARN messager** (*Pfizer* ou *Moderna* selon votre situation).
-
-    - Une dose de rappel n’est actuellement **pas prévue** pour le reste de la population.
 
     - Si vous avez eu la Covid **après votre dernière dose**, vous n’êtes **pas éligible** à ce rappel.
 
