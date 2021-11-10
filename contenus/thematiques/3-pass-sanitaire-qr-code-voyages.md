@@ -342,9 +342,7 @@
 .. question:: Est-ce que la dose de rappel, dite 3<sup>e</sup> dose, est obligatoire pour le pass sanitaire ?
     :level: 3
 
-    Si vous avez plus de 65 ans, votre pass sanitaire ne sera **plus valide au 15 décembre** sans avoir reçu une dose de rappel.
-
-    Si vous avez moins de 65 ans, votre pass sanitaire **reste valable**, même si vous êtes éligible à une dose de rappel (dite 3<sup>e</sup> dose) et que vous ne l’avez pas encore reçue.
+    Si vous avez **plus de 65 ans,** la dose de rappel (3<sup>e</sup> dose) sera **obligatoire** à partir du **15 décembre** pour continuer à utiliser votre pass sanitaire .
 
     <div class="voir-aussi">
 
