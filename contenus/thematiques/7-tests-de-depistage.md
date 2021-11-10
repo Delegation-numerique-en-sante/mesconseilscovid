@@ -161,7 +161,7 @@
 .. question:: Les tests de dépistage sont-ils payants ?
     :level: 3
 
-    À partir du **15 octobre 2021**, les tests de dépistage ne seront pris en charge par l’Assurance maladie que dans les cas suivants (sur présentation d’un justificatif) :
+    Depuis le **15 octobre 2021**, les tests de dépistage **RT-PCR** et **antigénique** ne sont plus pris en charge par l’Assurance maladie que dans les cas suivants (sur présentation d’un justificatif) :
 
     * personnes ayant un **schéma vaccinal complet** ou une **contre-indication** à la vaccination ;
     * personnes ayant un **certificat de rétablissement** de moins de 6 mois ;
@@ -170,7 +170,7 @@
     * personnes identifiées comme **cas contact** par l’Assurance maladie (*en cas de notification de l’application TousAntiCovid, vous devrez contacter l’Assurance maladie par téléphone pour obtenir une attestation de prise en charge*) ;
     * personnes concernées par des campagnes de **dépistage collectif**, organisées par les Agences régionales de santé ou au sein des établissements de l’Éducation nationale par exemple.
 
-    **En dehors de ces cas**, les tests seront payants (**43,89 €** pour un test PCR, et de **22 à 45 €** pour un test antigénique).
+    **En dehors de ces cas**, les tests seront payants (**43,89 €** pour un test PCR; de **22 à 45 €** pour un test antigénique; **12,5 €** pour un autotest supervisé).
 
     Pour faire face à la situation épidémique en **Guadeloupe**, en **Guyane**, en **Martinique** et à **Mayotte**, les tests de dépistage restent pris en charge par l’Assurance maladie jusqu’à nouvel ordre.
 
