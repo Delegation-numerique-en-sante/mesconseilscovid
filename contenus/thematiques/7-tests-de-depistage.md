@@ -234,7 +234,7 @@
 .. question:: Qu’est-ce qu’un autotest ?
     :level: 4
 
-    Des autotests sont disponibles en pharmacie. Ce test est un prélèvement nasal à réaliser chez soi. Ils ne sont pas pris en charge par l’Assurance maladie sauf dans le cas des professionnels exerçant auprès de personnes vulnérables (âgées, handicapées…) et dans la limite de 10 par mois.
+    Des autotests sont disponibles en pharmacie. Ce test est un prélèvement nasal à réaliser chez soi. Ils ne sont pas pris en charge par l’Assurance maladie sauf dans le cas des professionnels exerçant auprès de personnes vulnérables (âgées, handicapées…) et dans la limite de 10 par mois. Le prix de vente maximal d’un autotest est de 5,20 €.
 
     Il ne faut pas y avoir recours lorsque :
 
