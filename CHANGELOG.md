@@ -1,5 +1,12 @@
 # Changelog
 
+## 2021-11-13
+
+* masque obligatoire en primaire partout
+* liste des pays exemptés de conversion de pass sanitaire
+* mise à jour sur la fin de la gratuité des tests
+* affinage du délai relatif à la dose de rappel
+
 ## 2021-11-10
 
 * conditionnement du pass sanitaire à la dose de rappel au 15/12
