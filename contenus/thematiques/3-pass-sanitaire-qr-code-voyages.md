@@ -357,6 +357,7 @@
 
     - [Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?](/je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
     - [Quel délai respecter avant la dose de rappel, dite 3<sup>e</sup> dose ?](/je-veux-me-faire-vacciner.html#quel-delai-respecter-avant-la-dose-de-rappel-dite-3-e-dose)
+    - [Tout savoir sur le rappel vaccinal contre la Covid-19](https://www.gouvernement.fr/tout-savoir-sur-le-rappel-vaccinal-contre-la-covid-19) (gouvernement.fr)
 
     </div>
 
