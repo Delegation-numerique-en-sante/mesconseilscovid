@@ -13,21 +13,28 @@ import {
     getRadioValue,
     toggleFormButtonOnRadioRequired,
     toggleFormButtonOnTextFieldsRequired,
+    uncheckAllRadio,
 } from '../../formutils'
 import { Formulaire } from './formulaire'
 
 export function dynamiseLaProlongationDuPass() {
     const formulaire = new FormulaireProlongationPassSanitaire()
-    formulaire.demarre('situation')
+    formulaire.demarre('age')
 }
 
 class FormulaireProlongationPassSanitaire extends Formulaire {
     constructor() {
-        super('prolongation-pass-sanitaire', 'situation')
+        super('prolongation-pass-sanitaire', 'age')
+        this.janssen = false
+    }
+
+    resetFormulaire(document) {
+        uncheckAllRadio(document)
+        this.janssen = false
     }
 
     GESTIONNAIRES = {
-        'situation': (form) => {
+        'age': (form) => {
             const button = form.querySelector('input[type=submit]')
             const requiredLabel = 'Cette information est requise'
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
@@ -35,10 +42,52 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                 event.preventDefault()
                 const value = getRadioValue(
                     form,
-                    'prolongation_pass_sanitaire_situation_radio'
+                    'prolongation_pass_sanitaire_age_radio'
+                )
+                hideElement(form)
+                if (value === 'plus65') {
+                    this.transitionneVersEtape('situation-plus65')
+                } else if (value === 'moins65') {
+                    this.transitionneVersEtape('situation-moins65')
+                } else {
+                    console.error(`valeur inattendue: ${value}`)
+                }
+            })
+        },
+        'situation-plus65': (form) => {
+            const button = form.querySelector('input[type=submit]')
+            const requiredLabel = 'Cette information est requise'
+            toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
+            form.addEventListener('submit', (event) => {
+                event.preventDefault()
+                const value = getRadioValue(
+                    form,
+                    'prolongation_pass_sanitaire_situation_plus65_radio'
                 )
                 hideElement(form)
                 if (value === 'age' || value === 'janssen') {
+                    if (value === 'janssen') {
+                        this.janssen = true
+                    }
+                    this.transitionneVersEtape('date-derniere-dose')
+                } else {
+                    console.error(`valeur inattendue: ${value}`)
+                }
+            })
+        },
+        'situation-moins65': (form) => {
+            const button = form.querySelector('input[type=submit]')
+            const requiredLabel = 'Cette information est requise'
+            toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
+            form.addEventListener('submit', (event) => {
+                event.preventDefault()
+                const value = getRadioValue(
+                    form,
+                    'prolongation_pass_sanitaire_situation_moins65_radio'
+                )
+                hideElement(form)
+                if (value === 'janssen') {
+                    this.janssen = true
                     this.transitionneVersEtape('date-derniere-dose')
                 } else if (value === 'autre') {
                     this.afficheReponse('pas-concerne')
@@ -71,15 +120,7 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                     hideElement(form)
                     // const dateDerniereDose = new Date(datePicker.value)
                     const dateDerniereDose = dayjs(datePicker.value)
-
-                    const situationForm = document.querySelector(
-                        '#prolongation-pass-sanitaire-situation-form'
-                    )
-                    const situation = getRadioValue(
-                        situationForm,
-                        'prolongation_pass_sanitaire_situation_radio'
-                    )
-                    const delaiEnMois = situation === 'janssen' ? 1 : 6
+                    const delaiEnMois = this.janssen ? 1 : 6
                     const dateEligibiliteRappel = dateDerniereDose.add(
                         delaiEnMois,
                         'month'
@@ -98,10 +139,9 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                     )
 
                     this.afficheReponse('dates', {
-                        'situation':
-                            situation === 'janssen'
-                                ? 'Vous avez été vacciné avec le vaccin <strong>Janssen</strong>.'
-                                : 'Vous avez <strong>65 ans ou plus</strong> et avez été vacciné avec le vaccin Pfizer, Moderna ou AstraZeneca.',
+                        'situation': this.janssen
+                            ? 'Vous avez été vacciné(e) avec le vaccin <strong>Janssen</strong>.'
+                            : 'Vous avez <strong>65 ans ou plus</strong> et avez été vacciné(e) avec le vaccin Pfizer, Moderna ou AstraZeneca.',
                         'date-derniere-dose': dateDerniereDose.format('LL'),
                         'date-eligibilite-rappel': dateEligibiliteRappel.format('LL'),
                         'date-limite-rappel': dateLimiteRappel.format('LL'),

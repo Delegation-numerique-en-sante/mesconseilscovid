@@ -47,6 +47,10 @@ export class Formulaire {
         this.gereBoutonRefaire()
     }
 
+    resetFormulaire(document) {
+        uncheckAllRadio(document)
+    }
+
     gereBoutonRefaire() {
         const boutonRefaire = document.querySelector(`#${this.prefixe}-refaire`)
         showElement(boutonRefaire)
@@ -54,7 +58,7 @@ export class Formulaire {
             event.preventDefault()
             hideElement(boutonRefaire)
             hideSelector(document, '.statut')
-            uncheckAllRadio(document)
+            this.resetFormulaire(document)
             // On fait un reset des intitulés de boutons.
             Array.from(
                 document.querySelectorAll('[data-initial-value]'),

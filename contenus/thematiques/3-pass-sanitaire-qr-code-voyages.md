@@ -342,16 +342,52 @@
 .. question:: Est-ce que la dose de rappel, dite 3<sup>e</sup> dose, est obligatoire pour le pass sanitaire ?
     :level: 3
 
-      <form id="prolongation-pass-sanitaire-situation-form">
+      <form id="prolongation-pass-sanitaire-age-form">
           <fieldset class="required">
-              <legend><h3 id="prolongation-pass-sanitaire-situation-label">Je suis éligible à la dose de rappel car…</h3></legend>
-              <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-situation-label">
-                  <input id="prolongation_pass_sanitaire_situation_radio_age" type="radio" required name="prolongation_pass_sanitaire_situation_radio" value="age">
-                  <label for="prolongation_pass_sanitaire_situation_radio_age">J’ai 65 ans ou plus, et j’ai été vacciné avec Pfizer, Moderna ou AstraZeneca</label>
-                  <input id="prolongation_pass_sanitaire_situation_radio_autre" type="radio" required name="prolongation_pass_sanitaire_situation_radio" value="autre">
-                  <label for="prolongation_pass_sanitaire_situation_radio_autre">J’ai une comorbidité, ou je suis un professionnel de santé (moins de 65 ans)</label>
-                  <input id="prolongation_pass_sanitaire_situation_radio_janssen" type="radio" required name="prolongation_pass_sanitaire_situation_radio" value="janssen">
-                  <label for="prolongation_pass_sanitaire_situation_radio_janssen">J’ai été vacciné avec Janssen (quel que soit mon âge)</label>
+              <legend><h3 id="prolongation-pass-sanitaire-age-label">Je suis éligible à la dose de rappel car…</h3></legend>
+              <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-age-label">
+                  <input id="prolongation_pass_sanitaire_age_radio_plus65" type="radio" required name="prolongation_pass_sanitaire_age_radio" value="plus65">
+                  <label for="prolongation_pass_sanitaire_age_radio_plus65">J’ai 65 ans ou plus</label>
+                  <input id="prolongation_pass_sanitaire_age_radio_moins65" type="radio" required name="prolongation_pass_sanitaire_age_radio" value="moins65">
+                  <label for="prolongation_pass_sanitaire_age_radio_moins65">J’ai moins de 65 ans</label>
+              </div>
+          </fieldset>
+          <div class="form-controls">
+              <div class="button-with-progress">
+                  <p id="aria-description-progress-prolongation-pass-sanitaire-age" class="progress">Il vous reste 2 étapes</p>
+                  <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-prolongation-pass-sanitaire-age">
+              </div>
+          </div>
+      </form>
+
+      <form id="prolongation-pass-sanitaire-situation-plus65-form" hidden>
+          <a href="#" data-precedent="age" class="back-button">Retour</a>
+          <fieldset class="required">
+              <legend><h3 id="prolongation-pass-sanitaire-situation-plus65-label">Ma situation :</h3></legend>
+              <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-situation-plus65-label">
+                  <input id="prolongation_pass_sanitaire_situation_plus65_radio_age" type="radio" required name="prolongation_pass_sanitaire_situation_plus65_radio" value="age">
+                  <label for="prolongation_pass_sanitaire_situation_plus65_radio_age">J’ai été vacciné avec Pfizer, Moderna ou AstraZeneca</label>
+                  <input id="prolongation_pass_sanitaire_situation_plus65_radio_janssen" type="radio" required name="prolongation_pass_sanitaire_situation_plus65_radio" value="janssen">
+                  <label for="prolongation_pass_sanitaire_situation_plus65_radio_janssen">J’ai été vacciné avec Janssen</label>
+              </div>
+          </fieldset>
+          <div class="form-controls">
+              <div class="button-with-progress">
+                  <p id="aria-description-progress-prolongation-pass-sanitaire-situation" class="progress">Il vous reste 1 étape</p>
+                  <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-prolongation-pass-sanitaire-situation">
+              </div>
+          </div>
+      </form>
+
+      <form id="prolongation-pass-sanitaire-situation-moins65-form" hidden>
+          <a href="#" data-precedent="age" class="back-button">Retour</a>
+          <fieldset class="required">
+              <legend><h3 id="prolongation-pass-sanitaire-situation-moins65-label">Ma situation :</h3></legend>
+              <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-situation-moins65-label">
+                  <input id="prolongation_pass_sanitaire_situation_moins65_radio_autre" type="radio" required name="prolongation_pass_sanitaire_situation_moins65_radio" value="autre">
+                  <label for="prolongation_pass_sanitaire_situation_moins65_radio_autre">J’ai une comorbidité, ou je suis un professionnel de santé</label>
+                  <input id="prolongation_pass_sanitaire_situation_moins65_radio_janssen" type="radio" required name="prolongation_pass_sanitaire_situation_moins65_radio" value="janssen">
+                  <label for="prolongation_pass_sanitaire_situation_moins65_radio_janssen">J’ai été vacciné avec Janssen</label>
               </div>
           </fieldset>
           <div class="form-controls">
@@ -363,7 +399,7 @@
       </form>
 
       <form id="prolongation-pass-sanitaire-date-derniere-dose-form" hidden>
-          <a href="#" data-precedent="situation" class="back-button">Retour</a>
+          <a href="#" data-precedent="age" class="back-button">Retour</a>
           <fieldset class="required">
               <legend><h3 id="prolongation-pass-sanitaire-date-derniere-dose-label">La date de ma dernière dose</h3></legend>
               <input type="date" lang="fr" id="prolongation_pass_sanitaire_date_derniere_dose" name="prolongation_pass_sanitaire_date_derniere_dose" required>
@@ -392,8 +428,8 @@
 
       <div id="prolongation-pass-sanitaire-pas-concerne-reponse" class="statut statut-bleu" hidden>
 
-      Si vous avez moins de 65 ans, et que vous êtes à risque de forme grave de Covid en raison d’une comorbidité, ou si vous êtes un professionnel de santé,
-      alors vous pouvez recevoir une **dose de rappel**, mais n’êtes **pas concerné** par la désactivation du pass sanitaire.
+      Si vous avez moins de 65 ans, et que vous êtes à risque de forme grave de Covid en raison d’une comorbidité, ou si vous êtes un(e) professionnel(le) de santé,
+      alors vous pouvez recevoir une **dose de rappel**, mais n’êtes **pas concerné(e)** par la désactivation du pass sanitaire.
 
       </div>
 
