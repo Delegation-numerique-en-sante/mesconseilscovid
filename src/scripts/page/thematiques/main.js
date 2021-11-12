@@ -2,14 +2,10 @@ import applyDetailsSummaryPolyfill from '../../polyfills/details_polyfill'
 
 import { bindImpression } from '../../actions'
 import { bindFeedback, opacityTransition } from '../../feedback'
-import { getLocationPathName } from '../../plausible'
+import { navigueVersUneThematique } from './navigation'
 import { dynamiseLeChoixDuTest } from './choixTestDepistage'
 import { dynamiseLeChoixDuPass } from './choixPassSanitaire'
 import { dynamiseLaProlongationDuPass } from './prolongationPassSanitaire'
-
-export function estPageThematique() {
-    return document.body.classList.contains('page-thematique')
-}
 
 export function pageThematique(app) {
     app.trackPageView(document.location.pathname)
@@ -46,20 +42,6 @@ export function pageThematique(app) {
         app,
         'Navigue vers une thématique depuis une autre thématique'
     )
-}
-
-export function navigueVersUneThematique(app, goal) {
-    const thematiquesLinks = document.querySelectorAll('.thematiques a')
-    Array.from(thematiquesLinks).forEach((thematiquesLink) => {
-        const href = thematiquesLink.getAttribute('href')
-        thematiquesLink.addEventListener('click', (event) => {
-            event.preventDefault()
-            app.plausible(goal, {
-                chemin: `${getLocationPathName()} → ${href}`,
-            })
-            window.location = href
-        })
-    })
 }
 
 function ouvreDetailsSiFragment() {
