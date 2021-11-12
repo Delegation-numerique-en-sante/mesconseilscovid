@@ -605,7 +605,7 @@
 
     <div class="voir-aussi">
 
-    - [Obtenir un passe sanitaire en cas de vaccination à l’étranger]Albanie, Andorre, Arménie, îles Féroé, Islande, Israël, Liechtenstein, Macédoine du Nord, Maroc, Monaco, Norvège, Panama, Royaume-Uni, Saint-Marin, Suisse, Turquie, Ukraine, Vatican. )
+    - [Obtenir un passe sanitaire en cas de vaccination à l’étranger](https://www.sante.fr/obtenir-un-passe-sanitaire-en-cas-de-vaccination-letranger)
 
     </div>
 
