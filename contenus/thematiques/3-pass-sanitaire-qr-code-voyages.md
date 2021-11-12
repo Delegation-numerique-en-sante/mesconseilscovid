@@ -346,6 +346,66 @@
 
       <i>Par exemple : si vous avez reçu votre 2<sup>e</sup> dose le 17 juillet 2021, vous serez éligible à la dose de rappel dès le 17 janvier 2022. Sans cette dose de rappel, vous ne pourrez plus utiliser votre pass sanitaire à partir du 14 février 2022.</i>
 
+      <form id="prolongation-pass-sanitaire-situation-form">
+          <fieldset class="required">
+              <legend><h3 id="prolongation-pass-sanitaire-situation-label">Je suis éligible à la dose de rappel car…</h3></legend>
+              <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-situation-label">
+                  <input id="prolongation_pass_sanitaire_situation_radio_age" type="radio" required name="prolongation_pass_sanitaire_situation_radio" value="age">
+                  <label for="prolongation_pass_sanitaire_situation_radio_age">J’ai 65 ans ou plus, et j’ai été vacciné avec Pfizer, Moderna ou AstraZeneca</label>
+                  <input id="prolongation_pass_sanitaire_situation_radio_janssen" type="radio" required name="prolongation_pass_sanitaire_situation_radio" value="janssen">
+                  <label for="prolongation_pass_sanitaire_situation_radio_janssen">J’ai été vacciné avec Janssen (quel que soit mon âge)</label>
+                  <input id="prolongation_pass_sanitaire_situation_radio_autre" type="radio" required name="prolongation_pass_sanitaire_situation_radio" value="autre">
+                  <label for="prolongation_pass_sanitaire_situation_radio_autre">J’ai une comorbidité, ou je suis un professionnel de santé</label>
+              </div>
+          </fieldset>
+          <div class="form-controls">
+              <div class="button-with-progress">
+                  <p id="aria-description-progress-prolongation-pass-sanitaire-situation" class="progress">Il vous reste 1 étape</p>
+                  <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-prolongation-pass-sanitaire-situation">
+              </div>
+          </div>
+      </form>
+
+      <form id="prolongation-pass-sanitaire-date-derniere-dose-form" hidden>
+          <a href="#" data-precedent="situation" class="back-button">Retour</a>
+          <fieldset class="required">
+              <legend><h3 id="prolongation-pass-sanitaire-date-derniere-dose-label">La date de ma dernière dose</h3></legend>
+              <input type="date" lang="fr" id="prolongation_pass_sanitaire_date_derniere_dose" name="prolongation_pass_sanitaire_date_derniere_dose" required>
+          </fieldset>
+          <div class="form-controls">
+              <div class="button-with-progress">
+                  <p id="aria-description-progress-prolongation-pass-sanitaire-situation" class="progress">C’est la dernière étape !</p>
+                  <input type="submit" class="button button-arrow" value="Terminer" aria-describedby="aria-description-progress-prolongation-pass-sanitaire-situation">
+              </div>
+          </div>
+      </form>
+
+      <div id="prolongation-pass-sanitaire-dates-reponse" class="statut statut-bleu" hidden>
+
+      <p id="situation"></p>
+
+      Vous avez reçu votre dernière dose le <strong id="date-derniere-dose"></strong>.
+
+      Vous pourrez recevoir votre dose de rappel à partir du <strong id="date-eligibilite-rappel"></strong>.
+
+      Si vous la recevez avant le <strong id="date-limite-rappel"></strong>, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.
+
+      En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du <strong id="desactivation-pass-sanitaire"></strong>.
+
+      </div>
+
+      <div id="prolongation-pass-sanitaire-pas-concerne-reponse" class="statut statut-bleu" hidden>
+
+      Si vous avez moins de 65 ans, et que vous êtes à risque de forme grave de Covid en raison d’une comorbidité, ou si vous êtes un professionnel de santé,
+      alors vous pouvez recevoir une **dose de rappel**, mais n’êtes **pas concerné** par la désactivation du pass sanitaire.
+
+      </div>
+
+      <p id="prolongation-pass-sanitaire-refaire" hidden>
+      <a href="#" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
+      </p>
+
+
     - À partir du **15 décembre**, quel que soit votre âge, si vous avez reçu le **vaccin Janssen** depuis plus de **1 mois et 4 semaines,** alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal.
 
       <i>Par exemple : si vous avez reçu votre vaccin Janssen le 12 novembre 2021, vous serez éligible à la dose de rappel dès le 12 décembre 2021. Sans cette dose de rappel, vous ne pourrez plus utiliser votre pass sanitaire à partir du 9 janvier 2022.</i>

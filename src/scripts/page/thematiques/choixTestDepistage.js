@@ -9,7 +9,7 @@ export function dynamiseLeChoixDuTest() {
 
 class FormulaireTestDepistage extends Formulaire {
     constructor() {
-        super('tests-de-depistage')
+        super('tests-de-depistage', 'symptomes')
     }
 
     GESTIONNAIRES = {

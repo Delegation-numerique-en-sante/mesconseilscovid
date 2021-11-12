@@ -2,8 +2,9 @@ import { hideElement, hideSelector, showElement } from '../../affichage'
 import { uncheckAllRadio } from '../../formutils'
 
 export class Formulaire {
-    constructor(prefixe) {
+    constructor(prefixe, nomPremierFormulaire) {
         this.prefixe = prefixe
+        this.nomPremierFormulaire = nomPremierFormulaire
     }
 
     demarre(etape = 'demarrage') {
@@ -34,8 +35,14 @@ export class Formulaire {
         })
     }
 
-    afficheReponse(nom) {
+    afficheReponse(nom, params) {
         const reponse = document.querySelector(`#${this.prefixe}-${nom}-reponse`)
+        for (const name in params) {
+            const elem = reponse.querySelector(`#${name}`)
+            if (elem) {
+                elem.innerHTML = params[name]
+            }
+        }
         showElement(reponse)
         this.gereBoutonRefaire()
     }
@@ -56,8 +63,7 @@ export class Formulaire {
                     inputWithInitial.removeAttribute('data-initial-value')
                 }
             )
-            const nomPremierFormulaire = Object.keys(this.GESTIONNAIRES)[1]
-            this.transitionneVersEtape(nomPremierFormulaire)
+            this.transitionneVersEtape(this.nomPremierFormulaire)
         })
     }
 }
