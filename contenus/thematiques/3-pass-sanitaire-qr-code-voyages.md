@@ -610,10 +610,12 @@
     #### Obtenir un QR code : ressortissants non-européens
 
     Si vous êtes **touriste** de nationalité extra-européenne, vous pouvez vous rendre dans une **pharmacie** pour obtenir un pass sanitaire. Le pharmacien vérifiera la validité de votre certificat de vaccination, et vous fournira un justificatif muni d’un QR code. Ce service pourra vous être facturé jusqu’à **36 €**.
+    
+    Si vous avez été vacciné(e) dans l'un des pays suivants : Albanie, Andorre, Arménie, îles Féroé, Islande, Israël, Liechtenstein, Macédoine du Nord, Maroc, Monaco, Norvège, Panama, Royaume-Uni, Saint-Marin, Suisse, Turquie, Ukraine ou Vatican, vous n'avez pas besoin de convertir votre certificat de vaccination.
 
     <div class="voir-aussi">
 
-    - [Obtenir un passe sanitaire en cas de vaccination à l’étranger](https://www.sante.fr/obtenir-un-passe-sanitaire-en-cas-de-vaccination-letranger)
+    - [Obtenir un passe sanitaire en cas de vaccination à l’étranger]Albanie, Andorre, Arménie, îles Féroé, Islande, Israël, Liechtenstein, Macédoine du Nord, Maroc, Monaco, Norvège, Panama, Royaume-Uni, Saint-Marin, Suisse, Turquie, Ukraine, Vatican. )
 
     </div>
 
