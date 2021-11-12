@@ -37,8 +37,8 @@
 
     <div class="voir-aussi">
 
+    - [Est-ce que la dose de rappel est obligatoire pour le pass sanitaire ?](#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire)
     - [Quel délai respecter avant la dose de rappel ?](#quel-delai-respecter-avant-la-dose-de-rappel-dite-3-e-dose)
-    - [Quel est le vaccin administré pour la dose de rappel ?](#quel-est-le-vaccin-administre-pour-la-dose-de-rappel-dite-3-e-dose)
     - [Où me faire vacciner ?](#ou-me-faire-vacciner)
 
     </div>
