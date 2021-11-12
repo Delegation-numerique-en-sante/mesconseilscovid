@@ -647,7 +647,6 @@
     * recevoir **2 doses** de vaccin à ARNm (**Pfizer** ou **Moderna**), si vous avez reçu une dose de Sinopharm ou Sinovac ;
 
     * recevoir **1 dose** de vaccin à ARNm (**Pfizer** ou **Moderna**), si vous avez reçu 2 doses de Sinopharm ou Sinovac.
- et de 22 à 45 € pour un test antigénique
     Dans les 2 cas, l’injection doit se faire au moins **4 semaines** après la dernière injection de Sinopharm ou Sinovac.
 
     La vaccination sera considérée comme complète **7 jours** après votre dernière injection de vaccin à ARNm, et le **QR code** de l’attestation de vaccination sera alors valable comme **pass sanitaire**.
