@@ -25,7 +25,7 @@
 
    **Non-european nationals** visiting France can convert their extra-european vaccination certificate at a **pharmacy**. You will need to present your **passport** and your existing **vaccination certificate** in paper format. The pharmacy can charge you up to **36 euros** for this procedure.
    
-   If you were vaccinated in one of the following countries, you do not need to convert your vaccination certificate : Albania, Andorra, Armenia, Faroe Islands, Iceland, Israel, Liechtenstein, North Macedonia, Morocco, Monaco, Norway, Panama, United-Kingdom, San Marino, Switzerland, Turkey, Ukraine, Vatican. 
+   If you were vaccinated in one of the following countries, you do not need to convert your vaccination certificate: Albania, Andorra, Armenia, Faroe Islands, Iceland, Israel, Liechtenstein, North Macedonia, Morocco, Monaco, Norway, Panama, United-Kingdom, San Marino, Switzerland, Turkey, Ukraine, Vatican. 
 
    <div class="voir-aussi">
 
@@ -40,7 +40,7 @@
 
    While your request is being processed, a **negative PCR or antigenic test result** will be your temporary health pass (valid for 72h). To find out where to get tested, please click on [this link](https://www.sante.fr/cf/centres-depistage-covid.html) (in French).
 
-   If you were vaccinated in one of the following countries, you do not need to convert your vaccination certificate : Albania, Andorra, Armenia, Faroe Islands, Iceland, Israel, Liechtenstein, North Macedonia, Morocco, Monaco, Norway, Panama, United-Kingdom, San Marino, Switzerland, Turkey, Ukraine, Vatican. 
+   If you were vaccinated in one of the following countries, you do not need to convert your vaccination certificate: Albania, Andorra, Armenia, Faroe Islands, Iceland, Israel, Liechtenstein, North Macedonia, Morocco, Monaco, Norway, Panama, United-Kingdom, San Marino, Switzerland, Turkey, Ukraine, Vatican. 
 
 .. question:: Which means of transport require the health pass (<i>pass sanitaire</i>)?
 
