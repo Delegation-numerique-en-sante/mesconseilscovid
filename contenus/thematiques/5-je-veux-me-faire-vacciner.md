@@ -30,7 +30,7 @@
 
     - Quel que soit le vaccin que vous avez reçu initialement (*Pfizer*, *Moderna*, *AstraZeneca* ou *Janssen*), la dose de rappel se fera **uniquement avec un vaccin à ARN messager** (*Pfizer* ou *Moderna* selon votre situation).
 
-    - Si vous avez eu la Covid **après votre dernière dose**, vous n’êtes **pas éligible** à ce rappel.
+    - Si vous avez eu la Covid **après votre dernière dose**, vous n’êtes **pas éligible** à ce rappel, mais vous pourrez quand même faire [prolonger votre pass sanitaire](#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-pass-sanitaire-apres-le-15-decembre).
 
     </div>
 
@@ -77,6 +77,9 @@
 
 
 .. injection:: pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire
+
+
+.. injection:: pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-pass-sanitaire-apres-le-15-decembre
 
 
 .. question:: Quels sont les facteurs de risque de formes graves de Covid ?
