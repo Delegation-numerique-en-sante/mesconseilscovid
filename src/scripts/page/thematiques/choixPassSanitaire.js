@@ -14,7 +14,7 @@ export function dynamiseLeChoixDuPass() {
 
 class FormulairePassSanitaire extends Formulaire {
     constructor() {
-        super('pass-sanitaire')
+        super('pass-sanitaire', 'vaccination')
     }
 
     GESTIONNAIRES = {

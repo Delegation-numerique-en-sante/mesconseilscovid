@@ -5,6 +5,7 @@ import { bindFeedback, opacityTransition } from '../../feedback'
 import { getLocationPathName } from '../../plausible'
 import { dynamiseLeChoixDuTest } from './choixTestDepistage'
 import { dynamiseLeChoixDuPass } from './choixPassSanitaire'
+import { dynamiseLaProlongationDuPass } from './prolongationPassSanitaire'
 
 export function estPageThematique() {
     return document.body.classList.contains('page-thematique')
@@ -32,6 +33,13 @@ export function pageThematique(app) {
         dynamiseLeChoixDuTest()
     } else if (thematiqueName === 'pass-sanitaire-qr-code-voyages') {
         dynamiseLeChoixDuPass()
+    }
+
+    if (
+        thematiqueName === 'pass-sanitaire-qr-code-voyages' ||
+        thematiqueName === 'je-veux-me-faire-vacciner'
+    ) {
+        dynamiseLaProlongationDuPass()
     }
 
     navigueVersUneThematique(
