@@ -34,7 +34,6 @@
 
     </div>
 
-
     <div class="voir-aussi">
 
     - [Est-ce que la dose de rappel est obligatoire pour le pass sanitaire ?](#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire)
@@ -47,11 +46,22 @@
 .. question:: Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
 
-    **Oui**. Même si elle est communément appelée 3<sup>e</sup> dose, cette dose de rappel concerne également les personnes qui ont finalisé leur schéma vaccinal initial (primo-vaccination) avec 1 seule dose : soit parce qu’elles ont été vaccinées avec le vaccin Janssen, soit parce qu’elles ont eu la Covid avant leur première injection de vaccin.
+    **Oui**, si vous faites partie des **publics visés** par la campagne de rappel ([voir ci-dessus](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)).
 
-    La campagne de rappel s’ouvre progressivement. Pour connaître la liste des publics éligibles aujourd’hui, [consultez notre réponse ci-dessus](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose).
+    Dans votre cas, le rappel sera votre **2<sup>e</sup> dose**.
 
-    Pour connaître le délai à respecter avant la dose de rappel [voir ci-dessous](#quel-delai-respecter-avant-la-dose-de-rappel-dite-3-e-dose).
+    Pour éviter la désactivation de votre **pass sanitaire** après le 15 décembre, vous devrez la recevoir dans un délai de :
+
+    - **6 mois et 4 semaines** si vous avez reçu un vaccin Pfizer, Moderna ou AstraZeneca,
+    - **1 mois et 4 semaines** si vous avez reçu un vaccin Janssen.
+
+
+    <div class="voir-aussi">
+
+    - [Suis-je concerné par la dose de rappel ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
+    - [Quel est le vaccin administré pour la dose de rappel ?](#quel-est-le-vaccin-administre-pour-la-dose-de-rappel-dite-3-e-dose)
+
+    </div>
 
 
 .. question:: Quel délai respecter avant la dose de rappel, dite 3<sup>e</sup> dose ?
