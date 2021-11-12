@@ -622,7 +622,7 @@
 
     <div class="conseil conseil-jaune">
 
-    Attention, les tests de dépistage sont gratuits pour les assurés sociaux français ou européens mais **payants** pour les personnes qui ne bénéficient pas de cette couverture sociale.
+    Attention, les tests de dépistage sont **payants** (43,89 € pour les tests RT-PCR et de 22 à 45 € pour un test antigénique). Si vous êtes assuré social ou européen, ils peuvent êtres pris en charge sous [certaines conditions](/tests-de-depistage.html#les-tests-de-depistage-sont-ils-payants).
 
     </div>
 
@@ -647,7 +647,7 @@
     * recevoir **2 doses** de vaccin à ARNm (**Pfizer** ou **Moderna**), si vous avez reçu une dose de Sinopharm ou Sinovac ;
 
     * recevoir **1 dose** de vaccin à ARNm (**Pfizer** ou **Moderna**), si vous avez reçu 2 doses de Sinopharm ou Sinovac.
-
+ et de 22 à 45 € pour un test antigénique
     Dans les 2 cas, l’injection doit se faire au moins **4 semaines** après la dernière injection de Sinopharm ou Sinovac.
 
     La vaccination sera considérée comme complète **7 jours** après votre dernière injection de vaccin à ARNm, et le **QR code** de l’attestation de vaccination sera alors valable comme **pass sanitaire**.
@@ -656,7 +656,7 @@
 
     <div class="conseil conseil-jaune">
 
-    Attention, les tests de dépistage sont gratuits pour les assurés sociaux français ou européens mais **payants** pour les personnes qui ne bénéficient pas de cette couverture sociale.
+    Attention, les tests de dépistage sont **payants** (43,89 € pour les tests RT-PCR et de 22 à 45 € pour un test antigénique). Si vous êtes assuré social ou européen, ils peuvent êtres pris en charge sous [certaines conditions](/tests-de-depistage.html#les-tests-de-depistage-sont-ils-payants).
 
     </div>
 
