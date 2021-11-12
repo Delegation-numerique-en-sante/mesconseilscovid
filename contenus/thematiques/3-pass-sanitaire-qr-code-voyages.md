@@ -365,7 +365,7 @@
 
     En cas de **contre-indication médicale** (voir la [liste des contre-indications à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination)), vous pouvez demander à votre médecin d’établir un **certificat médical** (formulaire Cerfa n°16183*01). Il faudra envoyer le premier volet du certificat à votre **caisse d’Assurance Maladie**. Après vérifications, elle vous adressera votre **certificat de contre-indication à la vaccination** avec **QR code**, valable comme pass sanitaire en **France uniquement**. Ce certificat restera valable après le 15 décembre.
     
- Il n'existe pas de contre-indication spécifique à la **dose de rappel.** Si vous aviez complété votre schéma vaccinal initial, et que vous êtes maintenant éligible au rappel vaccinal (3e dose <sup>e</sup>), vous ne pouvez pas faire valoir une contre-indication à la vaccination afin de ne pas recevoir cette injection supplémentaire tout en conservant votre pass sanitaire après le 15 décembre. 
+ Il n’existe pas de contre-indication spécifique à la **dose de rappel**. Si vous aviez complété votre schéma vaccinal initial, et que vous êtes maintenant éligible au rappel vaccinal (3<sup>e</sup> dose), vous ne pouvez pas faire valoir une contre-indication à la vaccination afin de ne pas recevoir cette injection supplémentaire tout en conservant votre pass sanitaire après le 15 décembre. 
 
     Attention, si vous ne pouvez pas vous faire vacciner parce que **vous avez eu la Covid** il y a moins de **6 mois**, votre [**certificat de rétablissement**](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) (test de dépistage positif) avec **QR code** fera office de pass sanitaire.
 
