@@ -8,6 +8,7 @@ dayjs.extend(localizedFormat)
 dayjs.extend(minMax)
 
 import { hideElement } from '../../affichage'
+import { addDatePickerPolyfill } from '../../datepicker'
 import {
     getRadioValue,
     toggleFormButtonOnRadioRequired,
@@ -48,8 +49,20 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
         },
         'date-derniere-dose': (form) => {
             const button = form.querySelector('input[type=submit]')
+            const continueLabel = button.value
             const requiredLabel = 'Cette information est requise'
-            toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)
+
+            const updateButton = () => {
+                toggleFormButtonOnTextFieldsRequired(form, continueLabel, requiredLabel)
+            }
+
+            updateButton()
+
+            const datePicker = form.querySelector(
+                '#prolongation_pass_sanitaire_date_derniere_dose'
+            )
+            addDatePickerPolyfill(datePicker, null, updateButton)
+
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
                 const datePicker =
