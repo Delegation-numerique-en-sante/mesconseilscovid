@@ -5,7 +5,6 @@ import { bindFeedback, opacityTransition } from '../../feedback'
 import { getLocationPathName } from '../../plausible'
 import { dynamiseLeChoixDuTest } from './choixTestDepistage'
 import { dynamiseLeChoixDuPass } from './choixPassSanitaire'
-import { dynamiseLeChoixDuDepartement } from './choixDepartement'
 
 export function estPageThematique() {
     return document.body.classList.contains('page-thematique')
@@ -33,8 +32,6 @@ export function pageThematique(app) {
         dynamiseLeChoixDuTest()
     } else if (thematiqueName === 'pass-sanitaire-qr-code-voyages') {
         dynamiseLeChoixDuPass()
-    } else if (thematiqueName === 'conseils-pour-les-enfants') {
-        dynamiseLeChoixDuDepartement()
     }
 
     navigueVersUneThematique(
