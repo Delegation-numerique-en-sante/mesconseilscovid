@@ -6,9 +6,18 @@ from http import HTTPStatus
 from pykeybasebot import Bot
 from roll import HttpError, Roll
 from roll.extensions import cors, options, simple_server, traceback
+from slugify import slugify
 from user_agents import parse
 
 logger = logging.getLogger(__name__)
+
+
+def slugify_title(title):
+    return slugify(
+        title,
+        stopwords=["span", "class", "visually", "hidden", "sup"],
+        replacements=[("’", "'")],
+    )
 
 
 class CoviBot(Bot):
@@ -80,17 +89,23 @@ class FeedbackView:
         except KeyError:
             raise HttpError(HTTPStatus.BAD_REQUEST)
 
+        if page.endswith(".html"):
+            url = f"https://mesconseilscovid.sante.gouv.fr/{page}"
+        else:
+            url = f"https://mesconseilscovid.sante.gouv.fr/#{page}"
+
         # Facultatif: question (pages thématiques)
         question = payload.get("question")
         if question:
-            page += f" → {question}"
+            url = f"{url}#{slugify_title(question)}"
+
+        emoji = self.KIND_EMOJI.get(kind, ":question:")
+        message = f"{emoji} {message}\n{url}"
 
         # Facultatif: navigateur
         user_agent = request.headers.get("USER-AGENT")
         if user_agent:
-            message += f" [envoyé depuis {parse(user_agent)}]"
-
-        message = f"{self.KIND_EMOJI.get(kind, ':question:')} ({page}): {message}"
+            message += f"\n[envoyé depuis {parse(user_agent)}]"
 
         if request.host.startswith("127.0.0.1"):
             print(message)

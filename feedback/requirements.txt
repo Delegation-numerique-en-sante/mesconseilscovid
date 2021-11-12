@@ -26,10 +26,14 @@ mypy-extensions==0.4.3
     # via typing-inspect
 pykeybasebot==0.2.1
     # via mesconseilscovid-feedback (setup.py)
+python-slugify==5.0.2
+    # via mesconseilscovid-feedback (setup.py)
 roll==0.13.0
     # via mesconseilscovid-feedback (setup.py)
 stringcase==1.2.0
     # via dataclasses-json
+text-unidecode==1.3
+    # via python-slugify
 typing-extensions==3.10.0.2
     # via
     #   pykeybasebot
