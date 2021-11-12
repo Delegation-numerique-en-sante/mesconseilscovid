@@ -348,10 +348,10 @@
               <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-situation-label">
                   <input id="prolongation_pass_sanitaire_situation_radio_age" type="radio" required name="prolongation_pass_sanitaire_situation_radio" value="age">
                   <label for="prolongation_pass_sanitaire_situation_radio_age">J’ai 65 ans ou plus, et j’ai été vacciné avec Pfizer, Moderna ou AstraZeneca</label>
+                  <input id="prolongation_pass_sanitaire_situation_radio_autre" type="radio" required name="prolongation_pass_sanitaire_situation_radio" value="autre">
+                  <label for="prolongation_pass_sanitaire_situation_radio_autre">J’ai une comorbidité, ou je suis un professionnel de santé (moins de 65 ans)</label>
                   <input id="prolongation_pass_sanitaire_situation_radio_janssen" type="radio" required name="prolongation_pass_sanitaire_situation_radio" value="janssen">
                   <label for="prolongation_pass_sanitaire_situation_radio_janssen">J’ai été vacciné avec Janssen (quel que soit mon âge)</label>
-                  <input id="prolongation_pass_sanitaire_situation_radio_autre" type="radio" required name="prolongation_pass_sanitaire_situation_radio" value="autre">
-                  <label for="prolongation_pass_sanitaire_situation_radio_autre">J’ai une comorbidité, ou je suis un professionnel de santé</label>
               </div>
           </fieldset>
           <div class="form-controls">
