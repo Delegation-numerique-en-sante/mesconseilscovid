@@ -358,7 +358,7 @@
 
       <form id="prolongation-pass-sanitaire-age-form" hidden>
           <fieldset class="required">
-              <legend><h3 id="prolongation-pass-sanitaire-age-label">Je suis éligible à la dose de rappel car…</h3></legend>
+              <legend><h3 id="prolongation-pass-sanitaire-age-label">Mon âge</h3></legend>
               <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-age-label">
                   <input id="prolongation_pass_sanitaire_age_radio_plus65" type="radio" required name="prolongation_pass_sanitaire_age_radio" value="plus65">
                   <label for="prolongation_pass_sanitaire_age_radio_plus65">J’ai 65 ans ou plus</label>
