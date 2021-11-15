@@ -75,7 +75,7 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                     'prolongation_pass_sanitaire_vaccination_initiale_radio'
                 )
                 hideElement(form)
-                if (value === 'age' || value === 'janssen') {
+                if (value === 'autre' || value === 'janssen') {
                     if (value === 'janssen') {
                         this.janssen = true
                     }
