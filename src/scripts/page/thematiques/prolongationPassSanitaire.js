@@ -53,7 +53,7 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                 )
                 hideElement(form)
                 if (value === 'plus65') {
-                    this.transitionneVersEtape('situation-plus65')
+                    this.transitionneVersEtape('vaccination-initiale')
                 } else if (value === 'moins65') {
                     this.transitionneVersEtape('situation-moins65')
                 } else {
@@ -61,7 +61,7 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                 }
             })
         },
-        'situation-plus65': (form) => {
+        'vaccination-initiale': (form) => {
             const button = form.querySelector('input[type=submit]')
             const requiredLabel = 'Cette information est requise'
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
@@ -69,7 +69,7 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                 event.preventDefault()
                 const value = getRadioValue(
                     form,
-                    'prolongation_pass_sanitaire_situation_plus65_radio'
+                    'prolongation_pass_sanitaire_vaccination_initiale_radio'
                 )
                 hideElement(form)
                 if (value === 'age' || value === 'janssen') {
