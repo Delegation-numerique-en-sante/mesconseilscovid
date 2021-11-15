@@ -339,7 +339,7 @@
     </div>
 
 
-.. question:: Est-ce que la dose de rappel, dite 3<sup>e</sup> dose, est obligatoire pour le pass sanitaire ?
+.. question:: Quand faut-il que je reçoive la 3<sup>e</sup>dose pour conserver mon pass sanitaire après le 15 décembre ?
     :level: 3
 
     - À partir du **15 décembre**, si vous avez plus de **65 ans** et que votre dernière dose date de plus de **6 mois et 4 semaines**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal (dit 3<sup>e</sup> dose).
