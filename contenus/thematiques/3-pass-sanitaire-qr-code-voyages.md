@@ -342,7 +342,21 @@
 .. question:: Est-ce que la dose de rappel, dite 3<sup>e</sup> dose, est obligatoire pour le pass sanitaire ?
     :level: 3
 
-      <form id="prolongation-pass-sanitaire-age-form">
+      <form id="prolongation-pass-sanitaire-demarrage-form">
+          <fieldset>
+              <legend>
+                  Suis-je concerné par la <strong>dose de rappel</strong> ? À partir de <strong>quelle date</strong> pourrai-je la recevoir ? Quelle est la date limite pour ne pas perdre mon <strong>pass sanitaire</strong> ?
+              </legend>
+          </fieldset>
+          <div class="form-controls">
+              <div class="button-with-progress">
+                  <p></p>
+                  <input type="submit" class="button button-arrow" value=" C’est parti !   ">
+              </div>
+          </div>
+      </form>
+
+      <form id="prolongation-pass-sanitaire-age-form" hidden>
           <fieldset class="required">
               <legend><h3 id="prolongation-pass-sanitaire-age-label">Je suis éligible à la dose de rappel car…</h3></legend>
               <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-age-label">

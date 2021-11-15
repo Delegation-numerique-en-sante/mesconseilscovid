@@ -19,7 +19,7 @@ import { Formulaire } from './formulaire'
 
 export function dynamiseLaProlongationDuPass() {
     const formulaire = new FormulaireProlongationPassSanitaire()
-    formulaire.demarre('age')
+    formulaire.demarre()
 }
 
 class FormulaireProlongationPassSanitaire extends Formulaire {
@@ -34,6 +34,13 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
     }
 
     GESTIONNAIRES = {
+        'demarrage': (form) => {
+            form.addEventListener('submit', (event) => {
+                event.preventDefault()
+                hideElement(form)
+                this.transitionneVersEtape('age')
+            })
+        },
         'age': (form) => {
             const button = form.querySelector('input[type=submit]')
             const requiredLabel = 'Cette information est requise'
