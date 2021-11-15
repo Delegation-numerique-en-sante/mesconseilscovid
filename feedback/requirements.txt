@@ -30,7 +30,7 @@ roll==0.13.0
     # via mesconseilscovid-feedback (setup.py)
 stringcase==1.2.0
     # via dataclasses-json
-typing-extensions==3.10.0.2
+typing-extensions==4.0.0
     # via
     #   pykeybasebot
     #   typing-inspect
