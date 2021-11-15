@@ -430,7 +430,7 @@
 
       <div id="prolongation-pass-sanitaire-dates-reponse" class="statut statut-bleu" hidden>
 
-      <p id="situation"></p>
+      Vous avez <strong id="age"></strong> et avez été vacciné(e) avec le vaccin <span id="vaccin"></span>.
 
       Vous avez reçu votre dernière dose le <strong id="date-derniere-dose"></strong>.
 
