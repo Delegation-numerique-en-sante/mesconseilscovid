@@ -170,7 +170,10 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         await remplirDateDerniereDose(page, '2021-06-17')
 
         const statut = await recuperationStatut(page, 'dates')
-        assert.include(statut, 'Vous avez été vacciné(e) avec le vaccin Janssen.')
+        assert.include(
+            statut,
+            'Vous avez 65 ans ou plus et avez été vacciné(e) avec le vaccin Janssen.'
+        )
         assert.include(statut, 'Vous avez reçu votre dernière dose le 17 juin 2021.')
         assert.include(
             statut,
@@ -198,7 +201,10 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         await remplirDateDerniereDose(page, '2021-06-17')
 
         const statut = await recuperationStatut(page, 'dates')
-        assert.include(statut, 'Vous avez été vacciné(e) avec le vaccin Janssen.')
+        assert.include(
+            statut,
+            'Vous avez moins de 65 ans et avez été vacciné(e) avec le vaccin Janssen.'
+        )
         assert.include(statut, 'Vous avez reçu votre dernière dose le 17 juin 2021.')
         assert.include(
             statut,
