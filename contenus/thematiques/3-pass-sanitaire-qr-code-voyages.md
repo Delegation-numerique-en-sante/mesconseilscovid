@@ -396,12 +396,14 @@
       <form id="prolongation-pass-sanitaire-situation-moins65-form" hidden>
           <a href="#" data-precedent="age" class="back-button">Retour</a>
           <fieldset class="required">
-              <legend><h3 id="prolongation-pass-sanitaire-situation-moins65-label">Ma situation :</h3></legend>
+              <legend><h3 id="prolongation-pass-sanitaire-situation-moins65-label">Ma situation</h3></legend>
               <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-situation-moins65-label">
-                  <input id="prolongation_pass_sanitaire_situation_moins65_radio_autre" type="radio" required name="prolongation_pass_sanitaire_situation_moins65_radio" value="autre">
-                  <label for="prolongation_pass_sanitaire_situation_moins65_radio_autre">J’ai une comorbidité, ou je suis un professionnel de santé</label>
+                  <input id="prolongation_pass_sanitaire_situation_moins65_radio_comorbidite" type="radio" required name="prolongation_pass_sanitaire_situation_moins65_radio" value="autre">
+                  <label for="prolongation_pass_sanitaire_situation_moins65_radio_comorbidite">J’ai une comorbidité (risque de forme grave)</label>
+                  <input id="prolongation_pass_sanitaire_situation_moins65_radio_pro_sante" type="radio" required name="prolongation_pass_sanitaire_situation_moins65_radio" value="autre">
+                  <label for="prolongation_pass_sanitaire_situation_moins65_radio_pro_sante">Je suis un professionnel de santé</label>
                   <input id="prolongation_pass_sanitaire_situation_moins65_radio_janssen" type="radio" required name="prolongation_pass_sanitaire_situation_moins65_radio" value="janssen">
-                  <label for="prolongation_pass_sanitaire_situation_moins65_radio_janssen">J’ai été vacciné avec Janssen</label>
+                  <label for="prolongation_pass_sanitaire_situation_moins65_radio_janssen">J’ai été vacciné avec le vaccin Janssen</label>
               </div>
           </fieldset>
           <div class="form-controls">
