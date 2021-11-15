@@ -25,11 +25,13 @@ export function dynamiseLaProlongationDuPass() {
 class FormulaireProlongationPassSanitaire extends Formulaire {
     constructor() {
         super('prolongation-pass-sanitaire', 'age')
+        this.age = undefined
         this.janssen = false
     }
 
     resetFormulaire(document) {
         uncheckAllRadio(document)
+        this.age = undefined
         this.janssen = false
     }
 
@@ -51,6 +53,7 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                     form,
                     'prolongation_pass_sanitaire_age_radio'
                 )
+                this.age = value
                 hideElement(form)
                 if (value === 'plus65') {
                     this.transitionneVersEtape('vaccination-initiale')
@@ -146,9 +149,13 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                     )
 
                     this.afficheReponse('dates', {
-                        'situation': this.janssen
-                            ? 'Vous avez été vacciné(e) avec le vaccin <strong>Janssen</strong>.'
-                            : 'Vous avez <strong>65 ans ou plus</strong> et avez été vacciné(e) avec le vaccin Pfizer, Moderna ou AstraZeneca.',
+                        'age':
+                            this.age === 'plus65'
+                                ? '65 ans ou plus'
+                                : 'moins de 65 ans',
+                        'vaccin': this.janssen
+                            ? 'Janssen'
+                            : 'Pfizer, Moderna ou AstraZeneca',
                         'date-derniere-dose': dateDerniereDose.format('LL'),
                         'date-eligibilite-rappel': dateEligibiliteRappel.format('LL'),
                         'date-limite-rappel': dateLimiteRappel.format('LL'),
