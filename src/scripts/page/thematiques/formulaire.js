@@ -38,7 +38,7 @@ export class Formulaire {
     afficheReponse(nom, params) {
         const reponse = document.querySelector(`#${this.prefixe}-${nom}-reponse`)
         for (const name in params) {
-            const elem = reponse.querySelector(`#${name}`)
+            const elem = reponse.querySelector(`.${name}`)
             if (elem) {
                 elem.innerHTML = params[name]
             }

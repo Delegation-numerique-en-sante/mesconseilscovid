@@ -430,15 +430,15 @@
 
       <div id="prolongation-pass-sanitaire-dates-reponse" class="statut statut-bleu" hidden>
 
-      Vous avez <strong id="age"></strong> et avez été vacciné(e) avec le vaccin <span id="vaccin"></span>.
+      Vous avez <strong class="age"></strong> et avez été vacciné(e) avec le vaccin <span class="vaccin"></span>.
 
-      Vous avez reçu votre dernière dose le <strong id="date-derniere-dose"></strong>.
+      Vous avez reçu votre dernière dose le <strong class="date-derniere-dose"></strong>.
 
-      Vous pourrez recevoir votre dose de rappel à partir du <strong id="date-eligibilite-rappel"></strong>.
+      Vous pourrez recevoir votre dose de rappel à partir du <strong class="date-eligibilite-rappel"></strong>.
 
-      Si vous la recevez avant le <strong id="date-limite-rappel"></strong>, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.
+      Si vous la recevez avant le <strong class="date-limite-rappel"></strong>, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.
 
-      En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du <strong id="desactivation-pass-sanitaire"></strong>.
+      En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du <strong class="desactivation-pass-sanitaire"></strong>.
 
       </div>
 
