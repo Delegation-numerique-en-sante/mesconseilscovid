@@ -161,7 +161,7 @@
 .. question:: Les tests de dépistage sont-ils payants ?
     :level: 3
 
-    Depuis le **15 octobre 2021**, les tests de dépistage ne sont pris en charge par l’Assurance maladie que dans les cas suivants (sur présentation d’un justificatif) :
+    Les tests de dépistage sont pris en charge par l’Assurance Maladie **dans les cas suivants** (sur présentation d’un justificatif) :
 
     * personnes ayant un **schéma vaccinal complet** ou une **contre-indication** à la vaccination ;
     * personnes ayant un **certificat de rétablissement** de moins de 6 mois ;
