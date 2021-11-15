@@ -224,10 +224,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         let formLegend = await page.waitForSelector(
             '#prolongation-pass-sanitaire-age-form legend h3'
         )
-        assert.equal(
-            await formLegend.innerText(),
-            'Je suis éligible à la dose de rappel car…'
-        )
+        assert.equal(await formLegend.innerText(), 'Mon âge')
 
         await remplirAge(page, 'plus65')
 
@@ -246,10 +243,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         formLegend = await page.waitForSelector(
             '#prolongation-pass-sanitaire-age-form legend h3'
         )
-        assert.equal(
-            await formLegend.innerText(),
-            'Je suis éligible à la dose de rappel car…'
-        )
+        assert.equal(await formLegend.innerText(), 'Mon âge')
     })
 
     it('Bouton retour (date dernière dose)', async function () {
@@ -262,10 +256,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         let formLegend = await page.waitForSelector(
             '#prolongation-pass-sanitaire-age-form legend h3'
         )
-        assert.equal(
-            await formLegend.innerText(),
-            'Je suis éligible à la dose de rappel car…'
-        )
+        assert.equal(await formLegend.innerText(), 'Mon âge')
 
         await remplirAge(page, 'plus65')
         await remplirSituationPlus65(page, 'age')
@@ -287,10 +278,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         formLegend = await page.waitForSelector(
             '#prolongation-pass-sanitaire-age-form legend h3'
         )
-        assert.equal(
-            await formLegend.innerText(),
-            'Je suis éligible à la dose de rappel car…'
-        )
+        assert.equal(await formLegend.innerText(), 'Mon âge')
     })
 
     it('Bouton recommencer', async function () {
@@ -303,10 +291,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         let formLegend = await page.waitForSelector(
             '#prolongation-pass-sanitaire-age-form legend h3'
         )
-        assert.equal(
-            await formLegend.innerText(),
-            'Je suis éligible à la dose de rappel car…'
-        )
+        assert.equal(await formLegend.innerText(), 'Mon âge')
 
         await remplirAge(page, 'plus65')
         await remplirSituationPlus65(page, 'age')
@@ -328,9 +313,6 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         formLegend = await page.waitForSelector(
             '#prolongation-pass-sanitaire-age-form legend h3'
         )
-        assert.equal(
-            await formLegend.innerText(),
-            'Je suis éligible à la dose de rappel car…'
-        )
+        assert.equal(await formLegend.innerText(), 'Mon âge')
     })
 })
