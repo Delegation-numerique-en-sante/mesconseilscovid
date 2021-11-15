@@ -1,5 +1,17 @@
 import { assert } from 'chai'
 
+async function cEstParti(page) {
+    const summary = await page.waitForSelector(
+        'details#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire summary'
+    )
+    await summary.click()
+
+    const bouton = await page.waitForSelector(
+        '#prolongation-pass-sanitaire-demarrage-form >> text="C’est parti !"'
+    )
+    await bouton.click()
+}
+
 async function remplirAge(page, reponse) {
     const checkbox_label = await page.waitForSelector(
         `#prolongation-pass-sanitaire-age-form label[for="prolongation_pass_sanitaire_age_radio_${reponse}"]`
@@ -58,10 +70,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const summary = await page.waitForSelector(
-            'details#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire summary'
-        )
-        await summary.click()
+        await cEstParti(page)
 
         await remplirAge(page, 'plus65')
         await remplirSituationPlus65(page, 'age')
@@ -92,10 +101,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const summary = await page.waitForSelector(
-            'details#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire summary'
-        )
-        await summary.click()
+        await cEstParti(page)
 
         await remplirAge(page, 'plus65')
         await remplirSituationPlus65(page, 'age')
@@ -126,10 +132,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const summary = await page.waitForSelector(
-            'details#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire summary'
-        )
-        await summary.click()
+        await cEstParti(page)
 
         await remplirAge(page, 'plus65')
         await remplirSituationPlus65(page, 'age')
@@ -160,10 +163,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const summary = await page.waitForSelector(
-            'details#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire summary'
-        )
-        await summary.click()
+        await cEstParti(page)
 
         await remplirAge(page, 'plus65')
         await remplirSituationPlus65(page, 'janssen')
@@ -191,10 +191,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const summary = await page.waitForSelector(
-            'details#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire summary'
-        )
-        await summary.click()
+        await cEstParti(page)
 
         await remplirAge(page, 'moins65')
         await remplirSituationMoins65(page, 'janssen')
@@ -222,10 +219,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const summary = await page.waitForSelector(
-            'details#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire summary'
-        )
-        await summary.click()
+        await cEstParti(page)
 
         let formLegend = await page.waitForSelector(
             '#prolongation-pass-sanitaire-age-form legend h3'
@@ -263,10 +257,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const summary = await page.waitForSelector(
-            'details#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire summary'
-        )
-        await summary.click()
+        await cEstParti(page)
 
         let formLegend = await page.waitForSelector(
             '#prolongation-pass-sanitaire-age-form legend h3'
@@ -307,10 +298,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const summary = await page.waitForSelector(
-            'details#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire summary'
-        )
-        await summary.click()
+        await cEstParti(page)
 
         let formLegend = await page.waitForSelector(
             '#prolongation-pass-sanitaire-age-form legend h3'
