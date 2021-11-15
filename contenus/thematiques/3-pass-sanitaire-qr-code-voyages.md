@@ -374,15 +374,15 @@
           </div>
       </form>
 
-      <form id="prolongation-pass-sanitaire-situation-plus65-form" hidden>
+      <form id="prolongation-pass-sanitaire-vaccination-initiale-form" hidden>
           <a href="#" data-precedent="age" class="back-button">Retour</a>
           <fieldset class="required">
-              <legend><h3 id="prolongation-pass-sanitaire-situation-plus65-label">Ma situation :</h3></legend>
-              <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-situation-plus65-label">
-                  <input id="prolongation_pass_sanitaire_situation_plus65_radio_age" type="radio" required name="prolongation_pass_sanitaire_situation_plus65_radio" value="age">
-                  <label for="prolongation_pass_sanitaire_situation_plus65_radio_age">J’ai été vacciné avec Pfizer, Moderna ou AstraZeneca</label>
-                  <input id="prolongation_pass_sanitaire_situation_plus65_radio_janssen" type="radio" required name="prolongation_pass_sanitaire_situation_plus65_radio" value="janssen">
-                  <label for="prolongation_pass_sanitaire_situation_plus65_radio_janssen">J’ai été vacciné avec Janssen</label>
+              <legend><h3 id="prolongation-pass-sanitaire-vaccination-initiale-label">Ma vaccination initiale</h3></legend>
+              <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-vaccination-initiale-label">
+                  <input id="prolongation_pass_sanitaire_vaccination_initiale_radio_autre" type="radio" required name="prolongation_pass_sanitaire_vaccination_initiale_radio" value="autre">
+                  <label for="prolongation_pass_sanitaire_vaccination_initiale_radio_autre">J’ai été vacciné avec Pfizer, Moderna ou AstraZeneca</label>
+                  <input id="prolongation_pass_sanitaire_vaccination_initiale_radio_janssen" type="radio" required name="prolongation_pass_sanitaire_vaccination_initiale_radio" value="janssen">
+                  <label for="prolongation_pass_sanitaire_vaccination_initiale_radio_janssen">J’ai été vacciné avec Janssen</label>
               </div>
           </fieldset>
           <div class="form-controls">

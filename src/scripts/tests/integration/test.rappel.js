@@ -24,14 +24,14 @@ async function remplirAge(page, reponse) {
     await bouton.click()
 }
 
-async function remplirSituationPlus65(page, reponse) {
+async function remplirVaccinationInitiale(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#prolongation-pass-sanitaire-situation-plus65-form label[for="prolongation_pass_sanitaire_situation_plus65_radio_${reponse}"]`
+        `#prolongation-pass-sanitaire-vaccination-initiale-form label[for="prolongation_pass_sanitaire_vaccination_initiale_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#prolongation-pass-sanitaire-situation-plus65-form >> text="Continuer"'
+        '#prolongation-pass-sanitaire-vaccination-initiale-form >> text="Continuer"'
     )
     await bouton.click()
 }
@@ -73,7 +73,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         await cEstParti(page)
 
         await remplirAge(page, 'plus65')
-        await remplirSituationPlus65(page, 'age')
+        await remplirVaccinationInitiale(page, 'autre')
         await remplirDateDerniereDose(page, '2021-04-17')
 
         const statut = await recuperationStatut(page, 'dates')
@@ -104,7 +104,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         await cEstParti(page)
 
         await remplirAge(page, 'plus65')
-        await remplirSituationPlus65(page, 'age')
+        await remplirVaccinationInitiale(page, 'autre')
         await remplirDateDerniereDose(page, '2021-05-17')
 
         const statut = await recuperationStatut(page, 'dates')
@@ -135,7 +135,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         await cEstParti(page)
 
         await remplirAge(page, 'plus65')
-        await remplirSituationPlus65(page, 'age')
+        await remplirVaccinationInitiale(page, 'autre')
         await remplirDateDerniereDose(page, '2021-06-17')
 
         const statut = await recuperationStatut(page, 'dates')
@@ -166,7 +166,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         await cEstParti(page)
 
         await remplirAge(page, 'plus65')
-        await remplirSituationPlus65(page, 'janssen')
+        await remplirVaccinationInitiale(page, 'janssen')
         await remplirDateDerniereDose(page, '2021-06-17')
 
         const statut = await recuperationStatut(page, 'dates')
@@ -229,13 +229,13 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         await remplirAge(page, 'plus65')
 
         formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-situation-plus65-form legend h3'
+            '#prolongation-pass-sanitaire-vaccination-initiale-form legend h3'
         )
-        assert.equal(await formLegend.innerText(), 'Ma situation :')
+        assert.equal(await formLegend.innerText(), 'Ma vaccination initiale')
 
         // On clique sur le bouton retour.
         const bouton = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-situation-plus65-form >> text="Retour"'
+            '#prolongation-pass-sanitaire-vaccination-initiale-form >> text="Retour"'
         )
         await bouton.click()
 
@@ -259,7 +259,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         assert.equal(await formLegend.innerText(), 'Mon âge')
 
         await remplirAge(page, 'plus65')
-        await remplirSituationPlus65(page, 'age')
+        await remplirVaccinationInitiale(page, 'autre')
 
         formLegend = await page.waitForSelector(
             '#prolongation-pass-sanitaire-date-derniere-dose-form legend h3'
@@ -294,7 +294,7 @@ describe('Rappel et prolongation du pass sanitaire', function () {
         assert.equal(await formLegend.innerText(), 'Mon âge')
 
         await remplirAge(page, 'plus65')
-        await remplirSituationPlus65(page, 'age')
+        await remplirVaccinationInitiale(page, 'autre')
 
         formLegend = await page.waitForSelector(
             '#prolongation-pass-sanitaire-date-derniere-dose-form legend h3'
