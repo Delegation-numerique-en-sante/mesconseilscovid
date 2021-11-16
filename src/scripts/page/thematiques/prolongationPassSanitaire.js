@@ -27,12 +27,14 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
         super('prolongation-pass-sanitaire', 'age')
         this.age = undefined
         this.janssen = false
+        this.prolongationPass = undefined
     }
 
     resetFormulaire(document) {
         uncheckAllRadio(document)
         this.age = undefined
         this.janssen = false
+        this.prolongationPass = undefined
     }
 
     GESTIONNAIRES = {
@@ -55,10 +57,8 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                 )
                 this.age = value
                 hideElement(form)
-                if (value === 'plus65') {
+                if (value === 'plus65' || value === 'moins65') {
                     this.transitionneVersEtape('vaccination-initiale')
-                } else if (value === 'moins65') {
-                    this.transitionneVersEtape('situation-moins65')
                 } else {
                     console.error(`valeur inattendue: ${value}`)
                 }
@@ -75,11 +75,17 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                     'prolongation_pass_sanitaire_vaccination_initiale_radio'
                 )
                 hideElement(form)
-                if (value === 'autre' || value === 'janssen') {
-                    if (value === 'janssen') {
-                        this.janssen = true
-                    }
+                if (value === 'janssen') {
+                    this.janssen = true
+                    this.prolongationPass = true
                     this.transitionneVersEtape('date-derniere-dose')
+                } else if (value === 'autre') {
+                    if (this.age === 'plus65') {
+                        this.prolongationPass = true
+                        this.transitionneVersEtape('date-derniere-dose')
+                    } else {
+                        this.transitionneVersEtape('situation-moins65')
+                    }
                 } else {
                     console.error(`valeur inattendue: ${value}`)
                 }
@@ -96,8 +102,8 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                     'prolongation_pass_sanitaire_situation_moins65_radio'
                 )
                 hideElement(form)
-                if (value === 'janssen') {
-                    this.janssen = true
+                if (value === 'comorbidite' || value === 'pro_sante') {
+                    this.prolongationPass = false
                     this.transitionneVersEtape('date-derniere-dose')
                 } else if (value === 'autre') {
                     this.afficheReponse('pas-concerne')
@@ -148,19 +154,26 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                         dateDerniereDose.add(delaiEnMois, 'month').add(5, 'week')
                     )
 
-                    this.afficheReponse('dates', {
+                    let params = {
                         'age':
                             this.age === 'plus65'
-                                ? '65 ans ou plus'
-                                : 'moins de 65 ans',
+                                ? '65 ans ou plus'
+                                : 'moins de 65 ans',
                         'vaccin': this.janssen
                             ? 'Janssen'
                             : 'Pfizer, Moderna ou AstraZeneca',
                         'date-derniere-dose': dateDerniereDose.format('LL'),
                         'date-eligibilite-rappel': dateEligibiliteRappel.format('LL'),
-                        'date-limite-rappel': dateLimiteRappel.format('LL'),
-                        'desactivation-pass-sanitaire': dateLimitePass.format('LL'),
-                    })
+                    }
+
+                    if (this.prolongationPass) {
+                        params['date-limite-rappel'] = dateLimiteRappel.format('LL')
+                        params['desactivation-pass-sanitaire'] =
+                            dateLimitePass.format('LL')
+                        this.afficheReponse('rappel-et-pass', params)
+                    } else {
+                        this.afficheReponse('rappel', params)
+                    }
                 }
             })
         },
