@@ -12,10 +12,10 @@ export class Formulaire {
         this.appelleGestionnaire(form, etape)
     }
 
-    transitionneVersEtape(etape) {
+    transitionneVersEtape(etape, precedent) {
         const form = document.querySelector(`#${this.prefixe}-${etape}-form`)
         showElement(form)
-        this.gereBoutonRetour(form)
+        this.gereBoutonRetour(form, precedent)
         this.appelleGestionnaire(form, etape)
     }
 
@@ -24,12 +24,12 @@ export class Formulaire {
         gestionnaire(form)
     }
 
-    gereBoutonRetour(form) {
+    gereBoutonRetour(form, precedent) {
         const boutonRetour = form.querySelector('.back-button')
         if (!boutonRetour) return
         boutonRetour.addEventListener('click', (event) => {
             event.preventDefault()
-            const etapePrecedente = boutonRetour.dataset.precedent
+            const etapePrecedente = precedent || boutonRetour.dataset.precedent
             hideElement(form)
             this.transitionneVersEtape(etapePrecedente)
         })
