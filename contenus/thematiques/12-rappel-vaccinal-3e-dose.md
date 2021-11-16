@@ -4,7 +4,7 @@
 
 <header>
     <p class="big">
-        Au bout de quelques mois et face aux nouveaux variants, l’efficacité des vaccins diminue. Alors, comme pour d’autres maladie, par exemple la grippe saisonnière, il est recommandé de faire un rappel vaccinal pour booster son immunité.
+        Au bout de quelques mois et face aux nouveaux variants, l’efficacité des vaccins diminue. Alors, comme pour d’autres maladies, par exemple la grippe saisonnière, il est recommandé de faire un rappel vaccinal pour booster son immunité.
     </p>
     <p class="big">
         En se vaccinant, on participe aussi à freiner le développement du virus parmi la population et sa mutation.
