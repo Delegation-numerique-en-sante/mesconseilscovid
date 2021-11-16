@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-11-16
+
+* mise à jour des informations sur les autotests supervisés
+* ajout d’un mini-questionnaire sur dose de rappel et pass sanitaire
+
 ## 2021-11-13
 
 * masque obligatoire en primaire partout
