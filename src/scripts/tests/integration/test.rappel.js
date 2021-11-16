@@ -1,11 +1,6 @@
 import { assert } from 'chai'
 
 async function cEstParti(page) {
-    const summary = await page.waitForSelector(
-        'details#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire summary'
-    )
-    await summary.click()
-
     const bouton = await page.waitForSelector(
         '#prolongation-pass-sanitaire-demarrage-form >> text="C’est parti !"'
     )
@@ -68,7 +63,9 @@ describe('Rappel et prolongation du pass sanitaire', function () {
     it('Plus de 65 ans et 17 avril', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
+        await page.goto(
+            'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+        )
 
         await cEstParti(page)
 
@@ -99,7 +96,9 @@ describe('Rappel et prolongation du pass sanitaire', function () {
     it('Plus de 65 ans et 17 mai', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
+        await page.goto(
+            'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+        )
 
         await cEstParti(page)
 
@@ -130,7 +129,9 @@ describe('Rappel et prolongation du pass sanitaire', function () {
     it('Plus de 65 ans et 17 juin', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
+        await page.goto(
+            'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+        )
 
         await cEstParti(page)
 
@@ -161,7 +162,9 @@ describe('Rappel et prolongation du pass sanitaire', function () {
     it('Janssen, plus de 65 et 17 juin', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
+        await page.goto(
+            'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+        )
 
         await cEstParti(page)
 
@@ -192,7 +195,9 @@ describe('Rappel et prolongation du pass sanitaire', function () {
     it('Janssen, moins de 65 et 17 juin', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
+        await page.goto(
+            'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+        )
 
         await cEstParti(page)
 
@@ -223,7 +228,9 @@ describe('Rappel et prolongation du pass sanitaire', function () {
     it('Bouton retour (situation)', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
+        await page.goto(
+            'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+        )
 
         await cEstParti(page)
 
@@ -255,7 +262,9 @@ describe('Rappel et prolongation du pass sanitaire', function () {
     it('Bouton retour (date dernière dose)', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
+        await page.goto(
+            'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+        )
 
         await cEstParti(page)
 
@@ -290,7 +299,9 @@ describe('Rappel et prolongation du pass sanitaire', function () {
     it('Bouton recommencer', async function () {
         const page = this.test.page
 
-        await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
+        await page.goto(
+            'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+        )
 
         await cEstParti(page)
 
