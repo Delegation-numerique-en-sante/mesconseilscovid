@@ -394,7 +394,7 @@
       </form>
 
       <form id="prolongation-pass-sanitaire-situation-moins65-form" hidden>
-          <a href="#" data-precedent="age" class="back-button">Retour</a>
+          <a href="#" data-precedent="vaccination-initiale" class="back-button">Retour</a>
           <fieldset class="required">
               <legend><h3 id="prolongation-pass-sanitaire-situation-moins65-label">Ma situation</h3></legend>
               <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-situation-moins65-label">

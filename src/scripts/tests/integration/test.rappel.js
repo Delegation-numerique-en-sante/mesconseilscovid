@@ -353,7 +353,7 @@ describe('Mini-questionnaire dose de rappel', function () {
         assert.equal(await formLegend.innerText(), 'Mon âge')
     })
 
-    it('Bouton retour (date dernière dose)', async function () {
+    it('Bouton retour (date dernière dose via plus 65)', async function () {
         const page = this.test.page
 
         await page.goto(
@@ -381,13 +381,67 @@ describe('Mini-questionnaire dose de rappel', function () {
         )
         await bouton.click()
 
-        // Cas spécial: on retour au formulaire initial pour ne pas
-        // gérer la complexité de l’origine de ce formulaire
-        // (questionnaire en diamant).
+        formLegend = await page.waitForSelector(
+            '#prolongation-pass-sanitaire-vaccination-initiale-form legend h3'
+        )
+        assert.equal(await formLegend.innerText(), 'Ma vaccination initiale')
+
+        // On clique sur le bouton retour.
+        const bouton2 = await page.waitForSelector(
+            '#prolongation-pass-sanitaire-vaccination-initiale-form >> text="Retour"'
+        )
+        await bouton2.click()
+
         formLegend = await page.waitForSelector(
             '#prolongation-pass-sanitaire-age-form legend h3'
         )
         assert.equal(await formLegend.innerText(), 'Mon âge')
+    })
+
+    it('Bouton retour (date dernière dose via moins 65)', async function () {
+        const page = this.test.page
+
+        await page.goto(
+            'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+        )
+
+        await cEstParti(page)
+
+        let formLegend = await page.waitForSelector(
+            '#prolongation-pass-sanitaire-age-form legend h3'
+        )
+        assert.equal(await formLegend.innerText(), 'Mon âge')
+
+        await remplirAge(page, 'moins65')
+        await remplirVaccinationInitiale(page, 'autre')
+        await remplirSituationMoins65(page, 'comorbidite')
+
+        formLegend = await page.waitForSelector(
+            '#prolongation-pass-sanitaire-date-derniere-dose-form legend h3'
+        )
+        assert.equal(await formLegend.innerText(), 'La date de ma dernière dose')
+
+        // On clique sur le bouton retour.
+        const bouton = await page.waitForSelector(
+            '#prolongation-pass-sanitaire-date-derniere-dose-form >> text="Retour"'
+        )
+        await bouton.click()
+
+        formLegend = await page.waitForSelector(
+            '#prolongation-pass-sanitaire-situation-moins65-form legend h3'
+        )
+        assert.equal(await formLegend.innerText(), 'Ma situation')
+
+        // On clique sur le bouton retour.
+        const bouton2 = await page.waitForSelector(
+            '#prolongation-pass-sanitaire-situation-moins65-form >> text="Retour"'
+        )
+        await bouton2.click()
+
+        formLegend = await page.waitForSelector(
+            '#prolongation-pass-sanitaire-vaccination-initiale-form legend h3'
+        )
+        assert.equal(await formLegend.innerText(), 'Ma vaccination initiale')
     })
 
     it('Bouton recommencer', async function () {

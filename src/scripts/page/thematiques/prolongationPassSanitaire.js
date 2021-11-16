@@ -78,11 +78,17 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                 if (value === 'janssen') {
                     this.janssen = true
                     this.prolongationPass = true
-                    this.transitionneVersEtape('date-derniere-dose')
+                    this.transitionneVersEtape(
+                        'date-derniere-dose',
+                        'vaccination-initiale'
+                    )
                 } else if (value === 'autre') {
                     if (this.age === 'plus65') {
                         this.prolongationPass = true
-                        this.transitionneVersEtape('date-derniere-dose')
+                        this.transitionneVersEtape(
+                            'date-derniere-dose',
+                            'vaccination-initiale'
+                        )
                     } else {
                         this.transitionneVersEtape('situation-moins65')
                     }
@@ -104,7 +110,10 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                 hideElement(form)
                 if (value === 'comorbidite' || value === 'pro_sante') {
                     this.prolongationPass = false
-                    this.transitionneVersEtape('date-derniere-dose')
+                    this.transitionneVersEtape(
+                        'date-derniere-dose',
+                        'situation-moins65'
+                    )
                 } else if (value === 'autre') {
                     this.afficheReponse('pas-concerne')
                 } else {
