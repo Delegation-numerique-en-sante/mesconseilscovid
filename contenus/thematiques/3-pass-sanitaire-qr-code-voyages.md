@@ -399,7 +399,7 @@
               <legend><h3 id="prolongation-pass-sanitaire-situation-moins65-label">Ma situation</h3></legend>
               <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-situation-moins65-label">
                   <input id="prolongation_pass_sanitaire_situation_moins65_radio_comorbidite" type="radio" required name="prolongation_pass_sanitaire_situation_moins65_radio" value="comorbidite">
-                  <label for="prolongation_pass_sanitaire_situation_moins65_radio_comorbidite">J’ai une [comorbidité (risque de forme grave)](/je-veux-me-faire-vacciner.html#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)</label>
+                  <label for="prolongation_pass_sanitaire_situation_moins65_radio_comorbidite"><span>J’ai une <a href="/je-veux-me-faire-vacciner.html#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid">comorbidité</a> (risque de forme grave)</span></label>
                   <input id="prolongation_pass_sanitaire_situation_moins65_radio_pro_sante" type="radio" required name="prolongation_pass_sanitaire_situation_moins65_radio" value="pro_sante">
                   <label for="prolongation_pass_sanitaire_situation_moins65_radio_pro_sante">Je suis un professionnel de santé</label>
                   <input id="prolongation_pass_sanitaire_situation_moins65_radio_autre" type="radio" required name="prolongation_pass_sanitaire_situation_moins65_radio" value="autre">
