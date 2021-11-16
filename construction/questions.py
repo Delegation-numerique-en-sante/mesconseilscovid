@@ -37,8 +37,16 @@ def extract_questions(page):
     questions = {}
     for node in _extract_questions(ast_tree):
         slug = slugify_title(node["titre"])
+
+        details = html_tree.css_first(f"#{slug}").html
+        # On uniformise le niveau de titres à h3.
+        details = details.replace("<h2", "<h3").replace("</h2>", "</h3>")
+        details = details.replace("<h4", "<h3").replace("</h4>", "</h3>")
+        # On remplace les liens relatifs à la volée.
+        details = details.replace('href="#', f'href="/{page.name}.html#')
+
         questions[slug] = {
             "titre": node["titre"],
-            "details": html_tree.css_first(f"#{slug}").html,
+            "details": details,
         }
     return questions

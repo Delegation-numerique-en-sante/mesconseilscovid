@@ -1,4 +1,4 @@
-# Je souhaite faire mon rappel vaccinal (3e dose)
+# Je souhaite faire mon rappel vaccinal (3<sup>e</sup> dose)
 
 <img src="illustrations/symptomespasses.svg">
 
