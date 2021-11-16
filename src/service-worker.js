@@ -19,6 +19,7 @@ const CACHE_FILES = [
     'covid-et-travail.html',
     'covid-in-france.html',
     'tests-de-depistage.html',
+    'rappel-vaccinal-3e-dose.html',
     'fonts/marianne-regular-webfont.woff2',
     'fonts/marianne-bold-webfont.woff2',
     'site.webmanifest',
