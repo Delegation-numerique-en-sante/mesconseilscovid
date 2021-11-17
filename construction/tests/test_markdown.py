@@ -5,7 +5,7 @@ import pytest
 
 @pytest.fixture
 def markdown():
-    from build import create_markdown_parser
+    from construction.markdown import create_markdown_parser
 
     return create_markdown_parser()
 
@@ -331,7 +331,7 @@ class TestQuestionDirective:
 
 class TestRenvoiDirective:
     def test_renvoi(self):
-        from build import create_markdown_parser
+        from construction.markdown import create_markdown_parser
 
         markdown = create_markdown_parser(
             questions_index={
@@ -376,7 +376,7 @@ class TestRenvoiDirective:
 
 class TestInjectionDirective:
     def test_injection(self):
-        from build import create_markdown_parser
+        from construction.markdown import create_markdown_parser
 
         markdown = create_markdown_parser(
             questions_index={
@@ -439,19 +439,19 @@ class TestInjectionDirective:
 
 class TestMarkdownContentBlock:
     def test_render_block(self, markdown):
-        from build import MarkdownContent
+        from construction.templates import MarkdownContent
 
         m = MarkdownContent("Hello **world**", markdown)
         assert m.render_block() == "<p>Hello <strong>world</strong></p>\n"
 
     def test_stringify(self, markdown):
-        from build import MarkdownContent
+        from construction.templates import MarkdownContent
 
         m = MarkdownContent("Hello **world**", markdown)
         assert str(m) == m.render_block()
 
     def test_split(self, markdown):
-        from build import MarkdownContent
+        from construction.templates import MarkdownContent
 
         m = MarkdownContent("Moi\n\n---\n\nCette personne", markdown)
         me, them = m.split()
@@ -463,7 +463,7 @@ class TestMarkdownContentBlock:
         assert them.text == "Cette personne"
 
     def test_me_or_them_filter(self, markdown):
-        from build import MarkdownContent, me_or_them_filter
+        from construction.templates import MarkdownContent, me_or_them_filter
 
         m = MarkdownContent("Moi\n\n---\n\nCette personne", markdown)
         assert me_or_them_filter(m) == (
@@ -474,7 +474,7 @@ class TestMarkdownContentBlock:
 
 class TestMarkdownContentInline:
     def test_inline_filter(self, markdown):
-        from build import (
+        from construction.templates import (
             MarkdownContent,
             MarkdownInlineContent,
             inline_filter,
@@ -485,19 +485,19 @@ class TestMarkdownContentInline:
         assert isinstance(i, MarkdownInlineContent)
 
     def test_render_inline(self, markdown):
-        from build import MarkdownInlineContent
+        from construction.templates import MarkdownInlineContent
 
         m = MarkdownInlineContent("Hello **world**\n", markdown)
         assert m.render_inline() == "Hello <strong>world</strong>"
 
     def test_stringify(self, markdown):
-        from build import MarkdownInlineContent
+        from construction.templates import MarkdownInlineContent
 
         m = MarkdownInlineContent("Hello **world**", markdown)
         assert str(m) == m.render_inline()
 
     def test_split(self, markdown):
-        from build import MarkdownInlineContent
+        from construction.templates import MarkdownInlineContent
 
         m = MarkdownInlineContent("Moi\n\n---\n\nCette personne", markdown)
         me, them = m.split()
@@ -509,7 +509,7 @@ class TestMarkdownContentInline:
         assert them.text == "Cette personne"
 
     def test_me_or_them_filter(self, markdown):
-        from build import MarkdownInlineContent, me_or_them_filter
+        from construction.templates import MarkdownInlineContent, me_or_them_filter
 
         m = MarkdownInlineContent("Moi\n\n---\n\nCette **personne**", markdown)
         assert me_or_them_filter(m) == (
