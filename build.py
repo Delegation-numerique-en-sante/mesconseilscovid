@@ -23,6 +23,7 @@ from slugify import slugify
 
 from construction.mistune_toc import DirectiveToc
 from construction.typographie import typographie
+from construction.utils import each_file_from, each_folder_from
 
 LOGGER = logging.getLogger(__name__)
 
@@ -572,27 +573,6 @@ def build_responses(source_dir, markdown_parser):
 
 def render_markdown_file(file_path, markdown_parser):
     return MarkdownContent(file_path.read_text(), markdown_parser)
-
-
-def _each_path_from(source_dir, pattern="*", exclude=None):
-    for path in sorted(Path(source_dir).glob(pattern)):
-        if exclude is not None and path.name in exclude:
-            continue
-        yield path
-
-
-def each_folder_from(source_dir, exclude=None):
-    """Walk across the `source_dir` and return the folder paths."""
-    for path in _each_path_from(source_dir, exclude=exclude):
-        if path.is_dir():
-            yield path
-
-
-def each_file_from(source_dir, pattern="*", exclude=None):
-    """Walk across the `source_dir` and return the md file paths."""
-    for path in _each_path_from(source_dir, pattern=pattern, exclude=exclude):
-        if path.is_file():
-            yield path
 
 
 def render_template(src, **context):
