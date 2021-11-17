@@ -55,10 +55,10 @@
 
       * a **negative test result** (PCR, antigenic or supervised self-test): valid for 72h after the test,
       * a **positive test result** (PCR or antigenic): valid between 11 days and 6 months after the illness,
-      * a certificate of **full vaccination** with Pfizer, Moderna, AstraZeneca or Janssen. 
-   
-   In France, you're considered fully vaccinated : 
-         * **7 days** after the **2nd Pfizer, Moderna** or **AstraZeneca** jab. However, if you tested postive to Covid-19 before receiving the first jab, your vaccination will be considered complete 7 days after this injection.
-         * **28 days** after the **Janssen** jab.
+      * a certificate of **full vaccination** with Pfizer, Moderna, AstraZeneca or Janssen.
+
+   You will be considered fully vaccinated:
+      * **7 days** after the <strong>2<sup>nd</sup> jab</strong> of **Pfizer**, **Moderna** or **AstraZeneca**. (However, if you tested positive to Covid-19 **before** receiving the first jab, your vaccination will be considered complete 7 days after this single injection.)
+      * **28 days** after the **Janssen** jab.
 
 </div>
