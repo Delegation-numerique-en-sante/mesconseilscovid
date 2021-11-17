@@ -19,9 +19,9 @@ from minicli import cli, run, wrap
 from mistune.directives import Directive
 from mistune.markdown import preprocess
 from selectolax.parser import HTMLParser as SelectolaxHTMLParser
-from slugify import slugify
 
 from construction.mistune_toc import DirectiveToc
+from construction.slugs import slugify_title
 from construction.typographie import typographie
 from construction.utils import each_file_from, each_folder_from
 
@@ -104,14 +104,6 @@ class ClassMixin:
 
 class CustomHTMLRenderer(FrenchTypographyMixin, ClassMixin, mistune.HTMLRenderer):
     pass
-
-
-def slugify_title(title):
-    return slugify(
-        title,
-        stopwords=["span", "class", "visually", "hidden", "sup"],
-        replacements=[("’", "'")],
-    )
 
 
 class SectionDirective(Directive):
