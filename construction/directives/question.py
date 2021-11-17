@@ -38,7 +38,12 @@ class QuestionDirective(Directive):
         if nom_formulaire:
             path = THEMATIQUES_DIR / "formulaires" / f"{nom_formulaire}.md"
             with path.open() as f:
-                nodes = block.parse(*preprocess(f.read(), {"__file__": str(path)}))
+                content = (
+                    f'<div class="formulaire" data-nom="{nom_formulaire}">\n'
+                    + f.read()
+                    + "\n</div>"
+                )
+                nodes = block.parse(*preprocess(content, {"__file__": str(path)}))
                 children = nodes + children
 
         if not children:
