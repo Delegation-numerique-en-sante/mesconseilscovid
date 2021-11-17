@@ -23,20 +23,7 @@ export function pageThematique(app) {
     partagePageEnCours()
     feedbackPageEnCours(app)
 
-    // À discuter : est-ce que l’on veut du générique ?
-    const thematiqueName = document.body.dataset.thematiqueName
-    if (thematiqueName === 'tests-de-depistage') {
-        dynamiseLeChoixDuTest()
-    } else if (thematiqueName === 'pass-sanitaire-qr-code-voyages') {
-        dynamiseLeChoixDuPass()
-    }
-
-    if (
-        thematiqueName === 'pass-sanitaire-qr-code-voyages' ||
-        thematiqueName === 'je-veux-me-faire-vacciner'
-    ) {
-        dynamiseLaProlongationDuPass()
-    }
+    initialiseLesFormulaires()
 
     navigueVersUneThematique(
         app,
@@ -82,6 +69,19 @@ function scrolleAuSummary() {
             }, 100)
             creeUnLienPermanentDansLHistorique(detailsElement)
         })
+    })
+}
+
+function initialiseLesFormulaires() {
+    Array.from(document.querySelectorAll('.formulaire')).forEach((form) => {
+        const nom = form.dataset.nom
+        if (nom == 'pass-sanitaire') {
+            dynamiseLeChoixDuPass()
+        } else if (nom == 'tests-de-depistage') {
+            dynamiseLeChoixDuTest()
+        } else if (nom == 'rappel') {
+            dynamiseLaProlongationDuPass()
+        }
     })
 }
 
