@@ -7,6 +7,8 @@ https://github.com/lepture/mistune/blob/master/LICENSE
 from mistune.directives import Directive
 from slugify import slugify
 
+from ..slugs import slugify_title
+
 
 class DirectiveToc(Directive):
     def __init__(self, depth=3):
@@ -56,11 +58,7 @@ class DirectiveToc(Directive):
 
 def record_toc_heading(text, level, state):
     # On veut notre propre façon de générer les slugs.
-    tid = slugify(
-        text,
-        stopwords=["span", "class", "visually", "hidden", "sup"],
-        replacements=[("’", "'")],
-    )
+    tid = slugify_title(text)
     tags = []
     folded = False
     state["toc_headings"].append((tid, text, level, tags))
