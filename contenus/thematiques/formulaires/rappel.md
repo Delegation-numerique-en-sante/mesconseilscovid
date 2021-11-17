@@ -31,7 +31,7 @@
 </form>
 
 <form id="prolongation-pass-sanitaire-vaccination-initiale-form" hidden>
-    <a href="#" data-precedent="age" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="age" class="back-button">Retour</a>
     <fieldset class="required">
         <legend><h3 id="prolongation-pass-sanitaire-vaccination-initiale-label">Ma vaccination initiale</h3></legend>
         <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-vaccination-initiale-label">
@@ -50,7 +50,7 @@
 </form>
 
 <form id="prolongation-pass-sanitaire-situation-moins65-form" hidden>
-    <a href="#" data-precedent="vaccination-initiale" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="vaccination-initiale" class="back-button">Retour</a>
     <fieldset class="required">
         <legend><h3 id="prolongation-pass-sanitaire-situation-moins65-label">Ma situation</h3></legend>
         <div role="radiogroup" aria-labelledby="prolongation-pass-sanitaire-situation-moins65-label">
@@ -71,7 +71,7 @@
 </form>
 
 <form id="prolongation-pass-sanitaire-date-derniere-dose-form" hidden>
-    <a href="#" data-precedent="age" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="age" class="back-button">Retour</a>
     <fieldset class="required">
         <legend><h3 id="prolongation-pass-sanitaire-date-derniere-dose-label">La date de ma dernière dose</h3></legend>
         <input type="date" lang="fr" id="prolongation_pass_sanitaire_date_derniere_dose" name="prolongation_pass_sanitaire_date_derniere_dose" required>
@@ -121,5 +121,5 @@ Votre **pass sanitaire** restera également valable au delà du 15 décembre 202
 </div>
 
 <p id="prolongation-pass-sanitaire-refaire" hidden>
-<a href="#" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
+<a href="javascript:;" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
 </p>
