@@ -2,11 +2,6 @@ import { assert } from 'chai'
 import { joursAvant } from '../../utils'
 
 async function cEstParti(page) {
-    const summary = await page.waitForSelector(
-        'text="Quel justificatif utiliser comme pass sanitaire en France ?"'
-    )
-    await summary.click()
-
     const bouton = await page.waitForSelector(
         '#pass-sanitaire-demarrage-form >> text="C’est parti !"'
     )
