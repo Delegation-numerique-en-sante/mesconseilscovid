@@ -36,15 +36,7 @@ class QuestionDirective(Directive):
         children = block.parse(text, state, block.rules)
 
         if nom_formulaire:
-            path = THEMATIQUES_DIR / "formulaires" / f"{nom_formulaire}.md"
-            with path.open() as f:
-                content = (
-                    f'<div class="formulaire" data-nom="{nom_formulaire}">\n'
-                    + f.read()
-                    + "\n</div>"
-                )
-                nodes = block.parse(*preprocess(content, {"__file__": str(path)}))
-                children = nodes + children
+            children = self._render_formulaire(nom_formulaire, block) + children
 
         if not children:
             raise ValueError(
@@ -56,6 +48,16 @@ class QuestionDirective(Directive):
             "children": children,
             "params": (question, level, feedback, open_),
         }
+
+    def _render_formulaire(self, nom_formulaire, block):
+        path = THEMATIQUES_DIR / "formulaires" / f"{nom_formulaire}.md"
+        with path.open() as f:
+            content = (
+                f'<div class="formulaire" data-nom="{nom_formulaire}">\n'
+                + f.read()
+                + "\n</div>"
+            )
+        return block.parse(*preprocess(content, {"__file__": str(path)}))
 
     def __call__(self, md):
         self.register_directive(md, "question")
