@@ -328,6 +328,48 @@ class TestQuestionDirective:
             )
         )
 
+    def test_open(self, markdown):
+        assert (
+            markdown(
+                dedent(
+                    """\
+                    .. question:: Quand pourrai-je me faire vacciner ?
+                        :open: true
+
+                        Qui dolore consectetur elit sed exercitation anim pariatur occaecat et eiusmod excepteur.
+                    """
+                )
+            )
+            == dedent(
+                """\
+                <details id="quand-pourrai-je-me-faire-vacciner" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" open>
+                <summary>
+                    <h2>
+                        <span itemprop="name">Quand pourrai-je me faire vacciner&#8239;?</span>
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
+                    </h2>
+                </summary>
+
+                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text">
+                <p>Qui dolore consectetur elit sed exercitation anim pariatur occaecat et eiusmod excepteur.</p>
+                </div>
+                </div>
+                <form class="question-feedback">
+                    <fieldset>
+                        <legend>Avez-vous trouvé cette réponse utile&#8239;?</legend>
+                        <div>
+                            <label><input type="submit" class="button-invisible" data-value="non" value="🙁">Non</label>
+                            <label><input type="submit" class="button-invisible" data-value="bof" value="😐">Bof</label>
+                            <label><input type="submit" class="button-invisible" data-value="oui" value="🙂">Oui</label>
+                        </div>
+                    </fieldset>
+                </form>
+                </details>
+                """
+            )
+        )
+
 
 class TestRenvoiDirective:
     def test_renvoi(self):
