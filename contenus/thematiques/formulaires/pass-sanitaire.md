@@ -13,7 +13,7 @@
 </form>
 
 <form id="pass-sanitaire-vaccination-form" hidden>
-    <a href="#" data-precedent="demarrage" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="demarrage" class="back-button">Retour</a>
     <fieldset class="required">
         <legend><h3 id="pass-sanitaire-vaccination-label">Avez-vous reçu des doses de vaccin ?</h3></legend>
         <div role="radiogroup" aria-labelledby="pass-sanitaire-vaccination-label">
@@ -34,7 +34,7 @@
 </form>
 
 <form id="pass-sanitaire-date-1re-dose-janssen-form" hidden>
-    <a href="#" data-precedent="type-vaccin" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="type-vaccin" class="back-button">Retour</a>
     <fieldset class="required">
         <legend><h3 id="pass-sanitaire-date-1re-dose-janssen-label">À quelle date avez-vous reçu cette dose ?</h3></legend>
         <input type="date" lang="fr" id="pass_sanitaire_date_1re_dose_janssen" name="pass_sanitaire_date_1re_dose_janssen" required>
@@ -48,7 +48,7 @@
 </form>
 
 <form id="pass-sanitaire-date-1re-dose-autres-form" hidden>
-    <a href="#" data-precedent="guerison-avant-1re-dose" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="guerison-avant-1re-dose" class="back-button">Retour</a>
     <fieldset class="required">
         <legend><h3 id="pass-sanitaire-date-1re-dose-autres-label">Quand avez-vous reçu cette dose ?</h3></legend>
         <div role="radiogroup" aria-labelledby="pass-sanitaire-date-1re-dose-autres-label">
@@ -67,7 +67,7 @@
 </form>
 
 <form id="pass-sanitaire-date-2e-dose-form" hidden>
-    <a href="#" data-precedent="vaccination" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="vaccination" class="back-button">Retour</a>
     <fieldset class="required">
         <legend><h3 id="pass-sanitaire-date-2e-dose-label">Quand avez-vous reçu la deuxième dose ?</h3></legend>
         <div role="radiogroup" aria-labelledby="pass-sanitaire-date-2e-dose-label">
@@ -86,7 +86,7 @@
 </form>
 
 <form id="pass-sanitaire-type-vaccin-form" hidden>
-    <a href="#" data-precedent="vaccination" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="vaccination" class="back-button">Retour</a>
     <fieldset class="required">
         <legend><h3 id="pass-sanitaire-type-vaccin-label">Quel vaccin avez-vous reçu ?</h3></legend>
         <div role="radiogroup" aria-labelledby="pass-sanitaire-type-vaccin-label">
@@ -109,7 +109,7 @@
 </form>
 
 <form id="pass-sanitaire-guerison-avant-1re-dose-form" hidden>
-    <a href="#" data-precedent="type-vaccin" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="type-vaccin" class="back-button">Retour</a>
     <fieldset class="required">
         <legend><h3 id="pass-sanitaire-guerison-avant-1re-dose-label">Aviez-vous eu la Covid avant cette dose de vaccin ?</h3></legend>
         <div role="radiogroup" aria-labelledby="pass-sanitaire-guerison-avant-1re-dose-label">
@@ -128,7 +128,7 @@
 </form>
 
 <form id="pass-sanitaire-guerison-avant-1re-dose-autres-form" hidden>
-    <a href="#" data-precedent="type-vaccin" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="type-vaccin" class="back-button">Retour</a>
     <fieldset class="required">
         <legend><h3 id="pass-sanitaire-guerison-avant-1re-dose-autres-label">Aviez-vous eu la Covid avant cette dose de vaccin ?</h3></legend>
         <div role="radiogroup" aria-labelledby="pass-sanitaire-guerison-avant-1re-dose-autres-label">
@@ -147,7 +147,7 @@
 </form>
 
 <form id="pass-sanitaire-depistage-positif-form" hidden>
-    <a href="#" data-precedent="vaccination" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="vaccination" class="back-button">Retour</a>
     <fieldset class="required">
         <legend><h3 id="pass-sanitaire-depistage-positif-label">Avez-vous déjà été positif à un test PCR ou antigénique ?</h3></legend>
         <div role="radiogroup" aria-labelledby="pass-sanitaire-depistage-positif-label">
@@ -166,7 +166,7 @@
 </form>
 
 <form id="pass-sanitaire-date-derniere-covid-form" hidden>
-    <a href="#" data-precedent="depistage-positif" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="depistage-positif" class="back-button">Retour</a>
     <fieldset class="required">
         <legend><h3 id="pass-sanitaire-date-derniere-covid-label">De quand date ce test positif ?</h3></legend>
         <div role="radiogroup" aria-labelledby="pass-sanitaire-date-derniere-covid-label">
@@ -261,5 +261,5 @@ Vous avez **2 possibilités** pour obtenir un pass sanitaire :
 </div>
 
 <p id="pass-sanitaire-refaire" hidden>
-<a href="#" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
+<a href="javascript:;" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
 </p>

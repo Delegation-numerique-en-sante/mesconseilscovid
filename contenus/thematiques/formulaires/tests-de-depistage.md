@@ -14,7 +14,7 @@
 </form>
 
 <form id="tests-de-depistage-symptomes-form" hidden>
-    <a href="#" data-precedent="demarrage" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="demarrage" class="back-button">Retour</a>
     <fieldset class="required">
         <legend><h3 id="tests-de-depistage-symptomes-label">Avez-vous des symptômes qui peuvent évoquer la Covid ?</h3></legend>
         <div role="radiogroup" aria-labelledby="tests-de-depistage-symptomes-label">
@@ -33,7 +33,7 @@
 </form>
 
 <form id="tests-de-depistage-depuis-quand-form" hidden>
-    <a href="#" data-precedent="symptomes" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="symptomes" class="back-button">Retour</a>
     <fieldset class="required" id="tests-de-depistage-depuis-quand">
         <legend><h3 id="tests-de-depistage-depuis-quand-label">Depuis quand avez-vous des symptômes ?</h3></legend>
         <div role="radiogroup" aria-labelledby="tests-de-depistage-depuis-quand-label">
@@ -52,7 +52,7 @@
 </form>
 
 <form id="tests-de-depistage-cas-contact-form" hidden>
-    <a href="#" data-precedent="symptomes" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="symptomes" class="back-button">Retour</a>
     <fieldset class="required" id="tests-de-depistage-cas-contact">
         <legend><h3 id="tests-de-depistage-cas-contact-label">Êtes-vous cas contact ?</h3></legend>
         <div role="radiogroup" aria-labelledby="tests-de-depistage-cas-contact-label">
@@ -71,7 +71,7 @@
 </form>
 
 <form id="tests-de-depistage-auto-test-form" hidden>
-    <a href="#" data-precedent="cas-contact" class="back-button">Retour</a>
+    <a href="javascript:;" data-precedent="cas-contact" class="back-button">Retour</a>
     <fieldset id="tests-de-depistage-auto-test">
         <legend><h3 id="tests-de-depistage-auto-test-label">Je veux faire un test pour…</h3></legend>
         <div role="radiogroup" aria-labelledby="tests-de-depistage-auto-test-label">
@@ -126,5 +126,5 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid et vous n’êtes 
 </div>
 
 <p id="tests-de-depistage-refaire" hidden>
-<a href="#" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
+<a href="javascript:;" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
 </p>
