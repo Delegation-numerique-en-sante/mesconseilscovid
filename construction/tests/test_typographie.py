@@ -57,6 +57,6 @@ import pytest
     ],
 )
 def test_espaces_insecables(in_, out_):
-    from typographie import typographie
+    from construction.typographie import typographie
 
     assert typographie(in_) == out_

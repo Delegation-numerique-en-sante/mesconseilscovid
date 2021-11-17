@@ -21,8 +21,8 @@ from mistune.markdown import preprocess
 from selectolax.parser import HTMLParser as SelectolaxHTMLParser
 from slugify import slugify
 
-from mistune_toc import DirectiveToc
-from typographie import typographie
+from construction.mistune_toc import DirectiveToc
+from construction.typographie import typographie
 
 LOGGER = logging.getLogger(__name__)
 

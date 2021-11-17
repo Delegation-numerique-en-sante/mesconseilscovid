@@ -55,7 +55,7 @@ else
 endif
 
 test-tools:
-	pytest test_*.py
+	PYTHONPATH=. pytest construction/
 	PYTHONPATH=tools pytest tools/
 
 test-feedback:
