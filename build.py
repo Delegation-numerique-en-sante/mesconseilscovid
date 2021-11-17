@@ -17,6 +17,7 @@ from jinja2 import Environment as JinjaEnv
 from jinja2 import FileSystemLoader, StrictUndefined
 from minicli import cli, run, wrap
 from mistune.directives import Directive
+from mistune.markdown import preprocess
 from selectolax.parser import HTMLParser as SelectolaxHTMLParser
 from slugify import slugify
 
@@ -154,15 +155,26 @@ class QuestionDirective(Directive):
         if options:
             level = int(dict(options).get("level", 2))
             feedback = dict(options).get("feedback", "keep")
+            nom_formulaire = dict(options).get("formulaire")
         else:
             level = 2
             feedback = "keep"
+            nom_formulaire = None
+
         text = self.parse_text(m)
         children = block.parse(text, state, block.rules)
+
+        if nom_formulaire:
+            path = CONTENUS_DIR / "thematiques" / "formulaires" / f"{nom_formulaire}.md"
+            with path.open() as f:
+                nodes = block.parse(*preprocess(f.read(), {"__file__": str(path)}))
+                children = nodes + children
+
         if not children:
             raise ValueError(
                 f"Question sans réponse : indentation manquante ?\n« {question} »"
             )
+
         return {
             "type": "question",
             "children": children,
