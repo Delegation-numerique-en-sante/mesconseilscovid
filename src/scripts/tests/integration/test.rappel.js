@@ -1,57 +1,59 @@
 import { assert } from 'chai'
 
-async function cEstParti(page) {
+async function cEstParti(page, prefixe) {
     const bouton = await page.waitForSelector(
-        '#rappel-demarrage-form >> text="C’est parti !"'
+        `#${prefixe}-demarrage-form >> text="C’est parti !"`
     )
     await bouton.click()
 }
 
-async function remplirAge(page, reponse) {
+async function remplirAge(page, reponse, prefixe) {
     const checkbox_label = await page.waitForSelector(
-        `#rappel-age-form label[for="rappel_age_radio_${reponse}"]`
-    )
-    await checkbox_label.click()
-
-    const bouton = await page.waitForSelector('#rappel-age-form >> text="Continuer"')
-    await bouton.click()
-}
-
-async function remplirVaccinationInitiale(page, reponse) {
-    const checkbox_label = await page.waitForSelector(
-        `#rappel-vaccination-initiale-form label[for="rappel_vaccination_initiale_radio_${reponse}"]`
+        `#${prefixe}-age-form label[for="${prefixe}_age_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#rappel-vaccination-initiale-form >> text="Continuer"'
+        `#${prefixe}-age-form >> text="Continuer"`
     )
     await bouton.click()
 }
 
-async function remplirSituationMoins65(page, reponse) {
+async function remplirVaccinationInitiale(page, reponse, prefixe) {
     const checkbox_label = await page.waitForSelector(
-        `#rappel-situation-moins65-form label[for="rappel_situation_moins65_radio_${reponse}"]`
+        `#${prefixe}-vaccination-initiale-form label[for="${prefixe}_vaccination_initiale_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#rappel-situation-moins65-form >> text="Continuer"'
+        `#${prefixe}-vaccination-initiale-form >> text="Continuer"`
     )
     await bouton.click()
 }
 
-async function remplirDateDerniereDose(page, dateIso) {
-    await page.fill('#rappel_date_derniere_dose', dateIso)
+async function remplirSituationMoins65(page, reponse, prefixe) {
+    const checkbox_label = await page.waitForSelector(
+        `#${prefixe}-situation-moins65-form label[for="${prefixe}_situation_moins65_radio_${reponse}"]`
+    )
+    await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#rappel-date-derniere-dose-form >> text="Terminer"'
+        `#${prefixe}-situation-moins65-form >> text="Continuer"`
     )
     await bouton.click()
 }
 
-async function recuperationStatut(page, statut) {
-    const reponse = await page.waitForSelector(`#rappel-${statut}-reponse`)
+async function remplirDateDerniereDose(page, dateIso, prefixe) {
+    await page.fill(`#${prefixe}_date_derniere_dose`, dateIso)
+
+    const bouton = await page.waitForSelector(
+        `#${prefixe}-date-derniere-dose-form >> text="Terminer"`
+    )
+    await bouton.click()
+}
+
+async function recuperationStatut(page, statut, prefixe) {
+    const reponse = await page.waitForSelector(`#${prefixe}-${statut}-reponse`)
     return (await reponse.innerText()).trim()
 }
 
@@ -64,13 +66,15 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
             )
 
-            await cEstParti(page)
+            const prefixe = 'rappel'
 
-            await remplirAge(page, 'plus65')
-            await remplirVaccinationInitiale(page, 'autre')
-            await remplirDateDerniereDose(page, '2021-04-17')
+            await cEstParti(page, prefixe)
 
-            const statut = await recuperationStatut(page, 'rappel-et-pass')
+            await remplirAge(page, 'plus65', prefixe)
+            await remplirVaccinationInitiale(page, 'autre', prefixe)
+            await remplirDateDerniereDose(page, '2021-04-17', prefixe)
+
+            const statut = await recuperationStatut(page, 'rappel-et-pass', prefixe)
             assert.include(statut, 'Vous avez 65 ans ou plus')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
@@ -98,13 +102,15 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
             )
 
-            await cEstParti(page)
+            const prefixe = 'rappel'
 
-            await remplirAge(page, 'plus65')
-            await remplirVaccinationInitiale(page, 'autre')
-            await remplirDateDerniereDose(page, '2021-05-17')
+            await cEstParti(page, prefixe)
 
-            const statut = await recuperationStatut(page, 'rappel-et-pass')
+            await remplirAge(page, 'plus65', prefixe)
+            await remplirVaccinationInitiale(page, 'autre', prefixe)
+            await remplirDateDerniereDose(page, '2021-05-17', prefixe)
+
+            const statut = await recuperationStatut(page, 'rappel-et-pass', prefixe)
             assert.include(statut, 'Vous avez 65 ans ou plus')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(statut, 'Vous avez reçu votre dernière dose le 17 mai 2021.')
@@ -129,13 +135,15 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
             )
 
-            await cEstParti(page)
+            const prefixe = 'rappel'
 
-            await remplirAge(page, 'plus65')
-            await remplirVaccinationInitiale(page, 'autre')
-            await remplirDateDerniereDose(page, '2021-06-17')
+            await cEstParti(page, prefixe)
 
-            const statut = await recuperationStatut(page, 'rappel-et-pass')
+            await remplirAge(page, 'plus65', prefixe)
+            await remplirVaccinationInitiale(page, 'autre', prefixe)
+            await remplirDateDerniereDose(page, '2021-06-17', prefixe)
+
+            const statut = await recuperationStatut(page, 'rappel-et-pass', prefixe)
             assert.include(statut, 'Vous avez 65 ans ou plus')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
@@ -163,13 +171,15 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
             )
 
-            await cEstParti(page)
+            const prefixe = 'rappel'
 
-            await remplirAge(page, 'plus65')
-            await remplirVaccinationInitiale(page, 'janssen')
-            await remplirDateDerniereDose(page, '2021-06-17')
+            await cEstParti(page, prefixe)
 
-            const statut = await recuperationStatut(page, 'rappel-et-pass')
+            await remplirAge(page, 'plus65', prefixe)
+            await remplirVaccinationInitiale(page, 'janssen', prefixe)
+            await remplirDateDerniereDose(page, '2021-06-17', prefixe)
+
+            const statut = await recuperationStatut(page, 'rappel-et-pass', prefixe)
             assert.include(statut, 'Vous avez 65 ans ou plus')
             assert.include(statut, 'avez été vacciné(e) avec le vaccin Janssen')
             assert.include(
@@ -197,13 +207,15 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
             )
 
-            await cEstParti(page)
+            const prefixe = 'rappel'
 
-            await remplirAge(page, 'moins65')
-            await remplirVaccinationInitiale(page, 'janssen')
-            await remplirDateDerniereDose(page, '2021-06-17')
+            await cEstParti(page, prefixe)
 
-            const statut = await recuperationStatut(page, 'rappel-et-pass')
+            await remplirAge(page, 'moins65', prefixe)
+            await remplirVaccinationInitiale(page, 'janssen', prefixe)
+            await remplirDateDerniereDose(page, '2021-06-17', prefixe)
+
+            const statut = await recuperationStatut(page, 'rappel-et-pass', prefixe)
             assert.include(statut, 'Vous avez moins de 65 ans')
             assert.include(statut, 'avez été vacciné(e) avec le vaccin Janssen')
             assert.include(
@@ -233,14 +245,16 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
             )
 
-            await cEstParti(page)
+            const prefixe = 'rappel'
 
-            await remplirAge(page, 'moins65')
-            await remplirVaccinationInitiale(page, 'autre')
-            await remplirSituationMoins65(page, 'comorbidite')
-            await remplirDateDerniereDose(page, '2021-06-17')
+            await cEstParti(page, prefixe)
 
-            const statut = await recuperationStatut(page, 'rappel')
+            await remplirAge(page, 'moins65', prefixe)
+            await remplirVaccinationInitiale(page, 'autre', prefixe)
+            await remplirSituationMoins65(page, 'comorbidite', prefixe)
+            await remplirDateDerniereDose(page, '2021-06-17', prefixe)
+
+            const statut = await recuperationStatut(page, 'rappel', prefixe)
             assert.include(statut, 'Vous avez moins de 65 ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
@@ -264,14 +278,16 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
             )
 
-            await cEstParti(page)
+            const prefixe = 'rappel'
 
-            await remplirAge(page, 'moins65')
-            await remplirVaccinationInitiale(page, 'autre')
-            await remplirSituationMoins65(page, 'pro_sante')
-            await remplirDateDerniereDose(page, '2021-06-17')
+            await cEstParti(page, prefixe)
 
-            const statut = await recuperationStatut(page, 'rappel')
+            await remplirAge(page, 'moins65', prefixe)
+            await remplirVaccinationInitiale(page, 'autre', prefixe)
+            await remplirSituationMoins65(page, 'pro_sante', prefixe)
+            await remplirDateDerniereDose(page, '2021-06-17', prefixe)
+
+            const statut = await recuperationStatut(page, 'rappel', prefixe)
             assert.include(statut, 'Vous avez moins de 65 ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
@@ -296,13 +312,14 @@ describe('Mini-questionnaire dose de rappel', function () {
             'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
         )
 
-        await cEstParti(page)
+        const prefixe = 'rappel'
+        await cEstParti(page, prefixe)
 
-        await remplirAge(page, 'moins65')
-        await remplirVaccinationInitiale(page, 'autre')
-        await remplirSituationMoins65(page, 'autre')
+        await remplirAge(page, 'moins65', prefixe)
+        await remplirVaccinationInitiale(page, 'autre', prefixe)
+        await remplirSituationMoins65(page, 'autre', prefixe)
 
-        const statut = await recuperationStatut(page, 'pas-concerne')
+        const statut = await recuperationStatut(page, 'pas-concerne', prefixe)
         assert.include(statut, 'Vous avez moins de 65 ans')
         assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
         assert.include(
@@ -322,26 +339,27 @@ describe('Mini-questionnaire dose de rappel', function () {
             'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
         )
 
-        await cEstParti(page)
+        const prefixe = 'rappel'
+        await cEstParti(page, prefixe)
 
-        let formLegend = await page.waitForSelector('#rappel-age-form legend h3')
+        let formLegend = await page.waitForSelector(`#${prefixe}-age-form legend h3`)
         assert.equal(await formLegend.innerText(), 'Mon âge')
 
-        await remplirAge(page, 'plus65')
+        await remplirAge(page, 'plus65', prefixe)
 
         formLegend = await page.waitForSelector(
-            '#rappel-vaccination-initiale-form legend h3'
+            `#${prefixe}-vaccination-initiale-form legend h3`
         )
         assert.equal(await formLegend.innerText(), 'Ma vaccination initiale')
 
         // On clique sur le bouton retour.
         const bouton = await page.waitForSelector(
-            '#rappel-vaccination-initiale-form >> text="Retour"'
+            `#${prefixe}-vaccination-initiale-form >> text="Retour"`
         )
         await bouton.click()
 
         // On est revenu au formulaire précédent (age).
-        formLegend = await page.waitForSelector('#rappel-age-form legend h3')
+        formLegend = await page.waitForSelector(`#${prefixe}-age-form legend h3`)
         assert.equal(await formLegend.innerText(), 'Mon âge')
     })
 
@@ -352,37 +370,38 @@ describe('Mini-questionnaire dose de rappel', function () {
             'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
         )
 
-        await cEstParti(page)
+        const prefixe = 'rappel'
+        await cEstParti(page, prefixe)
 
-        let formLegend = await page.waitForSelector('#rappel-age-form legend h3')
+        let formLegend = await page.waitForSelector(`#${prefixe}-age-form legend h3`)
         assert.equal(await formLegend.innerText(), 'Mon âge')
 
-        await remplirAge(page, 'plus65')
-        await remplirVaccinationInitiale(page, 'autre')
+        await remplirAge(page, 'plus65', prefixe)
+        await remplirVaccinationInitiale(page, 'autre', prefixe)
 
         formLegend = await page.waitForSelector(
-            '#rappel-date-derniere-dose-form legend h3'
+            `#${prefixe}-date-derniere-dose-form legend h3`
         )
         assert.equal(await formLegend.innerText(), 'La date de ma dernière dose')
 
         // On clique sur le bouton retour.
         const bouton = await page.waitForSelector(
-            '#rappel-date-derniere-dose-form >> text="Retour"'
+            `#${prefixe}-date-derniere-dose-form >> text="Retour"`
         )
         await bouton.click()
 
         formLegend = await page.waitForSelector(
-            '#rappel-vaccination-initiale-form legend h3'
+            `#${prefixe}-vaccination-initiale-form legend h3`
         )
         assert.equal(await formLegend.innerText(), 'Ma vaccination initiale')
 
         // On clique sur le bouton retour.
         const bouton2 = await page.waitForSelector(
-            '#rappel-vaccination-initiale-form >> text="Retour"'
+            `#${prefixe}-vaccination-initiale-form >> text="Retour"`
         )
         await bouton2.click()
 
-        formLegend = await page.waitForSelector('#rappel-age-form legend h3')
+        formLegend = await page.waitForSelector(`#${prefixe}-age-form legend h3`)
         assert.equal(await formLegend.innerText(), 'Mon âge')
     })
 
@@ -393,39 +412,40 @@ describe('Mini-questionnaire dose de rappel', function () {
             'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
         )
 
-        await cEstParti(page)
+        const prefixe = 'rappel'
+        await cEstParti(page, prefixe)
 
-        let formLegend = await page.waitForSelector('#rappel-age-form legend h3')
+        let formLegend = await page.waitForSelector(`#${prefixe}-age-form legend h3`)
         assert.equal(await formLegend.innerText(), 'Mon âge')
 
-        await remplirAge(page, 'moins65')
-        await remplirVaccinationInitiale(page, 'autre')
-        await remplirSituationMoins65(page, 'comorbidite')
+        await remplirAge(page, 'moins65', prefixe)
+        await remplirVaccinationInitiale(page, 'autre', prefixe)
+        await remplirSituationMoins65(page, 'comorbidite', prefixe)
 
         formLegend = await page.waitForSelector(
-            '#rappel-date-derniere-dose-form legend h3'
+            `#${prefixe}-date-derniere-dose-form legend h3`
         )
         assert.equal(await formLegend.innerText(), 'La date de ma dernière dose')
 
         // On clique sur le bouton retour.
         const bouton = await page.waitForSelector(
-            '#rappel-date-derniere-dose-form >> text="Retour"'
+            `#${prefixe}-date-derniere-dose-form >> text="Retour"`
         )
         await bouton.click()
 
         formLegend = await page.waitForSelector(
-            '#rappel-situation-moins65-form legend h3'
+            `#${prefixe}-situation-moins65-form legend h3`
         )
         assert.equal(await formLegend.innerText(), 'Ma situation')
 
         // On clique sur le bouton retour.
         const bouton2 = await page.waitForSelector(
-            '#rappel-situation-moins65-form >> text="Retour"'
+            `#${prefixe}-situation-moins65-form >> text="Retour"`
         )
         await bouton2.click()
 
         formLegend = await page.waitForSelector(
-            '#rappel-vaccination-initiale-form legend h3'
+            `#${prefixe}-vaccination-initiale-form legend h3`
         )
         assert.equal(await formLegend.innerText(), 'Ma vaccination initiale')
     })
@@ -437,29 +457,30 @@ describe('Mini-questionnaire dose de rappel', function () {
             'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
         )
 
-        await cEstParti(page)
+        const prefixe = 'rappel'
+        await cEstParti(page, prefixe)
 
-        let formLegend = await page.waitForSelector('#rappel-age-form legend h3')
+        let formLegend = await page.waitForSelector(`#${prefixe}-age-form legend h3`)
         assert.equal(await formLegend.innerText(), 'Mon âge')
 
-        await remplirAge(page, 'plus65')
-        await remplirVaccinationInitiale(page, 'autre')
+        await remplirAge(page, 'plus65', prefixe)
+        await remplirVaccinationInitiale(page, 'autre', prefixe)
 
         formLegend = await page.waitForSelector(
-            '#rappel-date-derniere-dose-form legend h3'
+            `#${prefixe}-date-derniere-dose-form legend h3`
         )
         assert.equal(await formLegend.innerText(), 'La date de ma dernière dose')
 
-        await remplirDateDerniereDose(page, '2021-06-17')
+        await remplirDateDerniereDose(page, '2021-06-17', prefixe)
 
         // On clique sur le bouton pour recommencer.
         const bouton = await page.waitForSelector(
-            '#rappel-refaire >> text="Recommencer le questionnaire"'
+            `#${prefixe}-refaire >> text="Recommencer le questionnaire"`
         )
         await bouton.click()
 
         // On est revenu au formulaire initial (situation).
-        formLegend = await page.waitForSelector('#rappel-age-form legend h3')
+        formLegend = await page.waitForSelector(`#${prefixe}-age-form legend h3`)
         assert.equal(await formLegend.innerText(), 'Mon âge')
     })
 })
