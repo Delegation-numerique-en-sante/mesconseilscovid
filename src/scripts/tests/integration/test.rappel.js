@@ -66,7 +66,10 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
             )
 
-            const prefixe = 'rappel'
+            const formulaire = await page.waitForSelector(
+                '#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire .formulaire'
+            )
+            const prefixe = await formulaire.getAttribute('data-nom')
 
             await cEstParti(page, prefixe)
 
@@ -102,7 +105,10 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
             )
 
-            const prefixe = 'rappel'
+            const formulaire = await page.waitForSelector(
+                '#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire .formulaire'
+            )
+            const prefixe = await formulaire.getAttribute('data-nom')
 
             await cEstParti(page, prefixe)
 
@@ -135,7 +141,10 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
             )
 
-            const prefixe = 'rappel'
+            const formulaire = await page.waitForSelector(
+                '#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire .formulaire'
+            )
+            const prefixe = await formulaire.getAttribute('data-nom')
 
             await cEstParti(page, prefixe)
 
@@ -171,7 +180,10 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
             )
 
-            const prefixe = 'rappel'
+            const formulaire = await page.waitForSelector(
+                '#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire .formulaire'
+            )
+            const prefixe = await formulaire.getAttribute('data-nom')
 
             await cEstParti(page, prefixe)
 
@@ -207,7 +219,10 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
             )
 
-            const prefixe = 'rappel'
+            const formulaire = await page.waitForSelector(
+                '#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire .formulaire'
+            )
+            const prefixe = await formulaire.getAttribute('data-nom')
 
             await cEstParti(page, prefixe)
 
@@ -245,7 +260,10 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
             )
 
-            const prefixe = 'rappel'
+            const formulaire = await page.waitForSelector(
+                '#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire .formulaire'
+            )
+            const prefixe = await formulaire.getAttribute('data-nom')
 
             await cEstParti(page, prefixe)
 
@@ -278,7 +296,10 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
             )
 
-            const prefixe = 'rappel'
+            const formulaire = await page.waitForSelector(
+                '#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire .formulaire'
+            )
+            const prefixe = await formulaire.getAttribute('data-nom')
 
             await cEstParti(page, prefixe)
 
@@ -312,7 +333,11 @@ describe('Mini-questionnaire dose de rappel', function () {
             'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
         )
 
-        const prefixe = 'rappel'
+        const formulaire = await page.waitForSelector(
+            '#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
+
         await cEstParti(page, prefixe)
 
         await remplirAge(page, 'moins65', prefixe)
@@ -339,7 +364,11 @@ describe('Mini-questionnaire dose de rappel', function () {
             'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
         )
 
-        const prefixe = 'rappel'
+        const formulaire = await page.waitForSelector(
+            '#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
+
         await cEstParti(page, prefixe)
 
         let formLegend = await page.waitForSelector(`#${prefixe}-age-form legend h3`)
@@ -370,7 +399,11 @@ describe('Mini-questionnaire dose de rappel', function () {
             'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
         )
 
-        const prefixe = 'rappel'
+        const formulaire = await page.waitForSelector(
+            '#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
+
         await cEstParti(page, prefixe)
 
         let formLegend = await page.waitForSelector(`#${prefixe}-age-form legend h3`)
@@ -412,7 +445,11 @@ describe('Mini-questionnaire dose de rappel', function () {
             'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
         )
 
-        const prefixe = 'rappel'
+        const formulaire = await page.waitForSelector(
+            '#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
+
         await cEstParti(page, prefixe)
 
         let formLegend = await page.waitForSelector(`#${prefixe}-age-form legend h3`)
@@ -457,7 +494,11 @@ describe('Mini-questionnaire dose de rappel', function () {
             'http://localhost:8080/pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
         )
 
-        const prefixe = 'rappel'
+        const formulaire = await page.waitForSelector(
+            '#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
+
         await cEstParti(page, prefixe)
 
         let formLegend = await page.waitForSelector(`#${prefixe}-age-form legend h3`)

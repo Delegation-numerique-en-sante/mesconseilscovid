@@ -126,7 +126,10 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const prefixe = 'pass-sanitaire'
+        const formulaire = await page.waitForSelector(
+            '#quel-justificatif-utiliser-comme-pass-sanitaire-en-france .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -150,7 +153,10 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const prefixe = 'pass-sanitaire'
+        const formulaire = await page.waitForSelector(
+            '#quel-justificatif-utiliser-comme-pass-sanitaire-en-france .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -180,7 +186,10 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const prefixe = 'pass-sanitaire'
+        const formulaire = await page.waitForSelector(
+            '#quel-justificatif-utiliser-comme-pass-sanitaire-en-france .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -206,7 +215,10 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const prefixe = 'pass-sanitaire'
+        const formulaire = await page.waitForSelector(
+            '#quel-justificatif-utiliser-comme-pass-sanitaire-en-france .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -232,7 +244,10 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const prefixe = 'pass-sanitaire'
+        const formulaire = await page.waitForSelector(
+            '#quel-justificatif-utiliser-comme-pass-sanitaire-en-france .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -254,7 +269,10 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const prefixe = 'pass-sanitaire'
+        const formulaire = await page.waitForSelector(
+            '#quel-justificatif-utiliser-comme-pass-sanitaire-en-france .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -276,7 +294,10 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const prefixe = 'pass-sanitaire'
+        const formulaire = await page.waitForSelector(
+            '#quel-justificatif-utiliser-comme-pass-sanitaire-en-france .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -300,7 +321,10 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const prefixe = 'pass-sanitaire'
+        const formulaire = await page.waitForSelector(
+            '#quel-justificatif-utiliser-comme-pass-sanitaire-en-france .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -324,7 +348,10 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const prefixe = 'pass-sanitaire'
+        const formulaire = await page.waitForSelector(
+            '#quel-justificatif-utiliser-comme-pass-sanitaire-en-france .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -344,7 +371,10 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const prefixe = 'pass-sanitaire'
+        const formulaire = await page.waitForSelector(
+            '#quel-justificatif-utiliser-comme-pass-sanitaire-en-france .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -364,7 +394,10 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const prefixe = 'pass-sanitaire'
+        const formulaire = await page.waitForSelector(
+            '#quel-justificatif-utiliser-comme-pass-sanitaire-en-france .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -409,7 +442,10 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        const prefixe = 'pass-sanitaire'
+        const formulaire = await page.waitForSelector(
+            '#quel-justificatif-utiliser-comme-pass-sanitaire-en-france .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 

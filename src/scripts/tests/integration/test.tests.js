@@ -77,7 +77,10 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
-        const prefixe = 'tests-de-depistage'
+        const formulaire = await page.waitForSelector(
+            '#quel-est-le-test-adapte-a-ma-situation .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -97,7 +100,10 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
-        const prefixe = 'tests-de-depistage'
+        const formulaire = await page.waitForSelector(
+            '#quel-est-le-test-adapte-a-ma-situation .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -117,7 +123,10 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
-        const prefixe = 'tests-de-depistage'
+        const formulaire = await page.waitForSelector(
+            '#quel-est-le-test-adapte-a-ma-situation .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -137,7 +146,10 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
-        const prefixe = 'tests-de-depistage'
+        const formulaire = await page.waitForSelector(
+            '#quel-est-le-test-adapte-a-ma-situation .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -163,7 +175,10 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
-        const prefixe = 'tests-de-depistage'
+        const formulaire = await page.waitForSelector(
+            '#quel-est-le-test-adapte-a-ma-situation .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -197,7 +212,10 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
-        const prefixe = 'tests-de-depistage'
+        const formulaire = await page.waitForSelector(
+            '#quel-est-le-test-adapte-a-ma-situation .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
@@ -240,7 +258,10 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
-        const prefixe = 'tests-de-depistage'
+        const formulaire = await page.waitForSelector(
+            '#quel-est-le-test-adapte-a-ma-situation .formulaire'
+        )
+        const prefixe = await formulaire.getAttribute('data-nom')
 
         await cEstParti(page, prefixe)
 
