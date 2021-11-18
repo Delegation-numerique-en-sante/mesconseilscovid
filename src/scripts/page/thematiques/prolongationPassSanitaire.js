@@ -24,7 +24,7 @@ export function dynamiseLaProlongationDuPass() {
 
 class FormulaireProlongationPassSanitaire extends Formulaire {
     constructor() {
-        super('prolongation-pass-sanitaire', 'age')
+        super('rappel', 'age')
         this.age = undefined
         this.janssen = false
         this.prolongationPass = undefined
@@ -51,10 +51,7 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
-                const value = getRadioValue(
-                    form,
-                    'prolongation_pass_sanitaire_age_radio'
-                )
+                const value = getRadioValue(form, `${this.prefixe}_age_radio`)
                 this.age = value
                 hideElement(form)
                 if (value === 'plus65' || value === 'moins65') {
@@ -72,7 +69,7 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                 event.preventDefault()
                 const value = getRadioValue(
                     form,
-                    'prolongation_pass_sanitaire_vaccination_initiale_radio'
+                    `${this.prefixe}_vaccination_initiale_radio`
                 )
                 hideElement(form)
                 if (value === 'janssen') {
@@ -105,7 +102,7 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                 event.preventDefault()
                 const value = getRadioValue(
                     form,
-                    'prolongation_pass_sanitaire_situation_moins65_radio'
+                    `${this.prefixe}_situation_moins65_radio`
                 )
                 hideElement(form)
                 if (value === 'comorbidite' || value === 'pro_sante') {
@@ -132,15 +129,12 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
 
             updateButton()
 
-            const datePicker = form.querySelector(
-                '#prolongation_pass_sanitaire_date_derniere_dose'
-            )
+            const datePicker = form.querySelector(`#${this.prefixe}_date_derniere_dose`)
             addDatePickerPolyfill(datePicker, null, updateButton)
 
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
-                const datePicker =
-                    form.elements['prolongation_pass_sanitaire_date_derniere_dose']
+                const datePicker = form.elements[`${this.prefixe}_date_derniere_dose`]
                 if (datePicker.value !== '') {
                     hideElement(form)
                     // const dateDerniereDose = new Date(datePicker.value)

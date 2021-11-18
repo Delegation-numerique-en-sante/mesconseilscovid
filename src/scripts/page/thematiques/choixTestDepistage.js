@@ -26,7 +26,7 @@ class FormulaireTestDepistage extends Formulaire {
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
-                const value = getRadioValue(form, 'tests_de_depistage_symptomes_radio')
+                const value = getRadioValue(form, `${this.prefixe}_symptomes_radio`)
                 hideElement(form)
                 if (value === 'oui') {
                     this.transitionneVersEtape('depuis-quand')
@@ -41,10 +41,7 @@ class FormulaireTestDepistage extends Formulaire {
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
-                const value = getRadioValue(
-                    form,
-                    'tests_de_depistage_depuis_quand_radio'
-                )
+                const value = getRadioValue(form, `${this.prefixe}_depuis_quand_radio`)
                 hideElement(form)
                 this.afficheReponse(`symptomes-${value}`)
             })
@@ -55,10 +52,7 @@ class FormulaireTestDepistage extends Formulaire {
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
-                const value = getRadioValue(
-                    form,
-                    'tests_de_depistage_cas_contact_radio'
-                )
+                const value = getRadioValue(form, `${this.prefixe}_cas_contact_radio`)
                 hideElement(form)
                 if (value === 'oui') {
                     this.afficheReponse(`pas-symptomes-cas-contact-${value}`)
@@ -73,7 +67,7 @@ class FormulaireTestDepistage extends Formulaire {
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
-                const value = getRadioValue(form, 'tests_de_depistage_auto_test_radio')
+                const value = getRadioValue(form, `${this.prefixe}_auto_test_radio`)
                 hideElement(form)
                 this.afficheReponse(`pas-symptomes-pas-cas-contact-auto-test-${value}`)
             })

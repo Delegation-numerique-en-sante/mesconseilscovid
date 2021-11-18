@@ -2,60 +2,56 @@ import { assert } from 'chai'
 
 async function cEstParti(page) {
     const bouton = await page.waitForSelector(
-        '#prolongation-pass-sanitaire-demarrage-form >> text="C’est parti !"'
+        '#rappel-demarrage-form >> text="C’est parti !"'
     )
     await bouton.click()
 }
 
 async function remplirAge(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#prolongation-pass-sanitaire-age-form label[for="prolongation_pass_sanitaire_age_radio_${reponse}"]`
+        `#rappel-age-form label[for="rappel_age_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
-    const bouton = await page.waitForSelector(
-        '#prolongation-pass-sanitaire-age-form >> text="Continuer"'
-    )
+    const bouton = await page.waitForSelector('#rappel-age-form >> text="Continuer"')
     await bouton.click()
 }
 
 async function remplirVaccinationInitiale(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#prolongation-pass-sanitaire-vaccination-initiale-form label[for="prolongation_pass_sanitaire_vaccination_initiale_radio_${reponse}"]`
+        `#rappel-vaccination-initiale-form label[for="rappel_vaccination_initiale_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#prolongation-pass-sanitaire-vaccination-initiale-form >> text="Continuer"'
+        '#rappel-vaccination-initiale-form >> text="Continuer"'
     )
     await bouton.click()
 }
 
 async function remplirSituationMoins65(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#prolongation-pass-sanitaire-situation-moins65-form label[for="prolongation_pass_sanitaire_situation_moins65_radio_${reponse}"]`
+        `#rappel-situation-moins65-form label[for="rappel_situation_moins65_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#prolongation-pass-sanitaire-situation-moins65-form >> text="Continuer"'
+        '#rappel-situation-moins65-form >> text="Continuer"'
     )
     await bouton.click()
 }
 
 async function remplirDateDerniereDose(page, dateIso) {
-    await page.fill('#prolongation_pass_sanitaire_date_derniere_dose', dateIso)
+    await page.fill('#rappel_date_derniere_dose', dateIso)
 
     const bouton = await page.waitForSelector(
-        '#prolongation-pass-sanitaire-date-derniere-dose-form >> text="Terminer"'
+        '#rappel-date-derniere-dose-form >> text="Terminer"'
     )
     await bouton.click()
 }
 
 async function recuperationStatut(page, statut) {
-    const reponse = await page.waitForSelector(
-        `#prolongation-pass-sanitaire-${statut}-reponse`
-    )
+    const reponse = await page.waitForSelector(`#rappel-${statut}-reponse`)
     return (await reponse.innerText()).trim()
 }
 
@@ -328,28 +324,24 @@ describe('Mini-questionnaire dose de rappel', function () {
 
         await cEstParti(page)
 
-        let formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-age-form legend h3'
-        )
+        let formLegend = await page.waitForSelector('#rappel-age-form legend h3')
         assert.equal(await formLegend.innerText(), 'Mon âge')
 
         await remplirAge(page, 'plus65')
 
         formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-vaccination-initiale-form legend h3'
+            '#rappel-vaccination-initiale-form legend h3'
         )
         assert.equal(await formLegend.innerText(), 'Ma vaccination initiale')
 
         // On clique sur le bouton retour.
         const bouton = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-vaccination-initiale-form >> text="Retour"'
+            '#rappel-vaccination-initiale-form >> text="Retour"'
         )
         await bouton.click()
 
         // On est revenu au formulaire précédent (age).
-        formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-age-form legend h3'
-        )
+        formLegend = await page.waitForSelector('#rappel-age-form legend h3')
         assert.equal(await formLegend.innerText(), 'Mon âge')
     })
 
@@ -362,39 +354,35 @@ describe('Mini-questionnaire dose de rappel', function () {
 
         await cEstParti(page)
 
-        let formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-age-form legend h3'
-        )
+        let formLegend = await page.waitForSelector('#rappel-age-form legend h3')
         assert.equal(await formLegend.innerText(), 'Mon âge')
 
         await remplirAge(page, 'plus65')
         await remplirVaccinationInitiale(page, 'autre')
 
         formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-date-derniere-dose-form legend h3'
+            '#rappel-date-derniere-dose-form legend h3'
         )
         assert.equal(await formLegend.innerText(), 'La date de ma dernière dose')
 
         // On clique sur le bouton retour.
         const bouton = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-date-derniere-dose-form >> text="Retour"'
+            '#rappel-date-derniere-dose-form >> text="Retour"'
         )
         await bouton.click()
 
         formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-vaccination-initiale-form legend h3'
+            '#rappel-vaccination-initiale-form legend h3'
         )
         assert.equal(await formLegend.innerText(), 'Ma vaccination initiale')
 
         // On clique sur le bouton retour.
         const bouton2 = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-vaccination-initiale-form >> text="Retour"'
+            '#rappel-vaccination-initiale-form >> text="Retour"'
         )
         await bouton2.click()
 
-        formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-age-form legend h3'
-        )
+        formLegend = await page.waitForSelector('#rappel-age-form legend h3')
         assert.equal(await formLegend.innerText(), 'Mon âge')
     })
 
@@ -407,9 +395,7 @@ describe('Mini-questionnaire dose de rappel', function () {
 
         await cEstParti(page)
 
-        let formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-age-form legend h3'
-        )
+        let formLegend = await page.waitForSelector('#rappel-age-form legend h3')
         assert.equal(await formLegend.innerText(), 'Mon âge')
 
         await remplirAge(page, 'moins65')
@@ -417,29 +403,29 @@ describe('Mini-questionnaire dose de rappel', function () {
         await remplirSituationMoins65(page, 'comorbidite')
 
         formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-date-derniere-dose-form legend h3'
+            '#rappel-date-derniere-dose-form legend h3'
         )
         assert.equal(await formLegend.innerText(), 'La date de ma dernière dose')
 
         // On clique sur le bouton retour.
         const bouton = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-date-derniere-dose-form >> text="Retour"'
+            '#rappel-date-derniere-dose-form >> text="Retour"'
         )
         await bouton.click()
 
         formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-situation-moins65-form legend h3'
+            '#rappel-situation-moins65-form legend h3'
         )
         assert.equal(await formLegend.innerText(), 'Ma situation')
 
         // On clique sur le bouton retour.
         const bouton2 = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-situation-moins65-form >> text="Retour"'
+            '#rappel-situation-moins65-form >> text="Retour"'
         )
         await bouton2.click()
 
         formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-vaccination-initiale-form legend h3'
+            '#rappel-vaccination-initiale-form legend h3'
         )
         assert.equal(await formLegend.innerText(), 'Ma vaccination initiale')
     })
@@ -453,16 +439,14 @@ describe('Mini-questionnaire dose de rappel', function () {
 
         await cEstParti(page)
 
-        let formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-age-form legend h3'
-        )
+        let formLegend = await page.waitForSelector('#rappel-age-form legend h3')
         assert.equal(await formLegend.innerText(), 'Mon âge')
 
         await remplirAge(page, 'plus65')
         await remplirVaccinationInitiale(page, 'autre')
 
         formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-date-derniere-dose-form legend h3'
+            '#rappel-date-derniere-dose-form legend h3'
         )
         assert.equal(await formLegend.innerText(), 'La date de ma dernière dose')
 
@@ -470,14 +454,12 @@ describe('Mini-questionnaire dose de rappel', function () {
 
         // On clique sur le bouton pour recommencer.
         const bouton = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-refaire >> text="Recommencer le questionnaire"'
+            '#rappel-refaire >> text="Recommencer le questionnaire"'
         )
         await bouton.click()
 
         // On est revenu au formulaire initial (situation).
-        formLegend = await page.waitForSelector(
-            '#prolongation-pass-sanitaire-age-form legend h3'
-        )
+        formLegend = await page.waitForSelector('#rappel-age-form legend h3')
         assert.equal(await formLegend.innerText(), 'Mon âge')
     })
 })

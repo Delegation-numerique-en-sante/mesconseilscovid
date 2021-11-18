@@ -1,4 +1,4 @@
-<form id="tests-de-depistage-demarrage-form">
+<form id="{{prefixe}}-demarrage-form">
     <fieldset>
         <legend>
             <h3>Pass sanitaire, symptômes, cas contact ?</h3>
@@ -13,95 +13,95 @@
     </div>
 </form>
 
-<form id="tests-de-depistage-symptomes-form" hidden>
+<form id="{{prefixe}}-symptomes-form" hidden>
     <a href="javascript:;" data-precedent="demarrage" class="back-button">Retour</a>
     <fieldset class="required">
-        <legend><h3 id="tests-de-depistage-symptomes-label">Avez-vous des symptômes qui peuvent évoquer la Covid ?</h3></legend>
-        <div role="radiogroup" aria-labelledby="tests-de-depistage-symptomes-label">
-            <input id="tests_de_depistage_symptomes_radio_oui" type="radio" required name="tests_de_depistage_symptomes_radio" value="oui">
-            <label for="tests_de_depistage_symptomes_radio_oui">Oui</label>
-            <input id="tests_de_depistage_symptomes_radio_non" type="radio" required name="tests_de_depistage_symptomes_radio" value="non">
-            <label for="tests_de_depistage_symptomes_radio_non">Non</label>
+        <legend><h3 id="{{prefixe}}-symptomes-label">Avez-vous des symptômes qui peuvent évoquer la Covid ?</h3></legend>
+        <div role="radiogroup" aria-labelledby="{{prefixe}}-symptomes-label">
+            <input id="{{prefixe}}_symptomes_radio_oui" type="radio" required name="{{prefixe}}_symptomes_radio" value="oui">
+            <label for="{{prefixe}}_symptomes_radio_oui">Oui</label>
+            <input id="{{prefixe}}_symptomes_radio_non" type="radio" required name="{{prefixe}}_symptomes_radio" value="non">
+            <label for="{{prefixe}}_symptomes_radio_non">Non</label>
         </div>
     </fieldset>
     <div class="form-controls">
         <div class="button-with-progress">
-            <p id="aria-description-progress-tests-de-depistage-symptomes" class="progress">Il vous reste moins de 2 étapes</p>
-            <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-tests-de-depistage-symptomes">
+            <p id="aria-description-progress-{{prefixe}}-symptomes" class="progress">Il vous reste moins de 2 étapes</p>
+            <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-{{prefixe}}-symptomes">
         </div>
     </div>
 </form>
 
-<form id="tests-de-depistage-depuis-quand-form" hidden>
+<form id="{{prefixe}}-depuis-quand-form" hidden>
     <a href="javascript:;" data-precedent="symptomes" class="back-button">Retour</a>
-    <fieldset class="required" id="tests-de-depistage-depuis-quand">
-        <legend><h3 id="tests-de-depistage-depuis-quand-label">Depuis quand avez-vous des symptômes ?</h3></legend>
-        <div role="radiogroup" aria-labelledby="tests-de-depistage-depuis-quand-label">
-            <input id="tests_de_depistage_depuis_quand_radio_moins_4_jours" type="radio" required name="tests_de_depistage_depuis_quand_radio" value="moins-4-jours">
-            <label for="tests_de_depistage_depuis_quand_radio_moins_4_jours">depuis 4 jours ou moins</label>
-            <input id="tests_de_depistage_depuis_quand_radio_plus_4_jours" type="radio" required name="tests_de_depistage_depuis_quand_radio" value="plus-4-jours">
-            <label for="tests_de_depistage_depuis_quand_radio_plus_4_jours">depuis 5 jours ou plus</label>
+    <fieldset class="required" id="{{prefixe}}-depuis-quand">
+        <legend><h3 id="{{prefixe}}-depuis-quand-label">Depuis quand avez-vous des symptômes ?</h3></legend>
+        <div role="radiogroup" aria-labelledby="{{prefixe}}-depuis-quand-label">
+            <input id="{{prefixe}}_depuis_quand_radio_moins_4_jours" type="radio" required name="{{prefixe}}_depuis_quand_radio" value="moins-4-jours">
+            <label for="{{prefixe}}_depuis_quand_radio_moins_4_jours">depuis 4 jours ou moins</label>
+            <input id="{{prefixe}}_depuis_quand_radio_plus_4_jours" type="radio" required name="{{prefixe}}_depuis_quand_radio" value="plus-4-jours">
+            <label for="{{prefixe}}_depuis_quand_radio_plus_4_jours">depuis 5 jours ou plus</label>
         </div>
     </fieldset>
     <div class="form-controls">
         <div class="button-with-progress">
-            <p id="aria-description-progress-tests-de-depistage-depuis-quand" class="progress">C’est la dernière étape !</p>
-            <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-tests-de-depistage-depuis-quand">
+            <p id="aria-description-progress-{{prefixe}}-depuis-quand" class="progress">C’est la dernière étape !</p>
+            <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-{{prefixe}}-depuis-quand">
         </div>
     </div>
 </form>
 
-<form id="tests-de-depistage-cas-contact-form" hidden>
+<form id="{{prefixe}}-cas-contact-form" hidden>
     <a href="javascript:;" data-precedent="symptomes" class="back-button">Retour</a>
-    <fieldset class="required" id="tests-de-depistage-cas-contact">
-        <legend><h3 id="tests-de-depistage-cas-contact-label">Êtes-vous cas contact ?</h3></legend>
-        <div role="radiogroup" aria-labelledby="tests-de-depistage-cas-contact-label">
-            <input id="tests_de_depistage_cas_contact_radio_oui" type="radio" required name="tests_de_depistage_cas_contact_radio" value="oui">
-            <label for="tests_de_depistage_cas_contact_radio_oui">Oui</label>
-            <input id="tests_de_depistage_cas_contact_radio_non" type="radio" required name="tests_de_depistage_cas_contact_radio" value="non">
-            <label for="tests_de_depistage_cas_contact_radio_non">Non</label>
+    <fieldset class="required" id="{{prefixe}}-cas-contact">
+        <legend><h3 id="{{prefixe}}-cas-contact-label">Êtes-vous cas contact ?</h3></legend>
+        <div role="radiogroup" aria-labelledby="{{prefixe}}-cas-contact-label">
+            <input id="{{prefixe}}_cas_contact_radio_oui" type="radio" required name="{{prefixe}}_cas_contact_radio" value="oui">
+            <label for="{{prefixe}}_cas_contact_radio_oui">Oui</label>
+            <input id="{{prefixe}}_cas_contact_radio_non" type="radio" required name="{{prefixe}}_cas_contact_radio" value="non">
+            <label for="{{prefixe}}_cas_contact_radio_non">Non</label>
         </div>
     </fieldset>
     <div class="form-controls">
         <div class="button-with-progress">
-            <p id="aria-description-progress-tests-de-depistage-cas-contact" class="progress">Plus qu’une étape</p>
-            <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-tests-de-depistage-cas-contact">
+            <p id="aria-description-progress-{{prefixe}}-cas-contact" class="progress">Plus qu’une étape</p>
+            <input type="submit" class="button" value="Continuer" aria-describedby="aria-description-progress-{{prefixe}}-cas-contact">
         </div>
     </div>
 </form>
 
-<form id="tests-de-depistage-auto-test-form" hidden>
+<form id="{{prefixe}}-auto-test-form" hidden>
     <a href="javascript:;" data-precedent="cas-contact" class="back-button">Retour</a>
-    <fieldset id="tests-de-depistage-auto-test">
-        <legend><h3 id="tests-de-depistage-auto-test-label">Je veux faire un test pour…</h3></legend>
-        <div role="radiogroup" aria-labelledby="tests-de-depistage-auto-test-label">
-            <input id="tests_de_depistage_auto_test_radio_oui" type="radio" required name="tests_de_depistage_auto_test_radio" value="oui">
-            <label for="tests_de_depistage_auto_test_radio_oui">confirmer un autotest positif</label>
-            <input id="tests_de_depistage_auto_test_radio_non" type="radio" required name="tests_de_depistage_auto_test_radio" value="non">
-            <label for="tests_de_depistage_auto_test_radio_non">obtenir un « pass sanitaire », rendre visite à une personne vulnérable, etc.</label>
+    <fieldset id="{{prefixe}}-auto-test">
+        <legend><h3 id="{{prefixe}}-auto-test-label">Je veux faire un test pour…</h3></legend>
+        <div role="radiogroup" aria-labelledby="{{prefixe}}-auto-test-label">
+            <input id="{{prefixe}}_auto_test_radio_oui" type="radio" required name="{{prefixe}}_auto_test_radio" value="oui">
+            <label for="{{prefixe}}_auto_test_radio_oui">confirmer un autotest positif</label>
+            <input id="{{prefixe}}_auto_test_radio_non" type="radio" required name="{{prefixe}}_auto_test_radio" value="non">
+            <label for="{{prefixe}}_auto_test_radio_non">obtenir un « pass sanitaire », rendre visite à une personne vulnérable, etc.</label>
         </div>
     </fieldset>
     <div class="form-controls">
         <div class="button-with-progress">
-            <p id="aria-description-progress-tests-de-depistage-auto-test" class="progress">C’est la dernière étape !</p>
-            <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-tests-de-depistage-auto-test">
+            <p id="aria-description-progress-{{prefixe}}-auto-test" class="progress">C’est la dernière étape !</p>
+            <input type="submit" class="button" value="Terminer" aria-describedby="aria-description-progress-{{prefixe}}-auto-test">
         </div>
     </div>
 </form>
 
-<div id="tests-de-depistage-symptomes-moins-4-jours-reponse" class="statut statut-bleu" hidden>
+<div id="{{prefixe}}-symptomes-moins-4-jours-reponse" class="statut statut-bleu" hidden>
 
 Vous avez des symptômes qui peuvent évoquer la Covid depuis moins de 4 jours, nous vous recommandons de faire un test **antigénique** ou **PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](/j-ai-des-symptomes-covid.html).
 
 </div>
 
-<div id="tests-de-depistage-symptomes-plus-4-jours-reponse" class="statut statut-bleu" hidden>
+<div id="{{prefixe}}-symptomes-plus-4-jours-reponse" class="statut statut-bleu" hidden>
 
 Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, nous vous recommandons de faire un **test PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](/j-ai-des-symptomes-covid.html).
 
 </div>
 
-<div id="tests-de-depistage-pas-symptomes-cas-contact-oui-reponse" class="statut statut-bleu" hidden>
+<div id="{{prefixe}}-pas-symptomes-cas-contact-oui-reponse" class="statut statut-bleu" hidden>
 
 Vous n’avez pas de symptômes qui peuvent évoquer la Covid mais vous êtes cas contact, nous vous recommandons de faire un **test antigénique** si vous venez de l’apprendre.
 
@@ -109,13 +109,13 @@ Pour un test de contrôle (7 jours après votre contact à risque ), les tests
 
 </div>
 
-<div id="tests-de-depistage-pas-symptomes-pas-cas-contact-auto-test-oui-reponse" class="statut statut-bleu" hidden>
+<div id="{{prefixe}}-pas-symptomes-pas-cas-contact-auto-test-oui-reponse" class="statut statut-bleu" hidden>
 
 Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pas cas contact mais votre autotest est positif. Vous devez confirmer ce résultat avec un test **PCR nasopharyngé** et rester en isolement le temps d’obtenir cette confirmation.
 
 </div>
 
-<div id="tests-de-depistage-pas-symptomes-pas-cas-contact-auto-test-non-reponse" class="statut statut-bleu" hidden>
+<div id="{{prefixe}}-pas-symptomes-pas-cas-contact-auto-test-non-reponse" class="statut statut-bleu" hidden>
 
 Vous n’avez pas de symptômes qui peuvent évoquer la Covid et vous n’êtes pas cas contact :
 
@@ -125,6 +125,6 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid et vous n’êtes 
 
 </div>
 
-<p id="tests-de-depistage-refaire" hidden>
+<p id="{{prefixe}}-refaire" hidden>
 <a href="javascript:;" role="button" class="button button-outline button-half-width">Recommencer le questionnaire</a>
 </p>
