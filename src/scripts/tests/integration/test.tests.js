@@ -9,7 +9,7 @@ async function cEstParti(page) {
 
 async function remplirSymptomes(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#tests-de-depistage-symptomes-form label[for="tests_de_depistage_symptomes_radio_${reponse}"]`
+        `#tests-de-depistage-symptomes-form label[for="tests-de-depistage_symptomes_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
@@ -21,7 +21,7 @@ async function remplirSymptomes(page, reponse) {
 
 async function remplirDepuisQuand(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#tests-de-depistage-depuis-quand-form label[for="tests_de_depistage_depuis_quand_radio_${reponse}"]`
+        `#tests-de-depistage-depuis-quand-form label[for="tests-de-depistage_depuis_quand_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
@@ -33,7 +33,7 @@ async function remplirDepuisQuand(page, reponse) {
 
 async function remplirCasContact(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#tests-de-depistage-cas-contact-form label[for="tests_de_depistage_cas_contact_radio_${reponse}"]`
+        `#tests-de-depistage-cas-contact-form label[for="tests-de-depistage_cas_contact_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
@@ -45,7 +45,7 @@ async function remplirCasContact(page, reponse) {
 
 async function remplirAutoTest(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#tests-de-depistage-auto-test-form label[for="tests_de_depistage_auto_test_radio_${reponse}"]`
+        `#tests-de-depistage-auto-test-form label[for="tests-de-depistage_auto_test_radio_${reponse}"]`
     )
     await checkbox_label.click()
 

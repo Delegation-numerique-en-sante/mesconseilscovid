@@ -10,7 +10,7 @@ async function cEstParti(page) {
 
 async function remplirVaccination(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#pass-sanitaire-vaccination-form label[for="pass_sanitaire_vaccination_radio_${reponse}"]`
+        `#pass-sanitaire-vaccination-form label[for="pass-sanitaire_vaccination_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
@@ -22,7 +22,7 @@ async function remplirVaccination(page, reponse) {
 
 async function remplirDepistagePositif(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#pass-sanitaire-depistage-positif-form label[for="pass_sanitaire_depistage_positif_radio_${reponse}"]`
+        `#pass-sanitaire-depistage-positif-form label[for="pass-sanitaire_depistage_positif_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
@@ -34,7 +34,7 @@ async function remplirDepistagePositif(page, reponse) {
 
 async function remplirGuerisonAvant1reDose(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#pass-sanitaire-guerison-avant-1re-dose-form label[for="pass_sanitaire_guerison_avant_1re_dose_radio_${reponse}"]`
+        `#pass-sanitaire-guerison-avant-1re-dose-form label[for="pass-sanitaire_guerison_avant_1re_dose_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
@@ -46,7 +46,7 @@ async function remplirGuerisonAvant1reDose(page, reponse) {
 
 async function remplirTypeVaccin(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#pass-sanitaire-type-vaccin-form label[for="pass_sanitaire_type_vaccin_radio_${reponse}"]`
+        `#pass-sanitaire-type-vaccin-form label[for="pass-sanitaire_type_vaccin_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
@@ -58,7 +58,7 @@ async function remplirTypeVaccin(page, reponse) {
 
 async function remplirDateDerniereCovid(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#pass-sanitaire-date-derniere-covid-form label[for="pass_sanitaire_date_derniere_covid_radio_${reponse}"]`
+        `#pass-sanitaire-date-derniere-covid-form label[for="pass-sanitaire_date_derniere_covid_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
@@ -70,7 +70,7 @@ async function remplirDateDerniereCovid(page, reponse) {
 
 async function remplirDate1reDoseJanssen(page, reponse) {
     await page.fill(
-        '#pass_sanitaire_date_1re_dose_janssen',
+        '#pass-sanitaire_date_1re_dose_janssen',
         reponse.toISOString().substring(0, 10)
     )
 
@@ -82,7 +82,7 @@ async function remplirDate1reDoseJanssen(page, reponse) {
 
 async function remplirDate1reDoseAutres(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#pass-sanitaire-date-1re-dose-autres-form label[for="pass_sanitaire_date_1re_dose_autres_radio_${reponse}"]`
+        `#pass-sanitaire-date-1re-dose-autres-form label[for="pass-sanitaire_date_1re_dose_autres_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
@@ -94,7 +94,7 @@ async function remplirDate1reDoseAutres(page, reponse) {
 
 async function remplirDate2eDose(page, reponse) {
     const checkbox_label = await page.waitForSelector(
-        `#pass-sanitaire-date-2e-dose-form label[for="pass_sanitaire_date_2e_dose_radio_${reponse}"]`
+        `#pass-sanitaire-date-2e-dose-form label[for="pass-sanitaire_date_2e_dose_radio_${reponse}"]`
     )
     await checkbox_label.click()
 

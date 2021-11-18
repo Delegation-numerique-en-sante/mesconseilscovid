@@ -31,7 +31,7 @@ class FormulairePassSanitaire extends Formulaire {
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
-                const value = getRadioValue(form, 'pass_sanitaire_vaccination_radio')
+                const value = getRadioValue(form, `${this.prefixe}_vaccination_radio`)
                 hideElement(form)
                 if (value === '1') {
                     this.transitionneVersEtape('type-vaccin')
@@ -50,7 +50,8 @@ class FormulairePassSanitaire extends Formulaire {
             toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
-                const datePicker = form.elements['pass_sanitaire_date_1re_dose_janssen']
+                const datePicker =
+                    form.elements[`${this.prefixe}_date_1re_dose_janssen`]
                 if (datePicker.value !== '') {
                     hideElement(form)
                     const aujourdhui = new Date()
@@ -73,7 +74,7 @@ class FormulairePassSanitaire extends Formulaire {
                 hideElement(form)
                 const value = getRadioValue(
                     form,
-                    'pass_sanitaire_date_1re_dose_autres_radio'
+                    `${this.prefixe}_date_1re_dose_autres_radio`
                 )
                 if (value === '7_jours_ou_plus') {
                     this.afficheReponse('vaccination-complete')
@@ -91,7 +92,7 @@ class FormulairePassSanitaire extends Formulaire {
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
                 hideElement(form)
-                const value = getRadioValue(form, 'pass_sanitaire_date_2e_dose_radio')
+                const value = getRadioValue(form, `${this.prefixe}_date_2e_dose_radio`)
                 if (value === '7_jours_ou_plus') {
                     this.afficheReponse('vaccination-complete')
                 } else if (value === 'moins_de_7_jours') {
@@ -107,7 +108,7 @@ class FormulairePassSanitaire extends Formulaire {
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
-                const value = getRadioValue(form, 'pass_sanitaire_type_vaccin_radio')
+                const value = getRadioValue(form, `${this.prefixe}_type_vaccin_radio`)
                 hideElement(form)
                 if (
                     value === 'pfizer' ||
@@ -130,7 +131,7 @@ class FormulairePassSanitaire extends Formulaire {
                 event.preventDefault()
                 const value = getRadioValue(
                     form,
-                    'pass_sanitaire_guerison_avant_1re_dose_radio'
+                    `${this.prefixe}_guerison_avant_1re_dose_radio`
                 )
                 hideElement(form)
                 if (value === 'oui') {
@@ -150,7 +151,7 @@ class FormulairePassSanitaire extends Formulaire {
                 event.preventDefault()
                 const value = getRadioValue(
                     form,
-                    'pass_sanitaire_depistage_positif_radio'
+                    `${this.prefixe}_depistage_positif_radio`
                 )
                 hideElement(form)
                 if (value === 'oui') {
@@ -170,7 +171,7 @@ class FormulairePassSanitaire extends Formulaire {
                 event.preventDefault()
                 const value = getRadioValue(
                     form,
-                    'pass_sanitaire_date_derniere_covid_radio'
+                    `${this.prefixe}_date_derniere_covid_radio`
                 )
                 hideElement(form)
                 if (value === 'moins_de_6_mois') {

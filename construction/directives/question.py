@@ -1,5 +1,7 @@
 from pathlib import Path
 
+
+from jinja2 import Template
 from mistune.directives import Directive
 from mistune.markdown import preprocess
 
@@ -52,10 +54,11 @@ class QuestionDirective(Directive):
     def _render_formulaire(self, nom_formulaire, block):
         path = THEMATIQUES_DIR / "formulaires" / f"{nom_formulaire}.md"
         with path.open() as f:
+            template = Template(f.read())
             content = (
-                f'<div class="formulaire" data-nom="{nom_formulaire}">\n'
-                + f.read()
-                + "\n</div>"
+                f'<div class="formulaire" data-nom="{nom_formulaire}">\n\n'
+                + template.render(prefixe=nom_formulaire)
+                + "\n\n</div>"
             )
         return block.parse(*preprocess(content, {"__file__": str(path)}))
 
