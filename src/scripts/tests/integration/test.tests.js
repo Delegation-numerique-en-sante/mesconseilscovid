@@ -1,63 +1,87 @@
 import { assert } from 'chai'
 
-async function cEstParti(page, prefixe) {
-    const bouton = await page.waitForSelector(
-        `#${prefixe}-demarrage-form >> text="C’est parti !"`
-    )
-    await bouton.click()
-}
+class Questionnaire {
+    constructor(page, path, slugQuestion) {
+        this.page = page
+        this.path = path
+        this.slugQuestion = slugQuestion
+        this.prefixe = null
+    }
 
-async function remplirSymptomes(page, reponse, prefixe) {
-    const checkbox_label = await page.waitForSelector(
-        `#${prefixe}-symptomes-form label[for="${prefixe}_symptomes_radio_${reponse}"]`
-    )
-    await checkbox_label.click()
+    async cEstParti() {
+        // On va directement à la question
+        await this.page.goto(`http://localhost:8080/${this.path}#${this.slugQuestion}`)
 
-    const bouton = await page.waitForSelector(
-        `#${prefixe}-symptomes-form >> text="Continuer"`
-    )
-    await bouton.click()
-}
+        // On récupère le préfixe du formulaire dans la question
+        const formulaire = await this.page.waitForSelector(
+            `#${this.slugQuestion} .formulaire`
+        )
+        this.prefixe = await formulaire.getAttribute('data-nom')
+        console.log(this.prefixe)
 
-async function remplirDepuisQuand(page, reponse, prefixe) {
-    const checkbox_label = await page.waitForSelector(
-        `#${prefixe}-depuis-quand-form label[for="${prefixe}_depuis_quand_radio_${reponse}"]`
-    )
-    await checkbox_label.click()
+        // On clique sur le bouton pour démarrer
+        const bouton = await this.page.waitForSelector(
+            `#${this.prefixe}-demarrage-form >> text="C’est parti !"`
+        )
+        await bouton.click()
 
-    const bouton = await page.waitForSelector(
-        `#${prefixe}-depuis-quand-form >> text="Terminer"`
-    )
-    await bouton.click()
-}
+        return this.prefixe
+    }
 
-async function remplirCasContact(page, reponse, prefixe) {
-    const checkbox_label = await page.waitForSelector(
-        `#${prefixe}-cas-contact-form label[for="${prefixe}_cas_contact_radio_${reponse}"]`
-    )
-    await checkbox_label.click()
+    async remplirSymptomes(reponse) {
+        const checkbox_label = await this.page.waitForSelector(
+            `#${this.prefixe}-symptomes-form label[for="${this.prefixe}_symptomes_radio_${reponse}"]`
+        )
+        await checkbox_label.click()
 
-    const bouton = await page.waitForSelector(
-        `#${prefixe}-cas-contact-form >> text="Continuer"`
-    )
-    await bouton.click()
-}
+        const bouton = await this.page.waitForSelector(
+            `#${this.prefixe}-symptomes-form >> text="Continuer"`
+        )
+        await bouton.click()
+    }
 
-async function remplirAutoTest(page, reponse, prefixe) {
-    const checkbox_label = await page.waitForSelector(
-        `#${prefixe}-auto-test-form label[for="${prefixe}_auto_test_radio_${reponse}"]`
-    )
-    await checkbox_label.click()
+    async remplirDepuisQuand(reponse) {
+        const checkbox_label = await this.page.waitForSelector(
+            `#${this.prefixe}-depuis-quand-form label[for="${this.prefixe}_depuis_quand_radio_${reponse}"]`
+        )
+        await checkbox_label.click()
 
-    const bouton = await page.waitForSelector(
-        `#${prefixe}-auto-test-form >> text="Terminer"`
-    )
-    await bouton.click()
-}
+        const bouton = await this.page.waitForSelector(
+            `#${this.prefixe}-depuis-quand-form >> text="Terminer"`
+        )
+        await bouton.click()
+    }
 
-async function recuperationStatut(page, statut, prefixe) {
-    const reponse = await page.waitForSelector(`#${prefixe}-${statut}-reponse`)
-    return (await reponse.innerText()).trim()
+    async remplirCasContact(reponse) {
+        const checkbox_label = await this.page.waitForSelector(
+            `#${this.prefixe}-cas-contact-form label[for="${this.prefixe}_cas_contact_radio_${reponse}"]`
+        )
+        await checkbox_label.click()
+
+        const bouton = await this.page.waitForSelector(
+            `#${this.prefixe}-cas-contact-form >> text="Continuer"`
+        )
+        await bouton.click()
+    }
+
+    async remplirAutoTest(reponse) {
+        const checkbox_label = await this.page.waitForSelector(
+            `#${this.prefixe}-auto-test-form label[for="${this.prefixe}_auto_test_radio_${reponse}"]`
+        )
+        await checkbox_label.click()
+
+        const bouton = await this.page.waitForSelector(
+            `#${this.prefixe}-auto-test-form >> text="Terminer"`
+        )
+        await bouton.click()
+    }
+
+    async recuperationStatut(statut) {
+        const reponse = await this.page.waitForSelector(
+            `#${this.prefixe}-${statut}-reponse`
+        )
+        return (await reponse.innerText()).trim()
+    }
 }
 
 describe('Tests', function () {
@@ -73,125 +97,101 @@ describe('Tests', function () {
     })
 
     it('quel test : symptômes de moins de 4 jours', async function () {
-        const page = this.test.page
-
-        await page.goto('http://localhost:8080/tests-de-depistage.html')
-
-        const formulaire = await page.waitForSelector(
-            '#quel-est-le-test-adapte-a-ma-situation .formulaire'
+        const questionnaire = new Questionnaire(
+            this.test.page,
+            'tests-de-depistage.html',
+            'quel-est-le-test-adapte-a-ma-situation'
         )
-        const prefixe = await formulaire.getAttribute('data-nom')
-
-        await cEstParti(page, prefixe)
+        await questionnaire.cEstParti()
 
         // Avec des symptômes.
-        await remplirSymptomes(page, 'oui', prefixe)
+        await questionnaire.remplirSymptomes('oui')
         // De moins de 4 jours.
-        await remplirDepuisQuand(page, 'moins_4_jours', prefixe)
+        await questionnaire.remplirDepuisQuand('moins_4_jours')
         // On propose un test PCR ou antigénique.
         assert.include(
-            await recuperationStatut(page, 'symptomes-moins-4-jours', prefixe),
+            await questionnaire.recuperationStatut('symptomes-moins-4-jours'),
             'faire un test antigénique ou PCR nasopharyngé.'
         )
     })
 
     it('quel test : symptômes de plus de 4 jours', async function () {
-        const page = this.test.page
-
-        await page.goto('http://localhost:8080/tests-de-depistage.html')
-
-        const formulaire = await page.waitForSelector(
-            '#quel-est-le-test-adapte-a-ma-situation .formulaire'
+        const questionnaire = new Questionnaire(
+            this.test.page,
+            'tests-de-depistage.html',
+            'quel-est-le-test-adapte-a-ma-situation'
         )
-        const prefixe = await formulaire.getAttribute('data-nom')
-
-        await cEstParti(page, prefixe)
+        await questionnaire.cEstParti()
 
         // Avec des symptômes.
-        await remplirSymptomes(page, 'oui', prefixe)
+        await questionnaire.remplirSymptomes('oui')
         // De plus de 4 jours.
-        await remplirDepuisQuand(page, 'plus_4_jours', prefixe)
+        await questionnaire.remplirDepuisQuand('plus_4_jours')
         // On propose un test PCR.
         assert.include(
-            await recuperationStatut(page, 'symptomes-plus-4-jours', prefixe),
+            await questionnaire.recuperationStatut('symptomes-plus-4-jours'),
             'faire un test PCR nasopharyngé.'
         )
     })
 
     it('quel test : pas de symptômes et cas contact', async function () {
-        const page = this.test.page
-
-        await page.goto('http://localhost:8080/tests-de-depistage.html')
-
-        const formulaire = await page.waitForSelector(
-            '#quel-est-le-test-adapte-a-ma-situation .formulaire'
+        const questionnaire = new Questionnaire(
+            this.test.page,
+            'tests-de-depistage.html',
+            'quel-est-le-test-adapte-a-ma-situation'
         )
-        const prefixe = await formulaire.getAttribute('data-nom')
-
-        await cEstParti(page, prefixe)
+        await questionnaire.cEstParti()
 
         // Sans symptômes.
-        await remplirSymptomes(page, 'non', prefixe)
+        await questionnaire.remplirSymptomes('non')
         // Avec cas contact.
-        await remplirCasContact(page, 'oui', prefixe)
+        await questionnaire.remplirCasContact('oui')
         // On propose un test antigénique immédiat.
         assert.include(
-            await recuperationStatut(page, 'pas-symptomes-cas-contact-oui', prefixe),
+            await questionnaire.recuperationStatut('pas-symptomes-cas-contact-oui'),
             'faire un test antigénique si vous venez de l’apprendre.'
         )
     })
 
     it('quel test : pas de symptômes, pas cas contact et autotest', async function () {
-        const page = this.test.page
-
-        await page.goto('http://localhost:8080/tests-de-depistage.html')
-
-        const formulaire = await page.waitForSelector(
-            '#quel-est-le-test-adapte-a-ma-situation .formulaire'
+        const questionnaire = new Questionnaire(
+            this.test.page,
+            'tests-de-depistage.html',
+            'quel-est-le-test-adapte-a-ma-situation'
         )
-        const prefixe = await formulaire.getAttribute('data-nom')
-
-        await cEstParti(page, prefixe)
+        await questionnaire.cEstParti()
 
         // Sans symptômes.
-        await remplirSymptomes(page, 'non', prefixe)
+        await questionnaire.remplirSymptomes('non')
         // Sans cas contact.
-        await remplirCasContact(page, 'non', prefixe)
+        await questionnaire.remplirCasContact('non')
         // Avec autotest.
-        await remplirAutoTest(page, 'oui', prefixe)
+        await questionnaire.remplirAutoTest('oui')
         // On propose un test PCR + isolement.
         assert.include(
-            await recuperationStatut(
-                page,
-                'pas-symptomes-pas-cas-contact-auto-test-oui',
-                prefixe
+            await questionnaire.recuperationStatut(
+                'pas-symptomes-pas-cas-contact-auto-test-oui'
             ),
             'un test PCR nasopharyngé et rester en isolement'
         )
     })
 
     it('quel test : pas de symptômes, pas cas contact et pas autotest', async function () {
-        const page = this.test.page
-
-        await page.goto('http://localhost:8080/tests-de-depistage.html')
-
-        const formulaire = await page.waitForSelector(
-            '#quel-est-le-test-adapte-a-ma-situation .formulaire'
+        const questionnaire = new Questionnaire(
+            this.test.page,
+            'tests-de-depistage.html',
+            'quel-est-le-test-adapte-a-ma-situation'
         )
-        const prefixe = await formulaire.getAttribute('data-nom')
-
-        await cEstParti(page, prefixe)
+        await questionnaire.cEstParti()
 
         // Sans symptômes.
-        await remplirSymptomes(page, 'non', prefixe)
+        await questionnaire.remplirSymptomes('non')
         // Sans cas contact.
-        await remplirCasContact(page, 'non', prefixe)
+        await questionnaire.remplirCasContact('non')
         // Sans autotest.
-        await remplirAutoTest(page, 'non', prefixe)
-        const statut = await recuperationStatut(
-            page,
-            'pas-symptomes-pas-cas-contact-auto-test-non',
-            prefixe
+        await questionnaire.remplirAutoTest('non')
+        const statut = await questionnaire.recuperationStatut(
+            'pas-symptomes-pas-cas-contact-auto-test-non'
         )
         // On propose différents tests pour le pass sanitaire.
         assert.include(
@@ -209,15 +209,12 @@ describe('Tests', function () {
 
     it('quel test : bouton retour', async function () {
         const page = this.test.page
-
-        await page.goto('http://localhost:8080/tests-de-depistage.html')
-
-        const formulaire = await page.waitForSelector(
-            '#quel-est-le-test-adapte-a-ma-situation .formulaire'
+        const questionnaire = new Questionnaire(
+            this.test.page,
+            'tests-de-depistage.html',
+            'quel-est-le-test-adapte-a-ma-situation'
         )
-        const prefixe = await formulaire.getAttribute('data-nom')
-
-        await cEstParti(page, prefixe)
+        const prefixe = await questionnaire.cEstParti()
 
         // Formulaire initial (symptômes).
         let formLegend = await page.waitForSelector(
@@ -229,7 +226,7 @@ describe('Tests', function () {
         )
 
         // On avance vers le formulaire suivant (depuis quand).
-        await remplirSymptomes(page, 'oui', prefixe)
+        await questionnaire.remplirSymptomes('oui')
 
         formLegend = await page.waitForSelector(
             `#${prefixe}-depuis-quand-form legend h3`
@@ -255,19 +252,16 @@ describe('Tests', function () {
 
     it('quel test : bouton recommencer', async function () {
         const page = this.test.page
-
-        await page.goto('http://localhost:8080/tests-de-depistage.html')
-
-        const formulaire = await page.waitForSelector(
-            '#quel-est-le-test-adapte-a-ma-situation .formulaire'
+        const questionnaire = new Questionnaire(
+            this.test.page,
+            'tests-de-depistage.html',
+            'quel-est-le-test-adapte-a-ma-situation'
         )
-        const prefixe = await formulaire.getAttribute('data-nom')
-
-        await cEstParti(page, prefixe)
+        const prefixe = await questionnaire.cEstParti()
 
         // On remplit un formulaire jusqu’à l’affichage du statut.
-        await remplirSymptomes(page, 'oui', prefixe)
-        await remplirDepuisQuand(page, 'moins_4_jours', prefixe)
+        await questionnaire.remplirSymptomes('oui')
+        await questionnaire.remplirDepuisQuand('moins_4_jours')
 
         // On clique sur le bouton pour recommencer.
         const bouton = await page.waitForSelector(
