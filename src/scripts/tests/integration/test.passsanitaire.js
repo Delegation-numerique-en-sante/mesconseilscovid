@@ -1,111 +1,111 @@
 import { assert } from 'chai'
 import { joursAvant } from '../../utils'
 
-async function cEstParti(page) {
+async function cEstParti(page, prefixe) {
     const bouton = await page.waitForSelector(
-        '#pass-sanitaire-demarrage-form >> text="C’est parti !"'
+        `#${prefixe}-demarrage-form >> text="C’est parti !"`
     )
     await bouton.click()
 }
 
-async function remplirVaccination(page, reponse) {
+async function remplirVaccination(page, reponse, prefixe) {
     const checkbox_label = await page.waitForSelector(
-        `#pass-sanitaire-vaccination-form label[for="pass-sanitaire_vaccination_radio_${reponse}"]`
+        `#${prefixe}-vaccination-form label[for="${prefixe}_vaccination_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#pass-sanitaire-vaccination-form >> text="Continuer"'
+        `#${prefixe}-vaccination-form >> text="Continuer"`
     )
     await bouton.click()
 }
 
-async function remplirDepistagePositif(page, reponse) {
+async function remplirDepistagePositif(page, reponse, prefixe) {
     const checkbox_label = await page.waitForSelector(
-        `#pass-sanitaire-depistage-positif-form label[for="pass-sanitaire_depistage_positif_radio_${reponse}"]`
+        `#${prefixe}-depistage-positif-form label[for="${prefixe}_depistage_positif_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#pass-sanitaire-depistage-positif-form >> text="Continuer"'
+        `#${prefixe}-depistage-positif-form >> text="Continuer"`
     )
     await bouton.click()
 }
 
-async function remplirGuerisonAvant1reDose(page, reponse) {
+async function remplirGuerisonAvant1reDose(page, reponse, prefixe) {
     const checkbox_label = await page.waitForSelector(
-        `#pass-sanitaire-guerison-avant-1re-dose-form label[for="pass-sanitaire_guerison_avant_1re_dose_radio_${reponse}"]`
+        `#${prefixe}-guerison-avant-1re-dose-form label[for="${prefixe}_guerison_avant_1re_dose_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#pass-sanitaire-guerison-avant-1re-dose-form >> text="Continuer"'
+        `#${prefixe}-guerison-avant-1re-dose-form >> text="Continuer"`
     )
     await bouton.click()
 }
 
-async function remplirTypeVaccin(page, reponse) {
+async function remplirTypeVaccin(page, reponse, prefixe) {
     const checkbox_label = await page.waitForSelector(
-        `#pass-sanitaire-type-vaccin-form label[for="pass-sanitaire_type_vaccin_radio_${reponse}"]`
+        `#${prefixe}-type-vaccin-form label[for="${prefixe}_type_vaccin_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#pass-sanitaire-type-vaccin-form >> text="Continuer"'
+        `#${prefixe}-type-vaccin-form >> text="Continuer"`
     )
     await bouton.click()
 }
 
-async function remplirDateDerniereCovid(page, reponse) {
+async function remplirDateDerniereCovid(page, reponse, prefixe) {
     const checkbox_label = await page.waitForSelector(
-        `#pass-sanitaire-date-derniere-covid-form label[for="pass-sanitaire_date_derniere_covid_radio_${reponse}"]`
+        `#${prefixe}-date-derniere-covid-form label[for="${prefixe}_date_derniere_covid_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#pass-sanitaire-date-derniere-covid-form >> text="Terminer"'
+        `#${prefixe}-date-derniere-covid-form >> text="Terminer"`
     )
     await bouton.click()
 }
 
-async function remplirDate1reDoseJanssen(page, reponse) {
+async function remplirDate1reDoseJanssen(page, reponse, prefixe) {
     await page.fill(
-        '#pass-sanitaire_date_1re_dose_janssen',
+        `#${prefixe}_date_1re_dose_janssen`,
         reponse.toISOString().substring(0, 10)
     )
 
     const bouton = await page.waitForSelector(
-        '#pass-sanitaire-date-1re-dose-janssen-form >> text="Terminer"'
+        `#${prefixe}-date-1re-dose-janssen-form >> text="Terminer"`
     )
     await bouton.click()
 }
 
-async function remplirDate1reDoseAutres(page, reponse) {
+async function remplirDate1reDoseAutres(page, reponse, prefixe) {
     const checkbox_label = await page.waitForSelector(
-        `#pass-sanitaire-date-1re-dose-autres-form label[for="pass-sanitaire_date_1re_dose_autres_radio_${reponse}"]`
+        `#${prefixe}-date-1re-dose-autres-form label[for="${prefixe}_date_1re_dose_autres_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#pass-sanitaire-date-1re-dose-autres-form >> text="Terminer"'
+        `#${prefixe}-date-1re-dose-autres-form >> text="Terminer"`
     )
     await bouton.click()
 }
 
-async function remplirDate2eDose(page, reponse) {
+async function remplirDate2eDose(page, reponse, prefixe) {
     const checkbox_label = await page.waitForSelector(
-        `#pass-sanitaire-date-2e-dose-form label[for="pass-sanitaire_date_2e_dose_radio_${reponse}"]`
+        `#${prefixe}-date-2e-dose-form label[for="${prefixe}_date_2e_dose_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#pass-sanitaire-date-2e-dose-form >> text="Terminer"'
+        `#${prefixe}-date-2e-dose-form >> text="Terminer"`
     )
     await bouton.click()
 }
 
-async function recuperationStatut(page, statut) {
-    const reponse = await page.waitForSelector(`#pass-sanitaire-${statut}-reponse`)
+async function recuperationStatut(page, statut, prefixe) {
+    const reponse = await page.waitForSelector(`#${prefixe}-${statut}-reponse`)
     return (await reponse.innerText()).trim()
 }
 
@@ -126,19 +126,21 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        await cEstParti(page)
+        const prefixe = 'pass-sanitaire'
+
+        await cEstParti(page, prefixe)
 
         // Sans vaccination.
-        await remplirVaccination(page, 'aucune_dose')
+        await remplirVaccination(page, 'aucune_dose', prefixe)
         // Ni test.
-        await remplirDepistagePositif(page, 'non')
+        await remplirDepistagePositif(page, 'non', prefixe)
         // On donne les possibilités.
         assert.include(
-            await recuperationStatut(page, 'non-vaccine'),
+            await recuperationStatut(page, 'non-vaccine', prefixe),
             'présenter un test de dépistage négatif'
         )
         assert.include(
-            await recuperationStatut(page, 'non-vaccine'),
+            await recuperationStatut(page, 'non-vaccine', prefixe),
             'vous faire vacciner'
         )
     })
@@ -148,25 +150,27 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        await cEstParti(page)
+        const prefixe = 'pass-sanitaire'
+
+        await cEstParti(page, prefixe)
 
         // Sans vaccination.
-        await remplirVaccination(page, 'aucune_dose')
+        await remplirVaccination(page, 'aucune_dose', prefixe)
         // Avec test.
-        await remplirDepistagePositif(page, 'oui')
+        await remplirDepistagePositif(page, 'oui', prefixe)
         // De moins de 6 mois.
-        await remplirDateDerniereCovid(page, 'moins_de_6_mois')
+        await remplirDateDerniereCovid(page, 'moins_de_6_mois', prefixe)
         // On donne les possibilités.
         assert.include(
-            await recuperationStatut(page, 'test-positif-moins-de-6-mois'),
+            await recuperationStatut(page, 'test-positif-moins-de-6-mois', prefixe),
             'présenter votre test de dépistage positif'
         )
         assert.include(
-            await recuperationStatut(page, 'test-positif-moins-de-6-mois'),
+            await recuperationStatut(page, 'test-positif-moins-de-6-mois', prefixe),
             'présenter un test de dépistage négatif de moins de 72 h'
         )
         assert.include(
-            await recuperationStatut(page, 'test-positif-moins-de-6-mois'),
+            await recuperationStatut(page, 'test-positif-moins-de-6-mois', prefixe),
             'vous faire vacciner'
         )
     })
@@ -176,21 +180,23 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        await cEstParti(page)
+        const prefixe = 'pass-sanitaire'
+
+        await cEstParti(page, prefixe)
 
         // Sans vaccination.
-        await remplirVaccination(page, 'aucune_dose')
+        await remplirVaccination(page, 'aucune_dose', prefixe)
         // Avec test.
-        await remplirDepistagePositif(page, 'oui')
+        await remplirDepistagePositif(page, 'oui', prefixe)
         // De plus de 6 mois.
-        await remplirDateDerniereCovid(page, 'plus_de_6_mois')
+        await remplirDateDerniereCovid(page, 'plus_de_6_mois', prefixe)
         // On donne les possibilités.
         assert.include(
-            await recuperationStatut(page, 'test-positif-plus-de-6-mois'),
+            await recuperationStatut(page, 'test-positif-plus-de-6-mois', prefixe),
             'présenter un test de dépistage négatif de moins de 72 h'
         )
         assert.include(
-            await recuperationStatut(page, 'test-positif-plus-de-6-mois'),
+            await recuperationStatut(page, 'test-positif-plus-de-6-mois', prefixe),
             'vous faire vacciner'
         )
     })
@@ -200,21 +206,23 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        await cEstParti(page)
+        const prefixe = 'pass-sanitaire'
+
+        await cEstParti(page, prefixe)
 
         // Avec vaccination.
-        await remplirVaccination(page, 'une_dose')
+        await remplirVaccination(page, 'une_dose', prefixe)
         // Janssen.
-        await remplirTypeVaccin(page, 'janssen')
+        await remplirTypeVaccin(page, 'janssen', prefixe)
         // Moins de 4 semaines.
-        await remplirDate1reDoseJanssen(page, joursAvant(10))
+        await remplirDate1reDoseJanssen(page, joursAvant(10), prefixe)
         // On donne les consignes.
         assert.include(
-            await recuperationStatut(page, 'vaccination-delai-28-jours'),
+            await recuperationStatut(page, 'vaccination-delai-28-jours', prefixe),
             'Vous devez attendre 28 jours'
         )
         assert.include(
-            await recuperationStatut(page, 'vaccination-delai-28-jours'),
+            await recuperationStatut(page, 'vaccination-delai-28-jours', prefixe),
             'En attendant, un test de dépistage négatif'
         )
     })
@@ -224,17 +232,19 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        await cEstParti(page)
+        const prefixe = 'pass-sanitaire'
+
+        await cEstParti(page, prefixe)
 
         // Avec vaccination.
-        await remplirVaccination(page, 'une_dose')
+        await remplirVaccination(page, 'une_dose', prefixe)
         // Janssen.
-        await remplirTypeVaccin(page, 'janssen')
+        await remplirTypeVaccin(page, 'janssen', prefixe)
         // Plus de 4 semaines.
-        await remplirDate1reDoseJanssen(page, joursAvant(30))
+        await remplirDate1reDoseJanssen(page, joursAvant(30), prefixe)
         // On donne le statut.
         assert.include(
-            await recuperationStatut(page, 'vaccination-complete'),
+            await recuperationStatut(page, 'vaccination-complete', prefixe),
             'Félicitations, votre schéma vaccinal est complet !'
         )
     })
@@ -244,17 +254,19 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        await cEstParti(page)
+        const prefixe = 'pass-sanitaire'
+
+        await cEstParti(page, prefixe)
 
         // Avec vaccination.
-        await remplirVaccination(page, 'une_dose')
+        await remplirVaccination(page, 'une_dose', prefixe)
         // Janssen.
-        await remplirTypeVaccin(page, 'pfizer')
+        await remplirTypeVaccin(page, 'pfizer', prefixe)
         // Sans guérison.
-        await remplirGuerisonAvant1reDose(page, 'non')
+        await remplirGuerisonAvant1reDose(page, 'non', prefixe)
         // On donne le statut.
         assert.include(
-            await recuperationStatut(page, 'vaccination-incomplete'),
+            await recuperationStatut(page, 'vaccination-incomplete', prefixe),
             'Votre schéma vaccinal est incomplet'
         )
     })
@@ -264,19 +276,21 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        await cEstParti(page)
+        const prefixe = 'pass-sanitaire'
+
+        await cEstParti(page, prefixe)
 
         // Avec vaccination.
-        await remplirVaccination(page, 'une_dose')
+        await remplirVaccination(page, 'une_dose', prefixe)
         // Janssen.
-        await remplirTypeVaccin(page, 'pfizer')
+        await remplirTypeVaccin(page, 'pfizer', prefixe)
         // Avec guérison.
-        await remplirGuerisonAvant1reDose(page, 'oui')
+        await remplirGuerisonAvant1reDose(page, 'oui', prefixe)
         // Moins d’une semaine.
-        await remplirDate1reDoseAutres(page, 'moins_de_7_jours')
+        await remplirDate1reDoseAutres(page, 'moins_de_7_jours', prefixe)
         // On donne les instructions.
         assert.include(
-            await recuperationStatut(page, 'vaccination-delai-7-jours'),
+            await recuperationStatut(page, 'vaccination-delai-7-jours', prefixe),
             'Vous devez attendre 7 jours'
         )
     })
@@ -286,19 +300,21 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        await cEstParti(page)
+        const prefixe = 'pass-sanitaire'
+
+        await cEstParti(page, prefixe)
 
         // Avec vaccination.
-        await remplirVaccination(page, 'une_dose')
+        await remplirVaccination(page, 'une_dose', prefixe)
         // Janssen.
-        await remplirTypeVaccin(page, 'pfizer')
+        await remplirTypeVaccin(page, 'pfizer', prefixe)
         // Avec guérison.
-        await remplirGuerisonAvant1reDose(page, 'oui')
+        await remplirGuerisonAvant1reDose(page, 'oui', prefixe)
         // Plus d’une semaine.
-        await remplirDate1reDoseAutres(page, '7_jours_ou_plus')
+        await remplirDate1reDoseAutres(page, '7_jours_ou_plus', prefixe)
         // On donne les instructions.
         assert.include(
-            await recuperationStatut(page, 'vaccination-complete'),
+            await recuperationStatut(page, 'vaccination-complete', prefixe),
             'Félicitations, votre schéma vaccinal est complet !'
         )
     })
@@ -308,15 +324,17 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        await cEstParti(page)
+        const prefixe = 'pass-sanitaire'
+
+        await cEstParti(page, prefixe)
 
         // Avec vaccination.
-        await remplirVaccination(page, 'deux_doses')
+        await remplirVaccination(page, 'deux_doses', prefixe)
         // Plus d’une semaine.
-        await remplirDate2eDose(page, 'moins_de_7_jours')
+        await remplirDate2eDose(page, 'moins_de_7_jours', prefixe)
         // On donne les instructions.
         assert.include(
-            await recuperationStatut(page, 'vaccination-delai-7-jours'),
+            await recuperationStatut(page, 'vaccination-delai-7-jours', prefixe),
             'Vous devez attendre 7 jours'
         )
     })
@@ -326,15 +344,17 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        await cEstParti(page)
+        const prefixe = 'pass-sanitaire'
+
+        await cEstParti(page, prefixe)
 
         // Avec vaccination.
-        await remplirVaccination(page, 'deux_doses')
+        await remplirVaccination(page, 'deux_doses', prefixe)
         // Plus d’une semaine.
-        await remplirDate2eDose(page, '7_jours_ou_plus')
+        await remplirDate2eDose(page, '7_jours_ou_plus', prefixe)
         // On donne les instructions.
         assert.include(
-            await recuperationStatut(page, 'vaccination-complete'),
+            await recuperationStatut(page, 'vaccination-complete', prefixe),
             'Félicitations, votre schéma vaccinal est complet !'
         )
     })
@@ -344,11 +364,13 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        await cEstParti(page)
+        const prefixe = 'pass-sanitaire'
+
+        await cEstParti(page, prefixe)
 
         // Formulaire initial (symptômes).
         let formLegend = await page.waitForSelector(
-            '#pass-sanitaire-vaccination-form legend h3'
+            `#${prefixe}-vaccination-form legend h3`
         )
         assert.equal(
             await formLegend.innerText(),
@@ -356,10 +378,10 @@ describe('Pass sanitaire', function () {
         )
 
         // On avance vers le formulaire suivant (test positif).
-        await remplirVaccination(page, 'aucune_dose')
+        await remplirVaccination(page, 'aucune_dose', prefixe)
 
         formLegend = await page.waitForSelector(
-            '#pass-sanitaire-depistage-positif-form legend h3'
+            `#${prefixe}-depistage-positif-form legend h3`
         )
         assert.equal(
             await formLegend.innerText(),
@@ -368,13 +390,13 @@ describe('Pass sanitaire', function () {
 
         // On clique sur le bouton retour.
         const bouton = await page.waitForSelector(
-            '#pass-sanitaire-depistage-positif-form >> text="Retour"'
+            `#${prefixe}-depistage-positif-form >> text="Retour"`
         )
         await bouton.click()
 
         // On est revenu au formulaire précédent (vaccination).
         formLegend = await page.waitForSelector(
-            '#pass-sanitaire-vaccination-form legend h3'
+            `#${prefixe}-vaccination-form legend h3`
         )
         assert.equal(
             await formLegend.innerText(),
@@ -387,23 +409,25 @@ describe('Pass sanitaire', function () {
 
         await page.goto('http://localhost:8080/pass-sanitaire-qr-code-voyages.html')
 
-        await cEstParti(page)
+        const prefixe = 'pass-sanitaire'
+
+        await cEstParti(page, prefixe)
 
         // On remplit un formulaire jusqu’à l’affichage du statut.
         // Sans vaccination.
-        await remplirVaccination(page, 'aucune_dose')
+        await remplirVaccination(page, 'aucune_dose', prefixe)
         // Ni tests.
-        await remplirDepistagePositif(page, 'non')
+        await remplirDepistagePositif(page, 'non', prefixe)
 
         // On clique sur le bouton pour recommencer.
         const bouton = await page.waitForSelector(
-            '#pass-sanitaire-refaire >> text="Recommencer le questionnaire"'
+            `#${prefixe}-refaire >> text="Recommencer le questionnaire"`
         )
         await bouton.click()
 
         // On est revenu au formulaire initial (vaccination).
         const formLegend = await page.waitForSelector(
-            '#pass-sanitaire-vaccination-form legend h3'
+            `#${prefixe}-vaccination-form legend h3`
         )
         assert.equal(
             await formLegend.innerText(),

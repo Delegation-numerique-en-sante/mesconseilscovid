@@ -1,62 +1,62 @@
 import { assert } from 'chai'
 
-async function cEstParti(page) {
+async function cEstParti(page, prefixe) {
     const bouton = await page.waitForSelector(
-        '#tests-de-depistage-demarrage-form >> text="C’est parti !"'
+        `#${prefixe}-demarrage-form >> text="C’est parti !"`
     )
     await bouton.click()
 }
 
-async function remplirSymptomes(page, reponse) {
+async function remplirSymptomes(page, reponse, prefixe) {
     const checkbox_label = await page.waitForSelector(
-        `#tests-de-depistage-symptomes-form label[for="tests-de-depistage_symptomes_radio_${reponse}"]`
+        `#${prefixe}-symptomes-form label[for="${prefixe}_symptomes_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#tests-de-depistage-symptomes-form >> text="Continuer"'
+        `#${prefixe}-symptomes-form >> text="Continuer"`
     )
     await bouton.click()
 }
 
-async function remplirDepuisQuand(page, reponse) {
+async function remplirDepuisQuand(page, reponse, prefixe) {
     const checkbox_label = await page.waitForSelector(
-        `#tests-de-depistage-depuis-quand-form label[for="tests-de-depistage_depuis_quand_radio_${reponse}"]`
+        `#${prefixe}-depuis-quand-form label[for="${prefixe}_depuis_quand_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#tests-de-depistage-depuis-quand-form >> text="Terminer"'
+        `#${prefixe}-depuis-quand-form >> text="Terminer"`
     )
     await bouton.click()
 }
 
-async function remplirCasContact(page, reponse) {
+async function remplirCasContact(page, reponse, prefixe) {
     const checkbox_label = await page.waitForSelector(
-        `#tests-de-depistage-cas-contact-form label[for="tests-de-depistage_cas_contact_radio_${reponse}"]`
+        `#${prefixe}-cas-contact-form label[for="${prefixe}_cas_contact_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#tests-de-depistage-cas-contact-form >> text="Continuer"'
+        `#${prefixe}-cas-contact-form >> text="Continuer"`
     )
     await bouton.click()
 }
 
-async function remplirAutoTest(page, reponse) {
+async function remplirAutoTest(page, reponse, prefixe) {
     const checkbox_label = await page.waitForSelector(
-        `#tests-de-depistage-auto-test-form label[for="tests-de-depistage_auto_test_radio_${reponse}"]`
+        `#${prefixe}-auto-test-form label[for="${prefixe}_auto_test_radio_${reponse}"]`
     )
     await checkbox_label.click()
 
     const bouton = await page.waitForSelector(
-        '#tests-de-depistage-auto-test-form >> text="Terminer"'
+        `#${prefixe}-auto-test-form >> text="Terminer"`
     )
     await bouton.click()
 }
 
-async function recuperationStatut(page, statut) {
-    const reponse = await page.waitForSelector(`#tests-de-depistage-${statut}-reponse`)
+async function recuperationStatut(page, statut, prefixe) {
+    const reponse = await page.waitForSelector(`#${prefixe}-${statut}-reponse`)
     return (await reponse.innerText()).trim()
 }
 
@@ -77,15 +77,17 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
-        await cEstParti(page)
+        const prefixe = 'tests-de-depistage'
+
+        await cEstParti(page, prefixe)
 
         // Avec des symptômes.
-        await remplirSymptomes(page, 'oui')
+        await remplirSymptomes(page, 'oui', prefixe)
         // De moins de 4 jours.
-        await remplirDepuisQuand(page, 'moins_4_jours')
+        await remplirDepuisQuand(page, 'moins_4_jours', prefixe)
         // On propose un test PCR ou antigénique.
         assert.include(
-            await recuperationStatut(page, 'symptomes-moins-4-jours'),
+            await recuperationStatut(page, 'symptomes-moins-4-jours', prefixe),
             'faire un test antigénique ou PCR nasopharyngé.'
         )
     })
@@ -95,15 +97,17 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
-        await cEstParti(page)
+        const prefixe = 'tests-de-depistage'
+
+        await cEstParti(page, prefixe)
 
         // Avec des symptômes.
-        await remplirSymptomes(page, 'oui')
+        await remplirSymptomes(page, 'oui', prefixe)
         // De plus de 4 jours.
-        await remplirDepuisQuand(page, 'plus_4_jours')
+        await remplirDepuisQuand(page, 'plus_4_jours', prefixe)
         // On propose un test PCR.
         assert.include(
-            await recuperationStatut(page, 'symptomes-plus-4-jours'),
+            await recuperationStatut(page, 'symptomes-plus-4-jours', prefixe),
             'faire un test PCR nasopharyngé.'
         )
     })
@@ -113,15 +117,17 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
-        await cEstParti(page)
+        const prefixe = 'tests-de-depistage'
+
+        await cEstParti(page, prefixe)
 
         // Sans symptômes.
-        await remplirSymptomes(page, 'non')
+        await remplirSymptomes(page, 'non', prefixe)
         // Avec cas contact.
-        await remplirCasContact(page, 'oui')
+        await remplirCasContact(page, 'oui', prefixe)
         // On propose un test antigénique immédiat.
         assert.include(
-            await recuperationStatut(page, 'pas-symptomes-cas-contact-oui'),
+            await recuperationStatut(page, 'pas-symptomes-cas-contact-oui', prefixe),
             'faire un test antigénique si vous venez de l’apprendre.'
         )
     })
@@ -131,19 +137,22 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
-        await cEstParti(page)
+        const prefixe = 'tests-de-depistage'
+
+        await cEstParti(page, prefixe)
 
         // Sans symptômes.
-        await remplirSymptomes(page, 'non')
+        await remplirSymptomes(page, 'non', prefixe)
         // Sans cas contact.
-        await remplirCasContact(page, 'non')
+        await remplirCasContact(page, 'non', prefixe)
         // Avec autotest.
-        await remplirAutoTest(page, 'oui')
+        await remplirAutoTest(page, 'oui', prefixe)
         // On propose un test PCR + isolement.
         assert.include(
             await recuperationStatut(
                 page,
-                'pas-symptomes-pas-cas-contact-auto-test-oui'
+                'pas-symptomes-pas-cas-contact-auto-test-oui',
+                prefixe
             ),
             'un test PCR nasopharyngé et rester en isolement'
         )
@@ -154,17 +163,20 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
-        await cEstParti(page)
+        const prefixe = 'tests-de-depistage'
+
+        await cEstParti(page, prefixe)
 
         // Sans symptômes.
-        await remplirSymptomes(page, 'non')
+        await remplirSymptomes(page, 'non', prefixe)
         // Sans cas contact.
-        await remplirCasContact(page, 'non')
+        await remplirCasContact(page, 'non', prefixe)
         // Sans autotest.
-        await remplirAutoTest(page, 'non')
+        await remplirAutoTest(page, 'non', prefixe)
         const statut = await recuperationStatut(
             page,
-            'pas-symptomes-pas-cas-contact-auto-test-non'
+            'pas-symptomes-pas-cas-contact-auto-test-non',
+            prefixe
         )
         // On propose différents tests pour le pass sanitaire.
         assert.include(
@@ -185,11 +197,13 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
-        await cEstParti(page)
+        const prefixe = 'tests-de-depistage'
+
+        await cEstParti(page, prefixe)
 
         // Formulaire initial (symptômes).
         let formLegend = await page.waitForSelector(
-            '#tests-de-depistage-symptomes-form legend h3'
+            `#${prefixe}-symptomes-form legend h3`
         )
         assert.equal(
             await formLegend.innerText(),
@@ -197,10 +211,10 @@ describe('Tests', function () {
         )
 
         // On avance vers le formulaire suivant (depuis quand).
-        await remplirSymptomes(page, 'oui')
+        await remplirSymptomes(page, 'oui', prefixe)
 
         formLegend = await page.waitForSelector(
-            '#tests-de-depistage-depuis-quand-form legend h3'
+            `#${prefixe}-depuis-quand-form legend h3`
         )
         assert.equal(
             await formLegend.innerText(),
@@ -209,14 +223,12 @@ describe('Tests', function () {
 
         // On clique sur le bouton retour.
         const bouton = await page.waitForSelector(
-            '#tests-de-depistage-depuis-quand-form >> text="Retour"'
+            `#${prefixe}-depuis-quand-form >> text="Retour"`
         )
         await bouton.click()
 
         // On est revenu au formulaire précédent (symptômes).
-        formLegend = await page.waitForSelector(
-            '#tests-de-depistage-symptomes-form legend h3'
-        )
+        formLegend = await page.waitForSelector(`#${prefixe}-symptomes-form legend h3`)
         assert.equal(
             await formLegend.innerText(),
             'Avez-vous des symptômes qui peuvent évoquer la Covid ?'
@@ -228,21 +240,23 @@ describe('Tests', function () {
 
         await page.goto('http://localhost:8080/tests-de-depistage.html')
 
-        await cEstParti(page)
+        const prefixe = 'tests-de-depistage'
+
+        await cEstParti(page, prefixe)
 
         // On remplit un formulaire jusqu’à l’affichage du statut.
-        await remplirSymptomes(page, 'oui')
-        await remplirDepuisQuand(page, 'moins_4_jours')
+        await remplirSymptomes(page, 'oui', prefixe)
+        await remplirDepuisQuand(page, 'moins_4_jours', prefixe)
 
         // On clique sur le bouton pour recommencer.
         const bouton = await page.waitForSelector(
-            '#tests-de-depistage-refaire >> text="Recommencer le questionnaire"'
+            `#${prefixe}-refaire >> text="Recommencer le questionnaire"`
         )
         await bouton.click()
 
         // On est revenu au formulaire initial (symptômes).
         const formLegend = await page.waitForSelector(
-            '#tests-de-depistage-symptomes-form legend h3'
+            `#${prefixe}-symptomes-form legend h3`
         )
         assert.equal(
             await formLegend.innerText(),
