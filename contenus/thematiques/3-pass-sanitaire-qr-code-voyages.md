@@ -105,7 +105,7 @@
     
    <div class="conseil conseil-jaune">
        
-    Attention, les tests sérologiques (ou sérologie) ne permettent pas d'obtenir la prolongation du pass sanitaire.
+    Attention, un test sérologique (ou sérologie) ne permet pas d’obtenir la prolongation de votre pass sanitaire.
 
     </div>
 
