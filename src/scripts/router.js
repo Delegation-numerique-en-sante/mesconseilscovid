@@ -233,13 +233,14 @@ export class Router {
 
         // Par défaut on retourne à la page d’accueil.
         this.navigo.notFound(() => {
-            this.redirectTo('')
+            this.redirectTo('#')
         })
     }
 
     redirectTo(target) {
         if (
             typeof window !== 'undefined' &&
+            document.referrer &&
             window.history &&
             window.history.replaceState
         ) {
@@ -247,8 +248,9 @@ export class Router {
             // so that we don’t break the back button.
             window.history.replaceState({}, '', `#${target}`)
             this.navigo.resolve()
-        } else {
+        } else 
+            {
             this.navigo.navigate(target)
-        }
+        } 
     }
 }
