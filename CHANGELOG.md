@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-11-19
+
+* ajoute une page compilant les questions relatives au rappel vaccinal (3e dose)
+* déplie automatiquement les questions qui ont un formulaire
+
 ## 2021-11-16
 
 * mise à jour des informations sur les autotests supervisés
