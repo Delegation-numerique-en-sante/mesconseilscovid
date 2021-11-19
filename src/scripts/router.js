@@ -248,9 +248,8 @@ export class Router {
             // so that we don’t break the back button.
             window.history.replaceState({}, '', `#${target}`)
             this.navigo.resolve()
-        } else 
-            {
+        } else {
             this.navigo.navigate(target)
-        } 
+        }
     }
 }
