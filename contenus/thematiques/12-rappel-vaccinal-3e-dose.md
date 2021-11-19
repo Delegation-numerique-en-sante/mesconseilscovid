@@ -4,11 +4,10 @@
 
 <header>
     <p class="big">
-        Au bout de quelques mois et face aux nouveaux variants, l’efficacité des vaccins diminue. Alors, comme pour d’autres maladies, par exemple la grippe saisonnière, il est recommandé de faire un rappel vaccinal pour booster son immunité.
+        Au bout de quelques mois et face aux nouveaux variants, l’**efficacité** des vaccins diminue. Alors, comme pour d’autres maladies, par exemple la grippe saisonnière, il est recommandé de faire un **rappel** vaccinal, dit **3<sup>e</sup> dose**, pour booster son immunité. En se vaccinant, on participe aussi à freiner la propagation du virus au sein de la population.
     </p>
     <p class="big">
-        En se vaccinant, on participe aussi à freiner le développement du virus parmi la population et sa mutation.
-        La campagne de rappel a débuté en septembre 2021. Elle va s’étendre progressivement, par tranches d’âges, à toute la population.
+        La campagne de rappel a débuté en septembre 2021. Elle va s’étendre progressivement, par tranches d’âges, à toute la population. Ce rappel est obligatoire pour prolonger la validité de votre **pass sanitaire.**
     </p>
 </header>
 
@@ -25,13 +24,12 @@
 
 .. injection:: /je-veux-me-faire-vacciner.html#mon-schema-vaccinal-est-complet-avec-une-seule-dose-de-vaccin-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
 
-.. question:: J’ai eu la Covid après mes 2 doses. Suis-je concerné(e) par le rappel vaccinal (3<sup>e</sup> dose) ? (TODO)
+.. question:: J’ai eu la Covid après mes 2 doses. Suis-je concerné(e) par le rappel vaccinal (3<sup>e</sup> dose) ?
     :level: 3
+    
+    Dans votre cas, la Haute Autorité de Santé (HAS) ne recommande pas, pour l'instant, l'injection d'une dose supplémentaire.
 
-    TODO 
-
-
-## Organiser mon rappel vaccinal
+## Organiser mon rendez-vous de vaccination
 
 .. injection:: /je-veux-me-faire-vacciner.html#ou-me-faire-vacciner
 
