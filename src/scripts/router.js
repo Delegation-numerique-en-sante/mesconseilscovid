@@ -233,7 +233,7 @@ export class Router {
 
         // Par défaut on retourne à la page d’accueil.
         this.navigo.notFound(() => {
-            this.redirectTo('introduction')
+            this.redirectTo('')
         })
     }
 
