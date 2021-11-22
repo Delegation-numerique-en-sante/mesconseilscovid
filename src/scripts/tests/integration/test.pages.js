@@ -5,7 +5,7 @@ describe('Pages', function () {
     it('titre de la page', async function () {
         const page = this.test.page
 
-        // On est redirigé vers l’introduction.
+        // On est redirigé vers la page d'accueil.
         await Promise.all([
             page.goto('http://localhost:8080/'),
             page.waitForNavigation({ url: '**/#' }),
@@ -37,12 +37,12 @@ describe('Pages', function () {
         })
         assert.include(messages[1], {
             n: 'pageview',
-            u: 'http://localhost/introduction',
+            u: 'http://localhost/#',
         })
         assert.include(messages[2], {
             n: 'Navigue vers une thématique depuis l’accueil',
-            p: '{"chemin":"/introduction → /pass-sanitaire-qr-code-voyages.html"}',
-            u: 'http://localhost/introduction',
+            p: '{"chemin":"/ → /pass-sanitaire-qr-code-voyages.html"}',
+            u: 'http://localhost/#',
         })
         assert.include(messages[3], {
             n: 'pageview',
