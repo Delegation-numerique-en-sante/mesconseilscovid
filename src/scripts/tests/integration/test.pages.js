@@ -8,7 +8,7 @@ describe('Pages', function () {
         // On est redirigé vers l’introduction.
         await Promise.all([
             page.goto('http://localhost:8080/'),
-            page.waitForNavigation({ url: '**/#introduction' }),
+            page.waitForNavigation({ url: '**/#' }),
         ])
 
         assert.equal(
