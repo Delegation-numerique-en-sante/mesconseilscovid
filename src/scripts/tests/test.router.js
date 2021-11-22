@@ -52,7 +52,7 @@ describe('Routeur', function () {
         this.router = null
     })
 
-    it('La racine redirige vers la page introduction', function () {
+    it('La racine redirige vers la page d\'accueil', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/',
         })
@@ -62,10 +62,10 @@ describe('Routeur', function () {
 
         this.router.resolve()
 
-        assert.strictEqual(window.location.href, 'https://test/#introduction')
+        assert.strictEqual(window.location.href, 'https://test/#')
     })
 
-    it('Une page inconnue redirige vers la page introduction', function () {
+    it('Une page inconnue redirige vers la page d\'accueil', function () {
         require('jsdom-global')(fakeHTML, {
             url: 'https://test/#inconnue',
         })
@@ -75,7 +75,7 @@ describe('Routeur', function () {
 
         this.router.resolve()
 
-        assert.strictEqual(window.location.href, 'https://test/#introduction')
+        assert.strictEqual(window.location.href, 'https://test/#')
     })
 
     it('La redirection conserve la source', function () {
@@ -90,7 +90,7 @@ describe('Routeur', function () {
 
         assert.strictEqual(
             window.location.href,
-            'https://test/?source=foo#introduction'
+            'https://test/?source=foo#'
         )
     })
 
