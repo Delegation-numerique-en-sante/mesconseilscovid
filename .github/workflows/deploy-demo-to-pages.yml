@@ -13,6 +13,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Install French locale
+        run: |
+          sudo apt-get install locales-all
+          sudo localectl set-locale LANG=fr_FR.utf8
+
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
