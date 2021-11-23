@@ -64,50 +64,8 @@
                 </div>
             </div>
         </section>
-        <section id="page">
-            <div class="block introduction-block">
-                <h1>Isolement, tests, vaccins, attestations, contact à risque…</h1>
-                <p class="tagline">
-                    MesConseilsCovid répond à vos questions pour savoir quoi faire dans une situation liée à la Covid.
-                </p>
-                <div class="actualites">
-                    <ul>
-                        {% for actualite in actualites %}
-                        <li><time datetime="{{ actualite.date.isoformat() }}">{{ actualite.date.strftime('%A %-d %B').capitalize() }}</time>&nbsp;: <a href="{{ actualite.lien }}">{{ actualite.texte }}</a>&nbsp;{{ actualite.emoji }}</li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="thematiques">
-                    <ul class="cards ">
-                        {% for thematique in thematiques %}
-                        <li class="card {{ thematique.name }}">
-                            <a class="card-header" href="{{ thematique.name }}.html">
-                                <img src="{{ thematique.imgsrc }}" loading="lazy" alt=""
-                                     width="96" height="77">
-                                <span class="card-title">{{ thematique.title }}</span>
-                            </a>
-                            <div class="card-actions"></div>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <noscript>
-                    <h2>Ce site a besoin de JavaScript pour fonctionner.</h2>
-                    <p>
-                        Veuillez <a href="mailto:contact@mesconseilscovid.fr">nous contacter</a>
-                        en cas de difficulté pour utiliser le service.
-                    </p>
-                </noscript>
-            </div>
-        </section>
-    </main>
-    <footer role="contentinfo">
-        {{ meta_entretiens_utilisateurs }}
-        {{ meta_pied_de_page }}
-    </footer>
 
-<section id="introduction" hidden>
-    <div id="introduction-block" class="block introduction-block">
+{% macro bloc_introduction() %}
         <h1>Isolement, tests, vaccins, attestations, contact à risque…</h1>
         <p class="tagline">
             MesConseilsCovid répond à vos questions pour savoir quoi faire dans une situation liée à la Covid.
@@ -133,6 +91,29 @@
                 {% endfor %}
             </ul>
         </div>
+{% endmacro %}
+
+        <section id="page">
+            <div class="block introduction-block">
+                {{ bloc_introduction() }}
+                <noscript>
+                    <h2>Ce site a besoin de JavaScript pour fonctionner.</h2>
+                    <p>
+                        Veuillez <a href="mailto:contact@mesconseilscovid.fr">nous contacter</a>
+                        en cas de difficulté pour utiliser le service.
+                    </p>
+                </noscript>
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        {{ meta_entretiens_utilisateurs }}
+        {{ meta_pied_de_page }}
+    </footer>
+
+<section id="introduction" hidden>
+    <div id="introduction-block" class="block introduction-block">
+        {{ bloc_introduction() }}
     </div>
     <div class="block">
         <div class="cta">
