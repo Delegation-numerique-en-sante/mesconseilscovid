@@ -10,6 +10,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Install French locale
+        run: |
+          sudo apt-get install locales-all
+          sudo localectl set-locale LANG=fr_FR.utf8
+
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
@@ -89,6 +94,11 @@ jobs:
         with:
           fetch-depth: '0'  # preserve history
 
+      - name: Install French locale
+        run: |
+          sudo apt-get install locales-all
+          sudo localectl set-locale LANG=fr_FR.utf8
+
       - name: Adjust file modification times based on commit author date
         run: |
           for FILE in $(git ls-files contenus/thematiques)
@@ -141,6 +151,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Install French locale
+        run: |
+          sudo apt-get install locales-all
+          sudo localectl set-locale LANG=fr_FR.utf8
+
       - name: Inject slug/short variables
         uses: rlespinasse/github-slug-action@v3.x
 
@@ -177,6 +192,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Install French locale
+        run: |
+          sudo apt-get install locales-all
+          sudo localectl set-locale LANG=fr_FR.utf8
+
       - name: Inject slug/short variables
         uses: rlespinasse/github-slug-action@v3.x
 
@@ -212,6 +232,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
+      - name: Install French locale
+        run: |
+          sudo apt-get install locales-all
+          sudo localectl set-locale LANG=fr_FR.utf8
 
       - name: Inject slug/short variables
         uses: rlespinasse/github-slug-action@v3.x
@@ -286,6 +311,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
+      - name: Install French locale
+        run: |
+          sudo apt-get install locales-all
+          sudo localectl set-locale LANG=fr_FR.utf8
 
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
