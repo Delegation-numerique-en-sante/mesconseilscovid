@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 import json
+import locale
 import logging
 from datetime import date
 from html.parser import HTMLParser
 from http import HTTPStatus
+from operator import itemgetter
 from pathlib import Path
 from time import perf_counter
 
 import httpx
+import toml
 from minicli import cli, run, wrap
 
 from construction.markdown import create_markdown_parser, render_markdown_file
@@ -24,6 +27,7 @@ CONTENUS_DIR = HERE / "contenus"
 STATIC_DIR = HERE / "static"
 NB_OF_DISPLAYED_THEMATIQUES = 9
 
+locale.setlocale(locale.LC_ALL, "fr_FR.UTF-8")
 
 @cli
 def all():
@@ -46,10 +50,14 @@ def index():
         if thematique.name != "j-ai-des-symptomes-covid"
     ]
 
-    content = render_template("index.html", **responses)
+    content = render_template("index.html", actualites=extrait_actualites(), **responses)
     content = cache_external_pdfs(content)
     (SRC_DIR / "index.html").write_text(content)
 
+
+def extrait_actualites():
+    actualites = [toml.load(f) for f in each_file_from(CONTENUS_DIR / "actualites")]
+    return sorted(actualites, key=itemgetter("date"), reverse=True)
 
 @cli
 def thematiques():

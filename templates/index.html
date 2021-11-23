@@ -72,10 +72,9 @@
                 </p>
                 <div class="actualites">
                     <ul>
-                        <li><time datetime="2021-11-23">Mardi 23 novembre</time> : <a href="/je-veux-me-faire-vacciner.html#puis-je-me-faire-vacciner-contre-la-grippe-saisonniere-et-la-covid-en-meme-temps">la vaccination contre la grippe saisonnière est maintenant ouverte à toute la population, et peut-être couplée à la dose de rappel contre la Covid</a>&nbsp;🦠</li>
-                        <li><time datetime="2021-11-09">Mardi 9 novembre</time> : <a href="/je-veux-me-faire-vacciner.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire">à partir du 15 décembre, le pass sanitaire sera conditionné à une dose de rappel pour les plus de 65 ans et les vaccinés Janssen</a>&nbsp;🛂</li>
-                        <li><time datetime="2021-11-08">Lundi 8 novembre</time> : <a href="/je-veux-me-faire-vacciner.html#quel-est-le-vaccin-administre-pour-la-dose-de-rappel-dite-3-e-dose">la HAS recommande de privilégier le vaccin Pfizer pour les moins de 30 ans</a>&nbsp;💉</li>
-                        <li><time datetime="2021-11-05">Vendredi 5 novembre</time> : <a href="/pass-sanitaire-qr-code-voyages.html#j-ai-ete-vaccine-a-l-etranger-avec-un-vaccin-reconnu-en-france-comment-obtenir-un-qr-code-valable-en-france">les touristes extra-européens pourront convertir leur certificat de vaccination en pharmacie pour obtenir un pass sanitaire</a>&nbsp;🌍</li>
+                        {% for actualite in actualites %}
+                        <li><time datetime="{{ actualite.date.isoformat() }}">{{ actualite.date.strftime('%A %-d %B').capitalize() }}</time>&nbsp;: <a href="{{ actualite.lien }}">{{ actualite.texte }}</a>&nbsp;{{ actualite.emoji }}</li>
+                        {% endfor %}
                     </ul>
                 </div>
                 <div class="thematiques">
@@ -115,10 +114,9 @@
         </p>
         <div class="actualites">
             <ul>
-                <li><time datetime="2021-11-23">Mardi 23 novembre</time> : <a href="/je-veux-me-faire-vacciner.html#puis-je-me-faire-vacciner-contre-la-grippe-saisonniere-et-la-covid-en-meme-temps">la vaccination contre la grippe saisonnière est maintenant ouverte à toute la population, et peut-être couplée à la dose de rappel contre la Covid</a>&nbsp;🦠</li>
-                <li><time datetime="2021-11-09">Mardi 9 novembre</time> : <a href="/je-veux-me-faire-vacciner.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire">à partir du 15 décembre, le pass sanitaire sera conditionné à une dose de rappel pour les plus de 65 ans et les vaccinés Janssen</a>&nbsp;🛂</li>
-                <li><time datetime="2021-11-08">Lundi 8 novembre</time> : <a href="/je-veux-me-faire-vacciner.html#quel-est-le-vaccin-administre-pour-la-dose-de-rappel-dite-3-e-dose">la HAS recommande de privilégier le vaccin Pfizer pour les moins de 30 ans</a>&nbsp;💉</li>
-                <li><time datetime="2021-11-05">Vendredi 5 novembre</time> : <a href="/pass-sanitaire-qr-code-voyages.html#j-ai-ete-vaccine-a-l-etranger-avec-un-vaccin-reconnu-en-france-comment-obtenir-un-qr-code-valable-en-france">les touristes extra-européens pourront convertir leur certificat de vaccination en pharmacie pour obtenir un pass sanitaire</a>&nbsp;🌍</li>
+                {% for actualite in actualites %}
+                <li><time datetime="{{ actualite.date.isoformat() }}">{{ actualite.date.strftime('%A %-d %B').capitalize() }}</time>&nbsp;: <a href="{{ actualite.lien }}">{{ actualite.texte }}</a>&nbsp;{{ actualite.emoji }}</li>
+                {% endfor %}
             </ul>
         </div>
         <div class="thematiques">

@@ -10,5 +10,6 @@ python-slugify
 pytz
 regex
 selectolax
+toml
 tox
 watchdog
