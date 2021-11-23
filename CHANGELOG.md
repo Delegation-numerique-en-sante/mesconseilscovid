@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-11-23
+
+* extension de la vaccination contre la grippe saisonnière
+
 ## 2021-11-19
 
 * ajoute une page compilant les questions relatives au rappel vaccinal (3e dose)
