@@ -106,7 +106,7 @@ dist/index.html: src/index.html $(firstword $(THEMATIQUES)) static/sitemap.xml
 	npm run-script build
 
 # Construire l’index (page d’accueil + questionnaire)
-src/index.html: build.py templates/index.html contenus/config/*.md contenus/conseils/*.md contenus/meta/*.md contenus/questions/*.md contenus/réponses/*.md contenus/statuts/*.md contenus/suivi/*.md contenus/thematiques/*.md
+src/index.html: build.py templates/index.html contenus/config/*.md contenus/conseils/*.md contenus/meta/*.md contenus/questions/*.md contenus/réponses/*.md contenus/statuts/*.md contenus/suivi/*.md contenus/thematiques/*.md contenus/actualites/*.toml
 	python3 build.py index
 
 # Construire les pages thématiques
