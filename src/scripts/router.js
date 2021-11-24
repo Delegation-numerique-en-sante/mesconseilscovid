@@ -82,7 +82,7 @@ export class Router {
         document.querySelector('[role="banner"]').focus()
     }
 
-    addQuestionnaireRoute(pageName, view, pageTitle) {
+    addQuestionnaireRoute(pageName, view, options) {
         const beforeFunc = (profil) => {
             if (typeof profil.nom === 'undefined') {
                 profil.resetData('mes_infos')
@@ -94,19 +94,27 @@ export class Router {
             injectFeedbackDifficultes(page.querySelector('.feedback-difficultes'))
             bindFeedback(page.querySelector('.feedback-component'), app)
         }
-        this.addAppRoute(pageName, viewFunc, beforeFunc, pageTitle)
+        this.addAppRoute(pageName, viewFunc, { ...options, beforeFunc })
     }
 
-    addAppRoute(pageName, view, before, pageTitle) {
+    addAppRoute(pageName, view, options) {
         const viewFunc = (element) => {
             view(element, this.app)
         }
-        this.addRoute(pageName, viewFunc, before, pageTitle)
+        this.addRoute(pageName, viewFunc, options)
     }
 
-    addRoute(pageName, viewFunc, beforeFunc, pageTitle) {
+    addRoute(pageName, viewFunc, options) {
+        let route
+        if (options && typeof options.route !== 'undefined') {
+            route = options.route
+        } else {
+            route = new RegExp('^' + pageName + '$')
+        }
+        const beforeFunc = options && options.beforeFunc
+        const pageTitle = options && options.pageTitle
         this.navigo.on(
-            new RegExp('^' + pageName + '$'),
+            route,
             () => {
                 const page = this.loadPage(pageName, this.app)
                 this.updateTitle(page, pageName, pageTitle, this.app.profil)
