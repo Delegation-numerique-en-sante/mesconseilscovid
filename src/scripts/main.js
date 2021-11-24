@@ -37,6 +37,7 @@ function pageQuestionnaire(app) {
             app.trackPageView(document.location.pathname)
         }
         app.setupRoutes()
+        app.setupRedirects()
         app.router.resolve()
     })
 }

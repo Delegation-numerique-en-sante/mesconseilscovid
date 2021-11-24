@@ -19,7 +19,7 @@ export class Router {
         this.navigo = this.initNavigo()
 
         this.setupGlobalHooks()
-        this.setupRedirects()
+        this.setupNotFound()
     }
 
     initNavigo() {
@@ -208,37 +208,7 @@ export class Router {
         })
     }
 
-    setupRedirects() {
-        // Compatibilité avec les anciens noms de pages.
-        this.navigo.on(
-            new RegExp('^(symptomesactuels|symptomespasses|debutsymptomes)$'),
-            () => {},
-            {
-                before: (done) => {
-                    this.redirectTo('symptomes')
-                    done(false)
-                },
-            }
-        )
-        this.navigo.on(new RegExp('^(residence|foyer|activitepro)$'), () => {}, {
-            before: (done) => {
-                this.redirectTo('situation')
-                done(false)
-            },
-        })
-        this.navigo.on(new RegExp('^(caracteristiques|antecedents)$'), () => {}, {
-            before: (done) => {
-                this.redirectTo('sante')
-                done(false)
-            },
-        })
-        this.navigo.on('pediatrie', () => {}, {
-            before: function (done) {
-                window.location.replace('conseils-pour-les-enfants.html')
-                done(false)
-            },
-        })
-
+    setupNotFound() {
         // Par défaut on retourne à la page d’accueil.
         this.navigo.notFound(() => {
             this.redirectTo('introduction')
