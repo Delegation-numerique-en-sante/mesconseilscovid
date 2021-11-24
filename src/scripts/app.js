@@ -96,6 +96,41 @@ export default class App {
             nouvelleversion(element, this, origine)
         })
     }
+    setupRedirects() {
+        // Compatibilité avec les anciens noms de pages.
+        this.router.navigo.on(
+            new RegExp('^(symptomesactuels|symptomespasses|debutsymptomes)$'),
+            () => {},
+            {
+                before: (done) => {
+                    this.redirectTo('symptomes')
+                    done(false)
+                },
+            }
+        )
+        this.router.navigo.on(new RegExp('^(residence|foyer|activitepro)$'), () => {}, {
+            before: (done) => {
+                this.redirectTo('situation')
+                done(false)
+            },
+        })
+        this.router.navigo.on(
+            new RegExp('^(caracteristiques|antecedents)$'),
+            () => {},
+            {
+                before: (done) => {
+                    this.redirectTo('sante')
+                    done(false)
+                },
+            }
+        )
+        this.router.navigo.on('pediatrie', () => {}, {
+            before: function (done) {
+                window.location.replace('conseils-pour-les-enfants.html')
+                done(false)
+            },
+        })
+    }
     chargerProfilActuel() {
         return this.stockage.getProfilActuel().then((nom) => {
             if (nom !== null) {
