@@ -140,7 +140,7 @@
 
     * les **représentants du personnel** (<abbr title="Comité social et économique">CSE</abbr>) ;
     * le service de **santé au travail** (médecine du travail) ;
-    * l’**inspection du travail** au <a href="tel:0806000126">0 806 000 126</a> (service **gratuit** et **anonyme**).
+    * l’**inspection du travail** au [0 806 000 126](tel:0806000126) (service **gratuit** et **anonyme**).
 
     Si votre employeur **n’applique pas les recommandations** des autorités sanitaires et que vous estimez que ces manquements vous font courir un **danger grave et imminent**, alors vous pouvez quitter votre poste en faisant valoir votre **droit de retrait**.
 
@@ -172,7 +172,7 @@
 
     <div class="conseil conseil-jaune">
 
-    N’hésitez pas à contacter le **service de renseignements en droit du travail** (inspection du travail) pour obtenir **anonymement** et **gratuitement** des conseils personnalisés sur votre situation au <a href="tel:0806000126">0 806 000 126</a>.
+    N’hésitez pas à contacter le **service de renseignements en droit du travail** (inspection du travail) pour obtenir **anonymement** et **gratuitement** des conseils personnalisés sur votre situation au [0 806 000 126](tel:0806000126).
 
     </div>
 
@@ -180,11 +180,11 @@
 .. question:: Mon employeur peut-il me licencier à cause de mon arrêt maladie ?
     :level: 3
 
-    **Non**. Un employeur n’a pas le droit de licencier un salarié en raison de son état de santé (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042026716/">art. L. 1132–1 du Code du travail</a>). Le salarié licencié pour cette raison pourra saisir les prud’hommes pour licenciement abusif.
+    **Non**. Un employeur n’a pas le droit de licencier un salarié en raison de son état de santé ([art. L. 1132–1 du Code du travail](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042026716/)). Le salarié licencié pour cette raison pourra saisir les prud’hommes pour licenciement abusif.
 
     <div class="conseil conseil-jaune">
 
-    N’hésitez pas à contacter le **service de renseignements en droit du travail** (inspection du travail) pour obtenir **anonymement** et **gratuitement** des conseils personnalisés sur votre situation au <a href="tel:0806000126">0 806 000 126</a>.
+    N’hésitez pas à contacter le **service de renseignements en droit du travail** (inspection du travail) pour obtenir **anonymement** et **gratuitement** des conseils personnalisés sur votre situation au [0 806 000 126](tel:0806000126).
 
     </div>
 

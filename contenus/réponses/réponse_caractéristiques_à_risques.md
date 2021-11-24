@@ -1,1 +1,1 @@
-Vous présentez une ou des caractéristiques à risque : <strong class="nom-caracteristiques-a-risques"></strong> <span class="modifier">(<a href="#sante">modifier</a>)</span>
+Vous présentez une ou des caractéristiques à risque : <strong class="nom-caracteristiques-a-risques"></strong> <span class="modifier">([modifier](#sante))</span>

@@ -1,1 +1,1 @@
-Vous êtes enceinte au 3e trimestre de votre grossesse <span class="modifier">(<a href="#sante">modifier</a>)</span>
+Vous êtes enceinte au 3e trimestre de votre grossesse <span class="modifier">([modifier](#sante))</span>

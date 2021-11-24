@@ -1,1 +1,1 @@
-Vous n’avez **pas encore** été vacciné·e <span class="modifier">(<a href="#vaccins">modifier</a>)</span>
+Vous n’avez **pas encore** été vacciné·e <span class="modifier">([modifier](#vaccins))</span>

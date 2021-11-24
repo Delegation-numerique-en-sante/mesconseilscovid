@@ -1,1 +1,1 @@
-Vous avez **déjà** été complètement vacciné·e <span class="modifier">(<a href="#vaccins">modifier</a>)</span>
+Vous avez **déjà** été complètement vacciné·e <span class="modifier">([modifier](#vaccins))</span>
