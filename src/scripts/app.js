@@ -57,7 +57,9 @@ export default class App {
         return this.chargerProfilActuel()
     }
     setupRoutes() {
-        this.router.addAppRoute('introduction', introduction, undefined, '') // accueil : pas de titre
+        this.router.addAppRoute('introduction', introduction, {
+            pageTitle: '',
+        })
 
         this.router.addAppRoute('nom', nom)
 
@@ -69,19 +71,16 @@ export default class App {
         this.router.addQuestionnaireRoute('situation', situation)
         this.router.addQuestionnaireRoute('sante', sante)
 
-        this.router.addAppRoute('conseils', conseils, beforeConseils)
-        this.router.addAppRoute(
-            'suiviintroduction',
-            suiviintroduction,
-            beforeSuiviIntroduction
-        )
-        this.router.addAppRoute('suivisymptomes', suivisymptomes, beforeSuiviSymptomes)
-        this.router.addAppRoute(
-            'suivihistorique',
-            suivihistorique,
-            beforeSuiviHistorique
-        )
-
+        this.router.addAppRoute('conseils', conseils, { beforeFunc: beforeConseils })
+        this.router.addAppRoute('suiviintroduction', suiviintroduction, {
+            beforeFunc: beforeSuiviIntroduction,
+        })
+        this.router.addAppRoute('suivisymptomes', suivisymptomes, {
+            beforeFunc: beforeSuiviSymptomes,
+        })
+        this.router.addAppRoute('suivihistorique', suivihistorique, {
+            beforeFunc: beforeSuiviHistorique,
+        })
         this.router.addRoute('conditionsutilisation', (element) => {
             if (this.profil.isComplete()) {
                 showElement(element.querySelector('.js-profil-full'))
