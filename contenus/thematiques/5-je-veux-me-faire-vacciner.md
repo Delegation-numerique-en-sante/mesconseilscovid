@@ -16,28 +16,23 @@
 .. question:: Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
 
-    Avec le temps, l’efficacité de la protection du vaccin contre l’infection peut diminuer, en particulier face au variant Delta. Pour « booster » cette protection, la Haute autorité de santé (HAS) recommande une **injection supplémentaire** (2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas) du vaccin pour :
+    À partir du **samedi 27 novembre**, si vous avez **18 ans ou plus**, vous pourrez recevoir un rappel vaccinal, en respectant [un délai minimal](#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) après votre dernière injection ou infection à la Covid.
 
-    * les résident(e)s des <abbr title="Établissement d’Hébergement pour Personnes Âgées Dépendantes">**EHPAD**</abbr> et <abbr title="Unités de Soins de Longue Durée">**USLD**</abbr>,
-    * les personnes de **65 ans et plus** (<i>50 ans et plus à partir de début décembre</i>),
-    * les personnes avec des **comorbidités** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves de Covid,
-    * les personnes **sévèrement immunodéprimées** et les personnes de plus de 18 ans de leur **entourage**,
-    * les **professionnels** et **bénévoles** des secteurs de la santé, du médico-social et du transport sanitaire,
-    * les personnes vaccinées avec le **vaccin Janssen**.
+    Vous êtes également éligible au rappel si vous avez entre **12 et 17 ans** et que :
+
+    * vous êtes **sévèrement immunodéprimé(e)** ;
+    * vous avez une **comorbidité** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de forme grave de Covid.
 
 
     <div class="conseil conseil-jaune">
 
-    - Quel que soit le vaccin que vous avez reçu initialement (*Pfizer*, *Moderna*, *AstraZeneca* ou *Janssen*), la dose de rappel se fera **uniquement avec un vaccin à ARN messager** (*Pfizer* ou *Moderna* selon votre situation).
-
-    - Si vous avez eu la Covid **après votre dernière dose**, vous n’êtes **pas éligible** à ce rappel, mais vous pourrez quand même faire [prolonger votre pass sanitaire](#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-pass-sanitaire-apres-le-15-decembre).
+    Quel que soit le vaccin que vous avez reçu initialement (*Pfizer*, *Moderna*, *AstraZeneca* ou *Janssen*), la dose de rappel se fera **uniquement avec un vaccin à ARN messager** (*Pfizer* ou *Moderna* selon votre situation).
 
     </div>
 
     <div class="voir-aussi">
 
-    - [Est-ce que la dose de rappel est obligatoire pour le pass sanitaire ?](#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire)
-    - [Quel délai respecter avant la dose de rappel ?](#quel-delai-respecter-avant-la-dose-de-rappel-dite-3-e-dose)
+    - [Avant quelle date dois-je recevoir la dose de rappel pour conserver mon pass sanitaire ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire)
     - [Où me faire vacciner ?](#ou-me-faire-vacciner)
 
     </div>
@@ -50,12 +45,6 @@
 
     Dans votre cas, le rappel sera votre **2<sup>e</sup> dose**.
 
-    Pour éviter la désactivation de votre **pass sanitaire** après le 15 décembre, vous devrez la recevoir dans un délai de :
-
-    - **6 mois et 4 semaines** si vous avez reçu un vaccin Pfizer, Moderna ou AstraZeneca,
-    - **1 mois et 4 semaines** si vous avez reçu un vaccin Janssen.
-
-
     <div class="voir-aussi">
 
     - [Suis-je concerné par la dose de rappel ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
@@ -64,29 +53,29 @@
     </div>
 
 
-.. question:: Quel délai respecter avant la dose de rappel, dite 3<sup>e</sup> dose ?
+.. question:: À partir de quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
 
-    Le **délai recommandé** par la Haute autorité de santé (HAS) pour un **rappel vaccinal** (2<sup>e</sup>, 3<sup>e</sup> ou 4<sup>e</sup> dose selon les cas), est le suivant :
+    Vous pourrez recevoir votre rappel vaccinal :
 
-    * pour les personnes vacciné(e)s avec le vaccin **Janssen** (*2<sup>e</sup> dose*) : au moins **4 semaines** après l’injection ;
+    * dès **5 mois** après votre dernière **injection**, ou votre dernière **infection** à la Covid ;
 
-    * pour les personnes sévèrement **immunodéprimées** (*4<sup>e</sup> dose*) : au moins **3 mois** après la dernière injection de vaccin ;
+    * dès **4 semaines** après votre injection si vous aviez été vacciné(e) avec le vaccin **Janssen**  ;
 
-    * pour les personnes de **65 ans et plus** ou avec des **comorbidités** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de formes graves ou les **professionnels** et **bénévoles** des secteurs de la santé (*3<sup>e</sup> dose*) : au moins **6 mois** après la dernière injection de vaccin.
+    * dès **3 mois** après votre dernière injection de vaccin si vous êtes sévèrement **immunodéprimé(e)** (*4<sup>e</sup> dose*).
 
     Si ce délai est respecté, vous pouvez prendre rendez-vous **dès maintenant** chez un **professionnel de santé** (médecin, pharmacien, infirmier…) ou dans un **centre de vaccination**.
 
     <div class="voir-aussi">
 
-    - [Devrai-je recevoir une dose de rappel, dite 3<sup>e</sup> dose ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
+    - [Suis-je concerné par la dose de rappel ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
     - [Où me faire vacciner ?](#ou-me-faire-vacciner)
-    - [Est-ce que la dose de rappel, dite 3e dose, est obligatoire pour le pass sanitaire ?](#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire)
+    - [Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon pass sanitaire ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire)
 
     </div>
 
 
-.. injection:: pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire
+.. injection:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire
 
 
 .. injection:: pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-pass-sanitaire-apres-le-15-decembre

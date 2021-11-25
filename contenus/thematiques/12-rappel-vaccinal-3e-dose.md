@@ -20,7 +20,7 @@
 
 .. injection:: /je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
 
-.. injection:: /je-veux-me-faire-vacciner.html#quel-delai-respecter-avant-la-dose-de-rappel-dite-3-e-dose
+.. injection:: /je-veux-me-faire-vacciner.html#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose
 
 .. injection:: /je-veux-me-faire-vacciner.html#mon-schema-vaccinal-est-complet-avec-une-seule-dose-de-vaccin-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
 
@@ -41,7 +41,7 @@
 
 ## Prolonger mon pass sanitaire
 
-.. injection:: /pass-sanitaire-qr-code-voyages.html#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire
+.. injection:: /pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire
 
 .. injection:: /pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-pass-sanitaire-apres-le-15-decembre
 

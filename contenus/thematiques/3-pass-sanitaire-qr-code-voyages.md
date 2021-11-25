@@ -75,22 +75,24 @@
     </div>
 
 
-.. question:: Est-ce que la dose de rappel, dite 3<sup>e</sup> dose, est obligatoire pour le pass sanitaire ?
+.. question:: Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon pass sanitaire ?
     :level: 3
     :formulaire: rappel
     :open: true
 
-    - À partir du **15 décembre**, si vous avez plus de **65 ans** et que votre dernière dose date de plus de **6 mois et 4 semaines**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal (dit 3<sup>e</sup> dose).
+    - À partir du **15 décembre 2021** :
+        * si vous avez **65 ans ou plus** et que votre dernière dose date de plus de **7 mois**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal (dit 3<sup>e</sup> dose).
 
-    - À partir du **15 décembre**, quel que soit votre âge, si vous avez reçu le **vaccin Janssen** depuis plus de **1 mois et 4 semaines,** alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal.
+        * quel que soit votre âge, si vous avez reçu le **vaccin Janssen** depuis plus de **1 mois et 4 semaines,** alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal.
 
-    - Si vous avez **moins de 65 ans**, et que vous êtes éligible au rappel vaccinal en raison d’une comorbidité, de votre profession, alors vous n’êtes **pas concerné(e)** par cette désactivation du pass sanitaire.
+    - À partir du **15 janvier 2022** :
+        * si vous avez entre **18 et 65 ans** et que votre dernière dose date de plus de **7 mois**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal (dit 3<sup>e</sup> dose).
 
 
     <div class="voir-aussi">
 
-    - [Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?](/je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
-    - [Quel délai respecter avant la dose de rappel, dite 3<sup>e</sup> dose ?](/je-veux-me-faire-vacciner.html#quel-delai-respecter-avant-la-dose-de-rappel-dite-3-e-dose)
+    - [Suis-je concerné par la dose de rappel ?](/je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
+    - [À partir de quand pourrai-je recevoir la dose de rappel ?](/je-veux-me-faire-vacciner.html#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose)
     - [Tout savoir sur le rappel vaccinal contre la Covid-19](https://www.gouvernement.fr/tout-savoir-sur-le-rappel-vaccinal-contre-la-covid-19) (gouvernement.fr)
 
     </div>

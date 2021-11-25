@@ -97,7 +97,7 @@ Même si vous ne présentez pas de symptômes, il faut vous faire tester dès qu
 
 * Si le test est **positif** : isolez-vous pendant au moins **10 jours**. Vous pourrez lever l’isolement dès le 10<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48 h.
 * Si le test est **négatif**, il ne faut pas vous isoler mais restez prudent(e) :
-    * portez le masque à l’intérieur et à l’extérieur, même dans les lieux qui ne l’exigent plus (restaurant, musées…) ;
+    * portez le masque à l’intérieur et à l’extérieur, même dans les lieux qui ne l’exigeraient pas ;
     * évitez de rencontrer des personnes vulnérables ou fragiles ;
     * surveillez votre état : température, symptômes…
 

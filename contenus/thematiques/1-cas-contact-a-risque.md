@@ -56,7 +56,7 @@ Faites un **test antigénique** en pharmacie **dès que possible** (voir la [car
     * vous devrez quand même faire un **test de contrôle** après 7 jours (voir ci-dessous) ;
     * et comme la vaccination ne protège jamais à 100%, en attendant, **restez prudent(e)** :
         * limitez vos interactions sociales,
-        * portez le masque à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigent plus (restaurant, musées…),
+        * portez le masque à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas,
         * évitez de rencontrer des personnes vulnérables ou fragiles ;
     * en cas de **fièvre** ou de **symptômes** avant la date prévue de votre test de contrôle :
         * faites-vous tester dès que possible, et restez isolé(e) en attendant le résultat,
