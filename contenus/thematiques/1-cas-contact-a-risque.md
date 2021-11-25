@@ -12,28 +12,10 @@
 
 - [Je suis cas contact, puis-je me faire vacciner ?](/je-veux-me-faire-vacciner.html#je-suis-cas-contact-puis-je-me-faire-vacciner)
 
+- [Je suis cas contact, est-ce que mon test de dépistage est gratuit ?](/tests-de-depistage.html#je-suis-cas-contact-est-ce-que-mon-test-de-depistage-est-gratuit)
+
 </div>
 
-.. question:: Je suis cas contact, est-ce que mon test de dépistage est gratuit ? 
-    :level: 3
-    
-    **Oui.** Vacciné(e) ou non, avec ou sans symptômes, si vous avez eu un contact à risque avec une personne positive à la covid et que vous avez : 
-    - été contacté par l'**Assurance maladie** ou l'**ARS**
-    ou
-    - reçu une notification de l'application **TousAntiCovid**
-    
-    alors, vos 2 tests de dépistage sont pris en charge par l'Assurance maladie. 
-    
-    Pour bénéficier de cette prise en charge, il faudra présenter un **justificatif** lors de votre rendez-vous de dépistage : 
-    - la **notification** de l'application **TousAntiCovid,** sur votre téléphone portable (pas de capture d'écran);
-    ou
-    - le **courriel** (mail), **sms,** ou **courrier** de l'Assurance maladie ou de l'ARS.
-    
-<div class="conseil conseil-jaune">
-    
-    Les tests sont toujours gratuits pour les mineurs.
- 
-</div>  
 
 ## Que faire selon votre situation ?
 
