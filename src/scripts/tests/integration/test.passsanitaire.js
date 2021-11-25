@@ -188,7 +188,7 @@ describe('Pass sanitaire', function () {
         )
         assert.include(
             await questionnaire.recuperationStatut('test-positif-moins-de-6-mois'),
-            'présenter un test de dépistage négatif de moins de 72 h'
+            'présenter un test de dépistage négatif de moins de 24 h'
         )
         assert.include(
             await questionnaire.recuperationStatut('test-positif-moins-de-6-mois'),
@@ -213,7 +213,7 @@ describe('Pass sanitaire', function () {
         // On donne les possibilités.
         assert.include(
             await questionnaire.recuperationStatut('test-positif-plus-de-6-mois'),
-            'présenter un test de dépistage négatif de moins de 72 h'
+            'présenter un test de dépistage négatif de moins de 24 h'
         )
         assert.include(
             await questionnaire.recuperationStatut('test-positif-plus-de-6-mois'),
