@@ -142,7 +142,7 @@
     <div class="voir-aussi">
 
     - [Est-ce que je dois être vacciné pour avoir un pass sanitaire ?](#est-ce-que-je-dois-etre-vaccine-pour-avoir-un-pass-sanitaire)
-    - [Est-ce que la dose de rappel est obligatoire pour le pass sanitaire ?](#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire)
+    - [Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon pass sanitaire ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire)
 
     </div>
 
