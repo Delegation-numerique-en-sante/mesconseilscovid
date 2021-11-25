@@ -54,7 +54,7 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                 const value = getRadioValue(form, `${this.prefixe}_age_radio`)
                 this.age = value
                 hideElement(form)
-                if (value === 'plus65' || value === 'moins65') {
+                if (value === 'plus65' || value === 'moins65' || value === 'moins18') {
                     this.transitionneVersEtape('vaccination-initiale')
                 } else {
                     console.error(`valeur inattendue: ${value}`)
@@ -86,15 +86,21 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                             'date-derniere-dose',
                             'vaccination-initiale'
                         )
+                    } else if (this.age === 'moins65') {
+                        this.prolongationPass = true
+                        this.transitionneVersEtape(
+                            'date-derniere-dose',
+                            'vaccination-initiale'
+                        )
                     } else {
-                        this.transitionneVersEtape('situation-moins65')
+                        this.transitionneVersEtape('situation-moins18')
                     }
                 } else {
                     console.error(`valeur inattendue: ${value}`)
                 }
             })
         },
-        'situation-moins65': (form) => {
+        'situation-moins18': (form) => {
             const button = form.querySelector('input[type=submit]')
             const requiredLabel = 'Cette information est requise'
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
@@ -102,14 +108,14 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                 event.preventDefault()
                 const value = getRadioValue(
                     form,
-                    `${this.prefixe}_situation_moins65_radio`
+                    `${this.prefixe}_situation_moins18_radio`
                 )
                 hideElement(form)
-                if (value === 'comorbidite' || value === 'pro_sante') {
+                if (value === 'immunodeprimee' || value === 'comorbidite') {
                     this.prolongationPass = false
                     this.transitionneVersEtape(
                         'date-derniere-dose',
-                        'situation-moins65'
+                        'situation-moins18'
                     )
                 } else if (value === 'autre') {
                     this.afficheReponse('pas-concerne')
@@ -137,36 +143,46 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                 const datePicker = form.elements[`${this.prefixe}_date_derniere_dose`]
                 if (datePicker.value !== '') {
                     hideElement(form)
-                    // const dateDerniereDose = new Date(datePicker.value)
                     const dateDerniereDose = dayjs(datePicker.value)
-                    const delaiEnMois = this.janssen ? 1 : 6
-                    const dateEligibiliteRappel = dateDerniereDose.add(
-                        delaiEnMois,
-                        'month'
+
+                    const debutCampagneRappel =
+                        this.age === 'plus65' || this.janssen || this.age === 'moins18'
+                            ? dayjs('2021/09/01')
+                            : dayjs('2021/11/27')
+
+                    // À partir de quelle date faire le rappel ?
+                    const delaiEnMois = this.janssen ? 1 : 5
+                    const dateEligibiliteRappel = dayjs.max(
+                        debutCampagneRappel,
+                        dateDerniereDose.add(delaiEnMois, 'month')
                     )
 
-                    const dateLimiteRappelMin = dayjs('2021/12/15')
-                    const dateLimiteRappel = dayjs.max(
-                        dateLimiteRappelMin,
-                        dateDerniereDose.add(delaiEnMois, 'month').add(4, 'week')
-                    )
-
-                    const dateLimitePassMin = dateLimiteRappelMin.add(1, 'week')
+                    // A quel date mon pass cessera-t-il d’être valable ?
+                    const dateEntreeEnVigueur =
+                        this.age === 'plus65' || this.janssen
+                            ? dayjs('2021/12/15')
+                            : dayjs('2022/01/15')
                     const dateLimitePass = dayjs.max(
-                        dateLimitePassMin,
-                        dateDerniereDose.add(delaiEnMois, 'month').add(5, 'week')
+                        dateEntreeEnVigueur,
+                        dateDerniereDose.add(delaiEnMois + 2, 'month')
                     )
+
+                    // Avant quelle date faire le rappel pour ne pas perdre son pass ?
+                    const dateLimiteRappel = dateLimitePass.subtract(1, 'week')
 
                     let params = {
                         'age':
                             this.age === 'plus65'
                                 ? '65 ans ou plus'
-                                : 'moins de 65 ans',
+                                : this.age === 'moins65'
+                                ? 'entre 18 et 65 ans'
+                                : 'moins de 18 ans',
                         'vaccin': this.janssen
                             ? 'Janssen'
                             : 'Pfizer, Moderna ou AstraZeneca',
                         'date-derniere-dose': dateDerniereDose.format('LL'),
                         'date-eligibilite-rappel': dateEligibiliteRappel.format('LL'),
+                        'date-entree-en-vigueur': dateEntreeEnVigueur.format('LL'),
                     }
 
                     if (this.prolongationPass) {

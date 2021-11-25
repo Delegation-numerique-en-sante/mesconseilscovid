@@ -19,7 +19,9 @@
             <input id="{{prefixe}}_age_radio_plus65" type="radio" required name="{{prefixe}}_age_radio" value="plus65">
             <label for="{{prefixe}}_age_radio_plus65">J’ai 65 ans ou plus</label>
             <input id="{{prefixe}}_age_radio_moins65" type="radio" required name="{{prefixe}}_age_radio" value="moins65">
-            <label for="{{prefixe}}_age_radio_moins65">J’ai moins de 65 ans</label>
+            <label for="{{prefixe}}_age_radio_moins65">J’ai entre 18 et 65 ans</label>
+            <input id="{{prefixe}}_age_radio_moins18" type="radio" required name="{{prefixe}}_age_radio" value="moins18">
+            <label for="{{prefixe}}_age_radio_moins18">J’ai moins de 18 ans</label>
         </div>
     </fieldset>
     <div class="form-controls">
@@ -49,17 +51,17 @@
     </div>
 </form>
 
-<form id="{{prefixe}}-situation-moins65-form" hidden>
+<form id="{{prefixe}}-situation-moins18-form" hidden>
     <a href="javascript:;" data-precedent="vaccination-initiale" class="back-button">Retour</a>
     <fieldset class="required">
-        <legend><h3 id="{{prefixe}}-situation-moins65-label">Ma situation</h3></legend>
-        <div role="radiogroup" aria-labelledby="{{prefixe}}-situation-moins65-label">
-            <input id="{{prefixe}}_situation_moins65_radio_comorbidite" type="radio" required name="{{prefixe}}_situation_moins65_radio" value="comorbidite">
-            <label for="{{prefixe}}_situation_moins65_radio_comorbidite"><span>J’ai une <a href="/je-veux-me-faire-vacciner.html#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid">comorbidité</a> (risque de forme grave)</span></label>
-            <input id="{{prefixe}}_situation_moins65_radio_pro_sante" type="radio" required name="{{prefixe}}_situation_moins65_radio" value="pro_sante">
-            <label for="{{prefixe}}_situation_moins65_radio_pro_sante">Je suis un professionnel de santé</label>
-            <input id="{{prefixe}}_situation_moins65_radio_autre" type="radio" required name="{{prefixe}}_situation_moins65_radio" value="autre">
-            <label for="{{prefixe}}_situation_moins65_radio_autre">Autre situation</label>
+        <legend><h3 id="{{prefixe}}-situation-moins18-label">Ma situation</h3></legend>
+        <div role="radiogroup" aria-labelledby="{{prefixe}}-situation-moins18-label">
+            <input id="{{prefixe}}_situation_moins18_radio_immunodeprimee" type="radio" required name="{{prefixe}}_situation_moins18_radio" value="immunodeprimee">
+            <label for="{{prefixe}}_situation_moins18_radio_immunodeprimee">Je suis sévèrement immunodéprimé(e)</label>
+            <input id="{{prefixe}}_situation_moins18_radio_comorbidite" type="radio" required name="{{prefixe}}_situation_moins18_radio" value="comorbidite">
+            <label for="{{prefixe}}_situation_moins18_radio_comorbidite"><span>J’ai une <a href="/je-veux-me-faire-vacciner.html#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid">comorbidité</a> (risque de forme grave)</span></label>
+            <input id="{{prefixe}}_situation_moins18_radio_autre" type="radio" required name="{{prefixe}}_situation_moins18_radio" value="autre">
+            <label for="{{prefixe}}_situation_moins18_radio_autre">Autre situation</label>
         </div>
     </fieldset>
     <div class="form-controls">
@@ -73,7 +75,7 @@
 <form id="{{prefixe}}-date-derniere-dose-form" hidden>
     <a href="javascript:;" data-precedent="age" class="back-button">Retour</a>
     <fieldset class="required">
-        <legend><h3 id="{{prefixe}}-date-derniere-dose-label">La date de ma dernière dose</h3></legend>
+        <legend><h3 id="{{prefixe}}-date-derniere-dose-label">La date de ma dernière injection, ou de ma dernière infection à la Covid</h3></legend>
         <input type="date" lang="fr" id="{{prefixe}}_date_derniere_dose" name="{{prefixe}}_date_derniere_dose" required>
     </fieldset>
     <div class="form-controls">
@@ -106,13 +108,13 @@ Vous avez reçu votre dernière dose le <strong class="date-derniere-dose"></str
 
 Vous pourrez recevoir votre dose de rappel à partir du <strong class="date-eligibilite-rappel"></strong>.
 
-Vous n’êtes **pas concerné(e)** par la désactivation du pass sanitaire, qui restera valable au delà du 15 décembre 2021.
+Vous ne serez **pas concerné(e)** par la désactivation du pass sanitaire, qui restera valable au delà du 15 décembre 2021.
 
 </div>
 
 <div id="{{prefixe}}-pas-concerne-reponse" class="statut statut-bleu" hidden>
 
-Vous avez **moins de 65 ans** et avez été vacciné(e) avec le vaccin **Pfizer, Moderna ou AstraZeneca**.
+Vous avez **moins de 18 ans** et avez été vacciné(e) avec le vaccin **Pfizer, Moderna ou AstraZeneca**.
 
 Vous n’êtes actuellement **pas concerné** par la campagne de rappel.
 

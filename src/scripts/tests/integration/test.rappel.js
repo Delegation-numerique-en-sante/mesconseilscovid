@@ -51,14 +51,14 @@ class Questionnaire {
         await bouton.click()
     }
 
-    async remplirSituationMoins65(reponse) {
+    async remplirSituationMoins18(reponse) {
         const checkbox_label = await this.page.waitForSelector(
-            `#${this.prefixe}-situation-moins65-form label[for="${this.prefixe}_situation_moins65_radio_${reponse}"]`
+            `#${this.prefixe}-situation-moins18-form label[for="${this.prefixe}_situation_moins18_radio_${reponse}"]`
         )
         await checkbox_label.click()
 
         const bouton = await this.page.waitForSelector(
-            `#${this.prefixe}-situation-moins65-form >> text="Continuer"`
+            `#${this.prefixe}-situation-moins18-form >> text="Continuer"`
         )
         await bouton.click()
     }
@@ -81,12 +81,12 @@ class Questionnaire {
 }
 
 describe('Mini-questionnaire dose de rappel', function () {
-    describe('Éligible au rappel et concerné par le pass sanitaire', function () {
+    describe('Éligible au rappel et pass sanitaire au 15 décembre', function () {
         it('Plus de 65 ans et 17 avril', async function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('plus65')
@@ -102,15 +102,15 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 17 octobre 2021.'
+                'Vous pourrez recevoir votre dose de rappel à partir du 17 septembre 2021.'
             )
             assert.include(
                 statut,
-                'Si vous la recevez avant le 15 décembre 2021, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
+                'Si vous la recevez avant le 8 décembre 2021, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 22 décembre 2021.'
+                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 décembre 2021.'
             )
         })
 
@@ -118,7 +118,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('plus65')
@@ -131,15 +131,15 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'Vous avez reçu votre dernière dose le 17 mai 2021.')
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 17 novembre 2021.'
+                'Vous pourrez recevoir votre dose de rappel à partir du 17 octobre 2021.'
             )
             assert.include(
                 statut,
-                'Si vous la recevez avant le 15 décembre 2021, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
+                'Si vous la recevez avant le 10 décembre 2021, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 22 décembre 2021.'
+                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 17 décembre 2021.'
             )
         })
 
@@ -147,7 +147,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('plus65')
@@ -163,23 +163,55 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
+                'Vous pourrez recevoir votre dose de rappel à partir du 17 novembre 2021.'
+            )
+            assert.include(
+                statut,
+                'Si vous la recevez avant le 10 janvier 2022, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
+            )
+            assert.include(
+                statut,
+                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 17 janvier 2022.'
+            )
+        })
+
+        it('Plus de 65 ans et 17 juillet', async function () {
+            const questionnaire = new Questionnaire(
+                this.test.page,
+                'pass-sanitaire-qr-code-voyages.html',
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+            )
+            await questionnaire.cEstParti()
+            await questionnaire.remplirAge('plus65')
+            await questionnaire.remplirVaccinationInitiale('autre')
+            await questionnaire.remplirDateDerniereDose('2021-07-17')
+
+            const statut = await questionnaire.recuperationStatut('rappel-et-pass')
+            assert.include(statut, 'Vous avez 65 ans ou plus')
+            assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
+            assert.include(
+                statut,
+                'Vous avez reçu votre dernière dose le 17 juillet 2021.'
+            )
+            assert.include(
+                statut,
                 'Vous pourrez recevoir votre dose de rappel à partir du 17 décembre 2021.'
             )
             assert.include(
                 statut,
-                'Si vous la recevez avant le 14 janvier 2022, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
+                'Si vous la recevez avant le 10 février 2022, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 21 janvier 2022.'
+                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 17 février 2022.'
             )
         })
 
-        it('Janssen, plus de 65 et 17 juin', async function () {
+        it('Janssen, plus de 65 ans et 17 juin', async function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('plus65')
@@ -195,23 +227,23 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 17 juillet 2021.'
+                'Vous pourrez recevoir votre dose de rappel à partir du 1 septembre 2021.'
             )
             assert.include(
                 statut,
-                'Si vous la recevez avant le 15 décembre 2021, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
+                'Si vous la recevez avant le 8 décembre 2021, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 22 décembre 2021.'
+                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 décembre 2021.'
             )
         })
 
-        it('Janssen, moins de 65 et 17 juin', async function () {
+        it('Janssen, entre 18 et 65 ans et 17 juin', async function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins65')
@@ -219,7 +251,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-06-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez moins de 65 ans')
+            assert.include(statut, 'Vous avez entre 18 et 65 ans')
             assert.include(statut, 'avez été vacciné(e) avec le vaccin Janssen')
             assert.include(
                 statut,
@@ -227,34 +259,61 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 17 juillet 2021.'
+                'Vous pourrez recevoir votre dose de rappel à partir du 1 septembre 2021.'
             )
             assert.include(
                 statut,
-                'Si vous la recevez avant le 15 décembre 2021, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
+                'Si vous la recevez avant le 8 décembre 2021, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 22 décembre 2021.'
+                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 décembre 2021.'
             )
         })
     })
 
-    describe('Éligible au rappel mais pas concerné par le pass sanitaire', function () {
-        it('Moins de 65 ans et comorbidité, 17 juin', async function () {
+    describe('Éligible au rappel et pass sanitaire au 15 janvier', function () {
+        it('18 à 65 ans, 17 mai', async function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins65')
             await questionnaire.remplirVaccinationInitiale('autre')
-            await questionnaire.remplirSituationMoins65('comorbidite')
+            await questionnaire.remplirDateDerniereDose('2021-05-17')
+
+            const statut = await questionnaire.recuperationStatut('rappel-et-pass')
+            assert.include(statut, 'Vous avez entre 18 et 65 ans')
+            assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
+            assert.include(statut, 'Vous avez reçu votre dernière dose le 17 mai 2021.')
+            assert.include(
+                statut,
+                'Vous pourrez recevoir votre dose de rappel à partir du 27 novembre 2021.'
+            )
+            assert.include(
+                statut,
+                'Si vous la recevez avant le 8 janvier 2022, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
+            )
+            assert.include(
+                statut,
+                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 janvier 2022.'
+            )
+        })
+        it('18 à 65 ans, 17 juin', async function () {
+            const questionnaire = new Questionnaire(
+                this.test.page,
+                'pass-sanitaire-qr-code-voyages.html',
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+            )
+            await questionnaire.cEstParti()
+            await questionnaire.remplirAge('moins65')
+            await questionnaire.remplirVaccinationInitiale('autre')
             await questionnaire.remplirDateDerniereDose('2021-06-17')
 
-            const statut = await questionnaire.recuperationStatut('rappel')
-            assert.include(statut, 'Vous avez moins de 65 ans')
+            const statut = await questionnaire.recuperationStatut('rappel-et-pass')
+            assert.include(statut, 'Vous avez entre 18 et 65 ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
                 statut,
@@ -262,28 +321,90 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 17 décembre 2021.'
+                'Vous pourrez recevoir votre dose de rappel à partir du 27 novembre 2021.'
             )
             assert.include(
                 statut,
-                'Vous n’êtes pas concerné(e) par la désactivation du pass sanitaire, qui restera valable au delà du 15 décembre 2021.'
+                'Si vous la recevez avant le 10 janvier 2022, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
+            )
+            assert.include(
+                statut,
+                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 17 janvier 2022.'
             )
         })
-
-        it('Moins de 65 ans et professionnel de santé, 17 juin', async function () {
+        it('18 à 65 ans, 17 juillet', async function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins65')
             await questionnaire.remplirVaccinationInitiale('autre')
-            await questionnaire.remplirSituationMoins65('pro_sante')
+            await questionnaire.remplirDateDerniereDose('2021-07-17')
+
+            const statut = await questionnaire.recuperationStatut('rappel-et-pass')
+            assert.include(statut, 'Vous avez entre 18 et 65 ans')
+            assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
+            assert.include(
+                statut,
+                'Vous avez reçu votre dernière dose le 17 juillet 2021.'
+            )
+            assert.include(
+                statut,
+                'Vous pourrez recevoir votre dose de rappel à partir du 17 décembre 2021.'
+            )
+            assert.include(
+                statut,
+                'Si vous la recevez avant le 10 février 2022, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
+            )
+            assert.include(
+                statut,
+                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 17 février 2022.'
+            )
+        })
+    })
+
+    describe('Éligible au rappel mais pas concerné pour le pass sanitaire', function () {
+        it('Moins de 18 ans et immunodéprimé(e), 17 mai', async function () {
+            const questionnaire = new Questionnaire(
+                this.test.page,
+                'pass-sanitaire-qr-code-voyages.html',
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+            )
+            await questionnaire.cEstParti()
+            await questionnaire.remplirAge('moins18')
+            await questionnaire.remplirVaccinationInitiale('autre')
+            await questionnaire.remplirSituationMoins18('immunodeprimee')
+            await questionnaire.remplirDateDerniereDose('2021-05-17')
+
+            const statut = await questionnaire.recuperationStatut('rappel')
+            assert.include(statut, 'Vous avez moins de 18 ans')
+            assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
+            assert.include(statut, 'Vous avez reçu votre dernière dose le 17 mai 2021.')
+            assert.include(
+                statut,
+                'Vous pourrez recevoir votre dose de rappel à partir du 17 octobre 2021.'
+            )
+            assert.include(
+                statut,
+                'Vous ne serez pas concerné(e) par la désactivation du pass sanitaire, qui restera valable au delà du 15 décembre 2021.'
+            )
+        })
+        it('Moins de 18 ans et immunodéprimé(e), 17 juin', async function () {
+            const questionnaire = new Questionnaire(
+                this.test.page,
+                'pass-sanitaire-qr-code-voyages.html',
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+            )
+            await questionnaire.cEstParti()
+            await questionnaire.remplirAge('moins18')
+            await questionnaire.remplirVaccinationInitiale('autre')
+            await questionnaire.remplirSituationMoins18('immunodeprimee')
             await questionnaire.remplirDateDerniereDose('2021-06-17')
 
             const statut = await questionnaire.recuperationStatut('rappel')
-            assert.include(statut, 'Vous avez moins de 65 ans')
+            assert.include(statut, 'Vous avez moins de 18 ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
                 statut,
@@ -291,44 +412,48 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 17 décembre 2021.'
+                'Vous pourrez recevoir votre dose de rappel à partir du 17 novembre 2021.'
             )
             assert.include(
                 statut,
-                'Vous n’êtes pas concerné(e) par la désactivation du pass sanitaire, qui restera valable au delà du 15 décembre 2021.'
+                'Vous ne serez pas concerné(e) par la désactivation du pass sanitaire, qui restera valable au delà du 15 décembre 2021.'
             )
         })
-    })
+        it('Moins de 18 ans et comorbidité, 17 juin', async function () {
+            const questionnaire = new Questionnaire(
+                this.test.page,
+                'pass-sanitaire-qr-code-voyages.html',
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+            )
+            await questionnaire.cEstParti()
+            await questionnaire.remplirAge('moins18')
+            await questionnaire.remplirVaccinationInitiale('autre')
+            await questionnaire.remplirSituationMoins18('comorbidite')
+            await questionnaire.remplirDateDerniereDose('2021-06-17')
 
-    it('Pas éligible au rappel', async function () {
-        const questionnaire = new Questionnaire(
-            this.test.page,
-            'pass-sanitaire-qr-code-voyages.html',
-            'est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
-        )
-        await questionnaire.cEstParti()
-        await questionnaire.remplirAge('moins65')
-        await questionnaire.remplirVaccinationInitiale('autre')
-        await questionnaire.remplirSituationMoins65('autre')
-
-        const statut = await questionnaire.recuperationStatut('pas-concerne')
-        assert.include(statut, 'Vous avez moins de 65 ans')
-        assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
-        assert.include(
-            statut,
-            'Vous n’êtes actuellement pas concerné par la campagne de rappel.'
-        )
-        assert.include(
-            statut,
-            'Votre pass sanitaire restera également valable au delà du 15 décembre 2021.'
-        )
+            const statut = await questionnaire.recuperationStatut('rappel')
+            assert.include(statut, 'Vous avez moins de 18 ans')
+            assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
+            assert.include(
+                statut,
+                'Vous avez reçu votre dernière dose le 17 juin 2021.'
+            )
+            assert.include(
+                statut,
+                'Vous pourrez recevoir votre dose de rappel à partir du 17 novembre 2021.'
+            )
+            assert.include(
+                statut,
+                'Vous ne serez pas concerné(e) par la désactivation du pass sanitaire, qui restera valable au delà du 15 décembre 2021.'
+            )
+        })
     })
 
     it('Bouton retour (situation)', async function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+            'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
         )
 
         const prefixe = await questionnaire.cEstParti()
@@ -360,7 +485,7 @@ describe('Mini-questionnaire dose de rappel', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+            'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
         )
 
         const prefixe = await questionnaire.cEstParti()
@@ -376,7 +501,10 @@ describe('Mini-questionnaire dose de rappel', function () {
         formLegend = await page.waitForSelector(
             `#${prefixe}-date-derniere-dose-form legend h3`
         )
-        assert.equal(await formLegend.innerText(), 'La date de ma dernière dose')
+        assert.equal(
+            await formLegend.innerText(),
+            'La date de ma dernière injection, ou de ma dernière infection à la Covid'
+        )
 
         // On clique sur le bouton retour.
         const bouton = await page.waitForSelector(
@@ -399,11 +527,11 @@ describe('Mini-questionnaire dose de rappel', function () {
         assert.equal(await formLegend.innerText(), 'Mon âge')
     })
 
-    it('Bouton retour (date dernière dose via moins 65)', async function () {
+    it('Bouton retour (date dernière dose via moins 18)', async function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+            'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
         )
 
         const prefixe = await questionnaire.cEstParti()
@@ -413,14 +541,17 @@ describe('Mini-questionnaire dose de rappel', function () {
         let formLegend = await page.waitForSelector(`#${prefixe}-age-form legend h3`)
         assert.equal(await formLegend.innerText(), 'Mon âge')
 
-        await questionnaire.remplirAge('moins65')
+        await questionnaire.remplirAge('moins18')
         await questionnaire.remplirVaccinationInitiale('autre')
-        await questionnaire.remplirSituationMoins65('comorbidite')
+        await questionnaire.remplirSituationMoins18('comorbidite')
 
         formLegend = await page.waitForSelector(
             `#${prefixe}-date-derniere-dose-form legend h3`
         )
-        assert.equal(await formLegend.innerText(), 'La date de ma dernière dose')
+        assert.equal(
+            await formLegend.innerText(),
+            'La date de ma dernière injection, ou de ma dernière infection à la Covid'
+        )
 
         // On clique sur le bouton retour.
         const bouton = await page.waitForSelector(
@@ -429,13 +560,13 @@ describe('Mini-questionnaire dose de rappel', function () {
         await bouton.click()
 
         formLegend = await page.waitForSelector(
-            `#${prefixe}-situation-moins65-form legend h3`
+            `#${prefixe}-situation-moins18-form legend h3`
         )
         assert.equal(await formLegend.innerText(), 'Ma situation')
 
         // On clique sur le bouton retour.
         const bouton2 = await page.waitForSelector(
-            `#${prefixe}-situation-moins65-form >> text="Retour"`
+            `#${prefixe}-situation-moins18-form >> text="Retour"`
         )
         await bouton2.click()
 
@@ -449,7 +580,7 @@ describe('Mini-questionnaire dose de rappel', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire'
+            'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
         )
 
         const prefixe = await questionnaire.cEstParti()
@@ -465,7 +596,10 @@ describe('Mini-questionnaire dose de rappel', function () {
         formLegend = await page.waitForSelector(
             `#${prefixe}-date-derniere-dose-form legend h3`
         )
-        assert.equal(await formLegend.innerText(), 'La date de ma dernière dose')
+        assert.equal(
+            await formLegend.innerText(),
+            'La date de ma dernière injection, ou de ma dernière infection à la Covid'
+        )
 
         await questionnaire.remplirDateDerniereDose('2021-06-17')
 
