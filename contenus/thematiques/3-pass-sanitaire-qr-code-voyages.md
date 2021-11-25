@@ -117,6 +117,31 @@
     En cas de **contre-indication médicale** (voir la [liste des contre-indications à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination)), vous pouvez demander à votre médecin d’établir un **certificat médical** (formulaire Cerfa n°16183*01). Il faudra envoyer le premier volet du certificat à votre **caisse d’Assurance Maladie**. Après vérifications, elle vous adressera votre **certificat de contre-indication à la vaccination** avec **QR code**, valable comme pass sanitaire en **France uniquement**.
 
     Attention, si vous ne pouvez pas vous faire vacciner parce que **vous avez eu la Covid** il y a moins de **6 mois**, votre [**certificat de rétablissement**](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) (test de dépistage positif) avec **QR code** fera office de pass sanitaire.
+    
+.. question:: Puis-je recevoir des soins à l'hôpital si je ne suis pas vacciné(e) contre la Covid ?
+    :level: 3 
+    
+    **Bien sûr.** Vacciné(e) ou non, vous avez accès aux mêmes soins.
+    
+    - Pour le service des urgences :
+    Il n'est **pas obligatoire** d'être vacciné(é) ou de présenter un autre (test de dépistage ou certificat de rétablissement) pass sanitaire pour accéder aux urgences des hôpitaux.
+    
+    - Pour un rendez-vous médical
+    Il n'est **pas obligatoire d'être vacciné(e)** pour se rendre à un rendez-vous médical en milieu hospitalier. En revanche, un **pass sanitaire est exigé.** 
+    
+    Si vous n'êtes pas vacciné(e), vous pouvez présenter : **un test de dépistage** négatif datant de moins de 72h, ou **un certificat de rétablissement.**  
+    
+    Dans ce cas, vous pouvez obtenir la **prise en charge** de votre **test de dépistage** en présentant au professionnel de santé qui réalisera votre test :
+    - la **convocation** émise par l'établissement médical où vous avez rendez-vous
+    ou
+    - une prescription médicale du médecin chez qui vous avez rendez-vous.
+    
+    <div class="voir-aussi">
+
+    - [Est-ce que je dois être vacciné pour avoir un pass sanitaire ?](#est-ce-que-je-dois-etre-vaccine-pour-avoir-un-pass-sanitaire).
+    - [Est-ce que la dose de rappel est obligatoire pour le pass sanitaire ?](#est-ce-que-la-dose-de-rappel-dite-3-e-dose-est-obligatoire-pour-le-pass-sanitaire)
+
+    </div>
 
 
 .. question:: Où le pass sanitaire est-il obligatoire ?
