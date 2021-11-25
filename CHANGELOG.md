@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-11-25
+
+* dose de rappel pour les 18-65 ans au 15 janvier
+* mention explicite de la gratuité des tests pour les cas contact
+* mention explicite de l’acceptation aux urgences quel que soit le statut vaccinal
+
 ## 2021-11-23
 
 * extension de la vaccination contre la grippe saisonnière
