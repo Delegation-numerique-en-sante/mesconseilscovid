@@ -38,7 +38,7 @@
 
    Foreign **students** studying in France can [request the conversion](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etudiants?locale=en) of their vaccination certificate.
 
-   While your request is being processed, a **negative PCR or antigenic test result** will be your temporary health pass (valid for 72h). To find out where to get tested, please click on [this link](https://www.sante.fr/cf/centres-depistage-covid.html) (in French).
+   While your request is being processed, a **negative PCR or antigenic test result** will be your temporary health pass (valid for 24h). To find out where to get tested, please click on [this link](https://www.sante.fr/cf/centres-depistage-covid.html) (in French).
 
    If you were vaccinated in one of the following countries, you do not need to convert your vaccination certificate: Albania, Andorra, Armenia, Faroe Islands, Iceland, Israel, Liechtenstein, North Macedonia, Morocco, Monaco, Norway, Panama, United-Kingdom, San Marino, Switzerland, Turkey, Ukraine, Vatican. 
 
@@ -53,7 +53,7 @@
 
    In France, **3 documents** can be used as a health pass, as long as they include a valid European **QR code**:
 
-      * a **negative test result** (PCR, antigenic or supervised self-test): valid for 72h after the test,
+      * a **negative test result** (PCR, antigenic or supervised self-test): valid for 24h after the test,
       * a **positive test result** (PCR or antigenic): valid between 11 days and 6 months after the illness,
       * a certificate of **full vaccination** with Pfizer, Moderna, AstraZeneca or Janssen.
 

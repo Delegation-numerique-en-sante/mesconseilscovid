@@ -19,7 +19,7 @@
 
     En France, le pass sanitaire peut être, **selon votre situation** :
 
-    - un [test de dépistage négatif](#comment-obtenir-un-certificat-de-depistage-avec-qr-code) : **test PCR** ou **test antigénique** ou **autotest supervisé** par un **pharmacien**, datant de moins de **72 h** (**sauf** pour les voyages en **Corse** et **Dom-Tom** : les autotests ne sont pas acceptés et le test antigénique est valable **48 h**) ;
+    - un [test de dépistage négatif](#comment-obtenir-un-certificat-de-depistage-avec-qr-code) : **test PCR** ou **test antigénique**, datant de moins de **24 h** ;
 
     - un [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) : un test de dépistage **positif**, **PCR** ou **antigénique** de **plus de 11 jours** et **moins de 6 mois** ;
 
@@ -64,7 +64,7 @@
 
     **Non**. La vaccination n’est pas la seule façon d’obtenir un pass sanitaire.
 
-    Si vous n’êtes pas encore complètement vacciné, vous pouvez présenter soit un **test de dépistage négatif** de **moins de 72 h**, soit un **test de dépistage positif** de plus de **11 jours** et de moins de **6 mois**.
+    Si vous n’êtes pas encore complètement vacciné, vous pouvez présenter soit un **test de dépistage négatif** de **moins de 24 h**, soit un **test de dépistage positif** de plus de **11 jours** et de moins de **6 mois**.
 
     Si vous ne [pouvez-pas vous faire vacciner](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-sanitaire) (en raison d’une **contre-indication médicale**), vous pouvez faire une demande de pass sanitaire auprès de l’Assurance Maladie, sur la base du **certificat médical** (formulaire Cerfa n°16183*01) établi par votre médecin.
 
@@ -132,7 +132,7 @@
 
     Il n’est **pas obligatoire d’être vacciné(e)** pour se rendre à un rendez-vous médical en milieu hospitalier. En revanche, un **pass sanitaire est exigé**. Si vous n’êtes pas vacciné(e), vous pouvez présenter :
 
-    - un **test de dépistage négatif** datant de moins de 72h ;
+    - un **test de dépistage négatif** datant de moins de 24 h ;
     - ou un **certificat de rétablissement** (test de dépistage positif de plus de 7 jours et moins de 6 mois).
 
     Dans ce cas, vous pouvez obtenir la **prise en charge** de votre **test de dépistage** en présentant au professionnel de santé qui réalisera votre test :
@@ -193,7 +193,7 @@
 
     <div class="exemple">
 
-    Par exemple, une personne non vaccinée devra présenter un test de dépistage négatif de moins de 72 h réalisé par un professionnel de santé ou un certificat de rétablissement pour voyager en car de Bordeaux à Toulouse.
+    Par exemple, une personne non vaccinée devra présenter un test de dépistage négatif de moins de 24 h réalisé par un professionnel de santé ou un certificat de rétablissement pour voyager en car de Bordeaux à Toulouse.
 
     </div>
 
@@ -223,7 +223,7 @@
 
     Par exemple, un chef cuisinier ne participant pas au service du restaurant et travaillant dans une cuisine fermée, non accessible au public, n’est pas dans l’obligation de présenter un pass sanitaire.
 
-    En revanche, si la cuisine est ouverte ou s’il participe au service, alors il devra présenter à son employeur : un test de dépistage négatif toutes les 72 h **ou** un certificat de rétablissement de plus de 11 jours et moins de 6 mois **ou** une attestation de vaccination complète.
+    En revanche, si la cuisine est ouverte ou s’il participe au service, alors il devra présenter à son employeur : un test de dépistage négatif toutes les 24 h **ou** un certificat de rétablissement de plus de 11 jours et moins de 6 mois **ou** une attestation de vaccination complète.
 
     </div>
 
@@ -248,7 +248,7 @@
 
     Les mêmes 3 **preuves sanitaires** qui font office de pass sanitaire français peuvent aussi servir de **pass sanitaire européen**, à quelques détails près :
 
-    - un **test de dépistage négatif** : **test PCR** de moins de **72 h** ou **test antigénique** de moins de **48 h** ;
+    - un **test de dépistage négatif** : **test PCR** ou **test antigénique** de moins de **24 h** ;
     - un **test de dépistage positif** : **test PCR** ou **test antigénique** daté de **plus de 11 jours** et moins de **6 mois**, appelé [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) ;
     - une **attestation de vaccination complète**, soit **14 jours** (*Pfizer*, *Moderna*, *AstraZeneca*) ou **28 jours** (*Janssen*) après la dernière dose nécessaire.
 
@@ -396,7 +396,7 @@
 
     Si vous êtes **étudiant étranger** inscrit dans un établissement d’enseignement supérieur français pour la rentrée 2021-2022 et que vous possédez un visa d’études, l’administration a mis en place une démarche en ligne pour demander la [conversion votre certificat de vaccination étranger](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etudiants) en pass sanitaire français.
 
-    En attendant, un **test de dépistage négatif de moins de 72 h** pourra faire office de pass sanitaire.
+    En attendant, un **test de dépistage négatif de moins de 24 h** pourra faire office de pass sanitaire.
 
 
 
@@ -432,7 +432,7 @@
 
     La vaccination sera considérée comme complète **7 jours** après votre dernière injection de vaccin à ARNm, et le **QR code** de l’attestation de vaccination sera alors valable comme **pass sanitaire**.
 
-    En attendant, un **test de dépistage négatif de moins de 72 h** pourra faire office de pass sanitaire.
+    En attendant, un **test de dépistage négatif de moins de 24 h** pourra faire office de pass sanitaire.
 
     <div class="conseil conseil-jaune">
 
