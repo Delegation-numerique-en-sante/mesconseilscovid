@@ -188,11 +188,11 @@
 
 Félicitations, votre schéma vaccinal est **complet** ! 🎉
 
-Votre **attestation de vaccination**, munie d’un QR code, fait office de pass sanitaire.
+Votre **attestation de vaccination**, munie d’un QR code, fait office de pass sanitaire. **Attention**, si vous êtes éligible à une **dose de rappel** (dite 3<sup>e</sup> dose), votre pass sanitaire pourrait devenir invalide prochaînement.
 
 [Comment obtenir mon attestation de vaccination ?](#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code)
 
-*Note : même si vous êtes éligible à une dose de rappel (dite 3<sup>e</sup> dose), votre pass sanitaire reste valide.*
+[Avant quelle date dois-je recevoir la dose de rappel, dite 3e dose, pour conserver mon pass sanitaire ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire)
 
 </div>
 
