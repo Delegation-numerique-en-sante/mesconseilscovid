@@ -45,6 +45,29 @@
 
     Pour faire face à la situation épidémique en **Guadeloupe**, en **Guyane**, en **Martinique** et à **Mayotte**, les tests de dépistage restent pris en charge par l’Assurance maladie jusqu’à nouvel ordre.
 
+
+.. question:: Je suis cas contact, est-ce que mon test de dépistage est gratuit ?
+    :level: 3
+
+    **Oui.** Vacciné(e) ou non, avec ou sans symptômes, si vous avez eu un contact à risque avec une personne positive à la Covid et que vous avez :
+
+    - été contacté par l’**Assurance maladie** ou l’**ARS**,
+    - ou reçu une notification de l’application **TousAntiCovid**,
+
+    alors, vos 2 tests de dépistage sont pris en charge par l’Assurance maladie.
+
+    Pour bénéficier de cette prise en charge, il faudra présenter un **justificatif** lors de votre rendez-vous de dépistage :
+
+    - la **notification** de l’application **TousAntiCovid**, sur votre téléphone portable (pas de capture d'écran) ;
+    - ou le **courriel** (e-mail), **SMS**, ou **courrier** de l’Assurance maladie ou de l’ARS.
+
+    <div class="conseil conseil-jaune">
+
+    Les tests sont toujours gratuits pour les mineurs.
+
+    </div>
+
+
 .. question:: Je souhaite me faire dépister mais les prélèvements nasopharyngés sont impossibles dans mon cas
     :level: 3
 
