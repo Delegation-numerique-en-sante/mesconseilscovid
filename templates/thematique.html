@@ -29,6 +29,7 @@
     <meta property="og:image" content="{{ thematique.imgsrcpng }}">
     <meta property="og:url" content="https://mesconseilscovid.sante.gouv.fr/{{ thematique.name }}.html">
     <meta property="og:locale" content="fr_FR">
+    <script type="module" src="./scripts/main.js"></script>
 </head>
 <body class="page-thematique" data-thematique-name="{{ thematique.name }}" data-stats-url="{{ config_stats_url|inline }}">
     <header role="banner">
@@ -96,6 +97,5 @@
         {{ meta_entretiens_utilisateurs }}
         {{ meta_pied_de_page }}
     </footer>
-    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>

@@ -58,7 +58,7 @@
     "test-integration:ci": "mocha --color --require @babel/register --bail --timeout 15000 --retries=5 src/scripts/tests/integration/",
     "lint": "eslint --color src/scripts/ src/service-worker.js",
     "prebuild": "rm -rf dist",
-    "build": "parcel build --no-scope-hoist src/*.html --detailed-report 20",
+    "build": "parcel build --no-scope-hoist src/index.html src/*.html --detailed-report 20",
     "build-dev": "parcel src/*.html --log-level info --open"
   },
   "parcelIgnore": [
