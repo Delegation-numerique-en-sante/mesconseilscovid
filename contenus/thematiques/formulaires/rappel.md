@@ -90,7 +90,7 @@
 
 Vous avez <strong class="age"></strong> et avez été vacciné(e) avec le vaccin <span class="vaccin"></span>.
 
-Vous avez reçu votre dernière dose le <strong class="date-derniere-dose"></strong>.
+Votre dernière injection (ou votre dernière infection à la Covid) date du <strong class="date-derniere-dose"></strong>.
 
 Vous pourrez recevoir votre dose de rappel à partir du <strong class="date-eligibilite-rappel"></strong>.
 
@@ -104,7 +104,7 @@ En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à par
 
 Vous avez <strong class="age"></strong> et avez été vacciné(e) avec le vaccin <span class="vaccin"></span>.
 
-Vous avez reçu votre dernière dose le <strong class="date-derniere-dose"></strong>.
+Votre dernière injection (ou votre dernière infection à la Covid) date du <strong class="date-derniere-dose"></strong>.
 
 Vous pourrez recevoir votre dose de rappel à partir du <strong class="date-eligibilite-rappel"></strong>.
 
