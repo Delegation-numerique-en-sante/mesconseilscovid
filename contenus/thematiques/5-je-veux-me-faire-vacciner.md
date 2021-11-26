@@ -234,8 +234,13 @@
 .. question:: J’ai déjà eu la Covid, comment le prouver et ne recevoir qu’une seule dose pour compléter mon schéma vaccinal initial ?
     :level: 3
 
-    Lors de votre rendez-vous de vaccination, vous pourrez présenter soit un test de **dépistage positif** réalisé il y a 2 mois ou plus, soit un **test sérologique** (prise de sang qui recherche des anticorps) positif. Certains centres de vaccination proposent de faire un test sérologique rapide ou **TROD** lors du rendez-vous de première injection. Si ce test est positif, alors vous ne recevrez qu’une seule dose de vaccin. Bientôt, ces TROD seront disponibles dans tous les centres de vaccination.
+    Lors de votre rendez-vous pour votre **vaccination initiale**, vous pourrez présenter soit un test de **dépistage positif** réalisé il y a 2 mois ou plus, soit un **test sérologique** (prise de sang qui recherche des anticorps) positif. Certains centres de vaccination proposent de faire un test sérologique rapide ou **TROD** lors du rendez-vous de première injection. Si ce test est positif, alors vous ne recevrez qu’une seule dose de vaccin.
 
+    <div class="voir-aussi">
+
+    - [Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3e dose ?](#mon-schema-vaccinal-est-complet-avec-une-seule-dose-de-vaccin-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
+
+    </div>
 
 .. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> pour compléter mon schéma vaccinal initial ?
     :level: 3
@@ -243,7 +248,13 @@
     Cela dépend :
 
     * si vous avez été testé(e) positif ou positive à la Covid dans les 15 jours suivants votre 1<sup>re</sup> injection, alors vous devez quand même recevoir la 2<sup>e</sup> dose dans un **délai de 2 à 6 mois** après la contamination.
-    * si vous avez été testé(e) positif ou positive à la Covid après le 15<sup>e</sup> jour suivant votre 1<sup>re</sup> injection, alors vous n’avez pas besoin de recevoir une 2<sup>e</sup> dose. Votre contamination a le même effet protecteur que la dose de rappel.
+    * si vous avez été testé(e) positif ou positive à la Covid après le 15<sup>e</sup> jour suivant votre 1<sup>re</sup> injection, alors vous n’avez pas besoin de recevoir une 2<sup>e</sup> dose. Votre contamination a le même effet protecteur que cette deuxième injection.
+
+    <div class="voir-aussi">
+
+    - [Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3e dose ?](#mon-schema-vaccinal-est-complet-avec-une-seule-dose-de-vaccin-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
+
+    </div>
 
 
 ## Les effets de la vaccination
