@@ -98,7 +98,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
                 statut,
-                'Vous avez reçu votre dernière dose le 17 avril 2021.'
+                'Votre dernière injection (ou votre dernière infection à la Covid) date du 17 avril 2021.'
             )
             assert.include(
                 statut,
@@ -128,7 +128,10 @@ describe('Mini-questionnaire dose de rappel', function () {
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
             assert.include(statut, 'Vous avez 65 ans ou plus')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
-            assert.include(statut, 'Vous avez reçu votre dernière dose le 17 mai 2021.')
+            assert.include(
+                statut,
+                'Votre dernière injection (ou votre dernière infection à la Covid) date du 17 mai 2021.'
+            )
             assert.include(
                 statut,
                 'Vous pourrez recevoir votre dose de rappel à partir du 17 octobre 2021.'
@@ -159,7 +162,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
                 statut,
-                'Vous avez reçu votre dernière dose le 17 juin 2021.'
+                'Votre dernière injection (ou votre dernière infection à la Covid) date du 17 juin 2021.'
             )
             assert.include(
                 statut,
@@ -191,7 +194,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
                 statut,
-                'Vous avez reçu votre dernière dose le 17 juillet 2021.'
+                'Votre dernière injection (ou votre dernière infection à la Covid) date du 17 juillet 2021.'
             )
             assert.include(
                 statut,
@@ -223,7 +226,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'avez été vacciné(e) avec le vaccin Janssen')
             assert.include(
                 statut,
-                'Vous avez reçu votre dernière dose le 17 juin 2021.'
+                'Votre dernière injection (ou votre dernière infection à la Covid) date du 17 juin 2021.'
             )
             assert.include(
                 statut,
@@ -255,7 +258,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'avez été vacciné(e) avec le vaccin Janssen')
             assert.include(
                 statut,
-                'Vous avez reçu votre dernière dose le 17 juin 2021.'
+                'Votre dernière injection (ou votre dernière infection à la Covid) date du 17 juin 2021.'
             )
             assert.include(
                 statut,
@@ -287,7 +290,10 @@ describe('Mini-questionnaire dose de rappel', function () {
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
             assert.include(statut, 'Vous avez entre 18 et 65 ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
-            assert.include(statut, 'Vous avez reçu votre dernière dose le 17 mai 2021.')
+            assert.include(
+                statut,
+                'Votre dernière injection (ou votre dernière infection à la Covid) date du 17 mai 2021.'
+            )
             assert.include(
                 statut,
                 'Vous pourrez recevoir votre dose de rappel à partir du 27 novembre 2021.'
@@ -317,7 +323,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
                 statut,
-                'Vous avez reçu votre dernière dose le 17 juin 2021.'
+                'Votre dernière injection (ou votre dernière infection à la Covid) date du 17 juin 2021.'
             )
             assert.include(
                 statut,
@@ -348,7 +354,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
                 statut,
-                'Vous avez reçu votre dernière dose le 17 juillet 2021.'
+                'Votre dernière injection (ou votre dernière infection à la Covid) date du 17 juillet 2021.'
             )
             assert.include(
                 statut,
@@ -381,7 +387,10 @@ describe('Mini-questionnaire dose de rappel', function () {
             const statut = await questionnaire.recuperationStatut('rappel')
             assert.include(statut, 'Vous avez moins de 18 ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
-            assert.include(statut, 'Vous avez reçu votre dernière dose le 17 mai 2021.')
+            assert.include(
+                statut,
+                'Votre dernière injection (ou votre dernière infection à la Covid) date du 17 mai 2021.'
+            )
             assert.include(
                 statut,
                 'Vous pourrez recevoir votre dose de rappel à partir du 17 octobre 2021.'
@@ -408,7 +417,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
                 statut,
-                'Vous avez reçu votre dernière dose le 17 juin 2021.'
+                'Votre dernière injection (ou votre dernière infection à la Covid) date du 17 juin 2021.'
             )
             assert.include(
                 statut,
@@ -436,7 +445,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
                 statut,
-                'Vous avez reçu votre dernière dose le 17 juin 2021.'
+                'Votre dernière injection (ou votre dernière infection à la Covid) date du 17 juin 2021.'
             )
             assert.include(
                 statut,
