@@ -7,14 +7,14 @@ import {
 import { Formulaire } from './formulaire'
 import { differenceEnJours } from '../../utils'
 
-export function dynamiseLeChoixDuPass() {
-    const formulaire = new FormulairePassSanitaire()
+export function dynamiseLeChoixDuPass(prefixe) {
+    const formulaire = new FormulairePassSanitaire(prefixe)
     formulaire.demarre()
 }
 
 class FormulairePassSanitaire extends Formulaire {
-    constructor() {
-        super('pass-sanitaire', 'vaccination')
+    constructor(prefixe) {
+        super(prefixe, 'vaccination')
     }
 
     GESTIONNAIRES = {

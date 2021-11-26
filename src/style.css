@@ -1708,6 +1708,7 @@ a.no-type::after {
 .thematique #conseils-block form:not(.question-feedback):not(.feedback-form) {
     background-color: #f8f8f8;
     padding: 1rem 2rem 0.1rem 2rem;
+    margin-bottom: 1.5rem;
 }
 .thematique #conseils-block form .back-button {
     display: inline-block;

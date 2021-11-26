@@ -17,7 +17,7 @@ class Questionnaire {
         const formulaire = await this.page.waitForSelector(
             `#${this.slugQuestion} .formulaire`
         )
-        this.prefixe = await formulaire.getAttribute('data-nom')
+        this.prefixe = await formulaire.getAttribute('data-prefixe')
 
         // On clique sur le bouton pour démarrer
         const bouton = await this.page.waitForSelector(
