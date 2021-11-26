@@ -254,7 +254,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-06-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez entre 18 et 65 ans')
+            assert.include(statut, 'Vous avez entre 18 et 64 ans')
             assert.include(statut, 'avez été vacciné(e) avec le vaccin Janssen')
             assert.include(
                 statut,
@@ -288,7 +288,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-05-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez entre 18 et 65 ans')
+            assert.include(statut, 'Vous avez entre 18 et 64 ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
                 statut,
@@ -319,7 +319,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-06-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez entre 18 et 65 ans')
+            assert.include(statut, 'Vous avez entre 18 et 64 ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
                 statut,
@@ -350,7 +350,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-07-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez entre 18 et 65 ans')
+            assert.include(statut, 'Vous avez entre 18 et 64 ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
                 statut,
