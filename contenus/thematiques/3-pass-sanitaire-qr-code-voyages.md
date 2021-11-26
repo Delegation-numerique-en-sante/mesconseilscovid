@@ -49,8 +49,9 @@
 
 .. question:: Quel justificatif utiliser comme pass sanitaire en France ?
     :level: 3
-    :formulaire: pass-sanitaire
     :open: true
+
+    {{ formulaire('pass-sanitaire') }}
 
     <div class="voir-aussi">
 
@@ -77,8 +78,9 @@
 
 .. question:: Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon pass sanitaire ?
     :level: 3
-    :formulaire: rappel
     :open: true
+
+    {{ formulaire('rappel') }}
 
     - À partir du **15 décembre 2021** :
         * si vous avez **65 ans ou plus** et que votre dernière dose date de plus de **7 mois**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal (dit 3<sup>e</sup> dose).

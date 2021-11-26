@@ -29,6 +29,7 @@ NB_OF_DISPLAYED_THEMATIQUES = 9
 
 locale.setlocale(locale.LC_ALL, "fr_FR.UTF-8")
 
+
 @cli
 def all():
     index()
@@ -50,7 +51,9 @@ def index():
         if thematique.name != "j-ai-des-symptomes-covid"
     ]
 
-    content = render_template("index.html", actualites=extrait_actualites(), **responses)
+    content = render_template(
+        "index.html", actualites=extrait_actualites(), **responses
+    )
     content = cache_external_pdfs(content)
     (SRC_DIR / "index.html").write_text(content)
 
@@ -58,6 +61,7 @@ def index():
 def extrait_actualites():
     actualites = [toml.load(f) for f in each_file_from(CONTENUS_DIR / "actualites")]
     return sorted(actualites, key=itemgetter("date"), reverse=True)
+
 
 @cli
 def thematiques():

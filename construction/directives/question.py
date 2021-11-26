@@ -26,19 +26,14 @@ class QuestionDirective(Directive):
         if options:
             level = int(dict(options).get("level", 2))
             feedback = dict(options).get("feedback", "keep")
-            nom_formulaire = dict(options).get("formulaire")
             open_ = dict(options).get("open", "").lower() == "true"
         else:
             level = 2
             feedback = "keep"
-            nom_formulaire = None
             open_ = False
 
         text = self.parse_text(m)
         children = block.parse(text, state, block.rules)
-
-        if nom_formulaire:
-            children = self._render_formulaire(nom_formulaire, block) + children
 
         if not children:
             raise ValueError(
@@ -50,17 +45,6 @@ class QuestionDirective(Directive):
             "children": children,
             "params": (question, level, feedback, open_),
         }
-
-    def _render_formulaire(self, nom_formulaire, block):
-        path = THEMATIQUES_DIR / "formulaires" / f"{nom_formulaire}.md"
-        with path.open() as f:
-            template = Template(f.read())
-            content = (
-                f'<div class="formulaire" data-nom="{nom_formulaire}">\n\n'
-                + template.render(prefixe=nom_formulaire)
-                + "\n\n</div>"
-            )
-        return block.parse(*preprocess(content, {"__file__": str(path)}))
 
     def __call__(self, md):
         self.register_directive(md, "question")

@@ -1,6 +1,8 @@
 import re
+from textwrap import indent
 
 import mistune
+from jinja2 import Template
 
 from .directives.injection import InjectionDirective
 from .directives.renvoi import RenvoiDirective
@@ -112,4 +114,20 @@ class MarkdownInlineContent(MarkdownContent):
 
 
 def render_markdown_file(file_path, markdown_parser):
-    return MarkdownContent(file_path.read_text(), markdown_parser)
+    source = file_path.read_text()
+    templated_source = Template(source).render(formulaire=render_formulaire)
+    return MarkdownContent(templated_source, markdown_parser)
+
+
+def render_formulaire(nom_formulaire):
+    from .thematiques import THEMATIQUES_DIR
+
+    path = THEMATIQUES_DIR / "formulaires" / f"{nom_formulaire}.md"
+    with path.open() as f:
+        template = Template(f.read())
+    markdown = (
+        f'<div class="formulaire" data-nom="{nom_formulaire}">\n\n'
+        + template.render(prefixe=nom_formulaire)
+        + "\n\n</div>"
+    )
+    return indent(markdown, "    ").lstrip()

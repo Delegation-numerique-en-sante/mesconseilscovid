@@ -2,7 +2,7 @@ import mistune
 from selectolax.parser import HTMLParser as SelectolaxHTMLParser
 
 from .directives.question import QuestionDirective
-from .markdown import create_markdown_parser
+from .markdown import create_markdown_parser, render_markdown_file
 from .slugs import slugify_title
 from .thematiques import get_thematiques
 
@@ -22,7 +22,7 @@ def extract_questions(page):
     ast_tree = ast_parser.read(page.path)
 
     html_parser = create_markdown_parser()
-    html = html_parser.read(page.path)
+    html = str(render_markdown_file(page.path, html_parser))
     html_tree = SelectolaxHTMLParser(html)
 
     def _extract_questions(tree):
