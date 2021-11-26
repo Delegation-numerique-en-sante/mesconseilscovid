@@ -15,8 +15,9 @@
 
 .. question:: Quel est le test adapté à ma situation ?
     :level: 3
-    :formulaire: tests-de-depistage
     :open: true
+
+    {{ formulaire('tests-de-depistage') }}
 
 
 .. question:: Où puis-je faire un test de dépistage Covid-19 ?

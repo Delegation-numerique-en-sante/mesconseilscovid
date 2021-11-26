@@ -1,8 +1,8 @@
+from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
 import pytz
-from dataclasses import dataclass
 
 from .markdown import render_markdown_file
 from .strip import strip_tags
