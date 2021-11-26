@@ -22,7 +22,6 @@ export function bindFeedback(component, app) {
             hideElement(component.querySelector('.feedback-question'))
             showElement(component.querySelector('.feedback-form'))
             component.querySelector('.feedback-form textarea').focus()
-            component.parentElement.classList.add('js-feedback-submitted')
             const form = component.querySelector('.feedback-form form')
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
