@@ -98,12 +98,12 @@
     </div>
 
 
-.. question:: J’ai eu la Covid après ma vaccination complète, comment prolonger mon pass sanitaire après le 15 décembre ?
+.. question:: J’ai eu la Covid après ma vaccination complète, comment prolonger mon pass sanitaire ?
     :level: 3
 
-    Si vous êtes âgé de 18 ans ou plus, alors vous serez éligible à une dose de rappel dès **5 mois** après votre infection.
+    Si vous êtes âgé de 18 ans ou plus, alors vous serez éligible à une dose de rappel dès **5 mois** après votre **infection**.
 
-    En attendant de recevoir cette dose de rappel, vous pouvez utiliser le QR code de votre résultat de **test PCR ou antigénique positif** d’au moins 11 jours (aussi appelé *certificat de rétablissement*) comme pass sanitaire pendant **6 mois**.
+    En attendant de recevoir cette dose de rappel, vous pouvez utiliser le QR code de votre résultat de **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*) comme pass sanitaire, valable pendant **6 mois**.
 
     <div class="conseil conseil-jaune">
 
