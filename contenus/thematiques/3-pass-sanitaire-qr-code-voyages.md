@@ -98,12 +98,12 @@
     </div>
 
 
-.. question:: J’ai eu la Covid après ma vaccination complète, comment prolonger mon pass sanitaire après le 15 décembre ?
+.. question:: J’ai eu la Covid après ma vaccination complète, comment prolonger mon pass sanitaire?
     :level: 3
 
-    Dans votre cas, la Haute autorité de santé (HAS) ne recommande pas pour l’instant l’injection d’une dose de rappel.
+    Dans votre cas, la Haute autorité de santé (HAS) recommande une dose de rappel **dès 5 mois** après votre **infection.**
 
-    Pour **prolonger votre pass sanitaire** au delà de sa durée de validité, il vous suffira de présenter votre résultat de **test positif** à un centre de vaccination ou à un professionnel de santé, pour qu’il génère un **nouveau QR code** valable comme « pass sanitaire », comme si une dose de rappel avait été administrée.
+    En attendant de recevoir ce rappel, votre **test de dépistage positif** muni d'un **QR code** et datant de plus de 11 jours sera votre pass sanitaire.
 
    <div class="conseil conseil-jaune">
 
