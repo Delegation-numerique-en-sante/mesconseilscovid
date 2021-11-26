@@ -175,7 +175,7 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                             this.age === 'plus65'
                                 ? '65 ans ou plus'
                                 : this.age === 'moins65'
-                                ? 'entre 18 et 65 ans'
+                                ? 'entre 18 et 64 ans'
                                 : 'moins de 18 ans',
                         'vaccin': this.janssen
                             ? 'Janssen'

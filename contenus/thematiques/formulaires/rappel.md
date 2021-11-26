@@ -19,7 +19,7 @@
             <input id="{{prefixe}}_age_radio_plus65" type="radio" required name="{{prefixe}}_age_radio" value="plus65">
             <label for="{{prefixe}}_age_radio_plus65">J’ai 65 ans ou plus</label>
             <input id="{{prefixe}}_age_radio_moins65" type="radio" required name="{{prefixe}}_age_radio" value="moins65">
-            <label for="{{prefixe}}_age_radio_moins65">J’ai entre 18 et 65 ans</label>
+            <label for="{{prefixe}}_age_radio_moins65">J’ai entre 18 et 64 ans</label>
             <input id="{{prefixe}}_age_radio_moins18" type="radio" required name="{{prefixe}}_age_radio" value="moins18">
             <label for="{{prefixe}}_age_radio_moins18">J’ai moins de 18 ans</label>
         </div>
