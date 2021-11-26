@@ -45,7 +45,6 @@ const CACHE_FILES = [
     'feedback-contact.svg',
     'feedback-partager.svg',
     'feedback-flag.svg',
-    'feedback-social-facebook.svg',
     'feedback-social-messenger.svg',
     'feedback-social-whatsapp.svg',
     'information.svg',

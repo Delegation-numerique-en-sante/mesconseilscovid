@@ -71,9 +71,18 @@ export function bindFeedback(component, app) {
                 const partagerLinks = component.querySelectorAll('.feedback-partager a')
                 Array.from(partagerLinks).forEach((partagerLink) => {
                     partagerLink.addEventListener('click', () => {
+                        const service = partagerLink.dataset.service
                         app.plausible('Partage avec…', {
-                            service: partagerLink.dataset.service,
+                            service: service,
                         })
+                        if (service === 'autres' && navigator.share) {
+                            event.preventDefault()
+                            navigator.share({
+                                title: document.title,
+                                text: 'Retrouvez cette information sur MesConseilsCovid',
+                                url: window.location,
+                            })
+                        }
                     })
                 })
             })
