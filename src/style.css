@@ -1612,15 +1612,6 @@ a.no-type::after {
     background-image: url('trash.svg');
 }
 
-#pour-finir .icon-information {
-    background-image: url('information.svg');
-    background-position: left 1.8rem;
-}
-#pour-finir .icon-information.js-feedback-submitted {
-    background-image: url('information-soumission.svg');
-    background-position: left center;
-}
-
 #pour-finir .ios-share-button {
     height: 1.5rem;
     margin-bottom: -0.4rem;
