@@ -1,3 +1,8 @@
+import { Application } from '@hotwired/stimulus'
+
+import FeedbackController from './controllers/feedback_controller'
+import SwitchController from './controllers/switch_controller'
+
 import applyDetailsSummaryPolyfill from '../../polyfills/details_polyfill'
 
 import { bindImpression } from '../../actions'
@@ -6,6 +11,11 @@ import { navigueVersUneThematique } from './navigation'
 import { dynamiseLeChoixDuTest } from './choixTestDepistage'
 import { dynamiseLeChoixDuPass } from './choixPassSanitaire'
 import { dynamiseLaProlongationDuPass } from './prolongationPassSanitaire'
+
+window.Stimulus = Application.start()
+window.Stimulus.register('feedback', FeedbackController)
+window.Stimulus.register('switch', SwitchController)
+window.Stimulus.debug = true
 
 export function pageThematique(app) {
     app.trackPageView(document.location.pathname)
