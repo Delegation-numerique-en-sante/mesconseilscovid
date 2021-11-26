@@ -42,11 +42,13 @@ function ouvreDetailsSiFragment() {
             }
             elem = elem.parentElement
         }
-        // Even with an event, we need to wait for the next few
-        // ticks to be able to scroll to the collapsed element.
-        setTimeout(() => {
-            elem.scrollIntoView({ behavior: getAnimationBehavior() })
-        }, 100)
+        if (elem) {
+            // Even with an event, we need to wait for the next few
+            // ticks to be able to scroll to the collapsed element.
+            setTimeout(() => {
+                elem.scrollIntoView({ behavior: getAnimationBehavior() })
+            }, 100)
+        }
     }
 }
 
