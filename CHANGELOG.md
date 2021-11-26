@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-11-26
+
+* précisions sur le rappel en cas d’infection post-vaccination
+
 ## 2021-11-25
 
 * dose de rappel pour les 18-65 ans au 15 janvier
