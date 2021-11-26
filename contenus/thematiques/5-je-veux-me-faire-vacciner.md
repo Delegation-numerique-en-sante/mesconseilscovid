@@ -23,6 +23,7 @@
     * vous êtes **sévèrement immunodéprimé(e)** ;
     * vous avez une **comorbidité** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de forme grave de Covid.
 
+    {{ formulaire('rappel', prefixe='suis-je-concerne') }}
 
     <div class="conseil conseil-jaune">
 
@@ -65,6 +66,8 @@
     * dès **3 mois** après votre dernière injection de vaccin si vous êtes sévèrement **immunodéprimé(e)** (*4<sup>e</sup> dose*).
 
     Si ce délai est respecté, vous pouvez prendre rendez-vous **dès maintenant** chez un **professionnel de santé** (médecin, pharmacien, infirmier…) ou dans un **centre de vaccination**.
+
+    {{ formulaire('rappel', prefixe='a-partir-de-quand') }}
 
     <div class="voir-aussi">
 

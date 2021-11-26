@@ -2,14 +2,14 @@ import { hideElement } from '../../affichage'
 import { getRadioValue, toggleFormButtonOnRadioRequired } from '../../formutils'
 import { Formulaire } from './formulaire'
 
-export function dynamiseLeChoixDuTest() {
-    const formulaire = new FormulaireTestDepistage()
+export function dynamiseLeChoixDuTest(prefixe) {
+    const formulaire = new FormulaireTestDepistage(prefixe)
     formulaire.demarre()
 }
 
 class FormulaireTestDepistage extends Formulaire {
-    constructor() {
-        super('tests-de-depistage', 'symptomes')
+    constructor(prefixe) {
+        super(prefixe, 'symptomes')
     }
 
     GESTIONNAIRES = {

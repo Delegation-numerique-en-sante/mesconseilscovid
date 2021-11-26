@@ -74,15 +74,19 @@ function scrolleAuSummary() {
 
 function initialiseLesFormulaires() {
     Array.from(document.querySelectorAll('.formulaire')).forEach((form) => {
-        const nom = form.dataset.nom
-        if (nom == 'pass-sanitaire') {
-            dynamiseLeChoixDuPass()
-        } else if (nom == 'tests-de-depistage') {
-            dynamiseLeChoixDuTest()
-        } else if (nom == 'rappel') {
-            dynamiseLaProlongationDuPass()
-        }
+        const init = initFunc(form.dataset.nom)
+        init(form.dataset.prefixe)
     })
+}
+
+function initFunc(nom) {
+    if (nom == 'pass-sanitaire') {
+        return dynamiseLeChoixDuPass
+    } else if (nom == 'tests-de-depistage') {
+        return dynamiseLeChoixDuTest
+    } else if (nom == 'rappel') {
+        return dynamiseLaProlongationDuPass
+    }
 }
 
 function creeUnLienPermanentDansLHistorique(detailsElement) {

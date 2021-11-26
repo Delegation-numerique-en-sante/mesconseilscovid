@@ -17,14 +17,14 @@ import {
 } from '../../formutils'
 import { Formulaire } from './formulaire'
 
-export function dynamiseLaProlongationDuPass() {
-    const formulaire = new FormulaireProlongationPassSanitaire()
+export function dynamiseLaProlongationDuPass(prefixe) {
+    const formulaire = new FormulaireProlongationPassSanitaire(prefixe)
     formulaire.demarre()
 }
 
 class FormulaireProlongationPassSanitaire extends Formulaire {
-    constructor() {
-        super('rappel', 'age')
+    constructor(prefixe) {
+        super(prefixe, 'age')
         this.age = undefined
         this.janssen = false
         this.prolongationPass = undefined
