@@ -16,6 +16,7 @@
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
+
 ## Qui est éligible au rappel vaccinal ?
 
 .. injection:: /je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
@@ -24,10 +25,6 @@
 
 .. injection:: /je-veux-me-faire-vacciner.html#mon-schema-vaccinal-est-complet-avec-une-seule-dose-de-vaccin-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
 
-.. question:: J’ai eu la Covid après mes 2 doses. Suis-je concerné(e) par le rappel vaccinal (3<sup>e</sup> dose) ?
-    :level: 3
-
-    Dans votre cas, la Haute Autorité de Santé (HAS) ne recommande pas, pour l’instant, l’injection d’une dose supplémentaire.
 
 ## Organiser mon rendez-vous de vaccination
 
@@ -38,6 +35,7 @@
 .. injection:: /je-veux-me-faire-vacciner.html#j-ai-des-difficultes-a-me-deplacer-puis-je-me-faire-vacciner-a-domicile
 
 .. injection:: /je-veux-me-faire-vacciner.html#puis-je-me-faire-vacciner-contre-la-grippe-saisonniere-et-la-covid-en-meme-temps
+
 
 ## Prolonger mon pass sanitaire
 
