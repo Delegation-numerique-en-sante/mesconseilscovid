@@ -83,7 +83,7 @@ export function bindFeedback(component, app) {
                         app.plausible('Partage avec…', {
                             service: service,
                         })
-                        if (service === 'autres' && navigator.share) {
+                        if (service === 'autres') {
                             event.preventDefault()
                             navigator.share({
                                 title: document.title,
