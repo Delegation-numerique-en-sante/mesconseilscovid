@@ -42,7 +42,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Que se passe-t-il si un élève est testé positif dans la classe de mon enfant ?
     :level: 3
 
-    Dans **les écoles**, la règle qui s’applique est la **fermeture de la classe** pour une durée de **7 jours** dès le premier cas positif confirmé.
+    Dans **les écoles maternelles**, la règle qui s’applique est la **fermeture de la classe** pour une durée de **7 jours** dès le premier cas positif confirmé.
+
+    Dans **les écoles primaires**, la règle de la fermeture de classe ne s’applique plus depuis le 29 novembre : les élèves présentant un **test négatif** dans les 24 h peuvent continuer à aller en classe.
 
     Dans **les collèges et les lycées**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves **« cas contact »** devront s’isoler, et donc poursuivre leurs apprentissages **à distance**, pendant une durée de **7 jours**, sauf s’ils sont **vaccinés** ou s’ils ont **déjà eu la Covid** il y a moins de 2 mois (*voir ci-dessous*).
 
