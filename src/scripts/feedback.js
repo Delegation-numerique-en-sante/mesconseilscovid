@@ -69,6 +69,13 @@ export function bindFeedback(component, app) {
             opacityTransition(component, transitionDelay, (component) => {
                 hideElement(component.querySelector('.feedback-question'))
                 showElement(component.querySelector('.feedback-partager'))
+                if (typeof navigator.share === 'undefined') {
+                    hideElement(
+                        component.querySelector(
+                            '.feedback-partager .button-feedback-partager'
+                        ).parentElement
+                    )
+                }
                 const partagerLinks = component.querySelectorAll('.feedback-partager a')
                 Array.from(partagerLinks).forEach((partagerLink) => {
                     partagerLink.addEventListener('click', () => {
