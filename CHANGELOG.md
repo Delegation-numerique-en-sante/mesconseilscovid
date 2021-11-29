@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-11-29
+
+* passage de la durée de validité d’un test négatif à 24 h pour le pass sanitaire
+* réplique le mini-questionnaire pour le rappel vaccinal dans plusieurs questions liées
+* améliorations mineures des contenus
+
 ## 2021-11-26
 
 * précisions sur le rappel en cas d’infection post-vaccination
