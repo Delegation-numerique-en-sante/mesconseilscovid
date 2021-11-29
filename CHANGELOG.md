@@ -4,6 +4,7 @@
 
 * passage de la durée de validité d’un test négatif à 24 h pour le pass sanitaire
 * réplique le mini-questionnaire pour le rappel vaccinal dans plusieurs questions liées
+* mise à jour de la règle de fermeture des classes en école primaire
 * améliorations mineures des contenus
 
 ## 2021-11-26
