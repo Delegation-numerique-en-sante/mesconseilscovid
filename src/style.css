@@ -365,11 +365,20 @@ legend h1 {
 }
 .page-thematique .conseils details .explications {
     margin: 0.75rem;
-    background: #eff3ff;
     padding: 0.5rem 1rem;
+    background: #eff3ff;
     border-left: 4px solid #a5baff;
 }
-.page-thematique .conseils details[open] .explications {
+.page-thematique .conseils details .lire-la-suite {
+    margin: 0 0.75rem 0.75rem 0.75rem;
+    text-align: right;
+}
+.page-thematique .conseils details .lire-la-suite .button {
+    display: inline-block;
+    margin: 0;
+}
+.page-thematique .conseils details[open] .explications,
+.page-thematique .conseils details[open] .lire-la-suite {
     display: none;
 }
 .page-thematique [itemprop='url'] {

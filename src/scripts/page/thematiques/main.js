@@ -30,9 +30,23 @@ export function pageThematique(app) {
 
 function initDetailsSummary() {
     applyDetailsSummaryPolyfill(document)
+    ouvreDetailsSiBouton()
     ouvreDetailsSiFragment()
     window.addEventListener('hashchange', ouvreDetailsSiFragment)
     scrolleAuSummary()
+}
+
+function ouvreDetailsSiBouton() {
+    const boutons = document.querySelectorAll('summary .lire-la-suite .button')
+    Array.from(boutons).forEach((bouton) => {
+        bouton.addEventListener('click', (event) => {
+            event.preventDefault()
+            const details = trouveDetailsParent(event.target)
+            if (details) {
+                details.setAttribute('open', '')
+            }
+        })
+    })
 }
 
 function ouvreDetailsSiFragment() {

@@ -42,6 +42,8 @@ Si vous avez **déjà eu la Covid** il y a **moins de 2 mois**, alors vous n’�
 
 </div>
 
+<div class="lire-la-suite"><button class="button">Lire la suite</button></div>
+
 </summary>
 
 #### 1. Faites un test
@@ -119,6 +121,8 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 * **ou** vous souffrez d’une **forte immunodépression** qui réduit l’efficacité du vaccin.
 
 </div>
+
+<div class="lire-la-suite"><button class="button">Lire la suite</button></div>
 
 </summary>
 
