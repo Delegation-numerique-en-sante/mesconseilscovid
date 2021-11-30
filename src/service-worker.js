@@ -5,7 +5,7 @@ https://serviceworke.rs/strategy-network-or-cache.html */
 const CACHE_NAME = 'network-or-cache-2021-11-29@16h'
 const CACHE_FILES = self.__precacheManifest
     .map((e) => e.url)
-    .filter((url) => url.slice(-4) !== '.pdf')
+    .filter((url) => !url.endsWith('.pdf'))
 const TIMEOUT = 2000 // ms.
 
 self.addEventListener('install', function (evt) {
