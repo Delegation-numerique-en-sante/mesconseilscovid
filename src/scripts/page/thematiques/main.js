@@ -38,21 +38,26 @@ function initDetailsSummary() {
 function ouvreDetailsSiFragment() {
     const currentAnchor = document.location.hash ? document.location.hash.slice(1) : ''
     if (currentAnchor) {
-        let elem = document.querySelector(`#${currentAnchor}`)
-        while (elem) {
-            if (elem.tagName.toLowerCase() === 'details') {
-                elem.setAttribute('open', '')
-                break
-            }
-            elem = elem.parentElement
-        }
-        if (elem) {
+        const elem = document.querySelector(`#${currentAnchor}`)
+        const details = trouveDetailsParent(elem)
+        if (details) {
+            details.setAttribute('open', '')
+
             // Even with an event, we need to wait for the next few
             // ticks to be able to scroll to the collapsed element.
             setTimeout(() => {
                 elem.scrollIntoView({ behavior: getAnimationBehavior() })
             }, 100)
         }
+    }
+}
+
+function trouveDetailsParent(elem) {
+    while (elem) {
+        if (elem.tagName.toLowerCase() === 'details') {
+            return elem
+        }
+        elem = elem.parentElement
     }
 }
 
