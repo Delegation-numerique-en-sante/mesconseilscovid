@@ -120,7 +120,7 @@ class FeedbackView:
 
 
 def clean_message(text):
-    return text.strip()
+    return text.strip().replace("*", r"\*").replace("_", r"\_")
 
 
 @app.listen("error")

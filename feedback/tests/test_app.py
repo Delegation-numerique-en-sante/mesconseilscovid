@@ -24,17 +24,17 @@ async def test_post_feedback_without_user_agent(client, app):
         "/feedback",
         {
             "kind": "flag",
-            "message": "J’ai rien compris",
+            "message": "J’ai *rien* compris",
             "page": "introduction",
         },
     )
     assert resp.status == HTTPStatus.ACCEPTED
     assert json.loads(resp.body) == {
-        "message": ":golf: *introduction*\nJ’ai rien compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction"
+        "message": ":golf: *introduction*\nJ’ai \\*rien\\* compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction"
     }
     app.bot.chat.send.assert_called_once_with(
         "abcd1234",
-        ":golf: *introduction*\nJ’ai rien compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction",
+        ":golf: *introduction*\nJ’ai \\*rien\\* compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction",
     )
 
 
@@ -43,7 +43,7 @@ async def test_post_feedback_with_user_agent(client, app):
         "/feedback",
         {
             "kind": "flag",
-            "message": "J’ai rien compris",
+            "message": "J’ai *rien* compris",
             "page": "introduction",
         },
         headers={
@@ -52,11 +52,11 @@ async def test_post_feedback_with_user_agent(client, app):
     )
     assert resp.status == HTTPStatus.ACCEPTED
     assert json.loads(resp.body) == {
-        "message": ":golf: *introduction*\nJ’ai rien compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction\n_Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1_"
+        "message": ":golf: *introduction*\nJ’ai \\*rien\\* compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction\n_Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1_"
     }
     app.bot.chat.send.assert_called_once_with(
         "abcd1234",
-        ":golf: *introduction*\nJ’ai rien compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction\n_Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1_",
+        ":golf: *introduction*\nJ’ai \\*rien\\* compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction\n_Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1_",
     )
 
 
@@ -65,7 +65,7 @@ async def test_post_question_feedback(client, app):
         "/feedback",
         {
             "kind": "bof",
-            "message": "Bla bla",
+            "message": "Bla _bla_ bla",
             "page": "cas-contact-a-risque.html",
             "question": "Dois-je m’isoler",
         },
@@ -75,11 +75,11 @@ async def test_post_question_feedback(client, app):
     )
     assert resp.status == HTTPStatus.ACCEPTED
     assert json.loads(resp.body) == {
-        "message": ":neutral_face: *Dois-je m’isoler\xa0?*\nBla bla\nhttps://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#dois-je-m-isoler\n_Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1_"
+        "message": ":neutral_face: *Dois-je m’isoler\xa0?*\nBla \\_bla\\_ bla\nhttps://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#dois-je-m-isoler\n_Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1_"
     }
     app.bot.chat.send.assert_called_once_with(
         "abcd1234",
-        ":neutral_face: *Dois-je m’isoler\xa0?*\nBla bla\nhttps://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#dois-je-m-isoler\n_Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1_",
+        ":neutral_face: *Dois-je m’isoler\xa0?*\nBla \\_bla\\_ bla\nhttps://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#dois-je-m-isoler\n_Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1_",
     )
 
 
