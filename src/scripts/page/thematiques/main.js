@@ -16,10 +16,7 @@ export function pageThematique(app) {
             boutonBasculeVersMonProfil(lienVersProfil, app)
         }
     )
-    applyDetailsSummaryPolyfill(document)
-    ouvreDetailsSiFragment()
-    window.addEventListener('hashchange', ouvreDetailsSiFragment)
-    scrolleAuSummary()
+    initDetailsSummary()
     partagePageEnCours()
     feedbackPageEnCours(app)
 
@@ -29,6 +26,13 @@ export function pageThematique(app) {
         app,
         'Navigue vers une thématique depuis une autre thématique'
     )
+}
+
+function initDetailsSummary() {
+    applyDetailsSummaryPolyfill(document)
+    ouvreDetailsSiFragment()
+    window.addEventListener('hashchange', ouvreDetailsSiFragment)
+    scrolleAuSummary()
 }
 
 function ouvreDetailsSiFragment() {
