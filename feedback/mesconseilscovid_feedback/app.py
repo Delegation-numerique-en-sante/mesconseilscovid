@@ -109,7 +109,7 @@ class FeedbackView:
         # Facultatif: navigateur
         user_agent = request.headers.get("USER-AGENT")
         if user_agent:
-            message += f">_(Envoyé depuis {parse(user_agent)})_\n"
+            message += f"> _(Envoyé depuis {parse(user_agent)})_\n"
 
         message += url
 
@@ -127,7 +127,7 @@ def clean_message(text):
 
 
 def quote_message(text):
-    return "\n".join(">" + line for line in text.splitlines())
+    return "\n".join("> " + line for line in text.splitlines())
 
 
 @app.listen("error")
