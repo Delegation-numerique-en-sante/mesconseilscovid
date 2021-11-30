@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import logging
 import os
+import re
 from http import HTTPStatus
 
 from pykeybasebot import Bot
@@ -98,9 +99,9 @@ class FeedbackView:
         question = payload.get("question")
         if question:
             url = f"{url}#{slugify_title(question)}"
-            message = f"*{question} ?*\n{message}"
+            message = f"*{question} ?*\n{quote_message(message)}"
         else:
-            message = f"*{page}*\n{message}"
+            message = f"*{page}*\n{quote_message(message)}"
 
         emoji = self.KIND_EMOJI.get(kind, ":question:")
         message = f"{emoji} {message}\n{url}"
@@ -120,7 +121,11 @@ class FeedbackView:
 
 
 def clean_message(text):
-    return text.strip().replace("*", r"\*").replace("_", r"\_")
+    return re.sub(r"^>", r"\>", text.strip().replace("*", r"\*").replace("_", r"\_"))
+
+
+def quote_message(text):
+    return "\n".join(">" + line for line in text.splitlines())
 
 
 @app.listen("error")
