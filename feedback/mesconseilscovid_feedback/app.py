@@ -85,7 +85,7 @@ class FeedbackView:
         try:
             kind = payload["kind"]
             page = payload["page"]
-            message = payload["message"].strip()
+            message = clean_message(payload["message"])
         except KeyError:
             raise HttpError(HTTPStatus.BAD_REQUEST)
 
@@ -117,6 +117,10 @@ class FeedbackView:
 
         response.status = HTTPStatus.ACCEPTED
         response.json = {"message": message}
+
+
+def clean_message(text):
+    return text.strip()
 
 
 @app.listen("error")
