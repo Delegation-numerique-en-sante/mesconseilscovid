@@ -30,11 +30,11 @@ async def test_post_feedback_without_user_agent(client, app):
     )
     assert resp.status == HTTPStatus.ACCEPTED
     assert json.loads(resp.body) == {
-        "message": ":golf: [introduction]\nJ’ai rien compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction"
+        "message": ":golf: *introduction*\nJ’ai rien compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction"
     }
     app.bot.chat.send.assert_called_once_with(
         "abcd1234",
-        ":golf: [introduction]\nJ’ai rien compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction",
+        ":golf: *introduction*\nJ’ai rien compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction",
     )
 
 
@@ -52,11 +52,11 @@ async def test_post_feedback_with_user_agent(client, app):
     )
     assert resp.status == HTTPStatus.ACCEPTED
     assert json.loads(resp.body) == {
-        "message": ":golf: [introduction]\nJ’ai rien compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction\n[envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1]"
+        "message": ":golf: *introduction*\nJ’ai rien compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction\n_Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1_"
     }
     app.bot.chat.send.assert_called_once_with(
         "abcd1234",
-        ":golf: [introduction]\nJ’ai rien compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction\n[envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1]",
+        ":golf: *introduction*\nJ’ai rien compris\nhttps://mesconseilscovid.sante.gouv.fr/#introduction\n_Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1_",
     )
 
 
@@ -67,7 +67,7 @@ async def test_post_question_feedback(client, app):
             "kind": "bof",
             "message": "Bla bla",
             "page": "cas-contact-a-risque.html",
-            "question": "Dois-je m’isoler ?",
+            "question": "Dois-je m’isoler",
         },
         headers={
             "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B179 Safari/7534.48.3",
@@ -75,11 +75,11 @@ async def test_post_question_feedback(client, app):
     )
     assert resp.status == HTTPStatus.ACCEPTED
     assert json.loads(resp.body) == {
-        "message": ":neutral_face: [Dois-je m’isoler ?\xa0?]\nBla bla\nhttps://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#dois-je-m-isoler\n[envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1]"
+        "message": ":neutral_face: *Dois-je m’isoler\xa0?*\nBla bla\nhttps://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#dois-je-m-isoler\n_Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1_"
     }
     app.bot.chat.send.assert_called_once_with(
         "abcd1234",
-        ":neutral_face: [Dois-je m’isoler ?\xa0?]\nBla bla\nhttps://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#dois-je-m-isoler\n[envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1]",
+        ":neutral_face: *Dois-je m’isoler\xa0?*\nBla bla\nhttps://mesconseilscovid.sante.gouv.fr/cas-contact-a-risque.html#dois-je-m-isoler\n_Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1_",
     )
 
 

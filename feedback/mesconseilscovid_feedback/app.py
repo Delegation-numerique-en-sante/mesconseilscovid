@@ -98,9 +98,9 @@ class FeedbackView:
         question = payload.get("question")
         if question:
             url = f"{url}#{slugify_title(question)}"
-            message = f"[{question} ?]\n{message}"
+            message = f"*{question} ?*\n{message}"
         else:
-            message = f"[{page}]\n{message}"
+            message = f"*{page}*\n{message}"
 
         emoji = self.KIND_EMOJI.get(kind, ":question:")
         message = f"{emoji} {message}\n{url}"
@@ -108,7 +108,7 @@ class FeedbackView:
         # Facultatif: navigateur
         user_agent = request.headers.get("USER-AGENT")
         if user_agent:
-            message += f"\n[envoyé depuis {parse(user_agent)}]"
+            message += f"\n_Envoyé depuis {parse(user_agent)}_"
 
         if request.host.startswith("127.0.0.1"):
             print(message)
