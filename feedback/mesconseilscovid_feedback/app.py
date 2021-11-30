@@ -104,12 +104,14 @@ class FeedbackView:
             message = f"*{page}*\n{quote_message(message)}"
 
         emoji = self.KIND_EMOJI.get(kind, ":question:")
-        message = f"{emoji} {message}\n{url}"
+        message = f"{emoji} {message}\n"
 
         # Facultatif: navigateur
         user_agent = request.headers.get("USER-AGENT")
         if user_agent:
-            message += f"\n_Envoyé depuis {parse(user_agent)}_"
+            message += f"_Envoyé depuis {parse(user_agent)}_ "
+
+        message += url
 
         if request.host.startswith("127.0.0.1"):
             print(message)
