@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-12-01
+
+* mises à jour mineures des contenus et améliorations d’ergonomie
+
 ## 2021-11-29
 
 * passage de la durée de validité d’un test négatif à 24 h pour le pass sanitaire
