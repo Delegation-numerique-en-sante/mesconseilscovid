@@ -85,7 +85,7 @@ class FeedbackView:
         try:
             kind = payload["kind"]
             page = payload["page"]
-            message = payload["message"]
+            message = payload["message"].strip()
         except KeyError:
             raise HttpError(HTTPStatus.BAD_REQUEST)
 
@@ -98,6 +98,9 @@ class FeedbackView:
         question = payload.get("question")
         if question:
             url = f"{url}#{slugify_title(question)}"
+            message = f"[{question} ?]\n{message}"
+        else:
+            message = f"[{page}]\n{message}"
 
         emoji = self.KIND_EMOJI.get(kind, ":question:")
         message = f"{emoji} {message}\n{url}"
