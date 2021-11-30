@@ -27,9 +27,6 @@ export function bindFeedback(component, app) {
                 event.preventDefault()
                 const feedbackHost = document.body.dataset.statsUrl
                 let message = event.target.elements.message.value
-                if (app.source == 'TousAntiCovid') {
-                    message += ' #TAC'
-                }
                 const page = estPageThematique()
                     ? document.location.pathname.slice(1)
                     : getCurrentPageName()
@@ -37,6 +34,7 @@ export function bindFeedback(component, app) {
                     kind: feedback,
                     message: message,
                     page: page,
+                    source: app.source,
                 }
                 const request = new XMLHttpRequest()
                 request.open('POST', feedbackHost + '/feedback', true)
