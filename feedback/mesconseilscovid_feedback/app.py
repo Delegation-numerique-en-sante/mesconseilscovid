@@ -106,10 +106,20 @@ class FeedbackView:
         emoji = self.KIND_EMOJI.get(kind, ":question:")
         message = f"{emoji} {message}\n"
 
+        origine = []
+
         # Facultatif: navigateur
         user_agent = request.headers.get("USER-AGENT")
         if user_agent:
-            message += f"> _(Envoyé depuis {parse(user_agent)})_\n"
+            origine.append(str(parse(user_agent)))
+
+        # Facultatif: source
+        source = payload.get("source")
+        if source:
+            origine.append(f"Source: {source}")
+
+        if origine:
+            message += f"> _(Envoyé depuis {' / '.join(origine)})_\n"
 
         message += url
 
