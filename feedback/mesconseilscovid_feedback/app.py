@@ -109,7 +109,7 @@ class FeedbackView:
         # Facultatif: navigateur
         user_agent = request.headers.get("USER-AGENT")
         if user_agent:
-            message += f"_Envoyé depuis {parse(user_agent)}_ "
+            message += f">_(Envoyé depuis {parse(user_agent)})_\n"
 
         message += url
 
