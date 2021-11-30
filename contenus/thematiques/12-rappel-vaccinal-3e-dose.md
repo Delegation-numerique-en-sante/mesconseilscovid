@@ -23,7 +23,7 @@
 
 .. injection:: /je-veux-me-faire-vacciner.html#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose
 
-.. injection:: /je-veux-me-faire-vacciner.html#mon-schema-vaccinal-est-complet-avec-une-seule-dose-de-vaccin-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
+.. injection:: /je-veux-me-faire-vacciner.html#j-ai-eu-la-covid-avant-mon-unique-dose-de-vaccin-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
 
 
 ## Organiser mon rendez-vous de vaccination
