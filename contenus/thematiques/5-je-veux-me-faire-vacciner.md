@@ -16,7 +16,7 @@
 .. question:: Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
 
-    À partir du **samedi 27 novembre**, si vous avez **18 ans ou plus**, vous pourrez recevoir un rappel vaccinal, en respectant [un délai minimal](#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) après votre dernière injection ou infection à la Covid.
+    Si vous avez **18 ans ou plus**, vous pouvez recevoir un rappel vaccinal, en respectant [un délai minimal](#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) après votre dernière injection ou infection à la Covid.
 
     Vous êtes également éligible au rappel si vous avez entre **12 et 17 ans** et que :
 
@@ -39,13 +39,18 @@
     </div>
 
 
-.. question:: Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
+.. question:: J'ai eu la Covid avant mon unique dose de vaccin. Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
 
-    **Oui**, si vous faites partie des **publics visés** par la campagne de rappel ([voir ci-dessus](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)).
+    **Oui**, si vous avez **plus de 18 ans** vous pouvez recevoir un rappel vaccinal, en respectant [un délai minimal](#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) après votre dernière injection ou infection à la Covid.
+    
+    Vous êtes également éligible au rappel si vous avez entre **12 et 17 ans** et que :
 
-    Dans votre cas, le rappel sera votre **2<sup>e</sup> dose**.
-
+    * vous êtes **sévèrement immunodéprimé(e)** ;
+    * vous avez une **comorbidité** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de forme grave de Covid.
+   
+    Dans votre cas, le rappel sera votre **2<sup>e</sup> dose**. 
+    
     <div class="voir-aussi">
 
     - [Suis-je concerné par la dose de rappel ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
