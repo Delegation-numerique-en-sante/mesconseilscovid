@@ -148,7 +148,7 @@
 .. question:: Peut-on organiser des moments de convivialité ?
     :level: 3
 
-    Les moments de convivialité (pot de bienvenue, pot de départ…) sont déconseillés. S'ils sont néanmoins organisés, veillez à respecter les **gestes barrières**. Il est fortement conseillé de :
+    Les moments de convivialité (pot de bienvenue, pot de départ…) sont actuellement déconseillés. S’ils sont néanmoins organisés, veillez à respecter les **gestes barrières**. Il est fortement recommandé de :
 
     * se réunir **en extérieur** ou dans un lieu ventilé ou aéré ;
     * porter un **masque** et respecter la **distance physique**, même en extérieur ;
