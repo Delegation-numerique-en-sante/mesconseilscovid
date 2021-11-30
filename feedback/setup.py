@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="mesconseilscovid-feedback",
-    version="3.0.0",
+    version="3.1.0",
     url="https://github.com/Delegation-numerique-en-sante/mesconseilscovid",
     author="Délégation ministérielle du numérique en santé",
     author_email="mesconseilscovid@sante.gouv.fr",
