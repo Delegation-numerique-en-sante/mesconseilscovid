@@ -269,17 +269,22 @@ export default class App {
         return navigator.languages || [navigator.language || navigator.userLanguage]
     }
     plausible(eventName, props = {}) {
+        // Ajoute la source de la visite.
         const searchParams = new URLSearchParams(window.location.search)
-        const options = {}
-        if (typeof this.profil.nom !== 'undefined') {
-            props['profil'] = this.profil.estMonProfil() ? 'moi' : 'proche'
-        }
         if (searchParams.toString().length) {
             const source = searchParams.get('source') || searchParams.get('utm_source')
             if (source) {
                 props['source'] = source
             }
         }
+        // Ajoute l’info sur le profil (pour moi ou pour un proche).
+        if (typeof this.profil.nom !== 'undefined') {
+            props['profil'] = this.profil.estMonProfil() ? 'moi' : 'proche'
+        }
+        return this._envoieEvenementPlausible(eventName, props)
+    }
+    _envoieEvenementPlausible(eventName, props) {
+        const options = {}
         if (Object.keys(props).length > 0) {
             options['props'] = props
         }
