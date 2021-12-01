@@ -44,13 +44,16 @@ export default class App {
         this.suiviImages = suiviImages
 
         // Source de la visite.
-        const searchParams = new URLSearchParams(window.location.search)
-        this.source = searchParams.get('source') || searchParams.get('utm_source')
+        this.source = this.initSource()
 
         // Statistiques.
         this._plausibleTrackingEvents = []
         this._plausible = registerPlausible(window)
         this.atinternet = registerATInternet()
+    }
+    initSource() {
+        const searchParams = new URLSearchParams(window.location.search)
+        return searchParams.get('source') || searchParams.get('utm_source')
     }
     init() {
         this.router = new Router(this)
