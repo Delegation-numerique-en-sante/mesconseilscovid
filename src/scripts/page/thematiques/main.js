@@ -1,7 +1,7 @@
 import applyDetailsSummaryPolyfill from '../../polyfills/details_polyfill'
 
 import { bindImpression } from '../../actions'
-import { bindFeedback, opacityTransition } from '../../feedback'
+import { bindFeedback, opacityTransition, envoieLesRemarques } from '../../feedback'
 import { navigueVersUneThematique } from './navigation'
 import { dynamiseLeChoixDuTest } from './choixTestDepistage'
 import { dynamiseLeChoixDuPass } from './choixPassSanitaire'
@@ -200,21 +200,14 @@ function demandeRemarques(feedbackQuestionForm, choix, question, reponse, label)
     feedbackQuestionForm.parentNode.replaceChild(formulaire, feedbackQuestionForm)
     formulaire.addEventListener('submit', (event) => {
         event.preventDefault()
-        const feedbackHost = document.body.dataset.statsUrl
-        let message = event.target.elements.message.value
-        const page = document.location.pathname.slice(1)
-        const payload = {
+        envoieLesRemarques({
+            feedbackHost: document.body.dataset.statsUrl,
             kind: choix,
-            message: message,
-            page: page,
+            message: event.target.elements.message.value,
+            page: document.location.pathname.slice(1),
             question: question,
             source: window.app.source,
-        }
-        const request = new XMLHttpRequest()
-        request.open('POST', feedbackHost + '/feedback', true)
-        request.setRequestHeader('Content-Type', 'application/json')
-        request.send(JSON.stringify(payload))
-
+        })
         afficheRemerciements(formulaire, choix, reponse)
     })
 }

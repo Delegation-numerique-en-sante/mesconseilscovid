@@ -25,21 +25,15 @@ export function bindFeedback(component, app) {
             const form = component.querySelector('.feedback-form form')
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
-                const feedbackHost = document.body.dataset.statsUrl
-                let message = event.target.elements.message.value
-                const page = estPageThematique()
-                    ? document.location.pathname.slice(1)
-                    : getCurrentPageName()
-                const payload = {
+                envoieLesRemarques({
+                    feedbackHost: document.body.dataset.statsUrl,
                     kind: feedback,
-                    message: message,
-                    page: page,
+                    message: event.target.elements.message.value,
+                    page: estPageThematique()
+                        ? document.location.pathname.slice(1)
+                        : getCurrentPageName(),
                     source: app.source,
-                }
-                const request = new XMLHttpRequest()
-                request.open('POST', feedbackHost + '/feedback', true)
-                request.setRequestHeader('Content-Type', 'application/json')
-                request.send(JSON.stringify(payload))
+                })
 
                 opacityTransition(component, transitionDelay, (component) => {
                     hideElement(component.querySelector('.feedback-form'))
@@ -100,4 +94,26 @@ export function bindFeedback(component, app) {
         hideElement(component.querySelector('.feedback-partager'))
         showElement(component.querySelector('.feedback-question'))
     })
+}
+
+export function envoieLesRemarques({
+    feedbackHost,
+    kind,
+    message,
+    page,
+    question,
+    source,
+}) {
+    const request = new XMLHttpRequest()
+    request.open('POST', feedbackHost + '/feedback', true)
+    request.setRequestHeader('Content-Type', 'application/json')
+    request.send(
+        JSON.stringify({
+            kind,
+            message,
+            page,
+            question,
+            source,
+        })
+    )
 }
