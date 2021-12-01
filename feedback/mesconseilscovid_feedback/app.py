@@ -3,6 +3,7 @@ import logging
 import os
 import re
 from http import HTTPStatus
+from typing import Any, List, Optional
 
 from pykeybasebot import Bot
 from roll import HttpError, Roll
@@ -13,7 +14,7 @@ from user_agents import parse
 logger = logging.getLogger(__name__)
 
 
-def slugify_title(title):
+def slugify_title(title: str) -> str:
     return slugify(
         title,
         stopwords=["span", "class", "visually", "hidden", "sup"],
@@ -81,32 +82,33 @@ class FeedbackView:
         "non": ":slightly_frowning_face:",
     }
 
-    async def on_post(self, request, response):
+    async def on_post(self, request: Any, response: Any) -> None:
         payload = request.json
         try:
-            kind = payload["kind"]
-            page = payload["page"]
-            message = clean_message(payload["message"])
+            kind: str = payload["kind"]
+            page: str = payload["page"]
+            message: str = clean_message(payload["message"])
         except KeyError:
             raise HttpError(HTTPStatus.BAD_REQUEST)
 
+        url: str
         if page.endswith(".html"):
             url = f"https://mesconseilscovid.sante.gouv.fr/{page}"
         else:
             url = f"https://mesconseilscovid.sante.gouv.fr/#{page}"
 
         # Facultatif: question (pages thématiques)
-        question = payload.get("question")
+        question: Optional[str] = payload.get("question")
         if question:
             url = f"{url}#{slugify_title(question)}"
-            message = f"*{question} ?*\n{quote_message(message)}"
+            message = f"*{question} ?*\n{blockquote(escape(message))}"
         else:
-            message = f"*{page}*\n{quote_message(message)}"
+            message = f"*{page}*\n{blockquote(escape(message))}"
 
-        emoji = self.KIND_EMOJI.get(kind, ":question:")
+        emoji: str = self.KIND_EMOJI.get(kind, ":question:")
         message = f"{emoji} {message}\n"
 
-        origine = []
+        origine: List[str] = []
 
         # Facultatif: navigateur
         user_agent = request.headers.get("USER-AGENT")
@@ -119,7 +121,7 @@ class FeedbackView:
             origine.append(f"Source: {source}")
 
         if origine:
-            message += f"> _(Envoyé depuis {' / '.join(origine)})_\n"
+            message += f"> _(Envoyé depuis {' / '.join(escape(s) for s in origine)})_\n"
 
         message += url
 
@@ -132,11 +134,17 @@ class FeedbackView:
         response.json = {"message": message}
 
 
-def clean_message(text):
-    return re.sub(r"^>", r"\>", text.strip().replace("*", r"\*").replace("_", r"\_"))
+def clean_message(text: str) -> str:
+    return text.strip()
 
 
-def quote_message(text):
+def escape(text: str) -> str:
+    text = re.sub(r"([\*_~])", r"\\\1", text)
+    text = re.sub(r"^>", r"\>", text)
+    return text
+
+
+def blockquote(text: str) -> str:
     return "\n".join("> " + line for line in text.splitlines())
 
 

@@ -67,7 +67,7 @@ async def test_post_feedback_with_user_agent_and_source(client, app):
             "kind": "flag",
             "message": "J’ai *rien* compris\ndu tout",
             "page": "introduction",
-            "source": "TousAntiCovid",
+            "source": "tra_la_la",
         },
         headers={
             "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B179 Safari/7534.48.3",
@@ -75,11 +75,11 @@ async def test_post_feedback_with_user_agent_and_source(client, app):
     )
     assert resp.status == HTTPStatus.ACCEPTED
     assert json.loads(resp.body) == {
-        "message": ":golf: *introduction*\n> J’ai \\*rien\\* compris\n> du tout\n> _(Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1 / Source: TousAntiCovid)_\nhttps://mesconseilscovid.sante.gouv.fr/#introduction"
+        "message": ":golf: *introduction*\n> J’ai \\*rien\\* compris\n> du tout\n> _(Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1 / Source: tra\\_la\\_la)_\nhttps://mesconseilscovid.sante.gouv.fr/#introduction"
     }
     app.bot.chat.send.assert_called_once_with(
         "abcd1234",
-        ":golf: *introduction*\n> J’ai \\*rien\\* compris\n> du tout\n> _(Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1 / Source: TousAntiCovid)_\nhttps://mesconseilscovid.sante.gouv.fr/#introduction",
+        ":golf: *introduction*\n> J’ai \\*rien\\* compris\n> du tout\n> _(Envoyé depuis iPhone / iOS 5.1 / Mobile Safari 5.1 / Source: tra\\_la\\_la)_\nhttps://mesconseilscovid.sante.gouv.fr/#introduction",
     )
 
 
