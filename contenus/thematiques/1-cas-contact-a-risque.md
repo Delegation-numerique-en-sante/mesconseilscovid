@@ -21,9 +21,9 @@
 
 <div class="conseil conseil-jaune">
 
-Si vous avez **déjà eu la Covid** il y a **moins de 2 mois**, alors vous n’êtes **pas considéré** comme cas contact.
-    
-Si vous êtes as contact d'une personne touchée par le **nouveau variant Omicron**, vous devez suivre [les mêmes recommandations que les personnes non vaccinées (ci-dessous)](#schema-vaccinal-incomplet)
+- Si vous avez **déjà eu la Covid** il y a **moins de 2 mois**, alors vous n’êtes **pas considéré** comme cas contact.
+
+- Si vous êtes cas contact d’une personne touchée par le nouveau **variant Omicron**, vous devez suivre les mêmes recommandations que les personnes **non vaccinées** ([voir ci-dessous](#schema-vaccinal-incomplet)).
 
 </div>
 
@@ -38,10 +38,10 @@ Si vous êtes as contact d'une personne touchée par le **nouveau variant Omicro
 
 <div class="explications">
 
-*   vous avez reçu **toutes les doses** nécessaires (1 ou 2 doses) ;
+* vous avez reçu **toutes les doses** nécessaires (1 ou 2 doses) ;
 * **et** vous avez reçu la dernière dose prévue depuis **plus de 7 jours** (*Pfizer*, *Moderna*, *AstraZeneca*) ou plus de 28 jours (*Janssen*) ;
-* **et** vous ne souffrez pas d’immunodépression.
-* **et** vous n'êtes pas cas contact d'une personne contaminée par le **nouveau variant Omicron** ;
+* **et** vous ne souffrez pas d’immunodépression ;
+* **et** vous n’êtes pas cas contact d’une personne contaminée par le nouveau **variant Omicron**.
 </div>
 
 <div class="lire-la-suite"><button class="button">Lire la suite</button></div>
@@ -54,13 +54,17 @@ Si vous êtes as contact d'une personne touchée par le **nouveau variant Omicro
 
 Faites un **test antigénique** en pharmacie **dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
-Si vous êtes cas contact d'une personne touchée par le **nouveau variant**, **Omicron**, il faut **vous isoler** au moins **7 jours**, **même si** vous êtes **vacciné(e)** et que votre test est **négatif**.
-    
+</div>
+
+<div class="conseil conseil-jaune">
+
+Si vous êtes cas contact d’une personne touchée par le nouveau **variant Omicron**, il faut **vous isoler** au moins **7 jours**, **même si** vous êtes **vacciné(e)** et que votre test est **négatif**.
+
 </div>
 
 * Si le test est **négatif** :
 
-    * comme vous êtes complètement vacciné(e), on considère que vous avez un **risque modéré**, et qu’il n’est **pas nécessaire de vous isoler** ;
+    * comme vous êtes complètement vacciné(e), on considère que vous avez un **risque modéré**, et qu’il n’est **pas nécessaire de vous isoler** ;
     * vous devrez quand même faire un **test de contrôle** après 7 jours (voir ci-dessous) ;
     * et comme la vaccination ne protège jamais à 100%, en attendant, **restez prudent(e)** :
         * limitez vos interactions sociales,
@@ -69,7 +73,6 @@ Si vous êtes cas contact d'une personne touchée par le **nouveau variant**, **
     * en cas de **fièvre** ou de **symptômes** avant la date prévue de votre test de contrôle :
         * faites-vous tester dès que possible, et restez isolé(e) en attendant le résultat,
         * contactez un médecin ou le 15 en cas de difficultés respiratoires.
-
 
 
 * Si le test est **positif** :
@@ -115,7 +118,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 <summary>
 
 <h3>
-    Si vous n’êtes pas complètement vacciné(e) :
+    Si vous n’êtes pas complètement vacciné(e) :
     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
 </h3>
 
@@ -124,8 +127,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 * vous n’avez **pas encore** reçu les doses nécessaires (1 ou 2 doses) ;
 * **ou** vous avez reçu votre dernière dose depuis **moins de 7 jours** (*Pfizer, Moderna, AstraZeneca*) ou moins de 28 jours (*Janssen*) ;
 * **ou** vous souffrez d’une **forte immunodépression** qui réduit l’efficacité du vaccin ;
-
-* **ou** vous êtes cas contact du **nouveau variant Omicron**.
+* **ou** vous êtes cas contact d’une personne touchée par le nouveau **variant Omicron**.
 
 </div>
 
