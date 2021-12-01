@@ -42,8 +42,6 @@ export default class App {
         this.stockage = new StockageLocal()
         this.questionnaire = new Questionnaire()
         this.suiviImages = suiviImages
-
-        this.initStats()
     }
     initStats() {
         this.source = this.initSource()

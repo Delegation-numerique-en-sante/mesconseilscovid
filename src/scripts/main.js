@@ -20,6 +20,7 @@ import App from './app'
 var app = new App(SUIVI_IMAGES)
 window.app = app
 ;(function () {
+    app.initStats()
     if (estPageThematique()) {
         pageThematique(app)
     } else {
