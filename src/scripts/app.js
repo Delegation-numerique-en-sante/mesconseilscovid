@@ -43,13 +43,14 @@ export default class App {
         this.questionnaire = new Questionnaire()
         this.suiviImages = suiviImages
 
+        // Source de la visite.
+        const searchParams = new URLSearchParams(window.location.search)
+        this.source = searchParams.get('source') || searchParams.get('utm_source')
+
         // Statistiques.
         this._plausibleTrackingEvents = []
         this._plausible = registerPlausible(window)
         this.atinternet = registerATInternet()
-
-        const searchParams = new URLSearchParams(window.location.search)
-        this.source = searchParams.get('source') || searchParams.get('utm_source')
     }
     init() {
         this.router = new Router(this)
@@ -270,12 +271,8 @@ export default class App {
     }
     plausible(eventName, props = {}) {
         // Ajoute la source de la visite.
-        const searchParams = new URLSearchParams(window.location.search)
-        if (searchParams.toString().length) {
-            const source = searchParams.get('source') || searchParams.get('utm_source')
-            if (source) {
-                props['source'] = source
-            }
+        if (this.source) {
+            props['source'] = this.source
         }
         // Ajoute l’info sur le profil (pour moi ou pour un proche).
         if (typeof this.profil.nom !== 'undefined') {
