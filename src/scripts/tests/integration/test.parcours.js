@@ -96,6 +96,11 @@ describe('Parcours', function () {
                 }),
             ])
 
+            await waitForPlausibleTrackingEvent(
+                page,
+                'pageview:pass-sanitaire-qr-code-voyages.html'
+            )
+
             assert.lengthOf(messages, 3)
             assert.include(messages[0], {
                 n: 'pageview',
