@@ -208,6 +208,7 @@ function demandeRemarques(feedbackQuestionForm, choix, question, reponse, label)
             message: message,
             page: page,
             question: question,
+            source: window.app.source,
         }
         const request = new XMLHttpRequest()
         request.open('POST', feedbackHost + '/feedback', true)
