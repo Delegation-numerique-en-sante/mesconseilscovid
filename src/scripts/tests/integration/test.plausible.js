@@ -19,6 +19,19 @@ describe('Plausible', function () {
         await waitForPlausibleTrackingEvents(page, ['pageview:introduction'])
     })
 
+    it('accès à une page avec source', async function () {
+        const page = this.test.page
+
+        await page.goto('http://localhost:8080/?source=toto#introduction')
+        await page.waitForSelector('#page.ready')
+        assert.equal(
+            await page.title(),
+            'Mes Conseils Covid — Isolement, tests, vaccins, attestations, contact à risque…'
+        )
+
+        await waitForPlausibleTrackingEvents(page, ['pageview:introduction:toto'])
+    })
+
     it('drapeau sur une page', async function () {
         const page = this.test.page
 

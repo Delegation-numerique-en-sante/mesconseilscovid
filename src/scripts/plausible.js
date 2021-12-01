@@ -49,9 +49,11 @@ export function registerPlausible(window) {
             location.protocol === 'file:'
         ) {
             ignore('running locally')
-            window.app._plausibleTrackingEvents.push(
-                `${payload.n}:${getLocationPathName().slice(1)}`
-            )
+            let eventSummary = `${payload.n}:${getLocationPathName().slice(1)}`
+            if (options && options.props && options.props.source) {
+                eventSummary = `${eventSummary}:${options.props.source}`
+            }
+            window.app._plausibleTrackingEvents.push(eventSummary)
             console.debug('[Plausible]', JSON.stringify(payload))
             return
         }
