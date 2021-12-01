@@ -43,10 +43,10 @@ export default class App {
         this.questionnaire = new Questionnaire()
         this.suiviImages = suiviImages
 
-        // Source de la visite.
+        this.initStats()
+    }
+    initStats() {
         this.source = this.initSource()
-
-        // Statistiques.
         this._plausibleTrackingEvents = []
         this._plausible = registerPlausible(window)
         this.atinternet = registerATInternet()
