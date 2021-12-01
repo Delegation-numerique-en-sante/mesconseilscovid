@@ -20,15 +20,16 @@ import App from './app'
 var app = new App(SUIVI_IMAGES)
 window.app = app
 ;(function () {
-    app.initStats()
-    if (estPageThematique()) {
-        pageThematique(app)
-    } else {
-        pageQuestionnaire(app)
-        activeLesMisesAJourAuto(app)
-    }
-    initLiensPiedDePage(app)
-    initLiensRoleButton()
+    app.initStats().then(() => {
+        if (estPageThematique()) {
+            pageThematique(app)
+        } else {
+            pageQuestionnaire(app)
+            activeLesMisesAJourAuto(app)
+        }
+        initLiensPiedDePage(app)
+        initLiensRoleButton()
+    })
 })()
 
 function pageQuestionnaire(app) {

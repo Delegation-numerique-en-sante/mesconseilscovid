@@ -44,14 +44,24 @@ export default class App {
         this.suiviImages = suiviImages
     }
     initStats() {
-        this.source = this.initSource()
-        this._plausibleTrackingEvents = []
-        this._plausible = registerPlausible(window)
-        this.atinternet = registerATInternet()
+        return this.initSource().then((source) => {
+            this.source = source
+            this._plausibleTrackingEvents = []
+            this._plausible = registerPlausible(window)
+            this.atinternet = registerATInternet()
+        })
     }
     initSource() {
         const searchParams = new URLSearchParams(window.location.search)
-        return searchParams.get('source') || searchParams.get('utm_source')
+        const sourceFromUrl =
+            searchParams.get('source') || searchParams.get('utm_source')
+        if (sourceFromUrl) {
+            // On mémorise la source présente dans l’URL.
+            return this.stockage.setSource(sourceFromUrl)
+        } else {
+            // On se rappelle de la source précédemment stockée.
+            return this.stockage.getSource()
+        }
     }
     init() {
         this.router = new Router(this)
