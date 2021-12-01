@@ -17,7 +17,9 @@ export async function getPlausibleTrackingEvents(page) {
 
 export async function waitForPlausibleTrackingEvent(page, name) {
     await page.waitForFunction(
-        (name) => window.app._plausibleTrackingEvents.includes(name),
+        (name) =>
+            window.app._plausibleTrackingEvents &&
+            window.app._plausibleTrackingEvents.includes(name),
         name,
         { timeout: 2000 }
     )
@@ -28,6 +30,7 @@ export async function waitForPlausibleTrackingEvents(page, names) {
     try {
         await page.waitForFunction(
             (events) =>
+                window.app._plausibleTrackingEvents &&
                 window.app._plausibleTrackingEvents.length === events.length &&
                 window.app._plausibleTrackingEvents.every(
                     (val, index) => val === events[index]

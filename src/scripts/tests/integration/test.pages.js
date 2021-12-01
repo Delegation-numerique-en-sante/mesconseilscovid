@@ -22,6 +22,8 @@ describe('Pages', function () {
 
         let messages = recordConsoleMessages(page)
         await page.goto('http://localhost:8080/')
+        await waitForPlausibleTrackingEvent(page, 'pageview:introduction')
+
         await page.click(
             '.thematiques a >> text="Pass sanitaire, QR code et voyages, que faut-il savoir ?"'
         )
