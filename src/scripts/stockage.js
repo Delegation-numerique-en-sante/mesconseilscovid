@@ -2,6 +2,14 @@
 import localforage from 'localforage'
 
 export default class StockageLocal {
+    getSource() {
+        return localforage.getItem('source')
+    }
+
+    setSource(source) {
+        return localforage.setItem('source', source)
+    }
+
     getProfilActuel() {
         return localforage.getItem('profil')
     }
