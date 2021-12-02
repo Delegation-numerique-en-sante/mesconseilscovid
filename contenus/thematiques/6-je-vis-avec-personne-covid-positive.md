@@ -27,6 +27,8 @@
 
 </div>
 
+<div class="lire-la-suite"><button class="button">Lire la suite</button></div>
+
 </summary>
 
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
@@ -84,6 +86,8 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 * **et** vous ne souffrez pas d’immunodépression.
 
 </div>
+
+<div class="lire-la-suite"><button class="button">Lire la suite</button></div>
 
 </summary>
 
