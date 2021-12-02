@@ -1,7 +1,7 @@
 Nous vous conseillons de :
 
 1. **Contacter votre médecin généraliste**.
-1. **Réaliser un test** en consultant la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a> (vous serez prioritaire). Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test antigénique ou un test PCR en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test PCR en laboratoire est conseillé.
+1. **Réaliser un test** en consultant la <a href="https://www.sante.fr/cf/centres-depistage-covid.html">carte des lieux de test</a> (vous serez prioritaire). Si vos symptômes datent de moins de 4 jours, vous pouvez faire un test antigénique ou un test PCR en laboratoire. Si vos symptômes datent de plus de 4 jours, seul un test PCR en laboratoire est conseillé.
 1. Vous maintenir **en isolement** jusqu’au résultat du test :
     * {.seulement-si-activite-pro} Si vous ne pouvez pas **télétravailler**, vous pouvez [demander un arrêt de travail](https://declare.ameli.fr/isolement/conditions) sans délai de carence, pour pouvoir rester chez vous en attendant le résultat.
     * Si le résultat est **négatif**, vous pourrez mettre fin à votre isolement.

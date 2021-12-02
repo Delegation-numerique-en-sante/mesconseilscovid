@@ -427,7 +427,6 @@ export default class Profil {
 
     getData() {
         return {
-            departement: this.departement,
             activite_pro: this.activite_pro,
             activite_pro_sante: this.activite_pro_sante,
             foyer_autres_personnes: this.foyer_autres_personnes,
@@ -493,7 +492,6 @@ export default class Profil {
 
     isEmpty() {
         return (
-            typeof this.departement === 'undefined' &&
             typeof this.activite_pro === 'undefined' &&
             typeof this.activite_pro_sante === 'undefined' &&
             typeof this.foyer_autres_personnes === 'undefined' &&
@@ -553,7 +551,6 @@ export default class Profil {
 
     isSituationComplete() {
         return (
-            typeof this.departement !== 'undefined' &&
             typeof this.foyer_autres_personnes !== 'undefined' &&
             typeof this.foyer_enfants !== 'undefined' &&
             typeof this.activite_pro !== 'undefined' &&

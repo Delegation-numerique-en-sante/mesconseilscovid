@@ -13,7 +13,6 @@ describe('Profil', function () {
     it('Le questionnaire est vide par défaut', function () {
         var profil = new Profil('mes_infos')
         assert.deepEqual(profil.getData(), {
-            departement: undefined,
             activite_pro: undefined,
             activite_pro_sante: undefined,
             foyer_autres_personnes: undefined,
@@ -119,7 +118,7 @@ describe('Profil', function () {
     it('Le questionnaire peut être partiellement rempli', function () {
         var profil = new Profil('mes_infos')
         var data = {
-            departement: '01',
+            activite_pro: false,
         }
         profil.fillData(data)
         assert.include(profil.getData(), data)
@@ -129,18 +128,17 @@ describe('Profil', function () {
 
     it('Le questionnaire peut être partiellement vidé', function () {
         var profil = new Profil('mes_infos', {
-            departement: '01',
+            activite_pro: false,
         })
         profil.resetData()
         assert.include(profil.getData(), {
-            departement: undefined,
+            activite_pro: undefined,
         })
     })
 
     it('Le questionnaire peut être complètement rempli', function () {
         var profil = new Profil('mes_infos')
         var data = {
-            departement: '34',
             activite_pro: false,
             activite_pro_sante: false,
             foyer_autres_personnes: true,
@@ -211,7 +209,6 @@ describe('Profil', function () {
     it('Le questionnaire peut être complètement rempli mais âge < 15', function () {
         var profil = new Profil('mes_infos')
         var data = {
-            departement: '34',
             activite_pro: false,
             activite_pro_sante: false,
             foyer_autres_personnes: true,
@@ -280,7 +277,6 @@ describe('Profil', function () {
 
     it('Le questionnaire peut être complètement vidé', function () {
         var profil = new Profil('mes_infos', {
-            departement: '34',
             activite_pro: false,
             activite_pro_sante: false,
             foyer_autres_personnes: true,
@@ -343,7 +339,6 @@ describe('Profil', function () {
         })
         profil.resetData()
         assert.deepEqual(profil.getData(), {
-            departement: undefined,
             activite_pro: undefined,
             activite_pro_sante: undefined,
             foyer_autres_personnes: undefined,
@@ -410,7 +405,6 @@ describe('Profil', function () {
 
     it('Le suivi seul peut être complètement vidé', function () {
         var profil = new Profil('mes_infos', {
-            departement: '34',
             activite_pro: false,
             activite_pro_sante: false,
             foyer_autres_personnes: true,
@@ -473,7 +467,6 @@ describe('Profil', function () {
         })
         profil.resetSuivi()
         assert.deepEqual(profil.getData(), {
-            departement: '34',
             activite_pro: false,
             activite_pro_sante: false,
             foyer_autres_personnes: true,
@@ -570,7 +563,7 @@ describe('Profil', function () {
 
     it('Le questionnaire est commencé si on a au moins une réponse', function () {
         var profil = new Profil('mes_infos', {
-            departement: '80',
+            activite_pro: false,
         })
         assert.isTrue(profil.questionnaire_started)
         assert.isString(profil._questionnaire_start_date)
@@ -579,7 +572,6 @@ describe('Profil', function () {
 
     it('Le questionnaire est terminé si on a toutes les réponses', function () {
         var profil = new Profil('mes_infos', {
-            departement: '34',
             activite_pro: false,
             activite_pro_sante: false,
             foyer_autres_personnes: true,

@@ -49,7 +49,6 @@ describe('Profils', function () {
             symptomesPasses: false,
             contactARisque: [],
             depistage: false,
-            departement: '80',
             enfants: true,
             age: '42',
             taille: '165',

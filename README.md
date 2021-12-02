@@ -16,12 +16,6 @@ Des données d’utilisation anonymes sont envoyées vers :
 * une instance de [Plausible](https://github.com/plausible/analytics#plausible-analytics) pour mesurer les visites et améliorer les parcours utilisateurs ;
 * la plateforme stat@gouv, opérée par AT Internet, pour la mesure d’audience.
 
-### Source des données permettant de générer les réponses
-
--   Contours administratifs des départements (fichier `departements-1000m.geojson`) : http://etalab-datasets.geo.data.gouv.fr/contours-administratifs/latest/geojson/
--   Indicateurs d’activité épidémique vert/orange (fichier `donnees-carte-synthese-tricolore.csv`) : https://www.data.gouv.fr/fr/datasets/indicateurs-dactivite-epidemique-covid-19-par-departement/
--   Liens vers les préfectures (fichier `pages-consignes-prefectorales-covid19.json`) : https://www.data.gouv.fr/fr/datasets/liste-des-liens-url-redirigeant-vers-les-consignes-prefectorales-dans-le-cadre-du-covid-19/
-
 
 ## Développement
 

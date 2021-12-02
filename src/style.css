@@ -545,7 +545,6 @@ footer .legals {
     background-size: 40%;
 }
 
-#conseils-vie-quotidienne summary,
 #conseils-deplacements summary,
 #conseils-pass-sanitaire summary,
 #conseils-activite summary,
@@ -583,7 +582,6 @@ footer .legals {
         background-size: 30%;
     }
 
-    #conseils-vie-quotidienne summary,
     #conseils-deplacements summary,
     #conseils-pass-sanitaire summary,
     #conseils-activite summary,
@@ -608,7 +606,6 @@ footer .legals {
     }
     #conseils-gestes-barrieres-masque summary,
     #conseils-sante summary,
-    #conseils-vie-quotidienne summary,
     #conseils-pass-sanitaire summary {
         background-size: 10%;
     }
@@ -617,8 +614,7 @@ footer .legals {
 #nom-form {
     background-image: url('illustrations/nom.svg');
 }
-#situation-form,
-#conseils-vie-quotidienne summary {
+#situation-form {
     background-image: url('illustrations/situation.svg');
 }
 #conseils-deplacements summary {
@@ -1030,25 +1026,6 @@ fieldset .details p {
 }
 fieldset ul.details {
     padding-left: 1rem;
-}
-
-.dpt-container {
-    flex-basis: 100% !important;
-}
-.dpt-container #geolocalisation {
-    padding-left: 1.5rem;
-    background: #000091 no-repeat url('map-marker2.svg') 8% center;
-    border: none;
-    color: white;
-    width: 100%;
-    max-width: 20rem;
-    font-size: 16px;
-    margin-bottom: 1rem;
-    margin-top: 0;
-}
-.dpt-container select {
-    width: 100%;
-    max-width: 20rem;
 }
 
 .form-controls {

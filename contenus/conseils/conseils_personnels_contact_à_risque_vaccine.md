@@ -1,6 +1,6 @@
 Vous avez passé du temps avec quelqu’un de positif, mais comme vous êtes **complètement vacciné(e)**, ce contact est considéré à **risque négligeable** de transmission. Il n’est pas nécessaire de vous isoler mais vous devez :
 
-1. Faire un **test antigénique dès que possible** (voir la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a>).
+1. Faire un **test antigénique dès que possible** (voir la <a href="https://www.sante.fr/cf/centres-depistage-covid.html">carte des lieux de test</a>).
     * Si le test est **positif**, restez en **isolement au moins 10 jours** à partir de la date du test. Pas besoin de faire un test de contrôle pour sortir de l’isolement.
     * Si le test est **négatif** :
         * portez le masque à l’intérieur et à l’extérieur, même dans les lieux qui ne l’exigent plus (restaurant, musées…) ;

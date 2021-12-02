@@ -46,16 +46,7 @@ class LinkExtractor(HTMLParser):
 
 @cli
 def external_links(timeout: int = 10, delay: float = 0.1):
-    # Dynamically generated links via injection.
-    external_links = {
-        "https://www.sante.fr/cf/centres-vaccination-covid/departement-22-cotes-d'armor.html",
-        "https://www.sante.fr/cf/centres-vaccination-covid/departement-20A-corse-du-sud.html",
-        "https://www.sante.fr/cf/centres-vaccination-covid/departement-01-ain.html",
-        "https://www.sante.fr/cf/centres-vaccination-covid.html",
-        "https://www.sante.fr/cf/centres-depistage-covid/departement-01.html",
-        "https://www.sante.fr/cf/centres-depistage-covid/departement-2A.html",
-        "https://www.sante.fr/cf/centres-depistage-covid.html",
-    }
+    external_links = set()
     for path in each_file_from(SRC_DIR, pattern="*.html"):
         parser = LinkExtractor()
         content = path.read_text()
@@ -92,8 +83,6 @@ def internal_links():
         internal_links[path.name] = parser.internal_links
         internal_pages.append(path.name)
 
-    exceptions = ["#conseils-departement", "#conseils-depistage"]
-
     for path, path_internal_links in internal_links.items():
         for internal_link in path_internal_links:
             # Check cross pages references.
@@ -122,10 +111,7 @@ def internal_links():
                         )
             # Check anchors on the same page.
             elif internal_link.startswith("#"):
-                if (
-                    internal_link not in exceptions
-                    and f'id="{internal_link[1:]}"' not in internal_contents[path]
-                ):
+                if f'id="{internal_link[1:]}"' not in internal_contents[path]:
                     raise Exception(
                         (
                             f"{internal_link} referenced in {path} but "

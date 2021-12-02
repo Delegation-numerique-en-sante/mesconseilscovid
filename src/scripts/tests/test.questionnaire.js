@@ -264,7 +264,6 @@ describe('Préconditions', function () {
                 depistage: false,
                 covid_passee: false,
                 vaccins: 'pas_encore',
-                departement: '80',
                 foyer_autres_personnes: false,
                 foyer_enfants: false,
                 activite_pro: false,
@@ -294,7 +293,6 @@ describe('Préconditions', function () {
                 depistage: false,
                 covid_passee: false,
                 vaccins: 'pas_encore',
-                departement: '80',
                 foyer_autres_personnes: false,
                 foyer_enfants: false,
                 activite_pro: false,
@@ -310,7 +308,6 @@ describe('Préconditions', function () {
                 depistage: false,
                 covid_passee: false,
                 vaccins: 'pas_encore',
-                departement: '80',
                 foyer_autres_personnes: false,
                 foyer_enfants: false,
                 activite_pro: false,
@@ -344,7 +341,6 @@ describe('Préconditions', function () {
                 depistage: false,
                 covid_passee: false,
                 vaccins: 'pas_encore',
-                departement: '80',
                 foyer_autres_personnes: false,
                 foyer_enfants: false,
                 antecedent_cardio: false,
@@ -421,7 +417,6 @@ describe('Préconditions', function () {
                 depistage: false,
                 covid_passee: false,
                 vaccins: 'pas_encore',
-                departement: '80',
                 foyer_autres_personnes: false,
                 foyer_enfants: false,
                 antecedent_cardio: false,
@@ -447,7 +442,6 @@ describe('Préconditions', function () {
     describe('Suivi', function () {
         it('ok d’aller à l’introduction si profil complet', function () {
             const profil = new Profil('mes_infos', {
-                departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
                 foyer_autres_personnes: true,
@@ -498,7 +492,6 @@ describe('Préconditions', function () {
         })
         it('ok d’aller à l’introduction si profil sans sous-options activité pro', function () {
             const profil = new Profil('mes_infos', {
-                departement: '34',
                 activite_pro: false,
                 foyer_autres_personnes: true,
                 foyer_enfants: true,
@@ -548,7 +541,6 @@ describe('Préconditions', function () {
         })
         it('ok d’aller à la date des symptômes si profil complet', function () {
             const profil = new Profil('mes_infos', {
-                departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
                 foyer_autres_personnes: true,
@@ -599,7 +591,6 @@ describe('Préconditions', function () {
         })
         it('ok d’aller à la question suivi médecin si profil complet', function () {
             const profil = new Profil('mes_infos', {
-                departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
                 foyer_autres_personnes: true,
@@ -651,7 +642,6 @@ describe('Préconditions', function () {
         })
         it('ok d’aller au questionnaire si profil complet et date symptômes', function () {
             const profil = new Profil('mes_infos', {
-                departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
                 foyer_autres_personnes: true,
@@ -703,7 +693,6 @@ describe('Préconditions', function () {
         })
         it('ok d’aller à l’historique du suivi si profil complet et date symptômes et entrée(s) dans le suivi', function () {
             const profil = new Profil('mes_infos', {
-                departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
                 foyer_autres_personnes: true,
@@ -756,7 +745,6 @@ describe('Préconditions', function () {
         })
         it('redirige suivi introduction vers algo orientation si profil non complet', function () {
             const profil = new Profil('mes_infos', {
-                departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
                 foyer_autres_personnes: true,
@@ -784,7 +772,6 @@ describe('Préconditions', function () {
         })
         it('redirige suivi symptômes vers algo orientation si profil non complet', function () {
             const profil = new Profil('mes_infos', {
-                departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
                 foyer_autres_personnes: true,
@@ -810,7 +797,6 @@ describe('Préconditions', function () {
         })
         it('redirige suivi historique vers algo orientation si profil non complet', function () {
             const profil = new Profil('mes_infos', {
-                departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
                 foyer_autres_personnes: true,
@@ -839,7 +825,6 @@ describe('Préconditions', function () {
         })
         it('ok d’aller au suivi symptômes sans date de début symptômes ni symptômes (asymptomatique)', function () {
             const profil = new Profil('mes_infos', {
-                departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
                 foyer_autres_personnes: true,
@@ -893,7 +878,6 @@ describe('Préconditions', function () {
         })
         it('ok d’aller au suivi historique sans date de début symptômes ni symptômes (asymptomatique)', function () {
             const profil = new Profil('mes_infos', {
-                departement: '34',
                 activite_pro: false,
                 activite_pro_sante: false,
                 foyer_autres_personnes: true,

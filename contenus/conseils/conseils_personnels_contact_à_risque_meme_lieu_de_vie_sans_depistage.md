@@ -1,7 +1,7 @@
 Nous vous conseillons de :
 
 1. Vous maintenir **en isolement**.
-1. Faire un **test antigénique dès que possible** (voir la <a href="#conseils-depistage" class="lien-depistage">carte des lieux de test</a>).
+1. Faire un **test antigénique dès que possible** (voir la <a href="https://www.sante.fr/cf/centres-depistage-covid.html">carte des lieux de test</a>).
     * Si le test est **positif**, restez **en isolement au moins 10 jours** à partir de la date du test, et renseignez le [résultat du test](#depistage) pour mettre à jour ces conseils.
     * Si le test est **négatif**, restez **en isolement**, et faites un test **7 jours après la guérison** de la personne malade ;
         * s’il est **négatif**, vous pourrez lever votre isolement ;

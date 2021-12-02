@@ -70,7 +70,7 @@ export async function remplirQuestionnaire(page, choix) {
     )
     await remplirHistorique(page, choix.covid_passee, choix.nbMois)
     await remplirVaccins(page, choix.vaccins)
-    await remplirSituation(page, choix.departement, choix.enfants, choix.activitePro)
+    await remplirSituation(page, choix.enfants, choix.activitePro)
     await remplirSante(
         page,
         choix.age,
@@ -90,8 +90,7 @@ async function remplirNom(page, nom) {
     ])
 }
 
-async function remplirSituation(page, departement, enfants, activitePro) {
-    await page.selectOption('#page.ready select#departement', departement)
+async function remplirSituation(page, enfants, activitePro) {
     if (enfants === true) {
         // La "vraie" case à cocher est cachée, alors on clique sur le label.
         let label

@@ -1,11 +1,6 @@
 import { format } from 'timeago.js'
 
-import prefectures from './data/prefectures'
-import ctaiTelephones from './data/ctaiTelephones'
-import ctaiCourriels from './data/ctaiCourriels'
-import departements from './data/departements'
-
-import { slugify, titleCase } from './utils'
+import { titleCase } from './utils'
 
 export function nomProfil(element, app) {
     if (!element) return
@@ -26,70 +21,6 @@ export function dateConseils(element) {
     const nowISO = now.toISOString().substring(0, 10)
     const nowReadable = now.toLocaleDateString()
     element.innerHTML = `au <time datetime="${nowISO}">${nowReadable}</time>`
-}
-
-export function departement(element, departement) {
-    element.textContent = departements[departement] || 'Inconnu'
-}
-
-export function lienPrefecture(element, departement) {
-    element.setAttribute('href', prefectures[departement])
-}
-
-export function CTAIContact(element, departement) {
-    const telephone = ctaiTelephones[departement]
-    const courriel = ctaiCourriels[departement]
-    if (telephone === '' && courriel === '') return
-    const contactHTML = []
-    if (telephone) {
-        contactHTML.push(
-            ` au <a href="tel:${telephone}" style="white-space: nowrap;">${telephone
-                .match(/.{1,2}/g)
-                .join(' ')}</a>`
-        )
-    }
-    if (courriel) {
-        contactHTML.push(` à l’adresse <a href="mailto:${courriel}">${courriel}</a>`)
-    }
-    element.innerHTML = contactHTML.join(' ou ')
-}
-
-export function lienDepistage(element, departement) {
-    element.setAttribute('href', _lienDepistage(departement))
-}
-
-export function _lienDepistage(departement) {
-    return _lienSantePointFr('depistage', departement)
-}
-
-export function lienVaccination(element, departement) {
-    element.setAttribute('href', _lienVaccination(departement))
-}
-
-export function _lienVaccination(departement) {
-    return _lienSantePointFr('vaccination', departement)
-}
-
-export function _lienSantePointFr(type, departement) {
-    if (
-        departement === '975' ||
-        departement === '977' ||
-        departement === '978' ||
-        departement === '00' /* Autre. */
-    ) {
-        return `https://www.sante.fr/cf/centres-${type}-covid.html`
-    }
-    const departementName = departements[departement]
-    const departementSlug = slugify(departementName)
-    // Subtile façon de nommer les codes des départements de la Corse
-    // sur le site de sante.fr.
-    if (departement === '2A') {
-        departement = '20A'
-    }
-    if (departement == '2B') {
-        departement = '20B'
-    }
-    return `https://www.sante.fr/cf/centres-${type}-covid/departement-${departement}-${departementSlug}.html`
 }
 
 export function caracteristiquesOuAntecedentsARisques(element, algoOrientation) {
