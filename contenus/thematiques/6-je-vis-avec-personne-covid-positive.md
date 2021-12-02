@@ -35,7 +35,9 @@
 
 <div class="conseil">
 
-Même si vous ne présentez pas de symptômes, il faut vous faire tester dès que possible en laboratoire ou en pharmacie :
+Même si vous ne présentez pas de symptômes, il faut vous **faire tester** dès que possible, en laboratoire ou dans une pharmacie (test PCR ou antigénique).
+
+Le test est **toujours gratuit** quand vous êtes cas contact.
 
 * Si le test est **positif** : isolez-vous pendant au moins **10 jours**. Vous pourrez lever l’isolement dès le 10<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48 h.
 * Si le test est **négatif**, vous devez vous isoler au moins 7 jours de plus que la personne positive.
@@ -49,7 +51,7 @@ Si vous ne pouvez pas télétravailler, l’Assurance Maladie pourra vous prescr
 
 <div class="conseil">
 
-Si des symptômes ne se déclarent pas entre-temps, **faites-vous tester à nouveau** (test PCR ou antigénique) 7 jours après la guérison ou la sortie de l’isolement de la personne positive.
+Si des symptômes ne se déclarent pas entre-temps, **faites-vous tester à nouveau** (test PCR ou antigénique, **gratuit** également) 7 jours après la guérison ou la sortie de l’isolement de la personne positive.
 
 * Si ce test est **négatif**, alors vous pouvez lever votre isolement.
 * Si ce test est **positif**, alors restez isolé·e encore 10 jours au moins. Vous pourrez lever l’isolement dès le 10<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48 h.
@@ -93,7 +95,9 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 
 <div class="conseil">
 
-Même si vous ne présentez pas de symptômes, il faut vous faire tester dès que possible en laboratoire ou en pharmacie :
+Même si vous ne présentez pas de symptômes, il faut vous **faire tester** dès que possible, en laboratoire ou dans une pharmacie (test PCR ou antigénique).
+
+Le test est **toujours gratuit** quand vous êtes cas contact.
 
 * Si le test est **positif** : isolez-vous pendant au moins **10 jours**. Vous pourrez lever l’isolement dès le 10<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48 h.
 * Si le test est **négatif**, il ne faut pas vous isoler mais restez prudent(e) :
@@ -109,7 +113,7 @@ Si vous ne pouvez pas télétravailler, l’Assurance Maladie pourra vous prescr
 
 <div class="conseil">
 
-Si votre premier test était **négatif**, vous devez faire un test de contrôle (PCR ou antigénique) **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes).
+Si votre premier test était **négatif**, vous devez faire un test de contrôle (PCR ou antigénique, **gratuit** également) **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes).
 
 </div>
 
