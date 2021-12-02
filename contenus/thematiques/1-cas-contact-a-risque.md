@@ -54,6 +54,8 @@
 
 Faites un **test antigénique** en pharmacie **dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
+Le test est toujours **gratuit** quand vous êtes cas contact.
+
 </div>
 
 <div class="conseil conseil-jaune">
@@ -82,7 +84,7 @@ Si vous êtes cas contact d’une personne touchée par le nouveau **variant Omi
     * surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
     * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
         * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
-        * faire un **test antigénique dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
+        * faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
     * après 10 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un test de contrôle ne sera pas nécessaire).
 
 
@@ -90,7 +92,7 @@ Si vous êtes cas contact d’une personne touchée par le nouveau **variant Omi
 
 <div class="conseil">
 
-Si votre premier test était **négatif**, vous devez faire un test de contrôle (PCR ou antigénique) :
+Si votre premier test était **négatif**, vous devez faire un test de contrôle, qui sera **gratuit** également (test PCR ou antigénique) :
 
 * **7 jours après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e) ;
 * **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple) ;
@@ -107,7 +109,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
     * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
 
         * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
-        * faire un **test antigénique dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
+        * faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
     * **après 10 jours**, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un nouveau test de contrôle ne sera pas nécessaire).
 
 
@@ -141,6 +143,8 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 
 Faites un **test antigénique** en pharmacie **dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) et **isolez-vous**.
 
+Le test est **toujours gratuit** quand vous êtes cas contact.
+
 </div>
 
 <div class="conseil conseil-jaune">
@@ -152,7 +156,7 @@ Si vous ne pouvez pas **télétravailler**, vous pouvez [**demander un arrêt de
 * Si le test est **négatif** :
 
     * vous êtes peut-être en phase d’**incubation** de la maladie ;
-    * restez **en isolement 7 jours**, puis effectuez un **test de contrôle** (voir ci-dessous) ;
+    * restez **en isolement 7 jours**, puis effectuez un **test de contrôle**, gratuit également (voir ci-dessous) ;
     * en cas de **fièvre** ou de **symptômes** avant la date prévue de votre test de contrôle :
         * faites-vous tester dès que possible, et restez isolé(e) en attendant le résultat,
         * contactez un médecin ou le 15 en cas de difficultés respiratoires.
@@ -166,7 +170,7 @@ Si vous ne pouvez pas **télétravailler**, vous pouvez [**demander un arrêt de
     * surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
     * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
         * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
-        * faire un **test antigénique dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
+        * faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
     * après 10 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un test de contrôle ne sera pas nécessaire).
 
 
@@ -174,7 +178,7 @@ Si vous ne pouvez pas **télétravailler**, vous pouvez [**demander un arrêt de
 
 <div class="conseil">
 
-Si votre premier test était **négatif**, vous devez faire un test de contrôle (PCR ou antigénique) :
+Si votre premier test était **négatif**, vous devez faire un test de contrôle (PCR ou antigénique, **gratuit** également) :
 
 * **7 jours après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e) ;
 * **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple) ;
@@ -193,6 +197,6 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
     * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
 
         * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**) ;
-        * faire un **test antigénique dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+        * faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
 </details>
