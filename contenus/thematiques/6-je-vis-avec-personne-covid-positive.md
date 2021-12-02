@@ -34,6 +34,8 @@ Si vous vivez avec une personne positive au nouveau **variant Omicron**, il faut
 
 </div>
 
+<div class="lire-la-suite"><button class="button">Lire la suite</button></div>
+
 </summary>
 
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
@@ -92,6 +94,8 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 * **et** vous ne vivez **pas** avec une personne positive au nouveau **variant Omicron**.
 
 </div>
+
+<div class="lire-la-suite"><button class="button">Lire la suite</button></div>
 
 </summary>
 
