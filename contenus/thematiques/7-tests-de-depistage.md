@@ -39,10 +39,10 @@
     * personnes ayant un **certificat de rétablissement** de moins de 6 mois ;
     * personnes présentant une **prescription médicale** de moins de 48 h et non renouvelable ;
     * personnes **mineures** ;
-    * personnes majeures **élèves** du secondaire, en classe prépa ou BTS ;
-    * personnes identifiées comme **cas contact** par l’Assurance maladie, l'ARS ou notifiées par l'application TousAntiCovid ;
-    * personnes réalisant un test RT-PCR pour **confirmer** le résultat positif d'un **autotest** ou d'un test **antigénique** daté de moins de 48h ;
-    * personnes sortant de **quarantaine** suite à un voyage dans un pays classé rouge ;
+    * personnes majeures **élèves** du secondaire, en classe prépa ou BTS ;
+    * personnes identifiées comme **cas contact** par l’Assurance maladie, l’ARS ou notifiées par l’application TousAntiCovid ;
+    * personnes réalisant un test RT-PCR pour **confirmer** le résultat positif d'un **autotest** ou d’un test **antigénique** daté de moins de 48h ;
+    * personnes sortant de **quarantaine** suite à un voyage dans un pays classé rouge ;
     * personnes concernées par des campagnes de **dépistage collectif**, organisées par les Agences régionales de santé ou au sein des établissements de l’Éducation nationale par exemple.
 
     **En dehors de ces cas**, les tests sont payants (**43,89 €** pour un test PCR, de **22 à 45 €** pour un test antigénique et **12,90 €** pour un autotest supervisé).
@@ -67,7 +67,7 @@
 
     <div class="conseil conseil-jaune">
 
-    Les tests sont **toujours** gratuits pour les **mineurs**, les personnes **vacciné(e)s** et celles bénéficiant d'un **certificat de rétablissement** ou de **contre-indication** à la vaccination. Vérifiez dans [quels autres cas les tests de dépistage sont gratuits.](#dans-quels-cas-les-tests-de-dépistage-sont-ils-gratuits)
+    Les tests sont **toujours** gratuits pour les **mineurs**, les personnes **vacciné(e)s** et celles bénéficiant d’un **certificat de rétablissement** ou de **contre-indication** à la vaccination. Vérifiez dans [quels autres cas les tests de dépistage sont gratuits](#dans-quels-cas-les-tests-de-depistage-sont-ils-gratuits).
 
     </div>
 
