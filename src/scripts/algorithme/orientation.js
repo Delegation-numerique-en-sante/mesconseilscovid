@@ -580,33 +580,6 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
-    vieQuotidienneBlockNamesToDisplay() {
-        const blockNames = ['conseils-vie-quotidienne']
-        if (this.profil.departement === '971') {
-            blockNames.push('conseils-couvre-feu')
-            blockNames.push('conseils-couvre-feu-971')
-        } else if (this.profil.departement === '972') {
-            blockNames.push('conseils-couvre-feu')
-            blockNames.push('conseils-couvre-feu-972')
-        } else if (this.profil.departement === '973') {
-            blockNames.push('conseils-couvre-feu')
-            blockNames.push('conseils-couvre-feu-973')
-        } else if (this.profil.departement === '974') {
-            blockNames.push('conseils-couvre-feu')
-            blockNames.push('conseils-couvre-feu-974')
-        } else if (this.profil.departement === '977') {
-            blockNames.push('conseils-couvre-feu')
-            blockNames.push('conseils-couvre-feu-977')
-        } else if (this.profil.departement === '978') {
-            blockNames.push('conseils-couvre-feu')
-            blockNames.push('conseils-couvre-feu-978')
-        } else {
-            blockNames.push('conseils-couvre-feu')
-            blockNames.push('conseils-couvre-feu-leve')
-        }
-        return blockNames
-    }
-
     activiteProBlockNamesToDisplay() {
         const blockNames = []
         if (this.profil.activite_pro || this.profil.activite_pro_sante) {

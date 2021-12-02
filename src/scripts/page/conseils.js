@@ -171,7 +171,6 @@ export function showRelevantBlocks(element, profil, algoOrientation) {
     blockNames = blockNames.concat(algoOrientation.depistageBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.vaccinBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.gestesBarriereBlockNamesToDisplay())
-    blockNames = blockNames.concat(algoOrientation.vieQuotidienneBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.activiteProBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.grossesseBlockNamesToDisplay())
     blockNames = blockNames.concat(algoOrientation.santeBlockNamesToDisplay())
@@ -190,22 +189,6 @@ function showRelevantEvolutionsRecap(element, algoSuivi) {
 export function dynamicDataInjection(element, profil, algoOrientation) {
     injection.titreConseils(element.querySelector('#conseils-block-titre'), profil)
     injection.dateConseils(element.querySelector('#conseils-block-date'))
-
-    injection.departement(element.querySelector('#nom-departement'), profil.departement)
-    Array.from(element.querySelectorAll('.lien-vaccination')).forEach((link) => {
-        injection.lienVaccination(link, profil.departement)
-    })
-    Array.from(element.querySelectorAll('.lien-depistage')).forEach((link) => {
-        injection.lienDepistage(link, profil.departement)
-    })
-    const lienPrefecture = element.querySelector('#lien-prefecture')
-    if (lienPrefecture) {
-        injection.lienPrefecture(lienPrefecture, profil.departement)
-    }
-    const CTAIContactPlaceholder = element.querySelector('#ctai-contact-placeholder')
-    if (CTAIContactPlaceholder) {
-        injection.CTAIContact(CTAIContactPlaceholder, profil.departement)
-    }
 
     Array.from(element.querySelectorAll('.nom-caracteristiques-a-risques')).forEach(
         (elem) => {

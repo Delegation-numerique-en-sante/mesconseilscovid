@@ -1,6 +1,6 @@
 <div class="conseil">
 
-Retrouvez le <a href="#conseils-depistage" class="lien-depistage">lieu de test le plus proche</a>.
+Retrouvez le <a href="https://www.sante.fr/cf/centres-depistage-covid.html">lieu de test le plus proche</a>.
 
 </div>
 

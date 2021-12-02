@@ -38,7 +38,6 @@ const CACHE_FILES = [
     'arrow-right-white.svg',
     'arrow-right-blue.svg',
     'ei-share-apple.svg',
-    'map-marker2.svg',
     'printer.svg',
     'feedback-negatif.svg',
     'feedback-positif.svg',
@@ -88,7 +87,6 @@ const CACHE_FILES = [
     'suivi_ok.svg',
     'suivi_stable.svg',
     'suivi_interrogation.svg',
-    'departements-1000m.geojson',
 ]
 const TIMEOUT = 2000 // ms.
 
