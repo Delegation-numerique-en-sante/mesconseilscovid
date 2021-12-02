@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-12-02
+
+* doctrine spécifique pour les cas contact avec le variant Omicron
+* précisions sur la gratuité des tests de dépistage
+* mise à jour des restrictions en Outre-Mer
+
 ## 2021-12-01
 
 * mises à jour mineures des contenus et améliorations d’ergonomie
