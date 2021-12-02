@@ -609,7 +609,7 @@
                         {{ question_symptômes_contact_à_risque_aide|me_or_them }}
                     </div>
                 </div>
-                <div class="secondary disabled">
+                <div class="secondary required disabled">
                     <fieldset>
                         <legend id="contact-a-risque-circonstances-label" class="secondary-title">
                             {{ question_contact_a_risque_circonstances_libellé|inline }}
@@ -656,6 +656,29 @@
                             <input id="contact_a_risque_autre" type="checkbox" name="contact_a_risque_autre" disabled>
                             <label for="contact_a_risque_autre">
                                 {{ question_symptômes_contact_à_risque_autre_libellé|inline|me_or_them }}
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend id="contact-a-risque-circonstances-label" class="secondary-title">
+                            {{ question_contact_a_risque_variante_libellé|inline }}
+                        </legend>
+                        <div class="details">{{ question_contact_a_risque_variante_aide }}</div>
+                        <div role="radiogroup" aria-labelledby="contact-a-risque-variante-label">
+                            <input id="contact_a_risque_variante_aucune" type="radio" required name="contact_a_risque_variante" value="aucune">
+                            <label for="contact_a_risque_variante_aucune">
+                                <span>{{ question_dépistage_variante_aucune_libellé|inline }}</span>
+                            </label>
+                            <input id="contact_a_risque_variante_omicron" type="radio" required name="contact_a_risque_variante" value="omicron">
+                            <label for="contact_a_risque_variante_omicron">
+                                <span>{{ question_dépistage_variante_omicron_libellé|inline }}</span>
+                            </label>
+                            <div class="details">
+                                {{ question_dépistage_variante_omicron_aide }}
+                            </div>
+                            <input id="contact_a_risque_variante_autre" type="radio" required name="contact_a_risque_variante" value="autre">
+                            <label for="contact_a_risque_variante_autre">
+                                <span>{{ question_dépistage_variante_autre_libellé|inline }}</span>
                             </label>
                         </div>
                     </fieldset>

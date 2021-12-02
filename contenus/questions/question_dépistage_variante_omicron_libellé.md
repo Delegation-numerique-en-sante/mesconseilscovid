@@ -1,0 +1,1 @@
+Variant « <b>Omicron</b> »

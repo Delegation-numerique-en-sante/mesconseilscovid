@@ -1,6 +1,7 @@
 import {
     Form,
     enableOrDisableSecondaryFields,
+    getRadioValue,
     preloadCheckboxForm,
     someChecked,
 } from '../../formutils'
@@ -22,6 +23,13 @@ export default function contactarisque(page, app) {
 
     preloadCheckboxForm(form, 'contact_a_risque_stop_covid', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_assurance_maladie', app.profil)
+
+    // Pré-remplit la variante
+    if (app.profil.contact_a_risque_variante) {
+        form.querySelector(
+            `#contact_a_risque_variante_${app.profil.contact_a_risque_variante}`
+        ).checked = true
+    }
 
     var primary = form.elements['contact_a_risque']
     enableOrDisableSecondaryFields(form, primary)
@@ -60,6 +68,12 @@ export default function contactarisque(page, app) {
             event.target.elements['contact_a_risque_assurance_maladie'].checked
         app.profil.contact_a_risque_autre =
             event.target.elements['contact_a_risque_autre'].checked
+        if (app.profil.contact_a_risque) {
+            app.profil.contact_a_risque_variante = getRadioValue(
+                form,
+                'contact_a_risque_variante'
+            )
+        }
         app.enregistrerProfilActuel().then(() => {
             app.goToNextPage('contactarisque')
         })
@@ -82,11 +96,18 @@ function toggleFormButtonOnCheckAndRadiosRequired(
     const AMCheckbox = form.qS(
         'input[type=checkbox]#contact_a_risque_assurance_maladie'
     )
+    const radios = form.radios
 
     function updateSubmitButtonLabelRequired() {
         const hasSecondaryChecks =
             someChecked(secondaryCheckboxes) || otherCheckbox.checked
-        const canContinue = !primaryCheckbox.checked || hasSecondaryChecks
+        const hasSecondaryRadios = form.secondariesRequired.every((secondary) => {
+            return someChecked(
+                Array.from(secondary.querySelectorAll('input[type=radio]'))
+            )
+        })
+        const canContinue =
+            !primaryCheckbox.checked || (hasSecondaryChecks && hasSecondaryRadios)
 
         if (canContinue) {
             button.disabled = false
@@ -108,6 +129,9 @@ function toggleFormButtonOnCheckAndRadiosRequired(
         elem.addEventListener('change', updateSubmitButtonLabelRequired)
     })
     otherCheckbox.addEventListener('change', updateSubmitButtonLabelRequired)
+    radios.forEach((elem) => {
+        elem.addEventListener('change', updateSubmitButtonLabelRequired)
+    })
 
     function updateToggleOnOther() {
         if (otherCheckbox.checked) {
