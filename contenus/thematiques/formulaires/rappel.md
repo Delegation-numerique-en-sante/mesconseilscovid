@@ -75,7 +75,7 @@
 <form id="{{prefixe}}-date-derniere-dose-form" hidden>
     <a href="javascript:;" data-precedent="age" class="back-button">Retour</a>
     <fieldset class="required">
-        <legend><h3 id="{{prefixe}}-date-derniere-dose-label">La date de ma dernière injection, ou de ma dernière infection à la Covid</h3></legend>
+        <legend><h3 id="{{prefixe}}-date-derniere-dose-label">La date de ma dernière injection</h3></legend>
         <input type="date" lang="fr" id="{{prefixe}}_date_derniere_dose" name="{{prefixe}}_date_derniere_dose" required>
     </fieldset>
     <div class="form-controls">
@@ -90,7 +90,7 @@
 
 Vous avez <strong class="age"></strong> et avez été vacciné(e) avec le vaccin <span class="vaccin"></span>.
 
-Votre dernière injection (ou votre dernière infection à la Covid) date du <strong class="date-derniere-dose"></strong>.
+Votre dernière injection date du <strong class="date-derniere-dose"></strong>.
 
 Vous pourrez recevoir votre dose de rappel à partir du <strong class="date-eligibilite-rappel"></strong>.
 
@@ -104,7 +104,7 @@ En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à par
 
 Vous avez <strong class="age"></strong> et avez été vacciné(e) avec le vaccin <span class="vaccin"></span>.
 
-Votre dernière injection (ou votre dernière infection à la Covid) date du <strong class="date-derniere-dose"></strong>.
+Votre dernière injection date du <strong class="date-derniere-dose"></strong>.
 
 Vous pourrez recevoir votre dose de rappel à partir du <strong class="date-eligibilite-rappel"></strong>.
 
