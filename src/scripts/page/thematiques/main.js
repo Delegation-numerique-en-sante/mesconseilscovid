@@ -3,6 +3,7 @@ import { Application } from '@hotwired/stimulus'
 import FeedbackController from './controllers/feedback_controller'
 import SwitchController from './controllers/switch_controller'
 import PlausibleController from './controllers/plausible_controller'
+import ShareController from './controllers/share_controller'
 
 import applyDetailsSummaryPolyfill from '../../polyfills/details_polyfill'
 
@@ -17,6 +18,7 @@ window.Stimulus = Application.start()
 window.Stimulus.register('feedback', FeedbackController)
 window.Stimulus.register('switch', SwitchController)
 window.Stimulus.register('plausible', PlausibleController)
+window.Stimulus.register('share', ShareController)
 window.Stimulus.debug = true
 
 export function pageThematique(app) {
