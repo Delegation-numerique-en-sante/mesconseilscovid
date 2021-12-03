@@ -2,6 +2,7 @@ import { Controller } from '@hotwired/stimulus'
 
 import { getCurrentPageName } from './../../../router'
 import { estPageThematique } from './../navigation'
+import { envoieLesRemarques } from './../../../feedback'
 
 export default class extends Controller {
     static values = {
@@ -27,23 +28,15 @@ export default class extends Controller {
 
     send(event) {
         event.preventDefault()
-        const endpoint = this.endpointValue
-        let message = this.textareaTarget.value
-        if (window.app.source == 'TousAntiCovid') {
-            message += ' #TAC'
-        }
-        const page = estPageThematique()
-            ? document.location.pathname.slice(1)
-            : getCurrentPageName()
-        const payload = {
+        envoieLesRemarques({
+            feedbackHost: this.endpointValue,
             kind: this.kindValue,
-            message: message,
-            page: page,
-        }
-        const request = new XMLHttpRequest()
-        request.open('POST', endpoint, true)
-        request.setRequestHeader('Content-Type', 'application/json')
-        request.send(JSON.stringify(payload))
+            message: this.textareaTarget.value,
+            page: estPageThematique()
+                ? document.location.pathname.slice(1)
+                : getCurrentPageName(),
+            source: window.app.source,
+        })
         this.dispatch('sent')
     }
 }
