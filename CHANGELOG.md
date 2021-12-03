@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-12-03
+
+* cohérence avec l’outil d’Ameli sur la date d’Expiration du pass
+
 ## 2021-12-02
 
 * doctrine spécifique pour les cas contact avec le variant Omicron
