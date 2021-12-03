@@ -103,10 +103,6 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'Si vous la recevez avant le 8 décembre 2021, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
-            )
-            assert.include(
-                statut,
                 'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 décembre 2021.'
             )
         })
@@ -129,10 +125,6 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(
                 statut,
                 'Vous pourrez recevoir votre dose de rappel à partir du 17 octobre 2021.'
-            )
-            assert.include(
-                statut,
-                'Si vous la recevez avant le 8 décembre 2021, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
             )
             assert.include(
                 statut,
@@ -161,10 +153,6 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'Si vous la recevez avant le 8 janvier 2022, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
-            )
-            assert.include(
-                statut,
                 'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 janvier 2022.'
             )
         })
@@ -187,10 +175,6 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(
                 statut,
                 'Vous pourrez recevoir votre dose de rappel à partir du 17 décembre 2021.'
-            )
-            assert.include(
-                statut,
-                'Si vous la recevez avant le 7 février 2022, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
             )
             assert.include(
                 statut,
@@ -219,10 +203,6 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'Si vous la recevez avant le 8 décembre 2021, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
-            )
-            assert.include(
-                statut,
                 'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 décembre 2021.'
             )
         })
@@ -245,10 +225,6 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(
                 statut,
                 'Vous pourrez recevoir votre dose de rappel à partir du 1 septembre 2021.'
-            )
-            assert.include(
-                statut,
-                'Si vous la recevez avant le 8 décembre 2021, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
             )
             assert.include(
                 statut,
@@ -279,10 +255,6 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'Si vous la recevez avant le 8 janvier 2022, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
-            )
-            assert.include(
-                statut,
                 'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 janvier 2022.'
             )
         })
@@ -307,10 +279,6 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'Si vous la recevez avant le 8 janvier 2022, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
-            )
-            assert.include(
-                statut,
                 'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 janvier 2022.'
             )
         })
@@ -332,10 +300,6 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(
                 statut,
                 'Vous pourrez recevoir votre dose de rappel à partir du 17 décembre 2021.'
-            )
-            assert.include(
-                statut,
-                'Si vous la recevez avant le 7 février 2022, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.'
             )
             assert.include(
                 statut,
