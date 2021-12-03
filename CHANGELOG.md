@@ -2,7 +2,8 @@
 
 ## 2021-12-03
 
-* cohérence avec l’outil d’Ameli sur la date d’Expiration du pass
+* cohérence avec l’outil d’Ameli sur la date d’expiration du pass
+* le certificat de la 3e dose est valable immédiatement pour le pass
 * clarifications mineures
 
 ## 2021-12-02
