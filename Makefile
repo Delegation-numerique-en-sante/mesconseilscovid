@@ -31,9 +31,9 @@ clean:  ## Clean up JS related stuff.
 test: test-unit test-integration test-tools test-feedback
 
 ifdef grep
-script_flags = -- --grep $(grep)
+grepping = --grep $(grep)
 else
-script_flags =
+grepping =
 endif
 
 ifdef cover
@@ -42,8 +42,14 @@ else
 	coverage =
 endif
 
+ifdef watch
+	watching = --watch
+else
+	watching =
+endif
+
 test-unit:  ## Run JS unit tests.
-	npm run-script test$(coverage) $(script_flags)
+	npm run-script test$(coverage) -- $(grepping) $(watching)
 
 test-integration: dist/index.html  ## Run JS browser tests.
 ifdef browser
