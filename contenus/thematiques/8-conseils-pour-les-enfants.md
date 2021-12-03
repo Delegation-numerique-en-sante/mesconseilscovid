@@ -207,7 +207,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 
 .. section:: La vaccination contre la Covid
-    :tags: 12 à 18 ans
+    :tags: 4 à 11 ans, 12 à 18 ans
 
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
     :level: 3
@@ -248,6 +248,20 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     </div>
 
+.. question:: Les enfants de moins de 12 ans peuvent-ils être vaccinés ?
+    :level: 3
+    
+    La Haute Autorité de Santé (HAS) **recommande** de vacciner contre la Covid les enfants âgés de **5 à 11 ans** qui :
+    
+    * ont des **comorbidités** les mettant à risque de faire une forme grave (notamment, de développer des « syndromes inflammatoires multi-systémiques pédiatriques » (PIMS));
+    ou
+    * ont dans leur **entourage** proche une **personne fortement immunodéprimée** ou **vulnérable** qui ne peut pas bénéficier de la protection vaccinale.
+    
+    La vaccination est **facultative** et se fera avec une dose pédiatrique (10µg) de **Pfizer**.
+    
+    La campagne de vaccination devrait débuter vers la mi-décembre.
+    
+    Pour l'instant, la vaccination n'est pas élargie à l'ensemble des enfants de cette catégorie d'âge.
 
 .. question:: Les mineurs reçoivent-ils le même nombre de doses que les adultes ?
     :level: 3
