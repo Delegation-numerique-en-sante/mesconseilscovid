@@ -2,8 +2,10 @@
 
 ## 2021-12-03
 
-* cohérence avec l’outil d’Ameli sur la date d’expiration du pass
-* le certificat de la 3e dose est valable immédiatement pour le pass
+* formulaire de calcul pour le rappel :
+  1. alignement sur l’outil d’Ameli sur la date d’expiration du pass
+  2. le certificat de la 3e dose est valable immédiatement pour le pass
+  3. alignement sur la nouvelle règle de calcul commune
 * clarifications mineures
 
 ## 2021-12-02
