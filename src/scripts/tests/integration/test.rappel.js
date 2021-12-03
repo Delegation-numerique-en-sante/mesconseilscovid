@@ -128,7 +128,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 décembre 2021.'
+                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 17 décembre 2021.'
             )
         })
 
@@ -153,7 +153,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 janvier 2022.'
+                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 17 janvier 2022.'
             )
         })
 
@@ -178,7 +178,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 14 février 2022.'
+                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 16 février 2022.'
             )
         })
 
@@ -279,7 +279,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 janvier 2022.'
+                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 17 janvier 2022.'
             )
         })
         it('18 à 65 ans, 17 juillet', async function () {
@@ -303,7 +303,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 14 février 2022.'
+                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 16 février 2022.'
             )
         })
     })

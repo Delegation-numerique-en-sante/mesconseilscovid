@@ -18,12 +18,15 @@ import {
 import { Formulaire } from './formulaire'
 
 // Il faut suivre une arithmétique un peu particulière pour les dates pour être
-// cohérent avec l’outil de la CNAM (https://monrappelvaccincovid.ameli.fr/).
-// La règle de calcul utilisée dans TAC pour l’expiration du pass sanitaire
-// est de compter 30,4 jours par mois, puis d’arrondir à l’entier inférieur.
-// Alors que pour l’égibilité au rappel, on utilise des mois pleins…
-const JOURS_DANS_2_MOIS = 60
-const JOURS_DANS_7_MOIS = 212
+// cohérent avec l’application TousAntiCovid ainsi qu’avec l’outil de la CNAM
+// (https://monrappelvaccincovid.ameli.fr/), sous réserve de leur mise à jour.
+// La règle de calcul commune pour l’éligibilité au rappel, comme pour
+// l’expiration du pass sanitaire est (finalement) de compter 30,5 jours
+// par mois, puis d’arrondir à l’entier supérieur.
+const JOURS_DANS_1_MOIS = 31
+const JOURS_DANS_2_MOIS = 61
+const JOURS_DANS_5_MOIS = 153
+const JOURS_DANS_7_MOIS = 214
 
 export function dynamiseLaProlongationDuPass(prefixe) {
     const formulaire = new FormulaireProlongationPassSanitaire(prefixe)
@@ -159,10 +162,12 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                             : dayjs('2021/11/27')
 
                     // À partir de quelle date faire le rappel ?
-                    const delaiEligibiliteEnMois = this.janssen ? 1 : 5
+                    const delaiEligibiliteEnJours = this.janssen
+                        ? JOURS_DANS_1_MOIS
+                        : JOURS_DANS_5_MOIS
                     const dateEligibiliteRappel = dayjs.max(
                         debutCampagneRappel,
-                        dateDerniereDose.add(delaiEligibiliteEnMois, 'month')
+                        dateDerniereDose.add(delaiEligibiliteEnJours, 'day')
                     )
 
                     // Avant quelle date faire le rappel pour ne pas perdre son pass /
