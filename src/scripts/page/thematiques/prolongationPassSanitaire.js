@@ -165,7 +165,8 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                         dateDerniereDose.add(delaiEligibiliteEnMois, 'month')
                     )
 
-                    // A quel date mon pass cessera-t-il d’être valable ?
+                    // Avant quelle date faire le rappel pour ne pas perdre son pass /
+                    // à quelle date mon pass cessera-t-il d’être valable ?
                     const dateEntreeEnVigueur =
                         this.age === 'plus65' || this.janssen
                             ? dayjs('2021/12/15')
@@ -177,9 +178,6 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                         dateEntreeEnVigueur,
                         dateDerniereDose.add(delaiExpirationPassEnJours, 'day')
                     )
-
-                    // Avant quelle date faire le rappel pour ne pas perdre son pass ?
-                    const dateLimiteRappel = dateLimitePass.subtract(1, 'week')
 
                     let params = {
                         'age':
@@ -197,7 +195,6 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                     }
 
                     if (this.prolongationPass) {
-                        params['date-limite-rappel'] = dateLimiteRappel.format('LL')
                         params['desactivation-pass-sanitaire'] =
                             dateLimitePass.format('LL')
                         this.afficheReponse('rappel-et-pass', params)
