@@ -20,22 +20,22 @@ describe('Feedback', function () {
         assert.strictEqual(link.dataset.feedbackKindValue, undefined)
         link.click()
         assert.strictEqual(link.dataset.feedbackKindValue, 'positif')
-    }),
-        it('Avis négatif', async function () {
-            await stimulusSetup(
-                `
+    })
+    it('Avis négatif', async function () {
+        await stimulusSetup(
+            `
                 <a data-controller="feedback"
                    data-action="feedback#setNegativeFeedback">
                 </a>
                 `,
-                'feedback',
-                FeedbackController
-            )
+            'feedback',
+            FeedbackController
+        )
 
-            const link = document.querySelector('a')
+        const link = document.querySelector('a')
 
-            assert.strictEqual(link.dataset.feedbackKindValue, undefined)
-            link.click()
-            assert.strictEqual(link.dataset.feedbackKindValue, 'negatif')
-        })
+        assert.strictEqual(link.dataset.feedbackKindValue, undefined)
+        link.click()
+        assert.strictEqual(link.dataset.feedbackKindValue, 'negatif')
+    })
 })
