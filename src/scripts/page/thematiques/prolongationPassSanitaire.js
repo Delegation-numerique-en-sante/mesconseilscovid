@@ -17,6 +17,14 @@ import {
 } from '../../formutils'
 import { Formulaire } from './formulaire'
 
+// Il faut suivre une arithmétique un peu particulière pour les dates pour être
+// cohérent avec l’outil de la CNAM (https://monrappelvaccincovid.ameli.fr/).
+// La règle de calcul utilisée dans TAC pour l’expiration du pass sanitaire
+// est de compter 30,4 jours par mois, puis d’arrondir à l’entier inférieur.
+// Alors que pour l’égibilité au rappel, on utilise des mois pleins…
+const JOURS_DANS_2_MOIS = 60
+const JOURS_DANS_7_MOIS = 212
+
 export function dynamiseLaProlongationDuPass(prefixe) {
     const formulaire = new FormulaireProlongationPassSanitaire(prefixe)
     formulaire.demarre()
@@ -151,10 +159,10 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                             : dayjs('2021/11/27')
 
                     // À partir de quelle date faire le rappel ?
-                    const delaiEnMois = this.janssen ? 1 : 5
+                    const delaiEligibiliteEnMois = this.janssen ? 1 : 5
                     const dateEligibiliteRappel = dayjs.max(
                         debutCampagneRappel,
-                        dateDerniereDose.add(delaiEnMois, 'month')
+                        dateDerniereDose.add(delaiEligibiliteEnMois, 'month')
                     )
 
                     // A quel date mon pass cessera-t-il d’être valable ?
@@ -162,9 +170,12 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                         this.age === 'plus65' || this.janssen
                             ? dayjs('2021/12/15')
                             : dayjs('2022/01/15')
+                    const delaiExpirationPassEnJours = this.janssen
+                        ? JOURS_DANS_2_MOIS
+                        : JOURS_DANS_7_MOIS
                     const dateLimitePass = dayjs.max(
                         dateEntreeEnVigueur,
-                        dateDerniereDose.add(delaiEnMois + 2, 'month')
+                        dateDerniereDose.add(delaiExpirationPassEnJours, 'day')
                     )
 
                     // Avant quelle date faire le rappel pour ne pas perdre son pass ?
