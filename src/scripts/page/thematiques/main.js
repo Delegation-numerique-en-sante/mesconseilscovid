@@ -2,6 +2,7 @@ import { Application } from '@hotwired/stimulus'
 
 import FeedbackController from './controllers/feedback_controller'
 import SwitchController from './controllers/switch_controller'
+import PlausibleController from './controllers/plausible_controller'
 
 import applyDetailsSummaryPolyfill from '../../polyfills/details_polyfill'
 
@@ -15,6 +16,7 @@ import { dynamiseLaProlongationDuPass } from './prolongationPassSanitaire'
 window.Stimulus = Application.start()
 window.Stimulus.register('feedback', FeedbackController)
 window.Stimulus.register('switch', SwitchController)
+window.Stimulus.register('plausible', PlausibleController)
 window.Stimulus.debug = true
 
 export function pageThematique(app) {

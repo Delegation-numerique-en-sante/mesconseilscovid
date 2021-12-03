@@ -44,5 +44,6 @@ export default class extends Controller {
         request.open('POST', endpoint, true)
         request.setRequestHeader('Content-Type', 'application/json')
         request.send(JSON.stringify(payload))
+        this.dispatch('sent')
     }
 }

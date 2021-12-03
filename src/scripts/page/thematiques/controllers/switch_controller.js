@@ -11,25 +11,29 @@ export default class extends Controller {
         return this.element.querySelector(`[data-switch-screen="${screenName}"]`)
     }
 
-    #fadeIn() {
+    #fadeOut() {
         this.element.style.opacity = '0'
     }
 
-    #fadeOut(source, destination) {
+    #fadeIn(sources, destinations) {
         this.element.style.opacity = '1'
-        hideElement(this.#getScreen(source))
-        showElement(this.#getScreen(destination))
+        for (let source of sources.split(/\s+/)) {
+            hideElement(this.#getScreen(source))
+        }
+        for (let destination of destinations.split(/\s+/)) {
+            showElement(this.#getScreen(destination))
+        }
     }
 
     switch(event) {
         event.preventDefault()
         this.element.style.transition = `opacity ${this.delayValue}ms`
-        this.#fadeIn()
-        const { source, destination} = event.params
+        this.#fadeOut()
+        const { sources, destinations } = event.params
         this.element.addEventListener(
             'transitionend',
             () => {
-                this.#fadeOut(source, destination)
+                this.#fadeIn(sources, destinations)
                 this.dispatch('switched')
             },
             { once: true } // IE12+

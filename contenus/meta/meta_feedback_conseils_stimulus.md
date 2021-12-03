@@ -1,25 +1,36 @@
-<div data-controller="switch feedback" 
+<div data-controller="switch feedback plausible" 
     data-switch-delay-value="500" 
-    data-action="switch:switched->feedback#focusIfVisible"
+    data-action="
+        switch:switched->feedback#focusIfVisible 
+        feedback:sent->switch#switch
+    "
+    data-switch-sources-param="feedback"
+    data-switch-destinations-param="thankyou partager"
     data-feedback-endpoint-value="http://localhost:1234/feedback">
-    <div data-switch-screen="controls">
+    <div data-switch-screen="controls" 
+        data-action="pageChanged@document->switch#switch"
+        data-switch-sources-param="feedback thankyou partager"
+        data-switch-destinations-param="controls">
         <p>Ces conseils vous ont été utiles ?</p>
         <div class="feedback-controls">
             <a class="button button-outline button-feedback button-feedback-positif" 
-            data-feedback="positif" href="" role="button"
-            data-action="switch#switch feedback#setPositiveFeedback"
-            data-switch-source-param="controls" 
-            data-switch-destination-param="feedback">Oui</a>
+            href="" role="button"
+            data-action="switch#switch feedback#setPositiveFeedback plausible#record"
+            data-plausible-event-name-param="Avis positif"
+            data-switch-sources-param="controls" 
+            data-switch-destinations-param="feedback">Oui</a>
             <a class="button button-outline button-feedback button-feedback-negatif" 
-            data-feedback="negatif" href="" role="button"
-            data-action="switch#switch feedback#setNegativeFeedback"
-            data-switch-source-param="controls" 
-            data-switch-destination-param="feedback">Non</a>
+            href="" role="button"
+            data-action="switch#switch feedback#setNegativeFeedback plausible#record"
+            data-plausible-event-name-param="Avis négatif"
+            data-switch-sources-param="controls" 
+            data-switch-destinations-param="feedback">Non</a>
             <a class="button button-outline button-partager button-feedback-partager" 
             href="" role="button"
-            data-action="switch#switch"
-            data-switch-source-param="controls" 
-            data-switch-destination-param="partager">Partager</a>
+            data-action="switch#switch plausible#record"
+            data-plausible-event-name-param="Menu Partager"
+            data-switch-sources-param="controls" 
+            data-switch-destinations-param="partager">Partager</a>
             <a class="button button-outline button-imprimer button-feedback-imprimer js-impression" 
             href="" role="button">Imprimer</a>
         </div>
@@ -35,10 +46,7 @@
                 ></textarea>
             </fieldset>
             <div class="form-controls">
-                <input type="submit" class="button" value="Envoyer mes remarques"
-                data-action="switch#switch"
-                data-switch-source-param="feedback" 
-                data-switch-destination-param="thankyou">
+                <input type="submit" class="button" value="Envoyer mes remarques">
             </div>
         </form>
         <p class="feedback-email">ou écrivez-nous à : <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a></p>
@@ -54,13 +62,25 @@
         </p>
         <ul>
             <li>
-                <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fmesconseilscovid.sante.gouv.fr%2F&t=Mes%20Conseils%20Covid%20%3A%20Des%20conseils%20personnels%20pour%20agir%20contre%20le%20virus" class="button button-outline button-feedback-social-facebook" target="_blank" rel="noopener noreferrer" data-service="facebook">sur Facebook</a>
+                <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fmesconseilscovid.sante.gouv.fr%2F&t=Mes%20Conseils%20Covid%20%3A%20Des%20conseils%20personnels%20pour%20agir%20contre%20le%20virus" class="button button-outline button-feedback-social-facebook" target="_blank" rel="noopener noreferrer"
+                data-action="plausible#record"
+                data-plausible-event-name-param="Partager avec…"
+                data-plausible-props-param='{"service": "facebook"}'
+                >sur Facebook</a>
             </li>
             <li>
-                <a href="fb-messenger://share/?link=https%3A%2F%2Fmesconseilscovid.sante.gouv.fr%2F&app_id=199122945319221" class="button button-outline button-feedback-social-messenger" target="_blank" rel="noopener noreferrer" data-service="messenger">sur Messenger</a>
+                <a href="fb-messenger://share/?link=https%3A%2F%2Fmesconseilscovid.sante.gouv.fr%2F&app_id=199122945319221" class="button button-outline button-feedback-social-messenger" target="_blank" rel="noopener noreferrer"
+                data-action="plausible#record"
+                data-plausible-event-name-param="Partager avec…"
+                data-plausible-props-param='{"service": "messenger"}'
+                >sur Messenger</a>
             </li>
             <li>
-                <a href="https://wa.me/?text=Mes%20Conseils%20Covid%20%3A%20Des%20conseils%20personnels%20pour%20agir%20contre%20le%20virus%20%E2%80%94%20https%3A%2F%2Fmesconseilscovid.sante.gouv.fr%2F" class="button button-outline button-feedback-social-whatsapp" target="_blank" rel="noopener noreferrer" data-service="whatsapp">sur WhatsApp</a>
+                <a href="https://wa.me/?text=Mes%20Conseils%20Covid%20%3A%20Des%20conseils%20personnels%20pour%20agir%20contre%20le%20virus%20%E2%80%94%20https%3A%2F%2Fmesconseilscovid.sante.gouv.fr%2F" class="button button-outline button-feedback-social-whatsapp" target="_blank" rel="noopener noreferrer"
+                data-action="plausible#record"
+                data-plausible-event-name-param="Partager avec…"
+                data-plausible-props-param='{"service": "whatsapp"}'
+                >sur WhatsApp</a>
             </li>
         </ul>
     </div>
