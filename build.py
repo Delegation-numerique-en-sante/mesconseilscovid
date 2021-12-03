@@ -84,9 +84,6 @@ def thematiques():
                 "thematiques": autres_thematiques[:NB_OF_DISPLAYED_THEMATIQUES],
                 "config_stats_url": responses["config_stats_url"],
                 "meta_feedback_conseils": responses["meta_feedback_conseils"],
-                "meta_feedback_conseils_stimulus": responses[
-                    "meta_feedback_conseils_stimulus"
-                ],
                 "meta_pied_de_page": meta_pied_de_page,
             },
         )

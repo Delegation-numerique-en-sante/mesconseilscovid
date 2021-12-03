@@ -24,10 +24,10 @@ describe('Feedback', function () {
     it('Avis négatif', async function () {
         await stimulusSetup(
             `
-                <a data-controller="feedback"
-                   data-action="feedback#setNegativeFeedback">
-                </a>
-                `,
+            <a data-controller="feedback"
+               data-action="feedback#setNegativeFeedback">
+            </a>
+            `,
             'feedback',
             FeedbackController
         )

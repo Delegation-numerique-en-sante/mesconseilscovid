@@ -11,7 +11,6 @@ import {
     showOnlyIf,
     showSelector,
 } from '../affichage'
-import { bindFeedback } from '../feedback'
 import * as injection from '../injection'
 import { joursAvant, joursApres, titleCase } from '../utils'
 
@@ -89,7 +88,6 @@ export default function conseils(page, app) {
     }
 
     // Make the buttons clickable with appropriate actions.
-    bindFeedback(element.querySelector('.feedback-component'), app)
     bindImpression(element, app)
     if (app.profil.hasSuiviStartDate()) {
         bindCalendar(element, app.profil)

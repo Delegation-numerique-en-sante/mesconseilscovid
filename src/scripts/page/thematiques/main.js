@@ -8,7 +8,7 @@ import ShareController from './controllers/share_controller'
 import applyDetailsSummaryPolyfill from '../../polyfills/details_polyfill'
 
 import { bindImpression } from '../../actions'
-import { bindFeedback, opacityTransition, envoieLesRemarques } from '../../feedback'
+import { opacityTransition, envoieLesRemarques } from '../../feedback'
 import { navigueVersUneThematique } from './navigation'
 import { dynamiseLeChoixDuTest } from './choixTestDepistage'
 import { dynamiseLeChoixDuPass } from './choixPassSanitaire'
@@ -23,7 +23,6 @@ window.Stimulus.debug = true
 
 export function pageThematique(app) {
     app.trackPageView(document.location.pathname)
-    bindFeedback(document.querySelector('.feedback-component'), app)
     bindImpression(document, app)
     Array.from(document.querySelectorAll('.cta [data-set-profil]')).forEach(
         (lienVersProfil) => {
