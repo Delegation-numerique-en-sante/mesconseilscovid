@@ -3,6 +3,7 @@
 ## 2021-12-03
 
 * cohérence avec l’outil d’Ameli sur la date d’Expiration du pass
+* clarifications mineures
 
 ## 2021-12-02
 
