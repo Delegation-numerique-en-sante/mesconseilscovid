@@ -29,6 +29,7 @@ import pytest
         ("150 g de farine", "150&#8239;g de farine"),
         ("150 gibbons", "150&nbsp;gibbons"),
         ("200 mg", "200&#8239;mg"),
+        ("200 µg", "200&#8239;µg"),
         ("à 10 000 kilomètres", "à 10&#8239;000&nbsp;kilomètres"),
         ("100&nbsp;%", "100&#8239;%"),
         ("pour&nbsp;100&nbsp;% des cas", "pour&nbsp;100&#8239;% des cas"),
