@@ -53,11 +53,11 @@ test-unit:  ## Run JS unit tests.
 
 test-integration: dist/index.html  ## Run JS browser tests.
 ifdef browser
-	BROWSER=$(browser) npm run-script test-integration $(script_flags)
+	BROWSER=$(browser) npm run-script test-integration -- $(grepping)
 else
-	BROWSER=chromium npm run-script test-integration $(script_flags)
-	BROWSER=firefox npm run-script test-integration $(script_flags)
-	BROWSER=webkit npm run-script test-integration $(script_flags)
+	BROWSER=chromium npm run-script test-integration -- $(grepping)
+	BROWSER=firefox npm run-script test-integration -- $(grepping)
+	BROWSER=webkit npm run-script test-integration -- $(grepping)
 endif
 
 test-tools:
