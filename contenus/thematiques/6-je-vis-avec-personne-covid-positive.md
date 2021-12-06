@@ -125,7 +125,7 @@ Le test est **toujours gratuit** quand vous êtes cas contact.
 
 </div>
 
-Si vous ne pouvez pas télétravailler, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr/).
+Si vous devez **garder votre enfant positif** à la Covid mais que vous ne pouvez pas télétravailler, vous pouvez bénéficier du **chômage partiel**. Pour plus d’information sur la démarche, consultez notre [page dédiée aux conseils pour les mineurs]#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid).
 
 #### 2. Faites un test de contrôle
 
