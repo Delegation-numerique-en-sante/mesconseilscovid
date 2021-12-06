@@ -48,9 +48,11 @@
 
     **L’agueusie** (perte de goût) et **l’anosmie** (perte de l’odorat) sont des symptômes fréquents de la Covid qui peuvent persister plusieurs semaines après la guérison.
 
-    Il est possible de **rééduquer** votre goût et votre odorat. Nous vous conseillons d’en parler à votre **médecin traitant** rapidement pour qu’il vous accompagne dans ce processus. N’hésitez pas à partager avec lui :
-    * ce [protocole de rééducation olfactive](https://www.has-sante.fr/upload/docs/application/pdf/2021-11/fiche_troubles_du_gout_et_de_l_odorat.pdf) proposé par la Haute autorité de santé (HAS) (voir en page 5)
-    * et cette [application gratuite de réeducation olfactive](https://covidanosmie.fr/), créee par l'association Anosmie.org.
+    Il est possible de **rééduquer** votre goût et votre odorat. Nous vous conseillons d’en parler à votre **médecin traitant** rapidement pour qu’il vous accompagne dans ce processus.
+
+    N’hésitez pas à partager avec lui :
+    * le [protocole de rééducation olfactive](https://www.has-sante.fr/upload/docs/application/pdf/2021-11/fiche_troubles_du_gout_et_de_l_odorat.pdf) (_voir en page 5_), proposé par la Haute autorité de santé (HAS) ;
+    * l’application gratuite de réeducation olfactive [covidanosmie.fr](https://covidanosmie.fr/), proposée par l’association Anosmie.org.
 
 .. question:: Quel est le traitement contre le Covid long ?
 
