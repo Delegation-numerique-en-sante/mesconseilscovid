@@ -107,6 +107,23 @@ const matrice = [
         conseils: 'depistage-positif-asymptomatique',
     },
     {
+        description:
+            'Positif (PCR) et contact à risque (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            contact_a_risque: true,
+            contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'omicron',
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'positif',
+            _depistage_start_date: new Date().toJSON(),
+        },
+        situation: 'positif_contact_a_risque',
+        statut: 'asymptomatique',
+        conseils: 'depistage-positif-asymptomatique',
+    },
+    {
         description: 'Positif (antigénique) et contact à risque (complètement vacciné)',
         profil: {
             vaccins: 'completement',
@@ -119,6 +136,23 @@ const matrice = [
             _depistage_start_date: new Date().toJSON(),
         },
         situation: 'positif_contact_a_risque_vaccine',
+        statut: 'asymptomatique',
+        conseils: 'depistage-positif-asymptomatique',
+    },
+    {
+        description:
+            'Positif (antigénique) et contact à risque (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            contact_a_risque: true,
+            contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'omicron',
+            depistage: true,
+            depistage_type: 'antigenique',
+            depistage_resultat: 'positif',
+            _depistage_start_date: new Date().toJSON(),
+        },
+        situation: 'positif_contact_a_risque',
         statut: 'asymptomatique',
         conseils: 'depistage-positif-asymptomatique',
     },
@@ -186,6 +220,40 @@ const matrice = [
             _depistage_start_date: new Date().toJSON(),
         },
         situation: 'positif_contact_a_risque_meme_lieu_de_vie_vaccine',
+        statut: 'asymptomatique',
+        conseils: 'depistage-positif-asymptomatique',
+    },
+    {
+        description:
+            'Positif (PCR) et contact à risque même lieu de vie (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'omicron',
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'positif',
+            _depistage_start_date: new Date().toJSON(),
+        },
+        situation: 'positif_contact_a_risque_meme_lieu_de_vie',
+        statut: 'asymptomatique',
+        conseils: 'depistage-positif-asymptomatique',
+    },
+    {
+        description:
+            'Positif (antigénique) et contact à risque même lieu de vie (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'omicron',
+            depistage: true,
+            depistage_type: 'antigenique',
+            depistage_resultat: 'positif',
+            _depistage_start_date: new Date().toJSON(),
+        },
+        situation: 'positif_contact_a_risque_meme_lieu_de_vie',
         statut: 'asymptomatique',
         conseils: 'depistage-positif-asymptomatique',
     },
@@ -364,6 +432,23 @@ const matrice = [
     },
     {
         description:
+            'Positif (autotest) et contact à risque (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            contact_a_risque: true,
+            contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'omicron',
+            depistage: true,
+            depistage_type: 'antigenique_autotest',
+            depistage_resultat: 'positif',
+            _depistage_start_date: new Date().toJSON(),
+        },
+        situation: 'autotest_positif_contact_a_risque',
+        statut: 'asymptomatique-positif-autotest',
+        conseils: 'depistage-positif-autotest-asymptomatique',
+    },
+    {
+        description:
             'Positif (autotest) et contact à risque (pas complètement vacciné)',
         profil: {
             vaccins: 'pas_encore',
@@ -393,6 +478,23 @@ const matrice = [
             _depistage_start_date: new Date().toJSON(),
         },
         situation: 'autotest_positif_contact_a_risque_meme_lieu_de_vie_vaccine',
+        statut: 'asymptomatique-positif-autotest',
+        conseils: 'depistage-positif-autotest-asymptomatique',
+    },
+    {
+        description:
+            'Positif (autotest) et contact à risque même lieu de vie (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'omicron',
+            depistage: true,
+            depistage_type: 'antigenique_autotest',
+            depistage_resultat: 'positif',
+            _depistage_start_date: new Date().toJSON(),
+        },
+        situation: 'autotest_positif_contact_a_risque_meme_lieu_de_vie',
         statut: 'asymptomatique-positif-autotest',
         conseils: 'depistage-positif-autotest-asymptomatique',
     },
@@ -581,6 +683,22 @@ const matrice = [
         conseils: 'contact-a-risque-vaccine',
     },
     {
+        description: 'Négatif et contact à risque (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            contact_a_risque: true,
+            contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'omicron',
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: new Date().toJSON(),
+        },
+        situation: 'negatif_contact_a_risque',
+        statut: 'contact-a-risque-avec-test',
+        conseils: 'contact-a-risque-avec-test',
+    },
+    {
         description: 'Négatif et contact à risque (pas complètement vacciné)',
         profil: {
             vaccins: 'pas_encore',
@@ -612,6 +730,23 @@ const matrice = [
         situation: 'negatif_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-meme-lieu-de-vie-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+    },
+    {
+        description:
+            'Négatif et contact à risque même lieu de vie (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'omicron',
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: new Date().toJSON(),
+        },
+        situation: 'negatif_contact_a_risque_meme_lieu_de_vie',
+        statut: 'contact-a-risque-meme-lieu-de-vie',
+        conseils: 'contact-a-risque-meme-lieu-de-vie',
     },
     {
         description:
@@ -771,6 +906,23 @@ const matrice = [
         conseils: 'contact-a-risque-vaccine',
     },
     {
+        description:
+            'En attente et contact à risque (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            contact_a_risque: true,
+            contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'omicron',
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'en_attente',
+            _depistage_start_date: new Date().toJSON(),
+        },
+        situation: 'en_attente_contact_a_risque',
+        statut: 'contact-a-risque-avec-test',
+        conseils: 'contact-a-risque-avec-test',
+    },
+    {
         description: 'En attente et contact à risque (pas complètement vacciné)',
         profil: {
             vaccins: 'pas_encore',
@@ -802,6 +954,23 @@ const matrice = [
         situation: 'en_attente_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-meme-lieu-de-vie-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+    },
+    {
+        description:
+            'En attente et contact à risque même lieu de vie (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'omicron',
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'en_attente',
+            _depistage_start_date: new Date().toJSON(),
+        },
+        situation: 'en_attente_contact_a_risque_meme_lieu_de_vie',
+        statut: 'contact-a-risque-meme-lieu-de-vie',
+        conseils: 'contact-a-risque-meme-lieu-de-vie',
     },
     {
         description:
@@ -893,6 +1062,20 @@ const matrice = [
         conseils: 'contact-a-risque-vaccine',
     },
     {
+        description:
+            'Pas testé et contact à risque (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            contact_a_risque: true,
+            contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'omicron',
+            depistage: false,
+        },
+        situation: 'pas_teste_contact_a_risque',
+        statut: 'contact-a-risque-sans-test',
+        conseils: 'contact-a-risque-sans-test',
+    },
+    {
         description: 'Pas testé et contact à risque (guérison < 2 mois)',
         profil: {
             vaccins: 'pas_encore',
@@ -948,6 +1131,20 @@ const matrice = [
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-meme-lieu-de-vie-sans-depistage-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-sans-depistage-vaccine',
+    },
+    {
+        description:
+            'Pas testé et contact à risque même lieu de vie (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'omicron',
+            depistage: false,
+        },
+        situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie',
+        statut: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
+        conseils: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
     },
     {
         description:
@@ -1075,6 +1272,23 @@ const matrice = [
     },
     {
         description:
+            'Test négatif obsolète et contact à risque (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: joursAvant(7),
+            contact_a_risque: true,
+            contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'omicron',
+        },
+        situation: 'pas_teste_contact_a_risque',
+        statut: 'contact-a-risque-sans-test',
+        conseils: 'contact-a-risque-sans-test',
+    },
+    {
+        description:
             'Test négatif obsolète et contact à risque (pas complètement vacciné)',
         profil: {
             vaccins: 'pas_encore',
@@ -1106,6 +1320,23 @@ const matrice = [
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-meme-lieu-de-vie-sans-depistage-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-sans-depistage-vaccine',
+    },
+    {
+        description:
+            'Test négatif obsolète et contact à risque même lieu de vie (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'negatif',
+            _depistage_start_date: joursAvant(7),
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'omicron',
+        },
+        situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie',
+        statut: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
+        conseils: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
     },
     {
         description:
@@ -1255,6 +1486,23 @@ const matrice = [
     },
     {
         description:
+            'Test positif obsolète et contact à risque (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'positif',
+            _depistage_start_date: joursAvant(30),
+            contact_a_risque: true,
+            contact_a_risque_contact_direct: true,
+            contact_a_risque_variante: 'omicron',
+        },
+        situation: 'pas_teste_contact_a_risque',
+        statut: 'contact-a-risque-sans-test',
+        conseils: 'contact-a-risque-sans-test',
+    },
+    {
+        description:
             'Test positif obsolète et contact à risque (pas complètement vacciné)',
         profil: {
             vaccins: 'pas_encore',
@@ -1286,6 +1534,23 @@ const matrice = [
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-meme-lieu-de-vie-sans-depistage-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-sans-depistage-vaccine',
+    },
+    {
+        description:
+            'Test positif obsolète et contact à risque même lieu de vie (complètement vacciné) avec Omicron',
+        profil: {
+            vaccins: 'completement',
+            depistage: true,
+            depistage_type: 'rt-pcr',
+            depistage_resultat: 'positif',
+            _depistage_start_date: joursAvant(30),
+            contact_a_risque: true,
+            contact_a_risque_meme_lieu_de_vie: true,
+            contact_a_risque_variante: 'omicron',
+        },
+        situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie',
+        statut: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
+        conseils: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
     },
     {
         description:

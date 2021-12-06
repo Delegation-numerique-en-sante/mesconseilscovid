@@ -57,6 +57,7 @@ export async function remplirQuestionnaire(page, choix) {
         await remplirContactsARisque(
             page,
             choix.contactARisque,
+            choix.contactARisqueVariante,
             choix.contactARisqueTAC,
             choix.contactARisqueAM
         )
@@ -266,6 +267,7 @@ async function remplirSymptomes(page, symptomesActuels, symptomesPasses, date) {
 async function remplirContactsARisque(
     page,
     contactARisque,
+    contactARisqueVariante,
     contactARisqueTAC,
     contactARisqueAM
 ) {
@@ -284,6 +286,12 @@ async function remplirContactsARisque(
             )
             await label.click()
         })
+
+        label = await page.waitForSelector(
+            `#page.ready label[for="contact_a_risque_variante_${contactARisqueVariante}"]`
+        )
+        await label.click()
+
         text = '"Continuer"'
     } else if (contactARisqueTAC) {
         // La "vraie" case à cocher est cachée, alors on clique sur le label.

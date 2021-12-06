@@ -12,11 +12,6 @@ describe('Parcours', function () {
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
-        const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
-        )
-        await summary.click()
-
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
@@ -123,11 +118,6 @@ describe('Parcours', function () {
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
-        const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
-        )
-        await summary.click()
-
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
@@ -173,11 +163,6 @@ describe('Parcours', function () {
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
-        const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
-        )
-        await summary.click()
-
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
@@ -209,7 +194,7 @@ describe('Parcours', function () {
         )
         assert.include(
             (await statut.innerText()).trim(),
-            'Restez isolé(e) le temps de faire un test.\n\nBien que vous soyez vacciné(e), le risque de contamination ne peut pas être complètement écarté, en particulier face au variant Delta.'
+            'Restez isolé(e) le temps de faire un test.\n\nBien que vous soyez vacciné(e), le risque de contamination ne peut pas être complètement écarté, en particulier face au variant Omicron.'
         )
 
         await waitForPlausibleTrackingEvent(page, 'Questionnaire commencé:symptomes')
@@ -222,11 +207,6 @@ describe('Parcours', function () {
 
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
-
-        const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
-        )
-        await summary.click()
 
         // On clique sur le bouton pour des conseils pour moi.
         {
@@ -261,11 +241,6 @@ describe('Parcours', function () {
 
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
-
-        const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
-        )
-        await summary.click()
 
         // On clique sur le bouton pour des conseils pour moi.
         {
@@ -303,11 +278,6 @@ describe('Parcours', function () {
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
-        const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
-        )
-        await summary.click()
-
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
@@ -325,6 +295,7 @@ describe('Parcours', function () {
             symptomesActuels: [],
             symptomesPasses: false,
             contactARisque: ['contact_direct'],
+            contactARisqueVariante: 'aucune',
             depistage: false,
             enfants: true,
             age: '42',
@@ -353,11 +324,6 @@ describe('Parcours', function () {
 
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
-
-        const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
-        )
-        await summary.click()
 
         // On clique sur le bouton pour des conseils pour moi.
         {
@@ -406,11 +372,6 @@ describe('Parcours', function () {
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
-        const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
-        )
-        await summary.click()
-
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
@@ -457,11 +418,6 @@ describe('Parcours', function () {
 
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
-
-        const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
-        )
-        await summary.click()
 
         // On clique sur le bouton pour des conseils pour moi.
         {
@@ -512,11 +468,6 @@ describe('Parcours', function () {
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
-        const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
-        )
-        await summary.click()
-
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
@@ -564,11 +515,6 @@ describe('Parcours', function () {
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
-        const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
-        )
-        await summary.click()
-
         // On clique sur le bouton pour des conseils pour moi.
         {
             let bouton = await page.waitForSelector(
@@ -603,11 +549,6 @@ describe('Parcours', function () {
 
         // On va vers la page des symptômes.
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
-
-        const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
-        )
-        await summary.click()
 
         // On clique sur le bouton pour des conseils pour moi.
         {

@@ -655,6 +655,13 @@ export default class Profil {
         )
     }
 
+    hasContactARisqueOmicron() {
+        return (
+            typeof this.contact_a_risque_variante !== 'undefined' &&
+            this.contact_a_risque_variante === 'omicron'
+        )
+    }
+
     hasSuiviStartDate() {
         return typeof this._suivi_start_date !== 'undefined'
     }

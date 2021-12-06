@@ -677,4 +677,21 @@ describe('Profil', function () {
         assert.isFalse(profil.hasCovidPlus6Mois())
         assert.isFalse(profil.hasCovidPlus2Mois())
     })
+
+    it('Par défaut, un profil n’a pas la variante Omicron', function () {
+        const profil = new Profil('mes_infos')
+        assert.isFalse(profil.hasContactARisqueOmicron())
+    })
+    it('On sait identifier les profils qui n’ont pas la variante Omicron', function () {
+        const profil = new Profil('mes_infos', {
+            contact_a_risque_variante: 'autre',
+        })
+        assert.isFalse(profil.hasContactARisqueOmicron())
+    })
+    it('On sait identifier les profils qui ont la variante Omicron', function () {
+        const profil = new Profil('mes_infos', {
+            contact_a_risque_variante: 'omicron',
+        })
+        assert.isTrue(profil.hasContactARisqueOmicron())
+    })
 })

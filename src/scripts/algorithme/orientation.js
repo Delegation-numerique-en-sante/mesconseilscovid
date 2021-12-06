@@ -96,14 +96,17 @@ export default class AlgorithmeOrientation {
         } else if (this.profil.hasContactARisqueReconnus()) {
             const algoVaccination = new AlgorithmeVaccination(this.profil, this)
             const completementVaccine = algoVaccination.isCompletementVaccine()
+            const contactARisqueOmicron = this.profil.hasContactARisqueOmicron()
             if (this.profil.contact_a_risque_meme_lieu_de_vie) {
-                if (completementVaccine) {
+                if (completementVaccine && !contactARisqueOmicron) {
                     symptomes = 'contact_a_risque_meme_lieu_de_vie_vaccine'
                 } else {
                     symptomes = 'contact_a_risque_meme_lieu_de_vie'
                 }
             } else {
-                if (completementVaccine) {
+                if (completementVaccine && contactARisqueOmicron) {
+                    symptomes = 'contact_a_risque'
+                } else if (completementVaccine) {
                     symptomes = 'contact_a_risque_vaccine'
                 } else if (this.guerisonRecente()) {
                     symptomes = 'contact_pas_vraiment_a_risque'

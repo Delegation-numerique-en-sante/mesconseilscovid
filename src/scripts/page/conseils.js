@@ -124,16 +124,10 @@ export function cacherElementsConditionnels(element, profil) {
     // Éléments conditionnés à la vaccination.
     const algoOrientation = new AlgorithmeOrientation(profil)
     const algoVaccination = new AlgorithmeVaccination(profil, algoOrientation)
-    showOnlyIf(
-        element,
-        '.seulement-si-vaccine',
-        algoVaccination.isCompletementVaccine()
-    )
-    showOnlyIf(
-        element,
-        '.seulement-si-non-vaccine',
-        !algoVaccination.isCompletementVaccine()
-    )
+    const vaccineNonOmicron =
+        algoVaccination.isCompletementVaccine() && !profil.hasContactARisqueOmicron()
+    showOnlyIf(element, '.seulement-si-vaccine', vaccineNonOmicron)
+    showOnlyIf(element, '.seulement-si-non-vaccine', !vaccineNonOmicron)
 }
 
 function showRelevantSuiviBlocks(element, algoSuivi) {
