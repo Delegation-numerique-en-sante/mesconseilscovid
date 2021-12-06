@@ -136,7 +136,7 @@
     Il n’est **pas obligatoire d’être vacciné(e)** pour se rendre à un rendez-vous médical en milieu hospitalier. En revanche, un **pass sanitaire est exigé**. Si vous n’êtes pas vacciné(e), vous pouvez présenter :
 
     - un **test de dépistage négatif** datant de moins de 24 h ;
-    - ou un **certificat de rétablissement** (test de dépistage positif de plus de 7 jours et moins de 6 mois).
+    - ou un **certificat de rétablissement** (test de dépistage positif de plus de 11 jours et moins de 6 mois).
 
     Dans ce cas, vous pouvez obtenir la **prise en charge** de votre **test de dépistage** en présentant au professionnel de santé qui réalisera votre test :
     - la **convocation** émise par l’établissement médical où vous avez rendez-vous ;
@@ -230,7 +230,7 @@
 
     </div>
 
-    Les professionnels **soumis à une obligation vaccinale**, doivent actuellement présenter un pass sanitaire, et devront justifier d’une 1<sup>re</sup> dose de vaccination à partir du **15 septembre**, et d’une vaccination complète à partir du **16 octobre** (sauf contre-indications) :
+    Les professionnels **soumis à une obligation vaccinale**, doivent actuellement présenter un pass sanitaire, et doivent justifier d’une vaccination complète depuis le **16 octobre** (sauf contre-indications) :
     - professionnels de santé (y compris étudiants en santé) ;
     - personnels des établissements de santé : administratifs… ;
     - professionnels du secteur médico-social : pompiers, aides à domicile…
@@ -375,8 +375,8 @@
 
     #### Pour justifier d’une vaccination complète
 
-    * Si vous avez reçu **2 doses** de vaccin à l’étranger, alors votre vaccination est considérée comme **complète**.
-
+    * Si vous avez reçu **2 doses** de vaccin à l’étranger, alors votre vaccination est considérée comme **complète**. Attention, si vous avez **65 ans ou plus** et que votre dernière dose date d'il y a plus de 7 mois, vous devrez recevoir une **dose de rappel** (3<sup>e</sup> dose) pour obtenir un **QR code** valable au-delà du **15 décembre**.
+    
     * Si vous n’avez reçu qu’**une seule dose** de vaccin à l’étranger, vous devrez recevoir une **2<sup>e</sup>** injection de vaccin à **ARNm** (*Pfizer* ou *Moderna*) pour valider votre vaccination en France.
 
     #### Obtenir un QR code : ressortissants non-européens
