@@ -8,7 +8,6 @@ import ShareController from './controllers/share_controller'
 import applyDetailsSummaryPolyfill from '../../polyfills/details_polyfill'
 
 import { bindImpression } from '../../actions'
-import { opacityTransition, envoieLesRemarques } from '../../feedback'
 import { navigueVersUneThematique } from './navigation'
 import { dynamiseLeChoixDuTest } from './choixTestDepistage'
 import { dynamiseLeChoixDuPass } from './choixPassSanitaire'
@@ -31,7 +30,6 @@ export function pageThematique(app) {
     )
     initDetailsSummary()
     partagePageEnCours()
-    feedbackPageEnCours(app)
 
     initialiseLesFormulaires()
 
@@ -161,78 +159,4 @@ function partagePageEnCours() {
         )
         partageLink.href = href
     })
-}
-
-function feedbackPageEnCours(app) {
-    const feedbackQuestionsForms = document.querySelectorAll('form.question-feedback')
-    Array.from(feedbackQuestionsForms).forEach((feedbackQuestionForm) => {
-        const title = feedbackQuestionForm.parentNode.querySelector('[itemprop="name"]')
-        const question = title.innerText.substring(
-            0,
-            title.innerText.length - ' #'.length
-        )
-        const submitButtons =
-            feedbackQuestionForm.querySelectorAll('input[type="submit"]')
-        // Manual event.submitter (unsupported by Safari & IE).
-        Array.from(submitButtons).forEach((submitButton) => {
-            submitButton.addEventListener('click', (event) => {
-                feedbackQuestionForm.submitter = event.target
-            })
-        })
-        feedbackQuestionForm.addEventListener('submit', (event) => {
-            event.preventDefault()
-            const choix = event.target.submitter.dataset.value
-            app.plausible('Avis par question', {
-                reponse: `${question} : ${choix}`,
-            })
-            const reponse = event.target.submitter.value
-            opacityTransition(feedbackQuestionForm, 500, (feedbackQuestionForm) => {
-                let label =
-                    choix === 'oui'
-                        ? 'Avez-vous des remarques ou des suggestions pour améliorer ces conseils ?'
-                        : 'Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?'
-                demandeRemarques(feedbackQuestionForm, choix, question, reponse, label)
-            })
-        })
-    })
-}
-
-function demandeRemarques(feedbackQuestionForm, choix, question, reponse, label) {
-    const formulaire = document.createElement('form')
-    formulaire.classList.add('feedback-form')
-    formulaire.innerHTML = `
-        <fieldset>
-            <p role="status">Merci pour votre retour.</p>
-            <label for="message_conseils">${label}</label>
-            <textarea id="message_conseils" name="message" rows="9" cols="20" required></textarea>
-        </fieldset>
-        <div class="form-controls">
-            <input type="submit" class="button" value="Envoyer mes remarques">
-        </div>
-    `
-    feedbackQuestionForm.parentNode.replaceChild(formulaire, feedbackQuestionForm)
-    formulaire.addEventListener('submit', (event) => {
-        event.preventDefault()
-        envoieLesRemarques({
-            feedbackHost: document.body.dataset.statsUrl,
-            kind: choix,
-            message: event.target.elements.message.value,
-            page: document.location.pathname.slice(1),
-            question: question,
-            source: window.app.source,
-        })
-        afficheRemerciements(formulaire, choix, reponse)
-    })
-}
-
-function afficheRemerciements(feedbackQuestionForm, choix, reponse) {
-    const remerciements = document.createElement('div')
-    remerciements.style.color = '#656565'
-    remerciements.style.textAlign = 'center'
-    remerciements.style.border = '2px solid #d5dbef'
-    remerciements.innerHTML = `
-        <p>Votre réponse : ${reponse}</p>
-        <p>Merci pour votre avis !</p>
-        `
-    feedbackQuestionForm.parentNode.replaceChild(remerciements, feedbackQuestionForm)
 }

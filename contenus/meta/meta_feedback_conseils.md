@@ -7,7 +7,7 @@
     "
     data-switch-sources-param="feedback"
     data-switch-destinations-param="thankyou partager"
-    data-feedback-endpoint-value="http://localhost:5500">
+    data-feedback-endpoint-value="http://0.0.0.0:5500">
     <div data-switch-screen="controls" 
         data-action="pageChanged@document->switch#switch"
         data-switch-sources-param="feedback thankyou partager"

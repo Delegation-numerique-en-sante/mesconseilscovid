@@ -1218,16 +1218,16 @@ a.button-feedback-social-whatsapp {
     padding: 12px 24px 12px 60px;
 }
 
-.thematique #conseils-block details form.question-feedback,
+.thematique #conseils-block details .question-feedback,
 .thematique #conseils-block details form.feedback-form {
     display: none;
 }
-.thematique #conseils-block details[open] form.question-feedback,
+.thematique #conseils-block details[open] .question-feedback,
 .thematique #conseils-block details[open] form.feedback-form {
     display: flex;
 }
 
-.thematique #conseils-block form.question-feedback,
+.thematique #conseils-block .question-feedback,
 .thematique #conseils-block form.feedback-form {
     color: #656565;
     background-color: #fff;
@@ -1241,7 +1241,7 @@ a.button-feedback-social-whatsapp {
     font-size: 95%;
 }
 @media only screen and (max-width: 350px) {
-    .thematique #conseils-block details form.question-feedback,
+    .thematique #conseils-block details .question-feedback,
     .thematique #conseils-block form.feedback-form {
         padding-left: 0;
         padding-right: 0;
@@ -1652,13 +1652,13 @@ a.no-type::after {
     }
 }
 
-.thematique #conseils-block form.question-feedback,
+.thematique #conseils-block .question-feedback,
 .thematique #conseils-block form.feedback-form {
     border: 2px solid #d5dbef;
     padding: 0 1rem;
 }
 @media only screen and (max-width: 320px) {
-    .thematique #conseils-block form.question-feedback,
+    .thematique #conseils-block .question-feedback,
     .thematique #conseils-block form.feedback-form {
         padding: 0;
     }

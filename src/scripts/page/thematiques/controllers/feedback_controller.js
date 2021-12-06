@@ -22,6 +22,11 @@ export default class extends Controller {
         this.kindValue = 'positif'
     }
 
+    setAverageFeedback() {
+        // TODO: les choix envoyés pour le feedback inline étaient oui/non/bof.
+        this.kindValue = 'average'
+    }
+
     setNegativeFeedback() {
         this.kindValue = 'negatif'
     }
