@@ -375,8 +375,8 @@
 
     #### Pour justifier d’une vaccination complète
 
-    * Si vous avez reçu **2 doses** de vaccin à l’étranger, alors votre vaccination est considérée comme **complète**. Attention, si vous avez **65 ans ou plus** et que votre dernière dose date d'il y a plus de 7 mois, vous devrez recevoir une **dose de rappel** (3<sup>e</sup> dose) pour obtenir un **QR code** valable au-delà du **15 décembre**.
-    
+    * Si vous avez reçu **2 doses** de vaccin à l’étranger, alors votre vaccination est considérée comme **complète**. Attention, si vous avez **65 ans ou plus** et que votre dernière dose date d’il y a plus de 7 mois, vous devrez recevoir une **dose de rappel** (3<sup>e</sup> dose) pour obtenir un **QR code** valable au-delà du **15 décembre**.
+
     * Si vous n’avez reçu qu’**une seule dose** de vaccin à l’étranger, vous devrez recevoir une **2<sup>e</sup>** injection de vaccin à **ARNm** (*Pfizer* ou *Moderna*) pour valider votre vaccination en France.
 
     #### Obtenir un QR code : ressortissants non-européens
