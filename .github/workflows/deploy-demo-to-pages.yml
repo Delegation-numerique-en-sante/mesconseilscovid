@@ -18,6 +18,15 @@ jobs:
           sudo apt-get install locales-all
           sudo localectl set-locale LANG=fr_FR.utf8
 
+      - name: Adjust file modification times based on commit author date
+        run: |
+          for FILE in $(git ls-files contenus/thematiques)
+          do
+              TIME=$(git log -n1 --date=iso --pretty=format:%ad -- "$FILE")
+              touch -m --date="$TIME" "$FILE"
+          done
+          ls -l contenus/thematiques
+
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
