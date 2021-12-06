@@ -248,19 +248,21 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     </div>
 
+
 .. question:: Les enfants de moins de 12 ans peuvent-ils être vaccinés ?
     :level: 3
-    
+
     La Haute Autorité de Santé (HAS) **recommande** de vacciner contre la Covid les enfants âgés de **5 à 11 ans** qui :
-    
+
     * ont des **comorbidités** les mettant à risque de faire une forme grave (notamment, de développer des « syndromes inflammatoires multi-systémiques pédiatriques » (PIMS)) ;
     * *ou* ont dans leur **entourage** proche une **personne fortement immunodéprimée** ou **vulnérable** qui ne peut pas bénéficier de la protection vaccinale.
-    
-    La vaccination est **facultative** et se fera avec une dose pédiatrique (10 µg) de **Pfizer**.
-    
-    La campagne de vaccination devrait débuter vers la mi-décembre.
-    
-    Pour l’instant, la vaccination n’est pas élargie à l’ensemble des enfants de cette catégorie d’âge.
+
+    La campagne de vaccination pour les enfants concernés devrait débuter à partir de la mi-décembre.
+
+    La vaccination sera **facultative** et se fera avec une dose pédiatrique (10 µg) de vaccin **Pfizer**.
+
+    Pour l’instant, il n’est pas prévu d’élargir la vaccination à tous les enfants de cette catégorie d’âge.
+
 
 .. question:: Les mineurs reçoivent-ils le même nombre de doses que les adultes ?
     :level: 3
