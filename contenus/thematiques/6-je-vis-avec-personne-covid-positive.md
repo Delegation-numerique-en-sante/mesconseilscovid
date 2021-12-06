@@ -125,7 +125,7 @@ Le test est **toujours gratuit** quand vous êtes cas contact.
 
 </div>
 
-Si vous devez **garder votre enfant positif** à la Covid mais que vous ne pouvez pas télétravailler, vous pouvez bénéficier du **chômage partiel**. Pour plus d’information sur la démarche, consultez notre [page dédiée aux conseils pour les mineurs]#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid).
+Si vous devez **garder votre enfant** positif à la Covid mais que vous ne pouvez pas télétravailler, vous pouvez bénéficier du **chômage partiel**. Pour plus d’information sur la démarche, consultez notre [page dédiée aux conseils pour les mineurs](/conseils-pour-les-enfants.html#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid).
 
 #### 2. Faites un test de contrôle
 
