@@ -33,7 +33,7 @@ export default class extends Controller {
     send(event) {
         event.preventDefault()
         envoieLesRemarques({
-            feedbackHost: this.endpointValue,
+            endpoint: this.endpointValue,
             kind: this.kindValue,
             message: this.textareaTarget.value,
             page: estPageThematique()
@@ -45,9 +45,9 @@ export default class extends Controller {
     }
 }
 
-function envoieLesRemarques({ feedbackHost, kind, message, page, question, source }) {
+function envoieLesRemarques({ endpoint, kind, message, page, question, source }) {
     const request = new XMLHttpRequest()
-    request.open('POST', feedbackHost + '/feedback', true)
+    request.open('POST', endpoint, true)
     request.setRequestHeader('Content-Type', 'application/json')
     request.send(
         JSON.stringify({

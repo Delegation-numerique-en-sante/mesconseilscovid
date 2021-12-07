@@ -1,6 +1,6 @@
 <div
     data-controller="switch feedback plausible"
-    data-feedback-endpoint-value="http://0.0.0.0:5500"
+    data-feedback-endpoint-value="http://0.0.0.0:5500/feedback"
     data-switch-delay-value="500"
     data-action="
         feedback:sent->switch#switch

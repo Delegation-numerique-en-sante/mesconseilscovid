@@ -78,7 +78,7 @@ class QuestionDirective(Directive):
     "
     data-switch-sources-param="feedback"
     data-switch-destinations-param="thankyou"
-    data-feedback-endpoint-value="http://0.0.0.0:5500">
+    data-feedback-endpoint-value="http://0.0.0.0:5500/feedback">
     <div class="question-feedback"
         data-switch-screen="controls"
         data-action="pageChanged@document->switch#switch"
