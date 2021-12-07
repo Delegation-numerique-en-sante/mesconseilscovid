@@ -8,17 +8,14 @@ describe('Share', function () {
         await stimulusSetup(
             `
             <div data-controller="share">
-                <a data-share-target="link"
-                   data-action="share#open">
-                </a>
             </div>
             `,
             'share',
             ShareController
         )
 
-        const link = document.querySelector('a')
+        const component = document.querySelector('div')
 
-        assert.strictEqual(link.hasAttribute('hidden'), true)
+        assert.strictEqual(component.hasAttribute('hidden'), true)
     })
 })

@@ -3,11 +3,9 @@ import { Controller } from '@hotwired/stimulus'
 import { hideElement } from '../../../affichage'
 
 export default class extends Controller {
-    static targets = ['link']
-
     connect() {
         if (typeof navigator.share === 'undefined') {
-            hideElement(this.linkTarget)
+            hideElement(this.element)
         }
     }
 

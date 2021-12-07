@@ -86,12 +86,7 @@
             Merci beaucoup pour votre message qui nous aidera à améliorer les conseils.
         </p>
     </div>
-    <div
-        class="feedback-partager"
-        hidden
-        data-controller="share"
-        data-switch-screen="partager"
-    >
+    <div class="feedback-partager" hidden data-switch-screen="partager">
         <p role="status">
             Faites connaître Mes Conseils Covid en partageant ce lien (votre situation
             personnelle ne sera pas transmise) :
@@ -121,11 +116,10 @@
                     >sur Messenger</a
                 >
             </li>
-            <li>
+            <li data-controller="share">
                 <a
                     href="javascript:;"
                     class="button button-outline button-feedback-partager"
-                    data-share-target="link"
                     data-action="plausible#record share#open"
                     data-plausible-event-name-param="Partager avec…"
                     data-plausible-props-param='{"service": "autres"}'
