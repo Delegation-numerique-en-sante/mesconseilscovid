@@ -1,19 +1,19 @@
 <div
     data-controller="switch feedback plausible"
+    data-feedback-endpoint-value="http://0.0.0.0:5500"
     data-switch-delay-value="500"
     data-action="
-        switch:switched->feedback#focusIfVisible
         feedback:sent->switch#switch
+        switch:switched->feedback#focusIfVisible
     "
     data-switch-sources-param="feedback"
     data-switch-destinations-param="thankyou partager"
-    data-feedback-endpoint-value="http://0.0.0.0:5500"
 >
     <div
-        data-switch-screen="controls"
         data-action="pageChanged@document->switch#switch"
         data-switch-sources-param="feedback thankyou partager"
         data-switch-destinations-param="controls"
+        data-switch-screen="controls"
     >
         <p>Ces conseils vous ont été utiles ?</p>
         <div class="feedback-controls">
@@ -89,8 +89,8 @@
     <div
         class="feedback-partager"
         hidden
-        data-switch-screen="partager"
         data-controller="share"
+        data-switch-screen="partager"
     >
         <p role="status">
             Faites connaître Mes Conseils Covid en partageant ce lien (votre situation
@@ -125,8 +125,8 @@
                 <a
                     href="javascript:;"
                     class="button button-outline button-feedback-partager"
-                    data-action="plausible#record share#open"
                     data-share-target="link"
+                    data-action="plausible#record share#open"
                     data-plausible-event-name-param="Partager avec…"
                     data-plausible-props-param='{"service": "autres"}'
                     >autres moyens</a
