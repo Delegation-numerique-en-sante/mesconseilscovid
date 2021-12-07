@@ -154,6 +154,12 @@
 
     Les centres de vaccination proposent une prise de rendez-vous **par internet** (via une des trois plateformes [Doctolib](https://www.doctolib.fr/), [Keldoc](https://www.keldoc.com/) ou [Maiia](https://www.maiia.com/)) ou **par téléphone**.
 
+    En raison de la **forte demande**, les plateformes de prise de rendez-vous par
+    Internet peuvent ne proposer que de créneaux éloignés lors de votre visite. Mais
+    des **nouveaux créneaux** sont ajoutés tous les jours, donc n’hésitez pas
+    à **revenir régulièrement** sur ces sites pour obtenir un rendez-vous dans un délai
+    plus court.
+
     <div class="conseil">
 
     Si vous n’êtes pas encore vacciné(e) et que vous souhaitez recevoir une **première
