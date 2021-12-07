@@ -154,6 +154,14 @@
 
     Les centres de vaccination proposent une prise de rendez-vous **par internet** (via une des trois plateformes [Doctolib](https://www.doctolib.fr/), [Keldoc](https://www.keldoc.com/) ou [Maiia](https://www.maiia.com/)) ou **par téléphone**.
 
+    <div class="conseil">
+
+    Si vous avez **65 ans ou plus**, et que vous n’avez pas réussi à obtenir de
+    rendez-vous pour la dose de **rappel**, vous pouvez vous rendre directement dans
+    un **centre de vaccination**, où vous pourrez être vacciné(e) **sans rendez-vous**.
+
+    </div>
+
     <div class="voir-aussi">
 
     - Consultez [l’annuaire des lieux de vaccination Covid-19](https://www.sante.fr/cf/centres-vaccination-covid.html) sur le site officiel (santé.fr)
