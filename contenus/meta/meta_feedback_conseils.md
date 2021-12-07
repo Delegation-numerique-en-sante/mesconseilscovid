@@ -81,7 +81,7 @@
             <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a>
         </p>
     </div>
-    <div class="feedback-thankyou" hidden data-switch-screen="thankyou">
+    <div hidden data-switch-screen="thankyou">
         <p role="status">
             Merci beaucoup pour votre message qui nous aidera à améliorer les conseils.
         </p>
