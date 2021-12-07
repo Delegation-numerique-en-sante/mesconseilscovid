@@ -1,5 +1,13 @@
 # Changelog
 
+## 2021-12-06
+
+* ajout d’une question sur la vaccination des 5-11 ans
+* met à jour les ressources sur l’anosmie
+* précisions sur le chômage partiel pour la garde d’enfants
+* mise à jour des explications sur le protocole sanitaire à l’école
+* retrait de la géolocalisation et des conseils associés
+
 ## 2021-12-03
 
 * formulaire de calcul pour le rappel :
