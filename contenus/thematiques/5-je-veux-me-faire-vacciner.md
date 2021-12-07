@@ -156,9 +156,11 @@
 
     <div class="conseil">
 
-    Si vous avez **65 ans ou plus**, et que vous n’avez pas réussi à obtenir de
-    rendez-vous pour la dose de **rappel**, vous pouvez vous rendre directement dans
-    un **centre de vaccination**, où vous pourrez être vacciné(e) **sans rendez-vous**.
+    Si vous n’êtes pas encore vacciné(e) et que vous souhaitez recevoir une **première
+    dose** de vaccin, ou si vous avez **65 ans ou plus** et que vous n’avez pas réussi
+    à obtenir de rendez-vous pour la dose de **rappel**, alors vous pouvez vous rendre
+    directement dans un **centre de vaccination**, où vous pourrez être vacciné(e)
+    **sans rendez-vous**.
 
     </div>
 
