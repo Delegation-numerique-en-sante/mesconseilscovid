@@ -105,9 +105,11 @@ jargon.dic: jargon.dic.txt
 lint:  ## Run ESLint + check code style.
 	npm run-script lint
 	./node_modules/.bin/prettier "src/**/*.{js,css}" --check
+	./node_modules/.bin/prettier --parser html contenus/meta/meta_feedback_conseils.md --check
 
 pretty:  ## Run PrettierJS.
 	./node_modules/.bin/prettier "src/**/*.{js,css}" --write
+	./node_modules/.bin/prettier --parser html contenus/meta/meta_feedback_conseils.md --write
 
 optimize-images:
 	find diagrammes src static -type f -iname "*.png" -print0 | xargs -I {} -0 zopflipng -y "{}" "{}"
