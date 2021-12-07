@@ -36,16 +36,12 @@ export default class extends Controller {
             endpoint: this.endpointValue,
             kind: this.kindValue,
             message: this.textareaTarget.value,
-            page: estPageThematique()
-                ? document.location.pathname.slice(1)
-                : getCurrentPageName(),
-            source: window.app.source,
         })
         this.dispatch('sent')
     }
 }
 
-function envoieLesRemarques({ endpoint, kind, message, page, question, source }) {
+function envoieLesRemarques({ endpoint, kind, message, question }) {
     const request = new XMLHttpRequest()
     request.open('POST', endpoint, true)
     request.setRequestHeader('Content-Type', 'application/json')
@@ -53,9 +49,11 @@ function envoieLesRemarques({ endpoint, kind, message, page, question, source })
         JSON.stringify({
             kind,
             message,
-            page,
             question,
-            source,
+            page: estPageThematique()
+                ? document.location.pathname.slice(1)
+                : getCurrentPageName(),
+            source: window.app.source,
         })
     )
 }
