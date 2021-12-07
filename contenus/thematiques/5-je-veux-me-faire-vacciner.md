@@ -165,10 +165,11 @@
 .. question:: J’ai des difficultés à me déplacer, puis-je me faire vacciner à domicile ?
     :level: 3
 
-    Les **infirmiers**, **sage-femmes** et **médecins généralistes** son habilités à vacciner contre la Covid à domicile, avec **tous les vaccins** disponibles et adaptés à votre situation. 
-    Si vous avez **80 ans ou plus**, vous pouvez téléphonez au **0800 730 957** pour être mis(e) en contact avec un professionnel de santé qui pourra venir à votre domicile.
+    Les **infirmiers**, **sage-femmes** et **médecins généralistes** son habilités à vacciner contre la Covid à domicile, avec **tous les vaccins** disponibles et adaptés à votre situation.
 
-    Les infirmiers ne sont pas autorisés à vacciner les femmes enceintes ou les personnes présentant un trouble de l’hémostase.
+    Si vous avez **80 ans ou plus**, vous pouvez téléphoner au [0 800 730 957](tel:0800730957) (appel gratuit) pour être mis(e) en contact avec un professionnel de santé qui pourra venir à votre domicile.
+
+    *Les infirmiers ne sont pas autorisés à vacciner les femmes enceintes ou les personnes présentant un trouble de l’hémostase.*
 
 
 .. question:: Puis-je me faire vacciner contre la grippe saisonnière et la Covid en même temps ?
