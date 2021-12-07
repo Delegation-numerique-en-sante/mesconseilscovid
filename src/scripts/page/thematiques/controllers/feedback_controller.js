@@ -2,7 +2,6 @@ import { Controller } from '@hotwired/stimulus'
 
 import { getCurrentPageName } from './../../../router'
 import { estPageThematique } from './../navigation'
-import { envoieLesRemarques } from './../../../feedback'
 
 export default class extends Controller {
     static values = {
@@ -44,4 +43,19 @@ export default class extends Controller {
         })
         this.dispatch('sent')
     }
+}
+
+function envoieLesRemarques({ feedbackHost, kind, message, page, question, source }) {
+    const request = new XMLHttpRequest()
+    request.open('POST', feedbackHost + '/feedback', true)
+    request.setRequestHeader('Content-Type', 'application/json')
+    request.send(
+        JSON.stringify({
+            kind,
+            message,
+            page,
+            question,
+            source,
+        })
+    )
 }

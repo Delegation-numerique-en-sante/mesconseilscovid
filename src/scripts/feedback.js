@@ -95,25 +95,3 @@ export function bindFeedback(component, app) {
         showElement(component.querySelector('.feedback-question'))
     })
 }
-
-export function envoieLesRemarques({
-    feedbackHost,
-    kind,
-    message,
-    page,
-    question,
-    source,
-}) {
-    const request = new XMLHttpRequest()
-    request.open('POST', feedbackHost + '/feedback', true)
-    request.setRequestHeader('Content-Type', 'application/json')
-    request.send(
-        JSON.stringify({
-            kind,
-            message,
-            page,
-            question,
-            source,
-        })
-    )
-}
