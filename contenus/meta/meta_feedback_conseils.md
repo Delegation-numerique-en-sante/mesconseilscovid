@@ -1,38 +1,38 @@
-<div class="feedback-component"
-    data-controller="switch feedback plausible" 
-    data-switch-delay-value="500" 
+<div
+    data-controller="switch feedback plausible"
+    data-switch-delay-value="500"
     data-action="
-        switch:switched->feedback#focusIfVisible 
+        switch:switched->feedback#focusIfVisible
         feedback:sent->switch#switch
     "
     data-switch-sources-param="feedback"
     data-switch-destinations-param="thankyou partager"
     data-feedback-endpoint-value="http://0.0.0.0:5500">
-    <div data-switch-screen="controls" 
+    <div data-switch-screen="controls"
         data-action="pageChanged@document->switch#switch"
         data-switch-sources-param="feedback thankyou partager"
         data-switch-destinations-param="controls">
         <p>Ces conseils vous ont été utiles ?</p>
         <div class="feedback-controls">
-            <a class="button button-outline button-feedback button-feedback-positif" 
+            <a class="button button-outline button-feedback button-feedback-positif"
             href="" role="button"
             data-action="switch#switch feedback#setPositiveFeedback plausible#record"
             data-plausible-event-name-param="Avis positif"
-            data-switch-sources-param="controls" 
+            data-switch-sources-param="controls"
             data-switch-destinations-param="feedback">Oui</a>
-            <a class="button button-outline button-feedback button-feedback-negatif" 
+            <a class="button button-outline button-feedback button-feedback-negatif"
             href="" role="button"
             data-action="switch#switch feedback#setNegativeFeedback plausible#record"
             data-plausible-event-name-param="Avis negatif"
-            data-switch-sources-param="controls" 
+            data-switch-sources-param="controls"
             data-switch-destinations-param="feedback">Non</a>
-            <a class="button button-outline button-partager button-feedback-partager" 
+            <a class="button button-outline button-partager button-feedback-partager"
             href="" role="button"
             data-action="switch#switch plausible#record"
             data-plausible-event-name-param="Menu Partager"
-            data-switch-sources-param="controls" 
+            data-switch-sources-param="controls"
             data-switch-destinations-param="partager">Partager</a>
-            <a class="button button-outline button-imprimer button-feedback-imprimer js-impression" 
+            <a class="button button-outline button-imprimer button-feedback-imprimer js-impression"
             href="" role="button">Imprimer</a>
         </div>
     </div>
@@ -41,8 +41,8 @@
             <fieldset>
                 <p role="status">Merci pour votre retour.</p>
                 <label for="message_conseils">Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?</label>
-                <textarea 
-                id="message_conseils" name="message" rows="9" cols="20" required 
+                <textarea
+                id="message_conseils" name="message" rows="9" cols="20" required
                 data-feedback-target="textarea"
                 ></textarea>
             </fieldset>

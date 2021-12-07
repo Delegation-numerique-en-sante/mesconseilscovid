@@ -72,10 +72,10 @@ describe('Plausible', function () {
 
         await page.waitForSelector('#page.ready')
         const drapeau = await page.waitForSelector(
-            '.feedback-component >> text="Des difficultés pour répondre à cette question ?"'
+            'text="Des difficultés pour répondre à cette question ?"'
         )
         await drapeau.click()
-        const form = await page.waitForSelector('.feedback-component .feedback-form')
+        const form = await page.waitForSelector('.feedback-form')
         assert.include(
             await form.innerHTML(),
             'Merci de nous avoir signalé vos difficultés pour répondre à cette question.'
@@ -130,12 +130,10 @@ describe('Plausible', function () {
 
         await Promise.all([
             bouton.click(),
-            page.waitForSelector('#page.ready .feedback-component .feedback-form'),
+            page.waitForSelector('#page.ready .feedback-form'),
         ])
 
-        const form = await page.waitForSelector(
-            '#page.ready .feedback-component .feedback-form'
-        )
+        const form = await page.waitForSelector('#page.ready .feedback-form')
 
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
@@ -194,12 +192,10 @@ describe('Plausible', function () {
 
         await Promise.all([
             bouton.click(),
-            page.waitForSelector('#page.ready .feedback-component .feedback-form'),
+            page.waitForSelector('#page.ready .feedback-form'),
         ])
 
-        const form = await page.waitForSelector(
-            '#page.ready .feedback-component .feedback-form'
-        )
+        const form = await page.waitForSelector('#page.ready .feedback-form')
 
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
@@ -260,12 +256,10 @@ describe('Plausible', function () {
 
         await Promise.all([
             bouton.click(),
-            page.waitForSelector('#page.ready .feedback-component .feedback-form'),
+            page.waitForSelector('#page.ready .feedback-form'),
         ])
 
-        const form = await page.waitForSelector(
-            '#page.ready .feedback-component .feedback-form'
-        )
+        const form = await page.waitForSelector('#page.ready .feedback-form')
 
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
@@ -323,12 +317,10 @@ describe('Plausible', function () {
 
         await Promise.all([
             bouton.click(),
-            page.waitForSelector('#page.ready .feedback-component .feedback-form'),
+            page.waitForSelector('#page.ready .feedback-form'),
         ])
 
-        const form = await page.waitForSelector(
-            '#page.ready .feedback-component .feedback-form'
-        )
+        const form = await page.waitForSelector('#page.ready .feedback-form')
 
         assert.include(await form.innerHTML(), 'Merci pour votre retour.')
 
@@ -389,12 +381,10 @@ describe('Plausible', function () {
 
         await Promise.all([
             bouton.click(),
-            page.waitForSelector('#page.ready .feedback-component .feedback-partager'),
+            page.waitForSelector('#page.ready .feedback-partager'),
         ])
 
-        const partager = await page.waitForSelector(
-            '#page.ready .feedback-component .feedback-partager'
-        )
+        const partager = await page.waitForSelector('#page.ready .feedback-partager')
 
         assert.include(
             await partager.innerHTML(),
