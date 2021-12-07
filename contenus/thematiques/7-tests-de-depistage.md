@@ -141,6 +141,5 @@
 
     Ce type de test est utile à condition de le pratiquer régulièrement (plusieurs fois par semaine).
 
-    Pour être valable comme **pass sanitaire**, l’autotest doit être réalisé sous la **supervision d’un pharmacien**.
 
 </div>
