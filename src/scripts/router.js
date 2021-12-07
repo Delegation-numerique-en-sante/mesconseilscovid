@@ -1,7 +1,7 @@
 import Navigo from 'navigo'
 
 import { cloneElementInto, hideElement, showElement, showMeOrThem } from './affichage'
-import { bindFeedback, injectFeedbackDifficultes } from './feedback'
+import { injectFeedbackDifficultes } from './feedback'
 import { nomProfil } from './injection'
 import { titleCase } from './utils'
 
@@ -94,7 +94,6 @@ export class Router {
         const viewFunc = (page, app) => {
             view(page, app)
             injectFeedbackDifficultes(page.querySelector('.feedback-difficultes'))
-            bindFeedback(page.querySelector('.feedback-component'), app)
         }
         this.addAppRoute(pageName, viewFunc, { ...options, beforeFunc })
     }

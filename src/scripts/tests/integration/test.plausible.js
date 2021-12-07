@@ -49,7 +49,7 @@ describe('Plausible', function () {
         ])
     })
 
-    it('drapeau sur une page', async function () {
+    it.skip('drapeau sur une page', async function () {
         const page = this.test.page
 
         // On va vers la page des symptômes.
