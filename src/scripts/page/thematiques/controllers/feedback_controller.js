@@ -36,6 +36,7 @@ export default class extends Controller {
             endpoint: this.endpointValue,
             kind: this.kindValue,
             message: this.textareaTarget.value,
+            question: undefined, // TODO
         })
         this.dispatch('sent')
     }
