@@ -3,10 +3,12 @@ import { Controller } from '@hotwired/stimulus'
 import { showElement } from '../../../affichage'
 
 export default class extends Controller {
+    static get shouldLoad() {
+        return !!navigator.share
+    }
+
     connect() {
-        if (typeof navigator.share !== 'undefined') {
-            showElement(this.element)
-        }
+        showElement(this.element)
     }
 
     open(event) {
