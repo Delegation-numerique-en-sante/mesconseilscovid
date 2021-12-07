@@ -59,6 +59,9 @@
     </div>
 
 
+.. injection:: pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-pass-sanitaire
+
+    
 .. question:: À partir de quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
 
@@ -84,9 +87,6 @@
 
 
 .. injection:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire
-
-
-.. injection:: pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-pass-sanitaire
 
 
 .. question:: Quels sont les facteurs de risque de formes graves de Covid ?
