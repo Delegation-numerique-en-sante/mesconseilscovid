@@ -10,9 +10,12 @@ async function stimulusReady() {
     })
 }
 
-export async function stimulusSetup(dom, identifier, controller) {
+export function setupGlobalDom(dom) {
     require('jsdom-global')(dom)
     global.MutationObserver = window.MutationObserver
+}
+
+export async function setupStimulus(identifier, controller) {
     window.Stimulus = Application.start()
     window.Stimulus.register(identifier, controller)
     // window.Stimulus.debug = true

@@ -116,7 +116,7 @@
                     >sur Messenger</a
                 >
             </li>
-            <li data-controller="share">
+            <li hidden data-controller="share">
                 <a
                     href="javascript:;"
                     class="button button-outline button-feedback-partager"

@@ -1,11 +1,11 @@
 import { Controller } from '@hotwired/stimulus'
 
-import { hideElement } from '../../../affichage'
+import { showElement } from '../../../affichage'
 
 export default class extends Controller {
     connect() {
-        if (typeof navigator.share === 'undefined') {
-            hideElement(this.element)
+        if (typeof navigator.share !== 'undefined') {
+            showElement(this.element)
         }
     }
 
