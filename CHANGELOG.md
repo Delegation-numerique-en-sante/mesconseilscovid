@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-12-08
+
+* précise les cas de vaccination sans rendez-vous
+* numéro vert pour la vaccination à domicile des 80 ans et plus
+
 ## 2021-12-06
 
 * ajout d’une question sur la vaccination des 5-11 ans
