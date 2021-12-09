@@ -1,5 +1,11 @@
 # Changelog
 
+## 2021-12-09
+
+* mise à jour des informations sur la primo-vaccination
+* mise à jour des contre-indications à la vaccination
+* précisions sur la dose complémentaire Janssen
+
 ## 2021-12-08
 
 * précise les cas de vaccination sans rendez-vous
