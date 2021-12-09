@@ -288,16 +288,17 @@
 .. question:: Suis-je immunisé(e) après une seule dose de vaccin ?
     :level: 3
 
-    Les schémas de vaccination initiale des vaccins Moderna, Pfizer et AstraZeneca prévoient l’injection de **2 doses pour une vaccination efficace**. Sans la 2<sup>e</sup> dose, votre vaccination n’est pas complète.
+    Les schémas de vaccination initiale des vaccins Moderna, Pfizer et AstraZeneca prévoient l’injection de **2 doses pour une vaccination efficace**. 
+  **Le vaccin Janssen** ne prévoyait au départ qu’une seule dose. Toutefois, pour plus d'efficacité, il doit désormais être complété avec une **dose aditionnelle** (2<sup>e</sup> dose) de vaccin à ARNm (Pfizer-BioNTech ou Moderna), à partir de **4 semaines** après la première injection.
+    
+    Sans la 2<sup>e</sup> dose, votre vaccination n’est pas complète.
 
     Il existe des exceptions :
 
-    * **une personne qui a déjà eu la Covid** n’aura besoin que d’une seule dose de vaccin pour être complètement vaccinée ;
+    * **une personne qui a déjà eu la Covid** avant sa première injection n’aura besoin que d’une seule dose de vaccin pour être complètement vaccinée (hors rappel) ;
     * **une personne fortement immunodéprimée** recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné(e) par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
 
-    L’immunité conférée par la vaccination initiale diminue avec le temps. C’est pourquoi une **dose de rappel** est maintenant recommandée **après 6 mois** pour certaines personnes (voir « [Suis-je concerné par la dose de rappel, dite 3e dose ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) »).
-
-    **Le vaccin Janssen** ne prévoyait au départ qu’une seule dose. Toutefois, pour une protection plus efficace, la Haute Autorité de Santé (HAS) recommande maintenant un **rappel** (2<sup>e</sup> dose) avec un vaccin à ARNm (Pfizer-BioNTech ou Moderna), à partir de **4 semaines** après la première injection.
+    L’immunité conférée par la vaccination initiale diminue avec le temps. C’est pourquoi une **dose de rappel** est maintenant recommandée **après 5 mois** pour certaines personnes (voir « [Suis-je concerné par la dose de rappel, dite 3e dose ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) »).
 
 
 .. question:: Est-ce que je peux attraper la Covid si je suis vacciné(e) ?
