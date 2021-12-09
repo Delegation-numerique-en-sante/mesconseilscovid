@@ -69,7 +69,7 @@
 
     * dès **5 mois** après votre dernière **injection**, ou votre dernière **infection** à la Covid ;
 
-    * dès **4 semaines** après votre injection si vous aviez été vacciné(e) avec le vaccin **Janssen**  ;
+    * dès **5 mois** après votre **injection supplémentaire** de vaccin à ARN messager si [vous avez été vacciné(e) avec le vaccin **Janssen**](#je-suis-vacciné(e)-avec-une-seule-dose-de-Janssen-comment-se-passe-mon-rappel)   ;
 
     * dès **3 mois** après votre dernière injection de vaccin si vous êtes sévèrement **immunodéprimé(e)** (*4<sup>e</sup> dose*).
 
@@ -85,7 +85,18 @@
 
     </div>
 
-
+.. question:: Je suis vacciné(e) avec une seule dose de Janssen. Comment se passe mon rappel ?
+    :level: 3
+    
+    Si vous êtes vacciné(e) avec **une dose de Janssen**, **et** que vous n'avez **pas eu la Covid** avant cette unique dose, vous devez compléter votre schéma vaccinal avec une dose de **vaccin à ARN messager**, Pfizer ou Moderna (dose complète).
+    
+    Vous pouvez recevoir cette dose supplémentaire **dès 4 semaines** après la première injection. Elle prolongera la validité de votre pass sanitaire.
+    
+    Vous serez éligible au **rappel vaccinal** avec un vaccin Pfizer ou Moderna (demi-dose de 50 µg) **5 mois après** cette injection supplémentaire.
+    
+    En revanche, si vous avez eu la Covid avant votre dose unique de Janssen, alors la dose supplémentaire n'est pas nécéssaire. Vous êtes éligible à la dose de rappel avec le vaccin Pfizer ou Moderna (demi-dose de 50 µg) dès 4 semaines après votre unique injection de Janssen. Elle prolongera la validité de votre pass sanitaire.
+    
+    
 .. injection:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire
 
 
