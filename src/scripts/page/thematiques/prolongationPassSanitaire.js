@@ -195,6 +195,9 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                             ? 'Janssen'
                             : 'Pfizer, Moderna ou AstraZeneca',
                         'date-derniere-dose': dateDerniereDose.format('LL'),
+                        'type-dose': this.janssen
+                            ? 'injection supplémentaire'
+                            : 'dose de rappel',
                         'date-eligibilite-rappel': dateEligibiliteRappel.format('LL'),
                         'date-entree-en-vigueur': dateEntreeEnVigueur.format('LL'),
                     }

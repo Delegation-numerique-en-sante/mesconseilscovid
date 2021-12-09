@@ -103,7 +103,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 décembre 2021.'
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 15 décembre 2021.'
             )
         })
 
@@ -128,7 +128,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 17 décembre 2021.'
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 17 décembre 2021.'
             )
         })
 
@@ -153,7 +153,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 17 janvier 2022.'
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 17 janvier 2022.'
             )
         })
 
@@ -178,7 +178,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 16 février 2022.'
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 16 février 2022.'
             )
         })
 
@@ -199,11 +199,11 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'Votre dernière injection date du 17 juin 2021.')
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 1 septembre 2021.'
+                'Vous pourrez recevoir votre injection supplémentaire à partir du 1 septembre 2021.'
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 décembre 2021.'
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 15 décembre 2021.'
             )
         })
 
@@ -224,11 +224,11 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'Votre dernière injection date du 17 juin 2021.')
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 1 septembre 2021.'
+                'Vous pourrez recevoir votre injection supplémentaire à partir du 1 septembre 2021.'
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 décembre 2021.'
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 15 décembre 2021.'
             )
         })
     })
@@ -255,7 +255,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 15 janvier 2022.'
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 15 janvier 2022.'
             )
         })
         it('18 à 65 ans, 17 juin', async function () {
@@ -279,7 +279,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 17 janvier 2022.'
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 17 janvier 2022.'
             )
         })
         it('18 à 65 ans, 17 juillet', async function () {
@@ -303,7 +303,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du 16 février 2022.'
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 16 février 2022.'
             )
         })
     })

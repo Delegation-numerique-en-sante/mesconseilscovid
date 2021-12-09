@@ -38,10 +38,9 @@ export class Formulaire {
     afficheReponse(nom, params) {
         const reponse = document.querySelector(`#${this.prefixe}-${nom}-reponse`)
         for (const name in params) {
-            const elem = reponse.querySelector(`.${name}`)
-            if (elem) {
+            Array.from(reponse.querySelectorAll(`.${name}`)).forEach((elem) => {
                 elem.innerHTML = params[name]
-            }
+            })
         }
         showElement(reponse)
         this.gereBoutonRefaire()
