@@ -23,7 +23,9 @@
 
     - un [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) : un test de dépistage **positif**, **PCR** ou **antigénique** de **plus de 11 jours** et **moins de 6 mois** ;
 
-    - une [attestation de vaccination complète](#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code) : qui indique que votre **schéma vaccinal est complet** (après 1 ou 2 doses [selon les cas](/je-veux-me-faire-vacciner.html#suis-je-immunise-e-apres-une-seule-dose-de-vaccin)).
+    - une [attestation de vaccination complète](#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code) : qui indique que votre **schéma vaccinal est complet** (après 1 ou 2 doses [selon les cas](/je-veux-me-faire-vacciner.html#suis-je-immunise-e-apres-une-seule-dose-de-vaccin)) ;
+
+    - un [certificat de contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-sanitaire) établi par l’Assurance Maladie.
 
     <div class="conseil conseil-jaune">
 
@@ -67,11 +69,13 @@
 
     Si vous n’êtes pas encore complètement vacciné, vous pouvez présenter soit un **test de dépistage négatif** de **moins de 24 h**, soit un **test de dépistage positif** de plus de **11 jours** et de moins de **6 mois**.
 
-    Si vous ne [pouvez-pas vous faire vacciner](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-sanitaire) (en raison d’une **contre-indication médicale**), vous pouvez faire une demande de pass sanitaire auprès de l’Assurance Maladie, sur la base du **certificat médical** (formulaire Cerfa n°16183*01) établi par votre médecin.
+    Si vous ne pouvez-pas vous faire vacciner en raison d’une [contre-indication médicale](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination), vous pouvez faire une [demande de pass sanitaire](/pass-sanitaire-qr-code-voyages.html#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-sanitaire) auprès de l’Assurance Maladie, sur la base d’un **certificat médical** établi par votre médecin.
 
     <div class="voir-aussi">
 
     - Consultez la [liste de tous les justificatifs](#qu-est-ce-que-le-pass-sanitaire) qui sont des pass sanitaires.
+
+    - [Je ne peux pas me faire vacciner, comment obtenir un pass sanitaire ?](/pass-sanitaire-qr-code-voyages.html#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-sanitaire)
 
     </div>
 
@@ -117,9 +121,13 @@
 .. question:: Je ne peux pas me faire vacciner, comment obtenir un pass sanitaire ?
     :level: 3
 
-    En cas de **contre-indication médicale** (voir la [liste des contre-indications à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination)), vous pouvez demander à votre médecin d’établir un **certificat médical** (formulaire Cerfa n°16183*01). Il faudra envoyer le premier volet du certificat à votre **caisse d’Assurance Maladie**. Après vérifications, elle vous adressera votre **certificat de contre-indication à la vaccination** avec **QR code**, valable comme pass sanitaire en **France uniquement**.
+    - En cas de **contre-indication médicale** (voir la [liste des contre-indications à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination)), vous pouvez demander à votre médecin d’établir un **certificat médical** (formulaire Cerfa n°16183*01).
 
-    Attention, si vous ne pouvez pas vous faire vacciner parce que **vous avez eu la Covid** il y a moins de **6 mois**, votre [**certificat de rétablissement**](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) (test de dépistage positif) avec **QR code** fera office de pass sanitaire.
+      Il faudra envoyer le premier volet du certificat à votre **caisse d’Assurance Maladie**. Après vérification, elle vous adressera un **certificat de contre-indication à la vaccination**, avec un **QR code** valable  pous tous les lieux et activités en **France**.
+
+      Ce pass ne sera **pas valable à l’étranger**, car les autres pays européens n’ont pas tous les mêmes règles sanitaires.
+
+    - Si vous ne pouvez pas vous faire vacciner parce que **vous avez eu la Covid** il y a moins de **6 mois**, le **QR code** présent sur votre test de dépistage positif (aussi appelé [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)) fera office de pass sanitaire.
 
 
 .. question:: Puis-je recevoir des soins à l’hôpital si je ne suis pas vacciné(e) contre la Covid ?

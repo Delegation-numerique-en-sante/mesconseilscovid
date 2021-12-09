@@ -255,6 +255,12 @@
 
     Les maladies auto-immunes, dont la polyarthrite rhumatoïde et la sclérose en plaques (SEP), ne sont **pas** non plus des contre-indications à la vaccination contre la Covid.
 
+    <div class="voir-aussi">
+
+    - [Je ne peux pas me faire vacciner, comment obtenir un pass sanitaire ?](/pass-sanitaire-qr-code-voyages.html#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-sanitaire)
+
+    </div>
+
 
 .. question:: Je suis cas contact, puis-je me faire vacciner ?
     :level: 3
