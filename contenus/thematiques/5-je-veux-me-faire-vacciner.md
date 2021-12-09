@@ -223,15 +223,22 @@
 
         </div>
 
-    * **réaction anaphylactique** de grade 2 ou plus à une première injection du vaccin ;
-    * vaccins *Janssen* et *AstraZeneca* uniquement : épisodes de **syndrome de fuite capillaire** (maladie très rare) ;
-    * pour les adolescent(e)s : antécédent de syndrome inflammatoire multisystémique pédiatrique (**PIMS**) après une infection à la Covid ;
-    * recommandation établie après concertation médicale pluridisciplinaire de ne pas effectuer la seconde dose de vaccin, suite à la survenue d’un **effet indésirable** d’intensité sévère ou grave, attribué à la première dose de vaccin (par exemple : la survenue d’une myocardite, ou du syndrome de Guillain-Barré).
+    * **réaction anaphylactique** (de grade 2 ou plus) suite à une précédente injection du vaccin ;
+    * antécédent de **myocardite** ou **myo-péricardite** suite à une infection à la Covid ;
+    * pour les **adolescent(e)s** : antécédent de *syndrome inflammatoire multisystémique pédiatrique* (PIMS) suite à une infection à la Covid ;
+    * vaccin **AstraZeneca** uniquement : antécédent de *syndrome thrombotique thrombocytopénique* (STT) suite à une précédente injection de ce vaccin ;
+    * vaccins **Janssen** et **AstraZeneca** uniquement : antécédent de *syndrome de fuite capillaire* (maladie très rare) ;
+    * recommandation établie après concertation médicale pluridisciplinaire de ne pas effectuer une dose supplémentaire de vaccin, suite à la survenue d’un **effet indésirable** d’intensité sévère ou grave, attribué à une précédente dose de vaccin (par exemple : la survenue d’une myocardite, ou du syndrome de Guillain-Barré) ;
+    * recommandation établie par un Centre de Référence Maladies Rares (CRMR) ou un Centre de Compétence Maladies Rares (CCMR), après concertation médicale pluridisciplinaire, de ne pas initier la vaccination contre la Covid.
 
     Il y a également deux contre-indications temporaires :
 
     * traitement par **anticorps monoclonaux** anti-SARS-CoV-2 ;
-    * **myocardites** ou **péricardites** survenues avant la vaccination et toujours évolutives.
+    * **myocardites** ou **péricardites** non liées à une infection à la Covid, survenues avant la vaccination et toujours évolutives.
+
+    Dans l’état actuel des connaissances scientifiques, il n’y a **pas** de contre-indication à la vaccination des patients présentant des symptômes prolongés de la Covid (ou « Covid long »).
+
+    Les maladies auto-immunes, dont la polyarthrite rhumatoïde et la sclérose en plaques (SEP), ne sont **pas** non plus des contre-indications à la vaccination contre la Covid.
 
 
 .. question:: Je suis cas contact, puis-je me faire vacciner ?
