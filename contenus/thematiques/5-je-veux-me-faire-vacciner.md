@@ -205,24 +205,26 @@
 .. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose lors de la vaccination initiale (primo-vaccination) ?
     :level: 3
 
-    Pour les vaccins à ARN messager, la 2<sup>e</sup> injection est doit être programmée :
-    * entre **21 et 49 jours** après la première, pour le vaccin **Pfizer** ;
-    * entre **28 et 49 jours** après la première, pour le vaccin **Moderna**. 
-    
+    Pour les vaccins à ARN messager, la 2<sup>e</sup> injection doit être programmée :
+    * entre **21 et 49 jours** après la première, pour le vaccin **Pfizer** ;
+    * entre **28 et 49 jours** après la première, pour le vaccin **Moderna**.
+
     Il faut donc respecter un délai de **3 à 7 semaines** après la première injection.
 
     La Haute autorité de santé recommande de recevoir une 2<sup>e</sup> dose de vaccin ARNm (Pfizer-BioNTech ou Moderna) après une première dose de vaccin **AstraZeneca**, en respectant un délai d’au moins **4 semaines**.
 
+
 .. question:: Quel vaccin choisir pour ma vaccination initiale (primo-vaccination) ?
     :level: 3
 
-    La Haute autorité de santé recommande de privilégier l'utilisation de **vaccins à ARN messager** (Pfizer ou Moderna) car ils sont plus efficaces pour réduire la transmission et les formes symptomatique des nouveaux variants.
-    
-    * Si vous avez **moins de 30 ans**, privilégiez le vaccin **Pfizer** lorsque c'est possible(en l’attente de plus de données sur le risque de myocardite avec le vaccin Moderna chez les personnes plus jeunes). 
+    La Haute autorité de santé recommande de privilégier l’utilisation de **vaccins à ARN messager** (Pfizer ou Moderna) car ils sont plus efficaces pour réduire la transmission et les formes symptomatiques des nouveaux variants.
+
+    * Si vous avez **moins de 30 ans**, privilégiez le vaccin **Pfizer** lorsque c’est possible (en l’attente de plus de données sur le risque de myocardite avec le vaccin Moderna chez les personnes plus jeunes).
     * Si vous avez **plus de 30 ans**, le vaccin **Moderna** pourra être privilégié car plusieurs études récentes semblent montrer une efficacité vaccinale légèrement supérieure.
-   
+
     Les personnes de moins de 18 ans sont vacciné(e)s exclusivement avec les vaccins à ARN messager et de préférence avec le vaccin Pfizer.
-       
+
+
 .. question:: Y a-t-il des contre-indications à la vaccination ?
     :level: 3
 
