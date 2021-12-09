@@ -92,11 +92,11 @@ Vous avez <strong class="age"></strong> et avez été vacciné(e) avec le vaccin
 
 Votre dernière injection date du <strong class="date-derniere-dose"></strong>.
 
-Vous pourrez recevoir votre dose de rappel à partir du <strong class="date-eligibilite-rappel"></strong>.
+Vous pourrez recevoir votre <span class="type-dose">dose de rappel</span> à partir du <strong class="date-eligibilite-rappel"></strong>.
 
-En l’absence de rappel, votre pass sanitaire actuel ne sera plus valide à partir du <strong class="desactivation-pass-sanitaire"></strong>.
+En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du <strong class="desactivation-pass-sanitaire"></strong>.
 
-Si vous recevez votre rappel avant cette date, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.
+Si vous recevez votre <span class="type-dose">dose de rappel</span> avant cette date, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.
 
 </div>
 
