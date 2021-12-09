@@ -123,10 +123,6 @@ $(THEMATIQUES): build.py templates/thematique.html contenus/thematiques/*.md
 static/sitemap.xml: build.py templates/sitemap.html contenus/thematiques/*.md
 	python3 build.py sitemap
 
-prefectures:  ## Generate data related to prefectures.
-	python prefectures.py generate
-	make pretty
-
 dev: dist/index.html  ## Local HTTP server with auto rebuild (with LiveReload).
 	python3 serve.py --watch --open
 
