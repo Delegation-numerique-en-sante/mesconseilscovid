@@ -67,15 +67,15 @@
 
     Vous pourrez recevoir votre rappel vaccinal :
 
-    * si vous avez été vacciné avec le vaccin **Pfizer**, **Moderna** ou **AstraZeneca** :
+    * si vous avez été vacciné(e) avec le vaccin **Pfizer**, **Moderna** ou **AstraZeneca** :
 
         - dès **5 mois** après votre dernière **injection**, ou votre dernière **infection** à la Covid ;
 
-        - dès **3 mois** après votre dernière injection de vaccin si vous êtes sévèrement **immunodéprimé(e)** (*4<sup>e</sup> dose*).
+        - dès **3 mois** après votre dernière injection de vaccin si vous êtes sévèrement **immunodéprimé(e)** (*4<sup>e</sup> dose*).
 
-    * si vous avez été vacciné avec le **vaccin Janssen** :
+    * si vous avez été vacciné(e) avec le **vaccin Janssen** :
 
-        - consultez la question « [/je-veux-me-faire-vacciner.html#je-suis-vaccine-e-avec-une-seule-dose-de-janssen-comment-se-passe-mon-rappel) » ;
+        - consultez la question « [Je suis vacciné(e) avec une seule dose de Janssen. Comment se passe mon rappel ?](/je-veux-me-faire-vacciner.html#je-suis-vaccine-e-avec-une-seule-dose-de-janssen-comment-se-passe-mon-rappel) » ;
 
     {{ formulaire('rappel', prefixe='a-partir-de-quand') }}
 
@@ -94,17 +94,17 @@
     Si vous avez reçu une **dose unique** de **vaccin Janssen**, il y a plusieurs cas possibles.
 
     - Si vous n’avez **pas eu la Covid**, ni avant ni après votre injection, alors :
-        - vous devrez recevoir une **dose supplémentaire** de vaccin à ARN messager (Pfizer ou Moderna, en dose complète) après un délai d’au moins **4 semaines**, afin de **compléter votre schéma vaccinal** ; cette 2<sup>e</sup> injection prolongera la validité de votre **pass sanitaire** ;
+        - vous devrez recevoir une **dose supplémentaire** de vaccin à ARN messager (Pfizer ou Moderna, en dose complète) après un délai d’au moins **4 semaines**, afin de **compléter votre schéma vaccinal** ; cette 2<sup>e</sup> injection prolongera la validité de votre **pass sanitaire** ;
 
-        - **5 mois** après cette injection supplémentaire, vous serez éligible au **rappel vaccinal**, avec un vaccin Pfizer ou Moderna (demi-dose).
+        - **5 mois** après cette injection supplémentaire, vous serez éligible au **rappel vaccinal**, avec un vaccin Pfizer ou Moderna (demi-dose).
 
     - Si vous **avez eu la Covid avant** votre injection, alors :
         - la dose supplémentaire n’est pas nécessaire ;
-        - vous serez éligible au **rappel vaccinal** avec le vaccin Pfizer ou Moderna (demi-dose) dès **4 semaines** après votre unique injection de Janssen ; ce rappel prolongera la validité de votre pass sanitaire).
+        - vous serez éligible au **rappel vaccinal** avec le vaccin Pfizer ou Moderna (demi-dose) dès **4 semaines** après votre unique injection de Janssen ; ce rappel prolongera la validité de votre pass sanitaire.
 
     - Si vous **avez eu la Covid après** votre injection, alors :
         - la dose supplémentaire n’est pas nécessaire ;
-        - vous serez éligible au **rappel vaccinal** avec le vaccin Pfizer ou Moderna (demi-dose) dès **5 mois** après votre infection ; ce rappel prolongera la validité de votre pass sanitaire.
+        - vous serez éligible au **rappel vaccinal** avec le vaccin Pfizer ou Moderna (demi-dose) dès **5 mois** après votre infection ; ce rappel prolongera la validité de votre pass sanitaire.
 
 
 .. injection:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire
