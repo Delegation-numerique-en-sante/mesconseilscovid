@@ -1492,7 +1492,68 @@
     <script src="scripts/main.js"></script>
 
 <div id="feedback-difficultes" hidden>
-    {{ meta_feedback_difficultés }}
+    <div class="feedback-block">
+        <form
+            data-controller="switch feedback plausible"
+            data-feedback-endpoint-value="http://0.0.0.0:5500/feedback"
+            data-switch-delay-value="500"
+            data-action="
+                feedback#send
+                feedback:sent->switch#switch
+                switch:switched->feedback#focusIfVisible
+            "
+            data-switch-sources-param="feedback"
+            data-switch-destinations-param="thankyou"
+        >
+            <div
+                data-action="pageChanged@document->switch#switch"
+                data-switch-sources-param="feedback thankyou"
+                data-switch-destinations-param="controls"
+                data-switch-screen="controls"
+            >
+                <div class="feedback-controls">
+                    <a
+                        class="button-feedback button-feedback-flag"
+                        href=""
+                        role="button"
+                        data-action="switch#switch plausible#record"
+                        data-plausible-event-name-param="Avis flag"
+                        data-switch-sources-param="controls"
+                        data-switch-destinations-param="feedback"
+                        >Des difficultés pour répondre à cette question ?</a
+                    >
+                </div>
+            </div>
+            <div class="feedback-form" hidden data-switch-screen="feedback">
+                <fieldset>
+                    <p role="status">Merci de nous avoir signalé vos difficultés pour répondre à cette question.</p>
+                    <label for="message_pied_de_page"
+                        >Pouvez-vous nous en dire plus, afin que nous puissions l’améliorer ?</label
+                    >
+                    <textarea
+                        id="message_pied_de_page"
+                        name="message"
+                        rows="9"
+                        cols="20"
+                        required
+                        data-feedback-target="textarea"
+                    ></textarea>
+                </fieldset>
+                <div class="form-controls">
+                    <input type="submit" class="button" value="Envoyer mes remarques" />
+                </div>
+                <p class="feedback-email">
+                    ou écrivez-nous à :
+                    <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a>
+                </p>
+            </div>
+            <div hidden data-switch-screen="thankyou">
+                <p role="status">
+                    Merci beaucoup pour votre message qui nous aidera à améliorer le site.
+                </p>
+            </div>
+        </form>
+    </div>
 </div>
 
 </body>
