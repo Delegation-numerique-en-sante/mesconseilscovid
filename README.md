@@ -42,6 +42,13 @@ Pour lancer ce serveur local sur [http://0.0.0.0:5500/](http://0.0.0.0:5500/) :
 $ make dev
 ```
 
+ou, pour ne pas ouvrir automatiquement le navigateur :
+
+```
+$ make dev noopen=1
+```
+
+
 ### Lancer un serveur local en HTTPS
 
 Activer HTTPS permet de tester la géolocalisation, mais ne permet plus d’utiliser LiveReload, il faudra donc recharger manuellement la page dans le navigateur en cas de modification.

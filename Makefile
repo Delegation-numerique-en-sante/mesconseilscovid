@@ -48,6 +48,12 @@ else
 	watching =
 endif
 
+ifdef noopen
+	open =
+else
+	open = --open
+endif
+
 test-unit:  ## Run JS unit tests.
 	npm run-script test$(coverage) -- $(grepping) $(watching)
 
@@ -124,10 +130,10 @@ static/sitemap.xml: build.py templates/sitemap.html contenus/thematiques/*.md
 	python3 build.py sitemap
 
 dev: dist/index.html  ## Local HTTP server with auto rebuild (with LiveReload).
-	python3 serve.py --watch --open
+	python3 serve.py --watch $(open)
 
 dev-ssl: key.pem dist/index.html  ## Local HTTPS server with auto rebuild (without LiveReload).
-	python3 serve.py --watch --open --ssl
+	python3 serve.py --watch $(open) --ssl
 
 
 pre-commit: pretty lint test-unit dist/index.html check-versions check-orphelins check-diagrammes check-service-worker  ## Interesting prior to commit/push.
