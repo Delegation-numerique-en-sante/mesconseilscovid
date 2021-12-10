@@ -23,9 +23,11 @@
 
 .. question:: As a tourist, vaccinated outside the European Union, how can I obtain a French health pass (<i>pass sanitaire</i>)?
 
-   **Non-european nationals** visiting France can convert their extra-european vaccination certificate at a **pharmacy**. You will need to present your **passport** and your existing **vaccination certificate** in paper format. The pharmacy can charge you up to **36 euros** for this procedure.
+   **Non-european nationals** visiting France can convert their extra-european vaccination certificate at a **pharmacy**. You will need to present your **passport** and your existing **vaccination certificate** in paper format. The pharmacy can charge you up to **36 euros** for this procedure. 
    
-   If you were vaccinated in one of the following countries, you do not need to convert your vaccination certificate: Albania, Andorra, Armenia, Faroe Islands, Iceland, Israel, Liechtenstein, North Macedonia, Morocco, Monaco, Norway, Panama, United-Kingdom, San Marino, Switzerland, Turkey, Ukraine, Vatican. 
+   Please note that this is only possible if you were vaccinated with the following vaccines : Pfizer/Comirnaty, Moderna/Spikevax, AstraZeneca/Vaxzevria (Fiocruz, Covishield, R-Covi) or Johnson&Johnson/Janssen.
+   
+   If you were vaccinated in one of the following countries, you do not need to convert your vaccination certificate: Albania, Andorra, Armenia, Faroe Islands, Iceland, Israel, Liechtenstein, North Macedonia, Morocco, Monaco, Norway, Panama, United-Kingdom, San Marino, Switzerland, Turkey, Ukraine, Vatican.
 
    <div class="voir-aussi">
 
@@ -39,6 +41,8 @@
    Foreign **students** studying in France can [request the conversion](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etudiants?locale=en) of their vaccination certificate.
 
    While your request is being processed, a **negative PCR or antigenic test result** will be your temporary health pass (valid for 24h). To find out where to get tested, please click on [this link](https://www.sante.fr/cf/centres-depistage-covid.html) (in French).
+   
+    Please note that this is only possible if you were vaccinated with the following vaccines : Pfizer/Comirnaty, Moderna/Spikevax, AstraZeneca/Vaxzevria (Fiocruz, Covishield, R-Covi) or Johnson&Johnson/Janssen.
 
    If you were vaccinated in one of the following countries, you do not need to convert your vaccination certificate: Albania, Andorra, Armenia, Faroe Islands, Iceland, Israel, Liechtenstein, North Macedonia, Morocco, Monaco, Norway, Panama, United-Kingdom, San Marino, Switzerland, Turkey, Ukraine, Vatican. 
 
@@ -57,8 +61,25 @@
       * a **positive test result** (PCR or antigenic): valid between 11 days and 6 months after the illness,
       * a certificate of **full vaccination** with Pfizer, Moderna, AstraZeneca or Janssen.
 
-   You will be considered fully vaccinated:
-      * **7 days** after the <strong>2<sup>nd</sup> jab</strong> of **Pfizer**, **Moderna** or **AstraZeneca**. (However, if you tested positive to Covid-19 **before** receiving the first jab, your vaccination will be considered complete 7 days after this single injection.)
-      * **28 days** after the **Janssen** jab.
+   You will be considered fully vaccinated :
+      * **7 days** after the <strong>2<sup>nd</sup> jab</strong> of **Pfizer**, **Moderna** or **AstraZeneca**. (However, if you tested positive to Covid-19 **before** receiving the first jab, your vaccination will be considered complete 7 days after this single injection.).
+   
+      * *or* **7 days** after your **additional jab** of Pfizer or Moderna, if you were first vaccinated with a single dose of **Janssen**.
+   
+.. question:: The vaccine I received is not recognized by the French health authority. How can I complete my vaccination and obtain a french health pass?
+   
+  The following vaccines are recognized by the French and European Medicines authorities : Pfizer/Comirnaty, Moderna/Spikevax, AstraZeneca/Vaxzevria (Fiocruz, Covishield, R-Covi) or Johnson&Johnson/Janssen.
+   
+* You were vaccinated with **Sinopharm**, **Sinovac** or **Covaxin** (recognized by the European Medicines Agency (EMA)):
+   * you received 1 jab: you must complete your vaccination process with 2 jabs of Pfizer/Comirnaty or Moderna/Spikevax, at least 4 weeks after your last injection.
+   * you received 2 jab: you must complete your vaccination process with 1 jab of Pfizer/Comirnaty or Moderna/Spikevax, at least 4 weeks after your last injection.
+   
+* You were vaccinated with **any other** vaccine (not recognized by The EMA nor the French Medecines authorities) :
+   * you received **1 or 2 jabs**: you must complete your vaccination process with 2 jabs of Pfizer/Comirnaty or Moderna/Spikevax, at least 4 weeks after your last injection.
+   
+   
+   
+ 
+   
 
 </div>
