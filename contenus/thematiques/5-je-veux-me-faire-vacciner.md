@@ -222,6 +222,12 @@
 
 
 ## La vaccination initiale (schéma vaccinal à 1 ou 2 doses)
+    
+ <div class="voir-aussi">
+
+- [Je veux des informations sur la vaccination des mineurs](/conseils-pour-les-enfants.html#la-vaccination-contre-la-covid)
+        
+ </div>
 
 .. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose lors de la vaccination initiale (primo-vaccination) ?
     :level: 3
