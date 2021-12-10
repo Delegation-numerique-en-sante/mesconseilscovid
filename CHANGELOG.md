@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-12-10
+
+* précisions sur le délai suite à une primo-vaccination
+* précisions sur les vaccins non reconnus en France
+
 ## 2021-12-09
 
 * mise à jour des informations sur la primo-vaccination
