@@ -69,10 +69,11 @@ class QuestionDirective(Directive):
         question_id = slugify_title(question)
         # TODO: c'est quand même très proche de meta_feedback_conseils.md !
         feedback_html = (
-            f"""<div
+            f"""<form
     data-controller="switch feedback plausible"
     data-switch-delay-value="500"
     data-action="
+        feedback#send
         switch:switched->feedback#focusIfVisible
         feedback:sent->switch#switch
     "
@@ -87,52 +88,53 @@ class QuestionDirective(Directive):
         <p>Ces conseils vous ont été utiles ?</p>
         <div class="feedback-controls">
             <div>
-                <label><input type="submit" class="button-invisible" value="🙁"
-                    data-action="switch#switch feedback#setNegativeFeedback plausible#record"
+                <label><input type="radio" name="kind" class="button-invisible" value="🙁"
+                    data-action="switch#switch feedback#spreadReponse feedback#setNegativeFeedback plausible#record"
                     data-plausible-event-name-param="Avis par question"
                     data-plausible-props-param='{{"{question}": "🙁"}}'
                     data-switch-sources-param="controls"
-                    data-switch-destinations-param="feedback">Non</label>
-                <label><input type="submit" class="button-invisible" value="😐"
-                    data-action="switch#switch feedback#setAverageFeedback plausible#record"
+                    data-switch-destinations-param="feedback"><span class="enlarge">🙁</span> Non</label>
+                <label><input type="radio" name="kind" class="button-invisible" value="😐"
+                    data-action="switch#switch feedback#spreadReponse feedback#setNegativeFeedback plausible#record"
                     data-plausible-event-name-param="Avis par question"
                     data-plausible-props-param='{{"{question}": "😐"}}'
                     data-switch-sources-param="controls"
-                    data-switch-destinations-param="feedback">Bof</label>
-                <label><input type="submit" class="button-invisible" value="🙂"
-                    data-action="switch#switch feedback#setPositiveFeedback plausible#record"
+                    data-switch-destinations-param="feedback"><span class="enlarge">😐</span> Bof</label>
+                <label><input type="radio" name="kind" class="button-invisible" value="🙂"
+                    data-action="switch#switch feedback#spreadReponse feedback#setPositiveFeedback plausible#record"
                     data-plausible-event-name-param="Avis par question"
                     data-plausible-props-param='{{"{question}": "🙂"}}'
                     data-switch-sources-param="controls"
-                    data-switch-destinations-param="feedback">Oui</label>
+                    data-switch-destinations-param="feedback"><span class="enlarge">🙂</span> Oui</label>
             </div>
         </div>
     </div>
-    <div class="feedback-form question-feedback" hidden data-switch-screen="feedback">
-        <form data-action="feedback#send">
-            <fieldset>
-                <p role="status">Merci pour votre retour.</p>
-                <label for="message_conseils">
-                    #TODO: changer le label en fonction de la réponse
-                    oui => Avez-vous des remarques ou des suggestions pour améliorer ces conseils ?
-                    non || bof => Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?
-                </label>
-                <textarea
-                id="message_conseils" name="message" rows="9" cols="20" required
-                data-feedback-target="textarea"
-                ></textarea>
-            </fieldset>
-            <div class="form-controls">
-                <input type="submit" class="button" value="Envoyer mes remarques">
-            </div>
-        </form>
+    <div class="feedback-form" hidden data-switch-screen="feedback">
+        <fieldset>
+            <p role="status">Merci pour votre retour.</p>
+            <label for="message_conseils">
+                <span data-feedback-target="positif"
+                    >Avez-vous des remarques ou des suggestions pour améliorer ces conseils ?</span>
+                <span data-feedback-target="negatif"
+                    >Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?</span>
+            </label>
+            <textarea
+            id="message_conseils" name="message" rows="9" cols="20" required
+            data-feedback-target="textarea"
+            ></textarea>
+        </fieldset>
+        <div class="form-controls">
+            <input type="submit" class="button" value="Envoyer mes remarques">
+        </div>
         <p class="feedback-email">ou écrivez-nous à : <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a></p>
     </div>
     <div class="feedback-thankyou" hidden data-switch-screen="thankyou">
-        <p>Votre réponse : #TODO: afficher la réponse choisie (smiley)</p>
+        <p>
+            Votre réponse : <span data-feedback-target="reponse"></span>
+        </p>
         <p>Merci pour votre avis !</p>
     </div>
-</div>
+</form>
 """
             if feedback == "keep"
             else ""

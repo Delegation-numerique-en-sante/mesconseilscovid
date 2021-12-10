@@ -1,8 +1,9 @@
-<div
+<form
     data-controller="switch feedback plausible"
     data-feedback-endpoint-value="http://0.0.0.0:5500/feedback"
     data-switch-delay-value="500"
     data-action="
+        feedback#send
         feedback:sent->switch#switch
         switch:switched->feedback#focusIfVisible
     "
@@ -17,25 +18,27 @@
     >
         <p>Ces conseils vous ont été utiles ?</p>
         <div class="feedback-controls">
-            <a
-                class="button button-outline button-feedback button-feedback-positif"
-                href=""
-                role="button"
-                data-action="switch#switch feedback#setPositiveFeedback plausible#record"
-                data-plausible-event-name-param="Avis positif"
-                data-switch-sources-param="controls"
-                data-switch-destinations-param="feedback"
-                >Oui</a
+            <label class="button button-outline button-feedback button-feedback-positif"
+                ><input
+                    type="radio"
+                    name="kind"
+                    value="positif"
+                    data-action="switch#switch feedback#setPositiveFeedback plausible#record"
+                    data-plausible-event-name-param="Avis positif"
+                    data-switch-sources-param="controls"
+                    data-switch-destinations-param="feedback"
+                />Oui</label
             >
-            <a
-                class="button button-outline button-feedback button-feedback-negatif"
-                href=""
-                role="button"
-                data-action="switch#switch feedback#setNegativeFeedback plausible#record"
-                data-plausible-event-name-param="Avis negatif"
-                data-switch-sources-param="controls"
-                data-switch-destinations-param="feedback"
-                >Non</a
+            <label class="button button-outline button-feedback button-feedback-negatif"
+                ><input
+                    type="radio"
+                    name="kind"
+                    value="negatif"
+                    data-action="switch#switch feedback#setNegativeFeedback plausible#record"
+                    data-plausible-event-name-param="Avis negatif"
+                    data-switch-sources-param="controls"
+                    data-switch-destinations-param="feedback"
+                />Non</label
             >
             <a
                 class="button button-outline button-partager button-feedback-partager"
@@ -56,26 +59,24 @@
         </div>
     </div>
     <div class="feedback-form" hidden data-switch-screen="feedback">
-        <form data-action="feedback#send">
-            <fieldset>
-                <p role="status">Merci pour votre retour.</p>
-                <label for="message_conseils"
-                    >Pouvez-vous nous en dire plus, afin que nous puissions améliorer
-                    ces conseils ?</label
-                >
-                <textarea
-                    id="message_conseils"
-                    name="message"
-                    rows="9"
-                    cols="20"
-                    required
-                    data-feedback-target="textarea"
-                ></textarea>
-            </fieldset>
-            <div class="form-controls">
-                <input type="submit" class="button" value="Envoyer mes remarques" />
-            </div>
-        </form>
+        <fieldset>
+            <p role="status">Merci pour votre retour.</p>
+            <label for="message_conseils"
+                >Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces
+                conseils ?</label
+            >
+            <textarea
+                id="message_conseils"
+                name="message"
+                rows="9"
+                cols="20"
+                required
+                data-feedback-target="textarea"
+            ></textarea>
+        </fieldset>
+        <div class="form-controls">
+            <input type="submit" class="button" value="Envoyer mes remarques" />
+        </div>
         <p class="feedback-email">
             ou écrivez-nous à :
             <a href="mailto:contact@mesconseilscovid.fr">contact@mesconseilscovid.fr</a>
@@ -128,4 +129,4 @@
             </li>
         </ul>
     </div>
-</div>
+</form>

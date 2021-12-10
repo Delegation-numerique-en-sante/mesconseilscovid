@@ -1109,6 +1109,7 @@ input[type='date'] {
 
 a.button:focus,
 button.button:focus,
+label.button:focus,
 input[type='text']:focus,
 input[type='date']:focus,
 input[type='submit']:focus,
@@ -1119,6 +1120,7 @@ select:focus {
 
 a.button,
 button.button,
+label.button,
 input[type='submit'] {
     text-align: center;
     border-radius: 5px;
@@ -1166,6 +1168,7 @@ input[type='submit'].button-arrow {
 }
 input.button-outline,
 button.button-outline,
+label.button-outline,
 a.button-outline {
     background-color: white;
     border: 1px solid #000091;
@@ -1181,15 +1184,15 @@ a.button-red {
     border: 1px solid #dc3545;
     color: #fff;
 }
-a.button-feedback {
+.button-feedback {
     border-color: #000091;
     color: #000091;
 }
-a.button-feedback-positif {
+label.button-feedback-positif {
     background: no-repeat 24px center url('feedback-positif.svg');
     padding: 12px 24px 12px 60px;
 }
-a.button-feedback-negatif {
+label.button-feedback-negatif {
     background: no-repeat 65px center url('feedback-negatif.svg');
     padding: 12px 60px 12px 24px;
 }
@@ -1266,21 +1269,18 @@ a.button-feedback-social-whatsapp {
     margin: 0;
     padding: 0.5rem;
 }
-.question-feedback input[type='submit'] {
-    width: 44px;
-    height: 44px;
+.question-feedback label .enlarge {
     font-size: 150%;
-    margin: 0;
-    padding: 0 4px;
-    border: 3px solid transparent;
+    transition: transform 0.1s ease-in;
+    margin-right: 0.5rem;
 }
 .question-feedback label:active,
 .question-feedback label:hover {
     color: #252565;
 }
-.question-feedback label:active input[type='submit'],
-.question-feedback label:hover input[type='submit'] {
-    font-size: 175%;
+.question-feedback label:active .enlarge,
+.question-feedback label:hover .enlarge {
+    transform: scale(1.16);
 }
 
 @media only screen and (min-width: 680px) {
