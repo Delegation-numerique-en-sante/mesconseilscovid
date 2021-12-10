@@ -65,7 +65,7 @@
 
    In France, **3 documents** can be used as a health pass, as long as they include a valid European **QR code**:
 
-      * a **negative test result** (PCR, antigenic or supervised self-test): valid for 24h after the test,
+      * a **negative test result** (PCR or antigenic): valid for 24h after the test,
       * a **positive test result** (PCR or antigenic): valid between 11 days and 6 months after the test,
       * a certificate of **full vaccination** with Pfizer, Moderna, AstraZeneca or Janssen.
 
