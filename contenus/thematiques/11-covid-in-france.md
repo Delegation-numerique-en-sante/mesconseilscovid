@@ -69,7 +69,8 @@
       * a **positive test result** (PCR or antigenic): valid between 11 days and 6 months after the test,
       * a certificate of **full vaccination** with Pfizer, Moderna, AstraZeneca or Janssen.
 
-   You will be considered fully vaccinated :
+   You will be considered fully vaccinated:
+   
       * **7 days** after the <strong>2<sup>nd</sup> jab</strong> of **Pfizer**, **Moderna** or **AstraZeneca** (or if you tested positive to Covid-19 **before** receiving the first jab, your vaccination will be considered complete 7 days after this single injection),
 
       * *or* **7 days** after your **additional jab** of Pfizer or Moderna, if you were first vaccinated with a single dose of **Janssen**.
