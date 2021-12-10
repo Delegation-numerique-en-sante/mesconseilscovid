@@ -94,7 +94,7 @@
     Si vous avez reçu une **dose unique** de **vaccin Janssen**, il y a plusieurs cas possibles.
 
     - Si vous n’avez **pas eu la Covid**, ni avant ni après votre injection, alors :
-        - vous devrez recevoir une **dose supplémentaire** de vaccin à ARN messager (Pfizer ou Moderna, en dose complète) après un délai d’au moins **4 semaines**, afin de **compléter votre schéma vaccinal** ; cette 2<sup>e</sup> injection prolongera la validité de votre **pass sanitaire** ;
+        - vous devrez recevoir une **dose supplémentaire** de vaccin à ARN messager (Pfizer ou Moderna, en dose complète) **4 semaines** après votre injection, afin de **compléter votre schéma vaccinal** ; cette 2<sup>e</sup> injection prolongera la validité de votre **pass sanitaire** ;
 
         - **5 mois** après cette injection supplémentaire, vous serez éligible au **rappel vaccinal**, avec un vaccin Pfizer ou Moderna (demi-dose).
 
@@ -225,16 +225,20 @@
 
 .. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose lors de la vaccination initiale (primo-vaccination) ?
     :level: 3
+    
+    Le délai avant la **2<sup>e</sup> injection** dépend du type de vaccin utilisé pour la première injection.
 
-    Pour les vaccins à ARN messager, la 2<sup>e</sup> injection doit être programmée :
-    * entre **21 et 49 jours** après la première, pour le vaccin **Pfizer** ;
-    * entre **28 et 49 jours** après la première, pour le vaccin **Moderna**.
-
-    Il faut donc respecter un délai de **3 à 7 semaines** après la première injection.
-
-    La Haute autorité de santé recommande de recevoir une 2<sup>e</sup> dose de vaccin ARNm (Pfizer-BioNTech ou Moderna) après une première dose de vaccin **AstraZeneca**, en respectant un délai d’au moins **4 semaines**.
-
-
+    * Si vous avez reçu une première dose de vaccin à **ARN messager** (Pfizer ou Moderna), il faut recevoir la **2<sup>e</sup> dose : 
+        * entre **21 et 49 jours** après la première, pour le vaccin **Pfizer** ;
+        * entre **28 et 49 jours** après la première, pour le vaccin **Moderna**.
+    Soit respecter un délai de **3 à 7 semaines**.
+        
+    * Si vous avez reçu une première dose de vaccin à **Janssen**, il faut recevoir la **2<sup>e</sup> dose :
+        * *28 jours** (4 semaines) après la première. Cette injection supplémentaire sera réalisée avec un **vaccin à ARN messager** (Pfizer ou Moderna).
+    
+    * Si vous avez reçu une première dose de vaccin AstraZeneca :  
+        * La Haute autorité de santé recommande de recevoir une 2<sup>e</sup> dose de vaccin ARNm (Pfizer-BioNTech ou Moderna), après un délai de **28 jours** (4 semaines).
+    
 .. question:: Quel vaccin choisir pour ma vaccination initiale (primo-vaccination) ?
     :level: 3
 
