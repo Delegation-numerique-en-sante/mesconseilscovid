@@ -1,9 +1,9 @@
-# Conseils pour les mineurs : vaccination et scolarité
+# Conseils pour les jeunes : vaccination et scolarité
 
 <img src="illustrations/pediatriegeneral.svg">
 
 <header>
-    <p class="big">Pour vous parents, l’épidémie de Covid a apporté son lot de nouvelles questions et préoccupations concernant votre enfant : cas contact, test de dépistage, vaccination, classe fermée… MesConseilsCovid y répond et vous informe sur les dernières mesures appliquées dans le milieu scolaire et la conduite à tenir selon la situation et l’âge de votre enfant.</p>
+    <p class="big">L’épidémie de Covid a apporté son lot de nouvelles questions et préoccupations concernant votre enfant : cas contact, test de dépistage, vaccination, classe fermée… MesConseilsCovid y répond et vous informe sur les dernières mesures appliquées dans le milieu scolaire et la conduite à tenir selon la situation et l’âge de votre enfant.</p>
 </header>
 
 .. toc:: Sommaire
@@ -13,13 +13,12 @@
 
 <div class="conseil">
 
-Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **soutien psychologique**, sans avance de frais, pour les mineurs en souffrance psychique du fait de la situation sanitaire. Pour obtenir toutes les informations nécessaires, consultez [le site internet dédié au dispositif](https://www.psyenfantado.sante.gouv.fr/).
+Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **soutien psychologique**, gratuitement, pour les ados qui souffrent du contexte sanitaire actuel et ressentent le besoin de parler à quelqu'un d'extérieur à la famille. Si tu veux savoir comment en bénéficier, consulte [le site internet dédié au dispositif](https://www.psyenfantado.sante.gouv.fr/).
 
 </div>
 
 .. section:: Mesures sanitaires à l’école, au collège et au lycée
-    :tags: 4 à 11 ans, 12 à 18 ans
-
+   
 .. question:: Dans quels cas est-ce que je dois rester à la maison ?
     :level: 3
 
@@ -150,12 +149,16 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: Si mon frère ou ma soeur est cas contact, suis-je cas contact également ?
+.. question:: Est-ce que le cas contact d'un cas contact est cas contact ?
     :level: 3
 
-    Le « **cas contact d’un cas contact** » n’est pas un cas contact. Si l’un de vos enfants doit s’isoler, parce qu’il est identifié comme **cas contact** et qu’il n’est **pas vacciné** (et qu’il n’a pas déjà eu la Covid dans les 2 derniers mois), alors ses frères et sœurs peuvent continuer à **aller à l’école**.
-
-    Par contre, si votre enfant est **testé positif** à la Covid, alors ses frères et sœurs deviendront à leur tour **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois). S’ils ne sont **pas vaccinés**, ils devront eux aussi s’isoler et ne devront pas aller à l’école.
+    + Le « **cas contact d’un cas contact** » n’est pas un cas contact.
+    
+    *Par exemple, si ta soeur est cas contact de son ami et qu'elle doit s'isoler parce qu'elle n'est pas vacciné(e), les autres personnes du foyer (dont toi) ne sont pas considérées cas contact et ne doivent pas s'isoler. Tu pourras donc continuer à aller au collège ou au lycée et tes parents pourront aller au travail.*
+    
+    + Par contre, si le cas contact devient à son tour cas positif, alors les autres personnes du foyer deviennent cas contact. 
+    
+    *Donc, si ta soeur est  **testée positive** à la Covid, alors les autres personnes du foyer (dont toi) deviendront à leur tour **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois). S’ils ne sont **pas vaccinés**, ils devront eux aussi s’isoler. Dans ce cas, tu ne devras pas aller au collège ou au lycée et tes parents ne devront pas aller travailler.*
 
     <div class="voir-aussi">
 
@@ -168,14 +171,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: Est-ce que mon enfant doit porter le masque ?
+.. question:: Est-ce que je dois porter le masque au collège ou au lycée?
     :level: 3
+    
+     Oui, le masque est **obligatoire en primaire, au collège et au lycée** dans tous les départements.
 
-    Le port du masque est **obligatoire en primaire, au collège et au lycée** dans tous les départements.
-
-    Pour les élèves des **écoles maternelles**, le port du masque est proscrit quel que soit le département.
-
-    **Les parents doivent fournir des masques à leurs enfants**. Le masque doit assurer une filtration supérieure à 90 % (masque « grand public » ou masque chirurgical par exemple). Le ministère dote chaque école, collège et lycée en masques « grand public » afin qu’ils puissent être fournis aux élèves qui n’en disposeraient pas.
+     Tu ne peux pas utiliser n'importe quel tissu pour ton masque. Pour être protecteur, il doit assurer une filtration supérieure à 90 % (masque « grand public » ou masque chirurgical par exemple).
+     Tes parents doivent te fournir un masque, mais si besoin (oubli, accident), ton établissement scolaire pourra t'en donner un.
+   
 
     <div class="voir-aussi">
 
@@ -184,10 +187,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: Est-ce que mon enfant a besoin du pass sanitaire pour aller à l’école ?
+.. question:: Est-ce que j'ai besoin du pass sanitaire pour aller au collège ou au lycée ?
     :level: 3
 
     **Non**. Le pass sanitaire n’est **pas obligatoire** pour accéder aux établissements d’enseignement, écoles, collèges ou lycées.
+    
+    En revanche, il peut être obligatoire pour les activités extra-scolaires
 
 
     <div class="voir-aussi">
@@ -201,16 +206,15 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 
 .. section:: La vaccination contre la Covid
-    :tags: 4 à 11 ans, 12 à 18 ans
 
-.. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
+.. question:: Est-ce que j'ai besoin de l'autorisation de mes parents pour me faire vacciner contre la Covid ?
     :level: 3
 
-    Pour les mineurs âgés de **16 à 17 ans**, aucune autorisation parentale n’est requise.
+    Si tu es âgé de plus **16 ans**, tu peux te faire vacciner sans l'autorisation de tes parents. N'oublies pas d'apporter ta carte vitale à ton rendez-vous de vaccination.
 
-    Pour les mineurs âgés de **12 à 15 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Un formulaire d’autorisation peut être [téléchargé à l’avance](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) et sera également disponible dans le centre de vaccination.
-
-    Le jour de la vaccination, l’adolescent(e) **peut venir accompagné(e)** de l’un de ses parents (ou titulaires de l’autorité parentale), mais ce n’est pas obligatoire.
+    Si tu as entre **12 et 15 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Tu peux [télécharger à l'avance]((https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf)) le formulaire de consentement,pour qu'il le remplisse avant le jour du rendez-vous, sinon, une copie sera disponible sur place.
+    
+    Le jour de la vaccination, tu pourras, si tu le souhaites,**venir accompagné(e)** d'un parent (ou titulaire de l’autorité parentale), mais ce n’est pas obligatoire.
 
     <div class="voir-aussi">
 
@@ -219,46 +223,30 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: Le mineur doit-il donner son accord ?
+.. question:: Est-ce que je dois donner mon accord pour être vacciné(e) ?
     :level: 3
 
-    **Oui**. Au cours de l’entretien préalable à la vaccination, le professionnel de santé donnera à l’adolescent(e) toutes les informations de façon claire et adaptée. Il recueillera ensuite son **consentement oral** avant de procéder à l’injection.
+    **Oui**. Au cours de l’entretien qui a lieu avant la vaccination, le professionnel de santé te donnera toutes les informations de façon claire et adaptée. Avant de te vacciner, il te demandera ton **consentement oral**.
 
 
-.. question:: Où faire vacciner un mineur et avec quel vaccin ?
+.. question:: Où me faire vacciner et avec quel vaccin ?
     :level: 3
 
     Les adolescent(e)s âgé(e)s de 12 ans et plus peuvent-être vacciné(e)s :
 
     * dans un **centre de vaccination** et dans certains **établissements scolaires**, avec un vaccin *Pfizer-BioNTech* ;
 
-    * chez votre **médecin traitant**, en cabinet infirmier, ou en pharmacie avec un vaccin *Pfizer-BioNTech* ou *Moderna*.
+    * chez leur **médecin traitant**, en cabinet infirmier, ou en pharmacie avec un vaccin *Pfizer-BioNTech* ou *Moderna*.
 
-    La Haute autorité de santé (HAS) recommande de privilégier le vaccin **Pfizer** lorsque c’est possible (en raison d’un risque accru de myocardite avec le vaccin *Moderna* chez les personnes de moins de 30 ans).
+    La Haute autorité de santé (HAS) recommande d'utiliser le vaccin **Pfizer** lorsque c’est possible (en raison d’un risque accru de myocardite avec le vaccin *Moderna* chez les personnes de moins de 30 ans).
 
     <div class="voir-aussi">
 
-    * Trouvez les lieux de vaccination proches de chez vous sur le site [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou en appelant le numéro vert [0 800 009 110](tel:0800009110) (7j/7, de 6h à 22h).
+    * Trouve les lieux de vaccination proches de chez toi sur le site [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou en appelant le numéro vert [0 800 009 110](tel:0800009110) (7j/7, de 6h à 22h).
 
     </div>
 
-
-.. question:: Les enfants de moins de 12 ans peuvent-ils être vaccinés ?
-    :level: 3
-
-    La Haute Autorité de Santé (HAS) **recommande** de vacciner contre la Covid les enfants âgés de **5 à 11 ans** qui :
-
-    * ont des **comorbidités** les mettant à risque de faire une forme grave (notamment, de développer des « syndromes inflammatoires multi-systémiques pédiatriques » (PIMS)) ;
-    * *ou* ont dans leur **entourage** proche une **personne fortement immunodéprimée** ou **vulnérable** qui ne peut pas bénéficier de la protection vaccinale.
-
-    La campagne de vaccination pour les enfants concernés devrait débuter à partir de la mi-décembre.
-
-    La vaccination sera **facultative** et se fera avec une dose pédiatrique (10 µg) de vaccin **Pfizer**.
-
-    Pour l’instant, il n’est pas prévu d’élargir la vaccination à tous les enfants de cette catégorie d’âge.
-
-
-.. question:: Les mineurs reçoivent-ils le même nombre de doses que les adultes ?
+.. question:: Les adolescents reçoivent-ils le même nombre de doses que les adultes ?
     :level: 3
 
     **Oui**. Comme pour les adultes, les mineurs reçoivent :
@@ -276,19 +264,19 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Quels justificatifs apporter le jour du rendez-vous de vaccination ?
     :level: 3
 
-    * Si l’adolescent(e) a **moins de 16 ans**, [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par un des deux parents ou par le tuteur.
-    * La **carte vitale** de l’adolescent(e) (si disponible), et **celle d’un parent** (ou une [attestation de droits](https://www.ameli.fr/paris/assure/adresses-et-contacts/lobtention-dun-document/obtenir-une-attestation/obtenir-une-attestation-de-droits) mentionnant le numéro de sécurité sociale d’un parent).
-    * La preuve de contamination antérieure, si le mineur a déjà été contaminé par la Covid. Cette preuve peut-être un ancien **test positif** (PCR ou antigénique), ou une **sérologie** (prise de sang) indiquant la présence d’anticorps. Il faut respecter un délai de **2 mois minimum** après ce test positif avant de se faire vacciner.
+    * Si tu as **moins de 16 ans**, [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par un des deux parents ou par le tuteur.
+    * Ta **carte vitale** (si disponible), et **celle d’un parent** (ou une [attestation de droits](https://www.ameli.fr/paris/assure/adresses-et-contacts/lobtention-dun-document/obtenir-une-attestation/obtenir-une-attestation-de-droits) mentionnant le numéro de sécurité sociale d’un parent).
+    * La preuve que tu as déjà eu la Covid, si c'est le cas. Cette preuve peut-être un ancien **test positif** (PCR ou antigénique), ou une **sérologie** (prise de sang) indiquant la présence d’anticorps. Si tu n'as pas conservé ton ancien test positif, n'hésite pas à demander à ton médecin de te prescrire une sérologie (prise de sang) qui prouvera que tu as déjà été contaminé par la Covid. Il faut respecter un délai de **2 mois minimum** après un test positif avant de se faire vacciner.
 
 
-.. question:: Comment obtenir une attestation de vaccination (valable comme « pass sanitaire ») pour un mineur ?
+.. question:: Je suis vacciné(e). Comment faire pour avoir un pass sanitaire ?
     :level: 3
 
-    Suite à la vaccination, le professionnel de santé lui remettra une **attestation de vaccination** (sur papier) comportant un QR code.
+    Lors de ton rendez-vous de vaccination, le professionnel de santé t'a remis une **attestation de vaccination** (sur papier) comportant un QR code.
 
-    Elle sera valable comme « pass sanitaire » en France **7 jours après la dernière dose** (dose unique en cas de contamination antérieure, ou 2<sup>e</sup> dose dans les autres cas). Pour les voyages à l’international, le délai est de 14 jours.
+    Elle sera valable comme « pass sanitaire » en France **7 jours après ta dernière dose**. Si tu veux utiliser ton pass sanitaire pour voyager, tu devras attendre 14 jours.
 
-    Cette attestation pourra être importée dans l’application TousAntiCovid rubrique « carnet », sur le smartphone de l’adolescent(e) ou de ses parents.
+    Cette attestation pourra être importée dans l’application TousAntiCovid rubrique « carnet », sur ton smartphone.
 
     <div class="voir-aussi">
 
@@ -297,54 +285,48 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: La vaccination des mineurs sera-t-elle obligatoire pour obtenir le « pass sanitaire » ?
+.. question:: La vaccination est-elle obligatoire obtenir le « pass sanitaire » ?
     :level: 3
 
-    **Non**. Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « pass sanitaire » utilisable en France et pour les voyages en Union européenne :
+    La vaccination n'est pas la seule façon d'obtenir un pass sanitaire. Tu peux aussi en obtenir un grâce à : 
 
-    * l’**attestation de vaccination complète** (toutes les doses et respect du délai de 7 jours après la dernière dose en France, ou 14 jours pour voyager à l’étranger) ;
-    * un **test PCR ou antigénique négatif** de moins de 24 h ;
+    * un **test PCR ou antigénique (pharmacie) négatif** de moins de 24 h ;
     * un **test PCR positif** de plus de 11 jours et moins de 6 mois.
+    
+ .. section:: Questions médicales et dépistage
 
-    Par ailleurs, le ou la mineur(e) non-vacciné(e) accompagnant ses parents vaccinés lors d’un voyage bénéficiera des mêmes facilités qu’eux. Par exemple, un(e) mineur(e) non-vacciné(e) pourra accompagner ses parents vaccinés lors d’un voyage dans un [pays classé orange](https://www.gouvernement.fr/voyager-depuis-et-vers-l-etranger-mode-d-emploi) sans justifier d’un motif impérieux pour s’y rendre.
+.. question:: Je me sens malade. Que faire ?
+    :level: 3
+
+   Dans la contexte actuel, si tu te sens malade, mieux vaut être prudent et suivre quelques recommandations simples : 
+
+    * ne va pas au collège ou au lycée;
+    * demande à tes parents ou contacte toi même par téléphone ton **médecin** ou le 15 : ne va pas spontanément chez le médecin traitant ou aux urgences sans contact téléphonique préalable ;
+    * applique les **mesures barrières** (porte le masque, garde tes distances avec tes proches).
+    * fais toi tester en pharmacie ou au laboratoire pour t'assurer que tu n'as pas attrapé la Covid.
+
+.. question:: Où me faire tester ?
+    :level: 3
+    
+    Tu peux te faire tester en laboratoire, dans ce cas ce sera un test RT-PCR (résultat en plus ou moins 24 h) ou en pharmacie avec un test antigénique (résultat sous 30 minutes).
+
+    [Clique ici pour trouver un lieu de dépistage près de chez toi](https://www.sante.fr/cf/centres-depistage-covid.html) sur le site sante.fr.
 
     <div class="voir-aussi">
 
-    * Pour plus d’informations, consultez notre page sur [les voyages et le pass sanitaire](/pass-sanitaire-qr-code-voyages.html).
+    - En savoir plus sur les [types de tests de dépistage](/tests-de-depistage.html) et trouver celui adapté à ta situation.
 
     </div>
 
-
-.. section:: Questions médicales et dépistage
-    :tags: 0 à 3 ans, 4 à 11 ans, 12 à 18 ans
-
-.. question:: Que faire si mon enfant est malade ?
+.. question:: Que faire si je suis positif à la Covid ?
     :level: 3
 
-    Il vous est conseillé :
-
-    * de maintenir **l’enfant à la maison** ;
-    * de contacter par téléphone un **médecin** (pédiatre si possible) ou le 15 : il est déconseillé de se rendre spontanément chez le médecin traitant ou aux urgences sans contact téléphonique préalable ;
-    * d’appliquer les **mesures barrières**.
-
-    Le retour de l’enfant en collectivité ne pourra être envisagé qu’après avis d’un médecin.
-
-.. question:: Où faire tester mon enfant ?
-    :level: 3
-
-    [Cliquez ici pour trouver un lieu de dépistage près de chez vous](https://www.sante.fr/cf/centres-depistage-covid.html) sur le site sante.fr.
-
-    <div class="voir-aussi">
-
-    - En savoir plus sur les [types de tests de dépistage](/tests-de-depistage.html) et trouver celui adapté à la situation de votre enfant.
-
-    </div>
-
-.. question:: Que faire si mon enfant est positif à la Covid ?
-    :level: 3
-
-    Si votre enfant a été testé **positif** à la Covid, il doit rester **isolé** au moins **10 jours** à partir de la date du début de ses symptômes, ou du test positif s’il est asymptomatique.
-    Les autres membres du foyer sont considérés comme **cas contact** et doivent s’isoler s’ils ne sont pas vaccinés.
+    Si tu as été testé **positif** à la Covid, ne t'inquiète pas. Ce virus peut être dangereux pour les personnes âgées ou vulnérables (malades...), mais pas pour les jeunes.
+    Il faut suivre certaines recommandations, pour éviter de propager la Covid autour de toi et vers des personnes fragiles :
+    + tu dois rester **isolé** au moins **10 jours** à partir de la date du début de tes symptômes, ou de ton test positif si tu n'as pas de symptômes.
+    + tu dois prévenir les personnes avec qui tu as eu un contact récent (amis, élèves...)
+    + Les personnes avec qui tu habites sont considérées comme **cas contact** et doivent s’isoler s’ils ne sont pas vaccinés.
+     
 
     <div class="voir-aussi">
 
