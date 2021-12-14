@@ -210,11 +210,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Est-ce que j'ai besoin de l'autorisation de mes parents pour me faire vacciner contre la Covid ?
     :level: 3
 
-    Si tu es âgé de plus **16 ans**, tu peux te faire vacciner sans l'autorisation de tes parents. N'oublies pas d'apporter ta carte vitale à ton rendez-vous de vaccination.
+    Cela dépend de ton âge. Si tu es âgé de plus **16 ans**, tu peux te faire vacciner sans l'autorisation de tes parents. N'oublies pas d'apporter ta carte vitale (si tu en as une)
+    à ton rendez-vous de vaccination.
 
-    Si tu as entre **12 et 15 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Tu peux [télécharger à l'avance]((https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf)) le formulaire de consentement,pour qu'il le remplisse avant le jour du rendez-vous, sinon, une copie sera disponible sur place.
+    Si tu as entre **12 et 15 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Tu peux [télécharger]((https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) le formulaire de consentement, pour qu'il soit rempli avant le jour du rendez-vous, sinon, une copie sera disponible sur place.
     
-    Le jour de la vaccination, tu pourras, si tu le souhaites,**venir accompagné(e)** d'un parent (ou titulaire de l’autorité parentale), mais ce n’est pas obligatoire.
+    Le jour de la vaccination, tu pourras, si tu le souhaites, **venir accompagné(e)** d'un parent (ou titulaire de l’autorité parentale).
 
     <div class="voir-aussi">
 
@@ -226,34 +227,33 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Est-ce que je dois donner mon accord pour être vacciné(e) ?
     :level: 3
 
-    **Oui**. Au cours de l’entretien qui a lieu avant la vaccination, le professionnel de santé te donnera toutes les informations de façon claire et adaptée. Avant de te vacciner, il te demandera ton **consentement oral**.
+    **Oui**. Au cours de l’entretien qui a lieu avant la vaccination, le professionnel de santé te donnera toutes les informations de façon claire et adaptée. Avant de te vacciner,
+    il te demandera ton **consentement oral**.
 
 
 .. question:: Où me faire vacciner et avec quel vaccin ?
     :level: 3
 
-    Les adolescent(e)s âgé(e)s de 12 ans et plus peuvent-être vacciné(e)s :
+   Si tu as plus de 12 ans, tu peux te faire vacciner :
 
     * dans un **centre de vaccination** et dans certains **établissements scolaires**, avec un vaccin *Pfizer-BioNTech* ;
 
-    * chez leur **médecin traitant**, en cabinet infirmier, ou en pharmacie avec un vaccin *Pfizer-BioNTech* ou *Moderna*.
+    * chez ton **médecin traitant**, en cabinet infirmier, ou en pharmacie avec un vaccin *Pfizer-BioNTech* ou *Moderna*.
 
-    La Haute autorité de santé (HAS) recommande d'utiliser le vaccin **Pfizer** lorsque c’est possible (en raison d’un risque accru de myocardite avec le vaccin *Moderna* chez les personnes de moins de 30 ans).
+    La Haute autorité de santé (HAS) (l'autorité scientifique publique de référence) recommande plutôt d'utiliser le vaccin **Pfizer** chez les moins de 30 ans (en raison d’un risque accru de myocardite avec le vaccin *Moderna*).
 
     <div class="voir-aussi">
 
-    * Trouve les lieux de vaccination proches de chez toi sur le site [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou en appelant le numéro vert [0 800 009 110](tel:0800009110) (7j/7, de 6h à 22h).
-
+    * Trouve un créneau de vaccination près de chez toi sur [ViteMaDose](www.vitemadose.fr)
     </div>
 
-.. question:: Les adolescents reçoivent-ils le même nombre de doses que les adultes ?
+.. question:: Les adolescents reçoivent-ils autant de doses que les adultes ?
     :level: 3
 
-    **Oui**. Comme pour les adultes, les mineurs reçoivent :
-
-    * **une seule dose**, s’ils ont déjà été contaminés à la Covid (dans ce cas, il faut attendre **au minimum 2 mois** après le test positif avant de se faire vacciner) ;
-    * **deux doses**, s’ils n’ont pas déjà été contaminés par la Covid.
-
+    **Oui** si tu as entre 12 et 17 ans tu recevras le même nombre de doses que les adultes :    
+    * si tu as déjà eu la Covid il y a 2 mois ou plus, **une seule** dose sera nécéssaire ;
+    * si tu n'as jamais eu la Covid, **deux** doses seront nécéssaires. 
+    
     <div class="voir-aussi">
 
     * [Quels justificatifs apporter le jour du rendez-vous de vaccination ?](#quels-justificatifs-apporter-le-jour-du-rendez-vous-de-vaccination)
@@ -264,10 +264,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Quels justificatifs apporter le jour du rendez-vous de vaccination ?
     :level: 3
 
-    * Si tu as **moins de 16 ans**, [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par un des deux parents ou par le tuteur.
-    * Ta **carte vitale** (si disponible), et **celle d’un parent** (ou une [attestation de droits](https://www.ameli.fr/paris/assure/adresses-et-contacts/lobtention-dun-document/obtenir-une-attestation/obtenir-une-attestation-de-droits) mentionnant le numéro de sécurité sociale d’un parent).
-    * La preuve que tu as déjà eu la Covid, si c'est le cas. Cette preuve peut-être un ancien **test positif** (PCR ou antigénique), ou une **sérologie** (prise de sang) indiquant la présence d’anticorps. Si tu n'as pas conservé ton ancien test positif, n'hésite pas à demander à ton médecin de te prescrire une sérologie (prise de sang) qui prouvera que tu as déjà été contaminé par la Covid. Il faut respecter un délai de **2 mois minimum** après un test positif avant de se faire vacciner.
-
+    * Ta **carte vitale** (si disponible) et **celle d’un parent** (ou une [attestation de droits](https://www.ameli.fr/paris/assure/adresses-et-contacts/lobtention-dun-document/obtenir-une-attestation/obtenir-une-attestation-de-droits) mentionnant le numéro de sécurité sociale d’un parent).
+    
+    * Si tu as **moins de 16 ans**, il faudra apporter [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par un des deux parents ou par ton tuteur.
+    
+    * Si tu as **déjà eu la Covid** il y a au moins **2 mois**, il faudra apporter la preuve de cette contamination :
+        * un ancien **test positif** (PCR ou antigénique). Si tu n'as pas conservé ton ancien test positif, n'hésite pas à demander à ton médecin de te prescrire une sérologie (prise de sang) qui prouvera que tu as déjà été contaminé par la Covid.
+        * *ou* une **sérologie** (prise de sang) indiquant la présence d’anticorps (et donc du ancienne contamination à la Covid). 
+   
 
 .. question:: Je suis vacciné(e). Comment faire pour avoir un pass sanitaire ?
     :level: 3
@@ -280,7 +284,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    * Pour plus d’informations, consultez notre page sur [les voyages et le pass sanitaire](/pass-sanitaire-qr-code-voyages.html).
+    * Pour plus d’informations, consulte notre page sur [les voyages et le pass sanitaire](/pass-sanitaire-qr-code-voyages.html).
 
     </div>
 
@@ -295,7 +299,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     
  .. section:: Questions médicales et dépistage
 
-.. question:: Je me sens malade. Que faire ?
+.. question:: Je me sens malade. Que dois-je faire ?
     :level: 3
 
    Dans la contexte actuel, si tu te sens malade, mieux vaut être prudent et suivre quelques recommandations simples : 
@@ -305,10 +309,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * applique les **mesures barrières** (porte le masque, garde tes distances avec tes proches).
     * fais toi tester en pharmacie ou au laboratoire pour t'assurer que tu n'as pas attrapé la Covid.
 
-.. question:: Où me faire tester ?
+.. question:: Où faire un test de dépistage ?
     :level: 3
     
-    Tu peux te faire tester en laboratoire, dans ce cas ce sera un test RT-PCR (résultat en plus ou moins 24 h) ou en pharmacie avec un test antigénique (résultat sous 30 minutes).
+    Tu peux faire un test PCR en laboratoire (résultat en plus ou moins 24 h) ou un test antigénique en pharmacie (résultat sous 30 minutes). 
+    Les tests sont **gratuits** (pris en charge par l'Assurance maladie) pour les mineurs vaccinés ou non. Alors n'hésite pas à te faire tester au moindre doute ou avant de voir des
+    personnes vulnérabes (grands-parents...) !
 
     [Clique ici pour trouver un lieu de dépistage près de chez toi](https://www.sante.fr/cf/centres-depistage-covid.html) sur le site sante.fr.
 
@@ -318,76 +324,44 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     </div>
 
-.. question:: Que faire si je suis positif à la Covid ?
+.. question:: Je suis positif à la Covid, que dois-je faire ?
     :level: 3
 
-    Si tu as été testé **positif** à la Covid, ne t'inquiète pas. Ce virus peut être dangereux pour les personnes âgées ou vulnérables (malades...), mais pas pour les jeunes.
-    Il faut suivre certaines recommandations, pour éviter de propager la Covid autour de toi et vers des personnes fragiles :
-    + tu dois rester **isolé** au moins **10 jours** à partir de la date du début de tes symptômes, ou de ton test positif si tu n'as pas de symptômes.
-    + tu dois prévenir les personnes avec qui tu as eu un contact récent (amis, élèves...)
-    + Les personnes avec qui tu habites sont considérées comme **cas contact** et doivent s’isoler s’ils ne sont pas vaccinés.
+    Si tu as été testé **positif** à la Covid, ne t'inquiète pas. Ce virus peut être dangereux pour les personnes âgées ou fragiles (malades...), mais il l'est très rarement pour les
+    jeunes.
+    Il est important que tu suives certaines recommandations, pour ne pas contaminer les personnes qui t'entourent :
+    + Reste **isolé** au moins **10 jours** à partir de la date du début de tes symptômes, ou de ton test positif si tu n'as pas de symptômes ;
+    + Préviens les personnes avec qui tu as eu un contact récent (amis, élèves...) pour qu'ils se fassent tester car ils sont cas contact ;
+    + [Les personnes avec qui tu habites sont également **cas contact**]((/je-vis-avec-personne-covid-positive.html) et doivent s’isoler s’ils ne sont pas vaccinés.
+    
+    L'Assurance maladie va te contacter (ou tes parents) pour t'expliquer ce que tu dois faire,te fournir un justificatif d'absence, et faire la liste des personnes avec qui tu as
+    été en contact dans les jours précédents.
      
 
     <div class="voir-aussi">
 
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine)
+    - [Que se passe-t-il si je suis cas contact et que je suis vacciné ?](#que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-suis-vaccine)
 
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
-
-    - [Je vis avec une personne positive, que dois-je faire ?](/je-vis-avec-personne-covid-positive.html)
+    - [Que se passe-t-il si je suis cas contact et que je ne suis pas vacciné ?](#que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-ne-suis-pas-vaccine)
 
     </div>
 
-.. question:: Quels sont les symptômes de la Covid chez les enfants ?
+
+.. question:: Est-ce que les tests sont gratuits pour les mineurs ?
     :level: 3
 
-    Les enfants ont généralement des **symptômes légers** et peu spécifiques :
+    **Oui**. Pour les mineurs, les tests de dépistages sont gratuits (sauf les autotest) et réalisés sans prescription médicale (ordonnance).
 
-    * rhume ;
-    * toux ;
-    * maux de gorge ;
-    * fièvre (38 °C et plus) ;
-    * symptômes gastro-intestinaux (diarrhée, nausées, vomissement…) ;
-    * perte d’appétit ;
-    * fatigue.
-
-    Si votre enfant est malade, il ne doit pas aller à l’école. Il est préférable de **téléphoner à votre médecin traitant** au lieu de vous déplacer spontanément à son cabinet.
-
-    <div class="voir-aussi">
-
-    - [Où faire tester mon enfant ?](#ou-faire-tester-mon-enfant)
-    - [Les tests de dépistage sont-ils dangereux pour les enfants ?](#les-tests-sont-ils-dangereux-pour-les-enfants)
-    - [Comment préparer mon enfant à subir un test de dépistage ?](#comment-preparer-mon-enfant-a-subir-un-test-de-depistage-nasopharynge-prelevement-nasal)
-    - [Les tests sont-ils payants ou soumis à la présentation d’une prescription médicale ?](#les-tests-sont-ils-payants-ou-soumis-a-la-presentation-d-une-prescription-medicale-ordonnance-pour-les-mineurs)
-
-    </div>
-
-.. question:: Les tests sont-ils payants ou soumis à la présentation d’une prescription médicale (ordonnance) pour les mineurs ?
+.. question:: Les tests sont-ils dangereux ou douloureux ?
     :level: 3
 
-    **Non**. Pour les mineurs, les tests de dépistages sont gratuits (sauf les autotest) et réalisés sans prescription médicale (ordonnance).
-
-.. question:: Les tests sont-ils dangereux pour les enfants ?
-    :level: 3
-
-    Les tests ne présentent **aucun danger pour les enfants**. Les tests salivaires sont proposés pour le confort des enfants, car le prélèvement nasal peut parfois être difficile à réaliser chez les plus jeunes.
+    Les tests ne sont pas dangereux. Ce n'est pas un moment très agréable, mais ce n'est pas douloureux. Si le prélèvement nasal (dans le nez) est impossible dans ton cas (déviation, peur...)  tu peux faire un test salivaire, en laboratoire.
 
 
 .. question::  La sérologie Covid fonctionne-t-elle également pour les enfants ?
     :level: 3
 
     **Oui**, comme chez l’adulte la sérologie indique un contact avec le virus. Cependant, la prescription d’une sérologie Covid et son interprétation doivent être faites par un médecin.
-
-.. question:: Comment préparer mon enfant à subir un test de dépistage nasopharyngé (prélèvement nasal) ?
-    :level: 3
-
-    L’enjeu est de **rassurer votre enfant** mais également d’éviter qu’il ne contamine les autres ou qu’il soit contaminé à l’occasion de ce test.
-
-    Décrivez-lui l’environnement dans lequel le test sera réalisé, les vêtements de protection des professionnels de santé et le déroulement du test (le coton-tige dans le nez). Vous pouvez par exemple lui faire **répéter les gestes** (lever la tête, respirer par la bouche…) sous forme de jeu à la maison.
-
-    Pendant le test, assurez-vous qu’il porte bien son **masque sur la bouche** et n’hésitez pas à rester à ses côtés.
-
-    Si vous emmenez un **doudou** ou un objet familier, veillez à ce qu’il n’entre pas en contact avec des surfaces qui peuvent être contaminées. Sinon, lavez-le ou laissez le en quarantaine durant 7 jours.
 
 .. question:: Mon enfant est atteint d’une maladie chronique, quelles sont les précautions supplémentaires à prendre ?
     :level: 3
@@ -400,16 +374,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Seuls quelques enfants suivis pour des pathologies rares et graves et en situation de grande vulnérabilité en lien avec leur pathologie ou leurs traitements nécessitent des précautions particulières voire du maintien des soins, des activités éducatives, d’une scolarité à domicile.
 
-.. question:: Étant donné la situation, dois/puis-je décaler le prochain vaccin de mon enfant ?
-    :level: 3
-
-    Il est primordial de **maintenir l’ensemble des vaccinations** de vos enfants.
-
-    Les consultations pour vaccination ne doivent pas être reportées et les retards de vaccinations doivent être rattrapés.
 
 
 .. section:: Organisation familiale et garde des enfants
-    :tags: 0 à 3 ans, 4 à 11 ans, 12 à 18 ans
 
 .. question:: Que doivent faire mes enfants si je suis positif à la Covid ?
     :level: 3
@@ -431,130 +398,3 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?
-    :level: 3
-
-    Si vous êtes dans l’une de ces situations :
-
-    * votre enfant, quel que soit son âge, souffre d’un **handicap** qui le rend vulnérable et l’oblige à s’isoler ;
-
-    * votre enfant de **moins de 16 ans** ne peut pas aller à la crèche, à l’école ou au collège pour l’une des raisons suivantes :
-
-        * sa **classe est fermée** pour raison sanitaire,
-        * il ou elle est déclaré(e) comme étant **cas contact**,
-        * il ou elle est **positif(ve)** à la Covid.
-
-    Alors, vous ou votre conjoint(e) pouvez obtenir un **arrêt de travail** afin de garder votre enfant, **même si vous êtes vacciné(e)**.
-
-    Pour cela, vous devrez fournir à l’employeur :
-
-    * soit un **justificatif de fermeture** de la classe ou de l’établissement, soit un document de l’Assurance Maladie attestant que votre enfant est  **cas contact** et fait l’objet d’une mesure d’isolement ;
-    * une **attestation sur l’honneur** précisant que vous êtes le seul des 2 parents à bénéficier d’un arrêt de travail pour les jours concernés.
-
-    C’est l’employeur qui procédera alors à la déclaration d’**activité partielle** auprès de l’Assurance Maladie.
-
-    <div class="voir-aussi">
-
-    * Les [démarches et conditions pour obtenir un arrêt de travail](https://www.ameli.fr/somme/assure/covid-19/dispositifs-dindemnisation/covid-19-dispositif-dindemnisation-des-interruptions-de-travail) sur le site ameli.fr
-
-    </div>
-
-
-.. question:: Les enfants peuvent-ils être gardés par des personnes extérieures au foyer, par exemple les grands-parents ?
-    :level: 3
-
-    **Oui**, si ces personnes et l’enfant ne sont pas malades, et en appliquant les **mesures de prévention** suivantes :
-
-    * respecter les **gestes barrières** : se laver régulièrement les mains à l’eau et au savon *avant* de s’occuper de l’enfant, mais aussi *après* ;
-    * porter le **masque** lors d’un contact rapproché (enfant dans les bras…).
-
-
-.. question:: Comment gérer la garde alternée en période de Covid ?
-    :level: 3
-
-    * La loi ne prévoit de règles spécifiques. Il revient donc aux parents de faire preuve de **bon sens** pour protéger l’**équilibre** et la **santé** de leurs enfants.
-
-    * Il est possible d’**adapter** à l’amiable le **planning de garde** (en prévoyant par exemple un rattrapage) pour éviter de **propager la maladie** d’un foyer à l’autre, notamment dans les situations suivantes :
-       - lorsque l’enfant doit **rester isolé** parce qu’il est **positif** ou **cas contact** (dans le cas où il n’est pas vacciné) ;
-       - lorsqu’une **personne du foyer** est **malade**.
-
-    * Soyez particulièrement **vigilants** lorsque le foyer comporte des **personnes vulnérables** (personnes âgées, immunodéprimées, non vaccinées, ou à risque de forme grave de Covid).
-
-
-.. section:: Enfants en bas âge
-    :tags: 0 à 3 ans
-
-.. question:: Mon enfant peut-il aller à la crèche s’il est cas contact ?
-    :level: 3
-
-    **Non**, les enfants ne doivent **pas aller à la crèche** s’ils sont cas contact. Si nécessaire, vous pouvez obtenir un **arrêt de travail** pour le garder à la maison.
-
-    <div class="voir-aussi">
-
-    - [Je ne peux pas télétravailler, puis-je obtenir un arrêt de travail pour garder mon enfant qui ne peut pas aller à l’école à cause de la Covid ?](#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid)
-
-    </div>
-
-
-.. question:: Puis-je continuer à allaiter mon enfant si je ressens des symptômes ou si je suis positive à la Covid ?
-    :level: 3
-
-    **Oui**. Le virus ne se transmet pas par le lait maternel, vous pouvez donc continuer à allaiter même en étant positive à la Covid. Cependant, il faut respecter certaines **précautions** pour ne pas transmettre le virus à votre enfant autrement :
-    * **lavez-vous les mains** avec du savon ou du gel hydroalcoolique avant de toucher le nourrisson ;
-    * portez un **masque** dès que vous êtes en présence de votre nourrisson et particulièrement pendant l’allaitement ;
-    * **désinfectez** systématiquement les surfaces et objets que vous avez touché et qui pourraient entrer en contact avec le nourrisson (table à langer, tétine…) ;
-    * utilisez des mouchoirs à usage unique.
-
-
-.. question:: À partir de quel âge mon enfant peut-il / doit-il porter un masque ?
-    :level: 3
-
-    Le port du masque est recommandé **à partir de l’âge de 6 ans**.
-
-    Pour plus d’informations sur **le port du masque**, vous pouvez consulter les ressources ci-dessous :
-
-    <div class="voir-aussi">
-
-    * l’infographie « [Bien utiliser son masque](https://solidarites-sante.gouv.fr/IMG/pdf/bien_utiliser_son_masque-a3.pdf) » du ministère des solidarités et de la santé
-    * la vidéo [« Comment mettre son masque ? »](https://www.youtube.com/watch?v=1bEzmzdHvJw)
-    * la vidéo [« Comment entretenir son masque en tissu ? »](https://www.youtube.com/watch?v=ZoryOURBGkE)
-
-    </div>
-
-
-.. question:: À partir de quel âge peut-on mettre du gel hydro-alcoolique sur les mains d’un enfant ?
-    :level: 3
-
-    Il peut être utilisé **à tout âge**, cependant il est préférable de donner **la priorité au lavage des mains** à l’eau et au savon.
-
-    Il doit être appliqué sur peau saine en se frottant les mains jusqu’à ce qu’elles soient sèches.
-
-    Attention à ne pas laisser le produit à portée des jeunes enfants car il existe un risque de projection dans les yeux et d’ingestion accidentelle.
-
-
-.. question:: Quelles sont les précautions pour emmener mon enfant au parc de jeux collectifs (jeux, bacs à sable, points d’eau, etc.) ?
-    :level: 3
-
-    Il est déconseillé d’emmener votre enfant dans les parcs et les aires de jeux collectifs s’il a été en contact avec une personne positive dans les deux semaines précédentes, ou s’il présente des symptômes de la Covid.
-
-    Dans les autres cas, **vous pouvez** emmener votre(vos) enfant(s) dans les parcs et les aires de jeux collectifs sous réserve des précautions suivantes :
-
-    * lui **laver les mains** à l’eau et au savon avant de quitter le domicile et en rentrant ;
-    * respecter dans la mesure du possible une **distanciation physique** avec les autres personnes ;
-    * **éviter de partager les jouets** individuels entre les enfants ;
-    * en cas de contact rapproché avec un enfant présentant des **symptômes apparents** (rhume et/ou toux), faire un lavage des mains à l’eau et au savon ou sinon au gel hydro-alcoolique.
-
-
-.. question:: Les enfants peuvent-ils être gardés par des personnes extérieures au foyer, par exemple les grands-parents ?
-    :level: 3
-
-    **Oui**, si ces personnes et l’enfant ne sont pas malades, et en appliquant les **mesures de prévention** suivantes :
-
-    * respecter les **gestes barrières** : se laver régulièrement les mains à l’eau et au savon *avant* de s’occuper de l’enfant, mais aussi *après* ;
-    * porter le **masque** lors d’un contact rapproché (enfant dans les bras…).
-
-</div>
-
-#### Vous avez encore des questions ?
-
-Ligne d’écoute pour les parents, ressources pour les parents et professionnels : [Enfance & Covid](https://eduensemble.org/enfance-covid/).
