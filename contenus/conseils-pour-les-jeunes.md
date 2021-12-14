@@ -3,7 +3,7 @@
 <img src="illustrations/pediatriegeneral.svg">
 
 <header>
-    <p class="big">L’épidémie de Covid a apporté son lot de nouvelles questions et préoccupations concernant votre enfant : cas contact, test de dépistage, vaccination, classe fermée… MesConseilsCovid y répond et vous informe sur les dernières mesures appliquées dans le milieu scolaire et la conduite à tenir selon la situation et l’âge de votre enfant.</p>
+    <p class="big"></p>
 </header>
 
 .. toc:: Sommaire
@@ -13,26 +13,38 @@
 
 <div class="conseil">
 
-Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **soutien psychologique**, gratuitement, pour les ados qui souffrent du contexte sanitaire actuel et ressentent le besoin de parler à quelqu'un d'extérieur à la famille. Si tu veux savoir comment en bénéficier, consulte [le site internet dédié au dispositif](https://www.psyenfantado.sante.gouv.fr/).
-
 </div>
 
 .. section:: La vie quotidienne
     
 .. question:: Pourquoi est-ce que les mesures n'arrêtent pas de changer ?
     :level: 3   
+    Le monde n'a jamais connu de situation similaire à celle que nous connaissons depuis 2020, alors, les mesures s'adaptent au fur et à mesure des nouvelles découvertes que nous
+    faisons sur le virus de la Covid et des nouvelles armes que nous avons. Par exemple, la vaccination nous permet d'éviter le reconfinement, mais, l'arrivée de nouveaux variants du
+    virus (Delta, Omicron) nous pousse à nous adapter, et à recevoir une dose de rappel qui n'était pas prévue au départ.
+    Aujourd'hui, la vaccination, le port du masque, le pass sanitaire et la distanciation sociale sont les outils qui nous permettent de vivre au mieux avec le virus au lieu d'être à
+    nouveau confinés.   
     
 .. question:: Je porte souvent le masque sous le nez parce qu'il me gêne. Est-ce que c'est grave ?
-    :level: 3   
+    :level: 3
+    
+    La Covid est un virus des voies respiratoires. Il entre et sort de ton corps par **ta bouche et ton nez**. Il faut donc te **couvrir le nez et la bouche** pour que ton masque te
+    protège et protège ceux qui t'entourent.
     
 .. question:: J'entends parler de Delta, Omicron... c'est quoi un variant ?
     :level: 3   
     
-.. question:: Il y a beaucoup d'informations qui circulent sur les réseaux sociaux. Qui croire ?
+.. question:: Il y a beaucoup d'informations qui circulent sur les réseaux sociaux. Que croire ?
     :level: 3   
     
 .. question:: J'ai des pensées négatives, du stress et des peurs. Que dois-je faire ?
-    :level: 3 
+    :level: 3
+    
+    Le contexte actuel est difficile à vivre. Les restrictions, l'isolement, le port du masque, l'angoisse liée à la maladie...autant de sujets qui pèsent sur le moral.
+    Si tu en ressens le besoin, tu peux te confier à une personne extérieure à ta famille, un(e) psychologue. Il pourra t'écouter, t'aider à trouver des solutions ou simplement te
+    permettre de vider ton sac. Les consultations chez le psy sont entièrement confidentielles. Tes parents ne sauront pas ce que tu y dis, alors sens toi libre.
+    
+    Le forfait « *100% Psy Enfant Ado* » te donne accès à 10 séances de **soutien psychologique**, gratuitement. Si tu veux savoir comment en bénéficier, et en parler à tes parents, consulte [le site internet dédié au dispositif](https://www.psyenfantado.sante.gouv.fr/).
     
 .. section:: Mesures sanitaires à l’école, au collège et au lycée
    
