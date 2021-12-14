@@ -17,6 +17,23 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 </div>
 
+.. section:: La vie quotidienne
+    
+.. question:: Pourquoi est-ce que les mesures n'arrêtent pas de changer ?
+    :level: 3   
+    
+.. question:: Je porte souvent le masque sous le nez parce qu'il me gêne. Est-ce que c'est grave ?
+    :level: 3   
+    
+.. question:: J'entends parler de Delta, Omicron... c'est quoi un variant ?
+    :level: 3   
+    
+.. question:: Il y a beaucoup d'informations qui circulent sur les réseaux sociaux. Qui croire ?
+    :level: 3   
+    
+.. question:: J'ai des pensées négatives, du stress et des peurs. Que dois-je faire ?
+    :level: 3 
+    
 .. section:: Mesures sanitaires à l’école, au collège et au lycée
    
 .. question:: Dans quels cas est-ce que je dois rester à la maison ?
@@ -206,6 +223,24 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 
 .. section:: La vaccination contre la Covid
+
+.. question:: Comment des vaccins ont-ils été crées aussi vite ? Sont-ils efficaces et sûrs ?
+    :level: 3 
+
+.. question:: Comment fonctionnent les vaccins ?
+    :level: 3 
+    
+.. question:: Est-ce que les vaccins changent mon ADN ?
+    :level: 3
+    
+.. question:: Je suis jeune et en bonne santé, pourquoi me faire vacciner contre la Covid ?
+    :level: 3   
+    
+.. question:: Je suis vacciné, puis-je quand même attraper la Covid ?
+    :level: 3   
+ 
+.. question:: A quoi sert le vaccin si on peut quand même attraper la Covid ?
+    :level: 3   
 
 .. question:: Est-ce que j'ai besoin de l'autorisation de mes parents pour me faire vacciner contre la Covid ?
     :level: 3
