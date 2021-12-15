@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021-12-15
+
+* met à jour la réponse sur la vaccination des enfants
+* met à jour la réponse sur la primo-vaccination post-infection
+
 ## 2021-12-10
 
 * précisions sur le délai suite à une primo-vaccination
