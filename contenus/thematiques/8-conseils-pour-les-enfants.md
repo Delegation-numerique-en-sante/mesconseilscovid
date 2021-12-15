@@ -260,7 +260,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     La vaccination est **facultative** et se fait avec une dose pédiatrique (10 µg) de vaccin **Pfizer**.
 
-    Pour l’instant, il n’est pas prévu d’élargir la vaccination à tous les enfants de cette catégorie d’âge.
+    La campagne de vaccination pourrait être élargie à l’ensemble des enfants de 5 à 11 ans, en fonction
+    des avis de la Haute autorité de santé (HAS), du Conseil consultatif national d’éthique (CCNE) et du Conseil d’orientation de la stratégie vaccinale (COSV), attendus dans les prochains jours.
 
 
 .. question:: Les mineurs reçoivent-ils le même nombre de doses que les adultes ?
