@@ -222,11 +222,11 @@
 
 
 ## La vaccination initiale (schéma vaccinal à 1 ou 2 doses)
-    
+
  <div class="voir-aussi">
 
 - [Je veux des informations sur la vaccination des mineurs](/conseils-pour-les-enfants.html#la-vaccination-contre-la-covid)
-        
+
  </div>
 
 .. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose lors de la vaccination initiale (primo-vaccination) ?
@@ -311,7 +311,14 @@
 .. question:: J’ai déjà eu la Covid, dois-je me faire vacciner (1<sup>re</sup> dose) ?
     :level: 3
 
-    **Oui**. Si vous avez eu la Covid, une seule dose sera suffisante (sauf exceptions). L’injection doit être administrée au minimum **2 mois après la maladie**, idéalement 6 mois pour une efficacité maximale.
+    **Oui**. Si vous avez eu la Covid, **une seule dose** sera suffisante pour votre vaccination initiale. Cette injection peut avoir lieu **à partir de 2 mois** après votre infection.
+
+    <div class="voir-aussi">
+
+    - [J’ai déjà eu la Covid, comment le prouver et ne recevoir qu’une seule dose pour compléter mon schéma vaccinal initial ?](#j-ai-deja-eu-la-covid-comment-le-prouver-et-ne-recevoir-qu-une-seule-dose-pour-completer-mon-schema-vaccinal-initial)
+    - [Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3e dose ?](#j-ai-eu-la-covid-avant-mon-unique-dose-de-vaccin-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
+
+    </div>
 
 
 .. question:: J’ai déjà eu la Covid, comment le prouver et ne recevoir qu’une seule dose pour compléter mon schéma vaccinal initial ?
@@ -324,6 +331,7 @@
     - [Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3e dose ?](#j-ai-eu-la-covid-avant-mon-unique-dose-de-vaccin-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
 
     </div>
+
 
 .. question:: J’ai eu la Covid après ma 1<sup>re</sup> dose de vaccin, dois-je recevoir la 2<sup>e</sup> pour compléter mon schéma vaccinal initial ?
     :level: 3
