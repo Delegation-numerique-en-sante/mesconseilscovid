@@ -258,9 +258,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * ont des **comorbidités** les mettant à risque de faire une forme grave (notamment, de développer des « syndromes inflammatoires multi-systémiques pédiatriques » (PIMS)) ;
     * *ou* ont dans leur **entourage** proche une **personne fortement immunodéprimée** ou **vulnérable** qui ne peut pas bénéficier de la protection vaccinale.
 
-    La campagne de vaccination pour les enfants concernés devrait débuter à partir de la mi-décembre.
-
-    La vaccination sera **facultative** et se fera avec une dose pédiatrique (10 µg) de vaccin **Pfizer**.
+    La vaccination est **facultative** et se fait avec une dose pédiatrique (10 µg) de vaccin **Pfizer**.
 
     Pour l’instant, il n’est pas prévu d’élargir la vaccination à tous les enfants de cette catégorie d’âge.
 
