@@ -17,7 +17,7 @@
 
 .. section:: La vie quotidienne
     
-.. question:: Pourquoi est-ce que les mesures n'arrêtent pas de changer ?
+.. question:: Pourquoi est-ce que les mesures changent si souvent ?
     :level: 3
     
     Les consignes changent pour s'adapter aux évolution de la situation. Elles dépendent par exemple des nouvelles découvertes que nous faisons sur le virus de
@@ -30,13 +30,44 @@
     
     La Covid est un virus des **voies respiratoires**. Il entre et sort de ton corps par **ta bouche et ton nez**. Pour te protéger et protéger ceux qui t'entourent, il doit donc te bien te **couvrir le nez et la bouche**.
     
+.. question:: A partir de quel âge le pass sanitaire est-il obligatoire ?
+    :level: 3
+    
+    Le pass sanitaire (une attestation de vaccination; ou un test de dépistage négatif ; ou un certificat de rétablissement) est obligatoire à partir de 12 ans et 2 mois.
+    
+.. question:: Où le pass sanitaire est-il obligatoire ?
+    :level: 3
+    
+    Il faut présenter un pass sanitaire valide pour accéder aux lieux qui accueillent beaucoup de personnes et où le risque de contamination est important.
+    
+    Il est notamment **obligatoire** pour accéder :
+    - aux lieux de loisir et de culture : **cinéma, musées, théâtres, parc d’attraction…** ;
+    - aux lieux de convivialité :  **restaurants**, **bars** et **cafés** (même en terrasse) ;
+    - aux établissements médicaux-sociaux (**hôpitaux, EHPAD…**), pour les soins programmés, les accompagnateurs et visiteurs, mais **pas pour les urgences** ;
+    - à certains grands centres commerciaux ;
+
+    <div class="exemple">
+
+    Par exemple, tu devras présenter ton pass sanitaire pour te rendre à une consultation médicale **non urgente** dans un hôpital. En revanche, s'il s'agit d'une urgence médicale, on ne te demandera pas ton pass sanitaire.
+
+    </div>
+
+    <div class="voir-aussi">
+
+    - Consulte la [liste détaillée des lieux concernés par l’obligation du pass sanitaire](https://www.gouvernement.fr/ou-le-pass-sanitaire-est-il-obligatoire).
+
+    </div
+    
 .. question:: J'entends parler de Delta, Omicron... c'est quoi un variant ?
     :level: 3   
     
-    Pour survivre, un virus comme le Sars-Cov-2 (responsable de la Covid-19 qu'on connait aujourd'hui) se réplique, c'est-à-dire qu'il fait des copies de son code génétique. Parfois,
-    une erreur se glisse dans une copie, c'est ce qu'on appelle une mutation, et le virus n'est plus tout à fait le même. Cette mutation, qu'on appelle aussi variant, peut avoir des
-    caractéristiques différentes du virus d'origine : il peut par exemple être plus ou moins contagieux; plus dangereux; ou provoquer d'autres symptômes...
-     
+    Pour survivre, un virus comme le Sars-Cov-2 (responsable de la Covid-19) se réplique, c'est-à-dire qu'il fait des copies de son code génétique. Parfois,
+    une erreur se glisse dans une copie. Cette nouvelle version, s'appelle une mutation ou un variant.  Le variant a des caractéristiques plus ou moins différentes du virus d'origine 
+    : il peut par exemple être plus ou moins contagieux ; plus dangereux ; ou provoquer d'autres symptômes.
+    
+    Au début de l'épidémie, en 2020, le variant le plus répandu était le variant dit chinois (ou souche traditionnelle de la Covid). Aujourd'hui, fin 2021, le variant le plus répandu en France est Delta, mais les scientifiques prédisent qu'il sera surpassé par le variant Omicron, plus contagieux, en janvier 2022.
+    
+    Les scientifiques surveillent attentivement l'apparition de nouveaux variants car ils doivent veiller à ce que les consignes sanitaires et les vaccins dont nous disposons actuellement restent suffisament efficaces pour les combatres. Les études récentes montrent que le rappel vaccinal avec un vaccin Pfizer ou Moderna permet notamment de se protéger à 70 % d'une forme grave d'infection causée par le nouveau variant Omicron.
         
 .. question:: Il y a beaucoup d'informations qui circulent sur les réseaux sociaux. Que croire ?
     :level: 3   
@@ -53,7 +84,7 @@
     
     Les consultations chez le psy sont **confidentielles**. Tes parents ne sauront pas ce que tu y dis, alors sens toi libre.
        
-.. section:: Mesures sanitaires à l’école, au collège et au lycée
+.. section:: Le collège, le lycée
    
 .. question:: Dans quels cas est-ce que je dois rester à la maison ?
     :level: 3
@@ -88,7 +119,7 @@
     </div>
 
 
-.. question:: Que se passe-t-il si je suis cas contact et que je suis vacciné ?
+.. question:: Je suis collégien(ne) ou lycéen(ne). Que se passe-t-il si je suis cas contact et que je suis vacciné ?
     :level: 3
 
     <div class="conseil conseil-jaune">
@@ -113,7 +144,7 @@
         * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, fais un nouveau test sans attendre, et contacte un **médecin** (ou le 15) si tu as des difficultés à respirer.
 
     * Si le test est **positif** :
-        - tu as attrapé la Covid. Ce n'est pas grave, mais tu es **contagieux** ;
+        - tu as attrapé la Covid. Ce n'est pas grave, mais tu es **contagieux** et tu dois protéger les personnes qui t'entourent ;
         - tu dois rester en isolement au moins **10 jours** à partir de la date du test ;
         - surveille l’apparition de **symptômes** (nez qui coule, mal de gorge, fiève, fatigue...) et appelle un **médecin** (ou le 15) si tu as des difficultés à respirer ;
         - les personnes qui vivent avec toi sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
@@ -137,7 +168,7 @@
     </div>
 
 
-.. question:: Que se passe-t-il si je suis cas contact et que je ne suis pas vacciné ?
+.. question:: Je suis collégien(ne) ou lycéen(ne). Que se passe-t-il si je suis cas contact et que je ne suis pas vacciné ?
     :level: 3
 
     <div class="conseil conseil-jaune">
@@ -188,13 +219,13 @@
 .. question:: Est-ce que le cas contact d'un cas contact est cas contact ?
     :level: 3
 
-    + Le « **cas contact d’un cas contact** » n’est pas un cas contact.
+    + Le « **cas contact d’un cas contact** » n’est pas un cas contact et il ne doit pas s'isoler.
     
     *Par exemple, si ta soeur est cas contact de son ami et qu'elle doit s'isoler parce qu'elle n'est pas vacciné(e), les autres personnes du foyer (dont toi) ne sont pas considérées cas contact et ne doivent pas s'isoler. Tu pourras donc continuer à aller au collège ou au lycée et tes parents pourront aller au travail.*
     
     + Par contre, si le cas contact devient à son tour cas positif, alors les autres personnes du foyer deviennent cas contact. 
     
-    *Donc, si ta soeur est  **testée positive** à la Covid, alors les autres personnes du foyer (dont toi) deviendront à leur tour **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois). S’ils ne sont **pas vaccinés**, ils devront eux aussi s’isoler. Dans ce cas, tu ne devras pas aller au collège ou au lycée et tes parents ne devront pas aller travailler.*
+    *Donc, si quelques jours plus tard, ta soeur est  **testée positive**, alors les autres personnes du foyer (dont toi) deviendront à leur tour **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois). S’ils ne sont **pas vaccinés**, ils devront eux aussi s’isoler. Dans ce cas, tu ne devras pas aller au collège ou au lycée et tes parents ne devront pas aller travailler.*
 
     <div class="voir-aussi">
 
@@ -212,7 +243,8 @@
     
      Oui, le masque est **obligatoire en primaire, au collège et au lycée** dans tous les départements.
 
-     Tu ne peux pas utiliser n'importe quel tissu pour ton masque. Pour être protecteur, il doit assurer une filtration supérieure à 90 % (masque « grand public » ou masque chirurgical par exemple).
+     Tu ne peux pas faire un masque avec n'importe quel tissu. Pour être efficace, ton masque doit assurer une filtration supérieure à 90 %. C'est le cas des masques en tissu « grand public » de catégorie 1 (inscrite sur l'emballage) et des masques chirurgicaux.
+    
      Tes parents doivent te fournir un masque, mais si besoin (oubli, accident), ton établissement scolaire pourra t'en donner un.
    
 
@@ -228,7 +260,7 @@
 
     **Non**. Le pass sanitaire n’est **pas obligatoire** pour accéder aux établissements d’enseignement, écoles, collèges ou lycées.
     
-    En revanche, il peut être obligatoire pour les activités extra-scolaires
+    En revanche, il est obligatoire pour les activités extra-scolaires.
 
 
     <div class="voir-aussi">
@@ -247,20 +279,38 @@
     :level: 3 
 
 .. question:: Comment fonctionnent les vaccins ?
-    :level: 3 
+    :level: 3
+    
+    
     
 .. question:: Est-ce que les vaccins changent mon ADN ?
     :level: 3
     
 .. question:: Je suis jeune et en bonne santé, pourquoi me faire vacciner contre la Covid ?
-    :level: 3   
+    :level: 3
     
+     Il est vrai que les jeunes comme toi ont le plus souvent des formes bégnines de Covid (la part des hospitalisations des 11 - 17 ans est de 0,44 % et celle des admissions en soins critiques de 0,36 %), mais ils peuvent parfois développer des cas plus sévères ou souffrir de symptômes persistants (Covid long). Le vaccin permet alors de limiter efficacement ces risques.
+
+    En te vaccinant, tu participes surtout à l’effort collectif de **santé publique** :
+
+    * tu seras **moins contagieux** et risquera donc moins de contaminer les personnes vulnérables ou âgées qui t'entourent, comme tes grands-parents ;
+    * tu ne feras plus circuler la Covid au sein de la population générale : cela **freinera le développement du virus et ses mutations**.
+   
 .. question:: Je suis vacciné, puis-je quand même attraper la Covid ?
-    :level: 3   
+    :level: 3
+    
+    Oui. La vaccination réduit efficacement les risques de contamination, mais elle n'immunise pas à 100 % (comme n'importe quel autre vaccin).
+    C'est pourquoi, même si tu es vacciné, il faut continuer à respecter les gestes barrières, réduire les contacts et porter le masque sur le nez et la bouche dès que c'est requis.
  
 .. question:: A quoi sert le vaccin si on peut quand même attraper la Covid ?
-    :level: 3   
-
+    :level: 3 
+    
+    Comme la plupart des vaccins, notamment celui contre la grippe, les vaccins anti-covid n'immunisent pas complètement contre la maladie. Ils réduisent fortement :
+    * les risques de contamination et de transmission. Tu l'attrapes moins facilement et tu as moins de chances de le transmettre à une personne vulnérable ;
+    * le risque de faire des formes graves qui nécéssitent une hospitalisation ;
+   
+    La généralisation de la vaccination permet surtout de restreindre la circulation du virus dans la population. Moins il circule, moins il mute et se développe.
+    
 .. question:: Est-ce que j'ai besoin de l'autorisation de mes parents pour me faire vacciner contre la Covid ?
     :level: 3
 
@@ -278,14 +328,14 @@
     </div>
 
 
-.. question:: Est-ce que je dois donner mon accord pour être vacciné(e) ?
+.. question:: Je suis mineur. Est-ce que je dois donner mon accord pour être vacciné(e) ?
     :level: 3
 
     **Oui**. Au cours de l’entretien qui a lieu avant la vaccination, le professionnel de santé te donnera toutes les informations de façon claire et adaptée. Avant de te vacciner,
     il te demandera ton **consentement oral**.
 
 
-.. question:: Où me faire vacciner et avec quel vaccin ?
+.. question:: Je suis mineur. Où me faire vacciner et avec quel vaccin ?
     :level: 3
 
    Si tu as plus de 12 ans, tu peux te faire vacciner :
@@ -351,12 +401,12 @@
     * un **test PCR ou antigénique (pharmacie) négatif** de moins de 24 h ;
     * un **test PCR positif** de plus de 11 jours et moins de 6 mois.
     
- .. section:: Questions médicales et dépistage
+ .. section:: Les symptômes et les tests de dépistage
 
 .. question:: Je me sens malade. Que dois-je faire ?
     :level: 3
 
-   Dans la contexte actuel, si tu te sens malade, mieux vaut être prudent et suivre quelques recommandations simples : 
+   Dans le contexte actuel, si tu te sens malade, mieux vaut être prudent et suivre quelques recommandations simples : 
 
     * ne va pas au collège ou au lycée;
     * demande à tes parents ou contacte toi même par téléphone ton **médecin** ou le 15 : ne va pas spontanément chez le médecin traitant ou aux urgences sans contact téléphonique préalable ;
@@ -366,9 +416,9 @@
 .. question:: Où faire un test de dépistage ?
     :level: 3
     
-    Tu peux faire un test PCR en laboratoire (résultat en plus ou moins 24 h) ou un test antigénique en pharmacie (résultat sous 30 minutes). 
-    Les tests sont **gratuits** (pris en charge par l'Assurance maladie) pour les mineurs vaccinés ou non. Alors n'hésite pas à te faire tester au moindre doute ou avant de voir des
-    personnes vulnérabes (grands-parents...) !
+    Tu peux faire un test **PCR** en laboratoire (résultat en plus ou moins 24 h) ou un test **antigénique** en pharmacie (résultat sous 30 minutes). 
+    Les tests sont **gratuits** (pris en charge par l'Assurance maladie) pour les mineur(e)s vacciné(e)s ou non. Alors **n'hésite pas à te faire tester** au moindre doute ou avant de 
+    voir des personnes vulnérabes (grands-parents ; personne malade...) !
 
     [Clique ici pour trouver un lieu de dépistage près de chez toi](https://www.sante.fr/cf/centres-depistage-covid.html) sur le site sante.fr.
 
@@ -388,7 +438,7 @@
     + Préviens les personnes avec qui tu as eu un contact récent (amis, élèves...) pour qu'ils se fassent tester car ils sont cas contact ;
     + [Les personnes avec qui tu habites sont également **cas contact**]((/je-vis-avec-personne-covid-positive.html) et doivent s’isoler s’ils ne sont pas vaccinés.
     
-    L'Assurance maladie va te contacter (ou tes parents) pour t'expliquer ce que tu dois faire,te fournir un justificatif d'absence, et faire la liste des personnes avec qui tu as
+    L'Assurance maladie va te contacter (ou tes parents) pour t'expliquer ce que tu dois faire, te fournir un justificatif d'absence et faire la liste des personnes avec qui tu as
     été en contact dans les jours précédents.
      
 
@@ -401,54 +451,31 @@
     </div>
 
 
-.. question:: Est-ce que les tests sont gratuits pour les mineurs ?
+.. question:: Est-ce que les tests de dépistage sont gratuits pour les mineurs ?
     :level: 3
 
-    **Oui**. Pour les mineurs, les tests de dépistages sont gratuits (sauf les autotest) et réalisés sans prescription médicale (ordonnance).
+    **Oui**. Pour les mineurs, les tests de dépistages sont gratuits (sauf les autotests) et réalisés sans prescription médicale (ordonnance).
 
 .. question:: Les tests sont-ils dangereux ou douloureux ?
     :level: 3
 
-    Les tests ne sont pas dangereux. Ce n'est pas un moment très agréable, mais ce n'est pas douloureux. Si le prélèvement nasal (dans le nez) est impossible dans ton cas (déviation, peur...)  tu peux faire un test salivaire, en laboratoire.
+    Les tests sont un moment désagréable à passer, mais ils ne sont ni douloureux ni dangereux. Si le prélèvement nasal (dans le nez) est impossible dans ton cas (déviation, peur...)
+    tu peux faire un test PCR salivaire (prélèvement de salive), en laboratoire.
 
-
-.. question::  La sérologie Covid fonctionne-t-elle également pour les enfants ?
+.. question::  La sérologie Covid fonctionne-t-elle également pour les adolescents ?
     :level: 3
 
-    **Oui**, comme chez l’adulte la sérologie indique un contact avec le virus. Cependant, la prescription d’une sérologie Covid et son interprétation doivent être faites par un médecin.
+    **Oui**, comme chez l’adulte la sérologie permet de savoir si tu as été contaminé par le virus, mais elle ne permet pas de savoir quand. La prescription d’une sérologie Covid et
+    son interprétation doivent être faites par un médecin. Elle ne donne pas droit à un pass sanitaire, mais elle permet par exemple de savoir si tu dois recevoir 1 seule ou 2 doses 
+    de vaccins pour être vacciné(e).
 
-.. question:: Mon enfant est atteint d’une maladie chronique, quelles sont les précautions supplémentaires à prendre ?
+.. question:: Je souffre d'une maladie chronique, est-ce que je dois prendre des précautions supplémentaires face à la Covid ?
     :level: 3
 
-    Même chez l’enfant atteint d’une pathologie chronique, l’infection à la Covid est généralement bénigne.
-
-    Il faut favoriser le retour dans leur établissement scolaire de tous les enfants ayant une pathologie chronique, car cela est bénéfique pour leur santé, leur bien-être et leur avenir. La poursuite d’une scolarisation à domicile ne peut concerner que quelques cas particuliers, sur avis du médecin référent.
-
-    Pour plus d’informations, vous pouvez consulter la fiche de la HAS suivante : [HAS, Accompagner les enfants et les adolescents dont ceux vivant avec une maladie chronique lors de la levée du confinement, 20 mai 2020](https://www.has-sante.fr/jcms/p_3185131/fr/accompagner-les-enfants-et-les-adolescents-dont-ceux-vivant-avec-une-maladie-chronique-lors-de-la-levee-du-confinement).
+    Même chez l'adolescent atteint d’une maladie chronique, l’infection à la Covid est généralement bénigne.
 
     Seuls quelques enfants suivis pour des pathologies rares et graves et en situation de grande vulnérabilité en lien avec leur pathologie ou leurs traitements nécessitent des précautions particulières voire du maintien des soins, des activités éducatives, d’une scolarité à domicile.
 
 
-
-.. section:: Organisation familiale et garde des enfants
-
-.. question:: Que doivent faire mes enfants si je suis positif à la Covid ?
-    :level: 3
-
-    Si vous êtes positif à la Covid, alors vos enfants sont **cas contact** (sauf s’ils ont eux-mêmes déjà eu la Covid dans les 2 derniers mois).
-
-    Qu’ils soient **vaccinés ou non**, vos enfants doivent faire un **test antigénique dès que possible**.
-
-    * si leur test est **positif**, ils devront s’isoler pendant 10 jours ;
-    * si leur test est **négatif** :
-        * s’ils ne sont **pas vaccinés**, ils devront **rester isolés** eux aussi, et ne **devront pas aller à l’école** (par contre, s’ils sont **vaccinés**, ils n’auront pas besoin de s’isoler et pourront continuer à aller à l’école) ;
-        * ils devront faire un second test **17 jours** après le début de vos symptômes (ou après la date de votre propre test positif) ;
-        * s’ils ont eux-mêmes des **symptômes** (fièvre, etc.) avant la date du second test, alors ils devront s’isoler et faire un test sans attendre.
-
-    <div class="voir-aussi">
-
-    * Consultez la conduite à suivre [lorsque l’on vit avec une personne positive](/je-vis-avec-personne-covid-positive.html) (test, isolement, conseils pratiques…)
-
-    </div>
 
 
