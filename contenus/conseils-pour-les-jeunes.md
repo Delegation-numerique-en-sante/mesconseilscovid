@@ -18,34 +18,41 @@
 .. section:: La vie quotidienne
     
 .. question:: Pourquoi est-ce que les mesures n'arrêtent pas de changer ?
-    :level: 3   
-    Le monde n'a jamais connu de situation similaire à celle que nous connaissons depuis 2020, alors, les mesures s'adaptent au fur et à mesure des nouvelles découvertes que nous
-    faisons sur le virus de la Covid et des nouvelles armes que nous avons. Par exemple, la vaccination nous permet d'éviter le reconfinement, mais, l'arrivée de nouveaux variants du
-    virus (Delta, Omicron) nous pousse à nous adapter, et à recevoir une dose de rappel qui n'était pas prévue au départ.
-    Aujourd'hui, la vaccination, le port du masque, le pass sanitaire et la distanciation sociale sont les outils qui nous permettent de vivre au mieux avec le virus au lieu d'être à
-    nouveau confinés.   
-    
-.. question:: Je porte souvent le masque sous le nez parce qu'il me gêne. Est-ce que c'est grave ?
     :level: 3
     
-    La Covid est un virus des voies respiratoires. Il entre et sort de ton corps par **ta bouche et ton nez**. Il faut donc te **couvrir le nez et la bouche** pour que ton masque te
-    protège et protège ceux qui t'entourent.
+    Les consignes changent pour s'adapter aux évolution de la situation. Elles dépendent par exemple des nouvelles découvertes que nous faisons sur le virus de
+    la Covid, et, des nouveux instruments (vaccin, masque, pass sanitaire...) que nous avons pour freiner sa propagation. 
+    Par exemple, la vaccination nous permet d'éviter le reconfinement, mais, l'arrivée de nouveaux variants du virus (Delta, Omicron) nous pousse à nous adapter et à recevoir une
+    dose de rappel qui n'était pas prévue au départ.
+        
+.. question:: Est-ce que porter le masque sous le nez est efficace ?
+    :level: 3
+    
+    La Covid est un virus des **voies respiratoires**. Il entre et sort de ton corps par **ta bouche et ton nez**. Pour te protéger et protéger ceux qui t'entourent, il doit donc te bien te **couvrir le nez et la bouche**.
     
 .. question:: J'entends parler de Delta, Omicron... c'est quoi un variant ?
     :level: 3   
     
+    Pour survivre, un virus comme le Sars-Cov-2 (responsable de la Covid-19 qu'on connait aujourd'hui) se réplique, c'est-à-dire qu'il fait des copies de son code génétique. Parfois,
+    une erreur se glisse dans une copie, c'est ce qu'on appelle une mutation, et le virus n'est plus tout à fait le même. Cette mutation, qu'on appelle aussi variant, peut avoir des
+    caractéristiques différentes du virus d'origine : il peut par exemple être plus ou moins contagieux; plus dangereux; ou provoquer d'autres symptômes...
+     
+        
 .. question:: Il y a beaucoup d'informations qui circulent sur les réseaux sociaux. Que croire ?
     :level: 3   
     
-.. question:: J'ai des pensées négatives, du stress et des peurs. Que dois-je faire ?
+.. question:: Que faire si j'ai des pensées négatives, du stress ou des peurs ?
     :level: 3
     
-    Le contexte actuel est difficile à vivre. Les restrictions, l'isolement, le port du masque, l'angoisse liée à la maladie...autant de sujets qui pèsent sur le moral.
-    Si tu en ressens le besoin, tu peux te confier à une personne extérieure à ta famille, un(e) psychologue. Il pourra t'écouter, t'aider à trouver des solutions ou simplement te
-    permettre de vider ton sac. Les consultations chez le psy sont entièrement confidentielles. Tes parents ne sauront pas ce que tu y dis, alors sens toi libre.
+    Le contexte actuel est difficile à vivre. Les restrictions, l'isolement, le port du masque, l'inquiétude liée à la maladie...autant de sujets qui pèsent sur le moral de beaucoup
+    de gens qui décident, pour aller mieux, de **consulter un(e) psychologue**.
+    Si tu ressens le besoin de **te confier** à une personne extérieure à ta famille, qui pourra t'écouter et t'aider, parles en à ton médecin.
     
-    Le forfait « *100% Psy Enfant Ado* » te donne accès à 10 séances de **soutien psychologique**, gratuitement. Si tu veux savoir comment en bénéficier, et en parler à tes parents, consulte [le site internet dédié au dispositif](https://www.psyenfantado.sante.gouv.fr/).
+    Le forfait « *100% Psy Enfant Ado* » te donne accès à **10 séances** de soutien psychologique, **gratuitement**. Si tu veux savoir comment en bénéficier, et en parler à tes
+    parents, consulte [le site internet dédié au dispositif](https://www.psyenfantado.sante.gouv.fr/).
     
+    Les consultations chez le psy sont **confidentielles**. Tes parents ne sauront pas ce que tu y dis, alors sens toi libre.
+       
 .. section:: Mesures sanitaires à l’école, au collège et au lycée
    
 .. question:: Dans quels cas est-ce que je dois rester à la maison ?
