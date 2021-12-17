@@ -277,14 +277,37 @@
 
 .. question:: Comment des vaccins ont-ils été crées aussi vite ? Sont-ils efficaces et sûrs ?
     :level: 3 
-
+    
+    Plusieurs raisons expliquent comment des vaccins sûrs et efficaces contre la Covid ont pu être crées aussi rapidement :
+    
+    * la collaboration et la compétition internationales : tous les pays sont concernés par la Covid et ont intérêt à ce que des vaccins mettent un terme à la pandémie. La recherche du vaccin a donc bénéficié de financements très importants, et de la compétition entre les grands laboratoires ;
+    
+    * les vaccins utilisent des technologies (comme les ARN) qui sont étudiées depuis une vingtaine d'années et qui sont bien connues des scientifiques, même si elles n'avaient jamais été utilisées ;
+    
+    * le virus du SARS-CoV-2 (Covid-19) fait partie d'une famille de virus (les Coronavirus) très étudiée par les scientifiques. Ils ont pu rapidement connaître les caractéristiques de ce virus, pour créer un vaccin.
+    
+    Grâce à ces 3 facteurs, la phase de création des vaccins a pu être rapide. 
+    
+    Les phases de vérification et d'expérimentation n'ont pas été plus courtes que pour d'autres vaccins. En revanche, elles ont pu se dérouler plus rapidement car les scientifiques ont eu accès à un très grand nombre de malades à étudier et comparer, ce qui n'est pas le cas pour d'autres maladies.
+      
 .. question:: Comment fonctionnent les vaccins ?
     :level: 3
     
+    Les vaccins contre la Covid permettent au système immunitaire (qui défend ton organisme) de créer des anticorps contre le virus sans être contaminé. Ainsi, en cas de contact avec la Covid, tes anticorps le reconnaîtront, et lutterons plus efficacement contre lui.
+   
+    Si tu es vacciné contre la Covid, ton corps aura déjà produit des anticorps te permettant de le combattre. Tu auras donc moins de symptômes, voire même tu pourras éviter la contamination.
+    
+    Contre la Covid, 2 types de vaccins sont utilisés actuellement :
+    * les vaccins à adénovirus (Janssen et AstraZeneca) : qui injectent une infime partie du virus, désactivé et inoffensif. Cette injection va simuler une contamination et les anticorps vont être crées pour la combattre.
+    * les vaccins à ARN messager (Pfizer et Moderna) : les ARN sont, comme leur nom l'indique, des messagers. Ils contiennent la recette du virus et la donne à notre système immunitaire afin qu'il crée des anticorps capable de le combattre. Une fois leur travail accompli, ces messagers se dissolvent et disparaissent.
     
     
 .. question:: Est-ce que les vaccins changent mon ADN ?
     :level: 3
+    
+    Non. Cette fausse information (fake news), qui concernent particulièrement les vaccins à ARN messagers (Pfizer et Moderna) est malheureusement très répandue sur les réseaux sociaux.
+    L'ADN, c'est le code génétique d'une personne. Il détermine toutes les caractéristiques innées d'une personne (couleur des yeux, taille...). Il se situe dans une zone quasi-innaccessible de nos cellules qui s'appelle le noyau. Les vaccins, ne peuvent pas pénétrer dans ce noyau.
+      
     
 .. question:: Je suis jeune et en bonne santé, pourquoi me faire vacciner contre la Covid ?
     :level: 3
