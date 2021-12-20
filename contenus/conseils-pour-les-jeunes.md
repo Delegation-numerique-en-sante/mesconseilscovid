@@ -65,12 +65,12 @@
     
     Pour survivre, un virus comme le SARS-COv-2 (Covid-19) doit se répliquer, c'est-à-dire qu'il doit faire des **copies** de son code génétique. Parfois, une **erreur** se glisse dans une  copie. Cette version, qui n'est plus tout a fait identique, s'appelle une **mutation** ou un **variant**. 
         
-    Chaque variant a des caractéristiques plus ou moins différentes du virus d'origine. Par exemple, il peut être plus ou moins contagieux ; plus dangereux ; ou provoquer d'autres symptômes.
+    Chaque variant a des **caractéristiques** plus ou moins **différentes** du virus d'origine. Par exemple, il peut être plus ou moins contagieux ; plus dangereux ; ou provoquer d'autres symptômes.
     
     Plus le variant est contagieux, plus il se répand vite et surpasse les autres. Par exemple, le variant le plus répandu **en 2020**, au début de l'épidémie, était le variant dit chinois (ou souche traditionnelle de la Covid). Aujourd'hui, **fin 2021**, c'est le variant **Delta** qui est le plus répandu en France, mais les scientifiques prédisent qu'il sera dépassé à partir de janvier **2022** par le variant **Omicron**.
         
     Les scientifiques surveillent attentivement l'apparition de nouveaux variants car ils doivent veiller à ce que les consignes sanitaires et les vaccins dont nous disposons restent suffisament efficaces pour les combattres. 
-        Les études récentes sont rassurantes puisqu'elles montrent que le rappel vaccinal avec un vaccin Pfizer ou Moderna permet de se protéger à 70 % d'une forme grave, dans le cas d'une contamination par le variant Omicron.
+    Les études récentes sont rassurantes puisqu'elles montrent que le rappel vaccinal avec un vaccin Pfizer ou Moderna permet de se protéger à 70 % d'une forme grave, dans le cas d'une contamination par le variant Omicron.
     Il est probable que les vaccins seront adaptés, au fur et à mesure de l'appartition de variants, pour maintenir leur efficacité.
         
 .. question:: Il y a beaucoup d'informations qui circulent sur les réseaux sociaux. Que croire ?
@@ -79,12 +79,9 @@
 .. question:: Que faire si j'ai des pensées négatives, du stress ou des peurs ?
     :level: 3
     
-    Le contexte actuel est difficile à vivre. Les restrictions, l'isolement, le port du masque, l'inquiétude liée à la maladie...autant de sujets qui pèsent sur le moral de beaucoup
-    de gens qui décident, pour aller mieux, de **consulter un(e) psychologue**.
-    Si tu ressens le besoin de **te confier** à une personne extérieure à ta famille, qui pourra t'écouter et t'aider, parles en à ton médecin.
+    Le contexte actuel est difficile à vivre. Les restrictions, l'isolement, le port du masque, l'inquiétude liée à la maladie...autant de sujets qui pèsent sur le moral de beaucoup de personnes qui décident, pour aller mieux, de **consulter un(e) psychologue**.
     
-    Le forfait « *100% Psy Enfant Ado* » te donne accès à **10 séances** de soutien psychologique, **gratuitement**. Si tu veux savoir comment en bénéficier, et en parler à tes
-    parents, consulte [le site internet dédié au dispositif](https://www.psyenfantado.sante.gouv.fr/).
+    Si tu ressens le besoin de **te confier** à une personne extérieure à ta famille et tes amis, qui pourra t'écouter et t'aider, il existe des solutions. Tu peux, par exemple, avoir recours au forfait « *100% Psy Enfant Ado* », qui te donne accès à **10 séances** de soutien psychologique, **gratuitement**. Si tu veux savoir comment faire, consulte [le site internet dédié au dispositif](https://www.psyenfantado.sante.gouv.fr/).
     
     Les consultations chez le psy sont **confidentielles**. Tes parents ne sauront pas ce que tu y dis, alors sens toi libre.
        
@@ -107,7 +104,7 @@
 
     </div>
 
-.. question:: Que se passe-t-il si un élève est testé positif dans ma classe au collège ou au lycée ?
+.. question:: Que se passe-t-il si un(e) élève est testé(e) positif(ve) dans ma classe au collège ou au lycée ?
     :level: 3
 
     Les élèves qui ont été en contact avec la personne positive seront prévenus. S'ils ne sont pas vaccinés, ils devront s’isoler et donc poursuivre leurs apprentissages **à distance**, pendant une durée de **7 jours**. Les élèves vaccinés ou qui ont **déjà eu la Covid** il y a moins de 2 mois pourront continuer à aller en cours (*voir ci-dessous*).
@@ -123,12 +120,12 @@
     </div>
 
 
-.. question:: Je suis collégien(ne) ou lycéen(ne). Que se passe-t-il si je suis cas contact et que je suis vacciné ?
+.. question:: Je suis collégien(ne) ou lycéen(ne). Que se passe-t-il si je suis cas contact et que je suis vacciné(e) ?
     :level: 3
 
     <div class="conseil conseil-jaune">
 
-    * Si tu n'es **pas vacciné**, voir [la question suivante](#que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-ne-suis-pas-vaccine).
+    * Si tu n'es **pas vacciné(e)**, voir [la question suivante](#que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-ne-suis-pas-vaccine).
 
     * Si tu as **déjà eu la Covid** dans les 2 derniers mois, alors tu n'auras pas besoin de t’isoler ni de faire un test.
 
@@ -136,7 +133,7 @@
 
     #### 1. Pas d’isolement
 
-    Si tu es « **cas contact** » et que tu es **vacciné**, alors tu n'auras pas besoin de t’isoler, et pourras continuer à aller au collège ou au lycée.
+    Si tu es « **cas contact** » et que tu es **vacciné(e)**, alors tu n'auras pas besoin de t’isoler, et pourras continuer à aller au collège ou au lycée.
 
     #### 2. Test de dépistage
 
@@ -148,7 +145,7 @@
         * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, fais un nouveau test sans attendre, et contacte un **médecin** (ou le 15) si tu as des difficultés à respirer.
 
     * Si le test est **positif** :
-        - tu as attrapé la Covid. Ce n'est pas grave, mais tu es **contagieux** et tu dois protéger les personnes qui t'entourent ;
+        - tu as attrapé la Covid. Ce n'est pas grave, mais tu es **contagieux(se)** et tu dois protéger les personnes qui t'entourent ;
         - tu dois rester en isolement au moins **10 jours** à partir de la date du test ;
         - surveille l’apparition de **symptômes** (nez qui coule, mal de gorge, fiève, fatigue...) et appelle un **médecin** (ou le 15) si tu as des difficultés à respirer ;
         - les personnes qui vivent avec toi sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
@@ -172,7 +169,7 @@
     </div>
 
 
-.. question:: Je suis collégien(ne) ou lycéen(ne). Que se passe-t-il si je suis cas contact et que je ne suis pas vacciné ?
+.. question:: Je suis collégien(ne) ou lycéen(ne). Que se passe-t-il si je suis cas contact et que je ne suis pas vacciné(e) ?
     :level: 3
 
     <div class="conseil conseil-jaune">
@@ -196,7 +193,7 @@
         * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, fais un nouveau test sans attendre, et contacte un **médecin** (ou le 15) si tu as des difficultés à respirer.
 
     * Si le test est **positif** :
-        - tu as contracté la Covid. Ce n'est pas grave, mais tu es **contagieux** ;
+        - tu as contracté la Covid. Ce n'est pas grave, mais tu es **contagieux(se)** et tu dois protéger les personnes qui t'entourent
         - tu dois rester en isolement au moins **10 jours** à partir de la date du test ;
         - surveille l’apparition de **symptômes** (nez qui coule, mal de gorge, fiève, fatigue...) et appelle un **médecin** (ou le 15) si tu as des difficultés à respirer ;
         - les personnes qui vivent avec toi sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
@@ -223,13 +220,18 @@
 .. question:: Est-ce que le cas contact d'un cas contact est cas contact ?
     :level: 3
 
+     Non, une personne cas contact est une personne qui a été **en contact direct** avec une personne positive à la Covid.
+    
     + Le « **cas contact d’un cas contact** » n’est pas un cas contact et il ne doit pas s'isoler.
     
-    *Par exemple, si ta soeur est cas contact de son ami et qu'elle doit s'isoler parce qu'elle n'est pas vacciné(e), les autres personnes du foyer (dont toi) ne sont pas considérées cas contact et ne doivent pas s'isoler. Tu pourras donc continuer à aller au collège ou au lycée et tes parents pourront aller au travail.*
+    *Par exemple, si ta soeur n'est pas vaccinée, et qu'elle est cas contact de son ami, elle devra s'isoler, mais pas les autres personnes de son foyer (toi, parents...).
+    Tu pourras donc continuer à aller au collège ou au lycée et tes parents pourront aller travailler.
+    Ta soeur devra cependant faire attention et respecter les gestes barrières à la maison pendant au moins 7 jours, et tant qu'elle ne sera pas sûre qu'elle n'a pas été contaminée.
     
-    + Par contre, si le cas contact devient à son tour cas positif, alors les autres personnes du foyer deviennent cas contact. 
+    + Si le cas contact devient à son tour cas positif, alors les autres personnes du foyer deviennent cas contact. 
     
-    *Donc, si quelques jours plus tard, ta soeur est  **testée positive**, alors les autres personnes du foyer (dont toi) deviendront à leur tour **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois). S’ils ne sont **pas vaccinés**, ils devront eux aussi s’isoler. Dans ce cas, tu ne devras pas aller au collège ou au lycée et tes parents ne devront pas aller travailler.*
+    *Si quelques jours plus tard, ta soeur est  **testée positive**, alors les autres personnes du foyer (toi, parents...) deviendront à leur tour **cas contacts**, sauf s’ils ont déjà eu la Covid dans les 2 derniers mois. 
+    S'ils ne sont **pas vaccinés**, ils devront eux aussi s’isoler. Dans ce cas, tu ne devras pas aller au collège ou au lycée et tes parents ne devront pas aller travailler.*
 
     <div class="voir-aussi">
 
@@ -245,13 +247,11 @@
 .. question:: Est-ce que je dois porter le masque au collège ou au lycée?
     :level: 3
     
-     Oui, le masque est **obligatoire en primaire, au collège et au lycée** dans tous les départements.
+     Oui, le masque est **obligatoire en primaire, au collège et au lycée** dans tous les départements. Tes parents doivent te fournir un masque, mais si besoin (oubli, accident), ton établissement scolaire pourra t'en donner un.
 
-     Tu ne peux pas faire un masque avec n'importe quel tissu. Pour être efficace, ton masque doit assurer une filtration supérieure à 90 %. C'est le cas des masques en tissu « grand public » de catégorie 1 (inscrite sur l'emballage) et des masques chirurgicaux.
-    
-     Tes parents doivent te fournir un masque, mais si besoin (oubli, accident), ton établissement scolaire pourra t'en donner un.
-   
-
+     Attention, même si tu as envie d'avoir un joli masque, tu ne peux **pas utiliser n'importe quel tissu** pour le confectionner. Pour être efficace, un masque doit assurer une filtration supérieure à **90 %**, ce qui n'est pas le cas de tous les tissus. 
+    Si tu achètes un masque en tissu « grand public », assure toi que la mention **« catégorie 1 »** soit inscrite sur l'emballage. Sinon, tu peux aussi porter des **masques chirurgicaux**.
+ 
     <div class="voir-aussi">
 
     - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
@@ -266,15 +266,11 @@
     
     En revanche, il est obligatoire pour les activités extra-scolaires.
 
-
     <div class="voir-aussi">
-
-    - Notre rubrique sur la [vaccination des mineurs de plus de 12 ans](#la-vaccination-contre-la-covid) ci-dessous
 
     - Notre autre page sur le [pass sanitaire](/pass-sanitaire-qr-code-voyages.html)
 
     </div>
-
 
 
 .. section:: La vaccination contre la Covid
