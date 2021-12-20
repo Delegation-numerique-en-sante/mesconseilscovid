@@ -276,19 +276,17 @@
 .. section:: La vaccination contre la Covid
 
 .. question:: Comment des vaccins ont-ils été crées aussi vite ? Sont-ils efficaces et sûrs ?
-    :level: 3 
+    :level: 3
     
-    Plusieurs raisons expliquent comment des vaccins sûrs et efficaces contre la Covid ont pu être crées aussi rapidement :
+    Il est vrai que les vaccins contre la Covid ont été crées rapidement, mais cela ne veut pas dire qu'ils ne sont pas sûrs, ou que le processus a été baclé.
     
-    * la collaboration et la compétition internationales : tous les pays sont concernés par la Covid et ont intérêt à ce que des vaccins mettent un terme à la pandémie. La recherche du vaccin a donc bénéficié de financements très importants, et de la compétition entre les grands laboratoires ;
+    3 facteurs expliquent cette rapidité :
+       
+    1. la collaboration et la compétition internationales : l'épidémie de Covid a eu de graves conséquences dans tous les pays du monde, et, la période de confinement a mis l'économie  à l'arrêt. Il était donc primordial pour tous de sortir de cette situation et cela passait par la création d'un vaccin. La recherche scientifique pour la création du vaccin a bénéficié de financements très importants et aussi d'une compétition entre plusieurs laboratoires ;
     
-    * les vaccins utilisent des technologies (comme les ARN) qui sont étudiées depuis une vingtaine d'années et qui sont bien connues des scientifiques, même si elles n'avaient jamais été utilisées ;
+    2. l'expérience scientifique : les scientifiques ne sont pas partis de zéro pour créer ces vaccins ! En effet, le virus du SARS-CoV-2 (Covid-19) fait partie d'une famille de virus (les Coronavirus) très étudiée par les scientifiques. Ils ont donc pu rapidement connaître ses caractéristiques pour mettre au point un vaccin efficace. Les laboratoires ont également profités d'études qui ont été réalisées depuis une vingtaine d'années sur la technologie des ARN messagers utilisée dans les vaccins Pfizer et Moderna. L'expérience et la collaboration des scientifiques a donc permis un gain de temps considérable.
     
-    * le virus du SARS-CoV-2 (Covid-19) fait partie d'une famille de virus (les Coronavirus) très étudiée par les scientifiques. Ils ont pu rapidement connaître les caractéristiques de ce virus, pour créer un vaccin.
-    
-    Grâce à ces 3 facteurs, la phase de création des vaccins a pu être rapide. 
-    
-    Les phases de vérification et d'expérimentation n'ont pas été plus courtes que pour d'autres vaccins. En revanche, elles ont pu se dérouler plus rapidement car les scientifiques ont eu accès à un très grand nombre de malades à étudier et comparer, ce qui n'est pas le cas pour d'autres maladies.
+    3. le nombre de personnes contaminées : une fois que les vaccins ont été mis au point, les phases de vérification et d'expérimentation n'ont pas été plus courtes que pour d'autres vaccins. En revanche, elles ont pu se dérouler plus rapidement car les scientifiques ont pu étudier et comparer un très grand nombre de malade, ce qui n'est pas le cas pour d'autres maladies.
       
 .. question:: Comment fonctionnent les vaccins ?
     :level: 3
