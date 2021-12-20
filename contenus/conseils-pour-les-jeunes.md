@@ -2,7 +2,7 @@
 
 <img src="illustrations/pediatriegeneral.svg">
 
-<header>
+<header> Ce n'est pas facile de trouver des **informations fiables** sur la **Covid**, les **vaccins** ou la manière de se **protéger**. Tu trouveras sur cette page toutes des informations **vérifiées** pour être **au courant** et **responsable** face au vius !
     <p class="big"></p>
 </header>
 
@@ -17,28 +17,30 @@
 
 .. section:: La vie quotidienne
     
-.. question:: Pourquoi est-ce que les mesures changent si souvent ?
+.. question:: Pourquoi est-ce que les mesures changent tout le temps ?
     :level: 3
     
-    Les consignes changent pour s'adapter aux évolution de la situation. Elles dépendent par exemple des nouvelles découvertes que nous faisons sur le virus de
-    la Covid, et, des nouveux instruments (vaccin, masque, pass sanitaire...) que nous avons pour freiner sa propagation. 
-    Par exemple, la vaccination nous permet d'éviter le reconfinement, mais, l'arrivée de nouveaux variants du virus (Delta, Omicron) nous pousse à nous adapter et à recevoir une
-    dose de rappel qui n'était pas prévue au départ.
+    Les consignes changent pour s'adapter à l'évolution de l'épidémie. Elles dépendent aussi des connaissances que nous avons sur ce virus.
+    
+    Les consignes sont durcies (couvre-feu, fermeture de certains lieux comme les boites de nuit...) lorsqu'il y a une augmentation importante des cas positifs et qu'on parle alors d'une nouvelle vague. Ce durcissement sert à faire baisser le nombre de contaminations et à éviter la surcharge des hôpitaux qui doivent soigner trop de malades.
+    
+    Les consignes évoluent aussi en fonction des nouvelles découvertes que font les scientifiques. Par exemple, nous avons évité d'être reconfinés grâce au nouveau vaccin anti-covid. Cependant, l'apparition de nouveaux variants du virus (Delta, Omicron), nous oblige encore une fois à nous adapter en recevant un rappel vaccinal.
+     
         
 .. question:: Est-ce que porter le masque sous le nez est efficace ?
     :level: 3
     
-    La Covid est un virus des **voies respiratoires**. Il entre et sort de ton corps par **ta bouche et ton nez**. Pour te protéger et protéger ceux qui t'entourent, il doit donc te bien te **couvrir le nez et la bouche**.
+    La Covid est un virus des **voies respiratoires**, c'est-à-dire qu'il entre et sort de ton corps par **ta bouche et ton nez**. Pour te protéger et protéger ceux qui t'entourent, le masque doit donc te bien te **couvrir le nez et la bouche**.
     
 .. question:: A partir de quel âge le pass sanitaire est-il obligatoire ?
     :level: 3
     
-    Le pass sanitaire (une attestation de vaccination; ou un test de dépistage négatif ; ou un certificat de rétablissement) est obligatoire à partir de 12 ans et 2 mois.
+    Le pass sanitaire (une attestation de vaccination; ou un test de dépistage négatif ; ou un certificat de rétablissement) est obligatoire à partir de **12 ans et 2 mois**.
     
 .. question:: Où le pass sanitaire est-il obligatoire ?
     :level: 3
     
-    Il faut présenter un pass sanitaire valide pour accéder aux lieux qui accueillent beaucoup de personnes et où le risque de contamination est important.
+    Il faut présenter un pass sanitaire pour accéder aux lieux qui accueillent beaucoup de personnes et où le risque de contamination est important.
     
     Il est notamment **obligatoire** pour accéder :
     - aux lieux de loisir et de culture : **cinéma, musées, théâtres, parc d’attraction…** ;
@@ -61,13 +63,15 @@
 .. question:: J'entends parler de Delta, Omicron... c'est quoi un variant ?
     :level: 3   
     
-    Pour survivre, un virus comme le Sars-Cov-2 (responsable de la Covid-19) se réplique, c'est-à-dire qu'il fait des copies de son code génétique. Parfois,
-    une erreur se glisse dans une copie. Cette nouvelle version, s'appelle une mutation ou un variant.  Le variant a des caractéristiques plus ou moins différentes du virus d'origine 
-    : il peut par exemple être plus ou moins contagieux ; plus dangereux ; ou provoquer d'autres symptômes.
+    Pour survivre, un virus comme le SARS-COv-2 (Covid-19) doit se répliquer, c'est-à-dire qu'il doit faire des **copies** de son code génétique. Parfois, une **erreur** se glisse dans une  copie. Cette version, qui n'est plus tout a fait identique, s'appelle une **mutation** ou un **variant**. 
+        
+    Chaque variant a des caractéristiques plus ou moins différentes du virus d'origine. Par exemple, il peut être plus ou moins contagieux ; plus dangereux ; ou provoquer d'autres symptômes.
     
-    Au début de l'épidémie, en 2020, le variant le plus répandu était le variant dit chinois (ou souche traditionnelle de la Covid). Aujourd'hui, fin 2021, le variant le plus répandu en France est Delta, mais les scientifiques prédisent qu'il sera surpassé par le variant Omicron, plus contagieux, en janvier 2022.
-    
-    Les scientifiques surveillent attentivement l'apparition de nouveaux variants car ils doivent veiller à ce que les consignes sanitaires et les vaccins dont nous disposons actuellement restent suffisament efficaces pour les combatres. Les études récentes montrent que le rappel vaccinal avec un vaccin Pfizer ou Moderna permet notamment de se protéger à 70 % d'une forme grave d'infection causée par le nouveau variant Omicron.
+    Plus le variant est contagieux, plus il se répand vite et surpasse les autres. Par exemple, le variant le plus répandu **en 2020**, au début de l'épidémie, était le variant dit chinois (ou souche traditionnelle de la Covid). Aujourd'hui, **fin 2021**, c'est le variant **Delta** qui est le plus répandu en France, mais les scientifiques prédisent qu'il sera dépassé à partir de janvier **2022** par le variant **Omicron**.
+        
+    Les scientifiques surveillent attentivement l'apparition de nouveaux variants car ils doivent veiller à ce que les consignes sanitaires et les vaccins dont nous disposons restent suffisament efficaces pour les combattres. 
+        Les études récentes sont rassurantes puisqu'elles montrent que le rappel vaccinal avec un vaccin Pfizer ou Moderna permet de se protéger à 70 % d'une forme grave, dans le cas d'une contamination par le variant Omicron.
+    Il est probable que les vaccins seront adaptés, au fur et à mesure de l'appartition de variants, pour maintenir leur efficacité.
         
 .. question:: Il y a beaucoup d'informations qui circulent sur les réseaux sociaux. Que croire ?
     :level: 3   
