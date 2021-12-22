@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-12-22
+
+* met à jour les infos sur la vaccination des enfants de 5 à 11 ans
+
 ## 2021-12-15
 
 * met à jour la réponse sur la vaccination des enfants
