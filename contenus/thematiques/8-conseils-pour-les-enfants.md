@@ -210,58 +210,32 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. section:: La vaccination contre la Covid
     :tags: 4 à 11 ans, 12 à 18 ans
 
-.. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
+.. question:: Les enfants de 5 à 11 ans peuvent-ils être vaccinés ?
     :level: 3
 
-    Pour les mineurs âgés de **16 à 17 ans**, aucune autorisation parentale n’est requise.
+    À compter du mercredi 22 décembre, la vaccination est possible pour tous les enfants âgés de **5 à 11 ans**, suite aux avis favorables de la Haute autorité de santé (HAS), du Conseil consultatif national d’éthique (CCNE) et du Conseil d’orientation de la stratégie vaccinale (COSV).
 
-    Pour les mineurs âgés de **12 à 15 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Un formulaire d’autorisation peut être [téléchargé à l’avance](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) et sera également disponible dans le centre de vaccination.
-
-    Le jour de la vaccination, l’adolescent(e) **peut venir accompagné(e)** de l’un de ses parents (ou titulaires de l’autorité parentale), mais ce n’est pas obligatoire.
-
-    <div class="voir-aussi">
-
-    * [Quels justificatifs apporter le jour du rendez-vous de vaccination ?](#quels-justificatifs-apporter-le-jour-du-rendez-vous-de-vaccination)
-
-    </div>
-
-
-.. question:: Le mineur doit-il donner son accord ?
-    :level: 3
-
-    **Oui**. Au cours de l’entretien préalable à la vaccination, le professionnel de santé donnera à l’adolescent(e) toutes les informations de façon claire et adaptée. Il recueillera ensuite son **consentement oral** avant de procéder à l’injection.
+    Cette vaccination est **facultative**, et se fait avec une dose pédiatrique (10 µg) de vaccin **Pfizer**.
 
 
 .. question:: Où faire vacciner un mineur et avec quel vaccin ?
     :level: 3
 
-    Les adolescent(e)s âgé(e)s de 12 ans et plus peuvent-être vacciné(e)s :
+    Les mineur(e)s peuvent-être vacciné(e)s :
 
-    * dans un **centre de vaccination** et dans certains **établissements scolaires**, avec un vaccin *Pfizer-BioNTech* ;
+    * dans un **centre de vaccination** et dans certains **établissements scolaires** ;
 
-    * chez votre **médecin traitant**, en cabinet infirmier, ou en pharmacie avec un vaccin *Pfizer-BioNTech* ou *Moderna*.
+    * chez votre **médecin traitant**, en cabinet infirmier, en pharmacie, ou encore à domicile.
 
-    La Haute autorité de santé (HAS) recommande de privilégier le vaccin **Pfizer** lorsque c’est possible (en raison d’un risque accru de myocardite avec le vaccin *Moderna* chez les personnes de moins de 30 ans).
+    La vaccination des enfants de **5 à 11 ans** se fait avec une dose pédiatrique (10 µg) de vaccin **Pfizer**.
+
+    La vaccination des adolescent(e)s de **12 à 17 ans** se fait avec le vaccin *Pfizer* ou le vaccin *Moderna*. La Haute autorité de santé (HAS) recommande d’utiliser de préférence le vaccin **Pfizer** dès lors qu’il est disponible (en raison d’un risque accru de myocardite avec le vaccin *Moderna* chez les personnes de moins de 30 ans).
 
     <div class="voir-aussi">
 
     * Trouvez les lieux de vaccination proches de chez vous sur le site [sante.fr](https://www.sante.fr/cf/centres-vaccination-covid.html) ou en appelant le numéro vert [0 800 009 110](tel:0800009110) (7j/7, de 6h à 22h).
 
     </div>
-
-
-.. question:: Les enfants de moins de 12 ans peuvent-ils être vaccinés ?
-    :level: 3
-
-    La Haute Autorité de Santé (HAS) **recommande** de vacciner contre la Covid les enfants âgés de **5 à 11 ans** qui :
-
-    * ont des **comorbidités** les mettant à risque de faire une forme grave (notamment, de développer des « syndromes inflammatoires multi-systémiques pédiatriques » (PIMS)) ;
-    * *ou* ont dans leur **entourage** proche une **personne fortement immunodéprimée** ou **vulnérable** qui ne peut pas bénéficier de la protection vaccinale.
-
-    La vaccination est **facultative** et se fait avec une dose pédiatrique (10 µg) de vaccin **Pfizer**.
-
-    La campagne de vaccination pourrait être élargie à l’ensemble des enfants de 5 à 11 ans, en fonction
-    des avis de la Haute autorité de santé (HAS), du Conseil consultatif national d’éthique (CCNE) et du Conseil d’orientation de la stratégie vaccinale (COSV), attendus dans les prochains jours.
 
 
 .. question:: Les mineurs reçoivent-ils le même nombre de doses que les adultes ?
@@ -279,15 +253,43 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
+.. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
+    :level: 3
+
+    * Pour un enfant de **5 à 11 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Un formulaire d’autorisation peut être [téléchargé à l’avance](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) et sera également disponible dans le centre de vaccination.
+
+      Le jour de la vaccination, l’enfant **doit être accompagné** de l’un de ses parents (ou titulaires de l’autorité parentale).
+
+    * Pour un(e) adolescent(e) de **12 à 15 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Un formulaire d’autorisation peut être [téléchargé à l’avance](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) et sera également disponible dans le centre de vaccination.
+
+      Le jour de la vaccination, l’adolescent(e) **peut venir accompagné(e)** de l’un de ses parents (ou titulaires de l’autorité parentale), mais ce n’est pas obligatoire.
+
+    * Pour un(e) adolescent(e) de **16 à 17 ans**, l’autorisation parentale n’est pas requise.
+
+    <div class="voir-aussi">
+
+    * [Quels justificatifs apporter le jour du rendez-vous de vaccination ?](#quels-justificatifs-apporter-le-jour-du-rendez-vous-de-vaccination)
+
+    </div>
+
+
+.. question:: Le mineur doit-il donner son accord ?
+    :level: 3
+
+    La vaccination est précédée d’un **entretien préalable**, pendant lequel le professionnel de santé donnera à l’enfant ou à l’adolescent(e) toutes les informations de façon claire et adaptée, et pourra répondre à ses questions ou à celles de ses parents.
+
+    Dans le cas d’un(e) adolescent(e) de 12 ans et plus, le professionnel recueillera ensuite son **consentement oral** avant de procéder à l’injection.
+
+
 .. question:: Quels justificatifs apporter le jour du rendez-vous de vaccination ?
     :level: 3
 
-    * Si l’adolescent(e) a **moins de 16 ans**, [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par un des deux parents ou par le tuteur.
+    * Pour un enfant de **5 à 11 ans** ou pour un(e) adolescent(e) de **12 à 15 ans**, [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par un des deux parents ou par le tuteur.
     * La **carte vitale** de l’adolescent(e) (si disponible), et **celle d’un parent** (ou une [attestation de droits](https://www.ameli.fr/paris/assure/adresses-et-contacts/lobtention-dun-document/obtenir-une-attestation/obtenir-une-attestation-de-droits) mentionnant le numéro de sécurité sociale d’un parent).
     * La preuve de contamination antérieure, si le mineur a déjà été contaminé par la Covid. Cette preuve peut-être un ancien **test positif** (PCR ou antigénique), ou une **sérologie** (prise de sang) indiquant la présence d’anticorps. Il faut respecter un délai de **2 mois minimum** après ce test positif avant de se faire vacciner.
 
 
-.. question:: Comment obtenir une attestation de vaccination (valable comme « pass sanitaire ») pour un mineur ?
+.. question:: Comment obtenir une attestation de vaccination (valable comme « pass sanitaire ») pour un mineur de 12 ans et plus ?
     :level: 3
 
     Suite à la vaccination, le professionnel de santé lui remettra une **attestation de vaccination** (sur papier) comportant un QR code.
@@ -303,7 +305,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: La vaccination des mineurs sera-t-elle obligatoire pour obtenir le « pass sanitaire » ?
+.. question:: La vaccination des mineurs de 12 ans et plus est-t-elle obligatoire pour obtenir le « pass sanitaire » ?
     :level: 3
 
     **Non**. Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « pass sanitaire » utilisable en France et pour les voyages en Union européenne :
