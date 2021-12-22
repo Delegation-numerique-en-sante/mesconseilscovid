@@ -18,7 +18,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 </div>
 
 .. section:: Mesures sanitaires à l’école, au collège et au lycée
-    :tags: 4 à 11 ans, 12 à 18 ans
+    :tags: 5 à 11 ans, 12 à 17 ans
 
 .. question:: Dans quels cas mon enfant doit-il rester à la maison ?
     :level: 3
@@ -208,7 +208,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 
 .. section:: La vaccination contre la Covid
-    :tags: 4 à 11 ans, 12 à 18 ans
+    :tags: 5 à 11 ans, 12 à 17 ans
 
 .. question:: Les enfants de 5 à 11 ans peuvent-ils être vaccinés ?
     :level: 3
@@ -324,7 +324,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 
 .. section:: Questions médicales et dépistage
-    :tags: 0 à 3 ans, 4 à 11 ans, 12 à 18 ans
+    :tags: 0 à 4 ans, 5 à 11 ans, 12 à 17 ans
 
 .. question:: Que faire si mon enfant est malade ?
     :level: 3
@@ -435,7 +435,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 
 .. section:: Organisation familiale et garde des enfants
-    :tags: 0 à 3 ans, 4 à 11 ans, 12 à 18 ans
+    :tags: 0 à 4 ans, 5 à 11 ans, 12 à 17 ans
 
 .. question:: Que doivent faire mes enfants si je suis positif à la Covid ?
     :level: 3
@@ -508,7 +508,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 
 .. section:: Enfants en bas âge
-    :tags: 0 à 3 ans
+    :tags: 0 à 4 ans
 
 .. question:: Mon enfant peut-il aller à la crèche s’il est cas contact ?
     :level: 3
