@@ -278,33 +278,30 @@
 .. question:: Comment des vaccins ont-ils été crées aussi vite ? Sont-ils efficaces et sûrs ?
     :level: 3
     
-    Il est vrai que les vaccins contre la Covid ont été crées rapidement, mais cela ne veut pas dire qu'ils ne sont pas sûrs, ou que le processus a été baclé.
+    Il est vrai que les vaccins contre la Covid ont été crées rapidement, mais cela ne veut pas dire qu'ils ne sont pas sûrs, ou que le processus ait été baclé.
     
     3 facteurs expliquent cette rapidité :
        
-    1. la collaboration et la compétition internationales : l'épidémie de Covid a eu de graves conséquences dans tous les pays du monde, et, la période de confinement a mis l'économie  à l'arrêt. Il était donc primordial pour tous de sortir de cette situation et cela passait par la création d'un vaccin. La recherche scientifique pour la création du vaccin a bénéficié de financements très importants et aussi d'une compétition entre plusieurs laboratoires ;
+    1. la collaboration et la compétition internationales : la recherche du vaccin a bénéficié de **financements** très importants et d'une grande **compétition** entre les laboratoires pharmaceutiques. Le monde entier ayant souffert de cette pandémie, il était urgent de trouver un vaccin qui permette de retrouver le plus rapidement possible une vie normale et de sortir de la crise qu'elle a engendré.
     
-    2. l'expérience scientifique : les scientifiques ne sont pas partis de zéro pour créer ces vaccins ! En effet, le virus du SARS-CoV-2 (Covid-19) fait partie d'une famille de virus (les Coronavirus) très étudiée par les scientifiques. Ils ont donc pu rapidement connaître ses caractéristiques pour mettre au point un vaccin efficace. Les laboratoires ont également profités d'études qui ont été réalisées depuis une vingtaine d'années sur la technologie des ARN messagers utilisée dans les vaccins Pfizer et Moderna. L'expérience et la collaboration des scientifiques a donc permis un gain de temps considérable.
+    2. l'expérience scientifique : les scientifiques ne sont pas partis de zéro pour créer ces vaccins ! En effet, la famille des Coronavirus, à laquelle appartient le virus du SARS-CoV-2 (Covid-19) est très étudiée et documentée par les scientifiques. Grâce à leurs connaissances, ils ont pu rapidement définir les caractéristique du SARS-CoV-2 pour mettre au point un vaccin efficace. Les laboratoires ont également profité de la technologie des ARN messagers qui est étudiée depuis une vingtaine d'année, pour créer les vaccins Pfizer et Moderna. Tout cela a permis un gain de temps considérable. 
     
-    3. le nombre de personnes contaminées : une fois que les vaccins ont été mis au point, les phases de vérification et d'expérimentation n'ont pas été plus courtes que pour d'autres vaccins. En revanche, elles ont pu se dérouler plus rapidement car les scientifiques ont pu étudier et comparer un très grand nombre de malade, ce qui n'est pas le cas pour d'autres maladies.
+    3. le nombre de personnes contaminées de par le monde : une fois que les vaccins ont été mis au point, les **phases de vérification et d'expérimentation** n'ont pas été plus courtes que pour d'autres vaccins. En revanche, elles ont pu se dérouler plus rapidement car les scientifiques ont pu étudier et comparer un nombre très important de malade, ce qui n'est pas le cas pour d'autres maladies.
       
 .. question:: Comment fonctionnent les vaccins ?
     :level: 3
     
-    Les vaccins contre la Covid permettent au système immunitaire (qui défend ton organisme) de créer des anticorps contre le virus sans être contaminé. Ainsi, en cas de contact avec la Covid, tes anticorps le reconnaîtront, et lutterons plus efficacement contre lui.
-   
-    Si tu es vacciné contre la Covid, ton corps aura déjà produit des anticorps te permettant de le combattre. Tu auras donc moins de symptômes, voire même tu pourras éviter la contamination.
+    Les vaccins contre la Covid font croire à ton système immunitaire (l'armée qui défend ton organisme contre les infections) que tu as été contaminé par la Covid afin qu'il crée des anticorps (des soldats). Une fois vacciné, ton corps sera prêt à réagir en cas de contact avec le virus et luttera contre la contamination de manière plus efficace. Résultat, tu auras moins de symptômes, voire même, tu éviteras la contamination.
     
-    Contre la Covid, 2 types de vaccins sont utilisés actuellement :
+    Contre la Covid, 2 types de vaccins sont actuellement disponibles :
     * les vaccins à adénovirus (Janssen et AstraZeneca) : qui injectent une infime partie du virus, désactivé et inoffensif. Cette injection va simuler une contamination et les anticorps vont être crées pour la combattre.
-    * les vaccins à ARN messager (Pfizer et Moderna) : les ARN sont, comme leur nom l'indique, des messagers. Ils contiennent la recette du virus et la donne à notre système immunitaire afin qu'il crée des anticorps capable de le combattre. Une fois leur travail accompli, ces messagers se dissolvent et disparaissent.
+    * les vaccins à ARN messager (Pfizer et Moderna) : les ARN sont, comme leur nom l'indique, des messagers. Ils ont la recette du virus de la Covid et vont la transmettre à notre système immunitaire afin qu'il crée des anticorps capable de le combattre. Une fois leur travail accompli, ces messagers se dissolvent et disparaissent.
     
     
 .. question:: Est-ce que les vaccins changent mon ADN ?
     :level: 3
     
-    Non. Cette fausse information (fake news), qui concernent particulièrement les vaccins à ARN messagers (Pfizer et Moderna) est malheureusement très répandue sur les réseaux sociaux.
-    L'ADN, c'est le code génétique d'une personne. Il détermine toutes les caractéristiques innées d'une personne (couleur des yeux, taille...). Il se situe dans une zone quasi-innaccessible de nos cellules qui s'appelle le noyau. Les vaccins, ne peuvent pas pénétrer dans ce noyau.
+    Non, c'est une **fausse information** (fake news) qui circule sur les réseaux sociaux au sujet des vaccins à ARn messagers (Pfizer et Moderna). L'**ADN** se situe dans une zone quasi-innaccessible de nos cellules qui s'appelle **le noyau**, dans lequel les vaccins, **ne peuvent pas pénétrer**.
       
     
 .. question:: Je suis jeune et en bonne santé, pourquoi me faire vacciner contre la Covid ?
@@ -315,7 +312,7 @@
     En te vaccinant, tu participes surtout à l’effort collectif de **santé publique** :
 
     * tu seras **moins contagieux** et risquera donc moins de contaminer les personnes vulnérables ou âgées qui t'entourent, comme tes grands-parents ;
-    * tu ne feras plus circuler la Covid au sein de la population générale : cela **freinera le développement du virus et ses mutations**.
+    * tu feras moins circuler la Covid au sein de la population, et cela **freinera le développement du virus et ses mutations**.
    
 .. question:: Je suis vacciné, puis-je quand même attraper la Covid ?
     :level: 3
@@ -326,11 +323,12 @@
 .. question:: A quoi sert le vaccin si on peut quand même attraper la Covid ?
     :level: 3 
     
-    Comme la plupart des vaccins, notamment celui contre la grippe, les vaccins anti-covid n'immunisent pas complètement contre la maladie. Ils réduisent fortement :
-    * les risques de contamination et de transmission. Tu l'attrapes moins facilement et tu as moins de chances de le transmettre à une personne vulnérable ;
-    * le risque de faire des formes graves qui nécéssitent une hospitalisation ;
+    Comme la plupart des vaccins, notamment celui contre la grippe, les vaccins anti-covid ne protègent pas à 100% contre la maladie, mais ils réduisent : :
+    
+    * les risques de contamination et de transmission. Vacciné(e), tu attraperas moins facilement la Covid et tu auras moins de chances de la transmettre à une personne vulnérable (personne malade ; grands-parents...) ;
+    * les risques de faire une forme grave de la maladie et d'être hospitalisé ;
    
-    La généralisation de la vaccination permet surtout de restreindre la circulation du virus dans la population. Moins il circule, moins il mute et se développe.
+    Si tout le monde se fait vacciner, cela permettra surtout de limiter la circulation du virus au sein de la population. Moins le virus circulera, moins il mutera et se développera.
     
 .. question:: Est-ce que j'ai besoin de l'autorisation de mes parents pour me faire vacciner contre la Covid ?
     :level: 3
@@ -475,7 +473,7 @@
 .. question:: Est-ce que les tests de dépistage sont gratuits pour les mineurs ?
     :level: 3
 
-    **Oui**. Pour les mineurs, les tests de dépistages sont gratuits (sauf les autotests) et réalisés sans prescription médicale (ordonnance).
+    **Oui**. Pour les mineurs, les tests de dépistages sont gratuits (sauf les autotests) et réalisés sans ordonnance médicale.
 
 .. question:: Les tests sont-ils dangereux ou douloureux ?
     :level: 3
@@ -486,17 +484,10 @@
 .. question::  La sérologie Covid fonctionne-t-elle également pour les adolescents ?
     :level: 3
 
-    **Oui**, comme chez l’adulte la sérologie permet de savoir si tu as été contaminé par le virus, mais elle ne permet pas de savoir quand. La prescription d’une sérologie Covid et
-    son interprétation doivent être faites par un médecin. Elle ne donne pas droit à un pass sanitaire, mais elle permet par exemple de savoir si tu dois recevoir 1 seule ou 2 doses 
-    de vaccins pour être vacciné(e).
+    **Oui**, comme chez l’adulte la sérologie permet de savoir si tu as déjà été contaminé par le virus, mais elle ne permet pas de savoir quand. Ton médecin peut te prescrire une sérologie pour savoir si tu dois recevoir une ou deux dose de vaccin anti-covid.
 
 .. question:: Je souffre d'une maladie chronique, est-ce que je dois prendre des précautions supplémentaires face à la Covid ?
     :level: 3
 
-    Même chez l'adolescent atteint d’une maladie chronique, l’infection à la Covid est généralement bénigne.
-
-    Seuls quelques enfants suivis pour des pathologies rares et graves et en situation de grande vulnérabilité en lien avec leur pathologie ou leurs traitements nécessitent des précautions particulières voire du maintien des soins, des activités éducatives, d’une scolarité à domicile.
-
-
-
+    Généralement, la Covid reste une maladie bégnine, même chez l'adolescent atteint d’une maladie chronique. Cependant, si tu souffres d'une maladie rare et grave, qui nécéssite un traitement ou des soins particuliers, demande à ton médecin de t'expliquer quelles précautions renforcée tu dois prendre face à la Covid.
 
