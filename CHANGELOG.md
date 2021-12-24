@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-12-24
+
+* passe le délai d’éligibilité au rappel vaccinal à 4 mois
+
 ## 2021-12-22
 
 * met à jour les infos sur la vaccination des enfants de 5 à 11 ans
