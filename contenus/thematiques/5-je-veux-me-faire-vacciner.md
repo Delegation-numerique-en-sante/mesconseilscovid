@@ -69,7 +69,7 @@
 
     * si vous avez été vacciné(e) avec le vaccin **Pfizer**, **Moderna** ou **AstraZeneca** :
 
-        - dès **5 mois** après votre dernière **injection**, ou votre dernière **infection** à la Covid ;
+        - dès **4 mois** après votre dernière **injection**, ou votre dernière **infection** à la Covid ;
 
         - dès **3 mois** après votre dernière injection de vaccin si vous êtes sévèrement **immunodéprimé(e)** (*4<sup>e</sup> dose*).
 
@@ -96,7 +96,7 @@
     - Si vous n’avez **pas eu la Covid**, ni avant ni après votre injection, alors :
         - vous devrez recevoir une **dose supplémentaire** de vaccin à ARN messager (Pfizer ou Moderna, en dose complète) **4 semaines** après votre injection, afin de **compléter votre schéma vaccinal** ; cette 2<sup>e</sup> injection prolongera la validité de votre **pass sanitaire** ;
 
-        - **5 mois** après cette injection supplémentaire, vous serez éligible au **rappel vaccinal**, avec un vaccin Pfizer ou Moderna (demi-dose).
+        - **4 mois** après cette injection supplémentaire, vous serez éligible au **rappel vaccinal**, avec un vaccin Pfizer ou Moderna (demi-dose).
 
     - Si vous **avez eu la Covid avant** votre injection, alors :
         - la dose supplémentaire n’est pas nécessaire ;
@@ -104,7 +104,7 @@
 
     - Si vous **avez eu la Covid après** votre injection, alors :
         - la dose supplémentaire n’est pas nécessaire ;
-        - vous serez éligible au **rappel vaccinal** avec le vaccin Pfizer ou Moderna (demi-dose) dès **5 mois** après votre infection ; ce rappel prolongera la validité de votre pass sanitaire.
+        - vous serez éligible au **rappel vaccinal** avec le vaccin Pfizer ou Moderna (demi-dose) dès **4 mois** après votre infection ; ce rappel prolongera la validité de votre pass sanitaire.
 
 
 .. injection:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire
@@ -364,7 +364,7 @@
     * **une personne qui a déjà eu la Covid** avant sa première injection n’aura besoin que d’une seule dose de vaccin pour être complètement vaccinée (hors éventuel rappel) ;
     * **une personne fortement immunodéprimée** recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné(e) par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
 
-    L’immunité conférée par la vaccination initiale diminue avec le temps. C’est pourquoi une **dose de rappel** est maintenant recommandée **après 5 mois** pour toutes les personnes de 18 ans et plus (voir « [Suis-je concerné par la dose de rappel, dite 3e dose ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) »).
+    L’immunité conférée par la vaccination initiale diminue avec le temps. C’est pourquoi une **dose de rappel** est maintenant recommandée **après 4 mois** pour toutes les personnes de 18 ans et plus (voir « [Suis-je concerné par la dose de rappel, dite 3e dose ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) »).
 
 
 .. question:: Est-ce que je peux attraper la Covid si je suis vacciné(e) ?
