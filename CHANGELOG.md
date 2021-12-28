@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021-12-28
+
+* passe le délai d’éligibilité au rappel vaccinal à 3 mois
+
 ## 2021-12-24
 
 * passe le délai d’éligibilité au rappel vaccinal à 4 mois
