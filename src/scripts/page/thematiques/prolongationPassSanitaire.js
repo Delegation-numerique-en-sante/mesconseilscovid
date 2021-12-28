@@ -25,7 +25,7 @@ import { Formulaire } from './formulaire'
 // par mois, puis d’arrondir à l’entier supérieur.
 const JOURS_DANS_1_MOIS = 31
 const JOURS_DANS_2_MOIS = 61
-const JOURS_DANS_4_MOIS = 122
+const JOURS_DANS_3_MOIS = 92
 const JOURS_DANS_7_MOIS = 214
 
 export function dynamiseLaProlongationDuPass(prefixe) {
@@ -164,7 +164,7 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                     // À partir de quelle date faire le rappel ?
                     const delaiEligibiliteEnJours = this.janssen
                         ? JOURS_DANS_1_MOIS
-                        : JOURS_DANS_4_MOIS
+                        : JOURS_DANS_3_MOIS
                     const dateEligibiliteRappel = dayjs.max(
                         debutCampagneRappel,
                         dateDerniereDose.add(delaiEligibiliteEnJours, 'day')
