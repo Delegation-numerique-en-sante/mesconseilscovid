@@ -124,8 +124,8 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'Votre dernière injection date du 17 mai 2021.')
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 16 septembre 2021.'
-            )
+                'Vous pourrez recevoir votre dose de rappel à partir du 1 septembre 2021.'
+            ) // début de la campagne de rappel
             assert.include(
                 statut,
                 'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 17 décembre 2021.'
@@ -149,7 +149,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'Votre dernière injection date du 17 juin 2021.')
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 17 octobre 2021.'
+                'Vous pourrez recevoir votre dose de rappel à partir du 17 septembre 2021.'
             )
             assert.include(
                 statut,
@@ -174,7 +174,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'Votre dernière injection date du 17 juillet 2021.')
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 16 novembre 2021.'
+                'Vous pourrez recevoir votre dose de rappel à partir du 17 octobre 2021.'
             )
             assert.include(
                 statut,
@@ -200,7 +200,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(
                 statut,
                 'Vous pourrez recevoir votre injection supplémentaire à partir du 1 septembre 2021.'
-            )
+            ) // début de la campagne de rappel
             assert.include(
                 statut,
                 'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 15 décembre 2021.'
@@ -225,7 +225,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(
                 statut,
                 'Vous pourrez recevoir votre injection supplémentaire à partir du 1 septembre 2021.'
-            )
+            ) // début de la campagne de rappel
             assert.include(
                 statut,
                 'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 15 décembre 2021.'
@@ -323,11 +323,38 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'Votre dernière injection date du 17 août 2021.')
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 17 décembre 2021.'
-            )
+                'Vous pourrez recevoir votre dose de rappel à partir du 27 novembre 2021.'
+            ) // début de la campagne de rappel pour les moins de 65 ans
             assert.include(
                 statut,
                 'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 19 mars 2022.'
+            )
+        })
+        it('18 à 65 ans, 17 septembre', async function () {
+            const questionnaire = new Questionnaire(
+                this.test.page,
+                'pass-sanitaire-qr-code-voyages.html',
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+            )
+            await questionnaire.cEstParti()
+            await questionnaire.remplirAge('moins65')
+            await questionnaire.remplirVaccinationInitiale('autre')
+            await questionnaire.remplirDateDerniereDose('2021-09-17')
+
+            const statut = await questionnaire.recuperationStatut('rappel-et-pass')
+            assert.include(statut, 'Vous avez entre 18 et 64 ans')
+            assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
+            assert.include(
+                statut,
+                'Votre dernière injection date du 17 septembre 2021.'
+            )
+            assert.include(
+                statut,
+                'Vous pourrez recevoir votre dose de rappel à partir du 18 décembre 2021.'
+            )
+            assert.include(
+                statut,
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 19 avril 2022.'
             )
         })
     })
@@ -351,8 +378,9 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'Votre dernière injection date du 17 mai 2021.')
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 16 septembre 2021.'
-            )
+                'Vous pourrez recevoir votre dose de rappel à partir du 1 septembre 2021.'
+            ) // début de la campagne de rappel
+
             assert.include(
                 statut,
                 'Vous ne serez pas concerné(e) par la désactivation du pass sanitaire, qui restera valable au delà du 15 décembre 2021.'
@@ -376,7 +404,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'Votre dernière injection date du 17 juin 2021.')
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 17 octobre 2021.'
+                'Vous pourrez recevoir votre dose de rappel à partir du 17 septembre 2021.'
             )
             assert.include(
                 statut,
@@ -401,7 +429,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             assert.include(statut, 'Votre dernière injection date du 17 juin 2021.')
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 17 octobre 2021.'
+                'Vous pourrez recevoir votre dose de rappel à partir du 17 septembre 2021.'
             )
             assert.include(
                 statut,
