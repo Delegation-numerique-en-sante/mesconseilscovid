@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022-01-01
+
+* le masque obligatoire dans certains lieux publics passe de 11 à 6 ans
+
 ## 2021-12-28
 
 * passe le délai d’éligibilité au rappel vaccinal à 3 mois
