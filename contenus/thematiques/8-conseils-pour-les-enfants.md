@@ -86,7 +86,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * Si le test est **positif** :
         - votre enfant a contracté la Covid et il est **contagieux** ;
-        - il doit rester en isolement au moins **10 jours** à partir de la date du test ;
+        - il doit rester en isolement au moins **7 jours** à partir de la date du test ;
         - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
         - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
             * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
@@ -133,7 +133,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * Si le test est **positif** :
         - votre enfant a contracté la Covid et il est **contagieux** ;
-        - il doit rester en isolement au moins **10 jours** à partir de la date du test ;
+        - il doit rester en isolement au moins **7 jours** à partir de la date du test ;
         - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
         - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
             * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
