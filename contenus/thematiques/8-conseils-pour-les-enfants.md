@@ -80,7 +80,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
     * Si le test est **négatif** :
-        * il devra faire un **test de contrôle** ;
+        * il devra faire deux **autotests de contrôle** ;
         * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
         * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
 
@@ -92,12 +92,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
             * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
             * faire un **test antigénique** dès que possible.
 
-    #### 3. Test de contrôle
+    #### 3. Autotests de contrôle
 
-    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) :
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire deux **autotest de contrôle** :
 
-    - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
-    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle.
+    - **48 heures après son dernier contact** avec la personne malade, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
+    - **96 heures après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e).
 
     <div class="voir-aussi">
 
@@ -121,7 +121,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 1. Isolement
 
-    Si votre enfant est « **cas contact** », qu’il n’est **pas vacciné** et qu’il n’a pas déjà eu la Covid dans les 2 derniers mois, alors il devra rester **isolé** pendant **7 jours**. Il ne devra **pas aller à l’école** et suivra ses apprentissages à distance.
+    #TODO: faire un questionnaire dédié…
+
+    Si votre enfant de moins de 12 ans est « **cas contact** » et qu’il n’est **pas vacciné**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école.
+
+    Si votre enfant de plus de 12 ans est « **cas contact** », qu’il n’est **pas vacciné** et qu’il n’a pas déjà eu la Covid dans les 2 derniers mois, alors il devra rester **isolé** pendant **7 jours**. Il ne devra **pas aller à l’école** et suivra ses apprentissages à distance.
+
 
     #### 2. Test de dépistage
 
