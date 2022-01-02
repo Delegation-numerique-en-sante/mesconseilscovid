@@ -117,7 +117,7 @@ Même si vous ne présentez pas de symptômes, il faut vous **faire tester** dè
 
 Le test est **toujours gratuit** quand vous êtes cas contact.
 
-* Si le test est **positif** : isolez-vous pendant au moins **10 jours**. Vous pourrez lever l’isolement dès le 10<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48 h.
+* Si le test est **positif** : isolez-vous pendant au moins **7 jours**. Vous pourrez lever l’isolement dès le 7<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48 h.
 * Si le test est **négatif**, il ne faut pas vous isoler mais restez prudent(e) :
     * portez le masque à l’intérieur et à l’extérieur, même dans les lieux qui ne l’exigeraient pas ;
     * évitez de rencontrer des personnes vulnérables ou fragiles ;
@@ -138,7 +138,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 Si le résultat de ce test de contrôle est :
 
 * **négatif** : vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale ;
-* **positif** : il faut vous isoler au moins 10 jours à partir de la date du test, et surveiller l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
+* **positif** : il faut vous isoler au moins 7 jours à partir de la date du test, et surveiller l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
 
 <div class="conseil conseil-jaune">
 
