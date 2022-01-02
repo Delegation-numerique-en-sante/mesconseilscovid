@@ -57,12 +57,14 @@ Le test est toujours **gratuit** quand vous êtes cas contact.
 
 * Si le test est **négatif** :
 
+    * vous devrez faire **deux autotests** de contrôle :
+        - **2 jours** après et **4 jours** après le dernier contact avec la personne positive,
+        - ces autotests vous seront délivrés **gratuitement** en pharmacie ;
     * comme vous êtes complètement vacciné(e), on considère que vous avez un **risque modéré**, et qu’il n’est **pas nécessaire de vous isoler** ;
-    * vous devrez quand même faire un **test de contrôle** après 7 jours (voir ci-dessous) ;
-    * et comme la vaccination ne protège jamais à 100%, en attendant, **restez prudent(e)** :
-        * limitez vos interactions sociales,
+    * mais comme la vaccination ne protège jamais à 100%, en attendant, **appliquez strictement les mesures barrières** :
         * portez le masque à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas,
-        * évitez de rencontrer des personnes vulnérables ou fragiles ;
+        * limitez vos interactions sociales, en particulier avec des personnes vulnérables ou fragiles,
+        * ayez recours au télétravail lorsque c’est possible ;
     * en cas de **fièvre** ou de **symptômes** avant la date prévue de votre test de contrôle :
         * faites-vous tester dès que possible, et restez isolé(e) en attendant le résultat,
         * contactez un médecin ou le 15 en cas de difficultés respiratoires.
