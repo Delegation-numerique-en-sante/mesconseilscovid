@@ -21,9 +21,7 @@
 
 <div class="conseil conseil-jaune">
 
-- Si vous avez **déjà eu la Covid** il y a **moins de 2 mois**, alors vous n’êtes **pas considéré** comme cas contact.
-
-- Si vous êtes cas contact d’une personne touchée par le nouveau **variant Omicron**, vous devez suivre les mêmes recommandations que les personnes **non vaccinées** ([voir ci-dessous](#schema-vaccinal-incomplet)).
+Si vous avez **déjà eu la Covid** il y a **moins de 2 mois**, alors vous n’êtes **pas considéré** comme cas contact.
 
 </div>
 
@@ -40,8 +38,7 @@
 
 * vous avez reçu **toutes les doses** nécessaires (1 ou 2 doses) ;
 * **et** vous avez reçu la dernière dose prévue depuis **plus de 7 jours** (*Pfizer*, *Moderna*, *AstraZeneca*) ou plus de 28 jours (*Janssen*) ;
-* **et** vous ne souffrez pas d’immunodépression ;
-* **et** vous n’êtes pas cas contact d’une personne contaminée par le nouveau **variant Omicron**.
+* **et** vous ne souffrez pas d’immunodépression.
 </div>
 
 <div class="lire-la-suite"><button class="button">Lire la suite</button></div>
@@ -55,12 +52,6 @@
 Faites un **test antigénique** en pharmacie **dès que possible** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
 Le test est toujours **gratuit** quand vous êtes cas contact.
-
-</div>
-
-<div class="conseil conseil-jaune">
-
-Si vous êtes cas contact d’une personne touchée par le nouveau **variant Omicron**, il faut **vous isoler** au moins **7 jours**, **même si** vous êtes **vacciné(e)** et que votre test est **négatif**.
 
 </div>
 
@@ -128,8 +119,7 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 
 * vous n’avez **pas encore** reçu les doses nécessaires (1 ou 2 doses) ;
 * **ou** vous avez reçu votre dernière dose depuis **moins de 7 jours** (*Pfizer, Moderna, AstraZeneca*) ou moins de 28 jours (*Janssen*) ;
-* **ou** vous souffrez d’une **forte immunodépression** qui réduit l’efficacité du vaccin ;
-* **ou** vous êtes cas contact d’une personne touchée par le nouveau **variant Omicron**.
+* **ou** vous souffrez d’une **forte immunodépression** qui réduit l’efficacité du vaccin.
 
 </div>
 

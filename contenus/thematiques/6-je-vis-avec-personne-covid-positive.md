@@ -9,11 +9,6 @@
 .. toc:: Sommaire
     :depth: 3
 
-<div class="conseil conseil-jaune">
-
-Si vous vivez avec une personne positive au nouveau **variant Omicron**, il faut **vous isoler** et suivre les mêmes recommandations que les personnes **non vaccinées** ([voir ci-dessous](#personne-positive-schema-vaccinal-incomplet)), même si vous êtes vacciné(e).
-
-</div>
 
 ## Vous vivez avec une personne positive à la Covid et…
 
@@ -29,8 +24,7 @@ Si vous vivez avec une personne positive au nouveau **variant Omicron**, il faut
 
 * vous n’avez **pas encore** reçu les doses nécessaires (1 ou 2 doses) ;
 * **ou** vous avez reçu votre dernière dose depuis **moins de 7 jours** (*Pfizer, Moderna, AstraZeneca*) ou moins de 28 jours (*Janssen*) ;
-* **ou** vous souffrez d’une **forte immunodépression** qui réduit l’efficacité du vaccin ;
-* **ou** vous vivez avec une personne positive au nouveau **variant Omicron**.
+* **ou** vous souffrez d’une **forte immunodépression** qui réduit l’efficacité du vaccin.
 
 </div>
 
@@ -92,8 +86,7 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 
 * vous avez reçu **toutes les doses** nécessaires (1 ou 2 doses) ;
 * **et** vous avez reçu la dernière dose prévue depuis **plus de 7 jours** (*Pfizer*, *Moderna*, *AstraZeneca*) ou plus de 28 jours (*Janssen*) ;
-* **et** vous ne souffrez pas d’immunodépression ;
-* **et** vous ne vivez **pas** avec une personne positive au nouveau **variant Omicron**.
+* **et** vous ne souffrez pas d’immunodépression.
 
 </div>
 
@@ -104,12 +97,6 @@ Voici un schéma illustrant la conduite à tenir dans votre situation :
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
 #### 1. Faites un test
-
-<div class="conseil conseil-jaune">
-
-Attention, si vous vivez avec une personne positive au nouveau **variant Omicron**, suivez les mêmes recommandations que les personnes **non vaccinées** ([voir ci-dessus](#personne-positive-schema-vaccinal-incomplet)).
-
-</div>
 
 <div class="conseil">
 
