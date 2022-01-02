@@ -1,3 +1,3 @@
 **Isolez-vous pendant 7 jours** après le résultat de votre test positif. Au bout de cette période, si vous n’avez plus de fièvre ni de gêne respiratoire pendant plus de 48 heures, vous pourrez sortir de votre isolement.
 
-Si vous respectez ces indications, il n’est **pas nécessaire de réaliser un test pour sortir d’isolement** : le résultat pourrait être positif alors que vous n’êtes plus contagieux.
+À partir du 5<sup>e</sup> jour, vous pourrez sortir d’isolement suite à un résultat de test antigénique ou PCR négatif (en l’absence de fièvre ou de symptômes depuis 48h).
