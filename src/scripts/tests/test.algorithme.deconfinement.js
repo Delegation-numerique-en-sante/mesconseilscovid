@@ -28,6 +28,22 @@ describe('Algorithme déconfinement', function () {
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.isTrue(algoDeconfinement.isQuarantaineDone())
         })
+
+        it('Faux s’il y a 6 jours et vacciné', function () {
+            var profil = new Profil('mes_infos')
+            profil.symptomes_start_date = joursAvant(6)
+            profil.vaccins = 'completement'
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+            assert.isFalse(algoDeconfinement.isQuarantaineDone())
+        })
+
+        it('Vrai s’il y a 7 jours et vacciné', function () {
+            var profil = new Profil('mes_infos')
+            profil.symptomes_start_date = joursAvant(7)
+            profil.vaccins = 'completement'
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+            assert.isTrue(algoDeconfinement.isQuarantaineDone())
+        })
     })
 
     describe('Régularité', function () {
@@ -502,6 +518,171 @@ describe('Algorithme déconfinement', function () {
                 ],
             })
             profil.symptomes_start_date = joursAvant(10)
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+            assert.isFalse(algoDeconfinement.isDeconfinable())
+        })
+    })
+
+    describe('Déconfinable pour vaccinés', function () {
+        it('Vrai s’il y a 7 jours et plus de fièvre ni essoufflement', function () {
+            var profil = new Profil('mes_infos', {
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(1).toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(3).toJSON(),
+                        symptomes: true,
+                        fievre: 'oui',
+                        essoufflement: 'critique',
+                    },
+                ],
+            })
+            profil.symptomes_start_date = joursAvant(7)
+            profil.vaccins = 'completement'
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+            assert.isTrue(algoDeconfinement.isDeconfinable())
+        })
+
+        it('Vrai s’il y a 7 jours et plus de symptômes', function () {
+            var profil = new Profil('mes_infos', {
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: false,
+                    },
+                    {
+                        date: joursAvant(1).toJSON(),
+                        symptomes: false,
+                    },
+                    {
+                        date: joursAvant(3).toJSON(),
+                        symptomes: true,
+                        fievre: 'oui',
+                        essoufflement: 'critique',
+                    },
+                ],
+            })
+            profil.symptomes_start_date = joursAvant(7)
+            profil.vaccins = 'completement'
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+            assert.isTrue(algoDeconfinement.isDeconfinable())
+        })
+
+        it('Faux s’il y a 7 jours et plus de fièvre ni essoufflement mais sans régularité', function () {
+            var profil = new Profil('mes_infos', {
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(3).toJSON(),
+                        symptomes: true,
+                        fievre: 'oui',
+                        essoufflement: 'critique',
+                    },
+                ],
+            })
+            profil.symptomes_start_date = joursAvant(7)
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+            assert.isFalse(algoDeconfinement.isDeconfinable())
+        })
+
+        it('Faux s’il y a 6 jours et plus de fièvre ni essoufflement', function () {
+            var profil = new Profil('mes_infos', {
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(1).toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(3).toJSON(),
+                        symptomes: true,
+                        fievre: 'oui',
+                        essoufflement: 'critique',
+                    },
+                ],
+            })
+            profil.symptomes_start_date = joursAvant(6)
+            profil.vaccins = 'completement'
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+            assert.isFalse(algoDeconfinement.isDeconfinable())
+        })
+
+        it('Faux s’il y a 7 jours et fièvre récente mais pas essoufflement', function () {
+            var profil = new Profil('mes_infos', {
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        fievre: 'oui',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(1).toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(3).toJSON(),
+                        symptomes: true,
+                        fievre: 'oui',
+                        essoufflement: 'critique',
+                    },
+                ],
+            })
+            profil.symptomes_start_date = joursAvant(7)
+            profil.vaccins = 'completement'
+            const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+            assert.isFalse(algoDeconfinement.isDeconfinable())
+        })
+
+        it('Faux s’il y a 7 jours et plus de fièvre mais essoufflement', function () {
+            var profil = new Profil('mes_infos', {
+                suivi: [
+                    {
+                        date: new Date().toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'critique',
+                    },
+                    {
+                        date: joursAvant(1).toJSON(),
+                        symptomes: true,
+                        fievre: 'non',
+                        essoufflement: 'mieux',
+                    },
+                    {
+                        date: joursAvant(3).toJSON(),
+                        symptomes: true,
+                        fievre: 'oui',
+                        essoufflement: 'critique',
+                    },
+                ],
+            })
+            profil.symptomes_start_date = joursAvant(7)
+            profil.vaccins = 'completement'
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.isFalse(algoDeconfinement.isDeconfinable())
         })

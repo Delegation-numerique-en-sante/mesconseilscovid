@@ -6,7 +6,10 @@ export default class AlgorithmeDeconfinement {
     }
 
     isQuarantaineDone() {
-        return differenceEnJours(this.profil.symptomes_start_date, new Date()) >= 10
+        return (
+            differenceEnJours(this.profil.symptomes_start_date, new Date()) >=
+            this.profil.dureeIsolement()
+        )
     }
 
     isSuiviRegulier() {

@@ -694,6 +694,14 @@ export default class Profil {
         })
     }
 
+    isCompletementVaccine() {
+        return this.vaccins === 'completement'
+    }
+
+    dureeIsolement() {
+        return this.isCompletementVaccine() ? 7 : 10
+    }
+
     requiertSuivi() {
         return (
             this.isDepistageComplete() &&

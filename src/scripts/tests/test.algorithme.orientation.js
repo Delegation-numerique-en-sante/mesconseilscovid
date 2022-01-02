@@ -70,29 +70,14 @@ describe('Frise chronologique sur l’isolement', function () {
             ])
         })
 
-        it('La frise n°1 s’affiche avec symptômes passés et dépistage positif', function () {
-            const profil = new Profil('mes_infos', {
-                symptomes_passes: true,
-                depistage: true,
-                depistage_resultat: 'positif',
-                _depistage_start_date: new Date().toJSON(),
-            })
-            const algoOrientation = new AlgorithmeOrientation(profil)
-            assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
-                'conseils-timeline-isolement-positif-avec-symptomes',
-            ])
-        })
-    })
-
-    describe('Frise dynamique n°1 : positif (variante SA ou BR) avec symptômes', function () {
-        it('La frise n°1 s’affiche avec symptômes actuels et dépistage positif', function () {
+        it('La frise n°1 s’affiche avec symptômes actuels, dépistage positif et vaccination', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_actuels: true,
                 symptomes_actuels_douleurs: true,
                 depistage: true,
                 depistage_resultat: 'positif',
-                depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
                 _depistage_start_date: new Date().toJSON(),
+                vaccins: 'completement',
             })
             const algoOrientation = new AlgorithmeOrientation(profil)
             assert.deepEqual(algoOrientation.timelineBlockNamesToDisplay(), [
@@ -100,12 +85,11 @@ describe('Frise chronologique sur l’isolement', function () {
             ])
         })
 
-        it('La frise n°1 s’affiche avec symptômes passés et dépistage positif (variante SA ou BR)', function () {
+        it('La frise n°1 s’affiche avec symptômes passés et dépistage positif', function () {
             const profil = new Profil('mes_infos', {
                 symptomes_passes: true,
                 depistage: true,
                 depistage_resultat: 'positif',
-                depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
                 _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil)
@@ -178,7 +162,6 @@ describe('Frise chronologique sur l’isolement', function () {
                 contact_a_risque_contact_direct: true,
                 depistage: true,
                 depistage_resultat: 'positif',
-                depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
                 _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil)
@@ -193,7 +176,6 @@ describe('Frise chronologique sur l’isolement', function () {
                 contact_a_risque_meme_lieu_de_vie: true,
                 depistage: true,
                 depistage_resultat: 'positif',
-                depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
                 _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil)
@@ -208,7 +190,6 @@ describe('Frise chronologique sur l’isolement', function () {
                 contact_a_risque_autre: true,
                 depistage: true,
                 depistage_resultat: 'positif',
-                depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
                 _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil)
@@ -221,7 +202,6 @@ describe('Frise chronologique sur l’isolement', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
                 depistage_resultat: 'positif',
-                depistage_variante: '20H/501Y.V2_ou_20J/501Y.V3',
                 _depistage_start_date: new Date().toJSON(),
             })
             const algoOrientation = new AlgorithmeOrientation(profil)
@@ -297,6 +277,22 @@ describe('Blocs d’informations additionnels', function () {
             ])
         })
 
+        it('Le bloc isolement vacciné s’affiche avec dépistage positif et vaccination', function () {
+            const profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_type: 'rt-pcr',
+                depistage_resultat: 'positif',
+                _depistage_start_date: new Date().toJSON(),
+                vaccins: 'completement',
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
+                'conseils-isolement',
+                'conseils-isolement-depistage-positif-vaccine',
+                'conseils-isolement-personne-seule',
+            ])
+        })
+
         it('Le bloc isolement s’affiche avec dépistage négatif et contact à risque', function () {
             const profil = new Profil('mes_infos', {
                 depistage: true,
@@ -326,6 +322,23 @@ describe('Blocs d’informations additionnels', function () {
             assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
                 'conseils-isolement',
                 'conseils-isolement-symptomes',
+                'conseils-isolement-personne-seule',
+            ])
+        })
+
+        it('Le bloc isolement vacciné s’affiche avec dépistage en attente et symptômes et vaccination', function () {
+            const profil = new Profil('mes_infos', {
+                depistage: true,
+                depistage_type: 'rt-pcr',
+                depistage_resultat: 'en_attente',
+                _depistage_start_date: new Date().toJSON(),
+                symptomes_passes: true,
+                vaccins: 'completement',
+            })
+            const algoOrientation = new AlgorithmeOrientation(profil)
+            assert.deepEqual(algoOrientation.isolementBlockNamesToDisplay(), [
+                'conseils-isolement',
+                'conseils-isolement-symptomes-vaccine',
                 'conseils-isolement-personne-seule',
             ])
         })
