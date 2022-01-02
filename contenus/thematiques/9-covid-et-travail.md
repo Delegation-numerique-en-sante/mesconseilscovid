@@ -52,7 +52,7 @@
 
     **Non**, vous ne devez pas aller au travail.
 
-    Même si la vaccination diminue votre contagiosité, il faut **vous isoler au moins 10 jours** depuis la date de votre test de dépistage positif (ou de début de vos symptômes) pour ne pas risquer de transmettre le virus à vos collègues.
+    Même si la vaccination diminue votre contagiosité, il faut **vous isoler au moins 7 jours** depuis la date de votre test de dépistage positif (ou de début de vos symptômes) pour ne pas risquer de transmettre le virus à vos collègues.
 
     Si vous ne pouvez pas télétravailler, l’**Assurance Maladie** vous contactera et vous fournira un **arrêt de travail** sans délai de carence.
 
