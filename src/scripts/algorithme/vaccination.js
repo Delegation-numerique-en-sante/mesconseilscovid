@@ -38,7 +38,7 @@ export default class AlgorithmeVaccination {
     }
 
     isCompletementVaccine() {
-        return this.profil.vaccins === 'completement'
+        return this.profil.isCompletementVaccine()
     }
 
     isVaccinationPossible() {

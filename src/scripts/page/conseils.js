@@ -245,7 +245,7 @@ function dynamicTimelineDataInjection(element, profil) {
         element.querySelector('.duree-isolement').innerText = dureeIsolement
     }
 
-    const dureeIsolement = 10
+    const dureeIsolement = profil.dureeIsolement()
 
     // Frises d’isolement pour les personnes testées positives
     if (profil.depistagePositifRecent()) {

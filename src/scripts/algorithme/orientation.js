@@ -94,8 +94,7 @@ export default class AlgorithmeOrientation {
         } else if (this.profil.symptomes_passes) {
             symptomes = 'symptomes_passes'
         } else if (this.profil.hasContactARisqueReconnus()) {
-            const algoVaccination = new AlgorithmeVaccination(this.profil, this)
-            const completementVaccine = algoVaccination.isCompletementVaccine()
+            const completementVaccine = this.profil.isCompletementVaccine()
             if (this.profil.contact_a_risque_meme_lieu_de_vie) {
                 if (completementVaccine) {
                     symptomes = 'contact_a_risque_meme_lieu_de_vie_vaccine'
@@ -450,11 +449,19 @@ export default class AlgorithmeOrientation {
         ) {
             blockNames.push('conseils-isolement')
             if (this.profil.depistagePositifRecent()) {
-                blockNames.push('conseils-isolement-depistage-positif')
+                if (this.profil.isCompletementVaccine()) {
+                    blockNames.push('conseils-isolement-depistage-positif-vaccine')
+                } else {
+                    blockNames.push('conseils-isolement-depistage-positif')
+                }
             } else if (this.profil.hasContactARisqueReconnus()) {
                 blockNames.push('conseils-isolement-contact-a-risque')
             } else if (this.risqueDInfection) {
-                blockNames.push('conseils-isolement-symptomes')
+                if (this.profil.isCompletementVaccine()) {
+                    blockNames.push('conseils-isolement-symptomes-vaccine')
+                } else {
+                    blockNames.push('conseils-isolement-symptomes')
+                }
             }
             if (this.profil.foyer_autres_personnes) {
                 blockNames.push('conseils-isolement-autres-personnes')
