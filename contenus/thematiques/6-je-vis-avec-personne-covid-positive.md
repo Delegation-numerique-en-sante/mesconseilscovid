@@ -115,22 +115,21 @@ Le test est **toujours gratuit** quand vous êtes cas contact.
 
 Si vous devez **garder votre enfant** positif à la Covid mais que vous ne pouvez pas télétravailler, vous pouvez bénéficier du **chômage partiel**. Pour plus d’information sur la démarche, consultez notre [page dédiée aux conseils pour les mineurs](/conseils-pour-les-enfants.html#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid).
 
-#### 2. Faites un test de contrôle
+#### 2. Faites deux autotests de contrôle
 
 <div class="conseil">
 
-Si votre premier test était **négatif**, vous devez faire un test de contrôle (PCR ou antigénique, **gratuit** également) **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes).
+Si votre premier test était **négatif**, vous devez faire deux autotests de contrôle (délivrés **gratuitement** en pharmacie) **2 jours** après et **4 jours** après la guérison de la personne malade (soit 9 et 11 jours après son test positif ou le début de ses symptômes si elle est complètement vaccinée, ou 12 et 14 jours si elle n’est pas complètement vaccinée).
 
 </div>
 
-Si le résultat de ce test de contrôle est :
+Si les résultats de ces deux autotests sont **négatifs** : vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale.
 
-* **négatif** : vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale ;
-* **positif** : il faut vous isoler au moins 7 jours à partir de la date du test, et surveiller l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
+Si le résultat d’un de ces tests est **positif** : il faut vous isoler au moins 7 jours à partir de la date du test, et surveiller l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
 
 <div class="conseil conseil-jaune">
 
-Attention, si vous ressentez des **symptômes** avant la date prévue de votre test de contrôle (17<sup>e</sup> jour), il faut vous faire tester dès que possible et vous isoler en attendant le résultat.
+Attention, si vous ressentez des **symptômes** avant la date prévue d’un autotest de contrôle, il faut vous faire tester dès que possible et vous isoler en attendant le résultat.
 
 </div>
 
