@@ -42,47 +42,55 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Que se passe-t-il si un élève est testé positif dans la classe de mon enfant ?
     :level: 3
 
-    Dans **les écoles maternelles et primaires** :
+    * Pour les élèves de **moins de 12 ans** (quel que soit leur statut vaccinal), lorsqu’**un cas positif** est confirmé dans la classe :
 
-    - lorsqu’**un cas positif** est confirmé dans la classe : les élèves seront invités à réaliser au plus tôt un **test de dépistage** (PCR nasopharyngé, PCR salivaire, ou antigénique nasopharyngé) ; ils pourront poursuivre les enseignements en **présentiel** s’ils peuvent présenter un résultat de **test négatif** ; enfin, ils seront invités à réaliser un **deuxième test** 7 jours après le dernier contact avec le cas confirmé ;
-    - lorsque **trois cas positifs** sont confirmés dans la classe dans une période de 7 jours, alors cette classe sera **fermée** pour une durée de 7 jours.
+      * les élèves seront invités à réaliser au plus tôt un **test de dépistage** gratuit (test PCR nasopharyngé, PCR salivaire, ou antigénique nasopharyngé) ;
+      * si le résultat du test est **négatif**, ils pourront poursuivre les enseignements en **présentiel** ;
+      * ils devront ensuite réaliser **deux autotests** (délivrés gratuitement en pharmacie) 2 jours après et 4 jours après le dernier contact avec le cas confirmé.
 
-    Dans **les collèges et les lycées**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. Les élèves **« cas contact »** devront s’isoler, et donc poursuivre leurs apprentissages **à distance**, pendant une durée de **7 jours**, sauf s’ils sont **vaccinés** ou s’ils ont **déjà eu la Covid** il y a moins de 2 mois (*voir ci-dessous*).
+    * Pour les élèves de **12 ans et plus**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. La conduite à tenir pour les élèves **« cas contact »** dépend alors de leur statut vaccinal :
+
+      * s’ils sont **complètement vaccinés** :
+        - ils seront invités à réaliser au plus tôt un **test de dépistage** gratuit (test PCR nasopharyngé, PCR salivaire, ou antigénique nasopharyngé),
+        - si le résultat du test est **négatif**, ils pourront poursuivre les enseignements en **présentiel**,
+        - ils devront ensuite réaliser **deux autotests** (délivrés gratuitement en pharmacie) 2 jours après et 4 jours après le dernier contact avec le cas confirmé.
+      * s’ils ne sont **pas complètement vaccinés** :
+        - ils devront **s’isoler** pendant **7 jours**, et poursuivre leurs apprentissages **à distance** pendant cette période.
 
     <div class="voir-aussi">
 
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine)
+    - [Que se passe-t-il si mon enfant de moins de 12 ans est cas contact ?](#que-se-passe-t-il-si-mon-enfant-de-moins-de-12-ans-est-cas-contact)
 
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
+    - [Que se passe-t-il si mon enfant de 12 ans ou plus est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-de-12-ans-ou-plus-est-cas-contact-et-qu-il-est-vaccine)
+
+    - [Que se passe-t-il si mon enfant de 12 ans ou plus est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-de-12-ans-ou-plus-est-cas-contact-et-qu-il-n-est-pas-vaccine)
 
     - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
 
     </div>
 
 
-.. question:: Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?
+.. question:: Que se passe-t-il si mon enfant de moins de 12 ans est cas contact ?
     :level: 3
 
     <div class="conseil conseil-jaune">
 
-    * Si votre enfant n’est **pas vacciné**, voir [la question suivante](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine).
-
-    * Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
+    Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
 
     </div>
 
     #### 1. Pas d’isolement
 
-    Si votre enfant est « **cas contact** » et qu’il est **vacciné**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école.
+    Si votre enfant de moins de 12 ans est « **cas contact** », qu’il soit **vacciné ou non**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école à condition de faire un test de dépistage, puis deux autotests de contrôle.
 
     #### 2. Test de dépistage
 
     Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
     * Si le test est **négatif** :
-        * il devra faire deux **autotests de contrôle** ;
+        * il devra faire deux **autotests de contrôle** (voir plus bas) ;
         * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
-        * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
+        * en cas d’apparition de **fièvre** ou de **symptômes**, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
 
     * Si le test est **positif** :
         - votre enfant a contracté la Covid et il est **contagieux** ;
@@ -94,10 +102,10 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 3. Autotests de contrôle
 
-    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire deux **autotest de contrôle** :
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire deux **autotests de contrôle** :
 
-    - **48 heures après son dernier contact** avec la personne malade, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
-    - **96 heures après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e).
+    - **2 jours après** son dernier contact avec la personne malade, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
+    - **4 jours après** son dernier contact avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e).
 
     <div class="voir-aussi">
 
@@ -108,12 +116,60 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?
+.. question:: Que se passe-t-il si mon enfant de 12 ans ou plus est cas contact et qu’il est vacciné ?
     :level: 3
 
     <div class="conseil conseil-jaune">
 
-    * Si votre enfant est **vacciné**, voir [la question précédente](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine).
+    * Si votre enfant de 12 ans ou plus n’est **pas vacciné**, voir [la question suivante](#que-se-passe-t-il-si-mon-enfant-de-12-ans-ou-plus-est-cas-contact-et-qu-il-n-est-pas-vaccine).
+
+    * Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
+
+    </div>
+
+    #### 1. Pas d’isolement
+
+    Si votre enfant de 12 ans ou plus est « **cas contact** » et qu’il est **vacciné**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école.
+
+    #### 2. Test de dépistage
+
+    Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+
+    * Si le test est **négatif** :
+        * il devra faire deux **autotests de contrôle** (voir plus bas) ;
+        * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
+        * en cas d’apparition de **fièvre** ou de **symptômes**, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
+
+    * Si le test est **positif** :
+        - votre enfant a contracté la Covid et il est **contagieux** ;
+        - il doit rester en isolement au moins **7 jours** à partir de la date du test ;
+        - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
+        - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
+            * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
+            * faire un **test antigénique** dès que possible.
+
+    #### 3. Autotests de contrôle
+
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire deux **autotests de contrôle** :
+
+    - **2 jours après** son dernier contact avec la personne malade, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
+    - **4 jours après** son dernier contact avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e).
+
+    <div class="voir-aussi">
+
+    - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
+
+    - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
+
+    </div>
+
+
+.. question:: Que se passe-t-il si mon enfant de 12 ans ou plus est cas contact et qu’il n’est pas vacciné ?
+    :level: 3
+
+    <div class="conseil conseil-jaune">
+
+    * Si votre enfant de 12 ans ou plus est **vacciné**, voir [la question précédente](#que-se-passe-t-il-si-mon-enfant-de-12-ans-ou-plus-est-cas-contact-et-qu-il-est-vaccine).
 
     * Si votre enfant a **déjà eu la Covid** dans les 2 derniers mois, alors il n’aura pas besoin de s’isoler ni de faire un test.
 
@@ -121,11 +177,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 1. Isolement
 
-    #TODO: faire un questionnaire dédié…
-
-    Si votre enfant de moins de 12 ans est « **cas contact** » et qu’il n’est **pas vacciné**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école.
-
-    Si votre enfant de plus de 12 ans est « **cas contact** », qu’il n’est **pas vacciné** et qu’il n’a pas déjà eu la Covid dans les 2 derniers mois, alors il devra rester **isolé** pendant **7 jours**. Il ne devra **pas aller à l’école** et suivra ses apprentissages à distance.
+    Si votre enfant de 12 ans ou plus est « **cas contact** » et qu’il n’est **pas vacciné**, alors il devra rester **isolé** pendant **7 jours**. Il ne devra **pas aller à l’école** et suivra ses apprentissages à distance.
 
 
     #### 2. Test de dépistage
@@ -149,7 +201,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) avant de retourner à l’école :
 
     - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
-    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), s’il est en en contact régulier avec elle.
+    - **7 jours après la guérison de la personne malade**, s’il est en en contact régulier avec elle.
 
     <div class="voir-aussi">
 
@@ -173,9 +225,11 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     - [Dans quels cas mon enfant doit-il rester à la maison ?](#dans-quels-cas-mon-enfant-doit-il-rester-a-la-maison)
 
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine)
+    - [Que se passe-t-il si mon enfant de moins de 12 ans est cas contact ?](#que-se-passe-t-il-si-mon-enfant-de-moins-de-12-ans-est-cas-contact)
 
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
+    - [Que se passe-t-il si mon enfant de 12 ans ou plus est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-de-12-ans-ou-plus-est-cas-contact-et-qu-il-est-vaccine)
+
+    - [Que se passe-t-il si mon enfant de 12 ans ou plus est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-de-12-ans-ou-plus-est-cas-contact-et-qu-il-n-est-pas-vaccine)
 
     </div>
 
@@ -360,10 +414,6 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     Les autres membres du foyer sont considérés comme **cas contact** et doivent s’isoler s’ils ne sont pas vaccinés.
 
     <div class="voir-aussi">
-
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine)
-
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
 
     - [Je vis avec une personne positive, que dois-je faire ?](/je-vis-avec-personne-covid-positive.html)
 
