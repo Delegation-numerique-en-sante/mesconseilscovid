@@ -81,23 +81,26 @@ Le test est toujours **gratuit** quand vous êtes cas contact.
     * après 7 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un test de contrôle ne sera pas nécessaire).
 
 
-#### 2. Faites un test de contrôle
+#### 2. Faites un autotest de contrôle
 
 <div class="conseil">
 
-Si votre premier test était **négatif**, vous devez faire un test de contrôle, qui sera **gratuit** également (test PCR ou antigénique) :
+Si votre premier test était **négatif**, vous devez faire deux autotests de contrôle, qui seront **gratuit** également :
 
-* **7 jours après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e) ;
-* **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple) ;
+* **2 jours** après et **4 jours** après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e) ;
+* **2 jours** après et **4 jours** après la guérison de la personne malade (soit 9 et 11 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple) ;
 * **dès que possible** en cas d’apparition de symptômes évocateurs de la Covid.
 </div>
 
-* Si le **test de contrôle** est **négatif** :
+* Si les 2 **autotests de contrôle** sont **négatifs** :
     * vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale.
 
-* Si le **test de contrôle** est **positif** :
-    * vous avez contracté la Covid, et vous êtes **contagieux** ;
-    * restez en **isolement au moins 7 jours** à partir de la date du test ;
+* Si l'un des **autotests de contrôle** est **positif** :
+    * il est possible que vous ayez contracté la Covid, et que vous soyez **contagieux** ;
+    * faites un test antigénique (en pharmacie) ou PCR (en laboratoire) pour confirmer le résultat positif et restez isolé en attendant le résultat ;
+    
+* Si le résultat positif à l'autotest est **confirmé** :
+    * restez en **isolement au moins 5 jours** à partir de la date du test ;
     * surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
     * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
 
