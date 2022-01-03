@@ -87,7 +87,7 @@
     
     * Le télétravail obligatoire :
        * depuis le 3 janvier 2022 et pendant 3 semaines, les employeurs ont l’**obligation** d'instaurer **3 jours minimum** de **télétravail** par semaine, lorsque le type de poste le permet. Si cela est possible, les entreprises sont encouragées à en instaurer 4.
-Les entreprises qui ne respecteront pas cette règle pourront être sanctionnées par une **amende** administrative (1000 euro par salarié dans la limite de 50 000 euro).
+Les entreprises qui ne respecteront pas cette règle pourront être sanctionnées par une **amende** administrative (1000 euros par salarié dans la limite de 50 000 euros).
     
     * Limiter le brassage de personnes :
         * étaler les horaires d’arrivées et de départs pour **limiter l’affluence** et les croisements ;
