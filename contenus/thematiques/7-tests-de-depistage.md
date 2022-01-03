@@ -132,10 +132,10 @@
 .. question:: Qu’est-ce qu’un autotest ?
     :level: 4
 
-    L'autotest est un prélèvement nasal à réaliser chez soi vendu en pharmacie. Il est pris en charge par l’Assurance maladie uniquement dans les cas suivants : 
-     + personne [cas contact complètement vacciné(e)](/cas-contact-a-risque.html#schema-vaccinal-complet) et âgée de plus de 12 ans, devant confirmer le résultat négatif d'un test PCR ou antigénique à J+2 et J+4 après le contact à risque ;
+    L’autotest est un prélèvement nasal à réaliser chez soi vendu en pharmacie. Il est pris en charge par l’Assurance maladie uniquement dans les cas suivants :
+     + personne [cas contact complètement vaccinée](/cas-contact-a-risque.html#schema-vaccinal-complet) et âgée de plus de 12 ans, devant confirmer le résultat négatif d’un test PCR ou antigénique à J+2 et J+4 après le contact à risque ;
      + professionnel exerçant auprès de personnes vulnérables (âgées, handicapées…) et dans la limite de 10 par mois.
-    
+
     En dehors de ces situations, le prix de vente maximal d’un autotest est de 5,20 €.
 
 </div>
