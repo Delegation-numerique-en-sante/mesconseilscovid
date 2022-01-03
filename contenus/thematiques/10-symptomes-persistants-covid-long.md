@@ -52,7 +52,7 @@
 
     N’hésitez pas à partager avec lui :
     * le [protocole de rééducation olfactive](https://www.has-sante.fr/upload/docs/application/pdf/2021-11/fiche_troubles_du_gout_et_de_l_odorat.pdf) (_voir en page 5_), proposé par la Haute autorité de santé (HAS) ;
-    * l’application gratuite de réeducation olfactive [covidanosmie.fr](https://covidanosmie.fr/), proposée par l’association Anosmie.org.
+    * l’application gratuite de rééducation olfactive [covidanosmie.fr](https://covidanosmie.fr/), proposée par l’association Anosmie.org.
 
 .. question:: Quel est le traitement contre le Covid long ?
 
