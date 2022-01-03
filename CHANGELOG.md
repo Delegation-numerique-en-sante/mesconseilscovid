@@ -7,6 +7,8 @@
   si test négatif et pas de symptômes depuis 48h
 * les personnes cas contact complètement vaccinées font maintenant 2 autotests de contrôle
 * la notion de « complètement vacciné » inclut le rappel selon les règles du pass sanitaire
+* mise à jour du protocole pour les enfants
+* télétravail obligatoire 3 jours par semaine
 
 ## 2022-01-01
 
