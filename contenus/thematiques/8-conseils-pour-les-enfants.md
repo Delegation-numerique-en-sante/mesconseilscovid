@@ -81,28 +81,29 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 1. Pas d’isolement
 
-    Si votre enfant de moins de 12 ans est « **cas contact** », qu’il soit **vacciné ou non**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école à condition de faire un test de dépistage, puis deux autotests de contrôle.
+    Si votre enfant de moins de 12 ans est « **cas contact** », qu’il soit **vacciné ou non**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école à condition de faire un **test de dépistage**, puis **2 autotests de contrôle**.
 
     #### 2. Test de dépistage
 
     Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
     * Si le test est **négatif** :
-        * il devra faire deux **autotests de contrôle** (voir plus bas) ;
+        * il devra faire **2 autotests de contrôle** (voir plus bas) ;
         * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
         * en cas d’apparition de **fièvre** ou de **symptômes**, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
 
     * Si le test est **positif** :
         - votre enfant a contracté la Covid et il est **contagieux** ;
-        - il doit rester en isolement au moins **7 jours** à partir de la date du test ;
-        - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
-        - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
-            * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
-            * faire un **test antigénique** dès que possible.
+        - il doit rester en isolement **7 jours** à partir de la date du test ;
+            - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
+            - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à l'isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
+        - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois).
+    
+    
 
     #### 3. Autotests de contrôle
 
-    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire deux **autotests de contrôle** :
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire 2 **autotests de contrôle** :
 
     - **2 jours après** son dernier contact avec la personne malade, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
     - **4 jours après** son dernier contact avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e).
@@ -142,11 +143,10 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * Si le test est **positif** :
         - votre enfant a contracté la Covid et il est **contagieux** ;
-        - il doit rester en isolement au moins **7 jours** à partir de la date du test ;
-        - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
-        - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
-            * se maintenir en **isolement** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
-            * faire un **test antigénique** dès que possible.
+        - il doit rester en isolement **7 jours** à partir de la date du test ;
+            - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
+            - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à l'isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
+        - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois).
 
     #### 3. Autotests de contrôle
 
