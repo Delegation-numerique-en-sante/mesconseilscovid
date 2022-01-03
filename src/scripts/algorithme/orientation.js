@@ -95,14 +95,15 @@ export default class AlgorithmeOrientation {
             symptomes = 'symptomes_passes'
         } else if (this.profil.hasContactARisqueReconnus()) {
             const completementVaccine = this.profil.isCompletementVaccine()
+            const moinsDe12Ans = this.profil.age < 12
             if (this.profil.contact_a_risque_meme_lieu_de_vie) {
-                if (completementVaccine) {
+                if (completementVaccine || moinsDe12Ans) {
                     symptomes = 'contact_a_risque_meme_lieu_de_vie_vaccine'
                 } else {
                     symptomes = 'contact_a_risque_meme_lieu_de_vie'
                 }
             } else {
-                if (completementVaccine) {
+                if (completementVaccine || moinsDe12Ans) {
                     symptomes = 'contact_a_risque_vaccine'
                 } else if (this.guerisonRecente()) {
                     symptomes = 'contact_pas_vraiment_a_risque'
