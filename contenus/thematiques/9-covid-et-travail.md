@@ -114,7 +114,7 @@ Les entreprises qui ne respecteront pas cette règle pourront être sanctionnée
     Votre employeur doit **limiter** autant que possible **les risques d’exposition** de ses employé(e)s au virus. Par exemple, il doit :
     
    
-    * depuis le 3 janvier 2022 et pour trois semaines, instaurer au minimum **3 jours** de télétavail par semaine, lorsque le type de poste le permet. Si cela est possible, les entreprises sont encouragées à en instaurer 4. Celles qui ne respecteront pas cette règle pourront être sanctionnées par une **amende** administrative (1000 euro par salarié dans la limite de 50 000 euro).
+    * depuis le 3 janvier 2022 et pour trois semaines, instaurer au minimum **3 jours** de télétavail par semaine, lorsque le type de poste le permet. Si cela est possible, les entreprises sont encouragées à en instaurer 4. Celles qui ne respecteront pas cette règle pourront être sanctionnées par une **amende** administrative (1000 euros par salarié dans la limite de 50 000 euros).
 
     * **faire respecter** les mesures recommandées par les autorités sanitaires, comme les **gestes barrières** (port du masque, distanciation physique…) ;
     * encourager les salarié(e)s à s’**isoler** et se faire **tester** lorsqu’ils ont eu un contact à risque ;
