@@ -55,29 +55,29 @@ Le test est toujours **gratuit** quand vous êtes cas contact.
 
 </div>
 
-* Si le test est **négatif** :
+##### Si le test est négatif 👇
 
-    * vous devrez faire **deux autotests** de contrôle (voir plus bas) :
-        - **2 jours** après et **4 jours** après le dernier contact avec la personne positive,
-        - ces autotests vous seront délivrés **gratuitement** en pharmacie ;
-    * comme vous êtes complètement vacciné(e), on considère que vous avez un **risque modéré**, et qu’il n’est **pas nécessaire de vous isoler** ;
-    * mais comme la vaccination ne protège jamais à 100%, en attendant, **appliquez strictement les mesures barrières** :
-        * portez le masque à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas,
-        * limitez vos interactions sociales, en particulier avec des personnes vulnérables ou fragiles,
-        * ayez recours au télétravail lorsque c’est possible ;
-    * en cas d’apparition de **fièvre** ou de **symptômes** :
-        * faites un test antigénique ou PCR dès que possible, et restez isolé(e) en attendant le résultat,
-        * contactez un médecin ou le 15 en cas de difficultés respiratoires.
+* vous devrez faire **deux autotests** de contrôle (voir plus bas) :
+    - **2 jours** après et **4 jours** après le dernier contact avec la personne positive,
+    - ces autotests vous seront délivrés **gratuitement** en pharmacie ;
+* comme vous êtes complètement vacciné(e), on considère que vous avez un **risque modéré**, et qu’il n’est **pas nécessaire de vous isoler** ;
+* mais comme la vaccination ne protège jamais à 100%, en attendant, **appliquez strictement les mesures barrières** :
+    * portez le masque à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas,
+    * limitez vos interactions sociales, en particulier avec des personnes vulnérables ou fragiles,
+    * ayez recours au télétravail lorsque c’est possible ;
+* en cas d’apparition de **fièvre** ou de **symptômes** :
+    * faites un test antigénique ou PCR dès que possible, et restez isolé(e) en attendant le résultat,
+    * contactez un médecin ou le 15 en cas de difficultés respiratoires.
 
-* Si le test est **positif** :
+##### Si le test est positif 👇
 
-    * vous avez contracté la Covid, et vous êtes **contagieux** ;
-    * restez en **isolement au moins 7 jours** à partir de la date du test ;
-        - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
-    - surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
-    * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
-        * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
-        * faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+* vous avez contracté la Covid, et vous êtes **contagieux** ;
+* restez en **isolement au moins 7 jours** à partir de la date du test ;
+    - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
+- surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
+* les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
+    * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
+    * faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
 
 #### 2. Faites deux autotests de contrôle
@@ -91,21 +91,23 @@ Si votre premier test était **négatif**, vous devrez faire **2 autotests de co
 
 </div>
 
-* Si les 2 **autotests** sont **négatifs** :
-    * vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale.
+##### Si les 2 autotests sont négatifs 👇
 
-* Si l’un des **autotests** est **positif** :
+* vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale.
 
-    * faites un **test antigénique** (en pharmacie) ou **PCR** (en laboratoire) pour **confirmer** ce résultat positif et restez isolé en attendant ;
 
-    * si le résultat positif à l’autotest est **confirmé** :
-        - vous avez contracté la Covid, et vous êtes **contagieux** ;
-        - restez en **isolement au moins 7 jours** à partir de la date du test ;
-            + en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
-        + surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
-        - les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
-            - se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
-            - faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+##### Si l’un des autotests est positif 👇
+
+* faites un **test antigénique** (en pharmacie) ou **PCR** (en laboratoire) pour **confirmer** ce résultat positif et restez isolé en attendant ;
+
+* si le résultat positif à l’autotest est **confirmé** :
+    - vous avez contracté la Covid, et vous êtes **contagieux** ;
+    - restez en **isolement au moins 7 jours** à partir de la date du test ;
+        + en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
+    + surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
+    - les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
+        - se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
+        - faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
 
 </details>
@@ -148,25 +150,24 @@ Si vous ne pouvez pas **télétravailler**, vous pouvez [**demander un arrêt de
 
 </div>
 
-* Si le test est **négatif** :
+##### Si le test est négatif 👇
 
-    * vous êtes peut-être en phase d’**incubation** de la maladie ;
-    * restez **en isolement 7 jours**, puis effectuez un **test de contrôle**, gratuit également (voir ci-dessous) ;
-    * en cas de **fièvre** ou de **symptômes** avant la date prévue de votre test de contrôle :
-        * faites-vous tester dès que possible, et restez isolé(e) en attendant le résultat,
-        * contactez un médecin ou le 15 en cas de difficultés respiratoires.
+* vous êtes peut-être en phase d’**incubation** de la maladie ;
+* restez **en isolement 7 jours**, puis effectuez un **test de contrôle**, gratuit également (voir ci-dessous) ;
+* en cas de **fièvre** ou de **symptômes** avant la date prévue de votre test de contrôle :
+    * faites-vous tester dès que possible, et restez isolé(e) en attendant le résultat,
+    * contactez un médecin ou le 15 en cas de difficultés respiratoires.
 
 
+##### Si le test est positif 👇
 
-* Si le test est **positif** :
-
-    * vous avez contracté la Covid, et vous êtes **contagieux** ;
-    * restez en **isolement au moins 10 jours** à partir de la date du test ;
-    * surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
-    * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
-        * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
-        * faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
-    * après 10 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un test de contrôle ne sera pas nécessaire).
+* vous avez contracté la Covid, et vous êtes **contagieux** ;
+* restez en **isolement au moins 10 jours** à partir de la date du test ;
+* surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
+* les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
+    * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
+    * faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
+* après 10 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un test de contrôle ne sera pas nécessaire).
 
 
 #### 2. Faites un test de contrôle
@@ -181,17 +182,19 @@ Si votre premier test était **négatif**, vous devez faire un test de contrôle
 
 </div>
 
-* Si le **test de contrôle** est **négatif** :
-    * vous pouvez lever votre isolement (si le délai de 7 jours est écoulé).
+##### Si le test de contrôle est négatif 👇
 
-* Si le **test de contrôle** est **positif** :
-    * vous avez contracté la Covid, et vous êtes **contagieux** ;
-    * restez en **isolement au moins 10 jours** à partir de la date du test ;
-    * surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
-    * après 10 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un nouveau test de contrôle ne sera pas nécessaire) ;
-    * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
+* vous pouvez lever votre isolement (si le délai de 7 jours est écoulé).
 
-        * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**) ;
-        * faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+##### Si le test de contrôle est positif 👇
+
+* vous avez contracté la Covid, et vous êtes **contagieux** ;
+* restez en **isolement au moins 10 jours** à partir de la date du test ;
+* surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
+* après 10 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un nouveau test de contrôle ne sera pas nécessaire) ;
+* les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
+
+    * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**) ;
+    * faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
 </details>
