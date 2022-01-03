@@ -1,5 +1,13 @@
 # Changelog
 
+## 2022-01-03
+
+* durée d’isolement des personnes positives complètement vaccinées réduite à 7 jours
+* sortie d’isolement anticipée des J+5 (complètement vaccinées) ou J+7 (autres)
+  si test négatif et pas de symptômes depuis 48h
+* les personnes cas contact complètement vaccinées font maintenant 2 autotests de contrôle
+* la notion de « complètement vacciné » inclut le rappel selon les règles du pass sanitaire
+
 ## 2022-01-01
 
 * le masque obligatoire dans certains lieux publics passe de 11 à 6 ans
