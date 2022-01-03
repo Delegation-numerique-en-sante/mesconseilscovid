@@ -44,6 +44,50 @@ describe('Algorithme déconfinement', function () {
             const algoDeconfinement = new AlgorithmeDeconfinement(profil)
             assert.isTrue(algoDeconfinement.isQuarantaineDone())
         })
+
+        describe('Isolement de 7 jours pour les moins de 12 ans vaccinés', function () {
+            it('Après 6 jours : pas encore', function () {
+                var profil = new Profil('mes_infos', {
+                    age: 11,
+                    vaccins: 'completement',
+                })
+                profil.symptomes_start_date = joursAvant(6)
+                const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+                assert.isFalse(algoDeconfinement.isQuarantaineDone())
+            })
+
+            it('Après 7 jours : c’est bon', function () {
+                var profil = new Profil('mes_infos', {
+                    age: 11,
+                    vaccins: 'completement',
+                })
+                profil.symptomes_start_date = joursAvant(7)
+                const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+                assert.isTrue(algoDeconfinement.isQuarantaineDone())
+            })
+        })
+
+        describe('Isolement de 7 jours pour les moins de 12 ans non vaccinés', function () {
+            it('Après 6 jours : pas encore', function () {
+                var profil = new Profil('mes_infos', {
+                    age: 11,
+                    vaccins: 'pas_encore',
+                })
+                profil.symptomes_start_date = joursAvant(6)
+                const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+                assert.isFalse(algoDeconfinement.isQuarantaineDone())
+            })
+
+            it('Après 7 jours : c’est bon', function () {
+                var profil = new Profil('mes_infos', {
+                    age: 11,
+                    vaccins: 'pas_encore',
+                })
+                profil.symptomes_start_date = joursAvant(7)
+                const algoDeconfinement = new AlgorithmeDeconfinement(profil)
+                assert.isTrue(algoDeconfinement.isQuarantaineDone())
+            })
+        })
     })
 
     describe('Régularité', function () {
