@@ -23,7 +23,7 @@
 
     Même quand on est vacciné, **il reste un risque d’attraper la Covid** si on est exposé au virus (même si la maladie sera le plus souvent moins grave), et de le transmettre par la suite (même si votre contagiosité sera elle aussi diminuée).
 
-    Face au variant Delta qui est plus contagieux, le port du masque (comme la distance physique, le lavage des mains, et l’aération des espaces clos) reste donc essentiel **pour vous protéger et pour protéger les autres**, en particulier les personnes les plus fragiles.
+    Face au variant Omicron qui est plus contagieux, le port du masque (comme la distance physique, le lavage des mains, et l’aération des espaces clos) reste donc essentiel **pour vous protéger et pour protéger les autres**, en particulier les personnes les plus fragiles.
 
 
 .. question:: Est-ce que je dois m’isoler si je suis « cas contact »  et vacciné(e) ?
