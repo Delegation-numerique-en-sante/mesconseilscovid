@@ -105,7 +105,8 @@ Même si vous ne présentez pas de symptômes, il faut vous **faire tester** dè
 
 Le test est **toujours gratuit** quand vous êtes cas contact.
 
-* Si le test est **positif** : isolez-vous pendant au moins **7 jours**. Vous pourrez lever l’isolement dès le 7<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48 h.
+* Si le test est **positif** : isolez-vous pendant **7 jours**.
+    * Vous pourrez lever l’isolement dès le 5<sup>e</sup> jour, suite à test de dépistage négatif (antigénique ou PCR) et en l’absence de fièvre ou de difficultés respiratoires depuis 48 heures ;
 * Si le test est **négatif**, il ne faut pas vous isoler mais restez prudent(e) :
     * portez le masque à l’intérieur et à l’extérieur, même dans les lieux qui ne l’exigeraient pas ;
     * évitez de rencontrer des personnes vulnérables ou fragiles ;
@@ -119,13 +120,15 @@ Si vous devez **garder votre enfant** positif à la Covid mais que vous ne pouve
 
 <div class="conseil">
 
-Si votre premier test était **négatif**, vous devez faire deux autotests de contrôle (délivrés **gratuitement** en pharmacie) **2 jours** après et **4 jours** après la guérison de la personne malade (soit 9 et 11 jours après son test positif ou le début de ses symptômes si elle est complètement vaccinée, ou 12 et 14 jours si elle n’est pas complètement vaccinée).
+Si votre premier test était **négatif**, vous devez faire **2 autotests de contrôle** (délivrés **gratuitement** en pharmacie) :
+    * **2 jours** après la guérison de la personne malade ;
+    * **et** **4 jours** après sa guérison.
 
 </div>
 
 Si les résultats de ces deux autotests sont **négatifs** : vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale.
 
-Si le résultat d’un de ces tests est **positif** : il faut vous isoler au moins 7 jours à partir de la date du test, et surveiller l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
+Si le résultat d’un de ces tests est **positif** : il faut vous isoler 7 jours à partir de la date du test, et surveiller l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
 
 <div class="conseil conseil-jaune">
 
