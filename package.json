@@ -11,7 +11,7 @@
     "@babel/register": "^7.16.7",
     "@mermaid-js/mermaid-cli": "^8.13.7",
     "chai": "^4.3.4",
-    "eslint": "^8.5.0",
+    "eslint": "^8.6.0",
     "eslint-plugin-compat": "^4.0.0",
     "jsdom": "^19.0.0",
     "mocha": "^9.1.3",
