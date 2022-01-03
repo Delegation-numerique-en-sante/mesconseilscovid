@@ -57,7 +57,7 @@ Le test est toujours **gratuit** quand vous êtes cas contact.
 
 * Si le test est **négatif** :
 
-    * vous devrez faire **deux autotests** de contrôle :
+    * vous devrez faire **deux autotests** de contrôle (voir plus bas) :
         - **2 jours** après et **4 jours** après le dernier contact avec la personne positive,
         - ces autotests vous seront délivrés **gratuitement** en pharmacie ;
     * comme vous êtes complètement vacciné(e), on considère que vous avez un **risque modéré**, et qu’il n’est **pas nécessaire de vous isoler** ;
@@ -65,48 +65,47 @@ Le test est toujours **gratuit** quand vous êtes cas contact.
         * portez le masque à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas,
         * limitez vos interactions sociales, en particulier avec des personnes vulnérables ou fragiles,
         * ayez recours au télétravail lorsque c’est possible ;
-    * en cas de **fièvre** ou de **symptômes** avant la date prévue de votre test de contrôle :
-        * faites-vous tester dès que possible, et restez isolé(e) en attendant le résultat,
+    * en cas d’apparition de **fièvre** ou de **symptômes** :
+        * faites un test antigénique ou PCR dès que possible, et restez isolé(e) en attendant le résultat,
         * contactez un médecin ou le 15 en cas de difficultés respiratoires.
-
 
 * Si le test est **positif** :
 
     * vous avez contracté la Covid, et vous êtes **contagieux** ;
     * restez en **isolement au moins 7 jours** à partir de la date du test ;
-    * surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
+        - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
+    - surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
     * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
         * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
-        * faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
-    * après 7 jours, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un test de contrôle ne sera pas nécessaire).
+        * faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
 
-#### 2. Faites un autotest de contrôle
+#### 2. Faites deux autotests de contrôle
 
 <div class="conseil">
 
-Si votre premier test était **négatif**, vous devez faire deux autotests de contrôle, qui seront **gratuit** également :
+Si votre premier test était **négatif**, vous devrez faire **2 autotests de contrôle**, qui vous seront délivrés **gratuitement** en pharmacie :
 
-* **2 jours** après et **4 jours** après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e) ;
-* **2 jours** après et **4 jours** après la guérison de la personne malade (soit 9 et 11 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple) ;
-* **dès que possible** en cas d’apparition de symptômes évocateurs de la Covid.
+* le premier : **2 jours** après votre **dernier contact** avec la personne malade (ou après sa guérison si vous habitez avec elle) ;
+* le deuxième : **4 jours** après ce dernier contact.
+
 </div>
 
-* Si les 2 **autotests de contrôle** sont **négatifs** :
+* Si les 2 **autotests** sont **négatifs** :
     * vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale.
 
-* Si l'un des **autotests de contrôle** est **positif** :
-    * il est possible que vous ayez contracté la Covid, et que vous soyez **contagieux** ;
-    * faites un test antigénique (en pharmacie) ou PCR (en laboratoire) pour confirmer le résultat positif et restez isolé en attendant le résultat ;
-    
-* Si le résultat positif à l'autotest est **confirmé** :
-    * restez en **isolement au moins 5 jours** à partir de la date du test ;
-    * surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
-    * les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
+* Si l’un des **autotests** est **positif** :
 
-        * se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
-        * faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ;
-    * **après 7 jours**, et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement (un nouveau test de contrôle ne sera pas nécessaire).
+    * faites un **test antigénique** (en pharmacie) ou **PCR** (en laboratoire) pour **confirmer** ce résultat positif et restez isolé en attendant ;
+
+    * si le résultat positif à l’autotest est **confirmé** :
+        - vous avez contracté la Covid, et vous êtes **contagieux** ;
+        - restez en **isolement au moins 7 jours** à partir de la date du test ;
+            + en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
+        + surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
+        - les **membres de votre foyer** seront considérés comme **cas contact**, et devront :
+            - se maintenir **en isolement** eux aussi s’ils ne sont pas complètement vaccinés (les enfants ne doivent pas aller à l’**école**),
+            - faire un **test antigénique dès que possible**, gratuit pour les cas contact (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
 
 </details>
