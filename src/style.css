@@ -1733,8 +1733,12 @@ a.no-type::after {
 .thematique #conseils-block h4 {
     margin-top: 3rem;
     margin-bottom: 1rem;
-    font-size: 125%;
     border-bottom: none;
+}
+.thematique #conseils-block h5 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 125%;
 }
 .thematique .illustration {
     max-width: 8rem;
