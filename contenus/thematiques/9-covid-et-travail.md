@@ -84,11 +84,11 @@
     L’**employeur** doit proposer des mesures pour **limiter** les risques de **propagation** du virus dans son entreprise, et les **salariés** doivent **agir** à leur niveau, pour se **protéger** et protéger ceux qui les entourent.
 
     Voici quelques exemples de pratiques qui peuvent être mises en place :
-    
+
     * Le télétravail obligatoire :
-       * depuis le 3 janvier 2022 et pendant 3 semaines, les employeurs ont l’**obligation** d’instaurer **3 jours minimum** de **télétravail** par semaine, lorsque le type de poste le permet. Si cela est possible, les entreprises sont encouragées à en instaurer 4.
-Les entreprises qui ne respecteront pas cette règle pourront être sanctionnées par une **amende** administrative (1 000 euros par salarié, dans la limite de 50 000 euros).
-    
+       * depuis le 3 janvier 2022 et pendant 3 semaines, les employeurs ont l’**obligation** d’instaurer **3 jours minimum** de **télétravail** par semaine lorsque le type de poste le permet, voire 4 jours si  possible ;
+       * les entreprises qui ne respecteront pas cette règle pourront être sanctionnées par une **amende** administrative (1 000 euros par salarié, dans la limite de 50 000 euros).
+
     * Limiter le brassage de personnes :
         * étaler les horaires d’arrivées et de départs pour **limiter l’affluence** et les croisements ;
         * limiter le nombre de personnes présentes dans les locaux pour faciliter la **distanciation physique** en instaurant une **jauge** ;
