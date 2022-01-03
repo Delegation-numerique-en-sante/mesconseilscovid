@@ -699,7 +699,7 @@ export default class Profil {
     }
 
     dureeIsolement() {
-        return this.isCompletementVaccine() ? 7 : 10
+        return this.isCompletementVaccine() || this.age < 12 ? 7 : 10
     }
 
     requiertSuivi() {
