@@ -4,7 +4,7 @@
 
 <header>
     <p class="big">Selon une <a href="https://www.pasteur.fr/fr/espace-presse/documents-presse/etude-comcor-lieux-contamination-au-sars-cov-2-ou-francais-s-infectent-ils">étude de l’institut Pasteur</a> sur les lieux de transmission de la Covid, environ <strong>29%</strong> des contaminations hors-foyer ont lieu dans le milieu professionnel.</p>
-    <p class="big">MesConseilsCovid accompagne votre retour au bureau en répondant à vos questions sur <strong>vos droits</strong> (arrêt de travail…) et <strong>vos responsabilités</strong> dans le contexte d’épidémie de Covid, ainsi que sur les bonnes pratiques à mettre en œuvre pour <strong>prévenir</strong> la propagation du virus sur votre <strong>lieu de travail</strong>.</p>
+    <p class="big">MesConseilsCovid répond à vos questions sur <strong>vos droits</strong> (arrêt de travail…) et <strong>vos responsabilités</strong> dans le contexte d’épidémie de Covid, ainsi que sur les bonnes pratiques à mettre en œuvre pour <strong>prévenir</strong> la propagation du virus sur votre <strong>lieu de travail</strong>.</p>
 </header>
 
 .. toc:: Sommaire
@@ -84,11 +84,14 @@
     L’**employeur** doit proposer des mesures pour **limiter** les risques de **propagation** du virus dans son entreprise, et les **salariés** doivent **agir** à leur niveau, pour se **protéger** et protéger ceux qui les entourent.
 
     Voici quelques exemples de pratiques qui peuvent être mises en place :
-
+    
+    * Le télétravail obligatoire :
+       * depuis le 3 janvier 2022 et pendant 3 semaines, les employeurs ont l’**obligation** d'instaurer **3 jours minimum** de **télétravail** par semaine, lorsque le type de poste le permet. Si cela est possible, les entreprises sont encouragées à en instaurer 4.
+Les entreprises qui ne respecteront pas cette règle pourront être sanctionnées par une **amende** administrative (1000 euro par salarié dans la limite de 50 000 euro).
+    
     * Limiter le brassage de personnes :
         * étaler les horaires d’arrivées et de départs pour **limiter l’affluence** et les croisements ;
         * limiter le nombre de personnes présentes dans les locaux pour faciliter la **distanciation physique** en instaurant une **jauge** ;
-        * décider d’un nombre de **jours télétravaillés** par semaine et privilégier les réunions à distance ;
         * attribuer une **place fixe** à chaque employé (suspendre l’*open flex* ou bureau nomade) ;
         * éviter d’aller au **restaurant d’entreprise** aux heures d’affluence et déjeuner **seul(e)** ou avec les membres de **mon équipe** pour éviter de multiplier les contacts.
 
@@ -109,6 +112,9 @@
     :level: 3
 
     Votre employeur doit **limiter** autant que possible **les risques d’exposition** de ses employé(e)s au virus. Par exemple, il doit :
+    
+   
+    * depuis le 3 janvier 2022 et pour trois semaines, instaurer au minimum **3 jours** de télétavail par semaine, lorsque le type de poste le permet. Si cela est possible, les entreprises sont encouragées à en instaurer 4. Celles qui ne respecteront pas cette règle pourront être sanctionnées par une **amende** administrative (1000 euro par salarié dans la limite de 50 000 euro).
 
     * **faire respecter** les mesures recommandées par les autorités sanitaires, comme les **gestes barrières** (port du masque, distanciation physique…) ;
     * encourager les salarié(e)s à s’**isoler** et se faire **tester** lorsqu’ils ont eu un contact à risque ;
@@ -148,13 +154,8 @@
 .. question:: Peut-on organiser des moments de convivialité ?
     :level: 3
 
-    Les moments de convivialité (pot de bienvenue, pot de départ…) sont actuellement déconseillés. S’ils sont néanmoins organisés, veillez à respecter les **gestes barrières**. Il est fortement recommandé de :
-
-    * se réunir **en extérieur** ou dans un lieu ventilé ou aéré ;
-    * porter un **masque** et respecter la **distance physique**, même en extérieur ;
-    * proscrire les embrassades.
-
-
+    Les moments de convivialité (pot de bienvenue, pot de départ…) réunissant les salariés dans un cadre professionnel et en présentiel sont actuellement **suspendus***. 
+    
 ## Arrêt de travail lié à la Covid
 
 .. question:: Comment obtenir un arrêt maladie pour une situation liée à la Covid ?
