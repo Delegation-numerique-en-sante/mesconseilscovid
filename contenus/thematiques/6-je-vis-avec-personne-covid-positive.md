@@ -39,24 +39,34 @@
 
 <div class="conseil">
 
-Même si vous ne présentez **pas de symptômes**, vous avez peut-être été contaminé(e) et il faut **vous isoler immédiatement** pendant **au moins 7 jours**.
+Il faut **vous isoler dès maintenant**, et ce jusqu’au **7<sup>e</sup> jour** suivant la guérison ou la fin d’isolement de la personne positive.
 
 </div>
 
 Si vous ne pouvez pas **télétravailler**, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr/).
-    
-Si des symptômes se déclarent avant le 7<sup>e</sup> jour, faites vous tester (test PCR ou antigénique).
 
-#### 2. Faites un test de dépistage (gratuit) après 7 jours
+
+#### 2. Faites un test 7 jours après la guérison de la personne positive (ou immédiatement en cas de symptômes)
 
 <div class="conseil">
 
-Si des symptômes ne se déclarent pas entre-temps, **faites-vous tester** (test PCR ou antigénique, **gratuit**) **7 jours après** la guérison ou la sortie de l’isolement de la personne positive. 
-NB : les tests de dépistages sont toujours **gratuits** quand vous êtes cas contact.
+- Faites un **test de dépistage gratuit** (test PCR ou antigénique) au **7<sup>e</sup> jour** suivant la guérison ou la fin d’isolement de la personne positive.
 
-* Si ce test est **négatif**, alors vous pouvez lever votre isolement.
-* Si ce test est **positif**, alors **restez isolé(e)**. L'Assurance maladie vous contactera pour vous indiquer la durée de l'isolement et prolonger votre arrêt de travail.
-    
+- Si des **symptômes** se déclarent avant cette date, faites-vous tester sans attendre.
+
+</div>
+
+* Si ce test est **négatif**, et que la période de 7 jours est écoulée, alors vous pourrez mettre fin à votre isolement.
+* Si le test est **positif** :
+    - maintenez votre isolement pendant **10 jours** à partir de la date du test ou du début des symptômes ;
+    - vous pourrez lever l’isolement **dès le 7<sup>e</sup> jour** en cas de test négatif (test PCR ou antigénique) et d’absence de fièvre ou de symptômes depuis au moins 48 h ;
+    - l’Assurance maladie vous contactera pour prolonger votre arrêt de travail.
+
+</details>
+
+
+<details id="personne-positive-schema-vaccinal-complet">
+
 <summary>
 
 .. section:: … vous êtes complètement vacciné(e)
@@ -77,42 +87,45 @@ NB : les tests de dépistages sont toujours **gratuits** quand vous êtes cas co
 
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
-#### 1. Faites un test
+#### 1. Faites un test de dépistage
 
 <div class="conseil">
 
-Même si vous ne présentez pas de symptômes, il faut vous **faire tester** dès que possible, en laboratoire ou dans une pharmacie (test PCR ou antigénique).
+Même si vous ne présentez pas de symptômes, faites un **test de dépistage** (test PCR ou antigénique) dès que possible. Le test est **toujours gratuit** quand vous êtes cas contact.
 
-Le test est **toujours gratuit** quand vous êtes cas contact.
+</div>
 
-* Si le test est **positif** : isolez-vous pendant **7 jours**.
-    * Vous pourrez lever l’isolement dès le 5<sup>e</sup> jour, suite à test de dépistage négatif (antigénique ou PCR) et en l’absence de fièvre ou de difficultés respiratoires depuis 48 heures ;
+* Si le test est **positif** :
+    - isolez-vous pour une durée de **7 jours** ;
+    - vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test négatif (test PCR ou antigénique) et d’absence de fièvre ou de symptômes depuis au moins 48 h.
+
 * Si le test est **négatif**, il ne faut pas vous isoler mais restez prudent(e) :
     * portez le masque à l’intérieur et à l’extérieur, même dans les lieux qui ne l’exigeraient pas ;
     * évitez de rencontrer des personnes vulnérables ou fragiles ;
     * surveillez votre état : température, symptômes…
 
-</div>
-
 Si vous devez **garder votre enfant** positif à la Covid mais que vous ne pouvez pas télétravailler, vous pouvez bénéficier du **chômage partiel**. Pour plus d’information sur la démarche, consultez notre [page dédiée aux conseils pour les mineurs](/conseils-pour-les-enfants.html#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid).
 
-#### 2. Faites deux autotests de contrôle
+#### 2. Faites 2 autotests après la guérison de la personne positive
 
 <div class="conseil">
 
-Si votre premier test était **négatif**, vous devez faire **2 autotests de contrôle** (délivrés **gratuitement** en pharmacie) :
-    * **2 jours** après la guérison de la personne malade ;
-    * **et** **4 jours** après sa guérison.
+Si votre premier test était **négatif**, vous devrez faire **2 autotests de contrôle** (délivrés **gratuitement** en pharmacie) au **2<sup>e</sup> jour** et au **4<sup>e</sup> jour** suivant la guérison ou la fin d’isolement de la personne positive.
 
 </div>
 
-Si les résultats de ces deux autotests sont **négatifs** : vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale.
+* Si les résultats de ces deux autotests sont **négatifs** : vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale.
 
-Si le résultat d’un de ces tests est **positif** : il faut vous isoler 7 jours à partir de la date du test, et surveiller l’apparition de symptômes. Il n’est pas nécessaire de faire un test de contrôle pour sortir de l’isolement.
+* Si le résultat d’un de ces autotests est **positif** :
+    - faites un **test antigénique** (en pharmacie) ou **PCR** (en laboratoire) pour **confirmer** ce résultat positif et restez isolé(e) en attendant ;
+
+    - si le résultat positif à l’autotest est **confirmé** :
+        + maintenez votre isolement pour une durée de **7 jours** ;
+        + vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test négatif et d’absence de fièvre ou de symptômes depuis au moins 48 h.
 
 <div class="conseil conseil-jaune">
 
-Attention, si vous ressentez des **symptômes** avant la date prévue d’un autotest de contrôle, il faut vous faire tester dès que possible et vous isoler en attendant le résultat.
+Attention, si vous ressentez des **symptômes** avant la date prévue d’un autotest de contrôle, faites un test de dépistage gratuit (test PCR ou antigénique) dès que possible, et restez isolé(e) en attendant le résultat.
 
 </div>
 
