@@ -1,1 +1,1 @@
-Il n’est pas nécessaire de vous isoler mais vous devez **faire un test**.
+Faites un **test de dépistage gratuit** (PCR ou antigénique) **dès que possible**, puis **2 autotests de contrôle** à J+2 et J+4.

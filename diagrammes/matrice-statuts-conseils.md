@@ -175,22 +175,13 @@
         </tr>
         <tr>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" height="190" bgcolor="#EEEEEE" align="center"><b>Pas complètement vacciné</b></td>
-            <td style="border: 1px solid black; padding: 1rem;" colspan="3" valign="middle" bgcolor="#FFFFD7" align="center">
-                <a href="../contenus/statuts/statut_contact_a_risque_avec_test.md">
-                    statut_contact_a_risque_avec_test.md
+            <td style="border: 1px solid black; padding: 1rem;" colspan="4" valign="middle" bgcolor="#FFFFD7" align="center">
+                <a href="../contenus/statuts/statut_contact_a_risque_non_vaccine.md">
+                    statut_contact_a_risque_non_vaccine.md
                 </a>
                 <br><br>
-                <a href="../contenus/conseils/conseils_personnels_contact_à_risque_avec_test.md">
-                    conseils_personnels_contact_à_risque_avec_test.md
-                </a>
-            </td>
-            <td style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#FFFFD7" align="center">
-                <a href="../contenus/statuts/statut_contact_a_risque_sans_test.md">
-                    statut_contact_a_risque_sans_test.md
-                </a>
-                <br><br>
-                <a href="../contenus/conseils/conseils_personnels_contact_à_risque_sans_test.md">
-                    conseils_personnels_contact_à_risque_sans_test.md
+                <a href="../contenus/conseils/conseils_personnels_contact_à_risque_non_vaccine.md">
+                    conseils_personnels_contact_à_risque_non_vaccine.md
                 </a>
             </td>
         </tr>
@@ -218,22 +209,13 @@
         </tr>
         <tr>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" height="190" bgcolor="#EEEEEE" align="center"><b>Pas complètement vacciné</b></td>
-            <td style="border: 1px solid black; padding: 1rem;" colspan="3" valign="middle" bgcolor="#FFFFD7" align="center">
+            <td style="border: 1px solid black; padding: 1rem;" colspan="4" valign="middle" bgcolor="#FFFFD7" align="center">
                 <a href="../contenus/statuts/statut_contact_a_risque_meme_lieu_de_vie.md">
                     statut_contact_a_risque_meme_lieu_de_vie.md
                 </a>
                 <br><br>
                 <a href="../contenus/conseils/conseils_personnels_contact_à_risque_meme_lieu_de_vie.md">
                     conseils_personnels_contact_à_risque_meme_lieu_de_vie.md
-                </a>
-            </td>
-            <td style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#FFFFD7" align="center">
-                <a href="../contenus/statuts/statut_contact_a_risque_meme_lieu_de_vie_sans_depistage.md">
-                    statut_contact_a_risque_meme_lieu_de_vie_sans_depistage.md
-                </a>
-                <br><br>
-                <a href="../contenus/conseils/conseils_personnels_contact_à_risque_meme_lieu_de_vie_sans_depistage.md">
-                    conseils_personnels_contact_à_risque_meme_lieu_de_vie_sans_depistage.md
                 </a>
             </td>
         </tr>

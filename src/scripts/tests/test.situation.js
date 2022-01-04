@@ -610,8 +610,8 @@ const matrice = [
             _depistage_start_date: new Date().toJSON(),
         },
         situation: 'negatif_contact_a_risque',
-        statut: 'contact-a-risque-avec-test',
-        conseils: 'contact-a-risque-avec-test',
+        statut: 'contact-a-risque-non-vaccine',
+        conseils: 'contact-a-risque-non-vaccine',
     },
     {
         description:
@@ -834,8 +834,8 @@ const matrice = [
             _depistage_start_date: new Date().toJSON(),
         },
         situation: 'en_attente_contact_a_risque',
-        statut: 'contact-a-risque-avec-test',
-        conseils: 'contact-a-risque-avec-test',
+        statut: 'contact-a-risque-non-vaccine',
+        conseils: 'contact-a-risque-non-vaccine',
     },
     {
         description:
@@ -1002,8 +1002,8 @@ const matrice = [
             depistage: false,
         },
         situation: 'pas_teste_contact_a_risque',
-        statut: 'contact-a-risque-sans-test',
-        conseils: 'contact-a-risque-sans-test',
+        statut: 'contact-a-risque-non-vaccine',
+        conseils: 'contact-a-risque-non-vaccine',
     },
     {
         description: 'Pas testé et contact à risque (pas complètement vacciné)',
@@ -1015,8 +1015,8 @@ const matrice = [
             depistage: false,
         },
         situation: 'pas_teste_contact_a_risque',
-        statut: 'contact-a-risque-sans-test',
-        conseils: 'contact-a-risque-sans-test',
+        statut: 'contact-a-risque-non-vaccine',
+        conseils: 'contact-a-risque-non-vaccine',
     },
     {
         description:
@@ -1057,8 +1057,8 @@ const matrice = [
             depistage: false,
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie',
-        statut: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
+        statut: 'contact-a-risque-meme-lieu-de-vie',
+        conseils: 'contact-a-risque-meme-lieu-de-vie',
     },
     {
         description: 'Pas testé et contact pas vraiment à risque',
@@ -1201,8 +1201,8 @@ const matrice = [
             contact_a_risque_variante: 'aucune',
         },
         situation: 'pas_teste_contact_a_risque',
-        statut: 'contact-a-risque-sans-test',
-        conseils: 'contact-a-risque-sans-test',
+        statut: 'contact-a-risque-non-vaccine',
+        conseils: 'contact-a-risque-non-vaccine',
     },
     {
         description:
@@ -1253,8 +1253,8 @@ const matrice = [
             contact_a_risque_variante: 'aucune',
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie',
-        statut: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
+        statut: 'contact-a-risque-meme-lieu-de-vie',
+        conseils: 'contact-a-risque-meme-lieu-de-vie',
     },
     {
         description: 'Test négatif obsolète et contact pas vraiment à risque',
@@ -1416,8 +1416,8 @@ const matrice = [
             contact_a_risque_variante: 'aucune',
         },
         situation: 'pas_teste_contact_a_risque',
-        statut: 'contact-a-risque-sans-test',
-        conseils: 'contact-a-risque-sans-test',
+        statut: 'contact-a-risque-non-vaccine',
+        conseils: 'contact-a-risque-non-vaccine',
     },
     {
         description:
@@ -1468,8 +1468,8 @@ const matrice = [
             contact_a_risque_variante: 'aucune',
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie',
-        statut: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-sans-depistage',
+        statut: 'contact-a-risque-meme-lieu-de-vie',
+        conseils: 'contact-a-risque-meme-lieu-de-vie',
     },
     {
         description: 'Test positif obsolète et contact pas vraiment à risque',

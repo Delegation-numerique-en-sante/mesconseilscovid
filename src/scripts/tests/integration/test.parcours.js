@@ -338,11 +338,11 @@ describe('Parcours', function () {
         {
             // On retrouve la partie contact à risque.
             let contact_a_risque = await page.waitForSelector(
-                '#page.ready #conseils-personnels-contact-a-risque-sans-test'
+                '#page.ready #conseils-personnels-contact-a-risque-non-vaccine'
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
-                'Si le test est négatif, restez en isolement, et faites un test'
+                '7 jours après la date du dernier contact'
             )
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
         }
@@ -390,11 +390,11 @@ describe('Parcours', function () {
         {
             // On retrouve la partie contact à risque.
             let contact_a_risque = await page.waitForSelector(
-                '#page.ready #conseils-personnels-contact-a-risque-sans-test'
+                '#page.ready #conseils-personnels-contact-a-risque-non-vaccine'
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
-                'Si le test est négatif, restez en isolement, et faites un test'
+                '7 jours après la date du dernier contact'
             )
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
         }
@@ -442,11 +442,11 @@ describe('Parcours', function () {
         {
             // On retrouve la partie contact à risque.
             let contact_a_risque = await page.waitForSelector(
-                '#page.ready #conseils-personnels-contact-a-risque-sans-test'
+                '#page.ready #conseils-personnels-contact-a-risque-non-vaccine'
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
-                'Si le test est négatif, restez en isolement, et faites un test'
+                '7 jours après la date du dernier contact'
             )
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
         }
