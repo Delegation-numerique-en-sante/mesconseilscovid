@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022-01-04
+
+* mise à jour du protocole cas contact d’une personne du foyer
+
 ## 2022-01-03
 
 * durée d’isolement des personnes positives complètement vaccinées réduite à 7 jours
