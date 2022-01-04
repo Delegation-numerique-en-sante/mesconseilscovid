@@ -35,48 +35,28 @@
 
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
-#### 1. Faites un test et isolez-vous
+#### 1. Isolez-vous
 
 <div class="conseil">
 
-Même si vous ne présentez pas de symptômes, il faut vous **faire tester** dès que possible, en laboratoire ou dans une pharmacie (test PCR ou antigénique).
-
-Le test est **toujours gratuit** quand vous êtes cas contact.
-
-* Si le test est **positif** : isolez-vous pendant au moins **10 jours**. Vous pourrez lever l’isolement dès le 10<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48 h.
-* Si le test est **négatif**, vous devez vous isoler au moins 7 jours de plus que la personne positive.
-
+Même si vous ne présentez **pas de symptômes**, vous avez peut-être été contaminé(e) et il faut **vous isoler immédiatement** pendant **au moins 7 jours**.
 
 </div>
 
-Si vous ne pouvez pas télétravailler, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr/).
+Si vous ne pouvez pas **télétravailler**, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr/).
+    
+Si des symptômes se déclarent avant le 7<sup>e</sup> jour, faites vous tester (test PCR ou antigénique).
 
-#### 2. Faites un test de contrôle
+#### 2. Faites un test de dépistage (gratuit) après 7 jours
 
 <div class="conseil">
 
-Si des symptômes ne se déclarent pas entre-temps, **faites-vous tester à nouveau** (test PCR ou antigénique, **gratuit** également) 7 jours après la guérison ou la sortie de l’isolement de la personne positive.
+Si des symptômes ne se déclarent pas entre-temps, **faites-vous tester** (test PCR ou antigénique, **gratuit**) **7 jours après** la guérison ou la sortie de l’isolement de la personne positive. 
+NB : les tests de dépistages sont toujours **gratuits** quand vous êtes cas contact.
 
 * Si ce test est **négatif**, alors vous pouvez lever votre isolement.
-* Si ce test est **positif**, alors restez isolé·e encore 10 jours au moins. Vous pourrez lever l’isolement dès le 10<sup>e</sup> jour, si vous ne ressentez pas de fièvre depuis au moins 48 h.
-
-</div>
-
-Voici un schéma illustrant la conduite à tenir dans votre situation :
-
-<div class="timeline">
-    <div>
-        <a href="/illustrations/isolement-foyer-malade.png">
-            <img src="/illustrations/isolement-foyer-malade.png"
-                 alt="Frise chronologique représentant la période d’isolement">
-        </a>
-    </div>
-</div>
-
-</details>
-
-<details id="personne-positive-schema-vaccinal-complet">
-
+* Si ce test est **positif**, alors **restez isolé(e)**. L'Assurance maladie vous contactera pour vous indiquer la durée de l'isolement et prolonger votre arrêt de travail.
+    
 <summary>
 
 .. section:: … vous êtes complètement vacciné(e)
