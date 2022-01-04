@@ -1,1 +1,1 @@
-Faites un **test antigénique dès que possible**, évitez tout contact avec des **personnes à risque**, puis refaites un test après 7 jours.
+Faites un **test de dépistage** (PCR ou antigénique) **dès que possible**, puis **2 autotests de contrôle** au 2<sup>e</sup> jour et au 4<sup>e</sup> jour après la guérison ou la fin d’isolement de la personne positive.

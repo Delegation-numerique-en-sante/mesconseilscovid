@@ -1,0 +1,1 @@
+Restez en **isolement** pendant **7 jours** après votre dernier contact à risque, puis faites un **test de dépistage gratuit** (PCR ou antigénique).
