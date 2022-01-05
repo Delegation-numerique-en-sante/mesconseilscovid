@@ -1,4 +1,4 @@
-Il n’est pas nécessaire de vous isoler mais vous devez :
+Il n’est **pas nécessaire de vous isoler** mais vous devez :
 
 1. Rester **prudent(e)** :
     * respectez les **mesures barrières** au sein de votre foyer ;
