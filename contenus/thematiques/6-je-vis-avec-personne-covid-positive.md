@@ -46,7 +46,7 @@ Il faut **vous isoler dès maintenant**, et ce jusqu’au **7<sup>e</sup> jour**
 Si vous ne pouvez pas **télétravailler**, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr/).
 
 
-#### 2. Faites un test 7 jours après la guérison de la personne positive (ou immédiatement en cas de symptômes)
+#### 2. Faites un test 7 jours après la guérison ou la fin d’isolement de la personne positive
 
 <div class="conseil">
 
@@ -107,7 +107,7 @@ Même si vous ne présentez pas de symptômes, faites un **test de dépistage** 
 
 Si vous devez **garder votre enfant** positif à la Covid mais que vous ne pouvez pas télétravailler, vous pouvez bénéficier du **chômage partiel**. Pour plus d’information sur la démarche, consultez notre [page dédiée aux conseils pour les mineurs](/conseils-pour-les-enfants.html#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid).
 
-#### 2. Faites 2 autotests après la guérison de la personne positive
+#### 2. Faites 2 autotests après la guérison ou la fin d’isolement de la personne positive
 
 <div class="conseil">
 
