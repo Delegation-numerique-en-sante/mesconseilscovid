@@ -4,7 +4,7 @@ Il n’est pas nécessaire de vous isoler mais vous devez :
     * Si le test est **positif** : isolez-vous pour une durée de **7 jours** ; vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test négatif (test PCR ou antigénique) et d’absence de fièvre ou de symptômes depuis au moins 48 h.
 
     * Si le test est **négatif** :
-        * portez le masque à l’intérieur et à l’extérieur, même dans les lieux qui ne l’exigent plus (restaurant, musées…) ;
+        * portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas ;
         * évitez de rencontrer des personnes vulnérables ou fragiles ;
         * surveillez votre état : température, symptômes…
 
