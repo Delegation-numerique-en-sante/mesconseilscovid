@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022-01-05
+
+* mise à jour des conseils personnalisés en cas de contact à risque
+
 ## 2022-01-04
 
 * mise à jour du protocole cas contact d’une personne du foyer
