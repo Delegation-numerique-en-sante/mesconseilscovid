@@ -223,7 +223,7 @@
 
  <div class="voir-aussi">
 
-- [Je veux des informations sur la vaccination des mineurs](/conseils-pour-les-enfants.html#la-vaccination-contre-la-covid)
+- [Je veux des informations sur la vaccination des enfants et adolescents](/conseils-pour-les-enfants.html#la-vaccination-contre-la-covid)
 
  </div>
 

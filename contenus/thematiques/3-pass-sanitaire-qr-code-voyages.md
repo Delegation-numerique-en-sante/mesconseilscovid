@@ -190,7 +190,7 @@
 
     <div class="voir-aussi">
 
-    - Consultez notre [page de conseils pour les mineurs](/conseils-pour-les-enfants.html) pour plus d’informations sur leur vaccination et sur le protocole sanitaire dans les établissements scolaires.
+    - Consultez notre page de [conseils pour les enfants et adolescents](/conseils-pour-les-enfants.html) pour plus d’informations sur leur vaccination et sur le protocole sanitaire dans les établissements scolaires.
 
     </div>
 
@@ -216,7 +216,7 @@
 
     <div class="voir-aussi">
 
-    - Consultez notre page « [Conseils pour les mineurs : vaccination et scolarité](/conseils-pour-les-enfants.html) ».
+    - Consultez notre page « [Enfants et adolescents : vaccination et scolarité](/conseils-pour-les-enfants.html) ».
 
     - Consultez notre page « [Je souhaite me faire vacciner, que faut-il savoir ?](/je-veux-me-faire-vacciner.html) ».
 

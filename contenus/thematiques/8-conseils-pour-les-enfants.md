@@ -1,4 +1,4 @@
-# Conseils pour les mineurs : vaccination et scolarité
+# Enfants et adolescents : vaccination et scolarité
 
 <img src="illustrations/pediatriegeneral.svg">
 
@@ -256,7 +256,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    - Notre rubrique sur la [vaccination des mineurs de plus de 12 ans](#la-vaccination-contre-la-covid) ci-dessous
+    - Notre rubrique sur la [vaccination des enfants et adolescents](#la-vaccination-contre-la-covid) ci-dessous
 
     - Notre autre page sur le [pass sanitaire](/pass-sanitaire-qr-code-voyages.html)
 

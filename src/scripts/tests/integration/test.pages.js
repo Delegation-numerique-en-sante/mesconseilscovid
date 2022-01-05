@@ -64,7 +64,7 @@ describe('Pages', function () {
 
         assert.equal(
             await page.title(),
-            'Conseils pour les mineurs : vaccination et scolarité — Mes Conseils Covid'
+            'Enfants et adolescents : vaccination et scolarité — Mes Conseils Covid'
         )
     })
 
