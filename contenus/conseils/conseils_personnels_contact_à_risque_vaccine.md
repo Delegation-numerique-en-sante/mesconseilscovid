@@ -18,5 +18,6 @@ Il n’est pas nécessaire de vous isoler mais vous devez :
 1. Les autres **membres de votre foyer** sont « cas contact d’un cas contact », et n’ont pas à s’isoler ou à faire de test. Si le résultat de votre test est positif, ils deviendront **cas contact** à leur tour.
 
 1. Si vous constatez l’apparition de **symptômes** :
+    * Contacter votre médecin et faire un **test de dépistage gratuit** (test PCR ou antigénique) dès que possible.
     * Ne prenez pas d’**anti-inflammatoires** (ibuprofène ou kétoprofène) sans avis médical. Les anti-inflammatoires pourraient **aggraver** l’infection à la Covid. Seul le **paracétamol** est recommandé. En cas de doute, demandez conseil à votre médecin.
     * Suivez l’évolution de vos symptômes avec le [questionnaire de suivi](#suivisymptomes).
