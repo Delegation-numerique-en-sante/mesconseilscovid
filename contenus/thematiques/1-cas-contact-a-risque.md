@@ -67,7 +67,7 @@ Le test est toujours **gratuit** quand vous êtes cas contact.
     - **limitez** vos interactions sociales, et évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal),
     - portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas ;
 * en cas d’apparition de **fièvre** ou de **symptômes** :
-    * faites un test antigénique ou PCR dès que possible, et restez isolé(e) en attendant le résultat,
+    * faites un **test de dépistage gratuit** (test PCR ou antigénique) dès que possible, et restez isolé(e) en attendant le résultat,
     * contactez un médecin ou le 15 en cas de difficultés respiratoires.
 
 ##### Si le test est positif 👇
