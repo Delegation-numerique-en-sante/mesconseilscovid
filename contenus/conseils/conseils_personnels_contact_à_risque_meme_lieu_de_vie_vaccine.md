@@ -3,7 +3,7 @@ Il n’est pas nécessaire de vous isoler mais vous devez :
 1. Faire preuve de **prudence** :
     * respectez les **mesures barrières** au sein de votre foyer ;
     * évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal) ;
-    * portez un **masque** à l’intérieur et à l’extérieur, même dans les lieux qui ne l’exigeraient pas.
+    * portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas.
 
 1. Faire **2 autotests de contrôle** (délivrés **gratuitement** en pharmacie) au **2<sup>e</sup> jour** et au **4<sup>e</sup> jour** suivant la guérison ou la fin d’isolement de la personne positive.
     * Si les résultats de ces deux autotests sont **négatifs** : vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale.

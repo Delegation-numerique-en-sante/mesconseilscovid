@@ -62,7 +62,7 @@ Le test est toujours **gratuit** quand vous êtes cas contact.
     - ces autotests vous seront délivrés **gratuitement** en pharmacie ;
 * comme vous êtes complètement vacciné(e), on considère que vous avez un **risque modéré**, et qu’il n’est **pas nécessaire de vous isoler** ;
 * mais comme la vaccination ne protège jamais à 100%, en attendant, **appliquez strictement les mesures barrières** :
-    * portez le masque à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas,
+    * portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas,
     * limitez vos interactions sociales, en particulier avec des personnes vulnérables ou fragiles,
     * ayez recours au télétravail lorsque c’est possible ;
 * en cas d’apparition de **fièvre** ou de **symptômes** :

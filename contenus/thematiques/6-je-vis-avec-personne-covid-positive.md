@@ -100,7 +100,7 @@ Même si vous ne présentez pas de symptômes, faites un **test de dépistage** 
     - vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test négatif (test PCR ou antigénique) et d’absence de fièvre ou de symptômes depuis au moins 48 h.
 
 * Si le test est **négatif**, il ne faut pas vous isoler mais restez prudent(e) :
-    * portez le masque à l’intérieur et à l’extérieur, même dans les lieux qui ne l’exigeraient pas ;
+    * portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas ;
     * évitez de rencontrer des personnes vulnérables ou fragiles ;
     * surveillez votre état : température, symptômes…
 
