@@ -1,2 +1,2 @@
 <sup>*</sup>
-Statut vaccinal complet, avec ou sans dose de rappel.
+statut vaccinal complet, avec une dose de rappel si nécessaire (selon les règles du pass sanitaire).
