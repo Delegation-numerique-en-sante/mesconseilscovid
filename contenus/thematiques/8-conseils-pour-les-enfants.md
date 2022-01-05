@@ -98,8 +98,6 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
             - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
             - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à l'isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
         - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois).
-    
-    
 
     #### 3. Autotests de contrôle
 

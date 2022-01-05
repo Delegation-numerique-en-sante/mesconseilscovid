@@ -61,10 +61,11 @@ Le test est toujours **gratuit** quand vous êtes cas contact.
     - **2 jours** après et **4 jours** après le dernier contact avec la personne positive,
     - ces autotests vous seront délivrés **gratuitement** en pharmacie ;
 * comme vous êtes complètement vacciné(e), on considère que vous avez un **risque modéré**, et qu’il n’est **pas nécessaire de vous isoler** ;
-* mais comme la vaccination ne protège jamais à 100%, en attendant, **appliquez strictement les mesures barrières** :
-    * portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas,
-    * limitez vos interactions sociales, en particulier avec des personnes vulnérables ou fragiles,
-    * ayez recours au télétravail lorsque c’est possible ;
+* en attendant, restez quand même prudent(e) :
+    - respectez les **mesures barrières** au sein de votre foyer,
+    - ayez recours au **télétravail** lorsque c’est possible,
+    - **limitez** vos interactions sociales, et évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal),
+    - portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas ;
 * en cas d’apparition de **fièvre** ou de **symptômes** :
     * faites un test antigénique ou PCR dès que possible, et restez isolé(e) en attendant le résultat,
     * contactez un médecin ou le 15 en cas de difficultés respiratoires.

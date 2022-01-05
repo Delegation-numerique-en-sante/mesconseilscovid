@@ -2,9 +2,10 @@ Nous vous conseillons de :
 
 1. Faire un **test de dépistage gratuit** (test PCR ou antigénique) **dès que possible** (voir la <a href="https://www.sante.fr/cf/centres-depistage-covid.html">carte des lieux de test</a>).
     * Si le test est **positif** : isolez-vous pour une durée de **7 jours** ; vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test négatif (test PCR ou antigénique) et d’absence de fièvre ou de symptômes depuis au moins 48 h.
-    * Si le test est **négatif**, il ne sera pas nécessaire de vous isoler, mais restez prudent :
+    * Si le test est **négatif**, il ne sera pas nécessaire de vous isoler, mais restez prudent(e) :
         + respectez les **mesures barrières** au sein de votre foyer ;
-        + évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal) ;
+        + ayez recours au **télétravail** lorsque c’est possible ;
+        + **limitez** vos interactions sociales, et évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal) ;
         + portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas.
 
 1. Faire **2 autotests de contrôle** (délivrés **gratuitement** en pharmacie) au **2<sup>e</sup> jour** et au **4<sup>e</sup> jour** suivant la guérison ou la fin d’isolement de la personne positive.
