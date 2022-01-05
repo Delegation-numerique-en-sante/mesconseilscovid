@@ -408,8 +408,15 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Que faire si mon enfant est positif à la Covid ?
     :level: 3
 
-    Si votre enfant a été testé **positif** à la Covid, il doit rester **isolé** au moins **10 jours** à partir de la date du début de ses symptômes, ou du test positif s’il est asymptomatique.
-    Les autres membres du foyer sont considérés comme **cas contact** et doivent s’isoler s’ils ne sont pas vaccinés.
+    Si votre enfant a été testé **positif** à la Covid, il doit rester **isolé**. La durée de l'isolement dépend de son âge et de son statut vaccinal.
+    
+    * votre enfant est vacciné **ou** il a moins de 12 ans :
+        * il doit s'isoler **7 jours** à partir de la date du début de ses symptômes, ou du test positif s’il est asymptomatique. Son isolement peut être réduit à 5 jours, suite à test de dépistage négatif (antigénique ou PCR) et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**  ;
+    
+    * votre enfant a plus de 12 ans et il n'est pas vacciné : 
+        * il doit s'isoler **10 jours** à partir de la date du début de ses symptômes, ou du test positif s’il est asymptomatique. Son isolement peut être réduit à **7 jours**, suite à test de dépistage négatif (antigénique ou PCR) et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**  ;
+    
+    Dans tous les cas, les autres membres du foyer sont considérés comme **cas contact** et doivent s’isoler s’ils ne sont pas vaccinés.
 
     <div class="voir-aussi">
 
