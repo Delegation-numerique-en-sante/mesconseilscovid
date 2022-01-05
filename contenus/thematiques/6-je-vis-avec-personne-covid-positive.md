@@ -99,10 +99,11 @@ Même si vous ne présentez pas de symptômes, faites un **test de dépistage** 
     - isolez-vous pour une durée de **7 jours** ;
     - vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test négatif (test PCR ou antigénique) et d’absence de fièvre ou de symptômes depuis au moins 48 h.
 
-* Si le test est **négatif**, il ne faut pas vous isoler mais restez prudent(e) :
-    * portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas ;
-    * évitez de rencontrer des personnes vulnérables ou fragiles ;
-    * surveillez votre état : température, symptômes…
+* Si le test est **négatif**, il n’est pas nécessaire de vous isoler, mais restez prudent(e) :
+    - respectez les **mesures barrières** au sein de votre foyer ;
+    - ayez recours au **télétravail** lorsque c’est possible ;
+    - **limitez** vos interactions sociales, et évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal) ;
+    - portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas.
 
 Si vous devez **garder votre enfant** positif à la Covid mais que vous ne pouvez pas télétravailler, vous pouvez bénéficier du **chômage partiel**. Pour plus d’information sur la démarche, consultez notre [page dédiée aux conseils pour les mineurs](/conseils-pour-les-enfants.html#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid).
 
