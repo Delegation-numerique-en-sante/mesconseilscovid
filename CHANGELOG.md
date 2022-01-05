@@ -3,6 +3,11 @@
 ## 2022-01-05
 
 * mise à jour des conseils personnalisés en cas de contact à risque
+* mise à jour des conseils personnalisés en cas d’autotest positif
+* mise à jour des conseils personnalisés sur le télétravail
+* mise à jour de la réponse cas contact sur la page « Je suis vacciné »
+* mise à jour de la réponse pour les enfants positifs
+* précisions, clarifications et harmonisations mineures
 
 ## 2022-01-04
 
