@@ -30,13 +30,20 @@
 
     Si vous êtes vacciné(e), en cas de contact à risque avec une personne positive à la Covid :
 
-    1. [**Faites un test antigénique dès que possible**](/tests-de-depistage.html) et informez de votre statut les personnes avec qui vous avez été en contact récemment.
+    1. Faites un **test de dépistage gratuit** (test PCR ou antigénique) **dès que possible** (voir la <a href="https://www.sante.fr/cf/centres-depistage-covid.html">carte des lieux de test</a>).
+        * Si le test est **positif** : isolez-vous pour une durée de **7 jours** ; vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test négatif (test PCR ou antigénique) et d’absence de fièvre ou de symptômes depuis au moins 48 h.
 
-    1. **Si le résultat de votre test est positif, isolez-vous pendant 7 jours.** Nous vous encourageons à [décrire votre situation particulière](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
+        * Si le test est **négatif**, il n’est pas nécessaire de vous isoler, mais restez prudent(e) :
+            * respectez les **mesures barrières** au sein de votre foyer ;
+            * ayez recours au **télétravail** lorsque c’est possible ;
+            * **limitez** vos interactions sociales, et évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal) ;
+            * portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas.
 
-    1. **Si le résultat de votre test est négatif, vous n’avez pas besoin de vous isoler**, mais il est recommandé de respecter les **mesures barrières** avec toutes les personnes de votre entourage pendant une semaine. Vous devrez ensuite faire un test de contrôle (PCR ou antigénique) :
-        * **7 jours après votre dernier contact** avec la personne malade, pour confirmer que vous n’avez pas été contaminé(e) ;
-        * **7 jours après la guérison** de la personne malade (soit 17 jours depuis son test positif ou le début de ses symptômes), si vous êtes en **contact régulier** avec elle (partage de foyer par exemple).
+    1. Faites **2 autotests de contrôle**, 2 jours après et 4 jours après le **dernier contact** avec la personne positive (après sa guérison ou la fin de son isolement si vous habitez avec elle).
+        - Si les résultats de ces deux autotests sont **négatifs** : vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale.
+        - Si le résultat d’un de ces autotests est **positif** :
+            + faites un **test antigénique ou PCR** pour **confirmer** ce résultat positif et restez isolé(e) en attendant ;
+            + si le résultat positif à l’autotest est **confirmé** : maintenez votre isolement pour une durée de **7 jours** ; vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test négatif et d’absence de fièvre ou de symptômes depuis au moins 48 h.
 
     <div class="voir-aussi">
 
