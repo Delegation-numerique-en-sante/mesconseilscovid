@@ -46,14 +46,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
       * les élèves seront invités à réaliser au plus tôt un **test de dépistage** gratuit (test PCR nasopharyngé, PCR salivaire, ou antigénique nasopharyngé) ;
       * si le résultat du test est **négatif**, ils pourront poursuivre les enseignements en **présentiel** ;
-      * ils devront ensuite réaliser **deux autotests** (délivrés gratuitement en pharmacie) 2 jours après et 4 jours après le dernier contact avec le cas confirmé.
+      * ils devront ensuite réaliser **deux autotests** (délivrés gratuitement en pharmacie) 2 jours après et 4 jours après leur **dernier contact** avec la personne positive.
 
     * Pour les élèves de **12 ans et plus**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. La conduite à tenir pour les élèves **« cas contact »** dépend alors de leur statut vaccinal :
 
       * s’ils sont **complètement vaccinés** :
         - ils seront invités à réaliser au plus tôt un **test de dépistage** gratuit (test PCR nasopharyngé, PCR salivaire, ou antigénique nasopharyngé),
         - si le résultat du test est **négatif**, ils pourront poursuivre les enseignements en **présentiel**,
-        - ils devront ensuite réaliser **deux autotests** (délivrés gratuitement en pharmacie) 2 jours après et 4 jours après le dernier contact avec le cas confirmé.
+        - ils devront ensuite réaliser **deux autotests** (délivrés gratuitement en pharmacie) 2 jours après et 4 jours après leur **dernier contact** avec la personne positive.
       * s’ils ne sont **pas complètement vaccinés** :
         - ils devront **s’isoler** pendant **7 jours**, et poursuivre leurs apprentissages **à distance** pendant cette période.
 
@@ -103,8 +103,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire 2 **autotests de contrôle** :
 
-    - **2 jours après** son dernier contact avec la personne malade, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
-    - **4 jours après** son dernier contact avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e).
+    - **2 jours après** son **dernier contact** avec la personne positive, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
+    - **4 jours après** son **dernier contact** avec la personne positive, pour confirmer qu’il ou elle n’a pas été contaminé(e).
 
     <div class="voir-aussi">
 
@@ -150,8 +150,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire deux **autotests de contrôle** :
 
-    - **2 jours après** son dernier contact avec la personne malade, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
-    - **4 jours après** son dernier contact avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e).
+    - **2 jours après** son **dernier contact** avec la personne positive, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
+    - **4 jours après** son **dernier contact** avec la personne positive, pour confirmer qu’il ou elle n’a pas été contaminé(e).
 
     <div class="voir-aussi">
 
@@ -198,8 +198,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) avant de retourner à l’école :
 
-    - **7 jours après son dernier contact** avec la personne malade, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
-    - **7 jours après la guérison de la personne malade**, s’il est en en contact régulier avec elle.
+    - **7 jours** après son **dernier contact** avec la personne positive, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
+    - ou **7 jours** après la guérison ou la fin d’isolement de la personne positive, s’il est en en contact régulier avec elle.
 
     <div class="voir-aussi">
 
