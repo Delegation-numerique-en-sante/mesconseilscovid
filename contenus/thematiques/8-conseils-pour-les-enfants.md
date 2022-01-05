@@ -96,7 +96,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
         - votre enfant a contracté la Covid et il est **contagieux** ;
         - il doit rester en isolement **7 jours** à partir de la date du test ;
             - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
-            - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à l'isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
+            - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à l’isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
         - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois).
 
     #### 3. Autotests de contrôle
@@ -143,7 +143,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
         - votre enfant a contracté la Covid et il est **contagieux** ;
         - il doit rester en isolement **7 jours** à partir de la date du test ;
             - surveillez l’apparition de **symptômes** et contacter un **médecin** (ou le 15) en cas de difficultés respiratoires ;
-            - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à l'isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
+            - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à l’isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
         - les autres membres du **foyer** sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois).
 
     #### 3. Autotests de contrôle
@@ -408,14 +408,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Que faire si mon enfant est positif à la Covid ?
     :level: 3
 
-    Si votre enfant a été testé **positif** à la Covid, il doit rester **isolé**. La durée de l'isolement dépend de son âge et de son statut vaccinal.
-    
-    * votre enfant est vacciné **ou** il a moins de 12 ans :
-        * il doit s'isoler **7 jours** à partir de la date du début de ses symptômes, ou du test positif s’il est asymptomatique. Son isolement peut être réduit à 5 jours, suite à test de dépistage négatif (antigénique ou PCR) et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**  ;
-    
-    * votre enfant a plus de 12 ans et il n'est pas vacciné : 
-        * il doit s'isoler **10 jours** à partir de la date du début de ses symptômes, ou du test positif s’il est asymptomatique. Son isolement peut être réduit à **7 jours**, suite à test de dépistage négatif (antigénique ou PCR) et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**  ;
-    
+    Si votre enfant a été testé **positif** à la Covid, il doit rester **isolé**. La durée de l’isolement dépend de son âge et de son statut vaccinal.
+
+    * si votre enfant est vacciné **ou** s’il a moins de 12 ans :
+        * il doit s’isoler **7 jours** à partir de la date du début de ses symptômes, ou du test positif s’il est asymptomatique. Son isolement peut être réduit à 5 jours, suite à un test de dépistage négatif (antigénique ou PCR) et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures** ;
+
+    * si votre enfant a plus de 12 ans et qu’il n’est pas vacciné :
+        * il doit s’isoler **10 jours** à partir de la date du début de ses symptômes, ou du test positif s’il est asymptomatique. Son isolement peut être réduit à **7 jours**, suite à un test de dépistage négatif (antigénique ou PCR) et en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**.
+
     Dans tous les cas, les autres membres du foyer sont considérés comme **cas contact** et doivent s’isoler s’ils ne sont pas vaccinés.
 
     <div class="voir-aussi">
