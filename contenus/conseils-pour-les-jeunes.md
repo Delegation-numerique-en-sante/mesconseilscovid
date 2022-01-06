@@ -2,7 +2,7 @@
 
 <img src="illustrations/pediatriegeneral.svg">
 
-<header> Ce n'est pas facile de trouver des **informations fiables** sur la **Covid**, les **vaccins** ou la manière de se **protéger**. Tu trouveras sur cette page toutes des informations **vérifiées** pour être **au courant** et **responsable** face au vius !
+<header> Il n'est pas facile de trouver des **informations fiables** sur la **Covid**, les **vaccins** ou les façons de se **protéger**. Tu trouveras sur cette page toutes des informations **vérifiées** pour être **au courant** et **responsable** face au vius !
     <p class="big"></p>
 </header>
 
@@ -15,27 +15,28 @@
 
 </div>
 
-.. section:: La vie quotidienne
+.. section:: Ma vie quotidienne
     
 .. question:: Pourquoi est-ce que les mesures changent tout le temps ?
     :level: 3
     
-    Les consignes changent pour s'adapter à l'évolution de l'épidémie. Elles dépendent aussi des connaissances que nous avons sur ce virus.
+    Les consignes changent pour s'**adapter** à l'évolution de l'épidémie. Elles dépendent aussi des connaissances que nous avons sur ce nouveau virus :
     
-    Les consignes sont durcies (couvre-feu, fermeture de certains lieux comme les boites de nuit...) lorsqu'il y a une augmentation importante des cas positifs et qu'on parle alors d'une nouvelle vague. Ce durcissement sert à faire baisser le nombre de contaminations et à éviter la surcharge des hôpitaux qui doivent soigner trop de malades.
+    Les consignes sont durcies (couvre-feu, fermeture de certains lieux comme les boites de nuit...) lorsqu'il y a une augmentation importante des cas positifs. On parle alors d'une « vague ». Ce durcissement des règles sert à faire baisser le nombre de contaminations et à éviter la surcharge des hôpitaux qui ne pourraient pas accueillir tous les malades.
+    A l'inverse, les consignes peuvent être assouplies, lorsque la situation épidémique est plus favorable.
     
-    Les consignes évoluent aussi en fonction des nouvelles découvertes que font les scientifiques. Par exemple, nous avons évité d'être reconfinés grâce au nouveau vaccin anti-covid. Cependant, l'apparition de nouveaux variants du virus (Delta, Omicron), nous oblige encore une fois à nous adapter en recevant un rappel vaccinal.
+    Les consignes évoluent aussi en fonction des nouvelles découvertes que font les scientifiques. Par exemple, la fabrication des vaccins nous a permis d'éviter l'instauration d'un couvre-feu lors des fêtes de fin d'années en 2021, mais l'apparition de nouveaux variants du virus (Delta, Omicron), nous force encore une fois à nous adapter en recevant un rappel vaccinal.
      
         
 .. question:: Est-ce que porter le masque sous le nez est efficace ?
     :level: 3
     
-    La Covid est un virus des **voies respiratoires**, c'est-à-dire qu'il entre et sort de ton corps par **ta bouche et ton nez**. Pour te protéger et protéger ceux qui t'entourent, le masque doit donc te bien te **couvrir le nez et la bouche**.
+    La Covid est un virus des **voies respiratoires**, c'est-à-dire qu'il entre et sort de ton corps par **ta bouche et ton nez**, lorsque tu respires, ou parle. Pour te protéger et protéger ceux qui t'entourent, le masque doit donc te bien te **couvrir le nez et la bouche**.
     
 .. question:: A partir de quel âge le pass sanitaire est-il obligatoire ?
     :level: 3
     
-    Le pass sanitaire (une attestation de vaccination; ou un test de dépistage négatif ; ou un certificat de rétablissement) est obligatoire à partir de **12 ans et 2 mois**.
+    Le pass sanitaire est obligatoire à partir de **12 ans et 2 mois**.
     
 .. question:: Où le pass sanitaire est-il obligatoire ?
     :level: 3
@@ -60,22 +61,21 @@
 
     </div
     
-.. question:: J'entends parler de Delta, Omicron... c'est quoi un variant ?
+.. question:: J'entends parler de Delta, Omicron... qu'est-ce qu'un variant ?
     :level: 3   
     
-    Pour survivre, un virus comme le SARS-COv-2 (Covid-19) doit se répliquer, c'est-à-dire qu'il doit faire des **copies** de son code génétique. Parfois, une **erreur** se glisse dans une  copie. Cette version, qui n'est plus tout a fait identique, s'appelle une **mutation** ou un **variant**. 
+    Pour survivre, un virus comme le SARS-CoV-2 (Covid-19) se réplique, c'est-à-dire qu'il fait des **copies** de son code génétique. Parfois, une **erreur** se glisse dans une de ces copies et c'est cette nouvelle version, qu'on appelle une **mutation** ou un **variant**. 
         
-    Chaque variant a des **caractéristiques** plus ou moins **différentes** du virus d'origine. Par exemple, il peut être plus ou moins contagieux ; plus dangereux ; ou provoquer d'autres symptômes.
+    Chaque variant a des **caractéristiques** plus ou moins **différentes** du virus d'origine. Par exemple, il peut être plus contagieux, moins dangereux, ou provoquer d'autres symptômes comme un mal de gorge plutôt que des maux de tête.
     
-    Plus le variant est contagieux, plus il se répand vite et surpasse les autres. Par exemple, le variant le plus répandu **en 2020**, au début de l'épidémie, était le variant dit chinois (ou souche traditionnelle de la Covid). Aujourd'hui, **fin 2021**, c'est le variant **Delta** qui est le plus répandu en France, mais les scientifiques prédisent qu'il sera dépassé à partir de janvier **2022** par le variant **Omicron**.
+    Plus un variant est contagieux, plus il se répand vite au sein de la population et finit par remplacer les autres mutations. Par exemple, le variant dit « chinois » était le plus répandu au début de la pandémie,**en 2020**. Actuellement, en 2022, c'est le variant *Omicron* qui est le plus répandu en France. Il a remplacé le variant *Delta*, qui était majoraitaire en décembre **2021**.
         
-    Les scientifiques surveillent attentivement l'apparition de nouveaux variants car ils doivent veiller à ce que les consignes sanitaires et les vaccins dont nous disposons restent suffisament efficaces pour les combattres. 
-    Les études récentes sont rassurantes puisqu'elles montrent que le rappel vaccinal avec un vaccin Pfizer ou Moderna permet de se protéger à 70 % d'une forme grave, dans le cas d'une contamination par le variant Omicron.
-    Il est probable que les vaccins seront adaptés, au fur et à mesure de l'appartition de variants, pour maintenir leur efficacité.
+    Les **scientifiques surveillent** attentivement l'apparition de **nouveaux variants** et veillent à ce que les consignes sanitaires et les vaccins restent suffisament efficaces pour les combattres. Les études récentes sont rassurantes puisqu'elles montrent que :
+        * le variant **Omicron** est **moins dangereux** que le variant précédent (*Delta*) ;
+        * le **rappel vaccinal** avec un vaccin Pfizer ou Moderna permet de se protéger à **70 %** d'une forme grave, dans le cas d'une contamination par *Omicron*.
         
-.. question:: Il y a beaucoup d'informations qui circulent sur les réseaux sociaux. Que croire ?
-    :level: 3   
-    
+    Il est probable que les vaccins seront adaptés au fur et à mesure de l'appartition de variants pour conserver leur efficacité.
+           
 .. question:: Que faire si j'ai des pensées négatives, du stress ou des peurs ?
     :level: 3
     
@@ -107,7 +107,7 @@
 .. question:: Que se passe-t-il si un(e) élève est testé(e) positif(ve) dans ma classe au collège ou au lycée ?
     :level: 3
 
-    Les élèves qui ont été en contact avec la personne positive seront prévenus. S'ils ne sont pas vaccinés, ils devront s’isoler et donc poursuivre leurs apprentissages **à distance**, pendant une durée de **7 jours**. Les élèves vaccinés ou qui ont **déjà eu la Covid** il y a moins de 2 mois pourront continuer à aller en cours (*voir ci-dessous*).
+    Les élèves qui ont été en contact avec la personne positive seront prévenus. S'ils ne sont pas vaccinés, ils devront s’isoler et poursuivre leurs apprentissages **à distance**, pendant une durée de **7 jours**. Les élèves vaccinés ou qui ont **déjà eu la Covid** il y a moins de 2 mois pourront continuer à aller en cours (*voir ci-dessous*).
 
     <div class="voir-aussi">
 
@@ -131,34 +131,33 @@
 
     </div>
 
-    #### 1. Pas d’isolement
+    #### 1. Pas d’isolement mais un test de dépistage
 
     Si tu es « **cas contact** » et que tu es **vacciné(e)**, alors tu n'auras pas besoin de t’isoler, et pourras continuer à aller au collège ou au lycée.
-
-    #### 2. Test de dépistage
-
-    Tu devras faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)). Les tests de dépistage sont gratuits pour les mineurs.
-
-    * Si le test est **négatif** :
-        * tu devras faire un **test de contrôle** dans 7 jours (voir ci-dessous) ;
-        * tu devras rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles (comme tes grands-parents ou des personnes âgées ou malades) ;
-        * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, fais un nouveau test sans attendre, et contacte un **médecin** (ou le 15) si tu as des difficultés à respirer.
-
+    Tu devras faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)). Les tests de dépistage sont **gratuits** pour les mineurs.
+    
     * Si le test est **positif** :
         - tu as attrapé la Covid. Ce n'est pas grave, mais tu es **contagieux(se)** et tu dois protéger les personnes qui t'entourent ;
-        - tu dois rester en isolement au moins **10 jours** à partir de la date du test ;
-        - surveille l’apparition de **symptômes** (nez qui coule, mal de gorge, fiève, fatigue...) et appelle un **médecin** (ou le 15) si tu as des difficultés à respirer ;
+        - tu dois rester isolé **7 jours** à partir de la date du test ;
+              - si tu n'as plus de fièvre depuis au moins 48h, tu pourras mettre fin à ton isolement après 7 jours seulement, si ton nouveau test de dépistage est négatif (antigénique ou PCR) ;
+    
         - les personnes qui vivent avec toi sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
             * s'**isoler** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
             * faire un **test antigénique** dès que possible.
+    
+    * Si le résultat est négatif, tu pourras retourner en cours.
+
+    #### 2. 2 autotests de contrôle
+
+    * Si ton  1<sup>er</sup> test est **négatif** :
+        * tu devras faire un **autotest de contrôle** 2 jours après ton dernier contact avec la personne positive (voir ci-dessous) ;
+        * puis, un 2e autotest de contrôle 2 jours après le premier.
+    
+      Si les autotests sont négatifs, alors tu pourras continuer à aller au collège ou au lycée, mais :
+        * tu devras rester **prudent** et éviter de passer du temps avec des personnes vulnérables ou fragiles (comme tes grands-parents ou des personnes âgées ou malades) ;
+        * en cas de **fièvre** ou de **symptômes** fais un nouveau test sans attendre.
      
 
-    #### 3. Test de contrôle
-
-    Si ton 1<sup>er</sup> test était négatif, alors tu devras faire un **test de contrôle** (en laboratoire ou en pharmacie) :
-
-    - **7 jours après ton dernier contact** avec la personne malade, pour confirmer que tu n’as pas été contaminé(e) ;
-    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), si tu es resté en contact régulier avec elle (par exemple, si c'est une personne qui habite avec toi).
 
     <div class="voir-aussi">
 
@@ -182,21 +181,20 @@
 
     #### 1. Isolement
 
-    Si tu es « **cas contact** », que tu n'es **pas vacciné** et que tu n’as pas déjà eu la Covid dans les 2 derniers mois, alors tu devras rester **isolé** pendant **7 jours**. Tu ne devras **pas aller au collège ou au lycée** et tu suivras tes cours à distance.
+    Si tu es « **cas contact** », que tu n'es **pas vacciné** et que tu n’as pas déjà eu la Covid dans les 2 derniers mois, alors :
+    * tu devras rester **isolé** pendant **7 jours**. Tu ne devras **pas aller au collège ou au lycée** et tu suivras tes cours à distance.
+    * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, fais un test (PCR ou antigénique) sans attendre.
 
     #### 2. Test de dépistage
 
-    Tu devras faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+    Pour mettre fin à ton isolement, tu devras faire un **test antigénique** en pharmacie le 7<sup>e</sup> jour (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
-    * Si le test est **négatif** :
-        * tu devras quand même rester **isolé** pendant **7 jours** ;
-        * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, fais un nouveau test sans attendre, et contacte un **médecin** (ou le 15) si tu as des difficultés à respirer.
-
-    * Si le test est **positif** :
+        * Si le test est **positif** :
         - tu as contracté la Covid. Ce n'est pas grave, mais tu es **contagieux(se)** et tu dois protéger les personnes qui t'entourent
-        - tu dois rester en isolement au moins **10 jours** à partir de la date du test ;
-        - surveille l’apparition de **symptômes** (nez qui coule, mal de gorge, fiève, fatigue...) et appelle un **médecin** (ou le 15) si tu as des difficultés à respirer ;
-        - les personnes qui vivent avec toi sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
+        - tu dois rester en isolement au moins **10 jours** supplémentaires ;
+            - Si tu n'as plus de fièvre depuis au moins 48h, tu pourras mettre fin à ton isolement après 7 jours seulement, si ton nouveau test de dépistage est négatif (antigénique ou PCR) ;
+   
+    - les personnes qui vivent avec toi sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
             * s'**isoler** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
             * faire un **test antigénique** dès que possible.
 
@@ -222,16 +220,14 @@
 
      Non, une personne cas contact est une personne qui a été **en contact direct** avec une personne positive à la Covid.
     
-    + Le « **cas contact d’un cas contact** » n’est pas un cas contact et il ne doit pas s'isoler.
+    + Le « **cas contact d’un cas contact** » n’est pas un cas contact.
     
-    *Par exemple, si ta soeur n'est pas vaccinée, et qu'elle est cas contact de son ami, elle devra s'isoler, mais pas les autres personnes de son foyer (toi, parents...).
-    Tu pourras donc continuer à aller au collège ou au lycée et tes parents pourront aller travailler.
-    Ta soeur devra cependant faire attention et respecter les gestes barrières à la maison pendant au moins 7 jours, et tant qu'elle ne sera pas sûre qu'elle n'a pas été contaminée.
-    
-    + Si le cas contact devient à son tour cas positif, alors les autres personnes du foyer deviennent cas contact. 
+    * Par exemple, si ta soeur est cas contact d'un élève de sa classe, les autres membres du foyer (dont toi), ne seront pas considérés comme des cas contacts et ne devront pas se faire tester.
+       
+    + En revanche, si le cas contact devient à son tour cas positif, alors les autres personnes du foyer deviennent cas contact. 
     
     *Si quelques jours plus tard, ta soeur est  **testée positive**, alors les autres personnes du foyer (toi, parents...) deviendront à leur tour **cas contacts**, sauf s’ils ont déjà eu la Covid dans les 2 derniers mois. 
-    S'ils ne sont **pas vaccinés**, ils devront eux aussi s’isoler. Dans ce cas, tu ne devras pas aller au collège ou au lycée et tes parents ne devront pas aller travailler.*
+    S'ils ne sont **pas vaccinés**, ils devront s’isoler. Dans ce cas, tu ne devras pas aller au collège ou au lycée et tes parents ne devront pas aller travailler.*
 
     <div class="voir-aussi">
 
@@ -278,20 +274,21 @@
 .. question:: Comment des vaccins ont-ils été crées aussi vite ? Sont-ils efficaces et sûrs ?
     :level: 3
     
-    Il est vrai que les vaccins contre la Covid ont été crées rapidement, mais cela ne veut pas dire qu'ils ne sont pas sûrs, ou que le processus ait été baclé.
-    
-    3 facteurs expliquent cette rapidité :
+ Il est vrai que les vaccins contre la Covid ont été crées rapidement, mais cela ne veut pas dire qu'ils ne sont pas sûrs. 3 raisons expliquent cette rapidité de fabrication :
        
-    1. la collaboration et la compétition internationales : la recherche du vaccin a bénéficié de **financements** très importants et d'une grande **compétition** entre les laboratoires pharmaceutiques. Le monde entier ayant souffert de cette pandémie, il était urgent de trouver un vaccin qui permette de retrouver le plus rapidement possible une vie normale et de sortir de la crise qu'elle a engendré.
+    1. la collaboration et la compétition internationales : 
+    la recherche du vaccin a bénéficié de **financements** très importants et de la **compétition** entre les laboratoires pharmaceutiques. Le monde entier ayant souffert de cette pandémie, il était urgent de trouver un vaccin qui permette de retrouver le plus rapidement possible une vie normale et de sortir de la crise qu'elle a engendré.
     
-    2. l'expérience scientifique : les scientifiques ne sont pas partis de zéro pour créer ces vaccins ! En effet, la famille des Coronavirus, à laquelle appartient le virus du SARS-CoV-2 (Covid-19) est très étudiée et documentée par les scientifiques. Grâce à leurs connaissances, ils ont pu rapidement définir les caractéristique du SARS-CoV-2 pour mettre au point un vaccin efficace. Les laboratoires ont également profité de la technologie des ARN messagers qui est étudiée depuis une vingtaine d'année, pour créer les vaccins Pfizer et Moderna. Tout cela a permis un gain de temps considérable. 
+    2. l'expérience scientifique :
+    les scientifiques ne sont pas partis de zéro pour créer ces vaccins ! En effet, la famille des Coronavirus, à laquelle appartient le virus du SARS-CoV-2 (Covid-19) est très étudiée et documentée par les scientifiques. Grâce à leurs connaissances, ils ont pu rapidement définir les caractéristique du SARS-CoV-2 pour mettre au point un vaccin efficace. Les laboratoires ont également profités de la technologie des ARN messagers qui est étudiée depuis une vingtaine d'année, pour créer les vaccins Pfizer et Moderna. Tout cela a permis franchir plus rapidement les étapes de fabrication du vaccin. 
     
-    3. le nombre de personnes contaminées de par le monde : une fois que les vaccins ont été mis au point, les **phases de vérification et d'expérimentation** n'ont pas été plus courtes que pour d'autres vaccins. En revanche, elles ont pu se dérouler plus rapidement car les scientifiques ont pu étudier et comparer un nombre très important de malade, ce qui n'est pas le cas pour d'autres maladies.
+    3. le nombre de malades : 
+    les **phases de vérification et d'expérimentation**, qui permettent de tester la sécurité d'un vaccin, n'ont pas été plus courtes que pour d'autres vaccins. Elles ont pu se dérouler dans des délais plus restreints grâce au très grand nombre de malade de la Covid sur qui les tests ont pu être réalisés. Habituellement, ces phases se déroulent sur plusieurs années (voire décennies) car il y a peu de volontaires pour les tests.
       
 .. question:: Comment fonctionnent les vaccins ?
     :level: 3
     
-    Les vaccins contre la Covid font croire à ton système immunitaire (l'armée qui défend ton organisme contre les infections) que tu as été contaminé par la Covid afin qu'il crée des anticorps (des soldats). Une fois vacciné, ton corps sera prêt à réagir en cas de contact avec le virus et luttera contre la contamination de manière plus efficace. Résultat, tu auras moins de symptômes, voire même, tu éviteras la contamination.
+    Les vaccins contre la Covid font croire à ton système immunitaire (l'armée qui défend ton organisme contre les infections) que tu as été contaminé par la Covid afin qu'il crée des anticorps (des soldats). Une fois vacciné, ton corps sera prêt à réagir rapidement en cas de contact avec le virus et luttera contre la contamination de manière plus efficace. Résultat, tu auras moins de symptômes, voire même, tu éviteras la contamination.
     
     Contre la Covid, 2 types de vaccins sont actuellement disponibles :
     * les vaccins à adénovirus (Janssen et AstraZeneca) : qui injectent une infime partie du virus, désactivé et inoffensif. Cette injection va simuler une contamination et les anticorps vont être crées pour la combattre.
@@ -301,9 +298,8 @@
 .. question:: Est-ce que les vaccins changent mon ADN ?
     :level: 3
     
-    Non, c'est une **fausse information** (fake news) qui circule sur les réseaux sociaux au sujet des vaccins à ARn messagers (Pfizer et Moderna). L'**ADN** se situe dans une zone quasi-innaccessible de nos cellules qui s'appelle **le noyau**, dans lequel les vaccins, **ne peuvent pas pénétrer**.
-      
-    
+    Non, c'est une **fausse information** (fake news) qui circule au sujet des vaccins à ARn messagers (Pfizer et Moderna). L'**ADN** se situe dans une zone quasi-innaccessible de nos cellules qui s'appelle **le noyau**, dans lequel les vaccins, **ne peuvent pas pénétrer**.
+          
 .. question:: Je suis jeune et en bonne santé, pourquoi me faire vacciner contre la Covid ?
     :level: 3
     
@@ -317,7 +313,7 @@
 .. question:: Je suis vacciné, puis-je quand même attraper la Covid ?
     :level: 3
     
-    Oui. La vaccination réduit efficacement les risques de contamination, mais elle n'immunise pas à 100 % (comme n'importe quel autre vaccin).
+    Oui. La vaccination réduit efficacement les risques de contamination, mais, comme n'importe quel autre vaccin, elle n'immunise pas à 100 %.
     C'est pourquoi, même si tu es vacciné, il faut continuer à respecter les gestes barrières, réduire les contacts et porter le masque sur le nez et la bouche dès que c'est requis.
  
 .. question:: A quoi sert le vaccin si on peut quand même attraper la Covid ?
@@ -328,12 +324,12 @@
     * les risques de contamination et de transmission. Vacciné(e), tu attraperas moins facilement la Covid et tu auras moins de chances de la transmettre à une personne vulnérable (personne malade ; grands-parents...) ;
     * les risques de faire une forme grave de la maladie et d'être hospitalisé ;
    
-    Si tout le monde se fait vacciner, cela permettra surtout de limiter la circulation du virus au sein de la population. Moins le virus circulera, moins il mutera et se développera.
+    Mais surtout, si tout le monde se fait vacciner, cela *limitera la circulation du virus** au sein de la population. Moins le virus circulera, moins il mutera et se développera.
     
 .. question:: Est-ce que j'ai besoin de l'autorisation de mes parents pour me faire vacciner contre la Covid ?
     :level: 3
 
-    Cela dépend de ton âge. Si tu es âgé de plus **16 ans**, tu peux te faire vacciner sans l'autorisation de tes parents. N'oublies pas d'apporter ta carte vitale (si tu en as une)
+    Cela dépend de ton âge. Si tu es âgé de plus **16 ans**, tu peux te faire vacciner sans l'autorisation de tes parents. N'oublie pas d'apporter ta carte vitale (si tu en as une)
     à ton rendez-vous de vaccination.
 
     Si tu as entre **12 et 15 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Tu peux [télécharger]((https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) le formulaire de consentement, pour qu'il soit rempli avant le jour du rendez-vous, sinon, une copie sera disponible sur place.
@@ -453,7 +449,7 @@
     Si tu as été testé **positif** à la Covid, ne t'inquiète pas. Ce virus peut être dangereux pour les personnes âgées ou fragiles (malades...), mais il l'est très rarement pour les
     jeunes.
     Il est important que tu suives certaines recommandations, pour ne pas contaminer les personnes qui t'entourent :
-    + Reste **isolé** au moins **10 jours** à partir de la date du début de tes symptômes, ou de ton test positif si tu n'as pas de symptômes ;
+    + Reste **isolé 7 jours** à partir de la date du début de tes symptômes, ou de ton test positif si tu n'as pas de symptômes ;
     + Préviens les personnes avec qui tu as eu un contact récent (amis, élèves...) pour qu'ils se fassent tester car ils sont cas contact ;
     + [Les personnes avec qui tu habites sont également **cas contact**]((/je-vis-avec-personne-covid-positive.html) et doivent s’isoler s’ils ne sont pas vaccinés.
     
@@ -473,7 +469,7 @@
 .. question:: Est-ce que les tests de dépistage sont gratuits pour les mineurs ?
     :level: 3
 
-    **Oui**. Pour les mineurs, les tests de dépistages sont gratuits (sauf les autotests) et réalisés sans ordonnance médicale.
+    **Oui**. Pour les mineurs, les tests de dépistages sont gratuits et réalisés sans ordonnance médicale.
 
 .. question:: Les tests sont-ils dangereux ou douloureux ?
     :level: 3
@@ -489,5 +485,5 @@
 .. question:: Je souffre d'une maladie chronique, est-ce que je dois prendre des précautions supplémentaires face à la Covid ?
     :level: 3
 
-    Généralement, la Covid reste une maladie bégnine, même chez l'adolescent atteint d’une maladie chronique. Cependant, si tu souffres d'une maladie rare et grave, qui nécéssite un traitement ou des soins particuliers, demande à ton médecin de t'expliquer quelles précautions renforcée tu dois prendre face à la Covid.
+    Généralement, la Covid reste une maladie bégnine, même chez l'adolescent atteint d’une maladie chronique. Cependant, si tu souffres d'une maladie rare et grave, qui nécessite un traitement ou des soins particuliers, demande à ton médecin de t'expliquer quelles précautions renforcée tu dois prendre face à la Covid.
 
