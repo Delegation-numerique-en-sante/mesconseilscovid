@@ -502,13 +502,13 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Si vous êtes positif à la Covid, alors vos enfants sont **cas contact** (sauf s’ils ont eux-mêmes déjà eu la Covid dans les 2 derniers mois).
 
-    Qu’ils soient **vaccinés ou non**, vos enfants doivent faire un **test antigénique dès que possible**.
+    La conduite à tenir dépendra de leur âge et de leur statut vaccinal :
 
-    * si leur test est **positif**, ils devront s’isoler pendant 10 jours ;
-    * si leur test est **négatif** :
-        * s’ils ne sont **pas vaccinés**, ils devront **rester isolés** eux aussi, et ne **devront pas aller à l’école** (par contre, s’ils sont **vaccinés**, ils n’auront pas besoin de s’isoler et pourront continuer à aller à l’école) ;
-        * ils devront faire un second test **17 jours** après le début de vos symptômes (ou après la date de votre propre test positif) ;
-        * s’ils ont eux-mêmes des **symptômes** (fièvre, etc.) avant la date du second test, alors ils devront s’isoler et faire un test sans attendre.
+    - [mon enfant de moins de 12 ans est cas contact](#que-se-passe-t-il-si-mon-enfant-de-moins-de-12-ans-est-cas-contact)
+
+    - [mon enfant de 12 ans ou plus est cas contact et vacciné](#que-se-passe-t-il-si-mon-enfant-de-12-ans-ou-plus-est-cas-contact-et-qu-il-est-vaccine)
+
+    - [mon enfant de 12 ans ou plus est cas contact et n’est pas vacciné](#que-se-passe-t-il-si-mon-enfant-de-12-ans-ou-plus-est-cas-contact-et-qu-il-n-est-pas-vaccine)
 
     <div class="voir-aussi">
 
