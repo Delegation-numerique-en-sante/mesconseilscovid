@@ -1,5 +1,10 @@
 # Changelog
 
+## 2022-01-06
+
+* renomme la page « mineurs » en « enfants et adolescents »
+* mise à jour de la réponse parent positif / enfants cas contacts
+
 ## 2022-01-05
 
 * mise à jour des conseils personnalisés en cas de contact à risque
