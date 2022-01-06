@@ -58,7 +58,7 @@ Le test est toujours **gratuit** quand vous êtes cas contact.
 ##### Si le test est négatif 👇
 
 * vous devrez faire **deux autotests** de contrôle (voir plus bas) :
-    - **2 jours** après et **4 jours** après le **dernier contact** avec la personne positive,
+    - **2 jours** après et **4 jours** après avoir été notifié du contact à risque (ou de la fin de l'isolement de la personne positive, si vous partagez son foyer) ;
     - ces autotests vous seront délivrés **gratuitement** en pharmacie ;
 * comme vous êtes complètement vacciné(e), on considère que vous avez un **risque modéré**, et qu’il n’est **pas nécessaire de vous isoler** ;
 * en attendant, restez quand même prudent(e) :
@@ -73,7 +73,7 @@ Le test est toujours **gratuit** quand vous êtes cas contact.
 ##### Si le test est positif 👇
 
 * vous avez contracté la Covid, et vous êtes **contagieux** ;
-* restez en **isolement au moins 7 jours** à partir de la date du test ;
+* restez en **isolement 7 jours** à partir de la date du test ;
     - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
 - surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
 * les **membres de votre foyer** seront à leur tour considérés comme **cas contact**.
@@ -84,8 +84,8 @@ Le test est toujours **gratuit** quand vous êtes cas contact.
 
 Si votre premier test était **négatif**, vous devrez faire **2 autotests de contrôle**, qui vous seront délivrés **gratuitement** en pharmacie :
 
-* le premier : **2 jours** après votre **dernier contact** avec la personne positive (après sa guérison ou la fin de son isolement si vous habitez avec elle) ;
-* le deuxième : **4 jours** après ce dernier contact.
+* le premier : **2 jours** après avoir été notifié du contact à risque (après sa guérison ou la fin de son isolement si vous habitez avec elle) ;
+* le deuxième : **4 jours** après la notification du contact à risque (ou la guérison ou fin de l'isolement de la personne positive, si vous habitez avec elle).
 
 </div>
 
@@ -100,7 +100,7 @@ Si votre premier test était **négatif**, vous devrez faire **2 autotests de co
 
 * si le résultat positif à l’autotest est **confirmé** :
     - vous avez contracté la Covid, et vous êtes **contagieux** ;
-    - restez en **isolement au moins 7 jours** à partir de la date du test ;
+    - restez en **isolement 7 jours** à partir de la date du test ;
         + en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
     - surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
     - les **membres de votre foyer** seront à leur tour considérés comme **cas contact**.
