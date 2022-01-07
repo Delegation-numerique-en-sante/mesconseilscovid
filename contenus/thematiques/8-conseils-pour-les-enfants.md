@@ -27,7 +27,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * s’il a été **testé positif** à la Covid ;
     * s’il a de la **fièvre** (38 °C ou plus) **ou des symptômes évoquant la Covid**, et ce même s’il est vacciné ou s’il a déjà eu la Covid il y a moins de 2 mois ;
-    * s’il a été identifié comme **cas contact**, ou qu’un membre de son foyer a été **testé positif**, et que votre enfant n’est **pas vacciné** et n’a pas déjà eu la Covid dans les 2 derniers mois.
+    * s’il a été identifié comme **cas contact**, ou qu’un membre de son foyer a été **testé positif**, et que votre enfant a **plus de 12 ans** et n’est **pas vacciné** (sauf s’il a déjà eu la Covid dans les 2 derniers mois).
 
     Dans chacun de ces cas, vous devez **informer l’établissement au plus tôt**, afin que les mesures appropriées soient rapidement mises en place.
 
