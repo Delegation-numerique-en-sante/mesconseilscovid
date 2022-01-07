@@ -135,7 +135,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 1. Pas d’isolement
 
-    Si votre enfant de 12 ans ou plus est « **cas contact** » et qu’il est **vacciné**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école.
+    Si votre enfant de 12 ans ou plus est « **cas contact** » et qu’il est **vacciné**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école à condition de faire un **test de dépistage**, puis **2 autotests** de contrôle.
 
     #### 2. Test de dépistage
 
