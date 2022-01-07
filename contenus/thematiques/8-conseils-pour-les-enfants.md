@@ -84,14 +84,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 1. Pas d’isolement
 
-    Si votre enfant de moins de 12 ans est « **cas contact** », qu’il soit **vacciné ou non**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école à condition de faire un **test de dépistage**, puis **2 autotests de contrôle**.
+    Si votre enfant de moins de 12 ans est « **cas contact** », qu’il soit **vacciné ou non**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école à condition de faire un **test de dépistage**, puis **2 autotests** de contrôle.
 
     #### 2. Test de dépistage
 
     Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
     * Si le test est **négatif** :
-        * il devra faire **2 autotests de contrôle** (voir plus bas) ;
+        * il devra faire **2 autotests** de contrôle (voir plus bas) ;
         * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
         * en cas d’apparition de **fièvre** ou de **symptômes**, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
 
@@ -104,7 +104,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 3. Autotests de contrôle
 
-    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire 2 **autotests de contrôle** :
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire **2 autotests** de contrôle (délivrés **gratuitement** en pharmacie) :
 
     - **2 jours après** son **dernier contact** avec la personne positive, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
     - **4 jours après** son **dernier contact** avec la personne positive, pour confirmer qu’il ou elle n’a pas été contaminé(e).
@@ -140,7 +140,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
     * Si le test est **négatif** :
-        * il devra faire deux **autotests de contrôle** (voir plus bas) ;
+        * il devra faire **2 autotests** de contrôle (voir plus bas) ;
         * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
         * en cas d’apparition de **fièvre** ou de **symptômes**, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
 
@@ -153,7 +153,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 3. Autotests de contrôle
 
-    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire deux **autotests de contrôle** :
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire **2 autotests** de contrôle (délivrés **gratuitement** en pharmacie) :
 
     - **2 jours après** son **dernier contact** avec la personne positive, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
     - **4 jours après** son **dernier contact** avec la personne positive, pour confirmer qu’il ou elle n’a pas été contaminé(e).
@@ -455,10 +455,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     </div>
 
+
 .. question:: Les tests sont-ils payants ou soumis à la présentation d’une prescription médicale (ordonnance) pour les mineurs ?
     :level: 3
 
-    **Non**. Pour les mineurs, les tests de dépistages sont gratuits (sauf les autotest) et réalisés sans prescription médicale (ordonnance).
+    **Non**. Pour les mineurs, les tests de dépistages sont toujours gratuits et réalisés sans prescription médicale (ordonnance).
+
+    Les deux autotests de contrôle demandés à J+2 et J+4 sont également délivrés gratuitement en pharmacie, sur présentation du résultat de test PCR ou antigénique négatif.
+
 
 .. question:: Les tests sont-ils dangereux pour les enfants ?
     :level: 3
