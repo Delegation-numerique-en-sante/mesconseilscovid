@@ -84,7 +84,7 @@ Le test est toujours **gratuit** quand vous êtes cas contact.
 
 Si votre premier test était **négatif**, vous devrez faire **2 autotests de contrôle**, qui vous seront délivrés **gratuitement** en pharmacie :
 
-* le premier : **2 jours** après votre **dernier contact** avec la personne positive (après sa guérison ou la fin de son isolement si vous habitez avec elle) ;
+* le premier : **2 jours** après votre **dernier contact** avec la personne positive ;
 * le deuxième : **4 jours** après ce dernier contact.
 
 </div>
@@ -150,7 +150,7 @@ Si vous ne pouvez pas **télétravailler**, vous pouvez [**demander un arrêt de
 
 Vous devez faire un test de dépistage (PCR ou antigénique)  gratuit :
 
-* **7 jours** après votre **dernier contact** avec la personne positive (après sa guérison ou la fin de son isolement si vous habitez avec elle) ;
+* **7 jours** après votre **dernier contact** avec la personne positive ;
 * ou **dès que possible** en cas d’apparition de symptômes évocateurs de la Covid.
 
 NB : le test est **toujours gratuit** quand vous êtes cas contact.

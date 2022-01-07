@@ -1,1 +1,1 @@
-Restez **en isolement**, puis **faites un test** 7 jours après la guérison ou la fin d’isolement de la personne positive.
+Restez **en isolement**, puis **faites un test** 7 jours après votre **dernier contact** avec la personne positive.

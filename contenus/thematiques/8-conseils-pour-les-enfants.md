@@ -207,10 +207,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 3. Test de contrôle
 
-    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) avant de retourner à l’école :
-
-    - **7 jours** après son **dernier contact** avec la personne positive, pour confirmer qu’il ou elle n’a pas été contaminé(e) ;
-    - ou **7 jours** après la guérison ou la fin d’isolement de la personne positive, s’il est en en contact régulier avec elle.
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire un **test de contrôle** (PCR ou antigénique) avant de retourner à l’école **7 jours** après son **dernier contact** avec la personne positive, pour confirmer qu’il ou elle n’a pas été contaminé(e).
 
     <div class="voir-aussi">
 

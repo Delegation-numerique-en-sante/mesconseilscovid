@@ -39,7 +39,7 @@
             * **limitez** vos interactions sociales, et évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal) ;
             * portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas.
 
-    1. Faites **2 autotests de contrôle**, 2 jours après et 4 jours après le **dernier contact** avec la personne positive (après sa guérison ou la fin de son isolement si vous habitez avec elle).
+    1. Faites **2 autotests de contrôle**, 2 jours après et 4 jours après le **dernier contact** avec la personne positive.
         - Si les résultats de ces deux autotests sont **négatifs** : vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale.
         - Si le résultat d’un de ces autotests est **positif** :
             + faites un **test antigénique ou PCR** pour **confirmer** ce résultat positif et restez isolé(e) en attendant ;

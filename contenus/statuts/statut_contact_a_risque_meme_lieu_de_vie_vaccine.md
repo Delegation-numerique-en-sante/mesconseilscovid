@@ -1,1 +1,1 @@
-Faites **2 autotests de contrôle** au 2<sup>e</sup> jour et au 4<sup>e</sup> jour après la guérison ou la fin d’isolement de la personne positive.
+Faites **2 autotests de contrôle** au 2<sup>e</sup> jour et au 4<sup>e</sup> jour après votre **dernier contact** avec la personne positive.
