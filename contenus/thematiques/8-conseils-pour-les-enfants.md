@@ -44,16 +44,19 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * Pour les élèves de **moins de 12 ans** (quel que soit leur statut vaccinal), lorsqu’**un cas positif** est confirmé dans la classe :
 
-      * les élèves seront invités à réaliser au plus tôt un **test de dépistage** gratuit (test PCR nasopharyngé, PCR salivaire, ou antigénique nasopharyngé) ;
-      * si le résultat du test est **négatif**, ils pourront poursuivre les enseignements en **présentiel** ;
-      * ils devront ensuite réaliser **deux autotests** (délivrés gratuitement en pharmacie) 2 jours après et 4 jours après leur **dernier contact** avec la personne positive.
+      * les élèves seront invités à réaliser au plus tôt un **test de dépistage** gratuit (test PCR nasopharyngé, PCR salivaire, ou antigénique nasopharyngé) : si le résultat du test est **négatif**, ils pourront poursuivre les enseignements en **présentiel** ;
+      * ils devront ensuite réaliser à la maison **2 autotests** (délivrés **gratuitement** en pharmacie) **2 jours** après et **4 jours** après leur **dernier contact** avec la personne positive.
+
+        *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à recommencer ce parcours de trois tests.*
 
     * Pour les élèves de **12 ans et plus**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. La conduite à tenir pour les élèves **« cas contact »** dépend alors de leur statut vaccinal :
 
       * s’ils sont **complètement vaccinés** :
-        - ils seront invités à réaliser au plus tôt un **test de dépistage** gratuit (test PCR nasopharyngé, PCR salivaire, ou antigénique nasopharyngé),
-        - si le résultat du test est **négatif**, ils pourront poursuivre les enseignements en **présentiel**,
-        - ils devront ensuite réaliser **deux autotests** (délivrés gratuitement en pharmacie) 2 jours après et 4 jours après leur **dernier contact** avec la personne positive.
+        - ils seront invités à réaliser au plus tôt un **test de dépistage** gratuit (test PCR nasopharyngé, PCR salivaire, ou antigénique nasopharyngé) : si le résultat du test est **négatif**, ils pourront poursuivre les enseignements en **présentiel**,
+        - ils devront ensuite réaliser à la maison **2 autotests** (délivrés **gratuitement** en pharmacie) **2 jours** après et **4 jours** après leur **dernier contact** avec la personne positive.
+
+          *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à recommencer ce parcours de trois tests.*
+
       * s’ils ne sont **pas complètement vaccinés** :
         - ils devront **s’isoler** pendant **7 jours**, et poursuivre leurs apprentissages **à distance** pendant cette période.
 
@@ -106,6 +109,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     - **2 jours après** son **dernier contact** avec la personne positive, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
     - **4 jours après** son **dernier contact** avec la personne positive, pour confirmer qu’il ou elle n’a pas été contaminé(e).
 
+    *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à recommencer ce parcours de trois tests.*
+
     <div class="voir-aussi">
 
     - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
@@ -152,6 +157,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     - **2 jours après** son **dernier contact** avec la personne positive, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
     - **4 jours après** son **dernier contact** avec la personne positive, pour confirmer qu’il ou elle n’a pas été contaminé(e).
+
+    *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, ils n’aura pas à recommencer ce parcours de trois tests.*
 
     <div class="voir-aussi">
 
