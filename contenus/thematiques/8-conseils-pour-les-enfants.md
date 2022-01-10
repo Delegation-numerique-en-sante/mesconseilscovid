@@ -283,7 +283,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     À compter du mercredi 22 décembre, la vaccination est possible pour tous les enfants âgés de **5 à 11 ans**, suite aux avis favorables de la Haute autorité de santé (HAS), du Conseil consultatif national d’éthique (CCNE) et du Conseil d’orientation de la stratégie vaccinale (COSV).
 
-    Cette vaccination est **facultative** , et se fait avec une forme pédiatrique (trois fois moins dosée) du vaccin **Pfizer**. **L’**accord des deux parents** (ou titulaires de l'autorité parentale) est nécéssaire.
+    Cette vaccination est **facultative**, et se fait avec une forme pédiatrique (trois fois moins dosée) du vaccin **Pfizer**. L’**accord des deux parents** (ou titulaires de l’autorité parentale) est nécessaire.
 
 
 .. question:: Où faire vacciner un mineur et avec quel vaccin ?
