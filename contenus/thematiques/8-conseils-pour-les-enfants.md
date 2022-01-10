@@ -333,7 +333,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
     :level: 3
 
-    * Pour un enfant de **5 à 11 ans**, le consentement écrit des **deux parents** ou tuteurs est obligatoire. Un formulaire d’autorisation peut être [téléchargé à l’avance](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) et sera également disponible dans le centre de vaccination.
+    * Pour un enfant de **5 à 11 ans**, l’accord des **deux parents** ou tuteurs est obligatoire. Le formulaire d’autorisation peut être [téléchargé à l’avance](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19_pour_les_enfants_de_5_a_11_ans.pdf) et sera également disponible dans le centre de vaccination.
+        * Si les deux parents sont présents, ils signent tous les deux le formulaire d’autorisation parentale.
+        * Si un seul des deux parents est présent, il signe le formulaire d’autorisation parentale et déclare sur l’honneur que l’autre parent a donné également son consentement à la vaccination de l’enfant.
 
       Le jour de la vaccination, l’enfant **doit être accompagné** de l’un de ses parents (ou titulaires de l’autorité parentale).
 
