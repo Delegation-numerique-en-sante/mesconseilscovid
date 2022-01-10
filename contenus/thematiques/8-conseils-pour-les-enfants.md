@@ -363,7 +363,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Quels justificatifs apporter le jour du rendez-vous de vaccination ?
     :level: 3
 
-    * Pour un enfant de **5 à 11 ans** [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par les **deux parents** ou par les tuteurs.
+    * Pour un enfant de **5 à 11 ans** [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19_pour_les_enfants_de_5_a_11_ans.pdf) signée par les **deux parents** lorsqu’ils sont présents, ou seulement par **le parent accompagnateur**, qui atteste alors sur l’honneur que l’autre parent a aussi donné son accord.
     * Pour un(e) adolescent(e) de **12 à 15 ans**, [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par **un des deux parents** ou par le tuteur.
     * La **carte vitale** de l’adolescent(e) (si disponible), et **celle d’un parent** (ou une [attestation de droits](https://www.ameli.fr/paris/assure/adresses-et-contacts/lobtention-dun-document/obtenir-une-attestation/obtenir-une-attestation-de-droits) mentionnant le numéro de sécurité sociale d’un parent).
     * La preuve de contamination antérieure, si le mineur a déjà été contaminé par la Covid. Cette preuve peut-être un ancien **test positif** (PCR ou antigénique), ou une **sérologie** (prise de sang) indiquant la présence d’anticorps. Il faut respecter un délai de **2 mois minimum** après ce test positif avant de se faire vacciner.
