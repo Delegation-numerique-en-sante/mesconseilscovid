@@ -283,7 +283,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     À compter du mercredi 22 décembre, la vaccination est possible pour tous les enfants âgés de **5 à 11 ans**, suite aux avis favorables de la Haute autorité de santé (HAS), du Conseil consultatif national d’éthique (CCNE) et du Conseil d’orientation de la stratégie vaccinale (COSV).
 
-    Cette vaccination est **facultative**, et se fait avec une forme pédiatrique (trois fois moins dosée) du vaccin **Pfizer**.
+    Cette vaccination est **facultative** , et se fait avec une forme pédiatrique (trois fois moins dosée) du vaccin **Pfizer**. **L’**accord des deux parents** (ou titulaires de l'autorité parentale) est nécéssaire.
 
 
 .. question:: Où faire vacciner un mineur et avec quel vaccin ?
@@ -313,6 +313,15 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * **une seule dose**, s’ils ont déjà été contaminés à la Covid (dans ce cas, il faut attendre **au minimum 2 mois** après le test positif avant de se faire vacciner) ;
     * **deux doses**, s’ils n’ont pas déjà été contaminés par la Covid.
+    
+    Le délai entre les deux doses dépend du vaccin et de l'âge de votre enfant : 
+    
+    * enfant âgé de **5 à 11 ans** (dosage pédiatrique du vaccin Pfizer) : entre **18 et 24 jours**.
+    
+    * enfant âgé de **12 à 17 ans** :
+        * 3 à 7 semaines après la première, pour le vaccin Pfizer ;
+        * 4 à 7 semaines après la première, pour le vaccin Moderna.
+
 
     <div class="voir-aussi">
 
@@ -324,7 +333,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Faut-il une autorisation parentale pour vacciner un mineur ?
     :level: 3
 
-    * Pour un enfant de **5 à 11 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Un formulaire d’autorisation peut être [téléchargé à l’avance](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) et sera également disponible dans le centre de vaccination.
+    * Pour un enfant de **5 à 11 ans**, le consentement écrit des **deux parents** ou tuteurs est obligatoire. Un formulaire d’autorisation peut être [téléchargé à l’avance](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) et sera également disponible dans le centre de vaccination.
 
       Le jour de la vaccination, l’enfant **doit être accompagné** de l’un de ses parents (ou titulaires de l’autorité parentale).
 
@@ -352,7 +361,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Quels justificatifs apporter le jour du rendez-vous de vaccination ?
     :level: 3
 
-    * Pour un enfant de **5 à 11 ans** ou pour un(e) adolescent(e) de **12 à 15 ans**, [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par un des deux parents ou par le tuteur.
+    * Pour un enfant de **5 à 11 ans** [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par les **deux parents** ou par les tuteurs.
+    * Pour un(e) adolescent(e) de **12 à 15 ans**, [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par **un des deux parents** ou par le tuteur.
     * La **carte vitale** de l’adolescent(e) (si disponible), et **celle d’un parent** (ou une [attestation de droits](https://www.ameli.fr/paris/assure/adresses-et-contacts/lobtention-dun-document/obtenir-une-attestation/obtenir-une-attestation-de-droits) mentionnant le numéro de sécurité sociale d’un parent).
     * La preuve de contamination antérieure, si le mineur a déjà été contaminé par la Covid. Cette preuve peut-être un ancien **test positif** (PCR ou antigénique), ou une **sérologie** (prise de sang) indiquant la présence d’anticorps. Il faut respecter un délai de **2 mois minimum** après ce test positif avant de se faire vacciner.
 
