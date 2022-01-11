@@ -59,11 +59,7 @@ export function createElementFromHTML(htmlString) {
 }
 
 export function cloneElementInto(sourceElement, targetElement) {
-    const clone = sourceElement.cloneNode(true)
-    targetElement.innerHTML = ''
-    while (clone.firstElementChild) {
-        targetElement.insertAdjacentElement('beforeend', clone.firstElementChild)
-    }
+    targetElement.innerHTML = sourceElement.innerHTML
 }
 
 export function escapeHtml(str) {
