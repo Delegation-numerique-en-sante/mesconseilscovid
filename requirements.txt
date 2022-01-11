@@ -34,7 +34,7 @@ idna==3.3
     #   rfc3986
 iniconfig==1.1.1
     # via pytest
-jinja2==3.0.2
+jinja2==3.0.3
     # via -r requirements.in
 livereload @ git+https://github.com/ronnix/python-livereload.git@2358f347d6f933d423675a80a661ef8bb7885a34
     # via -r requirements.in
@@ -74,7 +74,7 @@ regex==2021.11.1
     # via -r requirements.in
 rfc3986[idna2008]==1.5.0
     # via httpx
-selectolax==0.3.5
+selectolax==0.3.6
     # via -r requirements.in
 six==1.16.0
     # via
