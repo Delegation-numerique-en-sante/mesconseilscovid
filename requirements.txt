@@ -74,7 +74,7 @@ regex==2021.11.10
     # via -r requirements.in
 rfc3986[idna2008]==1.5.0
     # via httpx
-selectolax==0.3.5
+selectolax==0.3.6
     # via -r requirements.in
 six==1.16.0
     # via
