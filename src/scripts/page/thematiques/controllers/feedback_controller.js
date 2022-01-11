@@ -8,6 +8,7 @@ export default class extends Controller {
     static values = {
         endpoint: String,
         kind: String,
+        question: String,
     }
     static targets = ['textarea', 'positif', 'negatif', 'reponse']
 
@@ -57,7 +58,7 @@ export default class extends Controller {
         envoieLesRemarques({
             ...Object.fromEntries(data), // TODO: polyfill
             endpoint: this.endpointValue,
-            question: undefined, // TODO
+            question: this.questionValue,
         })
         this.dispatch('sent')
     }
