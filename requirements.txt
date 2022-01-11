@@ -36,7 +36,7 @@ iniconfig==1.1.1
     # via pytest
 jinja2==3.0.2
     # via -r requirements.in
-livereload @ git+https://github.com/ronnix/python-livereload.git@5bab70d80462f0a7424a2b0b85145fcaa7a645a5
+livereload @ git+https://github.com/ronnix/python-livereload.git@2358f347d6f933d423675a80a661ef8bb7885a34
     # via -r requirements.in
 markupsafe==2.0.1
     # via jinja2
