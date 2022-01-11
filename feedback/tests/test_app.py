@@ -26,6 +26,7 @@ async def test_post_feedback_without_user_agent(client, app):
             "kind": "flag",
             "message": "J’ai *rien* compris",
             "page": "introduction",
+            "question": "",
         },
     )
     assert resp.status == HTTPStatus.ACCEPTED
@@ -45,6 +46,7 @@ async def test_post_feedback_with_user_agent(client, app):
             "kind": "flag",
             "message": "J’ai *rien* compris\ndu tout",
             "page": "introduction",
+            "question": "",
         },
         headers={
             "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B179 Safari/7534.48.3",
@@ -67,6 +69,7 @@ async def test_post_feedback_with_user_agent_and_source(client, app):
             "kind": "flag",
             "message": "J’ai *rien* compris\ndu tout",
             "page": "introduction",
+            "question": "",
             "source": "tra_la_la",
         },
         headers={
