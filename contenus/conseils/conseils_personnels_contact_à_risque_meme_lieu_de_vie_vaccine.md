@@ -12,7 +12,7 @@ Il n’est **pas nécessaire de vous isoler** mais vous devez :
         - faites un **test antigénique ou PCR** pour **confirmer** ce résultat positif et restez isolé(e) en attendant ;
         - si le résultat positif à l’autotest est **confirmé** :
             * maintenez votre isolement pour une durée de **7 jours** ;
-            * vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test négatif et d’absence de fièvre ou de symptômes depuis au moins 48 h.
+            * vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test antigénique négatif et d’absence de fièvre ou de symptômes depuis au moins 48 h.
 1. Si vous constatez l’apparition de **symptômes** :
     * Contacter votre médecin et faire un **test de dépistage gratuit** (test PCR ou antigénique) dès que possible.
     * Ne pas prendre d’**anti-inflammatoires** (ibuprofène ou kétoprofène) sans avis médical. Les anti-inflammatoires pourraient **aggraver** l’infection à la Covid. Seul le **paracétamol** est recommandé. En cas de doute, demandez conseil à votre médecin.
