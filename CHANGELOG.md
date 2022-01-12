@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022-01-12
+
+* met à jour le protocole scolaire
+
 ## 2022-01-07
 
 * met à jour le protocole scolaire
