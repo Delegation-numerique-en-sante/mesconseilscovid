@@ -107,11 +107,11 @@ Même si vous ne présentez pas de symptômes, faites un **test de dépistage** 
 
 Si vous devez **garder votre enfant** positif à la Covid mais que vous ne pouvez pas télétravailler, vous pouvez bénéficier du **chômage partiel**. Pour plus d’information sur la démarche, consultez notre page dédiée aux [conseils pour les enfants et adolescents](/conseils-pour-les-enfants.html#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid).
 
-#### 2. Faites 2 autotests après la guérison ou la fin d’isolement de la personne positive
+#### 2. Faites 2 autotests à J+2 et J+4
 
 <div class="conseil">
 
-Si votre premier test était **négatif**, vous devrez faire **2 autotests de contrôle** (délivrés **gratuitement** en pharmacie) au **2<sup>e</sup> jour** et au **4<sup>e</sup> jour** suivant la guérison ou la fin d’isolement de la personne positive.
+Si votre premier test était **négatif**, vous devrez faire **2 autotests de contrôle** (délivrés **gratuitement** en pharmacie) au **2<sup>e</sup> jour** et au **4<sup>e</sup> jour** après la date du **premier test**.
 
 </div>
 
