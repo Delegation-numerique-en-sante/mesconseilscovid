@@ -482,7 +482,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Les autotests pour le dépistage en milieu scolaire sont délivrés gratuitement en pharmacie, sur présentation d’une attestation fournie par l’école.
 
-    Les autotests de surveillance à J+2 et J+4 pour les cas contacts vaccinés sont également délivrés gratuitement en pharmacie, sur présentation du résultat de test PCR ou antigénique négatif.
+    Les autotests de surveillance à J+2 et J+4 pour les cas contacts vaccinés sont également délivrés gratuitement en pharmacie, sur présentation du résultat de test PCR ou antigénique négatif et d’un document justifiant le statut de personnes contact.
 
 
 .. question:: Les tests sont-ils dangereux pour les enfants ?
