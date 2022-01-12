@@ -45,7 +45,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * Pour les élèves de **moins de 12 ans** (quel que soit leur statut vaccinal), lorsqu’**un cas positif** est confirmé dans la classe :
 
       * les élèves seront invités à réaliser au plus tôt un **test de dépistage** gratuit (test PCR nasopharyngé, PCR salivaire, ou antigénique nasopharyngé) : si le résultat du test est **négatif**, ils pourront poursuivre les enseignements en **présentiel** ;
-      * ils devront ensuite réaliser à la maison **2 autotests** (délivrés **gratuitement** en pharmacie) **2 jours** après et **4 jours** après leur **dernier contact** avec la personne positive (en cas de difficultés pour obtenir des autotests, la surveillance peut aussi se faire par test antigénique ou PCR).
+      * ils devront ensuite réaliser à la maison **2 autotests** (délivrés **gratuitement** en pharmacie) **2 jours** après et **4 jours** après la date du **premier test** (en cas de difficultés pour obtenir des autotests, la surveillance peut aussi se faire par test antigénique ou PCR).
 
         *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à recommencer ce parcours de trois tests.*
 
@@ -53,7 +53,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
       * s’ils sont **complètement vaccinés** :
         - ils seront invités à réaliser au plus tôt un **test de dépistage** gratuit (test PCR nasopharyngé, PCR salivaire, ou antigénique nasopharyngé) : si le résultat du test est **négatif**, ils pourront poursuivre les enseignements en **présentiel**,
-        - ils devront ensuite réaliser à la maison **2 autotests** (délivrés **gratuitement** en pharmacie) **2 jours** après et **4 jours** après leur **dernier contact** avec la personne positive (en cas de difficultés pour obtenir des autotests, la surveillance peut aussi se faire par test antigénique ou PCR).
+        - ils devront ensuite réaliser à la maison **2 autotests** (délivrés **gratuitement** en pharmacie) **2 jours** après et **4 jours** après la date du **premier test** (en cas de difficultés pour obtenir des autotests, la surveillance peut aussi se faire par test antigénique ou PCR).
 
           *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à recommencer ce parcours de trois tests.*
 
@@ -104,10 +104,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 3. Autotests de contrôle
 
-    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire **2 autotests** de contrôle (délivrés **gratuitement** en pharmacie) :
-
-    - **2 jours après** son **dernier contact** avec la personne positive, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
-    - **4 jours après** son **dernier contact** avec la personne positive, pour confirmer qu’il ou elle n’a pas été contaminé(e).
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire **2 autotests** de contrôle :
+    - **2 jours** après et **4 jours** après la date du **premier test**,
+    - ces autotests vous seront délivrés **gratuitement** en pharmacie.
 
     En cas de difficultés pour obtenir des autotests, la surveillance peut aussi se faire par test antigénique ou PCR.
 
@@ -155,10 +154,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 3. Autotests de contrôle
 
-    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire **2 autotests** de contrôle (délivrés **gratuitement** en pharmacie) :
-
-    - **2 jours après** son **dernier contact** avec la personne positive, pour vérifier qu’il ou elle n’a pas été contaminé(e) ;
-    - **4 jours après** son **dernier contact** avec la personne positive, pour confirmer qu’il ou elle n’a pas été contaminé(e).
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire **2 autotests** de contrôle :
+    - **2 jours** après et **4 jours** après la date du **premier test**,
+    - ces autotests vous seront délivrés **gratuitement** en pharmacie.
 
     En cas de difficultés pour obtenir des autotests, la surveillance peut aussi se faire par test antigénique ou PCR.
 

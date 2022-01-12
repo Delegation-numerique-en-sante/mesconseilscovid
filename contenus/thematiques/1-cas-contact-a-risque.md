@@ -57,8 +57,8 @@ Le test est toujours **gratuit** quand vous êtes cas contact.
 
 ##### Si le test est négatif 👇
 
-* vous devrez faire **deux autotests** de contrôle (voir plus bas) :
-    - **2 jours** après et **4 jours** après le **dernier contact** avec la personne positive,
+* vous devrez faire **2 autotests** de contrôle (voir plus bas) :
+    - **2 jours** après et **4 jours** après la date du **premier test**,
     - ces autotests vous seront délivrés **gratuitement** en pharmacie ;
 * comme vous êtes complètement vacciné(e), on considère que vous avez un **risque modéré**, et qu’il n’est **pas nécessaire de vous isoler** ;
 * en attendant, restez quand même prudent(e) :
@@ -82,10 +82,9 @@ Le test est toujours **gratuit** quand vous êtes cas contact.
 
 <div class="conseil">
 
-Si votre premier test était **négatif**, vous devrez faire **2 autotests de contrôle**, qui vous seront délivrés **gratuitement** en pharmacie :
-
-* le premier : **2 jours** après votre **dernier contact** avec la personne positive (après sa guérison ou la fin de son isolement si vous habitez avec elle) ;
-* le deuxième : **4 jours** après ce dernier contact.
+Si votre premier test était **négatif**, vous devrez faire **2 autotests** de contrôle :
+    - **2 jours** après et **4 jours** après la date du **premier test**,
+    - ces autotests vous seront délivrés **gratuitement** en pharmacie.
 
 </div>
 
