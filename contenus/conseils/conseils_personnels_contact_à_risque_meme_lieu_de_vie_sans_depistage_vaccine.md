@@ -1,6 +1,7 @@
 Nous vous conseillons de :
 
 1. Faire un **test de dépistage gratuit** (test PCR ou antigénique) **dès que possible** (voir la <a href="https://www.sante.fr/cf/centres-depistage-covid.html">carte des lieux de test</a>).
+    * Si le contact à risque a eu lieu en **milieu scolaire**, alors ce premier test pourra être un **autotest**, délivré gratuitement en pharmacie (en cas de résultat positif à l’autotest, il faudra le **confirmer** par un test PCR ou antigénique).
     * Si le test est **positif** : isolez-vous pour une durée de **7 jours** ; vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test antigénique négatif et d’absence de fièvre ou de symptômes depuis au moins 48 h.
     * Si le test est **négatif**, il ne sera **pas nécessaire de vous isoler**, mais restez prudent(e) :
         + respectez les **mesures barrières** au sein de votre foyer ;
