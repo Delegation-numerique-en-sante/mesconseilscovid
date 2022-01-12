@@ -97,7 +97,7 @@ Même si vous ne présentez pas de symptômes, faites un **test de dépistage** 
 
 * Si le test est **positif** :
     - isolez-vous pour une durée de **7 jours** ;
-    - vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test négatif (test PCR ou antigénique) et d’absence de fièvre ou de symptômes depuis au moins 48 h.
+    - vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test antigénique négatif et d’absence de fièvre ou de symptômes depuis au moins 48 h.
 
 * Si le test est **négatif**, il n’est **pas nécessaire de vous isoler**, mais restez prudent(e) :
     - respectez les **mesures barrières** au sein de votre foyer ;
@@ -122,7 +122,7 @@ Si votre premier test était **négatif**, vous devrez faire **2 autotests de co
 
     - si le résultat positif à l’autotest est **confirmé** :
         + maintenez votre isolement pour une durée de **7 jours** ;
-        + vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test négatif et d’absence de fièvre ou de symptômes depuis au moins 48 h.
+        + vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test antigénique négatif et d’absence de fièvre ou de symptômes depuis au moins 48 h.
 
 <div class="conseil conseil-jaune">
 
