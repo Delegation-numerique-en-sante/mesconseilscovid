@@ -44,16 +44,21 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * Pour les élèves de **moins de 12 ans** (quel que soit leur statut vaccinal), lorsqu’**un cas positif** est confirmé dans la classe :
 
-      * les élèves seront invités à réaliser au plus tôt un **test de dépistage** gratuit (test PCR nasopharyngé, PCR salivaire, ou antigénique nasopharyngé) : si le résultat du test est **négatif**, ils pourront poursuivre les enseignements en **présentiel** ;
-      * ils devront ensuite réaliser à la maison **2 autotests** (délivrés **gratuitement** en pharmacie) **2 jours** après et **4 jours** après la date du **premier test** (en cas de difficultés pour obtenir des autotests, la surveillance peut aussi se faire par test antigénique ou PCR).
+      * les élèves seront invités à réaliser au plus tôt un **autotest**, délivré **gratuitement** en pharmacie : si le résultat du test est **négatif**, ils pourront poursuivre les enseignements en **présentiel** ;
+
+        *Note: ce premier test peut aussi être un test PCR ou antigénique (toujours gratuit pour les enfants) lorsque les parents le souhaitent.*
+
+      * ils devront ensuite réaliser à la maison **2 autotests** de surveillance (délivrés **gratuitement** en pharmacie) **2 jours** après et **4 jours** après la date du **premier test** (en cas de difficultés pour obtenir des autotests, la surveillance peut aussi se faire par test antigénique ou PCR).
 
         *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à recommencer ce parcours de trois tests.*
 
     * Pour les élèves de **12 ans et plus**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. La conduite à tenir pour les élèves **« cas contact »** dépend alors de leur statut vaccinal :
 
       * s’ils sont **complètement vaccinés** :
-        - ils seront invités à réaliser au plus tôt un **test de dépistage** gratuit (test PCR nasopharyngé, PCR salivaire, ou antigénique nasopharyngé) : si le résultat du test est **négatif**, ils pourront poursuivre les enseignements en **présentiel**,
-        - ils devront ensuite réaliser à la maison **2 autotests** (délivrés **gratuitement** en pharmacie) **2 jours** après et **4 jours** après la date du **premier test** (en cas de difficultés pour obtenir des autotests, la surveillance peut aussi se faire par test antigénique ou PCR).
+        - les élèves seront invités à réaliser au plus tôt un **autotest**, délivré **gratuitement** en pharmacie : si le résultat du test est **négatif**, ils pourront poursuivre les enseignements en **présentiel** ;
+
+          *Note: ce premier test peut aussi être un test PCR ou antigénique (toujours gratuit pour les enfants) lorsque les parents le souhaitent.*
+        - ils devront ensuite réaliser à la maison **2 autotests** de surveillance (délivrés **gratuitement** en pharmacie) **2 jours** après et **4 jours** après la date du **premier test** (en cas de difficultés pour obtenir des autotests, la surveillance peut aussi se faire par test antigénique ou PCR).
 
           *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à recommencer ce parcours de trois tests.*
 
@@ -84,14 +89,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 1. Pas d’isolement
 
-    Si votre enfant de moins de 12 ans est « **cas contact** », qu’il soit **vacciné ou non**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école à condition de faire un **test de dépistage**, puis **2 autotests** de contrôle.
+    Si votre enfant de moins de 12 ans est « **cas contact** », qu’il soit **vacciné ou non**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école à condition de faire un **test immédiat**, puis **2 autotests** de surveillance.
 
     #### 2. Test de dépistage
 
     Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
     * Si le test est **négatif** :
-        * il devra faire **2 autotests** de contrôle (voir plus bas) ;
+        * il devra faire **2 autotests** de surveillance (voir plus bas) ;
         * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
         * en cas d’apparition de **fièvre** ou de **symptômes**, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
 
@@ -102,9 +107,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
             - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à l’isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
         - les autres membres du **foyer** sont à leur tour **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois).
 
-    #### 3. Autotests de contrôle
+    #### 3. Surveillance par autotests
 
-    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire **2 autotests** de contrôle :
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire **2 autotests** de surveillance :
     - **2 jours** après et **4 jours** après la date du **premier test**,
     - ces autotests vous seront délivrés **gratuitement** en pharmacie.
 
@@ -134,14 +139,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 1. Pas d’isolement
 
-    Si votre enfant de 12 ans ou plus est « **cas contact** » et qu’il est **vacciné**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école à condition de faire un **test de dépistage**, puis **2 autotests** de contrôle.
+    Si votre enfant de 12 ans ou plus est « **cas contact** » et qu’il est **vacciné**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école à condition de faire un **test de dépistage**, puis **2 autotests** de surveillance.
 
     #### 2. Test de dépistage
 
     Votre enfant devra faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
     * Si le test est **négatif** :
-        * il devra faire **2 autotests** de contrôle (voir plus bas) ;
+        * il devra faire **2 autotests** de surveillance (voir plus bas) ;
         * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
         * en cas d’apparition de **fièvre** ou de **symptômes**, faites lui passer un nouveau test sans attendre, et contactez un **médecin** (ou le 15) en cas de difficultés respiratoires.
 
@@ -152,9 +157,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
             - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à l’isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
         - les autres membres du **foyer** sont à leur tour **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois).
 
-    #### 3. Autotests de contrôle
+    #### 3. Surveillance par autotests
 
-    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire **2 autotests** de contrôle :
+    Si le 1<sup>er</sup> test de votre enfant était négatif, alors il devra faire **2 autotests** de surveillance :
     - **2 jours** après et **4 jours** après la date du **premier test**,
     - ces autotests vous seront délivrés **gratuitement** en pharmacie.
 
@@ -475,7 +480,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     **Non**. Pour les mineurs, les tests de dépistages sont toujours gratuits et réalisés sans prescription médicale (ordonnance).
 
-    Les deux autotests de contrôle demandés à J+2 et J+4 sont également délivrés gratuitement en pharmacie, sur présentation du résultat de test PCR ou antigénique négatif.
+    Les autotests pour le dépistage en milieu scolaire sont délivrés gratuitement en pharmacie, sur présentation d’une attestation fournie par l’école.
+
+    Les autotests de surveillance à J+2 et J+4 pour les cas contacts vaccinés sont également délivrés gratuitement en pharmacie, sur présentation du résultat de test PCR ou antigénique négatif.
 
 
 .. question:: Les tests sont-ils dangereux pour les enfants ?
