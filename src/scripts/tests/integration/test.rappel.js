@@ -178,7 +178,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 16 février 2022.'
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 15 février 2022.'
             )
         })
 
@@ -282,6 +282,8 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 17 janvier 2022.'
             )
         })
+    })
+    describe('Éligible au rappel et pass sanitaire au 15 février', function () {
         it('18 à 65 ans, 17 juillet', async function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
@@ -303,7 +305,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             ) // début de la campagne de rappel pour les moins de 65 ans
             assert.include(
                 statut,
-                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 16 février 2022.'
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 15 février 2022.'
             )
         })
         it('18 à 65 ans, 17 août', async function () {
@@ -327,7 +329,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             ) // début de la campagne de rappel pour les moins de 65 ans
             assert.include(
                 statut,
-                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 19 mars 2022.'
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 15 février 2022.'
             )
         })
         it('18 à 65 ans, 17 septembre', async function () {
@@ -354,7 +356,55 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             assert.include(
                 statut,
-                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 19 avril 2022.'
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 15 février 2022.'
+            )
+        })
+        it('18 à 65 ans, 17 octobre', async function () {
+            const questionnaire = new Questionnaire(
+                this.test.page,
+                'pass-sanitaire-qr-code-voyages.html',
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+            )
+            await questionnaire.cEstParti()
+            await questionnaire.remplirAge('moins65')
+            await questionnaire.remplirVaccinationInitiale('autre')
+            await questionnaire.remplirDateDerniereDose('2021-10-17')
+
+            const statut = await questionnaire.recuperationStatut('rappel-et-pass')
+            assert.include(statut, 'Vous avez entre 18 et 64 ans')
+            assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
+            assert.include(statut, 'Votre dernière injection date du 17 octobre 2021.')
+            assert.include(
+                statut,
+                'Vous pourrez recevoir votre dose de rappel à partir du 17 janvier 2022.'
+            )
+            assert.include(
+                statut,
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 16 février 2022.'
+            )
+        })
+        it('18 à 65 ans, 10 février', async function () {
+            const questionnaire = new Questionnaire(
+                this.test.page,
+                'pass-sanitaire-qr-code-voyages.html',
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+            )
+            await questionnaire.cEstParti()
+            await questionnaire.remplirAge('moins65')
+            await questionnaire.remplirVaccinationInitiale('autre')
+            await questionnaire.remplirDateDerniereDose('2022-02-10')
+
+            const statut = await questionnaire.recuperationStatut('rappel-et-pass')
+            assert.include(statut, 'Vous avez entre 18 et 64 ans')
+            assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
+            assert.include(statut, 'Votre dernière injection date du 10 février 2022.')
+            assert.include(
+                statut,
+                'Vous pourrez recevoir votre dose de rappel à partir du 13 mai 2022.'
+            )
+            assert.include(
+                statut,
+                'En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du 12 juin 2022.'
             )
         })
     })

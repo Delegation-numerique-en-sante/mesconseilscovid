@@ -86,13 +86,16 @@
 
     {{ formulaire('rappel', 'date-limite-pass') }}
 
-    - À partir du **15 décembre 2021** :
+    - Depuis le **15 décembre 2021** :
         * si vous avez **65 ans ou plus** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **7 mois**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal (dit 3<sup>e</sup> dose).
 
-        * quel que soit votre âge, si vous avez reçu le **vaccin Janssen** depuis plus de **1 mois et 4 semaines,** alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal.
+        * quel que soit votre âge, si vous avez reçu le **vaccin Janssen** depuis plus de **2 mois**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal.
 
-    - À partir du **15 janvier 2022** :
+    - Depuis le **15 janvier 2022** :
         * si vous avez entre **18 et 64 ans** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **7 mois**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal (dit 3<sup>e</sup> dose).
+
+    - À partir du **15 février 2022** :
+        * si vous avez **18 ans ou plus** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **4 mois**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal (dit 3<sup>e</sup> dose).
 
 
     <div class="voir-aussi">

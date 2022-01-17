@@ -26,11 +26,18 @@ import { Formulaire } from './formulaire'
 const JOURS_DANS_1_MOIS = 31
 const JOURS_DANS_2_MOIS = 61
 const JOURS_DANS_3_MOIS = 92
+const JOURS_DANS_4_MOIS = 122
 const JOURS_DANS_7_MOIS = 214
 
 export function dynamiseLaProlongationDuPass(prefixe) {
     const formulaire = new FormulaireProlongationPassSanitaire(prefixe)
     formulaire.demarre()
+}
+
+function minIfNotNull(date1, date2) {
+    if (!date1) return date2
+    if (!date2) return date1
+    return dayjs.min(date1, date2)
 }
 
 class FormulaireProlongationPassSanitaire extends Formulaire {
@@ -170,18 +177,43 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                         dateDerniereDose.add(delaiEligibiliteEnJours, 'day')
                     )
 
-                    // Avant quelle date faire le rappel pour ne pas perdre son pass /
-                    // à quelle date mon pass cessera-t-il d’être valable ?
-                    const dateEntreeEnVigueur =
-                        this.age === 'plus65' || this.janssen
-                            ? dayjs('2021/12/15')
-                            : dayjs('2022/01/15')
-                    const delaiExpirationPassEnJours = this.janssen
-                        ? JOURS_DANS_2_MOIS
-                        : JOURS_DANS_7_MOIS
-                    const dateLimitePass = dayjs.max(
-                        dateEntreeEnVigueur,
-                        dateDerniereDose.add(delaiExpirationPassEnJours, 'day')
+                    // À partir du 15 décembre, durée de validité de 7 mois
+                    // pour les personnes de plus de 65 ans
+                    let dateLimitePass = null
+                    if (this.age === 'plus65') {
+                        dateLimitePass = dayjs.max(
+                            dayjs('2021/12/15'),
+                            dateDerniereDose.add(JOURS_DANS_7_MOIS, 'day')
+                        )
+                    }
+
+                    // À partir du 15 décembre, durée de validité de 2 mois
+                    // pour les personnes vaccinées avec Janssen
+                    if (this.janssen) {
+                        dateLimitePass = dayjs.max(
+                            dayjs('2021/12/15'),
+                            dateDerniereDose.add(JOURS_DANS_2_MOIS, 'day')
+                        )
+                    }
+
+                    // À partir du 15 janvier, la durée de validité de 7 mois
+                    // s’applique à toutes les personnes de plus de 18 ans
+                    dateLimitePass = minIfNotNull(
+                        dateLimitePass,
+                        dayjs.max(
+                            dayjs('2022/01/15'),
+                            dateDerniereDose.add(JOURS_DANS_7_MOIS, 'day')
+                        )
+                    )
+
+                    // À partir du 15 février, la durée de validité passe de 7 mois
+                    // à 4 mois
+                    dateLimitePass = minIfNotNull(
+                        dateLimitePass,
+                        dayjs.max(
+                            dayjs('2022/02/15'),
+                            dateDerniereDose.add(JOURS_DANS_4_MOIS, 'day')
+                        )
                     )
 
                     let params = {
@@ -199,7 +231,6 @@ class FormulaireProlongationPassSanitaire extends Formulaire {
                             ? 'injection supplémentaire'
                             : 'dose de rappel',
                         'date-eligibilite-rappel': dateEligibiliteRappel.format('LL'),
-                        'date-entree-en-vigueur': dateEntreeEnVigueur.format('LL'),
                     }
 
                     if (this.prolongationPass) {
