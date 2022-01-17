@@ -39,18 +39,18 @@
 
 <div class="conseil">
 
-Il faut **vous isoler dès maintenant**, et ce jusqu’au **7<sup>e</sup> jour** suivant la guérison ou la fin d’isolement de la personne positive.
+Il faut **vous isoler dès maintenant**, et ce jusqu’au **7<sup>e</sup> jour** suivant votre dernier contact avec la personne positive.
 
 </div>
 
 Si vous ne pouvez pas **télétravailler**, l’Assurance Maladie pourra vous prescrire un arrêt de travail. Pour plus d’information, rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr/).
 
 
-#### 2. Faites un test 7 jours après la guérison ou la fin d’isolement de la personne positive
+#### 2. Faites un test 7 jours après votre dernier contact avec la personne positive
 
 <div class="conseil">
 
-- Faites un **test de dépistage gratuit** (test PCR ou antigénique) au **7<sup>e</sup> jour** suivant la guérison ou la fin d’isolement de la personne positive.
+- Faites un **test de dépistage gratuit** (test PCR ou antigénique) au **7<sup>e</sup> jour** suivant votre dernier contact avec la personne positive.
 
 - Si des **symptômes** se déclarent avant cette date, faites-vous tester sans attendre.
 
