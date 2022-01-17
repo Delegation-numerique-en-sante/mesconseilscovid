@@ -1,5 +1,12 @@
 # Changelog
 
+## 2022-01-17
+
+* incorpore le passage à 4 mois prévu le 15 février de la validité
+  du pass sanitaire sans rappel
+* reprend à la lettre la doctrine en cas de contact à risque avec
+  une personne du même foyer pour les personnes non vaccinées
+
 ## 2022-01-12
 
 * met à jour le protocole scolaire
