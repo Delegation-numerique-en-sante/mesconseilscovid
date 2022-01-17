@@ -15,38 +15,38 @@
 ## Pass vaccinal & pass sanitaire en France
 
 .. question:: Qu’est-ce que le pass vaccinal ?
-   
-   Le pass vaccinal atteste du fait que vous êtes complètement vacciné(e), c'est-à-dire que vous avez reçu toutes les doses de vaccin anti-covid auquelles vous êtes éligible depuis 4 mois ou moins (3 mois + 1 mois de tolérance).
-    
-    A partir du XX janvier, le pass vaccinal remplacera le pass sanitaire dans la plupart des situations. Il s'appliquera pour toutes les personnes âgées de plus de 16 ans qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-sanitaire).
-    
+
+    Le pass vaccinal atteste du fait que vous êtes complètement vacciné(e), c’est-à-dire que vous avez reçu toutes les doses de vaccin anti-covid auxquelles vous êtes éligible depuis 4 mois ou moins (3 mois + 1 mois de tolérance).
+
+    À partir du XX janvier, le pass vaccinal remplacera le pass sanitaire dans la plupart des situations. Il s’appliquera pour toutes les personnes âgées de plus de 16 ans qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-sanitaire).
+
     Votre schéma de vaccination est complet si vous avez respecté les délais suivants :
-    * si vous avez été vacciné(e) avec les vaccins Pfizer ou Moderna : votre dernière dose doit dater d'il y a moins de 7 mois (5 mois + 2 mois de tolérance) ;
+    * si vous avez été vacciné(e) avec les vaccins Pfizer ou Moderna : votre dernière dose doit dater d’il y a moins de 7 mois (5 mois + 2 mois de tolérance) ;
     * si vous avez été vacciné(e) avec le vaccin Janssen et que vous avez reçu la **dose aditionnelle** il y a moins de 7 mois.
-    
-    *A partir du 15 février le délai de 7 mois sera réduit à 4 mois (3 mois + 1 mois de tolérance).*
-    
+
+    *À partir du 15 février le délai de 7 mois sera réduit à 4 mois (3 mois + 1 mois de tolérance).*
+
   <div class="voir-aussi">
-    
+
    - [Comment se passe mon rappel si je suis vacciné(e) avec une seule dose de Janssen ?](#je-suis-vaccine-e-avec-une-seule-dose-de-janssen-comment-se-passe-mon-rappel)
    - [Quand devrai-je recevoir ma dose de rappel pour conserver mon pass sanitaire ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire)
-       
+
   </div>
-    
+
 .. question:: Je ne suis pas encore vacciné(e). Combien de doses dois-je recevoir pour obtenir mon pass vaccinal ?
-    
-    Si vous n'êtes pas vacciné(e) contre la Covid, vous obtiendrez votre pass vaccinal une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation. Pour conserver ce pass, vous devrez recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans les 3 à 4 mois.
 
-   
+    Si vous n’êtes pas vacciné(e) contre la Covid, vous obtiendrez votre pass vaccinal une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation. Pour conserver ce pass, vous devrez recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans les 3 à 4 mois.
+
+
   <div class="voir-aussi">
-    
+
    - [Réponses à vos questions sur la primo-vaccination](#la-vaccination-initiale-schema-vaccinal-a-1-ou-2-doses)
-   
+
   </div>
 
-      
+
 .. question:: Mon pass sanitaire a été désactivé. Quand sera-t-il réactivé ?
-    
+
     Si vous ne faites pas votre rappel vaccinal dans les 7 mois suivants votre primo-vaccination votre pass sera automatiquement désactivé. Il sera réactivé **7 jours après** votre injection de rappel.
 
 
@@ -60,7 +60,7 @@
     - un [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) : un test de dépistage **positif**, **PCR** ou **antigénique** de **plus de 11 jours** et **moins de 6 mois** ;
 
     - un [certificat de contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-sanitaire) établi par l’Assurance Maladie ;
-    
+
     - une [attestation de vaccination](#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code) (uniquement pour les enfants de moins de 16 ans), qui indique que le schéma vaccinal est complet (1 ou 2 doses).
 
     <div class="conseil conseil-jaune">
@@ -101,7 +101,7 @@
 .. question:: Est-ce que je dois être vacciné pour avoir un pass sanitaire ?
     :level: 3
 
-    **Non**. La vaccination n’est pas la seule façon d’obtenir un pass sanitaire. 
+    **Non**. La vaccination n’est pas la seule façon d’obtenir un pass sanitaire.
     Si vous n’êtes pas encore complètement vacciné, vous pouvez présenter soit un **test de dépistage négatif** de **moins de 24 h**, soit un **test de dépistage positif** de plus de **11 jours** et de moins de **6 mois**.
 
     Si vous ne pouvez-pas vous faire vacciner en raison d’une [contre-indication médicale](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination), vous pouvez faire une [demande de pass sanitaire](/pass-sanitaire-qr-code-voyages.html#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-sanitaire) auprès de l’Assurance Maladie, sur la base d’un **certificat médical** établi par votre médecin.
