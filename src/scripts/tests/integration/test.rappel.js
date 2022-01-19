@@ -74,7 +74,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('plus65')
@@ -99,7 +99,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('plus65')
@@ -124,7 +124,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('plus65')
@@ -149,7 +149,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('plus65')
@@ -174,7 +174,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('plus65')
@@ -199,7 +199,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins65')
@@ -226,7 +226,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins65')
@@ -250,7 +250,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins65')
@@ -276,7 +276,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins65')
@@ -300,7 +300,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins65')
@@ -324,7 +324,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins65')
@@ -351,7 +351,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins65')
@@ -375,7 +375,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins65')
@@ -402,7 +402,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins18')
@@ -426,7 +426,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins18')
@@ -450,7 +450,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
-                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+                'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins18')
@@ -476,7 +476,7 @@ describe('Mini-questionnaire dose de rappel', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+            'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
         )
 
         const prefixe = await questionnaire.cEstParti()
@@ -508,7 +508,7 @@ describe('Mini-questionnaire dose de rappel', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+            'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
         )
 
         const prefixe = await questionnaire.cEstParti()
@@ -551,7 +551,7 @@ describe('Mini-questionnaire dose de rappel', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
+            'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal'
         )
 
         const prefixe = await questionnaire.cEstParti()

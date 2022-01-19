@@ -18,7 +18,7 @@
 
     Le passe vaccinal atteste du fait que vous êtes complètement vacciné(e), c’est-à-dire que vous avez reçu toutes les doses de vaccin anti-covid auxquelles vous êtes éligible depuis 4 mois ou moins (3 mois + 1 mois de tolérance).
 
-    Depuis le XX janvier, le passe vaccinal remplace le passe sanitaire dans la plupart des situations. Il s’applique à toutes les personnes âgées de plus de 16 ans qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-vaccinal).
+    Depuis le XX janvier, le passe vaccinal remplace le passe sanitaire dans la plupart des situations. Il s’applique à toutes les personnes âgées de plus de 16 ans qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal).
     Les règles du passe sanitaire continuent à s'appliquer aux mineurs âgés de 12 à 15 ans.
 
     Votre **schéma de vaccination est complet** si vous avez respecté les délais suivants :
@@ -35,7 +35,7 @@
 .. question:: Je ne suis pas encore vacciné(e). Combien de doses dois-je recevoir pour obtenir mon passe vaccinal ?
 
     Si vous n’êtes pas vacciné(e) contre la Covid, vous obtiendrez votre passe vaccinal une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation. Pour conserver ce passe, vous devrez ensuite recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans les 3 à 4 mois.
-    
+
     Si vous avez entrepris la démarche de vous faire vacciner mais que votre passe vaccinal n'est pas encore activé ou vous êtes en attente de la 2<sup>e</sup> dose, vous pourrez, en attendant, présenter un test de dépistage négatif (passe vaccinal transitoire) pour participer à certaines activités.
 
 
@@ -60,7 +60,7 @@
 
     - un [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) : un test de dépistage **positif**, **PCR** ou **antigénique** de **plus de 11 jours** et **moins de 6 mois** ;
 
-    - un [certificat de contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-vaccinal) établi par l’Assurance Maladie ;
+    - un [certificat de contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal) établi par l’Assurance Maladie ;
 
     - une [attestation de vaccination](#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code), qui indique que le schéma vaccinal est complet (1 ou 2 doses).
 
@@ -140,7 +140,7 @@
 
     <div class="conseil conseil-jaune">
 
-    Attention, un test sérologique (ou sérologie) ne tient pas lieu de pass vaccinal.
+    Attention, un test sérologique (ou sérologie) ne tient pas lieu de passe vaccinal.
 
     </div>
 
@@ -195,7 +195,7 @@
     - à certains grands centres commerciaux (sur décision du préfet) ;
     - aux **séminaires professionnels** de plus de 50 personnes organisés en dehors des locaux de l’entreprise ;
     - aux transports interrégionaux : avion, train, bus (sauf en cas de motif impérieux où il pourra être remplacé par un test de dépistage négatif).
-    
+
     * Pour les enfants de 12 à 15 ans, ces lieux sont accessibles sur présentation d'un passe sanitaire.*
 
     <div class="exemple">
@@ -210,10 +210,13 @@
 
     </div>
 
+
 .. question:: Dans quel cas faut-il présenter un passe vaccinal et un résultat de dépistage négatif ?
     :level: 3
-    
-    
+
+    ...
+
+
 .. question:: Le passe vaccinal ou sanitaire est-il obligatoire pour accéder aux établissements d’enseignement ?
     :level: 3
 
@@ -232,7 +235,7 @@
     Le passe vaccinal est **obligatoire** pour accéder aux moyens de transport **longue distance** en France : **avions**, **trains** (TGV, Intercités, Ouigo), et **cars inter-régionaux**.
 
     Les **trains régionaux** (TER) et les **transports urbains** (bus, métros, RER, trains de banlieue…) ne sont **pas concernés** par cette obligation.
-    
+
     En cas de **motif impérieux** (liste des motifs), une personne non vaccinée pourra présenter un test de dépistage négatif de moins de 24 H pour voyager.
 
 

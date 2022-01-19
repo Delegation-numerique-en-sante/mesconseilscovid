@@ -192,7 +192,7 @@ Votre **attestation de vaccination**, munie d’un QR code, fait office de pass 
 
 [Comment obtenir mon attestation de vaccination ?](#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code)
 
-[Avant quelle date dois-je recevoir la dose de rappel, dite 3e dose, pour conserver mon pass vaccinal ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-vaccinal)
+[Avant quelle date dois-je recevoir la dose de rappel, dite 3e dose, pour conserver mon passe vaccinal ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal)
 
 </div>
 

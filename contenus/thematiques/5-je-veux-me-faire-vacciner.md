@@ -30,7 +30,7 @@
 
     <div class="voir-aussi">
 
-    - [Avant quelle date dois-je recevoir la dose de rappel pour conserver mon pass vaccinal ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-vaccinal)
+    - [Avant quelle date dois-je recevoir la dose de rappel pour conserver mon passe vaccinal ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal)
     - [Où me faire vacciner ?](#ou-me-faire-vacciner)
 
     </div>
@@ -53,7 +53,7 @@
     </div>
 
 
-.. injection:: pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-pass-vaccinal
+.. injection:: pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-passe-vaccinal
 
 
 .. question:: À partir de quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
@@ -77,7 +77,7 @@
 
     - [Suis-je concerné par la dose de rappel ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
     - [Où me faire vacciner ?](#ou-me-faire-vacciner)
-    - [Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon pass vaccinal ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-vaccinal)
+    - [Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon passe vaccinal ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal)
 
     </div>
 
@@ -101,7 +101,7 @@
         - vous serez éligible au **rappel vaccinal** avec le vaccin Pfizer ou Moderna (demi-dose) dès **3 mois** après votre infection ; ce rappel prolongera la validité de votre pass sanitaire.
 
 
-.. injection:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-vaccinal
+.. injection:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal
 
 
 .. question:: Quels sont les facteurs de risque de formes graves de Covid ?
@@ -280,7 +280,7 @@
 
     <div class="voir-aussi">
 
-    - [Je ne peux pas me faire vacciner, comment obtenir un pass sanitaire ?](/pass-sanitaire-qr-code-voyages.html#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-pass-vaccinal)
+    - [Je ne peux pas me faire vacciner, comment obtenir un pass sanitaire ?](/pass-sanitaire-qr-code-voyages.html#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal)
 
     </div>
 
