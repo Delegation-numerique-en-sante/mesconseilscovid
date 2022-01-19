@@ -148,7 +148,7 @@ describe('Pass sanitaire', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'quel-justificatif-utiliser-comme-pass-sanitaire-en-france'
+            'quel-justificatif-utiliser-comme-passe-sanitaire-en-france'
         )
         await questionnaire.cEstParti()
 
@@ -171,7 +171,7 @@ describe('Pass sanitaire', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'quel-justificatif-utiliser-comme-pass-sanitaire-en-france'
+            'quel-justificatif-utiliser-comme-passe-sanitaire-en-france'
         )
         await questionnaire.cEstParti()
 
@@ -200,7 +200,7 @@ describe('Pass sanitaire', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'quel-justificatif-utiliser-comme-pass-sanitaire-en-france'
+            'quel-justificatif-utiliser-comme-passe-sanitaire-en-france'
         )
         await questionnaire.cEstParti()
 
@@ -225,7 +225,7 @@ describe('Pass sanitaire', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'quel-justificatif-utiliser-comme-pass-sanitaire-en-france'
+            'quel-justificatif-utiliser-comme-passe-sanitaire-en-france'
         )
         await questionnaire.cEstParti()
 
@@ -250,7 +250,7 @@ describe('Pass sanitaire', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'quel-justificatif-utiliser-comme-pass-sanitaire-en-france'
+            'quel-justificatif-utiliser-comme-passe-sanitaire-en-france'
         )
         await questionnaire.cEstParti()
 
@@ -271,7 +271,7 @@ describe('Pass sanitaire', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'quel-justificatif-utiliser-comme-pass-sanitaire-en-france'
+            'quel-justificatif-utiliser-comme-passe-sanitaire-en-france'
         )
         await questionnaire.cEstParti()
 
@@ -292,7 +292,7 @@ describe('Pass sanitaire', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'quel-justificatif-utiliser-comme-pass-sanitaire-en-france'
+            'quel-justificatif-utiliser-comme-passe-sanitaire-en-france'
         )
         await questionnaire.cEstParti()
 
@@ -315,7 +315,7 @@ describe('Pass sanitaire', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'quel-justificatif-utiliser-comme-pass-sanitaire-en-france'
+            'quel-justificatif-utiliser-comme-passe-sanitaire-en-france'
         )
         await questionnaire.cEstParti()
 
@@ -338,7 +338,7 @@ describe('Pass sanitaire', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'quel-justificatif-utiliser-comme-pass-sanitaire-en-france'
+            'quel-justificatif-utiliser-comme-passe-sanitaire-en-france'
         )
         await questionnaire.cEstParti()
 
@@ -357,7 +357,7 @@ describe('Pass sanitaire', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'quel-justificatif-utiliser-comme-pass-sanitaire-en-france'
+            'quel-justificatif-utiliser-comme-passe-sanitaire-en-france'
         )
         await questionnaire.cEstParti()
 
@@ -377,7 +377,7 @@ describe('Pass sanitaire', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'quel-justificatif-utiliser-comme-pass-sanitaire-en-france'
+            'quel-justificatif-utiliser-comme-passe-sanitaire-en-france'
         )
         const prefixe = await questionnaire.cEstParti()
 
@@ -422,7 +422,7 @@ describe('Pass sanitaire', function () {
         const questionnaire = new Questionnaire(
             this.test.page,
             'pass-sanitaire-qr-code-voyages.html',
-            'quel-justificatif-utiliser-comme-pass-sanitaire-en-france'
+            'quel-justificatif-utiliser-comme-passe-sanitaire-en-france'
         )
         const prefixe = await questionnaire.cEstParti()
 
