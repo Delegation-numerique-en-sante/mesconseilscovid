@@ -1,3 +1,5 @@
+from difflib import SequenceMatcher
+
 import mistune
 from selectolax.parser import HTMLParser as SelectolaxHTMLParser
 
@@ -34,7 +36,7 @@ def extract_questions(page):
                     if "children" in node:
                         yield from _extract_questions(node["children"])
 
-    questions = {}
+    questions = HelpfulDict()
     for node in _extract_questions(ast_tree):
         slug = slugify_title(node["titre"])
 
@@ -50,3 +52,13 @@ def extract_questions(page):
             "details": details,
         }
     return questions
+
+
+class HelpfulDict(dict):
+    def __getitem__(self, key):
+        try:
+            return super().__getitem__(key)
+        except KeyError:
+            closest = max(self.keys(), key=lambda q: SequenceMatcher(None, q, key).ratio())
+            message = f"{key!r} (vouliez-vous dire {closest!r}?)"
+            raise KeyError(message) from None
