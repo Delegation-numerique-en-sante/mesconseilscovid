@@ -5,7 +5,7 @@ import { bindFeedback, opacityTransition, envoieLesRemarques } from '../../feedb
 import { navigueVersUneThematique } from './navigation'
 import { dynamiseLeChoixDuTest } from './choixTestDepistage'
 import { dynamiseLeChoixDuPass } from './choixPassSanitaire'
-import { dynamiseLaProlongationDuPass } from './prolongationPassSanitaire'
+import { dynamiseLeRappelVaccinal } from './rappelVaccinal'
 
 export function pageThematique(app) {
     app.trackPageView(document.location.pathname)
@@ -110,7 +110,7 @@ function initFunc(nom) {
     } else if (nom == 'tests-de-depistage') {
         return dynamiseLeChoixDuTest
     } else if (nom == 'rappel') {
-        return dynamiseLaProlongationDuPass
+        return dynamiseLeRappelVaccinal
     }
 }
 

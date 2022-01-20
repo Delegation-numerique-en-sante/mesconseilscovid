@@ -29,8 +29,8 @@ const JOURS_DANS_3_MOIS = 92
 const JOURS_DANS_4_MOIS = 122
 const JOURS_DANS_7_MOIS = 214
 
-export function dynamiseLaProlongationDuPass(prefixe) {
-    const formulaire = new FormulaireProlongationPassSanitaire(prefixe)
+export function dynamiseLeRappelVaccinal(prefixe) {
+    const formulaire = new FormulaireRappelVaccinal(prefixe)
     formulaire.demarre()
 }
 
@@ -40,7 +40,7 @@ function minIfNotNull(date1, date2) {
     return dayjs.min(date1, date2)
 }
 
-class FormulaireProlongationPassSanitaire extends Formulaire {
+class FormulaireRappelVaccinal extends Formulaire {
     constructor(prefixe) {
         super(prefixe, 'age')
         this.age = undefined
