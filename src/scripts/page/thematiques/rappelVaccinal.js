@@ -72,8 +72,10 @@ class FormulaireRappelVaccinal extends Formulaire {
                 const value = getRadioValue(form, `${this.prefixe}_age_radio`)
                 this.age = value
                 hideElement(form)
-                if (value === 'plus65' || value === 'moins65' || value === 'moins18') {
+                if (value === 'plus65' || value === 'moins65') {
                     this.transitionneVersEtape('vaccination-initiale')
+                } else if (value === 'moins18') {
+                    this.transitionneVersEtape('date-derniere-dose')
                 } else {
                     console.error(`valeur inattendue: ${value}`)
                 }
@@ -110,33 +112,7 @@ class FormulaireRappelVaccinal extends Formulaire {
                             'date-derniere-dose',
                             'vaccination-initiale'
                         )
-                    } else {
-                        this.transitionneVersEtape('situation-moins18')
                     }
-                } else {
-                    console.error(`valeur inattendue: ${value}`)
-                }
-            })
-        },
-        'situation-moins18': (form) => {
-            const button = form.querySelector('input[type=submit]')
-            const requiredLabel = 'Cette information est requise'
-            toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
-            form.addEventListener('submit', (event) => {
-                event.preventDefault()
-                const value = getRadioValue(
-                    form,
-                    `${this.prefixe}_situation_moins18_radio`
-                )
-                hideElement(form)
-                if (value === 'immunodeprimee' || value === 'comorbidite') {
-                    this.prolongationPass = false
-                    this.transitionneVersEtape(
-                        'date-derniere-dose',
-                        'situation-moins18'
-                    )
-                } else if (value === 'autre') {
-                    this.afficheReponse('pas-concerne')
                 } else {
                     console.error(`valeur inattendue: ${value}`)
                 }
@@ -163,9 +139,15 @@ class FormulaireRappelVaccinal extends Formulaire {
                     hideElement(form)
                     const dateDerniereDose = dayjs(datePicker.value)
 
+                    // Extension progressive de la campagne de rappel
+                    // - début septembre 2021 : ouverture aux 65 ans et plus (& Janssen)
+                    // - 27 novembre 2021 : ouverture aux 18-64 ans
+                    // - 24 janvier 2022 : ouverture aux 12-17 ans
                     const debutCampagneRappel =
-                        this.age === 'plus65' || this.janssen || this.age === 'moins18'
+                        this.age === 'plus65' || this.janssen
                             ? dayjs('2021/09/01')
+                            : this.age === 'moins18'
+                            ? dayjs('2022/1/24')
                             : dayjs('2021/11/27')
 
                     // À partir de quelle date faire le rappel ?
@@ -222,9 +204,11 @@ class FormulaireRappelVaccinal extends Formulaire {
                                 ? '65 ans ou plus'
                                 : this.age === 'moins65'
                                 ? 'entre 18 et 64 ans'
-                                : 'moins de 18 ans',
+                                : 'entre 12 et 17 ans',
                         'vaccin': this.janssen
                             ? 'Janssen'
+                            : this.age === 'moins18'
+                            ? 'Pfizer ou Moderna'
                             : 'Pfizer, Moderna ou AstraZeneca',
                         'date-derniere-dose': dateDerniereDose.format('LL'),
                         'type-dose': this.janssen
