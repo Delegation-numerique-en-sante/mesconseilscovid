@@ -4,7 +4,6 @@ import { bindImpression } from '../../actions'
 import { bindFeedback, opacityTransition, envoieLesRemarques } from '../../feedback'
 import { navigueVersUneThematique } from './navigation'
 import { dynamiseLeChoixDuTest } from './choixTestDepistage'
-import { dynamiseLeChoixDuPass } from './choixPassSanitaire'
 import { dynamiseLeRappelVaccinal } from './rappelVaccinal'
 
 export function pageThematique(app) {
@@ -105,9 +104,7 @@ function initialiseLesFormulaires() {
 }
 
 function initFunc(nom) {
-    if (nom == 'pass-sanitaire') {
-        return dynamiseLeChoixDuPass
-    } else if (nom == 'tests-de-depistage') {
+    if (nom == 'tests-de-depistage') {
         return dynamiseLeChoixDuTest
     } else if (nom == 'rappel') {
         return dynamiseLeRappelVaccinal
