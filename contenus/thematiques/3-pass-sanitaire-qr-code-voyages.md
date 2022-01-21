@@ -358,12 +358,6 @@
 
     Vous pouvez le **télécharger** sur le [**portail SI-DEP**](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). Nous vous conseillons de le faire **immédiatement** pour le conserver aussi longtemps que nécessaire.
 
-    <div class="conseil conseil-jaune">
-
-    Si vous aviez fait votre test positif **entre le 10 mars et le 10 mai 2021**, alors vous devrez demander au laboratoire où le test a été effectué qu’il saisisse le dossier dans SI-DEP pour générer le certificat.
-
-    </div>
-
 
 .. question:: Je rencontre des difficultés techniques sur le portail SI-DEP, que faire ?
     :level: 3
