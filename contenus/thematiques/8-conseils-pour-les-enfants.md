@@ -386,16 +386,16 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: La vaccination des mineurs de 12 ans et plus est-t-elle obligatoire pour obtenir le « pass sanitaire » ?
+.. question:: La vaccination des mineurs de 12 ans et plus est-t-elle obligatoire pour obtenir le « passe sanitaire » ?
     :level: 3
 
     <div class="conseil conseil-jaune">
 
-    <span class="nouveau">nouveau</span> À partir du **lundi 24 janvier 2022**, les adolescent(e)s de **12 à 17 ans** pourront recevoir une **dose de rappel** (dite 3<sup>e</sup> dose) : ce rappel vaccinal ne sera **pas obligatoire** dans le cadre du pass sanitaire.
+    <span class="nouveau">nouveau</span> À partir du **lundi 24 janvier 2022**, les adolescent(e)s de **12 à 17 ans** pourront recevoir une **dose de rappel** (dite 3<sup>e</sup> dose) : ce rappel vaccinal ne sera **pas obligatoire** dans le cadre du passe sanitaire.
 
     </div>
 
-    **Non**. Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « pass sanitaire » utilisable en France et pour les voyages en Union européenne :
+    **Non**. Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « passe sanitaire » utilisable en France et pour les voyages en Union européenne :
 
     * l’**attestation de vaccination complète** (toutes les doses et respect du délai de 7 jours après la dernière dose en France, ou 14 jours pour voyager à l’étranger) ;
     * un **test PCR ou antigénique négatif** de moins de 24 h ;
@@ -405,7 +405,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    * Pour plus d’informations, consultez notre page sur [les voyages et le pass sanitaire](/pass-sanitaire-qr-code-voyages.html).
+    * Pour plus d’informations, consultez notre page sur [les voyages et le passe sanitaire](/pass-sanitaire-qr-code-voyages.html).
 
     </div>
 
