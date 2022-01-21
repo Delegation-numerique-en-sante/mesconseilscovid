@@ -18,10 +18,7 @@
 
     Si vous avez **18 ans ou plus**, vous pouvez recevoir un rappel vaccinal, en respectant [un délai minimal](#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) après votre dernière injection ou infection à la Covid.
 
-    Vous êtes également éligible au rappel si vous avez entre **12 et 17 ans** et que :
-
-    * vous êtes **sévèrement immunodéprimé(e)** ;
-    * vous avez une **comorbidité** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de forme grave de Covid.
+    <span class="nouveau">nouveau</span> Si vous avez entre **12 et 17 ans**, le rappel vaccinal vous sera ouvert à partir du **lundi 24 janvier 2022**.
 
     {{ formulaire('rappel', prefixe='suis-je-concerne') }}
 
@@ -42,14 +39,11 @@
 .. question:: J’ai eu la Covid avant mon unique dose de vaccin. Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
     :level: 3
 
-    **Oui**, si vous avez **plus de 18 ans** vous pouvez recevoir un rappel vaccinal, en respectant [un délai minimal](#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) après votre dernière injection ou infection à la Covid.
+    **Oui**, dans votre cas le rappel sera votre **2<sup>e</sup> dose**.
 
-    Vous êtes également éligible au rappel si vous avez entre **12 et 17 ans** et que :
+    Si vous avez **plus de 18 ans** vous pouvez recevoir un rappel vaccinal, en respectant [un délai minimal](#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) après votre dernière injection ou infection à la Covid.
 
-    * vous êtes **sévèrement immunodéprimé(e)** ;
-    * vous avez une **comorbidité** (voir [la liste ci-dessous](#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid)) augmentant le risque de forme grave de Covid.
-
-    Dans votre cas, le rappel sera votre **2<sup>e</sup> dose**.
+    <span class="nouveau">nouveau</span> Si vous avez entre **12 et 17 ans**, le rappel vaccinal vous sera ouvert à partir du **lundi 24 janvier 2022**.
 
     <div class="voir-aussi">
 
