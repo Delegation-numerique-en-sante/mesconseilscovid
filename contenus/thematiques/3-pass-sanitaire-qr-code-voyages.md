@@ -109,7 +109,7 @@
     - Depuis le **15 décembre 2021** :
         * si vous avez **65 ans ou plus** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **7 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
 
-        * quel que soit votre âge, si vous avez reçu le **vaccin Janssen** depuis plus de **2 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel.
+        * quel que soit votre âge, si vous avez reçu le **vaccin Janssen** depuis plus de **2 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir une dose additionnelle.
 
     - Depuis le **15 janvier 2022** :
         * si vous avez entre **18 et 64 ans** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **7 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
