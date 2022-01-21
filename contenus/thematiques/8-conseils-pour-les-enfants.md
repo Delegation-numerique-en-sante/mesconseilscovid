@@ -309,7 +309,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Les mineurs reçoivent-ils le même nombre de doses que les adultes ?
     :level: 3
 
-    **Oui**. Comme pour les adultes, les mineurs reçoivent :
+    **Oui**. Comme pour les adultes, pour la vaccination initiale, les mineurs reçoivent :
 
     * **une seule dose**, s’ils ont déjà été contaminés à la Covid (dans ce cas, il faut attendre **au minimum 2 mois** après le test positif avant de se faire vacciner) ;
     * **deux doses**, s’ils n’ont pas déjà été contaminés par la Covid.
@@ -322,6 +322,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
         * 3 à 7 semaines après la première, pour le vaccin Pfizer ;
         * 4 à 7 semaines après la première, pour le vaccin Moderna.
 
+    <span class="nouveau">nouveau</span> À partir du lundi 24 janvier 2022, les adolescent(e)s de 12 à 17 ans pourront également recevoir une **dose de rappel** (dite 3<sup>e</sup> dose).
 
     <div class="voir-aussi">
 
@@ -387,6 +388,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 .. question:: La vaccination des mineurs de 12 ans et plus est-t-elle obligatoire pour obtenir le « pass sanitaire » ?
     :level: 3
+
+    <div class="conseil conseil-jaune">
+
+    <span class="nouveau">nouveau</span> À partir du **lundi 24 janvier 2022**, les adolescent(e)s de **12 à 17 ans** pourront recevoir une **dose de rappel** (dite 3<sup>e</sup> dose) : ce rappel vaccinal ne sera **pas obligatoire** dans le cadre du pass sanitaire.
+
+    </div>
 
     **Non**. Comme pour les adultes non-vacciné(e)s, plusieurs justificatifs, au choix, font office de « pass sanitaire » utilisable en France et pour les voyages en Union européenne :
 

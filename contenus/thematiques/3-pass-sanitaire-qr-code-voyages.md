@@ -94,6 +94,9 @@
     - Depuis le **15 janvier 2022** :
         * si vous avez entre **18 et 64 ans** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **7 mois**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal (dit 3<sup>e</sup> dose).
 
+    - À partir du **24 janvier 2022** :
+        * si vous avez entre **12 et 17 ans**, vous serez éligible à une dose de rappel, mais celle-ci ne sera **pas obligatoire** dans le cadre du pass sanitaire.
+
     - À partir du **15 février 2022** :
         * si vous avez **18 ans ou plus** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **4 mois**, alors votre pass sanitaire sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre rappel vaccinal (dit 3<sup>e</sup> dose).
 
@@ -110,7 +113,7 @@
 .. question:: J’ai eu la Covid après ma vaccination complète, comment prolonger mon pass sanitaire ?
     :level: 3
 
-    Si vous êtes âgé de 18 ans ou plus, alors vous serez éligible à une dose de rappel dès **3 mois** après votre **infection**.
+    Si vous êtes âgé de 18 ans ou plus (*ou dès 12 ans à partir du 24 janvier 2022*), alors vous serez éligible à une dose de rappel dès **3 mois** après votre **infection**.
 
     En attendant de recevoir cette dose de rappel, vous pouvez utiliser le QR code de votre résultat de **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*) comme pass sanitaire, valable pendant **6 mois**.
 
