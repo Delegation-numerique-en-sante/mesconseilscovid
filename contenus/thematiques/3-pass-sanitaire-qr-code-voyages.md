@@ -193,7 +193,7 @@
 
     <div class="voir-aussi">
 
-    - [Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon passe sanitaire ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal)
+    - [Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon passe vaccinal ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal)
 
     </div>
 
@@ -382,7 +382,7 @@
 .. question:: Je n’ai pas l’application TousAntiCovid, comment présenter mon passe vaccinal ?
     :level: 3
 
-    Vous pouvez présenter votre passe vaccinal (attestation de vaccination, certificat de rétablissement ou de dépistage) au **format papier ou numérique (PDF)** sans passer par l’application TousAntiCovid.
+    Vous pouvez présenter votre passe vaccinal (attestation de vaccination ou certificat de rétablissement) au **format papier ou numérique (PDF)** sans passer par l’application TousAntiCovid.
 
 
 .. question:: J’ai été vacciné à l’étranger avec un vaccin reconnu en France, comment obtenir un QR code valable en France ?
