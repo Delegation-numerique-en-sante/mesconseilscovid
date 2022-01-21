@@ -24,10 +24,10 @@
     Les règles du **passe sanitaire** continueront à s’appliquer aux mineurs âgés de **12 à 15 ans**.
 
     Votre **schéma de vaccination est complet** si vous avez respecté les délais suivants :
-    * si vous avez été vacciné(e) avec les vaccins Pfizer ou Moderna : votre dernière dose doit dater d’il y a moins de 4 mois ;
-    * si vous avez été vacciné(e) avec le vaccin Janssen et que vous avez reçu la **dose aditionnelle** il y a moins de 4 mois.
+    * si vous avez été vacciné(e) avec les vaccins Pfizer, Moderna ou AstraZeneca : votre dernière dose doit dater d’il y a moins de 4 mois ;
+    * si vous avez été vacciné(e) avec le vaccin Janssen : vous devez avoir reçu la **dose aditionnelle** il y a moins de 4 mois.
 
-    Si vous avez reçu votre première dose il y a moins de 28 jours, vous pouvez bénéficier d’un *passe vaccinal temporaire* (voir ci-dessous)
+    Si vous avez seulement reçu votre première dose, et que vous avez rendez-vous pour votre deuxième dose dans moins de 28 jours, vous pouvez bénéficier d’un *passe vaccinal temporaire* (voir ci-dessous).
 
     <div class="voir-aussi">
 
