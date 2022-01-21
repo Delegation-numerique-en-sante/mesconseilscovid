@@ -201,34 +201,28 @@
 .. question:: Où le passe vaccinal est-il obligatoire ?
     :level: 3
 
-    Le passe vaccinal est exigé dans les lieux où le brassage de personnes pose des risques sanitaires. Il ne s’applique **pas dans les établissements médico-sociaux** (hôpital, EHPAD…)
+    Le passe vaccinal est exigé pour les personnes de **16 ans et plus** dans les lieux où le brassage de personnes pose des risques sanitaires. Il ne s’applique **pas dans les établissements médico-sociaux** (hôpital, EHPAD…)
 
     Il est notamment **obligatoire** pour accéder :
     - aux lieux de loisir et de culture : **cinéma, musées, théâtres, parc d’attraction, enceintes sportives (salles, stades…)…** ;
     - aux lieux de convivialité :  **restaurants**, **bars** et **cafés** (même en terrasse) ;
-    - à certains grands centres commerciaux (sur décision du préfet) ;
+    - à certains grands **centres commerciaux** (sur décision du préfet) ;
     - aux **séminaires professionnels** de plus de 50 personnes organisés en dehors des locaux de l’entreprise ;
-    - aux transports interrégionaux : avion, train, bus (sauf en cas de motif impérieux où il pourra être remplacé par un test de dépistage négatif).
+    - aux **transports** interrégionaux : avion, train, bus (sauf en cas de motif impérieux, où il pourra être remplacé par un test de dépistage négatif).
 
-    *Pour les enfants de 12 à 15 ans, ces lieux sont accessibles avec un passe sanitaire.*
+    Pour les enfants de **12 à 15 ans**, ces lieux restent accessibles avec un passe sanitaire (certificat de vaccination **ou** test de dépistage négatif).
 
     <div class="exemple">
 
-    Par exemple, une personne majeure non vaccinée ne pourra plus accéder aux restaurants ou aux salles de cinéma.
+    Par exemple : une personne majeure non vaccinée ne pourra pas accéder à un restaurant ou à une salle de cinéma.
 
     </div>
-
-
-.. question:: Dans quel cas faut-il présenter un passe vaccinal et un résultat de dépistage négatif ?
-    :level: 3
-
-    ...
 
 
 .. question:: Le passe vaccinal ou sanitaire est-il obligatoire pour accéder aux établissements d’enseignement ?
     :level: 3
 
-    **Non**, les passes sanitaire ou vaccinal ne sont **pas exigés** pour accéder aux établissements d’enseignement : écoles, collèges, lycées ou universités.
+    **Non**, un passe sanitaire ou vaccinal n’est **pas exigé** pour accéder aux établissements d’enseignement : écoles, collèges, lycées ou universités.
 
     <div class="voir-aussi">
 
@@ -244,7 +238,7 @@
 
     Les **trains régionaux** (TER) et les **transports urbains** (bus, métros, RER, trains de banlieue…) ne sont **pas concernés** par cette obligation.
 
-    En cas de **motif impérieux** (liste des motifs), une personne non vaccinée pourra présenter un test de dépistage négatif de moins de 24 H pour voyager.
+    En cas de **motif impérieux**, une personne non vaccinée pourra présenter un test de dépistage négatif de moins de 24 H pour voyager.
 
 
 .. question:: Qui est concerné par le passe vaccinal ?
