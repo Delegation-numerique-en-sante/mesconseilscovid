@@ -17,15 +17,15 @@
 .. question:: Qu’est-ce que le passe vaccinal ?
     :level: 3
 
-    Le **passe vaccinal** atteste du fait que vous êtes **complètement vacciné(e)**, c’est-à-dire que vous avez reçu toutes les doses de vaccin nécessaires et que vous avez reçu votre dernière dose il y a moins de 4 mois, ou alors que vous avez eu la Covid il y a moins de 6 mois [(certificat de rétablissement)](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code).
+    Le **passe vaccinal** atteste du fait que vous êtes **complètement vacciné(e)**, c’est-à-dire que vous avez reçu toutes les doses de vaccin nécessaires et que vous avez reçu votre dernière dose il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*), ou alors que vous avez eu la Covid il y a moins de 6 mois [(certificat de rétablissement)](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code).
 
     À partir du **lundi 24 janvier**, le passe vaccinal **remplace** le passe sanitaire dans la plupart des situations. Il s’applique à toutes les personnes âgées de **16 ans ou plus** qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal).
 
     Les règles du **passe sanitaire** continueront à s’appliquer aux mineurs âgés de **12 à 15 ans**.
 
     Votre **schéma de vaccination est complet** si vous avez respecté les délais suivants :
-    * si vous avez été vacciné(e) avec les vaccins Pfizer, Moderna ou AstraZeneca : votre dernière dose doit dater d’il y a moins de 4 mois ;
-    * si vous avez été vacciné(e) avec le vaccin Janssen : vous devez avoir reçu la **dose aditionnelle** il y a moins de 4 mois.
+    * si vous avez été vacciné(e) avec les vaccins Pfizer, Moderna ou AstraZeneca : votre dernière dose doit dater d’il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*) ;
+    * si vous avez été vacciné(e) avec le vaccin Janssen : vous devez avoir reçu la **dose aditionnelle** il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*).
 
     Si vous avez seulement reçu votre première dose, et que vous avez rendez-vous pour votre deuxième dose dans moins de 28 jours, vous pouvez bénéficier d’un *passe vaccinal temporaire* (voir ci-dessous).
 
@@ -48,7 +48,7 @@
 
     - Si vous n’êtes pas encore vacciné(e) contre la Covid, vous obtiendrez votre passe vaccinal une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation.
 
-      Pour conserver ce passe, vous devrez ensuite recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans les 3 à 4 mois.
+      Pour conserver ce passe, vous devrez ensuite recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans un délai de 7 mois (*ce délai passera à 4 mois à partir du 15 février*).
 
     - Si vous avez entrepris la démarche de vous faire vacciner et que vous devez recevoir votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez, en attendant, présenter un test de dépistage négatif (passe vaccinal temporaire) pour participer à certaines activités.
 
@@ -62,7 +62,7 @@
 .. question:: Mon passe vaccinal a été désactivé. Quand sera-t-il réactivé ?
     :level: 3
 
-    Si vous ne faites pas votre rappel vaccinal dans les 4 mois suivant votre primo-vaccination, alors votre passe sera automatiquement désactivé. Il sera réactivé **7 jours après** votre injection de rappel.
+    Si vous ne faites pas votre rappel vaccinal dans les 7 mois (*délai réduit à 4 mois à partir du 15 février*) suivant votre primo-vaccination, alors votre passe sera automatiquement désactivé. Il sera réactivé **7 jours après** votre injection de rappel.
 
 
 .. question:: Qu’est-ce que le passe sanitaire et à qui s’applique t-il encore ?
@@ -388,7 +388,7 @@
 
     #### Pour justifier d’une vaccination complète
 
-    * Si vous avez reçu **2 doses** de vaccin à l’étranger, alors votre vaccination est considérée comme **complète**. Attention, si vous **18 ans ou plus** et que votre dernière dose date d’il y a plus de 4 mois, vous devrez recevoir une **dose de rappel** (3<sup>e</sup> dose) pour obtenir un **QR code** valable en France.
+    * Si vous avez reçu **2 doses** de vaccin à l’étranger, alors votre vaccination est considérée comme **complète**. Attention, si vous **18 ans ou plus** et que votre dernière dose date d’il y a plus de 7 mois (délai réduit à 4 mois à partir du 15 février), vous devrez recevoir une **dose de rappel** (3<sup>e</sup> dose) pour obtenir un **QR code** valable en France.
 
     * Si vous n’avez reçu qu’**une seule dose** de vaccin à l’étranger, vous devrez recevoir une **2<sup>e</sup>** injection de vaccin à **ARNm** (*Pfizer* ou *Moderna*) pour valider votre vaccination en France.
 
