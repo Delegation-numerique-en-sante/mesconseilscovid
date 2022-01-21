@@ -100,19 +100,6 @@
    Le Parlement a autorisé le gouvernement à prolonger l’utilisation du passe vaccinal (auparavant passe sanitaire) jusqu’au **31 juillet 2022** si la situation épidémique le demande.
 
 
-.. question:: Quel justificatif utiliser comme passe sanitaire en France ?
-    :level: 3
-    :open: true
-
-    {{ formulaire('pass-sanitaire') }}
-
-    <div class="voir-aussi">
-
-    - Si vous partez à l’étranger, consultez la rubrique « [Les voyages à l’étranger](#les-voyages-a-l-etranger) ».
-
-    </div>
-
-
 .. question:: Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon passe vaccinal ?
     :level: 3
     :open: true
