@@ -63,7 +63,9 @@
 
     * si vous avez été vacciné(e) avec le vaccin **Pfizer**, **Moderna** ou **AstraZeneca** :
 
-        - dès **3 mois** après votre dernière **injection**, ou votre dernière **infection** à la Covid ;
+        - si vous avez **18 ans ou plus**, dès **3 mois** après votre dernière **injection**, ou votre dernière **infection** à la Covid ;
+
+        - si vous avez entre **12 et 17 ans**, dès **6 mois** après votre dernière **injection**, ou votre dernière **infection** à la Covid ;
 
     * si vous avez été vacciné(e) avec le **vaccin Janssen** :
 
@@ -356,7 +358,7 @@
     * **une personne qui a déjà eu la Covid** avant sa première injection n’aura besoin que d’une seule dose de vaccin pour être complètement vaccinée (hors éventuel rappel) ;
     * **une personne fortement immunodéprimée** recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné(e) par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
 
-    L’immunité conférée par la vaccination initiale diminue avec le temps. C’est pourquoi une **dose de rappel** est maintenant recommandée **après 3 mois** pour toutes les personnes de 18 ans et plus (voir « [Suis-je concerné par la dose de rappel, dite 3e dose ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) »).
+    L’immunité conférée par la vaccination initiale diminue avec le temps. C’est pourquoi une **dose de rappel** est maintenant recommandée **après 3 mois** pour toutes les personnes de 18 ans et plus, et **après 6 mois** pour les personnes de 12 à 17 ans (voir « [Suis-je concerné par la dose de rappel, dite 3e dose ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) »).
 
 
 .. question:: Est-ce que je peux attraper la Covid si je suis vacciné(e) ?
