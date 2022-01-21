@@ -7,7 +7,7 @@
         Au bout de quelques mois et face aux nouveaux variants, l’<strong>immunité</strong> offerte par les vaccins diminue. Alors, comme pour d’autres maladies, par exemple la grippe saisonnière, il est recommandé de faire un <strong>rappel</strong> vaccinal, dit <strong>3<sup>e</sup> dose</strong>, pour renforcer son immunité. En se vaccinant, on participe aussi à freiner la propagation du virus au sein de la population.
     </p>
     <p class="big">
-        La campagne de rappel a débuté en septembre 2021, est s’est étendue progressivement aux autres tranches d’âges. Si vous êtes concerné(e), ce rappel est maintenant obligatoire pour prolonger la validité de votre <strong>passe vaccinal</strong>.
+        La campagne de rappel a débuté en septembre 2021 pour les personnes de plus de 65 ans, et s’est étendue progressivement aux autres tranches d’âges. Si vous êtes concerné(e), ce rappel est maintenant obligatoire pour prolonger la validité de votre <strong>passe vaccinal</strong>.
     </p>
 </header>
 

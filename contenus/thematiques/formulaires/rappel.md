@@ -73,7 +73,7 @@ Votre dernière injection date du <strong class="date-derniere-dose"></strong>.
 
 Vous pourrez recevoir votre <span class="type-dose">dose de rappel</span> à partir du <strong class="date-eligibilite-rappel"></strong>.
 
-En l’absence de cette injection, votre passe vaccinal actuel ne sera plus valide à partir du <strong class="desactivation-pass-sanitaire"></strong>.
+En l’absence de cette injection, votre passe vaccinal actuel ne sera plus valide à partir du <strong class="desactivation-passe-vaccinal"></strong>.
 
 Si vous recevez votre <span class="type-dose">dose de rappel</span> avant cette date, alors vous pourrez prolonger votre passe vaccinal sans discontinuité.
 

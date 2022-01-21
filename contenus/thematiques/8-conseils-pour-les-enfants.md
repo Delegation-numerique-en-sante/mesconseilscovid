@@ -262,14 +262,14 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Est-ce que mon enfant a besoin du passe sanitaire pour aller à l’école ?
     :level: 3
 
-    **Non**. Le passe vaccinal ou le passe sanitaire ne sont **pas obligatoire** pour accéder aux établissements d’enseignement, écoles, collèges ou lycées.
+    **Non**. Le passe vaccinal ou le passe sanitaire ne sont **pas obligatoires** pour accéder aux établissements d’enseignement, écoles, collèges ou lycées.
 
 
     <div class="voir-aussi">
 
     - Notre rubrique sur la [vaccination des enfants et adolescents](#la-vaccination-contre-la-covid) ci-dessous
 
-    - Notre autre page sur le [pass vaccinal](/pass-sanitaire-qr-code-voyages.html)
+    - Notre autre page sur le [passe vaccinal](/pass-sanitaire-qr-code-voyages.html)
 
     </div>
 
