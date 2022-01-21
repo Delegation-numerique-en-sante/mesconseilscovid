@@ -16,14 +16,17 @@
 
 .. question:: Qu’est-ce que le passe vaccinal ?
 
-    Le passe vaccinal atteste du fait que vous êtes complètement vacciné(e), c’est-à-dire que vous avez reçu toutes les doses de vaccin anti-covid auxquelles vous êtes éligible depuis 4 mois ou moins (3 mois + 1 mois de tolérance).
+    Le passe vaccinal atteste du fait que vous êtes complètement vacciné(e), c’est-à-dire que vous avez reçu toutes les doses de vaccin anti-covid auxquelles vous êtes éligible depuis 4 mois ou moins (3 mois + 1 mois de tolérance), ou que vous avez eu la Covid il y a moins de 6 mois [(certificat de rétablissement)](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code).
 
-    Depuis le XX janvier, le passe vaccinal remplace le passe sanitaire dans la plupart des situations. Il s’applique à toutes les personnes âgées de plus de 16 ans qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal).
-    Les règles du passe sanitaire continuent à s'appliquer aux mineurs âgés de 12 à 15 ans.
+    Depuis le 24 janvier, le **passe vaccinal** remplace le passe sanitaire dans la plupart des situations. Il s’applique à toutes les personnes âgées de **16 ans et plus** qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal).
+    
+    Les règles du **passe sanitaire** continueront à s'appliquer aux mineurs âgés de **12 à 15 ans**.
 
     Votre **schéma de vaccination est complet** si vous avez respecté les délais suivants :
     * si vous avez été vacciné(e) avec les vaccins Pfizer ou Moderna : votre dernière dose doit dater d’il y a moins de 4 mois (3 mois + 1 mois de tolérance) ;
     * si vous avez été vacciné(e) avec le vaccin Janssen et que vous avez reçu la **dose aditionnelle** il y a moins de 4 mois (3 mois + 1 mois de tolérance).
+    
+    Si vous avez reçu votre première dose il y a moins de 28 jours, vous pouvez bénéficier d'un passe vaccinal temporaire (voir ci-dessous)
 
   <div class="voir-aussi">
 
@@ -31,12 +34,16 @@
    - [Quand devrai-je recevoir ma dose de rappel pour conserver mon passe vaccinal ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal)
 
   </div>
+    
+.. question:: Je suis en cours de vaccination, comment obtenir un passe vaccinal temporaire ?
+
+    Si vous avez reçu une dose de vaccin et que vous avez rendez-vous pour recevoir la 2<sup>e</sup> dose dans les 28 jours, vous pouvez, en attendant, présenter un test de dépistage négatif (passe vaccinal temporaire) en complément de votre attestation de première dose pour participer à certaines activités.
 
 .. question:: Je ne suis pas encore vacciné(e). Combien de doses dois-je recevoir pour obtenir mon passe vaccinal ?
 
     Si vous n’êtes pas vacciné(e) contre la Covid, vous obtiendrez votre passe vaccinal une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation. Pour conserver ce passe, vous devrez ensuite recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans les 3 à 4 mois.
 
-    Si vous avez entrepris la démarche de vous faire vacciner mais que votre passe vaccinal n'est pas encore activé ou vous êtes en attente de la 2<sup>e</sup> dose, vous pourrez, en attendant, présenter un test de dépistage négatif (passe vaccinal transitoire) pour participer à certaines activités.
+    Si vous avez entrepris la démarche de vous faire vacciner et que vous devez recevoir votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez, en attendant, présenter un test de dépistage négatif (passe vaccinal temporaire) pour participer à certaines activités.
 
 
   <div class="voir-aussi">
@@ -51,10 +58,10 @@
     Si vous ne faites pas votre rappel vaccinal dans les 4 mois (3 mois + 1 mois de tolérance) suivants votre primo-vaccination votre pass sera automatiquement désactivé. Il sera réactivé **7 jours après** votre injection de rappel.
 
 
-.. question:: Qu’est-ce que le passe sanitaire ?
+.. question:: Qu’est-ce que le passe sanitaire et à qui s'applique t-il encore ?
     :level: 3
 
-    En France, le pass sanitaire continue de concerner les enfants de **12 à 15 ans**. Il peut être, **selon sa situation** :
+    En France, le pass sanitaire continue de concerner les enfants de **12 à 15 ans**. Il peut être, **selon la situation** de l'enfant :
 
     - un [test de dépistage négatif](#comment-obtenir-un-certificat-de-depistage-avec-qr-code) : **test PCR** ou **test antigénique**, datant de moins de **24 h** ;
 
@@ -187,7 +194,7 @@
 .. question:: Où le passe vaccinal est-il obligatoire ?
     :level: 3
 
-    L’usage du passe vaccinal concerne les lieux où le brassage de personnes pose des risques sanitaires. Il ne s'applique pas dans les établissements médico-sociaux (hôpital, EHPAD…)
+    Le passe vaccinal est exigé dans les lieux où le brassage de personnes pose des risques sanitaires. Il ne s'applique **pas dans les établissements médico-sociaux** (hôpital, EHPAD…)
 
     Il est notamment **obligatoire** pour accéder :
     - aux lieux de loisir et de culture : **cinéma, musées, théâtres, parc d’attraction, enceintes sportives (salles, stades…)…** ;
@@ -196,7 +203,7 @@
     - aux **séminaires professionnels** de plus de 50 personnes organisés en dehors des locaux de l’entreprise ;
     - aux transports interrégionaux : avion, train, bus (sauf en cas de motif impérieux où il pourra être remplacé par un test de dépistage négatif).
 
-    * Pour les enfants de 12 à 15 ans, ces lieux sont accessibles sur présentation d'un passe sanitaire.*
+    *Pour les enfants de 12 à 15 ans, ces lieux sont accessibles avec un passe sanitaire.*
 
     <div class="exemple">
 
@@ -284,21 +291,15 @@
 
 ## Les voyages à l’étranger
 
-.. question:: Est-ce que le passe sanitaire européen est différent du passe sanitaire français ?
+.. question:: Est-ce que le passe vaccinal est obligatoire pour voyager en Europe ou ailleurs à l'étranger ?
     :level: 3
+    
+    Cela dépend de votre **pays de destination**. Même dans l’**espace européen**, les exigences ne sont pas les mêmes pour chaque pays. Une **preuve de vaccination**, n'est pas toujours exigée.
 
-    Les mêmes 3 **preuves sanitaires** qui font office de pass sanitaire français peuvent aussi servir de **pass sanitaire européen**, à quelques détails près :
+    Avant de partir en voyage, **même dans l’espace européen**, nous vous conseillons de vérifier les **conditions d’accès à votre pays de destination** sur [le portail France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
-    - un **test de dépistage négatif** : **test PCR** ou **test antigénique** de moins de **24 h** ;
-    - un **test de dépistage positif** : **test PCR** ou **test antigénique** daté de **plus de 11 jours** et moins de **6 mois**, appelé [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) ;
-    - une **attestation de vaccination complète**, soit **14 jours** (*Pfizer*, *Moderna*, *AstraZeneca*) ou **28 jours** (*Janssen*) après la dernière dose nécessaire.
 
-    <div class="conseil conseil-jaune">
-
-    * Ces documents sont valables **à condition qu’ils comportent un QR code**.
-    * Les **tests sérologiques** et les **autotests** (même supervisés) ne sont **pas des passe sanitaires européens**.
-    * Assurez vous de **vérifier quelle preuve sanitaire est exigée** par votre pays de destination sur [le portail France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
-
+    
     </div>
 
 
@@ -323,7 +324,7 @@
 .. question:: À quoi sert le passe sanitaire dans l’espace européen ?
     :level: 3
 
-    Le pass sanitaire **facilite les contrôles des preuves sanitaires** aux frontières entre les pays européens. Une attestation vaccinale ou un test de dépistage français peuvent ainsi être lus et authentifiés par l’administration de n’importe quel pays de l’espace européen.
+    Le passe sanitaire **facilite les contrôles des preuves sanitaires** aux frontières entre les pays européens. Une attestation vaccinale ou un test de dépistage français peuvent ainsi être lus et authentifiés par l’administration de n’importe quel pays de l’espace européen.
 
     <div class="conseil conseil-jaune">
 
@@ -402,7 +403,7 @@
 .. question:: J’ai été vacciné à l’étranger avec un vaccin reconnu en France, comment obtenir un QR code valable en France ?
     :level: 3
 
-    Pour que votre vaccination soit reconnue comme passe vaccinl en France il faut être complètement vacciné(e) avec un vaccin **reconnu en France** (ou équivalent) et obtenir un **QR code**.
+    Pour que votre vaccination soit reconnue comme passe vaccinal en France il faut être complètement vacciné(e) avec un vaccin **reconnu en France** (ou équivalent) et obtenir un **QR code**.
 
     #### Vaccins reconnus en France
 
