@@ -139,81 +139,16 @@ class FormulaireRappelVaccinal extends Formulaire {
                     hideElement(form)
                     const dateDerniereDose = dayjs(datePicker.value)
 
-                    // Extension progressive de la campagne de rappel
-                    // - début septembre 2021 : ouverture aux 65 ans et plus (& Janssen)
-                    // - 27 novembre 2021 : ouverture aux 18-64 ans
-                    // - 24 janvier 2022 : ouverture aux 12-17 ans
-                    const debutCampagneRappel =
-                        this.age === 'plus65' || this.janssen
-                            ? dayjs('2021/09/01')
-                            : this.age === 'moins18'
-                            ? dayjs('2022/1/24')
-                            : dayjs('2021/11/27')
+                    const dateEligibiliteRappel =
+                        this.dateEligibiliteRappel(dateDerniereDose)
 
-                    // À partir de quelle date faire le rappel ?
-                    const delaiEligibiliteEnJours = this.janssen
-                        ? JOURS_DANS_1_MOIS
-                        : JOURS_DANS_3_MOIS
-                    const dateEligibiliteRappel = dayjs.max(
-                        debutCampagneRappel,
-                        dateDerniereDose.add(delaiEligibiliteEnJours, 'day')
-                    )
-
-                    // À partir du 15 décembre, durée de validité de 7 mois
-                    // pour les personnes de plus de 65 ans
-                    let dateLimitePass = null
-                    if (this.age === 'plus65') {
-                        dateLimitePass = dayjs.max(
-                            dayjs('2021/12/15'),
-                            dateDerniereDose.add(JOURS_DANS_7_MOIS, 'day')
-                        )
-                    }
-
-                    // À partir du 15 décembre, durée de validité de 2 mois
-                    // pour les personnes vaccinées avec Janssen
-                    if (this.janssen) {
-                        dateLimitePass = dayjs.max(
-                            dayjs('2021/12/15'),
-                            dateDerniereDose.add(JOURS_DANS_2_MOIS, 'day')
-                        )
-                    }
-
-                    // À partir du 15 janvier, la durée de validité de 7 mois
-                    // s’applique à toutes les personnes de plus de 18 ans
-                    dateLimitePass = minIfNotNull(
-                        dateLimitePass,
-                        dayjs.max(
-                            dayjs('2022/01/15'),
-                            dateDerniereDose.add(JOURS_DANS_7_MOIS, 'day')
-                        )
-                    )
-
-                    // À partir du 15 février, la durée de validité passe de 7 mois
-                    // à 4 mois
-                    dateLimitePass = minIfNotNull(
-                        dateLimitePass,
-                        dayjs.max(
-                            dayjs('2022/02/15'),
-                            dateDerniereDose.add(JOURS_DANS_4_MOIS, 'day')
-                        )
-                    )
+                    const dateLimitePass = this.dateLimitePass(dateDerniereDose)
 
                     let params = {
-                        'age':
-                            this.age === 'plus65'
-                                ? '65 ans ou plus'
-                                : this.age === 'moins65'
-                                ? 'entre 18 et 64 ans'
-                                : 'entre 12 et 17 ans',
-                        'vaccin': this.janssen
-                            ? 'Janssen'
-                            : this.age === 'moins18'
-                            ? 'Pfizer ou Moderna'
-                            : 'Pfizer, Moderna ou AstraZeneca',
+                        'age': this.libelleAge(),
+                        'vaccin': this.libelleVaccin(),
                         'date-derniere-dose': dateDerniereDose.format('LL'),
-                        'type-dose': this.janssen
-                            ? 'injection supplémentaire'
-                            : 'dose de rappel',
+                        'type-dose': this.libelleTypeDose(),
                         'date-eligibilite-rappel': dateEligibiliteRappel.format('LL'),
                     }
 
@@ -227,5 +162,104 @@ class FormulaireRappelVaccinal extends Formulaire {
                 }
             })
         },
+    }
+
+    // À partir de quelle date faire le rappel ?
+    dateEligibiliteRappel(dateDerniereDose) {
+        const debutCampagneRappel = this.debutCampagneRappel()
+
+        const delaiEligibiliteEnJours = this.janssen
+            ? JOURS_DANS_1_MOIS
+            : JOURS_DANS_3_MOIS
+
+        return dayjs.max(
+            debutCampagneRappel,
+            dateDerniereDose.add(delaiEligibiliteEnJours, 'day')
+        )
+    }
+
+    // Extension progressive de la campagne de rappel
+    // - début septembre 2021 : ouverture aux 65 ans et plus (& Janssen)
+    // - 27 novembre 2021 : ouverture aux 18-64 ans
+    // - 24 janvier 2022 : ouverture aux 12-17 ans
+    debutCampagneRappel() {
+        if (this.age === 'plus65' || this.janssen) {
+            return dayjs('2021/09/01')
+        } else if (this.age === 'moins18') {
+            return dayjs('2022/1/24')
+        } else {
+            return dayjs('2021/11/27')
+        }
+    }
+
+    dateLimitePass(dateDerniereDose) {
+        // À partir du 15 décembre : 7 mois après la dernière dose
+        // pour les personnes de plus de 65 ans
+        let dateLimitePass = null
+        if (this.age === 'plus65') {
+            dateLimitePass = dayjs.max(
+                dayjs('2021/12/15'),
+                dateDerniereDose.add(JOURS_DANS_7_MOIS, 'day')
+            )
+        }
+
+        // À partir du 15 décembre :  2 mois après la dose unique
+        // pour les personnes vaccinées avec Janssen
+        if (this.janssen) {
+            dateLimitePass = dayjs.max(
+                dayjs('2021/12/15'),
+                dateDerniereDose.add(JOURS_DANS_2_MOIS, 'day')
+            )
+        }
+
+        // À partir du 15 janvier : 7 mois après la dernière dose
+        // pour les personnes de plus de 18 ans
+        dateLimitePass = minIfNotNull(
+            dateLimitePass,
+            dayjs.max(
+                dayjs('2022/01/15'),
+                dateDerniereDose.add(JOURS_DANS_7_MOIS, 'day')
+            )
+        )
+
+        // À partir du 15 février : 4 mois après la dernière dose
+        // pour les personnes de plus de 18 ans
+        dateLimitePass = minIfNotNull(
+            dateLimitePass,
+            dayjs.max(
+                dayjs('2022/02/15'),
+                dateDerniereDose.add(JOURS_DANS_4_MOIS, 'day')
+            )
+        )
+
+        return dateLimitePass
+    }
+
+    libelleAge() {
+        if (this.age === 'plus65') {
+            return '65 ans ou plus'
+        } else if (this.age === 'moins65') {
+            return 'entre 18 et 64 ans'
+        } else {
+            return 'entre 12 et 17 ans'
+        }
+    }
+
+    libelleVaccin() {
+        if (this.janssen) {
+            return 'Janssen'
+        } else if (this.age === 'moins18') {
+            return 'Pfizer ou Moderna'
+        } else {
+            return 'Pfizer, Moderna ou AstraZeneca'
+        }
+    }
+
+    libelleTypeDose() {
+        if (this.janssen) {
+            return 'injection supplémentaire'
+        } else {
+            return 'dose de rappel'
+        }
     }
 }
