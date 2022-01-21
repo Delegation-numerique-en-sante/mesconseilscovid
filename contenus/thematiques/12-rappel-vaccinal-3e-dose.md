@@ -7,7 +7,7 @@
         Au bout de quelques mois et face aux nouveaux variants, l’<strong>immunité</strong> offerte par les vaccins diminue. Alors, comme pour d’autres maladies, par exemple la grippe saisonnière, il est recommandé de faire un <strong>rappel</strong> vaccinal, dit <strong>3<sup>e</sup> dose</strong>, pour renforcer son immunité. En se vaccinant, on participe aussi à freiner la propagation du virus au sein de la population.
     </p>
     <p class="big">
-        La campagne de rappel a débuté en septembre 2021, notamment pour les personnes de plus de 65 ans. Elle va s’étendre progressivement à d’autres tranches d’âges. Si vous êtes concerné(e), ce rappel sera obligatoire pour prolonger la validité de votre <strong>pass sanitaire</strong> au delà du 15 décembre 2021.
+        La campagne de rappel a débuté en septembre 2021, est s’est étendue progressivement aux autres tranches d’âges. Si vous êtes concerné(e), ce rappel est maintenant obligatoire pour prolonger la validité de votre <strong>passe vaccinal</strong>.
     </p>
 </header>
 
@@ -37,7 +37,7 @@
 .. injection:: /je-veux-me-faire-vacciner.html#puis-je-me-faire-vacciner-contre-la-grippe-saisonniere-et-la-covid-en-meme-temps
 
 
-## Prolonger mon pass sanitaire
+## Prolonger mon passe vaccinal
 
 .. injection:: /pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal
 

@@ -23,8 +23,8 @@
 
     Les règles du **passe sanitaire** continueront à s’appliquer aux mineurs âgés de **12 à 15 ans**.
 
-    Votre **schéma de vaccination est complet** si vous avez respecté les délais suivants :
-    * si vous avez été vacciné(e) avec les vaccins Pfizer ou Moderna : votre dernière dose doit dater d’il y a moins de 4 mois (3 mois + 1 mois de tolérance) ;
+    Votre **schéma de vaccination est complet** si vous avez respecté les délais suivants :
+    * si vous avez été vacciné(e) avec les vaccins Pfizer ou Moderna : votre dernière dose doit dater d’il y a moins de 4 mois (3 mois + 1 mois de tolérance) ;
     * si vous avez été vacciné(e) avec le vaccin Janssen et que vous avez reçu la **dose aditionnelle** il y a moins de 4 mois (3 mois + 1 mois de tolérance).
 
     Si vous avez reçu votre première dose il y a moins de 28 jours, vous pouvez bénéficier d’un *passe vaccinal temporaire* (voir ci-dessous)
@@ -37,13 +37,13 @@
     </div>
 
 
-.. question:: Je suis en cours de vaccination, comment obtenir un passe vaccinal temporaire ?
+.. question:: Je suis en cours de vaccination, comment obtenir un passe vaccinal temporaire ?
     :level: 3
 
     Si vous avez reçu une **première dose** de vaccin et que vous avez rendez-vous pour recevoir la 2<sup>e</sup> dose dans les 28 prochains jours, vous pouvez en attendant présenter un **test de dépistage négatif** (*passe vaccinal temporaire*) en **complément** de votre attestation de première dose pour participer à certaines activités.
 
 
-.. question:: Je ne suis pas encore vacciné(e). Combien de doses dois-je recevoir pour obtenir mon passe vaccinal ?
+.. question:: Je ne suis pas encore vacciné(e). Combien de doses dois-je recevoir pour obtenir mon passe vaccinal ?
     :level: 3
 
     - Si vous n’êtes pas encore vacciné(e) contre la Covid, vous obtiendrez votre passe vaccinal une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation.
@@ -59,22 +59,22 @@
     </div>
 
 
-.. question:: Mon passe vaccinal a été désactivé. Quand sera-t-il réactivé ?
+.. question:: Mon passe vaccinal a été désactivé. Quand sera-t-il réactivé ?
     :level: 3
 
-    Si vous ne faites pas votre rappel vaccinal dans les 4 mois (3 mois + 1 mois de tolérance) suivants votre primo-vaccination votre pass sera automatiquement désactivé. Il sera réactivé **7 jours après** votre injection de rappel.
+    Si vous ne faites pas votre rappel vaccinal dans les 4 mois (3 mois + 1 mois de tolérance) suivants votre primo-vaccination votre passe sera automatiquement désactivé. Il sera réactivé **7 jours après** votre injection de rappel.
 
 
 .. question:: Qu’est-ce que le passe sanitaire et à qui s’applique t-il encore ?
     :level: 3
 
-    En France, le pass sanitaire continue de concerner les enfants de **12 à 15 ans**. Il peut être, **selon la situation** de l’enfant :
+    En France, le passe sanitaire continue de concerner les enfants de **12 à 15 ans**. Il peut être, **selon la situation** de l’enfant :
 
     - un [test de dépistage négatif](#comment-obtenir-un-certificat-de-depistage-avec-qr-code) : **test PCR** ou **test antigénique**, datant de moins de **24 h** ;
 
     - un [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) : un test de dépistage **positif**, **PCR** ou **antigénique** de **plus de 11 jours** et **moins de 6 mois** ;
 
-    - un [certificat de contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal) établi par l’Assurance Maladie ;
+    - un [certificat de contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal) établi par l’Assurance Maladie ;
 
     - une [attestation de vaccination](#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code), qui indique que le schéma vaccinal est complet (1 ou 2 doses).
 
@@ -82,7 +82,7 @@
 
     - Ces documents sont valables **à condition qu’ils comportent un QR code**.
 
-    - Les **tests sérologiques** ne sont **pas** des pass sanitaires.
+    - Les **tests sérologiques** ne sont **pas** des passes sanitaires.
 
     </div>
 
@@ -115,7 +115,7 @@
         * si vous avez entre **18 et 64 ans** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **7 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
 
     - À partir du **24 janvier 2022** :
-        * si vous avez entre **12 et 17 ans**, vous serez éligible à une dose de rappel, mais celle-ci ne sera **pas obligatoire** dans le cadre du pass sanitaire.
+        * si vous avez entre **12 et 17 ans**, vous serez éligible à une dose de rappel, mais celle-ci ne sera **pas obligatoire** dans le cadre du passe vaccinal.
 
     - À partir du **15 février 2022** :
         * si vous avez **18 ans ou plus** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **4 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
@@ -155,7 +155,7 @@
 
       Ce passe ne sera **pas valable à l’étranger**, car les autres pays européens n’ont pas tous les mêmes règles sanitaires.
 
-    - Si vous ne pouvez pas vous faire vacciner parce que **vous avez eu la Covid** il y a moins de **6 mois**, le **QR code** présent sur votre test de dépistage positif (aussi appelé [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)) fera office de pass sanitaire.
+    - Si vous ne pouvez pas vous faire vacciner parce que **vous avez eu la Covid** il y a moins de **6 mois**, le **QR code** présent sur votre test de dépistage positif (aussi appelé [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)) fera office de passe vaccinal.
 
 
 .. question:: Puis-je recevoir des soins à l’hôpital si je ne suis pas vacciné(e) contre la Covid ?
@@ -191,11 +191,11 @@
     Le passe vaccinal est exigé pour les personnes de **16 ans et plus** dans les lieux où le brassage de personnes pose des risques sanitaires. Il ne s’applique **pas dans les établissements médico-sociaux** (hôpital, EHPAD…)
 
     Il est notamment **obligatoire** pour accéder :
-    - aux lieux de loisir et de culture : **cinéma, musées, théâtres, parc d’attraction, enceintes sportives (salles, stades…)…** ;
-    - aux lieux de convivialité :  **restaurants**, **bars** et **cafés** (même en terrasse) ;
+    - aux lieux de loisir et de culture : **cinéma, musées, théâtres, parc d’attraction, enceintes sportives (salles, stades…)…** ;
+    - aux lieux de convivialité :  **restaurants**, **bars** et **cafés** (même en terrasse) ;
     - à certains grands **centres commerciaux** (sur décision du préfet) ;
-    - aux **séminaires professionnels** de plus de 50 personnes organisés en dehors des locaux de l’entreprise ;
-    - aux **transports** interrégionaux : avion, train, bus (sauf motif impérieux d’ordre familial ou de santé, où il pourra être remplacé par un test de dépistage négatif).
+    - aux **séminaires professionnels** de plus de 50 personnes organisés en dehors des locaux de l’entreprise ;
+    - aux **transports** interrégionaux : avion, train, bus (sauf motif impérieux d’ordre familial ou de santé, où il pourra être remplacé par un test de dépistage négatif).
 
     Pour les enfants de **12 à 15 ans**, ces lieux restent accessibles avec un passe sanitaire (certificat de vaccination **ou** test de dépistage négatif).
 
@@ -228,10 +228,12 @@
     En cas de **motif impérieux** d’ordre familial ou de santé, une personne non vaccinée pourra présenter un test de dépistage négatif de moins de 24 h pour voyager.
 
 
-.. question:: Qui est concerné par le passe vaccinal ?
+.. question:: Qui est concerné par le passe vaccinal ?
     :level: 3
 
     Toutes les personnes âgées de **16 ans et plus** qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal).
+
+    Les règles du **passe sanitaire** continuent à s’appliquer aux mineurs âgés de **12 à 15 ans**.
 
     <div class="voir-aussi">
 
@@ -251,7 +253,7 @@
 
     <div class="exemple">
 
-    Par exemple, un chef cuisinier ne participant pas au service du restaurant et travaillant dans une cuisine fermée, non accessible au public, n’est pas dans l’obligation de présenter un pass sanitaire.
+    Par exemple, un chef cuisinier ne participant pas au service du restaurant et travaillant dans une cuisine fermée, non accessible au public, n’est pas dans l’obligation de présenter un passe vaccinal.
 
     En revanche, si la cuisine est ouverte ou s’il participe au service, alors il devra présenter à son employeur : un test de dépistage négatif toutes les 24 h **ou** un certificat de rétablissement de plus de 11 jours et moins de 6 mois **ou** une attestation de vaccination complète.
 
@@ -264,7 +266,7 @@
 
     <div class="voir-aussi">
 
-    - Consultez la foire aux questions sur la [mise en place du pass sanitaire dans le milieu professionnel](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/article/obligation-de-vaccination-ou-de-detenir-un-pass-sanitaire-pour-certaines) sur le site du ministère du Travail.
+    - Consultez la foire aux questions sur la [mise en place du passe sanitaire dans le milieu professionnel](https://travail-emploi.gouv.fr/le-ministere-en-action/coronavirus-covid-19/questions-reponses-par-theme/article/obligation-de-vaccination-ou-de-detenir-un-pass-sanitaire-pour-certaines) sur le site du ministère du Travail.
 
     - Consultez l’[article 12 de la loi du 5 août 2021 relative à la gestion de la crise sanitaire](https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000043909691) qui liste les professions concernées par l’obligation vaccinale.
 
@@ -273,7 +275,7 @@
 
 ## Les voyages à l’étranger
 
-.. question:: Est-ce que le passe vaccinal est obligatoire pour voyager en Europe ou ailleurs à l’étranger ?
+.. question:: Est-ce que le passe vaccinal est obligatoire pour voyager en Europe ou ailleurs à l’étranger ?
     :level: 3
 
     Cela dépend de votre **pays de destination**. Même dans l’**espace européen**, les exigences ne sont pas les mêmes pour chaque pays. Une **preuve de vaccination** n’est pas toujours exigée.

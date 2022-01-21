@@ -192,7 +192,7 @@ describe('Tests', function () {
         const statut = await questionnaire.recuperationStatut(
             'pas-symptomes-pas-cas-contact-auto-test-non'
         )
-        // On propose un test PCR ou antigénique pour le pass sanitaire.
+        // On propose un test PCR ou antigénique pour le passe sanitaire.
         assert.include(statut, 'un test négatif PCR nasopharyngé ou antigénique')
         // On propose un test PCR ou antigénique pour visiter des personnes vulnérables.
         assert.include(

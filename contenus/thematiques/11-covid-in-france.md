@@ -2,7 +2,7 @@
 
 <img src="illustrations/deplacements.svg">
 
-<header>What should I know about Covid-19 policies in France? When do I need a French health pass (pass sanitaire), and how can I get one?</header>
+<header>What should I know about Covid-19 policies in France? When do I need a French health pass (passe sanitaire), and how can I get one?</header>
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
@@ -21,7 +21,7 @@
    You should also tell your close contacts that they may have been exposed to the virus and they should get tested immediately.
 
 
-.. question:: As a tourist, vaccinated outside the European Union, how can I obtain a French health pass (<i>pass sanitaire</i>)?
+.. question:: As a tourist, vaccinated outside the European Union, how can I obtain a French health pass (<i>passe sanitaire</i>)?
 
    **Non-european nationals** visiting France can convert their extra-european vaccination certificate at a **pharmacy**. You will need to present your **passport** and your existing **vaccination certificate** in paper format. The pharmacy can charge you up to **36 euros** for this procedure.
 
@@ -40,7 +40,7 @@
    </div>
 
 
-.. question:: As a student, vaccinated outside the European Union, how can I obtain a French health pass (<i>pass sanitaire</i>)?
+.. question:: As a student, vaccinated outside the European Union, how can I obtain a French health pass (<i>passe sanitaire</i>)?
 
    Foreign **students** studying in France can [request the conversion](https://www.demarches-simplifiees.fr/commencer/passe-sanitaire-etudiants?locale=en) of their vaccination certificate.
 
@@ -54,14 +54,14 @@
 
    If you were vaccinated in one of the following countries, you **do not need** to convert your vaccination certificate: Albania, Andorra, Armenia, Faroe Islands, Iceland, Israel, Liechtenstein, North Macedonia, Morocco, Monaco, Norway, Panama, United-Kingdom, San Marino, Switzerland, Turkey, Ukraine, Vatican.
 
-.. question:: Which means of transport require the health pass (<i>pass sanitaire</i>)?
+.. question:: Which means of transport require the health pass (<i>passe sanitaire</i>)?
 
-   You must provide a valid healh pass (*pass sanitaire*) to access any train, plane or bus for a **long distance** journey.
+   You must provide a valid healh pass (*passe sanitaire*) to access any train, plane or bus for a **long distance** journey.
 
    The health pass is **not required** to use public transportation (bus, tramway, subway…) within cities or across the Paris region.
 
 
-.. question:: Which documents are considered a health pass (<i>pass sanitaire</i>) in France?
+.. question:: Which documents are considered a health pass (<i>passe sanitaire</i>) in France?
 
    In France, **3 documents** can be used as a health pass, as long as they include a valid European **QR code**:
 
@@ -70,7 +70,7 @@
       * a certificate of **full vaccination** with Pfizer, Moderna, AstraZeneca or Janssen.
 
    You will be considered fully vaccinated:
-   
+
       * **7 days** after the <strong>2<sup>nd</sup> jab</strong> of **Pfizer**, **Moderna** or **AstraZeneca** (or if you tested positive to Covid-19 **before** receiving the first jab, your vaccination will be considered complete 7 days after this single injection),
 
       * *or* **7 days** after your **additional jab** of Pfizer or Moderna, if you were first vaccinated with a single dose of **Janssen**.
