@@ -174,7 +174,7 @@
 .. question:: Puis-je recevoir des soins à l’hôpital si je ne suis pas vacciné(e) contre la Covid ?
     :level: 3
 
-    **Bien sûr**. Le **passe vaccinal ne s’applique pas** dans les établissement médico-sociaux (hôpital, clinique, EHPAD...). Vacciné(e) ou non, vous avez accès aux mêmes soins.
+    **Bien sûr**. Le **passe vaccinal ne s’applique pas** dans les établissement médico-sociaux (hôpital, clinique, EHPAD…). Vacciné(e) ou non, vous avez accès aux mêmes soins.
 
     #### Pour le service des urgences
 
@@ -244,7 +244,7 @@
 .. question:: Qui est concerné par le passe vaccinal ?
     :level: 3
 
-    Toutes les personnes âgées de **16 ans et plus**.
+    Toutes les personnes âgées de **16 ans et plus** qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal).
 
     <div class="voir-aussi">
 
@@ -289,7 +289,7 @@
 .. question:: Est-ce que le passe vaccinal est obligatoire pour voyager en Europe ou ailleurs à l’étranger ?
     :level: 3
 
-    Cela dépend de votre **pays de destination**. Même dans l’**espace européen**, les exigences ne sont pas les mêmes pour chaque pays. Une **preuve de vaccination**, n’est pas toujours exigée.
+    Cela dépend de votre **pays de destination**. Même dans l’**espace européen**, les exigences ne sont pas les mêmes pour chaque pays. Une **preuve de vaccination** n’est pas toujours exigée.
 
     Avant de partir en voyage, **même dans l’espace européen**, nous vous conseillons de vérifier les **conditions d’accès à votre pays de destination** sur [le portail France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
