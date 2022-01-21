@@ -153,7 +153,7 @@ class FormulaireRappelVaccinal extends Formulaire {
                     }
 
                     if (this.prolongationPass) {
-                        params['desactivation-pass-sanitaire'] =
+                        params['desactivation-passe-vaccinal'] =
                             dateLimitePass.format('LL')
                         this.afficheReponse('rappel-et-pass', params)
                     } else {
