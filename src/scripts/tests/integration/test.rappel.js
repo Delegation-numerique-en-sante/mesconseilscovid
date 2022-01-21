@@ -51,18 +51,6 @@ class Questionnaire {
         await bouton.click()
     }
 
-    async remplirSituationMoins18(reponse) {
-        const checkbox_label = await this.page.waitForSelector(
-            `#${this.prefixe}-situation-moins18-form label[for="${this.prefixe}_situation_moins18_radio_${reponse}"]`
-        )
-        await checkbox_label.click()
-
-        const bouton = await this.page.waitForSelector(
-            `#${this.prefixe}-situation-moins18-form >> text="Continuer"`
-        )
-        await bouton.click()
-    }
-
     async remplirDateDerniereDose(dateIso) {
         await this.page.fill(`#${this.prefixe}_date_derniere_dose`, dateIso)
 
@@ -409,8 +397,8 @@ describe('Mini-questionnaire dose de rappel', function () {
         })
     })
 
-    describe('Éligible au rappel mais pas concerné pour le pass sanitaire', function () {
-        it('Moins de 18 ans et immunodéprimé(e), 17 mai', async function () {
+    describe('Adolescents éligibles au rappel mais sans impact sur le pass sanitaire', function () {
+        it('12 à 17 ans, 17 octobre', async function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
@@ -418,17 +406,15 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins18')
-            await questionnaire.remplirVaccinationInitiale('autre')
-            await questionnaire.remplirSituationMoins18('immunodeprimee')
-            await questionnaire.remplirDateDerniereDose('2021-05-17')
+            await questionnaire.remplirDateDerniereDose('2021-10-17')
 
             const statut = await questionnaire.recuperationStatut('rappel')
-            assert.include(statut, 'Vous avez moins de 18 ans')
-            assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
-            assert.include(statut, 'Votre dernière injection date du 17 mai 2021.')
+            assert.include(statut, 'Vous avez entre 12 et 17 ans')
+            assert.include(statut, 'avec le vaccin Pfizer ou Moderna')
+            assert.include(statut, 'Votre dernière injection date du 17 octobre 2021.')
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 1 septembre 2021.'
+                'Vous pourrez recevoir votre dose de rappel à partir du 24 janvier 2022.'
             ) // début de la campagne de rappel
 
             assert.include(
@@ -436,7 +422,7 @@ describe('Mini-questionnaire dose de rappel', function () {
                 'Vous ne serez pas concerné(e) par la désactivation du pass sanitaire, qui restera valable au delà du 15 décembre 2021.'
             )
         })
-        it('Moins de 18 ans et immunodéprimé(e), 17 juin', async function () {
+        it('12 à 17 ans, 17 novembre', async function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
@@ -444,24 +430,23 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins18')
-            await questionnaire.remplirVaccinationInitiale('autre')
-            await questionnaire.remplirSituationMoins18('immunodeprimee')
-            await questionnaire.remplirDateDerniereDose('2021-06-17')
+            await questionnaire.remplirDateDerniereDose('2021-11-17')
 
             const statut = await questionnaire.recuperationStatut('rappel')
-            assert.include(statut, 'Vous avez moins de 18 ans')
-            assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
-            assert.include(statut, 'Votre dernière injection date du 17 juin 2021.')
+            assert.include(statut, 'Vous avez entre 12 et 17 ans')
+            assert.include(statut, 'avec le vaccin Pfizer ou Moderna')
+            assert.include(statut, 'Votre dernière injection date du 17 novembre 2021.')
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 17 septembre 2021.'
+                'Vous pourrez recevoir votre dose de rappel à partir du 17 février 2022.'
             )
+
             assert.include(
                 statut,
                 'Vous ne serez pas concerné(e) par la désactivation du pass sanitaire, qui restera valable au delà du 15 décembre 2021.'
             )
         })
-        it('Moins de 18 ans et comorbidité, 17 juin', async function () {
+        it('12 à 17 ans, 17 décembre', async function () {
             const questionnaire = new Questionnaire(
                 this.test.page,
                 'pass-sanitaire-qr-code-voyages.html',
@@ -469,18 +454,17 @@ describe('Mini-questionnaire dose de rappel', function () {
             )
             await questionnaire.cEstParti()
             await questionnaire.remplirAge('moins18')
-            await questionnaire.remplirVaccinationInitiale('autre')
-            await questionnaire.remplirSituationMoins18('comorbidite')
-            await questionnaire.remplirDateDerniereDose('2021-06-17')
+            await questionnaire.remplirDateDerniereDose('2021-12-17')
 
             const statut = await questionnaire.recuperationStatut('rappel')
-            assert.include(statut, 'Vous avez moins de 18 ans')
-            assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
-            assert.include(statut, 'Votre dernière injection date du 17 juin 2021.')
+            assert.include(statut, 'Vous avez entre 12 et 17 ans')
+            assert.include(statut, 'avec le vaccin Pfizer ou Moderna')
+            assert.include(statut, 'Votre dernière injection date du 17 décembre 2021.')
             assert.include(
                 statut,
-                'Vous pourrez recevoir votre dose de rappel à partir du 17 septembre 2021.'
+                'Vous pourrez recevoir votre dose de rappel à partir du 19 mars 2022.'
             )
+
             assert.include(
                 statut,
                 'Vous ne serez pas concerné(e) par la désactivation du pass sanitaire, qui restera valable au delà du 15 décembre 2021.'
@@ -561,52 +545,6 @@ describe('Mini-questionnaire dose de rappel', function () {
 
         formLegend = await page.waitForSelector(`#${prefixe}-age-form legend h3`)
         assert.equal(await formLegend.innerText(), 'Mon âge')
-    })
-
-    it('Bouton retour (date dernière dose via moins 18)', async function () {
-        const questionnaire = new Questionnaire(
-            this.test.page,
-            'pass-sanitaire-qr-code-voyages.html',
-            'avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-pass-sanitaire'
-        )
-
-        const prefixe = await questionnaire.cEstParti()
-
-        const page = this.test.page
-
-        let formLegend = await page.waitForSelector(`#${prefixe}-age-form legend h3`)
-        assert.equal(await formLegend.innerText(), 'Mon âge')
-
-        await questionnaire.remplirAge('moins18')
-        await questionnaire.remplirVaccinationInitiale('autre')
-        await questionnaire.remplirSituationMoins18('comorbidite')
-
-        formLegend = await page.waitForSelector(
-            `#${prefixe}-date-derniere-dose-form legend h3`
-        )
-        assert.equal(await formLegend.innerText(), 'La date de ma dernière injection')
-
-        // On clique sur le bouton retour.
-        const bouton = await page.waitForSelector(
-            `#${prefixe}-date-derniere-dose-form >> text="Retour"`
-        )
-        await bouton.click()
-
-        formLegend = await page.waitForSelector(
-            `#${prefixe}-situation-moins18-form legend h3`
-        )
-        assert.equal(await formLegend.innerText(), 'Ma situation')
-
-        // On clique sur le bouton retour.
-        const bouton2 = await page.waitForSelector(
-            `#${prefixe}-situation-moins18-form >> text="Retour"`
-        )
-        await bouton2.click()
-
-        formLegend = await page.waitForSelector(
-            `#${prefixe}-vaccination-initiale-form legend h3`
-        )
-        assert.equal(await formLegend.innerText(), 'Ma vaccination initiale')
     })
 
     it('Bouton recommencer', async function () {

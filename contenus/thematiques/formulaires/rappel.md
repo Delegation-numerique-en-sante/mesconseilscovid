@@ -21,7 +21,7 @@
             <input id="{{prefixe}}_age_radio_moins65" type="radio" required name="{{prefixe}}_age_radio" value="moins65">
             <label for="{{prefixe}}_age_radio_moins65">J’ai entre 18 et 64 ans</label>
             <input id="{{prefixe}}_age_radio_moins18" type="radio" required name="{{prefixe}}_age_radio" value="moins18">
-            <label for="{{prefixe}}_age_radio_moins18">J’ai moins de 18 ans</label>
+            <label for="{{prefixe}}_age_radio_moins18">J’ai entre 12 et 17 ans</label>
         </div>
     </fieldset>
     <div class="form-controls">
@@ -41,27 +41,6 @@
             <label for="{{prefixe}}_vaccination_initiale_radio_autre">J’ai été vacciné avec Pfizer, Moderna ou AstraZeneca</label>
             <input id="{{prefixe}}_vaccination_initiale_radio_janssen" type="radio" required name="{{prefixe}}_vaccination_initiale_radio" value="janssen">
             <label for="{{prefixe}}_vaccination_initiale_radio_janssen">J’ai été vacciné avec Janssen</label>
-        </div>
-    </fieldset>
-    <div class="form-controls">
-        <div class="button-with-progress">
-            <p id="aria-description-progress-{{prefixe}}-situation" class="progress">Il vous reste 1 étape</p>
-            <input type="submit" class="button button-arrow" value="Continuer" aria-describedby="aria-description-progress-{{prefixe}}-situation">
-        </div>
-    </div>
-</form>
-
-<form id="{{prefixe}}-situation-moins18-form" hidden>
-    <a href="javascript:;" data-precedent="vaccination-initiale" class="back-button">Retour</a>
-    <fieldset class="required">
-        <legend><h3 id="{{prefixe}}-situation-moins18-label">Ma situation</h3></legend>
-        <div role="radiogroup" aria-labelledby="{{prefixe}}-situation-moins18-label">
-            <input id="{{prefixe}}_situation_moins18_radio_immunodeprimee" type="radio" required name="{{prefixe}}_situation_moins18_radio" value="immunodeprimee">
-            <label for="{{prefixe}}_situation_moins18_radio_immunodeprimee">Je suis sévèrement immunodéprimé(e)</label>
-            <input id="{{prefixe}}_situation_moins18_radio_comorbidite" type="radio" required name="{{prefixe}}_situation_moins18_radio" value="comorbidite">
-            <label for="{{prefixe}}_situation_moins18_radio_comorbidite"><span>J’ai une <a href="/je-veux-me-faire-vacciner.html#quels-sont-les-facteurs-de-risque-de-formes-graves-de-covid">comorbidité</a> (risque de forme grave)</span></label>
-            <input id="{{prefixe}}_situation_moins18_radio_autre" type="radio" required name="{{prefixe}}_situation_moins18_radio" value="autre">
-            <label for="{{prefixe}}_situation_moins18_radio_autre">Autre situation</label>
         </div>
     </fieldset>
     <div class="form-controls">
