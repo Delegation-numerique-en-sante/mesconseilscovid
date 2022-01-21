@@ -281,9 +281,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Les enfants de 5 à 11 ans peuvent-ils être vaccinés ?
     :level: 3
 
-    À compter du mercredi 22 décembre, la vaccination est possible pour tous les enfants âgés de **5 à 11 ans**, suite aux avis favorables de la Haute autorité de santé (HAS), du Conseil consultatif national d’éthique (CCNE) et du Conseil d’orientation de la stratégie vaccinale (COSV).
+    **Oui**. La vaccination est possible pour tous les enfants âgés de **5 à 11 ans**. Cette vaccination est **facultative**, et se fait avec une forme pédiatrique (trois fois moins dosée) du vaccin **Pfizer**. L’**accord des deux parents** (ou titulaires de l’autorité parentale) est nécessaire.
 
-    Cette vaccination est **facultative**, et se fait avec une forme pédiatrique (trois fois moins dosée) du vaccin **Pfizer**. L’**accord des deux parents** (ou titulaires de l’autorité parentale) est nécessaire.
+    Cette décision a été prise suite aux avis favorables de la Haute autorité de santé (HAS), du Conseil consultatif national d’éthique (CCNE) et du Conseil d’orientation de la stratégie vaccinale (COSV).
 
 
 .. question:: Où faire vacciner un mineur et avec quel vaccin ?
@@ -313,11 +313,11 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * **une seule dose**, s’ils ont déjà été contaminés à la Covid (dans ce cas, il faut attendre **au minimum 2 mois** après le test positif avant de se faire vacciner) ;
     * **deux doses**, s’ils n’ont pas déjà été contaminés par la Covid.
-    
-    Le délai entre les deux doses dépend du vaccin et de l'âge de votre enfant : 
-    
+
+    Le délai entre les deux doses dépend du vaccin et de l'âge de votre enfant :
+
     * enfant âgé de **5 à 11 ans** (dosage pédiatrique du vaccin Pfizer) : entre **18 et 24 jours**.
-    
+
     * enfant âgé de **12 à 17 ans** :
         * 3 à 7 semaines après la première, pour le vaccin Pfizer ;
         * 4 à 7 semaines après la première, pour le vaccin Moderna.
@@ -603,7 +603,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     :level: 3
 
     Si votre enfant en bas âge est cas contact, il doit être **testé immédiatement** (test PCR, PCR salivaire, antigénique). Les tests de dépistage sont toujours **gratuits** pour les enfants. Son accueil en crèche pourra reprendre à condition de présenter une **attestation** parentale de résultat **négatif**. Par sécurité, vous êtes encouragé à réaliser un second test, **7 jours après** la notification de contact à risque pour confirmer que l’enfant n’a pas été contaminé.
-    
+
     Sans test, votre enfant devra rester isolé 7 jours. Si nécessaire, vous pouvez obtenir un **arrêt de travail** pour le garder à la maison.
 
     <div class="voir-aussi">
