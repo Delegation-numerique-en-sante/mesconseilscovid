@@ -21,7 +21,7 @@ import { Formulaire } from './formulaire'
 // cohérent avec l’application TousAntiCovid ainsi qu’avec l’outil de la CNAM
 // (https://monrappelvaccincovid.ameli.fr/), sous réserve de leur mise à jour.
 // La règle de calcul commune pour l’éligibilité au rappel, comme pour
-// l’expiration du pass sanitaire est (finalement) de compter 30,5 jours
+// l’expiration du passe vaccinal est (finalement) de compter 30,5 jours
 // par mois, puis d’arrondir à l’entier supérieur.
 const JOURS_DANS_1_MOIS = 31
 const JOURS_DANS_2_MOIS = 61

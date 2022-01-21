@@ -259,17 +259,17 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: Est-ce que mon enfant a besoin du pass sanitaire pour aller à l’école ?
+.. question:: Est-ce que mon enfant a besoin du passe sanitaire pour aller à l’école ?
     :level: 3
 
-    **Non**. Le pass sanitaire n’est **pas obligatoire** pour accéder aux établissements d’enseignement, écoles, collèges ou lycées.
+    **Non**. Le passe vaccinal ou le passe sanitaire ne sont **pas obligatoire** pour accéder aux établissements d’enseignement, écoles, collèges ou lycées.
 
 
     <div class="voir-aussi">
 
     - Notre rubrique sur la [vaccination des enfants et adolescents](#la-vaccination-contre-la-covid) ci-dessous
 
-    - Notre autre page sur le [pass sanitaire](/pass-sanitaire-qr-code-voyages.html)
+    - Notre autre page sur le [pass vaccinal](/pass-sanitaire-qr-code-voyages.html)
 
     </div>
 
@@ -370,18 +370,18 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * La preuve de contamination antérieure, si le mineur a déjà été contaminé par la Covid. Cette preuve peut-être un ancien **test positif** (PCR ou antigénique), ou une **sérologie** (prise de sang) indiquant la présence d’anticorps. Il faut respecter un délai de **2 mois minimum** après ce test positif avant de se faire vacciner.
 
 
-.. question:: Comment obtenir une attestation de vaccination (valable comme « pass sanitaire ») pour un mineur de 12 ans et plus ?
+.. question:: Comment obtenir une attestation de vaccination (valable comme « passe sanitaire ») pour un mineur de 12 ans et plus ?
     :level: 3
 
     Suite à la vaccination, le professionnel de santé lui remettra une **attestation de vaccination** (sur papier) comportant un QR code.
 
-    Elle sera valable comme « pass sanitaire » en France **7 jours après la dernière dose** (dose unique en cas de contamination antérieure, ou 2<sup>e</sup> dose dans les autres cas). Pour les voyages à l’international, le délai est de 14 jours.
+    Elle sera valable comme « passe sanitaire » en France **7 jours après la dernière dose** (dose unique en cas de contamination antérieure, ou 2<sup>e</sup> dose dans les autres cas). Pour les voyages à l’international, le délai est de 14 jours.
 
     Cette attestation pourra être importée dans l’application TousAntiCovid rubrique « carnet », sur le smartphone de l’adolescent(e) ou de ses parents.
 
     <div class="voir-aussi">
 
-    * Pour plus d’informations, consultez notre page sur [les voyages et le pass sanitaire](/pass-sanitaire-qr-code-voyages.html).
+    * Pour plus d’informations, consultez notre page sur [les voyages et le passe vaccinal](/pass-sanitaire-qr-code-voyages.html).
 
     </div>
 
@@ -395,7 +395,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
         * un **test PCR ou antigénique négatif** de moins de 24 h ;
         * un **test PCR positif** de plus de 11 jours et moins de 6 mois (aussi appelé *certificat de rétablissement*).
 
-    * Le **pass vaccinal** s’applique aux adolescent(e)s de **16 à 17 ans**, et les justificatifs valables pour eux seront donc uniquement :
+    * Le **passe vaccinal** s’applique aux adolescent(e)s de **16 à 17 ans**, et les justificatifs valables pour eux seront donc uniquement :
         * une **attestation de vaccination complète** (toutes les doses et respect du délai de 7 jours après la dernière dose en France, ou 14 jours pour voyager à l’étranger) ;
         * un **test PCR positif** de plus de 11 jours et moins de 6 mois (aussi appelé *certificat de rétablissement*).
 

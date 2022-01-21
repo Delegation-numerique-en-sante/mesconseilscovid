@@ -1,7 +1,7 @@
 <form id="{{prefixe}}-demarrage-form">
     <fieldset>
         <legend>
-            Suis-je concerné par la <strong>dose de rappel</strong> ? À partir de <strong>quelle date</strong> pourrai-je la recevoir ? Quelle est la date limite pour ne pas perdre mon <strong>pass sanitaire</strong> ?
+            Suis-je concerné par la <strong>dose de rappel</strong> ? À partir de <strong>quelle date</strong> pourrai-je la recevoir ? Quelle est la date limite pour ne pas perdre mon <strong>passe vaccinal</strong> ?
         </legend>
     </fieldset>
     <div class="form-controls">
@@ -73,9 +73,9 @@ Votre dernière injection date du <strong class="date-derniere-dose"></strong>.
 
 Vous pourrez recevoir votre <span class="type-dose">dose de rappel</span> à partir du <strong class="date-eligibilite-rappel"></strong>.
 
-En l’absence de cette injection, votre pass sanitaire actuel ne sera plus valide à partir du <strong class="desactivation-pass-sanitaire"></strong>.
+En l’absence de cette injection, votre passe vaccinal actuel ne sera plus valide à partir du <strong class="desactivation-pass-sanitaire"></strong>.
 
-Si vous recevez votre <span class="type-dose">dose de rappel</span> avant cette date, alors vous pourrez prolonger votre pass sanitaire sans discontinuité.
+Si vous recevez votre <span class="type-dose">dose de rappel</span> avant cette date, alors vous pourrez prolonger votre passe vaccinal sans discontinuité.
 
 </div>
 
@@ -87,7 +87,7 @@ Votre dernière injection date du <strong class="date-derniere-dose"></strong>.
 
 Vous pourrez recevoir votre dose de rappel à partir du <strong class="date-eligibilite-rappel"></strong>.
 
-Vous ne serez **pas concerné(e)** par la désactivation du pass sanitaire, qui restera valable au delà du 15 décembre 2021.
+Vous ne serez **pas concerné(e)** par la désactivation du passe vaccinal, qui restera valable au delà du 15 décembre 2021.
 
 </div>
 
@@ -97,7 +97,7 @@ Vous avez **moins de 18 ans** et avez été vacciné(e) avec le vaccin **Pfizer
 
 Vous n’êtes actuellement **pas concerné** par la campagne de rappel.
 
-Votre **pass sanitaire** restera également valable au delà du 15 décembre 2021.
+Votre **passe vaccinal** restera également valable au delà du 15 décembre 2021.
 
 </div>
 
