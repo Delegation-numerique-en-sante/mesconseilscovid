@@ -208,7 +208,7 @@
     - aux lieux de convivialité :  **restaurants**, **bars** et **cafés** (même en terrasse) ;
     - à certains grands **centres commerciaux** (sur décision du préfet) ;
     - aux **séminaires professionnels** de plus de 50 personnes organisés en dehors des locaux de l’entreprise ;
-    - aux **transports** interrégionaux : avion, train, bus (sauf en cas de motif impérieux, où il pourra être remplacé par un test de dépistage négatif).
+    - aux **transports** interrégionaux : avion, train, bus (sauf motif impérieux d’ordre familial ou de santé, où il pourra être remplacé par un test de dépistage négatif).
 
     Pour les enfants de **12 à 15 ans**, ces lieux restent accessibles avec un passe sanitaire (certificat de vaccination **ou** test de dépistage négatif).
 
@@ -238,7 +238,7 @@
 
     Les **trains régionaux** (TER) et les **transports urbains** (bus, métros, RER, trains de banlieue…) ne sont **pas concernés** par cette obligation.
 
-    En cas de **motif impérieux**, une personne non vaccinée pourra présenter un test de dépistage négatif de moins de 24 H pour voyager.
+    En cas de **motif impérieux** d’ordre familial ou de santé, une personne non vaccinée pourra présenter un test de dépistage négatif de moins de 24 h pour voyager.
 
 
 .. question:: Qui est concerné par le passe vaccinal ?
