@@ -27,7 +27,7 @@
     * si vous avez été vacciné(e) avec les vaccins Pfizer, Moderna ou AstraZeneca : votre dernière dose doit dater d’il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*) ;
     * si vous avez été vacciné(e) avec le vaccin Janssen : vous devez avoir reçu la **dose aditionnelle** il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*).
 
-    Si vous avez seulement reçu votre première dose, et que vous avez rendez-vous pour votre deuxième dose dans moins de 28 jours, vous pouvez bénéficier d’un *passe vaccinal temporaire* (voir ci-dessous).
+    Si vous avez seulement reçu votre première dose, et que vous avez rendez-vous pour votre deuxième dose dans moins de 28 jours, vous pouvez bénéficier d’un *passe vaccinal temporaire* (voir [ci-dessous](#je-suis-en-cours-de-vaccination-comment-obtenir-un-passe-vaccinal-temporaire)).
 
     <div class="voir-aussi">
 
