@@ -604,6 +604,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
        - lorsque l’enfant doit **rester isolé** parce qu’il est **positif** ou **cas contact** (dans le cas où il n’est pas vacciné) ;
        - lorsqu’une **personne du foyer** est **malade**.
 
+    * Dans ce cas, il peut être bénéfique de prévoir pour l’enfant des **moments d’échange avec l’autre parent** (par téléphone ou en visio par exemple) pour maintenir le lien pendant la période d’isolement.
+
     * Soyez particulièrement **vigilants** lorsque le foyer comporte des **personnes vulnérables** (personnes âgées, immunodéprimées, non vaccinées, ou à risque de forme grave de Covid).
 
 
