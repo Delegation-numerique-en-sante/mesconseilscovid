@@ -1,5 +1,10 @@
 # Changelog
 
+## 2022-01-22
+
+* entrée en vigueur du passe vaccinal le 24/1
+* ouverture du rappel vaccinal aux 12-17 ans le 24/1
+
 ## 2022-01-17
 
 * incorpore le passage à 4 mois prévu le 15 février de la validité
