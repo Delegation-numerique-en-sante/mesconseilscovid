@@ -2,18 +2,16 @@
 
 <img src="illustrations/pediatriegeneral.svg">
 
-<header> Il n’est pas facile de trouver des **informations fiables** sur la **Covid**, les **vaccins** ou les façons de se **protéger**. Tu trouveras sur cette page toutes des informations **vérifiées** pour être **au courant** et **responsable** face au virus !
-    <p class="big"></p>
+<header> 
+    <p class="big">
+        Il n’est pas facile de trouver des informations fiables sur la Covid, les vaccins ou les façons de se protéger. Tu trouveras sur cette page toutes des informations vérifiées pour être au courant et responsable face au virus !
+    </p>
 </header>
 
 .. toc:: Sommaire
     :depth: 3
 
 <div itemscope itemtype="https://schema.org/FAQPage">
-
-<div class="conseil">
-
-</div>
 
 .. section:: Ma vie quotidienne
 
@@ -370,7 +368,7 @@
 
     <div class="voir-aussi">
 
-    * Trouve un créneau de vaccination près de chez toi sur [ViteMaDose](www.vitemadose.fr)
+    * Trouve un créneau de vaccination près de chez toi sur [ViteMaDose](https://vitemadose.covidtracker.fr/)
     </div>
 
 
