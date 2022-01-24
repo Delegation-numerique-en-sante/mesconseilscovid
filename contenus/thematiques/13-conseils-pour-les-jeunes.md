@@ -1,6 +1,6 @@
 # Conseils pour les jeunes : vaccination et scolarité
 
-<img src="illustrations/pediatriegeneral.svg">
+<img src="illustrations/pediatrieecole.svg">
 
 <header> 
     <p class="big">
