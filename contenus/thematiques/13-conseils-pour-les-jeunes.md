@@ -115,9 +115,9 @@
 
     <div class="voir-aussi">
 
-    - [Que se passe-t-il si je suis cas contact et que je suis vacciné ?](#que-se-passe-t-il-si-je-suis-cas-contact-et-vaccine)
+    - [Je suis collégien(ne) ou lycéen(ne). Que se passe-t-il si je suis cas contact et que je suis vacciné(e) ?](#je-suis-collegien-ne-ou-lyceen-ne-que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-suis-vaccine-e)
 
-    - [Que se passe-t-il si je suis cas contact et que je ne suis pas vacciné ?](#que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-ne-suis-pas-vaccine)
+    - [Je suis collégien(ne) ou lycéen(ne). Que se passe-t-il si je suis cas contact et que je ne suis pas vacciné(e) ?](#je-suis-collegien-ne-ou-lyceen-ne-que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-ne-suis-pas-vaccine-e)
 
     - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
 
@@ -129,7 +129,7 @@
 
     <div class="conseil conseil-jaune">
 
-    * Si tu n’es **pas vacciné(e)**, voir [la question suivante](#que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-ne-suis-pas-vaccine).
+    * Si tu n’es **pas vacciné(e)**, voir [la question suivante](#je-suis-collegien-ne-ou-lyceen-ne-que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-suis-vaccine-e).
 
     * Si tu as **déjà eu la Covid** dans les 2 derniers mois, alors tu n’auras pas besoin de t’isoler ni de faire un test.
 
@@ -178,7 +178,7 @@
 
     <div class="conseil conseil-jaune">
 
-    * Si tu es **vacciné**, voir [la question précédente](#que-se-passe-t-il-si-je-suis-cas-contact-et-vaccine).
+    * Si tu es **vacciné**, voir [la question précédente](#je-suis-collegien-ne-ou-lyceen-ne-que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-suis-vaccine-e).
 
     * Si tu as **déjà eu la Covid** dans les 2 derniers mois, alors tu n’auras pas besoin de t’isoler ni de faire un test.
 
@@ -236,11 +236,9 @@
 
     <div class="voir-aussi">
 
-    - [Dans quels cas mon enfant doit-il rester à la maison ?](#dans-quels-cas-mon-enfant-doit-il-rester-a-la-maison)
+    - [Je suis collégien(ne) ou lycéen(ne). Que se passe-t-il si je suis cas contact et que je suis vacciné(e) ?](#je-suis-collegien-ne-ou-lyceen-ne-que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-suis-vaccine-e)
 
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il est vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-est-vaccine)
-
-    - [Que se passe-t-il si mon enfant est cas contact et qu’il n’est pas vacciné ?](#que-se-passe-t-il-si-mon-enfant-est-cas-contact-et-qu-il-n-est-pas-vaccine)
+    - [Je suis collégien(ne) ou lycéen(ne). Que se passe-t-il si je suis cas contact et que je ne suis pas vacciné(e) ?](#je-suis-collegien-ne-ou-lyceen-ne-que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-ne-suis-pas-vaccine-e)
 
     </div>
 
@@ -472,9 +470,9 @@
 
     <div class="voir-aussi">
 
-    - [Que se passe-t-il si je suis cas contact et que je suis vacciné ?](#que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-suis-vaccine)
+    - [Je suis collégien(ne) ou lycéen(ne). Que se passe-t-il si je suis cas contact et que je suis vacciné(e) ?](#je-suis-collegien-ne-ou-lyceen-ne-que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-suis-vaccine-e)
 
-    - [Que se passe-t-il si je suis cas contact et que je ne suis pas vacciné ?](#que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-ne-suis-pas-vaccine)
+    - [Je suis collégien(ne) ou lycéen(ne). Que se passe-t-il si je suis cas contact et que je ne suis pas vacciné(e) ?](#je-suis-collegien-ne-ou-lyceen-ne-que-se-passe-t-il-si-je-suis-cas-contact-et-que-je-ne-suis-pas-vaccine-e)
 
     </div>
 
