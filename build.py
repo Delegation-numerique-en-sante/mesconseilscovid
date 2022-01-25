@@ -25,7 +25,7 @@ HERE = Path(__file__).parent
 SRC_DIR = HERE / "src"
 CONTENUS_DIR = HERE / "contenus"
 STATIC_DIR = HERE / "static"
-NB_OF_DISPLAYED_THEMATIQUES = 9
+NB_OF_DISPLAYED_THEMATIQUES = 12
 
 locale.setlocale(locale.LC_ALL, "fr_FR.UTF-8")
 
@@ -43,7 +43,11 @@ def index():
     markdown_parser = create_markdown_parser()
     responses = build_responses(CONTENUS_DIR, markdown_parser)
 
-    thematiques = get_thematiques(markdown_parser)[:NB_OF_DISPLAYED_THEMATIQUES]
+    thematiques = get_thematiques(markdown_parser)
+    fr_thematiques = [
+        thematique for thematique in thematiques if thematique.lang != "en"
+    ]
+    thematiques = fr_thematiques[:NB_OF_DISPLAYED_THEMATIQUES]
     responses["thematiques"] = thematiques
     responses["autres_thematiques"] = [
         thematique
