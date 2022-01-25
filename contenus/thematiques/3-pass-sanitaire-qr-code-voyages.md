@@ -112,13 +112,13 @@
         * quel que soit votre âge, si vous avez reçu le **vaccin Janssen** depuis plus de **2 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir une dose additionnelle.
 
     - Depuis le **15 janvier 2022** :
-        * si vous avez entre **18 et 64 ans** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **7 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
+        * si vous avez plus de **18 ans et un mois** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **7 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
 
     - À partir du **24 janvier 2022** :
         * si vous avez entre **12 et 17 ans**, vous serez éligible à une dose de rappel, mais celle-ci ne sera **pas obligatoire** dans le cadre du passe vaccinal.
 
     - À partir du **15 février 2022** :
-        * si vous avez **18 ans ou plus** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **4 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
+        * si vous avez plus de **18 ans et un mois** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **4 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
 
 
     <div class="voir-aussi">
@@ -388,7 +388,7 @@
 
     #### Pour justifier d’une vaccination complète
 
-    * Si vous avez reçu **2 doses** de vaccin à l’étranger, alors votre vaccination est considérée comme **complète**. Attention, si vous **18 ans ou plus** et que votre dernière dose date d’il y a plus de 7 mois (délai réduit à 4 mois à partir du 15 février), vous devrez recevoir une **dose de rappel** (3<sup>e</sup> dose) pour obtenir un **QR code** valable en France.
+    * Si vous avez reçu **2 doses** de vaccin à l’étranger, alors votre vaccination est considérée comme **complète**. Attention, si vous plus de **18 ans et un mois** et que votre dernière dose date d’il y a plus de 7 mois (délai réduit à 4 mois à partir du 15 février), vous devrez recevoir une **dose de rappel** (3<sup>e</sup> dose) pour obtenir un **QR code** valable en France.
 
     * Si vous n’avez reçu qu’**une seule dose** de vaccin à l’étranger, vous devrez recevoir une **2<sup>e</sup>** injection de vaccin à **ARNm** (*Pfizer* ou *Moderna*) pour valider votre vaccination en France.
 
