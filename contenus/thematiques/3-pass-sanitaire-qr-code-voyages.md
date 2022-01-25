@@ -27,7 +27,7 @@
     * si vous avez été vacciné(e) avec les vaccins Pfizer, Moderna ou AstraZeneca : votre dernière dose doit dater d’il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*) ;
     * si vous avez été vacciné(e) avec le vaccin Janssen : vous devez avoir reçu la **dose aditionnelle** il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*).
 
-    Si vous avez seulement reçu votre première dose, et que vous avez rendez-vous pour votre deuxième dose dans moins de 28 jours, vous pouvez bénéficier d’un *passe vaccinal temporaire* (voir [ci-dessous](#je-suis-en-cours-de-vaccination-comment-obtenir-un-passe-vaccinal-temporaire)).
+    Si vous avez reçu votre première dose avant le 15 février, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez bénéficier d’un *passe vaccinal temporaire* (voir [ci-dessous](#je-suis-en-cours-de-vaccination-comment-obtenir-un-passe-vaccinal-temporaire)).
 
     <div class="voir-aussi">
 
@@ -40,8 +40,7 @@
 .. question:: Je suis en cours de vaccination, comment obtenir un passe vaccinal temporaire ?
     :level: 3
 
-    Si avez reçu notre première dose **avant** le **15 février** et que vous avez rendez-vous pour recevoir la 2<sup>e</sup> dose dans les 28 prochains jours, alors vous pouvez, en attendant, présenter un **test de dépistage négatif** de moins de 24 H (*passe vaccinal temporaire*) en **complément** de votre attestation de première dose pour participer à certaines activités.
-
+    Si vous avez reçu votre première dose **avant le 15 février**, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, alors vous pouvez, en attendant, présenter un **test de dépistage négatif** de moins de 24 h (*passe vaccinal temporaire*) en **complément** de votre attestation de première dose pour participer à certaines activités.
 
 
 .. question:: Je ne suis pas encore vacciné(e). Combien de doses dois-je recevoir pour obtenir mon passe vaccinal ?
@@ -51,7 +50,7 @@
 
       Pour conserver ce passe, vous devrez ensuite recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans un délai de 7 mois (*ce délai passera à 4 mois à partir du 15 février*).
 
-    - Si vous avez entrepris la démarche de vous faire vacciner **avant** le **15 février**, et que vous devez recevoir votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez, en attendant, présenter un test de dépistage négatif (passe vaccinal temporaire) pour participer à certaines activités.
+    - Si vous avez reçu votre première dose avant le 15 février, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez, en attendant, présenter un test de dépistage négatif (*passe vaccinal temporaire*) en **complément** de votre attestation de première dose pour participer à certaines activités.
 
     <div class="voir-aussi">
 
