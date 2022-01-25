@@ -1,5 +1,13 @@
 # Changelog
 
+## 2022-01-25
+
+* précisions sur le passe vaccinal
+  - le rappel est exigé à partir de 18 ans et un mois
+  - dérogation si la première dose est faite au plus tard le 15/2
+* ajoute la possibilité levée d’isolement anticipée dans les
+  conseils personnalisés pour certains scénarios
+
 ## 2022-01-22
 
 * entrée en vigueur du passe vaccinal le 24/1
