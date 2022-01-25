@@ -2,7 +2,7 @@
 
 <img src="illustrations/pediatrieecole.svg">
 
-<header> 
+<header>
     <p class="big">
         Il n’est pas facile de trouver des informations fiables sur la Covid, les vaccins ou les façons de se protéger. Tu trouveras sur cette page toutes des informations vérifiées pour être au courant et responsable face au virus !
     </p>
@@ -143,7 +143,7 @@
     * Si le test est **positif** :
         - tu as attrapé la Covid. Ce n’est pas grave, mais tu es **contagieux(se)** et tu dois protéger les personnes qui t’entourent ;
         - tu dois rester isolé **7 jours** à partir de la date du test ;
-            
+
             - si tu n’as plus de fièvre depuis au moins 48 h, tu pourras mettre fin à ton isolement après 7 jours seulement, si ton nouveau test de dépistage est négatif (antigénique ou PCR) ;
 
         - les personnes qui vivent avec toi sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
@@ -307,9 +307,11 @@
 .. question:: Je suis jeune et en bonne santé, pourquoi me faire vacciner contre la Covid ?
     :level: 3
 
-    Il est vrai que les jeunes comme toi ont le plus souvent des formes bénignes de Covid (la part des hospitalisations des 11–17 ans est de 0,44 % et celle des admissions en soins critiques de 0,36 %), mais ils peuvent parfois développer des cas plus sévères ou souffrir de symptômes persistants (Covid long). Le vaccin permet alors de limiter efficacement ces risques.
+    La vaccination agit à plusieurs niveaux : elle réduit le risque de transmission, mais aussi le risque de développer des symptômes, voire une forme grave de la maladie si on l’attrape malgré tout.
 
-    En te vaccinant, tu participes surtout à l’effort collectif de **santé publique** :
+    C’est vrai que les jeunes comme toi ont le plus souvent une forme bénigne de Covid, et rarement une forme grave (par exemple les 11-17 ans représentent seulement 0,44 % des hospitalisations, et seulement 0,36 % des admissions en soins critiques). Mais ils peuvent quand même parfois développer des cas plus sévères, ou souffrir de symptômes persistants (Covid long). Même si ces risques sont faibles pour les jeunes, il y a un **intérêt à se faire vacciner** car le vaccin permet de les réduire encore plus.
+
+    Enfin, en te vaccinant, tu participes aussi à l’effort collectif de **santé publique** :
 
     * tu seras **moins contagieux** et risquera donc moins de contaminer les personnes vulnérables ou âgées qui t’entourent, comme tes grands-parents ;
     * tu feras moins circuler la Covid au sein de la population, et cela **freinera le développement du virus et ses mutations**.
@@ -318,9 +320,11 @@
 .. question:: Je suis vacciné, puis-je quand même attraper la Covid ?
     :level: 3
 
-    **Oui.** La vaccination réduit efficacement les risques de contamination, mais, comme n’importe quel autre vaccin, elle n’immunise pas à 100 %.
+    **Oui.** La vaccination **réduit significativement** les risques de transmission, mais elle ne protège jamais à 100 %.
 
-    C’est pourquoi, même si tu es vacciné, il faut continuer à respecter les gestes barrières, réduire les contacts et porter le masque sur le nez et la bouche dès que c’est requis.
+    On le voit notamment face au **variant Omicron**, qui est d’une part très contagieux et qui parvient d’autre part à échapper en partie à nos anticorps.
+
+    Pour éviter efficacement le virus, il faut donc **combiner** les différentes protections. C’est pourquoi, même si tu es vacciné, il est important de continuer à respecter les **gestes barrières** : réduire les contacts, bien aérer les pièces, et porter le masque sur le nez et la bouche dès que c’est requis.
 
 
 .. question:: À quoi sert le vaccin si on peut quand même attraper la Covid ?
@@ -337,11 +341,13 @@
 .. question:: Est-ce que j’ai besoin de l’autorisation de mes parents pour me faire vacciner contre la Covid ?
     :level: 3
 
-    Cela dépend de ton âge. Si tu es âgé de plus de **16 ans**, tu peux te faire vacciner sans l’autorisation de tes parents. N’oublie pas d’apporter ta carte vitale (si tu en as une) à ton rendez-vous de vaccination.
+    Cela dépend de ton âge :
 
-    Si tu as entre **12 et 15 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Tu peux [télécharger](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) le formulaire de consentement, pour qu’il soit rempli avant le jour du rendez-vous. Sinon, une copie sera disponible sur place.
+    - Si tu es âgé de plus de **16 ans**, tu peux te faire vacciner sans l’autorisation de tes parents. N’oublie pas d’apporter ta carte vitale (si tu en as une) à ton rendez-vous de vaccination.
 
-    Le jour de la vaccination, tu pourras, si tu le souhaites, **venir accompagné(e)** d’un parent (ou titulaire de l’autorité parentale).
+    - Si tu as entre **12 et 15 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Tu peux [télécharger](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) le formulaire de consentement, pour qu’il soit rempli avant le jour du rendez-vous. Sinon, une copie sera disponible sur place.
+
+      Le jour de la vaccination, tu pourras, si tu le souhaites, **venir accompagné(e)** d’un parent (ou titulaire de l’autorité parentale).
 
     <div class="voir-aussi">
 
@@ -353,19 +359,23 @@
 .. question:: Je suis mineur. Est-ce que je dois donner mon accord pour être vacciné(e) ?
     :level: 3
 
-    **Oui**. Au cours de l’entretien qui a lieu avant la vaccination, le professionnel de santé te donnera toutes les informations de façon claire et adaptée, et pourra répondre à tes questions si tu en as. Avant de te vacciner, il te demandera ton **consentement oral**.
+    **Oui**. Au cours de l’entretien qui a lieu avant la vaccination, le professionnel de santé te donnera toutes les **informations** de façon claire et adaptée, et pourra répondre à tes **questions** si tu en as. Avant de te vacciner, il te demandera ton **consentement oral**.
 
 
 .. question:: Je suis mineur. Où me faire vacciner et avec quel vaccin ?
     :level: 3
 
-   Si tu as plus de 12 ans, tu peux te faire vacciner :
+    Si tu as plus de 12 ans, tu peux te faire vacciner :
 
-    * dans un **centre de vaccination** et dans certains **établissements scolaires**, avec un vaccin *Pfizer-BioNTech* ;
+    * dans un **centre de vaccination** ;
+    * chez ton **médecin traitant**, en cabinet infirmier, ou en pharmacie ;
+    * dans certains **établissements scolaires**.
 
-    * chez ton **médecin traitant**, en cabinet infirmier, ou en pharmacie avec un vaccin *Pfizer-BioNTech* ou *Moderna*.
+    La vaccination peut se faire soit avec le vaccin *Pfizer-BioNTech*, soit avec le vaccin *Moderna*.
 
-    La Haute autorité de santé (HAS) (l’autorité scientifique publique de référence) recommande plutôt d’utiliser le vaccin **Pfizer** chez les moins de 30 ans (en raison d’un risqu un peu plus élevée, mais qui reste très faible, de myocardite avec le vaccin *Moderna*).
+    La Haute autorité de santé (HAS) (l’autorité scientifique publique de référence) recommande plutôt d’utiliser le vaccin **Pfizer** chez les moins de 30 ans. Elle donne ce conseil car les médecins ont observé un risque un peu plus élevé, mais qui reste très faible, de myocardite avec le vaccin *Moderna*.
+
+    Qu’est-ce que la **myocardite** ? C’est une inflammation du muscle cardiaque. C’est un effet secondaire qu’on a observé très rarement (132 cas pour 1 million de doses chez les hommes de moins de 30 ans), et malgré son nom inquiétant ce n’est pas non plus quelque chose de grave : les symptômes disparaissent rapidement avec un traitement ou même spontanément. Mais comme ça se produit encore plus rarement avec le vaccin Pfizer, la HAS conseille maintenant de préférer celui-ci pour les moins de 30 ans.
 
     <div class="voir-aussi">
 
@@ -428,13 +438,13 @@
 .. section:: Les symptômes et les tests de dépistage
 
 
-.. question:: Je me sens malade. Que dois-je faire ?
+.. question:: Je me sens malade, que dois-je faire ?
     :level: 3
 
-   Dans le contexte actuel, si tu te sens malade, mieux vaut être prudent et suivre quelques recommandations simples :
+   Dans le contexte actuel, si tu te sens malade (par exemple si tu **tousses**, si tu as **mal à la gorge**, ou encore si tu as de la **fièvre**), mieux vaut être prudent et suivre quelques recommandations simples :
 
-    * ne va pas au collège ou au lycée ;
-    * demande à tes parents ou contacte toi-même par téléphone ton **médecin** ou le 15 : ne va pas spontanément chez le médecin traitant ou aux urgences sans avoir d’abord téléphoné ;
+    * ne va pas au **collège** ou au **lycée** ;
+    * demande à tes parents ou contacte toi-même par téléphone ton **médecin** (ou le 15 en cas d’urgence) : ne va pas spontanément chez le médecin traitant ou aux urgences sans avoir d’abord téléphoné ;
     * applique les **mesures barrières** (porte bien le masque, garde tes distances avec tes proches, évite les contacts) ;
     * **fais-toi tester** en pharmacie (test antigénique) ou au laboratoire (test PCR) pour t’assurer que tu n’as pas attrapé la Covid.
 
@@ -457,16 +467,20 @@
 .. question:: Je suis positif à la Covid, que dois-je faire ?
     :level: 3
 
-    Si tu as été testé **positif** à la Covid, ne t’inquiète pas. Ce virus peut être dangereux pour les personnes âgées ou fragiles (malades…), mais il l’est très rarement pour les jeunes.
+    Si tu as été testé **positif** à la Covid, pas de panique !
 
-    Il est important que tu suives certaines recommandations, pour ne pas contaminer les personnes qui t’entourent :
+    Tout le monde ne réagit pas de la même manière au virus :
+    - certaines personnes vont développer une **forme lègère ou modérée** de la maladie, avec des symptômes (fièvre, toux, fatigue, courbatures, etc.) qui peuvent durer plusieurs jours ;
+    - certaines personnes ne vont même pas se sentir malades : on dit qu’elles sont **asymptomatiques** ;
+    - certaines personnes vont malheureusement développer une **forme plus grave**, avec des difficultés respiratoires pouvant nécessiter une hospitalisation : ces formes sont plus rares chez les jeunes, et touchent surtout des personnes âgées ou des personnes plus fragiles à cause d’une maladie chronique (ce qu’on appelle des *comorbidités*).
+
+    Il est important que tu suives certaines **recommandations**, pour ne pas contaminer les personnes qui t’entourent :
 
     * Reste **isolé 7 jours** à partir de la date du début de tes symptômes, ou de ton test positif si tu n’as pas de symptômes ;
-    * **Préviens les personnes** avec qui tu as eu un contact récent (amis, élèves…) pour qu’ils se fassent tester car ils sont cas contact ;
-    * [Les personnes avec qui tu habites sont également **cas contact**](/je-vis-avec-personne-covid-positive.html) et doivent s’isoler s’ils ne sont pas vaccinés.
+    * **Préviens les personnes** avec qui tu as eu un contact récent (amis, autres élèves…) pour qu’ils se fassent tester, car ils sont **cas contact** ;
+    * Les [personnes avec qui tu habites](/je-vis-avec-personne-covid-positive.html) sont également **cas contact** et doivent s’isoler si elles ne sont pas vaccinées.
 
-    L’Assurance Maladie va te contacter (ou tes parents) pour t’expliquer ce que tu dois faire, te fournir un justificatif d’absence et faire la liste des personnes avec qui tu as été en contact dans les jours précédents.
-
+    L’Assurance Maladie va t’envoyer (ou à tes parents) un **SMS** pour t’expliquer ce que tu dois faire, te fournir un justificatif d’absence, et vous contactera peut-être aussi par **téléphone** pour faire la liste des personnes avec qui tu as été en contact dans les jours précédents.
 
     <div class="voir-aussi">
 
@@ -480,20 +494,24 @@
 .. question:: Est-ce que les tests de dépistage sont gratuits pour les mineurs ?
     :level: 3
 
-    **Oui**. Pour les mineurs, les tests de dépistages sont gratuits et réalisés sans ordonnance médicale.
+    **Oui**. Les tests de dépistages sont toujours gratuits pour les moins de 18 ans et peuvent être réalisés sans ordonnance médicale.
+
 
 .. question:: Les tests sont-ils dangereux ou douloureux ?
     :level: 3
 
-    Les tests sont un moment désagréable à passer, mais ils ne sont ni douloureux ni dangereux. Si le prélèvement nasal (dans le nez) est impossible dans ton cas (déviation, peur…)
-    tu peux faire un test PCR salivaire (prélèvement de salive), en laboratoire.
+    Les tests nasopharyngés sont un moment désagréable à passer, mais ils ne sont ni douloureux ni dangereux. Le prélèvement consiste à introduire doucement une sorte de long coton-tige dans une narine, puis de le faire tourner plusieurs fois pour recueillir d’éventuels fragments de virus. Ça fait bizarre, ça chatouille, ça peut donner envie de pleurer ou d’éternuer, mais heureusement c’est vite terminé !
+
+    Si le prélèvement nasal (dans le nez) est impossible dans ton cas (déviation de la cloison nasale) ou s’il te fait trop peur, tu peux aussi faire un test PCR salivaire (prélèvement de salive) dans certains laboratoires.
+
 
 .. question::  La sérologie Covid fonctionne-t-elle également pour les adolescents ?
     :level: 3
 
-    **Oui**, comme chez l’adulte la sérologie permet de savoir si tu as déjà été contaminé par le virus, mais elle ne permet pas de savoir quand. Ton médecin peut te prescrire une sérologie pour savoir si tu dois recevoir une ou deux dose de vaccin anti-covid.
+    **Oui**, comme chez l’adulte la sérologie permet de savoir si tu as déjà été contaminé par le virus, mais elle ne permet pas de savoir quand. Ton médecin peut te prescrire une sérologie pour savoir si tu dois recevoir une ou deux doses de vaccin anti-Covid. Certains centres de vaccination le proposent aussi au moment de la première dose.
+
 
 .. question:: Je souffre d’une maladie chronique, est-ce que je dois prendre des précautions supplémentaires face à la Covid ?
     :level: 3
 
-    Généralement, la Covid reste une maladie bégnine, même chez l’adolescent atteint d’une maladie chronique. Cependant, si tu souffres d’une maladie rare et grave, qui nécessite un traitement ou des soins particuliers, **demande à ton médecin** de t’expliquer quelles précautions renforcées tu dois prendre face à la Covid.
+    Généralement, la Covid reste une maladie bénigne, même chez l’adolescent atteint d’une maladie chronique. Cependant, si tu souffres d’une maladie rare et grave, qui nécessite un traitement ou des soins particuliers, **demande à ton médecin** de t’expliquer quelles précautions renforcées tu dois prendre face à la Covid.
