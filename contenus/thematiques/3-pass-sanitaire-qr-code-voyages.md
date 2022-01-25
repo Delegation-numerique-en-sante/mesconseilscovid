@@ -1,4 +1,4 @@
-# Pass sanitaire, QR code et voyages, que faut-il savoir ?
+# Nouveau passe vaccinal, que faut-il savoir ?
 
 <img src="illustrations/pass_sanitaire.svg">
 
