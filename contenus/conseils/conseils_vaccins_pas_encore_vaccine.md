@@ -18,7 +18,7 @@ Trouvez les <a href="https://www.sante.fr/cf/centres-vaccination-covid.html">lie
 Vous pouvez vous faire vacciner :
 
 * si vous avez **18 ans et plus**, sans conditions ;
-* si vous avez entre **12 et 17 ans**, un [formulaire d’autorisation](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) doit être rempli pour attester du consentement des parents ou du tuteur légal, la **carte vitale** du parent ou tuteur accompagnant est requise, même pour les enfants de plus de 16 ans disposant de leur propre carte vitale ;
+* si vous avez entre **12 et 17 ans**, un [formulaire d’autorisation](https://solidarites-sante.gouv.fr/IMG/pdf/dgs-urgent_no2022_15_-_fiche_-_autorisation_parentale_26.01.22.pdf) doit être rempli pour attester du consentement des parents ou du tuteur légal, la **carte vitale** du parent ou tuteur accompagnant est requise, même pour les enfants de plus de 16 ans disposant de leur propre carte vitale ;
 * si vous êtes **enceinte**, dès le premier trimestre de votre grossesse.
 
 Pour en savoir plus :
