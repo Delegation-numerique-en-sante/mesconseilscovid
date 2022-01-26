@@ -1,5 +1,11 @@
 # Changelog
 
+## 2022-01-26
+
+* lien vers la démarche d’arrêt de travail pour les parents vaccinés
+   devant garder leur enfant positif à la Covid
+* l’autorisation d’un seul parent suffit pour la vaccination des 5-11 ans
+
 ## 2022-01-25
 
 * précisions sur le passe vaccinal
