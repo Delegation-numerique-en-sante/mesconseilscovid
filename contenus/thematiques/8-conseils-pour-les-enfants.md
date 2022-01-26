@@ -336,7 +336,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * Pour un enfant de **5 à 11 ans**, , le consentement écrit d’un parent ou tuteur est obligatoire. Un formulaire d’autorisation peut être [téléchargé à l’avance](https://solidarites-sante.gouv.fr/IMG/pdf/dgs-urgent_no2022_15_-_fiche_-_autorisation_parentale_26.01.22.pdf) et sera également disponible dans le centre de vaccination.
 
-      Le jour de la vaccination, l’enfant **doit être accompagné** de l’un de ses parents (ou titulaires de l’autorité parentale).
+      Le jour de la vaccination, l’enfant **doit être accompagné** soit par l’un de ses parents (ou des titulaires de l’autorité parentale), soit par une personne munie du formulaire d’autorisation signé par un des parents.
 
     * Pour un(e) adolescent(e) de **12 à 15 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Un formulaire d’autorisation peut être [téléchargé à l’avance](https://solidarites-sante.gouv.fr/IMG/pdf/dgs-urgent_no2022_15_-_fiche_-_autorisation_parentale_26.01.22.pdf) et sera également disponible dans le centre de vaccination.
 
