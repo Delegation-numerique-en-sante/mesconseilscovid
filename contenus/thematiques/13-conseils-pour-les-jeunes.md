@@ -345,7 +345,7 @@
 
     - Si tu es âgé de plus de **16 ans**, tu peux te faire vacciner sans l’autorisation de tes parents. N’oublie pas d’apporter ta carte vitale (si tu en as une) à ton rendez-vous de vaccination.
 
-    - Si tu as entre **12 et 15 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Tu peux [télécharger](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) le formulaire de consentement, pour qu’il soit rempli avant le jour du rendez-vous. Sinon, une copie sera disponible sur place.
+    - Si tu as entre **12 et 15 ans**, le consentement écrit d’un parent ou tuteur est obligatoire. Tu peux [télécharger](https://solidarites-sante.gouv.fr/IMG/pdf/dgs-urgent_no2022_15_-_fiche_-_autorisation_parentale_26.01.22.pdf) le formulaire de consentement, pour qu’il soit rempli avant le jour du rendez-vous. Sinon, une copie sera disponible sur place.
 
       Le jour de la vaccination, tu pourras, si tu le souhaites, **venir accompagné(e)** d’un parent (ou titulaire de l’autorité parentale).
 
@@ -403,7 +403,7 @@
 
     * Ta **carte vitale** (si tu en as déjà une) et **celle d’un parent** (ou une [attestation de droits](https://www.ameli.fr/paris/assure/adresses-et-contacts/lobtention-dun-document/obtenir-une-attestation/obtenir-une-attestation-de-droits) mentionnant le numéro de sécurité sociale d’un parent).
 
-    * Si tu as **moins de 16 ans**, il faudra apporter [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/fiche_-_autorisation_parentale_vaccin_covid-19.pdf) signée par un des deux parents ou par ton tuteur.
+    * Si tu as **moins de 16 ans**, il faudra apporter [l’autorisation parentale de vaccination](https://solidarites-sante.gouv.fr/IMG/pdf/dgs-urgent_no2022_15_-_fiche_-_autorisation_parentale_26.01.22.pdf) signée par un des deux parents ou par ton tuteur.
 
     * Si tu as **déjà eu la Covid** il y a au moins **2 mois**, il faudra apporter la preuve de cette contamination :
         * un ancien **test positif** (PCR ou antigénique). Si tu n’as pas conservé ton ancien test positif, n’hésite pas à demander à ton médecin de te prescrire une sérologie (prise de sang) qui prouvera que tu as déjà été contaminé par la Covid.
