@@ -86,7 +86,7 @@
     Voici quelques exemples de pratiques qui peuvent être mises en place :
 
     * Le télétravail obligatoire :
-       * depuis le 3 janvier 2022 et pendant 3 semaines, les employeurs ont l’**obligation** d’instaurer **3 jours minimum** de **télétravail** par semaine lorsque le type de poste le permet, voire 4 jours si  possible ;
+       * depuis le 3 janvier 2022 et jusqu'au 1<sup>er</sup>  février inclus, les employeurs ont l’**obligation** d’instaurer **3 jours minimum** de **télétravail** par semaine lorsque le type de poste le permet, voire 4 jours si  possible ;
        * les entreprises qui ne respecteront pas cette règle pourront être sanctionnées par une **amende** administrative (1 000 euros par salarié, dans la limite de 50 000 euros).
 
     * Limiter le brassage de personnes :
@@ -114,7 +114,7 @@
     Votre employeur doit **limiter** autant que possible **les risques d’exposition** de ses employé(e)s au virus. Par exemple, il doit :
     
    
-    * depuis le 3 janvier 2022 et pour trois semaines, instaurer au minimum **3 jours** de télétravail par semaine, lorsque le type de poste le permet. Si cela est possible, les entreprises sont encouragées à en instaurer 4. Celles qui ne respecteront pas cette règle pourront être sanctionnées par une **amende** administrative (1 000 euros par salarié, dans la limite de 50 000 euros).
+    * depuis le 3 janvier 2022 et jusqu'au 1<sup>er</sup> février inclus, instaurer au minimum **3 jours** de télétravail par semaine, lorsque le type de poste le permet. Si cela est possible, les entreprises sont encouragées à en instaurer 4. Celles qui ne respecteront pas cette règle pourront être sanctionnées par une **amende** administrative (1 000 euros par salarié, dans la limite de 50 000 euros).
 
     * **faire respecter** les mesures recommandées par les autorités sanitaires, comme les **gestes barrières** (port du masque, distanciation physique…) ;
     * encourager les salarié(e)s à s’**isoler** et se faire **tester** lorsqu’ils ont eu un contact à risque ;
@@ -161,10 +161,12 @@
 .. question:: Comment obtenir un arrêt maladie pour une situation liée à la Covid ?
     :level: 3
 
-    - Si vous êtes **cas contact** et que vous n’êtes **pas vacciné**, et que vous n’avez pas eu la Covid dans les 2 deniers mois, alors vous devez vous isoler. Vous pouvez demander un arrêt de travail sans délai de carence sur le site [declare.ameli.fr](https://declare.ameli.fr/).
-
-    - En revanche, si vous avez été **testé positif à la Covid, l’Assurance Maladie vous contactera** pour vous fournir un arrêt de travail.
-
+    Si vous avez été **testé positif à la Covid, l’Assurance Maladie vous contactera** pour vous fournir un arrêt de travail.
+    
+    Vous pouvez demander un arrêt de travail sans délai de carence directement sur le site [declare.ameli.fr](https://declare.ameli.fr/), si vous êtes :
+    - **cas contact** et que vous n’êtes **pas vacciné**, et que vous n’avez pas eu la Covid dans les 2 deniers mois ;
+    ou
+    - **cas contact** de votre **enfant** de moins de 16 ans et que vous habitez avec lui, même si vous êtes **vacciné**.
 
 .. question:: Mon employeur peut-il refuser mon arrêt de travail ou mon certificat d’isolement ?
     :level: 3
