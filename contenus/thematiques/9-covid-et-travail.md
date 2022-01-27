@@ -163,10 +163,9 @@
 
     Si vous avez été **testé positif à la Covid, l’Assurance Maladie vous contactera** pour vous fournir un arrêt de travail.
     
-    Vous pouvez demander un arrêt de travail sans délai de carence directement sur le site [declare.ameli.fr](https://declare.ameli.fr/), si vous êtes :
-    - **cas contact** et que vous n’êtes **pas vacciné**, et que vous n’avez pas eu la Covid dans les 2 deniers mois ;
-    ou
-    - **cas contact** de votre **enfant** de moins de 16 ans et que vous habitez avec lui, même si vous êtes **vacciné**.
+    Vous pouvez demander un arrêt de travail sans délai de carence directement sur le site [declare.ameli.fr](https://declare.ameli.fr/), si vous êtes :
+    - **cas contact** et que vous n’êtes **pas vacciné**, et que vous n’avez pas eu la Covid dans les 2 derniers mois ;
+    - *ou* **cas contact** de votre **enfant** de moins de 16 ans et que vous habitez avec lui, même si vous êtes **vacciné**.
 
 .. question:: Mon employeur peut-il refuser mon arrêt de travail ou mon certificat d’isolement ?
     :level: 3
