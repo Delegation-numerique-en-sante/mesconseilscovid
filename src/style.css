@@ -140,6 +140,15 @@ main {
     }
 }
 
+.ie-banner {
+    text-align: center;
+    background: #000091;
+    color: white;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 60rem;
+}
+
 .nouveau-profil {
     background-image: url('plus-circle.svg');
     background-position: 10px center;
