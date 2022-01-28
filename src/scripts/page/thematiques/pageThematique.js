@@ -1,5 +1,3 @@
-import applyDetailsSummaryPolyfill from '../../polyfills/details_polyfill'
-
 import { bindImpression } from '../../actions'
 import { bindFeedback, opacityTransition, envoieLesRemarques } from '../../feedback'
 import { navigueVersUneThematique } from './navigation'
@@ -27,7 +25,6 @@ export function pageThematique(app) {
 }
 
 function initDetailsSummary() {
-    applyDetailsSummaryPolyfill(document)
     ouvreDetailsSiBouton()
     ouvreDetailsSiFragment()
     window.addEventListener('hashchange', ouvreDetailsSiFragment)
