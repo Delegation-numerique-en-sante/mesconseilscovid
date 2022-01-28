@@ -6,7 +6,6 @@ import 'core-js/features/promise'
 // Polyfills pour les API du navigateur
 import 'core-js/web/url'
 import 'core-js/web/url-search-params'
-import './polyfills/custom_event'
 
 import SUIVI_IMAGES from '../suivi_*.svg'
 
