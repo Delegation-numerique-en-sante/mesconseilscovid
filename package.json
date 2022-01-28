@@ -59,10 +59,7 @@
     ]
   },
   "browserslist": [
-    ">0.5% in FR",
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR",
-    "not dead"
+    "since 2016",
+    "not Firefox < 60"
   ]
 }
