@@ -3,7 +3,6 @@ import 'dayjs/locale/fr'
 import localeData from 'dayjs/plugin/localeData'
 
 import {
-    createEvent,
     enableOrDisableSecondaryFields,
     preloadCheckboxForm,
     toggleFormButtonOnTextFieldsAndRadioRequired,
@@ -26,7 +25,7 @@ export default function historique(page, app) {
             `input#covid_passee_date_${Math.min(6, monthsAgo)}_mois`
         )
         toSelect.checked = true
-        toSelect.dispatchEvent(createEvent('change'))
+        toSelect.dispatchEvent(new CustomEvent('change'))
     }
 
     // La première case active ou désactive les autres.

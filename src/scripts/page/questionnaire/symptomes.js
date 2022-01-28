@@ -1,12 +1,6 @@
 import { hideElement, showElement } from '../../affichage'
 import { addDatePickerPolyfill } from '../../datepicker'
-import {
-    Form,
-    createEvent,
-    getRadioValue,
-    preloadCheckboxForm,
-    someChecked,
-} from '../../formutils'
+import { Form, getRadioValue, preloadCheckboxForm, someChecked } from '../../formutils'
 import { joursAvant } from '../../utils'
 import AlgorithmeOrientation from '../../algorithme/orientation'
 
@@ -170,7 +164,7 @@ function prefillForm(form, profil) {
     prefillDateForm(form, profil)
     if (profil.symptomes_actuels === false && profil.symptomes_passes === false) {
         form['symptomes_non'].checked = true
-        form['symptomes_non'].dispatchEvent(createEvent('change'))
+        form['symptomes_non'].dispatchEvent(new CustomEvent('change'))
     }
 }
 
