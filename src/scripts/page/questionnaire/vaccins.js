@@ -1,8 +1,4 @@
-import {
-    createEvent,
-    getRadioValue,
-    toggleFormButtonOnRadioRequired,
-} from '../../formutils'
+import { getRadioValue, toggleFormButtonOnRadioRequired } from '../../formutils'
 
 export default function vaccins(page, app) {
     const form = page.querySelector('form')
@@ -12,7 +8,7 @@ export default function vaccins(page, app) {
         form.querySelector('#vaccins_radio_' + app.profil.vaccins).checked = true
         // L’indice n’est pas significatif, on veut que l’évènement soit
         // envoyé pour n’importe laquelle des options.
-        form['vaccins_radio'][0].dispatchEvent(createEvent('change'))
+        form['vaccins_radio'][0].dispatchEvent(new CustomEvent('change'))
     }
 
     // Le libellé du bouton change en fonction des choix.
