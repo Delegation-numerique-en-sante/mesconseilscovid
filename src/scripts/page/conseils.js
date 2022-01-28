@@ -1,5 +1,3 @@
-import applyDetailsSummaryPolyfill from '../polyfills/details_polyfill'
-
 import { navigueVersUneThematique } from './thematiques/navigation'
 import { bindCalendar, bindImpression, bindSuppressionTotale } from '../actions'
 import {
@@ -21,8 +19,6 @@ import AlgorithmeVaccination from '../algorithme/vaccination'
 
 export default function conseils(page, app) {
     const element = page
-
-    applyDetailsSummaryPolyfill(element)
 
     // Make sure we show profile-specific text.
     showMeOrThem(element, app.profil)
