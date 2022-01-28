@@ -1,5 +1,10 @@
 # Changelog
 
+## 2022-01-28
+
+* arrêt de travail des parents vaccinés et prolongation du télétravail obligatoire
+* retrait de la mention d'attente de 17 jours après un test positif
+
 ## 2022-01-26
 
 * lien vers la démarche d’arrêt de travail pour les parents vaccinés
