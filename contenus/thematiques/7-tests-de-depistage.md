@@ -36,7 +36,7 @@
     Les tests de dépistage sont pris en charge par l’Assurance Maladie **dans les cas suivants** (sur présentation d’un **justificatif**) :
 
     * personnes ayant un **schéma vaccinal complet** ou une **contre-indication** à la vaccination ;
-    * personnes ayant un **certificat de rétablissement** de moins de 6 mois ;
+    * personnes ayant un **certificat de rétablissement** de moins de 6 mois (*moins de 4 mois à partir du 15 février*) ;
     * personnes présentant une **prescription médicale** de moins de 48 h et non renouvelable ;
     * personnes **mineures** ;
     * personnes majeures **élèves** du secondaire, en classe prépa ou BTS ;
