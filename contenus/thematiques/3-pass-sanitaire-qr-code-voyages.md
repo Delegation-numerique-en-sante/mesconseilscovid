@@ -19,9 +19,10 @@
 
     Le **passe vaccinal** atteste du fait que :
     -  vous êtes **complètement vacciné(e)**, c’est-à-dire que vous avez reçu toutes les doses de vaccin nécessaires et que vous avez reçu votre dernière dose il y a **moins de 7 mois** (*ce délai passera à moins de 4 mois à partir du 15 février*),
-    - ou que vous avez **eu la Covid** ([certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)) il y a **moins de 6 mois** (*ce délai passera à moins de 4 mois à partir du 15 février*).
+    - ou que vous avez **eu la Covid** ([certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)) il y a **moins de 6 mois** (*ce délai passera à moins de 4 mois à partir du 15 février*),
+    - ou que vous avez une [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal).
 
-    Depuis le **lundi 24 janvier**, le passe vaccinal **remplace** le passe sanitaire dans la plupart des situations. Il s’applique à toutes les personnes âgées de **16 ans ou plus** qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal).
+    Depuis le **lundi 24 janvier**, le passe vaccinal **remplace** le passe sanitaire dans la plupart des situations. Il s’applique à toutes les personnes âgées de **16 ans ou plus**.
 
     Les règles du **passe sanitaire** continuent à s’appliquer aux mineurs âgés de **12 à 15 ans**.
 
