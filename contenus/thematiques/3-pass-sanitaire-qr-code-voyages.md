@@ -17,7 +17,9 @@
 .. question:: Qu’est-ce que le passe vaccinal ?
     :level: 3
 
-    Le **passe vaccinal** atteste du fait que vous êtes **complètement vacciné(e)**, c’est-à-dire que vous avez reçu toutes les doses de vaccin nécessaires et que vous avez reçu votre dernière dose il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*), ou alors que vous avez eu la Covid il y a moins de 6 mois [(certificat de rétablissement)](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code).
+    Le **passe vaccinal** atteste du fait que :
+    -  vous êtes **complètement vacciné(e)**, c’est-à-dire que vous avez reçu toutes les doses de vaccin nécessaires et que vous avez reçu votre dernière dose il y a **moins de 7 mois** (*ce délai passera à moins de 4 mois à partir du 15 février*),
+    - ou que vous avez **eu la Covid** ([certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)) il y a **moins de 6 mois** (*ce délai passera à moins de 4 mois à partir du 15 février*).
 
     Depuis le **lundi 24 janvier**, le passe vaccinal **remplace** le passe sanitaire dans la plupart des situations. Il s’applique à toutes les personnes âgées de **16 ans ou plus** qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal).
 
@@ -72,7 +74,7 @@
 
     - un [test de dépistage négatif](#comment-obtenir-un-certificat-de-depistage-avec-qr-code) : **test PCR** ou **test antigénique**, datant de moins de **24 h** ;
 
-    - un [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) : un test de dépistage **positif**, **PCR** ou **antigénique** de **plus de 11 jours** et **moins de 6 mois** ;
+    - un [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) : un test de dépistage **positif**, **PCR** ou **antigénique** de **plus de 11 jours** et **moins de 6 mois** (*cette durée passera à moins de 4 mois à partir du 15 février*) ;
 
     - un [certificat de contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal) établi par l’Assurance Maladie ;
 
@@ -137,7 +139,7 @@
 
     Si vous êtes âgé de **12 à 17 ans**, alors depuis le 24 janvier 2022 vous êtes éligible à une dose de rappel dès **6 mois** après votre **infection**.
 
-    En attendant de recevoir cette dose de rappel, vous pouvez utiliser le QR code de votre résultat de **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*) comme passe vaccinal, valable pendant **6 mois**.
+    En attendant de recevoir cette dose de rappel, vous pouvez utiliser le QR code de votre résultat de **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*) comme passe vaccinal, valable pendant **6 mois** (*cette durée passera à moins de 4 mois à partir du 15 février*).
 
     <div class="conseil conseil-jaune">
 
@@ -172,7 +174,7 @@
     Il n’est **pas obligatoire d’être vacciné(e)** pour se rendre à un rendez-vous médical en milieu hospitalier. En revanche, un **passe sanitaire est exigé**. Si vous n’êtes pas vacciné(e), vous pouvez présenter :
 
     - un **test de dépistage négatif** datant de moins de 24 h ;
-    - ou un **certificat de rétablissement** (test de dépistage positif de plus de 11 jours et moins de 6 mois).
+    - ou un **certificat de rétablissement** : test de dépistage positif de plus de 11 jours et moins de 6 mois (*cette durée passera à moins de 4 mois à partir du 15 février*).
 
     Dans ce cas, vous pouvez obtenir la **prise en charge** de votre **test de dépistage** en présentant au professionnel de santé qui réalisera votre test :
     - la **convocation** émise par l’établissement médical où vous avez rendez-vous ;
@@ -255,7 +257,7 @@
 
     Par exemple, un chef cuisinier ne participant pas au service du restaurant et travaillant dans une cuisine fermée, non accessible au public, n’est pas dans l’obligation de présenter un passe vaccinal.
 
-    En revanche, si la cuisine est ouverte ou s’il participe au service, alors il devra présenter à son employeur : un certificat de rétablissement de plus de 11 jours et moins de 6 mois **ou** une attestation de vaccination complète.
+    En revanche, si la cuisine est ouverte ou s’il participe au service, alors il devra présenter à son employeur : un certificat de rétablissement de plus de 11 jours et moins de 6 mois (*moins de 4 mois à partir du 15 février*) **ou** une attestation de vaccination complète.
 
     </div>
 
@@ -343,7 +345,7 @@
 .. question:: Comment obtenir un certificat de rétablissement avec QR code ?
     :level: 3
 
-    Si vous avez eu la Covid il y a **plus de 11 jours**, alors votre test de dépistage (PCR ou antigénique) positif devient votre **certificat de rétablissement**, pour une **durée de 6 mois** depuis la date du test.
+    Si vous avez eu la Covid il y a **plus de 11 jours**, alors votre test de dépistage (PCR ou antigénique) positif devient votre **certificat de rétablissement**, pour une **durée de 6 mois** depuis la date du test (*cette durée passera à 4 mois à partir du 15 février*).
 
     Vous pouvez le **télécharger** sur le [**portail SI-DEP**](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). Nous vous conseillons de le faire **immédiatement** pour le conserver aussi longtemps que nécessaire.
 
