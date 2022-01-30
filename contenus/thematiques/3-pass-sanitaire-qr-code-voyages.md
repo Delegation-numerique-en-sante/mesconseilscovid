@@ -255,7 +255,7 @@
 
     Par exemple, un chef cuisinier ne participant pas au service du restaurant et travaillant dans une cuisine fermée, non accessible au public, n’est pas dans l’obligation de présenter un passe vaccinal.
 
-    En revanche, si la cuisine est ouverte ou s’il participe au service, alors il devra présenter à son employeur : un test de dépistage négatif toutes les 24 h **ou** un certificat de rétablissement de plus de 11 jours et moins de 6 mois **ou** une attestation de vaccination complète.
+    En revanche, si la cuisine est ouverte ou s’il participe au service, alors il devra présenter à son employeur : un certificat de rétablissement de plus de 11 jours et moins de 6 mois **ou** une attestation de vaccination complète.
 
     </div>
 
@@ -434,8 +434,6 @@
     Dans les 2 cas, l’injection doit se faire au moins **4 semaines** après la dernière injection de Sinopharm ou Sinovac.
 
     La vaccination sera considérée comme complète **7 jours** après votre dernière injection de vaccin à ARNm, et le **QR code** de l’attestation de vaccination sera alors valable comme **passe vaccinal**.
-
-    En attendant, un **test de dépistage négatif de moins de 24 h** pourra faire office de passe vaccinal temporaire.
 
     <div class="conseil conseil-jaune">
 
