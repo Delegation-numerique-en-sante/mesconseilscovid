@@ -28,19 +28,26 @@ ROOT_DIR = "dist/"
 
 PATHS_TO_WATCH_FOR_THEMATIQUES = (
     "build.py",
-    "mistune_toc.py",
+    "construction/*.py",
+    "construction/directives/*.py",
     "contenus/meta/*.md",
     "contenus/thematiques/*.md",
+    "contenus/thematiques/formulaires/*.md",
     "templates/thematique.html",
 )
 PATHS_TO_WATCH_FOR_INDEX = (
     "build.py",
+    "construction/*.py",
+    "construction/directives/*.py",
+    "contenus/actualites/*.toml",
+    "contenus/config/*.md",
     "contenus/conseils/*.md",
     "contenus/meta/*.md",
     "contenus/questions/*.md",
     "contenus/réponses/*.md",
     "contenus/statuts/*.md",
     "contenus/suivi/*.md",
+    "contenus/thematiques/*.md",
     "templates/index.html",
 )
 
