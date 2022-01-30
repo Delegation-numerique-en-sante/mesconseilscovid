@@ -19,9 +19,9 @@
 
     Le **passe vaccinal** atteste du fait que vous êtes **complètement vacciné(e)**, c’est-à-dire que vous avez reçu toutes les doses de vaccin nécessaires et que vous avez reçu votre dernière dose il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*), ou alors que vous avez eu la Covid il y a moins de 6 mois [(certificat de rétablissement)](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code).
 
-    À partir du **lundi 24 janvier**, le passe vaccinal **remplace** le passe sanitaire dans la plupart des situations. Il s’applique à toutes les personnes âgées de **16 ans ou plus** qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal).
+    Depuis le **lundi 24 janvier**, le passe vaccinal **remplace** le passe sanitaire dans la plupart des situations. Il s’applique à toutes les personnes âgées de **16 ans ou plus** qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal).
 
-    Les règles du **passe sanitaire** continueront à s’appliquer aux mineurs âgés de **12 à 15 ans**.
+    Les règles du **passe sanitaire** continuent à s’appliquer aux mineurs âgés de **12 à 15 ans**.
 
     Votre **schéma de vaccination est complet** si vous avez respecté les délais suivants :
     * si vous avez été vacciné(e) avec les vaccins Pfizer, Moderna ou AstraZeneca : votre dernière dose doit dater d’il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*) ;
@@ -114,8 +114,8 @@
     - Depuis le **15 janvier 2022** :
         * si vous avez plus de **18 ans et un mois** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **7 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
 
-    - À partir du **24 janvier 2022** :
-        * si vous avez entre **12 et 17 ans**, vous serez éligible à une dose de rappel, mais celle-ci ne sera **pas obligatoire** dans le cadre du passe vaccinal.
+    - Depuis le **24 janvier 2022** :
+        * si vous avez entre **12 et 17 ans**, vous êtes éligible à une dose de rappel : ce rappel vaccinal est recommandé, mais il n’est **pas obligatoire** dans le cadre du passe vaccinal ou du passe sanitaire.
 
     - À partir du **15 février 2022** :
         * si vous avez plus de **18 ans et un mois** et que votre dernière **injection** (ou votre dernière **infection** à la Covid) date de plus de **4 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
@@ -135,7 +135,7 @@
 
     Si vous êtes âgé de **18 ans ou plus**, alors vous serez éligible à une dose de rappel dès **3 mois** après votre **infection**.
 
-    Si vous êtes âgé de **12 à 17 ans**, alors à partir du 24 janvier 2022 vous serez éligible à une dose de rappel dès **6 mois** après votre **infection**.
+    Si vous êtes âgé de **12 à 17 ans**, alors depuis le 24 janvier 2022 vous êtes éligible à une dose de rappel dès **6 mois** après votre **infection**.
 
     En attendant de recevoir cette dose de rappel, vous pouvez utiliser le QR code de votre résultat de **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*) comme passe vaccinal, valable pendant **6 mois**.
 
