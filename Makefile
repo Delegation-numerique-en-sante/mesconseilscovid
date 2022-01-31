@@ -61,10 +61,16 @@ test-unit:  ## Run JS unit tests.
 
 test-integration: dist/index.html  ## Run JS browser tests.
 ifdef browser
+	npx playwright install $(browser)
 	BROWSER=$(browser) npm run-script test-integration -- $(grepping)
 else
+	npx playwright install chromium
 	BROWSER=chromium npm run-script test-integration -- $(grepping)
+
+	npx playwright install firefox
 	BROWSER=firefox npm run-script test-integration -- $(grepping)
+
+	npx playwright install webkit
 	BROWSER=webkit npm run-script test-integration -- $(grepping)
 endif
 
