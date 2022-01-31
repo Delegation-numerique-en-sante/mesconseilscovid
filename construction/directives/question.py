@@ -1,9 +1,6 @@
 from pathlib import Path
 
-
-from jinja2 import Template
 from mistune.directives import Directive
-from mistune.markdown import preprocess
 
 from construction.composants import render_html_summary
 from construction.slugs import slugify_title
