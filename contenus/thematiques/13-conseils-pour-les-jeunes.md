@@ -138,17 +138,17 @@
     #### 1. Pas d’isolement mais un test de dépistage
 
     Si tu es « **cas contact** » et que tu es **vacciné(e)**, alors tu n’auras pas besoin de t’isoler, et pourras continuer à aller au collège ou au lycée.
-    Tu devras faire **dès que possible** un **test antigénique** en pharmacie (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)). Les tests de dépistage sont **gratuits** pour les mineurs.
+    Tu devras faire **dès que possible** un **test** PCR ou antigénique (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)). Les tests de dépistage sont **gratuits** pour les mineurs.
 
     * Si le test est **positif** :
         - tu as attrapé la Covid. Ce n’est pas grave, mais tu es **contagieux(se)** et tu dois protéger les personnes qui t’entourent ;
         - tu dois rester isolé **7 jours** à partir de la date du test ;
 
-            - si tu n’as plus de fièvre depuis au moins 48 h, tu pourras mettre fin à ton isolement après 7 jours seulement, si ton nouveau test de dépistage est négatif (antigénique ou PCR) ;
+            - si tu n’as plus de fièvre depuis au moins 48 h, tu pourras mettre fin à ton isolement après 5 jours seulement, si ton nouveau test de dépistage (antigénique ou PCR) est négatif  ;
 
         - les personnes qui vivent avec toi sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
             * s’**isoler** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
-            * faire un **test antigénique** dès que possible.
+            * faire un **test** antigénique ou PCR dès que possible.
 
     * Si le résultat est **négatif**, tu pourras retourner en cours.
 
@@ -197,7 +197,7 @@
     * Si le test est **positif** :
 
         - tu as contracté la Covid. Ce n’est pas grave, mais tu es **contagieux(se)** et tu dois protéger les personnes qui t’entourent
-        - tu dois rester en isolement au moins **10 jours** supplémentaires ;
+        - tu dois rester en isolement pendant **10 jours** supplémentaires ;
 
             - Si tu n’as plus de fièvre depuis au moins 48 h, tu pourras mettre fin à ton isolement après 7 jours seulement, si ton nouveau test de dépistage est négatif (antigénique ou PCR) ;
 
@@ -210,7 +210,6 @@
     Si ton 1<sup>er</sup> test était négatif, alors tu devras faire un **test de contrôle** (PCR ou antigénique) avant de retourner au collège ou au lycée :
 
     - **7 jours après ton dernier contact** avec la personne malade, pour confirmer que tu n’as pas été contaminé(e) ;
-    - **7 jours après la guérison de la personne malade** (soit 17 jours depuis son test positif ou le début de ses symptômes), si tu es resté en contact régulier avec elle (par exemple, si c’est une personne qui habite avec toi).
 
     <div class="voir-aussi">
 
