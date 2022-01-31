@@ -59,6 +59,8 @@ class HelpfulDict(dict):
         try:
             return super().__getitem__(key)
         except KeyError:
-            closest = max(self.keys(), key=lambda q: SequenceMatcher(None, q, key).ratio())
+            closest = max(
+                self.keys(), key=lambda q: SequenceMatcher(None, q, key).ratio()
+            )
             message = f"{key!r} (vouliez-vous dire {closest!r}?)"
             raise KeyError(message) from None
