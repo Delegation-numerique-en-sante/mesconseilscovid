@@ -16,9 +16,11 @@ install-python:  ## Install Python dependencies.
 install-js:  ## Install JS dependencies.
 	npm install
 
-clean:  ## Clean up JS related stuff.
+uninstall-js:
 	rm -rf ./node_modules
-	rm -rf ./.cache
+
+clean:
+	rm -rf dist/ src/*.html .cache __pycache__
 
 ##
 ## Run JS unit tests matching a given pattern/browser engine.
