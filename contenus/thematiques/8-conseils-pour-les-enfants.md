@@ -411,11 +411,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: La dose de rappel (dite 3<sup>e</sup> dose) est-elle obligatoire pour le passe vaccinal ou passe sanitaire des moins de 18 ans?
+.. question:: La dose de rappel (dite 3<sup>e</sup> dose) est-elle obligatoire pour le passe vaccinal ou passe sanitaire des moins de 18 ans ?
     :level: 3
-    
-    Non, la **3<sup>e</sup> dose** n'est pas obligatoire pour prolonger le passe vaccinal (16 à 17 ans) ou sanitaire (12 à 15 ans) des mineurs. En revanche, la dose de rappel est nécéssaire pour prolonger la validité du passe vaccinal à partir de **18 ans et 1 mois.**
-    
+
+    Non, la **3<sup>e</sup> dose** n’est pas obligatoire pour prolonger le passe vaccinal (16 à 17 ans) ou sanitaire (12 à 15 ans) des mineurs. La dose de rappel est nécessaire pour prolonger la validité du passe vaccinal seulement à partir de **18 ans et 1 mois.**
+
+
 .. section:: Questions médicales et dépistage
     :tags: 0 à 4 ans, 5 à 11 ans, 12 à 17 ans
 
