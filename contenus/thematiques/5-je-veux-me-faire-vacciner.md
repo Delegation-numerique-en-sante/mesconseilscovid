@@ -104,6 +104,21 @@
 .. injection:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal
 
 
+.. question:: Je suis cas contact, puis-je recevoir la dose de rappel ?
+    :level: 3
+
+    **Non**. Si vous êtes [cas contact](/cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, vous devez d’abord **vous assurer que vous n’avez pas été contaminé(e)** en vous faisant tester.
+    
+    * Si votre primo-vaccination date d'il y a moins de 4 mois : faites un test **PCR ou antigénique** dès que possible, puis **2 autotests** de contrôle 2 jours après et 4 jours après le premier test.
+    * Si votre primo-vaccination date d'il y a plus de 4 mois : faites un test antigénique ou PCR **7 jours après** votre dernier contact avec la personne positive.
+         
+     Si à l'issue de cette période de vigilance votre test est **négatif**, alors vous pourrez vous faire vacciner. 
+    
+    <div class="voir-aussi">
+
+    - [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html)
+
+    </div>
 .. question:: Quels sont les facteurs de risque de formes graves de Covid ?
     :level: 3
 
@@ -289,7 +304,10 @@
     :level: 3
 
     **Non**. Si vous êtes [cas contact](/cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, vous devez d’abord **vous assurer que vous n’avez pas été contaminé(e)**.
-
+    Si vous n'êtes **pas vacciné(e)**, faites un test antigénique ou PCR **7 jours après** votre dernier contact avec la personne positive.
+         
+     Si le résultat est négatif, alors vous pourrez vous faire vacciner. 
+    
     <div class="voir-aussi">
 
     - [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html)
