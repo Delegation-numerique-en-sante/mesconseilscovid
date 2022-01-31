@@ -10,7 +10,7 @@ key.pem:  ## Generate certificates to be able to run `https` on `localhost`.
 install: install-python install-js
 
 install-python:  ## Install Python dependencies.
-	python3 -m pip install -U pip setuptools wheel
+	python3 -m pip install -U 'pip<22' setuptools wheel
 	python3 -m pip install -r requirements.txt
 
 install-js:  ## Install JS dependencies.
