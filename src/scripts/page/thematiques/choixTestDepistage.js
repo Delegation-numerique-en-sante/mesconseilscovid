@@ -1,4 +1,3 @@
-import { hideElement } from '../../affichage'
 import { getRadioValue, toggleFormButtonOnRadioRequired } from '../../formutils'
 import { Formulaire } from './formulaire'
 
@@ -16,8 +15,7 @@ class FormulaireTestDepistage extends Formulaire {
         'demarrage': (form) => {
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
-                hideElement(form)
-                this.transitionneVersEtape('symptomes')
+                this.transitionneVersEtape(form, 'symptomes')
             })
         },
         'symptomes': (form) => {
@@ -27,11 +25,10 @@ class FormulaireTestDepistage extends Formulaire {
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
                 const value = getRadioValue(form, `${this.prefixe}_symptomes_radio`)
-                hideElement(form)
                 if (value === 'oui') {
-                    this.transitionneVersEtape('depuis-quand')
+                    this.transitionneVersEtape(form, 'depuis-quand')
                 } else if (value === 'non') {
-                    this.transitionneVersEtape('cas-contact')
+                    this.transitionneVersEtape(form, 'cas-contact')
                 }
             })
         },
@@ -42,8 +39,7 @@ class FormulaireTestDepistage extends Formulaire {
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
                 const value = getRadioValue(form, `${this.prefixe}_depuis_quand_radio`)
-                hideElement(form)
-                this.afficheReponse(`symptomes-${value}`)
+                this.transitionneVersReponse(form, `symptomes-${value}`)
             })
         },
         'cas-contact': (form) => {
@@ -53,11 +49,13 @@ class FormulaireTestDepistage extends Formulaire {
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
                 const value = getRadioValue(form, `${this.prefixe}_cas_contact_radio`)
-                hideElement(form)
                 if (value === 'oui') {
-                    this.afficheReponse(`pas-symptomes-cas-contact-${value}`)
+                    this.transitionneVersReponse(
+                        form,
+                        `pas-symptomes-cas-contact-${value}`
+                    )
                 } else if (value === 'non') {
-                    this.transitionneVersEtape('auto-test')
+                    this.transitionneVersEtape(form, 'auto-test')
                 }
             })
         },
@@ -68,8 +66,10 @@ class FormulaireTestDepistage extends Formulaire {
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
                 const value = getRadioValue(form, `${this.prefixe}_auto_test_radio`)
-                hideElement(form)
-                this.afficheReponse(`pas-symptomes-pas-cas-contact-auto-test-${value}`)
+                this.transitionneVersReponse(
+                    form,
+                    `pas-symptomes-pas-cas-contact-auto-test-${value}`
+                )
             })
         },
     }

@@ -20,7 +20,7 @@ class Questionnaire {
 
         // On clique sur le bouton pour démarrer
         const bouton = await this.page.waitForSelector(
-            `#${this.prefixe}-demarrage-form >> text="C’est parti !"`
+            `#${this.prefixe}-demarrage-form[data-ready=true] >> text="C’est parti !"`
         )
         await bouton.click()
 

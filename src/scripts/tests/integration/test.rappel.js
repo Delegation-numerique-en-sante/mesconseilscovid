@@ -20,7 +20,7 @@ class Questionnaire {
 
         // On clique sur le bouton pour démarrer
         const bouton = await this.page.waitForSelector(
-            `#${this.prefixe}-demarrage-form >> text="C’est parti !"`
+            `#${this.prefixe}-demarrage-form[data-ready=true] >> text="C’est parti !"`
         )
         await bouton.click()
 
@@ -416,7 +416,6 @@ describe('Mini-questionnaire dose de rappel', function () {
                 statut,
                 'Vous pourrez recevoir votre dose de rappel à partir du 24 janvier 2022.'
             ) // début de la campagne de rappel
-
             assert.include(
                 statut,
                 'Vous ne serez pas concerné(e) par la désactivation du passe vaccinal, qui restera valable au delà du 15 décembre 2021.'
