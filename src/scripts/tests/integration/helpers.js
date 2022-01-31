@@ -221,12 +221,12 @@ async function remplirSymptomes(page, symptomesActuels, symptomesPasses, date) {
         )
         await label.click()
 
-        symptomesActuels.forEach(async (nom) => {
+        for (const nom of symptomesActuels) {
             let label = await page.waitForSelector(
                 `#page.ready label[for="symptomes_actuels_${nom}"]`
             )
             await label.click()
-        })
+        }
         label = await page.waitForSelector(
             `#page.ready label[for="debut_symptomes_${date}"]`
         )
