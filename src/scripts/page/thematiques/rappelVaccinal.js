@@ -7,7 +7,6 @@ dayjs.locale('fr')
 dayjs.extend(localizedFormat)
 dayjs.extend(minMax)
 
-import { hideElement } from '../../affichage'
 import { addDatePickerPolyfill } from '../../datepicker'
 import {
     getRadioValue,
@@ -59,8 +58,7 @@ class FormulaireRappelVaccinal extends Formulaire {
         'demarrage': (form) => {
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
-                hideElement(form)
-                this.transitionneVersEtape('age')
+                this.transitionneVersEtape(form, 'age')
             })
         },
         'age': (form) => {
@@ -71,11 +69,10 @@ class FormulaireRappelVaccinal extends Formulaire {
                 event.preventDefault()
                 const value = getRadioValue(form, `${this.prefixe}_age_radio`)
                 this.age = value
-                hideElement(form)
                 if (value === 'plus65' || value === 'moins65') {
-                    this.transitionneVersEtape('vaccination-initiale')
+                    this.transitionneVersEtape(form, 'vaccination-initiale')
                 } else if (value === 'moins18') {
-                    this.transitionneVersEtape('date-derniere-dose')
+                    this.transitionneVersEtape(form, 'date-derniere-dose')
                 } else {
                     console.error(`valeur inattendue: ${value}`)
                 }
@@ -91,11 +88,11 @@ class FormulaireRappelVaccinal extends Formulaire {
                     form,
                     `${this.prefixe}_vaccination_initiale_radio`
                 )
-                hideElement(form)
                 if (value === 'janssen') {
                     this.janssen = true
                     this.prolongationPass = true
                     this.transitionneVersEtape(
+                        form,
                         'date-derniere-dose',
                         'vaccination-initiale'
                     )
@@ -103,12 +100,14 @@ class FormulaireRappelVaccinal extends Formulaire {
                     if (this.age === 'plus65') {
                         this.prolongationPass = true
                         this.transitionneVersEtape(
+                            form,
                             'date-derniere-dose',
                             'vaccination-initiale'
                         )
                     } else if (this.age === 'moins65') {
                         this.prolongationPass = true
                         this.transitionneVersEtape(
+                            form,
                             'date-derniere-dose',
                             'vaccination-initiale'
                         )
@@ -136,7 +135,6 @@ class FormulaireRappelVaccinal extends Formulaire {
                 event.preventDefault()
                 const datePicker = form.elements[`${this.prefixe}_date_derniere_dose`]
                 if (datePicker.value !== '') {
-                    hideElement(form)
                     const dateDerniereDose = dayjs(datePicker.value)
 
                     const dateEligibiliteRappel =
@@ -155,9 +153,9 @@ class FormulaireRappelVaccinal extends Formulaire {
                     if (this.prolongationPass) {
                         params['desactivation-passe-vaccinal'] =
                             dateLimitePass.format('LL')
-                        this.afficheReponse('rappel-et-pass', params)
+                        this.transitionneVersReponse(form, 'rappel-et-pass', params)
                     } else {
-                        this.afficheReponse('rappel', params)
+                        this.transitionneVersReponse(form, 'rappel', params)
                     }
                 }
             })
