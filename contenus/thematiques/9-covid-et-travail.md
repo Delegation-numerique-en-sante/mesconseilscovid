@@ -85,9 +85,8 @@
 
     Voici quelques exemples de pratiques qui peuvent être mises en place :
 
-    * Le télétravail obligatoire :
-       * depuis le 3 janvier 2022 et jusqu’au 1<sup>er</sup> février inclus, les employeurs ont l’**obligation** d’instaurer **3 jours minimum** de **télétravail** par semaine lorsque le type de poste le permet, voire 4 jours si possible ;
-       * les entreprises qui ne respecteront pas cette règle pourront être sanctionnées par une **amende** administrative (1 000 euros par salarié, dans la limite de 50 000 euros).
+    * Le **télétravail** :
+       * depuis le 2 février 2022, le télétravail n’est plus obligatoire, mais reste **recommandé** partout où il est possible.
 
     * Limiter le brassage de personnes :
         * étaler les horaires d’arrivées et de départs pour **limiter l’affluence** et les croisements ;
@@ -112,9 +111,6 @@
     :level: 3
 
     Votre employeur doit **limiter** autant que possible **les risques d’exposition** de ses employé(e)s au virus. Par exemple, il doit :
-    
-   
-    * depuis le 3 janvier 2022 et jusqu’au 1<sup>er</sup> février inclus, instaurer au minimum **3 jours** de télétravail par semaine, lorsque le type de poste le permet. Si cela est possible, les entreprises sont encouragées à en instaurer 4. Celles qui ne respecteront pas cette règle pourront être sanctionnées par une **amende** administrative (1 000 euros par salarié, dans la limite de 50 000 euros).
 
     * **faire respecter** les mesures recommandées par les autorités sanitaires, comme les **gestes barrières** (port du masque, distanciation physique…) ;
     * encourager les salarié(e)s à s’**isoler** et se faire **tester** lorsqu’ils ont eu un contact à risque ;
