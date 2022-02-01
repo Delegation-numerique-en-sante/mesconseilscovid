@@ -47,7 +47,7 @@
 
     <div class="voir-aussi">
 
-    - Tous les détails sur la conduite à tenir : [« Je suis cas contact Covid, que faire ? »](/cas-contact-a-risque.html#schema-vaccinal-complet).
+    - Tous les détails sur la conduite à tenir : [« Je suis cas contact Covid, que faire ? »](cas-contact-a-risque.html#schema-vaccinal-complet).
 
     </div>
 
@@ -68,6 +68,6 @@
 
     Nous vous conseillons de vérifier directement auprès des autorités du pays de destination les conditions d’accès sur leur territoire (tests, quarantaine, vaccin…), en consultant  par exemple le site internet de l’ambassade ou du consulat.
 
-    Pour en savoir plus, [consultez notre page sur le passe vaccinal et les voyages](/pass-sanitaire-qr-code-voyages.html).
+    Pour en savoir plus, [consultez notre page sur le passe vaccinal et les voyages](pass-sanitaire-qr-code-voyages.html).
 
 </div>

@@ -60,8 +60,8 @@
 
     <div class="voir-aussi">
 
-    - [Je souhaite faire un test de dépistage](/tests-de-depistage.html)
-    - [Je suis cas contact d’une personne de mon foyer, que faire ?](/je-vis-avec-personne-covid-positive.html)
+    - [Je souhaite faire un test de dépistage](tests-de-depistage.html)
+    - [Je suis cas contact d’une personne de mon foyer, que faire ?](je-vis-avec-personne-covid-positive.html)
 
     </div>
 
@@ -75,8 +75,8 @@
 
     <div class="voir-aussi">
 
-    - [Je souhaite faire un test de dépistage](/tests-de-depistage.html)
-    - [Je suis cas contact d’une personne de mon foyer, que faire ?](/je-vis-avec-personne-covid-positive.html)
+    - [Je souhaite faire un test de dépistage](tests-de-depistage.html)
+    - [Je suis cas contact d’une personne de mon foyer, que faire ?](je-vis-avec-personne-covid-positive.html)
 
     </div>
 </div>

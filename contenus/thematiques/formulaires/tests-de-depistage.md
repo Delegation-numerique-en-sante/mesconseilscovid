@@ -91,13 +91,13 @@
 
 <div id="{{prefixe}}-symptomes-moins-4-jours-reponse" class="statut statut-bleu" hidden>
 
-Vous avez des symptômes qui peuvent évoquer la Covid depuis moins de 4 jours, nous vous recommandons de faire un test **antigénique** ou **PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](/j-ai-des-symptomes-covid.html).
+Vous avez des symptômes qui peuvent évoquer la Covid depuis moins de 4 jours, nous vous recommandons de faire un test **antigénique** ou **PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](j-ai-des-symptomes-covid.html).
 
 </div>
 
 <div id="{{prefixe}}-symptomes-plus-4-jours-reponse" class="statut statut-bleu" hidden>
 
-Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, nous vous recommandons de faire un **test PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](/j-ai-des-symptomes-covid.html).
+Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, nous vous recommandons de faire un **test PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](j-ai-des-symptomes-covid.html).
 
 </div>
 
@@ -105,7 +105,7 @@ Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, 
 
 Vous n’avez pas de symptômes qui peuvent évoquer la Covid mais vous êtes cas contact, nous vous recommandons de faire un **test antigénique** si vous venez de l’apprendre.
 
-Pour un test de contrôle (7 jours après votre contact à risque ), les tests **antigénique** ou **PCR nasopharyngé** sont indiqués.  Consultez notre page thématique [« Je suis cas contact Covid, que faire ? »](/cas-contact-a-risque.html).
+Pour un test de contrôle (7 jours après votre contact à risque ), les tests **antigénique** ou **PCR nasopharyngé** sont indiqués.  Consultez notre page thématique [« Je suis cas contact Covid, que faire ? »](cas-contact-a-risque.html).
 
 </div>
 
@@ -119,7 +119,7 @@ Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pa
 
 Vous n’avez pas de symptômes qui peuvent évoquer la Covid et vous n’êtes pas cas contact :
 
-* Si vous souhaitez obtenir un « [passe sanitaire](/pass-sanitaire-qr-code-voyages.html) » (mineurs de 12 à 15 ans), un test négatif **PCR nasopharyngé** ou **antigénique**, réalisé il y a moins de **24 h** est nécessaire.
+* Si vous souhaitez obtenir un « [passe sanitaire](pass-sanitaire-qr-code-voyages.html) » (mineurs de 12 à 15 ans), un test négatif **PCR nasopharyngé** ou **antigénique**, réalisé il y a moins de **24 h** est nécessaire.
 * Si vous rendez visite à des personnes vulnérables, un test **antigénique** ou **PCR nasopharyngé** est indiqué.
 * Si vous travaillez régulièrement avec des personnes fragiles, il est recommandé de vous tester régulièrement avec les **autotests** vendus en pharmacie (les professionnels exerçant à domicile auprès de personnes vulnérables peuvent obtenir la prise en charge de 10 autotests par mois en présentant leur carte professionnelle au pharmacien).
 
