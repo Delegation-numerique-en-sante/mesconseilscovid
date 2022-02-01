@@ -141,12 +141,22 @@ main {
 }
 
 .ie-banner {
+    display: none;
     text-align: center;
     background: #000091;
     color: white;
     margin: 0 auto;
     padding: 1rem;
     max-width: 60rem;
+}
+
+/* Affiche la bannière seulement pour Internet Explorer
+   https://dev.to/jakedohm_34/adding-an-update-browser-banner-for-legacy-browsers-39n7
+*/
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    .ie-banner {
+        display: block;
+    }
 }
 
 .nouveau-profil {
