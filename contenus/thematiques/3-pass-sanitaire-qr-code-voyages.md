@@ -262,7 +262,7 @@
 
     </div>
 
-    Les professionnels **soumis à une obligation vaccinale**, doivent justifier d’une vaccination complète depuis le **16 octobre 2021** (sauf contre-indications) :
+    Certains professionnels sont soumis à une **obligation vaccinale**, et doivent justifier (sauf contre-indication) d’une vaccination complète depuis le 16 octobre 2021, ainsi que d’une **dose de rappel** depuis le **30 janvier 2022** :
     - professionnels de santé (y compris étudiants en santé) ;
     - personnels des établissements de santé : administratifs… ;
     - professionnels du secteur médico-social : pompiers, aides à domicile…
