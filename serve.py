@@ -26,30 +26,23 @@ LIVERELOAD_DELAY = 0.1
 
 ROOT_DIR = "dist/"
 
-PATHS_TO_WATCH_FOR_THEMATIQUES = (
-    "build.py",
-    "construction/*.py",
-    "construction/directives/*.py",
-    "contenus/meta/*.md",
-    "contenus/thematiques/*.md",
-    "contenus/thematiques/formulaires/*.md",
-    "templates/thematique.html",
-)
-PATHS_TO_WATCH_FOR_INDEX = (
-    "build.py",
-    "construction/*.py",
-    "construction/directives/*.py",
-    "contenus/actualites/*.toml",
-    "contenus/config/*.md",
-    "contenus/conseils/*.md",
-    "contenus/meta/*.md",
-    "contenus/questions/*.md",
-    "contenus/réponses/*.md",
-    "contenus/statuts/*.md",
-    "contenus/suivi/*.md",
-    "contenus/thematiques/*.md",
-    "templates/index.html",
-)
+PATHS_TO_WATCH = {
+    "build.py": [build.thematiques, build.index],
+    "construction/*.py": [build.thematiques, build.index],
+    "construction/directives/*.py": [build.thematiques, build.index],
+    "contenus/actualites/*.toml": [build.index],
+    "contenus/config/*.md": [build.index],
+    "contenus/conseils/*.md": [build.index],
+    "contenus/meta/*.md": [build.thematiques, build.index],
+    "contenus/questions/*.md": [build.index],
+    "contenus/réponses/*.md": [build.index],
+    "contenus/statuts/*.md": [build.index],
+    "contenus/suivi/*.md": [build.index],
+    "contenus/thematiques/*.md": [build.thematiques, build.index],
+    "contenus/thematiques/formulaires/*.md": [build.thematiques],
+    "templates/index.html": [build.index],
+    "templates/thematique.html": [build.thematiques],
+}
 
 
 def parse_args():
@@ -107,10 +100,13 @@ class CustomServer(Server):
 def serve_http(address, port, open_, watch, bundler_watch_filename):
     server = CustomServer()
     if watch:
-        for path in PATHS_TO_WATCH_FOR_THEMATIQUES:
-            server.watch(path, build.thematiques, delay="forever")
-        for path in PATHS_TO_WATCH_FOR_INDEX:
-            server.watch(path, build.index, delay="forever")
+        def call_funcs(funcs):
+            def callback():
+                for func in funcs:
+                    func()
+            return callback
+        for path, funcs in PATHS_TO_WATCH.items():
+            server.watch(path, call_funcs(funcs), delay="forever")
     server.watch(bundler_watch_filename, delay=LIVERELOAD_DELAY)
     server.serve(
         host=address,
