@@ -132,14 +132,15 @@
 .. question:: Qu’est-ce qu’un autotest ?
     :level: 4
 
-    L’autotest est un prélèvement nasal à réaliser chez soi vendu en pharmacie.
+    L’**autotest** est un prélèvement nasal à réaliser chez soi, et disponible en pharmacie.
 
-    Il est pris en charge par l’Assurance maladie uniquement dans les cas suivants :
-     + dépistage des personnes contact à risque en milieu scolaire (enfants de moins de 12 ans, ou personnes de 12 ans et plus complètement vaccinées) ;
-     + tests de surveillance à J+2 et J+4 pour les personnes contact à risque (enfants de moins de 12 ans, ou personnes de 12 ans et plus complètement vaccinées) ;
-     + personnels de l’Éducation nationale exerçant en école maternelle, primaire, collège et lycée, ainsi que dans les services d’hébergement, d’accueil et d’activités périscolaires associés ;
-     + professionnels exerçant auprès de personnes vulnérables (âgées, handicapées…) et dans la limite de 10 par mois.
+    Il est **pris en charge** par l’Assurance maladie dans les cas suivants :
 
-    En dehors de ces situations, le prix de vente maximal d’un autotest est de 5,20 €.
+    * dépistage des personnes **contact à risque** en **milieu scolaire** (enfants de moins de 12 ans, ou personnes de 12 ans et plus complètement vaccinées) ;
+    * tests de surveillance à J+2 et J+4 pour les personnes **contact à risque** (enfants de moins de 12 ans, ou personnes de 12 ans et plus complètement vaccinées) ;
+    * personnels de l’**Éducation nationale** exerçant en école maternelle, primaire, collège et lycée, ainsi que dans les services d’hébergement, d’accueil et d’activités périscolaires associés ;
+    * professionnels exerçant auprès de **personnes vulnérables** (âgées, handicapées…) et dans la limite de 10 par mois.
+
+    En dehors de ces situations, le prix de vente **maximal** d’un autotest est de **5,20 €**.
 
 </div>
