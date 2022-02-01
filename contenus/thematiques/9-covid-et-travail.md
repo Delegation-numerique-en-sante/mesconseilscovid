@@ -38,11 +38,11 @@
 
     - Consulter le guide : [Covid-19 conseils et bonnes pratiques pour les salariés](https://travail-emploi.gouv.fr/IMG/pdf/051021_fiches_covid_salariev7ok.pdf)
 
-    - [J’ai des symptômes ou mon test est positif, que faire ?](/j-ai-des-symptomes-covid.html)
+    - [J’ai des symptômes ou mon test est positif, que faire ?](j-ai-des-symptomes-covid.html)
 
-    - [Je suis cas contact, que faire ?](/cas-contact-a-risque.html)
+    - [Je suis cas contact, que faire ?](cas-contact-a-risque.html)
 
-    - [Je vis avec une personne positive à la Covid, que dois-je faire ?](/je-vis-avec-personne-covid-positive.html)
+    - [Je vis avec une personne positive à la Covid, que dois-je faire ?](je-vis-avec-personne-covid-positive.html)
 
     </div>
 
@@ -58,7 +58,7 @@
 
     <div class="voir-aussi">
 
-    - Voir notre page « [J’ai des symptômes de la Covid ou mon test est positif, que faire ?](/j-ai-des-symptomes-covid.html) »
+    - Voir notre page « [J’ai des symptômes de la Covid ou mon test est positif, que faire ?](j-ai-des-symptomes-covid.html) »
 
     - Voir la rubrique « Arrêt de travail » ci-dessous
 
@@ -219,7 +219,7 @@
         * l’obésité (IMC de 30 et plus),
         * un cancer évolutif sous traitement (hors hormonothérapie),
         * une cirrhose ayant atteint le stade B du score de Child Pugh ;
-    2. vous souffrez de l’une des **pathologies** mentionnées ci-dessus et d’une [contre-indication à la vaccination](/je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination) contre la Covid ;
+    2. vous souffrez de l’une des **pathologies** mentionnées ci-dessus et d’une [contre-indication à la vaccination](je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination) contre la Covid ;
     3. vous souffrez d’une **immunodépression grave :**
         * suite à une transplantation d’organe ou de cellules souches hématopoïétiques,
         * vous êtes sous chimiothérapie lymphopéniante,
@@ -244,7 +244,7 @@
 
     <div class="voir-aussi">
 
-    - Consultez notre page « [Je souhaite me faire vacciner](/je-veux-me-faire-vacciner.html) »
+    - Consultez notre page « [Je souhaite me faire vacciner](je-veux-me-faire-vacciner.html) »
 
     </div>
 
@@ -256,7 +256,7 @@
 
     <div class="voir-aussi">
 
-    - Consultez notre page de [conseils pour les mineurs et leur vaccination](/conseils-pour-les-enfants.html)
+    - Consultez notre page de [conseils pour les mineurs et leur vaccination](conseils-pour-les-enfants.html)
 
     </div>
 

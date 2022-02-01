@@ -69,7 +69,7 @@
 
     * si vous avez été vacciné(e) avec le **vaccin Janssen** :
 
-        - consultez la question « [Je suis vacciné(e) avec une seule dose de Janssen. Comment se passe mon rappel ?](/je-veux-me-faire-vacciner.html#je-suis-vaccine-e-avec-une-seule-dose-de-janssen-comment-se-passe-mon-rappel) » ;
+        - consultez la question « [Je suis vacciné(e) avec une seule dose de Janssen. Comment se passe mon rappel ?](je-veux-me-faire-vacciner.html#je-suis-vaccine-e-avec-une-seule-dose-de-janssen-comment-se-passe-mon-rappel) » ;
 
     {{ formulaire('rappel', prefixe='a-partir-de-quand') }}
 
@@ -107,7 +107,7 @@
 .. question:: Je suis cas contact, puis-je recevoir la dose de rappel ?
     :level: 3
 
-    **Non**. Si vous êtes [cas contact](/cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, vous devez d’abord **vous assurer que vous n’avez pas été contaminé(e)** en vous faisant tester.
+    **Non**. Si vous êtes [cas contact](cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, vous devez d’abord **vous assurer que vous n’avez pas été contaminé(e)** en vous faisant tester.
 
     * Si votre primo-vaccination date d’il y a moins de 4 mois : faites un test **PCR ou antigénique** dès que possible, puis **2 autotests** de contrôle 2 jours après et 4 jours après le premier test.
     * Si votre primo-vaccination date d’il y a plus de 4 mois : faites un test antigénique ou PCR **7 jours après** votre dernier contact avec la personne positive.
@@ -116,7 +116,7 @@
 
     <div class="voir-aussi">
 
-    - [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html)
+    - [Je suis cas contact Covid, que faire ?](cas-contact-a-risque.html)
 
     </div>
 
@@ -225,7 +225,7 @@
 
     **Oui**. Il est possible de réaliser le rappel du vaccin contre la Covid en même temps que le vaccin contre la grippe, mais il est aussi possible d’espacer les deux injections.
 
-    La campagne annuelle de vaccination contre la grippe a commencé le 22 octobre 2021 pour les publics prioritaires. Depuis le **23 novembre 2021**, elle est ouverte à **toute la population**. Si vous êtes [éligible au rappel vaccinal](/je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) contre la Covid, vous pourrez recevoir les deux vaccins en même temps.
+    La campagne annuelle de vaccination contre la grippe a commencé le 22 octobre 2021 pour les publics prioritaires. Depuis le **23 novembre 2021**, elle est ouverte à **toute la population**. Si vous êtes [éligible au rappel vaccinal](je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) contre la Covid, vous pourrez recevoir les deux vaccins en même temps.
 
     En ville, c’est possible dans les **pharmacies** qui vaccinent avec les deux vaccins, et dans les cabinets médicaux ou infirmiers.
 
@@ -236,7 +236,7 @@
 
  <div class="voir-aussi">
 
-- [Je veux des informations sur la vaccination des enfants et adolescents](/conseils-pour-les-enfants.html#la-vaccination-contre-la-covid)
+- [Je veux des informations sur la vaccination des enfants et adolescents](conseils-pour-les-enfants.html#la-vaccination-contre-la-covid)
 
  </div>
 
@@ -297,7 +297,7 @@
 
     <div class="voir-aussi">
 
-    - [Je ne peux pas me faire vacciner, comment obtenir un passe vaccinal ?](/pass-sanitaire-qr-code-voyages.html#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal)
+    - [Je ne peux pas me faire vacciner, comment obtenir un passe vaccinal ?](pass-sanitaire-qr-code-voyages.html#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal)
 
     </div>
 
@@ -305,7 +305,7 @@
 .. question:: Je suis cas contact, puis-je me faire vacciner ?
     :level: 3
 
-    **Non**. Si vous êtes [cas contact](/cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, vous devez d’abord **vous assurer que vous n’avez pas été contaminé(e)**.
+    **Non**. Si vous êtes [cas contact](cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, vous devez d’abord **vous assurer que vous n’avez pas été contaminé(e)**.
 
     Si vous n’êtes **pas vacciné(e)**, faites un test antigénique ou PCR **7 jours après** votre dernier contact avec la personne positive.
 
@@ -313,7 +313,7 @@
 
     <div class="voir-aussi">
 
-    - [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html)
+    - [Je suis cas contact Covid, que faire ?](cas-contact-a-risque.html)
 
     </div>
 
@@ -388,7 +388,7 @@
 
     Cependant, les vaccins ne sont **jamais efficaces à 100 %**, et il reste donc possible d’attraper la Covid et de la transmettre. C’est pourquoi, même vacciné(e), il faut continuer à porter le **masque**, respecter les **gestes barrières** et les mesures de **prévention** (test et isolement si vous ressentez des symptômes ou si vous êtes cas contact).
 
-    Si vous ressentez des symptômes ou si vous êtes positif(ve) à la Covid, [obtenez en quelques clics des conseils sur la conduite à tenir](/j-ai-des-symptomes-covid.html).
+    Si vous ressentez des symptômes ou si vous êtes positif(ve) à la Covid, [obtenez en quelques clics des conseils sur la conduite à tenir](j-ai-des-symptomes-covid.html).
 
 
 .. question:: Quels sont les effets secondaires des vaccins contre la Covid ?
@@ -414,7 +414,7 @@
 
     **Non, la vaccination ne rend en aucun cas positif**, il n’y a pas de virus actif dans les vaccins. Vous pouvez ressentir des effets secondaires (fièvre, fatigue…) suite à la vaccination, mais vous n’êtes **pas contagieux**.
 
-    Si vous avez réalisé un [test de dépistage](/tests-de-depistage.html) après votre vaccination et qu’il est **positif**, cela n’est pas dû au vaccin. Cela signifie que vous avez été contaminé(e) avant ou après votre injection. Nous vous encourageons à vous isoler et à [décrire votre situation](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
+    Si vous avez réalisé un [test de dépistage](tests-de-depistage.html) après votre vaccination et qu’il est **positif**, cela n’est pas dû au vaccin. Cela signifie que vous avez été contaminé(e) avant ou après votre injection. Nous vous encourageons à vous isoler et à [décrire votre situation](/#symptomes) pour obtenir des conseils personnalisés sur la conduite à tenir.
 
 
 ## Vaccination, grossesse et allaitement

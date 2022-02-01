@@ -8,11 +8,11 @@
 
 <div class="voir-aussi">
 
-- [Je suis cas contact d’une personne de mon foyer, que faire ?](/je-vis-avec-personne-covid-positive.html)
+- [Je suis cas contact d’une personne de mon foyer, que faire ?](je-vis-avec-personne-covid-positive.html)
 
-- [Je suis cas contact, puis-je me faire vacciner ?](/je-veux-me-faire-vacciner.html#je-suis-cas-contact-puis-je-me-faire-vacciner)
+- [Je suis cas contact, puis-je me faire vacciner ?](je-veux-me-faire-vacciner.html#je-suis-cas-contact-puis-je-me-faire-vacciner)
 
-- [Je suis cas contact, est-ce que mon test de dépistage est gratuit ?](/tests-de-depistage.html#je-suis-cas-contact-est-ce-que-mon-test-de-depistage-est-gratuit)
+- [Je suis cas contact, est-ce que mon test de dépistage est gratuit ?](tests-de-depistage.html#je-suis-cas-contact-est-ce-que-mon-test-de-depistage-est-gratuit)
 
 </div>
 
