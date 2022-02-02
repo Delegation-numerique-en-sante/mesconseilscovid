@@ -18,6 +18,8 @@ charset-normalizer==2.0.7
     # via httpx
 cython==0.29.24
     # via selectolax
+dateparser==1.1.0
+    # via -r requirements.in
 distlib==0.3.3
     # via virtualenv
 filelock==3.3.2
@@ -68,18 +70,27 @@ pyparsing==2.4.7
     # via packaging
 pytest==6.2.5
     # via -r requirements.in
+python-dateutil==2.8.2
+    # via dateparser
 python-slugify==5.0.2
     # via -r requirements.in
 pytz==2021.3
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   dateparser
+pytz-deprecation-shim==0.1.0.post0
+    # via tzlocal
 regex==2022.1.18
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   dateparser
 rfc3986[idna2008]==1.5.0
     # via httpx
 selectolax==0.3.6
     # via -r requirements.in
 six==1.16.0
     # via
+    #   python-dateutil
     #   tox
     #   virtualenv
 sniffio==1.2.0
@@ -98,6 +109,10 @@ tornado==6.1
     # via livereload
 tox==3.24.5
     # via -r requirements.in
+tzdata==2021.5
+    # via pytz-deprecation-shim
+tzlocal==4.1
+    # via dateparser
 virtualenv==20.10.0
     # via tox
 watchdog==2.1.6

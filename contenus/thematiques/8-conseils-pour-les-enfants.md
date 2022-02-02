@@ -385,6 +385,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 .. question:: La vaccination des mineurs de 12 ans et plus est-t-elle obligatoire pour obtenir le « passe sanitaire » ?
     :level: 3
+    :expires: 15 février 2022
 
     * Pour les adolescent(e)s de **12 à 15 ans**, les règles du **passe sanitaire** continuent à s’appliquer, et plusieurs justificatifs, au choix, sont utilisables en France et pour les voyages en Union européenne :
 

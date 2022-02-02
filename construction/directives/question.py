@@ -1,5 +1,7 @@
+from datetime import date
 from pathlib import Path
 
+from dateparser import parse
 from mistune.directives import Directive
 
 from construction.composants import render_html_summary
@@ -21,13 +23,20 @@ class QuestionDirective(Directive):
         question = m.group("value")
         options = self.parse_options(m)
         if options:
-            level = int(dict(options).get("level", 2))
-            feedback = dict(options).get("feedback", "keep")
-            open_ = dict(options).get("open", "").lower() == "true"
+            options = dict(options)
+            level = int(options.get("level", 2))
+            feedback = options.get("feedback", "keep")
+            open_ = options.get("open", "").lower() == "true"
+            expires = options.get("expires", "")
+            if expires:
+                expires = parse(
+                    expires, settings={"DEFAULT_LANGUAGES": ["fr"]}
+                ).date()
         else:
             level = 2
             feedback = "keep"
             open_ = False
+            expires = None
 
         text = self.parse_text(m)
         children = block.parse(text, state, block.rules)
@@ -37,10 +46,16 @@ class QuestionDirective(Directive):
                 f"Question sans réponse : indentation manquante ?\n« {question} »"
             )
 
+        if expires and date.today() > expires:
+            raise RuntimeError(
+                f"Cette question doit être mise à jour le {expires.strftime('%d/%m/%Y')}\n"
+                f"« {question} »"
+            )
+
         return {
             "type": "question",
             "children": children,
-            "params": (question, level, feedback, open_),
+            "params": (question, level, feedback, open_, expires),
         }
 
     def __call__(self, md):
@@ -51,18 +66,19 @@ class QuestionDirective(Directive):
             md.renderer.register("question", self.render_ast)
 
     @staticmethod
-    def render_ast(text, question, level, feedback, open_):
+    def render_ast(text, question, level, feedback, open_, expires):
         return {
             "type": "question",
             "titre": question,
             "level": level,
             "feedback": feedback,
             "open": open_,
+            "expires": expires,
             "text": text,
         }
 
     @staticmethod
-    def render_html(text, question, level, feedback, open_):
+    def render_html(text, question, level, feedback, open_, expires):
         question_id = slugify_title(question)
         feedback_html = (
             """<form class="question-feedback">

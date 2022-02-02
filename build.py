@@ -2,6 +2,7 @@
 import json
 import locale
 import logging
+import warnings
 from datetime import date
 from html.parser import HTMLParser
 from http import HTTPStatus
@@ -28,6 +29,16 @@ STATIC_DIR = HERE / "static"
 NB_OF_DISPLAYED_THEMATIQUES = 12
 
 locale.setlocale(locale.LC_ALL, "fr_FR.UTF-8")
+
+
+# Ignore dateparser warnings regarding pytz
+warnings.filterwarnings(
+    "ignore",
+    message=(
+        "The localize method is no longer necessary, "
+        "as this time zone supports the fold attribute"
+    ),
+)
 
 
 @cli
