@@ -1,5 +1,13 @@
 # Changelog
 
+## 2022-02-02
+
+* fin de l’obligation du télétravail
+* autotests gratuits pour les personnels de l’Éducation nationale
+* validité du certificat de rétablissement réduite à 4 mois au 15/2
+* ajoute une question sur rappel et passe pour les moins de 18 ans
+* met à jour et précise vaccination / dose de rappel si cas contact
+
 ## 2022-01-28
 
 * arrêt de travail des parents vaccinés et prolongation du télétravail obligatoire
