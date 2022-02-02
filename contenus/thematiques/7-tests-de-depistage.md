@@ -32,6 +32,7 @@
 
 .. question:: Dans quels cas les tests de dépistage sont-ils gratuits ?
     :level: 3
+    :expires: 15 février 2022
 
     Les tests de dépistage sont pris en charge par l’Assurance Maladie **dans les cas suivants** (sur présentation d’un **justificatif**) :
 

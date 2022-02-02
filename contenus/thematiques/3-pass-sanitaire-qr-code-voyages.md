@@ -16,6 +16,7 @@
 
 .. question:: Qu’est-ce que le passe vaccinal ?
     :level: 3
+    :expires: 15 février 2022
 
     Le **passe vaccinal** atteste du fait que :
     -  vous êtes **complètement vacciné(e)**, c’est-à-dire que vous avez reçu toutes les doses de vaccin nécessaires et que vous avez reçu votre dernière dose il y a **moins de 7 mois** (*ce délai passera à moins de 4 mois à partir du 15 février*),
@@ -42,12 +43,14 @@
 
 .. question:: Je suis en cours de vaccination, comment obtenir un passe vaccinal temporaire ?
     :level: 3
+    :expires: 15 février 2022
 
     Si vous avez reçu votre première dose **au plus tard le 15 février**, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, alors vous pouvez, en attendant, présenter un **test de dépistage négatif** de moins de 24 h (*passe vaccinal temporaire*) en **complément** de votre attestation de première dose pour participer à certaines activités.
 
 
 .. question:: Je ne suis pas encore vacciné(e). Combien de doses dois-je recevoir pour obtenir mon passe vaccinal ?
     :level: 3
+    :expires: 15 février 2022
 
     - Si vous n’êtes pas encore vacciné(e) contre la Covid, vous obtiendrez votre passe vaccinal une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation.
 
@@ -64,12 +67,14 @@
 
 .. question:: Mon passe vaccinal a été désactivé. Quand sera-t-il réactivé ?
     :level: 3
+    :expires: 15 février 2022
 
     Si vous ne faites pas votre rappel vaccinal dans les 7 mois (*délai réduit à 4 mois à partir du 15 février*) suivant votre primo-vaccination, alors votre passe sera automatiquement désactivé. Il sera réactivé **7 jours après** votre injection de rappel.
 
 
 .. question:: Qu’est-ce que le passe sanitaire et à qui s’applique t-il encore ?
     :level: 3
+    :expires: 15 février 2022
 
     En France, le passe sanitaire continue de concerner les enfants de **12 à 15 ans**. Il peut être, **selon la situation** de l’enfant :
 
@@ -99,13 +104,15 @@
 
 .. question:: Jusqu’à quand l’usage du passe vaccinal est-il prévu ?
     :level: 3
+    :expires: 31 juillet 2022
 
-   Le Parlement a autorisé le gouvernement à prolonger l’utilisation du passe vaccinal (auparavant passe sanitaire) jusqu’au **31 juillet 2022** si la situation épidémique le demande.
+    Le Parlement a autorisé le gouvernement à prolonger l’utilisation du passe vaccinal (auparavant passe sanitaire) jusqu’au **31 juillet 2022** si la situation épidémique le demande.
 
 
 .. question:: Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon passe vaccinal ?
     :level: 3
     :open: true
+    :expires: 15 février 2022
 
     {{ formulaire('rappel', 'date-limite-pass') }}
 
@@ -135,6 +142,7 @@
 
 .. question:: J’ai eu la Covid après ma vaccination complète, comment prolonger mon passe vaccinal ?
     :level: 3
+    :expires: 15 février 2022
 
     Si vous êtes âgé de **18 ans ou plus**, alors vous serez éligible à une dose de rappel dès **3 mois** après votre **infection**.
 
@@ -163,6 +171,7 @@
 
 .. question:: Puis-je recevoir des soins à l’hôpital si je ne suis pas vacciné(e) contre la Covid ?
     :level: 3
+    :expires: 15 février 2022
 
     **Bien sûr**. Le **passe vaccinal ne s’applique pas** dans les établissement médico-sociaux (hôpital, clinique, EHPAD…). Vacciné(e) ou non, vous avez accès aux mêmes soins.
 
@@ -249,6 +258,7 @@
 
 .. question:: Est-ce que mon employeur peut exiger mon passe vaccinal ?
     :level: 3
+    :expires: 15 février 2022
 
     Cela dépend de votre **secteur d’activité**.
 
@@ -345,6 +355,7 @@
 
 .. question:: Comment obtenir un certificat de rétablissement avec QR code ?
     :level: 3
+    :expires: 15 février 2022
 
     Si vous avez eu la Covid il y a **plus de 11 jours**, alors votre test de dépistage (PCR ou antigénique) positif devient votre **certificat de rétablissement**, pour une **durée de 6 mois** depuis la date du test (*cette durée passera à 4 mois à partir du 15 février*).
 
@@ -379,6 +390,7 @@
 
 .. question:: J’ai été vacciné à l’étranger avec un vaccin reconnu en France, comment obtenir un QR code valable en France ?
     :level: 3
+    :expires: 15 février 2022
 
     Pour que votre vaccination soit reconnue comme passe vaccinal en France il faut être complètement vacciné(e) avec un vaccin **reconnu en France** (ou équivalent) et obtenir un **QR code**.
 

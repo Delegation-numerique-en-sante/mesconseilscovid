@@ -1,3 +1,4 @@
+dateparser
 httpx
 jinja2
 git+https://github.com/ronnix/python-livereload.git@2358f347d6f933d423675a80a661ef8bb7885a34#egg=livereload

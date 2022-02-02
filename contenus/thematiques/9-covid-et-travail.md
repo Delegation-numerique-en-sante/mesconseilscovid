@@ -150,15 +150,15 @@
 .. question:: Peut-on organiser des moments de convivialité ?
     :level: 3
 
-    Les moments de convivialité (pot de bienvenue, pot de départ…) réunissant les salariés dans un cadre professionnel et en présentiel sont actuellement **suspendus***. 
-    
+    Les moments de convivialité (pot de bienvenue, pot de départ…) réunissant les salariés dans un cadre professionnel et en présentiel sont actuellement **suspendus***.
+
 ## Arrêt de travail lié à la Covid
 
 .. question:: Comment obtenir un arrêt maladie pour une situation liée à la Covid ?
     :level: 3
 
     Si vous avez été **testé positif à la Covid, l’Assurance Maladie vous contactera** pour vous fournir un arrêt de travail.
-    
+
     Vous pouvez demander un arrêt de travail sans délai de carence directement sur le site [declare.ameli.fr](https://declare.ameli.fr/), si vous êtes :
     - **cas contact** et que vous n’êtes **pas vacciné**, et que vous n’avez pas eu la Covid dans les 2 derniers mois ;
     - *ou* **cas contact** de votre **enfant** de moins de 16 ans et que vous habitez avec lui, même si vous êtes **vacciné**.
