@@ -32,21 +32,23 @@
     **Non.** La Covid est un virus des **voies respiratoires**, c’est-à-dire qu’il entre et sort de ton corps par **ta bouche et ton nez**, lorsque tu respires ou que tu parles. Pour te protéger et protéger ceux qui t’entourent, le masque doit donc bien te **couvrir le nez et la bouche**.
 
 
-.. question:: À partir de quel âge le passe sanitaire est-il obligatoire ?
+.. question:: À partir de quel âge le passe sanitaire et le passe vaccinal sont-ils demandés ?
     :level: 3
 
-    Le passe sanitaire est obligatoire à partir de **12 ans et 2 mois**.
+    * Le **passe sanitaire** est demandé à partir de **12 ans et 2 mois** pour accéder à certains lieux.
+
+    * Le **passe vaccinal** est demandé à partir de **16 ans** pour accéder à certains lieux.
 
 
-.. question:: Où le passe sanitaire est-il obligatoire ?
+.. question:: Où le passe sanitaire et le passe vaccinal sont-ils obligatoires ?
     :level: 3
 
-    Il faut présenter un passe sanitaire pour accéder aux lieux qui accueillent beaucoup de personnes et où le risque de contamination est important.
+    Il faut présenter un **passe sanitaire** ou un **passe vaccinal** pour accéder aux lieux qui accueillent beaucoup de personnes et où le risque de contamination est plus important.
 
     Il est notamment **obligatoire** pour accéder :
-    - aux lieux de loisir et de culture : **cinémas, musées, théâtres, parcs d’attraction…** ;
+    - aux lieux de loisirs et de culture : **cinémas, musées, théâtres, parcs d’attraction…** ;
     - aux lieux de convivialité :  **restaurants**, **bars** et **cafés** (même en terrasse) ;
-    - aux établissements médicaux-sociaux (**hôpitaux, EHPAD…**), mais seulement pour les soins programmés, les accompagnateurs et les visiteurs, mais **pas pour les urgences** ;
+    - aux établissements médicaux-sociaux (**hôpitaux, EHPAD…**), mais seulement pour les soins programmés, les accompagnateurs et les visiteurs, **pas pour les urgences** ;
     - à certains grands centres commerciaux.
 
     <div class="exemple">
@@ -258,16 +260,16 @@
     </div>
 
 
-.. question:: Est-ce que j’ai besoin du passe sanitaire pour aller au collège ou au lycée ?
+.. question:: Est-ce que j’ai besoin d’un passe sanitaire ou d’un passe vaccinal pour aller au collège ou au lycée ?
     :level: 3
 
-    **Non**. Le passe sanitaire n’est **pas obligatoire** pour accéder aux établissements d’enseignement, écoles, collèges ou lycées.
+    **Non**. Le passe sanitaire (ou le passe vaccinal) n’est **pas obligatoire** pour accéder aux établissements d’enseignement, écoles, collèges ou lycées.
 
     En revanche, il est obligatoire pour les activités extra-scolaires.
 
     <div class="voir-aussi">
 
-    - Notre autre page sur le [passe sanitaire](/pass-sanitaire-qr-code-voyages.html)
+    - Notre autre page sur le [passe vaccinal](/pass-sanitaire-qr-code-voyages.html)
 
     </div>
 
@@ -409,12 +411,12 @@
         * *ou* une **sérologie** (prise de sang) indiquant la présence d’anticorps (et donc d’une ancienne contamination à la Covid).
 
 
-.. question:: Je suis vacciné(e). Comment faire pour avoir un passe sanitaire ?
+.. question:: Je suis vacciné(e). Comment faire pour avoir un passe sanitaire ou un passe vaccinal ?
     :level: 3
 
     Lors de ton rendez-vous de vaccination, le professionnel de santé t’a remis une **attestation de vaccination** (sur papier) comportant un QR code.
 
-    Elle sera valable comme « passe sanitaire » en France **7 jours après ta dernière dose**. Si tu veux utiliser ton passe sanitaire pour voyager, tu devras attendre 14 jours.
+    Elle sera valable comme « passe sanitaire » ou comme « passe vaccinal » en France **7 jours après ta dernière dose**. Si tu veux utiliser ce passe pour voyager, tu devras attendre 14 jours.
 
     Cette attestation pourra être importée dans l’application TousAntiCovid rubrique « carnet », sur ton smartphone.
 
@@ -425,13 +427,17 @@
     </div>
 
 
-.. question:: La vaccination est-elle obligatoire obtenir le « passe sanitaire » ?
+.. question:: La vaccination est-elle obligatoire obtenir le passe sanitaire ou le passe vaccinal ?
     :level: 3
 
-    La vaccination n’est pas la seule façon d’obtenir un passe sanitaire. Tu peux aussi en obtenir un grâce à :
+    * Si tu as **entre 12 ans et 2 mois et 16 ans**, une attestation de vaccination complète te donnera accès aux lieux qui nécessitent un **passe sanitaire**, mais tu peux aussi présenter :
+        * un **certificat de rétablissement**, c’est à dire un **test PCR ou antigénique positif** de plus de 11 jours et moins de 6 mois (*cette durée passera à 4 mois à partir du 15 février*) ;
+        * une attestation de **contre-indication** à la vaccination ;
+        * un **test PCR ou antigénique négatif** de moins de 24 h.
 
-    * un **test PCR ou antigénique (pharmacie) négatif** de moins de 24 h ;
-    * un **test PCR positif** de plus de 11 jours et moins de 6 mois.
+    * Si tu as **16 ans ou plus**, une attestation de vaccination complète te donnera accès aux lieux qui nécessitent un **passe vaccinal**, mais tu peux aussi présenter :
+        * un **certificat de rétablissement**, c’est à dire un **test PCR ou antigénique positif** de plus de 11 jours et moins de 6 mois (*cette durée passera à 4 mois à partir du 15 février*) ;
+        * une attestation de **contre-indication** à la vaccination.
 
 
 .. section:: Les symptômes et les tests de dépistage
