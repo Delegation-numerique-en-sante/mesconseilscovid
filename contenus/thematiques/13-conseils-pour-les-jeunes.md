@@ -60,7 +60,7 @@
 
     Chaque variant a des **caractéristiques** plus ou moins **différentes** du virus d’origine. Par exemple, il peut être plus contagieux, moins dangereux, ou provoquer d’autres symptômes comme un mal de gorge plutôt que des maux de tête.
 
-    Plus un variant est contagieux, plus il se répand vite au sein de la population et finit par remplacer les versions précédentes. Au début de la pandémie, en **2020**, la souche originelle, d’abord détectée en Chine, était la plus répandue. Actuellement, début 2022, c’est le variant *Omicron* qui est le plus répandu en France. Il a remplacé le variant *Delta*, qui était majoritaire en décembre **2021**.
+    Plus un variant est contagieux, plus il se répand vite au sein de la population et finit par remplacer les versions précédentes. Au début de la pandémie, en **2020**, la souche originelle, d’abord détectée en Chine, était la plus répandue. Actuellement, début **2022**, c’est le variant *Omicron* qui est le plus répandu en France. Il a remplacé le variant *Delta*, qui était majoritaire en décembre **2021**.
 
     Les **scientifiques surveillent** attentivement l’apparition de **nouveaux variants** et veillent à ce que les consignes sanitaires et les vaccins restent suffisament efficaces pour les combattre. Les études récentes nous donnent des éléments rassurants puisqu’elles montrent que :
 
@@ -76,7 +76,7 @@
     Les consignes changent pour s’**adapter** à l’évolution de l’épidémie. Elles dépendent aussi des connaissances que nous avons sur ce nouveau virus :
 
     - Les consignes sont durcies (couvre-feu, fermeture de certains lieux comme les boîtes de nuit…) lorsqu’il y a une augmentation importante des cas positifs. On parle alors d’une « vague ». **Ce durcissement des règles sert à faire baisser le nombre de contaminations** et à éviter la surcharge des hôpitaux qui ne pourraient pas accueillir tous les malades.
-    - A l’inverse, les consignes peuvent être assouplies, lorsque la situation épidémique est plus favorable.
+    - À l’inverse, les consignes peuvent être assouplies, lorsque la situation épidémique est plus favorable.
 
     **Les consignes évoluent aussi en fonction des nouvelles découvertes que font les scientifiques.** Par exemple, la fabrication des vaccins nous a permis d’éviter l’instauration d’un couvre-feu lors des fêtes de fin d’années en 2021, mais l’apparition de nouveaux variants du virus (Delta, Omicron), nous force encore une fois à nous adapter en recevant un rappel vaccinal.
 
@@ -513,7 +513,7 @@
 .. question:: Les tests sont-ils dangereux ou douloureux ?
     :level: 3
 
-    Les tests nasopharyngés sont un moment désagréable à passer, mais ils ne sont ni douloureux ni dangereux. Le prélèvement consiste à introduire doucement une sorte de long coton-tige dans une narine, puis de le faire tourner plusieurs fois pour recueillir d’éventuels fragments de virus. Ça fait bizarre, ça chatouille, ça peut donner envie de pleurer ou d’éternuer, mais heureusement c’est vite terminé !
+    **Non.** Les tests nasopharyngés sont un moment désagréable à passer, mais ils ne sont ni douloureux ni dangereux. Le prélèvement consiste à introduire doucement une sorte de long coton-tige dans une narine, puis de le faire tourner plusieurs fois pour recueillir d’éventuels fragments de virus. Ça fait bizarre, ça chatouille, ça peut donner envie de pleurer ou d’éternuer, mais heureusement c’est vite terminé !
 
     Si le prélèvement nasal (dans le nez) est impossible dans ton cas (déviation de la cloison nasale) ou s’il te fait trop peur, tu peux aussi faire un test PCR salivaire (prélèvement de salive) dans certains laboratoires.
 
