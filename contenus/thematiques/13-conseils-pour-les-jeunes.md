@@ -392,6 +392,8 @@
     * si tu as déjà eu la Covid il y a 2 mois ou plus, **une seule** dose sera nécessaire ;
     * si tu n’as jamais eu la Covid, **deux** doses seront nécessaires.
 
+    Depuis le 24 janvier 2022, si tu as entre 12 et 17 ans, tu pourras aussi recevoir une **dose de rappel** pour maintenir ton niveau d’immunité, **6 mois** après ta dernière **injection** ou ta dernière **infection** à la Covid.
+
     <div class="voir-aussi">
 
     * [Quels justificatifs apporter le jour du rendez-vous de vaccination ?](#quels-justificatifs-apporter-le-jour-du-rendez-vous-de-vaccination)
