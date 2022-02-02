@@ -2,6 +2,8 @@
 
 ## 2022-02-02
 
+* ajout d’une page thématique dédiée aux jeunes
+* obligation de dose de rappel pour certaines professions
 * fin de l’obligation du télétravail
 * autotests gratuits pour les personnels de l’Éducation nationale
 * validité du certificat de rétablissement réduite à 4 mois au 15/2
