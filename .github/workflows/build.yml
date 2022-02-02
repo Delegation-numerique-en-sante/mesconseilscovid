@@ -299,11 +299,19 @@ jobs:
       - name: Send event to trigger deployment workflow
         if: steps.check.outputs.has-permission
         run: |
-          curl -XPOST https://api.github.com/repos/Delegation-numerique-en-sante/mesconseilscovid-infra/dispatches \
+          OUTPUT_FILE=$(mktemp)
+          HTTP_CODE=$(curl --silent --output $OUTPUT_FILE --write-out "%{http_code}" \
+               -XPOST https://api.github.com/repos/Delegation-numerique-en-sante/mesconseilscovid-infra/dispatches \
                -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
                -H "Accept: application/vnd.github.everest-preview+json" \
                -H "Content-Type: application/json" \
-               --data '{"event_type": "deploy", "client_payload": {"repo": "${{ github.repository }}", "commit": "${{ github.sha }}", "ref": "${{ github.ref }}", "slug": "${{ env.GITHUB_REF_SLUG_URL }}", "run_id": "${{ github.run_id }}", "artifact": "mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}", "deployment_id": "${{ steps.create_deployment.outputs.id }}"}}'
+               --data '{"event_type": "deploy", "client_payload": {"repo": "${{ github.repository }}", "commit": "${{ github.sha }}", "ref": "${{ github.ref }}", "slug": "${{ env.GITHUB_REF_SLUG_URL }}", "run_id": "${{ github.run_id }}", "artifact": "mesconseilscovid-${{ env.GITHUB_REF_SLUG_URL }}-${{ env.GITHUB_SHA_SHORT }}", "deployment_id": "${{ steps.create_deployment.outputs.id }}"}}')
+          if [[ ${HTTP_CODE} -lt 200 || ${HTTP_CODE} -gt 299 ]] ; then
+            >&2 cat $OUTPUT_FILE
+            exit 1
+          fi
+          cat $OUTPUT_FILE
+          rm $OUTPUT_FILE
 
   check-links:
     name: Check external links
