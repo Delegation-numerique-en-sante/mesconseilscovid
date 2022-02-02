@@ -67,18 +67,18 @@
 .. question:: J’entends parler de Delta, Omicron… qu’est-ce qu’un variant ?
     :level: 3
 
-    Pour survivre, un virus comme le SARS-CoV-2 (Covid-19) se réplique, c’est-à-dire qu’il fait des **copies** de son code génétique. Parfois, une **erreur** se glisse dans une de ces copies et c’est cette nouvelle version, qu’on appelle une **mutation** ou un **variant**.
+    Pour survivre, un **virus** comme le SARS-CoV-2 (responsable de la Covid-19) se réplique, c’est-à-dire qu’il utilise nos cellules pour fabriquer des **copies** de lui-même. Parfois, une **erreur** se glisse lors de la recopie de son code génétique, et c’est cette nouvelle version qu’on appelle une **mutation** ou un **variant**.
 
     Chaque variant a des **caractéristiques** plus ou moins **différentes** du virus d’origine. Par exemple, il peut être plus contagieux, moins dangereux, ou provoquer d’autres symptômes comme un mal de gorge plutôt que des maux de tête.
 
-    Plus un variant est contagieux, plus il se répand vite au sein de la population et finit par remplacer les autres mutations. Au début de la pandémie, en **2020**, la souche originelle, d’abord détectée en Chine, était la plus répandue. Actuellement, début 2022, c’est le variant *Omicron* qui est le plus répandu en France. Il a remplacé le variant *Delta*, qui était majoraitaire en décembre **2021**.
+    Plus un variant est contagieux, plus il se répand vite au sein de la population et finit par remplacer les versions précédentes. Au début de la pandémie, en **2020**, la souche originelle, d’abord détectée en Chine, était la plus répandue. Actuellement, début 2022, c’est le variant *Omicron* qui est le plus répandu en France. Il a remplacé le variant *Delta*, qui était majoritaire en décembre **2021**.
 
     Les **scientifiques surveillent** attentivement l’apparition de **nouveaux variants** et veillent à ce que les consignes sanitaires et les vaccins restent suffisament efficaces pour les combattre. Les études récentes nous donnent des éléments rassurants puisqu’elles montrent que :
 
-    * le variant **Omicron** semble **moins dangereux** que le variant précédent (*Delta*) ;
+    * le variant **Omicron** semble donner **moins souvent** des formes graves que le variant précédent (*Delta*) ;
     * le **rappel vaccinal** avec un vaccin Pfizer ou Moderna permet de diminuer de **70 %** le risque d’une forme grave dans le cas d’une contamination par *Omicron*.
 
-    Il est probable que les vaccins seront adaptés au fur et à mesure de l’apparition de variants pour conserver leur efficacité.
+    Il est probable que les vaccins seront adaptés au fur et à mesure de l’apparition de variants pour optimiser leur efficacité.
 
 
 .. question:: Que faire si j’ai des pensées négatives, du stress ou des peurs ?
