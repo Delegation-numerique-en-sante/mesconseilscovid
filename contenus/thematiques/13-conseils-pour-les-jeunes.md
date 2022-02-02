@@ -15,23 +15,6 @@
 
 .. section:: Ma vie quotidienne
 
-.. question:: Pourquoi est-ce que les mesures changent si souvent ?
-    :level: 3
-
-    Les consignes changent pour s’**adapter** à l’évolution de l’épidémie. Elles dépendent aussi des connaissances que nous avons sur ce nouveau virus :
-
-    - Les consignes sont durcies (couvre-feu, fermeture de certains lieux comme les boîtes de nuit…) lorsqu’il y a une augmentation importante des cas positifs. On parle alors d’une « vague ». **Ce durcissement des règles sert à faire baisser le nombre de contaminations** et à éviter la surcharge des hôpitaux qui ne pourraient pas accueillir tous les malades.
-    - A l’inverse, les consignes peuvent être assouplies, lorsque la situation épidémique est plus favorable.
-
-    **Les consignes évoluent aussi en fonction des nouvelles découvertes que font les scientifiques.** Par exemple, la fabrication des vaccins nous a permis d’éviter l’instauration d’un couvre-feu lors des fêtes de fin d’années en 2021, mais l’apparition de nouveaux variants du virus (Delta, Omicron), nous force encore une fois à nous adapter en recevant un rappel vaccinal.
-
-
-.. question:: Est-ce que porter le masque sous le nez est efficace ?
-    :level: 3
-
-    **Non.** La Covid est un virus des **voies respiratoires**, c’est-à-dire qu’il entre et sort de ton corps par **ta bouche et ton nez**, lorsque tu respires ou que tu parles. Pour te protéger et protéger ceux qui t’entourent, le masque doit donc bien te **couvrir le nez et la bouche**.
-
-
 .. question:: À partir de quel âge le passe sanitaire et le passe vaccinal sont-ils demandés ?
     :level: 3
 
@@ -64,6 +47,12 @@
     </div
 
 
+.. question:: Est-ce que porter le masque sous le nez est efficace ?
+    :level: 3
+
+    **Non.** La Covid est un virus des **voies respiratoires**, c’est-à-dire qu’il entre et sort de ton corps par **ta bouche et ton nez**, lorsque tu respires ou que tu parles. Pour te protéger et protéger ceux qui t’entourent, le masque doit donc bien te **couvrir le nez et la bouche**.
+
+
 .. question:: J’entends parler de Delta, Omicron… qu’est-ce qu’un variant ?
     :level: 3
 
@@ -79,6 +68,17 @@
     * le **rappel vaccinal** avec un vaccin Pfizer ou Moderna permet de diminuer de **70 %** le risque d’une forme grave dans le cas d’une contamination par *Omicron*.
 
     Il est probable que les vaccins seront adaptés au fur et à mesure de l’apparition de variants pour optimiser leur efficacité.
+
+
+.. question:: Pourquoi est-ce que les mesures changent si souvent ?
+    :level: 3
+
+    Les consignes changent pour s’**adapter** à l’évolution de l’épidémie. Elles dépendent aussi des connaissances que nous avons sur ce nouveau virus :
+
+    - Les consignes sont durcies (couvre-feu, fermeture de certains lieux comme les boîtes de nuit…) lorsqu’il y a une augmentation importante des cas positifs. On parle alors d’une « vague ». **Ce durcissement des règles sert à faire baisser le nombre de contaminations** et à éviter la surcharge des hôpitaux qui ne pourraient pas accueillir tous les malades.
+    - A l’inverse, les consignes peuvent être assouplies, lorsque la situation épidémique est plus favorable.
+
+    **Les consignes évoluent aussi en fonction des nouvelles découvertes que font les scientifiques.** Par exemple, la fabrication des vaccins nous a permis d’éviter l’instauration d’un couvre-feu lors des fêtes de fin d’années en 2021, mais l’apparition de nouveaux variants du virus (Delta, Omicron), nous force encore une fois à nous adapter en recevant un rappel vaccinal.
 
 
 .. question:: Que faire si j’ai des pensées négatives, du stress ou des peurs ?
@@ -109,6 +109,7 @@
     - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
 
     </div>
+
 
 .. question:: Que se passe-t-il si un(e) élève est testé(e) positif(ve) dans ma classe au collège ou au lycée ?
     :level: 3
@@ -161,7 +162,7 @@
         * tu devras faire un **autotest de contrôle** 2 jours après ton dernier contact avec la personne positive (voir ci-dessous) ;
         * puis, un 2<sup>e</sup> autotest de contrôle 2 jours après le premier.
 
-      Si les autotests sont négatifs, alors tu pourras continuer à aller au collège ou au lycée, mais :
+      Si les autotests sont négatifs, alors tu pourras continuer à aller au collège ou au lycée, mais :
 
         * tu devras rester **prudent** et éviter de passer du temps avec des personnes vulnérables ou fragiles (comme tes grands-parents ou des personnes âgées ou malades) ;
         * en cas de **fièvre** ou de **symptômes** fais un nouveau test sans attendre.
@@ -188,7 +189,7 @@
 
     #### 1. Isolement
 
-    Si tu es « **cas contact** », que tu n’es **pas vacciné** et que tu n’as pas déjà eu la Covid dans les 2 derniers mois, alors :
+    Si tu es « **cas contact** », que tu n’es **pas vacciné** et que tu n’as pas déjà eu la Covid dans les 2 derniers mois, alors :
     * tu devras rester **isolé** pendant **7 jours**. Tu ne devras **pas aller au collège ou au lycée** et tu suivras tes cours à distance.
     * en cas de **fièvre** ou de **symptômes** avant le 7<sup>e</sup> jour, fais un test (PCR ou antigénique) sans attendre.
 
@@ -276,6 +277,17 @@
 
 .. section:: La vaccination contre la Covid
 
+.. question:: Comment fonctionnent les vaccins ?
+    :level: 3
+
+    Les vaccins contre la Covid font croire à ton système immunitaire (l’armée qui défend ton organisme contre les infections) que tu as été contaminé par la Covid afin qu’il crée des anticorps (des soldats). **Une fois vacciné, ton corps sera prêt à réagir rapidement en cas de contact avec le virus et luttera contre la contamination de manière plus efficace.** Résultat, tu auras moins de symptômes, voire même, tu éviteras la contamination.
+
+    Contre la Covid, 2 types de vaccins sont actuellement disponibles :
+
+    * les **vaccins à adénovirus** (Janssen et AstraZeneca) : qui injectent une infime partie du virus, désactivé et inoffensif. Cette injection va simuler une contamination et les anticorps vont être crées pour la combattre ;
+    * les **vaccins à ARN messager** (Pfizer et Moderna) : les ARN sont, comme leur nom l’indique, des messagers. Ils ont la recette du virus de la Covid et vont la transmettre à notre système immunitaire afin qu’il crée des anticorps capable de le combattre. Une fois leur travail accompli, ces messagers se dissolvent et disparaissent.
+
+
 .. question:: Comment des vaccins ont-ils été crées aussi vite ? Sont-ils efficaces et sûrs ?
     :level: 3
 
@@ -288,21 +300,10 @@
     3. **le nombre de malades** : les **phases de vérification et d’expérimentation**, qui permettent de tester la sécurité d’un vaccin, n’ont pas été plus courtes que pour d’autres vaccins. Elles ont pu se dérouler dans des délais plus restreints grâce au très grand nombre de malades de la Covid sur qui les tests ont pu être réalisés. Habituellement, ces phases se déroulent sur plusieurs années (voire décennies) car il y a peu de volontaires pour les tests.
 
 
-.. question:: Comment fonctionnent les vaccins ?
+.. question:: Est-ce que les vaccins vont modifier mon ADN ?
     :level: 3
 
-    Les vaccins contre la Covid font croire à ton système immunitaire (l’armée qui défend ton organisme contre les infections) que tu as été contaminé par la Covid afin qu’il crée des anticorps (des soldats). **Une fois vacciné, ton corps sera prêt à réagir rapidement en cas de contact avec le virus et luttera contre la contamination de manière plus efficace.** Résultat, tu auras moins de symptômes, voire même, tu éviteras la contamination.
-
-    Contre la Covid, 2 types de vaccins sont actuellement disponibles :
-
-    * les **vaccins à adénovirus** (Janssen et AstraZeneca) : qui injectent une infime partie du virus, désactivé et inoffensif. Cette injection va simuler une contamination et les anticorps vont être crées pour la combattre ;
-    * les **vaccins à ARN messager** (Pfizer et Moderna) : les ARN sont, comme leur nom l’indique, des messagers. Ils ont la recette du virus de la Covid et vont la transmettre à notre système immunitaire afin qu’il crée des anticorps capable de le combattre. Une fois leur travail accompli, ces messagers se dissolvent et disparaissent.
-
-
-.. question:: Est-ce que les vaccins changent mon ADN ?
-    :level: 3
-
-    **Non**, c’est une **fausse information** (*fake news*) qui circule au sujet des vaccins à ARN messagers (Pfizer et Moderna). L’**ADN** se situe dans une zone quasi-inaccessible de nos cellules qui s’appelle **le noyau**, dans lequel l’ARN messager des vaccins **ne peut pas pénétrer**.
+    **Non**, c’est une **fausse information** (*fake news*) qui circule au sujet des vaccins à ARN messager (Pfizer et Moderna). L’**ADN** se situe dans une zone quasi-inaccessible de nos cellules qui s’appelle **le noyau**, dans lequel l’ARN messager des vaccins **ne peut pas pénétrer**.
 
 
 .. question:: Je suis jeune et en bonne santé, pourquoi me faire vacciner contre la Covid ?
