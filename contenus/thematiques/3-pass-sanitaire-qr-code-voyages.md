@@ -372,12 +372,24 @@
     </div>
 
 
+.. question:: Je rencontre des difficultés avec mon passe vaccinal, mon passe sanitaire, ou avec l’application TousAntiCovid, que faire ?
+    :level: 3
+
+    <div class="voir-aussi">
+
+    - Consultez l[’aide de l’application TousAntiCovid](https://tousanticovid.stonly.com/kb/fr)
+
+    - Appelez l’assistance téléphonique gratuite au [0 800 087 148](tel:0800087148).
+
+    </div>
+
+
 .. question:: Comment intégrer mon certificat de rétablissement, test de dépistage ou attestation de vaccination dans mon application TousAntiCovid ?
     :level: 3
 
     <div class="voir-aussi">
 
-    - Consultez la [page d’aide de l’application TousAntiCovid](https://tousanticovid.stonly.com/kb/fr/mon-carnet-51371)
+    - Consultez la section [« Pass vaccinal » dans l’aide de TousAntiCovid](https://tousanticovid.stonly.com/kb/fr/mon-carnet-51371)
 
     </div>
 
