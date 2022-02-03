@@ -4,4 +4,5 @@ Pendant votre période d’isolement, si vous avez **besoin d’aide** pour vos 
 
 ℹ️ Si vous ne pouvez pas rester isolé·e chez vous, l’Assurance Maladie pourra vous aider à trouver un autre logement pendant la durée de votre isolement.
 
-Pour plus d’informations sur l’isolement : [Je limite la transmission du virus en adoptant la bonne conduite à tenir](https://www.ameli.fr/sites/default/files/Documents/683638/document/spf-limiter-transmission-virus-covid19.pdf)
+Pour plus d’informations sur l’isolement : la brochure « [Je suis atteint par le coronavirus
+et je dois rester chez moi jusqu’à ma guérison](https://www.santepubliquefrance.fr/content/download/405765/document_file/477240_spf00003517.pdf) » de *Santé publique France*.
