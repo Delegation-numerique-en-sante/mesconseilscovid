@@ -9,7 +9,7 @@ describe('Thématiques', function () {
 
         assert.equal(
             await page.title(),
-            'Enfants et adolescents : vaccination et scolarité — Mes Conseils Covid'
+            'Conseils pour mon enfant — Mes Conseils Covid'
         )
     })
 

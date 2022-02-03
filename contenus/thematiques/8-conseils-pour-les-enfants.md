@@ -1,4 +1,4 @@
-# Enfants et adolescents : vaccination et scolarité
+# Conseils pour mon enfant
 
 <img src="illustrations/pediatriegeneral.svg">
 
