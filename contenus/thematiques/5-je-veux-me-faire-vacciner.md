@@ -233,6 +233,18 @@
     Vous pouvez aussi acheter votre vaccin anti-grippe en pharmacie et venir avec au **centre de vaccination** le jour de votre rendez-vous de rappel vaccinal contre la Covid.
 
 
+.. question:: Faut-il que je reçoive une dose de rappel si ma sérologie (examen sérologique) est positive ?
+    :level: 3
+
+    Si votre sérologie Covid-19 est positive, cela indique que vous avez été contaminé(e) ou vacciné(e) contre la Covid-19, mais **cela ne signifie pas que vous êtes protégé(e)**.
+
+    En effet, pour le moment, les scientifiques ne savent pas quel taux d’anticorps est nécessaire pour garantir l’immunité d’une personne contre une nouvelle contamination.
+
+    Même si votre sérologie est positive, et que votre taux d’anticorps est jugé relativement élevé, **la Haute Autorité de Santé préconise actuellement de faire un rappel vaccinal**.
+
+    La sérologie positive ne permet pas d’obtenir un passe vaccinal ou sanitaire.
+
+
 ## La vaccination initiale (schéma vaccinal à 1 ou 2 doses)
 
  <div class="voir-aussi">
