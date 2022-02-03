@@ -69,6 +69,7 @@ const CACHE_FILES = [
     'illustrations/gestesbarrieres.svg',
     'illustrations/grossesse.svg',
     'illustrations/isolement.svg',
+    'illustrations/jeunes.svg',
     'illustrations/nom.svg',
     'illustrations/pass_sanitaire.svg',
     'illustrations/pediatrieecole.svg',

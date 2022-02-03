@@ -176,6 +176,7 @@ def service_worker():
         "illustrations/grossesse.png",
         "illustrations/isolement.png",
         "illustrations/isolement-foyer-malade.png",
+        "illustrations/jeunes.png",
         "illustrations/pass_sanitaire.png",
         "illustrations/pediatriemedical.png",
         "illustrations/mesconseilscovid.png",
