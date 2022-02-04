@@ -31,7 +31,7 @@
     * si vous avez été vacciné(e) avec les vaccins Pfizer, Moderna ou AstraZeneca : votre dernière dose doit dater d’il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*) ;
     * si vous avez été vacciné(e) avec le vaccin Janssen : vous devez avoir reçu la **dose aditionnelle** il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*).
 
-    Si vous avez reçu votre première dose au plus tard le 15 février, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez bénéficier d’un *passe vaccinal temporaire* (voir [ci-dessous](#je-suis-en-cours-de-vaccination-comment-obtenir-un-passe-vaccinal-temporaire)).
+    Si vous avez reçu votre première dose au plus tard le 15 février, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez bénéficier d’un *passe vaccinal temporaire* (voir [ci-dessous](#je-suis-en-cours-de-vaccination-comment-obtenir-un-passe-vaccinal-temporaire-pass)).
 
     <div class="voir-aussi">
 
@@ -45,9 +45,10 @@
     :level: 3
     :expires: 15 février 2022
 
-       Si vous avez reçu votre première dose il y a **moins de 28 jours** et **au plus tard le 15 février**, vous pouvez obtenir un passe vaccinal valable 24 H (appelé **Pass+**) en combinant votre **attestation de première dose** avec un **test de dépistage négatif** de moins de 24 h.
-    
+    Si vous avez reçu votre première dose il y a **moins de 28 jours** et **au plus tard le 15 février**, vous pouvez obtenir un passe vaccinal valable 24 h (appelé **Pass+**) en combinant votre **attestation de première dose** avec un **test de dépistage négatif** de moins de 24 h.
+
     Vous pouvez associer les 2 certificats dans la rubrique Carnet de votre application TousAntiCovid.
+
 
 .. question:: Je ne suis pas encore vacciné(e). Combien de doses dois-je recevoir pour obtenir mon passe vaccinal ?
     :level: 3
