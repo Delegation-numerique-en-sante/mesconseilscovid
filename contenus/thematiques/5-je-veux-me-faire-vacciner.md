@@ -236,13 +236,13 @@
 .. question:: Faut-il que je reçoive une dose de rappel si ma sérologie (examen sérologique) est positive ?
     :level: 3
 
-    Si votre sérologie Covid-19 est positive, cela indique que vous avez été contaminé(e) ou vacciné(e) contre la Covid-19, mais **cela ne signifie pas que vous êtes protégé(e)**.
+    Si votre sérologie Covid-19 est positive, cela indique que vous avez été contaminé(e) et/ou vacciné(e) contre la Covid-19, mais **cela ne signifie pas forcément que vous êtes protégé(e)**.
 
-    En effet, pour le moment, les scientifiques ne savent pas quel taux d’anticorps est nécessaire pour garantir l’immunité d’une personne contre une nouvelle contamination.
+    En effet, pour le moment, les scientifiques ne savent pas faire un lien direct entre le taux d’anticorps et le niveau de protection contre une nouvelle contamination.
 
     Même si votre sérologie est positive, et que votre taux d’anticorps est jugé relativement élevé, **la Haute Autorité de Santé préconise actuellement de faire un rappel vaccinal**.
 
-    La sérologie positive ne permet pas d’obtenir un passe vaccinal ou sanitaire.
+    Une sérologie positive ne permet pas d’obtenir un passe vaccinal ou sanitaire.
 
 
 ## La vaccination initiale (schéma vaccinal à 1 ou 2 doses)
