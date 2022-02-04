@@ -27,21 +27,21 @@ LIVERELOAD_DELAY = 0.1
 ROOT_DIR = "dist/"
 
 PATHS_TO_WATCH = {
-    "build.py": [build.thematiques, build.index],
-    "construction/*.py": [build.thematiques, build.index],
-    "construction/directives/*.py": [build.thematiques, build.index],
-    "contenus/actualites/*.toml": [build.index],
-    "contenus/config/*.md": [build.index],
-    "contenus/conseils/*.md": [build.index],
-    "contenus/meta/*.md": [build.thematiques, build.index],
-    "contenus/questions/*.md": [build.index],
-    "contenus/réponses/*.md": [build.index],
-    "contenus/statuts/*.md": [build.index],
-    "contenus/suivi/*.md": [build.index],
-    "contenus/thematiques/*.md": [build.thematiques, build.index],
-    "contenus/thematiques/formulaires/*.md": [build.thematiques],
-    "templates/index.html": [build.index],
-    "templates/thematique.html": [build.thematiques],
+    "build.py": ["thematiques", "index"],
+    "construction/*.py": ["thematiques", "index"],
+    "construction/directives/*.py": ["thematiques", "index"],
+    "contenus/actualites/*.toml": ["index"],
+    "contenus/config/*.md": ["index"],
+    "contenus/conseils/*.md": ["index"],
+    "contenus/meta/*.md": ["thematiques", "index"],
+    "contenus/questions/*.md": ["index"],
+    "contenus/réponses/*.md": ["index"],
+    "contenus/statuts/*.md": ["index"],
+    "contenus/suivi/*.md": ["index"],
+    "contenus/thematiques/*.md": ["thematiques", "index"],
+    "contenus/thematiques/formulaires/*.md": ["thematiques"],
+    "templates/index.html": ["index"],
+    "templates/thematique.html": ["thematiques"],
 }
 
 
@@ -100,13 +100,16 @@ class CustomServer(Server):
 def serve_http(address, port, open_, watch, bundler_watch_filename):
     server = CustomServer()
     if watch:
-        def call_funcs(funcs):
+        def build_targets(targets):
             def callback():
-                for func in funcs:
-                    func()
+                for target in targets:
+                    if target == "index":
+                        build.index()
+                    if target == "thematiques":
+                        build.thematiques()
             return callback
-        for path, funcs in PATHS_TO_WATCH.items():
-            server.watch(path, call_funcs(funcs), delay="forever")
+        for path, targets in PATHS_TO_WATCH.items():
+            server.watch(path, build_targets(targets), delay="forever")
     server.watch(bundler_watch_filename, delay=LIVERELOAD_DELAY)
     server.serve(
         host=address,
@@ -124,22 +127,10 @@ def serve_https(address, port, open_, watch, ssl_cert, ssl_key):
         def log_request(self, *args, **kwargs):
             pass
 
-    class BuildThematiquesEventHandler(ShellCommandTrick):
-        def __init__(self):
+    class BuildEventHandler(ShellCommandTrick):
+        def __init__(self, targets):
             super().__init__(
-                shell_command="python3 build.py thematiques",
-                wait_for_process=True,
-                drop_during_process=True,
-            )
-
-        def on_any_event(self, event):
-            if event.event_type == "modified" and not event.is_directory:
-                super().on_any_event(event)
-
-    class BuildIndexEventHandler(ShellCommandTrick):
-        def __init__(self):
-            super().__init__(
-                shell_command="python3 build.py index",
+                shell_command="python3 build.py " + " ".join(targets),
                 wait_for_process=True,
                 drop_during_process=True,
             )
@@ -151,15 +142,10 @@ def serve_https(address, port, open_, watch, ssl_cert, ssl_key):
     if watch:
         observer = Observer()
 
-        thematiques_handler = BuildThematiquesEventHandler()
-        for pattern in PATHS_TO_WATCH_FOR_THEMATIQUES:
-            directory = Path(pattern).parts[0]
-            observer.schedule(thematiques_handler, directory, recursive=True)
-
-        index_handler = BuildIndexEventHandler()
-        for pattern in PATHS_TO_WATCH_FOR_THEMATIQUES:
-            directory = Path(pattern).parts[0]
-            observer.schedule(index_handler, directory, recursive=True)
+        for path, targets in PATHS_TO_WATCH.items():
+            directory = Path(path).parts[0]
+            handler = BuildEventHandler(targets)
+            observer.schedule(handler, directory, recursive=True)
 
         observer.start()
 
