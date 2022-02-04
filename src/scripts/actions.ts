@@ -47,7 +47,7 @@ export function bindCalendar(element: HTMLElement, profil: Profil) {
 
 export function bindImpression(element: HTMLElement, app: App) {
     const printButton = element.querySelector('.js-impression')
-    printButton.addEventListener('click', (event) => {
+    printButton?.addEventListener('click', (event) => {
         event.preventDefault()
         app.plausible('Impression')
         try {
