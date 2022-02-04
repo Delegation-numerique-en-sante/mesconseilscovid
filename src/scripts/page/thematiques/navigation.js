@@ -1,6 +1,8 @@
 import { getLocationPathName } from '../../plausible'
 
 export function estPageThematique() {
+    // https://github.com/amilajack/eslint-plugin-compat/discussions/514
+    // eslint-disable-next-line compat/compat
     return document.body.classList.contains('page-thematique')
 }
 

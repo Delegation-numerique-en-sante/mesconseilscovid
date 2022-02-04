@@ -26,6 +26,8 @@ export function bindFeedback(component, app) {
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
                 envoieLesRemarques({
+                    // https://github.com/amilajack/eslint-plugin-compat/discussions/514
+                    // eslint-disable-next-line compat/compat
                     feedbackHost: document.body.dataset.statsUrl,
                     kind: feedback,
                     message: event.target.elements.message.value,

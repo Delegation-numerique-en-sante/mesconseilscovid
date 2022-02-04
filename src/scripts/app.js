@@ -296,6 +296,8 @@ export default class App {
             return this._plausible(eventName, options)
         } catch (e) {
             new Image().src =
+                // https://github.com/amilajack/eslint-plugin-compat/discussions/514
+                // eslint-disable-next-line compat/compat
                 document.body.dataset.statsUrl +
                 '/api/error?message=' +
                 encodeURIComponent(e.message)

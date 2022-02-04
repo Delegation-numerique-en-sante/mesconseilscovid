@@ -59,7 +59,6 @@
     ]
   },
   "browserslist": [
-    "since 2016",
-    "not Firefox < 60"
+    "since 2016"
   ]
 }
