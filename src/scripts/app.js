@@ -184,14 +184,10 @@ export default class App {
                         (symptomes === 'Contact pas vraiment à risque' ||
                             symptomes === 'Rien de tout ça'))
                 ) {
-                    promises.push(
-                        this.creerProfilType(depistage, symptomes, true, false)
-                    )
-                    promises.push(
-                        this.creerProfilType(depistage, symptomes, false, true)
-                    )
+                    promises.push(this.creerProfilType(depistage, symptomes, true))
+                    promises.push(this.creerProfilType(depistage, symptomes, false))
                 }
-                promises.push(this.creerProfilType(depistage, symptomes, false, false))
+                promises.push(this.creerProfilType(depistage, symptomes, false))
             }
         }
         return Promise.all(promises)
