@@ -140,24 +140,40 @@ main {
     }
 }
 
+/*#region Unsupported browsers */
+
+body {
+    /* Add enough space to display the banner without covering the bottom content */
+    margin-bottom: 20rem;
+}
 .unsupported-browser-banner {
-    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     text-align: center;
-    background: #000091;
-    color: white;
+    background: #ffcc9f;
     margin: 0 auto;
     padding: 1rem;
-    max-width: 60rem;
 }
 
-/* Affiche la bannière seulement pour Internet Explorer
-   https://dev.to/jakedohm_34/adding-an-update-browser-banner-for-legacy-browsers-39n7
+/*
+All browsers released in 2016 support @supports
+so we use a very simple declaration to test @supports support.
+https://caniuse.com/css-featurequeries
+
+And all declarations are there to revert the presence of the banner.
 */
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+@supports (display: block) {
+    body {
+        margin-bottom: 0;
+    }
     .unsupported-browser-banner {
-        display: block;
+        display: none;
     }
 }
+/*#endregion*/
 
 .nouveau-profil {
     background-image: url('plus-circle.svg');
@@ -380,7 +396,7 @@ legend h1 {
     position: sticky;
     top: 0;
     background: white;
-    z-index: 10; /* Ensure it remains on top of other elements. */
+    z-index: 1; /* Ensure it remains on top of other elements. */
 }
 .page-thematique .conseils details .explications {
     margin: 0.75rem;
