@@ -46,7 +46,7 @@
     * personnes sortant de **quarantaine** suite à un voyage dans un pays classé rouge ;
     * personnes concernées par des campagnes de **dépistage collectif**, organisées par les Agences régionales de santé ou au sein des établissements de l’Éducation nationale par exemple.
 
-    **En dehors de ces cas**, les tests sont payants (**43,89 €** pour un test PCR, de **22 à 45 €** pour un test antigénique et **12,90 €** pour un autotest supervisé).
+    **En dehors de ces cas**, les tests sont payants (**41,19 €** pour un test PCR, de **22 à 45 €** pour un test antigénique et **12,90 €** pour un autotest supervisé).
 
     Pour faire face à la situation épidémique en **Guadeloupe**, en **Guyane**, en **Martinique** et à **Mayotte**, les tests de dépistage restent pris en charge par l’Assurance maladie jusqu’à nouvel ordre.
 
