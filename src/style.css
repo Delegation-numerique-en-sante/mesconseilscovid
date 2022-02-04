@@ -140,7 +140,7 @@ main {
     }
 }
 
-.ie-banner {
+.unsupported-browser-banner {
     display: none;
     text-align: center;
     background: #000091;
@@ -154,7 +154,7 @@ main {
    https://dev.to/jakedohm_34/adding-an-update-browser-banner-for-legacy-browsers-39n7
 */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-    .ie-banner {
+    .unsupported-browser-banner {
         display: block;
     }
 }
