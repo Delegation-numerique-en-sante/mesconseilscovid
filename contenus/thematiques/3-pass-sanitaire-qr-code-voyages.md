@@ -41,12 +41,13 @@
     </div>
 
 
-.. question:: Je suis en cours de vaccination, comment obtenir un passe vaccinal temporaire ?
+.. question:: Je suis en cours de vaccination, comment obtenir un passe vaccinal temporaire (Pass+) ?
     :level: 3
     :expires: 15 février 2022
 
-    Si vous avez reçu votre première dose **au plus tard le 15 février**, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, alors vous pouvez, en attendant, présenter un **test de dépistage négatif** de moins de 24 h (*passe vaccinal temporaire*) en **complément** de votre attestation de première dose pour participer à certaines activités.
-
+       Si vous avez reçu votre première dose il y a **moins de 28 jours** et **au plus tard le 15 février**, vous pouvez obtenir un passe vaccinal valable 24 H (appelé **Pass+**) en combinant votre **attestation de première dose** avec un **test de dépistage négatif** de moins de 24 h.
+    
+    Vous pouvez associer les 2 certificats dans la rubrique Carnet de votre application TousAntiCovid.
 
 .. question:: Je ne suis pas encore vacciné(e). Combien de doses dois-je recevoir pour obtenir mon passe vaccinal ?
     :level: 3
