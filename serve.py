@@ -111,11 +111,15 @@ def serve_http(address, port, open_, watch, bundler_watch_filename):
         for path, targets in PATHS_TO_WATCH.items():
             server.watch(path, build_targets(targets), delay="forever")
     server.watch(bundler_watch_filename, delay=LIVERELOAD_DELAY)
+
+    if open_:
+        open_address = '127.0.0.1' if address == '0.0.0.0' else address
+        webbrowser.open(f"http://{open_address}:{port}")
+
     server.serve(
         host=address,
         port=port,
         root=ROOT_DIR,
-        open_url_delay=0.1 if open_ else None,
     )
 
 
@@ -149,11 +153,11 @@ def serve_https(address, port, open_, watch, ssl_cert, ssl_key):
 
         observer.start()
 
-    url = f"https://{address}:{port}/"
-    print(f"Listening on {url}")
+    print(f"Listening on https://{address}:{port}/")
 
     if open_:
-        webbrowser.open(url)
+        open_address = '127.0.0.1' if address == '0.0.0.0' else address
+        webbrowser.open(f"https://{open_address}:{port}")
 
     logging.getLogger()
     httpd = HTTPServer((address, port), MyHTTPRequestHandler)
