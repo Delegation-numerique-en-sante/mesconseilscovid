@@ -441,17 +441,37 @@
 .. question:: Je suis enceinte, puis-je me faire vacciner ?
     :level: 3
 
-    **Oui**, d’autant que la grossesse vous expose à des formes plus sévères de la Covid. Il n’y a pas de contre-indication à la vaccination des femmes enceintes et vous pouvez vous faire vacciner avec un vaccin à ARN messager (*Pfizer*, *Moderna*) **dès le premier trimestre de grossesse**.
+    **Oui**, d’autant que la grossesse vous expose à des formes plus sévères de la Covid. Il n’y a pas de contre-indication à la vaccination des femmes enceintes et vous pouvez vous faire vacciner avec un vaccin à ARN messager (*Pfizer*, *Moderna*) **dès le 1<sup>er</sup> trimestre de grossesse**.
 
     Si vous êtes âgée de **moins de 30 ans**, la Haute autorité de santé (HAS) recommande de privilégier le vaccin **Pfizer** lorsque c’est possible (en raison d’un risque accru de myocardite avec le vaccin *Moderna* chez les personnes les plus jeunes).
 
-    L’**obligation vaccinale** requise pour certaines professions (santé, médico-social, restauration…) n’est pas exigée des femmes enceintes avant le **2<sup>e</sup> trimestre de grossesse**.
+    L’**obligation vaccinale** requise pour certaines professions (santé, médico-social, restauration…) n’est pas exigée des femmes enceintes avant le **2<sup>e</sup> trimestre de grossesse**, mais elle reste fortement recommandée dès le 1<sup>er</sup> trimestre.
 
     <div class="voir-aussi">
 
     - [Vaccins contre la Covid 19 — Grossesse et allaitement](https://lecrat.fr/spip.php?page=article&id_article=1123) sur le site du <abbr title="Centre de Référence sur les Agents Tératogènes">CRAT</abbr>
 
     </div>
+
+
+.. question:: Pourquoi me faire vacciner si je suis enceinte ?
+    :level: 3
+
+    Les femmes enceintes non-vaccinées sont particulièrement **à risque** en cas d’infection à la Covid. En effet, la grossesse augmente le risque de développer une **forme grave** de la maladie, c’est-à-dire pouvant nécessiter une admission à l’hôpital, voire en soins critiques.
+
+    Une infection à la Covid pendant la grossesse présente aussi des **risques pour le bébé** : elle augmente le risque de naissance prématurée, de perte du fœtus, ou d’admission du nouveau-né en soins critiques.
+
+    La vaccination vous **protège efficacement**, vous et votre bébé, contre le risque d’infection pendant votre grossesse. Elle continue aussi à protéger le bébé après la naissance, grâce aux anticorps de la mère transférés via le placenta.
+
+
+.. question:: Le vaccin présente-t-il un risque pour moi ou mon bébé si je suis enceinte ?
+    :level: 3
+
+    **Non**. Le vaccin, que ce soit la vaccination initiale ou la dose de rappel, ne comporte **pas de risque particulier** pour les femmes enceintes.
+
+    Le fœtus n’est **pas exposé** au vaccin, car l’ARNm ne circule pas dans le sang maternel ni dans le placenta, et il n’est pas non plus intégré dans le noyau des cellules.
+
+    Des **études scientifiques** dans plusieurs pays ont montré qu’il n’y avait **pas de contre-indications** à la vaccination des femmes enceintes, quel que soit le trimestre de la grossesse. Elles ont montré que la vaccination **n’avait pas d’effet** sur la fertilité des femmes, ni sur le fœtus, et qu’elle **n’augmentait pas** le risque d’événements indésirables pendant la grossesse (comme une fausse couche ou une naissance prématurée), et ce même dans le cas d’une fécondation in vitro.
 
 
 .. question:: J’allaite mon enfant, puis-je me faire vacciner ?
