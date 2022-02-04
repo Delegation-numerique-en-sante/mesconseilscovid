@@ -37,14 +37,25 @@ import { registerPlausible } from './plausible'
 import { registerATInternet } from './atinternet'
 
 export default class App {
-    constructor(suiviImages) {
+    profil: Profil
+    stockage: StockageLocal
+    questionnaire: Questionnaire
+    suiviImages: string[]
+    source: any
+    _plausibleTrackingEvents: string[]
+    _plausible: Function
+    atinternet: Function
+    router: Router
+    updater: Updater
+
+    constructor(suiviImages: string[]) {
         this.profil = new Profil()
         this.stockage = new StockageLocal()
         this.questionnaire = new Questionnaire()
         this.suiviImages = suiviImages
     }
     initStats() {
-        return this.initSource().then((source) => {
+        return this.initSource().then((source: string) => {
             this.source = source
             this._plausibleTrackingEvents = []
             this._plausible = registerPlausible(window)
@@ -93,14 +104,14 @@ export default class App {
         this.router.addAppRoute('suivihistorique', suivihistorique, {
             beforeFunc: beforeSuiviHistorique,
         })
-        this.router.addRoute('conditionsutilisation', (element) => {
+        this.router.addRoute('conditionsutilisation', (element: HTMLElement) => {
             if (this.profil.isComplete()) {
                 showElement(element.querySelector('.js-profil-full'))
                 hideElement(element.querySelector('.js-profil-empty'))
             }
         })
 
-        this.router.addRoute('nouvelleversiondisponible', (element) => {
+        this.router.addRoute('nouvelleversiondisponible', (element: HTMLElement) => {
             const route = this.router.lastRouteResolved()
             const urlParams = new URLSearchParams(route.query)
             const origine = urlParams.get('origine')
@@ -114,15 +125,15 @@ export default class App {
             new RegExp('^(symptomesactuels|symptomespasses|debutsymptomes)$'),
             () => {},
             {
-                before: (done) => {
-                    this.redirectTo('symptomes')
+                before: (done: Function) => {
+                    this.router.redirectTo('symptomes')
                     done(false)
                 },
             }
         )
         this.router.navigo.on(new RegExp('^(residence|foyer|activitepro)$'), () => {}, {
-            before: (done) => {
-                this.redirectTo('situation')
+            before: (done: Function) => {
+                this.router.redirectTo('situation')
                 done(false)
             },
         })
@@ -130,21 +141,21 @@ export default class App {
             new RegExp('^(caracteristiques|antecedents)$'),
             () => {},
             {
-                before: (done) => {
-                    this.redirectTo('sante')
+                before: (done: Function) => {
+                    this.router.redirectTo('sante')
                     done(false)
                 },
             }
         )
         this.router.navigo.on('pediatrie', () => {}, {
-            before: function (done) {
+            before: function (done: Function) {
                 window.location.replace('conseils-pour-les-enfants.html')
                 done(false)
             },
         })
     }
     chargerProfilActuel() {
-        return this.stockage.getProfilActuel().then((nom) => {
+        return this.stockage.getProfilActuel().then((nom: string | null) => {
             if (nom !== null) {
                 return this.chargerProfil(nom)
             }
@@ -153,7 +164,7 @@ export default class App {
     enregistrerProfilActuel() {
         return this.stockage.enregistrer(this.profil)
     }
-    creerProfil(nom) {
+    creerProfil(nom: string) {
         this.profil.resetData(nom)
         return this.stockage.setProfilActuel(nom).then(() => {
             return this.enregistrerProfilActuel()
@@ -184,24 +195,20 @@ export default class App {
                         (symptomes === 'Contact pas vraiment à risque' ||
                             symptomes === 'Rien de tout ça'))
                 ) {
-                    promises.push(
-                        this.creerProfilType(depistage, symptomes, true, false)
-                    )
-                    promises.push(
-                        this.creerProfilType(depistage, symptomes, false, true)
-                    )
+                    promises.push(this.creerProfilType(depistage, symptomes, true))
+                    promises.push(this.creerProfilType(depistage, symptomes, false))
                 }
-                promises.push(this.creerProfilType(depistage, symptomes, false, false))
+                promises.push(this.creerProfilType(depistage, symptomes, false))
             }
         }
         return Promise.all(promises)
     }
-    creerProfilType(depistage, symptomes, personneFragile) {
+    creerProfilType(depistage: string, symptomes: string, personneFragile: boolean) {
         let nom = `${depistage} + ${symptomes}`
         if (personneFragile) {
             nom = `${nom} + personne fragile`
         }
-        return this.stockage.getProfil(nom).then((profil) => {
+        return this.stockage.getProfil(nom).then((profil: Profil | null) => {
             if (profil === null) {
                 profil = new Profil(nom)
                 profil.fillTestData(depistage, symptomes, personneFragile)
@@ -211,9 +218,9 @@ export default class App {
             }
         })
     }
-    basculerVersProfil(nom) {
+    basculerVersProfil(nom: string) {
         return this.stockage.setProfilActuel(nom).then(() => {
-            return this.stockage.getProfil(nom).then((profil) => {
+            return this.stockage.getProfil(nom).then((profil: Profil | null) => {
                 if (profil) {
                     return this.chargerProfil(nom)
                 } else {
@@ -222,11 +229,11 @@ export default class App {
             })
         })
     }
-    chargerProfil(nom) {
+    chargerProfil(nom: string) {
         this.profil.nom = nom
         return this.stockage.charger(this.profil)
     }
-    supprimerProfil(nom) {
+    supprimerProfil(nom: string) {
         return this.stockage.supprimer(nom).then(() => {
             if (this.profil.nom === nom) {
                 this.profil.nom = undefined
@@ -234,8 +241,8 @@ export default class App {
             }
         })
     }
-    supprimerSuivi(nom) {
-        return this.basculerVersProfil(nom).then((profil) => {
+    supprimerSuivi(nom: string) {
+        return this.basculerVersProfil(nom).then((profil: Profil) => {
             profil.resetSuivi()
             return this.stockage.enregistrer(profil)
         })
@@ -245,7 +252,7 @@ export default class App {
             this.profil.resetData()
         })
     }
-    goToNextPage(currentPage) {
+    goToNextPage(currentPage: string) {
         const nextPage = this.questionnaire.nextPage(currentPage, this.profil)
         this.router.navigate(nextPage)
     }
@@ -269,18 +276,22 @@ export default class App {
         ]
         this.enregistrerProfilActuel()
     }
-    trackPageView(pageName) {
+    trackPageView(pageName: string) {
         this.plausible('pageview', {
             lang: this._preferedLanguages(),
         })
         this.atinternet(pageName)
     }
-    _preferedLanguages() {
+    _preferedLanguages(): string[] {
         // cf. https://stackoverflow.com/a/25603630
+        // @ts-expect-error
         // eslint-disable-next-line compat/compat
         return navigator.languages || [navigator.language || navigator.userLanguage]
     }
-    plausible(eventName, props = {}) {
+    plausible(
+        eventName: string,
+        props: { source?: string; profil?: string; lang?: string[] } = {}
+    ) {
         // Ajoute la source de la visite.
         if (this.source) {
             props['source'] = this.source
@@ -291,18 +302,24 @@ export default class App {
         }
         return this._envoieEvenementPlausible(eventName, props)
     }
-    _envoieEvenementPlausible(eventName, props) {
-        const options = {}
+    _envoieEvenementPlausible(eventName: string, props: {}) {
+        const options: { props?: {} } = {}
         if (Object.keys(props).length > 0) {
             options['props'] = props
         }
         try {
             return this._plausible(eventName, options)
-        } catch (e) {
+        } catch (error) {
+            let message
+            if (error instanceof Error) {
+                message = error.message
+            } else {
+                message = String(error)
+            }
             new Image().src =
                 document.body.dataset.statsUrl +
                 '/api/error?message=' +
-                encodeURIComponent(e.message)
+                encodeURIComponent(message)
         }
     }
     premierDemarrageFormulaire() {
