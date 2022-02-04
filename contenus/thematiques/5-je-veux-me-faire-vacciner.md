@@ -119,7 +119,22 @@
     - [Je suis cas contact Covid, que faire ?](cas-contact-a-risque.html)
 
     </div>
+    
+.. question:: Faut-il que je reçoive une dose de rappel si ma sérologie (test sérologique) est positive ?
+    
+    Si votre sérologie Covid-19 est positive, cela veut dire que vous avez été **contaminé ou vacciné** contre la Covid-19, mais cela ne signifie pas que vous êtes protégé.
+    
+    En effet, pour le moment, les scientifiques ne savent pas à partir de quel **niveau d'anticorps** l'immunité d'une personne contre une nouvelle contamination serait garantie.
+    
+    **Même si** votre **sérologie est positive**, et que votre taux d'anticorps est jugé relativement élevé, la Haute Autorité de Santé préconise actuellement de **faire un rappel vaccinal**.
+    
+    La sérologie positive n'est **pas un certificat de rétablissement** et ne permet pas d'obtenir pour le passe vaccinal ou sanitaire. Pour cela, il faut un résultat positif à un test antigénique ou PCR.
+    
+     <div class="voir-aussi">
 
+    - [Commment obtenir un certificat de rétablissement ?](pass-sanitaire-qr-code-voyages.html#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)
+
+    </div>
 
 .. question:: Quels sont les facteurs de risque de formes graves de Covid ?
     :level: 3
