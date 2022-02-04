@@ -1,5 +1,12 @@
 # Changelog
 
+## 2022-02-04
+
+* ajout de questions sur la vaccination et la grossesse
+* introduction de la notion de passe temporaire (Pass+)
+* explications en cas de sérologie positive
+* ajout du numéro vert de l’assistance TousAntiCovid
+
 ## 2022-02-02
 
 * ajout d’une page thématique dédiée aux jeunes
