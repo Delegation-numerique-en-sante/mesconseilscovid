@@ -1,7 +1,10 @@
+import type App from './app'
+import type Profil from './profil'
+
 import ICS from './ics'
 import { CHEMIN_ACCUEIL } from './router'
 
-export function bindCalendar(element, profil) {
+export function bindCalendar(element: HTMLElement, profil: Profil) {
     const ics = new ICS(navigator.appVersion)
     const duration: string = 1 // heures bloquées sur le calendrier.
     const urlSuivi = 'https://mesconseilscovid.sante.gouv.fr/#suiviintroduction'
@@ -42,7 +45,7 @@ export function bindCalendar(element, profil) {
     })
 }
 
-export function bindImpression(element, app) {
+export function bindImpression(element: HTMLElement, app: App) {
     const printButton = element.querySelector('.js-impression')
     printButton.addEventListener('click', (event) => {
         event.preventDefault()
@@ -59,7 +62,7 @@ export function bindImpression(element, app) {
     })
 }
 
-export function bindSuppressionTotale(element, app) {
+export function bindSuppressionTotale(element: HTMLElement, app: App) {
     element.addEventListener('click', (event) => {
         event.preventDefault()
         app.plausible('Suppression totale')
