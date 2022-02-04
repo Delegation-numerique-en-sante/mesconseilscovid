@@ -119,22 +119,25 @@
     - [Je suis cas contact Covid, que faire ?](cas-contact-a-risque.html)
 
     </div>
-    
+
+
 .. question:: Faut-il que je reçoive une dose de rappel si ma sérologie (test sérologique) est positive ?
-    
-    Si votre sérologie Covid-19 est positive, cela veut dire que vous avez été **contaminé ou vacciné** contre la Covid-19, mais cela ne signifie pas que vous êtes protégé.
-    
-    En effet, pour le moment, les scientifiques ne savent pas à partir de quel **niveau d'anticorps** l'immunité d'une personne contre une nouvelle contamination serait garantie.
-    
-    **Même si** votre **sérologie est positive**, et que votre taux d'anticorps est jugé relativement élevé, la Haute Autorité de Santé préconise actuellement de **faire un rappel vaccinal**.
-    
-    La sérologie positive n'est **pas un certificat de rétablissement** et ne permet pas d'obtenir pour le passe vaccinal ou sanitaire. Pour cela, il faut un résultat positif à un test antigénique ou PCR.
-    
+    :level: 3
+
+    Si votre sérologie Covid-19 est **positive**, cela veut dire que vous avez déjà été **contaminé(e)** et/ou **vacciné(e)** contre la Covid, mais cela ne signifie pas forcément que vous êtes **efficacement protégé(e)**.
+
+    En effet, pour le moment, les scientifiques ne savent pas faire un lien direct entre le **taux d’anticorps** et le **niveau de protection** contre une nouvelle contamination.
+
+    Même si votre sérologie est **positive**, et que votre taux d’anticorps est jugé relativement élevé, la Haute Autorité de Santé préconise actuellement de **faire un rappel vaccinal**.
+
+    Notez que la sérologie positive n’est **pas un certificat de rétablissement** et ne peut pas tenir lieu de passe vaccinal ou sanitaire. Pour cela, il faut un résultat positif à un test antigénique ou à un test PCR.
+
      <div class="voir-aussi">
 
     - [Commment obtenir un certificat de rétablissement ?](pass-sanitaire-qr-code-voyages.html#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)
 
     </div>
+
 
 .. question:: Quels sont les facteurs de risque de formes graves de Covid ?
     :level: 3
