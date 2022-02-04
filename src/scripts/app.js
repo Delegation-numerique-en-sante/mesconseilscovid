@@ -115,14 +115,14 @@ export default class App {
             () => {},
             {
                 before: (done) => {
-                    this.redirectTo('symptomes')
+                    this.router.redirectTo('symptomes')
                     done(false)
                 },
             }
         )
         this.router.navigo.on(new RegExp('^(residence|foyer|activitepro)$'), () => {}, {
             before: (done) => {
-                this.redirectTo('situation')
+                this.router.redirectTo('situation')
                 done(false)
             },
         })
@@ -131,7 +131,7 @@ export default class App {
             () => {},
             {
                 before: (done) => {
-                    this.redirectTo('sante')
+                    this.router.redirectTo('sante')
                     done(false)
                 },
             }
