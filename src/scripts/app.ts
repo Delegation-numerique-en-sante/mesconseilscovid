@@ -236,7 +236,7 @@ export default class App {
     supprimerProfil(nom: string) {
         return this.stockage.supprimer(nom).then(() => {
             if (this.profil.nom === nom) {
-                this.profil.nom = undefined
+                this.profil.nom = ''
                 this.stockage.setProfilActuel(undefined)
             }
         })

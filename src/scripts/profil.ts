@@ -1,3 +1,5 @@
+import type Questionnaire from './questionnaire'
+
 import { differenceEnJours, joursAvant } from './utils'
 import { createElementFromHTML, safeHtml } from './affichage'
 
@@ -5,10 +7,102 @@ const JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF = 7
 const JOURS_DE_VALIDITE_DEPISTAGE_POSITIF = 30
 const JOURS_DE_VALIDITE_DEPISTAGE_EN_ATTENTE = 7
 
+type Etat = {
+    date: Date
+    symptomes: boolean
+    essoufflement: string
+    etatGeneral: string
+    etatPsychologique: string
+    alimentationHydratation: string
+    fievre: string
+    diarrheeVomissements: string
+    mauxDeTete: string
+    toux: string
+}
+
 export default class Profil {
-    constructor(nom, data) {
+    nom: string
+    _suivi_start_date: string | undefined
+    _symptomes_start_date: string | undefined
+    _depistage_start_date: string | undefined
+    _covid_passee_date: string | undefined
+    _deconfinement_date: string | undefined
+    _questionnaire_start_date: string | undefined
+    _questionnaire_completion_date: string | undefined
+
+    suivi: Etat[]
+
+    departement: string | undefined
+
+    activite_pro: boolean | undefined
+    activite_pro_sante: boolean | undefined
+
+    foyer_autres_personnes: boolean | undefined
+    foyer_enfants: boolean | undefined
+
+    age: number | undefined
+    grossesse_3e_trimestre: boolean | undefined
+    poids: number | undefined
+    taille: number | undefined
+
+    antecedent_cardio: boolean | undefined
+    antecedent_diabete: boolean | undefined
+    antecedent_respi: boolean | undefined
+    antecedent_dialyse: boolean | undefined
+    antecedent_greffe: boolean | undefined
+    antecedent_cancer: boolean | undefined
+    antecedent_immunodep: boolean | undefined
+    antecedent_cirrhose: boolean | undefined
+    antecedent_drepano: boolean | undefined
+    antecedent_trisomie: boolean | undefined
+    antecedent_chronique_autre: boolean | undefined
+
+    symptomes_actuels: boolean | undefined
+    symptomes_actuels_temperature: boolean | undefined
+    symptomes_actuels_temperature_inconnue: boolean | undefined
+    symptomes_actuels_toux: boolean | undefined
+    symptomes_actuels_odorat: boolean | undefined
+    symptomes_actuels_douleurs: boolean | undefined
+    symptomes_actuels_diarrhee: boolean | undefined
+    symptomes_actuels_fatigue: boolean | undefined
+    symptomes_actuels_alimentation: boolean | undefined
+    symptomes_actuels_souffle: boolean | undefined
+    symptomes_actuels_autre: boolean | undefined
+
+    symptomes_passes: boolean | undefined
+
+    contact_a_risque: boolean | undefined
+    contact_a_risque_meme_lieu_de_vie: boolean | undefined
+    contact_a_risque_contact_direct: boolean | undefined
+    contact_a_risque_actes: boolean | undefined
+    contact_a_risque_espace_confine: boolean | undefined
+    contact_a_risque_tousse_eternue: boolean | undefined
+    contact_a_risque_meme_classe: boolean | undefined
+    contact_a_risque_stop_covid: boolean | undefined
+    contact_a_risque_assurance_maladie: boolean | undefined
+    contact_a_risque_autre: boolean | undefined
+    contact_a_risque_variante: string | undefined
+
+    depistage: boolean | undefined
+    depistage_type: string | undefined
+    depistage_resultat: string | undefined
+    depistage_variante: string | undefined
+
+    vaccins: boolean | string | undefined
+
+    covid_passee: boolean | undefined
+
+    suivi_active: boolean | undefined
+
+    // Legacy: to be removed once migrated.
+    questionnaire_started: boolean | undefined
+    questionnaire_completed: boolean | undefined
+    // End of Legacy
+
+    constructor(nom: string = 'mes_infos', data: {} = {}) {
         this.nom = nom
-        this.fillData(data || {})
+        this.suivi = []
+        this.fillData(data)
     }
 
     get suivi_start_date() {
@@ -86,7 +180,7 @@ export default class Profil {
         this.suivi = []
     }
 
-    resetData(nom) {
+    resetData(nom: string = 'mes_infos') {
         this.nom = nom
 
         this.departement = undefined
@@ -165,7 +259,83 @@ export default class Profil {
         this._questionnaire_completion_date = undefined
     }
 
-    fillData(data) {
+    fillData(data: {
+        _suivi_start_date?: string | undefined
+        _symptomes_start_date?: string | undefined
+        _depistage_start_date?: string | undefined
+        _covid_passee_date?: string | undefined
+        _deconfinement_date?: string | undefined
+        _questionnaire_start_date?: string | undefined
+        _questionnaire_completion_date?: string | undefined
+        suivi?: Etat[] | undefined
+
+        departement?: string | undefined
+
+        activite_pro?: boolean | undefined
+        activite_pro_sante?: boolean | undefined
+
+        foyer_autres_personnes?: boolean | undefined
+        foyer_enfants?: boolean | undefined
+
+        age?: number | undefined
+        grossesse_3e_trimestre?: boolean | undefined
+        poids?: number | undefined
+        taille?: number | undefined
+
+        antecedent_cardio?: boolean | undefined
+        antecedent_diabete?: boolean | undefined
+        antecedent_respi?: boolean | undefined
+        antecedent_dialyse?: boolean | undefined
+        antecedent_greffe?: boolean | undefined
+        antecedent_cancer?: boolean | undefined
+        antecedent_immunodep?: boolean | undefined
+        antecedent_cirrhose?: boolean | undefined
+        antecedent_drepano?: boolean | undefined
+        antecedent_trisomie?: boolean | undefined
+        antecedent_chronique_autre?: boolean | undefined
+
+        symptomes_actuels?: boolean | undefined
+        symptomes_actuels_temperature?: boolean | undefined
+        symptomes_actuels_temperature_inconnue?: boolean | undefined
+        symptomes_actuels_toux?: boolean | undefined
+        symptomes_actuels_odorat?: boolean | undefined
+        symptomes_actuels_douleurs?: boolean | undefined
+        symptomes_actuels_diarrhee?: boolean | undefined
+        symptomes_actuels_fatigue?: boolean | undefined
+        symptomes_actuels_alimentation?: boolean | undefined
+        symptomes_actuels_souffle?: boolean | undefined
+        symptomes_actuels_autre?: boolean | undefined
+
+        symptomes_passes?: boolean | undefined
+
+        contact_a_risque?: boolean | undefined
+        contact_a_risque_meme_lieu_de_vie?: boolean | undefined
+        contact_a_risque_contact_direct?: boolean | undefined
+        contact_a_risque_actes?: boolean | undefined
+        contact_a_risque_espace_confine?: boolean | undefined
+        contact_a_risque_tousse_eternue?: boolean | undefined
+        contact_a_risque_meme_classe?: boolean | undefined
+        contact_a_risque_stop_covid?: boolean | undefined
+        contact_a_risque_assurance_maladie?: boolean | undefined
+        contact_a_risque_autre?: boolean | undefined
+        contact_a_risque_variante?: string | undefined
+
+        depistage?: boolean | undefined
+        depistage_type?: string | undefined
+        depistage_resultat?: string | undefined
+        depistage_variante?: string | undefined
+
+        vaccins?: boolean | string | undefined
+
+        covid_passee?: boolean | undefined
+
+        suivi_active?: boolean | undefined
+
+        // Legacy: to be removed once migrated.
+        questionnaire_started?: boolean | undefined
+        questionnaire_completed?: boolean | undefined
+        // End of Legacy
+    }) {
         this.departement = data['departement']
 
         this.activite_pro = data['activite_pro']
@@ -261,7 +431,7 @@ export default class Profil {
     }
 
     // Legacy: at some point we will want to remove this method.
-    fillQuestionnaireStarted(value) {
+    fillQuestionnaireStarted(value: boolean | undefined) {
         if (typeof value !== 'undefined') {
             this.questionnaire_started = value
         } else {
@@ -271,7 +441,7 @@ export default class Profil {
     }
 
     // Legacy: at some point we will want to remove this method.
-    fillQuestionnaireCompleted(value) {
+    fillQuestionnaireCompleted(value: boolean | undefined) {
         if (typeof value !== 'undefined') {
             this.questionnaire_completed = value
         } else {
@@ -281,7 +451,7 @@ export default class Profil {
     }
 
     // Legacy: at some point we will want to remove this method.
-    fillQuestionnaireStartDate(value) {
+    fillQuestionnaireStartDate(value: string | undefined) {
         if (typeof value !== 'undefined') {
             this._questionnaire_start_date = value
         } else {
@@ -293,7 +463,7 @@ export default class Profil {
     }
 
     // Legacy: at some point we will want to remove this method.
-    fillQuestionnaireCompletionDate(value) {
+    fillQuestionnaireCompletionDate(value: string | undefined) {
         if (typeof value !== 'undefined') {
             this._questionnaire_completion_date = value
         } else {
@@ -304,7 +474,7 @@ export default class Profil {
         }
     }
 
-    fillContactARisque(value) {
+    fillContactARisque(value: boolean) {
         this.contact_a_risque = value
         this.contact_a_risque_meme_lieu_de_vie = undefined
         this.contact_a_risque_contact_direct = undefined
@@ -318,7 +488,7 @@ export default class Profil {
         this.contact_a_risque_variante = undefined
     }
 
-    fillTestData(depistage, symptomes, personneFragile) {
+    fillTestData(depistage: string, symptomes: string, personneFragile: boolean) {
         let data = {
             symptomes_actuels: false,
             symptomes_actuels_temperature: false,
@@ -356,8 +526,8 @@ export default class Profil {
             foyer_enfants: false,
             age: 42,
             grossesse_3e_trimestre: false,
-            poids: '70',
-            taille: '178',
+            poids: 70,
+            taille: 178,
             antecedent_cardio: false,
             antecedent_diabete: false,
             antecedent_respi: false,
@@ -369,6 +539,8 @@ export default class Profil {
             antecedent_drepano: false,
             antecedent_trisomie: false,
             antecedent_chronique_autre: false,
+            _depistage_start_date: '',
+            _symptomes_start_date: '',
         }
 
         if (depistage == 'Positif') {
@@ -631,7 +803,7 @@ export default class Profil {
         return differenceEnJours(this.covid_passee_date, new Date())
     }
 
-    _hasCovidPlus(months) {
+    _hasCovidPlus(months: number) {
         return this.covid_passee && this.joursDepuisCovidPassee() > months * 30 // approximation
     }
 
@@ -671,7 +843,7 @@ export default class Profil {
         return this.suivi.length
     }
 
-    ajouterEtat(etat) {
+    ajouterEtat(etat: Etat) {
         this.suivi.push(etat)
     }
 
@@ -679,7 +851,7 @@ export default class Profil {
         return this.hasHistorique() ? this.suivi.slice(-1)[0] : {}
     }
 
-    suiviDerniersJours(delta) {
+    suiviDerniersJours(delta: number) {
         return this.suivi.filter((etat) => new Date(etat.date) > joursAvant(delta))
     }
 
@@ -687,7 +859,7 @@ export default class Profil {
         return this.suiviDerniersJours(1).length >= 1
     }
 
-    suiviEntre(strictementApres, avant) {
+    suiviEntre(strictementApres: Date, avant: Date) {
         return this.suivi.filter((etat) => {
             const date = new Date(etat.date)
             return date > strictementApres && date <= avant
@@ -820,7 +992,7 @@ export default class Profil {
         return safeHtml`<h3><span class="profil">${this.affichageNom()}</span></h3>`
     }
 
-    renderButtons(questionnaire) {
+    renderButtons(questionnaire: Questionnaire) {
         const possessifMasculinSingulier = this.estMonProfil() ? 'mon' : 'son'
         const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
         var mainButton = ''
@@ -862,7 +1034,7 @@ export default class Profil {
         return mainButton + continueButton + deleteButton
     }
 
-    renderCard(questionnaire) {
+    renderCard(questionnaire: Questionnaire) {
         return createElementFromHTML(`
         <li class="card">
             ${this.renderNom()}

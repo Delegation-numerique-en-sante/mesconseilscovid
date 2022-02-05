@@ -15,7 +15,7 @@ export default class StockageLocal {
         return localforage.getItem('profil')
     }
 
-    setProfilActuel(nom: string) {
+    setProfilActuel(nom: string | undefined) {
         return localforage.setItem('profil', nom)
     }
 
