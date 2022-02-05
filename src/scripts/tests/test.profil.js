@@ -68,8 +68,6 @@ describe('Profil', function () {
             _symptomes_start_date: undefined,
             _deconfinement_date: undefined,
             suivi: [],
-            questionnaire_started: false,
-            questionnaire_completed: false,
             _questionnaire_start_date: undefined,
             _questionnaire_completion_date: undefined,
         })
@@ -194,8 +192,6 @@ describe('Profil', function () {
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             _deconfinement_date: '2020-07-09T14:03:41.000Z',
             suivi: [],
-            questionnaire_started: true,
-            questionnaire_completed: true,
             _questionnaire_start_date: '2020-07-09T14:03:41.000Z',
             _questionnaire_completion_date: '2020-07-09T14:03:41.000Z',
         }
@@ -264,8 +260,6 @@ describe('Profil', function () {
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             _deconfinement_date: '2020-07-09T14:03:41.000Z',
             suivi: [],
-            questionnaire_started: true,
-            questionnaire_completed: true,
             _questionnaire_start_date: '2020-07-09T14:03:41.000Z',
             _questionnaire_completion_date: '2020-07-09T14:03:41.000Z',
         }
@@ -332,8 +326,6 @@ describe('Profil', function () {
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             _deconfinement_date: '2020-07-09T14:03:41.000Z',
             suivi: [{ foo: 'bar' }],
-            questionnaire_started: true,
-            questionnaire_completed: true,
             _questionnaire_start_date: '2020-07-09T14:03:41.000Z',
             _questionnaire_completion_date: '2020-07-09T14:03:41.000Z',
         })
@@ -394,8 +386,6 @@ describe('Profil', function () {
             _symptomes_start_date: undefined,
             _deconfinement_date: undefined,
             suivi: [],
-            questionnaire_started: false,
-            questionnaire_completed: false,
             _questionnaire_start_date: undefined,
             _questionnaire_completion_date: undefined,
         })
@@ -460,8 +450,6 @@ describe('Profil', function () {
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             _deconfinement_date: '2020-07-09T14:03:41.000Z',
             suivi: [{ foo: 'bar' }],
-            questionnaire_started: true,
-            questionnaire_completed: true,
             _questionnaire_start_date: '2020-07-09T14:03:41.000Z',
             _questionnaire_completion_date: '2020-07-09T14:03:41.000Z',
         })
@@ -522,8 +510,6 @@ describe('Profil', function () {
             _symptomes_start_date: '2020-07-09T14:03:41.000Z',
             _deconfinement_date: undefined,
             suivi: [],
-            questionnaire_started: true,
-            questionnaire_completed: true,
             _questionnaire_start_date: '2020-07-09T14:03:41.000Z',
             _questionnaire_completion_date: '2020-07-09T14:03:41.000Z',
         })
@@ -533,39 +519,34 @@ describe('Profil', function () {
 
     it('Le questionnaire n’est pas commencé par défaut', function () {
         var profil = new Profil('mes_infos')
-        assert.isFalse(profil.questionnaire_started)
         assert.isUndefined(profil.questionnaire_start_date)
     })
 
     it('Le questionnaire n’est pas terminé par défaut', function () {
         var profil = new Profil('mes_infos')
-        assert.isFalse(profil.questionnaire_completed)
         assert.isUndefined(profil.questionnaire_completion_date)
     })
 
     it('Le questionnaire n’est pas commencé après réinitialisation', function () {
         var profil = new Profil('mes_infos')
-        profil.questionnaire_started = true
         profil.questionnaire_start_date = new Date()
         profil.resetData()
-        assert.isFalse(profil.questionnaire_started)
         assert.isUndefined(profil.questionnaire_start_date)
     })
 
     it('Le questionnaire n’est pas terminé après réinitialisation', function () {
         var profil = new Profil('mes_infos')
-        profil.questionnaire_completed = true
         profil.questionnaire_start_date = new Date()
         profil.resetData()
-        assert.isFalse(profil.questionnaire_completed)
         assert.isUndefined(profil.questionnaire_completion_date)
     })
 
-    it('Le questionnaire est commencé si on a au moins une réponse', function () {
-        var profil = new Profil('mes_infos', {
-            activite_pro: false,
-        })
-        assert.isTrue(profil.questionnaire_started)
+    it('Le questionnaire est commencé si on démarre le formulaire', function () {
+        var profil = new Profil('mes_infos', {})
+        // On simule `app.premierDemarrageFormulaire` pour ne pas importer App.
+        if (typeof profil.questionnaire_start_date === 'undefined') {
+            profil.questionnaire_start_date = new Date()
+        }
         assert.isString(profil._questionnaire_start_date)
         assert.instanceOf(profil.questionnaire_start_date, Date)
     })
@@ -617,34 +598,11 @@ describe('Profil', function () {
             depistage: false,
             vaccins: 'pas_encore',
             covid_passee: false,
+            _questionnaire_start_date: new Date().toJSON(),
+            _questionnaire_completion_date: new Date().toJSON(),
         })
-        assert.isTrue(profil.questionnaire_completed)
         assert.instanceOf(profil.questionnaire_completion_date, Date)
         assert.isFalse(profil.depistagePositifRecentAsymptomatique())
-    })
-
-    describe('Migration', function () {
-        it('Je vis avec des enfants', function () {
-            var profil = new Profil('mes_infos')
-            assert.isUndefined(profil.foyer_autres_personnes)
-            assert.isUndefined(profil.foyer_enfants)
-            profil.fillData({
-                foyer_enfants: true,
-            })
-            assert.isTrue(profil.foyer_enfants)
-            assert.isTrue(profil.foyer_autres_personnes)
-        })
-
-        it('Je ne vis pas avec des enfants', function () {
-            var profil = new Profil('mes_infos')
-            assert.isUndefined(profil.foyer_autres_personnes)
-            assert.isUndefined(profil.foyer_enfants)
-            profil.fillData({
-                foyer_enfants: false,
-            })
-            assert.isFalse(profil.foyer_enfants)
-            assert.isFalse(profil.foyer_autres_personnes)
-        })
     })
 
     it('On sait identifier les profils qui ont une Covid de plus de 6 mois', function () {
