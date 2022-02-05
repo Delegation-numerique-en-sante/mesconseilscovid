@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "isolatedModules": true,
-        "strict": true
+        "strict": true,
+        "esModuleInterop": true
     }
 }

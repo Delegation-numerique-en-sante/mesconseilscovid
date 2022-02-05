@@ -1,4 +1,5 @@
 // Données privées, stockées uniquement en local.
+import type Profil from './profil'
 import localforage from 'localforage'
 
 export default class StockageLocal {
@@ -6,7 +7,7 @@ export default class StockageLocal {
         return localforage.getItem('source')
     }
 
-    setSource(source) {
+    setSource(source: string) {
         return localforage.setItem('source', source)
     }
 
@@ -14,7 +15,7 @@ export default class StockageLocal {
         return localforage.getItem('profil')
     }
 
-    setProfilActuel(nom) {
+    setProfilActuel(nom: string) {
         return localforage.setItem('profil', nom)
     }
 
@@ -22,7 +23,7 @@ export default class StockageLocal {
         return localforage.removeItem('profil')
     }
 
-    getProfil(nom) {
+    getProfil(nom: string) {
         return localforage.getItem(nom)
     }
 
@@ -50,7 +51,7 @@ export default class StockageLocal {
         )
     }
 
-    supprimer(nom) {
+    supprimer(nom: string) {
         return this._supprimer(nom)
             .then(() => {
                 console.debug(`Les données personnelles ont été supprimées (${nom})`)
@@ -64,11 +65,11 @@ export default class StockageLocal {
             })
     }
 
-    _supprimer(nom) {
+    _supprimer(nom: string) {
         return localforage.removeItem(nom)
     }
 
-    charger(profil) {
+    charger(profil: Profil) {
         return localforage
             .getItem(profil.nom)
             .then((data) => {
@@ -87,7 +88,7 @@ export default class StockageLocal {
             })
     }
 
-    enregistrer(profil) {
+    enregistrer(profil: Profil) {
         return localforage
             .setItem(profil.nom, profil.getData())
             .then((data) => {
