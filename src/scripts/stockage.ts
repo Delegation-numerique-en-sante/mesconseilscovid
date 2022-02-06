@@ -1,4 +1,5 @@
 // Données privées, stockées uniquement en local.
+import type Data from './profil'
 import type Profil from './profil'
 import localforage from 'localforage'
 
@@ -71,7 +72,7 @@ export default class StockageLocal {
 
     charger(profil: Profil) {
         return localforage
-            .getItem(profil.nom)
+            .getItem<Data>(profil.nom)
             .then((data) => {
                 if (data !== null) {
                     profil.fillData(data)
