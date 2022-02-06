@@ -20,7 +20,7 @@ type Etat = {
     toux: string
 }
 
-type Data = {
+type ProfilData = {
     _suivi_start_date?: string | undefined
     _symptomes_start_date?: string | undefined
     _depistage_start_date?: string | undefined
@@ -177,7 +177,7 @@ export default class Profil {
     questionnaire_completed: boolean | undefined
     // End of Legacy
 
-    constructor(nom: string = 'mes_infos', data: {} = {}) {
+    constructor(nom: string = 'mes_infos', data: ProfilData = {}) {
         this.nom = nom
         this.suivi = []
         this.fillData(data)
@@ -337,7 +337,7 @@ export default class Profil {
         this._questionnaire_completion_date = undefined
     }
 
-    fillData(data: Data) {
+    fillData(data: ProfilData) {
         this.departement = data['departement']
 
         this.activite_pro = data['activite_pro']
@@ -502,7 +502,7 @@ export default class Profil {
             | 'Rien de tout ça',
         personneFragile: boolean
     ) {
-        let data: Data = {
+        let data: ProfilData = {
             symptomes_actuels: false,
             symptomes_actuels_temperature: false,
             symptomes_actuels_temperature_inconnue: false,
@@ -610,7 +610,7 @@ export default class Profil {
         return this.fillData(data)
     }
 
-    getData() {
+    getData(): ProfilData {
         return {
             activite_pro: this.activite_pro,
             activite_pro_sante: this.activite_pro_sante,
