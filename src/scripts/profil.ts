@@ -79,7 +79,7 @@ type Data = {
     contact_a_risque_stop_covid?: boolean | undefined
     contact_a_risque_assurance_maladie?: boolean | undefined
     contact_a_risque_autre?: boolean | undefined
-    contact_a_risque_variante?: string | undefined
+    contact_a_risque_variante?: 'aucune' | undefined
 
     depistage?: boolean | undefined
     depistage_type?: string | undefined
@@ -159,7 +159,7 @@ export default class Profil {
     contact_a_risque_stop_covid: boolean | undefined
     contact_a_risque_assurance_maladie: boolean | undefined
     contact_a_risque_autre: boolean | undefined
-    contact_a_risque_variante: string | undefined
+    contact_a_risque_variante: 'aucune' | undefined
 
     depistage: boolean | undefined
     depistage_type: string | undefined
@@ -490,7 +490,18 @@ export default class Profil {
         this.contact_a_risque_variante = undefined
     }
 
-    fillTestData(depistage: string, symptomes: string, personneFragile: boolean) {
+    fillTestData(
+        depistage: 'Positif' | 'Négatif' | 'En attente',
+        symptomes:
+            | 'Symptômes actuels graves'
+            | 'Symptômes actuels'
+            | 'Symptômes actuels non évocateurs'
+            | 'Symptômes passés'
+            | 'Contact à risque'
+            | 'Contact pas vraiment à risque'
+            | 'Rien de tout ça',
+        personneFragile: boolean
+    ) {
         let data: Data = {
             symptomes_actuels: false,
             symptomes_actuels_temperature: false,
