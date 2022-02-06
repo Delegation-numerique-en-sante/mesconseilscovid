@@ -20,6 +20,7 @@ export function hideElement(element) {
 }
 
 export function showElement(element) {
+    if (!element) return
     element.removeAttribute('hidden')
     element.classList.add('visible')
 }
