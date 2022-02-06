@@ -17,15 +17,13 @@ function showThem(themElement: HTMLElement) {
 }
 
 export function hideElement(element: HTMLElement | null) {
-    if (!element) return
-    element.setAttribute('hidden', '')
-    element.classList.remove('visible')
+    element?.setAttribute('hidden', '')
+    element?.classList.remove('visible')
 }
 
 export function showElement(element: HTMLElement | null) {
-    if (!element) return
-    element.removeAttribute('hidden')
-    element.classList.add('visible')
+    element?.removeAttribute('hidden')
+    element?.classList.add('visible')
 }
 
 export function hideSelector(element: HTMLElement, selector: string) {
@@ -47,7 +45,7 @@ export function showOnlyIf(element: HTMLElement, selector: string, condition: bo
 }
 
 export function displayElementById(element: HTMLElement, id: string) {
-    var block: HTMLElement | null = element.querySelector('#' + id)
+    const block: HTMLElement | null = element.querySelector('#' + id)
     if (!block) return
     showElement(block)
 }
@@ -59,7 +57,7 @@ export function displayBlocks(element: HTMLElement, blockNames: string[]) {
 }
 
 export function createElementFromHTML(htmlString: string) {
-    var div = document.createElement('div')
+    const div = document.createElement('div')
     div.innerHTML = htmlString.trim()
     return div.firstElementChild
 }
@@ -68,7 +66,8 @@ export function cloneElementInto(
     sourceElement: HTMLElement,
     targetElement: HTMLElement
 ) {
-    const clone = sourceElement.cloneNode(true)
+    // TS: est-ce qu’il est vraiment pertinent de caster ici ?
+    const clone = sourceElement.cloneNode(true) as HTMLElement
     targetElement.innerHTML = ''
     while (clone.firstElementChild) {
         targetElement.insertAdjacentElement('beforeend', clone.firstElementChild)
