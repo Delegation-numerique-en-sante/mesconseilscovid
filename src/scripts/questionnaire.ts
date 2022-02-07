@@ -102,7 +102,14 @@ export const TRANSITIONS = {
 }
 
 export class Questionnaire {
-    transitions: {}
+    // TS: il doit y avoir un moyen de mieux déclarer cela.
+    transitions: {
+        [key: string]: {
+            [key: string]: any
+            next?: {}
+            previous?: {}
+        }
+    }
     ordre: string[]
     total: number
     firstPage: string
