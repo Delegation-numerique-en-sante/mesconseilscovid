@@ -1,7 +1,7 @@
 import { format } from 'timeago.js'
 
 import type Profil from './profil'
-import type {Etat} from './profil'
+import type { Etat } from './profil'
 import { createElementFromHTML, safeHtml } from './affichage'
 import AlgorithmeSuivi from './algorithme/suivi'
 import { titleCase } from './utils'
@@ -97,9 +97,7 @@ export default class SuiviView {
         )}</p>`
     }
 
-    suiviParSymptome(
-        symptome: Symptomes
-    ): { date: string; statut: string }[] {
+    suiviParSymptome(symptome: Symptomes): { date: string; statut: string }[] {
         return this.profil.suivi.map((etat) => {
             // TS: potentiellement on veut pouvoir garder une valeur
             // booléenne ici.

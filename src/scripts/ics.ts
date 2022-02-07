@@ -1,9 +1,9 @@
 /* Inspired by https://github.com/nwcell/ics.js */
 
 export type RRule = {
-    rrule?: string,
-    freq: string,
-    interval: number,
+    rrule?: string
+    freq: string
+    interval: number
     count: number
 }
 

@@ -1,5 +1,5 @@
 import type App from './app'
-import type {RRule} from './ics'
+import type { RRule } from './ics'
 import type Profil from './profil'
 
 import ICS from './ics'
