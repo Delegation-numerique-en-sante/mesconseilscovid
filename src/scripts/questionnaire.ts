@@ -1,16 +1,18 @@
-export function beforeConseils(profil, questionnaire) {
+import type Profil from './profil'
+
+export function beforeConseils(profil: Profil, questionnaire: Questionnaire) {
     if (!profil.isComplete()) return questionnaire.checkPathTo('conseils', profil)
 }
 
-export function beforeSuiviIntroduction(profil, questionnaire) {
+export function beforeSuiviIntroduction(profil: Profil, questionnaire: Questionnaire) {
     if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
 }
 
-export function beforeSuiviSymptomes(profil, questionnaire) {
+export function beforeSuiviSymptomes(profil: Profil, questionnaire: Questionnaire) {
     if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
 }
 
-export function beforeSuiviHistorique(profil, questionnaire) {
+export function beforeSuiviHistorique(profil: Profil, questionnaire: Questionnaire) {
     if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
 }
 
@@ -28,16 +30,16 @@ export const ORDRE = [
 export const TRANSITIONS = {
     nom: {
         previous: { introduction: () => true },
-        next: { symptomes: (profil) => profil.nom },
+        next: { symptomes: (profil: Profil) => profil.nom },
     },
     symptomes: {
         previous: { introduction: () => true },
         next: {
-            depistage: (profil) =>
+            depistage: (profil: Profil) =>
                 profil.isSymptomesComplete() &&
                 profil.hasSymptomesStartDate() &&
                 (profil.hasSymptomesActuelsReconnus() || profil.symptomes_passes),
-            contactarisque: (profil) =>
+            contactarisque: (profil: Profil) =>
                 profil.isSymptomesComplete() &&
                 !profil.hasSymptomesActuelsReconnus() &&
                 !profil.symptomes_passes,
@@ -46,31 +48,31 @@ export const TRANSITIONS = {
     contactarisque: {
         previous: { symptomes: () => true },
         next: {
-            depistage: (profil) => profil.isContactARisqueComplete(),
+            depistage: (profil: Profil) => profil.isContactARisqueComplete(),
         },
     },
     depistage: {
         previous: {
-            symptomes: (profil) =>
+            symptomes: (profil: Profil) =>
                 profil.isSymptomesComplete() &&
                 profil.hasSymptomesStartDate() &&
                 (profil.hasSymptomesActuelsReconnus() || profil.symptomes_passes),
-            contactarisque: (profil) => profil.isContactARisqueComplete(),
+            contactarisque: (profil: Profil) => profil.isContactARisqueComplete(),
         },
         next: {
-            historique: (profil) => profil.isDepistageComplete(),
+            historique: (profil: Profil) => profil.isDepistageComplete(),
         },
     },
     historique: {
         previous: { depistage: () => true },
         next: {
-            vaccins: (profil) => profil.isHistoriqueComplete(),
+            vaccins: (profil: Profil) => profil.isHistoriqueComplete(),
         },
     },
     vaccins: {
         previous: { historique: () => true },
         next: {
-            situation: (profil) => profil.isVaccinsComplete(),
+            situation: (profil: Profil) => profil.isVaccinsComplete(),
         },
     },
     situation: {
@@ -78,20 +80,20 @@ export const TRANSITIONS = {
             vaccins: () => true,
         },
         next: {
-            sante: (profil) => profil.isSituationComplete(),
+            sante: (profil: Profil) => profil.isSituationComplete(),
         },
     },
     sante: {
         previous: { situation: () => true },
         next: {
-            conseils: (profil) => profil.isSanteComplete(),
+            conseils: (profil: Profil) => profil.isSanteComplete(),
         },
     },
     conseils: {},
     suivisymptomes: {
         previous: { conseils: () => true },
         next: {
-            conseils: (profil) => profil.isComplete(),
+            conseils: (profil: Profil) => profil.isComplete(),
         },
     },
     suivihistorique: {
@@ -100,6 +102,11 @@ export const TRANSITIONS = {
 }
 
 export class Questionnaire {
+    transitions: {}
+    ordre: string[]
+    total: number
+    firstPage: string
+
     constructor(transitions = TRANSITIONS, ordre = ORDRE) {
         this.transitions = transitions
         this.ordre = ordre
@@ -107,7 +114,7 @@ export class Questionnaire {
         this.firstPage = ordre[0]
     }
 
-    before(page, profil) {
+    before(page: string, profil: Profil) {
         const question = this.transitions[page]
         if (typeof question === 'undefined') return
 
@@ -117,7 +124,7 @@ export class Questionnaire {
     // Vérifie si la page du questionnaire est accessible en l’état.
     // Renvoie `undefined` si c’est OK, ou le nom d’une autre page
     // accessible vers laquelle renvoyer l’utilisateur.
-    checkPathTo(page, profil) {
+    checkPathTo(page: string, profil: Profil) {
         let step = this.firstPage
         let steps = [step]
         while (step) {
@@ -141,22 +148,22 @@ export class Questionnaire {
     // données jusqu’ici. Les pages suivantes potentielles sont listées de
     // manière ordonnée. La page choisie est la première dont le prédicat
     // est vérifié.
-    nextPage(pageName, profil) {
+    nextPage(pageName: string, profil: Profil) {
         return this.findNeighbor('next', pageName, profil)
     }
 
     // Détermine la page précédente du questionnaire, pour pouvoir inclure
     // un lien « Retour » à chaque étape.
-    previousPage(pageName, profil) {
+    previousPage(pageName: string, profil: Profil) {
         return this.findNeighbor('previous', pageName, profil)
     }
 
-    findNeighbor(direction, pageName, profil) {
+    findNeighbor(direction: 'previous' | 'next', pageName: string, profil: Profil) {
         const question = this.transitions[pageName]
         if (typeof question === 'undefined') return
         if (typeof question[direction] === 'undefined') return
 
-        let result
+        let result: {}
         Object.keys(question[direction]).forEach((dest) => {
             const predicate = question[direction][dest]
             if (predicate(profil)) {
@@ -166,11 +173,11 @@ export class Questionnaire {
         if (result) return result
     }
 
-    numeroEtape(pageName, profil) {
+    numeroEtape(pageName: string, profil: Profil) {
         return this._previousPages(pageName, profil).length
     }
 
-    _previousPages(pageName, profil) {
+    _previousPages(pageName: string, profil: Profil) {
         let result = []
         pageName = this.previousPage(pageName, profil)
         while (pageName) {
@@ -181,7 +188,7 @@ export class Questionnaire {
     }
 
     // Détermine la progression dans le questionnaire (p. ex. « 2/8 »)
-    etapesRestantes(pageName) {
+    etapesRestantes(pageName: string) {
         const num = this.ordre.indexOf(pageName) + 1
         if (num === 0) return ''
 
