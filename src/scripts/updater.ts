@@ -1,15 +1,20 @@
+import { Router } from './router'
 import { CHEMIN_ACCUEIL, getCurrentPageName } from './router'
 import { showElement } from './affichage'
 import { ORDRE } from './questionnaire'
 
 export default class Updater {
-    constructor(router) {
+    router: Router
+    currentVersion: string | null
+    updateInProgress: boolean
+
+    constructor(router: Router) {
         this.router = router
         this.currentVersion = null
         this.updateInProgress = false
     }
 
-    checkForUpdatesEvery(intervalInMinutes) {
+    checkForUpdatesEvery(intervalInMinutes: number) {
         this.checkForUpdate()
         setInterval(this.checkForUpdate.bind(this), intervalInMinutes * 60 * 1000)
     }
@@ -41,15 +46,19 @@ export default class Updater {
         xhr.send()
     }
 
-    showBanner(document) {
-        const block = document.querySelector('#update-banner')
+    showBanner(document: Document) {
+        const block: HTMLElement | null = document.querySelector('#update-banner')
+        if (!block) return
         showElement(block)
-        document.dispatchEvent(new CustomEvent('show-banner', { detail: block }))
+        document.dispatchEvent(
+            new CustomEvent<HTMLElement>('show-banner', { detail: block })
+        )
     }
 
-    updateFooter(fetchedVersion) {
+    updateFooter(fetchedVersion: string) {
         if (this.currentVersion !== fetchedVersion) {
-            const element = document.querySelector('.js-latest-update')
+            const element = document.querySelector<HTMLElement>('.js-latest-update')
+            if (!element) return
             // We might have a version with more characters than a date
             // if multiple releases are required within the same day.
             const datePart = fetchedVersion.substring(0, 10)
@@ -58,7 +67,7 @@ export default class Updater {
         }
     }
 
-    updateVersion(fetchedVersion) {
+    updateVersion(fetchedVersion: string) {
         this.updateFooter(fetchedVersion)
 
         if (this.currentVersion === null || this.currentVersion === fetchedVersion) {
@@ -73,12 +82,14 @@ export default class Updater {
             console.debug('Service worker supported')
             navigator.serviceWorker.getRegistration().then((registration) => {
                 console.debug('Telling service worker to look for an update')
+                if (!registration) return
                 registration.update().catch((err) => {
                     console.error('Mise à jour du service worker impossible :', err)
                 })
                 registration.addEventListener('updatefound', () => {
                     console.debug('Service worker update found')
                     const newWorker = registration.installing
+                    if (!newWorker) return
                     newWorker.addEventListener('statechange', () => {
                         console.debug('New service worker state:', newWorker.state)
                         if (newWorker.state == 'installed') {
@@ -102,39 +113,43 @@ export default class Updater {
         }
     }
 
-    onInteractivePage(pageName) {
+    onInteractivePage(pageName: string) {
         const interactivePages = ORDRE.concat(['suivisymptomes'])
         return interactivePages.indexOf(pageName) > -1
     }
 
-    notifyUserWithoutInterrupting(pageName) {
-        document.addEventListener('show-banner', (event) => {
+    notifyUserWithoutInterrupting(pageName: string) {
+        document.addEventListener('show-banner', ((event: CustomEvent<HTMLElement>) => {
             // Even with an event, we need to wait for the next few
             // ticks to be able to scroll to the newly visible element.
             setTimeout(() => {
                 event.detail.scrollIntoView({ behavior: 'smooth' })
             }, 100)
-            const refreshButton = event.detail.querySelector('#refresh-button-banner')
+            const refreshButton: HTMLAnchorElement | null = event.detail.querySelector(
+                '#refresh-button-banner'
+            )
+            if (!refreshButton) return
             this.setupRefreshButton(refreshButton, pageName)
-        })
+        }) as EventListener)
         this.showBanner(document)
     }
 
-    redirectUserToUpdatePage(pageName) {
+    redirectUserToUpdatePage(pageName: string) {
         this.router.navigate(`nouvelleversiondisponible?origine=${pageName}`)
     }
 
-    setupRefreshButton(button, pageName) {
+    setupRefreshButton(button: HTMLAnchorElement, pageName: string) {
         button.innerText = 'Mettre à jour'
         button.setAttribute('href', '#' + (pageName || CHEMIN_ACCUEIL))
         button.addEventListener('click', this.onClickRefreshButton.bind(this))
     }
 
-    onClickRefreshButton(event) {
+    onClickRefreshButton(event: MouseEvent) {
         console.debug('Updater.onClickRefreshButton()')
         event.preventDefault()
 
-        let button = event.target
+        let button: HTMLAnchorElement | null = event.target
+        if (!button) return
 
         // Change the URL without triggering the router.
         this.router.pause()
@@ -149,15 +164,18 @@ export default class Updater {
         if ('serviceWorker' in navigator) {
             // Tell new service worker to activate now.
             navigator.serviceWorker.getRegistration().then((registration) => {
+                if (!registration) return
                 if (registration.waiting === null) {
                     console.debug('New service worker is already active')
                     console.debug('Reloading the page')
+                    // @ts-expect-error
                     window.location.reload(true) // `true` means: reload from server.
                 } else {
                     console.debug('New service worker is waiting')
                     navigator.serviceWorker.addEventListener('controllerchange', () => {
                         console.debug('New service worker is now controlling the page')
                         console.debug('Reloading the page')
+                        // @ts-expect-error
                         window.location.reload(true) // `true` means: reload from server.
                     })
 
@@ -168,6 +186,7 @@ export default class Updater {
         } else {
             console.debug('Browser does not support service workers')
             console.debug('Reloading the page')
+            // @ts-expect-error
             window.location.reload(true) // `true` means: reload from server.
         }
     }
