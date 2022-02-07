@@ -1,3 +1,4 @@
+import type ProfilData from './profil'
 import Profil from './profil'
 import StockageLocal from './stockage'
 import { hideElement, showElement } from './affichage'
@@ -155,7 +156,7 @@ export default class App {
         })
     }
     chargerProfilActuel() {
-        return this.stockage.getProfilActuel().then((nom: string | null) => {
+        return this.stockage.getProfilActuel().then((nom) => {
             if (nom !== null) {
                 return this.chargerProfil(nom)
             }
@@ -171,8 +172,21 @@ export default class App {
         })
     }
     creerProfilsTypes() {
-        const listeDepistage = ['Positif', 'Négatif', 'En attente', 'Pas testé']
-        const listeSymptomes = [
+        const listeDepistage: ('Positif' | 'Négatif' | 'En attente' | 'Pas testé')[] = [
+            'Positif',
+            'Négatif',
+            'En attente',
+            'Pas testé',
+        ]
+        const listeSymptomes: (
+            | 'Symptômes actuels graves'
+            | 'Symptômes actuels'
+            | 'Symptômes actuels non évocateurs'
+            | 'Symptômes passés'
+            | 'Contact à risque'
+            | 'Contact pas vraiment à risque'
+            | 'Rien de tout ça'
+        )[] = [
             'Symptômes actuels graves',
             'Symptômes actuels',
             'Symptômes actuels non évocateurs',
@@ -203,12 +217,23 @@ export default class App {
         }
         return Promise.all(promises)
     }
-    creerProfilType(depistage: string, symptomes: string, personneFragile: boolean) {
+    creerProfilType(
+        depistage: 'Positif' | 'Négatif' | 'En attente' | 'Pas testé',
+        symptomes:
+            | 'Symptômes actuels graves'
+            | 'Symptômes actuels'
+            | 'Symptômes actuels non évocateurs'
+            | 'Symptômes passés'
+            | 'Contact à risque'
+            | 'Contact pas vraiment à risque'
+            | 'Rien de tout ça',
+        personneFragile: boolean
+    ) {
         let nom = `${depistage} + ${symptomes}`
         if (personneFragile) {
             nom = `${nom} + personne fragile`
         }
-        return this.stockage.getProfil(nom).then((profil: Profil | null) => {
+        return this.stockage.getProfil(nom).then((profil: ProfilData) => {
             if (profil === null) {
                 profil = new Profil(nom)
                 profil.fillTestData(depistage, symptomes, personneFragile)
@@ -220,7 +245,7 @@ export default class App {
     }
     basculerVersProfil(nom: string) {
         return this.stockage.setProfilActuel(nom).then(() => {
-            return this.stockage.getProfil(nom).then((profil: Profil | null) => {
+            return this.stockage.getProfil(nom).then((profil: ProfilData) => {
                 if (profil) {
                     return this.chargerProfil(nom)
                 } else {

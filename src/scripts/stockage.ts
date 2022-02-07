@@ -13,7 +13,7 @@ export default class StockageLocal {
     }
 
     getProfilActuel() {
-        return localforage.getItem('profil')
+        return localforage.getItem<string>('profil')
     }
 
     setProfilActuel(nom: string | undefined) {
@@ -25,7 +25,7 @@ export default class StockageLocal {
     }
 
     getProfil(nom: string) {
-        return localforage.getItem(nom)
+        return localforage.getItem<ProfilData>(nom)
     }
 
     getProfils() {
@@ -70,7 +70,7 @@ export default class StockageLocal {
         return localforage.removeItem(nom)
     }
 
-    charger(profil: Profil) {
+    charger(profil: Profil): Profil {
         return localforage
             .getItem<ProfilData>(profil.nom)
             .then((data) => {

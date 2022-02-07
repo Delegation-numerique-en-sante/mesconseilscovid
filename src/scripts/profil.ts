@@ -491,7 +491,7 @@ export default class Profil {
     }
 
     fillTestData(
-        depistage: 'Positif' | 'Négatif' | 'En attente',
+        depistage: 'Positif' | 'Négatif' | 'En attente' | 'Pas testé',
         symptomes:
             | 'Symptômes actuels graves'
             | 'Symptômes actuels'
