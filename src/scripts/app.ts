@@ -38,7 +38,6 @@ import {
 import { registerPlausible } from './plausible'
 import { registerATInternet } from './atinternet'
 
-
 export default class App {
     profil: Profil
     stockage: StockageLocal

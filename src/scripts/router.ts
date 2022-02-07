@@ -192,10 +192,17 @@ export class Router {
     }
 
     // A11Y: mise à jour du titre dynamiquement.
-    updateTitle(page: HTMLElement, pageName: string, pageTitle: string | undefined, profil: Profil) {
+    updateTitle(
+        page: HTMLElement,
+        pageName: string,
+        pageTitle: string | undefined,
+        profil: Profil
+    ) {
         let titlePrefix = pageTitle
         if (typeof pageTitle === 'undefined') {
-            const titleElem: HTMLElement | null = page.querySelector('h1, #conseils-block-titre, h2')
+            const titleElem: HTMLElement | null = page.querySelector(
+                'h1, #conseils-block-titre, h2'
+            )
             if (titleElem) {
                 titlePrefix = titleElem.innerText
             } else {
