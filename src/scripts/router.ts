@@ -1,5 +1,7 @@
 import Navigo from 'navigo'
 
+import type App from './app'
+import type Profil from './profil'
 import { cloneElementInto, hideElement, showElement, showMeOrThem } from './affichage'
 import { bindFeedback, injectFeedbackDifficultes } from './feedback'
 import { nomProfil } from './injection'
@@ -14,7 +16,11 @@ export function getCurrentPageName() {
 export const CHEMIN_ACCUEIL = 'introduction'
 
 export class Router {
-    constructor(app) {
+    app: App
+    initialTitle: string
+    navigo: Navigo
+
+    constructor(app: App) {
         this.app = app
         this.initialTitle = document.title
 
@@ -45,7 +51,7 @@ export class Router {
         return this.navigo.lastRouteResolved()
     }
 
-    navigate(target) {
+    navigate(target: string) {
         return this.navigo.navigate(target)
     }
 
@@ -57,7 +63,11 @@ export class Router {
     }
 
     beforeGlobalHook(done) {
-        var header = document.querySelector('header section')
+        const header = document.querySelector('header section')
+        if (!header) {
+            done()
+            return
+        }
         if (typeof this.app.profil.nom === 'undefined') {
             showElement(header.querySelector('.js-profil-empty'))
             hideElement(header.querySelector('.js-profil-full'))
@@ -81,17 +91,17 @@ export class Router {
 
     focusMainHeaderElement() {
         // A11Y: keyboard navigation
-        document.querySelector('[role="banner"]').focus()
+        document.querySelector<HTMLElement>('[role="banner"]')?.focus()
     }
 
-    addQuestionnaireRoute(pageName, view, options) {
-        const beforeFunc = (profil) => {
+    addQuestionnaireRoute(pageName: string, view: Function, options?: {}) {
+        const beforeFunc = (profil: Profil) => {
             if (typeof profil.nom === 'undefined') {
                 profil.resetData('mes_infos')
             }
             return this.app.questionnaire.before(pageName, profil)
         }
-        const viewFunc = (page, app) => {
+        const viewFunc = (page: HTMLElement, app: App) => {
             view(page, app)
             injectFeedbackDifficultes(page.querySelector('.feedback-difficultes'))
             bindFeedback(page.querySelector('.feedback-component'), app)
@@ -99,14 +109,18 @@ export class Router {
         this.addAppRoute(pageName, viewFunc, { ...options, beforeFunc })
     }
 
-    addAppRoute(pageName, view, options) {
-        const viewFunc = (element) => {
+    addAppRoute(pageName: string, view: Function, options?: {}) {
+        const viewFunc = (element: HTMLElement) => {
             view(element, this.app)
         }
         this.addRoute(pageName, viewFunc, options)
     }
 
-    addRoute(pageName, viewFunc, options) {
+    addRoute(
+        pageName: string,
+        viewFunc: Function,
+        options?: { route?: string; beforeFunc?: Function; pageTitle?: string }
+    ) {
         let route
         if (options && typeof options.route !== 'undefined') {
             route = options.route
@@ -118,7 +132,10 @@ export class Router {
         this.navigo.on(
             route,
             () => {
-                const page = this.loadPage(pageName, this.app)
+                const page = this.loadPage(pageName)
+                if (!page) {
+                    return
+                }
                 this.updateTitle(page, pageName, pageTitle, this.app.profil)
                 this.fillProgress(page, pageName)
                 this.fillNavigation(page, pageName)
@@ -146,11 +163,18 @@ export class Router {
         )
     }
 
-    loadPage(pageName) {
-        const page = document.querySelector('section#page')
+    loadPage(pageName: string) {
+        const page: HTMLElement | null = document.querySelector('section#page')
+        if (!page) {
+            return
+        }
         page.classList.remove('ready')
         page.classList.add('loading')
-        cloneElementInto(document.querySelector('#' + pageName), page)
+        const sourceElement: HTMLElement | null = document.querySelector('#' + pageName)
+        if (!sourceElement) {
+            return
+        }
+        cloneElementInto(sourceElement, page)
         showMeOrThem(page, this.app.profil)
         this.scrollToTopOfPage()
         return page
@@ -168,10 +192,10 @@ export class Router {
     }
 
     // A11Y: mise à jour du titre dynamiquement.
-    updateTitle(page, pageName, pageTitle, profil) {
+    updateTitle(page: HTMLElement, pageName: string, pageTitle: string | undefined, profil: Profil) {
         let titlePrefix = pageTitle
         if (typeof pageTitle === 'undefined') {
-            const titleElem = page.querySelector('h1, #conseils-block-titre, h2')
+            const titleElem: HTMLElement | null = page.querySelector('h1, #conseils-block-titre, h2')
             if (titleElem) {
                 titlePrefix = titleElem.innerText
             } else {
@@ -184,14 +208,14 @@ export class Router {
         document.title = titlePrefix + etape + separator + this.initialTitle
     }
 
-    fillProgress(page, pageName) {
-        const progress = page.querySelector('.progress')
+    fillProgress(page: HTMLElement, pageName: string) {
+        const progress: HTMLElement | null = page.querySelector('.progress')
         if (progress) {
             progress.innerText = this.app.questionnaire.etapesRestantes(pageName)
         }
     }
 
-    fillNavigation(page, pageName) {
+    fillNavigation(page: HTMLElement, pageName: string) {
         const boutonRetour = page.querySelector(
             'form .back-button, .form-controls .back-button'
         )
@@ -217,7 +241,7 @@ export class Router {
         })
     }
 
-    redirectTo(target) {
+    redirectTo(target: string) {
         if (
             typeof window !== 'undefined' &&
             window.history &&
