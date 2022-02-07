@@ -8,8 +8,6 @@ export function registerATInternet() {
     }
 
     function trigger(pageName) {
-        if (document.visibilityState === 'prerender') return ignore('prerendering')
-
         var payload = {}
         payload.s = siteID
         payload.ts = new Date().getTime()
