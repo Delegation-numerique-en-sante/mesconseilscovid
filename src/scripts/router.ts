@@ -62,7 +62,7 @@ export class Router {
         })
     }
 
-    beforeGlobalHook(done) {
+    beforeGlobalHook(done: Function) {
         const header = document.querySelector('header section')
         if (!header) {
             done()
@@ -145,7 +145,7 @@ export class Router {
                 page.classList.add('ready')
             },
             {
-                before: (done) => {
+                before: (done: Function) => {
                     if (typeof beforeFunc === 'undefined') {
                         done()
                         return

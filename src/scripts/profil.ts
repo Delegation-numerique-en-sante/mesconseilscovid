@@ -7,7 +7,7 @@ const JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF = 7
 const JOURS_DE_VALIDITE_DEPISTAGE_POSITIF = 30
 const JOURS_DE_VALIDITE_DEPISTAGE_EN_ATTENTE = 7
 
-type Etat = {
+export type Etat = {
     date: string
     symptomes: boolean
     essoufflement: string
@@ -21,7 +21,7 @@ type Etat = {
     confusion?: string
 }
 
-type ProfilData = {
+export type ProfilData = {
     [key: string]: any,
     _suivi_start_date?: string | undefined
     _symptomes_start_date?: string | undefined

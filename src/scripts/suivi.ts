@@ -1,7 +1,7 @@
 import { format } from 'timeago.js'
 
 import type Profil from './profil'
-import type Etat from './profil'
+import type {Etat} from './profil'
 import { createElementFromHTML, safeHtml } from './affichage'
 import AlgorithmeSuivi from './algorithme/suivi'
 import { titleCase } from './utils'
@@ -99,9 +99,11 @@ export default class SuiviView {
 
     suiviParSymptome(
         symptome: Symptomes
-    ): { date: string; statut: string | boolean }[] {
+    ): { date: string; statut: string }[] {
         return this.profil.suivi.map((etat) => {
-            return { date: etat.date, statut: etat[symptome] || '' }
+            // TS: potentiellement on veut pouvoir garder une valeur
+            // booléenne ici.
+            return { date: etat.date, statut: String(etat[symptome]) }
         })
     }
 
@@ -323,7 +325,7 @@ export default class SuiviView {
     }
 
     // TS: celle-ci est intrigante, etat est considéré comme étant un Profil.
-    renderGraviteTableCell(etat: Etat, algoSuivi) {
+    renderGraviteTableCell(etat: Etat, algoSuivi: AlgorithmeSuivi) {
         const gravite = `gravite_${algoSuivi.calculGravite(etat)}`
         return `<tr>
             <td>${this.renderDate(etat.date)}</td>
