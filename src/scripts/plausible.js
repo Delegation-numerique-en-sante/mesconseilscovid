@@ -29,8 +29,6 @@ export function registerPlausible(window) {
     }
 
     function trigger(eventName, options) {
-        if (document.visibilityState === 'prerender') return ignore('prerendering')
-
         var payload = {}
         payload.n = eventName
         payload.u = getUrl()
