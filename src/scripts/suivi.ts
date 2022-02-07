@@ -1,11 +1,36 @@
 import { format } from 'timeago.js'
-import { createElementFromHTML, safeHtml } from './affichage'
 
+import type Profil from './profil'
+import type Etat from './profil'
+import { createElementFromHTML, safeHtml } from './affichage'
 import AlgorithmeSuivi from './algorithme/suivi'
 import { titleCase } from './utils'
 
+type SuiviImages = {
+    gravite: string
+    gravite_superieure: string
+    interrogation: string
+    ok: string
+    stable: string
+}
+
+type Symptomes =
+    | 'symptomes'
+    | 'essoufflement'
+    | 'etatGeneral'
+    | 'etatPsychologique'
+    | 'alimentationHydratation'
+    | 'fievre'
+    | 'diarrheeVomissements'
+    | 'mauxDeTete'
+    | 'toux'
+    | 'confusion'
+
 export default class SuiviView {
-    constructor(profil, suiviImages) {
+    profil: Profil
+    suiviImages: SuiviImages
+
+    constructor(profil: Profil, suiviImages: SuiviImages) {
         this.profil = profil
         this.suiviImages = suiviImages
     }
@@ -42,7 +67,7 @@ export default class SuiviView {
 
     renderDernierSuivi() {
         const dernierEtat = this.profil.dernierEtat()
-        if (dernierEtat) {
+        if (dernierEtat && Object.keys(dernierEtat).length !== 0) {
             const relativeDate = format(new Date(dernierEtat.date), 'fr')
             return `<small>Dernière réponse : ${relativeDate}</small>`
         }
@@ -72,13 +97,15 @@ export default class SuiviView {
         )}</p>`
     }
 
-    suiviParSymptome(symptome) {
+    suiviParSymptome(
+        symptome: Symptomes
+    ): { date: string; statut: string | boolean }[] {
         return this.profil.suivi.map((etat) => {
-            return { date: etat.date, statut: etat[symptome] }
+            return { date: etat.date, statut: etat[symptome] || '' }
         })
     }
 
-    switchSymptomeTitre(value) {
+    switchSymptomeTitre(value: Symptomes) {
         switch (value) {
             case 'essoufflement':
                 return 'Manque de souffle'
@@ -103,7 +130,7 @@ export default class SuiviView {
         }
     }
 
-    switchStatut(value) {
+    switchStatut(value: string) {
         switch (value) {
             case 'critique':
                 return 'Beaucoup moins bien'
@@ -122,7 +149,7 @@ export default class SuiviView {
         }
     }
 
-    switchBooleen(value) {
+    switchBooleen(value: string) {
         switch (value) {
             case 'oui':
                 return 'Oui'
@@ -135,7 +162,7 @@ export default class SuiviView {
         }
     }
 
-    switchBooleenOptionnel(value) {
+    switchBooleenOptionnel(value: string) {
         switch (value) {
             case 'oui':
                 return 'Oui'
@@ -148,7 +175,7 @@ export default class SuiviView {
         }
     }
 
-    switchGravite(value) {
+    switchGravite(value: string) {
         switch (value) {
             case 'gravite_3':
                 return 'État grave, il est recommandé d’appeler le SAMU (15)'
@@ -163,7 +190,7 @@ export default class SuiviView {
         }
     }
 
-    switchIcone(value) {
+    switchIcone(value: string) {
         switch (value) {
             case 'critique':
             case 'oui':
@@ -185,19 +212,19 @@ export default class SuiviView {
         }
     }
 
-    renderDate(date) {
+    renderDate(date: string) {
         const options = { weekday: 'long', month: 'long', day: 'numeric' }
         return titleCase(new Date(date).toLocaleString('fr-FR', options))
     }
 
-    renderIcone(statut) {
+    renderIcone(statut: string) {
         const icone = this.switchIcone(statut)
         const imgSrc = this.suiviImages[icone]
         return `<img src="${imgSrc}" width="40px" height="40px"
                      alt="${titleCase(icone)}" title="${titleCase(icone)}" />`
     }
 
-    renderSymptomeStatutTableCell(etat) {
+    renderSymptomeStatutTableCell(etat: { date: string; statut: string }) {
         return `<tr>
             <td>${this.renderDate(etat.date)}</td>
             <td>${this.renderIcone(etat.statut)}</td>
@@ -205,7 +232,10 @@ export default class SuiviView {
         </tr>`
     }
 
-    renderSymptomeStatut(symptome, data) {
+    renderSymptomeStatut(
+        symptome: Symptomes,
+        data: { date: string; statut: string }[]
+    ) {
         const caption = `<caption><h3>${this.switchSymptomeTitre(
             symptome
         )}</h3></caption>`
@@ -226,7 +256,7 @@ export default class SuiviView {
         </table>`
     }
 
-    renderSymptomeBooleenTableCell(etat) {
+    renderSymptomeBooleenTableCell(etat: { date: string; statut: string }) {
         return `<tr>
             <td>${this.renderDate(etat.date)}</td>
             <td>${this.renderIcone(etat.statut)}</td>
@@ -234,7 +264,10 @@ export default class SuiviView {
         </tr>`
     }
 
-    renderSymptomeBooleen(symptome, data) {
+    renderSymptomeBooleen(
+        symptome: Symptomes,
+        data: { date: string; statut: string }[]
+    ) {
         const caption = `<caption><h3>${this.switchSymptomeTitre(
             symptome
         )}</h3></caption>`
@@ -255,7 +288,7 @@ export default class SuiviView {
         </table>`
     }
 
-    renderSymptomeBooleenOptionnelTableCell(etat) {
+    renderSymptomeBooleenOptionnelTableCell(etat: { date: string; statut: string }) {
         return `<tr>
             <td>${this.renderDate(etat.date)}</td>
             <td>${this.renderIcone(etat.statut)}</td>
@@ -263,7 +296,10 @@ export default class SuiviView {
         </tr>`
     }
 
-    renderSymptomeBooleenOptionnel(symptome, data) {
+    renderSymptomeBooleenOptionnel(
+        symptome: Symptomes,
+        data: { date: string; statut: string }[]
+    ) {
         const caption = `<caption><h3>${this.switchSymptomeTitre(
             symptome
         )}</h3></caption>`
@@ -286,7 +322,8 @@ export default class SuiviView {
         </table>`
     }
 
-    renderGraviteTableCell(etat, algoSuivi) {
+    // TS: celle-ci est intrigante, etat est considéré comme étant un Profil.
+    renderGraviteTableCell(etat: Etat, algoSuivi) {
         const gravite = `gravite_${algoSuivi.calculGravite(etat)}`
         return `<tr>
             <td>${this.renderDate(etat.date)}</td>
@@ -317,16 +354,24 @@ export default class SuiviView {
     }
 
     renderHistorique() {
-        const symptomesStatuts = ['essoufflement', 'etatGeneral', 'etatPsychologique']
-        const symptomesBooleens = [
-            'alimentationHydratation',
-            'diarrheeVomissements',
-            'fievre',
-        ]
+        const symptomesStatuts: (
+            | 'essoufflement'
+            | 'etatGeneral'
+            | 'etatPsychologique'
+        )[] = ['essoufflement', 'etatGeneral', 'etatPsychologique']
+        const symptomesBooleens: (
+            | 'alimentationHydratation'
+            | 'diarrheeVomissements'
+            | 'fievre'
+            | 'confusion'
+        )[] = ['alimentationHydratation', 'diarrheeVomissements', 'fievre']
         if (!this.profil.estMonProfil()) {
             symptomesBooleens.push('confusion')
         }
-        const symptomesBooleensOptionnels = ['mauxDeTete', 'toux']
+        const symptomesBooleensOptionnels: ('mauxDeTete' | 'toux')[] = [
+            'mauxDeTete',
+            'toux',
+        ]
         return createElementFromHTML(`
             <div>
                 ${this.renderDebutSymptomes()}

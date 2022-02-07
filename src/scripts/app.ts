@@ -1,4 +1,5 @@
 import type ProfilData from './profil'
+import type SuiviImages from './suivi'
 import Profil from './profil'
 import StockageLocal from './stockage'
 import { hideElement, showElement } from './affichage'
@@ -37,11 +38,12 @@ import {
 import { registerPlausible } from './plausible'
 import { registerATInternet } from './atinternet'
 
+
 export default class App {
     profil: Profil
     stockage: StockageLocal
     questionnaire: Questionnaire
-    suiviImages: string[]
+    suiviImages: SuiviImages
     source: any
     _plausibleTrackingEvents: string[]
     _plausible: Function
@@ -49,7 +51,7 @@ export default class App {
     router: Router
     updater: Updater
 
-    constructor(suiviImages: string[]) {
+    constructor(suiviImages: SuiviImages) {
         this.profil = new Profil()
         this.stockage = new StockageLocal()
         this.questionnaire = new Questionnaire()

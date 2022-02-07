@@ -18,6 +18,7 @@ type Etat = {
     diarrheeVomissements: string
     mauxDeTete: string
     toux: string
+    confusion?: string
 }
 
 type ProfilData = {
@@ -863,7 +864,7 @@ export default class Profil {
         this.suivi.push(etat)
     }
 
-    dernierEtat() {
+    dernierEtat(): Etat | {} {
         return this.hasHistorique() ? this.suivi.slice(-1)[0] : {}
     }
 
