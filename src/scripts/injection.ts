@@ -1,13 +1,16 @@
 import { format } from 'timeago.js'
 
+import type App from './app'
+import type Profil from './profil'
+import type AlgorithmeOrientation from './algorithme/orientation'
 import { titleCase } from './utils'
 
-export function nomProfil(element, app) {
+export function nomProfil(element: HTMLElement, app: App) {
     if (!element) return
     element.textContent = app.profil.affichageNom()
 }
 
-export function titreConseils(element, profil) {
+export function titreConseils(element: HTMLElement, profil: Profil) {
     if (!element) return
     const titre = profil.estMonProfil()
         ? 'Mes conseils'
@@ -15,7 +18,7 @@ export function titreConseils(element, profil) {
     element.textContent = titre
 }
 
-export function dateConseils(element) {
+export function dateConseils(element: HTMLElement) {
     if (!element) return
     const now = new Date()
     const nowISO = now.toISOString().substring(0, 10)
@@ -23,7 +26,10 @@ export function dateConseils(element) {
     element.innerHTML = `au <time datetime="${nowISO}">${nowReadable}</time>`
 }
 
-export function caracteristiquesOuAntecedentsARisques(element, algoOrientation) {
+export function caracteristiquesOuAntecedentsARisques(
+    element: HTMLElement,
+    algoOrientation: AlgorithmeOrientation
+) {
     let caracteristiques = _caracteristiquesARisques(algoOrientation)
     caracteristiques.push(..._antecedentsARisques(algoOrientation))
     if (caracteristiques) {
@@ -31,7 +37,10 @@ export function caracteristiquesOuAntecedentsARisques(element, algoOrientation) 
     }
 }
 
-export function caracteristiquesARisques(element, algoOrientation) {
+export function caracteristiquesARisques(
+    element: HTMLElement,
+    algoOrientation: AlgorithmeOrientation
+) {
     let caracteristiques = _caracteristiquesARisques(algoOrientation)
     if (caracteristiques) {
         var content = formatListe(caracteristiques)
@@ -39,7 +48,7 @@ export function caracteristiquesARisques(element, algoOrientation) {
     }
 }
 
-function _caracteristiquesARisques(algoOrientation) {
+function _caracteristiquesARisques(algoOrientation: AlgorithmeOrientation) {
     let caracteristiques = []
     if (algoOrientation.sup65) {
         caracteristiques.push('vous êtes âgé·e de plus de 65 ans')
@@ -54,7 +63,7 @@ function _caracteristiquesARisques(algoOrientation) {
     return caracteristiques
 }
 
-function formatListe(liste) {
+function formatListe(liste: string[]) {
     if (liste.length === 1) {
         return liste[0]
     }
@@ -66,7 +75,10 @@ function formatListe(liste) {
     )
 }
 
-export function antecedents(element, algoOrientation) {
+export function antecedents(
+    element: HTMLElement,
+    algoOrientation: AlgorithmeOrientation
+) {
     let antecedents = _antecedentsARisques(algoOrientation)
     if (antecedents) {
         var content = formatListe(antecedents)
@@ -74,7 +86,7 @@ export function antecedents(element, algoOrientation) {
     }
 }
 
-export function _antecedentsARisques(algoOrientation) {
+export function _antecedentsARisques(algoOrientation: AlgorithmeOrientation) {
     let antecedents = []
     if (algoOrientation.antecedents) {
         antecedents.push('vous avez des antécédents à risque')
@@ -88,11 +100,12 @@ export function _antecedentsARisques(algoOrientation) {
     return antecedents
 }
 
-export function suiviRepetition(element, profil) {
-    element.textContent = profil.suivi.length
+export function suiviRepetition(element: HTMLElement, profil: Profil) {
+    element.textContent = String(profil.suivi.length)
 }
 
-export function suiviDerniereFois(element, profil) {
+export function suiviDerniereFois(element: HTMLElement, profil: Profil) {
     const dernierEtat = profil.dernierEtat()
-    element.textContent = dernierEtat ? format(new Date(dernierEtat.date), 'fr') : ''
+    if (!dernierEtat || Object.keys(dernierEtat).length === 0) return ''
+    element.textContent = format(new Date(dernierEtat.date), 'fr')
 }
