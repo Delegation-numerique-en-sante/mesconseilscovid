@@ -1,3 +1,5 @@
+import type App from '../app'
+import type { Etat } from '../profil'
 import { hideElement, showElement } from '../affichage'
 import { bindFeedback, injectFeedbackDifficultes } from '../feedback'
 import {
@@ -8,33 +10,44 @@ import {
 
 import AlgorithmeDeconfinement from '../algorithme/deconfinement'
 
-export default function suivisymptomes(page, app) {
-    const form = page.querySelector('form')
-
-    injectFeedbackDifficultes(page.querySelector('.feedback-difficultes'))
-    bindFeedback(page.querySelector('.feedback-component'), app)
-
+export default function suivisymptomes(page: HTMLElement, app: App) {
+    const feedbackDifficultes: HTMLElement | null = page.querySelector(
+        '.feedback-difficultes'
+    )
+    if (feedbackDifficultes) {
+        injectFeedbackDifficultes(feedbackDifficultes)
+    }
+    const feedbackComponent: HTMLElement | null =
+        page.querySelector('.feedback-component')
+    if (feedbackComponent) {
+        bindFeedback(feedbackComponent, app)
+    }
     // Enregistre le démarrage du suivi si la date n’est pas renseignée
     // (elle a pu être mise à zéro en cas d’effacement du suivi).
     if (!app.profil.hasSuiviStartDate()) {
         app.profil.suivi_start_date = new Date()
     }
 
+    const form = page.querySelector('form')
+    if (!form) return
+
     // Question affichée seulement si on répond pour un proche.
     const pourUnProche = !app.profil.estMonProfil()
-    var themOnly = form.querySelector('.them-only')
-    if (pourUnProche) {
-        showElement(themOnly)
-        themOnly.classList.add('required')
-    } else {
-        hideElement(themOnly)
-        themOnly.classList.remove('required')
+    let themOnly: HTMLElement | null = form.querySelector('.them-only')
+    if (themOnly) {
+        if (pourUnProche) {
+            showElement(themOnly)
+            themOnly.classList.add('required')
+        } else {
+            hideElement(themOnly)
+            themOnly.classList.remove('required')
+        }
     }
 
-    var button = form.querySelector('input[type=submit]')
+    const button: HTMLInputElement | null = form.querySelector('input[type=submit]')
     // On pré-suppose que la personne qui fait son auto-suivi a des symptômes.
     form['suivi_symptomes'].checked = true
-    var primary = form.elements['suivi_symptomes']
+    const primary = form.elements['suivi_symptomes']
     enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
         enableOrDisableSecondaryFields(form, primary)
@@ -45,33 +58,27 @@ export default function suivisymptomes(page, app) {
     const requiredLabel = 'Veuillez remplir le formulaire au complet'
     toggleFormButtonOnCheckboxAndRadioRequired(
         form,
-        button.value,
+        button?.value || '',
         uncheckedLabel,
         requiredLabel
     )
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        const form = event.target
-        let etat = {
+        const form = event.target as HTMLFormElement
+        let etat: Etat = {
             date: new Date().toJSON(),
             symptomes: form.elements['suivi_symptomes'].checked,
-            essoufflement: getRadioValue(form, 'suivi_symptomes_essoufflement'),
-            etatGeneral: getRadioValue(form, 'suivi_symptomes_etat_general'),
-            alimentationHydratation: getRadioValue(
-                form,
-                'suivi_symptomes_alimentation_hydratation'
-            ),
-            etatPsychologique: getRadioValue(
-                form,
-                'suivi_symptomes_etat_psychologique'
-            ),
-            fievre: getRadioValue(form, 'suivi_symptomes_fievre'),
-            diarrheeVomissements: getRadioValue(
-                form,
-                'suivi_symptomes_diarrhee_vomissements'
-            ),
-            mauxDeTete: getRadioValue(form, 'suivi_symptomes_maux_de_tete'),
-            toux: getRadioValue(form, 'suivi_symptomes_toux'),
+            essoufflement: getRadioValue(form, 'suivi_symptomes_essoufflement') || '',
+            etatGeneral: getRadioValue(form, 'suivi_symptomes_etat_general') || '',
+            alimentationHydratation:
+                getRadioValue(form, 'suivi_symptomes_alimentation_hydratation') || '',
+            etatPsychologique:
+                getRadioValue(form, 'suivi_symptomes_etat_psychologique') || '',
+            fievre: getRadioValue(form, 'suivi_symptomes_fievre') || '',
+            diarrheeVomissements:
+                getRadioValue(form, 'suivi_symptomes_diarrhee_vomissements') || '',
+            mauxDeTete: getRadioValue(form, 'suivi_symptomes_maux_de_tete') || '',
+            toux: getRadioValue(form, 'suivi_symptomes_toux') || '',
         }
         if (pourUnProche) {
             etat.confusion = getRadioValue(form, 'suivi_symptomes_confusion')
@@ -88,8 +95,8 @@ export default function suivisymptomes(page, app) {
             app.plausible(`Troisième suivi`)
         }
 
-        const estOui = (symptome) => symptome === 'oui'
-        const estCritiqueOuPire = (symptome) =>
+        const estOui = (symptome: string) => symptome === 'oui'
+        const estCritiqueOuPire = (symptome: string) =>
             symptome === 'pire' || symptome === 'critique'
 
         if (etat.symptomes) {

@@ -1,18 +1,21 @@
+import type App from '../app'
 import { bindCalendar } from '../actions'
 import SuiviView from '../suivi'
 
-export default function suiviintroduction(page, app) {
+export default function suiviintroduction(page: HTMLElement, app: App) {
     const element = page
     const suivi = new SuiviView(app.profil, app.suiviImages)
     const container = element.querySelector('#profils-cards-suivi')
+    if (!container) return
     const card = container.insertBefore(suivi.renderCardSuivi(), container.firstChild)
-    if (app.profil.hasSuiviStartDate()) {
-        bindSuppression(card.querySelector('[data-delete-suivi]'), app)
+    const deleteSuivi: HTMLElement | null = card.querySelector('[data-delete-suivi]')
+    if (app.profil.hasSuiviStartDate() && deleteSuivi) {
+        bindSuppression(deleteSuivi, app)
         bindCalendar(element, app.profil)
     }
 }
 
-function bindSuppression(element, app) {
+function bindSuppression(element: HTMLElement, app: App) {
     element.addEventListener('click', (event) => {
         event.preventDefault()
         const nom = element.dataset.deleteSuivi
@@ -21,6 +24,7 @@ function bindSuppression(element, app) {
             app.supprimerSuivi(nom).then(() => {
                 app.chargerProfilActuel().then(() => {
                     // TODO: find a clever way to re-render the current page.
+                    // @ts-expect-error
                     window.location.reload(true)
                 })
             })

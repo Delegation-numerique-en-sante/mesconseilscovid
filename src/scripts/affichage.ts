@@ -56,10 +56,10 @@ export function displayBlocks(element: HTMLElement, blockNames: string[]) {
     })
 }
 
-export function createElementFromHTML(htmlString: string) {
+export function createElementFromHTML(htmlString: string): HTMLElement {
     const div = document.createElement('div')
     div.innerHTML = htmlString.trim()
-    return div.firstElementChild
+    return div.firstElementChild as HTMLElement
 }
 
 export function cloneElementInto(

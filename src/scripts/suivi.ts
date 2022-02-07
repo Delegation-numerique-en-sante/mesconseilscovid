@@ -6,7 +6,7 @@ import { createElementFromHTML, safeHtml } from './affichage'
 import AlgorithmeSuivi from './algorithme/suivi'
 import { titleCase } from './utils'
 
-type SuiviImages = {
+export type SuiviImages = {
     gravite: string
     gravite_superieure: string
     interrogation: string

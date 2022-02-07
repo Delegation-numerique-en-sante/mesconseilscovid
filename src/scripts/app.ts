@@ -1,5 +1,5 @@
 import type ProfilData from './profil'
-import type SuiviImages from './suivi'
+import type { SuiviImages } from './suivi'
 import Profil from './profil'
 import StockageLocal from './stockage'
 import { hideElement, showElement } from './affichage'

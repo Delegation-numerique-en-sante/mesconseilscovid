@@ -1,3 +1,4 @@
+import type App from '../app'
 import Profil from '../profil'
 import {
     createElementFromHTML,
@@ -7,20 +8,24 @@ import {
 } from '../affichage'
 import { navigueVersUneThematique } from './thematiques/navigation'
 
-export default function introduction(page, app) {
+export default function introduction(page: HTMLElement, app: App) {
     const element = page
 
     const header = document.querySelector('header section')
-    showElement(header.querySelector('.js-profil-empty'))
-    hideElement(header.querySelector('.js-profil-full'))
-
+    if (header) {
+        showElement(header.querySelector('.js-profil-empty'))
+        hideElement(header.querySelector('.js-profil-full'))
+    }
     metEnAvantCarteSymptomes(element, app)
     navigueVersUneThematique(app, 'Navigue vers une thématique depuis l’accueil')
 }
 
-function metEnAvantCarteSymptomes(element, app) {
-    const card = element.querySelector('.thematiques .cards .j-ai-des-symptomes-covid')
-    app.stockage.getProfils().then((noms) => {
+function metEnAvantCarteSymptomes(element: HTMLElement, app: App) {
+    const card: HTMLElement | null = element.querySelector(
+        '.thematiques .cards .j-ai-des-symptomes-covid'
+    )
+    if (!card) return
+    app.stockage.getProfils().then((noms: string[]) => {
         if (noms.length > 0) {
             updateCardActions(card, noms, app).then(() => {
                 // On remonte la carte au dessus des autres
@@ -29,6 +34,7 @@ function metEnAvantCarteSymptomes(element, app) {
                 // On met en avant le premier bouton du premier profil
                 // (ce sera toujours "Moi" si ce profil existe)
                 const boutonPrincipal = card.querySelector('.actions-profil a')
+                if (!boutonPrincipal) return
                 boutonPrincipal.classList.remove('button-outline')
 
                 // On cache le nom si ce n’est que mon profil.
@@ -40,12 +46,13 @@ function metEnAvantCarteSymptomes(element, app) {
     })
 }
 
-function updateCardActions(card, noms, app) {
+function updateCardActions(card: HTMLElement, noms: string[], app: App) {
     const container = card.querySelector('.card-actions')
+    if (!container) return
     return Promise.all(
         noms.map((nom) => {
             const profil = new Profil(nom)
-            return app.stockage.charger(profil).then((profil) => {
+            return app.stockage.charger(profil).then((profil: Profil) => {
                 return renderProfilActions(profil, app)
             })
         })
@@ -57,7 +64,7 @@ function updateCardActions(card, noms, app) {
     })
 }
 
-function renderProfilActions(profil, app) {
+function renderProfilActions(profil: Profil, app: App) {
     return createElementFromHTML(
         `<div class="actions-profil">
             <p class="nom">${profil.affichageNom()}</p>
@@ -66,39 +73,56 @@ function renderProfilActions(profil, app) {
     )
 }
 
-function bindProfilActions(element, app) {
+function bindProfilActions(element: HTMLElement, app: App) {
     const conseilsLink = element.querySelector('.conseils-link')
     if (conseilsLink) {
         conseilsLink.setAttribute('href', '#conseils')
     }
 
-    Array.from(element.querySelectorAll('[data-set-profil]')).forEach((profilLink) => {
-        bindSetProfil(profilLink, app)
-    })
+    const profilLinks: HTMLElement[] | null = Array.from(
+        element.querySelectorAll('[data-set-profil]')
+    )
+    if (profilLinks) {
+        profilLinks.forEach((profilLink) => {
+            bindSetProfil(profilLink, app)
+        })
+    }
 
-    bindSuppression(element.querySelector('[data-delete-profil]'), app)
+    const deleteProfil: HTMLElement | null =
+        element.querySelector('[data-delete-profil]')
+    if (deleteProfil) {
+        bindSuppression(deleteProfil, app)
+    }
 }
 
-function bindSetProfil(element, app) {
+function bindSetProfil(element: HTMLElement, app: App) {
     element.addEventListener('click', function (event) {
         event.preventDefault()
-        app.basculerVersProfil(element.dataset.setProfil).then(() => {
-            app.router.navigate(event.target.getAttribute('href'))
+        if (!event.target) return
+        const target = event.target as HTMLAnchorElement
+        const nextPage = target.getAttribute('href')
+        if (!nextPage) return
+        const setProfil = element.dataset.setProfil
+        if (!setProfil) return
+        app.basculerVersProfil(setProfil).then(() => {
+            app.router.navigate(nextPage)
         })
     })
 }
 
-function bindSuppression(element, app) {
+function bindSuppression(element: HTMLElement, app: App) {
     element.addEventListener('click', function (event) {
         event.preventDefault()
         app.plausible('Suppression')
         const nom = element.dataset.deleteProfil
+        if (!nom) return
         const description =
             nom === 'mes_infos' ? 'vos réponses' : `les réponses de ${nom}`
         if (confirm(`Êtes-vous sûr·e de vouloir supprimer ${description} ?`)) {
             app.supprimerProfil(nom).then(() => {
                 app.chargerProfilActuel().then(() => {
                     // TODO: find a clever way to re-render the current page.
+                    // @ts-expect-error
                     window.location.reload(true)
                 })
             })

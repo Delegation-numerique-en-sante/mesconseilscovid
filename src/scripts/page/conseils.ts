@@ -1,5 +1,7 @@
 import applyDetailsSummaryPolyfill from '../polyfills/details_polyfill'
 
+import type App from '../app'
+import type Profil from '../profil'
 import { navigueVersUneThematique } from './thematiques/navigation'
 import { bindCalendar, bindImpression, bindSuppressionTotale } from '../actions'
 import {
@@ -19,7 +21,7 @@ import AlgorithmeOrientation from '../algorithme/orientation'
 import AlgorithmeSuivi from '../algorithme/suivi'
 import AlgorithmeVaccination from '../algorithme/vaccination'
 
-export default function conseils(page, app) {
+export default function conseils(page: HTMLElement, app: App) {
     const element = page
 
     applyDetailsSummaryPolyfill(element)
@@ -89,18 +91,25 @@ export default function conseils(page, app) {
     }
 
     // Make the buttons clickable with appropriate actions.
-    bindFeedback(element.querySelector('.feedback-component'), app)
+    const feedbackComponent: HTMLElement | null =
+        element.querySelector('.feedback-component')
+    if (feedbackComponent) {
+        bindFeedback(feedbackComponent, app)
+    }
     bindImpression(element, app)
     if (app.profil.hasSuiviStartDate()) {
         bindCalendar(element, app.profil)
     }
-    bindSuppressionTotale(element.querySelector('.js-suppression'), app)
+    const jsSuppression: HTMLElement | null = element.querySelector('.js-suppression')
+    if (jsSuppression) {
+        bindSuppressionTotale(jsSuppression, app)
+    }
     navigueVersUneThematique(app, 'Navigue vers une thématique depuis les conseils')
 }
 
-export function cacherElementsConditionnels(element, profil) {
+export function cacherElementsConditionnels(element: HTMLElement, profil: Profil) {
     // Éléments conditionnés à une activité professionnelle.
-    const activitePro = profil.activite_pro || profil.activite_pro_sante
+    const activitePro = profil.activite_pro || (profil.activite_pro_sante as boolean)
     showOnlyIf(element, '.seulement-si-activite-pro', activitePro)
 
     // Éléments conditionnés à une activité professionnelle ET autotest
@@ -119,7 +128,7 @@ export function cacherElementsConditionnels(element, profil) {
     )
 
     // Éléments conditionnés à un foyer partagé.
-    showOnlyIf(element, '.seulement-si-foyer', profil.foyer_autres_personnes)
+    showOnlyIf(element, '.seulement-si-foyer', profil.foyer_autres_personnes as boolean)
 
     // Éléments conditionnés à la vaccination.
     const algoOrientation = new AlgorithmeOrientation(profil)
@@ -136,7 +145,7 @@ export function cacherElementsConditionnels(element, profil) {
     )
 }
 
-function showRelevantSuiviBlocks(element, algoSuivi) {
+function showRelevantSuiviBlocks(element: HTMLElement, algoSuivi: AlgorithmeSuivi) {
     const profil = algoSuivi.profil
     const blockNames = [algoSuivi.graviteBlockNameToDisplay()]
     if (algoSuivi.psy !== 0) {
@@ -148,19 +157,33 @@ function showRelevantSuiviBlocks(element, algoSuivi) {
         blockNames.push('conseils-sante')
         blockNames.push('conseils-sante-historique-symptomes')
 
-        Array.from(element.querySelectorAll('.suivi-repetition')).forEach((elem) => {
-            injection.suiviRepetition(elem, profil)
-        })
+        const suiviRepetition: HTMLElement[] | null = Array.from(
+            element.querySelectorAll('.suivi-repetition')
+        )
+        if (suiviRepetition) {
+            suiviRepetition.forEach((elem) => {
+                injection.suiviRepetition(elem, profil)
+            })
+        }
 
-        Array.from(element.querySelectorAll('.suivi-derniere-fois')).forEach((elem) => {
-            injection.suiviDerniereFois(elem, profil)
-        })
+        const suiviDerniereFois: HTMLElement[] | null = Array.from(
+            element.querySelectorAll('.suivi-derniere-fois')
+        )
+        if (suiviDerniereFois) {
+            suiviDerniereFois.forEach((elem) => {
+                injection.suiviDerniereFois(elem, profil)
+            })
+        }
     }
     displayBlocks(element, blockNames)
 }
 
-export function showRelevantBlocks(element, profil, algoOrientation) {
-    var blockNames = []
+export function showRelevantBlocks(
+    element: HTMLElement,
+    profil: Profil,
+    algoOrientation: AlgorithmeOrientation
+) {
+    let blockNames: string[] = []
     blockNames = blockNames.concat(statutBlockNamesToDisplay(algoOrientation))
     blockNames = blockNames.concat(algoOrientation.timelineBlockNamesToDisplay())
     blockNames = blockNames.concat(
@@ -178,7 +201,7 @@ export function showRelevantBlocks(element, profil, algoOrientation) {
     displayBlocks(element, blockNames)
 }
 
-function showRelevantEvolutionsRecap(element, algoSuivi) {
+function showRelevantEvolutionsRecap(element: HTMLElement, algoSuivi: AlgorithmeSuivi) {
     var blockNames = algoSuivi.evolutionsBlockNamesToDisplay()
     if (blockNames.length) {
         showElement(element.querySelector('.reponse'))
@@ -186,35 +209,64 @@ function showRelevantEvolutionsRecap(element, algoSuivi) {
     }
 }
 
-export function dynamicDataInjection(element, profil, algoOrientation) {
-    injection.titreConseils(element.querySelector('#conseils-block-titre'), profil)
-    injection.dateConseils(element.querySelector('#conseils-block-date'))
+export function dynamicDataInjection(
+    element: HTMLElement,
+    profil: Profil,
+    algoOrientation: AlgorithmeOrientation
+) {
+    const conseilsBlockTitre: HTMLElement | null = element.querySelector(
+        '#conseils-block-titre'
+    )
+    if (conseilsBlockTitre) {
+        injection.titreConseils(conseilsBlockTitre, profil)
+    }
 
-    Array.from(element.querySelectorAll('.nom-caracteristiques-a-risques')).forEach(
-        (elem) => {
+    const conseilsBlockDate: HTMLElement | null =
+        element.querySelector('#conseils-block-date')
+    if (conseilsBlockDate) {
+        injection.dateConseils(conseilsBlockDate)
+    }
+
+    const nomCaracteristiquesARisques: HTMLElement[] | null = Array.from(
+        element.querySelectorAll('.nom-caracteristiques-a-risques')
+    )
+    if (nomCaracteristiquesARisques) {
+        nomCaracteristiquesARisques.forEach((elem) => {
             injection.caracteristiquesARisques(elem, algoOrientation)
-        }
-    )
+        })
+    }
 
-    Array.from(element.querySelectorAll('.reponse-personne-fragile')).forEach(
-        (elem) => {
+    const reponsePersonneFragile: HTMLElement[] | null = Array.from(
+        element.querySelectorAll('.reponse-personne-fragile')
+    )
+    if (reponsePersonneFragile) {
+        reponsePersonneFragile.forEach((elem) => {
             injection.caracteristiquesOuAntecedentsARisques(elem, algoOrientation)
-        }
-    )
+        })
+    }
 
-    Array.from(element.querySelectorAll('.nom-antecedents')).forEach((elem) => {
-        injection.antecedents(elem, algoOrientation)
-    })
+    const nomAntecedents: HTMLElement[] | null = Array.from(
+        element.querySelectorAll('.nom-antecedents')
+    )
+    if (nomAntecedents) {
+        nomAntecedents.forEach((elem) => {
+            injection.antecedents(elem, algoOrientation)
+        })
+    }
 
     dynamicTimelineDataInjection(element, profil)
 }
 
-function dynamicTimelineDataInjection(element, profil) {
-    function formatDate(date) {
+function dynamicTimelineDataInjection(element: HTMLElement, profil: Profil) {
+    function formatDate(date: Date | undefined) {
         if (typeof date === 'undefined') {
             return ''
         }
-        const options = {
+        const options: {
+            weekday: 'short' | 'long' | 'narrow' | undefined
+            month: 'long' | 'short' | 'narrow' | 'numeric' | '2-digit' | undefined
+            day: 'numeric' | '2-digit' | undefined
+        } = {
             weekday: 'long',
             month: 'long',
             day: 'numeric',
@@ -222,7 +274,7 @@ function dynamicTimelineDataInjection(element, profil) {
         return date.toLocaleDateString('fr-FR', options)
     }
 
-    function fillDate(part, content) {
+    function fillDate(part: string, content: string) {
         Array.from(
             element.querySelectorAll(`.timeline .timeline-${part} .timeline-date`)
         ).forEach((elem) => {
@@ -230,7 +282,14 @@ function dynamicTimelineDataInjection(element, profil) {
         })
     }
 
-    function fillDates(dates) {
+    function fillDates(dates: {
+        exposition: Date
+        contagiosite: Date
+        debutIsolement: string
+        demain: Date
+        finIsolement: Date | undefined
+        finIsolementPositif: Date | undefined
+    }) {
         fillDate('exposition', `À partir du ${formatDate(dates.exposition)}`)
         fillDate('contagiosite', formatDate(dates.contagiosite))
         fillDate('isolement', dates.debutIsolement)
@@ -241,8 +300,11 @@ function dynamicTimelineDataInjection(element, profil) {
         fillDate('fin-positif', `À partir du ${formatDate(dates.finIsolementPositif)}`)
     }
 
-    function fillDuration(dureeIsolement) {
-        element.querySelector('.duree-isolement').innerText = dureeIsolement
+    function fillDuration(dureeIsolement: number) {
+        const dureeIsolementElement: HTMLElement | null =
+            element.querySelector('.duree-isolement')
+        if (!dureeIsolementElement) return
+        dureeIsolementElement.innerText = String(dureeIsolement)
     }
 
     const dureeIsolement = profil.dureeIsolement()
@@ -307,7 +369,7 @@ function dynamicTimelineDataInjection(element, profil) {
     }
 }
 
-function statutBlockNamesToDisplay(algoOrientation) {
+function statutBlockNamesToDisplay(algoOrientation: AlgorithmeOrientation) {
     const statut = `statut-${algoOrientation.statutEtConseils.statut}`
     return [statut]
 }

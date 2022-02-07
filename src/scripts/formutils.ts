@@ -356,7 +356,7 @@ export function toggleFormButtonOnSelectFieldsRequired(
 export function enableOrDisableSecondaryFields(
     form: HTMLFormElement,
     primary: HTMLInputElement,
-    secondaries: HTMLInputElement[]
+    secondaries?: HTMLInputElement[]
 ) {
     secondaries = Array.from(secondaries || form.querySelectorAll('.secondary'))
     const primaryDisabled = !primary.checked
