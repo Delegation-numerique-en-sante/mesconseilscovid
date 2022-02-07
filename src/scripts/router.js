@@ -81,7 +81,7 @@ export class Router {
 
     focusMainHeaderElement() {
         // A11Y: keyboard navigation
-        document.querySelector('[role="banner"]').focus()
+        document.querySelector('[role="banner"]')?.focus()
     }
 
     addQuestionnaireRoute(pageName, view, options) {
