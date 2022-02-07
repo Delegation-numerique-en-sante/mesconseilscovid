@@ -1,12 +1,12 @@
 // Statistiques pour Mes Conseils Covid (Plausible)
-export function registerPlausible(window) {
+export function registerPlausible(window: Window) {
     var location = window.location
     var document = window.document
     var plausibleHost = document.body.dataset.statsUrl
 
     var CONFIG = { domain: location.hostname }
 
-    function ignore(reason) {
+    function ignore(reason: string) {
         console.warn('[Plausible] Ignore event: ' + reason)
     }
 
@@ -28,10 +28,18 @@ export function registerPlausible(window) {
         return location.hash
     }
 
-    function trigger(eventName, options) {
-        if (document.visibilityState === 'prerender') return ignore('prerendering')
-
-        var payload = {}
+    function trigger(
+        eventName: string,
+        options: { props?: { source?: string }; callback?: Function }
+    ) {
+        let payload: {
+            n?: string
+            u?: string
+            d?: string
+            r?: string | null
+            w?: number
+            p?: string
+        } = {}
         payload.n = eventName
         payload.u = getUrl()
         payload.d = CONFIG['domain']
