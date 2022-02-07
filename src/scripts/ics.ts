@@ -1,7 +1,21 @@
 /* Inspired by https://github.com/nwcell/ics.js */
 
+export type RRule = {
+    rrule?: string,
+    freq: string,
+    interval: number,
+    count: number
+}
+
 export default class ICS {
-    constructor(appVersion) {
+    uidDomain: string
+    prodId: string
+    SEPARATOR: string
+    calendarEvents: string[]
+    calendarStart: string
+    calendarEnd: string
+
+    constructor(appVersion: string) {
         this.uidDomain = 'default'
         this.prodId = 'Calendar'
         this.SEPARATOR = appVersion.indexOf('Win') !== -1 ? '\r\n' : '\n'
@@ -14,7 +28,14 @@ export default class ICS {
         this.calendarEnd = this.SEPARATOR + 'END:VCALENDAR'
     }
 
-    addEvent(subject, description, startDate, duration, rrule, now) {
+    addEvent(
+        subject: string,
+        description: string,
+        startDate: Date,
+        duration: number,
+        rrule: RRule | undefined,
+        now?: Date
+    ) {
         const endDate = new Date(startDate)
         endDate.setHours(endDate.getHours() + duration)
         const dates = this.generateDates(startDate, endDate, now)
@@ -52,7 +73,7 @@ export default class ICS {
         )
     }
 
-    generateDates(startDate, endDate, now) {
+    generateDates(startDate: Date, endDate: Date, now?: Date) {
         // TODO: add time and time zone? use moment to format?
         const nowDate = now || new Date()
 
@@ -93,7 +114,7 @@ export default class ICS {
         }
     }
 
-    generateRRule(rrule) {
+    generateRRule(rrule: RRule | undefined) {
         let rruleString
         if (rrule) {
             if (rrule.rrule) {

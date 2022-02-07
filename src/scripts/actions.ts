@@ -1,4 +1,5 @@
 import type App from './app'
+import type {RRule} from './ics'
 import type Profil from './profil'
 
 import ICS from './ics'
@@ -14,7 +15,7 @@ export function bindCalendar(element: HTMLElement, profil: Profil) {
         ics.addEvent(
             'Début symptômes Covid-19',
             `Vous pouvez faire votre suivi quotidien sur ${urlSuivi}`,
-            profil.symptomes_start_date,
+            profil.symptomes_start_date as Date,
             duration,
             undefined
         )
@@ -22,7 +23,7 @@ export function bindCalendar(element: HTMLElement, profil: Profil) {
 
     // Définition de l'évènement récurrent à partir du premier suivi.
     const occurences = 15 // entrées dans le calendrier.
-    const rrule = {
+    const rrule: RRule = {
         // Le rappel est quotidien.
         freq: 'DAILY',
         interval: 1,
@@ -31,7 +32,7 @@ export function bindCalendar(element: HTMLElement, profil: Profil) {
     ics.addEvent(
         'Suivi Covid-19',
         `Aller faire mon suivi quotidien sur ${urlSuivi}`,
-        profil.suivi_start_date,
+        profil.suivi_start_date as Date,
         duration,
         rrule
     )
