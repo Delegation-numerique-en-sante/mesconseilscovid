@@ -316,7 +316,12 @@ export default class App {
     }
     plausible(
         eventName: string,
-        props: { source?: string; profil?: string; lang?: string[] } = {}
+        props: {
+            source?: string
+            profil?: string
+            lang?: string[]
+            service?: string
+        } = {}
     ) {
         // Ajoute la source de la visite.
         if (this.source) {
