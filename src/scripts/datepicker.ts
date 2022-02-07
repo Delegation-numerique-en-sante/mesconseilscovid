@@ -8,7 +8,7 @@ function isDateSupported() {
     return input.value !== value
 }
 
-export function formatDate(date) {
+export function formatDate(date: Date | undefined) {
     if (typeof date === 'undefined') return ''
     const day = date.getDate()
     const month = date.getMonth() + 1
@@ -16,22 +16,26 @@ export function formatDate(date) {
     return year + '-' + pad(month) + '-' + pad(day)
 }
 
-function pad(number) {
+function pad(number: number) {
     if (number < 10) {
         return '0' + number
     }
     return number
 }
 
-export function addDatePickerPolyfill(field, maxDate, onUpdate) {
+export function addDatePickerPolyfill(
+    field: HTMLElement,
+    maxDate: Date,
+    onUpdate: Function
+) {
     if (!isDateSupported()) {
         new Pikaday({
             field: field,
             format: 'YYYY-MM-DD',
-            toString(date) {
+            toString(date: Date) {
                 return formatDate(date)
             },
-            parse(dateString) {
+            parse(dateString: string) {
                 const parts = dateString.split('-')
                 const year = parseInt(parts[0], 10)
                 const month = parseInt(parts[1], 10) - 1
