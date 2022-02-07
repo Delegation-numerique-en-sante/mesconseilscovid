@@ -8,7 +8,7 @@ const JOURS_DE_VALIDITE_DEPISTAGE_POSITIF = 30
 const JOURS_DE_VALIDITE_DEPISTAGE_EN_ATTENTE = 7
 
 type Etat = {
-    date: Date
+    date: string
     symptomes: boolean
     essoufflement: string
     etatGeneral: string
@@ -812,8 +812,11 @@ export default class Profil {
         )
     }
 
-    joursDepuisCovidPassee() {
-        return differenceEnJours(this.covid_passee_date, new Date())
+    joursDepuisCovidPassee(): number {
+        return (
+            typeof this.covid_passee_date !== 'undefined' &&
+            differenceEnJours(this.covid_passee_date, new Date())
+        )
     }
 
     _hasCovidPlus(months: number) {
@@ -910,7 +913,7 @@ export default class Profil {
             this.depistage === true &&
             this.depistage_resultat === 'positif' &&
             typeof this.depistage_start_date !== 'undefined' &&
-            this.joursEcoulesDepuisDepistage() < JOURS_DE_VALIDITE_DEPISTAGE_POSITIF
+            this.joursEcoulesDepuisDepistage()! < JOURS_DE_VALIDITE_DEPISTAGE_POSITIF
         )
     }
 
@@ -919,7 +922,7 @@ export default class Profil {
             this.depistage === true &&
             this.depistage_resultat === 'positif' &&
             typeof this.depistage_start_date !== 'undefined' &&
-            this.joursEcoulesDepuisDepistage() >= JOURS_DE_VALIDITE_DEPISTAGE_POSITIF
+            this.joursEcoulesDepuisDepistage()! >= JOURS_DE_VALIDITE_DEPISTAGE_POSITIF
         )
     }
 
@@ -954,7 +957,10 @@ export default class Profil {
     }
 
     _depistageNegatifTropAncien() {
-        return this.joursEcoulesDepuisDepistage() >= JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF
+        return (
+            typeof this.depistage_start_date !== 'undefined' &&
+            this.joursEcoulesDepuisDepistage()! >= JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF
+        )
     }
 
     _depistageNegatifAvantDebutDesSymptomes() {
@@ -969,7 +975,7 @@ export default class Profil {
             this.depistage === true &&
             this.depistage_resultat === 'en_attente' &&
             typeof this.depistage_start_date !== 'undefined' &&
-            this.joursEcoulesDepuisDepistage() < JOURS_DE_VALIDITE_DEPISTAGE_EN_ATTENTE
+            this.joursEcoulesDepuisDepistage()! < JOURS_DE_VALIDITE_DEPISTAGE_EN_ATTENTE
         )
     }
 

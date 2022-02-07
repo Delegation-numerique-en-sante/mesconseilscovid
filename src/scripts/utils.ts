@@ -1,23 +1,23 @@
-export function joursAvant(delta, start) {
+export function joursAvant(delta: number, start?: Date) {
     const from = start || new Date()
     return new Date(from.setDate(from.getDate() - delta))
 }
 
-export function joursApres(delta, start) {
+export function joursApres(delta: number, start?: Date) {
     const from = start || new Date()
     return new Date(from.setDate(from.getDate() + delta))
 }
 
 const _MS_PAR_JOUR = 1000 * 60 * 60 * 24
 
-export function differenceEnJours(d1, d2) {
+export function differenceEnJours(d1: Date, d2: Date) {
     const utc1 = Date.UTC(d1.getFullYear(), d1.getMonth(), d1.getDate())
     const utc2 = Date.UTC(d2.getFullYear(), d2.getMonth(), d2.getDate())
 
     return Math.floor((utc2 - utc1) / _MS_PAR_JOUR)
 }
 
-export function slugify(string) {
+export function slugify(str: string) {
     /* Adapted from
     https://mhagemann.medium.com/the-ultimate-way-to-slugify-a-url-string-in-javascript-b8e4a0d849e1 */
     const a =
@@ -26,7 +26,7 @@ export function slugify(string) {
         'aaaaaaaaaacccddeeeeeeeegghiiiiiilmnnnnoooooooooprrsssssttuuuuuuuuuwxyyzzz------'
     const p = new RegExp(a.split('').join('|'), 'g')
 
-    return string
+    return str
         .toString()
         .toLowerCase()
         .replace(/\s+/g, '-') // Replace spaces with -
@@ -38,6 +38,6 @@ export function slugify(string) {
         .replace(/-+$/, '') // Trim - from end of text
 }
 
-export function titleCase(text) {
+export function titleCase(text: string) {
     return text.charAt(0).toUpperCase() + text.slice(1)
 }
