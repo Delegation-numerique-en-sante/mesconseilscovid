@@ -1,74 +1,91 @@
+import type Profil from './profil'
+
 export class Form {
-    constructor(form) {
+    form: HTMLFormElement
+
+    constructor(form: HTMLFormElement) {
         this.form = form
     }
 
-    qS(selector) {
+    qS(selector: string) {
         return this.form.querySelector(selector)
     }
 
-    qSA(selector) {
+    qSA(selector: string) {
         return this.form.querySelectorAll(selector)
     }
 
     get submitButton() {
-        return this.qS('input[type=submit]')
+        return this.qS('input[type=submit]') as HTMLInputElement
     }
 
     get requiredTextFields() {
         return Array.from(
             this.qSA('input[type=text][required], input[type=date][required]')
-        )
+        ) as HTMLInputElement[]
     }
 
     get selectFields() {
-        return Array.from(this.qSA('select'))
+        return Array.from(this.qSA('select')) as HTMLSelectElement[]
     }
 
     get checkbox() {
-        return this.qS('input[type=checkbox]')
+        return this.qS('input[type=checkbox]') as HTMLInputElement
     }
     get checkboxes() {
-        return Array.from(this.qSA('input[type=checkbox]'))
+        return Array.from(this.qSA('input[type=checkbox]')) as HTMLInputElement[]
     }
 
     get primaryCheckbox() {
-        return this.qS('input[type=checkbox].primary')
+        return this.qS('input[type=checkbox].primary') as HTMLInputElement
     }
 
     get secondaryCheckboxes() {
-        return Array.from(this.qSA('.secondary input[type=checkbox]'))
+        return Array.from(
+            this.qSA('.secondary input[type=checkbox]')
+        ) as HTMLInputElement[]
     }
 
     get radios() {
-        return Array.from(this.qSA('.secondary input[type=radio]'))
+        return Array.from(
+            this.qSA('.secondary input[type=radio]')
+        ) as HTMLInputElement[]
     }
     get secondariesRequired() {
         return Array.from(this.qSA('.secondary.required [role="radiogroup"]'))
     }
 }
 
-export function getRadioValue(form, key) {
-    const elem = form.querySelector(`input[name="${key}"]:checked`)
+export function getRadioValue(form: HTMLFormElement, key: string) {
+    const elem: HTMLInputElement | null = form.querySelector(
+        `input[name="${key}"]:checked`
+    )
     if (elem) {
         return elem.value
     }
 }
 
-export function uncheckAllRadio(element) {
-    Array.from(element.querySelectorAll('[type="radio"]'), (radioButton) => {
+export function uncheckAllRadio(element: HTMLElement) {
+    const radioButtons = Array.from(
+        element.querySelectorAll('[type="radio"]')
+    ) as HTMLInputElement[]
+    radioButtons.forEach((radioButton) => {
         radioButton.checked = false
     })
 }
 
-export function preloadForm(form, key, profil) {
+export function preloadForm(form: HTMLFormElement, key: string, profil: Profil) {
     const value = profil.getData()[key]
     if (typeof value !== 'undefined' && value !== '') {
         form[key].value = value
     }
 }
 
-export function preloadCheckboxForm(form, key, profil) {
+export function preloadCheckboxForm(
+    form: HTMLFormElement,
+    key: string,
+    profil: Profil
+) {
     const value = profil.getData()[key]
     if (typeof value !== 'undefined' && value) {
         form[key].checked = true
@@ -76,25 +93,37 @@ export function preloadCheckboxForm(form, key, profil) {
     }
 }
 
-export function createEvent(name) {
+export function createEvent(name: string) {
     const event = document.createEvent('Event')
     event.initEvent(name, true, true)
     return event
 }
 
-export function someChecked(checkboxes) {
+export function someChecked(checkboxes: HTMLInputElement[]) {
     return checkboxes.some((checkbox) => checkbox.checked)
 }
 
-function everyFilled(textFields) {
+function everyFilled(textFields: HTMLInputElement[]) {
     return textFields.every((textField) => textField.value !== '')
 }
 
-export function toggleFormButtonOnCheck(form, continueLabel, uncheckedLabel) {
-    const button = form.querySelector('input[type=submit]')
-    const checkboxes = Array.from(form.querySelectorAll('input[type=checkbox]'))
+export function toggleFormButtonOnCheck(
+    form: HTMLFormElement,
+    continueLabel: string,
+    uncheckedLabel: string
+) {
+    const button: HTMLInputElement | null = form.querySelector('input[type=submit]')
+    if (!button) return
+    const checkboxes: HTMLInputElement[] | null = Array.from(
+        form.querySelectorAll('input[type=checkbox]')
+    )
+    if (!checkboxes || checkboxes.length === 0) return
     function updateSubmitButtonLabel() {
-        button.value = someChecked(checkboxes) ? continueLabel : uncheckedLabel
+        ;(button as HTMLInputElement).value = someChecked(
+            checkboxes as HTMLInputElement[]
+        )
+            ? continueLabel
+            : uncheckedLabel
     }
     updateSubmitButtonLabel()
     checkboxes.forEach((elem) =>
@@ -103,13 +132,13 @@ export function toggleFormButtonOnCheck(form, continueLabel, uncheckedLabel) {
 }
 
 export function toggleFormButtonOnCheckRequired(
-    formElement,
-    continueLabel,
-    uncheckedLabel,
-    requiredLabel
+    formElement: HTMLFormElement,
+    continueLabel: string,
+    uncheckedLabel: string,
+    requiredLabel: string
 ) {
     const form = new Form(formElement)
-    const button = form.submitButton
+    const button = form.submitButton as HTMLInputElement
     const checkboxes = form.checkboxes
     const secondaryCheckboxes = form.secondaryCheckboxes
     // Warning: removes otherCheckbox from secondaryCheckboxes:
@@ -121,7 +150,7 @@ export function toggleFormButtonOnCheckRequired(
         button.value = hasChecks ? continueLabel : uncheckedLabel
         if (hasChecks) {
             const hasSecondaryChecks = someChecked(secondaryCheckboxes)
-            if (!hasSecondaryChecks && !otherCheckbox.checked) {
+            if (!hasSecondaryChecks && !otherCheckbox?.checked) {
                 button.disabled = true
                 button.value = requiredLabel
             }
@@ -133,7 +162,7 @@ export function toggleFormButtonOnCheckRequired(
     )
 
     function updateToggleOnOther() {
-        if (otherCheckbox.checked) {
+        if (otherCheckbox?.checked) {
             secondaryCheckboxes.forEach((secondaryCheckbox) => {
                 secondaryCheckbox.checked = false
                 secondaryCheckbox.disabled = true
@@ -145,17 +174,17 @@ export function toggleFormButtonOnCheckRequired(
         }
     }
     updateToggleOnOther()
-    otherCheckbox.addEventListener('change', updateToggleOnOther)
+    otherCheckbox?.addEventListener('change', updateToggleOnOther)
 }
 
 export function toggleFormButtonOnRadioRequired(
-    formElement,
-    continueLabel,
-    requiredLabel
+    formElement: HTMLFormElement,
+    continueLabel: string,
+    requiredLabel: string
 ) {
     const form = new Form(formElement)
     const button = form.submitButton
-    const radios = Array.from(form.qSA('input[type=radio]'))
+    const radios = Array.from(form.qSA('input[type=radio]')) as HTMLInputElement[]
     continueLabel = button.dataset.initialValue || continueLabel
     button.dataset.initialValue = continueLabel
 
@@ -174,10 +203,10 @@ export function toggleFormButtonOnRadioRequired(
 }
 
 export function toggleFormButtonOnCheckboxAndRadioRequired(
-    formElement,
-    continueLabel,
-    uncheckedLabel,
-    requiredLabel
+    formElement: HTMLFormElement,
+    continueLabel: string,
+    uncheckedLabel: string,
+    requiredLabel: string
 ) {
     const form = new Form(formElement)
     const button = form.submitButton
@@ -221,9 +250,9 @@ export function toggleFormButtonOnCheckboxAndRadioRequired(
 }
 
 export function toggleFormButtonOnTextFieldsRequired(
-    formElement,
-    continueLabel,
-    requiredLabel
+    formElement: HTMLFormElement,
+    continueLabel: string,
+    requiredLabel: string
 ) {
     const form = new Form(formElement)
     const button = form.submitButton
@@ -241,10 +270,10 @@ export function toggleFormButtonOnTextFieldsRequired(
 }
 
 export function toggleFormButtonOnTextFieldsAndRadioRequired(
-    formElement,
-    continueLabel,
-    uncheckedLabel,
-    requiredLabel
+    formElement: HTMLFormElement,
+    continueLabel: string,
+    uncheckedLabel: string,
+    requiredLabel: string
 ) {
     const form = new Form(formElement)
     const button = form.submitButton
@@ -303,9 +332,9 @@ export function toggleFormButtonOnTextFieldsAndRadioRequired(
 }
 
 export function toggleFormButtonOnSelectFieldsRequired(
-    formElement,
-    continueLabel,
-    requiredLabel
+    formElement: HTMLFormElement,
+    continueLabel: string,
+    requiredLabel: string
 ) {
     const form = new Form(formElement)
     const button = form.submitButton
@@ -324,7 +353,11 @@ export function toggleFormButtonOnSelectFieldsRequired(
     )
 }
 
-export function enableOrDisableSecondaryFields(form, primary, secondaries) {
+export function enableOrDisableSecondaryFields(
+    form: HTMLFormElement,
+    primary: HTMLInputElement,
+    secondaries: HTMLInputElement[]
+) {
     secondaries = Array.from(secondaries || form.querySelectorAll('.secondary'))
     const primaryDisabled = !primary.checked
     secondaries.forEach((elem) => {

@@ -22,6 +22,7 @@ type Etat = {
 }
 
 type ProfilData = {
+    [key: string]: any,
     _suivi_start_date?: string | undefined
     _symptomes_start_date?: string | undefined
     _depistage_start_date?: string | undefined
