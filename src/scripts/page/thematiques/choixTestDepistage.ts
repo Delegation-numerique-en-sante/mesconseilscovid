@@ -1,25 +1,27 @@
 import { getRadioValue, toggleFormButtonOnRadioRequired } from '../../formutils'
 import { Formulaire } from './formulaire'
 
-export function dynamiseLeChoixDuTest(prefixe) {
+export function dynamiseLeChoixDuTest(prefixe: string) {
     const formulaire = new FormulaireTestDepistage(prefixe)
     formulaire.demarre()
 }
 
 class FormulaireTestDepistage extends Formulaire {
-    constructor(prefixe) {
+    constructor(prefixe: string) {
         super(prefixe, 'symptomes')
     }
 
     GESTIONNAIRES = {
-        'demarrage': (form) => {
+        'demarrage': (form: HTMLFormElement) => {
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
                 this.transitionneVersEtape(form, 'symptomes')
             })
         },
-        'symptomes': (form) => {
-            const button = form.querySelector('input[type=submit]')
+        'symptomes': (form: HTMLFormElement) => {
+            const button: HTMLInputElement | null =
+                form.querySelector('input[type=submit]')
+            if (!button) return
             const requiredLabel = 'Cette information est requise'
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
@@ -32,8 +34,10 @@ class FormulaireTestDepistage extends Formulaire {
                 }
             })
         },
-        'depuis-quand': (form) => {
-            const button = form.querySelector('input[type=submit]')
+        'depuis-quand': (form: HTMLFormElement) => {
+            const button: HTMLInputElement | null =
+                form.querySelector('input[type=submit]')
+            if (!button) return
             const requiredLabel = 'Cette information est requise'
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
@@ -42,8 +46,10 @@ class FormulaireTestDepistage extends Formulaire {
                 this.transitionneVersReponse(form, `symptomes-${value}`)
             })
         },
-        'cas-contact': (form) => {
-            const button = form.querySelector('input[type=submit]')
+        'cas-contact': (form: HTMLFormElement) => {
+            const button: HTMLInputElement | null =
+                form.querySelector('input[type=submit]')
+            if (!button) return
             const requiredLabel = 'Cette information est requise'
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
@@ -59,8 +65,10 @@ class FormulaireTestDepistage extends Formulaire {
                 }
             })
         },
-        'auto-test': (form) => {
-            const button = form.querySelector('input[type=submit]')
+        'auto-test': (form: HTMLFormElement) => {
+            const button: HTMLInputElement | null =
+                form.querySelector('input[type=submit]')
+            if (!button) return
             const requiredLabel = 'Cette information est requise'
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {

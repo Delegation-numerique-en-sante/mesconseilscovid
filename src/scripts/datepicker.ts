@@ -25,7 +25,7 @@ function pad(number: number) {
 
 export function addDatePickerPolyfill(
     field: HTMLElement,
-    maxDate: Date,
+    maxDate: Date | null,
     onUpdate: Function
 ) {
     if (!isDateSupported()) {

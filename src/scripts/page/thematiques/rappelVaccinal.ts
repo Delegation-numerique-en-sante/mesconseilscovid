@@ -1,3 +1,4 @@
+import type { Dayjs } from 'dayjs'
 import dayjs from 'dayjs'
 import 'dayjs/locale/fr'
 import localizedFormat from 'dayjs/plugin/localizedFormat'
@@ -28,41 +29,47 @@ const JOURS_DANS_3_MOIS = 92
 const JOURS_DANS_4_MOIS = 122
 const JOURS_DANS_7_MOIS = 214
 
-export function dynamiseLeRappelVaccinal(prefixe) {
+export function dynamiseLeRappelVaccinal(prefixe: string) {
     const formulaire = new FormulaireRappelVaccinal(prefixe)
     formulaire.demarre()
 }
 
-function minIfNotNull(date1, date2) {
+function minIfNotNull(date1: Dayjs | null, date2: Dayjs) {
     if (!date1) return date2
     if (!date2) return date1
     return dayjs.min(date1, date2)
 }
 
 class FormulaireRappelVaccinal extends Formulaire {
-    constructor(prefixe) {
+    age: string | undefined
+    janssen: boolean
+    prolongationPass: boolean | undefined
+
+    constructor(prefixe: string) {
         super(prefixe, 'age')
         this.age = undefined
         this.janssen = false
         this.prolongationPass = undefined
     }
 
-    resetFormulaire(document) {
-        uncheckAllRadio(document)
+    resetFormulaire(document: Document) {
+        uncheckAllRadio(document as never as HTMLElement)
         this.age = undefined
         this.janssen = false
         this.prolongationPass = undefined
     }
 
     GESTIONNAIRES = {
-        'demarrage': (form) => {
+        'demarrage': (form: HTMLFormElement) => {
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
                 this.transitionneVersEtape(form, 'age')
             })
         },
-        'age': (form) => {
-            const button = form.querySelector('input[type=submit]')
+        'age': (form: HTMLFormElement) => {
+            const button: HTMLInputElement | null =
+                form.querySelector('input[type=submit]')
+            if (!button) return
             const requiredLabel = 'Cette information est requise'
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
@@ -78,8 +85,10 @@ class FormulaireRappelVaccinal extends Formulaire {
                 }
             })
         },
-        'vaccination-initiale': (form) => {
-            const button = form.querySelector('input[type=submit]')
+        'vaccination-initiale': (form: HTMLFormElement) => {
+            const button: HTMLInputElement | null =
+                form.querySelector('input[type=submit]')
+            if (!button) return
             const requiredLabel = 'Cette information est requise'
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
@@ -117,8 +126,10 @@ class FormulaireRappelVaccinal extends Formulaire {
                 }
             })
         },
-        'date-derniere-dose': (form) => {
-            const button = form.querySelector('input[type=submit]')
+        'date-derniere-dose': (form: HTMLFormElement) => {
+            const button: HTMLInputElement | null =
+                form.querySelector('input[type=submit]')
+            if (!button) return
             const continueLabel = button.value
             const requiredLabel = 'Cette information est requise'
 
@@ -128,12 +139,16 @@ class FormulaireRappelVaccinal extends Formulaire {
 
             updateButton()
 
-            const datePicker = form.querySelector(`#${this.prefixe}_date_derniere_dose`)
+            const datePicker: HTMLElement | null = form.querySelector(
+                `#${this.prefixe}_date_derniere_dose`
+            )
+            if (!datePicker) return
             addDatePickerPolyfill(datePicker, null, updateButton)
 
             form.addEventListener('submit', (event) => {
                 event.preventDefault()
-                const datePicker = form.elements[`${this.prefixe}_date_derniere_dose`]
+                const elements: { [key: string]: any } = form.elements
+                const datePicker = elements[`${this.prefixe}_date_derniere_dose`]
                 if (datePicker.value !== '') {
                     const dateDerniereDose = dayjs(datePicker.value)
 
@@ -142,7 +157,7 @@ class FormulaireRappelVaccinal extends Formulaire {
 
                     const dateLimitePass = this.dateLimitePass(dateDerniereDose)
 
-                    let params = {
+                    let params: { [key: string]: any } = {
                         'age': this.libelleAge(),
                         'vaccin': this.libelleVaccin(),
                         'date-derniere-dose': dateDerniereDose.format('LL'),
@@ -163,7 +178,7 @@ class FormulaireRappelVaccinal extends Formulaire {
     }
 
     // À partir de quelle date faire le rappel ?
-    dateEligibiliteRappel(dateDerniereDose) {
+    dateEligibiliteRappel(dateDerniereDose: Dayjs) {
         const debutCampagneRappel = this.debutCampagneRappel()
 
         const delaiEligibiliteEnJours = this.janssen
@@ -190,7 +205,7 @@ class FormulaireRappelVaccinal extends Formulaire {
         }
     }
 
-    dateLimitePass(dateDerniereDose) {
+    dateLimitePass(dateDerniereDose: Dayjs) {
         // À partir du 15 décembre : 7 mois après la dernière dose
         // pour les personnes de plus de 65 ans
         let dateLimitePass = null

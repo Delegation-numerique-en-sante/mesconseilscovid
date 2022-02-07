@@ -321,6 +321,8 @@ export default class App {
             profil?: string
             lang?: string[]
             service?: string
+            reponse?: string
+            chemin?: string
         } = {}
     ) {
         // Ajoute la source de la visite.

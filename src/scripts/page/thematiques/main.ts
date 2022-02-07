@@ -1,20 +1,25 @@
 import applyDetailsSummaryPolyfill from '../../polyfills/details_polyfill'
 
+import type App from '../../app'
 import { bindImpression } from '../../actions'
 import { bindFeedback, opacityTransition, envoieLesRemarques } from '../../feedback'
 import { navigueVersUneThematique } from './navigation'
 import { dynamiseLeChoixDuTest } from './choixTestDepistage'
 import { dynamiseLeRappelVaccinal } from './rappelVaccinal'
 
-export function pageThematique(app) {
+export function pageThematique(app: App) {
     app.trackPageView(document.location.pathname)
-    bindFeedback(document.querySelector('.feedback-component'), app)
-    bindImpression(document, app)
-    Array.from(document.querySelectorAll('.cta [data-set-profil]')).forEach(
-        (lienVersProfil) => {
-            boutonBasculeVersMonProfil(lienVersProfil, app)
-        }
-    )
+    const feedbackComponent: HTMLElement | null =
+        document.querySelector('.feedback-component')
+    if (!feedbackComponent) return
+    bindFeedback(feedbackComponent, app)
+    bindImpression(document as unknown as HTMLElement, app)
+    const liensVersProfil = Array.from(
+        document.querySelectorAll('.cta [data-set-profil]')
+    ) as HTMLAnchorElement[]
+    liensVersProfil.forEach((lienVersProfil) => {
+        boutonBasculeVersMonProfil(lienVersProfil, app)
+    })
     initDetailsSummary()
     partagePageEnCours()
     feedbackPageEnCours(app)
@@ -51,7 +56,8 @@ function ouvreDetailsSiBouton() {
 function ouvreDetailsSiFragment() {
     const currentAnchor = document.location.hash ? document.location.hash.slice(1) : ''
     if (currentAnchor) {
-        const elem = document.querySelector(`#${currentAnchor}`)
+        const elem: HTMLElement | null = document.querySelector(`#${currentAnchor}`)
+        if (!elem) return
         const details = trouveDetailsParent(elem)
         if (details) {
             details.setAttribute('open', '')
@@ -65,12 +71,12 @@ function ouvreDetailsSiFragment() {
     }
 }
 
-function trouveDetailsParent(elem) {
+function trouveDetailsParent(elem: HTMLElement) {
     while (elem) {
         if (elem.tagName.toLowerCase() === 'details') {
             return elem
         }
-        elem = elem.parentElement
+        elem = elem.parentElement as HTMLElement
     }
 }
 
@@ -85,7 +91,7 @@ function scrolleAuSummary() {
     const summaries = document.querySelectorAll('summary')
     Array.from(summaries).forEach((summary) => {
         summary.addEventListener('click', () => {
-            const detailsElement = summary.parentElement
+            const detailsElement = summary.parentElement as HTMLDetailsElement
             // Even with an event, we need to wait for the next few
             // ticks to be able to scroll to the collapsed element.
             setTimeout(() => {
@@ -97,13 +103,17 @@ function scrolleAuSummary() {
 }
 
 function initialiseLesFormulaires() {
-    Array.from(document.querySelectorAll('.formulaire')).forEach((form) => {
-        const init = initFunc(form.dataset.nom)
+    const formulaires: HTMLFormElement[] = Array.from(
+        document.querySelectorAll('.formulaire')
+    )
+    formulaires.forEach((form) => {
+        const nom = form.dataset.nom as 'tests-de-depistage' | 'rappel'
+        const init = initFunc(nom)
         init(form.dataset.prefixe)
     })
 }
 
-function initFunc(nom) {
+function initFunc(nom: 'tests-de-depistage' | 'rappel') {
     if (nom == 'tests-de-depistage') {
         return dynamiseLeChoixDuTest
     } else if (nom == 'rappel') {
@@ -111,7 +121,7 @@ function initFunc(nom) {
     }
 }
 
-function creeUnLienPermanentDansLHistorique(detailsElement) {
+function creeUnLienPermanentDansLHistorique(detailsElement: HTMLDetailsElement) {
     // On ajoute l’ancre dans l’URL en cours.
     if (
         detailsElement.id &&
@@ -123,34 +133,44 @@ function creeUnLienPermanentDansLHistorique(detailsElement) {
     }
 }
 
-function boutonBasculeVersMonProfil(lienVersProfil, app) {
+function boutonBasculeVersMonProfil(lienVersProfil: HTMLAnchorElement, app: App) {
     lienVersProfil.addEventListener('click', (event) => {
         event.preventDefault()
         app.plausible('Je veux des conseils personnalisés')
-        app.basculerVersProfil(lienVersProfil.dataset.setProfil).then(() => {
-            window.location = event.target.getAttribute('href')
+        const nomProfil = lienVersProfil.dataset.setProfil
+        if (!nomProfil) return
+        app.basculerVersProfil(nomProfil).then(() => {
+            window.location = event.target?.getAttribute('href')
         })
     })
 }
 
 function partagePageEnCours() {
-    const partageLinks = document.querySelectorAll('.feedback-partager a')
-    Array.from(partageLinks).forEach((partageLink) => {
+    const partageLinks = Array.from(
+        document.querySelectorAll('.feedback-partager a')
+    ) as HTMLAnchorElement[]
+    partageLinks.forEach((partageLink) => {
         let href = partageLink.href
         let url = new URL(document.URL)
         url.searchParams.set('source', 'partage-thematique')
         href = href.replace(
             'https%3A%2F%2Fmesconseilscovid.sante.gouv.fr%2F',
-            encodeURIComponent(url)
+            encodeURIComponent(String(url))
         )
         partageLink.href = href
     })
 }
 
-function feedbackPageEnCours(app) {
-    const feedbackQuestionsForms = document.querySelectorAll('form.question-feedback')
-    Array.from(feedbackQuestionsForms).forEach((feedbackQuestionForm) => {
-        const title = feedbackQuestionForm.parentNode.querySelector('[itemprop="name"]')
+function feedbackPageEnCours(app: App) {
+    const feedbackQuestionsForms = Array.from(
+        document.querySelectorAll('form.question-feedback')
+    ) as HTMLFormElement[]
+    feedbackQuestionsForms.forEach((feedbackQuestionForm) => {
+        const parentNode = feedbackQuestionForm.parentNode as HTMLElement
+        if (!parentNode) return
+        const title: HTMLElement | null = parentNode.querySelector('[itemprop="name"]')
+        if (!title) return
+        const questionInnerText = title.innerText
         const question = title.innerText.substring(
             0,
             title.innerText.length - ' #'.length
@@ -170,18 +190,34 @@ function feedbackPageEnCours(app) {
                 reponse: `${question} : ${choix}`,
             })
             const reponse = event.target.submitter.value
-            opacityTransition(feedbackQuestionForm, 500, (feedbackQuestionForm) => {
-                let label =
-                    choix === 'oui'
-                        ? 'Avez-vous des remarques ou des suggestions pour améliorer ces conseils ?'
-                        : 'Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?'
-                demandeRemarques(feedbackQuestionForm, choix, question, reponse, label)
-            })
+            opacityTransition(
+                feedbackQuestionForm,
+                500,
+                (feedbackQuestionForm: HTMLFormElement) => {
+                    let label =
+                        choix === 'oui'
+                            ? 'Avez-vous des remarques ou des suggestions pour améliorer ces conseils ?'
+                            : 'Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?'
+                    demandeRemarques(
+                        feedbackQuestionForm,
+                        choix,
+                        question,
+                        reponse,
+                        label
+                    )
+                }
+            )
         })
     })
 }
 
-function demandeRemarques(feedbackQuestionForm, choix, question, reponse, label) {
+function demandeRemarques(
+    feedbackQuestionForm: HTMLFormElement,
+    choix: string,
+    question: string,
+    reponse: string,
+    label: string
+) {
     const formulaire = document.createElement('form')
     formulaire.classList.add('feedback-form')
     formulaire.innerHTML = `
@@ -194,7 +230,9 @@ function demandeRemarques(feedbackQuestionForm, choix, question, reponse, label)
             <input type="submit" class="button" value="Envoyer mes remarques">
         </div>
     `
-    feedbackQuestionForm.parentNode.replaceChild(formulaire, feedbackQuestionForm)
+    const parentNode = feedbackQuestionForm.parentNode
+    if (!parentNode) return
+    parentNode.replaceChild(formulaire, feedbackQuestionForm)
     formulaire.addEventListener('submit', (event) => {
         event.preventDefault()
         envoieLesRemarques({
@@ -209,7 +247,11 @@ function demandeRemarques(feedbackQuestionForm, choix, question, reponse, label)
     })
 }
 
-function afficheRemerciements(feedbackQuestionForm, choix, reponse) {
+function afficheRemerciements(
+    feedbackQuestionForm: HTMLFormElement,
+    choix: string,
+    reponse: string
+) {
     const remerciements = document.createElement('div')
     remerciements.style.color = '#656565'
     remerciements.style.textAlign = 'center'
@@ -218,5 +260,7 @@ function afficheRemerciements(feedbackQuestionForm, choix, reponse) {
         <p>Votre réponse : ${reponse}</p>
         <p>Merci pour votre avis !</p>
         `
-    feedbackQuestionForm.parentNode.replaceChild(remerciements, feedbackQuestionForm)
+    const parentNode = feedbackQuestionForm.parentNode
+    if (!parentNode) return
+    parentNode.replaceChild(remerciements, feedbackQuestionForm)
 }
