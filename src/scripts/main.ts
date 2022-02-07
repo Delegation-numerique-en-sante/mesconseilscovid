@@ -32,7 +32,7 @@ window.app = app
     })
 })()
 
-function pageQuestionnaire(app) {
+function pageQuestionnaire(app: App) {
     app.init().then(() => {
         // Seulement pour la racine, sinon ça fait doublon.
         if (location.hash.slice(1) === '') {
@@ -44,16 +44,20 @@ function pageQuestionnaire(app) {
     })
 }
 
-function activeLesMisesAJourAuto(app) {
+function activeLesMisesAJourAuto(app: App) {
     app.updater.checkForUpdatesEvery(10) // Minutes.
 }
 
-function initLiensPiedDePage(app) {
-    bindSuppressionTotale(document.querySelector('footer .js-suppression'), app)
+function initLiensPiedDePage(app: App) {
+    const jsSuppression: HTMLElement | null = document.querySelector(
+        'footer .js-suppression'
+    )
+    if (!jsSuppression) return
+    bindSuppressionTotale(jsSuppression, app)
 }
 
 function initLiensRoleButton() {
-    document.addEventListener('keydown', (event) => {
+    document.addEventListener('keydown', (event: KeyboardEvent) => {
         // A11Y: lorsque le focus est sur un lien avec un role="button"
         // on veut que la touche espace ait le même comportement que sur
         // un <button> classique : que ça soumette l’action, d’où le clic.
@@ -64,13 +68,13 @@ function initLiensRoleButton() {
             ) {
                 event.preventDefault()
                 event.stopPropagation()
-                event.target.click()
+                event.target?.click()
             }
         }
     })
 }
 
-registerTimeAgo('fr', function (number, index) {
+registerTimeAgo('fr', function (number: number, index: number): [string, string] {
     return [
         ["à l'instant", 'dans un instant'],
         ['il y a %s secondes', 'dans %s secondes'],
@@ -86,7 +90,7 @@ registerTimeAgo('fr', function (number, index) {
         ['il y a %s mois', 'dans %s mois'],
         ['il y a 1 an', 'dans 1 an'],
         ['il y a %s ans', 'dans %s ans'],
-    ][index]
+    ][index] as [string, string]
 })
 
 if ('serviceWorker' in navigator) {
