@@ -18,7 +18,7 @@
 
     Si vous avez **18 ans ou plus**, vous pouvez recevoir un rappel vaccinal, en respectant [un délai minimal](#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) après votre dernière injection ou infection à la Covid.
     
-    Si vous avez eu la Covid après votre schéma vaccinal initial (primo-vaccination), alors la dose de rappel n'est pas obligatoire pour prolonger votre passe vaccinal. Vous pourrez présenter votre certificat de rétablissement (test PCR ou antigénique positif) en lieu et place de votre attestation de vaccination. Attention, si vous prévoyez de voyager à l'étranger, le certificat de rétablissement ne sera pas suffisant et la dose de rappel pourra vous être demandée.
+    Si vous avez eu la Covid après votre schéma vaccinal initial (primo-vaccination), alors votre protection est jugée suffisante, et la dose de rappel n'est pas obligatoire pour prolonger votre passe vaccinal. Vous pourrez présenter votre certificat de rétablissement (test PCR ou antigénique positif) en lieu et place de votre attestation de vaccination. Attention, si vous prévoyez de voyager à l'étranger, le certificat de rétablissement ne sera pas suffisant et la dose de rappel pourra vous être demandée.
 
     <span class="nouveau">nouveau</span> Si vous avez entre **12 et 17 ans**, le rappel vaccinal vous est ouvert depuis le **lundi 24 janvier 2022**.
 
@@ -101,7 +101,10 @@
     - Si vous **avez eu la Covid après** votre injection, alors :
         - la dose supplémentaire n’est pas nécessaire ;
         - vous serez éligible au **rappel vaccinal** avec le vaccin Pfizer ou Moderna (demi-dose) dès **3 mois** après votre infection ; ce rappel prolongera la validité de votre passe vaccinal.
-
+    
+    - Vous avez eu la **Covid après votre dose supplémentaire** :
+        - si vous avez eu la Covid dans les 15 jours suivant la dose supplémentaire : vous devrez recevoir la dose de rappel dès 3 mois après votre contamination.
+        - si vous avez eu la Covid plus de 15 jours après la dose supplémentaire : vous n'avez pas besoin de recevoir une dose de rappel pour utiliser votre passe vaccinal en France. Attention, la règlementation varie d'un pays à l'autre et la dose de rappel peut être exigée lors d'un voyager à l'étranger.
 
 .. injection:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal
 
