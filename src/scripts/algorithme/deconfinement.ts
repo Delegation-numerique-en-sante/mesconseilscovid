@@ -1,7 +1,10 @@
+import type Profil from '../profil'
 import { differenceEnJours, joursAvant } from '../utils'
 
 export default class AlgorithmeDeconfinement {
-    constructor(profil) {
+    profil: Profil
+
+    constructor(profil: Profil) {
         this.profil = profil
     }
 

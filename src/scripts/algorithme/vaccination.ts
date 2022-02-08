@@ -1,5 +1,11 @@
+import type Profil from '../profil'
+import type AlgorithmeOrientation from './orientation'
+
 export default class AlgorithmeVaccination {
-    constructor(profil, algoOrientation) {
+    profil: Profil
+    algoOrientation: AlgorithmeOrientation
+
+    constructor(profil: Profil, algoOrientation: AlgorithmeOrientation) {
         this.profil = profil
         this.algoOrientation = algoOrientation
     }

@@ -1,3 +1,4 @@
+import type Profil from '../profil'
 import AlgorithmeVaccination from './vaccination'
 
 // Les statuts possibles en sortie de l’algorithme.
@@ -47,7 +48,9 @@ const CONSEILS_PERSONNELS = [
 ]
 
 export default class AlgorithmeOrientation {
-    constructor(profil) {
+    profil: Profil
+
+    constructor(profil: Profil) {
         this.profil = profil
     }
 
@@ -546,7 +549,7 @@ export default class AlgorithmeOrientation {
         return blockNames
     }
 
-    _conseilsVaccins(algoVaccination) {
+    _conseilsVaccins(algoVaccination: AlgorithmeVaccination) {
         let blockNames = []
         if (algoVaccination.isSup18()) {
             blockNames.push('conseils-vaccins-18-ans')

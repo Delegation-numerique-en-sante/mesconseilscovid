@@ -1,10 +1,16 @@
+import type Profil from '../profil'
+import type { Etat } from '../profil'
+
 export default class AlgorithmeSuivi {
-    constructor(profil) {
+    profil: Profil
+    dernierEtat: Etat
+
+    constructor(profil: Profil) {
         this.profil = profil
-        this.dernierEtat = profil.dernierEtat()
+        this.dernierEtat = profil.dernierEtat() as Etat
     }
 
-    calculGravite(etat) {
+    calculGravite(etat: Etat) {
         let gravite = 0
         if (
             etat.fievre === 'oui' ||
