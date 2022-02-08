@@ -1,7 +1,9 @@
+import type App from '../../app'
 import { enableOrDisableSecondaryFields, preloadCheckboxForm } from '../../formutils'
 
-export default function situation(page, app) {
+export default function situation(page: HTMLElement, app: App) {
     const form = page.querySelector('form')
+    if (!form) return
 
     // Pré-remplir le formulaire avec le profil.
     preloadCheckboxForm(form, 'foyer_autres_personnes', app.profil)
@@ -11,7 +13,9 @@ export default function situation(page, app) {
 
     // Montrer les questions secondaires en cas de foyer autres personnes.
     const primary_foyer = form.elements['foyer_autres_personnes']
-    const secondaries_foyer = form.querySelectorAll(`#${primary_foyer.id} ~ .secondary`)
+    const secondaries_foyer: HTMLInputElement[] | null = Array.from(
+        form.querySelectorAll(`#${primary_foyer.id} ~ .secondary`)
+    )
     enableOrDisableSecondaryFields(form, primary_foyer, secondaries_foyer)
     primary_foyer.addEventListener('click', () =>
         enableOrDisableSecondaryFields(form, primary_foyer, secondaries_foyer)
@@ -19,8 +23,8 @@ export default function situation(page, app) {
 
     // Montrer les questions secondaires en cas d’activité pro.
     const primary_activite_pro = form.elements['activite_pro']
-    const secondaries_activite_pro = form.querySelectorAll(
-        `#${primary_activite_pro.id} ~ .secondary`
+    const secondaries_activite_pro: HTMLInputElement[] | null = Array.from(
+        form.querySelectorAll(`#${primary_activite_pro.id} ~ .secondary`)
     )
     enableOrDisableSecondaryFields(form, primary_activite_pro, secondaries_activite_pro)
     primary_activite_pro.addEventListener('click', () =>

@@ -1,3 +1,4 @@
+import type App from '../../app'
 import { hideElement, showElement } from '../../affichage'
 import { addDatePickerPolyfill } from '../../datepicker'
 import {
@@ -7,10 +8,14 @@ import {
     toggleFormButtonOnTextFieldsAndRadioRequired,
 } from '../../formutils'
 
-export default function depistage(page, app) {
+export default function depistage(page: HTMLElement, app: App) {
     const form = page.querySelector('form')
+    if (!form) return
 
-    const datePicker = form.querySelector('#depistage_start_date')
+    const datePicker: HTMLInputElement | null = form.querySelector(
+        '#depistage_start_date'
+    )
+    if (!datePicker) return
     // Autorise seulement une date passée.
     const now = new Date()
     datePicker.setAttribute('max', now.toISOString().substring(0, 10))
@@ -25,19 +30,32 @@ export default function depistage(page, app) {
         }
 
         if (app.profil.depistage_type === 'antigenique') {
-            form.querySelector('#depistage_type_antigenique').checked = true
+            ;(
+                form.querySelector('#depistage_type_antigenique') as HTMLInputElement
+            ).checked = true
         } else if (app.profil.depistage_type === 'rt-pcr') {
-            form.querySelector('#depistage_type_rtpcr').checked = true
+            ;(form.querySelector('#depistage_type_rtpcr') as HTMLInputElement).checked =
+                true
         } else if (app.profil.depistage_type === 'antigenique_autotest') {
-            form.querySelector('#depistage_type_antigenique_autotest').checked = true
+            ;(
+                form.querySelector(
+                    '#depistage_type_antigenique_autotest'
+                ) as HTMLInputElement
+            ).checked = true
         }
 
         if (app.profil.depistage_resultat === 'positif') {
-            form.querySelector('#depistage_resultat_positif').checked = true
+            ;(
+                form.querySelector('#depistage_resultat_positif') as HTMLInputElement
+            ).checked = true
         } else if (app.profil.depistage_resultat === 'negatif') {
-            form.querySelector('#depistage_resultat_negatif').checked = true
+            ;(
+                form.querySelector('#depistage_resultat_negatif') as HTMLInputElement
+            ).checked = true
         } else if (app.profil.depistage_resultat === 'en_attente') {
-            form.querySelector('#depistage_resultat_en_attente').checked = true
+            ;(
+                form.querySelector('#depistage_resultat_en_attente') as HTMLInputElement
+            ).checked = true
         }
     }
 
@@ -49,10 +67,13 @@ export default function depistage(page, app) {
     })
 
     // On ne propose "en attente" que pour les tests PCR.
-    const enAttente = form.querySelector('#depistage_resultat_en_attente')
-    const enAttenteLabel = form.querySelector(
+    const enAttente: HTMLInputElement | null = form.querySelector(
+        '#depistage_resultat_en_attente'
+    )
+    const enAttenteLabel: HTMLElement | null = form.querySelector(
         'label[for="depistage_resultat_en_attente"]'
     )
+    if (!enAttente || !enAttenteLabel) return
     function afficherOuCacherEnAttente() {
         if (getRadioValue(form, 'depistage_type') == 'rt-pcr') {
             showElement(enAttente)
@@ -71,7 +92,8 @@ export default function depistage(page, app) {
     )
 
     // Le libellé du bouton change en fonction des choix.
-    var button = form.querySelector('input[type=submit]')
+    const button: HTMLInputElement | null = form.querySelector('input[type=submit]')
+    if (!button) return
     const uncheckedLabel = app.profil.estMonProfil()
         ? 'Je n’ai pas passé de test'
         : 'Cette personne n’a pas passé de test'

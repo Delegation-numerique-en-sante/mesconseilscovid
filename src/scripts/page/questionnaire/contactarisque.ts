@@ -1,3 +1,4 @@
+import type App from '../../app'
 import {
     Form,
     enableOrDisableSecondaryFields,
@@ -5,10 +6,12 @@ import {
     someChecked,
 } from '../../formutils'
 
-export default function contactarisque(page, app) {
+export default function contactarisque(page: HTMLElement, app: App) {
     const form = page.querySelector('form')
+    if (!form) return
 
-    var button = form.querySelector('input[type=submit]')
+    const button: HTMLInputElement | null = form.querySelector('input[type=submit]')
+    if (!button) return
 
     // Pré-remplit le formulaire
     preloadCheckboxForm(form, 'contact_a_risque', app.profil)
@@ -23,7 +26,7 @@ export default function contactarisque(page, app) {
     preloadCheckboxForm(form, 'contact_a_risque_stop_covid', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_assurance_maladie', app.profil)
 
-    var primary = form.elements['contact_a_risque']
+    const primary = form.elements['contact_a_risque']
     enableOrDisableSecondaryFields(form, primary)
 
     primary.addEventListener('click', function () {
@@ -67,21 +70,23 @@ export default function contactarisque(page, app) {
 }
 
 function toggleFormButtonOnCheckAndRadiosRequired(
-    formElement,
-    continueLabel,
-    uncheckedLabel,
-    requiredLabel
+    formElement: HTMLFormElement,
+    continueLabel: string,
+    uncheckedLabel: string,
+    requiredLabel: string
 ) {
     const form = new Form(formElement)
     const button = form.submitButton
     const primaryCheckbox = form.primaryCheckbox
     const secondaryCheckboxes = form.secondaryCheckboxes
     // Warning: removes otherCheckbox from secondaryCheckboxes:
-    const otherCheckbox = secondaryCheckboxes.pop()
-    const TACCheckbox = form.qS('input[type=checkbox]#contact_a_risque_stop_covid')
+    const otherCheckbox = secondaryCheckboxes.pop() as HTMLInputElement
+    const TACCheckbox = form.qS(
+        'input[type=checkbox]#contact_a_risque_stop_covid'
+    ) as HTMLInputElement
     const AMCheckbox = form.qS(
         'input[type=checkbox]#contact_a_risque_assurance_maladie'
-    )
+    ) as HTMLInputElement
 
     function updateSubmitButtonLabelRequired() {
         const hasSecondaryChecks =

@@ -2,6 +2,7 @@ import dayjs from 'dayjs'
 import 'dayjs/locale/fr'
 import localeData from 'dayjs/plugin/localeData'
 
+import type App from '../../app'
 import {
     createEvent,
     enableOrDisableSecondaryFields,
@@ -12,8 +13,9 @@ import {
 dayjs.locale('fr')
 dayjs.extend(localeData)
 
-export default function historique(page, app) {
+export default function historique(page: HTMLElement, app: App) {
     const form = page.querySelector('form')
+    if (!form) return
 
     const now = dayjs()
 
@@ -22,9 +24,10 @@ export default function historique(page, app) {
     if (typeof app.profil.covid_passee_date !== 'undefined') {
         const covidPasseeDate = dayjs(app.profil.covid_passee_date)
         const monthsAgo = now.diff(covidPasseeDate, 'month')
-        const toSelect = form.querySelector(
+        const toSelect: HTMLInputElement | null = form.querySelector(
             `input#covid_passee_date_${Math.min(6, monthsAgo)}_mois`
         )
+        if (!toSelect) return
         toSelect.checked = true
         toSelect.dispatchEvent(createEvent('change'))
     }
@@ -42,6 +45,7 @@ export default function historique(page, app) {
         const label_x_mois = form.querySelector(
             `label[for="covid_passee_date_${i}_mois"] span`
         )
+        if (!label_x_mois) return
         const suffix = i === 6 ? ' ou avant' : ''
         label_x_mois.innerHTML = `${
             label_x_mois.innerHTML
@@ -51,7 +55,8 @@ export default function historique(page, app) {
     })
 
     // Le libellé du bouton change en fonction des choix.
-    const button = form.querySelector('input[type=submit]')
+    const button: HTMLInputElement | null = form.querySelector('input[type=submit]')
+    if (!button) return
     const uncheckedLabel = app.profil.estMonProfil()
         ? 'Je n’ai jamais eu la Covid'
         : 'Cette personne n’a jamais eu la Covid'

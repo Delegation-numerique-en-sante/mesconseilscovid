@@ -1,3 +1,4 @@
+import type App from '../../app'
 import {
     enableOrDisableSecondaryFields,
     preloadForm,
@@ -6,10 +7,12 @@ import {
 } from '../../formutils'
 import AlgorithmeOrientation from '../../algorithme/orientation'
 
-export default function sante(page, app) {
+export default function sante(page: HTMLElement, app: App) {
     const form = page.querySelector('form')
+    if (!form) return
 
-    const button = form.querySelector('input[type=submit]')
+    const button: HTMLInputElement | null = form.querySelector('input[type=submit]')
+    if (!button) return
     preloadForm(form, 'age', app.profil)
     preloadForm(form, 'taille', app.profil)
     preloadForm(form, 'poids', app.profil)
@@ -68,12 +71,12 @@ export default function sante(page, app) {
     })
 }
 
-function parseEntier(element) {
+function parseEntier(element: HTMLInputElement) {
     let taille = parseFloat(element.value.replace(',', '.'))
     return Math.round(taille)
 }
 
-function parseTaille(element) {
+function parseTaille(element: HTMLInputElement) {
     let taille = parseFloat(element.value.replace(',', '.'))
     if (taille < 3) {
         // mètres au lieu de centimètres ?
