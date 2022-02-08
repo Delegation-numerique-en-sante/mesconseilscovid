@@ -58,7 +58,7 @@
 
     - Si vous n’êtes pas encore vacciné(e) contre la Covid, vous obtiendrez votre passe vaccinal une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation.
 
-      Pour conserver ce passe, vous devrez ensuite recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans un délai de 7 mois (*ce délai passera à 4 mois à partir du 15 février*), sauf si vous êtes contaminé par la Covid entre temps.
+      Pour conserver ce passe, vous devrez ensuite recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans un délai de 7 mois (*ce délai passera à 4 mois à partir du 15 février*), sauf si vous êtes contaminé par la Covid entre-temps.
 
     - Si vous avez reçu votre première dose au plus tard le 15 février, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez, en attendant, présenter un test de dépistage négatif (*passe vaccinal temporaire*) en **complément** de votre attestation de première dose pour participer à certaines activités.
 
@@ -73,7 +73,10 @@
     :level: 3
     :expires: 15 février 2022
 
-    Si vous ne faites pas votre rappel vaccinal dans les 7 mois (*délai réduit à 4 mois à partir du 15 février*) suivant votre primo-vaccination, alors votre passe sera automatiquement désactivé. Il sera réactivé **7 jours après** votre injection de rappel, ou 11 jours après votre contamination (certificat de rétablissement), si vous attrapez la Covid.
+    Si vous ne faites pas votre rappel vaccinal dans les 7 mois (*délai réduit à 4 mois à partir du 15 février*) suivant votre primo-vaccination, alors votre passe sera automatiquement désactivé. Il sera prolongé grâce à un nouveau QR code :
+    * **7 jours après** votre injection de rappel ;
+    ou 
+    * **11 jours après** votre test de dépistage **positif** (PCR ou antigénique) si vous avez été contaminé après votre vaccination.
 
 
 .. question:: Qu’est-ce que le passe sanitaire et à qui s’applique t-il encore ?
