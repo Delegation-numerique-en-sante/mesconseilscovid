@@ -29,8 +29,7 @@
 
     Votre **schéma de vaccination est complet** si vous avez respecté les délais suivants :
     * si vous avez été vacciné(e) avec les vaccins Pfizer, Moderna ou AstraZeneca : votre dernière dose doit dater d’il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*) ;
-
-    * si vous avez été vacciné(e) avec le vaccin Janssen : vous devez avoir reçu la **dose additionnelle** il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*).
+    * si vous avez été vacciné(e) avec le vaccin Janssen : vous devez avoir reçu la **dose additionnelle** il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*) ;
     * si vous avez eu la Covid après votre vaccination initiale (primo-vaccination).
 
     Si vous avez reçu votre première dose au plus tard le 15 février, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez bénéficier d’un *passe vaccinal temporaire* (voir [ci-dessous](#je-suis-en-cours-de-vaccination-comment-obtenir-un-passe-vaccinal-temporaire-pass)).
@@ -58,7 +57,7 @@
 
     - Si vous n’êtes pas encore vacciné(e) contre la Covid, vous obtiendrez votre passe vaccinal une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation.
 
-      Pour conserver ce passe, vous devrez ensuite recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans un délai de 7 mois (*ce délai passera à 4 mois à partir du 15 février*), sauf si vous êtes contaminé par la Covid entre-temps.
+      Pour conserver ce passe, vous devrez ensuite recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans un délai de 7 mois (*ce délai passera à 4 mois à partir du 15 février*), sauf si vous êtes contaminé(e) par la Covid entre-temps.
 
     - Si vous avez reçu votre première dose au plus tard le 15 février, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez, en attendant, présenter un test de dépistage négatif (*passe vaccinal temporaire*) en **complément** de votre attestation de première dose pour participer à certaines activités.
 
@@ -73,10 +72,10 @@
     :level: 3
     :expires: 15 février 2022
 
-    Si vous ne faites pas votre rappel vaccinal dans les 7 mois (*délai réduit à 4 mois à partir du 15 février*) suivant votre primo-vaccination, alors votre passe sera automatiquement désactivé. Il sera prolongé grâce à un nouveau QR code :
-    * **7 jours après** votre injection de rappel ;
-    ou 
-    * **11 jours après** votre test de dépistage **positif** (PCR ou antigénique) si vous avez été contaminé après votre vaccination.
+    Si vous ne faites pas votre rappel vaccinal dans les 7 mois (*délai réduit à 4 mois à partir du 15 février*) suivant votre primo-vaccination, alors votre passe sera automatiquement désactivé. Il sera prolongé grâce à un nouveau QR code :
+
+    * **7 jours après** votre injection de rappel ;
+    * ou **11 jours après** votre test de dépistage **positif** (PCR ou antigénique) si vous avez été contaminé(e) après votre vaccination.
 
 
 .. question:: Qu’est-ce que le passe sanitaire et à qui s’applique t-il encore ?
@@ -137,14 +136,14 @@
     - À partir du **15 février 2022** :
         * si vous avez plus de **18 ans et un mois** et que votre dernière **injection** date de plus de **4 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
     
-    Si vous avez eu la Covid après avoir complété votre schéma vaccinal initial (à 1 ou 2 doses, selon votre situation), alors votre protection est jugée suffisante et vous n'avez pas besoin de recevoir un rappel vaccinal (dit 3<sup>e</sup> dose). Votre test PCR ou antigénique **positif** deviendra votre **certificat de rétablissement**, valable comme passe vaccinal en France. 
-    Attention, le rappel vaccinal pourra vous être exigé si vous souhaitez partir en voyage à l'étranger.
+    Si vous avez eu la Covid après avoir complété votre schéma vaccinal initial (à 1 ou 2 doses, selon votre situation), alors votre protection est jugée suffisante et vous n’avez pas besoin de recevoir un rappel vaccinal (dit 3<sup>e</sup> dose). Votre test PCR ou antigénique **positif** deviendra votre **certificat de rétablissement**, valable comme passe vaccinal en France. 
+    Attention, le rappel vaccinal pourra vous être exigé si vous souhaitez partir en voyage à l’étranger.
 
 
     <div class="voir-aussi">
 
     - [Suis-je concerné par la dose de rappel ?](je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
-    - [Comment obtenir un certificat de rétablissement ?] #comment-obtenir-un-certificat-de-rétablissement-avec-qr-code
+    - [Comment obtenir un certificat de rétablissement ?](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)
     - [Tout savoir sur le rappel vaccinal contre la Covid-19](https://www.gouvernement.fr/tout-savoir-sur-le-rappel-vaccinal-contre-la-covid-19) (gouvernement.fr)
 
     </div>
@@ -154,21 +153,19 @@
     :level: 3
     :expires: 15 février 2022
     
-    Si vous avez eu la Covid après avoir complété votre schéma vaccinal initial (1 ou 2 doses, selon votre situation), alors votre protection est jugée suffisante et vous n'avez pas besoin de recevoir un rappel vaccinal (dit 3<sup>e</sup> dose) pour prolonger votre passe vaccinal pour son usage en France. Vous pourrez utiliser le QR code de votre **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*).
-    Attention, le certificat de rétablissement n'est pas reconnu par tous les pays. Le rappel vaccinal pourra vous être exigé si vous souhaitez partir en voyage à l'étranger.
+    Si vous avez eu la Covid après avoir complété votre schéma vaccinal initial (1 ou 2 doses, selon votre situation), alors votre protection est jugée suffisante  et vous n’avez pas besoin de recevoir un rappel vaccinal (dit 3<sup>e</sup> dose) pour prolonger votre passe vaccinal pour son usage en France.
 
-    Vous souhaitez néanmoins faire une dose de rappel :
-    
-    Si vous êtes âgé de **18 ans ou plus**, alors vous serez éligible à une dose de rappel dès **3 mois** après votre **infection**.
+    Vous pourrez utiliser le QR code de votre **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*).
+    Attention, le certificat de rétablissement n’est pas reconnu par tous les pays. Le rappel vaccinal pourra vous être exigé si vous souhaitez partir en voyage à l’étranger.
 
-    Si vous êtes âgé de **12 à 17 ans**, alors depuis le 24 janvier 2022 vous êtes éligible à une dose de rappel dès **6 mois** après votre **infection**.
-    
-    
-    
+    Il est toutefois possible de faire une dose de rappel :
+
+    * Si vous êtes âgé de **18 ans ou plus**, dès **3 mois** après votre **infection**.
+    * Si vous êtes âgé de **12 à 17 ans**, dès **6 mois** après votre **infection**.
 
     <div class="conseil conseil-jaune">
 
-    Attention, un test sérologique (ou sérologie) ne tient pas lieu de passe vaccinal.
+    Attention, un [test sérologique (ou sérologie)](je-veux-me-faire-vacciner.html#faut-il-que-je-recoive-une-dose-de-rappel-si-ma-serologie-test-serologique-est-positive) ne tient pas lieu de passe vaccinal.
 
     </div>
 
