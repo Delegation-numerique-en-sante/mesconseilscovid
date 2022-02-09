@@ -314,7 +314,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * **une seule dose**, s’ils ont déjà été contaminés à la Covid (dans ce cas, il faut attendre **au minimum 2 mois** après le test positif avant de se faire vacciner) ;
     * **deux doses**, s’ils n’ont pas déjà été contaminés par la Covid.
 
-    Le délai entre les deux doses dépend du vaccin et de l'âge de votre enfant :
+    Le délai entre les deux doses dépend du vaccin et de l’âge de votre enfant :
 
     * enfant âgé de **5 à 11 ans** (dosage pédiatrique du vaccin Pfizer) : entre **18 et 24 jours**.
 

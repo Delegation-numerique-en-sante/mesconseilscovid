@@ -91,13 +91,13 @@
 
 <div id="{{prefixe}}-symptomes-moins-4-jours-reponse" class="statut statut-bleu" hidden>
 
-Vous avez des symptômes qui peuvent évoquer la Covid depuis moins de 4 jours, nous vous recommandons de faire un test **antigénique** ou **PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](j-ai-des-symptomes-covid.html).
+Vous avez des symptômes qui peuvent évoquer la Covid depuis moins de 4 jours, nous vous recommandons de faire un test **antigénique** ou **PCR nasopharyngé**. Consultez notre page thématique [« J’ai des symptômes de la Covid, que faire ? »](j-ai-des-symptomes-covid.html).
 
 </div>
 
 <div id="{{prefixe}}-symptomes-plus-4-jours-reponse" class="statut statut-bleu" hidden>
 
-Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, nous vous recommandons de faire un **test PCR nasopharyngé**. Consultez notre page thématique [« J'ai des symptômes de la Covid, que faire ? »](j-ai-des-symptomes-covid.html).
+Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, nous vous recommandons de faire un **test PCR nasopharyngé**. Consultez notre page thématique [« J’ai des symptômes de la Covid, que faire ? »](j-ai-des-symptomes-covid.html).
 
 </div>
 
@@ -105,7 +105,7 @@ Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, 
 
 Vous n’avez pas de symptômes qui peuvent évoquer la Covid mais vous êtes cas contact, nous vous recommandons de faire un **test antigénique** si vous venez de l’apprendre.
 
-Pour un test de contrôle (7 jours après votre contact à risque ), les tests **antigénique** ou **PCR nasopharyngé** sont indiqués.  Consultez notre page thématique [« Je suis cas contact Covid, que faire ? »](cas-contact-a-risque.html).
+Pour un test de contrôle (7 jours après votre contact à risque ), les tests **antigénique** ou **PCR nasopharyngé** sont indiqués.  Consultez notre page thématique [« Je suis cas contact Covid, que faire ? »](cas-contact-a-risque.html).
 
 </div>
 

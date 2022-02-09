@@ -42,7 +42,7 @@
     * personnes **mineures** ;
     * personnes majeures **élèves** du secondaire, en classe prépa ou BTS ;
     * personnes identifiées comme **cas contact** par l’Assurance maladie, l’ARS ou notifiées par l’application TousAntiCovid ;
-    * personnes réalisant un test RT-PCR pour **confirmer** le résultat positif d'un **autotest** ou d’un test **antigénique** daté de moins de 48h ;
+    * personnes réalisant un test RT-PCR pour **confirmer** le résultat positif d’un **autotest** ou d’un test **antigénique** daté de moins de 48h ;
     * personnes sortant de **quarantaine** suite à un voyage dans un pays classé rouge ;
     * personnes concernées par des campagnes de **dépistage collectif**, organisées par les Agences régionales de santé ou au sein des établissements de l’Éducation nationale par exemple.
 
@@ -63,7 +63,7 @@
 
     Pour bénéficier de cette prise en charge, il faudra présenter un **justificatif** lors de votre rendez-vous de dépistage :
 
-    - la **notification** de l’application **TousAntiCovid**, sur votre téléphone portable (pas de capture d'écran) ;
+    - la **notification** de l’application **TousAntiCovid**, sur votre téléphone portable (pas de capture d’écran) ;
     - ou le **courriel** (e-mail), **SMS**, ou **courrier** de l’Assurance maladie ou de l’ARS.
 
     <div class="conseil conseil-jaune">

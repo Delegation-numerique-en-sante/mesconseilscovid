@@ -37,12 +37,14 @@ declare.ameli.fr
 Doctolib
 Doliprane
 dûs
-d’1
+d'1
 Efferalgan
 EMA
 er
+fake
 Fiocruz
 flex
+foreigner
 Guillain-Barré
 HAS
 HSCP
@@ -53,7 +55,7 @@ Kellermann
 kétoprofène
 level
 lymphopéniante
-l’ARS
+l'ARS
 macOS
 Macouria
 Maiia
@@ -63,6 +65,7 @@ Moderna
 Montsinéry
 multisystémique
 myo-péricardite
+NB
 nasopharyngé
 nasopharyngés
 Ouigo
@@ -82,6 +85,7 @@ RT-PCR
 Rémire-Montjoly
 sante.fr
 scan
+SARS-CoV-2
 SI-DEP
 Sinnamary
 Sinopharm
@@ -94,8 +98,10 @@ TousAntiCovid
 TousPartenairesCovid
 TROD
 USLD
+V4
 Vaxzevria
 ve
+visio
 visio-conférence
 ViteMaDose
 WhatsApp

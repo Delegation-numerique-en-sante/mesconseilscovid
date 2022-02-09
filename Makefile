@@ -1,6 +1,6 @@
 .DEFAULT_GOAL:=help
 
-THEMATIQUES = $(foreach file,$(subst contenus/thematiques/,,$(subst .md,.html,$(wildcard contenus/thematiques/*.md))),$(addprefix src/,$(shell echo $(file) | sed 's/^[0-9]\+-//')))
+THEMATIQUES = $(foreach file,$(subst contenus/thematiques/,,$(subst .md,.html,$(wildcard contenus/thematiques/*.md))),$(addprefix src/,$(shell echo $(file) | sed -r 's/[0-9]+-//')))
 
 HTML = src/index.html $(THEMATIQUES)
 
@@ -102,7 +102,7 @@ check-service-worker: src/index.html $(firstword $(THEMATIQUES))  # Check that a
 	python3 check.py service_worker
 
 check-spelling: $(HTML) jargon.dic
-	hunspell -l -H -d fr,jargon $(HTML)
+	hunspell -l -H --check-apostrophe -d fr,jargon $(HTML)
 
 jargon.dic: jargon.dic.txt
 	cat $< | sort | uniq >$@.in

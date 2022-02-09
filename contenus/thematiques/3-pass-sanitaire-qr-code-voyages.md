@@ -29,7 +29,7 @@
 
     Votre **schéma de vaccination est complet** si vous avez respecté les délais suivants :
     * si vous avez été vacciné(e) avec les vaccins Pfizer, Moderna ou AstraZeneca : votre dernière dose doit dater d’il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*) ;
-    * si vous avez été vacciné(e) avec le vaccin Janssen : vous devez avoir reçu la **dose aditionnelle** il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*).
+    * si vous avez été vacciné(e) avec le vaccin Janssen : vous devez avoir reçu la **dose additionnelle** il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*).
 
     Si vous avez reçu votre première dose au plus tard le 15 février, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez bénéficier d’un *passe vaccinal temporaire* (voir [ci-dessous](#je-suis-en-cours-de-vaccination-comment-obtenir-un-passe-vaccinal-temporaire-pass)).
 
@@ -164,7 +164,7 @@
 
     - En cas de **contre-indication médicale** (voir la [liste des contre-indications à la vaccination](je-veux-me-faire-vacciner.html#y-a-t-il-des-contre-indications-a-la-vaccination)), vous pouvez demander à votre médecin d’établir un **certificat médical** (formulaire Cerfa n°16183*01).
 
-      Il faudra envoyer le premier volet du certificat à votre **caisse d’Assurance Maladie**. Après vérification, elle vous adressera un **certificat de contre-indication à la vaccination**, avec un **QR code** valable  pous tous les lieux et activités en **France**.
+      Il faudra envoyer le premier volet du certificat à votre **caisse d’Assurance Maladie**. Après vérification, elle vous adressera un **certificat de contre-indication à la vaccination**, avec un **QR code** valable pour tous les lieux et activités en **France**.
 
       Ce passe ne sera **pas valable à l’étranger**, car les autres pays européens n’ont pas tous les mêmes règles sanitaires.
 

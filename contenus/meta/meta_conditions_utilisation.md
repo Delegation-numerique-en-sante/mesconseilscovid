@@ -47,7 +47,7 @@ Si vous rencontrez un défaut d’accessibilité vous empêchant d’accéder à
 Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits.
 
 Pour en savoir plus sur la politique d’accessibilité numérique de l’État :
-[Référentiel général d'amélioration de l'accessibilité V4](https://www.numerique.gouv.fr/publications/rgaa-accessibilite/).
+[Référentiel général d’amélioration de l’accessibilité V4](https://www.numerique.gouv.fr/publications/rgaa-accessibilite/).
 
 ## Responsabilités et protection des données à caractère personnel
 
