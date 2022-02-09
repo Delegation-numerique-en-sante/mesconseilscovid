@@ -62,7 +62,7 @@
 
     Plus un variant est contagieux, plus il se répand vite au sein de la population et finit par remplacer les versions précédentes. Au début de la pandémie, en **2020**, la souche originelle, d’abord détectée en Chine, était la plus répandue. Actuellement, début **2022**, c’est le variant *Omicron* qui est le plus répandu en France. Il a remplacé le variant *Delta*, qui était majoritaire en décembre **2021**.
 
-    Les **scientifiques surveillent** attentivement l’apparition de **nouveaux variants** et veillent à ce que les consignes sanitaires et les vaccins restent suffisament efficaces pour les combattre. Les études récentes nous donnent des éléments rassurants puisqu’elles montrent que :
+    Les **scientifiques surveillent** attentivement l’apparition de **nouveaux variants** et veillent à ce que les consignes sanitaires et les vaccins restent suffisamment efficaces pour les combattre. Les études récentes nous donnent des éléments rassurants puisqu’elles montrent que :
 
     * le variant **Omicron** semble donner **moins souvent** des formes graves que le variant précédent (*Delta*) ;
     * le **rappel vaccinal** avec un vaccin Pfizer ou Moderna permet de diminuer de **70 %** le risque d’une forme grave dans le cas d’une contamination par *Omicron*.
@@ -332,7 +332,7 @@
 .. question:: À quoi sert le vaccin si on peut quand même attraper la Covid ?
     :level: 3
 
-    Comme la plupart des vaccins, notamment celui contre la grippe, les vaccins anti-covid ne protègent pas à 100% contre la maladie, mais ils réduisent :
+    Comme la plupart des vaccins, notamment celui contre la grippe, les vaccins contre la Covid ne protègent pas à 100% contre la maladie, mais ils réduisent :
 
     * les **risques de contamination et de transmission** : vacciné(e), tu attraperas moins facilement la Covid et tu auras moins de chances de la transmettre à une personne vulnérable (personne malade ; grands-parents…) ;
     * les **risques de faire une forme grave** de la maladie et d’être hospitalisé(e).
@@ -478,7 +478,7 @@
     Si tu as été testé **positif** à la Covid, pas de panique !
 
     Tout le monde ne réagit pas de la même manière au virus :
-    - certaines personnes vont développer une **forme lègère ou modérée** de la maladie, avec des symptômes (fièvre, toux, fatigue, courbatures, etc.) qui peuvent durer plusieurs jours ;
+    - certaines personnes vont développer une **forme légère ou modérée** de la maladie, avec des symptômes (fièvre, toux, fatigue, courbatures, etc.) qui peuvent durer plusieurs jours ;
     - certaines personnes ne vont même pas se sentir malades : on dit qu’elles sont **asymptomatiques** ;
     - certaines personnes vont malheureusement développer une **forme plus grave**, avec des difficultés respiratoires pouvant nécessiter une hospitalisation : ces formes sont plus rares chez les jeunes, et touchent surtout des personnes âgées ou des personnes plus fragiles à cause d’une maladie chronique (ce qu’on appelle des *comorbidités*).
 

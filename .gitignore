@@ -13,6 +13,8 @@ src/*.html
 src/pdfs/*
 static/sitemap.xml
 contenus/zoverride
+fr.dic
+fr.aff
 jargon.dic
 jargon.dic.in
 tools/build/

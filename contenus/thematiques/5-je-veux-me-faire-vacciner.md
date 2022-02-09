@@ -134,7 +134,7 @@
 
      <div class="voir-aussi">
 
-    - [Commment obtenir un certificat de rétablissement ?](pass-sanitaire-qr-code-voyages.html#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)
+    - [Comment obtenir un certificat de rétablissement ?](pass-sanitaire-qr-code-voyages.html#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)
 
     </div>
 

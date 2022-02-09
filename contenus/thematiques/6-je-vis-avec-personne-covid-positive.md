@@ -105,7 +105,7 @@ Même si vous ne présentez pas de symptômes, faites un **test de dépistage** 
     - **limitez** vos interactions sociales, et évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal) ;
     - portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas.
 
-Si votre enfant de moins de 16 ans est positif à la Covid, vous pouvez bénéficier d'un **arrêt de travail**, même si vous êtes complètement vacciné(e). Rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr/) pour en faire la demande.
+Si votre enfant de moins de 16 ans est positif à la Covid, vous pouvez bénéficier d’un **arrêt de travail**, même si vous êtes complètement vacciné(e). Rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr/) pour en faire la demande.
 
 #### 2. Faites 2 autotests à J+2 et J+4
 
