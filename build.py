@@ -193,16 +193,21 @@ def download_file_if_needed(url, local_path, timeout):
 
 
 def _download_file(url, local_path, timeout):
-    with httpx.stream(
-        "GET",
-        url,
-        follow_redirects=True,
-        timeout=timeout,
-        verify=False,  # ignore SSL certificate validation errors
-    ) as response:
-        if response.status_code != HTTPStatus.OK:
-            raise Exception(f"{url} is broken! ({response.status_code})")
-        _save_binary_response(local_path, response)
+    try:
+        with httpx.stream(
+            "GET",
+            url,
+            follow_redirects=True,
+            timeout=timeout,
+            verify=False,  # ignore SSL certificate validation errors
+        ) as response:
+            if response.status_code != HTTPStatus.OK:
+                raise Exception(f"{url} is broken! ({response.status_code})")
+            _save_binary_response(local_path, response)
+    except httpx.ReadError:
+        # It (may?) happen in Github CI which prevents
+        # downloading external/big files.
+        return
 
 
 def _save_binary_response(file_path: Path, response: "httpx.Response"):
