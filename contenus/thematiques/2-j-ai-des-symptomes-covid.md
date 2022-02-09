@@ -27,11 +27,12 @@
         </div>
     </form>
 
-.. question:: Je suis positif à la Covid et j'ai reçu un SMS l'Assurance maladie. Comment déclarer mes cas contact ?
-    
-    Si vous êtes positif à la Covid, vous pouvez **identifier** les personnes avec qui vous avez été en contact récemment sur [ce site de l'Assurance maladie](https://declare.ameli.fr/listermescascontacts). Grâce à votre signalement, ces personnes pourront bénéficier plus rapidement et en fonction de leur statut vaccinal, d'un **arrêt de travail**, de tests de **dépistage** **gratuits** et de consignes sanitaires personnalisées.
-    
-    
+
+.. question:: Je suis positif à la Covid et j’ai reçu un SMS de l’Assurance Maladie. Comment déclarer mes cas contacts ?
+
+    Si vous êtes positif ou positive à la Covid, vous pouvez **identifier** les personnes avec qui vous avez été en contact récemment sur [ce site de l’Assurance Maladie](https://declare.ameli.fr/listermescascontacts). Grâce à votre signalement, ces personnes pourront bénéficier plus rapidement et en fonction de leur statut vaccinal, d’un **arrêt de travail**, de tests de **dépistage gratuits** et de consignes sanitaires personnalisées.
+
+
 .. question:: Quels sont les symptômes de la Covid ?
 
     <div class="conseil conseil-jaune">
