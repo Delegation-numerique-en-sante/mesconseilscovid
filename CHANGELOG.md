@@ -1,5 +1,11 @@
 # Changelog
 
+## 2022-02-09
+
+* prise en compte d’une contamination = une injection
+* précisions sur la date d’expiration du passe vaccinal
+* ajoute le service d’identification de cas contact de l’Assurance Maladie
+
 ## 2022-02-04
 
 * ajout de questions sur la vaccination et la grossesse
@@ -20,7 +26,7 @@
 ## 2022-01-28
 
 * arrêt de travail des parents vaccinés et prolongation du télétravail obligatoire
-* retrait de la mention d'attente de 17 jours après un test positif
+* retrait de la mention d’attente de 17 jours après un test positif
 
 ## 2022-01-26
 
@@ -968,7 +974,7 @@
   et les contacts à risque
 * améliore la rédaction de certains conseils
 * déplace les informations sur l’auto-médication vers la page de conseils
-* retire une information non explicite sur l'antibiothérapie
+* retire une information non explicite sur l’antibiothérapie
 * met à jour les liens vers certaines infographies qui ont changé
 * met à jour les taux d’incidence
 * corrige le fonctionnement du bouton retour du navigateur
