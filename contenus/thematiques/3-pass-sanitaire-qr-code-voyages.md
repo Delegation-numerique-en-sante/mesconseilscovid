@@ -330,21 +330,20 @@
 
 ## Obtenir son justificatif avec QR code
 
-.. question:: J'ai eu la Covid avant ma vaccination initiale et j'ai reçu ma dose de rappel avant le 1<sup>er</sup> février : pourquoi mon passe vaccinal affiche t-il une date d'expiration ?
+.. question:: J’ai eu la Covid avant ma vaccination initiale et j’ai reçu ma dose de rappel avant le 1<sup>er</sup> février : pourquoi mon passe vaccinal affiche-t-il une date d’expiration ?
     :level: 3
-    
-    Si votre passe vaccinal affiche une date d'expiration et que vous êtes dans la situation suivante :
-    * vous avez été **contaminé** par la Covid **avant** votre 1<sup>re</sup>
-    et
-    * vous avez complété votre schéma vaccina avec **1 seule dose** de vaccin 
-    et
-    * vous avez reçu votre **dose de rappel** avant le 1er février 2022,
-    
-    alors, vous pouvez obtenir une **nouvelle attestation** de vaccination, avec un nouveau QR code pour disposer d'un passe vaccinal valide.
-    
-    **Téléchargez votre nouvelle attestation** à partir du [téléservice de l’Assurance maladie](https://attestation-vaccin.ameli.fr/) à l’aide de votre **numéro de sécurité sociale** (si vous en avez un) ou rendez-vous chez un **professionnel de santé** (médecin, pharmacien, infirmier, sage-femme…), muni de votre **carte vitale** (si vous en avez une) afin qu’il vous en édite une nouvelle.
 
+    Si votre passe vaccinal affiche une date d’expiration et que vous êtes dans la situation suivante :
+
+    * vous avez été **contaminé(e)** par la Covid **avant** votre vaccination initiale
+    * **et** vous avez complété votre schéma vaccinal avec **1 seule dose** de vaccin 
+    * **et** vous avez reçu votre **dose de rappel** avant le 1<sup>er</sup> février 2022,
     
+    alors, vous pouvez obtenir une **nouvelle attestation** de vaccination, avec un nouveau QR code pour disposer d’un passe vaccinal valide.
+    
+    **Téléchargez votre nouvelle attestation** à partir du [téléservice de l’Assurance Maladie](https://attestation-vaccin.ameli.fr/) à l’aide de votre **numéro de sécurité sociale** (si vous en avez un) ou rendez-vous chez un **professionnel de santé** (médecin, pharmacien, infirmier, sage-femme…), muni de votre **carte vitale** (si vous en avez une) afin qu’il vous en édite une nouvelle.
+
+
 .. question:: Comment obtenir une attestation de vaccination complète avec un QR code ?
     :level: 3
 
