@@ -102,6 +102,7 @@ def thematiques():
                 "meta_pied_de_page": meta_pied_de_page,
             },
         )
+        content = cache_external_pdfs(content)
         (SRC_DIR / f"{thematique.name}.html").write_text(content)
 
 
@@ -202,6 +203,10 @@ def _download_file(url, local_path, timeout):
             verify=False,  # ignore SSL certificate validation errors
         ) as response:
             if response.status_code != HTTPStatus.OK:
+                if url == "https://sidep.gouv.fr/cyberlab/Customer/FAQ_FR.pdf":
+                    # It happens in Github CI but we do not want to break
+                    # the complete build because of that URL.
+                    return
                 raise Exception(f"{url} is broken! ({response.status_code})")
             _save_binary_response(local_path, response)
     except httpx.ReadError:
