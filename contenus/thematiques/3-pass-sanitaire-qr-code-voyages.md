@@ -130,9 +130,8 @@
     - Depuis le **15 février 2022** :
         * si vous avez plus de **18 ans et un mois** et que votre dernière **injection** date de plus de **4 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
 
-    Si vous avez eu la Covid après avoir complété votre schéma vaccinal initial (à 1 ou 2 doses, selon votre situation), alors votre protection est jugée suffisante et vous n’avez pas besoin de recevoir un rappel vaccinal (dit 3<sup>e</sup> dose). Votre test PCR ou antigénique **positif** deviendra votre **certificat de rétablissement**, valable comme passe vaccinal en France. 
-    Attention, le rappel vaccinal pourra vous être exigé si vous souhaitez partir en voyage à l’étranger.
-
+    Si vous avez eu la Covid après avoir complété votre vaccination initiale (avec 1 ou 2 doses), alors votre protection est jugée suffisante et vous n’avez pas besoin de recevoir de rappel (dit 3<sup>e</sup> dose).
+    Votre test PCR ou antigénique **positif** deviendra votre **certificat de rétablissement**, valable comme passe vaccinal en France. Attention, le rappel vaccinal pourra vous être exigé si vous souhaitez partir en voyage à l’étranger.
 
     <div class="voir-aussi">
 
@@ -145,8 +144,8 @@
 
 .. question:: J’ai eu la Covid après ma vaccination complète, comment prolonger mon passe vaccinal ?
     :level: 3
-    
-    Si vous avez eu la Covid après avoir complété votre schéma vaccinal initial (1 ou 2 doses, selon votre situation), alors votre protection est jugée suffisante  et vous n’avez pas besoin de recevoir un rappel vaccinal (dit 3<sup>e</sup> dose) pour prolonger votre passe vaccinal pour son usage en France.
+
+    Si vous avez eu la Covid après avoir complété votre vaccination initiale (avec 1 ou 2 doses), alors votre protection est jugée suffisante et vous n’avez pas besoin de recevoir de rappel (dit 3<sup>e</sup> dose).
 
     Vous pourrez utiliser le QR code de votre **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*).
     Attention, le certificat de rétablissement n’est pas reconnu par tous les pays. Le rappel vaccinal pourra vous être exigé si vous souhaitez partir en voyage à l’étranger.
@@ -338,11 +337,11 @@
     Si votre passe vaccinal affiche une date d’expiration et que vous êtes dans la situation suivante :
 
     * vous avez été **contaminé(e)** par la Covid **avant** votre vaccination initiale
-    * **et** vous avez complété votre schéma vaccinal avec **1 seule dose** de vaccin 
+    * **et** vous avez complété votre schéma vaccinal avec **1 seule dose** de vaccin
     * **et** vous avez reçu votre **dose de rappel** avant le 1<sup>er</sup> février 2022,
-    
+
     alors, vous pouvez obtenir une **nouvelle attestation** de vaccination, avec un nouveau QR code pour disposer d’un passe vaccinal valide.
-    
+
     **Téléchargez votre nouvelle attestation** à partir du [téléservice de l’Assurance Maladie](https://attestation-vaccin.ameli.fr/) à l’aide de votre **numéro de sécurité sociale** (si vous en avez un) ou rendez-vous chez un **professionnel de santé** (médecin, pharmacien, infirmier, sage-femme…), muni de votre **carte vitale** (si vous en avez une) afin qu’il vous en édite une nouvelle.
 
 
