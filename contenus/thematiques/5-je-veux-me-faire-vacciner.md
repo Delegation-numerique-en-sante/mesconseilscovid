@@ -18,7 +18,8 @@
 
     Si vous avez **18 ans ou plus**, vous pouvez recevoir un rappel vaccinal, en respectant [un délai minimal](#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) après votre dernière injection ou infection à la Covid.
     
-    Si vous avez eu la Covid après votre vaccination initiale (primo-vaccination), alors votre protection est jugée suffisante, et la dose de rappel n’est pas obligatoire pour prolonger votre passe vaccinal. Vous pourrez présenter votre certificat de rétablissement (test PCR ou antigénique positif) en lieu et place de votre attestation de vaccination. Attention, tous les pays n’appliquant pas la même réglementation, la dose de rappel pourra vous être demandée pour voyager à l’étranger.
+    Si vous avez eu la **Covid** après votre vaccination initiale (primo-vaccination), alors votre protection est jugée suffisante, et la dose de **rappel** n’est **pas nécéssaire** pour prolonger votre passe vaccinal. 
+    Vous pourrez présenter votre certificat de rétablissement (test PCR ou antigénique positif) en lieu et place de votre attestation de vaccination. Attention, tous les pays n’appliquant pas la même réglementation, la dose de rappel pourra vous être demandée pour voyager à l’étranger.
 
     <span class="nouveau">nouveau</span> Si vous avez entre **12 et 17 ans**, le rappel vaccinal vous est ouvert depuis le **lundi 24 janvier 2022**.
 
@@ -69,7 +70,7 @@
 
         - si vous avez entre **12 et 17 ans**, dès **6 mois** après votre dernière **injection**, ou votre dernière **infection** à la Covid ;
     
-    *Si vous avez eu la Covid après votre vaccination initiale (primo-vaccination), alors votre protection est jugée suffisante, et la dose de rappel n’est pas obligatoire pour prolonger votre passe vaccinal.*
+    *Si vous avez eu la Covid après votre vaccination initiale (primo-vaccination), alors votre protection est jugée suffisante, et la dose de rappel n’est pas nécéssaire pour prolonger votre passe vaccinal.*
 
     * si vous avez été vacciné(e) avec le **vaccin Janssen** :
 
