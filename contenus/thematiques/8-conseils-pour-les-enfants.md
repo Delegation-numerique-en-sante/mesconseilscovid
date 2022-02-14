@@ -385,17 +385,16 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 .. question:: La vaccination des mineurs de 12 ans et plus est-t-elle obligatoire pour obtenir le « passe sanitaire » ?
     :level: 3
-    :expires: 15 février 2022
 
     * Pour les adolescent(e)s de **12 à 15 ans**, les règles du **passe sanitaire** continuent à s’appliquer, et plusieurs justificatifs, au choix, sont utilisables en France et pour les voyages en Union européenne :
 
         * une **attestation de vaccination complète** (toutes les doses et respect du délai de 7 jours après la dernière dose en France, ou 14 jours pour voyager à l’étranger) ;
         * un **test PCR ou antigénique négatif** de moins de 24 h ;
-        * un **test PCR positif** de plus de 11 jours et moins de 6 mois (*ce délai passera à moins de 4 mois à partir du 15 février*), aussi appelé *certificat de rétablissement*.
+        * un **test PCR positif** de plus de 11 jours et moins de 4 mois, aussi appelé *certificat de rétablissement*.
 
     * Le **passe vaccinal** s’applique aux adolescent(e)s de **16 à 17 ans**, et les justificatifs valables pour eux seront donc uniquement :
         * une **attestation de vaccination complète** (toutes les doses et respect du délai de 7 jours après la dernière dose en France, ou 14 jours pour voyager à l’étranger) ;
-        * un **test PCR positif** de plus de 11 jours et moins de 6 mois (*ce délai passera à moins de 4 mois à partir du 15 février*), aussi appelé *certificat de rétablissement*.
+        * un **test PCR positif** de plus de 11 jours et moins de 4 mois, aussi appelé *certificat de rétablissement*.
 
     <div class="conseil conseil-jaune">
 
