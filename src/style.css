@@ -1677,7 +1677,8 @@ a.no-type::after {
     text-align: center;
     padding: 1rem;
 }
-.table .delai {
+.table .delai,
+.table .critere {
     font-size: smaller;
     font-style: italic;
 }
