@@ -99,6 +99,7 @@ def thematiques():
                 "thematiques": autres_thematiques[:NB_OF_DISPLAYED_THEMATIQUES],
                 "config_stats_url": responses["config_stats_url"],
                 "meta_feedback_conseils": responses["meta_feedback_conseils"],
+                "meta_unsupported_browser": responses["meta_unsupported_browser"],
                 "meta_pied_de_page": meta_pied_de_page,
             },
         )
