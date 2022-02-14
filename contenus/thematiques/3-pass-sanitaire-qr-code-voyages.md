@@ -116,19 +116,62 @@
 
     {{ formulaire('rappel', 'date-limite-pass') }}
 
-    - Depuis le **15 décembre 2021** :
-        * si vous avez **65 ans ou plus** et que votre dernière **injection** date de plus de **7 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
+    - Si vous avez plus de **18 ans et un mois**, vous pouvez recevoir une dose de rappel dès **3 mois** après votre vaccination initiale, et dans un délai de **4 mois maximum**, sans quoi votre passe vaccinal sera désactivé.
 
-        * quel que soit votre âge, si vous avez reçu le **vaccin Janssen** depuis plus de **2 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir une dose additionnelle.
+      Si vous avez **eu la Covid** au moins 3 mois après avoir complété votre vaccination initiale, alors vous n’avez pas besoin de recevoir de dose de rappel : votre certificat de rétablissement prolongera votre passe (voir la [question ci-dessous](#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-passe-vaccinal) pour plus de détails).
 
-    - Depuis le **15 janvier 2022** :
-        * si vous avez plus de **18 ans et un mois** et que votre dernière **injection** date de plus de **7 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
+      <table class="table">
+        <thead>
+            <tr>
+                <th colspan=2>Schéma vaccinal complet pour le passe vaccinal<br>(à partir de 18 ans et 1 mois)</th>
+            </tr>
+            <tr>
+                <th>Vaccination initiale</th>
+                <th>Rappel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="stimulations">
+                        <div class="stimulation">💉<br>1 dose</div>
+                        <div><b>+</b></div>
+                        <div class="stimulation">💉<br>1 dose</div>
+                    </div>
+                </td>
+                <td rowspan="3">
+                    <div class="rappels">
+                        <div class="rappel">💉<br>1 dose</div>
+                        <div><b>ou</b></div>
+                        <div class="rappel">🤒<br>1 infection</div>
+                    </div>
+                    <span class="delai">entre <b>3 et 4 mois</b><br>après la vaccination initiale</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="stimulations">
+                        <div class="stimulation">💉<br>1 dose</div>
+                        <div><b>+</b></div>
+                        <div class="stimulation">🤒<br>1 infection<sup>*</sup></div>
+                    </div>
+                    <span class="delai">* au moins 15 jours entre les deux</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="stimulations">
+                        <div class="stimulation">🤒<br>1 infection</div>
+                        <div><b>+</b></div>
+                        <div class="stimulation">💉<br>1 dose<sup>*</sup></div>
+                    </div>
+                    <span class="delai">* au moins 15 jours entre les deux</span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
 
-    - Depuis le **24 janvier 2022** :
-        * si vous avez entre **12 et 17 ans**, vous êtes éligible à une dose de rappel : ce rappel vaccinal est recommandé, mais il n’est **pas obligatoire** dans le cadre du passe vaccinal ou du passe sanitaire.
-
-    - Depuis le **15 février 2022** :
-        * si vous avez plus de **18 ans et un mois** et que votre dernière **injection** date de plus de **4 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
+    - Si vous avez entre **12 et 17 ans**, vous pouvez recevoir une dose de rappel dès **6 mois** après votre vaccination initiale : ce rappel vaccinal est recommandé, mais il n’est **pas obligatoire** dans le cadre du passe vaccinal ou du passe sanitaire.
 
     Si vous avez eu la Covid après avoir complété votre vaccination initiale (avec 1 ou 2 doses), alors votre protection est jugée suffisante et vous n’avez pas besoin de recevoir de rappel (dit 3<sup>e</sup> dose).
     Votre test PCR ou antigénique **positif** deviendra votre **certificat de rétablissement**, valable comme passe vaccinal en France. Attention, le rappel vaccinal pourra vous être exigé si vous souhaitez partir en voyage à l’étranger.
