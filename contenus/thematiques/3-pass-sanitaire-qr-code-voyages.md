@@ -188,19 +188,31 @@
 .. question:: J’ai eu la Covid après ma vaccination complète, comment prolonger mon passe vaccinal ?
     :level: 3
 
-    Si vous avez eu la Covid après avoir complété votre vaccination initiale (avec 1 ou 2 doses), alors votre protection est jugée suffisante et vous n’avez pas besoin de recevoir de rappel (dit 3<sup>e</sup> dose).
+    Si vous avez eu la Covid après votre vacination initiale, vous pourrez utiliser le QR code de votre **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*) en tant que **passe vaccinal**.
 
-    Vous pourrez utiliser le QR code de votre **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*).
-    Attention, le certificat de rétablissement n’est pas reconnu par tous les pays. Le rappel vaccinal pourra vous être exigé si vous souhaitez partir en voyage à l’étranger.
+    - Si cette infection a eu lieu **moins de 3 mois** après la vaccination initiale :
 
-    Il est toutefois possible de faire une dose de rappel :
+        * ce certificat de rétablissement sera valable **4 mois** comme passe vaccinal ou passe sanitaire ;
+        * vous pourrez recevoir une **dose de rappel** :
 
-    * Si vous êtes âgé de **18 ans ou plus**, dès **3 mois** après votre **infection**.
-    * Si vous êtes âgé de **12 à 17 ans**, dès **6 mois** après votre **infection**.
+            * dès **3 mois** après votre **infection** si vous êtes âgé de **18 ans ou plus**,
+            * dès **6 mois** après votre **infection** si vous êtes âgé de **12 à 17 ans**.
+
+    - Si cette infection a eu lieu **plus de 3 mois** après la vaccination initiale :
+
+        * cette infection tiendra lieu de **dose de rappel** pour le passe vaccinal **en France** :
+
+            * si votre test positif date d’**avant le 15 février 2022**, vous pourrez le **combiner** avec votre certificat de vaccination initiale dans l’application TousAntiCovid, pour obtenir un passe vaccinal **sans date d’expiration** ;
+
+            * pour les tests positifs réalisés **après le 15 février 2022**, le professionnel de santé pourra la plupart du temps vous remettre directement un certificat de rétablissement **sans date d’expiration** si vous lui présentez votre certificat de vaccination initiale (sinon vous pourrez le combiner dans l’application TousAntiCovid comme indiqué ci-dessus).
+
+
 
     <div class="conseil conseil-jaune">
 
-    Attention, un [test sérologique (ou sérologie)](je-veux-me-faire-vacciner.html#faut-il-que-je-recoive-une-dose-de-rappel-si-ma-serologie-test-serologique-est-positive) ne tient pas lieu de passe vaccinal.
+    - Si vous souhaitez partir en voyage **à l’étranger** : le certificat de rétablissement n’est pas reconnu par tous les pays, et un rappel vaccinal pourra être exigé.
+
+    - Un **test sérologique** (ou sérologie) [ne dispense pas d’une dose de rappel](je-veux-me-faire-vacciner.html#faut-il-que-je-recoive-une-dose-de-rappel-si-ma-serologie-test-serologique-est-positive) et ne tient pas lieu de passe vaccinal.
 
     </div>
 
