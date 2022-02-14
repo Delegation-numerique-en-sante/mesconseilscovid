@@ -28,69 +28,13 @@
 
     <div class="tableaux-vaccination-complete">
 
-      <table class="table">
-        <thead>
-            <tr>
-                <th>Vaccination initiale<br><span style="font-style: italic; font-weight: normal">(tous vaccins)</span></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <div class="stimulations">
-                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                        <div class="plus">+</div>
-                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="stimulations">
-                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                        <div class="plus">+</div>
-                        <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
-                    </div>
-                    <span class="delai">au moins <b>15 jours</b> entre les deux</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="stimulations">
-                        <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
-                        <div class="plus">+</div>
-                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                    </div>
-                    <span class="delai">au moins <b>15 jours</b> entre les deux</span>
-                </td>
-            </tr>
-        </tbody>
-      </table>
+      {{ tableau_vaccination('vaccination_initiale') }}
 
       <div style="display: flex; align-items: center">
         <p class="gros plus">+</p>
       </div>
 
-      <table class="table">
-        <thead>
-            <tr>
-                <th>Rappel vaccinal<br><span style="font-style: italic; font-weight: normal">(Pfizer ou Moderna)</span></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <span class="critere">Nécessaire à partir de<br><b>18 ans et 1 mois</b></span>
-                    <div class="rappels">
-                        <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                        <div><b>ou</b></div>
-                        <div class="rappel"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
-                    </div>
-                    <span class="delai">entre <b>3 et 4 mois</b><br>après la vaccination initiale</span>
-                </td>
-            </tr>
-        </tbody>
-      </table>
+      {{ tableau_vaccination('rappel_vaccinal') }}
 
     </div>
 
@@ -117,71 +61,15 @@
 
     - Si vous n’êtes pas encore vacciné(e) contre la Covid, vous obtiendrez votre passe vaccinal une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation.
 
-      <div class="tableaux-vaccination-complete">
-      <table class="table">
-        <thead>
-            <tr>
-                <th>Vaccination initiale<br><span style="font-style: italic; font-weight: normal">(tous vaccins)</span></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <div class="stimulations">
-                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                        <div class="plus">+</div>
-                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="stimulations">
-                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                        <div class="plus">+</div>
-                        <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
-                    </div>
-                    <span class="delai">au moins <b>15 jours</b> entre les deux</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="stimulations">
-                        <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
-                        <div class="plus">+</div>
-                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                    </div>
-                    <span class="delai">au moins <b>15 jours</b> entre les deux</span>
-                </td>
-            </tr>
-        </tbody>
-      </table>
-      </div>
-
-      Pour conserver ce passe, si vous avez plus de **18 ans et 1 mois**, vous devrez ensuite recevoir une **dose de rappel** (dite 3<sup>e</sup> dose) dans un délai de **3 à 4 mois**, sauf si vous êtes contaminé(e) par la Covid entre-temps.
-
-      <div class="tableaux-vaccination-complete">
-      <table class="table">
-        <thead>
-            <tr>
-                <th>Rappel vaccinal<br><span style="font-style: italic; font-weight: normal">(Pfizer ou Moderna)</span></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <span class="critere">Nécessaire à partir de<br><b>18 ans et 1 mois</b></span>
-                    <div class="rappels">
-                        <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                        <div><b>ou</b></div>
-                        <div class="rappel"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
-                    </div>
-                    <span class="delai">entre <b>3 et 4 mois</b><br>après la vaccination initiale</span>
-                </td>
-            </tr>
-        </tbody>
-      </table>
-      </div>
+    <div class="tableaux-vaccination-complete">
+      {{ tableau_vaccination('vaccination_initiale') }}
+    </div>
+  
+    Pour conserver ce passe, si vous avez plus de **18 ans et 1 mois**, vous devrez   ensuite recevoir une **dose de rappel** (dite 3<sup>e</sup> dose) dans un délai de **3 à 4 mois**, sauf si vous êtes contaminé(e) par la Covid entre-temps.
+  
+    <div class="tableaux-vaccination-complete">
+      {{ tableau_vaccination('rappel_vaccinal') }}
+    </div>
 
     - Si vous avez reçu votre première dose au plus tard le 15 février, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez, en attendant, présenter un test de dépistage négatif (*passe vaccinal temporaire*) en **complément** de votre attestation de première dose pour participer à certaines activités.
 
@@ -244,75 +132,19 @@
 
     - Si vous avez **plus de 18 ans et 1 mois**, vous pouvez recevoir une dose de rappel dès **3 mois** après votre vaccination initiale, et dans un délai de **4 mois maximum**, sans quoi votre passe vaccinal sera désactivé.
 
-      Si vous avez **eu la Covid** au moins 3 mois après votre vaccination initiale, vous n’avez **pas besoin** de recevoir de dose de rappel. Vous pourrez [prolonger votre passe](#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-passe-vaccinal) avec votre résultat de test positif (*certificat de rétablissement*).
+    Si vous avez **eu la Covid** au moins 3 mois après votre vaccination initiale, vous n’avez **pas besoin** de recevoir de dose de rappel. Vous pourrez [prolonger votre passe](#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-passe-vaccinal) avec votre résultat de test positif (*certificat de rétablissement*).
 
-      <div class="tableaux-vaccination-complete">
+    <div class="tableaux-vaccination-complete">
 
-      <table class="table">
-        <thead>
-            <tr>
-                <th>Vaccination initiale<br><span style="font-style: italic; font-weight: normal">(tous vaccins)</span></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <div class="stimulations">
-                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                        <div class="plus">+</div>
-                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="stimulations">
-                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                        <div class="plus">+</div>
-                        <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
-                    </div>
-                    <span class="delai">au moins <b>15 jours</b> entre les deux</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="stimulations">
-                        <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
-                        <div class="plus">+</div>
-                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                    </div>
-                    <span class="delai">au moins <b>15 jours</b> entre les deux</span>
-                </td>
-            </tr>
-        </tbody>
-      </table>
+    {{ tableau_vaccination('vaccination_initiale') }}
 
-      <div style="display: flex; align-items: center">
+    <div style="display: flex; align-items: center">
         <p class="gros plus">+</p>
-      </div>
+    </div>
 
-      <table class="table">
-        <thead>
-            <tr>
-                <th>Rappel vaccinal<br><span style="font-style: italic; font-weight: normal">(Pfizer ou Moderna)</span></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <span class="critere">Nécessaire à partir de<br><b>18 ans et 1 mois</b></span>
-                    <div class="rappels">
-                        <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
-                        <div><b>ou</b></div>
-                        <div class="rappel"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
-                    </div>
-                    <span class="delai">entre <b>3 et 4 mois</b><br>après la vaccination initiale</span>
-                </td>
-            </tr>
-        </tbody>
-      </table>
+    {{ tableau_vaccination('rappel_vaccinal') }}
 
-      </div>
+    </div>
 
     <div class="voir-aussi">
 
