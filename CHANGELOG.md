@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022-02-14
+
+* réduction de la fenêtre d’acceptation pour le certificat de rétablissement
+
 ## 2022-02-09
 
 * prise en compte d’une contamination = une injection
