@@ -80,6 +80,7 @@
         <tbody>
             <tr>
                 <td>
+                    <span class="critere">Nécessaire à partir de<br><b>18 ans et 1 mois</b></span>
                     <div class="rappels">
                         <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
                         <div><b>ou</b></div>
@@ -157,7 +158,7 @@
       </table>
       </div>
 
-      Pour conserver ce passe, vous devrez ensuite recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans un délai de **4 mois**, sauf si vous êtes contaminé(e) par la Covid entre-temps.
+      Pour conserver ce passe, si vous avez plus de **18 ans et 1 mois**, vous devrez ensuite recevoir une **dose de rappel** (dite 3<sup>e</sup> dose) dans un délai de **3 à 4 mois**, sauf si vous êtes contaminé(e) par la Covid entre-temps.
 
       <div class="tableaux-vaccination-complete">
       <table class="table">
@@ -169,6 +170,7 @@
         <tbody>
             <tr>
                 <td>
+                    <span class="critere">Nécessaire à partir de<br><b>18 ans et 1 mois</b></span>
                     <div class="rappels">
                         <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
                         <div><b>ou</b></div>
@@ -193,7 +195,7 @@
 .. question:: Mon passe vaccinal a été désactivé. Quand sera-t-il réactivé ?
     :level: 3
 
-    Si vous ne faites pas votre rappel vaccinal dans les 4 mois suivant votre primo-vaccination, alors votre passe sera automatiquement désactivé. Il sera prolongé grâce à un nouveau QR code :
+    Si vous avez plus de **18 ans et 1 mois** et que vous ne faites pas votre **rappel vaccinal** dans les **3 à 4 mois** suivant votre primo-vaccination, alors votre passe sera automatiquement désactivé. Il sera prolongé grâce à un nouveau QR code :
 
     * **7 jours après** votre injection de rappel ;
     * ou **11 jours après** votre test de dépistage **positif** (PCR ou antigénique) si vous avez été contaminé(e) après votre vaccination.
@@ -238,9 +240,11 @@
 .. question:: Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon passe vaccinal ?
     :level: 3
 
-    - Si vous avez plus de **18 ans et un mois**, vous pouvez recevoir une dose de rappel dès **3 mois** après votre vaccination initiale, et dans un délai de **4 mois maximum**, sans quoi votre passe vaccinal sera désactivé.
+    - Si vous avez entre **12 et 17 ans**, vous pouvez recevoir une dose de rappel dès **6 mois** après votre vaccination initiale : ce rappel vaccinal est recommandé, mais il n’est **pas obligatoire** dans le cadre du passe vaccinal ou du passe sanitaire.
 
-      Si vous avez **eu la Covid** au moins 3 mois après avoir complété votre vaccination initiale, alors vous n’avez pas besoin de recevoir de dose de rappel : votre certificat de rétablissement prolongera votre passe (voir la [question ci-dessous](#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-passe-vaccinal) pour plus de détails).
+    - Si vous avez **plus de 18 ans et 1 mois**, vous pouvez recevoir une dose de rappel dès **3 mois** après votre vaccination initiale, et dans un délai de **4 mois maximum**, sans quoi votre passe vaccinal sera désactivé.
+
+      Si vous avez **eu la Covid** au moins 3 mois après votre vaccination initiale, vous n’avez **pas besoin** de recevoir de dose de rappel. Vous pourrez [prolonger votre passe](#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-passe-vaccinal) avec votre résultat de test positif (*certificat de rétablissement*).
 
       <div class="tableaux-vaccination-complete">
 
@@ -296,6 +300,7 @@
         <tbody>
             <tr>
                 <td>
+                    <span class="critere">Nécessaire à partir de<br><b>18 ans et 1 mois</b></span>
                     <div class="rappels">
                         <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
                         <div><b>ou</b></div>
@@ -308,11 +313,6 @@
       </table>
 
       </div>
-
-    - Si vous avez entre **12 et 17 ans**, vous pouvez recevoir une dose de rappel dès **6 mois** après votre vaccination initiale : ce rappel vaccinal est recommandé, mais il n’est **pas obligatoire** dans le cadre du passe vaccinal ou du passe sanitaire.
-
-    Si vous avez eu la Covid après avoir complété votre vaccination initiale (avec 1 ou 2 doses), alors votre protection est jugée suffisante et vous n’avez pas besoin de recevoir de rappel (dit 3<sup>e</sup> dose).
-    Votre test PCR ou antigénique **positif** deviendra votre **certificat de rétablissement**, valable comme passe vaccinal en France. Attention, le rappel vaccinal pourra vous être exigé si vous souhaitez partir en voyage à l’étranger.
 
     <div class="voir-aussi">
 
@@ -342,9 +342,7 @@
 
             * si votre test positif date d’**avant le 15 février 2022**, vous pourrez le **combiner** avec votre certificat de vaccination initiale dans l’application TousAntiCovid, pour obtenir un passe vaccinal **sans date d’expiration** ;
 
-            * pour les tests positifs réalisés **après le 15 février 2022**, le professionnel de santé pourra la plupart du temps vous remettre directement un certificat de rétablissement **sans date d’expiration** si vous lui présentez votre certificat de vaccination initiale (sinon vous pourrez le combiner dans l’application TousAntiCovid comme indiqué ci-dessus).
-
-
+            * pour les tests positifs réalisés **après le 15 février 2022**, le professionnel de santé pourra la plupart du temps vous remettre directement un certificat de rétablissement **sans date d’expiration** si vous lui présentez votre certificat de vaccination initiale (sinon vous pourrez les combiner dans l’application TousAntiCovid).
 
     <div class="conseil conseil-jaune">
 
@@ -364,7 +362,7 @@
 
       Ce passe ne sera **pas valable à l’étranger**, car les autres pays européens n’ont pas tous les mêmes règles sanitaires.
 
-    - Si vous ne pouvez pas vous faire vacciner parce que **vous avez eu la Covid** il y a moins de **6 mois**, le **QR code** présent sur votre test de dépistage positif (aussi appelé [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)) fera office de passe vaccinal.
+    - Si vous ne pouvez pas vous faire vacciner parce que **vous avez eu la Covid** il y a moins de **3 mois**, le **QR code** présent sur votre test de dépistage positif (aussi appelé [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)) fera office de passe vaccinal.
 
 
 .. question:: Puis-je recevoir des soins à l’hôpital si je ne suis pas vacciné(e) contre la Covid ?
@@ -464,7 +462,7 @@
 
     Par exemple, un chef cuisinier ne participant pas au service du restaurant et travaillant dans une cuisine fermée, non accessible au public, n’est pas dans l’obligation de présenter un passe vaccinal.
 
-    En revanche, si la cuisine est ouverte ou s’il participe au service, alors il devra présenter à son employeur : un certificat de rétablissement de plus de 11 jours et moins de 4 mois **ou** une attestation de vaccination complète.
+    En revanche, si la cuisine est ouverte ou s’il participe au service, alors il devra présenter à son employeur : un certificat de rétablissement de plus de 11 jours et moins de 4 mois  **ou** une attestation de vaccination complète.
 
     </div>
 
@@ -546,7 +544,7 @@
 .. question:: Comment obtenir un certificat de dépistage avec QR code ?
     :level: 3
 
-    Suite à un test de dépistage, un courriel (*e-mail*) ou un SMS vous est adressé pour vous inviter à **télécharger le certificat de dépistage** avec QR code sur le [**portail SI-DEP**](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
+    Suite à un test de dépistage, un courriel (*e-mail*) ou un SMS vous est adressé pour vous inviter à **télécharger le certificat de dépistage** avec QR code sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
 
     Nous vous conseillons de **le télécharger immédiatement** pour le conserver aussi longtemps que nécessaire.
 
@@ -554,9 +552,17 @@
 .. question:: Comment obtenir un certificat de rétablissement avec QR code ?
     :level: 3
 
-    Si vous avez eu la Covid il y a **plus de 11 jours**, alors votre test de dépistage (PCR ou antigénique) positif devient votre **certificat de rétablissement**, pour une **durée de 4 mois** depuis la date du test.
+    Votre **résultat positif** de test de dépistage (PCR ou antigénique) de **plus de 11 jours** constitue un **certificat de rétablissement**.
 
-    Vous pouvez le **télécharger** sur le [**portail SI-DEP**](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). Nous vous conseillons de le faire **immédiatement** pour le conserver aussi longtemps que nécessaire.
+    Vous pouvez le **télécharger** sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). Nous vous conseillons de le faire **immédiatement** pour le conserver aussi longtemps que nécessaire.
+
+    - Si vous avez eu la Covid **plus de 3 mois** après votre vaccination initiale, cette infection tiendra lieu de **dose de rappel** pour le passe vaccinal **en France** :
+
+        + si votre test positif date d’**avant le 15 février 2022**, vous pourrez **combiner** ce certificat de rétablissement avec votre certificat de vaccination initiale dans l’application TousAntiCovid, pour obtenir un passe vaccinal **sans date d’expiration** ;
+
+        * pour les tests positifs réalisés **après le 15 février 2022**, le professionnel de santé pourra la plupart du temps vous remettre directement un certificat de rétablissement **sans date d’expiration** si vous lui présentez votre certificat de vaccination initiale (sinon vous pourrez les combiner dans l’application TousAntiCovid).
+
+    - Dans les autres cas, ce certificat de rétablissement sera valable comme passe vaccinal pour une **durée de 4 mois** à partir de la date du test.
 
 
 .. question:: Je rencontre des difficultés techniques sur le portail SI-DEP, que faire ?
@@ -611,7 +617,7 @@
 
     #### Pour justifier d’une vaccination complète
 
-    * Si vous avez reçu **2 doses** de vaccin à l’étranger, alors votre vaccination est considérée comme **complète**. Attention, si vous plus de **18 ans et un mois** et que votre dernière dose date d’il y a plus de 4 mois, vous devrez recevoir une **dose de rappel** (3<sup>e</sup> dose) pour obtenir un **QR code** valable en France.
+    * Si vous avez reçu **2 doses** de vaccin à l’étranger, alors votre vaccination est considérée comme **complète**. Attention, si vous plus de **18 ans et 1 mois** et que votre dernière dose date d’il y a plus de 4 mois, vous devrez recevoir une **dose de rappel** (3<sup>e</sup> dose) pour obtenir un **QR code** valable en France.
 
     * Si vous n’avez reçu qu’**une seule dose** de vaccin à l’étranger, vous devrez recevoir une **2<sup>e</sup>** injection de vaccin à **ARNm** (*Pfizer* ou *Moderna*) pour valider votre vaccination en France.
 
