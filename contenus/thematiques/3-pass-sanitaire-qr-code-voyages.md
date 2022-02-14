@@ -16,11 +16,10 @@
 
 .. question:: Qu’est-ce que le passe vaccinal ?
     :level: 3
-    :expires: 15 février 2022
 
     Le **passe vaccinal** atteste du fait que :
-    -  vous êtes **complètement vacciné(e)**, c’est-à-dire que vous avez reçu toutes les doses de vaccin nécessaires et que vous avez reçu votre dernière dose il y a **moins de 7 mois** (*ce délai passera à moins de 4 mois à partir du 15 février*),
-    - ou que vous avez **eu la Covid** ([certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)) il y a **moins de 6 mois** (*ce délai passera à moins de 4 mois à partir du 15 février*),
+    -  vous êtes **complètement vacciné(e)**, c’est-à-dire que vous avez reçu toutes les doses de vaccin nécessaires et que vous avez reçu votre dernière dose il y a **moins de 4 mois**,
+    - ou que vous avez **eu la Covid** ([certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)) il y a **moins de 4 mois**,
     - ou que vous avez une [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal).
 
     Depuis le **lundi 24 janvier**, le passe vaccinal **remplace** le passe sanitaire dans la plupart des situations. Il s’applique à toutes les personnes âgées de **16 ans ou plus**.
@@ -28,8 +27,8 @@
     Les règles du **passe sanitaire** continuent à s’appliquer aux mineurs âgés de **12 à 15 ans**.
 
     Votre **schéma de vaccination est complet** si vous avez respecté les délais suivants :
-    * si vous avez été vacciné(e) avec les vaccins Pfizer, Moderna ou AstraZeneca : votre dernière dose doit dater d’il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*) ;
-    * si vous avez été vacciné(e) avec le vaccin Janssen : vous devez avoir reçu la **dose additionnelle** il y a moins de 7 mois (*ce délai passera à moins de 4 mois à partir du 15 février*) ;
+    * si vous avez été vacciné(e) avec les vaccins Pfizer, Moderna ou AstraZeneca : votre dernière dose doit dater d’il y a moins de 4 mois ;
+    * si vous avez été vacciné(e) avec le vaccin Janssen : vous devez avoir reçu la **dose additionnelle** il y a moins de 4 mois ;
     * si vous avez eu la Covid après votre vaccination initiale (primo-vaccination).
 
     Si vous avez reçu votre première dose au plus tard le 15 février, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez bénéficier d’un *passe vaccinal temporaire* (voir [ci-dessous](#je-suis-en-cours-de-vaccination-comment-obtenir-un-passe-vaccinal-temporaire-pass)).
@@ -44,7 +43,6 @@
 
 .. question:: Je suis en cours de vaccination, comment obtenir un passe vaccinal temporaire (Pass+) ?
     :level: 3
-    :expires: 15 février 2022
 
     Si vous avez reçu votre première dose il y a **moins de 28 jours** et **au plus tard le 15 février**, vous pouvez obtenir un passe vaccinal valable 24 h (appelé **Pass+**) en combinant votre **attestation de première dose** avec un **test de dépistage négatif** de moins de 24 h.
 
@@ -53,11 +51,10 @@
 
 .. question:: Je ne suis pas encore vacciné(e). Combien de doses dois-je recevoir pour obtenir mon passe vaccinal ?
     :level: 3
-    :expires: 15 février 2022
 
     - Si vous n’êtes pas encore vacciné(e) contre la Covid, vous obtiendrez votre passe vaccinal une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation.
 
-      Pour conserver ce passe, vous devrez ensuite recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans un délai de 7 mois (*ce délai passera à 4 mois à partir du 15 février*), sauf si vous êtes contaminé(e) par la Covid entre-temps.
+      Pour conserver ce passe, vous devrez ensuite recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans un délai de 4 mois, sauf si vous êtes contaminé(e) par la Covid entre-temps.
 
     - Si vous avez reçu votre première dose au plus tard le 15 février, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez, en attendant, présenter un test de dépistage négatif (*passe vaccinal temporaire*) en **complément** de votre attestation de première dose pour participer à certaines activités.
 
@@ -70,9 +67,8 @@
 
 .. question:: Mon passe vaccinal a été désactivé. Quand sera-t-il réactivé ?
     :level: 3
-    :expires: 15 février 2022
 
-    Si vous ne faites pas votre rappel vaccinal dans les 7 mois (*délai réduit à 4 mois à partir du 15 février*) suivant votre primo-vaccination, alors votre passe sera automatiquement désactivé. Il sera prolongé grâce à un nouveau QR code :
+    Si vous ne faites pas votre rappel vaccinal dans les 4 mois suivant votre primo-vaccination, alors votre passe sera automatiquement désactivé. Il sera prolongé grâce à un nouveau QR code :
 
     * **7 jours après** votre injection de rappel ;
     * ou **11 jours après** votre test de dépistage **positif** (PCR ou antigénique) si vous avez été contaminé(e) après votre vaccination.
@@ -80,13 +76,12 @@
 
 .. question:: Qu’est-ce que le passe sanitaire et à qui s’applique t-il encore ?
     :level: 3
-    :expires: 15 février 2022
 
     En France, le passe sanitaire continue de concerner les enfants de **12 à 15 ans**. Il peut être, **selon la situation** de l’enfant :
 
     - un [test de dépistage négatif](#comment-obtenir-un-certificat-de-depistage-avec-qr-code) : **test PCR** ou **test antigénique**, datant de moins de **24 h** ;
 
-    - un [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) : un test de dépistage **positif**, **PCR** ou **antigénique** de **plus de 11 jours** et **moins de 6 mois** (*cette durée passera à moins de 4 mois à partir du 15 février*) ;
+    - un [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) : un test de dépistage **positif**, **PCR** ou **antigénique** de **plus de 11 jours** et **moins de 4 mois** ;
 
     - un [certificat de contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal) établi par l’Assurance Maladie ;
 
@@ -118,7 +113,6 @@
 .. question:: Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon passe vaccinal ?
     :level: 3
     :open: true
-    :expires: 15 février 2022
 
     {{ formulaire('rappel', 'date-limite-pass') }}
 
@@ -133,9 +127,9 @@
     - Depuis le **24 janvier 2022** :
         * si vous avez entre **12 et 17 ans**, vous êtes éligible à une dose de rappel : ce rappel vaccinal est recommandé, mais il n’est **pas obligatoire** dans le cadre du passe vaccinal ou du passe sanitaire.
 
-    - À partir du **15 février 2022** :
+    - Depuis le **15 février 2022** :
         * si vous avez plus de **18 ans et un mois** et que votre dernière **injection** date de plus de **4 mois**, alors votre passe vaccinal sera désactivé. Pour prolonger sa validité, vous devrez recevoir votre dose de rappel (dite 3<sup>e</sup> dose).
-    
+
     Si vous avez eu la Covid après avoir complété votre schéma vaccinal initial (à 1 ou 2 doses, selon votre situation), alors votre protection est jugée suffisante et vous n’avez pas besoin de recevoir un rappel vaccinal (dit 3<sup>e</sup> dose). Votre test PCR ou antigénique **positif** deviendra votre **certificat de rétablissement**, valable comme passe vaccinal en France. 
     Attention, le rappel vaccinal pourra vous être exigé si vous souhaitez partir en voyage à l’étranger.
 
@@ -151,7 +145,6 @@
 
 .. question:: J’ai eu la Covid après ma vaccination complète, comment prolonger mon passe vaccinal ?
     :level: 3
-    :expires: 15 février 2022
     
     Si vous avez eu la Covid après avoir complété votre schéma vaccinal initial (1 ou 2 doses, selon votre situation), alors votre protection est jugée suffisante  et vous n’avez pas besoin de recevoir un rappel vaccinal (dit 3<sup>e</sup> dose) pour prolonger votre passe vaccinal pour son usage en France.
 
@@ -184,7 +177,6 @@
 
 .. question:: Puis-je recevoir des soins à l’hôpital si je ne suis pas vacciné(e) contre la Covid ?
     :level: 3
-    :expires: 15 février 2022
 
     **Bien sûr**. Le **passe vaccinal ne s’applique pas** dans les établissement médico-sociaux (hôpital, clinique, EHPAD…). Vacciné(e) ou non, vous avez accès aux mêmes soins.
 
@@ -197,7 +189,7 @@
     Il n’est **pas obligatoire d’être vacciné(e)** pour se rendre à un rendez-vous médical en milieu hospitalier. En revanche, un **passe sanitaire est exigé**. Si vous n’êtes pas vacciné(e), vous pouvez présenter :
 
     - un **test de dépistage négatif** datant de moins de 24 h ;
-    - ou un **certificat de rétablissement** : test de dépistage positif de plus de 11 jours et moins de 6 mois (*cette durée passera à moins de 4 mois à partir du 15 février*).
+    - ou un **certificat de rétablissement** : test de dépistage positif de plus de 11 jours et moins de 4 mois.
 
     Dans ce cas, vous pouvez obtenir la **prise en charge** de votre **test de dépistage** en présentant au professionnel de santé qui réalisera votre test :
     - la **convocation** émise par l’établissement médical où vous avez rendez-vous ;
@@ -271,7 +263,6 @@
 
 .. question:: Est-ce que mon employeur peut exiger mon passe vaccinal ?
     :level: 3
-    :expires: 15 février 2022
 
     Cela dépend de votre **secteur d’activité**.
 
@@ -281,7 +272,7 @@
 
     Par exemple, un chef cuisinier ne participant pas au service du restaurant et travaillant dans une cuisine fermée, non accessible au public, n’est pas dans l’obligation de présenter un passe vaccinal.
 
-    En revanche, si la cuisine est ouverte ou s’il participe au service, alors il devra présenter à son employeur : un certificat de rétablissement de plus de 11 jours et moins de 6 mois (*moins de 4 mois à partir du 15 février*) **ou** une attestation de vaccination complète.
+    En revanche, si la cuisine est ouverte ou s’il participe au service, alors il devra présenter à son employeur : un certificat de rétablissement de plus de 11 jours et moins de 4 mois **ou** une attestation de vaccination complète.
 
     </div>
 
@@ -382,9 +373,8 @@
 
 .. question:: Comment obtenir un certificat de rétablissement avec QR code ?
     :level: 3
-    :expires: 15 février 2022
 
-    Si vous avez eu la Covid il y a **plus de 11 jours**, alors votre test de dépistage (PCR ou antigénique) positif devient votre **certificat de rétablissement**, pour une **durée de 6 mois** depuis la date du test (*cette durée passera à 4 mois à partir du 15 février*).
+    Si vous avez eu la Covid il y a **plus de 11 jours**, alors votre test de dépistage (PCR ou antigénique) positif devient votre **certificat de rétablissement**, pour une **durée de 4 mois** depuis la date du test.
 
     Vous pouvez le **télécharger** sur le [**portail SI-DEP**](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). Nous vous conseillons de le faire **immédiatement** pour le conserver aussi longtemps que nécessaire.
 
@@ -429,7 +419,6 @@
 
 .. question:: J’ai été vacciné à l’étranger avec un vaccin reconnu en France, comment obtenir un QR code valable en France ?
     :level: 3
-    :expires: 15 février 2022
 
     Pour que votre vaccination soit reconnue comme passe vaccinal en France il faut être complètement vacciné(e) avec un vaccin **reconnu en France** (ou équivalent) et obtenir un **QR code**.
 
@@ -442,7 +431,7 @@
 
     #### Pour justifier d’une vaccination complète
 
-    * Si vous avez reçu **2 doses** de vaccin à l’étranger, alors votre vaccination est considérée comme **complète**. Attention, si vous plus de **18 ans et un mois** et que votre dernière dose date d’il y a plus de 7 mois (délai réduit à 4 mois à partir du 15 février), vous devrez recevoir une **dose de rappel** (3<sup>e</sup> dose) pour obtenir un **QR code** valable en France.
+    * Si vous avez reçu **2 doses** de vaccin à l’étranger, alors votre vaccination est considérée comme **complète**. Attention, si vous plus de **18 ans et un mois** et que votre dernière dose date d’il y a plus de 4 mois, vous devrez recevoir une **dose de rappel** (3<sup>e</sup> dose) pour obtenir un **QR code** valable en France.
 
     * Si vous n’avez reçu qu’**une seule dose** de vaccin à l’étranger, vous devrez recevoir une **2<sup>e</sup>** injection de vaccin à **ARNm** (*Pfizer* ou *Moderna*) pour valider votre vaccination en France.
 
