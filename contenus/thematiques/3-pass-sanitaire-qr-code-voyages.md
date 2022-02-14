@@ -510,18 +510,6 @@
     Avant de partir en voyage, nous vous conseillons de vérifier les **conditions d’accès à votre pays de destination** sur [le portail France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/).
 
 
-.. question:: À quoi sert le passe sanitaire dans l’espace européen ?
-    :level: 3
-
-    Le passe sanitaire **facilite les contrôles des preuves sanitaires** aux frontières entre les pays européens. Une attestation vaccinale ou un test de dépistage français peuvent ainsi être lus et authentifiés par l’administration de n’importe quel pays de l’espace européen.
-
-    <div class="conseil conseil-jaune">
-
-    **Vérifiez les règles qui s’appliquent selon votre destination** sur [le portail France Diplomatie](https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/). Chaque pays reste libre d’exiger une attestation de vaccination **ou** un test de dépistage **ou** un certificat de rétablissement.
-
-    </div>
-
-
 ## Obtenir son justificatif avec QR code
 
 .. question:: J’ai eu la Covid avant ma vaccination initiale et j’ai reçu ma dose de rappel avant le 1<sup>er</sup> février : pourquoi mon passe vaccinal affiche-t-il une date d’expiration ?
