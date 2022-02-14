@@ -1600,18 +1600,52 @@ a.no-type::after {
 #suivi-historique-block h3 {
     text-align: left;
 }
+.table,
 #suivi-historique-block table {
     width: 100%;
     text-align: center;
     border-collapse: collapse;
     margin-bottom: 3rem;
 }
-#suivi-historique-block table thead td {
+.table thead td,
+.table thead th,
+#suivi-historique-block table thead td,
+#suivi-historique-block table thead th {
     font-weight: bold;
 }
-#suivi-historique-block table td {
+.table td,
+.table th,
+#suivi-historique-block table td,
+#suivi-historique-block table th {
     border: 1px solid black;
     padding: 0.5rem;
+}
+.table .stimulations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.table .stimulations > .stimulation {
+    width: 7rem;
+    flex-basis: 1;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+.table .rappels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.table .rappels > .rappel {
+    flex-basis: 1;
+    text-align: center;
+    padding: 1rem;
+}
+.table .delai {
+    font-size: smaller;
+    font-style: italic;
 }
 
 #conseils-block-date {
