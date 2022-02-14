@@ -23,8 +23,6 @@
 
     <span class="nouveau">nouveau</span> Si vous avez entre **12 et 17 ans**, le rappel vaccinal vous est ouvert depuis le **lundi 24 janvier 2022**.
 
-    {{ formulaire('rappel', prefixe='suis-je-concerne') }}
-
     <div class="conseil conseil-jaune">
 
     Quel que soit le vaccin que vous avez reçu initialement (*Pfizer*, *Moderna*, *AstraZeneca* ou *Janssen*), la dose de rappel se fera **uniquement avec un vaccin à ARN messager** (*Pfizer* ou *Moderna* selon votre situation).
@@ -75,8 +73,6 @@
     * si vous avez été vacciné(e) avec le **vaccin Janssen** :
 
         - consultez la question « [Je suis vacciné(e) avec une seule dose de Janssen. Comment se passe mon rappel ?](je-veux-me-faire-vacciner.html#je-suis-vaccine-e-avec-une-seule-dose-de-janssen-comment-se-passe-mon-rappel) » ;
-
-    {{ formulaire('rappel', prefixe='a-partir-de-quand') }}
 
     <div class="voir-aussi">
 

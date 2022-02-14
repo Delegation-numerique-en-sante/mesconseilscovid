@@ -4,7 +4,6 @@ import { bindImpression } from '../../actions'
 import { bindFeedback, opacityTransition, envoieLesRemarques } from '../../feedback'
 import { navigueVersUneThematique } from './navigation'
 import { dynamiseLeChoixDuTest } from './choixTestDepistage'
-import { dynamiseLeRappelVaccinal } from './rappelVaccinal'
 
 export function pageThematique(app) {
     app.trackPageView(document.location.pathname)
@@ -106,8 +105,6 @@ function initialiseLesFormulaires() {
 function initFunc(nom) {
     if (nom == 'tests-de-depistage') {
         return dynamiseLeChoixDuTest
-    } else if (nom == 'rappel') {
-        return dynamiseLeRappelVaccinal
     }
 }
 

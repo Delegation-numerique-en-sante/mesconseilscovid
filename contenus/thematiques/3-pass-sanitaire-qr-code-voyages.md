@@ -114,8 +114,6 @@
     :level: 3
     :open: true
 
-    {{ formulaire('rappel', 'date-limite-pass') }}
-
     - Si vous avez plus de **18 ans et un mois**, vous pouvez recevoir une dose de rappel dès **3 mois** après votre vaccination initiale, et dans un délai de **4 mois maximum**, sans quoi votre passe vaccinal sera désactivé.
 
       Si vous avez **eu la Covid** au moins 3 mois après avoir complété votre vaccination initiale, alors vous n’avez pas besoin de recevoir de dose de rappel : votre certificat de rétablissement prolongera votre passe (voir la [question ci-dessous](#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-passe-vaccinal) pour plus de détails).
