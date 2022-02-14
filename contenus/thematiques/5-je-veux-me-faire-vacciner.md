@@ -67,7 +67,7 @@
         - si vous avez **18 ans ou plus**, dès **3 mois** après votre dernière **injection**, ou votre dernière **infection** à la Covid ;
 
         - si vous avez entre **12 et 17 ans**, dès **6 mois** après votre dernière **injection**, ou votre dernière **infection** à la Covid ;
-    
+
     *Si vous avez eu la Covid après votre vaccination initiale (primo-vaccination), alors votre protection est jugée suffisante, et la dose de rappel n’est pas nécéssaire pour prolonger votre passe vaccinal.*
 
     * si vous avez été vacciné(e) avec le **vaccin Janssen** :

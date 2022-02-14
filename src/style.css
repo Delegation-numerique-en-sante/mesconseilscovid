@@ -1607,6 +1607,40 @@ a.no-type::after {
     border-collapse: collapse;
     margin-bottom: 3rem;
 }
+.tableaux-vaccination-complete {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+@media only screen and (max-width: 680px) {
+    .tableaux-vaccination-complete {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.tableaux-vaccination-complete [role='img'] {
+    font-size: 150%;
+}
+.tableaux-vaccination-complete .plus {
+    font-size: 150%;
+}
+.tableaux-vaccination-complete .gros.plus {
+    font-weight: bold;
+    font-size: 200%;
+    margin: 1rem;
+}
+.table {
+    margin-bottom: 2rem;
+}
+.tableaux-vaccination-complete .table {
+    max-width: 20rem;
+    margin: 0 auto;
+}
 .table thead td,
 .table thead th,
 #suivi-historique-block table thead td,

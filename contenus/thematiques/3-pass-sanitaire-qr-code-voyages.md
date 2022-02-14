@@ -17,19 +17,81 @@
 .. question:: Qu’est-ce que le passe vaccinal ?
     :level: 3
 
-    Le **passe vaccinal** atteste du fait que :
-    -  vous êtes **complètement vacciné(e)**, c’est-à-dire que vous avez reçu toutes les doses de vaccin nécessaires et que vous avez reçu votre dernière dose il y a **moins de 4 mois**,
-    - ou que vous avez **eu la Covid** ([certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)) il y a **moins de 4 mois**,
+    Depuis le **lundi 24 janvier**, le passe vaccinal **remplace le passe sanitaire** dans la plupart des situations. Il s’applique à toutes les personnes âgées de **16 ans ou plus**. Les règles du **passe sanitaire** continuent à s’appliquer aux mineurs âgés de **12 à 15 ans**.
+
+    Le **passe vaccinal** atteste du fait :
+    - que vous êtes **complètement vacciné(e)**, c’est-à-dire que vous avez effectué votre vaccination initiale et reçu une **dose de rappel** si nécessaire (*voir tableau ci-dessous*) ;
+
+    - ou que vous n’êtes pas complètement vacciné(e) mais que vous avez **eu la Covid** ([certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)) il y a **moins de 4 mois**,
+
     - ou que vous avez une [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal).
 
-    Depuis le **lundi 24 janvier**, le passe vaccinal **remplace** le passe sanitaire dans la plupart des situations. Il s’applique à toutes les personnes âgées de **16 ans ou plus**.
+    <div class="tableaux-vaccination-complete">
 
-    Les règles du **passe sanitaire** continuent à s’appliquer aux mineurs âgés de **12 à 15 ans**.
+      <table class="table">
+        <thead>
+            <tr>
+                <th>Vaccination initiale<br><span style="font-style: italic; font-weight: normal">(tous vaccins)</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="stimulations">
+                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
+                        <div class="plus">+</div>
+                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="stimulations">
+                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
+                        <div class="plus">+</div>
+                        <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
+                    </div>
+                    <span class="delai">au moins <b>15 jours</b> entre les deux</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="stimulations">
+                        <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
+                        <div class="plus">+</div>
+                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
+                    </div>
+                    <span class="delai">au moins <b>15 jours</b> entre les deux</span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
 
-    Votre **schéma de vaccination est complet** si vous avez respecté les délais suivants :
-    * si vous avez été vacciné(e) avec les vaccins Pfizer, Moderna ou AstraZeneca : votre dernière dose doit dater d’il y a moins de 4 mois ;
-    * si vous avez été vacciné(e) avec le vaccin Janssen : vous devez avoir reçu la **dose additionnelle** il y a moins de 4 mois ;
-    * si vous avez eu la Covid après votre vaccination initiale (primo-vaccination).
+      <div style="display: flex; align-items: center">
+        <p class="gros plus">+</p>
+      </div>
+
+      <table class="table">
+        <thead>
+            <tr>
+                <th>Rappel vaccinal<br><span style="font-style: italic; font-weight: normal">(Pfizer ou Moderna)</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="rappels">
+                        <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
+                        <div><b>ou</b></div>
+                        <div class="rappel"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
+                    </div>
+                    <span class="delai">entre <b>3 et 4 mois</b><br>après la vaccination initiale</span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+
+    </div>
 
     Si vous avez reçu votre première dose au plus tard le 15 février, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez bénéficier d’un *passe vaccinal temporaire* (voir [ci-dessous](#je-suis-en-cours-de-vaccination-comment-obtenir-un-passe-vaccinal-temporaire-pass)).
 
@@ -54,7 +116,70 @@
 
     - Si vous n’êtes pas encore vacciné(e) contre la Covid, vous obtiendrez votre passe vaccinal une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation.
 
-      Pour conserver ce passe, vous devrez ensuite recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans un délai de 4 mois, sauf si vous êtes contaminé(e) par la Covid entre-temps.
+      <div class="tableaux-vaccination-complete">
+      <table class="table">
+        <thead>
+            <tr>
+                <th>Vaccination initiale<br><span style="font-style: italic; font-weight: normal">(tous vaccins)</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="stimulations">
+                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
+                        <div class="plus">+</div>
+                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="stimulations">
+                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
+                        <div class="plus">+</div>
+                        <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
+                    </div>
+                    <span class="delai">au moins <b>15 jours</b> entre les deux</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="stimulations">
+                        <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
+                        <div class="plus">+</div>
+                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
+                    </div>
+                    <span class="delai">au moins <b>15 jours</b> entre les deux</span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+      </div>
+
+      Pour conserver ce passe, vous devrez ensuite recevoir une injection de rappel (dite 3<sup>e</sup> dose) dans un délai de **4 mois**, sauf si vous êtes contaminé(e) par la Covid entre-temps.
+
+      <div class="tableaux-vaccination-complete">
+      <table class="table">
+        <thead>
+            <tr>
+                <th>Rappel vaccinal<br><span style="font-style: italic; font-weight: normal">(Pfizer ou Moderna)</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="rappels">
+                        <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
+                        <div><b>ou</b></div>
+                        <div class="rappel"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
+                    </div>
+                    <span class="delai">entre <b>3 et 4 mois</b><br>après la vaccination initiale</span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+      </div>
 
     - Si vous avez reçu votre première dose au plus tard le 15 février, et que vous avez rendez-vous pour votre 2<sup>e</sup> dose dans les 28 jours, vous pouvez, en attendant, présenter un test de dépistage négatif (*passe vaccinal temporaire*) en **complément** de votre attestation de première dose pour participer à certaines activités.
 
@@ -112,62 +237,77 @@
 
 .. question:: Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon passe vaccinal ?
     :level: 3
-    :open: true
 
     - Si vous avez plus de **18 ans et un mois**, vous pouvez recevoir une dose de rappel dès **3 mois** après votre vaccination initiale, et dans un délai de **4 mois maximum**, sans quoi votre passe vaccinal sera désactivé.
 
       Si vous avez **eu la Covid** au moins 3 mois après avoir complété votre vaccination initiale, alors vous n’avez pas besoin de recevoir de dose de rappel : votre certificat de rétablissement prolongera votre passe (voir la [question ci-dessous](#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-passe-vaccinal) pour plus de détails).
 
+      <div class="tableaux-vaccination-complete">
+
       <table class="table">
         <thead>
             <tr>
-                <th colspan=2>Schéma vaccinal complet pour le passe vaccinal<br>(à partir de 18 ans et 1 mois)</th>
-            </tr>
-            <tr>
-                <th>Vaccination initiale</th>
-                <th>Rappel</th>
+                <th>Vaccination initiale<br><span style="font-style: italic; font-weight: normal">(tous vaccins)</span></th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>
                     <div class="stimulations">
-                        <div class="stimulation">💉<br>1 dose</div>
-                        <div><b>+</b></div>
-                        <div class="stimulation">💉<br>1 dose</div>
+                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
+                        <div class="plus">+</div>
+                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
                     </div>
-                </td>
-                <td rowspan="3">
-                    <div class="rappels">
-                        <div class="rappel">💉<br>1 dose</div>
-                        <div><b>ou</b></div>
-                        <div class="rappel">🤒<br>1 infection</div>
-                    </div>
-                    <span class="delai">entre <b>3 et 4 mois</b><br>après la vaccination initiale</span>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div class="stimulations">
-                        <div class="stimulation">💉<br>1 dose</div>
-                        <div><b>+</b></div>
-                        <div class="stimulation">🤒<br>1 infection<sup>*</sup></div>
+                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
+                        <div class="plus">+</div>
+                        <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
                     </div>
-                    <span class="delai">* au moins 15 jours entre les deux</span>
+                    <span class="delai">au moins <b>15 jours</b> entre les deux</span>
                 </td>
             </tr>
             <tr>
                 <td>
                     <div class="stimulations">
-                        <div class="stimulation">🤒<br>1 infection</div>
-                        <div><b>+</b></div>
-                        <div class="stimulation">💉<br>1 dose<sup>*</sup></div>
+                        <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
+                        <div class="plus">+</div>
+                        <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
                     </div>
-                    <span class="delai">* au moins 15 jours entre les deux</span>
+                    <span class="delai">au moins <b>15 jours</b> entre les deux</span>
                 </td>
             </tr>
         </tbody>
       </table>
+
+      <div style="display: flex; align-items: center">
+        <p class="gros plus">+</p>
+      </div>
+
+      <table class="table">
+        <thead>
+            <tr>
+                <th>Rappel vaccinal<br><span style="font-style: italic; font-weight: normal">(Pfizer ou Moderna)</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="rappels">
+                        <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose</div>
+                        <div><b>ou</b></div>
+                        <div class="rappel"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
+                    </div>
+                    <span class="delai">entre <b>3 et 4 mois</b><br>après la vaccination initiale</span>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+
+      </div>
 
     - Si vous avez entre **12 et 17 ans**, vous pouvez recevoir une dose de rappel dès **6 mois** après votre vaccination initiale : ce rappel vaccinal est recommandé, mais il n’est **pas obligatoire** dans le cadre du passe vaccinal ou du passe sanitaire.
 
