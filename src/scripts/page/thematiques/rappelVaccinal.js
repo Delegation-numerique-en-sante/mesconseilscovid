@@ -235,11 +235,11 @@ class FormulaireRappelVaccinal extends Formulaire {
 
     libelleAge() {
         if (this.age === 'plus65') {
-            return '65 ans ou plus'
+            return '65\u00a0ans ou plus'
         } else if (this.age === 'moins65') {
-            return 'entre 18 et 64 ans'
+            return 'entre 18 et 64\u00a0ans'
         } else {
-            return 'entre 12 et 17 ans'
+            return 'entre 12 et 17\u00a0ans'
         }
     }
 

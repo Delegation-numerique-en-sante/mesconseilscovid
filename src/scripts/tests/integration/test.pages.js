@@ -25,7 +25,7 @@ describe('Pages', function () {
         await waitForPlausibleTrackingEvent(page, 'pageview:introduction')
 
         await page.click(
-            '.thematiques a >> text="Nouveau passe vaccinal, que faut-il savoir ?"'
+            '.thematiques a >> text="Nouveau passe vaccinal, que faut-il savoir\u00a0?"'
         )
         await waitForPlausibleTrackingEvent(
             page,

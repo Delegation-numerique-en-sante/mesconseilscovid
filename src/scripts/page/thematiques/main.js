@@ -173,8 +173,8 @@ function feedbackPageEnCours(app) {
             opacityTransition(feedbackQuestionForm, 500, (feedbackQuestionForm) => {
                 let label =
                     choix === 'oui'
-                        ? 'Avez-vous des remarques ou des suggestions pour améliorer ces conseils ?'
-                        : 'Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils ?'
+                        ? 'Avez-vous des remarques ou des suggestions pour améliorer ces conseils\u00a0?'
+                        : 'Pouvez-vous nous en dire plus, afin que nous puissions améliorer ces conseils\u00a0?'
                 demandeRemarques(feedbackQuestionForm, choix, question, reponse, label)
             })
         })
@@ -215,8 +215,8 @@ function afficheRemerciements(feedbackQuestionForm, choix, reponse) {
     remerciements.style.textAlign = 'center'
     remerciements.style.border = '2px solid #d5dbef'
     remerciements.innerHTML = `
-        <p>Votre réponse : ${reponse}</p>
-        <p>Merci pour votre avis !</p>
+        <p>Votre réponse\u00a0: ${reponse}</p>
+        <p>Merci pour votre avis\u00a0!</p>
         `
     feedbackQuestionForm.parentNode.replaceChild(remerciements, feedbackQuestionForm)
 }

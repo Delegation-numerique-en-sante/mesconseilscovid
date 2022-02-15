@@ -82,7 +82,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-04-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez 65 ans ou plus')
+            assert.include(statut, 'Vous avez 65\u00a0ans ou plus')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(statut, 'Votre dernière injection date du 17 avril 2021.')
             assert.include(
@@ -107,7 +107,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-05-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez 65 ans ou plus')
+            assert.include(statut, 'Vous avez 65\u00a0ans ou plus')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(statut, 'Votre dernière injection date du 17 mai 2021.')
             assert.include(
@@ -132,7 +132,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-06-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez 65 ans ou plus')
+            assert.include(statut, 'Vous avez 65\u00a0ans ou plus')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(statut, 'Votre dernière injection date du 17 juin 2021.')
             assert.include(
@@ -157,7 +157,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-07-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez 65 ans ou plus')
+            assert.include(statut, 'Vous avez 65\u00a0ans ou plus')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(statut, 'Votre dernière injection date du 17 juillet 2021.')
             assert.include(
@@ -182,7 +182,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-06-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez 65 ans ou plus')
+            assert.include(statut, 'Vous avez 65\u00a0ans ou plus')
             assert.include(statut, 'avez été vacciné(e) avec le vaccin Janssen')
             assert.include(statut, 'Votre dernière injection date du 17 juin 2021.')
             assert.include(
@@ -207,7 +207,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-06-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez entre 18 et 64 ans')
+            assert.include(statut, 'Vous avez entre 18 et 64\u00a0ans')
             assert.include(statut, 'avez été vacciné(e) avec le vaccin Janssen')
             assert.include(statut, 'Votre dernière injection date du 17 juin 2021.')
             assert.include(
@@ -234,7 +234,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-05-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez entre 18 et 64 ans')
+            assert.include(statut, 'Vous avez entre 18 et 64\u00a0ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(statut, 'Votre dernière injection date du 17 mai 2021.')
             assert.include(
@@ -258,7 +258,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-06-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez entre 18 et 64 ans')
+            assert.include(statut, 'Vous avez entre 18 et 64\u00a0ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(statut, 'Votre dernière injection date du 17 juin 2021.')
             assert.include(
@@ -284,7 +284,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-07-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez entre 18 et 64 ans')
+            assert.include(statut, 'Vous avez entre 18 et 64\u00a0ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(statut, 'Votre dernière injection date du 17 juillet 2021.')
             assert.include(
@@ -308,7 +308,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-08-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez entre 18 et 64 ans')
+            assert.include(statut, 'Vous avez entre 18 et 64\u00a0ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(statut, 'Votre dernière injection date du 17 août 2021.')
             assert.include(
@@ -332,7 +332,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-09-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez entre 18 et 64 ans')
+            assert.include(statut, 'Vous avez entre 18 et 64\u00a0ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(
                 statut,
@@ -359,7 +359,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-10-17')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez entre 18 et 64 ans')
+            assert.include(statut, 'Vous avez entre 18 et 64\u00a0ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(statut, 'Votre dernière injection date du 17 octobre 2021.')
             assert.include(
@@ -383,7 +383,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2022-02-10')
 
             const statut = await questionnaire.recuperationStatut('rappel-et-pass')
-            assert.include(statut, 'Vous avez entre 18 et 64 ans')
+            assert.include(statut, 'Vous avez entre 18 et 64\u00a0ans')
             assert.include(statut, 'avec le vaccin Pfizer, Moderna ou AstraZeneca')
             assert.include(statut, 'Votre dernière injection date du 10 février 2022.')
             assert.include(
@@ -409,16 +409,17 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-10-17')
 
             const statut = await questionnaire.recuperationStatut('rappel')
-            assert.include(statut, 'Vous avez entre 12 et 17 ans')
+            assert.include(statut, 'Vous avez entre 12 et 17\u00a0ans')
             assert.include(statut, 'avec le vaccin Pfizer ou Moderna')
             assert.include(statut, 'Votre dernière injection date du 17 octobre 2021.')
             assert.include(
                 statut,
                 'Vous pourrez recevoir votre dose de rappel à partir du 24 janvier 2022.'
             ) // début de la campagne de rappel
+            console.log(statut)
             assert.include(
                 statut,
-                'Vous ne serez pas concerné(e) par la désactivation du passe vaccinal, qui restera valable au delà du 15 décembre 2021.'
+                'Vous ne serez pas concerné(e) par la désactivation du passe vaccinal, qui restera valable au delà du 15\u00a0décembre\u00a02021.'
             )
         })
         it('12 à 17 ans, 17 novembre', async function () {
@@ -432,7 +433,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-11-17')
 
             const statut = await questionnaire.recuperationStatut('rappel')
-            assert.include(statut, 'Vous avez entre 12 et 17 ans')
+            assert.include(statut, 'Vous avez entre 12 et 17\u00a0ans')
             assert.include(statut, 'avec le vaccin Pfizer ou Moderna')
             assert.include(statut, 'Votre dernière injection date du 17 novembre 2021.')
             assert.include(
@@ -442,7 +443,7 @@ describe('Mini-questionnaire dose de rappel', function () {
 
             assert.include(
                 statut,
-                'Vous ne serez pas concerné(e) par la désactivation du passe vaccinal, qui restera valable au delà du 15 décembre 2021.'
+                'Vous ne serez pas concerné(e) par la désactivation du passe vaccinal, qui restera valable au delà du 15\u00a0décembre\u00a02021.'
             )
         })
         it('12 à 17 ans, 17 décembre', async function () {
@@ -456,7 +457,7 @@ describe('Mini-questionnaire dose de rappel', function () {
             await questionnaire.remplirDateDerniereDose('2021-12-17')
 
             const statut = await questionnaire.recuperationStatut('rappel')
-            assert.include(statut, 'Vous avez entre 12 et 17 ans')
+            assert.include(statut, 'Vous avez entre 12 et 17\u00a0ans')
             assert.include(statut, 'avec le vaccin Pfizer ou Moderna')
             assert.include(statut, 'Votre dernière injection date du 17 décembre 2021.')
             assert.include(
@@ -466,7 +467,7 @@ describe('Mini-questionnaire dose de rappel', function () {
 
             assert.include(
                 statut,
-                'Vous ne serez pas concerné(e) par la désactivation du passe vaccinal, qui restera valable au delà du 15 décembre 2021.'
+                'Vous ne serez pas concerné(e) par la désactivation du passe vaccinal, qui restera valable au delà du 15\u00a0décembre\u00a02021.'
             )
         })
     })

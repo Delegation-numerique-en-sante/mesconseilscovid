@@ -13,7 +13,7 @@ describe('Suivi', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -222,7 +222,7 @@ describe('Suivi', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 

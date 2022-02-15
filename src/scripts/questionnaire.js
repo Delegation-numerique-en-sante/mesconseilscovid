@@ -189,10 +189,10 @@ export class Questionnaire {
         const remainingSteps = this.ordre.length - num
         switch (remainingSteps) {
             case 0:
-                message = `C’est la dernière étape !`
+                message = `C’est la dernière étape\u00a0!`
                 break
             case 1:
-                message = `Plus qu’une étape !`
+                message = `Plus qu’une étape\u00a0!`
                 break
             default:
                 message = `Il vous reste ${remainingSteps} étapes.`

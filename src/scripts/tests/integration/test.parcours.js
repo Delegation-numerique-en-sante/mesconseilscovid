@@ -13,7 +13,7 @@ describe('Parcours', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -88,7 +88,7 @@ describe('Parcours', function () {
 
             await Promise.all([
                 page.click(
-                    '#page.ready .thematiques a >> text="Nouveau passe vaccinal, que faut-il savoir ?"'
+                    '#page.ready .thematiques a >> text="Nouveau passe vaccinal, que faut-il savoir\u00a0?"'
                 ),
                 page.waitForNavigation({
                     url: '**/pass-sanitaire-qr-code-voyages.html',
@@ -124,7 +124,7 @@ describe('Parcours', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -174,7 +174,7 @@ describe('Parcours', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -224,7 +224,7 @@ describe('Parcours', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -263,7 +263,7 @@ describe('Parcours', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -304,7 +304,7 @@ describe('Parcours', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -342,7 +342,7 @@ describe('Parcours', function () {
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
-                '7 jours après la date du dernier contact'
+                '7\u00a0jours après la date du dernier contact'
             )
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
         }
@@ -355,7 +355,7 @@ describe('Parcours', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -394,7 +394,7 @@ describe('Parcours', function () {
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
-                '7 jours après la date du dernier contact'
+                '7\u00a0jours après la date du dernier contact'
             )
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
         }
@@ -407,7 +407,7 @@ describe('Parcours', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -446,7 +446,7 @@ describe('Parcours', function () {
             )
             assert.include(
                 (await contact_a_risque.innerText()).trim(),
-                '7 jours après la date du dernier contact'
+                '7\u00a0jours après la date du dernier contact'
             )
             await waitForPlausibleTrackingEvent(page, 'Questionnaire terminé:conseils')
         }
@@ -459,7 +459,7 @@ describe('Parcours', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -513,7 +513,7 @@ describe('Parcours', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -565,7 +565,7 @@ describe('Parcours', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -605,7 +605,7 @@ describe('Parcours', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 

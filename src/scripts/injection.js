@@ -11,7 +11,7 @@ export function titreConseils(element, profil) {
     if (!element) return
     const titre = profil.estMonProfil()
         ? 'Mes conseils'
-        : `Conseils pour « ${profil.nom} »`
+        : `Conseils pour «\u00a0${profil.nom}\u00a0»`
     element.textContent = titre
 }
 
@@ -42,13 +42,15 @@ export function caracteristiquesARisques(element, algoOrientation) {
 function _caracteristiquesARisques(algoOrientation) {
     let caracteristiques = []
     if (algoOrientation.sup65) {
-        caracteristiques.push('vous êtes âgé·e de plus de 65 ans')
+        caracteristiques.push('vous êtes âgé·e de plus de 65\u00a0ans')
     } else if (algoOrientation.profil.grossesse_3e_trimestre) {
         caracteristiques.push('vous êtes au 3e trimestre de votre grossesse')
     }
     if (algoOrientation.imc > 30) {
         caracteristiques.push(
-            'vous avez un IMC supérieur à 30 (' + Math.round(algoOrientation.imc) + ')'
+            'vous avez un IMC supérieur\u00a0à\u00a030\u00a0(' +
+                Math.round(algoOrientation.imc) +
+                ')'
         )
     }
     return caracteristiques

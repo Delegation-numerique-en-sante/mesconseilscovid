@@ -54,7 +54,7 @@ export default class Updater {
             // if multiple releases are required within the same day.
             const datePart = fetchedVersion.substring(0, 10)
             const readableVersion = datePart.split('-').reverse().join('-')
-            element.innerText = ` - Mis à jour le : ${readableVersion}`
+            element.innerText = ` - Mis à jour le\u00a0: ${readableVersion}`
         }
     }
 

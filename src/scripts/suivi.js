@@ -44,7 +44,7 @@ export default class SuiviView {
         const dernierEtat = this.profil.dernierEtat()
         if (dernierEtat) {
             const relativeDate = format(new Date(dernierEtat.date), 'fr')
-            return `<small>Dernière réponse : ${relativeDate}</small>`
+            return `<small>Dernière réponse\u00a0: ${relativeDate}</small>`
         }
         return ''
     }
@@ -60,14 +60,14 @@ export default class SuiviView {
     }
 
     renderDebutSymptomes() {
-        return `<p>Début des symptômes :
+        return `<p>Début des symptômes\u00a0:
             ${this.renderDate(this.profil.symptomes_start_date)}
             (<a href="#symptomes">modifier</a>)
         </p>`
     }
 
     renderDebutSuivi() {
-        return `<p>Début du suivi : ${this.renderDate(
+        return `<p>Début du suivi\u00a0: ${this.renderDate(
             this.profil.suivi_start_date
         )}</p>`
     }
@@ -151,9 +151,9 @@ export default class SuiviView {
     switchGravite(value) {
         switch (value) {
             case 'gravite_3':
-                return 'État grave, il est recommandé d’appeler le SAMU (15)'
+                return 'État grave, il est recommandé d’appeler le SAMU\u00a0(15)'
             case 'gravite_2':
-                return 'État préoccupant, consulter un médecin ou à défaut le SAMU (15)'
+                return 'État préoccupant, consulter un médecin ou à défaut le SAMU\u00a0(15)'
             case 'gravite_1':
                 return 'État à vérifier, consulter votre médecin traitant'
             case 'gravite_0':

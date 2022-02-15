@@ -17,7 +17,7 @@ function bindSuppression(element, app) {
         event.preventDefault()
         const nom = element.dataset.deleteSuivi
         const description = nom === 'mes_infos' ? 'votre suivi' : `le suivi de ${nom}`
-        if (confirm(`Êtes-vous sûr·e de vouloir supprimer ${description} ?`)) {
+        if (confirm(`Êtes-vous sûr·e de vouloir supprimer ${description}\u00a0?`)) {
             app.supprimerSuivi(nom).then(() => {
                 app.chargerProfilActuel().then(() => {
                     // TODO: find a clever way to re-render the current page.
