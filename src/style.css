@@ -1657,6 +1657,7 @@ a.no-type::after {
 .table .stimulations {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
