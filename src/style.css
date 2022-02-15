@@ -1657,7 +1657,6 @@ a.no-type::after {
 .table .stimulations {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -1666,6 +1665,25 @@ a.no-type::after {
     flex-basis: 1;
     text-align: center;
     padding: 0.5rem 1rem;
+}
+@media only screen and (max-width: 680px) {
+    .table .stimulations {
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+    .table .stimulations > .stimulation {
+        width: 5rem;
+        flex-grow: 1;
+    }
+    .table .stimulation,
+    .table .rappel {
+        font-size: 90%;
+        padding: 0.25rem 0.5rem;
+    }
+    .plus:nth-child(4),
+    .plus:nth-child(2):nth-last-child(4) {
+        width: 100%;
+    }
 }
 .table .rappels {
     display: flex;
