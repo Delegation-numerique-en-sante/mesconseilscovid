@@ -1,8 +1,14 @@
 # Changelog
 
+## 2022-02-15
+
+* ajout de tableaux pour synthétiser les schémas vaccinaux
+* règle 1 infection = 1 injection pour le passe vaccinal
+* baisse du prix de vente maximal des autotests
+
 ## 2022-02-14
 
-* réduction de la fenêtre d’acceptation pour le certificat de rétablissement
+* réduction à 4 mois du délai avant lequel un rappel est nécessaire
 
 ## 2022-02-09
 
