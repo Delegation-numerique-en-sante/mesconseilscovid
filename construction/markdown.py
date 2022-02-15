@@ -14,10 +14,10 @@ from .typographie import typographie
 
 class FrenchTypographyMixin:
     def text(self, text_):
-        return typographie(super().text(text_))
+        return typographie(super().text(text_), html=True)
 
     def block_html(self, html):
-        return typographie(super().block_html(html))
+        return typographie(super().block_html(html), html=True)
 
 
 class ClassMixin:

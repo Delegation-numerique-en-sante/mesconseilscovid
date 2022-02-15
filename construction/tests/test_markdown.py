@@ -257,7 +257,7 @@ class TestQuestionDirective:
                 <p>Vous pouvez vous faire vacciner <strong>dès maintenant</strong>&nbsp;:</p>
                 <ul>
                 <li>si vous avez <strong>18&nbsp;ans et plus</strong>, sans conditions&#8239;;</li>
-                <li>si vous avez entre <strong>16&nbsp;et 17&nbsp;ans</strong> et présentez un risque de développer une <strong>forme très grave</strong> de Covid (cancer, dialyse, trisomie 21, etc.)&#8239;;</li>
+                <li>si vous avez entre <strong>16&nbsp;et 17&nbsp;ans</strong> et présentez un risque de développer une <strong>forme très grave</strong> de Covid (cancer, dialyse, trisomie&nbsp;21, etc.)&#8239;;</li>
                 <li>si vous êtes au <strong>second trimestre</strong> de votre grossesse.</li>
                 </ul>
                 </div>
@@ -308,7 +308,7 @@ class TestQuestionDirective:
                 <p>Vous pouvez vous faire vacciner <strong>dès maintenant</strong>&nbsp;:</p>
                 <ul>
                 <li>si vous avez <strong>18&nbsp;ans et plus</strong>, sans conditions&#8239;;</li>
-                <li>si vous avez entre <strong>16&nbsp;et 17&nbsp;ans</strong> et présentez un risque de développer une <strong>forme très grave</strong> de Covid (cancer, dialyse, trisomie 21, etc.)&#8239;;</li>
+                <li>si vous avez entre <strong>16&nbsp;et 17&nbsp;ans</strong> et présentez un risque de développer une <strong>forme très grave</strong> de Covid (cancer, dialyse, trisomie&nbsp;21, etc.)&#8239;;</li>
                 <li>si vous êtes au <strong>second trimestre</strong> de votre grossesse.</li>
                 </ul>
                 </div>

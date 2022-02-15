@@ -1,7 +1,10 @@
 import regex  # pour le support de "\p{}"
 
-ESPACE_INSECABLE = "&nbsp;"
-ESPACE_FINE_INSECABLE = "&#8239;"
+ESPACE_INSECABLE_UNICODE = "\u00a0"
+ESPACE_FINE_INSECABLE_UNICODE = "\u202f"
+
+ESPACE_INSECABLE_HTML = "&nbsp;"
+ESPACE_FINE_INSECABLE_HTML = "&#8239;"
 
 
 def assemble_regexes(*regexes):
@@ -13,7 +16,7 @@ def build_regex(avant, apres):
     # "Zs" est la catégorie "Separator, space".
     return (
         rf"((?P<avant>{avant})"
-        + rf"(\p{{Zs}}|{ESPACE_INSECABLE})"
+        + rf"(\p{{Zs}}|{ESPACE_INSECABLE_HTML})"
         + rf"(?P<apres>{apres}))"
         + r"(?!(.(?!<svg))*<\/svg>)"
     )
@@ -32,7 +35,7 @@ RE_ESPACE_FINE_INSECABLE = regex.compile(
 
 def insere_espaces_fines_insecables(texte):
     return RE_ESPACE_FINE_INSECABLE.sub(
-        r"\g<avant>" + ESPACE_FINE_INSECABLE + r"\g<apres>", texte
+        r"\g<avant>" + ESPACE_FINE_INSECABLE_UNICODE + r"\g<apres>", texte
     )
 
 
@@ -42,7 +45,7 @@ RE_ESPACE_INSECABLE = regex.compile(
         build_regex(r"«", r""),  # Guillemets en chevrons.
         build_regex(r"", r"»"),  # Guillemets en chevrons.
         build_regex(
-            rf"\b(\d|{ESPACE_FINE_INSECABLE})+", r"(?!\d)\w"
+            rf"\b(\d|{ESPACE_FINE_INSECABLE_HTML})+", r"(?!\d)\w"
         ),  # Nombre suivi de lettres.
     )
 )
@@ -50,14 +53,21 @@ RE_ESPACE_INSECABLE = regex.compile(
 
 def insere_espaces_insecables(texte):
     return RE_ESPACE_INSECABLE.sub(
-        r"\g<avant>" + ESPACE_INSECABLE + r"\g<apres>", texte
+        r"\g<avant>" + ESPACE_INSECABLE_UNICODE + r"\g<apres>", texte
     )
 
 
-def typographie(texte):
+def encode_espaces_insecables_en_html(texte):
+    return texte.replace("\u00a0", "&nbsp;").replace("\u202f", "&#8239;")
+
+
+def typographie(texte, html=False):
     """
     Utilise les espaces insécables fines ou normales lorsque c’est approprié
 
     https://fr.wikipedia.org/wiki/Espace_ins%C3%A9cable#En_France
     """
-    return insere_espaces_fines_insecables(insere_espaces_insecables(texte))
+    res = insere_espaces_fines_insecables(insere_espaces_insecables(texte))
+    if html:
+        res = encode_espaces_insecables_en_html(res)
+    return res
