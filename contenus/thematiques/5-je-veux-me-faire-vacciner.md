@@ -148,7 +148,7 @@
                       <div class="plus">+</div>
                       <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose ARNm</div>
                   </div>
-                  <span class="delai">dose supplémentaire dans les <b>4 semaines</b><br>suivant la 1<sup>re</sup> dose</span>
+                  <span class="delai">dose supplémentaire dans les <b>4 semaines</b> suivant la 1<sup>re</sup> dose</span>
               </td>
           </tr>
       </tbody>
@@ -271,7 +271,7 @@
                       <div class="rappels">
                           <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose ARNm<br>(Pfizer ou Moderna)</div>
                       </div>
-                      <span class="delai">entre <b>3 et 4 mois</b><br>après l’infection</span>
+                      <span class="delai">entre <b>3 et 4 mois</b> après l’infection</span>
                   </td>
               </tr>
           </tbody>
@@ -319,7 +319,7 @@
                       <div class="stimulations">
                           <div class="stimulation"><span role="img" aria-label="OK">✅</span></div>
                       </div>
-                      <span class="delai">pas de rappel nécessaire<br>en France</span>
+                      <span class="delai">pas de rappel nécessaire en France</span>
                   </td>
               </tr>
           </tbody>
