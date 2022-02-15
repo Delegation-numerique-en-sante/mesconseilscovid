@@ -63,7 +63,7 @@ export function bindSuppressionTotale(element, app) {
     element.addEventListener('click', (event) => {
         event.preventDefault()
         app.plausible('Suppression totale')
-        if (confirm('Êtes-vous sûr·e de vouloir supprimer tous les profils ?')) {
+        if (confirm('Êtes-vous sûr·e de vouloir supprimer tous les profils\u00a0?')) {
             app.supprimerTout().then(() => {
                 if (app.router) {
                     if (app.router.lastRouteResolved().url !== CHEMIN_ACCUEIL) {

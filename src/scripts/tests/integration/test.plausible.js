@@ -43,7 +43,7 @@ describe('Plausible', function () {
         )
         await waitForPlausibleTrackingEvents(page, ['pageview:introduction:toto'])
 
-        await page.click('a >> text="Je suis cas contact Covid, que faire ?"')
+        await page.click('a >> text="Je suis cas contact Covid, que faire\u00a0?"')
         await waitForPlausibleTrackingEvents(page, [
             'pageview:cas-contact-a-risque.html:toto',
         ])
@@ -56,7 +56,7 @@ describe('Plausible', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -96,7 +96,7 @@ describe('Plausible', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -163,7 +163,7 @@ describe('Plausible', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -228,7 +228,7 @@ describe('Plausible', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -293,7 +293,7 @@ describe('Plausible', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -357,7 +357,7 @@ describe('Plausible', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 

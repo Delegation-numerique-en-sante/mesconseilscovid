@@ -218,7 +218,7 @@ describe('Tests', function () {
         )
         assert.equal(
             await formLegend.innerText(),
-            'Avez-vous des symptômes qui peuvent évoquer la Covid ?'
+            'Avez-vous des symptômes qui peuvent évoquer la Covid\u202f?'
         )
 
         // On avance vers le formulaire suivant (depuis quand).
@@ -229,7 +229,7 @@ describe('Tests', function () {
         )
         assert.equal(
             await formLegend.innerText(),
-            'Depuis quand avez-vous des symptômes ?'
+            'Depuis quand avez-vous des symptômes\u202f?'
         )
 
         // On clique sur le bouton retour.
@@ -242,7 +242,7 @@ describe('Tests', function () {
         formLegend = await page.waitForSelector(`#${prefixe}-symptomes-form legend h3`)
         assert.equal(
             await formLegend.innerText(),
-            'Avez-vous des symptômes qui peuvent évoquer la Covid ?'
+            'Avez-vous des symptômes qui peuvent évoquer la Covid\u202f?'
         )
     })
 
@@ -271,7 +271,7 @@ describe('Tests', function () {
         )
         assert.equal(
             await formLegend.innerText(),
-            'Avez-vous des symptômes qui peuvent évoquer la Covid ?'
+            'Avez-vous des symptômes qui peuvent évoquer la Covid\u202f?'
         )
     })
 })

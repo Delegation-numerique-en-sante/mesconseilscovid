@@ -9,7 +9,7 @@ describe('Profils', function () {
         await page.goto('http://localhost:8080/j-ai-des-symptomes-covid.html')
 
         const summary = await page.waitForSelector(
-            'text="Que faire si j’ai des symptômes et/ou que je suis positif ?"'
+            'text="Que faire si j’ai des symptômes et/ou que je suis positif\u202f?"'
         )
         await summary.click()
 
@@ -61,7 +61,7 @@ describe('Profils', function () {
         {
             // On retrouve le titre explicite.
             let titre = await page.waitForSelector('#page.ready #conseils-block-titre')
-            assert.equal(await titre.innerText(), 'Conseils pour « Mamie »') // &nbsp; autour du nom
+            assert.equal(await titre.innerText(), 'Conseils pour «\u00a0Mamie\u00a0»')
 
             // On rend l’activité visible.
             await page.click('#page.ready #conseils-activite h3')
