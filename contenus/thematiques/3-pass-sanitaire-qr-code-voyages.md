@@ -132,7 +132,7 @@
 
     - Si vous avez **plus de 18 ans et 1 mois**, vous pouvez recevoir une dose de rappel dès **3 mois** après votre vaccination initiale, et dans un délai de **4 mois maximum**, sans quoi votre passe vaccinal sera désactivé.
 
-    Si vous avez **eu la Covid** au moins 3 mois après votre vaccination initiale, vous n’avez **pas besoin** de recevoir de dose de rappel. Vous pourrez [prolonger votre passe](#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-passe-vaccinal) avec votre résultat de test positif (*certificat de rétablissement*).
+    Si vous avez **eu la Covid** au moins 3 mois après votre vaccination initiale, vous n’avez **pas besoin** de recevoir de dose de rappel. Vous pourrez [prolonger votre passe](#j-ai-eu-la-covid-apres-ma-vaccination-initiale-comment-prolonger-mon-passe-vaccinal) avec votre résultat de test positif (*certificat de rétablissement*).
 
     <div class="tableaux-vaccination-complete">
 
@@ -148,19 +148,18 @@
 
     <div class="voir-aussi">
 
-    - [Suis-je concerné par la dose de rappel ?](je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
     - [Comment obtenir un certificat de rétablissement ?](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)
     - [Tout savoir sur le rappel vaccinal contre la Covid-19](https://www.gouvernement.fr/tout-savoir-sur-le-rappel-vaccinal-contre-la-covid-19) (gouvernement.fr)
 
     </div>
 
 
-.. question:: J’ai eu la Covid après ma vaccination complète, comment prolonger mon passe vaccinal ?
+.. question:: J’ai eu la Covid après ma vaccination initiale, comment prolonger mon passe vaccinal ?
     :level: 3
 
     Si vous avez eu la Covid après votre vacination initiale, vous pourrez utiliser le QR code de votre **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*) en tant que **passe vaccinal**.
 
-    - Si cette infection a eu lieu **moins de 3 mois** après la vaccination initiale :
+    - Si cette infection a eu lieu **moins de 3 mois** après votre vaccination initiale :
 
         * ce certificat de rétablissement sera valable **4 mois** comme passe vaccinal ou passe sanitaire ;
         * vous pourrez recevoir une **dose de rappel** :
@@ -168,7 +167,7 @@
             * dès **3 mois** après votre **infection** si vous êtes âgé de **18 ans ou plus**,
             * dès **6 mois** après votre **infection** si vous êtes âgé de **12 à 17 ans**.
 
-    - Si cette infection a eu lieu **plus de 3 mois** après la vaccination initiale :
+    - Si cette infection a eu lieu **plus de 3 mois** après votre vaccination initiale :
 
         * cette infection tiendra lieu de **dose de rappel** pour le passe vaccinal **en France** :
 

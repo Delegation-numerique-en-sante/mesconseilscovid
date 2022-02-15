@@ -6,9 +6,7 @@
     <p class="big">Vous êtes vacciné(e) contre la Covid et vous vous posez des questions sur le masque, l’isolement, les contacts à risque (cas contact), la contagion (immunité), ou encore le certificat de vaccination (passe vaccinal) ? Voici les réponses à vos questions.</p>
 </header>
 
-.. renvoi:: je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
-
-.. renvoi:: je-veux-me-faire-vacciner.html#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose
+.. renvoi:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal
 
 .. renvoi:: j-ai-des-symptomes-covid.html#je-suis-vaccine-e-est-ce-que-je-peux-etre-positif-ou-positive-a-la-covid
 

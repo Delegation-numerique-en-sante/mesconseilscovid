@@ -19,30 +19,26 @@
 
 ## Qui est éligible au rappel vaccinal ?
 
-.. injection:: /je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
-
-.. injection:: /je-veux-me-faire-vacciner.html#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose
-
-.. injection:: /je-veux-me-faire-vacciner.html#j-ai-eu-la-covid-avant-mon-unique-dose-de-vaccin-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
+.. injection:: /je-veux-me-faire-vacciner.html#j-ai-eu-la-covid-avant-ma-vaccination-initiale-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose
 
 
 ## Organiser mon rendez-vous de vaccination
 
-.. injection:: /je-veux-me-faire-vacciner.html#ou-me-faire-vacciner
+.. injection:: je-veux-me-faire-vacciner.html#ou-me-faire-vacciner
 
-.. injection:: /je-veux-me-faire-vacciner.html#comment-prendre-rendez-vous-pour-me-faire-vacciner
+.. injection:: je-veux-me-faire-vacciner.html#comment-prendre-rendez-vous-pour-me-faire-vacciner
 
-.. injection:: /je-veux-me-faire-vacciner.html#j-ai-des-difficultes-a-me-deplacer-puis-je-me-faire-vacciner-a-domicile
+.. injection:: je-veux-me-faire-vacciner.html#j-ai-des-difficultes-a-me-deplacer-puis-je-me-faire-vacciner-a-domicile
 
-.. injection:: /je-veux-me-faire-vacciner.html#puis-je-me-faire-vacciner-contre-la-grippe-saisonniere-et-la-covid-en-meme-temps
+.. injection:: je-veux-me-faire-vacciner.html#puis-je-me-faire-vacciner-contre-la-grippe-saisonniere-et-la-covid-en-meme-temps
 
 
 ## Prolonger mon passe vaccinal
 
-.. injection:: /pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal
+.. injection:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal
 
-.. injection:: /pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-passe-vaccinal
+.. injection:: pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-initiale-comment-prolonger-mon-passe-vaccinal
 
-.. injection:: /pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code
+.. injection:: pass-sanitaire-qr-code-voyages.html#comment-obtenir-une-attestation-de-vaccination-complete-avec-un-qr-code
 
 </div>

@@ -13,77 +13,10 @@
 
 ## Le rappel vaccinal (dit « 3<sup>e</sup> dose »)
 
-.. question:: Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
-    :level: 3
-
-    Si vous avez **18 ans ou plus**, vous pouvez recevoir un rappel vaccinal, en respectant [un délai minimal](#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) après votre dernière injection ou infection à la Covid.
-
-    Si vous avez eu la **Covid** après votre vaccination initiale (primo-vaccination), alors votre protection est jugée suffisante, et la dose de **rappel** n’est **pas nécéssaire** pour prolonger votre passe vaccinal.
-    Vous pourrez présenter votre certificat de rétablissement (test PCR ou antigénique positif) en lieu et place de votre attestation de vaccination. Attention, tous les pays n’appliquant pas la même réglementation, la dose de rappel pourra vous être demandée pour voyager à l’étranger.
-
-    <span class="nouveau">nouveau</span> Si vous avez entre **12 et 17 ans**, le rappel vaccinal vous est ouvert depuis le **lundi 24 janvier 2022**.
-
-    <div class="conseil conseil-jaune">
-
-    Quel que soit le vaccin que vous avez reçu initialement (*Pfizer*, *Moderna*, *AstraZeneca* ou *Janssen*), la dose de rappel se fera **uniquement avec un vaccin à ARN messager** (*Pfizer* ou *Moderna* selon votre situation).
-
-    </div>
-
-    <div class="voir-aussi">
-
-    - [Avant quelle date dois-je recevoir la dose de rappel pour conserver mon passe vaccinal ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal)
-    - [Où me faire vacciner ?](#ou-me-faire-vacciner)
-
-    </div>
+.. injection:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal
 
 
-.. question:: J’ai eu la Covid avant mon unique dose de vaccin. Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
-    :level: 3
-
-    **Oui**, dans votre cas le rappel sera votre **2<sup>e</sup> dose**.
-
-    Si vous avez **plus de 18 ans** vous pouvez recevoir un rappel vaccinal, en respectant [un délai minimal](#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) après votre dernière injection ou infection à la Covid.
-
-    <span class="nouveau">nouveau</span> Si vous avez entre **12 et 17 ans**, le rappel vaccinal vous est ouvert depuis le **lundi 24 janvier 2022**.
-
-    <div class="voir-aussi">
-
-    - [Suis-je concerné par la dose de rappel ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
-    - [Quel est le vaccin administré pour la dose de rappel ?](#quel-est-le-vaccin-administre-pour-la-dose-de-rappel-dite-3-e-dose)
-
-    </div>
-
-
-.. injection:: pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-complete-comment-prolonger-mon-passe-vaccinal
-
-
-.. question:: À partir de quand pourrai-je recevoir la dose de rappel, dite 3<sup>e</sup> dose ?
-    :level: 3
-
-    Vous pourrez recevoir votre rappel vaccinal :
-
-    * si vous avez été vacciné(e) avec le vaccin **Pfizer**, **Moderna** ou **AstraZeneca** :
-
-        - si vous avez **18 ans ou plus**, dès **3 mois** après votre dernière **injection**, ou votre dernière **infection** à la Covid ;
-
-        - si vous avez entre **12 et 17 ans**, dès **6 mois** après votre dernière **injection**, ou votre dernière **infection** à la Covid ;
-
-    *Si vous avez eu la Covid après votre vaccination initiale (primo-vaccination), alors votre protection est jugée suffisante, et la dose de rappel n’est pas nécéssaire pour prolonger votre passe vaccinal.*
-
-    * si vous avez été vacciné(e) avec le **vaccin Janssen** :
-
-        - consultez la question « [Je suis vacciné(e) avec une seule dose de Janssen. Comment se passe mon rappel ?](je-veux-me-faire-vacciner.html#je-suis-vaccine-e-avec-une-seule-dose-de-janssen-comment-se-passe-mon-rappel) » ;
-
-    <div class="voir-aussi">
-
-    - [Suis-je concerné par la dose de rappel ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
-    - [Où me faire vacciner ?](#ou-me-faire-vacciner)
-    - [Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon passe vaccinal ?](#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal)
-
-    </div>
-
-
-.. question:: Je suis vacciné(e) avec une seule dose de Janssen. Comment se passe mon rappel ?
+.. question:: J’ai été vacciné(e) avec le vaccin Janssen. Comment se passe mon rappel ?
     :level: 3
 
     Si vous avez reçu une **dose unique** de **vaccin Janssen**, il y a plusieurs cas possibles en fonction de votre situation personnelle.
@@ -114,7 +47,15 @@
             * vous n’avez **pas besoin** de recevoir une dose de rappel pour utiliser votre passe vaccinal en France. Attention, la réglementation varie d’un pays à l’autre et la dose de rappel peut être exigée lors d’un voyager à l’étranger.
 
 
-.. injection:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal
+.. question:: J’ai eu la Covid avant ma vaccination initiale. Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
+    :level: 3
+
+    **Oui**, dans votre cas le rappel sera votre **2<sup>e</sup> dose**.
+
+    Pensez à préciser au professionnel de santé qui vous vaccinera que vous avez été contaminé avant votre première dose, pour que cette dose soit bien prise en compte comme un rappel.
+
+
+.. injection:: pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-initiale-comment-prolonger-mon-passe-vaccinal
 
 
 .. question:: Je suis cas contact, puis-je recevoir la dose de rappel ?
@@ -257,7 +198,7 @@
 
     **Oui**. Il est possible de réaliser le rappel du vaccin contre la Covid en même temps que le vaccin contre la grippe, mais il est aussi possible d’espacer les deux injections.
 
-    La campagne annuelle de vaccination contre la grippe a commencé le 22 octobre 2021 pour les publics prioritaires. Depuis le **23 novembre 2021**, elle est ouverte à **toute la population**. Si vous êtes [éligible au rappel vaccinal](je-veux-me-faire-vacciner.html#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) contre la Covid, vous pourrez recevoir les deux vaccins en même temps.
+    La campagne annuelle de vaccination contre la grippe a commencé le 22 octobre 2021 pour les publics prioritaires. Depuis le **23 novembre 2021**, elle est ouverte à **toute la population**. Si vous êtes éligible au rappel vaccinal contre la Covid, vous pourrez recevoir les deux vaccins en même temps.
 
     En ville, c’est possible dans les **pharmacies** qui vaccinent avec les deux vaccins, et dans les cabinets médicaux ou infirmiers.
 
@@ -358,7 +299,7 @@
     <div class="voir-aussi">
 
     - [J’ai déjà eu la Covid, comment le prouver et ne recevoir qu’une seule dose pour compléter mon schéma vaccinal initial ?](#j-ai-deja-eu-la-covid-comment-le-prouver-et-ne-recevoir-qu-une-seule-dose-pour-completer-mon-schema-vaccinal-initial)
-    - [Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3e dose ?](#j-ai-eu-la-covid-avant-mon-unique-dose-de-vaccin-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
+    - [Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3e dose ?](#j-ai-eu-la-covid-avant-ma-vaccination-initiale-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
 
     </div>
 
@@ -370,7 +311,7 @@
 
     <div class="voir-aussi">
 
-    - [Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3e dose ?](#j-ai-eu-la-covid-avant-mon-unique-dose-de-vaccin-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
+    - [Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3e dose ?](#j-ai-eu-la-covid-avant-ma-vaccination-initiale-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
 
     </div>
 
@@ -385,7 +326,7 @@
 
     <div class="voir-aussi">
 
-    - [Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3e dose ?](#j-ai-eu-la-covid-avant-mon-unique-dose-de-vaccin-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
+    - [Mon schéma vaccinal est complet avec une seule dose de vaccin. Suis-je concerné par la dose de rappel, dite 3e dose ?](#j-ai-eu-la-covid-avant-ma-vaccination-initiale-suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose)
 
     </div>
 
@@ -406,7 +347,7 @@
     * **une personne qui a déjà eu la Covid** avant sa première injection n’aura besoin que d’une seule dose de vaccin pour être complètement vaccinée (hors éventuel rappel) ;
     * **une personne fortement immunodéprimée** recevra une troisième dose de vaccin, 4 semaines après la deuxième, de façon à être protégée plus efficacement. Si vous êtes concerné(e) par ce cas de figure, nous vous conseillons de prendre contact avec votre médecin traitant. L’assurance maladie prendra directement contact avec les personnes concernées dont elle a connaissance pour organiser ce rendez-vous. Pour plus d’informations à ce sujet, consultez [la page dédiée sur ameli.fr](https://www.ameli.fr/hauts-de-seine/etablissement/actualites/vaccin-contre-la-covid-19-une-3e-injection-recommandee-pour-les-personnes-immunodeprimees).
 
-    L’immunité conférée par la vaccination initiale diminue avec le temps. C’est pourquoi une **dose de rappel** est maintenant recommandée **après 3 mois** pour toutes les personnes de 18 ans et plus, et **après 6 mois** pour les personnes de 12 à 17 ans (voir « [Suis-je concerné par la dose de rappel, dite 3e dose ?](#suis-je-concerne-par-la-dose-de-rappel-dite-3-e-dose) »).
+    L’immunité conférée par la vaccination initiale diminue avec le temps. C’est pourquoi une **dose de rappel** est maintenant recommandée **après 3 mois** pour toutes les personnes de 18 ans et plus, et **après 6 mois** pour les personnes de 12 à 17 ans.
 
 
 .. question:: Est-ce que je peux attraper la Covid si je suis vacciné(e) ?
