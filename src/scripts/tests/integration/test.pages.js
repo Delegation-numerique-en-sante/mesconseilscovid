@@ -64,7 +64,7 @@ describe('Pages', function () {
 
         assert.equal(
             await page.title(),
-            'Conseils pour mon enfant — Mes Conseils Covid'
+            'Conseils pour mon\u00a0enfant — Mes Conseils Covid'
         )
     })
 

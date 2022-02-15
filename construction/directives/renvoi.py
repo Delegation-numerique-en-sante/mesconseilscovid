@@ -35,10 +35,10 @@ class RenvoiDirective(Directive):
     @staticmethod
     def render_html(text, nom_page, titre_page, id_question, titre_question, level):
         return f"""<details id="{id_question}">
-    {render_html_summary('', typographie(titre_question), level)}
+    {render_html_summary('', typographie(titre_question, html=True), level)}
     <p>
         Voir la réponse sur notre page
-        « <a href="/{nom_page}#{id_question}">{typographie(titre_page)}</a> ».
+        « <a href="/{nom_page}#{id_question}">{typographie(titre_page, html=True)}</a> ».
     </p>
 </details>
 """
