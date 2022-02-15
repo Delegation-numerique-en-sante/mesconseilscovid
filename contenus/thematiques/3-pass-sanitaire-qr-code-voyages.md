@@ -128,7 +128,7 @@
 .. question:: Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon passe vaccinal ?
     :level: 3
 
-    - Si vous avez entre **12 et 17 ans**, vous pouvez recevoir une dose de rappel dès **6 mois** après votre vaccination initiale : ce rappel vaccinal est recommandé, mais il n’est **pas obligatoire** dans le cadre du passe vaccinal ou du passe sanitaire.
+    - Si vous avez entre **12 et 17 ans**, vous pouvez recevoir une dose de rappel dès **6 mois** après votre vaccination initiale. Ce rappel vaccinal est **recommandé**, mais il n’est **pas obligatoire** dans le cadre du passe vaccinal ou du passe sanitaire.
 
     - Si vous avez **plus de 18 ans et 1 mois**, vous pouvez recevoir une dose de rappel dès **3 mois** après votre vaccination initiale, et dans un délai de **4 mois maximum**, sans quoi votre passe vaccinal sera désactivé.
 

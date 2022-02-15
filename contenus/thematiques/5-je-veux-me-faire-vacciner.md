@@ -21,30 +21,309 @@
 
     Si vous avez reçu une **dose unique** de **vaccin Janssen**, il y a plusieurs cas possibles en fonction de votre situation personnelle.
 
-    - Vous n’avez **pas eu la Covid** :
-        1. vous devrez recevoir une **dose supplémentaire** de vaccin (Pfizer ou Moderna, en dose complète) dans les **4 semaines à 2 mois** après votre injection : cette 2<sup>e</sup> injection complètera votre **vaccination initiale** et prolongera votre **passe vaccinal** ;
+    #### Vous n’avez **pas eu la Covid**
 
+    1. Vous devrez recevoir une **dose supplémentaire** de vaccin Pfizer ou Moderna (dose complète) dans les **4 semaines à 2 mois** après votre injection. Cette 2<sup>e</sup> injection complètera votre **vaccination initiale** et prolongera votre **passe vaccinal**.
+
+    2. Vous devrez ensuite recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 4 mois** après cette injection supplémentaire.
+
+    <div class="tableaux-vaccination-complete">
+
+    <table class="table">
+      <thead>
+          <tr>
+              <th>Vaccination initiale</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>
+                  <div class="stimulations">
+                      <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose Janssen</div>
+                      <div class="plus">+</div>
+                      <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose ARNm</div>
+                  </div>
+                  <span class="delai">entre <b>4 semaines</b> et <b>2 mois</b><br>après la 1<sup>re</sup> dose</span>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+
+    <div style="display: flex; align-items: center">
+        <p class="gros plus">+</p>
+    </div>
+
+    <table class="table">
+      <thead>
+          <tr>
+            <th>Rappel vaccinal</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>
+                  <div class="rappels">
+                      <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose ARNm<br>(Pfizer ou Moderna)</div>
+                  </div>
+                  <span class="delai">entre <b>3 et 4 mois</b><br>après la dose supplémentaire</span>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+
+    </div>
+
+    #### Vous avez eu la Covid **avant** votre injection de **Janssen**
+
+    1. La dose supplémentaire n’est **pas nécessaire**.
+
+    2. Vous devrez recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **4 semaines à 2 mois** après votre injection. Ce rappel prolongera votre passe vaccinal.
+
+    <div class="tableaux-vaccination-complete">
+
+    <table class="table">
+      <thead>
+          <tr>
+              <th>Vaccination initiale</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>
+                  <div class="stimulations">
+                      <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection</div>
+                      <div class="plus">+</div>
+                      <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose Janssen</div>
+                  </div>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+
+    <div style="display: flex; align-items: center">
+        <p class="gros plus">+</p>
+    </div>
+
+    <table class="table">
+      <thead>
+          <tr>
+            <th>Rappel vaccinal</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>
+                  <div class="rappels">
+                      <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose ARNm<br>(Pfizer ou Moderna)</div>
+                  </div>
+                  <span class="delai">entre <b>4 semaines</b> et <b>2 mois</b><br>après la vaccination initiale</span>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+
+    </div>
+
+    #### Vous avez eu la Covid **après** votre injection de **Janssen**
+
+    - Vous avez été testé positif **dans les 15 jours** suivant cette injection :
+        1. vous devrez recevoir une **dose supplémentaire** de vaccin (Pfizer ou Moderna, en dose complète) dans les **4 semaines** après votre injection : cette 2<sup>e</sup> injection complètera votre **vaccination initiale** et prolongera votre **passe vaccinal** ;
         2. vous devrez ensuite recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 4 mois** après cette injection supplémentaire.
 
-    - Vous avez eu la Covid **avant** votre injection de **Janssen** :
+    <div class="tableaux-vaccination-complete">
+
+    <table class="table">
+      <thead>
+          <tr>
+              <th>Vaccination initiale</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>
+                  <div class="stimulations">
+                      <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose Janssen</div>
+                      <div class="plus">+</div>
+                      <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection (≤ 15 jours)</div>
+                      <div class="plus">+</div>
+                      <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose ARNm</div>
+                  </div>
+                  <span class="delai">dose supplémentaire dans les <b>4 semaines</b><br>suivant la 1<sup>re</sup> dose</span>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+
+    <div style="display: flex; align-items: center">
+        <p class="gros plus">+</p>
+    </div>
+
+    <table class="table">
+      <thead>
+          <tr>
+            <th>Rappel vaccinal</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>
+                  <div class="rappels">
+                      <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose ARNm<br>(Pfizer ou Moderna)</div>
+                  </div>
+                  <span class="delai">entre <b>3 et 4 mois</b><br>après la dose supplémentaire</span>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+
+    </div>
+
+    - Vous avez été testé positif **plus de 15 jours** après cette injection :
         1. la dose supplémentaire n’est **pas nécessaire** ;
-        2. vous serez éligible au **rappel vaccinal** avec le vaccin Pfizer ou Moderna (demi-dose) dans les **4 semaines à 2 mois** après votre injection : ce rappel prolongera votre passe vaccinal.
+        2. vous devrez ensuite recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 6 mois** après cette infection.
 
-    - Vous avez eu la Covid **après** votre injection de **Janssen** :
+    <div class="tableaux-vaccination-complete">
 
-        - vous avez été testé positif **dans les 15 jours** suivant cette injection :
-            1. vous devrez recevoir une **dose supplémentaire** de vaccin (Pfizer ou Moderna, en dose complète) dans les **4 semaines** après votre injection : cette 2<sup>e</sup> injection complètera votre **vaccination initiale** et prolongera votre **passe vaccinal** ;
-            2. vous devrez ensuite recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 4 mois** après cette injection supplémentaire.
+    <table class="table">
+      <thead>
+          <tr>
+              <th>Vaccination initiale</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>
+                  <div class="stimulations">
+                      <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose Janssen</div>
+                      <div class="plus">+</div>
+                      <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection (> 15 jours)</div>
+                  </div>
+              </td>
+          </tr>
+      </tbody>
+    </table>
 
-        - vous avez été testé positif **plus de 15 jours** après cette injection :
-            1. la dose supplémentaire n’est **pas nécessaire** ;
-            2. vous devrez ensuite recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 6 mois** après cette injection supplémentaire.
+    <div style="display: flex; align-items: center">
+        <p class="gros plus">+</p>
+    </div>
 
-    - Vous avez eu la Covid **après** votre **dose supplémentaire** (Pfizer ou Moderna) :
-        1. si vous avez eu la Covid **dans les 15 jours** suivant cette dose supplémentaire :
-            * vous devrez recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 4 mois** après cette infection ;
-        2. si vous avez eu la Covid **plus de 15 jours** après cette dose supplémentaire :
-            * vous n’avez **pas besoin** de recevoir une dose de rappel pour utiliser votre passe vaccinal en France. Attention, la réglementation varie d’un pays à l’autre et la dose de rappel peut être exigée lors d’un voyager à l’étranger.
+    <table class="table">
+      <thead>
+          <tr>
+            <th>Rappel vaccinal</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>
+                  <div class="rappels">
+                      <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose ARNm<br>(Pfizer ou Moderna)</div>
+                  </div>
+                  <span class="delai">entre <b>3 et 6 mois</b><br>après l’infection</span>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+
+    </div>
+
+    #### Vous avez eu la Covid **après** votre **dose supplémentaire** (Pfizer ou Moderna)
+
+    1. si vous avez eu la Covid **dans les 15 jours** suivant cette dose supplémentaire :
+        * vous devrez recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 4 mois** après cette infection ;
+
+        <div class="tableaux-vaccination-complete">
+
+        <table class="table">
+          <thead>
+              <tr>
+                  <th>Vaccination initiale</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>
+                      <div class="stimulations">
+                          <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose Janssen</div>
+                          <div class="plus">+</div>
+                          <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose ARNm</div>
+                          <div class="plus">+</div>
+                          <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection (≤ 15 jours)</div>
+                      </div>
+                  </td>
+              </tr>
+          </tbody>
+        </table>
+
+        <div style="display: flex; align-items: center">
+            <p class="gros plus">+</p>
+        </div>
+
+        <table class="table">
+          <thead>
+              <tr>
+                <th>Rappel vaccinal</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>
+                      <div class="rappels">
+                          <div class="rappel"><span role="img" aria-label="Seringue">💉</span><br>1 dose ARNm<br>(Pfizer ou Moderna)</div>
+                      </div>
+                      <span class="delai">entre <b>3 et 4 mois</b><br>après l’infection</span>
+                  </td>
+              </tr>
+          </tbody>
+        </table>
+
+    2. si vous avez eu la Covid **plus de 15 jours** après cette dose supplémentaire :
+        * vous n’avez **pas besoin** de recevoir une dose de rappel pour utiliser votre passe vaccinal en France. Attention, la réglementation varie d’un pays à l’autre et la dose de rappel peut être exigée lors d’un voyager à l’étranger.
+
+        <div class="tableaux-vaccination-complete">
+
+        <table class="table">
+          <thead>
+              <tr>
+                  <th>Vaccination initiale</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>
+                      <div class="stimulations">
+                          <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose Janssen</div>
+                          <div class="plus">+</div>
+                          <div class="stimulation"><span role="img" aria-label="Seringue">💉</span><br>1 dose ARNm</div>
+                          <div class="plus">+</div>
+                          <div class="stimulation"><span role="img" aria-label="Personne malade">🤒</span><br>1 infection (> 15 jours)</div>
+                      </div>
+                  </td>
+              </tr>
+          </tbody>
+        </table>
+
+        <div style="display: flex; align-items: center">
+            <p class="gros plus">+</p>
+        </div>
+
+        <table class="table">
+          <thead>
+              <tr>
+                <th>Rappel vaccinal</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>
+                      <div class="stimulations">
+                          <div class="stimulation"><span role="img" aria-label="OK">✅</span></div>
+                      </div>
+                      <span class="delai">pas de rappel nécessaire<br>en France</span>
+                  </td>
+              </tr>
+          </tbody>
+        </table>
 
 
 .. question:: J’ai eu la Covid avant ma vaccination initiale. Suis-je concerné par la dose de rappel, dite 3<sup>e</sup> dose ?
