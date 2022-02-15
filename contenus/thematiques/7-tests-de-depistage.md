@@ -141,6 +141,6 @@
     * personnels de l’**Éducation nationale** exerçant en école maternelle, primaire, collège et lycée, ainsi que dans les services d’hébergement, d’accueil et d’activités périscolaires associés ;
     * professionnels exerçant auprès de **personnes vulnérables** (âgées, handicapées…) et dans la limite de 10 par mois.
 
-    En dehors de ces situations, le prix de vente **maximal** d’un autotest est de **5,20 €**.
+    En dehors de ces situations, le prix de vente **maximal** d’un autotest est de **3,35 €** (ou **4,10 €** pour les autotests plus particulièrement destinés et conçus pour les enfants).
 
 </div>
