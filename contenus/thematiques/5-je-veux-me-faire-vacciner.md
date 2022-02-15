@@ -17,8 +17,8 @@
     :level: 3
 
     Si vous avez **18 ans ou plus**, vous pouvez recevoir un rappel vaccinal, en respectant [un délai minimal](#a-partir-de-quand-pourrai-je-recevoir-la-dose-de-rappel-dite-3-e-dose) après votre dernière injection ou infection à la Covid.
-    
-    Si vous avez eu la **Covid** après votre vaccination initiale (primo-vaccination), alors votre protection est jugée suffisante, et la dose de **rappel** n’est **pas nécéssaire** pour prolonger votre passe vaccinal. 
+
+    Si vous avez eu la **Covid** après votre vaccination initiale (primo-vaccination), alors votre protection est jugée suffisante, et la dose de **rappel** n’est **pas nécéssaire** pour prolonger votre passe vaccinal.
     Vous pourrez présenter votre certificat de rétablissement (test PCR ou antigénique positif) en lieu et place de votre attestation de vaccination. Attention, tous les pays n’appliquant pas la même réglementation, la dose de rappel pourra vous être demandée pour voyager à l’étranger.
 
     <span class="nouveau">nouveau</span> Si vous avez entre **12 et 17 ans**, le rappel vaccinal vous est ouvert depuis le **lundi 24 janvier 2022**.
@@ -86,24 +86,33 @@
 .. question:: Je suis vacciné(e) avec une seule dose de Janssen. Comment se passe mon rappel ?
     :level: 3
 
-    Si vous avez reçu une **dose unique** de **vaccin Janssen**, il y a plusieurs cas possibles.
+    Si vous avez reçu une **dose unique** de **vaccin Janssen**, il y a plusieurs cas possibles en fonction de votre situation personnelle.
 
-    - Si vous n’avez **pas eu la Covid**, ni avant ni après votre injection, alors :
-        - vous devrez recevoir une **dose supplémentaire** de vaccin à ARN messager (Pfizer ou Moderna, en dose complète) **4 semaines** après votre injection, afin de **compléter votre schéma vaccinal** ; cette 2<sup>e</sup> injection prolongera la validité de votre **passe vaccinal** ;
+    - Vous n’avez **pas eu la Covid** :
+        1. vous devrez recevoir une **dose supplémentaire** de vaccin (Pfizer ou Moderna, en dose complète) dans les **4 semaines à 2 mois** après votre injection : cette 2<sup>e</sup> injection complètera votre **vaccination initiale** et prolongera votre **passe vaccinal** ;
 
-        - **3 mois** après cette injection supplémentaire, vous serez éligible au **rappel vaccinal**, avec un vaccin Pfizer ou Moderna (demi-dose).
+        2. vous devrez ensuite recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 4 mois** après cette injection supplémentaire.
 
-    - Si vous **avez eu la Covid avant** votre injection, alors :
-        - la dose supplémentaire n’est pas nécessaire ;
-        - vous serez éligible au **rappel vaccinal** avec le vaccin Pfizer ou Moderna (demi-dose) dès **4 semaines** après votre unique injection de Janssen ; ce rappel prolongera la validité de votre passe vaccinal.
+    - Vous avez eu la Covid **avant** votre injection de **Janssen** :
+        1. la dose supplémentaire n’est **pas nécessaire** ;
+        2. vous serez éligible au **rappel vaccinal** avec le vaccin Pfizer ou Moderna (demi-dose) dans les **4 semaines à 2 mois** après votre injection : ce rappel prolongera votre passe vaccinal.
 
-    - Si vous **avez eu la Covid après** votre injection, alors :
-        - la dose supplémentaire n’est pas nécessaire ;
-        - vous serez éligible au **rappel vaccinal** avec le vaccin Pfizer ou Moderna (demi-dose) dès **3 mois** après votre infection ; ce rappel prolongera la validité de votre passe vaccinal.
-    
-    - Vous avez eu la **Covid après votre dose supplémentaire** :
-        - si vous avez eu la Covid dans les 15 jours suivant la dose supplémentaire : vous devrez recevoir la dose de rappel dès 3 mois après votre contamination.
-        - si vous avez eu la Covid plus de 15 jours après la dose supplémentaire : vous n’avez pas besoin de recevoir une dose de rappel pour utiliser votre passe vaccinal en France. Attention, la réglementation varie d’un pays à l’autre et la dose de rappel peut être exigée lors d’un voyager à l’étranger.
+    - Vous avez eu la Covid **après** votre injection de **Janssen** :
+
+        - vous avez été testé positif **dans les 15 jours** suivant cette injection :
+            1. vous devrez recevoir une **dose supplémentaire** de vaccin (Pfizer ou Moderna, en dose complète) dans les **4 semaines** après votre injection : cette 2<sup>e</sup> injection complètera votre **vaccination initiale** et prolongera votre **passe vaccinal** ;
+            2. vous devrez ensuite recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 4 mois** après cette injection supplémentaire.
+
+        - vous avez été testé positif **plus de 15 jours** après cette injection :
+            1. la dose supplémentaire n’est **pas nécessaire** ;
+            2. vous devrez ensuite recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 6 mois** après cette injection supplémentaire.
+
+    - Vous avez eu la Covid **après** votre **dose supplémentaire** (Pfizer ou Moderna) :
+        1. si vous avez eu la Covid **dans les 15 jours** suivant cette dose supplémentaire :
+            * vous devrez recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 4 mois** après cette infection ;
+        2. si vous avez eu la Covid **plus de 15 jours** après cette dose supplémentaire :
+            * vous n’avez **pas besoin** de recevoir une dose de rappel pour utiliser votre passe vaccinal en France. Attention, la réglementation varie d’un pays à l’autre et la dose de rappel peut être exigée lors d’un voyager à l’étranger.
+
 
 .. injection:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal
 
