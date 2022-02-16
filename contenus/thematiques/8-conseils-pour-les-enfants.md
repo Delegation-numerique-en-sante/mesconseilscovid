@@ -41,6 +41,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 .. question:: Que se passe-t-il si un élève est testé positif dans la classe de mon enfant ?
     :level: 3
+    :expires: 28 février 2022
 
     * Pour les élèves de **moins de 12 ans** (quel que soit leur statut vaccinal), lorsqu’**un cas positif** est confirmé dans la classe :
 
@@ -52,6 +53,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
         *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à recommencer ce parcours de trois tests.*
 
+        <div class="conseil">
+
+        À partir du **28 février 2022**, les élèves cas contact de moins de 12 ans poursuivront leurs apprentissages en présentiel, et devront seulement réaliser un autotest à **J+2**.
+
+        </div>
+
     * Pour les élèves de **12 ans et plus**, un protocole de _contact-tracing_ sera mis en œuvre pour identifier les élèves ayant eu des contacts à risque avec un cas positif. La conduite à tenir pour les élèves **« cas contact »** dépend alors de leur statut vaccinal :
 
       * s’ils sont **complètement vaccinés** :
@@ -61,6 +68,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
         - ils devront ensuite réaliser à la maison **2 autotests** de surveillance (délivrés **gratuitement** en pharmacie) **2 jours** après et **4 jours** après la date du **premier test** (en cas de difficultés pour obtenir des autotests, la surveillance peut aussi se faire par test antigénique ou PCR).
 
           *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à recommencer ce parcours de trois tests.*
+
+          <div class="conseil">
+
+          À partir du **28 février 2022**, les élèves cas contact complètement vaccinés poursuivront leurs apprentissages en présentiel, et devront seulement réaliser un autotest à **J+2**.
+
+          </div>
 
       * s’ils ne sont **pas complètement vaccinés** :
         - ils devront **s’isoler** pendant **7 jours**, et poursuivre leurs apprentissages **à distance** pendant cette période.
@@ -80,6 +93,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 .. question:: Que se passe-t-il si mon enfant de moins de 12 ans est cas contact ?
     :level: 3
+    :expires: 28 février 2022
 
     <div class="conseil conseil-jaune">
 
@@ -90,6 +104,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     #### 1. Pas d’isolement
 
     Si votre enfant de moins de 12 ans est « **cas contact** », qu’il soit **vacciné ou non**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école à condition de faire un **test immédiat**, puis **2 autotests** de surveillance.
+
+    <div class="conseil">
+
+    À partir du **28 février 2022**, les élèves cas contact de moins de 12 ans poursuivront leurs apprentissages en présentiel, et devront seulement réaliser un autotest à **J+2**.
+
+    </div>
 
     #### 2. Test de dépistage
 
@@ -128,6 +148,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
 .. question:: Que se passe-t-il si mon enfant de 12 ans ou plus est cas contact et qu’il est vacciné ?
     :level: 3
+    :expires: 28 février 2022
 
     <div class="conseil conseil-jaune">
 
@@ -140,6 +161,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     #### 1. Pas d’isolement
 
     Si votre enfant de 12 ans ou plus est « **cas contact** » et qu’il est **vacciné**, alors il n’aura pas besoin de s’isoler, et pourra continuer à aller à l’école à condition de faire un **test de dépistage**, puis **2 autotests** de surveillance.
+
+    <div class="conseil">
+
+    À partir du **28 février 2022**, les élèves cas contact complètement vaccinés poursuivront leurs apprentissages en présentiel, et devront seulement réaliser un autotest à **J+2**.
+
+    </div>
 
     #### 2. Test de dépistage
 
