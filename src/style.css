@@ -816,6 +816,7 @@ footer .legals {
     justify-content: space-between;
     flex-grow: 1;
 }
+.conseils summary h2,
 .conseils summary h3,
 #historique h3 {
     color: #000091;
@@ -826,6 +827,7 @@ footer .legals {
 .conseils summary {
     display: flex;
 }
+.conseils summary h2,
 .conseils summary h3 {
     padding: 0.5rem 1rem;
     margin: 1.5rem 0;
@@ -1512,9 +1514,9 @@ a.no-type::after {
 .conseils details[open] {
     outline: 0;
 }
+.conseils details > summary:focus h2,
 .conseils details > summary:focus h3 {
-    outline: 0;
-    border: 3px solid #9a9aff;
+    outline: 3px solid #9a9aff;
 }
 .conseils details[open] > summary svg {
     transform: rotate(540deg);
