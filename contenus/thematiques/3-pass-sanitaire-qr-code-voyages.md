@@ -148,7 +148,7 @@
 
     <div class="voir-aussi">
 
-    - [Calculer la date de mon rappel](https://monrappelvaccincovid.ameli.fr/) avec le simulateur de l'Assurance maladie
+    - [Calculer la date de mon rappel](https://monrappelvaccincovid.ameli.fr/) avec le simulateur de l’Assurance maladie
     - [Comment obtenir un certificat de rétablissement ?](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code)
     - [Tout savoir sur le rappel vaccinal contre la Covid-19](https://www.gouvernement.fr/tout-savoir-sur-le-rappel-vaccinal-contre-la-covid-19) (gouvernement.fr)
 
