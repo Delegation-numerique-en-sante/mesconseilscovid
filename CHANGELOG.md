@@ -1,5 +1,10 @@
 # Changelog
 
+## 2022-02-16
+
+* ajoute un lien vers « Mon rappel vaccin Covid »
+* annonce l’allègement du protocole cas contact scolaire au 28/2
+
 ## 2022-02-15
 
 * ajout de tableaux pour synthétiser les schémas vaccinaux
