@@ -434,12 +434,12 @@
     :level: 3
 
     * Si tu as **entre 12 ans et 2 mois et 16 ans**, une attestation de vaccination complète te donnera accès aux lieux qui nécessitent un **passe sanitaire**, mais tu peux aussi présenter :
-        * un **certificat de rétablissement**, c’est à dire un **test PCR ou antigénique positif** de plus de 11 jours et moins de 6 mois (*cette durée passera à 4 mois à partir du 15 février*) ;
+        * un **certificat de rétablissement**, c’est à dire un **test PCR ou antigénique positif** de plus de 11 jours et moins de 4 mois ;
         * une attestation de **contre-indication** à la vaccination ;
         * un **test PCR ou antigénique négatif** de moins de 24 h.
 
     * Si tu as **16 ans ou plus**, une attestation de vaccination complète te donnera accès aux lieux qui nécessitent un **passe vaccinal**, mais tu peux aussi présenter :
-        * un **certificat de rétablissement**, c’est à dire un **test PCR ou antigénique positif** de plus de 11 jours et moins de 6 mois (*cette durée passera à 4 mois à partir du 15 février*) ;
+        * un **certificat de rétablissement**, c’est à dire un **test PCR ou antigénique positif** de plus de 11 jours et moins de 4 mois ;
         * une attestation de **contre-indication** à la vaccination.
 
 
