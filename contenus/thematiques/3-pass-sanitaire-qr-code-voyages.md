@@ -64,9 +64,9 @@
     <div class="tableaux-vaccination-complete">
       {{ tableau_vaccination('vaccination_initiale') }}
     </div>
-  
+
     Pour conserver ce passe, si vous avez plus de **18 ans et 1 mois**, vous devrez   ensuite recevoir une **dose de rappel** (dite 3<sup>e</sup> dose) dans un délai de **3 à 4 mois**, sauf si vous êtes contaminé(e) par la Covid entre-temps.
-  
+
     <div class="tableaux-vaccination-complete">
       {{ tableau_vaccination('rappel_vaccinal') }}
     </div>
@@ -384,33 +384,37 @@
 .. question:: Comment obtenir un certificat de rétablissement avec QR code ?
     :level: 3
 
-#### Cas général :
+    #### Cas général
 
-    Le certificat de rétablissement n'est pas un nouveau document. Il s'agit du **résultat positif** de votre test de dépistage daté de **plus de 11 jours**. 
-    ***Obtenez le** en le **téléchargeant** sur le portail SI-DEP grâce à un lien qui vous a été envoyé par courriel ou SMS après votre test de dépistage.
-    
-    
+    Le certificat de rétablissement n’est pas un nouveau document. Il s’agit du **résultat positif** de votre test de dépistage daté de **plus de 11 jours**.
+
+    **Obtenez-le** en le **téléchargeant** sur le portail SI-DEP grâce à un lien qui vous a été envoyé par courriel ou SMS après votre test de dépistage.
+
+
     **Durée de validité du certificat de rétablissement**
-    
-    Sa **durée de validité** dépend de votre situation vaccinale et de la date à laquelle vous avez été testé positif. 
 
-    * Cas 1 : vous avez eu la Covid **avant ou pendant** votre **vaccination initiale** :
+    Sa **durée de validité** dépend de votre situation vaccinale et de la date à laquelle vous avez été testé positif.
+
+    * Cas 1 : vous avez eu la Covid **avant ou pendant** votre **vaccination initiale** :
+
         - validité : **4 mois**.
-    
-    * Cas 2 : vous avez eu la **Covid après votre vaccination initiale** : 
-     
-    a. dans les 3 mois suivants : 
-        - validité : **4 mois** ;
-        
-    **ou**
-    
-     b. à partir de 3 mois après :
-        - validitié : **illimitée** ;
-      
 
-#### Cas particulier : testé positif avant le 15 février
-    
-    Vous êtes dans la situation suivante : 
+    * Cas 2 : vous avez eu la **Covid après votre vaccination initiale** :
+
+        a. dans les 3 mois suivants :
+
+        - validité : **4 mois**
+
+        **ou**
+
+        b. à partir de 3 mois après :
+
+        - validité : **illimitée**
+
+
+    #### Cas particulier : testé positif avant le 15 février
+
+    Vous êtes dans la situation suivante :
     * contaminé(e) au moins 3 mois après votre vaccination initiale
 
     **et**
@@ -418,7 +422,8 @@
     * testé positif avant le 15 février.
 
     Vous pouvez **obtenir** un certificat de rétablissement valable pour **une durée illimitée**.
-    Pour cela, **combinez** votre **test positif** avec votre **certificat de vaccination** dans la rubrique Pass+ de l'application **TousAntiCovid**. 
+
+    Pour cela, **combinez** votre **test positif** avec votre **certificat de vaccination** dans la rubrique Pass+ de l’application **TousAntiCovid**.
     [Aidez-vous de cette vidéo explicative](https://tousanticovid.stonly.com/kb/guide/fr/pass-un-outil-pour-combiner-les-certificats-70S5BKyI4g/Steps/1148507).
 
 
