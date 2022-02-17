@@ -384,17 +384,42 @@
 .. question:: Comment obtenir un certificat de rétablissement avec QR code ?
     :level: 3
 
-    Votre **résultat positif** de test de dépistage (PCR ou antigénique) de **plus de 11 jours** constitue un **certificat de rétablissement**.
+#### Cas général :
 
-    Vous pouvez le **télécharger** sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp). Nous vous conseillons de le faire **immédiatement** pour le conserver aussi longtemps que nécessaire.
+    Le certificat de rétablissement n'est pas un nouveau document. Il s'agit du **résultat positif** de votre test de dépistage daté de **plus de 11 jours**. 
+    ***Obtenez le** en le **téléchargeant** sur le portail SI-DEP grâce à un lien qui vous a été envoyé par courriel ou SMS après votre test de dépistage.
+    
+    
+    **Durée de validité du certificat de rétablissement**
+    
+    Sa **durée de validité** dépend de votre situation vaccinale et de la date à laquelle vous avez été testé positif. 
 
-    - Si vous avez eu la Covid **plus de 3 mois** après votre vaccination initiale, cette infection tiendra lieu de **dose de rappel** pour le passe vaccinal **en France** :
+    * Cas 1 : vous avez eu la Covid **avant ou pendant** votre **vaccination initiale** :
+        - validité : **4 mois**.
+    
+    * Cas 2 : vous avez eu la **Covid après votre vaccination initiale** : 
+     
+    a. dans les 3 mois suivants : 
+        - validité : **4 mois** ;
+        
+    **ou**
+    
+     b. à partir de 3 mois après :
+        - validitié : **illimitée** ;
+      
 
-        + si votre test positif date d’**avant le 15 février 2022**, vous pourrez **combiner** ce certificat de rétablissement avec votre certificat de vaccination initiale dans l’application TousAntiCovid, pour obtenir un passe vaccinal **sans date d’expiration** ;
+#### Cas particulier : testé positif avant le 15 février
+    
+    Vous êtes dans la situation suivante : 
+    * contaminé(e) au moins 3 mois après votre vaccination initiale
 
-        * pour les tests positifs réalisés **après le 15 février 2022**, le professionnel de santé pourra la plupart du temps vous remettre directement un certificat de rétablissement **sans date d’expiration** si vous lui présentez votre certificat de vaccination initiale (sinon vous pourrez les combiner dans l’application TousAntiCovid).
+    **et**
 
-    - Dans les autres cas, ce certificat de rétablissement sera valable comme passe vaccinal pour une **durée de 4 mois** à partir de la date du test.
+    * testé positif avant le 15 février.
+
+    Vous pouvez **obtenir** un certificat de rétablissement valable pour **une durée illimitée**.
+    Pour cela, **combinez** votre **test positif** avec votre **certificat de vaccination** dans la rubrique Pass+ de l'application **TousAntiCovid**. 
+    [Aidez-vous de cette vidéo explicative](https://tousanticovid.stonly.com/kb/guide/fr/pass-un-outil-pour-combiner-les-certificats-70S5BKyI4g/Steps/1148507).
 
 
 .. question:: Je rencontre des difficultés techniques sur le portail SI-DEP, que faire ?
