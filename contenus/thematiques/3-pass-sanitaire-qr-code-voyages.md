@@ -396,19 +396,13 @@
     Sa **durée de validité** dépend de votre situation vaccinale et de la date à laquelle vous avez été testé positif.
 
     * Cas 1 : vous avez eu la Covid **avant ou pendant** votre **vaccination initiale** :
-
         - validité : **4 mois**.
 
-    * Cas 2 : vous avez eu la **Covid après votre vaccination initiale** :
-
+    * Cas 2 : vous avez eu la **Covid après votre vaccination initiale** :    
         a. dans les 3 mois suivants :
-
         - validité : **4 mois**
-
         **ou**
-
         b. à partir de 3 mois après :
-
         - validité : **illimitée**
 
 
@@ -416,9 +410,7 @@
 
     Vous êtes dans la situation suivante :
     * contaminé(e) au moins 3 mois après votre vaccination initiale
-
     **et**
-
     * testé positif avant le 15 février.
 
     Vous pouvez **obtenir** un certificat de rétablissement valable pour **une durée illimitée**.
