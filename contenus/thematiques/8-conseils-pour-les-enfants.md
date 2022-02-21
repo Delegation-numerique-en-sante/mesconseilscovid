@@ -273,8 +273,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Est-ce que mon enfant doit porter le masque ?
     :level: 3
 
-    Le port du masque est **obligatoire en primaire, au collège et au lycée** dans tous les départements.
-
+    Cela dépend de son âge.
+    Le port du masque est **obligatoire** en **intérieur** et en **extérieur** dans les **collèges et lycées**. En primaire, le masque est obligatoire en **intérieur**.
+    
     Pour les élèves des **écoles maternelles**, le port du masque est proscrit quel que soit le département.
 
     **Les parents doivent fournir des masques à leurs enfants**. Le masque doit assurer une filtration supérieure à 90 % (masque « grand public » ou masque chirurgical par exemple). Le ministère dote chaque école, collège et lycée en masques « grand public » afin qu’ils puissent être fournis aux élèves qui n’en disposeraient pas.
