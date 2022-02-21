@@ -159,19 +159,28 @@
     :level: 3
 
     Si vous avez eu la Covid après votre vacination initiale, vous pourrez utiliser le QR code de votre **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*) en tant que **passe vaccinal**.
-    
-    Sa durée de validité dépend du temps qui s'est écoulé entre votre vaccination et la contamination.
 
-    - Si cette infection a eu lieu **moins de 3 mois** après votre vaccination initiale :
+    Sa **durée de validité** dépend du temps qui s’est écoulé entre votre vaccination et la contamination.
 
-        * ce certificat de rétablissement sera valable **4 mois** comme passe vaccinal ou passe sanitaire ;
-        
-    - Si cette infection a eu lieu **plus de 3 mois** après votre vaccination initiale :
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Moment du test positif</th>
+            <th>Validité du certificat</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Moins de 3 mois</b> après ma vaccination initiale</td>
+            <td>4 mois</td>
+        </tr>
+        <tr>
+            <td><b>3 mois ou plus</b> après ma vaccination initiale</td>
+            <td>illimitée</td>
+        </tr>
+    </table>
 
-        * cette infection tiendra lieu de **dose de rappel** pour le passe vaccinal **en France** ;
-        * ce certificat de rétablissement sera valable comme passe vaccinal ou passe sanitaire pour **une durée illimitée**
-
-     [Consultez notre explication](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) pour savoir comment obtenir un certificat de rétablissement en fonction de votre situation. 
+    [Consultez notre explication](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) pour savoir comment obtenir votre certificat de rétablissement en fonction de votre situation.
 
     <div class="conseil conseil-jaune">
 
@@ -380,8 +389,8 @@
 
 .. question:: Comment obtenir un certificat de rétablissement avec QR code ?
     :level: 3
-    
-    Le certificat de rétablissement est le nom donné au **test de dépistage positif** (PCR ou antigénique) daté de **plus de 11 jours**. 
+
+    Le certificat de rétablissement est le nom donné au **test de dépistage positif** (PCR ou antigénique) daté de **plus de 11 jours**.
 
     #### Cas général
 
@@ -390,19 +399,41 @@
     **Durée de validité du certificat de rétablissement**
 
     La **durée de validité** du certificat de rétablissement dépend du moment où vous avez été testé positif.
-    *Vous avez été contaminé(e) **avant ou après la 1<sup>ere</sup> dose**  :
-        - validité : **4 mois**.
-    * Vous avez été contaminé(e) **après votre vaccination initiale** :    
-        * dans les 3 mois après :
-        - validité : **4 mois**
-        **ou**
-        * à partir de 3 mois après :
-        - validité : **illimitée**
 
-    #### Cas particulier : testé(e) positif avant le 15 février
-    
-    Si vous avez été testé(e) positif avant le 15 février **et** plus de 3 mois après votre vaccination initiale, vous pouvez obtenir un certificat de rétablissement **sans date d'expiration**. Pour cela, il faut combiner votre **test positif** avec votre **certificat de vaccination** dans la rubrique Pass+ de l’application **TousAntiCovid**. Vous pouvez vous [aider de cette vidéo explicative](https://tousanticovid.stonly.com/kb/guide/fr/pass-un-outil-pour-combiner-les-certificats-70S5BKyI4g/Steps/1148507).
-    
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Moment du test positif</th>
+            <th>Validité du certificat</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Avant</b> ma vaccination initiale<br><i>(avant ma 1<sup>re</sup> dose)</i></td>
+            <td rowspan="3">4 mois</td>
+        </tr>
+        <tr>
+            <td><b>Pendant</b> ma vaccination initiale<br><i>(entre ma 1<sup>re</sup> et ma 2<sup>e</sup>dose)</i></td>
+        </tr>
+        <tr>
+            <td><b>Moins de 3 mois</b> après ma vaccination initiale</td>
+        </tr>
+        <tr>
+            <td><b>3 mois ou plus</b> après ma vaccination initiale</td>
+            <td>illimitée</td>
+        </tr>
+    </table>
+
+
+    #### Cas particulier : test positif avant le 15 février
+
+    Si votre résultat de test positif date d’**avant le 15 février** et de **plus de 3 mois** après votre vaccination initiale, vous pouvez obtenir un certificat de rétablissement **sans date d’expiration** :
+
+    - pour cela, il faut **combiner** votre **test positif** avec votre **certificat de vaccination** dans la rubrique **Pass+** de l’application **TousAntiCovid** ;
+
+    - vous pouvez vous [aider de cette vidéo explicative](https://tousanticovid.stonly.com/kb/guide/fr/pass-un-outil-pour-combiner-les-certificats-70S5BKyI4g/Steps/1148507).
+
+
 .. question:: Je rencontre des difficultés techniques sur le portail SI-DEP, que faire ?
     :level: 3
 
