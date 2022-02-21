@@ -44,7 +44,7 @@ ua-parser==0.10.0
     # via user-agents
 user-agents==2.2.0
     # via mesconseilscovid-feedback (setup.py)
-websockets==8.1
+websockets==10.2
     # via roll
 
 # The following packages are considered to be unsafe in a requirements file:
