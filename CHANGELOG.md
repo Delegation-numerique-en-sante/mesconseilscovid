@@ -1,5 +1,10 @@
 # Changelog
 
+## 2022-02-21
+
+* fin du masque en extérieur dans les écoles
+* ajout de tableaux pour le certificat de rétablissement
+
 ## 2022-02-16
 
 * ajoute un lien vers « Mon rappel vaccin Covid »
