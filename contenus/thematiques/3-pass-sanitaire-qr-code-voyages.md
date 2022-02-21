@@ -159,22 +159,19 @@
     :level: 3
 
     Si vous avez eu la Covid après votre vacination initiale, vous pourrez utiliser le QR code de votre **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*) en tant que **passe vaccinal**.
+    
+    Sa durée de validité dépend du temps qui s'est écoulé entre votre vaccination et la contamination.
 
     - Si cette infection a eu lieu **moins de 3 mois** après votre vaccination initiale :
 
         * ce certificat de rétablissement sera valable **4 mois** comme passe vaccinal ou passe sanitaire ;
-        * vous pourrez recevoir une **dose de rappel** :
-
-            * dès **3 mois** après votre **infection** si vous êtes âgé de **18 ans ou plus**,
-            * dès **6 mois** après votre **infection** si vous êtes âgé de **12 à 17 ans**.
-
+        
     - Si cette infection a eu lieu **plus de 3 mois** après votre vaccination initiale :
 
-        * cette infection tiendra lieu de **dose de rappel** pour le passe vaccinal **en France** :
+        * cette infection tiendra lieu de **dose de rappel** pour le passe vaccinal **en France** ;
+        * ce certificat de rétablissement sera valable comme passe vaccinal ou passe sanitaire pour **une durée illimitée**
 
-            * si votre test positif date d’**avant le 15 février 2022**, vous pourrez le **combiner** avec votre certificat de vaccination initiale dans l’application TousAntiCovid, pour obtenir un passe vaccinal **sans date d’expiration** ;
-
-            * pour les tests positifs réalisés **après le 15 février 2022**, le professionnel de santé pourra la plupart du temps vous remettre directement un certificat de rétablissement **sans date d’expiration** si vous lui présentez votre certificat de vaccination initiale (sinon vous pourrez les combiner dans l’application TousAntiCovid).
+     [Consultez notre explication](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) pour savoir comment obtenir un certificat de rétablissement en fonction de votre situation. 
 
     <div class="conseil conseil-jaune">
 
