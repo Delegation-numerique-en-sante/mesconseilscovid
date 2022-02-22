@@ -196,7 +196,7 @@
 .. question:: Mon employeur peut-il exiger un certificat attestant de mon rétablissement de la Covid avant mon retour au travail ?
     :level: 3
 
-    **Non**. Si vous avez eu la Covid et que vous avez respecté la durée de votre isolement (10 jours au moins après le début de vos symptômes ou de votre test positif et que vous ne présentez plus de fièvre), alors vous pouvez retourner au travail sans présenter de certificat ou de nouveau test de dépistage.
+    Si vous avez eu la Covid et que vous avez respecté toute la durée de votre isolement (10 ou 7 jours), alors vous pouvez retourner au travail sans présenter de certificat ou de nouveau test de dépistage.
 
 
 .. renvoi:: conseils-pour-les-enfants.html#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid
