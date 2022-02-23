@@ -12,7 +12,7 @@ dataclasses-json==0.3.8
     # via pykeybasebot
 gunicorn==20.1.0
     # via mesconseilscovid-feedback (setup.py)
-httptools==0.2.0
+httptools==0.4.0
     # via roll
 marshmallow==3.14.1
     # via
