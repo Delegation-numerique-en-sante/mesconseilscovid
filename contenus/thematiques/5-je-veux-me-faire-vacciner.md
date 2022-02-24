@@ -342,10 +342,10 @@
 
     **Non**. Si vous êtes [cas contact](cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, vous devez d’abord **vous assurer que vous n’avez pas été contaminé(e)** en vous faisant tester.
 
-    * Si votre primo-vaccination date d’il y a moins de 4 mois : faites un test **PCR ou antigénique** dès que possible, puis **2 autotests** de contrôle 2 jours après et 4 jours après le premier test.
+    * Si votre primo-vaccination date d’il y a moins de 4 mois : soyez prudent(e) pendant 7 jours, et faites un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) 2 jours après avoir appris que vous étiez cas contact.
     * Si votre primo-vaccination date d’il y a plus de 4 mois : faites un test antigénique ou PCR **7 jours après** votre dernier contact avec la personne positive.
 
-    Si à l’issue de cette période de vigilance votre test est **négatif**, alors vous pourrez vous faire vacciner.
+    À l’issue de cette **période de vigilance**, et si votre test est **négatif**, alors vous pourrez vous faire vacciner.
 
     <div class="voir-aussi">
 
