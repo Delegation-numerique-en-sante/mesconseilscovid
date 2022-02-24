@@ -30,8 +30,6 @@
 
 .. injection:: je-veux-me-faire-vacciner.html#j-ai-des-difficultes-a-me-deplacer-puis-je-me-faire-vacciner-a-domicile
 
-.. injection:: je-veux-me-faire-vacciner.html#puis-je-me-faire-vacciner-contre-la-grippe-saisonniere-et-la-covid-en-meme-temps
-
 
 ## Prolonger mon passe vaccinal
 
