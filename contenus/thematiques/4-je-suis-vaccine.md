@@ -25,6 +25,7 @@
 
 
 .. question:: Est-ce que je dois m’isoler si je suis « cas contact »  et vacciné(e) ?
+    :expires: 28 février 2022
 
     Si vous êtes vacciné(e), en cas de contact à risque avec une personne positive à la Covid :
 
