@@ -339,6 +339,7 @@
 
 .. question:: Je suis cas contact, puis-je recevoir la dose de rappel ?
     :level: 3
+    :expires: 28 février 2022       
 
     **Non**. Si vous êtes [cas contact](cas-contact-a-risque.html) ou avez été alerté(e) d’un contact à risque par l’application TousAntiCovid, vous devez d’abord **vous assurer que vous n’avez pas été contaminé(e)** en vous faisant tester.
 
