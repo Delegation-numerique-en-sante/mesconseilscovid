@@ -45,7 +45,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * Pour les élèves de **moins de 12 ans** (quel que soit leur statut vaccinal), lorsqu’**un cas positif** est confirmé dans la classe :
 
       * les élèves pourront poursuivre les enseignements en **présentiel** ;
-      * ils seront invités à réaliser un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) **deux jours après** avoir été prévenus de ce contact à risque.
+      * ils seront invités à réaliser un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) **2 jours après** avoir été prévenus de ce contact à risque.
 
         *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à refaire un test.*
 
@@ -54,7 +54,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
       * s’ils sont **complètement vaccinés** :
         * les élèves pourront poursuivre les enseignements en **présentiel** ;
-        * ils seront invités à réaliser un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) **deux jours après** avoir été prévenus de ce contact à risque.
+        * ils seront invités à réaliser un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) **2 jours après** avoir été prévenus de ce contact à risque.
 
           *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à refaire un test.*
 
