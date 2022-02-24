@@ -196,9 +196,15 @@
 .. question:: Mon employeur peut-il exiger un certificat attestant de mon rétablissement de la Covid avant mon retour au travail ?
     :level: 3
 
-    **Non**. Votre employeur n'a pas le droit d'exiger de justificatif relatif à votre état de santé (sauf dans les cas prévus par la loi).
-    
-    Si vous avez **respecté** la durée de votre **isolement** (10 ou 7 jours, ou J+5 ou J+7 en cas de sortie anticipée suite à un test antigénique négatif), et que vous n'avez plus de fièvre depuis 48 H, alors vous pouvez retourner au travail.
+    **Non**. Votre employeur n’a pas le droit d’exiger de justificatif relatif à votre état de santé (sauf dans les cas prévus par la loi).
+
+    Vous pouvez retourner au travail si :
+
+    - vous avez **respecté** la durée de votre **isolement** :
+        - au moins **7 jours** si vous êtes complètement vacciné(e) (seulement 5 jours en cas de test antigénique négatif),
+        - au moins **10 jours** si vous n’êtes pas complètement vacciné(e) (seulement 7 jours en cas de test antigénique négatif),
+    - **et** que vous n’avez **plus de fièvre depuis 48 h**.
+
 
 .. renvoi:: conseils-pour-les-enfants.html#je-ne-peux-pas-teletravailler-puis-je-obtenir-un-arret-de-travail-pour-garder-mon-enfant-qui-ne-peut-pas-aller-a-l-ecole-a-cause-de-la-covid
     :level: 3
