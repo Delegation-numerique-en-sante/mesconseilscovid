@@ -139,34 +139,52 @@
 
     </div>
 
-    #### 1. Pas d’isolement mais un test de dépistage
+
+    #### 1. Pas d’isolement, mais sois prudent(e)
 
     Si tu es « **cas contact** » et que tu es **vacciné(e)**, alors tu n’auras pas besoin de t’isoler, et pourras continuer à aller au collège ou au lycée.
-    Tu devras faire **dès que possible** un **test** PCR ou antigénique (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)). Les tests de dépistage sont **gratuits** pour les mineurs.
 
-    * Si le test est **positif** :
-        - tu as attrapé la Covid. Ce n’est pas grave, mais tu es **contagieux(se)** et tu dois protéger les personnes qui t’entourent ;
-        - tu dois rester isolé **7 jours** à partir de la date du test ;
+    Comme tu êtes vacciné(e), on considère que tu as un **risque modéré**, mais reste quand même prudent(e) :
 
-            - si tu n’as plus de fièvre depuis au moins 48 h, tu pourras mettre fin à ton isolement après 5 jours seulement, si ton nouveau test de dépistage (antigénique ou PCR) est négatif  ;
+    - respecte les **mesures barrières** en particulier à la maison,
+    - **limite** les sorties et les activités sociales, et évite de passer du temps avec des personnes vulnérables ou fragiles (comme tes grands-parents ou des personnes âgées ou malades),
+    - porte un **masque** à l’extérieur et à l’intérieur, même là où ce n’est pas obligatoire.
 
-        - les personnes qui vivent avec toi sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
-            * s’**isoler** s’ils ne sont pas complètement vaccinés (les autres enfants ne doivent pas aller à l’école) ;
-            * faire un **test** antigénique ou PCR dès que possible.
 
-    * Si le résultat est **négatif**, tu pourras retourner en cours.
+    #### 2. Fais un test à J+2
 
-    #### 2. Deux autotests de contrôle
+    <div class="conseil">
 
-    * Si ton  1<sup>er</sup> test est **négatif** :
+    Fais un **test PCR**, un **test antigénique** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ou un **autotest**, **deux jours après** avoir appris que tu es cas contact.
 
-        * tu devras faire un **autotest de contrôle** 2 jours après ton dernier contact avec la personne positive (voir ci-dessous) ;
-        * puis, un 2<sup>e</sup> autotest de contrôle 2 jours après le premier.
+    Les tests sont toujours **gratuits** pour les mineurs et pour les cas contact.
 
-      Si les autotests sont négatifs, alors tu pourras continuer à aller au collège ou au lycée, mais :
+    </div>
 
-        * tu devras rester **prudent** et éviter de passer du temps avec des personnes vulnérables ou fragiles (comme tes grands-parents ou des personnes âgées ou malades) ;
-        * en cas de **fièvre** ou de **symptômes** fais un nouveau test sans attendre.
+    ##### Si le test est négatif 👇
+
+    - En cas d’apparition de **fièvre** ou de **symptômes** :
+        + fais un **test de dépistage gratuit** (test PCR ou antigénique) sans attendre, et reste isolé(e) en attendant le résultat,
+        + contacte un médecin ou le 15 si tu sens que tu as du mal à respirer.
+
+    ##### Si le test est positif 👇
+
+    - En cas d’autotest positif :
+        + fais un **test antigénique** (en pharmacie) ou **PCR** (en laboratoire) pour **confirmer** ce résultat positif ;
+        + reste isolé(e) en attendant ;
+
+    - En cas de test PCR ou antigénique positif, ou de confirmation de l’autotest :
+        + tu as attrapé la Covid :
+            - même si ce n’est généralement pas grave, tu es **contagieux(se)** et tu dois protéger les personnes qui t’entourent ;
+            - surveille l’apparition de **symptômes**, et contacte un médecin ou le 15 en cas de difficultés pour respirer ;
+
+        + tu dois rester isolé(e) **7 jours** à partir de la date du test ;
+            - si tu n’as plus de fièvre depuis au moins 48 h, tu pourras mettre fin à ton isolement après 5 jours seulement, si ton nouveau test de dépistage (antigénique ou PCR) est négatif ;
+
+        + les personnes qui vivent avec toi sont **cas contacts** (sauf s’ils ont déjà eu la Covid dans les 2 derniers mois) et devront :
+            * s’**isoler** puis faire un test après 7 jours si elles ne sont pas complètement vaccinées (les enfants non vaccinés de plus de 12 ans ne doivent pas aller à l’école) ;
+            * ou faire un **test** de dépistage 2 jours plus tard si elles sont complètement vaccinées.
+
 
     <div class="voir-aussi">
 

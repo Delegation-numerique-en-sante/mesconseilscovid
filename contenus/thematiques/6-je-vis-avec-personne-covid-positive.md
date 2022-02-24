@@ -85,44 +85,48 @@ Si vous ne pouvez pas **télétravailler**, l’Assurance Maladie pourra vous pr
 
 </summary>
 
+
 <p class="big">Voici ce que nous vous conseillons de faire :</p>
 
-#### 1. Faites un test de dépistage
+#### 1. Soyez prudent(e)
+
+Comme vous êtes complètement vacciné(e), on considère que vous avez un **risque modéré**, et qu’il n’est **pas nécessaire de vous isoler**, mais restez quand même prudent(e) :
+
+* respectez les **mesures barrières** au sein de votre foyer,
+* ayez recours au **télétravail** lorsque c’est possible,
+* **limitez** vos interactions sociales, et évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal),
+* portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas.
+
+#### 2. Faites un test à J+2
 
 <div class="conseil">
 
-Même si vous ne présentez pas de symptômes, faites un **test de dépistage** (test PCR ou antigénique) dès que possible. Le test est **toujours gratuit** quand vous êtes cas contact.
+Faites un **test PCR**, un **test antigénique** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ou un **autotest**, **deux jours après** avoir appris que vous étiez cas contact.
+
+Ces tests sont toujours **gratuits** quand vous êtes cas contact.
 
 </div>
 
-* Si le test est **positif** :
-    - isolez-vous pour une durée de **7 jours** ;
-    - vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test antigénique négatif et d’absence de fièvre ou de symptômes depuis au moins 48 h.
+##### Si le test est négatif 👇
 
-* Si le test est **négatif**, il n’est **pas nécessaire de vous isoler**, mais restez prudent(e) :
-    - respectez les **mesures barrières** au sein de votre foyer ;
-    - ayez recours au **télétravail** lorsque c’est possible ;
-    - **limitez** vos interactions sociales, et évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal) ;
-    - portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas.
+* en cas d’apparition de **fièvre** ou de **symptômes** :
+    - faites un **test de dépistage gratuit** (test PCR ou antigénique) dès que possible, et restez isolé(e) en attendant le résultat,
+    - contactez un médecin ou le 15 en cas de difficultés respiratoires.
+
+##### Si le test est positif 👇
+
+* En cas d’autotest positif :
+    - faites un **test antigénique** (en pharmacie) ou **PCR** (en laboratoire) pour **confirmer** ce résultat positif ;
+    - restez isolé(e) en attendant ;
+
+* En cas de test PCR ou antigénique positif, ou de confirmation de l’autotest :
+    - vous avez contracté la Covid, et vous êtes **contagieux** ;
+    - restez en **isolement au moins 7 jours** à partir de la date du test ;
+        + en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR) ;
+    - surveillez l’apparition de **symptômes**, et contactez un médecin ou le 15 en cas de difficultés respiratoires ;
+    - les **membres de votre foyer** seront à leur tour considérés comme **cas contact**.
 
 Si votre enfant de moins de 16 ans est positif à la Covid, vous pouvez bénéficier d’un **arrêt de travail**, même si vous êtes complètement vacciné(e). Rendez-vous sur [declare.ameli.fr](https://declare.ameli.fr/) pour en faire la demande.
-
-#### 2. Faites 2 autotests à J+2 et J+4
-
-<div class="conseil">
-
-Si votre premier test était **négatif**, vous devrez faire **2 autotests de contrôle** (délivrés **gratuitement** en pharmacie) au **2<sup>e</sup> jour** et au **4<sup>e</sup> jour** après la date du **premier test**.
-
-</div>
-
-* Si les résultats de ces deux autotests sont **négatifs** : vous pourrez retirer le masque dans les lieux où il n’est plus obligatoire et reprendre prudemment votre vie sociale.
-
-* Si le résultat d’un de ces autotests est **positif** :
-    - faites un **test antigénique** (en pharmacie) ou **PCR** (en laboratoire) pour **confirmer** ce résultat positif et restez isolé(e) en attendant ;
-
-    - si le résultat positif à l’autotest est **confirmé** :
-        + maintenez votre isolement pour une durée de **7 jours** ;
-        + vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test antigénique négatif et d’absence de fièvre ou de symptômes depuis au moins 48 h.
 
 <div class="conseil conseil-jaune">
 
