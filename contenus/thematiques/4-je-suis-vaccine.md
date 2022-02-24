@@ -34,7 +34,7 @@
         * **limitez** vos interactions sociales, et évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal) ;
         * portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas.
 
-    2. Faites un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) **deux jours après** avoir appris que vous étiez cas contact (voir la <a href="https://www.sante.fr/cf/centres-depistage-covid.html">carte des lieux de test</a>).
+    2. Faites un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) **2 jours après** avoir appris que vous étiez cas contact (voir la <a href="https://www.sante.fr/cf/centres-depistage-covid.html">carte des lieux de test</a>).
         * Si le test est **positif** : isolez-vous pour une durée de **7 jours** ; vous pourrez lever l’isolement **dès le 5<sup>e</sup> jour** en cas de test antigénique négatif et d’absence de fièvre ou de symptômes depuis au moins 48 h.
 
 
