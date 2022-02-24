@@ -471,19 +471,6 @@
     *Les infirmiers ne sont pas autorisés à vacciner les femmes enceintes ou les personnes présentant un trouble de l’hémostase.*
 
 
-.. question:: Puis-je me faire vacciner contre la grippe saisonnière et la Covid en même temps ?
-    :level: 3
-    :expires: 28 février 2022
-
-    **Oui**. Il est possible de réaliser le rappel du vaccin contre la Covid en même temps que le vaccin contre la grippe, mais il est aussi possible d’espacer les deux injections.
-
-    La campagne annuelle de vaccination contre la grippe a commencé le 22 octobre 2021 pour les publics prioritaires. Depuis le **23 novembre 2021**, elle est ouverte à **toute la population**. Si vous êtes éligible au rappel vaccinal contre la Covid, vous pourrez recevoir les deux vaccins en même temps.
-
-    En ville, c’est possible dans les **pharmacies** qui vaccinent avec les deux vaccins, et dans les cabinets médicaux ou infirmiers.
-
-    Vous pouvez aussi acheter votre vaccin anti-grippe en pharmacie et venir avec au **centre de vaccination** le jour de votre rendez-vous de rappel vaccinal contre la Covid.
-
-
 ## La vaccination initiale (schéma vaccinal à 1 ou 2 doses)
 
  <div class="voir-aussi">
