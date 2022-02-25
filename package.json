@@ -22,7 +22,7 @@
     "parcel-plugin-metaimage": "^1.2.4",
     "parcel-plugin-static-files-copy": "^2.6.0",
     "parcel-plugin-sw-asset-urls": "^0.1.2",
-    "playwright": "^1.19.1",
+    "playwright": "^1.19.2",
     "prettier": "^2.5.1",
     "st": "^3.0.0"
   },
