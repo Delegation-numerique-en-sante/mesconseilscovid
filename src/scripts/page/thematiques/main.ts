@@ -9,14 +9,13 @@ import { dynamiseLeRappelVaccinal } from './rappelVaccinal'
 
 export function pageThematique(app: App) {
     app.trackPageView(document.location.pathname)
-    const feedbackComponent: HTMLElement | null =
-        document.querySelector('.feedback-component')
-    if (!feedbackComponent) return
+    const feedbackComponent =
+        document.querySelector<HTMLElement>('.feedback-component')!
     bindFeedback(feedbackComponent, app)
     bindImpression(document as unknown as HTMLElement, app)
     const liensVersProfil = Array.from(
-        document.querySelectorAll('.cta [data-set-profil]')
-    ) as HTMLAnchorElement[]
+        document.querySelectorAll<HTMLAnchorElement>('.cta [data-set-profil]')
+    )
     liensVersProfil.forEach((lienVersProfil) => {
         boutonBasculeVersMonProfil(lienVersProfil, app)
     })
@@ -45,7 +44,8 @@ function ouvreDetailsSiBouton() {
     Array.from(boutons).forEach((bouton) => {
         bouton.addEventListener('click', (event) => {
             event.preventDefault()
-            const details = trouveDetailsParent(event.target)
+            const target = <HTMLAnchorElement>event.target
+            const details = trouveDetailsParent(target)
             if (details) {
                 details.setAttribute('open', '')
             }
@@ -56,8 +56,7 @@ function ouvreDetailsSiBouton() {
 function ouvreDetailsSiFragment() {
     const currentAnchor = document.location.hash ? document.location.hash.slice(1) : ''
     if (currentAnchor) {
-        const elem: HTMLElement | null = document.querySelector(`#${currentAnchor}`)
-        if (!elem) return
+        const elem = document.querySelector<HTMLElement>(`#${currentAnchor}`)!
         const details = trouveDetailsParent(elem)
         if (details) {
             details.setAttribute('open', '')
@@ -78,6 +77,7 @@ function trouveDetailsParent(elem: HTMLElement) {
         }
         elem = elem.parentElement as HTMLElement
     }
+    return
 }
 
 function getAnimationBehavior() {
@@ -103,20 +103,20 @@ function scrolleAuSummary() {
 }
 
 function initialiseLesFormulaires() {
-    const formulaires: HTMLFormElement[] = Array.from(
-        document.querySelectorAll('.formulaire')
+    const formulaires = Array.from(
+        document.querySelectorAll<HTMLFormElement>('.formulaire')
     )
     formulaires.forEach((form) => {
         const nom = form.dataset.nom as 'tests-de-depistage' | 'rappel'
         const init = initFunc(nom)
-        init(form.dataset.prefixe)
+        init(form.dataset.prefixe!)
     })
 }
 
 function initFunc(nom: 'tests-de-depistage' | 'rappel') {
     if (nom == 'tests-de-depistage') {
         return dynamiseLeChoixDuTest
-    } else if (nom == 'rappel') {
+    } else {
         return dynamiseLeRappelVaccinal
     }
 }
@@ -148,8 +148,8 @@ function boutonBasculeVersMonProfil(lienVersProfil: HTMLAnchorElement, app: App)
 
 function partagePageEnCours() {
     const partageLinks = Array.from(
-        document.querySelectorAll('.feedback-partager a')
-    ) as HTMLAnchorElement[]
+        document.querySelectorAll<HTMLAnchorElement>('.feedback-partager a')
+    )
     partageLinks.forEach((partageLink) => {
         let href = partageLink.href
         let url = new URL(document.URL)
@@ -164,20 +164,21 @@ function partagePageEnCours() {
 
 function feedbackPageEnCours(app: App) {
     const feedbackQuestionsForms = Array.from(
-        document.querySelectorAll('form.question-feedback')
-    ) as HTMLFormElement[]
+        document.querySelectorAll<HTMLFormElement>('form.question-feedback')
+    )
     feedbackQuestionsForms.forEach((feedbackQuestionForm) => {
         const parentNode = feedbackQuestionForm.parentNode as HTMLElement
         if (!parentNode) return
-        const title: HTMLElement | null = parentNode.querySelector('[itemprop="name"]')
-        if (!title) return
+        const title = parentNode.querySelector<HTMLElement>('[itemprop="name"]')!
         const questionInnerText = title.innerText
         const question = title.innerText.substring(
             0,
             title.innerText.length - ' #'.length
         )
         const submitButtons =
-            feedbackQuestionForm.querySelectorAll('input[type="submit"]')
+            feedbackQuestionForm.querySelectorAll<HTMLInputElement>(
+                'input[type="submit"]'
+            )
         // Manual event.submitter (unsupported by Safari & IE).
         Array.from(submitButtons).forEach((submitButton) => {
             submitButton.addEventListener('click', (event) => {
@@ -186,11 +187,12 @@ function feedbackPageEnCours(app: App) {
         })
         feedbackQuestionForm.addEventListener('submit', (event) => {
             event.preventDefault()
-            const choix = event.target.submitter.dataset.value
+            const target = <HTMLFormElement>event.target
+            const choix = target.submitter.dataset.value
             app.plausible('Avis par question', {
                 reponse: `${question} : ${choix}`,
             })
-            const reponse = event.target.submitter.value
+            const reponse = target.submitter.value
             opacityTransition(
                 feedbackQuestionForm,
                 500,
@@ -236,10 +238,11 @@ function demandeRemarques(
     parentNode.replaceChild(formulaire, feedbackQuestionForm)
     formulaire.addEventListener('submit', (event) => {
         event.preventDefault()
+        const target = <HTMLFormElement>event.target
         envoieLesRemarques({
             feedbackHost: document.body.dataset.statsUrl,
             kind: choix,
-            message: event.target.elements.message.value,
+            message: (<HTMLInputElement>target.elements.namedItem('message')!).value,
             page: document.location.pathname.slice(1),
             question: question,
             source: window.app.source,

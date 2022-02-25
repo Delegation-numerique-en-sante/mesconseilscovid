@@ -6,7 +6,8 @@ export function estPageThematique() {
 }
 
 export function navigueVersUneThematique(app: App, goal: string) {
-    const thematiquesLinks = document.querySelectorAll('.thematiques a')
+    const thematiquesLinks =
+        document.querySelectorAll<HTMLAnchorElement>('.thematiques a')
     Array.from(thematiquesLinks).forEach((thematiquesLink) => {
         const href = thematiquesLink.getAttribute('href')!
         thematiquesLink.addEventListener('click', (event) => {
