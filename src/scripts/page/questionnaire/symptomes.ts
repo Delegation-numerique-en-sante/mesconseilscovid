@@ -79,7 +79,8 @@ export default function symptomes(page: HTMLElement, app: App) {
     Array.from(form.querySelectorAll('[name="suivi_symptomes_date"]')).forEach(
         (radio) => {
             radio.addEventListener('change', (event) => {
-                radioButtonChanged(form, event.target)
+                const target = <HTMLInputElement>event.target
+                radioButtonChanged(form, target)
             })
         }
     )
@@ -317,6 +318,7 @@ function dateFromPicker(form: HTMLFormElement) {
     if (datePicker.value !== '') {
         return new Date(datePicker.value)
     }
+    return
 }
 
 function dateFromRadioButton(value: string) {
