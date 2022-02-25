@@ -135,7 +135,7 @@ export default class Updater {
         this.router.navigate(`nouvelleversiondisponible?origine=${pageName}`)
     }
 
-    setupRefreshButton(button: HTMLAnchorElement, pageName: string) {
+    setupRefreshButton(button: HTMLAnchorElement, pageName: string | null) {
         button.innerText = 'Mettre à jour'
         button.setAttribute('href', '#' + (pageName || CHEMIN_ACCUEIL))
         button.addEventListener('click', this.onClickRefreshButton.bind(this))
