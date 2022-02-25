@@ -2,7 +2,7 @@ import type Profil from './profil'
 
 export function showMeOrThem(element: HTMLElement, profil: Profil) {
     const func = profil.estMonProfil() ? showMe : showThem
-    const elements: HTMLElement[] | [] = Array.from(element.querySelectorAll('.me'))
+    const elements = Array.from(element.querySelectorAll<HTMLElement>('.me'))
     elements.forEach(func)
 }
 
@@ -27,12 +27,12 @@ export function showElement(element: HTMLElement | null) {
 }
 
 export function hideSelector(element: HTMLElement, selector: string) {
-    const elements: HTMLElement[] | [] = Array.from(element.querySelectorAll(selector))
+    const elements = Array.from(element.querySelectorAll<HTMLElement>(selector))
     elements.forEach(hideElement)
 }
 
 export function showSelector(element: HTMLElement, selector: string) {
-    const elements: HTMLElement[] | [] = Array.from(element.querySelectorAll(selector))
+    const elements = Array.from(element.querySelectorAll<HTMLElement>(selector))
     elements.forEach(showElement)
 }
 
@@ -45,7 +45,7 @@ export function showOnlyIf(element: HTMLElement, selector: string, condition: bo
 }
 
 export function displayElementById(element: HTMLElement, id: string) {
-    const block: HTMLElement | null = element.querySelector('#' + id)
+    const block = element.querySelector<HTMLElement>('#' + id)
     if (!block) return
     showElement(block)
 }
