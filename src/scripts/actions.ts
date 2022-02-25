@@ -46,13 +46,13 @@ export function bindCalendar(element: HTMLElement, profil: Profil) {
     })
 }
 
-export function bindImpression(element: HTMLElement, app: App) {
-    const printButton = element.querySelector('.js-impression')
+export function bindImpression(document: Document, app: App) {
+    const printButton = document.querySelector('.js-impression')
     printButton?.addEventListener('click', (event) => {
         event.preventDefault()
         app.plausible('Impression')
         try {
-            Array.from(element.querySelectorAll('details')).forEach((detail) => {
+            Array.from(document.querySelectorAll('details')).forEach((detail) => {
                 detail.setAttribute('open', '')
             })
             window.setTimeout(() => window.print(), 400) // attend la fin de l’animation

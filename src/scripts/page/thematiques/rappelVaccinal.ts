@@ -52,8 +52,8 @@ class FormulaireRappelVaccinal extends Formulaire {
         this.prolongationPass = undefined
     }
 
-    resetFormulaire(element: HTMLElement) {
-        uncheckAllRadio(element)
+    resetFormulaire(document: Document) {
+        uncheckAllRadio(document)
         this.age = undefined
         this.janssen = false
         this.prolongationPass = undefined

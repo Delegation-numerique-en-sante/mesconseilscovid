@@ -73,8 +73,8 @@ export class Formulaire {
         this.gereBoutonRefaire()
     }
 
-    resetFormulaire(element: HTMLElement) {
-        uncheckAllRadio(element)
+    resetFormulaire(document: Document) {
+        uncheckAllRadio(document)
     }
 
     gereBoutonRefaire() {
@@ -84,10 +84,9 @@ export class Formulaire {
         showElement(boutonRefaire)
         boutonRefaire.addEventListener('click', (event) => {
             event.preventDefault()
-            const element = document as never as HTMLElement
             hideElement(boutonRefaire)
-            hideSelector(element, '.statut')
-            this.resetFormulaire(element)
+            hideSelector(document, '.statut')
+            this.resetFormulaire(document)
             // On fait un reset des intitulés de boutons.
             const inputsWithInitial = Array.from(
                 document.querySelectorAll<HTMLInputElement>('[data-initial-value]')!

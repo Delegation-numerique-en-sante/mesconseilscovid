@@ -12,7 +12,7 @@ export function pageThematique(app: App) {
     const feedbackComponent =
         document.querySelector<HTMLElement>('.feedback-component')!
     bindFeedback(feedbackComponent, app)
-    bindImpression(document as unknown as HTMLElement, app)
+    bindImpression(document, app)
     const liensVersProfil = Array.from(
         document.querySelectorAll<HTMLAnchorElement>('.cta [data-set-profil]')
     )
