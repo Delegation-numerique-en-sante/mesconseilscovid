@@ -45,7 +45,7 @@ export default function contactarisque(page: HTMLElement, app: App) {
     form.addEventListener('submit', function (event) {
         event.preventDefault()
         const target = <HTMLFormElement>event.target
-        const profilItems = <(keyof ProfilDataContactARisque)[]>[
+        const profilItems = [
             'contact_a_risque',
             'contact_a_risque_meme_lieu_de_vie',
             'contact_a_risque_contact_direct',
@@ -56,8 +56,10 @@ export default function contactarisque(page: HTMLElement, app: App) {
             'contact_a_risque_stop_covid',
             'contact_a_risque_assurance_maladie',
             'contact_a_risque_autre',
-        ]
+            'contact_a_risque_variante',
+        ] as (keyof ProfilDataContactARisque)[]
         for (const item of profilItems) {
+            if (item === 'contact_a_risque_variante') return
             app.profil[item] = (<HTMLInputElement>(
                 target.elements.namedItem(item)
             ))!.checked

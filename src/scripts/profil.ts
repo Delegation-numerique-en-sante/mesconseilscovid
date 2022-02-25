@@ -32,7 +32,7 @@ export type ProfilDataContactARisque = {
     contact_a_risque_stop_covid?: boolean
     contact_a_risque_assurance_maladie?: boolean
     contact_a_risque_autre?: boolean
-    // contact_a_risque_variante?: 'aucune'
+    contact_a_risque_variante?: 'aucune'
 }
 
 export type ProfilDataAntecedent = {
