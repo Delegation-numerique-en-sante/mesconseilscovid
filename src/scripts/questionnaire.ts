@@ -1,19 +1,35 @@
 import type Profil from './profil'
 
 export function beforeConseils(profil: Profil, questionnaire: Questionnaire) {
-    if (!profil.isComplete()) return questionnaire.checkPathTo('conseils', profil)
+    if (!profil.isComplete()) {
+        return questionnaire.checkPathTo('conseils', profil)
+    } else {
+        return
+    }
 }
 
 export function beforeSuiviIntroduction(profil: Profil, questionnaire: Questionnaire) {
-    if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
+    if (!profil.suivi_active) {
+        return questionnaire.checkPathTo('conseils', profil)
+    } else {
+        return
+    }
 }
 
 export function beforeSuiviSymptomes(profil: Profil, questionnaire: Questionnaire) {
-    if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
+    if (!profil.suivi_active) {
+        return questionnaire.checkPathTo('conseils', profil)
+    } else {
+        return
+    }
 }
 
 export function beforeSuiviHistorique(profil: Profil, questionnaire: Questionnaire) {
-    if (!profil.suivi_active) return questionnaire.checkPathTo('conseils', profil)
+    if (!profil.suivi_active) {
+        return questionnaire.checkPathTo('conseils', profil)
+    } else {
+        return
+    }
 }
 
 // Représentation de la structure du questionnaire d’orientation.
