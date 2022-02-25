@@ -143,7 +143,7 @@ class FormulaireRappelVaccinal extends Formulaire {
                 `#${this.prefixe}_date_derniere_dose`
             )
             if (!datePicker) return
-            addDatePickerPolyfill(datePicker, null, updateButton)
+            addDatePickerPolyfill(datePicker, undefined, updateButton)
 
             form.addEventListener('submit', (event) => {
                 event.preventDefault()

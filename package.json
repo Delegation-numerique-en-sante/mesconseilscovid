@@ -11,6 +11,7 @@
     "@babel/preset-typescript": "^7.16.7",
     "@babel/register": "^7.17.0",
     "@mermaid-js/mermaid-cli": "^8.13.10",
+    "@types/pikaday": "^1.7.5",
     "chai": "^4.3.6",
     "eslint": "^8.8.0",
     "eslint-plugin-compat": "^4.0.2",

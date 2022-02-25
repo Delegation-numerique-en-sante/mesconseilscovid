@@ -25,8 +25,8 @@ function pad(number: number) {
 
 export function addDatePickerPolyfill(
     field: HTMLElement,
-    maxDate: Date | null,
-    onUpdate?: Function
+    maxDate: Date | undefined,
+    onUpdate?: (() => void)
 ) {
     if (!isDateSupported()) {
         new Pikaday({
