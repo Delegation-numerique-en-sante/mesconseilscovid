@@ -13,12 +13,11 @@ export class Formulaire {
     }
 
     demarre(etape = 'demarrage') {
-        const form: HTMLFormElement | null = document.querySelector(
+        const form = document.querySelector<HTMLFormElement>(
             `#${this.prefixe}-${etape}-form`
-        )
-        if (!form) return
+        )!
         this.appelleGestionnaire(form, etape)
-        form.dataset.ready = true
+        form.dataset.ready = 'true'
     }
 
     transitionneVersEtape(
@@ -27,17 +26,16 @@ export class Formulaire {
         precedent?: string
     ) {
         if (currentForm) {
-            currentForm.dataset.ready = false
+            currentForm.dataset.ready = 'false'
             hideElement(currentForm)
         }
-        const nextForm: HTMLFormElement | null = document.querySelector(
+        const nextForm = document.querySelector<HTMLFormElement>(
             `#${this.prefixe}-${etape}-form`
-        )
-        if (!nextForm) return
+        )!
         showElement(nextForm)
         this.gereBoutonRetour(nextForm, precedent)
         this.appelleGestionnaire(nextForm, etape)
-        nextForm.dataset.ready = true
+        nextForm.dataset.ready = 'true'
     }
 
     appelleGestionnaire(form: HTMLFormElement, etape: string) {
@@ -46,11 +44,12 @@ export class Formulaire {
     }
 
     gereBoutonRetour(form: HTMLFormElement, precedent: string | undefined) {
-        const boutonRetour = form.querySelector('.back-button')
+        const boutonRetour = form.querySelector<HTMLElement>('.back-button')
         if (!boutonRetour) return
         boutonRetour.addEventListener('click', (event) => {
             event.preventDefault()
-            const etapePrecedente = precedent || boutonRetour.dataset.precedent
+            if (!precedent) return
+            const etapePrecedente = precedent || boutonRetour.dataset.precedent!
             this.transitionneVersEtape(form, etapePrecedente)
         })
     }
@@ -60,12 +59,11 @@ export class Formulaire {
         nom: string,
         params?: { [key: string]: any }
     ) {
-        form.dataset.ready = false
+        form.dataset.ready = 'false'
         hideElement(form)
-        const reponse: HTMLElement | null = document.querySelector(
+        const reponse = document.querySelector<HTMLElement>(
             `#${this.prefixe}-${nom}-reponse`
-        )
-        if (!reponse) return
+        )!
         for (const name in params) {
             Array.from(reponse.querySelectorAll(`.${name}`)).forEach((elem) => {
                 elem.innerHTML = params[name]
@@ -75,26 +73,25 @@ export class Formulaire {
         this.gereBoutonRefaire()
     }
 
-    resetFormulaire(document: Document) {
-        uncheckAllRadio(document as never as HTMLElement)
+    resetFormulaire(element: HTMLElement) {
+        uncheckAllRadio(element)
     }
 
     gereBoutonRefaire() {
-        const boutonRefaire: HTMLElement | null = document.querySelector(
+        const boutonRefaire = document.querySelector<HTMLElement>(
             `#${this.prefixe}-refaire`
-        )
-        if (!boutonRefaire) return
+        )!
         showElement(boutonRefaire)
         boutonRefaire.addEventListener('click', (event) => {
             event.preventDefault()
+            const element = document as never as HTMLElement
             hideElement(boutonRefaire)
-            hideSelector(document as never as HTMLElement, '.statut')
-            this.resetFormulaire(document)
+            hideSelector(element, '.statut')
+            this.resetFormulaire(element)
             // On fait un reset des intitulés de boutons.
-            const inputsWithInitial: HTMLInputElement[] | null = Array.from(
-                document.querySelectorAll('[data-initial-value]')
+            const inputsWithInitial = Array.from(
+                document.querySelectorAll<HTMLInputElement>('[data-initial-value]')!
             )
-            if (!inputsWithInitial) return
             inputsWithInitial.forEach((inputWithInitial) => {
                 inputWithInitial.value = inputWithInitial.dataset.initialValue || ''
                 inputWithInitial.removeAttribute('data-initial-value')

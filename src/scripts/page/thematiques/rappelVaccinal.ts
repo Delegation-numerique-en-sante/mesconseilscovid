@@ -52,8 +52,8 @@ class FormulaireRappelVaccinal extends Formulaire {
         this.prolongationPass = undefined
     }
 
-    resetFormulaire(document: Document) {
-        uncheckAllRadio(document as never as HTMLElement)
+    resetFormulaire(element: HTMLElement) {
+        uncheckAllRadio(element)
         this.age = undefined
         this.janssen = false
         this.prolongationPass = undefined
@@ -67,9 +67,7 @@ class FormulaireRappelVaccinal extends Formulaire {
             })
         },
         'age': (form: HTMLFormElement) => {
-            const button: HTMLInputElement | null =
-                form.querySelector('input[type=submit]')
-            if (!button) return
+            const button = form.querySelector<HTMLInputElement>('input[type=submit]')!
             const requiredLabel = 'Cette information est requise'
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
@@ -86,9 +84,7 @@ class FormulaireRappelVaccinal extends Formulaire {
             })
         },
         'vaccination-initiale': (form: HTMLFormElement) => {
-            const button: HTMLInputElement | null =
-                form.querySelector('input[type=submit]')
-            if (!button) return
+            const button = form.querySelector<HTMLInputElement>('input[type=submit]')!
             const requiredLabel = 'Cette information est requise'
             toggleFormButtonOnRadioRequired(form, button.value, requiredLabel)
             form.addEventListener('submit', (event) => {
@@ -127,9 +123,7 @@ class FormulaireRappelVaccinal extends Formulaire {
             })
         },
         'date-derniere-dose': (form: HTMLFormElement) => {
-            const button: HTMLInputElement | null =
-                form.querySelector('input[type=submit]')
-            if (!button) return
+            const button = form.querySelector<HTMLInputElement>('input[type=submit]')!
             const continueLabel = button.value
             const requiredLabel = 'Cette information est requise'
 
@@ -139,10 +133,9 @@ class FormulaireRappelVaccinal extends Formulaire {
 
             updateButton()
 
-            const datePicker: HTMLElement | null = form.querySelector(
+            const datePicker = form.querySelector<HTMLElement>(
                 `#${this.prefixe}_date_derniere_dose`
-            )
-            if (!datePicker) return
+            )!
             addDatePickerPolyfill(datePicker, undefined, updateButton)
 
             form.addEventListener('submit', (event) => {
