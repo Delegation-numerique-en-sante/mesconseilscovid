@@ -9,13 +9,9 @@ import {
 } from '../../formutils'
 
 export default function depistage(page: HTMLElement, app: App) {
-    const form = page.querySelector('form')
-    if (!form) return
+    const form = page.querySelector('form')!
 
-    const datePicker: HTMLInputElement | null = form.querySelector(
-        '#depistage_start_date'
-    )
-    if (!datePicker) return
+    const datePicker = form.querySelector<HTMLInputElement>('#depistage_start_date')!
     // Autorise seulement une date passée.
     const now = new Date()
     datePicker.setAttribute('max', now.toISOString().substring(0, 10))
@@ -30,47 +26,45 @@ export default function depistage(page: HTMLElement, app: App) {
         }
 
         if (app.profil.depistage_type === 'antigenique') {
-            ;(
-                form.querySelector('#depistage_type_antigenique') as HTMLInputElement
-            ).checked = true
+            form.querySelector<HTMLInputElement>(
+                '#depistage_type_antigenique'
+            )!.checked = true
         } else if (app.profil.depistage_type === 'rt-pcr') {
-            ;(form.querySelector('#depistage_type_rtpcr') as HTMLInputElement).checked =
+            form.querySelector<HTMLInputElement>('#depistage_type_rtpcr')!.checked =
                 true
         } else if (app.profil.depistage_type === 'antigenique_autotest') {
-            ;(
-                form.querySelector(
-                    '#depistage_type_antigenique_autotest'
-                ) as HTMLInputElement
-            ).checked = true
+            form.querySelector<HTMLInputElement>(
+                '#depistage_type_antigenique_autotest'
+            )!.checked = true
         }
 
         if (app.profil.depistage_resultat === 'positif') {
-            ;(
-                form.querySelector('#depistage_resultat_positif') as HTMLInputElement
-            ).checked = true
+            form.querySelector<HTMLInputElement>(
+                '#depistage_resultat_positif'
+            )!.checked = true
         } else if (app.profil.depistage_resultat === 'negatif') {
-            ;(
-                form.querySelector('#depistage_resultat_negatif') as HTMLInputElement
-            ).checked = true
+            form.querySelector<HTMLInputElement>(
+                '#depistage_resultat_negatif'
+            )!.checked = true
         } else if (app.profil.depistage_resultat === 'en_attente') {
-            ;(
-                form.querySelector('#depistage_resultat_en_attente') as HTMLInputElement
-            ).checked = true
+            form.querySelector<HTMLInputElement>(
+                '#depistage_resultat_en_attente'
+            )!.checked = true
         }
     }
 
     // La première case active ou désactive les autres.
-    var primary = form.elements['depistage']
+    var primary = <HTMLInputElement>form.elements.namedItem('depistage')
     enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', function () {
         enableOrDisableSecondaryFields(form, primary)
     })
 
     // On ne propose "en attente" que pour les tests PCR.
-    const enAttente: HTMLInputElement | null = form.querySelector(
+    const enAttente = form.querySelector<HTMLInputElement>(
         '#depistage_resultat_en_attente'
     )
-    const enAttenteLabel: HTMLElement | null = form.querySelector(
+    const enAttenteLabel = form.querySelector<HTMLElement>(
         'label[for="depistage_resultat_en_attente"]'
     )
     if (!enAttente || !enAttenteLabel) return
@@ -92,8 +86,7 @@ export default function depistage(page: HTMLElement, app: App) {
     )
 
     // Le libellé du bouton change en fonction des choix.
-    const button: HTMLInputElement | null = form.querySelector('input[type=submit]')
-    if (!button) return
+    const button = form.querySelector<HTMLInputElement>('input[type=submit]')!
     const uncheckedLabel = app.profil.estMonProfil()
         ? 'Je n’ai pas passé de test'
         : 'Cette personne n’a pas passé de test'
@@ -111,11 +104,15 @@ export default function depistage(page: HTMLElement, app: App) {
     // Soumission du formulaire.
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        const form = event.target
-        app.profil.depistage = form.elements['depistage'].checked
+        const target = <HTMLFormElement>event.target
+        app.profil.depistage = (<HTMLInputElement>(
+            target.elements.namedItem('depistage')
+        ))!.checked
         if (app.profil.depistage) {
             app.profil.depistage_start_date = new Date(
-                form.elements['depistage_start_date'].value
+                (<HTMLInputElement>(
+                    target.elements.namedItem('depistage_start_date')
+                )).value
             )
             app.profil.depistage_type = getRadioValue(form, 'depistage_type')
             app.profil.depistage_resultat = getRadioValue(form, 'depistage_resultat')

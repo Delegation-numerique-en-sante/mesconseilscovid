@@ -1,5 +1,6 @@
 import type App from '../../app'
 import type Profil from '../../profil'
+import type { ProfilDataSymptomesActuels } from '../../profil'
 import { hideElement, showElement } from '../../affichage'
 import { addDatePickerPolyfill } from '../../datepicker'
 import {
@@ -13,28 +14,21 @@ import { joursAvant } from '../../utils'
 import AlgorithmeOrientation from '../../algorithme/orientation'
 
 export default function symptomes(page: HTMLElement, app: App) {
-    const form = page.querySelector('form')
-    if (!form) return
+    const form = page.querySelector('form')!
 
     app.premierDemarrageFormulaire()
 
     // Selon le choix radio ça affiche le choix des symptômes et/ou
     // la saisie de la date.
-    const statuts: HTMLInputElement[] = form.elements['symptomes_actuels_statuts']
-    const choixSymptomes: HTMLInputElement | null =
-        form.querySelector('#symptomes-choix')
-    if (!choixSymptomes) return
-    const debutSymptomes: HTMLInputElement | null =
-        form.querySelector('#debut-symptomes')
-    if (!debutSymptomes) return
-    const debutSymptomesAujourdhui: HTMLInputElement | null = form.querySelector(
-        '#debut_symptomes_aujourdhui'
+    const statuts = <RadioNodeList>form.elements.namedItem('symptomes_actuels_statuts')!
+    const choixSymptomes = <HTMLInputElement>form.querySelector('#symptomes-choix')!
+    const debutSymptomes = <HTMLInputElement>form.querySelector('#debut-symptomes')!
+    const debutSymptomesAujourdhui = <HTMLInputElement>(
+        form.querySelector('#debut_symptomes_aujourdhui')!
     )
-    if (!debutSymptomesAujourdhui) return
-    const debutSymptomesAujourdhuiLabel: HTMLInputElement | null = form.querySelector(
-        'label[for="debut_symptomes_aujourdhui"]'
+    const debutSymptomesAujourdhuiLabel = <HTMLInputElement>(
+        form.querySelector('label[for="debut_symptomes_aujourdhui"]')!
     )
-    if (!debutSymptomesAujourdhuiLabel) return
     Array.from(statuts).forEach((statut) =>
         statut.addEventListener('change', () => {
             switch (statut.id) {
@@ -69,14 +63,12 @@ export default function symptomes(page: HTMLElement, app: App) {
     toggleFormButtonOnSymptomesFieldsRequired(form, dateFromForm)
 
     // Les choix concernant la température sont mutuellement exclusifs.
-    let tempAnormale: HTMLInputElement | null = form.querySelector(
-        '#symptomes_actuels_temperature'
+    let tempAnormale = <HTMLInputElement>(
+        form.querySelector('#symptomes_actuels_temperature')!
     )
-    if (!tempAnormale) return
-    let tempInconnue: HTMLInputElement | null = form.querySelector(
-        '#symptomes_actuels_temperature_inconnue'
+    let tempInconnue = <HTMLInputElement>(
+        form.querySelector('#symptomes_actuels_temperature_inconnue')!
     )
-    if (!tempInconnue) return
     tempAnormale.addEventListener('change', () => {
         if (tempAnormale.checked) tempInconnue.checked = false
     })
@@ -86,9 +78,9 @@ export default function symptomes(page: HTMLElement, app: App) {
 
     Array.from(form.querySelectorAll('[name="suivi_symptomes_date"]')).forEach(
         (radio) => {
-            radio.addEventListener('change', (event) =>
+            radio.addEventListener('change', (event) => {
                 radioButtonChanged(form, event.target)
-            )
+            })
         }
     )
 
@@ -97,29 +89,33 @@ export default function symptomes(page: HTMLElement, app: App) {
     // Soumission du formulaire.
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        const symptomes_actuels = event.target.elements['symptomes_actuels'].checked
-        const symptomes_passes = event.target.elements['symptomes_passes'].checked
+        const target = <HTMLFormElement>event.target
+        const symptomes_actuels = (<HTMLInputElement>(
+            target.elements.namedItem('symptomes_actuels')
+        ))!.checked
+        const symptomes_passes = (<HTMLInputElement>(
+            target.elements.namedItem('symptomes_passes')
+        ))!.checked
 
         if (symptomes_actuels) {
-            app.profil.symptomes_actuels = symptomes_actuels
-            app.profil.symptomes_actuels_temperature =
-                event.target.elements['symptomes_actuels_temperature'].checked
-            app.profil.symptomes_actuels_temperature_inconnue =
-                event.target.elements['symptomes_actuels_temperature_inconnue'].checked
-            app.profil.symptomes_actuels_toux =
-                event.target.elements['symptomes_actuels_toux'].checked
-            app.profil.symptomes_actuels_odorat =
-                event.target.elements['symptomes_actuels_odorat'].checked
-            app.profil.symptomes_actuels_douleurs =
-                event.target.elements['symptomes_actuels_douleurs'].checked
-            app.profil.symptomes_actuels_diarrhee =
-                event.target.elements['symptomes_actuels_diarrhee'].checked
-            app.profil.symptomes_actuels_fatigue =
-                event.target.elements['symptomes_actuels_fatigue'].checked
-            app.profil.symptomes_actuels_alimentation =
-                event.target.elements['symptomes_actuels_alimentation'].checked
-            app.profil.symptomes_actuels_souffle =
-                event.target.elements['symptomes_actuels_souffle'].checked
+            const symptomesActuelsItems = <(keyof ProfilDataSymptomesActuels)[]>[
+                'symptomes_actuels',
+                'symptomes_actuels_temperature',
+                'symptomes_actuels_temperature_inconnue',
+                'symptomes_actuels_toux',
+                'symptomes_actuels_odorat',
+                'symptomes_actuels_douleurs',
+                'symptomes_actuels_diarrhee',
+                'symptomes_actuels_fatigue',
+                'symptomes_actuels_alimentation',
+                'symptomes_actuels_souffle',
+            ]
+            for (const item of symptomesActuelsItems) {
+                app.profil[item] = (<HTMLInputElement>(
+                    target.elements.namedItem(item)
+                ))!.checked
+            }
+
             app.profil.symptomes_passes = false
 
             // On complète manuellement le formulaire pour le rendre complet.
@@ -194,29 +190,27 @@ function prefillForm(form: HTMLFormElement, profil: Profil) {
 function prefillDateForm(form: HTMLFormElement, profil: Profil) {
     if (typeof profil.symptomes_start_date !== 'undefined') {
         if (profil.symptomes_start_date >= joursAvant(1)) {
-            ;(
-                form.querySelector('#debut_symptomes_aujourdhui') as HTMLInputElement
-            ).checked = true
+            form.querySelector<HTMLInputElement>(
+                '#debut_symptomes_aujourdhui'
+            )!.checked = true
         } else if (profil.symptomes_start_date >= joursAvant(2)) {
-            ;(form.querySelector('#debut_symptomes_hier') as HTMLInputElement).checked =
+            form.querySelector<HTMLInputElement>('#debut_symptomes_hier')!.checked =
                 true
         } else if (profil.symptomes_start_date >= joursAvant(3)) {
-            ;(
-                form.querySelector('#debut_symptomes_avant_hier') as HTMLInputElement
-            ).checked = true
+            form.querySelector<HTMLInputElement>(
+                '#debut_symptomes_avant_hier'
+            )!.checked = true
         } else if (profil.symptomes_start_date >= joursAvant(4)) {
-            ;(
-                form.querySelector(
-                    '#debut_symptomes_avant_avant_hier'
-                ) as HTMLInputElement
-            ).checked = true
+            form.querySelector<HTMLInputElement>(
+                '#debut_symptomes_avant_avant_hier'
+            )!.checked = true
         } else {
-            ;(
-                form.querySelector(
-                    '#debut_symptomes_encore_avant_hier'
-                ) as HTMLInputElement
-            ).checked = true
-            let datePicker = form.elements['suivi_symptomes_date_exacte']
+            form.querySelector<HTMLInputElement>(
+                '#debut_symptomes_encore_avant_hier'
+            )!.checked = true
+            let datePicker = <HTMLInputElement>(
+                form.elements.namedItem('suivi_symptomes_date_exacte')!
+            )
             datePicker.value = profil.symptomes_start_date
                 .toISOString()
                 .substring(0, 10)
@@ -232,20 +226,22 @@ function toggleFormButtonOnSymptomesFieldsRequired(
     const button = form.submitButton
     const continueLabel = 'Continuer'
     const requiredLabel = 'Veuillez remplir le formulaire au complet'
-    const statuts: HTMLInputElement[] | null = Array.from(
-        formElement.elements['symptomes_actuels_statuts']
+    const statuts = Array.from(
+        <RadioNodeList>formElement.elements.namedItem('symptomes_actuels_statuts')
     )
-    const datePicker: HTMLInputElement | null = formElement.querySelector(
+    const datePicker = formElement.querySelector<HTMLInputElement>(
         '#debut_symptomes_exacte'
-    )
-    if (!datePicker) return
+    )!
 
     function updateSubmitButtonLabelRequired() {
         const allFilled =
-            formElement.elements['symptomes_non'].checked ||
-            (formElement.elements['symptomes_passes'].checked &&
+            (<HTMLInputElement>formElement.elements.namedItem('symptomes_non'))!
+                .checked ||
+            ((<HTMLInputElement>formElement.elements.namedItem('symptomes_passes'))!
+                .checked &&
                 dateFromForm(formElement)) ||
-            (formElement.elements['symptomes_actuels'].checked &&
+            ((<HTMLInputElement>formElement.elements.namedItem('symptomes_actuels'))!
+                .checked &&
                 someChecked(form.checkboxes) &&
                 dateFromForm(formElement))
         button.disabled = !allFilled
@@ -275,9 +271,9 @@ function setupDatePicker(form: HTMLFormElement) {
     if (!datePicker) return
 
     datePicker.addEventListener('click', () => {
-        ;(
-            form.querySelector('#debut_symptomes_encore_avant_hier') as HTMLInputElement
-        ).checked = true
+        form.querySelector<HTMLInputElement>(
+            '#debut_symptomes_encore_avant_hier'
+        )!.checked = true
     })
 
     // Autorise seulement une date dans le passé.
@@ -315,7 +311,9 @@ function dateFromForm(form: HTMLFormElement) {
 }
 
 function dateFromPicker(form: HTMLFormElement) {
-    let datePicker = form.elements['suivi_symptomes_date_exacte']
+    let datePicker = <HTMLInputElement>(
+        form.elements.namedItem('suivi_symptomes_date_exacte')
+    )
     if (datePicker.value !== '') {
         return new Date(datePicker.value)
     }

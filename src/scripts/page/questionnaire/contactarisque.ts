@@ -1,4 +1,5 @@
 import type App from '../../app'
+import type { ProfilDataContactARisque } from '../../profil'
 import {
     Form,
     enableOrDisableSecondaryFields,
@@ -7,11 +8,9 @@ import {
 } from '../../formutils'
 
 export default function contactarisque(page: HTMLElement, app: App) {
-    const form = page.querySelector('form')
-    if (!form) return
+    const form = page.querySelector('form')!
 
-    const button: HTMLInputElement | null = form.querySelector('input[type=submit]')
-    if (!button) return
+    const button = form.querySelector<HTMLInputElement>('input[type=submit]')!
 
     // Pré-remplit le formulaire
     preloadCheckboxForm(form, 'contact_a_risque', app.profil)
@@ -26,7 +25,7 @@ export default function contactarisque(page: HTMLElement, app: App) {
     preloadCheckboxForm(form, 'contact_a_risque_stop_covid', app.profil)
     preloadCheckboxForm(form, 'contact_a_risque_assurance_maladie', app.profil)
 
-    const primary = form.elements['contact_a_risque']
+    const primary = <HTMLInputElement>form.elements.namedItem('contact_a_risque')
     enableOrDisableSecondaryFields(form, primary)
 
     primary.addEventListener('click', function () {
@@ -42,27 +41,27 @@ export default function contactarisque(page: HTMLElement, app: App) {
         uncheckedLabel,
         'Veuillez remplir le formulaire au complet'
     )
+
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        app.profil.contact_a_risque = event.target.elements['contact_a_risque'].checked
-        app.profil.contact_a_risque_meme_lieu_de_vie =
-            event.target.elements['contact_a_risque_meme_lieu_de_vie'].checked
-        app.profil.contact_a_risque_contact_direct =
-            event.target.elements['contact_a_risque_contact_direct'].checked
-        app.profil.contact_a_risque_actes =
-            event.target.elements['contact_a_risque_actes'].checked
-        app.profil.contact_a_risque_espace_confine =
-            event.target.elements['contact_a_risque_espace_confine'].checked
-        app.profil.contact_a_risque_tousse_eternue =
-            event.target.elements['contact_a_risque_tousse_eternue'].checked
-        app.profil.contact_a_risque_meme_classe =
-            event.target.elements['contact_a_risque_meme_classe'].checked
-        app.profil.contact_a_risque_stop_covid =
-            event.target.elements['contact_a_risque_stop_covid'].checked
-        app.profil.contact_a_risque_assurance_maladie =
-            event.target.elements['contact_a_risque_assurance_maladie'].checked
-        app.profil.contact_a_risque_autre =
-            event.target.elements['contact_a_risque_autre'].checked
+        const target = <HTMLFormElement>event.target
+        const profilItems = <(keyof ProfilDataContactARisque)[]>[
+            'contact_a_risque',
+            'contact_a_risque_meme_lieu_de_vie',
+            'contact_a_risque_contact_direct',
+            'contact_a_risque_actes',
+            'contact_a_risque_espace_confine',
+            'contact_a_risque_tousse_eternue',
+            'contact_a_risque_meme_classe',
+            'contact_a_risque_stop_covid',
+            'contact_a_risque_assurance_maladie',
+            'contact_a_risque_autre',
+        ]
+        for (const item of profilItems) {
+            app.profil[item] = (<HTMLInputElement>(
+                target.elements.namedItem(item)
+            ))!.checked
+        }
         app.enregistrerProfilActuel().then(() => {
             app.goToNextPage('contactarisque')
         })
@@ -80,13 +79,13 @@ function toggleFormButtonOnCheckAndRadiosRequired(
     const primaryCheckbox = form.primaryCheckbox
     const secondaryCheckboxes = form.secondaryCheckboxes
     // Warning: removes otherCheckbox from secondaryCheckboxes:
-    const otherCheckbox = secondaryCheckboxes.pop() as HTMLInputElement
-    const TACCheckbox = form.qS(
-        'input[type=checkbox]#contact_a_risque_stop_covid'
-    ) as HTMLInputElement
-    const AMCheckbox = form.qS(
-        'input[type=checkbox]#contact_a_risque_assurance_maladie'
-    ) as HTMLInputElement
+    const otherCheckbox = <HTMLInputElement>secondaryCheckboxes.pop()
+    const TACCheckbox = <HTMLInputElement>(
+        form.qS('input[type=checkbox]#contact_a_risque_stop_covid')
+    )
+    const AMCheckbox = <HTMLInputElement>(
+        form.qS('input[type=checkbox]#contact_a_risque_assurance_maladie')
+    )
 
     function updateSubmitButtonLabelRequired() {
         const hasSecondaryChecks =

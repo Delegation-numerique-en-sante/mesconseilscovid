@@ -21,84 +21,95 @@ export type Etat = {
     confusion?: string
 }
 
-export type ProfilData = {
-    [key: string]: any
-    _suivi_start_date?: string | undefined
-    _symptomes_start_date?: string | undefined
-    _depistage_start_date?: string | undefined
-    _covid_passee_date?: string | undefined
-    _deconfinement_date?: string | undefined
-    _questionnaire_start_date?: string | undefined
-    _questionnaire_completion_date?: string | undefined
-    suivi?: Etat[] | undefined
-
-    departement?: string | undefined
-
-    activite_pro?: boolean | undefined
-    activite_pro_sante?: boolean | undefined
-
-    foyer_autres_personnes?: boolean | undefined
-    foyer_enfants?: boolean | undefined
-
-    age?: number | undefined
-    grossesse_3e_trimestre?: boolean | undefined
-    poids?: number | undefined
-    taille?: number | undefined
-
-    antecedent_cardio?: boolean | undefined
-    antecedent_diabete?: boolean | undefined
-    antecedent_respi?: boolean | undefined
-    antecedent_dialyse?: boolean | undefined
-    antecedent_greffe?: boolean | undefined
-    antecedent_cancer?: boolean | undefined
-    antecedent_immunodep?: boolean | undefined
-    antecedent_cirrhose?: boolean | undefined
-    antecedent_drepano?: boolean | undefined
-    antecedent_trisomie?: boolean | undefined
-    antecedent_chronique_autre?: boolean | undefined
-
-    symptomes_actuels?: boolean | undefined
-    symptomes_actuels_temperature?: boolean | undefined
-    symptomes_actuels_temperature_inconnue?: boolean | undefined
-    symptomes_actuels_toux?: boolean | undefined
-    symptomes_actuels_odorat?: boolean | undefined
-    symptomes_actuels_douleurs?: boolean | undefined
-    symptomes_actuels_diarrhee?: boolean | undefined
-    symptomes_actuels_fatigue?: boolean | undefined
-    symptomes_actuels_alimentation?: boolean | undefined
-    symptomes_actuels_souffle?: boolean | undefined
-    symptomes_actuels_autre?: boolean | undefined
-
-    symptomes_passes?: boolean | undefined
-
-    contact_a_risque?: boolean | undefined
-    contact_a_risque_meme_lieu_de_vie?: boolean | undefined
-    contact_a_risque_contact_direct?: boolean | undefined
-    contact_a_risque_actes?: boolean | undefined
-    contact_a_risque_espace_confine?: boolean | undefined
-    contact_a_risque_tousse_eternue?: boolean | undefined
-    contact_a_risque_meme_classe?: boolean | undefined
-    contact_a_risque_stop_covid?: boolean | undefined
-    contact_a_risque_assurance_maladie?: boolean | undefined
-    contact_a_risque_autre?: boolean | undefined
-    contact_a_risque_variante?: 'aucune' | undefined
-
-    depistage?: boolean | undefined
-    depistage_type?: string | undefined
-    depistage_resultat?: 'positif' | 'negatif' | 'en_attente' | undefined
-    depistage_variante?: string | undefined
-
-    vaccins?: boolean | string | undefined
-
-    covid_passee?: boolean | undefined
-
-    suivi_active?: boolean | undefined
-
-    // Legacy: to be removed once migrated.
-    questionnaire_started?: boolean | undefined
-    questionnaire_completed?: boolean | undefined
-    // End of Legacy
+export type ProfilDataContactARisque = {
+    contact_a_risque?: boolean
+    contact_a_risque_meme_lieu_de_vie?: boolean
+    contact_a_risque_contact_direct?: boolean
+    contact_a_risque_actes?: boolean
+    contact_a_risque_espace_confine?: boolean
+    contact_a_risque_tousse_eternue?: boolean
+    contact_a_risque_meme_classe?: boolean
+    contact_a_risque_stop_covid?: boolean
+    contact_a_risque_assurance_maladie?: boolean
+    contact_a_risque_autre?: boolean
+    // contact_a_risque_variante?: 'aucune'
 }
+
+export type ProfilDataAntecedent = {
+    antecedent_cardio?: boolean
+    antecedent_diabete?: boolean
+    antecedent_respi?: boolean
+    antecedent_dialyse?: boolean
+    antecedent_greffe?: boolean
+    antecedent_cancer?: boolean
+    antecedent_immunodep?: boolean
+    antecedent_cirrhose?: boolean
+    antecedent_drepano?: boolean
+    antecedent_trisomie?: boolean
+    antecedent_chronique_autre?: boolean
+}
+
+export type ProfilDataSituation = {
+    activite_pro?: boolean
+    activite_pro_sante?: boolean
+
+    foyer_autres_personnes?: boolean
+    foyer_enfants?: boolean
+}
+
+export type ProfilDataSymptomesActuels = {
+    symptomes_actuels?: boolean
+    symptomes_actuels_temperature?: boolean
+    symptomes_actuels_temperature_inconnue?: boolean
+    symptomes_actuels_toux?: boolean
+    symptomes_actuels_odorat?: boolean
+    symptomes_actuels_douleurs?: boolean
+    symptomes_actuels_diarrhee?: boolean
+    symptomes_actuels_fatigue?: boolean
+    symptomes_actuels_alimentation?: boolean
+    symptomes_actuels_souffle?: boolean
+    symptomes_actuels_autre?: boolean
+}
+
+export type ProfilData = ProfilDataContactARisque &
+    ProfilDataAntecedent &
+    ProfilDataSituation &
+    ProfilDataSymptomesActuels & {
+        // [key: string]: any
+        _suivi_start_date?: string
+        _symptomes_start_date?: string
+        _depistage_start_date?: string
+        _covid_passee_date?: string
+        _deconfinement_date?: string
+        _questionnaire_start_date?: string
+        _questionnaire_completion_date?: string
+        suivi?: Etat[]
+
+        departement?: string
+
+        age?: number
+        grossesse_3e_trimestre?: boolean
+        poids?: number
+        taille?: number
+
+        symptomes_passes?: boolean
+
+        depistage?: boolean
+        depistage_type?: string
+        depistage_resultat?: 'positif' | 'negatif' | 'en_attente'
+        depistage_variante?: string
+
+        vaccins?: boolean | string
+
+        covid_passee?: boolean
+
+        suivi_active?: boolean
+
+        // Legacy: to be removed once migrated.
+        questionnaire_started?: boolean
+        questionnaire_completed?: boolean
+        // End of Legacy
+    }
 
 export default class Profil {
     nom: string
@@ -889,6 +900,7 @@ export default class Profil {
     }
 
     dureeIsolement() {
+        if (typeof this.age === 'undefined') return 10
         return this.isCompletementVaccine() || this.age < 12 ? 7 : 10
     }
 

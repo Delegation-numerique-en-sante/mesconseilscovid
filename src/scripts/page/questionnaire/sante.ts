@@ -6,13 +6,12 @@ import {
     toggleFormButtonOnTextFieldsRequired,
 } from '../../formutils'
 import AlgorithmeOrientation from '../../algorithme/orientation'
+import type { ProfilDataAntecedent } from '../../profil'
 
 export default function sante(page: HTMLElement, app: App) {
-    const form = page.querySelector('form')
-    if (!form) return
+    const form = page.querySelector('form')!
+    const button = form.querySelector<HTMLInputElement>('input[type=submit]')!
 
-    const button: HTMLInputElement | null = form.querySelector('input[type=submit]')
-    if (!button) return
     preloadForm(form, 'age', app.profil)
     preloadForm(form, 'taille', app.profil)
     preloadForm(form, 'poids', app.profil)
@@ -30,7 +29,7 @@ export default function sante(page: HTMLElement, app: App) {
     preloadCheckboxForm(form, 'antecedent_drepano', app.profil)
     preloadCheckboxForm(form, 'antecedent_trisomie', app.profil)
     preloadCheckboxForm(form, 'antecedent_chronique_autre', app.profil)
-    const primary = form.elements['antecedent_chronique']
+    const primary = <HTMLInputElement>form.elements.namedItem('antecedent_chronique')
     enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', () =>
         enableOrDisableSecondaryFields(form, primary)
@@ -39,32 +38,35 @@ export default function sante(page: HTMLElement, app: App) {
     toggleFormButtonOnTextFieldsRequired(form, button.value, requiredLabel)
     form.addEventListener('submit', function (event) {
         event.preventDefault()
-        app.profil.age = parseEntier(event.target.elements['age'])
-        app.profil.poids = parseEntier(event.target.elements['poids'])
-        app.profil.taille = parseTaille(event.target.elements['taille'])
-        app.profil.grossesse_3e_trimestre =
-            event.target.elements['grossesse_3e_trimestre'].checked
-        app.profil.antecedent_cardio =
-            event.target.elements['antecedent_cardio'].checked
-        app.profil.antecedent_diabete =
-            event.target.elements['antecedent_diabete'].checked
-        app.profil.antecedent_respi = event.target.elements['antecedent_respi'].checked
-        app.profil.antecedent_dialyse =
-            event.target.elements['antecedent_dialyse'].checked
-        app.profil.antecedent_greffe =
-            event.target.elements['antecedent_greffe'].checked
-        app.profil.antecedent_cancer =
-            event.target.elements['antecedent_cancer'].checked
-        app.profil.antecedent_immunodep =
-            event.target.elements['antecedent_immunodep'].checked
-        app.profil.antecedent_cirrhose =
-            event.target.elements['antecedent_cirrhose'].checked
-        app.profil.antecedent_drepano =
-            event.target.elements['antecedent_drepano'].checked
-        app.profil.antecedent_trisomie =
-            event.target.elements['antecedent_trisomie'].checked
-        app.profil.antecedent_chronique_autre =
-            event.target.elements['antecedent_chronique_autre'].checked
+        const target = <HTMLFormElement>event.target
+        app.profil.age = parseEntier(<HTMLInputElement>target.elements.namedItem('age'))
+        app.profil.poids = parseEntier(
+            <HTMLInputElement>target.elements.namedItem('poids')
+        )
+        app.profil.taille = parseTaille(
+            <HTMLInputElement>target.elements.namedItem('taille')
+        )
+        app.profil.grossesse_3e_trimestre = (<HTMLInputElement>(
+            target.elements.namedItem('grossesse_3e_trimestre')
+        )).checked
+        const antecedentItems = <(keyof ProfilDataAntecedent)[]>[
+            'antecedent_cardio',
+            'antecedent_diabete',
+            'antecedent_respi',
+            'antecedent_dialyse',
+            'antecedent_greffe',
+            'antecedent_cancer',
+            'antecedent_immunodep',
+            'antecedent_cirrhose',
+            'antecedent_drepano',
+            'antecedent_trisomie',
+            'antecedent_chronique_autre',
+        ]
+        for (const item of antecedentItems) {
+            app.profil[item] = (<HTMLInputElement>(
+                target.elements.namedItem(item)
+            ))!.checked
+        }
         app.enregistrerProfilActuel().then(() => {
             app.goToNextPage('sante')
         })

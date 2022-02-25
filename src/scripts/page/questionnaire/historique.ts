@@ -14,8 +14,7 @@ dayjs.locale('fr')
 dayjs.extend(localeData)
 
 export default function historique(page: HTMLElement, app: App) {
-    const form = page.querySelector('form')
-    if (!form) return
+    const form = page.querySelector('form')!
 
     const now = dayjs()
 
@@ -24,16 +23,15 @@ export default function historique(page: HTMLElement, app: App) {
     if (typeof app.profil.covid_passee_date !== 'undefined') {
         const covidPasseeDate = dayjs(app.profil.covid_passee_date)
         const monthsAgo = now.diff(covidPasseeDate, 'month')
-        const toSelect: HTMLInputElement | null = form.querySelector(
+        const toSelect = form.querySelector<HTMLInputElement>(
             `input#covid_passee_date_${Math.min(6, monthsAgo)}_mois`
-        )
-        if (!toSelect) return
+        )!
         toSelect.checked = true
         toSelect.dispatchEvent(createEvent('change'))
     }
 
     // La première case active ou désactive les autres.
-    const primary = form.elements['covid_passee']
+    const primary = <HTMLInputElement>form.elements.namedItem('covid_passee')
     enableOrDisableSecondaryFields(form, primary)
     primary.addEventListener('click', () => {
         enableOrDisableSecondaryFields(form, primary)
@@ -55,8 +53,7 @@ export default function historique(page: HTMLElement, app: App) {
     })
 
     // Le libellé du bouton change en fonction des choix.
-    const button: HTMLInputElement | null = form.querySelector('input[type=submit]')
-    if (!button) return
+    const button = form.querySelector<HTMLInputElement>('input[type=submit]')!
     const uncheckedLabel = app.profil.estMonProfil()
         ? 'Je n’ai jamais eu la Covid'
         : 'Cette personne n’a jamais eu la Covid'
@@ -71,10 +68,15 @@ export default function historique(page: HTMLElement, app: App) {
     // Soumission du formulaire.
     form.addEventListener('submit', (event) => {
         event.preventDefault()
-        const form = event.target
-        app.profil.covid_passee = form.elements['covid_passee'].checked
+        const target = <HTMLFormElement>event.target
+        app.profil.covid_passee = (<HTMLInputElement>(
+            target.elements.namedItem('covid_passee')
+        ))!.checked
         if (app.profil.covid_passee) {
-            const nbMonths = Number(form.elements['covid_passee_date'].value)
+            const covidPasseeDate = (<HTMLInputElement>(
+                target.elements.namedItem('covid_passee_date')
+            ))!
+            const nbMonths = Number(covidPasseeDate.value)
             app.profil.covid_passee_date = now.subtract(nbMonths, 'month')
         } else {
             app.profil.covid_passee_date = undefined
