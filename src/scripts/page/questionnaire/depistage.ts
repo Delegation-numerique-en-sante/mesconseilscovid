@@ -63,11 +63,10 @@ export default function depistage(page: HTMLElement, app: App) {
     // On ne propose "en attente" que pour les tests PCR.
     const enAttente = form.querySelector<HTMLInputElement>(
         '#depistage_resultat_en_attente'
-    )
+    )!
     const enAttenteLabel = form.querySelector<HTMLElement>(
         'label[for="depistage_resultat_en_attente"]'
-    )
-    if (!enAttente || !enAttenteLabel) return
+    )!
     function afficherOuCacherEnAttente() {
         if (getRadioValue(form, 'depistage_type') == 'rt-pcr') {
             showElement(enAttente)
