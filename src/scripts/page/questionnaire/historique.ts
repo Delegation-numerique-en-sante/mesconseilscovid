@@ -77,7 +77,7 @@ export default function historique(page: HTMLElement, app: App) {
                 target.elements.namedItem('covid_passee_date')
             ))!
             const nbMonths = Number(covidPasseeDate.value)
-            app.profil.covid_passee_date = now.subtract(nbMonths, 'month')
+            app.profil.covid_passee_date = now.subtract(nbMonths, 'month').toDate()
         } else {
             app.profil.covid_passee_date = undefined
         }
