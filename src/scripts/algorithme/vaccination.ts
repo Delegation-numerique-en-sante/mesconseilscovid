@@ -11,11 +11,11 @@ export default class AlgorithmeVaccination {
     }
 
     isSup12() {
-        return this.profil.age >= 12
+        return this.profil.age! >= 12
     }
 
     isSup18() {
-        return this.profil.age >= 18
+        return this.profil.age! >= 18
     }
 
     isARisque() {

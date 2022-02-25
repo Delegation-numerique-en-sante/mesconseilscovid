@@ -94,7 +94,7 @@ export default class AlgorithmeOrientation {
             symptomes = 'symptomes_passes'
         } else if (this.profil.hasContactARisqueReconnus()) {
             const completementVaccine = this.profil.isCompletementVaccine()
-            const moinsDe12Ans = this.profil.age < 12
+            const moinsDe12Ans = this.profil.age! < 12
             if (this.profil.contact_a_risque_meme_lieu_de_vie) {
                 if (completementVaccine || moinsDe12Ans) {
                     symptomes = 'contact_a_risque_meme_lieu_de_vie_vaccine'
@@ -123,20 +123,20 @@ export default class AlgorithmeOrientation {
     }
 
     get sup65() {
-        return this.profil.age >= 65
+        return this.profil.age! >= 65
     }
 
     get sup50() {
-        return this.profil.age >= 50
+        return this.profil.age! >= 50
     }
 
     get sup15() {
-        return this.profil.age >= 15
+        return this.profil.age! >= 15
     }
 
     get imc() {
-        const taille_en_metres = this.profil.taille / 100
-        return this.profil.poids / (taille_en_metres * taille_en_metres)
+        const taille_en_metres = this.profil.taille! / 100
+        return this.profil.poids! / (taille_en_metres * taille_en_metres)
     }
 
     // Facteurs pronostiques de forme grave liés au terrain (fragilité).
