@@ -5,17 +5,16 @@ import SuiviView from '../suivi'
 export default function suiviintroduction(page: HTMLElement, app: App) {
     const element = page
     const suivi = new SuiviView(app.profil, app.suiviImages)
-    const container = element.querySelector('#profils-cards-suivi')
-    if (!container) return
+    const container = element.querySelector<HTMLElement>('#profils-cards-suivi')!
     const card = container.insertBefore(suivi.renderCardSuivi(), container.firstChild)
-    const deleteSuivi: HTMLElement | null = card.querySelector('[data-delete-suivi]')
-    if (app.profil.hasSuiviStartDate() && deleteSuivi) {
+    const deleteSuivi = card.querySelector<HTMLAnchorElement>('[data-delete-suivi]')!
+    if (app.profil.hasSuiviStartDate()) {
         bindSuppression(deleteSuivi, app)
         bindCalendar(element, app.profil)
     }
 }
 
-function bindSuppression(element: HTMLElement, app: App) {
+function bindSuppression(element: HTMLAnchorElement, app: App) {
     element.addEventListener('click', (event) => {
         event.preventDefault()
         const nom = element.dataset.deleteSuivi

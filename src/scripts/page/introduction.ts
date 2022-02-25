@@ -11,20 +11,18 @@ import { navigueVersUneThematique } from './thematiques/navigation'
 export default function introduction(page: HTMLElement, app: App) {
     const element = page
 
-    const header = document.querySelector('header section')
-    if (header) {
-        showElement(header.querySelector('.js-profil-empty'))
-        hideElement(header.querySelector('.js-profil-full'))
-    }
+    const header = document.querySelector('header section')!
+    showElement(header.querySelector('.js-profil-empty'))
+    hideElement(header.querySelector('.js-profil-full'))
+
     metEnAvantCarteSymptomes(element, app)
     navigueVersUneThematique(app, 'Navigue vers une thématique depuis l’accueil')
 }
 
 function metEnAvantCarteSymptomes(element: HTMLElement, app: App) {
-    const card: HTMLElement | null = element.querySelector(
+    const card = element.querySelector<HTMLElement>(
         '.thematiques .cards .j-ai-des-symptomes-covid'
-    )
-    if (!card) return
+    )!
     app.stockage.getProfils().then((noms: string[]) => {
         if (noms.length > 0) {
             updateCardActions(card, noms, app).then(() => {
@@ -33,8 +31,7 @@ function metEnAvantCarteSymptomes(element: HTMLElement, app: App) {
 
                 // On met en avant le premier bouton du premier profil
                 // (ce sera toujours "Moi" si ce profil existe)
-                const boutonPrincipal = card.querySelector('.actions-profil a')
-                if (!boutonPrincipal) return
+                const boutonPrincipal = card.querySelector<HTMLAnchorElement>('.actions-profil a')!
                 boutonPrincipal.classList.remove('button-outline')
 
                 // On cache le nom si ce n’est que mon profil.
@@ -47,8 +44,7 @@ function metEnAvantCarteSymptomes(element: HTMLElement, app: App) {
 }
 
 function updateCardActions(card: HTMLElement, noms: string[], app: App) {
-    const container = card.querySelector('.card-actions')
-    if (!container) return
+    const container = card.querySelector<HTMLElement>('.card-actions')!
     return Promise.all(
         noms.map((nom) => {
             const profil = new Profil(nom)
@@ -79,43 +75,37 @@ function bindProfilActions(element: HTMLElement, app: App) {
         conseilsLink.setAttribute('href', '#conseils')
     }
 
-    const profilLinks: HTMLElement[] | null = Array.from(
-        element.querySelectorAll('[data-set-profil]')
+    const profilLinks = Array.from(
+        element.querySelectorAll<HTMLElement>('[data-set-profil]')
     )
-    if (profilLinks) {
         profilLinks.forEach((profilLink) => {
             bindSetProfil(profilLink, app)
         })
-    }
 
-    const deleteProfil: HTMLElement | null =
-        element.querySelector('[data-delete-profil]')
+    const deleteProfil =
+        element.querySelector<HTMLAnchorElement>('[data-delete-profil]')
     if (deleteProfil) {
         bindSuppression(deleteProfil, app)
     }
 }
 
 function bindSetProfil(element: HTMLElement, app: App) {
-    element.addEventListener('click', function (event) {
+    element.addEventListener('click', (event) => {
         event.preventDefault()
-        if (!event.target) return
-        const target = event.target as HTMLAnchorElement
-        const nextPage = target.getAttribute('href')
-        if (!nextPage) return
-        const setProfil = element.dataset.setProfil
-        if (!setProfil) return
+        const target = <HTMLAnchorElement>event.target
+        const nextPage = target.getAttribute('href')!
+        const setProfil = element.dataset.setProfil!
         app.basculerVersProfil(setProfil).then(() => {
             app.router.navigate(nextPage)
         })
     })
 }
 
-function bindSuppression(element: HTMLElement, app: App) {
-    element.addEventListener('click', function (event) {
+function bindSuppression(element: HTMLAnchorElement, app: App) {
+    element.addEventListener('click', (event) => {
         event.preventDefault()
         app.plausible('Suppression')
-        const nom = element.dataset.deleteProfil
-        if (!nom) return
+        const nom = element.dataset.deleteProfil!
         const description =
             nom === 'mes_infos' ? 'vos réponses' : `les réponses de ${nom}`
         if (confirm(`Êtes-vous sûr·e de vouloir supprimer ${description} ?`)) {

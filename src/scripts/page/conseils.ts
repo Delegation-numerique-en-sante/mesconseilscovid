@@ -91,8 +91,7 @@ export default function conseils(page: HTMLElement, app: App) {
     }
 
     // Make the buttons clickable with appropriate actions.
-    const feedbackComponent: HTMLElement | null =
-        element.querySelector('.feedback-component')
+    const feedbackComponent = element.querySelector<HTMLElement>('.feedback-component')
     if (feedbackComponent) {
         bindFeedback(feedbackComponent, app)
     }
@@ -100,7 +99,7 @@ export default function conseils(page: HTMLElement, app: App) {
     if (app.profil.hasSuiviStartDate()) {
         bindCalendar(element, app.profil)
     }
-    const jsSuppression: HTMLElement | null = element.querySelector('.js-suppression')
+    const jsSuppression = element.querySelector<HTMLElement>('.js-suppression')
     if (jsSuppression) {
         bindSuppressionTotale(jsSuppression, app)
     }
@@ -157,8 +156,8 @@ function showRelevantSuiviBlocks(element: HTMLElement, algoSuivi: AlgorithmeSuiv
         blockNames.push('conseils-sante')
         blockNames.push('conseils-sante-historique-symptomes')
 
-        const suiviRepetition: HTMLElement[] | null = Array.from(
-            element.querySelectorAll('.suivi-repetition')
+        const suiviRepetition = Array.from(
+            element.querySelectorAll<HTMLElement>('.suivi-repetition')
         )
         if (suiviRepetition) {
             suiviRepetition.forEach((elem) => {
@@ -166,8 +165,8 @@ function showRelevantSuiviBlocks(element: HTMLElement, algoSuivi: AlgorithmeSuiv
             })
         }
 
-        const suiviDerniereFois: HTMLElement[] | null = Array.from(
-            element.querySelectorAll('.suivi-derniere-fois')
+        const suiviDerniereFois = Array.from(
+            element.querySelectorAll<HTMLElement>('.suivi-derniere-fois')
         )
         if (suiviDerniereFois) {
             suiviDerniereFois.forEach((elem) => {
@@ -214,21 +213,20 @@ export function dynamicDataInjection(
     profil: Profil,
     algoOrientation: AlgorithmeOrientation
 ) {
-    const conseilsBlockTitre: HTMLElement | null = element.querySelector(
+    const conseilsBlockTitre = element.querySelector<HTMLElement>(
         '#conseils-block-titre'
     )
     if (conseilsBlockTitre) {
         injection.titreConseils(conseilsBlockTitre, profil)
     }
 
-    const conseilsBlockDate: HTMLElement | null =
-        element.querySelector('#conseils-block-date')
+    const conseilsBlockDate = element.querySelector<HTMLElement>('#conseils-block-date')
     if (conseilsBlockDate) {
         injection.dateConseils(conseilsBlockDate)
     }
 
-    const nomCaracteristiquesARisques: HTMLElement[] | null = Array.from(
-        element.querySelectorAll('.nom-caracteristiques-a-risques')
+    const nomCaracteristiquesARisques = Array.from(
+        element.querySelectorAll<HTMLElement>('.nom-caracteristiques-a-risques')
     )
     if (nomCaracteristiquesARisques) {
         nomCaracteristiquesARisques.forEach((elem) => {
@@ -236,8 +234,8 @@ export function dynamicDataInjection(
         })
     }
 
-    const reponsePersonneFragile: HTMLElement[] | null = Array.from(
-        element.querySelectorAll('.reponse-personne-fragile')
+    const reponsePersonneFragile = Array.from(
+        element.querySelectorAll<HTMLElement>('.reponse-personne-fragile')
     )
     if (reponsePersonneFragile) {
         reponsePersonneFragile.forEach((elem) => {
@@ -245,8 +243,8 @@ export function dynamicDataInjection(
         })
     }
 
-    const nomAntecedents: HTMLElement[] | null = Array.from(
-        element.querySelectorAll('.nom-antecedents')
+    const nomAntecedents = Array.from(
+        element.querySelectorAll<HTMLElement>('.nom-antecedents')
     )
     if (nomAntecedents) {
         nomAntecedents.forEach((elem) => {
@@ -301,9 +299,8 @@ function dynamicTimelineDataInjection(element: HTMLElement, profil: Profil) {
     }
 
     function fillDuration(dureeIsolement: number) {
-        const dureeIsolementElement: HTMLElement | null =
-            element.querySelector('.duree-isolement')
-        if (!dureeIsolementElement) return
+        const dureeIsolementElement =
+            element.querySelector<HTMLElement>('.duree-isolement')!
         dureeIsolementElement.innerText = String(dureeIsolement)
     }
 
@@ -329,7 +326,7 @@ function dynamicTimelineDataInjection(element: HTMLElement, profil: Profil) {
             })
 
             // Si les symptômes ont commencé aujourd’hui, on propose le suivi demain.
-            if (profil.symptomes_start_date > joursAvant(1)) {
+            if (profil.symptomes_start_date! > joursAvant(1)) {
                 hideSelector(element, '.timeline .timeline-aujourdhui')
                 showSelector(element, '.timeline .timeline-demain')
             }

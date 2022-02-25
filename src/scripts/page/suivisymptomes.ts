@@ -11,14 +11,14 @@ import {
 import AlgorithmeDeconfinement from '../algorithme/deconfinement'
 
 export default function suivisymptomes(page: HTMLElement, app: App) {
-    const feedbackDifficultes: HTMLElement | null = page.querySelector(
+    const feedbackDifficultes = page.querySelector<HTMLElement>(
         '.feedback-difficultes'
     )
     if (feedbackDifficultes) {
         injectFeedbackDifficultes(feedbackDifficultes)
     }
-    const feedbackComponent: HTMLElement | null =
-        page.querySelector('.feedback-component')
+    const feedbackComponent =
+        page.querySelector<HTMLElement>('.feedback-component')
     if (feedbackComponent) {
         bindFeedback(feedbackComponent, app)
     }
@@ -28,12 +28,11 @@ export default function suivisymptomes(page: HTMLElement, app: App) {
         app.profil.suivi_start_date = new Date()
     }
 
-    const form = page.querySelector('form')
-    if (!form) return
+    const form = page.querySelector<HTMLFormElement>('form')!
 
     // Question affichée seulement si on répond pour un proche.
     const pourUnProche = !app.profil.estMonProfil()
-    let themOnly: HTMLElement | null = form.querySelector('.them-only')
+    let themOnly = form.querySelector<HTMLElement>('.them-only')
     if (themOnly) {
         if (pourUnProche) {
             showElement(themOnly)
@@ -44,12 +43,12 @@ export default function suivisymptomes(page: HTMLElement, app: App) {
         }
     }
 
-    const button: HTMLInputElement | null = form.querySelector('input[type=submit]')
+    const button = form.querySelector<HTMLInputElement>('input[type=submit]')
     // On pré-suppose que la personne qui fait son auto-suivi a des symptômes.
     form['suivi_symptomes'].checked = true
-    const primary = form.elements['suivi_symptomes']
+    const primary = <HTMLInputElement>form.elements.namedItem('suivi_symptomes')
     enableOrDisableSecondaryFields(form, primary)
-    primary.addEventListener('click', function () {
+    primary.addEventListener('click', () => {
         enableOrDisableSecondaryFields(form, primary)
     })
     const uncheckedLabel = pourUnProche
@@ -62,26 +61,26 @@ export default function suivisymptomes(page: HTMLElement, app: App) {
         uncheckedLabel,
         requiredLabel
     )
-    form.addEventListener('submit', function (event) {
+    form.addEventListener('submit', (event) => {
         event.preventDefault()
-        const form = event.target as HTMLFormElement
+        const target = <HTMLFormElement>event.target
         let etat: Etat = {
             date: new Date().toJSON(),
-            symptomes: form.elements['suivi_symptomes'].checked,
-            essoufflement: getRadioValue(form, 'suivi_symptomes_essoufflement') || '',
-            etatGeneral: getRadioValue(form, 'suivi_symptomes_etat_general') || '',
+            symptomes: (<HTMLInputElement>target.elements.namedItem('suivi_symptomes'))!.checked,
+            essoufflement: getRadioValue(target, 'suivi_symptomes_essoufflement') || '',
+            etatGeneral: getRadioValue(target, 'suivi_symptomes_etat_general') || '',
             alimentationHydratation:
-                getRadioValue(form, 'suivi_symptomes_alimentation_hydratation') || '',
+                getRadioValue(target, 'suivi_symptomes_alimentation_hydratation') || '',
             etatPsychologique:
-                getRadioValue(form, 'suivi_symptomes_etat_psychologique') || '',
-            fievre: getRadioValue(form, 'suivi_symptomes_fievre') || '',
+                getRadioValue(target, 'suivi_symptomes_etat_psychologique') || '',
+            fievre: getRadioValue(target, 'suivi_symptomes_fievre') || '',
             diarrheeVomissements:
-                getRadioValue(form, 'suivi_symptomes_diarrhee_vomissements') || '',
-            mauxDeTete: getRadioValue(form, 'suivi_symptomes_maux_de_tete') || '',
-            toux: getRadioValue(form, 'suivi_symptomes_toux') || '',
+                getRadioValue(target, 'suivi_symptomes_diarrhee_vomissements') || '',
+            mauxDeTete: getRadioValue(target, 'suivi_symptomes_maux_de_tete') || '',
+            toux: getRadioValue(target, 'suivi_symptomes_toux') || '',
         }
         if (pourUnProche) {
-            etat.confusion = getRadioValue(form, 'suivi_symptomes_confusion')
+            etat.confusion = getRadioValue(target, 'suivi_symptomes_confusion')
         }
         app.profil.ajouterEtat(etat)
 
