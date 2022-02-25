@@ -136,11 +136,12 @@ function creeUnLienPermanentDansLHistorique(detailsElement: HTMLDetailsElement) 
 function boutonBasculeVersMonProfil(lienVersProfil: HTMLAnchorElement, app: App) {
     lienVersProfil.addEventListener('click', (event) => {
         event.preventDefault()
+        const link = <HTMLAnchorElement>event.target
         app.plausible('Je veux des conseils personnalisés')
         const nomProfil = lienVersProfil.dataset.setProfil
         if (!nomProfil) return
         app.basculerVersProfil(nomProfil).then(() => {
-            window.location = event.target?.getAttribute('href')
+            window.location.href = link.getAttribute('href')!
         })
     })
 }

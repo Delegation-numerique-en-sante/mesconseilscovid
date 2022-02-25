@@ -47,8 +47,7 @@ export default class Updater {
     }
 
     showBanner(document: Document) {
-        const block: HTMLElement | null = document.querySelector('#update-banner')
-        if (!block) return
+        const block = document.querySelector<HTMLElement>('#update-banner')!
         showElement(block)
         document.dispatchEvent(
             new CustomEvent<HTMLElement>('show-banner', { detail: block })
@@ -57,8 +56,7 @@ export default class Updater {
 
     updateFooter(fetchedVersion: string) {
         if (this.currentVersion !== fetchedVersion) {
-            const element = document.querySelector<HTMLElement>('.js-latest-update')
-            if (!element) return
+            const element = document.querySelector<HTMLElement>('.js-latest-update')!
             // We might have a version with more characters than a date
             // if multiple releases are required within the same day.
             const datePart = fetchedVersion.substring(0, 10)
@@ -125,10 +123,9 @@ export default class Updater {
             setTimeout(() => {
                 event.detail.scrollIntoView({ behavior: 'smooth' })
             }, 100)
-            const refreshButton: HTMLAnchorElement | null = event.detail.querySelector(
+            const refreshButton = event.detail.querySelector<HTMLAnchorElement>(
                 '#refresh-button-banner'
-            )
-            if (!refreshButton) return
+            )!
             this.setupRefreshButton(refreshButton, pageName)
         }) as EventListener)
         this.showBanner(document)
@@ -148,13 +145,12 @@ export default class Updater {
         console.debug('Updater.onClickRefreshButton()')
         event.preventDefault()
 
-        let button: HTMLAnchorElement | null = event.target
-        if (!button) return
+        const button = <HTMLAnchorElement>event.target
 
         // Change the URL without triggering the router.
         this.router.pause()
         console.log(window.location)
-        window.location = button.href
+        window.location.href = button.href
         console.log(window.location)
 
         // User feedback as it may take more than a few milliseconds.
