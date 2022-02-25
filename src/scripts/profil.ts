@@ -826,10 +826,7 @@ export default class Profil {
     }
 
     joursDepuisCovidPassee(): number {
-        return (
-            typeof this.covid_passee_date !== 'undefined' &&
-            differenceEnJours(this.covid_passee_date, new Date())
-        )
+        return differenceEnJours(this.covid_passee_date!, new Date())
     }
 
     _hasCovidPlus(months: number) {
@@ -980,7 +977,7 @@ export default class Profil {
     _depistageNegatifAvantDebutDesSymptomes() {
         return (
             this.hasSymptomesActuelsReconnus() &&
-            this.depistage_start_date < this.symptomes_start_date
+            this.depistage_start_date! < this.symptomes_start_date!
         )
     }
 
