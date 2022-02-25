@@ -160,6 +160,8 @@ export default class App {
         return this.stockage.getProfilActuel().then((nom) => {
             if (nom !== null) {
                 return this.chargerProfil(nom)
+            } else {
+                return
             }
         })
     }
