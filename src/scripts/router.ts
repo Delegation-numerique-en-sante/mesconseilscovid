@@ -74,7 +74,7 @@ export class Router {
         } else {
             showElement(header.querySelector('.js-profil-full'))
             hideElement(header.querySelector('.js-profil-empty'))
-            nomProfil(header.querySelector('#nom-profil-header'), this.app)
+            nomProfil(header.querySelector('#nom-profil-header')!, this.app)
         }
         done()
     }
@@ -103,8 +103,8 @@ export class Router {
         }
         const viewFunc = (page: HTMLElement, app: App) => {
             view(page, app)
-            injectFeedbackDifficultes(page.querySelector('.feedback-difficultes'))
-            bindFeedback(page.querySelector('.feedback-component'), app)
+            injectFeedbackDifficultes(page.querySelector('.feedback-difficultes')!)
+            bindFeedback(page.querySelector('.feedback-component')!, app)
         }
         this.addAppRoute(pageName, viewFunc, { ...options, beforeFunc })
     }
@@ -164,16 +164,10 @@ export class Router {
     }
 
     loadPage(pageName: string) {
-        const page: HTMLElement | null = document.querySelector('section#page')
-        if (!page) {
-            return
-        }
+        const page = document.querySelector<HTMLElement>('section#page')!
         page.classList.remove('ready')
         page.classList.add('loading')
-        const sourceElement: HTMLElement | null = document.querySelector('#' + pageName)
-        if (!sourceElement) {
-            return
-        }
+        const sourceElement = document.querySelector<HTMLElement>('#' + pageName)!
         cloneElementInto(sourceElement, page)
         showMeOrThem(page, this.app.profil)
         this.scrollToTopOfPage()
@@ -200,7 +194,7 @@ export class Router {
     ) {
         let titlePrefix = pageTitle
         if (typeof pageTitle === 'undefined') {
-            const titleElem: HTMLElement | null = page.querySelector(
+            const titleElem: HTMLElement | null = page.querySelector<HTMLElement>(
                 'h1, #conseils-block-titre, h2'
             )
             if (titleElem) {
