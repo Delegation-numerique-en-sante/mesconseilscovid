@@ -7,6 +7,7 @@ import {
     preloadCheckboxForm,
     toggleFormButtonOnTextFieldsAndRadioRequired,
 } from '../../formutils'
+import type Profil from '../../profil'
 
 export default function depistage(page: HTMLElement, app: App) {
     const form = page.querySelector('form')!
@@ -114,7 +115,10 @@ export default function depistage(page: HTMLElement, app: App) {
                 )).value
             )
             app.profil.depistage_type = getRadioValue(form, 'depistage_type')
-            app.profil.depistage_resultat = getRadioValue(form, 'depistage_resultat')
+            app.profil.depistage_resultat = getRadioValue(
+                form,
+                'depistage_resultat'
+            ) as Profil['depistage_resultat']
         } else {
             app.profil.depistage_start_date = undefined
             app.profil.depistage_type = undefined
