@@ -4,10 +4,9 @@ import { getCurrentPageName } from './router'
 import { estPageThematique } from './page/thematiques/navigation'
 
 export function injectFeedbackDifficultes(targetElement: HTMLElement) {
-    const feedbackDifficultesElement: HTMLElement | null = document.querySelector(
+    const feedbackDifficultesElement = document.querySelector<HTMLElement>(
         '#feedback-difficultes'
-    )
-    if (!feedbackDifficultesElement) return
+    )!
     cloneElementInto(feedbackDifficultesElement, targetElement)
 }
 export function opacityTransition(
@@ -40,12 +39,14 @@ export function bindFeedback(component: HTMLElement, app: App) {
                 const form = component.querySelector('.feedback-form form')
                 if (!form) return
                 form.addEventListener('submit', (event) => {
-                    const submitEvent = event as unknown as SubmitEvent
+                    const target = <HTMLFormElement>event.target
                     event.preventDefault()
                     envoieLesRemarques({
                         feedbackHost: document.body.dataset.statsUrl,
                         kind: feedback,
-                        message: submitEvent?.target?.elements.message.value,
+                        message: (
+                            target.elements.namedItem('message') as HTMLInputElement
+                        ).value,
                         page: estPageThematique()
                             ? document.location.pathname.slice(1)
                             : getCurrentPageName(),
@@ -68,7 +69,8 @@ export function bindFeedback(component: HTMLElement, app: App) {
     Array.from(component.querySelectorAll('.button-feedback')).forEach((button) => {
         button.addEventListener('click', (event) => {
             event.preventDefault()
-            const feedback = event?.target?.dataset.feedback
+            const target = <HTMLAnchorElement>event.target
+            const feedback = target.dataset.feedback!
             app.plausible(`Avis ${feedback}`)
             askForMoreFeedback(feedback, component)
         })
@@ -91,14 +93,12 @@ export function bindFeedback(component: HTMLElement, app: App) {
                     if (typeof navigator.share === 'undefined') {
                         const buttonFeedbackPartager = component.querySelector(
                             '.feedback-partager .button-feedback-partager'
-                        )
-                        if (!buttonFeedbackPartager) return
+                        )!
                         hideElement(buttonFeedbackPartager.parentElement)
                     }
-                    const partagerLinks: HTMLElement[] | null = Array.from(
-                        component.querySelectorAll('.feedback-partager a')
-                    )
-                    if (!partagerLinks) return
+                    const partagerLinks = Array.from(
+                        component.querySelectorAll<HTMLElement>('.feedback-partager a')
+                    )!
                     partagerLinks.forEach((partagerLink) => {
                         partagerLink.addEventListener('click', () => {
                             const service = partagerLink.dataset.service
