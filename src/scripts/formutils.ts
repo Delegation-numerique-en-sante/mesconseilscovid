@@ -57,12 +57,8 @@ export class Form {
 }
 
 export function getRadioValue(form: HTMLFormElement, key: string) {
-    const elem: HTMLInputElement | null = form.querySelector(
-        `input[name="${key}"]:checked`
-    )
-    if (elem) {
-        return elem.value
-    }
+    const elem = form.querySelector<HTMLInputElement>(`input[name="${key}"]:checked`)
+    return elem?.value
 }
 
 export function uncheckAllRadio(element: HTMLElement) {
