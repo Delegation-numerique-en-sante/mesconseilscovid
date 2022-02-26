@@ -61,9 +61,9 @@ export function getRadioValue(form: HTMLFormElement, key: string) {
     return elem?.value
 }
 
-export function uncheckAllRadio(element: HTMLElement | Document) {
+export function uncheckAllRadio(document: Document) {
     const radioButtons = Array.from(
-        element.querySelectorAll<HTMLInputElement>('[type="radio"]')
+        document.querySelectorAll<HTMLInputElement>('[type="radio"]')
     )
     radioButtons.forEach((radioButton) => {
         radioButton.checked = false

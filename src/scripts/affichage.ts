@@ -26,7 +26,7 @@ export function showElement(element: HTMLElement | null) {
     element?.classList.add('visible')
 }
 
-export function hideSelector(element: HTMLElement | Document, selector: string) {
+export function hideSelector(element: ParentNode, selector: string) {
     const elements = Array.from(element.querySelectorAll<HTMLElement>(selector))
     elements.forEach(hideElement)
 }
