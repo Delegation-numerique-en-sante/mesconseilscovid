@@ -59,7 +59,7 @@ export default function contactarisque(page: HTMLElement, app: App) {
             'contact_a_risque_variante',
         ] as (keyof ProfilDataContactARisque)[]
         for (const item of profilItems) {
-            if (item === 'contact_a_risque_variante') return
+            if (item === 'contact_a_risque_variante') break
             app.profil[item] = (<HTMLInputElement>(
                 target.elements.namedItem(item)
             ))!.checked
