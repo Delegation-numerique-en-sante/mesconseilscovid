@@ -45,7 +45,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * Pour les élèves de **moins de 12 ans** (quel que soit leur statut vaccinal), lorsqu’**un cas positif** est confirmé dans la classe :
 
       * les élèves pourront poursuivre les enseignements en **présentiel** ;
-      * ils seront invités à réaliser un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) **2 jours après** avoir été prévenus de ce contact à risque.
+      * ils seront invités à réaliser un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou le jour même si le contact a eu lieu depuis plus de 2 jours.
 
         *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à refaire un test.*
 
@@ -54,7 +54,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
       * s’ils sont **complètement vaccinés** :
         * les élèves pourront poursuivre les enseignements en **présentiel** ;
-        * ils seront invités à réaliser un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) **2 jours après** avoir été prévenus de ce contact à risque.
+        * ils seront invités à réaliser un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou le jour même si le contact a eu lieu depuis plus de 2 jours.
 
           *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à refaire un test.*
 
@@ -89,7 +89,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 2. Test de dépistage à J+2
 
-    Votre enfant devra faire un **test de dépistage** (test PCR, test antigénique ou autotest) **2 jours** après avoir été prévenu du contact à risque (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+    Votre enfant devra faire un **test de dépistage** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou le jour même si le contact a eu lieu depuis plus de 2 jours (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
     * Si le test est **négatif** :
         * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
@@ -130,7 +130,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 2. Test de dépistage à J+2
 
-    Votre enfant devra faire un **test de dépistage** (test PCR, test antigénique ou autotest) **2 jours** après avoir été prévenu du contact à risque (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+    Votre enfant devra faire un **test de dépistage** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou le jour même si le contact a eu lieu depuis plus de 2 jours (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
     * Si le test est **négatif** :
         * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
@@ -473,7 +473,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Les autotests pour le dépistage en milieu scolaire sont délivrés gratuitement en pharmacie, sur présentation d’une attestation fournie par l’école.
 
-    Les autotests de surveillance à J+2 et J+4 pour les cas contacts vaccinés sont également délivrés gratuitement en pharmacie, sur présentation du résultat de test PCR ou antigénique négatif et d’un document justifiant le statut de personnes contact.
+    Les autotests de surveillance à J+2 pour les cas contacts vaccinés sont également délivrés gratuitement en pharmacie, sur présentation du résultat de test PCR ou antigénique négatif et d’un document justifiant le statut de personnes contact.
 
 
 .. question:: Les tests sont-ils dangereux pour les enfants ?
