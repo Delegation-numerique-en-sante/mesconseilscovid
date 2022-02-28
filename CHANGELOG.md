@@ -1,5 +1,10 @@
 # Changelog
 
+## 2022-02-28
+
+* allègement du dépistage pour les cas contact vaccinés
+* fin de la campagne de vaccination contre la grippe
+
 ## 2022-02-21
 
 * fin du masque en extérieur dans les écoles
