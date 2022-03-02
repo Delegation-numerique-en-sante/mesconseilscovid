@@ -12,6 +12,21 @@ HERE = Path(__file__).parent
 THEMATIQUES_DIR = HERE.parent.parent / "contenus" / "thematiques"
 
 
+class ReponseManquante(ValueError):
+    def __init__(self, question):
+        super().__init__(
+            f"Question sans réponse : indentation manquante ?\n« {question} »"
+        )
+
+
+class MiseAJourRequise(RuntimeError):
+    def __init__(self, expires, question):
+        super().__init__(
+            f"Cette question doit être mise à jour le {expires.strftime('%d/%m/%Y')}\n"
+            f"« {question} »"
+        )
+
+
 class QuestionDirective(Directive):
     """
     Balisage FAQ pour les questions réponses
@@ -29,9 +44,7 @@ class QuestionDirective(Directive):
             open_ = options.get("open", "").lower() == "true"
             expires = options.get("expires", "")
             if expires:
-                expires = parse(
-                    expires, settings={"DEFAULT_LANGUAGES": ["fr"]}
-                ).date()
+                expires = parse(expires, settings={"DEFAULT_LANGUAGES": ["fr"]}).date()
         else:
             level = 2
             feedback = "keep"
@@ -42,15 +55,10 @@ class QuestionDirective(Directive):
         children = block.parse(text, state, block.rules)
 
         if not children:
-            raise ValueError(
-                f"Question sans réponse : indentation manquante ?\n« {question} »"
-            )
+            raise ReponseManquante(question)
 
         if expires and date.today() > expires:
-            raise RuntimeError(
-                f"Cette question doit être mise à jour le {expires.strftime('%d/%m/%Y')}\n"
-                f"« {question} »"
-            )
+            raise MiseAJourRequise(expires, question)
 
         return {
             "type": "question",

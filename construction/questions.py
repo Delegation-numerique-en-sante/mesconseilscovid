@@ -62,5 +62,9 @@ class HelpfulDict(dict):
             closest = max(
                 self.keys(), key=lambda q: SequenceMatcher(None, q, key).ratio()
             )
-            message = f"{key!r} (vouliez-vous dire {closest!r}?)"
-            raise KeyError(message) from None
+            raise HelpfulKeyError(key, closest) from None
+
+
+class HelpfulKeyError(KeyError):
+    def __init__(self, key, closest):
+        super().__init__(f"{key!r} (vouliez-vous dire {closest!r}?)")
