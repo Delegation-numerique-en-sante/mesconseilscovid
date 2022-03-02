@@ -1,0 +1,38 @@
+name: Vérifie que les liens externes sont toujours là
+
+on:
+  push:
+  schedule:
+    - cron: '30 7,13,19 * * *'
+
+jobs:
+  check-external-links:
+    name: Check external links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install French locale
+        run: |
+          sudo apt-get install locales-all
+          sudo localectl set-locale LANG=fr_FR.utf8
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install Python dependencies
+        run: |
+          make install-python
+
+      - name: Build index
+        run: |
+          python3 build.py index
+
+      - name: Check external links
+        run: |
+          make check-external-links
+        env:
+          PYTHONUNBUFFERED: "1"
