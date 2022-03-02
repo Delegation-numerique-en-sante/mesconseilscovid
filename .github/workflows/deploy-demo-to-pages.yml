@@ -15,6 +15,7 @@ jobs:
 
       - name: Install French locale
         run: |
+          sudo apt-get update
           sudo apt-get install locales-all
           sudo localectl set-locale LANG=fr_FR.utf8
 
