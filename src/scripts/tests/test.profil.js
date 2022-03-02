@@ -541,16 +541,6 @@ describe('Profil', function () {
         assert.isUndefined(profil.questionnaire_completion_date)
     })
 
-    it('Le questionnaire est commencé si on démarre le formulaire', function () {
-        var profil = new Profil('mes_infos', {})
-        // On simule `app.premierDemarrageFormulaire` pour ne pas importer App.
-        if (typeof profil.questionnaire_start_date === 'undefined') {
-            profil.questionnaire_start_date = new Date()
-        }
-        assert.isString(profil._questionnaire_start_date)
-        assert.instanceOf(profil.questionnaire_start_date, Date)
-    })
-
     it('Le questionnaire est terminé si on a toutes les réponses', function () {
         var profil = new Profil('mes_infos', {
             activite_pro: false,
