@@ -80,7 +80,7 @@ pytz==2021.3
     #   dateparser
 pytz-deprecation-shim==0.1.0.post0
     # via tzlocal
-regex==2022.1.18
+regex==2022.3.2
     # via
     #   -r requirements.in
     #   dateparser
