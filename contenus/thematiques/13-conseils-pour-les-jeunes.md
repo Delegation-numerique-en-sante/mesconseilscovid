@@ -154,9 +154,9 @@
 
     <div class="conseil">
 
-    Fais un **test PCR**, un **test antigénique** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ou un **autotest**, **deux jours après** avoir appris que tu es cas contact.
+    Fais un **test PCR**, un **test antigénique** (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)) ou un **autotest** à **J+2**, c’est à dire 2 jours après ton dernier contact avec la personne positive, ou dès que possible si cela fait déjà plus de 2 jours.
 
-    Les tests sont toujours **gratuits** pour les mineurs et pour les cas contact.
+    Les tests sont toujours **gratuits** pour les mineurs, pour les cas contact, et pour les personnes vaccinées.
 
     </div>
 
