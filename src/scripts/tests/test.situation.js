@@ -627,7 +627,7 @@ const matrice = [
             _depistage_start_date: new Date().toJSON(),
         },
         situation: 'negatif_contact_a_risque_meme_lieu_de_vie_vaccine',
-        statut: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        statut: 'contact-a-risque-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
     },
     {
@@ -644,7 +644,7 @@ const matrice = [
             _depistage_start_date: new Date().toJSON(),
         },
         situation: 'negatif_contact_a_risque_meme_lieu_de_vie_vaccine',
-        statut: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        statut: 'contact-a-risque-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
     },
     {
@@ -851,7 +851,7 @@ const matrice = [
             _depistage_start_date: new Date().toJSON(),
         },
         situation: 'en_attente_contact_a_risque_meme_lieu_de_vie_vaccine',
-        statut: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        statut: 'contact-a-risque-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
     },
     {
@@ -869,7 +869,7 @@ const matrice = [
             _depistage_start_date: new Date().toJSON(),
         },
         situation: 'en_attente_contact_a_risque_meme_lieu_de_vie_vaccine',
-        statut: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        statut: 'contact-a-risque-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
     },
     {
@@ -1029,7 +1029,7 @@ const matrice = [
             depistage: false,
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
-        statut: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        statut: 'contact-a-risque-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
     },
     {
@@ -1043,7 +1043,7 @@ const matrice = [
             depistage: false,
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
-        statut: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        statut: 'contact-a-risque-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
     },
     {
@@ -1218,7 +1218,7 @@ const matrice = [
             contact_a_risque_variante: 'aucune',
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
-        statut: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        statut: 'contact-a-risque-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
     },
     {
@@ -1236,7 +1236,7 @@ const matrice = [
             contact_a_risque_variante: 'aucune',
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
-        statut: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        statut: 'contact-a-risque-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
     },
     {
@@ -1433,7 +1433,7 @@ const matrice = [
             contact_a_risque_variante: 'aucune',
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
-        statut: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        statut: 'contact-a-risque-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
     },
     {
@@ -1451,7 +1451,7 @@ const matrice = [
             contact_a_risque_variante: 'aucune',
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
-        statut: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        statut: 'contact-a-risque-vaccine',
         conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
     },
     {

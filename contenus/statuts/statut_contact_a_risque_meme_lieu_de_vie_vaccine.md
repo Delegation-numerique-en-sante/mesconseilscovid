@@ -1,1 +1,0 @@
-Faites un **test de dépistage gratuit** (PCR, antigénique ou autotest) à **J+2**
