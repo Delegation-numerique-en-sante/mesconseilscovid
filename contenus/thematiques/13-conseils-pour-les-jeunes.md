@@ -129,7 +129,6 @@
 
 .. question:: Je suis collégien(ne) ou lycéen(ne). Que se passe-t-il si je suis cas contact et que je suis vacciné(e) ?
     :level: 3
-    :expires: 28 février 2022
 
     <div class="conseil conseil-jaune">
 
