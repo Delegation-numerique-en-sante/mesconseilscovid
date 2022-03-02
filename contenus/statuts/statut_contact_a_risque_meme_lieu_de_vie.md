@@ -1,1 +1,0 @@
-Restez **en isolement**, puis **faites un test** 7 jours après le dernier contact avec la personne positive.
