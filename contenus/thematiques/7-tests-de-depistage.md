@@ -131,7 +131,6 @@
 
 .. question:: Qu’est-ce qu’un autotest ?
     :level: 4
-    :expires: 28 février 2022
 
     L’**autotest** est un prélèvement nasal à réaliser chez soi, et disponible en pharmacie.
 
