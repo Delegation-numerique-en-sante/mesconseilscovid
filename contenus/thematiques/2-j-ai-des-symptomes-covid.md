@@ -8,6 +8,7 @@
 
 .. question:: Que faire si j’ai des symptômes et/ou que je suis positif ?
     :feedback: remove
+    :open: true
 
     <form>
         <fieldset>
