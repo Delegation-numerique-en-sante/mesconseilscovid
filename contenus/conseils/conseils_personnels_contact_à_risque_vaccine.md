@@ -1,6 +1,7 @@
 Il n’est **pas nécessaire de vous isoler** mais :
 
 1. Soyez **prudent(e)** :
+    - {.seulement-si-foyer} respectez les **mesures barrières** au sein de votre foyer ;
     - ayez recours au **télétravail** lorsque c’est possible ;
     - **limitez** vos interactions sociales, et évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal) ;
     - portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas.
@@ -12,6 +13,7 @@ Il n’est **pas nécessaire de vous isoler** mais :
             * restez isolé(e) en attendant ;
         + En cas de test PCR ou antigénique positif, ou de confirmation de l’autotest :
             * vous avez contracté la Covid, et vous êtes **contagieux** ;
+            * {.seulement-si-foyer} les **membres de votre foyer** seront à leur tour considérés comme **cas contact** ;
             * restez en **isolement au moins 7 jours** à partir de la date du test ;
                 - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, vous pourrez mettre fin à votre isolement après 5 jours seulement, suite à test de dépistage négatif (antigénique ou PCR).
 
