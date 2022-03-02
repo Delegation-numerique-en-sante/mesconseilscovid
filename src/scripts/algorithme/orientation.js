@@ -23,7 +23,6 @@ const STATUTS = [
 const CONSEILS_PERSONNELS = [
     'antigenique-negatif-fragile',
     'contact-a-risque-autre',
-    'contact-a-risque-meme-lieu-de-vie',
     'contact-a-risque-non-vaccine',
     'contact-a-risque-vaccine',
     'depistage-positif-autotest-asymptomatique',
@@ -268,15 +267,6 @@ export default class AlgorithmeOrientation {
                     conseils: 'antigenique-negatif-fragile',
                 }
 
-            case 'negatif_contact_a_risque_meme_lieu_de_vie':
-            case 'antigenique_negatif_fragile_contact_a_risque_meme_lieu_de_vie':
-            case 'en_attente_contact_a_risque_meme_lieu_de_vie':
-            case 'pas_teste_contact_a_risque_meme_lieu_de_vie':
-                return {
-                    statut: 'contact-a-risque-non-vaccine',
-                    conseils: 'contact-a-risque-meme-lieu-de-vie',
-                }
-
             case 'negatif_contact_a_risque_vaccine':
             case 'antigenique_negatif_fragile_contact_a_risque_vaccine':
             case 'en_attente_contact_a_risque_vaccine':
@@ -294,6 +284,10 @@ export default class AlgorithmeOrientation {
             case 'antigenique_negatif_fragile_contact_a_risque':
             case 'en_attente_contact_a_risque':
             case 'pas_teste_contact_a_risque':
+            case 'negatif_contact_a_risque_meme_lieu_de_vie':
+            case 'antigenique_negatif_fragile_contact_a_risque_meme_lieu_de_vie':
+            case 'en_attente_contact_a_risque_meme_lieu_de_vie':
+            case 'pas_teste_contact_a_risque_meme_lieu_de_vie':
                 return {
                     statut: 'contact-a-risque-non-vaccine',
                     conseils: 'contact-a-risque-non-vaccine',
