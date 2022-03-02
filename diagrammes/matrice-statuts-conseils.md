@@ -205,8 +205,8 @@
                     statut_contact_a_risque_non_vaccine.md
                 </a>
                 <br><br>
-                <a href="../contenus/conseils/conseils_personnels_contact_à_risque_meme_lieu_de_vie.md">
-                    conseils_personnels_contact_à_risque_meme_lieu_de_vie.md
+                <a href="../contenus/conseils/conseils_personnels_contact_à_risque_non_vaccine.md">
+                    conseils_personnels_contact_à_risque_non_vaccine.md
                 </a>
             </td>
         </tr>
