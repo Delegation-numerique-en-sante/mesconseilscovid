@@ -628,7 +628,7 @@ const matrice = [
         },
         situation: 'negatif_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-vaccine',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        conseils: 'contact-a-risque-vaccine',
     },
     {
         description: 'Négatif et contact à risque même lieu de vie (moins de 12 ans)',
@@ -645,7 +645,7 @@ const matrice = [
         },
         situation: 'negatif_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-vaccine',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        conseils: 'contact-a-risque-vaccine',
     },
     {
         description:
@@ -852,7 +852,7 @@ const matrice = [
         },
         situation: 'en_attente_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-vaccine',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        conseils: 'contact-a-risque-vaccine',
     },
     {
         description:
@@ -870,7 +870,7 @@ const matrice = [
         },
         situation: 'en_attente_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-vaccine',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        conseils: 'contact-a-risque-vaccine',
     },
     {
         description:
@@ -1030,7 +1030,7 @@ const matrice = [
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-vaccine',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        conseils: 'contact-a-risque-vaccine',
     },
     {
         description: 'Pas testé et contact à risque même lieu de vie (moins de 12 ans)',
@@ -1044,7 +1044,7 @@ const matrice = [
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-vaccine',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        conseils: 'contact-a-risque-vaccine',
     },
     {
         description:
@@ -1219,7 +1219,7 @@ const matrice = [
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-vaccine',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        conseils: 'contact-a-risque-vaccine',
     },
     {
         description:
@@ -1237,7 +1237,7 @@ const matrice = [
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-vaccine',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        conseils: 'contact-a-risque-vaccine',
     },
     {
         description:
@@ -1434,7 +1434,7 @@ const matrice = [
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-vaccine',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        conseils: 'contact-a-risque-vaccine',
     },
     {
         description:
@@ -1452,7 +1452,7 @@ const matrice = [
         },
         situation: 'pas_teste_contact_a_risque_meme_lieu_de_vie_vaccine',
         statut: 'contact-a-risque-vaccine',
-        conseils: 'contact-a-risque-meme-lieu-de-vie-vaccine',
+        conseils: 'contact-a-risque-vaccine',
     },
     {
         description:
