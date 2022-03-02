@@ -188,22 +188,13 @@
         <tr>
             <td rowspan="2" style="border: 1px solid black; padding: 1rem;" valign="middle" height="224" bgcolor="#EEEEEE" align="center"><b>Je vis avec un ou des malades de la Covid</b></td>
             <td style="border: 1px solid black; padding: 1rem;" valign="middle" height="190" bgcolor="#EEEEEE" align="center"><b>Complètement vacciné</b></td>
-            <td style="border: 1px solid black; padding: 1rem;" colspan="3" valign="middle" bgcolor="#FFFFD7" align="center">
+            <td style="border: 1px solid black; padding: 1rem;" colspan="4" valign="middle" bgcolor="#FFFFD7" align="center">
                 <a href="../contenus/statuts/statut_contact_a_risque_meme_lieu_de_vie_vaccine.md">
                     statut_contact_a_risque_meme_lieu_de_vie_vaccine.md
                 </a>
                 <br><br>
                 <a href="../contenus/conseils/conseils_personnels_contact_à_risque_meme_lieu_de_vie_vaccine.md">
                     conseils_personnels_contact_à_risque_meme_lieu_de_vie_vaccine.md
-                </a>
-            </td>
-            <td style="border: 1px solid black; padding: 1rem;" valign="middle" bgcolor="#FFFFD7" align="center">
-                <a href="../contenus/statuts/statut_contact_a_risque_meme_lieu_de_vie_sans_depistage_vaccine.md">
-                    statut_contact_a_risque_meme_lieu_de_vie_sans_depistage_vaccine.md
-                </a>
-                <br><br>
-                <a href="../contenus/conseils/conseils_personnels_contact_à_risque_meme_lieu_de_vie_sans_depistage_vaccine.md">
-                    conseils_personnels_contact_à_risque_meme_lieu_de_vie_sans_depistage_vaccine.md
                 </a>
             </td>
         </tr>

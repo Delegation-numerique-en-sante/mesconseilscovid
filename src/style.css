@@ -855,7 +855,6 @@ footer .legals {
 .statut-asymptomatique,
 .statut-asymptomatique-positif-autotest,
 .statut-contact-a-risque-meme-lieu-de-vie,
-.statut-contact-a-risque-meme-lieu-de-vie-sans-depistage,
 .statut-contact-a-risque-non-vaccine,
 .statut-positif-symptomatique-urgent,
 .statut-symptomatique-autotest-positif,
@@ -869,7 +868,6 @@ footer .legals {
 }
 .statut-orange,
 .statut-contact-a-risque-meme-lieu-de-vie-vaccine,
-.statut-contact-a-risque-meme-lieu-de-vie-sans-depistage-vaccine,
 .statut-personne-fragile,
 .suivi-gravite-2 {
     background: #ffcc9f;
