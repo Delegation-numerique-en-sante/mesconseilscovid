@@ -1,1 +1,1 @@
-Faites un **test de dépistage gratuit** (PCR ou antigénique) **dès que possible**, puis **2 autotests de contrôle** à J+2 et J+4.
+Faites un **test de dépistage gratuit** (PCR, antigénique ou autotest) à **J+2**

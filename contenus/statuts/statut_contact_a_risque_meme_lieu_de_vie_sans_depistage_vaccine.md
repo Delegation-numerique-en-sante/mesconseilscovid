@@ -1,1 +1,1 @@
-Si vous ne l’avez pas déjà fait, faites un **test de dépistage** (PCR ou antigénique) **dès que possible**, puis **2 autotests de contrôle** au 2<sup>e</sup> jour et au 4<sup>e</sup> jour après la date du **premier test**.
+Faites un **test de dépistage gratuit** (PCR, antigénique ou autotest) à **J+2**
