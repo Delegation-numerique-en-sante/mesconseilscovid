@@ -201,8 +201,8 @@
     Vous pouvez retourner au travail si :
 
     - vous avez **respecté** la durée de votre **isolement** :
-        - au moins **7 jours** si vous êtes complètement vacciné(e) (seulement 5 jours en cas de test antigénique négatif),
-        - au moins **10 jours** si vous n’êtes pas complètement vacciné(e) (seulement 7 jours en cas de test antigénique négatif),
+        - au moins **7 jours** si vous êtes complètement vacciné(e) (seulement 5 jours en cas de test antigénique négatif),
+        - au moins **10 jours** si vous n’êtes pas complètement vacciné(e) (seulement 7 jours en cas de test antigénique négatif),
     - **et** que vous n’avez **plus de fièvre depuis 48 h**.
 
 
