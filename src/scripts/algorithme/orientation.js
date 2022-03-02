@@ -86,20 +86,12 @@ export default class AlgorithmeOrientation {
         } else if (this.profil.hasContactARisqueReconnus()) {
             const completementVaccine = this.profil.isCompletementVaccine()
             const moinsDe12Ans = this.profil.age < 12
-            if (this.profil.contact_a_risque_meme_lieu_de_vie) {
-                if (completementVaccine || moinsDe12Ans) {
-                    symptomes = 'contact_a_risque_meme_lieu_de_vie_vaccine'
-                } else {
-                    symptomes = 'contact_a_risque_meme_lieu_de_vie'
-                }
+            if (completementVaccine || moinsDe12Ans) {
+                symptomes = 'contact_a_risque_vaccine'
+            } else if (this.guerisonRecente()) {
+                symptomes = 'contact_pas_vraiment_a_risque'
             } else {
-                if (completementVaccine || moinsDe12Ans) {
-                    symptomes = 'contact_a_risque_vaccine'
-                } else if (this.guerisonRecente()) {
-                    symptomes = 'contact_pas_vraiment_a_risque'
-                } else {
-                    symptomes = 'contact_a_risque'
-                }
+                symptomes = 'contact_a_risque'
             }
         } else if (this.profil.contact_a_risque_autre) {
             symptomes = 'contact_pas_vraiment_a_risque'
