@@ -45,7 +45,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * Pour les élèves de **moins de 12 ans** (quel que soit leur statut vaccinal), lorsqu’**un cas positif** est confirmé dans la classe :
 
       * les élèves pourront poursuivre les enseignements en **présentiel** ;
-      * ils seront invités à réaliser un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou le jour même si le contact a eu lieu depuis plus de 2 jours.
+      * ils seront invités à réaliser un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou dès que possible si le délai de 2 jours est déjà écoulé.
 
         *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à refaire un test.*
 
@@ -54,7 +54,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
       * s’ils sont **complètement vaccinés** :
         * les élèves pourront poursuivre les enseignements en **présentiel** ;
-        * ils seront invités à réaliser un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou le jour même si le contact a eu lieu depuis plus de 2 jours.
+        * ils seront invités à réaliser un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou dès que possible si le délai de 2 jours est déjà écoulé.
 
           *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à refaire un test.*
 
@@ -89,7 +89,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 2. Test de dépistage à J+2
 
-    Votre enfant devra faire un **test de dépistage** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou le jour même si le contact a eu lieu depuis plus de 2 jours (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+    Votre enfant devra faire un **test de dépistage** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou dès que possible si le délai de 2 jours est déjà écoulé (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
     * Si le test est **négatif** :
         * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
@@ -130,7 +130,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     #### 2. Test de dépistage à J+2
 
-    Votre enfant devra faire un **test de dépistage** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou le jour même si le contact a eu lieu depuis plus de 2 jours (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
+    Votre enfant devra faire un **test de dépistage** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou dès que possible si le délai de 2 jours est déjà écoulé (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
 
     * Si le test est **négatif** :
         * il devra rester **prudent** et éviter de rencontrer des personnes vulnérables ou fragiles ;
