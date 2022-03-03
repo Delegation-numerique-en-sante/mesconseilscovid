@@ -45,7 +45,7 @@ def extract_questions(page):
         details = details.replace("<h2", "<h3").replace("</h2>", "</h3>")
         details = details.replace("<h4", "<h3").replace("</h4>", "</h3>")
         # On remplace les liens relatifs à la volée.
-        details = details.replace('href="#', f'href="/{page.name}.html#')
+        details = details.replace('href="#', f'href="{page.name}.html#')
 
         questions[slug] = {
             "titre": node["titre"],

@@ -1,5 +1,5 @@
 import { differenceEnJours, joursAvant } from './utils'
-import { createElementFromHTML, safeHtml } from './affichage'
+import { createElementFromHTML, escapeHtml } from './affichage'
 
 const JOURS_DE_VALIDITE_DEPISTAGE_NEGATIF = 7
 const JOURS_DE_VALIDITE_DEPISTAGE_POSITIF = 30
@@ -759,10 +759,12 @@ export default class Profil {
     }
 
     renderNom() {
-        return safeHtml`<h3><span class="profil">${this.affichageNom()}</span></h3>`
+        const nomEchappe = escapeHtml(this.affichageNom())
+        return `<h3><span class="profil">${nomEchappe}</span></h3>`
     }
 
     renderButtons(questionnaire) {
+        const nomEchappe = escapeHtml(this.nom)
         const possessifMasculinSingulier = this.estMonProfil() ? 'mon' : 'son'
         const possessifPluriel = this.estMonProfil() ? 'mes' : 'ses'
         var mainButton = ''
@@ -772,33 +774,33 @@ export default class Profil {
                     this.hasSuiviStartDate() && this.hasHistorique()
                         ? 'Continuer'
                         : 'Démarrer'
-                mainButton += safeHtml`
+                mainButton += `
                     <a class="button button-outline suivi-link"
-                        data-set-profil="${this.nom}" href="#suiviintroduction"
+                        data-set-profil="${nomEchappe}" href="#suiviintroduction"
                         >${verbe} ${possessifMasculinSingulier} suivi</a>
                 `
             }
-            mainButton += safeHtml`
+            mainButton += `
                 <a class="button button-outline conseils-link"
-                    data-set-profil="${this.nom}" href="#conseils"
+                    data-set-profil="${nomEchappe}" href="#conseils"
                     >Retrouver ${possessifPluriel} conseils</a>
             `
         } else {
             const label = this.isEmpty() ? 'Démarrer' : 'Continuer'
-            mainButton = safeHtml`
+            mainButton = `
                 <a class="button button-outline button-full-width conseils-link"
-                    data-set-profil="${this.nom}" href="#${questionnaire.firstPage}"
+                    data-set-profil="${nomEchappe}" href="#${questionnaire.firstPage}"
                     >${label} ${possessifMasculinSingulier} questionnaire</a>
             `
         }
         const continueButton = this.isEmpty()
             ? ''
-            : safeHtml`
-        <a data-set-profil="${this.nom}" href="#${questionnaire.firstPage}"
+            : `
+        <a data-set-profil="${nomEchappe}" href="#${questionnaire.firstPage}"
             >Modifier ${possessifPluriel} réponses</a>
         `
-        const deleteButton = safeHtml`
-            <a data-delete-profil="${this.nom}" href="" role="button"
+        const deleteButton = `
+            <a data-delete-profil="${nomEchappe}" href="" role="button"
                 >Supprimer ${possessifPluriel} réponses</a>
             `
         return mainButton + continueButton + deleteButton

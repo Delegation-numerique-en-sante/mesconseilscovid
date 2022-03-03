@@ -76,15 +76,3 @@ export function escapeHtml(str) {
         .replace(/'/g, '&#x27;')
         .replace(/`/g, '&#x60;')
 }
-
-export function safeHtml(literals, ...substitutions) {
-    let result = ''
-
-    for (let i = 0; i < substitutions.length; i++) {
-        result += literals[i]
-        result += escapeHtml(substitutions[i])
-    }
-    // add the last literal.
-    result += literals[literals.length - 1]
-    return result
-}
