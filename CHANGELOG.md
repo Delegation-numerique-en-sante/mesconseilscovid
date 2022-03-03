@@ -1,5 +1,10 @@
 # Changelog
 
+## 2022-03-03
+
+* met à jour les conseils du questionnaire pour les cas contact vaccinés
+* précise la manière d’interpréter J+2 en milieu scolaire
+
 ## 2022-02-28
 
 * allègement du dépistage pour les cas contact vaccinés
