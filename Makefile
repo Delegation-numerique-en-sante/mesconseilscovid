@@ -20,7 +20,7 @@ uninstall-js:
 	rm -rf ./node_modules
 
 clean:
-	rm -rf dist/ src/*.html .cache __pycache__
+	rm -rf dist/ src/*.html .cache .parcel-cache __pycache__
 
 ##
 ## Run JS unit tests matching a given pattern/browser engine.
@@ -81,7 +81,7 @@ test-tools:
 test-feedback:
 	tox -e py38 -c feedback/tox.ini
 
-check: check-external-links check-versions check-orphelins check-diagrammes check-service-worker
+check: check-external-links check-orphelins check-diagrammes
 
 check-external-links:  # Check that links to external pages are still valid.
 	python3 check.py external_links --timeout 40 --delay 0.3
@@ -89,17 +89,11 @@ check-external-links:  # Check that links to external pages are still valid.
 check-internal-links: build  # Check that links to internal pages are still valid.
 	python3 check.py internal_links
 
-check-versions:  # Check that current version matches service-worker one.
-	python3 check.py versions
-
 check-orphelins:  # Check that all markdown files are in use in template.
 	python3 check.py orphelins
 
 check-diagrammes:  # Check that all files from diagrammes/matrice exist.
 	python3 check.py diagrammes
-
-check-service-worker: src/index.html $(firstword $(THEMATIQUES))  # Check that all files in use are listed in service-worker.js.
-	python3 check.py service_worker
 
 HTML_EN = src/covid-in-france.html
 HTML_FR = $(filter-out $(HTML_EN),$(HTML))
@@ -154,17 +148,16 @@ dev-ssl: key.pem dist/index.html  ## Local HTTPS server with auto rebuild (witho
 	python3 serve.py --watch $(open) --ssl
 
 
-pre-commit: pretty lint test-unit dist/index.html check-versions check-orphelins check-diagrammes check-service-worker  ## Interesting prior to commit/push.
+pre-commit: pretty lint test-unit dist/index.html check-orphelins check-diagrammes  ## Interesting prior to commit/push.
 
 release:
 	echo "{\"version\": \"$$(date --iso-8601)\"}" >static/version.json
-	sed -i "s/'network-or-cache-.*'/'network-or-cache-$$(date --iso-8601)'/" src/service-worker.js
 	sed -i "2 a ## $$(date --iso-8601)\n\n* ...\n" CHANGELOG.md
 
 prod: clean install lint pretty test check  ## Make sure everything is clean prior to deploy.
 	# Note: `test` dependency will actually generate the `build`.
 
-.PHONY: serve serve-ssl install install-python install-js clean test test-unit test-integration test-feedback check-external-links check-internal-links check-versions check-documentation check-service-worker check-spelling optimize-images build generate dev pre-commit release prod help
+.PHONY: serve serve-ssl install install-python install-js clean test test-unit test-integration test-feedback check-external-links check-internal-links check-documentation check-spelling optimize-images build generate dev pre-commit release prod help
 
 help:  ## Display this help.
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)

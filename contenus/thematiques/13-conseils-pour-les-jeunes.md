@@ -167,7 +167,7 @@
 
     <div class="voir-aussi">
 
-    - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
+    - Notre page « [Je suis cas contact Covid, que faire ?](cas-contact-a-risque.html) »
 
     - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
 
@@ -214,7 +214,7 @@
 
     <div class="voir-aussi">
 
-    - Notre page « [Je suis cas contact Covid, que faire ?](/cas-contact-a-risque.html) »
+    - Notre page « [Je suis cas contact Covid, que faire ?](cas-contact-a-risque.html) »
 
     - Le [protocole sanitaire](https://www.education.gouv.fr/annee-scolaire-2021-2022-protocole-sanitaire-et-mesures-de-fonctionnement-324257) et les [questions-réponses](https://www.education.gouv.fr/covid-19-questions-reponses) sur le site de l’Éducation nationale
 
@@ -424,7 +424,7 @@
 
     <div class="voir-aussi">
 
-    * Pour plus d’informations, consulte notre page sur [les voyages et le passe sanitaire](/pass-sanitaire-qr-code-voyages.html).
+    * Pour plus d’informations, consulte notre page sur [les voyages et le passe sanitaire](pass-sanitaire-qr-code-voyages.html).
 
     </div>
 
@@ -463,7 +463,7 @@
 
     <div class="voir-aussi">
 
-    - En savoir plus sur les [types de tests de dépistage](/tests-de-depistage.html) et trouver celui adapté à ta situation.
+    - En savoir plus sur les [types de tests de dépistage](tests-de-depistage.html) et trouver celui adapté à ta situation.
 
     </div>
 
@@ -486,7 +486,7 @@
         - reste **isolé 10 jours** à partir de la date du début de tes symptômes, ou de ton test positif si tu n’as pas de symptômes ;
         - en l’absence de fièvre ou de difficultés respiratoires depuis **48 heures**, tu pourras mettre fin à ton isolement après **7 jours** seulement, si tu fais un test antigénique ou PCR et que le résultat est **négatif**.
     * **Préviens les personnes** avec qui tu as eu un contact récent (amis, autres élèves…) pour qu’ils se fassent tester, car ils sont **cas contact**.
-    * Les [personnes avec qui tu habites](/je-vis-avec-personne-covid-positive.html) sont également **cas contact** et doivent s’isoler si elles ne sont pas vaccinées.
+    * Les [personnes avec qui tu habites](je-vis-avec-personne-covid-positive.html) sont également **cas contact** et doivent s’isoler si elles ne sont pas vaccinées.
 
     L’Assurance Maladie va t’envoyer (ou à tes parents) un **SMS** pour t’expliquer ce que tu dois faire, te fournir un justificatif d’absence, et vous contactera peut-être aussi par **téléphone** pour faire la liste des personnes avec qui tu as été en contact dans les jours précédents.
 

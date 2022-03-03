@@ -1,6 +1,6 @@
 <div class="conseil">
 
-Vous pouvez consultez notre page dédiée sur les [« conseils liés aux activités et à la santé des enfants »](/conseils-pour-les-enfants.html).
+Vous pouvez consultez notre page dédiée sur les [« conseils liés aux activités et à la santé des enfants »](conseils-pour-les-enfants.html).
 
 </div>
 

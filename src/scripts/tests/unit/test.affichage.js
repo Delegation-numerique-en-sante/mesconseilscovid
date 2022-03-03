@@ -25,14 +25,4 @@ describe('Affichage', function () {
         assert.strictEqual(element.firstElementChild.className, 'visible')
         assert.isFalse(element.firstElementChild.hasAttribute('hidden'))
     })
-
-    it('On peut échapper du HTML depuis un tag pour template literal', function () {
-        var bar = 'baz'
-        assert.strictEqual(affichage.safeHtml`foo ${bar}`, 'foo baz')
-        var evil = '<script>alert("something evil")</script>'
-        assert.strictEqual(
-            affichage.safeHtml`foo ${evil}`,
-            'foo &lt;script&gt;alert(&quot;something evil&quot;)&lt;/script&gt;'
-        )
-    })
 })

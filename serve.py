@@ -20,7 +20,7 @@ from watchdog.tricks import ShellCommandTrick
 import build
 
 PARCEL_CLI = "./node_modules/.bin/parcel"
-BUNDLER_COMMAND = f"{PARCEL_CLI} watch --no-hmr src/*.html"
+BUNDLER_COMMAND = f"{PARCEL_CLI} watch --target default --no-hmr src/*.html"
 
 LIVERELOAD_DELAY = 0.1
 

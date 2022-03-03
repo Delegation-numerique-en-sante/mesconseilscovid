@@ -66,12 +66,6 @@ jobs:
         run: |
           make test-feedback
 
-      - name: Check versions
-        run: |
-          make check-versions
-        env:
-          PYTHONUNBUFFERED: "1"
-
       - name: Check orphelins
         run: |
           make check-orphelins
@@ -81,12 +75,6 @@ jobs:
       - name: Check diagrammes
         run: |
           make check-diagrammes
-        env:
-          PYTHONUNBUFFERED: "1"
-
-      - name: Check service-worker
-        run: |
-          make check-service-worker
         env:
           PYTHONUNBUFFERED: "1"
 

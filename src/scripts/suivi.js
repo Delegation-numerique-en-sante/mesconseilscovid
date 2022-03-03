@@ -1,5 +1,5 @@
 import { format } from 'timeago.js'
-import { createElementFromHTML, safeHtml } from './affichage'
+import { createElementFromHTML, escapeHtml } from './affichage'
 
 import AlgorithmeSuivi from './algorithme/suivi'
 import { titleCase } from './utils'
@@ -11,6 +11,7 @@ export default class SuiviView {
     }
 
     renderButtonSuivi() {
+        const nomEchappe = escapeHtml(this.profil.nom)
         const possessifMasculinSingulier = this.profil.estMonProfil() ? 'mon' : 'son'
         const possessifPluriel = this.profil.estMonProfil() ? 'mes' : 'ses'
         const label =
@@ -20,20 +21,20 @@ export default class SuiviView {
         const nextPage = this.profil.hasSymptomesStartDate()
             ? 'suivisymptomes'
             : 'symptomes'
-        const suiviButton = safeHtml`
+        const suiviButton = `
             <a class="button button-full-width conseils-link"
-                data-set-profil="${this.profil.nom}" href="#${nextPage}"
+                data-set-profil="${nomEchappe}" href="#${nextPage}"
                 >${label} ${possessifMasculinSingulier} suivi</a>
         `
-        const conseilsButton = safeHtml`
+        const conseilsButton = `
             <a class="button button-outline button-full-width conseils-link"
-                data-set-profil="${this.profil.nom}" href="#conseils"
+                data-set-profil="${nomEchappe}" href="#conseils"
                 >Retrouver ${possessifPluriel} conseils</a>
         `
         let deleteLink = ''
         if (this.profil.hasSuiviStartDate()) {
-            deleteLink = safeHtml`
-                <a data-delete-suivi="${this.profil.nom}" href="" role="button"
+            deleteLink = `
+                <a data-delete-suivi="${nomEchappe}" href="" role="button"
                     >Supprimer ${possessifMasculinSingulier} suivi</a>
             `
         }

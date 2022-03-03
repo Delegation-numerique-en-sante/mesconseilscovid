@@ -1,0 +1,26 @@
+{
+    "extends": "@parcel/config-default",
+    "namers": [
+        "parcel-namer-rewrite"
+    ],
+    "resolvers": [
+        "@parcel/resolver-glob",
+        "parcel-resolver-ignore",
+        "..."
+    ],
+    "transformers": {
+        "*.{js,ts}": [
+            "@parcel/transformer-js"
+        ]
+    },
+    "optimizers": {
+        "*.html": [
+            "parcel-optimizer-ogimage",
+            "..."
+        ]
+    },
+    "reporters": [
+        "...",
+        "parcel-reporter-static-files-copy"
+    ]
+}
