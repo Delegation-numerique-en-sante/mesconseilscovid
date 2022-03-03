@@ -4,6 +4,7 @@
 
 * met à jour les conseils du questionnaire pour les cas contact vaccinés
 * précise la manière d’interpréter J+2 en milieu scolaire
+* annonce la suspension du passe vaccinal au 14 mars 2022
 
 ## 2022-02-28
 
