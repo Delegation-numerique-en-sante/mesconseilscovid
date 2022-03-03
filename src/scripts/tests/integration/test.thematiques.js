@@ -29,7 +29,7 @@ describe('Thématiques', function () {
 
         await Promise.all([
             page.click(
-                '.thematiques a >> text="Nouveau passe vaccinal, que faut-il savoir\u00a0?"'
+                '.thematiques a >> text="Passe vaccinal et passe sanitaire, que faut-il savoir\u00a0?"'
             ),
             page.waitForNavigation({
                 url: '**/pass-sanitaire-qr-code-voyages.html',

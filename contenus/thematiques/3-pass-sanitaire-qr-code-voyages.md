@@ -1,4 +1,4 @@
-# Nouveau passe vaccinal, que faut-il savoir ?
+# Passe vaccinal et passe sanitaire, que faut-il savoir ?
 
 <img src="illustrations/pass_sanitaire.svg">
 
@@ -14,11 +14,20 @@
 
 ## Passe vaccinal & passe sanitaire en France
 
+.. question:: Jusqu’à quand l’usage du passe vaccinal est-il prévu ?
+    :level: 3
+    :expires: 14 mars 2022
+
+    Le gouvernement a annoncé que l’application du passe vaccinal serait **suspendue** à partir du **lundi 14 mars 2022**.
+
+    Le **passe sanitaire** restera en vigueur dans les établissements de santé, les maisons de retraites, les établissements accueillant des personnes en situation de handicap.
+
+
 .. question:: Qu’est-ce que le passe vaccinal ?
     :level: 3
+    :expires: 14 mars 2022
 
     Depuis le **lundi 24 janvier**, le passe vaccinal **remplace le passe sanitaire** dans la plupart des situations. Il s’applique à toutes les personnes âgées de **16 ans ou plus**. Les règles du **passe sanitaire** continuent à s’appliquer aux mineurs âgés de **12 à 15 ans**.
-
     Le **passe vaccinal** atteste du fait :
     - que vous êtes **complètement vacciné(e)**, c’est-à-dire que vous avez effectué votre vaccination initiale et reçu une **dose de rappel** si nécessaire (*voir tableau ci-dessous*) ;
 
@@ -116,13 +125,6 @@
     - [J’ai été vacciné à l’étranger avec un vaccin reconnu en France, comment obtenir un QR code valable en France ?](#j-ai-ete-vaccine-a-l-etranger-avec-un-vaccin-reconnu-en-france-comment-obtenir-un-qr-code-valable-en-france)
 
     </div>
-
-
-.. question:: Jusqu’à quand l’usage du passe vaccinal est-il prévu ?
-    :level: 3
-    :expires: 31 juillet 2022
-
-    Le Parlement a autorisé le gouvernement à prolonger l’utilisation du passe vaccinal (auparavant passe sanitaire) jusqu’au **31 juillet 2022** si la situation épidémique le demande.
 
 
 .. question:: Avant quelle date dois-je recevoir la dose de rappel, dite 3<sup>e</sup> dose, pour conserver mon passe vaccinal ?

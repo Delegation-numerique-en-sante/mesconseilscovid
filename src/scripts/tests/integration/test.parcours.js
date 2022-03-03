@@ -83,7 +83,7 @@ describe('Parcours', function () {
 
             await Promise.all([
                 page.click(
-                    '#page.ready .thematiques a >> text="Nouveau passe vaccinal, que faut-il savoir\u00a0?"'
+                    '#page.ready .thematiques a >> text="Passe vaccinal et passe sanitaire, que faut-il savoir\u00a0?"'
                 ),
                 page.waitForNavigation({
                     url: '**/pass-sanitaire-qr-code-voyages.html',
