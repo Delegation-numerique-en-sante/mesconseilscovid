@@ -73,6 +73,20 @@ import pytest
             "«\u00a0Comment mettre son masque…\u00a0»",
             "«&nbsp;Comment mettre son masque…&nbsp;»",
         ),
+        (
+            """<h3>
+                Si vous êtes complètement vacciné(e) :
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
+            </h3>""",
+            """<h3>
+                Si vous êtes complètement vacciné(e)\u00a0:
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
+            </h3>""",
+            """<h3>
+                Si vous êtes complètement vacciné(e)&nbsp;:
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="m6 9 6 6 6-6"/></svg>
+            </h3>""",
+        ),
     ],
 )
 def test_espaces_insecables(in_, out_unicode, out_html):
