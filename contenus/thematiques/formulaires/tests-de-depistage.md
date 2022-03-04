@@ -91,36 +91,50 @@
 
 <div id="{{prefixe}}-symptomes-moins-4-jours-reponse" class="statut statut-bleu" hidden>
 
-Vous avez des symptômes qui peuvent évoquer la Covid depuis moins de 4 jours, nous vous recommandons de faire un test **antigénique** ou **PCR nasopharyngé**. Consultez notre page thématique [« J’ai des symptômes de la Covid, que faire ? »](j-ai-des-symptomes-covid.html).
+*Vous avez des symptômes qui peuvent évoquer la Covid depuis moins de 4 jours.*
+
+Nous vous recommandons de faire un **test PCR** nasopharyngé ou un **test antigénique**.
+
+👉 Pour plus d’infos : [« J’ai des symptômes de la Covid, que faire ? »](j-ai-des-symptomes-covid.html)
 
 </div>
 
 <div id="{{prefixe}}-symptomes-plus-4-jours-reponse" class="statut statut-bleu" hidden>
 
-Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours, nous vous recommandons de faire un **test PCR nasopharyngé**. Consultez notre page thématique [« J’ai des symptômes de la Covid, que faire ? »](j-ai-des-symptomes-covid.html).
+*Vous avez des symptômes qui peuvent évoquer la Covid depuis plus de 4 jours.*
+
+Nous vous recommandons de faire un **test PCR nasopharyngé**.
+
+👉 Pour plus d’infos : [« J’ai des symptômes de la Covid, que faire ? »](j-ai-des-symptomes-covid.html)
 
 </div>
 
 <div id="{{prefixe}}-pas-symptomes-cas-contact-oui-reponse" class="statut statut-bleu" hidden>
 
-Vous n’avez pas de symptômes qui peuvent évoquer la Covid mais vous êtes cas contact, nous vous recommandons de faire un **test antigénique** si vous venez de l’apprendre.
+*Vous n’avez pas de symptômes qui peuvent évoquer la Covid mais vous êtes cas contact.*
 
-Pour un test de contrôle (7 jours après votre contact à risque ), les tests **antigénique** ou **PCR nasopharyngé** sont indiqués.  Consultez notre page thématique [« Je suis cas contact Covid, que faire ? »](cas-contact-a-risque.html).
+- Si vous êtes complètement vacciné(e), vous devrez faire un **test PCR**, un **test antigénique** ou un **autotest**, deux jours après avoir appris que vous étiez cas contact.
+
+- Si vous êtes complètement vacciné(e), vous devrez faire un **test PCR**, un **test antigénique** à l’issue des 7 jours d’isolement après votre contact à risque.
+
+👉 Pour plus d’infos : [« Je suis cas contact, que faire ? »](cas-contact-a-risque.html)
 
 </div>
 
 <div id="{{prefixe}}-pas-symptomes-pas-cas-contact-auto-test-oui-reponse" class="statut statut-bleu" hidden>
 
-Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pas cas contact mais votre autotest est positif. Vous devez confirmer ce résultat avec un test **PCR nasopharyngé** et rester en isolement le temps d’obtenir cette confirmation.
+*Vous n’avez pas de symptômes qui peuvent évoquer la Covid, vous n’êtes pas cas contact mais votre autotest est positif.*
+
+Vous devez confirmer ce résultat avec un **test PCR nasopharyngé** et rester en isolement le temps d’obtenir cette confirmation.
 
 </div>
 
 <div id="{{prefixe}}-pas-symptomes-pas-cas-contact-auto-test-non-reponse" class="statut statut-bleu" hidden>
 
-Vous n’avez pas de symptômes qui peuvent évoquer la Covid et vous n’êtes pas cas contact :
+*Vous n’avez pas de symptômes qui peuvent évoquer la Covid et vous n’êtes pas cas contact.*
 
-* Si vous souhaitez obtenir un « [passe sanitaire](pass-sanitaire-qr-code-voyages.html) » (mineurs de 12 à 15 ans), un test négatif **PCR nasopharyngé** ou **antigénique**, réalisé il y a moins de **24 h** est nécessaire.
-* Si vous rendez visite à des personnes vulnérables, un test **antigénique** ou **PCR nasopharyngé** est indiqué.
+* Si vous souhaitez obtenir un « [passe sanitaire](pass-sanitaire-qr-code-voyages.html) » (mineurs de 12 à 15 ans), le résultat négatif de **moins de 24 h** d’un **test PCR** nasopharyngé ou d’un **test antigénique** est nécessaire.
+* Si vous rendez visite à des personnes vulnérables, un **test PCR** nasopharyngé ou un **test antigénique** est indiqué.
 * Si vous travaillez régulièrement avec des personnes fragiles, il est recommandé de vous tester régulièrement avec les **autotests** vendus en pharmacie (les professionnels exerçant à domicile auprès de personnes vulnérables peuvent obtenir la prise en charge de 10 autotests par mois en présentant leur carte professionnelle au pharmacien).
 
 </div>
