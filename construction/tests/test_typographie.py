@@ -93,4 +93,6 @@ def test_espaces_insecables(in_, out_unicode, out_html):
     from construction.typographie import typographie
 
     assert typographie(in_) == out_unicode
+    assert typographie(out_unicode) == out_unicode
     assert typographie(in_, html=True) == out_html
+    assert typographie(out_html, html=True) == out_html
