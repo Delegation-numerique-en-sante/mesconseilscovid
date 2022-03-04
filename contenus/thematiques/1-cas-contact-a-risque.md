@@ -126,7 +126,7 @@ Si vous ne pouvez pas **télétravailler**, vous pouvez [**demander un arrêt de
 
 <div class="conseil">
 
-Vous devez faire un test de dépistage (PCR ou antigénique)  gratuit :
+Vous devez faire un test de dépistage (PCR ou antigénique) gratuit :
 
 * **7 jours** après votre **dernier contact** avec la personne positive ;
 * ou **dès que possible** en cas d’apparition de symptômes évocateurs de la Covid.

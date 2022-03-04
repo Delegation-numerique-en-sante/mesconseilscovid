@@ -110,7 +110,7 @@ describe('Tests', function () {
         // On propose un test PCR ou antigénique.
         assert.include(
             await questionnaire.recuperationStatut('symptomes-moins-4-jours'),
-            'faire un test antigénique ou PCR nasopharyngé.'
+            'faire un test PCR nasopharyngé ou un test antigénique.'
         )
     })
 
@@ -148,7 +148,7 @@ describe('Tests', function () {
         // On propose un test antigénique immédiat.
         assert.include(
             await questionnaire.recuperationStatut('pas-symptomes-cas-contact-oui'),
-            'faire un test antigénique si vous venez de l’apprendre.'
+            'faire un test PCR, un test antigénique ou un autotest, deux jours après'
         )
     })
 
@@ -193,11 +193,14 @@ describe('Tests', function () {
             'pas-symptomes-pas-cas-contact-auto-test-non'
         )
         // On propose un test PCR ou antigénique pour le passe sanitaire.
-        assert.include(statut, 'un test négatif PCR nasopharyngé ou antigénique')
+        assert.include(
+            statut,
+            'résultat négatif de moins de 24\u202fh d’un test PCR nasopharyngé ou d’un test antigénique'
+        )
         // On propose un test PCR ou antigénique pour visiter des personnes vulnérables.
         assert.include(
             statut,
-            'personnes vulnérables, un test antigénique ou PCR nasopharyngé'
+            'personnes vulnérables, un test PCR nasopharyngé ou un test antigénique'
         )
         // On propose les autotests pour les personnes au contact de personnes fragiles.
         assert.include(statut, 'vous tester régulièrement avec les autotests')
