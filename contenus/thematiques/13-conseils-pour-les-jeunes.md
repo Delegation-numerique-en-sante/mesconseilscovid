@@ -418,7 +418,7 @@
     :level: 3
 
     Si tu as **12 ans ou plus**, une attestation de vaccination complète te donnera accès aux lieux qui nécessitent un **passe sanitaire**, mais tu peux aussi présenter :
-    * un [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) (**résultat positif** à un test PCR ou antigénique de plus de 11 jours),
+    * un [certificat de rétablissement](pass-sanitaire-qr-code-voyages.html#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) (**résultat positif** à un test PCR ou antigénique de plus de 11 jours),
     * une attestation de **contre-indication** à la vaccination ;
     * un **test PCR ou antigénique négatif** de moins de 24 h.
 

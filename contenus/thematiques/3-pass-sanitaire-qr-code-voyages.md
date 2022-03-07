@@ -30,7 +30,7 @@
 .. question:: Qui est concerné par le passe sanitaire ?
     :level: 3
 
-    Toutes les personnes âgées de **12 ans et plus** qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal).
+    Toutes les personnes âgées de **12 ans et plus** qui ne présentent pas de [contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-sanitaire).
 
     <div class="voir-aussi">
 
@@ -51,7 +51,7 @@
 
     - ou un **résultat négatif** à un test PCR ou antigénique de **moins de 24 h**,
 
-    - un [certificat de contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal) établi par l’Assurance Maladie.
+    - un [certificat de contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-sanitaire) établi par l’Assurance Maladie.
 
     <div class="conseil conseil-jaune">
 
