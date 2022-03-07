@@ -368,8 +368,8 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     * une **attestation de vaccination complète** (la dose de rappel n’est **pas obligatoire** pour les mineurs) ;
     * un **test PCR ou antigénique négatif** de moins de 24 h ;
-    * un **test PCR ou antigénique positif** de plus de 11 jours, aussi appelé [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) ;
-    * un [certificat de contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal) établi par l’Assurance Maladie.
+    * un **test PCR ou antigénique positif** de plus de 11 jours, aussi appelé [certificat de rétablissement](pass-sanitaire-qr-code-voyages.html#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) ;
+    * un [certificat de contre-indication à la vaccination](pass-sanitaire-qr-code-voyages.html#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-sanitaire) établi par l’Assurance Maladie.
 
     <div class="voir-aussi">
 
