@@ -253,22 +253,6 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: Est-ce que mon enfant a besoin du passe sanitaire pour aller à l’école ?
-    :level: 3
-
-    **Non**. Le passe vaccinal ou le passe sanitaire ne sont **pas obligatoires** pour accéder aux établissements d’enseignement, écoles, collèges ou lycées.
-
-
-    <div class="voir-aussi">
-
-    - Notre rubrique sur la [vaccination des enfants et adolescents](#la-vaccination-contre-la-covid) ci-dessous
-
-    - Notre autre page sur le [passe vaccinal](pass-sanitaire-qr-code-voyages.html)
-
-    </div>
-
-
-
 .. section:: La vaccination contre la Covid
     :tags: 5 à 11 ans, 12 à 17 ans
 
@@ -372,7 +356,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     <div class="voir-aussi">
 
-    * Pour plus d’informations, consultez notre page sur [les voyages et le passe vaccinal](pass-sanitaire-qr-code-voyages.html).
+    * Pour plus d’informations, consultez notre page sur [les voyages et le passe sanitaire](pass-sanitaire-qr-code-voyages.html).
 
     </div>
 
@@ -380,23 +364,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: La vaccination des mineurs de 12 ans et plus est-t-elle obligatoire pour obtenir le « passe sanitaire » ?
     :level: 3
 
-    * Pour les adolescent(e)s de **12 à 15 ans**, les règles du **passe sanitaire** continuent à s’appliquer, et plusieurs justificatifs, au choix, sont utilisables en France et pour les voyages en Union européenne :
+    Il y a plusieurs façons d’obtenir un passe sanitaire :
 
-        * une **attestation de vaccination complète** (toutes les doses et respect du délai de 7 jours après la dernière dose en France, ou 14 jours pour voyager à l’étranger) ;
-        * un **test PCR ou antigénique négatif** de moins de 24 h ;
-        * un **test PCR positif** de plus de 11 jours et moins de 4 mois, aussi appelé *certificat de rétablissement*.
-
-    * Le **passe vaccinal** s’applique aux adolescent(e)s de **16 à 17 ans**, et les justificatifs valables pour eux seront donc uniquement :
-        * une **attestation de vaccination complète** (toutes les doses et respect du délai de 7 jours après la dernière dose en France, ou 14 jours pour voyager à l’étranger) ;
-        * un **test PCR positif** de plus de 11 jours et moins de 4 mois, aussi appelé *certificat de rétablissement*.
-
-    <div class="conseil conseil-jaune">
-
-    <span class="nouveau">nouveau</span> Depuis le **lundi 24 janvier 2022**, les adolescent(e)s de **12 à 17 ans** peuvent recevoir une **dose de rappel** (dite 3<sup>e</sup> dose) : ce rappel vaccinal est recommandé, mais il n’est **pas obligatoire** dans le cadre du passe vaccinal ou du passe sanitaire.
-
-    </div>
-
-    Par ailleurs, le ou la mineur(e) non-vacciné(e) accompagnant ses parents vaccinés lors d’un voyage bénéficiera des mêmes facilités qu’eux. Par exemple, un(e) mineur(e) non-vacciné(e) pourra accompagner ses parents vaccinés lors d’un voyage dans un [pays classé orange](https://www.gouvernement.fr/voyager-depuis-et-vers-l-etranger-mode-d-emploi) sans justifier d’un motif impérieux pour s’y rendre.
+    * une **attestation de vaccination complète** (la dose de rappel n’est **pas obligatoire** pour les mineurs) ;
+    * un **test PCR ou antigénique négatif** de moins de 24 h ;
+    * un **test PCR ou antigénique positif** de plus de 11 jours, aussi appelé [certificat de rétablissement](#comment-obtenir-un-certificat-de-retablissement-avec-qr-code) ;
+    * un [certificat de contre-indication à la vaccination](#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal) établi par l’Assurance Maladie.
 
     <div class="voir-aussi">
 
@@ -405,10 +378,12 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     </div>
 
 
-.. question:: La dose de rappel (dite 3<sup>e</sup> dose) est-elle obligatoire pour le passe vaccinal ou passe sanitaire des moins de 18 ans ?
+.. question:: La dose de rappel (dite 3<sup>e</sup> dose) est-elle obligatoire pour le passe sanitaire des moins de 18 ans ?
     :level: 3
 
-    Non, la **3<sup>e</sup> dose** n’est pas obligatoire pour prolonger le passe vaccinal (16 à 17 ans) ou sanitaire (12 à 15 ans) des mineurs. La dose de rappel est nécessaire pour prolonger la validité du passe vaccinal seulement à partir de **18 ans et 1 mois.**
+    Les adolescent(e)s de **12 à 17 ans** peuvent recevoir une **dose de rappel** (dite 3<sup>e</sup> dose) : ce rappel vaccinal est **recommandé**, mais il n’est **pas obligatoire** dans le cadre du passe sanitaire.
+
+    La dose de rappel est nécessaire pour prolonger la validité du passe sanitaire seulement à partir de **18 ans et 1 mois.**
 
 
 .. section:: Questions médicales et dépistage

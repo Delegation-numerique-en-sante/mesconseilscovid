@@ -13,7 +13,7 @@
 
 ## Le rappel vaccinal (dit « 3<sup>e</sup> dose »)
 
-.. injection:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal
+.. injection:: pass-sanitaire-qr-code-voyages.html#quand-dois-je-recevoir-mon-rappel-pour-conserver-mon-passe-sanitaire
 
 
 .. question:: J’ai été vacciné(e) avec le vaccin Janssen. Comment se passe mon rappel ?
@@ -23,7 +23,7 @@
 
     #### Vous n’avez **pas eu la Covid**
 
-    1. Vous devrez recevoir une **dose supplémentaire** de vaccin Pfizer ou Moderna (dose complète) dans les **4 semaines à 2 mois** après votre injection. Cette 2<sup>e</sup> injection complètera votre **vaccination initiale** et prolongera votre **passe vaccinal**.
+    1. Vous devrez recevoir une **dose supplémentaire** de vaccin Pfizer ou Moderna (dose complète) dans les **4 semaines à 2 mois** après votre injection. Cette 2<sup>e</sup> injection complètera votre **vaccination initiale** et prolongera votre **passe sanitaire**.
 
     2. Vous devrez ensuite recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 4 mois** après cette injection supplémentaire.
 
@@ -77,7 +77,7 @@
 
     1. La dose supplémentaire n’est **pas nécessaire**.
 
-    2. Vous devrez recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **4 semaines à 2 mois** après votre injection. Ce rappel prolongera votre passe vaccinal.
+    2. Vous devrez recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **4 semaines à 2 mois** après votre injection. Ce rappel prolongera votre passe sanitaire.
 
     <div class="tableaux-vaccination-complete">
 
@@ -127,7 +127,7 @@
     #### Vous avez eu la Covid **après** votre injection de **Janssen**
 
     - Vous avez été testé positif **dans les 15 jours** suivant cette injection :
-        1. vous devrez recevoir une **dose supplémentaire** de vaccin (Pfizer ou Moderna, en dose complète) dans les **4 semaines** après votre injection : cette 2<sup>e</sup> injection complètera votre **vaccination initiale** et prolongera votre **passe vaccinal** ;
+        1. vous devrez recevoir une **dose supplémentaire** de vaccin (Pfizer ou Moderna, en dose complète) dans les **4 semaines** après votre injection : cette 2<sup>e</sup> injection complètera votre **vaccination initiale** et prolongera votre **passe sanitaire** ;
         2. vous devrez ensuite recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 4 mois** après cette injection supplémentaire.
 
     <div class="tableaux-vaccination-complete">
@@ -278,7 +278,7 @@
         </table>
 
     2. si vous avez eu la Covid **plus de 15 jours** après cette dose supplémentaire :
-        * vous n’avez **pas besoin** de recevoir une dose de rappel pour utiliser votre passe vaccinal en France. Attention, la réglementation varie d’un pays à l’autre et la dose de rappel peut être exigée lors d’un voyager à l’étranger.
+        * vous n’avez **pas besoin** de recevoir une dose de rappel pour utiliser votre passe sanitaire en France. Attention, la réglementation varie d’un pays à l’autre et la dose de rappel peut être exigée lors d’un voyager à l’étranger.
 
         <div class="tableaux-vaccination-complete">
 
@@ -334,7 +334,7 @@
     Pensez à préciser au professionnel de santé qui vous vaccinera que vous avez été contaminé avant votre première dose, pour que cette dose soit bien prise en compte comme un rappel.
 
 
-.. injection:: pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-initiale-comment-prolonger-mon-passe-vaccinal
+.. injection:: pass-sanitaire-qr-code-voyages.html#j-ai-eu-la-covid-apres-ma-vaccination-initiale-comment-prolonger-mon-passe-sanitaire
 
 
 .. question:: Je suis cas contact, puis-je recevoir la dose de rappel ?
@@ -363,7 +363,7 @@
 
     Même si votre sérologie est **positive**, et que votre taux d’anticorps est jugé relativement élevé, la Haute Autorité de Santé préconise actuellement de **faire un rappel vaccinal**.
 
-    Notez que la sérologie positive n’est **pas un certificat de rétablissement** et ne peut pas tenir lieu de passe vaccinal ou sanitaire. Pour cela, il faut un résultat positif à un test antigénique ou à un test PCR.
+    Notez que la sérologie positive n’est **pas un certificat de rétablissement** et ne peut pas tenir lieu de passe sanitaire. Pour cela, il faut un résultat positif à un test antigénique ou à un test PCR.
 
      <div class="voir-aussi">
 
@@ -496,6 +496,28 @@
     - Les personnes de **moins de 18 ans** sont vacciné(e)s exclusivement avec les vaccins à ARN messager et de préférence avec le vaccin Pfizer.
 
 
+.. question:: Je ne suis pas encore vacciné(e). Combien de doses dois-je recevoir ?
+    :level: 3
+
+    - Si vous n’êtes pas encore vacciné(e) contre la Covid, vous obtiendrez votre passe sanitaire une fois que vous aurez finalisé votre **primo-vaccination** en recevant **1 ou 2** injections de vaccin, selon votre situation.
+
+    <div class="tableaux-vaccination-complete">
+      {{ tableau_vaccination('vaccination_initiale') }}
+    </div>
+
+    Pour conserver ce passe, si vous avez plus de **18 ans et 1 mois**, vous devrez ensuite recevoir une **dose de rappel** (dite 3<sup>e</sup> dose) dans un délai de **3 à 4 mois**, sauf si vous êtes contaminé(e) par la Covid entre-temps.
+
+    <div class="tableaux-vaccination-complete">
+      {{ tableau_vaccination('rappel_vaccinal') }}
+    </div>
+
+    <div class="voir-aussi">
+
+    - [Réponses à vos questions sur la primo-vaccination](je-veux-me-faire-vacciner.html#la-vaccination-initiale-schema-vaccinal-a-1-ou-2-doses)
+
+    </div>
+
+
 .. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose lors de la vaccination initiale (primo-vaccination) ?
     :level: 3
     :expires: 9 avril 2022
@@ -548,7 +570,7 @@
 
     <div class="voir-aussi">
 
-    - [Je ne peux pas me faire vacciner, comment obtenir un passe vaccinal ?](pass-sanitaire-qr-code-voyages.html#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-vaccinal)
+    - [Je ne peux pas me faire vacciner, comment obtenir un passe sanitaire ?](pass-sanitaire-qr-code-voyages.html#je-ne-peux-pas-me-faire-vacciner-comment-obtenir-un-passe-sanitaire)
 
     </div>
 
