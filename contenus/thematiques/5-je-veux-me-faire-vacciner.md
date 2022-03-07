@@ -409,6 +409,8 @@
 
     - si vous avez **plus de 30 ans**, et en particulier si vous êtes à risque de forme grave, le vaccin **Moderna** pourra par contre être privilégié, car plusieurs études récentes semblent montrer une efficacité vaccinale légèrement supérieure.
 
+    À ce stade, le vaccin **Novavax** n’est pas autorisé en vaccination de rappel.
+
     Le vaccin utilisé pour le rappel n’a **pas besoin d’être le même** que celui utilisé pour la vaccination initiale. Par exemple, il est possible de recevoir un rappel avec le vaccin *Pfizer* même si on a été vacciné(e) initialement avec le vaccin *Moderna*, *AstraZeneca* ou *Janssen*.
 
 
@@ -461,6 +463,7 @@
 
     </div>
 
+
 .. question:: J’ai des difficultés à me déplacer, puis-je me faire vacciner à domicile ?
     :level: 3
 
@@ -479,6 +482,19 @@
 
  </div>
 
+.. question:: Quel vaccin choisir pour ma vaccination initiale (primo-vaccination) ?
+    :level: 3
+
+    - Chez les adultes, la Haute autorité de santé recommande de privilégier l’utilisation de **vaccins à ARN messager** (Pfizer ou Moderna) car ils sont plus efficaces qu’AstraZeneca ou Janssen pour réduire la transmission et les formes symptomatiques.
+
+      * Si vous avez **moins de 30 ans**, privilégiez le vaccin **Pfizer** lorsque c’est possible (en l’attente de plus de données sur le risque de myocardite avec le vaccin Moderna chez les personnes plus jeunes).
+      * Si vous avez **plus de 30 ans**, le vaccin **Moderna** pourra être privilégié car plusieurs études récentes semblent montrer une efficacité vaccinale légèrement supérieure.
+
+    - <span class="nouveau">nouveau</span>Un nouveau vaccin, le Nuvaxovid<sup>®</sup> du laboratoire **Novavax** est disponible en France depuis **début mars 2022**, pour les personnes qui ne peuvent pas ou ne souhaitent pas être vaccinées avec un vaccin à ARN messager.
+
+    - Les personnes de **moins de 18 ans** sont vacciné(e)s exclusivement avec les vaccins à ARN messager et de préférence avec le vaccin Pfizer.
+
+
 .. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose lors de la vaccination initiale (primo-vaccination) ?
     :level: 3
 
@@ -488,32 +504,25 @@
         * **3 à 7 semaines** après la première, pour le vaccin **Pfizer** ;
         * **4 à 7 semaines** après la première, pour le vaccin **Moderna**.
 
+    * <span class="nouveau">nouveau</span> Si vous avez reçu une première dose de vaccin **Novavax**, il faut recevoir la 2<sup>e</sup> dose **3 semaines** après la première (avec une tolérance de **18 à 28 jours**).
+
     * Si vous avez reçu une première dose de vaccin **Janssen**, il faut recevoir une **dose supplémentaire** avec un **vaccin à ARN messager** (Pfizer ou Moderna) **4 semaines** après la première injection.
 
     * Si vous avez reçu une première dose de vaccin **AstraZeneca**, la Haute autorité de santé recommande de recevoir une **2<sup>e</sup> dose** d’un **vaccin à ARN messager** (Pfizer ou Moderna), après un délai de **4 semaines**.
 
 
-.. question:: Quel vaccin choisir pour ma vaccination initiale (primo-vaccination) ?
-    :level: 3
-
-    La Haute autorité de santé recommande de privilégier l’utilisation de **vaccins à ARN messager** (Pfizer ou Moderna) car ils sont plus efficaces pour réduire la transmission et les formes symptomatiques des nouveaux variants.
-
-    * Si vous avez **moins de 30 ans**, privilégiez le vaccin **Pfizer** lorsque c’est possible (en l’attente de plus de données sur le risque de myocardite avec le vaccin Moderna chez les personnes plus jeunes).
-    * Si vous avez **plus de 30 ans**, le vaccin **Moderna** pourra être privilégié car plusieurs études récentes semblent montrer une efficacité vaccinale légèrement supérieure.
-
-    Les personnes de moins de 18 ans sont vacciné(e)s exclusivement avec les vaccins à ARN messager et de préférence avec le vaccin Pfizer.
-
-
 .. question:: Y a-t-il des contre-indications à la vaccination ?
     :level: 3
 
-    Les contre-indications à la vaccination sont les suivantes :
+    <span class="nouveau">nouveau</span> Pour le nouveau vaccin **Novavax**, la seule contre-indication est l’hypersensibilité à la substance active ou à l’un des excipients (👉 [consulter sa composition](https://www.mesvaccins.net/web/vaccines/667-nuvaxovid#vaccin_composition)).
+
+    Pour les **autres vaccins**, les contre-indications sont les suivantes :
 
     * **allergie à un composant** du vaccin, notamment au polyéthylène glycol (PEG) ;
 
         <div class="voir-aussi">
 
-        - consulter la composition du vaccin [Pfizer-BioNTech](https://www.mesvaccins.net/web/vaccines/658-comirnaty-pfizer-biontech#vaccin_composition), [Moderna](https://www.mesvaccins.net/web/vaccines/656-spikevax-covid-19-vaccine-moderna#vaccin_composition), [AstraZeneca](https://www.mesvaccins.net/web/vaccines/650-vaxzevria-covid-19-vaccine-astrazeneca#vaccin_composition) ou [Janssen](https://www.mesvaccins.net/web/vaccines/666-covid-19-vaccine-janssen#vaccin_composition)
+        - composition du vaccin [Pfizer-BioNTech](https://www.mesvaccins.net/web/vaccines/658-comirnaty-pfizer-biontech#vaccin_composition), [Moderna](https://www.mesvaccins.net/web/vaccines/656-spikevax-covid-19-vaccine-moderna#vaccin_composition), [AstraZeneca](https://www.mesvaccins.net/web/vaccines/650-vaxzevria-covid-19-vaccine-astrazeneca#vaccin_composition) ou [Janssen](https://www.mesvaccins.net/web/vaccines/666-covid-19-vaccine-janssen#vaccin_composition)
 
         </div>
 
@@ -602,7 +611,7 @@
 .. question:: Suis-je immunisé(e) après une seule dose de vaccin ?
     :level: 3
 
-    Les schémas de vaccination initiale des vaccins Moderna, Pfizer et AstraZeneca prévoient l’injection de **2 doses** pour une **vaccination efficace**.
+    Les schémas de vaccination initiale des vaccins Moderna, Pfizer, AstraZeneca et Novavax prévoient l’injection de **2 doses** pour une **vaccination efficace**.
 
     Le vaccin **Janssen** ne prévoyait au départ qu’une seule dose. Toutefois, pour plus d’efficacité, il doit désormais être complété avec une **dose additionnelle** (2<sup>e</sup> dose) de vaccin à ARN messager (Pfizer-BioNTech ou Moderna), à partir de **4 semaines** après la première injection.
 
@@ -661,7 +670,11 @@
 .. question:: Je suis enceinte, puis-je me faire vacciner ?
     :level: 3
 
-    **Oui**, d’autant que la grossesse vous expose à des formes plus sévères de la Covid. Il n’y a pas de contre-indication à la vaccination des femmes enceintes et vous pouvez vous faire vacciner avec un vaccin à ARN messager (*Pfizer*, *Moderna*) **dès le 1<sup>er</sup> trimestre de grossesse**.
+    **Oui**, d’autant que la grossesse vous expose à des **formes plus sévères** de la Covid.
+
+    Il n’y a **pas de contre-indication** à la vaccination des femmes enceintes et vous pouvez vous faire vacciner avec un vaccin à ARN messager (*Pfizer*, *Moderna*) **dès le 1<sup>er</sup> trimestre de grossesse**.
+
+    Le vaccin **Novavax** n’est pas recommandé pour l’instant, car on a encore peu de données sur son utilisation chez les femmes enceintes.
 
     Si vous êtes âgée de **moins de 30 ans**, la Haute autorité de santé (HAS) recommande de privilégier le vaccin **Pfizer** lorsque c’est possible (en raison d’un risque accru de myocardite avec le vaccin *Moderna* chez les personnes les plus jeunes).
 
