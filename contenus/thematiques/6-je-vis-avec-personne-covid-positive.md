@@ -92,10 +92,9 @@ Si vous ne pouvez pas **télétravailler**, l’Assurance Maladie pourra vous pr
 
 Si vous êtes **complètement vacciné(e)** et que vous n’avez **pas de symptômes**, alors il n’est **pas nécessaire de vous isoler**. Restez quand même prudent(e) :
 
-* respectez les **mesures barrières** au sein de votre foyer,
-* ayez recours au **télétravail** lorsque c’est possible,
-* **limitez** vos interactions sociales, et évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal),
-* portez un **masque** à l’extérieur et à l’intérieur, même dans les lieux qui ne l’exigeraient pas.
+* si des **symptômes** apparaissent, faites un test dès que possible et isolez-vous,
+* respectez les **mesures barrières** et portez un **masque** même à la maison ou dans les lieux publics qui ne le demandent pas,
+* **télétravaillez** si c’est possible, **reportez** vos activités sociales (amis, loisirs…), et évitez tout contact avec des **personnes à risque** de forme grave (femmes enceintes, personnes âgées, malades…).
 
 #### 2. Faites un test à J+2
 

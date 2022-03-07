@@ -87,6 +87,13 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Si votre enfant de moins de 12 ans est « **cas contact** », qu’il soit **vacciné ou non**, et qu’il n’a **pas de symptômes**, alors il n’aura **pas besoin de s’isoler**, et pourra continuer à aller à l’école.
 
+    Restez quand même prudent(e) :
+
+    - si des **symptômes** apparaissent, il devra faire un test dès que possible et rester isolé ;
+    - faites de votre mieux pour appliquer les **mesures barrières** (lavage des mains, port du masque, aération…) ;
+    - **reportez** ses activités sociales (goûters d’anniversaire, amis, loisirs…) ;
+    - évitez qu’il soit en contact avec des **personnes fragiles** (femmes enceintes, personnes âgées, malades…).
+
     #### 2. Test de dépistage à J+2
 
     Votre enfant devra faire un **test de dépistage** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou dès que possible si le délai de 2 jours est déjà écoulé (voir la [carte des lieux de test](https://www.sante.fr/cf/centres-depistage-covid.html)).
@@ -127,6 +134,13 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     #### 1. Pas d’isolement
 
     Si votre enfant de 12 ans ou plus est « **cas contact** », qu’il est **vacciné** et qu’il n’a **pas de symptômes**, alors il n’aura **pas besoin de s’isoler**, et pourra continuer à aller à l’école.
+
+    Restez quand même prudent(e) :
+
+    - si des **symptômes** apparaissent, il devra faire un test dès que possible et rester isolé ;
+    - appliquez les **mesures barrières** (lavage des mains, port du masque, aération…) ;
+    - **reportez** ses activités sociales (sorties entre amis, sports et loisirs collectifs…) ;
+    - évitez qu’il soit en contact avec des **personnes fragiles** (femmes enceintes, personnes âgées, malades…).
 
     #### 2. Test de dépistage à J+2
 

@@ -145,9 +145,9 @@
 
     Comme tu êtes vacciné(e), on considère que tu as un **risque modéré**, mais reste quand même prudent(e) :
 
-    - respecte les **mesures barrières** en particulier à la maison,
-    - **limite** les sorties et les activités sociales, et évite de passer du temps avec des personnes vulnérables ou fragiles (comme tes grands-parents ou des personnes âgées ou malades),
-    - porte un **masque** à l’extérieur et à l’intérieur, même là où ce n’est pas obligatoire.
+    - si des **symptômes** apparaissent, fais un test dès que tu peux et isole-toi,
+    - respecte les **mesures barrières** et porte un **masque** même à la maison ou dans les lieux publics qui ne le demandent pas,
+    - **reporte** tes activités sociales (amis, loisirs…), et évite de passer du temps avec des **personnes fragiles** (femmes enceintes, personnes âgées, malades…).
 
 
     #### 2. Fais un test à J+2
