@@ -28,7 +28,7 @@
 
     Si vous êtes complètement vacciné(e), en cas de contact à risque avec une personne positive à la Covid :
 
-    1. Il n’est **pas nécessaire de vous isoler**, mais restez prudent(e) :
+    1. Si vous n’avez pas de symptômes, il n’est **pas nécessaire de vous isoler**, mais restez prudent(e) :
         * respectez les **mesures barrières**, en particulier au sein de votre foyer ;
         * ayez recours au **télétravail** lorsque c’est possible ;
         * **limitez** vos interactions sociales, et évitez tout contact avec une **personne à risque** de forme grave non vaccinée, ou une personne fortement immunodéprimée (quel que soit son statut vaccinal) ;

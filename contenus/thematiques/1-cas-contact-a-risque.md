@@ -48,7 +48,7 @@ Si vous avez **déjà eu la Covid** il y a **moins de 2 mois**, alors vous n’�
 
 #### 1. Soyez prudent(e)
 
-Comme vous êtes complètement vacciné(e), on considère que vous avez un **risque modéré**, et qu’il n’est **pas nécessaire de vous isoler**, mais restez quand même prudent(e) :
+Si vous êtes **complètement vacciné(e)** et que vous n’avez **pas de symptômes**, alors il n’est **pas nécessaire de vous isoler**. Restez quand même prudent(e) :
 
 * respectez les **mesures barrières** au sein de votre foyer,
 * ayez recours au **télétravail** lorsque c’est possible,
