@@ -3,10 +3,9 @@
 <img src="illustrations/vaccins.svg">
 
 <header>
-    <p class="big">Vous êtes vacciné(e) contre la Covid et vous vous posez des questions sur le masque, l’isolement, les contacts à risque (cas contact), la contagion (immunité), ou encore le certificat de vaccination (passe vaccinal) ? Voici les réponses à vos questions.</p>
 </header>
 
-.. renvoi:: pass-sanitaire-qr-code-voyages.html#avant-quelle-date-dois-je-recevoir-la-dose-de-rappel-dite-3-e-dose-pour-conserver-mon-passe-vaccinal
+.. renvoi:: pass-sanitaire-qr-code-voyages.html#quand-dois-je-recevoir-mon-rappel-pour-conserver-mon-passe-sanitaire
 
 .. renvoi:: j-ai-des-symptomes-covid.html#je-suis-vaccine-e-est-ce-que-je-peux-etre-positif-ou-positive-a-la-covid
 
@@ -56,10 +55,10 @@
 
 .. question:: Est-ce que je peux voyager une fois vacciné(e) ?
 
-    Pour voyager, certains pays pourront notamment demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** (ou « passe vaccinal ») au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, valable dans l’espace Européen, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionnel de santé qui vous a vacciné.
+    Pour voyager, certains pays pourront notamment demander une preuve de vaccination. Pour attester de votre statut vaccinal vous pourrez présenter un **certificat de vaccination** (ou « passe sanitaire ») au format papier ou numérique. Pour disposer de cette attestation dans votre application TousAntiCovid, valable dans l’espace Européen, il suffit de scanner le QR code présent sur votre attestation de vaccination remise par le professionnel de santé qui vous a vacciné.
 
     Nous vous conseillons de vérifier directement auprès des autorités du pays de destination les conditions d’accès sur leur territoire (tests, quarantaine, vaccin…), en consultant  par exemple le site internet de l’ambassade ou du consulat.
 
-    Pour en savoir plus, [consultez notre page sur le passe vaccinal et les voyages](pass-sanitaire-qr-code-voyages.html).
+    Pour en savoir plus, [consultez notre page sur le passe sanitaire et les voyages](pass-sanitaire-qr-code-voyages.html).
 
 </div>

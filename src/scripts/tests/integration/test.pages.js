@@ -25,7 +25,7 @@ describe('Pages', function () {
         await waitForPlausibleTrackingEvent(page, 'pageview:introduction')
 
         await page.click(
-            '.thematiques a >> text="Passe vaccinal et passe sanitaire, que faut-il savoir\u00a0?"'
+            '.thematiques a >> text="Passe sanitaire, que faut-il savoir\u00a0?"'
         )
         await waitForPlausibleTrackingEvent(
             page,

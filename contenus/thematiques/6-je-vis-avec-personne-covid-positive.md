@@ -24,7 +24,7 @@
 
 * vous n’avez **pas encore** reçu les doses nécessaires pour votre **vaccination initiale** (1 ou 2 doses) ;
 * **ou** vous avez reçu votre dernière dose depuis **moins de 7 jours** (*Pfizer, Moderna, AstraZeneca*) ou moins de 28 jours (*Janssen*) ;
-* **ou** vous n’avez pas reçu la **dose de rappel** (si nécessaire selon les règles du passe vaccinal) ;
+* **ou** vous n’avez pas reçu la **dose de rappel** (si nécessaire selon les règles du passe sanitaire) ;
 * **ou** vous souffrez d’une **forte immunodépression** qui réduit l’efficacité du vaccin.
 
 </div>
@@ -76,7 +76,7 @@ Si vous ne pouvez pas **télétravailler**, l’Assurance Maladie pourra vous pr
 <div class="explications">
 
 * vous avez reçu **toutes les doses** pour votre **vaccination initiale** (1 ou 2 doses), et vous avez reçu la dernière dose prévue depuis **plus de 7 jours** (*Pfizer*, *Moderna*, *AstraZeneca*) ou plus de 28 jours (*Janssen*) ;
-* **et** vous avez reçu une dose de **rappel** (si nécessaire selon les règles du passe vaccinal) ;
+* **et** vous avez reçu une dose de **rappel** (si nécessaire selon les règles du passe sanitaire) ;
 * **et** vous ne souffrez pas d’immunodépression.
 
 </div>
