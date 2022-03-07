@@ -67,7 +67,7 @@
 .. question:: Je suis vacciné(e) et cas contact, que faire si je ne peux pas télétravailler ?
     :level: 3
 
-    Si vous êtes vacciné(e), vous n’avez pas l’obligation de vous isoler après un contact à risque, mais vous devez **limiter vos interactions sociales**.
+    Si vous êtes **complètement vacciné(e)** et que vous n’avez **pas de symptômes**, alors vous n’avez pas l’obligation de vous isoler après un contact à risque, mais vous devez **limiter vos interactions sociales**.
     En effet, même si les risques sont fortement réduits par la vaccination, vous pouvez être contaminé(e) et transmettre le virus aux autres.
 
     Si vous ne pouvez pas **télétravailler**, il faudra autant que possible rester vigilant(e) pour ne pas propager la Covid sur votre lieu de travail :

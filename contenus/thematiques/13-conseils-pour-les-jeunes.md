@@ -141,7 +141,7 @@
 
     #### 1. Pas d’isolement, mais sois prudent(e)
 
-    Si tu es « **cas contact** » et que tu es **vacciné(e)**, alors tu n’auras pas besoin de t’isoler, et pourras continuer à aller au collège ou au lycée.
+    Si tu es « **cas contact** » et que tu es **vacciné(e)**, alors tu n’auras pas besoin de t’isoler (à condition que tu n’aies pas de symptômes bien sûr), et tu pourras continuer à aller au collège ou au lycée.
 
     Comme tu êtes vacciné(e), on considère que tu as un **risque modéré**, mais reste quand même prudent(e) :
 

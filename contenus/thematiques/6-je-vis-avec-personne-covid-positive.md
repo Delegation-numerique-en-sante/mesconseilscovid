@@ -90,7 +90,7 @@ Si vous ne pouvez pas **télétravailler**, l’Assurance Maladie pourra vous pr
 
 #### 1. Soyez prudent(e)
 
-Comme vous êtes complètement vacciné(e), on considère que vous avez un **risque modéré**, et qu’il n’est **pas nécessaire de vous isoler**, mais restez quand même prudent(e) :
+Si vous êtes **complètement vacciné(e)** et que vous n’avez **pas de symptômes**, alors il n’est **pas nécessaire de vous isoler**. Restez quand même prudent(e) :
 
 * respectez les **mesures barrières** au sein de votre foyer,
 * ayez recours au **télétravail** lorsque c’est possible,
