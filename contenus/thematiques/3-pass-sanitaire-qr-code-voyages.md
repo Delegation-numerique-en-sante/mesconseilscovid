@@ -102,7 +102,7 @@
 .. question:: J’ai eu la Covid après ma vaccination initiale, comment prolonger mon passe sanitaire ?
     :level: 3
 
-    Si vous avez eu la Covid après votre vacination initiale, vous pourrez utiliser le QR code de votre **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*) en tant que **passe sanitaire**.
+    Si vous avez eu la Covid après votre vaccination initiale, vous pourrez utiliser le QR code de votre **test PCR ou antigénique positif** datant d’au moins 11 jours (aussi appelé *certificat de rétablissement*) en tant que **passe sanitaire**.
 
     Sa **durée de validité** dépend du temps qui s’est écoulé entre votre vaccination et la contamination.
 
@@ -162,7 +162,7 @@
 
     En revanche, un **passe sanitaire est exigé** (👉 [qu’est-ce que le passe sanitaire](#qu-est-ce-que-le-passe-sanitaire)).
 
-    Dans le cas où vous devrez faire un test de dépistage, vous pourez obtenir sa **prise en charge** en présentant l’un des documents suivants au professionnel de santé qui réalisera votre test :
+    Dans le cas où vous devrez faire un test de dépistage, vous pourrez obtenir sa **prise en charge** en présentant l’un des documents suivants au professionnel de santé qui réalisera votre test :
     - la **convocation** émise par l’établissement médical où vous avez rendez-vous ;
     - ou une **prescription** du médecin chez qui vous avez rendez-vous.
 

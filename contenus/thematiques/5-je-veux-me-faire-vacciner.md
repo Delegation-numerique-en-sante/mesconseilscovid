@@ -23,7 +23,7 @@
 
     #### Vous n’avez **pas eu la Covid**
 
-    1. Vous devrez recevoir une **dose supplémentaire** de vaccin Pfizer ou Moderna (dose complète) dans les **4 semaines à 2 mois** après votre injection. Cette 2<sup>e</sup> injection complètera votre **vaccination initiale** et prolongera votre **passe sanitaire**.
+    1. Vous devrez recevoir une **dose supplémentaire** de vaccin Pfizer ou Moderna (dose complète) dans les **4 semaines à 2 mois** après votre injection. Cette 2<sup>e</sup> injection complétera votre **vaccination initiale** et prolongera votre **passe sanitaire**.
 
     2. Vous devrez ensuite recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 4 mois** après cette injection supplémentaire.
 
@@ -127,7 +127,7 @@
     #### Vous avez eu la Covid **après** votre injection de **Janssen**
 
     - Vous avez été testé positif **dans les 15 jours** suivant cette injection :
-        1. vous devrez recevoir une **dose supplémentaire** de vaccin (Pfizer ou Moderna, en dose complète) dans les **4 semaines** après votre injection : cette 2<sup>e</sup> injection complètera votre **vaccination initiale** et prolongera votre **passe sanitaire** ;
+        1. vous devrez recevoir une **dose supplémentaire** de vaccin (Pfizer ou Moderna, en dose complète) dans les **4 semaines** après votre injection : cette 2<sup>e</sup> injection complétera votre **vaccination initiale** et prolongera votre **passe sanitaire** ;
         2. vous devrez ensuite recevoir une **dose de rappel** avec un vaccin Pfizer ou Moderna (demi-dose) **3 à 4 mois** après cette injection supplémentaire.
 
     <div class="tableaux-vaccination-complete">
