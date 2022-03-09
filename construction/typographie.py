@@ -1,4 +1,6 @@
 from dataclasses import dataclass
+import html.entities
+import unicodedata
 
 import regex  # pour le support de "\p{}"
 
@@ -8,9 +10,15 @@ class Caractere:
     unicode: str
     html: str
 
+    def __init__(self, name: str):
+        self.unicode = unicodedata.lookup(name)
+        codepoint = ord(self.unicode)
+        html_name = html.entities.codepoint2name.get(codepoint, f"#{codepoint}")
+        self.html = f"&{html_name};"
 
-ESPACE_INSECABLE = Caractere(unicode="\u00a0", html="&nbsp;")
-ESPACE_FINE_INSECABLE = Caractere(unicode="\u202f", html="&#8239;")
+
+ESPACE_INSECABLE = Caractere(name="NO-BREAK SPACE")
+ESPACE_FINE_INSECABLE = Caractere(name="NARROW NO-BREAK SPACE")
 
 
 def assemble_regexes(*regexes):
