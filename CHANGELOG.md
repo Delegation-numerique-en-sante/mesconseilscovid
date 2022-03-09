@@ -1,5 +1,10 @@
 # Changelog
 
+## 2022-03-09
+
+* ajoute des infos sur le vaccin Novavax
+* met à jour la doctrine cas contact dans le choix du test de dépistage
+
 ## 2022-03-03
 
 * met à jour les conseils du questionnaire pour les cas contact vaccinés
