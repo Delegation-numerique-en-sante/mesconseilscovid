@@ -484,6 +484,7 @@
 
 .. question:: Quel vaccin choisir pour ma vaccination initiale (primo-vaccination) ?
     :level: 3
+    :expires: 9 avril 2022
 
     - Chez les adultes, la Haute autorité de santé recommande de privilégier l’utilisation de **vaccins à ARN messager** (Pfizer ou Moderna) car ils sont plus efficaces qu’AstraZeneca ou Janssen pour réduire la transmission et les formes symptomatiques.
 
@@ -497,6 +498,7 @@
 
 .. question:: Quel est le délai à respecter entre la 1<sup>re</sup> et la 2<sup>e</sup> dose lors de la vaccination initiale (primo-vaccination) ?
     :level: 3
+    :expires: 9 avril 2022
 
     Le délai avant la **2<sup>e</sup> injection** dépend du type de vaccin utilisé pour la première injection.
 
@@ -513,6 +515,7 @@
 
 .. question:: Y a-t-il des contre-indications à la vaccination ?
     :level: 3
+    :expires: 9 avril 2022
 
     <span class="nouveau">nouveau</span> Pour le nouveau vaccin **Novavax**, la seule contre-indication est l’hypersensibilité à la substance active ou à l’un des excipients (👉 [consulter sa composition](https://www.mesvaccins.net/web/vaccines/667-nuvaxovid#vaccin_composition)).
 
