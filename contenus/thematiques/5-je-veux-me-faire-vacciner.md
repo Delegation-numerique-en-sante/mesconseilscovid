@@ -490,7 +490,7 @@
       * Si vous avez **moins de 30 ans**, privilégiez le vaccin **Pfizer** lorsque c’est possible (en l’attente de plus de données sur le risque de myocardite avec le vaccin Moderna chez les personnes plus jeunes).
       * Si vous avez **plus de 30 ans**, le vaccin **Moderna** pourra être privilégié car plusieurs études récentes semblent montrer une efficacité vaccinale légèrement supérieure.
 
-    - <span class="nouveau">nouveau</span>Un nouveau vaccin, le Nuvaxovid<sup>®</sup> du laboratoire **Novavax** est disponible en France depuis **début mars 2022**, pour les personnes qui ne peuvent pas ou ne souhaitent pas être vaccinées avec un vaccin à ARN messager.
+    - <span class="nouveau">nouveau</span> Un nouveau vaccin, le Nuvaxovid<sup>®</sup> du laboratoire **Novavax** est disponible en France depuis **début mars 2022**, pour les personnes qui ne peuvent pas ou ne souhaitent pas être vaccinées avec un vaccin à ARN messager.
 
     - Les personnes de **moins de 18 ans** sont vacciné(e)s exclusivement avec les vaccins à ARN messager et de préférence avec le vaccin Pfizer.
 
