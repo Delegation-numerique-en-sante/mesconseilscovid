@@ -45,6 +45,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
     * Pour les élèves de **moins de 12 ans** (quel que soit leur statut vaccinal), lorsqu’**un cas positif** est confirmé dans la classe :
 
       * les élèves pourront poursuivre les enseignements en **présentiel** ;
+      * le **port du masque** est fortement recommandé pendant **7 jours** ;
       * ils seront invités à réaliser un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou dès que possible si le délai de 2 jours est déjà écoulé.
 
         *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à refaire un test.*
@@ -54,6 +55,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
       * s’ils sont **complètement vaccinés** :
         * les élèves pourront poursuivre les enseignements en **présentiel** ;
+        * le **port du masque** est fortement recommandé pendant **7 jours** ;
         * ils seront invités à réaliser un **test de dépistage gratuit** (test PCR, test antigénique ou autotest) à **J+2**, c’est à dire 2 jours après le dernier contact avec le cas confirmé, ou dès que possible si le délai de 2 jours est déjà écoulé.
 
           *Note : si de nouveaux cas positifs sont signalés dans la classe dans les 7 jours, votre enfant n’aura pas à refaire un test.*
@@ -89,6 +91,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Restez quand même prudent(e) :
 
+    - le **port du masque** est fortement recommandé pendant **7 jours** ;
     - si des **symptômes** apparaissent, il devra faire un test dès que possible et rester isolé ;
     - faites de votre mieux pour appliquer les **mesures barrières** (lavage des mains, port du masque, aération…) ;
     - **reportez** ses activités sociales (goûters d’anniversaire, amis, loisirs…) ;
@@ -137,6 +140,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 
     Restez quand même prudent(e) :
 
+    - le **port du masque** est fortement recommandé pendant **7 jours** ;
     - si des **symptômes** apparaissent, il devra faire un test dès que possible et rester isolé ;
     - appliquez les **mesures barrières** (lavage des mains, port du masque, aération…) ;
     - **reportez** ses activités sociales (sorties entre amis, sports et loisirs collectifs…) ;
@@ -239,12 +243,9 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
 .. question:: Est-ce que mon enfant doit porter le masque ?
     :level: 3
 
-    Cela dépend de son âge.
-    Le port du masque est **obligatoire** en **intérieur** et en **extérieur** dans les **collèges et lycées**. En primaire, le masque est obligatoire en **intérieur**.
-    
-    Pour les élèves des **écoles maternelles**, le port du masque est proscrit quel que soit le département.
+    <span class="nouveau">nouveau</span>À partir du **lundi 14 mars 2022**, le port du masque n’est **plus obligatoire** dans les écoles, les collèges et les lycées.
 
-    **Les parents doivent fournir des masques à leurs enfants**. Le masque doit assurer une filtration supérieure à 90 % (masque « grand public » ou masque chirurgical par exemple). Le ministère dote chaque école, collège et lycée en masques « grand public » afin qu’ils puissent être fournis aux élèves qui n’en disposeraient pas.
+    Si votre enfant est **cas contact**, le port du masque est fortement recommandé pendant 7 jours.
 
     <div class="voir-aussi">
 
