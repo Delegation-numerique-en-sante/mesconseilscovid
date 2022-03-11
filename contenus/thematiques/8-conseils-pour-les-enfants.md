@@ -302,7 +302,7 @@ Le forfait « *100% Psy Enfant Ado* » donne accès à 10 séances de **souti
         * 3 à 7 semaines après la première, pour le vaccin Pfizer ;
         * 4 à 7 semaines après la première, pour le vaccin Moderna.
 
-    <span class="nouveau">nouveau</span> Depuis le lundi 24 janvier 2022, les adolescent(e)s de 12 à 17 ans peuvent également recevoir une **dose de rappel** (dite 3<sup>e</sup> dose).
+    Les adolescent(e)s de 12 à 17 ans peuvent également recevoir une **dose de rappel** (dite 3<sup>e</sup> dose).
 
     <div class="voir-aussi">
 
