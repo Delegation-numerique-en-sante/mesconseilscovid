@@ -1,5 +1,10 @@
 # Changelog
 
+## 2022-03-11
+
+* fin du passe vaccinal, le passe sanitaire reste requis dans certains lieux
+* fin du port du masque à l’école le 14/3 (sauf cas contacts)
+
 ## 2022-03-09
 
 * ajoute des infos sur le vaccin Novavax
