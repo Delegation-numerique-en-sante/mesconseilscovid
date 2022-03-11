@@ -86,7 +86,7 @@ check: check-external-links check-versions check-orphelins check-diagrammes chec
 check-external-links:  # Check that links to external pages are still valid.
 	python3 check.py external_links --timeout 40 --delay 0.3
 
-check-internal-links:  # Check that links to internal pages are still valid.
+check-internal-links: build  # Check that links to internal pages are still valid.
 	python3 check.py internal_links
 
 check-versions:  # Check that current version matches service-worker one.
