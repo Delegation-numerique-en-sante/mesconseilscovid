@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022-03-14
+
+* fin du port du masque obligatoire en entreprise le 14/3
+
 ## 2022-03-11
 
 * fin du passe vaccinal, le passe sanitaire reste requis dans certains lieux
