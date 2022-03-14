@@ -16,21 +16,22 @@
 
 .. question:: En tant que salarié(e), qu’est-ce que je dois faire pour limiter la transmission du virus sur mon lieu de travail ?
     :level: 3
+    :expires: 14 avril 2022
 
     Le salarié est **responsable** de sa propre **protection** et de celle des personnes qui l’entourent dans la mesure de ses possibilités (formations, moyens…).
-    
-    Nouveau
-    Depuis le 14 mars 2022, le port du masque n'est plus obligatoire en entreprise. 
-    
+
+    <span class="nouveau">nouveau</span> Depuis le **14 mars 2022**, le **port du masque** n’est **plus obligatoire** en entreprise.
+
     Mais, même vacciné(e), nous vous recommandons de rester prudent(e) :
-    * maintenez la **distanciation physique** et **aérez** régulièrement. Cela réduira la concentration du virus dans l'air intérieur ;
-    * **portez le masque** si vous : 
-        * avez des symptômes ;
-        * êtes cas contact ;
-        * vous revenez d'une période d'isolement après avoir été testé positif.
-    
+    * maintenez la **distanciation physique** ;
+    * **aérez** régulièrement, pour réduire la concentration du virus dans l’air intérieur ;
+    * portez un **masque** si :
+        * vous avez des **symptômes** ;
+        * vous êtes **cas contact** ;
+        * vous **revenez** d’une période d’**isolement** après avoir été testé **positif**.
+
     **Isolez-vous** si vous êtes :
-    
+
     * testé **positif** à la Covid, ou dès que vous ressentez des [symptômes évocateurs de la Covid](https://mesconseilscovid.sante.gouv.fr/j-ai-des-symptomes-covid.html#quels-sont-les-symptomes-de-la-covid) et en attendant le résultat de votre test de dépistage ;
     * alerté d’un **contact à risque**, **sauf** si vous êtes **vacciné** ou que vous avez eu la Covid dans les deux mois précédents.
 
@@ -88,21 +89,22 @@
 
 .. question:: Quels aménagements peuvent être mis en place pour limiter la transmission du virus sur le lieu de travail ?
     :level: 3
+    :expires: 14 avril 2022
 
     L’**employeur** doit proposer des mesures pour **limiter** les risques de **propagation** du virus dans son entreprise, et les **salariés** doivent **agir** à leur niveau, pour se **protéger** et protéger ceux qui les entourent.
-    
+
     Voici quelques exemples de pratiques qui peuvent être mises en place :
 
     * Le **télétravail** :
        * le télétravail n’est pas obligatoire, mais reste **recommandé** partout où il est possible.
 
-    * Limiter le brassage de personnes :
+    * Limiter le **brassage** de personnes :
         * étaler les horaires d’arrivées et de départs pour **limiter l’affluence** et les croisements ;
         * limiter le nombre de personnes présentes dans les locaux pour faciliter la **distanciation physique** en instaurant une **jauge** ;
         * attribuer une **place fixe** à chaque employé (suspendre l’*open flex* ou bureau nomade) ;
         * éviter d’aller au **restaurant d’entreprise** aux heures d’affluence et déjeuner **seul(e)** ou avec les membres de **mon équipe** pour éviter de multiplier les contacts.
 
-    * Informer les employé(e)s :
+    * **Informer** les employé(e)s :
 
         * sur l’efficacité des **mesures barrières** : le masque, la distanciation, l’isolement dès les premiers symptômes,
         * sur la possibilité de se faire **vacciner** pendant les heures de travail, dans l’entreprise ou ailleurs (centre de vaccination, pharmacie, médecin…).
@@ -112,11 +114,11 @@
         * **aérer et ventiler** les espaces le plus souvent possible — tout le temps, si possible ;
         * mettre à disposition du gel hydroalcoolique et des masques ;
         * nettoyer et **désinfecter** régulièrement les espaces partagés.
-Nouveau
-       Depuis le 14 mars 2022, le port du masque n'est plus obligatoire en entreprise, mais il reste **recommandé** dans les situations suivantes : 
-        * vous avez des **symptômes** ;
-        * vous êtes **cas contact** ;
-        * vous **revenez** d'une période **d'isolement** après avoir été testé positif.
+
+    <span class="nouveau">nouveau</span> Depuis le **14 mars 2022**, le **port du masque** n’est **plus obligatoire** en entreprise, mais il reste **recommandé** dans les situations suivantes :
+    * vous avez des **symptômes** ;
+    * vous êtes **cas contact** ;
+    * vous **revenez** d’une période d’**isolement** après avoir été testé **positif**.
 
 
 .. question:: Quelles sont les obligations de mon employeur face à l’épidémie de Covid ?
@@ -162,11 +164,13 @@ Nouveau
 .. question:: Peut-on organiser des moments de convivialité ?
     :level: 3
 
-    Les moments de convivialité (pot de bienvenue, pot de départ…) réunissant les salariés dans un cadre professionnel et en présentiel sont possibles. 
-    Veillez tout de même à rester prudent(e). Pour cela :
-    * portez le masque si nécessaire (symptômes ; cas contact ; test positif récent) 
-    * respectez autant que possible la distanciation physique 
+    Les moments de convivialité (pot de bienvenue, pot de départ…) réunissant les salariés dans un cadre professionnel et en présentiel sont possibles.
+
+    Veillez tout de même à rester prudent(e). Pour cela :
+    * portez le **masque** si nécessaire (symptômes, cas contact, test positif récent) ;
+    * respectez autant que possible la distanciation physique ;
     * aérez régulièrement.
+
 
 ## Arrêt de travail lié à la Covid
 
