@@ -18,13 +18,21 @@
     :level: 3
 
     Le salarié est **responsable** de sa propre **protection** et de celle des personnes qui l’entourent dans la mesure de ses possibilités (formations, moyens…).
-
-    Vous devez donc :
-
-    * respecter les **gestes barrières** : le port du masque, la distanciation physique, même si vous êtes vacciné(e) ;
-    * vous **isoler** :
-       * si vous avez été testé **positif** à la Covid, ou dès que vous ressentez des [symptômes évocateurs de la Covid](https://mesconseilscovid.sante.gouv.fr/j-ai-des-symptomes-covid.html#quels-sont-les-symptomes-de-la-covid) et en attendant le résultat de votre test de dépistage, **même si vous êtes vacciné(e)**,
-       * si vous êtes alerté d’un **contact à risque**, **sauf** si vous êtes **vacciné** ou que vous avez eu la Covid dans les deux mois précédents.
+    
+    Nouveau
+    Depuis le 14 mars 2022, le port du masque n'est plus obligatoire en entreprise. 
+    
+    Mais, même vacciné(e), nous vous recommandons de rester prudent(e) :
+    * maintenez la **distanciation physique** et **aérez** régulièrement. Cela réduira la concentration du virus dans l'air intérieur ;
+    * **portez le masque** si vous : 
+        * avez des symptômes ;
+        * êtes cas contact ;
+        * vous revenez d'une période d'isolement après avoir été testé positif.
+    
+    **Isolez-vous** si vous êtes :
+    
+    * testé **positif** à la Covid, ou dès que vous ressentez des [symptômes évocateurs de la Covid](https://mesconseilscovid.sante.gouv.fr/j-ai-des-symptomes-covid.html#quels-sont-les-symptomes-de-la-covid) et en attendant le résultat de votre test de dépistage ;
+    * alerté d’un **contact à risque**, **sauf** si vous êtes **vacciné** ou que vous avez eu la Covid dans les deux mois précédents.
 
     Dans tous les cas, vous serez indemnisé sans jour de carence.
 
@@ -82,11 +90,11 @@
     :level: 3
 
     L’**employeur** doit proposer des mesures pour **limiter** les risques de **propagation** du virus dans son entreprise, et les **salariés** doivent **agir** à leur niveau, pour se **protéger** et protéger ceux qui les entourent.
-
+    
     Voici quelques exemples de pratiques qui peuvent être mises en place :
 
     * Le **télétravail** :
-       * depuis le 2 février 2022, le télétravail n’est plus obligatoire, mais reste **recommandé** partout où il est possible.
+       * le télétravail n’est pas obligatoire, mais reste **recommandé** partout où il est possible.
 
     * Limiter le brassage de personnes :
         * étaler les horaires d’arrivées et de départs pour **limiter l’affluence** et les croisements ;
@@ -101,10 +109,14 @@
 
     * (Faire) respecter les règles sanitaires :
 
-        * porter le **masque** dans les lieux clos partagés. Le masque n’est pas obligatoire dans les bureaux individuels et personnels ;
         * **aérer et ventiler** les espaces le plus souvent possible — tout le temps, si possible ;
         * mettre à disposition du gel hydroalcoolique et des masques ;
         * nettoyer et **désinfecter** régulièrement les espaces partagés.
+Nouveau
+       Depuis le 14 mars 2022, le port du masque n'est plus obligatoire en entreprise, mais il reste **recommandé** dans les situations suivantes : 
+        * vous avez des **symptômes** ;
+        * vous êtes **cas contact** ;
+        * vous **revenez** d'une période **d'isolement** après avoir été testé positif.
 
 
 .. question:: Quelles sont les obligations de mon employeur face à l’épidémie de Covid ?
@@ -112,7 +124,7 @@
 
     Votre employeur doit **limiter** autant que possible **les risques d’exposition** de ses employé(e)s au virus. Par exemple, il doit :
 
-    * **faire respecter** les mesures recommandées par les autorités sanitaires, comme les **gestes barrières** (port du masque, distanciation physique…) ;
+    * **faire respecter** les mesures recommandées par les autorités sanitaires, comme les **gestes barrières** ;
     * encourager les salarié(e)s à s’**isoler** et se faire **tester** lorsqu’ils ont eu un contact à risque ;
     * mettre en place des **mesures de prévention** (nettoyage régulier des surfaces, jauge, télétravail…) en concertation avec les **représentants du personnel** (<abbr title="Comité social et économique">CSE</abbr>) ou la **médecine du travail** ;
     * mettre à disposition des **moyens de protection** (savon, gel hydro-alcoolique, masques…).
@@ -150,7 +162,11 @@
 .. question:: Peut-on organiser des moments de convivialité ?
     :level: 3
 
-    Les moments de convivialité (pot de bienvenue, pot de départ…) réunissant les salariés dans un cadre professionnel et en présentiel sont actuellement **suspendus***.
+    Les moments de convivialité (pot de bienvenue, pot de départ…) réunissant les salariés dans un cadre professionnel et en présentiel sont possibles. 
+    Veillez tout de même à rester prudent(e). Pour cela :
+    * portez le masque si nécessaire (symptômes ; cas contact ; test positif récent) 
+    * respectez autant que possible la distanciation physique 
+    * aérez régulièrement.
 
 ## Arrêt de travail lié à la Covid
 
