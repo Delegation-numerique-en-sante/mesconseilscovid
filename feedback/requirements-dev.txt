@@ -20,7 +20,7 @@ py==1.10.0
     # via pytest
 pyparsing==2.4.7
     # via packaging
-pytest==7.0.1
+pytest==7.1.0
     # via
     #   -r feedback/requirements-dev.in
     #   pytest-asyncio
