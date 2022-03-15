@@ -204,20 +204,6 @@
 
 ## Obtenir son justificatif avec QR code
 
-.. question:: J’ai eu la Covid avant ma vaccination initiale et j’ai reçu ma dose de rappel avant le 1<sup>er</sup> février : pourquoi mon passe sanitaire affiche-t-il une date d’expiration ?
-    :level: 3
-
-    Si votre passe sanitaire affiche une date d’expiration et que vous êtes dans la situation suivante :
-
-    * vous avez été **contaminé(e)** par la Covid **avant** votre vaccination initiale
-    * **et** vous avez complété votre schéma vaccinal avec **1 seule dose** de vaccin
-    * **et** vous avez reçu votre **dose de rappel** avant le 1<sup>er</sup> février 2022,
-
-    alors, vous pouvez obtenir une **nouvelle attestation** de vaccination, avec un nouveau QR code pour disposer d’un passe sanitaire  valide.
-
-    **Téléchargez votre nouvelle attestation** à partir du [téléservice de l’Assurance Maladie](https://attestation-vaccin.ameli.fr/) à l’aide de votre **numéro de sécurité sociale** (si vous en avez un) ou rendez-vous chez un **professionnel de santé** (médecin, pharmacien, infirmier, sage-femme…), muni de votre **carte vitale** (si vous en avez une) afin qu’il vous en édite une nouvelle.
-
-
 .. question:: Comment obtenir une attestation de vaccination complète avec un QR code ?
     :level: 3
 
@@ -233,15 +219,6 @@
     Si vous avez reçu toutes les doses nécessaires, mais que votre attestation indique que **votre vaccination est incomplète**, rendez-vous chez un **professionnel de santé** (médecin, pharmacien, infirmier, sage-femme…) afin qu’il mette à jour votre statut vaccinal et vous édite une nouvelle attestation.
 
     </div>
-
-
-.. question:: Comment obtenir un certificat de dépistage avec QR code ?
-    :level: 3
-
-    Suite à un test de dépistage, un courriel (*e-mail*) ou un SMS vous est adressé pour vous inviter à **télécharger le certificat de dépistage** avec QR code sur le [portail SI-DEP](https://sidep.gouv.fr/cyberlab/patientviewer.jsp).
-
-    Nous vous conseillons de **le télécharger immédiatement** pour le conserver aussi longtemps que nécessaire.
-
 
 .. question:: Comment obtenir un certificat de rétablissement avec QR code ?
     :level: 3
