@@ -4,7 +4,7 @@
     "npm": ">=6.14.11 <7"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.5",
+    "@babel/core": "^7.17.7",
     "@babel/eslint-parser": "^7.17.0",
     "@babel/eslint-plugin": "^7.16.5",
     "@babel/preset-env": "^7.16.11",
@@ -23,7 +23,7 @@
     "parcel-plugin-static-files-copy": "^2.6.0",
     "parcel-plugin-sw-asset-urls": "^0.1.2",
     "playwright": "^1.19.2",
-    "prettier": "^2.5.1",
+    "prettier": "^2.6.0",
     "st": "^3.0.0"
   },
   "dependencies": {
