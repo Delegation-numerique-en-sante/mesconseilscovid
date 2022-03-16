@@ -115,10 +115,12 @@
         * mettre à disposition du gel hydroalcoolique et des masques ;
         * nettoyer et **désinfecter** régulièrement les espaces partagés.
 
-    <span class="nouveau">nouveau</span> Depuis le **14 mars 2022**, le **port du masque** n’est **plus obligatoire** en entreprise, mais il reste **recommandé** dans les situations suivantes :
-    * vous avez des **symptômes** ;
-    * vous êtes **cas contact** ;
-    * vous **revenez** d’une période d’**isolement** après avoir été testé **positif**.
+    <span class="nouveau">nouveau</span> Depuis le **14 mars 2022**, le **port du masque** n’est **plus obligatoire** en entreprise, mais il reste **fortement recommandé** dans les situations suivantes :
+    * si vous avez des **symptômes** ;
+    * si vous êtes **cas contact** ;
+    * pendant les **7 jours** après la fin votre période d’**isolement** si vous avez été testé **positif**.
+
+    Les salariés qui le souhaitent **peuvent continuer** de porter un masque sur leur lieu de travail.
 
 
 .. question:: Quelles sont les obligations de mon employeur face à l’épidémie de Covid ?
