@@ -11,10 +11,32 @@
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
-## Le rappel vaccinal (dit « 3<sup>e</sup> dose »)
+## Le rappel vaccinal
+    
+.. question:: Quand faire mon rappel ?
+    
+    Nouveau
+    Si vous avez 80 ans ou plus, nous vous recommandons de faire un 2<sup>e</sup> rappel vaccinal à partir de 3 mois après votre 1<sup>er</sup> rappel.
+               
+    - Si vous avez **plus de 18 ans et 1 mois**, vous devez recevoir une dose de rappel entre **3 mois et 4 mois** après votre primo-vaccination.
+    - Si vous avez entre **12 et 17 ans**, vous pouvez faire un  rappel dès **6 mois** après votre primo-vaccination. Ce rappel est **recommandé**, mais il n’est **pas obligatoire** pour le passe sanitaire.
+    - Si vous avez **eu la Covid** au moins 3 mois après votre primo-vaccination, vous n’avez **pas besoin** de recevoir de dose de rappel.
 
-.. injection:: pass-sanitaire-qr-code-voyages.html#quand-dois-je-recevoir-mon-rappel-pour-conserver-mon-passe-sanitaire
 
+
+    <div class="tableaux-vaccination-complete">
+
+    {{ tableau_vaccination('vaccination_initiale') }}
+
+    <div style="display: flex; align-items: center">
+        <p class="gros plus">+</p>
+    </div>
+
+    {{ tableau_vaccination('rappel_vaccinal') }}
+
+    </div>
+
+    <div class="voir-aussi">
 
 .. question:: J’ai été vacciné(e) avec le vaccin Janssen. Comment se passe mon rappel ?
     :level: 3
