@@ -6,7 +6,7 @@
   "devDependencies": {
     "@babel/core": "^7.17.7",
     "@babel/eslint-parser": "^7.17.0",
-    "@babel/eslint-plugin": "^7.16.5",
+    "@babel/eslint-plugin": "^7.17.7",
     "@babel/preset-env": "^7.16.11",
     "@babel/register": "^7.17.7",
     "@mermaid-js/mermaid-cli": "^8.14.0",
