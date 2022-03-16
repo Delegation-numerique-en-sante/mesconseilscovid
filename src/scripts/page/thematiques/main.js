@@ -34,12 +34,11 @@ export function pageThematique(app) {
                 const defn = document.getElementById(id)
                 if (defn) {
                     if (elem.classList.contains('open')) {
-                        elem.classList.remove('open')
                         hideElement(defn)
                     } else {
-                        elem.classList.add('open')
                         showElement(defn)
                     }
+                    elem.classList.toggle('open')
                 }
             }
         })
