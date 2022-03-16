@@ -25,10 +25,10 @@
     Mais, même vacciné(e), nous vous recommandons de rester prudent(e) :
     * maintenez la **distanciation physique** ;
     * **aérez** régulièrement, pour réduire la concentration du virus dans l’air intérieur ;
-    * portez un **masque** si :
-        * vous avez des **symptômes** ;
-        * vous êtes **cas contact** ;
-        * vous **revenez** d’une période d’**isolement** après avoir été testé **positif**.
+    * portez un **masque** :
+        * si vous avez des **symptômes** ;
+        * si vous êtes **cas contact** ;
+        * pendant les **7 jours** après la fin votre période d’**isolement** si vous avez été testé **positif**.
 
     **Isolez-vous** si vous êtes :
 
@@ -45,7 +45,7 @@
 
     <div class="voir-aussi">
 
-    - Consulter le guide : [Covid-19 conseils et bonnes pratiques pour les salariés](https://travail-emploi.gouv.fr/IMG/pdf/051021_fiches_covid_salariev7ok.pdf)
+    - Consulter le [guide repère sur les mesures de prévention des risques de contamination au Covid-19](https://travail-emploi.gouv.fr/IMG/pdf/covid19-entreprises-guide-repere.pdf)
 
     - [J’ai des symptômes ou mon test est positif, que faire ?](j-ai-des-symptomes-covid.html)
 
@@ -135,7 +135,7 @@
 
     <div class="voir-aussi">
 
-    * Consultez le guide : [Covid : conseils et bonnes pratiques pour l’employeur](https://travail-emploi.gouv.fr/IMG/pdf/051021_fiches_covid_employeurv7ok.pdf)
+    - Consultez le [guide repère sur les mesures de prévention des risques de contamination au Covid-19](https://travail-emploi.gouv.fr/IMG/pdf/covid19-entreprises-guide-repere.pdf)
     * Lire aussi notre réponse ci-dessous : [Quels aménagements peuvent être mis en place pour limiter la transmission du virus sur le lieu de travail ?](#quels-amenagements-peuvent-etre-mis-en-place-pour-limiter-la-transmission-du-virus-sur-le-lieu-de-travail)
 
     </div>
