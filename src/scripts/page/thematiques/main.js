@@ -1,5 +1,6 @@
 import applyDetailsSummaryPolyfill from '../../polyfills/details_polyfill'
 
+import { hideElement, showElement } from '../../affichage'
 import { bindImpression } from '../../actions'
 import { bindFeedback, opacityTransition, envoieLesRemarques } from '../../feedback'
 import { navigueVersUneThematique } from './navigation'
@@ -24,6 +25,25 @@ export function pageThematique(app) {
         app,
         'Navigue vers une thématique depuis une autre thématique'
     )
+
+    Array.from(document.querySelectorAll('dfn')).forEach((elem) => {
+        elem.addEventListener('click', (event) => {
+            event.preventDefault()
+            const id = elem.getAttribute('aria-describedby')
+            if (id) {
+                const defn = document.getElementById(id)
+                if (defn) {
+                    if (elem.classList.contains('open')) {
+                        elem.classList.remove('open')
+                        hideElement(defn)
+                    } else {
+                        elem.classList.add('open')
+                        showElement(defn)
+                    }
+                }
+            }
+        })
+    })
 }
 
 function initDetailsSummary() {

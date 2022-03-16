@@ -1926,6 +1926,44 @@ a.no-type::after {
     margin-bottom: 3rem;
 }
 
+dfn {
+    font-style: normal;
+    text-decoration: #d5dbef underline dotted;
+    cursor: pointer;
+}
+dfn::after {
+    content: '?';
+    display: inline-block;
+    margin-left: 4px;
+    width: 14px;
+    height: 14px;
+    background-color: #d5dbef;
+    border-radius: 50%;
+    line-height: 14px;
+    vertical-align: super;
+    font-size: 75%;
+    text-align: center;
+    border-bottom: none;
+}
+dfn.open {
+    text-decoration: none;
+    background-color: #d5dbef77;
+}
+
+[role='tooltip'] {
+    background-color: #d5dbef77;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px #3e56a477;
+    margin-right: 1rem;
+}
+[role='tooltip'] > *:first-child {
+    margin-top: 0;
+}
+[role='tooltip'] > *:last-child {
+    margin-bottom: 0;
+}
+
 @media print {
     a,
     a:link,
