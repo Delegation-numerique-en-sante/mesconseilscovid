@@ -12,31 +12,23 @@
 <div itemscope itemtype="https://schema.org/FAQPage">
 
 ## Le rappel vaccinal
-    
+
 .. question:: Quand faire mon rappel ?
-    
-    Nouveau
-    Si vous avez 80 ans ou plus, nous vous recommandons de faire un 2<sup>e</sup> rappel vaccinal à partir de 3 mois après votre 1<sup>er</sup> rappel.
-               
+    :level: 3
+
+    ### Rappel (dit 3<sup>e</sup> dose)
+
     - Si vous avez **plus de 18 ans et 1 mois**, vous devez recevoir une dose de rappel entre **3 mois et 4 mois** après votre primo-vaccination.
-    - Si vous avez entre **12 et 17 ans**, vous pouvez faire un  rappel dès **6 mois** après votre primo-vaccination. Ce rappel est **recommandé**, mais il n’est **pas obligatoire** pour le passe sanitaire.
+
+    - Si vous avez entre **12 et 17 ans**, vous pouvez faire un rappel dès **6 mois** après votre primo-vaccination. (Ce rappel est **recommandé**, mais il n’est **pas obligatoire** pour le passe sanitaire.)
     - Si vous avez **eu la Covid** au moins 3 mois après votre primo-vaccination, vous n’avez **pas besoin** de recevoir de dose de rappel.
 
+    ### Deuxième rappel (dit 4<sup>e</sup> dose)  <span class="nouveau">nouveau</span>
 
+    Si vous êtes **immunodéprimé(e)** ou que vous avez **plus de 80 ans**, nous vous recommandons de faire un **2<sup>e</sup> rappel**, dès **3 mois** après le premier.
 
-    <div class="tableaux-vaccination-complete">
+    Dans les autres cas, un deuxième rappel n’est pas recommandé actuellement.
 
-    {{ tableau_vaccination('vaccination_initiale') }}
-
-    <div style="display: flex; align-items: center">
-        <p class="gros plus">+</p>
-    </div>
-
-    {{ tableau_vaccination('rappel_vaccinal') }}
-
-    </div>
-
-    <div class="voir-aussi">
 
 .. question:: J’ai été vacciné(e) avec le vaccin Janssen. Comment se passe mon rappel ?
     :level: 3
