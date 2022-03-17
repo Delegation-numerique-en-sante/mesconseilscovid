@@ -101,8 +101,12 @@ check-diagrammes:  # Check that all files from diagrammes/matrice exist.
 check-service-worker: src/index.html $(firstword $(THEMATIQUES))  # Check that all files in use are listed in service-worker.js.
 	python3 check.py service_worker
 
+HTML_EN = src/covid-in-france.html
+HTML_FR = $(filter-out $(HTML_EN),$(HTML))
+
 check-spelling: $(HTML) jargon.dic
-	hunspell -l -H --check-apostrophe -d fr,jargon $(HTML)
+	hunspell -l -H --check-apostrophe -d en_US,fr,jargon $(HTML_EN)
+	hunspell -l -H --check-apostrophe -d fr,jargon $(HTML_FR)
 
 jargon.dic: jargon.dic.txt
 	cat $< | sort | uniq >$@.in
