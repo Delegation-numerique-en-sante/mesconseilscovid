@@ -38,6 +38,14 @@ jobs:
         run: |
           make install-python
 
+      - name: Configure npm cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Install JS dependencies
         run: |
           make install-js
@@ -143,6 +151,14 @@ jobs:
         run: |
           make install-python
 
+      - name: Configure npm cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Install JS dependencies
         run: |
           make install-js
@@ -192,6 +208,14 @@ jobs:
       - name: Set up Playwright
         uses: microsoft/playwright-github-action@v1
 
+      - name: Configure npm cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Install JS dependencies
         run: |
           make install-js
@@ -234,6 +258,14 @@ jobs:
       - name: Set up Playwright
         uses: microsoft/playwright-github-action@v1
 
+      - name: Configure npm cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Install JS dependencies
         run: |
           make install-js
@@ -275,6 +307,14 @@ jobs:
 
       - name: Set up Playwright
         uses: microsoft/playwright-github-action@v1
+
+      - name: Configure npm cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install JS dependencies
         run: |
