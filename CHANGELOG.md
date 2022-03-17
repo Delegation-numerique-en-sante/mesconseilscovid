@@ -1,5 +1,11 @@
 # Changelog
 
+## 2022-03-17
+
+* ajoute les infos sur le 2e rappel (dit 4e dose)
+* mises à jour port et consignes en entreprise
+* mises à jour port du masque collège et lycée
+
 ## 2022-03-14
 
 * fin du port du masque obligatoire en entreprise le 14/3
