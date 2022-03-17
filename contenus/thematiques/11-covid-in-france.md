@@ -23,7 +23,7 @@
 
 .. question:: As a tourist, vaccinated outside the European Union, how can I obtain a French health pass (<i>passe sanitaire</i>)?
 
-   **Non-european nationals** visiting France can convert their extra-european vaccination certificate at a **pharmacy**. You will need to present your **passport** and your existing **vaccination certificate** in paper format. The pharmacy can charge you up to **36 euros** for this procedure.
+   **Non-European nationals** visiting France can convert their extra-European vaccination certificate at a **pharmacy**. You will need to present your **passport** and your existing **vaccination certificate** in paper format. The pharmacy can charge you up to **36 euros** for this procedure.
 
    Please note that this is only possible if you received one of the following vaccines:
    - **Pfizer** Comirnaty,
@@ -56,7 +56,7 @@
 
 .. question:: Which means of transport require the health pass (<i>passe sanitaire</i>)?
 
-   You must provide a valid healh pass (*passe sanitaire*) to access any train, plane or bus for a **long distance** journey.
+   You must provide a valid health pass (*passe sanitaire*) to access any train, plane or bus for a **long distance** journey.
 
    The health pass is **not required** to use public transportation (bus, tramway, subway…) within cities or across the Paris region.
 

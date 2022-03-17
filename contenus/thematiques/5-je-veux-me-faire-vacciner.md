@@ -502,7 +502,7 @@
     :level: 3
     :expires: 9 avril 2022
 
-    - Chez les adultes, la Haute autorité de santé recommande de privilégier l’utilisation de **vaccins à ARN messager** (Pfizer ou Moderna) car ils sont plus efficaces qu’AstraZeneca ou Janssen pour réduire la transmission et les formes symptomatiques.
+    - Chez les adultes, la Haute autorité de santé recommande de privilégier l’utilisation de **vaccins à ARN messager** (Pfizer ou Moderna) car ils sont plus efficaces que Janssen ou AstraZeneca pour réduire la transmission et les formes symptomatiques.
 
       * Si vous avez **moins de 30 ans**, privilégiez le vaccin **Pfizer** lorsque c’est possible (en l’attente de plus de données sur le risque de myocardite avec le vaccin Moderna chez les personnes plus jeunes).
       * Si vous avez **plus de 30 ans**, le vaccin **Moderna** pourra être privilégié car plusieurs études récentes semblent montrer une efficacité vaccinale légèrement supérieure.
