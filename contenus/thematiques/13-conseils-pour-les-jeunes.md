@@ -246,9 +246,16 @@
 .. question:: Est-ce que je dois porter le masque au collège ou au lycée?
     :level: 3
 
-    **Oui**, le masque est **obligatoire en primaire, au collège et au lycée** dans tous les départements. Tes parents doivent te fournir un masque, mais si besoin (oubli, accident), ton établissement scolaire pourra t’en donner un.
-
-    Attention, même si tu as envie d’avoir un joli masque, tu ne peux **pas utiliser n’importe quel tissu** pour le confectionner. Pour être efficace, un masque doit assurer une filtration supérieure à **90 %**, ce qui n’est pas le cas de tous les tissus.
+    <span class="nouveau">nouveau</span> Le masque n'est **plus obligatoire** au collège et au lycée mais il est **fortement conseillé** de le porter : 
+    * si tu es **cas contact** ;
+    * si tu as des **symptômes** (même un simple nez qui coule) ;
+    * et pendant les **7 jours** qui suivent ton retour en classe, **si tu avais la Covid** dans les jours précédents et que tu t'étais isolé.
+    
+    N'hésite pas à porter le masque si tu en as envie, même si les personnes qui t'entourent n'en portent pas.
+    
+    **Choisis un masque qui protège :**
+    
+    Même si tu as envie d’avoir un joli masque, tu ne peux **pas utiliser n’importe quel tissu** pour le confectionner. Pour être efficace, un masque doit assurer une filtration supérieure à **90 %**, ce qui n’est pas le cas de tous les tissus.
 
     Si tu achètes un masque en tissu « grand public », assure toi que la mention **« catégorie 1 »** soit inscrite sur l’emballage. Sinon, tu peux aussi porter des **masques chirurgicaux**.
 
